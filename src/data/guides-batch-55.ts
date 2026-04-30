@@ -8,7 +8,7 @@ export const guidesBatch55: Guide[] = [
     category: `app-guides`,
     tags: [`google drive`, `cloud storage`, `backup`, `windows`, `mac`, `file sync`],
     readTime: `6 min`,
-    thumbnailEmoji: `☁️`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-19`,
     difficulty: `Beginner`,
     body: `Google Drive for Desktop is a free program from Google that puts your Google Drive files right inside your Windows File Explorer or Mac Finder. Instead of opening a browser every time you want a file, you can access everything directly from your computer — and any changes you make sync automatically to the cloud and to your other devices.
@@ -57,7 +57,7 @@ After installation, the app runs quietly in the background and updates automatic
     category: `phone-guides`,
     tags: [`iphone`, `ipad`, `widgets`, `home screen`, `ios 16`, `customize`],
     readTime: `5 min`,
-    thumbnailEmoji: `📱`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-19`,
     difficulty: `Beginner`,
     body: `Widgets are small panels on your iPhone or iPad home screen that show useful information at a glance — without needing to open any app. For example, a Weather widget can show today's forecast, a Calendar widget can show your next appointment, and a Battery widget can show how much charge your iPhone and AirPods have left.
@@ -106,7 +106,7 @@ Widgets do more than look nice — they can save you time. Instead of unlocking 
     category: `phone-guides`,
     tags: [`apple handoff`, `iphone`, `mac`, `ipad`, `continuity`, `productivity`],
     readTime: `5 min`,
-    thumbnailEmoji: `🔄`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-19`,
     difficulty: `Beginner`,
     body: `Apple Handoff is a feature that lets you start something on one Apple device and pick it up on another — without any extra steps. For example, you could start writing an email on your iPhone during breakfast and then, when you sit down at your Mac, click one button to continue writing the same email right where you left off.
@@ -150,7 +150,7 @@ Handoff was introduced in 2014 and is supported on iPhones, iPads, Macs, and App
     category: `tips-tricks`,
     tags: [`universal clipboard`, `iphone`, `mac`, `copy paste`, `apple continuity`, `productivity`],
     readTime: `4 min`,
-    thumbnailEmoji: `📋`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-19`,
     difficulty: `Beginner`,
     body: `Universal Clipboard is one of those features that sounds almost too convenient to be real — but it works. When you copy something on your iPhone, it becomes available to paste on your nearby Mac within a few seconds. The same works in reverse: copy text or an image on your Mac, and you can paste it on your iPhone.
@@ -190,7 +190,7 @@ Universal Clipboard works with text, images, photos, and even some file types. I
     category: `mac-guides`,
     tags: [`iphone mirroring`, `macos sequoia`, `mac`, `iphone`, `screen mirror`, `continuity`],
     readTime: `5 min`,
-    thumbnailEmoji: `🖥️`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-19`,
     difficulty: `Intermediate`,
     body: `iPhone Mirroring is a new feature in macOS Sequoia (released in 2024) that puts a live view of your iPhone screen right on your Mac. You can tap, scroll, and type using your Mac's mouse and keyboard — controlling your iPhone without ever picking it up.
@@ -234,7 +234,7 @@ One important thing to know: while iPhone Mirroring is active, your iPhone scree
     category: `social-media`,
     tags: [`tiktok`, `social media`, `video`, `for you page`, `beginners`, `streaming`],
     readTime: `5 min`,
-    thumbnailEmoji: `🎵`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-19`,
     difficulty: `Beginner`,
     body: `TikTok is a free app where people share short videos — anywhere from 15 seconds to 10 minutes long. The videos cover almost every topic imaginable: cooking, gardening, music, comedy, travel, health tips, news, and much more. You do not have to make videos yourself to enjoy TikTok — millions of people use it purely to watch.
@@ -278,7 +278,7 @@ This guide focuses on watching and enjoying TikTok as a viewer — not on making
     category: `app-guides`,
     tags: [`linkedin`, `job search`, `professional network`, `profile`, `career`],
     readTime: `7 min`,
-    thumbnailEmoji: `💼`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-19`,
     difficulty: `Beginner`,
     body: `LinkedIn is a free website and app where professionals share their work experience, connect with colleagues, and look for job opportunities. Think of it as a combination of a resume, a business card directory, and a job board — all in one place.
@@ -326,7 +326,7 @@ LinkedIn has over 900 million members worldwide and is used in virtually every i
     category: `social-media`,
     tags: [`facebook reels`, `facebook`, `short videos`, `social media`, `video`],
     readTime: `4 min`,
-    thumbnailEmoji: `🎬`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-19`,
     difficulty: `Beginner`,
     body: `Facebook Reels are short videos — usually 15 seconds to 90 seconds long — that appear in your Facebook feed alongside posts from friends and family. They can be funny, informative, musical, or entertaining to watch. They work a lot like the short videos you might have seen on TikTok or Instagram.
@@ -366,7 +366,7 @@ This guide explains how to watch, share, and interact with Facebook Reels as a v
     category: `financial-tech`,
     tags: [`google wallet`, `contactless payment`, `android`, `tap to pay`, `digital wallet`, `cards`],
     readTime: `6 min`,
-    thumbnailEmoji: `💳`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-19`,
     difficulty: `Beginner`,
     body: `Google Wallet is a free app on Android phones that stores your payment cards, loyalty cards, boarding passes, and other important cards digitally. Instead of digging through your physical wallet at checkout, you can pay by holding your phone near the payment terminal — a process called "tap to pay."
@@ -410,7 +410,7 @@ Google Wallet comes pre-installed on most Android phones. If you do not see it, 
     category: `app-guides`,
     tags: [`shazam`, `soundhound`, `music recognition`, `identify song`, `iphone`, `android`],
     readTime: `4 min`,
-    thumbnailEmoji: `🎵`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-19`,
     difficulty: `Beginner`,
     body: `We have all had that moment — a song comes on in a store, a restaurant, or a TV commercial, and you think "I love this song — what is it?" Trying to remember song lyrics or hum it to someone later rarely works well. Fortunately, your smartphone can identify almost any song in seconds — by listening for a few moments.
@@ -452,7 +452,7 @@ These apps respect your privacy: they only listen when you actively tap the iden
     category: `app-guides`,
     tags: [`google maps`, `street view`, `navigation`, `explore`, `travel`, `virtual tour`],
     readTime: `5 min`,
-    thumbnailEmoji: `🗺️`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-19`,
     difficulty: `Beginner`,
     body: `Google Street View is a feature inside Google Maps that lets you see 360-degree, ground-level photographs of streets, neighborhoods, businesses, and landmarks anywhere in the world. Instead of viewing a map from above, you can "walk" down a street and look around in every direction — as if you were standing there yourself.
@@ -496,7 +496,7 @@ One thing to know: Street View is not a live feed. You are looking at photograph
     category: `how-to`,
     tags: [`ebay`, `selling online`, `marketplace`, `shipping`, `listing`],
     readTime: `8 min`,
-    thumbnailEmoji: `📦`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-19`,
     difficulty: `Intermediate`,
     body: `eBay is one of the oldest and most popular online marketplaces in the world. You can sell almost anything on eBay — from collectibles and electronics to clothing, books, and household items. Millions of buyers visit eBay every day looking for things to purchase, which means your items have a large audience.
@@ -544,7 +544,7 @@ Starting with a few small, simple-to-ship items — like books, DVDs, or small c
     category: `how-to`,
     tags: [`offerup`, `local selling`, `buy and sell`, `marketplace`, `craigslist alternative`],
     readTime: `6 min`,
-    thumbnailEmoji: `🛒`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-19`,
     difficulty: `Beginner`,
     body: `OfferUp is a free app that connects buyers and sellers in the same area. You can sell furniture, clothing, electronics, toys, tools, and almost anything else to someone who can come pick it up — no shipping required. You can also ship items nationwide if you prefer.
@@ -588,7 +588,7 @@ Because transactions are mostly in person with cash or in-app payment, there are
     category: `app-guides`,
     tags: [`flipboard`, `news`, `reading`, `magazine`, `rss`, `topics`],
     readTime: `5 min`,
-    thumbnailEmoji: `📰`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-19`,
     difficulty: `Beginner`,
     body: `Flipboard is a free app that collects news articles, blog posts, and videos from across the internet and presents them in a clean, clear, readable magazine format. Instead of visiting ten different news websites every morning, Flipboard gathers the stories you care about into one organized place — and you flip through them like pages in a magazine.
@@ -632,7 +632,7 @@ You can also "flip" (save) articles to personal collections called "Magazines" t
     category: `mac-guides`,
     tags: [`macos sequoia`, `mac update`, `iphone mirroring`, `passwords app`, `window tiling`],
     readTime: `7 min`,
-    thumbnailEmoji: `🖥️`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-19`,
     difficulty: `Intermediate`,
     body: `macOS Sequoia is Apple's major Mac software update released in September 2024. If your Mac is reasonably current, you may have already installed it — or been asked to. This guide explains what is actually new, why it matters, and how to start using the best new features.
@@ -676,7 +676,7 @@ Window tiling is another practical addition — your Mac can now automatically s
     category: `phone-guides`,
     tags: [`android 15`, `android update`, `theft protection`, `private space`, `screen sharing`],
     readTime: `6 min`,
-    thumbnailEmoji: `🤖`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-19`,
     difficulty: `Beginner`,
     body: `Android 15 is Google's major Android software update released in October 2024. It focuses on privacy, security, and practical improvements rather than dramatic visual changes. If your phone runs Android 15, you have access to several genuinely useful new features — and if you are still on Android 14 or 13, this guide explains what to expect when you update.
@@ -720,7 +720,7 @@ Partial screen sharing is a practical addition for video calls — instead of sh
     category: `windows-guides`,
     tags: [`microsoft edge`, `browser`, `windows`, `favorites`, `collections`, `reading mode`],
     readTime: `6 min`,
-    thumbnailEmoji: `🌐`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-19`,
     difficulty: `Beginner`,
     body: `Microsoft Edge is the web browser that comes pre-installed on all Windows 10 and Windows 11 computers. A browser is the program you use to visit websites — it is the software that makes internet browsing possible. Edge replaced the older Internet Explorer browser starting in 2020.
@@ -764,7 +764,7 @@ Reading mode is another useful feature that strips away all the ads, sidebars, a
     category: `internet-connectivity`,
     tags: [`brave browser`, `privacy`, `ad blocker`, `tracker blocking`, `browser`, `internet security`],
     readTime: `5 min`,
-    thumbnailEmoji: `🦁`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-19`,
     difficulty: `Beginner`,
     body: `Brave is a free web browser — an alternative to Chrome, Firefox, or Edge — that is built with privacy as its top priority. The main difference you notice right away is that Brave automatically blocks ads and website trackers without any extra setup. This means web pages often load faster, and fewer companies are collecting data about what you browse.
@@ -810,7 +810,7 @@ Brave is a good choice for anyone who wants more control over their online priva
     category: `phone-guides`,
     tags: [`android`, `home screen`, `customize`, `widgets`, `wallpaper`, `app icons`],
     readTime: `5 min`,
-    thumbnailEmoji: `📱`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-19`,
     difficulty: `Beginner`,
     body: `Your Android phone's home screen is the first thing you see when you pick it up. By default, it comes with whatever apps and layout the phone manufacturer chose. But the home screen is completely customizable — you can arrange apps wherever you like, add helpful widgets that show live information, change the wallpaper, and make it feel like your own.
@@ -854,7 +854,7 @@ The most popular changes people make are: moving apps to a more convenient locat
     category: `essential-skills`,
     tags: [`google classroom`, `education`, `parents`, `grandparents`, `students`, `homework`],
     readTime: `7 min`,
-    thumbnailEmoji: `🎓`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-19`,
     difficulty: `Beginner`,
     body: `Google Classroom is a free online platform that many schools use to organize assignments, share class materials, and communicate with students. If a child or grandchild in your life attends school — whether elementary, middle school, high school, or college — there is a good chance their teacher uses Google Classroom.

@@ -8,10 +8,10 @@ import { supabase } from '@/integrations/supabase/client';
  * with technology. Tier is a client-side preference (localStorage) and, for
  * signed-in users, mirrored to `profiles.tier` so it persists across devices.
  *
- *  🌱 just-starting      — First week on a smartphone / computer.
- *  🌤️ getting-comfortable — Knows the basics, still learning.
- *  ☀️ confident           — Uses tech daily, wants to go deeper.
- *  ⚡ power-user          — Comfortable with advanced topics.
+ *   just-starting      — First week on a smartphone / computer.
+ *   getting-comfortable — Knows the basics, still learning.
+ *   confident           — Uses tech daily, wants to go deeper.
+ *   power-user          — Comfortable with advanced topics.
  */
 export type UserTier =
   | 'just-starting'
@@ -21,25 +21,25 @@ export type UserTier =
 
 export const TIER_META: Record<UserTier, { emoji: string; label: string; short: string; description: string }> = {
   'just-starting': {
-    emoji: '🌱',
-    label: 'Brand New',
+    emoji: '',
+    label: 'Just Starting',
     short: 'New to this',
     description: 'First steps with a phone or computer. Every word explained.',
   },
   'getting-comfortable': {
-    emoji: '🌤️',
+    emoji: '',
     label: 'Getting Comfortable',
     short: 'Learning',
     description: 'Know the basics. Ready to learn new things week by week.',
   },
   'confident': {
-    emoji: '☀️',
+    emoji: '',
     label: 'Confident',
     short: 'Doing well',
     description: 'Use tech every day. Want deeper tools and shortcuts.',
   },
   'power-user': {
-    emoji: '⚡',
+    emoji: '',
     label: 'Power User',
     short: 'Advanced',
     description: 'Comfortable with advanced topics. Give me the details.',

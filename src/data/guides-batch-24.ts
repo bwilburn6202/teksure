@@ -8,7 +8,7 @@ export const guidesBatch24: Guide[] = [
     category: 'entertainment',
     tags: ['Samsung', 'smart TV', 'streaming', 'tips', 'remote'],
     readTime: '6 min',
-    thumbnailEmoji: '📺',
+    thumbnailEmoji: '',
     publishedAt: '2026-04-19',
     difficulty: 'Beginner',
     body: `Your Samsung Smart TV can do a lot more than just play channels. It runs apps, connects to your phone, responds to voice commands, and lets you customize the picture to match your room. Many people never explore beyond the basic cable or streaming screen — and miss out on features that make TV watching much more comfortable.
@@ -58,7 +58,7 @@ The Universal Guide gathers recommendations from all your apps in one place. Loo
     category: 'phone-guides',
     tags: ['Android', 'split screen', 'multitasking', 'tips', 'productivity'],
     readTime: '4 min',
-    thumbnailEmoji: '📱',
+    thumbnailEmoji: '',
     publishedAt: '2026-04-19',
     difficulty: 'Intermediate',
     body: `Split screen is one of Android's most underused features. It lets you run two apps simultaneously — one on the top half of your screen and one on the bottom. This is especially handy when you want to look up something while staying in another app, or follow recipe steps while watching a video.
@@ -104,7 +104,7 @@ When you're done multitasking, merging back to a single app takes one second. Th
     category: 'government-civic',
     tags: ['USPS', 'mail', 'Informed Delivery', 'government', 'free service'],
     readTime: '5 min',
-    thumbnailEmoji: '📬',
+    thumbnailEmoji: '',
     publishedAt: '2026-04-19',
     difficulty: 'Beginner',
     body: `USPS Informed Delivery is a free service from the United States Postal Service that sends you an email every morning showing grayscale photos of the letter-sized mail pieces scheduled to arrive that day. Packages are listed as well, though photos are not always available for every parcel.
@@ -152,7 +152,7 @@ This is a completely free service — no credit card, no subscription, no string
     category: 'communication',
     tags: ['Gmail', 'email', 'schedule', 'tips', 'productivity'],
     readTime: '3 min',
-    thumbnailEmoji: '📧',
+    thumbnailEmoji: '',
     publishedAt: '2026-04-19',
     difficulty: 'Beginner',
     body: `Gmail lets you write an email now but delay sending it until a specific date and time you choose. This is useful for many situations: you might write a birthday message the night before but want it to arrive on the actual morning. You might write an email at midnight but not want to appear like you are working at odd hours. Or you may need to remind someone about an appointment the day before it happens.
@@ -196,7 +196,7 @@ This feature works the same way whether you are using Gmail on a computer, iPhon
     category: 'phone-guides',
     tags: ['Android', 'contacts', 'backup', 'Google', 'phone safety'],
     readTime: '5 min',
-    thumbnailEmoji: '👥',
+    thumbnailEmoji: '',
     publishedAt: '2026-04-19',
     difficulty: 'Beginner',
     body: `Losing your contacts is one of the most frustrating things that can happen with a phone. All those phone numbers, addresses, and email addresses you've collected over the years — gone in an instant when a phone breaks or gets lost. The good news is that Android makes it straightforward to back up your contacts to your Google account, where they are stored securely in the cloud and can be restored to any new phone in minutes.
@@ -241,7 +241,7 @@ Many people wait until they buy a new phone to think about contacts backup, and 
     category: 'ai-guides',
     tags: ['Copilot', 'Windows 11', 'AI', 'Microsoft', 'assistant'],
     readTime: '5 min',
-    thumbnailEmoji: '🤖',
+    thumbnailEmoji: '',
     publishedAt: '2026-04-19',
     difficulty: 'Beginner',
     body: `Microsoft Copilot is an AI assistant built directly into Windows 11. You do not need to download anything or sign up for a new service — it is already on your computer if you have Windows 11 with recent updates. Press the Copilot button on your taskbar (it looks like a colorful swirl icon) and a panel opens on the right side of your screen where you can type questions and get instant, helpful responses.
@@ -286,7 +286,7 @@ Copilot is included for free with Windows 11 and works best with a Microsoft acc
     category: 'ai-guides',
     tags: ['ChatGPT', 'AI', 'OpenAI', 'beginner', 'assistant'],
     readTime: '6 min',
-    thumbnailEmoji: '💬',
+    thumbnailEmoji: '',
     publishedAt: '2026-04-19',
     difficulty: 'Beginner',
     body: `ChatGPT is an AI assistant made by a company called OpenAI. You type a question or request in plain English, and it responds with a detailed, conversational answer. You do not need any technical knowledge to use it — if you can type a text message, you can use ChatGPT.
@@ -333,7 +333,7 @@ The free version of ChatGPT (called ChatGPT 4o) is powerful enough for most ever
     category: 'entertainment',
     tags: ['Sling TV', 'streaming', 'cord cutting', 'live TV', 'cable alternative'],
     readTime: '6 min',
-    thumbnailEmoji: '📡',
+    thumbnailEmoji: '',
     publishedAt: '2026-04-19',
     difficulty: 'Beginner',
     body: `Sling TV is a live television streaming service that gives you many of the same channels as traditional cable — CNN, ESPN, HGTV, Fox News, AMC, and many more — but over the internet without a cable box or annual contract. You pay month-to-month and can cancel at any time.
@@ -378,7 +378,7 @@ Sling does not require a technician visit or equipment rental. You sign up onlin
     category: 'tips-tricks',
     tags: ['iPhone', 'Live Text', 'iOS', 'camera', 'tips'],
     readTime: '4 min',
-    thumbnailEmoji: '📷',
+    thumbnailEmoji: '',
     publishedAt: '2026-04-19',
     difficulty: 'Beginner',
     body: `Live Text is one of the most practical iPhone features that most people never discover. It lets your iPhone read any text that appears in a photo — on a menu, a flyer, a business card, a prescription label, a street sign — and treat it as selectable text, the same way text in an email or document works.
@@ -424,7 +424,7 @@ Live Text does not require an internet connection — the text recognition happe
     category: 'essential-skills',
     tags: ['AirTag', 'Tile', 'tracker', 'GPS', 'keys', 'comparison'],
     readTime: '5 min',
-    thumbnailEmoji: '🏷️',
+    thumbnailEmoji: '',
     publishedAt: '2026-04-19',
     difficulty: 'Beginner',
     body: `AirTag (made by Apple) and Tile are small tracking devices about the size of a quarter. You attach one to your keys, put one in your wallet, or slip one into your luggage — and if that item goes missing, you use your phone to find it. Both trackers work well, but they have real differences in how they work and which phones they are compatible with.
@@ -468,7 +468,7 @@ AirTag costs around $29 for one, or $99 for a four-pack. Tile prices range from 
     category: 'app-guides',
     tags: ['apps', 'seniors', 'free', 'iPhone', 'Android'],
     readTime: '7 min',
-    thumbnailEmoji: '⭐',
+    thumbnailEmoji: '',
     publishedAt: '2026-04-19',
     difficulty: 'Beginner',
     body: `Your smartphone is one of the most powerful tools you own — and most of the best apps for everyday seniors are completely free. You do not need to spend anything to get apps that help you stay in touch with family, manage medications, follow the news, exercise safely, and call for help in an emergency.
@@ -517,7 +517,7 @@ This guide highlights the most genuinely useful free apps for seniors in 2026, o
     category: 'windows-guides',
     tags: ['Windows 11', 'Start Menu', 'customize', 'tips', 'desktop'],
     readTime: '5 min',
-    thumbnailEmoji: '🪟',
+    thumbnailEmoji: '',
     publishedAt: '2026-04-19',
     difficulty: 'Beginner',
     body: `Windows 11 moved the Start Menu from the bottom-left corner to the center of the taskbar, and the menu itself looks quite different from Windows 10. Instead of showing all your apps at once, Windows 11's Start Menu shows "Pinned" apps at the top and "Recommended" recent files at the bottom.
@@ -561,7 +561,7 @@ You can also move the entire taskbar (including the Start button) back to the le
     category: 'essential-skills',
     tags: ['cloud storage', 'OneDrive', 'Google Drive', 'iCloud', 'comparison'],
     readTime: '6 min',
-    thumbnailEmoji: '☁️',
+    thumbnailEmoji: '',
     publishedAt: '2026-04-19',
     difficulty: 'Beginner',
     body: `OneDrive, Google Drive, and iCloud are all "cloud storage" services — they save copies of your files, photos, and documents on secure servers on the internet, so you can access them from any device and never lose them if your phone or computer breaks.
@@ -607,7 +607,7 @@ The bottom line: use OneDrive if your main device is a Windows PC. Use Google Dr
     category: 'health-tech',
     tags: ['Apple Watch', 'fall detection', 'emergency SOS', 'safety', 'seniors'],
     readTime: '5 min',
-    thumbnailEmoji: '⌚',
+    thumbnailEmoji: '',
     publishedAt: '2026-04-19',
     difficulty: 'Beginner',
     body: `Apple Watch has two powerful safety features that can make a real difference in an emergency: Fall Detection and Emergency SOS. Fall Detection uses the watch's sensors to recognize the motion pattern of a hard fall. If it detects a fall and you do not respond within about 60 seconds, the watch automatically calls emergency services and sends your location to your emergency contacts. Emergency SOS lets you manually call 911 with a button press, even if you cannot speak.
@@ -653,7 +653,7 @@ Many families buy an Apple Watch specifically for these features. A parent or gr
     category: 'phone-guides',
     tags: ['Android', 'Digital Wellbeing', 'screen time', 'app limits', 'health'],
     readTime: '5 min',
-    thumbnailEmoji: '🌿',
+    thumbnailEmoji: '',
     publishedAt: '2026-04-19',
     difficulty: 'Beginner',
     body: `Android phones have a built-in feature called Digital Wellbeing that shows you exactly how you are using your phone. It tracks how many hours a day you spend on each app, how many times you unlock your phone, and how many notifications you receive. If you feel like you are spending too much time scrolling, Digital Wellbeing gives you the tools to understand your habits and set healthy limits.
@@ -698,7 +698,7 @@ Bedtime Mode (also called Wind Down) is useful for better sleep. At a time you c
     category: 'phone-guides',
     tags: ['Siri', 'iPhone', 'voice commands', 'hands-free', 'accessibility'],
     readTime: '5 min',
-    thumbnailEmoji: '🎤',
+    thumbnailEmoji: '',
     publishedAt: '2026-04-19',
     difficulty: 'Beginner',
     body: `"Hey Siri" lets you talk to your iPhone without pressing any buttons. You say "Hey Siri" from across the room and your iPhone wakes up and listens for your request. This is especially useful when your hands are busy — cooking, driving, or simply when your phone is out of reach.
@@ -746,7 +746,7 @@ Siri works when your iPhone is connected to the internet (for complex questions 
     category: 'windows-guides',
     tags: ['Microsoft Edge', 'browser', 'Windows', 'tips', 'internet'],
     readTime: '5 min',
-    thumbnailEmoji: '🌐',
+    thumbnailEmoji: '',
     publishedAt: '2026-04-19',
     difficulty: 'Beginner',
     body: `Microsoft Edge is the web browser that comes built into Windows 10 and Windows 11. It replaced Internet Explorer and has been rebuilt from the ground up using the same technology as Google Chrome — meaning most websites work perfectly in Edge. Many people switch to Chrome out of habit, but Edge has several features that Chrome does not offer, and it uses less battery life on laptops.
@@ -792,7 +792,7 @@ Edge is tightly integrated with Microsoft Copilot, which means you can ask quest
     category: 'communication',
     tags: ['Gmail', 'spam', 'email', 'inbox', 'block sender'],
     readTime: '5 min',
-    thumbnailEmoji: '📨',
+    thumbnailEmoji: '',
     publishedAt: '2026-04-19',
     difficulty: 'Beginner',
     body: `A cluttered inbox full of promotional emails, spam, and mailing lists you never signed up for is one of the most common frustrations with email. Gmail has powerful built-in tools to clean this up — and once you spend 20 minutes going through these steps, your inbox can stay organized with very little ongoing effort.
@@ -839,7 +839,7 @@ Gmail filters let you automatically sort, label, or delete emails from specific 
     category: 'communication',
     tags: ['Outlook', 'Microsoft', 'email', 'tips', 'inbox'],
     readTime: '6 min',
-    thumbnailEmoji: '📮',
+    thumbnailEmoji: '',
     publishedAt: '2026-04-19',
     difficulty: 'Beginner',
     body: `Microsoft Outlook is a full-featured email program that many people use through work, school, or a Microsoft 365 subscription. Even people who have used Outlook for years often miss features that could save them time and reduce the stress of managing a busy inbox.
@@ -885,7 +885,7 @@ The "Recall This Message" feature is a lifesaver if you send an email to the wro
     category: 'phone-guides',
     tags: ['contacts', 'transfer', 'new phone', 'iPhone', 'Android'],
     readTime: '5 min',
-    thumbnailEmoji: '📞',
+    thumbnailEmoji: '',
     publishedAt: '2026-04-19',
     difficulty: 'Beginner',
     body: `Getting a new phone is exciting, but the worry of losing years' worth of contacts can make the transition stressful. The good news is that transferring contacts is one of the most reliable parts of switching phones — as long as they were backed up first.
@@ -931,7 +931,7 @@ If you are not sure whether your contacts are backed up, the safest thing to do 
     category: 'entertainment',
     tags: ['smart TV', 'apps', 'streaming', 'LG', 'Vizio', 'Samsung'],
     readTime: '5 min',
-    thumbnailEmoji: '🖥️',
+    thumbnailEmoji: '',
     publishedAt: '2026-04-19',
     difficulty: 'Beginner',
     body: `Smart TVs are essentially large computers with television screens. In addition to live TV, they run apps — Netflix, Hulu, Disney+, Peacock, YouTube, Spotify, and hundreds of others. Each TV brand has its own app store where you can add, remove, and manage apps.
@@ -975,7 +975,7 @@ Once an app is installed, it stays on your TV unless you remove it. You do not n
     category: 'essential-skills',
     tags: ['iPad', 'Apple', 'beginner', 'tablet', 'seniors'],
     readTime: '8 min',
-    thumbnailEmoji: '📱',
+    thumbnailEmoji: '',
     publishedAt: '2026-04-19',
     difficulty: 'Beginner',
     body: `The iPad is a large-screen tablet made by Apple. It is widely considered one of the most user-friendly devices available — the screen is big enough to see clearly, the touch interface is intuitive, and most common tasks (email, video calls, photos, web browsing) work without any prior technical knowledge.

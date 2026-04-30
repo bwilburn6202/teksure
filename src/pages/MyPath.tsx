@@ -1,4 +1,4 @@
-import { useState, useEffect } from 'react';
+import { useState } from 'react';
 import { Link } from 'react-router-dom';
 import {
   Map, CheckCircle2, Circle, ChevronRight, Trophy, Zap,
@@ -13,7 +13,7 @@ import { Card, CardContent } from '@/components/ui/card';
 import { Progress } from '@/components/ui/progress';
 import { Badge } from '@/components/ui/badge';
 import { guides } from '@/data/guides';
-import { getCompletedGuides } from '@/lib/progress';
+import { useProgress } from '@/hooks/useProgress';
 
 /* ── Learning paths definition ──────────────────────────────── */
 
@@ -140,18 +140,13 @@ function savePathChoice(id: string) {
 /* ── Main component ─────────────────────────────────────────── */
 
 export default function MyPath() {
-  const [completed, setCompleted]   = useState<Set<string>>(getCompletedGuides);
+  // Pulls from localStorage immediately, then rehydrates from Supabase
+  // for signed-in users so the skill tree reflects progress from any device.
+  const { completed } = useProgress();
   const [chosenId, setChosenId]     = useState<string | null>(getSavedPath);
   const [showQuiz, setShowQuiz]     = useState(false);
   const [quizStep, setQuizStep]     = useState(0);
   const [quizVotes, setQuizVotes]   = useState<Record<string, number>>({});
-
-  // Keep progress in sync
-  useEffect(() => {
-    const refresh = () => setCompleted(getCompletedGuides());
-    window.addEventListener('teksure-progress-update', refresh);
-    return () => window.removeEventListener('teksure-progress-update', refresh);
-  }, []);
 
   /* Quiz answer handler */
   function handleQuizAnswer(value: string) {
@@ -195,11 +190,10 @@ export default function MyPath() {
         title="My Learning Path | TekSure"
         description="Follow a personalized step-by-step learning path and build your tech confidence at your own pace."
         path="/my-path"
-        noindex
       />
       <Navbar />
 
-      <main className="min-h-screen bg-background">
+      <main id="main-content" className="min-h-screen bg-background">
 
         {/* ── Hero ── */}
         <section className="border-b border-border py-10 px-4">

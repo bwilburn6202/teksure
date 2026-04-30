@@ -48,7 +48,7 @@ export const guidesExpansion: Guide[] = [
     tags: ['social security', 'ssa.gov', 'government', 'benefits', 'retirement'],
     readTime: '7 min',
     videoUrl: 'https://www.youtube.com/embed/GiDqYBbpDhk',
-    thumbnailEmoji: '🏛️',
+    thumbnailEmoji: '',
     publishedAt: '2026-04-15',
     difficulty: 'Beginner',
     body: `Your Social Security account is one of the most important government accounts you can have online. It lets you view your Social Security statement, check your estimated future benefits, request a replacement Social Security card, and manage your payments if you are already receiving benefits — all without making a phone call or visiting an office.
@@ -79,7 +79,7 @@ If you are age 60 or older and have not created this account yet, do it soon. Sc
     category: 'government-civic' as any,
     tags: ['medicare', 'health insurance', 'government', 'benefits', 'seniors'],
     readTime: '7 min',
-    thumbnailEmoji: '🏥',
+    thumbnailEmoji: '',
     publishedAt: '2026-04-15',
     difficulty: 'Beginner',
     body: `Medicare.gov is the official website for Medicare, the federal health insurance program for people 65 and older (and some younger people with certain disabilities). The website lets you check what your Medicare plan covers, find doctors and hospitals that accept Medicare, compare Medicare Advantage and Part D prescription drug plans, and view your claims and costs — all from your computer or phone.
@@ -110,7 +110,7 @@ If you need help navigating the site, call 1-800-MEDICARE (1-800-633-4227) — t
     category: 'government-civic' as any,
     tags: ['taxes', 'IRS', 'free file', 'tax return', 'government'],
     readTime: '8 min',
-    thumbnailEmoji: '📋',
+    thumbnailEmoji: '',
     publishedAt: '2026-04-15',
     difficulty: 'Intermediate',
     body: `Every year, millions of Americans pay companies to file their taxes when they could do it for free. The IRS Free File program lets you file your federal tax return at no cost if your adjusted gross income (AGI) is $84,000 or less. Even if you earn more than that, IRS Free File Fillable Forms are available to everyone regardless of income.
@@ -141,7 +141,7 @@ File early to get your refund sooner and reduce the risk of tax identity theft, 
     category: 'government-civic' as any,
     tags: ['USPS', 'mail', 'package tracking', 'informed delivery', 'postal service'],
     readTime: '5 min',
-    thumbnailEmoji: '📦',
+    thumbnailEmoji: '',
     publishedAt: '2026-04-15',
     difficulty: 'Beginner',
     body: `USPS Informed Delivery is a free service from the United States Postal Service that lets you see what mail and packages are coming to your address before they arrive. Every morning, you get an email with scanned images of the letters and flats heading to your mailbox that day. You can also track any packages being delivered by USPS.
@@ -170,7 +170,7 @@ If you are going on vacation, Informed Delivery helps you monitor your mail from
     category: 'government-civic' as any,
     tags: ['healthcare', 'insurance', 'ACA', 'marketplace', 'government'],
     readTime: '8 min',
-    thumbnailEmoji: '⚕️',
+    thumbnailEmoji: '',
     publishedAt: '2026-04-15',
     difficulty: 'Intermediate',
     body: `Healthcare.gov is the official website for the Health Insurance Marketplace created under the Affordable Care Act. If you do not get health insurance through your employer, Medicare, or Medicaid, the Marketplace is where you shop for and enroll in a plan. Many people qualify for financial help (subsidies) that significantly lower the monthly cost.
@@ -201,7 +201,7 @@ If you need help choosing a plan, healthcare.gov has free in-person assistance. 
     category: 'government-civic' as any,
     tags: ['voting', 'voter registration', 'elections', 'government', 'civic'],
     readTime: '5 min',
-    thumbnailEmoji: '🗳️',
+    thumbnailEmoji: '',
     publishedAt: '2026-04-15',
     difficulty: 'Beginner',
     body: `Registering to vote is one of the most important things you can do as a citizen, and in most states you can do it online in under five minutes. You can also check whether you are already registered and update your information if you moved or changed your name.
@@ -234,7 +234,7 @@ Even if you think you are registered, check before every major election. Voter r
     category: 'government-civic' as any,
     tags: ['passport', 'travel', 'State Department', 'government', 'renewal'],
     readTime: '7 min',
-    thumbnailEmoji: '🛂',
+    thumbnailEmoji: '',
     publishedAt: '2026-04-15',
     difficulty: 'Intermediate',
     body: `The U.S. Department of State now allows eligible Americans to renew their passports entirely online. This is faster than the paper form process and eliminates the need to mail your current passport. Processing times for online renewals are typically 4 to 6 weeks for routine processing.
@@ -265,7 +265,7 @@ Renew your passport at least 6 months before it expires. Many countries require 
     category: 'government-civic' as any,
     tags: ['SNAP', 'food stamps', 'food assistance', 'government', 'benefits'],
     readTime: '7 min',
-    thumbnailEmoji: '🛒',
+    thumbnailEmoji: '',
     publishedAt: '2026-04-15',
     difficulty: 'Intermediate',
     body: `SNAP (Supplemental Nutrition Assistance Program) helps millions of Americans afford groceries. Benefits are loaded monthly onto an EBT card that works like a debit card at grocery stores, farmers markets, and some online retailers like Amazon and Walmart.
@@ -296,7 +296,7 @@ If your household is in an emergency situation with very low income and almost n
     category: 'government-civic' as any,
     tags: ['VA', 'veterans', 'military', 'benefits', 'government'],
     readTime: '7 min',
-    thumbnailEmoji: '🎖️',
+    thumbnailEmoji: '',
     publishedAt: '2026-04-15',
     difficulty: 'Beginner',
     body: `VA.gov is the official website for the U.S. Department of Veterans Affairs. If you are a veteran, service member, or dependent, you can manage healthcare, file disability claims, check education benefits, and access a wide range of services online.
@@ -325,7 +325,7 @@ For help navigating the website, call the VA's helpline at 1-800-827-1000 or use
     category: 'government-civic' as any,
     tags: ['FEMA', 'emergency', 'disaster', 'alerts', 'safety'],
     readTime: '5 min',
-    thumbnailEmoji: '🚨',
+    thumbnailEmoji: '',
     publishedAt: '2026-04-15',
     difficulty: 'Beginner',
     body: `The FEMA app is a free mobile application from the Federal Emergency Management Agency that gives you real-time weather alerts, emergency notifications, and safety information for your area. It also helps you prepare for emergencies, find shelters during disasters, and apply for disaster assistance.
@@ -353,7 +353,7 @@ Set up alerts for the locations where your family members live so you know about
     category: 'government-civic' as any,
     tags: ['credit report', 'credit score', 'identity theft', 'finances', 'government'],
     readTime: '6 min',
-    thumbnailEmoji: '📊',
+    thumbnailEmoji: '',
     publishedAt: '2026-04-15',
     difficulty: 'Beginner',
     body: `Your credit report is a detailed record of your borrowing and payment history. Lenders, landlords, and even some employers check it to make decisions about you. Reviewing your report regularly helps you catch errors and spot signs of identity theft early.
@@ -384,7 +384,7 @@ Your credit report does NOT include your credit score. The report is free; the s
     category: 'government-civic' as any,
     tags: ['REAL ID', 'DMV', 'identification', 'driver license', 'government'],
     readTime: '6 min',
-    thumbnailEmoji: '🪪',
+    thumbnailEmoji: '',
     publishedAt: '2026-04-15',
     difficulty: 'Beginner',
     body: `REAL ID is a federally compliant form of identification needed to board domestic flights and enter certain federal buildings. A REAL ID-compliant license or ID card has a gold or black star in the top-right corner. If your current license does not have this star, you need to visit your state DMV.
@@ -411,7 +411,7 @@ Many state DMV websites have a document checker tool — enter what documents yo
     category: 'government-civic' as any,
     tags: ['unemployment', 'job loss', 'benefits', 'government', 'financial assistance'],
     readTime: '7 min',
-    thumbnailEmoji: '💼',
+    thumbnailEmoji: '',
     publishedAt: '2026-04-15',
     difficulty: 'Intermediate',
     body: `If you lost your job through no fault of your own (layoff, company closure, reduction in hours), you may be eligible for unemployment insurance. The program provides temporary financial assistance while you look for new work. It is run by each state, so application processes and benefit amounts vary.
@@ -435,35 +435,7 @@ File as soon as possible. Most states have a one-week unpaid waiting period, and
     ],
   },
 
-  {
-    slug: 'find-property-tax-info-online',
-    title: 'How to Find Your Property Tax Information Online',
-    excerpt: 'Look up your property tax assessment, payment history, and due dates through your county assessor or treasurer website.',
-    category: 'government-civic' as any,
-    tags: ['property tax', 'real estate', 'county', 'government', 'homeowner'],
-    readTime: '5 min',
-    thumbnailEmoji: '🏠',
-    publishedAt: '2026-04-15',
-    difficulty: 'Beginner',
-    body: `Property taxes are collected by your local government to fund schools, roads, and emergency services. You can look up your tax information online — including how much you owe, due dates, assessment value, and payment history.
-
-Property tax information is managed at the county level. Search "[your county name] property tax" or "[your county name] assessor" in Google and use the official .gov website.
-
-Most county websites let you search by property address, parcel number, or your name. Once you find your property, you can view your assessed value, tax rate, current amount due, past-due amounts, payment history, and information about exemptions.
-
-Many counties offer a homestead exemption that reduces your tax if the home is your primary residence. Check your county assessor's website — it could save you hundreds per year. You typically only need to apply once.
-
-If you believe your property is over-assessed, you can appeal. Look for an "Appeal" or "Protest" section on your assessor's website. Appeals are usually due within 30 to 90 days of your assessment notice.`,
-    steps: [
-      { title: `Search for your county's tax website`, content: 'Google "[your county name] property tax" or "[your county name] assessor." Click the official .gov website.' },
-      { title: 'Search for your property', content: 'Enter your home address, parcel number, or name to find your property record.' },
-      { title: 'Review your assessed value', content: 'Check the value the county assigned to your property — this is used to calculate your tax and may differ from market value.' },
-      { title: 'Check balance and due dates', content: 'Review how much you owe and when payments are due. Note any past-due amounts or penalties.' },
-      { title: 'Look into exemptions', content: 'Check if you qualify for homestead, senior, veteran, or disability exemptions that can lower your bill.' },
-      { title: 'Appeal if assessment is too high', content: `Look for the "Appeal" section on your assessor's website. Note the deadline — typically 30 to 90 days from your assessment notice.` },
-    ],
-  },
-
+  
   {
     slug: 'use-recreation-gov-national-parks',
     title: 'How to Use Recreation.gov for National Park Reservations',
@@ -471,7 +443,7 @@ If you believe your property is over-assessed, you can appeal. Look for an "Appe
     category: 'government-civic' as any,
     tags: ['national parks', 'camping', 'recreation', 'government', 'outdoors'],
     readTime: '6 min',
-    thumbnailEmoji: '🏕️',
+    thumbnailEmoji: '',
     publishedAt: '2026-04-15',
     difficulty: 'Beginner',
     body: `Recreation.gov is the official reservation system for campgrounds, cabins, and permits at national parks, forests, and federal recreation areas. If you want to camp at popular parks like Yellowstone or Yosemite, you will need to book through this website.
@@ -504,7 +476,7 @@ Set a reminder for when reservations open. Most parks release sites at 10:00 AM 
     category: 'financial-tech' as any,
     tags: ['mobile banking', 'check deposit', 'banking', 'phone', 'finances'],
     readTime: '5 min',
-    thumbnailEmoji: '🏦',
+    thumbnailEmoji: '',
     publishedAt: '2026-04-15',
     difficulty: 'Beginner',
     body: `Mobile check deposit lets you deposit a paper check into your bank account by taking a photo of it with your phone. Nearly every major bank and credit union offers this free feature. Download your bank's app from the App Store or Google Play Store and sign in with your online banking credentials.
@@ -531,7 +503,7 @@ Keep the physical check for 30 days after depositing, then shred it. Never depos
     category: 'financial-tech' as any,
     tags: ['Zelle', 'money transfer', 'banking', 'payments', 'finances'],
     readTime: '5 min',
-    thumbnailEmoji: '💸',
+    thumbnailEmoji: '',
     publishedAt: '2026-04-15',
     difficulty: 'Beginner',
     body: `Zelle lets you send money from your bank account to someone else's bank account in minutes. It is built into 2,000+ bank apps including Chase, Bank of America, Wells Fargo, and Capital One. There are no fees, and money moves directly between bank accounts — no separate balance to manage.
@@ -557,7 +529,7 @@ Important safety note: Zelle transfers are instant and cannot be reversed. Only 
     category: 'financial-tech' as any,
     tags: ['Venmo', 'payments', 'money transfer', 'privacy', 'finances'],
     readTime: '6 min',
-    thumbnailEmoji: '📱',
+    thumbnailEmoji: '',
     publishedAt: '2026-04-15',
     difficulty: 'Beginner',
     body: `Venmo is a mobile payment app owned by PayPal for sending and receiving money from friends and family. It is free for personal payments from your bank account or Venmo balance. Download Venmo from the App Store or Google Play Store, create an account, and link a bank account or debit card.
@@ -585,7 +557,7 @@ Only use Venmo with people you know. Never use it to pay strangers for online pu
     category: 'financial-tech' as any,
     tags: ['Cash App', 'money transfer', 'payments', 'mobile banking', 'finances'],
     readTime: '6 min',
-    thumbnailEmoji: '💵',
+    thumbnailEmoji: '',
     publishedAt: '2026-04-15',
     difficulty: 'Beginner',
     body: `Cash App by Block (formerly Square) lets you send and receive money, invest, and buy Bitcoin. For most people, the main use is sending money to friends and family. Download Cash App, enter your phone number or email, verify with a code, and create a unique $cashtag (your Cash App username).
@@ -614,7 +586,7 @@ Safety is critical. Never send money to someone you do not know. Never share you
     category: 'financial-tech' as any,
     tags: ['auto-pay', 'bills', 'payments', 'banking', 'finances'],
     readTime: '6 min',
-    thumbnailEmoji: '🔄',
+    thumbnailEmoji: '',
     publishedAt: '2026-04-15',
     difficulty: 'Beginner',
     body: `Auto-pay lets you set recurring bills to pay automatically each month from your bank account, debit card, or credit card. It eliminates missed due dates, late fees, and the stress of remembering every bill.
@@ -634,34 +606,7 @@ Be cautious with free trials requiring a credit card — companies often start c
     ],
   },
 
-  {
-    slug: 'check-credit-score-free',
-    title: 'How to Check Your Credit Score for Free',
-    excerpt: 'Check your credit score without paying — your bank, credit card company, or free apps show your score at no cost.',
-    category: 'financial-tech' as any,
-    tags: ['credit score', 'credit', 'finances', 'banking', 'free'],
-    readTime: '5 min',
-    thumbnailEmoji: '📈',
-    publishedAt: '2026-04-15',
-    difficulty: 'Beginner',
-    body: `Your credit score (300-850) represents your creditworthiness. A higher score means better loan rates, easier apartment approvals, and sometimes lower insurance premiums. You can check it for free — no need to pay anyone.
-
-Your bank or credit card company likely shows it for free. Chase, Bank of America, Capital One, Discover, and American Express all offer this. Log in and look for "Credit Score" or "FICO Score" on your dashboard.
-
-Credit Karma is a free app showing TransUnion and Equifax scores, updated weekly, plus factors affecting your score. It makes money by recommending products — you do not have to buy anything. Experian offers a free FICO Score at experian.com with free monitoring.
-
-Your score may vary 20-40 points between sources depending on the scoring model (FICO vs. VantageScore) and bureau. What matters is the range: 670+ is "Good," 740+ is "Very Good," 800+ is "Exceptional."
-
-Checking your own score is a "soft inquiry" and does NOT lower it. Check as often as you want. The biggest factor in your score is payment history — paying on time accounts for 35%. Setting up auto-pay for at least minimum payments is one of the most effective ways to build and maintain a good score.`,
-    steps: [
-      { title: 'Check your bank or credit card app', content: 'Log in and look for "Credit Score" or "FICO Score" on your dashboard. Most major issuers include this for free.' },
-      { title: 'Download Credit Karma', content: 'Get the free app for TransUnion and Equifax scores updated weekly, plus factors affecting your score.' },
-      { title: 'Get your Experian score', content: 'Create a free account at experian.com for your Experian FICO Score and free monitoring alerts.' },
-      { title: 'Understand the ranges', content: 'Below 580 is "Poor," 580-669 "Fair," 670-739 "Good," 740-799 "Very Good," 800+ "Exceptional."' },
-      { title: 'Know what affects your score', content: 'Payment history (35%), amounts owed (30%), credit history length (15%), new inquiries (10%), and credit types (10%). Paying on time matters most.' },
-    ],
-  },
-
+  
   {
     slug: 'set-up-fraud-alerts-bank',
     title: 'How to Set Up Fraud Alerts on Your Bank Account',
@@ -669,7 +614,7 @@ Checking your own score is a "soft inquiry" and does NOT lower it. Check as ofte
     category: 'financial-tech' as any,
     tags: ['fraud', 'banking', 'security', 'alerts', 'identity theft'],
     readTime: '5 min',
-    thumbnailEmoji: '🔔',
+    thumbnailEmoji: '',
     publishedAt: '2026-04-15',
     difficulty: 'Beginner',
     body: `Fraud alerts and transaction notifications are your first defense against unauthorized charges. When enabled, your bank sends a text, email, or push notification for every transaction — or when something suspicious is detected. This lets you catch fraud within minutes instead of weeks.
@@ -697,7 +642,7 @@ If you receive a text claiming to be from your bank with a link to click — do 
     category: 'financial-tech' as any,
     tags: ['PayPal', 'online shopping', 'payments', 'security', 'finances'],
     readTime: '6 min',
-    thumbnailEmoji: '🛡️',
+    thumbnailEmoji: '',
     publishedAt: '2026-04-15',
     difficulty: 'Beginner',
     body: `PayPal lets you pay online without sharing your card or bank details with the seller. You log in to PayPal at checkout, confirm payment, and PayPal handles the rest. The seller never sees your financial details.
@@ -724,7 +669,7 @@ Enable two-factor authentication in Settings → Security → 2-Step Verificatio
     tags: ['Apple Pay', 'Google Pay', 'contactless', 'mobile payments', 'wallet'],
     readTime: '5 min',
     videoUrl: 'https://www.youtube.com/embed/IN1370MtoTs',
-    thumbnailEmoji: '📲',
+    thumbnailEmoji: '',
     publishedAt: '2026-04-15',
     difficulty: 'Beginner',
     body: `Apple Pay (iPhone) and Google Pay (Android) let you pay at stores by holding your phone near the card reader. Look for the contactless payment symbol (sideways WiFi icon) at checkout. These are safer than physical cards — your real card number is never transmitted to the merchant.
@@ -750,7 +695,7 @@ You can add multiple cards and set a default for everyday purchases. Switch card
     category: 'financial-tech' as any,
     tags: ['mobile banking', 'bank app', 'finances', 'phone', 'beginners'],
     readTime: '6 min',
-    thumbnailEmoji: '🏧',
+    thumbnailEmoji: '',
     publishedAt: '2026-04-15',
     difficulty: 'Beginner',
     body: `Your bank's mobile app puts your entire banking experience in your pocket — check balances, review transactions, pay bills, transfer money, deposit checks, and lock your debit card. Nearly every bank offers a free app.
@@ -779,7 +724,7 @@ Turn on push notifications in the app settings for instant alerts about deposits
     category: 'financial-tech' as any,
     tags: ['banking', 'fraud', 'security', 'monitoring', 'finances'],
     readTime: '5 min',
-    thumbnailEmoji: '🔍',
+    thumbnailEmoji: '',
     publishedAt: '2026-04-15',
     difficulty: 'Beginner',
     body: `Regularly checking your bank account is one of the most effective fraud protections. Thieves often start with small test charges ($1-2) to check if an account is active before making larger purchases. Catching these early can save thousands.
@@ -807,7 +752,7 @@ Prevention: enable transaction alerts for every charge, use strong unique passwo
     category: 'financial-tech' as any,
     tags: ['direct deposit', 'paycheck', 'banking', 'employment', 'finances'],
     readTime: '5 min',
-    thumbnailEmoji: '💰',
+    thumbnailEmoji: '',
     publishedAt: '2026-04-15',
     difficulty: 'Beginner',
     body: `Direct deposit sends money from a payer (employer, government, retirement fund) straight into your bank account on payday. No paper check, no bank trip, no waiting for it to clear. Money is available on the payment date, often earlier than a physical check.
@@ -828,35 +773,7 @@ Double-check every digit before submitting. A wrong number can send money to som
     ],
   },
 
-  {
-    slug: 'dispute-credit-card-charge',
-    title: 'How to Dispute a Charge on Your Credit Card',
-    excerpt: 'Found a charge you do not recognize? Learn how to dispute it with your credit card company and get your money back.',
-    category: 'financial-tech' as any,
-    tags: ['credit card', 'dispute', 'fraud', 'billing', 'finances'],
-    readTime: '6 min',
-    thumbnailEmoji: '⚠️',
-    publishedAt: '2026-04-15',
-    difficulty: 'Intermediate',
-    body: `If you find an unauthorized charge, wrong amount, or charge for something you did not receive on your credit card, you have the right to dispute it under the Fair Credit Billing Act. Your maximum liability for unauthorized charges is $50, and most issuers waive even that.
-
-Reasons to dispute: unauthorized transactions, billing errors (wrong amount, double charges, returned item charges), goods not received, or goods significantly different from advertised.
-
-Try contacting the merchant first for billing errors or undelivered goods — many issues resolve with a phone call. Keep records of communication. If the merchant does not resolve it, or the charge is unauthorized, contact your credit card company through the app, website, or phone number on your card.
-
-When filing: explain specifically why you are disputing ("I did not authorize this transaction" or "I was charged $75.99 but the correct amount was $45.99"). Provide supporting documents — receipts, confirmations, emails, photos.
-
-Your card company must acknowledge within 30 days and resolve within 90 days. During investigation, you do not pay the disputed amount and it cannot be reported as overdue. You must dispute within 60 days of the statement date, so review statements regularly.`,
-    steps: [
-      { title: 'Identify the suspicious charge', content: `Review your statement in your card company's app or website. Note the date, amount, and merchant name.` },
-      { title: 'Try contacting the merchant', content: 'For billing errors or undelivered goods, call or email the merchant first. Keep records of your communication.' },
-      { title: 'File a dispute with your card company', content: 'In the app or website, find the charge and tap "Dispute" or "Report a problem." Or call the number on your card.' },
-      { title: 'Provide documentation', content: 'Upload evidence: receipts, order confirmations, emails, tracking numbers, or photos of damaged goods.' },
-      { title: 'Wait for investigation', content: 'Your card company acknowledges within 30 days and resolves within 90 days. You do not pay the disputed amount during this time.' },
-      { title: 'Review the outcome', content: 'If the charge is removed, verify on your statement. If it stands, you can request the evidence used in the decision.' },
-    ],
-  },
-
+  
   {
     slug: 'understand-credit-card-statement',
     title: 'How to Understand Your Credit Card Statement',
@@ -864,7 +781,7 @@ Your card company must acknowledge within 30 days and resolve within 90 days. Du
     category: 'financial-tech' as any,
     tags: ['credit card', 'statement', 'interest', 'billing', 'finances'],
     readTime: '6 min',
-    thumbnailEmoji: '📄',
+    thumbnailEmoji: '',
     publishedAt: '2026-04-15',
     difficulty: 'Beginner',
     body: `Your credit card statement shows everything that happened on your account during the billing period. Understanding each section helps you manage money, catch errors, and avoid unnecessary interest.
@@ -898,7 +815,7 @@ Pay your full statement balance by the due date to avoid all interest. If you ca
     tags: ['Alexa', 'Amazon Echo', 'smart speaker', 'voice assistant', 'setup'],
     readTime: '7 min',
     videoUrl: 'https://www.youtube.com/embed/UaEQRwaMEQk',
-    thumbnailEmoji: '🔊',
+    thumbnailEmoji: '',
     publishedAt: '2026-04-15',
     difficulty: 'Beginner',
     body: `The Amazon Echo is a smart speaker powered by Alexa. Once set up, you can ask it to play music, set timers, answer questions, control smart home devices, make calls, and more — all by voice. Setup takes about 10 to 15 minutes.
@@ -925,7 +842,7 @@ Test by saying "Alexa, what time is it?" or "Alexa, play some music." Place the 
     category: 'smart-home' as any,
     tags: ['Google Home', 'Nest Hub', 'smart speaker', 'Google Assistant', 'setup'],
     readTime: '7 min',
-    thumbnailEmoji: '🏠',
+    thumbnailEmoji: '',
     publishedAt: '2026-04-15',
     difficulty: 'Beginner',
     body: `Google Home devices (now Google Nest) are smart speakers and displays powered by Google Assistant. They answer questions, play music, control smart devices, make video calls (screen models), and more. Setup takes about 10 minutes.
@@ -954,7 +871,7 @@ Test by saying "Hey Google, what is the weather?" or "Hey Google, play jazz musi
     category: 'smart-home' as any,
     tags: ['Fire Stick', 'Amazon', 'streaming', 'setup', 'television'],
     readTime: '6 min',
-    thumbnailEmoji: '🔥',
+    thumbnailEmoji: '',
     publishedAt: '2026-04-15',
     difficulty: 'Beginner',
     body: `The Amazon Fire TV Stick turns any TV into a smart TV with access to Netflix, Prime Video, Hulu, Disney+, YouTube, and thousands of apps. It also has Alexa built into the remote for voice search.
@@ -983,7 +900,7 @@ If you have Amazon Prime, you get free access to thousands of titles through Pri
     category: 'smart-home' as any,
     tags: ['Apple TV', 'streaming', 'Apple', 'setup', 'beginners'],
     readTime: '7 min',
-    thumbnailEmoji: '🍎',
+    thumbnailEmoji: '',
     publishedAt: '2026-04-15',
     difficulty: 'Beginner',
     body: `Apple TV plugs into your TV and provides access to the Apple TV app, Netflix, Hulu, Disney+, YouTube, and thousands of other apps. It integrates with iPhone — you can AirPlay content, use your phone as a remote, and access photos and music.
@@ -1010,7 +927,7 @@ Siri searches across all installed apps — hold the microphone button and say "
     category: 'smart-home' as any,
     tags: ['Ring', 'doorbell', 'home security', 'smart home', 'camera'],
     readTime: '8 min',
-    thumbnailEmoji: '🚪',
+    thumbnailEmoji: '',
     publishedAt: '2026-04-15',
     difficulty: 'Intermediate',
     body: `A Ring Video Doorbell lets you see, hear, and talk to whoever is at your door from your phone. It records video and sends motion alerts. Most models can be installed with basic tools.
@@ -1039,7 +956,7 @@ Ring Protect subscription plans let you save and review video recordings. Withou
     category: 'smart-home' as any,
     tags: ['smart lights', 'Philips Hue', 'smart home', 'lighting', 'automation'],
     readTime: '6 min',
-    thumbnailEmoji: '💡',
+    thumbnailEmoji: '',
     publishedAt: '2026-04-15',
     difficulty: 'Beginner',
     body: `Smart light bulbs let you control lighting from your phone, set schedules, change colors, and dim — all without getting up. Popular brands include Philips Hue, LIFX, Wyze, and TP-Link Kasa. WiFi bulbs (Wyze, LIFX, Kasa) connect directly to your WiFi — no extra equipment needed. Hub-based bulbs (Philips Hue) require a small hub that plugs into your router.
@@ -1068,7 +985,7 @@ Leave wall switches ON at all times with smart bulbs. If the switch is off, the 
     category: 'smart-home' as any,
     tags: ['smart thermostat', 'Nest', 'Ecobee', 'energy saving', 'smart home'],
     readTime: '7 min',
-    thumbnailEmoji: '🌡️',
+    thumbnailEmoji: '',
     publishedAt: '2026-04-15',
     difficulty: 'Intermediate',
     body: `A smart thermostat replaces your old thermostat and lets you control heating and cooling from your phone, set schedules, and save money. Nest and Ecobee are the most popular brands. Both learn your preferences and adjust automatically when you leave home.
@@ -1094,7 +1011,7 @@ Both Nest and Ecobee typically pay for themselves in 1-2 years through energy sa
     category: 'smart-home' as any,
     tags: ['Roomba', 'robot vacuum', 'smart home', 'cleaning', 'automation'],
     readTime: '6 min',
-    thumbnailEmoji: '🤖',
+    thumbnailEmoji: '',
     publishedAt: '2026-04-15',
     difficulty: 'Beginner',
     body: `A robot vacuum cleans floors automatically, navigating around furniture and along baseboards. Popular brands include Roomba (iRobot), Roborock, Shark, and Ecovacs. Once set up, schedule it to clean daily or start it from your phone.
@@ -1123,7 +1040,7 @@ Tap "Clean" in the app or press the button on top. The robot maps your home duri
     category: 'smart-home' as any,
     tags: ['Alexa', 'voice commands', 'smart speaker', 'Amazon Echo', 'tips'],
     readTime: '6 min',
-    thumbnailEmoji: '🗣️',
+    thumbnailEmoji: '',
     publishedAt: '2026-04-15',
     difficulty: 'Beginner',
     body: `Once your Echo is set up, learn what to ask Alexa. Start every request with "Alexa" followed by your command. Here are the most useful commands:
@@ -1154,7 +1071,7 @@ If Alexa misunderstands you, check what she heard in the Alexa app under "Activi
     category: 'smart-home' as any,
     tags: ['Alexa', 'privacy', 'Amazon Echo', 'settings', 'data'],
     readTime: '5 min',
-    thumbnailEmoji: '🔒',
+    thumbnailEmoji: '',
     publishedAt: '2026-04-15',
     difficulty: 'Beginner',
     body: `When you talk to Alexa, Amazon records what you say. You can manage and delete these recordings and control data usage.
@@ -1182,7 +1099,7 @@ Review Alexa skills permissions under More → Skills & Games → Your Skills. T
     category: 'smart-home' as any,
     tags: ['smart plug', 'smart home', 'automation', 'Alexa', 'Google Home'],
     readTime: '5 min',
-    thumbnailEmoji: '🔌',
+    thumbnailEmoji: '',
     publishedAt: '2026-04-15',
     difficulty: 'Beginner',
     body: `A smart plug goes between a wall outlet and your lamp, fan, or coffee maker. Once set up, you control that device from your phone, set schedules, and use voice commands. Popular brands include TP-Link Kasa, Wyze, Amazon Smart Plug, and Meross, costing $8-15 each.
@@ -1210,7 +1127,7 @@ Great uses: scheduling lamps for vacation security, starting a coffee maker in t
     category: 'smart-home' as any,
     tags: ['security camera', 'home security', 'smart home', 'surveillance', 'safety'],
     readTime: '7 min',
-    thumbnailEmoji: '📷',
+    thumbnailEmoji: '',
     publishedAt: '2026-04-15',
     difficulty: 'Intermediate',
     body: `Home security cameras let you watch live video, receive motion alerts, and review recordings from your phone. Popular brands include Ring, Wyze, Arlo, Nest Cam, and Eufy, starting around $25-40. No professional installation or monitoring contract is required.
@@ -1239,7 +1156,7 @@ A visible camera also acts as a deterrent. For outdoor use, ensure the camera is
     category: 'smart-home' as any,
     tags: ['Bluetooth', 'speakers', 'television', 'audio', 'wireless'],
     readTime: '5 min',
-    thumbnailEmoji: '🔈',
+    thumbnailEmoji: '',
     publishedAt: '2026-04-15',
     difficulty: 'Beginner',
     body: `If your TV speakers sound thin, connect Bluetooth speakers for better audio. Bluetooth headphones are great for private listening at night. Most smart TVs made after 2018 have built-in Bluetooth — check in Settings → Sound for "Bluetooth" options. If your TV lacks Bluetooth, buy a Bluetooth transmitter ($15-40) that plugs into the headphone jack or optical port.
@@ -1269,7 +1186,7 @@ If there is a delay between video and audio (lip sync issue), look for "Audio De
     category: 'entertainment' as any,
     tags: ['Spotify', 'music', 'streaming', 'playlists', 'entertainment'],
     readTime: '6 min',
-    thumbnailEmoji: '🎵',
+    thumbnailEmoji: '',
     publishedAt: '2026-04-15',
     difficulty: 'Beginner',
     body: `Spotify is the world's most popular music streaming service with over 100 million songs. You can use it free (with ads between songs) or subscribe to Spotify Premium (no ads, offline downloads, and higher quality audio). The free version still lets you search, browse, and play music — ads play every few songs.
@@ -1297,7 +1214,7 @@ Spotify's "Discover Weekly" playlist updates every Monday with 30 songs it think
     category: 'entertainment' as any,
     tags: ['podcasts', 'audio', 'phone', 'entertainment', 'free'],
     readTime: '5 min',
-    thumbnailEmoji: '🎙️',
+    thumbnailEmoji: '',
     publishedAt: '2026-04-15',
     difficulty: 'Beginner',
     body: `Podcasts are free audio shows you can listen to anytime — like radio on demand. There are podcasts on every topic: news, history, true crime, comedy, science, health, cooking, and more. New episodes are released on a schedule (daily, weekly, etc.) and you can listen whenever you want.
@@ -1325,7 +1242,7 @@ Great starter podcasts include NPR's "Up First" (daily news in 10 minutes), "Stu
     category: 'entertainment' as any,
     tags: ['Libby', 'library', 'audiobooks', 'ebooks', 'free'],
     readTime: '5 min',
-    thumbnailEmoji: '📖',
+    thumbnailEmoji: '',
     publishedAt: '2026-04-15',
     difficulty: 'Beginner',
     body: `Libby is a free app that lets you borrow audiobooks and ebooks from your local public library — right on your phone, with no late fees. Books are automatically returned when the lending period ends (usually 14-21 days). If you have a library card, you can start borrowing today.
@@ -1353,7 +1270,7 @@ If you do not have a library card, most libraries let you sign up online for fre
     category: 'entertainment' as any,
     tags: ['streaming', 'subscriptions', 'budgeting', 'Netflix', 'entertainment'],
     readTime: '6 min',
-    thumbnailEmoji: '📊',
+    thumbnailEmoji: '',
     publishedAt: '2026-04-15',
     difficulty: 'Beginner',
     body: `Streaming subscriptions can quietly add up. If you have Netflix, Hulu, Disney+, Max, Amazon Prime, Apple TV+, Peacock, Paramount+, and Spotify, you could be paying over $100 per month. Reviewing and managing these subscriptions saves real money.
@@ -1381,7 +1298,7 @@ Consider rotating services — subscribe to one for a month, watch what you want
     category: 'entertainment' as any,
     tags: ['YouTube Music', 'music', 'streaming', 'free', 'entertainment'],
     readTime: '5 min',
-    thumbnailEmoji: '🎶',
+    thumbnailEmoji: '',
     publishedAt: '2026-04-15',
     difficulty: 'Beginner',
     body: `YouTube Music is Google's music streaming service. The free version lets you search and play any song with ads between tracks (but your phone screen must stay on). YouTube Music Premium ($11/month) removes ads, allows background play, and lets you download songs offline.
@@ -1409,7 +1326,7 @@ If you have a YouTube Premium subscription, YouTube Music Premium is included at
     category: 'entertainment' as any,
     tags: ['Netflix', 'sharing', 'streaming', 'account', 'household'],
     readTime: '5 min',
-    thumbnailEmoji: '🎬',
+    thumbnailEmoji: '',
     publishedAt: '2026-04-15',
     difficulty: 'Beginner',
     body: `Netflix now requires that accounts be used by people who live in the same household (same home, same WiFi network). If you want to share Netflix with someone outside your home, you need to use Netflix's official "Extra Member" feature.
@@ -1439,7 +1356,7 @@ If you no longer want to share with someone, you can remove their profile and ch
     category: 'entertainment' as any,
     tags: ['Apple Music', 'music', 'iPhone', 'streaming', 'Apple'],
     readTime: '5 min',
-    thumbnailEmoji: '🎧',
+    thumbnailEmoji: '',
     publishedAt: '2026-04-15',
     difficulty: 'Beginner',
     body: `Apple Music is Apple's music streaming service with over 100 million songs. It comes pre-installed on iPhone and iPad. Apple Music costs $11/month (individual) or $17/month (family plan for up to 6 people). There is a free 1-month trial for new subscribers.
@@ -1469,7 +1386,7 @@ Apple Music syncs across all your Apple devices — iPhone, iPad, Mac, and Apple
     category: 'entertainment' as any,
     tags: ['playlist', 'music', 'Spotify', 'Apple Music', 'entertainment'],
     readTime: '5 min',
-    thumbnailEmoji: '🎼',
+    thumbnailEmoji: '',
     publishedAt: '2026-04-15',
     difficulty: 'Beginner',
     body: `A playlist is a custom collection of songs you group together — workout music, relaxing evening songs, road trip favorites, or a mix of your all-time favorites. Every music service lets you create playlists, and the process is similar across all of them.
@@ -1501,7 +1418,7 @@ Most services also offer "smart" or auto-generated playlists based on a theme or
     category: 'entertainment' as any,
     tags: ['cord cutting', 'live TV', 'streaming', 'cable alternative', 'entertainment'],
     readTime: '6 min',
-    thumbnailEmoji: '📡',
+    thumbnailEmoji: '',
     publishedAt: '2026-04-15',
     difficulty: 'Beginner',
     body: `You do not need cable to watch live TV. Several streaming services offer live channels — local news, sports, and cable networks — at a fraction of cable costs. And some options are completely free.
@@ -1529,7 +1446,7 @@ For sports specifically: check which service carries your team's games. Regional
     category: 'entertainment' as any,
     tags: ['download', 'offline', 'movies', 'streaming', 'travel'],
     readTime: '5 min',
-    thumbnailEmoji: '⬇️',
+    thumbnailEmoji: '',
     publishedAt: '2026-04-15',
     difficulty: 'Beginner',
     body: `Most streaming services let you download movies and shows to your phone or tablet for watching without internet — perfect for flights, road trips, or areas with poor cell service. You need a paid subscription (downloads are not available on free plans) and enough storage space on your device.
@@ -1567,7 +1484,7 @@ To manage storage: go to your streaming app's settings → Downloads. You can se
     category: 'communication' as any,
     tags: ['WhatsApp', 'video call', 'messaging', 'communication', 'free'],
     readTime: '5 min',
-    thumbnailEmoji: '📹',
+    thumbnailEmoji: '',
     publishedAt: '2026-04-15',
     difficulty: 'Beginner',
     body: `WhatsApp is a free messaging app that lets you make video calls, voice calls, and send messages to anyone in the world who also has WhatsApp — at no cost beyond your internet connection. It is especially popular for staying in touch with family and friends overseas.
@@ -1595,7 +1512,7 @@ During a call, you can switch between front and back cameras, mute your micropho
     category: 'communication' as any,
     tags: ['Facebook', 'Marketplace', 'buying', 'selling', 'safety'],
     readTime: '6 min',
-    thumbnailEmoji: '🏪',
+    thumbnailEmoji: '',
     publishedAt: '2026-04-15',
     difficulty: 'Beginner',
     body: `Facebook Marketplace is a free way to buy and sell items locally — furniture, electronics, cars, clothing, and more. It is built into the Facebook app and shows listings from people in your area. You message sellers directly and arrange to meet in person.
@@ -1625,7 +1542,7 @@ Check the buyer or seller's Facebook profile. Established profiles with friends,
     category: 'communication' as any,
     tags: ['group chat', 'texting', 'iPhone', 'Android', 'messaging'],
     readTime: '5 min',
-    thumbnailEmoji: '💬',
+    thumbnailEmoji: '',
     publishedAt: '2026-04-15',
     difficulty: 'Beginner',
     body: `A group chat lets you text multiple people at once — everyone sees and responds in the same conversation. This is great for family updates, planning events, sharing photos, and staying connected with a group.
@@ -1653,7 +1570,7 @@ You can leave a group chat if it becomes too active: on iPhone, tap the group na
     category: 'communication' as any,
     tags: ['block', 'spam', 'calls', 'texts', 'phone'],
     readTime: '5 min',
-    thumbnailEmoji: '🚫',
+    thumbnailEmoji: '',
     publishedAt: '2026-04-15',
     difficulty: 'Beginner',
     body: `Unwanted calls and spam texts are frustrating and sometimes dangerous. Both iPhone and Android have built-in tools to block specific numbers and filter spam.
@@ -1683,7 +1600,7 @@ Register your number at donotcall.gov to reduce calls from legitimate telemarket
     category: 'communication' as any,
     tags: ['notifications', 'settings', 'phone', 'iPhone', 'Android'],
     readTime: '5 min',
-    thumbnailEmoji: '🔔',
+    thumbnailEmoji: '',
     publishedAt: '2026-04-15',
     difficulty: 'Beginner',
     body: `Phone notifications can be overwhelming — constant buzzing from news apps, social media, games, and shopping apps. The good news is you have complete control over which apps can notify you and how.
@@ -1713,7 +1630,7 @@ For a quick cleanup, check your notification history: iPhone swipe down from the
     category: 'communication' as any,
     tags: ['social media', 'privacy', 'delete account', 'security', 'digital footprint'],
     readTime: '6 min',
-    thumbnailEmoji: '🗑️',
+    thumbnailEmoji: '',
     publishedAt: '2026-04-15',
     difficulty: 'Intermediate',
     body: `Old social media accounts you no longer use are a privacy and security risk. They may contain personal photos, your birthday, email address, and other information that hackers or scammers can use. If the service gets hacked, your data is exposed. Deleting unused accounts reduces your digital footprint and improves your online safety.
@@ -1745,7 +1662,7 @@ For other services you have forgotten about, try searching your email inbox for 
     category: 'communication' as any,
     tags: ['Instagram', 'social media', 'photos', 'beginners', 'app'],
     readTime: '6 min',
-    thumbnailEmoji: '📸',
+    thumbnailEmoji: '',
     publishedAt: '2026-04-15',
     difficulty: 'Beginner',
     body: `Instagram is a social media app focused on sharing photos and short videos. You can follow friends, family, celebrities, news accounts, and pages about your interests (gardening, cooking, travel, pets). It is free to use and available on iPhone and Android.
@@ -1775,7 +1692,7 @@ Stories are short posts (photos or videos) that disappear after 24 hours. They a
     category: 'communication' as any,
     tags: ['Zoom', 'video call', 'meetings', 'communication', 'setup'],
     readTime: '6 min',
-    thumbnailEmoji: '🖥️',
+    thumbnailEmoji: '',
     publishedAt: '2026-04-15',
     difficulty: 'Beginner',
     body: `Zoom is one of the most popular video calling apps. You can use it on your phone, tablet, or computer for family calls, doctor appointments, classes, and meetings. The free plan allows calls with up to 100 participants for up to 40 minutes (unlimited time for 1-on-1 calls).
@@ -1805,7 +1722,7 @@ If you are hosting a call for family, send the meeting link via text message so 
     category: 'communication' as any,
     tags: ['photos', 'texting', 'MMS', 'iPhone', 'Android'],
     readTime: '4 min',
-    thumbnailEmoji: '🖼️',
+    thumbnailEmoji: '',
     publishedAt: '2026-04-15',
     difficulty: 'Beginner',
     body: `Sending photos by text message is one of the most common things people do on their phones. Here is how to do it on both iPhone and Android.
@@ -1826,36 +1743,7 @@ To send multiple photos at once, select several before sending. Most messaging a
     ],
   },
 
-  {
-    slug: 'use-google-meet-video-calls',
-    title: 'How to Use Google Meet for Video Calls',
-    excerpt: 'Start or join a free Google Meet video call — right from your Gmail, phone, or web browser.',
-    category: 'communication' as any,
-    tags: ['Google Meet', 'video call', 'Google', 'communication', 'meetings'],
-    readTime: '5 min',
-    thumbnailEmoji: '🎥',
-    publishedAt: '2026-04-15',
-    difficulty: 'Beginner',
-    body: `Google Meet is Google's free video calling service. You can use it from your phone, tablet, or computer. Anyone with a Google account (Gmail) can start a meeting, and participants can join from a web browser without installing anything. Free calls allow up to 100 participants for up to 60 minutes.
-
-To start a meeting on your phone: download the Google Meet app, sign in with your Google account, and tap "New Meeting." You get a meeting link to share via text, email, or any messaging app.
-
-To start from a computer: go to meet.google.com, sign in with your Google account, and click "New Meeting." You can also start a meeting directly from Gmail — look for the "Meet" section in the sidebar.
-
-To join a meeting: click the meeting link someone shared with you, or go to meet.google.com and enter the meeting code. On your phone, tapping the link automatically opens the Google Meet app.
-
-During a call, use the bottom toolbar to mute/unmute your microphone, turn your camera on/off, share your screen, access the chat, and leave the meeting. Tap the three dots for more options like changing your background or adjusting layout.
-
-Google Meet is a great option for families where some members use iPhone and others use Android — it works on every platform through a web browser.`,
-    steps: [
-      { title: 'Open Google Meet', content: 'On phone: download the Google Meet app. On computer: go to meet.google.com. Sign in with your Google account.' },
-      { title: 'Start a new meeting', content: 'Tap "New Meeting" and share the link with participants via text or email.' },
-      { title: 'Join a meeting', content: 'Click the meeting link shared with you, or go to meet.google.com and enter the meeting code.' },
-      { title: 'Use call controls', content: 'The bottom toolbar has mute, camera, screen share, chat, and leave buttons.' },
-      { title: 'Share with anyone', content: 'Google Meet works on any device with a web browser — great for mixed iPhone/Android families.' },
-    ],
-  },
-
+  
   {
     slug: 'set-up-microsoft-teams',
     title: 'How to Set Up Microsoft Teams',
@@ -1863,7 +1751,7 @@ Google Meet is a great option for families where some members use iPhone and oth
     category: 'communication' as any,
     tags: ['Microsoft Teams', 'video call', 'Microsoft', 'communication', 'meetings'],
     readTime: '6 min',
-    thumbnailEmoji: '👥',
+    thumbnailEmoji: '',
     publishedAt: '2026-04-15',
     difficulty: 'Beginner',
     body: `Microsoft Teams is a communication app for video calls, messaging, and file sharing. While many people use it for work, the free personal version is also great for family and friends. It works on phones, tablets, and computers.
@@ -1893,7 +1781,7 @@ For scheduling calls: tap "Calendar" → "New Meeting" → set a date and time �
     category: 'communication' as any,
     tags: ['group chat', 'texting', 'etiquette', 'messaging', 'social'],
     readTime: '4 min',
-    thumbnailEmoji: '👋',
+    thumbnailEmoji: '',
     publishedAt: '2026-04-15',
     difficulty: 'Beginner',
     body: `Group chats are great for staying connected, but sometimes they get too active — dozens of notifications an hour, conversations you are not interested in, or a group that has outlived its purpose. Here is how to gracefully reduce the noise or leave.
@@ -1925,7 +1813,7 @@ Option 3: If you do not want to leave entirely but the notifications are too muc
     category: 'health-tech' as any,
     tags: ['MyChart', 'patient portal', 'healthcare', 'doctor', 'medical records'],
     readTime: '6 min',
-    thumbnailEmoji: '🩺',
+    thumbnailEmoji: '',
     publishedAt: '2026-04-15',
     difficulty: 'Beginner',
     body: `A patient portal is a secure website or app that lets you communicate with your doctor's office online. The most common portal is MyChart, used by hospitals and clinics across the country. Through the portal, you can view test results, message your doctor, schedule appointments, request prescription refills, and see your medical records — all without making a phone call.
@@ -1956,7 +1844,7 @@ Patient portals are secure — your health information is protected by federal l
     category: 'health-tech' as any,
     tags: ['telehealth', 'telemedicine', 'video visit', 'doctor', 'healthcare'],
     readTime: '6 min',
-    thumbnailEmoji: '💻',
+    thumbnailEmoji: '',
     publishedAt: '2026-04-15',
     difficulty: 'Beginner',
     body: `Telehealth lets you see your doctor by video call from the comfort of your home. It is great for follow-up visits, medication reviews, mental health appointments, and non-emergency consultations. Most insurance plans cover telehealth visits the same as in-person visits.
@@ -1986,7 +1874,7 @@ If you have trouble connecting, call your doctor's office. Many have a support l
     category: 'health-tech' as any,
     tags: ['medication', 'reminders', 'health', 'phone', 'alarms'],
     readTime: '5 min',
-    thumbnailEmoji: '💊',
+    thumbnailEmoji: '',
     publishedAt: '2026-04-15',
     difficulty: 'Beginner',
     body: `Taking medication on schedule is important for your health, and your phone can help. There are several ways to set up daily medication reminders — from basic alarms to dedicated apps that track your medications and refill dates.
@@ -2016,7 +1904,7 @@ Whatever method you choose, consistency is key. Set your reminders for the same 
     category: 'health-tech' as any,
     tags: ['Apple Health', 'Google Fit', 'fitness', 'steps', 'health tracking'],
     readTime: '5 min',
-    thumbnailEmoji: '❤️',
+    thumbnailEmoji: '',
     publishedAt: '2026-04-15',
     difficulty: 'Beginner',
     body: `Your phone can track your daily steps, walking distance, and other activity without any extra devices — using its built-in motion sensors. Apple Health (iPhone) and Google Fit (Android) are free apps that collect this data and present it in an easy-to-understand dashboard.
@@ -2046,7 +1934,7 @@ Your health data is private and stored on your device. You control who can see i
     category: 'health-tech' as any,
     tags: ['Apple Watch', 'fall detection', 'safety', 'seniors', 'emergency'],
     readTime: '5 min',
-    thumbnailEmoji: '⌚',
+    thumbnailEmoji: '',
     publishedAt: '2026-04-15',
     difficulty: 'Beginner',
     body: `Apple Watch has a built-in Fall Detection feature that can detect when you take a hard fall. If it detects a fall and you do not respond within about a minute, it automatically calls emergency services (911) and sends your location to your emergency contacts. This feature is available on Apple Watch Series 4 and later.
@@ -2104,7 +1992,7 @@ Review and update your Medical ID at least once a year or whenever your medicati
     category: 'health-tech' as any,
     tags: ['hearing aids', 'Bluetooth', 'accessibility', 'phone', 'audio'],
     readTime: '6 min',
-    thumbnailEmoji: '👂',
+    thumbnailEmoji: '',
     publishedAt: '2026-04-15',
     difficulty: 'Intermediate',
     body: `Many modern hearing aids connect to your phone via Bluetooth. This lets you stream phone calls, music, podcasts, and other audio directly to your hearing aids — like wireless earbuds designed for your hearing needs. You can also use your phone as a remote control to adjust volume and settings.
@@ -2134,7 +2022,7 @@ If you have trouble pairing, make sure your hearing aids have fresh batteries (o
     category: 'health-tech' as any,
     tags: ['sleep tracking', 'wearable', 'fitness tracker', 'health', 'Apple Watch'],
     readTime: '5 min',
-    thumbnailEmoji: '😴',
+    thumbnailEmoji: '',
     publishedAt: '2026-04-15',
     difficulty: 'Beginner',
     body: `Many smartwatches and fitness trackers can monitor your sleep — how long you slept, how often you woke up, and how much time you spent in different sleep stages (light, deep, and REM sleep). This information helps you understand your sleep quality and make changes to improve it.
@@ -2164,7 +2052,7 @@ What to look for: most adults need 7-9 hours of sleep. If your tracker consisten
     category: 'health-tech' as any,
     tags: ['health data', 'doctor', 'Apple Health', 'medical records', 'sharing'],
     readTime: '5 min',
-    thumbnailEmoji: '📋',
+    thumbnailEmoji: '',
     publishedAt: '2026-04-15',
     difficulty: 'Intermediate',
     body: `If you track your health with a phone or wearable device — blood pressure readings, blood glucose levels, heart rate, activity, or sleep — sharing this data with your doctor gives them valuable information they cannot get from a single office visit. Trends over weeks and months can reveal patterns that help with diagnosis and treatment decisions.
@@ -2194,7 +2082,7 @@ Before your appointment, prepare a one-page summary: your recent averages, any c
     category: 'health-tech' as any,
     tags: ['blood pressure', 'health monitoring', 'Bluetooth', 'medical', 'health app'],
     readTime: '5 min',
-    thumbnailEmoji: '🫀',
+    thumbnailEmoji: '',
     publishedAt: '2026-04-15',
     difficulty: 'Beginner',
     body: `Tracking your blood pressure at home gives you and your doctor a much more complete picture of your cardiovascular health than occasional office readings. Many blood pressure monitors now connect to your phone via Bluetooth, automatically logging each reading so you can see trends over time.
@@ -2229,7 +2117,7 @@ Normal blood pressure is below 120/80. Talk to your doctor about your target if 
     tags: ['iPhone', 'setup', 'Apple', 'new phone', 'beginners'],
     readTime: '10 min',
     videoUrl: 'https://www.youtube.com/embed/7LcXfRZvdyo',
-    thumbnailEmoji: '📱',
+    thumbnailEmoji: '',
     publishedAt: '2026-04-15',
     difficulty: 'Beginner',
     body: `Getting a new iPhone is exciting, and setting it up correctly from the start will save you headaches later. This guide walks you through the entire process from unboxing to your first apps.
@@ -2262,7 +2150,7 @@ Set up your email: Settings → Mail → Accounts → Add Account. Choose your e
     category: 'life-transitions' as any,
     tags: ['Android', 'setup', 'new phone', 'Google', 'beginners'],
     readTime: '10 min',
-    thumbnailEmoji: '🤖',
+    thumbnailEmoji: '',
     publishedAt: '2026-04-15',
     difficulty: 'Beginner',
     body: `Setting up a new Android phone takes about 15-20 minutes. Whether this is your first Android or you are upgrading from an older phone, this guide walks you through every step.
@@ -2288,66 +2176,8 @@ Check for software updates: Settings → System → Software Update. Installing 
     ],
   },
 
-  {
-    slug: 'switch-iphone-to-android',
-    title: 'How to Switch from iPhone to Android',
-    excerpt: 'Move your contacts, photos, messages, and apps from iPhone to a new Android phone — without losing anything.',
-    category: 'life-transitions' as any,
-    tags: ['switch', 'iPhone', 'Android', 'data transfer', 'migration'],
-    readTime: '8 min',
-    thumbnailEmoji: '🔄',
-    publishedAt: '2026-04-15',
-    difficulty: 'Intermediate',
-    body: `Switching from iPhone to Android is a bigger change than upgrading within the same platform, but modern transfer tools make it much smoother than it used to be. Here is what transfers and what you need to handle manually.
-
-What transfers automatically: contacts, photos and videos, calendar events, and free apps that exist on both platforms. What requires manual work: paid apps (you may need to re-purchase), iMessage threads (important to deregister — see below), app-specific data (game progress, etc.), and Apple-exclusive features (FaceTime, iMessage, AirDrop).
-
-Before switching, make sure everything is backed up. Go to iPhone Settings → your name → iCloud → iCloud Backup → Back Up Now. Also make sure your photos are backed up — download Google Photos on your iPhone and let it upload your full photo library before switching.
-
-The most critical step: turn off iMessage before switching. If you do not do this, text messages from iPhone users will continue going to iMessage (which your Android phone cannot receive) instead of SMS. Go to Settings → Messages → toggle off iMessage. Also go to Settings → FaceTime → toggle it off.
-
-During Android setup, use Google's "Switch to Android" tool or Samsung's "Smart Switch" app. These tools transfer contacts, photos, videos, calendar events, and more from your iPhone. Follow the on-screen instructions — the process usually takes 15-30 minutes depending on how much data you have.
-
-After switching, download the Android versions of your apps from the Google Play Store and sign in to each one. Set up your email, bank apps, and messaging apps on the new phone.`,
-    steps: [
-      { title: 'Back up your iPhone', content: 'Settings → your name → iCloud → iCloud Backup → Back Up Now. Also download Google Photos on iPhone and back up all photos.' },
-      { title: 'Turn off iMessage and FaceTime', content: 'This is critical. Settings → Messages → toggle off iMessage. Settings → FaceTime → toggle off. Without this step, you will miss text messages.' },
-      { title: 'Use the transfer tool during setup', content: 'During Android setup, use "Switch to Android" or Samsung Smart Switch to transfer contacts, photos, calendar, and more from your iPhone.' },
-      { title: 'Download your apps', content: 'Open Google Play Store and download the Android versions of your apps. Sign in to each with your existing accounts.' },
-      { title: 'Verify everything transferred', content: 'Check that contacts, photos, and calendar events are on your new phone. If anything is missing, it may still be in your iCloud backup.' },
-    ],
-  },
-
-  {
-    slug: 'switch-android-to-iphone',
-    title: 'How to Switch from Android to iPhone',
-    excerpt: `Move your contacts, photos, apps, and data from Android to a new iPhone using Apple's Move to iOS tool.`,
-    category: 'life-transitions' as any,
-    tags: ['switch', 'Android', 'iPhone', 'data transfer', 'migration'],
-    readTime: '8 min',
-    thumbnailEmoji: '🔄',
-    publishedAt: '2026-04-15',
-    difficulty: 'Intermediate',
-    body: `Switching from Android to iPhone is straightforward with Apple's "Move to iOS" app, which transfers your contacts, message history, photos, videos, web bookmarks, mail accounts, and calendars. Free apps that exist on both platforms are also suggested for download.
-
-Before switching, make sure your Android phone is connected to WiFi and has enough battery (or is plugged in). Download the "Move to iOS" app from the Google Play Store on your Android phone. Do not start this process after you have already set up your iPhone — you need to do it during the initial iPhone setup.
-
-Turn on your new iPhone and begin setup. When you reach the "Apps & Data" screen, select "Move Data from Android." Your iPhone will display a code. Open the Move to iOS app on your Android phone and enter this code. The two devices will connect and you select what to transfer.
-
-The transfer can take anywhere from a few minutes to over an hour depending on how much data you have. Do not use either phone during the transfer. When complete, finish setting up your iPhone.
-
-After setup, open the App Store and download the iPhone versions of your apps. Sign in to each with your existing accounts. Your contacts and photos should already be on the new iPhone.
-
-Note: some Android-specific features do not exist on iPhone, and vice versa. You gain iMessage, FaceTime, AirDrop, and tight integration with other Apple devices. You may need to adjust to differences in how notifications, file management, and customization work.`,
-    steps: [
-      { title: 'Download Move to iOS on Android', content: 'On your Android phone, download the "Move to iOS" app from the Google Play Store. Make sure both phones are on WiFi and charged.' },
-      { title: 'Start iPhone setup', content: 'Turn on your new iPhone and follow the setup steps. At "Apps & Data," select "Move Data from Android."' },
-      { title: 'Enter the code', content: 'Your iPhone displays a code. Enter it in the Move to iOS app on your Android phone. The devices connect.' },
-      { title: 'Select what to transfer', content: 'Choose contacts, messages, photos, videos, bookmarks, and other data to transfer. Wait for the process to complete.' },
-      { title: 'Download your apps', content: 'After setup, open the App Store and download iPhone versions of your apps. Sign in to each with existing accounts.' },
-    ],
-  },
-
+  
+  
   {
     slug: 'transfer-data-new-computer',
     title: 'How to Transfer Your Data to a New Computer',
@@ -2355,7 +2185,7 @@ Note: some Android-specific features do not exist on iPhone, and vice versa. You
     category: 'life-transitions' as any,
     tags: ['computer', 'data transfer', 'backup', 'Windows', 'Mac'],
     readTime: '8 min',
-    thumbnailEmoji: '💻',
+    thumbnailEmoji: '',
     publishedAt: '2026-04-15',
     difficulty: 'Intermediate',
     body: `Getting a new computer is exciting, but you need to bring your files, photos, and documents along. Here are the most reliable ways to transfer your data.
@@ -2384,7 +2214,7 @@ Before getting rid of your old computer: make sure everything is transferred, si
     category: 'life-transitions' as any,
     tags: ['family', 'setup', 'helping others', 'seniors', 'patience'],
     readTime: '6 min',
-    thumbnailEmoji: '👨‍👩‍👧‍👦',
+    thumbnailEmoji: '‍‍‍',
     publishedAt: '2026-04-15',
     difficulty: 'Beginner',
     body: `Helping a family member set up a new device is a generous act — and it goes smoother when you approach it with a plan. Whether you are helping in person or over the phone, here is a framework that works.
@@ -2417,7 +2247,7 @@ Before you leave, make sure they can: make a phone call, send and receive a text
     category: 'life-transitions' as any,
     tags: ['deceased', 'accounts', 'digital estate', 'family', 'end of life'],
     readTime: '8 min',
-    thumbnailEmoji: '🕊️',
+    thumbnailEmoji: '',
     publishedAt: '2026-04-15',
     difficulty: 'Intermediate',
     body: `When a loved one passes away, their online accounts do not close automatically. Email, social media, banking, subscriptions, and other accounts remain active — and in some cases, they continue to charge fees. Handling these accounts is an important part of settling their affairs.
@@ -2450,7 +2280,7 @@ If the deceased had a password manager or left a written list of accounts and pa
     category: 'life-transitions' as any,
     tags: ['photos', 'scanning', 'documents', 'preservation', 'phone'],
     readTime: '6 min',
-    thumbnailEmoji: '🖼️',
+    thumbnailEmoji: '',
     publishedAt: '2026-04-15',
     difficulty: 'Beginner',
     body: `Printed photos fade over time, and paper documents can be lost in floods, fires, or moves. Digitizing your most important photos and documents preserves them forever and makes them available for sharing with family.
@@ -2480,7 +2310,7 @@ Start with the most irreplaceable photos first — the oldest ones, the ones tha
     category: 'life-transitions' as any,
     tags: ['phone', 'selling', 'trade-in', 'factory reset', 'privacy'],
     readTime: '6 min',
-    thumbnailEmoji: '📲',
+    thumbnailEmoji: '',
     publishedAt: '2026-04-15',
     difficulty: 'Intermediate',
     body: `Before you sell, trade in, or give away your old phone, you need to erase all your personal data. Your phone contains emails, photos, bank apps, passwords, and personal information that you do not want a stranger to have. A factory reset wipes everything and returns the phone to its original state.
@@ -2514,7 +2344,7 @@ After the reset, the phone restarts as if it were brand new — ready for the ne
     category: 'life-transitions' as any,
     tags: ['moving', 'internet', 'WiFi', 'smart home', 'setup'],
     readTime: '7 min',
-    thumbnailEmoji: '🏡',
+    thumbnailEmoji: '',
     publishedAt: '2026-04-15',
     difficulty: 'Intermediate',
     body: `Moving to a new home means setting up your technology from scratch. Here is a checklist to make sure everything works when you arrive.
@@ -2553,7 +2383,7 @@ Update your address on important accounts: bank, credit cards, insurance, voter 
     category: 'internet-connectivity' as any,
     tags: ['internet', 'ISP', 'broadband', 'WiFi', 'home internet'],
     readTime: '7 min',
-    thumbnailEmoji: '🌐',
+    thumbnailEmoji: '',
     publishedAt: '2026-04-15',
     difficulty: 'Beginner',
     body: `Choosing an internet plan can be confusing with all the speed numbers, plan tiers, and promotional pricing. Here is what you actually need to know to make a good decision without overpaying.
@@ -2583,7 +2413,7 @@ Before signing up, ask: "What is the price after the promotional period?" "Is th
     category: 'internet-connectivity' as any,
     tags: ['internet', 'billing', 'ISP', 'fees', 'saving money'],
     readTime: '5 min',
-    thumbnailEmoji: '📑',
+    thumbnailEmoji: '',
     publishedAt: '2026-04-15',
     difficulty: 'Beginner',
     body: `Internet bills can be confusing with multiple line items, fees, and charges that are not clearly explained. Understanding each part helps you spot unnecessary charges and potentially lower your bill.
@@ -2611,7 +2441,7 @@ Check your bill each month for changes. Providers sometimes add services or chan
     category: 'internet-connectivity' as any,
     tags: ['WiFi', 'router', 'internet', 'setup', 'networking'],
     readTime: '7 min',
-    thumbnailEmoji: '📡',
+    thumbnailEmoji: '',
     publishedAt: '2026-04-15',
     difficulty: 'Intermediate',
     body: `A WiFi router takes the internet connection from your modem (the device from your internet provider) and broadcasts it wirelessly throughout your home. Setting up a new router takes about 15-20 minutes.
@@ -2641,7 +2471,7 @@ After setup, connect your devices: on each phone, computer, tablet, and smart TV
     category: 'internet-connectivity' as any,
     tags: ['WiFi', 'mesh', 'extender', 'coverage', 'networking'],
     readTime: '6 min',
-    thumbnailEmoji: '📶',
+    thumbnailEmoji: '',
     publishedAt: '2026-04-15',
     difficulty: 'Intermediate',
     body: `If your WiFi works well near the router but is weak or non-existent in other rooms, a mesh WiFi system can solve the problem. A mesh system uses multiple units placed around your home that work together to create one unified WiFi network with consistent coverage everywhere.
@@ -2671,7 +2501,7 @@ For a 2-bedroom apartment, two units are usually sufficient. For a 3-4 bedroom h
     category: 'internet-connectivity' as any,
     tags: ['hotspot', 'tethering', 'WiFi', 'mobile data', 'connectivity'],
     readTime: '5 min',
-    thumbnailEmoji: '📡',
+    thumbnailEmoji: '',
     publishedAt: '2026-04-15',
     difficulty: 'Beginner',
     body: `Your phone can act as a portable WiFi hotspot, sharing its cellular data connection with your laptop, tablet, or other devices. This is useful when you are somewhere without WiFi — a hotel without internet, a waiting room, or while traveling.
@@ -2701,7 +2531,7 @@ If you use hotspot frequently, consider an unlimited data plan that includes hot
     category: 'internet-connectivity' as any,
     tags: ['data usage', 'mobile data', 'data plan', 'phone', 'monitoring'],
     readTime: '5 min',
-    thumbnailEmoji: '📊',
+    thumbnailEmoji: '',
     publishedAt: '2026-04-15',
     difficulty: 'Beginner',
     body: `Understanding your data usage helps you avoid overage charges and choose the right plan. Most people use more data than they think — especially from video streaming, social media, and automatic app updates.
@@ -2731,7 +2561,7 @@ Check your carrier's app or website to see your current billing cycle usage and 
     category: 'internet-connectivity' as any,
     tags: ['public WiFi', 'security', 'privacy', 'VPN', 'safety'],
     readTime: '5 min',
-    thumbnailEmoji: '🔐',
+    thumbnailEmoji: '',
     publishedAt: '2026-04-15',
     difficulty: 'Beginner',
     body: `Public WiFi at coffee shops, airports, hotels, and libraries is convenient but comes with security risks. Unlike your home WiFi, public networks are shared with strangers — and on poorly secured networks, someone nearby could potentially see your internet activity.
@@ -2759,7 +2589,7 @@ Additional precautions: turn off automatic WiFi connections (so your phone does 
     category: 'internet-connectivity' as any,
     tags: ['WiFi', 'signal', 'coverage', 'router', 'tips'],
     readTime: '5 min',
-    thumbnailEmoji: '📶',
+    thumbnailEmoji: '',
     publishedAt: '2026-04-15',
     difficulty: 'Beginner',
     body: `Weak WiFi in certain rooms is one of the most common tech frustrations. Before spending money on new equipment, try these free fixes that often make a significant difference.
@@ -2789,7 +2619,7 @@ If these steps are not enough, consider: a WiFi extender ($20-40, adds coverage 
     category: 'internet-connectivity' as any,
     tags: ['parental controls', 'router', 'internet safety', 'kids', 'networking'],
     readTime: '6 min',
-    thumbnailEmoji: '👨‍👧',
+    thumbnailEmoji: '‍',
     publishedAt: '2026-04-15',
     difficulty: 'Intermediate',
     body: `Parental controls on your router let you manage internet access for your entire household — set bedtime schedules, filter inappropriate content, pause internet for specific devices, and see which websites are being visited. Because these controls are on the router, they apply to every device connected to your WiFi.
@@ -2817,7 +2647,7 @@ Set reasonable expectations. Parental controls are a tool, not a complete soluti
     category: 'internet-connectivity' as any,
     tags: ['speed test', 'internet speed', 'WiFi', 'performance', 'troubleshooting'],
     readTime: '5 min',
-    thumbnailEmoji: '⚡',
+    thumbnailEmoji: '',
     publishedAt: '2026-04-15',
     difficulty: 'Beginner',
     body: `If your internet feels slow, the first step is measuring your actual speed to see if you are getting what you pay for. Speed tests take less than a minute and tell you exactly how fast your connection is.
@@ -2851,7 +2681,7 @@ Run speed tests at different times of day. Internet speeds often slow down durin
     category: 'financial-tech' as any,
     tags: ['TurboTax', 'taxes', 'free filing', 'tax return', 'finances'],
     readTime: '6 min',
-    thumbnailEmoji: '🧾',
+    thumbnailEmoji: '',
     publishedAt: '2026-04-15',
     difficulty: 'Beginner',
     body: `TurboTax is the most popular tax preparation software in the United States. While many products cost money, TurboTax does offer a free edition for taxpayers with straightforward returns. However, knowing exactly who qualifies and how to stay on the free version requires some awareness.
@@ -2879,7 +2709,7 @@ After completing your return, review every number. Choose direct deposit for the
     category: 'entertainment' as any,
     tags: ['Spotify', 'smart speaker', 'Alexa', 'Google Home', 'music'],
     readTime: '5 min',
-    thumbnailEmoji: '🎵',
+    thumbnailEmoji: '',
     publishedAt: '2026-04-15',
     difficulty: 'Beginner',
     body: `Connecting Spotify to your smart speaker lets you play any song, album, playlist, or podcast using voice commands. This works with both Amazon Echo and Google Home speakers, and you can set Spotify as your default music service.
@@ -2907,7 +2737,7 @@ Both free and premium Spotify accounts work. Free accounts have ads between song
     category: 'communication' as any,
     tags: ['video call', 'Nest Hub', 'Echo Show', 'smart display', 'hands-free'],
     readTime: '5 min',
-    thumbnailEmoji: '🖥️',
+    thumbnailEmoji: '',
     publishedAt: '2026-04-15',
     difficulty: 'Beginner',
     body: `Smart displays like the Google Nest Hub Max and Amazon Echo Show have built-in cameras and screens for hands-free video calling. They are especially useful in the kitchen or living room, and for family members who find phones difficult.
@@ -2939,7 +2769,7 @@ For privacy, both devices have a physical camera cover or switch. Slide it close
     category: 'government-civic' as any,
     tags: ['property tax', 'real estate', 'county', 'government', 'homeowner'],
     readTime: '5 min',
-    thumbnailEmoji: '🏠',
+    thumbnailEmoji: '',
     publishedAt: '2026-04-15',
     difficulty: 'Beginner',
     body: `If you own a home, you pay property taxes — and all that information is available online through your county government website. You can look up your current tax bill, see your property's assessed value, check payment due dates, view your payment history, and in many counties, pay your taxes online.
@@ -2970,7 +2800,7 @@ You can also check whether you qualify for any property tax exemptions. Many sta
     category: 'government-civic' as any,
     tags: ['social security', 'retirement', 'benefits', 'estimator', 'planning'],
     readTime: '6 min',
-    thumbnailEmoji: '📊',
+    thumbnailEmoji: '',
     publishedAt: '2026-04-15',
     difficulty: 'Beginner',
     body: `The Social Security Administration offers a free retirement estimator tool that shows you approximately how much you will receive in monthly Social Security benefits based on your actual earnings record. This is one of the most useful planning tools available, and it takes less than five minutes to use.
@@ -3003,7 +2833,7 @@ If you have not created a my Social Security account yet, the estimator is a gre
     category: 'government-civic' as any,
     tags: ['identity theft', 'FTC', 'fraud', 'credit', 'security'],
     readTime: '7 min',
-    thumbnailEmoji: '🛡️',
+    thumbnailEmoji: '',
     publishedAt: '2026-04-15',
     difficulty: 'Intermediate',
     body: `If someone has used your personal information to open accounts, make purchases, or file taxes in your name, you are a victim of identity theft. The Federal Trade Commission (FTC) runs IdentityTheft.gov — the federal government's one-stop resource for reporting identity theft and creating a personalized recovery plan.
@@ -3041,7 +2871,7 @@ After filing your FTC report, the site tracks your progress and sends you remind
     category: 'communication' as any,
     tags: ['group chat', 'iPhone', 'iMessage', 'texting', 'messaging'],
     readTime: '4 min',
-    thumbnailEmoji: '💬',
+    thumbnailEmoji: '',
     publishedAt: '2026-04-15',
     difficulty: 'Beginner',
     body: `Group chats on iPhone let you send one message to multiple people at the same time — great for family updates, event planning, or keeping a small circle connected. The Messages app on iPhone makes it straightforward to create one.
@@ -3074,7 +2904,7 @@ Group chats are saved in your Messages app like any other conversation. You can 
     category: 'communication' as any,
     tags: ['group chat', 'Android', 'Google Messages', 'texting', 'messaging'],
     readTime: '4 min',
-    thumbnailEmoji: '💬',
+    thumbnailEmoji: '',
     publishedAt: '2026-04-15',
     difficulty: 'Beginner',
     body: `Group chats on Android let you message multiple people in a single conversation. Whether you are coordinating a family dinner, planning a trip with friends, or keeping coworkers in the loop, a group text keeps everyone on the same page.
@@ -3107,7 +2937,7 @@ If you are using Samsung Messages instead of Google Messages, the process is alm
     category: 'communication' as any,
     tags: ['Microsoft Teams', 'video call', 'meetings', 'remote work', 'communication'],
     readTime: '6 min',
-    thumbnailEmoji: '🟦',
+    thumbnailEmoji: '',
     publishedAt: '2026-04-15',
     difficulty: 'Beginner',
     body: `Microsoft Teams is a popular video calling and messaging app used by many workplaces, schools, and families. The good news is there is a free version that anyone can use for personal video calls, group chats, and screen sharing — you do not need a paid Microsoft 365 subscription.
@@ -3142,7 +2972,7 @@ The free version of Teams supports meetings with up to 100 participants for up t
     category: 'communication' as any,
     tags: ['photos', 'texting', 'MMS', 'iPhone', 'Android', 'messaging'],
     readTime: '4 min',
-    thumbnailEmoji: '📸',
+    thumbnailEmoji: '',
     publishedAt: '2026-04-15',
     difficulty: 'Beginner',
     body: `Sending a photo through a text message is one of the most common things people do with their phones. Whether it is a picture of the grandkids, a receipt you need to share, or a photo of your garden, the process works the same way on both iPhone and Android.
@@ -3172,7 +3002,7 @@ Keep in mind that MMS has a file size limit (usually 1 to 3 megabytes depending 
     category: 'communication' as any,
     tags: ['notifications', 'settings', 'iPhone', 'Android', 'phone management'],
     readTime: '5 min',
-    thumbnailEmoji: '🔔',
+    thumbnailEmoji: '',
     publishedAt: '2026-04-15',
     difficulty: 'Beginner',
     body: `Your phone buzzing and dinging all day can be overwhelming. The good news is you have complete control over which apps can send you notifications, how they appear, and whether they make sounds. Taking a few minutes to manage your notification settings can make a big difference in your daily phone experience.
@@ -3207,7 +3037,7 @@ A good approach is to go through your notification list once and turn off notifi
     category: 'essential-skills' as any,
     tags: ['screenshot', 'screen capture', 'iPhone', 'Android', 'Windows', 'Mac'],
     readTime: '5 min',
-    thumbnailEmoji: '📱',
+    thumbnailEmoji: '',
     publishedAt: '2026-04-15',
     difficulty: 'Beginner',
     body: `A screenshot is a picture of whatever is currently showing on your screen. Screenshots are useful for saving information, sharing what you see with someone else, documenting an error message, or keeping a record of a confirmation page.
@@ -3244,7 +3074,7 @@ All screenshots are saved as image files that you can share by text, email, or a
     category: 'essential-skills' as any,
     tags: ['copy', 'paste', 'clipboard', 'text', 'basics'],
     readTime: '4 min',
-    thumbnailEmoji: '📋',
+    thumbnailEmoji: '',
     publishedAt: '2026-04-15',
     difficulty: 'Beginner',
     body: `Copy and paste lets you take text, a link, an image, or other content from one place and put it somewhere else — without having to retype it. It is one of the most useful skills you can learn on any device.
@@ -3277,7 +3107,7 @@ One important thing to know: your clipboard holds only one item at a time. When 
     category: 'essential-skills' as any,
     tags: ['QR code', 'camera', 'scanning', 'iPhone', 'Android'],
     readTime: '3 min',
-    thumbnailEmoji: '📷',
+    thumbnailEmoji: '',
     publishedAt: '2026-04-15',
     difficulty: 'Beginner',
     body: `QR codes are those square black-and-white patterns you see on restaurant menus, event tickets, product packaging, and signs. When you scan one with your phone camera, it takes you to a website, shows information, connects you to WiFi, or completes some other action automatically.
@@ -3310,7 +3140,7 @@ A word of caution: QR codes can link to any website, including malicious ones. B
     category: 'essential-skills' as any,
     tags: ['software update', 'iPhone', 'Android', 'security', 'phone maintenance'],
     readTime: '5 min',
-    thumbnailEmoji: '🔄',
+    thumbnailEmoji: '',
     publishedAt: '2026-04-15',
     difficulty: 'Beginner',
     body: `Software updates keep your phone secure, fix bugs, and sometimes add new features. Both Apple and Google release regular updates for their phones, and installing them is one of the most important things you can do to protect your device and your personal information.
@@ -3343,7 +3173,7 @@ If you are running low on storage and cannot install an update, delete old photo
     category: 'essential-skills' as any,
     tags: ['restart', 'frozen phone', 'troubleshooting', 'iPhone', 'Android'],
     readTime: '3 min',
-    thumbnailEmoji: '🔃',
+    thumbnailEmoji: '',
     publishedAt: '2026-04-15',
     difficulty: 'Beginner',
     body: `A frozen phone — where the screen does not respond to taps and nothing seems to work — is frustrating but usually not serious. Most of the time, a force restart fixes the problem. A force restart is different from a normal restart: it forces the phone to power off and back on even when the screen is unresponsive.
@@ -3378,7 +3208,7 @@ If force restart does not work and your phone is completely unresponsive, let th
     category: 'essential-skills' as any,
     tags: ['storage', 'phone maintenance', 'photos', 'apps', 'iPhone', 'Android'],
     readTime: '6 min',
-    thumbnailEmoji: '💾',
+    thumbnailEmoji: '',
     publishedAt: '2026-04-15',
     difficulty: 'Beginner',
     body: `When your phone runs out of storage, things start going wrong: you cannot take photos, apps crash, updates fail, and everything slows down. Fortunately, freeing up space is something you can do yourself, and you do not need to delete everything — a targeted cleanup usually recovers a surprising amount of space.
@@ -3411,7 +3241,7 @@ Offline music and podcasts are another hidden storage drain. If you downloaded a
     category: 'essential-skills' as any,
     tags: ['wallpaper', 'personalization', 'iPhone', 'Android', 'home screen'],
     readTime: '3 min',
-    thumbnailEmoji: '🎨',
+    thumbnailEmoji: '',
     publishedAt: '2026-04-15',
     difficulty: 'Beginner',
     body: `Your phone wallpaper is the background image you see on your Lock Screen (before you unlock) and your Home Screen (behind your apps). Changing it is a quick way to personalize your phone with a photo of your family, a nature scene, or any image you like.
@@ -3441,7 +3271,7 @@ Tips for choosing a good wallpaper: pick an image that is not too busy, so you c
     category: 'essential-skills' as any,
     tags: ['brightness', 'display', 'screen', 'settings', 'battery'],
     readTime: '3 min',
-    thumbnailEmoji: '☀️',
+    thumbnailEmoji: '',
     publishedAt: '2026-04-15',
     difficulty: 'Beginner',
     body: `Adjusting your screen brightness is something you will do often — brighter outdoors so you can see in sunlight, dimmer at night so it does not strain your eyes, and somewhere in the middle most of the time. Every device gives you a quick way to control brightness.
@@ -3471,7 +3301,7 @@ Lower brightness saves battery. If you are trying to make your phone or laptop l
     category: 'essential-skills' as any,
     tags: ['WiFi', 'internet', 'connectivity', 'network', 'settings'],
     readTime: '4 min',
-    thumbnailEmoji: '📶',
+    thumbnailEmoji: '',
     publishedAt: '2026-04-15',
     difficulty: 'Beginner',
     body: `Connecting to WiFi is one of the first things you do with any device. WiFi lets you use the internet without using your cellular data, and it is available in homes, coffee shops, libraries, airports, and many other places.
@@ -3506,7 +3336,7 @@ Public WiFi networks (at cafes, airports, hotels) are convenient but less secure
     category: 'essential-skills' as any,
     tags: ['do not disturb', 'notifications', 'focus', 'sleep', 'phone settings'],
     readTime: '4 min',
-    thumbnailEmoji: '🌙',
+    thumbnailEmoji: '',
     publishedAt: '2026-04-15',
     difficulty: 'Beginner',
     body: `Do Not Disturb mode silences incoming calls, texts, and app notifications so your phone does not ring, buzz, or light up. It is perfect for sleeping, meetings, meals, or any time you want peace and quiet without turning off your phone entirely.
@@ -3543,7 +3373,7 @@ Alarms still work during Do Not Disturb on both iPhone and Android, so you do no
     category: 'app-guides' as any,
     tags: ['Google Maps', 'navigation', 'directions', 'GPS', 'driving'],
     readTime: '5 min',
-    thumbnailEmoji: '🗺️',
+    thumbnailEmoji: '',
     publishedAt: '2026-04-15',
     difficulty: 'Beginner',
     body: `Google Maps is a free navigation app that gives you turn-by-turn directions to any address, business, or landmark. It works for driving, walking, biking, and public transit. If you have a smartphone, Google Maps can replace a standalone GPS device.
@@ -3576,7 +3406,7 @@ Google Maps also works offline — handy for areas with poor cell service. Befor
     category: 'app-guides' as any,
     tags: ['Uber', 'Lyft', 'rideshare', 'transportation', 'ride'],
     readTime: '6 min',
-    thumbnailEmoji: '🚗',
+    thumbnailEmoji: '',
     publishedAt: '2026-04-15',
     difficulty: 'Beginner',
     body: `Uber and Lyft are ride-hailing apps that let you request a car and driver to take you somewhere — like a taxi, but you request and pay for it through your phone. Both apps work very similarly, so once you know one, you know the other.
@@ -3609,7 +3439,7 @@ When you arrive, you do not need to do anything — the fare is charged to your 
     category: 'app-guides' as any,
     tags: ['Amazon', 'online shopping', 'safety', 'delivery', 'retail'],
     readTime: '6 min',
-    thumbnailEmoji: '📦',
+    thumbnailEmoji: '',
     publishedAt: '2026-04-15',
     difficulty: 'Beginner',
     body: `Amazon is the largest online marketplace in the United States. You can buy almost anything — from household supplies to electronics to clothing — and have it delivered to your door, often within one to two days. Here is how to shop on Amazon safely, whether you are a first-time user or want to improve your shopping habits.
@@ -3642,7 +3472,7 @@ Before purchasing, check the return policy. Most items sold or fulfilled by Amaz
     category: 'app-guides' as any,
     tags: ['Gmail', 'email', 'Google', 'communication', 'account'],
     readTime: '6 min',
-    thumbnailEmoji: '✉️',
+    thumbnailEmoji: '',
     publishedAt: '2026-04-15',
     difficulty: 'Beginner',
     body: `Gmail is Google's free email service used by over a billion people worldwide. It is reliable, has excellent spam filtering, and works on any device — computer, phone, or tablet. If you do not have an email address yet, Gmail is a great place to start.
@@ -3677,7 +3507,7 @@ You can organize emails by starring important ones (tap the star next to any ema
     category: 'app-guides' as any,
     tags: ['Google Drive', 'cloud storage', 'files', 'backup', 'Google'],
     readTime: '5 min',
-    thumbnailEmoji: '📁',
+    thumbnailEmoji: '',
     publishedAt: '2026-04-15',
     difficulty: 'Beginner',
     body: `Google Drive is a free cloud storage service that lets you save files — documents, photos, spreadsheets, presentations, and more — on the internet so you can access them from any device. You get 15 gigabytes of free storage, which is enough for thousands of documents and hundreds of photos.
@@ -3705,41 +3535,7 @@ To share a file with someone, right-click it (or tap the three dots on your phon
     ],
   },
 
-  {
-    slug: 'use-microsoft-word-online-free',
-    title: 'How to Use Microsoft Word Online for Free',
-    excerpt: 'Create and edit Word documents for free using Microsoft Word Online — no software purchase or installation needed.',
-    category: 'app-guides' as any,
-    tags: ['Microsoft Word', 'Word Online', 'documents', 'free', 'Office'],
-    readTime: '5 min',
-    thumbnailEmoji: '📝',
-    publishedAt: '2026-04-15',
-    difficulty: 'Beginner',
-    body: `You do not need to buy Microsoft Office to use Microsoft Word. Microsoft offers a free online version called Word Online that runs in your web browser — no download or installation required. It includes most of the features everyday users need for writing letters, creating resumes, formatting documents, and more.
-
-To use Word Online, you need a free Microsoft account. If you have a Hotmail, Outlook, or Xbox account, you already have one. If not, go to account.microsoft.com and create one with your email address.
-
-Once you have an account, go to office.com (or microsoft365.com) and sign in. You will see icons for Word, Excel, PowerPoint, and other apps. Click the Word icon (the blue W) to get started. You can create a new blank document or choose from templates like resumes, cover letters, flyers, and more.
-
-The Word Online interface looks similar to the desktop version. The toolbar at the top has tabs for Home (fonts, formatting, alignment), Insert (tables, images, links), and more. The most commonly used formatting tools — bold, italic, underline, font size, text color, and alignment — are all on the Home tab.
-
-Your work saves automatically to OneDrive (Microsoft's cloud storage). You never need to press "Save" — it happens continuously as you type. You can access your document later from any computer or phone by going to office.com and signing in.
-
-To download your document as a file, click File then Save As then Download a Copy. You can download it as a Word document (.docx) or PDF. To print, use File then Print or press Ctrl + P (Command + P on Mac).
-
-Word Online also supports collaboration. Click the "Share" button in the top-right corner to invite others to view or edit the document. You can work on the same document at the same time and see each other's changes in real time.
-
-The main limitations of Word Online compared to the paid desktop version: fewer formatting options, no advanced mail merge, and no offline access. But for writing documents, formatting text, creating tables, and basic tasks, Word Online has everything you need.`,
-    steps: [
-      { title: 'Create a Microsoft account', content: 'Go to account.microsoft.com and sign up for a free account. If you have an Outlook, Hotmail, or Xbox account, use that instead.' },
-      { title: 'Go to office.com and sign in', content: 'Open your browser and go to office.com (or microsoft365.com). Sign in with your Microsoft account email and password.' },
-      { title: 'Open Word and create a document', content: 'Click the blue Word icon. Choose "Blank document" to start from scratch, or pick a template for resumes, letters, and other common formats.' },
-      { title: 'Format your document', content: 'Use the Home tab toolbar to change fonts, make text bold or italic, adjust alignment, add bullet lists, and change text color.' },
-      { title: 'Save and download', content: 'Your work saves automatically to OneDrive. To download a copy: File then Save As then Download a Copy. Choose .docx (Word format) or .pdf.' },
-      { title: 'Share with others', content: 'Click "Share" in the top-right corner. Enter email addresses to invite collaborators. Choose whether they can view only or edit the document.' },
-    ],
-  },
-
+  
   {
     slug: 'set-up-use-zoom',
     title: 'How to Set Up and Use Zoom',
@@ -3747,7 +3543,7 @@ The main limitations of Word Online compared to the paid desktop version: fewer 
     category: 'app-guides' as any,
     tags: ['Zoom', 'video call', 'meetings', 'communication', 'setup'],
     readTime: '6 min',
-    thumbnailEmoji: '🎥',
+    thumbnailEmoji: '',
     publishedAt: '2026-04-15',
     difficulty: 'Beginner',
     body: `Zoom is one of the most widely used video calling apps in the world. Millions of people use it for family calls, doctor appointments, work meetings, classes, and social gatherings. The free version lets you host meetings with up to 100 people for up to 40 minutes — more than enough for most personal use.
@@ -3780,7 +3576,7 @@ Zoom tips: position your camera at eye level for the most natural look. Make sur
     category: 'app-guides' as any,
     tags: ['calculator', 'math', 'tips', 'phone', 'everyday'],
     readTime: '4 min',
-    thumbnailEmoji: '🔢',
+    thumbnailEmoji: '',
     publishedAt: '2026-04-15',
     difficulty: 'Beginner',
     body: `Your phone has a built-in calculator that is more powerful than you might think. Beyond basic math, it can help you figure out tips at restaurants, calculate discounts while shopping, split bills with friends, and more.
@@ -3821,7 +3617,7 @@ You can also ask Siri or Google Assistant to do math for you. Say "Hey Siri, wha
     category: 'phone-guides' as any,
     tags: ['voicemail', 'iPhone', 'phone setup', 'greeting', 'messages'],
     readTime: '4 min',
-    thumbnailEmoji: '📞',
+    thumbnailEmoji: '',
     publishedAt: '2026-04-15',
     difficulty: 'Beginner',
     body: `Voicemail lets people leave you a voice message when you cannot answer the phone. On iPhone, you get Visual Voicemail — a feature that shows all your voicemail messages in a list so you can listen to them in any order, without having to call a number and navigate a phone menu.
@@ -3854,7 +3650,7 @@ You can delete voicemails by swiping left on them or tapping "Delete." Deleted v
     category: 'phone-guides' as any,
     tags: ['voicemail', 'Android', 'phone setup', 'greeting', 'messages'],
     readTime: '4 min',
-    thumbnailEmoji: '📞',
+    thumbnailEmoji: '',
     publishedAt: '2026-04-15',
     difficulty: 'Beginner',
     body: `Voicemail on Android lets callers leave a voice message when you do not answer. Setting it up takes a few minutes, and the exact steps depend on your phone carrier (Verizon, AT&T, T-Mobile, etc.) and phone brand (Samsung, Google Pixel, etc.).
@@ -3887,7 +3683,7 @@ To check voicemail the traditional way: press and hold 1 in the Phone app. Enter
     category: 'phone-guides' as any,
     tags: ['photos', 'transfer', 'backup', 'iPhone', 'Android', 'computer'],
     readTime: '6 min',
-    thumbnailEmoji: '🖼️',
+    thumbnailEmoji: '',
     publishedAt: '2026-04-15',
     difficulty: 'Beginner',
     body: `Transferring photos from your phone to your computer is a great way to free up phone storage, create backups, and have your photos available on a larger screen for viewing and editing. There are several methods depending on what devices you have.
@@ -3920,7 +3716,7 @@ Method 4: Email or messaging. For small numbers of photos, you can email them to
     category: 'phone-guides' as any,
     tags: ['AirDrop', 'iPhone', 'sharing', 'wireless', 'Apple'],
     readTime: '4 min',
-    thumbnailEmoji: '📲',
+    thumbnailEmoji: '',
     publishedAt: '2026-04-15',
     difficulty: 'Beginner',
     body: `AirDrop is Apple's wireless sharing feature that lets you send photos, videos, documents, links, contacts, and more between Apple devices — iPhone, iPad, and Mac. It uses Bluetooth and WiFi to transfer files directly between devices, and it is fast. A photo transfers in about one second.
@@ -3953,7 +3749,7 @@ Privacy tip: set AirDrop to "Contacts Only" when you are in public places. The "
     category: 'phone-guides' as any,
     tags: ['Nearby Share', 'Android', 'sharing', 'wireless', 'Quick Share'],
     readTime: '4 min',
-    thumbnailEmoji: '📲',
+    thumbnailEmoji: '',
     publishedAt: '2026-04-15',
     difficulty: 'Beginner',
     body: `Nearby Share (also called Quick Share on Samsung phones) is Android's answer to Apple's AirDrop. It lets you wirelessly share photos, videos, files, links, and more between Android phones, tablets, and Chromebooks. The transfer uses a combination of Bluetooth, WiFi, and your internet connection, so it is fast even for large files.
@@ -3988,7 +3784,7 @@ For privacy in public places, set your visibility to "Your devices" or "Contacts
     category: 'phone-guides' as any,
     tags: ['do not disturb', 'sleep', 'bedtime', 'iPhone', 'Android', 'schedule'],
     readTime: '4 min',
-    thumbnailEmoji: '😴',
+    thumbnailEmoji: '',
     publishedAt: '2026-04-15',
     difficulty: 'Beginner',
     body: `Nothing ruins a good night of sleep like your phone buzzing at midnight with a promotional email or a group chat message. Scheduling Do Not Disturb to turn on automatically at bedtime and off in the morning means you never have to think about it — your phone goes quiet when you do.
@@ -4021,7 +3817,7 @@ Your alarm clock still works normally during Do Not Disturb on both iPhone and A
     category: 'phone-guides' as any,
     tags: ['contacts', 'phone number', 'iPhone', 'Android', 'address book'],
     readTime: '3 min',
-    thumbnailEmoji: '👤',
+    thumbnailEmoji: '',
     publishedAt: '2026-04-15',
     difficulty: 'Beginner',
     body: `Adding contacts to your phone means you do not have to remember phone numbers — you can call or text people by name. It also means when they call you, their name shows up on your screen instead of an unknown number.
@@ -4060,7 +3856,7 @@ To edit a contact later: find them in your Contacts, tap their name, then tap "E
     category: 'safety-guides' as any,
     tags: ['password', 'security', 'accounts', 'password manager', 'login'],
     readTime: '5 min',
-    thumbnailEmoji: '🔐',
+    thumbnailEmoji: '',
     publishedAt: '2026-04-15',
     difficulty: 'Beginner',
     body: `A strong password is your first line of defense against hackers. The problem is that truly strong passwords (long, random, and unique for every account) are hard to remember. Here is how to create passwords that are both secure and memorable, plus how to manage them without going crazy.
@@ -4093,7 +3889,7 @@ Turn on two-factor authentication (2FA) wherever it is available. This adds a se
     category: 'safety-guides' as any,
     tags: ['tech support scam', 'scams', 'fraud', 'security', 'phone scam'],
     readTime: '6 min',
-    thumbnailEmoji: '🚨',
+    thumbnailEmoji: '',
     publishedAt: '2026-04-15',
     difficulty: 'Beginner',
     body: `Tech support scams are one of the most common frauds targeting non-technical users. Scammers pose as technical support from companies like Microsoft, Apple, or your internet provider and claim your computer or phone has a virus or security problem. Their goal is to get you to pay for fake repairs, give them remote access to your device, or hand over personal and financial information.
@@ -4124,7 +3920,7 @@ If you have already fallen for a tech support scam: change your passwords immedi
     category: 'safety-guides' as any,
     tags: ['social media', 'privacy', 'Facebook', 'Instagram', 'settings'],
     readTime: '6 min',
-    thumbnailEmoji: '🔒',
+    thumbnailEmoji: '',
     publishedAt: '2026-04-15',
     difficulty: 'Beginner',
     body: `Social media accounts are often set to share more than you realize. Your posts, photos, friends list, location, and personal details may be visible to anyone on the internet — not only your friends and family. Taking a few minutes to adjust your privacy settings can significantly reduce what strangers can see.
@@ -4157,7 +3953,7 @@ Check your tagged photos: on most platforms, you can review tags before they app
     category: 'safety-guides' as any,
     tags: ['online shopping', 'safety', 'scams', 'credit card', 'security'],
     readTime: '6 min',
-    thumbnailEmoji: '🛡️',
+    thumbnailEmoji: '',
     publishedAt: '2026-04-15',
     difficulty: 'Beginner',
     body: `Shopping online is convenient, but it also creates opportunities for scammers. Fake websites, stolen credit card information, and counterfeit products are real risks. By following some straightforward practices, you can shop online with confidence.
@@ -4192,7 +3988,7 @@ Monitor your statements. After shopping online, check your credit card or bank s
     category: 'safety-guides' as any,
     tags: ['delivery scam', 'USPS', 'UPS', 'FedEx', 'phishing', 'packages'],
     readTime: '5 min',
-    thumbnailEmoji: '📦',
+    thumbnailEmoji: '',
     publishedAt: '2026-04-15',
     difficulty: 'Beginner',
     body: `Package delivery scams are one of the fastest-growing types of fraud. You receive a text message or email claiming to be from USPS, UPS, FedEx, or Amazon saying there is a problem with your delivery — a missed package, a required fee, or an address confirmation needed. The message includes a link that leads to a fake website designed to steal your personal or financial information.
@@ -4223,7 +4019,7 @@ Report delivery scams: forward scam texts to 7726 (SPAM). Report fake USPS messa
     category: 'safety-guides' as any,
     tags: ['stolen phone', 'security', 'lock', 'remote wipe', 'theft'],
     readTime: '6 min',
-    thumbnailEmoji: '🔓',
+    thumbnailEmoji: '',
     publishedAt: '2026-04-15',
     difficulty: 'Intermediate',
     body: `If your phone is stolen, time matters. Your phone contains your email, banking apps, social media, photos, and personal information. Acting quickly can prevent a thief from accessing your accounts and data.
@@ -4258,7 +4054,7 @@ If you get a replacement phone, restore your data from your most recent backup (
     category: 'safety-guides' as any,
     tags: ['PIN', 'password', 'phone lock', 'security', 'biometrics', 'Face ID'],
     readTime: '4 min',
-    thumbnailEmoji: '🔑',
+    thumbnailEmoji: '',
     publishedAt: '2026-04-15',
     difficulty: 'Beginner',
     body: `A locked phone is a protected phone. Setting up a PIN, password, or biometric lock (fingerprint or face recognition) means that if your phone is lost or stolen, no one can access your emails, banking apps, photos, or personal information without your permission.
@@ -4297,7 +4093,7 @@ Set your phone to lock automatically after a short idle period: iPhone: Settings
     category: 'how-to' as any,
     tags: ['printing', 'wireless', 'AirPrint', 'iPhone', 'Android'],
     readTime: '5 min',
-    thumbnailEmoji: '🖨️',
+    thumbnailEmoji: '',
     publishedAt: '2026-04-15',
     difficulty: 'Beginner',
     body: `Printing from your phone is more useful than you might think — boarding passes, shipping labels, recipes, photos, directions, medical forms, and documents can all be printed directly from your iPhone or Android without needing a computer.
@@ -4330,7 +4126,7 @@ If your printer is not wireless, some printers support USB connections through a
     category: 'how-to' as any,
     tags: ['Bluetooth', 'speaker', 'audio', 'pairing', 'wireless'],
     readTime: '4 min',
-    thumbnailEmoji: '🔊',
+    thumbnailEmoji: '',
     publishedAt: '2026-04-15',
     difficulty: 'Beginner',
     body: `Bluetooth speakers let you play music, podcasts, and audiobooks from your phone through a speaker that is louder and has better sound quality. Connecting your phone to a Bluetooth speaker (called "pairing") takes less than a minute once you know the steps.
@@ -4363,7 +4159,7 @@ You can only connect to one Bluetooth speaker at a time (unless your speaker or 
     category: 'how-to' as any,
     tags: ['voice typing', 'dictation', 'speech to text', 'accessibility', 'hands-free'],
     readTime: '4 min',
-    thumbnailEmoji: '🎤',
+    thumbnailEmoji: '',
     publishedAt: '2026-04-15',
     difficulty: 'Beginner',
     body: `Voice typing (also called dictation) lets you talk instead of type. Your phone or computer converts your spoken words into text in real time. It works in text messages, emails, search bars, notes apps, documents — anywhere you would normally type.
@@ -4398,7 +4194,7 @@ Voice typing also works great for quick searches: tap the search bar, tap the mi
     category: 'how-to' as any,
     tags: ['email', 'phone setup', 'Gmail', 'Outlook', 'Yahoo', 'iPhone', 'Android'],
     readTime: '5 min',
-    thumbnailEmoji: '📧',
+    thumbnailEmoji: '',
     publishedAt: '2026-04-15',
     difficulty: 'Beginner',
     body: `Having email on your phone means you can read and respond to messages wherever you are — no need to sit at a computer. Setting it up takes about two minutes, and your phone handles the technical details automatically.
@@ -4431,7 +4227,7 @@ If you have multiple email accounts, you can add them all to the same app. The M
     category: 'how-to' as any,
     tags: ['text message', 'schedule', 'SMS', 'iPhone', 'Android', 'messaging'],
     readTime: '4 min',
-    thumbnailEmoji: '⏰',
+    thumbnailEmoji: '',
     publishedAt: '2026-04-15',
     difficulty: 'Beginner',
     body: `Sometimes you want to send a text at a specific time — a birthday message at midnight, a reminder to a friend tomorrow morning, or a follow-up message during business hours. Scheduling a text lets you write it now and have it delivered later, automatically.
@@ -4464,7 +4260,7 @@ This feature is especially useful for: birthday and holiday messages at the righ
     category: 'how-to' as any,
     tags: ['location', 'privacy', 'tracking', 'GPS', 'iPhone', 'Android', 'settings'],
     readTime: '5 min',
-    thumbnailEmoji: '📍',
+    thumbnailEmoji: '',
     publishedAt: '2026-04-15',
     difficulty: 'Intermediate',
     body: `Your phone tracks your location throughout the day, and many apps request access to that information. Some apps need your location to work (like maps and weather), but others (like games, shopping apps, and social media) collect it for advertising purposes. Taking control of which apps can see your location is one of the most important privacy steps you can take.
@@ -4501,7 +4297,7 @@ Review these settings periodically. When you install new apps, they often ask fo
     category: 'windows-guides',
     tags: ['windows', 'updates', 'security', 'microsoft', 'maintenance'],
     readTime: '5 min',
-    thumbnailEmoji: '🔄',
+    thumbnailEmoji: '',
     publishedAt: '2026-04-16',
     difficulty: 'Beginner',
     body: `Windows updates fix security vulnerabilities, patch bugs, and sometimes add new features to your computer. Microsoft releases updates regularly, and keeping your computer updated is one of the most important things you can do to stay safe online. Outdated computers are much more vulnerable to viruses and hackers.
@@ -4534,7 +4330,7 @@ Windows is set to download updates automatically by default. However, it is good
     category: 'windows-guides',
     tags: ['windows', 'uninstall', 'storage', 'programs', 'cleanup'],
     readTime: '5 min',
-    thumbnailEmoji: '🗑️',
+    thumbnailEmoji: '',
     publishedAt: '2026-04-16',
     difficulty: 'Beginner',
     body: `Over time, your Windows computer accumulates programs you no longer use. These take up storage space and sometimes run background processes that slow down your computer. Uninstalling programs you do not need is one of the best ways to keep your computer running well.
@@ -4567,7 +4363,7 @@ A good practice is to review your installed programs every few months and remove
     category: 'windows-guides',
     tags: ['windows', 'browser', 'default apps', 'chrome', 'firefox'],
     readTime: '4 min',
-    thumbnailEmoji: '🌐',
+    thumbnailEmoji: '',
     publishedAt: '2026-04-16',
     difficulty: 'Beginner',
     body: `When you click a link in an email or document, Windows opens it in your default browser. Out of the box, that default is Microsoft Edge. If you prefer to use Google Chrome, Mozilla Firefox, or another browser, you can change this setting so all links automatically open in your preferred browser.
@@ -4600,7 +4396,7 @@ Some browsers will ask you to set them as the default the first time you open th
     category: 'windows-guides',
     tags: ['windows', 'user accounts', 'family', 'security', 'sharing'],
     readTime: '6 min',
-    thumbnailEmoji: '👤',
+    thumbnailEmoji: '',
     publishedAt: '2026-04-16',
     difficulty: 'Intermediate',
     body: `If multiple people use the same Windows computer, creating separate user accounts is the best way to keep everyone's files, settings, and desktop organized independently. Each person gets their own login, their own desktop background, their own browser bookmarks, and their own documents folder. One person's changes do not affect another person's experience.
@@ -4631,7 +4427,7 @@ After creating the account, the new user can sign in from the Windows login scre
     category: 'windows-guides',
     tags: ['windows', 'security', 'antivirus', 'windows defender', 'malware'],
     readTime: '6 min',
-    thumbnailEmoji: '🛡️',
+    thumbnailEmoji: '',
     publishedAt: '2026-04-16',
     difficulty: 'Intermediate',
     body: `Windows Defender (also called Windows Security or Microsoft Defender) is free antivirus and security software that comes built into every Windows 10 and Windows 11 computer. It runs in the background, protecting you from viruses, malware, spyware, and other threats — and for most people, it provides all the protection you need without purchasing additional antivirus software.
@@ -4664,7 +4460,7 @@ Windows Defender updates its virus definitions automatically through Windows Upd
     category: 'windows-guides',
     tags: ['windows', 'backup', 'file protection', 'onedrive', 'recovery'],
     readTime: '7 min',
-    thumbnailEmoji: '💾',
+    thumbnailEmoji: '',
     publishedAt: '2026-04-16',
     difficulty: 'Intermediate',
     body: `Backing up your computer means creating copies of your important files so you can recover them if something goes wrong — whether your hard drive fails, your computer gets a virus, or you accidentally delete something important. Windows has built-in backup tools that make this process straightforward once you set them up.
@@ -4697,7 +4493,7 @@ The most important rule of backups: they only protect you if they are running. C
     category: 'windows-guides',
     tags: ['windows', 'taskbar', 'shortcuts', 'productivity', 'customization'],
     readTime: '4 min',
-    thumbnailEmoji: '📌',
+    thumbnailEmoji: '',
     publishedAt: '2026-04-16',
     difficulty: 'Beginner',
     body: `The taskbar is the bar that runs along the bottom of your Windows screen. It shows the programs that are currently running and can also hold shortcuts to your favorite apps so you can open them with one click — without searching through the Start menu. Pinning your most-used apps to the taskbar is one of the quickest ways to customize your computer and save time.
@@ -4728,7 +4524,7 @@ A good approach is to pin 5 to 8 of your most-used apps. Common choices include 
     category: 'windows-guides',
     tags: ['windows', 'start menu', 'customization', 'organization', 'productivity'],
     readTime: '5 min',
-    thumbnailEmoji: '🪟',
+    thumbnailEmoji: '',
     publishedAt: '2026-04-16',
     difficulty: 'Beginner',
     body: `The Start menu is the gateway to everything on your Windows computer. When you click the Start button (the Windows icon at the bottom of your screen), you see a menu with pinned apps, recommended files, and a list of all your programs. Customizing this menu so it shows what you actually use makes your computer much more pleasant to work with.
@@ -4765,7 +4561,7 @@ The Start menu also includes a search bar. If you cannot find an app, start typi
     category: 'mac-guides',
     tags: ['mac', 'time machine', 'backup', 'data protection', 'recovery'],
     readTime: '7 min',
-    thumbnailEmoji: '⏰',
+    thumbnailEmoji: '',
     publishedAt: '2026-04-16',
     difficulty: 'Intermediate',
     body: `Time Machine is Apple's built-in backup tool that automatically saves copies of everything on your Mac — your files, photos, music, apps, and system settings. If you accidentally delete a file, your hard drive fails, or you need to set up a new Mac, Time Machine lets you restore everything exactly as it was.
@@ -4798,7 +4594,7 @@ Keep your Time Machine drive connected whenever possible. If you use a desktop M
     category: 'mac-guides',
     tags: ['mac', 'apps', 'installation', 'gatekeeper', 'security'],
     readTime: '6 min',
-    thumbnailEmoji: '📦',
+    thumbnailEmoji: '',
     publishedAt: '2026-04-16',
     difficulty: 'Intermediate',
     body: `The Mac App Store has thousands of apps, but many popular programs — like Google Chrome, Zoom, Microsoft Office, and others — need to be downloaded directly from their developer's website. macOS includes a security feature called Gatekeeper that protects you from installing malicious software, but you need to know how to work with it properly when installing legitimate apps from the internet.
@@ -4831,7 +4627,7 @@ Stay safe by only downloading apps from official developer websites. Avoid downl
     category: 'mac-guides',
     tags: ['mac', 'dock', 'customization', 'shortcuts', 'productivity'],
     readTime: '5 min',
-    thumbnailEmoji: '🖥️',
+    thumbnailEmoji: '',
     publishedAt: '2026-04-16',
     difficulty: 'Beginner',
     body: `The Dock is the row of app icons that appears at the bottom (or side) of your Mac's screen. It gives you one-click access to your most-used apps and shows which apps are currently running (indicated by a small dot beneath the icon). Customizing your Dock so it contains only the apps you use regularly makes your Mac faster and more pleasant to work with.
@@ -4864,7 +4660,7 @@ If you find the Dock distracting, turn on "Automatically hide and show the Dock.
     category: 'mac-guides',
     tags: ['mac', 'spaces', 'desktops', 'multitasking', 'organization'],
     readTime: '5 min',
-    thumbnailEmoji: '🖥️',
+    thumbnailEmoji: '',
     publishedAt: '2026-04-16',
     difficulty: 'Intermediate',
     body: `If your Mac screen gets cluttered with too many open windows, multiple desktops (called Spaces on Mac) can help. Spaces let you create separate virtual desktops — for example, one for work with your email and documents, another for web browsing, and a third for personal tasks. You switch between them with a swipe or keyboard shortcut, keeping each workspace clean and focused.
@@ -4899,7 +4695,7 @@ Multiple desktops work particularly well when paired with full-screen apps. Open
     category: 'mac-guides',
     tags: ['mac', 'force quit', 'frozen apps', 'troubleshooting', 'unresponsive'],
     readTime: '4 min',
-    thumbnailEmoji: '🔴',
+    thumbnailEmoji: '',
     publishedAt: '2026-04-16',
     difficulty: 'Beginner',
     body: `Sometimes an app on your Mac stops responding — the spinning rainbow wheel appears, and the app will not react to your clicks or keyboard input. When this happens, you do not need to restart your entire computer. Instead, you can force-quit the unresponsive app and continue using your Mac normally.
@@ -4932,7 +4728,7 @@ Force-quit should be a last resort — always try closing the app normally first
     category: 'mac-guides',
     tags: ['mac', 'iphone', 'airdrop', 'file sharing', 'wireless transfer'],
     readTime: '5 min',
-    thumbnailEmoji: '📲',
+    thumbnailEmoji: '',
     publishedAt: '2026-04-16',
     difficulty: 'Beginner',
     body: `AirDrop is Apple's built-in wireless file transfer feature. It lets you send photos, documents, videos, web links, and other files between your Mac and iPhone (or between any Apple devices) without cables, email, or cloud storage. Files transfer directly between devices using a combination of Wi-Fi and Bluetooth, and the transfer is fast — even large files take only a few seconds.
@@ -4963,7 +4759,7 @@ AirDrop is one of the best reasons to use Apple devices together. It is faster a
     category: 'mac-guides',
     tags: ['mac', 'preview', 'pdf', 'annotate', 'signatures'],
     readTime: '6 min',
-    thumbnailEmoji: '📄',
+    thumbnailEmoji: '',
     publishedAt: '2026-04-16',
     difficulty: 'Intermediate',
     body: `Preview is a free app that comes with every Mac, and it is surprisingly powerful for working with PDF documents. You can use it to fill out PDF forms, add your signature, highlight text, add notes and comments, merge PDFs, and more — all without paying for Adobe Acrobat or other expensive PDF software.
@@ -4998,7 +4794,7 @@ Remember to save your changes by pressing Command + S or going to File then Save
     category: 'mac-guides',
     tags: ['mac', 'parental controls', 'screen time', 'child safety', 'content restrictions'],
     readTime: '7 min',
-    thumbnailEmoji: '👨‍👧',
+    thumbnailEmoji: '‍',
     publishedAt: '2026-04-16',
     difficulty: 'Intermediate',
     body: `If a child or grandchild uses your Mac, you can set up parental controls to limit what they can access, how long they can use the computer, and which apps and websites they can visit. Apple's Screen Time feature provides all of these controls and is built into macOS — no additional software needed.
@@ -5037,7 +4833,7 @@ Set a Screen Time passcode that is different from the child's login password. Th
     category: 'how-to' as any,
     tags: ['video calls', 'home office', 'zoom', 'webcam', 'lighting'],
     readTime: '6 min',
-    thumbnailEmoji: '💻',
+    thumbnailEmoji: '',
     publishedAt: '2026-04-16',
     difficulty: 'Beginner' as any,
     body: `A good home office setup for video calls makes you look and sound professional without spending a lot of money. Poor lighting or a cluttered background can be distracting to the people you are meeting with. A few simple adjustments to your space can make a big difference in how you come across on camera.`,
@@ -5050,26 +4846,7 @@ Set a Screen Time passcode that is different from the child's login password. Th
     ],
   },
 
-  {
-    slug: 'use-microsoft-word-online',
-    title: 'How to Use Microsoft Word Online for Free',
-    excerpt: 'Write, edit, and share documents using the free web version of Microsoft Word — no software to install.',
-    category: 'how-to' as any,
-    tags: ['microsoft word', 'word online', 'office 365', 'documents', 'free'],
-    readTime: '5 min',
-    thumbnailEmoji: '📝',
-    publishedAt: '2026-04-16',
-    difficulty: 'Beginner' as any,
-    body: `Microsoft Word Online is a free version of the popular Word program that runs entirely in your web browser. You do not need to buy Office or install anything — just a free Microsoft account. It is great for writing letters, resumes, or any document you want to save and access from any device.`,
-    steps: [
-      { title: 'Create a free Microsoft account', content: 'Go to account.microsoft.com and click "Create a Microsoft account." Enter your email address (or create a new Outlook address) and follow the prompts to set a password and verify your identity.' },
-      { title: 'Go to Word Online', content: 'Go to office.com and sign in with your Microsoft account. You will see a list of free Office apps. Click on "Word" to open the online version.' },
-      { title: 'Create or open a document', content: 'Click "New blank document" to start writing, or click "Upload" to open a document from your computer. Your document will save automatically to OneDrive as you type.' },
-      { title: 'Use the formatting toolbar', content: 'The toolbar at the top lets you change font, size, bold, italic, and paragraph alignment — the same controls as the desktop version. Click any text and then use the toolbar to format it.' },
-      { title: 'Share or download your document', content: 'Click "Share" in the top right corner to send the document to someone else by email or link. Click "File" then "Save As" then "Download a Copy" to save a .docx file to your computer.' },
-    ],
-  },
-
+  
   {
     slug: 'use-google-docs-writing',
     title: 'How to Use Google Docs for Writing',
@@ -5077,7 +4854,7 @@ Set a Screen Time passcode that is different from the child's login password. Th
     category: 'how-to' as any,
     tags: ['google docs', 'google', 'documents', 'writing', 'free'],
     readTime: '5 min',
-    thumbnailEmoji: '📄',
+    thumbnailEmoji: '',
     publishedAt: '2026-04-16',
     difficulty: 'Beginner' as any,
     body: `Google Docs is a free online word processor from Google that works in any web browser. It saves your work automatically as you type, so you never lose a document, and you can access it from any phone, tablet, or computer. It is a popular alternative to Microsoft Word that costs nothing to use.`,
@@ -5097,7 +4874,7 @@ Set a Screen Time passcode that is different from the child's login password. Th
     category: 'phone-guides' as any,
     tags: ['scan', 'pdf', 'documents', 'phone camera', 'paperwork'],
     readTime: '5 min',
-    thumbnailEmoji: '📠',
+    thumbnailEmoji: '',
     publishedAt: '2026-04-16',
     difficulty: 'Beginner' as any,
     body: `Your phone camera can scan documents and turn them into clean PDF files — no scanner machine needed. This is useful for sending paperwork, saving important records, or keeping digital copies of receipts and letters. Both iPhones and Android phones have this built in or have free apps that do it well.`,
@@ -5117,7 +4894,7 @@ Set a Screen Time passcode that is different from the child's login password. Th
     category: 'essential-skills' as any,
     tags: ['cloud storage', 'google drive', 'onedrive', 'icloud', 'backup'],
     readTime: '7 min',
-    thumbnailEmoji: '☁️',
+    thumbnailEmoji: '',
     publishedAt: '2026-04-16',
     difficulty: 'Beginner' as any,
     body: `Cloud storage saves your files on the internet so you can access them from any phone, tablet, or computer — and so you do not lose them if your device is lost or breaks. Google Drive, Microsoft OneDrive, and Apple iCloud each offer free storage. Knowing how to use at least one of these is one of the most useful digital skills you can have.`,
@@ -5137,7 +4914,7 @@ Set a Screen Time passcode that is different from the child's login password. Th
     category: 'how-to' as any,
     tags: ['e-signature', 'sign pdf', 'docusign', 'adobe', 'electronic signature'],
     readTime: '6 min',
-    thumbnailEmoji: '✍️',
+    thumbnailEmoji: '',
     publishedAt: '2026-04-16',
     difficulty: 'Beginner' as any,
     body: `Electronic signatures are legally valid in the United States and accepted by banks, landlords, employers, and government agencies. You can sign a document without printing, signing by hand, and scanning it back — saving time and paper. Several free tools make this quick and easy on any device.`,
@@ -5157,7 +4934,7 @@ Set a Screen Time passcode that is different from the child's login password. Th
     category: 'essential-skills' as any,
     tags: ['files', 'folders', 'organization', 'documents', 'computer basics'],
     readTime: '6 min',
-    thumbnailEmoji: '🗂️',
+    thumbnailEmoji: '',
     publishedAt: '2026-04-16',
     difficulty: 'Beginner' as any,
     body: `A well-organized file system saves you from frantically searching for important documents at the worst possible moments. Most people save files wherever is convenient and then struggle to find them later. Spending 30 minutes setting up a simple folder structure will save you hours of searching over time.`,
@@ -5177,7 +4954,7 @@ Set a Screen Time passcode that is different from the child's login password. Th
     category: 'safety-guides' as any,
     tags: ['vpn', 'privacy', 'security', 'public wifi', 'remote work'],
     readTime: '7 min',
-    thumbnailEmoji: '🔒',
+    thumbnailEmoji: '',
     publishedAt: '2026-04-16',
     difficulty: 'Beginner' as any,
     body: `A VPN (Virtual Private Network) creates a secure, private tunnel for your internet connection — protecting your data when you are on public WiFi or accessing sensitive accounts. Many employers require employees to use a VPN when working from home. Consumer VPNs also protect your privacy from advertisers and help keep your browsing secure on the go.`,
@@ -5201,7 +4978,7 @@ Set a Screen Time passcode that is different from the child's login password. Th
     category: 'app-guides' as any,
     tags: ['amazon', 'online shopping', 'safety', 'reviews', 'scams'],
     readTime: '6 min',
-    thumbnailEmoji: '📦',
+    thumbnailEmoji: '',
     publishedAt: '2026-04-16',
     difficulty: 'Beginner' as any,
     body: `Amazon is the world's largest online store, but not every seller on Amazon is equally trustworthy. Knowing how to identify reliable sellers, spot fake reviews, and protect your payment details will help you shop with confidence. A few extra seconds of checking before you buy can save you from scams and low-quality products.`,
@@ -5221,7 +4998,7 @@ Set a Screen Time passcode that is different from the child's login password. Th
     category: 'app-guides' as any,
     tags: ['instacart', 'grocery delivery', 'online grocery', 'delivery', 'shopping'],
     readTime: '5 min',
-    thumbnailEmoji: '🛒',
+    thumbnailEmoji: '',
     publishedAt: '2026-04-16',
     difficulty: 'Beginner' as any,
     body: `Instacart lets you order groceries from local stores like Kroger, Costco, Aldi, and many others, with a personal shopper picking and delivering your order. It is a convenient service for anyone who has difficulty getting to the store, has a busy schedule, or prefers to shop from home. Delivery fees vary, and a membership can reduce costs if you order frequently.`,
@@ -5241,7 +5018,7 @@ Set a Screen Time passcode that is different from the child's login password. Th
     category: 'app-guides' as any,
     tags: ['doordash', 'uber eats', 'food delivery', 'restaurants', 'ordering food'],
     readTime: '5 min',
-    thumbnailEmoji: '🍔',
+    thumbnailEmoji: '',
     publishedAt: '2026-04-16',
     difficulty: 'Beginner' as any,
     body: `DoorDash and Uber Eats connect you with hundreds of local restaurants that deliver food directly to your door. Both apps work similarly — you browse menus, place an order, and a driver picks it up and brings it to you. These services are useful when you cannot cook or want to enjoy a restaurant meal at home.`,
@@ -5261,7 +5038,7 @@ Set a Screen Time passcode that is different from the child's login password. Th
     category: 'app-guides' as any,
     tags: ['walmart', 'grocery pickup', 'curbside', 'delivery', 'online shopping'],
     readTime: '5 min',
-    thumbnailEmoji: '🏪',
+    thumbnailEmoji: '',
     publishedAt: '2026-04-16',
     difficulty: 'Beginner' as any,
     body: `Walmart's pickup and delivery service lets you order groceries and household items from Walmart.com or the Walmart app, then pick them up curbside without entering the store — or have them delivered to your home. Curbside pickup is free with no minimum order at most locations, making it one of the most cost-effective grocery services available.`,
@@ -5281,7 +5058,7 @@ Set a Screen Time passcode that is different from the child's login password. Th
     category: 'how-to' as any,
     tags: ['returns', 'refund', 'online shopping', 'amazon', 'return label'],
     readTime: '5 min',
-    thumbnailEmoji: '🔄',
+    thumbnailEmoji: '',
     publishedAt: '2026-04-16',
     difficulty: 'Beginner' as any,
     body: `Returning an online purchase is usually straightforward once you know the steps. Most major retailers make returns easy with prepaid labels or drop-off options. Acting quickly matters — most stores have a return window of 30 days, and keeping your original packaging makes the process much simpler.`,
@@ -5301,7 +5078,7 @@ Set a Screen Time passcode that is different from the child's login password. Th
     category: 'how-to' as any,
     tags: ['package tracking', 'ups', 'fedex', 'usps', 'shipping'],
     readTime: '4 min',
-    thumbnailEmoji: '📬',
+    thumbnailEmoji: '',
     publishedAt: '2026-04-16',
     difficulty: 'Beginner' as any,
     body: `When you order something online, you want to know when it is arriving. Every shipment has a tracking number that lets you see exactly where your package is in real time. Knowing how to track packages from different carriers — UPS, FedEx, USPS, and Amazon — prevents unnecessary worry and helps you plan to be home for a delivery.`,
@@ -5314,26 +5091,7 @@ Set a Screen Time passcode that is different from the child's login password. Th
     ],
   },
 
-  {
-    slug: 'spot-fake-online-reviews',
-    title: 'How to Spot Fake Online Reviews',
-    excerpt: 'Learn the red flags of fake reviews on Amazon, Google, and other sites so you can make smarter buying decisions.',
-    category: 'safety-guides' as any,
-    tags: ['fake reviews', 'online shopping', 'scams', 'consumer protection', 'amazon'],
-    readTime: '5 min',
-    thumbnailEmoji: '⭐',
-    publishedAt: '2026-04-16',
-    difficulty: 'Beginner' as any,
-    body: `Fake reviews are a growing problem on Amazon, Google, Yelp, and other platforms. Businesses sometimes pay for fake 5-star reviews to boost their products, while competitors may leave fake negative reviews. Learning to spot the warning signs protects you from buying poor-quality products or being misled by dishonest sellers.`,
-    steps: [
-      { title: 'Check the rating distribution', content: 'Look at the star breakdown on any product or business page. A trustworthy product usually has a mix of ratings — some 5s, some 4s, some 3s, and a few 1s. If almost every review is exactly 5 stars with very few others, that is a red flag.' },
-      { title: 'Look for verified purchase badges', content: `On Amazon, look for the "Verified Purchase" label under a reviewer's name. This means Amazon confirmed the reviewer actually bought the item. Reviews without this label should be given less weight.` },
-      { title: 'Read the 1 and 2 star reviews', content: 'Low-rated reviews are harder to fake and are often the most honest. Look for patterns — do multiple reviewers mention the same problem? That is likely a real issue with the product.' },
-      { title: 'Check reviewer profiles', content: `On Amazon, click a reviewer's name to see their review history. Be suspicious if an account has only reviewed one brand of products, left all 5-star reviews, or wrote all reviews on the same day.` },
-      { title: 'Use a fake review checker', content: 'Visit fakespot.com or reviewmeta.com and paste in the URL of an Amazon product page. These free tools analyze the reviews and give you an adjusted rating that filters out suspected fakes.' },
-    ],
-  },
-
+  
   {
     slug: 'use-coupon-cashback-apps',
     title: 'How to Use Coupon and Cashback Apps — Honey and Rakuten',
@@ -5341,7 +5099,7 @@ Set a Screen Time passcode that is different from the child's login password. Th
     category: 'financial-tech' as any,
     tags: ['coupons', 'cashback', 'honey', 'rakuten', 'saving money'],
     readTime: '5 min',
-    thumbnailEmoji: '💰',
+    thumbnailEmoji: '',
     publishedAt: '2026-04-16',
     difficulty: 'Beginner' as any,
     body: `Honey and Rakuten are free browser extensions that automatically save you money when you shop online. Honey searches for coupon codes and applies the best one at checkout automatically. Rakuten gives you a percentage of your purchase back as cash — essentially paying you to shop at stores you already use. Together they can save a significant amount over the course of a year.`,
@@ -5365,7 +5123,7 @@ Set a Screen Time passcode that is different from the child's login password. Th
     category: 'app-guides' as any,
     tags: ['google maps', 'directions', 'navigation', 'gps', 'driving'],
     readTime: '5 min',
-    thumbnailEmoji: '🗺️',
+    thumbnailEmoji: '',
     publishedAt: '2026-04-16',
     difficulty: 'Beginner' as any,
     body: `Google Maps is the most widely used navigation app in the world, and it is free on both iPhone and Android. It gives you turn-by-turn voice directions, real-time traffic updates, and estimated arrival times. Knowing how to use it confidently takes the stress out of driving somewhere new.`,
@@ -5385,7 +5143,7 @@ Set a Screen Time passcode that is different from the child's login password. Th
     category: 'how-to' as any,
     tags: ['flights', 'booking', 'travel', 'airline', 'expedia'],
     readTime: '7 min',
-    thumbnailEmoji: '✈️',
+    thumbnailEmoji: '',
     publishedAt: '2026-04-16',
     difficulty: 'Beginner' as any,
     body: `Booking flights online can save money compared to calling an airline, but there are pitfalls to avoid — scam booking websites, hidden fees, and confusing fare rules. Using trusted platforms and knowing what to look for will help you find a good deal and complete your booking with confidence.`,
@@ -5405,7 +5163,7 @@ Set a Screen Time passcode that is different from the child's login password. Th
     category: 'app-guides' as any,
     tags: ['hotel', 'airbnb', 'booking', 'travel', 'accommodation'],
     readTime: '6 min',
-    thumbnailEmoji: '🏨',
+    thumbnailEmoji: '',
     publishedAt: '2026-04-16',
     difficulty: 'Beginner' as any,
     body: `Booking a place to stay for a trip is straightforward once you know the right apps and what to look for. Hotels.com, Booking.com, and the Hilton or Marriott apps are great for traditional hotels, while Airbnb offers private homes and apartments. Each has its own strengths, and comparing prices between a few options can save you money.`,
@@ -5418,26 +5176,7 @@ Set a Screen Time passcode that is different from the child's login password. Th
     ],
   },
 
-  {
-    slug: 'use-digital-boarding-pass',
-    title: 'How to Use a Digital Boarding Pass on Your Phone',
-    excerpt: `Add your airline boarding pass to your phone's wallet app and breeze through the airport without printed paper.`,
-    category: 'phone-guides' as any,
-    tags: ['boarding pass', 'digital wallet', 'airport', 'travel', 'airline'],
-    readTime: '5 min',
-    thumbnailEmoji: '🎫',
-    publishedAt: '2026-04-16',
-    difficulty: 'Beginner' as any,
-    body: `A digital boarding pass on your phone is accepted at nearly every US airport and most international ones. It works at security checkpoints and at the gate, and it eliminates the need to find a printer before a trip. Adding it to your phone's wallet app keeps it readily accessible even if your phone loses internet connection.`,
-    steps: [
-      { title: 'Check in online 24 hours before your flight', content: `Go to the airline's website or app the day before your flight. Log in with your booking reference number and last name. Tap "Check in" and follow the prompts to confirm your seat.` },
-      { title: 'Choose the mobile boarding pass option', content: 'When check-in is complete, the site or app will ask how you want your boarding pass. Choose "Email" or "Add to Apple Wallet" or "Add to Google Wallet." Pick the wallet option if you can — it is the most convenient.' },
-      { title: `Add the pass to your phone's wallet`, content: 'On iPhone, tap "Add to Apple Wallet" and then tap "Add." On Android, tap "Add to Google Wallet." The boarding pass will appear in your Wallet app with your flight details, seat number, and barcode.' },
-      { title: 'Access the pass at the airport', content: 'Open the Wallet app (iPhone) or Google Wallet (Android) before you reach the TSA checkpoint. Show the barcode to the scanner at security and again at the gate. The pass should work even in Airplane Mode.' },
-      { title: 'Keep your phone charged', content: 'Make sure your phone has at least 50% battery before heading to the airport. Bring a charging cable or portable battery pack just in case. As a backup, screenshot your boarding pass so you have it even if the app has trouble loading.' },
-    ],
-  },
-
+  
   {
     slug: 'use-phone-abroad',
     title: 'How to Use Your Phone Abroad Without Huge Bills',
@@ -5445,7 +5184,7 @@ Set a Screen Time passcode that is different from the child's login password. Th
     category: 'phone-guides' as any,
     tags: ['international travel', 'roaming', 'sim card', 'wifi calling', 'data abroad'],
     readTime: '7 min',
-    thumbnailEmoji: '🌍',
+    thumbnailEmoji: '',
     publishedAt: '2026-04-16',
     difficulty: 'Beginner' as any,
     body: `Using your US phone abroad without planning ahead can result in shocking bills — international roaming charges can add up to hundreds of dollars quickly. Fortunately, several easy options keep you connected overseas without breaking the bank. The right choice depends on how long you are traveling and which carrier you use.`,
@@ -5469,7 +5208,7 @@ Set a Screen Time passcode that is different from the child's login password. Th
     category: 'entertainment' as any,
     tags: ['disney plus', 'streaming', 'disney', 'marvel', 'subscription'],
     readTime: '5 min',
-    thumbnailEmoji: '🎬',
+    thumbnailEmoji: '',
     publishedAt: '2026-04-16',
     difficulty: 'Beginner' as any,
     body: `Disney Plus is a streaming service with thousands of movies and TV shows from Disney, Pixar, Marvel, Star Wars, and National Geographic — all for a monthly subscription fee. It works on smart TVs, phones, tablets, and computers, with no commercials on most plans. Getting started takes just a few minutes.`,
@@ -5489,7 +5228,7 @@ Set a Screen Time passcode that is different from the child's login password. Th
     category: 'entertainment' as any,
     tags: ['peacock', 'streaming', 'nbc', 'free streaming', 'television'],
     readTime: '5 min',
-    thumbnailEmoji: '🦚',
+    thumbnailEmoji: '',
     publishedAt: '2026-04-16',
     difficulty: 'Beginner' as any,
     body: `Peacock is NBCUniversal's streaming service with a large free tier, making it one of the best no-cost streaming options available. The free plan includes thousands of hours of TV shows, movies, and news. A premium plan adds more content and removes most ads. Peacock is available on smart TVs, phones, tablets, and computers.`,
@@ -5509,7 +5248,7 @@ Set a Screen Time passcode that is different from the child's login password. Th
     category: 'entertainment' as any,
     tags: ['apple tv', 'apple tv plus', 'streaming', 'iphone', 'smart tv'],
     readTime: '6 min',
-    thumbnailEmoji: '📺',
+    thumbnailEmoji: '',
     publishedAt: '2026-04-16',
     difficulty: 'Beginner' as any,
     body: `The Apple TV app is both a streaming service and a hub that brings together content from multiple streaming apps in one place. It comes free on all iPhones and iPads and is available on many smart TVs. Apple TV+ is Apple's subscription service with original shows and movies, while the TV app itself also lets you rent or buy other movies.`,
@@ -5529,7 +5268,7 @@ Set a Screen Time passcode that is different from the child's login password. Th
     category: 'entertainment' as any,
     tags: ['youtube', 'smart tv', 'streaming', 'chromecast', 'roku'],
     readTime: '5 min',
-    thumbnailEmoji: '▶️',
+    thumbnailEmoji: '▶',
     publishedAt: '2026-04-16',
     difficulty: 'Beginner' as any,
     body: `YouTube has more free video content than any other platform — news, tutorials, cooking shows, music videos, documentaries, and much more. Watching it on your TV gives you a much better experience than a small phone screen, and it is completely free. Most smart TVs and streaming devices already have the YouTube app installed.`,
@@ -5549,7 +5288,7 @@ Set a Screen Time passcode that is different from the child's login password. Th
     category: 'entertainment' as any,
     tags: ['download', 'offline viewing', 'netflix', 'disney plus', 'amazon prime'],
     readTime: '5 min',
-    thumbnailEmoji: '⬇️',
+    thumbnailEmoji: '',
     publishedAt: '2026-04-16',
     difficulty: 'Beginner' as any,
     body: `Most major streaming services let you download movies and TV shows to your phone or tablet to watch without an internet connection — perfect for flights, road trips, or areas with poor WiFi. Downloads are only available on mobile apps (not web browsers) and are tied to an active subscription. Here is how to do it on the most popular services.`,
@@ -5569,7 +5308,7 @@ Set a Screen Time passcode that is different from the child's login password. Th
     category: 'app-guides' as any,
     tags: ['spotify', 'music', 'podcasts', 'streaming', 'playlists'],
     readTime: '5 min',
-    thumbnailEmoji: '🎵',
+    thumbnailEmoji: '',
     publishedAt: '2026-04-16',
     difficulty: 'Beginner' as any,
     body: `Spotify has over 100 million songs and 5 million podcasts available on demand. The free tier lets you listen with occasional ads, while Spotify Premium removes ads and lets you download music for offline listening. It works on phones, computers, smart speakers, and in your car — and it is easy to get started.`,
@@ -5593,7 +5332,7 @@ Set a Screen Time passcode that is different from the child's login password. Th
     category: 'financial-tech' as any,
     tags: ['online banking', 'bank account', 'mobile banking', 'bill pay', 'transfers'],
     readTime: '6 min',
-    thumbnailEmoji: '🏦',
+    thumbnailEmoji: '',
     publishedAt: '2026-04-16',
     difficulty: 'Beginner' as any,
     body: `Online banking lets you check your balance, view transactions, pay bills, and transfer money without visiting a branch or calling your bank. Every major US bank offers free online and mobile banking. Setting it up takes about 10 minutes, and the convenience of handling banking tasks from home is well worth it.`,
@@ -5613,7 +5352,7 @@ Set a Screen Time passcode that is different from the child's login password. Th
     category: 'financial-tech' as any,
     tags: ['zelle', 'send money', 'bank transfer', 'p2p payments', 'digital payments'],
     readTime: '5 min',
-    thumbnailEmoji: '💸',
+    thumbnailEmoji: '',
     publishedAt: '2026-04-16',
     difficulty: 'Beginner' as any,
     body: `Zelle lets you send money directly from your bank account to another person's bank account in minutes — for free. It is built into the apps of most major US banks including Bank of America, Chase, Wells Fargo, and hundreds of others. Because transfers go directly between bank accounts, the money typically arrives within minutes.`,
@@ -5633,7 +5372,7 @@ Set a Screen Time passcode that is different from the child's login password. Th
     category: 'safety-guides' as any,
     tags: ['bank scam', 'fraud', 'impersonation', 'phone scam', 'financial safety'],
     readTime: '6 min',
-    thumbnailEmoji: '🚨',
+    thumbnailEmoji: '',
     publishedAt: '2026-04-16',
     difficulty: 'Beginner' as any,
     body: `Bank impersonation scams are among the most common and damaging financial frauds in the US. Scammers call, text, or email pretending to be your bank's fraud department, claiming your account has been compromised. Their goal is to trick you into handing over your account credentials or transferring money. Knowing what real banks do and do not do is your best defense.`,
@@ -5653,7 +5392,7 @@ Set a Screen Time passcode that is different from the child's login password. Th
     category: 'financial-tech' as any,
     tags: ['credit freeze', 'identity theft', 'equifax', 'experian', 'transunion'],
     readTime: '7 min',
-    thumbnailEmoji: '🔐',
+    thumbnailEmoji: '',
     publishedAt: '2026-04-16',
     difficulty: 'Beginner' as any,
     body: `A credit freeze (also called a security freeze) blocks anyone from opening new credit accounts in your name, which is the most effective tool to prevent identity theft. It is completely free, does not affect your credit score, and does not stop you from using existing accounts. You must freeze your credit at all three bureaus separately, and you can lift it at any time.`,
@@ -5673,7 +5412,7 @@ Set a Screen Time passcode that is different from the child's login password. Th
     category: 'government-civic' as any,
     tags: ['taxes', 'irs', 'free file', 'tax return', 'government'],
     readTime: '7 min',
-    thumbnailEmoji: '🧾',
+    thumbnailEmoji: '',
     publishedAt: '2026-04-16',
     difficulty: 'Beginner' as any,
     body: `The IRS Free File program offers free tax filing software to taxpayers who meet the income requirements. This includes free preparation and e-filing of your federal return — no hidden fees. Several companies participate, including TurboTax Free File and TaxAct. Filing electronically gets you your refund faster, often within 21 days.`,
@@ -5697,7 +5436,7 @@ Set a Screen Time passcode that is different from the child's login password. Th
     category: 'health-tech' as any,
     tags: ['medicare', 'medicare.gov', 'health insurance', 'government', 'seniors'],
     readTime: '7 min',
-    thumbnailEmoji: '🏥',
+    thumbnailEmoji: '',
     publishedAt: '2026-04-16',
     difficulty: 'Beginner' as any,
     body: `Medicare.gov is the official website for your Medicare health insurance, and the free app helps you understand your benefits on the go. Creating a Medicare account online lets you view your coverage, see claims that have been filed, find Medicare-approved doctors and facilities, and compare drug plans — all without calling Medicare's often-busy phone line.`,
@@ -5717,7 +5456,7 @@ Set a Screen Time passcode that is different from the child's login password. Th
     category: 'health-tech' as any,
     tags: ['fitness tracker', 'smartwatch', 'fitbit', 'apple watch', 'health tracking'],
     readTime: '6 min',
-    thumbnailEmoji: '⌚',
+    thumbnailEmoji: '',
     publishedAt: '2026-04-16',
     difficulty: 'Beginner' as any,
     body: `Fitness trackers and smartwatches can motivate you to be more active, monitor your heart rate, track your sleep quality, and remind you to move throughout the day. Popular options include Fitbit, Apple Watch, and Garmin. Most connect to a smartphone app where you can see your health trends over time and share data with your doctor.`,
@@ -5737,7 +5476,7 @@ Set a Screen Time passcode that is different from the child's login password. Th
     category: 'health-tech' as any,
     tags: ['telehealth', 'telemedicine', 'doctor video call', 'virtual visit', 'healthcare'],
     readTime: '6 min',
-    thumbnailEmoji: '👨‍⚕️',
+    thumbnailEmoji: '‍',
     publishedAt: '2026-04-16',
     difficulty: 'Beginner' as any,
     body: `Telehealth lets you see a doctor, nurse practitioner, or specialist through a video call on your phone or computer without leaving home. It is a good option for non-emergency issues like colds, skin concerns, prescription refills, or mental health appointments. Most insurance plans including Medicare now cover telehealth visits, often at the same cost as an in-person visit.`,
@@ -5757,7 +5496,7 @@ Set a Screen Time passcode that is different from the child's login password. Th
     category: 'health-tech' as any,
     tags: ['prescriptions', 'online pharmacy', 'goodrx', 'cvs', 'medication'],
     readTime: '6 min',
-    thumbnailEmoji: '💊',
+    thumbnailEmoji: '',
     publishedAt: '2026-04-16',
     difficulty: 'Beginner' as any,
     body: `Managing prescriptions online saves trips to the pharmacy, lets you set up automatic refills, and makes it easy to track your medications. Most major pharmacies — CVS, Walgreens, Rite Aid, and Walmart — have apps and websites where you can transfer prescriptions, request refills, and choose delivery or in-store pickup. Free discount tools like GoodRx can also significantly reduce your out-of-pocket costs.`,
@@ -5770,26 +5509,7 @@ Set a Screen Time passcode that is different from the child's login password. Th
     ],
   },
 
-  {
-    slug: 'set-up-medication-reminders',
-    title: 'How to Set Up Medication Reminders on Your Phone',
-    excerpt: `Never miss a dose by setting up medication reminders using your phone's built-in tools or a free app.`,
-    category: 'health-tech' as any,
-    tags: ['medication reminders', 'pills', 'health', 'alarms', 'phone reminders'],
-    readTime: '5 min',
-    thumbnailEmoji: '⏰',
-    publishedAt: '2026-04-16',
-    difficulty: 'Beginner' as any,
-    body: `Missing doses of important medications can seriously impact your health. Your smartphone can reliably remind you to take your medications at the right time every day — no pill organizer required. You can use your phone's built-in alarm or a dedicated medication reminder app for more features like tracking whether you took a dose.`,
-    steps: [
-      { title: 'Use the built-in Clock app for simple reminders', content: 'Open the Clock app on your phone and tap "Alarm." Tap the "+" to add a new alarm. Set the time, choose "Repeat" to make it daily, and give it a label like "Morning Medication." Tap "Save." This works on both iPhone and Android.' },
-      { title: 'Use Siri or Google Assistant to set a reminder', content: 'Say "Hey Siri, remind me to take my blood pressure pill every day at 9 AM" or "Hey Google, remind me to take my medication every morning at 8 AM." Your voice assistant will create the recurring reminder automatically.' },
-      { title: 'Download a dedicated medication app', content: 'For more features, download a medication management app. Medisafe (free) and MyTherapy (free) are highly rated apps that let you log each medication with its dose and schedule, remind you when doses are due, and track whether you took each one.' },
-      { title: 'Set up Medisafe or MyTherapy', content: 'Open the app and tap "Add Medication." Enter the medication name, dosage, and the time(s) you need to take it. The app will send you a push notification at the scheduled time. Tap the notification to confirm you took the dose.' },
-      { title: 'Ask a family member to join as a caregiver', content: `Medisafe and MyTherapy let a family member or caregiver receive alerts if you miss a dose. In the app settings, look for "Add Care Partner" or "Caregiver Network" and enter the family member's email. They will get a notification if you miss a dose, providing an extra safety net.` },
-    ],
-  },
-
+  
   // ═══════════════════════════════════════════
   // COMMUNICATION (6 guides)
   // ═══════════════════════════════════════════
@@ -5801,7 +5521,7 @@ Set a Screen Time passcode that is different from the child's login password. Th
     category: 'communication' as any,
     tags: ['whatsapp', 'free calls', 'messaging', 'international calls', 'video calls'],
     readTime: '5 min',
-    thumbnailEmoji: '💬',
+    thumbnailEmoji: '',
     publishedAt: '2026-04-16',
     difficulty: 'Beginner' as any,
     body: `WhatsApp is the world's most popular messaging app, with over 2 billion users. It lets you send text messages, voice messages, photos, videos, and make free voice or video calls to anyone else who has WhatsApp — including friends and family in other countries. All messages and calls are encrypted for privacy, and it uses your WiFi or data plan rather than your phone minutes.`,
@@ -5821,7 +5541,7 @@ Set a Screen Time passcode that is different from the child's login password. Th
     category: 'communication' as any,
     tags: ['zoom', 'video calls', 'meetings', 'telehealth', 'video conferencing'],
     readTime: '6 min',
-    thumbnailEmoji: '📹',
+    thumbnailEmoji: '',
     publishedAt: '2026-04-16',
     difficulty: 'Beginner' as any,
     body: `Zoom is one of the most widely used video calling platforms in the world, used for everything from family gatherings to doctor appointments to community meetings. It is free for most personal use, allowing unlimited one-on-one calls and up to 40-minute group meetings. You can join a Zoom meeting without creating an account, but creating a free account lets you host your own meetings.`,
@@ -5834,26 +5554,7 @@ Set a Screen Time passcode that is different from the child's login password. Th
     ],
   },
 
-  {
-    slug: 'use-google-meet-free',
-    title: 'How to Use Google Meet for Free Video Calls',
-    excerpt: 'Start a free video call with Google Meet directly from your browser — no app download required.',
-    category: 'communication' as any,
-    tags: ['google meet', 'video calls', 'free video call', 'google', 'meetings'],
-    readTime: '5 min',
-    thumbnailEmoji: '🎥',
-    publishedAt: '2026-04-16',
-    difficulty: 'Beginner' as any,
-    body: `Google Meet is a free video calling service from Google that works directly in any web browser — no software to install. It is built into Gmail, so if you have a Gmail account, you already have access. Free calls support up to 100 participants and are unlimited in length for one-on-one calls.`,
-    steps: [
-      { title: 'Go to meet.google.com', content: 'Open any web browser and go to meet.google.com. Sign in with your Gmail account. If you do not have a Gmail account, you can create one for free at gmail.com.' },
-      { title: 'Start a new meeting', content: 'Click "New meeting" and then "Start an instant meeting" to begin a video call right now. Your camera and microphone will activate — allow access when your browser asks.' },
-      { title: 'Invite others to join', content: 'Once in the meeting, click the person icon or "Add others" button. You can copy the meeting link and send it by email, text, or any messaging app. Anyone with the link can join from their browser without needing a Google account.' },
-      { title: 'Join a meeting you were invited to', content: 'If someone sends you a Google Meet link (it looks like meet.google.com/abc-defg-hij), click the link. If you are signed into your Google account, you can join immediately. If not, you can join as a guest by entering your name.' },
-      { title: 'Use Meet from Gmail', content: 'Google Meet is also accessible directly from Gmail. In the left sidebar of Gmail, look for "Meet" with a video camera icon. Click "New meeting" or "Join a meeting" to start or join a call without leaving your email.' },
-    ],
-  },
-
+  
   {
     slug: 'share-photos-family-albums',
     title: 'How to Share Photos with Family Using Shared Albums',
@@ -5861,7 +5562,7 @@ Set a Screen Time passcode that is different from the child's login password. Th
     category: 'communication' as any,
     tags: ['shared albums', 'photos', 'family', 'icloud', 'google photos'],
     readTime: '5 min',
-    thumbnailEmoji: '🖼️',
+    thumbnailEmoji: '',
     publishedAt: '2026-04-16',
     difficulty: 'Beginner' as any,
     body: `Shared photo albums let your whole family add photos to one place so everyone can see them, regardless of whether they use iPhone or Android. This is much easier than texting individual photos and avoids the issue of photos getting lost in chat threads. Both Apple's iCloud Shared Albums and Google Photos shared albums work well and are free to use.`,
@@ -5881,7 +5582,7 @@ Set a Screen Time passcode that is different from the child's login password. Th
     category: 'app-guides' as any,
     tags: ['marco polo', 'video messages', 'family', 'messaging', 'app'],
     readTime: '5 min',
-    thumbnailEmoji: '📲',
+    thumbnailEmoji: '',
     publishedAt: '2026-04-16',
     difficulty: 'Beginner' as any,
     body: `Marco Polo is a free app that lets you send short video messages to friends and family — like a video walkie-talkie. Unlike a live video call, the other person does not need to be available at the same time. They can watch your video whenever they are ready and reply in their own time. It is popular for staying connected with family across different time zones.`,
@@ -5905,7 +5606,7 @@ Set a Screen Time passcode that is different from the child's login password. Th
     category: 'smart-home' as any,
     tags: ['ring doorbell', 'nest hello', 'video doorbell', 'smart home', 'security'],
     readTime: '7 min',
-    thumbnailEmoji: '🔔',
+    thumbnailEmoji: '',
     publishedAt: '2026-04-16',
     difficulty: 'Beginner' as any,
     body: `A smart video doorbell lets you see who is at your door and speak to them through your phone — whether you are inside your home or miles away. Ring and Nest (Google) are the most popular brands. Both connect to your home WiFi, send motion alerts to your phone, and record video when someone approaches. They are a popular security upgrade for homes of all sizes.`,
@@ -5925,7 +5626,7 @@ Set a Screen Time passcode that is different from the child's login password. Th
     category: 'smart-home' as any,
     tags: ['smart plug', 'smart home', 'kasa', 'alexa', 'home automation'],
     readTime: '5 min',
-    thumbnailEmoji: '🔌',
+    thumbnailEmoji: '',
     publishedAt: '2026-04-16',
     difficulty: 'Beginner' as any,
     body: `Smart plugs are one of the easiest and most affordable ways to start automating your home. You plug one into any standard outlet, then plug any device (a lamp, a fan, a coffee maker) into the smart plug. You can then turn that device on or off using your phone or your voice — and set schedules so things happen automatically. Popular brands include Kasa, Wyze, and Amazon Smart Plug.`,
@@ -5945,7 +5646,7 @@ Set a Screen Time passcode that is different from the child's login password. Th
     category: 'smart-home' as any,
     tags: ['smart thermostat', 'nest', 'ecobee', 'energy savings', 'home automation'],
     readTime: '7 min',
-    thumbnailEmoji: '🌡️',
+    thumbnailEmoji: '',
     publishedAt: '2026-04-16',
     difficulty: 'Beginner' as any,
     body: `A smart thermostat lets you control your home's heating and cooling from your smartphone and can learn your schedule to automatically save energy when you are away. The Nest Learning Thermostat and ecobee are the most popular options. Studies show smart thermostats save homeowners an average of $140 per year on energy bills, making them one of the best return-on-investment smart home upgrades.`,
@@ -5965,7 +5666,7 @@ Set a Screen Time passcode that is different from the child's login password. Th
     category: 'smart-home' as any,
     tags: ['security cameras', 'blink', 'arlo', 'ring', 'home security'],
     readTime: '6 min',
-    thumbnailEmoji: '📷',
+    thumbnailEmoji: '',
     publishedAt: '2026-04-16',
     difficulty: 'Beginner' as any,
     body: `Smart home cameras let you check on your home in real time from anywhere in the world using your phone. Whether you want to monitor your front door, back yard, or the inside of your home while you are away, cameras from brands like Blink, Arlo, and Ring are easy to set up and can send you alerts when motion is detected. Most offer free cloud storage for short clips or affordable subscription plans for longer recordings.`,

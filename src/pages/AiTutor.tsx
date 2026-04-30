@@ -66,7 +66,7 @@ export default function AiTutor() {
     return (
       <div className="min-h-screen bg-background flex flex-col">
         <Navbar />
-        <main className="flex-1 container max-w-2xl py-14 text-center">
+        <main id="main-content" className="flex-1 container max-w-2xl py-14 text-center">
           <div className="text-5xl mb-4"></div>
           <h1 className="text-3xl md:text-4xl font-bold tracking-tight mb-3 text-primary">AI Personal Tech Tutor</h1>
           <p className="text-muted-foreground mb-10">Your patient, always-available tutor who adapts to your level. Ask anything — no question is too basic.</p>

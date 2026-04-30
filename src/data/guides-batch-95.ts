@@ -1,75 +1,254 @@
-// TekSure Guides Batch 95 — MyChart Patient Portal Guide (April 2026)
-import type { Guide } from './guides';
+import { Guide } from './guides';
+
+// Social: "Microsoft's April 2026 update locked thousands of Windows 11 users out with a blue screen. The fix takes 2 minutes and costs nothing — here's exactly what to do."
+// Newsletter: "The April 2026 Windows 11 update (KB5083769) accidentally triggered BitLocker on some PCs — locking users out with a recovery key screen. The real fix is free. Here's the step-by-step guide."
+// Social: "Don't pay anyone who calls offering to help with the Windows 11 BitLocker lockout. The fix is free. Here's how to do it yourself in under 5 minutes."
+
+// Social: "iPhone says 'Not Enough Storage' to update — but deleting photos feels scary. Here's how to clear space safely without losing anything."
+// Newsletter: "A critical iOS 18 security update is sitting uninstalled on millions of iPhones because of storage warnings. Here's how to make room for the update in 5 minutes — without losing photos."
+
+// Social: "Gmail suddenly stopped loading in Outlook or Apple Mail? Google changed how sign-ins work. Here's the free fix that takes 3 minutes."
+// Newsletter: "If Gmail stopped working in Outlook or Apple Mail, Google's 2024 authentication change is likely why. Re-adding your account takes 3 minutes and fixes it for good."
+
+// Social: "Locked out of your Google or Microsoft account after a device change? Don't panic — here's the fastest way back in."
+// Newsletter: "Password lockouts spike every time a major OS update ships. Here's the step-by-step account recovery process for Google, Microsoft, and Apple — bookmark it before you need it."
+
+// Social: "Is your iPhone battery draining unusually fast after an update? Here's why it happens and what actually helps."
+// Newsletter: "Battery drain after an iOS update is normal for 24–48 hours — your iPhone is reindexing. If it lasts longer, one of these free fixes almost always resolves it."
 
 export const guidesBatch95: Guide[] = [
-  // Social: "Your doctor's office keeps telling you to 'check MyChart' — but nobody showed you how. Here's the plain-English guide that should have come with your activation code."
-  // Newsletter: "Over 200 million people have a MyChart account, but most seniors never set theirs up because the instructions are confusing. MyChart lets you see your test results, message your doctor, schedule appointments, and refill prescriptions — all from your computer or phone. This step-by-step guide walks you through everything, from signing up to staying secure."
   {
-    slug: 'how-to-use-mychart-patient-portal',
-    title: 'How to Use MyChart (Your Doctor\'s Patient Portal)',
-    excerpt: 'MyChart lets you see test results, message your doctor, schedule appointments, and refill prescriptions online. This plain-language guide walks you through everything — from signing up to staying safe.',
-    category: 'health-tech',
-    tags: ['MyChart', 'patient portal', 'health', 'doctor', 'medical records', 'appointments', 'prescriptions', 'test results', 'telehealth', 'seniors', 'Epic'],
-    readTime: '14 min',
-    thumbnailEmoji: '🏥',
+    slug: 'fix-windows-11-bitlocker-recovery-screen-2026',
+    title: 'Windows 11 Update Showed a BitLocker Recovery Screen — Here Is the Free Fix',
+    excerpt: 'If Microsoft\'s April 2026 update locked your PC with a blue BitLocker screen asking for a 48-digit key, the key is stored free in your Microsoft account. Here\'s how.',
+    category: 'windows-guides',
+    tags: ['windows 11', 'bitlocker', 'recovery key', 'locked out', 'update', 'KB5083769'],
+    readTime: '6 min',
+    thumbnailEmoji: '',
     publishedAt: '2026-04-20',
-    lastVerifiedAt: '2026-04-20',
-    verifiedHelpful: true,
     difficulty: 'Beginner',
-    body: `If your doctor's office has ever told you to "check MyChart," you are not alone in wondering what that means. MyChart is a free website and app that lets you do many of the things you used to have to call the doctor's office for — like seeing your test results, sending a message to your doctor, scheduling appointments, and refilling prescriptions.\n\nThink of it like online banking, but for your health. Just like you can check your bank balance online instead of driving to the bank, MyChart lets you check on your health information from your computer, phone, or tablet.\n\nMore than 200 million people in the United States have a MyChart account. It is used by thousands of hospitals and clinics across the country. If your doctor uses the Epic system (most large hospitals do), then your patient portal is MyChart.\n\nThe problem is that nobody really explains how to use it in plain language. The instructions you get from the doctor's office are often confusing and full of medical jargon. This guide fixes that. We will walk you through every step, from signing up to viewing your test results, in language anyone can follow.\n\nYou do not need to be good with computers to use MyChart. If you can send an email or look something up on the internet, you can use MyChart.`,
+    body: `After Microsoft's April 2026 Patch Tuesday update (KB5083769), some Windows 11 computers started showing a blue "BitLocker Recovery" screen before Windows loads. The screen asks you to type a 48-digit recovery key. If this happened to you, do not panic — your computer is not broken and all your files are safe. The fix is free and takes about 5 minutes.
+
+Here is what happened: Windows has a security feature called BitLocker that encrypts your data to protect it if your laptop is ever lost or stolen. Normally BitLocker runs silently in the background. The April 2026 update accidentally triggered a security check that BitLocker treats as a sign of unauthorized hardware changes — so it locked the drive as a precaution.
+
+The recovery key is the only way past this screen. Microsoft stores a copy of your recovery key in your Microsoft account automatically when BitLocker is first set up on most computers sold with Windows 11. You access it from any other device — your phone, a tablet, or another computer.
+
+One important warning: if anyone calls you offering to help fix this problem for a fee, hang up immediately. The real fix is completely free and takes two minutes. Scammers are actively targeting people who have been locked out by this update.
+
+After you are back in, Microsoft has released a follow-up update that prevents this from happening again. Install it as soon as you are logged in.`,
     steps: [
       {
-        title: 'What MyChart is and why it matters',
-        content: 'MyChart is a free online tool that connects you to your doctor\'s office. It is made by a company called Epic, which is the system most large hospitals and clinics use to keep track of patient records.\n\nWith MyChart, you can do the following from your home — no phone calls, no waiting on hold, no driving to the office:\n\nSee your test results as soon as they are ready, often before the doctor\'s office even calls you.\n\nSend a message to your doctor or nurse and get a written reply, usually within one to two business days.\n\nSchedule, reschedule, or cancel appointments.\n\nRequest prescription refills so your medication is ready when you need it.\n\nView your medical records, including past visit notes, medications, allergies, and immunization history.\n\nPay medical bills online.\n\nHave video visits with your doctor from home (telehealth).\n\nMyChart works on any computer with internet access. It also has a free app for iPhones and Android phones. You can use whichever is most comfortable for you.',
-        tip: 'MyChart is free. You will never be charged for using it. If you see a bill inside MyChart, that is a medical bill from your doctor — not a charge for using the app itself.',
+        title: 'Write down what you see on the blue screen',
+        content: 'Before you reach for your phone, note the Recovery Key ID shown on the blue BitLocker screen — it is a short code that looks like "A1B2-C3D4." You will need this to match the correct key in your Microsoft account if you have multiple devices.',
+        tip: 'Quick Tip: Take a photo of the blue screen with your phone so you have the Recovery Key ID handy.',
       },
       {
-        title: 'How to sign up for MyChart',
-        content: 'To create your MyChart account, you need an activation code from your doctor\'s office. Here is how to get one and use it:\n\n1. Ask at your next appointment. Tell the receptionist or nurse: "I would like to sign up for MyChart. Can I get an activation code?" They will print one out or hand you a sheet with instructions.\n\n2. Check your email. Some offices send the activation code by email after your visit. Look for an email from your hospital or clinic with "MyChart" in the subject line. Check your spam folder if you do not see it.\n\n3. Call the office. If you do not have an appointment soon, call your doctor\'s office and ask them to send you a MyChart activation code. They can usually email it to you.\n\nOnce you have your activation code:\n\n4. Go to your hospital\'s MyChart website. Your activation letter will have the web address. You can also search Google for the name of your hospital plus "MyChart" — for example, "Cleveland Clinic MyChart" or "Kaiser MyChart."\n\n5. Click "Sign Up Now" or "Activate Your Account."\n\n6. Enter the activation code exactly as it appears on your paper.\n\n7. Create a username. Pick something you will remember, like your first name and a number — for example, "MaryJohnson42." Write it down.\n\n8. Create a password. It usually needs to be at least 8 characters with a mix of letters, numbers, and a symbol. Example: "Sunshine2024!" Write this down too and keep it in a safe place.\n\n9. Set up a security question in case you ever forget your password. Pick a question with an answer only you would know.\n\n10. Enter your email address so the system can send you notifications when new results or messages arrive.',
-        tip: 'Write your username and password on a piece of paper and keep it somewhere safe — like taped inside your address book or in a drawer you check often. Do not keep it next to your computer where visitors could see it.',
-        warning: 'Your activation code expires after a certain number of days (usually 30 to 60 days). If your code has expired, just call your doctor\'s office and ask for a new one. It only takes a minute.',
+        title: 'Find your BitLocker recovery key using another device',
+        content: 'On your phone, tablet, or another computer, open a web browser and go to account.microsoft.com. Sign in with the same Microsoft account you use on the locked computer (the email address and password you use to sign into Windows). Once signed in, tap or click "Devices" in the left menu, then look for "BitLocker data recovery" or "View recovery key." Your 48-digit recovery key will appear — it looks like groups of numbers separated by dashes.',
+        tip: 'Quick Tip: Microsoft\'s official BitLocker recovery page is at support.microsoft.com/en-us/windows/bitlocker — bookmark it so you can find it quickly.',
       },
       {
-        title: 'Logging in for the first time',
-        content: 'Now that you have created your account, here is how to log in:\n\nOn a computer:\n1. Open your internet browser (Chrome, Edge, Safari, or Firefox).\n2. Go to your hospital\'s MyChart website. You can type the web address from your activation letter into the bar at the very top of the screen, or search Google for your hospital name plus "MyChart."\n3. Click "Log In" or "Sign In."\n4. Type your username and password exactly as you wrote them down. Passwords are case-sensitive, which means capital letters and lowercase letters matter. If your password is "Sunshine2024!" then typing "sunshine2024!" will not work.\n5. Click the "Sign In" button.\n\nOn a phone or tablet:\n1. Open the App Store (iPhone) or Google Play Store (Android).\n2. Search for "MyChart."\n3. Download the free app — it has a blue and white logo.\n4. Open the app and search for your hospital or clinic name.\n5. Log in with the same username and password you created.\n\nAfter logging in, you will see your MyChart home screen. This is like your health dashboard. It shows upcoming appointments, recent messages, and any new test results.',
-        tip: 'If your phone or tablet supports Face ID or fingerprint login, MyChart will ask if you want to turn that on. This means you can log in with your face or fingerprint instead of typing your password every time. It is safe to turn this on — it is actually more secure than typing a password.',
+        title: 'Enter the 48-digit recovery key on the locked computer',
+        content: 'Go back to the locked computer. Use your keyboard to type the 48-digit recovery key exactly as shown in your Microsoft account. The key entry field is separated into groups of six digits — type them in order. When you finish entering all 48 digits, press Enter or click the Continue button. Windows will unlock and boot normally.',
+        warning: 'Type slowly and carefully. The recovery screen does not show you what you are typing, so it helps to read the digits in groups of six.',
       },
       {
-        title: 'Viewing your test results and what they mean',
-        content: 'One of the most useful features of MyChart is seeing your test results. Here is how:\n\n1. Log into MyChart.\n2. Look for "Test Results" or "Results" in the menu. On the website, this is usually on the left side of the screen or across the top. In the app, it may be on the home screen or in the menu (tap the three lines in the corner).\n3. Click or tap "Test Results."\n4. You will see a list of your tests with the most recent ones at the top. Click on any test to see the details.\n\nUnderstanding your results:\n\nNext to each result, you may see words like "Normal," "High," "Low," or "Abnormal."\n\n"Normal" means your result is in the healthy range. This is good news.\n\n"High" or "Low" means your result is outside the typical range. This does not always mean something is wrong — your doctor will explain what it means for you specifically.\n\n"Abnormal" does not necessarily mean something is seriously wrong. Many "abnormal" results are only slightly outside the normal range and are nothing to worry about.\n\nEach test result usually shows a "reference range" — this is the range of numbers that is considered normal. Your number will be shown next to this range so you can see where you fall.\n\nIf you do not understand a result, do not panic. You can send your doctor a message right from MyChart asking them to explain it (we will cover how to do that in the next step).',
-        tip: 'Test results often appear in MyChart before your doctor has reviewed them. If you see something that concerns you, wait a day or two — your doctor may send you a message or call to discuss it. You can also message them through MyChart.',
-        warning: 'Do not use MyChart for emergencies. If you have a result that seriously worries you or you are experiencing symptoms, call your doctor\'s office or go to the emergency room. MyChart messages are not monitored around the clock.',
+        title: 'Install the follow-up fix from Windows Update',
+        content: 'Once you are logged in to Windows, install the latest update to prevent this happening again. Click the Start button → Settings → Windows Update → Check for updates. Download and install any updates that appear, then restart your computer. Microsoft released a follow-up patch that addresses the April 2026 BitLocker trigger.',
       },
       {
-        title: 'Sending a message to your doctor',
-        content: 'Instead of calling the office and waiting on hold, you can send a message through MyChart. Your doctor or nurse will reply in writing, usually within one to two business days.\n\nHere is how:\n\n1. Log into MyChart.\n2. Click or tap "Messages" (sometimes called "Messaging" or shown as an envelope icon).\n3. Click "New Message" or "Send a Message."\n4. Choose the type of message. Common options include:\n   "Medical Question" — for health questions or concerns.\n   "Prescription Question" — for medication questions.\n   "Appointment Question" — for scheduling issues.\n5. Select your doctor from the list. If you have multiple doctors, make sure you pick the right one.\n6. Type your message in the text box. Be specific about what you need. For example: "I have been having headaches for the past week and want to know if I should come in" is better than just "I don\'t feel well."\n7. Click "Send."\n\nYou will get a notification by email when your doctor or nurse replies. You can read their reply by logging back into MyChart and going to Messages.\n\nThis is great for non-urgent questions like:\nAsking about a test result you do not understand.\nReporting a mild symptom.\nAsking if you need a follow-up appointment.\nGetting a referral to a specialist.',
-        tip: 'Keep your messages short and clear. Write the most important thing first. Doctors appreciate when you get to the point — it helps them give you a faster, better answer.',
-        warning: 'Do not use MyChart messages for urgent problems. If you are having chest pain, difficulty breathing, sudden weakness, or any emergency, call 911 or go to the nearest emergency room. MyChart messages may not be read until the next business day.',
+        title: 'Save your recovery key in a safe place for the future',
+        content: 'Now that you know where your BitLocker recovery key lives, it is worth writing it down and keeping a printed copy somewhere safe — a home safe, a locked drawer, or with your other important documents. You can view it any time at account.microsoft.com → Devices. Knowing where it is means you will not be locked out for long if this ever happens again.',
+      },
+    ],
+  },
+  {
+    slug: 'fix-iphone-battery-drain-after-update',
+    title: 'iPhone Battery Draining Fast After an Update? Here Is How to Fix It',
+    excerpt: 'It\'s normal for an iPhone to use extra battery for 24–48 hours after a big iOS update while it catches up on background tasks. Here\'s what to do if it doesn\'t improve.',
+    category: 'phone-guides',
+    tags: ['iphone', 'battery', 'ios update', 'battery drain', 'fix', 'slow phone'],
+    readTime: '6 min',
+    thumbnailEmoji: '',
+    publishedAt: '2026-04-20',
+    difficulty: 'Beginner',
+    body: `After any major iPhone update, it is completely normal for your battery to drain faster than usual for the first day or two. Your iPhone has a lot of work to do after an update — it rebuilds its search index, re-downloads cached content, checks for compatibility with your apps, and reoptimizes your photos. All of this happens in the background, and it uses extra battery while it runs.
+
+If your battery is still draining unusually fast after 48 hours, something else is likely going on. The most common causes are an app that started misbehaving after the update, a background process that got stuck, or a setting that the update changed without you noticing.
+
+The good news is that most iPhone battery problems after an update are fixed by one of a handful of free steps — no trips to the Apple Store needed in most cases.
+
+If you check your Battery settings and notice one specific app is using a surprisingly large percentage of your battery, that app is the most likely culprit. Try deleting and reinstalling it. Many apps have their own updates released alongside iOS updates to stay compatible, and installing those app updates often fixes the battery drain.`,
+    steps: [
+      {
+        title: 'Wait 24–48 hours after the update before troubleshooting',
+        content: 'Give your iPhone time to finish its background work after a big update. Plug it in to charge at night as usual. If battery life is still noticeably worse after a full 48 hours, move on to the steps below.',
       },
       {
-        title: 'Scheduling and managing appointments',
-        content: 'You can schedule, reschedule, or cancel appointments without calling the office. Here is how:\n\nTo schedule a new appointment:\n1. Log into MyChart.\n2. Click or tap "Appointments" or "Schedule an Appointment."\n3. Choose the type of visit you need — such as a regular checkup, a follow-up, or a specific concern.\n4. Select your doctor.\n5. Pick a date and time that works for you from the available options.\n6. Confirm the appointment. You will see a summary with the date, time, and location.\n\nTo reschedule or cancel:\n1. Go to "Appointments" and find your upcoming appointment.\n2. Click or tap on it.\n3. Look for a "Reschedule" or "Cancel" button.\n4. Follow the prompts to pick a new time or confirm the cancellation.\n\nBefore your appointment, MyChart may ask you to:\nFill out pre-visit forms (like updating your address or listing current medications). You can do this from home instead of filling out clipboards in the waiting room.\nConfirm your insurance information.\nComplete a health questionnaire about why you are coming in.\n\nAfter your appointment, you can see the visit summary in MyChart, including any notes your doctor wrote and next steps they recommended.',
-        tip: 'Not all appointment types can be scheduled online. If you do not see the type of visit you need, call the office directly. Some specialists and procedures still require a phone call to book.',
+        title: 'Check which apps are using the most battery',
+        content: 'Go to Settings → Battery. Scroll down to see a list of apps with their battery usage percentage for the last 24 hours and the last 10 days. If one app is using a disproportionate amount — for example, 50% or more — that app is the main problem. Tap the app name to see whether the usage is from time on screen or time in the background. High background time means the app is active even when you are not using it.',
+        tip: 'Quick Tip: If you see an app called "Background App Refresh" using a lot of battery, see Step 3.',
       },
       {
-        title: 'Requesting prescription refills',
-        content: 'Running low on medication? You can request a refill through MyChart instead of calling the doctor or pharmacy. Here is how:\n\n1. Log into MyChart.\n2. Click or tap "Medications" or "Prescriptions." You will see a list of all medications your doctor has on file for you.\n3. Find the medication you need refilled.\n4. Click or tap "Request Refill" next to that medication.\n5. Choose your pharmacy from the list. If your pharmacy is already saved, it will appear automatically. If not, you can search by name or address.\n6. Add a note if needed — for example, "I will run out in 3 days" or "Please send to my new pharmacy at Walgreens on Main Street."\n7. Click "Submit" or "Send Request."\n\nYour doctor\'s office will review the request. If approved, they will send the prescription to your pharmacy electronically. You will get a notification in MyChart when it has been sent.\n\nIf the doctor needs to see you before approving the refill (this sometimes happens with certain medications), they will send you a message in MyChart letting you know.',
-        tip: 'Request your refill at least 5 to 7 days before you run out. This gives the doctor time to approve it and the pharmacy time to fill it. Do not wait until you are completely out.',
+        title: 'Turn off Background App Refresh for apps that don\'t need it',
+        content: 'Go to Settings → General → Background App Refresh. You will see a list of every app on your phone with a toggle. Turn off Background App Refresh for apps that do not need to update in the background — games, shopping apps, and entertainment apps generally do not need this. Leave it on for apps you actually need real-time updates from, like Messages or your email.',
       },
       {
-        title: 'Accessing your medical records',
-        content: 'MyChart keeps a record of your health history in one place. This is especially useful if you see multiple doctors or need to share your information with a new provider.\n\nHere is what you can find:\n\nVisit summaries — notes from each appointment, including what the doctor found and recommended.\n\nMedications — a complete list of everything you are currently taking, with dosages.\n\nAllergies — a list of any allergies on file, so every doctor you see knows what to avoid.\n\nImmunizations — your vaccination history, including flu shots and COVID vaccines.\n\nProcedures and surgeries — records of any operations or procedures you have had.\n\nTo access your records:\n1. Log into MyChart.\n2. Look for "Health Summary," "Medical Records," or "My Record" in the menu.\n3. Click on the section you want to view.\n\nIf you need to share your records with a new doctor, a specialist, or a family member helping with your care, MyChart lets you do that too:\n\nLook for "Share My Record" or "Grant Access." You can invite another person by entering their email address. They will get limited access to view your information — they cannot change anything.',
-        tip: 'Before any appointment with a new doctor, print or screenshot your medication list and allergy list from MyChart. This saves time and makes sure the new doctor has accurate information.',
+        title: 'Update all your apps',
+        content: 'Open the App Store and tap your profile picture in the top right corner. Scroll down to see apps with available updates. Tap "Update All" to install them all at once. App developers release compatibility updates alongside new iOS versions — installing these often resolves battery issues caused by apps that had not been updated for the new iOS version.',
+        tip: 'Quick Tip: You can turn on automatic app updates so this happens without you thinking about it: Settings → App Store → App Updates → toggle on.',
       },
       {
-        title: 'Tips for keeping your account secure',
-        content: 'Your MyChart account contains very personal information — your medical history, medications, and contact details. Here is how to keep it safe:\n\n1. Use a strong password. Your password should be at least 8 characters and include a mix of uppercase letters, lowercase letters, numbers, and a symbol. Example: "Garden$pring47!" Avoid using your name, birthday, or "password123."\n\n2. Do not share your login. Your MyChart account is for you only. If a family member helps you with appointments, ask your doctor about "proxy access" — this gives them their own separate login to see your information.\n\n3. Log out when you are done. This is especially important if you use a shared computer at a library or community center. Look for "Log Out" or "Sign Out" in the top right corner of the screen.\n\n4. Watch out for fake emails. Scammers sometimes send emails pretending to be from MyChart. Real MyChart emails will never ask you to reply with your password or Social Security number. If an email looks suspicious, do not click any links in it — instead, go directly to the MyChart website by typing the address into your browser yourself.\n\n5. Keep your email address up to date. MyChart sends notifications to your email, including password reset links. If you change your email, update it in MyChart right away under "My Account" or "Settings."\n\n6. Turn on two-step verification if available. Some MyChart systems offer this. It means that after entering your password, you also enter a code sent to your phone. This makes it much harder for anyone else to break into your account.',
-        warning: 'MyChart will never call you and ask for your password. If someone calls claiming to be from MyChart or your hospital and asks for your password, hang up. It is a scam.',
+        title: 'Check your battery health',
+        content: 'Go to Settings → Battery → Battery Health & Charging. Look at the Maximum Capacity percentage. A brand-new battery starts at 100%. Below 80% means your battery has aged significantly and may no longer hold a full charge — this is when genuine battery life problems begin. Apple will replace the battery at the Apple Store or an authorized repair shop. The service takes about an hour and costs $89 for most iPhone models.',
+        tip: 'Quick Tip: Apple\'s official battery service info is at support.apple.com/iphone/repair. You can also schedule an appointment at any Apple Store via the Apple Support app.',
       },
       {
-        title: 'What to do if you get locked out',
-        content: 'If you forget your password or get locked out of your account, do not worry — it happens to everyone and it is easy to fix.\n\nIf you forgot your password:\n1. Go to the MyChart login page.\n2. Click "Forgot Password?" (this is usually right below the password box).\n3. Enter your username or the email address on your account.\n4. Check your email for a password reset link. Click the link and follow the steps to create a new password.\n5. If you do not see the email within a few minutes, check your spam or junk folder.\n\nIf you forgot your username:\n1. On the login page, click "Forgot Username?"\n2. Enter your email address and date of birth.\n3. Your username will be sent to your email.\n\nIf your account is locked (this can happen after too many wrong password attempts):\n1. Wait 15 to 30 minutes and try again. Many systems unlock automatically after a short wait.\n2. If it is still locked, use the "Forgot Password?" option to reset your password. This usually unlocks the account at the same time.\n\nIf none of that works:\nCall your doctor\'s office and ask to speak with someone who handles MyChart accounts. They can reset your account, send you a new activation code, or walk you through the process over the phone. This is a common request — they help people with this every day.\n\nTo avoid getting locked out in the future, write your username and password on a piece of paper and keep it in a safe, private spot in your home — like a drawer in your desk or inside your address book.',
-        tip: 'If you have a trusted family member who helps you with technology, ask them to help you set up your MyChart and write down the login information together. That way, someone you trust can help if you ever have trouble getting in.',
+        title: 'Try a soft reset if the problem persists',
+        content: 'A soft reset clears the phone\'s memory without deleting any of your data. On iPhone 8 and newer: press and quickly release Volume Up, press and quickly release Volume Down, then press and hold the Side button until you see the Apple logo. Your phone restarts fresh. On iPhone 7: hold the Volume Down button and the Sleep/Wake button together for 10 seconds until you see the Apple logo.',
+      },
+    ],
+  },
+  {
+    slug: 'fix-iphone-not-enough-storage-to-update',
+    title: 'iPhone Says "Not Enough Storage" to Update? Here Is How to Free Up Space',
+    excerpt: 'Your iPhone needs free space to download and install iOS updates. These steps will clear enough room in minutes without permanently deleting your photos.',
+    category: 'phone-guides',
+    tags: ['iphone', 'storage full', 'ios update', 'not enough space', 'free up storage', 'icloud'],
+    readTime: '7 min',
+    thumbnailEmoji: '',
+    publishedAt: '2026-04-20',
+    difficulty: 'Beginner',
+    body: `When your iPhone tells you there is not enough storage to install an update, it can feel like a catch-22 — you need space to update, but you need to update to stay safe. The good news is you almost always have more space than you think, and there are several ways to free up enough room for any iOS update without permanently losing your photos or contacts.
+
+iOS updates typically need between 500MB and 2.5GB of free space to download and install. If your phone is nearly full, you may need to temporarily free up some room even though the update itself will not permanently increase your phone's storage use.
+
+The single biggest space-saver for most people is photos and videos. If your photos are backed up to iCloud, Google Photos, or another cloud service, you can remove them from your phone without losing them — they will still be accessible through the Photos app (they will just download from the cloud when you open them instead of being stored on your phone).
+
+If clearing space on your phone does not work, there is an alternative method: update your iPhone through a computer using iTunes (Windows) or Finder (Mac). This method does not require the phone to have free space for the update because the computer handles the download.`,
+    steps: [
+      {
+        title: 'Check how much space you need and how much you have',
+        content: 'Go to Settings → General → iPhone Storage. At the top you will see a colored bar showing how your storage is used: System, Apps, Photos, Messages, and Other. The number in gray at the right of the bar shows how much free space remains. When an update fails, note what size the update is — you can see this in Settings → General → Software Update next to the update name.',
+      },
+      {
+        title: 'Turn on iCloud Photos to offload photos to the cloud',
+        content: 'If you do not already use iCloud Photos, go to Settings → Photos → iCloud Photos and turn it on. Your photos will upload to iCloud and the high-resolution originals will be replaced with smaller previews on your phone, freeing up significant storage. The photos are not deleted — they are fully accessible in your Photos app whenever you have Wi-Fi.',
+        tip: 'Quick Tip: iCloud storage starts free at 5GB, which fills quickly. 50GB of storage costs 99 cents per month and is enough for most people\'s photo libraries.',
+      },
+      {
+        title: 'Review and delete the largest items on your phone',
+        content: 'Go to Settings → General → iPhone Storage. Your apps are listed from largest to smallest. Tap any app to see options — for apps you have not used in months, tap "Delete App." Your iPhone also shows "Recommendations" near the top of this screen — suggestions like "Review Large Attachments," "Offload Unused Apps," and "Review Personal Videos" that can quickly free up significant space. Tap each recommendation to review what it will remove.',
+      },
+      {
+        title: 'Delete message attachments from large group chats',
+        content: 'Open your Messages app and look for large group chats or conversations with lots of photos and videos. Tap and hold a conversation, then tap "Delete" to remove the whole conversation, including all attachments. Alternatively, open a conversation, tap the person\'s name or icon at the top, scroll down, and tap "See All Photos" — you can select and delete old photos without deleting the conversation.',
+      },
+      {
+        title: 'Clear your browser cache',
+        content: 'Safari stores website data that takes up space over time. Go to Settings → Safari → Clear History and Website Data, then tap "Clear History and Data." This removes cached websites and browsing history. If you use Chrome instead, open Chrome → tap the three dots in the bottom right → Settings → Privacy → Clear Browsing Data.',
+      },
+      {
+        title: 'Update your iPhone through a computer if storage is still low',
+        content: 'This method bypasses the on-device storage requirement entirely. On a Mac running macOS Catalina or later: connect your iPhone with a USB cable, open Finder, click your iPhone in the left sidebar, and click "Check for Update." On a Windows PC: connect your iPhone, open iTunes, click the phone icon at the top, and click "Check for Update." The computer downloads the update itself and installs it directly to your iPhone.',
+        tip: 'Quick Tip: Apple\'s official guide to updating via computer is at support.apple.com — search "update iPhone using Finder" for Mac or "update iPhone using iTunes" for Windows.',
+      },
+    ],
+  },
+  {
+    slug: 'fix-gmail-not-working-in-outlook-apple-mail',
+    title: 'Gmail Stopped Working in Outlook or Apple Mail? Here Is How to Fix It',
+    excerpt: 'If Gmail suddenly stopped syncing in Outlook or Apple Mail, Google\'s updated sign-in requirement is likely why. Re-adding your account takes about 3 minutes.',
+    category: 'app-guides',
+    tags: ['gmail', 'outlook', 'apple mail', 'email', 'not working', 'fix', 'google account'],
+    readTime: '7 min',
+    thumbnailEmoji: '',
+    publishedAt: '2026-04-20',
+    difficulty: 'Beginner',
+    body: `If Gmail suddenly stopped loading, sending, or syncing in Outlook, Apple Mail, or another email program on your phone or computer, the most likely reason is a change Google made to how Gmail accounts log in to third-party apps.
+
+Google used to allow email apps to sign in to Gmail using a username and password the same way a person would. Starting in 2024, Google ended this older method — called Basic Authentication — and now requires all apps to use a newer, more secure sign-in system called OAuth 2.0. Apps that have not been updated to use this system will simply stop connecting to Gmail.
+
+The fix is not complicated. You remove your Gmail account from the email app and add it back again. When you add it back, the app will use the correct, updated sign-in method and connect to Gmail successfully.
+
+This is not a problem with your Google account, and nothing is wrong with your Gmail itself. You can still access all your email normally at gmail.com or through the Gmail app on your phone. The issue is only with third-party email programs.`,
+    steps: [
+      {
+        title: 'Check that your Gmail is working normally first',
+        content: 'Open your web browser and go to gmail.com. Sign in if needed. If your email loads normally here, your Gmail account is fine — the problem is with the connection between Gmail and your email app. If you cannot sign in to gmail.com either, go to accounts.google.com and follow the prompts to recover your account.',
+      },
+      {
+        title: 'Re-add Gmail in Microsoft Outlook on your phone',
+        content: 'Open the Outlook app. Tap the three horizontal lines (≡) in the top left → Settings (gear icon) → tap your Gmail account → Remove Account. Then tap the plus (+) icon to add an account → select Google → sign in with your Google account credentials. Outlook will open a Google sign-in page where you approve the connection. This uses the new sign-in method and should restore full Gmail access.',
+        tip: 'Quick Tip: Make sure you have the latest version of Outlook installed — old versions of Outlook do not support Google\'s updated sign-in. Update Outlook through the App Store (iPhone) or Google Play Store (Android) first.',
+      },
+      {
+        title: 'Re-add Gmail in Apple Mail on iPhone or iPad',
+        content: 'Go to Settings → Mail → Accounts → tap your Gmail account → Delete Account. Then go back to Settings → Mail → Accounts → Add Account → Google. Sign in with your Google email and password — Apple Mail will open a Google sign-in page where you authorize access. Your email will start syncing within a few minutes.',
+      },
+      {
+        title: 'Re-add Gmail in Apple Mail on a Mac',
+        content: 'Open the Mail app. Click Mail in the menu bar → Settings → Accounts → select your Gmail account → click the minus (−) button to remove it. Then click the plus (+) button → Google → sign in with your Google account. Follow the prompts to authorize Apple Mail. Your inbox will begin re-downloading shortly.',
+        tip: 'Quick Tip: If you use Gmail on a Mac and want fewer sync problems in the future, the Gmail app at mail.google.com in your browser is the most reliable option for Gmail — it is always fully compatible with Google\'s latest sign-in requirements.',
+      },
+      {
+        title: 'Re-add Gmail in Microsoft Outlook on a PC',
+        content: 'Open the Outlook desktop app. Click File → Account Settings → Account Settings → select your Gmail account → Remove. Then click New → Email Account → enter your name and Gmail address → click Connect. Outlook will open a browser window for Google sign-in — complete the sign-in and grant Outlook permission. Outlook will connect and begin syncing your inbox.',
+      },
+      {
+        title: 'Turn on two-step verification if you haven\'t already',
+        content: 'While you are managing your Google account settings, this is a good time to turn on two-step verification if you have not done so. Go to myaccount.google.com → Security → 2-Step Verification → Get started. This adds a second check when signing in from a new device, which helps protect your Gmail from unauthorized access.',
+        tip: 'Quick Tip: Google\'s official help page for connecting Gmail to other email apps is at support.google.com/mail/answer/7126229.',
+      },
+    ],
+  },
+  {
+    slug: 'locked-out-google-microsoft-account-recovery',
+    title: 'Locked Out of Your Google or Microsoft Account? Here Is How to Get Back In',
+    excerpt: 'A forgotten password or failed two-factor sign-in can lock you out of your email and apps. These steps walk you through account recovery for Google, Microsoft, and Apple.',
+    category: 'troubleshooting',
+    tags: ['account recovery', 'forgot password', 'locked out', 'google account', 'microsoft account', 'apple id', 'two-factor'],
+    readTime: '8 min',
+    thumbnailEmoji: '',
+    publishedAt: '2026-04-20',
+    difficulty: 'Beginner',
+    body: `Getting locked out of an email account — especially after a phone upgrade or a forgotten password — is one of the most common tech problems people face. The lock is frightening because so many other services depend on your email: bank notifications, medical apps, shopping accounts, and social media all use your email address to verify who you are.
+
+The good news is that Google, Microsoft, and Apple all have account recovery processes specifically designed to get you back in even if you have forgotten your password and cannot access the two-factor verification method they normally send a code to.
+
+The process works by verifying your identity through other means — backup email addresses, phone numbers, trusted devices, or security questions you set up when you first created the account. The more of these backup verification methods you have, the easier recovery will be.
+
+If you cannot get back in through the standard recovery process, all three companies offer a manual identity verification option — often called an account recovery form — where a support team reviews your case and may restore access after verifying your identity in other ways. This process can take a few days.
+
+After you recover your account, the single most important thing you can do is add backup recovery methods so you are not in this situation again: a backup email address, a verified phone number, and saved recovery codes.`,
+    steps: [
+      {
+        title: 'Recover a Google (Gmail) account',
+        content: 'On any device, go to accounts.google.com/signin/recovery. Enter the email address you are trying to recover. Google will ask you to verify your identity using methods you set up when you created your account — a backup email address, a phone number that can receive a text message, or a phone that is already signed in to your Google account. Follow the prompts for whichever method is available to you.',
+        tip: 'Quick Tip: If none of the standard options work, Google offers an account recovery form at accounts.google.com/signin/v2/recoveryidentifier. You will be asked to confirm details about your account — the more accurately you can answer, the better your chances. Google\'s help page for account recovery is at support.google.com/accounts/answer/7682439.',
+      },
+      {
+        title: 'Recover a Microsoft (Outlook, Hotmail, Live) account',
+        content: 'Go to account.live.com/acsr — this is Microsoft\'s Account Recovery page. Enter your email address and the CAPTCHA, then click Next. Microsoft will offer options to verify your identity including a code sent to a backup email, a code sent to a phone number, or a trusted device that is already signed in. Complete whichever method is available.',
+        tip: 'Quick Tip: Microsoft\'s recovery page is at support.microsoft.com/account-recovery. If automated options fail, look for "I don\'t have any of these" to start a manual review.',
+      },
+      {
+        title: 'Recover an Apple ID account',
+        content: 'Go to iforgot.apple.com. Enter your Apple ID (your email address) and click Continue. Apple will try to verify you using a trusted phone number or a trusted device that is already signed in to your Apple ID. If you have a trusted iPhone or iPad nearby, Apple can send a reset notification directly to that device. If you have none of these, Apple offers an account recovery process that may take several days and requires you to confirm personal information.',
+      },
+      {
+        title: 'Use a trusted device you are already signed in to',
+        content: 'This is often the fastest recovery method. If you have another phone, tablet, or computer where you are already signed into the account, use it to change your password from within the account settings. For Google: go to myaccount.google.com → Security → Password. For Microsoft: go to account.microsoft.com → Security → Change password. For Apple: go to Settings → tap your name → Password & Security → Change Password.',
+      },
+      {
+        title: 'Contact support as a last resort',
+        content: 'If automated recovery fails: Google support is at support.google.com/accounts/gethelp. Microsoft phone support is 1-800-642-7676 (Monday–Friday, 6 AM–10 PM Pacific). Apple phone support is 1-800-275-2273 (available 24 hours). Be prepared to verify your identity — they may ask for purchase history, account creation details, or other information tied to the account.',
+        warning: 'Only contact support through official phone numbers or websites you find yourself. Do not call any phone number given to you in an email, a pop-up, or a search ad — those are often scam numbers targeting people who are locked out of accounts.',
+      },
+      {
+        title: 'Secure your account after getting back in',
+        content: 'Once you have access again, take 10 minutes to add backup methods so recovery is faster next time. Add a backup email address, verify a phone number, and for Google and Apple, save a set of one-time recovery codes and store them somewhere safe. Turn on two-factor verification if it was not already on. Check "Recent activity" or "Security events" in your account settings to confirm no unauthorized sign-ins occurred while you were locked out.',
+        tip: 'Quick Tip: Google\'s account security checkup is at myaccount.google.com/security-checkup. Microsoft\'s is at account.microsoft.com/security. Running these takes about 3 minutes and flags any issues.',
       },
     ],
   },

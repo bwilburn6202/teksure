@@ -8,7 +8,7 @@ export const guidesBatch60: Guide[] = [
     category: `ai-guides`,
     tags: [`google`, `gemini`, `ai`, `beginners`, `chatbot`, `free`],
     readTime: `6 min`,
-    thumbnailEmoji: `✨`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-20`,
     difficulty: `Beginner`,
     body: `Google Gemini is a free AI assistant made by Google. Think of it like a very knowledgeable helper that you can have a conversation with by typing or speaking. You can ask it questions, ask it to help you write something, explain a topic, or even help you plan your day — and it responds in plain, conversational language.
@@ -53,7 +53,7 @@ Gemini sometimes gets things wrong, so always double-check important information
     category: `ai-guides`,
     tags: [`chatgpt`, `ai`, `writing`, `email`, `beginners`, `openai`],
     readTime: `7 min`,
-    thumbnailEmoji: `🤖`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-20`,
     difficulty: `Beginner`,
     body: `ChatGPT is a free AI assistant made by a company called OpenAI. It is one of the most widely used AI tools in the world. You talk to it by typing messages, and it responds with helpful text — almost like texting back and forth with a knowledgeable friend who never gets tired of your questions.
@@ -98,7 +98,7 @@ The more specific your request, the better the response. Instead of asking "Help
     category: `ai-guides`,
     tags: [`siri`, `iphone`, `apple`, `voice-assistant`, `hands-free`, `tips`],
     readTime: `5 min`,
-    thumbnailEmoji: `🎙️`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-20`,
     difficulty: `Beginner`,
     body: `Siri is Apple's built-in voice assistant on every iPhone, iPad, and Mac. It has been around for years, but most people only use a small fraction of what it can do. If you have an iPhone, Siri is already there — you do not need to download or pay for anything.
@@ -143,7 +143,7 @@ Siri works best when you speak naturally in full sentences. You do not need to u
     category: `ai-guides`,
     tags: [`google-assistant`, `android`, `voice-commands`, `smart-home`, `tips`],
     readTime: `5 min`,
-    thumbnailEmoji: `🔵`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-20`,
     difficulty: `Beginner`,
     body: `Google Assistant is a voice-activated helper built into Android phones and many other Google devices. If you have an Android phone, it is already on your device and free to use. You can speak to it naturally, and it responds to your voice with answers, actions, and reminders.
@@ -188,7 +188,7 @@ Google Assistant is especially valuable for managing small tasks while your hand
     category: `ai-guides`,
     tags: [`ai`, `writing`, `email`, `letters`, `drafting`, `beginners`],
     readTime: `6 min`,
-    thumbnailEmoji: `✍️`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-20`,
     difficulty: `Beginner`,
     body: `Writing can feel hard — especially when you need to write something formal, like a letter to a doctor's office, a complaint to a company, or a heartfelt message to a family member. Many people feel stuck not knowing how to start or worry about getting the wording just right. AI writing tools can help with all of this.
@@ -233,7 +233,7 @@ These tools are useful for writing thank-you notes, formal complaint letters, em
     category: `ai-guides`,
     tags: [`ai`, `seniors`, `older-adults`, `practical`, `beginners`, `tips`],
     readTime: `6 min`,
-    thumbnailEmoji: `👴`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-20`,
     difficulty: `Beginner`,
     body: `Artificial intelligence — or AI — sounds complicated, but millions of everyday people are using it for very practical, down-to-earth tasks. Older adults in particular are finding that AI tools can help fill in for things that used to require a phone call, a trip to the library, or asking a family member.
@@ -278,7 +278,7 @@ The one important rule: do not share personal information like your Social Secur
     category: `ai-guides`,
     tags: [`ai`, `image-generation`, `creative`, `free`, `beginners`, `dall-e`],
     readTime: `6 min`,
-    thumbnailEmoji: `🎨`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-20`,
     difficulty: `Beginner`,
     body: `AI image generators are programs that can create pictures based on a written description you type. You describe an image in words — for example, "a golden retriever sitting in a field of sunflowers at sunset" — and the AI produces a brand new picture that matches your description. No photography, no art skills, and no software installation needed.
@@ -323,7 +323,7 @@ To get good results, be specific in your description. Instead of "a cat picture,
     category: `health-tech`,
     tags: [`health`, `ai`, `symptoms`, `doctor`, `ada`, `health-apps`],
     readTime: `6 min`,
-    thumbnailEmoji: `🩺`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-20`,
     difficulty: `Beginner`,
     body: `AI health apps are phone or web applications that ask you questions about symptoms you are experiencing and then give you information about what might be going on and whether you should seek medical care. They are not a replacement for seeing a real doctor — but they can help you feel more prepared and informed before, during, and after a medical appointment.
@@ -368,7 +368,7 @@ These apps are not appropriate for emergencies. If you are experiencing chest pa
     category: `smart-home`,
     tags: [`alexa`, `amazon`, `echo`, `skills`, `smart-home`, `voice`],
     readTime: `5 min`,
-    thumbnailEmoji: `🔊`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-20`,
     difficulty: `Beginner`,
     body: `If you have an Amazon Echo device — the small speaker you talk to using the name "Alexa" — you may know it can set timers, play music, and answer basic questions. But Alexa can do much more through something called Skills.
@@ -415,7 +415,7 @@ Once you add a Skill, you interact with it by speaking to Alexa. For example, af
     category: `ai-guides`,
     tags: [`ai`, `summarize`, `productivity`, `reading`, `email`, `beginners`],
     readTime: `5 min`,
-    thumbnailEmoji: `📄`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-20`,
     difficulty: `Beginner`,
     body: `Long articles, newsletter emails, government letters, and medical documents can feel overwhelming to read. Sometimes they are full of dense language, and you just want to know the main point: what does this say, and what do I need to do?
@@ -462,7 +462,7 @@ For articles and public documents with no personal information, AI summarization
     category: `entertainment`,
     tags: [`podcasts`, `audio`, `entertainment`, `beginners`, `free`, `phone`],
     readTime: `6 min`,
-    thumbnailEmoji: `🎧`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-20`,
     difficulty: `Beginner`,
     body: `A podcast is like a radio show you can listen to any time, on any topic you can imagine. There are podcasts about true crime, history, comedy, gardening, cooking, sports, health, personal finance, religion, current events — almost anything you are interested in. And unlike radio, you choose when and where to listen, and you can pause, rewind, or skip ahead any time you want.
@@ -507,7 +507,7 @@ People listen to podcasts while doing other things: walking, driving, cooking, d
     category: `essential-skills`,
     tags: [`audiobooks`, `free`, `library`, `librivox`, `reading`, `seniors`],
     readTime: `6 min`,
-    thumbnailEmoji: `📚`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-20`,
     difficulty: `Beginner`,
     body: `Audiobooks — books read aloud by a narrator — are a wonderful way to enjoy reading when sitting with a physical book is difficult, when your vision makes reading challenging, or when you want to "read" while doing something else like walking or driving. Many people assume audiobooks are expensive, but there are excellent free sources available to anyone.
@@ -552,7 +552,7 @@ If you have an Amazon Echo, Prime membership, or Amazon account, Audible's free 
     category: `entertainment`,
     tags: [`amazon`, `fire-tablet`, `kindle`, `tablet`, `setup`, `beginners`],
     readTime: `7 min`,
-    thumbnailEmoji: `📱`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-20`,
     difficulty: `Beginner`,
     body: `The Amazon Fire tablet is one of the most affordable tablets available — starting around $50 to $100 — and it is designed with simplicity in mind. It runs a version of Android customized by Amazon, with a home screen that shows your recently used content and a grid of apps. If you are already an Amazon customer, it connects smoothly with your Amazon account, Prime Video, Kindle books, Audible audiobooks, and Amazon Music.
@@ -598,7 +598,7 @@ The battery typically lasts 8 to 12 hours of regular use, so charging it once a 
     category: `ai-guides`,
     tags: [`ai`, `companion`, `chat`, `social`, `seniors`, `loneliness`],
     readTime: `6 min`,
-    thumbnailEmoji: `💬`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-20`,
     difficulty: `Beginner`,
     body: `AI companion apps are programs designed specifically for conversation and companionship. Unlike general AI tools like ChatGPT, which focus on tasks and information, companion apps are built to have warm, ongoing conversations — asking how your day is going, remembering what you shared last time, and engaging in friendly small talk.
@@ -643,7 +643,7 @@ It is worth being clear about what these apps are: they are software programs, n
     category: `ai-guides`,
     tags: [`ai`, `learning`, `education`, `self-paced`, `beginners`, `curiosity`],
     readTime: `6 min`,
-    thumbnailEmoji: `🎓`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-20`,
     difficulty: `Beginner`,
     body: `One of the most satisfying things AI can do is act as a patient, personal tutor on any topic you want to learn about. Whether you have always been curious about how the stock market works, want to understand the history of a place you are visiting, are trying to learn basic Spanish phrases, or want to finally understand how your medication works — AI can explain it clearly, at exactly the level you need, and as many times as you need to hear it.
@@ -687,7 +687,7 @@ The free AI tools that work well for learning are ChatGPT (chat.openai.com), Goo
     category: `ai-guides`,
     tags: [`ai`, `recipes`, `cooking`, `food`, `dietary`, `meal-planning`],
     readTime: `5 min`,
-    thumbnailEmoji: `🍳`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-20`,
     difficulty: `Beginner`,
     body: `If you have ever stood in front of the refrigerator wondering what to make with the ingredients you have, or tried to find a recipe that works around a dietary restriction, AI is remarkably good at helping with both. You describe what you have or what you need, and the AI suggests recipes, with full instructions, tailored to your situation.
@@ -731,7 +731,7 @@ The free tools that work well for recipe help are ChatGPT (chat.openai.com), Goo
     category: `ai-guides`,
     tags: [`ai`, `travel`, `planning`, `itinerary`, `packing`, `tips`],
     readTime: `6 min`,
-    thumbnailEmoji: `✈️`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-20`,
     difficulty: `Beginner`,
     body: `Planning a trip involves a lot of details: where to stay, what to see, how to get around, what to pack, what to avoid, and how to make the most of the time you have. AI is genuinely helpful for all of these tasks. You describe your trip — where, when, how long, who is going, what you enjoy — and the AI gives you a personalized starting point.
@@ -776,7 +776,7 @@ The free AI tools that work well for travel planning are ChatGPT (chat.openai.co
     category: `ai-guides`,
     tags: [`ai`, `job-search`, `resume`, `cover-letter`, `interview`, `career`],
     readTime: `7 min`,
-    thumbnailEmoji: `💼`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-20`,
     difficulty: `Intermediate`,
     body: `Looking for work can feel overwhelming, especially if you have been out of the workforce for a while, are changing careers, or feel uncertain about how to present yourself on paper. AI tools can help at every stage of the process — writing and improving your resume, drafting personalized cover letters, preparing for interview questions, and researching potential employers.
@@ -821,7 +821,7 @@ For interview preparation, AI can generate likely interview questions for any jo
     category: `phone-guides`,
     tags: [`android`, `tablet`, `samsung`, `galaxy-tab`, `seniors`, `setup`],
     readTime: `7 min`,
-    thumbnailEmoji: `📲`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-20`,
     difficulty: `Beginner`,
     body: `Android tablets — like the Samsung Galaxy Tab series — are popular, affordable devices that are great for browsing the web, video calling family, watching TV shows, reading, and playing games. Samsung is the most well-known brand, but other brands like Lenovo and TCL make Android tablets as well, and they all work in a similar way.
@@ -867,7 +867,7 @@ Battery life on most Android tablets is 8 to 12 hours of regular use. The chargi
     category: `entertainment`,
     tags: [`podcasts`, `apps`, `spotify`, `apple-podcasts`, `pocket-casts`, `comparison`],
     readTime: `6 min`,
-    thumbnailEmoji: `🎵`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-20`,
     difficulty: `Beginner`,
     body: `Once you decide to start listening to podcasts, you need a way to find and play them. That is what podcast apps are for — they organize podcast shows, let you search for new ones, and play episodes through your phone's speaker or headphones.

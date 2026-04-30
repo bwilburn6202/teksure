@@ -8,7 +8,7 @@ export const guidesBatch86: Guide[] = [
     category: `app-guides`,
     tags: [`planta`, `plant care`, `houseplants`, `watering reminders`, `gardening app`],
     readTime: `6 min`,
-    thumbnailEmoji: `🌿`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-20`,
     difficulty: `Beginner`,
     body: `Planta is a free app (with optional paid features) that acts like a personal plant care assistant. You tell it which plants you own, and it builds a customized care schedule for each one — including when to water, mist, fertilize, and repot. The app uses your local weather and light conditions to adjust those recommendations automatically.
@@ -54,7 +54,7 @@ Planta is available on iPhone (App Store) and Android (Google Play). The app fro
     category: `app-guides`,
     tags: [`greg app`, `plant care`, `watering schedule`, `plant community`, `houseplants`],
     readTime: `6 min`,
-    thumbnailEmoji: `🪴`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-20`,
     difficulty: `Beginner`,
     body: `Greg is a plant care app that does something most others do not — it learns from your behavior and your home's conditions over time. Instead of giving you a fixed watering schedule, Greg uses information about your location, the humidity in your home, and how your plants have responded to previous care to fine-tune reminders that actually match your plants' real needs.
@@ -97,7 +97,7 @@ One feature that stands out is Greg's "care journal." Every time you water, fert
     category: `app-guides`,
     tags: [`all about birds`, `bird identification`, `cornell lab`, `birding`, `bird guide`],
     readTime: `5 min`,
-    thumbnailEmoji: `🐦`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-20`,
     difficulty: `Beginner`,
     body: `All About Birds is the free online and app-based field guide produced by the Cornell Lab of Ornithology, one of the most respected bird research institutions in the world. The guide covers more than 800 species found in North America and gives you photos, sound recordings, range maps, and life history information — all written by ornithologists (scientists who study birds) and kept up to date with the latest research.
@@ -139,7 +139,7 @@ All About Birds works well on any smartphone browser and is also integrated with
     category: `app-guides`,
     tags: [`ebird`, `bird watching`, `cornell lab`, `bird sightings`, `citizen science`],
     readTime: `6 min`,
-    thumbnailEmoji: `📋`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-20`,
     difficulty: `Beginner`,
     body: `eBird is a free platform created by the Cornell Lab of Ornithology that lets anyone record bird sightings and share them with a global database used by scientists, conservationists, and bird enthusiasts around the world. When you log a bird you have seen, you are contributing to real research that helps track population trends, migration patterns, and the effects of climate change on bird species.
@@ -182,7 +182,7 @@ As of 2026, eBird has recorded more than 1.5 billion bird observations from more
     category: `app-guides`,
     tags: [`merlin`, `bird sound id`, `bird identification`, `cornell lab`, `birding app`],
     readTime: `5 min`,
-    thumbnailEmoji: `🎵`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-20`,
     difficulty: `Beginner`,
     body: `Merlin Bird ID is a free app from the Cornell Lab of Ornithology, and its Sound ID feature is one of the most remarkable things you can do with a smartphone in the natural world. Open the app, tap Sound ID, hold your phone up toward a tree or a bird feeder, and Merlin listens. Within seconds it shows you the names of the birds it hears, updated in real time as new songs appear. It works even when multiple birds are singing at the same time.
@@ -225,7 +225,7 @@ Sound ID works best outdoors in relatively quiet conditions, though it can still
     category: `app-guides`,
     tags: [`stellarium`, `stargazing`, `astronomy app`, `star map`, `night sky`],
     readTime: `6 min`,
-    thumbnailEmoji: `🌠`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-20`,
     difficulty: `Beginner`,
     body: `Stellarium is a free, open-source planetarium application that turns your smartphone into a window on the universe. When you hold your phone up toward the night sky, Stellarium uses your GPS location, the device's compass, and the current time to show you an accurate map of exactly what is above you. Stars, planets, constellations, nebulae, and satellites are all labeled and positioned correctly for your location at that exact moment.
@@ -268,7 +268,7 @@ Stellarium is developed by a community of astronomers and software developers wh
     category: `app-guides`,
     tags: [`star walk`, `stargazing`, `sky map`, `astronomy`, `augmented reality`],
     readTime: `5 min`,
-    thumbnailEmoji: `⭐`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-20`,
     difficulty: `Beginner`,
     body: `Star Walk 2 is one of the most visually polished stargazing apps available. It uses your phone's camera in augmented reality mode — meaning it overlays digital labels directly on a live camera view of the actual sky in front of you. Stars, planets, constellations, satellites, and deep-sky objects all appear labeled in real time as you move your phone around.
@@ -308,7 +308,7 @@ Star Walk 2 also includes a "What's up tonight?" section that summarizes the mos
     category: `app-guides`,
     tags: [`nasa app`, `space`, `astronomy`, `rocket launch`, `nasa images`],
     readTime: `5 min`,
-    thumbnailEmoji: `🚀`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-20`,
     difficulty: `Beginner`,
     body: `The NASA app is the official mobile application from the National Aeronautics and Space Administration, the US government agency responsible for space exploration and aeronautics research. It is completely free, with no ads or in-app purchases, and provides direct access to NASA's entire public library of images, videos, and news content.
@@ -352,7 +352,7 @@ Available for free on iPhone and Android, the NASA app is one of the best free s
     category: `app-guides`,
     tags: [`moon phases`, `lunar calendar`, `moon app`, `stargazing`, `full moon`],
     readTime: `5 min`,
-    thumbnailEmoji: `🌙`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-20`,
     difficulty: `Beginner`,
     body: `The moon goes through a predictable cycle every 29.5 days, moving through eight distinct phases from New Moon to Full Moon and back again. Tracking these phases is useful for a surprising variety of reasons — planning nighttime photography, scheduling fishing trips, gardening by lunar cycles, or simply satisfying your curiosity about the bright or dark sky overhead.
@@ -390,7 +390,7 @@ Full Moons are often bright enough to cast shadows and are popular for outdoor n
     category: `health-tech`,
     tags: [`myradar`, `weather radar`, `severe weather`, `weather alerts`, `storm tracking`],
     readTime: `5 min`,
-    thumbnailEmoji: `🌧️`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-20`,
     difficulty: `Beginner`,
     body: `MyRadar is one of the most popular free weather radar apps in the United States, with more than 50 million downloads. It shows you live NEXRAD radar data — the same weather radar data used by the National Weather Service — overlaid on an interactive map centered on your location. When rain, snow, or storms are moving through, you can see them in real time as colored shapes sweeping across the map.
@@ -431,7 +431,7 @@ Unlike a general weather app that shows you a forecast, MyRadar shows you what i
     category: `health-tech`,
     tags: [`tornado warning`, `severe weather`, `weather alert`, `storm tracker`, `emergency alert`],
     readTime: `6 min`,
-    thumbnailEmoji: `🌪️`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-20`,
     difficulty: `Beginner`,
     body: `Tornadoes and severe thunderstorms can develop quickly, and having a reliable alert system in place before storm season begins can save your life. Your smartphone can serve as a powerful early warning tool — but only if you have the right apps installed and properly configured in advance.
@@ -476,7 +476,7 @@ For the app layer, the best free options are the Red Cross Tornado App, the FEMA
     category: `health-tech`,
     tags: [`air quality`, `AQI`, `air pollution`, `IQAir`, `EPA air quality`],
     readTime: `6 min`,
-    thumbnailEmoji: `🌬️`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-20`,
     difficulty: `Beginner`,
     body: `Air quality can change dramatically from one day to the next — and from one neighborhood to the next. Wildfires, vehicle exhaust, industrial emissions, and weather patterns can all push pollution to levels that affect your breathing and health. For people with asthma, heart conditions, or other respiratory issues, poor air quality days can cause serious problems. Even healthy adults and children can be affected by high pollution.
@@ -518,7 +518,7 @@ The best free resources for checking AQI are AirNow.gov (the official EPA air qu
     category: `health-tech`,
     tags: [`pollen tracker`, `allergy app`, `pollen count`, `seasonal allergies`, `allergy forecast`],
     readTime: `6 min`,
-    thumbnailEmoji: `🌼`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-20`,
     difficulty: `Beginner`,
     body: `If you have seasonal allergies, you already know that some days are far worse than others. What you may not know is that pollen levels are actually measured and forecast daily — the same way weather is forecast — and that information is freely available on your smartphone. Knowing the pollen count for your specific area before you leave the house can help you decide when to take antihistamines, whether to keep windows closed, and whether to reschedule outdoor activities.
@@ -561,7 +561,7 @@ Understanding your specific allergens matters. If you are allergic to tree polle
     category: `health-tech`,
     tags: [`hurricane prep`, `storm tracking`, `emergency preparedness`, `Red Cross`, `hurricane season`],
     readTime: `7 min`,
-    thumbnailEmoji: `🌀`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-20`,
     difficulty: `Beginner`,
     body: `Atlantic hurricane season runs from June 1 through November 30, though storms can form outside those dates. For the roughly 60 million Americans living along the Gulf Coast, Atlantic Coast, and in vulnerable inland areas, having a digital preparedness plan in place well before any storm threatens can make the difference between an organized, safe response and a chaotic scramble under pressure.
@@ -604,7 +604,7 @@ Know your evacuation zone before a storm is named. Every county along the Gulf a
     category: `health-tech`,
     tags: [`wildfire`, `evacuation`, `fire map`, `smoke tracker`, `air quality`],
     readTime: `6 min`,
-    thumbnailEmoji: `🔥`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-20`,
     difficulty: `Beginner`,
     body: `Wildfires have become more frequent and more severe across much of the United States, particularly in the West. But fire risk exists across the country — grassland fires in the Plains, forest fires in the South, and brush fires in the Mid-Atlantic are all real threats depending on conditions. Knowing where fires are burning, whether your community is under an evacuation order, and how smoke is affecting air quality are all critical pieces of information that are freely available online.
@@ -647,7 +647,7 @@ Smoke from wildfires is a serious health hazard even hundreds of miles from the 
     category: `app-guides`,
     tags: [`fishbrain`, `fishing app`, `fishing spots`, `catch log`, `angling community`],
     readTime: `6 min`,
-    thumbnailEmoji: `🎣`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-20`,
     difficulty: `Beginner`,
     body: `Fishbrain is one of the most widely used fishing apps in the United States, with more than 13 million users logging catches, sharing spots, and discussing fishing conditions. It functions as both a personal fishing journal and a social network for anglers of all experience levels — from complete beginners taking their first fishing trip to experienced anglers targeting specific trophy species.
@@ -689,7 +689,7 @@ Fishbrain is free with optional premium features available through a subscriptio
     category: `app-guides`,
     tags: [`alltrails`, `hiking app`, `trail finder`, `outdoor navigation`, `beginner hiking`],
     readTime: `7 min`,
-    thumbnailEmoji: `🥾`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-20`,
     difficulty: `Beginner`,
     body: `AllTrails is the most widely used hiking app in the United States, with more than 50 million members and a database of over 400,000 trails across North America and beyond. For someone who has never hiked before — or who has hiked casually without ever using trail-finding technology — AllTrails is the most accessible way to discover local trails, understand what you are getting into before you go, and stay on the right path once you are out there.
@@ -732,7 +732,7 @@ Before you go on any hike — especially your first one — it is worth spending
     category: `app-guides`,
     tags: [`komoot`, `route planning`, `hiking navigation`, `cycling app`, `offline maps`],
     readTime: `6 min`,
-    thumbnailEmoji: `🗺️`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-20`,
     difficulty: `Intermediate`,
     body: `Komoot is a route-planning app built specifically for hikers, cyclists, and mountain bikers who want more control over their routes than apps like AllTrails provide. Rather than browsing a database of preset trails, Komoot lets you draw your own route on a map — and then it analyzes the terrain, surface types, and elevation to tell you what the route will actually be like. You can plan a route from your front door to a destination miles away and have turn-by-turn voice navigation guide you the whole way.
@@ -775,7 +775,7 @@ One feature that sets Komoot apart is its offline navigation. Once you have down
     category: `app-guides`,
     tags: [`gaia gps`, `topographic map`, `offline maps`, `backcountry`, `hiking navigation`],
     readTime: `7 min`,
-    thumbnailEmoji: `🧭`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-20`,
     difficulty: `Intermediate`,
     body: `Gaia GPS is the app most recommended by serious hikers, backpackers, hunters, and Search and Rescue professionals who need reliable navigation in areas with no cell service. It works by downloading topographic maps to your phone before you leave home — then using your phone's built-in GPS chip to show your exact position on those maps even in complete dead zones for cell coverage.
@@ -818,7 +818,7 @@ The app is developed by Outside Inc. and is available for iPhone and Android. It
     category: `app-guides`,
     tags: [`garmin connect`, `garmin watch`, `fitness tracker`, `workout data`, `GPS watch`],
     readTime: `7 min`,
-    thumbnailEmoji: `⌚`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-20`,
     difficulty: `Beginner`,
     body: `If you own a Garmin fitness watch or GPS watch, Garmin Connect is the companion app that brings all of your data to life. The watch collects information throughout the day — steps, heart rate, sleep patterns, stress levels, workouts, and GPS tracks — and Garmin Connect displays that data on your phone in clear charts and summaries that are easy to read even if you have no background in fitness tracking.

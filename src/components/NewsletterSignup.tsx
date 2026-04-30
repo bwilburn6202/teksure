@@ -64,21 +64,15 @@ export function NewsletterSignup({ variant = 'default', className = '' }: Newsle
               <CheckCircle className="h-4 w-4" />
               You're subscribed! Weekly tips incoming             </div>
           ) : (
-            <form key="form" onSubmit={handleSubmit} className="flex gap-2 w-full" aria-label="Newsletter signup">
-              <label htmlFor="newsletter-email-inline" className="sr-only">
-                Your email address
-              </label>
+            <form key="form" onSubmit={handleSubmit} className="flex gap-2 w-full">
               <input
-                id="newsletter-email-inline"
                 type="email"
-                required
-                autoComplete="email"
                 value={email}
                 onChange={e => { setEmail(e.target.value); setError(''); }}
                 placeholder="your@email.com"
                 className="flex-1 text-sm bg-background border border-border rounded-lg px-3 py-2 outline-none focus:ring-2 focus:ring-primary/30"
               />
-              <Button type="submit" size="sm" className="min-h-[44px] px-4">
+              <Button type="submit" size="sm">
                 Subscribe <ArrowRight className="h-3.5 w-3.5 ml-1" />
               </Button>
             </form>
@@ -102,21 +96,15 @@ export function NewsletterSignup({ variant = 'default', className = '' }: Newsle
               <CheckCircle className="h-4 w-4" /> Subscribed! Look out for your first tip.
             </div>
           ) : (
-            <form key="f" onSubmit={handleSubmit} className="flex gap-2" aria-label="Newsletter signup">
-              <label htmlFor="newsletter-email-compact" className="sr-only">
-                Your email address
-              </label>
+            <form key="f" onSubmit={handleSubmit} className="flex gap-2">
               <input
-                id="newsletter-email-compact"
                 type="email"
-                required
-                autoComplete="email"
                 value={email}
                 onChange={e => { setEmail(e.target.value); setError(''); }}
                 placeholder="your@email.com"
                 className="flex-1 text-sm bg-background border border-border rounded-lg px-3 py-1.5 outline-none focus:ring-2 focus:ring-primary/30"
               />
-              <Button type="submit" size="sm" className="shrink-0 min-h-[44px] px-4">Go</Button>
+              <Button type="submit" size="sm" className="shrink-0">Go</Button>
             </form>
           )}
         </>
@@ -153,15 +141,9 @@ export function NewsletterSignup({ variant = 'default', className = '' }: Newsle
               <p className="text-sm text-muted-foreground mb-6">
                 One email a week with a practical tip, new guide, or scam alert. Plain English. No jargon. Unsubscribe any time.
               </p>
-              <form onSubmit={handleSubmit} className="flex flex-col sm:flex-row gap-2" aria-label="Newsletter signup">
-                <label htmlFor="newsletter-email-default" className="sr-only">
-                  Your email address
-                </label>
+              <form onSubmit={handleSubmit} className="flex flex-col sm:flex-row gap-2">
                 <input
-                  id="newsletter-email-default"
                   type="email"
-                  required
-                  autoComplete="email"
                   value={email}
                   onChange={e => { setEmail(e.target.value); setError(''); }}
                   placeholder="your@email.com"

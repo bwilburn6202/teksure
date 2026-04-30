@@ -402,7 +402,7 @@ export default function JobSearchTechHub() {
         path="/job-search-tech-hub"
       />
       <Navbar />
-      <main className="flex-1">
+      <main id="main-content" className="flex-1">
         {/* Hero */}
         <section className="border-b border-border">
           <div className="container max-w-3xl text-center py-16 md:py-20">
@@ -752,7 +752,7 @@ export default function JobSearchTechHub() {
               </p>
               <div className="flex gap-3 justify-center flex-wrap">
                 <Button asChild size="lg" className="rounded-xl gap-2">
-                  <Link to="/get-help">
+                  <Link to="/book">
                     <Phone className="h-4 w-4" />
                     Book a session
                   </Link>

@@ -8,7 +8,7 @@ export const guidesBatch57: Guide[] = [
     category: `phone-guides`,
     tags: [`screen recording`, `iphone`, `ios`, `video`, `control center`, `screen capture`],
     readTime: `5 min`,
-    thumbnailEmoji: `📹`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-19`,
     difficulty: `Beginner`,
     body: `Your iPhone can record everything happening on your screen as a video — no extra app needed. This is useful when you want to show someone how to do something on a phone, save a video call moment, capture a game clip, or save a social media video that does not have a download button.
@@ -55,7 +55,7 @@ Screen recordings can get large in file size if they are long, so consider keepi
     category: `how-to`,
     tags: [`wifi`, `wi-fi`, `password`, `share`, `iphone`, `android`, `network`, `guest`],
     readTime: `5 min`,
-    thumbnailEmoji: `📶`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-19`,
     difficulty: `Beginner`,
     body: `When a friend or family member visits and needs to connect to your Wi-Fi, you no longer have to dig up a long complicated password and read it out letter by letter. Both iPhones and Android phones have built-in ways to share a Wi-Fi password with a tap or a scan.
@@ -95,7 +95,7 @@ These methods work for your home network and any Wi-Fi network your phone has al
     category: `phone-guides`,
     tags: [`voice control`, `iphone`, `accessibility`, `hands-free`, `ios`, `spoken commands`, `disability`],
     readTime: `6 min`,
-    thumbnailEmoji: `🎙️`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-19`,
     difficulty: `Intermediate`,
     body: `Voice Control is an accessibility feature built into every iPhone running iOS 13 or later. It lets you control your entire phone using spoken commands — no touching the screen required. You can open apps, scroll, tap buttons, type messages, and navigate menus all by speaking.
@@ -141,7 +141,7 @@ There is a learning curve to voice control, but spending 10–15 minutes practic
     category: `phone-guides`,
     tags: [`voice access`, `android`, `accessibility`, `hands-free`, `spoken commands`, `disability`, `google`],
     readTime: `6 min`,
-    thumbnailEmoji: `🎤`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-19`,
     difficulty: `Intermediate`,
     body: `Voice Access is a free app from Google that lets you control your entire Android phone using spoken commands. You can open apps, tap buttons, scroll through pages, and type text — all without touching the screen.
@@ -188,7 +188,7 @@ To get the most out of Voice Access, spend some time practicing with it when you
     category: `essential-skills`,
     tags: [`chromebook`, `chrome os`, `google`, `laptop`, `beginner`, `basics`, `computer`],
     readTime: `7 min`,
-    thumbnailEmoji: `💻`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-19`,
     difficulty: `Beginner`,
     body: `A Chromebook is a type of laptop made by Google. Instead of running Windows (like most PCs) or macOS (like Apple computers), a Chromebook runs an operating system called Chrome OS. The biggest difference is that Chromebooks are designed to work primarily through the internet, using the Chrome web browser and Google's apps.
@@ -236,7 +236,7 @@ Chromebooks are popular in schools and are often recommended for seniors and peo
     category: `windows-guides`,
     tags: [`narrator`, `screen reader`, `windows`, `accessibility`, `text to speech`, `low vision`, `blind`],
     readTime: `6 min`,
-    thumbnailEmoji: `🔊`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-19`,
     difficulty: `Beginner`,
     body: `Windows Narrator is a screen reader built into every Windows 10 and Windows 11 computer. A screen reader is a program that reads aloud whatever is on your screen — text in documents, labels on buttons, items in menus, and announcements about what is happening on the computer.
@@ -283,7 +283,7 @@ If you are new to screen readers, plan to spend some time getting familiar with 
     category: `mac-guides`,
     tags: [`voiceover`, `screen reader`, `mac`, `accessibility`, `text to speech`, `low vision`, `macos`],
     readTime: `6 min`,
-    thumbnailEmoji: `🗣️`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-19`,
     difficulty: `Intermediate`,
     body: `VoiceOver is a screen reader built into every Mac. It reads aloud everything on your screen — text in documents and web pages, names of buttons and menus, descriptions of images, and status updates about what is happening on the computer.
@@ -330,7 +330,7 @@ VoiceOver also works on iPhone and iPad. The same feature name, similar gestures
     category: `tips-tricks`,
     tags: [`swipe typing`, `slide to type`, `keyboard`, `iphone`, `android`, `gboard`, `typing tips`],
     readTime: `4 min`,
-    thumbnailEmoji: `⌨️`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-19`,
     difficulty: `Beginner`,
     body: `Swipe typing — sometimes called slide-to-type or glide typing — is a way of typing on a touchscreen keyboard by sliding your finger from one letter to the next without lifting it. Instead of tapping each letter individually, you trace a path across the keyboard and the phone figures out the word you meant.
@@ -372,7 +372,7 @@ If you make a mistake, tap the Backspace key once to undo the last swiped word. 
     category: `app-guides`,
     tags: [`google maps`, `directions`, `navigation`, `driving`, `walking`, `transit`, `gps`],
     readTime: `5 min`,
-    thumbnailEmoji: `🗺️`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-19`,
     difficulty: `Beginner`,
     body: `Google Maps is a free navigation app available on both iPhone and Android. It gives you turn-by-turn directions for driving, walking, biking, or taking public transportation (bus, train, or subway) to any address or named place.
@@ -421,7 +421,7 @@ The app remembers places you have searched for recently, making it faster to nav
     category: `financial-tech`,
     tags: [`mobile banking`, `bank app`, `check deposit`, `balance`, `transfer money`, `statements`, `finance`],
     readTime: `7 min`,
-    thumbnailEmoji: `🏦`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-19`,
     difficulty: `Beginner`,
     body: `Most banks and credit unions offer a free mobile app that lets you manage your account from your phone. You can check your balance, see recent transactions, transfer money between accounts, pay bills, and deposit paper checks by taking a photo — without ever setting foot in a branch.
@@ -467,7 +467,7 @@ If you receive a text or email claiming to be from your bank and asking you to c
     category: `financial-tech`,
     tags: [`bill pay`, `automatic payments`, `online banking`, `bank`, `pay bills`, `autopay`, `finance`],
     readTime: `6 min`,
-    thumbnailEmoji: `💳`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-19`,
     difficulty: `Beginner`,
     body: `Paying bills online through your bank is one of the most practical things you can do with a banking app or website. Instead of writing checks, buying stamps, and mailing payments, you can pay your electric bill, internet provider, phone company, credit card, or almost any other bill with a few taps on your phone or clicks on your computer.
@@ -513,7 +513,7 @@ You can manage, pause, or cancel any automatic payment through your bank's Bill 
     category: `government-civic`,
     tags: [`va`, `veterans affairs`, `va.gov`, `veterans benefits`, `prescription refill`, `va health care`, `claims`],
     readTime: `7 min`,
-    thumbnailEmoji: `🇺🇸`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-19`,
     difficulty: `Beginner`,
     body: `VA.gov is the official website of the U.S. Department of Veterans Affairs. It is the place to manage your VA benefits, health care, and services online — from checking the status of a disability claim to refilling prescriptions to sending a secure message to your doctor.
@@ -560,7 +560,7 @@ VA.gov works on both computers and mobile phones. The website address is va.gov 
     category: `financial-tech`,
     tags: [`wire transfer`, `bank transfer`, `send money`, `banking`, `wire fraud`, `financial safety`, `finance`],
     readTime: `6 min`,
-    thumbnailEmoji: `💸`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-19`,
     difficulty: `Intermediate`,
     body: `A wire transfer is a way to send money directly from one bank account to another — either within the United States (domestic wire) or to another country (international wire). Wire transfers move money faster than most other methods. Domestic wires typically arrive the same business day if sent before the bank's cutoff time.
@@ -607,7 +607,7 @@ Before sending any wire transfer, especially a large one, call the recipient dir
     category: `safety-guides`,
     tags: [`screen time`, `parental controls`, `iphone`, `kids`, `content filter`, `app limits`, `family sharing`],
     readTime: `7 min`,
-    thumbnailEmoji: `👨‍👩‍👧`,
+    thumbnailEmoji: `‍‍`,
     publishedAt: `2026-04-19`,
     difficulty: `Intermediate`,
     body: `Screen Time is a built-in parental controls feature on every iPhone and iPad running iOS 12 or later. It lets a parent set limits on how long a child can use certain apps, block inappropriate content, prevent in-app purchases, and schedule times when the screen goes dark — like during school hours or bedtime.
@@ -655,7 +655,7 @@ Screen Time reports show you a weekly summary of how much time your child spent 
     category: `app-guides`,
     tags: [`google maps`, `parking`, `save parking`, `navigation`, `parking spot`, `find car`, `maps`],
     readTime: `4 min`,
-    thumbnailEmoji: `🅿️`,
+    thumbnailEmoji: `🅿`,
     publishedAt: `2026-04-19`,
     difficulty: `Beginner`,
     body: `If you have ever parked in an unfamiliar city, a large shopping mall parking lot, or a multi-level garage and then spent 20 minutes trying to find your car, Google Maps has a feature that solves this problem.
@@ -703,7 +703,7 @@ This feature works best in areas where Google Maps has detailed location data. I
     category: `safety-guides`,
     tags: [`reverse phone lookup`, `unknown caller`, `phone scam`, `who called`, `robocall`, `caller id`, `safety`],
     readTime: `5 min`,
-    thumbnailEmoji: `🔍`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-19`,
     difficulty: `Beginner`,
     body: `Getting a call from a number you do not recognize is frustrating. You do not know whether it is a scam, a robocall, a local business trying to reach you, or something important. Calling back an unknown number can expose you to scammers who record your voice saying "yes" (used to authorize fraudulent charges) or who confirm your number is active and target you with more calls.
@@ -745,7 +745,7 @@ If a number comes back as a known scam, do not call it back. If it comes back as
     category: `safety-guides`,
     tags: [`call blocking`, `spam calls`, `robocalls`, `hiya`, `robokiller`, `nomorobo`, `phone scam`, `safety`],
     readTime: `6 min`,
-    thumbnailEmoji: `🚫`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-19`,
     difficulty: `Beginner`,
     body: `Robocalls and scam calls have become a daily frustration for most Americans. These are automated or live calls trying to trick you into giving up personal information, sending money, or pressing a button that leads to more scam calls. The FTC reports billions of robocalls are made every month in the United States.
@@ -795,7 +795,7 @@ None of these apps have access to your calls, voicemails, or messages — they o
     category: `app-guides`,
     tags: [`capcut`, `video editing`, `phone`, `iphone`, `android`, `captions`, `video creator`, `beginner`],
     readTime: `7 min`,
-    thumbnailEmoji: `🎬`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-19`,
     difficulty: `Beginner`,
     body: `CapCut is a free video editing app you can use on your iPhone or Android phone. It was created by the same company as TikTok, but you do not need a TikTok account to use it — it works as a standalone video editor for anyone who wants to make short videos.
@@ -842,7 +842,7 @@ CapCut is free to download and use. Some advanced templates have a small fee, bu
     category: `app-guides`,
     tags: [`google photos`, `photo editing`, `crop`, `brightness`, `magic eraser`, `filters`, `iphone`, `android`],
     readTime: `6 min`,
-    thumbnailEmoji: `✏️`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-19`,
     difficulty: `Beginner`,
     body: `Google Photos is a free app that stores your photos and also includes a set of editing tools you can use to improve them. You do not need any photo editing experience — the tools are designed to be approachable, and you can always undo any change you make.
@@ -893,7 +893,7 @@ All edits in Google Photos are non-destructive, meaning they do not permanently 
     category: `phone-guides`,
     tags: [`iphone`, `photos app`, `crop photo`, `photo editing`, `ios`, `straighten`, `edit photos`],
     readTime: `5 min`,
-    thumbnailEmoji: `🖼️`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-19`,
     difficulty: `Beginner`,
     body: `Every iPhone comes with a Photos app that includes a set of photo editing tools — no separate app required. You can crop a photo to focus on a person or object, straighten a tilted shot, adjust the brightness and color, and apply filters.

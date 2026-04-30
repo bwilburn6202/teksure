@@ -8,9 +8,8 @@ import { Input } from '@/components/ui/input';
 import { Badge } from '@/components/ui/badge';
 import { Card, CardContent } from '@/components/ui/card';
 import { guides, categoryLabels } from '@/data/guides';
-import { GuideThumbnail } from '@/components/GuideThumbnail';
 import { supabase } from '@/integrations/supabase/client';
-import { Brain, Search, Sparkles, BookOpen, Clock, ChevronRight, Loader2, AlertCircle, CheckCircle, Lock, Zap, Cpu, type LucideIcon } from 'lucide-react';
+import { Brain, Search, Sparkles, BookOpen, Clock, ChevronRight, Loader2, AlertCircle, CheckCircle } from 'lucide-react';
 
 // Stop words to ignore when scoring
 const STOP_WORDS = new Set(['how', 'to', 'a', 'the', 'is', 'my', 'can', 'i', 'do', 'what', 'why', 'when', 'where', 'who', 'which', 'are', 'was', 'be', 'been', 'have', 'has', 'had', 'will', 'would', 'could', 'should', 'may', 'might', 'must', 'shall', 'not', 'no', 'on', 'in', 'at', 'by', 'for', 'with', 'about', 'from', 'up', 'down', 'out', 'off', 'over', 'under', 'if', 'then', 'that', 'this', 'it', 'its', 'of', 'or', 'and', 'but', 'so', 'yet', 'nor', 'get', 'set', 'use', 'using', 'make', 'need', 'want', 'help', 'me', 'you', 'your', 'my', 'our', 'their', 'an']);
@@ -159,7 +158,7 @@ export default function BrainPage() {
         path="/brain"
       />
       <Navbar />
-      <main className="min-h-screen bg-background">
+      <main id="main-content" className="min-h-screen bg-background">
         {/* Header */}
         <section className="border-b border-border py-16 text-center">
           <div className="container max-w-2xl">
@@ -261,7 +260,7 @@ export default function BrainPage() {
                         <Card className="hover:border-primary/30 hover:shadow-sm transition-all">
                           <CardContent className="p-4">
                             <div className="flex items-start gap-4">
-                              <GuideThumbnail category={guide.category} size="h-6 w-6" />
+                              <div className="text-2xl shrink-0 mt-0.5">{guide.thumbnailEmoji}</div>
                               <div className="flex-1 min-w-0">
                                 <div className="flex items-center gap-2 mb-1 flex-wrap">
                                   <Badge variant="secondary" className="text-xs">{categoryLabels[guide.category]}</Badge>
@@ -319,13 +318,13 @@ export default function BrainPage() {
 
           {/* Info section */}
           <div className="mt-12 grid sm:grid-cols-3 gap-4 text-center">
-            {([
-              { Icon: Lock, title: 'Completely Private', desc: 'No data sent to any server. Search runs in your browser.' },
-              { Icon: Zap, title: 'Instant Results', desc: `Searches all ${guides.length.toLocaleString()}+ guides in milliseconds.` },
-              { Icon: Cpu, title: 'AI-Enhanced', desc: 'Install Ollama for full AI answers from local models.' },
-            ] as { Icon: LucideIcon; title: string; desc: string }[]).map(item => (
+            {[
+              { emoji: '', title: 'Completely Private', desc: 'No data sent to any server. Search runs in your browser.' },
+              { emoji: '', title: 'Instant Results', desc: `Searches all ${guides.length.toLocaleString()}+ guides in milliseconds.` },
+              { emoji: '', title: 'AI-Enhanced', desc: 'Install Ollama for full AI answers from local models.' },
+            ].map(item => (
               <div key={item.title} className="p-4 rounded-xl border border-border bg-muted/30">
-                <item.Icon className="h-6 w-6 mx-auto mb-2 text-primary" aria-hidden="true" />
+                <div className="text-2xl mb-2">{item.emoji}</div>
                 <h3 className="font-semibold text-sm mb-1">{item.title}</h3>
                 <p className="text-xs text-muted-foreground">{item.desc}</p>
               </div>

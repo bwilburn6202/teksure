@@ -140,7 +140,7 @@ export default function OpportunityDashboard() {
     <div className="min-h-screen bg-background text-foreground">
       <SEOHead title="Business Opportunity Dashboard — TekSure" description="Compare 16 business models across revenue, startup cost, margins, and break-even timelines." path="/opportunity-dashboard" />
       <Navbar />
-      <main className="container py-8 space-y-8">
+      <main id="main-content" className="container py-8 space-y-8">
         {/* Header */}
         <div className="flex flex-col md:flex-row md:items-end justify-between gap-4">
           <div>

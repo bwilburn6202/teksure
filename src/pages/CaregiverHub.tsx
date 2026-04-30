@@ -91,7 +91,7 @@ const situations = [
     id: 'phone-confusing',
     q: 'Their phone feels confusing',
     a: [
-      'Turn on simplified mode. iPhone Assistive Access, Android Simple Mode, or Samsung Easy Mode shrink the phone down to only the apps they actually use.',
+      'Turn on simplified mode. iPhone Assistive Access, Android Simple Mode, or Samsung Easy Mode shrink the phone down to just the apps they actually use.',
       'Remove apps they do not use. A cluttered home screen is the number one cause of phone anxiety for older users.',
       'Increase the text size to "Large" or "Larger" in Settings. Almost everyone benefits, and almost nobody thinks to change it.',
     ],
@@ -111,7 +111,7 @@ const situations = [
     id: 'cannot-see',
     q: "They can't see the screen well",
     a: [
-      'Turn on larger text system-wide and enable Display Zoom on iPhone. Most people only need a few minutes in Settings → Display.',
+      'Turn on larger text system-wide and enable Display Zoom on iPhone. Most people just need a few minutes in Settings → Display.',
       'Teach them the two-finger pinch gesture and browser zoom shortcut (Ctrl/Cmd and +). It helps in every app, including email and the web.',
       'Dark mode reduces glare and is easier on tired eyes in the evening. Worth trying even if they have always used light mode.',
     ],
@@ -218,7 +218,7 @@ const scripts = [
     topic: "When it's time for help",
     intro: "This one is about their autonomy, not your convenience.",
     script:
-      '"I am not here to take anything over. I only want you to have more help available when you want it. What does help look like to you? Would you want me to be able to see your screen if something goes wrong, or would you rather I only step in when you call?"',
+      '"I am not here to take anything over. I just want you to have more help available when you want it. What does help look like to you? Would you want me to be able to see your screen if something goes wrong, or would you rather I only step in when you call?"',
   },
   {
     icon: Gift,
@@ -238,7 +238,7 @@ export default function CaregiverHub() {
         path="/caregiver-hub"
       />
       <Navbar />
-      <main className="flex-1">
+      <main id="main-content" className="flex-1">
         {/* Hero */}
         <section className="border-b border-border">
           <div className="container max-w-3xl text-center py-16 md:py-20">
@@ -305,7 +305,7 @@ export default function CaregiverHub() {
                 You are not the first person to deal with this
               </h2>
               <p className="text-muted-foreground">
-                Eight of the most common caregiver situations, with what to actually do — not
+                Eight of the most common caregiver situations, with what to actually do — not just
                 what to feel.
               </p>
             </div>
@@ -484,7 +484,7 @@ export default function CaregiverHub() {
               </p>
               <div className="flex gap-3 justify-center flex-wrap">
                 <Button asChild size="lg" className="rounded-xl gap-2">
-                  <Link to="/get-help">
+                  <Link to="/book">
                     <Phone className="h-4 w-4" />
                     Book support for them
                   </Link>

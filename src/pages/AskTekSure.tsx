@@ -57,7 +57,7 @@ export default function AskTekSure() {
       />
       <Navbar />
 
-      <main className="container mx-auto px-4 py-16 md:py-24">
+      <main id="main-content" className="container mx-auto px-4 py-16 md:py-24">
         {/* Hero */}
         <section className="max-w-4xl mx-auto text-center mb-20">
           <Badge variant="secondary" className="mb-6 text-base px-4 py-1.5">

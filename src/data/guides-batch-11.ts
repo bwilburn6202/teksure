@@ -12,7 +12,7 @@ export const guidesBatch11: Guide[] = [
     category: 'phone-guides',
     tags: ['battery', 'iPhone', 'Android', 'performance', 'settings'],
     readTime: '6 min',
-    thumbnailEmoji: '🔋',
+    thumbnailEmoji: '',
     publishedAt: '2026-04-18',
     difficulty: 'Beginner',
     body: `A phone that loses charge quickly is one of the most common complaints people have — and it is almost always fixable without buying a new phone. The biggest culprits are apps running in the background when you are not using them, a screen that stays on too long or is too bright, and location services running all the time.
@@ -56,7 +56,7 @@ Your phone battery also gradually loses capacity as it ages. iPhones show you ex
     category: 'windows-guides',
     tags: ['Windows 11', 'BitLocker', 'locked out', 'recovery key', 'update'],
     readTime: '7 min',
-    thumbnailEmoji: '🔓',
+    thumbnailEmoji: '',
     publishedAt: '2026-04-18',
     difficulty: 'Beginner',
     body: `After installing Microsoft's April 14, 2026 security update (KB5083769), some Windows 11 computers started showing a blue screen asking for something called a "BitLocker recovery key." If this happened to you, your computer is not broken — it is asking for a security code to confirm you are the real owner.
@@ -100,7 +100,7 @@ Do not panic, and do not pay anyone who calls offering to help. This is a genuin
     category: 'essential-skills',
     tags: ['Google', 'Gmail', 'account recovery', 'password', 'locked out'],
     readTime: '8 min',
-    thumbnailEmoji: '🔑',
+    thumbnailEmoji: '',
     publishedAt: '2026-04-18',
     difficulty: 'Beginner',
     body: `Getting locked out of your Google account — which also locks you out of Gmail, Google Photos, and YouTube — is one of the most stressful tech moments people face. The good news is that Google has multiple recovery options, and most people can get back in by following a few specific steps.
@@ -143,7 +143,7 @@ A few important warnings: do not use any Google account recovery service you fin
     category: 'how-to',
     tags: ['app crash', 'iPhone', 'Android', 'troubleshoot', 'fix'],
     readTime: '5 min',
-    thumbnailEmoji: '🛠️',
+    thumbnailEmoji: '',
     publishedAt: '2026-04-18',
     difficulty: 'Beginner',
     body: `When an app suddenly closes, freezes, or refuses to open, it almost always comes down to one of four causes: the app needs an update, its temporary data has gotten corrupted, your phone's memory is overloaded, or the app and your phone's operating system are out of sync after a recent update.
@@ -181,45 +181,4 @@ Following Apple's iOS 18 release and Google's Android 15 update, many apps had t
   // ── SECURITY ─────────────────────────────────────────────────────────────────
   // Social: "Google just found 60 security holes in Chrome — two of them serious. Here is how to check if your browser is already protected."
   // Newsletter: "Google confirmed 60 newly discovered security vulnerabilities in Chrome this week. The fix rolls out automatically, but can take days to reach your computer. Here is how to manually trigger the update in under 2 minutes."
-  {
-    slug: 'how-to-update-google-chrome-browser',
-    title: 'How to Update Google Chrome to the Latest Version',
-    excerpt: 'Chrome updates silently, but sometimes needs a push. Here is how to check and install the latest version in under 2 minutes.',
-    category: 'safety-guides',
-    tags: ['Chrome', 'browser', 'security update', 'Google', 'internet'],
-    readTime: '4 min',
-    thumbnailEmoji: '🌐',
-    publishedAt: '2026-04-18',
-    difficulty: 'Beginner',
-    body: `Google Chrome updates itself in the background most of the time — but the update only applies after you restart the browser. If you leave Chrome open for days or weeks without restarting, you could be using an outdated version with known security holes.
-
-In April 2026, Google confirmed 60 newly discovered security vulnerabilities in Chrome, two of them rated "critical." The fix was already rolled out, but only applies once you restart Chrome or manually trigger the update. Checking takes about 60 seconds.
-
-This guide works on Windows and Mac computers. Chrome on iPhone and Android updates through the App Store or Google Play, the same as any other app.`,
-    steps: [
-      {
-        title: 'Open the Chrome menu',
-        content: `Click the three vertical dots in the very top-right corner of your Chrome window (they look like a small stack of dots). This opens a dropdown menu with all of Chrome's options.`,
-        tip: 'If you see a small colored dot next to those three dots — green, orange, or red — that means an update is already waiting and needs you to restart Chrome to apply it.',
-      },
-      {
-        title: 'Go to Help, then About Google Chrome',
-        content: 'In the dropdown menu, hover over or click "Help." A smaller menu will appear — click "About Google Chrome." Chrome will immediately start checking for updates. This page shows your current version number.',
-      },
-      {
-        title: 'Let it download and install',
-        content: 'If an update is available, you will see a progress bar while it downloads. It usually takes under 30 seconds on a normal internet connection. When it finishes, a button will appear saying "Relaunch."',
-      },
-      {
-        title: 'Click Relaunch to apply the update',
-        content: 'Click the "Relaunch" button. Chrome will close and reopen. Your tabs will be restored exactly as they were. The update is now applied and your browser is fully protected.',
-        warning: 'Save any work — like a long email you were composing or a form you were filling out — before clicking Relaunch. Chrome usually restores your tabs, but unsaved text in web forms may be lost.',
-      },
-      {
-        title: 'Confirm you have the latest version',
-        content: 'After Chrome relaunches, go back to the three-dot menu → Help → About Google Chrome. It should now say "Google Chrome is up to date." You will also see your current version number — as of April 2026, version 135 is the latest.',
-        tip: `Google's Chrome release notes and security advisories are published at chromium.googleblog.com and chromereleases.googleblog.com. You can check there any time to see what was fixed in the latest update.`,
-      },
-    ],
-  },
-];
+  ];

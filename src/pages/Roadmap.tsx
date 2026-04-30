@@ -352,13 +352,15 @@ export default function Roadmap() {
         path="/roadmap"
       />
       <Navbar />
-      <main className="min-h-screen bg-background">
-        {/* Hero */}
-        <section className="border-b border-border bg-gradient-to-b from-amber-50/60 via-orange-50/30 to-background dark:from-muted/40 dark:via-muted/20 dark:to-background py-16 md:py-20">
-          <div className="container mx-auto px-4 max-w-6xl text-center">
-            <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-primary/10 border border-primary/20 text-primary text-sm font-medium mb-6">
-              <Rocket className="h-4 w-4" aria-hidden="true" />
-              Public Roadmap
+      <main id="main-content" className="min-h-screen bg-background">
+        {/* Header */}
+        <section className="border-b border-border py-20">
+          <div className="container mx-auto px-4 max-w-6xl">
+            <div>
+              <h1 className="text-3xl md:text-4xl font-bold tracking-tight mb-3">Roadmap</h1>
+              <p className="text-muted-foreground text-lg">
+                See what we're building next to help you master technology
+              </p>
             </div>
             <h1 className="text-4xl md:text-5xl font-bold tracking-tight text-foreground mb-4">
               What We&rsquo;re Building Next

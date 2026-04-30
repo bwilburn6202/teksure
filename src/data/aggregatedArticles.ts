@@ -247,7 +247,7 @@ export const aggregatedArticles: AggregatedArticle[] = [
     difficulty: 'Beginner',
     readTime: '4 min read',
     osTags: ['iOS'],
-    thumbnailEmoji: '👤',
+    thumbnailEmoji: '',
     featured: true,
     relatedSlugs: ['how-to-use-icloud-backup', 'how-to-update-your-iphone'],
     steps: [
@@ -291,7 +291,7 @@ export const aggregatedArticles: AggregatedArticle[] = [
     difficulty: 'Beginner',
     readTime: '5 min read',
     osTags: ['iOS'],
-    thumbnailEmoji: '☁️',
+    thumbnailEmoji: '',
     relatedSlugs: ['how-to-set-up-face-id-iphone', 'how-to-update-your-iphone'],
     steps: [
       {
@@ -329,7 +329,7 @@ export const aggregatedArticles: AggregatedArticle[] = [
     difficulty: 'Beginner',
     readTime: '4 min read',
     osTags: ['iOS'],
-    thumbnailEmoji: '🔄',
+    thumbnailEmoji: '',
     relatedSlugs: ['how-to-use-icloud-backup', 'how-to-set-up-face-id-iphone'],
     steps: [
       {
@@ -367,7 +367,7 @@ export const aggregatedArticles: AggregatedArticle[] = [
     difficulty: 'Beginner',
     readTime: '5 min read',
     osTags: ['Android', 'Any'],
-    thumbnailEmoji: '🔑',
+    thumbnailEmoji: '',
     featured: true,
     relatedSlugs: ['how-to-secure-gmail-account', 'protect-against-phishing-ftc'],
     steps: [
@@ -406,7 +406,7 @@ export const aggregatedArticles: AggregatedArticle[] = [
     difficulty: 'Beginner',
     readTime: '6 min read',
     osTags: ['Any'],
-    thumbnailEmoji: '🔒',
+    thumbnailEmoji: '',
     relatedSlugs: ['how-to-use-google-password-manager', 'protect-against-phishing-ftc'],
     steps: [
       {
@@ -444,7 +444,7 @@ export const aggregatedArticles: AggregatedArticle[] = [
     difficulty: 'Beginner',
     readTime: '4 min read',
     osTags: ['Windows'],
-    thumbnailEmoji: '🪟',
+    thumbnailEmoji: '',
     featured: true,
     relatedSlugs: ['how-to-use-windows-defender', 'how-to-set-up-windows-hello'],
     steps: [
@@ -483,7 +483,7 @@ export const aggregatedArticles: AggregatedArticle[] = [
     difficulty: 'Beginner',
     readTime: '5 min read',
     osTags: ['Windows'],
-    thumbnailEmoji: '🛡️',
+    thumbnailEmoji: '',
     relatedSlugs: ['how-to-update-windows-11', 'protect-against-phishing-ftc'],
     steps: [
       {
@@ -521,7 +521,7 @@ export const aggregatedArticles: AggregatedArticle[] = [
     difficulty: 'Beginner',
     readTime: '6 min read',
     osTags: ['Any'],
-    thumbnailEmoji: '⚠️',
+    thumbnailEmoji: '',
     featured: true,
     relatedSlugs: ['protect-against-phishing-ftc', 'how-to-secure-gmail-account'],
     steps: [
@@ -560,7 +560,7 @@ export const aggregatedArticles: AggregatedArticle[] = [
     difficulty: 'Beginner',
     readTime: '5 min read',
     osTags: ['Any'],
-    thumbnailEmoji: '🎣',
+    thumbnailEmoji: '',
     relatedSlugs: ['avoid-tech-support-scams-ftc', 'how-to-secure-gmail-account'],
     steps: [
       {
@@ -598,7 +598,7 @@ export const aggregatedArticles: AggregatedArticle[] = [
     difficulty: 'Beginner',
     readTime: '7 min read',
     osTags: ['iOS', 'Android'],
-    thumbnailEmoji: '📱',
+    thumbnailEmoji: '',
     relatedSlugs: ['how-to-set-up-face-id-iphone', 'how-to-use-google-password-manager'],
     steps: [
       {
@@ -641,12 +641,12 @@ export const aggregatedArticles: AggregatedArticle[] = [
     difficulty: 'Beginner',
     readTime: '5 min read',
     osTags: ['Any'],
-    thumbnailEmoji: '🌐',
+    thumbnailEmoji: '',
     relatedSlugs: ['protect-against-phishing-ftc', 'avoid-tech-support-scams-ftc'],
     steps: [
       {
         title: 'Look for the padlock icon',
-        content: 'Before entering any personal information, look at the address bar at the top of your browser. You should see a padlock icon (🔒) to the left of the web address. This means the connection is encrypted.',
+        content: 'Before entering any personal information, look at the address bar at the top of your browser. You should see a padlock icon () to the left of the web address. This means the connection is encrypted.',
         tip: `If you see "Not Secure" or a broken padlock, don't enter any personal or financial information on that page.`,
       },
       {
@@ -679,7 +679,7 @@ export const aggregatedArticles: AggregatedArticle[] = [
     difficulty: 'Beginner',
     readTime: '5 min read',
     osTags: ['Windows'],
-    thumbnailEmoji: '👋',
+    thumbnailEmoji: '',
     relatedSlugs: ['how-to-update-windows-11', 'how-to-use-windows-defender'],
     steps: [
       {
@@ -718,7 +718,7 @@ export const aggregatedArticles: AggregatedArticle[] = [
     difficulty: 'Beginner',
     readTime: '5 min read',
     osTags: ['Any'],
-    thumbnailEmoji: '🤖',
+    thumbnailEmoji: '',
     featured: true,
     relatedSlugs: ['how-to-use-claude-code-for-beginners', 'chatgpt-vs-claude-comparison'],
     steps: [
@@ -740,7 +740,7 @@ export const aggregatedArticles: AggregatedArticle[] = [
     difficulty: 'Intermediate',
     readTime: '7 min read',
     osTags: ['Any'],
-    thumbnailEmoji: '💻',
+    thumbnailEmoji: '',
     relatedSlugs: ['what-is-claude-ai-and-how-to-use-it'],
     steps: [
       { title: 'What Claude Code does', content: 'Claude Code reads your entire project, writes new code, fixes bugs, runs commands, and manages Git — all from plain English descriptions. Think of it as a smart coding partner.' },
@@ -761,7 +761,7 @@ export const aggregatedArticles: AggregatedArticle[] = [
     difficulty: 'Beginner',
     readTime: '4 min read',
     osTags: ['Any'],
-    thumbnailEmoji: '🔒',
+    thumbnailEmoji: '',
     relatedSlugs: ['what-is-claude-ai-and-how-to-use-it'],
     steps: [
       { title: 'Your conversations are private', content: 'Claude does not use your conversations to train AI models by default. Your personal data stays between you and Claude.' },
@@ -783,7 +783,7 @@ export const aggregatedArticles: AggregatedArticle[] = [
     difficulty: 'Beginner',
     readTime: '6 min read',
     osTags: ['Any'],
-    thumbnailEmoji: '⚖️',
+    thumbnailEmoji: '',
     featured: true,
     relatedSlugs: ['what-is-claude-ai-and-how-to-use-it'],
     steps: [
@@ -805,7 +805,7 @@ export const aggregatedArticles: AggregatedArticle[] = [
     difficulty: 'Intermediate',
     readTime: '6 min read',
     osTags: ['Any'],
-    thumbnailEmoji: '⚙️',
+    thumbnailEmoji: '',
     relatedSlugs: ['how-to-use-claude-code-for-beginners', 'chatgpt-vs-claude-comparison'],
     steps: [
       { title: 'Data analysis and visualization', content: 'Upload messy data and Codex turns it into clear analysis with charts and reports. It can even generate slide decks from your data automatically.' },
@@ -828,7 +828,7 @@ export const aggregatedArticles: AggregatedArticle[] = [
     difficulty: 'Beginner',
     readTime: '6 min read',
     osTags: ['iOS', 'Android'],
-    thumbnailEmoji: '📱',
+    thumbnailEmoji: '',
     relatedSlugs: [],
     steps: [
       { title: 'Your phone is like a tiny computer', content: 'A smartphone is a small computer that also makes calls. It connects to the internet, takes photos, sends messages, and runs apps — small programs for specific tasks.' },
@@ -849,7 +849,7 @@ export const aggregatedArticles: AggregatedArticle[] = [
     difficulty: 'Beginner',
     readTime: '5 min read',
     osTags: ['iOS', 'Android'],
-    thumbnailEmoji: '📹',
+    thumbnailEmoji: '',
     relatedSlugs: ['senior-planet-smartphone-basics'],
     steps: [
       { title: 'Choose a video calling app', content: 'Ask your family which app they use. Popular options: FaceTime (Apple devices), Zoom (all devices), Google Meet (all devices), WhatsApp (all devices).' },
@@ -871,7 +871,7 @@ export const aggregatedArticles: AggregatedArticle[] = [
     difficulty: 'Beginner',
     readTime: '6 min read',
     osTags: ['Any'],
-    thumbnailEmoji: '🛡️',
+    thumbnailEmoji: '',
     relatedSlugs: [],
     steps: [
       { title: 'Recognize phishing emails', content: 'Phishing emails pretend to be from trusted companies. Warning signs: urgent language ("act now!"), spelling mistakes, requests for personal information, and suspicious sender addresses.' },
@@ -892,7 +892,7 @@ export const aggregatedArticles: AggregatedArticle[] = [
     difficulty: 'Beginner',
     readTime: '5 min read',
     osTags: ['Any'],
-    thumbnailEmoji: '👥',
+    thumbnailEmoji: '',
     relatedSlugs: ['cyber-seniors-online-safety'],
     steps: [
       { title: 'What is social media', content: 'Social media are websites and apps where you can share updates, photos, and messages with friends, family, and the world. Facebook, Instagram, and YouTube are the most popular.' },
@@ -915,7 +915,7 @@ export const aggregatedArticles: AggregatedArticle[] = [
     difficulty: 'Intermediate',
     readTime: '8 min read',
     osTags: ['Windows'],
-    thumbnailEmoji: '🧹',
+    thumbnailEmoji: '',
     relatedSlugs: ['htg-speed-up-pc'],
     steps: [
       { title: 'What is bloatware?', content: 'Bloatware is software pre-installed on your computer by the manufacturer. It can include trial antivirus, games, and apps you never asked for. Removing it frees up storage and can speed up your PC.' },
@@ -936,7 +936,7 @@ export const aggregatedArticles: AggregatedArticle[] = [
     difficulty: 'Beginner',
     readTime: '7 min read',
     osTags: ['Windows'],
-    thumbnailEmoji: '🚀',
+    thumbnailEmoji: '',
     relatedSlugs: ['htg-windows-debloat'],
     steps: [
       { title: 'Restart your computer', content: `If you haven't restarted in a while, do it now. Restarting clears temporary files, closes memory-hogging processes, and applies pending updates. It's the single most effective speed fix.` },
@@ -958,7 +958,7 @@ export const aggregatedArticles: AggregatedArticle[] = [
     difficulty: 'Beginner',
     readTime: '6 min read',
     osTags: ['iOS'],
-    thumbnailEmoji: '🔒',
+    thumbnailEmoji: '',
     relatedSlugs: ['htg-android-privacy'],
     steps: [
       { title: 'Limit ad tracking', content: 'Settings > Privacy & Security > Tracking. Turn off "Allow Apps to Request to Track." This prevents apps from tracking you across other apps and websites for advertising.' },
@@ -979,7 +979,7 @@ export const aggregatedArticles: AggregatedArticle[] = [
     difficulty: 'Beginner',
     readTime: '6 min read',
     osTags: ['Android'],
-    thumbnailEmoji: '🔒',
+    thumbnailEmoji: '',
     relatedSlugs: ['htg-iphone-privacy'],
     steps: [
       { title: 'Review app permissions', content: `Settings > Privacy > Permission Manager. Check which apps access your camera, microphone, location, and contacts. Remove permissions that don't make sense for the app.` },
@@ -1002,7 +1002,7 @@ export const aggregatedArticles: AggregatedArticle[] = [
     difficulty: 'Beginner',
     readTime: '7 min read',
     osTags: ['Any'],
-    thumbnailEmoji: '🤖',
+    thumbnailEmoji: '',
     featured: true,
     relatedSlugs: ['techmeme-tech-trends'],
     steps: [
@@ -1024,7 +1024,7 @@ export const aggregatedArticles: AggregatedArticle[] = [
     difficulty: 'Beginner',
     readTime: '6 min read',
     osTags: ['Any'],
-    thumbnailEmoji: '📈',
+    thumbnailEmoji: '',
     relatedSlugs: ['techmeme-ai-landscape-2026'],
     steps: [
       { title: 'Foldable phones go mainstream', content: 'Samsung and Google now offer foldable phones that work as both a phone and a small tablet. Prices have dropped to around $999, making them more accessible than ever.' },
@@ -1069,7 +1069,7 @@ export const aggregatedArticles: AggregatedArticle[] = [
     difficulty: 'Advanced',
     readTime: '8 min read',
     osTags: ['Windows', 'Mac'],
-    thumbnailEmoji: '💻',
+    thumbnailEmoji: '',
     relatedSlugs: ['hn-open-source-alternatives'],
     steps: [
       { title: 'What is the terminal?', content: `The terminal (or command line) is a text-based way to control your computer. Instead of clicking, you type commands. It sounds old-fashioned but it's faster for many tasks and gives you more control.` },
@@ -1092,7 +1092,7 @@ export const aggregatedArticles: AggregatedArticle[] = [
     difficulty: 'Beginner',
     readTime: '7 min read',
     osTags: ['Any'],
-    thumbnailEmoji: '🛡️',
+    thumbnailEmoji: '',
     featured: true,
     relatedSlugs: ['cw-cloud-explained'],
     steps: [
@@ -1115,7 +1115,7 @@ export const aggregatedArticles: AggregatedArticle[] = [
     difficulty: 'Beginner',
     readTime: '6 min read',
     osTags: ['Any'],
-    thumbnailEmoji: '☁️',
+    thumbnailEmoji: '',
     relatedSlugs: ['cw-cybersecurity-basics'],
     steps: [
       { title: 'What is the cloud?', content: 'The cloud is, in the most direct sense, someone else\'s computer. When you save a photo to iCloud or Google Photos, it\'s stored on Apple\'s or Google\'s powerful servers in a secure data center. You access it over the internet.' },

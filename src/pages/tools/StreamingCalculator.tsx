@@ -143,7 +143,7 @@ const SERVICES: StreamingService[] = [
   {
     id: 'youtube',
     name: 'YouTube Premium',
-    emoji: '',
+    emoji: '▶',
     category: 'video',
     tiers: [{ label: 'Individual', price: 14 }],
     hasFreeTrialNote: 'YouTube is free with ads. Premium removes ads and adds background play.',

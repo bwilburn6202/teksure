@@ -16,7 +16,7 @@ const HowItWorks = () => (
   <div className="min-h-screen bg-background flex flex-col">
     <SEOHead
       title="How TekSure Works — Get Tech Help in 4 Simple Steps"
-      description="Plain-English tech support, no runaround. Sign up free, describe your issue, get matched with a verified technician, and only pay when the job is done."
+      description="Getting tech support is easy with TekSure. Sign up free, describe your issue, get matched with a verified technician, and only pay when the job is done."
       path="/how-it-works"
       jsonLd={{
         '@context': 'https://schema.org',
@@ -32,7 +32,7 @@ const HowItWorks = () => (
       }}
     />
     <Navbar />
-    <main className="flex-1">
+    <main id="main-content" className="flex-1">
       {/* Header */}
       <section className="border-b border-border">
         <div className="container py-16 md:py-24 text-center">
@@ -82,7 +82,7 @@ const HowItWorks = () => (
               <Link to="/get-help">Get Help Now <ArrowRight className="h-4 w-4" /></Link>
             </Button>
             <Button asChild variant="outline" size="lg" className="gap-2 rounded-xl h-12 px-6 border-background/20 text-background hover:bg-background/10">
-              <Link to="/get-help"><Phone className="h-4 w-4" /> Book a Session</Link>
+              <Link to="/book"><Phone className="h-4 w-4" /> Book a Session</Link>
             </Button>
           </div>
         </div>

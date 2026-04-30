@@ -9,7 +9,7 @@ export const guidesBatch32: Guide[] = [
     category: 'health-tech',
     tags: ['medication', 'medisafe', 'pill reminder', 'prescription', 'health app'],
     readTime: '5 min',
-    thumbnailEmoji: '💊',
+    thumbnailEmoji: '',
     publishedAt: '2026-04-19',
     difficulty: 'Beginner',
     steps: [
@@ -46,7 +46,7 @@ export const guidesBatch32: Guide[] = [
     category: 'health-tech',
     tags: ['silversneakers', 'medicare', 'fitness', 'gym', 'exercise for seniors'],
     readTime: '5 min',
-    thumbnailEmoji: '🏋️',
+    thumbnailEmoji: '',
     publishedAt: '2026-04-19',
     difficulty: 'Beginner',
     steps: [
@@ -82,7 +82,7 @@ export const guidesBatch32: Guide[] = [
     category: 'safety-guides',
     tags: ['life360', 'family location', 'safety', 'location sharing', 'caregiver'],
     readTime: '5 min',
-    thumbnailEmoji: '📍',
+    thumbnailEmoji: '',
     publishedAt: '2026-04-19',
     difficulty: 'Beginner',
     steps: [
@@ -119,7 +119,7 @@ export const guidesBatch32: Guide[] = [
     category: 'essential-skills',
     tags: ['microsoft to do', 'task list', 'reminders', 'productivity', 'free app'],
     readTime: '5 min',
-    thumbnailEmoji: '✅',
+    thumbnailEmoji: '',
     publishedAt: '2026-04-19',
     difficulty: 'Beginner',
     steps: [
@@ -148,43 +148,7 @@ export const guidesBatch32: Guide[] = [
     ],
   },
 
-  {
-    slug: 'grubhub-app-guide',
-    title: 'How to Order Food Delivery with Grubhub',
-    excerpt: 'Grubhub delivers food from local restaurants to your door — browse menus, order, pay, and track delivery all from your phone.',
-    body: `Grubhub is a food delivery service that brings restaurant meals to your home. You browse menus from nearby restaurants, place an order on the app or website, and a delivery driver brings it to your door, typically within 30 to 60 minutes.\n\nGrubhub is available in most US cities and works with hundreds of thousands of restaurant partners, from national chains like McDonald's and Panera to local diners and pizza shops. You can filter by cuisine type, delivery time, price range, and dietary preferences.\n\nDelivery fees vary by restaurant and distance, typically ranging from $0 to $6. You can also tip the driver within the app after delivery. Grubhub+ is a membership program ($9.99/month) that offers free delivery on orders over $12 from eligible restaurants.\n\nFor older adults or those with limited mobility, food delivery services like Grubhub are a practical way to enjoy restaurant food without needing to drive or go out. They also serve as a helpful resource during illness or bad weather.\n\nGrubhub accepts credit cards, debit cards, PayPal, and Venmo. You save your payment method in the app so checkout is quick. Your previous orders are saved, making it easy to reorder favorite meals.`,
-    category: 'app-guides',
-    tags: ['grubhub', 'food delivery', 'restaurant delivery', 'ordering food', 'delivery app'],
-    readTime: '5 min',
-    thumbnailEmoji: '🍔',
-    publishedAt: '2026-04-19',
-    difficulty: 'Beginner',
-    steps: [
-      {
-        title: 'Download Grubhub and create an account',
-        content: 'Search "Grubhub" in the App Store or Google Play. Download the app, enter your email address, create a password, and add your delivery address.',
-      },
-      {
-        title: 'Browse restaurants',
-        content: 'The main screen shows restaurants near your delivery address. Use the filter button to narrow results by cuisine type (Italian, Chinese, American, etc.) or estimated delivery time.',
-      },
-      {
-        title: 'Add items to your cart',
-        content: 'Tap a restaurant to see its menu. Tap items to add them to your cart. Some items have options to customize — for example, choosing a side dish or specifying no onions.',
-        tip: 'Check the "Popular Items" section at the top of any restaurant menu for the most commonly ordered dishes.',
-      },
-      {
-        title: 'Checkout and add payment',
-        content: 'Tap "View Cart" then "Checkout." Add a credit card, debit card, or PayPal account. Review the order total including delivery fee and taxes before confirming.',
-      },
-      {
-        title: 'Track your order',
-        content: 'After placing the order, a tracking screen shows the order status: being prepared → picked up → on the way → delivered. You receive text notifications at each stage.',
-        warning: 'Confirm your delivery address is correct before placing the order. If the address is wrong, you may not receive a refund for undelivered food.',
-      },
-    ],
-  },
-
+  
   {
     slug: 'amazon-fresh-guide',
     title: 'How to Order Groceries with Amazon Fresh',
@@ -193,7 +157,7 @@ export const guidesBatch32: Guide[] = [
     category: 'app-guides',
     tags: ['amazon fresh', 'grocery delivery', 'amazon prime', 'groceries online', 'delivery'],
     readTime: '5 min',
-    thumbnailEmoji: '🛒',
+    thumbnailEmoji: '',
     publishedAt: '2026-04-19',
     difficulty: 'Beginner',
     steps: [
@@ -230,7 +194,7 @@ export const guidesBatch32: Guide[] = [
     category: 'government-civic',
     tags: ['va.gov', 'veterans', 'va health', 'benefits', 'military'],
     readTime: '6 min',
-    thumbnailEmoji: '🏥',
+    thumbnailEmoji: '',
     publishedAt: '2026-04-19',
     difficulty: 'Beginner',
     steps: [
@@ -266,7 +230,7 @@ export const guidesBatch32: Guide[] = [
     category: 'safety-guides',
     tags: ['spam calls', 'robocalls', 'call blocking', 'iphone', 'phone scams'],
     readTime: '5 min',
-    thumbnailEmoji: '🚫',
+    thumbnailEmoji: '',
     publishedAt: '2026-04-19',
     difficulty: 'Beginner',
     steps: [
@@ -303,7 +267,7 @@ export const guidesBatch32: Guide[] = [
     category: 'safety-guides',
     tags: ['spam calls', 'robocalls', 'android', 'call blocking', 'phone scams'],
     readTime: '5 min',
-    thumbnailEmoji: '🚫',
+    thumbnailEmoji: '',
     publishedAt: '2026-04-19',
     difficulty: 'Beginner',
     steps: [
@@ -339,7 +303,7 @@ export const guidesBatch32: Guide[] = [
     category: 'app-guides',
     tags: ['costco', 'membership', 'shopping', 'warehouse', 'savings'],
     readTime: '5 min',
-    thumbnailEmoji: '🛍️',
+    thumbnailEmoji: '',
     publishedAt: '2026-04-19',
     difficulty: 'Beginner',
     steps: [
@@ -375,7 +339,7 @@ export const guidesBatch32: Guide[] = [
     category: 'app-guides',
     tags: ['target', 'target circle', 'savings', 'loyalty program', 'shopping'],
     readTime: '4 min',
-    thumbnailEmoji: '🎯',
+    thumbnailEmoji: '',
     publishedAt: '2026-04-19',
     difficulty: 'Beginner',
     steps: [
@@ -411,7 +375,7 @@ export const guidesBatch32: Guide[] = [
     category: 'app-guides',
     tags: ['cvs', 'extracare', 'pharmacy', 'rewards', 'prescription refill'],
     readTime: '5 min',
-    thumbnailEmoji: '💊',
+    thumbnailEmoji: '',
     publishedAt: '2026-04-19',
     difficulty: 'Beginner',
     steps: [
@@ -448,7 +412,7 @@ export const guidesBatch32: Guide[] = [
     category: 'app-guides',
     tags: ['walgreens', 'mywalgreens', 'pharmacy', 'rewards', 'prescription app'],
     readTime: '5 min',
-    thumbnailEmoji: '💊',
+    thumbnailEmoji: '',
     publishedAt: '2026-04-19',
     difficulty: 'Beginner',
     steps: [
@@ -484,7 +448,7 @@ export const guidesBatch32: Guide[] = [
     category: 'essential-skills',
     tags: ['digital id', 'mobile driver license', 'apple wallet', 'google wallet', 'state id'],
     readTime: '6 min',
-    thumbnailEmoji: '🪪',
+    thumbnailEmoji: '',
     publishedAt: '2026-04-19',
     difficulty: 'Intermediate',
     steps: [
@@ -521,7 +485,7 @@ export const guidesBatch32: Guide[] = [
     category: 'entertainment',
     tags: ['apple tv plus', 'streaming', 'apple original', 'tv shows', 'movies'],
     readTime: '5 min',
-    thumbnailEmoji: '📺',
+    thumbnailEmoji: '',
     publishedAt: '2026-04-19',
     difficulty: 'Beginner',
     steps: [
@@ -557,7 +521,7 @@ export const guidesBatch32: Guide[] = [
     category: 'entertainment',
     tags: ['max', 'hbo max', 'streaming', 'hbo', 'warner bros'],
     readTime: '5 min',
-    thumbnailEmoji: '📺',
+    thumbnailEmoji: '',
     publishedAt: '2026-04-19',
     difficulty: 'Beginner',
     steps: [
@@ -593,7 +557,7 @@ export const guidesBatch32: Guide[] = [
     category: 'windows-guides',
     tags: ['windows 11', 'clipboard history', 'copy paste', 'windows tips', 'productivity'],
     readTime: '4 min',
-    thumbnailEmoji: '📋',
+    thumbnailEmoji: '',
     publishedAt: '2026-04-19',
     difficulty: 'Beginner',
     steps: [
@@ -612,7 +576,7 @@ export const guidesBatch32: Guide[] = [
       },
       {
         title: 'Pin frequently used items',
-        content: 'In the Clipboard History panel, hover over any item and click the pin icon (📌). Pinned items stay in the list permanently and are not cleared when you restart your computer or clear history.',
+        content: 'In the Clipboard History panel, hover over any item and click the pin icon (). Pinned items stay in the list permanently and are not cleared when you restart your computer or clear history.',
       },
       {
         title: 'Enable cross-device clipboard sync (optional)',
@@ -630,7 +594,7 @@ export const guidesBatch32: Guide[] = [
     category: 'essential-skills',
     tags: ['android', 'scan documents', 'pdf', 'google drive', 'paperless'],
     readTime: '4 min',
-    thumbnailEmoji: '📄',
+    thumbnailEmoji: '',
     publishedAt: '2026-04-19',
     difficulty: 'Beginner',
     steps: [
@@ -667,7 +631,7 @@ export const guidesBatch32: Guide[] = [
     category: 'safety-guides',
     tags: ['iphone', 'satellite', 'emergency', 'ios 18', 'no signal'],
     readTime: '5 min',
-    thumbnailEmoji: '🛰️',
+    thumbnailEmoji: '',
     publishedAt: '2026-04-19',
     difficulty: 'Beginner',
     steps: [

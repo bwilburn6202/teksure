@@ -147,10 +147,9 @@ export default function Profile() {
         title="My Profile — TekSure"
         description="Manage your TekSure account details."
         path="/profile"
-        noindex
       />
       <Navbar />
-      <main className="container max-w-xl py-16 min-h-screen bg-background">
+      <main id="main-content" className="container max-w-xl py-16 min-h-screen bg-background">
 
         <h1 className="text-3xl md:text-4xl font-bold tracking-tight mb-8 text-primary">My Profile</h1>
 

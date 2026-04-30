@@ -100,7 +100,7 @@ export function TechJournal() {
         <Navbar />
       </div>
 
-      <main className="container py-12 min-h-[70vh]">
+      <main id="main-content" className="container py-12 min-h-[70vh]">
         <div className="max-w-3xl mx-auto">
           <div className="flex items-center gap-3 mb-8">
             <BookOpen className="h-8 w-8 text-primary" />

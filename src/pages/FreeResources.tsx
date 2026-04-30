@@ -48,7 +48,7 @@ const resources: Resource[] = [
     url: 'https://www.internetessentials.com',
     category: 'Internet & Phone',
     description:
-      'Reliable home internet for $9.95/month in areas served by Comcast. Includes free or low-cost laptop offers and free digital literacy training.',
+      'Reliable home internet for just $9.95/month in areas served by Comcast. Includes free or low-cost laptop offers and free digital literacy training.',
     eligibility:
       'Available to households with at least one student on free/reduced lunch, or families receiving public assistance programs. Comcast service area required.',
   },
@@ -296,7 +296,7 @@ const FreeResources = () => {
       />
       <Navbar />
 
-      <main className="min-h-screen bg-gray-50 dark:bg-gray-950">
+      <main id="main-content" className="min-h-screen bg-gray-50 dark:bg-gray-950">
 
         {/* Hero */}
         <section className="bg-white dark:bg-gray-900 border-b border-gray-200 dark:border-gray-800">

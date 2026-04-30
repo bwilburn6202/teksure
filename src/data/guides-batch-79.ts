@@ -8,7 +8,7 @@ export const guidesBatch79: Guide[] = [
     category: `life-transitions`,
     tags: [`sortly`, `home inventory`, `insurance`, `moving`, `organization`],
     readTime: `7 min`,
-    thumbnailEmoji: `📦`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-20`,
     difficulty: `Beginner`,
     body: `A home inventory is one of the most important things you can have — and most people never make one until they need it after a fire, flood, or break-in. Sortly is a free app that makes building that inventory straightforward, even if you are not very comfortable with technology.
@@ -58,7 +58,7 @@ Updating your inventory when you buy something new takes only a minute or two, a
     category: `life-transitions`,
     tags: [`will`, `trust`, `estate planning`, `trust and will`, `legal documents`],
     readTime: `8 min`,
-    thumbnailEmoji: `📜`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-20`,
     difficulty: `Intermediate`,
     body: `Estate planning — creating a will or a trust — is something most people know they should do but keep putting off. Trust & Will is an online service that makes this process much more accessible. You can complete a legally valid will or living trust from home, on your own schedule, without scheduling an appointment at a law office.
@@ -105,7 +105,7 @@ Once your documents are complete, Trust & Will provides instructions for signing
     category: `life-transitions`,
     tags: [`apple`, `legacy contact`, `iphone`, `digital estate`, `after death`],
     readTime: `5 min`,
-    thumbnailEmoji: `🍎`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-20`,
     difficulty: `Beginner`,
     body: `When someone passes away, their digital accounts — photos, messages, documents, and more — are often locked away with no way for family members to access them. Apple created the Legacy Contact feature to give you control over who can access your Apple account and its contents after you are gone.
@@ -147,7 +147,7 @@ This is one of the kindest things you can do for the people you love. Spending f
     category: `life-transitions`,
     tags: [`facebook`, `memorial account`, `digital estate`, `legacy contact`, `social media`],
     readTime: `6 min`,
-    thumbnailEmoji: `🕊️`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-20`,
     difficulty: `Beginner`,
     body: `Many people spend years building a Facebook profile full of photos, memories, and connections. When someone passes away, their Facebook account does not disappear automatically — and without a plan in place, family members may find it difficult to manage or access.
@@ -193,7 +193,7 @@ Setting up your preferences takes just a few minutes and gives you peace of mind
     category: `life-transitions`,
     tags: [`passwords`, `digital accounts`, `estate planning`, `password manager`, `family`],
     readTime: `7 min`,
-    thumbnailEmoji: `🔑`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-20`,
     difficulty: `Beginner`,
     body: `When someone passes away or becomes seriously ill, one of the most practical challenges families face is accessing digital accounts — banking, email, Amazon, medical portals, streaming services, and dozens of others. Without the passwords, families can lose access to important records, automatic bill payments may go unnoticed, and irreplaceable photos stored in cloud accounts may be permanently lost.
@@ -241,7 +241,7 @@ A third option is a combination: use a password manager for day-to-day passwords
     category: `life-transitions`,
     tags: [`birth certificate`, `vital records`, `marriage license`, `VitalChek`, `government`],
     readTime: `6 min`,
-    thumbnailEmoji: `📋`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-20`,
     difficulty: `Beginner`,
     body: `Birth certificates, marriage licenses, divorce decrees, and death certificates are called vital records because they are essential documents used for everything from applying for a passport to collecting Social Security benefits. Losing these documents or needing additional copies used to mean a trip to a government office. Today, most states allow you to order certified copies online.
@@ -289,7 +289,7 @@ Costs also vary by state, but certified copies typically run between $10 and $30
     category: `government-civic`,
     tags: [`social security`, `survivor benefits`, `SSA`, `widows`, `death benefits`],
     readTime: `8 min`,
-    thumbnailEmoji: `🏛️`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-20`,
     difficulty: `Beginner`,
     body: `When a person who paid into Social Security passes away, their surviving family members may be entitled to monthly benefits from the Social Security Administration (SSA). These are called survivor benefits, and they can provide meaningful financial support during a difficult time. Many people do not realize they may qualify, or they put off applying because the process seems overwhelming.
@@ -335,7 +335,7 @@ The Social Security Administration strongly encourages people to apply as soon a
     category: `life-transitions`,
     tags: [`grief`, `mental health`, `support groups`, `apps`, `bereavement`],
     readTime: `6 min`,
-    thumbnailEmoji: `💛`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-20`,
     difficulty: `Beginner`,
     body: `Grief is one of the most universal human experiences, and yet it can feel deeply isolating. Many people find that after a loss, support from family and friends fades faster than the grief itself. Technology has created new ways to find connection, community, and professional support — available any time of day or night, from the privacy of your own home.
@@ -379,7 +379,7 @@ AARP's Grief and Loss resource page at aarp.org/home-family/friends-family/grief
     category: `life-transitions`,
     tags: [`moving`, `organization`, `apps`, `checklist`, `moving tips`],
     readTime: `6 min`,
-    thumbnailEmoji: `🚚`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-20`,
     difficulty: `Beginner`,
     body: `Moving to a new home is consistently ranked as one of the most stressful life events a person can go through. There are hundreds of tasks to coordinate — packing, hiring movers, changing your address, setting up utilities, notifying banks and government agencies — all happening at the same time. Apps and digital tools cannot eliminate the stress, but they can bring real order to the chaos.
@@ -423,7 +423,7 @@ For tracking address changes, the USPS website (usps.com) lets you submit an off
     category: `life-transitions`,
     tags: [`PODS`, `portable storage`, `moving`, `storage containers`, `moving tips`],
     readTime: `6 min`,
-    thumbnailEmoji: `🏠`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-20`,
     difficulty: `Beginner`,
     body: `PODS — which stands for Portable On Demand Storage — is a service that delivers a large storage container directly to your home. You load it at your own pace, and then PODS picks it up and either delivers it to your new address or stores it at a PODS facility until you are ready for it. This approach is different from renting a moving truck, where you have a very limited window of time to load and unload.
@@ -465,7 +465,7 @@ PODS is available in most major metropolitan areas in the United States. In very
     category: `health-tech`,
     tags: [`caregiver`, `family care`, `CaringBridge`, `coordination`, `health apps`],
     readTime: `7 min`,
-    thumbnailEmoji: `🤝`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-20`,
     difficulty: `Beginner`,
     body: `Caring for an aging parent or seriously ill family member is often a team effort — and that team needs coordination. Who is taking Mom to her Tuesday appointment? Has anyone picked up the prescription? What did the doctor say at last week's visit? Without a shared system, family members can end up duplicating efforts, missing tasks, or feeling out of the loop.
@@ -507,7 +507,7 @@ CareZone (see also our separate CareZone guide) focuses more on health tracking 
     category: `health-tech`,
     tags: [`CareZone`, `medication tracker`, `caregiving`, `health app`, `appointments`],
     readTime: `6 min`,
-    thumbnailEmoji: `💊`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-20`,
     difficulty: `Beginner`,
     body: `Keeping track of a loved one's medications, doctor appointments, and health history is a demanding job — especially when multiple family members are involved in their care. CareZone is a free app designed specifically for this purpose. It gives you one organized place to track all medications with dosage schedules, log upcoming and past appointments, record health notes from doctor visits, and store important insurance and contact information.
@@ -553,7 +553,7 @@ The app is free to download on iPhone and Android. Some premium features are ava
     category: `health-tech`,
     tags: [`MyChart`, `patient portal`, `health records`, `Epic`, `telehealth`],
     readTime: `7 min`,
-    thumbnailEmoji: `🏥`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-20`,
     difficulty: `Beginner`,
     body: `MyChart is a free online patient portal used by thousands of hospitals, clinics, and medical practices across the United States. If your doctor's office, hospital, or health system uses the Epic electronic health record system — which most major health systems do — then you have access to MyChart. It allows you to view your medical records, see lab results, message your care team directly, request prescription refills, schedule appointments, and pay medical bills, all from your computer or smartphone.
@@ -599,7 +599,7 @@ MyChart is available at mychart.com and as a free app for iPhone and Android. Yo
     category: `health-tech`,
     tags: [`Kaiser Permanente`, `health app`, `prescription refill`, `telehealth`, `insurance`],
     readTime: `6 min`,
-    thumbnailEmoji: `⚕️`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-20`,
     difficulty: `Beginner`,
     body: `Kaiser Permanente is one of the largest managed care organizations in the United States, serving members in California, Colorado, Georgia, Hawaii, Maryland, Oregon, Virginia, Washington, and Washington, D.C. If you are a Kaiser member, the Kaiser Permanente app and website give you access to nearly every aspect of your care — from scheduling appointments and refilling prescriptions to reviewing lab results and speaking with a doctor by video.
@@ -641,7 +641,7 @@ Setting up the app requires your Kaiser member ID number, which is printed on yo
     category: `health-tech`,
     tags: [`CVS`, `pharmacy`, `ExtraCare`, `prescription refill`, `pharmacy app`],
     readTime: `5 min`,
-    thumbnailEmoji: `💊`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-20`,
     difficulty: `Beginner`,
     body: `CVS Pharmacy is one of the largest pharmacy chains in the United States, with more than 9,000 locations. The CVS app brings many of the most useful pharmacy and store features right to your smartphone, saving you time and trips to the store.
@@ -683,7 +683,7 @@ Setting up the app requires creating a CVS account or linking your existing Extr
     category: `health-tech`,
     tags: [`Walgreens`, `pharmacy`, `Balance Rewards`, `prescription refill`, `health app`],
     readTime: `5 min`,
-    thumbnailEmoji: `💊`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-20`,
     difficulty: `Beginner`,
     body: `Walgreens is one of the most recognized pharmacy chains in the United States, with pharmacies in all 50 states. The Walgreens app makes managing your health and shopping needs more convenient by bringing prescription management, rewards tracking, health records, and appointment scheduling to your smartphone.
@@ -725,7 +725,7 @@ The app also connects to Walgreens Find Care, which can help you locate health s
     category: `health-tech`,
     tags: [`Costco`, `pharmacy`, `low cost prescriptions`, `generic drugs`, `prescription savings`],
     readTime: `5 min`,
-    thumbnailEmoji: `🏪`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-20`,
     difficulty: `Beginner`,
     body: `Costco Pharmacy is well known for offering some of the lowest prescription drug prices in the country. What surprises many people is that you do not need a Costco membership to use the pharmacy — under most state laws, pharmacy services must be accessible to non-members. You can walk in to any Costco pharmacy counter and fill a prescription even without a membership card.
@@ -765,7 +765,7 @@ To find prices before transferring a prescription, use Costco's Drug Information
     category: `health-tech`,
     tags: [`Amazon Pharmacy`, `prescription delivery`, `online pharmacy`, `medication`, `Prime`],
     readTime: `6 min`,
-    thumbnailEmoji: `📦`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-20`,
     difficulty: `Beginner`,
     body: `Amazon Pharmacy is a full-service, licensed online pharmacy that lets you fill prescriptions and have them delivered directly to your home. If you already use Amazon for shopping, adding prescription management to the same account is straightforward. Amazon Pharmacy is available in most U.S. states for most types of medications, with the notable exception of controlled substances.
@@ -807,7 +807,7 @@ To get started, you need an Amazon account (free), and your doctor must send you
     category: `health-tech`,
     tags: [`Cost Plus Drugs`, `generic medications`, `prescription savings`, `Mark Cuban`, `affordable drugs`],
     readTime: `6 min`,
-    thumbnailEmoji: `💰`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-20`,
     difficulty: `Beginner`,
     body: `Cost Plus Drugs, officially known as Mark Cuban Cost Plus Drug Company, is an online pharmacy with a straightforward mission: sell medications at the actual cost to produce them, plus a 15% markup and a small pharmacy dispensing fee, with no hidden pricing. The company publishes all of its drug prices openly on its website, which is unusual in the pharmaceutical industry.
@@ -850,7 +850,7 @@ To use Cost Plus Drugs, your doctor needs to send a prescription electronically 
     category: `health-tech`,
     tags: [`Blink Health`, `prescription savings`, `discount pharmacy`, `generic drugs`, `uninsured`],
     readTime: `5 min`,
-    thumbnailEmoji: `💊`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-20`,
     difficulty: `Beginner`,
     body: `Blink Health is a prescription savings service that works differently from a traditional pharmacy. You search for your medication on the Blink Health website or app, purchase it at Blink's discounted price, and then pick up your prescription at any participating pharmacy near you — including major chains like CVS, Walgreens, Walmart, Kroger, and many independent pharmacies. The pharmacy fills the prescription and checks you in using your Blink ID or confirmation number.

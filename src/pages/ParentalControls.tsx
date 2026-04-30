@@ -17,7 +17,7 @@ export default function ParentalControls() {
         path="/safety/parental-controls"
       />
       <Navbar />
-      <main className="container py-16 min-h-[60vh] max-w-4xl">
+      <main id="main-content" className="container py-16 min-h-[60vh] max-w-4xl">
         <div className="flex items-center gap-3 mb-2 border-b border-border pb-6">
           <Baby className="h-8 w-8 text-primary" />
           <h1 className="text-3xl md:text-4xl font-bold tracking-tight">Parental Controls Guide</h1>

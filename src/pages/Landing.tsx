@@ -1,19 +1,33 @@
-import { useState, type FormEvent } from 'react';
+import { useState, useEffect, type FormEvent } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import { ArrowUp } from 'lucide-react';
 import { Navbar } from '@/components/layout/Navbar';
 import { SEOHead } from '@/components/SEOHead';
 
 /**
- * Homepage — centered hero on the global mesh wallpaper.
+ * Homepage — fixed centered hero on the global mesh wallpaper.
  *
- * Layout: TekSure logo · big rounded search input · pill action chips ·
- * trust line. The page paints no background of its own, so the
- * MeshGradientBackground (mounted in AppShell) shines through.
+ * The page locks document scroll while mounted so the hero (logo, search,
+ * chips, trust line) is always centered in the viewport without anything
+ * pushing the layout taller than the screen. The MeshGradientBackground
+ * mounted in AppShell shines through unchanged.
  */
 export default function Landing() {
   const [query, setQuery] = useState('');
   const navigate = useNavigate();
+
+  // Lock body scroll while this page is mounted so the centered hero
+  // is the entire visible viewport — no scrollbar, no overflow.
+  useEffect(() => {
+    const prevHtml = document.documentElement.style.overflow;
+    const prevBody = document.body.style.overflow;
+    document.documentElement.style.overflow = 'hidden';
+    document.body.style.overflow = 'hidden';
+    return () => {
+      document.documentElement.style.overflow = prevHtml;
+      document.body.style.overflow = prevBody;
+    };
+  }, []);
 
   const onSubmit = (e: FormEvent) => {
     e.preventDefault();
@@ -25,7 +39,7 @@ export default function Landing() {
   const chips = [
     { label: 'Get real human help', to: '/get-help' },
     { label: 'Find the right guide', to: '/guides' },
-    { label: 'Ask TekBrain',        to: '/brain' },
+    { label: 'Ask TekBrain',        to: '/tekbrain' },
     { label: 'Browse tools',        to: '/tools' },
     { label: 'More',                to: '/site-index' },
   ];
@@ -37,25 +51,27 @@ export default function Landing() {
         description="Free step-by-step tech guides, quick fixes, and verified tech support for seniors and beginners. No jargon — clear answers."
         path="/"
       />
-      <Navbar />
+      {/* Navbar with noSpacer — main fills full viewport instead. */}
+      <Navbar noSpacer />
 
       <main
         id="main-content"
         tabIndex={-1}
-        className="min-h-[calc(100dvh-80px)] sm:min-h-[calc(100dvh-88px)]
-                   w-full flex flex-col items-center justify-center
-                   px-4 pb-12 outline-none"
+        className="fixed inset-0 z-0 w-full h-[100dvh]
+                   flex flex-col items-center justify-center
+                   px-4 pt-[80px] sm:pt-[88px]
+                   overflow-hidden outline-none"
       >
         <div className="w-full max-w-3xl flex flex-col items-center">
           {/* Logo — large, horizontal */}
-          <div className="mb-10 sm:mb-12">
+          <div className="mb-6 sm:mb-10">
             <img
               src="/teksure-logo.svg"
               alt="TekSure"
               width={552}
               height={120}
               fetchPriority="high"
-              className="h-20 sm:h-24 md:h-28 w-auto block dark:hidden"
+              className="h-16 sm:h-20 md:h-24 w-auto block dark:hidden"
             />
             <img
               src="/teksure-logo-white.svg"
@@ -63,7 +79,7 @@ export default function Landing() {
               aria-hidden="true"
               width={552}
               height={120}
-              className="h-20 sm:h-24 md:h-28 w-auto hidden dark:block"
+              className="h-16 sm:h-20 md:h-24 w-auto hidden dark:block"
             />
           </div>
 
@@ -110,7 +126,7 @@ export default function Landing() {
           {/* Action chips */}
           <nav
             aria-label="Quick actions"
-            className="flex flex-wrap items-center justify-center gap-2.5 mb-12"
+            className="flex flex-wrap items-center justify-center gap-2.5 mb-8"
           >
             {chips.map((c) => (
               <Link
@@ -134,7 +150,7 @@ export default function Landing() {
 
           {/* Trust line */}
           <p className="text-sm sm:text-[15px] text-muted-foreground text-center">
-            <span className="font-bold text-foreground">1,200+</span>
+            <span className="font-bold text-foreground">2,500+</span>
             <span className="ml-1.5">free guides</span>
             <span className="mx-2 opacity-50" aria-hidden="true">·</span>
             Real humans

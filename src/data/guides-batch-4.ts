@@ -10,7 +10,7 @@ export const guidesBatch4: Guide[] = [
     tags: ['iPhone', 'iOS', 'updates', 'Apple', 'beginners'],
     readTime: '5 min',
     videoUrl: 'https://www.youtube.com/embed/2Dk-DnXUeq4',
-    thumbnailEmoji: '📱',
+    thumbnailEmoji: '',
     publishedAt: '2026-04-08',
     difficulty: 'Beginner',
     body: `Keeping your iPhone updated is one of the most important things you can do to keep it safe and working well. Apple releases updates that fix security holes (ways hackers can get into your phone), fix small bugs, and sometimes add helpful new features. Many people put off updates because they worry something will go wrong — but skipping updates actually makes your phone less safe.
@@ -36,7 +36,7 @@ If it says "Your software is up to date," that means your phone already has the 
     tags: ['spam calls', 'robocalls', 'iPhone', 'Android', 'scams', 'phone'],
     readTime: '6 min',
     videoUrl: 'https://www.youtube.com/embed/POo9oUF6WC8',
-    thumbnailEmoji: '📵',
+    thumbnailEmoji: '',
     publishedAt: '2026-04-08',
     difficulty: 'Beginner',
     body: `Robocalls and spam calls are one of the biggest annoyances — and dangers — for phone users today. The FTC receives millions of complaints about these calls every year. Many are from scammers pretending to be the IRS, Medicare, Social Security, or even your own bank. The good news is that both iPhone and Android phones have free, built-in tools to block many of these calls automatically.
@@ -59,7 +59,7 @@ You can also register your phone number at donotcall.gov for free, which is the 
     tags: ['passkeys', 'passwords', 'security', 'iPhone', 'Google', 'Apple'],
     readTime: '5 min',
     videoUrl: 'https://www.youtube.com/embed/FTweNDAc9Fs',
-    thumbnailEmoji: '🔑',
+    thumbnailEmoji: '',
     publishedAt: '2026-04-08',
     difficulty: 'Beginner',
     body: `A passkey is a new way to log in to websites and apps that does not require you to type a password. Instead of remembering a password, your phone or computer does the work for you. When you want to log in, your device asks you to use your fingerprint, Face ID, or PIN — the same way you already unlock your phone. That is it. No password to remember, no password to forget, and no password for a hacker to steal.
@@ -82,7 +82,7 @@ More and more major websites now offer passkeys: Google, Apple, Microsoft, PayPa
     tags: ['scams', 'AI scams', 'grandparent scam', 'voice cloning', 'phone', 'safety'],
     readTime: '6 min',
     videoUrl: 'https://www.youtube.com/embed/r2hcq5NNQe8',
-    thumbnailEmoji: '🎭',
+    thumbnailEmoji: '',
     publishedAt: '2026-04-08',
     difficulty: 'Beginner',
     body: `One of the most alarming scams of 2026 is the AI voice cloning call. Here is how it works: a scammer uses artificial intelligence software to clone the voice of your grandchild, son, daughter, or another loved one. They only need a few seconds of that person's voice — which scammers often get from social media videos. Then they call you, and the voice on the other end sounds exactly like your family member, saying they are in trouble: arrested, in a car accident, sick abroad, or in danger. They beg you not to call anyone else and ask you to wire money or buy gift cards immediately.
@@ -106,7 +106,7 @@ If you receive one of these calls, report it to the FTC at reportfraud.ftc.gov a
     tags: ['Windows 11', 'Start Menu', 'Windows 10', 'beginners', 'desktop'],
     readTime: '5 min',
     videoUrl: 'https://www.youtube.com/embed/5kt4t2gzt9g',
-    thumbnailEmoji: '🪟',
+    thumbnailEmoji: '',
     publishedAt: '2026-04-08',
     difficulty: 'Beginner',
     body: `If your computer recently updated to Windows 11 — or if you bought a new PC that came with it — you may have noticed that things look quite different from Windows 10. The biggest change is the Start button and Start Menu, which moved from the lower-left corner of the screen to the center. This trips up a lot of people who have been clicking the bottom-left corner for years. The good news: everything still works the same way, it is just in a different spot.
@@ -130,7 +130,7 @@ Another helpful tip: the Settings app (where you control things like Wi-Fi, disp
     tags: ['Google Photos', 'storage', 'Android', 'Google account', 'photos'],
     readTime: '6 min',
     videoUrl: 'https://www.youtube.com/embed/xu1agsXYdqc',
-    thumbnailEmoji: '📸',
+    thumbnailEmoji: '',
     publishedAt: '2026-04-08',
     difficulty: 'Beginner',
     body: `Google gives every account 15 gigabytes of free storage — but that storage is shared between Google Photos, Gmail, and Google Drive. If you use Google Photos to back up your pictures and videos automatically, that 15 GB can fill up faster than you expect, especially if you have had the same Google account for several years. When your storage is full, new photos stop backing up, and you may even stop receiving emails.
@@ -152,7 +152,7 @@ You can also delete items you do not need: videos take up the most space, so loo
     category: 'app-guides',
     tags: ['Netflix', 'streaming', 'password sharing', 'account', 'TV'],
     readTime: '5 min',
-    thumbnailEmoji: '📺',
+    thumbnailEmoji: '',
     publishedAt: '2026-04-08',
     difficulty: 'Beginner',
     body: `Netflix updated its rules about sharing accounts with people outside your home. If you used to share your password with a grown child in another city or a close friend, you may have received notices saying that is no longer allowed. This has confused a lot of people, and it is worth understanding exactly what changed so you are not paying for something you do not need — or accidentally locked out of your own account.
@@ -176,7 +176,7 @@ If you have children or grandchildren in college or living on their own who need
     tags: ['battery', 'iPhone', 'Android', 'settings', 'beginners'],
     readTime: '5 min',
     videoUrl: 'https://www.youtube.com/embed/KUWuKDTYRAQ',
-    thumbnailEmoji: '🔋',
+    thumbnailEmoji: '',
     publishedAt: '2026-04-08',
     difficulty: 'Beginner',
     body: `A phone that runs out of battery before the end of the day is one of the most common frustrations for smartphone users. The cause is usually a combination of screen brightness, apps running in the background, and features that are always on even when you are not using them. The good news is that a few simple changes in your phone's settings can make a noticeable difference — often adding two to three hours of battery life.
@@ -199,7 +199,7 @@ Other things that drain battery quickly: Wi-Fi scanning when you are away from h
     tags: ['WhatsApp', 'privacy', 'read receipts', 'blue ticks', 'messaging'],
     readTime: '3 min',
     videoUrl: 'https://www.youtube.com/embed/DLK4f_L6v-Q',
-    thumbnailEmoji: '✅',
+    thumbnailEmoji: '',
     publishedAt: '2026-04-08',
     difficulty: 'Beginner',
     body: `In WhatsApp, messages show a gray check mark when sent, two gray check marks when delivered to the other person's phone, and two blue check marks when that person has read the message. Those blue check marks — sometimes called "blue ticks" — let the sender know you have seen their message. Some people find this creates pressure to reply immediately. Fortunately, WhatsApp lets you turn off read receipts so that your blue ticks are never shown.
@@ -222,7 +222,7 @@ There is one important thing to know: if you are in a group chat, read receipts 
     tags: ['iCloud', 'iPhone', 'storage', 'Apple', 'backup', 'photos'],
     readTime: '6 min',
     videoUrl: 'https://www.youtube.com/embed/Tzo3BLYgj3U',
-    thumbnailEmoji: '☁️',
+    thumbnailEmoji: '',
     publishedAt: '2026-04-08',
     difficulty: 'Beginner',
     body: `If your iPhone has been showing a message that says "iCloud Storage Is Full," it means the free 5 gigabytes Apple gives every account has been used up. When this happens, your phone stops backing itself up to iCloud, your photos may stop syncing, and you might not receive new iMessages on other Apple devices. It sounds alarming, but it is a common and easy problem to fix.
@@ -245,7 +245,7 @@ If you want to add more storage, Apple's iCloud+ plans are affordable: 50 GB cos
     tags: ['Facebook', 'Marketplace', 'scams', 'online shopping', 'safety'],
     readTime: '6 min',
     videoUrl: 'https://www.youtube.com/embed/UhdW6ZgqbyQ',
-    thumbnailEmoji: '🛒',
+    thumbnailEmoji: '',
     publishedAt: '2026-04-08',
     difficulty: 'Beginner',
     body: `Facebook Marketplace is a popular place to buy and sell used items locally, but the Better Business Bureau and FTC both report that scams on Marketplace have increased significantly. Whether you are selling a piece of furniture or trying to find a deal on a phone, knowing the warning signs can save you from losing money or having your personal information stolen.
@@ -269,7 +269,7 @@ If you are buying something, watch out for: Prices that seem far too low compare
     tags: ['printer', 'Wi-Fi', 'wireless', 'Windows', 'setup'],
     readTime: '7 min',
     videoUrl: 'https://www.youtube.com/embed/ANzU4p8xKG8',
-    thumbnailEmoji: '🖨️',
+    thumbnailEmoji: '',
     publishedAt: '2026-04-08',
     difficulty: 'Beginner',
     body: `Setting up a wireless printer so it can print from any device on your home Wi-Fi network can feel confusing at first, but it usually only takes a few minutes once you know what to do. The goal is to get your printer and your computer on the same Wi-Fi network so they can "talk" to each other without a cable.
@@ -292,7 +292,7 @@ Step 2: Add the printer to your Windows computer. Click the Start button, open S
     category: 'essential-skills',
     tags: ['Google', 'Gmail', 'password', 'account recovery', 'Android'],
     readTime: '6 min',
-    thumbnailEmoji: '🔓',
+    thumbnailEmoji: '',
     publishedAt: '2026-04-08',
     difficulty: 'Beginner',
     body: `Forgetting your Google account password is one of the most stressful tech problems because your Google account often holds your Gmail, photos, contacts, and access to your Android phone's apps. The good news is that Google has a recovery process that can help you get back in — as long as you have access to the phone number or recovery email address you set up on the account.
@@ -316,7 +316,7 @@ If none of those options work — for example, if you no longer have access to y
     tags: ['YouTube', 'subscription', 'cancel', 'billing', 'streaming'],
     readTime: '4 min',
     videoUrl: 'https://www.youtube.com/embed/NNMZ8FnuqVs',
-    thumbnailEmoji: '▶️',
+    thumbnailEmoji: '▶',
     publishedAt: '2026-04-08',
     difficulty: 'Beginner',
     body: `YouTube Premium is a paid subscription that removes ads and lets you play videos in the background. Some people sign up for a free trial and then forget to cancel, while others tap "Start Trial" by accident when a promotional pop-up appears. Either way, canceling is straightforward once you know where to look — and you have until the end of your current billing period to keep access after you cancel.
@@ -338,7 +338,7 @@ On an Android phone purchased through Google: Open the Google Play Store app, ta
     category: 'how-to',
     tags: ['iPhone', 'Windows', 'photos', 'transfer', 'iCloud', 'USB'],
     readTime: '6 min',
-    thumbnailEmoji: '🖼️',
+    thumbnailEmoji: '',
     publishedAt: '2026-04-08',
     difficulty: 'Beginner',
     body: `Apple iPhones and Windows computers do not always work together naturally, which leads to a common question: how do I get photos off my iPhone and onto my PC? The good news is there are several easy ways to do this, and you can choose whichever one feels most comfortable.
@@ -360,7 +360,7 @@ Method 2 — iCloud for Windows (automatic, wireless): Download the free "iCloud
     tags: ['Medicare', 'government', 'health', 'online portal', 'seniors'],
     readTime: '7 min',
     videoUrl: 'https://www.youtube.com/embed/9s8B1jvDI68',
-    thumbnailEmoji: '🏥',
+    thumbnailEmoji: '',
     publishedAt: '2026-04-08',
     difficulty: 'Beginner',
     body: `Medicare.gov is the official website of the US Medicare program, and having an online account gives you access to a lot of useful tools: you can check what your Medicare covers, view your claims history, see when your coverage started, compare Medicare plans during Open Enrollment, and even print a replacement Medicare card if yours was lost or damaged. Setting up an account is free and only takes about 10 minutes.
@@ -383,7 +383,7 @@ Once logged in, the main "My Medicare" dashboard shows your current coverage at 
     category: 'tips-tricks',
     tags: ['TV', 'remote', 'Samsung', 'Roku', 'Fire TV', 'Apple TV', 'LG'],
     readTime: '5 min',
-    thumbnailEmoji: '📱',
+    thumbnailEmoji: '',
     publishedAt: '2026-04-08',
     difficulty: 'Beginner',
     body: `Losing the TV remote is one of the most universal frustrations. The good news is that most smart TVs can be controlled by a free app on your smartphone — and in many cases, the phone app is actually more convenient than the original remote because it has a full keyboard for searching.
@@ -406,7 +406,7 @@ Open the app, make sure your phone's Wi-Fi is on, and tap the "Devices" tab or t
     tags: ['email', 'spam', 'unsubscribe', 'Gmail', 'inbox', 'safety'],
     readTime: '5 min',
     videoUrl: 'https://www.youtube.com/embed/6m28s2GSpN0',
-    thumbnailEmoji: '📧',
+    thumbnailEmoji: '',
     publishedAt: '2026-04-08',
     difficulty: 'Beginner',
     body: `Many people are afraid to click the "Unsubscribe" link at the bottom of emails, worried it will confirm their email address to scammers or open a virus. This is actually a smart instinct — but it applies only to a small category of emails. Understanding when it is safe to unsubscribe versus when you should delete and report the email is a useful skill that will help you keep a cleaner inbox.
@@ -429,7 +429,7 @@ Do NOT click the unsubscribe link if the email: claims to be from a government a
     tags: ['Google Maps', 'offline', 'navigation', 'travel', 'iPhone', 'Android'],
     readTime: '5 min',
     videoUrl: 'https://www.youtube.com/embed/D5ZE7U_zAsA',
-    thumbnailEmoji: '🗺️',
+    thumbnailEmoji: '',
     publishedAt: '2026-04-08',
     difficulty: 'Beginner',
     body: `If you have ever been driving through a rural area and had your navigation cut out because you lost cell signal, you know how frustrating that is. Google Maps has a feature that lets you download a section of the map to your phone while you are still at home on Wi-Fi, so you can navigate even when there is no internet connection. This is especially helpful when traveling to rural areas, national parks, or international locations where you do not have a data plan.
@@ -453,7 +453,7 @@ Once downloaded, the map works just like the regular Google Maps when you are of
     tags: ['Screen Time', 'iPhone', 'parental controls', 'children', 'Apple'],
     readTime: '7 min',
     videoUrl: 'https://www.youtube.com/embed/_cmQvea7JII',
-    thumbnailEmoji: '⏱️',
+    thumbnailEmoji: '',
     publishedAt: '2026-04-08',
     difficulty: 'Beginner',
     body: `Apple's Screen Time feature lets you set daily limits on how long a child can use specific apps, block adult websites, and prevent them from downloading new apps without your permission. You can set this up on the child's iPhone or iPad, protected by a separate passcode that only you know, so they cannot change the settings themselves. This is built into all iPhones and iPads running iOS 12 or later — no extra app or purchase required.
@@ -484,7 +484,7 @@ Once Screen Time is on, you can also tap "Content & Privacy Restrictions" to tur
     category: 'safety-guides',
     tags: ['scams', 'text scams', 'smishing', 'traffic', 'FTC', 'safety'],
     readTime: '5 min',
-    thumbnailEmoji: '🚗',
+    thumbnailEmoji: '',
     publishedAt: '2026-04-14',
     difficulty: 'Beginner',
     body: `The Federal Trade Commission issued a fresh warning on April 14, 2026: millions of Americans are receiving fake text messages claiming they owe money for an unpaid traffic ticket, a toll violation, or a moving violation — and that they must pay immediately or face serious penalties like license suspension. These texts look convincing. They may include a fake case number, legal-sounding language, and a link to what appears to be an official government website.
@@ -528,7 +528,7 @@ The scam is spreading rapidly in every state. Scammers are targeting people beca
     category: 'safety-guides',
     tags: ['scams', 'recovery', 'identity theft', 'FTC', 'credit freeze', 'safety'],
     readTime: '8 min',
-    thumbnailEmoji: '🛡️',
+    thumbnailEmoji: '',
     publishedAt: '2026-04-14',
     difficulty: 'Beginner',
     body: `Being scammed is one of the most distressing things that can happen — and it happens to millions of people every year, including smart, experienced adults. If you have recently realized you may have been scammed, the most important thing is to stay calm and take action quickly. Acting within the first 24 hours gives you the best chance of limiting the damage.
@@ -586,7 +586,7 @@ Scams take many forms: a fake tech support call where you gave someone remote ac
     tags: ['WhatsApp', 'new phone', 'backup', 'transfer', 'messages', 'phone'],
     readTime: '7 min',
     videoUrl: 'https://www.youtube.com/embed/C6YEPLFVwHs',
-    thumbnailEmoji: '📲',
+    thumbnailEmoji: '',
     publishedAt: '2026-04-14',
     difficulty: 'Beginner',
     body: `When you get a new phone, your WhatsApp messages do not transfer automatically — they live on your old phone and will disappear unless you back them up first. The good news is that WhatsApp has a free built-in backup feature that saves all your chats, photos, and videos to either iCloud (for iPhone) or Google Drive (for Android). Once backed up, you can restore everything on your new phone in a few minutes.
@@ -635,7 +635,7 @@ The key is to do the backup before you set up your new phone or hand in your old
     tags: ['Wi-Fi', 'internet', 'troubleshooting', 'router', 'connection', 'beginner'],
     readTime: '6 min',
     videoUrl: 'https://www.youtube.com/embed/6vMoVz_HxYE',
-    thumbnailEmoji: '📶',
+    thumbnailEmoji: '',
     publishedAt: '2026-04-14',
     difficulty: 'Beginner',
     body: `A Wi-Fi connection that keeps dropping is one of the most frustrating tech problems — especially during a video call, while streaming a show, or when you are trying to get something done. The good news: most Wi-Fi problems are caused by straightforward things that you can fix yourself for free in a few minutes.

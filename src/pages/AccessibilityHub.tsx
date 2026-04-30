@@ -39,9 +39,9 @@ const categories: Category[] = [
   {
     id: 'vision',
     icon: Eye,
-    label: 'Vision',
-    tagline: 'Make what is on the screen easier to see — or hear.',
-    conditions: ['Low Vision', 'Blind', 'Color Blindness'],
+    badge: ' VISION',
+    title: 'Vision',
+    subtitle: 'For people with low vision or blindness',
     accent: 'from-sky-50 to-sky-100/40 dark:from-sky-950/30 dark:to-sky-900/10',
     to: '/accessibility#vision',
   },
@@ -123,10 +123,10 @@ const categoryDetails: FeatureDetail[] = [
   {
     id: 'hearing',
     icon: Ear,
-    label: 'Hearing',
-    heading: 'Hearing — for hard of hearing and Deaf users',
-    intro:
-      'Real-time captions, visual notifications, and direct hearing-aid connections are already on your devices. Turn them on once and they stay on.',
+    badge: ' HEARING',
+    title: 'Hearing',
+    subtitle: 'For people with hearing loss',
+    accent: 'from-emerald-50 to-emerald-100/40 dark:from-emerald-950/30 dark:to-emerald-900/10',
     features: [
       {
         name: 'Live captions for any audio',
@@ -157,10 +157,10 @@ const categoryDetails: FeatureDetail[] = [
   {
     id: 'motor',
     icon: Hand,
-    label: 'Motor',
-    heading: 'Motor — for limited dexterity and tremors',
-    intro:
-      'If typing, tapping, or holding the phone is painful, your device can listen to your voice, respond to a single switch, or ignore shaky touches.',
+    badge: ' MOTOR',
+    title: 'Motor',
+    subtitle: 'For people with limited dexterity',
+    accent: 'from-amber-50 to-amber-100/40 dark:from-amber-950/30 dark:to-amber-900/10',
     features: [
       {
         name: 'Voice Control and Voice Access',
@@ -191,10 +191,10 @@ const categoryDetails: FeatureDetail[] = [
   {
     id: 'cognitive',
     icon: Brain,
-    label: 'Cognitive',
-    heading: 'Cognitive — for dementia, memory, and learning',
-    intro:
-      'Fewer choices, gentle reminders, and one-app-at-a-time modes reduce overwhelm. These features protect focus without taking away independence.',
+    badge: ' COGNITIVE',
+    title: 'Cognitive',
+    subtitle: 'For focus, learning, and memory',
+    accent: 'from-violet-50 to-violet-100/40 dark:from-violet-950/30 dark:to-violet-900/10',
     features: [
       {
         name: 'Simplified interface modes',
@@ -301,24 +301,12 @@ export default function AccessibilityHub() {
         path="/accessibility"
       />
       <Navbar />
-
       <main id="main-content" className="flex-1">
-        {/* ── Hero ───────────────────────────────────────────────────────── */}
-        <section aria-labelledby="hero-heading" className="relative overflow-hidden border-b border-border bg-gradient-to-b from-[#F7D9C5]/60 via-[#FBE7D9]/30 to-transparent">
-          <div
-            aria-hidden="true"
-            className="pointer-events-none absolute inset-0 opacity-60"
-            style={{
-              background:
-                'radial-gradient(800px circle at 20% 0%, rgb(247 217 197 / 0.55), transparent 60%), radial-gradient(600px circle at 80% 20%, rgb(251 231 217 / 0.45), transparent 60%)',
-            }}
-          />
-          <div className="container relative max-w-4xl text-center py-16 md:py-24">
-            <div
-              className="inline-flex items-center justify-center w-16 h-16 rounded-2xl bg-primary/15 mb-6"
-              aria-hidden="true"
-            >
-              <Accessibility className="h-8 w-8 text-primary" />
+        {/* Hero */}
+        <section className="border-b border-border">
+          <div className="container max-w-3xl text-center py-16 md:py-20">
+            <div className="inline-flex items-center justify-center w-14 h-14 rounded-2xl bg-primary/10 mb-5">
+              <Accessibility className="h-7 w-7 text-primary" />
             </div>
             <h1
               id="hero-heading"

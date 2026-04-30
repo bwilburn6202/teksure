@@ -8,7 +8,7 @@ export const guidesBatch27: Guide[] = [
     category: 'essential-skills',
     tags: ['Mint Mobile', 'prepaid wireless', 'phone plan', 'savings', 'T-Mobile'],
     readTime: '5 min',
-    thumbnailEmoji: '🌿',
+    thumbnailEmoji: '',
     publishedAt: '2026-04-19',
     difficulty: 'Beginner',
     body: `Mint Mobile is a prepaid wireless carrier that runs on T-Mobile's network. It offers plans starting at $15/month — dramatically less than the $70-100 most people pay with major carriers. The catch: you pay in advance for 3, 6, or 12 months at a time, and the cheapest rates apply when you prepay for a full year.
@@ -55,7 +55,7 @@ Mint Mobile is owned by T-Mobile but operates as a separate brand with its own p
     category: 'phone-guides',
     tags: ['eSIM', 'SIM card', 'iPhone', 'Android', 'carrier'],
     readTime: '5 min',
-    thumbnailEmoji: '📡',
+    thumbnailEmoji: '',
     publishedAt: '2026-04-19',
     difficulty: 'Intermediate',
     body: `An eSIM (embedded SIM) is a digital version of the plastic SIM card traditionally used in phones. Instead of inserting a physical card, you activate a carrier plan digitally by scanning a QR code or entering an activation code. The eSIM is built into your phone's hardware — it never needs to be removed or swapped.
@@ -101,7 +101,7 @@ One important caveat: not all phone plans support eSIM, and some carriers charge
     category: 'internet-connectivity',
     tags: ['mesh Wi-Fi', 'router', 'Wi-Fi', 'dead zones', 'home network'],
     readTime: '5 min',
-    thumbnailEmoji: '🌐',
+    thumbnailEmoji: '',
     publishedAt: '2026-04-19',
     difficulty: 'Beginner',
     body: `Mesh Wi-Fi is a home networking approach that uses multiple small router units — called nodes — placed around your home, all working together as a single unified network. Rather than one router trying to reach every corner of your house, several nodes share the job. Your devices automatically connect to the nearest, strongest node as you move through your home.
@@ -147,7 +147,7 @@ Setup for most mesh systems is done entirely through a smartphone app — the ap
     category: 'internet-connectivity',
     tags: ['Wi-Fi extender', 'range extender', 'Wi-Fi booster', 'dead zones', 'internet'],
     readTime: '5 min',
-    thumbnailEmoji: '📶',
+    thumbnailEmoji: '',
     publishedAt: '2026-04-19',
     difficulty: 'Beginner',
     body: `A Wi-Fi range extender (also called a booster or repeater) is a small device that picks up your existing Wi-Fi signal and rebroadcasts it to areas of your home that have weak or no coverage. You plug the extender into a wall outlet between your router and the problem area, and it extends your network's reach.
@@ -194,7 +194,7 @@ Placement is the most important factor in getting good results from an extender.
     category: 'safety-guides',
     tags: ['Bitwarden', 'password manager', 'security', 'passwords', 'free'],
     readTime: '6 min',
-    thumbnailEmoji: '🔒',
+    thumbnailEmoji: '',
     publishedAt: '2026-04-19',
     difficulty: 'Beginner',
     body: `Bitwarden is a free, highly-rated password manager that stores all your passwords in a secure encrypted vault. Instead of reusing the same password everywhere (a major security risk) or writing passwords on paper (easily lost or stolen), Bitwarden remembers every password for you — and only you can access them with your master password.
@@ -241,7 +241,7 @@ The one thing to do first: create a strong master password that you will remembe
     category: 'essential-skills',
     tags: ['Bluetooth', 'troubleshoot', 'headphones', 'speaker', 'fix'],
     readTime: '5 min',
-    thumbnailEmoji: '🔵',
+    thumbnailEmoji: '',
     publishedAt: '2026-04-19',
     difficulty: 'Beginner',
     body: `Bluetooth connection problems are one of the most common tech frustrations: a device pairs once and then refuses to reconnect, sound cuts in and out, or the device is just not showing up at all. Most Bluetooth issues are solved by one of a handful of standard fixes — the key is knowing which fix to try first.
@@ -286,7 +286,7 @@ Before diving into complex fixes, always try the simplest steps first: turn Blue
     category: 'internet-connectivity',
     tags: ['streaming', 'buffering', 'Netflix', 'Wi-Fi', 'fix'],
     readTime: '5 min',
-    thumbnailEmoji: '⏳',
+    thumbnailEmoji: '',
     publishedAt: '2026-04-19',
     difficulty: 'Beginner',
     body: `Streaming video that constantly buffers — pauses to load — is almost always a symptom of insufficient internet speed reaching the streaming device. The fix usually involves improving your Wi-Fi connection, reducing the number of devices using the internet simultaneously, or lowering the streaming quality setting.
@@ -332,7 +332,7 @@ The most impactful fix for most households: physically move the router closer to
     category: 'internet-connectivity',
     tags: ['router', 'restart', 'internet', 'Wi-Fi', 'troubleshoot'],
     readTime: '4 min',
-    thumbnailEmoji: '🔄',
+    thumbnailEmoji: '',
     publishedAt: '2026-04-19',
     difficulty: 'Beginner',
     body: `Your home router is essentially a small computer that manages all the internet traffic in your home. Like any computer, it benefits from occasional restarts. A restart clears temporary memory, resets connections to your ISP, and often resolves issues like slow speeds, devices unable to connect, and dropped internet connections.
@@ -377,7 +377,7 @@ After restarting, allow 2-3 minutes for all devices to reconnect. Some smart hom
     category: 'phone-guides',
     tags: ['iPhone', 'text messages', 'backup', 'iCloud', 'Messages'],
     readTime: '5 min',
-    thumbnailEmoji: '💬',
+    thumbnailEmoji: '',
     publishedAt: '2026-04-19',
     difficulty: 'Beginner',
     body: `Text messages on iPhone are stored in the Messages app. If you get a new phone and restore from an iCloud or iTunes backup, your messages come back with you. But if you switch phones without a backup, set up your new phone as "new," or lose your phone, your texts are gone.
@@ -421,7 +421,7 @@ An important note: iMessage chats sync through iCloud Messages if enabled, which
     category: 'phone-guides',
     tags: ['Android', 'text messages', 'backup', 'Google Messages', 'SMS'],
     readTime: '5 min',
-    thumbnailEmoji: '💬',
+    thumbnailEmoji: '',
     publishedAt: '2026-04-19',
     difficulty: 'Beginner',
     body: `Unlike iPhone, Android does not automatically back up text messages through its standard backup system. Google's device backup saves your apps and settings, but standard SMS messages may not be included unless you take specific steps to back them up.
@@ -465,7 +465,7 @@ For users who want a permanent, accessible archive of their messages — not jus
     category: 'communication',
     tags: ['Gmail', 'tabs', 'inbox', 'email organization', 'Primary'],
     readTime: '4 min',
-    thumbnailEmoji: '📨',
+    thumbnailEmoji: '',
     publishedAt: '2026-04-19',
     difficulty: 'Beginner',
     body: `Gmail automatically sorts incoming email into separate tabs at the top of your inbox: Primary (important personal email), Social (notifications from Facebook, Twitter, LinkedIn), Promotions (deals, newsletters, and marketing email), Updates (bills, receipts, account confirmations), and Forums (messages from mailing lists or online groups).
@@ -512,7 +512,7 @@ Even with tabs enabled, the search function in Gmail finds emails across all tab
     category: 'safety-guides',
     tags: ['router', 'Wi-Fi password', 'security', 'home network', 'settings'],
     readTime: '5 min',
-    thumbnailEmoji: '🔑',
+    thumbnailEmoji: '',
     publishedAt: '2026-04-19',
     difficulty: 'Intermediate',
     body: `Your home router has two separate passwords you should know about. The first is your Wi-Fi password — the one you enter on phones, laptops, and TVs to connect to your network. The second is your router admin password — the one used to log into the router's control panel to change settings.
@@ -561,7 +561,7 @@ Write your new passwords down and store them somewhere safe — in a drawer, not
     category: 'internet-connectivity',
     tags: ['guest Wi-Fi', 'router', 'network security', 'internet', 'home'],
     readTime: '4 min',
-    thumbnailEmoji: '🏠',
+    thumbnailEmoji: '',
     publishedAt: '2026-04-19',
     difficulty: 'Intermediate',
     body: `A guest Wi-Fi network is a separate wireless network created by your router specifically for visitors. When guests connect to your guest network, they get internet access but cannot see or access any devices on your main network — your computers, printers, smart TV, or smart home devices.
@@ -608,7 +608,7 @@ Setting up a guest network requires logging into your router's admin panel (as d
     category: 'windows-guides',
     tags: ['Windows 11', 'virtual desktops', 'Task View', 'productivity', 'organization'],
     readTime: '4 min',
-    thumbnailEmoji: '🖥️',
+    thumbnailEmoji: '',
     publishedAt: '2026-04-19',
     difficulty: 'Intermediate',
     body: `Windows 11 has a built-in feature called virtual desktops (accessed through Task View) that lets you create multiple separate desktop environments on one computer. Each desktop can have its own set of open windows and apps. You switch between desktops with a keyboard shortcut or by hovering over the Task View button.
@@ -652,7 +652,7 @@ The keyboard shortcuts are the fastest way to use virtual desktops once you lear
     category: 'phone-guides',
     tags: ['iPhone', 'storage', 'free up space', 'iOS', 'photos'],
     readTime: '6 min',
-    thumbnailEmoji: '📦',
+    thumbnailEmoji: '',
     publishedAt: '2026-04-19',
     difficulty: 'Beginner',
     body: `The "iPhone Storage Is Almost Full" warning means your phone is running low on available storage space — typically less than 1 GB remaining. When iPhone storage is full or nearly full, apps may crash, the camera may refuse to take photos, and the phone can become slow.
@@ -693,62 +693,14 @@ A common mistake: deleting apps to free up space, then reinstalling them — eac
       },
     ],
   },
-  {
-    slug: 'android-storage-guide',
-    title: 'How to Free Up Storage Space on Your Android Phone',
-    excerpt: `Android running out of space? Here's how to identify what's taking up storage and clear gigabytes without losing anything important.`,
-    category: 'phone-guides',
-    tags: ['Android', 'storage', 'free up space', 'photos', 'apps'],
-    readTime: '5 min',
-    thumbnailEmoji: '📦',
-    publishedAt: '2026-04-19',
-    difficulty: 'Beginner',
-    body: `When an Android phone runs out of storage, apps stop updating, the camera cannot save new photos, and the phone slows down noticeably. Before buying a new phone, a storage cleanup often breathes new life into an older device.
-
-Android phones show a storage breakdown in Settings, similar to iPhone. Go to Settings → Storage to see total storage used, available space, and a breakdown by category: Apps, Photos, Videos, Audio, Downloads, System, and Other.
-
-Photos and videos are almost universally the biggest storage consumer. Years of photos from birthdays, trips, and everyday life can add up to 15-30 GB or more. The most efficient solution is Google Photos backup with automatic device storage cleanup.
-
-Google Photos backs up your photos to the cloud and can automatically remove locally stored originals after they have been safely backed up — freeing local storage while keeping every photo accessible in the cloud.
-
-Android's built-in "Files" app (on Pixel phones) and third-party storage cleaner apps like Google's Files by Google help find and remove duplicate files, cached data, and unnecessary downloads in a visual, organized way.
-
-Unlike iPhone, many Android phones have a microSD card slot that allows you to add additional storage inexpensively. A 64 GB or 128 GB microSD card can solve storage problems long-term, especially for photos and music — check if your phone model supports expandable storage.`,
-    steps: [
-      {
-        title: 'Check Storage Usage',
-        content: 'Open Settings → Storage (may be under "Device care" on Samsung). Review the breakdown by category. The largest sections — typically Photos/Videos and Apps — are where the biggest savings are found.',
-        tip: 'Samsung phones have a "Device Care" section that shows storage and can run a basic cleanup automatically.',
-      },
-      {
-        title: 'Back Up and Clear Photos with Google Photos',
-        content: 'Open Google Photos → Profile icon → "Free up space on this device." Google Photos shows how much storage can be freed by removing photos that are already safely backed up to the cloud. Tap "Free up [X] GB" to delete local copies while keeping everything in Google Photos.',
-        warning: 'Only tap "Free up space" after confirming that backup is complete (Profile icon → "Photos settings" → Backup → check that backup is on and up to date).',
-      },
-      {
-        title: 'Uninstall Unused Apps',
-        content: 'In Settings → Apps, see a full list of installed apps. Sort by size (tap "Sort" or the three-dot menu → "Sort by size"). Long-press any app you no longer use → "Uninstall." Games and entertainment apps often use 500 MB to several GB each.',
-      },
-      {
-        title: 'Clear App Caches',
-        content: 'Individual app caches accumulate over time. For the largest apps: go to Settings → Apps → tap the app → Storage → "Clear cache." Do this for your browser, streaming apps, and social media apps. This does not delete your data — only temporary files.',
-        tip: 'Social media apps like Facebook and Instagram can build caches of 1-2 GB over time. Clearing these caches regularly is safe.',
-      },
-      {
-        title: 'Use Files by Google to Find Junk',
-        content: 'Install "Files by Google" from the Play Store (free). Open it → "Clean" tab. It identifies junk files, duplicate photos, memes and screenshots, and large files. Tap "Free up space" next to each category to delete files safely. It shows you exactly what it will delete before doing so.',
-        tip: 'Check the "Downloads" folder regularly — it accumulates PDFs, APKs, images, and other files that are no longer needed. Files by Google shows the Downloads folder clearly with sizes.',
-      },
-    ],
-  },
-  {
+    {
     slug: 'laptop-battery-tips',
     title: 'How to Extend Your Laptop Battery Life',
     excerpt: `Simple settings and habits can double your laptop's battery life on a single charge. Here's what actually makes a difference on Windows and Mac.`,
     category: 'essential-skills',
     tags: ['laptop', 'battery', 'Windows', 'Mac', 'power saving'],
     readTime: '5 min',
-    thumbnailEmoji: '🔋',
+    thumbnailEmoji: '',
     publishedAt: '2026-04-19',
     difficulty: 'Beginner',
     body: `Laptop battery life depends heavily on how you use the laptop and which power settings are configured. Most laptops in real-world use last 4-8 hours, but simple adjustments can often extend that by 1-3 hours — or more on newer hardware.
@@ -793,7 +745,7 @@ Screen brightness is consistently the most impactful single setting. Reducing br
     category: 'phone-guides',
     tags: ['iPhone', 'recovery mode', 'restore', 'fix', 'iOS'],
     readTime: '5 min',
-    thumbnailEmoji: '⚠️',
+    thumbnailEmoji: '',
     publishedAt: '2026-04-19',
     difficulty: 'Intermediate',
     body: `Recovery mode is a special state your iPhone can be put into when it is having serious software problems: it will not turn on, it is stuck on the Apple logo for more than 10 minutes, it is stuck in a reboot loop, or you need to restore it because you forgot your passcode.
@@ -837,7 +789,7 @@ Entering recovery mode requires a computer and a cable. If you do not have a com
     category: 'phone-guides',
     tags: ['Android', 'safe mode', 'troubleshoot', 'apps', 'fix'],
     readTime: '4 min',
-    thumbnailEmoji: '🔧',
+    thumbnailEmoji: '',
     publishedAt: '2026-04-19',
     difficulty: 'Intermediate',
     body: `Android Safe Mode starts your phone with only the apps that came pre-installed by the manufacturer — no apps you downloaded are active. This makes safe mode an excellent diagnostic tool: if a problem disappears in safe mode, a downloaded app is causing it. If the problem persists in safe mode, the issue is with the phone itself or its pre-installed software.
@@ -886,7 +838,7 @@ Your phone shows "Safe mode" in the bottom left corner of the screen when safe m
     category: 'internet-connectivity',
     tags: ['Wi-Fi', 'router', 'signal strength', 'internet speed', 'tips'],
     readTime: '5 min',
-    thumbnailEmoji: '📡',
+    thumbnailEmoji: '',
     publishedAt: '2026-04-19',
     difficulty: 'Beginner',
     body: `Slow Wi-Fi at home is usually not caused by your internet plan — it is caused by how your router is positioned or configured, interference from other devices, or the distance between your devices and the router. Most Wi-Fi improvements are free and require no new hardware.

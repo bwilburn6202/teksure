@@ -8,7 +8,7 @@ export const guidesBatch42: Guide[] = [
     category: `essential-skills`,
     tags: [`icloud drive`, `icloud`, `cloud storage`, `files`, `apple`, `documents`],
     readTime: `5 min`,
-    thumbnailEmoji: `☁️`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-19`,
     difficulty: `Beginner`,
     body: `iCloud Drive is Apple's cloud file storage service — think of it as a virtual filing cabinet that is accessible from every Apple device signed in with your Apple ID. Files you save to iCloud Drive are available on your iPhone, iPad, and Mac automatically. You can also access them on a Windows PC at icloud.com.
@@ -59,7 +59,7 @@ Files stored in iCloud Drive sync automatically across devices — any change yo
     category: `phone-guides`,
     tags: [`files app`, `iphone`, `ipad`, `documents`, `icloud drive`, `file management`],
     readTime: `5 min`,
-    thumbnailEmoji: `📁`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-19`,
     difficulty: `Beginner`,
     body: `The Files app is built into every iPhone and iPad. It is your device's equivalent of the Documents or Desktop folder on a computer — a central place where you can find, open, organize, and manage files from multiple locations.
@@ -112,7 +112,7 @@ The Files app is the blue folder icon on your home screen. If you do not see it,
     category: `mac-guides`,
     tags: [`continuity camera`, `iphone webcam`, `mac`, `video calls`, `FaceTime`, `Zoom`, `Desk View`],
     readTime: `4 min`,
-    thumbnailEmoji: `📷`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-19`,
     difficulty: `Beginner`,
     body: `Continuity Camera is an Apple feature that uses your iPhone's camera as a webcam for your Mac — automatically and wirelessly. Your iPhone has a much better camera than any built-in Mac webcam, so video calls look noticeably sharper and more professional.
@@ -159,7 +159,7 @@ Requirements: iPhone XR or later, Mac with Apple Silicon (M1/M2) or Intel Mac fr
     category: `mac-guides`,
     tags: [`sidecar`, `ipad`, `mac`, `second screen`, `extend display`, `productivity`],
     readTime: `4 min`,
-    thumbnailEmoji: `🖥️`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-19`,
     difficulty: `Intermediate`,
     body: `Sidecar is an Apple feature that lets you use your iPad as a second screen for your Mac. Instead of being limited to your Mac's built-in display, you can move windows and apps onto your iPad screen — giving you more room to work.
@@ -211,7 +211,7 @@ Requirements: iPad with iPadOS 13 or later (most iPads from 2014 onward), Mac ru
     category: `mac-guides`,
     tags: [`handoff`, `universal clipboard`, `mac`, `iphone`, `continuity`, `copy paste`, `apple ecosystem`],
     readTime: `4 min`,
-    thumbnailEmoji: `🔄`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-19`,
     difficulty: `Beginner`,
     body: `Apple devices that are signed into the same Apple ID can work together in seamless ways through a set of features called Continuity. Two of the most useful are Handoff and Universal Clipboard.
@@ -258,7 +258,7 @@ Requirements: Both devices signed into the same Apple ID, Bluetooth on, Wi-Fi on
     category: `mac-guides`,
     tags: [`imessage`, `mac`, `text messages`, `sms`, `messages app`, `continuity`],
     readTime: `4 min`,
-    thumbnailEmoji: `💬`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-19`,
     difficulty: `Beginner`,
     body: `The Messages app on Mac lets you send and receive both iMessages (the blue bubble type) and regular SMS text messages (the green bubble type, forwarded from your iPhone). This means you can have full text message conversations on your Mac keyboard without ever picking up your phone.
@@ -305,7 +305,7 @@ Requirements: Mac with macOS Yosemite or later, iPhone with iOS 8 or later, both
     category: `mac-guides`,
     tags: [`facetime`, `mac`, `video call`, `audio call`, `apple`, `family`],
     readTime: `4 min`,
-    thumbnailEmoji: `🖥️`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-19`,
     difficulty: `Beginner`,
     body: `FaceTime is Apple's built-in video and audio calling app. While most people use it on iPhone or iPad, you can also make and receive FaceTime calls right from your Mac. This is great when you want a larger screen for a call with family, when your phone is charging in another room, or when you are working at your computer and a call comes in.
@@ -350,7 +350,7 @@ To use FaceTime on Mac, you just need to be signed into your Apple ID. Your Face
     category: `tips-tricks`,
     tags: [`notes app`, `iphone notes`, `mac notes`, `checklists`, `icloud notes`, `shared notes`],
     readTime: `5 min`,
-    thumbnailEmoji: `🗒️`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-19`,
     difficulty: `Beginner`,
     body: `Apple's Notes app comes pre-installed on every iPhone, iPad, and Mac — and most people only use it for basic text notes. But it has a surprising range of features that make it genuinely useful for organizing your life.
@@ -405,7 +405,7 @@ Notes sync via iCloud, so anything you write on iPhone appears on your Mac and i
     category: `government-civic`,
     tags: [`BenefitsCheckUp`, `government benefits`, `assistance programs`, `NCOA`, `seniors`, `low income`, `utilities`],
     readTime: `5 min`,
-    thumbnailEmoji: `🔍`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-19`,
     difficulty: `Beginner`,
     body: `BenefitsCheckUp is a free, confidential online tool from the National Council on Aging (NCOA) that helps older adults and people with limited income find government and nonprofit assistance programs they may qualify for.
@@ -459,7 +459,7 @@ The website is benefitscheckup.org. It is free and takes about 10 minutes to com
     category: `financial-tech`,
     tags: [`VITA`, `free tax prep`, `IRS`, `tax return`, `seniors`, `tax help`, `TCE`],
     readTime: `5 min`,
-    thumbnailEmoji: `📄`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-19`,
     difficulty: `Beginner`,
     body: `VITA (Volunteer Income Tax Assistance) is a free IRS program that provides tax preparation help to people who generally earn $67,000 or less, have disabilities, or have limited English. Trained IRS-certified volunteers prepare your federal and often state tax return at no charge.
@@ -510,7 +510,7 @@ Sites operate February through mid-April. Some operate year-round for amended re
     category: `health-tech`,
     tags: [`withings`, `smart scale`, `blood pressure monitor`, `sleep tracker`, `health app`, `connected health`],
     readTime: `5 min`,
-    thumbnailEmoji: `⚕️`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-19`,
     difficulty: `Intermediate`,
     body: `Withings is a company that makes medical-grade health monitoring devices that connect to your smartphone via Bluetooth or Wi-Fi. Their devices measure and track your health data over time, and syncing everything to the free Health Mate app (iPhone and Android).
@@ -561,7 +561,7 @@ The Health Mate app is free and shows all your readings in easy-to-read charts a
     category: `health-tech`,
     tags: [`dexcom`, `freestyle libre`, `CGM`, `continuous glucose monitor`, `diabetes`, `blood sugar`, `phone app`],
     readTime: `5 min`,
-    thumbnailEmoji: `📊`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-19`,
     difficulty: `Intermediate`,
     body: `If you or someone you care for uses a continuous glucose monitor (CGM) for diabetes management, your smartphone can be a key part of how you track blood sugar levels. Both major CGM brands — Dexcom and Abbott FreeStyle Libre — have companion apps that display readings on your phone in real time.
@@ -607,7 +607,7 @@ Having readings on your phone means you see your glucose without reaching for a 
     category: `communication`,
     tags: [`zoom`, `smart tv`, `video call`, `large screen`, `casting`, `amazon fire tv`, `roku`],
     readTime: `5 min`,
-    thumbnailEmoji: `📺`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-19`,
     difficulty: `Intermediate`,
     body: `Watching a family Zoom call on a 55-inch TV is a much better experience than squinting at a phone screen. There are several ways to get Zoom on your TV, depending on what kind of TV or streaming device you have.
@@ -654,7 +654,7 @@ For most people, casting from a phone or using a laptop + HDMI cable are the sim
     category: `financial-tech`,
     tags: [`credit report`, `credit score`, `AnnualCreditReport`, `Equifax`, `Experian`, `TransUnion`, `free credit`],
     readTime: `6 min`,
-    thumbnailEmoji: `📋`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-19`,
     difficulty: `Beginner`,
     body: `Your credit report is a record of your credit history — every credit card, loan, mortgage, and many other accounts you have ever had, along with your payment history. Lenders use it to decide whether to approve you for credit and at what interest rate.
@@ -705,7 +705,7 @@ Why check your report?
     category: `financial-tech`,
     tags: [`dispute charge`, `credit card`, `chargeback`, `unauthorized charge`, `fraud`, `billing error`],
     readTime: `5 min`,
-    thumbnailEmoji: `🚫`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-19`,
     difficulty: `Beginner`,
     body: `Seeing an unexpected charge on your credit card statement is alarming, but you have strong legal protections. Under the Fair Credit Billing Act, you have the right to dispute billing errors and unauthorized charges with your credit card company.
@@ -758,7 +758,7 @@ Why check your report?
     category: `app-guides`,
     tags: [`google translate`, `camera translation`, `instant translate`, `foreign language`, `travel`, `menus`],
     readTime: `4 min`,
-    thumbnailEmoji: `🌍`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-19`,
     difficulty: `Beginner`,
     body: `Google Translate is a free app that can do much more than translate text you type in. One of its most impressive features is camera translation — you point your phone camera at text in another language and the app overlays a translation in real time, right on top of the original text.
@@ -807,7 +807,7 @@ Google Translate is free on iPhone (App Store) and Android (Google Play). On And
     category: `app-guides`,
     tags: [`google translate`, `offline translation`, `travel`, `no wifi`, `language pack`, `download`],
     readTime: `4 min`,
-    thumbnailEmoji: `✈️`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-19`,
     difficulty: `Beginner`,
     body: `One of Google Translate's most useful features for travelers is offline translation — the ability to translate text, conversations, and even camera images without any internet connection at all. This is essential when traveling internationally where data roaming is expensive, or in any situation where you do not have reliable Wi-Fi.
@@ -860,7 +860,7 @@ The best time to download language packs is before you board your flight or leav
     category: `phone-guides`,
     tags: [`forgot passcode`, `iphone locked`, `recovery mode`, `erase iphone`, `passcode reset`],
     readTime: `6 min`,
-    thumbnailEmoji: `🔑`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-19`,
     difficulty: `Intermediate`,
     body: `Getting locked out of your iPhone because you forgot your passcode is more common than you might think. Maybe you set up a device for the first time, tried an unfamiliar passcode too many times, or forgot a PIN you set months ago.
@@ -912,7 +912,7 @@ The key question is: do you have a backup? If yes, recovery is straightforward. 
     category: `phone-guides`,
     tags: [`files by google`, `android storage`, `free up space`, `delete junk`, `duplicate files`, `phone storage`],
     readTime: `4 min`,
-    thumbnailEmoji: `🗑️`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-19`,
     difficulty: `Beginner`,
     body: `Files by Google is a free storage management app from Google for Android phones. It helps you find and delete files that waste space — temporary files, duplicate photos, downloaded documents you no longer need, large videos, and offline content from apps.
@@ -963,7 +963,7 @@ Files by Google is completely free and available in the Google Play Store. On ma
     category: `app-guides`,
     tags: [`google maps`, `transit`, `bus directions`, `subway`, `public transport`, `navigation`, `commute`],
     readTime: `5 min`,
-    thumbnailEmoji: `🚌`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-19`,
     difficulty: `Beginner`,
     body: `Google Maps is not just for driving directions. It has detailed public transit directions for thousands of cities — showing you exactly which bus to take, where to board, how many stops to ride, where to transfer, and step-by-step walking directions between the transit and your destination.

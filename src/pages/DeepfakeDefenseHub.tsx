@@ -464,7 +464,7 @@ export default function DeepfakeDefenseHub() {
       />
       <Navbar />
 
-      <main className="container mx-auto px-4 py-12 max-w-6xl">
+      <main id="main-content" className="container mx-auto px-4 py-12 max-w-6xl">
         {/* Hero */}
         <section className="text-center mb-16">
           <div className="inline-flex items-center gap-2 mb-6 px-4 py-2 rounded-full bg-red-100 dark:bg-red-950/40 text-red-700 dark:text-red-300">

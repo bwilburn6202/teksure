@@ -35,7 +35,7 @@ const WARNING_SIGNS = [
   },
   {
     id: 'gut',
-    label: 'Does something feel... wrong?',
+    label: 'Does something just feel... wrong?',
   },
 ];
 
@@ -304,7 +304,7 @@ export default function ScamDefenseCenter() {
         </div>
       </section>
 
-      <main className="container max-w-4xl mx-auto px-4 py-12 space-y-16">
+      <main id="main-content" className="container max-w-4xl mx-auto px-4 py-12 space-y-16">
 
         {/* ── 2. Quick Checklist ────────────────────────────────────────────── */}
         <section id="checklist" className="scroll-mt-20">
@@ -593,7 +593,7 @@ export default function ScamDefenseCenter() {
               Protect Yourself — Tools &amp; Guides
             </h2>
             <p className="text-muted-foreground mt-2">
-              Knowledge is your best defense. These free TekSure resources take only a few minutes
+              Knowledge is your best defense. These free TekSure resources take just a few minutes
               each.
             </p>
           </div>
@@ -609,10 +609,10 @@ export default function ScamDefenseCenter() {
                   it is to recognize a scam when it really happens.
                 </p>
                 <Link
-                  to="/tools/scam-simulator"
+                  to="/practice"
                   className="mt-4 inline-flex items-center gap-1.5 text-sm font-semibold text-orange-600 dark:text-orange-400 hover:underline min-h-[44px]"
                 >
-                  Open Scam Simulator
+                  Open Practice Rooms
                   <ChevronRight className="h-4 w-4 group-hover:translate-x-0.5 transition-transform" />
                 </Link>
               </CardContent>
@@ -643,7 +643,7 @@ export default function ScamDefenseCenter() {
                 <div className="text-3xl mb-3" aria-hidden="true"></div>
                 <h3 className="font-bold text-base mb-2">Create Strong Passwords</h3>
                 <p className="text-sm text-muted-foreground leading-relaxed flex-1">
-                  Weak passwords give scammers a quick way into your accounts. Learn how to
+                  Weak passwords make it easy for scammers to break into your accounts. Learn how to
                   create strong ones you can actually remember.
                 </p>
                 <Link

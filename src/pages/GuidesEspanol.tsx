@@ -8,7 +8,6 @@ import { Navbar } from '@/components/layout/Navbar';
 import { Footer } from '@/components/layout/Footer';
 import { SEOHead } from '@/components/SEOHead';
 import { guides } from '@/data/guides';
-import { GuideThumbnail } from '@/components/GuideThumbnail';
 
 // Spanish category labels
 const ES_CATEGORY_LABELS: Record<string, string> = {
@@ -69,7 +68,7 @@ export default function GuidesEspanol() {
         path="/guias"
       />
       <Navbar />
-      <main className="min-h-screen bg-background">
+      <main id="main-content" className="min-h-screen bg-background">
         {/* Header */}
         <section className="border-b border-border py-16 text-center">
           <div className="container max-w-2xl">
@@ -104,7 +103,7 @@ export default function GuidesEspanol() {
               {filtered.map(guide => (
                 <Link key={guide.slug} to={`/guides/${guide.slug}`} className="group block">
                   <div className="flex items-center gap-4 p-4 rounded-xl border border-border bg-card hover:border-primary/30 hover:shadow-sm transition-all">
-                    <GuideThumbnail category={guide.category} size="h-6 w-6" />
+                    <div className="text-2xl shrink-0">{guide.thumbnailEmoji}</div>
                     <div className="flex-1 min-w-0">
                       <p className="font-medium text-sm group-hover:text-primary transition-colors line-clamp-1">{guide.title}</p>
                       <p className="text-xs text-muted-foreground line-clamp-1 mt-0.5">{guide.excerpt}</p>
@@ -133,7 +132,7 @@ export default function GuidesEspanol() {
                     {catGuides.map(guide => (
                       <Link key={guide.slug} to={`/guides/${guide.slug}`} className="group block">
                         <div className="flex items-start gap-3 p-4 rounded-xl border border-border bg-card hover:border-primary/30 hover:shadow-sm transition-all h-full">
-                          <GuideThumbnail category={guide.category} size="h-6 w-6" />
+                          <div className="text-2xl shrink-0 mt-0.5">{guide.thumbnailEmoji}</div>
                           <div className="flex-1 min-w-0">
                             <p className="font-medium text-sm group-hover:text-primary transition-colors leading-snug mb-1">{guide.title}</p>
                             <p className="text-xs text-muted-foreground line-clamp-2 leading-relaxed">{guide.excerpt}</p>

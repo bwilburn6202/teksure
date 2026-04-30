@@ -1160,6 +1160,8 @@ const Glossary = () => {
 
       <Navbar />
 
+      <main id="main-content" tabIndex={-1} className="outline-none">
+
       <div className="max-w-4xl mx-auto pt-4 px-4">
         <PageBreadcrumb segments={[{ label: 'Glossary' }]} />
       </div>
@@ -1250,24 +1252,14 @@ const Glossary = () => {
       </div>
 
       {/* Terms */}
-      <section className="py-14 md:py-20 px-4">
-        <div className="max-w-3xl mx-auto">
-          {filtered.length === 0 ? (
-            <div className="text-center py-16">
-              <p className="text-5xl mb-4" aria-hidden="true"></p>
-              <p className="text-xl font-semibold mb-2">No terms found</p>
-              <p className="text-muted-foreground mb-6">
-                Try a different spelling, or browse by letter above.
-              </p>
-              <Link
-                to="/tools/jargon-translator"
-                className="inline-flex items-center gap-2 text-primary font-medium hover:underline underline-offset-4"
-              >
-                <Languages className="h-4 w-4" aria-hidden="true" />
-                Ask the Jargon Translator instead
-              </Link>
-            </div>
-          ) : (
+      <section className="py-16 md:py-20 px-4">
+        {filtered.length === 0 ? (
+          <div className="text-center py-16">
+            <p className="text-4xl mb-4"></p>
+            <p className="text-lg font-medium mb-2">No terms found</p>
+            <p className="text-muted-foreground">Try a different search term.</p>
+          </div>
+        ) : (
             <div className="space-y-14">
               {activeLetters.map((letter) => (
                 <div
@@ -1288,30 +1280,20 @@ const Glossary = () => {
                     </Badge>
                   </div>
 
-                  {/* Terms in this letter */}
-                  <div className="space-y-5">
-                    {grouped[letter].map((item) => {
-                      const slug = termToSlug(item.term);
-                      // Only keep related chips that point to a term that actually exists.
-                      const chips = (item.related ?? []).filter(
-                        (name) => !!termIndex[name.toLowerCase()],
-                      );
-
-                      return (
-                        <article
-                          key={item.term}
-                          id={slug}
-                          ref={(el) => {
-                            termRefs.current[slug] = el;
-                          }}
-                          className="rounded-2xl border border-border bg-card p-5 md:p-6 scroll-mt-40 transition-[box-shadow,border-color,transform] hover:shadow-md hover:border-primary/30"
-                        >
-                          <h3 className="text-lg md:text-xl font-bold text-foreground mb-2">
-                            {item.term}
-                          </h3>
-                          <p className="text-base text-foreground/80 leading-relaxed">
-                            {item.definition}
+                <div className="space-y-3">
+                  {grouped[letter].map((item, i) => (
+                    <div
+                      key={item.term}
+                    >
+                      <div className="glow-card">
+                        <h3 className="font-semibold text-base text-foreground mb-2">{item.term}</h3>
+                        <p className="text-sm text-muted-foreground leading-relaxed mb-3">{item.definition}</p>
+                        {item.analogy && (
+                          <p className="text-xs text-primary flex items-start gap-2">
+                            <span className="shrink-0 mt-0.5"></span>
+                            <span className="italic">{item.analogy}</span>
                           </p>
+                        )}
 
                           {/* Related chips */}
                           {chips.length > 0 && (
@@ -1347,16 +1329,17 @@ const Glossary = () => {
                               />
                             </Link>
                           </div>
-                        </article>
-                      );
-                    })}
+                        </div>
+                      </div>
+                    ))}
                   </div>
                 </div>
               ))}
             </div>
           )}
-        </div>
       </section>
+
+      </main>
 
       <Footer />
     </div>

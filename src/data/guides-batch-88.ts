@@ -8,7 +8,7 @@ export const guidesBatch88: Guide[] = [
     category: `windows-guides`,
     tags: [`windows 10`, `end of life`, `windows 11 upgrade`, `PC security`, `microsoft support`],
     readTime: `7 min`,
-    thumbnailEmoji: `🪟`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-20`,
     difficulty: `Beginner`,
     body: `On October 14, 2025, Microsoft stopped releasing security updates for Windows 10. This is called the "end of support" date, and it is an important milestone for anyone still running Windows 10 on their computer.
@@ -54,7 +54,7 @@ If your computer cannot run Windows 11 and you choose to keep using Windows 10 a
     category: `windows-guides`,
     tags: [`windows defender`, `antivirus`, `PC security`, `virus scan`, `windows security`],
     readTime: `5 min`,
-    thumbnailEmoji: `🛡️`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-20`,
     difficulty: `Beginner`,
     body: `Windows Defender — now called Windows Security — is a free antivirus and security program that comes built into Windows 10 and Windows 11. You do not need to buy or install anything extra for basic protection. Many people do not realize it is already running quietly in the background, protecting their computer from viruses, malware, and other threats.
@@ -99,7 +99,7 @@ For most people, Windows Defender is more than adequate protection. However, if 
     category: `windows-guides`,
     tags: [`windows hello`, `face recognition`, `fingerprint`, `sign-in`, `windows 11 security`],
     readTime: `6 min`,
-    thumbnailEmoji: `👤`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-20`,
     difficulty: `Beginner`,
     body: `Windows Hello is a sign-in feature built into Windows 10 and Windows 11 that lets you unlock your computer using your face, your fingerprint, or a PIN (a short number code). Instead of typing a long password every time you sit down at your computer, you can look at the camera or press your finger on a sensor and be signed in within a second or two.
@@ -144,7 +144,7 @@ Not every computer supports face recognition — you need a compatible camera. F
     category: `windows-guides`,
     tags: [`bitlocker`, `encryption`, `hard drive security`, `windows 11`, `data protection`],
     readTime: `7 min`,
-    thumbnailEmoji: `🔐`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-20`,
     difficulty: `Intermediate`,
     body: `BitLocker is a built-in security feature in Windows that encrypts (scrambles) all the data on your hard drive. Encryption means that even if someone removes your hard drive and plugs it into another computer, or if your laptop is stolen, they cannot read any of your files without the correct password or recovery key.
@@ -189,7 +189,7 @@ BitLocker does slow down your computer very slightly — on modern PCs the diffe
     category: `windows-guides`,
     tags: [`file history`, `backup`, `windows backup`, `external drive`, `data recovery`],
     readTime: `6 min`,
-    thumbnailEmoji: `💾`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-20`,
     difficulty: `Beginner`,
     body: `File History is a built-in backup tool in Windows 10 and Windows 11. Once you set it up, it automatically copies your important files — documents, photos, music, videos, and desktop items — to an external hard drive or a USB drive every hour. If you accidentally delete a file, overwrite a document, or your hard drive fails, you can restore your files from these backups.
@@ -234,7 +234,7 @@ Ideally, you should leave the external drive plugged into your computer all the 
     category: `windows-guides`,
     tags: [`system restore`, `windows recovery`, `undo changes`, `restore point`, `windows troubleshooting`],
     readTime: `6 min`,
-    thumbnailEmoji: `⏪`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-20`,
     difficulty: `Beginner`,
     body: `System Restore is a recovery tool built into Windows that can rewind your Windows settings and installed programs back to an earlier state — called a "restore point" — without touching your personal files. If you install a program that causes problems, receive a Windows update that breaks something, or make a change to settings that you cannot undo, System Restore can bring your PC back to how it was before the problem started.
@@ -279,7 +279,7 @@ If Windows is so broken that it will not start up normally, you can still access
     category: `windows-guides`,
     tags: [`windows services`, `PC speed`, `startup optimization`, `task manager`, `windows performance`],
     readTime: `8 min`,
-    thumbnailEmoji: `⚙️`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-20`,
     difficulty: `Intermediate`,
     body: `Windows runs many programs in the background called "services." These are not apps you see on your screen — they work quietly behind the scenes, handling things like networking, printing, Windows updates, and Bluetooth. Most services are essential and should never be turned off. But some are optional features that you may not use, and disabling them can free up memory and make your PC feel a bit faster.
@@ -324,7 +324,7 @@ Before disabling any service, it is critical to research it first. Disabling the
     category: `windows-guides`,
     tags: [`windows 11 taskbar`, `pin apps`, `widgets`, `customize taskbar`, `windows 11 tips`],
     readTime: `5 min`,
-    thumbnailEmoji: `📌`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-20`,
     difficulty: `Beginner`,
     body: `The taskbar is the bar that runs across the bottom of your Windows screen. It shows your Start button, pinned apps you use often, a search bar, and a notification area on the right side. In Windows 11, Microsoft made some changes to how the taskbar works compared to Windows 10 — the Start button moved to the center, and new features like Widgets were added.
@@ -368,7 +368,7 @@ Personalizing the taskbar takes only a few minutes and makes your daily computer
     category: `windows-guides`,
     tags: [`snap layouts`, `multitasking`, `windows 11`, `split screen`, `productivity`],
     readTime: `5 min`,
-    thumbnailEmoji: `🪟`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-20`,
     difficulty: `Beginner`,
     body: `Snap Layouts is a feature in Windows 11 that helps you arrange multiple open windows on your screen at the same time. Instead of switching back and forth between programs, you can see your email on one side and a document on the other, or have a web browser in one corner and a video call in another. This is especially helpful if you have a large monitor or if you frequently reference one window while working in another.
@@ -413,7 +413,7 @@ Snap Layouts works best on screens 13 inches or larger. On very small laptop scr
     category: `windows-guides`,
     tags: [`xbox game pass`, `PC gaming`, `microsoft gaming`, `game subscription`, `windows games`],
     readTime: `6 min`,
-    thumbnailEmoji: `🎮`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-20`,
     difficulty: `Beginner`,
     body: `Xbox Game Pass for PC (sometimes called PC Game Pass) is a subscription service from Microsoft that gives you access to a library of over 100 PC games for a monthly fee. Think of it like Netflix, but for video games — you pay a flat monthly price and can download and play any game in the library as long as your subscription is active. When you stop subscribing, those games are no longer accessible, but your progress and save files are usually kept if you resubscribe later.
@@ -458,7 +458,7 @@ An internet connection is required to download games and to verify your active s
     category: `windows-guides`,
     tags: [`microsoft store`, `download apps`, `windows apps`, `app updates`, `safe downloads`],
     readTime: `5 min`,
-    thumbnailEmoji: `🏪`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-20`,
     difficulty: `Beginner`,
     body: `The Microsoft Store is the official app marketplace built into Windows 10 and Windows 11. It is the safest place to download apps and games for your Windows computer because Microsoft reviews apps before they appear in the store. This reduces the risk of accidentally downloading harmful software that could damage your computer or steal your information.
@@ -503,7 +503,7 @@ The Microsoft Store requires a Microsoft account to download most apps. If you a
     category: `windows-guides`,
     tags: [`windows 11 themes`, `wallpaper`, `desktop customization`, `personalization`, `dark mode`],
     readTime: `4 min`,
-    thumbnailEmoji: `🎨`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-20`,
     difficulty: `Beginner`,
     body: `Personalizing your Windows 11 desktop is one of the most enjoyable ways to make your computer feel like your own. Windows 11 lets you change your desktop wallpaper (the background image), your color scheme, the sounds Windows makes, and your cursor style — all through the Personalization section in Settings.
@@ -547,7 +547,7 @@ Accent colors are the highlighted colors Windows uses for buttons, links, and se
     category: `windows-guides`,
     tags: [`disk cleanup`, `storage sense`, `free up space`, `windows storage`, `PC maintenance`],
     readTime: `5 min`,
-    thumbnailEmoji: `🗑️`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-20`,
     difficulty: `Beginner`,
     body: `Over time, your Windows PC builds up a collection of files you no longer need: temporary files created by programs that were never deleted, old Windows Update files, items that have been in the Recycle Bin for months, and cached data from web browsers. These files take up storage space without giving you anything useful in return. On some computers, cleaning them up can free several gigabytes — enough to noticeably speed up a nearly full hard drive.
@@ -592,7 +592,7 @@ Running these cleanup tools will not delete your personal files, photos, or docu
     category: `windows-guides`,
     tags: [`chkdsk`, `hard drive errors`, `disk check`, `PC repair`, `windows troubleshooting`],
     readTime: `6 min`,
-    thumbnailEmoji: `🔍`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-20`,
     difficulty: `Intermediate`,
     body: `CHKDSK (pronounced "check disk") is a built-in Windows utility that scans your hard drive or solid-state drive for errors and, in most cases, repairs them automatically. Hard drives can develop problems over time — small corrupted sections, file system inconsistencies, or physical "bad sectors" where data cannot be reliably stored. Running CHKDSK helps catch and address these issues before they cause data loss or system crashes.
@@ -637,7 +637,7 @@ Running CHKDSK on your main C: drive while Windows is running requires a restart
     category: `windows-guides`,
     tags: [`powershell`, `windows commands`, `PC tips`, `command line`, `windows tools`],
     readTime: `7 min`,
-    thumbnailEmoji: `💻`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-20`,
     difficulty: `Intermediate`,
     body: `PowerShell is a text-based tool built into Windows that lets you control your computer by typing commands. It looks like an old-fashioned program — a dark window with text — but it can do things that regular Windows apps cannot, and many useful tasks can be done with a single, short command.
@@ -682,7 +682,7 @@ One important safety note: never paste PowerShell commands from untrusted source
     category: `windows-guides`,
     tags: [`command prompt`, `cmd`, `windows commands`, `PC troubleshooting`, `network repair`],
     readTime: `6 min`,
-    thumbnailEmoji: `⌨️`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-20`,
     difficulty: `Beginner`,
     body: `The Command Prompt — often shortened to CMD — is a text-based tool that has been part of Windows since the early days of personal computers. It lets you control your computer by typing commands instead of clicking icons and menus. While it looks old-fashioned, it remains one of the most useful troubleshooting tools built into Windows.
@@ -729,7 +729,7 @@ As with PowerShell, always be cautious about where you get commands to run. Only
     category: `mac-guides`,
     tags: [`mission control`, `mac multitasking`, `open windows`, `mac tips`, `macos`],
     readTime: `5 min`,
-    thumbnailEmoji: `🖥️`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-20`,
     difficulty: `Beginner`,
     body: `Mission Control is a built-in feature on Mac that gives you a bird's-eye view of everything open on your computer at one time. When you activate it, all your open windows spread across the screen, showing you every app and document you have running. Instead of hunting through a cluttered pile of overlapping windows to find what you need, you can see them all at once and click on exactly the one you want.
@@ -773,7 +773,7 @@ Mac computers — including MacBooks, the Mac Mini, iMac, and Mac Pro — all su
     category: `mac-guides`,
     tags: [`mac spaces`, `virtual desktop`, `macos`, `mission control`, `mac productivity`],
     readTime: `5 min`,
-    thumbnailEmoji: `📐`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-20`,
     difficulty: `Beginner`,
     body: `Spaces is a macOS feature that lets you create multiple separate virtual desktops — called Spaces — on your Mac. Each Space has its own set of open windows and apps, so you can keep different types of work completely separate without everything piling up on a single desktop.
@@ -818,16 +818,16 @@ Spaces is managed through Mission Control. Creating, rearranging, and deleting S
     category: `mac-guides`,
     tags: [`mac keyboard shortcuts`, `mac tips`, `productivity`, `macos`, `time saving`],
     readTime: `6 min`,
-    thumbnailEmoji: `⌨️`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-20`,
     difficulty: `Beginner`,
-    body: `Keyboard shortcuts are combinations of keys you press at the same time to perform a task — no mouse required. On a Mac, most shortcuts use the Command key (labeled Cmd or shown with a ⌘ symbol), which sits next to the space bar on both sides of the keyboard. Learning even a handful of shortcuts can noticeably speed up your daily work.
+    body: `Keyboard shortcuts are combinations of keys you press at the same time to perform a task — no mouse required. On a Mac, most shortcuts use the Command key (labeled Cmd or shown with a  symbol), which sits next to the space bar on both sides of the keyboard. Learning even a handful of shortcuts can noticeably speed up your daily work.
 
 Most Mac users know Command + C to copy and Command + V to paste. But there are dozens of other shortcuts built into macOS that can help with everything from undoing a mistake to taking a screenshot to quickly locking your screen. Many people who have used Macs for years have never learned these, and discovering them feels like finding hidden capabilities in a tool you thought you already knew.
 
 The shortcuts in this guide work in most situations across macOS. Some are universal — they work in almost every app. Others are specific to certain apps like Safari, Mail, or Finder. App-specific shortcuts are usually visible in the app's menu bar at the top of your screen, where each menu item shows its keyboard shortcut next to the option name.
 
-A note on Mac modifier keys: the symbols you see in menus can be confusing. The ⌘ symbol represents Command. The ⌥ symbol represents Option (also called Alt). The ⇧ symbol represents Shift. The ^ symbol represents Control.
+A note on Mac modifier keys: the symbols you see in menus can be confusing. The  symbol represents Command. The  symbol represents Option (also called Alt). The ⇧ symbol represents Shift. The ^ symbol represents Control.
 
 Using shortcuts has a small learning curve — your muscle memory needs to build up over time. The best approach is to pick two or three shortcuts and use them for a week until they feel automatic. Then add a few more. Within a month, they become second nature.`,
     steps: [
@@ -863,7 +863,7 @@ Using shortcuts has a small learning curve — your muscle memory needs to build
     category: `mac-guides`,
     tags: [`activity monitor`, `mac performance`, `CPU usage`, `memory usage`, `mac troubleshooting`],
     readTime: `6 min`,
-    thumbnailEmoji: `📊`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-20`,
     difficulty: `Intermediate`,
     body: `Activity Monitor is a built-in Mac utility that shows you in real time what is happening inside your computer. It lists every process and app running on your Mac along with how much of your computer's resources each one is using — specifically CPU (processing power), memory (RAM), energy, disk activity, and network data.

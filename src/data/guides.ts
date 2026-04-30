@@ -1,4 +1,4 @@
-export type GuideCategory = 'windows-guides' | 'mac-guides' | 'essential-skills' | 'tips-tricks' | 'ai-guides' | 'ai-advanced' | 'safety-guides' | 'how-to' | 'app-guides' | 'health-tech' | 'phone-guides' | 'social-media' | 'government-civic' | 'financial-tech' | 'smart-home' | 'entertainment' | 'communication' | 'life-transitions' | 'internet-connectivity';
+export type GuideCategory = 'windows-guides' | 'mac-guides' | 'essential-skills' | 'tips-tricks' | 'ai-guides' | 'ai-advanced' | 'safety-guides' | 'how-to' | 'app-guides' | 'health-tech' | 'phone-guides' | 'social-media' | 'government-civic' | 'financial-tech' | 'smart-home' | 'entertainment' | 'communication' | 'life-transitions' | 'internet-connectivity' | 'online-privacy' | 'online-banking' | 'buying-guides' | 'tech-explained' | 'troubleshooting' | 'work-from-home';
 
 /** A visual callout overlaid on a guide step's screenshot */
 export interface ScreenshotAnnotation {
@@ -43,9 +43,8 @@ export interface Guide {
   tags: string[];
   readTime: string;
   videoUrl?: string;
-  /** @deprecated Kept for historical data; UI renders category-based SVG icons via GuideThumbnail. */
-  thumbnailEmoji?: string;
-  /** URL to a relevant thumbnail image — used instead of the category icon when available */
+  thumbnailEmoji: string;
+  /** URL to a relevant thumbnail image — used instead of emoji when available */
   thumbnailUrl?: string;
   publishedAt: string;
   /** Date the guide content was last reviewed and confirmed accurate */
@@ -77,6 +76,12 @@ export const categoryLabels: Record<GuideCategory, string> = {
   'communication': 'Communication',
   'life-transitions': 'Life Transitions',
   'internet-connectivity': 'Internet & WiFi',
+  'online-privacy': 'Online Privacy & Dark Web',
+  'online-banking': 'Online Banking',
+  'buying-guides': 'Buying Guides',
+  'tech-explained': 'Tech Terms Explained',
+  'troubleshooting': 'Troubleshooting',
+  'work-from-home': 'Working from Home',
 };
 
 export const categoryDescriptions: Record<GuideCategory, string> = {
@@ -99,6 +104,12 @@ export const categoryDescriptions: Record<GuideCategory, string> = {
   'communication': 'Video calling, messaging apps, group chats, and staying connected with family and friends',
   'life-transitions': 'Setting up new devices, switching platforms, moving, and managing digital life changes',
   'internet-connectivity': 'Choosing internet plans, setting up routers, improving WiFi, and understanding your connection',
+  'online-privacy': 'Protect your personal data — dark web monitoring, data broker removal, private browsing, and keeping your information off the internet',
+  'online-banking': 'Online and mobile banking step by step — logging in safely, mobile check deposit, bill pay, transfers, and spotting bank scams',
+  'buying-guides': 'Know what to look for before you buy — plain-English guides to choosing laptops, phones, tablets, TVs, printers, and more',
+  'tech-explained': 'Confused by tech jargon? Plain-English explanations of RAM, CPU, storage, 4K, USB types, Bluetooth versions, and more',
+  'troubleshooting': 'Fix common tech problems yourself — frozen apps, slow internet, error messages, battery drain, and devices that won\'t cooperate',
+  'work-from-home': 'Set up a reliable home office — VPNs, remote desktop, video conferencing, cloud storage, and productivity tools for remote workers',
 };
 
 
@@ -184,26 +195,7 @@ const coreGuides: Guide[] = [
       { title: 'Access Task View', content: 'Click the Task View button (or press Win+Tab) to see all open windows and virtual desktops.' },
     ]
   },
-  {
-    slug: 'take-screenshot-windows',
-    title: 'How to Take a Screenshot on Windows',
-    excerpt: 'Capture your screen using built-in Windows tools — no extra software needed.',
-    category: 'windows-guides',
-    tags: ['beginner', 'windows', 'screenshot', 'snipping-tool'],
-    readTime: '3 min',
-    videoUrl: 'https://www.youtube.com/embed/s8EkEFqRHuQ',
-    thumbnailEmoji: '📸',
-    publishedAt: '2026-01-09',
-    difficulty: 'Beginner',
-    steps: [
-      { title: 'Full screen screenshot', content: 'Press the Print Screen (PrtScn) key to capture the entire screen to your clipboard. Paste it into Paint or a document.' },
-      { title: 'Screenshot to file', content: 'Press Win+Print Screen to save a full screenshot directly as a PNG file in your Pictures → Screenshots folder.' },
-      { title: 'Use Snipping Tool', content: 'Press Win+Shift+S to open Snipping Tool. Draw a rectangle around the area you want to capture.' },
-      { title: 'Capture a single window', content: 'Click the window you want, then press Alt+Print Screen to capture just that window.' },
-      { title: 'Annotate and share', content: 'After using Snipping Tool, click the notification to open the screenshot in the editor where you can mark it up and save.' },
-    ]
-  },
-  {
+    {
     slug: 'copy-paste-windows',
     title: 'How to Copy and Paste on Windows',
     excerpt: 'One of the most essential computer skills — learn to copy and paste text, files, and more.',
@@ -428,26 +420,7 @@ const coreGuides: Guide[] = [
       { title: 'Send your first email', content: 'Click the + (New Mail) button, enter a recipient, subject, and message, then click Send.' },
     ]
   },
-  {
-    slug: 'setup-windows-backup',
-    title: 'How to Set Up Windows Backup',
-    excerpt: 'Protect your important files by setting up automatic backups in Windows.',
-    category: 'windows-guides',
-    tags: ['beginner', 'windows', 'backup', 'data-protection'],
-    readTime: '5 min',
-    videoUrl: 'https://www.youtube.com/embed/4vQ4o9t5ND8',
-    thumbnailEmoji: '☁️',
-    publishedAt: '2026-01-22',
-    difficulty: 'Beginner',
-    steps: [
-      { title: 'Open Backup settings', content: 'Go to Settings → Accounts → Windows Backup to see your backup options.' },
-      { title: 'Set up OneDrive sync', content: 'Sign in with your Microsoft account and choose which folders to sync: Desktop, Documents, and Pictures.' , tip: 'OneDrive gives you 5GB free. If you need more, Microsoft 365 includes 1TB of OneDrive storage.' },
-      { title: 'Enable File History', content: 'Connect an external drive, then go to Settings → System → Storage → Advanced storage → Backup Options.' },
-      { title: 'Set backup frequency', content: 'Choose how often File History backs up (every 10 minutes to daily) and how long to keep versions.' },
-      { title: 'Test your backup', content: 'Navigate to a backed-up folder, right-click a file, and select "Restore previous versions" to verify it works.' , warning: 'A backup you have never tested might not work when you need it most. Test restoring a file at least once.' },
-    ]
-  },
-  {
+    {
     slug: 'use-virtual-desktops-windows',
     title: 'How to Use Virtual Desktops on Windows',
     excerpt: 'Organize your work by creating multiple desktops for different tasks.',
@@ -1159,26 +1132,7 @@ const coreGuides: Guide[] = [
       { title: 'Quit an app completely', content: 'Press Cmd+Q or right-click the app icon in the Dock → Quit. This fully closes the application.' },
     ]
   },
-  {
-    slug: 'take-screenshot-mac',
-    title: 'How to Take a Screenshot on Mac',
-    excerpt: 'Capture your screen on Mac using simple keyboard shortcuts — no apps needed.',
-    category: 'mac-guides',
-    tags: ['beginner', 'mac', 'screenshot', 'keyboard-shortcuts'],
-    readTime: '3 min',
-    videoUrl: 'https://www.youtube.com/embed/z1-pF4wO0IY',
-    thumbnailEmoji: '📸',
-    publishedAt: '2026-01-08',
-    difficulty: 'Beginner',
-    steps: [
-      { title: 'Full screen screenshot', content: 'Press Cmd+Shift+3 to capture the entire screen. The image saves to your Desktop.' },
-      { title: 'Selected area screenshot', content: 'Press Cmd+Shift+4, then click and drag to select the area you want to capture.' },
-      { title: 'Capture a specific window', content: 'Press Cmd+Shift+4, then press Space. Click the window you want to capture (it gets a nice shadow).' },
-      { title: 'Screenshot toolbar', content: 'Press Cmd+Shift+5 to open the screenshot toolbar with all capture options plus screen recording.' },
-      { title: 'Markup and share', content: 'Click the screenshot thumbnail in the corner to open Markup. Add text, shapes, and annotations before saving.' },
-    ]
-  },
-  {
+    {
     slug: 'copy-paste-mac',
     title: 'How to Copy and Paste on Mac',
     excerpt: 'Master the essential copy, cut, and paste commands on your Mac.',
@@ -1383,26 +1337,7 @@ const coreGuides: Guide[] = [
   },
 
   // Intermediate (16-35)
-  {
-    slug: 'use-time-machine-mac',
-    title: 'How to Use Time Machine Backup on Mac',
-    excerpt: 'Set up automatic backups with Time Machine to protect all your files.',
-    category: 'mac-guides',
-    tags: ['intermediate', 'mac', 'time-machine', 'backup', 'data-protection'],
-    readTime: '5 min',
-    videoUrl: 'https://www.youtube.com/embed/z1-pF4wO0IY',
-    thumbnailEmoji: '⏰',
-    publishedAt: '2026-01-20',
-    difficulty: 'Intermediate',
-    steps: [
-      { title: 'Connect an external drive', content: 'Plug in an external hard drive or SSD. macOS may ask if you want to use it for Time Machine.' , tip: `For Time Machine, a drive at least twice the size of your Mac's storage is recommended. A 1TB external drive works for most people.` },
-      { title: 'Set up Time Machine', content: 'Go to System Settings → General → Time Machine → Add Backup Disk. Select your external drive.' },
-      { title: 'Start the first backup', content: 'Time Machine begins backing up automatically. The first backup may take a while depending on your data.' , warning: 'Do not disconnect the external drive during the first backup. It can take several hours depending on how much data you have.' },
-      { title: 'Restore files', content: 'Click the Time Machine icon in the menu bar → Browse Time Machine Backups to navigate through past versions.' },
-      { title: 'Exclude folders', content: `In Time Machine settings, click Options to exclude large folders you don't need backed up.` },
-    ]
-  },
-  {
+    {
     slug: 'use-multiple-desktops-mac',
     title: 'How to Use Multiple Desktops (Spaces) on Mac',
     excerpt: 'Create separate workspaces to organize your apps and boost productivity.',
@@ -1718,26 +1653,7 @@ const coreGuides: Guide[] = [
       { title: 'Enable stealth mode', content: 'In Options, enable "Enable stealth mode" to make your Mac invisible on public networks.' , warning: 'Stealth mode makes your Mac invisible on public networks, which is great for security. Only disable it if a specific app stops working.' },
     ]
   },
-  {
-    slug: 'setup-parental-controls-mac',
-    title: 'How to Set Up Parental Controls on Mac',
-    excerpt: 'Use Screen Time to set content restrictions and time limits for children on Mac.',
-    category: 'mac-guides',
-    tags: ['advanced', 'mac', 'parental-controls', 'screen-time', 'family'],
-    readTime: '5 min',
-    videoUrl: 'https://www.youtube.com/embed/z1-pF4wO0IY',
-    thumbnailEmoji: '👨‍👩‍👧‍👦',
-    publishedAt: '2026-02-07',
-    difficulty: 'Advanced',
-    steps: [
-      { title: 'Open Screen Time', content: 'Go to System Settings → Screen Time. If setting up for a child, use Family Sharing.' },
-      { title: 'Set content restrictions', content: 'Click Content & Privacy → toggle on. Restrict web content, apps, and explicit material.' , tip: 'Start with stricter restrictions and relax them as your child gets older and demonstrates responsible usage.' },
-      { title: 'Set app limits', content: 'Click App Limits → Add Limit. Set daily time limits for categories of apps.' },
-      { title: 'Set Downtime', content: 'Configure Downtime to block most apps during bedtime or homework hours.' },
-      { title: 'Use a Screen Time passcode', content: 'Set a passcode that only parents know to prevent children from changing restrictions.' , warning: 'Choose a passcode your children will not guess. Do not use the same passcode as your phone unlock.' },
-    ]
-  },
-  {
+    {
     slug: 'clean-up-disk-space-mac',
     title: 'How to Clean Up Disk Space on Mac',
     excerpt: 'Free up storage on your Mac by removing unnecessary files and optimizing space.',
@@ -1996,27 +1912,7 @@ const coreGuides: Guide[] = [
       { title: 'Forget the network after use', content: `After you're done, forget the network in your Wi-Fi settings to prevent automatic reconnection.` },
     ]
   },
-  {
-    slug: 'setup-password-manager',
-    title: 'How to Set Up and Use a Password Manager',
-    excerpt: 'Stop memorizing passwords — let a password manager handle security for you.',
-    category: 'essential-skills',
-    tags: ['security', 'passwords', 'password-manager', 'all-devices'],
-    readTime: '5 min',
-    videoUrl: 'https://www.youtube.com/embed/5Im87VPQZ_0',
-    thumbnailEmoji: '🗝️',
-    publishedAt: '2026-01-23',
-    difficulty: 'Intermediate',
-    steps: [
-      { title: 'Choose a password manager', content: 'Popular options: 1Password, Bitwarden (free), LastPass, Apple Keychain (built into Apple devices).' },
-      { title: 'Create a master password', content: 'This is the ONE password you need to remember. Make it strong — a long passphrase works best.' , warning: 'If you forget your master password, most password managers cannot recover it. Write it down and keep it in a locked drawer.' },
-      { title: 'Import existing passwords', content: 'Most managers can import passwords from your browser. Look for "Import" in the app settings.' },
-      { title: 'Install browser extensions', content: `Install the password manager's browser extension so it can auto-fill login forms.` , tip: 'The browser extension is what makes a password manager truly convenient. Without it, you would have to copy and paste passwords manually.' },
-      { title: 'Generate strong passwords', content: `When creating new accounts, use the password manager's generator for unique, random passwords.` },
-      { title: 'Sync across devices', content: 'Sign into the password manager on all your devices for access everywhere.' },
-    ]
-  },
-  {
+    {
     slug: 'make-group-video-call',
     title: 'How to Set Up a Group Video Call',
     excerpt: 'Host video calls with multiple people for family, friends, or work meetings.',
@@ -4215,7 +4111,7 @@ const coreGuides: Guide[] = [
       },
       {
         title: 'Setting up 2FA on Facebook / Instagram',
-        content: 'Facebook: Settings → Security and Login → Two-Factor Authentication → Edit. Instagram: Profile → Menu (☰) → Settings → Security → Two-Factor Authentication. Both support SMS codes or an authenticator app.'
+        content: 'Facebook: Settings → Security and Login → Two-Factor Authentication → Edit. Instagram: Profile → Menu () → Settings → Security → Two-Factor Authentication. Both support SMS codes or an authenticator app.'
       },
       {
         title: 'Save your backup codes',
@@ -4247,7 +4143,7 @@ const coreGuides: Guide[] = [
       },
       {
         title: 'Review your Instagram account settings',
-        content: `On Instagram: Profile → Menu (☰) → Settings → Account Privacy → toggle "Private Account" on. This means only people you approve can see your posts. For your business or public page, you'll want to keep it public — but make sure your personal account is private.`
+        content: `On Instagram: Profile → Menu () → Settings → Account Privacy → toggle "Private Account" on. This means only people you approve can see your posts. For your business or public page, you'll want to keep it public — but make sure your personal account is private.`
       },
       {
         title: 'Be careful what you share publicly',
@@ -4333,11 +4229,11 @@ const coreGuides: Guide[] = [
       },
       {
         title: 'Update Windows',
-        content: 'Click the Start menu → Settings (⚙️) → Windows Update → Check for Updates. Windows will download and install any available updates. If it asks to restart, save your work and let it restart — updates only fully install after a restart.', tip: 'Enable "Receive updates for other Microsoft products" in Windows Update settings to also keep Word, Excel, and Edge up to date.'
+        content: 'Click the Start menu → Settings () → Windows Update → Check for Updates. Windows will download and install any available updates. If it asks to restart, save your work and let it restart — updates only fully install after a restart.', tip: 'Enable "Receive updates for other Microsoft products" in Windows Update settings to also keep Word, Excel, and Edge up to date.'
       },
       {
         title: 'Update macOS',
-        content: 'Click the Apple menu (🍎) in the top-left → System Settings → General → Software Update. If an update is available, click "Update Now". macOS will download in the background and prompt you to install when ready.', tip: 'You can also enable "Automatically keep my Mac up to date" to have macOS download and install updates overnight.'
+        content: 'Click the Apple menu () in the top-left → System Settings → General → Software Update. If an update is available, click "Update Now". macOS will download in the background and prompt you to install when ready.', tip: 'You can also enable "Automatically keep my Mac up to date" to have macOS download and install updates overnight.'
       },
       {
         title: 'Update your iPhone',
@@ -4349,7 +4245,7 @@ const coreGuides: Guide[] = [
       },
       {
         title: 'Update your browser (Chrome, Edge, Safari, Firefox)',
-        content: 'Chrome/Edge: click the three-dot menu (⋮) in the top-right → Help → About Google Chrome (or About Microsoft Edge). It will check for and install updates automatically. Safari updates automatically with macOS. Firefox: click the menu (☰) → Help → About Firefox.', tip: `A colored dot or arrow next to the browser menu usually means an update is waiting. Don't ignore it — browsers are a primary target for hackers.`
+        content: 'Chrome/Edge: click the three-dot menu (⋮) in the top-right → Help → About Google Chrome (or About Microsoft Edge). It will check for and install updates automatically. Safari updates automatically with macOS. Firefox: click the menu () → Help → About Firefox.', tip: `A colored dot or arrow next to the browser menu usually means an update is waiting. Don't ignore it — browsers are a primary target for hackers.`
       },
       {
         title: 'Set up automatic updates everywhere',
@@ -4384,7 +4280,7 @@ const coreGuides: Guide[] = [
       },
       {
         title: 'Setting up on a Chromecast',
-        content: `Plug the Chromecast into your TV's HDMI port. Download the Google Home app on your phone. Open Google Home → Add (+) → Set up device → New device. Follow the steps to connect your Chromecast to your Wi-Fi. Once set up, you "cast" from your phone or tablet — open Netflix on your phone, press the cast icon (📡), and it plays on the TV.`
+        content: `Plug the Chromecast into your TV's HDMI port. Download the Google Home app on your phone. Open Google Home → Add (+) → Set up device → New device. Follow the steps to connect your Chromecast to your Wi-Fi. Once set up, you "cast" from your phone or tablet — open Netflix on your phone, press the cast icon (), and it plays on the TV.`
       },
       {
         title: 'Setting up on Apple TV',
@@ -4415,7 +4311,7 @@ const coreGuides: Guide[] = [
       },
       {
         title: 'Screen recording on Windows (Xbox Game Bar)',
-        content: 'Press Windows key + G to open the Xbox Game Bar overlay. Click the record button (⏺) or press Windows key + Alt + R to start recording. The same shortcut stops it. Your recording saves to Videos → Captures on your PC.',
+        content: 'Press Windows key + G to open the Xbox Game Bar overlay. Click the record button () or press Windows key + Alt + R to start recording. The same shortcut stops it. Your recording saves to Videos → Captures on your PC.',
         tip: `The Xbox Game Bar doesn't record the desktop itself — only active app windows. For full desktop recording, use the free app OBS Studio or the Snipping Tool in Windows 11.`
       },
       {
@@ -4424,12 +4320,12 @@ const coreGuides: Guide[] = [
       },
       {
         title: 'Screen recording on Mac',
-        content: 'Press Command (⌘) + Shift + 5. A toolbar appears at the bottom of the screen. Click "Record Entire Screen" or "Record Selected Portion". Click Record. Stop recording by pressing the Stop button in the menu bar or pressing Command + Shift + 5 again and clicking Stop.',
+        content: 'Press Command () + Shift + 5. A toolbar appears at the bottom of the screen. Click "Record Entire Screen" or "Record Selected Portion". Click Record. Stop recording by pressing the Stop button in the menu bar or pressing Command + Shift + 5 again and clicking Stop.',
         tip: 'Your Mac recording saves to the Desktop automatically as a .mov file.'
       },
       {
         title: 'Screen recording on iPhone',
-        content: 'First, add it to Control Center: Settings → Control Center → tap + next to Screen Recording. Then, swipe down from the top-right corner of the screen (or swipe up on older iPhones) to open Control Center → tap the screen record button (⏺ in a circle). A 3-second countdown begins, then recording starts. Tap the red status bar at the top to stop.'
+        content: 'First, add it to Control Center: Settings → Control Center → tap + next to Screen Recording. Then, swipe down from the top-right corner of the screen (or swipe up on older iPhones) to open Control Center → tap the screen record button ( in a circle). A 3-second countdown begins, then recording starts. Tap the red status bar at the top to stop.'
       },
       {
         title: 'Screen recording on Android',
@@ -4461,7 +4357,7 @@ const coreGuides: Guide[] = [
       },
       {
         title: 'Move a file into a folder',
-        content: 'Windows: Click the file once to select it → hold Ctrl and press X to cut it → open the destination folder → hold Ctrl and press V to paste it. You can also drag-and-drop between two open windows. Mac: Same process but use Command (⌘) + X to cut, Command + V to paste. Or drag-and-drop while holding Command.', tip: 'Drag-and-drop is easiest for most people. Open both the source and destination folders side by side, then drag files across.'
+        content: 'Windows: Click the file once to select it → hold Ctrl and press X to cut it → open the destination folder → hold Ctrl and press V to paste it. You can also drag-and-drop between two open windows. Mac: Same process but use Command () + X to cut, Command + V to paste. Or drag-and-drop while holding Command.', tip: 'Drag-and-drop is easiest for most people. Open both the source and destination folders side by side, then drag files across.'
       },
       {
         title: 'Name files sensibly',
@@ -4725,7 +4621,7 @@ const coreGuides: Guide[] = [
       },
       {
         title: 'Share a calendar with family',
-        content: `On Google Calendar: tap the three lines (☰), find your calendar name under "My calendars," tap the three dots next to it, then "Settings and sharing." Under "Share with specific people," add a family member's Gmail address. They'll see your events on their own Calendar app.`, tip: 'A shared family calendar is great for keeping track of appointments, school events, and holidays that affect everyone.'
+        content: `On Google Calendar: tap the three lines (), find your calendar name under "My calendars," tap the three dots next to it, then "Settings and sharing." Under "Share with specific people," add a family member's Gmail address. They'll see your events on their own Calendar app.`, tip: 'A shared family calendar is great for keeping track of appointments, school events, and holidays that affect everyone.'
       },
       {
         title: 'Set up recurring reminders',
@@ -4797,37 +4693,7 @@ const coreGuides: Guide[] = [
     ]
   },
 
-  {
-    slug: 'medication-reminders',
-    title: 'How to Set Up Medication Reminders on Your Phone',
-    excerpt: 'Never forget a tablet again — set daily or multiple-daily reminders using your phone or a dedicated app.',
-    category: 'how-to',
-    tags: ['medication', 'reminders', 'health', 'alarms', 'accessibility', 'beginner'],
-    readTime: '5 min',
-    videoUrl: 'https://www.youtube.com/embed/4vQ4o9t5ND8',
-    thumbnailEmoji: '💊',
-    publishedAt: '2026-03-24',
-    difficulty: 'Beginner',
-    steps: [
-      {
-        title: `Use your phone's built-in alarm (simplest method)`,
-        content: 'On iPhone: open the Clock app → Alarm → tap "+". Set the time, label it "Morning tablets" or whatever makes sense to you, and turn on "Repeat" to choose which days. On Android: open the Clock app → Alarm → tap "+". Same process. This is free and already on your phone — no new apps needed.', tip: 'Set a separate alarm for each medication time if you take them at different times of day.'
-      },
-      {
-        title: 'Use Reminders for a label and sound (iPhone)',
-        content: 'The Reminders app lets you create a checklist you can tick off. Open Reminders → tap "+" → type "Take blood pressure tablets" → tap the (i) to set an alert time → turn on "Repeat" for daily. Unlike alarms, you can tick these off as a checklist, which some people find satisfying.'
-      },
-      {
-        title: 'Try Medisafe (dedicated medication app)',
-        content: `Medisafe is a free app (on App Store and Google Play) designed specifically for medication management. It lets you add each medication by name, dose, and schedule. It reminds you, tracks what you've taken, and can alert a family member if you miss a dose. Search "Medisafe" in your app store.`, tip: 'Medisafe is especially useful if you take several medications at different times. It also provides information about possible drug interactions.'
-      },
-      {
-        title: 'Ask Alexa or Siri to remind you',
-        content: 'You can set a voice reminder without even picking up your phone: say "Hey Alexa, remind me to take my tablets every morning at 8am" or "Hey Siri, remind me to take my evening tablets every day at 8pm." Your device will speak the reminder out loud at that time every day.', tip: 'This works especially well if you keep an Amazon Echo or your phone near where you keep your medication.'
-      },
-    ]
-  },
-
+  
   {
     slug: 'ereader-setup',
     title: 'How to Set Up a Kindle or E-Reader',
@@ -5166,7 +5032,7 @@ const coreGuides: Guide[] = [
     steps: [
       {
         title: 'Check for the padlock — always',
-        content: 'Before entering any personal details or payment information on a shopping website, look at the address bar at the top of your browser. You should see a padlock icon 🔒 and the address should start with "https://" (the "s" stands for secure). If you see a warning, a broken padlock, or "http://" without the "s", leave the site immediately — it is not safe to enter payment details.', tip: `The padlock doesn't guarantee a site is legitimate — it just means your data is encrypted. Always double-check the website name too.`, warning: 'Scam sites can have padlocks too. Always verify the exact website address — "amazon.co.uk" is real; "amazon-deals.co.uk" or "amazon.shop-secure.com" are fakes.'
+        content: 'Before entering any personal details or payment information on a shopping website, look at the address bar at the top of your browser. You should see a padlock icon  and the address should start with "https://" (the "s" stands for secure). If you see a warning, a broken padlock, or "http://" without the "s", leave the site immediately — it is not safe to enter payment details.', tip: `The padlock doesn't guarantee a site is legitimate — it just means your data is encrypted. Always double-check the website name too.`, warning: 'Scam sites can have padlocks too. Always verify the exact website address — "amazon.co.uk" is real; "amazon-deals.co.uk" or "amazon.shop-secure.com" are fakes.'
       },
       {
         title: 'Stick to trusted retailers',
@@ -5225,12 +5091,12 @@ const coreGuides: Guide[] = [
       },
       {
         title: 'Using emoji',
-        content: 'Emoji are the small pictures 😊🎉👍 you can add to messages. Tap the smiley face icon on your keyboard (on the bottom-left or near the space bar) to open the emoji keyboard. Tap any emoji to insert it. Swipe left and right to browse categories — people, animals, food, activities, travel, objects, symbols, and flags. The recently-used row at the top shows your most common picks.',
+        content: 'Emoji are the small pictures  you can add to messages. Tap the smiley face icon on your keyboard (on the bottom-left or near the space bar) to open the emoji keyboard. Tap any emoji to insert it. Swipe left and right to browse categories — people, animals, food, activities, travel, objects, symbols, and flags. The recently-used row at the top shows your most common picks.',
         tip: 'You can react to a specific message in iMessage or WhatsApp: press and hold a message until reaction emoji appear. This is a quick way to reply without typing a response.'
       },
       {
         title: 'WhatsApp tips',
-        content: 'WhatsApp is the most popular messaging app in the UK. Key features: blue ticks (✓✓) mean your message has been read (single tick = sent, double grey tick = delivered). You can turn off read receipts in Settings → Privacy → Read Receipts. Star important messages: hold a message → tap the star. Find starred messages: Settings → Starred Messages. To mute a noisy group: press and hold the chat → Mute.', tip: 'WhatsApp Status lets you post a photo or short video visible to your contacts for 24 hours — similar to Facebook Stories. Tap the Status tab to see what your contacts have shared.'
+        content: 'WhatsApp is the most popular messaging app in the UK. Key features: blue ticks () mean your message has been read (single tick = sent, double grey tick = delivered). You can turn off read receipts in Settings → Privacy → Read Receipts. Star important messages: hold a message → tap the star. Find starred messages: Settings → Starred Messages. To mute a noisy group: press and hold the chat → Mute.', tip: 'WhatsApp Status lets you post a photo or short video visible to your contacts for 24 hours — similar to Facebook Stories. Tap the Status tab to see what your contacts have shared.'
       },
     ]
   },
@@ -5256,7 +5122,7 @@ const coreGuides: Guide[] = [
       { title: 'Find and follow people', content: `Tap the magnifying glass icon (bottom bar) to search. Type a friend's name or username. Tap their profile, then tap the blue "Follow" button. You'll see their posts in your home feed. Instagram may also suggest people from your contacts — tap "Allow" when prompted to find friends already on Instagram.` },
       { title: 'Browse your feed', content: 'Tap the house icon (bottom left) to see your home feed — posts from people you follow. Scroll up and down to see more. Tap the heart icon below a photo to like it. Tap the speech bubble to leave a comment. Double-tap a photo for a quick like.' },
       { title: 'Post your first photo', content: 'Tap the + icon (bottom center). Choose a photo from your library or tap "Camera" to take one now. Add a filter if you like (swipe left/right to preview filters — "Clarendon" is popular). Write a caption describing your photo. Tap "Share" to post it. Your followers will see it in their feeds!', tip: 'You can tag people in your photo by tapping "Tag People" and tapping on a face in the image.' },
-      { title: 'Stay safe on Instagram', content: `Go to Settings (tap your profile → hamburger menu ☰ → Settings and Privacy). Set your account to "Private" so only approved followers see your posts. Turn off "Activity Status" so strangers can't see when you're online. Never share your home address, phone number, or financial details in posts or messages.`, warning: 'Be cautious of direct messages from strangers — scammers use Instagram to impersonate friends or offer fake prizes.' },
+      { title: 'Stay safe on Instagram', content: `Go to Settings (tap your profile → hamburger menu  → Settings and Privacy). Set your account to "Private" so only approved followers see your posts. Turn off "Activity Status" so strangers can't see when you're online. Never share your home address, phone number, or financial details in posts or messages.`, warning: 'Be cautious of direct messages from strangers — scammers use Instagram to impersonate friends or offer fake prizes.' },
     ]
   },
   {
@@ -6350,26 +6216,7 @@ const coreGuides: Guide[] = [
       { title: 'Check your iCloud storage', content: 'Apple gives you 5GB of free iCloud storage. To see how much you have used, go to Settings > [Your Name] > iCloud > Manage Account Storage. If your backup is failing due to full storage, you can upgrade to 50GB for $0.99 per month or delete old backups from devices you no longer use.' },
     ],
   },
-  {
-    slug: 'backup-android-to-google',
-    title: 'How to Back Up Your Android Phone to Google',
-    excerpt: 'Keep your contacts, photos, and app data safe with automatic Google backups — free and easy to set up.',
-    category: 'phone-guides',
-    tags: ['android', 'backup', 'google', 'photos', 'safety'],
-    readTime: '3 min',
-    videoUrl: 'https://www.youtube.com/embed/4vQ4o9t5ND8',
-    thumbnailEmoji: '☁️',
-    publishedAt: '2026-03-31',
-    difficulty: 'Beginner',
-    steps: [
-      { title: 'Turn on Google Backup', content: 'Go to Settings > System > Backup (on Samsung: Settings > Accounts and Backup > Google Drive). Turn on "Back up to Google Drive." This automatically saves your contacts, app data, call history, and Wi-Fi passwords to your Google account.', tip: `Google's backup guide is at support.google.com/android/answer/2819582 — it covers all Android versions and brands.` },
-      { title: 'Back up your photos with Google Photos', content: 'Open the Google Photos app (download it free from the Play Store if you do not have it). Tap your profile photo in the top-right corner, then tap "Photos Settings" > "Backup" and turn it on. Choose "Storage saver" quality to back up unlimited photos for free.', tip: 'Google gives every account 15GB of free storage for backups. Photos backed up in "Storage saver" mode do not count against this limit.' },
-      { title: 'Check that your backup is working', content: 'Open Google Photos, tap your profile photo, and tap "Photos Settings" > "Backup." You will see "Backup is on" and when your photos were last backed up. You should see "Backup complete" or the number of photos waiting to upload.' },
-      { title: 'What gets backed up', content: 'Google Backup saves: your contacts (viewable at contacts.google.com), app data and settings, call history, Wi-Fi passwords, and photos and videos (through Google Photos). SMS text messages are backed up on some Android versions — if yours does not, the free app "SMS Backup & Restore" from the Play Store can help.' },
-      { title: 'Restore your phone from a backup', content: 'When you get a new Android phone, sign in with your Google account during setup and choose "Restore from backup." Select your most recent backup from the list. Your contacts, apps, and settings will transfer over automatically.', warning: 'For your backup to be complete, keep your phone connected to Wi-Fi and plugged in overnight at least once a week. Backups only happen when you are on Wi-Fi.' },
-    ],
-  },
-  {
+    {
     slug: 'download-apps-app-store-iphone',
     title: 'How to Download Apps on Your iPhone',
     excerpt: `The App Store has hundreds of thousands of free apps. Here's how to find and install the ones you want.`,
@@ -6428,26 +6275,7 @@ const coreGuides: Guide[] = [
       { title: 'Install a free call-blocking app', content: 'Download a free spam-blocking app like Hiya or Nomorobo from the App Store. Once installed, go to Settings > Phone > Call Blocking & Identification and turn on the app. It will automatically identify spam callers before you even answer.', warning: 'No app or setting can block every spam call. Scammers constantly change numbers. Silence Unknown Callers (step 1) combined with a blocking app gives you the best protection.' },
     ],
   },
-  {
-    slug: 'block-spam-calls-android',
-    title: 'How to Block Spam Calls on Android',
-    excerpt: `Stop nuisance callers in their tracks with Android's built-in call blocking and Google's spam protection.`,
-    category: 'phone-guides',
-    tags: ['android', 'spam', 'calls', 'block', 'safety'],
-    readTime: '3 min',
-    videoUrl: 'https://www.youtube.com/embed/4vQ4o9t5ND8',
-    thumbnailEmoji: '🚫',
-    publishedAt: '2026-03-31',
-    difficulty: 'Beginner',
-    steps: [
-      { title: 'Turn on Google spam protection', content: 'Open the Phone app on your Android. Tap the three-dot menu in the top-right corner, then tap Settings > Caller ID & Spam. Turn on "Filter spam calls." Google will automatically identify and silence calls that look like spam before your phone rings.', tip: `Google's guide to blocking calls on Android is at support.google.com/phoneapp/answer/6325463` },
-      { title: 'Block a specific number', content: 'Open the Phone app and tap "Recents." Find the number you want to block. Tap and hold on the number (or tap the three-dot menu next to it) and select "Block number." Future calls from this number will be declined automatically and will not ring your phone.' },
-      { title: 'Screen calls with Google Assistant (Pixel phones)', content: `On Google Pixel phones, when an unknown number calls, tap "Screen call." Google Assistant will answer on your behalf, ask who is calling and why, and show you the caller's response on your screen in real time. You then decide whether to pick up or hang up.` },
-      { title: 'Register on the National Do Not Call Registry', content: 'Visit DoNotCall.gov or call 1-888-382-1222 to register your number for free. Most legitimate companies must stop calling you within 31 days. Registration never expires — you only need to do it once.', tip: 'If you still receive calls after 31 days of registering, report them at DoNotCall.gov. These are likely scammers, which you can also report to the FTC at ReportFraud.ftc.gov.' },
-      { title: 'Install a free call-blocking app', content: 'Download a free app like Hiya Caller ID & Block or Nomorobo from the Google Play Store. These apps recognize spam numbers before you answer. Open the app and follow its setup instructions to start filtering calls.', warning: 'No app can block every spam call — scammers constantly rotate numbers. Combining Google spam protection with a blocking app gives you the strongest defense.' },
-    ],
-  },
-  {
+    {
     slug: 'fix-phone-battery-draining-fast',
     title: 'Why Is My Phone Battery Dying So Fast? (And How to Fix It)',
     excerpt: `If your phone battery isn't lasting the day, these simple changes can double your battery life.`,
@@ -7870,6 +7698,38 @@ const coreGuides: Guide[] = [
     ]
   },
 
+  // GUIDE 7: How to Use QR Codes
+  {
+    slug: 'how-to-use-qr-codes',
+    title: 'How to Use QR Codes (Those Square Barcode Things)',
+    excerpt: 'Learn what QR codes are and how to scan them with your phone — it is easier than you think.',
+    category: 'essential-skills',
+    tags: ['qr code', 'camera', 'beginner'],
+    readTime: '5 min',
+    videoUrl: 'https://www.youtube.com/embed/4vQ4o9t5ND8',
+    thumbnailEmoji: '📷',
+    publishedAt: '2026-04-01',
+    difficulty: 'Beginner',
+    steps: [
+      {
+        title: 'What is a QR code?',
+        content: `A QR code is a square pattern of black and white dots — it looks like a small, pixelated maze. Think of it like a barcode (the lines you see on products at the grocery store), but instead of just a product number, it can store a website address, phone number, or other information.\n\nYou have probably seen QR codes on restaurant menus ("Scan for menu"), event tickets, business cards, product packaging, or signs. When you scan one with your phone's camera, it instantly takes you to a website or shows you information — no typing needed.`
+      },
+      {
+        title: 'How to scan a QR code on an iPhone',
+        content: `Scanning a QR code on an iPhone is very easy — you do not need to download any special app.\n\n1. Open your Camera app (the icon that looks like a camera)\n2. Point your phone's camera at the QR code — hold it steady, about 6 to 12 inches away\n3. Wait a moment — a yellow notification will appear at the top of the screen showing a website address\n4. Tap that notification to open the link\n\nThat is it. Your iPhone camera automatically recognizes QR codes without you needing to press any buttons.`
+      },
+      {
+        title: 'How to scan a QR code on an Android phone',
+        content: 'On most modern Android phones, the camera can scan QR codes automatically.\n\n1. Open your Camera app\n2. Point it at the QR code and hold steady\n3. A link or notification should pop up — tap it to open\n\nIf nothing happens, you may need to enable QR code scanning:\n- Go to Settings > Camera (or search for "QR" in Settings)\n- Turn on "Scan QR codes"\n\n**On Samsung phones:** You can also swipe down from the top of the screen to open Quick Settings and tap the "Scan QR code" tile. This opens a dedicated scanner that works very well.'
+      },
+      {
+        title: 'Stay safe when scanning QR codes',
+        content: 'QR codes are generally safe, but scammers have started using them to trick people. The FTC has warned about "quishing" scams in 2026 — that is phishing using QR codes. Watch out for:\n\n- **Stickers placed over real QR codes** — especially on parking meters, gas pumps, or public signs. Scammers stick their own QR code on top of the real one to send you to a fake website.\n- **QR codes in unexpected emails or texts** — if you did not expect it, do not scan it.\n- **QR codes on random flyers** — be cautious about scanning codes posted in public places by unknown people.\n\nAlways look at the website address that pops up before you tap it. If it looks suspicious or unfamiliar, do not open it.', warning: 'Be careful with QR codes on random flyers, stickers on parking meters, or in unexpected emails. Scammers can put fake QR codes over real ones to send you to phishing websites. The FTC has warned about "quishing" scams in 2026.', tip: 'If a QR code takes you to a website asking for your password or payment information, STOP. Go to that website directly by typing the address into your browser instead.'
+      },
+    ]
+  },
+
   // GUIDE 8: How to Fix Your Phone When Apps Keep Crashing
   {
     slug: 'fix-phone-apps-crashing',
@@ -7983,25 +7843,7 @@ const coreGuides: Guide[] = [
       { title: 'Share results with your doctor', content: 'Most apps let you export a PDF report of your readings. Tap "Reports" or "Export" in the app and email it to your doctor before your next appointment. This helps them see trends over time.', tip: 'Take readings at the same time each day (morning is best) for the most accurate tracking.' },
     ]
   },
-  {
-    slug: 'medication-reminder-apps',
-    title: 'How to Set Up Medication Reminders on Your Phone',
-    excerpt: 'Never miss a dose again. Use your phone to remind you when it is time to take your medication.',
-    category: 'health-tech',
-    tags: ['medication', 'reminders', 'health', 'apps', 'beginner'],
-    readTime: '4 min',
-    videoUrl: 'https://www.youtube.com/embed/4vQ4o9t5ND8',
-    thumbnailEmoji: '💊',
-    publishedAt: '2026-04-03',
-    difficulty: 'Beginner',
-    steps: [
-      { title: 'Use your phone clock (simplest method)', content: 'Open the Clock app on your phone. Tap "Alarm" and set an alarm for each medication time. Label it with the medication name (for example, "Blood Pressure Pill"). Set it to repeat daily.', tip: 'This is the easiest method if you only take 1-2 medications at set times.' },
-      { title: 'Use Apple Health (iPhone)', content: 'Open the Health app. Tap "Browse" at the bottom, then "Medications." Tap "Add a Medication" and enter the name, dosage, and schedule. Your iPhone will send you a notification at each scheduled time and track whether you took it.' },
-      { title: 'Use a dedicated app (for complex schedules)', content: 'Download Medisafe (free, iPhone and Android). Add each medication with its name, dosage, and schedule. Medisafe sends reminders, tracks refills, and can even alert a family member if you miss a dose.' },
-      { title: 'Set up refill reminders', content: 'Most pharmacy apps (CVS, Walgreens, Walmart) can send you a notification when your prescription is ready for refill. Download your pharmacy app and turn on notifications in Settings.' },
-    ]
-  },
-  {
+    {
     slug: 'medicare-gov-guide',
     title: 'How to Use Medicare.gov to Check Your Coverage',
     excerpt: 'Medicare.gov helps you check your benefits, compare plans, find doctors, and manage your Medicare account online.',
@@ -8094,26 +7936,7 @@ const coreGuides: Guide[] = [
       { title: 'When to seek professional help', content: 'Apps are a great supplement, but they are not a replacement for professional care. If you are experiencing persistent anxiety, depression, or grief, talk to your doctor. The 988 Suicide and Crisis Lifeline is available 24/7 by call or text at 988.', warning: 'If you or someone you know is in crisis, call or text 988 (Suicide and Crisis Lifeline) or text HOME to 741741 (Crisis Text Line). These services are free and available 24/7.' },
     ]
   },
-  {
-    slug: 'hearing-aid-bluetooth-guide',
-    title: 'How to Connect Hearing Aids to Your Phone via Bluetooth',
-    excerpt: 'Stream phone calls, music, and video directly to your hearing aids. Easier than you think.',
-    category: 'health-tech',
-    tags: ['hearing-aids', 'bluetooth', 'accessibility', 'iphone', 'android', 'beginner'],
-    readTime: '5 min',
-    videoUrl: 'https://www.youtube.com/embed/4vQ4o9t5ND8',
-    thumbnailEmoji: '👂',
-    publishedAt: '2026-04-04',
-    difficulty: 'Beginner',
-    steps: [
-      { title: 'Check if your hearing aids support Bluetooth', content: 'Most hearing aids made after 2020 support Bluetooth. Check with your audiologist or look in your hearing aid manual. Common Bluetooth-enabled brands: Phonak, Oticon, ReSound, Starkey, and Widex. Some older models use a separate streaming device.' },
-      { title: 'Connect to iPhone', content: 'Go to Settings, then Accessibility, then Hearing Devices. Put your hearing aids in pairing mode (usually by opening and closing the battery door, or holding a button). Your iPhone will detect them automatically. Tap the name of your hearing aids to connect.' },
-      { title: 'Connect to Android', content: 'Go to Settings, then Connected Devices, then Pair New Device. Put your hearing aids in pairing mode. When they appear in the list, tap to connect. Some hearing aids also have a companion app — check the Google Play Store for your brand name.' },
-      { title: 'Adjust volume and settings', content: 'Once connected, you can control hearing aid volume from your phone. On iPhone: go to Settings, then Accessibility, then Hearing Devices to adjust. Many brands also have their own app (for example, Phonak myPhonak, Oticon ON) that gives you more control over sound profiles.' },
-      { title: 'Stream audio to your hearing aids', content: 'Phone calls will automatically route through your hearing aids once connected. For music, podcasts, or video, the audio streams directly to your hearing aids like wireless earbuds. No extra setup needed — just press play on any app.' },
-    ]
-  },
-
+  
   // ═══════════════════════════════════════════════════════════════════════════
   // BATCH 3: SAFETY GUIDES (April 2026)
   // ═══════════════════════════════════════════════════════════════════════════
@@ -8158,26 +7981,7 @@ const coreGuides: Guide[] = [
       { title: 'What to do if you scanned a bad code', content: 'If you entered information on a suspicious site after scanning a QR code: change your password immediately if you entered login details, contact your bank if you entered payment information, run a security scan on your phone, and report the scam to the FTC at reportfraud.ftc.gov.' },
     ]
   },
-  {
-    slug: 'safe-public-wifi',
-    title: 'How to Stay Safe on Public WiFi',
-    excerpt: 'Coffee shop, airport, hotel WiFi — convenient but risky. Here is how to protect yourself.',
-    category: 'safety-guides',
-    tags: ['wifi', 'public', 'security', 'vpn', 'safety', 'beginner'],
-    readTime: '4 min',
-    videoUrl: 'https://www.youtube.com/embed/5cT9v22SCXI',
-    thumbnailEmoji: '📶',
-    publishedAt: '2026-04-04',
-    difficulty: 'Beginner',
-    steps: [
-      { title: 'Understand the risks', content: 'Public WiFi networks (coffee shops, airports, hotels) are not secure. Anyone on the same network can potentially see what websites you visit and intercept data you send. Hackers also set up fake networks with names like "Free Airport WiFi" to trick you.' },
-      { title: 'Verify the network name', content: 'Before connecting, ask an employee for the exact WiFi network name and password. Do not connect to networks with generic names like "Free WiFi" or slight misspellings of the business name. If there are two networks with similar names, ask which is real.' },
-      { title: 'What is safe to do on public WiFi', content: 'Safe: browsing news, social media (with the app, not a browser), watching videos, checking weather. Not safe: online banking, entering credit card numbers, accessing work email, logging into important accounts. Save sensitive tasks for your home WiFi or cellular data.' },
-      { title: 'Use a VPN for full protection', content: 'A VPN (Virtual Private Network) encrypts everything you do online, making public WiFi safe for any activity. Trusted options: NordVPN, ExpressVPN, or Surfshark (all around $3-5/month). Turn it on before connecting to any public WiFi.', tip: 'If you do not want to pay for a VPN, switch to cellular data (turn off WiFi) whenever you need to do something sensitive like banking.' },
-      { title: 'Turn off auto-connect', content: 'Your phone may automatically connect to WiFi networks it has used before. Turn this off: iPhone — Settings, WiFi, tap the (i) next to a network, turn off Auto-Join. Android — Settings, WiFi, tap a network, turn off Auto-reconnect. This prevents your phone from connecting to fake networks.' },
-    ]
-  },
-  {
+    {
     slug: 'credit-monitoring-setup',
     title: 'How to Set Up Free Credit Monitoring',
     excerpt: 'Monitor your credit for free and get alerts if someone tries to open accounts in your name.',
@@ -8236,25 +8040,7 @@ const coreGuides: Guide[] = [
   // Social: "Got a scary pop-up saying your computer is infected and to call a number? Here's what's really going on."
   // Social: "Tech support scammers target seniors the most. Share this with someone who needs to see it."
   // Newsletter: "Thousands of Americans lose money every month to fake tech support calls and pop-ups. Scammers pose as Microsoft or Apple, claim your computer has a virus, and ask for remote access or payment. Learn the three telltale signs — and what to do if you already let one in."
-  {
-    slug: 'tech-support-scam-guide',
-    title: 'How to Recognize and Avoid Tech Support Scams',
-    excerpt: 'If someone calls saying your computer has a virus, it is almost certainly a scam. Here is what to know.',
-    category: 'safety-guides',
-    tags: ['tech-support', 'scam', 'phone', 'popup', 'safety', 'beginner'],
-    readTime: '4 min',
-    videoUrl: 'https://www.youtube.com/embed/5cT9v22SCXI',
-    thumbnailEmoji: '📞',
-    publishedAt: '2026-04-04',
-    difficulty: 'Beginner',
-    steps: [
-      { title: 'Know the truth: real companies do not call you', content: 'Microsoft, Apple, Google, and your internet provider will NEVER call you to say your computer has a virus. If someone calls claiming this, it is a scam 100% of the time. These calls often show a local or toll-free number on caller ID — scammers fake this easily.' },
-      { title: 'Scary pop-ups are fake too', content: 'If a pop-up appears saying "YOUR COMPUTER IS INFECTED — CALL THIS NUMBER NOW," it is a scam. Real virus alerts come from your antivirus software (like Windows Security), not from a website. Close the pop-up by pressing Alt+F4 (Windows) or Cmd+Q (Mac). If it will not close, force-restart your computer.' },
-      { title: 'What scammers want', content: 'Tech support scammers want three things: remote access to your computer (so they can install real malware or steal files), your credit card number (they charge $200-$500 for fake "repairs"), and your personal information (Social Security number, bank details).' },
-      { title: 'What to do if you already let someone in', content: 'If you gave a scammer remote access: disconnect from the internet immediately (unplug your ethernet cable or turn off WiFi), run a full virus scan with Windows Security or your antivirus, change all passwords from a different device, contact your bank if you shared payment info, and consider having a real technician check your computer.', tip: 'For real tech help, book a TekSure technician at teksure.com/get-help or call a trusted local computer repair shop. Never trust unsolicited callers.' },
-    ]
-  },
-  // Social: "Got a text saying your package couldn't be delivered? Check this before you click anything."
+    // Social: "Got a text saying your package couldn't be delivered? Check this before you click anything."
   // Social: "USPS, FedEx, and UPS will never text you asking for a credit card. If a delivery text does — it's a scam."
   // Social: "Millions of Americans get this text every week. Most don't know it's fake until it's too late."
   // Newsletter: "Fake delivery notification texts are one of the most common scams right now — and they're getting harder to spot. Before you click any link about a 'missed package,' take 10 seconds to verify. Our guide shows you exactly how to tell the real ones from the fakes."
@@ -8380,26 +8166,7 @@ const coreGuides: Guide[] = [
       { title: 'Download your essential apps', content: 'Open the App Store (blue icon with an A). Search for and download apps you need: your bank app, email app, video calling (FaceTime is already installed, Zoom if needed), social media, and any health apps your doctor recommends.' },
     ]
   },
-  {
-    slug: 'setup-new-android',
-    title: 'How to Set Up a Brand New Android Phone',
-    excerpt: 'Just got a new Android phone? This guide walks you through setup from power-on to ready-to-use.',
-    category: 'how-to',
-    tags: ['android', 'setup', 'google', 'new-device', 'beginner'],
-    readTime: '6 min',
-    videoUrl: 'https://www.youtube.com/embed/4vQ4o9t5ND8',
-    thumbnailEmoji: '📱',
-    publishedAt: '2026-04-05',
-    difficulty: 'Beginner',
-    steps: [
-      { title: 'Turn it on and choose your language', content: 'Press and hold the power button until the screen lights up. Choose your language and tap "Start" or the arrow to continue. If you have an old phone, you may be offered a transfer option — this copies your apps, photos, and settings to the new phone.' },
-      { title: 'Connect to WiFi', content: 'Select your home WiFi network from the list and enter the password. A strong WiFi connection makes the rest of setup much faster since apps and updates will need to download.' },
-      { title: 'Sign in with your Google account', content: 'Enter your Gmail address and password. If you do not have a Google account, tap "Create account." Your Google account connects: Gmail, Google Photos, Google Drive, and the Play Store. All your old apps and data can be restored from here.' },
-      { title: 'Set up security', content: 'Choose a screen lock: PIN (recommended minimum 6 digits), fingerprint (if your phone has a sensor), or face unlock. Set up your fingerprint by pressing your finger on the sensor several times from different angles.' },
-      { title: 'Customize your phone', content: 'The wizard will offer to: restore apps from your old phone, set up Google Assistant (voice helper), enable Find My Device (helps locate your phone if lost), and configure Google Pay. Turn on Find My Device — it is the most useful one if you ever lose your phone.', tip: 'Turn on Automatic Updates: Settings, System, Software Update. Also in Play Store: tap your profile, Settings, Network Preferences, Auto-update apps.' },
-    ]
-  },
-  {
+    {
     slug: 'transfer-photos-to-computer',
     title: 'How to Transfer Photos from Your Phone to Your Computer',
     excerpt: 'Get your photos off your phone and onto your computer for safekeeping, editing, or printing.',
@@ -8437,44 +8204,7 @@ const coreGuides: Guide[] = [
       { title: 'Keep your cloud account secure', content: 'Use a strong, unique password for your cloud account. Turn on two-factor authentication (an extra code when you sign in). Never share your cloud login details with anyone. Review which apps have access to your cloud storage and remove any you do not recognize.' },
     ]
   },
-  {
-    slug: 'voice-typing-guide',
-    title: 'How to Use Voice Typing Instead of the Keyboard',
-    excerpt: 'Speak instead of type — your phone and computer can convert your voice to text accurately and quickly.',
-    category: 'how-to',
-    tags: ['voice', 'typing', 'dictation', 'accessibility', 'beginner'],
-    readTime: '4 min',
-    videoUrl: 'https://www.youtube.com/embed/4vQ4o9t5ND8',
-    thumbnailEmoji: '🎤',
-    publishedAt: '2026-04-06',
-    difficulty: 'Beginner',
-    steps: [
-      { title: 'Voice typing on iPhone', content: 'Open any app where you type (Messages, Notes, Email). Tap the text field so the keyboard appears. Tap the microphone icon on the keyboard (bottom-left or bottom-right). Start speaking clearly. Your words will appear as text. Tap the microphone again to stop. Say "period" for a period, "comma" for a comma, "new line" for a new paragraph.' },
-      { title: 'Voice typing on Android', content: 'Open any app with a text field. Tap the text field so the keyboard appears. Tap the microphone icon (usually in the top row of the keyboard or the bottom). Speak clearly and your words will appear. Say punctuation out loud: "period," "comma," "question mark," "exclamation point."' },
-      { title: 'Voice typing on Windows', content: 'Press the Windows key + H to start voice typing anywhere on your computer. A small microphone toolbar will appear. Start speaking. Press Windows + H again to stop. This works in any application: Word, email, search bars, and web browsers.' },
-      { title: 'Voice typing on Mac', content: 'Press the Fn key twice (or the microphone key on newer keyboards) to start dictation. Speak your text. Press Fn again to stop. If this does not work, enable it: System Settings, Keyboard, Dictation, turn it on.' },
-      { title: 'Tips for better results', content: 'Speak at a natural pace (not too fast, not too slow). Speak punctuation: say "period" "comma" "question mark" "new paragraph" "new line." Review and correct errors after you finish speaking — it is faster than fixing mistakes one by one. Use in a quiet room for best accuracy.', tip: 'Voice typing is especially helpful if you have arthritis or difficulty with small keyboards. It is also much faster than typing for many people — most can speak 3 times faster than they type.' },
-    ]
-  },
-  {
-    slug: 'backup-phone-contacts',
-    title: 'How to Back Up Your Phone Contacts',
-    excerpt: 'Losing your contacts is stressful but preventable. Here is how to make sure they are always backed up.',
-    category: 'how-to',
-    tags: ['contacts', 'backup', 'iphone', 'android', 'beginner'],
-    readTime: '4 min',
-    videoUrl: 'https://www.youtube.com/embed/4vQ4o9t5ND8',
-    thumbnailEmoji: '📇',
-    publishedAt: '2026-04-06',
-    difficulty: 'Beginner',
-    steps: [
-      { title: 'Back up contacts on iPhone', content: 'Your contacts automatically sync to iCloud if it is turned on. Check: Settings, your name, iCloud, then make sure "Contacts" is toggled on (green). Once enabled, your contacts are safe in the cloud and will appear on any Apple device you sign into.' },
-      { title: 'Back up contacts on Android', content: 'Your contacts automatically sync to your Google account. Check: Settings, Google, Settings for Google apps, Google Contacts sync, then make sure "Also sync device contacts" is turned on. Your contacts are now backed up to contacts.google.com.' },
-      { title: 'Export contacts as a file', content: 'For an extra backup: on iPhone, go to icloud.com/contacts, select all contacts, click the gear icon, and "Export vCard." On Android, open the Contacts app, tap the three-line menu, Settings, Export. Save the .vcf file to your computer or email it to yourself.' },
-      { title: 'Check your backup is working', content: 'Go to contacts.google.com (Android) or icloud.com/contacts (iPhone) on your computer. If you can see your contacts listed there, your backup is working. Do this check once every few months.', tip: 'If you switch from iPhone to Android (or vice versa), you can import your contacts using the .vcf file export method. Both platforms can read .vcf files.' },
-    ]
-  },
-
+    
   // ═══════════════════════════════════════════════════════════════════════════
   // BATCH 4: REMAINING GUIDES (April 2026)
   // ═══════════════════════════════════════════════════════════════════════════
@@ -9255,14 +8985,7 @@ const coreGuides: Guide[] = [
     { title: 'Set this up BEFORE you lose your phone', content: 'iPhone: Settings > [your name] > Find My > Find My iPhone — make sure it is ON. Also turn on "Send Last Location." Android: Settings > Security > Find My Device — make sure it is ON. These features only work if they were enabled before the phone was lost.', warning: 'If you believe your phone was stolen, do NOT try to retrieve it yourself. Use the "Lost Mode" or "Secure device" feature to lock it, then file a police report.' },
     { title: 'What to do if you cannot find it', content: 'If the phone is offline or the battery died, the map will show the last known location. Check coat pockets, car seats, and couch cushions first — most "lost" phones are within 10 feet of where you are. If truly lost or stolen, remotely wipe the device to protect your personal data, then contact your phone carrier to suspend the line.' },
   ] },
-  { slug: 'phone-camera-tips', title: 'How to Take Better Photos with Your Phone', excerpt: 'Simple tips that will instantly improve your phone photos — no expensive equipment needed.', category: 'phone-guides', tags: ['camera', 'photos', 'iphone', 'android', 'tips'], readTime: '4 min', videoUrl: 'https://www.youtube.com/embed/4vQ4o9t5ND8', thumbnailEmoji: '📷', publishedAt: '2026-04-07', difficulty: 'Beginner', steps: [
-    { title: 'Clean your camera lens', content: 'This sounds obvious but makes a huge difference. Your phone lives in your pocket and collects smudges. Wipe the camera lens with a soft cloth before taking photos. Smudgy lenses cause blurry, hazy photos.' },
-    { title: 'Use natural light', content: 'The single biggest factor in photo quality is lighting. Face your subject toward a window or light source. Avoid shooting with a bright light behind your subject (backlighting makes faces dark). The best natural light is during "golden hour" — the hour after sunrise or before sunset.' },
-    { title: 'Tap to focus on your subject', content: 'Before pressing the shutter button, tap on the screen where your main subject is. This tells the camera to focus and adjust brightness for that specific area. For portraits, tap on the person face.' },
-    { title: 'Use the rule of thirds', content: 'Turn on the grid lines on your camera (iPhone: Settings > Camera > Grid. Android: Camera app > Settings > Grid lines). Place your subject at one of the intersections where grid lines cross — not dead center. This creates more interesting, professional-looking compositions.' },
-    { title: 'Hold steady and take multiple shots', content: 'Hold your phone with both hands and tuck your elbows against your body for stability. Take 3-5 photos of the same moment — at least one will be sharper than the others. Use burst mode for action shots: hold down the shutter button on Android, or press volume up on iPhone.' },
-  ] },
-
+  
   // ═══════════════════════════════════════════════════════════════════════════
   // BATCH 4: SOCIAL MEDIA GUIDES (April 2026)
   // ═══════════════════════════════════════════════════════════════════════════
@@ -9394,26 +9117,7 @@ const coreGuides: Guide[] = [
     { title: 'VoiceOver', content: 'Press Command + F5 to toggle VoiceOver. It reads screen content aloud and supports full keyboard navigation.' },
     { title: 'Dictation', content: 'Press Fn key twice to start dictating. Speak naturally, say punctuation out loud.' },
   ] },
-  { slug: 'keyboard-shortcuts-everyone-v2', title: '10 Keyboard Shortcuts That Save Hours Every Week', excerpt: 'These simple key combinations work on every computer and make you noticeably faster.', category: 'tips-tricks', tags: ['keyboard', 'shortcuts', 'productivity', 'beginner'], readTime: '4 min', thumbnailEmoji: '⌨️', publishedAt: '2026-04-08', difficulty: 'Beginner', videoUrl: 'https://www.youtube.com/embed/d_rH4uAm9MY', steps: [
-    { title: 'Copy, Cut, Paste', content: 'Ctrl+C / Cmd+C copies. Ctrl+X / Cmd+X cuts. Ctrl+V / Cmd+V pastes. Works everywhere.' },
-    { title: 'Undo and Redo', content: 'Ctrl+Z / Cmd+Z undoes your last action. Ctrl+Y / Cmd+Shift+Z redoes it.' },
-    { title: 'Select All and Find', content: 'Ctrl+A / Cmd+A selects everything. Ctrl+F / Cmd+F opens search on any page.' },
-    { title: 'Save, Print, Tabs', content: 'Ctrl+S saves. Ctrl+P prints. Ctrl+W closes a tab. Ctrl+T opens a new tab. Ctrl+Tab switches between tabs.' },
-  ] },
-  { slug: 'dark-mode-guide-v2', title: 'How to Enable Dark Mode on Any Device', excerpt: 'Dark mode reduces eye strain, saves battery, and looks great.', category: 'tips-tricks', tags: ['dark-mode', 'eye-strain', 'settings', 'beginner'], readTime: '3 min', thumbnailEmoji: '🌙', publishedAt: '2026-04-08', difficulty: 'Beginner', videoUrl: 'https://www.youtube.com/embed/O3KhewH9V_Q', steps: [
-    { title: 'iPhone', content: 'Settings > Display & Brightness > tap Dark. Set to Automatic for sunset switching.' },
-    { title: 'Android', content: 'Settings > Display > Dark theme toggle on.' },
-    { title: 'Windows', content: 'Settings > Personalization > Colors > choose Dark.' },
-    { title: 'Mac', content: 'System Settings > Appearance > choose Dark or Auto.' },
-  ] },
-  { slug: 'speed-up-slow-computer-v2', title: '7 Ways to Make a Slow Computer Faster', excerpt: 'Your computer does not need replacing — these fixes often make it feel new.', category: 'tips-tricks', tags: ['performance', 'speed', 'windows', 'mac', 'beginner'], readTime: '5 min', thumbnailEmoji: '🚀', publishedAt: '2026-04-09', difficulty: 'Beginner', videoUrl: 'https://www.youtube.com/embed/mwfVqqSTI88', steps: [
-    { title: 'Restart your computer', content: 'A proper restart clears temporary files and resets stuck programs. Use Start > Power > Restart.' },
-    { title: 'Close unused programs', content: 'Every open program uses memory. Close what you are not using. Press Ctrl+Shift+Esc for Task Manager.' },
-    { title: 'Disable startup programs', content: 'Many programs start automatically. Windows: Ctrl+Shift+Esc > Startup Apps tab > disable what you do not need. Mac: System Settings > General > Login Items.' },
-    { title: 'Free up disk space', content: 'Delete old downloads, empty Trash, uninstall unused apps. Keep at least 10-15% free.' },
-    { title: 'Check for malware', content: 'Windows: Windows Security > Virus & threat protection > Quick scan. Mac: try Malwarebytes free scan.' },
-  ] },
-
+      
   // ===== BATCH 6: Phone Guides (15 new) =====
   { slug: 'iphone-battery-tips', title: 'How to Make Your iPhone Battery Last All Day', excerpt: 'Simple settings changes that dramatically extend battery life.', category: 'phone-guides', tags: ['iphone', 'battery', 'settings'], readTime: '5 min', thumbnailEmoji: '🔋', publishedAt: '2026-04-02', difficulty: 'Beginner', videoUrl: 'https://www.youtube.com/embed/a3VG6CEkqo8', steps: [
     { title: 'Check battery usage', content: 'Go to Settings > Battery. See which apps use the most power.' },
@@ -9427,12 +9131,7 @@ const coreGuides: Guide[] = [
     { title: 'Turn off unused connections', content: 'Turn off Bluetooth, Wi-Fi, or Data when not using them.' },
     { title: 'Use Dark Mode', content: 'Settings > Display > Dark Theme. On OLED screens, this saves significant battery.' },
   ] },
-  { slug: 'iphone-organize-home-screen', title: 'How to Organize Your iPhone Home Screen', excerpt: 'Clean up your home screen so you find apps quickly.', category: 'phone-guides', tags: ['iphone', 'organization', 'apps'], readTime: '5 min', thumbnailEmoji: '📱', publishedAt: '2026-04-02', difficulty: 'Beginner', videoUrl: 'https://www.youtube.com/embed/VlxKnUOMBRU', steps: [
-    { title: 'Enter edit mode', content: 'Long-press on any empty space until apps jiggle.' },
-    { title: 'Create a folder', content: 'Drag one app on top of another. Rename the folder ("Social", "Games").' },
-    { title: 'Use App Library', content: 'Swipe right past your last page. App Library organizes all apps automatically.' },
-  ] },
-  { slug: 'phone-block-calls', title: 'How to Block Unwanted Phone Calls', excerpt: 'Stop spam calls and telemarketers.', category: 'phone-guides', tags: ['phone', 'spam', 'calls'], readTime: '5 min', thumbnailEmoji: '🚫', publishedAt: '2026-04-02', difficulty: 'Beginner', steps: [
+    { slug: 'phone-block-calls', title: 'How to Block Unwanted Phone Calls', excerpt: 'Stop spam calls and telemarketers.', category: 'phone-guides', tags: ['phone', 'spam', 'calls'], readTime: '5 min', thumbnailEmoji: '🚫', publishedAt: '2026-04-02', difficulty: 'Beginner', steps: [
     { title: 'Block on iPhone', content: 'Phone app > Recents > tap (i) next to number > Block this Caller.' },
     { title: 'Block on Android', content: 'Phone app > Recent calls > long-press > Block/Report spam.' },
     { title: 'Silence unknown callers', content: 'iPhone: Settings > Phone > Silence Unknown Callers. Unknowns go to voicemail.' },
@@ -9454,12 +9153,7 @@ const coreGuides: Guide[] = [
     { title: 'iPhone (Home button)', content: 'Press Home + Side button simultaneously.' },
     { title: 'Android', content: 'Press Power + Volume Down for one second.' },
   ] },
-  { slug: 'phone-google-maps', title: 'How to Use Google Maps', excerpt: 'Get directions and find businesses anywhere.', category: 'phone-guides', tags: ['phone', 'google-maps', 'navigation'], readTime: '6 min', thumbnailEmoji: '🗺️', publishedAt: '2026-04-02', difficulty: 'Beginner', videoUrl: 'https://www.youtube.com/embed/tui9hq9lfsU', steps: [
-    { title: 'Search for a place', content: 'Tap the search bar. Type an address, business name, or "pharmacy near me."' },
-    { title: 'Get directions', content: 'Tap Directions. Choose driving, walking, or transit. Tap Start for voice navigation.' },
-    { title: 'Save favorites', content: 'Search for a place > tap Save > add to "Favorites" for quick access.' },
-  ] },
-  { slug: 'phone-mobile-banking', title: 'How to Use Mobile Banking Safely', excerpt: 'Manage your bank account from your phone securely.', category: 'phone-guides', tags: ['phone', 'banking', 'security'], readTime: '6 min', thumbnailEmoji: '🏦', publishedAt: '2026-04-02', difficulty: 'Intermediate', steps: [
+    { slug: 'phone-mobile-banking', title: 'How to Use Mobile Banking Safely', excerpt: 'Manage your bank account from your phone securely.', category: 'phone-guides', tags: ['phone', 'banking', 'security'], readTime: '6 min', thumbnailEmoji: '🏦', publishedAt: '2026-04-02', difficulty: 'Intermediate', steps: [
     { title: 'Download official app', content: 'Search your bank name in app store. Only download the verified official app.' },
     { title: 'Enable biometric login', content: 'Turn on Face ID, Touch ID, or fingerprint in app settings.' },
     { title: 'Stay safe', content: 'Never use public Wi-Fi for banking. Enable transaction notifications. Report lost phone immediately.' },
@@ -9469,12 +9163,7 @@ const coreGuides: Guide[] = [
     { title: 'Android', content: 'Swipe down twice > tap Do Not Disturb.' },
     { title: 'Allow important calls', content: 'Allow calls from Favorites to come through for emergencies.' },
   ] },
-  { slug: 'iphone-airdrop', title: 'How to Use AirDrop on iPhone', excerpt: 'Share photos and files instantly with nearby Apple devices.', category: 'phone-guides', tags: ['iphone', 'airdrop', 'sharing'], readTime: '4 min', thumbnailEmoji: '📤', publishedAt: '2026-04-02', difficulty: 'Beginner', videoUrl: 'https://www.youtube.com/embed/SGGj_UxMM1s', steps: [
-    { title: 'Enable AirDrop', content: 'Control Center > long-press Wi-Fi area > AirDrop > Contacts Only.' },
-    { title: 'Share a photo', content: `Photos app > select photo > Share > tap person's AirDrop icon.` },
-    { title: 'Security', content: 'Use "Contacts Only" — not "Everyone" — to prevent unwanted content from strangers.' },
-  ] },
-  { slug: 'phone-hotspot', title: 'How to Use Your Phone as a Wi-Fi Hotspot', excerpt: 'Share your phone internet with a laptop or tablet.', category: 'phone-guides', tags: ['phone', 'hotspot', 'wifi'], readTime: '4 min', thumbnailEmoji: '📡', publishedAt: '2026-04-02', difficulty: 'Intermediate', steps: [
+    { slug: 'phone-hotspot', title: 'How to Use Your Phone as a Wi-Fi Hotspot', excerpt: 'Share your phone internet with a laptop or tablet.', category: 'phone-guides', tags: ['phone', 'hotspot', 'wifi'], readTime: '4 min', thumbnailEmoji: '📡', publishedAt: '2026-04-02', difficulty: 'Intermediate', steps: [
     { title: 'iPhone', content: 'Settings > Personal Hotspot > Allow Others to Join.' },
     { title: 'Android', content: 'Settings > Network > Hotspot & Tethering > Wi-Fi Hotspot.' },
     { title: 'Connect device', content: 'On your laptop, find your phone in Wi-Fi settings and connect using the password shown.' },
@@ -9497,23 +9186,12 @@ const coreGuides: Guide[] = [
   ] },
 
   // ===== BATCH 7: Social Media (12 new) =====
-  { slug: 'facebook-create-account', title: 'How to Create a Facebook Account', excerpt: 'Join Facebook to connect with family and friends.', category: 'social-media', tags: ['facebook', 'account', 'setup'], readTime: '5 min', thumbnailEmoji: '👤', publishedAt: '2026-04-02', difficulty: 'Beginner', videoUrl: 'https://www.youtube.com/embed/EYgKPSC32Po', steps: [
-    { title: 'Go to Facebook', content: 'Go to facebook.com or download the Facebook app.' },
-    { title: 'Create account', content: 'Click "Create New Account." Enter name, email, birthday. Create a password.' },
-    { title: 'Verify', content: 'Enter the code sent to your email or phone.' },
-    { title: 'Add a photo', content: 'Upload a clear photo so friends and family can find you.' },
-  ] },
-  { slug: 'facebook-privacy-settings-v2', title: 'How to Adjust Facebook Privacy Settings', excerpt: 'Control who sees your posts and personal information.', category: 'social-media', tags: ['facebook', 'privacy', 'settings'], readTime: '6 min', thumbnailEmoji: '🔒', publishedAt: '2026-04-02', difficulty: 'Beginner', steps: [
+    { slug: 'facebook-privacy-settings-v2', title: 'How to Adjust Facebook Privacy Settings', excerpt: 'Control who sees your posts and personal information.', category: 'social-media', tags: ['facebook', 'privacy', 'settings'], readTime: '6 min', thumbnailEmoji: '🔒', publishedAt: '2026-04-02', difficulty: 'Beginner', steps: [
     { title: 'Open Privacy', content: 'Profile picture > Settings & Privacy > Settings > Privacy.' },
     { title: 'Set post visibility', content: 'Set "Who can see your future posts?" to Friends (not Public).' },
     { title: 'Limit past posts', content: 'Tap "Limit Past Posts" to change all old public posts to Friends Only.' },
   ] },
-  { slug: 'instagram-create-account', title: 'How to Create an Instagram Account', excerpt: 'Set up Instagram to share photos and follow interests.', category: 'social-media', tags: ['instagram', 'account', 'setup'], readTime: '5 min', thumbnailEmoji: '📸', publishedAt: '2026-04-02', difficulty: 'Beginner', steps: [
-    { title: 'Download Instagram', content: 'Get it from the App Store or Google Play.' },
-    { title: 'Sign up', content: 'Enter email, create username and password.' },
-    { title: 'Set to Private', content: 'Settings > Privacy > Private Account. Only approved followers see your posts.' },
-  ] },
-  { slug: 'youtube-watch-videos', title: 'How to Watch YouTube Videos', excerpt: `Find and enjoy videos on the world's biggest video platform.`, category: 'social-media', tags: ['youtube', 'videos', 'streaming'], readTime: '5 min', thumbnailEmoji: '▶️', publishedAt: '2026-04-02', difficulty: 'Beginner', steps: [
+    { slug: 'youtube-watch-videos', title: 'How to Watch YouTube Videos', excerpt: `Find and enjoy videos on the world's biggest video platform.`, category: 'social-media', tags: ['youtube', 'videos', 'streaming'], readTime: '5 min', thumbnailEmoji: '▶️', publishedAt: '2026-04-02', difficulty: 'Beginner', steps: [
     { title: 'Open YouTube', content: 'Open the app or go to youtube.com. No account needed to watch.' },
     { title: 'Search', content: 'Tap magnifying glass. Type what you want: "how to bake bread."' },
     { title: 'Subscribe', content: 'Like a creator? Tap Subscribe. Their new videos appear in your feed.' },
@@ -9524,12 +9202,7 @@ const coreGuides: Guide[] = [
     { title: 'Send messages', content: 'Tap new message icon > select contact > type and send.' },
     { title: 'Free calls', content: `Open a chat > tap phone or video icon. Uses Wi-Fi, so it's free.` },
   ] },
-  { slug: 'zoom-video-meeting', title: 'How to Use Zoom for Video Calls', excerpt: 'Join video calls with family, friends, or groups.', category: 'social-media', tags: ['zoom', 'video-calls', 'meetings'], readTime: '5 min', thumbnailEmoji: '🎥', publishedAt: '2026-04-02', difficulty: 'Beginner', steps: [
-    { title: 'Download Zoom', content: 'Get it from app store or zoom.us. Create a free account.' },
-    { title: 'Join a meeting', content: 'Click the link sent to you, or enter Meeting ID and Passcode.' },
-    { title: 'Controls', content: 'Bottom toolbar: Mute, Video on/off, Chat, and Leave button.' },
-  ] },
-  { slug: 'social-media-scam-awareness', title: 'How to Spot Social Media Scams', excerpt: 'Protect yourself from common online fraud.', category: 'social-media', tags: ['scams', 'safety', 'fraud'], readTime: '6 min', thumbnailEmoji: '⚠️', publishedAt: '2026-04-02', difficulty: 'Beginner', steps: [
+    { slug: 'social-media-scam-awareness', title: 'How to Spot Social Media Scams', excerpt: 'Protect yourself from common online fraud.', category: 'social-media', tags: ['scams', 'safety', 'fraud'], readTime: '6 min', thumbnailEmoji: '⚠️', publishedAt: '2026-04-02', difficulty: 'Beginner', steps: [
     { title: 'Too-good-to-be-true offers', content: 'Free money or prizes are almost always scams.' },
     { title: 'Romance scams', content: 'Be cautious of people who express strong feelings quickly then ask for money.' },
     { title: 'Phishing links', content: `Don't click links from strangers. "Is this you?" links steal your login.` },
@@ -9557,24 +9230,9 @@ const coreGuides: Guide[] = [
     { title: 'Video call', content: 'Open a conversation > tap the video camera icon.' },
     { title: 'Group chat', content: 'Pencil icon > Create Group > add people > name it.' },
   ] },
-  { slug: 'twitter-x-basics', title: 'How to Use X (Formerly Twitter)', excerpt: 'Get started with X for news and conversations.', category: 'social-media', tags: ['twitter', 'x', 'news'], readTime: '5 min', thumbnailEmoji: '🐦', publishedAt: '2026-04-02', difficulty: 'Beginner', steps: [
-    { title: 'Create account', content: 'Download X or go to x.com. Enter name and email.' },
-    { title: 'Follow accounts', content: 'Follow news outlets, organizations, or friends.' },
-    { title: 'Interact', content: 'Heart to like, arrows to repost, speech bubble to reply.' },
-  ] },
-
+  
   // ===== BATCH 8: How-To (15 new) =====
-  { slug: 'how-to-scan-document-phone', title: 'How to Scan Documents with Your Phone', excerpt: 'Turn your phone into a scanner.', category: 'how-to', tags: ['scanning', 'documents', 'phone'], readTime: '4 min', thumbnailEmoji: '📄', publishedAt: '2026-04-02', difficulty: 'Beginner', videoUrl: 'https://www.youtube.com/embed/aRmek2wfckw', steps: [
-    { title: 'iPhone', content: 'Notes app > camera icon > Scan Documents.' },
-    { title: 'Android', content: 'Google Drive > + > Scan.' },
-    { title: 'Tips', content: 'Lay flat on dark surface, good lighting, hold phone above. Save as PDF.' },
-  ] },
-  { slug: 'how-to-print-from-phone', title: 'How to Print from Your Phone', excerpt: 'Print photos and documents wirelessly.', category: 'how-to', tags: ['printing', 'phone'], readTime: '5 min', thumbnailEmoji: '🖨️', publishedAt: '2026-04-02', difficulty: 'Beginner', videoUrl: 'https://www.youtube.com/embed/WFVYs_57WWs', steps: [
-    { title: 'Connect to same Wi-Fi', content: 'Printer and phone must be on the same network.' },
-    { title: 'iPhone (AirPrint)', content: 'Share > Print > select printer.' },
-    { title: 'Android', content: 'Menu > Print > select printer.' },
-  ] },
-  { slug: 'how-to-use-qr-codes-v2', title: 'How to Scan QR Codes', excerpt: 'Those square barcodes are everywhere.', category: 'how-to', tags: ['qr-codes', 'phone'], readTime: '4 min', thumbnailEmoji: '📱', publishedAt: '2026-04-02', difficulty: 'Beginner', videoUrl: 'https://www.youtube.com/embed/LMirtqYbpsc', steps: [
+      { slug: 'how-to-use-qr-codes-v2', title: 'How to Scan QR Codes', excerpt: 'Those square barcodes are everywhere.', category: 'how-to', tags: ['qr-codes', 'phone'], readTime: '4 min', thumbnailEmoji: '📱', publishedAt: '2026-04-02', difficulty: 'Beginner', videoUrl: 'https://www.youtube.com/embed/LMirtqYbpsc', steps: [
     { title: 'iPhone', content: 'Open Camera, point at QR code, tap the notification.' },
     { title: 'Android', content: 'Open Camera, point at QR code. Or use Google Lens.' },
     { title: 'Stay safe', content: 'Only scan QR codes from trusted sources.' },
@@ -9619,12 +9277,7 @@ const coreGuides: Guide[] = [
     { title: 'Never reuse', content: 'Different password for each important account.' },
     { title: 'Use a manager', content: 'Apple Keychain, Google Passwords, or 1Password save and fill them for you.' },
   ] },
-  { slug: 'how-to-find-lost-phone', title: 'How to Find Your Lost Phone', excerpt: 'Locate your misplaced phone.', category: 'how-to', tags: ['lost-phone', 'find-my'], readTime: '4 min', thumbnailEmoji: '📍', publishedAt: '2026-04-02', difficulty: 'Beginner', steps: [
-    { title: 'iPhone', content: 'Go to icloud.com/find. Sign in. Play Sound to make it ring.' },
-    { title: 'Android', content: 'Go to android.com/find. Sign in. Play Sound.' },
-    { title: 'Set up now', content: 'Enable Find My iPhone or Find My Device BEFORE you lose it.' },
-  ] },
-  { slug: 'how-to-video-call-grandkids', title: 'How to Video Call Your Grandchildren', excerpt: 'Stay connected with family through video calls.', category: 'how-to', tags: ['video-calls', 'family'], readTime: '5 min', thumbnailEmoji: '👨‍👩‍👧‍👦', publishedAt: '2026-04-02', difficulty: 'Beginner', videoUrl: 'https://www.youtube.com/embed/CIQ0-iNhYjQ', steps: [
+    { slug: 'how-to-video-call-grandkids', title: 'How to Video Call Your Grandchildren', excerpt: 'Stay connected with family through video calls.', category: 'how-to', tags: ['video-calls', 'family'], readTime: '5 min', thumbnailEmoji: '👨‍👩‍👧‍👦', publishedAt: '2026-04-02', difficulty: 'Beginner', videoUrl: 'https://www.youtube.com/embed/CIQ0-iNhYjQ', steps: [
     { title: 'Choose an app', content: 'FaceTime (Apple), Zoom, Google Meet, or WhatsApp.' },
     { title: 'Setup', content: 'Prop phone at eye level. Good lighting. Connect to Wi-Fi.' },
     { title: 'Fun activities', content: 'Read a book, show your garden, play I Spy, cook together.' },
@@ -9634,12 +9287,7 @@ const coreGuides: Guide[] = [
     { title: 'Wi-Fi', content: 'Select your network and enter password.' },
     { title: 'Install apps', content: 'Go to app store on TV. Install Netflix, Hulu, Disney+, YouTube.' },
   ] },
-  { slug: 'how-to-order-groceries-online', title: 'How to Order Groceries Online', excerpt: 'Get groceries delivered to your door.', category: 'how-to', tags: ['groceries', 'delivery'], readTime: '5 min', thumbnailEmoji: '🛒', publishedAt: '2026-04-02', difficulty: 'Beginner', steps: [
-    { title: 'Choose service', content: 'Instacart, Walmart Grocery, Amazon Fresh, or Kroger.' },
-    { title: 'Shop', content: 'Search items or browse categories. Add to cart.' },
-    { title: 'Deliver', content: 'Choose delivery window. Add instructions. Place order.' },
-  ] },
-
+  
   // ===== BATCH 9: AI Guides — Claude Code, Codex, Practical AI (20 new) =====
   { slug: 'what-is-claude-code', title: 'What Is Claude Code and How Does It Work', excerpt: 'An AI coding assistant that reads, writes, and fixes code using plain English.', category: 'ai-guides', tags: ['claude', 'ai', 'coding'], readTime: '6 min', thumbnailEmoji: '🤖', publishedAt: '2026-04-02', difficulty: 'Intermediate', videoUrl: 'https://www.youtube.com/embed/AJpK3YTTKZ4', steps: [
     { title: 'What it does', content: 'Claude Code is an AI assistant by Anthropic that reads your entire codebase, writes new code, fixes bugs, and runs commands — all from plain English instructions.' },
@@ -9772,12 +9420,7 @@ const coreGuides: Guide[] = [
     { title: 'Android', content: 'Settings > System > Backup > Turn on Google Drive backup.' },
     { title: 'Computer', content: 'Windows: File History or OneDrive. Mac: Time Machine with external drive.' },
   ] },
-  { slug: 'online-shopping-safety-v2', title: 'How to Shop Online Safely', excerpt: 'Avoid scams when buying online.', category: 'essential-skills', tags: ['shopping', 'safety', 'security'], readTime: '6 min', thumbnailEmoji: '🛡️', publishedAt: '2026-04-02', difficulty: 'Beginner', steps: [
-    { title: 'Trusted sites', content: 'Stick to Amazon, Walmart, Target, Best Buy. Be cautious of unknown sites.' },
-    { title: 'Check HTTPS', content: 'Look for the lock icon before entering payment info.' },
-    { title: 'Use credit cards', content: 'Better fraud protection than debit cards for online purchases.' },
-  ] },
-  { slug: 'understanding-browser-basics', title: 'Web Browser Basics', excerpt: 'How to use Chrome, Safari, and Edge.', category: 'essential-skills', tags: ['browser', 'internet'], readTime: '5 min', thumbnailEmoji: '🌐', publishedAt: '2026-04-02', difficulty: 'Beginner', steps: [
+    { slug: 'understanding-browser-basics', title: 'Web Browser Basics', excerpt: 'How to use Chrome, Safari, and Edge.', category: 'essential-skills', tags: ['browser', 'internet'], readTime: '5 min', thumbnailEmoji: '🌐', publishedAt: '2026-04-02', difficulty: 'Beginner', steps: [
     { title: 'Navigate', content: 'Click address bar, type URL or search term, press Enter.' },
     { title: 'Tabs', content: '+ for new tab. X to close. Multiple sites open at once.' },
     { title: 'Bookmarks', content: 'Click star icon to save a site for quick access later.' },
@@ -9794,12 +9437,7 @@ const coreGuides: Guide[] = [
   ] },
 
   // ===== BATCH 11: Windows & Mac (10 new) =====
-  { slug: 'windows-file-explorer', title: 'How to Use File Explorer', excerpt: 'Navigate files and folders on Windows.', category: 'windows-guides', tags: ['windows', 'file-explorer'], readTime: '5 min', thumbnailEmoji: '📁', publishedAt: '2026-04-02', difficulty: 'Beginner', steps: [
-    { title: 'Open', content: 'Click folder icon on taskbar or press Windows + E.' },
-    { title: 'Sidebar', content: 'Quick access: Desktop, Downloads, Documents, Pictures.' },
-    { title: 'Search', content: 'Use search bar in top-right to find any file.' },
-  ] },
-  { slug: 'windows-screenshot-tools', title: 'Screenshots on Windows', excerpt: 'Capture your screen multiple ways.', category: 'windows-guides', tags: ['windows', 'screenshot'], readTime: '4 min', thumbnailEmoji: '📸', publishedAt: '2026-04-02', difficulty: 'Beginner', videoUrl: 'https://www.youtube.com/embed/tirNbkEXZII', steps: [
+    { slug: 'windows-screenshot-tools', title: 'Screenshots on Windows', excerpt: 'Capture your screen multiple ways.', category: 'windows-guides', tags: ['windows', 'screenshot'], readTime: '4 min', thumbnailEmoji: '📸', publishedAt: '2026-04-02', difficulty: 'Beginner', videoUrl: 'https://www.youtube.com/embed/tirNbkEXZII', steps: [
     { title: 'Select area', content: 'Windows + Shift + S. Click and drag. Paste with Ctrl+V.' },
     { title: 'Full screen', content: 'Print Screen key. Paste into Paint or document.' },
     { title: 'Auto-save', content: 'Windows + Print Screen. Saves to Pictures > Screenshots.' },
@@ -9989,15 +9627,7 @@ const coreGuides: Guide[] = [
     { title: 'Manage startup apps', content: `Click the Startup Apps tab. Disable programs you don't need starting with your computer. This speeds up boot time significantly.` },
     { title: 'Monitor performance', content: 'Click the Performance tab for real-time graphs of CPU, memory, disk, and network usage. Useful for diagnosing whether you need more RAM or a faster drive.' },
   ] },
-  { slug: 'home-network-security-v2', title: 'How to Secure Your Home Wi-Fi Network', excerpt: 'Protect your home network from intruders and keep your family safe online.', category: 'safety-guides', tags: ['wifi', 'network', 'security', 'router'], readTime: '7 min', thumbnailEmoji: '🔒', publishedAt: '2026-04-02', difficulty: 'Intermediate', videoUrl: 'https://www.youtube.com/embed/jbRmY6erMeA', steps: [
-    { title: 'Change your router password', content: 'Your router has a default admin password (often "admin" or "password"). Log into your router (usually 192.168.1.1 or 192.168.0.1 in your browser) and change the admin password to something strong.' },
-    { title: 'Set a strong Wi-Fi password', content: 'Use WPA3 or WPA2 encryption (not WEP — that is outdated and insecure). Create a Wi-Fi password that is at least 12 characters with mixed letters, numbers, and symbols.' },
-    { title: 'Change the network name', content: 'Rename your Wi-Fi network to something that does not identify you personally. Avoid names like "SmithFamily" or "Apt302." Something generic like "HomeNet2024" is better.' },
-    { title: 'Update router firmware', content: `Check your router manufacturer's website or app for firmware updates. These fix security vulnerabilities. Most routers have an update option in their admin settings.` },
-    { title: 'Create a guest network', content: 'Most modern routers let you create a separate guest network. Give visitors the guest password instead of your main network password. This keeps your devices isolated from guest devices.' },
-    { title: 'Disable remote management', content: 'Unless you specifically need it, turn off remote management/access in your router settings. This prevents people from changing your router settings from outside your network.' },
-  ] },
-  { slug: 'email-encryption-basics', title: 'What Is Email Encryption and Do You Need It', excerpt: 'Understand how email encryption protects your messages and when to use it.', category: 'safety-guides', tags: ['email', 'encryption', 'privacy', 'security'], readTime: '5 min', thumbnailEmoji: '🔐', publishedAt: '2026-04-02', difficulty: 'Intermediate', steps: [
+    { slug: 'email-encryption-basics', title: 'What Is Email Encryption and Do You Need It', excerpt: 'Understand how email encryption protects your messages and when to use it.', category: 'safety-guides', tags: ['email', 'encryption', 'privacy', 'security'], readTime: '5 min', thumbnailEmoji: '🔐', publishedAt: '2026-04-02', difficulty: 'Intermediate', steps: [
     { title: 'What email encryption means', content: 'Encryption scrambles your email so only the intended recipient can read it. Without encryption, emails are like postcards — anyone handling them along the way could potentially read them.' },
     { title: 'Types of encryption', content: 'TLS (in-transit): Most email providers use this automatically between servers. End-to-end: Only you and the recipient can read the message — not even the email provider.' },
     { title: 'Gmail confidential mode', content: 'In Gmail, click the lock icon when composing. Set an expiration date and optionally require a passcode. The recipient cannot forward, copy, or download the email.' },
@@ -10037,15 +9667,7 @@ const coreGuides: Guide[] = [
   ] },
 
   // ===== BATCH 16: Advanced Level Guides =====
-  { slug: 'password-manager-setup', title: 'How to Set Up and Use a Password Manager', excerpt: 'Stop reusing passwords — a password manager remembers them all for you securely.', category: 'safety-guides', tags: ['passwords', 'security', 'password-manager'], readTime: '8 min', thumbnailEmoji: '🔑', publishedAt: '2026-04-02', difficulty: 'Intermediate', videoUrl: 'https://www.youtube.com/embed/wcDtLMraTkQ', steps: [
-    { title: 'Why use a password manager', content: 'The average person has 100+ online accounts. Reusing passwords is dangerous — if one site gets hacked, criminals try that password everywhere. A password manager creates and stores unique passwords for every account.' },
-    { title: 'Choose a password manager', content: 'Built-in options: Apple Keychain (iPhone/Mac), Google Password Manager (Chrome/Android). Dedicated apps: 1Password ($3/mo), Bitwarden (free), Dashlane, or LastPass.' },
-    { title: 'Create your master password', content: 'This is the ONE password you need to remember. Make it strong: "Correct-Horse-Battery-Staple" style passphrases work well. Write it down and store it in a safe place.' },
-    { title: 'Import existing passwords', content: `Most password managers can import passwords saved in your browser. Go to your manager's settings and look for "Import" option. It pulls in all your saved logins.` },
-    { title: 'Let it generate passwords', content: 'When creating new accounts, let the password manager generate a random 20+ character password. You never need to remember it — the manager fills it in automatically.' },
-    { title: 'Enable autofill', content: 'iPhone: Settings > Passwords > AutoFill Passwords > select your manager. Android: Settings > Passwords > Autofill Service. Now passwords fill in automatically on websites and apps.' },
-  ] },
-  { slug: 'linux-basics-absolute-beginners', title: 'Linux for Absolute Beginners', excerpt: 'What Linux is, why people use it, and how to try it without changing your computer.', category: 'essential-skills', tags: ['linux', 'operating-system', 'beginner', 'open-source'], readTime: '7 min', thumbnailEmoji: '🐧', publishedAt: '2026-04-02', difficulty: 'Intermediate', steps: [
+    { slug: 'linux-basics-absolute-beginners', title: 'Linux for Absolute Beginners', excerpt: 'What Linux is, why people use it, and how to try it without changing your computer.', category: 'essential-skills', tags: ['linux', 'operating-system', 'beginner', 'open-source'], readTime: '7 min', thumbnailEmoji: '🐧', publishedAt: '2026-04-02', difficulty: 'Intermediate', steps: [
     { title: 'What is Linux', content: 'Linux is a free operating system — like Windows or macOS, but open source (anyone can view and modify the code). It powers most web servers, Android phones, and many smart devices.' },
     { title: 'Why people use Linux', content: 'It is free, very secure (fewer viruses), runs well on older computers, and is highly customizable. Many developers and privacy-conscious users prefer it.' },
     { title: 'Popular versions (distributions)', content: 'Ubuntu and Linux Mint are the most beginner-friendly. They look and feel similar to Windows or Mac, with app stores and graphical interfaces.' },
@@ -10134,16 +9756,7 @@ const coreGuides: Guide[] = [
   ] },
 
   // ── Batch 18: Device & Platform Guides ──────────────────────────────────────
-  { slug: 'apple-family-sharing-setup', title: 'How to Set Up Apple Family Sharing', excerpt: 'Share purchases, subscriptions, storage, and location with up to five family members.', category: 'how-to', tags: ['apple', 'family', 'sharing', 'icloud'], readTime: '7 min', thumbnailEmoji: '👨‍👩‍👧‍👦', publishedAt: '2026-04-02', difficulty: 'Intermediate', steps: [
-    { title: 'What Family Sharing includes', content: 'Family Sharing lets up to six people share App Store purchases, Apple subscriptions (Apple One, iCloud+, Apple Music, Apple TV+), and Find My location — each person keeps their own Apple ID.' },
-    { title: 'Start Family Sharing', content: 'On iPhone: Settings > your name > Family Sharing > Set Up Your Family. On Mac: System Settings > Family. You become the organizer and can invite members via Messages or email.' },
-    { title: 'Invite family members', content: 'Tap Add Member and enter their Apple ID email or phone number. They receive an invitation and must accept. Children under 13 can have accounts created through Family Sharing.' },
-    { title: 'Share purchases', content: 'Enable Purchase Sharing and all family members can download apps, music, movies, and books any member has bought — at no extra cost.' },
-    { title: 'Set up Ask to Buy', content: 'For children, enable Ask to Buy so you approve any purchase or free download before it happens. You get a notification and can approve or decline from your device.' },
-    { title: 'Share iCloud+ storage', content: `If you subscribe to iCloud+ (50 GB, 200 GB, or 2 TB), you can share that storage with your family. Each person's files remain private — only the storage space is shared.` },
-    { title: 'Share location', content: 'Family members can share their location through Find My. This is optional for each member. Great for knowing when family arrives home safely.' },
-  ] },
-  { slug: 'windows-sfc-dism-repair', title: 'How to Repair Windows Using SFC and DISM Commands', excerpt: 'Fix corrupted system files and restore Windows health using built-in command-line tools.', category: 'windows-guides', tags: ['windows', 'repair', 'sfc', 'dism', 'command-prompt'], readTime: '8 min', thumbnailEmoji: '🔧', publishedAt: '2026-04-02', difficulty: 'Advanced', steps: [
+    { slug: 'windows-sfc-dism-repair', title: 'How to Repair Windows Using SFC and DISM Commands', excerpt: 'Fix corrupted system files and restore Windows health using built-in command-line tools.', category: 'windows-guides', tags: ['windows', 'repair', 'sfc', 'dism', 'command-prompt'], readTime: '8 min', thumbnailEmoji: '🔧', publishedAt: '2026-04-02', difficulty: 'Advanced', steps: [
     { title: 'When to use these tools', content: `If Windows is crashing, showing errors, running slowly, or programs won't open, system files may be corrupted. SFC (System File Checker) and DISM (Deployment Image Servicing) can detect and repair these problems.` },
     { title: 'Open Command Prompt as administrator', content: 'Right-click the Start button and select "Terminal (Admin)" or "Command Prompt (Admin)." Click Yes when asked to allow changes. You must run as administrator for these commands to work.' },
     { title: 'Run SFC first', content: `Type: sfc /scannow and press Enter. This scans all protected system files and replaces corrupted ones with cached copies. Wait for it to complete — it can take 10-30 minutes. Don't close the window.` },
@@ -10356,16 +9969,7 @@ const coreGuides: Guide[] = [
     { title: 'Important files to organize', content: 'Create a folder (physical or digital) with: insurance policies, tax records, investment accounts, property deeds, medical directives, and contact info for your lawyer and financial advisor.' },
     { title: 'Review annually', content: 'Update your account list when you create new accounts or change passwords. Review legacy contact settings yearly. Make sure your designated person knows where to find your information.' },
   ] },
-  { slug: 'telehealth-guide-v2', title: 'How to Use Telehealth for Doctor Visits', excerpt: 'See your doctor from home using video calls on your phone, tablet, or computer.', category: 'health-tech', tags: ['telehealth', 'doctor', 'health', 'video-call', 'medicare'], readTime: '7 min', thumbnailEmoji: '🩺', publishedAt: '2026-04-02', difficulty: 'Beginner', videoUrl: 'https://www.youtube.com/embed/Ed40jgObFA4', steps: [
-    { title: 'What is telehealth?', content: `Telehealth lets you visit your doctor through a video call on your phone, tablet, or computer. It's real medical care — the doctor can diagnose conditions, prescribe medications, and order tests.` },
-    { title: 'When to use telehealth', content: 'Good for: cold/flu symptoms, medication refills, follow-up visits, mental health, rashes, minor injuries, chronic condition check-ins. Not ideal for: emergencies, chest pain, serious injuries, procedures.' },
-    { title: 'Set up your account', content: `Ask your doctor if they offer telehealth. They'll direct you to their platform (MyChart, Doxy.me, Zoom for Healthcare, etc.). Create an account and fill out any forms before your appointment.` },
-    { title: 'Prepare for your visit', content: 'Find a quiet, well-lit room. Test your camera and microphone. Have your medication list ready. Write down your symptoms and questions. Charge your device.' },
-    { title: 'During the appointment', content: 'Log in 5 minutes early. Look at the camera (not the screen) for eye contact. Speak clearly and describe symptoms in detail. Show any visible issues on camera.' },
-    { title: 'Medicare coverage', content: `Medicare covers many telehealth services, especially since 2020. You'll pay the same copay as an in-person visit. Check with your plan for specific coverage details.` },
-    { title: 'After the visit', content: 'The doctor sends prescriptions electronically to your pharmacy. Follow-up instructions appear in your patient portal. Save your visit summary for your records.' },
-  ] },
-  { slug: 'medicare-online-guide', title: 'How to Use Medicare.gov Online', excerpt: 'Navigate the Medicare website to manage your coverage, find plans, and access benefits.', category: 'how-to', tags: ['medicare', 'health', 'government', 'insurance', 'seniors'], readTime: '7 min', thumbnailEmoji: '🏥', publishedAt: '2026-04-02', difficulty: 'Beginner', videoUrl: 'https://www.youtube.com/embed/jJsIEHNUQhQ', steps: [
+    { slug: 'medicare-online-guide', title: 'How to Use Medicare.gov Online', excerpt: 'Navigate the Medicare website to manage your coverage, find plans, and access benefits.', category: 'how-to', tags: ['medicare', 'health', 'government', 'insurance', 'seniors'], readTime: '7 min', thumbnailEmoji: '🏥', publishedAt: '2026-04-02', difficulty: 'Beginner', videoUrl: 'https://www.youtube.com/embed/jJsIEHNUQhQ', steps: [
     { title: 'Create a Medicare.gov account', content: `Visit Medicare.gov and click "Log in to your Medicare account." Create a login using Login.gov. You'll need your Medicare number (on your red, white, and blue card), email, and phone.` },
     { title: 'View your coverage', content: 'Once logged in, see your current Medicare plan details: Part A (hospital), Part B (medical), Part D (prescription drugs), and any Medicare Advantage plan information.' },
     { title: 'Compare plans', content: 'During Open Enrollment (October 15 - December 7), use the Plan Finder tool. Enter your medications and preferred pharmacies to see which plans cover your drugs at the lowest cost.' },
@@ -10421,17 +10025,7 @@ const coreGuides: Guide[] = [
     { title: 'Collaborate in real time', content: 'Multiple people can edit the same document simultaneously. You see their cursors and changes in real time. Use comments (Ctrl+Alt+M) to discuss without changing the text.' },
     { title: 'Download and print', content: 'File > Download to save as Word (.docx), PDF, or plain text. File > Print (Ctrl+P) to print. Your documents are always accessible from any device at docs.google.com.' },
   ] },
-  { slug: 'zoom-complete-guide-v2', title: 'How to Use Zoom for Video Calls', excerpt: 'Set up Zoom and learn to join meetings, share your screen, and look your best on camera.', category: 'app-guides', tags: ['zoom', 'video-calls', 'meetings', 'communication'], readTime: '8 min', thumbnailEmoji: '📹', publishedAt: '2026-04-02', difficulty: 'Beginner', steps: [
-    { title: 'Download Zoom', content: 'Visit zoom.us and click "Download" at the bottom of the page. Install the Zoom app on your computer. On phones/tablets, search "Zoom" in your app store. Create a free account.' },
-    { title: 'Join a meeting', content: 'Click the meeting link someone sent you (in email or text). Or open Zoom and click "Join" — enter the Meeting ID and passcode. Your camera and microphone turn on automatically.' },
-    { title: 'Camera and microphone basics', content: 'Bottom-left icons control your microphone (mute/unmute) and camera (on/off). Mute yourself when not speaking to reduce background noise. The space bar is a quick mute toggle.' },
-    { title: 'Gallery vs Speaker view', content: 'Gallery view shows everyone in a grid. Speaker view highlights whoever is talking. Switch between views using the View button in the top-right corner.' },
-    { title: 'Share your screen', content: 'Click the green "Share Screen" button at the bottom. Choose what to share: your entire screen, a specific window, or just a browser tab. Click "Stop Share" when done.' },
-    { title: 'Chat during meetings', content: 'Click "Chat" at the bottom to open the text chat panel. Send messages to everyone or privately to individuals. Great for sharing links or asking questions without interrupting.' },
-    { title: 'Look good on camera', content: `Face a window for natural light (don't sit with a window behind you). Position the camera at eye level. Use a plain background or Zoom's virtual backgrounds (Settings > Virtual Background).` },
-    { title: 'Host your own meeting', content: 'Click "New Meeting" to start instantly, or "Schedule" to plan ahead. Copy the invitation link and send it to participants. Free accounts allow 40-minute group meetings.' },
-  ] },
-  { slug: 'facebook-privacy-settings-v3', title: 'How to Lock Down Your Facebook Privacy Settings', excerpt: 'Take control of who can see your posts, photos, and personal information on Facebook.', category: 'social-media', tags: ['facebook', 'privacy', 'social-media', 'security', 'settings'], readTime: '8 min', thumbnailEmoji: '🔒', publishedAt: '2026-04-02', difficulty: 'Beginner', steps: [
+    { slug: 'facebook-privacy-settings-v3', title: 'How to Lock Down Your Facebook Privacy Settings', excerpt: 'Take control of who can see your posts, photos, and personal information on Facebook.', category: 'social-media', tags: ['facebook', 'privacy', 'social-media', 'security', 'settings'], readTime: '8 min', thumbnailEmoji: '🔒', publishedAt: '2026-04-02', difficulty: 'Beginner', steps: [
     { title: 'Access Privacy Settings', content: 'Tap the menu icon (three lines) > Settings & Privacy > Settings > Privacy. On desktop: click your profile picture > Settings & Privacy > Settings > Privacy.' },
     { title: 'Control who sees your posts', content: `Under "Your Activity," set "Who can see your future posts?" to "Friends" (not "Public"). This means only people you've accepted as friends can see what you share.` },
     { title: 'Limit past posts', content: `Click "Limit Past Posts" to change all your old public posts to Friends-only in one step. This is important if you've been posting publicly for years.` },
@@ -10469,15 +10063,7 @@ const coreGuides: Guide[] = [
     { title: 'System Image backup', content: 'For a complete backup (including Windows itself): Control Panel > Backup and Restore (Windows 7) > Create a System Image. This lets you restore your entire computer if something goes very wrong.' },
     { title: 'The 3-2-1 rule', content: 'Keep 3 copies of important files, on 2 different types of storage, with 1 copy offsite (cloud). Example: original files on your PC, File History to external drive, and OneDrive for cloud backup.' },
   ] },
-  { slug: 'mac-backup-time-machine', title: 'How to Back Up Your Mac with Time Machine', excerpt: 'Set up Time Machine to automatically back up everything on your Mac to an external drive.', category: 'mac-guides', tags: ['mac', 'backup', 'time-machine', 'files', 'recovery'], readTime: '6 min', thumbnailEmoji: '💾', publishedAt: '2026-04-02', difficulty: 'Beginner', steps: [
-    { title: 'What is Time Machine?', content: `Time Machine is Apple's built-in backup tool. It automatically saves copies of everything on your Mac — files, apps, settings, and even your entire system. If something goes wrong, you can go back in time.` },
-    { title: 'Get an external drive', content: `Buy an external USB or Thunderbolt hard drive. Recommended size: at least twice your Mac's storage (if your Mac has 256 GB, get at least 512 GB). A 1 TB drive costs $40-60.` },
-    { title: 'Set up Time Machine', content: 'Connect the external drive. Your Mac may ask if you want to use it for Time Machine — click Yes. Or: System Settings > General > Time Machine > Add Backup Disk. Select your drive.' },
-    { title: 'First backup', content: 'Time Machine starts its first backup automatically. This initial backup takes a while (could be hours) because it copies everything. Subsequent backups are much faster — only new/changed files.' },
-    { title: 'Restore files', content: 'Click the Time Machine icon in the menu bar > Browse Time Machine Backups. Navigate through time to find the file you need. Select it and click Restore. It reappears in its original location.' },
-    { title: 'Best practices', content: 'Leave the drive connected when at home so backups happen automatically. Time Machine backs up every hour, keeping hourly backups for 24 hours, daily backups for a month, and weekly backups until the drive is full.' },
-  ] },
-
+  
   // ── Batch 20: Communication & Social ────────────────────────────────────────
   { slug: 'whatsapp-complete-guide', title: 'How to Use WhatsApp', excerpt: 'Send free messages, make voice and video calls, and share photos with WhatsApp.', category: 'app-guides', tags: ['whatsapp', 'messaging', 'communication', 'phone'], readTime: '7 min', thumbnailEmoji: '💬', publishedAt: '2026-04-02', difficulty: 'Beginner', steps: [
     { title: 'Download and set up', content: 'Download WhatsApp from the App Store or Google Play. Open it and verify your phone number with a text code. WhatsApp automatically finds contacts who also use the app.' },
@@ -10542,17 +10128,7 @@ const coreGuides: Guide[] = [
     { title: 'Explore nearby', content: 'Tap the Explore tab to see restaurants, gas stations, grocery stores, and attractions near you. Filter by rating, price, and currently open. Read reviews from other visitors.' },
     { title: 'Share your location', content: 'Tap your profile picture > Location Sharing. Choose contacts and how long to share. They can see your real-time location on their Google Maps — helpful for meeting up or safety.' },
   ] },
-  { slug: 'online-shopping-safely', title: 'How to Shop Online Safely', excerpt: 'Buy products online with confidence. Know where to shop, how to pay, and how to avoid scams.', category: 'how-to', tags: ['shopping', 'online', 'safety', 'amazon', 'security'], readTime: '8 min', thumbnailEmoji: '🛒', publishedAt: '2026-04-02', difficulty: 'Beginner', steps: [
-    { title: 'Stick to trusted retailers', content: `Shop at well-known sites: Amazon, Walmart, Target, Best Buy, Costco. If you find an unknown site with unbelievable prices, it's probably a scam. If a deal seems too good to be true, it is.` },
-    { title: 'Check for security', content: 'Look for the lock icon and "https" in the address bar before entering payment information. This means the connection is encrypted. Never enter card numbers on sites without the lock.' },
-    { title: 'Use credit cards, not debit', content: `Credit cards offer fraud protection — if someone steals your number, you can dispute charges and won't lose money. Debit card fraud takes money directly from your bank account.` },
-    { title: 'Read reviews carefully', content: 'Check product reviews before buying. Be skeptical of products with only 5-star reviews — they may be fake. Look for "Verified Purchase" reviews. Sites like fakespot.com analyze review authenticity.' },
-    { title: 'Compare prices', content: 'Search the product name on Google to compare prices across stores. Use browser extensions like Honey or Capital One Shopping to automatically find coupons and better prices.' },
-    { title: 'Understand return policies', content: 'Before buying, check the return policy. Most major retailers offer 30-day returns. Keep receipts and original packaging. Amazon and Walmart have easy online return processes.' },
-    { title: 'Track your orders', content: `After purchasing, you'll receive a confirmation email with a tracking number. Click the tracking link to see where your package is. Most deliveries take 2-7 business days.` },
-    { title: 'Recognize scams', content: 'Red flags: prices 70%+ off retail, requests for wire transfer or gift cards as payment, websites with poor spelling, no phone number or physical address, pressure to buy immediately.' },
-  ] },
-
+  
   // ── Batch 21: Productivity & Work From Home ─────────────────────────────────
   { slug: 'work-from-home-setup', title: 'How to Set Up a Home Office', excerpt: 'Create a comfortable, productive workspace at home for remote work or personal projects.', category: 'how-to', tags: ['home-office', 'remote-work', 'productivity', 'ergonomics'], readTime: '7 min', thumbnailEmoji: '🏡', publishedAt: '2026-04-02', difficulty: 'Beginner', steps: [
     { title: 'Choose your space', content: 'Find a quiet area with a door if possible. A spare bedroom, corner of the living room, or even a closet conversion can work. The key is separation from household distractions.' },
@@ -10590,14 +10166,7 @@ const coreGuides: Guide[] = [
     { title: 'Organization tips', content: 'Create separate notebooks/folders for: Personal, Medical, Financial, Home, Recipes, Travel. Use tags or labels for cross-referencing. Date your notes for easy timeline viewing.' },
     { title: 'Voice notes', content: 'Too busy to type? Record voice memos. iPhone: Voice Memos app. Android: Google Recorder (some phones transcribe automatically). Most note apps support voice attachments.' },
   ] },
-  { slug: 'scanning-documents-phone', title: 'How to Scan Documents with Your Phone', excerpt: 'Turn your phone into a document scanner to digitize receipts, forms, and important papers.', category: 'how-to', tags: ['scanning', 'documents', 'phone', 'productivity', 'organization'], readTime: '5 min', thumbnailEmoji: '📄', publishedAt: '2026-04-02', difficulty: 'Beginner', steps: [
-    { title: 'Built-in scanning on iPhone', content: 'Open the Notes app > create a new note > tap the camera icon > Scan Documents. Hold your phone over the document. It automatically detects edges and scans. Tap Save.' },
-    { title: 'Built-in scanning on Android', content: 'Open Google Drive > tap + > Scan. Point the camera at the document. It auto-detects and crops. Add multiple pages, then save as a PDF to your Drive.' },
-    { title: 'Tips for best scans', content: 'Place the document on a contrasting surface (white paper on dark desk). Use good lighting — natural light is best. Hold your phone directly above, parallel to the document. Keep steady.' },
-    { title: 'Scan multiple pages', content: 'Both iPhone and Android allow scanning multiple pages into one document. After the first scan, tap "Add Page" or "+" to continue scanning. Save all pages as a single PDF.' },
-    { title: 'Share and store scans', content: 'Share scans via email, text, or AirDrop. Save to iCloud, Google Drive, or OneDrive for permanent storage. Create folders for medical records, tax documents, and receipts.' },
-  ] },
-  { slug: 'file-management-basics', title: 'File Management: Organizing Your Computer', excerpt: 'Learn how to create folders, move files, and keep your computer organized and clutter-free.', category: 'essential-skills', tags: ['files', 'folders', 'organization', 'computer-basics'], readTime: '7 min', thumbnailEmoji: '📁', publishedAt: '2026-04-02', difficulty: 'Beginner', steps: [
+    { slug: 'file-management-basics', title: 'File Management: Organizing Your Computer', excerpt: 'Learn how to create folders, move files, and keep your computer organized and clutter-free.', category: 'essential-skills', tags: ['files', 'folders', 'organization', 'computer-basics'], readTime: '7 min', thumbnailEmoji: '📁', publishedAt: '2026-04-02', difficulty: 'Beginner', steps: [
     { title: 'Understanding files and folders', content: 'Files are your documents, photos, and downloads. Folders are containers that organize files — like physical file folders in a cabinet. You can put folders inside folders for detailed organization.' },
     { title: 'Create a folder structure', content: 'Create main folders: Documents, Photos, Medical, Financial, Personal. Inside each, create subfolders. Example: Financial > 2026 Taxes, Financial > Insurance, Financial > Receipts.' },
     { title: 'How to create a folder', content: 'Windows: Right-click in File Explorer > New > Folder. Mac: Right-click in Finder > New Folder. Name it clearly — "Tax Documents 2026" is better than "Stuff."' },
@@ -10625,25 +10194,7 @@ const coreGuides: Guide[] = [
   ] },
 
   // ── Batch 22: Security & Safety In Depth ───────────────────────────────────
-  { slug: 'recognize-tech-support-scams', title: 'How to Recognize and Avoid Tech Support Scams', excerpt: 'Scammers pretend to be from Microsoft, Apple, or your ISP. Learn their tricks and stay safe.', category: 'safety-guides', tags: ['scams', 'tech-support', 'security', 'fraud'], readTime: '7 min', thumbnailEmoji: '🚨', publishedAt: '2026-04-02', difficulty: 'Beginner', steps: [
-    { title: 'How the scam works', content: 'You get a phone call, pop-up, or email claiming your computer has a virus. The "technician" asks you to install remote access software and pay $200-$500 to fix the fake problem. Some scammers steal files or install real malware.' },
-    { title: 'Red flags', content: `Microsoft, Apple, and Google never call you about computer problems. Pop-ups telling you to call a number are always scams. Legitimate companies don't ask for remote access to fix problems you didn't report.` },
-    { title: 'What to do if you get a call', content: `Hang up immediately. Don't press any buttons or say anything. Real tech support comes from numbers you dial yourself, not unsolicited calls. Block the number.` },
-    { title: 'What to do if you get a pop-up', content: `Don't click anything in the pop-up. Press Alt+F4 (Windows) or Cmd+Q (Mac) to force-close the browser. If that doesn't work, restart your computer. The pop-up is just a webpage — it can't actually access your computer.` },
-    { title: 'If you already paid', content: 'Call your bank or credit card company immediately to dispute the charge. Change passwords on all your accounts, especially email and banking. Run a full antivirus scan. Report to reportfraud.ftc.gov.' },
-    { title: 'How to get real tech support', content: `Go to the company's official website yourself (don't Google "tech support" — scam ads appear at the top). Call the number on the product packaging or your account settings page.` },
-    { title: 'Protect vulnerable family members', content: `Tell older family members about these scams. Install an ad blocker (uBlock Origin) to prevent scary pop-ups. Set their browser to block pop-ups. Reassure them that legitimate companies don't operate this way.` },
-  ] },
-  { slug: 'two-factor-authentication-guide', title: 'How to Set Up Two-Factor Authentication (2FA)', excerpt: 'Add an extra layer of security to your most important accounts in just a few minutes.', category: 'safety-guides', tags: ['2fa', 'security', 'authentication', 'passwords'], readTime: '7 min', thumbnailEmoji: '🔐', publishedAt: '2026-04-02', difficulty: 'Beginner', videoUrl: 'https://www.youtube.com/embed/0mvCeNsTa1g', steps: [
-    { title: 'What is 2FA?', content: `Two-factor authentication requires two things to log in: your password PLUS a second verification (usually a code sent to your phone). Even if someone steals your password, they can't access your account without your phone.` },
-    { title: 'Which accounts to protect first', content: `Start with: email (it's the master key to all other accounts), banking and financial sites, social media, shopping accounts with saved credit cards, and cloud storage.` },
-    { title: 'Set up 2FA on Google/Gmail', content: `Go to myaccount.google.com > Security > 2-Step Verification > Get Started. Google can send prompts to your phone, text codes, or use an authenticator app. Choose what's easiest for you.` },
-    { title: 'Set up 2FA on Apple ID', content: 'iPhone: Settings > your name > Sign-In & Security > Two-Factor Authentication. Apple sends a code to your trusted devices. This protects your entire Apple account.' },
-    { title: 'Set up 2FA on Facebook', content: 'Settings > Security and Login > Two-Factor Authentication. Choose text message codes or an authenticator app. Facebook also offers recovery codes — save these somewhere safe.' },
-    { title: 'Authenticator apps', content: 'More secure than text messages: Google Authenticator, Microsoft Authenticator, or Authy. They generate codes that refresh every 30 seconds. Free and work with most services.' },
-    { title: 'Save your backup codes', content: 'Most services give you backup codes when you set up 2FA. Print these or write them down and store safely. They let you log in if you lose your phone.' },
-  ] },
-  { slug: 'avoid-phishing-emails', title: 'How to Spot Phishing Emails and Texts', excerpt: 'Learn to identify fake messages designed to steal your personal information.', category: 'safety-guides', tags: ['phishing', 'email', 'scams', 'security', 'fraud'], readTime: '7 min', thumbnailEmoji: '🎣', publishedAt: '2026-04-02', difficulty: 'Beginner', steps: [
+      { slug: 'avoid-phishing-emails', title: 'How to Spot Phishing Emails and Texts', excerpt: 'Learn to identify fake messages designed to steal your personal information.', category: 'safety-guides', tags: ['phishing', 'email', 'scams', 'security', 'fraud'], readTime: '7 min', thumbnailEmoji: '🎣', publishedAt: '2026-04-02', difficulty: 'Beginner', steps: [
     { title: 'What is phishing?', content: 'Phishing is when scammers send fake emails or texts pretending to be from companies you trust (banks, Amazon, USPS, Netflix). They want you to click a link and enter your password or personal information.' },
     { title: `Check the sender's email address`, content: `The "From" name might say "Bank of America" but the email address could be bankofamerica@secure-login-notice.com. Hover over (or tap) the sender's name to see the real email address. Legitimate companies use their own domain.` },
     { title: 'Look for urgency and threats', content: `"Your account will be suspended in 24 hours!" "Unauthorized login detected!" "Payment failed!" Scammers create panic so you act without thinking. Real companies don't threaten you by email.` },
@@ -10652,26 +10203,7 @@ const coreGuides: Guide[] = [
     { title: 'Common phishing scenarios', content: 'Package delivery problems (USPS/FedEx). Payment issues (PayPal/Venmo). Account verification (bank/email). Prize winning. Tax refund. Netflix/subscription problems. All designed to get you to click.' },
     { title: 'What to do if you clicked', content: 'Change your password immediately on the affected account. Enable 2FA. Check your account for unauthorized activity. If you entered financial info, call your bank. Report to reportphishing@apwg.org.' },
   ] },
-  { slug: 'identity-theft-prevention', title: 'How to Protect Yourself from Identity Theft', excerpt: `Practical steps to keep your personal information safe and what to do if it's stolen.`, category: 'safety-guides', tags: ['identity-theft', 'security', 'fraud', 'credit', 'protection'], readTime: '8 min', thumbnailEmoji: '🛡️', publishedAt: '2026-04-02', difficulty: 'Intermediate', videoUrl: 'https://www.youtube.com/embed/IzjPUURxEMo', steps: [
-    { title: 'What is identity theft?', content: 'Identity theft happens when someone uses your personal information (Social Security number, credit card, bank details) without permission. They may open accounts, make purchases, or file taxes in your name.' },
-    { title: 'Freeze your credit', content: 'Contact all three credit bureaus to freeze your credit for free: Equifax (equifax.com), Experian (experian.com), TransUnion (transunion.com). A freeze prevents anyone from opening new accounts in your name.' },
-    { title: 'Monitor your accounts', content: 'Check bank and credit card statements weekly. Set up transaction alerts — your bank can text you for every purchase. Review your free credit report annually at annualcreditreport.com.' },
-    { title: 'Protect your Social Security number', content: `Never carry your Social Security card in your wallet. Only give your SSN when absolutely necessary (tax forms, employment, financial accounts). Ask why it's needed and if a partial number will suffice.` },
-    { title: 'Secure your mail', content: 'Collect mail promptly. Consider a locked mailbox. Shred documents with personal info before throwing them away. Opt for paperless statements from banks and utilities.' },
-    { title: 'Be careful what you share online', content: `Social media quizzes ("What was your first car?") harvest security question answers. Don't post your birthday, address, mother's maiden name, or pet names publicly.` },
-    { title: 'Signs your identity was stolen', content: `Bills for accounts you didn't open. Calls from debt collectors about unknown debts. Unexpected credit score changes. Missing mail. IRS says you already filed taxes. Medical bills for services you didn't receive.` },
-    { title: 'What to do if it happens', content: 'Report to identitytheft.gov (FTC). File a police report. Place a fraud alert with credit bureaus. Contact affected companies. Keep detailed records of every step. The FTC provides a personalized recovery plan.' },
-  ] },
-  { slug: 'secure-your-home-wifi', title: 'How to Secure Your Home Wi-Fi Network', excerpt: 'Protect your home network from hackers with these essential security steps.', category: 'safety-guides', tags: ['wifi', 'security', 'router', 'networking', 'home'], readTime: '7 min', thumbnailEmoji: '🔒', publishedAt: '2026-04-02', difficulty: 'Intermediate', steps: [
-    { title: 'Change the default password', content: 'Your router came with a default admin password (often "admin" or "password"). Log into your router (type 192.168.1.1 in a browser) and change both the admin password and Wi-Fi password to something strong.' },
-    { title: 'Use WPA3 or WPA2 encryption', content: `In your router settings, look for Security or Encryption type. Choose WPA3 if available, or WPA2-AES. Never use WEP — it's easily hackable. This encrypts all data on your network.` },
-    { title: 'Create a strong Wi-Fi password', content: `Use at least 12 characters mixing letters, numbers, and symbols. Don't use your address, name, or phone number. "PurpleDolphin$Fly92!" is much better than "Smith123."` },
-    { title: 'Change the network name (SSID)', content: `Don't use your name or address as the network name. "Home_Network_5G" reveals nothing useful to hackers. Avoid names that identify the router brand.` },
-    { title: 'Enable your firewall', content: `Most routers have a built-in firewall. Check your router settings to make sure it's turned on. This blocks unauthorized incoming connections from the internet.` },
-    { title: 'Update router firmware', content: `Router manufacturers release security updates. Log into your router settings and look for Firmware Update or check the manufacturer's app. Set up auto-updates if available.` },
-    { title: 'Set up a guest network', content: 'Create a separate guest network for visitors. This keeps them off your main network where your personal devices and files are. Most modern routers offer this in settings.' },
-  ] },
-  { slug: 'safe-browsing-habits', title: 'Safe Browsing: How to Stay Safe on the Internet', excerpt: 'Protect yourself while browsing the web with these essential habits and tools.', category: 'safety-guides', tags: ['browsing', 'safety', 'internet', 'security', 'privacy'], readTime: '7 min', thumbnailEmoji: '🌐', publishedAt: '2026-04-02', difficulty: 'Beginner', steps: [
+      { slug: 'safe-browsing-habits', title: 'Safe Browsing: How to Stay Safe on the Internet', excerpt: 'Protect yourself while browsing the web with these essential habits and tools.', category: 'safety-guides', tags: ['browsing', 'safety', 'internet', 'security', 'privacy'], readTime: '7 min', thumbnailEmoji: '🌐', publishedAt: '2026-04-02', difficulty: 'Beginner', steps: [
     { title: 'Keep your browser updated', content: `Chrome, Firefox, Safari, and Edge all update automatically. These updates fix security holes. Make sure auto-updates are enabled. Use a modern browser — don't use Internet Explorer.` },
     { title: 'Look for the lock icon', content: 'A padlock icon in the address bar means the connection is encrypted (HTTPS). Never enter passwords or credit cards on sites without it. Most legitimate sites use HTTPS.' },
     { title: 'Install an ad blocker', content: 'uBlock Origin (free, available for Chrome and Firefox) blocks ads and many malicious scripts. This prevents pop-ups, redirect scams, and malicious advertisements.' },
@@ -10682,17 +10214,7 @@ const coreGuides: Guide[] = [
   ] },
 
   // ── Batch 23: Health & Wellness Tech ────────────────────────────────────────
-  { slug: 'fitness-tracker-guide', title: 'How to Use a Fitness Tracker or Smartwatch', excerpt: 'Get the most out of your Apple Watch, Fitbit, or Samsung Galaxy Watch for health tracking.', category: 'health-tech', tags: ['fitness', 'smartwatch', 'health', 'apple-watch', 'fitbit'], readTime: '8 min', thumbnailEmoji: '⌚', publishedAt: '2026-04-02', difficulty: 'Beginner', videoUrl: 'https://www.youtube.com/embed/KxCKkrDCnDU', steps: [
-    { title: 'Set up your device', content: 'Apple Watch: pair through the Watch app on iPhone. Fitbit: pair through the Fitbit app. Samsung Watch: pair through Galaxy Wearable app. Follow the on-screen setup wizard.' },
-    { title: 'Track your steps', content: 'Your tracker counts steps automatically by detecting motion. Most health experts recommend 7,000-10,000 steps per day. Check your daily count on the watch face or companion app.' },
-    { title: 'Monitor heart rate', content: 'Your watch measures heart rate throughout the day using sensors on the back. Review trends in the companion app. Get alerts if your heart rate goes unusually high or low.' },
-    { title: 'Track sleep', content: 'Wear your tracker to bed. It monitors sleep stages (light, deep, REM), duration, and disturbances. Review your sleep score each morning and aim for 7-9 hours.' },
-    { title: 'Set activity goals', content: 'Apple Watch uses activity rings (Move, Exercise, Stand). Fitbit uses Active Zone Minutes. Set realistic daily goals and gradually increase them as you improve.' },
-    { title: 'Health features', content: 'Many watches now include: blood oxygen measurement, ECG (heart rhythm), fall detection and emergency SOS, medication reminders, and menstrual cycle tracking.' },
-    { title: 'Share with your doctor', content: 'Export health data as a PDF or grant your doctor access through the health app. Heart rate trends, exercise data, and sleep patterns give your doctor valuable health insights.' },
-    { title: 'Battery and care', content: 'Charge daily or weekly depending on your model. Apple Watch: charge nightly. Fitbit: charge every 5-7 days. Clean the sensor area regularly with a soft, damp cloth.' },
-  ] },
-  { slug: 'health-apps-guide', title: 'Best Free Health Apps for Your Phone', excerpt: 'Track medications, manage conditions, and improve your health with free mobile apps.', category: 'health-tech', tags: ['health', 'apps', 'medication', 'wellness', 'free'], readTime: '7 min', thumbnailEmoji: '💊', publishedAt: '2026-04-02', difficulty: 'Beginner', steps: [
+    { slug: 'health-apps-guide', title: 'Best Free Health Apps for Your Phone', excerpt: 'Track medications, manage conditions, and improve your health with free mobile apps.', category: 'health-tech', tags: ['health', 'apps', 'medication', 'wellness', 'free'], readTime: '7 min', thumbnailEmoji: '💊', publishedAt: '2026-04-02', difficulty: 'Beginner', steps: [
     { title: 'Apple Health / Google Fit', content: 'These built-in apps are health dashboards. Apple Health (iPhone) and Google Fit (Android) aggregate data from all your health apps and devices. Check steps, heart data, and health trends in one place.' },
     { title: 'Medication reminders', content: 'Medisafe (free, iOS/Android) sends reminders to take your medications. Track multiple medications, dosages, and schedules. Share with family members who help manage your health.' },
     { title: 'MyFitnessPal', content: 'Free food diary and calorie counter. Scan barcodes to log food. Track nutrition, water intake, and exercise. Helpful for managing weight, diabetes, or heart-healthy eating.' },
@@ -10878,14 +10400,7 @@ const coreGuides: Guide[] = [
     { title: 'Recognizing unreliable information', content: 'Check the source: is it a reputable news outlet or an unknown blog? Look for author credentials. Check if other reliable sources report the same thing. Be skeptical of sensational headlines.' },
     { title: 'Getting help', content: `Don't be afraid to ask for help. Library staff, tech-savvy family members, and services like TekSure exist to help. There's no such thing as a "dumb question" when learning technology.` },
   ] },
-  { slug: 'screenshot-guide', title: 'How to Take a Screenshot on Any Device', excerpt: `Capture what's on your screen to save, share, or get help with a tech problem.`, category: 'essential-skills', tags: ['screenshot', 'computer-basics', 'windows', 'mac', 'phone'], readTime: '5 min', thumbnailEmoji: '📸', publishedAt: '2026-04-02', difficulty: 'Beginner', videoUrl: 'https://www.youtube.com/embed/7V8oR1rE3LU', steps: [
-    { title: 'Windows screenshot', content: 'Press PrtScn (Print Screen) to capture the entire screen to clipboard. Press Win+Shift+S to select a specific area (Snipping Tool). Press Win+PrtScn to save a screenshot directly to your Pictures > Screenshots folder.' },
-    { title: 'Mac screenshot', content: 'Cmd+Shift+3: capture entire screen. Cmd+Shift+4: select an area to capture. Cmd+Shift+5: opens screenshot toolbar with more options including screen recording. Screenshots save to your desktop.' },
-    { title: 'iPhone screenshot', content: 'Press Side Button + Volume Up simultaneously. A thumbnail appears in the bottom-left — tap it to edit (crop, annotate). Screenshots go to Photos > Albums > Screenshots.' },
-    { title: 'Android screenshot', content: 'Press Power + Volume Down simultaneously. On some phones, swipe down with three fingers. The screenshot appears in your notification shade and saves to Photos > Screenshots.' },
-    { title: 'Share your screenshot', content: 'After taking a screenshot, open it in your photos or files app. Tap Share to send via text, email, or any messaging app. Screenshots are great for showing someone what you see on your screen.' },
-  ] },
-
+  
   // ── Batch 28: Advanced Tech & Development ───────────────────────────────────
   { slug: 'home-network-explained', title: 'Understanding Your Home Network', excerpt: 'Learn what modems, routers, and Wi-Fi extenders do and how to optimize your home network.', category: 'essential-skills', tags: ['networking', 'router', 'modem', 'wifi', 'home-network'], readTime: '8 min', thumbnailEmoji: '🌐', publishedAt: '2026-04-02', difficulty: 'Intermediate', steps: [
     { title: 'Modem vs router', content: 'The modem connects your home to the internet (from your ISP). The router creates your Wi-Fi network and connects your devices. Some devices combine both into one unit (gateway).' },
@@ -11179,25 +10694,7 @@ const coreGuides: Guide[] = [
     { title: 'Safe Mode', content: 'Intel: restart, hold Shift. Apple Silicon: shut down, hold power button, select your disk, hold Shift, click Continue in Safe Mode. Safe Mode clears caches and checks the disk.' },
     { title: 'Reinstall macOS', content: 'Last resort. Restart, hold Cmd+R (Intel) or hold Power button (Apple Silicon). Choose Reinstall macOS. This reinstalls the system without erasing your files. Takes 30-60 minutes.' },
   ] },
-  { slug: 'iphone-storage-management', title: 'How to Free Up Space on Your iPhone', excerpt: 'Running out of storage? Clear space without losing important photos and data.', category: 'phone-guides', tags: ['iphone', 'storage', 'space', 'optimization', 'photos'], readTime: '7 min', thumbnailEmoji: '📱', publishedAt: '2026-04-02', difficulty: 'Beginner', videoUrl: 'https://www.youtube.com/embed/bwjcYyCneNc', steps: [
-    { title: `Check what's using space`, content: `Settings > General > iPhone Storage. See a breakdown by app. Apps are listed by size. Large apps you don't use are the quickest wins for freeing space.` },
-    { title: 'Offload unused apps', content: `Settings > General > iPhone Storage > Enable Offload Unused Apps. iOS removes apps you haven't used recently but keeps their data. Reinstall anytime and your data returns.` },
-    { title: 'Clear Safari cache', content: 'Settings > Safari > Clear History and Website Data. This removes temporary files, cookies, and browsing history. Can free up several hundred MB or more.' },
-    { title: 'Manage photos', content: 'Photos often use the most storage. Enable iCloud Photos (Settings > Photos > iCloud Photos) and turn on "Optimize iPhone Storage." Full-resolution photos stay in iCloud; your phone keeps smaller versions.' },
-    { title: 'Delete large message attachments', content: 'Settings > General > iPhone Storage > Messages > Review Large Attachments. Delete old photos, videos, and files sent through Messages. These can use several GB without you realizing.' },
-    { title: 'Review downloaded content', content: `Check streaming apps: Netflix, Spotify, and podcasts download content. Delete downloads you've finished. In each app, look for Downloaded or Offline content.` },
-    { title: 'Delete and reinstall apps', content: 'Some apps accumulate large caches. If an app uses far more space than expected (visible in iPhone Storage), delete and reinstall it to clear the cache.' },
-  ] },
-  { slug: 'android-storage-management', title: 'How to Free Up Space on Your Android Phone', excerpt: 'Clear storage space on your Android device without losing photos or important data.', category: 'phone-guides', tags: ['android', 'storage', 'space', 'optimization', 'photos'], readTime: '7 min', thumbnailEmoji: '📱', publishedAt: '2026-04-02', difficulty: 'Beginner', steps: [
-    { title: 'Check storage usage', content: `Settings > Storage. See how much space is used by apps, photos, videos, and system files. Tap each category for details on what's using the most space.` },
-    { title: `Use Google's cleanup tool`, content: 'Settings > Storage > Free Up Space. Or use the Files by Google app (free). It identifies junk files, duplicate photos, large files, and unused apps for easy removal.' },
-    { title: 'Clear app caches', content: `Settings > Apps > select an app > Storage > Clear Cache. Start with browsers, social media, and streaming apps — they cache the most data. This doesn't delete your account or settings.` },
-    { title: 'Back up and remove photos', content: 'Open Google Photos > confirm backup is enabled. Once backed up, tap "Free up space" to remove local copies. Your photos stay in Google Photos and you can re-download them anytime.' },
-    { title: 'Uninstall unused apps', content: `Settings > Apps > sort by size or last used. Uninstall apps you haven't opened in months. Games are often the largest apps. You can always reinstall from the Play Store.` },
-    { title: 'Move apps to SD card', content: 'If your phone has an SD card slot: Settings > Apps > select an app > Storage > Change > SD Card. Not all apps support this, but it helps for games and media-heavy apps.' },
-    { title: 'Clear messaging attachments', content: 'Old photos and videos in messaging apps (WhatsApp, Facebook Messenger) take up significant space. In each app, go to Storage settings to review and delete old media files.' },
-  ] },
-  { slug: 'email-encryption-basics-v2', title: 'Email Encryption: Protecting Your Private Messages', excerpt: 'Understand how email encryption works and when you should use it.', category: 'safety-guides', tags: ['email', 'encryption', 'privacy', 'security', 'communication'], readTime: '6 min', thumbnailEmoji: '🔐', publishedAt: '2026-04-02', difficulty: 'Advanced', videoUrl: 'https://www.youtube.com/embed/tOGF9sRzFIo', steps: [
+      { slug: 'email-encryption-basics-v2', title: 'Email Encryption: Protecting Your Private Messages', excerpt: 'Understand how email encryption works and when you should use it.', category: 'safety-guides', tags: ['email', 'encryption', 'privacy', 'security', 'communication'], readTime: '6 min', thumbnailEmoji: '🔐', publishedAt: '2026-04-02', difficulty: 'Advanced', videoUrl: 'https://www.youtube.com/embed/tOGF9sRzFIo', steps: [
     { title: 'Why encrypt email?', content: 'Regular email is like a postcard — anyone handling it can read it. Encrypted email is like a sealed letter in a locked box. Only the intended recipient has the key. Important for sensitive financial, medical, or legal information.' },
     { title: 'Built-in encryption', content: 'Gmail and Outlook encrypt emails in transit (between servers) automatically. This protects against interception but the email provider (Google/Microsoft) can technically read your messages.' },
     { title: 'End-to-end encrypted email', content: `ProtonMail (proton.me) offers end-to-end encryption — even ProtonMail can't read your emails. Free tier: 1 GB storage, 150 messages/day. Paid: $4.99/month for more features.` },
@@ -11224,16 +10721,7 @@ const coreGuides: Guide[] = [
   ] },
 
   // ── Batch 34: Parenting & Family Tech ───────────────────────────────────────
-  { slug: 'parental-controls-guide-v2', title: 'How to Set Up Parental Controls on Any Device', excerpt: 'Protect children online with screen time limits, content filters, and app restrictions.', category: 'safety-guides', tags: ['parental-controls', 'children', 'safety', 'screen-time', 'family'], readTime: '8 min', thumbnailEmoji: '👨‍👩‍👧', publishedAt: '2026-04-02', difficulty: 'Intermediate', steps: [
-    { title: 'iPhone/iPad: Screen Time', content: 'Settings > Screen Time > Turn on. Set downtime (bedtime schedule), app limits (2 hours of games), content restrictions (block explicit content), and communication limits. Use a different passcode than the device passcode.' },
-    { title: 'Android: Family Link', content: 'Download Google Family Link on your phone. Create a Google account for your child. Link manages screen time, app approvals, location tracking, and content filters remotely from your phone.' },
-    { title: 'Windows: Family Safety', content: `Settings > Accounts > Family. Add your child's Microsoft account. Set screen time limits, content filters, and app restrictions. View activity reports showing websites visited and app usage.` },
-    { title: 'Mac: Screen Time', content: 'System Settings > Screen Time. Set app limits, communication limits, and content restrictions. Enable "Share across devices" so limits apply on iPhone and iPad too.' },
-    { title: 'YouTube: Restricted Mode', content: `Open YouTube > tap your profile > Settings > General > Restricted Mode. This filters out mature content. For young children, use YouTube Kids app instead — it's curated for children.` },
-    { title: 'Router-level controls', content: 'Many routers offer built-in parental controls. OpenDNS FamilyShield (free DNS: 208.67.222.123) blocks adult content for all devices on your network without installing anything.' },
-    { title: 'Have ongoing conversations', content: 'Parental controls are tools, not substitutes for communication. Talk to children about online safety, cyberbullying, and what to do if they encounter something uncomfortable. Build trust alongside boundaries.' },
-  ] },
-  { slug: 'family-tech-setup', title: 'Setting Up Technology for the Whole Family', excerpt: 'Create accounts, share subscriptions, and manage devices for every family member.', category: 'how-to', tags: ['family', 'setup', 'accounts', 'sharing', 'organization'], readTime: '8 min', thumbnailEmoji: '👨‍👩‍👧‍👦', publishedAt: '2026-04-02', difficulty: 'Intermediate', steps: [
+    { slug: 'family-tech-setup', title: 'Setting Up Technology for the Whole Family', excerpt: 'Create accounts, share subscriptions, and manage devices for every family member.', category: 'how-to', tags: ['family', 'setup', 'accounts', 'sharing', 'organization'], readTime: '8 min', thumbnailEmoji: '👨‍👩‍👧‍👦', publishedAt: '2026-04-02', difficulty: 'Intermediate', steps: [
     { title: 'Separate accounts for everyone', content: 'Create individual user accounts on shared computers (Windows: Settings > Accounts > Family. Mac: System Settings > Users & Groups). Each person gets their own files, settings, and privacy.' },
     { title: 'Family sharing for Apple', content: 'Apple Family Sharing lets up to 6 people share App Store purchases, Apple One subscriptions, and iCloud storage. One person pays, everyone benefits. Settings > Your Name > Family Sharing.' },
     { title: 'Google Family Group', content: 'Create a Google Family at families.google.com. Share Google One storage, YouTube Premium, and Google Play purchases. Family Library lets everyone access bought apps and movies.' },
@@ -11309,15 +10797,7 @@ const coreGuides: Guide[] = [
     { title: 'During the interview', content: 'Mute when not speaking in group interviews. Nod and react visually — the interviewer needs visual cues. Speak slightly slower than normal. Pause before answering to avoid talking over someone due to video delay.' },
     { title: 'Have materials ready', content: `Keep your resume open on screen or printed nearby. Have notes with key talking points. Prepare questions to ask. Have the interviewer's name and title handy. A glass of water for your voice.` },
   ] },
-  { slug: 'digital-signatures-guide', title: 'How to Sign Documents Electronically', excerpt: 'Sign contracts, forms, and agreements digitally without printing, signing, and scanning.', category: 'how-to', tags: ['esignature', 'documents', 'business', 'productivity', 'legal'], readTime: '6 min', thumbnailEmoji: '✍️', publishedAt: '2026-04-02', difficulty: 'Beginner', steps: [
-    { title: 'Are electronic signatures legal?', content: `Yes. Electronic signatures are legally binding in the US under the ESIGN Act and in most countries worldwide. They're used for contracts, real estate, employment documents, and more.` },
-    { title: 'Free options', content: 'Adobe Acrobat Reader (free): open a PDF, click "Fill & Sign," draw or type your signature. Apple Preview (Mac): open a PDF, click the signature icon. Google Docs: Insert > Drawing > create a signature.' },
-    { title: 'Dedicated e-signature services', content: 'DocuSign (from $10/month): industry standard, trusted everywhere. HelloSign by Dropbox (free for 3 documents/month). Adobe Sign: integrated with Adobe products.' },
-    { title: 'Sign on your phone', content: 'Most e-signature emails include a link. Open it on your phone, tap to sign, and submit. The Files app on iPhone and the Adobe app on Android can also sign PDFs directly.' },
-    { title: 'Create a reusable signature', content: 'In Adobe Reader, Preview, or DocuSign: create your signature once (draw it or type your name). Save it for future use. One-tap signing for all future documents.' },
-    { title: 'Best practices', content: 'Read the entire document before signing. Keep copies of all signed documents. Use a reputable e-signature platform for important contracts. Your typed name counts as a valid signature in most contexts.' },
-  ] },
-  { slug: 'google-sheets-guide', title: 'Google Sheets for Beginners', excerpt: `Create spreadsheets, track budgets, and organize data with Google's free alternative to Excel.`, category: 'app-guides', tags: ['google-sheets', 'spreadsheet', 'productivity', 'free', 'data'], readTime: '7 min', thumbnailEmoji: '📊', publishedAt: '2026-04-02', difficulty: 'Beginner', steps: [
+    { slug: 'google-sheets-guide', title: 'Google Sheets for Beginners', excerpt: `Create spreadsheets, track budgets, and organize data with Google's free alternative to Excel.`, category: 'app-guides', tags: ['google-sheets', 'spreadsheet', 'productivity', 'free', 'data'], readTime: '7 min', thumbnailEmoji: '📊', publishedAt: '2026-04-02', difficulty: 'Beginner', steps: [
     { title: 'Access Google Sheets', content: 'Go to sheets.google.com and sign in with your Google account. Click + (Blank) to create a new spreadsheet. Or use a template for budgets, schedules, and more.' },
     { title: 'Enter and format data', content: 'Click a cell and type. Press Tab to move right, Enter to move down. Format with the toolbar: bold, colors, number formats (currency, dates, percentages). Select multiple cells by clicking and dragging.' },
     { title: 'Basic formulas', content: '=SUM(A1:A10) adds numbers. =AVERAGE(A1:A10) finds the average. =COUNT(A1:A10) counts entries. =MAX and =MIN find highest and lowest. Always start formulas with = (equals).' },
@@ -11662,15 +11142,7 @@ const coreGuides: Guide[] = [
     { title: 'Physical boundaries', content: 'Charge your phone outside the bedroom. Designate phone-free zones (dinner table, bedroom). Use a physical alarm clock instead of your phone. These small changes make a big difference.' },
     { title: `It's about balance`, content: `Technology isn't the enemy — mindless overconsumption is. Use tools intentionally. Notice when you're scrolling out of boredom vs purpose. The goal is to use tech on your terms.` },
   ] },
-  { slug: 'blue-light-eye-strain', title: 'How to Reduce Eye Strain from Screens', excerpt: 'Protect your eyes during long screen sessions with these simple adjustments.', category: 'health-tech', tags: ['eye-strain', 'blue-light', 'health', 'screens', 'ergonomics'], readTime: '6 min', thumbnailEmoji: '👁️', publishedAt: '2026-04-02', difficulty: 'Beginner', steps: [
-    { title: 'The 20-20-20 rule', content: 'Every 20 minutes, look at something 20 feet away for 20 seconds. This relaxes your eye muscles and reduces strain. Set a timer if needed until it becomes habit.' },
-    { title: 'Enable Night Shift / Night Light', content: 'iPhone: Settings > Display > Night Shift. Android: Settings > Display > Night Light. Windows: Settings > Display > Night Light. Mac: System Settings > Displays > Night Shift. Reduces blue light in the evening.' },
-    { title: 'Adjust screen brightness', content: `Match your screen brightness to your environment. If the screen looks like a light source, it's too bright. If it seems dull, it's too dim. Auto-brightness works well for most people.` },
-    { title: 'Increase text size', content: `If you're squinting, increase text size rather than leaning closer. Every device has text size settings. Larger text means less eye strain and more comfortable reading.` },
-    { title: 'Position your screen correctly', content: `Monitor should be arm's length away (20-26 inches). Top of the screen at or slightly below eye level. Tilt the screen slightly back. This reduces both eye and neck strain.` },
-    { title: 'Dark mode', content: 'Dark mode (light text on dark background) reduces eye strain in low-light conditions. Most apps and operating systems offer dark mode. Try it for evening use.' },
-  ] },
-  { slug: 'digital-detox-guide', title: 'How to Do a Digital Detox', excerpt: 'Take a healthy break from technology to reduce stress and reconnect with the real world.', category: 'how-to', tags: ['digital-detox', 'wellness', 'mental-health', 'habits', 'balance'], readTime: '6 min', thumbnailEmoji: '🌿', publishedAt: '2026-04-02', difficulty: 'Beginner', steps: [
+    { slug: 'digital-detox-guide', title: 'How to Do a Digital Detox', excerpt: 'Take a healthy break from technology to reduce stress and reconnect with the real world.', category: 'how-to', tags: ['digital-detox', 'wellness', 'mental-health', 'habits', 'balance'], readTime: '6 min', thumbnailEmoji: '🌿', publishedAt: '2026-04-02', difficulty: 'Beginner', steps: [
     { title: 'Start small', content: `You don't need to go off-grid for a week. Start with a screen-free evening, a phone-free meal, or a social media-free weekend. Small wins build sustainable habits.` },
     { title: 'Turn off non-essential notifications', content: 'Go through Settings > Notifications and disable everything except calls, texts, and truly important apps. Most notifications are designed to pull you back into an app, not to help you.' },
     { title: 'Remove social media from your home screen', content: 'Move social media apps to a folder on the second page. The extra friction of finding them reduces mindless opening. Some people delete the apps entirely and use the browser version.' },
@@ -11889,45 +11361,7 @@ const coreGuides: Guide[] = [
   // ═══════════════════════════════════════════
   // SMART TV & STREAMING (20 guides)
   // ═══════════════════════════════════════════
-  {
-    slug: 'set-up-roku-streaming-device',
-    title: 'How to Set Up a Roku Streaming Device',
-    excerpt: 'Get your Roku plugged in and streaming your favorite shows in minutes.',
-    category: 'how-to',
-    tags: ['roku', 'streaming', 'smart tv', 'setup', 'beginner'],
-    readTime: '5 min',
-    videoUrl: 'https://www.youtube.com/embed/zIHC68aa5i4',
-    thumbnailEmoji: '📺',
-    publishedAt: '2026-03-01',
-    difficulty: 'Beginner',
-    steps: [
-      { title: 'Plug in your Roku', content: 'Connect the Roku to your TV using the HDMI cable that came in the box. Then plug the power cable into a wall outlet. You should see a small light on the Roku turn on.' },
-      { title: 'Switch your TV to the right input', content: 'Use your TV remote to press the Input or Source button. Choose the HDMI port where you plugged in the Roku (usually HDMI 1 or HDMI 2).', tip: 'Look at the back of your TV to see which HDMI port you used. It will have a number like HDMI 1 or HDMI 2 printed next to it.' },
-      { title: 'Connect to your Wi-Fi', content: 'The Roku will ask you to pick your Wi-Fi network. Select your home network name from the list, then type in your Wi-Fi password using the on-screen keyboard.' },
-      { title: 'Create or sign in to a Roku account', content: 'Follow the on-screen steps to create a free Roku account, or sign in if you already have one. You can do this on your phone or computer if typing on the TV is hard.', tip: 'If you have a smartphone, you can visit roku.com/link on your phone to type more easily.' },
-      { title: 'Start watching', content: 'Once setup is done, you will see the Roku home screen. Use the remote to scroll through apps like Netflix, Hulu, and YouTube. Click on any app to open it and start watching.' },
-    ]
-  },
-  {
-    slug: 'set-up-amazon-fire-tv-stick',
-    title: 'How to Set Up an Amazon Fire TV Stick',
-    excerpt: 'Plug in your Fire TV Stick and start streaming shows, movies, and more.',
-    category: 'how-to',
-    tags: ['fire tv', 'amazon', 'streaming', 'setup', 'beginner'],
-    readTime: '5 min',
-    videoUrl: 'https://www.youtube.com/embed/4vQ4o9t5ND8',
-    thumbnailEmoji: '🔥',
-    publishedAt: '2026-03-02',
-    difficulty: 'Beginner',
-    steps: [
-      { title: 'Plug the Fire TV Stick into your TV', content: 'Insert the Fire TV Stick into an open HDMI port on your TV. Connect the USB power cable to the stick and plug the other end into the wall adapter.' },
-      { title: 'Turn on your TV and switch inputs', content: 'Turn on your TV and press the Input or Source button on your TV remote. Select the HDMI port where you plugged in the Fire TV Stick.' },
-      { title: 'Pair the remote', content: 'The Fire TV Stick will search for its remote. Press and hold the Home button (the house icon) on the Fire TV remote for about 10 seconds until it connects.' },
-      { title: 'Connect to Wi-Fi and sign in', content: 'Choose your Wi-Fi network and enter your password. Then sign in with your Amazon account. If you bought the stick from Amazon, it may already be linked to your account.', tip: 'If you do not have an Amazon account, you can create a free one during setup.' },
-      { title: 'Start streaming', content: 'Once setup is complete, you will see the Fire TV home screen. Browse through apps like Prime Video, Netflix, and Disney+. Use the voice button on the remote to search by saying what you want to watch.' },
-    ]
-  },
-  {
+      {
     slug: 'set-up-google-chromecast',
     title: 'How to Set Up a Google Chromecast',
     excerpt: 'Learn how to set up your Chromecast and send shows from your phone to your TV.',
@@ -11946,26 +11380,7 @@ const coreGuides: Guide[] = [
       { title: 'Control playback from your phone', content: 'Use your phone to pause, play, rewind, or change the volume. Your phone works like a remote control for the Chromecast.' },
     ]
   },
-  {
-    slug: 'set-up-apple-tv',
-    title: 'How to Set Up an Apple TV',
-    excerpt: 'Get your Apple TV connected and ready to stream your favorite content.',
-    category: 'how-to',
-    tags: ['apple tv', 'streaming', 'setup', 'apple', 'beginner'],
-    readTime: '5 min',
-    videoUrl: 'https://www.youtube.com/embed/4vQ4o9t5ND8',
-    thumbnailEmoji: '🍎',
-    publishedAt: '2026-03-04',
-    difficulty: 'Beginner',
-    steps: [
-      { title: 'Connect the Apple TV to your television', content: 'Plug one end of the HDMI cable into the Apple TV box and the other end into an HDMI port on your TV. Then plug the power cord into the Apple TV and into a wall outlet.' },
-      { title: 'Turn on your TV and select the right input', content: 'Turn on your TV and press the Input or Source button on your TV remote. Choose the HDMI port where you connected the Apple TV.' },
-      { title: 'Pair the Siri Remote', content: 'The Apple TV will ask you to pair the remote. Hold the remote close to the Apple TV and press and hold the Back button and the Volume Up button at the same time until it connects.' },
-      { title: 'Use your iPhone for quick setup', content: 'If you have an iPhone, hold it near the Apple TV. A setup prompt will appear on your phone. This will automatically transfer your Wi-Fi password and Apple ID so you do not have to type them in.', tip: 'If you do not have an iPhone, you can still set up manually by selecting your Wi-Fi network and typing your Apple ID and password with the remote.' },
-      { title: 'Start watching', content: 'Once setup is done, you will see the Apple TV home screen with apps like Apple TV+, Netflix, Hulu, and more. Use the touchpad on the Siri Remote to browse and select what you want to watch.' },
-    ]
-  },
-  {
+    {
     slug: 'connect-smart-tv-to-wifi',
     title: 'How to Connect Your Smart TV to Wi-Fi',
     excerpt: 'Get your smart TV online so you can stream shows, movies, and more.',
@@ -12310,47 +11725,7 @@ const coreGuides: Guide[] = [
       { title: 'Arrive and pay', content: 'When you arrive, the ride is over. Payment is automatic — your card is charged. You can tip your driver in the app if you would like.' },
     ]
   },
-  {
-    slug: 'order-food-doordash',
-    title: 'How to Order Food with DoorDash',
-    excerpt: 'Get food from your favorite restaurants delivered right to your door using DoorDash.',
-    category: 'app-guides',
-    tags: ['doordash', 'food delivery', 'restaurant', 'ordering', 'app'],
-    readTime: '5 min',
-    videoUrl: 'https://www.youtube.com/embed/4vQ4o9t5ND8',
-    thumbnailEmoji: '🍔',
-    publishedAt: '2026-03-23',
-    difficulty: 'Beginner',
-    steps: [
-      { title: 'Download the DoorDash app', content: 'Search for "DoorDash" in the App Store (iPhone) or Google Play Store (Android). Download it for free and open it.' },
-      { title: 'Create your account', content: 'Sign up with your email, phone number, and name. Add your home address so DoorDash knows where to deliver your food. Add a payment method like a credit or debit card.' },
-      { title: 'Browse restaurants near you', content: 'DoorDash shows restaurants in your area. You can scroll through them, filter by type of food (pizza, Chinese, Mexican, etc.), or search for a specific restaurant name.' },
-      { title: 'Add items to your cart', content: 'Tap on a restaurant to see its menu. Tap on items you want to order. Customize your items if needed (like "no onions" or "extra cheese"). They will be added to your cart.' },
-      { title: 'Place your order', content: 'Tap the cart icon to review your order. Check the items, delivery fee, and total price. Add a tip for your delivery driver. Then tap "Place Order."', tip: 'Look for restaurants with free delivery or promotions to save money. DoorDash often has deals for new users.' },
-      { title: 'Track your delivery', content: 'After ordering, you can watch your order being prepared and see the driver on a map as they drive to your home. You will get a notification when the food arrives at your door.' },
-    ]
-  },
-  {
-    slug: 'order-groceries-instacart',
-    title: 'How to Order Groceries with Instacart',
-    excerpt: 'Get groceries delivered from your favorite local stores without leaving home.',
-    category: 'app-guides',
-    tags: ['instacart', 'grocery delivery', 'shopping', 'food', 'app'],
-    readTime: '5 min',
-    videoUrl: 'https://www.youtube.com/embed/4vQ4o9t5ND8',
-    thumbnailEmoji: '🛒',
-    publishedAt: '2026-03-24',
-    difficulty: 'Beginner',
-    steps: [
-      { title: 'Download the Instacart app', content: 'Search for "Instacart" in the App Store (iPhone) or Google Play Store (Android). Download it for free and open it.' },
-      { title: 'Set up your account', content: 'Create an account with your email, name, and address. Add a payment method. Instacart will show you stores that deliver to your area, like Costco, Kroger, Safeway, or Walmart.' },
-      { title: 'Choose a store and start shopping', content: 'Tap on a store to start shopping. Browse by category (produce, dairy, snacks, etc.) or use the search bar to find specific items like "milk" or "bread."' },
-      { title: 'Add items to your cart', content: 'Tap the + button next to any item to add it to your cart. You can adjust the quantity or choose a replacement preference in case an item is out of stock.', tip: 'Set replacement preferences for each item so your shopper knows what to do if something is unavailable. You can choose "refund" or pick a specific alternative.' },
-      { title: 'Choose delivery time and place your order', content: 'When you are done shopping, go to your cart. Choose a delivery time — you can pick today, tomorrow, or schedule for later. Review your order, add a tip for the shopper, and tap "Place Order."' },
-      { title: 'Receive your groceries', content: 'Your personal shopper will pick out your items at the store and deliver them to your door. You can chat with them in the app if they have questions about replacements.' },
-    ]
-  },
-  {
+      {
     slug: 'use-amazon-shopping-app',
     title: 'How to Use the Amazon Shopping App',
     excerpt: 'Shop for anything on your phone with the Amazon app — from everyday items to gifts.',
@@ -12636,26 +12011,7 @@ const coreGuides: Guide[] = [
       { title: 'View your history', content: 'Shazam saves every song you identify. Tap the Library or History section to see all the songs you have discovered. It is a great way to build a list of new music to listen to.', tip: 'On iPhone, you can add Shazam to your Control Center for even faster access. Just swipe down and tap the Shazam icon without opening the app.' },
     ]
   },
-  {
-    slug: 'use-google-translate-phone',
-    title: 'How to Use Google Translate on Your Phone',
-    excerpt: 'Translate words, sentences, signs, and even conversations into other languages instantly.',
-    category: 'app-guides',
-    tags: ['google translate', 'translation', 'languages', 'travel', 'app'],
-    readTime: '4 min',
-    videoUrl: 'https://www.youtube.com/embed/4vQ4o9t5ND8',
-    thumbnailEmoji: '🌐',
-    publishedAt: '2026-04-02',
-    difficulty: 'Beginner',
-    steps: [
-      { title: 'Download Google Translate', content: 'Search for "Google Translate" in the App Store or Google Play Store. Download it for free and open it.' },
-      { title: 'Type to translate', content: 'At the top of the screen, choose the language you are translating from (like English) and the language you want to translate to (like Spanish). Then type a word or sentence in the text box. The translation appears instantly.', tip: 'Tap the speaker icon next to any translation to hear how it is pronounced. This is very helpful when traveling.' },
-      { title: 'Use the camera to translate signs and menus', content: 'Tap the camera icon. Point your phone at a sign, menu, or any text. Google Translate will replace the foreign text on your screen with English (or your chosen language) in real time.' },
-      { title: 'Have a conversation', content: 'Tap the Conversation button (two microphones). Choose two languages. Then just talk — Google Translate will listen and translate between both languages automatically, so two people who speak different languages can have a conversation.' },
-      { title: 'Download languages for offline use', content: 'Tap the three-line menu and go to "Offline translation." Download any language so you can translate even without an internet connection. This is perfect for traveling abroad.' },
-    ]
-  },
-  {
+    {
     slug: 'use-duolingo-learn-language',
     title: 'How to Use Duolingo to Learn a Language',
     excerpt: 'Learn a new language for free with fun, bite-sized lessons on Duolingo.',
@@ -13110,28 +12466,8 @@ import { guidesBatch96 } from './guides-batch-96';
 import { guidesBatch97 } from './guides-batch-97';
 import { guidesBatch98 } from './guides-batch-98';
 import { guidesBatch99 } from './guides-batch-99';
-import { guidesBatch100 } from './guides-batch-100';
-import { guidesBatch101 } from './guides-batch-101';
-import { guidesBatch102 } from './guides-batch-102';
-import { guidesBatch103 } from './guides-batch-103';
-import { guidesBatch104 } from './guides-batch-104';
-import { guidesBatch105 } from './guides-batch-105';
-import { guidesBatch106 } from './guides-batch-106';
-import { guidesBatch107 } from './guides-batch-107';
-import { guidesBatch108 } from './guides-batch-108';
-import { guidesBatch109 } from './guides-batch-109';
-import { guidesBatch110 } from './guides-batch-110';
-import { guidesBatch111 } from './guides-batch-111';
-import { guidesBatch112 } from './guides-batch-112';
-import { guidesBatch113 } from './guides-batch-113';
-import { guidesBatch114 } from './guides-batch-114';
-import { guidesBatch115 } from './guides-batch-115';
-import { guidesBatch117 } from './guides-batch-117';
-import { guidesBatch118 } from './guides-batch-118';
-import { guidesBatch119 } from './guides-batch-119';
-import { guidesBatch120 } from './guides-batch-120';
 
-const allGuides: Guide[] = [...coreGuides, ...guidesBatch4, ...guidesBatch5, ...guidesBatch6, ...guidesExpansion, ...guidesSpanish, ...guidesBatch7, ...guidesBatch8, ...guidesBatch9, ...guidesBatch10, ...guidesBatch11, ...guidesBatch12, ...guidesBatch13, ...guidesBatch14, ...guidesBatch15, ...guidesBatch16, ...guidesBatch17, ...guidesBatch18, ...guidesBatch19, ...guidesBatch20, ...guidesBatch21, ...guidesBatch22, ...guidesBatch23, ...guidesBatch24, ...guidesBatch25, ...guidesBatch26, ...guidesBatch27, ...guidesBatch28, ...guidesBatch29, ...guidesBatch30, ...guidesBatch31, ...guidesBatch32, ...guidesBatch33, ...guidesBatch34, ...guidesBatch35, ...guidesBatch36, ...guidesBatch37, ...guidesBatch38, ...guidesBatch39, ...guidesBatch40, ...guidesBatch41, ...guidesBatch42, ...guidesBatch43, ...guidesBatch44, ...guidesBatch45, ...guidesBatch46, ...guidesBatch47, ...guidesBatch48, ...guidesBatch49, ...guidesBatch50, ...guidesBatch51, ...guidesBatch52, ...guidesBatch53, ...guidesBatch54, ...guidesBatch55, ...guidesBatch56, ...guidesBatch57, ...guidesBatch58, ...guidesBatch59, ...guidesBatch60, ...guidesBatch61, ...guidesBatch62, ...guidesBatch63, ...guidesBatch64, ...guidesBatch65, ...guidesBatch66, ...guidesBatch67, ...guidesBatch68, ...guidesBatch69, ...guidesBatch70, ...guidesBatch71, ...guidesBatch72, ...guidesBatch73, ...guidesBatch74, ...guidesBatch75, ...guidesBatch76, ...guidesBatch77, ...guidesBatch78, ...guidesBatch79, ...guidesBatch80, ...guidesBatch81, ...guidesBatch82, ...guidesBatch83, ...guidesBatch84, ...guidesBatch85, ...guidesBatch86, ...guidesBatch87, ...guidesBatch88, ...guidesBatch89, ...guidesBatch90, ...guidesBatch91, ...guidesBatch92, ...guidesBatch93, ...guidesBatch94, ...guidesBatch95, ...guidesBatch96, ...guidesBatch97, ...guidesBatch98, ...guidesBatch99, ...guidesBatch100, ...guidesBatch101, ...guidesBatch102, ...guidesBatch103, ...guidesBatch104, ...guidesBatch105, ...guidesBatch106, ...guidesBatch107, ...guidesBatch108, ...guidesBatch109, ...guidesBatch110, ...guidesBatch111, ...guidesBatch112, ...guidesBatch113, ...guidesBatch114, ...guidesBatch115, ...guidesBatch117, ...guidesBatch118, ...guidesBatch119, ...guidesBatch120];
+const allGuides: Guide[] = [...coreGuides, ...guidesBatch4, ...guidesBatch5, ...guidesBatch6, ...guidesExpansion, ...guidesSpanish, ...guidesBatch7, ...guidesBatch8, ...guidesBatch9, ...guidesBatch10, ...guidesBatch11, ...guidesBatch12, ...guidesBatch13, ...guidesBatch14, ...guidesBatch15, ...guidesBatch16, ...guidesBatch17, ...guidesBatch18, ...guidesBatch19, ...guidesBatch20, ...guidesBatch21, ...guidesBatch22, ...guidesBatch23, ...guidesBatch24, ...guidesBatch25, ...guidesBatch26, ...guidesBatch27, ...guidesBatch28, ...guidesBatch29, ...guidesBatch30, ...guidesBatch31, ...guidesBatch32, ...guidesBatch33, ...guidesBatch34, ...guidesBatch35, ...guidesBatch36, ...guidesBatch37, ...guidesBatch38, ...guidesBatch39, ...guidesBatch40, ...guidesBatch41, ...guidesBatch42, ...guidesBatch43, ...guidesBatch44, ...guidesBatch45, ...guidesBatch46, ...guidesBatch47, ...guidesBatch48, ...guidesBatch49, ...guidesBatch50, ...guidesBatch51, ...guidesBatch52, ...guidesBatch53, ...guidesBatch54, ...guidesBatch55, ...guidesBatch56, ...guidesBatch57, ...guidesBatch58, ...guidesBatch59, ...guidesBatch60, ...guidesBatch61, ...guidesBatch62, ...guidesBatch63, ...guidesBatch64, ...guidesBatch65, ...guidesBatch66, ...guidesBatch67, ...guidesBatch68, ...guidesBatch69, ...guidesBatch70, ...guidesBatch71, ...guidesBatch72, ...guidesBatch73, ...guidesBatch74, ...guidesBatch75, ...guidesBatch76, ...guidesBatch77, ...guidesBatch78, ...guidesBatch79, ...guidesBatch80, ...guidesBatch81, ...guidesBatch82, ...guidesBatch83, ...guidesBatch84, ...guidesBatch85, ...guidesBatch86, ...guidesBatch87, ...guidesBatch88, ...guidesBatch89, ...guidesBatch90, ...guidesBatch91, ...guidesBatch92, ...guidesBatch93, ...guidesBatch94, ...guidesBatch95, ...guidesBatch96, ...guidesBatch97, ...guidesBatch98, ...guidesBatch99];
 
 // Auto-set lastVerifiedAt for guides that don't have it explicitly set
 allGuides.forEach(g => {

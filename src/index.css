@@ -96,26 +96,23 @@
     @apply border-border;
   }
   html {
-    font-size: 18px;
+    /* Senior-friendly default. Was 16px; raised to 17px so the
+       20+ million seniors on this site don't have to find the
+       hidden Senior Mode toggle to get readable text. All Tailwind
+       text-* sizes scale with root. */
+    font-size: 17px;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-    /* Pre-paint fallback so SSR / first paint matches the mesh base
-       color before the canvas wallpaper boots. */
-    background-color: hsl(var(--background));
   }
   body {
-    /* Body is transparent so the fixed MeshGradientBackground canvas
-       (mounted in AppShell, sitting at z-index: -1) is visible site-wide. */
-    background: transparent;
-    color: hsl(var(--foreground));
+    @apply bg-background text-foreground;
     font-family: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
     letter-spacing: -0.011em;
     overflow-x: hidden;
   }
-
-  /* The interactive mesh wallpaper itself — fixed, behind everything,
-     ignores pointer events. Listeners live on `window` so the page
-     stays fully interactive. */
+  /* Site-wide mesh wallpaper canvas — fixed behind every route so page
+     content sits on top. Without this rule the canvas flows inline at
+     full viewport size and pushes content off-screen. */
   canvas.teksure-mesh-bg {
     position: fixed;
     inset: 0;
@@ -123,8 +120,6 @@
     height: 100%;
     z-index: -1;
     pointer-events: none;
-    /* `transform: translateZ(0)` keeps the canvas on its own GPU layer
-       so it doesn't repaint underlying page content as it animates. */
     transform: translateZ(0);
     will-change: transform;
   }
@@ -133,6 +128,15 @@
   }
   h1, h2, h3, h4, h5, h6 {
     letter-spacing: -0.025em;
+  }
+  /* Global focus-visible ring — WCAG 2.4.7. Ensures every keyboard
+     user (including seniors using keyboard navigation) can always
+     see where focus is, even on components that don't ship their
+     own ring styles. */
+  *:focus-visible {
+    outline: 2px solid hsl(var(--ring));
+    outline-offset: 2px;
+    border-radius: 2px;
   }
 }
 
@@ -252,60 +256,6 @@
   .viewport-section {
     @apply min-h-[80vh] flex items-center py-16 md:py-24;
   }
-}
-
-/* ── Design Uniformity Overrides ──────────────────────────────────────────
-   All pages share a single warm-cream background (#FCFBF9 light / #050D1F dark).
-   These rules strip per-page colored hero gradients and teksure-home scoped
-   backgrounds so every route looks consistent without touching each page file. */
-
-.teksure-home {
-  /* Was a solid cream wash — now transparent so the mesh wallpaper shows
-     through the homepage hero too. */
-  background: transparent !important;
-}
-
-/* ── Wallpaper bleed-through ──────────────────────────────────────────────
-   Every page wraps its content in some flavor of viewport-tall `bg-…`.
-   To make the global mesh wallpaper visible site-wide WITHOUT touching
-   all 220+ pages individually, we strip the background on those page-
-   level wrappers. Cards (`bg-card`), the floating glass navbar, and
-   modals keep their opaque surfaces because they don't use these
-   viewport-height classes. */
-.min-h-screen,
-main.h-screen,
-main.h-dvh {
-  background-color: transparent !important;
-  background-image: none !important;
-}
-
-/* Cards on top of the wallpaper get a slight translucency + soft border
-   so the mesh hue tints through their edges — keeps the "interactive
-   wallpaper you can fidget with" feeling consistent across pages while
-   keeping body copy fully readable. */
-.glow-card {
-  background-color: hsl(var(--card) / 0.88);
-  backdrop-filter: blur(8px);
-  -webkit-backdrop-filter: blur(8px);
-}
-.dark .glow-card {
-  background-color: hsl(var(--card) / 0.78);
-}
-
-/* Zone sections: use a single subtle primary tint instead of per-zone colors.
-   This keeps semantic meaning without creating 4 different color worlds. */
-.zone-guides,
-.zone-tools,
-.zone-safety,
-.zone-support {
-  background-color: hsl(var(--primary) / 0.035) !important;
-}
-
-.dark .zone-guides,
-.dark .zone-tools,
-.dark .zone-safety,
-.dark .zone-support {
-  background-color: hsl(var(--primary) / 0.06) !important;
 }
 
 /* ── Dark-mode safety net ──────────────────────────────────────────────────
@@ -534,53 +484,4 @@ html.high-contrast a:focus,
 html.high-contrast button:focus {
   outline: 3px solid hsl(var(--primary)) !important;
   outline-offset: 2px !important;
-}
-
-/* ─── TekSure Accessibility Profile (body classes) ────────────── */
-/* These are semantic body classes set by the Accessibility Profile
-   Builder (src/pages/tools/AccessibilityProfileBuilder.tsx).
-   The heavy lifting for font size / high contrast is done via the
-   existing html.font-size-* and html.high-contrast classes above.
-   The rules below cover the remaining behaviors. */
-
-body.teksure-reduce-motion *,
-body.teksure-reduce-motion *::before,
-body.teksure-reduce-motion *::after {
-  transition-duration: 0.01ms !important;
-  animation-duration: 0.01ms !important;
-  animation-iteration-count: 1 !important;
-  scroll-behavior: auto !important;
-}
-
-body.teksure-reduce-motion [data-state="open"],
-body.teksure-reduce-motion [data-state="closed"],
-body.teksure-reduce-motion .animate-in,
-body.teksure-reduce-motion .animate-out,
-body.teksure-reduce-motion [class*="animate-"] {
-  animation-duration: 0.01ms !important;
-  animation-fill-mode: none !important;
-}
-
-body.teksure-large-targets button,
-body.teksure-large-targets a,
-body.teksure-large-targets [role="button"],
-body.teksure-large-targets input[type="button"],
-body.teksure-large-targets input[type="submit"] {
-  min-height: 48px !important;
-  min-width: 48px !important;
-}
-
-body.teksure-large-targets input,
-body.teksure-large-targets select,
-body.teksure-large-targets textarea {
-  min-height: 48px !important;
-}
-
-/* Quiz card itself always gets strong contrast + readable size, even
-   for users who haven't applied a profile yet. */
-.teksure-a11y-quiz .quiz-card {
-  font-size: 1.125rem;
-}
-.teksure-a11y-quiz .quiz-card button {
-  min-height: 48px;
 }

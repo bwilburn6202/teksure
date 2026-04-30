@@ -377,7 +377,7 @@ const Dashboard = () => {
                   Book a friendly technician for a remote screen-share or an in-home visit.
                 </p>
                 <Button size="sm" className="w-full" asChild>
-                  <Link to="/get-help">Book a technician</Link>
+                  <Link to="/book">Book a technician</Link>
                 </Button>
               </CardContent>
             </Card>
@@ -388,7 +388,7 @@ const Dashboard = () => {
                   <Clock className="h-3 w-3" /> Today's tip
                 </p>
                 <p className="text-sm leading-relaxed">
-                  Lock your screen when you step away — press <kbd className="bg-muted px-1 rounded text-xs">Win + L</kbd> on Windows or <kbd className="bg-muted px-1 rounded text-xs">⌘ + Ctrl + Q</kbd> on Mac.
+                  Lock your screen when you step away — press <kbd className="bg-muted px-1 rounded text-xs">Win + L</kbd> on Windows or <kbd className="bg-muted px-1 rounded text-xs"> + Ctrl + Q</kbd> on Mac.
                 </p>
               </CardContent>
             </Card>

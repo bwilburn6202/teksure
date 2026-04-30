@@ -106,7 +106,7 @@ const differences = [
 const trustStats = [
   { value: `${guideCountRounded.toLocaleString()}+`, label: 'Plain-English guides' },
   { value: '150+', label: 'Friendly tools & wizards' },
-  { value: '10,000+', label: 'People helped so far' },
+  { value: 'Free', label: 'No paywalls on guides or tools' },
 ];
 
 type InvolvementItem = {

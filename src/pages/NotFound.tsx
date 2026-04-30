@@ -92,102 +92,18 @@ const NotFound = () => {
         noindex
       />
       <Navbar />
-      <main
-        id="main-content"
-        className="relative overflow-hidden px-4 py-12 md:py-20"
-        style={{
-          minHeight: '80vh',
-          background:
-            'radial-gradient(1000px 500px at 50% -10%, #F5E2BD 0%, rgba(245,226,189,0) 60%), radial-gradient(800px 400px at 90% 10%, #F8E8CA 0%, rgba(248,232,202,0) 60%), #FAF8F4',
-          color: '#1A1A1A',
-        }}
-      >
-        <div className="max-w-4xl mx-auto">
+      <main id="main-content" className="min-h-[70vh] flex flex-col items-center justify-center px-4 py-16 bg-background">
+        <div className="text-center max-w-lg mx-auto">
 
-          {/* Friendly illustration: compass with amber glow + floating pins */}
-          <div className="flex flex-col items-center mb-8" aria-hidden="true">
-            <div className="relative w-40 h-40 md:w-48 md:h-48">
-              {/* Soft amber glow */}
-              <div
-                className="absolute inset-0 rounded-full blur-2xl opacity-70"
-                style={{ background: 'radial-gradient(circle, #F9B56A 0%, transparent 70%)' }}
-              />
-              {/* Amber disc behind compass */}
-              <div
-                className="absolute inset-2 rounded-full flex items-center justify-center shadow-xl"
-                style={{ background: 'linear-gradient(135deg, #F9B56A 0%, #E68F3A 100%)' }}
-              >
-                <Compass className="h-20 w-20 md:h-24 md:w-24 text-white" strokeWidth={1.5} />
-              </div>
-              {/* Floating navy pin — top right */}
-              <div
-                className="absolute -top-2 -right-2 w-11 h-11 rounded-full bg-white shadow-md flex items-center justify-center border-2"
-                style={{ borderColor: '#2A5FCC' }}
-              >
-                <MapPin className="h-5 w-5" style={{ color: '#2A5FCC' }} strokeWidth={2.5} />
-              </div>
-              {/* Floating sparkle — bottom left */}
-              <div className="absolute -bottom-1 -left-3 w-9 h-9 rounded-full bg-white shadow-md flex items-center justify-center">
-                <Sparkles className="h-4 w-4" style={{ color: '#E68F3A' }} strokeWidth={2.5} />
-              </div>
-            </div>
-          </div>
-
-          {/* Eyebrow + headline + subhead */}
-          <div className="text-center mb-10">
-            <p
-              className="text-xs md:text-sm font-bold uppercase tracking-widest mb-3"
-              style={{ color: '#2A5FCC' }}
-            >
-              Let's get you back on track
-            </p>
-            <h1
-              className="text-4xl md:text-6xl font-extrabold tracking-tight mb-4 leading-tight"
-              style={{ color: '#1A1A1A' }}
-            >
-              Oops, this page took a wrong turn
-            </h1>
-            <p
-              className="text-xl md:text-2xl leading-relaxed max-w-2xl mx-auto"
-              style={{ color: '#444' }}
-            >
-              Don't worry, we'll help you find what you need.
-            </p>
-          </div>
-
-          {/* Big search bar */}
-          <form
-            onSubmit={handleSearch}
-            className="max-w-2xl mx-auto mb-3"
-            role="search"
-            aria-label="Search TekSure"
-          >
-            <label htmlFor="not-found-search" className="sr-only">Search TekSure</label>
-            <div
-              className="flex items-center gap-2 bg-white rounded-2xl shadow-lg p-2 border-2 focus-within:shadow-xl transition-all"
-              style={{ borderColor: '#E4DFD4' }}
-            >
-              <Search className="h-6 w-6 ml-3 flex-shrink-0" style={{ color: '#6B6B6B' }} aria-hidden="true" />
-              <input
-                id="not-found-search"
-                type="search"
-                value={query}
-                onChange={(e) => setQuery(e.target.value)}
-                placeholder="Search guides, tools, tips…"
-                className="flex-1 bg-transparent outline-none text-lg py-3 min-w-0 placeholder:text-gray-400"
-                autoComplete="off"
-              />
-              <button
-                type="submit"
-                className="px-6 py-3 rounded-xl font-bold text-white text-base shadow-md hover:brightness-110 active:brightness-95 transition-all whitespace-nowrap"
-                style={{ background: '#2A5FCC' }}
-              >
-                Search
-              </button>
-            </div>
-          </form>
-          <p className="text-center text-sm mb-14" style={{ color: '#6B6B6B' }}>
-            Try things like <em>"reset password"</em>, <em>"slow wifi"</em>, or <em>"phishing email"</em>.
+          {/* Friendly visual */}
+          <div className="text-8xl mb-4 select-none"></div>
+          <h1 className="text-3xl md:text-4xl font-bold tracking-tight mb-3 text-primary">
+            Hmm, we can't find that page.
+          </h1>
+          <p className="text-muted-foreground mb-8 leading-relaxed max-w-sm mx-auto">
+            The page you were looking for doesn't seem to exist. It may have moved,
+            or the link might have a small typo in it. No worries — let's get you
+            somewhere useful!
           </p>
 
           {/* Four common destinations */}

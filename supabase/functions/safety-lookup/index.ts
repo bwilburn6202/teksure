@@ -113,16 +113,16 @@ async function checkPhishTank(url: string): Promise<SourceResult | null> {
       body: `url=${encodeURIComponent(url)}&format=json`,
       signal: AbortSignal.timeout(5000),
     });
-    if (!resp.ok) return null;
+    if (!resp.ok) return { name: 'PhishTank', verdict: 'unknown', detail: `HTTP ${resp.status}` };
     const data = await resp.json();
     const r = data?.results;
-    if (!r) return null;
+    if (!r) return { name: 'PhishTank', verdict: 'unknown', detail: 'No result data from PhishTank.' };
     if (r.in_database && r.valid) {
       return { name: 'PhishTank', verdict: 'danger', detail: 'Confirmed phishing site.' };
     }
     return { name: 'PhishTank', verdict: 'safe', detail: 'Not in phishing database.' };
-  } catch {
-    return null;
+  } catch (err) {
+    return { name: 'PhishTank', verdict: 'unknown', detail: String(err) };
   }
 }
 

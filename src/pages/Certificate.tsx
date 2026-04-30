@@ -63,7 +63,7 @@ export default function Certificate() {
         path="/certificate"
       />
       <Navbar />
-      <main className="flex-1 container max-w-3xl py-12">
+      <main id="main-content" className="flex-1 container max-w-3xl py-12">
         <div className="border-b border-border pb-10 mb-10">
           <div className="text-center">
             <div className="text-4xl mb-3"></div>
@@ -77,7 +77,7 @@ export default function Certificate() {
             <CardContent>
               <Trophy className="h-12 w-12 mx-auto text-muted-foreground opacity-30 mb-4" />
               <h2 className="text-xl font-semibold mb-2">No certificates yet</h2>
-              <p className="text-muted-foreground mb-6">Complete guides to earn your first certificate. Start with Beginner Basics — only 5 guides to go.</p>
+              <p className="text-muted-foreground mb-6">Complete guides to earn your first certificate. Start with Beginner Basics — just 5 guides to go.</p>
               <Button asChild className="bg-primary text-primary-foreground hover:bg-primary/90 rounded-xl gap-2">
                 <Link to="/my-path"><ArrowRight className="h-4 w-4" /> Start Learning</Link>
               </Button>

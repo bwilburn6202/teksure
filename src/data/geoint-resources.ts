@@ -20,7 +20,7 @@ export const geointCategories: GeointCategory[] = [
   {
     id: 'satellite-imagery',
     name: 'Satellite Imagery Platforms',
-    emoji: '🛰️',
+    emoji: '',
     description: 'View the Earth from space — free and commercial satellite imagery for research, monitoring, and investigation.',
     tools: [
       { name: 'Google Earth Pro', url: 'https://earth.google.com/web/', description: 'Explore satellite imagery, 3D terrain, and Street View from around the world — free for everyone.', pricing: 'free' },
@@ -38,7 +38,7 @@ export const geointCategories: GeointCategory[] = [
   {
     id: 'street-level',
     name: 'Street-Level Imagery',
-    emoji: '🚶',
+    emoji: '',
     description: 'Explore locations at ground level with street-view imagery from around the world.',
     tools: [
       { name: 'Google Street View', url: 'https://www.google.com/streetview/', description: 'The largest street-level imagery collection — explore roads, trails, and landmarks worldwide.', pricing: 'free' },
@@ -52,7 +52,7 @@ export const geointCategories: GeointCategory[] = [
   {
     id: 'flight-tracking',
     name: 'Flight & Aviation Tracking',
-    emoji: '✈️',
+    emoji: '',
     description: 'Track aircraft in real time, view flight histories, and monitor airport activity.',
     tools: [
       { name: 'FlightRadar24', url: 'https://www.flightradar24.com/', description: 'The most popular live flight tracker — see every plane in the sky on a real-time map.', pricing: 'freemium' },
@@ -67,7 +67,7 @@ export const geointCategories: GeointCategory[] = [
   {
     id: 'maritime-tracking',
     name: 'Maritime & Ship Tracking',
-    emoji: '🚢',
+    emoji: '',
     description: 'Track vessels, monitor port activity, and analyze maritime shipping routes in real time.',
     tools: [
       { name: 'MarineTraffic', url: 'https://www.marinetraffic.com/', description: 'The largest ship tracking service — live vessel positions, routes, and port information.', pricing: 'freemium' },
@@ -81,7 +81,7 @@ export const geointCategories: GeointCategory[] = [
   {
     id: 'weather-environment',
     name: 'Weather & Environmental Monitoring',
-    emoji: '🌦️',
+    emoji: '',
     description: 'Real-time weather, natural disaster monitoring, and environmental data for any location.',
     tools: [
       { name: 'Windy', url: 'https://www.windy.com/', description: 'Beautiful animated weather map — wind, rain, temperature, and dozens of other layers.', pricing: 'free' },
@@ -96,7 +96,7 @@ export const geointCategories: GeointCategory[] = [
   {
     id: 'sun-shadow',
     name: 'Shadow & Sun Analysis',
-    emoji: '☀️',
+    emoji: '',
     description: 'Calculate sun positions and shadow angles to verify when and where a photo was taken.',
     tools: [
       { name: 'SunCalc', url: 'https://suncalc.org/', description: 'See sun position, shadow direction, and golden hour times for any location and date.', pricing: 'free' },
@@ -109,7 +109,7 @@ export const geointCategories: GeointCategory[] = [
   {
     id: 'historic-maps',
     name: 'Historic & Archived Maps',
-    emoji: '🗺️',
+    emoji: '',
     description: 'Explore historical maps and see how places looked in past decades and centuries.',
     tools: [
       { name: 'Old Maps Online', url: 'https://www.oldmapsonline.org/', description: 'Browse thousands of historical maps — search by location to see how places looked in the past.', pricing: 'free' },
@@ -123,7 +123,7 @@ export const geointCategories: GeointCategory[] = [
   {
     id: 'terrain-elevation',
     name: 'Terrain & Elevation',
-    emoji: '⛰️',
+    emoji: '',
     description: 'Analyze terrain, elevation profiles, and 3D landscapes for geographic research.',
     tools: [
       { name: 'OpenTopography', url: 'https://opentopography.org/', description: 'Free high-resolution topographic data — elevation models, LiDAR, and terrain analysis.', pricing: 'free' },
@@ -137,7 +137,7 @@ export const geointCategories: GeointCategory[] = [
   {
     id: 'crowdsourced-maps',
     name: 'Crowdsourced & Open Maps',
-    emoji: '🌍',
+    emoji: '',
     description: 'Community-built maps and open geographic data platforms with rich local detail.',
     tools: [
       { name: 'OpenStreetMap', url: 'https://www.openstreetmap.org/', description: 'The Wikipedia of maps — community-built world map with incredible local detail, free and open.', pricing: 'free' },
@@ -151,7 +151,7 @@ export const geointCategories: GeointCategory[] = [
   {
     id: 'webcams-live',
     name: 'Webcams & Live Views',
-    emoji: '📷',
+    emoji: '',
     description: 'Browse live webcam feeds from around the world — traffic cameras, nature cams, and city views.',
     tools: [
       { name: 'Insecam', url: 'https://www.insecam.org/', description: 'Directory of publicly accessible cameras worldwide — browse by country or type.', pricing: 'free' },

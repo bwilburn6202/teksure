@@ -8,7 +8,7 @@ export const guidesBatch28: Guide[] = [
     category: 'phone-guides',
     tags: ['iCloud', 'shared photos', 'family sharing', 'iPhone', 'photos'],
     readTime: '5 min',
-    thumbnailEmoji: '📸',
+    thumbnailEmoji: '',
     publishedAt: '2026-04-19',
     difficulty: 'Beginner',
     body: `iCloud Shared Photo Library is a feature built into iPhone and iPad that lets up to five family members share a single photo collection. When someone adds a photo to the shared library, everyone else in the group can see it immediately in their own Photos app — just like a photo they took themselves.
@@ -55,7 +55,7 @@ Each person still has their own Personal Library for private photos. You can swi
     category: 'entertainment',
     tags: ['Android', 'screen mirror', 'Chromecast', 'cast to TV', 'Samsung Smart View'],
     readTime: '5 min',
-    thumbnailEmoji: '📺',
+    thumbnailEmoji: '',
     publishedAt: '2026-04-19',
     difficulty: 'Beginner',
     body: `Android phones have a built-in feature for mirroring your screen to a TV — no cables required. Depending on your phone brand and your TV setup, it works through Google Cast, Samsung Smart View, Miracast, or a Chromecast device plugged into your TV.
@@ -101,7 +101,7 @@ All devices need to be on the same Wi-Fi network for casting to work. The qualit
     category: 'essential-skills',
     tags: ['HDMI', 'laptop', 'TV', 'connect', 'monitor'],
     readTime: '4 min',
-    thumbnailEmoji: '🔌',
+    thumbnailEmoji: '',
     publishedAt: '2026-04-19',
     difficulty: 'Beginner',
     body: `Connecting a laptop to a TV is one of the most practical tech setups — you get a much larger screen for video calls, family photo slideshows, streaming movies, or doing anything you'd normally do on your laptop. All you need is an HDMI cable.
@@ -147,7 +147,7 @@ HDMI cables come in different lengths — 6-foot cables work for most living roo
     category: 'entertainment',
     tags: ['Skylight', 'digital photo frame', 'family photos', 'gift', 'seniors'],
     readTime: '6 min',
-    thumbnailEmoji: '🖼️',
+    thumbnailEmoji: '',
     publishedAt: '2026-04-19',
     difficulty: 'Beginner',
     body: `A Skylight digital photo frame is a Wi-Fi-connected picture frame that displays photos sent to it by family and friends. It sits on a shelf or desk like any picture frame, but it shows a rotating slideshow of photos that loved ones send from their phones — from anywhere in the world.
@@ -193,7 +193,7 @@ Setup takes about 10-15 minutes. You'll need Wi-Fi name and password, a smartpho
     category: 'communication',
     tags: ['GroupMe', 'group text', 'group chat', 'messaging', 'family'],
     readTime: '5 min',
-    thumbnailEmoji: '💬',
+    thumbnailEmoji: '',
     publishedAt: '2026-04-19',
     difficulty: 'Beginner',
     body: `GroupMe is a free messaging app designed specifically for group conversations. Unlike a standard group text, GroupMe works the same way whether members have iPhones, Android phones, or even just regular phone numbers with no smartphone at all. Everyone receives messages the same way.
@@ -239,7 +239,7 @@ GroupMe also works without the app: people can send and receive messages by regu
     category: 'entertainment',
     tags: ['Teleparty', 'Netflix Party', 'watch together', 'streaming', 'family'],
     readTime: '5 min',
-    thumbnailEmoji: '🍿',
+    thumbnailEmoji: '',
     publishedAt: '2026-04-19',
     difficulty: 'Intermediate',
     body: `Teleparty (previously called Netflix Party) is a free browser extension that lets you watch Netflix, Hulu, Disney+, HBO Max, or Amazon Prime Video at exactly the same time as someone else — even if you're in different cities or states. It syncs playback so everyone pauses and resumes together, and adds a group chat window on the right side of the screen.
@@ -285,7 +285,7 @@ Setup takes about five minutes: install the extension, start a watch party, and 
     category: 'ai-guides',
     tags: ['Perplexity AI', 'AI search', 'research tool', 'artificial intelligence', 'internet'],
     readTime: '5 min',
-    thumbnailEmoji: '🔍',
+    thumbnailEmoji: '',
     publishedAt: '2026-04-19',
     difficulty: 'Beginner',
     body: `Perplexity AI is a search engine powered by artificial intelligence. Instead of showing you a list of blue links, it reads multiple sources and gives you a direct, written answer to your question — along with citations so you can verify the information or read more.
@@ -331,7 +331,7 @@ Each answer includes numbered citations in brackets, like [1] or [2]. Clicking t
     category: 'safety-guides',
     tags: ['AI scam', 'voice clone', 'scam', 'phone scam', 'deepfake audio'],
     readTime: '6 min',
-    thumbnailEmoji: '⚠️',
+    thumbnailEmoji: '',
     publishedAt: '2026-04-19',
     difficulty: 'Beginner',
     body: `A new type of scam is hitting families hard: AI voice cloning. Scammers use free or low-cost AI tools to clone someone's voice from just a few seconds of audio — a video on social media, a voicemail, a YouTube clip — and then call family members using that cloned voice to ask for money.
@@ -377,7 +377,7 @@ You should also always hang up and call back on the family member's real number,
     category: 'essential-skills',
     tags: ['email', 'unsubscribe', 'inbox', 'spam', 'Gmail', 'Outlook'],
     readTime: '5 min',
-    thumbnailEmoji: '📭',
+    thumbnailEmoji: '',
     publishedAt: '2026-04-19',
     difficulty: 'Beginner',
     body: `If your email inbox feels like a flood you can never stop, you're not alone. Most people accumulate dozens of email subscriptions over the years — newsletters, store promotions, app notifications, loyalty program emails — many from things they signed up for once and forgot about.
@@ -423,7 +423,7 @@ The goal isn't to get to zero emails — it's to get to a state where the emails
     category: 'phone-guides',
     tags: ['iPhone', 'photos', 'slideshow', 'Memories', 'family photos'],
     readTime: '5 min',
-    thumbnailEmoji: '🎞️',
+    thumbnailEmoji: '',
     publishedAt: '2026-04-19',
     difficulty: 'Beginner',
     body: `Your iPhone Photos app can turn your photos into beautiful video slideshows automatically — or let you create your own. There are two main ways to create a slideshow: the automatic "Memories" feature and a manual slideshow you can customize and share.
@@ -469,7 +469,7 @@ These features use AI that runs entirely on your phone — Apple doesn't upload 
     category: 'health-tech',
     tags: ['Medicare', 'Part D', 'drug prices', 'prescription', 'Medicare.gov'],
     readTime: '6 min',
-    thumbnailEmoji: '💊',
+    thumbnailEmoji: '',
     publishedAt: '2026-04-19',
     difficulty: 'Beginner',
     body: `Medicare.gov has a free plan finder tool that lets you compare prescription drug costs across all Medicare Part D plans available in your area. This tool can save you hundreds or thousands of dollars per year — but most people don't know it exists or how to use it.
@@ -515,7 +515,7 @@ Pharmacies matter too — the tool asks which pharmacy you use. The same plan mi
     category: 'financial-tech',
     tags: ['Vanguard', 'retirement', '401k', 'IRA', 'investing', 'app'],
     readTime: '5 min',
-    thumbnailEmoji: '📈',
+    thumbnailEmoji: '',
     publishedAt: '2026-04-19',
     difficulty: 'Beginner',
     body: `Vanguard is one of the largest investment companies in the world, managing millions of Americans' retirement accounts — 401(k)s, IRAs, and other investment accounts. If your employer's retirement plan is through Vanguard, or if you have a personal IRA with them, their free mobile app lets you check your account anytime.
@@ -561,7 +561,7 @@ Vanguard's app is separate from your employer's 401(k) portal if your employer u
     category: 'phone-guides',
     tags: ['iPhone', 'Driving Focus', 'distracted driving', 'safety', 'Focus mode'],
     readTime: '4 min',
-    thumbnailEmoji: '🚗',
+    thumbnailEmoji: '',
     publishedAt: '2026-04-19',
     difficulty: 'Beginner',
     body: `Distracted driving is a serious safety issue, and phone notifications are one of the biggest culprits. iPhone has a built-in feature called Driving Focus that automatically silences notifications while you're driving — so your screen doesn't light up with texts, news alerts, and app notifications every few minutes behind the wheel.
@@ -605,7 +605,7 @@ Setting up Driving Focus takes about two minutes. Once configured, it works auto
     category: 'phone-guides',
     tags: ['Android', 'driving mode', 'distracted driving', 'Do Not Disturb', 'Google Assistant'],
     readTime: '4 min',
-    thumbnailEmoji: '🚗',
+    thumbnailEmoji: '',
     publishedAt: '2026-04-19',
     difficulty: 'Beginner',
     body: `Android phones offer several ways to reduce phone distractions while driving. The features available depend on your phone model and Android version, but most modern Android phones have at least two options: Do Not Disturb while driving (which silences notifications automatically when you're in a car) and Google Assistant driving mode (which lets you use voice commands hands-free).
@@ -650,7 +650,7 @@ If you use Android Auto (connecting your phone to your car's screen), that inter
     category: 'safety-guides',
     tags: ['deepfake', 'AI images', 'misinformation', 'scam', 'verification'],
     readTime: '6 min',
-    thumbnailEmoji: '🕵️',
+    thumbnailEmoji: '',
     publishedAt: '2026-04-19',
     difficulty: 'Intermediate',
     body: `AI-generated images and deepfake videos have become much more convincing and much more common. These are photos and videos created or altered by artificial intelligence — showing people, places, and events that either don't exist or never happened. Learning to recognize them is an increasingly important skill.
@@ -698,7 +698,7 @@ The best habit is a brief pause before sharing anything shocking or outrageous: 
     category: 'entertainment',
     tags: ['Apple TV', 'Siri Remote', 'remote control', 'streaming', 'TV'],
     readTime: '5 min',
-    thumbnailEmoji: '📱',
+    thumbnailEmoji: '',
     publishedAt: '2026-04-19',
     difficulty: 'Beginner',
     body: `The Apple TV Siri Remote looks simple — just a slim aluminum rectangle — but it works differently from a traditional TV remote. Instead of pressing directional arrow buttons, you swipe on the top portion of the remote like a touchpad. This surprises many first-time Apple TV users.
@@ -744,7 +744,7 @@ The remote also controls playback: single click the clickpad to pause/play. Clic
     category: 'essential-skills',
     tags: ['Google Photos', 'album', 'photo sharing', 'family photos', 'Android'],
     readTime: '5 min',
-    thumbnailEmoji: '🖼️',
+    thumbnailEmoji: '',
     publishedAt: '2026-04-19',
     difficulty: 'Beginner',
     body: `Google Photos makes it straightforward to organize your photos into albums — custom collections you can name, curate, and share with anyone. This is different from the automatic albums Google Photos creates (like "Best of 2024" or "Trip to Florida") — you build these yourself, exactly the way you want.
@@ -790,7 +790,7 @@ Albums sync across all your devices — create one on your phone and it appears 
     category: 'windows-guides',
     tags: ['Windows 11', 'Focus Sessions', 'productivity', 'Pomodoro', 'Clock app'],
     readTime: '4 min',
-    thumbnailEmoji: '⏱️',
+    thumbnailEmoji: '',
     publishedAt: '2026-04-19',
     difficulty: 'Beginner',
     body: `Windows 11 includes a productivity feature called Focus Sessions, built directly into the Clock app. It's designed to help you concentrate on a task by setting a dedicated work timer — during that time, it can silence notifications, mute your Microsoft Teams status, and integrate with Spotify to play focus music.

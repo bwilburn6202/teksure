@@ -94,7 +94,7 @@ function sitemapPlugin(): Plugin {
       const guideFiles = fs.readdirSync(dataDir).filter((f: string) =>
         (f.startsWith('guides') && f.endsWith('.ts')) || f === 'guides-expansion.ts'
       );
-      const slugRegex = /slug:\s*['"]([^'"]+)['"]/g;
+      const slugRegex = /slug:\s*['"`]([^'"`]+)['"`]/g;
       const slugSet = new Set<string>();
       for (const file of guideFiles) {
         const content = fs.readFileSync(path.resolve(dataDir, file), 'utf-8');

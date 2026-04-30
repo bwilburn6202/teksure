@@ -530,12 +530,12 @@ const TechLifeSimulator = () => {
     <div className="min-h-screen bg-background">
       <SEOHead
         title="Tech Life Simulator — Practice Real-World Scenarios | TekSure"
-        description="Practice identifying scams, safe browsing, and tech decisions in realistic scenarios. Learn by doing — no risk, only learning."
+        description="Practice identifying scams, safe browsing, and tech decisions in realistic scenarios. Learn by doing — no risk, just learning."
         path="/simulator"
       />
       <Navbar />
       
-      <main className="container py-12 md:py-20">
+      <main id="main-content" className="container py-12 md:py-20">
         {activeScenario ? (
           <div className="max-w-2xl mx-auto">
             <Button 

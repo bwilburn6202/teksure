@@ -8,7 +8,7 @@ export const guidesBatch85: Guide[] = [
     category: `app-guides`,
     tags: [`travel`, `itinerary`, `trip planning`, `tripit`, `organization`],
     readTime: `5 min`,
-    thumbnailEmoji: `✈️`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-20`,
     difficulty: `Beginner`,
     body: `TripIt is a travel organizer that takes the chaos out of managing flights, hotels, rental cars, and activities across multiple trips. Instead of hunting through your inbox for booking confirmations, TripIt reads those emails automatically and turns them into a clean, easy-to-follow itinerary that you can access from your phone — even without a Wi-Fi connection.
@@ -53,7 +53,7 @@ TripIt works especially well for trips with multiple stops or bookings spread ac
     category: `app-guides`,
     tags: [`travel`, `flights`, `hotels`, `price comparison`, `kayak`],
     readTime: `5 min`,
-    thumbnailEmoji: `🛶`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-20`,
     difficulty: `Beginner`,
     body: `KAYAK is a travel search engine that checks hundreds of airlines, hotel booking sites, and car rental companies at the same time and shows you the results side by side. Instead of visiting Expedia, then Delta.com, then United.com, then Hotels.com one at a time, KAYAK does all of that searching for you in a matter of seconds.
@@ -98,7 +98,7 @@ KAYAK also includes a "Price Forecast" feature on flight searches that uses hist
     category: `app-guides`,
     tags: [`travel`, `expedia`, `flights`, `hotels`, `vacation packages`],
     readTime: `5 min`,
-    thumbnailEmoji: `🌍`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-20`,
     difficulty: `Beginner`,
     body: `Expedia is one of the largest online travel agencies in the United States. It lets you search for and book flights, hotels, rental cars, cruises, and vacation packages all from a single website or app. One of its biggest advantages is the ability to bundle a flight and hotel together in a "package deal," which can save you money compared to booking each piece separately.
@@ -143,7 +143,7 @@ For domestic travel, Expedia is a strong option because it has negotiated rates 
     category: `app-guides`,
     tags: [`hotels`, `travel`, `rewards`, `hotels.com`, `one key`],
     readTime: `5 min`,
-    thumbnailEmoji: `🏨`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-20`,
     difficulty: `Beginner`,
     body: `Hotels.com is a hotel booking site that offers one of the most straightforward loyalty programs in travel: for every ten nights you book and stay at a hotel through Hotels.com, you earn a free night's stay. The reward is now delivered through the One Key program, which also connects with Expedia and Vrbo under the same account.
@@ -188,7 +188,7 @@ The Hotels.com mobile app is reliable and well-designed. It stores all your book
     category: `app-guides`,
     tags: [`hotels`, `travel`, `booking.com`, `vacation rentals`, `apartments`],
     readTime: `5 min`,
-    thumbnailEmoji: `🏘️`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-20`,
     difficulty: `Beginner`,
     body: `Booking.com is one of the world's largest travel accommodation platforms, listing more than 28 million properties in over 220 countries. While it is best known for hotels, Booking.com also covers apartments, vacation homes, hostels, and bed-and-breakfast properties, making it a versatile option for travelers with different preferences and budgets.
@@ -233,7 +233,7 @@ Most listings on Booking.com allow you to pay at the property rather than at the
     category: `app-guides`,
     tags: [`airbnb`, `hosting`, `vacation rental`, `earn money`, `short-term rental`],
     readTime: `7 min`,
-    thumbnailEmoji: `🏠`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-20`,
     difficulty: `Intermediate`,
     body: `Airbnb is a platform that allows homeowners and renters to list their space — a spare room, a guesthouse, or an entire home — for short-term stays. Hosts set their own prices, choose their availability, and decide what rules guests must follow. Airbnb handles the payment processing and provides a messaging system for communicating with potential guests.
@@ -278,7 +278,7 @@ Airbnb charges hosts a service fee of around 3 percent of each booking's subtota
     category: `app-guides`,
     tags: [`vrbo`, `vacation rental`, `hosting`, `earn money`, `whole home rental`],
     readTime: `6 min`,
-    thumbnailEmoji: `🏡`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-20`,
     difficulty: `Intermediate`,
     body: `VRBO (Vacation Rentals By Owner) is a platform designed specifically for whole-home vacation rentals. Unlike Airbnb, which includes shared rooms and single rooms, VRBO focuses on travelers who want to rent an entire house, cabin, condo, or beach cottage — typically for longer stays like a week or more. This makes VRBO particularly appealing for family vacations or group travel.
@@ -323,7 +323,7 @@ Rental income from VRBO is taxable in the United States. You are generally requi
     category: `app-guides`,
     tags: [`camping`, `glamping`, `outdoor`, `hipcamp`, `nature`],
     readTime: `5 min`,
-    thumbnailEmoji: `⛺`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-20`,
     difficulty: `Beginner`,
     body: `Hipcamp is a camping marketplace that lets you book stays on private land — farms, ranches, vineyards, forests, and nature preserves that open their land to campers. It is a great alternative to crowded state and national park campgrounds, especially during busy summer weekends when public sites book up months in advance.
@@ -368,7 +368,7 @@ Hipcamp requires payment upfront when you book. Cancellation policies vary by ho
     category: `app-guides`,
     tags: [`clear`, `biometrics`, `airport security`, `travel`, `identity verification`],
     readTime: `5 min`,
-    thumbnailEmoji: `👁️`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-20`,
     difficulty: `Beginner`,
     body: `CLEAR is a biometric identity verification service that lets you prove who you are using your fingerprint or iris scan instead of handing over a physical ID. At airports, CLEAR members walk up to a dedicated lane, scan their fingerprint or look into a camera, and a CLEAR ambassador walks them directly to the TSA security screening area — skipping the line where everyone shows their boarding pass and ID.
@@ -413,7 +413,7 @@ CLEAR stores your biometric data securely and does not share it with government 
     category: `app-guides`,
     tags: [`priority pass`, `airport lounge`, `travel`, `credit card benefits`, `airports`],
     readTime: `5 min`,
-    thumbnailEmoji: `🛋️`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-20`,
     difficulty: `Beginner`,
     body: `Priority Pass is a membership program that gives you access to airport lounges around the world, regardless of which airline you are flying or what class of service you purchased. With a Priority Pass membership, you can walk into a participating lounge and enjoy free food, beverages, comfortable seating, Wi-Fi, and a quieter environment than the main terminal.
@@ -458,7 +458,7 @@ Stand-alone Priority Pass memberships (without a credit card) range from around 
     category: `app-guides`,
     tags: [`currency`, `exchange rates`, `travel`, `xe`, `international travel`],
     readTime: `4 min`,
-    thumbnailEmoji: `💱`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-20`,
     difficulty: `Beginner`,
     body: `XE Currency is a free app and website that shows you live exchange rates for more than 180 currencies around the world. Before and during international travel, it helps you understand exactly how much your dollars are worth in another country — so you can make informed decisions about when and where to exchange money, and avoid getting taken advantage of by unfavorable rates.
@@ -503,7 +503,7 @@ The app works offline once you have loaded rate data. This means you can convert
     category: `app-guides`,
     tags: [`wise`, `international transfer`, `send money`, `exchange rates`, `remittance`],
     readTime: `6 min`,
-    thumbnailEmoji: `💸`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-20`,
     difficulty: `Beginner`,
     body: `Wise (formerly known as TransferWise) is an international money transfer service that converts and sends money using the mid-market exchange rate — the same rate you see on Google or XE Currency — and charges a small, transparent fee that is usually much lower than what banks charge for international wire transfers.
@@ -548,7 +548,7 @@ Wise also offers a multi-currency account and a Wise debit card that lets you ho
     category: `app-guides`,
     tags: [`hopper`, `flights`, `price prediction`, `travel`, `deals`],
     readTime: `5 min`,
-    thumbnailEmoji: `🐇`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-20`,
     difficulty: `Beginner`,
     body: `Hopper is a travel app that analyzes flight price history and uses that data to predict whether prices are likely to go up or down in the coming days. Instead of booking a flight the moment you search for it, Hopper recommends the best time to buy — sometimes telling you to book immediately and sometimes suggesting you wait a few more days for a better price.
@@ -593,7 +593,7 @@ Hopper books directly within the app — you complete the entire purchase withou
     category: `app-guides`,
     tags: [`skyscanner`, `flights`, `travel`, `price comparison`, `flexible travel`],
     readTime: `5 min`,
-    thumbnailEmoji: `🔭`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-20`,
     difficulty: `Beginner`,
     body: `Skyscanner is a flight search engine that compares prices from hundreds of airlines and travel booking sites at once. It shows you the results in a single list sorted by price, making it easy to see all your options without visiting multiple websites separately.
@@ -638,7 +638,7 @@ Skyscanner is free to use and does not charge any service fees. The prices you s
     category: `app-guides`,
     tags: [`seatguru`, `flights`, `seat selection`, `travel`, `airlines`],
     readTime: `4 min`,
-    thumbnailEmoji: `🪑`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-20`,
     difficulty: `Beginner`,
     body: `SeatGuru is a free tool that shows you detailed seat maps for airline flights. Before you choose your seat during booking — or before you pay an upgrade fee for what the airline calls a "premium" seat — SeatGuru can tell you which seats are actually worth picking and which ones have problems.
@@ -679,7 +679,7 @@ Keep in mind that airlines occasionally swap aircraft types on a route, which me
     category: `app-guides`,
     tags: [`packing`, `travel`, `packr`, `packing list`, `organization`],
     readTime: `4 min`,
-    thumbnailEmoji: `🧳`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-20`,
     difficulty: `Beginner`,
     body: `Packr is a travel packing app that generates a customized packing checklist based on your destination, trip length, the time of year, and the activities you plan to do. Instead of trying to remember everything from scratch or copying a generic list from the internet, Packr builds a list specific to your trip and lets you check off items as you pack them.
@@ -719,7 +719,7 @@ Packr is available as a free app with basic functionality. A paid version adds w
     category: `app-guides`,
     tags: [`polarsteps`, `travel journal`, `trip tracking`, `photo book`, `memories`],
     readTime: `5 min`,
-    thumbnailEmoji: `🗺️`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-20`,
     difficulty: `Beginner`,
     body: `Polarsteps is a travel tracking app that uses your phone's GPS to automatically record everywhere you go during a trip. You do not need to check in, type notes constantly, or manually log locations. The app runs quietly in the background and builds a map of your journey as you travel.
@@ -763,7 +763,7 @@ Battery life is a common concern with any GPS-tracking app. Polarsteps is design
     category: `app-guides`,
     tags: [`moovit`, `public transit`, `bus`, `subway`, `directions`],
     readTime: `5 min`,
-    thumbnailEmoji: `🚌`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-20`,
     difficulty: `Beginner`,
     body: `Moovit is a public transit navigation app that gives you step-by-step directions for getting around cities using buses, subways, trains, and light rail. It is available in more than 3,500 cities across 112 countries and works particularly well in the United States, Europe, and other regions with established transit networks.
@@ -808,7 +808,7 @@ The app is free to download and use. It does not require any setup beyond allowi
     category: `app-guides`,
     tags: [`flixbus`, `bus travel`, `affordable travel`, `intercity bus`, `budget travel`],
     readTime: `5 min`,
-    thumbnailEmoji: `🚍`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-20`,
     difficulty: `Beginner`,
     body: `FlixBus is a long-distance bus service that connects hundreds of cities across the United States at prices significantly lower than flying — and sometimes even lower than driving when you factor in gas, tolls, and parking. Promotional fares start at $1 for seats booked far in advance, and most tickets fall in the $15 to $50 range for trips of a few hundred miles.
@@ -853,7 +853,7 @@ Luggage is straightforward: one carry-on item and one bag stored under the bus a
     category: `app-guides`,
     tags: [`amtrak`, `train travel`, `rail`, `deals`, `travel tips`],
     readTime: `6 min`,
-    thumbnailEmoji: `🚆`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-20`,
     difficulty: `Beginner`,
     body: `Amtrak is the national passenger rail service in the United States, connecting more than 500 destinations across 46 states. Train travel offers a comfortable alternative to flying — no security lines, no bag fees on most routes, the ability to walk around during the journey, and often spectacular scenery that you cannot see from 35,000 feet.

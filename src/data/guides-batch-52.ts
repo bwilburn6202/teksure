@@ -8,7 +8,7 @@ export const guidesBatch52: Guide[] = [
     category: `phone-guides`,
     tags: [`android`, `ringtone`, `personalization`, `phone settings`, `music`],
     readTime: `6 min`,
-    thumbnailEmoji: `🔔`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-19`,
     difficulty: `Beginner`,
     body: `Your ringtone is the first thing you hear when someone calls, so it makes sense to pick something you actually like. Android phones let you choose a custom ringtone — either a song you already have on your phone, a file you downloaded specifically as a ringtone, or one of the built-in tones that came with your phone.
@@ -57,7 +57,7 @@ Setting a custom ringtone takes about two minutes once you know where to look. T
     category: `phone-guides`,
     tags: [`iphone`, `imessage`, `messages`, `ios 16`, `edit message`, `unsend`],
     readTime: `5 min`,
-    thumbnailEmoji: `✏️`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-19`,
     difficulty: `Beginner`,
     body: `We've all sent a text with a typo or pressed send before we meant to. If you have an iPhone running iOS 16 or later (that's any iPhone that updated after September 2022), Apple gives you two helpful tools: the ability to edit a message after you send it, and the ability to completely unsend a message.
@@ -104,7 +104,7 @@ These features are built right into the Messages app and don't require any extra
     category: `phone-guides`,
     tags: [`iphone`, `imessage`, `messages`, `pin`, `organization`, `ios`],
     readTime: `4 min`,
-    thumbnailEmoji: `📌`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-19`,
     difficulty: `Beginner`,
     body: `If you regularly text certain people — your children, your spouse, your doctor's office — it can get annoying to scroll through a long list of conversations every time you open the Messages app. Apple's pin feature solves this by letting you "stick" up to nine conversations at the very top of your Messages list, where they're always visible the moment you open the app.
@@ -148,7 +148,7 @@ This is one of those small features that makes a surprisingly big difference in 
     category: `app-guides`,
     tags: [`spotify`, `apple music`, `amazon music`, `sleep timer`, `music`, `bedtime`],
     readTime: `5 min`,
-    thumbnailEmoji: `😴`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-19`,
     difficulty: `Beginner`,
     body: `Listening to music or soothing sounds as you fall asleep is a habit many people enjoy. The challenge is remembering to turn it off — or waking up hours later to music still playing and your battery drained. That's exactly why music apps include sleep timers.
@@ -193,7 +193,7 @@ All three methods work on both iPhone and Android phones.`,
     category: `windows-guides`,
     tags: [`windows`, `wifi`, `password`, `network`, `internet`, `windows 11`, `windows 10`],
     readTime: `5 min`,
-    thumbnailEmoji: `🔑`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-19`,
     difficulty: `Beginner`,
     body: `You're connected to your home WiFi, but someone visits and asks for the password — and you can't remember it. Or you got a new tablet and need to enter the WiFi password to connect it. If your Windows computer is already connected to that network, you can look up the password right there on the computer without digging out your router or calling your internet provider.
@@ -236,7 +236,7 @@ On Windows 10: Go to Control Panel → Network and Internet → Network and Shar
     category: `mac-guides`,
     tags: [`mac`, `wifi`, `password`, `macos`, `keychain`, `network`, `internet`],
     readTime: `5 min`,
-    thumbnailEmoji: `🔑`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-19`,
     difficulty: `Beginner`,
     body: `Your Mac remembers the password for every WiFi network you've ever connected to. If you need to share your home WiFi password with a visitor, connect a new device, or just remind yourself what the password is, your Mac can show it to you.
@@ -280,7 +280,7 @@ Your Mac must have connected to the WiFi network at least once for the password 
     category: `phone-guides`,
     tags: [`android`, `wifi`, `password`, `qr code`, `network`, `share wifi`],
     readTime: `5 min`,
-    thumbnailEmoji: `🔑`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-19`,
     difficulty: `Beginner`,
     body: `If you need to share your home WiFi password with a guest or connect a new device, and you can't remember the password, your Android phone can help — as long as you're already connected to that network.
@@ -322,7 +322,7 @@ This guide covers the most common Android approaches. If your phone's screen loo
     category: `mac-guides`,
     tags: [`mac`, `airplay`, `apple tv`, `smart tv`, `screen mirror`, `streaming`, `wireless`],
     readTime: `6 min`,
-    thumbnailEmoji: `📺`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-19`,
     difficulty: `Beginner`,
     body: `AirPlay is Apple's wireless technology for sending video and audio from one Apple device to another — or to a compatible smart TV. With AirPlay, you can stream a movie playing in your Mac's browser, mirror your entire Mac screen onto your TV for a bigger view, or play music from your Mac through speakers connected to an Apple TV.
@@ -366,7 +366,7 @@ There are two modes: **Screen Mirroring**, which shows everything on your Mac sc
     category: `essential-skills`,
     tags: [`firefox`, `web browser`, `privacy`, `internet`, `beginners`, `mozilla`],
     readTime: `7 min`,
-    thumbnailEmoji: `🦊`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-19`,
     difficulty: `Beginner`,
     body: `A web browser is the program you use to visit websites — it's the gateway to everything on the internet. You may already be familiar with Google Chrome or Microsoft Edge. Mozilla Firefox is another excellent option, and millions of people prefer it because it's built around privacy and is not owned by an advertising company.
@@ -417,7 +417,7 @@ Neither browser is perfect. Many people use Firefox as their main browser for ev
     category: `social-media`,
     tags: [`instagram`, `direct messages`, `dm`, `private messages`, `social media`, `photo sharing`],
     readTime: `6 min`,
-    thumbnailEmoji: `💬`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-19`,
     difficulty: `Beginner`,
     body: `Instagram is primarily known as a place to share photos and videos publicly on your profile. But Instagram also has a private messaging feature called Direct Messages — or DMs — that lets you have conversations that only you and the other person (or people) can see.
@@ -468,7 +468,7 @@ This guide assumes you already have an Instagram account. If you don't have one 
     category: `phone-guides`,
     tags: [`alarm clock`, `iphone`, `android`, `clock app`, `alarm`, `tips`, `morning routine`],
     readTime: `6 min`,
-    thumbnailEmoji: `⏰`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-19`,
     difficulty: `Beginner`,
     body: `Your phone is actually a very capable alarm clock — often more flexible than any standalone alarm clock you could buy. But many people only use the most basic features and miss out on tools that could make waking up (and staying on schedule throughout the day) a lot easier.
@@ -524,7 +524,7 @@ Here are some of the most useful alarm clock features built into iPhone and Andr
     category: `health-tech`,
     tags: [`iphone`, `health app`, `sleep`, `alarm`, `bedtime`, `wake up`, `wellness`, `ios`],
     readTime: `6 min`,
-    thumbnailEmoji: `🌙`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-19`,
     difficulty: `Beginner`,
     body: `Getting enough sleep is one of the most important things you can do for your health — and your iPhone has tools specifically designed to help you build better sleep habits.
@@ -574,7 +574,7 @@ The Sleep feature can also connect with Apple Watch to track how long you actual
     category: `phone-guides`,
     tags: [`iphone`, `accessibility`, `seniors`, `large text`, `zoom`, `assistivetouch`, `ios`, `disability`],
     readTime: `8 min`,
-    thumbnailEmoji: `♿`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-19`,
     difficulty: `Beginner`,
     body: `Apple has put a tremendous amount of work into making the iPhone usable for people of all ages and abilities. Many of the features that help people with disabilities also turn out to be very useful for anyone whose eyesight, hearing, or hand dexterity has changed with age.
@@ -633,7 +633,7 @@ None of these settings change what your iPhone can do — they only change how i
     category: `smart-home`,
     tags: [`google assistant`, `android`, `routine`, `automation`, `smart home`, `voice commands`],
     readTime: `6 min`,
-    thumbnailEmoji: `🤖`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-19`,
     difficulty: `Intermediate`,
     body: `Google Assistant is the voice helper built into Android phones. You probably already know you can say "Hey Google, set a timer" or "Hey Google, what's the weather?" — one question, one answer. But Google Assistant can also run a sequence of multiple actions in response to a single command. These are called Routines.
@@ -681,7 +681,7 @@ Setting up routines takes about 5–10 minutes and is done in the Google Home ap
     category: `smart-home`,
     tags: [`amazon echo`, `google home`, `alexa`, `routines`, `smart speaker`, `automation`, `morning routine`],
     readTime: `7 min`,
-    thumbnailEmoji: `🌅`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-19`,
     difficulty: `Beginner`,
     body: `Smart speakers — like Amazon Echo (which uses Alexa) and Google Home or Nest speakers (which use Google Assistant) — become much more powerful when you set up Routines. A Routine lets you say one phrase and have the speaker automatically do a whole list of things.
@@ -729,7 +729,7 @@ Setting up routines is done in the smartphone app that controls your speaker: th
     category: `entertainment`,
     tags: [`amazon fire stick`, `fire tv`, `streaming`, `alexa`, `tips`, `tricks`, `smart tv`],
     readTime: `7 min`,
-    thumbnailEmoji: `🔥`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-19`,
     difficulty: `Beginner`,
     body: `The Amazon Fire TV Stick is a small device that plugs into your TV and lets you stream movies, TV shows, music, and more from services like Netflix, Amazon Prime Video, Hulu, YouTube, and many others. It comes with an Alexa-powered voice remote, which makes it very convenient for quick searches and hands-free control.
@@ -782,7 +782,7 @@ If you've had your Fire Stick for a while, you may have noticed it getting a lit
     category: `phone-guides`,
     tags: [`iphone`, `battery`, `widget`, `home screen`, `accessories`, `ios`, `apple watch`, `airpods`],
     readTime: `5 min`,
-    thumbnailEmoji: `🔋`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-19`,
     difficulty: `Beginner`,
     body: `Widgets are small panels that sit on your iPhone's home screen and show useful information at a glance — without you having to open an app. The Battery widget is one of the most practical: it shows the current battery percentage of your iPhone, and if you have an Apple Watch, AirPods, or another Apple accessory paired with your iPhone, it shows all their battery levels too.
@@ -825,7 +825,7 @@ The Battery widget is available on any iPhone running iOS 14 or later. There are
     category: `safety-guides`,
     tags: [`email`, `spam`, `block`, `gmail`, `apple mail`, `outlook`, `safety`, `inbox`],
     readTime: `6 min`,
-    thumbnailEmoji: `🚫`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-19`,
     difficulty: `Beginner`,
     body: `If someone keeps emailing you with messages you don't want — spam, unwanted sales pitches, or anything suspicious — you don't have to keep deleting them. You can block the sender, which means future emails from that address go straight to your spam or trash folder, and they'll never clutter your inbox again.
@@ -870,7 +870,7 @@ After you block someone, their existing emails are not automatically deleted fro
     category: `smart-home`,
     tags: [`alexa`, `amazon echo`, `spotify`, `apple music`, `amazon music`, `music`, `default`, `settings`],
     readTime: `5 min`,
-    thumbnailEmoji: `🎵`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-19`,
     difficulty: `Beginner`,
     body: `If you tell Alexa to "play some jazz" or "play my favorite playlist," Alexa needs to know which music service to use. If you haven't set a default, Alexa will usually default to Amazon Music — which is great if you use Amazon Music, but frustrating if you prefer Spotify, Apple Music, or another service.
@@ -921,7 +921,7 @@ Linking and setting a default takes about 5 minutes in the Alexa app on your pho
     category: `smart-home`,
     tags: [`google home`, `nest speaker`, `music`, `google assistant`, `voice commands`, `whole home audio`, `spotify`],
     readTime: `6 min`,
-    thumbnailEmoji: `🎶`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-19`,
     difficulty: `Beginner`,
     body: `Google Home and Nest speakers are designed to play music hands-free, through voice commands. Once you've linked a music service, getting music going is as simple as saying "Hey Google, play jazz" or "Hey Google, play my favorites playlist."

@@ -8,7 +8,7 @@ export const guidesBatch29: Guide[] = [
     category: 'phone-guides',
     tags: ['Android', 'battery', 'battery health', 'battery life', 'Samsung', 'Google Pixel'],
     readTime: '5 min',
-    thumbnailEmoji: '🔋',
+    thumbnailEmoji: '',
     publishedAt: '2026-04-19',
     difficulty: 'Beginner',
     body: `Every rechargeable battery gradually loses its ability to hold a charge over time. After a couple of years of daily charging, your Android battery may hold only 80-85% of its original capacity — meaning it runs out faster than it used to. Knowing your battery health helps you decide whether a battery replacement makes sense.
@@ -54,7 +54,7 @@ When the battery degrades significantly, most Android phones can have the batter
     category: 'essential-skills',
     tags: ['slow phone', 'phone performance', 'speed up phone', 'iPhone', 'Android'],
     readTime: '6 min',
-    thumbnailEmoji: '🐢',
+    thumbnailEmoji: '',
     publishedAt: '2026-04-19',
     difficulty: 'Beginner',
     body: `If your phone feels sluggish — apps take forever to open, scrolling stutters, typing lags behind — there are a handful of common causes, and most of them are fixable without buying a new phone.
@@ -100,7 +100,7 @@ The good news: most phone slowdowns are caused by these fixable issues, not hard
     category: 'phone-guides',
     tags: ['iPhone', 'Emergency SOS', 'satellite', 'emergency', 'safety', 'outdoor'],
     readTime: '5 min',
-    thumbnailEmoji: '🛰️',
+    thumbnailEmoji: '',
     publishedAt: '2026-04-19',
     difficulty: 'Beginner',
     body: `Starting with the iPhone 14 (released fall 2022), Apple added Emergency SOS via satellite — the ability to contact emergency services by text even when you have no cellular signal and no Wi-Fi. This works via direct satellite communication. It's a genuine safety feature for hikers, road trip travelers, boaters, and anyone who might find themselves in an emergency in an area without cell coverage.
@@ -144,7 +144,7 @@ Setup requires nothing — the feature is on by default on compatible iPhones. Y
     category: 'health-tech',
     tags: ['Android', 'Medical ID', 'emergency', 'health', 'Samsung', 'safety'],
     readTime: '4 min',
-    thumbnailEmoji: '🏥',
+    thumbnailEmoji: '',
     publishedAt: '2026-04-19',
     difficulty: 'Beginner',
     body: `A Medical ID is critical health information stored on your phone that emergency responders can access without unlocking it. If you're unconscious, injured, or unable to speak, first responders look for a Medical ID to learn about your medical conditions, allergies, medications, blood type, and emergency contacts.
@@ -189,7 +189,7 @@ Setting this up takes less than five minutes and could make a life-saving differ
     category: 'safety-guides',
     tags: ['Alexa', 'privacy', 'voice history', 'Amazon Echo', 'voice recordings'],
     readTime: '5 min',
-    thumbnailEmoji: '🎤',
+    thumbnailEmoji: '',
     publishedAt: '2026-04-19',
     difficulty: 'Beginner',
     body: `Every time you say "Alexa," your Echo device wakes up, records what you say, and sends it to Amazon's servers to process. Amazon saves these recordings. Depending on your settings, Amazon also uses them to improve Alexa's accuracy — meaning they may be reviewed by Amazon employees or contractors.
@@ -236,7 +236,7 @@ Some people choose to mute their Echo devices when they're having private conver
     category: 'safety-guides',
     tags: ['911', 'text 911', 'emergency', 'safety', 'hearing impaired'],
     readTime: '4 min',
-    thumbnailEmoji: '🚨',
+    thumbnailEmoji: '',
     publishedAt: '2026-04-19',
     difficulty: 'Beginner',
     body: `Text-to-911 is available in most of the United States and allows you to send a text message to 911 in an emergency when making a voice call is unsafe or impossible. This is important for people who are deaf or hard of hearing, but also for any situation where speaking aloud would be dangerous — such as during a home intrusion when you don't want an intruder to hear you.
@@ -282,7 +282,7 @@ The FCC recommends calling 911 when possible and texting only when calling is no
     category: 'ai-guides',
     tags: ['ChatGPT', 'voice mode', 'AI', 'conversation', 'OpenAI'],
     readTime: '5 min',
-    thumbnailEmoji: '🗣️',
+    thumbnailEmoji: '',
     publishedAt: '2026-04-19',
     difficulty: 'Beginner',
     body: `ChatGPT's Voice Mode lets you have a full two-way spoken conversation with the AI using your phone. Instead of typing questions and reading text answers, you speak out loud and ChatGPT responds with synthesized speech in a natural, conversational tone. You can interrupt it mid-sentence and it will stop and listen, much like a real conversation.
@@ -328,7 +328,7 @@ One limitation: ChatGPT's Voice Mode does not browse the internet in real time (
     category: 'ai-guides',
     tags: ['AI', 'meal planning', 'ChatGPT', 'cooking', 'recipes', 'grocery list'],
     readTime: '5 min',
-    thumbnailEmoji: '🍽️',
+    thumbnailEmoji: '',
     publishedAt: '2026-04-19',
     difficulty: 'Beginner',
     body: `Planning meals for the week is one of the most practical everyday uses of AI. Give a tool like ChatGPT or Perplexity your dietary preferences, any restrictions (no gluten, low sodium, diabetic-friendly), how many people you're cooking for, and your budget — and it will create a full week of meal ideas with recipes and a grocery list.
@@ -374,7 +374,7 @@ This works with ChatGPT, Perplexity, Claude (Anthropic), or any other AI assista
     category: 'social-media',
     tags: ['senior dating', 'Silver Singles', 'OurTime', 'dating app', 'over 50', 'over 60'],
     readTime: '6 min',
-    thumbnailEmoji: '💕',
+    thumbnailEmoji: '',
     publishedAt: '2026-04-19',
     difficulty: 'Beginner',
     body: `Online dating is now one of the most common ways people over 50 meet romantic partners. The stigma around it has largely faded, and several apps are designed specifically for people in the 50-and-up age group. Here's an honest overview of what's available and what to expect.
@@ -422,7 +422,7 @@ Romance scams targeting older adults on dating apps have increased significantly
     category: 'app-guides',
     tags: ['Starbucks', 'mobile order', 'rewards', 'coffee', 'app'],
     readTime: '4 min',
-    thumbnailEmoji: '☕',
+    thumbnailEmoji: '',
     publishedAt: '2026-04-19',
     difficulty: 'Beginner',
     body: `The Starbucks app is one of the most-used restaurant apps in the country. It lets you order ahead so your drink is ready when you arrive (no waiting in line), pay directly from your phone, and automatically earn Stars toward free drinks and food with every purchase.
@@ -468,7 +468,7 @@ Starbucks frequently runs "Happy Hours" visible in the app — promotional times
     category: 'essential-skills',
     tags: ['DocuSign', 'e-signature', 'digital signature', 'sign documents', 'paperless'],
     readTime: '5 min',
-    thumbnailEmoji: '✍️',
+    thumbnailEmoji: '',
     publishedAt: '2026-04-19',
     difficulty: 'Beginner',
     body: `DocuSign is the most widely used service for signing documents electronically. It's used by real estate agents, insurance companies, banks, employers, landlords, and many other businesses to send contracts and agreements for signature without requiring in-person meetings or printing.
@@ -514,7 +514,7 @@ Beyond DocuSign, similar services include Adobe Sign, HelloSign (now Dropbox Sig
     category: 'essential-skills',
     tags: ['loyalty cards', 'Apple Wallet', 'Google Wallet', 'rewards cards', 'digital wallet'],
     readTime: '4 min',
-    thumbnailEmoji: '💳',
+    thumbnailEmoji: '',
     publishedAt: '2026-04-19',
     difficulty: 'Beginner',
     body: `Most grocery stores, pharmacies, coffee shops, and retailers have loyalty or rewards programs — and most of us carry a pile of plastic cards or key fob tags to use them. Your iPhone or Android phone can store all of these digitally, accessible in seconds at checkout without digging through a wallet.
@@ -560,7 +560,7 @@ Adding cards to your Wallet doesn't replace your physical cards — you can keep
     category: 'phone-guides',
     tags: ['iPhone', 'notifications', 'alerts', 'Focus mode', 'Do Not Disturb'],
     readTime: '5 min',
-    thumbnailEmoji: '🔔',
+    thumbnailEmoji: '',
     publishedAt: '2026-04-19',
     difficulty: 'Beginner',
     body: `The average iPhone user receives dozens of notifications per day from apps competing for attention. Most of these don't require immediate action — news alerts, social media likes, promotional emails, and app updates can all wait. But they interrupt what you're doing and add to mental clutter.
@@ -606,7 +606,7 @@ Going through your notification settings once a month and pruning apps you've gi
     category: 'phone-guides',
     tags: ['Android', 'notifications', 'alerts', 'Do Not Disturb', 'Samsung', 'Google Pixel'],
     readTime: '5 min',
-    thumbnailEmoji: '🔔',
+    thumbnailEmoji: '',
     publishedAt: '2026-04-19',
     difficulty: 'Beginner',
     body: `Android notifications can quickly become overwhelming — news apps, social media, email, games, and dozens of other apps compete for your attention every hour. The solution isn't to tolerate the noise but to take a few minutes and configure your phone to only alert you for things that actually matter.
@@ -652,7 +652,7 @@ Do Not Disturb on Android is more granular than many users realize: you can allo
     category: 'health-tech',
     tags: ['pill dispenser', 'medication management', 'seniors', 'health tech', 'caregiving'],
     readTime: '6 min',
-    thumbnailEmoji: '💊',
+    thumbnailEmoji: '',
     publishedAt: '2026-04-19',
     difficulty: 'Beginner',
     body: `Missing or doubling up on medication is one of the most common and preventable health problems among older adults. Smart pill dispensers automate the sorting and reminding process — they beep or speak at the right time, dispense the correct dose, and some send alerts to family members or caregivers if a dose is skipped.
@@ -702,7 +702,7 @@ The right choice depends on how many medications are involved, how important car
     category: 'financial-tech',
     tags: ['Fetch Rewards', 'grocery savings', 'cash back', 'receipt app', 'savings'],
     readTime: '4 min',
-    thumbnailEmoji: '🛒',
+    thumbnailEmoji: '',
     publishedAt: '2026-04-19',
     difficulty: 'Beginner',
     body: `Fetch Rewards is a free app that pays you points for scanning grocery receipts from almost any store. You earn points on name-brand products you already buy — no coupons to clip, no shopping at specific stores, and no changing your habits required. Points accumulate and can be redeemed for gift cards to Amazon, Target, Walmart, restaurants, and hundreds of other retailers.
@@ -749,7 +749,7 @@ Fetch has over 17 million active users and has paid out over $1 billion in rewar
     category: 'essential-skills',
     tags: ['notary', 'online notary', 'RON', 'document notarization', 'legal documents'],
     readTime: '5 min',
-    thumbnailEmoji: '📄',
+    thumbnailEmoji: '',
     publishedAt: '2026-04-19',
     difficulty: 'Intermediate',
     body: `Notarization — the official witnessing of a signature on a legal document — traditionally required going to a bank, UPS Store, or notary's office in person. That's changed. Remote Online Notarization (RON) is now legal in most US states and lets you get a document notarized via a video call from your home.
@@ -794,7 +794,7 @@ If online notarization isn't available for your document, banks (particularly cr
     category: 'financial-tech',
     tags: ['Ibotta', 'grocery savings', 'cash back', 'coupons', 'rebates'],
     readTime: '4 min',
-    thumbnailEmoji: '💰',
+    thumbnailEmoji: '',
     publishedAt: '2026-04-19',
     difficulty: 'Beginner',
     body: `Ibotta is a free app that gives you cash back on groceries, household products, and other purchases. Unlike traditional coupons, Ibotta sends real money to your account — not store credit. When you accumulate $20, you can transfer it to PayPal, Venmo, or get a gift card.
@@ -840,7 +840,7 @@ A typical family can save $20-50/month on groceries with consistent Ibotta use. 
     category: 'phone-guides',
     tags: ['iPhone', 'location sharing', 'Find My', 'family', 'safety'],
     readTime: '4 min',
-    thumbnailEmoji: '📍',
+    thumbnailEmoji: '',
     publishedAt: '2026-04-19',
     difficulty: 'Beginner',
     body: `Apple's Find My app gives you an easy way to share your live location with specific family members or friends. When you enable location sharing with someone, they can see where you are on a map at any time — and you can see their location too if they share back with you.
@@ -886,7 +886,7 @@ As an alternative, Google Maps has a similar location-sharing feature for Androi
     category: 'phone-guides',
     tags: ['iCloud', 'iPhone storage', 'storage full', 'backup', 'iOS'],
     readTime: '6 min',
-    thumbnailEmoji: '☁️',
+    thumbnailEmoji: '',
     publishedAt: '2026-04-19',
     difficulty: 'Beginner',
     body: `"iPhone storage is almost full" or "iCloud storage is full — your iPhone is no longer backing up" are among the most frustrating messages iPhone users encounter. Understanding the difference between iPhone storage and iCloud storage — and what's filling each up — is the first step to fixing it.

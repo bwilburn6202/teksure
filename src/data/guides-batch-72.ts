@@ -8,7 +8,7 @@ export const guidesBatch72: Guide[] = [
     category: `essential-skills`,
     tags: [`android`, `backup`, `google`, `data protection`, `cloud`],
     readTime: `5 min`,
-    thumbnailEmoji: `☁️`,
+    thumbnailEmoji: ``,
     difficulty: `Beginner`,
     publishedAt: `2026-04-20`,
     body: `Your Android phone is full of things that matter — contacts built over years, text message threads, photos, app settings you took time to configure. If your phone is lost, stolen, broken, or eventually worn out, Google's built-in backup system can save most of it so your next phone feels like your old one almost immediately.
@@ -54,7 +54,7 @@ When you get a new Android phone, sign in to your Google account during setup an
     category: `essential-skills`,
     tags: [`icloud`, `iphone`, `backup`, `data protection`, `apple`],
     readTime: `5 min`,
-    thumbnailEmoji: `☁️`,
+    thumbnailEmoji: ``,
     difficulty: `Beginner`,
     publishedAt: `2026-04-20`,
     body: `Phones get lost, dropped in water, stolen, or eventually wear out. When that happens, the difference between losing years of photos and messages versus having them all back in an hour comes down to one thing: whether your iPhone was backed up. iCloud backup is Apple's answer to this — it runs automatically in the background and requires almost no effort once set up.
@@ -102,7 +102,7 @@ When setting up a new iPhone, you choose "Restore from iCloud Backup" during the
     category: `mac-guides`,
     tags: [`time machine`, `mac`, `backup`, `hard drive`, `data protection`],
     readTime: `5 min`,
-    thumbnailEmoji: `💾`,
+    thumbnailEmoji: ``,
     difficulty: `Beginner`,
     publishedAt: `2026-04-20`,
     body: `Time Machine is Apple's built-in backup system for Mac computers. It works quietly in the background, making copies of everything on your Mac every hour. If you accidentally delete a file, or if your hard drive fails, Time Machine can bring everything back — sometimes down to the exact version of a document you were working on a week ago.
@@ -146,7 +146,7 @@ Quick Tip: leave your external drive plugged in whenever your Mac is at home. Ti
     category: `windows-guides`,
     tags: [`backblaze`, `cloud backup`, `computer backup`, `windows`, `mac`],
     readTime: `5 min`,
-    thumbnailEmoji: `☁️`,
+    thumbnailEmoji: ``,
     difficulty: `Beginner`,
     publishedAt: `2026-04-20`,
     body: `Backblaze is a cloud backup service that copies everything on your Windows PC or Mac to secure servers for about $9 per month (or $99 per year). Unlike Dropbox or OneDrive — which only back up files in their specific folders — Backblaze backs up your entire hard drive automatically, continuously, in the background.
@@ -191,7 +191,7 @@ Compared to alternatives: IDrive backs up multiple devices on one account (good 
     category: `tips-tricks`,
     tags: [`backup`, `cloud`, `local`, `data protection`, `external drive`],
     readTime: `5 min`,
-    thumbnailEmoji: `💾`,
+    thumbnailEmoji: ``,
     difficulty: `Beginner`,
     publishedAt: `2026-04-20`,
     body: `When people talk about backing up their files, they usually mean one of two approaches: local backup (saving a copy to a physical drive in your home) or cloud backup (sending your files to secure servers somewhere on the internet). Both have real advantages, and they protect you from different types of problems. Understanding the difference helps you choose the right combination.
@@ -232,7 +232,7 @@ Quick Tip: even a basic external hard drive kept at a friend's or family member'
     category: `tips-tricks`,
     tags: [`google photos`, `icloud photos`, `photo backup`, `comparison`, `cloud storage`],
     readTime: `5 min`,
-    thumbnailEmoji: `📸`,
+    thumbnailEmoji: ``,
     difficulty: `Beginner`,
     publishedAt: `2026-04-20`,
     body: `Your phone's camera takes dozens or hundreds of photos every month. Those pictures of family gatherings, trips, pets, and everyday moments deserve to be protected. Both Google Photos and iCloud Photos back up your pictures automatically — but they work differently and suit different situations.
@@ -273,7 +273,7 @@ Quick Tip: whichever service you choose, check that backup is actually running. 
     category: `essential-skills`,
     tags: [`contacts`, `backup`, `phone`, `android`, `iPhone`],
     readTime: `4 min`,
-    thumbnailEmoji: `👤`,
+    thumbnailEmoji: ``,
     difficulty: `Beginner`,
     publishedAt: `2026-04-20`,
     body: `Phone contacts represent years of relationships — family members, doctors, neighbors, friends, colleagues, and service providers. If your phone is lost or broken and your contacts were stored only on the device itself, they could be gone for good. The good news is that backing up your contacts takes only a few minutes, and once set up, it happens automatically from that point on.
@@ -317,7 +317,7 @@ One important warning: do not store contacts on your SIM card. SIM cards have ve
     category: `phone-guides`,
     tags: [`iphone`, `restore`, `icloud`, `backup`, `new phone`],
     readTime: `6 min`,
-    thumbnailEmoji: `🔄`,
+    thumbnailEmoji: ``,
     difficulty: `Intermediate`,
     publishedAt: `2026-04-20`,
     body: `Getting a new iPhone, replacing a broken one, or resetting your device back to factory settings all require the same thing: restoring your data from a backup. If you have been backing up to iCloud or to your Mac or PC, the restore process brings back your apps, photos, contacts, messages, and settings so your new phone feels familiar quickly.
@@ -365,7 +365,7 @@ A few things to know after restoring: some authentication apps (like Google Auth
     category: `phone-guides`,
     tags: [`android`, `restore`, `google`, `backup`, `new phone`],
     readTime: `6 min`,
-    thumbnailEmoji: `🔄`,
+    thumbnailEmoji: ``,
     difficulty: `Intermediate`,
     publishedAt: `2026-04-20`,
     body: `When you get a new Android phone or need to reset your current one, your Google account can restore much of what was on your old device. Contacts, apps, settings, and Wi-Fi passwords can all come back automatically — as long as backup was enabled on your previous phone.
@@ -413,7 +413,7 @@ To set up Smart Switch for Samsung-to-Samsung migration: install Smart Switch on
     category: `ai-guides`,
     tags: [`microsoft copilot`, `AI`, `word`, `excel`, `outlook`, `office`],
     readTime: `6 min`,
-    thumbnailEmoji: `🤖`,
+    thumbnailEmoji: ``,
     difficulty: `Intermediate`,
     publishedAt: `2026-04-20`,
     body: `Microsoft 365 Copilot is an AI assistant built directly into Word, Excel, PowerPoint, Outlook, and Teams. Instead of switching to a separate AI tool, Copilot appears inside the apps you already use, ready to help you write, analyze, and organize.
@@ -459,7 +459,7 @@ Your data used by Copilot is subject to Microsoft's enterprise privacy commitmen
     category: `smart-home`,
     tags: [`alexa`, `flash briefing`, `news`, `daily update`, `echo`],
     readTime: `4 min`,
-    thumbnailEmoji: `📰`,
+    thumbnailEmoji: ``,
     difficulty: `Beginner`,
     publishedAt: `2026-04-20`,
     body: `If you start your morning by asking Alexa what the news is, a Flash Briefing is worth setting up. It is a customized audio newscast made up of short clips from the sources you choose — instead of a generic headline, you hear a two-minute update from NPR, then a sports score, then a local weather forecast. The whole thing takes two to five minutes and plays in the order you choose.
@@ -504,7 +504,7 @@ Quick Tip: the difference between Flash Briefing and asking "Alexa, what's in th
     category: `life-transitions`,
     tags: [`grandparents`, `grandchildren`, `family`, `video call`, `connection`],
     readTime: `6 min`,
-    thumbnailEmoji: `👴`,
+    thumbnailEmoji: ``,
     difficulty: `Beginner`,
     publishedAt: `2026-04-20`,
     body: `Distance does not have to mean disconnection. Technology has made it genuinely possible to be a present, engaged grandparent even when grandchildren live hours away. The key is finding the right tools — ones your grandchildren already use and that you find manageable to learn.
@@ -547,7 +547,7 @@ Quick Tip: ask your grandchild to teach you their favorite app. Children love be
     category: `life-transitions`,
     tags: [`grief`, `widowed`, `life transition`, `accounts`, `digital estate`],
     readTime: `6 min`,
-    thumbnailEmoji: `💙`,
+    thumbnailEmoji: ``,
     difficulty: `Beginner`,
     publishedAt: `2026-04-20`,
     body: `Losing a spouse is one of the most difficult experiences in life. In the days and weeks that follow, there are many practical matters to address — and digital accounts and devices are among them. This guide walks through the technology-related tasks gently and in order of urgency, with the understanding that nothing on this list needs to happen immediately.
@@ -597,7 +597,7 @@ Take your time. Grief does not follow a schedule, and most of these accounts wil
     category: `safety-guides`,
     tags: [`deleteme`, `data removal`, `privacy`, `personal data`, `data brokers`],
     readTime: `5 min`,
-    thumbnailEmoji: `🗑️`,
+    thumbnailEmoji: ``,
     difficulty: `Beginner`,
     publishedAt: `2026-04-20`,
     body: `If you have ever searched for your own name online, you have probably found it on sites like Spokeo, Whitepages, BeenVerified, or Intelius. These are called data broker sites. They collect public records, social media data, and other information to create profiles that include your home address, phone number, age, relatives' names, and sometimes income estimates. Anyone can look you up for a few dollars — or sometimes for free.
@@ -640,7 +640,7 @@ Alternatives include Kanary and Privacy Bee, which offer similar services. For t
     category: `safety-guides`,
     tags: [`duckduckgo`, `privacy`, `search engine`, `tracking`, `google alternative`],
     readTime: `5 min`,
-    thumbnailEmoji: `🦆`,
+    thumbnailEmoji: ``,
     difficulty: `Beginner`,
     publishedAt: `2026-04-20`,
     body: `Every time you search on Google, your query is logged, linked to your account (if you are signed in), and used to build an advertising profile of your interests and habits. If you searched for a new car last Tuesday, you may notice car ads appearing across many websites for weeks afterward. Google uses your search history to target you with ads — that is how they make money.
@@ -685,7 +685,7 @@ What DuckDuckGo does not change: your internet provider can still see the websit
     category: `app-guides`,
     tags: [`language learning`, `seniors`, `spanish`, `apps`, `education`],
     readTime: `6 min`,
-    thumbnailEmoji: `🌍`,
+    thumbnailEmoji: ``,
     difficulty: `Beginner`,
     publishedAt: `2026-04-20`,
     body: `Research consistently shows that learning a new language is one of the most powerful brain exercises available at any age. It builds new neural pathways, strengthens memory, and has been associated with delaying the onset of cognitive decline. Beyond the brain health benefits, a new language opens the door to conversations with more people, richer travel experiences, and the genuine pleasure of understanding another culture's films, music, and stories.
@@ -731,7 +731,7 @@ Consistency matters far more than session length. Fifteen to twenty minutes ever
     category: `safety-guides`,
     tags: [`lifelock`, `identity theft`, `identity protection`, `monitoring`, `credit`],
     readTime: `5 min`,
-    thumbnailEmoji: `🛡️`,
+    thumbnailEmoji: ``,
     difficulty: `Beginner`,
     publishedAt: `2026-04-20`,
     body: `Identity theft can happen when someone uses your personal information — Social Security number, date of birth, credit card numbers — to open accounts, take out loans, or commit fraud in your name. The damage can take months or years to fully resolve, affecting your credit score and your finances in the process.
@@ -775,7 +775,7 @@ Whether LifeLock is worth the cost depends on your situation. If you have alread
     category: `essential-skills`,
     tags: [`incognito`, `private browsing`, `privacy`, `browser`, `cookies`],
     readTime: `5 min`,
-    thumbnailEmoji: `🕵️`,
+    thumbnailEmoji: ``,
     difficulty: `Beginner`,
     publishedAt: `2026-04-20`,
     body: `Every major web browser has a private browsing mode. In Chrome it is called Incognito. In Firefox it is Private Window. In Safari it is Private Browsing. In Edge it is InPrivate. The name varies, but the behavior is similar — and the misunderstanding about what it does is nearly universal.
@@ -819,7 +819,7 @@ For actual privacy from websites and your internet provider, the tools that make
     category: `smart-home`,
     tags: [`smart home`, `security`, `IoT`, `home network`, `router`],
     readTime: `6 min`,
-    thumbnailEmoji: `🔒`,
+    thumbnailEmoji: ``,
     difficulty: `Intermediate`,
     publishedAt: `2026-04-20`,
     body: `Smart home devices — cameras, doorbells, smart speakers, thermostats, smart locks, and even smart light bulbs — connect to the internet and can provide genuine convenience. But each connected device is also a potential entry point for attackers if not properly secured. There have been documented cases of strangers accessing home security cameras, of compromised devices being used to attack other equipment on the same network, and of smart locks with weak passwords being bypassed remotely.
@@ -869,7 +869,7 @@ Once per year, open your router app and look at the connected device list. Remov
     category: `smart-home`,
     tags: [`universal remote`, `tv`, `remote control`, `home theater`, `logitech harmony`],
     readTime: `5 min`,
-    thumbnailEmoji: `📺`,
+    thumbnailEmoji: ``,
     difficulty: `Beginner`,
     publishedAt: `2026-04-20`,
     body: `If your coffee table holds three, four, or five different remotes — one for the TV, one for the cable box, one for the Roku or Fire Stick, one for the soundbar, and possibly one for the DVD player — a universal remote can replace all of them with a single device you learn once and use everywhere.

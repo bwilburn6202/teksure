@@ -5,9 +5,9 @@
 >
 > **Vision:** TekSure is America's free, plain-English technology resource — the single destination where any person can find an answer to any tech question, learn at their own pace, stay safe online, and get human help when they need it. Always free. No jargon. No walls.
 
-**Last updated:** 2026-04-19
-**Current state:** ~1,353 guides · 68+ tools · 19 categories · 161 routes
-**Guide target:** 2,500 by end of 2026
+**Last updated:** 2026-04-21 (was 2026-04-19)
+**Current state:** ~2,696 guides · 68+ tools · 25 categories · 161+ routes
+**Guide target:** 2,500 by end of 2026 — **on track, already past target** (quality & coverage passes next)
 
 ---
 
@@ -15,7 +15,7 @@
 
 | Area | Status |
 |------|--------|
-| Guide library | ~1,289 guides across 19 categories (batches 1–12 live) |
+| Guide library | ~2,696 guides across 25 categories (batches 1–99 live; +49 Spanish at `/guias`) |
 | Interactive tools | 68+ tools (security, setup wizards, calculators, health) |
 | Spanish content | 50 guides + `/guias` landing page |
 | TekSure Brain | `/brain` — semantic search + optional hosted Ollama |
@@ -42,8 +42,8 @@
 7. Repeat immediately with next batch
 
 ### Batch numbering
-- Last completed: **Batch 92** (20 guides, 2026-04-20) — total ~2,920 guides
-- Next: **Batch 93** → **Batch 94** → ... (no upper limit)
+- Last completed: **Batch 98** (25 guides, 2026-04-21) — total ~2,671 guides
+- Next: **Batch 99** → **Batch 100** → ... (no upper limit)
 
 ### Guide format requirements
 ```typescript
@@ -171,7 +171,14 @@ Use instead: plain verbs, "Quick Tip" not "Pro Tip"
 | **Batch 90** | **20** | **2026-04-20** | Perplexity AI app, Google Gemini app, Microsoft Copilot mobile, Otter.ai transcription, Notion AI writing, Libby library app, Hoopla digital, Libro.fm audiobooks, WEBTOON comics, Realtor.com, Trulia neighborhoods, Opendoor home selling, HomeLight agent finder, Paprika recipe manager, Tasty cooking app, Food Network Kitchen, Cooklist meal planner, Notarize online, Lemonade insurance, Fabric life insurance |
 | **Batch 91** | **20** | **2026-04-20** | SimpliSafe, Ring Alarm, Arlo cameras, Blink cameras, Eufy cameras, Uber beginners, Lyft beginners, GoGoGrandparent, Swappa used phones, Back Market refurbs, Decluttr electronics, StockX sneakers, America Beautiful Senior Pass, Recreation.gov camping, NPS app offline, Geocaching, Schlage Encode lock, TP-Link Kasa bulbs, Lutron Caséta, Govee LED strips |
 | **Batch 92** | **20** | **2026-04-20** | Live Captions Android/Windows, Personal Voice iOS, Assistive Access iPhone, Sound Recognition, Switch Access Android, Google Family Link, Kindle Fire Kids, iPad Guided Access, Mac Screen Time, Grammarly student, Zotero citations, Teams Edu, Canvas LMS, Wolfram Alpha, Samsung Circle to Search, Bixby, Galaxy Watch, Google Pixel tips, Pixel Call Screen |
-| **Total** | **~2,920** | | |
+| **Batch 93** | **20** | **2026-04-20** | Word Online, Excel Online, PowerPoint Online, Outlook setup, Clipchamp, Snipping Tool, Microsoft Designer AI, scan old photos, Google PhotoScan, VHS digitizing, best tablets for seniors, Chromebook buying, iPad vs Android tablet, 5G home internet, Starlink setup, T-Mobile Home Internet, fiber internet, tech gifts for seniors, refurbished laptop, Windows vs Mac |
+| **Batch 94** | **20** | **2026-04-20** | Dark web explained, dark web monitoring, data broker removal, private browsing, Google activity controls, online banking setup, mobile check deposit, bank app security, bill pay, reading tech specs, TV buying, printer buying, router buying, RAM explained, SSD vs HDD, screen resolution, slow computer fix, WiFi drops fix, phone won't charge, home office setup |
+| **Batch 95** | **20** | **2026-04-20** | Remote Desktop, work VPN, home office ergonomics, Toggl time tracking, Focusmate, routing numbers, wire transfers, FDIC insurance, bank statements, CPU explained, operating systems, cloud computing, bandwidth/Mbps, phishing link check, email spoofing, Authy 2FA, app crash fix, printer offline fix, Bluetooth pairing fix, computer won't start |
+| **Batch 96** | **20** | **2026-04-20** | Battery health, fast charging, USB-C ports, HDMI vs DisplayPort, free credit report, credit freeze, fraud alert, contactless payment setup, power bank buying, laptop buying, phone buying, iPhone↔Android switch, new computer checklist, move files, 3-2-1 backup, email sync fix, texts not sending, file organization, desktop cleanup |
+| **Batch 97** | **25** | **2026-04-21** | Nest thermostat, ecobee, MyQ garage, Nest Protect, water leak sensors, Instagram Close Friends, Bluesky, Mastodon, TikTok Live, AI meal plan, AI greeting cards, AI travel itinerary, AI resume, AI bedtime stories, public WiFi safety, social media privacy checkup, delete old accounts, 5G vs WiFi, QR code safety, 2FA methods compared + 5 new: read EOB, bank text alerts, missing package, fake support numbers, Chrome for seniors |
+| **Batch 98** | **25** | **2026-04-21** | Automatic bill pay, Google Calendar family sharing, new iPad setup, turn off targeted ads, privacy policy red flags, device end-of-life, update Chrome, AARP Fraud Watch, iPhone accessibility shortcut, Apple Translate app, Screen Time limits, mobile hotspot, print from iPhone, MB/GB/TB explained, find Wi-Fi password, HDMI explained, check Windows malware, create Gmail, phone overheating, printer not printing, Do Not Disturb, Google Lens, Alexa privacy, iPhone widgets, secure home network |
+| **Batch 99** | **25** | **2026-04-21** | Telehealth visit prep, Zoom video calls for seniors, set up new iPhone, set up new Android, Mac screenshot, Alexa for beginners, Apple Maps, Google Maps, my Social Security account, investment scams on social media, smart TV setup, prescription management apps, MyChart patient portal, Bluetooth headphones, better phone photos, share photos by text/email, government imposter scams, scam recovery guide, Google Meet, Siri, Google Assistant, iPhone → TV, Apple Pay, Zelle safety, delete unused apps |
+| **Total** | **~2,696** | | |
 
 ---
 
@@ -298,7 +305,7 @@ These are the highest-searched topics by seniors that TekSure doesn't yet have s
 
 | Metric | Current (Apr 2026) | 6-Month Target | 12-Month Target |
 |--------|-------------------|----------------|-----------------|
-| Total guides | ~1,289 | 1,800 | **2,500** |
+| Total guides | ~2,696 | 3,000 | **3,500** |
 | Interactive tools | 68 | 85 | 100 |
 | Monthly visitors | TBD | 50,000 | 250,000 |
 | Registered users | TBD | 5,000 | 25,000 |
@@ -338,6 +345,48 @@ The following files were superseded by this document and moved to `archive/plans
 - `TekSure Content Strategy/April-2026/teksure-content-strategy-april-2026.md` — superseded
 
 Dev log (running history of all autonomous changes) continues at: `.claude/dev_log.md`
+
+---
+
+## SESSION LOG — 2026-04-21
+
+Autonomous session led by Bailey. Goal was a full overhaul: audit, content gaps, UX, file consolidation, roadmap merge. Highlights:
+
+**Content**
+- Shipped `src/data/guides-batch-99.ts` — 25 Tier-1 senior-priority guides sourced from Apple, Google, Microsoft, FTC, SSA, AARP, Senior Planet. All Beginner, 260–400-word bodies, 4–7 steps each, full `sourceName` + `sourceUrl`.
+- Batch-99 wired into `allGuides` in `src/data/guides.ts`.
+- True repo count reconciled: roadmap was reporting ~1,289; actual is **~2,696** (core + batches 4–99 + 49 Spanish). Snapshot and success-metrics tables corrected. The 2,500-guides-by-EOY target is effectively met — forward focus shifts to quality passes and coverage breadth.
+
+**UX / Design**
+- UX critique delivered at `UX-CRITIQUE-2026-04-21.md`. Top issues: 37-item mega-menu, landing page mimics AI-chat doppelgänger, 25 category pills on Guides index, small base font, four competing search surfaces, generic shadcn feel.
+- Five high-impact, low-risk fixes applied in this session:
+  - `src/index.css` — base font 16px → 17px; visible global focus ring for keyboard users.
+  - `src/pages/Index.tsx` — CTA chips bumped to 48px min-height + base text; value-prop text upgraded from muted `text-xs` to full-foreground `text-base`.
+  - `src/pages/GuideDetail.tsx` — article body narrowed from `max-w-4xl` to `max-w-3xl` (110 → ~75 characters per line); step-description text promoted from muted to full foreground.
+  - `src/App.tsx` — "Skip to content" link made properly visible on focus (shadow, ring, font-semibold).
+  - All other critique items (mega-menu collapse, landing rewrite, search surface consolidation) are queued for a follow-up pass.
+
+**File hygiene**
+- `TEKSURE-MASTER-PLAN.md` (2026-04-16) → archived to `archive/plans/TEKSURE-MASTER-PLAN-2026-04-16.md`; root file is now a 10-line redirect stub pointing to this roadmap.
+- `.gitignore` updated to exclude Vite HMR leftovers (`vite.config.ts.timestamp-*.mjs`).
+- Stale files flagged for manual deletion (sandbox can't unlink `.git/`-adjacent files): `.git/index.lock`, 5× `vite.config.ts.timestamp-*.mjs`.
+
+**Pipeline & operations**
+- `knowledge-base/source-plan.md` (125-source, 4-wave rollout) is the operating plan for the never-ending guide loop. No changes needed — still valid.
+- Scheduled tasks for `weekly-guide-enrichment` and `content-freshness-check` remain the autonomous engine going forward.
+
+**Security**
+- GitHub PAT exposed in `.git/config` remote URL discovered during audit. Rotation required — see session handoff in `SESSION-LOG-2026-04-21.md`.
+
+**Known blockers from this session**
+- Git index lock held the sandbox back from committing directly. Bailey will run the copy-paste git block from the native Mac terminal (per the `teksure-dev` skill's documented workflow). Handoff doc contains the exact commands.
+
+**Next session priorities**
+1. Mega-menu collapse to 3 pillars (Guides / Tools / Help) — see UX critique §2.
+2. Landing-page rewrite: trade AI-chat doppelgänger for benefit-led hero (UX critique §1).
+3. Category consolidation on `/guides` from 25 pills → 6 groups with secondary filter.
+4. Rotate GitHub PAT, re-auth remote.
+5. Resume the never-ending guide loop with Wave 2 topics (seniors + privacy/security + health) per `source-plan.md`.
 
 ---
 

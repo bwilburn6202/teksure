@@ -6,7 +6,7 @@ import {
   LogIn, GraduationCap, LayoutDashboard, KeyRound, Wifi, Laptop,
   HardDrive, Smartphone, Languages, Keyboard, AlertCircle, Eye,
   Activity, Bluetooth, Trash2, Sliders, KeySquare, Brain, Flag,
-  Package, BarChart2, Users, Gift, Smile, Award, Bell,
+  Package, BarChart2, Users, Smile, Award, Bell,
 } from 'lucide-react';
 import { Card, CardContent } from '@/components/ui/card';
 import { Navbar } from '@/components/layout/Navbar';
@@ -34,7 +34,7 @@ const sections: Section[] = [
     icon: HelpCircle,
     links: [
       { to: '/get-help', label: 'Get Help', icon: HelpCircle },
-      { to: '/get-help', label: 'Book a Technician', icon: Calendar },
+      { to: '/book', label: 'Book a Technician', icon: Calendar },
       { to: '/ai-tutor', label: 'Talk to AI Tutor', icon: Bot },
       { to: '/my-requests', label: 'My Requests', icon: MessageSquare },
     ],
@@ -64,7 +64,7 @@ const sections: Section[] = [
       { to: '/tools/wifi-speed', label: 'WiFi Speed Test', icon: Wifi },
       { to: '/tools/password-strength', label: 'Password Checker', icon: KeyRound },
       { to: '/tools/password-manager', label: 'Password Manager Guide', icon: Lock },
-      { to: '/tools/phishing-scanner', label: 'Phishing Scanner', icon: ShieldAlert },
+      { to: '/tools/url-safety-checker', label: 'URL Safety Checker', icon: ShieldAlert },
       { to: '/tools/backup-wizard', label: 'Backup Wizard', icon: HardDrive },
       { to: '/tools/troubleshooter', label: 'Interactive Troubleshooter', icon: HelpCircle },
       { to: '/tools/device-chooser', label: 'Device Chooser Quiz', icon: Laptop },
@@ -77,7 +77,7 @@ const sections: Section[] = [
       { to: '/tools/email-declutter', label: 'Email Declutter', icon: Mail },
       { to: '/tools/email-templates', label: 'Email Templates', icon: Mail },
       { to: '/tools/error-decoder', label: 'Error Decoder', icon: AlertCircle },
-      { to: '/tools/jargon-translator', label: 'Jargon Translator', icon: Languages },
+      { to: '/tools/tech-jargon-translator', label: 'Tech Jargon Translator', icon: Languages },
       { to: '/tools/keyboard-shortcuts', label: 'Keyboard Shortcuts', icon: Keyboard },
       { to: '/tools/quick-reference', label: 'Quick Reference Cards', icon: CreditCard },
       { to: '/tools/health-check', label: 'Tech Health Check', icon: Activity },
@@ -95,7 +95,7 @@ const sections: Section[] = [
       { to: '/tools/streaming-calculator', label: 'Streaming Cost Calculator', icon: CreditCard },
       { to: '/tools/data-breach-checker', label: 'Data Breach Checker', icon: ShieldCheck },
       { to: '/tools/new-phone-setup', label: 'New Phone Setup Wizard', icon: Smartphone },
-      { to: '/tools/subscription-tracker', label: 'Subscription Tracker', icon: CreditCard },
+      { to: '/tools/subscription-auditor', label: 'Subscription Auditor', icon: CreditCard },
       { to: '/tools/internet-speed-advisor', label: 'Internet Speed Advisor', icon: Wifi },
       { to: '/tools/digital-cleanup', label: 'Digital Cleanup Wizard', icon: Trash2 },
       { to: '/tools/device-setup-checklist', label: 'Device Setup Checklist', icon: Laptop },
@@ -111,7 +111,6 @@ const sections: Section[] = [
     icon: ShieldAlert,
     links: [
       { to: '/safety/scam-alerts', label: 'Scam Alerts', icon: ShieldAlert },
-      { to: '/tools/phishing-scanner', label: 'Phishing Scanner', icon: ShieldCheck },
       { to: '/tools/cyber-scorecard', label: 'Cyber Scorecard', icon: Lock },
       { to: '/tools/cyber-toolkit', label: 'Cyber Toolkit', icon: ShieldCheck },
       { to: '/cybersec', label: 'CyberSec Hub', icon: ShieldAlert },
@@ -162,7 +161,6 @@ const sections: Section[] = [
       { to: '/favorites', label: 'Favorites', icon: Heart },
       { to: '/notifications', label: 'Notifications', icon: Bell },
       { to: '/certificate', label: 'Certificates', icon: Award },
-      { to: '/gift', label: 'Gift a Subscription', icon: Gift },
     ],
   },
 ];
@@ -174,11 +172,12 @@ export default function Explore() {
     <div className="min-h-screen bg-background">
       <SEOHead
         title="Explore Everything on TekSure"
-        description="Find every page, tool, and guide on TekSure. A complete sitemap designed for plain-English browsing."
+        description="Find every page, tool, and guide on TekSure. A complete sitemap designed for easy browsing."
         path="/explore"
       />
       <Navbar />
 
+      <main id="main-content" tabIndex={-1} className="outline-none">
       {/* Header */}
       <section className="border-b">
         <div className="container py-12 md:py-16">
@@ -256,6 +255,7 @@ export default function Explore() {
           </Link>
         </div>
       </section>
+      </main>
 
       <Footer />
     </div>

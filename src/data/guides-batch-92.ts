@@ -8,7 +8,7 @@ export const guidesBatch92: Guide[] = [
     category: `phone-guides`,
     tags: [`live captions`, `accessibility`, `subtitles`, `hearing`, `Android`],
     readTime: `5 min`,
-    thumbnailEmoji: `📝`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-20`,
     difficulty: `Beginner`,
     body: `Live Captions is a built-in Android feature that reads the audio coming from your phone and shows it as text on your screen in real time. Whether you are watching a video, listening to a voice message, on a phone call, or playing a podcast, the captions appear automatically — no internet connection needed, because everything happens on your device.
@@ -61,7 +61,7 @@ Live Captions will not always be perfectly accurate — fast speech, accents, or
     category: `windows-guides`,
     tags: [`live captions`, `Windows 11`, `accessibility`, `subtitles`, `hearing`],
     readTime: `5 min`,
-    thumbnailEmoji: `💬`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-20`,
     difficulty: `Beginner`,
     body: `Windows 11 includes a Live Captions feature that listens to any audio playing on your computer and displays it as text in real time. This means captions will appear whether you are watching a YouTube video, on a Zoom call, listening to a podcast, or playing a movie — without needing any special software or a subscription.
@@ -109,7 +109,7 @@ This feature is available on Windows 11 version 22H2 and later. If you do not se
     category: `phone-guides`,
     tags: [`Personal Voice`, `iOS 17`, `accessibility`, `ALS`, `voice loss`, `Live Speech`],
     readTime: `7 min`,
-    thumbnailEmoji: `🎙️`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-20`,
     difficulty: `Intermediate`,
     body: `Personal Voice is an iPhone feature introduced in iOS 17 that lets you record your own voice so that your phone can speak in a voice that sounds like you. It was created specifically for people who have conditions that may cause them to lose their ability to speak — such as ALS (amyotrophic lateral sclerosis, also called Lou Gehrig's disease), throat cancer, Parkinson's disease, or other neurological or physical conditions.
@@ -160,7 +160,7 @@ Personal Voice works together with Live Speech (also in Accessibility settings),
     category: `phone-guides`,
     tags: [`Assistive Access`, `cognitive accessibility`, `dementia`, `iOS`, `simplified interface`],
     readTime: `6 min`,
-    thumbnailEmoji: `♿`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-20`,
     difficulty: `Beginner`,
     body: `Assistive Access is an iPhone mode introduced in iOS 17 that transforms the look and feel of the iPhone into a much simpler, more manageable experience. Instead of the standard home screen with dozens of small icons and settings, Assistive Access shows large, easy-to-tap buttons for only the apps you choose. There are no complicated menus, no notifications cluttering the screen, and no confusing options.
@@ -209,7 +209,7 @@ Assistive Access is not permanent — you can exit it at any time using the pass
     category: `phone-guides`,
     tags: [`Sound Recognition`, `accessibility`, `deaf`, `hearing loss`, `iPhone alerts`],
     readTime: `5 min`,
-    thumbnailEmoji: `🔔`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-20`,
     difficulty: `Beginner`,
     body: `Sound Recognition is a feature on iPhone that listens for specific important sounds in your environment and sends you a notification so you do not miss them. It was designed for people who are deaf or hard of hearing, but it is useful for anyone who wears headphones, works in a noisy environment, or wants an extra layer of home safety awareness.
@@ -257,7 +257,7 @@ Sound Recognition requires an iPhone with iOS 14 or later. It works alongside he
     category: `phone-guides`,
     tags: [`Switch Access`, `motor disability`, `accessibility`, `Android`, `assistive technology`],
     readTime: `7 min`,
-    thumbnailEmoji: `🔲`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-20`,
     difficulty: `Intermediate`,
     body: `Switch Access is an Android accessibility feature that allows people to control their phone without touching the screen. Instead of using their fingers to tap and swipe, users press one or two external "switch" buttons to navigate the phone. This makes Android usable for people with motor disabilities such as limited hand movement, severe tremors, ALS, spinal cord injuries, or any condition that makes accurate touch interaction difficult or impossible.
@@ -307,7 +307,7 @@ Android also supports Switch Access through Google's Accessibility Suite app, wh
     category: `phone-guides`,
     tags: [`Family Link`, `parental controls`, `Android`, `kids`, `screen time`],
     readTime: `6 min`,
-    thumbnailEmoji: `👨‍👧`,
+    thumbnailEmoji: `‍`,
     publishedAt: `2026-04-20`,
     difficulty: `Beginner`,
     body: `Google Family Link is a free app from Google that gives parents tools to manage and monitor their child's Android phone or tablet. It works by linking a parent's Google account to a child's Google account, giving the parent oversight and control from a distance using the Family Link app on their own phone.
@@ -359,7 +359,7 @@ Family Link works on Android phones and tablets, as well as Chromebooks when the
     category: `essential-skills`,
     tags: [`Kindle Fire Kids`, `Amazon`, `tablet`, `kids`, `parental controls`],
     readTime: `6 min`,
-    thumbnailEmoji: `📱`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-20`,
     difficulty: `Beginner`,
     body: `The Amazon Kindle Fire Kids tablet (sometimes called Fire HD Kids) is a version of Amazon's standard Fire tablet sold specifically for children. It comes in a kid-proof case with a guaranteed two-year warranty (if it breaks for any reason, Amazon will replace it), and it includes a one-year subscription to Amazon Kids+, which is a curated library of books, educational apps, videos, and games appropriate for children.
@@ -409,7 +409,7 @@ Amazon Kids+ includes thousands of books, popular apps like PBS Kids, Disney, an
     category: `phone-guides`,
     tags: [`Guided Access`, `iPad`, `kids`, `parental controls`, `single app mode`],
     readTime: `5 min`,
-    thumbnailEmoji: `🔒`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-20`,
     difficulty: `Beginner`,
     body: `Guided Access is a built-in iPad and iPhone feature that locks the device to a single app. While Guided Access is running, the person using the device cannot press the Home button to leave the app, cannot switch to a different app, and cannot access any settings or other content. The only way to exit is to triple-click the side (or Home) button and enter the Guided Access passcode.
@@ -454,7 +454,7 @@ It is also useful for accessibility purposes — for example, handing someone wi
     category: `mac-guides`,
     tags: [`Screen Time`, `Mac`, `parental controls`, `kids`, `downtime`],
     readTime: `6 min`,
-    thumbnailEmoji: `⏱️`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-20`,
     difficulty: `Beginner`,
     body: `Screen Time is a built-in feature on Mac computers (and iPhones and iPads) that lets you understand and limit how the device is used. On a Mac, parents can set Screen Time for a child's user account to control how many hours per day they spend in specific app categories, schedule times when most apps are locked, filter websites, and see a detailed report of how the device has been used.
@@ -506,7 +506,7 @@ Screen Time requires macOS Catalina (10.15) or later. Most Macs bought after 201
     category: `essential-skills`,
     tags: [`Grammarly`, `writing`, `students`, `grammar`, `college`],
     readTime: `5 min`,
-    thumbnailEmoji: `✍️`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-20`,
     difficulty: `Beginner`,
     body: `Grammarly is a writing tool that checks your text as you type and points out errors in spelling, grammar, and punctuation. It also suggests improvements to how you phrase things, flags sentences that are too long or confusing, and checks whether your tone matches the situation — for example, whether an email sounds professional enough.
@@ -551,7 +551,7 @@ Important for academic integrity: Grammarly's free grammar checking is generally
     category: `essential-skills`,
     tags: [`Zotero`, `citations`, `research`, `bibliography`, `college`],
     readTime: `7 min`,
-    thumbnailEmoji: `📄`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-20`,
     difficulty: `Intermediate`,
     body: `Zotero is a free, open-source tool used by millions of researchers, students, and academics to collect, organize, and cite their sources. Instead of manually copying author names, publication dates, and URLs into your bibliography, Zotero does it for you — automatically capturing all the necessary citation information from a webpage, library database, or PDF with a single click.
@@ -603,7 +603,7 @@ For long research papers or projects with dozens of sources, Zotero saves hours 
     category: `essential-skills`,
     tags: [`Microsoft Teams`, `school`, `education`, `classes`, `assignments`],
     readTime: `6 min`,
-    thumbnailEmoji: `🎓`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-20`,
     difficulty: `Beginner`,
     body: `Microsoft Teams for Education is the version of Teams that schools use to run their digital classroom. If your school uses Microsoft 365 (formerly Office 365), your teachers may be posting assignments, sharing documents, and hosting video lessons through Teams. This guide explains the key parts of Teams that students use most.
@@ -654,7 +654,7 @@ If your school uses both Teams and another system like Canvas or Schoology, Team
     category: `essential-skills`,
     tags: [`Canvas`, `LMS`, `school`, `assignments`, `grades`],
     readTime: `6 min`,
-    thumbnailEmoji: `🏫`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-20`,
     difficulty: `Beginner`,
     body: `Canvas is a learning management system (LMS) used by thousands of colleges, community colleges, and K-12 schools across the United States. If your school uses Canvas, it is where your teachers or professors post course materials, collect assignments, post grades and feedback, and communicate with students. Think of it as your school's central hub for everything academic.
@@ -704,7 +704,7 @@ Canvas also has a built-in inbox for messaging your instructor directly, a calen
     category: `essential-skills`,
     tags: [`Wolfram Alpha`, `math`, `science`, `students`, `calculator`],
     readTime: `5 min`,
-    thumbnailEmoji: `🧮`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-20`,
     difficulty: `Beginner`,
     body: `Wolfram Alpha is a website that works very differently from a search engine. Instead of returning links to websites, it computes answers directly — using mathematics, data, and science. You type a question or equation, and Wolfram Alpha calculates the answer and shows you how it got there.
@@ -751,7 +751,7 @@ Wolfram Alpha can also answer practical questions, not just academic ones. You c
     category: `phone-guides`,
     tags: [`Circle to Search`, `Samsung`, `Google`, `search`, `Android`],
     readTime: `4 min`,
-    thumbnailEmoji: `🔎`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-20`,
     difficulty: `Beginner`,
     body: `Circle to Search is a feature developed jointly by Google and Samsung that lets you search for anything you see on your phone's screen without switching apps. While you are in the middle of watching a video, scrolling Instagram, or reading a webpage, you can press and hold the home button (or navigation bar at the bottom of the screen) to bring up the Circle to Search tool. Then draw a circle around whatever you want to search — a product, a plant, a person's outfit, a logo, or a piece of text — and Google will search for it instantly.
@@ -795,7 +795,7 @@ Circle to Search is different from Google Lens, although it uses similar technol
     category: `phone-guides`,
     tags: [`Bixby`, `Samsung`, `voice assistant`, `AI`, `Galaxy`],
     readTime: `5 min`,
-    thumbnailEmoji: `🗣️`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-20`,
     difficulty: `Beginner`,
     body: `Bixby is the built-in voice assistant on Samsung Galaxy phones and tablets. It was designed to control your Samsung device specifically — not just answer questions like a general AI assistant, but actually carry out actions on your phone that you would normally have to do manually through settings menus.
@@ -842,7 +842,7 @@ One common question: should you use Bixby or Google Assistant? Both are availabl
     category: `health-tech`,
     tags: [`Samsung Galaxy Watch`, `smartwatch`, `health tracking`, `Galaxy`, `Wear OS`],
     readTime: `6 min`,
-    thumbnailEmoji: `⌚`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-20`,
     difficulty: `Beginner`,
     body: `The Samsung Galaxy Watch is a smartwatch that connects to your Samsung Galaxy phone (or most Android phones) and acts as an extension of your phone on your wrist. It tracks your daily health data — steps, heart rate, sleep quality, stress levels, and workouts — and displays notifications from your phone so you can see who is calling or texting without pulling out your phone.
@@ -892,7 +892,7 @@ To get the full experience, you should use a Samsung Galaxy phone with the Galax
     category: `phone-guides`,
     tags: [`Google Pixel`, `Android`, `tips`, `features`, `exclusive`],
     readTime: `6 min`,
-    thumbnailEmoji: `📱`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-20`,
     difficulty: `Beginner`,
     body: `Google Pixel phones run a version of Android made directly by Google, which means they get features that other Android phones do not have — often for months before any other device, if ever. Many of these features use Google's AI technology to do things that would otherwise require significant manual effort.
@@ -946,7 +946,7 @@ These features are built into Pixel phones and require no extra apps or subscrip
     category: `phone-guides`,
     tags: [`Call Screen`, `Pixel`, `spam calls`, `Google`, `Android`],
     readTime: `5 min`,
-    thumbnailEmoji: `📞`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-20`,
     difficulty: `Beginner`,
     body: `Spam phone calls are one of the most frustrating parts of having a phone. Scammers, telemarketers, and robocallers can call dozens of times a day, and the caller ID often shows "Spam Likely" or an unknown number — but you never know if it might be an important call you actually need to take.

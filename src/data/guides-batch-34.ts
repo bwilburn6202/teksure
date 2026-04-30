@@ -9,7 +9,7 @@ export const guidesBatch34: Guide[] = [
     category: 'safety-guides',
     tags: ['grandparent scam', 'phone scam', 'elder fraud', 'impersonation scam', 'scam warning'],
     readTime: '5 min',
-    thumbnailEmoji: '☎️',
+    thumbnailEmoji: '',
     publishedAt: '2026-04-19',
     difficulty: 'Beginner',
     steps: [
@@ -46,7 +46,7 @@ export const guidesBatch34: Guide[] = [
     category: 'safety-guides',
     tags: ['gift card scam', 'fraud', 'scam warning', 'elder fraud', 'phone scam'],
     readTime: '4 min',
-    thumbnailEmoji: '🎁',
+    thumbnailEmoji: '',
     publishedAt: '2026-04-19',
     difficulty: 'Beginner',
     steps: [
@@ -83,7 +83,7 @@ export const guidesBatch34: Guide[] = [
     category: 'safety-guides',
     tags: ['irs scam', 'tax scam', 'impersonation fraud', 'phone scam', 'elder fraud'],
     readTime: '5 min',
-    thumbnailEmoji: '📋',
+    thumbnailEmoji: '',
     publishedAt: '2026-04-19',
     difficulty: 'Beginner',
     steps: [
@@ -119,7 +119,7 @@ export const guidesBatch34: Guide[] = [
     category: 'safety-guides',
     tags: ['social security scam', 'ssa fraud', 'impersonation', 'elder fraud', 'phone scam'],
     readTime: '5 min',
-    thumbnailEmoji: '🪪',
+    thumbnailEmoji: '',
     publishedAt: '2026-04-19',
     difficulty: 'Beginner',
     steps: [
@@ -155,7 +155,7 @@ export const guidesBatch34: Guide[] = [
     category: 'safety-guides',
     tags: ['medicare fraud', 'medicare scam', 'elder fraud', 'health insurance fraud', 'senior safety'],
     readTime: '5 min',
-    thumbnailEmoji: '🏥',
+    thumbnailEmoji: '',
     publishedAt: '2026-04-19',
     difficulty: 'Beginner',
     steps: [
@@ -191,7 +191,7 @@ export const guidesBatch34: Guide[] = [
     category: 'safety-guides',
     tags: ['utility scam', 'electric company scam', 'phone scam', 'disconnection threat', 'fraud'],
     readTime: '4 min',
-    thumbnailEmoji: '⚡',
+    thumbnailEmoji: '',
     publishedAt: '2026-04-19',
     difficulty: 'Beginner',
     steps: [
@@ -227,7 +227,7 @@ export const guidesBatch34: Guide[] = [
     category: 'safety-guides',
     tags: ['lottery scam', 'sweepstakes scam', 'prize fraud', 'advance fee fraud', 'elder fraud'],
     readTime: '5 min',
-    thumbnailEmoji: '🎰',
+    thumbnailEmoji: '',
     publishedAt: '2026-04-19',
     difficulty: 'Beginner',
     steps: [
@@ -263,7 +263,7 @@ export const guidesBatch34: Guide[] = [
     category: 'safety-guides',
     tags: ['report scam', 'ftc', 'fraud reporting', 'consumer protection', 'elder fraud'],
     readTime: '4 min',
-    thumbnailEmoji: '📢',
+    thumbnailEmoji: '',
     publishedAt: '2026-04-19',
     difficulty: 'Beginner',
     steps: [
@@ -299,7 +299,7 @@ export const guidesBatch34: Guide[] = [
     category: 'safety-guides',
     tags: ['apple id', 'account security', 'two-factor authentication', 'icloud security', 'password'],
     readTime: '5 min',
-    thumbnailEmoji: '🔒',
+    thumbnailEmoji: '',
     publishedAt: '2026-04-19',
     difficulty: 'Beginner',
     steps: [
@@ -336,7 +336,7 @@ export const guidesBatch34: Guide[] = [
     category: 'safety-guides',
     tags: ['google account', 'gmail security', 'two-step verification', 'account security', 'password'],
     readTime: '5 min',
-    thumbnailEmoji: '🔐',
+    thumbnailEmoji: '',
     publishedAt: '2026-04-19',
     difficulty: 'Beginner',
     steps: [
@@ -373,7 +373,7 @@ export const guidesBatch34: Guide[] = [
     category: 'safety-guides',
     tags: ['microsoft account', 'outlook security', 'two-step verification', 'onedrive security', 'windows security'],
     readTime: '5 min',
-    thumbnailEmoji: '🔒',
+    thumbnailEmoji: '',
     publishedAt: '2026-04-19',
     difficulty: 'Beginner',
     steps: [
@@ -410,7 +410,7 @@ export const guidesBatch34: Guide[] = [
     category: 'social-media',
     tags: ['instagram', 'privacy settings', 'private account', 'social media safety', 'instagram scams'],
     readTime: '5 min',
-    thumbnailEmoji: '📷',
+    thumbnailEmoji: '',
     publishedAt: '2026-04-19',
     difficulty: 'Beginner',
     steps: [
@@ -446,7 +446,7 @@ export const guidesBatch34: Guide[] = [
     category: 'social-media',
     tags: ['linkedin', 'privacy settings', 'professional network', 'social media safety', 'job scams'],
     readTime: '5 min',
-    thumbnailEmoji: '💼',
+    thumbnailEmoji: '',
     publishedAt: '2026-04-19',
     difficulty: 'Beginner',
     steps: [
@@ -483,7 +483,7 @@ export const guidesBatch34: Guide[] = [
     category: 'safety-guides',
     tags: ['password manager', 'google', 'chrome', 'password safety', 'autofill'],
     readTime: '5 min',
-    thumbnailEmoji: '🔑',
+    thumbnailEmoji: '',
     publishedAt: '2026-04-19',
     difficulty: 'Beginner',
     steps: [
@@ -520,7 +520,7 @@ export const guidesBatch34: Guide[] = [
     category: 'safety-guides',
     tags: ['1password', 'password manager', 'password security', 'vault', 'secure passwords'],
     readTime: '6 min',
-    thumbnailEmoji: '🔐',
+    thumbnailEmoji: '',
     publishedAt: '2026-04-19',
     difficulty: 'Intermediate',
     steps: [
@@ -556,7 +556,7 @@ export const guidesBatch34: Guide[] = [
     category: 'safety-guides',
     tags: ['lastpass', 'password manager', 'passwords', 'auto-fill', 'free password manager'],
     readTime: '5 min',
-    thumbnailEmoji: '🔑',
+    thumbnailEmoji: '',
     publishedAt: '2026-04-19',
     difficulty: 'Beginner',
     steps: [
@@ -593,7 +593,7 @@ export const guidesBatch34: Guide[] = [
     category: 'app-guides',
     tags: ['accuweather', 'weather app', 'forecast', 'severe weather alerts', 'minutecast'],
     readTime: '4 min',
-    thumbnailEmoji: '🌤️',
+    thumbnailEmoji: '',
     publishedAt: '2026-04-19',
     difficulty: 'Beginner',
     steps: [
@@ -629,7 +629,7 @@ export const guidesBatch34: Guide[] = [
     category: 'health-tech',
     tags: ['lumosity', 'brain training', 'memory games', 'cognitive fitness', 'seniors'],
     readTime: '4 min',
-    thumbnailEmoji: '🧠',
+    thumbnailEmoji: '',
     publishedAt: '2026-04-19',
     difficulty: 'Beginner',
     steps: [
@@ -666,7 +666,7 @@ export const guidesBatch34: Guide[] = [
     category: 'app-guides',
     tags: ['weather radar', 'radar app', 'storm tracking', 'weather safety', 'rain forecast'],
     readTime: '5 min',
-    thumbnailEmoji: '🌧️',
+    thumbnailEmoji: '',
     publishedAt: '2026-04-19',
     difficulty: 'Beginner',
     steps: [

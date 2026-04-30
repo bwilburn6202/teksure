@@ -5,7 +5,7 @@ export const guidesBatch103: Guide[] = [
   // Social: "Those black-and-white squares are everywhere now — restaurant menus, parking meters, business cards, even TV ads. Here's how to use them safely in under 8 minutes."
   // Newsletter: "QR codes have quietly become part of daily life. You'll find them at restaurants, in stores, on parking meters, and even on your doctor's paperwork. They're simple to use — just point your phone camera — but there are a few safety tips everyone should know. This guide covers everything: what QR codes are, how to scan them, what happens next, how to stay safe, and even how to make your own."
   {
-    slug: 'how-to-use-qr-codes',
+    slug: `qr-codes-scanning-guide`,
     title: "How to Use QR Codes (They're Everywhere Now)",
     excerpt: "QR codes are those square black-and-white patterns you see everywhere — restaurants, stores, parking meters, TV ads. Here's how to scan them safely with your phone, what happens when you do, and how to make your own.",
     category: 'basics',

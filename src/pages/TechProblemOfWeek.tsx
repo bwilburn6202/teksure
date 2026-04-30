@@ -205,7 +205,7 @@ export default function TechProblemOfWeek() {
       />
       <Navbar />
 
-      <main className="container mx-auto px-4 py-12 md:py-16">
+      <main id="main-content" className="container mx-auto px-4 py-12 md:py-16">
         {/* Hero */}
         <section className="max-w-4xl mx-auto text-center mb-12">
           <Badge className="mb-5 bg-orange-100 text-orange-800 dark:bg-orange-900/40 dark:text-orange-300 text-sm px-3 py-1">

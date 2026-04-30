@@ -35,7 +35,7 @@ const quickFixes: QuickFix[] = [
     steps: ['Wait 2 minutes — it may unfreeze on its own', 'Press Ctrl+Alt+Delete and open Task Manager', 'End any programs marked "Not Responding"', 'If nothing works, hold the power button for 10 seconds to force restart'],
   },
   {
-    emoji: '⌨', problem: "My keyboard isn't working", category: 'Computer',
+    emoji: '', problem: "My keyboard isn't working", category: 'Computer',
     steps: ['Unplug the keyboard and plug it back in', 'Try a different USB port', 'Restart your computer', 'Check Device Manager for driver issues', 'Test the keyboard on another computer'],
   },
   {
@@ -246,6 +246,8 @@ const QuickFixes = () => {
       />
       <Navbar />
 
+      <main id="main-content" tabIndex={-1} className="outline-none">
+
       <div className="max-w-4xl mx-auto pt-4 px-4">
         <PageBreadcrumb segments={[{ label: 'Quick Fixes' }]} />
       </div>
@@ -379,6 +381,8 @@ const QuickFixes = () => {
           </div>
         </div>
       </section>
+
+      </main>
 
       <Footer />
     </div>

@@ -9,7 +9,7 @@ export const guidesBatch33: Guide[] = [
     category: 'entertainment',
     tags: ['vizio', 'smart tv', 'smartcast', 'streaming', 'tv setup'],
     readTime: '5 min',
-    thumbnailEmoji: '📺',
+    thumbnailEmoji: '',
     publishedAt: '2026-04-19',
     difficulty: 'Beginner',
     steps: [
@@ -45,7 +45,7 @@ export const guidesBatch33: Guide[] = [
     category: 'entertainment',
     tags: ['google tv', 'chromecast', 'streaming', 'smart tv', 'google'],
     readTime: '5 min',
-    thumbnailEmoji: '📺',
+    thumbnailEmoji: '',
     publishedAt: '2026-04-19',
     difficulty: 'Beginner',
     steps: [
@@ -81,7 +81,7 @@ export const guidesBatch33: Guide[] = [
     category: 'phone-guides',
     tags: ['iphone', 'standby mode', 'ios 17', 'nightstand', 'bedside clock'],
     readTime: '4 min',
-    thumbnailEmoji: '🌙',
+    thumbnailEmoji: '',
     publishedAt: '2026-04-19',
     difficulty: 'Beginner',
     steps: [
@@ -118,7 +118,7 @@ export const guidesBatch33: Guide[] = [
     category: 'phone-guides',
     tags: ['iphone', 'lock screen', 'customize', 'ios 16', 'widgets'],
     readTime: '5 min',
-    thumbnailEmoji: '🎨',
+    thumbnailEmoji: '',
     publishedAt: '2026-04-19',
     difficulty: 'Beginner',
     steps: [
@@ -154,7 +154,7 @@ export const guidesBatch33: Guide[] = [
     category: 'phone-guides',
     tags: ['iphone', 'control center', 'customize', 'ios tips', 'flashlight'],
     readTime: '4 min',
-    thumbnailEmoji: '🎛️',
+    thumbnailEmoji: '',
     publishedAt: '2026-04-19',
     difficulty: 'Beginner',
     steps: [
@@ -190,7 +190,7 @@ export const guidesBatch33: Guide[] = [
     category: 'phone-guides',
     tags: ['iphone', 'dynamic island', 'live activities', 'iphone 14 pro', 'ios tips'],
     readTime: '4 min',
-    thumbnailEmoji: '⚫',
+    thumbnailEmoji: '',
     publishedAt: '2026-04-19',
     difficulty: 'Beginner',
     steps: [
@@ -226,7 +226,7 @@ export const guidesBatch33: Guide[] = [
     category: 'essential-skills',
     tags: ['iphone', 'translate', 'language translation', 'travel', 'ios app'],
     readTime: '4 min',
-    thumbnailEmoji: '🌐',
+    thumbnailEmoji: '',
     publishedAt: '2026-04-19',
     difficulty: 'Beginner',
     steps: [
@@ -262,7 +262,7 @@ export const guidesBatch33: Guide[] = [
     category: 'essential-skills',
     tags: ['android', 'google translate', 'translation', 'language', 'travel'],
     readTime: '5 min',
-    thumbnailEmoji: '🌐',
+    thumbnailEmoji: '',
     publishedAt: '2026-04-19',
     difficulty: 'Beginner',
     steps: [
@@ -299,7 +299,7 @@ export const guidesBatch33: Guide[] = [
     category: 'essential-skills',
     tags: ['chrome', 'android', 'browser tips', 'reading mode', 'tab management'],
     readTime: '5 min',
-    thumbnailEmoji: '🌐',
+    thumbnailEmoji: '',
     publishedAt: '2026-04-19',
     difficulty: 'Beginner',
     steps: [
@@ -336,7 +336,7 @@ export const guidesBatch33: Guide[] = [
     category: 'smart-home',
     tags: ['google home', 'smart home', 'google nest', 'home automation', 'google assistant'],
     readTime: '5 min',
-    thumbnailEmoji: '🏠',
+    thumbnailEmoji: '',
     publishedAt: '2026-04-19',
     difficulty: 'Beginner',
     steps: [
@@ -372,7 +372,7 @@ export const guidesBatch33: Guide[] = [
     category: 'windows-guides',
     tags: ['windows 11', 'widgets', 'news feed', 'weather', 'windows tips'],
     readTime: '4 min',
-    thumbnailEmoji: '🖥️',
+    thumbnailEmoji: '',
     publishedAt: '2026-04-19',
     difficulty: 'Beginner',
     steps: [
@@ -408,7 +408,7 @@ export const guidesBatch33: Guide[] = [
     category: 'mac-guides',
     tags: ['mac', 'notification center', 'widgets', 'macos', 'productivity'],
     readTime: '4 min',
-    thumbnailEmoji: '🖥️',
+    thumbnailEmoji: '',
     publishedAt: '2026-04-19',
     difficulty: 'Beginner',
     steps: [
@@ -444,7 +444,7 @@ export const guidesBatch33: Guide[] = [
     category: 'essential-skills',
     tags: ['chrome', 'profiles', 'multiple users', 'bookmarks', 'browser settings'],
     readTime: '4 min',
-    thumbnailEmoji: '👤',
+    thumbnailEmoji: '',
     publishedAt: '2026-04-19',
     difficulty: 'Beginner',
     steps: [
@@ -480,7 +480,7 @@ export const guidesBatch33: Guide[] = [
     category: 'health-tech',
     tags: ['cgm', 'diabetes', 'blood sugar', 'dexcom', 'freestyle libre', 'medicare'],
     readTime: '6 min',
-    thumbnailEmoji: '📊',
+    thumbnailEmoji: '',
     publishedAt: '2026-04-19',
     difficulty: 'Intermediate',
     steps: [
@@ -517,7 +517,7 @@ export const guidesBatch33: Guide[] = [
     category: 'health-tech',
     tags: ['apple watch', 'setup', 'fitness tracker', 'health', 'wearable'],
     readTime: '6 min',
-    thumbnailEmoji: '⌚',
+    thumbnailEmoji: '',
     publishedAt: '2026-04-19',
     difficulty: 'Beginner',
     steps: [
@@ -553,7 +553,7 @@ export const guidesBatch33: Guide[] = [
     category: 'health-tech',
     tags: ['wear os', 'smartwatch', 'android watch', 'samsung galaxy watch', 'fitness tracker'],
     readTime: '5 min',
-    thumbnailEmoji: '⌚',
+    thumbnailEmoji: '',
     publishedAt: '2026-04-19',
     difficulty: 'Beginner',
     steps: [
@@ -589,7 +589,7 @@ export const guidesBatch33: Guide[] = [
     category: 'communication',
     tags: ['imessage', 'games', 'family', 'iphone', 'gamepigeon'],
     readTime: '4 min',
-    thumbnailEmoji: '🎮',
+    thumbnailEmoji: '',
     publishedAt: '2026-04-19',
     difficulty: 'Beginner',
     steps: [
@@ -617,43 +617,7 @@ export const guidesBatch33: Guide[] = [
     ],
   },
 
-  {
-    slug: 'airdrop-setup-tips-guide',
-    title: 'How to Use AirDrop to Share Files Between Apple Devices',
-    excerpt: 'AirDrop lets you instantly send photos, videos, and files between iPhones, iPads, and Macs without email or texting — fast, wireless, and private.',
-    body: `AirDrop is Apple's wireless file-sharing feature that works between iPhones, iPads, and Macs over Wi-Fi and Bluetooth. It is the fastest way to share a photo, document, or link between Apple devices — typically transferring files in seconds with no internet required.\n\n**What AirDrop can share**: Photos, videos, PDFs, links, contacts, audio files, documents, app files, and almost any other type of content on your Apple device.\n\n**How it works**: Both devices need Wi-Fi and Bluetooth turned on (even though they do not need to be on the same Wi-Fi network). AirDrop creates a direct peer-to-peer connection between the devices. Files transfer without going through the internet.\n\n**Privacy settings**:\n- **Contacts Only**: Only people in your contacts list can send you AirDrop files\n- **Everyone for 10 Minutes**: Anyone nearby can send you a file for a limited window (good for a single exchange)\n- **Off**: AirDrop completely disabled\n\nFor most people, "Contacts Only" is the right default setting — it prevents strangers from sending you unwanted content while still allowing easy sharing with family and friends.\n\nAirDrop works when both devices are within about 30 feet of each other. If AirDrop is not appearing as an option, check that both devices have Wi-Fi and Bluetooth enabled and that AirDrop is not set to "Off."`,
-    category: 'essential-skills',
-    tags: ['airdrop', 'iphone', 'mac', 'file sharing', 'apple'],
-    readTime: '4 min',
-    thumbnailEmoji: '📤',
-    publishedAt: '2026-04-19',
-    difficulty: 'Beginner',
-    steps: [
-      {
-        title: 'Enable AirDrop on your iPhone',
-        content: 'Open Control Center (swipe down from top-right corner). Long-press the connectivity box in the top-left. Tap "AirDrop" → choose "Contacts Only" for everyday use or "Everyone for 10 Minutes" for a one-time exchange with someone not in your contacts.',
-      },
-      {
-        title: 'Select a photo or file to share',
-        content: 'Open Photos and find the photo you want to share. Tap the Share button (box with an arrow pointing up). Look for the AirDrop section showing nearby Apple devices.',
-      },
-      {
-        title: `Tap the recipient's name`,
-        content: 'Nearby Apple devices with AirDrop on appear in the share sheet with their device name. Tap the name of the person or device you want to share with.',
-        tip: 'If the recipient does not appear, make sure their iPhone is unlocked and they have AirDrop turned on. Check both devices are within 30 feet of each other.',
-      },
-      {
-        title: 'Recipient accepts the transfer',
-        content: 'The other person sees a pop-up asking if they want to accept the file. They tap "Accept" and the file transfers instantly, appearing in their Photos app (for photos) or Downloads folder (for other files).',
-      },
-      {
-        title: 'AirDrop between iPhone and Mac',
-        content: 'AirDrop also works between iPhone and Mac. On Mac, make sure AirDrop is enabled in Finder (Go → AirDrop) or Control Center. The iPhone sees the Mac as a nearby device, and vice versa.',
-        warning: 'If receiving AirDrop from strangers, change your setting to "Contacts Only." "Everyone" mode can result in unsolicited content from strangers in public places.',
-      },
-    ],
-  },
-
+  
   {
     slug: 'bixby-samsung-guide',
     title: 'How to Use Bixby on Samsung Galaxy Phones',
@@ -662,7 +626,7 @@ export const guidesBatch33: Guide[] = [
     category: 'phone-guides',
     tags: ['bixby', 'samsung', 'galaxy', 'voice assistant', 'android'],
     readTime: '5 min',
-    thumbnailEmoji: '🤖',
+    thumbnailEmoji: '',
     publishedAt: '2026-04-19',
     difficulty: 'Beginner',
     steps: [
@@ -698,7 +662,7 @@ export const guidesBatch33: Guide[] = [
     category: 'windows-guides',
     tags: ['windows 11', 'laptop battery', 'battery saver', 'power settings', 'battery life'],
     readTime: '5 min',
-    thumbnailEmoji: '🔋',
+    thumbnailEmoji: '',
     publishedAt: '2026-04-19',
     difficulty: 'Beginner',
     steps: [
