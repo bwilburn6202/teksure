@@ -953,6 +953,11 @@ const AllrecipesYummlyApps   = lazy(() => import("./pages/tools/AllrecipesYummly
 const SmartKitchenScalesApps = lazy(() => import("./pages/tools/SmartKitchenScalesApps"));
 const MealPlanningApps       = lazy(() => import("./pages/tools/MealPlanningApps"));
 const HelloFreshSeniorReview = lazy(() => import("./pages/tools/HelloFreshSeniorReview"));
+const AmericasTestKitchenApp = lazy(() => import("./pages/tools/AmericasTestKitchenApp"));
+const PBSPassportForSeniors  = lazy(() => import("./pages/tools/PBSPassportForSeniors"));
+const MagnoliaNetworkApp     = lazy(() => import("./pages/tools/MagnoliaNetworkApp"));
+const CrockpotInstantPotApps = lazy(() => import("./pages/tools/CrockpotInstantPotApps"));
+const SeniorBakingTutorials  = lazy(() => import("./pages/tools/SeniorBakingTutorials"));
 const KitchenScalePicks      = lazy(() => import("./pages/tools/KitchenScalePicks"));
 const RecipeOrganizers       = lazy(() => import("./pages/tools/RecipeOrganizers"));
 const SmartOvenPicks         = lazy(() => import("./pages/tools/SmartOvenPicks"));
@@ -3451,6 +3456,11 @@ const AppContent = () => {
           <Route path="/tools/smart-kitchen-scales-apps" element={<SmartKitchenScalesApps />} />
           <Route path="/tools/meal-planning-apps" element={<MealPlanningApps />} />
           <Route path="/tools/hellofresh-senior-review" element={<HelloFreshSeniorReview />} />
+          <Route path="/tools/americas-test-kitchen-app" element={<AmericasTestKitchenApp />} />
+          <Route path="/tools/pbs-passport-for-seniors" element={<PBSPassportForSeniors />} />
+          <Route path="/tools/magnolia-network-app" element={<MagnoliaNetworkApp />} />
+          <Route path="/tools/crockpot-instant-pot-apps" element={<CrockpotInstantPotApps />} />
+          <Route path="/tools/senior-baking-tutorials" element={<SeniorBakingTutorials />} />
           <Route path="/tools/kitchen-scale-picks" element={<KitchenScalePicks />} />
           <Route path="/tools/recipe-organizers" element={<RecipeOrganizers />} />
           <Route path="/tools/smart-oven-picks" element={<SmartOvenPicks />} />
