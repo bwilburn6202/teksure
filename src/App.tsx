@@ -1099,6 +1099,11 @@ const HurricanePrep          = lazy(() => import("./pages/tools/HurricanePrep"))
 const EarthquakePrep         = lazy(() => import("./pages/tools/EarthquakePrep"));
 const BlackoutKit            = lazy(() => import("./pages/tools/BlackoutKit"));
 const EvacuationGoBag        = lazy(() => import("./pages/tools/EvacuationGoBag"));
+const FEMAAppForSeniors      = lazy(() => import("./pages/tools/FEMAAppForSeniors"));
+const EmergencyKitChecklistSenior = lazy(() => import("./pages/tools/EmergencyKitChecklistSenior"));
+const PowerOutagePrep        = lazy(() => import("./pages/tools/PowerOutagePrep"));
+const EmergencyContactPlan   = lazy(() => import("./pages/tools/EmergencyContactPlan"));
+const CarbonMonoxideSafety   = lazy(() => import("./pages/tools/CarbonMonoxideSafety"));
 const FloodPrep              = lazy(() => import("./pages/tools/FloodPrep"));
 
 // ── Cycle 131 (April 29 2026) — senior cooking ──
@@ -3430,6 +3435,11 @@ const AppContent = () => {
           <Route path="/tools/earthquake-prep" element={<EarthquakePrep />} />
           <Route path="/tools/blackout-kit" element={<BlackoutKit />} />
           <Route path="/tools/evacuation-go-bag" element={<EvacuationGoBag />} />
+          <Route path="/tools/fema-app-for-seniors" element={<FEMAAppForSeniors />} />
+          <Route path="/tools/emergency-kit-checklist-senior" element={<EmergencyKitChecklistSenior />} />
+          <Route path="/tools/power-outage-prep" element={<PowerOutagePrep />} />
+          <Route path="/tools/emergency-contact-plan" element={<EmergencyContactPlan />} />
+          <Route path="/tools/carbon-monoxide-safety" element={<CarbonMonoxideSafety />} />
           <Route path="/tools/flood-prep" element={<FloodPrep />} />
 
           {/* Cycle 131 — senior cooking */}
