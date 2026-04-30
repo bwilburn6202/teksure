@@ -775,6 +775,11 @@ const MedicalRecordsRequest  = lazy(() => import("./pages/tools/MedicalRecordsRe
 
 // ── Cycle 82 (April 29 2026) — accessibility ──
 const MagnifierAppPicks      = lazy(() => import("./pages/tools/MagnifierAppPicks"));
+const IphoneMagnifierTutorial = lazy(() => import("./pages/tools/IphoneMagnifierTutorial"));
+const LiveCaptionsForSeniors = lazy(() => import("./pages/tools/LiveCaptionsForSeniors"));
+const AccessibilityShortcutsIphone = lazy(() => import("./pages/tools/AccessibilityShortcutsIphone"));
+const AndroidAccessibilityFeatures = lazy(() => import("./pages/tools/AndroidAccessibilityFeatures"));
+const EmergencySOSPhones     = lazy(() => import("./pages/tools/EmergencySOSPhones"));
 const ColorBlindTools        = lazy(() => import("./pages/tools/ColorBlindTools"));
 const OneHandedTyping        = lazy(() => import("./pages/tools/OneHandedTyping"));
 const BrailleDisplays        = lazy(() => import("./pages/tools/BrailleDisplays"));
@@ -3158,6 +3163,11 @@ const AppContent = () => {
 
           {/* Cycle 82 — accessibility */}
           <Route path="/tools/magnifier-app-picks" element={<MagnifierAppPicks />} />
+          <Route path="/tools/iphone-magnifier-tutorial" element={<IphoneMagnifierTutorial />} />
+          <Route path="/tools/live-captions-for-seniors" element={<LiveCaptionsForSeniors />} />
+          <Route path="/tools/accessibility-shortcuts-iphone" element={<AccessibilityShortcutsIphone />} />
+          <Route path="/tools/android-accessibility-features" element={<AndroidAccessibilityFeatures />} />
+          <Route path="/tools/emergency-sos-phones" element={<EmergencySOSPhones />} />
           <Route path="/tools/color-blind-tools" element={<ColorBlindTools />} />
           <Route path="/tools/one-handed-typing" element={<OneHandedTyping />} />
           <Route path="/tools/braille-displays" element={<BrailleDisplays />} />
