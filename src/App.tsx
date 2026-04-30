@@ -405,6 +405,11 @@ const ChildproofForVisits    = lazy(() => import("./pages/tools/ChildproofForVis
 // ── Cycle 29 (April 29 2026) — passkeys/antivirus/recovery/shortcuts/tremors ──
 const PasskeysCoach          = lazy(() => import("./pages/tools/PasskeysCoach"));
 const AntivirusPicker        = lazy(() => import("./pages/tools/AntivirusPicker"));
+const VPNForSeniorsExplained = lazy(() => import("./pages/tools/VPNForSeniorsExplained"));
+const MalwarebytesForSeniors = lazy(() => import("./pages/tools/MalwarebytesForSeniors"));
+const PublicWifiSafetyTutorial = lazy(() => import("./pages/tools/PublicWifiSafetyTutorial"));
+const RouterSecuritySetup    = lazy(() => import("./pages/tools/RouterSecuritySetup"));
+const PhoneSecurityCheckup   = lazy(() => import("./pages/tools/PhoneSecurityCheckup"));
 const AppleGoogleAccountRecovery = lazy(() => import("./pages/tools/AppleGoogleAccountRecovery"));
 const KeyboardShortcutsCheatsheet = lazy(() => import("./pages/tools/KeyboardShortcutsCheatsheet"));
 const TremorPhoneSetup       = lazy(() => import("./pages/tools/TremorPhoneSetup"));
@@ -2863,6 +2868,11 @@ const AppContent = () => {
           {/* Cycle 29 — passkeys / antivirus / recovery / shortcuts / tremors */}
           <Route path="/tools/passkeys-coach" element={<PasskeysCoach />} />
           <Route path="/tools/antivirus-picker" element={<AntivirusPicker />} />
+          <Route path="/tools/vpn-for-seniors-explained" element={<VPNForSeniorsExplained />} />
+          <Route path="/tools/malwarebytes-for-seniors" element={<MalwarebytesForSeniors />} />
+          <Route path="/tools/public-wifi-safety-tutorial" element={<PublicWifiSafetyTutorial />} />
+          <Route path="/tools/router-security-setup" element={<RouterSecuritySetup />} />
+          <Route path="/tools/phone-security-checkup" element={<PhoneSecurityCheckup />} />
           <Route path="/tools/account-recovery" element={<AppleGoogleAccountRecovery />} />
           <Route path="/tools/keyboard-shortcuts-cheatsheet" element={<KeyboardShortcutsCheatsheet />} />
           <Route path="/tools/tremor-phone-setup" element={<TremorPhoneSetup />} />
