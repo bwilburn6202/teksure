@@ -1448,6 +1448,11 @@ const BabbelVsRosetta        = lazy(() => import("./pages/tools/BabbelVsRosetta"
 const GoogleTranslateMastery = lazy(() => import("./pages/tools/GoogleTranslateMastery"));
 const FreeCollegeForSeniors  = lazy(() => import("./pages/tools/FreeCollegeForSeniors"));
 const CourseraSeniorAudit    = lazy(() => import("./pages/tools/CourseraSeniorAudit"));
+const EdXCoursesForSeniors   = lazy(() => import("./pages/tools/EdXCoursesForSeniors"));
+const GreatCoursesPlusReview = lazy(() => import("./pages/tools/GreatCoursesPlusReview"));
+const AcademicSearchSeniors  = lazy(() => import("./pages/tools/AcademicSearchSeniors"));
+const SeniorTutorialResources = lazy(() => import("./pages/tools/SeniorTutorialResources"));
+const SeniorClassesAtCommunityCollege = lazy(() => import("./pages/tools/SeniorClassesAtCommunityCollege"));
 
 // ── Cycle 160 (April 29 2026) — veteran benefits ──
 const VAAidAndAttendance     = lazy(() => import("./pages/tools/VAAidAndAttendance"));
@@ -3935,6 +3940,11 @@ const AppContent = () => {
           <Route path="/tools/google-translate-mastery" element={<GoogleTranslateMastery />} />
           <Route path="/tools/free-college-for-seniors" element={<FreeCollegeForSeniors />} />
           <Route path="/tools/coursera-senior-audit" element={<CourseraSeniorAudit />} />
+          <Route path="/tools/edx-courses-for-seniors" element={<EdXCoursesForSeniors />} />
+          <Route path="/tools/great-courses-plus-review" element={<GreatCoursesPlusReview />} />
+          <Route path="/tools/academic-search-seniors" element={<AcademicSearchSeniors />} />
+          <Route path="/tools/senior-tutorial-resources" element={<SeniorTutorialResources />} />
+          <Route path="/tools/senior-classes-at-community-college" element={<SeniorClassesAtCommunityCollege />} />
           <Route path="/tools/va-aid-and-attendance" element={<VAAidAndAttendance />} />
           <Route path="/tools/tricare-for-life" element={<TricareForLife />} />
           <Route path="/tools/national-cemetery-burial" element={<NationalCemeteryBurial />} />
