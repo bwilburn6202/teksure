@@ -1758,6 +1758,13 @@ const MyChartPatientPortalGuide   = lazy(() => import("./pages/tools/MyChartPati
 const PillReminderAppsForSeniors  = lazy(() => import("./pages/tools/PillReminderAppsForSeniors"));
 const TelehealthForSeniors        = lazy(() => import("./pages/tools/TelehealthForSeniors"));
 
+// ── Cycle 279 (April 30 2026) — senior travel apps ──
+const TSAPreCheckGlobalEntryGuide    = lazy(() => import("./pages/tools/TSAPreCheckGlobalEntryGuide"));
+const MyTSAAppGuide                  = lazy(() => import("./pages/tools/MyTSAAppGuide"));
+const RoadtripPlannerAppsForSeniors  = lazy(() => import("./pages/tools/RoadtripPlannerAppsForSeniors"));
+const AirbnbForSeniorTravelers       = lazy(() => import("./pages/tools/AirbnbForSeniorTravelers"));
+const PassportRenewalGuide           = lazy(() => import("./pages/tools/PassportRenewalGuide"));
+
 // ── Cycle 195 (April 29 2026) — DIY home ──
 const BasicToolsForSeniors   = lazy(() => import("./pages/tools/BasicToolsForSeniors"));
 const PaintingTipsSeniors    = lazy(() => import("./pages/tools/PaintingTipsSeniors"));
@@ -4214,6 +4221,11 @@ const AppContent = () => {
           <Route path="/tools/mychart-patient-portal-guide" element={<MyChartPatientPortalGuide />} />
           <Route path="/tools/pill-reminder-apps-for-seniors" element={<PillReminderAppsForSeniors />} />
           <Route path="/tools/telehealth-for-seniors" element={<TelehealthForSeniors />} />
+          <Route path="/tools/tsa-precheck-global-entry-guide" element={<TSAPreCheckGlobalEntryGuide />} />
+          <Route path="/tools/mytsa-app-guide" element={<MyTSAAppGuide />} />
+          <Route path="/tools/roadtrip-planner-apps-for-seniors" element={<RoadtripPlannerAppsForSeniors />} />
+          <Route path="/tools/airbnb-for-senior-travelers" element={<AirbnbForSeniorTravelers />} />
+          <Route path="/tools/passport-renewal-guide" element={<PassportRenewalGuide />} />
           <Route path="/tools/basic-tools-for-seniors" element={<BasicToolsForSeniors />} />
           <Route path="/tools/painting-tips-seniors" element={<PaintingTipsSeniors />} />
           <Route path="/tools/caulking-basics" element={<CaulkingBasics />} />
