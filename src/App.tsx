@@ -684,6 +684,11 @@ const MemorialFacebookGuide  = lazy(() => import("./pages/tools/MemorialFacebook
 // ── Cycle 66 (April 29 2026) — health tech ──
 const GlucoseMonitorPicks    = lazy(() => import("./pages/tools/GlucoseMonitorPicks"));
 const MedicalAlertCompare    = lazy(() => import("./pages/tools/MedicalAlertCompare"));
+const MedicalGuardianReview  = lazy(() => import("./pages/tools/MedicalGuardianReview"));
+const LifeAlertVsCompetitors = lazy(() => import("./pages/tools/LifeAlertVsCompetitors"));
+const AppleWatchSOSTutorial  = lazy(() => import("./pages/tools/AppleWatchSOSTutorial"));
+const AloeCareCaregivingApp  = lazy(() => import("./pages/tools/AloeCareCaregivingApp"));
+const PhilipsLifelineSenior  = lazy(() => import("./pages/tools/PhilipsLifelineSenior"));
 const TelehealthBasics       = lazy(() => import("./pages/tools/TelehealthBasics"));
 const HearingTestApps        = lazy(() => import("./pages/tools/HearingTestApps"));
 const WellnessRingPicks      = lazy(() => import("./pages/tools/WellnessRingPicks"));
@@ -3132,6 +3137,11 @@ const AppContent = () => {
           {/* Cycle 66 — health tech */}
           <Route path="/tools/glucose-monitor-picks" element={<GlucoseMonitorPicks />} />
           <Route path="/tools/medical-alert-compare" element={<MedicalAlertCompare />} />
+          <Route path="/tools/medical-guardian-review" element={<MedicalGuardianReview />} />
+          <Route path="/tools/life-alert-vs-competitors" element={<LifeAlertVsCompetitors />} />
+          <Route path="/tools/apple-watch-sos-tutorial" element={<AppleWatchSOSTutorial />} />
+          <Route path="/tools/aloe-care-caregiving-app" element={<AloeCareCaregivingApp />} />
+          <Route path="/tools/philips-lifeline-senior" element={<PhilipsLifelineSenior />} />
           <Route path="/tools/telehealth-basics" element={<TelehealthBasics />} />
           <Route path="/tools/hearing-test-apps" element={<HearingTestApps />} />
           <Route path="/tools/wellness-ring-picks" element={<WellnessRingPicks />} />
