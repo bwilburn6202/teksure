@@ -1223,6 +1223,11 @@ const TextingEtiquette       = lazy(() => import("./pages/tools/TextingEtiquette
 const GroupChatTips          = lazy(() => import("./pages/tools/GroupChatTips"));
 const SnailMailRevival       = lazy(() => import("./pages/tools/SnailMailRevival"));
 const HolidayCardSetup       = lazy(() => import("./pages/tools/HolidayCardSetup"));
+const ShutterflyForSeniors   = lazy(() => import("./pages/tools/ShutterflyForSeniors"));
+const PaperlessPostInvitations = lazy(() => import("./pages/tools/PaperlessPostInvitations"));
+const MintedHolidayCardsReview = lazy(() => import("./pages/tools/MintedHolidayCardsReview"));
+const CostcoPhotoCenter      = lazy(() => import("./pages/tools/CostcoPhotoCenter"));
+const MailMerge100Cards      = lazy(() => import("./pages/tools/MailMerge100Cards"));
 const ChainEmailDontShare    = lazy(() => import("./pages/tools/ChainEmailDontShare"));
 
 // ── Cycle 138 (April 29 2026) — fall prevention + mobility ──
@@ -3669,6 +3674,11 @@ const AppContent = () => {
           <Route path="/tools/group-chat-tips" element={<GroupChatTips />} />
           <Route path="/tools/snail-mail-revival" element={<SnailMailRevival />} />
           <Route path="/tools/holiday-card-setup" element={<HolidayCardSetup />} />
+          <Route path="/tools/shutterfly-for-seniors" element={<ShutterflyForSeniors />} />
+          <Route path="/tools/paperless-post-invitations" element={<PaperlessPostInvitations />} />
+          <Route path="/tools/minted-holiday-cards-review" element={<MintedHolidayCardsReview />} />
+          <Route path="/tools/costco-photo-center" element={<CostcoPhotoCenter />} />
+          <Route path="/tools/mail-merge-100-cards" element={<MailMerge100Cards />} />
           <Route path="/tools/chain-email-dont-share" element={<ChainEmailDontShare />} />
           <Route path="/tools/fall-prevention-guide" element={<FallPreventionGuide />} />
           <Route path="/tools/posture-check-apps" element={<PostureCheckApps />} />
