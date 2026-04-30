@@ -365,6 +365,11 @@ const VoiceControlAccessibility = lazy(() => import("./pages/tools/VoiceControlA
 const MedicalAlertPicker     = lazy(() => import("./pages/tools/MedicalAlertPicker"));
 const TelehealthVisitCoach   = lazy(() => import("./pages/tools/TelehealthVisitCoach"));
 const OnlinePharmacyCoach    = lazy(() => import("./pages/tools/OnlinePharmacyCoach"));
+const AmazonPharmacyForSeniors = lazy(() => import("./pages/tools/AmazonPharmacyForSeniors"));
+const CostPlusDrugsExplained = lazy(() => import("./pages/tools/CostPlusDrugsExplained"));
+const CapsulePharmacyDelivery = lazy(() => import("./pages/tools/CapsulePharmacyDelivery"));
+const PillPackForSeniors     = lazy(() => import("./pages/tools/PillPackForSeniors"));
+const Medicare90DaySupply    = lazy(() => import("./pages/tools/Medicare90DaySupply"));
 
 // ── Cycle 26 (April 29 2026) — kitchen / inventory / privacy / sell / utilities ──
 const SmartCookingTools      = lazy(() => import("./pages/tools/SmartCookingTools"));
@@ -2738,6 +2743,11 @@ const AppContent = () => {
           <Route path="/tools/medical-alert-picker" element={<MedicalAlertPicker />} />
           <Route path="/tools/telehealth-visit-coach" element={<TelehealthVisitCoach />} />
           <Route path="/tools/online-pharmacy-coach" element={<OnlinePharmacyCoach />} />
+          <Route path="/tools/amazon-pharmacy-for-seniors" element={<AmazonPharmacyForSeniors />} />
+          <Route path="/tools/cost-plus-drugs-explained" element={<CostPlusDrugsExplained />} />
+          <Route path="/tools/capsule-pharmacy-delivery" element={<CapsulePharmacyDelivery />} />
+          <Route path="/tools/pillpack-for-seniors" element={<PillPackForSeniors />} />
+          <Route path="/tools/medicare-90-day-supply" element={<Medicare90DaySupply />} />
 
           {/* Cycle 26 — kitchen / inventory / privacy / sell / utilities */}
           <Route path="/tools/smart-cooking-tools" element={<SmartCookingTools />} />
