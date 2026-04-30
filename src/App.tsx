@@ -1968,6 +1968,13 @@ const SunsetLampsForSeniorSleep             = lazy(() => import("./pages/tools/S
 const EatingWindowAppsForSeniors            = lazy(() => import("./pages/tools/EatingWindowAppsForSeniors"));
 const SauerkrautBeansForSeniorGut           = lazy(() => import("./pages/tools/SauerkrautBeansForSeniorGut"));
 
+// ── Cycle 309 (April 30 2026) — senior productivity hacks ──
+const EmailFiltersForSeniors                = lazy(() => import("./pages/tools/EmailFiltersForSeniors"));
+const UnsubscribeAppsForSeniors             = lazy(() => import("./pages/tools/UnsubscribeAppsForSeniors"));
+const PhoneStorageOptimizationForSeniors    = lazy(() => import("./pages/tools/PhoneStorageOptimizationForSeniors"));
+const HomeScreenLayoutForSeniors            = lazy(() => import("./pages/tools/HomeScreenLayoutForSeniors"));
+const NotificationManagementForSeniors      = lazy(() => import("./pages/tools/NotificationManagementForSeniors"));
+
 // ── Cycle 195 (April 29 2026) — DIY home ──
 const BasicToolsForSeniors   = lazy(() => import("./pages/tools/BasicToolsForSeniors"));
 const PaintingTipsSeniors    = lazy(() => import("./pages/tools/PaintingTipsSeniors"));
@@ -4574,6 +4581,11 @@ const AppContent = () => {
           <Route path="/tools/sunset-lamps-for-senior-sleep" element={<SunsetLampsForSeniorSleep />} />
           <Route path="/tools/eating-window-apps-for-seniors" element={<EatingWindowAppsForSeniors />} />
           <Route path="/tools/sauerkraut-beans-for-senior-gut" element={<SauerkrautBeansForSeniorGut />} />
+          <Route path="/tools/email-filters-for-seniors" element={<EmailFiltersForSeniors />} />
+          <Route path="/tools/unsubscribe-apps-for-seniors" element={<UnsubscribeAppsForSeniors />} />
+          <Route path="/tools/phone-storage-optimization-for-seniors" element={<PhoneStorageOptimizationForSeniors />} />
+          <Route path="/tools/home-screen-layout-for-seniors" element={<HomeScreenLayoutForSeniors />} />
+          <Route path="/tools/notification-management-for-seniors" element={<NotificationManagementForSeniors />} />
           <Route path="/tools/basic-tools-for-seniors" element={<BasicToolsForSeniors />} />
           <Route path="/tools/painting-tips-seniors" element={<PaintingTipsSeniors />} />
           <Route path="/tools/caulking-basics" element={<CaulkingBasics />} />
