@@ -16,6 +16,7 @@ import { StatusBadge } from '@/components/StatusBadge';
 import { useAuth } from '@/contexts/AuthContext';
 import { supabase } from '@/integrations/supabase/client';
 import { toast } from 'sonner';
+import { formatBookingSlot } from '@/lib/bookingSlots';
 
 interface Booking {
   id: string;
@@ -300,7 +301,7 @@ function BookingCard({
                 <span className="inline-flex items-center gap-1">
                   <Calendar className="h-3.5 w-3.5" />
                   {formatDate(booking.preferred_date)}
-                  {booking.preferred_slot && ` at ${booking.preferred_slot}`}
+                  {booking.preferred_slot && ` at ${formatBookingSlot(booking.preferred_slot)}`}
                 </span>
               )}
               {booking.email && (

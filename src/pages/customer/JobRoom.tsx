@@ -15,6 +15,7 @@ import { Separator } from '@/components/ui/separator';
 import { useAuth } from '@/contexts/AuthContext';
 import { supabase } from '@/integrations/supabase/client';
 import { toast } from 'sonner';
+import { formatBookingSlot } from '@/lib/bookingSlots';
 
 interface Booking {
   id: string;
@@ -272,7 +273,7 @@ const CustomerJobRoom = () => {
                     <p className="text-xs text-muted-foreground font-medium uppercase tracking-wider mb-1">Preferred Time</p>
                     <p className="text-sm font-medium flex items-center gap-1.5">
                       <Clock className="h-4 w-4 text-muted-foreground" />
-                      {booking.preferred_slot ?? 'Not set'}
+                      {booking.preferred_slot ? formatBookingSlot(booking.preferred_slot) : 'Not set'}
                     </p>
                   </div>
                   <div>
