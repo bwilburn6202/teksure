@@ -2006,6 +2006,11 @@ const WifiCallingSetup       = lazy(() => import("./pages/tools/WifiCallingSetup
 const FitnessTrackerPicker   = lazy(() => import("./pages/tools/FitnessTrackerPicker"));
 const SmartLockPicker        = lazy(() => import("./pages/tools/SmartLockPicker"));
 const KindleSetup            = lazy(() => import("./pages/tools/KindleSetup"));
+const EReaderComparisonGuide = lazy(() => import("./pages/tools/EReaderComparisonGuide"));
+const KindleUnlimitedScribdReview = lazy(() => import("./pages/tools/KindleUnlimitedScribdReview"));
+const GunSafeBiometric       = lazy(() => import("./pages/tools/GunSafeBiometric"));
+const PowerBankSeniorPicks   = lazy(() => import("./pages/tools/PowerBankSeniorPicks"));
+const SeniorJobSearchPlatforms = lazy(() => import("./pages/tools/SeniorJobSearchPlatforms"));
 const MapsNavigationSetup    = lazy(() => import("./pages/tools/MapsNavigationSetup"));
 const FindLostPhone          = lazy(() => import("./pages/tools/FindLostPhone"));
 const VideoDoorbellPicker    = lazy(() => import("./pages/tools/VideoDoorbellPicker"));
@@ -4109,6 +4114,11 @@ const AppContent = () => {
           <Route path="/tools/fitness-tracker-picker"      element={<FitnessTrackerPicker />} />
           <Route path="/tools/smart-lock-picker"           element={<SmartLockPicker />} />
           <Route path="/tools/kindle-setup"                element={<KindleSetup />} />
+          <Route path="/tools/e-reader-comparison-guide" element={<EReaderComparisonGuide />} />
+          <Route path="/tools/kindle-unlimited-scribd-review" element={<KindleUnlimitedScribdReview />} />
+          <Route path="/tools/gun-safe-biometric" element={<GunSafeBiometric />} />
+          <Route path="/tools/power-bank-senior-picks" element={<PowerBankSeniorPicks />} />
+          <Route path="/tools/senior-job-search-platforms" element={<SeniorJobSearchPlatforms />} />
           <Route path="/tools/maps-navigation-setup"       element={<MapsNavigationSetup />} />
           <Route path="/tools/find-lost-phone"             element={<FindLostPhone />} />
           <Route path="/tools/video-doorbell-picker"       element={<VideoDoorbellPicker />} />
