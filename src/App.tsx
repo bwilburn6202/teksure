@@ -463,6 +463,11 @@ const DiskEncryptionCoach    = lazy(() => import("./pages/tools/DiskEncryptionCo
 const CyberInsuranceExplainer = lazy(() => import("./pages/tools/CyberInsuranceExplainer"));
 const UniversalRemotePicker  = lazy(() => import("./pages/tools/UniversalRemotePicker"));
 const LostTvRemoteCoach      = lazy(() => import("./pages/tools/LostTvRemoteCoach"));
+const RokuSetupForSeniors    = lazy(() => import("./pages/tools/RokuSetupForSeniors"));
+const FireTVStickGuide       = lazy(() => import("./pages/tools/FireTVStickGuide"));
+const UniversalRemoteForSeniors = lazy(() => import("./pages/tools/UniversalRemoteForSeniors"));
+const CaptioningCallSeniors  = lazy(() => import("./pages/tools/CaptioningCallSeniors"));
+const SoundbarTVAudioForSeniors = lazy(() => import("./pages/tools/SoundbarTVAudioForSeniors"));
 
 // ── Cycle 40 (April 29 2026) — taxes/SNAP/eldercare/lifeline/HSA-FSA ──
 const SeniorTaxCredits       = lazy(() => import("./pages/tools/SeniorTaxCredits"));
@@ -2819,6 +2824,11 @@ const AppContent = () => {
           <Route path="/tools/cyber-insurance-explainer" element={<CyberInsuranceExplainer />} />
           <Route path="/tools/universal-remote-picker" element={<UniversalRemotePicker />} />
           <Route path="/tools/lost-tv-remote-coach" element={<LostTvRemoteCoach />} />
+          <Route path="/tools/roku-setup-for-seniors" element={<RokuSetupForSeniors />} />
+          <Route path="/tools/fire-tv-stick-guide" element={<FireTVStickGuide />} />
+          <Route path="/tools/universal-remote-for-seniors" element={<UniversalRemoteForSeniors />} />
+          <Route path="/tools/captioning-call-seniors" element={<CaptioningCallSeniors />} />
+          <Route path="/tools/soundbar-tv-audio-for-seniors" element={<SoundbarTVAudioForSeniors />} />
 
           {/* Cycle 40 — taxes / SNAP / eldercare / lifeline / HSA-FSA */}
           <Route path="/tools/senior-tax-credits" element={<SeniorTaxCredits />} />
