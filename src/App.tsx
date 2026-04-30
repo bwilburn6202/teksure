@@ -1740,6 +1740,11 @@ const OneDriveBasics            = lazy(() => import("./pages/tools/OneDriveBasic
 const AppleMusicForSeniors      = lazy(() => import("./pages/tools/AppleMusicForSeniors"));
 const AmazonMusicForSeniors     = lazy(() => import("./pages/tools/AmazonMusicForSeniors"));
 const PandoraForSeniors         = lazy(() => import("./pages/tools/PandoraForSeniors"));
+const SimplyPianoForSeniors     = lazy(() => import("./pages/tools/SimplyPianoForSeniors"));
+const YousicianGuitarApp        = lazy(() => import("./pages/tools/YousicianGuitarApp"));
+const MetronomeTunerApps        = lazy(() => import("./pages/tools/MetronomeTunerApps"));
+const SmuleKaraokeApp           = lazy(() => import("./pages/tools/SmuleKaraokeApp"));
+const SheetMusicAppsDigital     = lazy(() => import("./pages/tools/SheetMusicAppsDigital"));
 const YouTubeMusicForSeniors    = lazy(() => import("./pages/tools/YouTubeMusicForSeniors"));
 const TuneInRadioApps           = lazy(() => import("./pages/tools/TuneInRadioApps"));
 
@@ -3891,6 +3896,11 @@ const AppContent = () => {
           <Route path="/tools/apple-music-for-seniors" element={<AppleMusicForSeniors />} />
           <Route path="/tools/amazon-music-for-seniors" element={<AmazonMusicForSeniors />} />
           <Route path="/tools/pandora-for-seniors" element={<PandoraForSeniors />} />
+          <Route path="/tools/simply-piano-for-seniors" element={<SimplyPianoForSeniors />} />
+          <Route path="/tools/yousician-guitar-app" element={<YousicianGuitarApp />} />
+          <Route path="/tools/metronome-tuner-apps" element={<MetronomeTunerApps />} />
+          <Route path="/tools/smule-karaoke-app" element={<SmuleKaraokeApp />} />
+          <Route path="/tools/sheet-music-apps-digital" element={<SheetMusicAppsDigital />} />
           <Route path="/tools/youtube-music-for-seniors" element={<YouTubeMusicForSeniors />} />
           <Route path="/tools/tunein-radio-apps" element={<TuneInRadioApps />} />
           <Route path="/tools/pinterest-for-seniors" element={<PinterestForSeniors />} />
