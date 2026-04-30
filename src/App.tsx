@@ -582,6 +582,11 @@ const LoyaltyProgramsCompared = lazy(() => import("./pages/tools/LoyaltyPrograms
 // ── Cycle 55 (April 29 2026) — faith / disease support ──
 const BibleChristianApps     = lazy(() => import("./pages/tools/BibleChristianApps"));
 const CatholicMassApps       = lazy(() => import("./pages/tools/CatholicMassApps"));
+const YouVersionBibleApp     = lazy(() => import("./pages/tools/YouVersionBibleApp"));
+const HallowPrayerApp        = lazy(() => import("./pages/tools/HallowPrayerApp"));
+const JewishHolidayApps      = lazy(() => import("./pages/tools/JewishHolidayApps"));
+const InsightTimerMeditation = lazy(() => import("./pages/tools/InsightTimerMeditation"));
+const ChurchLiveStreamApps   = lazy(() => import("./pages/tools/ChurchLiveStreamApps"));
 const JewishCalendarApps     = lazy(() => import("./pages/tools/JewishCalendarApps"));
 const IslamicPrayerApps      = lazy(() => import("./pages/tools/IslamicPrayerApps"));
 const DiseaseSupportCommunities = lazy(() => import("./pages/tools/DiseaseSupportCommunities"));
@@ -2960,6 +2965,11 @@ const AppContent = () => {
           {/* Cycle 55 — faith / disease support */}
           <Route path="/tools/bible-christian-apps" element={<BibleChristianApps />} />
           <Route path="/tools/catholic-mass-apps" element={<CatholicMassApps />} />
+          <Route path="/tools/you-version-bible-app" element={<YouVersionBibleApp />} />
+          <Route path="/tools/hallow-prayer-app" element={<HallowPrayerApp />} />
+          <Route path="/tools/jewish-holiday-apps" element={<JewishHolidayApps />} />
+          <Route path="/tools/insight-timer-meditation" element={<InsightTimerMeditation />} />
+          <Route path="/tools/church-live-stream-apps" element={<ChurchLiveStreamApps />} />
           <Route path="/tools/jewish-calendar-apps" element={<JewishCalendarApps />} />
           <Route path="/tools/islamic-prayer-apps" element={<IslamicPrayerApps />} />
           <Route path="/tools/disease-support-communities" element={<DiseaseSupportCommunities />} />
