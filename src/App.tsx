@@ -368,6 +368,11 @@ const PhotoOrganizationCoach = lazy(() => import("./pages/tools/PhotoOrganizatio
 const MedicalRecordsOrganizer = lazy(() => import("./pages/tools/MedicalRecordsOrganizer"));
 const BillsPaperlessOrganizer = lazy(() => import("./pages/tools/BillsPaperlessOrganizer"));
 const JournalingApps         = lazy(() => import("./pages/tools/JournalingApps"));
+const DayOneJournalApp       = lazy(() => import("./pages/tools/DayOneJournalApp"));
+const SeniorMemoirWriting    = lazy(() => import("./pages/tools/SeniorMemoirWriting"));
+const GratitudeAppForSeniors = lazy(() => import("./pages/tools/GratitudeAppForSeniors"));
+const AmazonKDPForSeniors    = lazy(() => import("./pages/tools/AmazonKDPForSeniors"));
+const SeniorBookClubsOnline  = lazy(() => import("./pages/tools/SeniorBookClubsOnline"));
 
 // ── Cycle 25 (April 29 2026) — caregiving / accessibility / health ──
 const CaregiverCoordinationApps = lazy(() => import("./pages/tools/CaregiverCoordinationApps"));
@@ -2826,6 +2831,11 @@ const AppContent = () => {
           <Route path="/tools/medical-records-organizer" element={<MedicalRecordsOrganizer />} />
           <Route path="/tools/bills-paperless-organizer" element={<BillsPaperlessOrganizer />} />
           <Route path="/tools/journaling-apps" element={<JournalingApps />} />
+          <Route path="/tools/day-one-journal-app" element={<DayOneJournalApp />} />
+          <Route path="/tools/senior-memoir-writing" element={<SeniorMemoirWriting />} />
+          <Route path="/tools/gratitude-app-for-seniors" element={<GratitudeAppForSeniors />} />
+          <Route path="/tools/amazon-kdp-for-seniors" element={<AmazonKDPForSeniors />} />
+          <Route path="/tools/senior-book-clubs-online" element={<SeniorBookClubsOnline />} />
 
           {/* Cycle 25 — caregiving / accessibility / health */}
           <Route path="/tools/caregiver-coordination-apps" element={<CaregiverCoordinationApps />} />
