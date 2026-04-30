@@ -117,6 +117,11 @@ const Notifications          = lazy(() => import("./pages/Notifications"));
 const CyberToolkit           = lazy(() => import("./pages/tools/CyberToolkit"));
 const SecurityOsintTools     = lazy(() => import("./pages/tools/SecurityOsintTools"));
 const PasswordManager        = lazy(() => import("./pages/tools/PasswordManager"));
+const BitwardenSetupSeniors  = lazy(() => import("./pages/tools/BitwardenSetupSeniors"));
+const TwoFactorAuthSetup     = lazy(() => import("./pages/tools/TwoFactorAuthSetup"));
+const AppleIDAccountSecurity = lazy(() => import("./pages/tools/AppleIDAccountSecurity"));
+const GoogleAccountSecurityCheckup = lazy(() => import("./pages/tools/GoogleAccountSecurityCheckup"));
+const HardwareSecurityKeys   = lazy(() => import("./pages/tools/HardwareSecurityKeys"));
 const AccountRecovery        = lazy(() => import("./pages/tools/AccountRecovery"));
 const OsintFramework         = lazy(() => import("./pages/tools/OsintFramework"));
 const Onboarding             = lazy(() => import("./pages/Onboarding"));
@@ -2385,6 +2390,11 @@ const AppContent = () => {
           <Route path="/tools/app-permissions" element={<AppPermissions />} />
           <Route path="/tools/two-factor-setup" element={<TwoFactorSetup />} />
           <Route path="/tools/password-manager" element={<PasswordManager />} />
+          <Route path="/tools/bitwarden-setup-seniors" element={<BitwardenSetupSeniors />} />
+          <Route path="/tools/two-factor-auth-setup" element={<TwoFactorAuthSetup />} />
+          <Route path="/tools/apple-id-account-security" element={<AppleIDAccountSecurity />} />
+          <Route path="/tools/google-account-security-checkup" element={<GoogleAccountSecurityCheckup />} />
+          <Route path="/tools/hardware-security-keys" element={<HardwareSecurityKeys />} />
           <Route path="/tools/state-benefits-finder" element={<StateBenefitsFinder />} />
           <Route path="/notifications" element={<Notifications />} />
           <Route path="/technicians" element={<TechnicianProfile />} />
