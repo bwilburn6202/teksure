@@ -1406,6 +1406,11 @@ const AppleHealthDeepDive    = lazy(() => import("./pages/tools/AppleHealthDeepD
 const CGMForNonDiabetics     = lazy(() => import("./pages/tools/CGMForNonDiabetics"));
 const WalkingProgramFreshStart = lazy(() => import("./pages/tools/WalkingProgramFreshStart"));
 const PelotonAlternatives    = lazy(() => import("./pages/tools/PelotonAlternatives"));
+const AppleFitnessPlusReview = lazy(() => import("./pages/tools/AppleFitnessPlusReview"));
+const SilverSneakersAppDeep  = lazy(() => import("./pages/tools/SilverSneakersAppDeep"));
+const PelotonAppForSeniors   = lazy(() => import("./pages/tools/PelotonAppForSeniors"));
+const SeniorWalkingApps      = lazy(() => import("./pages/tools/SeniorWalkingApps"));
+const HASfitFreeYouTube      = lazy(() => import("./pages/tools/HASfitFreeYouTube"));
 
 // ── Cycle 164 (April 29 2026) — medical management ──
 const HospitalCompareGuide   = lazy(() => import("./pages/tools/HospitalCompareGuide"));
@@ -3775,6 +3780,11 @@ const AppContent = () => {
           <Route path="/tools/cgm-for-non-diabetics" element={<CGMForNonDiabetics />} />
           <Route path="/tools/walking-program-fresh-start" element={<WalkingProgramFreshStart />} />
           <Route path="/tools/peloton-alternatives" element={<PelotonAlternatives />} />
+          <Route path="/tools/apple-fitness-plus-review" element={<AppleFitnessPlusReview />} />
+          <Route path="/tools/silver-sneakers-app-deep" element={<SilverSneakersAppDeep />} />
+          <Route path="/tools/peloton-app-for-seniors" element={<PelotonAppForSeniors />} />
+          <Route path="/tools/senior-walking-apps" element={<SeniorWalkingApps />} />
+          <Route path="/tools/hasfit-free-youtube" element={<HASfitFreeYouTube />} />
           <Route path="/tools/hospital-compare-guide" element={<HospitalCompareGuide />} />
           <Route path="/tools/pre-surgery-checklist" element={<PreSurgeryChecklist />} />
           <Route path="/tools/er-vs-urgent-care" element={<ERVsUrgentCare />} />
