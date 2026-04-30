@@ -281,6 +281,11 @@ const PetTechCoach           = lazy(() => import("./pages/tools/PetTechCoach"));
 const TravelTechPack         = lazy(() => import("./pages/tools/TravelTechPack"));
 const MapsGpsCoach           = lazy(() => import("./pages/tools/MapsGpsCoach"));
 const RestaurantReservationCoach = lazy(() => import("./pages/tools/RestaurantReservationCoach"));
+const LifeLockForSeniors     = lazy(() => import("./pages/tools/LifeLockForSeniors"));
+const DeleteMeForSeniorPrivacy = lazy(() => import("./pages/tools/DeleteMeForSeniorPrivacy"));
+const RobocallBlockerApps    = lazy(() => import("./pages/tools/RobocallBlockerApps"));
+const EmailScamSpotterTutorial = lazy(() => import("./pages/tools/EmailScamSpotterTutorial"));
+const SocialMediaPrivacyDeep = lazy(() => import("./pages/tools/SocialMediaPrivacyDeep"));
 const SeniorDiscountApps     = lazy(() => import("./pages/tools/SeniorDiscountApps"));
 const AmazonPrimeMastery     = lazy(() => import("./pages/tools/AmazonPrimeMastery"));
 
@@ -2829,6 +2834,11 @@ const AppContent = () => {
           <Route path="/tools/travel-tech-pack" element={<TravelTechPack />} />
           <Route path="/tools/maps-gps-coach" element={<MapsGpsCoach />} />
           <Route path="/tools/restaurant-reservation-coach" element={<RestaurantReservationCoach />} />
+          <Route path="/tools/life-lock-for-seniors" element={<LifeLockForSeniors />} />
+          <Route path="/tools/delete-me-for-senior-privacy" element={<DeleteMeForSeniorPrivacy />} />
+          <Route path="/tools/robocall-blocker-apps" element={<RobocallBlockerApps />} />
+          <Route path="/tools/email-scam-spotter-tutorial" element={<EmailScamSpotterTutorial />} />
+          <Route path="/tools/social-media-privacy-deep" element={<SocialMediaPrivacyDeep />} />
           <Route path="/tools/senior-discount-apps" element={<SeniorDiscountApps />} />
           <Route path="/tools/amazon-prime-mastery" element={<AmazonPrimeMastery />} />
 
