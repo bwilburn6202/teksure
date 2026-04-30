@@ -301,6 +301,11 @@ const HomeScreenOrganizer    = lazy(() => import("./pages/tools/HomeScreenOrgani
 // ── Cycle 17 (April 29 2026) — nature/cooking/watch ──
 const PlantIdApps            = lazy(() => import("./pages/tools/PlantIdApps"));
 const BirdIdMerlin           = lazy(() => import("./pages/tools/BirdIdMerlin"));
+const AllTrailsForSeniors    = lazy(() => import("./pages/tools/AllTrailsForSeniors"));
+const NationalParksAppSeniors = lazy(() => import("./pages/tools/NationalParksAppSeniors"));
+const MerlinBirdSongID       = lazy(() => import("./pages/tools/MerlinBirdSongID"));
+const INaturalistAppForSeniors = lazy(() => import("./pages/tools/INaturalistAppForSeniors"));
+const SeniorOutdoorClubsApps = lazy(() => import("./pages/tools/SeniorOutdoorClubsApps"));
 const StargazingApps         = lazy(() => import("./pages/tools/StargazingApps"));
 const RecipeMealApps         = lazy(() => import("./pages/tools/RecipeMealApps"));
 const AppleWatchHealthCoach  = lazy(() => import("./pages/tools/AppleWatchHealthCoach"));
@@ -2779,6 +2784,11 @@ const AppContent = () => {
           {/* Cycle 17 — nature / cooking / watch */}
           <Route path="/tools/plant-id-apps" element={<PlantIdApps />} />
           <Route path="/tools/bird-id-merlin" element={<BirdIdMerlin />} />
+          <Route path="/tools/all-trails-for-seniors" element={<AllTrailsForSeniors />} />
+          <Route path="/tools/national-parks-app-seniors" element={<NationalParksAppSeniors />} />
+          <Route path="/tools/merlin-bird-song-id" element={<MerlinBirdSongID />} />
+          <Route path="/tools/inaturalist-app-for-seniors" element={<INaturalistAppForSeniors />} />
+          <Route path="/tools/senior-outdoor-clubs-apps" element={<SeniorOutdoorClubsApps />} />
           <Route path="/tools/stargazing-apps" element={<StargazingApps />} />
           <Route path="/tools/recipe-meal-apps" element={<RecipeMealApps />} />
           <Route path="/tools/apple-watch-health-coach" element={<AppleWatchHealthCoach />} />
