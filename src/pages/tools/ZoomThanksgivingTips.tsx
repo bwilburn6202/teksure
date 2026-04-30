@@ -73,7 +73,7 @@ export default function ZoomThanksgivingTips() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">It&apos;s OK to keep it short</h3>
-            <p className="text-sm text-muted-foreground">15-30 min calls beat awkward 2-hour ones. Match in-person family rhythm. Older folks tire on long calls. Quality > quantity. Better to have great 20 min than mediocre 90 min.</p>
+            <p className="text-sm text-muted-foreground">15-30 min calls beat awkward 2-hour ones. Match in-person family rhythm. Older folks tire on long calls. Quality beats quantity. Better to have great 20 min than mediocre 90 min.</p>
           </CardContent>
         </Card>
       </main>

@@ -46,7 +46,7 @@ export default function LoyaltyProgramsCompared() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Math your money</h2>
-            <p className="text-sm">Before paying — open the previous 12 months of statements. How much did you ACTUALLY spend at the store / category? If membership cost > 5% of spend, probably not worth it.</p>
+            <p className="text-sm">Before paying — open the previous 12 months of statements. How much did you ACTUALLY spend at the store / category? If membership cost is more than 5% of spend, probably not worth it.</p>
           </CardContent>
         </Card>
 

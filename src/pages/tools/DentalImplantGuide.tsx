@@ -47,7 +47,7 @@ export default function DentalImplantGuide() {
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Save money</h2>
             <ul className="list-disc pl-5 space-y-2 text-sm">
-              <li><strong>Dental schools</strong> — students do work at 30-50% off, supervised.</strong></li>
+              <li><strong>Dental schools</strong> — students do work at 30-50% off, supervised.</li>
               <li><strong>Mexico / Costa Rica dental tourism</strong> — 50-70% savings, but research carefully.</li>
               <li><strong>Costco hearing/dental</strong> — some Costcos have implant pricing for members.</li>
               <li><strong>"Smile clubs" / In-house dental plans</strong> — $200-500/yr replaces insurance, big discount.</li>

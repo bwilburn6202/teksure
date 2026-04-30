@@ -58,7 +58,7 @@ export default function SunscreenAppPicks() {
             <h2 className="font-bold text-xl mb-3">Senior-specific cancer screening</h2>
             <ul className="list-disc pl-5 space-y-2 text-sm">
               <li>Annual skin check by dermatologist (Medicare covered for at-risk).</li>
-              <li>Self-check monthly: ABCDE — Asymmetry, Border, Color, Diameter (>6mm), Evolving.</li>
+              <li>Self-check monthly: ABCDE — Asymmetry, Border, Color, Diameter (over 6mm), Evolving.</li>
               <li>Photo any new spots — track changes.</li>
               <li>Most senior skin cancers caught early are curable.</li>
               <li>Free skin checks — many dermatologists do during May (Skin Cancer Awareness).</li>

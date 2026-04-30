@@ -41,7 +41,7 @@ export default function BestCreditCardsSeniors() {
 
         <Card className="mb-4">
           <CardContent className="pt-6">
-            <h2 className="font-bold text-xl mb-3">Why credit > debit</h2>
+            <h2 className="font-bold text-xl mb-3">Why credit beats debit</h2>
             <ul className="list-disc pl-5 space-y-2 text-sm">
               <li>Fraud protection — credit company fights bad charges.</li>
               <li>NOT your money at risk during fraud (debit IS your money).</li>
