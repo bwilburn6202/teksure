@@ -1924,6 +1924,11 @@ const ChairExercisesForSeniors  = lazy(() => import("./pages/tools/ChairExercise
 const BalanceExercisesSeniors   = lazy(() => import("./pages/tools/BalanceExercisesSeniors"));
 const WordsWithFriendsSeniors   = lazy(() => import("./pages/tools/WordsWithFriendsSeniors"));
 const AARPTaxAideGuide          = lazy(() => import("./pages/tools/AARPTaxAideGuide"));
+const TurboTaxForSeniors        = lazy(() => import("./pages/tools/TurboTaxForSeniors"));
+const HRBlockForSeniors         = lazy(() => import("./pages/tools/HRBlockForSeniors"));
+const QuickenForRetirees        = lazy(() => import("./pages/tools/QuickenForRetirees"));
+const RothConversionCalculators = lazy(() => import("./pages/tools/RothConversionCalculators"));
+const IRSGovOnlineAccount       = lazy(() => import("./pages/tools/IRSGovOnlineAccount"));
 const PropertyTaxExemptionSeniors = lazy(() => import("./pages/tools/PropertyTaxExemptionSeniors"));
 const SocialSecurityClaimingStrategy = lazy(() => import("./pages/tools/SocialSecurityClaimingStrategy"));
 const SeniorDiscountFinder      = lazy(() => import("./pages/tools/SeniorDiscountFinder"));
@@ -4255,6 +4260,11 @@ const AppContent = () => {
           <Route path="/tools/balance-exercises-seniors" element={<BalanceExercisesSeniors />} />
           <Route path="/tools/words-with-friends-seniors" element={<WordsWithFriendsSeniors />} />
           <Route path="/tools/aarp-tax-aide-guide" element={<AARPTaxAideGuide />} />
+          <Route path="/tools/turbotax-for-seniors" element={<TurboTaxForSeniors />} />
+          <Route path="/tools/hr-block-for-seniors" element={<HRBlockForSeniors />} />
+          <Route path="/tools/quicken-for-retirees" element={<QuickenForRetirees />} />
+          <Route path="/tools/roth-conversion-calculators" element={<RothConversionCalculators />} />
+          <Route path="/tools/irs-gov-online-account" element={<IRSGovOnlineAccount />} />
           <Route path="/tools/property-tax-exemption-seniors" element={<PropertyTaxExemptionSeniors />} />
           <Route path="/tools/social-security-claiming-strategy" element={<SocialSecurityClaimingStrategy />} />
           <Route path="/tools/senior-discount-finder" element={<SeniorDiscountFinder />} />
