@@ -1730,6 +1730,11 @@ const GrandkidSummerVisits   = lazy(() => import("./pages/tools/GrandkidSummerVi
 const BestBooksForSeniors    = lazy(() => import("./pages/tools/BestBooksForSeniors"));
 const BookClubsHowToFind     = lazy(() => import("./pages/tools/BookClubsHowToFind"));
 const BestPodcastsSeniors    = lazy(() => import("./pages/tools/BestPodcastsSeniors"));
+const ApplePodcastsForSeniors = lazy(() => import("./pages/tools/ApplePodcastsForSeniors"));
+const SpotifyForSeniorListeners = lazy(() => import("./pages/tools/SpotifyForSeniorListeners"));
+const AudibleAppForSeniors   = lazy(() => import("./pages/tools/AudibleAppForSeniors"));
+const SeniorRadioApps        = lazy(() => import("./pages/tools/SeniorRadioApps"));
+const PocketCastsForSeniors  = lazy(() => import("./pages/tools/PocketCastsForSeniors"));
 const KindleVsPaperbookSeniors = lazy(() => import("./pages/tools/KindleVsPaperbookSeniors"));
 const AudiobookListenWalking = lazy(() => import("./pages/tools/AudiobookListenWalking"));
 
@@ -4088,6 +4093,11 @@ const AppContent = () => {
           <Route path="/tools/best-books-for-seniors" element={<BestBooksForSeniors />} />
           <Route path="/tools/book-clubs-how-to-find" element={<BookClubsHowToFind />} />
           <Route path="/tools/best-podcasts-seniors" element={<BestPodcastsSeniors />} />
+          <Route path="/tools/apple-podcasts-for-seniors" element={<ApplePodcastsForSeniors />} />
+          <Route path="/tools/spotify-for-senior-listeners" element={<SpotifyForSeniorListeners />} />
+          <Route path="/tools/audible-app-for-seniors" element={<AudibleAppForSeniors />} />
+          <Route path="/tools/senior-radio-apps" element={<SeniorRadioApps />} />
+          <Route path="/tools/pocket-casts-for-seniors" element={<PocketCastsForSeniors />} />
           <Route path="/tools/kindle-vs-paperbook-seniors" element={<KindleVsPaperbookSeniors />} />
           <Route path="/tools/audiobook-listen-walking" element={<AudiobookListenWalking />} />
           <Route path="/tools/senior-camping-guide" element={<SeniorCampingGuide />} />
