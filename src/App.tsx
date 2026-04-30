@@ -1505,6 +1505,11 @@ const RainBarrelGuide        = lazy(() => import("./pages/tools/RainBarrelGuide"
 
 // ── Cycle 172 (April 29 2026) — senior crafts ──
 const WatercolorBeginnerSeniors = lazy(() => import("./pages/tools/WatercolorBeginnerSeniors"));
+const RavelryForKnitters     = lazy(() => import("./pages/tools/RavelryForKnitters"));
+const CricutForSeniorCrafters = lazy(() => import("./pages/tools/CricutForSeniorCrafters"));
+const EtsySellingForSeniors  = lazy(() => import("./pages/tools/EtsySellingForSeniors"));
+const QuiltDesignSoftware    = lazy(() => import("./pages/tools/QuiltDesignSoftware"));
+const SeniorPaintingClasses  = lazy(() => import("./pages/tools/SeniorPaintingClasses"));
 const PaintByNumbersAdult    = lazy(() => import("./pages/tools/PaintByNumbersAdult"));
 const JewelryMakingSeniors   = lazy(() => import("./pages/tools/JewelryMakingSeniors"));
 const PotteryClassesGuide    = lazy(() => import("./pages/tools/PotteryClassesGuide"));
@@ -3901,6 +3906,11 @@ const AppContent = () => {
           <Route path="/tools/herb-gardening-window" element={<HerbGardeningWindow />} />
           <Route path="/tools/rain-barrel-guide" element={<RainBarrelGuide />} />
           <Route path="/tools/watercolor-beginner-seniors" element={<WatercolorBeginnerSeniors />} />
+          <Route path="/tools/ravelry-for-knitters" element={<RavelryForKnitters />} />
+          <Route path="/tools/cricut-for-senior-crafters" element={<CricutForSeniorCrafters />} />
+          <Route path="/tools/etsy-selling-for-seniors" element={<EtsySellingForSeniors />} />
+          <Route path="/tools/quilt-design-software" element={<QuiltDesignSoftware />} />
+          <Route path="/tools/senior-painting-classes" element={<SeniorPaintingClasses />} />
           <Route path="/tools/paint-by-numbers-adult" element={<PaintByNumbersAdult />} />
           <Route path="/tools/jewelry-making-seniors" element={<JewelryMakingSeniors />} />
           <Route path="/tools/pottery-classes-guide" element={<PotteryClassesGuide />} />
