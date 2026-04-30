@@ -2108,6 +2108,13 @@ const HomeSecurityCamerasForSeniors         = lazy(() => import("./pages/tools/H
 const PoolSafetyForSeniorGrandkids          = lazy(() => import("./pages/tools/PoolSafetyForSeniorGrandkids"));
 const CarbonMonoxideAppsForSeniors          = lazy(() => import("./pages/tools/CarbonMonoxideAppsForSeniors"));
 
+// ── Cycle 329 (April 30 2026) — senior fitness trackers deeper ──
+const FitbitInspireForSeniors               = lazy(() => import("./pages/tools/FitbitInspireForSeniors"));
+const StepCountAppsForSeniors               = lazy(() => import("./pages/tools/StepCountAppsForSeniors"));
+const SeniorHRZonesGuide                    = lazy(() => import("./pages/tools/SeniorHRZonesGuide"));
+const StravaForSeniorWalkers                = lazy(() => import("./pages/tools/StravaForSeniorWalkers"));
+const StrengthTrainingForSeniorAppGuide     = lazy(() => import("./pages/tools/StrengthTrainingForSeniorAppGuide"));
+
 // ── Cycle 195 (April 29 2026) — DIY home ──
 const BasicToolsForSeniors   = lazy(() => import("./pages/tools/BasicToolsForSeniors"));
 const PaintingTipsSeniors    = lazy(() => import("./pages/tools/PaintingTipsSeniors"));
@@ -4814,6 +4821,11 @@ const AppContent = () => {
           <Route path="/tools/home-security-cameras-for-seniors" element={<HomeSecurityCamerasForSeniors />} />
           <Route path="/tools/pool-safety-for-senior-grandkids" element={<PoolSafetyForSeniorGrandkids />} />
           <Route path="/tools/carbon-monoxide-apps-for-seniors" element={<CarbonMonoxideAppsForSeniors />} />
+          <Route path="/tools/fitbit-inspire-for-seniors" element={<FitbitInspireForSeniors />} />
+          <Route path="/tools/step-count-apps-for-seniors" element={<StepCountAppsForSeniors />} />
+          <Route path="/tools/senior-hr-zones-guide" element={<SeniorHRZonesGuide />} />
+          <Route path="/tools/strava-for-senior-walkers" element={<StravaForSeniorWalkers />} />
+          <Route path="/tools/strength-training-for-senior-app-guide" element={<StrengthTrainingForSeniorAppGuide />} />
           <Route path="/tools/basic-tools-for-seniors" element={<BasicToolsForSeniors />} />
           <Route path="/tools/painting-tips-seniors" element={<PaintingTipsSeniors />} />
           <Route path="/tools/caulking-basics" element={<CaulkingBasics />} />
