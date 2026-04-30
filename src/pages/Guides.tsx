@@ -10,6 +10,8 @@ import { Footer } from '@/components/layout/Footer';
 import { SEOHead } from '@/components/SEOHead';
 import { guides, categoryLabels, categoryDescriptions, type Guide, type GuideCategory } from '@/data/guides';
 import { getCompletedGuides, getProgressCount } from '@/lib/progress';
+import { getGuideThumbnailUrl, getGuideThumbnailSmall } from '@/lib/guideThumbnails';
+import { StarRating } from '@/components/StarRating';
 
 /* ══════════════════════════════════════════════════════════════════════
    Icon + color mapping per category
