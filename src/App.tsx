@@ -645,6 +645,11 @@ const AppPhoneFrozenFix      = lazy(() => import("./pages/tools/AppPhoneFrozenFi
 
 // ── Cycle 62 (April 29 2026) — pharmacy/bundles/grocery/Apple ──
 const PharmacyRewards        = lazy(() => import("./pages/tools/PharmacyRewards"));
+const AppleWalletForLoyalty  = lazy(() => import("./pages/tools/AppleWalletForLoyalty"));
+const StarbucksAppRewards    = lazy(() => import("./pages/tools/StarbucksAppRewards"));
+const PharmacyAppRewards     = lazy(() => import("./pages/tools/PharmacyAppRewards"));
+const GroceryAppDeepDive     = lazy(() => import("./pages/tools/GroceryAppDeepDive"));
+const GasStationAppRewards   = lazy(() => import("./pages/tools/GasStationAppRewards"));
 const StreamingBundleStrategy = lazy(() => import("./pages/tools/StreamingBundleStrategy"));
 const PauseStreamingRotation = lazy(() => import("./pages/tools/PauseStreamingRotation"));
 const GroceryRewards         = lazy(() => import("./pages/tools/GroceryRewards"));
@@ -3083,6 +3088,11 @@ const AppContent = () => {
 
           {/* Cycle 62 — pharmacy / bundles / grocery / Apple */}
           <Route path="/tools/pharmacy-rewards" element={<PharmacyRewards />} />
+          <Route path="/tools/apple-wallet-for-loyalty" element={<AppleWalletForLoyalty />} />
+          <Route path="/tools/starbucks-app-rewards" element={<StarbucksAppRewards />} />
+          <Route path="/tools/pharmacy-app-rewards" element={<PharmacyAppRewards />} />
+          <Route path="/tools/grocery-app-deep-dive" element={<GroceryAppDeepDive />} />
+          <Route path="/tools/gas-station-app-rewards" element={<GasStationAppRewards />} />
           <Route path="/tools/streaming-bundle-strategy" element={<StreamingBundleStrategy />} />
           <Route path="/tools/pause-streaming-rotation" element={<PauseStreamingRotation />} />
           <Route path="/tools/grocery-rewards" element={<GroceryRewards />} />
