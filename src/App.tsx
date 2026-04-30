@@ -1914,6 +1914,11 @@ const TechComfortQuiz        = lazy(() => import("./pages/tools/TechComfortQuiz"
 const IsThisAScam            = lazy(() => import("./pages/tools/IsThisAScam"));
 const DeviceComparison       = lazy(() => import("./pages/tools/DeviceComparison"));
 const SubscriptionAuditor    = lazy(() => import("./pages/tools/SubscriptionAuditor"));
+const RocketMoneySubscriptionTracker = lazy(() => import("./pages/tools/RocketMoneySubscriptionTracker"));
+const AppleHomeKitForSeniors = lazy(() => import("./pages/tools/AppleHomeKitForSeniors"));
+const EchoShowForSeniors     = lazy(() => import("./pages/tools/EchoShowForSeniors"));
+const IPostalMailScanning    = lazy(() => import("./pages/tools/IPostalMailScanning"));
+const SnowbirdTechSetup      = lazy(() => import("./pages/tools/SnowbirdTechSetup"));
 const PrivacyHub             = lazy(() => import("./pages/PrivacyHub"));
 const DataBrokerRemoval      = lazy(() => import("./pages/DataBrokerRemoval"));
 const VeteransTechHub        = lazy(() => import("./pages/VeteransTechHub"));
@@ -2477,6 +2482,11 @@ const AppContent = () => {
           <Route path="/tools/robocall-blocker" element={<RobocallBlocker />} />
           <Route path="/tools/password-leak-checker" element={<Navigate to="/tools/password-health" replace />} />
           <Route path="/tools/subscription-auditor" element={<SubscriptionAuditor />} />
+          <Route path="/tools/rocket-money-subscription-tracker" element={<RocketMoneySubscriptionTracker />} />
+          <Route path="/tools/apple-homekit-for-seniors" element={<AppleHomeKitForSeniors />} />
+          <Route path="/tools/echo-show-for-seniors" element={<EchoShowForSeniors />} />
+          <Route path="/tools/ipostal-mail-scanning" element={<IPostalMailScanning />} />
+          <Route path="/tools/snowbird-tech-setup" element={<SnowbirdTechSetup />} />
           <Route path="/privacy-hub" element={<PrivacyHub />} />
           <Route path="/data-broker-removal" element={<DataBrokerRemoval />} />
           <Route path="/veterans-tech-hub" element={<VeteransTechHub />} />
