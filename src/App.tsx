@@ -1933,6 +1933,13 @@ const SocialSecurityClaimingApps            = lazy(() => import("./pages/tools/S
 const RetirementCalculatorsForSeniors       = lazy(() => import("./pages/tools/RetirementCalculatorsForSeniors"));
 const TaxLossHarvestingForSeniors           = lazy(() => import("./pages/tools/TaxLossHarvestingForSeniors"));
 
+// ── Cycle 304 (April 30 2026) — senior smart speaker deep ──
+const AlexaDropInForSeniorFamilies          = lazy(() => import("./pages/tools/AlexaDropInForSeniorFamilies"));
+const EchoShowForSeniorMomCenter            = lazy(() => import("./pages/tools/EchoShowForSeniorMomCenter"));
+const GoogleAssistantRoutinesForSeniors     = lazy(() => import("./pages/tools/GoogleAssistantRoutinesForSeniors"));
+const SiriFamilyGroupForSeniors             = lazy(() => import("./pages/tools/SiriFamilyGroupForSeniors"));
+const SmartSpeakerPrivacyForSeniors         = lazy(() => import("./pages/tools/SmartSpeakerPrivacyForSeniors"));
+
 // ── Cycle 195 (April 29 2026) — DIY home ──
 const BasicToolsForSeniors   = lazy(() => import("./pages/tools/BasicToolsForSeniors"));
 const PaintingTipsSeniors    = lazy(() => import("./pages/tools/PaintingTipsSeniors"));
@@ -4514,6 +4521,11 @@ const AppContent = () => {
           <Route path="/tools/social-security-claiming-apps" element={<SocialSecurityClaimingApps />} />
           <Route path="/tools/retirement-calculators-for-seniors" element={<RetirementCalculatorsForSeniors />} />
           <Route path="/tools/tax-loss-harvesting-for-seniors" element={<TaxLossHarvestingForSeniors />} />
+          <Route path="/tools/alexa-drop-in-for-senior-families" element={<AlexaDropInForSeniorFamilies />} />
+          <Route path="/tools/echo-show-for-senior-mom-center" element={<EchoShowForSeniorMomCenter />} />
+          <Route path="/tools/google-assistant-routines-for-seniors" element={<GoogleAssistantRoutinesForSeniors />} />
+          <Route path="/tools/siri-family-group-for-seniors" element={<SiriFamilyGroupForSeniors />} />
+          <Route path="/tools/smart-speaker-privacy-for-seniors" element={<SmartSpeakerPrivacyForSeniors />} />
           <Route path="/tools/basic-tools-for-seniors" element={<BasicToolsForSeniors />} />
           <Route path="/tools/painting-tips-seniors" element={<PaintingTipsSeniors />} />
           <Route path="/tools/caulking-basics" element={<CaulkingBasics />} />
