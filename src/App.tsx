@@ -1292,6 +1292,11 @@ const HairThinningOptions    = lazy(() => import("./pages/tools/HairThinningOpti
 const LonelinessReliefGuide  = lazy(() => import("./pages/tools/LonelinessReliefGuide"));
 const SeniorMentorshipGuide  = lazy(() => import("./pages/tools/SeniorMentorshipGuide"));
 const DatingAfter60Guide     = lazy(() => import("./pages/tools/DatingAfter60Guide"));
+const OurTimeReviewSeniors   = lazy(() => import("./pages/tools/OurTimeReviewSeniors"));
+const SilverSinglesReview    = lazy(() => import("./pages/tools/SilverSinglesReview"));
+const RomanceScamSpottingFor60Plus = lazy(() => import("./pages/tools/RomanceScamSpottingFor60Plus"));
+const SeniorWidowedDating    = lazy(() => import("./pages/tools/SeniorWidowedDating"));
+const StitchAppFor50Plus     = lazy(() => import("./pages/tools/StitchAppFor50Plus"));
 const SeniorRoommateMatching = lazy(() => import("./pages/tools/SeniorRoommateMatching"));
 const JoinASeniorClub        = lazy(() => import("./pages/tools/JoinASeniorClub"));
 
@@ -3768,6 +3773,11 @@ const AppContent = () => {
           <Route path="/tools/loneliness-relief-guide" element={<LonelinessReliefGuide />} />
           <Route path="/tools/senior-mentorship-guide" element={<SeniorMentorshipGuide />} />
           <Route path="/tools/dating-after-60-guide" element={<DatingAfter60Guide />} />
+          <Route path="/tools/our-time-review-seniors" element={<OurTimeReviewSeniors />} />
+          <Route path="/tools/silver-singles-review" element={<SilverSinglesReview />} />
+          <Route path="/tools/romance-scam-spotting-for-60-plus" element={<RomanceScamSpottingFor60Plus />} />
+          <Route path="/tools/senior-widowed-dating" element={<SeniorWidowedDating />} />
+          <Route path="/tools/stitch-app-for-50-plus" element={<StitchAppFor50Plus />} />
           <Route path="/tools/senior-roommate-matching" element={<SeniorRoommateMatching />} />
           <Route path="/tools/join-a-senior-club" element={<JoinASeniorClub />} />
           <Route path="/tools/snowbird-setup" element={<SnowbirdSetup />} />
