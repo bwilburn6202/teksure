@@ -2101,6 +2101,13 @@ const AppointmentTrackingForSeniors         = lazy(() => import("./pages/tools/A
 const RecurringTaskSetupForSeniors          = lazy(() => import("./pages/tools/RecurringTaskSetupForSeniors"));
 const CalendlyForSeniorScheduling           = lazy(() => import("./pages/tools/CalendlyForSeniorScheduling"));
 
+// ── Cycle 328 (April 30 2026) — senior weather + safety ──
+const AccuWeatherForSeniors                 = lazy(() => import("./pages/tools/AccuWeatherForSeniors"));
+const EmergencyBroadcastsForSeniors         = lazy(() => import("./pages/tools/EmergencyBroadcastsForSeniors"));
+const HomeSecurityCamerasForSeniors         = lazy(() => import("./pages/tools/HomeSecurityCamerasForSeniors"));
+const PoolSafetyForSeniorGrandkids          = lazy(() => import("./pages/tools/PoolSafetyForSeniorGrandkids"));
+const CarbonMonoxideAppsForSeniors          = lazy(() => import("./pages/tools/CarbonMonoxideAppsForSeniors"));
+
 // ── Cycle 195 (April 29 2026) — DIY home ──
 const BasicToolsForSeniors   = lazy(() => import("./pages/tools/BasicToolsForSeniors"));
 const PaintingTipsSeniors    = lazy(() => import("./pages/tools/PaintingTipsSeniors"));
@@ -4802,6 +4809,11 @@ const AppContent = () => {
           <Route path="/tools/appointment-tracking-for-seniors" element={<AppointmentTrackingForSeniors />} />
           <Route path="/tools/recurring-task-setup-for-seniors" element={<RecurringTaskSetupForSeniors />} />
           <Route path="/tools/calendly-for-senior-scheduling" element={<CalendlyForSeniorScheduling />} />
+          <Route path="/tools/accuweather-for-seniors" element={<AccuWeatherForSeniors />} />
+          <Route path="/tools/emergency-broadcasts-for-seniors" element={<EmergencyBroadcastsForSeniors />} />
+          <Route path="/tools/home-security-cameras-for-seniors" element={<HomeSecurityCamerasForSeniors />} />
+          <Route path="/tools/pool-safety-for-senior-grandkids" element={<PoolSafetyForSeniorGrandkids />} />
+          <Route path="/tools/carbon-monoxide-apps-for-seniors" element={<CarbonMonoxideAppsForSeniors />} />
           <Route path="/tools/basic-tools-for-seniors" element={<BasicToolsForSeniors />} />
           <Route path="/tools/painting-tips-seniors" element={<PaintingTipsSeniors />} />
           <Route path="/tools/caulking-basics" element={<CaulkingBasics />} />
