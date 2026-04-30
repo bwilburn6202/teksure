@@ -110,6 +110,19 @@
     letter-spacing: -0.011em;
     overflow-x: hidden;
   }
+  /* Site-wide mesh wallpaper canvas — fixed behind every route so page
+     content sits on top. Without this rule the canvas flows inline at
+     full viewport size and pushes content off-screen. */
+  canvas.teksure-mesh-bg {
+    position: fixed;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    pointer-events: none;
+    transform: translateZ(0);
+    will-change: transform;
+  }
   button, a[role="button"], [role="button"] {
     min-height: 44px;
   }
