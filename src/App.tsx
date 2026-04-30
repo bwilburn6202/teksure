@@ -2000,6 +2000,8 @@ const DictationSetup         = lazy(() => import("./pages/tools/DictationSetup")
 const OtterAITranscription   = lazy(() => import("./pages/tools/OtterAITranscription"));
 const VoiceTypingPhoneTutorial = lazy(() => import("./pages/tools/VoiceTypingPhoneTutorial"));
 const SiriCommandsCheatSheet = lazy(() => import("./pages/tools/SiriCommandsCheatSheet"));
+const GoogleAssistantSeniorCommands = lazy(() => import("./pages/tools/GoogleAssistantSeniorCommands"));
+const StylusForSeniorTablets = lazy(() => import("./pages/tools/StylusForSeniorTablets"));
 const AppleWatchAccessibility = lazy(() => import("./pages/tools/AppleWatchAccessibility"));
 const PhoneStylusForArthritis = lazy(() => import("./pages/tools/PhoneStylusForArthritis"));
 const AccountDeletionWizard  = lazy(() => import("./pages/tools/AccountDeletionWizard"));
@@ -4128,6 +4130,8 @@ const AppContent = () => {
           <Route path="/tools/otter-ai-transcription" element={<OtterAITranscription />} />
           <Route path="/tools/voice-typing-phone-tutorial" element={<VoiceTypingPhoneTutorial />} />
           <Route path="/tools/siri-commands-cheat-sheet" element={<SiriCommandsCheatSheet />} />
+          <Route path="/tools/google-assistant-senior-commands" element={<GoogleAssistantSeniorCommands />} />
+          <Route path="/tools/stylus-for-senior-tablets" element={<StylusForSeniorTablets />} />
           <Route path="/tools/apple-watch-accessibility" element={<AppleWatchAccessibility />} />
           <Route path="/tools/phone-stylus-for-arthritis" element={<PhoneStylusForArthritis />} />
           <Route path="/tools/account-deletion-wizard"     element={<AccountDeletionWizard />} />
