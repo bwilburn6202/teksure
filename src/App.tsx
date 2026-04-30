@@ -852,6 +852,11 @@ const SnowSafetyTech         = lazy(() => import("./pages/tools/SnowSafetyTech")
 // ── Cycle 85 (April 29 2026) — civic + community ──
 const VotingTechHelp         = lazy(() => import("./pages/tools/VotingTechHelp"));
 const NextdoorBasics         = lazy(() => import("./pages/tools/NextdoorBasics"));
+const EbayForSeniorSellers   = lazy(() => import("./pages/tools/EbayForSeniorSellers"));
+const FacebookMarketplaceTips = lazy(() => import("./pages/tools/FacebookMarketplaceTips"));
+const PoshmarkVintageSelling = lazy(() => import("./pages/tools/PoshmarkVintageSelling"));
+const EstateSaleApps         = lazy(() => import("./pages/tools/EstateSaleApps"));
+const SeniorYardSaleStrategy = lazy(() => import("./pages/tools/SeniorYardSaleStrategy"));
 const VolunteerMatchApps     = lazy(() => import("./pages/tools/VolunteerMatchApps"));
 const LocalNewsApps          = lazy(() => import("./pages/tools/LocalNewsApps"));
 const CityOpenDataTools      = lazy(() => import("./pages/tools/CityOpenDataTools"));
@@ -3355,6 +3360,11 @@ const AppContent = () => {
           {/* Cycle 85 — civic + community */}
           <Route path="/tools/voting-tech-help" element={<VotingTechHelp />} />
           <Route path="/tools/nextdoor-basics" element={<NextdoorBasics />} />
+          <Route path="/tools/ebay-for-senior-sellers" element={<EbayForSeniorSellers />} />
+          <Route path="/tools/facebook-marketplace-tips" element={<FacebookMarketplaceTips />} />
+          <Route path="/tools/poshmark-vintage-selling" element={<PoshmarkVintageSelling />} />
+          <Route path="/tools/estate-sale-apps" element={<EstateSaleApps />} />
+          <Route path="/tools/senior-yard-sale-strategy" element={<SeniorYardSaleStrategy />} />
           <Route path="/tools/volunteer-match-apps" element={<VolunteerMatchApps />} />
           <Route path="/tools/local-news-apps" element={<LocalNewsApps />} />
           <Route path="/tools/city-open-data-tools" element={<CityOpenDataTools />} />
