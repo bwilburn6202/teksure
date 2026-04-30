@@ -1064,6 +1064,11 @@ const TeethCleaningApps      = lazy(() => import("./pages/tools/TeethCleaningApp
 const SeniorDrivingTests     = lazy(() => import("./pages/tools/SeniorDrivingTests"));
 const AutoInsuranceSeniors   = lazy(() => import("./pages/tools/AutoInsuranceSeniors"));
 const BackupCameraRetrofit   = lazy(() => import("./pages/tools/BackupCameraRetrofit"));
+const NexarDashCamApp        = lazy(() => import("./pages/tools/NexarDashCamApp"));
+const ParkMobileSparkSeniors = lazy(() => import("./pages/tools/ParkMobileSparkSeniors"));
+const AAAMobileForSeniors    = lazy(() => import("./pages/tools/AAAMobileForSeniors"));
+const SeniorDrivingAssist    = lazy(() => import("./pages/tools/SeniorDrivingAssist"));
+const RentalCarAppsForSeniors = lazy(() => import("./pages/tools/RentalCarAppsForSeniors"));
 const BlindSpotMirrorSetups  = lazy(() => import("./pages/tools/BlindSpotMirrorSetups"));
 const SeniorRideShareAlternatives = lazy(() => import("./pages/tools/SeniorRideShareAlternatives"));
 
@@ -3542,6 +3547,11 @@ const AppContent = () => {
           <Route path="/tools/senior-driving-tests" element={<SeniorDrivingTests />} />
           <Route path="/tools/auto-insurance-seniors" element={<AutoInsuranceSeniors />} />
           <Route path="/tools/backup-camera-retrofit" element={<BackupCameraRetrofit />} />
+          <Route path="/tools/nexar-dash-cam-app" element={<NexarDashCamApp />} />
+          <Route path="/tools/park-mobile-spark-seniors" element={<ParkMobileSparkSeniors />} />
+          <Route path="/tools/aaa-mobile-for-seniors" element={<AAAMobileForSeniors />} />
+          <Route path="/tools/senior-driving-assist" element={<SeniorDrivingAssist />} />
+          <Route path="/tools/rental-car-apps-for-seniors" element={<RentalCarAppsForSeniors />} />
           <Route path="/tools/blind-spot-mirror-setups" element={<BlindSpotMirrorSetups />} />
           <Route path="/tools/senior-rideshare-alternatives" element={<SeniorRideShareAlternatives />} />
 
