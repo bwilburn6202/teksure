@@ -310,6 +310,11 @@ const SkypeReplacement       = lazy(() => import("./pages/tools/SkypeReplacement
 // ── Cycle 19 (April 29 2026) — brain/genealogy/frame/sound/volunteer ──
 const BrainTrainingApps      = lazy(() => import("./pages/tools/BrainTrainingApps"));
 const GenealogyApps          = lazy(() => import("./pages/tools/GenealogyApps"));
+const FamilySearchFreeApp    = lazy(() => import("./pages/tools/FamilySearchFreeApp"));
+const StoryWorthFamilyMemoir = lazy(() => import("./pages/tools/StoryWorthFamilyMemoir"));
+const MyHeritageDNAComparison = lazy(() => import("./pages/tools/MyHeritageDNAComparison"));
+const RecordFamilyHistoryAudio = lazy(() => import("./pages/tools/RecordFamilyHistoryAudio"));
+const OldPhotoScanningApps   = lazy(() => import("./pages/tools/OldPhotoScanningApps"));
 const DigitalPhotoFramePicker = lazy(() => import("./pages/tools/DigitalPhotoFramePicker"));
 const TvSoundBarPicker       = lazy(() => import("./pages/tools/TvSoundBarPicker"));
 const VolunteerApps          = lazy(() => import("./pages/tools/VolunteerApps"));
@@ -2646,6 +2651,11 @@ const AppContent = () => {
           {/* Cycle 19 — brain/genealogy/frame/sound/volunteer */}
           <Route path="/tools/brain-training-apps" element={<BrainTrainingApps />} />
           <Route path="/tools/genealogy-apps" element={<GenealogyApps />} />
+          <Route path="/tools/family-search-free-app" element={<FamilySearchFreeApp />} />
+          <Route path="/tools/story-worth-family-memoir" element={<StoryWorthFamilyMemoir />} />
+          <Route path="/tools/my-heritage-dna-comparison" element={<MyHeritageDNAComparison />} />
+          <Route path="/tools/record-family-history-audio" element={<RecordFamilyHistoryAudio />} />
+          <Route path="/tools/old-photo-scanning-apps" element={<OldPhotoScanningApps />} />
           <Route path="/tools/digital-photo-frame-picker" element={<DigitalPhotoFramePicker />} />
           <Route path="/tools/tv-sound-bar-picker" element={<TvSoundBarPicker />} />
           <Route path="/tools/volunteer-apps" element={<VolunteerApps />} />
