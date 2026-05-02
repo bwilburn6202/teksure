@@ -7,22 +7,22 @@ import { Eye } from 'lucide-react';
 export default function SeniorBeMyEyes() {
   return (
     <div className="min-h-screen flex flex-col bg-background">
-      <SEOHead title="Be My Eyes for Seniors — TekSure" description="Free app connects low-vision users with sighted volunteers — and AI." />
+      <SEOHead title="Be My Eyes — Senior Guide" description="Free help from sighted volunteers when needed." />
       <Navbar />
       <main className="flex-1 container mx-auto px-4 py-10 max-w-3xl">
         <div className="text-center mb-8">
           <Eye className="w-14 h-14 text-primary mx-auto mb-3" />
           <h1 className="text-4xl font-bold mb-2">Be My Eyes</h1>
-          <p className="text-lg text-muted-foreground">A pair of eyes — anytime, free.</p>
+          <p className="text-lg text-muted-foreground">Free help when sight is hard.</p>
         </div>
         <div className="space-y-4">
-          <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">What it is</h2><p>Free app. Connects you to a sighted volunteer by video call. They help read or describe.</p></CardContent></Card>
-          <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Common uses</h2><ul className="list-disc pl-5 space-y-1 text-sm"><li>Read mail</li><li>Match clothing colors</li><li>Check expiration dates</li><li>Read pill bottles</li></ul></CardContent></Card>
-          <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">AI Be My AI</h2><p>Free GPT-powered. Snap any photo. AI describes what&apos;s in it. No human needed.</p></CardContent></Card>
-          <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">7+ million volunteers</h2><p>Average wait time: under 30 seconds. Available worldwide.</p></CardContent></Card>
-          <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Privacy</h2><p>Volunteers see only what your camera shows. They can&apos;t access anything else.</p></CardContent></Card>
-          <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Get the app</h2><p>Free in App Store and Google Play. Search &ldquo;Be My Eyes.&rdquo;</p></CardContent></Card>
-          <Card className="bg-muted/40"><CardContent className="pt-6"><p className="text-sm">Quick Tip: Even good eyesight helps with tiny prescription print. The app is for everyone.</p></CardContent></Card>
+          <Card><CardContent className="p-6"><h2 className="text-xl font-semibold mb-2">1. Free</h2><p>App connects you with sighted volunteers via video call. 24/7 worldwide.</p></CardContent></Card>
+          <Card><CardContent className="p-6"><h2 className="text-xl font-semibold mb-2">2. Read labels</h2><p>Volunteer reads expiration dates, medication names, wash instructions.</p></CardContent></Card>
+          <Card><CardContent className="p-6"><h2 className="text-xl font-semibold mb-2">3. Sort mail</h2><p>Hold up envelopes — volunteer reads sender names. Saves opening every one.</p></CardContent></Card>
+          <Card><CardContent className="p-6"><h2 className="text-xl font-semibold mb-2">4. Match clothes</h2><p>Quick pic. Volunteer tells you the color and pattern.</p></CardContent></Card>
+          <Card><CardContent className="p-6"><h2 className="text-xl font-semibold mb-2">5. AI mode</h2><p>New Be My AI uses ChatGPT vision. Instant descriptions of photos.</p></CardContent></Card>
+          <Card><CardContent className="p-6"><h2 className="text-xl font-semibold mb-2">6. Specialized help</h2><p>Microsoft, Google, banks have trained volunteers for tech, banking, accessibility.</p></CardContent></Card>
+          <Card className="bg-muted/40"><CardContent className="p-6"><p>Volunteers are friendly and patient. No call too small. They want to help.</p></CardContent></Card>
         </div>
       </main>
       <Footer />
