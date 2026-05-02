@@ -2461,6 +2461,11 @@ const SeniorGoogleOne                        = lazy(() => import("./pages/tools/
 const SeniorDropboxBasics                    = lazy(() => import("./pages/tools/SeniorDropboxBasics"));
 const SeniorOneDriveBasics                   = lazy(() => import("./pages/tools/SeniorOneDriveBasics"));
 const SeniorBackblaze                        = lazy(() => import("./pages/tools/SeniorBackblaze"));
+const SeniorGoogleMeet                       = lazy(() => import("./pages/tools/SeniorGoogleMeet"));
+const SeniorMessengerVideo                   = lazy(() => import("./pages/tools/SeniorMessengerVideo"));
+const SeniorMarcoPolo                        = lazy(() => import("./pages/tools/SeniorMarcoPolo"));
+const SeniorSkypeBasics                      = lazy(() => import("./pages/tools/SeniorSkypeBasics"));
+const SeniorVideoCallEtiquette               = lazy(() => import("./pages/tools/SeniorVideoCallEtiquette"));
 
 // ── Cycle 195 (April 29 2026) — DIY home ──
 const BasicToolsForSeniors   = lazy(() => import("./pages/tools/BasicToolsForSeniors"));
@@ -5488,6 +5493,11 @@ const AppContent = () => {
           <Route path="/tools/senior-dropbox-basics" element={<SeniorDropboxBasics />} />
           <Route path="/tools/senior-onedrive-basics" element={<SeniorOneDriveBasics />} />
           <Route path="/tools/senior-backblaze" element={<SeniorBackblaze />} />
+          <Route path="/tools/senior-google-meet" element={<SeniorGoogleMeet />} />
+          <Route path="/tools/senior-messenger-video" element={<SeniorMessengerVideo />} />
+          <Route path="/tools/senior-marco-polo" element={<SeniorMarcoPolo />} />
+          <Route path="/tools/senior-skype-basics" element={<SeniorSkypeBasics />} />
+          <Route path="/tools/senior-video-call-etiquette" element={<SeniorVideoCallEtiquette />} />
           <Route path="/tools/basic-tools-for-seniors" element={<BasicToolsForSeniors />} />
           <Route path="/tools/painting-tips-seniors" element={<PaintingTipsSeniors />} />
           <Route path="/tools/caulking-basics" element={<CaulkingBasics />} />
