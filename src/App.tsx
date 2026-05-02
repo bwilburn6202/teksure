@@ -2122,6 +2122,13 @@ const SpeakSelectionForSeniors              = lazy(() => import("./pages/tools/S
 const VoicePinSetupForSeniors               = lazy(() => import("./pages/tools/VoicePinSetupForSeniors"));
 const PodcastTranscriptsForSeniors          = lazy(() => import("./pages/tools/PodcastTranscriptsForSeniors"));
 
+// ── Cycle 331 (April 30 2026) — senior keyboard + streaming ──
+const SeniorMacShortcuts                    = lazy(() => import("./pages/tools/SeniorMacShortcuts"));
+const SeniorWindowsShortcuts                = lazy(() => import("./pages/tools/SeniorWindowsShortcuts"));
+const IPadProForSeniors                     = lazy(() => import("./pages/tools/iPadProForSeniors"));
+const RokuStreamingForSeniors               = lazy(() => import("./pages/tools/RokuStreamingForSeniors"));
+const FireStickForSeniors                   = lazy(() => import("./pages/tools/FireStickForSeniors"));
+
 // ── Cycle 195 (April 29 2026) — DIY home ──
 const BasicToolsForSeniors   = lazy(() => import("./pages/tools/BasicToolsForSeniors"));
 const PaintingTipsSeniors    = lazy(() => import("./pages/tools/PaintingTipsSeniors"));
@@ -4838,6 +4845,11 @@ const AppContent = () => {
           <Route path="/tools/speak-selection-for-seniors" element={<SpeakSelectionForSeniors />} />
           <Route path="/tools/voice-pin-setup-for-seniors" element={<VoicePinSetupForSeniors />} />
           <Route path="/tools/podcast-transcripts-for-seniors" element={<PodcastTranscriptsForSeniors />} />
+          <Route path="/tools/senior-mac-shortcuts" element={<SeniorMacShortcuts />} />
+          <Route path="/tools/senior-windows-shortcuts" element={<SeniorWindowsShortcuts />} />
+          <Route path="/tools/ipad-pro-for-seniors" element={<IPadProForSeniors />} />
+          <Route path="/tools/roku-streaming-for-seniors" element={<RokuStreamingForSeniors />} />
+          <Route path="/tools/firestick-for-seniors" element={<FireStickForSeniors />} />
           <Route path="/tools/basic-tools-for-seniors" element={<BasicToolsForSeniors />} />
           <Route path="/tools/painting-tips-seniors" element={<PaintingTipsSeniors />} />
           <Route path="/tools/caulking-basics" element={<CaulkingBasics />} />
