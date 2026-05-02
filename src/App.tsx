@@ -2576,6 +2576,11 @@ const SeniorRomanceScams                     = lazy(() => import("./pages/tools/
 const SeniorIRSCallScams                     = lazy(() => import("./pages/tools/SeniorIRSCallScams"));
 const SeniorGiftCardScams                    = lazy(() => import("./pages/tools/SeniorGiftCardScams"));
 const SeniorScamReporting                    = lazy(() => import("./pages/tools/SeniorScamReporting"));
+const SeniorComposting                       = lazy(() => import("./pages/tools/SeniorComposting"));
+const SeniorWeatherStations                  = lazy(() => import("./pages/tools/SeniorWeatherStations"));
+const SeniorChickenKeeping                   = lazy(() => import("./pages/tools/SeniorChickenKeeping"));
+const SeniorIndoorGarden                     = lazy(() => import("./pages/tools/SeniorIndoorGarden"));
+const SeniorLeafBlowers                      = lazy(() => import("./pages/tools/SeniorLeafBlowers"));
 
 // ── Cycle 195 (April 29 2026) — DIY home ──
 const BasicToolsForSeniors   = lazy(() => import("./pages/tools/BasicToolsForSeniors"));
@@ -5718,6 +5723,11 @@ const AppContent = () => {
           <Route path="/tools/senior-irs-call-scams" element={<SeniorIRSCallScams />} />
           <Route path="/tools/senior-gift-card-scams" element={<SeniorGiftCardScams />} />
           <Route path="/tools/senior-scam-reporting" element={<SeniorScamReporting />} />
+          <Route path="/tools/senior-composting" element={<SeniorComposting />} />
+          <Route path="/tools/senior-weather-stations" element={<SeniorWeatherStations />} />
+          <Route path="/tools/senior-chicken-keeping" element={<SeniorChickenKeeping />} />
+          <Route path="/tools/senior-indoor-garden" element={<SeniorIndoorGarden />} />
+          <Route path="/tools/senior-leaf-blowers" element={<SeniorLeafBlowers />} />
           <Route path="/tools/basic-tools-for-seniors" element={<BasicToolsForSeniors />} />
           <Route path="/tools/painting-tips-seniors" element={<PaintingTipsSeniors />} />
           <Route path="/tools/caulking-basics" element={<CaulkingBasics />} />
