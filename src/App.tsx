@@ -2611,6 +2611,11 @@ const SeniorEyeNutrition                     = lazy(() => import("./pages/tools/
 const SeniorDryEyeHelp                       = lazy(() => import("./pages/tools/SeniorDryEyeHelp"));
 const SeniorCataractApps                     = lazy(() => import("./pages/tools/SeniorCataractApps"));
 const SeniorGlaucomaTracking                 = lazy(() => import("./pages/tools/SeniorGlaucomaTracking"));
+const SeniorAFibTracking                     = lazy(() => import("./pages/tools/SeniorAFibTracking"));
+const SeniorBPLogging                        = lazy(() => import("./pages/tools/SeniorBPLogging"));
+const SeniorCardioRehab                      = lazy(() => import("./pages/tools/SeniorCardioRehab"));
+const SeniorPulseOximeters                   = lazy(() => import("./pages/tools/SeniorPulseOximeters"));
+const SeniorHeartRecipes                     = lazy(() => import("./pages/tools/SeniorHeartRecipes"));
 
 // ── Cycle 195 (April 29 2026) — DIY home ──
 const BasicToolsForSeniors   = lazy(() => import("./pages/tools/BasicToolsForSeniors"));
@@ -5788,6 +5793,11 @@ const AppContent = () => {
           <Route path="/tools/senior-dry-eye-help" element={<SeniorDryEyeHelp />} />
           <Route path="/tools/senior-cataract-apps" element={<SeniorCataractApps />} />
           <Route path="/tools/senior-glaucoma-tracking" element={<SeniorGlaucomaTracking />} />
+          <Route path="/tools/senior-afib-tracking" element={<SeniorAFibTracking />} />
+          <Route path="/tools/senior-bp-logging" element={<SeniorBPLogging />} />
+          <Route path="/tools/senior-cardio-rehab" element={<SeniorCardioRehab />} />
+          <Route path="/tools/senior-pulse-oximeters" element={<SeniorPulseOximeters />} />
+          <Route path="/tools/senior-heart-recipes" element={<SeniorHeartRecipes />} />
           <Route path="/tools/basic-tools-for-seniors" element={<BasicToolsForSeniors />} />
           <Route path="/tools/painting-tips-seniors" element={<PaintingTipsSeniors />} />
           <Route path="/tools/caulking-basics" element={<CaulkingBasics />} />
