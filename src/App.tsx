@@ -2541,6 +2541,11 @@ const SeniorAppleMusic                       = lazy(() => import("./pages/tools/
 const SeniorPandoraTips                      = lazy(() => import("./pages/tools/SeniorPandoraTips"));
 const SeniorIHeartRadio                      = lazy(() => import("./pages/tools/SeniorIHeartRadio"));
 const SeniorAudibleAlternatives              = lazy(() => import("./pages/tools/SeniorAudibleAlternatives"));
+const SeniorYouTubeTV                        = lazy(() => import("./pages/tools/SeniorYouTubeTV"));
+const SeniorHuluLive                         = lazy(() => import("./pages/tools/SeniorHuluLive"));
+const SeniorSling                            = lazy(() => import("./pages/tools/SeniorSling"));
+const SeniorPlutoTV                          = lazy(() => import("./pages/tools/SeniorPlutoTV"));
+const SeniorOTAAntennas                      = lazy(() => import("./pages/tools/SeniorOTAAntennas"));
 
 // ── Cycle 195 (April 29 2026) — DIY home ──
 const BasicToolsForSeniors   = lazy(() => import("./pages/tools/BasicToolsForSeniors"));
@@ -5648,6 +5653,11 @@ const AppContent = () => {
           <Route path="/tools/senior-pandora-tips" element={<SeniorPandoraTips />} />
           <Route path="/tools/senior-iheartradio" element={<SeniorIHeartRadio />} />
           <Route path="/tools/senior-audible-alternatives" element={<SeniorAudibleAlternatives />} />
+          <Route path="/tools/senior-youtube-tv" element={<SeniorYouTubeTV />} />
+          <Route path="/tools/senior-hulu-live" element={<SeniorHuluLive />} />
+          <Route path="/tools/senior-sling" element={<SeniorSling />} />
+          <Route path="/tools/senior-pluto-tv" element={<SeniorPlutoTV />} />
+          <Route path="/tools/senior-ota-antennas" element={<SeniorOTAAntennas />} />
           <Route path="/tools/basic-tools-for-seniors" element={<BasicToolsForSeniors />} />
           <Route path="/tools/painting-tips-seniors" element={<PaintingTipsSeniors />} />
           <Route path="/tools/caulking-basics" element={<CaulkingBasics />} />
