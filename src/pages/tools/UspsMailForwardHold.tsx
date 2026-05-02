@@ -18,7 +18,7 @@ export default function UspsMailForwardHold() {
 
         <Card className="mb-4">
           <CardContent className="pt-6">
-            <h2 className="font-bold text-xl mb-3">📅 Hold Mail (vacation)</h2>
+            <h2 className="font-bold text-xl mb-3"> Hold Mail (vacation)</h2>
             <ol className="list-decimal pl-5 space-y-2 text-sm">
               <li>Go to <strong>USPS.com → Track & Manage → Hold Mail</strong>.</li>
               <li>Enter your address and verify identity (driver\'s license + SSN, or in-person at post office).</li>
@@ -32,7 +32,7 @@ export default function UspsMailForwardHold() {
 
         <Card className="mb-4">
           <CardContent className="pt-6">
-            <h2 className="font-bold text-xl mb-3">📦 Mail Forwarding (moving)</h2>
+            <h2 className="font-bold text-xl mb-3"> Mail Forwarding (moving)</h2>
             <ol className="list-decimal pl-5 space-y-2 text-sm">
               <li>Go to <strong>moversguide.usps.com</strong>.</li>
               <li>Pay $1.10 verification fee (proves identity, prevents fraud).</li>
@@ -46,7 +46,7 @@ export default function UspsMailForwardHold() {
 
         <Card className="mb-4">
           <CardContent className="pt-6">
-            <h2 className="font-bold text-xl mb-3">🏠 USPS Informed Delivery</h2>
+            <h2 className="font-bold text-xl mb-3"> USPS Informed Delivery</h2>
             <p className="text-sm">Free service that emails you photos of mail BEFORE it arrives. Perfect for "did my SSA letter come?" questions. (See our USPS Informed Delivery tool.) Especially useful when you\'re on vacation and have a hold — the photos still come, you can ask a neighbor to grab anything urgent.</p>
           </CardContent>
         </Card>

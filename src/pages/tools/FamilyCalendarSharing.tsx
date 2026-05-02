@@ -18,7 +18,7 @@ export default function FamilyCalendarSharing() {
 
         <Card className="mb-4">
           <CardContent className="pt-6">
-            <h2 className="font-bold text-xl mb-3">🍎 Apple Calendar — share with another iPhone user</h2>
+            <h2 className="font-bold text-xl mb-3"> Apple Calendar — share with another iPhone user</h2>
             <ol className="list-decimal pl-5 space-y-2 text-sm">
               <li>Open the <strong>Calendar</strong> app.</li>
               <li>Tap <strong>Calendars</strong> at the bottom.</li>
@@ -33,7 +33,7 @@ export default function FamilyCalendarSharing() {
 
         <Card className="mb-4">
           <CardContent className="pt-6">
-            <h2 className="font-bold text-xl mb-3">📅 Google Calendar — share with anyone</h2>
+            <h2 className="font-bold text-xl mb-3"> Google Calendar — share with anyone</h2>
             <ol className="list-decimal pl-5 space-y-2 text-sm">
               <li>Open <a href="https://calendar.google.com" target="_blank" rel="noopener noreferrer" className="text-primary underline">calendar.google.com</a> on a computer (easier to set up than the app).</li>
               <li>Find your calendar in the left sidebar. Hover over it → click the three dots.</li>
@@ -48,7 +48,7 @@ export default function FamilyCalendarSharing() {
 
         <Card className="mb-4">
           <CardContent className="pt-6">
-            <h2 className="font-bold text-xl mb-3">🤝 Mixed family — iPhone people + Android people</h2>
+            <h2 className="font-bold text-xl mb-3"> Mixed family — iPhone people + Android people</h2>
             <p className="text-sm mb-3">Apple Calendar and Google Calendar can talk to each other:</p>
             <ol className="list-decimal pl-5 space-y-2 text-sm">
               <li>The Apple person: Settings → Calendar → Accounts → Add Account → Google.</li>

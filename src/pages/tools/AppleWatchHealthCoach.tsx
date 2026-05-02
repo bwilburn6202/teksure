@@ -18,7 +18,7 @@ export default function AppleWatchHealthCoach() {
 
         <Card className="mb-4">
           <CardContent className="pt-6">
-            <h2 className="font-bold text-xl mb-3">❤️ Heart rate notifications</h2>
+            <h2 className="font-bold text-xl mb-3"> Heart rate notifications</h2>
             <p className="text-sm mb-2">Watch alerts you if your heart rate is unusually high or low while you\'re resting.</p>
             <ol className="list-decimal pl-5 space-y-1 text-sm">
               <li>iPhone: open the <strong>Watch</strong> app → "Heart" → "High Heart Rate".</li>
@@ -32,7 +32,7 @@ export default function AppleWatchHealthCoach() {
 
         <Card className="mb-4">
           <CardContent className="pt-6">
-            <h2 className="font-bold text-xl mb-3">📈 EKG (Series 4 and newer)</h2>
+            <h2 className="font-bold text-xl mb-3"> EKG (Series 4 and newer)</h2>
             <p className="text-sm mb-2">Take a 30-second medical-grade EKG anytime — useful when you feel "off".</p>
             <ol className="list-decimal pl-5 space-y-1 text-sm">
               <li>iPhone Watch app → "Heart" → "ECG App" → set up (asks your age).</li>
@@ -46,7 +46,7 @@ export default function AppleWatchHealthCoach() {
 
         <Card className="mb-4">
           <CardContent className="pt-6">
-            <h2 className="font-bold text-xl mb-3">🚶 Fall detection (Series 4 and newer)</h2>
+            <h2 className="font-bold text-xl mb-3"> Fall detection (Series 4 and newer)</h2>
             <ol className="list-decimal pl-5 space-y-1 text-sm">
               <li>iPhone Watch app → "Emergency SOS" → "Fall Detection" → "Always On".</li>
               <li>If the watch detects a hard fall and you don\'t move for 1 minute, it auto-calls 911 AND your emergency contacts.</li>
@@ -58,7 +58,7 @@ export default function AppleWatchHealthCoach() {
 
         <Card className="mb-4">
           <CardContent className="pt-6">
-            <h2 className="font-bold text-xl mb-3">💊 Medication reminders</h2>
+            <h2 className="font-bold text-xl mb-3"> Medication reminders</h2>
             <p className="text-sm mb-2">The watch can remind you to take meds AND track that you actually did.</p>
             <ol className="list-decimal pl-5 space-y-1 text-sm">
               <li>On iPhone: open the <strong>Health</strong> app.</li>
@@ -73,7 +73,7 @@ export default function AppleWatchHealthCoach() {
 
         <Card className="mb-4">
           <CardContent className="pt-6">
-            <h2 className="font-bold text-xl mb-3">😴 Sleep & breathing tracking</h2>
+            <h2 className="font-bold text-xl mb-3"> Sleep & breathing tracking</h2>
             <ul className="list-disc pl-5 space-y-1 text-sm">
               <li><strong>Sleep stages</strong> — watch tracks REM, deep, light sleep nightly.</li>
               <li><strong>Resting heart rate</strong> — long-term trend is meaningful. A rising RHR can be an early sign of illness or stress.</li>
@@ -85,7 +85,7 @@ export default function AppleWatchHealthCoach() {
 
         <Card className="mb-4">
           <CardContent className="pt-6">
-            <h2 className="font-bold text-xl mb-3">🩺 Sharing with your doctor</h2>
+            <h2 className="font-bold text-xl mb-3"> Sharing with your doctor</h2>
             <ol className="list-decimal pl-5 space-y-1 text-sm">
               <li>Health app → tap your photo → "Sharing" → "Share with Your Doctor".</li>
               <li>If your doctor uses MyChart and Apple Health integration, you can share heart rate, blood pressure, and EKG directly.</li>

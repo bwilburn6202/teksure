@@ -31,7 +31,7 @@ export default function BackupStrategy() {
 
         <Card className="mb-4">
           <CardContent className="pt-6">
-            <h2 className="font-bold text-xl mb-3">🍎 Mac — Time Machine (free, built in)</h2>
+            <h2 className="font-bold text-xl mb-3"> Mac — Time Machine (free, built in)</h2>
             <ol className="list-decimal pl-5 space-y-2 text-sm">
               <li>Buy an external hard drive ($60-$100 for 2TB).</li>
               <li>Plug it into Mac.</li>
@@ -44,7 +44,7 @@ export default function BackupStrategy() {
 
         <Card className="mb-4">
           <CardContent className="pt-6">
-            <h2 className="font-bold text-xl mb-3">🪟 Windows — File History (free, built in)</h2>
+            <h2 className="font-bold text-xl mb-3"> Windows — File History (free, built in)</h2>
             <ol className="list-decimal pl-5 space-y-2 text-sm">
               <li>Plug in an external drive.</li>
               <li>Settings → Update & Security → Backup → Add a drive → pick yours.</li>

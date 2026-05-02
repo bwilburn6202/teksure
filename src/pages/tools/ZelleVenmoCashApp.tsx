@@ -41,7 +41,7 @@ export default function ZelleVenmoCashApp() {
 
         <Card className="mb-4 bg-yellow-50 border-yellow-300 dark:bg-yellow-950/20 dark:border-yellow-800">
           <CardContent className="pt-6">
-            <h2 className="font-bold text-xl mb-3">⚠ Zelle scam warning</h2>
+            <h2 className="font-bold text-xl mb-3"> Zelle scam warning</h2>
             <p className="text-sm">Zelle is INSTANT and IRREVERSIBLE. Once sent, banks rarely refund — even if you were scammed. Scammers love it for this. Common trick: "We need to transfer your money to a safe account" or "Click this link to verify your Zelle account". <strong>Real banks NEVER ask you to send money via Zelle to "verify" or "secure" anything.</strong></p>
           </CardContent>
         </Card>

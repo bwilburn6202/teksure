@@ -42,7 +42,7 @@ export default function ESignCoach() {
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Path 2 — They emailed a PDF asking you to sign</h2>
             <p className="text-sm mb-3">Use your phone or computer's built-in signing tool — free.</p>
-            <p className="font-semibold mt-3 text-sm">📱 iPhone / iPad:</p>
+            <p className="font-semibold mt-3 text-sm"> iPhone / iPad:</p>
             <ol className="list-decimal pl-5 space-y-1 text-sm">
               <li>Open the PDF in Mail or Files.</li>
               <li>Tap the markup icon (pen tip in a circle) at the top.</li>
@@ -50,21 +50,21 @@ export default function ESignCoach() {
               <li>Drag the signature to the right spot. Tap Done.</li>
               <li>Email it back as a reply.</li>
             </ol>
-            <p className="font-semibold mt-3 text-sm">🤖 Android:</p>
+            <p className="font-semibold mt-3 text-sm"> Android:</p>
             <ol className="list-decimal pl-5 space-y-1 text-sm">
               <li>Open the PDF in Google Drive (free).</li>
               <li>Tap the pencil icon at the bottom.</li>
               <li>Pick "Drawing" → draw your signature with your finger.</li>
               <li>Save and share back.</li>
             </ol>
-            <p className="font-semibold mt-3 text-sm">🍎 Mac:</p>
+            <p className="font-semibold mt-3 text-sm"> Mac:</p>
             <ol className="list-decimal pl-5 space-y-1 text-sm">
               <li>Open the PDF in Preview.</li>
               <li>Click the markup toolbar icon (pencil tip in a circle).</li>
               <li>Click the signature icon → "Create Signature" → use your trackpad or hold a hand-signed paper to your camera.</li>
               <li>Drag the signature onto the PDF.</li>
             </ol>
-            <p className="font-semibold mt-3 text-sm">🪟 Windows:</p>
+            <p className="font-semibold mt-3 text-sm"> Windows:</p>
             <ol className="list-decimal pl-5 space-y-1 text-sm">
               <li>Open the PDF in Microsoft Edge (free).</li>
               <li>Click the "Draw" toolbar button (a pencil icon).</li>

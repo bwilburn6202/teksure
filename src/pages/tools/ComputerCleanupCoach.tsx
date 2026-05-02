@@ -20,8 +20,8 @@ export default function ComputerCleanupCoach() {
         </div>
 
         <div className="flex gap-2 mb-4">
-          <button onClick={() => setTab('mac')} className={`flex-1 p-3 rounded-lg border-2 ${tab === 'mac' ? 'border-primary bg-primary/10' : 'border-muted'}`}>🍎 Mac</button>
-          <button onClick={() => setTab('windows')} className={`flex-1 p-3 rounded-lg border-2 ${tab === 'windows' ? 'border-primary bg-primary/10' : 'border-muted'}`}>🪟 Windows</button>
+          <button onClick={() => setTab('mac')} className={`flex-1 p-3 rounded-lg border-2 ${tab === 'mac' ? 'border-primary bg-primary/10' : 'border-muted'}`}> Mac</button>
+          <button onClick={() => setTab('windows')} className={`flex-1 p-3 rounded-lg border-2 ${tab === 'windows' ? 'border-primary bg-primary/10' : 'border-muted'}`}> Windows</button>
         </div>
 
         {tab === 'mac' && (

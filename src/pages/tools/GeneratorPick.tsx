@@ -67,7 +67,7 @@ export default function GeneratorPick() {
 
         <Card className="mb-4 border-yellow-300 dark:border-yellow-800">
           <CardContent className="pt-6">
-            <h2 className="font-bold text-xl mb-3">⚠️ Portable safety</h2>
+            <h2 className="font-bold text-xl mb-3"> Portable safety</h2>
             <ul className="list-disc pl-5 space-y-1 text-sm">
               <li><strong>NEVER run a portable generator in or near garage or porch</strong>. CO kills.</li>
               <li>20 feet from any window/door.</li>

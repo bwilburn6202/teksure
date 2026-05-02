@@ -67,7 +67,7 @@ export default function RemittancesGuide() {
 
         <Card className="mb-4 bg-yellow-50 border-yellow-300 dark:bg-yellow-950/20 dark:border-yellow-800">
           <CardContent className="pt-6">
-            <h2 className="font-bold text-xl mb-3">⚠ Romance + Family Scams</h2>
+            <h2 className="font-bold text-xl mb-3"> Romance + Family Scams</h2>
             <p className="text-sm">Many seniors lose $1,000s sending "to family in trouble overseas". Real family rarely needs urgent international wires. NEVER send via Western Union/MoneyGram unless you 100% verified by phone (call them). See /tools/grandparent-scam-defense + /tools/scam-dating-flags.</p>
           </CardContent>
         </Card>

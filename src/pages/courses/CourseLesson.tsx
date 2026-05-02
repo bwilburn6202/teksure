@@ -18,6 +18,7 @@ import {
 } from 'lucide-react';
 import { getLessonInCourse, type QuizQuestion, type CourseLesson as CourseLessonType } from '@/data/courses';
 import { guides } from '@/data/guides';
+import { GuideThumbnail } from '@/components/GuideThumbnail';
 import {
   markCourseStarted,
   recordQuizAttempt,
@@ -142,8 +143,8 @@ export default function CourseLesson() {
                   </Button>
                 </div>
 
-                <h2 className="text-xl font-bold mb-2 flex items-center gap-2">
-                  <span aria-hidden="true">{guide.thumbnailEmoji}</span>
+                <h2 className="text-xl font-bold mb-2 flex items-center gap-3">
+                  <GuideThumbnail category={guide.category} size="h-5 w-5" useAccent />
                   {guide.title}
                 </h2>
                 <p className="text-muted-foreground mb-5">{guide.excerpt}</p>

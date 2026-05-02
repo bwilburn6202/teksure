@@ -20,7 +20,7 @@ export default function AppPhoneFrozenFix() {
         </div>
 
         <div className="grid grid-cols-2 sm:grid-cols-4 gap-2 mb-4">
-          {[['iphone', '📱 iPhone'], ['android', '🤖 Android'], ['mac', '🍎 Mac'], ['windows', '🪟 Windows']].map(([id, label]) => (
+          {[['iphone', ' iPhone'], ['android', ' Android'], ['mac', ' Mac'], ['windows', ' Windows']].map(([id, label]) => (
             <button key={id} onClick={() => setTab(id as any)} className={`p-3 rounded-lg border-2 ${tab === id ? 'border-primary bg-primary/10' : 'border-muted'}`}>{label}</button>
           ))}
         </div>
@@ -70,7 +70,7 @@ export default function AppPhoneFrozenFix() {
               <h3 className="font-bold text-lg mb-3">Mac</h3>
               <p className="font-semibold text-sm mt-2">App not responding:</p>
               <ol className="list-decimal pl-5 space-y-1 text-sm mb-3">
-                <li>Press <kbd className="bg-muted px-1.5 py-0.5 rounded">⌘</kbd> + <kbd className="bg-muted px-1.5 py-0.5 rounded">Option</kbd> + <kbd className="bg-muted px-1.5 py-0.5 rounded">Esc</kbd></li>
+                <li>Press <kbd className="bg-muted px-1.5 py-0.5 rounded"></kbd> + <kbd className="bg-muted px-1.5 py-0.5 rounded">Option</kbd> + <kbd className="bg-muted px-1.5 py-0.5 rounded">Esc</kbd></li>
                 <li>Force Quit window opens. Pick frozen app. Click "Force Quit".</li>
                 <li>Or right-click the app icon in dock → Force Quit.</li>
               </ol>

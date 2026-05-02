@@ -184,7 +184,7 @@ export default function FamilyTechRoundtable() {
             <h2 className="text-base font-bold uppercase tracking-wider mb-2">Pick one or two action steps</h2>
             <ul className="space-y-1 text-sm">
               {ACTIONS.map((a, i) => (
-                <li key={i}>☐ {a}</li>
+                <li key={i}> {a}</li>
               ))}
             </ul>
           </section>

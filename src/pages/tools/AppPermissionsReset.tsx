@@ -57,8 +57,8 @@ export default function AppPermissionsReset() {
         </Card>
 
         <div className="flex gap-2 mb-6">
-          <button onClick={() => setPhone('iphone')} className={`flex-1 p-3 rounded-lg border-2 ${phone === 'iphone' ? 'border-primary bg-primary/10' : 'border-muted'}`}>📱 iPhone steps</button>
-          <button onClick={() => setPhone('android')} className={`flex-1 p-3 rounded-lg border-2 ${phone === 'android' ? 'border-primary bg-primary/10' : 'border-muted'}`}>🤖 Android steps</button>
+          <button onClick={() => setPhone('iphone')} className={`flex-1 p-3 rounded-lg border-2 ${phone === 'iphone' ? 'border-primary bg-primary/10' : 'border-muted'}`}> iPhone steps</button>
+          <button onClick={() => setPhone('android')} className={`flex-1 p-3 rounded-lg border-2 ${phone === 'android' ? 'border-primary bg-primary/10' : 'border-muted'}`}> Android steps</button>
         </div>
 
         <div className="space-y-4">

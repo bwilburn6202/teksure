@@ -47,7 +47,7 @@ export default function PigButcheringDefense() {
 
         <Card className="mb-4">
           <CardContent className="pt-6">
-            <h2 className="font-bold text-xl mb-3">🚩 Red flags</h2>
+            <h2 className="font-bold text-xl mb-3"> Red flags</h2>
             <ul className="list-disc pl-5 space-y-2 text-sm">
               <li>Stranger you've never met in person teaches you about money or investing.</li>
               <li>"Investment app" you've never heard of — not Fidelity, Schwab, Vanguard, or a real bank.</li>

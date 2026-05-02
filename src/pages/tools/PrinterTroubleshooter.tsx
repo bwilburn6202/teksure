@@ -293,7 +293,7 @@ const tree: Record<string, Node> = {
       { label: 'Printer doesn\'t see my network',       emoji: '',  next: 'fix_wifiNotVisible' },
       { label: 'Says my password is wrong',              emoji: '',  next: 'fix_wifiPassword' },
       { label: 'Connects but won\'t print',              emoji: '',  next: 'fix_wifiSameNetwork' },
-      { label: 'I don\'t know how to set it up',         emoji: '🆕',  next: 'fix_wifiFirstTime' },
+      { label: 'I don\'t know how to set it up',         emoji: '',  next: 'fix_wifiFirstTime' },
     ],
   },
 

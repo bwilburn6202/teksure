@@ -2220,7 +2220,7 @@ export default function Tools() {
                 <section className="mb-14" aria-labelledby="new-heading">
                   <div className="flex items-center justify-between mb-5 flex-wrap gap-2">
                     <div className="flex items-center gap-2">
-                      <span className="text-xl" aria-hidden="true">🆕</span>
+                      <span className="text-xl" aria-hidden="true"></span>
                       <h2 id="new-heading" className="text-2xl font-bold">New this month</h2>
                     </div>
                     <p className="text-sm text-muted-foreground">Fresh in April 2026</p>

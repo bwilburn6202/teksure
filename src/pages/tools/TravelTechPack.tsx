@@ -18,7 +18,7 @@ export default function TravelTechPack() {
 
         <Card className="mb-4">
           <CardContent className="pt-6">
-            <h2 className="font-bold text-xl mb-3">✈️ TSA PreCheck — $77 for 5 years</h2>
+            <h2 className="font-bold text-xl mb-3"> TSA PreCheck — $77 for 5 years</h2>
             <p className="text-sm mb-2">Shorter security line at the airport. Keep shoes, belt, and laptop on/in. Also keeps liquids and food in the bag. Saves 15-30 minutes per trip.</p>
             <ol className="list-decimal pl-5 space-y-1 text-sm">
               <li>Apply at <a href="https://www.tsa.gov/precheck" target="_blank" rel="noopener noreferrer" className="text-primary underline">tsa.gov/precheck</a>.</li>
@@ -33,7 +33,7 @@ export default function TravelTechPack() {
 
         <Card className="mb-4">
           <CardContent className="pt-6">
-            <h2 className="font-bold text-xl mb-3">🌎 Global Entry — $120 for 5 years</h2>
+            <h2 className="font-bold text-xl mb-3"> Global Entry — $120 for 5 years</h2>
             <p className="text-sm mb-2">For international travel. Skips the customs line on the way home. Includes TSA PreCheck. Best deal if you fly abroad even once a year.</p>
             <ol className="list-decimal pl-5 space-y-1 text-sm">
               <li>Apply at <a href="https://ttp.cbp.dhs.gov" target="_blank" rel="noopener noreferrer" className="text-primary underline">ttp.cbp.dhs.gov</a>.</li>
@@ -46,7 +46,7 @@ export default function TravelTechPack() {
 
         <Card className="mb-4">
           <CardContent className="pt-6">
-            <h2 className="font-bold text-xl mb-3">📱 Mobile Passport Control (free)</h2>
+            <h2 className="font-bold text-xl mb-3"> Mobile Passport Control (free)</h2>
             <p className="text-sm mb-2">Free alternative to Global Entry for re-entering the US. Not as fast, but no fee.</p>
             <ol className="list-decimal pl-5 space-y-1 text-sm">
               <li>Install the <strong>Mobile Passport Control</strong> app from CBP (App Store, Play Store).</li>
@@ -59,7 +59,7 @@ export default function TravelTechPack() {
 
         <Card className="mb-4">
           <CardContent className="pt-6">
-            <h2 className="font-bold text-xl mb-3">🎫 Digital boarding passes</h2>
+            <h2 className="font-bold text-xl mb-3"> Digital boarding passes</h2>
             <ol className="list-decimal pl-5 space-y-1 text-sm">
               <li>Install your airline's app — Delta, American, United, Southwest, JetBlue, etc.</li>
               <li>Sign in with your frequent flyer account.</li>
@@ -73,7 +73,7 @@ export default function TravelTechPack() {
 
         <Card className="mb-4">
           <CardContent className="pt-6">
-            <h2 className="font-bold text-xl mb-3">🏨 Hotel apps worth installing</h2>
+            <h2 className="font-bold text-xl mb-3"> Hotel apps worth installing</h2>
             <ul className="list-disc pl-5 space-y-1 text-sm">
               <li><strong>Marriott Bonvoy, Hilton Honors, IHG, Hyatt</strong> — chain apps for digital room keys, mobile check-in.</li>
               <li><strong>Booking.com, Expedia, Hotels.com</strong> — for shopping rates across chains.</li>
@@ -84,7 +84,7 @@ export default function TravelTechPack() {
 
         <Card className="mb-4">
           <CardContent className="pt-6">
-            <h2 className="font-bold text-xl mb-3">🌐 International travel essentials</h2>
+            <h2 className="font-bold text-xl mb-3"> International travel essentials</h2>
             <ul className="list-disc pl-5 space-y-1 text-sm">
               <li><strong>Translate app</strong> with offline language packs.</li>
               <li><strong>Currency converter</strong> — Apple's Calculator app does this; or install XE.</li>

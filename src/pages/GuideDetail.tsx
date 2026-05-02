@@ -25,6 +25,7 @@ import { ScreenshotLightbox } from '@/components/ScreenshotLightbox';
 import { isFavorite, addFavorite, removeFavorite } from '@/lib/favorites';
 import { MasteryPicker } from '@/components/MasteryPicker';
 import { getGuideThumbnailUrl, getGuideThumbnailSmall, getGuideHeroUrl } from '@/lib/guideThumbnails';
+import { GuideThumbnail } from '@/components/GuideThumbnail';
 import { getGuideResources } from '@/lib/guideResources';
 import { useAuth } from '@/contexts/AuthContext';
 
@@ -504,8 +505,8 @@ const GuideDetail = () => {
                   img.src = `https://picsum.photos/seed/${guide.slug}/1200/600`;
                 }}
               />
-              <div className="absolute bottom-3 right-3 text-4xl sm:text-5xl bg-background/80 backdrop-blur-sm rounded-lg px-3 py-1" aria-hidden="true">
-                {guide.thumbnailEmoji}
+              <div className="absolute bottom-3 right-3 bg-background/80 backdrop-blur-sm rounded-2xl p-1.5" aria-hidden="true">
+                <GuideThumbnail category={guide.category} size="h-10 w-10 sm:h-12 sm:w-12" useAccent />
               </div>
             </div>
             <div className="flex flex-wrap items-center gap-3 mb-4">

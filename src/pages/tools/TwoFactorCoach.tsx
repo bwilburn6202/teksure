@@ -17,7 +17,7 @@ interface Service {
 }
 
 const SERVICES: Service[] = [
-  { id: 'google', name: 'Google / Gmail', emoji: '✉️', why: 'Your Google account often resets passwords for everything else. Protect it first.',
+  { id: 'google', name: 'Google / Gmail', emoji: '', why: 'Your Google account often resets passwords for everything else. Protect it first.',
     best: 'Use a Google prompt on your phone — it shows a "Yes / No" tap when someone tries to sign in.',
     steps: [
       'Open myaccount.google.com on a computer or phone.',
@@ -29,7 +29,7 @@ const SERVICES: Service[] = [
       'Save the 10 backup codes — print them and put them in a safe spot.',
     ],
     link: { label: 'Open Google 2-Step Verification', url: 'https://myaccount.google.com/signinoptions/twosv' } },
-  { id: 'apple', name: 'Apple ID / iCloud', emoji: '🍎', why: 'Your Apple ID protects your photos, iMessages, and Find My iPhone.',
+  { id: 'apple', name: 'Apple ID / iCloud', emoji: '', why: 'Your Apple ID protects your photos, iMessages, and Find My iPhone.',
     best: 'Two-factor with a trusted phone number is on by default for newer accounts.',
     steps: [
       'On iPhone: Settings → tap your name at top → "Sign-In & Security".',
@@ -39,7 +39,7 @@ const SERVICES: Service[] = [
       'Write down your Apple ID password and recovery key — store somewhere safe.',
     ],
     link: { label: 'Apple two-factor help', url: 'https://support.apple.com/en-us/102660' } },
-  { id: 'microsoft', name: 'Microsoft / Outlook', emoji: '🪟', why: 'Protects your email, Office files, and Windows sign-in.',
+  { id: 'microsoft', name: 'Microsoft / Outlook', emoji: '', why: 'Protects your email, Office files, and Windows sign-in.',
     best: 'Use the Microsoft Authenticator app — tap "Approve" on a phone notification.',
     steps: [
       'Go to account.microsoft.com and sign in.',
@@ -50,7 +50,7 @@ const SERVICES: Service[] = [
       'Save the recovery code on paper.',
     ],
     link: { label: 'Microsoft 2FA setup', url: 'https://account.microsoft.com/security' } },
-  { id: 'facebook', name: 'Facebook', emoji: '👥', why: 'Stops scammers from messaging your family and friends pretending to be you.',
+  { id: 'facebook', name: 'Facebook', emoji: '', why: 'Stops scammers from messaging your family and friends pretending to be you.',
     best: 'Text message codes work fine here. An app is more secure.',
     steps: [
       'On Facebook: tap your photo (top right on web, bottom right on phone).',
@@ -60,7 +60,7 @@ const SERVICES: Service[] = [
       'Save the recovery codes shown.',
     ],
     link: { label: 'Facebook security settings', url: 'https://accountscenter.facebook.com/password_and_security' } },
-  { id: 'amazon', name: 'Amazon', emoji: '📦', why: 'Stops strangers from buying things on your card.',
+  { id: 'amazon', name: 'Amazon', emoji: '', why: 'Stops strangers from buying things on your card.',
     best: 'Text codes are fine. Authenticator app is stronger.',
     steps: [
       'Go to amazon.com → "Account & Lists" → "Login & security".',
@@ -70,7 +70,7 @@ const SERVICES: Service[] = [
       'Mark trusted devices so you don\'t need a code every time at home.',
     ],
     link: { label: 'Amazon login & security', url: 'https://www.amazon.com/a/settings/approval' } },
-  { id: 'bank', name: 'Your Bank or Credit Card', emoji: '🏦', why: 'The single most important account to protect.',
+  { id: 'bank', name: 'Your Bank or Credit Card', emoji: '', why: 'The single most important account to protect.',
     best: 'Most banks already require a code for new logins. Make sure yours does.',
     steps: [
       'Sign in to your bank\'s website on a computer.',

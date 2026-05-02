@@ -181,7 +181,7 @@ const CARDS: FlashCard[] = [
   { id: 'refresh-rate', front: 'Refresh Rate', back: 'How often a screen redraws per second — higher feels smoother. Example: "A 120Hz phone screen feels extra smooth when you scroll."', category: 'device', difficulty: 'hard' },
   { id: 'bt-pairing', front: 'Bluetooth Pairing', back: 'The first-time handshake between two Bluetooth devices. Example: "Pair your phone with the car stereo to take calls hands-free."', category: 'device', difficulty: 'medium' },
   { id: 'qr-code', front: 'QR Code', back: 'A square barcode you scan with a phone camera. Example: "Scan the QR code on the menu to see the food list."', category: 'device', difficulty: 'easy' },
-  { id: 'emoji', front: 'Emoji', back: 'Little cartoon pictures you can add to messages. Example: "End your text with a 👍 emoji."', category: 'messaging', difficulty: 'easy' },
+  { id: 'emoji', front: 'Emoji', back: 'Little cartoon pictures you can add to messages. Example: "End your text with a  emoji."', category: 'messaging', difficulty: 'easy' },
   { id: 'hashtag', front: 'Hashtag', back: 'A word with # in front used to group posts. Example: "Tap the #travel hashtag to see travel posts."', category: 'messaging', difficulty: 'easy' },
   { id: 'tag', front: 'Tag', back: 'Marking a photo or post with someone\'s name so they are linked. Example: "Tag your grandchild in the birthday photo."', category: 'messaging', difficulty: 'easy' },
   { id: 'at-mention', front: 'At-Mention (@name)', back: 'Typing @ and a username to ping someone. Example: "@Sara, look at this recipe!"', category: 'messaging', difficulty: 'medium' },

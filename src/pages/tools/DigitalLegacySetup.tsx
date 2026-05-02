@@ -30,7 +30,7 @@ export default function DigitalLegacySetup() {
 
         <Card className="mb-4">
           <CardContent className="pt-6">
-            <h2 className="font-bold text-xl mb-3">🍎 Apple Legacy Contact</h2>
+            <h2 className="font-bold text-xl mb-3"> Apple Legacy Contact</h2>
             <p className="text-sm mb-3">Lets a family member access your iCloud photos, notes, contacts, and messages after you pass.</p>
             <ol className="list-decimal pl-5 space-y-2 text-sm">
               <li>On iPhone: Settings → tap your name at top → <strong>Sign-In & Security</strong>.</li>
@@ -46,7 +46,7 @@ export default function DigitalLegacySetup() {
 
         <Card className="mb-4">
           <CardContent className="pt-6">
-            <h2 className="font-bold text-xl mb-3">📧 Google Inactive Account Manager</h2>
+            <h2 className="font-bold text-xl mb-3"> Google Inactive Account Manager</h2>
             <p className="text-sm mb-3">Tells Google what to do if you don't sign in for a chosen length of time (3, 6, 12, or 18 months).</p>
             <ol className="list-decimal pl-5 space-y-2 text-sm">
               <li>Go to <a href="https://myaccount.google.com/inactive" target="_blank" rel="noopener noreferrer" className="text-primary underline">myaccount.google.com/inactive</a>.</li>
@@ -64,7 +64,7 @@ export default function DigitalLegacySetup() {
 
         <Card className="mb-4">
           <CardContent className="pt-6">
-            <h2 className="font-bold text-xl mb-3">👥 Facebook Legacy Contact</h2>
+            <h2 className="font-bold text-xl mb-3"> Facebook Legacy Contact</h2>
             <ol className="list-decimal pl-5 space-y-2 text-sm">
               <li>Open Facebook → tap your photo → <strong>Settings & privacy</strong> → <strong>Settings</strong>.</li>
               <li>Search for "Legacy Contact" or find it under Personal and account information.</li>
@@ -77,7 +77,7 @@ export default function DigitalLegacySetup() {
 
         <Card className="mb-4">
           <CardContent className="pt-6">
-            <h2 className="font-bold text-xl mb-3">🔑 Other accounts to think about</h2>
+            <h2 className="font-bold text-xl mb-3"> Other accounts to think about</h2>
             <ul className="list-disc pl-5 space-y-1 text-sm">
               <li><strong>Password manager</strong> — most (1Password, Bitwarden) have an "Emergency Access" feature where one designated family member can request access after a waiting period.</li>
               <li><strong>Bank, brokerage, retirement</strong> — make sure each has a beneficiary listed. Login info goes in your will or a sealed envelope with your attorney.</li>

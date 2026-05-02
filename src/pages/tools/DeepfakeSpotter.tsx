@@ -18,7 +18,7 @@ export default function DeepfakeSpotter() {
 
         <Card className="mb-4">
           <CardContent className="pt-6">
-            <h2 className="font-bold text-xl mb-3">🖼️ Signs of an AI-made photo</h2>
+            <h2 className="font-bold text-xl mb-3"> Signs of an AI-made photo</h2>
             <ul className="list-disc pl-5 space-y-2 text-sm">
               <li><strong>Hands</strong> — extra fingers, fused fingers, bent wrong way. AI still struggles with hands.</li>
               <li><strong>Teeth</strong> — too even, too white, weird gaps.</li>
@@ -34,7 +34,7 @@ export default function DeepfakeSpotter() {
 
         <Card className="mb-4">
           <CardContent className="pt-6">
-            <h2 className="font-bold text-xl mb-3">🎬 Signs of a deepfake video</h2>
+            <h2 className="font-bold text-xl mb-3"> Signs of a deepfake video</h2>
             <ul className="list-disc pl-5 space-y-2 text-sm">
               <li><strong>Lip-sync slightly off</strong> — voice doesn\'t quite match mouth movement.</li>
               <li><strong>Skin texture wrong at certain angles</strong>.</li>
@@ -49,7 +49,7 @@ export default function DeepfakeSpotter() {
 
         <Card className="mb-4">
           <CardContent className="pt-6">
-            <h2 className="font-bold text-xl mb-3">🗣️ Signs of an AI voice</h2>
+            <h2 className="font-bold text-xl mb-3"> Signs of an AI voice</h2>
             <ul className="list-disc pl-5 space-y-2 text-sm">
               <li><strong>Slightly robotic cadence</strong>.</li>
               <li><strong>No background noise or breathing</strong>.</li>

@@ -18,7 +18,7 @@ export default function TranslationAppCoach() {
 
         <Card className="mb-4">
           <CardContent className="pt-6">
-            <h2 className="font-bold text-xl mb-3">📱 iPhone — Translate app (free, built in)</h2>
+            <h2 className="font-bold text-xl mb-3"> iPhone — Translate app (free, built in)</h2>
             <ol className="list-decimal pl-5 space-y-2 text-sm">
               <li>Open the <strong>Translate</strong> app (white with a globe). If you don't see it, search the App Store for "Translate" — it's free from Apple.</li>
               <li>Tap the languages at the top — pick English on the left and Spanish (or whatever) on the right.</li>
@@ -32,7 +32,7 @@ export default function TranslationAppCoach() {
 
         <Card className="mb-4">
           <CardContent className="pt-6">
-            <h2 className="font-bold text-xl mb-3">🤖 Android — Google Translate (free)</h2>
+            <h2 className="font-bold text-xl mb-3"> Android — Google Translate (free)</h2>
             <ol className="list-decimal pl-5 space-y-2 text-sm">
               <li>Install <strong>Google Translate</strong> from the Play Store (often pre-installed).</li>
               <li>Pick the two languages at the top.</li>
@@ -45,7 +45,7 @@ export default function TranslationAppCoach() {
 
         <Card className="mb-4">
           <CardContent className="pt-6">
-            <h2 className="font-bold text-xl mb-3">🌍 Use cases that actually help</h2>
+            <h2 className="font-bold text-xl mb-3"> Use cases that actually help</h2>
             <ul className="list-disc pl-5 space-y-2 text-sm">
               <li><strong>Reading menus on vacation</strong> — point camera at the menu. Done.</li>
               <li><strong>Talking to a non-English-speaking neighbor</strong> — open Conversation mode. Hand the phone back and forth.</li>

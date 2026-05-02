@@ -1032,12 +1032,12 @@ export default function PodcastDirectory() {
           </p>
           <div className="grid sm:grid-cols-3 gap-4">
             {[
-              { icon: '🚶', title: 'Walking', body: 'A 30-minute walk pairs with a 30-minute episode.' },
-              { icon: '🚗', title: 'Driving', body: 'Use Bluetooth or CarPlay — always hands-free.' },
-              { icon: '🍳', title: 'Cooking', body: 'Great for a long recipe or Sunday meal prep.' },
-              { icon: '🌻', title: 'Gardening', body: 'News and storytelling work well outdoors.' },
-              { icon: '🧺', title: 'Chores', body: 'Laundry, dishes, and tidying fly by.' },
-              { icon: '😴', title: 'Before bed', body: 'Set a 20-minute sleep timer for calm stories.' },
+              { icon: '', title: 'Walking', body: 'A 30-minute walk pairs with a 30-minute episode.' },
+              { icon: '', title: 'Driving', body: 'Use Bluetooth or CarPlay — always hands-free.' },
+              { icon: '', title: 'Cooking', body: 'Great for a long recipe or Sunday meal prep.' },
+              { icon: '', title: 'Gardening', body: 'News and storytelling work well outdoors.' },
+              { icon: '', title: 'Chores', body: 'Laundry, dishes, and tidying fly by.' },
+              { icon: '', title: 'Before bed', body: 'Set a 20-minute sleep timer for calm stories.' },
             ].map((item) => (
               <Card key={item.title} className="border-2 text-center">
                 <CardContent className="p-5">

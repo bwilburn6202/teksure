@@ -27,7 +27,7 @@ export default function VinylTurntableCoach() {
 
         <Card className="mb-6 border-yellow-300 dark:border-yellow-800">
           <CardContent className="pt-6">
-            <h2 className="font-bold mb-2">⚠️ Skip the cheap "suitcase" turntables</h2>
+            <h2 className="font-bold mb-2"> Skip the cheap "suitcase" turntables</h2>
             <p className="text-sm">Crosley, Victrola, "1byone" cheap suitcase-style players have heavy needles that damage records. Each play wears the record more. After 50 plays, your treasured 1973 Stevie Wonder LP is unwearable.</p>
             <p className="text-sm mt-2">Spend at least $200 on a real turntable. Otherwise, you\'re destroying value.</p>
           </CardContent>

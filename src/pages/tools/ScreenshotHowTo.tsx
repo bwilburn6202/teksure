@@ -20,7 +20,7 @@ export default function ScreenshotHowTo() {
         </div>
 
         <div className="grid grid-cols-2 sm:grid-cols-4 gap-2 mb-4">
-          {[['iphone', '📱 iPhone'], ['android', '🤖 Android'], ['mac', '🍎 Mac'], ['windows', '🪟 Windows']].map(([id, label]) => (
+          {[['iphone', ' iPhone'], ['android', ' Android'], ['mac', ' Mac'], ['windows', ' Windows']].map(([id, label]) => (
             <button key={id} onClick={() => setTab(id as any)} className={`p-3 rounded-lg border-2 ${tab === id ? 'border-primary bg-primary/10' : 'border-muted'}`}>{label}</button>
           ))}
         </div>
@@ -59,9 +59,9 @@ export default function ScreenshotHowTo() {
             <CardContent className="pt-6">
               <h3 className="font-bold text-lg mb-3">Mac</h3>
               <ul className="list-disc pl-5 space-y-2 text-sm">
-                <li><strong>Whole screen</strong> — <kbd className="bg-muted px-1.5 py-0.5 rounded">⌘</kbd> + <kbd className="bg-muted px-1.5 py-0.5 rounded">Shift</kbd> + <kbd className="bg-muted px-1.5 py-0.5 rounded">3</kbd></li>
-                <li><strong>Just part of screen</strong> — <kbd className="bg-muted px-1.5 py-0.5 rounded">⌘</kbd> + <kbd className="bg-muted px-1.5 py-0.5 rounded">Shift</kbd> + <kbd className="bg-muted px-1.5 py-0.5 rounded">4</kbd>. Drag a box.</li>
-                <li><strong>Just one window</strong> — <kbd className="bg-muted px-1.5 py-0.5 rounded">⌘</kbd> + <kbd className="bg-muted px-1.5 py-0.5 rounded">Shift</kbd> + <kbd className="bg-muted px-1.5 py-0.5 rounded">4</kbd>, then press Spacebar. Click the window.</li>
+                <li><strong>Whole screen</strong> — <kbd className="bg-muted px-1.5 py-0.5 rounded"></kbd> + <kbd className="bg-muted px-1.5 py-0.5 rounded">Shift</kbd> + <kbd className="bg-muted px-1.5 py-0.5 rounded">3</kbd></li>
+                <li><strong>Just part of screen</strong> — <kbd className="bg-muted px-1.5 py-0.5 rounded"></kbd> + <kbd className="bg-muted px-1.5 py-0.5 rounded">Shift</kbd> + <kbd className="bg-muted px-1.5 py-0.5 rounded">4</kbd>. Drag a box.</li>
+                <li><strong>Just one window</strong> — <kbd className="bg-muted px-1.5 py-0.5 rounded"></kbd> + <kbd className="bg-muted px-1.5 py-0.5 rounded">Shift</kbd> + <kbd className="bg-muted px-1.5 py-0.5 rounded">4</kbd>, then press Spacebar. Click the window.</li>
                 <li>Saves to Desktop by default.</li>
               </ul>
             </CardContent>

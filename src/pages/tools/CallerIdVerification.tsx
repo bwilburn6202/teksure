@@ -30,7 +30,7 @@ export default function CallerIdVerification() {
 
         <Card className="mb-6">
           <CardContent className="pt-6">
-            <h2 className="font-bold text-xl mb-3">🚩 Red flags during a call</h2>
+            <h2 className="font-bold text-xl mb-3"> Red flags during a call</h2>
             <ul className="list-disc pl-5 space-y-2 text-sm">
               <li>They say there's an emergency, fraud, or warrant — and you must act <strong>right now</strong>.</li>
               <li>They tell you not to hang up, not to talk to family, or not to tell the bank.</li>

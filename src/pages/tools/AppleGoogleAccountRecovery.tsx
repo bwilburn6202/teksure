@@ -20,8 +20,8 @@ export default function AppleGoogleAccountRecovery() {
         </div>
 
         <div className="flex gap-2 mb-4">
-          <button onClick={() => setTab('apple')} className={`flex-1 p-3 rounded-lg border-2 ${tab === 'apple' ? 'border-primary bg-primary/10' : 'border-muted'}`}>🍎 Apple ID</button>
-          <button onClick={() => setTab('google')} className={`flex-1 p-3 rounded-lg border-2 ${tab === 'google' ? 'border-primary bg-primary/10' : 'border-muted'}`}>📧 Google</button>
+          <button onClick={() => setTab('apple')} className={`flex-1 p-3 rounded-lg border-2 ${tab === 'apple' ? 'border-primary bg-primary/10' : 'border-muted'}`}> Apple ID</button>
+          <button onClick={() => setTab('google')} className={`flex-1 p-3 rounded-lg border-2 ${tab === 'google' ? 'border-primary bg-primary/10' : 'border-muted'}`}> Google</button>
         </div>
 
         {tab === 'apple' && (
@@ -85,7 +85,7 @@ export default function AppleGoogleAccountRecovery() {
 
         <Card className="mb-4 border-yellow-300 dark:border-yellow-800">
           <CardContent className="pt-6">
-            <h2 className="font-bold text-xl mb-3">⚠️ Recovery scams</h2>
+            <h2 className="font-bold text-xl mb-3"> Recovery scams</h2>
             <p className="text-sm mb-2">Real Apple and Google will NEVER:</p>
             <ul className="list-disc pl-5 space-y-1 text-sm">
               <li>Call you about your account.</li>

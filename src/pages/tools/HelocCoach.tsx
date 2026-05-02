@@ -51,7 +51,7 @@ export default function HelocCoach() {
 
         <Card className="mb-4 border-yellow-300 dark:border-yellow-800">
           <CardContent className="pt-6">
-            <h2 className="font-bold text-xl mb-3">⚠️ When HELOC is dangerous</h2>
+            <h2 className="font-bold text-xl mb-3"> When HELOC is dangerous</h2>
             <ul className="list-disc pl-5 space-y-1 text-sm">
               <li>To pay off credit cards. You\'re trading unsecured debt (lose if defaulted) for secured (lose your HOUSE if defaulted).</li>
               <li>Vacations, cars, weddings, or speculation.</li>

@@ -20,8 +20,8 @@ export default function WindowManagementCoach() {
         </div>
 
         <div className="flex gap-2 mb-4">
-          <button onClick={() => setTab('mac')} className={`flex-1 p-3 rounded-lg border-2 ${tab === 'mac' ? 'border-primary bg-primary/10' : 'border-muted'}`}>🍎 Mac</button>
-          <button onClick={() => setTab('windows')} className={`flex-1 p-3 rounded-lg border-2 ${tab === 'windows' ? 'border-primary bg-primary/10' : 'border-muted'}`}>🪟 Windows</button>
+          <button onClick={() => setTab('mac')} className={`flex-1 p-3 rounded-lg border-2 ${tab === 'mac' ? 'border-primary bg-primary/10' : 'border-muted'}`}> Mac</button>
+          <button onClick={() => setTab('windows')} className={`flex-1 p-3 rounded-lg border-2 ${tab === 'windows' ? 'border-primary bg-primary/10' : 'border-muted'}`}> Windows</button>
         </div>
 
         {tab === 'mac' && (
@@ -50,7 +50,7 @@ export default function WindowManagementCoach() {
               <CardContent className="pt-6">
                 <h3 className="font-bold text-lg mb-3">Spotlight (find ANY app, file, or setting)</h3>
                 <ol className="list-decimal pl-5 space-y-1 text-sm">
-                  <li>Press <kbd className="bg-muted px-1.5 py-0.5 rounded">⌘ + Space</kbd>.</li>
+                  <li>Press <kbd className="bg-muted px-1.5 py-0.5 rounded"> + Space</kbd>.</li>
                   <li>Type a few letters of an app, file, or contact.</li>
                   <li>Press Enter. Open in 2 seconds.</li>
                   <li>Faster than digging in folders.</li>
@@ -109,7 +109,7 @@ export default function WindowManagementCoach() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">The single best one-window tip</h3>
-            <p className="text-sm text-muted-foreground">If you only learn one: <strong>Alt + Tab (Windows)</strong> or <strong>⌘ + Tab (Mac)</strong> to switch between open apps. Hold the modifier; tap Tab to cycle. Game changer once it\'s muscle memory.</p>
+            <p className="text-sm text-muted-foreground">If you only learn one: <strong>Alt + Tab (Windows)</strong> or <strong> + Tab (Mac)</strong> to switch between open apps. Hold the modifier; tap Tab to cycle. Game changer once it\'s muscle memory.</p>
           </CardContent>
         </Card>
       </main>

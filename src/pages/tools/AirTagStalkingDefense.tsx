@@ -25,7 +25,7 @@ export default function AirTagStalkingDefense() {
 
         <Card className="mb-6">
           <CardContent className="pt-6">
-            <h2 className="font-bold text-xl mb-3">📱 If you have an iPhone</h2>
+            <h2 className="font-bold text-xl mb-3"> If you have an iPhone</h2>
             <p className="text-sm mb-3">Your iPhone automatically warns you if an unknown AirTag has been with you for a while.</p>
             <ul className="list-disc pl-5 space-y-2 text-sm mb-4">
               <li>You'll see a notification: <em>"AirTag Found Moving With You"</em>.</li>
@@ -37,7 +37,7 @@ export default function AirTagStalkingDefense() {
 
         <Card className="mb-6">
           <CardContent className="pt-6">
-            <h2 className="font-bold text-xl mb-3">🤖 If you have an Android phone</h2>
+            <h2 className="font-bold text-xl mb-3"> If you have an Android phone</h2>
             <p className="text-sm mb-3">Android also detects unknown AirTags now.</p>
             <ul className="list-disc pl-5 space-y-2 text-sm">
               <li>Install the free Apple app <strong>"Tracker Detect"</strong> from the Google Play Store, or use the built-in scanner.</li>
@@ -49,7 +49,7 @@ export default function AirTagStalkingDefense() {
 
         <Card className="mb-6">
           <CardContent className="pt-6">
-            <h2 className="font-bold text-xl mb-3">🔍 Where to physically search</h2>
+            <h2 className="font-bold text-xl mb-3"> Where to physically search</h2>
             <p className="text-sm mb-2">If you got an alert, look in these spots:</p>
             <ul className="list-disc pl-5 space-y-1 text-sm">
               <li>Inside coat pockets, purse linings, backpack pockets.</li>

@@ -67,7 +67,7 @@ export default function WhatsAppCoach() {
 
         <Card className="mb-4 border-yellow-300 dark:border-yellow-800">
           <CardContent className="pt-6">
-            <h2 className="font-bold text-xl mb-3">⚠️ Watch for scams</h2>
+            <h2 className="font-bold text-xl mb-3"> Watch for scams</h2>
             <ul className="list-disc pl-5 space-y-1 text-sm">
               <li><strong>Number you don\'t recognize messages you</strong> claiming to be a relative whose phone "broke" — scam. Verify by calling the real person\'s normal number.</li>
               <li><strong>"Win a prize" links</strong> — never tap.</li>

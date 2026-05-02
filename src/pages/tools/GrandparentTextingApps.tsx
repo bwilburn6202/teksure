@@ -49,7 +49,7 @@ export default function GrandparentTextingApps() {
             <h2 className="font-bold text-xl mb-3">Texting tricks to learn</h2>
             <ul className="list-disc pl-5 space-y-2 text-sm">
               <li><strong>GIFs</strong> — Tap GIF button on keyboard. Search "happy birthday" — animated cards instant.</li>
-              <li><strong>Emoji</strong> — Press 🌐 globe icon → tap emoji.</li>
+              <li><strong>Emoji</strong> — Press  globe icon → tap emoji.</li>
               <li><strong>Voice message</strong> — Hold microphone icon. Speak. Release sends.</li>
               <li><strong>Photo + sketch</strong> — iPhone Markup pencil. Add hearts to grandkid photos.</li>
               <li><strong>Reply to specific message</strong> — long-press message → Reply.</li>

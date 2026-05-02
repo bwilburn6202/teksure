@@ -18,7 +18,7 @@ export default function GenealogyDeepDive() {
 
         <Card className="mb-4">
           <CardContent className="pt-6">
-            <h2 className="font-bold text-xl mb-3">📰 Newspaper archives</h2>
+            <h2 className="font-bold text-xl mb-3"> Newspaper archives</h2>
             <ul className="list-disc pl-5 space-y-2 text-sm">
               <li><strong>Newspapers.com</strong> — 800M+ pages. $20-40/month. Find obituaries, weddings, family events.</li>
               <li><strong>Chronicling America (Library of Congress)</strong> — FREE. US newspapers 1777-1963. chroniclingamerica.loc.gov.</li>
@@ -31,7 +31,7 @@ export default function GenealogyDeepDive() {
 
         <Card className="mb-4">
           <CardContent className="pt-6">
-            <h2 className="font-bold text-xl mb-3">🪖 Military records</h2>
+            <h2 className="font-bold text-xl mb-3"> Military records</h2>
             <ul className="list-disc pl-5 space-y-2 text-sm">
               <li><strong>Fold3</strong> — military records 1700s-1990s. $90/year. Civil War extensive. WWI/WWII pension files.</li>
               <li><strong>National Archives (NARA)</strong> — request records FREE if 62+ years old at archives.gov.</li>
@@ -44,7 +44,7 @@ export default function GenealogyDeepDive() {
 
         <Card className="mb-4">
           <CardContent className="pt-6">
-            <h2 className="font-bold text-xl mb-3">📜 Census + immigration</h2>
+            <h2 className="font-bold text-xl mb-3"> Census + immigration</h2>
             <ul className="list-disc pl-5 space-y-2 text-sm">
               <li><strong>FamilySearch (FREE)</strong> — all US censuses 1790-1950. Ship manifests, naturalization.</li>
               <li><strong>1950 Census</strong> — newly released, fully searchable. Find your parents/grandparents.</li>
@@ -57,7 +57,7 @@ export default function GenealogyDeepDive() {
 
         <Card className="mb-4">
           <CardContent className="pt-6">
-            <h2 className="font-bold text-xl mb-3">🧬 DNA + family connections</h2>
+            <h2 className="font-bold text-xl mb-3"> DNA + family connections</h2>
             <ul className="list-disc pl-5 space-y-2 text-sm">
               <li><strong>AncestryDNA</strong> — biggest database, best US matches.</li>
               <li><strong>23andMe</strong> — strong on health + ethnicity.</li>
@@ -70,7 +70,7 @@ export default function GenealogyDeepDive() {
 
         <Card className="mb-4">
           <CardContent className="pt-6">
-            <h2 className="font-bold text-xl mb-3">📚 More free resources</h2>
+            <h2 className="font-bold text-xl mb-3"> More free resources</h2>
             <ul className="list-disc pl-5 space-y-1 text-sm">
               <li><strong>HeritageQuest</strong> — Census + city directories. FREE through libraries.</li>
               <li><strong>USGenWeb</strong> — free state/county historical records.</li>

@@ -29,7 +29,7 @@ export default function PublicChargingSafety() {
             <div className="flex gap-3">
               <ShieldCheck className="w-6 h-6 text-green-700 dark:text-green-400 shrink-0" />
               <div>
-                <h3 className="font-bold mb-2">✅ Always safe</h3>
+                <h3 className="font-bold mb-2"> Always safe</h3>
                 <ul className="list-disc pl-5 space-y-1 text-sm">
                   <li><strong>Wall outlets</strong> with your own charger plug. The wall socket can't see your data.</li>
                   <li><strong>Your own portable battery pack.</strong> Best $20 you'll ever spend on travel safety.</li>
@@ -46,7 +46,7 @@ export default function PublicChargingSafety() {
             <div className="flex gap-3">
               <AlertTriangle className="w-6 h-6 text-yellow-700 dark:text-yellow-400 shrink-0" />
               <div>
-                <h3 className="font-bold mb-2">⚠️ Be careful with</h3>
+                <h3 className="font-bold mb-2"> Be careful with</h3>
                 <ul className="list-disc pl-5 space-y-1 text-sm">
                   <li><strong>Public USB ports</strong> at airports, hotels, gyms, gate areas.</li>
                   <li><strong>USB ports in rental cars.</strong></li>

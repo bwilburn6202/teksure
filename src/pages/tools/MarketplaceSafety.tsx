@@ -18,7 +18,7 @@ export default function MarketplaceSafety() {
 
         <Card className="mb-6">
           <CardContent className="pt-6">
-            <h2 className="font-bold text-xl mb-3">🛡️ The 7 rules</h2>
+            <h2 className="font-bold text-xl mb-3"> The 7 rules</h2>
             <ol className="list-decimal pl-5 space-y-2 text-sm">
               <li><strong>Meet in public.</strong> Police station parking lots, busy coffee shops, the front of a bank during business hours. Many police stations have "Safe Exchange Zones" with cameras.</li>
               <li><strong>Bring someone with you.</strong> A friend or family member, or at least tell someone where you're going.</li>
@@ -36,7 +36,7 @@ export default function MarketplaceSafety() {
             <div className="flex gap-3">
               <AlertTriangle className="w-6 h-6 text-destructive shrink-0" />
               <div>
-                <h3 className="font-bold mb-2">🚩 Top scams to watch for</h3>
+                <h3 className="font-bold mb-2"> Top scams to watch for</h3>
                 <ul className="space-y-3 text-sm">
                   <li><strong>"Just send me a Zelle for shipping" (selling)</strong> — buyer "accidentally" sends too much, asks you to refund the difference. Their original payment will reverse, leaving you out the refund money.</li>
                   <li><strong>"I'll pay through Venmo Friends and Family" (buying)</strong> — Friends and Family removes buyer protection. Use Goods and Services or pay in person.</li>

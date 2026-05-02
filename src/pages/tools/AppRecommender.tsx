@@ -240,7 +240,7 @@ export default function AppRecommender() {
                   onClick={() => { setAnswers(p => ({ ...p, budget: 'free' })); setStep(3); }}
                   className="flex items-center gap-4 p-4 rounded-xl border-2 border-border bg-card text-left transition-all hover:border-primary/60 hover:bg-primary/5"
                 >
-                  <span className="text-3xl">🆓</span>
+                  <span className="text-3xl"></span>
                   <div>
                     <div className="font-medium">Free only, please</div>
                     <div className="text-sm text-muted-foreground">Show me only apps that cost nothing</div>

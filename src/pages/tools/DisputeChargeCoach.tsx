@@ -81,7 +81,7 @@ export default function DisputeChargeCoach() {
 
         <Card className="mb-4 border-yellow-300 dark:border-yellow-800">
           <CardContent className="pt-6">
-            <h2 className="font-bold text-xl mb-3">⚠️ For DEBIT card disputes</h2>
+            <h2 className="font-bold text-xl mb-3"> For DEBIT card disputes</h2>
             <p className="text-sm">Debit cards have weaker protection (Electronic Fund Transfer Act). Money is OUT of your account during dispute. ALWAYS use credit card for online or unfamiliar purchases.</p>
           </CardContent>
         </Card>

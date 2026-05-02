@@ -33,7 +33,7 @@ export default function ReadAloudAnywhere() {
         </Card>
 
         <div className="grid grid-cols-2 sm:grid-cols-4 gap-2 mb-4">
-          {[['iphone', '📱 iPhone'], ['android', '🤖 Android'], ['mac', '🍎 Mac'], ['windows', '🪟 Windows']].map(([id, label]) => (
+          {[['iphone', ' iPhone'], ['android', ' Android'], ['mac', ' Mac'], ['windows', ' Windows']].map(([id, label]) => (
             <button key={id} onClick={() => setTab(id as any)} className={`p-3 rounded-lg border-2 ${tab === id ? 'border-primary bg-primary/10' : 'border-muted'}`}>{label}</button>
           ))}
         </div>

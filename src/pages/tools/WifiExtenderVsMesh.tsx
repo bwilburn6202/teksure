@@ -18,7 +18,7 @@ export default function WifiExtenderVsMesh() {
 
         <Card className="mb-4">
           <CardContent className="pt-6">
-            <h2 className="font-bold text-xl mb-3">📡 Wi-Fi Extender (cheap, simple)</h2>
+            <h2 className="font-bold text-xl mb-3"> Wi-Fi Extender (cheap, simple)</h2>
             <p className="text-sm">$30-80 device that plugs into a wall outlet. Catches your existing Wi-Fi, rebroadcasts.</p>
             <ul className="list-disc pl-5 space-y-1 text-sm mt-2">
               <li><strong>Pros</strong>: Cheap, fast install (10 minutes).</li>
@@ -31,7 +31,7 @@ export default function WifiExtenderVsMesh() {
 
         <Card className="mb-4">
           <CardContent className="pt-6">
-            <h2 className="font-bold text-xl mb-3">🌐 Mesh System (premium, seamless)</h2>
+            <h2 className="font-bold text-xl mb-3"> Mesh System (premium, seamless)</h2>
             <p className="text-sm">$150-400 set of 2-3 units. Replaces your existing router. Creates ONE network with full coverage.</p>
             <ul className="list-disc pl-5 space-y-1 text-sm mt-2">
               <li><strong>Pros</strong>: Same network everywhere. Full speed. Auto-switches as you walk.</li>
@@ -45,7 +45,7 @@ export default function WifiExtenderVsMesh() {
 
         <Card className="mb-4">
           <CardContent className="pt-6">
-            <h2 className="font-bold text-xl mb-3">🔌 Powerline adapter (alternative)</h2>
+            <h2 className="font-bold text-xl mb-3"> Powerline adapter (alternative)</h2>
             <p className="text-sm">Sends internet through your home\'s electrical wiring. $80-150 for a kit. Plug one in near router, one in dead zone.</p>
             <ul className="list-disc pl-5 space-y-1 text-sm mt-2">
               <li><strong>Pros</strong>: Bypasses Wi-Fi entirely. Wired-quality speeds.</li>

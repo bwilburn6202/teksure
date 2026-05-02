@@ -26,7 +26,7 @@ export default function SmokeCoDetectorMaintenance() {
 
         <Card className="mb-4 border-destructive">
           <CardContent className="pt-6">
-            <h2 className="font-bold text-xl mb-3">⚠️ Old detectors fail SILENTLY</h2>
+            <h2 className="font-bold text-xl mb-3"> Old detectors fail SILENTLY</h2>
             <ul className="list-disc pl-5 space-y-1 text-sm">
               <li>Smoke detectors expire after 10 years — sensor degrades.</li>
               <li>CO detectors expire after 5-7 years (depends on model).</li>

@@ -18,7 +18,7 @@ export default function TremorPhoneSetup() {
 
         <Card className="mb-4">
           <CardContent className="pt-6">
-            <h2 className="font-bold text-xl mb-3">📱 iPhone — most helpful settings</h2>
+            <h2 className="font-bold text-xl mb-3"> iPhone — most helpful settings</h2>
             <p className="font-semibold text-sm mt-2">Touch accommodations:</p>
             <ol className="list-decimal pl-5 space-y-1 text-sm mb-3">
               <li>Settings → Accessibility → Touch → Touch Accommodations → ON.</li>
@@ -42,7 +42,7 @@ export default function TremorPhoneSetup() {
 
         <Card className="mb-4">
           <CardContent className="pt-6">
-            <h2 className="font-bold text-xl mb-3">🤖 Android — most helpful settings</h2>
+            <h2 className="font-bold text-xl mb-3"> Android — most helpful settings</h2>
             <ul className="list-disc pl-5 space-y-2 text-sm">
               <li><strong>Touch & hold delay</strong>: Settings → Accessibility → Touch & hold delay → "Long". Stops accidental triggers.</li>
               <li><strong>Display size</strong>: Settings → Display → Display size → maximum. Bigger buttons.</li>

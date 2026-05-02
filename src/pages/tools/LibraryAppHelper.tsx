@@ -31,7 +31,7 @@ export default function LibraryAppHelper() {
 
         <Card className="mb-4">
           <CardContent className="pt-6">
-            <h2 className="font-bold text-xl mb-3">📚 Libby — for e-books and audiobooks</h2>
+            <h2 className="font-bold text-xl mb-3"> Libby — for e-books and audiobooks</h2>
             <p className="text-sm mb-3">Made by OverDrive. The cleanest, most popular library app.</p>
             <ol className="list-decimal pl-5 space-y-2 text-sm">
               <li>Install <strong>Libby</strong> from the App Store or Play Store. Free, no ads.</li>
@@ -51,7 +51,7 @@ export default function LibraryAppHelper() {
 
         <Card className="mb-4">
           <CardContent className="pt-6">
-            <h2 className="font-bold text-xl mb-3">🎬 Hoopla — for movies, TV, comics, and instant books</h2>
+            <h2 className="font-bold text-xl mb-3"> Hoopla — for movies, TV, comics, and instant books</h2>
             <p className="text-sm mb-3">Different model — no holds, ever. Borrow up to a monthly limit.</p>
             <ol className="list-decimal pl-5 space-y-2 text-sm">
               <li>Install <strong>Hoopla Digital</strong> from the App Store or Play Store.</li>

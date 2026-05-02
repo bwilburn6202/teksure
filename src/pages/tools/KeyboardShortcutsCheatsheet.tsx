@@ -9,19 +9,19 @@ export default function KeyboardShortcutsCheatsheet() {
   const [tab, setTab] = useState<'mac' | 'windows'>('mac');
 
   const macShortcuts = [
-    { keys: '⌘ + C / V / X', what: 'Copy / Paste / Cut' },
-    { keys: '⌘ + Z / ⌘ + Shift + Z', what: 'Undo / Redo' },
-    { keys: '⌘ + S', what: 'Save' },
-    { keys: '⌘ + F', what: 'Find on this page' },
-    { keys: '⌘ + Tab', what: 'Switch between open apps' },
-    { keys: '⌘ + Q', what: 'Quit current app' },
-    { keys: '⌘ + W', what: 'Close current window' },
-    { keys: '⌘ + N / T', what: 'New window / new tab' },
-    { keys: '⌘ + +/-', what: 'Zoom in / out (browsers)' },
-    { keys: '⌘ + Space', what: 'Spotlight search (find anything)' },
-    { keys: 'Shift + ⌘ + 4', what: 'Screenshot (drag area)' },
-    { keys: 'Shift + ⌘ + 5', what: 'Screenshot menu (with options)' },
-    { keys: '⌘ + Up / Down arrow', what: 'Top / bottom of page' },
+    { keys: ' + C / V / X', what: 'Copy / Paste / Cut' },
+    { keys: ' + Z /  + Shift + Z', what: 'Undo / Redo' },
+    { keys: ' + S', what: 'Save' },
+    { keys: ' + F', what: 'Find on this page' },
+    { keys: ' + Tab', what: 'Switch between open apps' },
+    { keys: ' + Q', what: 'Quit current app' },
+    { keys: ' + W', what: 'Close current window' },
+    { keys: ' + N / T', what: 'New window / new tab' },
+    { keys: ' + +/-', what: 'Zoom in / out (browsers)' },
+    { keys: ' + Space', what: 'Spotlight search (find anything)' },
+    { keys: 'Shift +  + 4', what: 'Screenshot (drag area)' },
+    { keys: 'Shift +  + 5', what: 'Screenshot menu (with options)' },
+    { keys: ' + Up / Down arrow', what: 'Top / bottom of page' },
   ];
 
   const winShortcuts = [
@@ -57,8 +57,8 @@ export default function KeyboardShortcutsCheatsheet() {
         </div>
 
         <div className="flex gap-2 mb-4">
-          <button onClick={() => setTab('mac')} className={`flex-1 p-3 rounded-lg border-2 ${tab === 'mac' ? 'border-primary bg-primary/10' : 'border-muted'}`}>🍎 Mac</button>
-          <button onClick={() => setTab('windows')} className={`flex-1 p-3 rounded-lg border-2 ${tab === 'windows' ? 'border-primary bg-primary/10' : 'border-muted'}`}>🪟 Windows</button>
+          <button onClick={() => setTab('mac')} className={`flex-1 p-3 rounded-lg border-2 ${tab === 'mac' ? 'border-primary bg-primary/10' : 'border-muted'}`}> Mac</button>
+          <button onClick={() => setTab('windows')} className={`flex-1 p-3 rounded-lg border-2 ${tab === 'windows' ? 'border-primary bg-primary/10' : 'border-muted'}`}> Windows</button>
         </div>
 
         <Card className="mb-4">
@@ -89,9 +89,9 @@ export default function KeyboardShortcutsCheatsheet() {
             <ol className="list-decimal pl-5 space-y-1 text-sm mt-2">
               <li><strong>Copy/Paste</strong> — daily.</li>
               <li><strong>Undo</strong> — saves you from typos.</li>
-              <li><strong>Find on page</strong> — Ctrl/⌘+F. Instantly locate any word.</li>
-              <li><strong>Switch apps</strong> — Alt+Tab (Win) or ⌘+Tab (Mac).</li>
-              <li><strong>Save</strong> — Ctrl/⌘+S. Press it constantly while working.</li>
+              <li><strong>Find on page</strong> — Ctrl/+F. Instantly locate any word.</li>
+              <li><strong>Switch apps</strong> — Alt+Tab (Win) or +Tab (Mac).</li>
+              <li><strong>Save</strong> — Ctrl/+S. Press it constantly while working.</li>
             </ol>
           </CardContent>
         </Card>

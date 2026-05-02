@@ -18,7 +18,7 @@ export default function PetTechCoach() {
 
         <Card className="mb-4">
           <CardContent className="pt-6">
-            <h2 className="font-bold text-xl mb-3">📍 GPS pet trackers (in case they get out)</h2>
+            <h2 className="font-bold text-xl mb-3"> GPS pet trackers (in case they get out)</h2>
             <ul className="space-y-3 text-sm">
               <li><strong>Apple AirTag (~$25)</strong> — works ONLY if your pet is near other Apple devices. Fine in cities, useless in rural areas. Best paired with a separate small collar tag.</li>
               <li><strong>Tile Mate (~$25)</strong> — same idea, works with both iPhone and Android networks.</li>
@@ -32,7 +32,7 @@ export default function PetTechCoach() {
 
         <Card className="mb-4">
           <CardContent className="pt-6">
-            <h2 className="font-bold text-xl mb-3">🚨 If your pet is lost</h2>
+            <h2 className="font-bold text-xl mb-3"> If your pet is lost</h2>
             <ol className="list-decimal pl-5 space-y-2 text-sm">
               <li>Call your vet — confirm the microchip is registered in YOUR name with current phone numbers. (Many seniors discover the chip is still in the breeder's name from years ago.)</li>
               <li>Post on <strong>Nextdoor</strong>, <strong>Facebook neighborhood groups</strong>, and <strong>PawBoost</strong> (free lost-pet alert site).</li>
@@ -45,7 +45,7 @@ export default function PetTechCoach() {
 
         <Card className="mb-4">
           <CardContent className="pt-6">
-            <h2 className="font-bold text-xl mb-3">🐕 Dog walking & sitting apps</h2>
+            <h2 className="font-bold text-xl mb-3"> Dog walking & sitting apps</h2>
             <ul className="list-disc pl-5 space-y-2 text-sm">
               <li><strong>Rover</strong> — biggest dog walker / sitter network. Verified profiles, reviews, in-app messaging. Insurance built in.</li>
               <li><strong>Wag</strong> — similar idea. Often a bit cheaper, slightly less consistent walker quality.</li>
@@ -57,7 +57,7 @@ export default function PetTechCoach() {
 
         <Card className="mb-4">
           <CardContent className="pt-6">
-            <h2 className="font-bold text-xl mb-3">🏥 Vet apps and health tracking</h2>
+            <h2 className="font-bold text-xl mb-3"> Vet apps and health tracking</h2>
             <ul className="list-disc pl-5 space-y-2 text-sm">
               <li><strong>Pawprint / iVet</strong> — keep vaccine and shot records on your phone. Useful for boarding kennels.</li>
               <li><strong>Banfield (PetSmart vet) app</strong> — schedule, see records, refill meds.</li>
@@ -68,7 +68,7 @@ export default function PetTechCoach() {
 
         <Card className="mb-4">
           <CardContent className="pt-6">
-            <h2 className="font-bold text-xl mb-3">🛒 Free deals worth knowing</h2>
+            <h2 className="font-bold text-xl mb-3"> Free deals worth knowing</h2>
             <ul className="list-disc pl-5 space-y-1 text-sm">
               <li><strong>Chewy Autoship</strong> — pet food on a schedule with 5-10% off. Free 1-2 day shipping.</li>
               <li><strong>Costco</strong> — Kirkland-brand pet food is rated as well as premium brands at half the price.</li>

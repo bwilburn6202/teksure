@@ -20,8 +20,8 @@ export default function PhoneSwitchHelper() {
         </div>
 
         <div className="flex gap-2 mb-4">
-          <button onClick={() => setDir('and-to-iph')} className={`flex-1 p-3 rounded-lg border-2 ${dir === 'and-to-iph' ? 'border-primary bg-primary/10' : 'border-muted'}`}>🤖 → 📱 Android to iPhone</button>
-          <button onClick={() => setDir('iph-to-and')} className={`flex-1 p-3 rounded-lg border-2 ${dir === 'iph-to-and' ? 'border-primary bg-primary/10' : 'border-muted'}`}>📱 → 🤖 iPhone to Android</button>
+          <button onClick={() => setDir('and-to-iph')} className={`flex-1 p-3 rounded-lg border-2 ${dir === 'and-to-iph' ? 'border-primary bg-primary/10' : 'border-muted'}`}> →  Android to iPhone</button>
+          <button onClick={() => setDir('iph-to-and')} className={`flex-1 p-3 rounded-lg border-2 ${dir === 'iph-to-and' ? 'border-primary bg-primary/10' : 'border-muted'}`}> →  iPhone to Android</button>
         </div>
 
         {dir === 'and-to-iph' && (

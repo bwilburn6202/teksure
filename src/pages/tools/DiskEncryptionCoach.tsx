@@ -28,8 +28,8 @@ export default function DiskEncryptionCoach() {
         </Card>
 
         <div className="flex gap-2 mb-4">
-          <button onClick={() => setTab('mac')} className={`flex-1 p-3 rounded-lg border-2 ${tab === 'mac' ? 'border-primary bg-primary/10' : 'border-muted'}`}>🍎 Mac (FileVault)</button>
-          <button onClick={() => setTab('windows')} className={`flex-1 p-3 rounded-lg border-2 ${tab === 'windows' ? 'border-primary bg-primary/10' : 'border-muted'}`}>🪟 Windows (BitLocker)</button>
+          <button onClick={() => setTab('mac')} className={`flex-1 p-3 rounded-lg border-2 ${tab === 'mac' ? 'border-primary bg-primary/10' : 'border-muted'}`}> Mac (FileVault)</button>
+          <button onClick={() => setTab('windows')} className={`flex-1 p-3 rounded-lg border-2 ${tab === 'windows' ? 'border-primary bg-primary/10' : 'border-muted'}`}> Windows (BitLocker)</button>
         </div>
 
         {tab === 'mac' && (
@@ -78,7 +78,7 @@ export default function DiskEncryptionCoach() {
 
         <Card className="mb-4 border-yellow-300 dark:border-yellow-800">
           <CardContent className="pt-6">
-            <h2 className="font-bold text-xl mb-3">⚠️ DON\'T LOSE YOUR RECOVERY KEY</h2>
+            <h2 className="font-bold text-xl mb-3"> DON\'T LOSE YOUR RECOVERY KEY</h2>
             <p className="text-sm">If you forget your password AND lose your recovery key — your data is gone. No "I forgot" recovery service exists. PRINT the recovery key. Put it in a safe deposit box, with your will, or with a trusted family member.</p>
           </CardContent>
         </Card>

@@ -35,8 +35,8 @@ export default function BatteryHealthChecker() {
           <Card>
             <CardContent className="pt-6 space-y-3">
               <h2 className="font-bold text-lg mb-2">Which phone do you have?</h2>
-              <Button onClick={() => setPhone('iphone')} variant="outline" size="lg" className="w-full justify-between">📱 iPhone <ChevronRight className="w-4 h-4" /></Button>
-              <Button onClick={() => setPhone('android')} variant="outline" size="lg" className="w-full justify-between">🤖 Android <ChevronRight className="w-4 h-4" /></Button>
+              <Button onClick={() => setPhone('iphone')} variant="outline" size="lg" className="w-full justify-between"> iPhone <ChevronRight className="w-4 h-4" /></Button>
+              <Button onClick={() => setPhone('android')} variant="outline" size="lg" className="w-full justify-between"> Android <ChevronRight className="w-4 h-4" /></Button>
             </CardContent>
           </Card>
         )}

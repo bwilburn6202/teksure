@@ -80,7 +80,7 @@ export default function AntivirusPicker() {
 
         <Card className="mb-4 border-yellow-300 dark:border-yellow-800">
           <CardContent className="pt-6">
-            <h2 className="font-bold text-xl mb-3">⚠️ Antivirus scams</h2>
+            <h2 className="font-bold text-xl mb-3"> Antivirus scams</h2>
             <ul className="list-disc pl-5 space-y-1 text-sm">
               <li><strong>"Your computer is infected!" pop-ups</strong> — never real. (See our Tech Support Pop-up Defense.)</li>
               <li><strong>Free antivirus from random websites</strong> — often malware itself.</li>

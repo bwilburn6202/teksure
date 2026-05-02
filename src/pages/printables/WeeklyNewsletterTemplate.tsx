@@ -1491,7 +1491,7 @@ export default function WeeklyNewsletterTemplate() {
                     {(data.scamTitle || data.scamBody) && (
                       <div className={`${styles.section} wn-scam`}>
                         <div className="wn-section-title">
-                          ⚠ Watch out for: {data.scamTitle}
+                           Watch out for: {data.scamTitle}
                         </div>
                         {data.scamBody && <p style={{ margin: 0 }}>{data.scamBody}</p>}
                       </div>

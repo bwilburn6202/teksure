@@ -74,7 +74,7 @@ export default function RetirementJobsApps() {
 
         <Card className="mb-4 border-yellow-300 dark:border-yellow-800">
           <CardContent className="pt-6">
-            <h2 className="font-bold text-xl mb-3">⚠️ Income limits if collecting Social Security</h2>
+            <h2 className="font-bold text-xl mb-3"> Income limits if collecting Social Security</h2>
             <p className="text-sm">If you take Social Security before your full retirement age (66-67), your earnings can reduce your benefit.</p>
             <ul className="list-disc pl-5 space-y-1 text-sm mt-2">
               <li><strong>Before full retirement age:</strong> $1 reduced for every $2 earned over $22,320/yr (2025).</li>

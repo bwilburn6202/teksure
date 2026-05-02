@@ -30,17 +30,17 @@ export default function AdultScreenTimeCoach() {
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Step 1 — See where time goes</h2>
             <p className="text-sm mb-2">Both phones have it built in.</p>
-            <p className="font-semibold text-sm">📱 iPhone:</p>
+            <p className="font-semibold text-sm"> iPhone:</p>
             <p className="text-sm mb-2">Settings → Screen Time → "See All Activity". Shows daily and weekly time per app.</p>
-            <p className="font-semibold text-sm">🤖 Android:</p>
+            <p className="font-semibold text-sm"> Android:</p>
             <p className="text-sm">Settings → Digital Wellbeing & parental controls → "Dashboard".</p>
             <p className="text-sm mt-2 bg-muted/50 p-3 rounded">Look at it once. The numbers are usually startling.</p>
           </CardContent>
         </Card>
 
         <div className="flex gap-2 mb-4">
-          <button onClick={() => setTab('iphone')} className={`flex-1 p-3 rounded-lg border-2 ${tab === 'iphone' ? 'border-primary bg-primary/10' : 'border-muted'}`}>📱 iPhone</button>
-          <button onClick={() => setTab('android')} className={`flex-1 p-3 rounded-lg border-2 ${tab === 'android' ? 'border-primary bg-primary/10' : 'border-muted'}`}>🤖 Android</button>
+          <button onClick={() => setTab('iphone')} className={`flex-1 p-3 rounded-lg border-2 ${tab === 'iphone' ? 'border-primary bg-primary/10' : 'border-muted'}`}> iPhone</button>
+          <button onClick={() => setTab('android')} className={`flex-1 p-3 rounded-lg border-2 ${tab === 'android' ? 'border-primary bg-primary/10' : 'border-muted'}`}> Android</button>
         </div>
 
         {tab === 'iphone' && (

@@ -86,7 +86,7 @@ export default function MobileBankingCoach() {
 
         <Card className="mb-4 border-yellow-300 dark:border-yellow-800">
           <CardContent className="pt-6">
-            <h2 className="font-bold text-xl mb-3">⚠️ Stay safe</h2>
+            <h2 className="font-bold text-xl mb-3"> Stay safe</h2>
             <ul className="list-disc pl-5 space-y-2 text-sm">
               <li><strong>Never click on "your bank" texts</strong> — log in by opening the app yourself.</li>
               <li><strong>Real banks NEVER ask for your full PIN or password by text or phone.</strong></li>

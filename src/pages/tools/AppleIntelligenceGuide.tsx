@@ -27,11 +27,11 @@ export default function AppleIntelligenceGuide() {
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">What works on which device</h2>
             <ul className="list-disc pl-5 space-y-2 text-sm">
-              <li><strong>iPhone 15 Pro / Pro Max</strong> ✅</li>
-              <li><strong>iPhone 16 / 16 Plus / 16 Pro / 16 Pro Max</strong> ✅</li>
-              <li><strong>iPhone 14 and older</strong> ❌ (not enough chip power)</li>
-              <li><strong>iPad with M1+ chip</strong> ✅</li>
-              <li><strong>Mac with M1+ chip</strong> ✅</li>
+              <li><strong>iPhone 15 Pro / Pro Max</strong> </li>
+              <li><strong>iPhone 16 / 16 Plus / 16 Pro / 16 Pro Max</strong> </li>
+              <li><strong>iPhone 14 and older</strong>  (not enough chip power)</li>
+              <li><strong>iPad with M1+ chip</strong> </li>
+              <li><strong>Mac with M1+ chip</strong> </li>
               <li>Free with iOS 18.1+, iPadOS 18.1+, macOS 15+.</li>
             </ul>
           </CardContent>

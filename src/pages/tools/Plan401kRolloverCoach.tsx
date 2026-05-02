@@ -64,7 +64,7 @@ export default function Plan401kRolloverCoach() {
 
         <Card className="mb-4 border-yellow-300 dark:border-yellow-800">
           <CardContent className="pt-6">
-            <h2 className="font-bold text-xl mb-3">⚠️ Avoid the "60-day rollover" trap</h2>
+            <h2 className="font-bold text-xl mb-3"> Avoid the "60-day rollover" trap</h2>
             <p className="text-sm">If the check is made out to YOU, you must deposit into IRA within 60 days OR it\'s treated as a withdrawal — taxed + 10% penalty. ALWAYS use "direct rollover" — never have the check come to you personally.</p>
           </CardContent>
         </Card>

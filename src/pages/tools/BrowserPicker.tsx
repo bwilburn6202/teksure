@@ -57,7 +57,7 @@ export default function BrowserPicker() {
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Settings to change once</h2>
             <ul className="list-disc pl-5 space-y-2 text-sm">
-              <li><strong>Make text bigger:</strong> Hold <kbd className="bg-muted px-1.5 py-0.5 rounded">Ctrl</kbd> (or <kbd className="bg-muted px-1.5 py-0.5 rounded">⌘</kbd> on Mac) and tap <kbd className="bg-muted px-1.5 py-0.5 rounded">+</kbd> several times. <kbd className="bg-muted px-1.5 py-0.5 rounded">-</kbd> to shrink. <kbd className="bg-muted px-1.5 py-0.5 rounded">0</kbd> to reset.</li>
+              <li><strong>Make text bigger:</strong> Hold <kbd className="bg-muted px-1.5 py-0.5 rounded">Ctrl</kbd> (or <kbd className="bg-muted px-1.5 py-0.5 rounded"></kbd> on Mac) and tap <kbd className="bg-muted px-1.5 py-0.5 rounded">+</kbd> several times. <kbd className="bg-muted px-1.5 py-0.5 rounded">-</kbd> to shrink. <kbd className="bg-muted px-1.5 py-0.5 rounded">0</kbd> to reset.</li>
               <li><strong>Permanent zoom:</strong> Settings → Appearance → "Page zoom" → 125% or 150%.</li>
               <li><strong>Default to Reader Mode</strong> on long articles (Safari and Edge both have a "reader" icon in the address bar).</li>
               <li><strong>Block pop-ups:</strong> Settings → Privacy → "Block pop-ups" — usually on by default but verify.</li>

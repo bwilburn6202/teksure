@@ -31,7 +31,7 @@ export default function VideoCallTipsForFamily() {
 
         <Card className="mb-4">
           <CardContent className="pt-6">
-            <h2 className="font-bold text-xl mb-3">📞 Set up the call (any app)</h2>
+            <h2 className="font-bold text-xl mb-3"> Set up the call (any app)</h2>
             <p className="font-semibold text-sm mt-2">Make a FaceTime call:</p>
             <ol className="list-decimal pl-5 space-y-1 text-sm mb-3">
               <li>Open FaceTime.</li>
