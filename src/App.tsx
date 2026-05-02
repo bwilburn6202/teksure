@@ -2800,6 +2800,11 @@ const SeniorAndroidLockScreen                = lazy(() => import("./pages/tools/
 const SeniorAndroidUpdates                   = lazy(() => import("./pages/tools/SeniorAndroidUpdates"));
 const SeniorAndroidBackup                    = lazy(() => import("./pages/tools/SeniorAndroidBackup"));
 const SeniorAndroidStorage                   = lazy(() => import("./pages/tools/SeniorAndroidStorage"));
+const SeniorAndroidAccessibility             = lazy(() => import("./pages/tools/SeniorAndroidAccessibility"));
+const SeniorAndroidWiFi                      = lazy(() => import("./pages/tools/SeniorAndroidWiFi"));
+const SeniorAndroidBattery                   = lazy(() => import("./pages/tools/SeniorAndroidBattery"));
+const SeniorAndroidFindMyDevice              = lazy(() => import("./pages/tools/SeniorAndroidFindMyDevice"));
+const SeniorAndroidEmergencySOS              = lazy(() => import("./pages/tools/SeniorAndroidEmergencySOS"));
 const SeniorAmateurRadio                     = lazy(() => import("./pages/tools/SeniorAmateurRadio"));
 const SeniorMetalDetecting                   = lazy(() => import("./pages/tools/SeniorMetalDetecting"));
 const SeniorWoodCarving                      = lazy(() => import("./pages/tools/SeniorWoodCarving"));
@@ -6171,6 +6176,11 @@ const AppContent = () => {
           <Route path="/tools/senior-android-updates" element={<SeniorAndroidUpdates />} />
           <Route path="/tools/senior-android-backup" element={<SeniorAndroidBackup />} />
           <Route path="/tools/senior-android-storage" element={<SeniorAndroidStorage />} />
+          <Route path="/tools/senior-android-accessibility" element={<SeniorAndroidAccessibility />} />
+          <Route path="/tools/senior-android-wifi" element={<SeniorAndroidWiFi />} />
+          <Route path="/tools/senior-android-battery" element={<SeniorAndroidBattery />} />
+          <Route path="/tools/senior-android-find-my-device" element={<SeniorAndroidFindMyDevice />} />
+          <Route path="/tools/senior-android-emergency-sos" element={<SeniorAndroidEmergencySOS />} />
           <Route path="/tools/senior-amateur-radio" element={<SeniorAmateurRadio />} />
           <Route path="/tools/senior-metal-detecting" element={<SeniorMetalDetecting />} />
           <Route path="/tools/senior-wood-carving" element={<SeniorWoodCarving />} />
