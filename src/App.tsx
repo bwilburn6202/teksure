@@ -2299,6 +2299,11 @@ const SeniorGoogleMapsBasics                 = lazy(() => import("./pages/tools/
 const SeniorParkingApps                      = lazy(() => import("./pages/tools/SeniorParkingApps"));
 const SeniorEVChargingApps                   = lazy(() => import("./pages/tools/SeniorEVChargingApps"));
 const SeniorPublicTransitApps                = lazy(() => import("./pages/tools/SeniorPublicTransitApps"));
+const SeniorAlexaBasics                      = lazy(() => import("./pages/tools/SeniorAlexaBasics"));
+const SeniorGoogleAssistantBasics            = lazy(() => import("./pages/tools/SeniorGoogleAssistantBasics"));
+const SeniorSiriBasics                       = lazy(() => import("./pages/tools/SeniorSiriBasics"));
+const SeniorChatGPTBasics                    = lazy(() => import("./pages/tools/SeniorChatGPTBasics"));
+const SeniorAIVoiceCloneRisks                = lazy(() => import("./pages/tools/SeniorAIVoiceCloneRisks"));
 
 // ── Cycle 195 (April 29 2026) — DIY home ──
 const BasicToolsForSeniors   = lazy(() => import("./pages/tools/BasicToolsForSeniors"));
@@ -5164,6 +5169,11 @@ const AppContent = () => {
           <Route path="/tools/senior-parking-apps" element={<SeniorParkingApps />} />
           <Route path="/tools/senior-ev-charging-apps" element={<SeniorEVChargingApps />} />
           <Route path="/tools/senior-public-transit-apps" element={<SeniorPublicTransitApps />} />
+          <Route path="/tools/senior-alexa-basics" element={<SeniorAlexaBasics />} />
+          <Route path="/tools/senior-google-assistant-basics" element={<SeniorGoogleAssistantBasics />} />
+          <Route path="/tools/senior-siri-basics" element={<SeniorSiriBasics />} />
+          <Route path="/tools/senior-chatgpt-basics" element={<SeniorChatGPTBasics />} />
+          <Route path="/tools/senior-ai-voice-clone-risks" element={<SeniorAIVoiceCloneRisks />} />
           <Route path="/tools/basic-tools-for-seniors" element={<BasicToolsForSeniors />} />
           <Route path="/tools/painting-tips-seniors" element={<PaintingTipsSeniors />} />
           <Route path="/tools/caulking-basics" element={<CaulkingBasics />} />
