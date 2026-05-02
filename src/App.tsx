@@ -2359,6 +2359,9 @@ const SeniorAdultDayCareTech                 = lazy(() => import("./pages/tools/
 const SeniorMealDelivery                     = lazy(() => import("./pages/tools/SeniorMealDelivery"));
 const SeniorRespiteCareApps                  = lazy(() => import("./pages/tools/SeniorRespiteCareApps"));
 const SeniorMemoryAids                       = lazy(() => import("./pages/tools/SeniorMemoryAids"));
+const SeniorMeetupGroups                     = lazy(() => import("./pages/tools/SeniorMeetupGroups"));
+const SeniorVolunteering                     = lazy(() => import("./pages/tools/SeniorVolunteering"));
+const SeniorClassmates                       = lazy(() => import("./pages/tools/SeniorClassmates"));
 
 // ── Cycle 195 (April 29 2026) — DIY home ──
 const BasicToolsForSeniors   = lazy(() => import("./pages/tools/BasicToolsForSeniors"));
@@ -5284,6 +5287,9 @@ const AppContent = () => {
           <Route path="/tools/senior-meal-delivery" element={<SeniorMealDelivery />} />
           <Route path="/tools/senior-respite-care-apps" element={<SeniorRespiteCareApps />} />
           <Route path="/tools/senior-memory-aids" element={<SeniorMemoryAids />} />
+          <Route path="/tools/senior-meetup-groups" element={<SeniorMeetupGroups />} />
+          <Route path="/tools/senior-volunteering" element={<SeniorVolunteering />} />
+          <Route path="/tools/senior-classmates" element={<SeniorClassmates />} />
           <Route path="/tools/basic-tools-for-seniors" element={<BasicToolsForSeniors />} />
           <Route path="/tools/painting-tips-seniors" element={<PaintingTipsSeniors />} />
           <Route path="/tools/caulking-basics" element={<CaulkingBasics />} />
