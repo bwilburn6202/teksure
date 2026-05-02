@@ -2636,6 +2636,11 @@ const SeniorAntiInflammatoryDiet             = lazy(() => import("./pages/tools/
 const SeniorB12Tracking                      = lazy(() => import("./pages/tools/SeniorB12Tracking"));
 const SeniorVitaminDApps                     = lazy(() => import("./pages/tools/SeniorVitaminDApps"));
 const SeniorOmegaThree                       = lazy(() => import("./pages/tools/SeniorOmegaThree"));
+const SeniorWalkingMonitors                  = lazy(() => import("./pages/tools/SeniorWalkingMonitors"));
+const SeniorTreadmillApps                    = lazy(() => import("./pages/tools/SeniorTreadmillApps"));
+const SeniorBikeStationary                   = lazy(() => import("./pages/tools/SeniorBikeStationary"));
+const SeniorPilatesApps                      = lazy(() => import("./pages/tools/SeniorPilatesApps"));
+const SeniorSwimmingApps                     = lazy(() => import("./pages/tools/SeniorSwimmingApps"));
 
 // ── Cycle 195 (April 29 2026) — DIY home ──
 const BasicToolsForSeniors   = lazy(() => import("./pages/tools/BasicToolsForSeniors"));
@@ -5838,6 +5843,11 @@ const AppContent = () => {
           <Route path="/tools/senior-b12-tracking" element={<SeniorB12Tracking />} />
           <Route path="/tools/senior-vitamin-d-apps" element={<SeniorVitaminDApps />} />
           <Route path="/tools/senior-omega-three" element={<SeniorOmegaThree />} />
+          <Route path="/tools/senior-walking-monitors" element={<SeniorWalkingMonitors />} />
+          <Route path="/tools/senior-treadmill-apps" element={<SeniorTreadmillApps />} />
+          <Route path="/tools/senior-bike-stationary" element={<SeniorBikeStationary />} />
+          <Route path="/tools/senior-pilates-apps" element={<SeniorPilatesApps />} />
+          <Route path="/tools/senior-swimming-apps" element={<SeniorSwimmingApps />} />
           <Route path="/tools/basic-tools-for-seniors" element={<BasicToolsForSeniors />} />
           <Route path="/tools/painting-tips-seniors" element={<PaintingTipsSeniors />} />
           <Route path="/tools/caulking-basics" element={<CaulkingBasics />} />
