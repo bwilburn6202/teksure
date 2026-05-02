@@ -7,22 +7,22 @@ import { Music } from 'lucide-react';
 export default function SeniorAppleMusic() {
   return (
     <div className="min-h-screen flex flex-col bg-background">
-      <SEOHead title="Apple Music for Seniors — TekSure" description="Apple Music for seniors — lyrics, family, classical music, voice control." />
+      <SEOHead title="Apple Music for Seniors — Senior Guide" description="Stream music with Apple Music." />
       <Navbar />
       <main className="flex-1 container mx-auto px-4 py-10 max-w-3xl">
         <div className="text-center mb-8">
           <Music className="w-14 h-14 text-primary mx-auto mb-3" />
-          <h1 className="text-4xl font-bold mb-2">Apple Music for Seniors</h1>
-          <p className="text-lg text-muted-foreground">Music for Apple users.</p>
+          <h1 className="text-4xl font-bold mb-2">Apple Music</h1>
+          <p className="text-lg text-muted-foreground">Millions of songs.</p>
         </div>
         <div className="space-y-4">
-          <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Cost</h2><p>$11/month. Family $17/month for 6 people.</p></CardContent></Card>
-          <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">100M songs</h2><p>Largest catalog. Includes oldies, classical, jazz seniors love.</p></CardContent></Card>
-          <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Lyrics</h2><p>Tap a song. See lyrics. Sing along. Karaoke at home.</p></CardContent></Card>
-          <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Apple One $20/month</h2><p>Bundle: Apple Music + Apple TV+ + iCloud + Arcade. Best value.</p></CardContent></Card>
-          <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Classical</h2><p>Apple Music Classical (separate app, included). Best for senior classical fans.</p></CardContent></Card>
-          <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Voice control</h2><p>&ldquo;Hey Siri, play Frank Sinatra Apple Music.&rdquo; Hands-free.</p></CardContent></Card>
-          <Card className="bg-muted/40"><CardContent className="pt-6"><p className="text-sm">Quick Tip: Auto-renews on iPhone. Set calendar reminder to evaluate yearly.</p></CardContent></Card>
+          <Card><CardContent className="p-6"><h2 className="text-xl font-semibold mb-2">1. Cost</h2><p>$11/month. Try free for 1 month.</p></CardContent></Card>
+          <Card><CardContent className="p-6"><h2 className="text-xl font-semibold mb-2">2. Family plan</h2><p>$17/month for 6 people. Best deal for families.</p></CardContent></Card>
+          <Card><CardContent className="p-6"><h2 className="text-xl font-semibold mb-2">3. Lyrics</h2><p>Tap song. Tap lyrics icon. Lyrics scroll along. Like karaoke.</p></CardContent></Card>
+          <Card><CardContent className="p-6"><h2 className="text-xl font-semibold mb-2">4. Stations</h2><p>Tap any song, then Create Station. Plays similar songs forever.</p></CardContent></Card>
+          <Card><CardContent className="p-6"><h2 className="text-xl font-semibold mb-2">5. Download albums</h2><p>Tap cloud icon. Listen offline.</p></CardContent></Card>
+          <Card><CardContent className="p-6"><h2 className="text-xl font-semibold mb-2">6. Cast to speakers</h2><p>AirPlay button. Stream to HomePod, Sonos, AirPods.</p></CardContent></Card>
+          <Card className="bg-muted/40"><CardContent className="p-6"><p>If you mostly listen on Android, Spotify is a better fit.</p></CardContent></Card>
         </div>
       </main>
       <Footer />
