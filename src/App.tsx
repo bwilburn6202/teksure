@@ -2304,6 +2304,11 @@ const SeniorGoogleAssistantBasics            = lazy(() => import("./pages/tools/
 const SeniorSiriBasics                       = lazy(() => import("./pages/tools/SeniorSiriBasics"));
 const SeniorChatGPTBasics                    = lazy(() => import("./pages/tools/SeniorChatGPTBasics"));
 const SeniorAIVoiceCloneRisks                = lazy(() => import("./pages/tools/SeniorAIVoiceCloneRisks"));
+const SeniorMedicalAlertSystems              = lazy(() => import("./pages/tools/SeniorMedicalAlertSystems"));
+const SeniorEmergencySOS                     = lazy(() => import("./pages/tools/SeniorEmergencySOS"));
+const SeniorWeatherAlerts                    = lazy(() => import("./pages/tools/SeniorWeatherAlerts"));
+const SeniorFindMyPhone                      = lazy(() => import("./pages/tools/SeniorFindMyPhone"));
+const SeniorLifelineTracking                 = lazy(() => import("./pages/tools/SeniorLifelineTracking"));
 
 // ── Cycle 195 (April 29 2026) — DIY home ──
 const BasicToolsForSeniors   = lazy(() => import("./pages/tools/BasicToolsForSeniors"));
@@ -5174,6 +5179,11 @@ const AppContent = () => {
           <Route path="/tools/senior-siri-basics" element={<SeniorSiriBasics />} />
           <Route path="/tools/senior-chatgpt-basics" element={<SeniorChatGPTBasics />} />
           <Route path="/tools/senior-ai-voice-clone-risks" element={<SeniorAIVoiceCloneRisks />} />
+          <Route path="/tools/senior-medical-alert-systems" element={<SeniorMedicalAlertSystems />} />
+          <Route path="/tools/senior-emergency-sos" element={<SeniorEmergencySOS />} />
+          <Route path="/tools/senior-weather-alerts" element={<SeniorWeatherAlerts />} />
+          <Route path="/tools/senior-find-my-phone" element={<SeniorFindMyPhone />} />
+          <Route path="/tools/senior-lifeline-tracking" element={<SeniorLifelineTracking />} />
           <Route path="/tools/basic-tools-for-seniors" element={<BasicToolsForSeniors />} />
           <Route path="/tools/painting-tips-seniors" element={<PaintingTipsSeniors />} />
           <Route path="/tools/caulking-basics" element={<CaulkingBasics />} />
