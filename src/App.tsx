@@ -3037,7 +3037,11 @@ const SeniorIPadStylus                       = lazy(() => import("./pages/tools/
 const SeniorIPadKeyboardCase                 = lazy(() => import("./pages/tools/SeniorIPadKeyboardCase"));
 const SeniorTabletProtectScreen              = lazy(() => import("./pages/tools/SeniorTabletProtectScreen"));
 const SeniorIPadAdaptiveInk                  = lazy(() => import("./pages/tools/SeniorIPadAdaptiveInk"));
-const SeniorTabletStands                     = lazy(() => import("./pages/tools/SeniorTabletStands"));
+const SeniorMagicKeyboard                    = lazy(() => import("./pages/tools/SeniorMagicKeyboard"));
+const SeniorMagicMouse                       = lazy(() => import("./pages/tools/SeniorMagicMouse"));
+const SeniorAccessoryHubs                    = lazy(() => import("./pages/tools/SeniorAccessoryHubs"));
+const SeniorMonitorBigText                   = lazy(() => import("./pages/tools/SeniorMonitorBigText"));
+const SeniorWebcamSetup                      = lazy(() => import("./pages/tools/SeniorWebcamSetup"));
 const SeniorAmateurRadio                     = lazy(() => import("./pages/tools/SeniorAmateurRadio"));
 const SeniorMetalDetecting                   = lazy(() => import("./pages/tools/SeniorMetalDetecting"));
 const SeniorWoodCarving                      = lazy(() => import("./pages/tools/SeniorWoodCarving"));
@@ -6646,7 +6650,11 @@ const AppContent = () => {
           <Route path="/tools/senior-ipad-keyboard-case" element={<SeniorIPadKeyboardCase />} />
           <Route path="/tools/senior-tablet-protect-screen" element={<SeniorTabletProtectScreen />} />
           <Route path="/tools/senior-ipad-adaptive-ink" element={<SeniorIPadAdaptiveInk />} />
-          <Route path="/tools/senior-tablet-stands" element={<SeniorTabletStands />} />
+          <Route path="/tools/senior-magic-keyboard" element={<SeniorMagicKeyboard />} />
+          <Route path="/tools/senior-magic-mouse" element={<SeniorMagicMouse />} />
+          <Route path="/tools/senior-accessory-hubs" element={<SeniorAccessoryHubs />} />
+          <Route path="/tools/senior-monitor-big-text" element={<SeniorMonitorBigText />} />
+          <Route path="/tools/senior-webcam-setup" element={<SeniorWebcamSetup />} />
           <Route path="/tools/senior-amateur-radio" element={<SeniorAmateurRadio />} />
           <Route path="/tools/senior-metal-detecting" element={<SeniorMetalDetecting />} />
           <Route path="/tools/senior-wood-carving" element={<SeniorWoodCarving />} />
