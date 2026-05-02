@@ -2815,6 +2815,11 @@ const SeniorWindowsUpdates                   = lazy(() => import("./pages/tools/
 const SeniorWindowsAntivirus                 = lazy(() => import("./pages/tools/SeniorWindowsAntivirus"));
 const SeniorWindowsBackup                    = lazy(() => import("./pages/tools/SeniorWindowsBackup"));
 const SeniorWindowsAccessibility             = lazy(() => import("./pages/tools/SeniorWindowsAccessibility"));
+const SeniorWindowsFileExplorer              = lazy(() => import("./pages/tools/SeniorWindowsFileExplorer"));
+const SeniorWindowsKeyboardShortcuts         = lazy(() => import("./pages/tools/SeniorWindowsKeyboardShortcuts"));
+const SeniorWindowsPrint                     = lazy(() => import("./pages/tools/SeniorWindowsPrint"));
+const SeniorWindowsZoom                      = lazy(() => import("./pages/tools/SeniorWindowsZoom"));
+const SeniorWindowsEmail                     = lazy(() => import("./pages/tools/SeniorWindowsEmail"));
 const SeniorAmateurRadio                     = lazy(() => import("./pages/tools/SeniorAmateurRadio"));
 const SeniorMetalDetecting                   = lazy(() => import("./pages/tools/SeniorMetalDetecting"));
 const SeniorWoodCarving                      = lazy(() => import("./pages/tools/SeniorWoodCarving"));
@@ -6201,6 +6206,11 @@ const AppContent = () => {
           <Route path="/tools/senior-windows-antivirus" element={<SeniorWindowsAntivirus />} />
           <Route path="/tools/senior-windows-backup" element={<SeniorWindowsBackup />} />
           <Route path="/tools/senior-windows-accessibility" element={<SeniorWindowsAccessibility />} />
+          <Route path="/tools/senior-windows-file-explorer" element={<SeniorWindowsFileExplorer />} />
+          <Route path="/tools/senior-windows-shortcuts" element={<SeniorWindowsKeyboardShortcuts />} />
+          <Route path="/tools/senior-windows-print" element={<SeniorWindowsPrint />} />
+          <Route path="/tools/senior-windows-zoom" element={<SeniorWindowsZoom />} />
+          <Route path="/tools/senior-windows-email" element={<SeniorWindowsEmail />} />
           <Route path="/tools/senior-amateur-radio" element={<SeniorAmateurRadio />} />
           <Route path="/tools/senior-metal-detecting" element={<SeniorMetalDetecting />} />
           <Route path="/tools/senior-wood-carving" element={<SeniorWoodCarving />} />
