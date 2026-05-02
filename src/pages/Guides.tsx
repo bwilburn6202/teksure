@@ -12,6 +12,7 @@ import { guides, categoryLabels, categoryDescriptions, type Guide, type GuideCat
 import { getCompletedGuides, getProgressCount } from '@/lib/progress';
 import { getGuideThumbnailUrl, getGuideThumbnailSmall } from '@/lib/guideThumbnails';
 import { GuideThumbnail } from '@/components/GuideThumbnail';
+import { getCategoryAccent } from '@/lib/categoryAccent';
 import { StarRating } from '@/components/StarRating';
 
 /* ══════════════════════════════════════════════════════════════════════
@@ -365,21 +366,27 @@ function FeaturedCard({ slot }: { slot: FeaturedSlot }) {
 
 function CategoryCard({ cat, topGuides, count }: { cat: GuideCategory; topGuides: Guide[]; count: number }) {
   const Icon = categoryIcons[cat] ?? BookOpen;
-  const tint = categoryTints[cat] ?? 'from-amber-100 to-amber-50';
+  const accent = getCategoryAccent(cat);
+  // Origin "Themed Content Card" header — solid accent block per category.
+  // Contrast text against the accent based on its declared foreground.
+  const onAccent = accent.foreground === 'light' ? 'text-origin-ghost' : 'text-origin-slate';
   return (
     <Link
       to={`/guides?category=${cat}`}
-      className="group block rounded-3xl border-2 border-border bg-card overflow-hidden transition-all hover:shadow-lg hover:-translate-y-0.5 min-h-[44px]"
+      className="group block rounded-origin-card border border-border/60 bg-card overflow-hidden transition-all hover:shadow-origin-lg hover:-translate-y-0.5 min-h-[44px] dark:border-white/[0.06]"
     >
-      <div className={`bg-gradient-to-br ${tint} p-5 flex items-center gap-3 border-b-2 border-border`}>
-        <div className="h-14 w-14 rounded-2xl bg-background/80 backdrop-blur flex items-center justify-center shrink-0 shadow-sm">
-          <Icon className="h-7 w-7 text-foreground" />
+      <div
+        className={`p-5 flex items-center gap-3 ${onAccent}`}
+        style={{ backgroundColor: `hsl(var(${accent.cssVar}))` }}
+      >
+        <div className="h-14 w-14 rounded-2xl bg-white/25 backdrop-blur flex items-center justify-center shrink-0">
+          <Icon className={`h-7 w-7 ${onAccent}`} />
         </div>
         <div className="flex-1 min-w-0">
-          <h3 className="font-bold text-xl leading-tight group-hover:text-primary transition-colors">
+          <h3 className="font-bold text-xl leading-tight">
             {categoryLabels[cat]}
           </h3>
-          <p className="text-sm font-semibold text-foreground/60">
+          <p className={`text-sm font-semibold ${onAccent} opacity-80`}>
             {count} {count === 1 ? 'guide' : 'guides'}
           </p>
         </div>
@@ -523,40 +530,37 @@ const Guides = () => {
       <Navbar />
 
       <main id="main-content" tabIndex={-1} className="outline-none">
-      {/* Header */}
-      <section className="border-b">
+      {/* Header — Origin "Midnight Ink" hero gradient on dark, soft radial on light */}
+      <section className="border-b hero-glow">
         <div className="container py-14 md:py-20">
           <div className="max-w-2xl mx-auto text-center">
-            <h1 className="text-3xl md:text-4xl font-bold tracking-tight mb-3">
-              Guides & Tutorials
-            </h1>
-            <p className="text-muted-foreground text-lg mb-8">
+            <p className="text-muted-foreground text-lg mb-3 dark:text-white/70">
               {guides.length}+ free step-by-step guides. No jargon, just answers.
             </p>
-            <h1 className="text-4xl md:text-6xl font-extrabold tracking-tight leading-[1.05] mb-5">
+            <h1 className="text-4xl md:text-6xl origin-display tracking-tight mb-5 dark:text-white">
               Find a guide for{' '}
               <span className="text-gradient">
                 anything
               </span>
             </h1>
-            <p className="text-lg md:text-2xl text-foreground/80 mb-8 leading-relaxed">
+            <p className="text-lg md:text-2xl text-foreground/80 dark:text-white/80 mb-8 leading-relaxed">
               Written in plain language. No jargon. Ever.
             </p>
 
             <form onSubmit={handleSearchSubmit} className="relative max-w-2xl mx-auto">
               <label htmlFor="guides-search" className="sr-only">Search guides</label>
-              <Search className="absolute left-5 top-1/2 -translate-y-1/2 h-5 w-5 text-muted-foreground pointer-events-none" />
-              <Input
+              <Search className="absolute left-5 top-1/2 -translate-y-1/2 h-5 w-5 text-muted-foreground pointer-events-none z-10" />
+              <input
                 id="guides-search"
                 placeholder={`Search ${guides.length.toLocaleString()}+ guides...`}
                 aria-label="Search guides"
-                className="pl-14 pr-32 h-14 bg-card border-2 border-border rounded-2xl text-lg shadow-md focus:border-primary focus-visible:ring-2 focus-visible:ring-primary/20 transition-all"
+                className="pill-input pl-14 pr-32 h-14 text-lg"
                 value={search}
                 onChange={e => setSearch(e.target.value)}
               />
               <Button
                 type="submit"
-                className="absolute right-2 top-1/2 -translate-y-1/2 h-11 px-5 rounded-xl text-base font-semibold gap-1"
+                className="absolute right-2 top-1/2 -translate-y-1/2 h-11 px-5 rounded-origin-btn text-base font-semibold gap-1"
               >
                 Search <ArrowRight className="h-4 w-4" />
               </Button>
