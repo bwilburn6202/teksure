@@ -2800,7 +2800,6 @@ const SeniorAndroidLockScreen                = lazy(() => import("./pages/tools/
 const SeniorAndroidUpdates                   = lazy(() => import("./pages/tools/SeniorAndroidUpdates"));
 const SeniorAndroidBackup                    = lazy(() => import("./pages/tools/SeniorAndroidBackup"));
 const SeniorAndroidStorage                   = lazy(() => import("./pages/tools/SeniorAndroidStorage"));
-const SeniorAndroidAccessibility             = lazy(() => import("./pages/tools/SeniorAndroidAccessibility"));
 const SeniorAndroidWiFi                      = lazy(() => import("./pages/tools/SeniorAndroidWiFi"));
 const SeniorAndroidBattery                   = lazy(() => import("./pages/tools/SeniorAndroidBattery"));
 const SeniorAndroidFindMyDevice              = lazy(() => import("./pages/tools/SeniorAndroidFindMyDevice"));
@@ -2825,8 +2824,6 @@ const SeniorMacFinder                        = lazy(() => import("./pages/tools/
 const SeniorMacTimeMachine                   = lazy(() => import("./pages/tools/SeniorMacTimeMachine"));
 const SeniorMacUpdates                       = lazy(() => import("./pages/tools/SeniorMacUpdates"));
 const SeniorMacAccessibility                 = lazy(() => import("./pages/tools/SeniorMacAccessibility"));
-const SeniorPasswordManagers                 = lazy(() => import("./pages/tools/SeniorPasswordManagers"));
-const SeniorTwoFactorAuth                    = lazy(() => import("./pages/tools/SeniorTwoFactorAuth"));
 const SeniorVPN                              = lazy(() => import("./pages/tools/SeniorVPN"));
 const SeniorPhishingDefense                  = lazy(() => import("./pages/tools/SeniorPhishingDefense"));
 const SeniorMedicareApp                      = lazy(() => import("./pages/tools/SeniorMedicareApp"));
@@ -2843,7 +2840,6 @@ const SeniorYouTube                          = lazy(() => import("./pages/tools/
 const SeniorFacebookSafer                    = lazy(() => import("./pages/tools/SeniorFacebookSafer"));
 const SeniorWhatsApp                         = lazy(() => import("./pages/tools/SeniorWhatsApp"));
 const SeniorNextDoor                         = lazy(() => import("./pages/tools/SeniorNextDoor"));
-const SeniorAirbnbBasics                     = lazy(() => import("./pages/tools/SeniorAirbnbBasics"));
 const SeniorVrboBasics                       = lazy(() => import("./pages/tools/SeniorVrboBasics"));
 const SeniorBookingCom                       = lazy(() => import("./pages/tools/SeniorBookingCom"));
 const SeniorCruiseApps                       = lazy(() => import("./pages/tools/SeniorCruiseApps"));
@@ -2851,7 +2847,6 @@ const SeniorTSAPrecheck                      = lazy(() => import("./pages/tools/
 const SeniorUberRideshare                    = lazy(() => import("./pages/tools/SeniorUberRideshare"));
 const SeniorLyftRideshare                    = lazy(() => import("./pages/tools/SeniorLyftRideshare"));
 const SeniorGoGoGrandparent                  = lazy(() => import("./pages/tools/SeniorGoGoGrandparent"));
-const SeniorParkingApps                      = lazy(() => import("./pages/tools/SeniorParkingApps"));
 const SeniorGasApps                          = lazy(() => import("./pages/tools/SeniorGasApps"));
 const SeniorBankAlerts                       = lazy(() => import("./pages/tools/SeniorBankAlerts"));
 const SeniorVenmo                            = lazy(() => import("./pages/tools/SeniorVenmo"));
@@ -2864,7 +2859,6 @@ const SeniorAITranslation                    = lazy(() => import("./pages/tools/
 const SeniorAIPhotoTools                     = lazy(() => import("./pages/tools/SeniorAIPhotoTools"));
 const SeniorRingDoorbell                     = lazy(() => import("./pages/tools/SeniorRingDoorbell"));
 const SeniorNestThermostat                   = lazy(() => import("./pages/tools/SeniorNestThermostat"));
-const SeniorAlexaBasics                      = lazy(() => import("./pages/tools/SeniorAlexaBasics"));
 const SeniorGoogleHomeBasics                 = lazy(() => import("./pages/tools/SeniorGoogleHomeBasics"));
 const SeniorSmartLights                      = lazy(() => import("./pages/tools/SeniorSmartLights"));
 const SeniorAirTags                          = lazy(() => import("./pages/tools/SeniorAirTags"));
@@ -2874,12 +2868,10 @@ const SeniorHearingAidsBluetooth             = lazy(() => import("./pages/tools/
 const SeniorAppleWatch                       = lazy(() => import("./pages/tools/SeniorAppleWatch"));
 const SeniorFitbitBasics                     = lazy(() => import("./pages/tools/SeniorFitbitBasics"));
 const SeniorGarminBasics                     = lazy(() => import("./pages/tools/SeniorGarminBasics"));
-const SeniorOuraRing                         = lazy(() => import("./pages/tools/SeniorOuraRing"));
 const SeniorCGMSensor                        = lazy(() => import("./pages/tools/SeniorCGMSensor"));
 const SeniorEbooksKindle                     = lazy(() => import("./pages/tools/SeniorEbooksKindle"));
 const SeniorAudibleBooks                     = lazy(() => import("./pages/tools/SeniorAudibleBooks"));
 const SeniorLibbyLibrary                     = lazy(() => import("./pages/tools/SeniorLibbyLibrary"));
-const SeniorPodcastApps                      = lazy(() => import("./pages/tools/SeniorPodcastApps"));
 const SeniorSpotifyMusic                     = lazy(() => import("./pages/tools/SeniorSpotifyMusic"));
 const SeniorAirPods                          = lazy(() => import("./pages/tools/SeniorAirPods"));
 const SeniorBluetoothBasics                  = lazy(() => import("./pages/tools/SeniorBluetoothBasics"));
@@ -2887,9 +2879,7 @@ const SeniorChromecast                       = lazy(() => import("./pages/tools/
 const SeniorAppleTVBasics                    = lazy(() => import("./pages/tools/SeniorAppleTVBasics"));
 const SeniorRokuBasics                       = lazy(() => import("./pages/tools/SeniorRokuBasics"));
 const SeniorEbayBasics                       = lazy(() => import("./pages/tools/SeniorEbayBasics"));
-const SeniorEtsyShop                         = lazy(() => import("./pages/tools/SeniorEtsyShop"));
 const SeniorAmazonShopping                   = lazy(() => import("./pages/tools/SeniorAmazonShopping"));
-const SeniorWalmartApp                       = lazy(() => import("./pages/tools/SeniorWalmartApp"));
 const SeniorTargetCircle                     = lazy(() => import("./pages/tools/SeniorTargetCircle"));
 const SeniorInstacart                        = lazy(() => import("./pages/tools/SeniorInstacart"));
 const SeniorDoorDash                         = lazy(() => import("./pages/tools/SeniorDoorDash"));
@@ -2906,11 +2896,7 @@ const SeniorMyHeritage                       = lazy(() => import("./pages/tools/
 const SeniorScrapbookApps                    = lazy(() => import("./pages/tools/SeniorScrapbookApps"));
 const SeniorOldPhotoScanning                 = lazy(() => import("./pages/tools/SeniorOldPhotoScanning"));
 const SeniorDuolingo                         = lazy(() => import("./pages/tools/SeniorDuolingo"));
-const SeniorKhanAcademy                      = lazy(() => import("./pages/tools/SeniorKhanAcademy"));
-const SeniorCourseraEdX                      = lazy(() => import("./pages/tools/SeniorCourseraEdX"));
-const SeniorMasterClass                      = lazy(() => import("./pages/tools/SeniorMasterClass"));
 const SeniorAARPLearning                     = lazy(() => import("./pages/tools/SeniorAARPLearning"));
-const SeniorPickleballApps                   = lazy(() => import("./pages/tools/SeniorPickleballApps"));
 const SeniorGolfGPS                          = lazy(() => import("./pages/tools/SeniorGolfGPS"));
 const SeniorYogaSilverSneakers               = lazy(() => import("./pages/tools/SeniorYogaSilverSneakers"));
 const SeniorAllTrails                        = lazy(() => import("./pages/tools/SeniorAllTrails"));
@@ -2929,18 +2915,14 @@ const SeniorINaturalist                      = lazy(() => import("./pages/tools/
 const SeniorPlantIdentify                    = lazy(() => import("./pages/tools/SeniorPlantIdentify"));
 const SeniorMushroomID                       = lazy(() => import("./pages/tools/SeniorMushroomID"));
 const SeniorTextToSpeech                     = lazy(() => import("./pages/tools/SeniorTextToSpeech"));
-const SeniorMagnifierApps                    = lazy(() => import("./pages/tools/SeniorMagnifierApps"));
-const SeniorBeMyEyes                         = lazy(() => import("./pages/tools/SeniorBeMyEyes"));
 const SeniorClosedCaptioning                 = lazy(() => import("./pages/tools/SeniorClosedCaptioning"));
 const SeniorVoiceMessages                    = lazy(() => import("./pages/tools/SeniorVoiceMessages"));
 const SeniorRecipesApps                      = lazy(() => import("./pages/tools/SeniorRecipesApps"));
 const SeniorPaprikaCookbook                  = lazy(() => import("./pages/tools/SeniorPaprikaCookbook"));
-const SeniorMyFitnessPal                     = lazy(() => import("./pages/tools/SeniorMyFitnessPal"));
 const SeniorWaterReminder                    = lazy(() => import("./pages/tools/SeniorWaterReminder"));
 const SeniorMeditation                       = lazy(() => import("./pages/tools/SeniorMeditation"));
 const SeniorVeteransOnline                   = lazy(() => import("./pages/tools/SeniorVeteransOnline"));
 const SeniorElderlyTransportation            = lazy(() => import("./pages/tools/SeniorElderlyTransportation"));
-const SeniorPropertyTaxRelief                = lazy(() => import("./pages/tools/SeniorPropertyTaxRelief"));
 const SeniorLowIncomeApps                    = lazy(() => import("./pages/tools/SeniorLowIncomeApps"));
 const SeniorVotingOnline                     = lazy(() => import("./pages/tools/SeniorVotingOnline"));
 const SeniorOnlineDating                     = lazy(() => import("./pages/tools/SeniorOnlineDating"));
@@ -2956,13 +2938,10 @@ const SeniorTripIt                           = lazy(() => import("./pages/tools/
 const SeniorPassportRenewal                  = lazy(() => import("./pages/tools/SeniorPassportRenewal"));
 const SeniorEbookFonts                       = lazy(() => import("./pages/tools/SeniorEbookFonts"));
 const SeniorMagazinesDigital                 = lazy(() => import("./pages/tools/SeniorMagazinesDigital"));
-const SeniorNewsApps                         = lazy(() => import("./pages/tools/SeniorNewsApps"));
 const SeniorBibleApps                        = lazy(() => import("./pages/tools/SeniorBibleApps"));
 const SeniorObituariesOnline                 = lazy(() => import("./pages/tools/SeniorObituariesOnline"));
 const SeniorPodcastTopPicks                  = lazy(() => import("./pages/tools/SeniorPodcastTopPicks"));
-const SeniorYouTubeChannels                  = lazy(() => import("./pages/tools/SeniorYouTubeChannels"));
 const SeniorAudioBookClubs                   = lazy(() => import("./pages/tools/SeniorAudioBookClubs"));
-const SeniorVideoCallEtiquette               = lazy(() => import("./pages/tools/SeniorVideoCallEtiquette"));
 const SeniorEmailEtiquette                   = lazy(() => import("./pages/tools/SeniorEmailEtiquette"));
 const SeniorPhoneStandSetup                  = lazy(() => import("./pages/tools/SeniorPhoneStandSetup"));
 const SeniorChairStandWorkout                = lazy(() => import("./pages/tools/SeniorChairStandWorkout"));
@@ -2981,9 +2960,7 @@ const SeniorCloudStoragePicker               = lazy(() => import("./pages/tools/
 const SeniorCheatSheet                       = lazy(() => import("./pages/tools/SeniorCheatSheet"));
 const SeniorTextToTV                         = lazy(() => import("./pages/tools/SeniorTextToTV"));
 const SeniorRecyclingApps                    = lazy(() => import("./pages/tools/SeniorRecyclingApps"));
-const SeniorWeatherAlerts                    = lazy(() => import("./pages/tools/SeniorWeatherAlerts"));
 const SeniorPowerOutageApps                  = lazy(() => import("./pages/tools/SeniorPowerOutageApps"));
-const SeniorEmergencyKitDigital              = lazy(() => import("./pages/tools/SeniorEmergencyKitDigital"));
 const SeniorPetCareApps                      = lazy(() => import("./pages/tools/SeniorPetCareApps"));
 const SeniorPlantCareApps                    = lazy(() => import("./pages/tools/SeniorPlantCareApps"));
 const SeniorKnittingApps                     = lazy(() => import("./pages/tools/SeniorKnittingApps"));
@@ -2996,7 +2973,6 @@ const SeniorElectricalSafety                 = lazy(() => import("./pages/tools/
 const SeniorBookEbay                         = lazy(() => import("./pages/tools/SeniorBookEbay"));
 const SeniorPoshmark                         = lazy(() => import("./pages/tools/SeniorPoshmark"));
 const SeniorFacebookMarketplace              = lazy(() => import("./pages/tools/SeniorFacebookMarketplace"));
-const SeniorOfferUp                          = lazy(() => import("./pages/tools/SeniorOfferUp"));
 const SeniorBuyNothing                       = lazy(() => import("./pages/tools/SeniorBuyNothing"));
 const SeniorChromebookBasics                 = lazy(() => import("./pages/tools/SeniorChromebookBasics"));
 const SeniorBackToWork                       = lazy(() => import("./pages/tools/SeniorBackToWork"));
@@ -3020,7 +2996,6 @@ const SeniorMatterStandard                   = lazy(() => import("./pages/tools/
 const SeniorWiFiMeshNetwork                  = lazy(() => import("./pages/tools/SeniorWiFiMeshNetwork"));
 const SeniorRobotVacuum                      = lazy(() => import("./pages/tools/SeniorRobotVacuum"));
 const SeniorEcobeeThermostat                 = lazy(() => import("./pages/tools/SeniorEcobeeThermostat"));
-const SeniorSmartLocks                       = lazy(() => import("./pages/tools/SeniorSmartLocks"));
 const SeniorSmartCamera                      = lazy(() => import("./pages/tools/SeniorSmartCamera"));
 const SeniorPersonalAlarm                    = lazy(() => import("./pages/tools/SeniorPersonalAlarm"));
 const SeniorPaperlessBills                   = lazy(() => import("./pages/tools/SeniorPaperlessBills"));
@@ -3031,7 +3006,6 @@ const SeniorScamDeepfake                     = lazy(() => import("./pages/tools/
 const SeniorAutoUpdate                       = lazy(() => import("./pages/tools/SeniorAutoUpdate"));
 const SeniorClearStorage                     = lazy(() => import("./pages/tools/SeniorClearStorage"));
 const SeniorPhoneCharging                    = lazy(() => import("./pages/tools/SeniorPhoneCharging"));
-const SeniorPhoneCases                       = lazy(() => import("./pages/tools/SeniorPhoneCases"));
 const SeniorTradeIn                          = lazy(() => import("./pages/tools/SeniorTradeIn"));
 const SeniorIPadStylus                       = lazy(() => import("./pages/tools/SeniorIPadStylus"));
 const SeniorIPadKeyboardCase                 = lazy(() => import("./pages/tools/SeniorIPadKeyboardCase"));
@@ -3053,7 +3027,6 @@ const SeniorTwitterX                         = lazy(() => import("./pages/tools/
 const SeniorBluesky                          = lazy(() => import("./pages/tools/SeniorBluesky"));
 const SeniorThreads                          = lazy(() => import("./pages/tools/SeniorThreads"));
 const SeniorPodcastApple                     = lazy(() => import("./pages/tools/SeniorPodcastApple"));
-const SeniorAppleMusic                       = lazy(() => import("./pages/tools/SeniorAppleMusic"));
 const SeniorPandora                          = lazy(() => import("./pages/tools/SeniorPandora"));
 const SeniorTuneIn                           = lazy(() => import("./pages/tools/SeniorTuneIn"));
 const SeniorRetirementPodcasts               = lazy(() => import("./pages/tools/SeniorRetirementPodcasts"));
