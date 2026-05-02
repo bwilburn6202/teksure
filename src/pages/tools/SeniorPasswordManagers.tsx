@@ -2,27 +2,27 @@ import { Navbar } from '@/components/layout/Navbar';
 import { Footer } from '@/components/layout/Footer';
 import { SEOHead } from '@/components/SEOHead';
 import { Card, CardContent } from '@/components/ui/card';
-import { Key } from 'lucide-react';
+import { KeyRound } from 'lucide-react';
 
 export default function SeniorPasswordManagers() {
   return (
     <div className="min-h-screen flex flex-col bg-background">
-      <SEOHead title="Password Managers for Seniors — TekSure" description="Best password managers for seniors — Bitwarden, 1Password, Apple Keychain." />
+      <SEOHead title="Password Managers — Senior Guide" description="Use a password manager to stay safe online." />
       <Navbar />
       <main className="flex-1 container mx-auto px-4 py-10 max-w-3xl">
         <div className="text-center mb-8">
-          <Key className="w-14 h-14 text-primary mx-auto mb-3" />
+          <KeyRound className="w-14 h-14 text-primary mx-auto mb-3" />
           <h1 className="text-4xl font-bold mb-2">Password Managers</h1>
-          <p className="text-lg text-muted-foreground">One master password. All others remembered for you.</p>
+          <p className="text-lg text-muted-foreground">Stop reusing passwords.</p>
         </div>
         <div className="space-y-4">
-          <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Bitwarden</h2><p>Free forever. Open source. Strong reputation. Best free pick.</p></CardContent></Card>
-          <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">1Password</h2><p>$36/year for family of 5. Easy to share with spouse.</p></CardContent></Card>
-          <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Apple iCloud Keychain</h2><p>Free. Built into iPhone, iPad, Mac. Great if you only use Apple.</p></CardContent></Card>
-          <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Google Password Manager</h2><p>Free. Built into Chrome and Android.</p></CardContent></Card>
-          <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Master password</h2><p>Make it long: 4 random words, like &ldquo;CoffeeRiverYellowBoat.&rdquo; Easy to remember, hard to guess.</p></CardContent></Card>
-          <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Backup recovery</h2><p>Print the recovery code. Store in your safe or with a trusted family member.</p></CardContent></Card>
-          <Card className="bg-muted/40"><CardContent className="pt-6"><p className="text-sm">Quick Tip: Once installed, never type passwords again. The manager auto-fills.</p></CardContent></Card>
+          <Card><CardContent className="p-6"><h2 className="text-xl font-semibold mb-2">1. Why use one</h2><p>Hundreds of accounts need unique passwords. Manager remembers them all for you.</p></CardContent></Card>
+          <Card><CardContent className="p-6"><h2 className="text-xl font-semibold mb-2">2. Bitwarden free</h2><p>Free for unlimited passwords on every device. Open-source and trusted.</p></CardContent></Card>
+          <Card><CardContent className="p-6"><h2 className="text-xl font-semibold mb-2">3. 1Password</h2><p>Easier interface. $36/year for individual, $60/year for families up to 5.</p></CardContent></Card>
+          <Card><CardContent className="p-6"><h2 className="text-xl font-semibold mb-2">4. Apple Passwords</h2><p>Built into iPhone, iPad, Mac. Free. Syncs through iCloud.</p></CardContent></Card>
+          <Card><CardContent className="p-6"><h2 className="text-xl font-semibold mb-2">5. Master password</h2><p>Pick one strong master password. Write it down and store somewhere safe at home.</p></CardContent></Card>
+          <Card><CardContent className="p-6"><h2 className="text-xl font-semibold mb-2">6. Family sharing</h2><p>Share Netflix, Wi-Fi, or banking with a spouse safely. No more texting passwords.</p></CardContent></Card>
+          <Card className="bg-muted/40"><CardContent className="p-6"><p>If you only remember one password (the master), the manager remembers the rest. Much safer than reuse.</p></CardContent></Card>
         </div>
       </main>
       <Footer />
