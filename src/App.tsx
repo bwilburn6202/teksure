@@ -2686,6 +2686,10 @@ const SeniorFriendlyVoiceCalls               = lazy(() => import("./pages/tools/
 const SeniorOnlineCommunities                = lazy(() => import("./pages/tools/SeniorOnlineCommunities"));
 const SeniorPenPalProgramsApps               = lazy(() => import("./pages/tools/SeniorPenPalProgramsApps"));
 const SeniorIntergenerational                = lazy(() => import("./pages/tools/SeniorIntergenerational"));
+const SeniorRVApps                           = lazy(() => import("./pages/tools/SeniorRVApps"));
+const SeniorNationalParks                    = lazy(() => import("./pages/tools/SeniorNationalParks"));
+const SeniorCruiseTips                       = lazy(() => import("./pages/tools/SeniorCruiseTips"));
+const SeniorRoadTrip                         = lazy(() => import("./pages/tools/SeniorRoadTrip"));
 
 // ── Cycle 195 (April 29 2026) — DIY home ──
 const BasicToolsForSeniors   = lazy(() => import("./pages/tools/BasicToolsForSeniors"));
@@ -5938,6 +5942,10 @@ const AppContent = () => {
           <Route path="/tools/senior-online-communities" element={<SeniorOnlineCommunities />} />
           <Route path="/tools/senior-pen-pal-programs-apps" element={<SeniorPenPalProgramsApps />} />
           <Route path="/tools/senior-intergenerational" element={<SeniorIntergenerational />} />
+          <Route path="/tools/senior-rv-apps" element={<SeniorRVApps />} />
+          <Route path="/tools/senior-national-parks" element={<SeniorNationalParks />} />
+          <Route path="/tools/senior-cruise-tips" element={<SeniorCruiseTips />} />
+          <Route path="/tools/senior-road-trip" element={<SeniorRoadTrip />} />
           <Route path="/tools/basic-tools-for-seniors" element={<BasicToolsForSeniors />} />
           <Route path="/tools/painting-tips-seniors" element={<PaintingTipsSeniors />} />
           <Route path="/tools/caulking-basics" element={<CaulkingBasics />} />
