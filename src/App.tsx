@@ -2805,6 +2805,11 @@ const SeniorAndroidWiFi                      = lazy(() => import("./pages/tools/
 const SeniorAndroidBattery                   = lazy(() => import("./pages/tools/SeniorAndroidBattery"));
 const SeniorAndroidFindMyDevice              = lazy(() => import("./pages/tools/SeniorAndroidFindMyDevice"));
 const SeniorAndroidEmergencySOS              = lazy(() => import("./pages/tools/SeniorAndroidEmergencySOS"));
+const SeniorChromeBasics                     = lazy(() => import("./pages/tools/SeniorChromeBasics"));
+const SeniorChromePasswords                  = lazy(() => import("./pages/tools/SeniorChromePasswords"));
+const SeniorChromeBookmarks                  = lazy(() => import("./pages/tools/SeniorChromeBookmarks"));
+const SeniorChromeIncognito                  = lazy(() => import("./pages/tools/SeniorChromeIncognito"));
+const SeniorChromeExtensions                 = lazy(() => import("./pages/tools/SeniorChromeExtensions"));
 const SeniorAmateurRadio                     = lazy(() => import("./pages/tools/SeniorAmateurRadio"));
 const SeniorMetalDetecting                   = lazy(() => import("./pages/tools/SeniorMetalDetecting"));
 const SeniorWoodCarving                      = lazy(() => import("./pages/tools/SeniorWoodCarving"));
@@ -6181,6 +6186,11 @@ const AppContent = () => {
           <Route path="/tools/senior-android-battery" element={<SeniorAndroidBattery />} />
           <Route path="/tools/senior-android-find-my-device" element={<SeniorAndroidFindMyDevice />} />
           <Route path="/tools/senior-android-emergency-sos" element={<SeniorAndroidEmergencySOS />} />
+          <Route path="/tools/senior-chrome-basics" element={<SeniorChromeBasics />} />
+          <Route path="/tools/senior-chrome-passwords" element={<SeniorChromePasswords />} />
+          <Route path="/tools/senior-chrome-bookmarks" element={<SeniorChromeBookmarks />} />
+          <Route path="/tools/senior-chrome-incognito" element={<SeniorChromeIncognito />} />
+          <Route path="/tools/senior-chrome-extensions" element={<SeniorChromeExtensions />} />
           <Route path="/tools/senior-amateur-radio" element={<SeniorAmateurRadio />} />
           <Route path="/tools/senior-metal-detecting" element={<SeniorMetalDetecting />} />
           <Route path="/tools/senior-wood-carving" element={<SeniorWoodCarving />} />
