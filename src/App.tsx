@@ -3013,6 +3013,11 @@ const SeniorRoadTripApps                     = lazy(() => import("./pages/tools/
 const SeniorMuseumApps                       = lazy(() => import("./pages/tools/SeniorMuseumApps"));
 const SeniorNationalParkApps                 = lazy(() => import("./pages/tools/SeniorNationalParkApps"));
 const SeniorRetirementCommunities            = lazy(() => import("./pages/tools/SeniorRetirementCommunities"));
+const SeniorEnergyAuditApps                  = lazy(() => import("./pages/tools/SeniorEnergyAuditApps"));
+const SeniorWaterUsage                       = lazy(() => import("./pages/tools/SeniorWaterUsage"));
+const SeniorAppleHomeSetup                   = lazy(() => import("./pages/tools/SeniorAppleHomeSetup"));
+const SeniorMatterStandard                   = lazy(() => import("./pages/tools/SeniorMatterStandard"));
+const SeniorWiFiMeshNetwork                  = lazy(() => import("./pages/tools/SeniorWiFiMeshNetwork"));
 const SeniorAmateurRadio                     = lazy(() => import("./pages/tools/SeniorAmateurRadio"));
 const SeniorMetalDetecting                   = lazy(() => import("./pages/tools/SeniorMetalDetecting"));
 const SeniorWoodCarving                      = lazy(() => import("./pages/tools/SeniorWoodCarving"));
@@ -6597,6 +6602,11 @@ const AppContent = () => {
           <Route path="/tools/senior-museum-apps" element={<SeniorMuseumApps />} />
           <Route path="/tools/senior-national-park-apps" element={<SeniorNationalParkApps />} />
           <Route path="/tools/senior-retirement-communities" element={<SeniorRetirementCommunities />} />
+          <Route path="/tools/senior-energy-audit-apps" element={<SeniorEnergyAuditApps />} />
+          <Route path="/tools/senior-water-usage" element={<SeniorWaterUsage />} />
+          <Route path="/tools/senior-apple-home-setup" element={<SeniorAppleHomeSetup />} />
+          <Route path="/tools/senior-matter-standard" element={<SeniorMatterStandard />} />
+          <Route path="/tools/senior-wifi-mesh-network" element={<SeniorWiFiMeshNetwork />} />
           <Route path="/tools/senior-amateur-radio" element={<SeniorAmateurRadio />} />
           <Route path="/tools/senior-metal-detecting" element={<SeniorMetalDetecting />} />
           <Route path="/tools/senior-wood-carving" element={<SeniorWoodCarving />} />
