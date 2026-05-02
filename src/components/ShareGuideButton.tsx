@@ -26,7 +26,7 @@ export function ShareGuideButton({ title, url }: ShareGuideButtonProps) {
     setTimeout(() => setCopied(false), 2000);
     toast({
       title: 'Link copied',
-      description: 'Paste it anywhere with Ctrl+V (or ⌘V on a Mac).',
+      description: 'Paste it anywhere with Ctrl+V (or V on a Mac).',
     });
   };
 

@@ -29,7 +29,7 @@ export default function TechSupportPopupDefense() {
             <h2 className="font-bold text-xl mb-3">First — close it</h2>
             <p className="font-semibold text-sm mt-2">If the pop-up locks the browser:</p>
             <ul className="list-disc pl-5 space-y-1 text-sm mb-3">
-              <li><strong>Mac:</strong> Press <kbd className="bg-muted px-1.5 py-0.5 rounded">⌘</kbd>+<kbd className="bg-muted px-1.5 py-0.5 rounded">Option</kbd>+<kbd className="bg-muted px-1.5 py-0.5 rounded">Esc</kbd> → pick the browser → "Force Quit".</li>
+              <li><strong>Mac:</strong> Press <kbd className="bg-muted px-1.5 py-0.5 rounded"></kbd>+<kbd className="bg-muted px-1.5 py-0.5 rounded">Option</kbd>+<kbd className="bg-muted px-1.5 py-0.5 rounded">Esc</kbd> → pick the browser → "Force Quit".</li>
               <li><strong>Windows:</strong> Press <kbd className="bg-muted px-1.5 py-0.5 rounded">Ctrl</kbd>+<kbd className="bg-muted px-1.5 py-0.5 rounded">Shift</kbd>+<kbd className="bg-muted px-1.5 py-0.5 rounded">Esc</kbd> → highlight the browser → click "End Task".</li>
               <li><strong>Last resort:</strong> Hold the power button to turn the computer off. Wait 10 seconds. Turn back on.</li>
             </ul>

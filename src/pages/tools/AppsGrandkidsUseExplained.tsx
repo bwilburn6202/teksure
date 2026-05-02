@@ -5,18 +5,18 @@ import { Card, CardContent } from '@/components/ui/card';
 import { MessageCircleQuestion } from 'lucide-react';
 
 const APPS = [
-  { name: 'Snapchat', icon: '👻', what: 'Messaging app. Pictures and short videos disappear after viewing. Streaks count consecutive days messaging. Heavily used by teens.' },
-  { name: 'Discord', icon: '🎮', what: '"Group chat" app — text, voice, video. Originally for gamers; now used for school clubs, fan communities, friend groups. Servers can be public or invite-only.' },
-  { name: 'TikTok', icon: '🎵', what: 'Short videos endlessly scrolled. Algorithm shows whatever holds attention. Mostly entertainment; some educational; some unsafe content slips through.' },
-  { name: 'BeReal', icon: '📷', what: 'Random daily prompt — take a photo NOW. Both selfie and back camera. Trying to be "authentic" — less filtered than Instagram.' },
-  { name: 'Roblox', icon: '🟥', what: 'Game platform with millions of user-made games. Players can chat with each other. Big with kids 7-14.' },
-  { name: 'Minecraft', icon: '⛏️', what: 'Block-building game. Single-player or multiplayer servers. Mostly creative.' },
-  { name: 'Twitch', icon: '🎮', what: 'Live streaming. Kids watch other people play games. Like sports broadcasts but for video games.' },
-  { name: 'Reddit', icon: '👽', what: 'Forums for any topic. Not like Facebook — more anonymous.' },
-  { name: 'WhatsApp', icon: '💬', what: 'Cross-platform messaging. Big internationally. Family group chats and friend groups.' },
-  { name: 'iMessage / Messages', icon: '💬', what: 'Apple\'s built-in texting. iPhone-to-iPhone is iMessage (blue). To Android is regular SMS (green).' },
-  { name: 'YouTube Shorts', icon: '▶️', what: 'YouTube\'s answer to TikTok. Same short scroll format.' },
-  { name: 'Twitch / Kick', icon: '📡', what: 'Live game streaming.' },
+  { name: 'Snapchat', icon: '', what: 'Messaging app. Pictures and short videos disappear after viewing. Streaks count consecutive days messaging. Heavily used by teens.' },
+  { name: 'Discord', icon: '', what: '"Group chat" app — text, voice, video. Originally for gamers; now used for school clubs, fan communities, friend groups. Servers can be public or invite-only.' },
+  { name: 'TikTok', icon: '', what: 'Short videos endlessly scrolled. Algorithm shows whatever holds attention. Mostly entertainment; some educational; some unsafe content slips through.' },
+  { name: 'BeReal', icon: '', what: 'Random daily prompt — take a photo NOW. Both selfie and back camera. Trying to be "authentic" — less filtered than Instagram.' },
+  { name: 'Roblox', icon: '', what: 'Game platform with millions of user-made games. Players can chat with each other. Big with kids 7-14.' },
+  { name: 'Minecraft', icon: '', what: 'Block-building game. Single-player or multiplayer servers. Mostly creative.' },
+  { name: 'Twitch', icon: '', what: 'Live streaming. Kids watch other people play games. Like sports broadcasts but for video games.' },
+  { name: 'Reddit', icon: '', what: 'Forums for any topic. Not like Facebook — more anonymous.' },
+  { name: 'WhatsApp', icon: '', what: 'Cross-platform messaging. Big internationally. Family group chats and friend groups.' },
+  { name: 'iMessage / Messages', icon: '', what: 'Apple\'s built-in texting. iPhone-to-iPhone is iMessage (blue). To Android is regular SMS (green).' },
+  { name: 'YouTube Shorts', icon: '▶', what: 'YouTube\'s answer to TikTok. Same short scroll format.' },
+  { name: 'Twitch / Kick', icon: '', what: 'Live game streaming.' },
 ];
 
 export default function AppsGrandkidsUseExplained() {

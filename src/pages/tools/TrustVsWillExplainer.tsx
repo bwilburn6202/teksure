@@ -18,7 +18,7 @@ export default function TrustVsWillExplainer() {
 
         <Card className="mb-4">
           <CardContent className="pt-6">
-            <h2 className="font-bold text-xl mb-3">📜 Will (simple, $200-500)</h2>
+            <h2 className="font-bold text-xl mb-3"> Will (simple, $200-500)</h2>
             <ul className="list-disc pl-5 space-y-1 text-sm">
               <li>Says who gets your stuff when you die.</li>
               <li>Goes through PROBATE (public court process).</li>
@@ -31,7 +31,7 @@ export default function TrustVsWillExplainer() {
 
         <Card className="mb-4">
           <CardContent className="pt-6">
-            <h2 className="font-bold text-xl mb-3">🏛️ Revocable Living Trust ($1,500-5,000)</h2>
+            <h2 className="font-bold text-xl mb-3"> Revocable Living Trust ($1,500-5,000)</h2>
             <ul className="list-disc pl-5 space-y-1 text-sm">
               <li>You move your assets INTO the trust while alive.</li>
               <li>You\'re still in control as "trustee".</li>

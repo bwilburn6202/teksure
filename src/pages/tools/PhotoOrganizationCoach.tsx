@@ -18,7 +18,7 @@ export default function PhotoOrganizationCoach() {
 
         <Card className="mb-4">
           <CardContent className="pt-6">
-            <h2 className="font-bold text-xl mb-3">📱 iPhone Photos magic</h2>
+            <h2 className="font-bold text-xl mb-3"> iPhone Photos magic</h2>
             <p className="font-semibold text-sm mt-2">Find duplicates (saves storage):</p>
             <ol className="list-decimal pl-5 space-y-1 text-sm mb-3">
               <li>Photos app → Albums → scroll to "Utilities" section → "Duplicates".</li>
@@ -37,7 +37,7 @@ export default function PhotoOrganizationCoach() {
 
         <Card className="mb-4">
           <CardContent className="pt-6">
-            <h2 className="font-bold text-xl mb-3">🤖 Android — Google Photos magic</h2>
+            <h2 className="font-bold text-xl mb-3"> Android — Google Photos magic</h2>
             <p className="font-semibold text-sm mt-2">Auto-organize:</p>
             <p className="text-sm mb-2">Google Photos automatically:</p>
             <ul className="list-disc pl-5 space-y-1 text-sm mb-3">

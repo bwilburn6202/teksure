@@ -57,7 +57,7 @@ export default function CharityVettingTool() {
 
         <Card className="mb-4">
           <CardContent className="pt-6">
-            <h2 className="font-bold text-xl mb-3">🚩 Red flags</h2>
+            <h2 className="font-bold text-xl mb-3"> Red flags</h2>
             <ul className="list-disc pl-5 space-y-2 text-sm">
               <li><strong>Name sounds almost like a famous one.</strong> "American Red Cross Foundation Inc." (the real one is just "American Red Cross"). Scammers copy famous names.</li>
               <li><strong>High-pressure phone calls.</strong> "Send your donation TONIGHT to help fire victims." Real charities give you time.</li>

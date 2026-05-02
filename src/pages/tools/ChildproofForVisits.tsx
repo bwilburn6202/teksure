@@ -18,7 +18,7 @@ export default function ChildproofForVisits() {
 
         <Card className="mb-4">
           <CardContent className="pt-6">
-            <h2 className="font-bold text-xl mb-3">📱 iPad / iPhone — Guided Access</h2>
+            <h2 className="font-bold text-xl mb-3"> iPad / iPhone — Guided Access</h2>
             <p className="text-sm mb-2">Locks the device into ONE app — they can\'t exit to your email or Facebook.</p>
             <ol className="list-decimal pl-5 space-y-1 text-sm">
               <li>Settings → Accessibility → Guided Access → ON.</li>
@@ -32,7 +32,7 @@ export default function ChildproofForVisits() {
 
         <Card className="mb-4">
           <CardContent className="pt-6">
-            <h2 className="font-bold text-xl mb-3">📱 iPad — Screen Time / Restrictions</h2>
+            <h2 className="font-bold text-xl mb-3"> iPad — Screen Time / Restrictions</h2>
             <ol className="list-decimal pl-5 space-y-1 text-sm">
               <li>Settings → Screen Time → Content & Privacy Restrictions → ON.</li>
               <li>"App Store" → "Don\'t Allow" — no new app installs.</li>
@@ -46,7 +46,7 @@ export default function ChildproofForVisits() {
 
         <Card className="mb-4">
           <CardContent className="pt-6">
-            <h2 className="font-bold text-xl mb-3">🤖 Android — Kids Mode / Restricted Profile</h2>
+            <h2 className="font-bold text-xl mb-3"> Android — Kids Mode / Restricted Profile</h2>
             <ul className="list-disc pl-5 space-y-2 text-sm">
               <li><strong>Samsung Galaxy</strong> — Settings → Advanced features → Kids Mode (or "Kids Home"). Pre-built kid-friendly UI.</li>
               <li><strong>Other Android</strong> — Settings → Users → Add user → "Restricted profile". Lets you limit which apps appear.</li>
@@ -57,7 +57,7 @@ export default function ChildproofForVisits() {
 
         <Card className="mb-4">
           <CardContent className="pt-6">
-            <h2 className="font-bold text-xl mb-3">📺 TV — protect the streaming subscriptions</h2>
+            <h2 className="font-bold text-xl mb-3"> TV — protect the streaming subscriptions</h2>
             <ul className="list-disc pl-5 space-y-2 text-sm">
               <li><strong>Netflix Kids profile</strong> — main account → Manage Profiles → "Kids" toggle. PIN-lock adult profiles.</li>
               <li><strong>Disney+, Hulu, Max</strong> — all have Kids profiles too. Use them.</li>
@@ -70,7 +70,7 @@ export default function ChildproofForVisits() {
 
         <Card className="mb-4">
           <CardContent className="pt-6">
-            <h2 className="font-bold text-xl mb-3">📡 Home Wi-Fi — guest network</h2>
+            <h2 className="font-bold text-xl mb-3"> Home Wi-Fi — guest network</h2>
             <p className="text-sm mb-2">Don\'t let visitors\' phones connect to the SAME network as your computer and printer.</p>
             <ol className="list-decimal pl-5 space-y-1 text-sm">
               <li>Open your router\'s app or web page (search "[brand] router login").</li>
@@ -83,7 +83,7 @@ export default function ChildproofForVisits() {
 
         <Card className="mb-4">
           <CardContent className="pt-6">
-            <h2 className="font-bold text-xl mb-3">📚 Best kids\' apps (free or cheap)</h2>
+            <h2 className="font-bold text-xl mb-3"> Best kids\' apps (free or cheap)</h2>
             <ul className="list-disc pl-5 space-y-1 text-sm">
               <li><strong>PBS Kids</strong> — completely free. Hundreds of educational shows and games.</li>
               <li><strong>Khan Academy Kids</strong> — free. Math, reading, social skills.</li>

@@ -204,10 +204,10 @@ export default function EmailMigration() {
   } : null;
 
   const sections: { id: string; label: string; emoji: string; steps: MigrationStep[] }[] = plan ? [
-    { id: 'setup',    label: '1. Make the new account',          emoji: '✉️', steps: plan.setup },
-    { id: 'contacts', label: '2. Bring your contacts over',      emoji: '👥', steps: plan.contacts },
-    { id: 'mail',     label: '3. Bring your old emails over',    emoji: '📥', steps: plan.mail },
-    { id: 'tell',     label: '4. Tell people and forward',       emoji: '📣', steps: plan.tell },
+    { id: 'setup',    label: '1. Make the new account',          emoji: '', steps: plan.setup },
+    { id: 'contacts', label: '2. Bring your contacts over',      emoji: '', steps: plan.contacts },
+    { id: 'mail',     label: '3. Bring your old emails over',    emoji: '', steps: plan.mail },
+    { id: 'tell',     label: '4. Tell people and forward',       emoji: '', steps: plan.tell },
   ] : [];
 
   return (

@@ -6,16 +6,16 @@ import { Card, CardContent } from '@/components/ui/card';
 import { DollarSign, AlertTriangle, ShieldCheck } from 'lucide-react';
 
 const APPS = [
-  { id: 'venmo', name: 'Venmo', emoji: '💸', owner: 'Owned by PayPal',
+  { id: 'venmo', name: 'Venmo', emoji: '', owner: 'Owned by PayPal',
     safety: ['Set your account to "Private" — anyone can see your payments by default.', 'Never accept money from strangers — it\'s often the first step in a scam.', 'Turn on the PIN or Face ID lock in Settings → Security.', 'Enable two-factor authentication.'],
     scams: ['"I sent money by mistake, please send it back" — the original payment will reverse, leaving you out the money you sent.', 'Sellers on Marketplace asking for Venmo "Friends and Family" — this removes buyer protection. Use "Goods and Services" instead.'] },
-  { id: 'zelle', name: 'Zelle', emoji: '🏦', owner: 'Built into most US banks',
+  { id: 'zelle', name: 'Zelle', emoji: '', owner: 'Built into most US banks',
     safety: ['Treat Zelle like cash. Once it\'s sent, it\'s gone — no chargebacks.', 'Only send money to people you KNOW personally — never to strangers.', 'Verify the phone number or email before sending. One typo and your money goes to a stranger.', 'Banks are starting to refund some Zelle scams as of 2025, but recovery is not guaranteed.'],
     scams: ['Fake "bank fraud" call asking you to "send Zelle to yourself" to test — you\'re actually sending to the scammer.', 'Marketplace buyers offering Zelle for big-ticket items, then claiming the payment "didn\'t go through".'] },
-  { id: 'cashapp', name: 'Cash App', emoji: '💵', owner: 'Owned by Block (formerly Square)',
+  { id: 'cashapp', name: 'Cash App', emoji: '', owner: 'Owned by Block (formerly Square)',
     safety: ['Enable the Security Lock (PIN, Face ID) in Profile → Privacy & Security.', 'Turn on two-factor login.', 'Don\'t click on Cash App "support" links from search engines — Cash App\'s real support is in the app.'],
     scams: ['Fake "Cash App customer service" numbers in Google ads and on social media.', '"Cash flips" — anyone promising to multiply your money is stealing it.', 'Random $50 from a stranger — they\'ll demand it back, plus more.'] },
-  { id: 'paypal', name: 'PayPal', emoji: '🅿️', owner: 'PayPal',
+  { id: 'paypal', name: 'PayPal', emoji: '', owner: 'PayPal',
     safety: ['Use "Goods and Services" — gives you 180-day buyer protection. Never use "Friends and Family" with strangers.', 'Turn on two-factor in Settings → Security.', 'Watch for fake "PayPal" emails — log in by typing paypal.com, not by clicking links.'],
     scams: ['Fake invoices from random companies — never pay an invoice you didn\'t expect.', '"Overpayment" scam — they "accidentally" send you too much, ask for the difference back, then reverse the original payment.'] },
 ];

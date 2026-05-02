@@ -20,13 +20,13 @@ export default function BlockSpamCallsTexts() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Layer 1 — Block on the phone itself</h2>
-            <h3 className="font-semibold mt-3 mb-2">📱 iPhone</h3>
+            <h3 className="font-semibold mt-3 mb-2"> iPhone</h3>
             <ul className="list-disc pl-5 space-y-1 text-sm mb-3">
               <li><strong>Block one number:</strong> Open the call or text → tap the number/name at top → scroll down → "Block this Caller".</li>
               <li><strong>Silence unknown callers:</strong> Settings → Phone → Silence Unknown Callers → ON. Real callers leave voicemail; spam goes straight to voicemail without ringing.</li>
               <li><strong>Filter spam texts:</strong> Settings → Messages → Unknown & Spam → "Filter Unknown Senders" ON.</li>
             </ul>
-            <h3 className="font-semibold mt-3 mb-2">🤖 Android</h3>
+            <h3 className="font-semibold mt-3 mb-2"> Android</h3>
             <ul className="list-disc pl-5 space-y-1 text-sm">
               <li><strong>Block a number:</strong> Open the call log → press and hold the number → "Block / report spam".</li>
               <li><strong>Auto-screen calls (Pixel):</strong> Phone app → Settings → Spam and Call Screen → "See caller and reason for calling" — Google Assistant answers and types out what they say. You decide whether to pick up.</li>

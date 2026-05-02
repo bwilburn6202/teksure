@@ -18,7 +18,7 @@ export default function UtilityBillReduction() {
 
         <Card className="mb-4">
           <CardContent className="pt-6">
-            <h2 className="font-bold text-xl mb-3">⚡ Electric — biggest impact</h2>
+            <h2 className="font-bold text-xl mb-3"> Electric — biggest impact</h2>
             <ul className="list-disc pl-5 space-y-2 text-sm">
               <li><strong>Time-of-Use plan</strong> — many utilities now charge less for off-peak power. Run dishwasher, laundry, and EV charger overnight. Saves 20-40%.</li>
               <li><strong>Smart thermostat (Nest, Ecobee)</strong> — $130 once, saves $100-180/year average. Pays for itself in a year.</li>
@@ -32,7 +32,7 @@ export default function UtilityBillReduction() {
 
         <Card className="mb-4">
           <CardContent className="pt-6">
-            <h2 className="font-bold text-xl mb-3">🔥 Gas / heating</h2>
+            <h2 className="font-bold text-xl mb-3"> Gas / heating</h2>
             <ul className="list-disc pl-5 space-y-2 text-sm">
               <li><strong>Drop the thermostat 2°</strong> at night — about 10% off heating bill.</li>
               <li><strong>Seal drafts</strong> — $20 in weather stripping pays back in one season.</li>
@@ -45,7 +45,7 @@ export default function UtilityBillReduction() {
 
         <Card className="mb-4">
           <CardContent className="pt-6">
-            <h2 className="font-bold text-xl mb-3">💧 Water</h2>
+            <h2 className="font-bold text-xl mb-3"> Water</h2>
             <ul className="list-disc pl-5 space-y-2 text-sm">
               <li><strong>Find leaks</strong> — toilets are sneaky. Drop food coloring in the tank. If it shows up in the bowl in 15 min without flushing, you have a leak. New flapper = $5.</li>
               <li><strong>Low-flow shower head</strong> — $25, saves up to 40% of shower water.</li>
@@ -57,7 +57,7 @@ export default function UtilityBillReduction() {
 
         <Card className="mb-4">
           <CardContent className="pt-6">
-            <h2 className="font-bold text-xl mb-3">📡 Internet & cable</h2>
+            <h2 className="font-bold text-xl mb-3"> Internet & cable</h2>
             <ul className="list-disc pl-5 space-y-2 text-sm">
               <li><strong>Buy your own router/modem</strong> — saves $14-15/month rental fee. Pays for itself in 6-12 months.</li>
               <li><strong>Call once a year</strong>: "I\'m getting a flyer from [competitor] for $X. Can you match?" — usually they will.</li>
@@ -70,7 +70,7 @@ export default function UtilityBillReduction() {
 
         <Card className="mb-4">
           <CardContent className="pt-6">
-            <h2 className="font-bold text-xl mb-3">📲 Apps that track and find savings</h2>
+            <h2 className="font-bold text-xl mb-3"> Apps that track and find savings</h2>
             <ul className="list-disc pl-5 space-y-2 text-sm">
               <li><strong>Your utility\'s own app</strong> — usually has usage charts and bill alerts. Free.</li>
               <li><strong>Sense Energy Monitor</strong> ($300, one-time) — clamps onto your home electric panel, shows what\'s using power. Worth it for the curious.</li>

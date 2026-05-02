@@ -386,7 +386,7 @@ const posters: PosterDef[] = [
         <rect x={400} y={120} width={200} height={760} rx={40} fill={grayscale ? '#fafafa' : '#ffffff'} stroke={grayscale ? '#18181b' : '#0f172a'} strokeWidth={6} />
         {/* Power */}
         <circle cx={500} cy={170} r={16} fill={grayscale ? '#f4f4f5' : '#fef2f2'} stroke="#b91c1c" strokeWidth={3} />
-        <text x={500} y={175} textAnchor="middle" fontSize="14" fontWeight={700} fill="#b91c1c">⏻</text>
+        <text x={500} y={175} textAnchor="middle" fontSize="14" fontWeight={700} fill="#b91c1c"></text>
         {/* D-pad */}
         <circle cx={500} cy={320} r={60} fill={grayscale ? '#e4e4e7' : '#dbeafe'} stroke={grayscale ? '#52525b' : '#1d4ed8'} strokeWidth={3} />
         <circle cx={500} cy={320} r={22} fill={grayscale ? '#f4f4f5' : '#f8fafc'} stroke={grayscale ? '#52525b' : '#475569'} strokeWidth={2} />
@@ -399,25 +399,25 @@ const posters: PosterDef[] = [
         <rect x={420} y={410} width={60} height={40} rx={8} fill={grayscale ? '#f4f4f5' : '#f8fafc'} stroke={grayscale ? '#52525b' : '#475569'} strokeWidth={2} />
         <text x={450} y={436} textAnchor="middle" fontSize="14" fontWeight={600}>Back</text>
         <rect x={520} y={410} width={60} height={40} rx={8} fill={grayscale ? '#f4f4f5' : '#f8fafc'} stroke={grayscale ? '#52525b' : '#475569'} strokeWidth={2} />
-        <text x={550} y={436} textAnchor="middle" fontSize="14" fontWeight={600}>🏠</text>
+        <text x={550} y={436} textAnchor="middle" fontSize="14" fontWeight={600}></text>
         {/* Voice / mic */}
         <circle cx={500} cy={490} r={18} fill={grayscale ? '#f4f4f5' : '#ecfdf5'} stroke="#047857" strokeWidth={2} />
-        <text x={500} y={495} textAnchor="middle" fontSize="14">🎤</text>
+        <text x={500} y={495} textAnchor="middle" fontSize="14"></text>
         {/* Playback */}
         <g>
           <rect x={430} y={545} width={40} height={38} rx={8} fill={grayscale ? '#f4f4f5' : '#f8fafc'} stroke={grayscale ? '#52525b' : '#475569'} strokeWidth={2} />
-          <text x={450} y={570} textAnchor="middle" fontSize="18">⏮</text>
+          <text x={450} y={570} textAnchor="middle" fontSize="18"></text>
           <rect x={480} y={545} width={40} height={38} rx={8} fill={grayscale ? '#f4f4f5' : '#f8fafc'} stroke={grayscale ? '#52525b' : '#475569'} strokeWidth={2} />
-          <text x={500} y={570} textAnchor="middle" fontSize="18">⏯</text>
+          <text x={500} y={570} textAnchor="middle" fontSize="18"></text>
           <rect x={530} y={545} width={40} height={38} rx={8} fill={grayscale ? '#f4f4f5' : '#f8fafc'} stroke={grayscale ? '#52525b' : '#475569'} strokeWidth={2} />
-          <text x={550} y={570} textAnchor="middle" fontSize="18">⏭</text>
+          <text x={550} y={570} textAnchor="middle" fontSize="18"></text>
         </g>
         {/* Volume + Mute */}
         <rect x={420} y={610} width={40} height={100} rx={10} fill={grayscale ? '#f4f4f5' : '#f8fafc'} stroke={grayscale ? '#52525b' : '#475569'} strokeWidth={2} />
         <text x={440} y={645} textAnchor="middle" fontSize="18">＋</text>
         <text x={440} y={695} textAnchor="middle" fontSize="18">－</text>
         <rect x={480} y={610} width={40} height={40} rx={10} fill={grayscale ? '#f4f4f5' : '#f8fafc'} stroke={grayscale ? '#52525b' : '#475569'} strokeWidth={2} />
-        <text x={500} y={636} textAnchor="middle" fontSize="14">🔇</text>
+        <text x={500} y={636} textAnchor="middle" fontSize="14"></text>
         <rect x={540} y={610} width={40} height={100} rx={10} fill={grayscale ? '#f4f4f5' : '#f8fafc'} stroke={grayscale ? '#52525b' : '#475569'} strokeWidth={2} />
         <text x={560} y={645} textAnchor="middle" fontSize="14">CH＋</text>
         <text x={560} y={695} textAnchor="middle" fontSize="14">CH－</text>
@@ -463,7 +463,7 @@ const posters: PosterDef[] = [
         <circle cx={485} cy={360} r={16} fill={grayscale ? '#e4e4e7' : '#f8fafc'} stroke="#475569" strokeWidth={2} />
         <text x={485} y={366} textAnchor="middle" fontSize="14" fontWeight={700}>－</text>
         <circle cx={540} cy={360} r={16} fill={grayscale ? '#e4e4e7' : '#f8fafc'} stroke="#b91c1c" strokeWidth={2} />
-        <text x={540} y={366} textAnchor="middle" fontSize="12" fontWeight={700} fill="#b91c1c">🎤</text>
+        <text x={540} y={366} textAnchor="middle" fontSize="12" fontWeight={700} fill="#b91c1c"></text>
         <circle cx={595} cy={360} r={16} fill={grayscale ? '#e4e4e7' : '#f8fafc'} stroke="#475569" strokeWidth={2} />
         <text x={595} y={366} textAnchor="middle" fontSize="12">●</text>
       </g>
@@ -489,11 +489,11 @@ const posters: PosterDef[] = [
         <rect x={120} y={280} width={760} height={440} rx={18} fill={grayscale ? '#fafafa' : '#ffffff'} stroke={grayscale ? '#18181b' : '#0f172a'} strokeWidth={6} />
         {(() => {
           const rows: string[][] = [
-            ['Esc','1','2','3','4','5','6','7','8','9','0','⌫'],
+            ['Esc','1','2','3','4','5','6','7','8','9','0',''],
             ['Tab','Q','W','E','R','T','Y','U','I','O','P'],
             ['Caps','A','S','D','F','G','H','J','K','L','Enter'],
             ['Shift','Z','X','C','V','B','N','M',',','.','Shift'],
-            ['Ctrl','Win/⌘','Alt','Space','Alt','Ctrl','←','↓','→','↑',' '],
+            ['Ctrl','Win/','Alt','Space','Alt','Ctrl','←','↓','→','↑',' '],
           ];
           return rows.map((row, r) =>
             row.map((key, c) => {
@@ -523,16 +523,16 @@ const posters: PosterDef[] = [
       </g>
     ),
     callouts: [
-      { label: 'Copy — Ctrl+C (Windows) or ⌘+C (Mac)', hint: 'Copies the selected text or file to the clipboard.', anchor: { x: 330, y: 475 }, labelPos: { x: 60, y: 120 }, side: 'left' },
-      { label: 'Paste — Ctrl+V or ⌘+V', hint: 'Pastes whatever you copied into the current spot.', anchor: { x: 390, y: 475 }, labelPos: { x: 60, y: 170 }, side: 'left' },
-      { label: 'Cut — Ctrl+X or ⌘+X', hint: 'Copies AND removes the selected text.', anchor: { x: 450, y: 475 }, labelPos: { x: 60, y: 220 }, side: 'left' },
-      { label: 'Undo — Ctrl+Z or ⌘+Z', hint: 'Takes back the last thing you did. Works in almost every program.', anchor: { x: 330, y: 405 }, labelPos: { x: 60, y: 70 }, side: 'left' },
-      { label: 'Save — Ctrl+S or ⌘+S', hint: 'Saves whatever you are working on.', anchor: { x: 390, y: 405 }, labelPos: { x: 940, y: 70 }, side: 'right' },
-      { label: 'Find — Ctrl+F or ⌘+F', hint: 'Search for a word on the page or in a document.', anchor: { x: 450, y: 405 }, labelPos: { x: 940, y: 120 }, side: 'right' },
-      { label: 'Switch windows — Alt+Tab / ⌘+Tab', hint: 'Jump between open programs without the mouse.', anchor: { x: 180, y: 615 }, labelPos: { x: 940, y: 170 }, side: 'right' },
-      { label: 'Lock screen — ⊞+L (Windows) or Ctrl+⌘+Q (Mac)', hint: 'Locks the computer so nobody else can use it.', anchor: { x: 260, y: 615 }, labelPos: { x: 940, y: 220 }, side: 'right' },
+      { label: 'Copy — Ctrl+C (Windows) or +C (Mac)', hint: 'Copies the selected text or file to the clipboard.', anchor: { x: 330, y: 475 }, labelPos: { x: 60, y: 120 }, side: 'left' },
+      { label: 'Paste — Ctrl+V or +V', hint: 'Pastes whatever you copied into the current spot.', anchor: { x: 390, y: 475 }, labelPos: { x: 60, y: 170 }, side: 'left' },
+      { label: 'Cut — Ctrl+X or +X', hint: 'Copies AND removes the selected text.', anchor: { x: 450, y: 475 }, labelPos: { x: 60, y: 220 }, side: 'left' },
+      { label: 'Undo — Ctrl+Z or +Z', hint: 'Takes back the last thing you did. Works in almost every program.', anchor: { x: 330, y: 405 }, labelPos: { x: 60, y: 70 }, side: 'left' },
+      { label: 'Save — Ctrl+S or +S', hint: 'Saves whatever you are working on.', anchor: { x: 390, y: 405 }, labelPos: { x: 940, y: 70 }, side: 'right' },
+      { label: 'Find — Ctrl+F or +F', hint: 'Search for a word on the page or in a document.', anchor: { x: 450, y: 405 }, labelPos: { x: 940, y: 120 }, side: 'right' },
+      { label: 'Switch windows — Alt+Tab / +Tab', hint: 'Jump between open programs without the mouse.', anchor: { x: 180, y: 615 }, labelPos: { x: 940, y: 170 }, side: 'right' },
+      { label: 'Lock screen — ⊞+L (Windows) or Ctrl++Q (Mac)', hint: 'Locks the computer so nobody else can use it.', anchor: { x: 260, y: 615 }, labelPos: { x: 940, y: 220 }, side: 'right' },
       { label: 'Arrow keys', hint: 'Move the cursor one step at a time.', anchor: { x: 600, y: 615 }, labelPos: { x: 940, y: 270 }, side: 'right' },
-      { label: 'Backspace — ⌫', hint: 'Deletes the character to the left of the cursor.', anchor: { x: 810, y: 300 }, labelPos: { x: 940, y: 320 }, side: 'right' },
+      { label: 'Backspace — ', hint: 'Deletes the character to the left of the cursor.', anchor: { x: 810, y: 300 }, labelPos: { x: 940, y: 320 }, side: 'right' },
       { label: 'Enter', hint: 'Confirms a choice or starts a new line.', anchor: { x: 810, y: 440 }, labelPos: { x: 940, y: 370 }, side: 'right' },
       { label: 'Shift', hint: 'Hold with a letter for a capital letter.', anchor: { x: 170, y: 545 }, labelPos: { x: 60, y: 320 }, side: 'left' },
     ],

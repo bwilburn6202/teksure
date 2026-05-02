@@ -42,7 +42,7 @@ export default function RomanceScamDefense() {
 
         <Card className="mb-4">
           <CardContent className="pt-6">
-            <h2 className="font-bold text-xl mb-3">🚩 Red flags — every romance scam has them</h2>
+            <h2 className="font-bold text-xl mb-3"> Red flags — every romance scam has them</h2>
             <ol className="list-decimal pl-5 space-y-2 text-sm">
               {FLAGS.map((f, i) => <li key={i}>{f}</li>)}
             </ol>

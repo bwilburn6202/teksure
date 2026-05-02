@@ -39,7 +39,7 @@ export default function EsimSetupGuide() {
 
         <Card className="mb-6">
           <CardContent className="pt-6">
-            <h2 className="font-bold text-xl mb-3">📱 Setting up eSIM on iPhone</h2>
+            <h2 className="font-bold text-xl mb-3"> Setting up eSIM on iPhone</h2>
             <p className="text-sm mb-3"><strong>If your phone is brand new from the carrier:</strong> It comes pre-activated. Just turn it on and follow the prompts.</p>
             <p className="text-sm mb-2"><strong>Switching from a different phone:</strong></p>
             <ol className="list-decimal pl-5 space-y-2 text-sm mb-4">
@@ -54,7 +54,7 @@ export default function EsimSetupGuide() {
 
         <Card className="mb-6">
           <CardContent className="pt-6">
-            <h2 className="font-bold text-xl mb-3">🤖 Setting up eSIM on Android</h2>
+            <h2 className="font-bold text-xl mb-3"> Setting up eSIM on Android</h2>
             <ol className="list-decimal pl-5 space-y-2 text-sm">
               <li>Settings → Network & internet → SIMs (or "Mobile network" on some Samsungs).</li>
               <li>Tap "+" or "Add SIM".</li>

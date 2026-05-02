@@ -273,7 +273,7 @@ const tree: Record<string, Node> = {
     title: 'When did the battery start draining fast?',
     icon: Battery,
     options: [
-      { label: 'Right after a software update',       emoji: '🆕',  desc: 'It was fine before the update',        next: 'fix_drainAfterUpdate' },
+      { label: 'Right after a software update',       emoji: '',  desc: 'It was fine before the update',        next: 'fix_drainAfterUpdate' },
       { label: 'Gradually over the past year or two', emoji: '',  desc: 'It\'s been getting worse for a while', next: 'fix_drainAging' },
       { label: 'Just started in the last few days',   emoji: '',  desc: 'Sudden change — something is new',     next: 'batteryDrain_newApps' },
     ],
@@ -467,7 +467,7 @@ const tree: Record<string, Node> = {
     title: 'How old is the phone?',
     subtitle: 'Phone age is the biggest clue here.',
     options: [
-      { label: 'Less than 2 years',                 emoji: '🆕',  desc: 'Shouldn\'t be this slow yet',           next: 'fix_slowNewPhone' },
+      { label: 'Less than 2 years',                 emoji: '',  desc: 'Shouldn\'t be this slow yet',           next: 'fix_slowNewPhone' },
       { label: '2 to 4 years old',                  emoji: '',  desc: 'Middle-aged — still fixable',           next: 'fix_slowMedium' },
       { label: 'More than 4 years old',             emoji: '',  desc: 'Showing its age',                       next: 'fix_slowOld' },
     ],

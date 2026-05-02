@@ -594,7 +594,7 @@ export default function PasswordPractice() {
                             <div className="text-base font-semibold">Attempt {i + 1}</div>
                             {done && (
                               <div className="text-sm font-medium">
-                                {a.ok ? '✓ Match' : `${a.accuracy}% match`} · {a.seconds.toFixed(1)}s
+                                {a.ok ? ' Match' : `${a.accuracy}% match`} · {a.seconds.toFixed(1)}s
                               </div>
                             )}
                           </div>

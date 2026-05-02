@@ -18,7 +18,7 @@ export default function FreeTaxFilingCoach() {
 
         <Card className="mb-4">
           <CardContent className="pt-6">
-            <h2 className="font-bold text-xl mb-3">🇺🇸 IRS Direct File (best for simple taxes)</h2>
+            <h2 className="font-bold text-xl mb-3"> IRS Direct File (best for simple taxes)</h2>
             <p className="text-sm mb-2">The IRS\'s own free filing tool. Available in 25 states (and growing). Best for W-2 employees, retirees on Social Security, and simple returns.</p>
             <ul className="list-disc pl-5 space-y-1 text-sm">
               <li>Free for federal AND state in supported states.</li>
@@ -32,7 +32,7 @@ export default function FreeTaxFilingCoach() {
 
         <Card className="mb-4">
           <CardContent className="pt-6">
-            <h2 className="font-bold text-xl mb-3">👴 AARP Foundation Tax-Aide (FREE in person, IDEAL for seniors)</h2>
+            <h2 className="font-bold text-xl mb-3"> AARP Foundation Tax-Aide (FREE in person, IDEAL for seniors)</h2>
             <p className="text-sm mb-2">A real human volunteer prepares your taxes for free. Designed for taxpayers 50+, but anyone can use it.</p>
             <ul className="list-disc pl-5 space-y-1 text-sm">
               <li>Available February-April at libraries, community centers, and senior centers nationwide.</li>
@@ -46,7 +46,7 @@ export default function FreeTaxFilingCoach() {
 
         <Card className="mb-4">
           <CardContent className="pt-6">
-            <h2 className="font-bold text-xl mb-3">🏛️ VITA (Volunteer Income Tax Assistance)</h2>
+            <h2 className="font-bold text-xl mb-3"> VITA (Volunteer Income Tax Assistance)</h2>
             <p className="text-sm">Same idea as Tax-Aide but for taxpayers earning less than ~$60,000. IRS-trained volunteers.</p>
             <p className="text-sm mt-2">Find a site at <strong>irs.gov/volunteers</strong> or call 211.</p>
           </CardContent>
@@ -54,7 +54,7 @@ export default function FreeTaxFilingCoach() {
 
         <Card className="mb-4">
           <CardContent className="pt-6">
-            <h2 className="font-bold text-xl mb-3">📱 Free online tax software</h2>
+            <h2 className="font-bold text-xl mb-3"> Free online tax software</h2>
             <ul className="space-y-3 text-sm">
               <li><strong>FreeTaxUSA</strong> — federal is FREE for everyone. State is $14.99. Most reliable free option for non-simple taxes.</li>
               <li><strong>Cash App Taxes</strong> — federal AND state both free. Was Credit Karma Tax. Solid for moderate complexity.</li>

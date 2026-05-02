@@ -373,7 +373,7 @@ export default function TravelTechChecklist() {
               <ul className="space-y-1">
                 {s.items.map(item => (
                   <li key={item.id} className="leading-snug">
-                    <span className="font-mono mr-1">☐</span>
+                    <span className="font-mono mr-1"></span>
                     <strong>{item.title}.</strong> {item.detail}
                   </li>
                 ))}

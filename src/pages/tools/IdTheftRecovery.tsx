@@ -261,9 +261,9 @@ export default function IdTheftRecovery() {
               {(['urgent', 'thisWeek', 'ongoing'] as const).map(tier => {
                 if (!plan || plan[tier].length === 0) return null;
                 const tierMeta = {
-                  urgent:   { label: 'Today',         emoji: '🟥', desc: 'Phone calls and freezes — within the next few hours.' },
-                  thisWeek: { label: 'This week',     emoji: '🟧', desc: 'Paperwork, written follow-ups, longer-form steps.' },
-                  ongoing:  { label: 'Going forward', emoji: '🟨', desc: 'Watch and re-up. The fraud usually trickles in over months.' },
+                  urgent:   { label: 'Today',         emoji: '', desc: 'Phone calls and freezes — within the next few hours.' },
+                  thisWeek: { label: 'This week',     emoji: '', desc: 'Paperwork, written follow-ups, longer-form steps.' },
+                  ongoing:  { label: 'Going forward', emoji: '', desc: 'Watch and re-up. The fraud usually trickles in over months.' },
                 }[tier];
                 return (
                   <section key={tier} className="mb-6">

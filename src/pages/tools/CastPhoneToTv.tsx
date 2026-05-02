@@ -38,8 +38,8 @@ export default function CastPhoneToTv() {
           <Card>
             <CardContent className="pt-6 space-y-3">
               <h2 className="font-bold text-lg">Step 1 — What kind of phone?</h2>
-              <button onClick={() => setPhone('iphone')} className="w-full p-4 border-2 rounded-lg text-left hover:border-primary">📱 iPhone</button>
-              <button onClick={() => setPhone('android')} className="w-full p-4 border-2 rounded-lg text-left hover:border-primary">🤖 Android (Samsung, Pixel, Motorola...)</button>
+              <button onClick={() => setPhone('iphone')} className="w-full p-4 border-2 rounded-lg text-left hover:border-primary"> iPhone</button>
+              <button onClick={() => setPhone('android')} className="w-full p-4 border-2 rounded-lg text-left hover:border-primary"> Android (Samsung, Pixel, Motorola...)</button>
             </CardContent>
           </Card>
         )}
@@ -48,10 +48,10 @@ export default function CastPhoneToTv() {
           <Card>
             <CardContent className="pt-6 space-y-3">
               <h2 className="font-bold text-lg">Step 2 — What's on or attached to your TV?</h2>
-              <button onClick={() => setTv('apple')} className="w-full p-4 border-2 rounded-lg text-left hover:border-primary">🍎 Apple TV (or "AirPlay" TV like Samsung/LG newer models)</button>
-              <button onClick={() => setTv('roku')} className="w-full p-4 border-2 rounded-lg text-left hover:border-primary">🟣 Roku TV or Roku stick</button>
-              <button onClick={() => setTv('chromecast')} className="w-full p-4 border-2 rounded-lg text-left hover:border-primary">🟢 Chromecast or Google TV</button>
-              <button onClick={() => setTv('fire')} className="w-full p-4 border-2 rounded-lg text-left hover:border-primary">🟠 Amazon Fire TV / Fire Stick</button>
+              <button onClick={() => setTv('apple')} className="w-full p-4 border-2 rounded-lg text-left hover:border-primary"> Apple TV (or "AirPlay" TV like Samsung/LG newer models)</button>
+              <button onClick={() => setTv('roku')} className="w-full p-4 border-2 rounded-lg text-left hover:border-primary"> Roku TV or Roku stick</button>
+              <button onClick={() => setTv('chromecast')} className="w-full p-4 border-2 rounded-lg text-left hover:border-primary"> Chromecast or Google TV</button>
+              <button onClick={() => setTv('fire')} className="w-full p-4 border-2 rounded-lg text-left hover:border-primary"> Amazon Fire TV / Fire Stick</button>
               <button onClick={() => setPhone(null)} className="text-sm text-primary mt-2">← Back</button>
             </CardContent>
           </Card>

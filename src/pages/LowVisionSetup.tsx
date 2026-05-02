@@ -242,7 +242,7 @@ export default function LowVisionSetup() {
                         }`}
                         aria-label={isDone ? 'Mark not done' : 'Mark done'}
                       >
-                        {isDone ? '✓' : i + 1}
+                        {isDone ? '' : i + 1}
                       </button>
                       <div className="flex-1">
                         <div className="flex items-center gap-2 mb-1">

@@ -72,7 +72,7 @@ export default function VpnPicker() {
 
         <Card className="mb-4 border-yellow-300 dark:border-yellow-800">
           <CardContent className="pt-6">
-            <h2 className="font-bold text-xl mb-3">⚠️ Free VPNs — caution</h2>
+            <h2 className="font-bold text-xl mb-3"> Free VPNs — caution</h2>
             <p className="text-sm">Many "free" VPNs sell your data, inject ads, or ARE the threat. Free options to TRUST: Proton VPN free tier, Apple\'s iCloud Private Relay. Avoid no-name free apps in the App Store.</p>
           </CardContent>
         </Card>

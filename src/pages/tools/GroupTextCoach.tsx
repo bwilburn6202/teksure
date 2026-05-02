@@ -18,7 +18,7 @@ export default function GroupTextCoach() {
 
         <Card className="mb-4">
           <CardContent className="pt-6">
-            <h2 className="font-bold text-xl mb-3">📱 iPhone (Messages app)</h2>
+            <h2 className="font-bold text-xl mb-3"> iPhone (Messages app)</h2>
             <div className="space-y-3 text-sm">
               <div><strong>Mute the dings (still see messages later):</strong> Open the group chat → tap the names at the top → scroll down → turn ON <strong>"Hide Alerts"</strong>.</div>
               <div><strong>Leave the group:</strong> Open the chat → tap names at top → scroll down → tap <strong>"Leave this Conversation"</strong>. (Only works if everyone has iMessage. If it's "green bubble" texts with Android people, you can't leave — just turn on Hide Alerts.)</div>
@@ -32,7 +32,7 @@ export default function GroupTextCoach() {
 
         <Card className="mb-4">
           <CardContent className="pt-6">
-            <h2 className="font-bold text-xl mb-3">🤖 Android (Google Messages)</h2>
+            <h2 className="font-bold text-xl mb-3"> Android (Google Messages)</h2>
             <div className="space-y-3 text-sm">
               <div><strong>Mute the dings:</strong> Open the group chat → tap the three dots top right → <strong>"Notifications"</strong> → "Silent". Or: Details → "Notifications" → off.</div>
               <div><strong>Leave the group:</strong> Open chat → three dots → "Group details" → "Leave group". (Works for RCS group chats; older "MMS" groups can't be left — just mute.)</div>

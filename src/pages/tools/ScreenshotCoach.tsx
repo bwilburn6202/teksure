@@ -20,7 +20,7 @@ export default function ScreenshotCoach() {
         </div>
 
         <div className="grid grid-cols-2 sm:grid-cols-4 gap-2 mb-4">
-          {[['iphone', '📱 iPhone'], ['android', '🤖 Android'], ['mac', '🍎 Mac'], ['windows', '🪟 Windows']].map(([id, label]) => (
+          {[['iphone', ' iPhone'], ['android', ' Android'], ['mac', ' Mac'], ['windows', ' Windows']].map(([id, label]) => (
             <button key={id} onClick={() => setTab(id as any)} className={`p-3 rounded-lg border-2 ${tab === id ? 'border-primary bg-primary/10' : 'border-muted'}`}>{label}</button>
           ))}
         </div>
@@ -70,9 +70,9 @@ export default function ScreenshotCoach() {
             <CardContent className="pt-6">
               <h3 className="font-bold text-lg mb-3">Mac screenshot</h3>
               <ul className="space-y-3 text-sm">
-                <li><strong>Whole screen:</strong> Press <kbd className="bg-muted px-1.5 py-0.5 rounded">Shift</kbd> + <kbd className="bg-muted px-1.5 py-0.5 rounded">⌘</kbd> + <kbd className="bg-muted px-1.5 py-0.5 rounded">3</kbd> at the same time.</li>
-                <li><strong>Just part of the screen:</strong> Press <kbd className="bg-muted px-1.5 py-0.5 rounded">Shift</kbd> + <kbd className="bg-muted px-1.5 py-0.5 rounded">⌘</kbd> + <kbd className="bg-muted px-1.5 py-0.5 rounded">4</kbd>. The cursor turns into crosshairs — drag to select the area.</li>
-                <li><strong>One window:</strong> <kbd className="bg-muted px-1.5 py-0.5 rounded">Shift</kbd> + <kbd className="bg-muted px-1.5 py-0.5 rounded">⌘</kbd> + <kbd className="bg-muted px-1.5 py-0.5 rounded">4</kbd>, then press the <kbd className="bg-muted px-1.5 py-0.5 rounded">Space</kbd> bar. Click the window you want.</li>
+                <li><strong>Whole screen:</strong> Press <kbd className="bg-muted px-1.5 py-0.5 rounded">Shift</kbd> + <kbd className="bg-muted px-1.5 py-0.5 rounded"></kbd> + <kbd className="bg-muted px-1.5 py-0.5 rounded">3</kbd> at the same time.</li>
+                <li><strong>Just part of the screen:</strong> Press <kbd className="bg-muted px-1.5 py-0.5 rounded">Shift</kbd> + <kbd className="bg-muted px-1.5 py-0.5 rounded"></kbd> + <kbd className="bg-muted px-1.5 py-0.5 rounded">4</kbd>. The cursor turns into crosshairs — drag to select the area.</li>
+                <li><strong>One window:</strong> <kbd className="bg-muted px-1.5 py-0.5 rounded">Shift</kbd> + <kbd className="bg-muted px-1.5 py-0.5 rounded"></kbd> + <kbd className="bg-muted px-1.5 py-0.5 rounded">4</kbd>, then press the <kbd className="bg-muted px-1.5 py-0.5 rounded">Space</kbd> bar. Click the window you want.</li>
               </ul>
               <p className="text-sm mt-3">Screenshots save to your Desktop by default, named "Screen Shot [date].png".</p>
             </CardContent>

@@ -18,7 +18,7 @@ export default function SpecialtyInsuranceCoach() {
 
         <Card className="mb-4">
           <CardContent className="pt-6">
-            <h2 className="font-bold text-xl mb-3">🌊 Flood Insurance</h2>
+            <h2 className="font-bold text-xl mb-3"> Flood Insurance</h2>
             <p className="text-sm">Standard homeowners insurance does NOT cover flood. NOT covered: river rise, hurricane storm surge, even sewer backup.</p>
             <ul className="list-disc pl-5 space-y-1 text-sm mt-2">
               <li><strong>NFIP (National Flood Insurance Program)</strong> — federal. $700-2,000/year typical. Required if mortgage AND in flood zone.</li>
@@ -31,7 +31,7 @@ export default function SpecialtyInsuranceCoach() {
 
         <Card className="mb-4">
           <CardContent className="pt-6">
-            <h2 className="font-bold text-xl mb-3">🌋 Earthquake Insurance</h2>
+            <h2 className="font-bold text-xl mb-3"> Earthquake Insurance</h2>
             <p className="text-sm">Also not in standard policies. Important in CA, OR, WA, AK, HI, parts of MO/TN/IL.</p>
             <ul className="list-disc pl-5 space-y-1 text-sm mt-2">
               <li><strong>California Earthquake Authority (CEA)</strong> — most CA residents.</li>
@@ -44,7 +44,7 @@ export default function SpecialtyInsuranceCoach() {
 
         <Card className="mb-4">
           <CardContent className="pt-6">
-            <h2 className="font-bold text-xl mb-3">☂️ Umbrella Insurance</h2>
+            <h2 className="font-bold text-xl mb-3"> Umbrella Insurance</h2>
             <p className="text-sm">Extra liability on top of homeowners + auto. Pays out IF someone sues you for more than your basic policies cover.</p>
             <ul className="list-disc pl-5 space-y-1 text-sm mt-2">
               <li>$1 million coverage = ~$200-400/year.</li>
@@ -58,7 +58,7 @@ export default function SpecialtyInsuranceCoach() {
 
         <Card className="mb-4">
           <CardContent className="pt-6">
-            <h2 className="font-bold text-xl mb-3">🚗 Long-term auto insurance for retirees</h2>
+            <h2 className="font-bold text-xl mb-3"> Long-term auto insurance for retirees</h2>
             <ul className="list-disc pl-5 space-y-1 text-sm">
               <li>Drop comprehensive on cars worth less than $4,000.</li>
               <li>Senior driving course discount.</li>
@@ -70,7 +70,7 @@ export default function SpecialtyInsuranceCoach() {
 
         <Card className="mb-4">
           <CardContent className="pt-6">
-            <h2 className="font-bold text-xl mb-3">📋 Insurance review checklist (yearly)</h2>
+            <h2 className="font-bold text-xl mb-3"> Insurance review checklist (yearly)</h2>
             <ol className="list-decimal pl-5 space-y-1 text-sm">
               <li>Re-shop homeowners + auto with 3 quotes.</li>
               <li>Add umbrella if you have assets.</li>

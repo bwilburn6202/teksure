@@ -8,6 +8,7 @@ import { Input } from '@/components/ui/input';
 import { Badge } from '@/components/ui/badge';
 import { Card, CardContent } from '@/components/ui/card';
 import { guides, categoryLabels } from '@/data/guides';
+import { GuideThumbnail } from '@/components/GuideThumbnail';
 import { supabase } from '@/integrations/supabase/client';
 import { Brain, Search, Sparkles, BookOpen, Clock, ChevronRight, Loader2, AlertCircle, CheckCircle } from 'lucide-react';
 
@@ -260,7 +261,7 @@ export default function BrainPage() {
                         <Card className="hover:border-primary/30 hover:shadow-sm transition-all">
                           <CardContent className="p-4">
                             <div className="flex items-start gap-4">
-                              <div className="text-2xl shrink-0 mt-0.5">{guide.thumbnailEmoji}</div>
+                              <GuideThumbnail category={guide.category} size="h-5 w-5" className="rounded-xl shrink-0 mt-0.5 p-2" useAccent />
                               <div className="flex-1 min-w-0">
                                 <div className="flex items-center gap-2 mb-1 flex-wrap">
                                   <Badge variant="secondary" className="text-xs">{categoryLabels[guide.category]}</Badge>

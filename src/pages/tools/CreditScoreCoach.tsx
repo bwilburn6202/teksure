@@ -47,12 +47,12 @@ export default function CreditScoreCoach() {
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Common myths</h2>
             <ul className="list-disc pl-5 space-y-2 text-sm">
-              <li>❌ "Closing old cards helps" — actually HURTS by reducing total available credit.</li>
-              <li>❌ "Carrying a balance helps" — false. Pay in full. Carrying = paying interest.</li>
-              <li>❌ "Checking your own credit hurts your score" — false. You can check it daily.</li>
-              <li>❌ "Married couples share a credit score" — false. Separate scores.</li>
-              <li>❌ "Income is part of the score" — false. Not directly.</li>
-              <li>✅ "Late payment hurts" — yes, even one. Stays on report 7 years.</li>
+              <li> "Closing old cards helps" — actually HURTS by reducing total available credit.</li>
+              <li> "Carrying a balance helps" — false. Pay in full. Carrying = paying interest.</li>
+              <li> "Checking your own credit hurts your score" — false. You can check it daily.</li>
+              <li> "Married couples share a credit score" — false. Separate scores.</li>
+              <li> "Income is part of the score" — false. Not directly.</li>
+              <li> "Late payment hurts" — yes, even one. Stays on report 7 years.</li>
             </ul>
           </CardContent>
         </Card>

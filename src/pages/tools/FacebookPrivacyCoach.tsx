@@ -74,7 +74,7 @@ export default function FacebookPrivacyCoach() {
 
         <Card className="mb-4 border-yellow-300 dark:border-yellow-800">
           <CardContent className="pt-6">
-            <h2 className="font-bold text-xl mb-3">⚠️ Watch out for</h2>
+            <h2 className="font-bold text-xl mb-3"> Watch out for</h2>
             <ul className="list-disc pl-5 space-y-2 text-sm">
               <li><strong>Friend request from someone who\'s already your friend</strong> — scammer cloned them. Don\'t accept; report.</li>
               <li><strong>"I lost my account, can you help me get it back?"</strong> — you\'re being conned to give them YOUR login.</li>

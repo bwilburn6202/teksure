@@ -25,7 +25,7 @@ export default function HotelWifiSafety() {
 
         <Card className="mb-6">
           <CardContent className="pt-6">
-            <h2 className="font-bold text-xl mb-3">✅ Before you travel</h2>
+            <h2 className="font-bold text-xl mb-3"> Before you travel</h2>
             <ul className="space-y-2 list-disc pl-5 text-sm">
               <li>Turn on two-factor authentication on your bank, email, and main accounts. Even if a scammer gets your password, they can't get in.</li>
               <li>Update your phone and laptop — security updates patch holes that public Wi-Fi attackers use.</li>
@@ -36,7 +36,7 @@ export default function HotelWifiSafety() {
 
         <Card className="mb-6">
           <CardContent className="pt-6">
-            <h2 className="font-bold text-xl mb-3">🏨 At the hotel — picking the right network</h2>
+            <h2 className="font-bold text-xl mb-3"> At the hotel — picking the right network</h2>
             <ol className="list-decimal pl-5 space-y-2 text-sm">
               <li>Ask the front desk for the EXACT network name. Crooks copy hotel names like "Marriott_Guest" vs "Marriott-Guest".</li>
               <li>If the network has no password, it's open to everyone. Be extra careful.</li>
@@ -48,7 +48,7 @@ export default function HotelWifiSafety() {
 
         <Card className="mb-6 border-yellow-300 dark:border-yellow-800">
           <CardContent className="pt-6">
-            <h2 className="font-bold text-xl mb-3">🛑 What NOT to do on hotel Wi-Fi</h2>
+            <h2 className="font-bold text-xl mb-3"> What NOT to do on hotel Wi-Fi</h2>
             <ul className="space-y-2 list-disc pl-5 text-sm">
               <li>Don't log in to your bank or move money. Use your phone's cellular data instead, or wait until you're home.</li>
               <li>Don't shop with a credit card. (Apple Pay / Google Pay are safer because the merchant never sees the real card number.)</li>
@@ -60,7 +60,7 @@ export default function HotelWifiSafety() {
 
         <Card className="mb-6">
           <CardContent className="pt-6">
-            <h2 className="font-bold text-xl mb-3">✅ What's safe to do</h2>
+            <h2 className="font-bold text-xl mb-3"> What's safe to do</h2>
             <ul className="space-y-2 list-disc pl-5 text-sm">
               <li>Web browsing on big sites (news, weather, search) — fine.</li>
               <li>Streaming Netflix or YouTube — fine.</li>

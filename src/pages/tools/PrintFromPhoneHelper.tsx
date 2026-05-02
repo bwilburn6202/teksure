@@ -27,11 +27,11 @@ const STEPS: Record<Phone, Record<Brand, { app?: string; steps: string[] }>> = {
 };
 
 const BRANDS: { id: Brand; name: string; emoji: string }[] = [
-  { id: 'hp', name: 'HP', emoji: '🖨️' },
-  { id: 'epson', name: 'Epson', emoji: '🖨️' },
-  { id: 'canon', name: 'Canon', emoji: '🖨️' },
-  { id: 'brother', name: 'Brother', emoji: '🖨️' },
-  { id: 'other', name: 'Other / Not sure', emoji: '❓' },
+  { id: 'hp', name: 'HP', emoji: '' },
+  { id: 'epson', name: 'Epson', emoji: '' },
+  { id: 'canon', name: 'Canon', emoji: '' },
+  { id: 'brother', name: 'Brother', emoji: '' },
+  { id: 'other', name: 'Other / Not sure', emoji: '' },
 ];
 
 export default function PrintFromPhoneHelper() {
@@ -55,8 +55,8 @@ export default function PrintFromPhoneHelper() {
           <Card>
             <CardContent className="pt-6 space-y-3">
               <h2 className="font-bold text-lg mb-2">What kind of phone do you have?</h2>
-              <Button onClick={() => setPhone('iphone')} variant="outline" size="lg" className="w-full justify-between">📱 iPhone <ChevronRight className="w-4 h-4" /></Button>
-              <Button onClick={() => setPhone('android')} variant="outline" size="lg" className="w-full justify-between">🤖 Android (Samsung, Google Pixel, Motorola, etc.) <ChevronRight className="w-4 h-4" /></Button>
+              <Button onClick={() => setPhone('iphone')} variant="outline" size="lg" className="w-full justify-between"> iPhone <ChevronRight className="w-4 h-4" /></Button>
+              <Button onClick={() => setPhone('android')} variant="outline" size="lg" className="w-full justify-between"> Android (Samsung, Google Pixel, Motorola, etc.) <ChevronRight className="w-4 h-4" /></Button>
             </CardContent>
           </Card>
         )}

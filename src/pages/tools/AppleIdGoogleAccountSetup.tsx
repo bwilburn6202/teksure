@@ -20,8 +20,8 @@ export default function AppleIdGoogleAccountSetup() {
         </div>
 
         <div className="flex gap-2 mb-4">
-          <button onClick={() => setTab('apple')} className={`flex-1 p-3 rounded-lg border-2 ${tab === 'apple' ? 'border-primary bg-primary/10' : 'border-muted'}`}>🍎 Apple ID</button>
-          <button onClick={() => setTab('google')} className={`flex-1 p-3 rounded-lg border-2 ${tab === 'google' ? 'border-primary bg-primary/10' : 'border-muted'}`}>📧 Google</button>
+          <button onClick={() => setTab('apple')} className={`flex-1 p-3 rounded-lg border-2 ${tab === 'apple' ? 'border-primary bg-primary/10' : 'border-muted'}`}> Apple ID</button>
+          <button onClick={() => setTab('google')} className={`flex-1 p-3 rounded-lg border-2 ${tab === 'google' ? 'border-primary bg-primary/10' : 'border-muted'}`}> Google</button>
         </div>
 
         {tab === 'apple' && (

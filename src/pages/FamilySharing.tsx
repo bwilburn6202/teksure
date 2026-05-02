@@ -76,7 +76,7 @@ export default function FamilySharing() {
       <main className="flex-1 container max-w-2xl py-12">
         <div className="border-b border-border pb-10 mb-10">
           <div className="text-center">
-            <div className="text-4xl mb-3">‍‍‍</div>
+            <div className="text-4xl mb-3"></div>
             <h1 className="text-3xl md:text-4xl font-bold tracking-tight text-primary mb-2">Family Tech Sharing</h1>
             <p className="text-muted-foreground">Share your TekSure access with up to {MAX_MEMBERS} family members — each gets their own account and progress tracking.</p>
           </div>

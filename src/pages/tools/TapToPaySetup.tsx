@@ -27,8 +27,8 @@ export default function TapToPaySetup() {
         </Card>
 
         <div className="flex gap-2 mb-4">
-          <button onClick={() => setTab('apple')} className={`flex-1 p-3 rounded-lg border-2 ${tab === 'apple' ? 'border-primary bg-primary/10' : 'border-muted'}`}>📱 Apple Pay (iPhone)</button>
-          <button onClick={() => setTab('google')} className={`flex-1 p-3 rounded-lg border-2 ${tab === 'google' ? 'border-primary bg-primary/10' : 'border-muted'}`}>🤖 Google Pay (Android)</button>
+          <button onClick={() => setTab('apple')} className={`flex-1 p-3 rounded-lg border-2 ${tab === 'apple' ? 'border-primary bg-primary/10' : 'border-muted'}`}> Apple Pay (iPhone)</button>
+          <button onClick={() => setTab('google')} className={`flex-1 p-3 rounded-lg border-2 ${tab === 'google' ? 'border-primary bg-primary/10' : 'border-muted'}`}> Google Pay (Android)</button>
         </div>
 
         {tab === 'apple' && (

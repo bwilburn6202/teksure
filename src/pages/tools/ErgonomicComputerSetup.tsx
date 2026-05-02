@@ -18,7 +18,7 @@ export default function ErgonomicComputerSetup() {
 
         <Card className="mb-4">
           <CardContent className="pt-6">
-            <h2 className="font-bold text-xl mb-3">🖱️ Mouse — for wrist & arthritis pain</h2>
+            <h2 className="font-bold text-xl mb-3"> Mouse — for wrist & arthritis pain</h2>
             <ul className="list-disc pl-5 space-y-2 text-sm">
               <li><strong>Vertical mouse (Logitech MX Vertical, Anker)</strong> — $40-100. Hand position is "handshake" instead of palm-down. Cuts forearm strain.</li>
               <li><strong>Trackball mouse (Logitech M575)</strong> — $40. Move thumb, not whole arm. Easy on shoulders.</li>
@@ -29,7 +29,7 @@ export default function ErgonomicComputerSetup() {
 
         <Card className="mb-4">
           <CardContent className="pt-6">
-            <h2 className="font-bold text-xl mb-3">⌨️ Keyboard — for visibility & typing</h2>
+            <h2 className="font-bold text-xl mb-3"> Keyboard — for visibility & typing</h2>
             <ul className="list-disc pl-5 space-y-2 text-sm">
               <li><strong>Logitech K780 / K780 Plus</strong> — large keys, easy on aging hands.</li>
               <li><strong>Apple Magic Keyboard with Numeric Keypad</strong> — bigger than the slim version.</li>
@@ -42,7 +42,7 @@ export default function ErgonomicComputerSetup() {
 
         <Card className="mb-4">
           <CardContent className="pt-6">
-            <h2 className="font-bold text-xl mb-3">🖥️ Monitor & laptop placement</h2>
+            <h2 className="font-bold text-xl mb-3"> Monitor & laptop placement</h2>
             <ul className="list-disc pl-5 space-y-2 text-sm">
               <li><strong>Top of screen at eye level</strong> — stops the head-tilt-down that wrecks necks.</li>
               <li><strong>Laptop stand</strong> ($30) — props laptop up. PAIR with external keyboard so you\'re not reaching up.</li>
@@ -56,7 +56,7 @@ export default function ErgonomicComputerSetup() {
 
         <Card className="mb-4">
           <CardContent className="pt-6">
-            <h2 className="font-bold text-xl mb-3">💺 Chair & posture</h2>
+            <h2 className="font-bold text-xl mb-3"> Chair & posture</h2>
             <ul className="list-disc pl-5 space-y-1 text-sm">
               <li>Feet flat on the floor (or on a footrest).</li>
               <li>Knees at 90°.</li>
@@ -71,7 +71,7 @@ export default function ErgonomicComputerSetup() {
 
         <Card className="mb-4">
           <CardContent className="pt-6">
-            <h2 className="font-bold text-xl mb-3">🕶️ Eye strain</h2>
+            <h2 className="font-bold text-xl mb-3"> Eye strain</h2>
             <ul className="list-disc pl-5 space-y-2 text-sm">
               <li><strong>Computer glasses</strong> — drugstore +1.0 to +1.5 reading glasses for screen distance. Cheap and effective.</li>
               <li><strong>Get a real eye exam yearly</strong> — astigmatism gets worse with age and causes screen pain.</li>

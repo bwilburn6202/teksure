@@ -11,6 +11,7 @@ import { SEOHead } from '@/components/SEOHead';
 import { guides, categoryLabels, categoryDescriptions, type Guide, type GuideCategory } from '@/data/guides';
 import { getCompletedGuides, getProgressCount } from '@/lib/progress';
 import { getGuideThumbnailUrl, getGuideThumbnailSmall } from '@/lib/guideThumbnails';
+import { GuideThumbnail } from '@/components/GuideThumbnail';
 import { StarRating } from '@/components/StarRating';
 
 /* ══════════════════════════════════════════════════════════════════════
@@ -81,8 +82,8 @@ const GuideCard = ({ guide, completed }: { guide: typeof guides[0]; completed?: 
     }`}>
       <div className="relative h-36 overflow-hidden bg-muted">
         {imgError ? (
-          <div className="w-full h-full flex items-center justify-center text-4xl select-none" aria-hidden="true">
-            {guide.thumbnailEmoji}
+          <div className="w-full h-full flex items-center justify-center" aria-hidden="true">
+            <GuideThumbnail category={guide.category} size="h-12 w-12" useAccent />
           </div>
         ) : (
         <img

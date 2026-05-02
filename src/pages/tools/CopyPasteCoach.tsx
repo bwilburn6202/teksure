@@ -28,7 +28,7 @@ export default function CopyPasteCoach() {
         </Card>
 
         <div className="grid grid-cols-2 sm:grid-cols-4 gap-2 mb-4">
-          {[['iphone', '📱 iPhone'], ['android', '🤖 Android'], ['mac', '🍎 Mac'], ['windows', '🪟 Windows']].map(([id, label]) => (
+          {[['iphone', ' iPhone'], ['android', ' Android'], ['mac', ' Mac'], ['windows', ' Windows']].map(([id, label]) => (
             <button key={id} onClick={() => setTab(id as any)} className={`p-3 rounded-lg border-2 ${tab === id ? 'border-primary bg-primary/10' : 'border-muted'}`}>{label}</button>
           ))}
         </div>
@@ -36,7 +36,7 @@ export default function CopyPasteCoach() {
         {tab === 'iphone' && (
           <Card className="mb-4">
             <CardContent className="pt-6">
-              <h3 className="font-bold text-lg mb-3">📱 iPhone — Copy and Paste</h3>
+              <h3 className="font-bold text-lg mb-3"> iPhone — Copy and Paste</h3>
               <p className="font-semibold text-sm mt-2">Copy text:</p>
               <ol className="list-decimal pl-5 space-y-1 text-sm mb-3">
                 <li>Press and hold a word until it's highlighted in blue.</li>
@@ -62,7 +62,7 @@ export default function CopyPasteCoach() {
         {tab === 'android' && (
           <Card className="mb-4">
             <CardContent className="pt-6">
-              <h3 className="font-bold text-lg mb-3">🤖 Android — Copy and Paste</h3>
+              <h3 className="font-bold text-lg mb-3"> Android — Copy and Paste</h3>
               <p className="font-semibold text-sm mt-2">Copy text:</p>
               <ol className="list-decimal pl-5 space-y-1 text-sm mb-3">
                 <li>Press and hold any word — it highlights.</li>
@@ -82,16 +82,16 @@ export default function CopyPasteCoach() {
         {tab === 'mac' && (
           <Card className="mb-4">
             <CardContent className="pt-6">
-              <h3 className="font-bold text-lg mb-3">🍎 Mac — Copy and Paste</h3>
+              <h3 className="font-bold text-lg mb-3"> Mac — Copy and Paste</h3>
               <p className="font-semibold text-sm mt-2">Copy text:</p>
               <ol className="list-decimal pl-5 space-y-1 text-sm mb-3">
                 <li>Click and drag to highlight the text (or double-click a word).</li>
-                <li>Press <kbd className="bg-muted px-1.5 py-0.5 rounded">⌘</kbd> + <kbd className="bg-muted px-1.5 py-0.5 rounded">C</kbd>.</li>
+                <li>Press <kbd className="bg-muted px-1.5 py-0.5 rounded"></kbd> + <kbd className="bg-muted px-1.5 py-0.5 rounded">C</kbd>.</li>
               </ol>
               <p className="font-semibold text-sm">Paste:</p>
               <ol className="list-decimal pl-5 space-y-1 text-sm">
                 <li>Click where you want the text.</li>
-                <li>Press <kbd className="bg-muted px-1.5 py-0.5 rounded">⌘</kbd> + <kbd className="bg-muted px-1.5 py-0.5 rounded">V</kbd>.</li>
+                <li>Press <kbd className="bg-muted px-1.5 py-0.5 rounded"></kbd> + <kbd className="bg-muted px-1.5 py-0.5 rounded">V</kbd>.</li>
               </ol>
               <p className="text-sm mt-3 bg-muted/50 p-3 rounded"><strong>Right-click works too:</strong> Two-finger tap on the trackpad → "Copy" or "Paste" from the menu.</p>
               <p className="text-sm mt-2"><strong>Magic — copy on iPhone, paste on Mac:</strong> If your iPhone and Mac are signed in to the same Apple ID, you can copy something on one and paste on the other. It just works.</p>
@@ -102,7 +102,7 @@ export default function CopyPasteCoach() {
         {tab === 'windows' && (
           <Card className="mb-4">
             <CardContent className="pt-6">
-              <h3 className="font-bold text-lg mb-3">🪟 Windows — Copy and Paste</h3>
+              <h3 className="font-bold text-lg mb-3"> Windows — Copy and Paste</h3>
               <p className="font-semibold text-sm mt-2">Copy text:</p>
               <ol className="list-decimal pl-5 space-y-1 text-sm mb-3">
                 <li>Click and drag to highlight (or double-click a word for one word, triple-click for a line).</li>

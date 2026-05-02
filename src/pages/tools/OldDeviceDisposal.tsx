@@ -30,7 +30,7 @@ export default function OldDeviceDisposal() {
 
         <Card className="mb-6 bg-primary/5 border-primary/20">
           <CardContent className="pt-6">
-            <h2 className="font-bold mb-2">⚠️ Wipe data FIRST</h2>
+            <h2 className="font-bold mb-2"> Wipe data FIRST</h2>
             <p className="text-sm">Old phones and computers contain banking, photos, contacts, accounts. Always WIPE before donating or recycling. (See our "Erase Old Phone" tool.) For old hard drives — hammer + drill = guaranteed wiped, or pay $5 at a UPS Store for shredding.</p>
           </CardContent>
         </Card>

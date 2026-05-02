@@ -18,7 +18,7 @@ export default function RestaurantReservationCoach() {
 
         <Card className="mb-4">
           <CardContent className="pt-6">
-            <h2 className="font-bold text-xl mb-3">📅 Reservation apps</h2>
+            <h2 className="font-bold text-xl mb-3"> Reservation apps</h2>
             <ul className="space-y-3 text-sm">
               <li><strong>OpenTable</strong> (free) — biggest. Earn "points" toward gift cards as you dine. Best chain restaurants and casual spots.</li>
               <li><strong>Resy</strong> (free) — owned by American Express. Trendy and fine-dining spots. Often has reservations OpenTable doesn't.</li>
@@ -46,7 +46,7 @@ export default function RestaurantReservationCoach() {
 
         <Card className="mb-4">
           <CardContent className="pt-6">
-            <h2 className="font-bold text-xl mb-3">🔍 Finding a great restaurant nearby</h2>
+            <h2 className="font-bold text-xl mb-3"> Finding a great restaurant nearby</h2>
             <p className="font-semibold text-sm mt-2">Free apps to compare:</p>
             <ul className="list-disc pl-5 space-y-1 text-sm">
               <li><strong>Google Maps</strong> — search "restaurants" → filter by cuisine, price ($, $$, $$$$). Reviews from millions of people, plus Google's "Reservation" button if available.</li>

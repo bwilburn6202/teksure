@@ -21,7 +21,7 @@ export default function OneHandedTyping() {
             <h2 className="font-bold text-xl mb-3">iPhone — One-Handed Keyboard</h2>
             <ol className="list-decimal pl-5 space-y-2 text-sm">
               <li>Open any keyboard.</li>
-              <li>Press and hold the globe icon 🌐 (bottom-left).</li>
+              <li>Press and hold the globe icon  (bottom-left).</li>
               <li>Pick "Right" or "Left" handed keyboard.</li>
               <li>Keys shrink + shift to one side. Easier with thumb.</li>
               <li>Switch back: hold globe → tap centered icon.</li>

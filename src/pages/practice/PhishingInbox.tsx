@@ -406,7 +406,7 @@ const EMAILS: EmailItem[] = [
     difficulty: 'medium',
     fromName: 'Molly Wilburn',
     fromAddress: 'mollyw2015@gmail.com',
-    subject: 'First day of T-ball! 📸',
+    subject: 'First day of T-ball! ',
     preview: 'Attached some photos from Ethan\'s first game — he got a hit!',
     body:
       'Hi Mom,\n\nEthan had his first T-ball game this morning and got a base hit on his second try — the whole bench cheered for him.\n\nAttached a few photos and a short video. Cannot wait for you to see him in person next weekend.\n\nLove,\nMolly\n\nPS — Dad found his reading glasses in the couch cushion (again).',
@@ -511,7 +511,7 @@ const EMAILS: EmailItem[] = [
     difficulty: 'hard',
     fromName: 'AARP Magazine',
     fromAddress: 'magazine@aarp.org',
-    subject: 'Your April/May issue has shipped 📬',
+    subject: 'Your April/May issue has shipped ',
     preview: 'Plus: the May event calendar and this month\'s brain teaser.',
     body:
       'Hi Bailey,\n\nYour April/May AARP magazine is on its way — it should arrive in the next 5-7 days.\n\nIn this issue:\n- 12 easy upgrades to slash your power bill\n- A short trip to Asheville\n- Brain teaser: can you solve it?\n\nVisit aarp.org/magazine for the digital edition anytime: {{link:0}}\n\nHappy reading,\nThe AARP Magazine Team',
@@ -1001,7 +1001,7 @@ export default function PhishingInbox() {
                             className="min-h-14 text-base bg-emerald-600 hover:bg-emerald-700"
                           >
                             <CheckCircle2 className="mr-2 h-5 w-5" aria-hidden="true" />
-                            Safe 👍
+                            Safe 
                           </Button>
                           <Button
                             size="lg"
@@ -1009,7 +1009,7 @@ export default function PhishingInbox() {
                             className="min-h-14 text-base bg-red-600 hover:bg-red-700"
                           >
                             <Flag className="mr-2 h-5 w-5" aria-hidden="true" />
-                            Phishing 🚩
+                            Phishing 
                           </Button>
                           <Button
                             size="lg"
@@ -1018,7 +1018,7 @@ export default function PhishingInbox() {
                             className="min-h-14 text-base"
                           >
                             <HelpCircle className="mr-2 h-5 w-5" aria-hidden="true" />
-                            Not sure 🤔
+                            Not sure 
                           </Button>
                         </div>
                       </div>

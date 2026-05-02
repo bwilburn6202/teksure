@@ -275,7 +275,7 @@ export default function DeviceChooser() {
                 {[
                   { emoji: '', label: '2 minutes' },
                   { emoji: '', label: '5 questions' },
-                  { emoji: '🆓', label: 'Completely free' },
+                  { emoji: '', label: 'Completely free' },
                 ].map(item => (
                   <div key={item.label} className="bg-muted/50 rounded-xl p-3">
                     <div className="text-2xl mb-1">{item.emoji}</div>

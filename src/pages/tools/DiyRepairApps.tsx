@@ -61,7 +61,7 @@ export default function DiyRepairApps() {
 
         <Card className="mb-4 border-yellow-300 dark:border-yellow-800">
           <CardContent className="pt-6">
-            <h2 className="font-bold text-xl mb-3">⚠️ Get a pro for</h2>
+            <h2 className="font-bold text-xl mb-3"> Get a pro for</h2>
             <ul className="list-disc pl-5 space-y-1 text-sm">
               <li>Anything gas (water heaters, gas stove, furnace).</li>
               <li>Major electrical (panel, new circuits).</li>

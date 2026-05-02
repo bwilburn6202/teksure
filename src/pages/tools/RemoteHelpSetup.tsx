@@ -30,7 +30,7 @@ export default function RemoteHelpSetup() {
 
         <Card className="mb-4">
           <CardContent className="pt-6">
-            <h2 className="font-bold text-xl mb-3">🍎 Mac to Mac (or iPhone to iPhone) — SharePlay screen sharing</h2>
+            <h2 className="font-bold text-xl mb-3"> Mac to Mac (or iPhone to iPhone) — SharePlay screen sharing</h2>
             <p className="text-sm mb-2">If both of you have Apple devices, this is built in.</p>
             <ol className="list-decimal pl-5 space-y-2 text-sm">
               <li>Start a FaceTime call with the family member.</li>
@@ -44,7 +44,7 @@ export default function RemoteHelpSetup() {
 
         <Card className="mb-4">
           <CardContent className="pt-6">
-            <h2 className="font-bold text-xl mb-3">🪟 Windows — Quick Assist (free)</h2>
+            <h2 className="font-bold text-xl mb-3"> Windows — Quick Assist (free)</h2>
             <ol className="list-decimal pl-5 space-y-2 text-sm">
               <li>You: press the <strong>Windows key</strong>, type "Quick Assist", press Enter.</li>
               <li>You: tap "Get help".</li>
@@ -59,7 +59,7 @@ export default function RemoteHelpSetup() {
 
         <Card className="mb-4">
           <CardContent className="pt-6">
-            <h2 className="font-bold text-xl mb-3">🤖 Android — Google Meet screen share</h2>
+            <h2 className="font-bold text-xl mb-3"> Android — Google Meet screen share</h2>
             <ol className="list-decimal pl-5 space-y-2 text-sm">
               <li>Start a Google Meet video call with the family member.</li>
               <li>Tap the three-dot menu → "Share screen" → "Start sharing".</li>

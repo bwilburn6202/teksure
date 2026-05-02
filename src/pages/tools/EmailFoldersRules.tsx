@@ -20,8 +20,8 @@ export default function EmailFoldersRules() {
         </div>
 
         <div className="flex gap-2 mb-4">
-          <button onClick={() => setTab('gmail')} className={`flex-1 p-3 rounded-lg border-2 ${tab === 'gmail' ? 'border-primary bg-primary/10' : 'border-muted'}`}>📧 Gmail</button>
-          <button onClick={() => setTab('outlook')} className={`flex-1 p-3 rounded-lg border-2 ${tab === 'outlook' ? 'border-primary bg-primary/10' : 'border-muted'}`}>📨 Outlook</button>
+          <button onClick={() => setTab('gmail')} className={`flex-1 p-3 rounded-lg border-2 ${tab === 'gmail' ? 'border-primary bg-primary/10' : 'border-muted'}`}> Gmail</button>
+          <button onClick={() => setTab('outlook')} className={`flex-1 p-3 rounded-lg border-2 ${tab === 'outlook' ? 'border-primary bg-primary/10' : 'border-muted'}`}> Outlook</button>
         </div>
 
         {tab === 'gmail' && (

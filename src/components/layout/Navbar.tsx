@@ -44,7 +44,7 @@ import { DarkModeToggle } from '@/components/DarkModeToggle';
  *   - Toggle row:    Light/Dark + Font Size (DarkModeToggle, FontSizeToggle)
  *
  * Desktop layout (left → right):
- *   [Logo]  Guides  Tools  More ▾  [Request Help]  ☼  A↕  Avatar
+ *   [Logo]  Guides  Tools  More ▾  [Request Help]    A↕  Avatar
  *
  * Mobile: hamburger opens a right-side slide-out drawer with ≥ 52px
  * tap targets and the Request Help CTA on top.

@@ -18,7 +18,7 @@ export default function AnnuityWarning() {
 
         <Card className="mb-4">
           <CardContent className="pt-6">
-            <h2 className="font-bold text-xl mb-3">✅ The GOOD annuities (rare)</h2>
+            <h2 className="font-bold text-xl mb-3"> The GOOD annuities (rare)</h2>
             <ul className="list-disc pl-5 space-y-2 text-sm">
               <li><strong>SPIA — Single Premium Immediate Annuity</strong>. You hand over a lump sum; they pay you a monthly check for life. Simple. Low fees. Useful for some retirees.</li>
               <li><strong>QLAC — Qualified Longevity Annuity Contract</strong>. Defers payments to age 80-85. Insurance against living too long. Reduces RMDs.</li>
@@ -30,7 +30,7 @@ export default function AnnuityWarning() {
 
         <Card className="mb-4 border-destructive">
           <CardContent className="pt-6">
-            <h2 className="font-bold text-xl mb-3">❌ The BAD annuities (most pitched to seniors)</h2>
+            <h2 className="font-bold text-xl mb-3"> The BAD annuities (most pitched to seniors)</h2>
             <ul className="list-disc pl-5 space-y-2 text-sm">
               <li><strong>Variable annuity</strong> — invested in mutual funds inside the annuity. Fees often 3%+/year. Surrender penalties 5-10 years. Locks money up.</li>
               <li><strong>Indexed annuity</strong> — promises stock market upside with "no downside". Reality: caps and "participation rates" capture 3-7% even when market does 20%. Heavy fees, complex.</li>

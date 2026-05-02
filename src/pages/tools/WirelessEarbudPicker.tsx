@@ -43,7 +43,7 @@ export default function WirelessEarbudPicker() {
 
         <Card className="mt-6">
           <CardContent className="pt-6">
-            <h2 className="font-bold text-xl mb-3">🦻 Earbuds as hearing aids (yes, really)</h2>
+            <h2 className="font-bold text-xl mb-3"> Earbuds as hearing aids (yes, really)</h2>
             <p className="text-sm mb-2"><strong>AirPods Pro 2 with iOS 18+</strong> are FDA-approved as over-the-counter hearing aids for mild-to-moderate hearing loss.</p>
             <ol className="list-decimal pl-5 space-y-1 text-sm">
               <li>Settings → Accessibility → Hearing → Hearing Aid Mode.</li>

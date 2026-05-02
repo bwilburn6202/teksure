@@ -20,15 +20,15 @@ export default function HomeScreenOrganizer() {
         </div>
 
         <div className="flex gap-2 mb-4">
-          <button onClick={() => setTab('iphone')} className={`flex-1 p-3 rounded-lg border-2 ${tab === 'iphone' ? 'border-primary bg-primary/10' : 'border-muted'}`}>📱 iPhone</button>
-          <button onClick={() => setTab('android')} className={`flex-1 p-3 rounded-lg border-2 ${tab === 'android' ? 'border-primary bg-primary/10' : 'border-muted'}`}>🤖 Android</button>
+          <button onClick={() => setTab('iphone')} className={`flex-1 p-3 rounded-lg border-2 ${tab === 'iphone' ? 'border-primary bg-primary/10' : 'border-muted'}`}> iPhone</button>
+          <button onClick={() => setTab('android')} className={`flex-1 p-3 rounded-lg border-2 ${tab === 'android' ? 'border-primary bg-primary/10' : 'border-muted'}`}> Android</button>
         </div>
 
         {tab === 'iphone' && (
           <>
             <Card className="mb-4">
               <CardContent className="pt-6">
-                <h3 className="font-bold text-lg mb-3">📁 Make a folder</h3>
+                <h3 className="font-bold text-lg mb-3"> Make a folder</h3>
                 <ol className="list-decimal pl-5 space-y-1 text-sm">
                   <li>Press and hold any app — wait until everything wiggles.</li>
                   <li>Drag the app on top of another app. They merge into a folder.</li>
@@ -40,7 +40,7 @@ export default function HomeScreenOrganizer() {
             </Card>
             <Card className="mb-4">
               <CardContent className="pt-6">
-                <h3 className="font-bold text-lg mb-3">📰 Add a widget</h3>
+                <h3 className="font-bold text-lg mb-3"> Add a widget</h3>
                 <ol className="list-decimal pl-5 space-y-1 text-sm">
                   <li>Long-press the home screen until apps wiggle.</li>
                   <li>Tap the "+" in the top left.</li>
@@ -53,7 +53,7 @@ export default function HomeScreenOrganizer() {
             </Card>
             <Card className="mb-4">
               <CardContent className="pt-6">
-                <h3 className="font-bold text-lg mb-3">🚫 Hide apps you never use</h3>
+                <h3 className="font-bold text-lg mb-3"> Hide apps you never use</h3>
                 <ol className="list-decimal pl-5 space-y-1 text-sm">
                   <li>Long-press an app → "Remove App" → "Move to App Library".</li>
                   <li>It\'s removed from the home screen but still installed (in App Library).</li>
@@ -68,7 +68,7 @@ export default function HomeScreenOrganizer() {
           <>
             <Card className="mb-4">
               <CardContent className="pt-6">
-                <h3 className="font-bold text-lg mb-3">📁 Make a folder</h3>
+                <h3 className="font-bold text-lg mb-3"> Make a folder</h3>
                 <ol className="list-decimal pl-5 space-y-1 text-sm">
                   <li>Press and hold an app icon.</li>
                   <li>Drag it on top of another app.</li>
@@ -79,7 +79,7 @@ export default function HomeScreenOrganizer() {
             </Card>
             <Card className="mb-4">
               <CardContent className="pt-6">
-                <h3 className="font-bold text-lg mb-3">📰 Add a widget</h3>
+                <h3 className="font-bold text-lg mb-3"> Add a widget</h3>
                 <ol className="list-decimal pl-5 space-y-1 text-sm">
                   <li>Long-press an empty area of the home screen.</li>
                   <li>Tap "Widgets".</li>
@@ -90,7 +90,7 @@ export default function HomeScreenOrganizer() {
             </Card>
             <Card className="mb-4">
               <CardContent className="pt-6">
-                <h3 className="font-bold text-lg mb-3">🚫 Remove unused apps</h3>
+                <h3 className="font-bold text-lg mb-3"> Remove unused apps</h3>
                 <ol className="list-decimal pl-5 space-y-1 text-sm">
                   <li>Long-press app → "Uninstall" (removes completely) or "Remove" (just hides from home screen, still in app drawer).</li>
                   <li>For pre-installed bloatware that won\'t uninstall: Settings → Apps → tap the app → "Disable".</li>

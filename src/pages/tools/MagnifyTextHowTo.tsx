@@ -48,8 +48,8 @@ export default function MagnifyTextHowTo() {
             <h2 className="font-bold text-xl mb-3">Mac — Zoom screen</h2>
             <ul className="list-disc pl-5 space-y-2 text-sm">
               <li>System Settings → Accessibility → Zoom.</li>
-              <li>Use ⌘ + Option + = to zoom in.</li>
-              <li>⌘ + Option + - to zoom out.</li>
+              <li>Use  + Option + = to zoom in.</li>
+              <li> + Option + - to zoom out.</li>
               <li>Or scroll with Ctrl + trackpad/mouse to zoom (Smart Zoom).</li>
             </ul>
           </CardContent>
@@ -72,9 +72,9 @@ export default function MagnifyTextHowTo() {
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Web pages — zoom in browser</h2>
             <ul className="list-disc pl-5 space-y-2 text-sm">
-              <li><kbd className="bg-muted px-1.5 py-0.5 rounded">Ctrl</kbd> + <kbd className="bg-muted px-1.5 py-0.5 rounded">+</kbd> (PC) or <kbd className="bg-muted px-1.5 py-0.5 rounded">⌘</kbd> + <kbd className="bg-muted px-1.5 py-0.5 rounded">+</kbd> (Mac).</li>
+              <li><kbd className="bg-muted px-1.5 py-0.5 rounded">Ctrl</kbd> + <kbd className="bg-muted px-1.5 py-0.5 rounded">+</kbd> (PC) or <kbd className="bg-muted px-1.5 py-0.5 rounded"></kbd> + <kbd className="bg-muted px-1.5 py-0.5 rounded">+</kbd> (Mac).</li>
               <li>Each press zooms 10%.</li>
-              <li>Reset: Ctrl + 0 or ⌘ + 0.</li>
+              <li>Reset: Ctrl + 0 or  + 0.</li>
               <li>Save default zoom in browser settings.</li>
               <li>Safari: View → Make Text Larger.</li>
             </ul>
