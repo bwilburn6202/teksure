@@ -7,22 +7,22 @@ import { Footprints } from 'lucide-react';
 export default function SeniorWalkingApps() {
   return (
     <div className="min-h-screen flex flex-col bg-background">
-      <SEOHead title="Walking Apps for Seniors — TekSure" description="Best step counters and walking apps for seniors — free and easy to use." />
+      <SEOHead title="Walking Apps for Seniors — Senior Guide" description="Apps that turn walks into fun." />
       <Navbar />
       <main className="flex-1 container mx-auto px-4 py-10 max-w-3xl">
         <div className="text-center mb-8">
           <Footprints className="w-14 h-14 text-primary mx-auto mb-3" />
-          <h1 className="text-4xl font-bold mb-2">Walking Apps for Seniors</h1>
-          <p className="text-lg text-muted-foreground">Track steps. Build a walking habit.</p>
+          <h1 className="text-4xl font-bold mb-2">Walking Apps</h1>
+          <p className="text-lg text-muted-foreground">Make daily walks fun and useful.</p>
         </div>
         <div className="space-y-4">
-          <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Apple Health / Google Fit</h2><p>Built into your phone. Counts steps automatically when you carry it.</p></CardContent></Card>
-          <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Pacer</h2><p>Free. Big numbers. Walking groups for motivation. Works without a watch.</p></CardContent></Card>
-          <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">StepsApp</h2><p>Free. Beautiful charts. Reminds you to move every hour.</p></CardContent></Card>
-          <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">AllTrails</h2><p>Free. Find walking trails near you. Filter by &ldquo;easy&rdquo; and &ldquo;paved.&rdquo;</p></CardContent></Card>
-          <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Walking goals</h2><p>Doctors recommend 30 minutes daily. Start with 2,000 steps and add 500 weekly.</p></CardContent></Card>
-          <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Safety</h2><p>Tell someone your route. Carry your phone. Wear a Medical ID bracelet.</p></CardContent></Card>
-          <Card className="bg-muted/40"><CardContent className="pt-6"><p className="text-sm">Quick Tip: Walking with a friend doubles consistency. Start a daily 20-minute neighbor walk.</p></CardContent></Card>
+          <Card><CardContent className="p-6"><h2 className="text-xl font-semibold mb-2">1. Apple Health / Google Fit</h2><p>Free, built in. Tracks steps automatically using phone sensors.</p></CardContent></Card>
+          <Card><CardContent className="p-6"><h2 className="text-xl font-semibold mb-2">2. Pacer</h2><p>Free. Goal challenges. Walk to virtual landmarks worldwide.</p></CardContent></Card>
+          <Card><CardContent className="p-6"><h2 className="text-xl font-semibold mb-2">3. WalkLogger</h2><p>Free. Senior-friendly large buttons. Tracks every walk.</p></CardContent></Card>
+          <Card><CardContent className="p-6"><h2 className="text-xl font-semibold mb-2">4. Nike Run Club</h2><p>Free. Audio coaches encourage you. Walking guides included.</p></CardContent></Card>
+          <Card><CardContent className="p-6"><h2 className="text-xl font-semibold mb-2">5. Charity Miles</h2><p>Free. Sponsors donate to charity for every mile you walk. Walks for a cause.</p></CardContent></Card>
+          <Card><CardContent className="p-6"><h2 className="text-xl font-semibold mb-2">6. Just push play</h2><p>Audiobook or podcast app turns 30-minute walks into the best part of your day.</p></CardContent></Card>
+          <Card className="bg-muted/40"><CardContent className="p-6"><p>Walking 30 minutes daily lowers risk of heart disease, diabetes, and falls.</p></CardContent></Card>
         </div>
       </main>
       <Footer />
