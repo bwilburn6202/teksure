@@ -2476,6 +2476,11 @@ const SeniorAndroidAuto                      = lazy(() => import("./pages/tools/
 const SeniorBackupCameraApps                 = lazy(() => import("./pages/tools/SeniorBackupCameraApps"));
 const SeniorGasPriceApps                     = lazy(() => import("./pages/tools/SeniorGasPriceApps"));
 const SeniorTireInsurance                    = lazy(() => import("./pages/tools/SeniorTireInsurance"));
+const SeniorRingtones                        = lazy(() => import("./pages/tools/SeniorRingtones"));
+const SeniorWidgets                          = lazy(() => import("./pages/tools/SeniorWidgets"));
+const SeniorWallpapers                       = lazy(() => import("./pages/tools/SeniorWallpapers"));
+const SeniorAccessibilityShortcut            = lazy(() => import("./pages/tools/SeniorAccessibilityShortcut"));
+const SeniorBigIcons                         = lazy(() => import("./pages/tools/SeniorBigIcons"));
 
 // ── Cycle 195 (April 29 2026) — DIY home ──
 const BasicToolsForSeniors   = lazy(() => import("./pages/tools/BasicToolsForSeniors"));
@@ -5518,6 +5523,11 @@ const AppContent = () => {
           <Route path="/tools/senior-backup-camera-apps" element={<SeniorBackupCameraApps />} />
           <Route path="/tools/senior-gas-price-apps" element={<SeniorGasPriceApps />} />
           <Route path="/tools/senior-tire-insurance" element={<SeniorTireInsurance />} />
+          <Route path="/tools/senior-ringtones" element={<SeniorRingtones />} />
+          <Route path="/tools/senior-widgets" element={<SeniorWidgets />} />
+          <Route path="/tools/senior-wallpapers" element={<SeniorWallpapers />} />
+          <Route path="/tools/senior-accessibility-shortcut" element={<SeniorAccessibilityShortcut />} />
+          <Route path="/tools/senior-big-icons" element={<SeniorBigIcons />} />
           <Route path="/tools/basic-tools-for-seniors" element={<BasicToolsForSeniors />} />
           <Route path="/tools/painting-tips-seniors" element={<PaintingTipsSeniors />} />
           <Route path="/tools/caulking-basics" element={<CaulkingBasics />} />
