@@ -2790,6 +2790,11 @@ const SeniorAndroidGmail                     = lazy(() => import("./pages/tools/
 const SeniorAndroidPlayStore                 = lazy(() => import("./pages/tools/SeniorAndroidPlayStore"));
 const SeniorAndroidGoogleAssistant           = lazy(() => import("./pages/tools/SeniorAndroidGoogleAssistant"));
 const SeniorAndroidPhotos                    = lazy(() => import("./pages/tools/SeniorAndroidPhotos"));
+const SeniorAndroidMessages                  = lazy(() => import("./pages/tools/SeniorAndroidMessages"));
+const SeniorAndroidContacts                  = lazy(() => import("./pages/tools/SeniorAndroidContacts"));
+const SeniorAndroidCamera                    = lazy(() => import("./pages/tools/SeniorAndroidCamera"));
+const SeniorAndroidMaps                      = lazy(() => import("./pages/tools/SeniorAndroidMaps"));
+const SeniorAndroidCalendar                  = lazy(() => import("./pages/tools/SeniorAndroidCalendar"));
 const SeniorAmateurRadio                     = lazy(() => import("./pages/tools/SeniorAmateurRadio"));
 const SeniorMetalDetecting                   = lazy(() => import("./pages/tools/SeniorMetalDetecting"));
 const SeniorWoodCarving                      = lazy(() => import("./pages/tools/SeniorWoodCarving"));
@@ -6151,6 +6156,11 @@ const AppContent = () => {
           <Route path="/tools/senior-android-play-store" element={<SeniorAndroidPlayStore />} />
           <Route path="/tools/senior-android-google-assistant" element={<SeniorAndroidGoogleAssistant />} />
           <Route path="/tools/senior-android-photos" element={<SeniorAndroidPhotos />} />
+          <Route path="/tools/senior-android-messages" element={<SeniorAndroidMessages />} />
+          <Route path="/tools/senior-android-contacts" element={<SeniorAndroidContacts />} />
+          <Route path="/tools/senior-android-camera" element={<SeniorAndroidCamera />} />
+          <Route path="/tools/senior-android-maps" element={<SeniorAndroidMaps />} />
+          <Route path="/tools/senior-android-calendar" element={<SeniorAndroidCalendar />} />
           <Route path="/tools/senior-amateur-radio" element={<SeniorAmateurRadio />} />
           <Route path="/tools/senior-metal-detecting" element={<SeniorMetalDetecting />} />
           <Route path="/tools/senior-wood-carving" element={<SeniorWoodCarving />} />
