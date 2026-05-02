@@ -2710,6 +2710,11 @@ const SeniorMathGames                        = lazy(() => import("./pages/tools/
 const SeniorWordGames                        = lazy(() => import("./pages/tools/SeniorWordGames"));
 const SeniorPatternGames                     = lazy(() => import("./pages/tools/SeniorPatternGames"));
 const SeniorVisualMemory                     = lazy(() => import("./pages/tools/SeniorVisualMemory"));
+const SeniorBookClubs                        = lazy(() => import("./pages/tools/SeniorBookClubs"));
+const SeniorPolitics                         = lazy(() => import("./pages/tools/SeniorPolitics"));
+const SeniorChurchTech                       = lazy(() => import("./pages/tools/SeniorChurchTech"));
+const SeniorVeterans                         = lazy(() => import("./pages/tools/SeniorVeterans"));
+const SeniorClubsFinder                      = lazy(() => import("./pages/tools/SeniorClubsFinder"));
 
 // ── Cycle 195 (April 29 2026) — DIY home ──
 const BasicToolsForSeniors   = lazy(() => import("./pages/tools/BasicToolsForSeniors"));
@@ -5986,6 +5991,11 @@ const AppContent = () => {
           <Route path="/tools/senior-word-games" element={<SeniorWordGames />} />
           <Route path="/tools/senior-pattern-games" element={<SeniorPatternGames />} />
           <Route path="/tools/senior-visual-memory" element={<SeniorVisualMemory />} />
+          <Route path="/tools/senior-book-clubs" element={<SeniorBookClubs />} />
+          <Route path="/tools/senior-politics" element={<SeniorPolitics />} />
+          <Route path="/tools/senior-church-tech" element={<SeniorChurchTech />} />
+          <Route path="/tools/senior-veterans" element={<SeniorVeterans />} />
+          <Route path="/tools/senior-clubs-finder" element={<SeniorClubsFinder />} />
           <Route path="/tools/basic-tools-for-seniors" element={<BasicToolsForSeniors />} />
           <Route path="/tools/painting-tips-seniors" element={<PaintingTipsSeniors />} />
           <Route path="/tools/caulking-basics" element={<CaulkingBasics />} />
