@@ -7,22 +7,22 @@ import { Train } from 'lucide-react';
 export default function SeniorTrainTravel() {
   return (
     <div className="min-h-screen flex flex-col bg-background">
-      <SEOHead title="Train Travel for Seniors — TekSure" description="Amtrak senior discount, scenic routes, accessible train cars." />
+      <SEOHead title="Train Travel Apps — Senior Guide" description="Book Amtrak and city train tickets online." />
       <Navbar />
       <main className="flex-1 container mx-auto px-4 py-10 max-w-3xl">
         <div className="text-center mb-8">
           <Train className="w-14 h-14 text-primary mx-auto mb-3" />
-          <h1 className="text-4xl font-bold mb-2">Train Travel for Seniors</h1>
-          <p className="text-lg text-muted-foreground">No security lines. No bag fees.</p>
+          <h1 className="text-4xl font-bold mb-2">Train Travel</h1>
+          <p className="text-lg text-muted-foreground">Trains around the country.</p>
         </div>
         <div className="space-y-4">
-          <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Amtrak Senior 10%</h2><p>10% off all tickets ages 65+. Add at booking.</p></CardContent></Card>
-          <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Why for seniors</h2><ul className="list-disc pl-5 space-y-1 text-sm"><li>No security check</li><li>2 free bags</li><li>Comfortable seats</li><li>Walk around</li><li>Beautiful scenery</li></ul></CardContent></Card>
-          <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Best routes</h2><ul className="list-disc pl-5 space-y-1 text-sm"><li>California Zephyr (Chicago-SF)</li><li>Coast Starlight (Seattle-LA)</li><li>Empire Builder (Chicago-Seattle)</li><li>Southwest Chief (Chicago-LA)</li></ul></CardContent></Card>
-          <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Roomettes</h2><p>$200-$500 extra. Bed at night. Meals included. Senior worth it.</p></CardContent></Card>
-          <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Accessible</h2><p>All Amtrak trains accessible. Wheelchair seating bookable.</p></CardContent></Card>
-          <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Plan ahead</h2><p>Book 11 months in advance for best rates.</p></CardContent></Card>
-          <Card className="bg-muted/40"><CardContent className="pt-6"><p className="text-sm">Quick Tip: Amtrak USA Rail Pass $499. 10 segments in 30 days. Lots of senior travel.</p></CardContent></Card>
+          <Card><CardContent className="p-6"><h2 className="text-xl font-semibold mb-2">1. Amtrak app</h2><p>Free. Book any Amtrak. Senior discount 10% for 65+. Apply at booking.</p></CardContent></Card>
+          <Card><CardContent className="p-6"><h2 className="text-xl font-semibold mb-2">2. Mobile tickets</h2><p>Show conductor your phone. No paper needed.</p></CardContent></Card>
+          <Card><CardContent className="p-6"><h2 className="text-xl font-semibold mb-2">3. City rail apps</h2><p>BART, Metro, MTA — most cities have apps. Buy fare cards on phone.</p></CardContent></Card>
+          <Card><CardContent className="p-6"><h2 className="text-xl font-semibold mb-2">4. International</h2><p>Eurail and Rail Europe apps for European trains. Senior fares often available.</p></CardContent></Card>
+          <Card><CardContent className="p-6"><h2 className="text-xl font-semibold mb-2">5. USA Rail Pass</h2><p>10 segments in 30 days for $499. Affordable senior road trip.</p></CardContent></Card>
+          <Card><CardContent className="p-6"><h2 className="text-xl font-semibold mb-2">6. Sleeper rooms</h2><p>For long trips, rooms include meals. Worth it for overnight travel.</p></CardContent></Card>
+          <Card className="bg-muted/40"><CardContent className="p-6"><p>Trains are easier on the body than long flights. Free luggage. No cramped seats.</p></CardContent></Card>
         </div>
       </main>
       <Footer />
