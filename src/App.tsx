@@ -2551,6 +2551,11 @@ const SeniorWaterFlosser                     = lazy(() => import("./pages/tools/
 const SeniorHearingTestApps                  = lazy(() => import("./pages/tools/SeniorHearingTestApps"));
 const SeniorOTCHearingAids                   = lazy(() => import("./pages/tools/SeniorOTCHearingAids"));
 const SeniorEyeDropReminders                 = lazy(() => import("./pages/tools/SeniorEyeDropReminders"));
+const SeniorFallDetectors                    = lazy(() => import("./pages/tools/SeniorFallDetectors"));
+const SeniorMotionSensors                    = lazy(() => import("./pages/tools/SeniorMotionSensors"));
+const SeniorStoveAutoShutoff                 = lazy(() => import("./pages/tools/SeniorStoveAutoShutoff"));
+const SeniorMattressSensors                  = lazy(() => import("./pages/tools/SeniorMattressSensors"));
+const SeniorVoiceMonitoring                  = lazy(() => import("./pages/tools/SeniorVoiceMonitoring"));
 
 // ── Cycle 195 (April 29 2026) — DIY home ──
 const BasicToolsForSeniors   = lazy(() => import("./pages/tools/BasicToolsForSeniors"));
@@ -5668,6 +5673,11 @@ const AppContent = () => {
           <Route path="/tools/senior-hearing-test-apps" element={<SeniorHearingTestApps />} />
           <Route path="/tools/senior-otc-hearing-aids" element={<SeniorOTCHearingAids />} />
           <Route path="/tools/senior-eye-drop-reminders" element={<SeniorEyeDropReminders />} />
+          <Route path="/tools/senior-fall-detectors" element={<SeniorFallDetectors />} />
+          <Route path="/tools/senior-motion-sensors" element={<SeniorMotionSensors />} />
+          <Route path="/tools/senior-stove-auto-shutoff" element={<SeniorStoveAutoShutoff />} />
+          <Route path="/tools/senior-mattress-sensors" element={<SeniorMattressSensors />} />
+          <Route path="/tools/senior-voice-monitoring" element={<SeniorVoiceMonitoring />} />
           <Route path="/tools/basic-tools-for-seniors" element={<BasicToolsForSeniors />} />
           <Route path="/tools/painting-tips-seniors" element={<PaintingTipsSeniors />} />
           <Route path="/tools/caulking-basics" element={<CaulkingBasics />} />
