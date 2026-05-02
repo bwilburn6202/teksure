@@ -2131,7 +2131,6 @@ const SeniorPhoneSecuritySetup              = lazy(() => import("./pages/tools/S
 const SeniorTechBudgetGuide                 = lazy(() => import("./pages/tools/SeniorTechBudgetGuide"));
 
 // ── Cycle 333 (May 2 2026) — senior crafting hobbies ──
-const CricutForSeniorCrafters               = lazy(() => import("./pages/tools/CricutForSeniorCrafters"));
 const QuiltingAppsForSeniors                = lazy(() => import("./pages/tools/QuiltingAppsForSeniors"));
 const PaintingAppsForSeniorArtists          = lazy(() => import("./pages/tools/PaintingAppsForSeniorArtists"));
 const RavelryForKnittersSeniors             = lazy(() => import("./pages/tools/RavelryForKnittersSeniors"));
