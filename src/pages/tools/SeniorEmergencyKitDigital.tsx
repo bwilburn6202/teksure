@@ -7,105 +7,23 @@ import { Briefcase } from 'lucide-react';
 export default function SeniorEmergencyKitDigital() {
   return (
     <div className="min-h-screen flex flex-col bg-background">
-      <SEOHead title="Senior Digital Emergency Kit | TekSure" description="Digital go-bag — files + apps to have ready for emergencies." />
+      <SEOHead title="Digital Emergency Kit — Senior Guide" description="Save important documents to your phone." />
       <Navbar />
       <main className="flex-1 container mx-auto px-4 py-10 max-w-3xl">
         <div className="text-center mb-8">
           <Briefcase className="w-14 h-14 text-primary mx-auto mb-3" />
           <h1 className="text-4xl font-bold mb-2">Digital Emergency Kit</h1>
-          <p className="text-lg text-muted-foreground">Files + apps ready for emergencies.</p>
+          <p className="text-lg text-muted-foreground">Important docs on your phone.</p>
         </div>
-
-        <Card className="mb-4">
-          <CardContent className="pt-6">
-            <h2 className="font-bold text-xl mb-3">Documents in cloud</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
-              <li>Driver&apos;s license — front + back photo.</li>
-              <li>Passport — photo of info page.</li>
-              <li>Medicare + insurance cards.</li>
-              <li>Social Security card (carefully).</li>
-              <li>Birth certificate scan.</li>
-              <li>Marriage license, will, POA.</li>
-            </ul>
-          </CardContent>
-        </Card>
-
-        <Card className="mb-4">
-          <CardContent className="pt-6">
-            <h2 className="font-bold text-xl mb-3">Where to store</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
-              <li>iCloud Drive (encrypted).</li>
-              <li>Google Drive (use 2FA).</li>
-              <li>Dropbox personal vault.</li>
-              <li>Bitwarden secure notes for sensitive.</li>
-              <li>Don&apos;t put SSN in plain documents.</li>
-              <li>Family member access if you&apos;re incapacitated.</li>
-            </ul>
-          </CardContent>
-        </Card>
-
-        <Card className="mb-4">
-          <CardContent className="pt-6">
-            <h2 className="font-bold text-xl mb-3">Medical info ready</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
-              <li>Apple Health Medical ID set up.</li>
-              <li>Medication list with doses.</li>
-              <li>Doctors + pharmacy phone numbers.</li>
-              <li>Allergies + conditions.</li>
-              <li>Recent labs + tests.</li>
-              <li>Emergency contacts.</li>
-            </ul>
-          </CardContent>
-        </Card>
-
-        <Card className="mb-4">
-          <CardContent className="pt-6">
-            <h2 className="font-bold text-xl mb-3">Apps to install before need</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
-              <li>FEMA — disaster info.</li>
-              <li>Red Cross First Aid.</li>
-              <li>Red Cross Emergency.</li>
-              <li>Local utility outage map.</li>
-              <li>Weather app with severe alerts.</li>
-              <li>Banking apps for quick fund access.</li>
-            </ul>
-          </CardContent>
-        </Card>
-
-        <Card className="mb-4">
-          <CardContent className="pt-6">
-            <h2 className="font-bold text-xl mb-3">Cash + access</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
-              <li>$200 cash hidden in safe.</li>
-              <li>Apple Pay set up for digital payments.</li>
-              <li>Multiple credit cards backed up.</li>
-              <li>Bank app PIN saved separately.</li>
-              <li>Emergency fund accessible.</li>
-              <li>Family member knows location of safe.</li>
-            </ul>
-          </CardContent>
-        </Card>
-
-        <Card className="mb-4">
-          <CardContent className="pt-6">
-            <h2 className="font-bold text-xl mb-3">Family communication plan</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
-              <li>Group text with all family.</li>
-              <li>Out-of-state &quot;hub&quot; contact.</li>
-              <li>Find My / Life360 sharing.</li>
-              <li>Code word for &quot;I&apos;m safe.&quot;</li>
-              <li>Annual family emergency plan review.</li>
-              <li>Practice + verify everyone knows.</li>
-            </ul>
-          </CardContent>
-        </Card>
-
-        <Card className="bg-muted/40">
-          <CardContent className="pt-6">
-            <h3 className="font-bold mb-2">Photograph documents this week</h3>
-            <p className="text-sm text-muted-foreground">Take 30 minutes this week. Photograph every important document. Save to iCloud or Google Drive in a folder called &quot;Important Documents.&quot; Share access with trusted adult child. If house burns down, gets flooded, or you&apos;re injured, your important docs are accessible. This single action is one of the most underrated senior preparation steps.</p>
-          </CardContent>
-        </Card>
+        <div className="space-y-4">
+          <Card><CardContent className="p-6"><h2 className="text-xl font-semibold mb-2">1. Insurance cards</h2><p>Health, auto, home. Take photos. Save to a private album in Photos.</p></CardContent></Card>
+          <Card><CardContent className="p-6"><h2 className="text-xl font-semibold mb-2">2. ID copies</h2><p>Driver's license, passport, Medicare card. Photos help if lost.</p></CardContent></Card>
+          <Card><CardContent className="p-6"><h2 className="text-xl font-semibold mb-2">3. Medications list</h2><p>Type all medications, doses, schedules in Notes. Update at each doctor visit.</p></CardContent></Card>
+          <Card><CardContent className="p-6"><h2 className="text-xl font-semibold mb-2">4. Doctor contacts</h2><p>Save all doctor numbers in Contacts. Fast access in emergency.</p></CardContent></Card>
+          <Card><CardContent className="p-6"><h2 className="text-xl font-semibold mb-2">5. Will and DPOA</h2><p>Scan to PDF. Save to iCloud or Google Drive. Family knows where to find.</p></CardContent></Card>
+          <Card><CardContent className="p-6"><h2 className="text-xl font-semibold mb-2">6. Password notes</h2><p>Use a password manager. Don't store passwords in plain text photos.</p></CardContent></Card>
+          <Card className="bg-muted/40"><CardContent className="p-6"><p>Phone face/fingerprint lock keeps these documents secure. Lost phone — info is encrypted.</p></CardContent></Card>
+        </div>
       </main>
       <Footer />
     </div>
