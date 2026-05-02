@@ -2900,7 +2900,11 @@ const SeniorYelpReviews                      = lazy(() => import("./pages/tools/
 const SeniorOpenTable                        = lazy(() => import("./pages/tools/SeniorOpenTable"));
 const SeniorTripAdvisor                      = lazy(() => import("./pages/tools/SeniorTripAdvisor"));
 const SeniorWaze                             = lazy(() => import("./pages/tools/SeniorWaze"));
-const SeniorWeatherApps                      = lazy(() => import("./pages/tools/SeniorWeatherApps"));
+const SeniorAncestryDNA                      = lazy(() => import("./pages/tools/SeniorAncestryDNA"));
+const SeniorFamilySearchOrg                  = lazy(() => import("./pages/tools/SeniorFamilySearchOrg"));
+const SeniorMyHeritage                       = lazy(() => import("./pages/tools/SeniorMyHeritage"));
+const SeniorScrapbookApps                    = lazy(() => import("./pages/tools/SeniorScrapbookApps"));
+const SeniorOldPhotoScanning                 = lazy(() => import("./pages/tools/SeniorOldPhotoScanning"));
 const SeniorAmateurRadio                     = lazy(() => import("./pages/tools/SeniorAmateurRadio"));
 const SeniorMetalDetecting                   = lazy(() => import("./pages/tools/SeniorMetalDetecting"));
 const SeniorWoodCarving                      = lazy(() => import("./pages/tools/SeniorWoodCarving"));
@@ -6372,7 +6376,11 @@ const AppContent = () => {
           <Route path="/tools/senior-opentable" element={<SeniorOpenTable />} />
           <Route path="/tools/senior-tripadvisor" element={<SeniorTripAdvisor />} />
           <Route path="/tools/senior-waze" element={<SeniorWaze />} />
-          <Route path="/tools/senior-weather-apps" element={<SeniorWeatherApps />} />
+          <Route path="/tools/senior-ancestry-dna" element={<SeniorAncestryDNA />} />
+          <Route path="/tools/senior-familysearch" element={<SeniorFamilySearchOrg />} />
+          <Route path="/tools/senior-myheritage" element={<SeniorMyHeritage />} />
+          <Route path="/tools/senior-scrapbook-apps" element={<SeniorScrapbookApps />} />
+          <Route path="/tools/senior-old-photo-scanning" element={<SeniorOldPhotoScanning />} />
           <Route path="/tools/senior-amateur-radio" element={<SeniorAmateurRadio />} />
           <Route path="/tools/senior-metal-detecting" element={<SeniorMetalDetecting />} />
           <Route path="/tools/senior-wood-carving" element={<SeniorWoodCarving />} />
