@@ -2437,6 +2437,11 @@ const SeniorOfferUp                          = lazy(() => import("./pages/tools/
 const SeniorReceiptApps                      = lazy(() => import("./pages/tools/SeniorReceiptApps"));
 const SeniorWalmartApp                       = lazy(() => import("./pages/tools/SeniorWalmartApp"));
 const SeniorTargetApp                        = lazy(() => import("./pages/tools/SeniorTargetApp"));
+const SeniorMealPlanningApps                 = lazy(() => import("./pages/tools/SeniorMealPlanningApps"));
+const SeniorRecipeBox                        = lazy(() => import("./pages/tools/SeniorRecipeBox"));
+const SeniorKitchenScales                    = lazy(() => import("./pages/tools/SeniorKitchenScales"));
+const SeniorMyFitnessPal                     = lazy(() => import("./pages/tools/SeniorMyFitnessPal"));
+const SeniorGroceryListApps                  = lazy(() => import("./pages/tools/SeniorGroceryListApps"));
 
 // ── Cycle 195 (April 29 2026) — DIY home ──
 const BasicToolsForSeniors   = lazy(() => import("./pages/tools/BasicToolsForSeniors"));
@@ -5440,6 +5445,11 @@ const AppContent = () => {
           <Route path="/tools/senior-receipt-apps" element={<SeniorReceiptApps />} />
           <Route path="/tools/senior-walmart-app" element={<SeniorWalmartApp />} />
           <Route path="/tools/senior-target-app" element={<SeniorTargetApp />} />
+          <Route path="/tools/senior-meal-planning-apps" element={<SeniorMealPlanningApps />} />
+          <Route path="/tools/senior-recipe-box" element={<SeniorRecipeBox />} />
+          <Route path="/tools/senior-kitchen-scales" element={<SeniorKitchenScales />} />
+          <Route path="/tools/senior-myfitnesspal" element={<SeniorMyFitnessPal />} />
+          <Route path="/tools/senior-grocery-list-apps" element={<SeniorGroceryListApps />} />
           <Route path="/tools/basic-tools-for-seniors" element={<BasicToolsForSeniors />} />
           <Route path="/tools/painting-tips-seniors" element={<PaintingTipsSeniors />} />
           <Route path="/tools/caulking-basics" element={<CaulkingBasics />} />
