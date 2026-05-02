@@ -2924,6 +2924,10 @@ const SeniorMintAlternative                  = lazy(() => import("./pages/tools/
 const SeniorRetirementCalcs                  = lazy(() => import("./pages/tools/SeniorRetirementCalcs"));
 const SeniorEstatePlan                       = lazy(() => import("./pages/tools/SeniorEstatePlan"));
 const SeniorMedigapTools                     = lazy(() => import("./pages/tools/SeniorMedigapTools"));
+const SeniorEbird                            = lazy(() => import("./pages/tools/SeniorEbird"));
+const SeniorINaturalist                      = lazy(() => import("./pages/tools/SeniorINaturalist"));
+const SeniorPlantIdentify                    = lazy(() => import("./pages/tools/SeniorPlantIdentify"));
+const SeniorMushroomID                       = lazy(() => import("./pages/tools/SeniorMushroomID"));
 const SeniorAmateurRadio                     = lazy(() => import("./pages/tools/SeniorAmateurRadio"));
 const SeniorMetalDetecting                   = lazy(() => import("./pages/tools/SeniorMetalDetecting"));
 const SeniorWoodCarving                      = lazy(() => import("./pages/tools/SeniorWoodCarving"));
@@ -6419,6 +6423,10 @@ const AppContent = () => {
           <Route path="/tools/senior-retirement-calcs" element={<SeniorRetirementCalcs />} />
           <Route path="/tools/senior-estate-plan" element={<SeniorEstatePlan />} />
           <Route path="/tools/senior-medigap-tools" element={<SeniorMedigapTools />} />
+          <Route path="/tools/senior-ebird" element={<SeniorEbird />} />
+          <Route path="/tools/senior-inaturalist" element={<SeniorINaturalist />} />
+          <Route path="/tools/senior-plant-identify" element={<SeniorPlantIdentify />} />
+          <Route path="/tools/senior-mushroom-id" element={<SeniorMushroomID />} />
           <Route path="/tools/senior-amateur-radio" element={<SeniorAmateurRadio />} />
           <Route path="/tools/senior-metal-detecting" element={<SeniorMetalDetecting />} />
           <Route path="/tools/senior-wood-carving" element={<SeniorWoodCarving />} />
