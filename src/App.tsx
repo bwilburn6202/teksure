@@ -2735,6 +2735,11 @@ const SeniorVitalRecords                     = lazy(() => import("./pages/tools/
 const SeniorImportantDocs                    = lazy(() => import("./pages/tools/SeniorImportantDocs"));
 const SeniorPropertyDeeds                    = lazy(() => import("./pages/tools/SeniorPropertyDeeds"));
 const SeniorPasswordsForFamily               = lazy(() => import("./pages/tools/SeniorPasswordsForFamily"));
+const SeniorEmergencyTextLine                = lazy(() => import("./pages/tools/SeniorEmergencyTextLine"));
+const SeniorSatellitePhones                  = lazy(() => import("./pages/tools/SeniorSatellitePhones"));
+const SeniorEmergencyAlerts                  = lazy(() => import("./pages/tools/SeniorEmergencyAlerts"));
+const SeniorReadyApp                         = lazy(() => import("./pages/tools/SeniorReadyApp"));
+const SeniorEmergencyEmail                   = lazy(() => import("./pages/tools/SeniorEmergencyEmail"));
 
 // ── Cycle 195 (April 29 2026) — DIY home ──
 const BasicToolsForSeniors   = lazy(() => import("./pages/tools/BasicToolsForSeniors"));
@@ -6036,6 +6041,11 @@ const AppContent = () => {
           <Route path="/tools/senior-important-docs" element={<SeniorImportantDocs />} />
           <Route path="/tools/senior-property-deeds" element={<SeniorPropertyDeeds />} />
           <Route path="/tools/senior-passwords-for-family" element={<SeniorPasswordsForFamily />} />
+          <Route path="/tools/senior-emergency-text-line" element={<SeniorEmergencyTextLine />} />
+          <Route path="/tools/senior-satellite-phones" element={<SeniorSatellitePhones />} />
+          <Route path="/tools/senior-emergency-alerts" element={<SeniorEmergencyAlerts />} />
+          <Route path="/tools/senior-ready-app" element={<SeniorReadyApp />} />
+          <Route path="/tools/senior-emergency-email" element={<SeniorEmergencyEmail />} />
           <Route path="/tools/basic-tools-for-seniors" element={<BasicToolsForSeniors />} />
           <Route path="/tools/painting-tips-seniors" element={<PaintingTipsSeniors />} />
           <Route path="/tools/caulking-basics" element={<CaulkingBasics />} />
