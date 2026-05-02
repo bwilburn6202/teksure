@@ -2314,6 +2314,11 @@ const SeniorAndroidAccessibility             = lazy(() => import("./pages/tools/
 const SeniorBeMyEyes                         = lazy(() => import("./pages/tools/SeniorBeMyEyes"));
 const SeniorVoiceTextSeniors                 = lazy(() => import("./pages/tools/SeniorVoiceTextSeniors"));
 const SeniorDarkModeBasics                   = lazy(() => import("./pages/tools/SeniorDarkModeBasics"));
+const SeniorPetCameras                       = lazy(() => import("./pages/tools/SeniorPetCameras"));
+const SeniorPetTrackingGPS                   = lazy(() => import("./pages/tools/SeniorPetTrackingGPS"));
+const SeniorChewyApp                         = lazy(() => import("./pages/tools/SeniorChewyApp"));
+const SeniorTelevet                          = lazy(() => import("./pages/tools/SeniorTelevet"));
+const SeniorAutoFeeders                      = lazy(() => import("./pages/tools/SeniorAutoFeeders"));
 
 // ── Cycle 195 (April 29 2026) — DIY home ──
 const BasicToolsForSeniors   = lazy(() => import("./pages/tools/BasicToolsForSeniors"));
@@ -5194,6 +5199,11 @@ const AppContent = () => {
           <Route path="/tools/senior-be-my-eyes" element={<SeniorBeMyEyes />} />
           <Route path="/tools/senior-voice-typing" element={<SeniorVoiceTextSeniors />} />
           <Route path="/tools/senior-dark-mode-basics" element={<SeniorDarkModeBasics />} />
+          <Route path="/tools/senior-pet-cameras" element={<SeniorPetCameras />} />
+          <Route path="/tools/senior-pet-tracking-gps" element={<SeniorPetTrackingGPS />} />
+          <Route path="/tools/senior-chewy-app" element={<SeniorChewyApp />} />
+          <Route path="/tools/senior-televet" element={<SeniorTelevet />} />
+          <Route path="/tools/senior-auto-feeders" element={<SeniorAutoFeeders />} />
           <Route path="/tools/basic-tools-for-seniors" element={<BasicToolsForSeniors />} />
           <Route path="/tools/painting-tips-seniors" element={<PaintingTipsSeniors />} />
           <Route path="/tools/caulking-basics" element={<CaulkingBasics />} />
