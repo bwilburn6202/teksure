@@ -2745,6 +2745,11 @@ const SeniorPhotoRestoration                 = lazy(() => import("./pages/tools/
 const SeniorVideoMaking                      = lazy(() => import("./pages/tools/SeniorVideoMaking"));
 const SeniorPhotoFraming                     = lazy(() => import("./pages/tools/SeniorPhotoFraming"));
 const SeniorPhotoSlideshow                   = lazy(() => import("./pages/tools/SeniorPhotoSlideshow"));
+const SeniorPlantSensors                     = lazy(() => import("./pages/tools/SeniorPlantSensors"));
+const SeniorRaisedBeds                       = lazy(() => import("./pages/tools/SeniorRaisedBeds"));
+const SeniorSeedlingApps                     = lazy(() => import("./pages/tools/SeniorSeedlingApps"));
+const SeniorPestControl                      = lazy(() => import("./pages/tools/SeniorPestControl"));
+const SeniorComposting2                      = lazy(() => import("./pages/tools/SeniorComposting2"));
 
 // ── Cycle 195 (April 29 2026) — DIY home ──
 const BasicToolsForSeniors   = lazy(() => import("./pages/tools/BasicToolsForSeniors"));
@@ -6056,6 +6061,11 @@ const AppContent = () => {
           <Route path="/tools/senior-video-making" element={<SeniorVideoMaking />} />
           <Route path="/tools/senior-photo-framing" element={<SeniorPhotoFraming />} />
           <Route path="/tools/senior-photo-slideshow" element={<SeniorPhotoSlideshow />} />
+          <Route path="/tools/senior-plant-sensors" element={<SeniorPlantSensors />} />
+          <Route path="/tools/senior-raised-beds" element={<SeniorRaisedBeds />} />
+          <Route path="/tools/senior-seedling-apps" element={<SeniorSeedlingApps />} />
+          <Route path="/tools/senior-pest-control" element={<SeniorPestControl />} />
+          <Route path="/tools/senior-composting-easy" element={<SeniorComposting2 />} />
           <Route path="/tools/basic-tools-for-seniors" element={<BasicToolsForSeniors />} />
           <Route path="/tools/painting-tips-seniors" element={<PaintingTipsSeniors />} />
           <Route path="/tools/caulking-basics" element={<CaulkingBasics />} />
