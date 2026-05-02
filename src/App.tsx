@@ -2362,6 +2362,11 @@ const SeniorMemoryAids                       = lazy(() => import("./pages/tools/
 const SeniorMeetupGroups                     = lazy(() => import("./pages/tools/SeniorMeetupGroups"));
 const SeniorVolunteering                     = lazy(() => import("./pages/tools/SeniorVolunteering"));
 const SeniorClassmates                       = lazy(() => import("./pages/tools/SeniorClassmates"));
+const SeniorEReaders                         = lazy(() => import("./pages/tools/SeniorEReaders"));
+const SeniorMagnifierApps                    = lazy(() => import("./pages/tools/SeniorMagnifierApps"));
+const SeniorVisionTesting                    = lazy(() => import("./pages/tools/SeniorVisionTesting"));
+const SeniorOnlineGlasses                    = lazy(() => import("./pages/tools/SeniorOnlineGlasses"));
+const SeniorSeeingAIApp                      = lazy(() => import("./pages/tools/SeniorSeeingAIApp"));
 
 // ── Cycle 195 (April 29 2026) — DIY home ──
 const BasicToolsForSeniors   = lazy(() => import("./pages/tools/BasicToolsForSeniors"));
@@ -5290,6 +5295,11 @@ const AppContent = () => {
           <Route path="/tools/senior-meetup-groups" element={<SeniorMeetupGroups />} />
           <Route path="/tools/senior-volunteering" element={<SeniorVolunteering />} />
           <Route path="/tools/senior-classmates" element={<SeniorClassmates />} />
+          <Route path="/tools/senior-e-readers" element={<SeniorEReaders />} />
+          <Route path="/tools/senior-magnifier-apps" element={<SeniorMagnifierApps />} />
+          <Route path="/tools/senior-vision-testing" element={<SeniorVisionTesting />} />
+          <Route path="/tools/senior-online-glasses" element={<SeniorOnlineGlasses />} />
+          <Route path="/tools/senior-seeing-ai-app" element={<SeniorSeeingAIApp />} />
           <Route path="/tools/basic-tools-for-seniors" element={<BasicToolsForSeniors />} />
           <Route path="/tools/painting-tips-seniors" element={<PaintingTipsSeniors />} />
           <Route path="/tools/caulking-basics" element={<CaulkingBasics />} />
