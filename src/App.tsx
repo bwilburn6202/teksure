@@ -2427,6 +2427,11 @@ const SeniorVoiceMemo                        = lazy(() => import("./pages/tools/
 const SeniorBigKeyboards                     = lazy(() => import("./pages/tools/SeniorBigKeyboards"));
 const SeniorScreenReaders                    = lazy(() => import("./pages/tools/SeniorScreenReaders"));
 const SeniorOneHandedKeyboard                = lazy(() => import("./pages/tools/SeniorOneHandedKeyboard"));
+const SeniorWeatherApps                      = lazy(() => import("./pages/tools/SeniorWeatherApps"));
+const SeniorNewsApps                         = lazy(() => import("./pages/tools/SeniorNewsApps"));
+const SeniorPodcastApps                      = lazy(() => import("./pages/tools/SeniorPodcastApps"));
+const SeniorTrafficApps                      = lazy(() => import("./pages/tools/SeniorTrafficApps"));
+const SeniorRSSReaders                       = lazy(() => import("./pages/tools/SeniorRSSReaders"));
 
 // ── Cycle 195 (April 29 2026) — DIY home ──
 const BasicToolsForSeniors   = lazy(() => import("./pages/tools/BasicToolsForSeniors"));
@@ -5420,6 +5425,11 @@ const AppContent = () => {
           <Route path="/tools/senior-big-keyboards" element={<SeniorBigKeyboards />} />
           <Route path="/tools/senior-screen-readers" element={<SeniorScreenReaders />} />
           <Route path="/tools/senior-one-handed-keyboard" element={<SeniorOneHandedKeyboard />} />
+          <Route path="/tools/senior-weather-apps" element={<SeniorWeatherApps />} />
+          <Route path="/tools/senior-news-apps" element={<SeniorNewsApps />} />
+          <Route path="/tools/senior-podcast-apps" element={<SeniorPodcastApps />} />
+          <Route path="/tools/senior-traffic-apps" element={<SeniorTrafficApps />} />
+          <Route path="/tools/senior-rss-readers" element={<SeniorRSSReaders />} />
           <Route path="/tools/basic-tools-for-seniors" element={<BasicToolsForSeniors />} />
           <Route path="/tools/painting-tips-seniors" element={<PaintingTipsSeniors />} />
           <Route path="/tools/caulking-basics" element={<CaulkingBasics />} />
