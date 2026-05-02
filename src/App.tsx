@@ -2979,6 +2979,11 @@ const SeniorBigCalcApps2                     = lazy(() => import("./pages/tools/
 const SeniorTechHelpResources                = lazy(() => import("./pages/tools/SeniorTechHelpResources"));
 const SeniorCloudStoragePicker               = lazy(() => import("./pages/tools/SeniorCloudStoragePicker"));
 const SeniorCheatSheet                       = lazy(() => import("./pages/tools/SeniorCheatSheet"));
+const SeniorTextToTV                         = lazy(() => import("./pages/tools/SeniorTextToTV"));
+const SeniorRecyclingApps                    = lazy(() => import("./pages/tools/SeniorRecyclingApps"));
+const SeniorWeatherAlerts                    = lazy(() => import("./pages/tools/SeniorWeatherAlerts"));
+const SeniorPowerOutageApps                  = lazy(() => import("./pages/tools/SeniorPowerOutageApps"));
+const SeniorEmergencyKitDigital              = lazy(() => import("./pages/tools/SeniorEmergencyKitDigital"));
 const SeniorAmateurRadio                     = lazy(() => import("./pages/tools/SeniorAmateurRadio"));
 const SeniorMetalDetecting                   = lazy(() => import("./pages/tools/SeniorMetalDetecting"));
 const SeniorWoodCarving                      = lazy(() => import("./pages/tools/SeniorWoodCarving"));
@@ -6529,6 +6534,11 @@ const AppContent = () => {
           <Route path="/tools/senior-tech-help-resources" element={<SeniorTechHelpResources />} />
           <Route path="/tools/senior-cloud-storage-picker" element={<SeniorCloudStoragePicker />} />
           <Route path="/tools/senior-cheat-sheet" element={<SeniorCheatSheet />} />
+          <Route path="/tools/senior-text-to-tv" element={<SeniorTextToTV />} />
+          <Route path="/tools/senior-recycling-apps" element={<SeniorRecyclingApps />} />
+          <Route path="/tools/senior-weather-alerts" element={<SeniorWeatherAlerts />} />
+          <Route path="/tools/senior-power-outage-apps" element={<SeniorPowerOutageApps />} />
+          <Route path="/tools/senior-emergency-kit-digital" element={<SeniorEmergencyKitDigital />} />
           <Route path="/tools/senior-amateur-radio" element={<SeniorAmateurRadio />} />
           <Route path="/tools/senior-metal-detecting" element={<SeniorMetalDetecting />} />
           <Route path="/tools/senior-wood-carving" element={<SeniorWoodCarving />} />
