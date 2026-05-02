@@ -2795,6 +2795,11 @@ const SeniorAndroidContacts                  = lazy(() => import("./pages/tools/
 const SeniorAndroidCamera                    = lazy(() => import("./pages/tools/SeniorAndroidCamera"));
 const SeniorAndroidMaps                      = lazy(() => import("./pages/tools/SeniorAndroidMaps"));
 const SeniorAndroidCalendar                  = lazy(() => import("./pages/tools/SeniorAndroidCalendar"));
+const SeniorAndroidVoiceTyping               = lazy(() => import("./pages/tools/SeniorAndroidVoiceTyping"));
+const SeniorAndroidLockScreen                = lazy(() => import("./pages/tools/SeniorAndroidLockScreen"));
+const SeniorAndroidUpdates                   = lazy(() => import("./pages/tools/SeniorAndroidUpdates"));
+const SeniorAndroidBackup                    = lazy(() => import("./pages/tools/SeniorAndroidBackup"));
+const SeniorAndroidStorage                   = lazy(() => import("./pages/tools/SeniorAndroidStorage"));
 const SeniorAmateurRadio                     = lazy(() => import("./pages/tools/SeniorAmateurRadio"));
 const SeniorMetalDetecting                   = lazy(() => import("./pages/tools/SeniorMetalDetecting"));
 const SeniorWoodCarving                      = lazy(() => import("./pages/tools/SeniorWoodCarving"));
@@ -6161,6 +6166,11 @@ const AppContent = () => {
           <Route path="/tools/senior-android-camera" element={<SeniorAndroidCamera />} />
           <Route path="/tools/senior-android-maps" element={<SeniorAndroidMaps />} />
           <Route path="/tools/senior-android-calendar" element={<SeniorAndroidCalendar />} />
+          <Route path="/tools/senior-android-voice-typing" element={<SeniorAndroidVoiceTyping />} />
+          <Route path="/tools/senior-android-lock-screen" element={<SeniorAndroidLockScreen />} />
+          <Route path="/tools/senior-android-updates" element={<SeniorAndroidUpdates />} />
+          <Route path="/tools/senior-android-backup" element={<SeniorAndroidBackup />} />
+          <Route path="/tools/senior-android-storage" element={<SeniorAndroidStorage />} />
           <Route path="/tools/senior-amateur-radio" element={<SeniorAmateurRadio />} />
           <Route path="/tools/senior-metal-detecting" element={<SeniorMetalDetecting />} />
           <Route path="/tools/senior-wood-carving" element={<SeniorWoodCarving />} />
