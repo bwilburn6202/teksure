@@ -2705,6 +2705,11 @@ const SeniorAnxietyApps                      = lazy(() => import("./pages/tools/
 const SeniorDepressionApps                   = lazy(() => import("./pages/tools/SeniorDepressionApps"));
 const SeniorGriefSupport                     = lazy(() => import("./pages/tools/SeniorGriefSupport"));
 const SeniorJournalingApps                   = lazy(() => import("./pages/tools/SeniorJournalingApps"));
+const SeniorMemoryGames                      = lazy(() => import("./pages/tools/SeniorMemoryGames"));
+const SeniorMathGames                        = lazy(() => import("./pages/tools/SeniorMathGames"));
+const SeniorWordGames                        = lazy(() => import("./pages/tools/SeniorWordGames"));
+const SeniorPatternGames                     = lazy(() => import("./pages/tools/SeniorPatternGames"));
+const SeniorVisualMemory                     = lazy(() => import("./pages/tools/SeniorVisualMemory"));
 
 // ── Cycle 195 (April 29 2026) — DIY home ──
 const BasicToolsForSeniors   = lazy(() => import("./pages/tools/BasicToolsForSeniors"));
@@ -5976,6 +5981,11 @@ const AppContent = () => {
           <Route path="/tools/senior-depression-apps" element={<SeniorDepressionApps />} />
           <Route path="/tools/senior-grief-support" element={<SeniorGriefSupport />} />
           <Route path="/tools/senior-journaling-apps" element={<SeniorJournalingApps />} />
+          <Route path="/tools/senior-memory-games" element={<SeniorMemoryGames />} />
+          <Route path="/tools/senior-math-games" element={<SeniorMathGames />} />
+          <Route path="/tools/senior-word-games" element={<SeniorWordGames />} />
+          <Route path="/tools/senior-pattern-games" element={<SeniorPatternGames />} />
+          <Route path="/tools/senior-visual-memory" element={<SeniorVisualMemory />} />
           <Route path="/tools/basic-tools-for-seniors" element={<BasicToolsForSeniors />} />
           <Route path="/tools/painting-tips-seniors" element={<PaintingTipsSeniors />} />
           <Route path="/tools/caulking-basics" element={<CaulkingBasics />} />
