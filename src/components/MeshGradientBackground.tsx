@@ -4,10 +4,13 @@ import { useEffect, useRef } from 'react';
  * Interactive motion mesh gradient — site-wide animated wallpaper.
  *
  * Renders a soft, large-blob mesh that drifts on its own, gravitates
- * toward the cursor, and emits a colored ripple when you click. Light
- * mode uses warm pastels (sky, coral, lavender, mint, butter, rose,
- * periwinkle) on the cream surface; dark mode uses electric blue,
- * indigo, violet, teal and magenta on navy.
+ * toward the cursor, and emits a colored ripple when you click.
+ *
+ * Both palettes pull from Origin's "Midnight Command Center" system:
+ *   - Dark: Midnight Ink base (#0f1011), with Violet Haze, Ocean Glimmer,
+ *     Soft Rose, Deep Indigo, Sky Tint, and Deep Sea blobs.
+ *   - Light: Faded Mist base (#f5f5f7), with the same hues at higher
+ *     lightness so they read as soft pastels.
  *
  * Mounted once at the root of AppShell so every route shares the same
  * wallpaper. The canvas is fixed, behind page content, and ignores
@@ -62,26 +65,28 @@ export function MeshGradientBackground() {
 
     const buildBlobs = (): Blob[] => {
       const dark = isDark();
-      // Light: friendly pastel mesh on warm cream
-      // Dark: electric mesh on navy (matches the screenshot vibe)
+      // Origin "Midnight Command Center" palette in both modes.
+      // Dark: vibrant blobs on Midnight Ink so the mesh reads as a glowing
+      // command-center wallpaper. Light: same hues at higher lightness so
+      // they sit as pastels on Faded Mist without overpowering content.
       const palette = dark
         ? [
-            { hue: 220, sat: 90, light: 55, alpha: 0.42 }, // electric blue
-            { hue: 250, sat: 75, light: 50, alpha: 0.36 }, // indigo
-            { hue: 285, sat: 70, light: 50, alpha: 0.30 }, // violet
-            { hue: 195, sat: 90, light: 55, alpha: 0.30 }, // cyan
-            { hue: 320, sat: 70, light: 55, alpha: 0.26 }, // magenta
-            { hue: 215, sat: 85, light: 60, alpha: 0.32 }, // sky
-            { hue: 260, sat: 80, light: 60, alpha: 0.24 }, // royal purple
+            { hue: 243, sat: 100, light: 70, alpha: 0.42 }, // Violet Haze
+            { hue: 192, sat: 100, light: 50, alpha: 0.36 }, // Ocean Glimmer
+            { hue: 304, sat:  60, light: 65, alpha: 0.30 }, // Soft Rose
+            { hue: 241, sat:  50, light: 50, alpha: 0.32 }, // Deep Indigo
+            { hue: 213, sat:  76, light: 70, alpha: 0.28 }, // Sky Tint
+            { hue: 248, sat: 100, light: 80, alpha: 0.24 }, // Lavender Mist
+            { hue: 208, sat:  71, light: 45, alpha: 0.26 }, // Deep Sea
           ]
         : [
-            { hue: 210, sat: 85, light: 70, alpha: 0.30 }, // sky blue
-            { hue: 18,  sat: 90, light: 72, alpha: 0.22 }, // coral
-            { hue: 270, sat: 70, light: 78, alpha: 0.24 }, // lavender
-            { hue: 160, sat: 65, light: 72, alpha: 0.22 }, // mint
-            { hue: 45,  sat: 95, light: 78, alpha: 0.22 }, // butter
-            { hue: 340, sat: 75, light: 80, alpha: 0.20 }, // rose
-            { hue: 230, sat: 75, light: 78, alpha: 0.24 }, // periwinkle
+            { hue: 243, sat: 100, light: 80, alpha: 0.26 }, // Violet Haze pastel
+            { hue: 192, sat: 100, light: 70, alpha: 0.22 }, // Ocean Glimmer pastel
+            { hue: 304, sat:  56, light: 80, alpha: 0.22 }, // Soft Rose pastel
+            { hue: 241, sat:  50, light: 75, alpha: 0.22 }, // Deep Indigo pastel
+            { hue: 213, sat:  76, light: 82, alpha: 0.22 }, // Sky Tint
+            { hue: 248, sat: 100, light: 90, alpha: 0.20 }, // Lavender Mist
+            { hue: 208, sat:  71, light: 75, alpha: 0.20 }, // Deep Sea pastel
           ];
 
       return palette.map((p, i) => ({
@@ -123,8 +128,9 @@ export function MeshGradientBackground() {
       last = now;
       const dark = isDark();
 
-      // Base wash — matches the body fallback color so no flash on resize
-      ctx.fillStyle = dark ? '#050D1F' : '#FCFBF9';
+      // Base wash — Origin Midnight Ink in dark, Faded Mist in light.
+      // Matches the body fallback color so no flash on resize.
+      ctx.fillStyle = dark ? '#0f1011' : '#f5f5f7';
       ctx.fillRect(0, 0, W, H);
 
       const minDim = Math.min(W, H);
@@ -203,9 +209,9 @@ export function MeshGradientBackground() {
       mouse.active = false;
     };
     const onPointerDown = (e: PointerEvent) => {
-      // Cycle ripple hues so repeated clicks feel varied
-      const dark = isDark();
-      const hues = dark ? [215, 250, 285, 195, 320] : [210, 18, 270, 160, 340];
+      // Cycle ripple hues across Origin's accent palette so repeated
+      // clicks feel varied while staying inside the brand system.
+      const hues = [243, 192, 304, 241, 213, 208]; // Violet, Ocean, Rose, Indigo, Sky, Deep Sea
       const hue = hues[ripples.length % hues.length];
       ripples.push({ x: e.clientX, y: e.clientY, t: 0, max: 1100, hue });
       if (ripples.length > 6) ripples.shift();
