@@ -2857,7 +2857,11 @@ const SeniorBankAlerts                       = lazy(() => import("./pages/tools/
 const SeniorVenmo                            = lazy(() => import("./pages/tools/SeniorVenmo"));
 const SeniorZelle                            = lazy(() => import("./pages/tools/SeniorZelle"));
 const SeniorPayPal                           = lazy(() => import("./pages/tools/SeniorPayPal"));
-const SeniorBudgetingApps                    = lazy(() => import("./pages/tools/SeniorBudgetingApps"));
+const SeniorChatGPT                          = lazy(() => import("./pages/tools/SeniorChatGPT"));
+const SeniorGoogleGemini                     = lazy(() => import("./pages/tools/SeniorGoogleGemini"));
+const SeniorAppleIntelligence                = lazy(() => import("./pages/tools/SeniorAppleIntelligence"));
+const SeniorAITranslation                    = lazy(() => import("./pages/tools/SeniorAITranslation"));
+const SeniorAIPhotoTools                     = lazy(() => import("./pages/tools/SeniorAIPhotoTools"));
 const SeniorAmateurRadio                     = lazy(() => import("./pages/tools/SeniorAmateurRadio"));
 const SeniorMetalDetecting                   = lazy(() => import("./pages/tools/SeniorMetalDetecting"));
 const SeniorWoodCarving                      = lazy(() => import("./pages/tools/SeniorWoodCarving"));
@@ -6286,7 +6290,11 @@ const AppContent = () => {
           <Route path="/tools/senior-venmo" element={<SeniorVenmo />} />
           <Route path="/tools/senior-zelle" element={<SeniorZelle />} />
           <Route path="/tools/senior-paypal" element={<SeniorPayPal />} />
-          <Route path="/tools/senior-budgeting-apps" element={<SeniorBudgetingApps />} />
+          <Route path="/tools/senior-chatgpt" element={<SeniorChatGPT />} />
+          <Route path="/tools/senior-google-gemini" element={<SeniorGoogleGemini />} />
+          <Route path="/tools/senior-apple-intelligence" element={<SeniorAppleIntelligence />} />
+          <Route path="/tools/senior-ai-translation" element={<SeniorAITranslation />} />
+          <Route path="/tools/senior-ai-photo-tools" element={<SeniorAIPhotoTools />} />
           <Route path="/tools/senior-amateur-radio" element={<SeniorAmateurRadio />} />
           <Route path="/tools/senior-metal-detecting" element={<SeniorMetalDetecting />} />
           <Route path="/tools/senior-wood-carving" element={<SeniorWoodCarving />} />
