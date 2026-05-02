@@ -21,6 +21,14 @@ const buttonVariants = cva(
           "rounded-xl hover:bg-muted hover:text-foreground",
         link:
           "text-primary underline-offset-4 hover:underline",
+        // Origin "Primary Ghost Button" — 8px radius, transparent, subtle border,
+        // ghost-white text. Use on dark hero sections for the secondary CTA.
+        "origin-ghost":
+          "rounded-origin-btn border border-foreground/20 bg-transparent text-foreground hover:bg-foreground/8 dark:border-white/20 dark:text-white dark:hover:bg-white/8",
+        // Origin "Light Filled Button" — white bg, slate text, 8px radius.
+        // Use as the primary CTA on dark backgrounds where strong contrast matters.
+        "origin-filled":
+          "rounded-origin-btn bg-origin-ghost text-origin-slate hover:opacity-90 hover:-translate-y-0.5",
       },
       size: {
         default: "h-11 px-6 py-2",
