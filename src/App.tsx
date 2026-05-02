@@ -2829,7 +2829,11 @@ const SeniorPasswordManagers                 = lazy(() => import("./pages/tools/
 const SeniorTwoFactorAuth                    = lazy(() => import("./pages/tools/SeniorTwoFactorAuth"));
 const SeniorVPN                              = lazy(() => import("./pages/tools/SeniorVPN"));
 const SeniorPhishingDefense                  = lazy(() => import("./pages/tools/SeniorPhishingDefense"));
-const SeniorRobocallBlock                    = lazy(() => import("./pages/tools/SeniorRobocallBlock"));
+const SeniorMedicareApp                      = lazy(() => import("./pages/tools/SeniorMedicareApp"));
+const SeniorSocialSecurityApp                = lazy(() => import("./pages/tools/SeniorSocialSecurityApp"));
+const SeniorIRSApp                           = lazy(() => import("./pages/tools/SeniorIRSApp"));
+const SeniorVAApp                            = lazy(() => import("./pages/tools/SeniorVAApp"));
+const SeniorAARPDigital                      = lazy(() => import("./pages/tools/SeniorAARPDigital"));
 const SeniorAmateurRadio                     = lazy(() => import("./pages/tools/SeniorAmateurRadio"));
 const SeniorMetalDetecting                   = lazy(() => import("./pages/tools/SeniorMetalDetecting"));
 const SeniorWoodCarving                      = lazy(() => import("./pages/tools/SeniorWoodCarving"));
@@ -6230,7 +6234,11 @@ const AppContent = () => {
           <Route path="/tools/senior-two-factor-auth" element={<SeniorTwoFactorAuth />} />
           <Route path="/tools/senior-vpn" element={<SeniorVPN />} />
           <Route path="/tools/senior-phishing-defense" element={<SeniorPhishingDefense />} />
-          <Route path="/tools/senior-robocall-block" element={<SeniorRobocallBlock />} />
+          <Route path="/tools/senior-medicare-app" element={<SeniorMedicareApp />} />
+          <Route path="/tools/senior-social-security-app" element={<SeniorSocialSecurityApp />} />
+          <Route path="/tools/senior-irs-app" element={<SeniorIRSApp />} />
+          <Route path="/tools/senior-va-app" element={<SeniorVAApp />} />
+          <Route path="/tools/senior-aarp-digital" element={<SeniorAARPDigital />} />
           <Route path="/tools/senior-amateur-radio" element={<SeniorAmateurRadio />} />
           <Route path="/tools/senior-metal-detecting" element={<SeniorMetalDetecting />} />
           <Route path="/tools/senior-wood-carving" element={<SeniorWoodCarving />} />
