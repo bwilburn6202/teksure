@@ -2867,6 +2867,11 @@ const SeniorNestThermostat                   = lazy(() => import("./pages/tools/
 const SeniorAlexaBasics                      = lazy(() => import("./pages/tools/SeniorAlexaBasics"));
 const SeniorGoogleHomeBasics                 = lazy(() => import("./pages/tools/SeniorGoogleHomeBasics"));
 const SeniorSmartLights                      = lazy(() => import("./pages/tools/SeniorSmartLights"));
+const SeniorAirTags                          = lazy(() => import("./pages/tools/SeniorAirTags"));
+const SeniorTileTrackers                     = lazy(() => import("./pages/tools/SeniorTileTrackers"));
+const SeniorMedicalAlertWatches              = lazy(() => import("./pages/tools/SeniorMedicalAlertWatches"));
+const SeniorHearingAidsBluetooth             = lazy(() => import("./pages/tools/SeniorHearingAidsBluetooth"));
+const SeniorMedicalIDLockScreen              = lazy(() => import("./pages/tools/SeniorMedicalIDLockScreen"));
 const SeniorAmateurRadio                     = lazy(() => import("./pages/tools/SeniorAmateurRadio"));
 const SeniorMetalDetecting                   = lazy(() => import("./pages/tools/SeniorMetalDetecting"));
 const SeniorWoodCarving                      = lazy(() => import("./pages/tools/SeniorWoodCarving"));
@@ -6305,6 +6310,11 @@ const AppContent = () => {
           <Route path="/tools/senior-alexa-basics" element={<SeniorAlexaBasics />} />
           <Route path="/tools/senior-google-home-basics" element={<SeniorGoogleHomeBasics />} />
           <Route path="/tools/senior-smart-lights" element={<SeniorSmartLights />} />
+          <Route path="/tools/senior-airtags" element={<SeniorAirTags />} />
+          <Route path="/tools/senior-tile-trackers" element={<SeniorTileTrackers />} />
+          <Route path="/tools/senior-medical-alert-watches" element={<SeniorMedicalAlertWatches />} />
+          <Route path="/tools/senior-hearing-aids-bluetooth" element={<SeniorHearingAidsBluetooth />} />
+          <Route path="/tools/senior-medical-id-lock-screen" element={<SeniorMedicalIDLockScreen />} />
           <Route path="/tools/senior-amateur-radio" element={<SeniorAmateurRadio />} />
           <Route path="/tools/senior-metal-detecting" element={<SeniorMetalDetecting />} />
           <Route path="/tools/senior-wood-carving" element={<SeniorWoodCarving />} />
