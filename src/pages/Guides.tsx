@@ -228,7 +228,17 @@ function GuidesEmptyState({
         </button>
       </div>
     );
+  }
+  return null;
+}
+
+function pickGuide(opts: { slug?: string; keywords?: string[]; category?: GuideCategory }): Guide | undefined {
+  if (opts.slug) {
+    const strict = guides.find(g => g.slug === opts.slug);
     if (strict) return strict;
+  }
+  if (opts.keywords?.length) {
+    const kws = opts.keywords.map(k => k.toLowerCase());
     const loose = guides.find(g =>
       kws.some(k =>
         g.slug.includes(k) ||
