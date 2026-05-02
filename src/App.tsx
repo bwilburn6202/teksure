@@ -2871,7 +2871,11 @@ const SeniorAirTags                          = lazy(() => import("./pages/tools/
 const SeniorTileTrackers                     = lazy(() => import("./pages/tools/SeniorTileTrackers"));
 const SeniorMedicalAlertWatches              = lazy(() => import("./pages/tools/SeniorMedicalAlertWatches"));
 const SeniorHearingAidsBluetooth             = lazy(() => import("./pages/tools/SeniorHearingAidsBluetooth"));
-const SeniorMedicalIDLockScreen              = lazy(() => import("./pages/tools/SeniorMedicalIDLockScreen"));
+const SeniorAppleWatch                       = lazy(() => import("./pages/tools/SeniorAppleWatch"));
+const SeniorFitbitBasics                     = lazy(() => import("./pages/tools/SeniorFitbitBasics"));
+const SeniorGarminBasics                     = lazy(() => import("./pages/tools/SeniorGarminBasics"));
+const SeniorOuraRing                         = lazy(() => import("./pages/tools/SeniorOuraRing"));
+const SeniorCGMSensor                        = lazy(() => import("./pages/tools/SeniorCGMSensor"));
 const SeniorAmateurRadio                     = lazy(() => import("./pages/tools/SeniorAmateurRadio"));
 const SeniorMetalDetecting                   = lazy(() => import("./pages/tools/SeniorMetalDetecting"));
 const SeniorWoodCarving                      = lazy(() => import("./pages/tools/SeniorWoodCarving"));
@@ -6314,7 +6318,11 @@ const AppContent = () => {
           <Route path="/tools/senior-tile-trackers" element={<SeniorTileTrackers />} />
           <Route path="/tools/senior-medical-alert-watches" element={<SeniorMedicalAlertWatches />} />
           <Route path="/tools/senior-hearing-aids-bluetooth" element={<SeniorHearingAidsBluetooth />} />
-          <Route path="/tools/senior-medical-id-lock-screen" element={<SeniorMedicalIDLockScreen />} />
+          <Route path="/tools/senior-apple-watch" element={<SeniorAppleWatch />} />
+          <Route path="/tools/senior-fitbit-basics" element={<SeniorFitbitBasics />} />
+          <Route path="/tools/senior-garmin-basics" element={<SeniorGarminBasics />} />
+          <Route path="/tools/senior-oura-ring" element={<SeniorOuraRing />} />
+          <Route path="/tools/senior-cgm-sensor" element={<SeniorCGMSensor />} />
           <Route path="/tools/senior-amateur-radio" element={<SeniorAmateurRadio />} />
           <Route path="/tools/senior-metal-detecting" element={<SeniorMetalDetecting />} />
           <Route path="/tools/senior-wood-carving" element={<SeniorWoodCarving />} />
