@@ -7,22 +7,22 @@ import { Circle } from 'lucide-react';
 export default function SeniorOuraRing() {
   return (
     <div className="min-h-screen flex flex-col bg-background">
-      <SEOHead title="Oura Ring for Seniors — TekSure" description="Oura Ring tracks sleep, heart, and recovery for seniors who don't like watches." />
+      <SEOHead title="Oura Ring for Seniors — Senior Guide" description="Use the Oura Ring to track sleep and health." />
       <Navbar />
       <main className="flex-1 container mx-auto px-4 py-10 max-w-3xl">
         <div className="text-center mb-8">
           <Circle className="w-14 h-14 text-primary mx-auto mb-3" />
-          <h1 className="text-4xl font-bold mb-2">Oura Ring for Seniors</h1>
-          <p className="text-lg text-muted-foreground">A health tracker on your finger.</p>
+          <h1 className="text-4xl font-bold mb-2">Oura Ring</h1>
+          <p className="text-lg text-muted-foreground">Health tracking on your finger.</p>
         </div>
         <div className="space-y-4">
-          <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Cost</h2><p>$300 ring + $6/month subscription. Premium feature unlocks reports.</p></CardContent></Card>
-          <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Why a ring</h2><p>Smaller. No screen distractions. 5-7 day battery. Wear 24/7.</p></CardContent></Card>
-          <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Tracks</h2><ul className="list-disc pl-5 space-y-1 text-sm"><li>Heart rate</li><li>Sleep stages</li><li>Body temperature</li><li>Stress levels</li><li>Activity</li></ul></CardContent></Card>
-          <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Sizing</h2><p>Free sizing kit before buying. Wear different rings for a few days to find fit.</p></CardContent></Card>
-          <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Health insights</h2><p>App spots illness coming based on temperature/heart trends. Helps with meds and rest.</p></CardContent></Card>
-          <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Alternatives</h2><p>Ultrahuman Ring ($349, no subscription). Samsung Galaxy Ring ($400).</p></CardContent></Card>
-          <Card className="bg-muted/40"><CardContent className="pt-6"><p className="text-sm">Quick Tip: Wear ring on non-dominant hand. Less interference with daily activities.</p></CardContent></Card>
+          <Card><CardContent className="p-6"><h2 className="text-xl font-semibold mb-2">1. What it is</h2><p>Smart ring that tracks sleep, heart rate, body temperature, activity. Worn 24/7.</p></CardContent></Card>
+          <Card><CardContent className="p-6"><h2 className="text-xl font-semibold mb-2">2. Cost</h2><p>$300-500 ring. $70/year membership for full data and insights.</p></CardContent></Card>
+          <Card><CardContent className="p-6"><h2 className="text-xl font-semibold mb-2">3. Get sized</h2><p>Free sizing kit. Wear plastic ring before ordering. Right size matters.</p></CardContent></Card>
+          <Card><CardContent className="p-6"><h2 className="text-xl font-semibold mb-2">4. Sleep score</h2><p>Each morning see a 0-100 score. Helps spot when sleep is too short or restless.</p></CardContent></Card>
+          <Card><CardContent className="p-6"><h2 className="text-xl font-semibold mb-2">5. Daytime readiness</h2><p>App suggests if you should rest or push hard. Helps avoid overdoing it.</p></CardContent></Card>
+          <Card><CardContent className="p-6"><h2 className="text-xl font-semibold mb-2">6. Battery</h2><p>5-7 days per charge. Tiny charger sits on a desk.</p></CardContent></Card>
+          <Card className="bg-muted/40"><CardContent className="p-6"><p>Comfortable to sleep in. Some find it more useful than a watch — no screen distractions.</p></CardContent></Card>
         </div>
       </main>
       <Footer />
