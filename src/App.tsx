@@ -2432,6 +2432,11 @@ const SeniorNewsApps                         = lazy(() => import("./pages/tools/
 const SeniorPodcastApps                      = lazy(() => import("./pages/tools/SeniorPodcastApps"));
 const SeniorTrafficApps                      = lazy(() => import("./pages/tools/SeniorTrafficApps"));
 const SeniorRSSReaders                       = lazy(() => import("./pages/tools/SeniorRSSReaders"));
+const SeniorPriceCompareApps                 = lazy(() => import("./pages/tools/SeniorPriceCompareApps"));
+const SeniorOfferUp                          = lazy(() => import("./pages/tools/SeniorOfferUp"));
+const SeniorReceiptApps                      = lazy(() => import("./pages/tools/SeniorReceiptApps"));
+const SeniorWalmartApp                       = lazy(() => import("./pages/tools/SeniorWalmartApp"));
+const SeniorTargetApp                        = lazy(() => import("./pages/tools/SeniorTargetApp"));
 
 // ── Cycle 195 (April 29 2026) — DIY home ──
 const BasicToolsForSeniors   = lazy(() => import("./pages/tools/BasicToolsForSeniors"));
@@ -5430,6 +5435,11 @@ const AppContent = () => {
           <Route path="/tools/senior-podcast-apps" element={<SeniorPodcastApps />} />
           <Route path="/tools/senior-traffic-apps" element={<SeniorTrafficApps />} />
           <Route path="/tools/senior-rss-readers" element={<SeniorRSSReaders />} />
+          <Route path="/tools/senior-price-compare-apps" element={<SeniorPriceCompareApps />} />
+          <Route path="/tools/senior-offer-up" element={<SeniorOfferUp />} />
+          <Route path="/tools/senior-receipt-apps" element={<SeniorReceiptApps />} />
+          <Route path="/tools/senior-walmart-app" element={<SeniorWalmartApp />} />
+          <Route path="/tools/senior-target-app" element={<SeniorTargetApp />} />
           <Route path="/tools/basic-tools-for-seniors" element={<BasicToolsForSeniors />} />
           <Route path="/tools/painting-tips-seniors" element={<PaintingTipsSeniors />} />
           <Route path="/tools/caulking-basics" element={<CaulkingBasics />} />
