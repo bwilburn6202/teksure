@@ -2,7 +2,7 @@ import { Navbar } from '@/components/layout/Navbar';
 import { Footer } from '@/components/layout/Footer';
 import { SEOHead } from '@/components/SEOHead';
 import { Card, CardContent } from '@/components/ui/card';
-import { Crutch } from 'lucide-react';
+import { Activity } from 'lucide-react';
 
 export default function SeniorRehabAppsPostSurgery() {
   return (
@@ -11,7 +11,7 @@ export default function SeniorRehabAppsPostSurgery() {
       <Navbar />
       <main className="flex-1 container mx-auto px-4 py-10 max-w-3xl">
         <div className="text-center mb-8">
-          <Crutch className="w-14 h-14 text-primary mx-auto mb-3" />
+          <Activity className="w-14 h-14 text-primary mx-auto mb-3" />
           <h1 className="text-4xl font-bold mb-2">Rehab Apps Post-Surgery</h1>
           <p className="text-lg text-muted-foreground">Senior recovery.</p>
         </div>
