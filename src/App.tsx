@@ -2715,6 +2715,11 @@ const SeniorPolitics                         = lazy(() => import("./pages/tools/
 const SeniorChurchTech                       = lazy(() => import("./pages/tools/SeniorChurchTech"));
 const SeniorVeterans                         = lazy(() => import("./pages/tools/SeniorVeterans"));
 const SeniorClubsFinder                      = lazy(() => import("./pages/tools/SeniorClubsFinder"));
+const SeniorSmartGarageDoor                  = lazy(() => import("./pages/tools/SeniorSmartGarageDoor"));
+const SeniorSmartLocks                       = lazy(() => import("./pages/tools/SeniorSmartLocks"));
+const SeniorWaterDispensers                  = lazy(() => import("./pages/tools/SeniorWaterDispensers"));
+const SeniorRobotMops                        = lazy(() => import("./pages/tools/SeniorRobotMops"));
+const SeniorVoiceShopping                    = lazy(() => import("./pages/tools/SeniorVoiceShopping"));
 
 // ── Cycle 195 (April 29 2026) — DIY home ──
 const BasicToolsForSeniors   = lazy(() => import("./pages/tools/BasicToolsForSeniors"));
@@ -5996,6 +6001,11 @@ const AppContent = () => {
           <Route path="/tools/senior-church-tech" element={<SeniorChurchTech />} />
           <Route path="/tools/senior-veterans" element={<SeniorVeterans />} />
           <Route path="/tools/senior-clubs-finder" element={<SeniorClubsFinder />} />
+          <Route path="/tools/senior-smart-garage-door" element={<SeniorSmartGarageDoor />} />
+          <Route path="/tools/senior-smart-locks" element={<SeniorSmartLocks />} />
+          <Route path="/tools/senior-water-dispensers" element={<SeniorWaterDispensers />} />
+          <Route path="/tools/senior-robot-mops" element={<SeniorRobotMops />} />
+          <Route path="/tools/senior-voice-shopping" element={<SeniorVoiceShopping />} />
           <Route path="/tools/basic-tools-for-seniors" element={<BasicToolsForSeniors />} />
           <Route path="/tools/painting-tips-seniors" element={<PaintingTipsSeniors />} />
           <Route path="/tools/caulking-basics" element={<CaulkingBasics />} />
