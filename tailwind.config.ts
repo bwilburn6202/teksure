@@ -58,6 +58,24 @@ export default {
           safety: "hsl(var(--zone-safety))",
           support: "hsl(var(--zone-support))",
         },
+        // Origin "Midnight Command Center" palette — exposed as Tailwind
+        // utilities so we can write `bg-origin-violet` etc. directly.
+        origin: {
+          midnight: "hsl(var(--origin-midnight) / <alpha-value>)",
+          charcoal: "hsl(var(--origin-charcoal) / <alpha-value>)",
+          slate: "hsl(var(--origin-slate) / <alpha-value>)",
+          ghost: "hsl(var(--origin-ghost) / <alpha-value>)",
+          mist: "hsl(var(--origin-mist) / <alpha-value>)",
+          ash: "hsl(var(--origin-ash) / <alpha-value>)",
+          whisper: "hsl(var(--origin-whisper) / <alpha-value>)",
+          ocean: "hsl(var(--origin-ocean) / <alpha-value>)",
+          violet: "hsl(var(--origin-violet) / <alpha-value>)",
+          lavender: "hsl(var(--origin-lavender) / <alpha-value>)",
+          rose: "hsl(var(--origin-rose) / <alpha-value>)",
+          indigo: "hsl(var(--origin-indigo) / <alpha-value>)",
+          sky: "hsl(var(--origin-sky) / <alpha-value>)",
+          "deep-sea": "hsl(var(--origin-deep-sea) / <alpha-value>)",
+        },
       },
       fontFamily: {
         sans: ["Inter", "system-ui", "-apple-system", "BlinkMacSystemFont", "sans-serif"],
@@ -67,6 +85,19 @@ export default {
         lg: "var(--radius)",
         md: "calc(var(--radius) - 2px)",
         sm: "calc(var(--radius) - 4px)",
+        // Origin radii — explicit values from the style guide
+        "origin-btn": "8px",
+        "origin-card": "16px",
+        "origin-large-card": "30px",
+        "origin-pill": "9999px",
+      },
+      backgroundImage: {
+        "origin-midnight":
+          "linear-gradient(rgb(15, 16, 17), rgb(19, 29, 39) 18%, rgb(26, 71, 136) 37%, rgb(64, 138, 193) 69%, rgb(64, 138, 193) 102%)",
+        "origin-dark-sky": "linear-gradient(135deg, rgb(43, 43, 44), rgb(19, 19, 19))",
+      },
+      boxShadow: {
+        "origin-lg": "rgba(0, 0, 0, 0.2) 0px 18px 20px 0px",
       },
       keyframes: {
         "accordion-down": {
