@@ -471,7 +471,6 @@ const OnlineNotaryCoach      = lazy(() => import("./pages/tools/OnlineNotaryCoac
 
 // ── Cycle 35 (April 29 2026) — Social Security/Medicare/LTC/reverse mortgage/pension ──
 const WhenToTakeSocialSecurity = lazy(() => import("./pages/tools/WhenToTakeSocialSecurity"));
-const MedigapVsAdvantage     = lazy(() => import("./pages/tools/MedigapVsAdvantage"));
 const LongTermCarePlanning   = lazy(() => import("./pages/tools/LongTermCarePlanning"));
 const ReverseMortgageExplained = lazy(() => import("./pages/tools/ReverseMortgageExplained"));
 const PensionLumpSumDecision = lazy(() => import("./pages/tools/PensionLumpSumDecision"));
@@ -1209,7 +1208,6 @@ const SeniorTravelGroups     = lazy(() => import("./pages/tools/SeniorTravelGrou
 
 // ── Cycle 129 (April 29 2026) — home cleanup + organization ──
 const DownsizeChecklist      = lazy(() => import("./pages/tools/DownsizeChecklist"));
-const EstateSaleApps         = lazy(() => import("./pages/tools/EstateSaleApps"));
 const JunkRemovalApps        = lazy(() => import("./pages/tools/JunkRemovalApps"));
 const OrganizingApps         = lazy(() => import("./pages/tools/OrganizingApps"));
 const StorageUnitPicks       = lazy(() => import("./pages/tools/StorageUnitPicks"));
@@ -1577,7 +1575,6 @@ const RainBarrelGuide        = lazy(() => import("./pages/tools/RainBarrelGuide"
 const WatercolorBeginnerSeniors = lazy(() => import("./pages/tools/WatercolorBeginnerSeniors"));
 const RavelryForKnitters     = lazy(() => import("./pages/tools/RavelryForKnitters"));
 const CricutForSeniorCrafters = lazy(() => import("./pages/tools/CricutForSeniorCrafters"));
-const EtsySellingForSeniors  = lazy(() => import("./pages/tools/EtsySellingForSeniors"));
 const QuiltDesignSoftware    = lazy(() => import("./pages/tools/QuiltDesignSoftware"));
 const SeniorPaintingClasses  = lazy(() => import("./pages/tools/SeniorPaintingClasses"));
 const PaintByNumbersAdult    = lazy(() => import("./pages/tools/PaintByNumbersAdult"));
@@ -1762,7 +1759,6 @@ const TelehealthForSeniors        = lazy(() => import("./pages/tools/TelehealthF
 const TSAPreCheckGlobalEntryGuide    = lazy(() => import("./pages/tools/TSAPreCheckGlobalEntryGuide"));
 const MyTSAAppGuide                  = lazy(() => import("./pages/tools/MyTSAAppGuide"));
 const RoadtripPlannerAppsForSeniors  = lazy(() => import("./pages/tools/RoadtripPlannerAppsForSeniors"));
-const AirbnbForSeniorTravelers       = lazy(() => import("./pages/tools/AirbnbForSeniorTravelers"));
 const PassportRenewalGuide           = lazy(() => import("./pages/tools/PassportRenewalGuide"));
 
 // ── Cycle 280 (April 30 2026) — senior hobby apps ──
@@ -2033,7 +2029,6 @@ const SeniorRestaurantSavings               = lazy(() => import("./pages/tools/S
 
 // ── Cycle 318 (April 30 2026) — senior reading apps deeper ──
 const KindleForSeniorReaders                = lazy(() => import("./pages/tools/KindleForSeniorReaders"));
-const LibbyAppForSeniors                    = lazy(() => import("./pages/tools/LibbyAppForSeniors"));
 const GoodreadsForSeniors                   = lazy(() => import("./pages/tools/GoodreadsForSeniors"));
 const AudibleVsLibbyForSeniors              = lazy(() => import("./pages/tools/AudibleVsLibbyForSeniors"));
 const LargePrintBookFinderForSeniors        = lazy(() => import("./pages/tools/LargePrintBookFinderForSeniors"));
@@ -2062,7 +2057,6 @@ const MassageGunForSeniors                  = lazy(() => import("./pages/tools/M
 // ── Cycle 322 (April 30 2026) — senior travel deeper ──
 const AirHelpForSeniors                     = lazy(() => import("./pages/tools/AirHelpForSeniors"));
 const SeatGuruForSeniors                    = lazy(() => import("./pages/tools/SeatGuruForSeniors"));
-const RentalCarAppsForSeniors               = lazy(() => import("./pages/tools/RentalCarAppsForSeniors"));
 const PassportPhotoAppsForSeniors           = lazy(() => import("./pages/tools/PassportPhotoAppsForSeniors"));
 const CurrencyExchangeForSeniorTravel       = lazy(() => import("./pages/tools/CurrencyExchangeForSeniorTravel"));
 
@@ -2317,7 +2311,6 @@ const OneDriveBasics            = lazy(() => import("./pages/tools/OneDriveBasic
 // ── Cycle 221 (April 29 2026) — music streaming ──
 const AppleMusicForSeniors      = lazy(() => import("./pages/tools/AppleMusicForSeniors"));
 const AmazonMusicForSeniors     = lazy(() => import("./pages/tools/AmazonMusicForSeniors"));
-const PandoraForSeniors         = lazy(() => import("./pages/tools/PandoraForSeniors"));
 const SimplyPianoForSeniors     = lazy(() => import("./pages/tools/SimplyPianoForSeniors"));
 const YousicianGuitarApp        = lazy(() => import("./pages/tools/YousicianGuitarApp"));
 const MetronomeTunerApps        = lazy(() => import("./pages/tools/MetronomeTunerApps"));

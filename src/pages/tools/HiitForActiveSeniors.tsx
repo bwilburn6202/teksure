@@ -95,7 +95,7 @@ export default function HiitForActiveSeniors() {
               <li>Easy days for recovery.</li>
               <li>Sleep + nutrition support recovery.</li>
               <li>Older bodies need more recovery.</li>
-              <li>Quality > quantity.</li>
+              <li>Quality beats quantity.</li>
             </ul>
           </CardContent>
         </Card>

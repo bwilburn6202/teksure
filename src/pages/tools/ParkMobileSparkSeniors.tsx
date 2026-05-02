@@ -95,7 +95,7 @@ export default function ParkMobileSparkSeniors() {
               <li>Voice control via Siri/Google.</li>
               <li>Don&apos;t fumble with phone in traffic.</li>
               <li>Family member help with first setup.</li>
-              <li>Pay attention to road > the app.</li>
+              <li>Pay attention to the road, not the app.</li>
             </ul>
           </CardContent>
         </Card>
