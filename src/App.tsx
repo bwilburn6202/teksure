@@ -2164,6 +2164,13 @@ const ColorBlindSeniorTools                 = lazy(() => import("./pages/tools/C
 const SubtitleGlassesForSeniors             = lazy(() => import("./pages/tools/SubtitleGlassesForSeniors"));
 const SeniorAccessibilityChecklist          = lazy(() => import("./pages/tools/SeniorAccessibilityChecklist"));
 
+// ── Cycle 338 (May 2 2026) — senior smart appliances ──
+const SmartFridgeForSeniors                 = lazy(() => import("./pages/tools/SmartFridgeForSeniors"));
+const SmartOvenForSeniors                   = lazy(() => import("./pages/tools/SmartOvenForSeniors"));
+const SmartWasherForSeniors                 = lazy(() => import("./pages/tools/SmartWasherForSeniors"));
+const SmartDishwasherForSeniors             = lazy(() => import("./pages/tools/SmartDishwasherForSeniors"));
+const SmartCoffeeForSeniors                 = lazy(() => import("./pages/tools/SmartCoffeeForSeniors"));
+
 // ── Cycle 195 (April 29 2026) — DIY home ──
 const BasicToolsForSeniors   = lazy(() => import("./pages/tools/BasicToolsForSeniors"));
 const PaintingTipsSeniors    = lazy(() => import("./pages/tools/PaintingTipsSeniors"));
@@ -4914,6 +4921,11 @@ const AppContent = () => {
           <Route path="/tools/color-blind-senior-tools" element={<ColorBlindSeniorTools />} />
           <Route path="/tools/subtitle-glasses-for-seniors" element={<SubtitleGlassesForSeniors />} />
           <Route path="/tools/senior-accessibility-checklist" element={<SeniorAccessibilityChecklist />} />
+          <Route path="/tools/smart-fridge-for-seniors" element={<SmartFridgeForSeniors />} />
+          <Route path="/tools/smart-oven-for-seniors" element={<SmartOvenForSeniors />} />
+          <Route path="/tools/smart-washer-for-seniors" element={<SmartWasherForSeniors />} />
+          <Route path="/tools/smart-dishwasher-for-seniors" element={<SmartDishwasherForSeniors />} />
+          <Route path="/tools/smart-coffee-for-seniors" element={<SmartCoffeeForSeniors />} />
           <Route path="/tools/basic-tools-for-seniors" element={<BasicToolsForSeniors />} />
           <Route path="/tools/painting-tips-seniors" element={<PaintingTipsSeniors />} />
           <Route path="/tools/caulking-basics" element={<CaulkingBasics />} />
