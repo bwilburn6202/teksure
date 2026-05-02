@@ -2914,7 +2914,11 @@ const SeniorPickleballApps                   = lazy(() => import("./pages/tools/
 const SeniorGolfGPS                          = lazy(() => import("./pages/tools/SeniorGolfGPS"));
 const SeniorYogaSilverSneakers               = lazy(() => import("./pages/tools/SeniorYogaSilverSneakers"));
 const SeniorAllTrails                        = lazy(() => import("./pages/tools/SeniorAllTrails"));
-const SeniorBirdingApps                      = lazy(() => import("./pages/tools/SeniorBirdingApps"));
+const SeniorJigsawApps                       = lazy(() => import("./pages/tools/SeniorJigsawApps"));
+const SeniorBridgeOnline                     = lazy(() => import("./pages/tools/SeniorBridgeOnline"));
+const SeniorChessOnline                      = lazy(() => import("./pages/tools/SeniorChessOnline"));
+const SeniorWordleNYTGames                   = lazy(() => import("./pages/tools/SeniorWordleNYTGames"));
+const SeniorBrainTraining                    = lazy(() => import("./pages/tools/SeniorBrainTraining"));
 const SeniorAmateurRadio                     = lazy(() => import("./pages/tools/SeniorAmateurRadio"));
 const SeniorMetalDetecting                   = lazy(() => import("./pages/tools/SeniorMetalDetecting"));
 const SeniorWoodCarving                      = lazy(() => import("./pages/tools/SeniorWoodCarving"));
@@ -6400,7 +6404,11 @@ const AppContent = () => {
           <Route path="/tools/senior-golf-gps" element={<SeniorGolfGPS />} />
           <Route path="/tools/senior-yoga-silversneakers" element={<SeniorYogaSilverSneakers />} />
           <Route path="/tools/senior-alltrails" element={<SeniorAllTrails />} />
-          <Route path="/tools/senior-birding-apps" element={<SeniorBirdingApps />} />
+          <Route path="/tools/senior-jigsaw-apps" element={<SeniorJigsawApps />} />
+          <Route path="/tools/senior-bridge-online" element={<SeniorBridgeOnline />} />
+          <Route path="/tools/senior-chess-online" element={<SeniorChessOnline />} />
+          <Route path="/tools/senior-wordle-nyt-games" element={<SeniorWordleNYTGames />} />
+          <Route path="/tools/senior-brain-training" element={<SeniorBrainTraining />} />
           <Route path="/tools/senior-amateur-radio" element={<SeniorAmateurRadio />} />
           <Route path="/tools/senior-metal-detecting" element={<SeniorMetalDetecting />} />
           <Route path="/tools/senior-wood-carving" element={<SeniorWoodCarving />} />
