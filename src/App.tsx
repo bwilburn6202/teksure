@@ -2452,6 +2452,10 @@ const SeniorWildlifeCams                     = lazy(() => import("./pages/tools/
 const SeniorPetHealthApps                    = lazy(() => import("./pages/tools/SeniorPetHealthApps"));
 const SeniorAnimalRescueApps                 = lazy(() => import("./pages/tools/SeniorAnimalRescueApps"));
 const SeniorAquariumTech                     = lazy(() => import("./pages/tools/SeniorAquariumTech"));
+const SeniorDrawingApps                      = lazy(() => import("./pages/tools/SeniorDrawingApps"));
+const SeniorMusicCreationApps                = lazy(() => import("./pages/tools/SeniorMusicCreationApps"));
+const SeniorSewingApps                       = lazy(() => import("./pages/tools/SeniorSewingApps"));
+const SeniorWritingApps                      = lazy(() => import("./pages/tools/SeniorWritingApps"));
 
 // ── Cycle 195 (April 29 2026) — DIY home ──
 const BasicToolsForSeniors   = lazy(() => import("./pages/tools/BasicToolsForSeniors"));
@@ -5470,6 +5474,10 @@ const AppContent = () => {
           <Route path="/tools/senior-pet-health-apps" element={<SeniorPetHealthApps />} />
           <Route path="/tools/senior-animal-rescue-apps" element={<SeniorAnimalRescueApps />} />
           <Route path="/tools/senior-aquarium-tech" element={<SeniorAquariumTech />} />
+          <Route path="/tools/senior-drawing-apps" element={<SeniorDrawingApps />} />
+          <Route path="/tools/senior-music-creation-apps" element={<SeniorMusicCreationApps />} />
+          <Route path="/tools/senior-sewing-apps" element={<SeniorSewingApps />} />
+          <Route path="/tools/senior-writing-apps" element={<SeniorWritingApps />} />
           <Route path="/tools/basic-tools-for-seniors" element={<BasicToolsForSeniors />} />
           <Route path="/tools/painting-tips-seniors" element={<PaintingTipsSeniors />} />
           <Route path="/tools/caulking-basics" element={<CaulkingBasics />} />
