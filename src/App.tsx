@@ -2521,6 +2521,11 @@ const SeniorOldPhoneCharger                  = lazy(() => import("./pages/tools/
 const SeniorPhoneCases                       = lazy(() => import("./pages/tools/SeniorPhoneCases"));
 const SeniorScreenRepair                     = lazy(() => import("./pages/tools/SeniorScreenRepair"));
 const SeniorPhoneInsurance                   = lazy(() => import("./pages/tools/SeniorPhoneInsurance"));
+const SeniorIPadBuyingGuide                  = lazy(() => import("./pages/tools/SeniorIPadBuyingGuide"));
+const SeniorTabletStands                     = lazy(() => import("./pages/tools/SeniorTabletStands"));
+const SeniorIPadKidsMode                     = lazy(() => import("./pages/tools/SeniorIPadKidsMode"));
+const SeniorAndroidTablets                   = lazy(() => import("./pages/tools/SeniorAndroidTablets"));
+const SeniorTabletAccessibility              = lazy(() => import("./pages/tools/SeniorTabletAccessibility"));
 
 // ── Cycle 195 (April 29 2026) — DIY home ──
 const BasicToolsForSeniors   = lazy(() => import("./pages/tools/BasicToolsForSeniors"));
@@ -5608,6 +5613,11 @@ const AppContent = () => {
           <Route path="/tools/senior-phone-cases" element={<SeniorPhoneCases />} />
           <Route path="/tools/senior-screen-repair" element={<SeniorScreenRepair />} />
           <Route path="/tools/senior-phone-insurance" element={<SeniorPhoneInsurance />} />
+          <Route path="/tools/senior-ipad-buying-guide" element={<SeniorIPadBuyingGuide />} />
+          <Route path="/tools/senior-tablet-stands" element={<SeniorTabletStands />} />
+          <Route path="/tools/senior-ipad-kids-mode" element={<SeniorIPadKidsMode />} />
+          <Route path="/tools/senior-android-tablets" element={<SeniorAndroidTablets />} />
+          <Route path="/tools/senior-tablet-accessibility" element={<SeniorTabletAccessibility />} />
           <Route path="/tools/basic-tools-for-seniors" element={<BasicToolsForSeniors />} />
           <Route path="/tools/painting-tips-seniors" element={<PaintingTipsSeniors />} />
           <Route path="/tools/caulking-basics" element={<CaulkingBasics />} />
