@@ -2810,6 +2810,11 @@ const SeniorChromePasswords                  = lazy(() => import("./pages/tools/
 const SeniorChromeBookmarks                  = lazy(() => import("./pages/tools/SeniorChromeBookmarks"));
 const SeniorChromeIncognito                  = lazy(() => import("./pages/tools/SeniorChromeIncognito"));
 const SeniorChromeExtensions                 = lazy(() => import("./pages/tools/SeniorChromeExtensions"));
+const SeniorWindowsBasics                    = lazy(() => import("./pages/tools/SeniorWindowsBasics"));
+const SeniorWindowsUpdates                   = lazy(() => import("./pages/tools/SeniorWindowsUpdates"));
+const SeniorWindowsAntivirus                 = lazy(() => import("./pages/tools/SeniorWindowsAntivirus"));
+const SeniorWindowsBackup                    = lazy(() => import("./pages/tools/SeniorWindowsBackup"));
+const SeniorWindowsAccessibility             = lazy(() => import("./pages/tools/SeniorWindowsAccessibility"));
 const SeniorAmateurRadio                     = lazy(() => import("./pages/tools/SeniorAmateurRadio"));
 const SeniorMetalDetecting                   = lazy(() => import("./pages/tools/SeniorMetalDetecting"));
 const SeniorWoodCarving                      = lazy(() => import("./pages/tools/SeniorWoodCarving"));
@@ -6191,6 +6196,11 @@ const AppContent = () => {
           <Route path="/tools/senior-chrome-bookmarks" element={<SeniorChromeBookmarks />} />
           <Route path="/tools/senior-chrome-incognito" element={<SeniorChromeIncognito />} />
           <Route path="/tools/senior-chrome-extensions" element={<SeniorChromeExtensions />} />
+          <Route path="/tools/senior-windows-basics" element={<SeniorWindowsBasics />} />
+          <Route path="/tools/senior-windows-updates" element={<SeniorWindowsUpdates />} />
+          <Route path="/tools/senior-windows-antivirus" element={<SeniorWindowsAntivirus />} />
+          <Route path="/tools/senior-windows-backup" element={<SeniorWindowsBackup />} />
+          <Route path="/tools/senior-windows-accessibility" element={<SeniorWindowsAccessibility />} />
           <Route path="/tools/senior-amateur-radio" element={<SeniorAmateurRadio />} />
           <Route path="/tools/senior-metal-detecting" element={<SeniorMetalDetecting />} />
           <Route path="/tools/senior-wood-carving" element={<SeniorWoodCarving />} />
