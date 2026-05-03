@@ -21,7 +21,11 @@
     "test:watch": "vitest",
     "embed-guides": "tsx scripts/embed-all-guides.ts",
     "loop:critique": "node scripts/build-critique-loop.mjs",
-    "loop:critique:once": "node scripts/build-critique-loop.mjs --max-cycles=1 --checks=quick"
+    "loop:critique:once": "node scripts/build-critique-loop.mjs --max-cycles=1 --checks=quick",
+    "loop:dev": "node scripts/dev-loop.mjs",
+    "loop:dev:once": "node scripts/dev-loop.mjs --once",
+    "loop:dev:dry": "node scripts/dev-loop.mjs --once --dry-run",
+    "loop:dev:ci": "node scripts/dev-loop.mjs --once --ci"
   },
   "dependencies": {
     "@radix-ui/react-accordion": "^1.2.11",
