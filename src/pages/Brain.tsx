@@ -157,6 +157,7 @@ export default function BrainPage() {
         title="TekSure Brain — Ask Anything About Technology"
         description="Ask TekSure any tech question and instantly find the right guide. Powered by our library of 1,100+ guides. Works offline — no API needed."
         path="/brain"
+        breadcrumbs={[{ name: 'Home', path: '/' }, { name: 'TekSure Brain', path: '/brain' }]}
       />
       <Navbar />
       <main className="min-h-screen bg-background">

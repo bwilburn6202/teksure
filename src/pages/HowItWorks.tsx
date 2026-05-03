@@ -18,6 +18,7 @@ const HowItWorks = () => (
       title="How TekSure Works — Get Tech Help in 4 Simple Steps"
       description="Plain-English tech support, no runaround. Sign up free, describe your issue, get matched with a verified technician, and only pay when the job is done."
       path="/how-it-works"
+      breadcrumbs={[{ name: 'Home', path: '/' }, { name: 'How It Works', path: '/how-it-works' }]}
       jsonLd={{
         '@context': 'https://schema.org',
         '@type': 'HowTo',

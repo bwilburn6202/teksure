@@ -407,6 +407,7 @@ const Guides = () => {
         title={`Find a Guide for Anything | ${guides.length.toLocaleString()}+ Free Tech Guides | TekSure`}
         description={`Browse ${guides.length.toLocaleString()}+ free step-by-step tech guides for Windows, Mac, iPhone, Android, safety, banking, smart home, and everyday apps. Written in plain language for beginners.`}
         path="/guides"
+        breadcrumbs={[{ name: 'Home', path: '/' }, { name: 'Guides', path: '/guides' }]}
         jsonLd={{
           '@context': 'https://schema.org',
           '@type': 'CollectionPage',

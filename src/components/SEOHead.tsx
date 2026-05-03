@@ -16,6 +16,12 @@ export interface SEOHeadProps {
   modifiedTime?: string;
   canonical?: string;
   jsonLd?: Record<string, unknown> | Record<string, unknown>[];
+  /**
+   * Breadcrumb trail for this page, in order from root to current. Emitted as
+   * a `BreadcrumbList` JSON-LD so Google can show the trail under the result
+   * and consider the page for sitelinks.
+   */
+  breadcrumbs?: Array<{ name: string; path: string }>;
   /** Exclude this page from search engines. Use for admin, auth, and private routes. */
   noindex?: boolean;
 }
@@ -27,11 +33,29 @@ const DEFAULT_OG_IMAGE_ALT =
 const OG_IMAGE_WIDTH = 1200;
 const OG_IMAGE_HEIGHT = 630;
 
-export function SEOHead({ title, description, path = '/', type = 'website', ogImage, ogImageAlt, publishedTime, modifiedTime, canonical, jsonLd, noindex }: SEOHeadProps) {
+export function SEOHead({ title, description, path = '/', type = 'website', ogImage, ogImageAlt, publishedTime, modifiedTime, canonical, jsonLd, breadcrumbs, noindex }: SEOHeadProps) {
   const url = `${BASE_URL}${path}`;
   const image = ogImage ?? DEFAULT_OG_IMAGE;
   const imageAlt = ogImageAlt ?? DEFAULT_OG_IMAGE_ALT;
   const fullTitle = title.includes('TekSure') ? title : `${title} — TekSure`;
+
+  const breadcrumbJsonLd = breadcrumbs && breadcrumbs.length > 0
+    ? {
+        '@context': 'https://schema.org',
+        '@type': 'BreadcrumbList',
+        itemListElement: breadcrumbs.map((crumb, i) => ({
+          '@type': 'ListItem',
+          position: i + 1,
+          name: crumb.name,
+          item: `${BASE_URL}${crumb.path}`,
+        })),
+      }
+    : null;
+
+  const allJsonLd = [
+    ...(breadcrumbJsonLd ? [breadcrumbJsonLd] : []),
+    ...(jsonLd ? (Array.isArray(jsonLd) ? jsonLd : [jsonLd]) : []),
+  ];
 
   return (
     <Helmet>
@@ -64,7 +88,7 @@ export function SEOHead({ title, description, path = '/', type = 'website', ogIm
       <meta name="twitter:image:alt" content={imageAlt} />
 
       {/* JSON-LD */}
-      {jsonLd && (Array.isArray(jsonLd) ? jsonLd : [jsonLd]).map((schema, i) => (
+      {allJsonLd.map((schema, i) => (
         <script key={i} type="application/ld+json">
           {JSON.stringify(schema)}
         </script>

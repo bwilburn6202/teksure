@@ -242,6 +242,7 @@ const QuickFixes = () => {
         title="Quick Tech Fixes — Instant Solutions | TekSure"
         description="Instant solutions to the most common tech problems. Click to reveal step-by-step fixes for slow computers, Wi-Fi issues, and more."
         path="/quick-fixes"
+        breadcrumbs={[{ name: 'Home', path: '/' }, { name: 'Quick Fixes', path: '/quick-fixes' }]}
         jsonLd={faqJsonLd}
       />
       <Navbar />

@@ -151,6 +151,7 @@ const About = () => {
         title="About TekSure — Tech Support That Finally Speaks Human"
         description="TekSure is free tech help for seniors, caregivers, new Americans, and anyone who finds technology frustrating. No jargon, no ads, no selling your data — only plain-English guides and real human support."
         path="/about"
+        breadcrumbs={[{ name: 'Home', path: '/' }, { name: 'About TekSure', path: '/about' }]}
         jsonLd={{
           '@context': 'https://schema.org',
           '@type': 'Organization',

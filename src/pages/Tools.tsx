@@ -2179,6 +2179,7 @@ export default function Tools() {
         title="Free Tech Tools & Utilities | TekSure"
         description="150+ free tech tools for everyday people — scam simulator, password leak checker, bill negotiator, WiFi troubleshooter, accessibility finder, and more."
         path="/tools"
+        breadcrumbs={[{ name: 'Home', path: '/' }, { name: 'Tools', path: '/tools' }]}
         jsonLd={{
           '@context': 'https://schema.org',
           '@type': 'CollectionPage',

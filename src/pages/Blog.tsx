@@ -406,6 +406,7 @@ export default function Blog() {
         title="Tech Blog for Beginners — TekSure"
         description="Simple, jargon-free articles about technology, security, and staying safe online. Written for everyone."
         path="/blog"
+        breadcrumbs={[{ name: 'Home', path: '/' }, { name: 'Blog', path: '/blog' }]}
       />
       <Navbar />
 

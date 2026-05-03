@@ -336,6 +336,7 @@ const GetHelp = () => {
         title="Get Tech Help — TekSure"
         description="Reach out for free tech support or schedule a technician appointment. Real humans, no jargon."
         path="/get-help"
+        breadcrumbs={[{ name: 'Home', path: '/' }, { name: 'Request Help', path: '/get-help' }]}
       />
       <Navbar />
 
