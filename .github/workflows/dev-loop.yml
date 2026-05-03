@@ -1,0 +1,73 @@
+name: TekSure dev-loop
+
+on:
+  schedule:
+    # Every 6 hours at :07 (offset to avoid the global cron stampede on :00).
+    - cron: '7 */6 * * *'
+  workflow_dispatch:
+    inputs:
+      dry_run:
+        description: 'Dry run (do not commit findings)'
+        required: false
+        default: 'false'
+
+permissions:
+  contents: write
+
+concurrency:
+  group: dev-loop
+  cancel-in-progress: false
+
+jobs:
+  loop:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+
+    steps:
+      - name: Checkout main
+        uses: actions/checkout@v4
+        with:
+          ref: main
+          fetch-depth: 1
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version-file: '.nvmrc'
+          cache: 'npm'
+
+      - name: Install dependencies
+        run: npm ci --no-audit --no-fund
+
+      - name: Run dev-loop (single iteration)
+        id: loop
+        run: |
+          if [ "${{ inputs.dry_run }}" = "true" ]; then
+            npm run loop:dev:dry
+          else
+            npm run loop:dev:once
+          fi
+
+      - name: Stage findings
+        if: ${{ inputs.dry_run != 'true' }}
+        run: |
+          git add .claude/dev-loop-state.json .claude/dev-loop-backlog.md || true
+
+      - name: Commit and push if changed
+        if: ${{ inputs.dry_run != 'true' }}
+        run: |
+          if git diff --staged --quiet; then
+            echo "dev-loop: no findings to commit"
+            exit 0
+          fi
+          git config user.name "teksure-dev-loop[bot]"
+          git config user.email "teksure-dev-loop[bot]@users.noreply.github.com"
+          STATE_CYCLE=$(node -e "console.log(JSON.parse(require('fs').readFileSync('.claude/dev-loop-state.json','utf8')).cycleCount)")
+          git commit -m "chore(dev-loop): cycle ${STATE_CYCLE} findings"
+          # Retry push with simple backoff (network only).
+          for delay in 0 2 4 8 16; do
+            if [ "$delay" != "0" ]; then sleep "$delay"; fi
+            if git push origin main; then exit 0; fi
+          done
+          echo "dev-loop: push failed after retries" >&2
+          exit 1

@@ -108,3 +108,30 @@ TekSure is maintained by a fully autonomous development pipeline. The system has
 
 ### To manage scheduled tasks
 Go to Claude Code sidebar → Scheduled section. Each task can be enabled/disabled individually.
+
+## Dev-Loop (deterministic CI loop)
+
+Lives at `scripts/dev-loop.mjs` and runs every 6 hours via `.github/workflows/dev-loop.yml`. Read-only checks only — no API calls, no source-file edits. Findings land in two places:
+
+- `.claude/dev-loop-state.json` — machine-readable state (cycle count, last findings, 50-cycle history)
+- `.claude/dev-loop-backlog.md` — human-readable feed; newest cycles at top, capped at 256KB
+
+The creative scheduled tasks (`weekly-guide-enrichment`, `content-freshness-check`, `monthly-feature-build`) read the backlog as their input queue — the loop surfaces work, the scheduled tasks do it.
+
+### Checks per cycle
+- Site metrics snapshot (guides, routes, lazy imports, tools)
+- Duplicate slug guard (`scripts/validate-slugs.mjs`)
+- Internal link audit (`scripts/link-audit.mjs --json`)
+- TypeScript compile (`tsc --noEmit`)
+- Stale OS version mentions (iOS ≤16, Android ≤13, Windows 7/8, macOS pre-Ventura)
+- Aged guides (publishedAt > 18 months)
+
+### Local commands
+```bash
+npm run loop:dev:dry    # one cycle, no writes
+npm run loop:dev:once   # one cycle, writes state + backlog
+npm run loop:dev        # continuous (default 30 min interval)
+npm run loop:dev:ci     # one cycle, exits 1 on hard failures (used by workflow)
+```
+
+Flags: `--once`, `--dry-run`, `--ci`, `--interval=N`, `--only=health,links`, `--skip=stale-os`.
