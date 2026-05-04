@@ -184,7 +184,7 @@ function ipadResult(m: ModelOption, status: SupportStatus): SupportResult {
     return {
       status,
       headline: 'Your iPad is fully supported.',
-      detail: `${m.label} is within Apple's support window for iPadOS. You'll continue receiving security updates automatically — just keep auto-update turned on in Settings → General → Software Update.`,
+      detail: `${m.label} is within Apple's support window for iPadOS. You'll continue receiving security updates automatically — keep auto-update turned on in Settings → General → Software Update.`,
       yearsLeft: m.yearsLeft,
       recommendation: 'keep',
       recommendationText:
@@ -227,7 +227,7 @@ function androidResult(m: ModelOption, status: SupportStatus): SupportResult {
     return {
       status,
       headline: 'Your Android may be near the end of updates.',
-      detail: `${m.label} is at or just past the typical 3–4 year security-update window for many Android brands. Open Settings → About phone → Android security patch level — if that date is more than a year old, security updates have likely stopped.`,
+      detail: `${m.label} is at or past the typical 3–4 year security-update window for many Android brands. Open Settings → About phone → Android security patch level — if that date is more than a year old, security updates have likely stopped.`,
       recommendation: 'plan',
       recommendationText:
         'Check your security patch date. If it\'s more than 12 months old, plan to replace within the next year.',

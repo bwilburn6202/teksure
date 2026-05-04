@@ -35,7 +35,7 @@ const WARNING_SIGNS = [
   },
   {
     id: 'gut',
-    label: 'Does something just feel... wrong?',
+    label: 'Does something feel off?',
   },
 ];
 
@@ -593,7 +593,7 @@ export default function ScamDefenseCenter() {
               Protect Yourself — Tools &amp; Guides
             </h2>
             <p className="text-muted-foreground mt-2">
-              Knowledge is your best defense. These free TekSure resources take just a few minutes
+              Knowledge is your best defense. These free TekSure resources take a few minutes
               each.
             </p>
           </div>
