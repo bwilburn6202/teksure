@@ -38,3 +38,7 @@ vite.config.ts.timestamp-*.mjs
 
 # Old/duplicate lockfile — bun.lock is authoritative
 # bun.lockb  (keep both for now; revisit)
+
+# macOS conflict copies (iCloud / file-sync duplicates — e.g. "file 2.ts")
+*[[:space:]]2.*
+*[[:space:]]3.*
