@@ -8,6 +8,59 @@ Newest cycles appear at the top.
 
 ---
 
+## Cycle 7 — 2026-05-05T03:45:35.282Z
+
+### [ok] Site metrics snapshot
+2729 guides, 3014 routes, 145 tools.
+
+### [fail] Duplicate guide slugs
+Duplicate slugs detected — see validate-slugs output.
+
+```
+[validate-slugs] scanned 123 files, 3030 slugs, 3028 unique
+[validate-slugs] FAIL — 2 duplicate slug(s):
+  • phone-wont-charge-fix
+      src/data/guides-batch-124.ts:60
+      src/data/guides-batch-94.ts:816
+  • wifi-keeps-dropping-fix
+      src/data/guides-batch-124.ts:110
+      src/data/guides-batch-94.ts:771
+
+Each slug must appear exactly once across all guide data files.
+Rename one of the collisions or remove the duplicate entry.
+```
+
+### [ok] Internal link audit
+0 broken targets, 2602 orphaned routes (of 2976 routes).
+
+### [ok] TypeScript compile
+No TypeScript errors.
+
+### [warn] Stale OS version mentions
+50 mention(s) of older OS versions in guides.
+
+```
+- src/data/guides-batch-103.ts:31 — iOS 10–16 (`iOS 11`)
+- src/data/guides-batch-109.ts:48 — Android 10–13 (`Android 13`)
+- src/data/guides-batch-117.ts:66 — iOS 10–16 (`iOS 16`)
+- src/data/guides-batch-117.ts:61 — Android 10–13 (`Android 12`)
+- src/data/guides-batch-12.ts:171 — iOS 10–16 (`iOS 16`)
+- src/data/guides-batch-12.ts:173 — iOS 10–16 (`iOS 16`)
+- src/data/guides-batch-125.ts:143 — iOS 10–16 (`iOS 16`)
+- src/data/guides-batch-14.ts:686 — iOS 10–16 (`iOS 14`)
+- src/data/guides-batch-15.ts:283 — iOS 10–16 (`iOS 14`)
+- src/data/guides-batch-15.ts:299 — iOS 10–16 (`iOS 16`)
+```
+
+### [ok] Aged guides
+0 of 3030 guides published before 2024-11-05.
+
+### Suggested next actions
+- **Duplicate guide slugs** — Duplicate slugs detected — see validate-slugs output.
+- **Stale OS version mentions** — 50 mention(s) of older OS versions in guides.
+
+---
+
 ## Cycle 6 — 2026-05-04T19:53:19.847Z
 
 ### [ok] Site metrics snapshot
