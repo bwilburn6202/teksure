@@ -181,6 +181,7 @@ const DeviceAgeChecker       = lazy(() => import("./pages/tools/DeviceAgeChecker
 const BatteryHealthCoach     = lazy(() => import("./pages/tools/BatteryHealthCoach"));
 const TwoFactorRecoveryPlan  = lazy(() => import("./pages/tools/TwoFactorRecoveryPlan"));
 const PhoneDiagnosticChecklist = lazy(() => import("./pages/tools/PhoneDiagnosticChecklist"));
+const TechHelpHotlineDirectory = lazy(() => import("./pages/tools/TechHelpHotlineDirectory"));
 const DeviceTradeInEstimator = lazy(() => import("./pages/tools/DeviceTradeInEstimator"));
 const ParentalControlsWizard = lazy(() => import("./pages/tools/ParentalControlsWizard"));
 const HomeNetworkMap         = lazy(() => import("./pages/tools/HomeNetworkMap"));
@@ -4037,6 +4038,7 @@ const AppContent = () => {
           <Route path="/tools/battery-health-coach" element={<BatteryHealthCoach />} />
           <Route path="/tools/two-factor-recovery-plan" element={<TwoFactorRecoveryPlan />} />
           <Route path="/tools/phone-diagnostic-checklist" element={<PhoneDiagnosticChecklist />} />
+          <Route path="/tools/tech-help-hotline-directory" element={<TechHelpHotlineDirectory />} />
           <Route path="/tools/trade-in-estimator" element={<DeviceTradeInEstimator />} />
           <Route path="/tools/parental-controls-wizard" element={<ParentalControlsWizard />} />
           <Route path="/tools/home-network-map" element={<HomeNetworkMap />} />
