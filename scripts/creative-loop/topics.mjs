@@ -621,4 +621,685 @@ This guide walks through ordering groceries with the Walmart app on a smartphone
       },
     ],
   },
+
+  {
+    slug: 'set-up-amazon-echo-alexa-seniors',
+    title: 'Set Up an Amazon Echo (Alexa) for the First Time',
+    excerpt: 'An Amazon Echo lets you ask questions, set reminders, play music, and call family with your voice. Here is how to set one up the first time.',
+    category: 'smart-home',
+    tags: ['alexa', 'echo', 'amazon', 'voice', 'smart-home', 'seniors'],
+    emoji: 'cart',
+    difficulty: 'Beginner',
+    readTime: '7 min',
+    body: `An Amazon Echo is a small speaker that listens for the wake word "Alexa" and responds to your voice. You can ask it the weather, set timers in the kitchen, play music, hear the news, get a reminder to take medication, or even call family members hands-free. The smaller models cost about $50, and Amazon often runs sales bringing them to $25.
+
+Setting up an Echo for the first time can feel intimidating, but the steps are short. The hardest part is the Wi-Fi connection, and the Alexa app on your phone walks you through it step by step.
+
+Privacy considerations: The Echo only sends recordings to Amazon when it hears the wake word "Alexa." You can review and delete these recordings any time in the Alexa app. You can also turn off the microphone with a physical button on top of the Echo if you want privacy during a conversation.
+
+(Sources: Amazon Echo Setup Guide, amazon.com/alexa-help; AARP — Smart speakers for seniors, aarp.org/home-family/personal-technology)`,
+    steps: [
+      {
+        title: 'Plug in the Echo and download the Alexa app',
+        content: 'Plug the Echo into a wall outlet using the included power cord. The light ring will turn orange after a few seconds — this means it is ready to set up. On your phone, open the App Store (iPhone) or Google Play (Android), search for "Amazon Alexa" (the official app, not a third-party copycat), and install it.',
+        tip: 'Quick Tip: Place the Echo somewhere central in your home — a kitchen counter, living room end table, or hallway. It needs to hear you from across the room, so a closet or behind a TV is not ideal.',
+      },
+      {
+        title: 'Sign in with your Amazon account',
+        content: 'Open the Alexa app and sign in with the same Amazon account you use to shop on amazon.com. If you do not have an Amazon account, the app helps you create a free one. You do not need Amazon Prime to use most Echo features.',
+      },
+      {
+        title: 'Add the Echo as a new device',
+        content: 'In the Alexa app, tap "Devices" at the bottom of the screen, then the "+" button at the top right, then "Add Device," then "Amazon Echo," then pick the model you have (Echo Dot, Echo Show, etc.). The app guides you through connecting the Echo to your home Wi-Fi.',
+      },
+      {
+        title: 'Connect to your home Wi-Fi',
+        content: 'When prompted, type your Wi-Fi password. The Echo connects to your network. You can find your Wi-Fi password printed on a sticker on the bottom or back of your home internet router if you do not remember it. The setup also asks if you want to use Bluetooth or hands-free calling — turn both on for the full experience.',
+        warning: 'Wi-Fi passwords are case-sensitive. If setup fails, double-check capitalization and that you have not mistaken a "1" for an "l" or "0" for an "O."',
+      },
+      {
+        title: 'Try your first commands',
+        content: 'Once the light ring turns blue and Alexa speaks a welcome message, try a few commands: "Alexa, what time is it?" "Alexa, what is the weather today?" "Alexa, set a 10-minute timer." "Alexa, play classical music." Speak naturally — Alexa understands full sentences, not only keywords.',
+      },
+      {
+        title: 'Set up Drop In to call family',
+        content: 'Drop In lets you call family members\' Echos hands-free, like an intercom. Each family member needs the Alexa app installed. In the app, tap Communicate, then Contacts, then turn on Allow Drop In. Then you can say "Alexa, drop in on Mom" to instantly start a voice call. Useful for checking on family members daily without making them pick up a phone.',
+      },
+    ],
+  },
+
+  {
+    slug: 'connect-iphone-to-bluetooth-hearing-aids',
+    title: 'How to Pair Bluetooth Hearing Aids to Your iPhone',
+    excerpt: 'Made for iPhone hearing aids stream phone calls, music, and FaceTime audio directly to your ears. Here is how to pair them with your iPhone.',
+    category: 'health-tech',
+    tags: ['hearing-aids', 'bluetooth', 'iphone', 'accessibility', 'seniors', 'mfi'],
+    emoji: 'iphone',
+    difficulty: 'Beginner',
+    readTime: '5 min',
+    body: `Modern Bluetooth hearing aids — including most models from Phonak, Oticon, ReSound, Starkey, and Widex — pair directly to an iPhone. When paired, phone calls, music, FaceTime audio, and even iPhone notifications stream straight into your hearing aids without an extra accessory. The audio quality is significantly better than holding the phone to your ear, and there is no echo or feedback.
+
+This works only with hearing aids that are labeled "Made for iPhone" (sometimes shown as MFi). Most premium hearing aids sold since 2018 support it. Older or basic hearing aids may need a separate streaming accessory from the manufacturer.
+
+Pairing takes about 5 minutes the first time. After that, the hearing aids reconnect automatically every time you turn them on within range of your iPhone.
+
+(Sources: Apple Support — Hearing aids, support.apple.com/HT201466; Hearing Loss Association of America, hearingloss.org)`,
+    steps: [
+      {
+        title: 'Make sure your hearing aids are charged or have fresh batteries',
+        content: 'Pairing requires both hearing aids to be on and have a strong battery. If one battery dies during pairing, you may need to start over. Charge rechargeable hearing aids fully or insert fresh batteries.',
+      },
+      {
+        title: 'Open Settings → Accessibility → Hearing Devices',
+        content: 'On your iPhone, open the Settings app. Scroll down and tap Accessibility. Under the Hearing section, tap Hearing Devices. Make sure Bluetooth is turned on (you can also enable it in the main Settings menu under Bluetooth).',
+      },
+      {
+        title: 'Open the battery doors of both hearing aids briefly',
+        content: 'Open and close the battery door (or turn the hearing aids off and on) on both hearing aids. This puts them into pairing mode for about 60 seconds. The iPhone scans for them and they should appear under "MFi Hearing Devices" on the iPhone screen.',
+        tip: 'Quick Tip: If they do not appear, try moving the hearing aids closer to the iPhone and repeating the battery door step. Some older models require a button press instead — check your hearing aid manual.',
+      },
+      {
+        title: 'Tap the hearing aids to pair them',
+        content: 'When your hearing aids appear (showing your name + Left and Right), tap them. The iPhone may show a pairing request — tap Pair on each one. After a moment, both hearing aids show as connected.',
+      },
+      {
+        title: 'Test by playing audio or making a call',
+        content: 'Play a short song or call a friend. The audio should come through your hearing aids automatically. You can adjust volume using the volume buttons on the iPhone, or by pressing buttons on the hearing aids themselves. The iPhone\'s Control Center also has a Hearing Devices control where you can adjust each ear independently.',
+      },
+      {
+        title: 'Set up a triple-click shortcut for hearing controls',
+        content: 'In Settings → Accessibility → Accessibility Shortcut, turn on "Hearing Devices." Now triple-click the side button to instantly access volume and program controls for your hearing aids — useful in restaurants or other noisy places when you want to switch quickly.',
+      },
+    ],
+  },
+
+  {
+    slug: 'use-zoom-doctor-telehealth-visit',
+    title: 'How to Join a Telehealth Doctor Visit on Zoom or Phone',
+    excerpt: 'Most doctors now offer video appointments. Here is how to join one on Zoom, or use a phone call instead if video is not working.',
+    category: 'health-tech',
+    tags: ['telehealth', 'zoom', 'doctor', 'video-visit', 'medicare', 'seniors'],
+    emoji: 'medical',
+    difficulty: 'Beginner',
+    readTime: '6 min',
+    body: `A telehealth visit is a doctor appointment by video instead of in person. The doctor sees you on a screen, you see the doctor on yours, and you have the same kind of conversation you would have in their office — without the drive or the waiting room.
+
+Most major insurance plans, including Medicare, cover telehealth visits the same as in-person appointments. The most common platform doctors use is Zoom (or a hospital-branded version of it like Zoom for Healthcare).
+
+If you are intimidated by video, do not be — most telehealth platforms also let you join by phone call only, with no video at all. The doctor still gets the visit, your insurance still covers it, and you do not need any technology you do not already have.
+
+This guide walks through joining a Zoom video visit step by step, with notes on phone-only fallback.
+
+(Sources: Medicare.gov — Telehealth, medicare.gov/coverage/telehealth; Zoom Help Center, support.zoom.us; Health and Human Services telehealth resources, telehealth.hhs.gov)`,
+    steps: [
+      {
+        title: 'Find the link or phone number from the doctor office',
+        content: 'A few days before the appointment, you should receive an email or text message from the doctor office with a meeting link (like zoom.us/j/123456) or a phone number to call. If you have not received this 24 hours before the visit, call the office and ask for the link or phone number to be re-sent.',
+        warning: 'Verify the email is from the doctor office (real domain like @stanfordhealth.org or @kaiserpermanente.org). Phishing emails sometimes pretend to be telehealth invitations to steal information.',
+      },
+      {
+        title: 'Test your camera and microphone the day before',
+        content: 'Visit zoom.us/test in any browser to run a free test meeting. Zoom checks your camera, microphone, and speaker. This takes about 2 minutes and confirms everything works before the actual appointment. If something is not working, you have time to fix it without delaying your visit.',
+        tip: 'Quick Tip: A laptop with a built-in camera works best because it props up and shows your face from the right angle. A phone or tablet works too — set it on a stable surface so you do not have to hold it.',
+      },
+      {
+        title: 'Click the Zoom link 5 minutes early',
+        content: 'About 5 minutes before your appointment time, click the Zoom link in your email or text. Your browser may prompt you to download Zoom — say Yes. The first time you join Zoom, it installs in the background and takes a minute. After that, joining is instant.',
+      },
+      {
+        title: 'Allow camera and microphone access',
+        content: 'Zoom asks permission to use your camera and microphone. Click Allow on both. You may also see a button to "Join with computer audio" — click it. You will see yourself on screen and hear a tone when the doctor joins.',
+      },
+      {
+        title: 'Wait in the virtual waiting room until the doctor arrives',
+        content: 'Most doctor offices use a Zoom feature called Waiting Room. You see a screen that says "The host will let you in soon." When the doctor is ready, you will be admitted to the meeting and the doctor appears. The visit proceeds like a normal appointment — describe your symptoms, ask questions, take notes.',
+      },
+      {
+        title: 'Join by phone if video does not work',
+        content: 'Every Zoom invitation also includes a phone number you can call to join by audio only. Look in the email for "Or by Phone" — it lists a phone number and a meeting ID. Call the number, type the meeting ID followed by # when prompted, and you join the visit by voice. Your insurance covers this the same as a video visit.',
+        tip: 'Quick Tip: Save the office\'s telehealth phone number in your phone contacts. The same number usually works for any future telehealth visit.',
+      },
+    ],
+  },
+
+  {
+    slug: 'cancel-subscriptions-iphone-android',
+    title: 'How to Find and Cancel Hidden Subscriptions on Your Phone',
+    excerpt: 'Apple and Google make subscriptions easy to start and surprisingly hard to find. Here is how to see every active subscription and cancel any of them.',
+    category: 'phone-guides',
+    tags: ['subscriptions', 'iphone', 'android', 'apple', 'google', 'money', 'seniors'],
+    emoji: 'document',
+    difficulty: 'Beginner',
+    readTime: '5 min',
+    body: `Apple and Google bill many app subscriptions through your Apple ID or Google Play account. This is convenient — you do not have to enter a credit card for each app — but it also means subscriptions can pile up where you cannot easily see them. Many people are surprised to find $5 here, $10 there, all charged to a card they barely remember signing up for.
+
+Both Apple and Google have a single screen that lists every active subscription. From that screen, you can cancel any of them with two taps. The cancellation always takes effect at the end of the current billing period, so you keep access to anything you already paid for.
+
+This guide shows where to look on iPhone and Android, and what to do about lifetime subscriptions or "free trials" that auto-renew.
+
+(Sources: Apple Support — Subscriptions, support.apple.com/HT202039; Google Play Help — Subscriptions, support.google.com/googleplay; FTC consumer information on auto-renewal, consumer.ftc.gov)`,
+    steps: [
+      {
+        title: 'On iPhone: open Settings → your name → Subscriptions',
+        content: 'On your iPhone, open the Settings app. Tap your name at the very top of the screen. On the next screen, tap Subscriptions. This shows every active subscription billed through Apple, the price, and the next charge date.',
+      },
+      {
+        title: 'On Android: open Google Play → menu → Payments and subscriptions',
+        content: 'On Android, open the Google Play Store app. Tap your profile icon at the top right. Tap Payments and subscriptions, then Subscriptions. This shows every active subscription billed through Google.',
+      },
+      {
+        title: 'Review what is active and how much it costs',
+        content: 'Look through the list carefully. Common surprises: trial subscriptions that turned into paid ones (Apple TV+, HBO Max, Peacock), apps you tried once and forgot about, dating apps, weather apps, and photo apps. The screen shows the price for each.',
+        tip: 'Quick Tip: Add up everything you see. Many people are paying $50 or more per month in subscriptions they do not actively use. Cancelling unused ones is one of the fastest ways to lower your monthly expenses.',
+      },
+      {
+        title: 'Tap any subscription to cancel it',
+        content: 'Tap a subscription to see details. Scroll down and tap "Cancel Subscription" (Apple) or "Cancel subscription" (Google). Confirm. You will keep access until the end of the current billing period, then the app stops charging.',
+      },
+      {
+        title: 'Watch for "free trial" auto-renewals',
+        content: 'Many apps offer a free trial that requires a credit card and auto-renews into a paid subscription unless you cancel before the trial ends. To prevent surprise charges, the moment you start a trial, immediately go to Subscriptions and tap Cancel. You keep access for the full trial period, but the auto-renewal is turned off.',
+        warning: 'Some companies (notably gym apps and dating apps) make cancellation deliberately confusing inside the app itself. The Apple/Google subscription screens always work, regardless of what the app shows you.',
+      },
+      {
+        title: 'Check your bank statement for direct subscriptions',
+        content: 'Some subscriptions are not billed through Apple or Google — instead, you give your credit card directly to the company (like Netflix, Spotify Family, or many magazine subscriptions). Review your monthly credit card statement for any recurring charges. Cancel directly with the company by calling their support number.',
+      },
+    ],
+  },
+
+  {
+    slug: 'set-up-iphone-passwords-app',
+    title: 'How to Use the Built-In Passwords App on iPhone',
+    excerpt: 'iPhone now includes a free Passwords app that saves and auto-fills your passwords across all your devices. Here is how to set it up.',
+    category: 'safety-guides',
+    tags: ['passwords', 'iphone', 'apple', 'security', 'seniors', 'icloud'],
+    emoji: 'shield',
+    difficulty: 'Beginner',
+    readTime: '6 min',
+    body: `Starting with iOS 18, every iPhone includes a free Passwords app that saves your passwords, fills them in automatically when you sign into websites and apps, warns you about reused or compromised passwords, and syncs everything to your other Apple devices through iCloud.
+
+This means you do not need to remember every password. You only need to remember your iPhone passcode (or use Face ID/Touch ID), and the Passwords app handles the rest. It is also a free alternative to paid password managers like 1Password or LastPass — for many people, it covers everything they need.
+
+Passwords saved here are encrypted with end-to-end encryption, meaning even Apple cannot read them. Only you, signed into your Apple ID with Face ID or your passcode, can unlock the vault.
+
+(Sources: Apple Support — Passwords app, support.apple.com/passwords)`,
+    steps: [
+      {
+        title: 'Find the Passwords app on your iPhone',
+        content: 'On any iPhone running iOS 18 or later, the Passwords app is pre-installed. Swipe left until you reach the App Library, search for "Passwords," and tap it. The first time you open it, the iPhone asks for Face ID, Touch ID, or your passcode to unlock the vault.',
+      },
+      {
+        title: 'Let Passwords import what you already have',
+        content: 'If you have ever asked Safari to save a password, those passwords are already in the Passwords app. Look at the list — you may be surprised how many are there. The app organizes them alphabetically by website name.',
+      },
+      {
+        title: 'Add a password manually',
+        content: 'Tap the "+" button to add a password. Enter the website (like "chase.com"), your username, and the password. Save. Next time you visit that website on your iPhone or Mac, the iPhone offers to fill in your saved password automatically.',
+        tip: 'Quick Tip: Use a unique password for every website. The Passwords app suggests a strong unique password every time you sign up for a new site — tap "Use Strong Password" when offered. The app remembers it for you.',
+      },
+      {
+        title: 'Turn on Sign in with Apple where possible',
+        content: 'Many websites offer "Sign in with Apple" as a sign-in option. This skips passwords entirely — Apple verifies your identity and the website never sees your real email address. Where available, use this option to reduce your password list.',
+      },
+      {
+        title: 'Set up sharing with a spouse or family member',
+        content: 'For shared accounts (like a streaming service or shared utilities), tap a password, then "Share with Family." Family members you have added in your iCloud Family Sharing group can view and use the shared password. Useful when one spouse manages most accounts but the other needs occasional access.',
+      },
+      {
+        title: 'Review security warnings',
+        content: 'Tap "Security" inside the app. The Passwords app shows you any passwords that have been part of known data breaches (when companies accidentally leak passwords), reused across sites, or weak. Update these one by one — the app provides a link directly to each website\'s password change page.',
+      },
+    ],
+  },
+
+  {
+    slug: 'use-iphone-voice-typing-dictation',
+    title: 'Use Voice Typing on iPhone to Send Text Messages and Emails Faster',
+    excerpt: 'Speak instead of type — iPhone\'s built-in voice typing is fast, accurate, and works in any app where you can type. Here is how.',
+    category: 'phone-guides',
+    tags: ['dictation', 'voice-typing', 'iphone', 'accessibility', 'seniors', 'speech'],
+    emoji: 'iphone',
+    difficulty: 'Beginner',
+    readTime: '4 min',
+    body: `Typing on a phone keyboard can be slow and frustrating, especially with arthritis or stiff fingers. iPhone has built-in voice typing that lets you speak whatever you want to write, and the iPhone types it for you in real time. It works in text messages, emails, Notes, search bars — anywhere you can type.
+
+The voice recognition is excellent (much better than it was a few years ago) and works without an internet connection on iPhone 12 and newer. Punctuation is added automatically, and you can also speak punctuation marks aloud ("comma," "period," "question mark") for full control.
+
+You do not need to download anything or set up an account. Voice typing is free and built in.
+
+(Sources: Apple Support — Dictation, support.apple.com/HT207525)`,
+    steps: [
+      {
+        title: 'Turn on Dictation in Settings',
+        content: 'Open Settings → General → Keyboard. Make sure "Enable Dictation" is turned on (green). This is on by default on most iPhones, but worth checking.',
+      },
+      {
+        title: 'Tap any text field and look for the microphone icon',
+        content: 'In any app where you can type — Messages, Mail, Notes, Safari search — tap to start typing. On the on-screen keyboard, look for a small microphone icon in the bottom right corner. Tap it. The microphone fills the keyboard area and starts listening.',
+      },
+      {
+        title: 'Speak your message naturally',
+        content: 'Speak as you would talk to a friend. The iPhone types what you say in real time. You can pause, think, and continue — voice typing waits up to 60 seconds before stopping. Tap anywhere to stop early.',
+        tip: 'Quick Tip: Voice typing now adds punctuation automatically based on the rhythm of your speech. You do not have to say "period" or "comma" — but you can if you prefer more control.',
+      },
+      {
+        title: 'Speak special characters when needed',
+        content: 'For things voice typing cannot guess, speak them. Examples: "new line" creates a line break; "smiley face" inserts a 🙂; "exclamation point" inserts !; "ellipsis" inserts ...; "all caps" before a word makes it ALL CAPS. These are useful in emails or longer messages.',
+      },
+      {
+        title: 'Edit with your finger after dictating',
+        content: 'After voice typing, your usual keyboard returns. You can correct any word the iPhone misheard by tapping it and selecting an alternate from the suggestions, or tapping and editing manually. Most short messages need no edits.',
+      },
+      {
+        title: 'Use voice typing in any language you speak',
+        content: 'iPhone can dictate in over 30 languages including Spanish, French, Italian, German, Mandarin, and Japanese. Add a language in Settings → General → Keyboard → Keyboards → Add New Keyboard. After adding, the microphone icon respects whichever keyboard is currently active.',
+      },
+    ],
+  },
+
+  {
+    slug: 'print-from-iphone-android-airprint',
+    title: 'How to Print from Your Phone (No Computer Needed)',
+    excerpt: 'You can print directly from any modern iPhone or Android phone to most Wi-Fi printers — no computer required. Here is how.',
+    category: 'how-to',
+    tags: ['print', 'airprint', 'iphone', 'android', 'wifi', 'seniors', 'printer'],
+    emoji: 'document',
+    difficulty: 'Beginner',
+    readTime: '5 min',
+    body: `Most home printers sold in the past several years can print directly from a phone over Wi-Fi — no computer needed. iPhones use a feature called AirPrint. Android phones use Google Cloud Print or a manufacturer app (HP Smart, Epson iPrint, Canon Print, Brother iPrint).
+
+The setup is usually simple: as long as your phone and printer are on the same home Wi-Fi network, your phone can find the printer automatically. After the first time, printing takes about three taps.
+
+If your printer is older than ~2018, it may not support AirPrint. In that case, the manufacturer app or a free service like Printer Pro can usually still get you printing. This guide focuses on the AirPrint and HP Smart paths since they cover the majority of home printers.
+
+(Sources: Apple Support — AirPrint, support.apple.com/HT201311; HP Smart app, hp.com/go/mobileprinting)`,
+    steps: [
+      {
+        title: 'Make sure your printer is on and connected to Wi-Fi',
+        content: 'Turn on your printer. Look at its small screen or status lights — it should show that it is connected to your home Wi-Fi network. If not, follow the printer\'s setup card or call your printer manufacturer\'s support line. The printer must be on the same Wi-Fi network as your phone.',
+      },
+      {
+        title: 'On iPhone: open the document, photo, or page you want to print',
+        content: 'Open whatever you want to print — a photo in Photos, an email in Mail, a recipe in Safari. Tap the Share button (a square with an arrow pointing up). Scroll down through the menu and tap Print.',
+      },
+      {
+        title: 'iPhone: pick your printer and settings',
+        content: 'On the Print Options screen, tap "Select Printer." Your iPhone scans the Wi-Fi network and shows all available printers. Tap your printer. You can choose how many copies, page range, color or black-and-white, and paper size. Tap Print at the top right.',
+        tip: 'Quick Tip: After you print to a printer once, the iPhone remembers it. Future prints default to the same printer automatically.',
+      },
+      {
+        title: 'On Android: install the manufacturer app',
+        content: 'Most Android phones can print without an app, but the manufacturer app gives you more options. For HP printers, install HP Smart from Google Play. For Epson, install Epson iPrint. For Canon, install Canon Print. For Brother, install Brother iPrint&Scan. Open the app and follow the setup — it finds your printer automatically.',
+      },
+      {
+        title: 'Android: print from any app',
+        content: 'In any app, tap the share or menu button and choose Print. If you do not see Print, tap "Print" inside the manufacturer app instead — most have a "Print Anything" or "Documents" section where you can browse to the file you want.',
+      },
+      {
+        title: 'Troubleshoot if the printer does not appear',
+        content: 'If your phone cannot find the printer, check that both are on the same Wi-Fi network (look at your phone\'s Wi-Fi settings — they should show the same network name). Restart the printer (turn off, wait 30 seconds, turn on). Restart your phone. If it still fails, call your printer manufacturer support — most offer free phone help.',
+      },
+    ],
+  },
+
+  {
+    slug: 'reduce-spam-calls-iphone-android',
+    title: 'How to Block and Silence Spam Calls on iPhone and Android',
+    excerpt: 'Spam calls are exhausting. iPhone and Android have free, built-in tools that filter most of them out. Here is how to turn them on.',
+    category: 'safety-guides',
+    tags: ['spam', 'phone-calls', 'iphone', 'android', 'block', 'safety', 'seniors'],
+    emoji: 'shield',
+    difficulty: 'Beginner',
+    readTime: '5 min',
+    body: `Most Americans now receive several spam calls per day — fake car warranty offers, fake Medicare offers, fake IRS calls, and worse. Both iPhone and Android have built-in features that send unknown callers to voicemail automatically, label suspected spam in red, and let you block specific numbers. Used together, these tools can cut spam call volume by 80 to 90 percent.
+
+This guide covers the four free tools that work for nearly everyone: Silence Unknown Callers (iPhone), Caller ID warnings (both phones), Do Not Disturb / Focus Mode, and your carrier\'s free spam-blocking service (which works for both iPhone and Android).
+
+You do not need a paid app. Apps like RoboKiller and Hiya have free tiers, but the built-in tools are usually enough.
+
+(Sources: FTC — Stop unwanted calls, consumer.ftc.gov/articles/how-stop-unwanted-calls; AT&T ActiveArmor, att.com/activearmor; Verizon Call Filter, verizon.com/solutions-and-services/call-filter)`,
+    steps: [
+      {
+        title: 'On iPhone: turn on Silence Unknown Callers',
+        content: 'On your iPhone, open Settings → Phone → Silence Unknown Callers. Turn the switch on (green). Now any caller whose number is not in your contacts, recent outgoing calls, or Siri suggestions goes straight to voicemail. Real callers can still leave a message; spam callers usually do not.',
+        tip: 'Quick Tip: This may also silence legitimate calls from doctors, pharmacies, or delivery drivers. Either add their numbers to your contacts in advance, or check your voicemail regularly for any messages.',
+      },
+      {
+        title: 'On Android: turn on Caller ID and Spam Protection',
+        content: 'On most Android phones with the Google Phone app, open the Phone app → tap the three-dot menu → Settings → Caller ID and spam → turn on "See caller and spam ID" and "Filter spam calls." Suspected spam calls now appear in red and are sent to voicemail automatically.',
+      },
+      {
+        title: 'Sign up for your carrier\'s free spam blocking',
+        content: 'AT&T offers ActiveArmor (free at att.com/activearmor). Verizon offers Call Filter (free at verizon.com/call-filter). T-Mobile offers Scam Shield (free at t-mobile.com/scamshield). Each is free at the basic tier and uses carrier network-level data to block known scam numbers before they ring your phone. Sign up through the carrier\'s app or website.',
+      },
+      {
+        title: 'Block specific recurring callers',
+        content: 'When a spam call gets through, you can block that exact number so it never rings again. On iPhone, tap the red "i" next to the call in your Recents list, scroll to the bottom, and tap "Block this Caller." On Android, long-press the number in the call log and tap Block.',
+      },
+      {
+        title: 'Add yourself to the National Do Not Call Registry',
+        content: 'Visit donotcall.gov and enter your phone number. Legitimate telemarketers are required to stop calling within 31 days. This does not stop scammers — they ignore the law — but it cuts the volume from real telemarketers significantly. The registration is permanent and free.',
+      },
+      {
+        title: 'Never call back or press buttons during a spam call',
+        content: 'If a spam call gets through and you answer, hang up immediately. Do not press buttons even if the message says "press 9 to be removed." Pressing anything confirms your number is active and triggers more calls. Hang up. Likewise, never call back a missed call from an unfamiliar number — many spam scams rely on call-back charges.',
+        warning: 'Some scams imitate familiar local area codes ("neighbor spoofing"). If you do not recognize the number, let it go to voicemail.',
+      },
+    ],
+  },
+
+  {
+    slug: 'fix-slow-windows-pc-2026',
+    title: 'Make a Slow Windows PC Faster (No Cost, No Risky Tools)',
+    excerpt: 'A slow Windows PC is usually fixed in 30 minutes with three free, built-in steps. Skip the "PC Cleaner" ads — these tools come with Windows.',
+    category: 'windows-guides',
+    tags: ['windows', 'slow-pc', 'speed', 'cleanup', 'seniors', 'free'],
+    emoji: 'document',
+    difficulty: 'Beginner',
+    readTime: '7 min',
+    body: `If your Windows PC has gotten slower over time, you do not need to buy a new computer or pay for "PC Optimizer" software. Most slowness comes from three things: too many programs starting automatically when Windows boots, too little free disk space, and too many old temporary files cluttering the system. Each is fixable in a few minutes with tools built into Windows.
+
+Avoid downloading "PC Cleaner" or "Speed Booster" tools advertised online. Many of them are bundled with adware or actively make problems worse. The Windows tools described in this guide are safe, free, and made by Microsoft.
+
+This guide is written for Windows 10 and 11. The exact menus look slightly different in each version, but the steps are similar.
+
+(Sources: Microsoft Support — Improve PC performance, support.microsoft.com/help/4577042; Windows 11 maintenance tips, microsoft.com/windows)`,
+    steps: [
+      {
+        title: 'Restart your computer (do not skip this)',
+        content: 'It sounds basic, but most people leave their Windows PC running for weeks at a time. Each program you open uses memory; some never fully release it. Restarting clears everything. Click the Start menu → Power button → Restart. Wait for the PC to fully boot up before testing again.',
+      },
+      {
+        title: 'Disable programs that auto-start with Windows',
+        content: 'Many apps install themselves to launch when Windows boots, slowing the boot process. Press Ctrl + Shift + Esc to open Task Manager. Click the "Startup apps" tab. You see a list of programs that run automatically. For each one you do not need (Spotify, Adobe, manufacturer "helpers" — leave Microsoft items alone), right-click and choose Disable. They still work when you launch them manually; they no longer slow boot.',
+        warning: 'Do not disable anything labeled "Microsoft," "Windows Defender," or anything you do not recognize. When in doubt, leave it on. Disabling system items can break Windows.',
+      },
+      {
+        title: 'Free up disk space with Storage Sense',
+        content: 'A nearly-full hard drive slows Windows dramatically. Open Settings → System → Storage. Turn on "Storage Sense" — this automatically deletes temporary files and old downloads. Then click "Cleanup recommendations" to see what is using space. Common big offenders: old Windows update files, recycle bin, downloads folder.',
+      },
+      {
+        title: 'Run Windows Defender to scan for malware',
+        content: 'Windows comes with a free, excellent antivirus called Microsoft Defender. Open the Start menu, search for "Windows Security," and click it. Click "Virus and threat protection," then "Quick scan." Let it finish — about 2 to 5 minutes. If anything is found, follow the prompts to remove it.',
+        tip: 'Quick Tip: For deeper checks, click "Scan options" and run a Microsoft Defender Offline scan once a year. This restarts the PC and scans before Windows fully loads, catching things that hide while Windows is running.',
+      },
+      {
+        title: 'Turn off animations to feel snappier',
+        content: 'Windows animations look nice but slow things down on older PCs. Open Settings → Accessibility → Visual effects. Turn off "Animation effects." The PC instantly feels faster, especially when opening menus and switching apps.',
+      },
+      {
+        title: 'Update Windows fully',
+        content: 'Open Settings → Windows Update → Check for updates. Install everything available, including optional driver updates. Microsoft regularly fixes performance issues in updates. After installing, restart and test again.',
+      },
+    ],
+  },
+
+  {
+    slug: 'use-airpods-with-iphone-mac-and-tv',
+    title: 'How to Use AirPods with iPhone, Mac, Apple TV, and Even Some Hearing Aids',
+    excerpt: 'AirPods do more than music. They work as hearing assistants, take phone calls hands-free, and stream TV audio privately. Here is how.',
+    category: 'app-guides',
+    tags: ['airpods', 'apple', 'bluetooth', 'hearing', 'iphone', 'mac', 'apple-tv', 'seniors'],
+    emoji: 'iphone',
+    difficulty: 'Beginner',
+    readTime: '6 min',
+    body: `AirPods are Apple\'s wireless earbuds. They pair instantly with any Apple device signed into your Apple ID, switch automatically between devices, and include features that go beyond music. Recent models can amplify quiet conversations like a hearing aid (a feature called Conversation Boost), let you hear announcements at a museum, and stream Apple TV audio privately so you can watch a late-night show without disturbing anyone.
+
+AirPods 4 with active noise cancellation cost about $179. Older AirPods 3 are around $129. AirPods Pro 2 are $249. All three work the same with iPhones — the differences are mostly in noise cancelling and how they fit (in-ear vs. open-style).
+
+This guide covers the most useful AirPods features beyond music alone — pairing, switching devices, hearing assistance, and TV audio.
+
+(Sources: Apple Support — AirPods, support.apple.com/airpods)`,
+    steps: [
+      {
+        title: 'Pair AirPods with your iPhone (10 seconds)',
+        content: 'Open the AirPods case lid near your iPhone (the case must be charged). Within seconds, an animation appears on the iPhone screen showing the AirPods. Tap "Connect." Pairing is done. The AirPods now appear on every Apple device signed into the same Apple ID — you do not need to pair them again to your Mac, iPad, or Apple TV.',
+      },
+      {
+        title: 'Switch between devices automatically',
+        content: 'AirPods know which Apple device is most active. If you take a call on your iPhone while watching Apple TV, AirPods switch to the iPhone automatically. When the call ends, they switch back to the TV. You can also force a switch — open Control Center on any device and tap the audio source button.',
+        tip: 'Quick Tip: AirPods Pro 2 have automatic switching. Older AirPods may require manually selecting them in Bluetooth settings on each device.',
+      },
+      {
+        title: 'Use Conversation Boost to amplify nearby voices',
+        content: 'AirPods Pro have a feature called Conversation Boost that amplifies the voices of people near you in noisy environments — like a restaurant or family gathering. Open Settings → Accessibility → Audio/Visual → Headphone Accommodations → Transparency Mode → Conversation Boost. Toggle on. Now your AirPods focus on speech in front of you while reducing background noise.',
+      },
+      {
+        title: 'Stream Apple TV audio privately to AirPods',
+        content: 'Late-night TV without disturbing your spouse: open the Apple TV app on the TV. While a show is playing, open Control Center on your iPhone (swipe from top right corner). Tap the audio source icon and select your AirPods. Now the TV audio plays in your AirPods only.',
+      },
+      {
+        title: 'Listen to a friend across a room with Live Listen',
+        content: 'Live Listen turns your iPhone into a microphone that streams to your AirPods. Useful for hearing someone speaking softly or hearing a TV from a distance. Open Settings → Control Center and add "Hearing." Then in Control Center, tap Hearing → Live Listen → place your iPhone near the speaker. Their voice plays clearly through your AirPods.',
+      },
+      {
+        title: 'Take phone calls hands-free',
+        content: 'When the iPhone rings while AirPods are in your ears, double-tap an AirPod (or pinch the stem on AirPods Pro) to answer. The microphone is built into the AirPods, so you can talk without holding the phone. Double-tap again to hang up.',
+      },
+    ],
+  },
+
+  {
+    slug: 'use-uber-lyft-first-time-seniors',
+    title: 'How to Use Uber or Lyft for the First Time',
+    excerpt: 'Uber and Lyft let you hail a ride from your phone — no cash, no waving down a taxi. Here is the step-by-step for first-time riders.',
+    category: 'app-guides',
+    tags: ['uber', 'lyft', 'rideshare', 'seniors', 'transportation'],
+    emoji: 'cart',
+    difficulty: 'Beginner',
+    readTime: '6 min',
+    body: `Uber and Lyft are smartphone apps that let you call for a ride from any address to any address. A driver in a regular car (not a taxi) picks you up, drives you to your destination, and the fare is automatically charged to a credit card you saved in the app. There is no cash and no tip pressure (tips are optional and easy to leave through the app).
+
+Both services are popular with seniors who no longer drive, or who want a ride home from a medical appointment, dinner with friends, or a place where parking is hard to find. Many cities have specific senior programs — including discounted rides through Lyft\'s Lyft Up partnership and Uber Health for medical appointments.
+
+The first ride is the most intimidating. After the first one, every subsequent ride takes about 30 seconds to book. This guide focuses on Uber but Lyft works almost identically.
+
+(Sources: Uber Help, help.uber.com; Lyft Help, help.lyft.com; AARP — Rideshare for seniors, aarp.org/ride-share)`,
+    steps: [
+      {
+        title: 'Download the Uber app and create an account',
+        content: 'Open the App Store (iPhone) or Google Play (Android) and search for "Uber." Install the official app — look for the black square with white "Uber" text. Open it and tap "Sign up" or "Create an account." Enter your phone number; Uber sends a 6-digit code to confirm. Then add your name, email, and a credit or debit card.',
+        warning: 'Use the official Uber app only. Several scam apps with similar names exist on the app store. The real Uber has tens of millions of reviews.',
+      },
+      {
+        title: 'Set your home address',
+        content: 'Tap the menu icon (three lines) → Settings → Saved Places. Add your home address as "Home." Add common destinations like your doctor or grocery store. Saved places make booking faster — you can tap "Home" to set it as the destination instead of typing every time.',
+      },
+      {
+        title: 'Book your first ride',
+        content: 'Open the app. The home screen has a "Where to?" search bar. Tap it. Type or select a saved destination. Uber shows you ride options (UberX is the basic, cheapest one — pick that). It also shows the fare estimate and how long until a driver arrives. Tap "Choose UberX" then "Confirm UberX."',
+      },
+      {
+        title: 'Wait for the driver and verify the car',
+        content: 'After booking, the app shows the driver\'s name, photo, license plate, and car color. When they arrive, verify all three before getting in: license plate, car color, and driver name. The driver should also confirm your name. If anything does not match, do not get in — call another ride.',
+        tip: 'Quick Tip: Wait inside or in a well-lit area until you see the actual car arrive. The app shows a live map of the driver approaching.',
+      },
+      {
+        title: 'During and after the ride',
+        content: 'You do not need to give the driver directions — they have GPS and your destination already. You can sit anywhere in the car (front or back). When you arrive, get out — there is no need to pay or sign anything. The fare is automatically charged. The app then asks you to rate the driver (5 stars is normal for a fine ride) and lets you add an optional tip.',
+      },
+      {
+        title: 'Save the support number in case of issues',
+        content: 'For any problem during a ride, tap the shield icon in the app for safety options including Emergency Assistance (which calls 911 with your live location). For non-emergency issues like being charged the wrong amount, go to Help in the app and tap "Report Issue." Both Uber and Lyft refund mistakes promptly when reported through the app.',
+      },
+    ],
+  },
+
+  {
+    slug: 'set-up-iphone-medication-reminders',
+    title: 'Set Up Medication Reminders on iPhone (Built-In, Free)',
+    excerpt: 'iPhone\'s Health app has a free Medications feature that reminds you to take pills, tracks your history, and warns about interactions.',
+    category: 'health-tech',
+    tags: ['medications', 'iphone', 'health', 'reminders', 'apple', 'seniors'],
+    emoji: 'medical',
+    difficulty: 'Beginner',
+    readTime: '5 min',
+    body: `iPhone\'s Health app includes a free Medications feature that reminds you when to take each pill, lets you log doses you have taken, tracks your history over time, and warns you about possible interactions between medications. It is private — Apple does not see your data — and works without a subscription or extra app.
+
+You enter each medication once (name, dosage, schedule, and what it looks like). The iPhone sends a notification at each dose time. You tap to confirm you took it. The Health app then saves the history, which you can show your doctor at your next appointment.
+
+The Medications feature works on iPhone running iOS 16 or later. Older iPhones can use the Reminders app for a simpler version.
+
+(Sources: Apple Support — Medications in Health, support.apple.com/HT213355; FDA Drug Information, fda.gov/drugs)`,
+    steps: [
+      {
+        title: 'Open the Health app and find Medications',
+        content: 'On any iPhone, the Health app is pre-installed (white icon with a red heart). Open it. Tap "Browse" at the bottom. Scroll down and tap "Medications." Tap "Add Medication."',
+      },
+      {
+        title: 'Enter each medication',
+        content: 'Type the medication name (the iPhone offers a list as you type). Pick the form (tablet, capsule, liquid, inhaler), strength (like 10 mg), and the dosage you take (one pill, two pills). Set the schedule — daily at 8 AM, twice a day, or "as needed." You can add a photo of what the pill looks like.',
+        tip: 'Quick Tip: Add medications one at a time. Even over-the-counter ones like aspirin or vitamin D are worth adding — the Health app warns of interactions across the whole list.',
+      },
+      {
+        title: 'Turn on reminders',
+        content: 'After adding a medication, tap "Add Reminders" to schedule notifications. The iPhone reminds you at each dose time. You can mark the reminder as "Taken" to log it, or "Skip" if you missed a dose. Either way, the Health app records what happened.',
+      },
+      {
+        title: 'Check for interactions',
+        content: 'After adding two or more medications, tap "Interactions" in the Medications screen. The iPhone shows any known interactions or warnings. This is a starting point — always discuss interactions with your doctor or pharmacist — but it can highlight issues to ask about.',
+      },
+      {
+        title: 'Share your medication list with family or doctor',
+        content: 'In Health → Sharing, you can share medication info with a family member who also has an iPhone. They see your list, your schedule, and whether you have been taking your medications on time. For doctors, tap a medication, then "Share Medication" to email or print a summary.',
+      },
+      {
+        title: 'For older iPhones: use the Reminders app instead',
+        content: 'If your iPhone is too old for the Medications feature, the built-in Reminders app works as an alternative. Open Reminders, tap +, type "Take morning pills" or any medication name, tap the (i) icon, and set a daily repeating time. The reminder appears on your lock screen at that time every day. Less rich than the Health app, but free and reliable.',
+      },
+    ],
+  },
+
+  {
+    slug: 'use-google-translate-camera-real-time',
+    title: 'Use Google Translate to Translate Anything with Your Phone Camera',
+    excerpt: 'Point your phone at a foreign menu, sign, or label and Google Translate shows you the English translation in real time. Here is how.',
+    category: 'app-guides',
+    tags: ['translate', 'google-translate', 'travel', 'camera', 'language', 'seniors'],
+    emoji: 'document',
+    difficulty: 'Beginner',
+    readTime: '4 min',
+    body: `Google Translate is a free app that translates between over 100 languages. The most useful feature for travelers and people who deal with foreign-language documents is the camera — point your phone at any text, and Google Translate replaces the words on screen with English in real time.
+
+You can also speak into the app and have it translate aloud (useful for conversations with someone who speaks a different language), translate handwritten notes by drawing on the screen, or download languages for offline use (so it works without internet, perfect for international travel).
+
+The camera translation works for menus in restaurants, signs in airports, prescription labels in foreign pharmacies, ingredient lists, road signs, and product packaging. It is one of the most genuinely useful free apps available.
+
+(Sources: Google Translate Help, support.google.com/translate)`,
+    steps: [
+      {
+        title: 'Install Google Translate',
+        content: 'Open the App Store (iPhone) or Google Play (Android) and search for "Google Translate." Install the app — look for the official Google logo. Open it and pick your two languages (one you speak, one you want to translate to or from).',
+      },
+      {
+        title: 'Tap the camera icon',
+        content: 'On the Google Translate home screen, tap the Camera icon. Allow Google Translate to use your camera when prompted. Point the camera at any text — a foreign menu, a road sign, a label.',
+      },
+      {
+        title: 'Watch the text translate live',
+        content: 'The app overlays the English translation directly on top of the foreign text in real time. Hold the camera steady and the words appear right where the original text was. This works for menus, signs, ingredients, prescription labels, instruction sheets — anything with printed text.',
+        tip: 'Quick Tip: For a clearer image, tap the shutter button to take a picture. Then tap and drag your finger across the words you want translated more carefully. You can copy the translated text or have the iPhone read it aloud.',
+      },
+      {
+        title: 'Use Conversation mode for two-way talking',
+        content: 'Tap "Conversation" on the home screen. Tap the microphone for your language and speak. Google Translate shows the translation in the other language, then plays it aloud through the speaker. The other person can speak back into the same app and you hear the English. Useful for talking to a non-English-speaking neighbor, doctor visit interpreter, or shopkeeper while traveling.',
+      },
+      {
+        title: 'Download languages for offline use',
+        content: 'Before traveling internationally, download your destination\'s language so the app works without Wi-Fi or data. On the home screen, tap your profile icon → "Downloaded languages." Tap the download arrow next to languages you want offline. Each takes about 50 MB of phone storage.',
+      },
+      {
+        title: 'Save translations you use often',
+        content: 'After translating something, tap the star icon to save it. Saved translations appear under "Phrasebook" — useful for common medical phrases, food allergies, or directions you might need repeatedly while traveling.',
+      },
+    ],
+  },
+
+  {
+    slug: 'organize-icloud-storage-iphone-backup',
+    title: 'Make Sense of iCloud Storage (and Stop Getting "Storage Full" Warnings)',
+    excerpt: 'Apple\'s "iCloud Storage Full" warning is one of the most confusing notifications. Here is what it actually means and how to fix it.',
+    category: 'phone-guides',
+    tags: ['icloud', 'storage', 'backup', 'iphone', 'apple', 'seniors'],
+    emoji: 'iphone',
+    difficulty: 'Beginner',
+    readTime: '7 min',
+    body: `Apple gives every Apple ID 5 GB of free iCloud storage. iCloud is where your iPhone backs up — photos, messages, app data — so you can restore everything if you lose your phone. 5 GB is small. Most people fill it within a year and start receiving "iCloud Storage Full" warnings, which then prevent backups, prevent new photos from syncing, and clutter the screen with reminders.
+
+You have three options: free up space by deleting old backups or photos, ignore the warnings (not recommended — your phone is no longer being backed up), or upgrade to iCloud+ for $0.99 per month for 50 GB or $2.99 per month for 200 GB. The 50 GB plan is enough for most people.
+
+This guide explains what is using your iCloud space, how to clean it up, and whether to upgrade.
+
+(Sources: Apple Support — iCloud storage, support.apple.com/HT201318; iCloud+ pricing, apple.com/icloud)`,
+    steps: [
+      {
+        title: 'Check what is taking up space',
+        content: 'Open Settings on your iPhone. Tap your name at the top. Tap iCloud. You see a colored bar showing what is using your iCloud space — usually Photos and Backups are the biggest. Below the bar is a "Manage Storage" or "Manage Account Storage" link. Tap it.',
+      },
+      {
+        title: 'Delete old device backups',
+        content: 'In Manage Storage, tap "Backups." You see backups of every Apple device you have ever used with your Apple ID — including old iPads or iPhones you no longer have. Tap any backup for an old device, scroll down, and tap "Delete Backup." This often frees several GB instantly.',
+        tip: 'Quick Tip: Do NOT delete the backup of your current iPhone. Always look at the device name carefully. The current iPhone is at the top of the list.',
+      },
+      {
+        title: 'Move photos to Google Photos for free unlimited backup',
+        content: 'Photos are usually the biggest user of iCloud space. A free alternative: install Google Photos (15 GB free) or use both. Once Google Photos has copies of your photos, you can safely delete them from iCloud. Many people use both — Apple Photos for instant access, Google Photos as a free unlimited backup.',
+      },
+      {
+        title: 'Turn off iCloud backups for apps you do not need',
+        content: 'In Manage Storage, scroll through the list of apps. Each shows how much iCloud space it uses for backups. For apps you do not care about restoring (like a casual game), tap the app, then "Turn Off and Delete from iCloud." This removes that app\'s data from iCloud and frees space.',
+        warning: 'Do not turn off backup for important apps like Mail, Calendar, Contacts, or anything you would miss if your phone broke. The whole point of iCloud is to restore those.',
+      },
+      {
+        title: 'Decide whether to upgrade',
+        content: 'If your iCloud is full and you would rather not delete things, the 50 GB iCloud+ plan is $0.99/month and is plenty for most people. The 200 GB plan ($2.99/month) is enough to share storage across a whole family and includes Apple\'s privacy features. To upgrade, in Manage Storage, tap "Upgrade" or "Change Storage Plan." Cancel any time.',
+      },
+      {
+        title: 'Confirm your phone is being backed up',
+        content: 'After cleaning up or upgrading, confirm backups are working. Settings → your name → iCloud → iCloud Backup. The "Last successful backup" date should be within the past few days. If not, tap "Back Up Now" to manually trigger one. From now on, the iPhone backs up automatically when on Wi-Fi and charging overnight.',
+      },
+    ],
+  },
+
+  {
+    slug: 'use-shazam-iphone-name-that-song',
+    title: 'Find the Name of Any Song You Hear with Shazam (Built Into iPhone)',
+    excerpt: 'Hear a song on the radio or in a store and want to know what it is? Shazam identifies any song in seconds — and is built into iPhone.',
+    category: 'entertainment',
+    tags: ['shazam', 'music', 'iphone', 'song-id', 'apple', 'seniors'],
+    emoji: 'music',
+    difficulty: 'Beginner',
+    readTime: '3 min',
+    body: `Shazam is a free service that identifies songs by listening to them. You hear a song on the car radio, in a restaurant, or in a store, and Shazam tells you the name of the song, the artist, and where to find it. It works in seconds.
+
+Apple owns Shazam, and starting with iOS 15, Shazam is built directly into iPhone — you do not need to download an app. You can ask Siri "What song is this?" or add a Shazam button to Control Center for one-tap identification.
+
+There is also a free Shazam app available on iPhone and Android with extra features like saved history of every song you have identified.
+
+(Sources: Apple Support — Identify music with Shazam, support.apple.com/HT212725)`,
+    steps: [
+      {
+        title: 'Ask Siri "What song is this?"',
+        content: 'When you hear a song, hold down the side button on your iPhone (or say "Hey Siri") and ask "What song is this?" Siri listens for a few seconds and answers with the song name and artist. You can then tap "Open in Music" or "Open in Spotify" to play the full song or save it.',
+      },
+      {
+        title: 'Add Shazam to Control Center for one-tap identification',
+        content: 'For faster access, add a Shazam button to Control Center. Open Settings → Control Center. Scroll down to "Music Recognition" and tap the green + to add it. Now swipe down from the top right corner of any screen to access Control Center, and tap the Shazam icon to identify any song playing nearby.',
+        tip: 'Quick Tip: This works even when your iPhone is connected to Bluetooth headphones or playing music itself — Shazam can pick up sounds from the room while music plays in your ears.',
+      },
+      {
+        title: 'See your Shazam history',
+        content: 'Every song you identify is saved automatically to a list. To see it, swipe down from Control Center and tap-and-hold the Shazam icon. A list of every song you have ever Shazam\'d appears, with dates. Tap any song to play it or save it to a playlist.',
+      },
+      {
+        title: 'Install the Shazam app for more features',
+        content: 'For features like a desktop widget, watch app, and offline mode, install the free Shazam app from the App Store. The app version also lets you Shazam songs that are saved as videos in your photo library — useful when you forgot to identify a song that was playing in a video clip.',
+      },
+      {
+        title: 'Use Shazam to find live music or shows',
+        content: 'After identifying a song, tap the artist name in the result. The Shazam app shows you upcoming concerts in your area, music videos, and similar songs. This makes Shazam a small but powerful tool for discovering new music based on what you actually like, not what an algorithm guesses.',
+      },
+    ],
+  },
 ];

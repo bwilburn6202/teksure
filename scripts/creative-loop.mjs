@@ -117,17 +117,24 @@ function nextBatchNumber() {
   return max + 1;
 }
 
+// Banned words/phrases — checked as whole words (word boundaries) to avoid
+// false positives like matching "just" inside "adjust" or "utilize" inside no
+// real text but you get the idea.
 const BANNED_FILLERS = [
-  'It\'s easy', 'simply', 'just ', 'obviously', 'leverage', 'utilize',
-  'seamless', 'cutting-edge', 'effortless', 'a breeze', 'piece of cake',
+  "it's easy", 'simply', 'just', 'obviously', 'leverage', 'utilize',
+  'seamless', 'cutting-edge', 'cutting edge', 'effortless',
+  'a breeze', 'piece of cake',
 ];
 
 function scanForBanned(text) {
   const found = [];
   const lower = text.toLowerCase();
-  for (const word of BANNED_FILLERS) {
-    if (lower.includes(word.toLowerCase())) {
-      found.push(word);
+  for (const phrase of BANNED_FILLERS) {
+    // Word boundary check — phrase must be its own word, not a substring.
+    const escaped = phrase.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+    const re = new RegExp(`\\b${escaped}\\b`, 'i');
+    if (re.test(lower)) {
+      found.push(phrase);
     }
   }
   return found;

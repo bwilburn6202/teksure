@@ -1,7 +1,119 @@
 {
   "version": "1.0",
-  "cycleCount": 5,
+  "cycleCount": 13,
   "history": [
+    {
+      "cycle": 13,
+      "batchNumber": 142,
+      "topics": [
+        {
+          "slug": "use-shazam-iphone-name-that-song",
+          "title": "Find the Name of Any Song You Hear with Shazam (Built Into iPhone)"
+        }
+      ],
+      "timestamp": "2026-05-05T05:36:29.323Z"
+    },
+    {
+      "cycle": 12,
+      "batchNumber": 141,
+      "topics": [
+        {
+          "slug": "use-google-translate-camera-real-time",
+          "title": "Use Google Translate to Translate Anything with Your Phone Camera"
+        },
+        {
+          "slug": "organize-icloud-storage-iphone-backup",
+          "title": "Make Sense of iCloud Storage (and Stop Getting \"Storage Full\" Warnings)"
+        }
+      ],
+      "timestamp": "2026-05-05T05:36:27.833Z"
+    },
+    {
+      "cycle": 11,
+      "batchNumber": 140,
+      "topics": [
+        {
+          "slug": "use-uber-lyft-first-time-seniors",
+          "title": "How to Use Uber or Lyft for the First Time"
+        },
+        {
+          "slug": "set-up-iphone-medication-reminders",
+          "title": "Set Up Medication Reminders on iPhone (Built-In, Free)"
+        }
+      ],
+      "timestamp": "2026-05-05T05:36:26.319Z"
+    },
+    {
+      "cycle": 10,
+      "batchNumber": 139,
+      "topics": [
+        {
+          "slug": "fix-slow-windows-pc-2026",
+          "title": "Make a Slow Windows PC Faster (No Cost, No Risky Tools)"
+        },
+        {
+          "slug": "use-airpods-with-iphone-mac-and-tv",
+          "title": "How to Use AirPods with iPhone, Mac, Apple TV, and Even Some Hearing Aids"
+        }
+      ],
+      "timestamp": "2026-05-05T05:36:24.806Z"
+    },
+    {
+      "cycle": 9,
+      "batchNumber": 138,
+      "topics": [
+        {
+          "slug": "print-from-iphone-android-airprint",
+          "title": "How to Print from Your Phone (No Computer Needed)"
+        },
+        {
+          "slug": "reduce-spam-calls-iphone-android",
+          "title": "How to Block and Silence Spam Calls on iPhone and Android"
+        }
+      ],
+      "timestamp": "2026-05-05T05:36:23.288Z"
+    },
+    {
+      "cycle": 8,
+      "batchNumber": 137,
+      "topics": [
+        {
+          "slug": "set-up-iphone-passwords-app",
+          "title": "How to Use the Built-In Passwords App on iPhone"
+        },
+        {
+          "slug": "use-iphone-voice-typing-dictation",
+          "title": "Use Voice Typing on iPhone to Send Text Messages and Emails Faster"
+        }
+      ],
+      "timestamp": "2026-05-05T05:36:21.705Z"
+    },
+    {
+      "cycle": 7,
+      "batchNumber": 136,
+      "topics": [
+        {
+          "slug": "use-zoom-doctor-telehealth-visit",
+          "title": "How to Join a Telehealth Doctor Visit on Zoom or Phone"
+        },
+        {
+          "slug": "cancel-subscriptions-iphone-android",
+          "title": "How to Find and Cancel Hidden Subscriptions on Your Phone"
+        }
+      ],
+      "timestamp": "2026-05-05T05:35:41.667Z"
+    },
+    {
+      "cycle": 6,
+      "batchNumber": 135,
+      "topics": [
+        {
+          "slug": "set-up-amazon-echo-alexa-seniors",
+          "title": "Set Up an Amazon Echo (Alexa) for the First Time"
+        }
+      ],
+      "timestamp": "2026-05-05T05:35:40.136Z"
+    },
     {
       "cycle": 5,
       "batchNumber": 131,
@@ -86,7 +198,23 @@
     "use-google-maps-favorite-saved-places",
     "use-iphone-emergency-sos-feature",
     "free-tax-preparation-aarp-irs",
-    "use-spotify-pandora-free-music-streaming"
+    "use-spotify-pandora-free-music-streaming",
+    "use-walmart-grocery-pickup-delivery",
+    "connect-iphone-to-bluetooth-hearing-aids",
+    "set-up-amazon-echo-alexa-seniors",
+    "use-zoom-doctor-telehealth-visit",
+    "cancel-subscriptions-iphone-android",
+    "set-up-iphone-passwords-app",
+    "use-iphone-voice-typing-dictation",
+    "print-from-iphone-android-airprint",
+    "reduce-spam-calls-iphone-android",
+    "fix-slow-windows-pc-2026",
+    "use-airpods-with-iphone-mac-and-tv",
+    "use-uber-lyft-first-time-seniors",
+    "set-up-iphone-medication-reminders",
+    "use-google-translate-camera-real-time",
+    "organize-icloud-storage-iphone-backup",
+    "use-shazam-iphone-name-that-song"
   ],
-  "lastRun": "2026-05-05T05:16:21.890Z"
+  "lastRun": "2026-05-05T05:36:29.323Z"
 }
