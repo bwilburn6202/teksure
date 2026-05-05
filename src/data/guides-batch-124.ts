@@ -57,7 +57,7 @@ A Windows PC and a Mac handle start-up in slightly different ways, but the troub
     ],
   },
   {
-    slug: 'phone-wont-charge-fix',
+    slug: 'phone-wont-charge-7-quick-tries',
     title: "Phone Won't Charge — 7 Things to Try Right Now",
     excerpt: "If you plug in your phone and nothing happens — no charging icon, no chime — this guide covers the most common causes and how to fix them at home.",
     category: 'troubleshooting',
@@ -107,7 +107,7 @@ Before buying a new phone or going to the repair shop, spend 10 minutes on the s
     ],
   },
   {
-    slug: 'wifi-keeps-dropping-fix',
+    slug: 'wifi-unstable-connection-fix',
     title: 'WiFi Keeps Dropping — How to Fix an Unstable Connection',
     excerpt: "Your internet works fine one minute and disappears the next. This guide explains why WiFi drops and gives you step-by-step fixes to make your connection more stable.",
     category: 'troubleshooting',
