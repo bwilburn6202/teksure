@@ -8,6 +8,44 @@ Newest cycles appear at the top.
 
 ---
 
+## Cycle 20 — 2026-05-06T03:01:33.264Z
+
+### [ok] Site metrics snapshot
+2786 guides, 3027 routes, 158 tools.
+
+### [ok] Duplicate guide slugs
+No duplicate slugs.
+
+### [ok] Internal link audit
+0 broken targets, 2602 orphaned routes (of 2989 routes).
+
+### [ok] TypeScript compile
+No TypeScript errors.
+
+### [warn] Stale OS version mentions
+53 mention(s) of older OS versions in guides.
+
+```
+- src/data/guides-batch-103.ts:31 — iOS 10–16 (`iOS 11`)
+- src/data/guides-batch-15.ts:283 — iOS 10–16 (`iOS 14`)
+- src/data/guides-batch-18.ts:77 — iOS 10–16 (`iOS 16`)
+- src/data/guides-batch-21.ts:610 — iOS 10–16 (`iOS 11`)
+- src/data/guides-batch-24.ts:443 — iOS 10–16 (`iOS 14`)
+- src/data/guides-batch-24.ts:531 — Windows 7 (`Windows 7`)
+- src/data/guides-batch-25.ts:523 — iOS 10–16 (`iOS 11`)
+- src/data/guides-batch-25.ts:534 — iOS 10–16 (`iOS 11`)
+- src/data/guides-batch-28.ts:571 — iOS 10–16 (`iOS 15`)
+- src/data/guides-batch-32.ts:499 — iOS 10–16 (`iOS 12`)
+```
+
+### [ok] Aged guides
+0 of 3087 guides published before 2024-11-06.
+
+### Suggested next actions
+- **Stale OS version mentions** — 53 mention(s) of older OS versions in guides.
+
+---
+
 ## Cycle 19 — 2026-05-06T02:56:53.361Z
 
 ### [ok] Site metrics snapshot
