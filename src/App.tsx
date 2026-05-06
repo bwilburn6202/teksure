@@ -185,7 +185,8 @@ const TechHelpHotlineDirectory = lazy(() => import("./pages/tools/TechHelpHotlin
 const MonthlyTechExpenseAudit  = lazy(() => import("./pages/tools/MonthlyTechExpenseAudit"));
 const PasswordStrengthChecker  = lazy(() => import("./pages/tools/PasswordStrengthChecker"));
 const NewPhoneSetupAssistant   = lazy(() => import("./pages/tools/NewPhoneSetupAssistant"));
-const EmergencyContactCard     = lazy(() => import("./pages/tools/EmergencyContactCard"));
+const EmergencyContactCard        = lazy(() => import("./pages/tools/EmergencyContactCard"));
+const SafeOnlineShoppingChecklist = lazy(() => import("./pages/tools/SafeOnlineShoppingChecklist"));
 const DeviceTradeInEstimator = lazy(() => import("./pages/tools/DeviceTradeInEstimator"));
 const ParentalControlsWizard = lazy(() => import("./pages/tools/ParentalControlsWizard"));
 const HomeNetworkMap         = lazy(() => import("./pages/tools/HomeNetworkMap"));
@@ -4047,6 +4048,7 @@ const AppContent = () => {
           <Route path="/tools/password-strength-checker" element={<PasswordStrengthChecker />} />
           <Route path="/tools/new-phone-setup-assistant" element={<NewPhoneSetupAssistant />} />
           <Route path="/tools/emergency-contact-card" element={<EmergencyContactCard />} />
+          <Route path="/tools/safe-online-shopping-checklist" element={<SafeOnlineShoppingChecklist />} />
           <Route path="/tools/trade-in-estimator" element={<DeviceTradeInEstimator />} />
           <Route path="/tools/parental-controls-wizard" element={<ParentalControlsWizard />} />
           <Route path="/tools/home-network-map" element={<HomeNetworkMap />} />
