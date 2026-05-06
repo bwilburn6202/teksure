@@ -188,6 +188,7 @@ const NewPhoneSetupAssistant   = lazy(() => import("./pages/tools/NewPhoneSetupA
 const EmergencyContactCard        = lazy(() => import("./pages/tools/EmergencyContactCard"));
 const SafeOnlineShoppingChecklist = lazy(() => import("./pages/tools/SafeOnlineShoppingChecklist"));
 const ScreenTimeAdvisor = lazy(() => import("./pages/tools/ScreenTimeAdvisor"));
+const DisplaySettingsAdvisor = lazy(() => import("./pages/tools/DisplaySettingsAdvisor"));
 const DeviceTradeInEstimator = lazy(() => import("./pages/tools/DeviceTradeInEstimator"));
 const ParentalControlsWizard = lazy(() => import("./pages/tools/ParentalControlsWizard"));
 const HomeNetworkMap         = lazy(() => import("./pages/tools/HomeNetworkMap"));
@@ -4051,6 +4052,7 @@ const AppContent = () => {
           <Route path="/tools/emergency-contact-card" element={<EmergencyContactCard />} />
           <Route path="/tools/safe-online-shopping-checklist" element={<SafeOnlineShoppingChecklist />} />
           <Route path="/tools/screen-time-advisor" element={<ScreenTimeAdvisor />} />
+          <Route path="/tools/display-settings-advisor" element={<DisplaySettingsAdvisor />} />
           <Route path="/tools/trade-in-estimator" element={<DeviceTradeInEstimator />} />
           <Route path="/tools/parental-controls-wizard" element={<ParentalControlsWizard />} />
           <Route path="/tools/home-network-map" element={<HomeNetworkMap />} />
