@@ -1,7 +1,7 @@
 {
   "version": "1.0",
-  "cycleCount": 13,
-  "lastRun": "2026-05-05T19:49:53.847Z",
+  "cycleCount": 14,
+  "lastRun": "2026-05-06T04:00:04.382Z",
   "lastFindings": {
     "metrics": {
       "ok": true,
@@ -47,11 +47,11 @@
     "old-guides": {
       "ok": true,
       "severity": "info",
-      "summary": "0 of 3062 guides published before 2024-11-05.",
+      "summary": "0 of 3062 guides published before 2024-11-06.",
       "metrics": {
         "total": 3062,
         "aged": 0,
-        "cutoff": "2024-11-05"
+        "cutoff": "2024-11-06"
       }
     }
   },
@@ -793,6 +793,63 @@
             "total": 3062,
             "aged": 0,
             "cutoff": "2024-11-05"
+          }
+        }
+      }
+    },
+    {
+      "cycle": 14,
+      "at": "2026-05-06T04:00:04.382Z",
+      "findings": {
+        "metrics": {
+          "ok": true,
+          "severity": "info",
+          "summary": "2761 guides, 3017 routes, 148 tools.",
+          "metrics": {
+            "guides": 2761,
+            "routes": 3017,
+            "lazyImports": 2958,
+            "tools": 148
+          }
+        },
+        "slugs": {
+          "ok": true,
+          "severity": "info",
+          "summary": "No duplicate slugs.",
+          "metrics": null
+        },
+        "links": {
+          "ok": true,
+          "severity": "info",
+          "summary": "0 broken targets, 2602 orphaned routes (of 2979 routes).",
+          "metrics": {
+            "brokenTargets": 0,
+            "orphanedRoutes": 2602,
+            "definedRoutes": 2979
+          }
+        },
+        "typescript": {
+          "ok": true,
+          "severity": "info",
+          "summary": "No TypeScript errors.",
+          "metrics": null
+        },
+        "stale-os": {
+          "ok": false,
+          "severity": "warn",
+          "summary": "50 mention(s) of older OS versions in guides.",
+          "metrics": {
+            "count": 50
+          }
+        },
+        "old-guides": {
+          "ok": true,
+          "severity": "info",
+          "summary": "0 of 3062 guides published before 2024-11-06.",
+          "metrics": {
+            "total": 3062,
+            "aged": 0,
+            "cutoff": "2024-11-06"
           }
         }
       }
