@@ -191,6 +191,7 @@ const ScreenTimeAdvisor = lazy(() => import("./pages/tools/ScreenTimeAdvisor"));
 const DisplaySettingsAdvisor = lazy(() => import("./pages/tools/DisplaySettingsAdvisor"));
 const MonthlyBillTracker = lazy(() => import("./pages/tools/MonthlyBillTracker"));
 const ImportantDocumentsOrganizer = lazy(() => import("./pages/tools/ImportantDocumentsOrganizer"));
+const ScamOrLegitQuiz = lazy(() => import("./pages/tools/ScamOrLegitQuiz"));
 const DeviceTradeInEstimator = lazy(() => import("./pages/tools/DeviceTradeInEstimator"));
 const ParentalControlsWizard = lazy(() => import("./pages/tools/ParentalControlsWizard"));
 const HomeNetworkMap         = lazy(() => import("./pages/tools/HomeNetworkMap"));
@@ -4057,6 +4058,7 @@ const AppContent = () => {
           <Route path="/tools/display-settings-advisor" element={<DisplaySettingsAdvisor />} />
           <Route path="/tools/monthly-bill-tracker" element={<MonthlyBillTracker />} />
           <Route path="/tools/important-documents-organizer" element={<ImportantDocumentsOrganizer />} />
+          <Route path="/tools/scam-or-legit-quiz" element={<ScamOrLegitQuiz />} />
           <Route path="/tools/trade-in-estimator" element={<DeviceTradeInEstimator />} />
           <Route path="/tools/parental-controls-wizard" element={<ParentalControlsWizard />} />
           <Route path="/tools/home-network-map" element={<HomeNetworkMap />} />
