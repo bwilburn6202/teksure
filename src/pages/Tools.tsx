@@ -11,7 +11,7 @@ import {
   FileSearch, FileText, Terminal, Shield, Receipt, Globe, Accessibility as AccessibilityIcon, Printer,
   Router, Tv, Signal, Video, Image as ImageIcon, FileCheck, PiggyBank, DollarSign,
   Newspaper, ChefHat, Car, Landmark, Thermometer, BookOpen, Cake,
-  Siren, HandHeart, Calculator, Inbox, Library, Gavel, Headphones, Mic,
+  Siren, HandHeart, Calculator, Inbox, Library, Gavel, Headphones, Mic, Home,
 } from 'lucide-react';
 import { Navbar } from '@/components/layout/Navbar';
 import { Footer } from '@/components/layout/Footer';
@@ -1667,6 +1667,20 @@ export const tools: Tool[] = [
     time: '1 min',
     newThisMonth: true,
     keywords: 'fake website scam online shopping safety checklist https fraud phishing check before you buy',
+  },
+  {
+    title: 'Home Safety Walkthrough',
+    description: 'Room-by-room safety check for aging in place. Answer simple questions and get a prioritized fix list for falls, fires, and other home hazards.',
+    icon: Home,
+    path: '/tools/home-safety-walkthrough',
+    color: 'text-orange-500',
+    bg: 'bg-orange-50 dark:bg-orange-950/30',
+    badge: 'Safety',
+    category: 'Safety',
+    difficulty: 'Easy',
+    time: '15 min',
+    newThisMonth: true,
+    keywords: 'home safety walkthrough fall prevention bathroom kitchen stairs aging in place senior safety check fire prevention printable plan',
   },
   {
     title: 'Phone Icon Guide',

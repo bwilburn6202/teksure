@@ -1,17 +1,17 @@
 {
   "version": "1.0",
-  "cycleCount": 22,
-  "lastRun": "2026-05-07T00:58:03.853Z",
+  "cycleCount": 23,
+  "lastRun": "2026-05-07T01:03:25.820Z",
   "lastFindings": {
     "metrics": {
       "ok": true,
       "severity": "info",
-      "summary": "2794 guides, 3029 routes, 160 tools.",
+      "summary": "2798 guides, 3030 routes, 161 tools.",
       "metrics": {
-        "guides": 2794,
-        "routes": 3029,
-        "lazyImports": 2970,
-        "tools": 160
+        "guides": 2798,
+        "routes": 3030,
+        "lazyImports": 2971,
+        "tools": 161
       }
     },
     "slugs": {
@@ -23,11 +23,11 @@
     "links": {
       "ok": true,
       "severity": "info",
-      "summary": "0 broken targets, 2602 orphaned routes (of 2991 routes).",
+      "summary": "0 broken targets, 2602 orphaned routes (of 2992 routes).",
       "metrics": {
         "brokenTargets": 0,
         "orphanedRoutes": 2602,
-        "definedRoutes": 2991
+        "definedRoutes": 2992
       }
     },
     "typescript": {
@@ -47,9 +47,9 @@
     "old-guides": {
       "ok": true,
       "severity": "info",
-      "summary": "0 of 3095 guides published before 2024-11-07.",
+      "summary": "0 of 3099 guides published before 2024-11-07.",
       "metrics": {
-        "total": 3095,
+        "total": 3099,
         "aged": 0,
         "cutoff": "2024-11-07"
       }
@@ -1304,6 +1304,63 @@
           "summary": "0 of 3095 guides published before 2024-11-07.",
           "metrics": {
             "total": 3095,
+            "aged": 0,
+            "cutoff": "2024-11-07"
+          }
+        }
+      }
+    },
+    {
+      "cycle": 23,
+      "at": "2026-05-07T01:03:25.820Z",
+      "findings": {
+        "metrics": {
+          "ok": true,
+          "severity": "info",
+          "summary": "2798 guides, 3030 routes, 161 tools.",
+          "metrics": {
+            "guides": 2798,
+            "routes": 3030,
+            "lazyImports": 2971,
+            "tools": 161
+          }
+        },
+        "slugs": {
+          "ok": true,
+          "severity": "info",
+          "summary": "No duplicate slugs.",
+          "metrics": null
+        },
+        "links": {
+          "ok": true,
+          "severity": "info",
+          "summary": "0 broken targets, 2602 orphaned routes (of 2992 routes).",
+          "metrics": {
+            "brokenTargets": 0,
+            "orphanedRoutes": 2602,
+            "definedRoutes": 2992
+          }
+        },
+        "typescript": {
+          "ok": true,
+          "severity": "info",
+          "summary": "No TypeScript errors.",
+          "metrics": null
+        },
+        "stale-os": {
+          "ok": false,
+          "severity": "warn",
+          "summary": "53 mention(s) of older OS versions in guides.",
+          "metrics": {
+            "count": 53
+          }
+        },
+        "old-guides": {
+          "ok": true,
+          "severity": "info",
+          "summary": "0 of 3099 guides published before 2024-11-07.",
+          "metrics": {
+            "total": 3099,
             "aged": 0,
             "cutoff": "2024-11-07"
           }
