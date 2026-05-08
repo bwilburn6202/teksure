@@ -141,7 +141,7 @@ AARP operates a free Fraud Watch helpline at 1-877-908-3360. You can call to rep
       {
         title: 'Sign up for AARP Tax-Aide (February–April)',
         content:
-          'AARP Tax-Aide is available from early February through April 15 each year. To find a free tax preparation site near you, go to aarp.org/taxaide and click "Get Free Tax Preparation Help." Enter your zip code to see locations, days, and hours. Many sites require an appointment — call the number listed for the location or book through the website. Bring your government-issued ID, Social Security card or ITIN, all tax documents received in the mail (W-2s, 1099s, Medicare statements), and last year's tax return if you have it.',
+          `AARP Tax-Aide is available from early February through April 15 each year. To find a free tax preparation site near you, go to aarp.org/taxaide and click "Get Free Tax Preparation Help." Enter your zip code to see locations, days, and hours. Many sites require an appointment — call the number listed for the location or book through the website. Bring your government-issued ID, Social Security card or ITIN, all tax documents received in the mail (W-2s, 1099s, Medicare statements), and last year's tax return if you have it.`,
         warning: 'AARP Tax-Aide volunteers will never ask for your bank account number upfront or ask you to pay anything for their service. If anyone claiming to be from AARP Tax-Aide asks for payment, that is a scam — call 1-888-AARP-NOW to report it.',
       },
       {
