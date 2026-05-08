@@ -12,7 +12,7 @@ import {
   Router, Tv, Signal, Video, Image as ImageIcon, FileCheck, PiggyBank, DollarSign,
   Newspaper, ChefHat, Car, Landmark, Thermometer, BookOpen, Cake,
   Siren, HandHeart, Calculator, Inbox, Library, Gavel, Headphones, Mic, Home,
-  Pill,
+  Pill, Zap,
 } from 'lucide-react';
 import { Navbar } from '@/components/layout/Navbar';
 import { Footer } from '@/components/layout/Footer';
@@ -1864,6 +1864,20 @@ export const tools: Tool[] = [
     time: '30 min',
     newThisMonth: true,
     keywords: 'annual tech checkup yearly checklist password update backup privacy security subscriptions emergency contacts senior maintenance device health review',
+  },
+  {
+    title: 'Phone Battery Care Guide',
+    description: 'Answer 5 questions about your charging habits, then get personalized tips to extend your battery life — for iPhone and Android.',
+    icon: Zap,
+    path: '/tools/phone-battery-care',
+    color: 'text-yellow-600',
+    bg: 'bg-yellow-50 dark:bg-yellow-950/30',
+    badge: 'Quiz',
+    category: 'Phone & Mobile',
+    difficulty: 'Easy',
+    time: '5 min',
+    newThisMonth: true,
+    keywords: 'phone battery care guide charging habits iphone android battery health extend life tips overnight charging drain 0 heat charger seniors',
   },
   {
     title: 'Phone Call Scripts',
