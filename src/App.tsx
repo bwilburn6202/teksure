@@ -211,6 +211,7 @@ const FreeTrialTracker = lazy(() => import("./pages/tools/FreeTrialTracker"));
 const MedicationListBuilder = lazy(() => import("./pages/tools/MedicationListBuilder"));
 const NewPhoneSetupChecklist = lazy(() => import("./pages/tools/NewPhoneSetupChecklist"));
 const CharitableDonationTracker = lazy(() => import("./pages/tools/CharitableDonationTracker"));
+const AnnualTechCheckup = lazy(() => import("./pages/tools/AnnualTechCheckup"));
 const DeviceTradeInEstimator = lazy(() => import("./pages/tools/DeviceTradeInEstimator"));
 const ParentalControlsWizard = lazy(() => import("./pages/tools/ParentalControlsWizard"));
 const HomeNetworkMap         = lazy(() => import("./pages/tools/HomeNetworkMap"));
@@ -4097,6 +4098,7 @@ const AppContent = () => {
           <Route path="/tools/medication-list-builder" element={<MedicationListBuilder />} />
           <Route path="/tools/new-phone-setup-checklist" element={<NewPhoneSetupChecklist />} />
           <Route path="/tools/charitable-donation-tracker" element={<CharitableDonationTracker />} />
+          <Route path="/tools/annual-tech-checkup" element={<AnnualTechCheckup />} />
           <Route path="/tools/trade-in-estimator" element={<DeviceTradeInEstimator />} />
           <Route path="/tools/parental-controls-wizard" element={<ParentalControlsWizard />} />
           <Route path="/tools/home-network-map" element={<HomeNetworkMap />} />
