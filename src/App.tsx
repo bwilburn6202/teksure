@@ -197,6 +197,7 @@ const HomeSafetyWalkthrough = lazy(() => import("./pages/tools/HomeSafetyWalkthr
 const TVSizeCalculator = lazy(() => import("./pages/tools/TVSizeCalculator"));
 const DigitalSpringCleaning = lazy(() => import("./pages/tools/DigitalSpringCleaning"));
 const PhoneGestureGuide = lazy(() => import("./pages/tools/PhoneGestureGuide"));
+const SeniorPhoneCallScripts = lazy(() => import("./pages/tools/SeniorPhoneCallScripts"));
 const DeviceTradeInEstimator = lazy(() => import("./pages/tools/DeviceTradeInEstimator"));
 const ParentalControlsWizard = lazy(() => import("./pages/tools/ParentalControlsWizard"));
 const HomeNetworkMap         = lazy(() => import("./pages/tools/HomeNetworkMap"));
@@ -4069,6 +4070,7 @@ const AppContent = () => {
           <Route path="/tools/tv-size-calculator" element={<TVSizeCalculator />} />
           <Route path="/tools/digital-spring-cleaning" element={<DigitalSpringCleaning />} />
           <Route path="/tools/phone-gesture-guide" element={<PhoneGestureGuide />} />
+          <Route path="/tools/phone-call-scripts" element={<SeniorPhoneCallScripts />} />
           <Route path="/tools/trade-in-estimator" element={<DeviceTradeInEstimator />} />
           <Route path="/tools/parental-controls-wizard" element={<ParentalControlsWizard />} />
           <Route path="/tools/home-network-map" element={<HomeNetworkMap />} />
