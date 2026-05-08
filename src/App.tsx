@@ -206,6 +206,7 @@ const PasswordResetGuide = lazy(() => import("./pages/tools/PasswordResetGuide")
 const SeniorBenefitsFinder = lazy(() => import("./pages/tools/SeniorBenefitsFinder"));
 const MonthlyBudgetWorksheet = lazy(() => import("./pages/tools/MonthlyBudgetWorksheet"));
 const CordCuttingPlanner = lazy(() => import("./pages/tools/CordCuttingPlanner"));
+const HomeInventoryTool = lazy(() => import("./pages/tools/HomeInventoryTool"));
 const DeviceTradeInEstimator = lazy(() => import("./pages/tools/DeviceTradeInEstimator"));
 const ParentalControlsWizard = lazy(() => import("./pages/tools/ParentalControlsWizard"));
 const HomeNetworkMap         = lazy(() => import("./pages/tools/HomeNetworkMap"));
@@ -4087,6 +4088,7 @@ const AppContent = () => {
           <Route path="/tools/senior-benefits-finder" element={<SeniorBenefitsFinder />} />
           <Route path="/tools/monthly-budget-worksheet" element={<MonthlyBudgetWorksheet />} />
           <Route path="/tools/cord-cutting-planner" element={<CordCuttingPlanner />} />
+          <Route path="/tools/home-inventory-tool" element={<HomeInventoryTool />} />
           <Route path="/tools/trade-in-estimator" element={<DeviceTradeInEstimator />} />
           <Route path="/tools/parental-controls-wizard" element={<ParentalControlsWizard />} />
           <Route path="/tools/home-network-map" element={<HomeNetworkMap />} />
