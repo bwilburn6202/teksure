@@ -12,6 +12,7 @@ import {
   Router, Tv, Signal, Video, Image as ImageIcon, FileCheck, PiggyBank, DollarSign,
   Newspaper, ChefHat, Car, Landmark, Thermometer, BookOpen, Cake,
   Siren, HandHeart, Calculator, Inbox, Library, Gavel, Headphones, Mic, Home,
+  Pill,
 } from 'lucide-react';
 import { Navbar } from '@/components/layout/Navbar';
 import { Footer } from '@/components/layout/Footer';
@@ -1807,6 +1808,20 @@ export const tools: Tool[] = [
     time: '3 min',
     newThisMonth: true,
     keywords: 'free trial tracker cancel subscription streaming netflix hulu amazon prime avoid charge countdown days left reminder credit card trial end date',
+  },
+  {
+    title: 'Medication List Builder',
+    description: 'Build a complete medication list with doses, frequencies, allergies, and emergency contacts. Print it to carry in your wallet and hand to any doctor or ER.',
+    icon: Pill,
+    path: '/tools/medication-list-builder',
+    color: 'text-teal-500',
+    bg: 'bg-teal-50 dark:bg-teal-950/30',
+    badge: 'Health',
+    category: 'Health Tech',
+    difficulty: 'Easy',
+    time: '10 min',
+    newThisMonth: true,
+    keywords: 'medication list builder printable drugs doses allergies emergency contact doctor pharmacy wallet card medical ID senior medicines health record',
   },
   {
     title: 'Phone Call Scripts',
