@@ -201,6 +201,7 @@ const SeniorPhoneCallScripts = lazy(() => import("./pages/tools/SeniorPhoneCallS
 const AccessibilitySettingsWizard = lazy(() => import("./pages/tools/AccessibilitySettingsWizard"));
 const TechSupportPrepSheet = lazy(() => import("./pages/tools/TechSupportPrepSheet"));
 const InternetFixGuide = lazy(() => import("./pages/tools/InternetFixGuide"));
+const FormalLetterBuilder = lazy(() => import("./pages/tools/FormalLetterBuilder"));
 const DeviceTradeInEstimator = lazy(() => import("./pages/tools/DeviceTradeInEstimator"));
 const ParentalControlsWizard = lazy(() => import("./pages/tools/ParentalControlsWizard"));
 const HomeNetworkMap         = lazy(() => import("./pages/tools/HomeNetworkMap"));
@@ -4077,6 +4078,7 @@ const AppContent = () => {
           <Route path="/tools/accessibility-settings-wizard" element={<AccessibilitySettingsWizard />} />
           <Route path="/tools/tech-support-prep-sheet" element={<TechSupportPrepSheet />} />
           <Route path="/tools/internet-fix-guide" element={<InternetFixGuide />} />
+          <Route path="/tools/formal-letter-builder" element={<FormalLetterBuilder />} />
           <Route path="/tools/trade-in-estimator" element={<DeviceTradeInEstimator />} />
           <Route path="/tools/parental-controls-wizard" element={<ParentalControlsWizard />} />
           <Route path="/tools/home-network-map" element={<HomeNetworkMap />} />
