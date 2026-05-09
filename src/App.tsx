@@ -260,6 +260,7 @@ const DigitalAccountInventory = lazy(() => import("./pages/tools/DigitalAccountI
 const TaxReceiptBox = lazy(() => import("./pages/tools/TaxReceiptBox"));
 const TextMessageTemplates = lazy(() => import("./pages/tools/TextMessageTemplates"));
 const FormalLetterTemplates = lazy(() => import("./pages/tools/FormalLetterTemplates"));
+const SeniorMedTimer = lazy(() => import("./pages/tools/SeniorMedTimer"));
 const DeviceTradeInEstimator = lazy(() => import("./pages/tools/DeviceTradeInEstimator"));
 const ParentalControlsWizard = lazy(() => import("./pages/tools/ParentalControlsWizard"));
 const HomeNetworkMap         = lazy(() => import("./pages/tools/HomeNetworkMap"));
@@ -4195,6 +4196,7 @@ const AppContent = () => {
           <Route path="/tools/tax-receipt-box" element={<TaxReceiptBox />} />
           <Route path="/tools/text-message-templates" element={<TextMessageTemplates />} />
           <Route path="/tools/formal-letter-templates" element={<FormalLetterTemplates />} />
+          <Route path="/tools/medication-timer" element={<SeniorMedTimer />} />
           <Route path="/tools/trade-in-estimator" element={<DeviceTradeInEstimator />} />
           <Route path="/tools/parental-controls-wizard" element={<ParentalControlsWizard />} />
           <Route path="/tools/home-network-map" element={<HomeNetworkMap />} />
