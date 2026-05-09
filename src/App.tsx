@@ -245,6 +245,7 @@ const TechPurchaseWarrantyTracker = lazy(() => import("./pages/tools/TechPurchas
 const GratitudeJournal = lazy(() => import("./pages/tools/GratitudeJournal"));
 const PrintableCheckRegister = lazy(() => import("./pages/tools/PrintableCheckRegister"));
 const TripBudgetCalculator = lazy(() => import("./pages/tools/TripBudgetCalculator"));
+const GardenPlantLog = lazy(() => import("./pages/tools/GardenPlantLog"));
 const DeviceTradeInEstimator = lazy(() => import("./pages/tools/DeviceTradeInEstimator"));
 const ParentalControlsWizard = lazy(() => import("./pages/tools/ParentalControlsWizard"));
 const HomeNetworkMap         = lazy(() => import("./pages/tools/HomeNetworkMap"));
@@ -4165,6 +4166,7 @@ const AppContent = () => {
           <Route path="/tools/gratitude-journal" element={<GratitudeJournal />} />
           <Route path="/tools/check-register" element={<PrintableCheckRegister />} />
           <Route path="/tools/trip-budget-calculator" element={<TripBudgetCalculator />} />
+          <Route path="/tools/garden-plant-log" element={<GardenPlantLog />} />
           <Route path="/tools/trade-in-estimator" element={<DeviceTradeInEstimator />} />
           <Route path="/tools/parental-controls-wizard" element={<ParentalControlsWizard />} />
           <Route path="/tools/home-network-map" element={<HomeNetworkMap />} />

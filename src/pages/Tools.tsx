@@ -12,7 +12,7 @@ import {
   Router, Tv, Signal, Video, Image as ImageIcon, FileCheck, PiggyBank, DollarSign,
   Newspaper, ChefHat, Car, Landmark, Thermometer, BookOpen, Cake,
   Siren, HandHeart, Calculator, Inbox, Library, Gavel, Headphones, Mic, Home,
-  Pill, Zap, MessageSquare, PawPrint, Plane, ShoppingCart, Scale, Moon, Footprints, Calendar, Notebook, Droplet,
+  Pill, Zap, MessageSquare, PawPrint, Plane, ShoppingCart, Scale, Moon, Footprints, Calendar, Notebook, Droplet, Sprout,
 } from 'lucide-react';
 import { Navbar } from '@/components/layout/Navbar';
 import { Footer } from '@/components/layout/Footer';
@@ -2326,6 +2326,20 @@ export const tools: Tool[] = [
     time: '10 min',
     newThisMonth: true,
     keywords: 'trip budget calculator travel planned actual variance over under flights lodging food souvenir tips category seniors',
+  },
+  {
+    title: 'Garden Plant Log',
+    description: 'Keep track of every plant — what, where, when planted, and last watered. Grouped by type (vegetable, flower, herb, etc.). Tap "Watered" to update.',
+    icon: Sprout,
+    path: '/tools/garden-plant-log',
+    color: 'text-green-600',
+    bg: 'bg-green-50 dark:bg-green-950/30',
+    badge: 'Tracker',
+    category: 'Lifestyle',
+    difficulty: 'Easy',
+    time: '5 min',
+    newThisMonth: true,
+    keywords: 'garden plant log vegetable flower herb fruit houseplant tree planted date watered location seniors hobby',
   },
   {
     title: 'Phone Call Scripts',
