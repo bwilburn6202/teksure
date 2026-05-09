@@ -229,6 +229,7 @@ const WalletMedicalCard = lazy(() => import("./pages/tools/WalletMedicalCard"));
 const DailyHabitTracker = lazy(() => import("./pages/tools/DailyHabitTracker"));
 const WeightLogTracker = lazy(() => import("./pages/tools/WeightLogTracker"));
 const PrintableAddressBook = lazy(() => import("./pages/tools/PrintableAddressBook"));
+const PrescriptionRefillCalendar = lazy(() => import("./pages/tools/PrescriptionRefillCalendar"));
 const DeviceTradeInEstimator = lazy(() => import("./pages/tools/DeviceTradeInEstimator"));
 const ParentalControlsWizard = lazy(() => import("./pages/tools/ParentalControlsWizard"));
 const HomeNetworkMap         = lazy(() => import("./pages/tools/HomeNetworkMap"));
@@ -4133,6 +4134,7 @@ const AppContent = () => {
           <Route path="/tools/daily-habit-tracker" element={<DailyHabitTracker />} />
           <Route path="/tools/weight-log-tracker" element={<WeightLogTracker />} />
           <Route path="/tools/printable-address-book" element={<PrintableAddressBook />} />
+          <Route path="/tools/prescription-refill-calendar" element={<PrescriptionRefillCalendar />} />
           <Route path="/tools/trade-in-estimator" element={<DeviceTradeInEstimator />} />
           <Route path="/tools/parental-controls-wizard" element={<ParentalControlsWizard />} />
           <Route path="/tools/home-network-map" element={<HomeNetworkMap />} />
