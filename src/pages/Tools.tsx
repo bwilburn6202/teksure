@@ -12,7 +12,7 @@ import {
   Router, Tv, Signal, Video, Image as ImageIcon, FileCheck, PiggyBank, DollarSign,
   Newspaper, ChefHat, Car, Landmark, Thermometer, BookOpen, Cake,
   Siren, HandHeart, Calculator, Inbox, Library, Gavel, Headphones, Mic, Home,
-  Pill, Zap, MessageSquare, PawPrint, Plane, ShoppingCart, Scale, Moon, Footprints, Calendar, Notebook,
+  Pill, Zap, MessageSquare, PawPrint, Plane, ShoppingCart, Scale, Moon, Footprints, Calendar, Notebook, Droplet,
 } from 'lucide-react';
 import { Navbar } from '@/components/layout/Navbar';
 import { Footer } from '@/components/layout/Footer';
@@ -2242,6 +2242,20 @@ export const tools: Tool[] = [
     time: '2 min',
     newThisMonth: true,
     keywords: 'volunteer hours tracker meals on wheels food bank library service AmeriCorps Senior Corps tax mileage record award',
+  },
+  {
+    title: 'Water Intake Tracker',
+    description: "Tap a button each time you drink a glass. Visual 8-glass goal with progress bar, 7-day history, and average. Simple as it gets.",
+    icon: Droplet,
+    path: '/tools/water-intake-tracker',
+    color: 'text-blue-500',
+    bg: 'bg-blue-50 dark:bg-blue-950/30',
+    badge: 'Tracker',
+    category: 'Health',
+    difficulty: 'Easy',
+    time: '1 min',
+    newThisMonth: true,
+    keywords: 'water intake tracker hydration glasses oz goal 8 daily senior dehydration thirsty cup',
   },
   {
     title: 'Phone Call Scripts',
