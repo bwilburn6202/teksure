@@ -235,6 +235,7 @@ const SleepDiary = lazy(() => import("./pages/tools/SleepDiary"));
 const WalkingLog = lazy(() => import("./pages/tools/WalkingLog"));
 const PainSymptomLog = lazy(() => import("./pages/tools/PainSymptomLog"));
 const BillsDueDateCalendar = lazy(() => import("./pages/tools/BillsDueDateCalendar"));
+const CaregiverNotebook = lazy(() => import("./pages/tools/CaregiverNotebook"));
 const DeviceTradeInEstimator = lazy(() => import("./pages/tools/DeviceTradeInEstimator"));
 const ParentalControlsWizard = lazy(() => import("./pages/tools/ParentalControlsWizard"));
 const HomeNetworkMap         = lazy(() => import("./pages/tools/HomeNetworkMap"));
@@ -4145,6 +4146,7 @@ const AppContent = () => {
           <Route path="/tools/walking-log" element={<WalkingLog />} />
           <Route path="/tools/pain-symptom-log" element={<PainSymptomLog />} />
           <Route path="/tools/bills-due-date-calendar" element={<BillsDueDateCalendar />} />
+          <Route path="/tools/caregiver-notebook" element={<CaregiverNotebook />} />
           <Route path="/tools/trade-in-estimator" element={<DeviceTradeInEstimator />} />
           <Route path="/tools/parental-controls-wizard" element={<ParentalControlsWizard />} />
           <Route path="/tools/home-network-map" element={<HomeNetworkMap />} />

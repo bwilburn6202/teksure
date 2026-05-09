@@ -12,7 +12,7 @@ import {
   Router, Tv, Signal, Video, Image as ImageIcon, FileCheck, PiggyBank, DollarSign,
   Newspaper, ChefHat, Car, Landmark, Thermometer, BookOpen, Cake,
   Siren, HandHeart, Calculator, Inbox, Library, Gavel, Headphones, Mic, Home,
-  Pill, Zap, MessageSquare, PawPrint, Plane, ShoppingCart, Scale, Moon, Footprints, Calendar,
+  Pill, Zap, MessageSquare, PawPrint, Plane, ShoppingCart, Scale, Moon, Footprints, Calendar, Notebook,
 } from 'lucide-react';
 import { Navbar } from '@/components/layout/Navbar';
 import { Footer } from '@/components/layout/Footer';
@@ -2186,6 +2186,20 @@ export const tools: Tool[] = [
     time: '5 min',
     newThisMonth: true,
     keywords: 'bills due date calendar electric water gas internet mortgage auto pay monthly recurring track late fee senior printable',
+  },
+  {
+    title: 'Caregiver Notebook',
+    description: 'Log daily observations as a caregiver — mood, eating, mobility, medications, and concerns. Print to share at the next doctor visit.',
+    icon: Notebook,
+    path: '/tools/caregiver-notebook',
+    color: 'text-purple-600',
+    bg: 'bg-purple-50 dark:bg-purple-950/30',
+    badge: 'Tracker',
+    category: 'Family',
+    difficulty: 'Easy',
+    time: '2 min',
+    newThisMonth: true,
+    keywords: 'caregiver notebook log mom dad parent dementia mood eating mobility medication observation concerns daily journal printable',
   },
   {
     title: 'Phone Call Scripts',
