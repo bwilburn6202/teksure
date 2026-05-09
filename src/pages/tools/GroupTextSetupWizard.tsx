@@ -3,7 +3,7 @@ import SEOHead from "@/components/SEOHead";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
-import { MessageSquare, ChevronLeft, ChevronRight, CheckCircle2, Apple, Smartphone } from "lucide-react";
+import { MessageSquare, ChevronLeft, ChevronRight, CheckCircle2, Smartphone } from "lucide-react";
 
 type Platform = "iphone" | "android" | null;
 
@@ -110,7 +110,7 @@ export default function GroupTextSetupWizard() {
             </CardHeader>
             <CardContent className="grid grid-cols-1 sm:grid-cols-2 gap-3">
               <Button size="lg" className="text-base h-auto py-4 gap-2" onClick={() => setPlatform("iphone")}>
-                <Apple className="h-5 w-5" />
+                <Smartphone className="h-5 w-5" />
                 iPhone
               </Button>
               <Button size="lg" variant="outline" className="text-base h-auto py-4 gap-2" onClick={() => setPlatform("android")}>
