@@ -12,7 +12,7 @@ import {
   Router, Tv, Signal, Video, Image as ImageIcon, FileCheck, PiggyBank, DollarSign,
   Newspaper, ChefHat, Car, Landmark, Thermometer, BookOpen, Cake,
   Siren, HandHeart, Calculator, Inbox, Library, Gavel, Headphones, Mic, Home,
-  Pill, Zap, MessageSquare, PawPrint, Plane,
+  Pill, Zap, MessageSquare, PawPrint, Plane, ShoppingCart,
 } from 'lucide-react';
 import { Navbar } from '@/components/layout/Navbar';
 import { Footer } from '@/components/layout/Footer';
@@ -2018,6 +2018,20 @@ export const tools: Tool[] = [
     time: '5 min',
     newThisMonth: true,
     keywords: 'daily routine builder schedule morning afternoon evening medication meal walk plan printable timeline structure seniors',
+  },
+  {
+    title: 'Grocery List Builder',
+    description: "Build a tidy grocery list grouped by section (produce, dairy, pantry, more). Quick-add common items with one tap, check items off as you shop, print the list.",
+    icon: ShoppingCart,
+    path: '/tools/grocery-list-builder',
+    color: 'text-emerald-600',
+    bg: 'bg-emerald-50 dark:bg-emerald-950/30',
+    badge: 'Builder',
+    category: 'Shopping',
+    difficulty: 'Easy',
+    time: '3 min',
+    newThisMonth: true,
+    keywords: 'grocery list builder shopping store sections produce dairy pantry walmart instacart printable check off seniors',
   },
   {
     title: 'Phone Call Scripts',
