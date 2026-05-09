@@ -12,7 +12,7 @@ import {
   Router, Tv, Signal, Video, Image as ImageIcon, FileCheck, PiggyBank, DollarSign,
   Newspaper, ChefHat, Car, Landmark, Thermometer, BookOpen, Cake,
   Siren, HandHeart, Calculator, Inbox, Library, Gavel, Headphones, Mic, Home,
-  Pill, Zap, MessageSquare, PawPrint, Plane, ShoppingCart,
+  Pill, Zap, MessageSquare, PawPrint, Plane, ShoppingCart, Scale,
 } from 'lucide-react';
 import { Navbar } from '@/components/layout/Navbar';
 import { Footer } from '@/components/layout/Footer';
@@ -2074,6 +2074,20 @@ export const tools: Tool[] = [
     time: '2 min',
     newThisMonth: true,
     keywords: 'daily habit tracker streak walking water medication exercise routine 7 day weekly grid printable seniors',
+  },
+  {
+    title: 'Weight Log Tracker',
+    description: 'Log weight readings, see 4-week and 12-week averages, total change since first reading, and progress against an optional goal. Print for doctor visits.',
+    icon: Scale,
+    path: '/tools/weight-log-tracker',
+    color: 'text-blue-600',
+    bg: 'bg-blue-50 dark:bg-blue-950/30',
+    badge: 'Tracker',
+    category: 'Health',
+    difficulty: 'Easy',
+    time: '2 min',
+    newThisMonth: true,
+    keywords: 'weight log tracker scale lbs pounds bmi goal trend average doctor visit progress senior healthy printable',
   },
   {
     title: 'Phone Call Scripts',
