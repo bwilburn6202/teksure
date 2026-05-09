@@ -257,6 +257,7 @@ const LostWalletChecklist = lazy(() => import("./pages/tools/LostWalletChecklist
 const BloodPressureLog = lazy(() => import("./pages/tools/BloodPressureLog"));
 const HearingAidCareLog = lazy(() => import("./pages/tools/HearingAidCareLog"));
 const DigitalAccountInventory = lazy(() => import("./pages/tools/DigitalAccountInventory"));
+const TaxReceiptBox = lazy(() => import("./pages/tools/TaxReceiptBox"));
 const DeviceTradeInEstimator = lazy(() => import("./pages/tools/DeviceTradeInEstimator"));
 const ParentalControlsWizard = lazy(() => import("./pages/tools/ParentalControlsWizard"));
 const HomeNetworkMap         = lazy(() => import("./pages/tools/HomeNetworkMap"));
@@ -4189,6 +4190,7 @@ const AppContent = () => {
           <Route path="/tools/blood-pressure-log" element={<BloodPressureLog />} />
           <Route path="/tools/hearing-aid-care-log" element={<HearingAidCareLog />} />
           <Route path="/tools/digital-account-inventory" element={<DigitalAccountInventory />} />
+          <Route path="/tools/tax-receipt-box" element={<TaxReceiptBox />} />
           <Route path="/tools/trade-in-estimator" element={<DeviceTradeInEstimator />} />
           <Route path="/tools/parental-controls-wizard" element={<ParentalControlsWizard />} />
           <Route path="/tools/home-network-map" element={<HomeNetworkMap />} />
