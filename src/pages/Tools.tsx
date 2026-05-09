@@ -12,7 +12,7 @@ import {
   Router, Tv, Signal, Video, Image as ImageIcon, FileCheck, PiggyBank, DollarSign,
   Newspaper, ChefHat, Car, Landmark, Thermometer, BookOpen, Cake,
   Siren, HandHeart, Calculator, Inbox, Library, Gavel, Headphones, Mic, Home,
-  Pill, Zap,
+  Pill, Zap, MessageSquare,
 } from 'lucide-react';
 import { Navbar } from '@/components/layout/Navbar';
 import { Footer } from '@/components/layout/Footer';
@@ -1878,6 +1878,20 @@ export const tools: Tool[] = [
     time: '5 min',
     newThisMonth: true,
     keywords: 'phone battery care guide charging habits iphone android battery health extend life tips overnight charging drain 0 heat charger seniors',
+  },
+  {
+    title: 'Group Text Setup Wizard',
+    description: 'Step-by-step walkthrough to start a group text on iPhone or Android. Pick your phone and follow 5 numbered steps with tips along the way.',
+    icon: MessageSquare,
+    path: '/tools/group-text-setup',
+    color: 'text-blue-500',
+    bg: 'bg-blue-50 dark:bg-blue-950/30',
+    badge: 'Wizard',
+    category: 'Phone & Mobile',
+    difficulty: 'Easy',
+    time: '5 min',
+    newThisMonth: true,
+    keywords: 'group text setup wizard imessage rcs android iphone family chat group message create new how to start seniors',
   },
   {
     title: 'Phone Call Scripts',

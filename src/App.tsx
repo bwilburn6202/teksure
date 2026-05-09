@@ -213,6 +213,7 @@ const NewPhoneSetupChecklist = lazy(() => import("./pages/tools/NewPhoneSetupChe
 const CharitableDonationTracker = lazy(() => import("./pages/tools/CharitableDonationTracker"));
 const AnnualTechCheckup = lazy(() => import("./pages/tools/AnnualTechCheckup"));
 const PhoneBatteryCareGuide = lazy(() => import("./pages/tools/PhoneBatteryCareGuide"));
+const GroupTextSetupWizard = lazy(() => import("./pages/tools/GroupTextSetupWizard"));
 const DeviceTradeInEstimator = lazy(() => import("./pages/tools/DeviceTradeInEstimator"));
 const ParentalControlsWizard = lazy(() => import("./pages/tools/ParentalControlsWizard"));
 const HomeNetworkMap         = lazy(() => import("./pages/tools/HomeNetworkMap"));
@@ -4101,6 +4102,7 @@ const AppContent = () => {
           <Route path="/tools/charitable-donation-tracker" element={<CharitableDonationTracker />} />
           <Route path="/tools/annual-tech-checkup" element={<AnnualTechCheckup />} />
           <Route path="/tools/phone-battery-care" element={<PhoneBatteryCareGuide />} />
+          <Route path="/tools/group-text-setup" element={<GroupTextSetupWizard />} />
           <Route path="/tools/trade-in-estimator" element={<DeviceTradeInEstimator />} />
           <Route path="/tools/parental-controls-wizard" element={<ParentalControlsWizard />} />
           <Route path="/tools/home-network-map" element={<HomeNetworkMap />} />
