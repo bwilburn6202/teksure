@@ -12,7 +12,7 @@ import {
   Router, Tv, Signal, Video, Image as ImageIcon, FileCheck, PiggyBank, DollarSign,
   Newspaper, ChefHat, Car, Landmark, Thermometer, BookOpen, Cake,
   Siren, HandHeart, Calculator, Inbox, Library, Gavel, Headphones, Mic, Home,
-  Pill, Zap, MessageSquare, PawPrint,
+  Pill, Zap, MessageSquare, PawPrint, Plane,
 } from 'lucide-react';
 import { Navbar } from '@/components/layout/Navbar';
 import { Footer } from '@/components/layout/Footer';
@@ -1934,6 +1934,20 @@ export const tools: Tool[] = [
     time: '5 min',
     newThisMonth: true,
     keywords: 'pet care schedule tracker dog cat medication dose vet appointment veterinarian printable sitter rover senior pets multiple',
+  },
+  {
+    title: 'Trip Preparation Checklist',
+    description: 'A 22-item travel checklist organized by timeline — 1 month before, 2 weeks before, 1 week before, documents, and day-of reminders.',
+    icon: Plane,
+    path: '/tools/trip-preparation-checklist',
+    color: 'text-blue-600',
+    bg: 'bg-blue-50 dark:bg-blue-950/30',
+    badge: 'Checklist',
+    category: 'Travel',
+    difficulty: 'Easy',
+    time: '10 min',
+    newThisMonth: true,
+    keywords: 'trip preparation checklist travel ready packing flight passport hold mail book lodging insurance bank alert pet care senior travelers',
   },
   {
     title: 'Phone Call Scripts',

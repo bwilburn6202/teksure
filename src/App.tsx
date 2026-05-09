@@ -217,6 +217,7 @@ const GroupTextSetupWizard = lazy(() => import("./pages/tools/GroupTextSetupWiza
 const GiftCardBalanceTracker = lazy(() => import("./pages/tools/GiftCardBalanceTracker"));
 const BirthdayAnniversaryTracker = lazy(() => import("./pages/tools/BirthdayAnniversaryTracker"));
 const PetCareScheduleTracker = lazy(() => import("./pages/tools/PetCareScheduleTracker"));
+const TripPreparationChecklist = lazy(() => import("./pages/tools/TripPreparationChecklist"));
 const DeviceTradeInEstimator = lazy(() => import("./pages/tools/DeviceTradeInEstimator"));
 const ParentalControlsWizard = lazy(() => import("./pages/tools/ParentalControlsWizard"));
 const HomeNetworkMap         = lazy(() => import("./pages/tools/HomeNetworkMap"));
@@ -4109,6 +4110,7 @@ const AppContent = () => {
           <Route path="/tools/gift-card-tracker" element={<GiftCardBalanceTracker />} />
           <Route path="/tools/birthday-tracker" element={<BirthdayAnniversaryTracker />} />
           <Route path="/tools/pet-care-schedule" element={<PetCareScheduleTracker />} />
+          <Route path="/tools/trip-preparation-checklist" element={<TripPreparationChecklist />} />
           <Route path="/tools/trade-in-estimator" element={<DeviceTradeInEstimator />} />
           <Route path="/tools/parental-controls-wizard" element={<ParentalControlsWizard />} />
           <Route path="/tools/home-network-map" element={<HomeNetworkMap />} />
