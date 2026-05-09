@@ -12,7 +12,7 @@ import {
   Router, Tv, Signal, Video, Image as ImageIcon, FileCheck, PiggyBank, DollarSign,
   Newspaper, ChefHat, Car, Landmark, Thermometer, BookOpen, Cake,
   Siren, HandHeart, Calculator, Inbox, Library, Gavel, Headphones, Mic, Home,
-  Pill, Zap, MessageSquare, PawPrint, Plane, ShoppingCart, Scale, Moon, Footprints, Calendar, Notebook, Droplet, Sprout, Wrench,
+  Pill, Zap, MessageSquare, PawPrint, Plane, ShoppingCart, Scale, Moon, Footprints, Calendar, Notebook, Droplet, Sprout, Wrench, Wallet,
 } from 'lucide-react';
 import { Navbar } from '@/components/layout/Navbar';
 import { Footer } from '@/components/layout/Footer';
@@ -2438,6 +2438,20 @@ export const tools: Tool[] = [
     time: '2 min',
     newThisMonth: true,
     keywords: 'travel journal trip diary daily entry highlight meal location notes vacation senior memory book printable',
+  },
+  {
+    title: 'Lost Wallet Checklist',
+    description: '13-step recovery plan for a lost or stolen wallet — first hour, 24 hours, this week, and a wallet reset. Phone numbers for major card issuers and credit bureaus included.',
+    icon: Wallet,
+    path: '/tools/lost-wallet-checklist',
+    color: 'text-red-600',
+    bg: 'bg-red-50 dark:bg-red-950/30',
+    badge: 'Checklist',
+    category: 'Security',
+    difficulty: 'Easy',
+    time: '1 hour',
+    newThisMonth: true,
+    keywords: 'lost wallet checklist stolen credit card cancel medicare drivers license replace fraud alert credit bureau police report seniors emergency',
   },
   {
     title: 'Phone Call Scripts',
