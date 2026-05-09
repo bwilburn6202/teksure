@@ -252,6 +252,7 @@ const FamilyCheckInLog = lazy(() => import("./pages/tools/FamilyCheckInLog"));
 const TechHelpRequestForm = lazy(() => import("./pages/tools/TechHelpRequestForm"));
 const PhotoCaptionWorkbook = lazy(() => import("./pages/tools/PhotoCaptionWorkbook"));
 const HomeProjectWishlist = lazy(() => import("./pages/tools/HomeProjectWishlist"));
+const TravelJournal = lazy(() => import("./pages/tools/TravelJournal"));
 const DeviceTradeInEstimator = lazy(() => import("./pages/tools/DeviceTradeInEstimator"));
 const ParentalControlsWizard = lazy(() => import("./pages/tools/ParentalControlsWizard"));
 const HomeNetworkMap         = lazy(() => import("./pages/tools/HomeNetworkMap"));
@@ -4179,6 +4180,7 @@ const AppContent = () => {
           <Route path="/tools/tech-help-request" element={<TechHelpRequestForm />} />
           <Route path="/tools/photo-caption-workbook" element={<PhotoCaptionWorkbook />} />
           <Route path="/tools/home-project-wishlist" element={<HomeProjectWishlist />} />
+          <Route path="/tools/travel-journal" element={<TravelJournal />} />
           <Route path="/tools/trade-in-estimator" element={<DeviceTradeInEstimator />} />
           <Route path="/tools/parental-controls-wizard" element={<ParentalControlsWizard />} />
           <Route path="/tools/home-network-map" element={<HomeNetworkMap />} />
