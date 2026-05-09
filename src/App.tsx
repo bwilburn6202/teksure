@@ -226,6 +226,7 @@ const DailyRoutineBuilder = lazy(() => import("./pages/tools/DailyRoutineBuilder
 const GroceryListBuilder = lazy(() => import("./pages/tools/GroceryListBuilder"));
 const WeeklyMealPlanner = lazy(() => import("./pages/tools/WeeklyMealPlanner"));
 const WalletMedicalCard = lazy(() => import("./pages/tools/WalletMedicalCard"));
+const DailyHabitTracker = lazy(() => import("./pages/tools/DailyHabitTracker"));
 const DeviceTradeInEstimator = lazy(() => import("./pages/tools/DeviceTradeInEstimator"));
 const ParentalControlsWizard = lazy(() => import("./pages/tools/ParentalControlsWizard"));
 const HomeNetworkMap         = lazy(() => import("./pages/tools/HomeNetworkMap"));
@@ -4127,6 +4128,7 @@ const AppContent = () => {
           <Route path="/tools/grocery-list-builder" element={<GroceryListBuilder />} />
           <Route path="/tools/weekly-meal-planner" element={<WeeklyMealPlanner />} />
           <Route path="/tools/wallet-medical-card" element={<WalletMedicalCard />} />
+          <Route path="/tools/daily-habit-tracker" element={<DailyHabitTracker />} />
           <Route path="/tools/trade-in-estimator" element={<DeviceTradeInEstimator />} />
           <Route path="/tools/parental-controls-wizard" element={<ParentalControlsWizard />} />
           <Route path="/tools/home-network-map" element={<HomeNetworkMap />} />
