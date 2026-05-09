@@ -12,7 +12,7 @@ import {
   Router, Tv, Signal, Video, Image as ImageIcon, FileCheck, PiggyBank, DollarSign,
   Newspaper, ChefHat, Car, Landmark, Thermometer, BookOpen, Cake,
   Siren, HandHeart, Calculator, Inbox, Library, Gavel, Headphones, Mic, Home,
-  Pill, Zap, MessageSquare,
+  Pill, Zap, MessageSquare, PawPrint,
 } from 'lucide-react';
 import { Navbar } from '@/components/layout/Navbar';
 import { Footer } from '@/components/layout/Footer';
@@ -1920,6 +1920,20 @@ export const tools: Tool[] = [
     time: '3 min',
     newThisMonth: true,
     keywords: 'birthday anniversary tracker reminder family dates calendar countdown upcoming printable seniors important dates loved ones',
+  },
+  {
+    title: 'Pet Care Schedule Tracker',
+    description: "Track your pet's medications, doses, vet appointments, and notes. Multiple pets supported. Printable for the pet sitter or vet visit.",
+    icon: PawPrint,
+    path: '/tools/pet-care-schedule',
+    color: 'text-amber-600',
+    bg: 'bg-amber-50 dark:bg-amber-950/30',
+    badge: 'Tracker',
+    category: 'Health',
+    difficulty: 'Easy',
+    time: '5 min',
+    newThisMonth: true,
+    keywords: 'pet care schedule tracker dog cat medication dose vet appointment veterinarian printable sitter rover senior pets multiple',
   },
   {
     title: 'Phone Call Scripts',
