@@ -262,6 +262,7 @@ const TextMessageTemplates = lazy(() => import("./pages/tools/TextMessageTemplat
 const FormalLetterTemplates = lazy(() => import("./pages/tools/FormalLetterTemplates"));
 const SeniorMedTimer = lazy(() => import("./pages/tools/SeniorMedTimer"));
 const DividendIncomeTracker = lazy(() => import("./pages/tools/DividendIncomeTracker"));
+const WeeklyChoresChecklist = lazy(() => import("./pages/tools/WeeklyChoresChecklist"));
 const DeviceTradeInEstimator = lazy(() => import("./pages/tools/DeviceTradeInEstimator"));
 const ParentalControlsWizard = lazy(() => import("./pages/tools/ParentalControlsWizard"));
 const HomeNetworkMap         = lazy(() => import("./pages/tools/HomeNetworkMap"));
@@ -4199,6 +4200,7 @@ const AppContent = () => {
           <Route path="/tools/formal-letter-templates" element={<FormalLetterTemplates />} />
           <Route path="/tools/medication-timer" element={<SeniorMedTimer />} />
           <Route path="/tools/dividend-income-tracker" element={<DividendIncomeTracker />} />
+          <Route path="/tools/weekly-chores-checklist" element={<WeeklyChoresChecklist />} />
           <Route path="/tools/trade-in-estimator" element={<DeviceTradeInEstimator />} />
           <Route path="/tools/parental-controls-wizard" element={<ParentalControlsWizard />} />
           <Route path="/tools/home-network-map" element={<HomeNetworkMap />} />
