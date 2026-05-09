@@ -232,6 +232,7 @@ const PrintableAddressBook = lazy(() => import("./pages/tools/PrintableAddressBo
 const PrescriptionRefillCalendar = lazy(() => import("./pages/tools/PrescriptionRefillCalendar"));
 const LargePrintRecipeCard = lazy(() => import("./pages/tools/LargePrintRecipeCard"));
 const SleepDiary = lazy(() => import("./pages/tools/SleepDiary"));
+const WalkingLog = lazy(() => import("./pages/tools/WalkingLog"));
 const DeviceTradeInEstimator = lazy(() => import("./pages/tools/DeviceTradeInEstimator"));
 const ParentalControlsWizard = lazy(() => import("./pages/tools/ParentalControlsWizard"));
 const HomeNetworkMap         = lazy(() => import("./pages/tools/HomeNetworkMap"));
@@ -4139,6 +4140,7 @@ const AppContent = () => {
           <Route path="/tools/prescription-refill-calendar" element={<PrescriptionRefillCalendar />} />
           <Route path="/tools/large-print-recipe-card" element={<LargePrintRecipeCard />} />
           <Route path="/tools/sleep-diary" element={<SleepDiary />} />
+          <Route path="/tools/walking-log" element={<WalkingLog />} />
           <Route path="/tools/trade-in-estimator" element={<DeviceTradeInEstimator />} />
           <Route path="/tools/parental-controls-wizard" element={<ParentalControlsWizard />} />
           <Route path="/tools/home-network-map" element={<HomeNetworkMap />} />

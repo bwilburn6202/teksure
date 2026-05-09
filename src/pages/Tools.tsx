@@ -12,7 +12,7 @@ import {
   Router, Tv, Signal, Video, Image as ImageIcon, FileCheck, PiggyBank, DollarSign,
   Newspaper, ChefHat, Car, Landmark, Thermometer, BookOpen, Cake,
   Siren, HandHeart, Calculator, Inbox, Library, Gavel, Headphones, Mic, Home,
-  Pill, Zap, MessageSquare, PawPrint, Plane, ShoppingCart, Scale, Moon,
+  Pill, Zap, MessageSquare, PawPrint, Plane, ShoppingCart, Scale, Moon, Footprints,
 } from 'lucide-react';
 import { Navbar } from '@/components/layout/Navbar';
 import { Footer } from '@/components/layout/Footer';
@@ -2144,6 +2144,20 @@ export const tools: Tool[] = [
     time: '2 min',
     newThisMonth: true,
     keywords: 'sleep diary bedtime wake time quality stars insomnia track 7 night week average doctor printable seniors',
+  },
+  {
+    title: 'Walking Log',
+    description: 'Log every walk with minutes, miles, route, and notes. See last-7-day totals against the 150-minute weekly goal from the CDC.',
+    icon: Footprints,
+    path: '/tools/walking-log',
+    color: 'text-green-600',
+    bg: 'bg-green-50 dark:bg-green-950/30',
+    badge: 'Tracker',
+    category: 'Health',
+    difficulty: 'Easy',
+    time: '2 min',
+    newThisMonth: true,
+    keywords: 'walking log step tracker minutes miles route weekly goal CDC 150 minute exercise senior fitness daily',
   },
   {
     title: 'Phone Call Scripts',
