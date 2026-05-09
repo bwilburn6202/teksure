@@ -366,10 +366,10 @@ Legitimate companies — banks, the IRS, Medicare, Amazon — do not threaten to
 Before clicking any link in an email, look at where it actually goes. On a computer, hover your mouse over the link (do not click — just rest the mouse pointer on it) and look at the bottom of your screen. The real web address will appear there.
 
 Scammers create websites with names that look close to the real thing:
-- `amazon-helpdesk.net` instead of `amazon.com`
-- `paypa1.com` (with a number 1 instead of a letter l) instead of `paypal.com`
-- `irs-refund-claims.com` instead of `irs.gov`
-- `amaz0n-deals.ru` (ending in .ru, a Russian domain) instead of `amazon.com`
+- 'amazon-helpdesk.net' instead of 'amazon.com'
+- 'paypa1.com' (with a number 1 instead of a letter l) instead of 'paypal.com'
+- 'irs-refund-claims.com' instead of 'irs.gov'
+- 'amaz0n-deals.ru' (ending in .ru, a Russian domain) instead of 'amazon.com'
 
 If the address looks unusual or does not end in the company's official domain, do not click.
 
@@ -384,9 +384,9 @@ Many phishing messages contain spelling errors, awkward sentences, or phrases th
 Look carefully at the email address in the "From" field — not the display name, but the actual email address. Scammers often set the display name to "Medicare" or "Amazon Customer Service" but the actual sending address is a random or suspicious address:
 
 - Display name: Amazon Customer Service
-- Actual address: `support@amazon-billing-helpdesk.com` or `no-reply@xvb9284.net`
+- Actual address: 'support@amazon-billing-helpdesk.com' or 'no-reply@xvb9284.net'
 
-Amazon's real emails come from addresses ending in `@amazon.com`. Your bank's real emails come from addresses ending in the bank's official domain. When in doubt, look up the company's official email domain on their website.
+Amazon's real emails come from addresses ending in '@amazon.com'. Your bank's real emails come from addresses ending in the bank's official domain. When in doubt, look up the company's official email domain on their website.
 
 **5. They ask for a password, credit card number, or Social Security number**
 
@@ -396,7 +396,7 @@ If a message asks for any of this information, it is a scam. Period.
 
 **6. Unexpected attachments**
 
-Be cautious of any email you were not expecting that includes an attachment — especially files ending in `.zip`, `.exe`, `.doc`, or `.pdf`. Opening a malicious attachment can install software on your computer that records your keystrokes or locks your files.
+Be cautious of any email you were not expecting that includes an attachment — especially files ending in '.zip', '.exe', '.doc', or '.pdf'. Opening a malicious attachment can install software on your computer that records your keystrokes or locks your files.
 
 If you were not expecting a document, do not open the attachment. If you think it might be real, contact the sender by phone using a number you look up yourself — not a number provided in the email.
 
