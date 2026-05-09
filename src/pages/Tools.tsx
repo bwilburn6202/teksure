@@ -12,7 +12,7 @@ import {
   Router, Tv, Signal, Video, Image as ImageIcon, FileCheck, PiggyBank, DollarSign,
   Newspaper, ChefHat, Car, Landmark, Thermometer, BookOpen, Cake,
   Siren, HandHeart, Calculator, Inbox, Library, Gavel, Headphones, Mic, Home,
-  Pill, Zap, MessageSquare, PawPrint, Plane, ShoppingCart, Scale, Moon, Footprints, Calendar, Notebook, Droplet, Sprout,
+  Pill, Zap, MessageSquare, PawPrint, Plane, ShoppingCart, Scale, Moon, Footprints, Calendar, Notebook, Droplet, Sprout, Wrench,
 } from 'lucide-react';
 import { Navbar } from '@/components/layout/Navbar';
 import { Footer } from '@/components/layout/Footer';
@@ -2410,6 +2410,20 @@ export const tools: Tool[] = [
     time: '5 min',
     newThisMonth: true,
     keywords: 'photo caption workbook old family photos label year people place story scan archive memorabilia heritage seniors',
+  },
+  {
+    title: 'Home Project Wishlist',
+    description: 'Track every house repair and project — name, area, priority (now/soon/someday), estimated cost, who can help, status. Sorted by urgency. Printable.',
+    icon: Wrench,
+    path: '/tools/home-project-wishlist',
+    color: 'text-orange-600',
+    bg: 'bg-orange-50 dark:bg-orange-950/30',
+    badge: 'Tracker',
+    category: 'Home',
+    difficulty: 'Easy',
+    time: '5 min',
+    newThisMonth: true,
+    keywords: 'home project wishlist repair upgrade fix DIY handyman contractor priority cost room senior maintenance to do',
   },
   {
     title: 'Phone Call Scripts',
