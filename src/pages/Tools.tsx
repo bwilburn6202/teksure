@@ -12,7 +12,7 @@ import {
   Router, Tv, Signal, Video, Image as ImageIcon, FileCheck, PiggyBank, DollarSign,
   Newspaper, ChefHat, Car, Landmark, Thermometer, BookOpen, Cake,
   Siren, HandHeart, Calculator, Inbox, Library, Gavel, Headphones, Mic, Home,
-  Pill, Zap, MessageSquare, PawPrint, Plane, ShoppingCart, Scale,
+  Pill, Zap, MessageSquare, PawPrint, Plane, ShoppingCart, Scale, Moon,
 } from 'lucide-react';
 import { Navbar } from '@/components/layout/Navbar';
 import { Footer } from '@/components/layout/Footer';
@@ -2130,6 +2130,20 @@ export const tools: Tool[] = [
     time: '5 min',
     newThisMonth: true,
     keywords: 'large print recipe card cooking kitchen big text family recipe printable senior friendly easy read instructions ingredients',
+  },
+  {
+    title: 'Sleep Diary',
+    description: 'Log bedtime, wake time, and quality each morning. See 7-night averages for hours and quality. Print to share with your doctor.',
+    icon: Moon,
+    path: '/tools/sleep-diary',
+    color: 'text-indigo-600',
+    bg: 'bg-indigo-50 dark:bg-indigo-950/30',
+    badge: 'Tracker',
+    category: 'Health',
+    difficulty: 'Easy',
+    time: '2 min',
+    newThisMonth: true,
+    keywords: 'sleep diary bedtime wake time quality stars insomnia track 7 night week average doctor printable seniors',
   },
   {
     title: 'Phone Call Scripts',
