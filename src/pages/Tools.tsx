@@ -12,7 +12,7 @@ import {
   Router, Tv, Signal, Video, Image as ImageIcon, FileCheck, PiggyBank, DollarSign,
   Newspaper, ChefHat, Car, Landmark, Thermometer, BookOpen, Cake,
   Siren, HandHeart, Calculator, Inbox, Library, Gavel, Headphones, Mic, Home,
-  Pill, Zap, MessageSquare, PawPrint, Plane, ShoppingCart, Scale, Moon, Footprints,
+  Pill, Zap, MessageSquare, PawPrint, Plane, ShoppingCart, Scale, Moon, Footprints, Calendar,
 } from 'lucide-react';
 import { Navbar } from '@/components/layout/Navbar';
 import { Footer } from '@/components/layout/Footer';
@@ -2172,6 +2172,20 @@ export const tools: Tool[] = [
     time: '2 min',
     newThisMonth: true,
     keywords: 'pain symptom log tracker location level 0 10 sharp dull throbbing trigger relief doctor migraine arthritis seniors',
+  },
+  {
+    title: 'Bills Due Date Calendar',
+    description: 'Track every monthly bill with due day and amount. See what is coming up in next 7 days, quick-pick common bills, mark on auto-pay.',
+    icon: Calendar,
+    path: '/tools/bills-due-date-calendar',
+    color: 'text-blue-600',
+    bg: 'bg-blue-50 dark:bg-blue-950/30',
+    badge: 'Calendar',
+    category: 'Money',
+    difficulty: 'Easy',
+    time: '5 min',
+    newThisMonth: true,
+    keywords: 'bills due date calendar electric water gas internet mortgage auto pay monthly recurring track late fee senior printable',
   },
   {
     title: 'Phone Call Scripts',
