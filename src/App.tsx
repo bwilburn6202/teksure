@@ -222,6 +222,7 @@ const TaxDocumentChecklist = lazy(() => import("./pages/tools/TaxDocumentCheckli
 const BookMovieWatchlist = lazy(() => import("./pages/tools/BookMovieWatchlist"));
 const HomeMaintenanceTracker = lazy(() => import("./pages/tools/HomeMaintenanceTracker"));
 const DoctorQuestionPrepBuilder = lazy(() => import("./pages/tools/DoctorQuestionPrepBuilder"));
+const DailyRoutineBuilder = lazy(() => import("./pages/tools/DailyRoutineBuilder"));
 const DeviceTradeInEstimator = lazy(() => import("./pages/tools/DeviceTradeInEstimator"));
 const ParentalControlsWizard = lazy(() => import("./pages/tools/ParentalControlsWizard"));
 const HomeNetworkMap         = lazy(() => import("./pages/tools/HomeNetworkMap"));
@@ -4119,6 +4120,7 @@ const AppContent = () => {
           <Route path="/tools/reading-watch-list" element={<BookMovieWatchlist />} />
           <Route path="/tools/home-maintenance-tracker" element={<HomeMaintenanceTracker />} />
           <Route path="/tools/doctor-question-prep" element={<DoctorQuestionPrepBuilder />} />
+          <Route path="/tools/daily-routine-builder" element={<DailyRoutineBuilder />} />
           <Route path="/tools/trade-in-estimator" element={<DeviceTradeInEstimator />} />
           <Route path="/tools/parental-controls-wizard" element={<ParentalControlsWizard />} />
           <Route path="/tools/home-network-map" element={<HomeNetworkMap />} />
