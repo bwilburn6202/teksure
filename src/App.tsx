@@ -240,6 +240,7 @@ const SavingsGoalTracker = lazy(() => import("./pages/tools/SavingsGoalTracker")
 const GlucoseLog = lazy(() => import("./pages/tools/GlucoseLog"));
 const VolunteerHoursTracker = lazy(() => import("./pages/tools/VolunteerHoursTracker"));
 const WaterIntakeTracker = lazy(() => import("./pages/tools/WaterIntakeTracker"));
+const NetWorthSnapshot = lazy(() => import("./pages/tools/NetWorthSnapshot"));
 const DeviceTradeInEstimator = lazy(() => import("./pages/tools/DeviceTradeInEstimator"));
 const ParentalControlsWizard = lazy(() => import("./pages/tools/ParentalControlsWizard"));
 const HomeNetworkMap         = lazy(() => import("./pages/tools/HomeNetworkMap"));
@@ -4155,6 +4156,7 @@ const AppContent = () => {
           <Route path="/tools/glucose-log" element={<GlucoseLog />} />
           <Route path="/tools/volunteer-hours-tracker" element={<VolunteerHoursTracker />} />
           <Route path="/tools/water-intake-tracker" element={<WaterIntakeTracker />} />
+          <Route path="/tools/net-worth-snapshot" element={<NetWorthSnapshot />} />
           <Route path="/tools/trade-in-estimator" element={<DeviceTradeInEstimator />} />
           <Route path="/tools/parental-controls-wizard" element={<ParentalControlsWizard />} />
           <Route path="/tools/home-network-map" element={<HomeNetworkMap />} />
