@@ -13,7 +13,7 @@ import {
   Newspaper, ChefHat, Car, Landmark, Thermometer, BookOpen, Cake,
   Siren, HandHeart, Calculator, Inbox, Library, Gavel, Headphones, Mic, Home,
   Pill, Zap, MessageSquare, PawPrint, Plane, ShoppingCart, Scale, Moon, Footprints, Calendar, Notebook, Droplet, Sprout, Wrench, Wallet, PhoneOff, Tag, TrendingUp,
-  Volume2,
+  Volume2, CalendarCheck,
 } from 'lucide-react';
 import { Navbar } from '@/components/layout/Navbar';
 import { Footer } from '@/components/layout/Footer';
@@ -2985,6 +2985,34 @@ export const tools: Tool[] = [
     time: '20 min',
     newThisMonth: true,
     keywords: 'solo ager elder orphan no family healthcare proxy support circle planning worksheet seniors chosen family check-in',
+  },
+  {
+    title: 'Dementia Caregiver Stress Log',
+    description: 'For spouses and family caring for a loved one with Alzheimer\'s or dementia. Log stress, sleep, behavior events; see a 14-day pattern; get a burnout warning when respite is overdue.',
+    icon: Brain,
+    path: '/tools/dementia-caregiver-stress-log',
+    color: 'text-violet-700',
+    bg: 'bg-violet-50 dark:bg-violet-950/30',
+    badge: 'Tracker',
+    category: 'Health',
+    difficulty: 'Easy',
+    time: '1 min/day',
+    newThisMonth: true,
+    keywords: 'dementia caregiver Alzheimers stress log burnout sleep sundowning respite spouse memory care seniors',
+  },
+  {
+    title: 'First 90 Days of Retirement Checklist',
+    description: 'A week-by-week guide for the most decision-heavy stretch of newly-retired life. Medicare, 401(k), Social Security, structure, beneficiary updates.',
+    icon: CalendarCheck,
+    path: '/tools/retirement-90-day-checklist',
+    color: 'text-emerald-700',
+    bg: 'bg-emerald-50 dark:bg-emerald-950/30',
+    badge: 'Checklist',
+    category: 'Life Planning',
+    difficulty: 'Easy',
+    time: '90 day plan',
+    newThisMonth: true,
+    keywords: 'newly retired first 90 days retirement checklist Medicare 401k Social Security rollover transition seniors',
   },
   {
     title: 'Phone Call Scripts',
