@@ -1,4 +1,4 @@
-export type GuideCategory = 'windows-guides' | 'mac-guides' | 'essential-skills' | 'tips-tricks' | 'ai-guides' | 'ai-advanced' | 'safety-guides' | 'how-to' | 'app-guides' | 'health-tech' | 'phone-guides' | 'social-media' | 'government-civic' | 'financial-tech' | 'smart-home' | 'entertainment' | 'communication' | 'life-transitions' | 'internet-connectivity' | 'online-privacy' | 'online-banking' | 'buying-guides' | 'tech-explained' | 'troubleshooting' | 'work-from-home';
+export type GuideCategory = 'windows-guides' | 'mac-guides' | 'essential-skills' | 'tips-tricks' | 'ai-guides' | 'ai-advanced' | 'safety-guides' | 'how-to' | 'app-guides' | 'health-tech' | 'phone-guides' | 'social-media' | 'government-civic' | 'financial-tech' | 'smart-home' | 'entertainment' | 'communication' | 'life-transitions' | 'internet-connectivity' | 'online-privacy' | 'online-banking' | 'buying-guides' | 'tech-explained' | 'troubleshooting' | 'work-from-home' | 'travel';
 
 /** A visual callout overlaid on a guide step's screenshot */
 export interface ScreenshotAnnotation {
@@ -82,6 +82,7 @@ export const categoryLabels: Record<GuideCategory, string> = {
   'tech-explained': 'Tech Terms Explained',
   'troubleshooting': 'Troubleshooting',
   'work-from-home': 'Working from Home',
+  'travel': 'Travel & Abroad',
 };
 
 export const categoryDescriptions: Record<GuideCategory, string> = {
@@ -110,6 +111,7 @@ export const categoryDescriptions: Record<GuideCategory, string> = {
   'tech-explained': 'Confused by tech jargon? Plain-English explanations of RAM, CPU, storage, 4K, USB types, Bluetooth versions, and more',
   'troubleshooting': 'Fix common tech problems yourself — frozen apps, slow internet, error messages, battery drain, and devices that won\'t cooperate',
   'work-from-home': 'Set up a reliable home office — VPNs, remote desktop, video conferencing, cloud storage, and productivity tools for remote workers',
+  'travel': 'Plan and stay connected while traveling, retiring abroad, or splitting time between countries — permits, banking, phone numbers, and overseas logistics',
 };
 
 
@@ -12507,8 +12509,116 @@ import { guidesBatch139 } from './guides-batch-139';
 import { guidesBatch140 } from './guides-batch-140';
 import { guidesBatch141 } from './guides-batch-141';
 import { guidesBatch142 } from './guides-batch-142';
+import { guidesBatch143 } from './guides-batch-143';
+import { guidesBatch144 } from './guides-batch-144';
+import { guidesBatch145 } from './guides-batch-145';
+import { guidesBatch146 } from './guides-batch-146';
+import { guidesBatch147 } from './guides-batch-147';
+import { guidesBatch148 } from './guides-batch-148';
+import { guidesBatch149 } from './guides-batch-149';
+import { guidesBatch150 } from './guides-batch-150';
+import { guidesBatch151 } from './guides-batch-151';
+import { guidesBatch152 } from './guides-batch-152';
+import { guidesBatch153 } from './guides-batch-153';
+import { guidesBatch154 } from './guides-batch-154';
+import { guidesBatch155 } from './guides-batch-155';
+import { guidesBatch156 } from './guides-batch-156';
+import { guidesBatch157 } from './guides-batch-157';
+import { guidesBatch158 } from './guides-batch-158';
+import { guidesBatch159 } from './guides-batch-159';
+import { guidesBatch160 } from './guides-batch-160';
+import { guidesBatch161 } from './guides-batch-161';
+import { guidesBatch162 } from './guides-batch-162';
+import { guidesBatch163 } from './guides-batch-163';
+import { guidesBatch164 } from './guides-batch-164';
+import { guidesBatch165 } from './guides-batch-165';
+import { guidesBatch166 } from './guides-batch-166';
+import { guidesBatch167 } from './guides-batch-167';
+import { guidesBatch168 } from './guides-batch-168';
+import { guidesBatch169 } from './guides-batch-169';
+import { guidesBatch170 } from './guides-batch-170';
+import { guidesBatch171 } from './guides-batch-171';
+import { guidesBatch172 } from './guides-batch-172';
+import { guidesBatch173 } from './guides-batch-173';
+import { guidesBatch174 } from './guides-batch-174';
+import { guidesBatch175 } from './guides-batch-175';
+import { guidesBatch176 } from './guides-batch-176';
+import { guidesBatch177 } from './guides-batch-177';
+import { guidesBatch178 } from './guides-batch-178';
+import { guidesBatch179 } from './guides-batch-179';
+import { guidesBatch180 } from './guides-batch-180';
+import { guidesBatch181 } from './guides-batch-181';
+import { guidesBatch182 } from './guides-batch-182';
+import { guidesBatch183 } from './guides-batch-183';
+import { guidesBatch184 } from './guides-batch-184';
+import { guidesBatch185 } from './guides-batch-185';
+import { guidesBatch186 } from './guides-batch-186';
+import { guidesBatch187 } from './guides-batch-187';
+import { guidesBatch188 } from './guides-batch-188';
+import { guidesBatch189 } from './guides-batch-189';
+import { guidesBatch190 } from './guides-batch-190';
+import { guidesBatch191 } from './guides-batch-191';
+import { guidesBatch192 } from './guides-batch-192';
+import { guidesBatch193 } from './guides-batch-193';
+import { guidesBatch194 } from './guides-batch-194';
+import { guidesBatch195 } from './guides-batch-195';
+import { guidesBatch196 } from './guides-batch-196';
+import { guidesBatch197 } from './guides-batch-197';
+import { guidesBatch198 } from './guides-batch-198';
+import { guidesBatch199 } from './guides-batch-199';
+import { guidesBatch200 } from './guides-batch-200';
+import { guidesBatch201 } from './guides-batch-201';
+import { guidesBatch202 } from './guides-batch-202';
+import { guidesBatch203 } from './guides-batch-203';
+import { guidesBatch204 } from './guides-batch-204';
+import { guidesBatch205 } from './guides-batch-205';
+import { guidesBatch206 } from './guides-batch-206';
+import { guidesBatch207 } from './guides-batch-207';
+import { guidesBatch208 } from './guides-batch-208';
+import { guidesBatch209 } from './guides-batch-209';
+import { guidesBatch210 } from './guides-batch-210';
+import { guidesBatch211 } from './guides-batch-211';
+import { guidesBatch212 } from './guides-batch-212';
+import { guidesBatch213 } from './guides-batch-213';
+import { guidesBatch214 } from './guides-batch-214';
+import { guidesBatch215 } from './guides-batch-215';
+import { guidesBatch216 } from './guides-batch-216';
+import { guidesBatch217 } from './guides-batch-217';
+import { guidesBatch218 } from './guides-batch-218';
+import { guidesBatch220 } from './guides-batch-220';
+import { guidesBatch219 } from './guides-batch-219';
+import { guidesBatch223 } from './guides-batch-223';
+import { guidesBatch221 } from './guides-batch-221';
+import { guidesBatch222 } from './guides-batch-222';
+import { guidesBatch225 } from './guides-batch-225';
+import { guidesBatch224 } from './guides-batch-224';
+import { guidesBatch226 } from './guides-batch-226';
+import { guidesBatch227 } from './guides-batch-227';
+import { guidesBatch228 } from './guides-batch-228';
+import { guidesBatch229 } from './guides-batch-229';
+import { guidesBatch230 } from './guides-batch-230';
+import { guidesBatch231 } from './guides-batch-231';
+import { guidesBatch232 } from './guides-batch-232';
+import { guidesBatch233 } from './guides-batch-233';
+import { guidesBatch234 } from './guides-batch-234';
+import { guidesBatch235 } from './guides-batch-235';
+import { guidesBatch236 } from './guides-batch-236';
+import { guidesBatch237 } from './guides-batch-237';
+import { guidesBatch238 } from './guides-batch-238';
+import { guidesBatch239 } from './guides-batch-239';
+import { guidesBatch240 } from './guides-batch-240';
+import { guidesBatch241 } from './guides-batch-241';
+import { guidesBatch242 } from './guides-batch-242';
+import { guidesBatch243 } from './guides-batch-243';
+import { guidesBatch244 } from './guides-batch-244';
+import { guidesBatch245 } from './guides-batch-245';
+import { guidesBatch246 } from './guides-batch-246';
+import { guidesBatch247 } from './guides-batch-247';
+import { guidesBatch248 } from './guides-batch-248';
+import { guidesBatch249 } from './guides-batch-249';
+import { guidesBatch250 } from './guides-batch-250';
 
-const allGuides: Guide[] = [...coreGuides, ...guidesBatch4, ...guidesBatch5, ...guidesBatch6, ...guidesExpansion, ...guidesSpanish, ...guidesBatch7, ...guidesBatch8, ...guidesBatch9, ...guidesBatch10, ...guidesBatch11, ...guidesBatch12, ...guidesBatch13, ...guidesBatch14, ...guidesBatch15, ...guidesBatch16, ...guidesBatch17, ...guidesBatch18, ...guidesBatch19, ...guidesBatch20, ...guidesBatch21, ...guidesBatch22, ...guidesBatch23, ...guidesBatch24, ...guidesBatch25, ...guidesBatch26, ...guidesBatch27, ...guidesBatch28, ...guidesBatch29, ...guidesBatch30, ...guidesBatch31, ...guidesBatch32, ...guidesBatch33, ...guidesBatch34, ...guidesBatch35, ...guidesBatch36, ...guidesBatch37, ...guidesBatch38, ...guidesBatch39, ...guidesBatch40, ...guidesBatch41, ...guidesBatch42, ...guidesBatch43, ...guidesBatch44, ...guidesBatch45, ...guidesBatch46, ...guidesBatch47, ...guidesBatch48, ...guidesBatch49, ...guidesBatch50, ...guidesBatch51, ...guidesBatch52, ...guidesBatch53, ...guidesBatch54, ...guidesBatch55, ...guidesBatch56, ...guidesBatch57, ...guidesBatch58, ...guidesBatch59, ...guidesBatch60, ...guidesBatch61, ...guidesBatch62, ...guidesBatch63, ...guidesBatch64, ...guidesBatch65, ...guidesBatch66, ...guidesBatch67, ...guidesBatch68, ...guidesBatch69, ...guidesBatch70, ...guidesBatch71, ...guidesBatch72, ...guidesBatch73, ...guidesBatch74, ...guidesBatch75, ...guidesBatch76, ...guidesBatch77, ...guidesBatch78, ...guidesBatch79, ...guidesBatch80, ...guidesBatch81, ...guidesBatch82, ...guidesBatch83, ...guidesBatch84, ...guidesBatch85, ...guidesBatch86, ...guidesBatch87, ...guidesBatch88, ...guidesBatch89, ...guidesBatch90, ...guidesBatch91, ...guidesBatch92, ...guidesBatch93, ...guidesBatch94, ...guidesBatch95, ...guidesBatch96, ...guidesBatch97, ...guidesBatch98, ...guidesBatch99, ...guidesBatch100, ...guidesBatch101, ...guidesBatch102, ...guidesBatch103, ...guidesBatch104, ...guidesBatch105, ...guidesBatch106, ...guidesBatch107, ...guidesBatch108, ...guidesBatch109, ...guidesBatch110, ...guidesBatch111, ...guidesBatch112, ...guidesBatch113, ...guidesBatch114, ...guidesBatch115, ...guidesBatch117, ...guidesBatch118, ...guidesBatch119, ...guidesBatch120, ...guidesBatch121, ...guidesBatch122, ...guidesBatch124, ...guidesBatch125, ...guidesBatch126, ...guidesBatch127, ...guidesBatch128, ...guidesBatch129, ...guidesBatch130, ...guidesBatch131, ...guidesBatch132, ...guidesBatch133, ...guidesBatch134, ...guidesBatch135, ...guidesBatch136, ...guidesBatch137, ...guidesBatch138, ...guidesBatch139, ...guidesBatch140, ...guidesBatch141, ...guidesBatch142];
+const allGuides: Guide[] = [...coreGuides,...guidesBatch4, ...guidesBatch5, ...guidesBatch6, ...guidesExpansion, ...guidesSpanish, ...guidesBatch7, ...guidesBatch8, ...guidesBatch9, ...guidesBatch10, ...guidesBatch11, ...guidesBatch12, ...guidesBatch13, ...guidesBatch14, ...guidesBatch15, ...guidesBatch16, ...guidesBatch17, ...guidesBatch18, ...guidesBatch19, ...guidesBatch20, ...guidesBatch21, ...guidesBatch22, ...guidesBatch23, ...guidesBatch24, ...guidesBatch25, ...guidesBatch26, ...guidesBatch27, ...guidesBatch28, ...guidesBatch29, ...guidesBatch30, ...guidesBatch31, ...guidesBatch32, ...guidesBatch33, ...guidesBatch34, ...guidesBatch35, ...guidesBatch36, ...guidesBatch37, ...guidesBatch38, ...guidesBatch39, ...guidesBatch40, ...guidesBatch41, ...guidesBatch42, ...guidesBatch43, ...guidesBatch44, ...guidesBatch45, ...guidesBatch46, ...guidesBatch47, ...guidesBatch48, ...guidesBatch49, ...guidesBatch50, ...guidesBatch51, ...guidesBatch52, ...guidesBatch53, ...guidesBatch54, ...guidesBatch55, ...guidesBatch56, ...guidesBatch57, ...guidesBatch58, ...guidesBatch59, ...guidesBatch60, ...guidesBatch61, ...guidesBatch62, ...guidesBatch63, ...guidesBatch64, ...guidesBatch65, ...guidesBatch66, ...guidesBatch67, ...guidesBatch68, ...guidesBatch69, ...guidesBatch70, ...guidesBatch71, ...guidesBatch72, ...guidesBatch73, ...guidesBatch74, ...guidesBatch75, ...guidesBatch76, ...guidesBatch77, ...guidesBatch78, ...guidesBatch79, ...guidesBatch80, ...guidesBatch81, ...guidesBatch82, ...guidesBatch83, ...guidesBatch84, ...guidesBatch85, ...guidesBatch86, ...guidesBatch87, ...guidesBatch88, ...guidesBatch89, ...guidesBatch90, ...guidesBatch91, ...guidesBatch92, ...guidesBatch93, ...guidesBatch94, ...guidesBatch95, ...guidesBatch96, ...guidesBatch97, ...guidesBatch98, ...guidesBatch99, ...guidesBatch100, ...guidesBatch101, ...guidesBatch102, ...guidesBatch103, ...guidesBatch104, ...guidesBatch105, ...guidesBatch106, ...guidesBatch107, ...guidesBatch108, ...guidesBatch109, ...guidesBatch110, ...guidesBatch111, ...guidesBatch112, ...guidesBatch113, ...guidesBatch114, ...guidesBatch115, ...guidesBatch117, ...guidesBatch118, ...guidesBatch119, ...guidesBatch120, ...guidesBatch121, ...guidesBatch122, ...guidesBatch124, ...guidesBatch125, ...guidesBatch126, ...guidesBatch127, ...guidesBatch128, ...guidesBatch129, ...guidesBatch130, ...guidesBatch131, ...guidesBatch132, ...guidesBatch133, ...guidesBatch134, ...guidesBatch135, ...guidesBatch136, ...guidesBatch137, ...guidesBatch138, ...guidesBatch139, ...guidesBatch140, ...guidesBatch141, ...guidesBatch142, ...guidesBatch143, ...guidesBatch144, ...guidesBatch145, ...guidesBatch146, ...guidesBatch147, ...guidesBatch148, ...guidesBatch149, ...guidesBatch150, ...guidesBatch151, ...guidesBatch152, ...guidesBatch153, ...guidesBatch154, ...guidesBatch155, ...guidesBatch156, ...guidesBatch157, ...guidesBatch158, ...guidesBatch159, ...guidesBatch160, ...guidesBatch161, ...guidesBatch162, ...guidesBatch163, ...guidesBatch164, ...guidesBatch165, ...guidesBatch166, ...guidesBatch167, ...guidesBatch168, ...guidesBatch169, ...guidesBatch170, ...guidesBatch171, ...guidesBatch172, ...guidesBatch173, ...guidesBatch174, ...guidesBatch175, ...guidesBatch176, ...guidesBatch177, ...guidesBatch178, ...guidesBatch179, ...guidesBatch180, ...guidesBatch181, ...guidesBatch182, ...guidesBatch183, ...guidesBatch184, ...guidesBatch185, ...guidesBatch186, ...guidesBatch187, ...guidesBatch188, ...guidesBatch189, ...guidesBatch190, ...guidesBatch191, ...guidesBatch192, ...guidesBatch193, ...guidesBatch194, ...guidesBatch195, ...guidesBatch196, ...guidesBatch197, ...guidesBatch198, ...guidesBatch199, ...guidesBatch200, ...guidesBatch201, ...guidesBatch202, ...guidesBatch203, ...guidesBatch204, ...guidesBatch205, ...guidesBatch206, ...guidesBatch207, ...guidesBatch208, ...guidesBatch209, ...guidesBatch210, ...guidesBatch211, ...guidesBatch212, ...guidesBatch213, ...guidesBatch214, ...guidesBatch215, ...guidesBatch216, ...guidesBatch217, ...guidesBatch218, ...guidesBatch220, ...guidesBatch219, ...guidesBatch223, ...guidesBatch221, ...guidesBatch222, ...guidesBatch225, ...guidesBatch224, ...guidesBatch226, ...guidesBatch227, ...guidesBatch228, ...guidesBatch229, ...guidesBatch230, ...guidesBatch231, ...guidesBatch232, ...guidesBatch233, ...guidesBatch234, ...guidesBatch235, ...guidesBatch236, ...guidesBatch237, ...guidesBatch238, ...guidesBatch239, ...guidesBatch240, ...guidesBatch241, ...guidesBatch242, ...guidesBatch243, ...guidesBatch244, ...guidesBatch245, ...guidesBatch246, ...guidesBatch247, ...guidesBatch248, ...guidesBatch249, ...guidesBatch250];
 
 // Auto-set lastVerifiedAt for guides that don't have it explicitly set
 allGuides.forEach(g => {

@@ -778,7 +778,7 @@ Before assuming the battery is worn out, however, it is worth checking your sett
         content: "The screen is the single biggest battery consumer on most phones. Go to Settings > Display & Brightness (iPhone) or Settings > Display (Android) and lower the brightness. Also turn on Auto-Brightness if available, which adjusts the screen based on lighting conditions and saves power.",
       },
       {
-        title: 'Turn off location services for apps that don't need it',
+        title: "Turn off location services for apps that don't need it",
         content: "On iPhone: go to Settings > Privacy & Security > Location Services. Turn off location for any apps that don't genuinely need it. Games, shopping apps, and news apps rarely need your location. Set apps you do want to use location to 'While Using' rather than 'Always.' On Android: Settings > Location > App Permissions.",
       },
       {

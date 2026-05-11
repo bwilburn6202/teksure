@@ -72,3 +72,5 @@ export function SEOHead({ title, description, path = '/', type = 'website', ogIm
     </Helmet>
   );
 }
+
+export default SEOHead;
