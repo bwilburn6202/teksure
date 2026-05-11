@@ -13,7 +13,7 @@ import {
   Newspaper, ChefHat, Car, Landmark, Thermometer, BookOpen, Cake,
   Siren, HandHeart, Calculator, Inbox, Library, Gavel, Headphones, Mic, Home,
   Pill, Zap, MessageSquare, PawPrint, Plane, ShoppingCart, Scale, Moon, Footprints, Calendar, Notebook, Droplet, Sprout, Wrench, Wallet, PhoneOff, Tag, TrendingUp,
-  Volume2, CalendarCheck,
+  Volume2, CalendarCheck, Boxes,
 } from 'lucide-react';
 import { Navbar } from '@/components/layout/Navbar';
 import { Footer } from '@/components/layout/Footer';
@@ -3013,6 +3013,34 @@ export const tools: Tool[] = [
     time: '90 day plan',
     newThisMonth: true,
     keywords: 'newly retired first 90 days retirement checklist Medicare 401k Social Security rollover transition seniors',
+  },
+  {
+    title: 'Scam Recovery Checklist',
+    description: 'A dignified, no-judgment step-by-step for what to do AFTER being scammed. Reporting, credit freeze, bank dispute, identity lockdown, and emotional recovery.',
+    icon: ShieldAlert,
+    path: '/tools/scam-recovery-checklist',
+    color: 'text-red-700',
+    bg: 'bg-red-50 dark:bg-red-950/30',
+    badge: 'Checklist',
+    category: 'Safety',
+    difficulty: 'Easy',
+    time: '60 min',
+    newThisMonth: true,
+    keywords: 'scam recovery after scammed FTC IC3 credit freeze identity theft Reg E senior fraud AARP fraud watch helpline',
+  },
+  {
+    title: 'Senior Downsizing Plan',
+    description: 'A compassionate room-by-room plan. Three short notes per room — keep, gift, donate. Cycle the status by tapping the badge.',
+    icon: Boxes,
+    path: '/tools/hoarding-downsizing-plan',
+    color: 'text-orange-700',
+    bg: 'bg-orange-50 dark:bg-orange-950/30',
+    badge: 'Worksheet',
+    category: 'Life Planning',
+    difficulty: 'Easy',
+    time: '90 min/room',
+    newThisMonth: true,
+    keywords: 'senior downsizing hoarding declutter room by room keep gift donate sentimental senior move manager NASMM',
   },
   {
     title: 'Phone Call Scripts',

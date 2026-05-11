@@ -294,6 +294,8 @@ const WidowhoodFirst30Days = lazy(() => import("./pages/tools/WidowhoodFirst30Da
 const SoloAgerPlan = lazy(() => import("./pages/tools/SoloAgerPlan"));
 const DementiaCaregiverStressLog = lazy(() => import("./pages/tools/DementiaCaregiverStressLog"));
 const Retirement90DayChecklist = lazy(() => import("./pages/tools/Retirement90DayChecklist"));
+const ScamRecoveryChecklist = lazy(() => import("./pages/tools/ScamRecoveryChecklist"));
+const HoardingDownsizingPlan = lazy(() => import("./pages/tools/HoardingDownsizingPlan"));
 const DeviceTradeInEstimator = lazy(() => import("./pages/tools/DeviceTradeInEstimator"));
 const ParentalControlsWizard = lazy(() => import("./pages/tools/ParentalControlsWizard"));
 const HomeNetworkMap         = lazy(() => import("./pages/tools/HomeNetworkMap"));
@@ -4263,6 +4265,8 @@ const AppContent = () => {
           <Route path="/tools/solo-ager-plan" element={<SoloAgerPlan />} />
           <Route path="/tools/dementia-caregiver-stress-log" element={<DementiaCaregiverStressLog />} />
           <Route path="/tools/retirement-90-day-checklist" element={<Retirement90DayChecklist />} />
+          <Route path="/tools/scam-recovery-checklist" element={<ScamRecoveryChecklist />} />
+          <Route path="/tools/hoarding-downsizing-plan" element={<HoardingDownsizingPlan />} />
           <Route path="/tools/trade-in-estimator" element={<DeviceTradeInEstimator />} />
           <Route path="/tools/parental-controls-wizard" element={<ParentalControlsWizard />} />
           <Route path="/tools/home-network-map" element={<HomeNetworkMap />} />
