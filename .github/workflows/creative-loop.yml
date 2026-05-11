@@ -1,0 +1,92 @@
+name: TekSure creative-loop
+
+# The creative-loop generates new guides from the curated topic library
+# at scripts/creative-loop/topics.mjs and pushes them to main automatically.
+#
+# Runs once per day at 14:23 UTC (offset to avoid the cron stampede on :00).
+# Manually triggerable from the Actions tab via "Run workflow."
+
+on:
+  schedule:
+    - cron: '23 14 * * *'
+  workflow_dispatch:
+    inputs:
+      cycles:
+        description: 'How many cycles to run (1 cycle = 1-2 new guides)'
+        required: false
+        default: '1'
+      topics_per_cycle:
+        description: 'How many topics per cycle'
+        required: false
+        default: '2'
+      dry_run:
+        description: 'Dry run (do not commit/push)'
+        required: false
+        default: 'false'
+
+permissions:
+  contents: write
+
+concurrency:
+  group: creative-loop
+  cancel-in-progress: false
+
+jobs:
+  loop:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+
+    steps:
+      - name: Checkout main
+        uses: actions/checkout@v4
+        with:
+          ref: main
+          fetch-depth: 1
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version-file: '.nvmrc'
+          cache: 'npm'
+
+      - name: Install dependencies
+        run: npm ci --no-audit --no-fund
+
+      - name: Configure git for bot commits
+        run: |
+          git config user.name "teksure-creative-loop[bot]"
+          git config user.email "teksure-creative-loop[bot]@users.noreply.github.com"
+
+      - name: Run creative-loop
+        env:
+          CYCLES: ${{ inputs.cycles || '1' }}
+          TPC: ${{ inputs.topics_per_cycle || '2' }}
+          DRY: ${{ inputs.dry_run || 'false' }}
+        run: |
+          if [ "$DRY" = "true" ]; then
+            node scripts/creative-loop.mjs --dry-run --cycles="$CYCLES" --topics="$TPC"
+          else
+            # Bot commits + pushes itself, with retry built in.
+            node scripts/creative-loop.mjs --cycles="$CYCLES" --topics="$TPC"
+          fi
+
+      - name: Stage state file changes
+        if: ${{ inputs.dry_run != 'true' }}
+        run: |
+          git add .claude/creative-loop-state.json .claude/creative-loop-log.md || true
+          if git diff --staged --quiet; then
+            echo "creative-loop: no state changes to commit"
+          else
+            git commit -m "chore(creative-loop): update state + log"
+            for delay in 0 2 4 8; do
+              if [ "$delay" != "0" ]; then sleep "$delay"; fi
+              if git push origin main; then
+                echo "state push ok"
+                exit 0
+              fi
+              git pull --rebase origin main || true
+            done
+            echo "state push failed after retries" >&2
+            exit 1
+          fi

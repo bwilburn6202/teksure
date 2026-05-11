@@ -25,7 +25,11 @@
     "loop:dev": "node scripts/dev-loop.mjs",
     "loop:dev:once": "node scripts/dev-loop.mjs --once",
     "loop:dev:dry": "node scripts/dev-loop.mjs --once --dry-run",
-    "loop:dev:ci": "node scripts/dev-loop.mjs --once --ci"
+    "loop:dev:ci": "node scripts/dev-loop.mjs --once --ci",
+    "loop:creative": "node scripts/creative-loop.mjs",
+    "loop:creative:dry": "node scripts/creative-loop.mjs --dry-run",
+    "loop:creative:local": "node scripts/creative-loop.mjs --no-push",
+    "loop:creative:burst": "node scripts/creative-loop.mjs --cycles=5 --topics=2"
   },
   "dependencies": {
     "@radix-ui/react-accordion": "^1.2.11",

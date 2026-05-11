@@ -1,0 +1,92 @@
+{
+  "version": "1.0",
+  "cycleCount": 5,
+  "history": [
+    {
+      "cycle": 5,
+      "batchNumber": 131,
+      "topics": [
+        {
+          "slug": "free-tax-preparation-aarp-irs",
+          "title": "Free Tax Preparation for Seniors: AARP, IRS, and Online Options"
+        },
+        {
+          "slug": "use-spotify-pandora-free-music-streaming",
+          "title": "Listen to Free Music with Spotify or Pandora (No Subscription Needed)"
+        }
+      ],
+      "timestamp": "2026-05-05T05:16:21.890Z"
+    },
+    {
+      "cycle": 4,
+      "batchNumber": 130,
+      "topics": [
+        {
+          "slug": "use-google-maps-favorite-saved-places",
+          "title": "Save Your Favorite Places in Google Maps (and Share the List with Family)"
+        },
+        {
+          "slug": "use-iphone-emergency-sos-feature",
+          "title": "How Emergency SOS Works on iPhone (and How to Test It Safely)"
+        }
+      ],
+      "timestamp": "2026-05-05T05:16:21.412Z"
+    },
+    {
+      "cycle": 3,
+      "batchNumber": 129,
+      "topics": [
+        {
+          "slug": "recognize-grandparent-scam-2026",
+          "title": "How to Recognize the Grandparent Scam (and What to Say if You Get the Call)"
+        },
+        {
+          "slug": "set-up-amazon-prime-delivery-prescriptions",
+          "title": "Use Amazon Pharmacy to Get Prescriptions Delivered (Often Cheaper than Walgreens)"
+        }
+      ],
+      "timestamp": "2026-05-05T05:16:20.947Z"
+    },
+    {
+      "cycle": 2,
+      "batchNumber": 128,
+      "topics": [
+        {
+          "slug": "use-find-my-iphone-find-lost-phone",
+          "title": "How to Find a Lost iPhone with Find My (Even if it is Off)"
+        },
+        {
+          "slug": "organize-photos-google-photos-albums",
+          "title": "Organize a Lifetime of Photos with Free Google Photos Albums"
+        }
+      ],
+      "timestamp": "2026-05-05T05:16:20.457Z"
+    },
+    {
+      "cycle": 1,
+      "batchNumber": 127,
+      "topics": [
+        {
+          "slug": "safe-online-bill-pay-bank-account",
+          "title": "How to Pay Your Bills Online Through Your Bank (Safer Than Mailing Checks)"
+        }
+      ],
+      "timestamp": "2026-05-05T05:16:19.962Z"
+    }
+  ],
+  "usedTopicSlugs": [
+    "spot-fake-tech-support-popup-ads",
+    "understand-medicare-online-account",
+    "use-iphone-magnifier-as-reading-aid",
+    "safe-online-bill-pay-bank-account",
+    "use-find-my-iphone-find-lost-phone",
+    "organize-photos-google-photos-albums",
+    "recognize-grandparent-scam-2026",
+    "set-up-amazon-prime-delivery-prescriptions",
+    "use-google-maps-favorite-saved-places",
+    "use-iphone-emergency-sos-feature",
+    "free-tax-preparation-aarp-irs",
+    "use-spotify-pandora-free-music-streaming"
+  ],
+  "lastRun": "2026-05-05T05:16:21.890Z"
+}
