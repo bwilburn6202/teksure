@@ -278,6 +278,8 @@ const HourlyToAnnualCalculator = lazy(() => import("./pages/tools/HourlyToAnnual
 const RMDCalculator = lazy(() => import("./pages/tools/RMDCalculator"));
 const TextSizeShowcase = lazy(() => import("./pages/tools/TextSizeShowcase"));
 const CarLoanCompare = lazy(() => import("./pages/tools/CarLoanCompare"));
+const MailAddressLabelMaker = lazy(() => import("./pages/tools/MailAddressLabelMaker"));
+const EmergencyContactQuickDial = lazy(() => import("./pages/tools/EmergencyContactQuickDial"));
 const DeviceTradeInEstimator = lazy(() => import("./pages/tools/DeviceTradeInEstimator"));
 const ParentalControlsWizard = lazy(() => import("./pages/tools/ParentalControlsWizard"));
 const HomeNetworkMap         = lazy(() => import("./pages/tools/HomeNetworkMap"));
@@ -4231,6 +4233,8 @@ const AppContent = () => {
           <Route path="/tools/rmd-calculator" element={<RMDCalculator />} />
           <Route path="/tools/text-size-showcase" element={<TextSizeShowcase />} />
           <Route path="/tools/car-loan-compare" element={<CarLoanCompare />} />
+          <Route path="/tools/mail-label-maker" element={<MailAddressLabelMaker />} />
+          <Route path="/tools/emergency-quick-dial-card" element={<EmergencyContactQuickDial />} />
           <Route path="/tools/trade-in-estimator" element={<DeviceTradeInEstimator />} />
           <Route path="/tools/parental-controls-wizard" element={<ParentalControlsWizard />} />
           <Route path="/tools/home-network-map" element={<HomeNetworkMap />} />
