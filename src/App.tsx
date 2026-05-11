@@ -275,6 +275,9 @@ const PercentOffCalculator = lazy(() => import("./pages/tools/PercentOffCalculat
 const BMICalculator = lazy(() => import("./pages/tools/BMICalculator"));
 const LoanPaymentCalculator = lazy(() => import("./pages/tools/LoanPaymentCalculator"));
 const HourlyToAnnualCalculator = lazy(() => import("./pages/tools/HourlyToAnnualCalculator"));
+const RMDCalculator = lazy(() => import("./pages/tools/RMDCalculator"));
+const TextSizeShowcase = lazy(() => import("./pages/tools/TextSizeShowcase"));
+const CarLoanCompare = lazy(() => import("./pages/tools/CarLoanCompare"));
 const DeviceTradeInEstimator = lazy(() => import("./pages/tools/DeviceTradeInEstimator"));
 const ParentalControlsWizard = lazy(() => import("./pages/tools/ParentalControlsWizard"));
 const HomeNetworkMap         = lazy(() => import("./pages/tools/HomeNetworkMap"));
@@ -4225,6 +4228,9 @@ const AppContent = () => {
           <Route path="/tools/bmi-calculator" element={<BMICalculator />} />
           <Route path="/tools/loan-payment-calculator" element={<LoanPaymentCalculator />} />
           <Route path="/tools/hourly-to-annual" element={<HourlyToAnnualCalculator />} />
+          <Route path="/tools/rmd-calculator" element={<RMDCalculator />} />
+          <Route path="/tools/text-size-showcase" element={<TextSizeShowcase />} />
+          <Route path="/tools/car-loan-compare" element={<CarLoanCompare />} />
           <Route path="/tools/trade-in-estimator" element={<DeviceTradeInEstimator />} />
           <Route path="/tools/parental-controls-wizard" element={<ParentalControlsWizard />} />
           <Route path="/tools/home-network-map" element={<HomeNetworkMap />} />
