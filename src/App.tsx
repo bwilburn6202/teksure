@@ -290,6 +290,8 @@ const DailySpendingLog = lazy(() => import("./pages/tools/DailySpendingLog"));
 const AdvanceDirectiveWorksheet = lazy(() => import("./pages/tools/AdvanceDirectiveWorksheet"));
 const BloodPressureTracker = lazy(() => import("./pages/tools/BloodPressureTracker"));
 const TinnitusTrackingLog = lazy(() => import("./pages/tools/TinnitusTrackingLog"));
+const WidowhoodFirst30Days = lazy(() => import("./pages/tools/WidowhoodFirst30Days"));
+const SoloAgerPlan = lazy(() => import("./pages/tools/SoloAgerPlan"));
 const DeviceTradeInEstimator = lazy(() => import("./pages/tools/DeviceTradeInEstimator"));
 const ParentalControlsWizard = lazy(() => import("./pages/tools/ParentalControlsWizard"));
 const HomeNetworkMap         = lazy(() => import("./pages/tools/HomeNetworkMap"));
@@ -4255,6 +4257,8 @@ const AppContent = () => {
           <Route path="/tools/advance-directive-worksheet" element={<AdvanceDirectiveWorksheet />} />
           <Route path="/tools/blood-pressure-tracker" element={<BloodPressureTracker />} />
           <Route path="/tools/tinnitus-tracking-log" element={<TinnitusTrackingLog />} />
+          <Route path="/tools/widowhood-first-30-days" element={<WidowhoodFirst30Days />} />
+          <Route path="/tools/solo-ager-plan" element={<SoloAgerPlan />} />
           <Route path="/tools/trade-in-estimator" element={<DeviceTradeInEstimator />} />
           <Route path="/tools/parental-controls-wizard" element={<ParentalControlsWizard />} />
           <Route path="/tools/home-network-map" element={<HomeNetworkMap />} />
