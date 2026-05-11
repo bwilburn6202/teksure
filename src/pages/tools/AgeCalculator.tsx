@@ -22,9 +22,11 @@ export default function AgeCalculator() {
     }
     if (months < 0) { years -= 1; months += 12; }
     const totalDays = Math.floor((today.getTime() - birth.getTime()) / (1000 * 60 * 60 * 24));
-    const nextBday = new Date(today.getFullYear(), birth.getMonth(), birth.getDate());
-    if (nextBday < today) nextBday.setFullYear(today.getFullYear() + 1);
-    const daysToBday = Math.ceil((nextBday.getTime() - today.getTime()) / (1000 * 60 * 60 * 24));
+    // Compare at day granularity so the birthday day itself reads as 0
+    const todayMidnight = new Date(today.getFullYear(), today.getMonth(), today.getDate());
+    const nextBday = new Date(todayMidnight.getFullYear(), birth.getMonth(), birth.getDate());
+    if (nextBday < todayMidnight) nextBday.setFullYear(todayMidnight.getFullYear() + 1);
+    const daysToBday = Math.round((nextBday.getTime() - todayMidnight.getTime()) / (1000 * 60 * 60 * 24));
     return { years, months, days, totalDays, daysToBday };
   })();
 
