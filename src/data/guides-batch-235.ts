@@ -287,7 +287,7 @@ export const guidesBatch235: Guide[] = [
       {
         title: "Apply for Your Mexican IMSS Pension Separately",
         content: "Your Mexican pension is paid separately from your US Social Security benefit, and you must apply through Mexico to receive it. If you live in the United States, the easiest path is to visit your local Mexican consulate. There are over 50 Mexican consulates in the United States, including in major cities like Los Angeles, Chicago, New York, Houston, Phoenix, Dallas, Miami, and San Francisco. The consulate offers a free service called Mi Pension that helps Mexican citizens apply for an IMSS pension from abroad. Bring your Mexican birth certificate, your CURP, your old IMSS card if you have one, any Mexican work documents, and proof of identity. The consulate will start the application and submit it to IMSS on your behalf. The process takes 4 to 12 months and the monthly pension is paid in Mexican pesos. You can have it deposited into a Mexican bank account or, for a small fee, transferred each month to a US bank account.",
-        warning: "Some private companies advertise that they can speed up your IMSS pension application for a fee. The consulate service is free and just as fast. Never pay a third-party company for an application that the consulate handles for you at no cost."
+        warning: "Some private companies advertise that they can speed up your IMSS pension application for a fee. The consulate service is free and equally fast. Never pay a third-party company for an application that the consulate handles for you at no cost."
       },
       {
         title: "Understand the Removal of the Windfall Elimination Provision",
