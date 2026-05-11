@@ -269,6 +269,9 @@ const CookingMeasureConverter = lazy(() => import("./pages/tools/CookingMeasureC
 const AgeCalculator = lazy(() => import("./pages/tools/AgeCalculator"));
 const DistanceConverter = lazy(() => import("./pages/tools/DistanceConverter"));
 const WeightUnitConverter = lazy(() => import("./pages/tools/WeightUnitConverter"));
+const TimeZoneConverter = lazy(() => import("./pages/tools/TimeZoneConverter"));
+const DaysBetweenDates = lazy(() => import("./pages/tools/DaysBetweenDates"));
+const PercentOffCalculator = lazy(() => import("./pages/tools/PercentOffCalculator"));
 const DeviceTradeInEstimator = lazy(() => import("./pages/tools/DeviceTradeInEstimator"));
 const ParentalControlsWizard = lazy(() => import("./pages/tools/ParentalControlsWizard"));
 const HomeNetworkMap         = lazy(() => import("./pages/tools/HomeNetworkMap"));
@@ -4213,6 +4216,9 @@ const AppContent = () => {
           <Route path="/tools/age-calculator" element={<AgeCalculator />} />
           <Route path="/tools/distance-converter" element={<DistanceConverter />} />
           <Route path="/tools/weight-converter" element={<WeightUnitConverter />} />
+          <Route path="/tools/time-zone-converter" element={<TimeZoneConverter />} />
+          <Route path="/tools/days-between-dates" element={<DaysBetweenDates />} />
+          <Route path="/tools/percent-off-calculator" element={<PercentOffCalculator />} />
           <Route path="/tools/trade-in-estimator" element={<DeviceTradeInEstimator />} />
           <Route path="/tools/parental-controls-wizard" element={<ParentalControlsWizard />} />
           <Route path="/tools/home-network-map" element={<HomeNetworkMap />} />
