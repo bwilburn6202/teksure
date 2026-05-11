@@ -298,6 +298,8 @@ const ScamRecoveryChecklist = lazy(() => import("./pages/tools/ScamRecoveryCheck
 const HoardingDownsizingPlan = lazy(() => import("./pages/tools/HoardingDownsizingPlan"));
 const MemoirPromptGenerator = lazy(() => import("./pages/tools/MemoirPromptGenerator"));
 const AccessibleTravelChecklist = lazy(() => import("./pages/tools/AccessibleTravelChecklist"));
+const SeniorFirearmSafetyChecklist = lazy(() => import("./pages/tools/SeniorFirearmSafetyChecklist"));
+const DivorceAt70Checklist = lazy(() => import("./pages/tools/DivorceAt70Checklist"));
 const DeviceTradeInEstimator = lazy(() => import("./pages/tools/DeviceTradeInEstimator"));
 const ParentalControlsWizard = lazy(() => import("./pages/tools/ParentalControlsWizard"));
 const HomeNetworkMap         = lazy(() => import("./pages/tools/HomeNetworkMap"));
@@ -4271,6 +4273,8 @@ const AppContent = () => {
           <Route path="/tools/hoarding-downsizing-plan" element={<HoardingDownsizingPlan />} />
           <Route path="/tools/memoir-prompt-generator" element={<MemoirPromptGenerator />} />
           <Route path="/tools/accessible-travel-checklist" element={<AccessibleTravelChecklist />} />
+          <Route path="/tools/senior-firearm-safety-checklist" element={<SeniorFirearmSafetyChecklist />} />
+          <Route path="/tools/divorce-at-70-checklist" element={<DivorceAt70Checklist />} />
           <Route path="/tools/trade-in-estimator" element={<DeviceTradeInEstimator />} />
           <Route path="/tools/parental-controls-wizard" element={<ParentalControlsWizard />} />
           <Route path="/tools/home-network-map" element={<HomeNetworkMap />} />
