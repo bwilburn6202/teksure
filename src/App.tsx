@@ -272,6 +272,9 @@ const WeightUnitConverter = lazy(() => import("./pages/tools/WeightUnitConverter
 const TimeZoneConverter = lazy(() => import("./pages/tools/TimeZoneConverter"));
 const DaysBetweenDates = lazy(() => import("./pages/tools/DaysBetweenDates"));
 const PercentOffCalculator = lazy(() => import("./pages/tools/PercentOffCalculator"));
+const BMICalculator = lazy(() => import("./pages/tools/BMICalculator"));
+const LoanPaymentCalculator = lazy(() => import("./pages/tools/LoanPaymentCalculator"));
+const HourlyToAnnualCalculator = lazy(() => import("./pages/tools/HourlyToAnnualCalculator"));
 const DeviceTradeInEstimator = lazy(() => import("./pages/tools/DeviceTradeInEstimator"));
 const ParentalControlsWizard = lazy(() => import("./pages/tools/ParentalControlsWizard"));
 const HomeNetworkMap         = lazy(() => import("./pages/tools/HomeNetworkMap"));
@@ -4219,6 +4222,9 @@ const AppContent = () => {
           <Route path="/tools/time-zone-converter" element={<TimeZoneConverter />} />
           <Route path="/tools/days-between-dates" element={<DaysBetweenDates />} />
           <Route path="/tools/percent-off-calculator" element={<PercentOffCalculator />} />
+          <Route path="/tools/bmi-calculator" element={<BMICalculator />} />
+          <Route path="/tools/loan-payment-calculator" element={<LoanPaymentCalculator />} />
+          <Route path="/tools/hourly-to-annual" element={<HourlyToAnnualCalculator />} />
           <Route path="/tools/trade-in-estimator" element={<DeviceTradeInEstimator />} />
           <Route path="/tools/parental-controls-wizard" element={<ParentalControlsWizard />} />
           <Route path="/tools/home-network-map" element={<HomeNetworkMap />} />
