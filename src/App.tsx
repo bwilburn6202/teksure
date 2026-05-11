@@ -283,6 +283,8 @@ const EmergencyContactQuickDial = lazy(() => import("./pages/tools/EmergencyCont
 const PrintableMonthlyCalendar = lazy(() => import("./pages/tools/PrintableMonthlyCalendar"));
 const MortgageRefiBreakEven = lazy(() => import("./pages/tools/MortgageRefiBreakEven"));
 const FallPreventionAssessment = lazy(() => import("./pages/tools/FallPreventionAssessment"));
+const CompoundInterestCalculator = lazy(() => import("./pages/tools/CompoundInterestCalculator"));
+const RecipeScaler = lazy(() => import("./pages/tools/RecipeScaler"));
 const DeviceTradeInEstimator = lazy(() => import("./pages/tools/DeviceTradeInEstimator"));
 const ParentalControlsWizard = lazy(() => import("./pages/tools/ParentalControlsWizard"));
 const HomeNetworkMap         = lazy(() => import("./pages/tools/HomeNetworkMap"));
@@ -4241,6 +4243,8 @@ const AppContent = () => {
           <Route path="/tools/printable-monthly-calendar" element={<PrintableMonthlyCalendar />} />
           <Route path="/tools/refi-break-even-calculator" element={<MortgageRefiBreakEven />} />
           <Route path="/tools/fall-prevention-assessment" element={<FallPreventionAssessment />} />
+          <Route path="/tools/compound-interest-calculator" element={<CompoundInterestCalculator />} />
+          <Route path="/tools/recipe-scaler" element={<RecipeScaler />} />
           <Route path="/tools/trade-in-estimator" element={<DeviceTradeInEstimator />} />
           <Route path="/tools/parental-controls-wizard" element={<ParentalControlsWizard />} />
           <Route path="/tools/home-network-map" element={<HomeNetworkMap />} />

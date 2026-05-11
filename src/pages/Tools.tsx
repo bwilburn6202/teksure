@@ -12,7 +12,7 @@ import {
   Router, Tv, Signal, Video, Image as ImageIcon, FileCheck, PiggyBank, DollarSign,
   Newspaper, ChefHat, Car, Landmark, Thermometer, BookOpen, Cake,
   Siren, HandHeart, Calculator, Inbox, Library, Gavel, Headphones, Mic, Home,
-  Pill, Zap, MessageSquare, PawPrint, Plane, ShoppingCart, Scale, Moon, Footprints, Calendar, Notebook, Droplet, Sprout, Wrench, Wallet, PhoneOff, Tag,
+  Pill, Zap, MessageSquare, PawPrint, Plane, ShoppingCart, Scale, Moon, Footprints, Calendar, Notebook, Droplet, Sprout, Wrench, Wallet, PhoneOff, Tag, TrendingUp,
 } from 'lucide-react';
 import { Navbar } from '@/components/layout/Navbar';
 import { Footer } from '@/components/layout/Footer';
@@ -2858,6 +2858,34 @@ export const tools: Tool[] = [
     time: '5 min',
     newThisMonth: true,
     keywords: 'fall risk self assessment CDC STEADI senior prevention balance medications rugs grab bars',
+  },
+  {
+    title: 'Compound Interest Calculator',
+    description: 'See how money grows. Starting amount, optional monthly deposits, annual rate, years — see future value, contributions, and interest earned.',
+    icon: TrendingUp,
+    path: '/tools/compound-interest-calculator',
+    color: 'text-emerald-700',
+    bg: 'bg-emerald-50 dark:bg-emerald-950/30',
+    badge: 'Calculator',
+    category: 'Money',
+    difficulty: 'Easy',
+    time: '1 min',
+    newThisMonth: true,
+    keywords: 'compound interest calculator retirement growth deposit rate years future value seniors investing',
+  },
+  {
+    title: 'Recipe Scaler',
+    description: 'Paste a recipe and pick how many servings you want. The tool adjusts every ingredient with kitchen-friendly fractions.',
+    icon: ChefHat,
+    path: '/tools/recipe-scaler',
+    color: 'text-amber-600',
+    bg: 'bg-amber-50 dark:bg-amber-950/30',
+    badge: 'Calculator',
+    category: 'Lifestyle',
+    difficulty: 'Easy',
+    time: '2 min',
+    newThisMonth: true,
+    keywords: 'recipe scaler half double servings ingredients cups tablespoons cooking seniors family',
   },
   {
     title: 'Phone Call Scripts',
