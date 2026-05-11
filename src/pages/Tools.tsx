@@ -13,6 +13,7 @@ import {
   Newspaper, ChefHat, Car, Landmark, Thermometer, BookOpen, Cake,
   Siren, HandHeart, Calculator, Inbox, Library, Gavel, Headphones, Mic, Home,
   Pill, Zap, MessageSquare, PawPrint, Plane, ShoppingCart, Scale, Moon, Footprints, Calendar, Notebook, Droplet, Sprout, Wrench, Wallet, PhoneOff, Tag, TrendingUp,
+  Volume2,
 } from 'lucide-react';
 import { Navbar } from '@/components/layout/Navbar';
 import { Footer } from '@/components/layout/Footer';
@@ -2928,6 +2929,34 @@ export const tools: Tool[] = [
     time: '10 min',
     newThisMonth: true,
     keywords: 'advance directive worksheet end of life CPR breathing tube hospice organ donation healthcare proxy living will seniors',
+  },
+  {
+    title: 'Blood Pressure Tracker',
+    description: 'Log home BP readings, see your 14-day average with the AHA category, and print a clean report for your next doctor visit.',
+    icon: Heart,
+    path: '/tools/blood-pressure-tracker',
+    color: 'text-red-600',
+    bg: 'bg-red-50 dark:bg-red-950/30',
+    badge: 'Tracker',
+    category: 'Health',
+    difficulty: 'Easy',
+    time: '1 min/reading',
+    newThisMonth: true,
+    keywords: 'blood pressure tracker BP home reading hypertension AHA categories systolic diastolic seniors print doctor',
+  },
+  {
+    title: 'Tinnitus Tracking Log',
+    description: 'Log ringing-in-the-ears episodes, intensity, triggers (caffeine, stress, NSAIDs), and print a 14-day report for your audiologist.',
+    icon: Volume2,
+    path: '/tools/tinnitus-tracking-log',
+    color: 'text-purple-700',
+    bg: 'bg-purple-50 dark:bg-purple-950/30',
+    badge: 'Tracker',
+    category: 'Health',
+    difficulty: 'Easy',
+    time: '30 sec/entry',
+    newThisMonth: true,
+    keywords: 'tinnitus ringing in ears log tracker triggers caffeine stress NSAID audiologist hearing seniors masker CBT',
   },
   {
     title: 'Phone Call Scripts',
