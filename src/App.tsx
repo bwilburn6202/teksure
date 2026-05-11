@@ -266,6 +266,9 @@ const WeeklyChoresChecklist = lazy(() => import("./pages/tools/WeeklyChoresCheck
 const ScamCallLog = lazy(() => import("./pages/tools/ScamCallLog"));
 const TempUnitConverter = lazy(() => import("./pages/tools/TempUnitConverter"));
 const CookingMeasureConverter = lazy(() => import("./pages/tools/CookingMeasureConverter"));
+const AgeCalculator = lazy(() => import("./pages/tools/AgeCalculator"));
+const DistanceConverter = lazy(() => import("./pages/tools/DistanceConverter"));
+const WeightUnitConverter = lazy(() => import("./pages/tools/WeightUnitConverter"));
 const DeviceTradeInEstimator = lazy(() => import("./pages/tools/DeviceTradeInEstimator"));
 const ParentalControlsWizard = lazy(() => import("./pages/tools/ParentalControlsWizard"));
 const HomeNetworkMap         = lazy(() => import("./pages/tools/HomeNetworkMap"));
@@ -4207,6 +4210,9 @@ const AppContent = () => {
           <Route path="/tools/scam-call-log" element={<ScamCallLog />} />
           <Route path="/tools/temperature-converter" element={<TempUnitConverter />} />
           <Route path="/tools/cooking-measure-converter" element={<CookingMeasureConverter />} />
+          <Route path="/tools/age-calculator" element={<AgeCalculator />} />
+          <Route path="/tools/distance-converter" element={<DistanceConverter />} />
+          <Route path="/tools/weight-converter" element={<WeightUnitConverter />} />
           <Route path="/tools/trade-in-estimator" element={<DeviceTradeInEstimator />} />
           <Route path="/tools/parental-controls-wizard" element={<ParentalControlsWizard />} />
           <Route path="/tools/home-network-map" element={<HomeNetworkMap />} />
