@@ -79,7 +79,6 @@ export const guidesBatch258: Guide[] = [
     tags: ["small-business", "llc", "sole-proprietor", "seniors", "entrepreneurship"],
     readTime: "8 min",
     thumbnailEmoji: "🏪",
-    emoji: "🏪",
     publishedAt: "2026-05-09",
     lastVerifiedAt: "2026-05-09",
     difficulty: "Intermediate",
@@ -113,7 +112,6 @@ export const guidesBatch258: Guide[] = [
     tags: ["social-security", "self-employment", "earnings-limit", "seniors", "retirement"],
     readTime: "8 min",
     thumbnailEmoji: "📊",
-    emoji: "📊",
     publishedAt: "2026-05-09",
     lastVerifiedAt: "2026-05-09",
     difficulty: "Intermediate",
@@ -147,11 +145,10 @@ export const guidesBatch258: Guide[] = [
     tags: ["etsy", "ebay", "facebook-marketplace", "seniors", "crafts"],
     readTime: "8 min",
     thumbnailEmoji: "🎨",
-    emoji: "🎨",
     publishedAt: "2026-05-09",
     lastVerifiedAt: "2026-05-09",
     difficulty: "Beginner",
-    body: "Selling crafts, art, and vintage items online is one of the most popular small businesses among older Americans. Etsy reports that sellers over 60 are one of its fastest-growing groups. The platforms each have a niche, and picking the right one for what you make affects how fast you sell and how much you keep after fees.\n\nEtsy (etsy.com) is the standard for handmade, vintage (20+ years old), and craft supplies. The audience expects items that are unique, not mass-produced. Fees are 20 cents per listing plus 6.5 percent of the sale plus a payment processing fee of around 3 percent — so roughly 10 percent of each sale plus the listing fee. Etsy is the right place for hand-knit hats, woodworking, original watercolors, candles, jewelry, embroidery, and vintage costume jewelry.\n\neBay (ebay.com) is the standard for vintage items, collectibles, used goods, and bulk lots. It works for crafts but does not have Etsy curated atmosphere. Fees vary by category, typically 13 to 15 percent total. eBay is the right place for vintage tools, old cameras, used books, collectibles, and one-of-a-kind estate items. Auction-style listings can sometimes get more than fixed-price listings for rare items.\n\nFacebook Marketplace (facebook.com/marketplace) is best for local sales, especially heavy or fragile items that are hard to ship. No fees if buyer picks up. Best for furniture, large art pieces, plants, baked goods (where legal), and yard sale style listings. Reach is local, usually within 60 miles.\n\nLocal craft fairs, farmers markets, and church bazaars are still a strong sales channel for older makers. Booth fees range from free (church bazaar) to $200 per day (juried art shows). Cash plus a Square reader on a tablet handles payments.\n\nFor older sellers worried about technology, Etsy is often the smoothest. The Etsy seller dashboard works on a phone or computer, payments are deposited to your bank account every Monday, and customer service is by email, not just chat.\n\n(Sources: Etsy Seller Handbook; eBay Seller Center; AARP — Make Money from Hobbies in Retirement)",
+    body: "Selling crafts, art, and vintage items online is one of the most popular small businesses among older Americans. Etsy reports that sellers over 60 are one of its fastest-growing groups. The platforms each have a niche, and picking the right one for what you make affects how fast you sell and how much you keep after fees.\n\nEtsy (etsy.com) is the standard for handmade, vintage (20+ years old), and craft supplies. The audience expects items that are unique, not mass-produced. Fees are 20 cents per listing plus 6.5 percent of the sale plus a payment processing fee of around 3 percent — so roughly 10 percent of each sale plus the listing fee. Etsy is the right place for hand-knit hats, woodworking, original watercolors, candles, jewelry, embroidery, and vintage costume jewelry.\n\neBay (ebay.com) is the standard for vintage items, collectibles, used goods, and bulk lots. It works for crafts but does not have Etsy curated atmosphere. Fees vary by category, typically 13 to 15 percent total. eBay is the right place for vintage tools, old cameras, used books, collectibles, and one-of-a-kind estate items. Auction-style listings can sometimes get more than fixed-price listings for rare items.\n\nFacebook Marketplace (facebook.com/marketplace) is best for local sales, especially heavy or fragile items that are hard to ship. No fees if buyer picks up. Best for furniture, large art pieces, plants, baked goods (where legal), and yard sale style listings. Reach is local, usually within 60 miles.\n\nLocal craft fairs, farmers markets, and church bazaars are still a strong sales channel for older makers. Booth fees range from free (church bazaar) to $200 per day (juried art shows). Cash plus a Square reader on a tablet handles payments.\n\nFor older sellers worried about technology, Etsy is often the smoothest. The Etsy seller dashboard works on a phone or computer, payments are deposited to your bank account every Monday, and customer service is by email, not chat-only.\n\n(Sources: Etsy Seller Handbook; eBay Seller Center; AARP — Make Money from Hobbies in Retirement)",
     steps: [
       {
         title: "Match what you sell to the right platform",
@@ -163,7 +160,7 @@ export const guidesBatch258: Guide[] = [
         tip: "Quick Tip: Etsy photos work best when square (1:1 ratio) at 2000 by 2000 pixels. Your phone camera produces images that work without editing as long as the lighting is good.",
       },
       {
-        title: "Price for cost-plus-profit, not just instinct",
+        title: "Price for cost-plus-profit, not by gut feel",
         content: "A common mistake is pricing a handmade item at what you would pay for it, which leaves no profit. A practical formula: (cost of materials + your hourly rate times hours spent) times 2 = wholesale price; double again for retail. A scarf with $8 of yarn that took 4 hours at $15 an hour is $8 + $60 = $68 wholesale, $136 retail. If that feels high, that is the math telling you to either find more efficient methods or accept that this is a hobby, not a business.",
       },
       {
@@ -181,7 +178,6 @@ export const guidesBatch258: Guide[] = [
     tags: ["healthcare", "self-employed", "pre-medicare", "seniors", "insurance"],
     readTime: "9 min",
     thumbnailEmoji: "🏥",
-    emoji: "🏥",
     publishedAt: "2026-05-09",
     lastVerifiedAt: "2026-05-09",
     difficulty: "Intermediate",
