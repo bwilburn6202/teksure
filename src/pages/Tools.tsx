@@ -12,7 +12,7 @@ import {
   Router, Tv, Signal, Video, Image as ImageIcon, FileCheck, PiggyBank, DollarSign,
   Newspaper, ChefHat, Car, Landmark, Thermometer, BookOpen, Cake,
   Siren, HandHeart, Calculator, Inbox, Library, Gavel, Headphones, Mic, Home,
-  Pill, Zap, MessageSquare, PawPrint, Plane, ShoppingCart, Scale, Moon, Footprints, Calendar, Notebook, Droplet, Sprout, Wrench, Wallet,
+  Pill, Zap, MessageSquare, PawPrint, Plane, ShoppingCart, Scale, Moon, Footprints, Calendar, Notebook, Droplet, Sprout, Wrench, Wallet, PhoneOff,
 } from 'lucide-react';
 import { Navbar } from '@/components/layout/Navbar';
 import { Footer } from '@/components/layout/Footer';
@@ -2578,6 +2578,20 @@ export const tools: Tool[] = [
     time: '2 min',
     newThisMonth: true,
     keywords: 'weekly chores checklist housework cleaning rotation Monday Tuesday dust vacuum mop laundry seniors home maintenance',
+  },
+  {
+    title: 'Scam Call Log',
+    description: 'Track scam and robocall attempts by type (Medicare, IRS, tech support, etc.). See patterns, report to FTC, share with family.',
+    icon: PhoneOff,
+    path: '/tools/scam-call-log',
+    color: 'text-red-600',
+    bg: 'bg-red-50 dark:bg-red-950/30',
+    badge: 'Tracker',
+    category: 'Security',
+    difficulty: 'Easy',
+    time: '1 min',
+    newThisMonth: true,
+    keywords: 'scam call log robocall fraud Medicare IRS tech support FTC report block silence unknown seniors',
   },
   {
     title: 'Phone Call Scripts',
