@@ -13,7 +13,7 @@ import {
   Newspaper, ChefHat, Car, Landmark, Thermometer, BookOpen, Cake,
   Siren, HandHeart, Calculator, Inbox, Library, Gavel, Headphones, Mic, Home,
   Pill, Zap, MessageSquare, PawPrint, Plane, ShoppingCart, Scale, Moon, Footprints, Calendar, Notebook, Droplet, Sprout, Wrench, Wallet, PhoneOff, Tag, TrendingUp,
-  Volume2, CalendarCheck, Boxes,
+  Volume2, CalendarCheck, Boxes, Wine,
 } from 'lucide-react';
 import { Navbar } from '@/components/layout/Navbar';
 import { Footer } from '@/components/layout/Footer';
@@ -3097,6 +3097,34 @@ export const tools: Tool[] = [
     time: '90 min',
     newThisMonth: true,
     keywords: 'gray divorce senior 70 QDRO Social Security spousal benefits Medicare home buyout beneficiaries elder law attorney',
+  },
+  {
+    title: 'Chronic Pain Daily Log',
+    description: 'Log daily pain (1-10), location, what helped, what made it worse. See your 14-day pattern. Print for a doctor visit that gets past "it just hurts."',
+    icon: Activity,
+    path: '/tools/chronic-pain-daily-log',
+    color: 'text-red-700',
+    bg: 'bg-red-50 dark:bg-red-950/30',
+    badge: 'Tracker',
+    category: 'Health',
+    difficulty: 'Easy',
+    time: '1 min/day',
+    newThisMonth: true,
+    keywords: 'chronic pain log tracker senior 1-10 location back neck hip knee what helped what hurt doctor visit print',
+  },
+  {
+    title: 'Alcohol Moderation Tracker',
+    description: 'Log daily drinks and urge level for older adults. 14-day average compared to NIAAA senior guideline of 1 drink/day max. No judgment, just patterns.',
+    icon: Wine,
+    path: '/tools/alcohol-moderation-tracker',
+    color: 'text-rose-700',
+    bg: 'bg-rose-50 dark:bg-rose-950/30',
+    badge: 'Tracker',
+    category: 'Health',
+    difficulty: 'Easy',
+    time: '30 sec/day',
+    newThisMonth: true,
+    keywords: 'alcohol moderation tracker senior drinking NIAAA 1 drink per day medication interactions SAMHSA dry days',
   },
   {
     title: 'Phone Call Scripts',
