@@ -287,6 +287,7 @@ const CompoundInterestCalculator = lazy(() => import("./pages/tools/CompoundInte
 const RecipeScaler = lazy(() => import("./pages/tools/RecipeScaler"));
 const SSAClaimingAgeChart = lazy(() => import("./pages/tools/SSAClaimingAgeChart"));
 const DailySpendingLog = lazy(() => import("./pages/tools/DailySpendingLog"));
+const AdvanceDirectiveWorksheet = lazy(() => import("./pages/tools/AdvanceDirectiveWorksheet"));
 const DeviceTradeInEstimator = lazy(() => import("./pages/tools/DeviceTradeInEstimator"));
 const ParentalControlsWizard = lazy(() => import("./pages/tools/ParentalControlsWizard"));
 const HomeNetworkMap         = lazy(() => import("./pages/tools/HomeNetworkMap"));
@@ -4249,6 +4250,7 @@ const AppContent = () => {
           <Route path="/tools/recipe-scaler" element={<RecipeScaler />} />
           <Route path="/tools/ssa-claiming-age-chart" element={<SSAClaimingAgeChart />} />
           <Route path="/tools/daily-spending-log" element={<DailySpendingLog />} />
+          <Route path="/tools/advance-directive-worksheet" element={<AdvanceDirectiveWorksheet />} />
           <Route path="/tools/trade-in-estimator" element={<DeviceTradeInEstimator />} />
           <Route path="/tools/parental-controls-wizard" element={<ParentalControlsWizard />} />
           <Route path="/tools/home-network-map" element={<HomeNetworkMap />} />
