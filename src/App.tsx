@@ -281,6 +281,8 @@ const CarLoanCompare = lazy(() => import("./pages/tools/CarLoanCompare"));
 const MailAddressLabelMaker = lazy(() => import("./pages/tools/MailAddressLabelMaker"));
 const EmergencyContactQuickDial = lazy(() => import("./pages/tools/EmergencyContactQuickDial"));
 const PrintableMonthlyCalendar = lazy(() => import("./pages/tools/PrintableMonthlyCalendar"));
+const MortgageRefiBreakEven = lazy(() => import("./pages/tools/MortgageRefiBreakEven"));
+const FallPreventionAssessment = lazy(() => import("./pages/tools/FallPreventionAssessment"));
 const DeviceTradeInEstimator = lazy(() => import("./pages/tools/DeviceTradeInEstimator"));
 const ParentalControlsWizard = lazy(() => import("./pages/tools/ParentalControlsWizard"));
 const HomeNetworkMap         = lazy(() => import("./pages/tools/HomeNetworkMap"));
@@ -4237,6 +4239,8 @@ const AppContent = () => {
           <Route path="/tools/mail-label-maker" element={<MailAddressLabelMaker />} />
           <Route path="/tools/emergency-quick-dial-card" element={<EmergencyContactQuickDial />} />
           <Route path="/tools/printable-monthly-calendar" element={<PrintableMonthlyCalendar />} />
+          <Route path="/tools/refi-break-even-calculator" element={<MortgageRefiBreakEven />} />
+          <Route path="/tools/fall-prevention-assessment" element={<FallPreventionAssessment />} />
           <Route path="/tools/trade-in-estimator" element={<DeviceTradeInEstimator />} />
           <Route path="/tools/parental-controls-wizard" element={<ParentalControlsWizard />} />
           <Route path="/tools/home-network-map" element={<HomeNetworkMap />} />
