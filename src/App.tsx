@@ -304,6 +304,8 @@ const ChronicPainDailyLog = lazy(() => import("./pages/tools/ChronicPainDailyLog
 const AlcoholModerationTracker = lazy(() => import("./pages/tools/AlcoholModerationTracker"));
 const LowVisionAccessibility = lazy(() => import("./pages/tools/LowVisionAccessibility"));
 const PrescriptionPriceCompare = lazy(() => import("./pages/tools/PrescriptionPriceCompare"));
+const PickleballScoreKeeper = lazy(() => import("./pages/tools/PickleballScoreKeeper"));
+const RVPreTripChecklist = lazy(() => import("./pages/tools/RVPreTripChecklist"));
 const DeviceTradeInEstimator = lazy(() => import("./pages/tools/DeviceTradeInEstimator"));
 const ParentalControlsWizard = lazy(() => import("./pages/tools/ParentalControlsWizard"));
 const HomeNetworkMap         = lazy(() => import("./pages/tools/HomeNetworkMap"));
@@ -4283,6 +4285,8 @@ const AppContent = () => {
           <Route path="/tools/alcohol-moderation-tracker" element={<AlcoholModerationTracker />} />
           <Route path="/tools/low-vision-accessibility" element={<LowVisionAccessibility />} />
           <Route path="/tools/prescription-price-compare" element={<PrescriptionPriceCompare />} />
+          <Route path="/tools/pickleball-score-keeper" element={<PickleballScoreKeeper />} />
+          <Route path="/tools/rv-pre-trip-checklist" element={<RVPreTripChecklist />} />
           <Route path="/tools/trade-in-estimator" element={<DeviceTradeInEstimator />} />
           <Route path="/tools/parental-controls-wizard" element={<ParentalControlsWizard />} />
           <Route path="/tools/home-network-map" element={<HomeNetworkMap />} />
