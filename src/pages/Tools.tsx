@@ -13,7 +13,7 @@ import {
   Newspaper, ChefHat, Car, Landmark, Thermometer, BookOpen, Cake,
   Siren, HandHeart, Calculator, Inbox, Library, Gavel, Headphones, Mic, Home,
   Pill, Zap, MessageSquare, PawPrint, Plane, ShoppingCart, Scale, Moon, Footprints, Calendar, Notebook, Droplet, Sprout, Wrench, Wallet, PhoneOff, Tag, TrendingUp,
-  Volume2, CalendarCheck, Boxes, Wine, Trophy, Truck,
+  Volume2, CalendarCheck, Boxes, Wine, Trophy, Truck, Gem,
 } from 'lucide-react';
 import { Navbar } from '@/components/layout/Navbar';
 import { Footer } from '@/components/layout/Footer';
@@ -3181,6 +3181,34 @@ export const tools: Tool[] = [
     time: '10 min',
     newThisMonth: true,
     keywords: 'RV pre-trip departure checklist senior motorhome fifth-wheel slides hookups tires hitch GPS boondocking',
+  },
+  {
+    title: 'Kitchen Adaptation Guide',
+    description: 'Specific product recommendations for adapting your kitchen to arthritis, low vision, tremor, weakness, or one-handed use. Real brands with prices.',
+    icon: ChefHat,
+    path: '/tools/kitchen-adaptation-guide',
+    color: 'text-orange-700',
+    bg: 'bg-orange-50 dark:bg-orange-950/30',
+    badge: 'Reference',
+    category: 'Accessibility',
+    difficulty: 'Easy',
+    time: '5 min',
+    newThisMonth: true,
+    keywords: 'kitchen adaptation seniors arthritis low vision tremor parkinsons one-handed OXO Good Grips rocker knife air fryer instant pot adaptive equipment',
+  },
+  {
+    title: 'Antique Sale Tracker',
+    description: 'For senior collectors: log every antique you buy and sell. See inventory value, lifetime profit, and selling fees. Print a clean report for taxes.',
+    icon: Gem,
+    path: '/tools/antique-sale-tracker',
+    color: 'text-violet-700',
+    bg: 'bg-violet-50 dark:bg-violet-950/30',
+    badge: 'Tracker',
+    category: 'Recreation',
+    difficulty: 'Easy',
+    time: '2 min per item',
+    newThisMonth: true,
+    keywords: 'antique collector sale tracker buy sell profit inventory eBay Etsy estate sale auction consignment senior hobby small business',
   },
   {
     title: 'Phone Call Scripts',
