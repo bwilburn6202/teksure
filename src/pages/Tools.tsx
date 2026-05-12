@@ -13,7 +13,7 @@ import {
   Newspaper, ChefHat, Car, Landmark, Thermometer, BookOpen, Cake,
   Siren, HandHeart, Calculator, Inbox, Library, Gavel, Headphones, Mic, Home,
   Pill, Zap, MessageSquare, PawPrint, Plane, ShoppingCart, Scale, Moon, Footprints, Calendar, Notebook, Droplet, Sprout, Wrench, Wallet, PhoneOff, Tag, TrendingUp,
-  Volume2, CalendarCheck, Boxes, Wine, Trophy, Truck, Gem, Dumbbell,
+  Volume2, CalendarCheck, Boxes, Wine, Trophy, Truck, Gem, Dumbbell, Bird,
 } from 'lucide-react';
 import { Navbar } from '@/components/layout/Navbar';
 import { Footer } from '@/components/layout/Footer';
@@ -3237,6 +3237,34 @@ export const tools: Tool[] = [
     time: '30 min/session',
     newThisMonth: true,
     keywords: 'senior strength training routine bodyweight resistance bands dumbbells gym sit-to-stand wall pushups Fiatarone sarcopenia',
+  },
+  {
+    title: 'Bird Sighting Log',
+    description: 'Track every bird you see at home or in the field. Lifelist count, year list, quick-add for common backyard species. Companion to Merlin Bird ID and eBird.',
+    icon: Bird,
+    path: '/tools/bird-sighting-log',
+    color: 'text-emerald-700',
+    bg: 'bg-emerald-50 dark:bg-emerald-950/30',
+    badge: 'Tracker',
+    category: 'Recreation',
+    difficulty: 'Easy',
+    time: '30 sec per bird',
+    newThisMonth: true,
+    keywords: 'bird sighting log birdwatching seniors Merlin eBird Audubon Cornell Lab lifelist year list backyard birds',
+  },
+  {
+    title: 'Pet Care Daily Schedule',
+    description: 'Build a printable daily schedule for feeding, medication, walks, and litter care. So a sitter, family helper, or future you can step in.',
+    icon: PawPrint,
+    path: '/tools/pet-care-daily-schedule',
+    color: 'text-orange-700',
+    bg: 'bg-orange-50 dark:bg-orange-950/30',
+    badge: 'Schedule',
+    category: 'Recreation',
+    difficulty: 'Easy',
+    time: '5 min setup',
+    newThisMonth: true,
+    keywords: 'pet care schedule dog cat senior feeding medication walks litter sitter family helper',
   },
   {
     title: 'Phone Call Scripts',
