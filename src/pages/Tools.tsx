@@ -13,7 +13,7 @@ import {
   Newspaper, ChefHat, Car, Landmark, Thermometer, BookOpen, Cake,
   Siren, HandHeart, Calculator, Inbox, Library, Gavel, Headphones, Mic, Home,
   Pill, Zap, MessageSquare, PawPrint, Plane, ShoppingCart, Scale, Moon, Footprints, Calendar, Notebook, Droplet, Sprout, Wrench, Wallet, PhoneOff, Tag, TrendingUp,
-  Volume2, CalendarCheck, Boxes, Wine, Trophy, Truck, Gem, Dumbbell, Bird, Crown,
+  Volume2, CalendarCheck, Boxes, Wine, Trophy, Truck, Gem, Dumbbell, Bird, Crown, Scissors,
 } from 'lucide-react';
 import { Navbar } from '@/components/layout/Navbar';
 import { Footer } from '@/components/layout/Footer';
@@ -3293,6 +3293,34 @@ export const tools: Tool[] = [
     time: '10-15 min',
     newThisMonth: true,
     keywords: 'chair yoga senior tai chi sequence builder arthritis balance pranayama SilverSneakers Yoga With Adriene gentle accessible',
+  },
+  {
+    title: 'Seasonal Star Chart',
+    description: 'A simple printable list of what to see in the night sky right now. Constellations, planets, deep sky, meteor showers - by season.',
+    icon: Sparkles,
+    path: '/tools/seasonal-star-chart',
+    color: 'text-indigo-700',
+    bg: 'bg-indigo-50 dark:bg-indigo-950/30',
+    badge: 'Reference',
+    category: 'Recreation',
+    difficulty: 'Easy',
+    time: '5 min',
+    newThisMonth: true,
+    keywords: 'astronomy stargazing seasonal star chart constellations meteor shower senior naked eye binoculars Stellarium Orion Andromeda',
+  },
+  {
+    title: 'Knitting Project Queue',
+    description: 'Track every knitting and crochet project from planned through finished. Yarn, needles, yardage, recipient, notes. Print your queue.',
+    icon: Scissors,
+    path: '/tools/knitting-project-queue',
+    color: 'text-fuchsia-700',
+    bg: 'bg-fuchsia-50 dark:bg-fuchsia-950/30',
+    badge: 'Tracker',
+    category: 'Recreation',
+    difficulty: 'Easy',
+    time: '2 min per project',
+    newThisMonth: true,
+    keywords: 'knitting crochet project queue tracker Ravelry yarn needles yardage WIP UFO senior stash management',
   },
   {
     title: 'Phone Call Scripts',
