@@ -13,7 +13,7 @@ import {
   Newspaper, ChefHat, Car, Landmark, Thermometer, BookOpen, Cake,
   Siren, HandHeart, Calculator, Inbox, Library, Gavel, Headphones, Mic, Home,
   Pill, Zap, MessageSquare, PawPrint, Plane, ShoppingCart, Scale, Moon, Footprints, Calendar, Notebook, Droplet, Sprout, Wrench, Wallet, PhoneOff, Tag, TrendingUp,
-  Volume2, CalendarCheck, Boxes, Wine,
+  Volume2, CalendarCheck, Boxes, Wine, Trophy, Truck,
 } from 'lucide-react';
 import { Navbar } from '@/components/layout/Navbar';
 import { Footer } from '@/components/layout/Footer';
@@ -3153,6 +3153,34 @@ export const tools: Tool[] = [
     time: '5 min',
     newThisMonth: true,
     keywords: 'prescription drug price compare GoodRx Costco cash insurance copay Medicare Part D Mark Cuban cost plus drugs seniors savings',
+  },
+  {
+    title: 'Pickleball Score Keeper',
+    description: 'A no-fuss pickleball scoreboard. Track score, server number, and side-outs without arguing. Plays to 11, 15, or 21.',
+    icon: Trophy,
+    path: '/tools/pickleball-score-keeper',
+    color: 'text-amber-600',
+    bg: 'bg-amber-50 dark:bg-amber-950/30',
+    badge: 'Tracker',
+    category: 'Recreation',
+    difficulty: 'Easy',
+    time: 'Per game',
+    newThisMonth: true,
+    keywords: 'pickleball score keeper scoreboard server side-out senior tournament 11 15 21 USAPA',
+  },
+  {
+    title: 'RV Pre-Trip Checklist',
+    description: '16 essential pre-departure items for senior RVers. Slides, hookups, tires, hitch, route. Walk it the same way every time and you will not leave a slide out.',
+    icon: Truck,
+    path: '/tools/rv-pre-trip-checklist',
+    color: 'text-stone-700',
+    bg: 'bg-stone-50 dark:bg-stone-950/30',
+    badge: 'Checklist',
+    category: 'Travel',
+    difficulty: 'Easy',
+    time: '10 min',
+    newThisMonth: true,
+    keywords: 'RV pre-trip departure checklist senior motorhome fifth-wheel slides hookups tires hitch GPS boondocking',
   },
   {
     title: 'Phone Call Scripts',
