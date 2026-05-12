@@ -13,7 +13,7 @@ import {
   Newspaper, ChefHat, Car, Landmark, Thermometer, BookOpen, Cake,
   Siren, HandHeart, Calculator, Inbox, Library, Gavel, Headphones, Mic, Home,
   Pill, Zap, MessageSquare, PawPrint, Plane, ShoppingCart, Scale, Moon, Footprints, Calendar, Notebook, Droplet, Sprout, Wrench, Wallet, PhoneOff, Tag, TrendingUp,
-  Volume2, CalendarCheck, Boxes, Wine, Trophy, Truck, Gem,
+  Volume2, CalendarCheck, Boxes, Wine, Trophy, Truck, Gem, Dumbbell,
 } from 'lucide-react';
 import { Navbar } from '@/components/layout/Navbar';
 import { Footer } from '@/components/layout/Footer';
@@ -3209,6 +3209,34 @@ export const tools: Tool[] = [
     time: '2 min per item',
     newThisMonth: true,
     keywords: 'antique collector sale tracker buy sell profit inventory eBay Etsy estate sale auction consignment senior hobby small business',
+  },
+  {
+    title: 'Cataract Eye-Drop Tracker',
+    description: 'A printable schedule for the strict 4-week eye-drop regimen after cataract surgery. Antibiotic, steroid, NSAID doses by week with check-off times.',
+    icon: Eye,
+    path: '/tools/cataract-recovery-eye-drops',
+    color: 'text-sky-700',
+    bg: 'bg-sky-50 dark:bg-sky-950/30',
+    badge: 'Tracker',
+    category: 'Health',
+    difficulty: 'Easy',
+    time: 'Daily',
+    newThisMonth: true,
+    keywords: 'cataract surgery recovery eye drops antibiotic steroid NSAID prednisolone moxifloxacin ketorolac schedule seniors',
+  },
+  {
+    title: 'Senior Strength Routine Builder',
+    description: 'Pick your equipment (bodyweight, bands, dumbbells, gym), get a printable 5-exercise strength routine. Twice a week, 30 minutes, plain English.',
+    icon: Dumbbell,
+    path: '/tools/strength-routine-builder',
+    color: 'text-emerald-700',
+    bg: 'bg-emerald-50 dark:bg-emerald-950/30',
+    badge: 'Builder',
+    category: 'Health',
+    difficulty: 'Easy',
+    time: '30 min/session',
+    newThisMonth: true,
+    keywords: 'senior strength training routine bodyweight resistance bands dumbbells gym sit-to-stand wall pushups Fiatarone sarcopenia',
   },
   {
     title: 'Phone Call Scripts',

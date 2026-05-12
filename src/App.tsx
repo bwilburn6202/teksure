@@ -308,6 +308,8 @@ const PickleballScoreKeeper = lazy(() => import("./pages/tools/PickleballScoreKe
 const RVPreTripChecklist = lazy(() => import("./pages/tools/RVPreTripChecklist"));
 const KitchenAdaptationGuide = lazy(() => import("./pages/tools/KitchenAdaptationGuide"));
 const AntiqueSaleTracker = lazy(() => import("./pages/tools/AntiqueSaleTracker"));
+const CataractRecoveryEyeDrops = lazy(() => import("./pages/tools/CataractRecoveryEyeDrops"));
+const StrengthRoutineBuilder = lazy(() => import("./pages/tools/StrengthRoutineBuilder"));
 const DeviceTradeInEstimator = lazy(() => import("./pages/tools/DeviceTradeInEstimator"));
 const ParentalControlsWizard = lazy(() => import("./pages/tools/ParentalControlsWizard"));
 const HomeNetworkMap         = lazy(() => import("./pages/tools/HomeNetworkMap"));
@@ -4291,6 +4293,8 @@ const AppContent = () => {
           <Route path="/tools/rv-pre-trip-checklist" element={<RVPreTripChecklist />} />
           <Route path="/tools/kitchen-adaptation-guide" element={<KitchenAdaptationGuide />} />
           <Route path="/tools/antique-sale-tracker" element={<AntiqueSaleTracker />} />
+          <Route path="/tools/cataract-recovery-eye-drops" element={<CataractRecoveryEyeDrops />} />
+          <Route path="/tools/strength-routine-builder" element={<StrengthRoutineBuilder />} />
           <Route path="/tools/trade-in-estimator" element={<DeviceTradeInEstimator />} />
           <Route path="/tools/parental-controls-wizard" element={<ParentalControlsWizard />} />
           <Route path="/tools/home-network-map" element={<HomeNetworkMap />} />
