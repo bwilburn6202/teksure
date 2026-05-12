@@ -302,6 +302,8 @@ const SeniorFirearmSafetyChecklist = lazy(() => import("./pages/tools/SeniorFire
 const DivorceAt70Checklist = lazy(() => import("./pages/tools/DivorceAt70Checklist"));
 const ChronicPainDailyLog = lazy(() => import("./pages/tools/ChronicPainDailyLog"));
 const AlcoholModerationTracker = lazy(() => import("./pages/tools/AlcoholModerationTracker"));
+const LowVisionAccessibility = lazy(() => import("./pages/tools/LowVisionAccessibility"));
+const PrescriptionPriceCompare = lazy(() => import("./pages/tools/PrescriptionPriceCompare"));
 const DeviceTradeInEstimator = lazy(() => import("./pages/tools/DeviceTradeInEstimator"));
 const ParentalControlsWizard = lazy(() => import("./pages/tools/ParentalControlsWizard"));
 const HomeNetworkMap         = lazy(() => import("./pages/tools/HomeNetworkMap"));
@@ -4279,6 +4281,8 @@ const AppContent = () => {
           <Route path="/tools/divorce-at-70-checklist" element={<DivorceAt70Checklist />} />
           <Route path="/tools/chronic-pain-daily-log" element={<ChronicPainDailyLog />} />
           <Route path="/tools/alcohol-moderation-tracker" element={<AlcoholModerationTracker />} />
+          <Route path="/tools/low-vision-accessibility" element={<LowVisionAccessibility />} />
+          <Route path="/tools/prescription-price-compare" element={<PrescriptionPriceCompare />} />
           <Route path="/tools/trade-in-estimator" element={<DeviceTradeInEstimator />} />
           <Route path="/tools/parental-controls-wizard" element={<ParentalControlsWizard />} />
           <Route path="/tools/home-network-map" element={<HomeNetworkMap />} />
