@@ -312,6 +312,8 @@ const CataractRecoveryEyeDrops = lazy(() => import("./pages/tools/CataractRecove
 const StrengthRoutineBuilder = lazy(() => import("./pages/tools/StrengthRoutineBuilder"));
 const BirdSightingLog = lazy(() => import("./pages/tools/BirdSightingLog"));
 const PetCareDailySchedule = lazy(() => import("./pages/tools/PetCareDailySchedule"));
+const ChessGameLog = lazy(() => import("./pages/tools/ChessGameLog"));
+const ChairYogaSequenceBuilder = lazy(() => import("./pages/tools/ChairYogaSequenceBuilder"));
 const DeviceTradeInEstimator = lazy(() => import("./pages/tools/DeviceTradeInEstimator"));
 const ParentalControlsWizard = lazy(() => import("./pages/tools/ParentalControlsWizard"));
 const HomeNetworkMap         = lazy(() => import("./pages/tools/HomeNetworkMap"));
@@ -4299,6 +4301,8 @@ const AppContent = () => {
           <Route path="/tools/strength-routine-builder" element={<StrengthRoutineBuilder />} />
           <Route path="/tools/bird-sighting-log" element={<BirdSightingLog />} />
           <Route path="/tools/pet-care-daily-schedule" element={<PetCareDailySchedule />} />
+          <Route path="/tools/chess-game-log" element={<ChessGameLog />} />
+          <Route path="/tools/chair-yoga-sequence-builder" element={<ChairYogaSequenceBuilder />} />
           <Route path="/tools/trade-in-estimator" element={<DeviceTradeInEstimator />} />
           <Route path="/tools/parental-controls-wizard" element={<ParentalControlsWizard />} />
           <Route path="/tools/home-network-map" element={<HomeNetworkMap />} />

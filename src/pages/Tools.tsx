@@ -13,7 +13,7 @@ import {
   Newspaper, ChefHat, Car, Landmark, Thermometer, BookOpen, Cake,
   Siren, HandHeart, Calculator, Inbox, Library, Gavel, Headphones, Mic, Home,
   Pill, Zap, MessageSquare, PawPrint, Plane, ShoppingCart, Scale, Moon, Footprints, Calendar, Notebook, Droplet, Sprout, Wrench, Wallet, PhoneOff, Tag, TrendingUp,
-  Volume2, CalendarCheck, Boxes, Wine, Trophy, Truck, Gem, Dumbbell, Bird,
+  Volume2, CalendarCheck, Boxes, Wine, Trophy, Truck, Gem, Dumbbell, Bird, Crown,
 } from 'lucide-react';
 import { Navbar } from '@/components/layout/Navbar';
 import { Footer } from '@/components/layout/Footer';
@@ -3265,6 +3265,34 @@ export const tools: Tool[] = [
     time: '5 min setup',
     newThisMonth: true,
     keywords: 'pet care schedule dog cat senior feeding medication walks litter sitter family helper',
+  },
+  {
+    title: 'Chess Game Log',
+    description: 'Track every chess game you play with opponent, color, result, time control. See your win rate and full record. Print for tournaments.',
+    icon: Crown,
+    path: '/tools/chess-game-log',
+    color: 'text-amber-700',
+    bg: 'bg-amber-50 dark:bg-amber-950/30',
+    badge: 'Tracker',
+    category: 'Recreation',
+    difficulty: 'Easy',
+    time: '30 sec per game',
+    newThisMonth: true,
+    keywords: 'chess game log tracker senior USCF chess.com lichess time control win rate record opening',
+  },
+  {
+    title: 'Chair Yoga Sequence Builder',
+    description: 'Pick a goal (gentle wake-up, arthritis relief, balance, or wind down) and get a printable 6-pose chair yoga sequence. About 10-15 minutes.',
+    icon: Activity,
+    path: '/tools/chair-yoga-sequence-builder',
+    color: 'text-teal-700',
+    bg: 'bg-teal-50 dark:bg-teal-950/30',
+    badge: 'Builder',
+    category: 'Health',
+    difficulty: 'Easy',
+    time: '10-15 min',
+    newThisMonth: true,
+    keywords: 'chair yoga senior tai chi sequence builder arthritis balance pranayama SilverSneakers Yoga With Adriene gentle accessible',
   },
   {
     title: 'Phone Call Scripts',
