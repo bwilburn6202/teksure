@@ -168,9 +168,9 @@ export const guidesBatch12: Guide[] = [
     body: "Forgetting your WiFi password happens to everyone. The good news is your password is almost always saved somewhere on a device that's already connected — you just need to know where to look.",
     steps: [
       {
-        title: 'Find it on an iPhone (iOS 16 or later)',
+        title: 'Find it on an iPhone (iOS 18 or later, also works on iOS 17)',
         content: `Go to Settings → Wi-Fi. Look for the network you're currently connected to (it will have a checkmark next to it). Tap the small "i" icon in a circle to the right of the network name. On the next screen, look for the "Password" field — it will show dots. Tap on the dots and use Face ID or Touch ID to reveal the full password.`,
-        tip: 'This method only works on iPhones running iOS 16 or later. If you have an older iPhone, try the router sticker method in Step 4.',
+        tip: 'This method works on iPhones running iOS 17 or later (and also works on iOS 16). If you have an older iPhone, try the router sticker method in Step 4.',
       },
       {
         title: 'Find it on an Android phone',

@@ -683,7 +683,7 @@ export const guidesBatch14: Guide[] = [
     steps: [
       {
         title: 'Find and open the Magnifier app',
-        content: 'The Magnifier app is built into every iPhone running iOS 14 or later. Swipe down from the middle of your Home Screen to open Search, and type "Magnifier." Tap the app to open it. It shows a live camera view with a zoom slider at the bottom.',
+        content: 'The Magnifier app is built into every iPhone running iOS 17 or later (and also works on older iOS 14, 15, and 16 iPhones). Swipe down from the middle of your Home Screen to open Search, and type "Magnifier." Tap the app to open it. It shows a live camera view with a zoom slider at the bottom.',
         tip: 'Add Magnifier to your Control Center for even faster access: go to Settings → Control Center → tap the + next to Magnifier. Then swipe down from the top right corner to open Control Center and tap the Magnifier icon any time.',
       },
       {

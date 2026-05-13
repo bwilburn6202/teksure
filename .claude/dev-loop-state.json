@@ -1,14 +1,14 @@
 {
   "version": "1.0",
-  "cycleCount": 4,
-  "lastRun": "2026-05-04T08:41:37.320Z",
+  "cycleCount": 5,
+  "lastRun": "2026-05-13T04:27:06.135Z",
   "lastFindings": {
     "metrics": {
       "ok": true,
       "severity": "info",
-      "summary": "2669 guides, 3014 routes, 145 tools.",
+      "summary": "2752 guides, 3014 routes, 145 tools.",
       "metrics": {
-        "guides": 2669,
+        "guides": 2752,
         "routes": 3014,
         "lazyImports": 2955,
         "tools": 145
@@ -47,11 +47,11 @@
     "old-guides": {
       "ok": true,
       "severity": "info",
-      "summary": "0 of 2970 guides published before 2024-11-04.",
+      "summary": "0 of 3053 guides published before 2024-11-13.",
       "metrics": {
-        "total": 2970,
+        "total": 3053,
         "aged": 0,
-        "cutoff": "2024-11-04"
+        "cutoff": "2024-11-13"
       }
     }
   },
@@ -280,6 +280,63 @@
             "total": 2970,
             "aged": 0,
             "cutoff": "2024-11-04"
+          }
+        }
+      }
+    },
+    {
+      "cycle": 5,
+      "at": "2026-05-13T04:27:06.135Z",
+      "findings": {
+        "metrics": {
+          "ok": true,
+          "severity": "info",
+          "summary": "2752 guides, 3014 routes, 145 tools.",
+          "metrics": {
+            "guides": 2752,
+            "routes": 3014,
+            "lazyImports": 2955,
+            "tools": 145
+          }
+        },
+        "slugs": {
+          "ok": true,
+          "severity": "info",
+          "summary": "No duplicate slugs.",
+          "metrics": null
+        },
+        "links": {
+          "ok": true,
+          "severity": "info",
+          "summary": "0 broken targets, 2602 orphaned routes (of 2976 routes).",
+          "metrics": {
+            "brokenTargets": 0,
+            "orphanedRoutes": 2602,
+            "definedRoutes": 2976
+          }
+        },
+        "typescript": {
+          "ok": true,
+          "severity": "info",
+          "summary": "No TypeScript errors.",
+          "metrics": null
+        },
+        "stale-os": {
+          "ok": false,
+          "severity": "warn",
+          "summary": "50 mention(s) of older OS versions in guides.",
+          "metrics": {
+            "count": 50
+          }
+        },
+        "old-guides": {
+          "ok": true,
+          "severity": "info",
+          "summary": "0 of 3053 guides published before 2024-11-13.",
+          "metrics": {
+            "total": 3053,
+            "aged": 0,
+            "cutoff": "2024-11-13"
           }
         }
       }
