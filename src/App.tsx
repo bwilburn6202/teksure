@@ -316,6 +316,8 @@ const ChessGameLog = lazy(() => import("./pages/tools/ChessGameLog"));
 const ChairYogaSequenceBuilder = lazy(() => import("./pages/tools/ChairYogaSequenceBuilder"));
 const SeasonalStarChart = lazy(() => import("./pages/tools/SeasonalStarChart"));
 const KnittingProjectQueue = lazy(() => import("./pages/tools/KnittingProjectQueue"));
+const BowlingScoreCard = lazy(() => import("./pages/tools/BowlingScoreCard"));
+const CasinoBudgetLimit = lazy(() => import("./pages/tools/CasinoBudgetLimit"));
 const DeviceTradeInEstimator = lazy(() => import("./pages/tools/DeviceTradeInEstimator"));
 const ParentalControlsWizard = lazy(() => import("./pages/tools/ParentalControlsWizard"));
 const HomeNetworkMap         = lazy(() => import("./pages/tools/HomeNetworkMap"));
@@ -4307,6 +4309,8 @@ const AppContent = () => {
           <Route path="/tools/chair-yoga-sequence-builder" element={<ChairYogaSequenceBuilder />} />
           <Route path="/tools/seasonal-star-chart" element={<SeasonalStarChart />} />
           <Route path="/tools/knitting-project-queue" element={<KnittingProjectQueue />} />
+          <Route path="/tools/bowling-score-card" element={<BowlingScoreCard />} />
+          <Route path="/tools/casino-budget-limit" element={<CasinoBudgetLimit />} />
           <Route path="/tools/trade-in-estimator" element={<DeviceTradeInEstimator />} />
           <Route path="/tools/parental-controls-wizard" element={<ParentalControlsWizard />} />
           <Route path="/tools/home-network-map" element={<HomeNetworkMap />} />

@@ -13,7 +13,7 @@ import {
   Newspaper, ChefHat, Car, Landmark, Thermometer, BookOpen, Cake,
   Siren, HandHeart, Calculator, Inbox, Library, Gavel, Headphones, Mic, Home,
   Pill, Zap, MessageSquare, PawPrint, Plane, ShoppingCart, Scale, Moon, Footprints, Calendar, Notebook, Droplet, Sprout, Wrench, Wallet, PhoneOff, Tag, TrendingUp,
-  Volume2, CalendarCheck, Boxes, Wine, Trophy, Truck, Gem, Dumbbell, Bird, Crown, Scissors,
+  Volume2, CalendarCheck, Boxes, Wine, Trophy, Truck, Gem, Dumbbell, Bird, Crown, Scissors, Target, Dices,
 } from 'lucide-react';
 import { Navbar } from '@/components/layout/Navbar';
 import { Footer } from '@/components/layout/Footer';
@@ -3321,6 +3321,34 @@ export const tools: Tool[] = [
     time: '2 min per project',
     newThisMonth: true,
     keywords: 'knitting crochet project queue tracker Ravelry yarn needles yardage WIP UFO senior stash management',
+  },
+  {
+    title: 'Bowling Score Card',
+    description: 'Log up to 3 games per session. See your season average, high game, and total. Print for league records.',
+    icon: Target,
+    path: '/tools/bowling-score-card',
+    color: 'text-rose-700',
+    bg: 'bg-rose-50 dark:bg-rose-950/30',
+    badge: 'Tracker',
+    category: 'Recreation',
+    difficulty: 'Easy',
+    time: '1 min per session',
+    newThisMonth: true,
+    keywords: 'bowling score card senior league USBC average high game handicap',
+  },
+  {
+    title: 'Casino Budget Card',
+    description: 'Set a hard loss limit before you go. Track your spending. The card warns and tells you when to walk away. Includes 1-800-GAMBLER if needed.',
+    icon: Dices,
+    path: '/tools/casino-budget-limit',
+    color: 'text-purple-700',
+    bg: 'bg-purple-50 dark:bg-purple-950/30',
+    badge: 'Calculator',
+    category: 'Health',
+    difficulty: 'Easy',
+    time: '2 min',
+    newThisMonth: true,
+    keywords: 'casino budget loss limit senior gambling 1-800-GAMBLER bus trip slot machines player card',
   },
   {
     title: 'Phone Call Scripts',
