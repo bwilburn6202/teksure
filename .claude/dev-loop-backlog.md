@@ -8,6 +8,82 @@ Newest cycles appear at the top.
 
 ---
 
+## Cycle 7 — 2026-05-15T12:08:14.204Z
+
+### [ok] Site metrics snapshot
+2776 guides, 3014 routes, 145 tools.
+
+### [ok] Duplicate guide slugs
+No duplicate slugs.
+
+### [ok] Internal link audit
+0 broken targets, 2602 orphaned routes (of 2976 routes).
+
+### [ok] TypeScript compile
+No TypeScript errors.
+
+### [warn] Stale OS version mentions
+50 mention(s) of older OS versions in guides.
+
+```
+- src/data/guides-batch-103.ts:31 — iOS 10–16 (`iOS 11`)
+- src/data/guides-batch-125.ts:143 — iOS 10–16 (`iOS 16`)
+- src/data/guides-batch-133.ts:151 — Android 10–13 (`Android 13`)
+- src/data/guides-batch-15.ts:283 — iOS 10–16 (`iOS 14`)
+- src/data/guides-batch-15.ts:299 — iOS 10–16 (`iOS 16`)
+- src/data/guides-batch-15.ts:319 — iOS 10–16 (`iOS 16`)
+- src/data/guides-batch-18.ts:76 — iOS 10–16 (`iOS 16`)
+- src/data/guides-batch-18.ts:77 — iOS 10–16 (`iOS 16`)
+- src/data/guides-batch-18.ts:236 — iOS 10–16 (`iOS 16`)
+- src/data/guides-batch-18.ts:530 — iOS 10–16 (`iOS 12`)
+```
+
+### [ok] Aged guides
+0 of 3077 guides published before 2024-11-15.
+
+### Suggested next actions
+- **Stale OS version mentions** — 50 mention(s) of older OS versions in guides.
+
+---
+
+## Cycle 6 — 2026-05-15T11:48:14.464Z
+
+### [ok] Site metrics snapshot
+2768 guides, 3014 routes, 145 tools.
+
+### [ok] Duplicate guide slugs
+No duplicate slugs.
+
+### [ok] Internal link audit
+0 broken targets, 2602 orphaned routes (of 2976 routes).
+
+### [ok] TypeScript compile
+No TypeScript errors.
+
+### [warn] Stale OS version mentions
+50 mention(s) of older OS versions in guides.
+
+```
+- src/data/guides-batch-103.ts:31 — iOS 10–16 (`iOS 11`)
+- src/data/guides-batch-12.ts:173 — iOS 10–16 (`iOS 16`)
+- src/data/guides-batch-125.ts:143 — iOS 10–16 (`iOS 16`)
+- src/data/guides-batch-128.ts:20 — iOS 10–16 (`iOS 15`)
+- src/data/guides-batch-133.ts:151 — Android 10–13 (`Android 13`)
+- src/data/guides-batch-14.ts:686 — iOS 10–16 (`iOS 14`)
+- src/data/guides-batch-15.ts:283 — iOS 10–16 (`iOS 14`)
+- src/data/guides-batch-15.ts:299 — iOS 10–16 (`iOS 16`)
+- src/data/guides-batch-15.ts:319 — iOS 10–16 (`iOS 16`)
+- src/data/guides-batch-18.ts:76 — iOS 10–16 (`iOS 16`)
+```
+
+### [ok] Aged guides
+0 of 3069 guides published before 2024-11-15.
+
+### Suggested next actions
+- **Stale OS version mentions** — 50 mention(s) of older OS versions in guides.
+
+---
+
 ## Cycle 5 — 2026-05-13T04:27:06.135Z
 
 ### [ok] Site metrics snapshot

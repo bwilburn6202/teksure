@@ -296,7 +296,7 @@ export const guidesBatch15: Guide[] = [
       },
       {
         title: 'Add widgets to your Lock Screen',
-        content: 'In iOS 16 and later, you can also add small widgets to your Lock Screen (the screen you see when your phone is locked). Press and hold your Lock Screen, tap "Customize," then tap "Lock Screen." Tap the date area at the top to add a widget above the clock, or tap the widget row below the clock to add up to four small widgets. Useful options: battery percentage, next calendar event, temperature, or steps walked.',
+        content: 'On any current iPhone (iOS 17 or later — and these steps also work on the older iOS 16), you can also add small widgets to your Lock Screen (the screen you see when your phone is locked). Press and hold your Lock Screen, tap "Customize," then tap "Lock Screen." Tap the date area at the top to add a widget above the clock, or tap the widget row below the clock to add up to four small widgets. Useful options: battery percentage, next calendar event, temperature, or steps walked.',
       },
     ],
   },
@@ -316,7 +316,7 @@ export const guidesBatch15: Guide[] = [
       {
         title: 'Open the Recently Deleted album',
         content: `Open the Photos app. Tap "Albums" at the bottom of the screen. Scroll down to the "Utilities" section. Tap "Recently Deleted." This album shows all photos and videos you've deleted in the last 30 days.`,
-        tip: 'On iPhones running iOS 16 or later, the Recently Deleted album is locked by default — you need to authenticate with Face ID or Touch ID to open it.',
+        tip: 'On any current iPhone (iOS 17 or later, and also iOS 16 which got this feature first), the Recently Deleted album is locked by default — you need to authenticate with Face ID or Touch ID to open it.',
       },
       {
         title: 'Recover a photo',

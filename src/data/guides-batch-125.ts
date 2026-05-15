@@ -140,7 +140,7 @@ This feature is called Continuity Camera. Your iPhone or iPad does the camera wo
 **What you need:**
 
 - An Apple TV 4K (2nd generation or newer, from 2021 or later)
-- An iPhone running iOS 16 or later, or an iPad running iPadOS 16 or later
+- An iPhone running iOS 17 or later, or an iPad running iPadOS 17 or later (older versions back to iOS 16 also work, but iOS 17+ is what is current in 2026)
 - Your iPhone or iPad and Apple TV must be signed in to the same Apple ID
 - Both devices must have Bluetooth and WiFi turned on
 - The Apple TV and your iPhone/iPad must be on the same home WiFi network

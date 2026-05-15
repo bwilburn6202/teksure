@@ -13,11 +13,11 @@ export const guidesBatch128: Guide[] = [
     readTime: '5 min',
     thumbnailEmoji: '📱',
     publishedAt: '2026-05-05',
-    lastVerifiedAt: '2026-05-05',
+    lastVerifiedAt: '2026-05-15',
     difficulty: 'Beginner',
     body: `If your iPhone is missing — left at a restaurant, dropped on a walk, or stolen — Apple's free Find My service can locate it on a map within seconds. It works from any other Apple device or from any web browser at icloud.com.
 
-If your iPhone is recent (iPhone 11 or newer running iOS 15 or later), Find My works even when the iPhone is turned off or has run out of battery. The phone broadcasts a low-power Bluetooth signal that nearby Apple devices pick up and report back to you anonymously.
+If your iPhone is recent (iPhone 11 or newer running iOS 17 or later — and this has been a feature on every iPhone since the iPhone 11), Find My works even when the iPhone is turned off or has run out of battery. The phone broadcasts a low-power Bluetooth signal that nearby Apple devices pick up and report back to you anonymously.
 
 Find My is on by default on every iPhone sold since 2019, but it never hurts to confirm. This guide walks through finding a lost iPhone, marking it as lost, and erasing it remotely if you cannot recover it.
 

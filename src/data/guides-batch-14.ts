@@ -678,12 +678,13 @@ export const guidesBatch14: Guide[] = [
     readTime: '3 min',
     thumbnailEmoji: '',
     publishedAt: '2026-04-19',
+    lastVerifiedAt: '2026-05-15',
     difficulty: 'Beginner',
     body: "The Magnifier app on iPhone uses your phone's camera to magnify text and objects — just like a digital magnifying glass. It's extremely useful for reading tiny restaurant menus, medicine bottle labels, prescription instructions, or any small print. It also has a brightness slider and the option to freeze the image so you can read it more comfortably.",
     steps: [
       {
         title: 'Find and open the Magnifier app',
-        content: 'The Magnifier app is built into every iPhone running iOS 17 or later (and also works on older iOS 14, 15, and 16 iPhones). Swipe down from the middle of your Home Screen to open Search, and type "Magnifier." Tap the app to open it. It shows a live camera view with a zoom slider at the bottom.',
+        content: 'The Magnifier app is built into every iPhone running iOS 17 or later (and on any iPhone made in the last 5+ years that can update to a current iOS version). Swipe down from the middle of your Home Screen to open Search, and type "Magnifier." Tap the app to open it. It shows a live camera view with a zoom slider at the bottom.',
         tip: 'Add Magnifier to your Control Center for even faster access: go to Settings → Control Center → tap the + next to Magnifier. Then swipe down from the top right corner to open Control Center and tap the Magnifier icon any time.',
       },
       {
