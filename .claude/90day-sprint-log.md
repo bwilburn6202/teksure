@@ -288,3 +288,72 @@ Days elapsed: **4** of **90**. Net new guides since sprint start (2026-05-12): *
 2. Ship a tool — Monday next week: a "Streaming Subscription Audit" tool at /tools/streaming-subscription-audit. List every service, drag toggle to "keep/cancel", monthly savings calculation. Pairs naturally with today's auto-renew guide.
 3. Affiliate prep — when Amazon Associates approves, batch-update the smart-plug, AirPods/hearing-aid, and Chrome browser guides with `tag=teksure-20` links at the device recommendation lines.
 4. Continue stale-OS sweep — next 5 targets: src/data/guides-batch-18.ts L76/77/236/530/568 (iOS 14/15/16/Ventura cleanups).
+
+---
+
+## 2026-05-17 (Day 6 — Sunday)
+
+### Guides added — 8 new (batch 137)
+- how-to-fix-airdrop-not-working-iphone-2026 (Phone) — 7-step AirDrop troubleshooting tree for iOS 18/19
+- roku-vs-google-tv-which-streaming-box-2026 (Buying Guides) — 7-step head-to-head with May-2026 pricing
+- t-mobile-essentials-65-versus-verizon-55-unlimited-2026 (Buying Guides) — senior cell plan side-by-side with AARP discount math + porting walkthrough
+- nest-vs-ecobee-smart-thermostat-2026 (Smart Home) — C-wire check, installation difficulty, real-world savings
+- walgreens-app-prescription-refill-step-by-step-2026 (Health Tech) — refill, auto-refill, pay-and-pickup, chat-with-pharmacist
+- how-to-tap-to-pay-with-iphone-apple-pay-2026 (Financial Tech) — Wallet setup, in-store flow, tokenization safety story
+- instacart-first-order-step-by-step-2026 (Apps) — replacement preferences emphasized + tipping etiquette
+- block-political-text-messages-iphone-2026 (Safety) — TCPA legal context + Filter Unknown Senders + carrier spam tools
+
+All 8 follow brand constraints: plain English, US audience, no banned vocabulary, ≥300-word body, official source links (Apple/Walgreens/Energy.gov/FCC/FTC), lastVerifiedAt 2026-05-17, difficulty PascalCase, 6–8 step structure with tip/warning callouts.
+
+### Guides refreshed — 5 stale OS mentions updated
+- guides-batch-103.ts L31 — QR scanning: "iOS 11" → "iOS 18 or iOS 19 (May 2026 release)"
+- guides-batch-125.ts L143 — Apple TV Continuity Camera: "iOS 17 / iOS 16" → "iOS 18 or 19 (iOS 17 also works)"
+- guides-batch-133.ts L151 — Hearing aid LE Audio: "Android 13" → "Android 14 (Android 15 current in 2026)"
+- guides-batch-15.ts L283/299/319 — Widgets + Recently Deleted: rewrote three "iOS 16/17" mentions to "iOS 18 or iOS 19"
+- guides-batch-18.ts L76/77 — Undo Send: "iOS 16 / macOS Ventura" → "iOS 17/18/19 / macOS Sonoma or Sequoia"
+
+### Features shipped
+None today. Feature work is Monday-cadence (next: 2026-05-18, plan is /tools/streaming-subscription-audit per prior queue).
+
+### Health check
+dev-loop cycle 9 (2026-05-17T11:41:26Z)
+- [ok] 2784 guides (+8 vs cycle 7), 3014 routes, 145 tools
+- [ok] No duplicate slugs
+- [ok] 0 broken internal link targets
+- [ok] No TypeScript errors
+- [warn] 50 stale-OS mentions still flagged (rotating set — today's 5 cleared, new flagged items rotated in alphabetical order)
+
+### Backlog items cleared
+- Stale OS mentions from dev-loop cycle 7 — 5 fresh hits cleared (103/125/133/15 ×3/18)
+- Batch 137 published — 8 new guides cover phone troubleshooting, two buyer guides, smart home, health tech, financial tech, app onboarding, and 2026-midterm-cycle political spam control
+
+### Running totals vs 90-day target
+| Target | Day 1 close | Day 4 close | Day 6 close (today) | Goal | Status |
+|---|---|---|---|---|---|
+| Guides | 2,752 | 2,776 | 2,784 (+8 today, +32 vs sprint start) | 4,500 | Behind pace — see below |
+| Tools | 145 | 145 | 145 | 200+ | Monday feature work pending (5/18) |
+| Traffic | — | not measured | not measured | 10,000/mo | Plausible/GA hookup still open |
+| Monetization | none | none | none | AdSense OR 3 affiliates | Amazon Associates application status unconfirmed; today's Roku/Nest/Walgreens guides are affiliate-friendly |
+| TekSure Brain | edge funcs deployed | edge funcs deployed | edge funcs deployed | Hosted Ollama active | Awaiting Hetzner CX22 + OLLAMA env vars |
+
+Days elapsed: **6** of **90**. Net new guides since sprint start (2026-05-12): **32** of **1,600** needed. Required pace: 17.78/day net new. Current 6-day pace: **5.3/day**. **Still behind — gap widening. Need to bump to 20+/day going forward or accept reduced target. Sundays produced no net new prior, so today's 8 catches up some, but Sun-typically-zero is a structural issue.**
+
+### Blockers
+- **`.git/*.lock` permission issue is back AGAIN today** — `rm` fails with "Operation not permitted" on the sandbox mount; `mv .git/index.lock .git/index.lock.bak.<ts>` works as a manual workaround but each git command that creates a lock then fails to clean it up wedges the next command. Today's run successfully landed two local commits (0e7a3c8 for batch 137, 422e73f for freshness, c4addb5 for dev-loop state) using repeated `mv` workarounds, but **`git pull --rebase` and `git merge origin/main` could not be completed** because each attempt creates a new lock that the sandbox cannot unlink. Local main is 6 commits ahead, 285 behind origin/main.
+  - **User action needed:** from a real Terminal on the host (not a Claude session), run:
+    ```
+    cd ~/Documents/Claude/Projects/TekSure
+    rm -f .git/*.lock .git/refs/heads/*.lock .git/objects/maintenance.lock
+    git pull --rebase origin main
+    git push origin main
+    ```
+  - **Permanent fix recommended:** `sudo chown -R $(whoami) ~/Documents/Claude/Projects/TekSure/.git` to ensure the user owns every git file, which should make the sandbox unlink operations succeed. The fix from 2026-05-14's log entry has not held.
+- The dev-loop pushed 285 chore commits since I started this session, which makes the divergence dramatic. Worth checking whether the dev-loop's GitHub Action is over-firing (every 6 hours × multiple days = lots of cycles).
+
+### Next-run priorities
+1. **First step of the next run: deal with the lock files.** Run `mv .git/index.lock .git/index.lock.bak.$(date +%s) 2>/dev/null; mv .git/HEAD.lock .git/HEAD.lock.bak.$(date +%s) 2>/dev/null` before any git operation. If `git pull --rebase` still fails, abandon the rebase and let the user fix via real Terminal — do not block the content batch on this.
+2. **Push today's three local commits** (0e7a3c8, 422e73f, c4addb5) after the rebase succeeds.
+3. **Monday feature** — `/tools/streaming-subscription-audit` (queued from prior log). Pairs with the auto-renewal scam guide already shipped.
+4. **Volume catch-up** — write 12 guides Monday instead of 8 to start closing the pace gap. Topics still queued from prior log: USPS Informed Delivery; Comcast/Xfinity auto-renewal traps; Walmart+ vs Amazon Prime 2026; Google Family Group; rotating home Wi-Fi password; iPhone 16 Camera Control settings; ChromeOS Flex revival of old laptop; Medicare drug plan switch during AEP; iPhone 17 rumored features evergreen; Android lock screen widgets in 2026; Apple Maps EV charging route planner; Spectrum One bundle cancellation walkthrough.
+5. **Stale-OS sweep next 5 targets** — guides-batch-18.ts L236/530, guides-batch-12.ts L173, guides-batch-128.ts L20, guides-batch-14.ts L686 (all iOS 14/15/16 cleanups).
+6. **Monetization** — check Amazon Associates approval status. If approved, retrofit today's Roku, Nest/Ecobee, Walgreens, and Apple Pay guides with `tag=teksure-20` affiliate links at device recommendation points (do NOT add to safety/political guides).
