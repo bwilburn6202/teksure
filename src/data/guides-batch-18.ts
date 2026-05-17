@@ -73,8 +73,8 @@ export const guidesBatch18: Guide[] = [
       {
         title: 'Undo Send in Apple Mail',
         content:
-          "On Mac (macOS Ventura and later): go to Mail → Settings → Composing → check \"Undo Send Delay\" and set it to 10 or 20 seconds. After sending, a banner appears at the bottom of the screen with an Undo option. On iPhone and iPad (iOS 16 and later): after sending an email in the Mail app, a brief \"Undo Send\" option appears at the bottom of the screen. Swipe up on it or tap it to cancel the send. The delay setting is in Settings → Mail → Undo Send Delay.",
-        tip: "Quick Tip: Apple Mail's Undo Send is only available on iOS 16 and macOS Ventura or later. If you have an older iPhone, update it to access this feature: Settings → General → Software Update.",
+          "On Mac (macOS Sonoma or Sequoia, current in 2026): go to Mail → Settings → Composing → check \"Undo Send Delay\" and set it to 10 or 20 seconds. After sending, a banner appears at the bottom of the screen with an Undo option. On iPhone and iPad (iOS 17, 18, or 19 — anything current): after sending an email in the Mail app, a brief \"Undo Send\" option appears at the bottom of the screen. Swipe up on it or tap it to cancel the send. The delay setting is in Settings → Mail → Undo Send Delay.",
+        tip: "Quick Tip: Apple Mail's Undo Send is available on every supported iPhone in 2026 (iOS 17 and newer). If you have an older iPhone that has not been updated, update it now: Settings → General → Software Update.",
       },
       {
         title: 'Recall an email in Outlook',

@@ -148,7 +148,7 @@ This guide walks through pairing on iPhone (using the "Made for iPhone" or MFi s
       {
         title: 'Pair on Android — Bluetooth menu plus accessibility',
         content: 'On Android the path varies by brand but here is the most common: Settings → Connected devices → Pair new device. Your hearing aids appear in the list when in pairing mode. Tap them. Confirm pairing for each ear. Then go to Settings → Accessibility → Hearing devices (or "Hearing aids" on Samsung). You can adjust the audio routing and check that calls and media are sending through the hearing aids.',
-        tip: 'Quick Tip: On Pixel 6 and newer with Android 13 or later, hearing aids support a newer audio standard called LE Audio. This gives much better sound and longer battery life. Make sure both hearing aids and phone show "LE Audio supported" if you want this.',
+        tip: 'Quick Tip: On Pixel 6 and newer with Android 14 or later (Android 15 is current in 2026), hearing aids support a newer audio standard called LE Audio. This gives much better sound and longer battery life. Make sure both hearing aids and phone show "LE Audio supported" if you want this.',
       },
       {
         title: 'Test the pairing — make a call and play music',
