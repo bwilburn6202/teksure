@@ -1,14 +1,14 @@
 {
   "version": "1.0",
-  "cycleCount": 7,
-  "lastRun": "2026-05-15T12:08:14.204Z",
+  "cycleCount": 9,
+  "lastRun": "2026-05-17T11:41:26.096Z",
   "lastFindings": {
     "metrics": {
       "ok": true,
       "severity": "info",
-      "summary": "2776 guides, 3014 routes, 145 tools.",
+      "summary": "2784 guides, 3014 routes, 145 tools.",
       "metrics": {
-        "guides": 2776,
+        "guides": 2784,
         "routes": 3014,
         "lazyImports": 2955,
         "tools": 145
@@ -47,11 +47,11 @@
     "old-guides": {
       "ok": true,
       "severity": "info",
-      "summary": "0 of 3077 guides published before 2024-11-15.",
+      "summary": "0 of 3085 guides published before 2024-11-17.",
       "metrics": {
-        "total": 3077,
+        "total": 3085,
         "aged": 0,
-        "cutoff": "2024-11-15"
+        "cutoff": "2024-11-17"
       }
     }
   },
@@ -451,6 +451,120 @@
             "total": 3077,
             "aged": 0,
             "cutoff": "2024-11-15"
+          }
+        }
+      }
+    },
+    {
+      "cycle": 8,
+      "at": "2026-05-17T11:33:29.754Z",
+      "findings": {
+        "metrics": {
+          "ok": true,
+          "severity": "info",
+          "summary": "2776 guides, 3014 routes, 145 tools.",
+          "metrics": {
+            "guides": 2776,
+            "routes": 3014,
+            "lazyImports": 2955,
+            "tools": 145
+          }
+        },
+        "slugs": {
+          "ok": true,
+          "severity": "info",
+          "summary": "No duplicate slugs.",
+          "metrics": null
+        },
+        "links": {
+          "ok": true,
+          "severity": "info",
+          "summary": "0 broken targets, 2602 orphaned routes (of 2976 routes).",
+          "metrics": {
+            "brokenTargets": 0,
+            "orphanedRoutes": 2602,
+            "definedRoutes": 2976
+          }
+        },
+        "typescript": {
+          "ok": true,
+          "severity": "info",
+          "summary": "No TypeScript errors.",
+          "metrics": null
+        },
+        "stale-os": {
+          "ok": false,
+          "severity": "warn",
+          "summary": "50 mention(s) of older OS versions in guides.",
+          "metrics": {
+            "count": 50
+          }
+        },
+        "old-guides": {
+          "ok": true,
+          "severity": "info",
+          "summary": "0 of 3077 guides published before 2024-11-17.",
+          "metrics": {
+            "total": 3077,
+            "aged": 0,
+            "cutoff": "2024-11-17"
+          }
+        }
+      }
+    },
+    {
+      "cycle": 9,
+      "at": "2026-05-17T11:41:26.096Z",
+      "findings": {
+        "metrics": {
+          "ok": true,
+          "severity": "info",
+          "summary": "2784 guides, 3014 routes, 145 tools.",
+          "metrics": {
+            "guides": 2784,
+            "routes": 3014,
+            "lazyImports": 2955,
+            "tools": 145
+          }
+        },
+        "slugs": {
+          "ok": true,
+          "severity": "info",
+          "summary": "No duplicate slugs.",
+          "metrics": null
+        },
+        "links": {
+          "ok": true,
+          "severity": "info",
+          "summary": "0 broken targets, 2602 orphaned routes (of 2976 routes).",
+          "metrics": {
+            "brokenTargets": 0,
+            "orphanedRoutes": 2602,
+            "definedRoutes": 2976
+          }
+        },
+        "typescript": {
+          "ok": true,
+          "severity": "info",
+          "summary": "No TypeScript errors.",
+          "metrics": null
+        },
+        "stale-os": {
+          "ok": false,
+          "severity": "warn",
+          "summary": "50 mention(s) of older OS versions in guides.",
+          "metrics": {
+            "count": 50
+          }
+        },
+        "old-guides": {
+          "ok": true,
+          "severity": "info",
+          "summary": "0 of 3085 guides published before 2024-11-17.",
+          "metrics": {
+            "total": 3085,
+            "aged": 0,
+            "cutoff": "2024-11-17"
           }
         }
       }
