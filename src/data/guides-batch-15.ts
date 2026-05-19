@@ -280,7 +280,7 @@ export const guidesBatch15: Guide[] = [
     thumbnailEmoji: '',
     publishedAt: '2026-04-19',
     difficulty: 'Beginner',
-    body: "iPhone widgets first arrived in iOS 14 and have only gotten better — on iOS 18 and iOS 19 (current in May 2026), widgets are interactive and can be placed on your Home Screen or Lock Screen. They show live information without opening the app. Popular widgets include the weather for the next few hours, upcoming calendar appointments, and a fitness ring showing your daily activity progress.",
+    body: "Widgets have been part of every iPhone for years — on iOS 18 and iOS 19 (current in May 2026), widgets are interactive and can be placed on your Home Screen or Lock Screen. They show live information without opening the app. Popular widgets include the weather for the next few hours, upcoming calendar appointments, and a fitness ring showing your daily activity progress.",
     steps: [
       {
         title: 'Enter editing mode',
