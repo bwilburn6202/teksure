@@ -357,3 +357,69 @@ Days elapsed: **6** of **90**. Net new guides since sprint start (2026-05-12): *
 4. **Volume catch-up** — write 12 guides Monday instead of 8 to start closing the pace gap. Topics still queued from prior log: USPS Informed Delivery; Comcast/Xfinity auto-renewal traps; Walmart+ vs Amazon Prime 2026; Google Family Group; rotating home Wi-Fi password; iPhone 16 Camera Control settings; ChromeOS Flex revival of old laptop; Medicare drug plan switch during AEP; iPhone 17 rumored features evergreen; Android lock screen widgets in 2026; Apple Maps EV charging route planner; Spectrum One bundle cancellation walkthrough.
 5. **Stale-OS sweep next 5 targets** — guides-batch-18.ts L236/530, guides-batch-12.ts L173, guides-batch-128.ts L20, guides-batch-14.ts L686 (all iOS 14/15/16 cleanups).
 6. **Monetization** — check Amazon Associates approval status. If approved, retrofit today's Roku, Nest/Ecobee, Walgreens, and Apple Pay guides with `tag=teksure-20` affiliate links at device recommendation points (do NOT add to safety/political guides).
+
+---
+
+## 2026-05-19 (Day 8 — Tuesday)
+
+### Guides added — 8 new (batch 138, all dated 2026-05-19, lastVerifiedAt 2026-05-19)
+- `medicare-wellness-visit-scam-2026` (Safety) — 2026 FTC alert response; phone scam asking for Medicare numbers under guise of "free wellness visit"
+- `visual-intelligence-iphone-2026` (Phone) — Apple Visual Intelligence walkthrough for iPhone 16/17 Camera Control button
+- `echo-show-video-call-grandparents-setup-2026` (Smart Home) — End-to-end Echo Show 8/10 setup for an elderly parent (Wi-Fi, contacts, Drop In, Photo Frame, reminders)
+- `iphone-battery-80-percent-limit-2026` (Phone) — Apple's 80% Limit vs Optimized vs Adaptive Charging — when to use each
+- `windows-11-recall-feature-seniors-privacy-2026` (Windows) — Recall privacy questions to ask BEFORE enabling on a Copilot+ PC, plus enable/exclude/delete
+- `google-lens-plants-products-translation-2026` (Apps) — Identify plants, compare product prices, translate signs, scan text, solve math
+- `toll-road-unpaid-text-scam-2026` (Safety) — FBI IC3 / FTC 2026 smishing surge; recognize, report to 7726, recover from a tap
+- `tv-antenna-setup-cord-cutting-2026` (Entertainment) — OTA antenna selection by signal strength, scan, reposition, add DVR
+
+All 8 follow brand constraints: plain English, US audience (US carriers, USD, US toll agencies, US Medicare), banned vocabulary absent (no "simply," "just," "leverage," "seamless," "cutting-edge," etc.), each guide includes official sources (Apple/Microsoft/Google/FTC/FBI/FCC/AARP) and a YouTube reference, PascalCase difficulty, 7–9 step structure with Quick Tip and warning callouts.
+
+### Guides refreshed — 5 stale OS mentions cleared
+- `guides-batch-15.ts` L283 — widgets body: removed "first arrived in iOS 14" historical reference; reframed as "Widgets have been part of every iPhone for years"
+- `guides-batch-18.ts` L236 — pill reminder tip: "iOS 16 and later" → "every current iPhone"
+- `guides-batch-18.ts` L530 — Apple Shortcuts body: "iOS 12 or later" → "every current iPhone"
+- `guides-batch-18.ts` L568 + L573 — Live Text body + step: "iOS 15 or later" → "every current iPhone" (two hits, one replacement set)
+- `guides-batch-18.ts` L682 — Screen Recording body: "iOS 11 or later" → "every current iPhone"
+
+### Health check (post-changes)
+dev-loop cycle 11 (2026-05-19T12:30:28Z)
+- [ok] 2792 guides, 3014 routes, 145 tools (+8 guides this run)
+- [ok] No duplicate slugs
+- [ok] 0 broken internal link targets
+- [ok] No TypeScript errors
+- [warn] 50 stale-OS mentions remaining (rolling list — backlog re-surfaces the next 50 hits as the prior batch is cleared)
+
+### Backlog items cleared
+- Top-of-backlog "Stale OS version mentions" (cycle 9) — 5 of the surfaced 10 hits addressed this run; remainder kicked to next-day priorities.
+
+### Running totals vs 90-day target
+| Metric | Day-1 Start | Today | Target (Aug 10) | % of remaining work done |
+|---|---|---|---|---|
+| Guides | 2,744 | 2,792 (+48 since sprint start, +8 today) | 4,500 | 2.7% of remaining gap closed today |
+| Tools | 145 | 145 | 200+ | unchanged |
+| TypeScript errors | 0 | 0 | 0 | OK |
+| Duplicate slugs | 0 | 0 | 0 | OK |
+| Broken internal links | 0 | 0 | 0 | OK |
+
+Pace check: at the 90-day end the sprint needs 1,756 net new guides (from 2,744 → 4,500), which works out to roughly 19.5/day for 90 days. Today's +8 is below the daily pace. Day 1 also shipped +8, Day 6 shipped +8, so the sprint has been running at ~half the pace required. Calling this out so the next several runs aim for 12–18 guides instead of 8.
+
+### Features shipped
+- None today (Tuesday — features are queued for Monday cycles per task instructions).
+
+### Monetization status
+- AdSense: no status check today; deferred to weekly cycle.
+- Affiliate programs: no changes today. Today's batch contains 3 affiliate-friendly guides that should be retrofitted with Amazon Associates `tag=teksure-20` links once approval clears: Echo Show setup (Echo Show 8/10 model recommendations), iPhone battery (no affiliate angle, skip), TV antenna (Mohu Leaf 50, Antop AT-127, Clearstream Eclipse, Antennas Direct ClearStream 4MAX, Tablo Quad, AirTV Anywhere), Google Lens (none — Google's own app, skip), Visual Intelligence (no product angle, skip), Medicare scam (Safety category — NEVER affiliate), Toll scam (Safety — NEVER affiliate), Windows Recall (Microsoft surface devices — possible but low-priority).
+
+### TekSure Brain / Hosted Ollama
+- Status unchanged. Hetzner CX22 still unprovisioned. Edge functions deployed; waiting on `OLLAMA_BASE_URL` and `OLLAMA_MODEL=llama3.2:1b` Supabase secrets per CLAUDE.md.
+
+### Blockers
+- **Git push blocked again** by the recurring sandbox FUSE permission issue. Local commit `a27b54a` ("feat: batch-138 (8 new guides) + 90-day sprint content cycle 2026-05-19") is committed locally and safe. Origin is 293 commits ahead (autonomous tasks pushing directly from the user's terminal). The sandbox cannot remove `.git/index.lock` (only rename), and `git pull --rebase` keeps recreating a lock the sandbox cannot clean up. **Manual resolution**: from the user's local terminal, run `git -C "/Users/baileywilburn/Documents/Claude/Projects/TekSure" pull --no-rebase --strategy-option=theirs origin main && git push origin main`. Working-tree changes are committed locally — no data is at risk. Local-commit count waiting to push: at least 9 (a27b54a plus prior unpushed locals from earlier sprint days).
+
+### Next-day priorities (2026-05-20)
+1. **Unblock git** — same resolution as previous days. Until pushed, the dev-loop on origin will not see today's batch-138.
+2. **Raise volume** — aim for 14 new guides on Day 9 to start closing the pace gap (currently running at ~8/day vs required 19.5/day).
+3. **Continue stale-OS sweep** — next targets per dev-loop cycle 9: `guides-batch-19.ts` L540 (iOS 14), L795 (iOS 11), `guides-batch-21.ts` L610 (iOS 11), `guides-batch-19.ts` L220 (Android 10).
+4. **Queued guide topics for next batch (139)**: USPS Informed Delivery; Comcast/Xfinity auto-renewal traps; Walmart+ vs Amazon Prime 2026; Google Family Group; rotating home Wi-Fi password; iPhone 16 Camera Control settings; ChromeOS Flex revival of old laptop; Medicare drug plan switch during AEP; iPhone 17 evergreen feature explainer; Android lock screen widgets 2026; Apple Maps EV charging route planner; Spectrum One bundle cancellation walkthrough; how to set up Find My Network for an elderly parent's keys/wallet; how to spot AI deepfake video on Facebook in 2026; Verizon 5G Home vs T-Mobile 5G Home Internet 2026 comparison.
+5. **Monday (May 25) feature** — `/tools/streaming-subscription-audit` (still queued); pairs with auto-renewal scam guide.
+6. **Monetization** — check Amazon Associates approval status. If approved, retrofit today's Echo Show and TV antenna guides with `tag=teksure-20` links at the device recommendation points.
