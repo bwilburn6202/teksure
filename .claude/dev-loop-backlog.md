@@ -8,6 +8,44 @@ Newest cycles appear at the top.
 
 ---
 
+## Cycle 232 — 2026-07-03T14:28:54.306Z
+
+### [ok] Site metrics snapshot
+3632 guides, 3154 routes, 285 tools.
+
+### [ok] Duplicate guide slugs
+No duplicate slugs.
+
+### [ok] Internal link audit
+0 broken targets, 2602 orphaned routes (of 3116 routes).
+
+### [ok] TypeScript compile
+No TypeScript errors.
+
+### [warn] Stale OS version mentions
+67 mention(s) of older OS versions in guides.
+
+```
+- src/data/guides-batch-103.ts:31 — iOS 10–16 (`iOS 11`)
+- src/data/guides-batch-15.ts:283 — iOS 10–16 (`iOS 14`)
+- src/data/guides-batch-154.ts:326 — iOS 10–16 (`iOS 16`)
+- src/data/guides-batch-157.ts:589 — macOS pre-Ventura (`macOS Monterey`)
+- src/data/guides-batch-163.ts:63 — iOS 10–16 (`iOS 12`)
+- src/data/guides-batch-18.ts:77 — iOS 10–16 (`iOS 16`)
+- src/data/guides-batch-203.ts:94 — iOS 10–16 (`iOS 13`)
+- src/data/guides-batch-209.ts:95 — iOS 10–16 (`iOS 13`)
+- src/data/guides-batch-21.ts:610 — iOS 10–16 (`iOS 11`)
+- src/data/guides-batch-210.ts:55 — iOS 10–16 (`iOS 15`)
+```
+
+### [ok] Aged guides
+0 of 3933 guides published before 2025-01-03.
+
+### Suggested next actions
+- **Stale OS version mentions** — 67 mention(s) of older OS versions in guides.
+
+---
+
 ## Cycle 231 — 2026-07-03T09:32:37.096Z
 
 ### [ok] Site metrics snapshot
@@ -8553,39 +8591,6 @@ No TypeScript errors.
 
 ```
 - src/data/guides-batch-103.ts:31 — iOS 10–16 (`iOS 11`)
-- src/data/guides-batch-109.ts:48 — Android 10–13 (`Android 13`)
-- src/data/guides-batch-117.ts:66 — iOS 10–16 (`iOS 16`)
-- src/data/guides-batch-117.ts:61 — Android 10–13 (`Android 12`)
-- src/data/guides-batch-12.ts:171 — iOS 10–16 (`iOS 16`)
-- src/data/guides-batch-12.ts:173 — iOS 10–16 (`iOS 16`)
-- src/data/guides-batch-125.ts:143 — iOS 10–16 (`iOS 16`)
-- src/data/guides-batch-14.ts:686 — iOS 10–16 (`iOS 14`)
-- src/data/guides-batch-15.ts:283 — iOS 10–16 (`iOS 14`)
-- src/data/guides-batch-15.ts:299 — iOS 10–16 (`iOS 16`)
-```
-
-### [ok] Aged guides
-0 of 3030 guides published before 2024-11-05.
-
-### Suggested next actions
-- **Duplicate guide slugs** — Duplicate slugs detected — see validate-slugs output.
-- **Stale OS version mentions** — 50 mention(s) of older OS versions in guides.
-
----
-
-## Cycle 6 — 2026-05-04T19:53:19.847Z
-
-### [ok] Site metrics snapshot
-2729 guides, 3014 routes, 145 tools.
-
-### [fail] Duplicate guide slugs
-Duplicate slugs detected — see validate-slugs output.
-
-```
-[validate-slugs] scanned 123 files, 3030 slugs, 3028 unique
-[validate-slugs] FAIL — 2 duplicate slug(s):
-  • phone-wont-charge-fix
-      src/data/guides-batch-124.ts:60
-      s
+- src/data/guid
 
 _(older cycles trimmed)_
