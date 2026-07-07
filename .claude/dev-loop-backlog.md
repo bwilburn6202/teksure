@@ -8,6 +8,44 @@ Newest cycles appear at the top.
 
 ---
 
+## Cycle 247 — 2026-07-07T09:58:14.822Z
+
+### [ok] Site metrics snapshot
+3632 guides, 3154 routes, 285 tools.
+
+### [ok] Duplicate guide slugs
+No duplicate slugs.
+
+### [ok] Internal link audit
+0 broken targets, 2602 orphaned routes (of 3116 routes).
+
+### [ok] TypeScript compile
+No TypeScript errors.
+
+### [warn] Stale OS version mentions
+67 mention(s) of older OS versions in guides.
+
+```
+- src/data/guides-batch-103.ts:31 — iOS 10–16 (`iOS 11`)
+- src/data/guides-batch-15.ts:283 — iOS 10–16 (`iOS 14`)
+- src/data/guides-batch-154.ts:326 — iOS 10–16 (`iOS 16`)
+- src/data/guides-batch-157.ts:589 — macOS pre-Ventura (`macOS Monterey`)
+- src/data/guides-batch-163.ts:63 — iOS 10–16 (`iOS 12`)
+- src/data/guides-batch-18.ts:77 — iOS 10–16 (`iOS 16`)
+- src/data/guides-batch-203.ts:94 — iOS 10–16 (`iOS 13`)
+- src/data/guides-batch-209.ts:95 — iOS 10–16 (`iOS 13`)
+- src/data/guides-batch-21.ts:610 — iOS 10–16 (`iOS 11`)
+- src/data/guides-batch-210.ts:55 — iOS 10–16 (`iOS 15`)
+```
+
+### [ok] Aged guides
+0 of 3933 guides published before 2025-01-07.
+
+### Suggested next actions
+- **Stale OS version mentions** — 67 mention(s) of older OS versions in guides.
+
+---
+
 ## Cycle 246 — 2026-07-07T04:12:59.397Z
 
 ### [ok] Site metrics snapshot
@@ -8544,44 +8582,6 @@ No TypeScript errors.
 - src/data/guides-batch-21.ts:610 — iOS 10–16 (`iOS 11`)
 - src/data/guides-batch-24.ts:443 — iOS 10–16 (`iOS 14`)
 - src/data/guides-batch-24.ts:531 — Windows 7 (`Windows 7`)
-- src/data/guides-batch-25.ts:523 — iOS 10–16 (`iOS 11`)
-- src/data/guides-batch-25.ts:534 — iOS 10–16 (`iOS 11`)
-- src/data/guides-batch-28.ts:571 — iOS 10–16 (`iOS 15`)
-- src/data/guides-batch-32.ts:499 — iOS 10–16 (`iOS 12`)
-```
-
-### [ok] Aged guides
-0 of 3095 guides published before 2024-11-07.
-
-### Suggested next actions
-- **Stale OS version mentions** — 53 mention(s) of older OS versions in guides.
-
----
-
-## Cycle 21 — 2026-05-06T03:07:50.247Z
-
-### [ok] Site metrics snapshot
-2790 guides, 3028 routes, 159 tools.
-
-### [ok] Duplicate guide slugs
-No duplicate slugs.
-
-### [ok] Internal link audit
-0 broken targets, 2602 orphaned routes (of 2990 routes).
-
-### [ok] TypeScript compile
-No TypeScript errors.
-
-### [warn] Stale OS version mentions
-53 mention(s) of older OS versions in guides.
-
-```
-- src/data/guides-batch-103.ts:31 — iOS 10–16 (`iOS 11`)
-- src/data/guides-batch-15.ts:283 — iOS 10–16 (`iOS 14`)
-- src/data/guides-batch-18.ts:77 — iOS 10–16 (`iOS 16`)
-- src/data/guides-batch-21.ts:610 — iOS 10–16 (`iOS 11`)
-- src/data/guides-batch-24.ts:443 — iOS 10–16 (`iOS 14`)
-- src/data/guides-batch-24.ts:531 — Windows 7 (`Windows 7`)
-- src/data/guides-batch-25.ts:523 — iOS 10–
+- src/data/guides-batch-25.
 
 _(older cycles trimmed)_
