@@ -1,14 +1,14 @@
 {
   "version": "1.0",
-  "cycleCount": 291,
-  "lastRun": "2026-07-18T08:05:37.512Z",
+  "cycleCount": 292,
+  "lastRun": "2026-07-18T11:38:12.765Z",
   "lastFindings": {
     "metrics": {
       "ok": true,
       "severity": "info",
-      "summary": "3659 guides, 3154 routes, 285 tools.",
+      "summary": "3664 guides, 3154 routes, 285 tools.",
       "metrics": {
-        "guides": 3659,
+        "guides": 3664,
         "routes": 3154,
         "lazyImports": 3095,
         "tools": 285
@@ -47,72 +47,15 @@
     "old-guides": {
       "ok": true,
       "severity": "info",
-      "summary": "0 of 3960 guides published before 2025-01-18.",
+      "summary": "0 of 3965 guides published before 2025-01-18.",
       "metrics": {
-        "total": 3960,
+        "total": 3965,
         "aged": 0,
         "cutoff": "2025-01-18"
       }
     }
   },
   "history": [
-    {
-      "cycle": 242,
-      "at": "2026-07-06T04:24:44.008Z",
-      "findings": {
-        "metrics": {
-          "ok": true,
-          "severity": "info",
-          "summary": "3632 guides, 3154 routes, 285 tools.",
-          "metrics": {
-            "guides": 3632,
-            "routes": 3154,
-            "lazyImports": 3095,
-            "tools": 285
-          }
-        },
-        "slugs": {
-          "ok": true,
-          "severity": "info",
-          "summary": "No duplicate slugs.",
-          "metrics": null
-        },
-        "links": {
-          "ok": true,
-          "severity": "info",
-          "summary": "0 broken targets, 2602 orphaned routes (of 3116 routes).",
-          "metrics": {
-            "brokenTargets": 0,
-            "orphanedRoutes": 2602,
-            "definedRoutes": 3116
-          }
-        },
-        "typescript": {
-          "ok": true,
-          "severity": "info",
-          "summary": "No TypeScript errors.",
-          "metrics": null
-        },
-        "stale-os": {
-          "ok": false,
-          "severity": "warn",
-          "summary": "67 mention(s) of older OS versions in guides.",
-          "metrics": {
-            "count": 67
-          }
-        },
-        "old-guides": {
-          "ok": true,
-          "severity": "info",
-          "summary": "0 of 3933 guides published before 2025-01-06.",
-          "metrics": {
-            "total": 3933,
-            "aged": 0,
-            "cutoff": "2025-01-06"
-          }
-        }
-      }
-    },
     {
       "cycle": 243,
       "at": "2026-07-06T10:58:04.742Z",
@@ -2900,6 +2843,63 @@
           "summary": "0 of 3960 guides published before 2025-01-18.",
           "metrics": {
             "total": 3960,
+            "aged": 0,
+            "cutoff": "2025-01-18"
+          }
+        }
+      }
+    },
+    {
+      "cycle": 292,
+      "at": "2026-07-18T11:38:12.765Z",
+      "findings": {
+        "metrics": {
+          "ok": true,
+          "severity": "info",
+          "summary": "3664 guides, 3154 routes, 285 tools.",
+          "metrics": {
+            "guides": 3664,
+            "routes": 3154,
+            "lazyImports": 3095,
+            "tools": 285
+          }
+        },
+        "slugs": {
+          "ok": true,
+          "severity": "info",
+          "summary": "No duplicate slugs.",
+          "metrics": null
+        },
+        "links": {
+          "ok": true,
+          "severity": "info",
+          "summary": "0 broken targets, 2602 orphaned routes (of 3116 routes).",
+          "metrics": {
+            "brokenTargets": 0,
+            "orphanedRoutes": 2602,
+            "definedRoutes": 3116
+          }
+        },
+        "typescript": {
+          "ok": true,
+          "severity": "info",
+          "summary": "No TypeScript errors.",
+          "metrics": null
+        },
+        "stale-os": {
+          "ok": false,
+          "severity": "warn",
+          "summary": "67 mention(s) of older OS versions in guides.",
+          "metrics": {
+            "count": 67
+          }
+        },
+        "old-guides": {
+          "ok": true,
+          "severity": "info",
+          "summary": "0 of 3965 guides published before 2025-01-18.",
+          "metrics": {
+            "total": 3965,
             "aged": 0,
             "cutoff": "2025-01-18"
           }
