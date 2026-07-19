@@ -1,7 +1,7 @@
 {
   "version": "1.0",
-  "cycleCount": 294,
-  "lastRun": "2026-07-18T19:19:38.754Z",
+  "cycleCount": 295,
+  "lastRun": "2026-07-19T03:45:54.447Z",
   "lastFindings": {
     "metrics": {
       "ok": true,
@@ -47,72 +47,15 @@
     "old-guides": {
       "ok": true,
       "severity": "info",
-      "summary": "0 of 3965 guides published before 2025-01-18.",
+      "summary": "0 of 3965 guides published before 2025-01-19.",
       "metrics": {
         "total": 3965,
         "aged": 0,
-        "cutoff": "2025-01-18"
+        "cutoff": "2025-01-19"
       }
     }
   },
   "history": [
-    {
-      "cycle": 245,
-      "at": "2026-07-06T20:10:41.737Z",
-      "findings": {
-        "metrics": {
-          "ok": true,
-          "severity": "info",
-          "summary": "3632 guides, 3154 routes, 285 tools.",
-          "metrics": {
-            "guides": 3632,
-            "routes": 3154,
-            "lazyImports": 3095,
-            "tools": 285
-          }
-        },
-        "slugs": {
-          "ok": true,
-          "severity": "info",
-          "summary": "No duplicate slugs.",
-          "metrics": null
-        },
-        "links": {
-          "ok": true,
-          "severity": "info",
-          "summary": "0 broken targets, 2602 orphaned routes (of 3116 routes).",
-          "metrics": {
-            "brokenTargets": 0,
-            "orphanedRoutes": 2602,
-            "definedRoutes": 3116
-          }
-        },
-        "typescript": {
-          "ok": true,
-          "severity": "info",
-          "summary": "No TypeScript errors.",
-          "metrics": null
-        },
-        "stale-os": {
-          "ok": false,
-          "severity": "warn",
-          "summary": "67 mention(s) of older OS versions in guides.",
-          "metrics": {
-            "count": 67
-          }
-        },
-        "old-guides": {
-          "ok": true,
-          "severity": "info",
-          "summary": "0 of 3933 guides published before 2025-01-06.",
-          "metrics": {
-            "total": 3933,
-            "aged": 0,
-            "cutoff": "2025-01-06"
-          }
-        }
-      }
-    },
     {
       "cycle": 246,
       "at": "2026-07-07T04:12:59.397Z",
@@ -2902,6 +2845,63 @@
             "total": 3965,
             "aged": 0,
             "cutoff": "2025-01-18"
+          }
+        }
+      }
+    },
+    {
+      "cycle": 295,
+      "at": "2026-07-19T03:45:54.447Z",
+      "findings": {
+        "metrics": {
+          "ok": true,
+          "severity": "info",
+          "summary": "3664 guides, 3154 routes, 285 tools.",
+          "metrics": {
+            "guides": 3664,
+            "routes": 3154,
+            "lazyImports": 3095,
+            "tools": 285
+          }
+        },
+        "slugs": {
+          "ok": true,
+          "severity": "info",
+          "summary": "No duplicate slugs.",
+          "metrics": null
+        },
+        "links": {
+          "ok": true,
+          "severity": "info",
+          "summary": "0 broken targets, 2602 orphaned routes (of 3116 routes).",
+          "metrics": {
+            "brokenTargets": 0,
+            "orphanedRoutes": 2602,
+            "definedRoutes": 3116
+          }
+        },
+        "typescript": {
+          "ok": true,
+          "severity": "info",
+          "summary": "No TypeScript errors.",
+          "metrics": null
+        },
+        "stale-os": {
+          "ok": false,
+          "severity": "warn",
+          "summary": "67 mention(s) of older OS versions in guides.",
+          "metrics": {
+            "count": 67
+          }
+        },
+        "old-guides": {
+          "ok": true,
+          "severity": "info",
+          "summary": "0 of 3965 guides published before 2025-01-19.",
+          "metrics": {
+            "total": 3965,
+            "aged": 0,
+            "cutoff": "2025-01-19"
           }
         }
       }
