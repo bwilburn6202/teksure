@@ -467,7 +467,7 @@ Setting a Screen Time passcode is essential. Without one, a child could go into 
 
 Screen Time reports show you which apps were used and for how long, which websites were visited, and how many notifications were received. This is useful for having informed conversations with your child about their screen habits, rather than simply imposing restrictions.
 
-Screen Time requires macOS Catalina (10.15) or later. Most Macs bought after 2019 support it.`,
+Screen Time works on every currently supported version of macOS (including Sonoma and Sequoia) and has been standard since macOS Catalina back in 2019. If your Mac is old enough that it can't update past Catalina, it's a sign the hardware itself is due for replacement.`,
     steps: [
       {
         title: `Open Screen Time in System Settings`,

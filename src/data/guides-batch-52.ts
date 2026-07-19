@@ -328,7 +328,7 @@ This guide covers the most common Android approaches. If your phone's screen loo
     body: `AirPlay is Apple's wireless technology for sending video and audio from one Apple device to another — or to a compatible smart TV. With AirPlay, you can stream a movie playing in your Mac's browser, mirror your entire Mac screen onto your TV for a bigger view, or play music from your Mac through speakers connected to an Apple TV.
 
 To use AirPlay from your Mac to a TV, you need two things:
-1. A Mac running macOS Monterey or later (though basic AirPlay has been available since macOS Big Sur).
+1. A Mac running macOS Sonoma, Sequoia, or later for the full feature set (basic AirPlay has technically been available since macOS Big Sur in 2020, but an up-to-date macOS version gives you the most reliable connection and full AirPlay 2 support).
 2. An Apple TV (any model) connected to your TV, OR a smart TV that supports AirPlay 2. Many modern smart TVs from Samsung, LG, Sony, and Vizio support AirPlay 2.
 
 Both your Mac and the Apple TV or smart TV must be connected to the same WiFi network. If one is on your home WiFi and the other is on a guest network or a different network, AirPlay won't find it.

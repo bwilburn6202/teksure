@@ -198,7 +198,7 @@ This is sometimes called a "version history" backup because File History saves m
 
 An external hard drive is the most common and reliable storage device for File History. You can buy one at any electronics store for $40–$80. Plug it into your computer with a USB cable, and Windows will detect it automatically. You can also use a large USB flash drive (sometimes called a USB stick or thumb drive), though an external hard drive holds much more.
 
-File History does not back up your entire Windows system or all your programs — it focuses on your personal files. For a full system backup (which lets you restore your entire PC if the hard drive fails completely), look into the separate "Backup and Restore (Windows 7)" tool in Windows, or consider a cloud backup service. File History and a cloud service together give you very strong protection.
+File History does not back up your entire Windows system or all your programs — it focuses on your personal files. For a full system backup (which lets you restore your entire PC if the hard drive fails completely), Windows 10 and Windows 11 still include a tool called "Backup and Restore (Windows 7)" — the name is left over from an older version of Windows, but it still works on current systems. You can also consider a cloud backup service instead. File History and a cloud service together give you very strong protection.
 
 Ideally, you should leave the external drive plugged into your computer all the time so backups happen automatically. If you unplug the drive and plug it back in later, File History will catch up and back up any changes made while it was disconnected.`,
     steps: [

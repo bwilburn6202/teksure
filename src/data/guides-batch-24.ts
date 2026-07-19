@@ -528,7 +528,7 @@ Pinning apps to the Start Menu is the most important customization. When you pin
 
 The Recommended section shows your most recently opened files and newly installed apps. This can be helpful for quickly reopening a document you were working on, but some people prefer more privacy and would rather not see recent files. You can turn off Recommended files entirely in Settings.
 
-You can also move the entire taskbar (including the Start button) back to the left corner — the way it looked in Windows 7 and 10 — by changing one setting in the Taskbar Alignment option. Many people switching from older versions of Windows find this reassuring.`,
+You can also move the entire taskbar (including the Start button) back to the left corner — the way it looked in every version of Windows before Windows 11, including Windows 7 and Windows 10 — by changing one setting in the Taskbar Alignment option. Many people switching from older versions of Windows find this reassuring.`,
     steps: [
       {
         title: 'Open the Start Menu and Explore It',
