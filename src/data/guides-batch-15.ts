@@ -280,7 +280,7 @@ export const guidesBatch15: Guide[] = [
     thumbnailEmoji: '',
     publishedAt: '2026-04-19',
     difficulty: 'Beginner',
-    body: "iPhone widgets (introduced in iOS 14) show live information right on your Home Screen — no app opening needed. Popular widgets include the weather for the next few hours, upcoming calendar appointments, and a fitness ring showing your daily activity progress.",
+    body: "iPhone widgets, a standard feature on every iPhone running a modern version of iOS, show live information right on your Home Screen — no app opening needed. Popular widgets include the weather for the next few hours, upcoming calendar appointments, and a fitness ring showing your daily activity progress.",
     steps: [
       {
         title: 'Enter editing mode',

@@ -586,7 +586,7 @@ Write it down or take a photo of the screen.
 5. Your Mac will ask for your Mac login password or Touch ID to confirm — enter it.
 6. The Wi-Fi password will appear. Copy it or write it down.
 
-On older Macs (macOS Monterey or earlier), you can also find it in the **Keychain Access** application by searching for your network name and checking "Show Password."
+On older Macs (running an OS version before macOS Ventura), you can also find it in the **Keychain Access** application by searching for your network name and checking "Show Password."
 
 ---
 

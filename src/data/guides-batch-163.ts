@@ -60,7 +60,7 @@ Before you start, here is what you can expect to move over without doing anythin
 
 Quick Start is Apple's built-in phone-to-phone transfer feature. It works by holding your new iPhone next to your old one. This is the recommended approach if both phones are nearby and charged.
 
-**What you need:** Both phones charged to at least 50%. Your old iPhone running iOS 12.4 or later (any iPhone from roughly 2015 or newer will have this). Your Apple ID and password.
+**What you need:** Both phones charged to at least 50%. Your old iPhone running a recent version of iOS (any iPhone from the last several years will have this). Your Apple ID and password.
 
 1. **Turn on your new iPhone.** A "Hello" screen appears.
 2. **Place your new iPhone next to your old iPhone** (within a few inches). Your old iPhone should automatically detect the new one and show a message: "Set Up New iPhone."

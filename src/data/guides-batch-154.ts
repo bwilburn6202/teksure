@@ -323,7 +323,7 @@ This is the fastest method for Gmail users because Google has already identified
 
 **Method 3: Use iPhone Mail's Unsubscribe feature (iOS 16 and later)**
 
-If you read email on an iPhone using the built-in Mail app, Apple added a helpful feature in iOS 16: a blue "Unsubscribe" banner appears at the top of many marketing emails — right above the message — with a one-tap button to unsubscribe.
+If you read email on an iPhone using the built-in Mail app, Apple added a helpful feature a few years ago that's still included today: a blue "Unsubscribe" banner appears at the top of many marketing emails — right above the message — with a one-tap button to unsubscribe.
 
 When you see that blue banner, tap "Unsubscribe" and then confirm. Apple sends the unsubscribe request to the sender on your behalf. You do not have to scroll to the bottom of the email or navigate to an external website.
 

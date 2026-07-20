@@ -816,3 +816,39 @@ Local mount's working tree also has ~370 modified/untracked files (mostly `/tool
 3. Confirm GA4/Plausible analytics wiring so traffic can be measured against the 10,000/mo target.
 4. Before any future session edits this log file (or any guide-batch file), pull a fresh `origin/main` clone first — do not trust the local mount's copy, which is now confirmed to lag origin by multiple batches and at least one log-file version.
 5. Check whether `continuous-content-loop.yml` (flagged stalled on Day 67) has resumed; batches 322-324 landing between the last local sync and today suggest it may have recovered, but this wasn't directly confirmed via the Actions UI this session.
+
+---
+
+## Day 70 — 2026-07-20
+
+**Health check:** `npm run loop:dev:once` clean — 0 TypeScript errors, 0 duplicate slugs, 0 broken internal links.
+
+**Guides added (7):** batch-326 — `turn-off-ad-tracking-iphone-app-tracking-transparency`, `find-lost-android-phone-with-find-hub`, `turn-on-iphone-satellite-sos-emergency-messaging`, `spot-fake-package-delivery-text-scams`, `check-if-your-email-was-in-a-data-breach`, `remove-duplicate-photos-windows-11`, `turn-on-rcs-messaging-iphone-android`. Each includes plain-language steps and an official source line (Apple/Google/FTC support pages); no videoUrl field set (matching the batch-325 convention — avoids linking unverifiable specific video IDs).
+
+**Guides refreshed (5):** removed hard-pinned old OS version numbers flagged by the dev-loop's stale-OS checker — `guides-batch-103.ts` (iOS 11 reference → generic "recent version of iOS"), `guides-batch-15.ts` (iOS 14 → generic modern-iOS phrasing), `guides-batch-154.ts` (redundant "iOS 16" mention → "a few years ago... still included today"), `guides-batch-157.ts` (macOS Monterey → "before macOS Ventura"), `guides-batch-163.ts` (iOS 12.4 → generic "recent version of iOS"). Stale-OS backlog count: 67 → 62.
+
+**Features shipped:** None this run — content + freshness only, per the daily loop (feature work is Monday-only per the 90-day plan).
+
+**Monetization:** Checked codebase for AdSense (`ca-pub-`) tags or affiliate account setup — none found. Still zero measurable progress after 70 days; blocked entirely on Bailey supplying an AdSense publisher ID or Amazon Associates tag.
+
+**Git bridge:** Local mounted `.git` was still diverged (10 local vs. 540 origin commits) at session start — same known lock-file issue. Used the established workaround: fresh shallow clone (`--depth 1`) of `origin/main` to `/tmp/teksure-work`, confirmed it matched origin exactly (`git fetch` showed no drift before push), did all edits there, verified with `validate-slugs.mjs` and `tsc --noEmit`, then pushed directly. Did not touch the local mount's ~370 modified/untracked files — still flagged for Bailey to reconcile manually.
+
+### Running totals vs 90-day target (Day 70 of 90, sprint ends 2026-08-10)
+| Metric | Target | Now | Status |
+|---|---|---|---|
+| Guides | 4,500 | 3,678 (+7 this run) | 82% — on pace |
+| Tools | 200+ | 285 | Exceeded |
+| TypeScript errors | 0 | 0 | OK |
+| Duplicate slugs | 0 | 0 | OK |
+| Broken internal links | 0 | 0 | OK |
+| Traffic | 10,000/mo | Not measured this run | Still unconfirmed whether analytics is wired up |
+| Monetization | AdSense or 3 affiliate programs live | None | Blocked on Bailey |
+| TekSure Brain / Ollama | Hosted Ollama active | Edge functions deployed, unchanged | Blocked on Hetzner CX22 provisioning |
+| Git health (local mount) | Clean, pushed | Still broken, fresh-clone workaround used again | Needs Bailey's hands-on fix on the real Mac |
+
+### Next-day priorities (2026-07-21)
+1. **Bailey:** fix the local `.git` lock files or re-clone the TekSure folder from a real Terminal — the ~370 uncommitted local-mount files from Day 69 are still unreconciled and at risk.
+2. **Bailey:** provide an Amazon Associates tag or AdSense publisher ID — 70 days in with zero measurable progress on this target.
+3. Confirm GA4/Plausible analytics wiring so traffic can be measured against the 10,000/mo target.
+4. 62 stale-OS mentions remain in the backlog (down from 67) — continue chipping away at 5/day.
+5. 20 days left in the sprint (ends 2026-08-10) with guides at 82% of target — pace is sufficient if the daily cadence holds, but there's no slack for missed days.
