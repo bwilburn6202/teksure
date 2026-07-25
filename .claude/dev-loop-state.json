@@ -1,16 +1,16 @@
 {
   "version": "1.0",
-  "cycleCount": 23,
-  "lastRun": "2026-07-25T14:30:18.544Z",
+  "cycleCount": 24,
+  "lastRun": "2026-07-25T19:23:34.143Z",
   "lastFindings": {
     "metrics": {
       "ok": true,
       "severity": "info",
-      "summary": "3712 guides, 3155 routes, 285 tools.",
+      "summary": "3714 guides, 3154 routes, 285 tools.",
       "metrics": {
-        "guides": 3712,
-        "routes": 3155,
-        "lazyImports": 3096,
+        "guides": 3714,
+        "routes": 3154,
+        "lazyImports": 3095,
         "tools": 285
       }
     },
@@ -23,10 +23,10 @@
     "links": {
       "ok": true,
       "severity": "info",
-      "summary": "0 broken targets, 2603 orphaned routes (of 3117 routes).",
+      "summary": "0 broken targets, 6 orphaned routes (of 3117 routes).",
       "metrics": {
         "brokenTargets": 0,
-        "orphanedRoutes": 2603,
+        "orphanedRoutes": 6,
         "definedRoutes": 3117
       }
     },
@@ -47,72 +47,50 @@
     "old-guides": {
       "ok": true,
       "severity": "info",
-      "summary": "0 of 4013 guides published before 2025-01-25.",
+      "summary": "0 of 4015 guides published before 2025-01-25.",
       "metrics": {
-        "total": 4013,
+        "total": 4015,
         "aged": 0,
         "cutoff": "2025-01-25"
+      }
+    },
+    "duplicate-titles": {
+      "ok": true,
+      "severity": "info",
+      "summary": "No duplicate guide titles.",
+      "metrics": {
+        "count": 0
+      }
+    },
+    "senior-ux": {
+      "ok": false,
+      "severity": "warn",
+      "summary": "avg reading grade 8.7 (target <= 8), 65% of guides above grade 8, 0 images missing alt.",
+      "metrics": {
+        "filesScanned": 3190,
+        "guidesScored": 3292,
+        "readingGradeAverage": 8.7,
+        "guidesAboveGrade8Pct": 65,
+        "guidesAboveGrade10": 808,
+        "filesUsingTinyText": 531,
+        "tinyTextInstances": 3047,
+        "filesWithSmallTapTargets": 9,
+        "imagesMissingAlt": 0,
+        "filesWithDivOnClick": 7
+      }
+    },
+    "source-links": {
+      "ok": true,
+      "severity": "info",
+      "summary": "66 source URLs checked, 0 confirmed broken (404/410), 1 unreachable (often bot-blocking).",
+      "metrics": {
+        "urlsChecked": 66,
+        "broken": 0,
+        "unreachable": 1
       }
     }
   },
   "history": [
-    {
-      "cycle": 293,
-      "at": "2026-07-18T13:43:20.718Z",
-      "findings": {
-        "metrics": {
-          "ok": true,
-          "severity": "info",
-          "summary": "3664 guides, 3154 routes, 285 tools.",
-          "metrics": {
-            "guides": 3664,
-            "routes": 3154,
-            "lazyImports": 3095,
-            "tools": 285
-          }
-        },
-        "slugs": {
-          "ok": true,
-          "severity": "info",
-          "summary": "No duplicate slugs.",
-          "metrics": null
-        },
-        "links": {
-          "ok": true,
-          "severity": "info",
-          "summary": "0 broken targets, 2602 orphaned routes (of 3116 routes).",
-          "metrics": {
-            "brokenTargets": 0,
-            "orphanedRoutes": 2602,
-            "definedRoutes": 3116
-          }
-        },
-        "typescript": {
-          "ok": true,
-          "severity": "info",
-          "summary": "No TypeScript errors.",
-          "metrics": null
-        },
-        "stale-os": {
-          "ok": false,
-          "severity": "warn",
-          "summary": "67 mention(s) of older OS versions in guides.",
-          "metrics": {
-            "count": 67
-          }
-        },
-        "old-guides": {
-          "ok": true,
-          "severity": "info",
-          "summary": "0 of 3965 guides published before 2025-01-18.",
-          "metrics": {
-            "total": 3965,
-            "aged": 0,
-            "cutoff": "2025-01-18"
-          }
-        }
-      }
-    },
     {
       "cycle": 294,
       "at": "2026-07-18T19:19:38.754Z",
@@ -2902,6 +2880,98 @@
             "total": 4013,
             "aged": 0,
             "cutoff": "2025-01-25"
+          }
+        }
+      }
+    },
+    {
+      "cycle": 24,
+      "at": "2026-07-25T19:23:34.143Z",
+      "findings": {
+        "metrics": {
+          "ok": true,
+          "severity": "info",
+          "summary": "3714 guides, 3154 routes, 285 tools.",
+          "metrics": {
+            "guides": 3714,
+            "routes": 3154,
+            "lazyImports": 3095,
+            "tools": 285
+          }
+        },
+        "slugs": {
+          "ok": true,
+          "severity": "info",
+          "summary": "No duplicate slugs.",
+          "metrics": null
+        },
+        "links": {
+          "ok": true,
+          "severity": "info",
+          "summary": "0 broken targets, 6 orphaned routes (of 3117 routes).",
+          "metrics": {
+            "brokenTargets": 0,
+            "orphanedRoutes": 6,
+            "definedRoutes": 3117
+          }
+        },
+        "typescript": {
+          "ok": true,
+          "severity": "info",
+          "summary": "No TypeScript errors.",
+          "metrics": null
+        },
+        "stale-os": {
+          "ok": false,
+          "severity": "warn",
+          "summary": "4 mention(s) of older OS versions in guides.",
+          "metrics": {
+            "count": 4
+          }
+        },
+        "old-guides": {
+          "ok": true,
+          "severity": "info",
+          "summary": "0 of 4015 guides published before 2025-01-25.",
+          "metrics": {
+            "total": 4015,
+            "aged": 0,
+            "cutoff": "2025-01-25"
+          }
+        },
+        "duplicate-titles": {
+          "ok": true,
+          "severity": "info",
+          "summary": "No duplicate guide titles.",
+          "metrics": {
+            "count": 0
+          }
+        },
+        "senior-ux": {
+          "ok": false,
+          "severity": "warn",
+          "summary": "avg reading grade 8.7 (target <= 8), 65% of guides above grade 8, 0 images missing alt.",
+          "metrics": {
+            "filesScanned": 3190,
+            "guidesScored": 3292,
+            "readingGradeAverage": 8.7,
+            "guidesAboveGrade8Pct": 65,
+            "guidesAboveGrade10": 808,
+            "filesUsingTinyText": 531,
+            "tinyTextInstances": 3047,
+            "filesWithSmallTapTargets": 9,
+            "imagesMissingAlt": 0,
+            "filesWithDivOnClick": 7
+          }
+        },
+        "source-links": {
+          "ok": true,
+          "severity": "info",
+          "summary": "66 source URLs checked, 0 confirmed broken (404/410), 1 unreachable (often bot-blocking).",
+          "metrics": {
+            "urlsChecked": 66,
+            "broken": 0,
+            "unreachable": 1
           }
         }
       }
