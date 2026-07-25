@@ -458,6 +458,14 @@ const GuideDetail = () => {
         description={guide.excerpt}
         path={`/guides/${guide.slug}`}
         type="article"
+        // Some topics were written up twice under different slugs. Rather than
+        // delete a version, the weaker one points at the primary so Google
+        // consolidates ranking signals instead of splitting them.
+        canonical={
+          guide.canonicalSlug
+            ? `https://www.teksure.com/guides/${guide.canonicalSlug}`
+            : undefined
+        }
         jsonLd={[howToJsonLd, videoJsonLd, breadcrumbJsonLd, faqJsonLd].filter(Boolean) as Record<string, unknown>[]}
       />
       <Navbar />

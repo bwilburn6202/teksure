@@ -452,6 +452,7 @@ Funds from a mobile deposit usually become available within one business day, th
   },
   {
     slug: 'pay-bills-online',
+    canonicalSlug: 'pay-bills-online-safely',
     title: 'How to Pay Bills Online Safely',
     excerpt: `Pay your electric, phone, and other bills online through official websites or your bank's bill pay feature — and avoid scams in the process.`,
     category: 'financial-tech',

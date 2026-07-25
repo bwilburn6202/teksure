@@ -167,6 +167,7 @@ If your bank reports that a payment failed (you will usually get an email or tex
 
   {
     slug: 'understanding-medicare-explanation-of-benefits-2026',
+    canonicalSlug: 'how-to-read-your-medicare-explanation-of-benefits-letter-2026',
     title: 'How to Read Your Medicare Explanation of Benefits Letter',
     excerpt: 'Your Medicare EOB is not a bill. Learn what each section means, how to spot errors, and how to find EOBs online.',
     category: 'government-civic',

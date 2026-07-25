@@ -11,12 +11,20 @@ import { PassThrough } from "node:stream";
  * resolves lazy-loaded route components inside Suspense boundaries, producing
  * complete page HTML with SEO head tags on the server.
  */
-export function render(url: string): Promise<{ html: string; head: string }> {
+export function render(
+  url: string
+): Promise<{ html: string; head: string; errors: string[] }> {
   const helmetContext: { helmet?: HelmetServerState } = {};
 
   return new Promise((resolve, reject) => {
     const chunks: Buffer[] = [];
     const passThrough = new PassThrough();
+    // Errors thrown inside a Suspense boundary are *recoverable*: React logs
+    // them via onError, swaps in the fallback, and still completes the stream.
+    // Rejecting here would be wrong (the page did render), but swallowing them
+    // is worse — that is how 24 pages silently shipped with no content and no
+    // <title>. Collect them so the prerender step can report them.
+    const errors: string[] = [];
 
     passThrough.on("data", (chunk: Buffer) => chunks.push(chunk));
     passThrough.on("end", () => {
@@ -32,7 +40,7 @@ export function render(url: string): Promise<{ html: string; head: string }> {
         .filter(Boolean)
         .join("\n    ");
 
-      resolve({ html, head });
+      resolve({ html, head, errors });
     });
     passThrough.on("error", reject);
 
@@ -46,7 +54,7 @@ export function render(url: string): Promise<{ html: string; head: string }> {
           pipe(passThrough);
         },
         onError(err) {
-          reject(err);
+          errors.push(err instanceof Error ? err.message : String(err));
         },
       }
     );

@@ -2,6 +2,8 @@
   "installCommand": "npm ci",
   "buildCommand": "npm run build",
   "outputDirectory": "dist",
+  "cleanUrls": true,
+  "trailingSlash": false,
   "git": {
     "deploymentEnabled": {
       "main": true
@@ -11,32 +13,173 @@
     {
       "source": "/assets/(.*)",
       "headers": [
-        { "key": "Cache-Control", "value": "public, max-age=31536000, immutable" }
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=31536000, immutable"
+        }
       ]
     },
     {
       "source": "/sw.js",
       "headers": [
-        { "key": "Cache-Control", "value": "no-cache, no-store, must-revalidate" }
+        {
+          "key": "Cache-Control",
+          "value": "no-cache, no-store, must-revalidate"
+        }
       ]
     },
     {
       "source": "/(favicon.ico|favicon-192.png|favicon-512.png|manifest.json)",
       "headers": [
-        { "key": "Cache-Control", "value": "public, max-age=604800" }
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=604800"
+        }
       ]
     },
     {
       "source": "/(.*)",
       "headers": [
-        { "key": "Cache-Control", "value": "public, max-age=0, must-revalidate" },
-        { "key": "X-Content-Type-Options", "value": "nosniff" },
-        { "key": "X-Frame-Options", "value": "DENY" },
-        { "key": "Referrer-Policy", "value": "strict-origin-when-cross-origin" }
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=0, must-revalidate"
+        },
+        {
+          "key": "X-Content-Type-Options",
+          "value": "nosniff"
+        },
+        {
+          "key": "X-Frame-Options",
+          "value": "DENY"
+        },
+        {
+          "key": "Referrer-Policy",
+          "value": "strict-origin-when-cross-origin"
+        }
       ]
     }
   ],
   "rewrites": [
-    { "source": "/((?!assets/|favicon|manifest|sw\\.js|sitemap|robots).*)", "destination": "/index.html" }
+    {
+      "comment": "Fallback ONLY for routes with no prerendered file. Vercel checks the filesystem before rewrites, so dist/<route>/index.html (written by scripts/prerender.mjs) wins and crawlers get real per-page HTML.",
+      "source": "/((?!assets/|favicon|manifest|sw\\.js|sitemap|robots).*)",
+      "destination": "/index.html"
+    }
+  ],
+  "redirects": [
+    {
+      "source": "/welcome",
+      "destination": "/",
+      "permanent": true,
+      "generated": true
+    },
+    {
+      "source": "/pricing",
+      "destination": "/get-help",
+      "permanent": true,
+      "generated": true
+    },
+    {
+      "source": "/tools/jargon-translator",
+      "destination": "/tools/tech-jargon-translator",
+      "permanent": true,
+      "generated": true
+    },
+    {
+      "source": "/tools/phishing-scanner",
+      "destination": "/tools/url-safety-checker",
+      "permanent": true,
+      "generated": true
+    },
+    {
+      "source": "/book",
+      "destination": "/get-help",
+      "permanent": true,
+      "generated": true
+    },
+    {
+      "source": "/tools/osint-tools",
+      "destination": "/tools/security-osint?tab=osint",
+      "permanent": true,
+      "generated": true
+    },
+    {
+      "source": "/tools/geoint",
+      "destination": "/tools/security-osint?tab=geoint",
+      "permanent": true,
+      "generated": true
+    },
+    {
+      "source": "/tools/osint-collections",
+      "destination": "/tools/security-osint?tab=collections",
+      "permanent": true,
+      "generated": true
+    },
+    {
+      "source": "/cybersec",
+      "destination": "/tools/security-osint?tab=cybersec",
+      "permanent": true,
+      "generated": true
+    },
+    {
+      "source": "/practice/inbox",
+      "destination": "/practice/phishing-inbox",
+      "permanent": true,
+      "generated": true
+    },
+    {
+      "source": "/tools/phone-plan-comparator",
+      "destination": "/tools/phone-plan-comparison",
+      "permanent": true,
+      "generated": true
+    },
+    {
+      "source": "/tools/password-leak-checker",
+      "destination": "/tools/password-health",
+      "permanent": true,
+      "generated": true
+    },
+    {
+      "source": "/tools/plain-english-translator",
+      "destination": "/tools/tech-jargon-translator",
+      "permanent": true,
+      "generated": true
+    },
+    {
+      "source": "/tools/safe-link-checker",
+      "destination": "/tools/url-safety-checker",
+      "permanent": true,
+      "generated": true
+    },
+    {
+      "source": "/tools/is-this-real",
+      "destination": "/tools/is-this-a-scam",
+      "permanent": true,
+      "generated": true
+    },
+    {
+      "source": "/tools/subscription-tracker",
+      "destination": "/tools/subscription-auditor",
+      "permanent": true,
+      "generated": true
+    },
+    {
+      "source": "/practice/phone",
+      "destination": "/practice/suspicious-call",
+      "permanent": true,
+      "generated": true
+    },
+    {
+      "source": "/tools/senior-discount-finder-app",
+      "destination": "/tools/senior-discount-finder",
+      "permanent": true,
+      "generated": true
+    },
+    {
+      "source": "/tools/bluetooth-pairing-help",
+      "destination": "/tools/bluetooth-pairing-helper",
+      "permanent": true,
+      "generated": true
+    }
   ]
 }

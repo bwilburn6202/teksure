@@ -241,12 +241,6 @@
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://www.teksure.com/cybersec</loc>
-    <lastmod>2026-07-25</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
     <loc>https://www.teksure.com/daily-tip</loc>
     <lastmod>2026-07-25</lastmod>
     <changefreq>monthly</changefreq>
@@ -481,12 +475,6 @@
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://www.teksure.com/practice/inbox</loc>
-    <lastmod>2026-07-25</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
     <loc>https://www.teksure.com/practice/password-practice</loc>
     <lastmod>2026-07-25</lastmod>
     <changefreq>monthly</changefreq>
@@ -494,12 +482,6 @@
   </url>
   <url>
     <loc>https://www.teksure.com/practice/phishing-inbox</loc>
-    <lastmod>2026-07-25</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>https://www.teksure.com/practice/phone</loc>
     <lastmod>2026-07-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
@@ -2402,12 +2384,6 @@
   </url>
   <url>
     <loc>https://www.teksure.com/tools/bluetooth-earbud-picker</loc>
-    <lastmod>2026-07-25</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://www.teksure.com/tools/bluetooth-pairing-help</loc>
     <lastmod>2026-07-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
@@ -5383,12 +5359,6 @@
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://www.teksure.com/tools/geoint</loc>
-    <lastmod>2026-07-25</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
     <loc>https://www.teksure.com/tools/getsetup-for-seniors</loc>
     <lastmod>2026-07-25</lastmod>
     <changefreq>monthly</changefreq>
@@ -6811,12 +6781,6 @@
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://www.teksure.com/tools/is-this-real</loc>
-    <lastmod>2026-07-25</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
     <loc>https://www.teksure.com/tools/islamic-prayer-apps</loc>
     <lastmod>2026-07-25</lastmod>
     <changefreq>monthly</changefreq>
@@ -6824,12 +6788,6 @@
   </url>
   <url>
     <loc>https://www.teksure.com/tools/isp-negotiation-guide</loc>
-    <lastmod>2026-07-25</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://www.teksure.com/tools/jargon-translator</loc>
     <lastmod>2026-07-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
@@ -8419,19 +8377,7 @@
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://www.teksure.com/tools/osint-collections</loc>
-    <lastmod>2026-07-25</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
     <loc>https://www.teksure.com/tools/osint-framework</loc>
-    <lastmod>2026-07-25</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://www.teksure.com/tools/osint-tools</loc>
     <lastmod>2026-07-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
@@ -8660,12 +8606,6 @@
   </url>
   <url>
     <loc>https://www.teksure.com/tools/password-health</loc>
-    <lastmod>2026-07-25</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://www.teksure.com/tools/password-leak-checker</loc>
     <lastmod>2026-07-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
@@ -8971,12 +8911,6 @@
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://www.teksure.com/tools/phishing-scanner</loc>
-    <lastmod>2026-07-25</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
     <loc>https://www.teksure.com/tools/phishing-training-for-seniors</loc>
     <lastmod>2026-07-25</lastmod>
     <changefreq>monthly</changefreq>
@@ -9050,12 +8984,6 @@
   </url>
   <url>
     <loc>https://www.teksure.com/tools/phone-insurance-decision</loc>
-    <lastmod>2026-07-25</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://www.teksure.com/tools/phone-plan-comparator</loc>
     <lastmod>2026-07-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
@@ -9284,12 +9212,6 @@
   </url>
   <url>
     <loc>https://www.teksure.com/tools/pixel-phone-for-seniors</loc>
-    <lastmod>2026-07-25</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://www.teksure.com/tools/plain-english-translator</loc>
     <lastmod>2026-07-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
@@ -10340,12 +10262,6 @@
   </url>
   <url>
     <loc>https://www.teksure.com/tools/safe-deposit-box-guide</loc>
-    <lastmod>2026-07-25</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://www.teksure.com/tools/safe-link-checker</loc>
     <lastmod>2026-07-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
@@ -11978,12 +11894,6 @@
   </url>
   <url>
     <loc>https://www.teksure.com/tools/senior-discount-finder</loc>
-    <lastmod>2026-07-25</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://www.teksure.com/tools/senior-discount-finder-app</loc>
     <lastmod>2026-07-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
@@ -17029,12 +16939,6 @@
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://www.teksure.com/tools/subscription-tracker</loc>
-    <lastmod>2026-07-25</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
     <loc>https://www.teksure.com/tools/substack-for-seniors</loc>
     <lastmod>2026-07-25</lastmod>
     <changefreq>monthly</changefreq>
@@ -18560,12 +18464,6 @@
   </url>
   <url>
     <loc>https://www.teksure.com/weekly-tips</loc>
-    <lastmod>2026-07-25</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>https://www.teksure.com/welcome</loc>
     <lastmod>2026-07-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>

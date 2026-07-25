@@ -14,6 +14,7 @@
 import { readFileSync, writeFileSync, readdirSync } from 'fs';
 import { fileURLToPath } from 'url';
 import { dirname, join } from 'path';
+import { readNavigateRedirects } from './generate-redirects.mjs';
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
 const ROOT = join(__dirname, '..');
@@ -61,10 +62,14 @@ for (const f of readdirSync(dataDir)) {
 // ── 2. Concrete routes from App.tsx ───────────────────────────
 const appTsx = readFileSync(join(ROOT, 'src', 'App.tsx'), 'utf8');
 const appRoutes = new Set();
+// A sitemap must not advertise URLs that redirect — those are served as 308s
+// (scripts/generate-redirects.mjs) and listing them wastes crawl budget.
+const redirectSources = new Set(readNavigateRedirects().map((r) => r.source));
 for (const m of appTsx.matchAll(/path="(\/[^"]*)"/g)) {
   const p = m[1];
   if (p.includes(':') || p.includes('*')) continue; // dynamic/wildcard
   if (EXCLUDE.test(p)) continue;
+  if (redirectSources.has(p)) continue;
   appRoutes.add(p);
 }
 

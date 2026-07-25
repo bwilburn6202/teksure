@@ -441,6 +441,7 @@ export const guidesBatch22: Guide[] = [
 
   {
     slug: 'iphone-home-screen-organize',
+    canonicalSlug: 'how-to-organize-your-iphone-home-screen-2026',
     title: 'How to Organize Your iPhone Home Screen',
     excerpt: 'Move apps around, create folders to group similar apps, remove clutter, and set up your iPhone home screen so your most-used apps are always within reach.',
     category: 'tips-tricks',

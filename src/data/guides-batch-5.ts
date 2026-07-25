@@ -4,6 +4,7 @@ import type { Guide } from './guides';
 export const guidesBatch5: Guide[] = [
   {
     slug: 'what-to-do-phone-stolen',
+    canonicalSlug: 'what-to-do-if-phone-lost-or-stolen-2026',
     title: 'What to Do If Your Phone Is Lost or Stolen',
     excerpt: 'Act fast to protect your accounts, lock your device remotely, and prevent anyone from accessing your personal information.',
     category: 'safety-guides',

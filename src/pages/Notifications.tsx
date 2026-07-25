@@ -132,7 +132,9 @@ export default function Notifications() {
     savePrefs(updated);
   }
 
-  const notifSupported = 'Notification' in window;
+  // Guarded because this runs during render, which also happens on the server
+  // during prerendering (scripts/prerender.mjs) where `window` does not exist.
+  const notifSupported = typeof window !== 'undefined' && 'Notification' in window;
   const isGranted = prefs.permissionState === 'granted';
   const isDenied = prefs.permissionState === 'denied';
 

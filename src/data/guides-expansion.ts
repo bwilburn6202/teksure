@@ -1507,6 +1507,7 @@ During a call, you can switch between front and back cameras, mute your micropho
 
   {
     slug: 'use-facebook-marketplace-safely',
+    canonicalSlug: 'how-to-use-facebook-marketplace-safely-2026',
     title: 'How to Use Facebook Marketplace Safely',
     excerpt: 'Buy and sell items locally on Facebook Marketplace — with tips to avoid scams and stay safe meeting strangers.',
     category: 'communication' as any,
@@ -3401,6 +3402,7 @@ Google Maps also works offline — handy for areas with poor cell service. Befor
 
   {
     slug: 'use-uber-lyft-first-time',
+    canonicalSlug: 'use-uber-lyft-first-time-seniors',
     title: 'How to Use Uber or Lyft for the First Time',
     excerpt: 'Request a ride with Uber or Lyft — from downloading the app to getting picked up and arriving safely.',
     category: 'app-guides' as any,

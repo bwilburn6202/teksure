@@ -373,6 +373,7 @@ Before you leave, take a few minutes to make sure your important accounts are se
   },
   {
     slug: `google-translate-phone-guide`,
+    canonicalSlug: 'how-to-use-google-translate-on-your-phone-2026',
     title: `How to Use Google Translate on Your Phone`,
     excerpt: `Google Translate can translate text, signs, menus, and spoken words in real time using your phone's camera and microphone — here is how.`,
     category: `app-guides`,

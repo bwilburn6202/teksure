@@ -103,6 +103,7 @@ export const guidesBatch38: Guide[] = [
 
   {
     slug: 'check-email-data-breach',
+    canonicalSlug: 'check-if-your-email-was-in-a-data-breach',
     title: 'How to Check If Your Email Was Exposed in a Data Breach',
     excerpt: `A free website called Have I Been Pwned lets you check if your email address appeared in any known data breaches — here's how to use it.`,
     category: 'safety-guides',

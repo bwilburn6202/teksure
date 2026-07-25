@@ -749,6 +749,7 @@ Common pitfall: if your headphones were already paired to another phone or table
 
   {
     slug: `better-phone-photos-guide`,
+    canonicalSlug: 'how-to-take-better-phone-photos-2026',
     title: 'How to Take Better Photos With Your Phone',
     excerpt: 'Simple, senior-friendly photo tips — lighting, framing, and a few built-in features that make every picture look nicer.',
     category: 'tips-tricks',
@@ -1014,6 +1015,7 @@ The controls look the same on every device. A microphone icon at the bottom to m
 
   {
     slug: `siri-iphone-guide`,
+    canonicalSlug: 'how-to-use-siri-on-iphone-2026',
     title: 'How to Use Siri on Your iPhone',
     excerpt: 'Ask Siri to call, text, set reminders, and answer questions hands-free — here is how to get started and what to say.',
     category: 'tips-tricks',

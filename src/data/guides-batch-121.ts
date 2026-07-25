@@ -6,6 +6,7 @@ import type { Guide } from './guides';
 export const guidesBatch121: Guide[] = [
   {
     slug: 'how-to-set-up-online-banking',
+    canonicalSlug: 'online-banking-setup-guide',
     title: 'How to Set Up Online Banking for the First Time',
     excerpt: 'A step-by-step walkthrough for creating your bank\'s online account so you can check your balance and pay bills from home.',
     category: 'online-banking',

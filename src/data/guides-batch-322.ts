@@ -45,6 +45,7 @@ export const guidesBatch322: Guide[] = [
   },
   {
     slug: "free-up-iphone-storage-space-guide",
+    canonicalSlug: 'how-to-free-up-storage-space-on-your-iphone-2026',
     title: "How to Free Up Storage Space on Your iPhone",
     excerpt: "Step-by-step ways to see what's taking up space on your iPhone and safely clear it out when you get the 'Storage Almost Full' warning.",
     category: "phone-guides",

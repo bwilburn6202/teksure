@@ -95,6 +95,13 @@ export interface Guide {
   tip?: string;
   /** Guide-level safety warning shown alongside the steps */
   warning?: string;
+  /**
+   * When two guides cover the same topic under different slugs, the weaker one
+   * sets this to the primary guide's slug. GuideDetail then emits a canonical
+   * link so search engines consolidate signals on one URL instead of splitting
+   * them between near-duplicates. Set by scripts/fix-duplicate-titles.mjs.
+   */
+  canonicalSlug?: string;
   /** Name of the official source this guide is based on (e.g. "Apple Support") */
   sourceName?: string;
   /** URL of the official source */
@@ -9014,7 +9021,8 @@ const coreGuides: Guide[] = [
     { title: 'Review permissions on Android', content: `Go to Settings > Privacy > Permission Manager. Tap a permission type (Camera, Location, Microphone) to see which apps have access. Change any app to "Don't allow" or "Ask every time" if it does not need that permission.` },
     { title: 'Permissions to watch carefully', content: 'Location: Only maps, weather, and ride-sharing apps truly need this. Set others to "Never" or "While Using." Camera & Microphone: Only apps you actively use for photos, video calls, or voice notes. Contacts: Very few apps need access to your contacts. If a flashlight app asks for contacts, that is a red flag.', warning: 'If an app stops working after you remove a permission, you can always grant it again. Start restrictive and loosen only if needed.' },
   ] },
-  { slug: 'clear-phone-storage', title: 'How to Free Up Space When Your Phone Says "Storage Full"', excerpt: 'Quick steps to reclaim storage space on any phone without losing important files.', category: 'phone-guides', tags: ['storage', 'iphone', 'android', 'beginner'], readTime: '4 min', videoUrl: 'https://www.youtube.com/embed/4vQ4o9t5ND8', thumbnailEmoji: '💾', publishedAt: '2026-04-06', difficulty: 'Beginner', steps: [
+  { slug: 'clear-phone-storage',
+    canonicalSlug: 'phone-storage-full-how-to-free-up-space-2026', title: 'How to Free Up Space When Your Phone Says "Storage Full"', excerpt: 'Quick steps to reclaim storage space on any phone without losing important files.', category: 'phone-guides', tags: ['storage', 'iphone', 'android', 'beginner'], readTime: '4 min', videoUrl: 'https://www.youtube.com/embed/4vQ4o9t5ND8', thumbnailEmoji: '💾', publishedAt: '2026-04-06', difficulty: 'Beginner', steps: [
     { title: 'Check what is using your storage', content: 'iPhone: Settings > General > iPhone Storage. Android: Settings > Storage. Both show a breakdown of what is taking up space — apps, photos, messages, and system files. Look for the biggest categories first.' },
     { title: 'Delete old photos and videos', content: 'Photos and especially videos are usually the biggest space hogs. Open your Photos app, go to Albums > Videos, and delete any you no longer need. Then empty the "Recently Deleted" folder (iPhone) or Trash (Android) — deleted photos still take up space for 30 days.', tip: 'Before deleting photos, back them up to Google Photos or iCloud first. Then you can delete them from your phone knowing they are safely stored in the cloud.' },
     { title: 'Remove apps you do not use', content: 'iPhone: Settings > General > iPhone Storage > tap an app > Delete App. Android: Settings > Apps > tap an app > Uninstall. Focus on large apps and games you have not opened in months.' },
@@ -9210,7 +9218,8 @@ const coreGuides: Guide[] = [
     { title: 'Android', content: 'Swipe down twice > tap Do Not Disturb.' },
     { title: 'Allow important calls', content: 'Allow calls from Favorites to come through for emergencies.' },
   ] },
-    { slug: 'phone-hotspot', title: 'How to Use Your Phone as a Wi-Fi Hotspot', excerpt: 'Share your phone internet with a laptop or tablet.', category: 'phone-guides', tags: ['phone', 'hotspot', 'wifi'], readTime: '4 min', thumbnailEmoji: '📡', publishedAt: '2026-04-02', difficulty: 'Intermediate', steps: [
+    { slug: 'phone-hotspot',
+    canonicalSlug: 'how-to-use-your-phone-as-a-wifi-hotspot-2026', title: 'How to Use Your Phone as a Wi-Fi Hotspot', excerpt: 'Share your phone internet with a laptop or tablet.', category: 'phone-guides', tags: ['phone', 'hotspot', 'wifi'], readTime: '4 min', thumbnailEmoji: '📡', publishedAt: '2026-04-02', difficulty: 'Intermediate', steps: [
     { title: 'iPhone', content: 'Settings > Personal Hotspot > Allow Others to Join.' },
     { title: 'Android', content: 'Settings > Network > Hotspot & Tethering > Wi-Fi Hotspot.' },
     { title: 'Connect device', content: 'On your laptop, find your phone in Wi-Fi settings and connect using the password shown.' },
@@ -12099,6 +12108,7 @@ const coreGuides: Guide[] = [
   },
   {
     slug: 'use-goodrx-save-prescriptions',
+    canonicalSlug: 'how-to-use-goodrx-save-on-prescriptions',
     title: 'How to Use GoodRx to Save on Prescriptions',
     excerpt: 'Find lower prices on your prescription medications using the free GoodRx app.',
     category: 'app-guides',

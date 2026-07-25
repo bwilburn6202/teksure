@@ -121,6 +121,7 @@ export const guidesBatch53: Guide[] = [
   },
   {
     slug: 'back-up-phone-contacts',
+    canonicalSlug: 'how-to-back-up-phone-contacts-2026',
     title: 'How to Back Up Your Phone Contacts So You Never Lose Them',
     excerpt: "Most phones back up contacts automatically — but only if the right setting is on. Here's how to check and protect years of phone numbers in 2 minutes.",
     category: 'essential-skills',
