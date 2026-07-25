@@ -61,8 +61,8 @@
   ],
   "rewrites": [
     {
-      "comment": "Fallback ONLY for routes with no prerendered file. Vercel checks the filesystem before rewrites, so dist/<route>/index.html (written by scripts/prerender.mjs) wins and crawlers get real per-page HTML.",
-      "source": "/((?!assets/|favicon|manifest|sw\\.js|sitemap|robots|llms\\.txt|og-image|offline\\.html|_headers).*)",
+      "comment": "SPA fallback for routes with no prerendered file. Vercel checks the filesystem before rewrites, so dist/<route>/index.html (from scripts/prerender.mjs) wins and crawlers get real per-page HTML. The pattern matches only paths with NO dot in them: every app route is dotless, every static file (sitemap.xml, robots.txt, llms.txt, build-info.json, /assets/*.js) has an extension. A previous version listed exclusions by name and silently served HTML for anything new — llms.txt and build-info.json both got swallowed that way.",
+      "source": "/((?!.*\\.).*)",
       "destination": "/index.html"
     }
   ],
