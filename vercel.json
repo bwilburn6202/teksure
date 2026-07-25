@@ -61,7 +61,6 @@
   ],
   "rewrites": [
     {
-      "comment": "SPA fallback for routes with no prerendered file. Vercel checks the filesystem before rewrites, so dist/<route>/index.html (from scripts/prerender.mjs) wins and crawlers get real per-page HTML. The pattern matches only paths with NO dot in them: every app route is dotless, every static file (sitemap.xml, robots.txt, llms.txt, build-info.json, /assets/*.js) has an extension. A previous version listed exclusions by name and silently served HTML for anything new — llms.txt and build-info.json both got swallowed that way.",
       "source": "/((?!.*\\.).*)",
       "destination": "/index.html"
     }
@@ -70,116 +69,97 @@
     {
       "source": "/welcome",
       "destination": "/",
-      "permanent": true,
-      "generated": true
+      "permanent": true
     },
     {
       "source": "/pricing",
       "destination": "/get-help",
-      "permanent": true,
-      "generated": true
+      "permanent": true
     },
     {
       "source": "/tools/jargon-translator",
       "destination": "/tools/tech-jargon-translator",
-      "permanent": true,
-      "generated": true
+      "permanent": true
     },
     {
       "source": "/tools/phishing-scanner",
       "destination": "/tools/url-safety-checker",
-      "permanent": true,
-      "generated": true
+      "permanent": true
     },
     {
       "source": "/book",
       "destination": "/get-help",
-      "permanent": true,
-      "generated": true
+      "permanent": true
     },
     {
       "source": "/tools/osint-tools",
       "destination": "/tools/security-osint?tab=osint",
-      "permanent": true,
-      "generated": true
+      "permanent": true
     },
     {
       "source": "/tools/geoint",
       "destination": "/tools/security-osint?tab=geoint",
-      "permanent": true,
-      "generated": true
+      "permanent": true
     },
     {
       "source": "/tools/osint-collections",
       "destination": "/tools/security-osint?tab=collections",
-      "permanent": true,
-      "generated": true
+      "permanent": true
     },
     {
       "source": "/cybersec",
       "destination": "/tools/security-osint?tab=cybersec",
-      "permanent": true,
-      "generated": true
+      "permanent": true
     },
     {
       "source": "/practice/inbox",
       "destination": "/practice/phishing-inbox",
-      "permanent": true,
-      "generated": true
+      "permanent": true
     },
     {
       "source": "/tools/phone-plan-comparator",
       "destination": "/tools/phone-plan-comparison",
-      "permanent": true,
-      "generated": true
+      "permanent": true
     },
     {
       "source": "/tools/password-leak-checker",
       "destination": "/tools/password-health",
-      "permanent": true,
-      "generated": true
+      "permanent": true
     },
     {
       "source": "/tools/plain-english-translator",
       "destination": "/tools/tech-jargon-translator",
-      "permanent": true,
-      "generated": true
+      "permanent": true
     },
     {
       "source": "/tools/safe-link-checker",
       "destination": "/tools/url-safety-checker",
-      "permanent": true,
-      "generated": true
+      "permanent": true
     },
     {
       "source": "/tools/is-this-real",
       "destination": "/tools/is-this-a-scam",
-      "permanent": true,
-      "generated": true
+      "permanent": true
     },
     {
       "source": "/tools/subscription-tracker",
       "destination": "/tools/subscription-auditor",
-      "permanent": true,
-      "generated": true
+      "permanent": true
     },
     {
       "source": "/practice/phone",
       "destination": "/practice/suspicious-call",
-      "permanent": true,
-      "generated": true
+      "permanent": true
     },
     {
       "source": "/tools/senior-discount-finder-app",
       "destination": "/tools/senior-discount-finder",
-      "permanent": true,
-      "generated": true
+      "permanent": true
     },
     {
       "source": "/tools/bluetooth-pairing-help",
       "destination": "/tools/bluetooth-pairing-helper",
-      "permanent": true,
-      "generated": true
+      "permanent": true
     }
   ]
 }

@@ -38,10 +38,15 @@ if (process.argv[1] && process.argv[1].endsWith('generate-redirects.mjs')) {
   const config = JSON.parse(readFileSync(vercelPath, 'utf8'));
 
   // Preserve any hand-written redirects that aren't derived from App.tsx.
+  //
+  // NOTE: entries must contain ONLY keys Vercel's schema allows (source,
+  // destination, permanent, statusCode, has, missing). Vercel validates
+  // vercel.json strictly and rejects the whole deployment on an unknown
+  // property — a "generated": true marker here, and a "comment" key on the
+  // rewrite, silently failed several deploys in a row while the previous build
+  // stayed live. Derived entries are identified by matching App.tsx instead.
   const derivedSources = new Set(redirects.map((r) => r.source));
-  const manual = (config.redirects ?? []).filter(
-    (r) => !derivedSources.has(r.source) && !r.generated
-  );
+  const manual = (config.redirects ?? []).filter((r) => !derivedSources.has(r.source));
 
   config.redirects = [
     ...manual,
@@ -49,7 +54,6 @@ if (process.argv[1] && process.argv[1].endsWith('generate-redirects.mjs')) {
       source: r.source,
       destination: r.destination,
       permanent: true,
-      generated: true,
     })),
   ];
 
