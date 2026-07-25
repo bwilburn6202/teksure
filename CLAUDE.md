@@ -95,6 +95,13 @@ invisible to Bing, social crawlers, and AI answer engines.
 - **Run `npm test` before committing.** The suite enforces brand voice and guide schema.
 - After finishing work: **commit and push.** A stale `.git/index.lock` once blocked commits
   for two weeks and the live site fell 12 weeks behind.
+- **If `.git/index.lock` (or `HEAD.lock`, `packed-refs.lock`, etc.) won't clear:** this
+  filesystem mount does not support `unlink` on these files (`rm -f` and `os.remove` both
+  fail with "Operation not permitted" even though the owning user matches) but `rename` /
+  `mv` works fine. Run `mv .git/index.lock .git/index.lock.stale-$(date +%s)` instead of
+  `rm -f`, then retry the git command. This explains the 70+ accumulated
+  `index.lock.bak*`/`.stale*` files already in `.git/` from past sessions hitting the same
+  issue — safe to ignore, do not spend time trying to delete them.
 
 ## Edge Functions (live)
 `send-help-confirmation`, `send-booking-confirmation`, `create-checkout-session`, `stripe-webhook`
