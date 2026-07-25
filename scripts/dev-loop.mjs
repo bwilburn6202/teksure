@@ -230,13 +230,16 @@ function checkStaleOsVersions() {
       re.lastIndex = 0;
       let m;
       while ((m = re.exec(content)) !== null) {
+        // Skip min-version baselines like "iOS 16 or later", "Android 13+", "iOS 16 and newer"
+        const after = content.slice(m.index + m[0].length, m.index + m[0].length + 25);
+        if (/^[\s]*(\+|or later|or newer|or higher|and (later|newer|higher|above|up))/i.test(after)) continue;
         const line = content.substring(0, m.index).split('\n').length;
         findings.push({ file: path.relative(ROOT, file), line, label, match: m[0] });
-        if (findings.length >= 50) break;
+        if (findings.length >= 100) break;
       }
-      if (findings.length >= 50) break;
+      if (findings.length >= 100) break;
     }
-    if (findings.length >= 50) break;
+    if (findings.length >= 100) break;
   }
 
   return {
