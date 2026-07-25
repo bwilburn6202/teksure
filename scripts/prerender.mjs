@@ -245,3 +245,17 @@ if (failed > routes.length * 0.25) {
   console.error('[prerender] more than 25% of routes failed — failing the build.');
   process.exit(1);
 }
+
+/**
+ * Exit explicitly.
+ *
+ * Importing the SSR bundle pulls in the whole app, and something in that graph
+ * keeps a handle on the event loop (a module-level timer or client instance), so
+ * Node will not exit on its own once the work is done. Locally that looks like a
+ * build that never finishes; on Vercel it looked like a deploy that "succeeded"
+ * three times while the site kept serving the previous build, because the build
+ * container sat waiting on this process until it timed out.
+ *
+ * All output above is written synchronously, so exiting here loses nothing.
+ */
+process.exit(0);
