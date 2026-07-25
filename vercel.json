@@ -62,7 +62,7 @@
   "rewrites": [
     {
       "comment": "Fallback ONLY for routes with no prerendered file. Vercel checks the filesystem before rewrites, so dist/<route>/index.html (written by scripts/prerender.mjs) wins and crawlers get real per-page HTML.",
-      "source": "/((?!assets/|favicon|manifest|sw\\.js|sitemap|robots).*)",
+      "source": "/((?!assets/|favicon|manifest|sw\\.js|sitemap|robots|llms\\.txt|og-image|offline\\.html|_headers).*)",
       "destination": "/index.html"
     }
   ],
