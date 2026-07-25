@@ -752,7 +752,7 @@ Screen brightness is consistently the most impactful single setting. Reducing br
 
 In recovery mode, your iPhone shows a specific screen: either a plug-in-to-iTunes/Finder graphic (a computer with a cable icon) or the Apple logo with a progress bar. It is not broken — it is waiting for your computer to help it.
 
-Recovery mode works through Apple's iTunes (on Windows) or Finder (on Mac with macOS Catalina and later). Your computer detects the phone in recovery mode and offers two options: Update (keeps your data and reinstalls iOS) and Restore (erases everything and installs fresh iOS).
+Recovery mode works through Apple's iTunes (on Windows) or Finder (on Mac with macOS Sonoma and later). Your computer detects the phone in recovery mode and offers two options: Update (keeps your data and reinstalls iOS) and Restore (erases everything and installs fresh iOS).
 
 Always try Update first — it downloads and reinstalls the latest iOS version while preserving your data. Restore is the nuclear option that erases everything, used only when Update fails or when you need to set up the phone fresh.
 
@@ -764,7 +764,7 @@ Entering recovery mode requires a computer and a cable. If you do not have a com
       },
       {
         title: 'Prepare Your Computer',
-        content: `Connect your phone to your computer using a USB cable. On Mac (macOS Catalina or later): open Finder. On Mac (older): open iTunes. On Windows: open iTunes (download from Apple's website if not installed). Make sure the software is updated.`,
+        content: `Connect your phone to your computer using a USB cable. On Mac (macOS Sonoma or later): open Finder. On Mac (older): open iTunes. On Windows: open iTunes (download from Apple's website if not installed). Make sure the software is updated.`,
       },
       {
         title: 'Enter Recovery Mode',

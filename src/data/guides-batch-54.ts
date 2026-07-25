@@ -143,20 +143,20 @@ Because Signal stores almost nothing on its servers, the app keeps your conversa
   {
     slug: `iphone-remove-background-guide`,
     title: `How to Remove a Photo Background on iPhone`,
-    excerpt: `iPhones running iOS 16 or newer can remove a photo background with one tap. Here's how to use this built-in Photos feature.`,
+    excerpt: `iPhones running iOS 17 or newer can remove a photo background with one tap. Here's how to use this built-in Photos feature.`,
     category: `phone-guides`,
     tags: [`iphone`, `photos`, `background removal`, `ios 16`, `cut out`, `image editing`],
     readTime: `4 min`,
     thumbnailEmoji: ``,
     publishedAt: `2026-04-19`,
     difficulty: `Beginner`,
-    body: `If your iPhone is running iOS 16 or newer, it has a built-in tool that can separate the main subject of a photo from its background in seconds. You do not need any extra apps or subscriptions — the feature is built right into the Photos app and the photo viewer.
+    body: `If your iPhone is running iOS 17 or newer, it has a built-in tool that can separate the main subject of a photo from its background in seconds. You do not need any extra apps or subscriptions — the feature is built right into the Photos app and the photo viewer.
 
 This is called background removal or "lift subject." Once you have the subject cut out, you can copy it and paste it onto a different background in another photo, use it in a text message, or save it as a sticker. Many people use this to create personalized images — putting a photo of a pet or family member onto a fun background, for example.
 
 The feature works best when there is a clear difference between the subject and the background. Photos with a busy background may not cut out perfectly, but the results are often surprisingly good straight away.
 
-You need an iPhone running iOS 16 or later. You can check your iOS version by going to Settings > General > About. If your phone is older than an iPhone XR, it may not support this feature even with the latest software.
+You need an iPhone running iOS 17 or later. You can check your iOS version by going to Settings > General > About. If your phone is older than an iPhone XR, it may not support this feature even with the latest software.
 
 The entire process takes only a couple of taps, and the original photo is never changed — your original is always saved. The cut-out subject is copied to your clipboard or saved as a separate file, leaving the original photo untouched.`,
     steps: [

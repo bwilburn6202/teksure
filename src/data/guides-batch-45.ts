@@ -145,7 +145,7 @@ Managing sharing is straightforward — you can see everyone who has access to a
     difficulty: `Beginner`,
     body: `Your iPhone comes with a free built-in app called Measure that uses augmented reality (AR) to measure real-world objects using the camera — no tape measure needed. You can measure the length, width, or height of objects in your home, check if a piece of furniture will fit in a space, or get quick dimensions when shopping.
 
-The app is available on all iPhones with Face ID (iPhone X and newer) and on iPhone 6s/7/8 models running iOS 12 or later. It uses the camera and motion sensors to calculate distances.
+The app is available on all iPhones with Face ID (iPhone X and newer) and on iPhone 6s/7/8 models running iOS 17 or later. It uses the camera and motion sensors to calculate distances.
 
 Measure is surprisingly accurate — within about one to two inches for most objects — which is good enough for most everyday tasks like checking if a couch fits through a door, seeing if a rug is the right size for a room, or measuring a countertop before buying an appliance.
 

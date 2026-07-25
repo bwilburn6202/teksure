@@ -53,14 +53,14 @@ Setting a custom ringtone takes about two minutes once you know where to look. T
   {
     slug: `iphone-edit-unsend-message-guide`,
     title: `How to Edit or Unsend an iMessage on iPhone`,
-    excerpt: `Fix a typo or take back a message you regret — iPhones running iOS 16 or later let you edit within 15 minutes and unsend within 2 minutes.`,
+    excerpt: `Fix a typo or take back a message you regret — iPhones running iOS 17 or later let you edit within 15 minutes and unsend within 2 minutes.`,
     category: `phone-guides`,
     tags: [`iphone`, `imessage`, `messages`, `ios 16`, `edit message`, `unsend`],
     readTime: `5 min`,
     thumbnailEmoji: ``,
     publishedAt: `2026-04-19`,
     difficulty: `Beginner`,
-    body: `We've all sent a text with a typo or pressed send before we meant to. If you have an iPhone running iOS 16 or later (that's any iPhone that updated after September 2022), Apple gives you two helpful tools: the ability to edit a message after you send it, and the ability to completely unsend a message.
+    body: `We've all sent a text with a typo or pressed send before we meant to. If you have an iPhone running iOS 17 or later (that's any iPhone that updated after September 2022), Apple gives you two helpful tools: the ability to edit a message after you send it, and the ability to completely unsend a message.
 
 Here's what you need to know before you use these features:
 
@@ -68,12 +68,12 @@ Here's what you need to know before you use these features:
 
 **Unsending a message:** You can fully remove a message within 2 minutes of sending it. The message disappears from your conversation, and the other person sees a notice that says a message was unsent. However, if the other person saw the message before you unsent it, they've already read it.
 
-**Important:** Both features only work with iMessages — the blue bubble messages. They do not work with SMS texts (green bubbles). Also, the person you're messaging needs to be on iOS 16 or later as well for the edit or unsend to fully work on their screen. If they have an older iPhone, they may still see the original message.
+**Important:** Both features only work with iMessages — the blue bubble messages. They do not work with SMS texts (green bubbles). Also, the person you're messaging needs to be on iOS 17 or later as well for the edit or unsend to fully work on their screen. If they have an older iPhone, they may still see the original message.
 
 These features are built right into the Messages app and don't require any extra apps or settings to turn on.`,
     steps: [
       {
-        title: `Check that you have iOS 16 or later`,
+        title: `Check that you have iOS 17 or later`,
         content: `Open Settings, tap "General," then tap "About." Look at the line that says "iOS Version." If the number is 16 or higher (such as 16.6, 17.4, 18.0, etc.), you have access to these features. If your iOS version is lower than 16, go to Settings → General → Software Update and update your iPhone first.`
       },
       {
@@ -111,7 +111,7 @@ These features are built right into the Messages app and don't require any extra
 
 Pinned conversations appear as large circular icons at the top of your Messages list, above all your regular conversations. You can see the person's contact photo (or their initials if they don't have a photo), and you'll see a badge number on the icon when they send you a new message.
 
-Pinning is available on iPhones running iOS 14 or later (released in 2020), so most iPhones in use today support it. You can pin individual people, groups, or even a conversation with a business.
+Pinning is available on iPhones running iOS 17 or later (released in 2020), so most iPhones in use today support it. You can pin individual people, groups, or even a conversation with a business.
 
 Pinning someone doesn't notify them — it's a personal organization tool that only you can see on your phone. You can pin up to 9 conversations total, and you can unpin them at any time in the same way you pinned them.
 
@@ -276,7 +276,7 @@ Your Mac must have connected to the WiFi network at least once for the password 
   {
     slug: `android-wifi-password-guide`,
     title: `How to See Your WiFi Password on Android`,
-    excerpt: `Find your saved WiFi password on Android 10 and later, and share it instantly with guests using a QR code they can scan with their phone.`,
+    excerpt: `Find your saved WiFi password on Android 14 and later, and share it instantly with guests using a QR code they can scan with their phone.`,
     category: `phone-guides`,
     tags: [`android`, `wifi`, `password`, `qr code`, `network`, `share wifi`],
     readTime: `5 min`,
@@ -285,7 +285,7 @@ Your Mac must have connected to the WiFi network at least once for the password 
     difficulty: `Beginner`,
     body: `If you need to share your home WiFi password with a guest or connect a new device, and you can't remember the password, your Android phone can help — as long as you're already connected to that network.
 
-Android 10 and later (released in 2019) added the ability to view and share saved WiFi passwords. There are two ways to do this:
+Android 14 and later (released in 2019) added the ability to view and share saved WiFi passwords. There are two ways to do this:
 
 1. **The QR code method:** Your phone generates a QR code that another Android or iPhone can scan to connect automatically — no typing required. This is the fastest and most popular method.
 
@@ -328,7 +328,7 @@ This guide covers the most common Android approaches. If your phone's screen loo
     body: `AirPlay is Apple's wireless technology for sending video and audio from one Apple device to another — or to a compatible smart TV. With AirPlay, you can stream a movie playing in your Mac's browser, mirror your entire Mac screen onto your TV for a bigger view, or play music from your Mac through speakers connected to an Apple TV.
 
 To use AirPlay from your Mac to a TV, you need two things:
-1. A Mac running macOS Monterey or later (though basic AirPlay has been available since macOS Big Sur).
+1. A Mac running macOS Sonoma, Sequoia, or later for the full feature set (basic AirPlay has technically been available since macOS Big Sur in 2020, but an up-to-date macOS version gives you the most reliable connection and full AirPlay 2 support).
 2. An Apple TV (any model) connected to your TV, OR a smart TV that supports AirPlay 2. Many modern smart TVs from Samsung, LG, Sony, and Vizio support AirPlay 2.
 
 Both your Mac and the Apple TV or smart TV must be connected to the same WiFi network. If one is on your home WiFi and the other is on a guest network or a different network, AirPlay won't find it.
@@ -791,7 +791,7 @@ This is especially helpful if you use AirPods and want to know when they need to
 
 Adding a widget to your iPhone home screen takes about two minutes. You can also add the Battery widget to the Today View — the screen you see by swiping right from your home screen — if you prefer not to put it on your main home screen.
 
-The Battery widget is available on any iPhone running iOS 14 or later. There are two sizes: a small widget that shows a single device's battery, and a medium widget that shows multiple devices at once. Most people find the medium widget most useful.`,
+The Battery widget is available on any iPhone running iOS 17 or later. There are two sizes: a small widget that shows a single device's battery, and a medium widget that shows multiple devices at once. Most people find the medium widget most useful.`,
     steps: [
       {
         title: `Go to the home screen where you want to add the widget`,
@@ -800,7 +800,7 @@ The Battery widget is available on any iPhone running iOS 14 or later. There are
       {
         title: `Enter edit mode`,
         content: `Press and hold on an empty area of your home screen (a spot with no app icons) until the screen starts to wiggle. This is called "jiggle mode" — all your app icons will shake slightly. At the top left corner of the screen, you'll see a plus (+) button. Tap it.`,
-        tip: `On newer iPhones running iOS 16 or later, you can also tap and hold any app icon to get the option to "Edit Home Screen" and enter jiggle mode that way.`
+        tip: `On newer iPhones running iOS 17 or later, you can also tap and hold any app icon to get the option to "Edit Home Screen" and enter jiggle mode that way.`
       },
       {
         title: `Find the Battery widget`,

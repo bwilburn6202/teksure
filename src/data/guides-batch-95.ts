@@ -150,7 +150,7 @@ If clearing space on your phone does not work, there is an alternative method: u
       },
       {
         title: 'Update your iPhone through a computer if storage is still low',
-        content: 'This method bypasses the on-device storage requirement entirely. On a Mac running macOS Catalina or later: connect your iPhone with a USB cable, open Finder, click your iPhone in the left sidebar, and click "Check for Update." On a Windows PC: connect your iPhone, open iTunes, click the phone icon at the top, and click "Check for Update." The computer downloads the update itself and installs it directly to your iPhone.',
+        content: 'This method bypasses the on-device storage requirement entirely. On a Mac running macOS Sonoma or later: connect your iPhone with a USB cable, open Finder, click your iPhone in the left sidebar, and click "Check for Update." On a Windows PC: connect your iPhone, open iTunes, click the phone icon at the top, and click "Check for Update." The computer downloads the update itself and installs it directly to your iPhone.',
         tip: 'Quick Tip: Apple\'s official guide to updating via computer is at support.apple.com — search "update iPhone using Finder" for Mac or "update iPhone using iTunes" for Windows.',
       },
     ],

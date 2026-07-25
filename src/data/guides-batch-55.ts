@@ -53,7 +53,7 @@ After installation, the app runs quietly in the background and updates automatic
   {
     slug: `ios-widget-guide`,
     title: `How to Add Widgets to Your iPhone or iPad Home Screen`,
-    excerpt: `Widgets show live info — weather, calendar, battery — right on your home screen. Here is how to add and arrange them on iOS 16 and later.`,
+    excerpt: `Widgets show live info — weather, calendar, battery — right on your home screen. Here is how to add and arrange them on iOS 17 and later.`,
     category: `phone-guides`,
     tags: [`iphone`, `ipad`, `widgets`, `home screen`, `ios 16`, `customize`],
     readTime: `5 min`,
@@ -62,7 +62,7 @@ After installation, the app runs quietly in the background and updates automatic
     difficulty: `Beginner`,
     body: `Widgets are small panels on your iPhone or iPad home screen that show useful information at a glance — without needing to open any app. For example, a Weather widget can show today's forecast, a Calendar widget can show your next appointment, and a Battery widget can show how much charge your iPhone and AirPods have left.
 
-Widgets were introduced in a big way with iOS 14 and have improved with each update. If your iPhone runs iOS 16 or later, you have access to a wide variety of widgets from Apple and from many third-party apps you may already have installed.
+Widgets were introduced in a big way with iOS 14 and have improved with each update. If your iPhone runs iOS 17 or later, you have access to a wide variety of widgets from Apple and from many third-party apps you may already have installed.
 
 Widgets come in three sizes: small (takes up four app icons worth of space), medium (eight app icons), and large (sixteen app icons). You can mix and match sizes on any home screen page.
 
@@ -421,13 +421,13 @@ Shazam is owned by Apple and is the most widely used music identification app in
 
 SoundHound has one unique advantage: you can hum or sing a melody and it will try to identify the song even if no recording is playing. This is helpful when you have a tune stuck in your head but cannot remember any words.
 
-If you have an iPhone running iOS 14 or later, you also have music recognition built directly into the Control Center — powered by Shazam — so you may not even need to download a separate app.
+If you have an iPhone running iOS 17 or later, you also have music recognition built directly into the Control Center — powered by Shazam — so you may not even need to download a separate app.
 
 These apps respect your privacy: they only listen when you actively tap the identify button, not continuously in the background.`,
     steps: [
       {
         title: `Use the built-in music recognition on iPhone`,
-        content: `On an iPhone running iOS 14 or later, you can add a music recognition button to Control Center. Go to Settings > Control Center, scroll down, and tap the "+" next to "Music Recognition." Now, whenever music is playing nearby, swipe down from the top-right corner of your screen to open Control Center and tap the music note icon (it looks like a Shazam logo). Your phone will listen and display the song title within a few seconds.`,
+        content: `On an iPhone running iOS 17 or later, you can add a music recognition button to Control Center. Go to Settings > Control Center, scroll down, and tap the "+" next to "Music Recognition." Now, whenever music is playing nearby, swipe down from the top-right corner of your screen to open Control Center and tap the music note icon (it looks like a Shazam logo). Your phone will listen and display the song title within a few seconds.`,
       },
       {
         title: `Download Shazam (iPhone or Android)`,

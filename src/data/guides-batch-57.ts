@@ -13,7 +13,7 @@ export const guidesBatch57: Guide[] = [
     difficulty: `Beginner`,
     body: `Your iPhone can record everything happening on your screen as a video — no extra app needed. This is useful when you want to show someone how to do something on a phone, save a video call moment, capture a game clip, or save a social media video that does not have a download button.
 
-The feature is called Screen Recording. It is built into every iPhone running iOS 11 or later, and it saves the video directly to your Photos app when you stop recording.
+The feature is called Screen Recording. It is built into every iPhone running iOS 17 or later, and it saves the video directly to your Photos app when you stop recording.
 
 Before you can use it, you need to add the Screen Recording button to your Control Center — the panel of quick-settings buttons you swipe down from the top-right corner of your screen. You only have to do this setup one time.
 
@@ -64,14 +64,14 @@ The easiest method for iPhone users: if you and your guest both have iPhones and
 
 For Android phones, the built-in option is to generate a QR code (a square barcode) from your Wi-Fi settings. Your guest scans the QR code with their phone's camera and connects instantly — no password typing required.
 
-You can also find your saved Wi-Fi password on both iPhones and Android phones to share it manually if needed. On iPhone (iOS 16 and later), you can view the password directly in Settings. On Android 10 and later, the QR code method is the primary way to share.
+You can also find your saved Wi-Fi password on both iPhones and Android phones to share it manually if needed. On iPhone (iOS 17 and later), you can view the password directly in Settings. On Android 14 and later, the QR code method is the primary way to share.
 
 These methods work for your home network and any Wi-Fi network your phone has already joined and saved. You cannot share a password for a network you have never connected to.`,
     steps: [
       {
         title: `Share to another iPhone automatically (easiest method)`,
         content: `Make sure your iPhone is unlocked and connected to the Wi-Fi network. Ask your guest to go to Settings > Wi-Fi on their iPhone and tap your network name. A pop-up will appear on YOUR phone asking "Share Your Wi-Fi?" with the guest's name. Tap Share Password. Their phone connects without either of you seeing or typing the password.`,
-        tip: `This automatic sharing only works if you have the guest saved as a contact in your phone, both phones have Bluetooth and Wi-Fi turned on, and both are running iOS 11 or later.`,
+        tip: `This automatic sharing only works if you have the guest saved as a contact in your phone, both phones have Bluetooth and Wi-Fi turned on, and both are running iOS 17 or later.`,
       },
       {
         title: `Share via QR code on Android`,
@@ -79,7 +79,7 @@ These methods work for your home network and any Wi-Fi network your phone has al
       },
       {
         title: `View your Wi-Fi password on iPhone (to share manually)`,
-        content: `On iPhone running iOS 16 or later, go to Settings > Wi-Fi. Tap the network you are connected to. Tap Password — you may need to use Face ID or your passcode to confirm. The password appears on screen. You can read it out or copy and paste it.`,
+        content: `On iPhone running iOS 17 or later, go to Settings > Wi-Fi. Tap the network you are connected to. Tap Password — you may need to use Face ID or your passcode to confirm. The password appears on screen. You can read it out or copy and paste it.`,
       },
       {
         title: `View your Wi-Fi password on Android (to share manually)`,
@@ -98,7 +98,7 @@ These methods work for your home network and any Wi-Fi network your phone has al
     thumbnailEmoji: ``,
     publishedAt: `2026-04-19`,
     difficulty: `Intermediate`,
-    body: `Voice Control is an accessibility feature built into every iPhone running iOS 13 or later. It lets you control your entire phone using spoken commands — no touching the screen required. You can open apps, scroll, tap buttons, type messages, and navigate menus all by speaking.
+    body: `Voice Control is an accessibility feature built into every iPhone running iOS 17 or later. It lets you control your entire phone using spoken commands — no touching the screen required. You can open apps, scroll, tap buttons, type messages, and navigate menus all by speaking.
 
 This is different from Siri. Siri answers questions and performs specific tasks you ask for. Voice Control is about fully controlling every part of the phone interface — every button, every menu, every text field — using your voice. You can even see numbered labels appear on screen over every tappable item, and then say a number to tap that item.
 
@@ -341,13 +341,13 @@ Most people find swipe typing faster than tapping once they get used to it, espe
 
 Swipe typing is available on Android by default through Gboard (Google's keyboard) and also through Samsung Keyboard. On iPhone, Apple added a built-in swipe option called Slide to Type starting with iOS 13. Third-party keyboards like Gboard (available free from the App Store) also offer swipe typing on iPhone.
 
-You do not need to turn anything on for Android — swipe typing is already active on most Android keyboards. On iPhone with the built-in keyboard, Slide to Type is on by default in iOS 13 and later.
+You do not need to turn anything on for Android — swipe typing is already active on most Android keyboards. On iPhone with the built-in keyboard, Slide to Type is on by default in iOS 17 and later.
 
 If you make a mistake, tap the Backspace key once to undo the last swiped word. You can always switch back to tapping letters for words that are hard to swipe, like proper names.`,
     steps: [
       {
         title: `Check if swipe typing is available on your phone`,
-        content: `On Android, Gboard and Samsung Keyboard support swipe typing by default — no setup needed. Open any text field (like a new message) and try sliding between letters to see if it works. On iPhone, go to Settings > General > Keyboard and make sure "Slide to Type" is turned on. It is on by default in iOS 13 and later.`,
+        content: `On Android, Gboard and Samsung Keyboard support swipe typing by default — no setup needed. Open any text field (like a new message) and try sliding between letters to see if it works. On iPhone, go to Settings > General > Keyboard and make sure "Slide to Type" is turned on. It is on by default in iOS 17 and later.`,
       },
       {
         title: `Try your first swipe word`,
@@ -610,7 +610,7 @@ Before sending any wire transfer, especially a large one, call the recipient dir
     thumbnailEmoji: `‍‍`,
     publishedAt: `2026-04-19`,
     difficulty: `Intermediate`,
-    body: `Screen Time is a built-in parental controls feature on every iPhone and iPad running iOS 12 or later. It lets a parent set limits on how long a child can use certain apps, block inappropriate content, prevent in-app purchases, and schedule times when the screen goes dark — like during school hours or bedtime.
+    body: `Screen Time is a built-in parental controls feature on every iPhone and iPad running iOS 17 or later. It lets a parent set limits on how long a child can use certain apps, block inappropriate content, prevent in-app purchases, and schedule times when the screen goes dark — like during school hours or bedtime.
 
 You can manage Screen Time directly on your child's device, or you can set it up on your own iPhone and link it to your child's device through Family Sharing so you can adjust everything remotely from your phone.
 

@@ -280,7 +280,7 @@ export const guidesBatch15: Guide[] = [
     thumbnailEmoji: '',
     publishedAt: '2026-04-19',
     difficulty: 'Beginner',
-    body: "Widgets have been part of every iPhone for years — on iOS 18 and iOS 19 (current in May 2026), widgets are interactive and can be placed on your Home Screen or Lock Screen. They show live information without opening the app. Popular widgets include the weather for the next few hours, upcoming calendar appointments, and a fitness ring showing your daily activity progress.",
+    body: "iPhone widgets show live information right on your Home Screen — no app opening needed. Popular widgets include the weather for the next few hours, upcoming calendar appointments, and a fitness ring showing your daily activity progress.",
     steps: [
       {
         title: 'Enter editing mode',
@@ -296,7 +296,7 @@ export const guidesBatch15: Guide[] = [
       },
       {
         title: 'Add widgets to your Lock Screen',
-        content: 'On any current iPhone (iOS 18 or iOS 19, and the same steps work back to iOS 17), you can also add small widgets to your Lock Screen (the screen you see when your phone is locked). Press and hold your Lock Screen, tap "Customize," then tap "Lock Screen." Tap the date area at the top to add a widget above the clock, or tap the widget row below the clock to add up to four small widgets. Useful options: battery percentage, next calendar event, temperature, or steps walked.',
+        content: 'On any current iPhone, you can also add small widgets to your Lock Screen (the screen you see when your phone is locked). Press and hold your Lock Screen, tap "Customize," then tap "Lock Screen." Tap the date area at the top to add a widget above the clock, or tap the widget row below the clock to add up to four small widgets. Useful options: battery percentage, next calendar event, temperature, or steps walked.',
       },
     ],
   },
@@ -316,7 +316,7 @@ export const guidesBatch15: Guide[] = [
       {
         title: 'Open the Recently Deleted album',
         content: `Open the Photos app. Tap "Albums" at the bottom of the screen. Scroll down to the "Utilities" section. Tap "Recently Deleted." This album shows all photos and videos you've deleted in the last 30 days.`,
-        tip: 'On any current iPhone (iOS 18 or iOS 19, with the same behavior back to iOS 17), the Recently Deleted album is locked by default — you need to authenticate with Face ID or Touch ID to open it.',
+        tip: 'On any current iPhone, the Recently Deleted album is locked by default — you need to authenticate with Face ID or Touch ID to open it.',
       },
       {
         title: 'Recover a photo',

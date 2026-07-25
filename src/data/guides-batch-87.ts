@@ -199,7 +199,7 @@ GarageBand records audio through your iPhone's microphone, which means you can r
 
 You do not need to read music or understand recording software to start. GarageBand is designed to be exploratory. You can tap instrument keys, drag loops, record your voice, and have a complete musical idea in under ten minutes. From there, you can share your song directly to iCloud, Messages, or social media — or export it as an MP3 file.
 
-Apple's official GarageBand tutorials are available at support.apple.com and on the Apple Support YouTube channel. The app works on any iPhone or iPad running iOS 16 or later.`,
+Apple's official GarageBand tutorials are available at support.apple.com and on the Apple Support YouTube channel. The app works on any iPhone or iPad running iOS 17 or later.`,
     steps: [
       {
         title: `Open GarageBand and start a new project`,

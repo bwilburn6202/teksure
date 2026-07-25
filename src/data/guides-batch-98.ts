@@ -154,7 +154,7 @@ One important thing to understand: opting out of targeted ads doesn't mean you'l
       },
       {
         title: `Turn off ad tracking on Android`,
-        content: `Go to Settings > Privacy > Ads (the location varies slightly by Android version — look in Settings > Google > Ads if you can't find it). Tap "Delete advertising ID" or "Opt out of Ads Personalization" — this resets and removes the unique identifier advertisers use to track you. On newer Android phones (Android 13+), you can delete the advertising ID entirely.`,
+        content: `Go to Settings > Privacy > Ads (the location varies slightly by Android version — look in Settings > Google > Ads if you can't find it). Tap "Delete advertising ID" or "Opt out of Ads Personalization" — this resets and removes the unique identifier advertisers use to track you. On newer Android phones (Android 14+), you can delete the advertising ID entirely.`,
       },
       {
         title: `Adjust Google's ad personalization`,
@@ -383,20 +383,20 @@ For anyone who uses reading glasses, has difficulty with small text, or uses the
   {
     slug: `apple-translate-app`,
     title: `How to Use the Apple Translate App`,
-    excerpt: `Translate spoken words, text, or conversations in real time using the free Translate app that comes built in to every iPhone and iPad running iOS 14 or later.`,
+    excerpt: `Translate spoken words, text, or conversations in real time using the free Translate app that comes built in to every iPhone and iPad running iOS 17 or later.`,
     category: `essential-skills`,
     tags: [`Apple Translate`, `translation`, `languages`, `accessibility`, `travel`],
     readTime: `6 min`,
     thumbnailEmoji: ``,
     publishedAt: `2026-04-21`,
     difficulty: `Beginner`,
-    body: `Apple includes a free Translate app on every iPhone and iPad running iOS 14 or later — and it's often overlooked because people don't realize it's there. It can translate spoken words, typed text, and real-time conversations between two people speaking different languages. It also works offline for several languages, which is useful when traveling without cell service.
+    body: `Apple includes a free Translate app on every iPhone and iPad running iOS 17 or later — and it's often overlooked because people don't realize it's there. It can translate spoken words, typed text, and real-time conversations between two people speaking different languages. It also works offline for several languages, which is useful when traveling without cell service.
 
 The app supports over a dozen languages including Spanish, French, German, Chinese (Mandarin), Japanese, Korean, Arabic, Portuguese, Italian, Russian, and more. For families where different members speak different primary languages — or for medical or business situations where a translator isn't available — this app can bridge significant communication gaps.
 
 The Conversation mode is the most impressive feature. Two people sit across from each other with one iPhone between them. Each person speaks in their own language, and the app automatically detects who's speaking and translates each person's words for the other. You can even put it in Auto Translate mode where it listens continuously without needing to press a button.
 
-For reading signs, menus, or documents in a foreign language, Apple's Translate integrates with the camera through the Live Text feature (iOS 15+) — you can point the camera at text and tap to translate it on-screen.`,
+For reading signs, menus, or documents in a foreign language, Apple's Translate integrates with the camera through the Live Text feature (iOS 17+) — you can point the camera at text and tap to translate it on-screen.`,
     steps: [
       {
         title: `Find the Translate app`,
@@ -431,7 +431,7 @@ For reading signs, menus, or documents in a foreign language, Apple's Translate 
     thumbnailEmoji: ``,
     publishedAt: `2026-04-21`,
     difficulty: `Beginner`,
-    body: `iPhone's Screen Time feature — built into every iPhone running iOS 12 or later — lets you see exactly how much time you spend on each app and set daily limits. If you've ever noticed you're spending more time on Facebook, news, or games than you'd like, Screen Time lets you set a timer that gently stops you when you've hit your limit for the day.
+    body: `iPhone's Screen Time feature — built into every iPhone running iOS 17 or later — lets you see exactly how much time you spend on each app and set daily limits. If you've ever noticed you're spending more time on Facebook, news, or games than you'd like, Screen Time lets you set a timer that gently stops you when you've hit your limit for the day.
 
 This isn't just for kids. Screen Time is increasingly used by adults who want to reduce mindless scrolling, cut back on news consumption, or protect their sleep by limiting phone use after a certain hour.
 
@@ -615,7 +615,7 @@ If none of those options work — you can reset the router to factory settings, 
       },
       {
         title: `Find it on an iPhone already connected`,
-        content: `Go to Settings > Wi-Fi. Tap the info icon (the circle-i) next to your network name. Tap "Password." Your iPhone asks for Face ID, Touch ID, or your passcode. After you verify, the password appears on screen. This only works on iOS 16 or later.`,
+        content: `Go to Settings > Wi-Fi. Tap the info icon (the circle-i) next to your network name. Tap "Password." Your iPhone asks for Face ID, Touch ID, or your passcode. After you verify, the password appears on screen. This only works on iOS 17 or later.`,
       },
       {
         title: `Find it on a Windows computer already connected`,
@@ -623,7 +623,7 @@ If none of those options work — you can reset the router to factory settings, 
       },
       {
         title: `Find it on an Android phone`,
-        content: `Go to Settings > Wi-Fi (or Settings > Connections > Wi-Fi). Tap the network you're connected to. Look for a "Share" or "QR Code" button — tapping it shows a QR code that other devices can scan to connect, and the actual password is usually displayed below the QR code in text. This works on most Android phones running Android 10 or later.`,
+        content: `Go to Settings > Wi-Fi (or Settings > Connections > Wi-Fi). Tap the network you're connected to. Look for a "Share" or "QR Code" button — tapping it shows a QR code that other devices can scan to connect, and the actual password is usually displayed below the QR code in text. This works on most Android phones running Android 14 or later.`,
       },
       {
         title: `Reset the router as a last resort`,
@@ -853,7 +853,7 @@ If your printer is connected wirelessly over Wi-Fi, connection problems are espe
 
 This is especially useful overnight (so a 2 AM spam call doesn't wake you), during meals, during doctor appointments, or during any time you want to be present without phone interruptions.
 
-In iOS 15 and later, Apple expanded Do Not Disturb into a system called Focus. Focus works the same way as Do Not Disturb — it silences notifications — but adds the ability to allow specific contacts through, set a custom schedule, and create multiple Focus modes (Sleep, Driving, Work, Personal, etc.).
+In iOS 17 and later, Apple expanded Do Not Disturb into a system called Focus. Focus works the same way as Do Not Disturb — it silences notifications — but adds the ability to allow specific contacts through, set a custom schedule, and create multiple Focus modes (Sleep, Driving, Work, Personal, etc.).
 
 An important feature that a lot of people worry about: even with Do Not Disturb or a Focus mode on, emergency calls get through. If the same number calls twice within three minutes, the call will ring through even during Do Not Disturb. You can also set specific people (like family) as Starred Contacts who can always reach you.
 

@@ -824,7 +824,7 @@ For casual users, Gemini at gemini.google.com is the easiest starting point — 
       {
         title: `Access Gemini on the web or download the app`,
         content: `Go to gemini.google.com in any web browser on your computer or phone, and sign in with your Google account. Alternatively, search for "Google Gemini" in the App Store or Google Play Store and download the free app. Once signed in, you see a simple chat interface where you type your questions or requests. No subscription is needed to start — the free version is available immediately.`,
-        tip: `On Android phones running Android 10 or later, you can set Gemini as your default assistant by going to Settings > Apps > Default Apps > Digital assistant app and selecting Gemini. This lets you access it by holding the home button.`,
+        tip: `On Android phones running Android 14 or later, you can set Gemini as your default assistant by going to Settings > Apps > Default Apps > Digital assistant app and selecting Gemini. This lets you access it by holding the home button.`,
       },
       {
         title: `Ask Gemini a question or request help`,

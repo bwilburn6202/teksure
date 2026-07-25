@@ -368,7 +368,7 @@ If you want the best image quality available for a home webcam, the Logitech Bri
 
 Setting up any of these is the same: plug the USB cable into your computer. On Zoom, go to Settings > Video > Camera and select the new webcam from the dropdown. On Teams, go to Settings > Devices > Camera. The webcam takes over immediately.
 
-If you own an iPhone (model 11 or newer) running iOS 16 or later, and you have a Mac, you may not need to buy a webcam at all. Apple's Continuity Camera feature uses your iPhone as a webcam wirelessly. The iPhone camera is significantly better than any standalone webcam in the same price range.`,
+If you own an iPhone (model 11 or newer) running iOS 17 or later, and you have a Mac, you may not need to buy a webcam at all. Apple's Continuity Camera feature uses your iPhone as a webcam wirelessly. The iPhone camera is significantly better than any standalone webcam in the same price range.`,
     steps: [
       {
         title: `Decide whether you need an upgrade`,

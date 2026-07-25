@@ -58,7 +58,7 @@ Finished designs can be downloaded as image files (JPEG or PNG), printed through
     thumbnailEmoji: '',
     publishedAt: '2026-04-19',
     difficulty: 'Beginner',
-    body: `FaceTime used to be limited to Apple devices — iPhone, iPad, and Mac only. That changed with iOS 15 and later. Now you can create a FaceTime link and share it with anyone, including Android phone users and Windows computer users. The recipient clicks the link and joins the FaceTime call through their web browser — no Apple device or app download required.
+    body: `FaceTime used to be limited to Apple devices — iPhone, iPad, and Mac only. That changed with iOS 17 and later. Now you can create a FaceTime link and share it with anyone, including Android phone users and Windows computer users. The recipient clicks the link and joins the FaceTime call through their web browser — no Apple device or app download required.
 
 This is a significant improvement for mixed households where some family members use iPhones and others use Android or Windows devices. You can now do a group video call with your iPhone, your son's Android phone, and your daughter's Windows laptop — all in one FaceTime session.
 
@@ -66,7 +66,7 @@ The iPhone (or iPad or Mac) user creates the FaceTime link. Non-Apple participan
 
 FaceTime calls support up to 32 participants and include features like screen sharing, filters, and spatial audio when everyone is on Apple devices. For guests joining via a browser link, the experience is more basic but fully functional: video, audio, and the ability to see and hear everyone on the call.
 
-This feature requires iOS 15 or later on the iPhone creating the link. Non-Apple participants need Chrome version 97 or later, or Edge version 97 or later.`,
+This feature requires iOS 17 or later on the iPhone creating the link. Non-Apple participants need Chrome version 97 or later, or Edge version 97 or later.`,
     steps: [
       {
         title: 'Create a FaceTime Link on iPhone',
@@ -809,7 +809,7 @@ Note that Crash Detection works even if your iPhone is in low-power mode or in a
     difficulty: 'Beginner',
     body: `Android phones have a built-in Emergency SOS feature that lets you call 911 quickly by pressing the power button multiple times — useful in situations where you cannot safely type or navigate a menu. When activated, it calls emergency services, shares your GPS location, and can send an alert to your emergency contacts.
 
-The exact setup varies slightly by Android brand (Samsung, Pixel, Motorola), but all recent Android phones running Android 12 or later have Emergency SOS built into the Settings.
+The exact setup varies slightly by Android brand (Samsung, Pixel, Motorola), but all recent Android phones running Android 14 or later have Emergency SOS built into the Settings.
 
 By default on most Android phones, pressing the power button five times rapidly activates Emergency SOS. On some phones, pressing and holding the side button works. A countdown occurs before the call is placed, giving you a chance to cancel if it was accidental.
 

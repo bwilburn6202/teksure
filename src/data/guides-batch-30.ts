@@ -383,7 +383,7 @@ For RCS to work, you need the Google Messages app (or another RCS-compatible mes
     thumbnailEmoji: '',
     publishedAt: '2026-04-19',
     difficulty: 'Beginner',
-    body: `Android phones have a built-in screen recorder that creates a video of everything happening on your screen. No third-party app needed — it's part of the operating system on Android 10 and newer.
+    body: `Android phones have a built-in screen recorder that creates a video of everything happening on your screen. No third-party app needed — it's part of the operating system on Android 14 and newer.
 
 Common uses for screen recording: creating a video tutorial to show someone how to do something on their phone, capturing part of a video call to save for later (note: always get consent from participants), demonstrating a bug or problem to share with tech support, saving a live stream or online video that can't be downloaded, or recording gameplay.
 
@@ -429,7 +429,7 @@ One thing to know: screen recording does capture notifications that appear durin
     thumbnailEmoji: '',
     publishedAt: '2026-04-19',
     difficulty: 'Beginner',
-    body: `macOS has a built-in screen recorder that captures whatever is on your screen as a video file. It's part of the Screenshot toolbar in macOS Mojave and newer, and it's free with no time limits or watermarks.
+    body: `macOS has a built-in screen recorder that captures whatever is on your screen as a video file. It's part of the Screenshot toolbar in macOS Sonoma and newer, and it's free with no time limits or watermarks.
 
 You can record your entire screen or just a portion of it. Audio can be included (from a microphone, for narration) or excluded (video only). The recording saves as a .mov video file that can be played by QuickTime, shared by email or message, or uploaded anywhere.
 

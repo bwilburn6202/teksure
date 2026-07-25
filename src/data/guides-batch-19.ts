@@ -217,7 +217,7 @@ export const guidesBatch19: Guide[] = [
       {
         title: 'Enable Live Caption on Android (Google Pixel and most Android phones)',
         content:
-          "On Google Pixel and many Android phones running Android 10 or later: press a volume button on the side of your phone → a small caption icon (a box with lines representing text) appears below the volume slider. Tap it to turn on Live Caption. A caption bar appears at the bottom of your screen transcribing any audio playing. This works for videos, podcast, voice messages, and even phone calls. To access through settings: Settings → Accessibility → Live Caption → toggle ON.",
+          "On Google Pixel and many Android phones running Android 14 or later: press a volume button on the side of your phone → a small caption icon (a box with lines representing text) appears below the volume slider. Tap it to turn on Live Caption. A caption bar appears at the bottom of your screen transcribing any audio playing. This works for videos, podcast, voice messages, and even phone calls. To access through settings: Settings → Accessibility → Live Caption → toggle ON.",
         tip: "Quick Tip: Live Caption also works during phone calls on Pixel phones. When you receive or make a call, the caption bar appears at the bottom of the screen automatically (if Live Caption is enabled) showing what the other person is saying.",
       },
       {
@@ -537,7 +537,7 @@ export const guidesBatch19: Guide[] = [
       {
         title: 'Use the iPhone Translate app for two-person conversations',
         content:
-          "The iPhone Translate app (pre-installed on iOS 14 and later) excels at two-person conversations. Open the app → select the two languages involved. Tap the microphone for one language, speak, and the translation appears and is spoken aloud. The other person taps the microphone for their language and responds. Rotate the phone to landscape mode to see both languages side by side — ideal for face-to-face conversations.",
+          "The iPhone Translate app (pre-installed on iOS 17 and later) excels at two-person conversations. Open the app → select the two languages involved. Tap the microphone for one language, speak, and the translation appears and is spoken aloud. The other person taps the microphone for their language and responds. Rotate the phone to landscape mode to see both languages side by side — ideal for face-to-face conversations.",
       },
       {
         title: 'Download languages for offline translation',
@@ -792,7 +792,7 @@ export const guidesBatch19: Guide[] = [
       {
         title: 'Share your Wi-Fi password from iPhone to iPhone',
         content:
-          "When a family member wants to join your home Wi-Fi network: have them go to their iPhone's Wi-Fi settings and tap your network name. Their phone shows a waiting screen. Now bring your own iPhone close to theirs (within a few inches). A popup appears on your iPhone asking \"Share your Wi-Fi password with [their name]?\" Tap \"Share Password.\" Their phone joins the network without either of you having to type the password. This works between iPhones with iOS 11 and later — both devices need the other person in their Contacts.",
+          "When a family member wants to join your home Wi-Fi network: have them go to their iPhone's Wi-Fi settings and tap your network name. Their phone shows a waiting screen. Now bring your own iPhone close to theirs (within a few inches). A popup appears on your iPhone asking \"Share your Wi-Fi password with [their name]?\" Tap \"Share Password.\" Their phone joins the network without either of you having to type the password. This works between iPhones with iOS 17 and later — both devices need the other person in their Contacts.",
         tip: "Quick Tip: This same sharing method works for sharing passwords to other networks (not just your home Wi-Fi). Tap the network name in Wi-Fi settings and look for the \"Share Password\" option.",
       },
       {

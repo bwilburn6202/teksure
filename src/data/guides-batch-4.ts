@@ -456,7 +456,7 @@ Once downloaded, the map works just like the regular Google Maps when you are of
     thumbnailEmoji: '',
     publishedAt: '2026-04-08',
     difficulty: 'Beginner',
-    body: `Apple's Screen Time feature lets you set daily limits on how long a child can use specific apps, block adult websites, and prevent them from downloading new apps without your permission. You can set this up on the child's iPhone or iPad, protected by a separate passcode that only you know, so they cannot change the settings themselves. This is built into all iPhones and iPads running iOS 12 or later — no extra app or purchase required.
+    body: `Apple's Screen Time feature lets you set daily limits on how long a child can use specific apps, block adult websites, and prevent them from downloading new apps without your permission. You can set this up on the child's iPhone or iPad, protected by a separate passcode that only you know, so they cannot change the settings themselves. This is built into all iPhones and iPads running iOS 17 or later — no extra app or purchase required.
 
 To set up Screen Time: On the child's device, go to Settings and tap "Screen Time." Tap "Turn On Screen Time," then tap "This is My Child's iPhone." You will be prompted to set up "Downtime" (hours when the phone is locked, like bedtime) and "App Limits" (how many hours per day they can spend in categories like Social Networking, Games, or Entertainment). After setting these up, you will be asked to create a four-digit Screen Time passcode — this is different from the regular phone passcode, and it is the one only you should know.
 

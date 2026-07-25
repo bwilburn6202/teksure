@@ -73,8 +73,8 @@ export const guidesBatch18: Guide[] = [
       {
         title: 'Undo Send in Apple Mail',
         content:
-          "On Mac (macOS Sonoma or Sequoia, current in 2026): go to Mail → Settings → Composing → check \"Undo Send Delay\" and set it to 10 or 20 seconds. After sending, a banner appears at the bottom of the screen with an Undo option. On iPhone and iPad (iOS 17, 18, or 19 — anything current): after sending an email in the Mail app, a brief \"Undo Send\" option appears at the bottom of the screen. Swipe up on it or tap it to cancel the send. The delay setting is in Settings → Mail → Undo Send Delay.",
-        tip: "Quick Tip: Apple Mail's Undo Send is available on every supported iPhone in 2026 (iOS 17 and newer). If you have an older iPhone that has not been updated, update it now: Settings → General → Software Update.",
+          "On Mac (macOS Ventura and later): go to Mail → Settings → Composing → check \"Undo Send Delay\" and set it to 10 or 20 seconds. After sending, a banner appears at the bottom of the screen with an Undo option. On iPhone and iPad (iOS 17 and later): after sending an email in the Mail app, a brief \"Undo Send\" option appears at the bottom of the screen. Swipe up on it or tap it to cancel the send. The delay setting is in Settings → Mail → Undo Send Delay.",
+        tip: "Quick Tip: Apple Mail's Undo Send is only available on iOS 16 and macOS Ventura or later. If you have an older iPhone, update it to access this feature: Settings → General → Software Update.",
       },
       {
         title: 'Recall an email in Outlook',
@@ -233,7 +233,7 @@ export const guidesBatch18: Guide[] = [
         title: 'Download and set up Medisafe',
         content:
           "Open the App Store (iPhone) or Google Play Store (Android) and search \"Medisafe.\" Download the free app. Open it and create a free account (or use a guest account). Enter your basic health information. Medisafe will ask if you have a \"Medfriend\" — a family member who receives alerts if you miss a dose. This is optional but recommended for older adults who live alone.",
-        tip: "Quick Tip: You can also use the iPhone's built-in Health app (available on every current iPhone) → Medications section to log and set reminders for medications. It is more basic than Medisafe but requires no separate app.",
+        tip: "Quick Tip: You can also use the iPhone's built-in Health app (iOS 17 and later) → Medications section to log and set reminders for medications. It is more basic than Medisafe but requires no separate app.",
       },
       {
         title: 'Add your medications',
@@ -527,7 +527,7 @@ export const guidesBatch18: Guide[] = [
     thumbnailEmoji: '',
     publishedAt: '2026-04-19',
     difficulty: 'Intermediate',
-    body: `Apple Shortcuts is a free app from Apple that lets you create one-tap buttons or voice commands that perform multiple actions at once. Think of it as a personal automation tool: instead of doing five separate steps every morning, one tap can do all five for you.\n\nFor example, a "Heading Home" shortcut might: open Google Maps with your home address, send a text to your family saying you're on the way, and start your favorite playlist — all from a single tap or by saying "Hey Siri, heading home."\n\nShortcuts comes pre-installed on every current iPhone. The Gallery inside the app offers hundreds of ready-to-use shortcuts — you do not need to build your own from scratch.`,
+    body: `Apple Shortcuts is a free app from Apple that lets you create one-tap buttons or voice commands that perform multiple actions at once. Think of it as a personal automation tool: instead of doing five separate steps every morning, one tap can do all five for you.\n\nFor example, a "Heading Home" shortcut might: open Google Maps with your home address, send a text to your family saying you're on the way, and start your favorite playlist — all from a single tap or by saying "Hey Siri, heading home."\n\nShortcuts comes pre-installed on iPhones running iOS 17 or later. The Gallery inside the app offers hundreds of ready-to-use shortcuts — you do not need to build your own from scratch.`,
     steps: [
       {
         title: 'Explore the Shortcuts Gallery',
@@ -565,12 +565,12 @@ export const guidesBatch18: Guide[] = [
     thumbnailEmoji: '',
     publishedAt: '2026-04-19',
     difficulty: 'Beginner',
-    body: `Live Text is an iPhone feature (built into every current iPhone running iOS 18 or iOS 19) that can recognize and interact with text in photos and through your camera. This means you can point your camera at a business card, a restaurant menu, a sign, a receipt, or a whiteboard and tap to copy the text, call a phone number, open a website, or translate text — all without typing a single character.\n\nLive Text is also incredibly useful for accessibility — if you receive a photo with a phone number or address in it, you no longer need to manually type it; you just tap it. This guide explains how to use it in the Camera app, Photos app, and other places.`,
+    body: `Live Text is an iPhone feature (available on iPhone XS and later, running iOS 17 or later) that can recognize and interact with text in photos and through your camera. This means you can point your camera at a business card, a restaurant menu, a sign, a receipt, or a whiteboard and tap to copy the text, call a phone number, open a website, or translate text — all without typing a single character.\n\nLive Text is also incredibly useful for accessibility — if you receive a photo with a phone number or address in it, you no longer need to manually type it; you just tap it. This guide explains how to use it in the Camera app, Photos app, and other places.`,
     steps: [
       {
         title: 'Enable Live Text (if not already on)',
         content:
-          "Go to Settings → General → Language & Region → make sure \"Live Text\" is toggled ON. On every current iPhone, this is enabled by default. Live Text works with text in English, French, German, Italian, Portuguese, Spanish, Chinese, Cantonese, Japanese, and Korean.",
+          "Go to Settings → General → Language & Region → make sure \"Live Text\" is toggled ON. On most iPhones running iOS 17 or later, this is enabled by default. Live Text works with text in English, French, German, Italian, Portuguese, Spanish, Chinese, Cantonese, Japanese, and Korean.",
         tip: "Quick Tip: Live Text only works on iPhone XS (2018) and later. If your iPhone is older than that, the feature is not available regardless of iOS version.",
       },
       {
@@ -679,7 +679,7 @@ export const guidesBatch18: Guide[] = [
     thumbnailEmoji: '',
     publishedAt: '2026-04-19',
     difficulty: 'Beginner',
-    body: `Screen recording captures everything that happens on your iPhone screen as a video — like a screenshot, but for an entire sequence of actions. This is useful when you need to show someone exactly what is happening on your phone (to get tech help), save a video from an app that doesn't have a download button, record a video call conversation you want to keep, or create a tutorial for family members.\n\nThe recording is saved as a video file in your Photos app and can be shared like any other video. Screen recording is built into every current iPhone — no additional app required.`,
+    body: `Screen recording captures everything that happens on your iPhone screen as a video — like a screenshot, but for an entire sequence of actions. This is useful when you need to show someone exactly what is happening on your phone (to get tech help), save a video from an app that doesn't have a download button, record a video call conversation you want to keep, or create a tutorial for family members.\n\nThe recording is saved as a video file in your Photos app and can be shared like any other video. Screen recording is built into iPhones running iOS 17 or later — no additional app required.`,
     steps: [
       {
         title: 'Add Screen Recording to your Control Center',

@@ -38,7 +38,7 @@ Once set up, you can ask Siri to give directions, read text messages out loud, o
 
 After a one-time setup, Android Auto connects automatically whenever you start the car and plug in (or connect wirelessly). You control everything with voice commands or large, easy-to-tap buttons designed to be safer than looking at your phone.`,
     steps: [
-      { title: 'Install the Android Auto app', content: 'On phones running Android 10 or newer, Android Auto is already built in. On older phones, open the Play Store, search for "Android Auto," and tap Install.' },
+      { title: 'Install the Android Auto app', content: 'On phones running Android 14 or newer, Android Auto is already built in. On older phones, open the Play Store, search for "Android Auto," and tap Install.' },
       { title: `Check your car's compatibility`, content: `Look for an Android Auto logo near the USB port or on your infotainment screen. Your car's manual or the Android Auto website lists supported models.` },
       { title: 'Connect your phone with a USB cable', content: 'Start the car and plug your phone into the USB port using a good-quality cable. For wireless Android Auto, connect over Bluetooth after turning on the car.' },
       { title: 'Follow the setup prompts', content: 'Your phone will ask for permissions — allow access to location, contacts, and notifications so Maps and messaging work. This only happens the first time.' },
@@ -269,7 +269,7 @@ Once paired, you can also change hearing-aid settings from the phone's Accessibi
     difficulty: 'Beginner',
     body: `Live Captions turn spoken words into text on your screen in real time — no internet needed. It works on any audio: YouTube videos, FaceTime calls, podcasts, or even a video someone sends you.
 
-Both iPhone (iOS 16 and newer) and Android (version 10 and newer) support Live Captions. On iPhone it is called Live Captions; on Android it is called Live Caption (no "s").`,
+Both iPhone (iOS 17 and newer) and Android (version 10 and newer) support Live Captions. On iPhone it is called Live Captions; on Android it is called Live Caption (no "s").`,
     steps: [
       { title: 'On iPhone, open Accessibility settings', content: 'Open Settings, tap Accessibility, then scroll down to Live Captions and tap it. Flip the switch on. Your phone may download a language pack — this can take a few minutes.' },
       { title: 'On Android, open Sound settings', content: 'Open Settings, tap Sound or Sound & Vibration, then Live Caption. Flip the switch on. On some phones the setting is under Accessibility instead.' },

@@ -433,7 +433,7 @@ Even if you don't lose your physical remote often, the keyboard alone makes the 
     difficulty: `Beginner`,
     body: `iMovie is Apple's free video editing app for iPhone and iPad. It lets you turn your phone's video clips into something you're proud to share — with titles, background music, and clean cuts — without needing any video editing experience.
 
-The app comes pre-installed on many iPhones and iPads, and if it's not already on yours, you can download it free from the App Store. It works on any iPhone or iPad running iOS 16 or later.
+The app comes pre-installed on many iPhones and iPads, and if it's not already on yours, you can download it free from the App Store. It works on any iPhone or iPad running iOS 17 or later.
 
 iMovie on iPhone is designed around simplicity. You pick the clips you want to use, trim out the parts you don't like, arrange them in order, and add finishing touches like a title card and music. The whole process for a short home video can take 10–15 minutes.
 
@@ -498,7 +498,7 @@ You can also make the video brighter or more colorful using the same adjustment 
 
 The Photos editor can't do everything — it can't add music, combine multiple clips, or add text overlays. For those features, use iMovie (covered in a separate guide). But for quick fixes to individual clips, Photos is faster and already on your phone.
 
-Everything covered in this guide works on iPhones running iOS 13 or later (any iPhone from the last several years).`,
+Everything covered in this guide works on iPhones running iOS 17 or later (any iPhone from the last several years).`,
     steps: [
       {
         title: `Open the video in Photos and tap Edit`,
@@ -1049,7 +1049,7 @@ iOS can be set to automatically offload apps you haven't used in a while, which 
 
 Clearing large message threads is another big opportunity most people overlook. A text conversation full of shared photos and videos can easily be using 1–2 GB of storage.
 
-This guide works on any iPhone running iOS 13 or later — which covers virtually all iPhones currently in use.`,
+This guide works on any iPhone running iOS 17 or later — which covers virtually all iPhones currently in use.`,
     steps: [
       {
         title: `Open the iPhone Storage screen`,

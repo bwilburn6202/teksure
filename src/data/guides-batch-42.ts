@@ -177,11 +177,11 @@ You can use Sidecar in two modes:
 
 The iPad's touch screen also works as a pointing device when in Sidecar mode — you can tap on the iPad to click things in macOS. And if you have an Apple Pencil, you can draw on the iPad and have it appear in Mac apps.
 
-Requirements: iPad with iPadOS 13 or later (most iPads from 2014 onward), Mac running macOS Catalina or later, both signed into the same Apple ID.`,
+Requirements: iPad with iPadOS 13 or later (most iPads from 2014 onward), Mac running macOS Sonoma or later, both signed into the same Apple ID.`,
     steps: [
       {
         title: `Check that both devices are ready`,
-        content: `On iPad: Settings → General → About → confirm iPadOS is 13 or later. On Mac: Apple menu → About This Mac → confirm macOS Catalina or later. Both must be signed into the same Apple ID. Have both devices on and nearby.`,
+        content: `On iPad: Settings → General → About → confirm iPadOS is 13 or later. On Mac: Apple menu → About This Mac → confirm macOS Sonoma or later. Both must be signed into the same Apple ID. Have both devices on and nearby.`,
       },
       {
         title: `Start Sidecar`,
@@ -891,7 +891,7 @@ The key question is: do you have a backup? If yes, recovery is straightforward. 
       {
         title: `Use iPhone Recovery Mode to erase and restore`,
         content: `If you cannot unlock, use Recovery Mode. Connect your iPhone to a computer with a USB cable. On iPhone 8 or later: press and quickly release Volume Up, press and quickly release Volume Down, then press and hold the Side button until the recovery mode screen appears (a cable pointing to a computer). In Finder (Mac) or iTunes (Windows), click "Restore iPhone." This erases the phone and installs fresh iOS.`,
-        tip: `If you use a Mac with macOS Catalina or later, use Finder instead of iTunes. Open Finder and click your iPhone in the sidebar.`,
+        tip: `If you use a Mac with macOS Sonoma or later, use Finder instead of iTunes. Open Finder and click your iPhone in the sidebar.`,
       },
       {
         title: `Restore from an iCloud backup`,

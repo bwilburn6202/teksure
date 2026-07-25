@@ -763,7 +763,7 @@ One more fix many people overlook: a true full shutdown and restart. Many people
       },
       {
         title: `Check if it is time for a hardware upgrade or new computer`,
-        content: `If your computer has 4 GB of RAM or less, runs on a traditional hard drive (HDD) instead of an SSD, or is running an operating system that is no longer receiving security updates (like Windows 7 or 8), the hardware may genuinely be too old to run modern software efficiently. In these cases, no amount of software cleanup will make the machine feel fast again. If the computer is more than seven to eight years old, the cost of repairs or upgrades often exceeds the practical value — and a new machine with modern hardware will be significantly faster from day one.`,
+        content: `If your computer has 4 GB of RAM or less, runs on a traditional hard drive (HDD) instead of an SSD, or is running an operating system that is no longer receiving security updates (Windows 7 and 8 stopped receiving updates years ago, and Windows 10 support ended in October 2025), the hardware may genuinely be too old to run modern software efficiently. In these cases, no amount of software cleanup will make the machine feel fast again. If the computer is more than seven to eight years old, the cost of repairs or upgrades often exceeds the practical value — and a new machine with modern hardware will be significantly faster from day one.`,
       },
     ],
   },

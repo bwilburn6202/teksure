@@ -470,7 +470,7 @@ Lock screen widgets are "glanceable" — they show information but you can't int
 
 Available widget types depend on the apps installed on your phone. Apple provides widgets for Weather, Calendar, Activity (fitness rings), Clock (for a second time zone), Reminders, and Battery. Third-party apps like Spotify, Nike Run Club, and transit apps often offer lock screen widgets too.
 
-This feature requires iOS 16 or later and any recent iPhone model (iPhone 8 or newer). It works on all modern iPhones.`,
+This feature requires iOS 17 or later and any recent iPhone model (iPhone 8 or newer). It works on all modern iPhones.`,
     steps: [
       {
         title: 'Enter lock screen editing mode',

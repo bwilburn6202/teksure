@@ -383,7 +383,7 @@ Sling does not require a technician visit or equipment rental. You sign up onlin
     difficulty: 'Beginner',
     body: `Live Text is one of the most practical iPhone features that most people never discover. It lets your iPhone read any text that appears in a photo — on a menu, a flyer, a business card, a prescription label, a street sign — and treat it as selectable text, the same way text in an email or document works.
 
-Live Text is available on iPhone XS and later running iOS 15 or newer. It works in the Camera app in real time, in photos you have already taken, and even in screenshots.
+Live Text is available on iPhone XS and later running iOS 17 or newer. It works in the Camera app in real time, in photos you have already taken, and even in screenshots.
 
 Here is a common use case: you snap a photo of a restaurant menu and later you want to look up a dish. Instead of squinting at the photo and typing the dish name manually, you can tap on the text in the photo and copy it.
 
@@ -395,7 +395,7 @@ Live Text does not require an internet connection — the text recognition happe
     steps: [
       {
         title: 'Check Your iPhone Supports Live Text',
-        content: 'Live Text requires iPhone XS (2018) or newer and iOS 15 or later. To check your iOS version, go to Settings → General → About → iOS Version. To update, go to Settings → General → Software Update.',
+        content: 'Live Text requires iPhone XS (2018) or newer and iOS 17 or later. To check your iOS version, go to Settings → General → About → iOS Version. To update, go to Settings → General → Software Update.',
       },
       {
         title: 'Use Live Text in the Camera App',
@@ -528,7 +528,7 @@ Pinning apps to the Start Menu is the most important customization. When you pin
 
 The Recommended section shows your most recently opened files and newly installed apps. This can be helpful for quickly reopening a document you were working on, but some people prefer more privacy and would rather not see recent files. You can turn off Recommended files entirely in Settings.
 
-You can also move the entire taskbar (including the Start button) back to the left corner — the way it looked in Windows 7 and 10 — by changing one setting in the Taskbar Alignment option. Many people switching from older versions of Windows find this reassuring.`,
+You can also move the entire taskbar (including the Start button) back to the left corner — the way it looked in every version of Windows before Windows 11, including Windows 7 and Windows 10 — by changing one setting in the Taskbar Alignment option. Many people switching from older versions of Windows find this reassuring.`,
     steps: [
       {
         title: 'Open the Start Menu and Explore It',

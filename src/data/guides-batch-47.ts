@@ -11,7 +11,7 @@ export const guidesBatch47: Guide[] = [
     thumbnailEmoji: ``,
     publishedAt: `2026-04-19`,
     difficulty: `Beginner`,
-    body: `Freeform is a free app that comes built into every iPhone and iPad running iOS 16 or later. Think of it as a giant digital whiteboard where you can write notes, draw diagrams, stick photos, and add shapes — all in one place. It's great for planning a trip, organizing your thoughts before a big decision, or just brainstorming with someone else over the internet.
+    body: `Freeform is a free app that comes built into every iPhone and iPad running iOS 17 or later. Think of it as a giant digital whiteboard where you can write notes, draw diagrams, stick photos, and add shapes — all in one place. It's great for planning a trip, organizing your thoughts before a big decision, or just brainstorming with someone else over the internet.
 
 When you first open Freeform, you get a blank white canvas with no edges. You can place things anywhere — text boxes, sticky notes, hand-drawn sketches, and images. Zoom in and out by pinching the screen, just like you would on a photo.
 

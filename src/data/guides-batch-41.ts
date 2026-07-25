@@ -450,7 +450,7 @@ Your health records stay on your iPhone and are protected by your Face ID or Tou
 
 This feature works with hospitals and clinics that use a compatible electronic health record system. Over 1,000 health systems participate including many major hospital networks, Kaiser Permanente, and VA health facilities. You can check if your provider supports it during setup.
 
-Requirements: iPhone with iOS 11.3 or later (iOS 16 or later recommended for the best experience).`,
+Requirements: iPhone with iOS 11.3 or later (iOS 17 or later recommended for the best experience).`,
     steps: [
       {
         title: `Open the Health app and navigate to Health Records`,

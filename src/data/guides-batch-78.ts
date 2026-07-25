@@ -408,7 +408,7 @@ VoiceOver integrates deeply with all Apple apps. It reads text messages as they 
 
 You can quickly turn VoiceOver on or off without digging through Settings. Go to Settings → Accessibility → Accessibility Shortcut and select VoiceOver. Then, triple-clicking the side button (or the home button on older iPhones) will toggle VoiceOver on and off instantly.
 
-VoiceOver works on iPhones running iOS 12 or later, which covers almost every iPhone from the past several years. There is nothing to download or pay for — it is a core part of iPhone.`,
+VoiceOver works on iPhones running iOS 17 or later, which covers almost every iPhone from the past several years. There is nothing to download or pay for — it is a core part of iPhone.`,
     steps: [
       {
         title: `Turn on VoiceOver`,

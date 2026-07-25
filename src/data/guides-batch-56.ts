@@ -17,7 +17,7 @@ When you lock a note, it gets protected by either a password you choose, your iP
 
 You can lock notes on your iPhone, iPad, or Mac. The lock is tied to your Apple account, so a note locked on your iPhone will also be locked when you view it on your Mac.
 
-Before you start, make sure your iPhone or iPad is running iOS 16 or later (or macOS Ventura 13 or later on a Mac). You can check this by going to Settings, tapping General, and then tapping About.
+Before you start, make sure your iPhone or iPad is running iOS 17 or later (or macOS Ventura 13 or later on a Mac). You can check this by going to Settings, tapping General, and then tapping About.
 
 One thing to know: locking a note removes it from Siri suggestions and search results while it is locked, which is a good thing for privacy. You can lock as many notes as you want, and each one is individually locked — locking one does not lock all of your notes.
 

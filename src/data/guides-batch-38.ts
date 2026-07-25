@@ -22,7 +22,7 @@ export const guidesBatch38: Guide[] = [
       },
       {
         title: 'Set up the Samsung Health app',
-        content: `Download the free Samsung Health app from the Google Play Store (it works on Samsung and non-Samsung Android phones running Android 11 or later). Open the app and sign in with your Samsung account — or create a free one at samsung.com/us/account. Once signed in, tap the "Ring" icon or go to the Devices section and select "Add device." Hold your ring near your phone; it will connect automatically over Bluetooth and pair within about 30 seconds.`,
+        content: `Download the free Samsung Health app from the Google Play Store (it works on Samsung and non-Samsung Android phones running Android 14 or later). Open the app and sign in with your Samsung account — or create a free one at samsung.com/us/account. Once signed in, tap the "Ring" icon or go to the Devices section and select "Add device." Hold your ring near your phone; it will connect automatically over Bluetooth and pair within about 30 seconds.`,
       },
       {
         title: 'Wear it overnight to track your sleep',

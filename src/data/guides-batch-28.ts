@@ -17,7 +17,7 @@ This is different from a shared album. With a shared album, photos stay on the o
 
 Here's why it matters for families: grandparents can automatically see every photo grandkids take. Parents and adult children can pool family photos from multiple people's cameras into one place. No more "can you send me that photo?" — it's already there.
 
-To use this feature, everyone in the group needs an iPhone or iPad running iOS 16 or later. The person who sets it up is the "library organizer" and can invite up to five other people. Invited participants can contribute, view, and download all photos.
+To use this feature, everyone in the group needs an iPhone or iPad running iOS 17 or later. The person who sets it up is the "library organizer" and can invite up to five other people. Invited participants can contribute, view, and download all photos.
 
 You can set sharing rules to be automatic — for example, automatically share all photos taken within Bluetooth range of family members, or photos that detect certain people's faces. You can also choose which existing photos to move into the shared library or keep them personal.
 
@@ -26,7 +26,7 @@ Each person still has their own Personal Library for private photos. You can swi
       {
         title: 'Open Settings and Tap Your Name',
         content: 'On your iPhone or iPad, open Settings. Tap your name at the top (your Apple ID). Then tap iCloud → Photos. Make sure "Sync this iPhone" is turned on before proceeding.',
-        tip: 'Everyone in the group needs iOS 16 or later. Go to Settings → General → Software Update to check.',
+        tip: 'Everyone in the group needs iOS 17 or later. Go to Settings → General → Software Update to check.',
       },
       {
         title: 'Set Up the Shared Library',

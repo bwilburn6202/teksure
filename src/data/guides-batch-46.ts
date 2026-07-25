@@ -604,7 +604,7 @@ The flashlight uses the camera flash LED, which runs warm during extended use. Y
       },
       {
         title: `Add Flashlight to Your Lock Screen`,
-        content: `On iPhone running iOS 16 or later, you can customize the lock screen shortcuts. Press and hold on your lock screen → "Customize" → lock screen → tap the bottom-left or bottom-right shortcut icon → choose Flashlight. Now the flashlight button is exactly where you want it.`,
+        content: `On iPhone running iOS 17 or later, you can customize the lock screen shortcuts. Press and hold on your lock screen → "Customize" → lock screen → tap the bottom-left or bottom-right shortcut icon → choose Flashlight. Now the flashlight button is exactly where you want it.`,
       },
     ],
   },

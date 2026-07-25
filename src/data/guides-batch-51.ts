@@ -723,7 +723,7 @@ Note: scrolling screenshots aren't available in every app. They work best in bro
       },
       {
         title: `Use "Capture more" on Google Pixel`,
-        content: `On a Google Pixel phone running Android 12 or later, after taking the screenshot, tap "Capture more" in the toolbar that appears at the bottom. A selection tool appears that lets you expand the bottom edge of the screenshot downward — drag it down to include more of the page. You can also tap an auto-scroll button on some versions to capture the full page automatically.`,
+        content: `On a Google Pixel phone running Android 14 or later, after taking the screenshot, tap "Capture more" in the toolbar that appears at the bottom. A selection tool appears that lets you expand the bottom edge of the screenshot downward — drag it down to include more of the page. You can also tap an auto-scroll button on some versions to capture the full page automatically.`,
         tip: `Google Pixel's scrolling screenshot approach gives you more control over how far down the page to capture — drag the handle carefully to get exactly what you need.`
       },
       {
@@ -752,7 +752,7 @@ This is especially useful for:
 - Saving a full web page with medical or financial information
 - Sharing an entire page with a family member or advisor
 
-This feature only works in Safari on iPhone — it doesn't work in Chrome, Firefox, or other browsers on iPhone. It also requires iOS 13 or later (if your iPhone was bought after 2018, you almost certainly have iOS 13 or newer).
+This feature only works in Safari on iPhone — it doesn't work in Chrome, Firefox, or other browsers on iPhone. It also requires iOS 17 or later (if your iPhone was bought after 2018, you almost certainly have iOS 17 or newer).
 
 The key to accessing this feature is what you see after you take a regular screenshot — there's an option that most people walk right past.`,
     steps: [

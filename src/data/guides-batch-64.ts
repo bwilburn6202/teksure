@@ -514,7 +514,7 @@ There are two ways to review permissions on Android. The first is per app: go to
 
 The second way gives you an overview of all apps that can access a specific resource. Go to Settings, tap Privacy, then "Permission Manager." From here, tap any category — like Location or Microphone — to see every app that has access to it. This bird's-eye view is particularly useful for spotting apps that have access to something they should not need.
 
-Android 12 and later added a Privacy Dashboard (in Settings under Privacy) that shows you a timeline of which apps accessed your camera, microphone, and location over the past 24 hours. If you see an unfamiliar app showing up frequently, that is a signal to review or revoke its permissions.
+Android 14 and later added a Privacy Dashboard (in Settings under Privacy) that shows you a timeline of which apps accessed your camera, microphone, and location over the past 24 hours. If you see an unfamiliar app showing up frequently, that is a signal to review or revoke its permissions.
 
 When reviewing location permissions, you will typically see three options: "Allow all the time," "Allow only while using the app," or "Don't allow." For most apps, "Allow only while using the app" is the right choice — it means the app can only check your location when you are actively using it, not when it is running in the background.
 
@@ -541,7 +541,7 @@ For apps that request camera or microphone access but have no obvious reason to 
       },
       {
         title: `Check the Privacy Dashboard`,
-        content: `On Android 12 or later, go to Settings, then Privacy, then "Privacy dashboard." This shows a 24-hour timeline of which apps accessed your camera, microphone, and location. If an app accessed your microphone recently and you have no idea why, that is worth investigating.`
+        content: `On Android 14 or later, go to Settings, then Privacy, then "Privacy dashboard." This shows a 24-hour timeline of which apps accessed your camera, microphone, and location. If an app accessed your microphone recently and you have no idea why, that is worth investigating.`
       },
       {
         title: `Deny permissions for apps that do not need them`,
@@ -566,7 +566,7 @@ Google Maps keeps a separate record called Location History, which stores a time
 
 For apps that have no reason to know your location — social media, shopping apps, news apps — set the permission to "Don't allow." They will still function for their core purpose. You will occasionally see a prompt asking to enable location for a feature, and you can decide in that moment whether it is worth it.
 
-Using "Approximate location" instead of "Precise location" is another option available in Android 12 and later. When you choose this, the app sees a general area rather than your exact address. This is useful for apps that need a rough sense of your city or region but do not need to know your exact street address.`,
+Using "Approximate location" instead of "Precise location" is another option available in Android 14 and later. When you choose this, the app sees a general area rather than your exact address. This is useful for apps that need a rough sense of your city or region but do not need to know your exact street address.`,
     category: `safety-guides`,
     tags: [`location`, `android`, `privacy`, `GPS`],
     emoji: ``,
@@ -589,7 +589,7 @@ Using "Approximate location" instead of "Precise location" is another option ava
       },
       {
         title: `Choose Approximate instead of Precise location`,
-        content: `When you tap on an app's location permission (on Android 12 or later), you will also see a toggle for "Use precise location." Turning this off sends the app only an approximate location — roughly a few city blocks — rather than your exact position. This is useful for apps that only need your general area, like a weather or restaurant-finding app.`
+        content: `When you tap on an app's location permission (on Android 14 or later), you will also see a toggle for "Use precise location." Turning this off sends the app only an approximate location — roughly a few city blocks — rather than your exact position. This is useful for apps that only need your general area, like a weather or restaurant-finding app.`
       },
       {
         title: `Turn off Google Maps Location History`,
@@ -898,7 +898,7 @@ To enable automatic updates for both macOS and App Store apps, go to System Sett
 
 One of the most important things about Live Caption is that it works completely offline. The speech recognition happens on your phone itself — your audio is never sent to Google's servers. This makes it both fast and private. You can use it without a cellular connection or Wi-Fi.
 
-Live Caption is available on Google Pixel phones starting with the Pixel 3 (running Android 10 or later) and has expanded to many other Android phones including Samsung, OnePlus, and other brands on Android 11 and later. Not all Android phones have this feature — the availability depends on the manufacturer including it.
+Live Caption is available on Google Pixel phones starting with the Pixel 3 (running Android 14 or later) and has expanded to many other Android phones including Samsung, OnePlus, and other brands on Android 14 and later. Not all Android phones have this feature — the availability depends on the manufacturer including it.
 
 There are two ways to turn on Live Caption. The fastest way is to press a volume button on the side of your phone. When the volume slider appears on screen, look for a small caption icon (two lines of text) below the slider. Tap it to enable or disable Live Caption. The second way is through Settings — go to Settings, tap Accessibility, then Live Caption, and toggle it on from there.
 
@@ -916,7 +916,7 @@ Live Caption can also work during phone calls on supported Pixel devices, though
     steps: [
       {
         title: `Check if your phone supports Live Caption`,
-        content: `Live Caption is available on Google Pixel phones (Pixel 3 and later) and many Android phones from Samsung, OnePlus, and other brands running Android 11 or later. To check, go to Settings, tap Accessibility, and look for "Live Caption" in the list. If it appears, your phone supports it.`
+        content: `Live Caption is available on Google Pixel phones (Pixel 3 and later) and many Android phones from Samsung, OnePlus, and other brands running Android 14 or later. To check, go to Settings, tap Accessibility, and look for "Live Caption" in the list. If it appears, your phone supports it.`
       },
       {
         title: `Turn on Live Caption using the volume button`,
@@ -948,7 +948,7 @@ Live Caption can also work during phone calls on supported Pixel devices, though
     excerpt: `iPhone's Live Captions display spoken words as on-screen text during calls, videos, and FaceTime — great for anyone hard of hearing.`,
     body: `Live Captions is an accessibility feature Apple introduced in iOS 16 that displays spoken audio as text on your iPhone screen in real time. It works during phone calls, FaceTime, videos, and third-party apps like Zoom or YouTube. The captions appear automatically at the top or bottom of your screen as speech happens — no typing or interaction required.
 
-To use Live Captions, you need an iPhone 11 or later running iOS 16 or newer. The feature uses on-device processing, meaning the transcription happens entirely on your phone and your audio is never sent to Apple's servers. This makes it both fast and private.
+To use Live Captions, you need an iPhone 11 or later running iOS 17 or newer. The feature uses on-device processing, meaning the transcription happens entirely on your phone and your audio is never sent to Apple's servers. This makes it both fast and private.
 
 You turn on Live Captions through the Accessibility settings. Go to Settings, tap Accessibility, scroll down to the "Hearing" section, and tap "Live Captions." Toggle it on. Once enabled, a floating caption bar appears at the top of your screen whenever audio with speech is playing.
 
@@ -970,7 +970,7 @@ Live Captions is also available on Mac (macOS 13 Ventura or later) and on Apple 
     steps: [
       {
         title: `Check your iPhone is compatible`,
-        content: `Live Captions requires an iPhone 11 or later running iOS 16 or newer. To check your iOS version, go to Settings, tap General, then "About." Look for the Software Version number — it should start with 16 or higher. If your version is lower, go to Settings > General > Software Update and install the latest available update.`
+        content: `Live Captions requires an iPhone 11 or later running iOS 17 or newer. To check your iOS version, go to Settings, tap General, then "About." Look for the Software Version number — it should start with 16 or higher. If your version is lower, go to Settings > General > Software Update and install the latest available update.`
       },
       {
         title: `Turn on Live Captions in Accessibility settings`,

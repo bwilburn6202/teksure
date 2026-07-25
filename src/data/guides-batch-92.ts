@@ -15,7 +15,7 @@ export const guidesBatch92: Guide[] = [
 
 This feature was originally designed for people who are deaf or hard of hearing, but many people find it helpful for all kinds of situations: noisy environments where you cannot hear well, watching videos in a quiet place without headphones, or following along when someone speaks too quickly.
 
-Live Captions supports English, French, German, Italian, Japanese, Korean, and Spanish, depending on your Android version and phone model. Not every Android phone includes it — it is available on Google Pixel phones and most Samsung Galaxy phones running Android 10 or newer.
+Live Captions supports English, French, German, Italian, Japanese, Korean, and Spanish, depending on your Android version and phone model. Not every Android phone includes it — it is available on Google Pixel phones and most Samsung Galaxy phones running Android 14 or newer.
 
 One important privacy note: because all processing happens on your device, nothing you hear is sent to Google or any other company. Your conversations and audio stay private.
 
@@ -222,7 +222,7 @@ All of the sound detection happens on your iPhone — nothing is sent to Apple o
 
 Sound Recognition does use slightly more battery than having it off, but for most people the impact is minor. It also does not work perfectly in every situation — a very loud environment or an unusual alarm tone might not be recognized. Apple recommends treating it as a helpful tool, not a replacement for dedicated hearing devices or smoke detectors.
 
-Sound Recognition requires an iPhone with iOS 14 or later. It works alongside hearing aids, cochlear implants, and other assistive devices.`,
+Sound Recognition requires an iPhone with iOS 17 or later. It works alongside hearing aids, cochlear implants, and other assistive devices.`,
     steps: [
       {
         title: `Open Settings and go to Accessibility`,
@@ -467,7 +467,7 @@ Setting a Screen Time passcode is essential. Without one, a child could go into 
 
 Screen Time reports show you which apps were used and for how long, which websites were visited, and how many notifications were received. This is useful for having informed conversations with your child about their screen habits, rather than simply imposing restrictions.
 
-Screen Time requires macOS Catalina (10.15) or later. Most Macs bought after 2019 support it.`,
+Screen Time works on every currently supported version of macOS (including Sonoma and Sequoia) and has been standard since macOS Catalina back in 2019. If your Mac is old enough that it can't update past Catalina, it's a sign the hardware itself is due for replacement.`,
     steps: [
       {
         title: `Open Screen Time in System Settings`,

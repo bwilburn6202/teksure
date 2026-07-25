@@ -411,7 +411,7 @@ iPhone comes with a large selection of built-in ringtones at no cost. You can al
 
 Many people love using a photo of grandchildren, family, pets, or a favorite vacation spot as their wallpaper. Others prefer a clean, simple color or Apple's built-in designs.
 
-On iPhones with iOS 16 or later, the lock screen has become especially customizable — you can add widgets that show the time, weather, calendar events, or battery level. The depth effect feature even puts the lock screen clock behind your subject (like a photo of a person), creating a layered look.
+On iPhones with iOS 17 or later, the lock screen has become especially customizable — you can add widgets that show the time, weather, calendar events, or battery level. The depth effect feature even puts the lock screen clock behind your subject (like a photo of a person), creating a layered look.
 
 You can use any photo from your photo library, a live (animated) photo, a portrait photo for the depth effect, or one of Apple's many built-in wallpapers.
 
@@ -453,7 +453,7 @@ Changing the wallpaper takes about a minute and can be changed as often as you w
     difficulty: `Beginner`,
     body: `By default, all links you tap on your iPhone — in emails, text messages, social media, and other apps — open in Safari, Apple's built-in browser. If you prefer using Google Chrome, Firefox, Microsoft Edge, or another browser, you can change the default so links always open in your preferred browser.
 
-This feature was added in iOS 14 (released 2020). Any iPhone running iOS 14 or later can change the default browser.
+This feature was added in iOS 14 (released 2020). Any iPhone running iOS 17 or later can change the default browser.
 
 What "default browser" means: when you tap a link anywhere on your phone — not just inside a browser — your iPhone decides which browser app to open automatically. Changing the default means tapping a link in Messages opens Chrome (or your chosen browser) instead of Safari.
 
@@ -907,7 +907,7 @@ Filing a report takes about 5 minutes. No immediate personal action results from
     thumbnailEmoji: ``,
     publishedAt: `2026-04-19`,
     difficulty: `Beginner`,
-    body: `The Weather app on iPhone was significantly upgraded with iOS 16 and later, making it one of the most detailed and visually rich weather apps available — and it is completely free and built in.
+    body: `The Weather app on iPhone was significantly upgraded with iOS 17 and later, making it one of the most detailed and visually rich weather apps available — and it is completely free and built in.
 
 Most people only see the main temperature on the app. But scrolling down reveals much more useful information: hourly forecasts for the next 24 hours, 10-day outlook, air quality index (important for people with respiratory conditions), UV index, wind speed and direction, precipitation probability and intensity, sunrise and sunset times, and moon phases.
 

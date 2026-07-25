@@ -350,7 +350,7 @@ export const guidesBatch39: Guide[] = [
     steps: [
       {
         title: `Use iPhone's built-in Duplicates finder`,
-        content: `On iPhone running iOS 16 or later, the Photos app automatically identifies duplicate photos for you. Open Photos → tap "Albums" at the bottom → scroll down to find "Duplicates" under the Utilities section. If your phone found duplicates, they appear here in pairs with a "Merge" button. Tapping "Merge" keeps the highest quality version of each duplicate pair and deletes the other. Tap "Merge All" to remove all duplicates at once, or review each pair before merging.`,
+        content: `On iPhone running iOS 17 or later, the Photos app automatically identifies duplicate photos for you. Open Photos → tap "Albums" at the bottom → scroll down to find "Duplicates" under the Utilities section. If your phone found duplicates, they appear here in pairs with a "Merge" button. Tapping "Merge" keeps the highest quality version of each duplicate pair and deletes the other. Tap "Merge All" to remove all duplicates at once, or review each pair before merging.`,
         tip: `After merging duplicates, the deleted copies go to the "Recently Deleted" album, where they stay for 30 days before being permanently removed. If you merged something by mistake, you can recover it within 30 days.`,
       },
       {

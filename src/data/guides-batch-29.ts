@@ -640,7 +640,7 @@ Do Not Disturb on Android is more granular than many users realize: you can allo
       },
       {
         title: 'View Notification History',
-        content: 'Android 11 and newer have Notification History. Go to Settings → Notifications → Notification history → turn it on. The last 24 hours of dismissed notifications are now stored here. To check it: from the top notification panel, scroll down to find "Notification history," or go back to Settings → Notifications → Notification history.',
+        content: 'Android 14 and newer have Notification History. Go to Settings → Notifications → Notification history → turn it on. The last 24 hours of dismissed notifications are now stored here. To check it: from the top notification panel, scroll down to find "Notification history," or go back to Settings → Notifications → Notification history.',
         tip: 'On Samsung phones, you can check the notification history by swiping down the notification shade and tapping "Manage notifications" at the bottom, or check Settings → Notifications → Advanced → turn on "Notification history."',
       },
     ],

@@ -294,7 +294,7 @@ This feature works on both Windows and Mac computers. It's not available in Chro
     thumbnailEmoji: ``,
     publishedAt: `2026-04-19`,
     difficulty: `Intermediate`,
-    body: `The App Privacy Report is a built-in feature on iPhone (available in iOS 15 and later) that keeps a record of how your apps have been using sensitive data and features over the past seven days. It shows you which apps have accessed your camera, microphone, location, contacts, photos, and more — and exactly how many times.
+    body: `The App Privacy Report is a built-in feature on iPhone (available in iOS 17 and later) that keeps a record of how your apps have been using sensitive data and features over the past seven days. It shows you which apps have accessed your camera, microphone, location, contacts, photos, and more — and exactly how many times.
 
 Many apps request permissions for good reasons. A mapping app needs your location to give directions. A video calling app needs your microphone and camera for calls. But sometimes apps access things more frequently than you might expect — or access things that don't seem necessary for what the app does.
 

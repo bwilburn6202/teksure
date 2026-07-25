@@ -42,3 +42,13 @@ vite.config.ts.timestamp-*.mjs
 # macOS conflict copies (iCloud / file-sync duplicates — e.g. "file 2.ts")
 *[[:space:]]2.*
 *[[:space:]]3.*
+
+# Env files (never commit)
+.env
+.env.*
+
+# Junk
+vite.config.ts.timestamp-*.mjs
+*.stale.bak
+newprobe.txt
+tsc_check_local.json

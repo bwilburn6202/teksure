@@ -909,7 +909,7 @@ One clear warning: do not randomly change settings in Developer Options that you
     slug: `iphone-shortcuts-automation`,
     title: `How to Automate Your iPhone with the Shortcuts App`,
     excerpt: `The Shortcuts app lets your iPhone do things automatically — like sending a text when you get home or turning on Do Not Disturb at bedtime.`,
-    body: `The Shortcuts app comes pre-installed on every iPhone running iOS 13 or newer. Most people have never opened it, which is a shame — it's one of the most genuinely useful apps Apple has ever made. With it, you can set up automations: things your phone does on its own, triggered by a specific time, location, or action, without you having to tap anything.
+    body: `The Shortcuts app comes pre-installed on every iPhone running iOS 17 or newer. Most people have never opened it, which is a shame — it's one of the most genuinely useful apps Apple has ever made. With it, you can set up automations: things your phone does on its own, triggered by a specific time, location, or action, without you having to tap anything.
 
 There's an important distinction between a Shortcut and an Automation. A Shortcut is something you run manually — like a button you tap (or a Siri command you say) that kicks off a sequence of actions. An Automation is something the phone triggers for you automatically based on a condition you define.
 

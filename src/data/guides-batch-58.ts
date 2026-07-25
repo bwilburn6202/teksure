@@ -236,7 +236,7 @@ Widgetsmith is free to download with most features included. A paid subscription
         warning: `Make sure you pick the same size in the home screen widget picker that you created in the Widgetsmith app. A small widget created in Widgetsmith will only appear in the small widget slot.`,
       },
       {
-        title: `Add a widget to your lock screen (iPhone with iOS 16 or later)`,
+        title: `Add a widget to your lock screen (iPhone with iOS 17 or later)`,
         content: `Press and hold on your lock screen until it shows the Edit button at the bottom. Tap Customize, then tap Lock Screen. You will see widget slots below the clock (rectangular strip) and circular slots above the clock. Tap a slot to add a widget. Scroll through the list of apps and choose Widgetsmith. Pick the widget you want and tap it to add it to that slot.`,
       },
       {
@@ -255,7 +255,7 @@ Widgetsmith is free to download with most features included. A paid subscription
     thumbnailEmoji: ``,
     publishedAt: `2026-04-19`,
     difficulty: `Intermediate`,
-    body: `Apple Shortcuts is a free app that comes installed on every iPhone running iOS 13 or later. It lets you create small programs — called shortcuts — that perform multiple steps automatically with one tap or with no tapping at all.
+    body: `Apple Shortcuts is a free app that comes installed on every iPhone running iOS 17 or later. It lets you create small programs — called shortcuts — that perform multiple steps automatically with one tap or with no tapping at all.
 
 You can run a shortcut manually by tapping it (great for things you do often), or you can set it up to run automatically based on a trigger — like the time of day, your location, or when you connect to a specific Wi-Fi network. Automatic shortcuts are called Automations in the app.
 
@@ -656,7 +656,7 @@ HomePod runs Siri, Apple's voice assistant. You say "Hey Siri" followed by a req
 
 The HomePod mini is the smaller, less expensive model (around $99). The standard HomePod offers better sound quality and is larger. Both models set up the same way and have the same Siri capabilities.
 
-Setting up a HomePod requires an iPhone or iPad running iOS 16 or later and an Apple ID (the account you use for the App Store and iCloud). The HomePod connects to your home's Wi-Fi network — it does not use Bluetooth for its connection.
+Setting up a HomePod requires an iPhone or iPad running iOS 17 or later and an Apple ID (the account you use for the App Store and iCloud). The HomePod connects to your home's Wi-Fi network — it does not use Bluetooth for its connection.
 
 Setup is handled almost entirely by your iPhone. You hold the phone near the HomePod, and a setup screen appears on your phone automatically. You tap through a few options and it sets itself up. Most people complete the setup in under five minutes.
 
@@ -957,7 +957,7 @@ Shared albums are free and do not count against your iCloud storage — the phot
 
 One important note: each person you invite must have an Apple ID (the account linked to their iPhone or iPad) to join and contribute to a shared album. People without an Apple device or Apple ID can only view photos via a public website link that you can optionally enable — they cannot add photos.
 
-Shared albums work across iPhones, iPads, and Macs. If a family member has an older iPhone or iPad running iOS 12 or later, they can use shared albums.`,
+Shared albums work across iPhones, iPads, and Macs. If a family member has an older iPhone or iPad running iOS 17 or later, they can use shared albums.`,
     steps: [
       {
         title: `Open the Photos app and go to Albums`,
