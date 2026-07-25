@@ -58,6 +58,26 @@ TekSure is a tech support and digital literacy platform for non-technical users 
 `forum_threads`, `forum_replies`, `guide_ratings`, `guide_progress`, `testimonials`,
 `community_questions`, `community_question_votes`
 
+## Discoverability (added 2026-07-25 — read before touching the build)
+
+The site is prerendered. `npm run build` runs `vite build`, then `scripts/prerender.mjs`,
+which writes real static HTML for all ~7,090 routes with per-page title/meta/canonical/
+JSON-LD. Without it every URL serves the same generic title and the site is effectively
+invisible to Bing, social crawlers, and AI answer engines.
+
+- **Never remove the prerender step from `build`.** `build:spa` exists for a fast
+  client-only build if you need one.
+- **`scripts/prerender.mjs` must end with `process.exit(0)`.** The SSR bundle holds the
+  event loop open; without it the build hangs and Vercel times the deployment out while
+  continuing to serve the previous build.
+- **`vercel.json` must contain only schema-valid keys.** Vercel rejects the entire
+  deployment on an unknown property (a `"comment"` key once did exactly that). Put
+  explanations in the generator scripts.
+- **Check what is live with `curl -s https://www.teksure.com/build-info.json`** — it
+  reports the deployed commit and prerendered page count.
+- Redirects come from `<Navigate>` routes in `App.tsx` via `scripts/generate-redirects.mjs`.
+  Add a redirect there, not by hand in `vercel.json`.
+
 ## Invariants — do not break these (added 2026-07-25 audit)
 
 - **`GuideCategory` derives from `GUIDE_CATEGORIES`** in `src/data/guides.ts`. Add a new

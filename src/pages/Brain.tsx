@@ -88,17 +88,24 @@ function findRelevantGuides(query: string, count = 5) {
 
 async function queryBrainAPI(question: string, contextGuides: typeof guides): Promise<string | null> {
   try {
-    const context = contextGuides.slice(0, 3).map(g =>
-      `GUIDE: ${g.title}\nURL: https://www.teksure.com/guides/${g.slug}\nSUMMARY: ${g.excerpt}\n${g.steps?.slice(0, 3).map(s => `- ${s.title}: ${s.content}`).join('\n') || ''}`
-    ).join('\n\n---\n\n');
+    // Generate a session ID for this user (or retrieve from localStorage)
+    let sessionId = localStorage.getItem('teksure_session_id');
+    if (!sessionId) {
+      sessionId = crypto.randomUUID();
+      localStorage.setItem('teksure_session_id', sessionId);
+    }
 
-    const { data, error } = await supabase.functions.invoke('brain-query', {
-      body: { question, context },
+    const { data, error } = await supabase.functions.invoke('tekbrain-ollama-chat', {
+      body: {
+        message: question,
+        session_id: sessionId,
+      },
     });
 
     if (error || !data?.answer) return null;
     return data.answer;
-  } catch {
+  } catch (err) {
+    console.error('Brain API error:', err);
     return null;
   }
 }
