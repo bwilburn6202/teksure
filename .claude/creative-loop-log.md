@@ -1,3 +1,9 @@
+## Cycle 6 — 2026-07-25
+
+- Batch: `guides-batch-328.ts`
+- Walmart Grocery Pickup and Delivery for Seniors: Step-by-Step (`use-walmart-grocery-pickup-delivery`)
+- How to Pair Bluetooth Hearing Aids to Your iPhone (`connect-iphone-to-bluetooth-hearing-aids`)
+
 ## Cycle 5 — 2026-05-05
 
 - Batch: `guides-batch-131.ts`

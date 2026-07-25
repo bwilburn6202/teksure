@@ -1,7 +1,22 @@
 {
   "version": "1.0",
-  "cycleCount": 5,
+  "cycleCount": 6,
   "history": [
+    {
+      "cycle": 6,
+      "batchNumber": 328,
+      "topics": [
+        {
+          "slug": "use-walmart-grocery-pickup-delivery",
+          "title": "Walmart Grocery Pickup and Delivery for Seniors: Step-by-Step"
+        },
+        {
+          "slug": "connect-iphone-to-bluetooth-hearing-aids",
+          "title": "How to Pair Bluetooth Hearing Aids to Your iPhone"
+        }
+      ],
+      "timestamp": "2026-07-25T15:32:56.661Z"
+    },
     {
       "cycle": 5,
       "batchNumber": 131,
@@ -86,7 +101,10 @@
     "use-google-maps-favorite-saved-places",
     "use-iphone-emergency-sos-feature",
     "free-tax-preparation-aarp-irs",
-    "use-spotify-pandora-free-music-streaming"
+    "use-spotify-pandora-free-music-streaming",
+    "set-up-amazon-echo-alexa-seniors",
+    "use-walmart-grocery-pickup-delivery",
+    "connect-iphone-to-bluetooth-hearing-aids"
   ],
-  "lastRun": "2026-05-05T05:16:21.890Z"
+  "lastRun": "2026-07-25T15:32:56.661Z"
 }
