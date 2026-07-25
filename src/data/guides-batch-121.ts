@@ -127,7 +127,7 @@ After depositing, keep the physical check for at least 14 days before destroying
 
 Never deposit a check you did not expect to receive. Scammers sometimes send real-looking checks with a request to deposit them and send back part of the money. These are called "overpayment scams" — the check bounces weeks later and you lose whatever you sent.
 
-(Source: Consumer Financial Protection Bureau, consumerfinance.gov/ask-cfpb/what-is-mobile-check-deposit)`,
+(Source: Consumer Financial Protection Bureau, consumerfinance.gov/consumer-tools/bank-accounts/)`,
     steps: [
       {
         title: 'Sign the back of the check',
@@ -423,7 +423,7 @@ Acting quickly is key. As soon as you notice an incorrect charge, contact your b
 
 Keep records of every communication with your bank: the date you called, the name of the representative, and the case or reference number they give you. If your initial dispute is denied, you have the right to request a written explanation and to escalate the complaint.
 
-(Source: Consumer Financial Protection Bureau, consumerfinance.gov/ask-cfpb/how-do-i-dispute-an-error-on-my-bank-account-statement)`,
+(Source: Consumer Financial Protection Bureau, consumerfinance.gov/ask-cfpb/how-do-i-dispute-an-error-on-my-checking-account-consumer-report-en-2029)`,
     steps: [
       {
         title: 'Verify the charge is actually incorrect',
@@ -701,17 +701,17 @@ One important note: once direct deposit is set up, it usually takes one pay peri
     publishedAt: '2026-05-03',
     lastVerifiedAt: '2026-05-03',
     difficulty: 'Beginner',
-    body: `An overdraft happens when you spend more money than is currently in your checking account. For example, if you have $50 in your account and make a $75 purchase, your account goes $25 negative (overdrawn). Most banks charge an overdraft fee of $25 to $35 per transaction when this happens.
+    body: `An overdraft happens when you spend more money than is in your checking account. Say you have $50 and make a $75 purchase. Your account goes $25 negative. Most banks charge a fee of $25 to $35 when this happens.
 
-Banks call their overdraft programs "overdraft protection" or "overdraft coverage," but this is somewhat misleading — it means the bank will cover the transaction (rather than declining it) and then charge you a fee for doing so.
+Banks call this "overdraft protection" or "overdraft coverage." That name is a bit misleading. It means the bank covers the transaction instead of declining it, then charges you a fee for doing so.
 
-The important thing to know is that you can opt out of overdraft coverage for debit card transactions. If you opt out, the bank will decline your debit card if you do not have enough money, and you will pay no fee. While having a card declined is mildly embarrassing, it is far better than a $35 fee.
+Here is the key fact: you can opt out of overdraft coverage on debit card purchases. If you opt out, the bank declines your card when you don't have enough money. You pay no fee. A declined card is mildly embarrassing. It is far better than a $35 fee.
 
-Federal law requires banks to get your permission before enrolling you in overdraft coverage for debit card and ATM transactions. However, many banks auto-enroll customers. You can call your bank or log into your account settings to check your status and opt out.
+Federal law says banks need your permission to enroll you in this coverage for debit card and ATM transactions. But many banks auto-enroll customers anyway. Call your bank, or check your account settings, to see your status and opt out.
 
-A better form of overdraft protection — and one that banks do not always advertise — is linking your checking account to your savings account. If you overdraft, the bank automatically transfers from savings instead of charging a fee (or charges a much smaller transfer fee of $5-$12 instead of the full overdraft fee).
+A better option banks don't always advertise: link your checking account to your savings account. If you overdraft, the bank pulls from savings instead of charging the full fee. This transfer usually costs $5 to $12, or is free.
 
-(Source: Consumer Financial Protection Bureau, consumerfinance.gov/ask-cfpb/what-is-overdraft-protection)`,
+(Source: Consumer Financial Protection Bureau, consumerfinance.gov/ask-cfpb/what-is-an-overdraft-en-1035)`,
     steps: [
       {
         title: 'Check whether you are enrolled in overdraft coverage',
@@ -758,7 +758,7 @@ Beyond the annual report, several free services provide ongoing credit score mon
 
 The full credit report (which is different from the score) shows every account you have ever had, your payment history, and any derogatory marks like late payments or collections. Reviewing it once a year helps you catch errors and identity theft.
 
-(Source: Consumer Financial Protection Bureau, consumerfinance.gov/ask-cfpb/what-is-a-credit-score)`,
+(Source: Consumer Financial Protection Bureau, consumerfinance.gov/ask-cfpb/what-is-a-credit-score-en-315)`,
     steps: [
       {
         title: 'Get your free annual credit report',
@@ -804,7 +804,7 @@ Some well-known and FDIC-insured online banks offering high-yield savings includ
 
 You will need your Social Security Number, a government-issued ID (driver's license or passport), your current address, and your existing checking account information to fund the new account. The application takes about 10 minutes. Most require a small opening deposit ($0-$100).
 
-(Source: FDIC, fdic.gov/resources/consumers/consumer-news/2023-winter.html)`,
+(Source: FDIC, fdic.gov/consumer-resource-center/fdic-consumer-news)`,
     steps: [
       {
         title: 'Compare options and choose a bank',
@@ -842,17 +842,17 @@ You will need your Social Security Number, a government-issued ID (driver's lice
     publishedAt: '2026-05-03',
     lastVerifiedAt: '2026-05-03',
     difficulty: 'Intermediate',
-    body: `A wire transfer is an electronic method of sending money that is fast (usually same-day or next-day), secure, and — most critically — irreversible once completed. Once you send a wire transfer, the money cannot be recalled. This is what makes them both useful for legitimate large transactions and dangerous in the wrong hands.
+    body: `A wire transfer sends money fast, usually the same day or next day. It is secure. But here is the most important fact: once it is sent, it cannot be undone. That makes wire transfers useful for real, large transactions — and dangerous in the wrong hands.
 
-Wire transfers are appropriate for: closing on a home purchase (sending your down payment to the title company), large international transactions, or paying a contractor a large sum when other methods are not accepted.
+Wire transfers make sense for: closing on a home (sending your down payment to the title company), large international transactions, or paying a contractor a large sum when no other method works.
 
-Wire transfers are NOT appropriate for: paying someone you met online, claiming a prize or inheritance, paying bail for a family member you haven't personally confirmed is in trouble, paying for an unexpected debt or emergency involving a stranger, or any situation where you feel pressured to act quickly.
+Wire transfers do NOT make sense for: paying someone you met online, claiming a prize or inheritance, posting bail for a family member you have not personally confirmed is in trouble, or any situation where someone is pressuring you to act fast.
 
-The typical domestic wire transfer fee is $15-$35 to send and $0-$15 to receive. International wire transfers cost $35-$50 to send and take 1-5 business days.
+A typical domestic wire costs $15 to $35 to send, and $0 to $15 to receive. International wires cost $35 to $50 and take 1 to 5 business days.
 
-Grandparent scams, IRS impersonation scams, romance scams, and tech support scams all commonly end with a request to wire money. If anyone asks you to wire money unexpectedly, stop and call a trusted family member before proceeding. Your bank may also temporarily delay a wire transfer if it appears suspicious — this is a feature, not an obstacle.
+Grandparent scams, IRS impersonation scams, romance scams, and tech support scams often end with a request to wire money. If anyone asks you to wire money out of the blue, stop. Call a trusted family member before you do anything. Your bank may also delay a wire that looks suspicious — that is a safety feature, not a hassle.
 
-(Source: FTC, consumer.ftc.gov/articles/how-to-wire-money-safely)`,
+(Source: FTC, consumer.ftc.gov/articles/what-know-you-wire-money)`,
     steps: [
       {
         title: 'Verify the recipient independently',

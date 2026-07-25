@@ -13,11 +13,11 @@ export const guidesBatch7: Guide[] = [
     thumbnailEmoji: '',
     publishedAt: '2026-04-16',
     difficulty: 'Beginner',
-    body: `A Chromebook is a laptop made by various manufacturers — including HP, Lenovo, and Acer — that runs Chrome OS instead of Windows or macOS. Chrome OS was built by Google and works a lot like the Chrome web browser you may already use. Almost everything on a Chromebook happens inside a browser window, so if you spend most of your computer time on websites, email, or video calls, a Chromebook can handle all of that very well.
+    body: `A Chromebook is a laptop that runs Chrome OS instead of Windows or macOS. HP, Lenovo, Acer, and other companies make them. Chrome OS was built by Google. It works a lot like the Chrome web browser you may already use. Almost everything happens inside a browser window. If you spend most of your time on websites, email, or video calls, a Chromebook handles all of that well.
 
-Chromebooks tend to cost less than traditional laptops — many models are available for $200–$400 — and they start up quickly, update automatically, and are generally considered more resistant to viruses than Windows PCs. The main trade-off is that software you have installed on a Windows computer, like older versions of Microsoft Word or specialized programs, will not run directly on a Chromebook.
+Chromebooks usually cost less than traditional laptops. Many models run $200 to $400. They start up fast, update automatically, and resist viruses better than Windows PCs. The trade-off: software you have used on Windows, like older Microsoft Word versions or specialized programs, will not run directly on a Chromebook.
 
-If you mostly browse the web, use Gmail or webmail, video chat on Zoom or Google Meet, and watch videos on YouTube or Netflix, a Chromebook will meet all of those needs without the complexity of a full Windows system.`,
+Do you mostly browse the web, use Gmail, video chat on Zoom or Google Meet, and watch YouTube or Netflix? A Chromebook meets all of those needs, without the complexity of a full Windows system.`,
     steps: [
       { title: 'Understand what Chrome OS is', content: 'Chrome OS is an operating system — the software that runs the computer. It is made by Google and built around the Chrome browser. Think of it as a laptop that lives mostly on the internet.' },
       { title: 'Check what you use your computer for', content: 'Make a list of things you do on a computer: email, browsing, video calls, streaming. If those are your main uses, a Chromebook can handle all of them. If you need specific Windows software like TurboTax desktop or Adobe Photoshop, check whether a web version exists first.' },

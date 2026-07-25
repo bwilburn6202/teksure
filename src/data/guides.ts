@@ -5954,7 +5954,9 @@ const coreGuides: Guide[] = [
     thumbnailEmoji: '🔒',
     publishedAt: '2026-03-30',
     difficulty: 'Beginner',
-    body: `Even with Location Services turned off, your phone can still be tracked via Wi-Fi network scanning, Bluetooth signals, cell tower triangulation, and apps that have been granted location access at the system level. For stronger privacy: turn on Airplane Mode (disables all radios), disable Wi-Fi and Bluetooth separately, and review which apps have location permission (Settings > Privacy > Location Services on iPhone, or Settings > Location on Android) — set non-essential apps to "Never" or "Only While Using."`,
+    body: `Turning off Location Services does not make your phone invisible. It can still be tracked through Wi-Fi scanning, Bluetooth signals, and nearby cell towers. Some apps keep location access even after you think you turned it off.
+
+For stronger privacy, do three things. Turn on Airplane Mode to disable all radios at once. Turn off Wi-Fi and Bluetooth separately too. Then review which apps have location permission. On iPhone: Settings, then Privacy, then Location Services. On Android: Settings, then Location. Set apps you don't need to "Never" or "Only While Using."`,
     steps: [
       {
         title: 'Understand how location tracking still works with Location Services off',

@@ -140,9 +140,9 @@ You can also use Yelp to make a reservation, check open hours, or see a menu wit
     thumbnailEmoji: '',
     publishedAt: '2026-04-17',
     difficulty: 'Beginner',
-    body: `Most car insurance companies now let you file a claim entirely online or through their app, usually within minutes of the accident. You upload photos of the damage, answer a few questions, and a claim adjuster is assigned to your case.
+    body: `Most car insurance companies let you file a claim online or through their app. You can usually start within minutes of the accident. You upload photos of the damage, answer a few questions, and an adjuster is assigned to your case.
 
-Filing online often moves faster than phoning because you can attach photos and documents right away instead of mailing them in.`,
+Filing online is often faster than phoning. You attach photos and documents right away instead of mailing them in.`,
     steps: [
       { title: 'Make sure everyone is safe first', content: 'Before filing anything, check for injuries and call 911 if anyone is hurt. Move to a safe spot out of traffic if you can, and turn on your hazard lights.' },
       { title: 'Take photos and get information', content: 'Photograph all damage to both cars, the license plates, the scene from several angles, and any road signs. Exchange names, phone numbers, insurance companies, and policy numbers with the other driver.' },
@@ -182,9 +182,9 @@ Act quickly — most insurers expect a claim within 30 to 60 days of the damage,
     thumbnailEmoji: '',
     publishedAt: '2026-04-17',
     difficulty: 'Beginner',
-    body: `Most of the time, your doctor's office bills your health insurance directly and you never see the paperwork. But if you pay out of pocket for an out-of-network visit, a travel illness, or a new prescription, you can submit a claim to get some money back.
+    body: `Usually, your doctor's office bills your insurance directly and you never see the paperwork. But sometimes you pay out of pocket — for an out-of-network visit, an illness while traveling, or a new prescription. In those cases, you can submit a claim to get some money back.
 
-Each insurance company has its own claim form — the process is similar everywhere, but the form is on your insurer's website.`,
+Each insurance company has its own claim form. The process is similar everywhere. You will find the form on your insurer's website.`,
     steps: [
       { title: 'Keep all receipts and records', content: `Ask the doctor's office for an itemized bill showing the services, date, provider name, and the billing codes (called CPT codes). A generic credit card receipt is not enough.` },
       { title: 'Sign in to your insurance member portal', content: `Go to your insurance company's website — like UnitedHealthcare, Blue Cross Blue Shield, or Cigna — and sign in. Look in the menu for "Claims" or "Submit a claim."` },

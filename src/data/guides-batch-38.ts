@@ -374,7 +374,9 @@ export const guidesBatch38: Guide[] = [
     thumbnailEmoji: '',
     publishedAt: '2026-04-19',
     difficulty: 'Beginner',
-    body: `iPhone's Screen Time feature (introduced in iOS 12 and improved in every version since) gives you detailed reports on how you use your phone and lets you set time limits on specific app categories — like social media or games — that cut off access when the limit is reached. Parents can use it to manage children's phones remotely through Family Sharing, but it is also useful for adults who want to be more intentional about their own phone use.`,
+    body: `Screen Time is a feature built into every iPhone. It shows you detailed reports on how you use your phone. It also lets you set time limits on app categories, like social media or games. When the limit is reached, the app stops opening.
+
+Parents can use Screen Time to manage a child's phone remotely through Family Sharing. It also works well for adults who want to use their phone more intentionally.`,
     steps: [
       {
         title: 'Turn on Screen Time',

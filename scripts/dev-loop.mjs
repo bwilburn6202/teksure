@@ -433,6 +433,53 @@ function checkSeniorUx() {
   }
 }
 
+/**
+ * External source-citation health, via scripts/check-source-links.mjs.
+ *
+ * Guides cite official sources (FTC, CFPB, AARP, Apple/Google support, etc.)
+ * both in a structured `sourceUrl:` field and inline "(Source: ... url)"
+ * notes. The July 2026 audit found 18 of these had gone dead — moved,
+ * retired, or renamed — some on guides about scams and fraud, which is
+ * exactly the content where a broken "verify this" link costs the most
+ * trust. This makes external requests, so it is opt-in per run (skip it
+ * with --skip=source-links) rather than blocking every cycle on network
+ * access.
+ */
+function checkSourceLinks() {
+  try {
+    const res = spawnSync('node', ['scripts/check-source-links.mjs', '--json'], {
+      cwd: ROOT,
+      encoding: 'utf8',
+      maxBuffer: 20 * 1024 * 1024,
+      timeout: 120000,
+    });
+    const parsed = JSON.parse(res.stdout);
+    const { report, broken } = parsed;
+    return {
+      name: 'source-links',
+      label: 'External source link health',
+      ok: report.broken === 0,
+      severity: report.broken === 0 ? 'info' : 'warn',
+      summary: `${report.urlsChecked} source URLs checked, ${report.broken} confirmed broken (404/410), ${report.unreachable} unreachable (often bot-blocking).`,
+      details: broken
+        .slice(0, 15)
+        .map((b) => `- ${b.status} ${b.url} — used by ${b.refs.map((r) => r.slug).join(', ')}`)
+        .join('\n'),
+      metrics: report,
+    };
+  } catch (err) {
+    return {
+      name: 'source-links',
+      label: 'External source link health',
+      ok: true,
+      severity: 'info',
+      summary: `check did not run (${err.message.split('\n')[0]}).`,
+      details: '',
+      metrics: null,
+    };
+  }
+}
+
 const ALL_CHECKS = [
   { name: 'metrics', fn: checkSiteMetrics },
   { name: 'slugs', fn: checkSlugs },
@@ -442,6 +489,7 @@ const ALL_CHECKS = [
   { name: 'old-guides', fn: checkOldGuides },
   { name: 'duplicate-titles', fn: checkDuplicateTitles },
   { name: 'senior-ux', fn: checkSeniorUx },
+  { name: 'source-links', fn: checkSourceLinks },
 ];
 
 // ── State + backlog ──────────────────────────────────────────────────────

@@ -130,9 +130,18 @@ for (const file of readdirSync(DATA)) {
   const re = /slug:\s*(['"`])([^'"`]+)\1[\s\S]{0,3000}?body:\s*([`'"])((?:\\.|(?!\3)[\s\S])*)\3/g;
   let m;
   while ((m = re.exec(text)) !== null) {
+    // Line breaks (esp. bullet list items) don't carry sentence punctuation,
+    // which used to make the FK formula treat a whole bulleted list as one
+    // giant run-on sentence and report absurd grades (30+) for guides that
+    // are actually easy to scan. Treat a line break as a sentence boundary.
+    // Bodies are backtick template literals, so line breaks are real \n
+    // bytes in the source, not the two-character escape "\n" — both are
+    // handled here since some batches also use escaped strings.
     const body = m[4]
-      .replace(/\\n/g, ' ')
-      .replace(/[*_#>`]/g, ' ')
+      .replace(/\\n/g, '. ')
+      .replace(/\r?\n+/g, '. ')
+      .replace(/[*_#>`:-]/g, ' ')
+      .replace(/\.\s*\./g, '.')
       .replace(/\s+/g, ' ');
     const g = fleschKincaid(body);
     if (g === null) continue;

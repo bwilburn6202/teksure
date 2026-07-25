@@ -55,7 +55,7 @@ One common hiccup: people click the link too early and land on a blank page, or 
       },
     ],
     sourceName: 'HHS.gov — Telehealth for Patients',
-    sourceUrl: 'https://telehealth.hhs.gov/patients/getting-started',
+    sourceUrl: 'https://telehealth.hhs.gov/patients',
   },
 
   {
@@ -524,7 +524,7 @@ If you think you have been scammed or someone is trying, do not feel embarrassed
       },
     ],
     sourceName: 'FTC Consumer Advice — Investment Scams',
-    sourceUrl: 'https://consumer.ftc.gov/articles/what-know-about-investment-scams',
+    sourceUrl: 'https://consumer.ftc.gov/articles/investment-scams',
   },
 
   {
@@ -580,8 +580,8 @@ Most smart TVs also want you to create or sign in to a free account with the TV 
         content: 'On the Home screen, most TVs let you rearrange the app icons so your most-used app (say, Netflix or YouTube) sits first. This makes everyday use much easier — one click to the app you watch most.',
       },
     ],
-    sourceName: 'How-To Geek — How to Set Up a Smart TV',
-    sourceUrl: 'https://www.howtogeek.com/how-to-set-up-your-new-smart-tv/',
+    sourceName: "Tom's Guide — How to Set Up Your New Smart TV",
+    sourceUrl: 'https://www.tomsguide.com/us/set-up-smart-tv,review-6057.html',
   },
 
   {
@@ -633,8 +633,8 @@ Be careful about giving the app permission to access your location and notificat
         content: 'Medication is serious business. After setting up the app, ask a grown child, a caregiver, or your pharmacist to look at your medication list on the app together with you — to make sure everything you take is listed correctly.',
       },
     ],
-    sourceName: 'MedlinePlus — Managing Your Medications',
-    sourceUrl: 'https://medlineplus.gov/managingyourmedications.html',
+    sourceName: 'MedlinePlus — Keeping Your Medicines Organized',
+    sourceUrl: 'https://medlineplus.gov/ency/patientinstructions/000600.htm',
   },
 
   {
@@ -903,8 +903,8 @@ The best defense is a simple rule: if a call demands urgency, money, or secrecy 
         content: 'File a report at ReportFraud.ftc.gov. If you lost money or sent anything, also file at IC3.gov (FBI Internet Crime Complaint Center). Reports help investigators shut down scam operations — they truly do make a difference.',
       },
     ],
-    sourceName: 'FTC Consumer Advice — Government Imposter Scams',
-    sourceUrl: 'https://consumer.ftc.gov/articles/government-imposter-scams',
+    sourceName: 'FTC Consumer Advice — How To Avoid a Government Impersonation Scam',
+    sourceUrl: 'https://consumer.ftc.gov/articles/how-avoid-government-impersonation-scam',
   },
 
   {
@@ -956,8 +956,8 @@ The emotional side of this is the hardest part. People who have been scammed oft
         content: 'Even if you did not pay, report the recovery scam call or email to ReportFraud.ftc.gov and IC3.gov. Every report helps investigators identify and shut down these operations.',
       },
     ],
-    sourceName: 'FTC Consumer Advice — Lost money to a scam? Beware of "recovery" scams',
-    sourceUrl: 'https://consumer.ftc.gov/articles/lost-money-scam-watch-out-refund-and-recovery-scams',
+    sourceName: 'FTC Consumer Advice — Refund and Recovery Scams',
+    sourceUrl: 'https://consumer.ftc.gov/articles/refund-and-recovery-scams',
   },
 
   {
@@ -1333,6 +1333,6 @@ If you ever delete an app by accident, do not worry. Go to the App Store or Play
       },
     ],
     sourceName: 'Apple Support — Delete apps on your iPhone',
-    sourceUrl: 'https://support.apple.com/en-us/108733',
+    sourceUrl: 'https://support.apple.com/en-us/101550',
   },
 ];

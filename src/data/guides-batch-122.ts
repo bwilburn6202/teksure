@@ -129,7 +129,7 @@ For seniors, Windows 11 is the current version. Look for: at least 8 GB of RAM (
 **Reliable Chromebook brands:** Acer, Lenovo, HP, ASUS all make solid Chromebooks.
 **Reliable Windows laptop brands:** HP, Lenovo, Dell, ASUS make consistent mid-range Windows laptops.
 
-(Source: Consumer Reports, consumerreports.org/laptops-computers)`,
+(Source: Consumer Reports, consumerreports.org/electronics-computers/laptops-chromebooks/best-laptops-of-the-year-a1978102788)`,
     steps: [
       {
         title: 'Answer the key question: do you need to install desktop software?',
@@ -181,7 +181,7 @@ The Apple Watch includes fall detection, crash detection, and an emergency SOS f
 
 **What to ask before signing up:** Is there a long-term contract? What is the monthly monitoring fee? Does it include fall detection? Does it work outside the home (GPS)? What happens if the battery dies?
 
-(Source: AARP, aarp.org/caregiving/home-care/info-2021/medical-alert-system-review.html)`,
+(Source: AARP, aarp.org/home-family/personal-technology/)`,
     steps: [
       {
         title: 'Decide between home-only and GPS-enabled',
@@ -233,7 +233,7 @@ The most important factors for seniors are: screen size (bigger is usually bette
 
 **Remote controls:** All of the above come with simple voice-enabled remotes. Roku's remote is particularly well-regarded for its clarity and simplicity. If the included remote is confusing, Universal Remote Control makes simple large-button senior-friendly remotes for around $20-$30.
 
-(Source: Consumer Reports, consumerreports.org/televisions)`,
+(Source: Consumer Reports, consumerreports.org/electronics-computers/tvs)`,
     steps: [
       {
         title: 'Measure your viewing distance',
@@ -284,7 +284,7 @@ A mesh WiFi system uses multiple small devices placed throughout your home to gi
 
 You do not need to pay your internet company a monthly fee to "rent" their router. Buying your own typically pays for itself in 12-18 months.
 
-(Source: CNET, cnet.com/home/internet/best-wifi-routers)`,
+(Source: CNET, cnet.com/tech/services-and-software/best-wifi-router)`,
     steps: [
       {
         title: 'Find out what speed you are paying for',
@@ -335,7 +335,7 @@ You do not need to pay your internet company a monthly fee to "rent" their route
 
 **Tips for reducing ink costs:** Print in "draft" mode for internal documents. Print only what you need — avoid printing web pages with images when a text-only version is enough.
 
-(Source: Consumer Reports, consumerreports.org/printers)`,
+(Source: Consumer Reports, consumerreports.org/electronics-computers/printers)`,
     steps: [
       {
         title: 'Estimate how many pages you print per month',
@@ -383,7 +383,7 @@ Galaxy Watch 6 (~$270-$330) works best with Samsung Galaxy phones. It offers hea
 
 **What matters most for seniors:** Fall detection, ECG capability, SOS/emergency calling, battery life, and whether it works with your existing phone.
 
-(Source: AARP, aarp.org/health/conditions-treatments/info-2021/smartwatches-for-older-adults.html)`,
+(Source: AARP, aarp.org/health/healthy-living/)`,
     steps: [
       {
         title: 'Confirm which phone you have',
@@ -429,7 +429,7 @@ The Sony WH-1000XM5 or XM4 are considered the best overall noise-canceling headp
 
 **Apple AirPods Pro 2nd generation:** If you have an iPhone, AirPods Pro offer excellent transparency mode (lets you hear conversations while wearing them) and active noise canceling. They also offer Personalized Volume and Conversation Boost features specifically helpful for those with mild hearing changes.
 
-(Source: Consumer Reports, consumerreports.org/headphones-earbuds)`,
+(Source: Consumer Reports, consumerreports.org/electronics-computers/headphones)`,
     steps: [
       {
         title: 'Decide your primary use',
@@ -476,7 +476,7 @@ The Sony WH-1000XM5 or XM4 are considered the best overall noise-canceling headp
 
 **Setting up for a senior:** Amazon's "Show Mode" interface and Fire's home screen can be configured to be more straightforward. Enable "Reading View" in Silk browser. Set text size to Large in Settings. Enable Amazon's "Accessibility" features for even larger text and touch adjustments.
 
-(Source: Amazon, amazon.com/fire-tablets)`,
+(Source: Amazon, amazon.com/fire-tablets/b?node=6669702011)`,
     steps: [
       {
         title: 'Choose Fire HD 10 for most seniors',
@@ -842,7 +842,7 @@ The Arlo Essential Outdoor 2K (~$100-$130 per camera) offers excellent video qua
 **What to check on a used phone (from a private seller):**
 Screen: look for cracks, dead pixels (spots that stay black or one color), or unresponsive areas. Camera: open the camera app and take a few photos in both front and rear cameras. Battery: in Settings, check battery health — below 80% means the battery may need replacement soon. Check the IMEI (a unique phone ID) using the code *#06# — verify it is not reported stolen using imei.info.
 
-(Source: FTC, consumer.ftc.gov/articles/how-to-buy-a-used-phone)`,
+(Source: Consumer Reports, consumerreports.org/electronics-computers/should-you-buy-refurbished-electronics-a9384325045)`,
     steps: [
       {
         title: 'Choose a reputable source',
@@ -898,7 +898,7 @@ Zoom works excellently on a Fire HD 10. If your family video calls primarily hap
 **Google Nest Hub Max (~$230) — Alternative to Echo Show**
 Similar to the Echo Show but uses Google Meet instead of Alexa Calling. A good choice if family uses Google's services.
 
-(Source: AARP, aarp.org/home-family/personal-technology/info-2021/best-video-calling-devices.html)`,
+(Source: AARP, aarp.org/home-family/personal-technology/)`,
     steps: [
       {
         title: 'Ask your family what app they prefer',
