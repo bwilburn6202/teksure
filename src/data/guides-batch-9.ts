@@ -539,14 +539,14 @@ You can use your insurance, or pay cash. Amazon shows both prices before you buy
   {
     slug: 'transfer-prescription-new-pharmacy',
     title: 'How to Transfer a Prescription to a New Pharmacy',
-    excerpt: 'Move your prescription from one pharmacy to another — usually you just need to call the new pharmacy and they handle it.',
+    excerpt: 'Move your prescription from one pharmacy to another — usually you need to call the new pharmacy and they handle it.',
     category: 'health-tech',
     tags: ['prescription', 'transfer', 'pharmacy', 'CVS', 'Walgreens'],
     readTime: '5 min',
     thumbnailEmoji: '',
     publishedAt: '2026-04-17',
     difficulty: 'Beginner',
-    body: `If you move, find a cheaper pharmacy, or just want a location closer to home, transferring your prescription is quick. You do not need to call your doctor — the new pharmacy handles everything by talking directly to your old pharmacy.
+    body: `If you move, find a cheaper pharmacy, or want a location closer to home, transferring your prescription is quick. You do not need to call your doctor — the new pharmacy handles everything by talking directly to your old pharmacy.
 
 The transfer usually takes a few hours. Most prescriptions can be transferred, though controlled drugs like certain pain or anxiety medicines sometimes need a new prescription from your doctor.`,
     steps: [

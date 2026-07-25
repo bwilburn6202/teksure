@@ -13,6 +13,7 @@
  */
 
 import { supabase } from '@/integrations/supabase/client';
+import type { Json } from '@/integrations/supabase/types';
 
 /* ── Types ─────────────────────────────────────────────────────── */
 
@@ -218,7 +219,7 @@ export async function observe(payload: ObservePayload): Promise<MemoryEntry | nu
         tier: entry.tier,
         category: entry.category,
         key: entry.key,
-        value: sanitized,
+        value: sanitized as Json,
         importance: entry.importance,
         access_count: 0,
         forget_after: entry.forgetAfter,

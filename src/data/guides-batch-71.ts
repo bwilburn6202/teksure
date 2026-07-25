@@ -674,7 +674,7 @@ For privacy, consider making your account Private in Settings so only people you
       },
       {
         title: `Post your first photo`,
-        content: `Tap the + icon at the bottom of the screen. Select a photo from your camera roll or take a new one. Optionally add a filter by tapping one of the style options. Write a caption in the text box — describe what's in the photo, share a thought, or just add a few words. Tap Share to post it.`,
+        content: `Tap the + icon at the bottom of the screen. Select a photo from your camera roll or take a new one. Optionally add a filter by tapping one of the style options. Write a caption in the text box — describe what's in the photo, share a thought, or add a few words. Tap Share to post it.`,
       },
       {
         title: `Set your account to private`,
@@ -916,7 +916,7 @@ If you want to use Discord for a family group or small community, you can create
       {
         title: `Join a voice channel`,
         content: `Voice channels appear below the text channels in the sidebar without a # symbol. Click any voice channel name to join it instantly — you'll hear anyone else currently in the channel and they'll hear you. A green border around your profile picture in the bottom left confirms your microphone is active. Click the disconnect button (phone with an X) to leave the voice channel.`,
-        tip: `If you just want to listen without speaking, click the microphone icon in the bottom left to mute yourself after joining a voice channel.`,
+        tip: `If you want to listen without speaking, click the microphone icon in the bottom left to mute yourself after joining a voice channel.`,
       },
       {
         title: `Reduce notifications`,
@@ -1099,7 +1099,7 @@ The Scribble feature is one of the most practical additions: handwrite in any te
     steps: [
       {
         title: `Check compatibility and connect your Pencil`,
-        content: `Verify which Apple Pencil your iPad supports at support.apple.com/en-us/chart/ipad-apple-pencil-compatibility. For the 2nd generation Pencil, simply attach it to the magnetic side of your iPad — it pairs and starts charging automatically. For the 1st generation, connect it to the Lightning or USB-C port briefly to pair.`,
+        content: `Verify which Apple Pencil your iPad supports at support.apple.com/en-us/chart/ipad-apple-pencil-compatibility. For the 2nd generation Pencil, attach it to the magnetic side of your iPad — it pairs and starts charging automatically. For the 1st generation, connect it to the Lightning or USB-C port briefly to pair.`,
       },
       {
         title: `Open Notes and start writing`,
@@ -1236,7 +1236,7 @@ Setting up a channel takes about five minutes. Go to youtube.com and sign in wit
 
 The most important decision is what to make videos about. The best answer is: what do you already know that other people want to learn? If you've been gardening for thirty years, other gardeners genuinely want your hard-won knowledge. If you're a retired nurse, people have questions about healthcare navigation that you can answer. If you travel, people want destination guides from someone who's actually been there. Specificity helps — "Raised bed vegetable gardening for beginners" will attract a more engaged audience than a general gardening channel.
 
-Recording your first video requires only your phone and decent lighting. Film in landscape orientation (horizontal, not vertical), face a light source, and speak clearly. You don't need to edit at all for a first attempt — simply record, upload, and publish.
+Recording your first video requires only your phone and decent lighting. Film in landscape orientation (horizontal, not vertical), face a light source, and speak clearly. You don't need to edit at all for a first attempt — record, upload, and publish.
 
 To upload, go to YouTube Studio (studio.youtube.com), click Create > Upload Video, and drag your video file into the browser. While it processes, add a descriptive title, a thorough description of what the video covers, and tags that people might search for. A thumbnail (the image people see before clicking) matters a lot for getting views — YouTube can auto-generate one, or you can upload a custom image.
 

@@ -5,7 +5,7 @@ import { Card, CardContent } from '@/components/ui/card';
 import { Scale } from 'lucide-react';
 
 const PICKS = [
-  { name: 'Withings Body+ Scale', price: '$100', best: 'Best smart scale. Auto-syncs to Apple Health, Google Fit, Withings app. Multiple users.', good: 'Pairs with their BP cuff seamlessly.' },
+  { name: 'Withings Body+ Scale', price: '$100', best: 'Best smart scale. Auto-syncs to Apple Health, Google Fit, Withings app. Multiple users.', good: 'Pairs with their BP cuff smoothly.' },
   { name: 'Renpho Smart Scale', price: '$30', best: 'Cheapest decent smart scale. Body composition, syncs to phone.', good: 'Best budget pick.' },
   { name: 'Eufy Smart Scale P2', price: '$50', best: 'Mid-range. Reliable.', good: 'Good if you want quality but not Withings price.' },
   { name: 'Withings BPM Connect', price: '$100', best: 'Wi-Fi blood pressure cuff. Sends results to phone automatically.', good: 'Best if you want simple syncing.' },

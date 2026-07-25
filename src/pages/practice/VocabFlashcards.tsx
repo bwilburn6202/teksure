@@ -141,7 +141,7 @@ const CARDS: FlashCard[] = [
   { id: 'firewall', front: 'Firewall', back: 'A digital gatekeeper that blocks risky internet traffic. Example: "Your router has a firewall built in."', category: 'security', difficulty: 'hard' },
   { id: 'vpn', front: 'VPN (Virtual Private Network)', back: 'A service that hides your internet activity and location. Example: "Use a VPN on public Wi-Fi so strangers cannot snoop."', category: 'security', difficulty: 'medium' },
   { id: 'ip-address', front: 'IP Address', back: 'A number that identifies your device on the internet, like a street address. Example: "Each device on your Wi-Fi has its own IP address."', category: 'internet', difficulty: 'hard' },
-  { id: 'url', front: 'URL', back: 'A website address, like https://teksure.com. Example: "Type the URL into the address bar."', category: 'internet', difficulty: 'medium' },
+  { id: 'url', front: 'URL', back: 'A website address, like https://www.teksure.com. Example: "Type the URL into the address bar."', category: 'internet', difficulty: 'medium' },
   { id: 'hyperlink', front: 'Hyperlink', back: 'Clickable text or an image that takes you to another page. Example: "Tap the blue hyperlink to open the help article."', category: 'internet', difficulty: 'medium' },
   { id: 'https', front: 'HTTPS', back: 'A secure version of a web address — look for the lock icon. Example: "Your bank site should start with https, not http."', category: 'security', difficulty: 'medium' },
   { id: 'encryption', front: 'Encryption', back: 'Scrambling data so only the right person can read it. Example: "Text messages in iMessage use encryption end to end."', category: 'security', difficulty: 'hard' },

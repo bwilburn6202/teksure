@@ -2,43 +2,57 @@ import { supabase } from '@/integrations/supabase/client';
 import { getCompletedGuides } from './progress';
 
 /**
- * Sync local progress to Supabase for the logged-in user.
- * Called after marking a guide complete or on login.
+ * Progress sync between localStorage and Supabase.
+ *
+ * The `guide_progress` table stores ONE ROW PER GUIDE:
+ *   { user_id, slug, step, total_steps, completed }
+ * with a unique constraint on (user_id, slug).
+ *
+ * An earlier version of this file wrote a single row with a `completed_guides`
+ * array — a column that does not exist — so every sync failed silently inside
+ * the catch block and signed-in users lost progress between devices.
  */
+
+const LOCAL_KEY = 'teksure-guide-progress';
+
+/** Push locally completed guides up to Supabase for the logged-in user. */
 export async function syncProgressToSupabase(userId: string) {
   const completed = Array.from(getCompletedGuides());
   if (completed.length === 0) return;
 
-  try {
-    await supabase.from('guide_progress').upsert(
-      { user_id: userId, completed_guides: completed, synced_at: new Date().toISOString() },
-      { onConflict: 'user_id' }
-    );
-  } catch {
-    // Table may not exist yet — silent fail
+  const rows = completed.map((slug) => ({
+    user_id: userId,
+    slug,
+    completed: true,
+  }));
+
+  const { error } = await supabase
+    .from('guide_progress')
+    .upsert(rows, { onConflict: 'user_id,slug' });
+
+  if (error) {
+    console.warn('[syncProgress] could not sync progress to Supabase:', error.message);
   }
 }
 
-/**
- * Load progress from Supabase and merge with localStorage.
- */
+/** Load progress from Supabase and merge it into localStorage. */
 export async function loadProgressFromSupabase(userId: string) {
-  try {
-    const { data } = await supabase
-      .from('guide_progress')
-      .select('completed_guides')
-      .eq('user_id', userId)
-      .single();
+  const { data, error } = await supabase
+    .from('guide_progress')
+    .select('slug')
+    .eq('user_id', userId)
+    .eq('completed', true);
 
-    if (data?.completed_guides) {
-      const local = getCompletedGuides();
-      const remote = new Set(data.completed_guides as string[]);
-      const merged = new Set([...local, ...remote]);
-      if (typeof window !== 'undefined') {
-        localStorage.setItem('teksure-guide-progress', JSON.stringify([...merged]));
-      }
-    }
-  } catch {
-    // Table may not exist — silent fail
+  if (error) {
+    console.warn('[syncProgress] could not load progress from Supabase:', error.message);
+    return;
+  }
+  if (!data || data.length === 0) return;
+
+  const local = getCompletedGuides();
+  const merged = new Set([...local, ...data.map((row) => row.slug)]);
+
+  if (typeof window !== 'undefined') {
+    localStorage.setItem(LOCAL_KEY, JSON.stringify([...merged]));
   }
 }

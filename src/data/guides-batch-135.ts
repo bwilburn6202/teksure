@@ -89,7 +89,7 @@ Watch the official walkthrough: YouTube → search "Apple Camera Control iPhone 
       },
       {
         title: 'Single press — open the camera or take a photo',
-        content: 'Press the button once when the phone is locked or on the home screen — the Camera app opens. Press it again to take a photo. If the camera is already open, a single press just takes the photo. The shutter sound and feel are the same as the on-screen button. This is the gesture most people use 90 percent of the time.',
+        content: 'Press the button once when the phone is locked or on the home screen — the Camera app opens. Press it again to take a photo. If the camera is already open, a single press takes the photo. The shutter sound and feel are the same as the on-screen button. This is the gesture most people use 90 percent of the time.',
         tip: 'Quick Tip: You do not have to unlock the phone first. Holding the iPhone like a real camera and pressing the button is the fastest way to capture a moment.',
       },
       {

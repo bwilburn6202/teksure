@@ -190,7 +190,7 @@ const fix_upgradePlan: FixStep = {
   title: 'Consider upgrading your plan',
   priority: 'low',
   icon: Sparkles,
-  summary: 'If your plan is old, you may simply be paying for slower internet than modern streaming needs.',
+  summary: 'If your plan is old, you may be paying for slower internet than modern streaming needs.',
   steps: [
     'Check your current speed on your last bill — look for "Mbps" (megabits per second).',
     'For one or two people streaming: 100 Mbps is a comfortable starting point.',

@@ -161,7 +161,7 @@ Spotify, Apple Music, and Amazon Music all have sleep timers, though they're eac
 
 **Apple Music:** Apple Music doesn't have a built-in sleep timer inside the app itself. Instead, iPhone users can set a sleep timer using the iPhone's built-in Clock app, which works with any audio playing on the phone — including Apple Music. This is actually a flexible approach because it works with any app, not just Apple Music.
 
-**Amazon Music:** Amazon Music has a sleep timer built directly into the app, similar to Spotify. It's easy to find once you know where to look.
+**Amazon Music:** Amazon Music has a sleep timer built directly into the app, similar to Spotify. You can find once you know where to look.
 
 All three methods work on both iPhone and Android phones.`,
     steps: [
@@ -382,7 +382,7 @@ Firefox is made by Mozilla, a nonprofit organization whose mission is to keep th
 **Things Chrome does better:**
 - Chrome is faster on most modern computers and very well-optimized for Google services like Gmail and Google Docs.
 - Chrome has a larger library of extensions.
-- If you're heavily invested in the Google ecosystem, Chrome makes switching between devices more seamless.
+- If you're heavily invested in the Google ecosystem, Chrome makes switching between devices more smooth.
 
 Neither browser is perfect. Many people use Firefox as their main browser for everyday browsing and switch to Chrome when they need to use a specific Google service. You can have both installed at the same time.`,
     steps: [
@@ -910,7 +910,7 @@ Linking and setting a default takes about 5 minutes in the Alexa app on your pho
       {
         title: `Test your new default`,
         content: `Say to your Echo: "Alexa, play music" or "Alexa, play some country music." Alexa should now respond by playing from your chosen default service. You'll hear it announce the service name. If it plays from the wrong service, go back to Music & Podcasts settings and confirm your default was saved.`,
-        tip: `You can still use other linked services by name: "Alexa, play jazz on Amazon Music" or "Alexa, play my Discover Weekly on Spotify." The default just saves you from saying the service name every time for casual commands.`
+        tip: `You can still use other linked services by name: "Alexa, play jazz on Amazon Music" or "Alexa, play my Discover Weekly on Spotify." The default saves you from saying the service name every time for casual commands.`
       }
     ]
   },

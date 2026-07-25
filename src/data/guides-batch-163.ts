@@ -60,7 +60,7 @@ Before you start, here is what you can expect to move over without doing anythin
 
 Quick Start is Apple's built-in phone-to-phone transfer feature. It works by holding your new iPhone next to your old one. This is the recommended approach if both phones are nearby and charged.
 
-**What you need:** Both phones charged to at least 50%. Your old iPhone running iOS 12.4 or later (any iPhone from roughly 2015 or newer will have this). Your Apple ID and password.
+**What you need:** Both phones charged to at least 50%. Your old iPhone running any modern iOS (iOS 18 is current in 2026; the transfer works on anything back to iOS 12.4, which covers roughly every iPhone from 2015 or newer). Your Apple ID and password.
 
 1. **Turn on your new iPhone.** A "Hello" screen appears.
 2. **Place your new iPhone next to your old iPhone** (within a few inches). Your old iPhone should automatically detect the new one and show a message: "Set Up New iPhone."
@@ -227,7 +227,7 @@ Once you are satisfied, you can safely erase your old phone. On iPhone: Settings
     difficulty: 'Beginner',
     body: `When your iPhone runs low on storage space, you may see a pop-up that says "iPhone Storage Full" or notice that your camera stops letting you take new photos. Apps may also start running slowly, and iOS updates may fail to install because there is not enough room.
 
-Storage space is measured in gigabytes (GB). Photos and videos are the biggest storage users on most people's phones, followed by apps. A single minute of 4K video can take up 400 MB — nearly half a gigabyte. If you have years of photos stored directly on your phone, it is easy to run out of space.
+Storage space is measured in gigabytes (GB). Photos and videos are the biggest storage users on most people's phones, followed by apps. A single minute of 4K video can take up 400 MB — nearly half a gigabyte. If you have years of photos stored directly on your phone, you can run out of space.
 
 The good news: you can reclaim storage without deleting anything you care about, and without spending money on a new phone.
 

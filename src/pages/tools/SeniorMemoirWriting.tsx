@@ -103,7 +103,7 @@ export default function SeniorMemoirWriting() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Start with childhood memories</h3>
-            <p className="text-sm text-muted-foreground">Begin by writing about your earliest memories. Where you grew up, your parents, school days, first job. These are the stories your grandchildren will treasure most. Use voice memos if typing is hard. Don&apos;t edit, don&apos;t worry about quality. Just capture the stories. You can polish later. Many seniors who never thought they could &quot;write&quot; produce beautiful memoirs by simply recording memories.</p>
+            <p className="text-sm text-muted-foreground">Begin by writing about your earliest memories. Where you grew up, your parents, school days, first job. These are the stories your grandchildren will treasure most. Use voice memos if typing is hard. Don&apos;t edit, don&apos;t worry about quality. Just capture the stories. You can polish later. Many seniors who never thought they could &quot;write&quot; produce beautiful memoirs by recording memories.</p>
           </CardContent>
         </Card>
       </main>

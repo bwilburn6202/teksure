@@ -500,7 +500,7 @@ A protective case with a built-in stand is nearly essential — tablets without 
       },
       {
         title: `Consider the Apple iPad for the most straightforward experience`,
-        content: `The standard iPad (10th generation, 10.9-inch screen) costs around $349 and is often the easiest tablet for older adults to use, especially if they already have an iPhone. The interface is consistent, apps are high quality and well-designed, and Apple provides software updates for 6-7 years. The iPad is available in Apple Stores where staff can provide in-person setup help. For someone who is also an iPhone user, features like AirDrop, iMessage on the tablet, and iCloud photo sharing between devices work seamlessly.`,
+        content: `The standard iPad (10th generation, 10.9-inch screen) costs around $349 and is often the easiest tablet for older adults to use, especially if they already have an iPhone. The interface is consistent, apps are high quality and well-designed, and Apple provides software updates for 6-7 years. The iPad is available in Apple Stores where staff can provide in-person setup help. For someone who is also an iPhone user, features like AirDrop, iMessage on the tablet, and iCloud photo sharing between devices work smoothly.`,
         tip: `The Apple Pencil (sold separately, around $99 for the USB-C version) is a great addition for older adults who find the touch screen hard to tap precisely — it is much easier to control than a fingertip for small targets.`,
       },
       {
@@ -584,12 +584,12 @@ Neither platform is inherently better — they are genuinely different tools tha
     steps: [
       {
         title: `Start with your phone`,
-        content: `The single most useful question to ask is: what phone do you use? If you have an iPhone, an iPad will integrate with it in ways an Android tablet simply cannot. You can use AirDrop to wirelessly transfer photos and files between your iPhone and iPad in seconds. iMessage syncs across both devices so you can text from your tablet. FaceTime works on both. Your App Store purchases carry over. For iPhone users, this ecosystem integration is a compelling reason to choose iPad even if the price is higher.`,
+        content: `The single most useful question to ask is: what phone do you use? If you have an iPhone, an iPad will integrate with it in ways an Android tablet cannot. You can use AirDrop to wirelessly transfer photos and files between your iPhone and iPad in seconds. iMessage syncs across both devices so you can text from your tablet. FaceTime works on both. Your App Store purchases carry over. For iPhone users, this ecosystem integration is a compelling reason to choose iPad even if the price is higher.`,
         tip: `If you use an Android phone, a Samsung Galaxy Tab works especially well because Samsung devices share features like Galaxy Buds audio sharing and Samsung SmartThings integration. A Google Pixel phone pairs naturally with a Lenovo tablet running stock Android.`,
       },
       {
         title: `Compare app quality and availability`,
-        content: `Both platforms have access to thousands of apps, including all the major ones — Netflix, YouTube, Zoom, Facebook, Gmail, Google Maps, and so on. However, iPadOS apps are generally better optimized for the larger tablet screen. Many Android apps that run on tablets are simply stretched-out phone apps that do not take advantage of the larger display. For casual use this matters less, but for apps you use frequently — a reading app, a news app, a drawing app — iPad versions tend to be more polished.`,
+        content: `Both platforms have access to thousands of apps, including all the major ones — Netflix, YouTube, Zoom, Facebook, Gmail, Google Maps, and so on. However, iPadOS apps are generally better optimized for the larger tablet screen. Many Android apps that run on tablets are stretched-out phone apps that do not take advantage of the larger display. For casual use this matters less, but for apps you use frequently — a reading app, a news app, a drawing app — iPad versions tend to be more polished.`,
       },
       {
         title: `Understand the price differences`,
@@ -601,7 +601,7 @@ Neither platform is inherently better — they are genuinely different tools tha
       },
       {
         title: `Make your final decision`,
-        content: `Choose an iPad if: you have an iPhone and want seamless integration, you prefer the most polished app ecosystem, you want the longest software update lifespan, or you plan to use it for drawing or creative work. Choose an Android tablet if: you have an Android phone, you want more hardware for your money at the budget end, you prefer Google's ecosystem (Google Photos, Google Docs, Google Drive), or you want a tablet with a free stylus included. If you are still unsure, visit an Apple Store or a Best Buy where you can try both side by side.`,
+        content: `Choose an iPad if: you have an iPhone and want smooth integration, you prefer the most polished app ecosystem, you want the longest software update lifespan, or you plan to use it for drawing or creative work. Choose an Android tablet if: you have an Android phone, you want more hardware for your money at the budget end, you prefer Google's ecosystem (Google Photos, Google Docs, Google Drive), or you want a tablet with a free stylus included. If you are still unsure, visit an Apple Store or a Best Buy where you can try both side by side.`,
         tip: `Best Buy has both iPad and Android tablet display models you can handle and test in person. Spending 20 minutes trying both in a store is one of the best ways to make this decision.`,
       },
     ],
@@ -749,7 +749,7 @@ T-Mobile offers a 15-day in-home trial, so you can set up the service, test the 
     thumbnailEmoji: ``,
     publishedAt: `2026-04-20`,
     difficulty: `Beginner`,
-    body: `Fiber optic internet is widely considered the best home internet technology available today. Instead of transmitting data through copper wire (like traditional cable and DSL) or through radio waves (like 5G home internet and satellite), fiber uses pulses of light traveling through thin glass or plastic cables. Light travels extremely fast and can carry enormous amounts of data, which is why fiber internet can achieve speeds that copper-based systems simply cannot match.
+    body: `Fiber optic internet is widely considered the best home internet technology available today. Instead of transmitting data through copper wire (like traditional cable and DSL) or through radio waves (like 5G home internet and satellite), fiber uses pulses of light traveling through thin glass or plastic cables. Light travels extremely fast and can carry enormous amounts of data, which is why fiber internet can achieve speeds that copper-based systems cannot match.
 
 The biggest practical difference you notice with fiber internet is symmetric speeds — meaning your upload speed equals your download speed. Traditional cable internet might give you 300 Mbps download but only 10-20 Mbps upload. With fiber, a 1 Gigabit plan gives you 1,000 Mbps both downloading and uploading. Fast upload speed matters if you do video calls, upload photos or videos to the cloud, work from home, or back up files to an online service.
 

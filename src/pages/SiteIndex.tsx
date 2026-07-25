@@ -38,7 +38,7 @@ interface Entry {
 interface Section {
   id: string;
   title: string;
-  icon: React.ComponentType<{ className?: string; 'aria-hidden'?: boolean }>;
+  icon: React.ComponentType<{ className?: string; 'aria-hidden'?: boolean | 'true' | 'false' }>;
   description: string;
   entries: Entry[];
   /** When true, entries are grouped alphabetically by first letter of label. */
@@ -422,7 +422,7 @@ const SiteIndex = () => {
           name: 'TekSure Site Index',
           description:
             'A human-readable sitemap of every section, hub, tool, and resource on TekSure.',
-          url: 'https://teksure.com/site-index',
+          url: 'https://www.teksure.com/site-index',
         }}
       />
       <Navbar />

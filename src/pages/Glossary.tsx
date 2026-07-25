@@ -29,6 +29,8 @@ interface GlossaryTerm {
   definition: string;
   /** Related term names — must match `term` on another entry exactly. */
   related?: string[];
+  /** Plain-language comparison, e.g. "Like a lock on your front door." */
+  analogy?: string;
 }
 
 const GLOSSARY: GlossaryTerm[] = [
@@ -952,7 +954,7 @@ const GLOSSARY: GlossaryTerm[] = [
   {
     term: 'URL',
     definition:
-      'A web address — the thing you type into a browser, like https://teksure.com. Always check it matches what you expect before you type in a password.',
+      'A web address — the thing you type into a browser, like https://www.teksure.com. Always check it matches what you expect before you type in a password.',
     related: ['Domain', 'HTTP/HTTPS', 'Link'],
   },
   {
@@ -1147,13 +1149,13 @@ const Glossary = () => {
           name: 'TekSure Technology Glossary',
           description:
             'A browse-first A–Z glossary of 150+ technology terms with plain-English definitions, for seniors, beginners, and anyone who prefers answers without jargon.',
-          url: 'https://teksure.com/glossary',
-          inDefinedTermSet: 'https://teksure.com/glossary',
+          url: 'https://www.teksure.com/glossary',
+          inDefinedTermSet: 'https://www.teksure.com/glossary',
           hasDefinedTerm: GLOSSARY.map((t) => ({
             '@type': 'DefinedTerm',
             name: t.term,
             description: t.definition,
-            inDefinedTermSet: 'https://teksure.com/glossary',
+            inDefinedTermSet: 'https://www.teksure.com/glossary',
           })),
         }}
       />
@@ -1296,12 +1298,12 @@ const Glossary = () => {
                         )}
 
                           {/* Related chips */}
-                          {chips.length > 0 && (
+                          {(item.related ?? []).length > 0 && (
                             <div className="mt-4 flex flex-wrap items-center gap-1.5">
                               <span className="text-xs uppercase tracking-wider text-muted-foreground/80 font-semibold mr-1">
                                 Related:
                               </span>
-                              {chips.map((name) => (
+                              {(item.related ?? []).map((name) => (
                                 <button
                                   key={name}
                                   type="button"

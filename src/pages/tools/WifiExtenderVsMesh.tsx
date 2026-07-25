@@ -31,7 +31,7 @@ export default function WifiExtenderVsMesh() {
 
         <Card className="mb-4">
           <CardContent className="pt-6">
-            <h2 className="font-bold text-xl mb-3"> Mesh System (premium, seamless)</h2>
+            <h2 className="font-bold text-xl mb-3"> Mesh System (premium, smooth)</h2>
             <p className="text-sm">$150-400 set of 2-3 units. Replaces your existing router. Creates ONE network with full coverage.</p>
             <ul className="list-disc pl-5 space-y-1 text-sm mt-2">
               <li><strong>Pros</strong>: Same network everywhere. Full speed. Auto-switches as you walk.</li>

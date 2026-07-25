@@ -119,7 +119,7 @@ The Files app is the blue folder icon on your home screen. If you do not see it,
 
 This feature was introduced with macOS Ventura and iOS 16 in 2022. If your Mac and iPhone both have those software versions or later, you already have it — no setup is required beyond a few seconds of configuration.
 
-How it works: your iPhone detects when your Mac needs a camera and makes itself available automatically. You can use it wired (USB cable) or wirelessly over Wi-Fi and Bluetooth. In apps like Zoom, Google Meet, FaceTime, and Messages, you just select "iPhone Camera" as your camera source.
+How it works: your iPhone detects when your Mac needs a camera and makes itself available automatically. You can use it wired (USB cable) or wirelessly over Wi-Fi and Bluetooth. In apps like Zoom, Google Meet, FaceTime, and Messages, you select "iPhone Camera" as your camera source.
 
 The iPhone camera quality is genuinely impressive for video calls. The main camera has better low-light performance and autofocus than most laptop webcams.
 
@@ -190,7 +190,7 @@ Requirements: iPad with iPadOS 13 or later (most iPads from 2014 onward), Mac ru
       },
       {
         title: `Move windows to the iPad`,
-        content: `On your Mac, hover over the green maximize button (top left of any window). A menu appears with options including "Move to iPad." Click it — the window jumps to your iPad screen. Or simply drag any window from your Mac screen toward the iPad direction and it moves over.`,
+        content: `On your Mac, hover over the green maximize button (top left of any window). A menu appears with options including "Move to iPad." Click it — the window jumps to your iPad screen. Or drag any window from your Mac screen toward the iPad direction and it moves over.`,
       },
       {
         title: `Use the iPad touch screen`,
@@ -214,7 +214,7 @@ Requirements: iPad with iPadOS 13 or later (most iPads from 2014 onward), Mac ru
     thumbnailEmoji: ``,
     publishedAt: `2026-04-19`,
     difficulty: `Beginner`,
-    body: `Apple devices that are signed into the same Apple ID can work together in seamless ways through a set of features called Continuity. Two of the most useful are Handoff and Universal Clipboard.
+    body: `Apple devices that are signed into the same Apple ID can work together in smooth ways through a set of features called Continuity. Two of the most useful are Handoff and Universal Clipboard.
 
 **Handoff** lets you start a task on one device and immediately continue it on another. For example: start reading an email on your iPhone while walking to your desk, then pick up right where you left off on your Mac without having to find the same email. Or start writing a note on your Mac, then continue writing it on your iPhone while on the couch.
 
@@ -316,7 +316,7 @@ The Mac's microphone and speakers (or headphones) handle the audio. The Mac's bu
 
 You can call anyone with an Apple device or — since 2021 — generate a FaceTime link and invite Android or Windows users to join from their web browser.
 
-To use FaceTime on Mac, you just need to be signed into your Apple ID. Your FaceTime number is your Apple ID email address and any phone numbers linked to your Apple ID.`,
+To use FaceTime on Mac, you need to be signed into your Apple ID. Your FaceTime number is your Apple ID email address and any phone numbers linked to your Apple ID.`,
     steps: [
       {
         title: `Open FaceTime on Mac`,
@@ -429,7 +429,7 @@ The website is benefitscheckup.org. It is free and takes about 10 minutes to com
       {
         title: `Go to BenefitsCheckUp.org`,
         content: `On any computer or phone, go to benefitscheckup.org. The website is run by the National Council on Aging — a nonprofit, not a government agency. Click "Get Started" or "Check Your Benefits." No account or Social Security number is required.`,
-        tip: `You can complete the screening on behalf of a family member — just answer the questions based on their situation.`,
+        tip: `You can complete the screening on behalf of a family member — answer the questions based on their situation.`,
       },
       {
         title: `Enter your basic information`,
@@ -540,7 +540,7 @@ The Health Mate app is free and shows all your readings in easy-to-read charts a
       },
       {
         title: `Take a reading`,
-        content: `For the scale: simply step on it. It recognizes which family member is stepping on based on weight and auto-assigns the reading. For the blood pressure monitor: put the cuff on your upper arm, tap the button on the monitor or in the app, stay still for 60 seconds. Readings appear in the app within seconds.`,
+        content: `For the scale: step on it. It recognizes which family member is stepping on based on weight and auto-assigns the reading. For the blood pressure monitor: put the cuff on your upper arm, tap the button on the monitor or in the app, stay still for 60 seconds. Readings appear in the app within seconds.`,
         warning: `For blood pressure: take readings at the same time each day, 5 minutes after sitting quietly, and avoid caffeine for 30 minutes before. This gives the most meaningful comparisons over time.`,
       },
       {
@@ -746,7 +746,7 @@ Why check your report?
       {
         title: `Keep records of everything`,
         content: `Save screenshots of the disputed charge, any emails with the merchant, the date and case number of your dispute, and any follow-up correspondence. If the charge was truly fraudulent, the credit becomes permanent. If the card company sides with the merchant after investigation, you can appeal with additional documentation.`,
-        warning: `If you dispute a charge for a subscription you simply forgot about and actually received the service, the card company may not resolve in your favor. Disputes are for errors and unauthorized charges, not buyer's remorse.`,
+        warning: `If you dispute a charge for a subscription you forgot about and actually received the service, the card company may not resolve in your favor. Disputes are for errors and unauthorized charges, not buyer's remorse.`,
       },
     ],
   },

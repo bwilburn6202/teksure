@@ -111,7 +111,7 @@ Here's how it works: if you dial 911 or use Emergency SOS when your iPhone has n
 
 Because satellite data transmission is slow, the feature is limited to emergencies — you can't send regular texts via satellite. The iPhone guides you through a questionnaire (Are you injured? Is someone else injured? What happened?) and relays your answers. Response times via satellite are longer than a standard 911 call — expect at least a few minutes for confirmation.
 
-Setup requires nothing — the feature is on by default on compatible iPhones. You just need to have your iPhone set up and know how to trigger Emergency SOS. You can also use it to share your location with friends and family when out of cell range through the Roadside Assistance via Satellite feature.`,
+Setup requires nothing — the feature is on by default on compatible iPhones. You need to have your iPhone set up and know how to trigger Emergency SOS. You can also use it to share your location with friends and family when out of cell range through the Roadside Assistance via Satellite feature.`,
     steps: [
       {
         title: 'Check If Your iPhone Supports It',
@@ -287,7 +287,7 @@ The FCC recommends calling 911 when possible and texting only when calling is no
     difficulty: 'Beginner',
     body: `ChatGPT's Voice Mode lets you have a full two-way spoken conversation with the AI using your phone. Instead of typing questions and reading text answers, you speak out loud and ChatGPT responds with synthesized speech in a natural, conversational tone. You can interrupt it mid-sentence and it will stop and listen, much like a real conversation.
 
-This is particularly useful when you're driving or walking and can't look at a screen, when you want to ask multiple follow-up questions without typing, when you're testing language practice or preparing for a conversation, or when typing is simply inconvenient.
+This is particularly useful when you're driving or walking and can't look at a screen, when you want to ask multiple follow-up questions without typing, when you're testing language practice or preparing for a conversation, or when typing is inconvenient.
 
 Voice Mode is available in the free ChatGPT app for iPhone and Android, though the most advanced voice features (called Advanced Voice Mode with more natural-sounding responses) require a ChatGPT Plus subscription ($20/month). The standard voice mode is free and works well for most everyday use.
 
@@ -350,7 +350,7 @@ This works with ChatGPT, Perplexity, Claude (Anthropic), or any other AI assista
       },
       {
         title: 'Review and Adjust the Plan',
-        content: `Read through the suggested meal plan. If something doesn't appeal to you, just say so: "Replace Wednesday dinner — I don't like salmon. Suggest something else with similar nutrition." AI adjusts immediately. Keep refining until the plan works for your week.`,
+        content: `Read through the suggested meal plan. If something doesn't appeal to you, say so: "Replace Wednesday dinner — I don't like salmon. Suggest something else with similar nutrition." AI adjusts immediately. Keep refining until the plan works for your week.`,
       },
       {
         title: 'Request a Shopping List',

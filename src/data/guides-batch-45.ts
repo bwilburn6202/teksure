@@ -111,7 +111,7 @@ Managing sharing is straightforward — you can see everyone who has access to a
     steps: [
       {
         title: `Open Google Drive and Find Your File`,
-        content: `Go to drive.google.com in any browser, or open the Google Drive app on your phone. Find the file or folder you want to share. You can also share a file while it is open — just look for the Share button.`,
+        content: `Go to drive.google.com in any browser, or open the Google Drive app on your phone. Find the file or folder you want to share. You can also share a file while it is open — look for the Share button.`,
       },
       {
         title: `Right-Click to Share (Computer)`,
@@ -340,7 +340,7 @@ You can add videos to a playlist from anywhere — the YouTube search results, a
       {
         title: `Add More Videos to the Playlist`,
         content: `For each new video you want to add: tap the Save button or three-dot menu → Save to playlist. Your playlist now appears as an option. Tap its name to add the video. The playlist grows as you add more.`,
-        tip: `Quick Tip: You can add a video to multiple playlists at once — just check more than one playlist name in the "Save to" dialog.`,
+        tip: `Quick Tip: You can add a video to multiple playlists at once — check more than one playlist name in the "Save to" dialog.`,
       },
       {
         title: `Find and Watch Your Playlists`,
@@ -602,7 +602,7 @@ Offline maps expire after 30 days if you have not updated them. Apple Maps autom
       },
       {
         title: `Use the Offline Map While Traveling`,
-        content: `When you are in an area without cell service, Apple Maps automatically uses your downloaded offline map. Search for addresses or get directions the same way you normally would. The only difference is live traffic data does not update. Your phone's GPS still works without cell service — it just uses satellite positioning instead.`,
+        content: `When you are in an area without cell service, Apple Maps automatically uses your downloaded offline map. Search for addresses or get directions the same way you normally would. The only difference is live traffic data does not update. Your phone's GPS still works without cell service — it uses satellite positioning instead.`,
       },
       {
         title: `Manage and Delete Downloaded Maps`,
@@ -869,7 +869,7 @@ This is an especially valuable setting for seniors whose children want to be rea
       },
       {
         title: `Test That It Works`,
-        content: `Enable Do Not Disturb on your iPhone (swipe down from the top right → tap the crescent moon icon). Ask the person you just set up to call or text you. Their call should ring at full volume and their text should make a sound, while all other calls and messages stay silent. Turn off Do Not Disturb when done testing.`,
+        content: `Enable Do Not Disturb on your iPhone (swipe down from the top right → tap the crescent moon icon). Ask the person you set up to call or text you. Their call should ring at full volume and their text should make a sound, while all other calls and messages stay silent. Turn off Do Not Disturb when done testing.`,
         warning: `Emergency Bypass only works for the contact's saved phone number. If they call from a different number (like a work phone or hospital phone), the bypass will not apply — their unknown number will still be silenced.`,
       },
     ],

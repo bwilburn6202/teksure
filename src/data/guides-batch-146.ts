@@ -111,7 +111,7 @@ Every year from February through mid-April, AARP Tax-Aide provides free tax prep
 
 **AARP Fraud Watch Network**
 
-AARP operates a free Fraud Watch helpline at 1-877-908-3360. You can call to report a scam, get advice on a suspicious situation, or simply ask whether something sounds legitimate. The AARP website also posts current scam alerts at aarp.org/fraudwatchnetwork.
+AARP operates a free Fraud Watch helpline at 1-877-908-3360. You can call to report a scam, get advice on a suspicious situation, or ask whether something sounds legitimate. The AARP website also posts current scam alerts at aarp.org/fraudwatchnetwork.
 
 **Sources:** AARP official website (aarp.org), AARP Fraud Watch Network (aarp.org/fraudwatchnetwork), AARP Tax-Aide (aarp.org/taxaide).`,
     steps: [
@@ -277,7 +277,7 @@ Most major hearing aid manufacturers have a companion app: ReSound Smart 3D, Oti
       {
         title: 'Pair ASHA or Bluetooth hearing aids to Android',
         content:
-          'On your Android phone, open Settings. Tap "Connected devices" (on some phones this is called "Bluetooth & device connection" or simply "Connections"). Tap "Pair new device" or "Bluetooth" and make sure Bluetooth is turned on. Your phone will scan for nearby devices. When your hearing aids appear in the list, tap their name to connect. For ASHA-compatible hearing aids on any current Android phone, the connection may be automatic after this initial pairing — the phone recognizes them as hearing aids and routes audio directly. On Samsung Galaxy phones, go to Settings → Connections → Bluetooth, toggle it on, and tap "Scan" if your hearing aids do not appear immediately.',
+          'On your Android phone, open Settings. Tap "Connected devices" (on some phones this is called "Bluetooth & device connection" or "Connections"). Tap "Pair new device" or "Bluetooth" and make sure Bluetooth is turned on. Your phone will scan for nearby devices. When your hearing aids appear in the list, tap their name to connect. For ASHA-compatible hearing aids on any current Android phone, the connection may be automatic after this initial pairing — the phone recognizes them as hearing aids and routes audio directly. On Samsung Galaxy phones, go to Settings → Connections → Bluetooth, toggle it on, and tap "Scan" if your hearing aids do not appear immediately.',
         warning: 'Some older Android phones may not fully support the ASHA standard. If you are having trouble, check your phone is running a current, updated version of Android by going to Settings → About phone → Android version.',
       },
       {

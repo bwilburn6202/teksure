@@ -48,7 +48,7 @@ export default function MacForSeniors() {
               <li>Less malware than Windows.</li>
               <li>Apple Stores for help — appointments free.</li>
               <li>Senior-friendly support phone.</li>
-              <li>Sync with iPhone seamlessly.</li>
+              <li>Sync with iPhone smoothly.</li>
               <li>Good text + display — easier on eyes.</li>
             </ul>
           </CardContent>

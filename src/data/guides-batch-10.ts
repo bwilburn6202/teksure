@@ -801,7 +801,7 @@ Basic searching is free, but the detailed records and DNA matching require a sub
     difficulty: 'Intermediate',
     body: `FamilySearch is the free alternative to Ancestry, run as a public service by the Church of Jesus Christ of Latter-day Saints. It has billions of indexed records and a shared public family tree where everyone collaborates on the same tree.
 
-Because the tree is shared, you can often find ancestors already researched by distant relatives — you just need to connect your branch to theirs.`,
+Because the tree is shared, you can often find ancestors already researched by distant relatives — you need to connect your branch to theirs.`,
     steps: [
       { title: 'Create a free account', content: 'Go to familysearch.org and click "Create a free account." Enter your name and email. You do not need to be a church member — the site is open to everyone.' },
       { title: 'Enter your parents and grandparents', content: 'Tap "Family Tree" then "Add Parent" or "Add Spouse" to start filling in what you know. Names, birth dates, places, and relationships are the key fields.' },

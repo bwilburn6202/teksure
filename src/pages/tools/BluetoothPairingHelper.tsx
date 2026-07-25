@@ -193,7 +193,7 @@ const universalTroubleshooting: TroubleshootingItem[] = [
       'Put both earpieces back in the charging case, close the lid for 15 seconds, then open.',
       'Take both out at the same time and let them find each other before putting them in your ears.',
       'If still only one side: "Forget" the device in Bluetooth settings, then pair again from scratch.',
-      'Check that both earpieces are charged — a dead one will simply not connect.',
+      'Check that both earpieces are charged — a dead one will not connect.',
     ],
   },
   {

@@ -465,7 +465,7 @@ For Screen Time to work as a parental control, your child should have their own 
 
 Setting a Screen Time passcode is essential. Without one, a child could go into System Settings and turn off Screen Time themselves. With a passcode, only the parent can make changes.
 
-Screen Time reports show you which apps were used and for how long, which websites were visited, and how many notifications were received. This is useful for having informed conversations with your child about their screen habits, rather than simply imposing restrictions.
+Screen Time reports show you which apps were used and for how long, which websites were visited, and how many notifications were received. This is useful for having informed conversations with your child about their screen habits, rather than imposing restrictions.
 
 Screen Time works on every currently supported version of macOS (including Sonoma and Sequoia) and has been standard since macOS Catalina back in 2019. If your Mac is old enough that it can't update past Catalina, it's a sign the hardware itself is due for replacement.`,
     steps: [
@@ -798,7 +798,7 @@ Circle to Search is different from Google Lens, although it uses similar technol
     thumbnailEmoji: ``,
     publishedAt: `2026-04-20`,
     difficulty: `Beginner`,
-    body: `Bixby is the built-in voice assistant on Samsung Galaxy phones and tablets. It was designed to control your Samsung device specifically — not just answer questions like a general AI assistant, but actually carry out actions on your phone that you would normally have to do manually through settings menus.
+    body: `Bixby is the built-in voice assistant on Samsung Galaxy phones and tablets. It was designed to control your Samsung device specifically — not answer questions like a general AI assistant, but actually carry out actions on your phone that you would normally have to do manually through settings menus.
 
 You can wake up Bixby by saying "Hey Bixby" or by pressing and holding the Side key (the power button on the right edge of most Galaxy phones). From there, you can speak commands naturally and Bixby will act on them.
 

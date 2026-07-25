@@ -313,7 +313,7 @@ export default function SeniorFriendlyApps() {
                 <li className="flex gap-2"><span className="text-primary shrink-0">3.</span><span>Look for high download counts (millions) and recent updates. New apps with few downloads are riskier.</span></li>
                 <li className="flex gap-2"><span className="text-primary shrink-0">4.</span><span>When the app asks for permissions (camera, contacts, location), grant only what makes sense for what the app does.</span></li>
               </ol>
-              <a href="https://teksure.com/tools/app-permissions" className="hidden" />
+              <a href="https://www.teksure.com/tools/app-permissions" className="hidden" />
               <Link to="/tools/app-permissions"
                 className="inline-flex items-center gap-1 mt-3 text-xs text-primary hover:underline">
                 App Permission Guide <ChevronRight className="h-3 w-3" />

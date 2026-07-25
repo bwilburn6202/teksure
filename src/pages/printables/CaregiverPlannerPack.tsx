@@ -351,7 +351,7 @@ function loadPlanner(): PlannerData {
       const pageRaw = window.localStorage.getItem(`${STORAGE_KEY_PREFIX}${num}`);
       if (pageRaw) {
         try {
-          (merged as Record<string, unknown>)[key] = JSON.parse(pageRaw);
+          (merged as unknown as Record<string, unknown>)[key] = JSON.parse(pageRaw);
         } catch {
           /* ignore */
         }
@@ -575,7 +575,7 @@ export default function CaregiverPlannerPack() {
       <main id="main-content" className="min-h-screen bg-background">
         {/* Breadcrumb */}
         <div className="container max-w-6xl pt-4 px-4 print:hidden">
-          <PageBreadcrumb />
+          <PageBreadcrumb segments={[{ label: 'Caregiver Planner Pack' }]} />
         </div>
 
         {/* ── Hero ────────────────────────────────────────────── */}

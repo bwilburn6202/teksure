@@ -432,7 +432,7 @@ export default function Turning65() {
         {/* Breadcrumb */}
         <div className="container pt-6 print:hidden">
           <PageBreadcrumb
-            items={[
+            segments={[
               { label: 'Checklists', href: '/checklists' },
               { label: 'Turning 65' },
             ]}

@@ -246,7 +246,7 @@ const comparisons: Comparison[] = [
         'Runs Chrome extensions, web apps, and most Android apps. Not great for heavy creative software.',
       ],
       ecosystem: [
-        'Best for Apple users. Works seamlessly with iPhone and Mac.',
+        'Best for Apple users. Works smoothly with iPhone and Mac.',
         'Best for Samsung or Google phone users.',
         'Best for Google / Gmail / Google Classroom households.',
       ],

@@ -383,7 +383,7 @@ If you're unsure whether MasterClass is right for you, look for occasional promo
     difficulty: `Beginner`,
     body: `Skillshare is an online learning platform focused on creative and practical skills. Unlike more formal education platforms, Skillshare specializes in shorter, project-focused classes taught by working professionals — graphic designers, photographers, writers, illustrators, entrepreneurs, and more.
 
-Classes on Skillshare typically run between 30 minutes and 2 hours and are broken into short video lessons. At the end of most classes, there is a class project where you apply what you learned and can share your work with other students for feedback. This hands-on approach is one of the things that sets Skillshare apart from simply watching tutorials.
+Classes on Skillshare typically run between 30 minutes and 2 hours and are broken into short video lessons. At the end of most classes, there is a class project where you apply what you learned and can share your work with other students for feedback. This hands-on approach is one of the things that sets Skillshare apart from watching tutorials.
 
 Skillshare operates on a subscription model: one flat monthly or annual fee gives you unlimited access to all classes. The annual plan is significantly cheaper per month than paying monthly. There is a free trial available, and some classes are available to non-subscribers for free.
 
@@ -451,7 +451,7 @@ Udemy is available on iPhone, Android, and in any web browser. The mobile app al
       {
         title: `Read reviews and watch free preview lessons`,
         content: `Every course page includes student reviews — read several, including the critical ones, to get a balanced picture. Click "Preview This Course" to watch a few free lessons before purchasing. This gives you a sense of the instructor's teaching style and whether the content matches what you're looking for.`,
-        warning: `Wait for a Udemy sale before buying at full price. Udemy runs frequent sitewide sales — you can sign up for email notifications or simply check back in a few days. Courses almost never sell at their listed "original" price.`,
+        warning: `Wait for a Udemy sale before buying at full price. Udemy runs frequent sitewide sales — you can sign up for email notifications or check back in a few days. Courses almost never sell at their listed "original" price.`,
       },
       {
         title: `Purchase and start your course`,
@@ -785,7 +785,7 @@ Wix has an extensive help center, tutorial videos, and a community forum where y
       },
       {
         title: `Publish your site`,
-        content: `When you're happy with your site, click the "Publish" button in the top right corner. Your site goes live on the internet at your Wix address (username.wixsite.com/yoursite). Copy this address and share it with whoever you want to visit your site. You can continue editing and updating the site after publishing — just click "Publish" again after making changes.`,
+        content: `When you're happy with your site, click the "Publish" button in the top right corner. Your site goes live on the internet at your Wix address (username.wixsite.com/yoursite). Copy this address and share it with whoever you want to visit your site. You can continue editing and updating the site after publishing — click "Publish" again after making changes.`,
         tip: `Quick Tip: After publishing, use the Wix mobile app (available for iPhone and Android) to manage your site on the go. You can make quick text edits, view your visitor stats, and receive contact form submissions directly from your phone.`,
       },
     ],

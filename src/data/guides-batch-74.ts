@@ -296,7 +296,7 @@ Noom is best suited for people who want behavioral support alongside calorie tra
     thumbnailEmoji: ``,
     publishedAt: `2026-04-20`,
     difficulty: `Beginner`,
-    body: `Lose It! is one of the most popular free calorie tracking apps available for iPhone and Android. It helps you set a daily calorie budget based on your age, weight, height, activity level, and goal — whether that is losing weight, maintaining your current weight, or simply eating more mindfully. Each day, you log what you eat, and the app shows you how many calories you have left for the rest of the day.
+    body: `Lose It! is one of the most popular free calorie tracking apps available for iPhone and Android. It helps you set a daily calorie budget based on your age, weight, height, activity level, and goal — whether that is losing weight, maintaining your current weight, or eating more mindfully. Each day, you log what you eat, and the app shows you how many calories you have left for the rest of the day.
 
 The app has a database of more than 33 million foods, including items from major restaurant chains, packaged grocery products, and generic home-cooked ingredients. Searching for most common foods takes just a few seconds. Lose It! also has a barcode scanner — you point your phone's camera at any packaged food label and the app pulls up the nutrition information automatically.
 

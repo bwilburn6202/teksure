@@ -291,7 +291,7 @@ function recommend(a: QuizAnswers): { id: BrandId; reason: string; model: string
   if (a.cameraType === 'all' || a.cameraType === 'outdoor') {
     return {
       id: 'nest',
-      model: a.cameraType === 'doorbell' ? 'Nest Doorbell (battery)' : 'Nest Cam (battery) + Nest Doorbell',
+      model: 'Nest Cam (battery) + Nest Doorbell',
       reason:
         'Nest gives you a solid free tier (3 hours of event history) and superb person/package alerts without a subscription. If you already use Google or have a Nest Hub, this is the smoothest experience.',
     };

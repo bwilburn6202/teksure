@@ -104,7 +104,7 @@ If you are invited to a call, the best thing to do is plan to join 5 minutes ear
       },
       {
         title: 'Leave the call when you are done',
-        content: 'When the call ends, tap the red Leave or End button in the bottom-right. If you are the host, you will be asked to end for everyone or just leave yourself. Tap Leave Meeting.',
+        content: 'When the call ends, tap the red Leave or End button in the bottom-right. If you are the host, you will be asked to end for everyone or leave yourself. Tap Leave Meeting.',
       },
     ],
     sourceName: 'Zoom Support — Joining a Meeting',
@@ -123,7 +123,7 @@ If you are invited to a call, the best thing to do is plan to join 5 minutes ear
     difficulty: 'Beginner',
     body: `Unboxing a brand-new iPhone is exciting, but the first-time setup can feel like a lot. The phone asks you a dozen questions in a row — Wi-Fi password, Apple ID, Face ID, passcodes — and each question has its own screen. Plan for about 30 to 45 minutes of uninterrupted time, sitting near your Wi-Fi router with both your old phone (if you have one) and your new one nearby.
 
-Before you start, make sure your old phone is charged up to at least 50%. If you are switching from another iPhone, the new one can copy almost everything over using a feature called Quick Start — just hold the two phones next to each other and the new one pulls over your contacts, photos, apps, and settings. This is by far the easiest way to switch.
+Before you start, make sure your old phone is charged up to at least 50%. If you are switching from another iPhone, the new one can copy almost everything over using a feature called Quick Start — hold the two phones next to each other and the new one pulls over your contacts, photos, apps, and settings. This is by far the easiest way to switch.
 
 You will also need your Apple ID and password handy. That is the email address you use for the App Store and iCloud. If you cannot remember the password, take a moment to reset it at appleid.apple.com before you start the setup — trying to reset it in the middle of setup is frustrating.
 
@@ -924,7 +924,7 @@ This is always a scam. There is no legitimate private company that can reliably 
 
 Real recovery, when it happens, is handled by banks and payment providers working with law enforcement, and it is free. Your own bank's fraud department is where to start. They know their own reversal windows (how long they have to claw back a transfer), and they will work directly with the other bank. If you sent a wire, you usually have a short window — sometimes just a few hours — to reverse it, which is why calling your bank quickly matters so much.
 
-The emotional side of this is the hardest part. People who have been scammed often feel embarrassed and want to make it right. Scammers know this and use it. If you catch yourself thinking, "I just need to get my money back and nobody has to know," please talk to a family member, your bank, and law enforcement before doing anything else. Those are the people who can actually help — at no cost.`,
+The emotional side of this is the hardest part. People who have been scammed often feel embarrassed and want to make it right. Scammers know this and use it. If you catch yourself thinking, "I need to get my money back and nobody has to know," please talk to a family member, your bank, and law enforcement before doing anything else. Those are the people who can actually help — at no cost.`,
     steps: [
       {
         title: 'Recognize the recovery scam script',
@@ -973,7 +973,7 @@ The emotional side of this is the hardest part. People who have been scammed oft
 
 Google Meet is free for calls up to 60 minutes with up to 100 people. That covers almost every family call, book club, or small meeting you would ever have. Longer meetings or larger groups are possible with a paid Google Workspace plan, but the free version is more than enough for regular use.
 
-You can use Google Meet from a web browser on a computer (no install needed) or from the Google Meet app on a phone or tablet. On an iPhone or Android phone, install the Google Meet app from the App Store or Play Store. On a computer, just go to meet.google.com in your browser.
+You can use Google Meet from a web browser on a computer (no install needed) or from the Google Meet app on a phone or tablet. On an iPhone or Android phone, install the Google Meet app from the App Store or Play Store. On a computer, go to meet.google.com in your browser.
 
 The single most common question: "Do I need a Google account?" On a computer, you can usually join a meeting without signing in — the host may need to admit you. On a phone, you do need to be signed into a Google account (Gmail) to join a Meet. If you do not already have one, creating a free Gmail account takes about 5 minutes.
 
@@ -1130,7 +1130,7 @@ One extra thing Google Assistant does particularly well: it can read your screen
     difficulty: 'Beginner',
     body: `Putting whatever is on your iPhone onto a big TV is one of the nicest ways to share photos with family, watch a video with grandkids from the couch, or show off vacation pictures without passing the phone around. There are two ways to do it: wirelessly with AirPlay, or physically with a cable.
 
-AirPlay is Apple's wireless system. Most smart TVs sold in the last few years — including many Samsung, LG, Sony, Vizio, and Roku models — have AirPlay built in. If you have an Apple TV box, it has AirPlay too. Your iPhone and the TV just need to be on the same Wi-Fi network. Then you swipe down from the top-right corner of your iPhone, tap Screen Mirroring, pick the TV from the list, and your iPhone appears on the big screen.
+AirPlay is Apple's wireless system. Most smart TVs sold in the last few years — including many Samsung, LG, Sony, Vizio, and Roku models — have AirPlay built in. If you have an Apple TV box, it has AirPlay too. Your iPhone and the TV need to be on the same Wi-Fi network. Then you swipe down from the top-right corner of your iPhone, tap Screen Mirroring, pick the TV from the list, and your iPhone appears on the big screen.
 
 If your TV does not have AirPlay, a cable is the most reliable backup. Apple sells an adapter called the Lightning Digital AV Adapter (about $50) or, for newer iPhones with USB-C ports, a USB-C to HDMI adapter. You plug the adapter into the iPhone, plug an HDMI cable from the adapter into the TV, switch the TV to that HDMI input, and you are up and running.
 
@@ -1164,7 +1164,7 @@ One common hiccup with AirPlay: if your iPhone cannot see the TV, make sure both
       },
       {
         title: 'Stop mirroring when done',
-        content: 'When finished, open Control Center on the iPhone again, tap Screen Mirroring, and tap Stop Mirroring. If using a cable, simply unplug the adapter from the iPhone.',
+        content: 'When finished, open Control Center on the iPhone again, tap Screen Mirroring, and tap Stop Mirroring. If using a cable, unplug the adapter from the iPhone.',
       },
     ],
     sourceName: 'Apple Support — Use AirPlay to stream to an Apple TV or AirPlay-compatible smart TV',
@@ -1183,13 +1183,13 @@ One common hiccup with AirPlay: if your iPhone cannot see the TV, make sure both
     difficulty: 'Beginner',
     body: `Apple Pay is a way to pay at the store or online by holding your iPhone (or Apple Watch) near the card reader instead of pulling out a plastic card. It works anywhere you see the contactless-payment symbol — four curved lines, like a Wi-Fi icon turned on its side — which is now at nearly every US grocery store, pharmacy, gas pump, and restaurant.
 
-Apple Pay is more secure than your physical credit card. When you pay, Apple sends a one-time code to the store instead of your real card number. Even if the store is hacked later, your actual card number is not exposed. You also confirm each payment by looking at your iPhone (Face ID) or double-tapping the side button (Apple Watch), so a thief cannot just tap your phone to pay.
+Apple Pay is more secure than your physical credit card. When you pay, Apple sends a one-time code to the store instead of your real card number. Even if the store is hacked later, your actual card number is not exposed. You also confirm each payment by looking at your iPhone (Face ID) or double-tapping the side button (Apple Watch), so a thief cannot tap your phone to pay.
 
 Setting up takes about 5 minutes and is free — Apple Pay does not charge you to use it, and your normal credit card rewards and cashback still apply exactly the same. You add your existing cards from your wallet to an app called Wallet on the iPhone. You can add multiple cards and pick which one to use each time.
 
 Paying is where Apple Pay really shines. At the register, when the cashier says "total is $24.17," you hold your iPhone near the card reader and glance at it to confirm with Face ID (or double-click the side button on an Apple Watch). You hear a little chime and see a green checkmark. That is it — the whole transaction takes about 2 seconds.
 
-Apple Pay is accepted almost everywhere in the US. If you walk up to a register and do not see the contactless symbol, just use your regular card that time. You can tell the cashier "I was going to use Apple Pay" and they will usually point out the right reader. Target, Walmart (finally), Costco, CVS, Walgreens, McDonald's — all accept it.`,
+Apple Pay is accepted almost everywhere in the US. If you walk up to a register and do not see the contactless symbol, use your regular card that time. You can tell the cashier "I was going to use Apple Pay" and they will usually point out the right reader. Target, Walmart (finally), Costco, CVS, Walgreens, McDonald's — all accept it.`,
     steps: [
       {
         title: 'Open the Wallet app',

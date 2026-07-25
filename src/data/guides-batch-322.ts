@@ -131,7 +131,7 @@ export const guidesBatch322: Guide[] = [
     steps: [
       {
         title: "Open Digital Wellbeing",
-        content: "Open Settings on your Android phone and look for 'Digital Wellbeing & parental controls.' On Samsung phones, this may be listed simply as 'Digital Wellbeing.'",
+        content: "Open Settings on your Android phone and look for 'Digital Wellbeing & parental controls.' On Samsung phones, this may be listed as 'Digital Wellbeing.'",
       },
       {
         title: "View your daily and weekly screen time",

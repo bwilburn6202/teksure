@@ -36,7 +36,7 @@ export const guidesBatch18: Guide[] = [
         title: 'Choose the right background image',
         content:
           "The best virtual background images are: landscape format (wider than tall), at least 1920x1080 pixels for sharpness, not too busy or distracting, appropriate for the context (a beach scene for a family call; a clean bookshelf or plain wall for professional meetings). Avoid backgrounds with lots of fine details (like a forest of leaves) — they can shimmer and distort around the edges of your face and hair.",
-        tip: "Quick Tip: Zoom has free professional background packs available at zoom.us/virtual-backgrounds. Many users simply use the blur option, which requires no image and works well in nearly any situation.",
+        tip: "Quick Tip: Zoom has free professional background packs available at zoom.us/virtual-backgrounds. Many users use the blur option, which requires no image and works well in nearly any situation.",
       },
       {
         title: 'Fix problems with your virtual background',
@@ -74,7 +74,7 @@ export const guidesBatch18: Guide[] = [
         title: 'Undo Send in Apple Mail',
         content:
           "On Mac (macOS Ventura and later): go to Mail → Settings → Composing → check \"Undo Send Delay\" and set it to 10 or 20 seconds. After sending, a banner appears at the bottom of the screen with an Undo option. On iPhone and iPad (iOS 17 and later): after sending an email in the Mail app, a brief \"Undo Send\" option appears at the bottom of the screen. Swipe up on it or tap it to cancel the send. The delay setting is in Settings → Mail → Undo Send Delay.",
-        tip: "Quick Tip: Apple Mail's Undo Send is only available on iOS 16 and macOS Ventura or later. If you have an older iPhone, update it to access this feature: Settings → General → Software Update.",
+        tip: "Quick Tip: Apple Mail's Undo Send is available on iOS 16 and macOS Ventura or later — meaning any iPhone or Mac on iOS 18 / macOS Sequoia (2026 current) already has it. If you have an older iPhone, update it to access this feature: Settings → General → Software Update.",
       },
       {
         title: 'Recall an email in Outlook',
@@ -137,7 +137,7 @@ export const guidesBatch18: Guide[] = [
     thumbnailEmoji: '',
     publishedAt: '2026-04-19',
     difficulty: 'Beginner',
-    body: `Samsung Health is a free app that comes pre-installed on most Samsung Galaxy phones. It uses your phone's built-in sensors to automatically track your daily steps, distance walked, and calories burned — no smartwatch or fitness tracker required. If you have a Samsung Galaxy Watch or fitness band, Samsung Health connects to those devices as well.\n\nBeyond steps, Samsung Health can track: heart rate (on phones with a heart rate sensor), sleep duration and quality (if connected to a Samsung Watch), weight and BMI, water intake, nutrition/food log, stress levels, and workouts. Many people find that simply seeing their daily step count motivates them to move more.\n\nThis guide covers the core features and how to get started.`,
+    body: `Samsung Health is a free app that comes pre-installed on most Samsung Galaxy phones. It uses your phone's built-in sensors to automatically track your daily steps, distance walked, and calories burned — no smartwatch or fitness tracker required. If you have a Samsung Galaxy Watch or fitness band, Samsung Health connects to those devices as well.\n\nBeyond steps, Samsung Health can track: heart rate (on phones with a heart rate sensor), sleep duration and quality (if connected to a Samsung Watch), weight and BMI, water intake, nutrition/food log, stress levels, and workouts. Many people find that seeing their daily step count motivates them to move more.\n\nThis guide covers the core features and how to get started.`,
     steps: [
       {
         title: 'Set up your profile in Samsung Health',
@@ -148,7 +148,7 @@ export const guidesBatch18: Guide[] = [
       {
         title: 'Track your daily steps automatically',
         content:
-          "Samsung Health begins counting steps as soon as it is set up. Your phone just needs to be in your pocket, purse, or hand — it uses the phone's accelerometer to detect walking motion. The home screen of Samsung Health shows your steps for today, a goal ring showing your progress, and a weekly summary chart. Your steps reset at midnight each day. Steps are also shown as a widget on your home screen if you add it.",
+          "Samsung Health begins counting steps as soon as it is set up. Your phone needs to be in your pocket, purse, or hand — it uses the phone's accelerometer to detect walking motion. The home screen of Samsung Health shows your steps for today, a goal ring showing your progress, and a weekly summary chart. Your steps reset at midnight each day. Steps are also shown as a widget on your home screen if you add it.",
         tip: "Quick Tip: For accurate step counting, carry your phone on your body (not in a bag sitting on a table) while walking. The more the phone moves with your body, the more accurately it counts steps.",
       },
       {
@@ -565,7 +565,7 @@ export const guidesBatch18: Guide[] = [
     thumbnailEmoji: '',
     publishedAt: '2026-04-19',
     difficulty: 'Beginner',
-    body: `Live Text is an iPhone feature (available on iPhone XS and later, running iOS 17 or later) that can recognize and interact with text in photos and through your camera. This means you can point your camera at a business card, a restaurant menu, a sign, a receipt, or a whiteboard and tap to copy the text, call a phone number, open a website, or translate text — all without typing a single character.\n\nLive Text is also incredibly useful for accessibility — if you receive a photo with a phone number or address in it, you no longer need to manually type it; you just tap it. This guide explains how to use it in the Camera app, Photos app, and other places.`,
+    body: `Live Text is an iPhone feature (available on iPhone XS and later, running iOS 17 or later) that can recognize and interact with text in photos and through your camera. This means you can point your camera at a business card, a restaurant menu, a sign, a receipt, or a whiteboard and tap to copy the text, call a phone number, open a website, or translate text — all without typing a single character.\n\nLive Text is also incredibly useful for accessibility — if you receive a photo with a phone number or address in it, you no longer need to manually type it; you tap it. This guide explains how to use it in the Camera app, Photos app, and other places.`,
     steps: [
       {
         title: 'Enable Live Text (if not already on)',
@@ -756,7 +756,7 @@ export const guidesBatch18: Guide[] = [
     thumbnailEmoji: '',
     publishedAt: '2026-04-19',
     difficulty: 'Beginner',
-    body: `Split View on Mac fills your entire screen with two apps displayed side by side. This is different from simply resizing windows — in Split View, both apps take up exactly half the screen (or any proportion you choose) and there are no overlapping windows or desktop distractions visible. It is ideal for working from a document while writing notes, comparing two spreadsheets, or following instructions in Safari while working in an app.\n\nSplit View has been available on Mac since macOS El Capitan (2015). It works best on a large display but is useful on any Mac screen size.`,
+    body: `Split View on Mac fills your entire screen with two apps displayed side by side. This is different from resizing windows — in Split View, both apps take up exactly half the screen (or any proportion you choose) and there are no overlapping windows or desktop distractions visible. It is ideal for working from a document while writing notes, comparing two spreadsheets, or following instructions in Safari while working in an app.\n\nSplit View has been available on Mac since macOS El Capitan (2015). It works best on a large display but is useful on any Mac screen size.`,
     steps: [
       {
         title: 'Enter Split View from the green button',

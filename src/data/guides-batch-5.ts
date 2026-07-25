@@ -8,7 +8,7 @@ export const guidesBatch5: Guide[] = [
     excerpt: 'Act fast to protect your accounts, lock your device remotely, and prevent anyone from accessing your personal information.',
     category: 'safety-guides',
     tags: ['phone', 'stolen', 'lost', 'security', 'find my phone'],
-    emoji: '',
+    thumbnailEmoji: '',
     difficulty: 'Beginner' as const,
     readTime: '6 min',
     videoUrl: 'https://www.youtube.com/embed/27opg4HVzW8',
@@ -31,12 +31,12 @@ export const guidesBatch5: Guide[] = [
 
 **Quick Tip:** Write down your phone's IMEI number now (before anything happens) and keep it somewhere safe. You can find it in Settings → About Phone, or printed on the original box.`,
     steps: [
-      { title: 'Locate your phone remotely', description: `On a computer, go to icloud.com/find (iPhone) or android.com/find (Android). Sign in and see your phone's last known location on a map.` },
-      { title: 'Lock the screen remotely', description: 'Click "Mark as Lost" (iPhone) or "Lock Device" (Android). This prevents anyone from getting past the lock screen without your PIN.' },
-      { title: 'Change your email password immediately', description: 'On a computer, change your Gmail, Outlook, or Apple Mail password. Your email controls access to all your other accounts — this is the most critical step.' },
-      { title: 'Call your phone carrier to suspend service', description: `Call the number on the back of your carrier's card (or their website) and tell them your phone was lost or stolen. They can suspend service so the thief can't use your plan.` },
-      { title: 'File a police report', description: 'Call your local non-emergency police line and report the theft. Ask for a case number for your insurance claim.' },
-      { title: `Erase the device if you won't get it back`, description: `If you're sure the phone is gone, select "Erase" on the Find My website. This permanently deletes all data so no one can access your photos, apps, or messages.` },
+      { title: 'Locate your phone remotely', content: `On a computer, go to icloud.com/find (iPhone) or android.com/find (Android). Sign in and see your phone's last known location on a map.` },
+      { title: 'Lock the screen remotely', content: 'Click "Mark as Lost" (iPhone) or "Lock Device" (Android). This prevents anyone from getting past the lock screen without your PIN.' },
+      { title: 'Change your email password immediately', content: 'On a computer, change your Gmail, Outlook, or Apple Mail password. Your email controls access to all your other accounts — this is the most critical step.' },
+      { title: 'Call your phone carrier to suspend service', content: `Call the number on the back of your carrier's card (or their website) and tell them your phone was lost or stolen. They can suspend service so the thief can't use your plan.` },
+      { title: 'File a police report', content: 'Call your local non-emergency police line and report the theft. Ask for a case number for your insurance claim.' },
+      { title: `Erase the device if you won't get it back`, content: `If you're sure the phone is gone, select "Erase" on the Find My website. This permanently deletes all data so no one can access your photos, apps, or messages.` },
     ],
   },
   {
@@ -45,7 +45,7 @@ export const guidesBatch5: Guide[] = [
     excerpt: 'Google Lens lets you point your camera at text, plants, animals, or products and instantly find out what they are — no typing needed.',
     category: 'essential-skills',
     tags: ['google lens', 'camera', 'android', 'iphone', 'identify', 'translate'],
-    emoji: '',
+    thumbnailEmoji: '',
     difficulty: 'Beginner' as const,
     readTime: '5 min',
     videoUrl: 'https://www.youtube.com/embed/oR1q_XZjSd4',
@@ -79,11 +79,11 @@ On any phone: Open Google Photos and find a photo you've already taken. Tap the 
 
 **Quick Tip:** Google Lens works with photos you've already taken too. Open Google Photos, tap any photo, then tap the Lens icon at the bottom. This is great for identifying plants or products you photographed earlier.`,
     steps: [
-      { title: 'Open Google Lens', description: 'On Android: open the Google app and tap the camera icon in the search bar. On iPhone: download the Google app and tap the camera icon. You can also open Google Photos and tap the Lens icon on any photo.' },
-      { title: 'Point your camera at anything', description: 'Aim your camera at the item, plant, animal, text, or product you want to identify. Hold it steady for a second.' },
-      { title: 'Tap the shutter button', description: 'Tap the circle button to capture a still image, or hold the camera steady to let Lens work live. Results appear at the bottom of the screen.' },
-      { title: 'Explore the results', description: 'Swipe up from the bottom of the screen to see more information. Tap any result to open the full details or website.' },
-      { title: 'Use "Translate" for foreign text', description: 'If you see text in another language, tap "Translate" in the menu at the bottom. The text on your screen will switch to English instantly.' },
+      { title: 'Open Google Lens', content: 'On Android: open the Google app and tap the camera icon in the search bar. On iPhone: download the Google app and tap the camera icon. You can also open Google Photos and tap the Lens icon on any photo.' },
+      { title: 'Point your camera at anything', content: 'Aim your camera at the item, plant, animal, text, or product you want to identify. Hold it steady for a second.' },
+      { title: 'Tap the shutter button', content: 'Tap the circle button to capture a still image, or hold the camera steady to let Lens work live. Results appear at the bottom of the screen.' },
+      { title: 'Explore the results', content: 'Swipe up from the bottom of the screen to see more information. Tap any result to open the full details or website.' },
+      { title: 'Use "Translate" for foreign text', content: 'If you see text in another language, tap "Translate" in the menu at the bottom. The text on your screen will switch to English instantly.' },
     ],
   },
   {
@@ -92,7 +92,7 @@ On any phone: Open Google Photos and find a photo you've already taken. Tap the 
     excerpt: 'Tired of robocalls and scam calls? Here\'s how to silence unknown callers, block specific numbers, and turn on scam protection on your iPhone.',
     category: 'safety-guides',
     tags: ['spam calls', 'robocalls', 'iphone', 'block calls', 'silence unknown callers'],
-    emoji: '',
+    thumbnailEmoji: '',
     difficulty: 'Beginner' as const,
     readTime: '5 min',
     videoUrl: 'https://www.youtube.com/embed/nzYKHHVRKKQ',
@@ -132,10 +132,10 @@ Nomorobo is a free service available for some carriers. It automatically blocks 
 
 **Quick Tip:** Never call back an unknown number you don't recognize, especially if they left no message. Scammers use "one-ring" calls to get you to call a premium-rate number, resulting in charges on your phone bill.`,
     steps: [
-      { title: 'Turn on Silence Unknown Callers', description: 'Go to Settings → Phone → Silence Unknown Callers → turn the toggle on (it turns green). This sends all unknown numbers to voicemail automatically.' },
-      { title: 'Block a specific number', description: 'Open the Phone app → tap Recents → find the spam number → tap the (i) blue circle → scroll down → tap "Block this Caller" → confirm.' },
-      { title: 'Enable carrier spam protection', description: `Download your carrier's free spam protection app: AT&T uses ActiveArmor, T-Mobile uses Scam Shield, Verizon uses Call Filter. Search for the app by name in the App Store.` },
-      { title: 'Report spam calls to the FTC', description: 'If you receive repeated scam calls, report them at donotcall.gov or call 1-888-382-1222. Reporting helps the FTC track and take action against scam operations.' },
+      { title: 'Turn on Silence Unknown Callers', content: 'Go to Settings → Phone → Silence Unknown Callers → turn the toggle on (it turns green). This sends all unknown numbers to voicemail automatically.' },
+      { title: 'Block a specific number', content: 'Open the Phone app → tap Recents → find the spam number → tap the (i) blue circle → scroll down → tap "Block this Caller" → confirm.' },
+      { title: 'Enable carrier spam protection', content: `Download your carrier's free spam protection app: AT&T uses ActiveArmor, T-Mobile uses Scam Shield, Verizon uses Call Filter. Search for the app by name in the App Store.` },
+      { title: 'Report spam calls to the FTC', content: 'If you receive repeated scam calls, report them at donotcall.gov or call 1-888-382-1222. Reporting helps the FTC track and take action against scam operations.' },
     ],
   },
   {
@@ -144,7 +144,7 @@ Nomorobo is a free service available for some carriers. It automatically blocks 
     excerpt: 'Stop robocalls and scam calls on your Android phone using the Phone app\'s built-in tools, carrier apps, and Google\'s spam protection.',
     category: 'safety-guides',
     tags: ['spam calls', 'robocalls', 'android', 'block calls', 'google phone'],
-    emoji: '',
+    thumbnailEmoji: '',
     difficulty: 'Beginner' as const,
     readTime: '5 min',
     videoUrl: 'https://www.youtube.com/embed/oMq5Hq1GBmU',
@@ -187,10 +187,10 @@ The app "Hiya" (free, from the Google Play Store) identifies spam calls before y
 
 **Quick Tip:** Add your number to the National Do Not Call Registry at donotcall.gov or call 1-888-382-1222. This won't stop scammers (who ignore the list) but it does reduce unwanted sales calls from legitimate companies.`,
     steps: [
-      { title: 'Turn on spam protection in the Phone app', description: 'Open the Phone app → tap the three dots (⋮) in the top right → Settings → Spam and Call Screen → turn on "See caller & spam ID" and "Filter spam calls."' },
-      { title: 'Block a specific number', description: 'Open the Phone app → tap Recents → tap the spam number → tap "Block / report spam" → check the report box → tap Block.' },
-      { title: `Enable your carrier's protection app`, description: `Search the Play Store for your carrier's app: AT&T ActiveArmor, T-Mobile Scam Shield, or Verizon Call Filter. Download and follow the setup.` },
-      { title: 'Register on the Do Not Call Registry', description: 'Go to donotcall.gov or call 1-888-382-1222 to register your number. Legitimate telemarketers are required by law to honor the list.' },
+      { title: 'Turn on spam protection in the Phone app', content: 'Open the Phone app → tap the three dots (⋮) in the top right → Settings → Spam and Call Screen → turn on "See caller & spam ID" and "Filter spam calls."' },
+      { title: 'Block a specific number', content: 'Open the Phone app → tap Recents → tap the spam number → tap "Block / report spam" → check the report box → tap Block.' },
+      { title: `Enable your carrier's protection app`, content: `Search the Play Store for your carrier's app: AT&T ActiveArmor, T-Mobile Scam Shield, or Verizon Call Filter. Download and follow the setup.` },
+      { title: 'Register on the Do Not Call Registry', content: 'Go to donotcall.gov or call 1-888-382-1222 to register your number. Legitimate telemarketers are required by law to honor the list.' },
     ],
   },
   {
@@ -199,7 +199,7 @@ The app "Hiya" (free, from the Google Play Store) identifies spam calls before y
     excerpt: 'Many people are paying for apps and services they forgot about. Here\'s how to find every subscription and cancel the ones you no longer want.',
     category: 'tips-tricks',
     tags: ['subscriptions', 'cancel', 'streaming', 'save money', 'apps'],
-    emoji: '',
+    thumbnailEmoji: '',
     difficulty: 'Beginner' as const,
     readTime: '7 min',
     videoUrl: 'https://www.youtube.com/embed/MQkHY4DOdfw',
@@ -234,11 +234,11 @@ If a service makes it hard to cancel (buried menus, endless pop-ups), you can ca
 
 **Quick Tip:** Use a free service like Rocket Money (rocketmoney.com) or Trim (hellotrim.com) to automatically scan your bank statements for subscriptions. They identify recurring charges in seconds and can even cancel some on your behalf.`,
     steps: [
-      { title: 'Check your bank statement for recurring charges', description: 'Log in to your bank or open your statement. Look for any charges that repeat each month (or year). Write down every subscription you find.' },
-      { title: 'Review Apple subscriptions', description: 'On iPhone: Settings → tap your name → Subscriptions. See all active subscriptions. Tap one → Cancel Subscription to cancel it.' },
-      { title: 'Review Google Play subscriptions', description: `On Android: Open Play Store → tap your profile photo → Payments & Subscriptions → Subscriptions. Cancel any you don't want.` },
-      { title: 'Cancel PayPal automatic payments', description: 'Log in to PayPal → Settings (gear icon) → Payments → Manage automatic payments. Cancel permission for any service you no longer use.' },
-      { title: `Cancel directly on the service's website`, description: `For anything not found above, visit the service's website and look for Account → Billing → Cancel. Every legitimate service must let you cancel.` },
+      { title: 'Check your bank statement for recurring charges', content: 'Log in to your bank or open your statement. Look for any charges that repeat each month (or year). Write down every subscription you find.' },
+      { title: 'Review Apple subscriptions', content: 'On iPhone: Settings → tap your name → Subscriptions. See all active subscriptions. Tap one → Cancel Subscription to cancel it.' },
+      { title: 'Review Google Play subscriptions', content: `On Android: Open Play Store → tap your profile photo → Payments & Subscriptions → Subscriptions. Cancel any you don't want.` },
+      { title: 'Cancel PayPal automatic payments', content: 'Log in to PayPal → Settings (gear icon) → Payments → Manage automatic payments. Cancel permission for any service you no longer use.' },
+      { title: `Cancel directly on the service's website`, content: `For anything not found above, visit the service's website and look for Account → Billing → Cancel. Every legitimate service must let you cancel.` },
     ],
   },
   {
@@ -247,7 +247,7 @@ If a service makes it hard to cancel (buried menus, endless pop-ups), you can ca
     excerpt: 'You can talk to your phone instead of typing. This guide shows you how to use voice-to-text on iPhone and Android to send messages, write emails, and more.',
     category: 'essential-skills',
     tags: ['voice to text', 'dictation', 'talk to type', 'accessibility', 'iphone', 'android'],
-    emoji: '',
+    thumbnailEmoji: '',
     difficulty: 'Beginner' as const,
     readTime: '5 min',
     videoUrl: 'https://www.youtube.com/embed/ZAXS0kFCyaI',
@@ -284,13 +284,13 @@ On Android: Say "Hey Google, send a text to [person's name]."
 
 Your assistant will read the message back to you and ask you to confirm before sending.
 
-**Quick Tip:** Voice-to-text gets better with practice. Speak at a normal pace (not too fast, not too slow), and speak in complete phrases rather than one word at a time. If it makes a mistake, just tap the wrong word and retype it.`,
+**Quick Tip:** Voice-to-text gets better with practice. Speak at a normal pace (not too fast, not too slow), and speak in complete phrases rather than one word at a time. If it makes a mistake, tap the wrong word and retype it.`,
     steps: [
-      { title: 'Tap inside any text box', description: 'In Messages, Mail, Notes, or a search bar — tap where you normally type. The keyboard will appear on screen.' },
-      { title: 'Tap the microphone icon', description: `Look for a small microphone icon on the keyboard, usually near the space bar. Tap it. You may see a waveform or hear a tone indicating it's listening.` },
-      { title: 'Speak clearly and naturally', description: 'Talk at a normal speed. Say punctuation out loud: "period," "comma," "question mark," or "new paragraph." Your words will appear on screen as you speak.' },
-      { title: 'Stop speaking when done', description: 'Tap the microphone icon again or tap "Done" to stop. Review what was typed and tap any mistakes to fix them.' },
-      { title: 'Try hands-free with Siri or Google', description: 'On iPhone say "Hey Siri, send a text to [name] saying [message]." On Android say "Hey Google, text [name]." Your assistant sends it after you confirm.' },
+      { title: 'Tap inside any text box', content: 'In Messages, Mail, Notes, or a search bar — tap where you normally type. The keyboard will appear on screen.' },
+      { title: 'Tap the microphone icon', content: `Look for a small microphone icon on the keyboard, usually near the space bar. Tap it. You may see a waveform or hear a tone indicating it's listening.` },
+      { title: 'Speak clearly and naturally', content: 'Talk at a normal speed. Say punctuation out loud: "period," "comma," "question mark," or "new paragraph." Your words will appear on screen as you speak.' },
+      { title: 'Stop speaking when done', content: 'Tap the microphone icon again or tap "Done" to stop. Review what was typed and tap any mistakes to fix them.' },
+      { title: 'Try hands-free with Siri or Google', content: 'On iPhone say "Hey Siri, send a text to [name] saying [message]." On Android say "Hey Google, text [name]." Your assistant sends it after you confirm.' },
     ],
   },
   {
@@ -299,7 +299,7 @@ Your assistant will read the message back to you and ask you to confirm before s
     excerpt: 'AI is in the news constantly. Here\'s what it actually means, what it can do, what it can\'t do, and why you might find it useful in everyday life.',
     category: 'ai-guides',
     tags: ['artificial intelligence', 'ai', 'chatgpt', 'machine learning', 'beginners'],
-    emoji: '',
+    thumbnailEmoji: '',
     difficulty: 'Beginner' as const,
     readTime: '6 min',
     videoUrl: 'https://www.youtube.com/embed/ad79nYk2keg',
@@ -343,10 +343,10 @@ Similar tools include Google Gemini (gemini.google.com) and Microsoft Copilot (c
 
 **Quick Tip:** AI tools are not magic. They make mistakes. Never rely on AI alone for important decisions about your health, money, or legal matters. Use it as a starting point, then verify with a real professional or official source.`,
     steps: [
-      { title: 'Understand that AI is just smart software', description: 'AI has been trained on enormous amounts of text and can answer questions, write things, and explain topics. Think of it as a very well-read assistant — helpful, but not always right.' },
-      { title: 'Notice the AI you already use', description: 'Autocomplete on your keyboard, spam filters in email, and voice assistants like Siri and Alexa are all forms of AI you already use every day.' },
-      { title: 'Try a free AI tool', description: 'Visit chat.openai.com (ChatGPT) or gemini.google.com (Google Gemini). Both are free. Type any question in plain English and see what it says.' },
-      { title: 'Know the limits', description: 'AI makes mistakes and can confidently state things that are wrong. Never rely on AI for medical, legal, or financial decisions without verifying with a real professional.' },
+      { title: 'Understand that AI is just smart software', content: 'AI has been trained on enormous amounts of text and can answer questions, write things, and explain topics. Think of it as a very well-read assistant — helpful, but not always right.' },
+      { title: 'Notice the AI you already use', content: 'Autocomplete on your keyboard, spam filters in email, and voice assistants like Siri and Alexa are all forms of AI you already use every day.' },
+      { title: 'Try a free AI tool', content: 'Visit chat.openai.com (ChatGPT) or gemini.google.com (Google Gemini). Both are free. Type any question in plain English and see what it says.' },
+      { title: 'Know the limits', content: 'AI makes mistakes and can confidently state things that are wrong. Never rely on AI for medical, legal, or financial decisions without verifying with a real professional.' },
     ],
   },
   {
@@ -355,7 +355,7 @@ Similar tools include Google Gemini (gemini.google.com) and Microsoft Copilot (c
     excerpt: 'ChatGPT is a free AI tool that can answer questions, write things for you, and explain confusing topics. Here\'s how to get started safely.',
     category: 'ai-guides',
     tags: ['chatgpt', 'ai', 'openai', 'artificial intelligence', 'beginners'],
-    emoji: '',
+    thumbnailEmoji: '',
     difficulty: 'Beginner' as const,
     readTime: '6 min',
     videoUrl: 'https://www.youtube.com/embed/JTxsNm9IdYU',
@@ -406,11 +406,11 @@ ChatGPT can make mistakes — sometimes confidently. Always verify important inf
 
 **Quick Tip:** If ChatGPT says something that surprises you or seems off, it's fine to say "Are you sure about that?" or "Can you double-check that?" It will often correct itself or add important caveats.`,
     steps: [
-      { title: 'Go to chat.openai.com', description: 'Open your web browser and go to chat.openai.com. You can start asking questions without creating an account. Or download the free ChatGPT app on your phone.' },
-      { title: 'Type your question in plain English', description: `Type any question exactly as you'd ask a person. No technical language needed. Press Enter or tap the send button.` },
-      { title: 'Read and follow up', description: 'ChatGPT will respond with a detailed answer. If you want more detail or something clarified, just type a follow-up question.' },
-      { title: 'Never share sensitive personal information', description: 'Do not enter your Social Security number, bank account numbers, passwords, or full home address into ChatGPT. Treat it like a public conversation.' },
-      { title: 'Verify important information', description: 'For health, legal, or financial questions, use ChatGPT as a starting point — then verify with a real professional before acting on the information.' },
+      { title: 'Go to chat.openai.com', content: 'Open your web browser and go to chat.openai.com. You can start asking questions without creating an account. Or download the free ChatGPT app on your phone.' },
+      { title: 'Type your question in plain English', content: `Type any question exactly as you'd ask a person. No technical language needed. Press Enter or tap the send button.` },
+      { title: 'Read and follow up', content: 'ChatGPT will respond with a detailed answer. If you want more detail or something clarified, type a follow-up question.' },
+      { title: 'Never share sensitive personal information', content: 'Do not enter your Social Security number, bank account numbers, passwords, or full home address into ChatGPT. Treat it like a public conversation.' },
+      { title: 'Verify important information', content: 'For health, legal, or financial questions, use ChatGPT as a starting point — then verify with a real professional before acting on the information.' },
     ],
   },
   {
@@ -419,7 +419,7 @@ ChatGPT can make mistakes — sometimes confidently. Always verify important inf
     excerpt: 'Screen sharing on Zoom lets you show someone else exactly what\'s on your computer — great for getting tech help, showing photos, or following along on a document together.',
     category: 'essential-skills',
     tags: ['zoom', 'screen sharing', 'video call', 'remote help', 'work from home'],
-    emoji: '',
+    thumbnailEmoji: '',
     difficulty: 'Beginner' as const,
     readTime: '5 min',
     videoUrl: 'https://www.youtube.com/embed/C4sptqFb0Bk',
@@ -450,11 +450,11 @@ Here's how to do it step by step.
 
 **Quick Tip:** Before sharing, close any apps or browser tabs that contain private information (like banking or health apps). Everything on your screen will be visible to everyone on the call.`,
     steps: [
-      { title: 'Start or join a Zoom call', description: 'Screen sharing only works during an active Zoom video call. Join or start your call first.' },
-      { title: 'Click "Share Screen" in the toolbar', description: 'On a computer, look at the bottom of the Zoom window for the green "Share Screen" button (with an upward arrow icon). Click it.' },
-      { title: 'Choose what to share', description: 'A menu appears. Click "Desktop" to show your entire screen, or click a specific app to show only that window. Then click the blue "Share" button.' },
-      { title: `Confirm you're sharing`, description: `A green border will appear around your screen. You'll see a toolbar at the top saying "You are screen sharing." The other person can now see your screen.` },
-      { title: 'Stop sharing when done', description: 'Click the red "Stop Share" button that appears at the top of your screen. Your screen will become private again immediately.' },
+      { title: 'Start or join a Zoom call', content: 'Screen sharing only works during an active Zoom video call. Join or start your call first.' },
+      { title: 'Click "Share Screen" in the toolbar', content: 'On a computer, look at the bottom of the Zoom window for the green "Share Screen" button (with an upward arrow icon). Click it.' },
+      { title: 'Choose what to share', content: 'A menu appears. Click "Desktop" to show your entire screen, or click a specific app to show only that window. Then click the blue "Share" button.' },
+      { title: `Confirm you're sharing`, content: `A green border will appear around your screen. You'll see a toolbar at the top saying "You are screen sharing." The other person can now see your screen.` },
+      { title: 'Stop sharing when done', content: 'Click the red "Stop Share" button that appears at the top of your screen. Your screen will become private again immediately.' },
     ],
   },
   {
@@ -463,7 +463,7 @@ Here's how to do it step by step.
     excerpt: 'Emergency SOS lets you quickly call 911 and alert your emergency contacts with just a few button presses — even without typing a number.',
     category: 'safety-guides',
     tags: ['emergency sos', 'iphone safety', '911', 'emergency contacts', 'medical id'],
-    emoji: '🆘',
+    thumbnailEmoji: '🆘',
     difficulty: 'Beginner' as const,
     readTime: '5 min',
     videoUrl: 'https://www.youtube.com/embed/0W8KOCF1SFA',
@@ -507,10 +507,10 @@ If you have an Apple Watch, it can detect if you fall and automatically call 911
 
 **Quick Tip:** Test the process so you're familiar with it. You can trigger Emergency SOS and immediately cancel — this won't call 911 as long as you cancel before the countdown ends.`,
     steps: [
-      { title: 'Know how to trigger Emergency SOS', description: 'On iPhone 8 or newer: press and hold the Side button + either Volume button until sliders appear, then slide "Emergency SOS." Or press the Side button 5 times quickly.' },
-      { title: 'Add emergency contacts in the Health app', description: `Open the Health app → tap your profile → Medical ID → Edit → Emergency Contacts → tap + and add a family member. They'll be notified with your location when you call Emergency SOS.` },
-      { title: 'Fill in your Medical ID', description: 'In the Health app Medical ID, enter your blood type, conditions, allergies, and medications. Emergency responders can see this on your lock screen without your password.' },
-      { title: 'Enable fall detection on Apple Watch (if you have one)', description: `Open the Watch app → My Watch → Emergency SOS → turn on Fall Detection. Your watch will call 911 automatically if you fall and don't respond.` },
+      { title: 'Know how to trigger Emergency SOS', content: 'On iPhone 8 or newer: press and hold the Side button + either Volume button until sliders appear, then slide "Emergency SOS." Or press the Side button 5 times quickly.' },
+      { title: 'Add emergency contacts in the Health app', content: `Open the Health app → tap your profile → Medical ID → Edit → Emergency Contacts → tap + and add a family member. They'll be notified with your location when you call Emergency SOS.` },
+      { title: 'Fill in your Medical ID', content: 'In the Health app Medical ID, enter your blood type, conditions, allergies, and medications. Emergency responders can see this on your lock screen without your password.' },
+      { title: 'Enable fall detection on Apple Watch (if you have one)', content: `Open the Watch app → My Watch → Emergency SOS → turn on Fall Detection. Your watch will call 911 automatically if you fall and don't respond.` },
     ],
   },
   {
@@ -519,7 +519,7 @@ If you have an Apple Watch, it can detect if you fall and automatically call 911
     excerpt: 'Fake reviews are everywhere — on Amazon, Google, Yelp, and beyond. Here\'s how to tell real reviews from paid or fake ones so you can shop with confidence.',
     category: 'safety-guides',
     tags: ['fake reviews', 'amazon', 'yelp', 'google reviews', 'online shopping', 'consumer protection'],
-    emoji: '',
+    thumbnailEmoji: '',
     difficulty: 'Beginner' as const,
     readTime: '5 min',
     videoUrl: 'https://www.youtube.com/embed/pzR9MwIKCOQ',
@@ -559,11 +559,11 @@ Click on the name of the reviewer (on Amazon). If their profile shows they've on
 
 **Quick Tip:** For local businesses on Yelp, look for the small note that says "Yelp's recommendation software." Yelp automatically filters out reviews that appear untrustworthy — click "Not Currently Recommended" to see what was filtered.`,
     steps: [
-      { title: 'Check the overall rating distribution', description: `A healthy product has a mix of ratings. If everything is 5 stars with no criticism at all, that's a red flag. Scroll down to see the star breakdown chart.` },
-      { title: 'Read the negative and critical reviews', description: 'Sort reviews by "Most Critical" or "Lowest Rated." Real complaints give you the most useful information — and help you spot if the criticisms seem generic or fake too.' },
-      { title: 'Check reviewer profiles', description: `On Amazon, click a reviewer's name. If they have no review history, or have given 5-star reviews to dozens of products in the same category, treat their review with skepticism.` },
-      { title: 'Use Fakespot to analyze Amazon listings', description: `Go to fakespot.com, paste the Amazon product page URL, and click Analyze. You'll get a letter grade (A–F) and details about what percentage of reviews appear authentic.` },
-      { title: 'Look for specific, balanced reviews', description: 'Trust reviews that mention specific details, include both positives and negatives, and are marked as "Verified Purchase." Vague praise with no specifics is a sign of a fake review.' },
+      { title: 'Check the overall rating distribution', content: `A healthy product has a mix of ratings. If everything is 5 stars with no criticism at all, that's a red flag. Scroll down to see the star breakdown chart.` },
+      { title: 'Read the negative and critical reviews', content: 'Sort reviews by "Most Critical" or "Lowest Rated." Real complaints give you the most useful information — and help you spot if the criticisms seem generic or fake too.' },
+      { title: 'Check reviewer profiles', content: `On Amazon, click a reviewer's name. If they have no review history, or have given 5-star reviews to dozens of products in the same category, treat their review with skepticism.` },
+      { title: 'Use Fakespot to analyze Amazon listings', content: `Go to fakespot.com, paste the Amazon product page URL, and click Analyze. You'll get a letter grade (A–F) and details about what percentage of reviews appear authentic.` },
+      { title: 'Look for specific, balanced reviews', content: 'Trust reviews that mention specific details, include both positives and negatives, and are marked as "Verified Purchase." Vague praise with no specifics is a sign of a fake review.' },
     ],
   },
   {
@@ -572,7 +572,7 @@ Click on the name of the reviewer (on Amazon). If their profile shows they've on
     excerpt: 'Is your Android phone running low on storage? Here\'s how to quickly clear space by removing photos, apps, cached files, and more.',
     category: 'tips-tricks',
     tags: ['android storage', 'free up space', 'clear cache', 'storage full', 'android tips'],
-    emoji: '',
+    thumbnailEmoji: '',
     difficulty: 'Beginner' as const,
     readTime: '6 min',
     videoUrl: 'https://www.youtube.com/embed/QwyybmZ7UMk',
@@ -620,11 +620,11 @@ Many Android phones have a built-in "Free Up Space" or "Storage Optimizer" tool.
 
 **Quick Tip:** Empty your Downloads folder — it's often full of files you've forgotten about. Open your Files app → Downloads and delete anything you no longer need.`,
     steps: [
-      { title: 'Check how much storage you have left', description: `Go to Settings → Storage. You'll see how much is used, what's using it, and how much remains.` },
-      { title: 'Back up and clear your photos', description: 'Install Google Photos → back up all photos → then delete local copies. Or manually delete blurry photos, duplicates, and old screenshots.' },
-      { title: 'Clear app caches', description: 'Go to Settings → Storage → Other Apps. Tap any app → Storage → Clear Cache. Or tap "Cached data" in the storage screen to clear all caches at once.' },
-      { title: 'Uninstall unused apps', description: `Go to Settings → Apps. Tap any app you haven't used in months → Uninstall. You can always re-download free apps later.` },
-      { title: 'Empty your Downloads folder', description: 'Open the Files app → tap Downloads → select old files and delete them. This folder often contains forgotten files taking up significant space.' },
+      { title: 'Check how much storage you have left', content: `Go to Settings → Storage. You'll see how much is used, what's using it, and how much remains.` },
+      { title: 'Back up and clear your photos', content: 'Install Google Photos → back up all photos → then delete local copies. Or manually delete blurry photos, duplicates, and old screenshots.' },
+      { title: 'Clear app caches', content: 'Go to Settings → Storage → Other Apps. Tap any app → Storage → Clear Cache. Or tap "Cached data" in the storage screen to clear all caches at once.' },
+      { title: 'Uninstall unused apps', content: `Go to Settings → Apps. Tap any app you haven't used in months → Uninstall. You can always re-download free apps later.` },
+      { title: 'Empty your Downloads folder', content: 'Open the Files app → tap Downloads → select old files and delete them. This folder often contains forgotten files taking up significant space.' },
     ],
   },
   {
@@ -633,7 +633,7 @@ Many Android phones have a built-in "Free Up Space" or "Storage Optimizer" tool.
     excerpt: 'Phishing emails try to trick you into clicking fake links or giving up passwords. Here are the warning signs to look for in every email.',
     category: 'safety-guides',
     tags: ['phishing', 'email scams', 'spam', 'fraud', 'identity theft', 'email safety'],
-    emoji: '',
+    thumbnailEmoji: '',
     difficulty: 'Beginner' as const,
     readTime: '6 min',
     videoUrl: 'https://www.youtube.com/embed/XBkzBrXlle0',
@@ -680,12 +680,12 @@ Never open an attachment you weren't expecting, even if the email claims to be a
 
 **Quick Tip:** When in doubt, call the company directly using the phone number on the back of your card or on their official website — never the number in a suspicious email.`,
     steps: [
-      { title: `Check the sender's actual email address`, description: `Tap or click the sender's name to reveal the full email address. Real companies use their own domain (@amazon.com, @apple.com, @bankname.com). Watch for extra words, hyphens, or wrong domains.` },
-      { title: 'Look for urgency and threats', description: 'Phrases like "suspended in 24 hours," "pay immediately," or "unauthorized access detected" are designed to rush you. Slow down — take a breath before clicking anything.' },
-      { title: 'Check for your name', description: 'Your real bank or service knows your name and uses it. "Dear Customer" or "Dear Account Holder" is a warning sign.' },
-      { title: 'Hover over links before clicking', description: `On a computer, hover your mouse over any link to see the real URL at the bottom of the screen. On a phone, press and hold the link (don't tap) to see where it actually goes.` },
-      { title: 'Never open unexpected attachments', description: `Don't open any attached file you weren't expecting — even PDFs or Word documents. If it claims to be an invoice or receipt, verify by going directly to the company's website.` },
-      { title: 'Report it and delete it', description: 'In Gmail, click the three dots → "Report phishing." Then delete the email. Report phishing emails to reportphishing.antiphishing.org to help protect others.' },
+      { title: `Check the sender's actual email address`, content: `Tap or click the sender's name to reveal the full email address. Real companies use their own domain (@amazon.com, @apple.com, @bankname.com). Watch for extra words, hyphens, or wrong domains.` },
+      { title: 'Look for urgency and threats', content: 'Phrases like "suspended in 24 hours," "pay immediately," or "unauthorized access detected" are designed to rush you. Slow down — take a breath before clicking anything.' },
+      { title: 'Check for your name', content: 'Your real bank or service knows your name and uses it. "Dear Customer" or "Dear Account Holder" is a warning sign.' },
+      { title: 'Hover over links before clicking', content: `On a computer, hover your mouse over any link to see the real URL at the bottom of the screen. On a phone, press and hold the link (don't tap) to see where it actually goes.` },
+      { title: 'Never open unexpected attachments', content: `Don't open any attached file you weren't expecting — even PDFs or Word documents. If it claims to be an invoice or receipt, verify by going directly to the company's website.` },
+      { title: 'Report it and delete it', content: 'In Gmail, click the three dots → "Report phishing." Then delete the email. Report phishing emails to reportphishing.antiphishing.org to help protect others.' },
     ],
   },
   {
@@ -694,7 +694,7 @@ Never open an attachment you weren't expecting, even if the email claims to be a
     excerpt: 'Find My lets you locate your lost iPhone on a map, make it play a sound, lock it remotely, or erase it if it\'s been stolen.',
     category: 'safety-guides',
     tags: ['find my iphone', 'lost phone', 'stolen phone', 'icloud', 'track phone'],
-    emoji: '',
+    thumbnailEmoji: '',
     difficulty: 'Beginner' as const,
     readTime: '5 min',
     videoUrl: 'https://www.youtube.com/embed/6INEi5vtE1E',
@@ -732,11 +732,11 @@ If you put it in "Lost Mode," the screen shows a message you wrote (like "This i
 
 **Quick Tip:** You can also use the Find My app to locate AirPods, Apple Watch, and AirTags. If someone sends an unknown AirTag with you (which is a tracking concern), you'll automatically receive an alert on your iPhone.`,
     steps: [
-      { title: 'Turn on Find My iPhone now', description: 'Settings → tap your name → Find My → Find My iPhone → turn on. Also turn on "Find My Network" and "Send Last Location." Do this before you ever lose your phone.' },
-      { title: 'Open Find My on another device when lost', description: 'On another iPhone: open the Find My app → Devices → tap your phone. On a computer: go to icloud.com → Find My iPhone. Sign in with your Apple ID.' },
-      { title: 'Make it play a sound', description: 'In Find My, tap your device → tap "Play Sound." Your phone will make a loud alert even on silent mode. Useful for finding it in the couch cushions.' },
-      { title: `Mark as Lost if you can't find it`, description: 'In Find My, tap your device → "Mark as Lost." This locks the phone, shows your contact message on screen, and tracks location updates.' },
-      { title: 'Erase it only as a last resort', description: `Tap "Erase This Device" only if you're certain you won't get it back. This permanently deletes all data. Once erased, you can no longer track the device's location.` },
+      { title: 'Turn on Find My iPhone now', content: 'Settings → tap your name → Find My → Find My iPhone → turn on. Also turn on "Find My Network" and "Send Last Location." Do this before you ever lose your phone.' },
+      { title: 'Open Find My on another device when lost', content: 'On another iPhone: open the Find My app → Devices → tap your phone. On a computer: go to icloud.com → Find My iPhone. Sign in with your Apple ID.' },
+      { title: 'Make it play a sound', content: 'In Find My, tap your device → tap "Play Sound." Your phone will make a loud alert even on silent mode. Useful for finding it in the couch cushions.' },
+      { title: `Mark as Lost if you can't find it`, content: 'In Find My, tap your device → "Mark as Lost." This locks the phone, shows your contact message on screen, and tracks location updates.' },
+      { title: 'Erase it only as a last resort', content: `Tap "Erase This Device" only if you're certain you won't get it back. This permanently deletes all data. Once erased, you can no longer track the device's location.` },
     ],
   },
   {
@@ -745,7 +745,7 @@ If you put it in "Lost Mode," the screen shows a message you wrote (like "This i
     excerpt: 'Your name, address, and birthdate are valuable to identity thieves. Here are 8 practical steps to keep your personal information private online.',
     category: 'safety-guides',
     tags: ['privacy', 'identity theft', 'personal information', 'online safety', 'data protection'],
-    emoji: '',
+    thumbnailEmoji: '',
     difficulty: 'Beginner' as const,
     readTime: '7 min',
     videoUrl: 'https://www.youtube.com/embed/Uy60wy20ADE',
@@ -797,11 +797,11 @@ A credit freeze (also called a "security freeze") prevents anyone — including 
 
 **Quick Tip:** Set up a free fraud alert with one bureau (Equifax, Experian, or TransUnion) — by law, they're required to notify the other two. A fraud alert tells lenders to verify your identity before opening any new account in your name.`,
     steps: [
-      { title: 'Use a unique, strong password for every account', description: `Download a free password manager like Bitwarden (bitwarden.com) to create and store unique passwords. Or use your iPhone's built-in Keychain or Chrome's Password Manager.` },
-      { title: 'Turn on two-factor authentication', description: `For email, banking, and shopping accounts: go to Security Settings and look for "Two-Factor Authentication" or "2-Step Verification." Turn it on — it's the single most effective security step you can take.` },
-      { title: 'Check your credit report for free', description: `Go to annualcreditreport.com (the official government-authorized site). Get a free report from each of the three bureaus. Look for accounts or activity you don't recognize.` },
-      { title: 'Freeze your credit', description: 'Visit equifax.com, experian.com, and transunion.com individually and set up a free credit freeze at each. This prevents anyone from opening new credit in your name.' },
-      { title: 'Never use public WiFi for banking or shopping', description: `At coffee shops, libraries, and airports, use your phone's cellular data (turn off WiFi) when accessing banking apps or shopping sites. Public WiFi is not secure.` },
+      { title: 'Use a unique, strong password for every account', content: `Download a free password manager like Bitwarden (bitwarden.com) to create and store unique passwords. Or use your iPhone's built-in Keychain or Chrome's Password Manager.` },
+      { title: 'Turn on two-factor authentication', content: `For email, banking, and shopping accounts: go to Security Settings and look for "Two-Factor Authentication" or "2-Step Verification." Turn it on — it's the single most effective security step you can take.` },
+      { title: 'Check your credit report for free', content: `Go to annualcreditreport.com (the official government-authorized site). Get a free report from each of the three bureaus. Look for accounts or activity you don't recognize.` },
+      { title: 'Freeze your credit', content: 'Visit equifax.com, experian.com, and transunion.com individually and set up a free credit freeze at each. This prevents anyone from opening new credit in your name.' },
+      { title: 'Never use public WiFi for banking or shopping', content: `At coffee shops, libraries, and airports, use your phone's cellular data (turn off WiFi) when accessing banking apps or shopping sites. Public WiFi is not secure.` },
     ],
   },
 ];

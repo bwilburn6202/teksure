@@ -48,6 +48,7 @@ const About                  = lazy(() => import("./pages/About"));
 const Roadmap                = lazy(() => import("./pages/Roadmap"));
 const SearchResults          = lazy(() => import("./pages/SearchResults"));
 const Tools                  = lazy(() => import("./pages/Tools"));
+const AllToolsDirectory      = lazy(() => import("./pages/AllToolsDirectory"));
 const PasswordStrength       = lazy(() => import("./pages/tools/PasswordStrength"));
 const WifiSpeed              = lazy(() => import("./pages/tools/WifiSpeed"));
 const HealthCheck            = lazy(() => import("./pages/tools/HealthCheck"));
@@ -2865,7 +2866,6 @@ const SeniorTranslationTravel                = lazy(() => import("./pages/tools/
 const SeniorCurrency                         = lazy(() => import("./pages/tools/SeniorCurrency"));
 const SeniorTSAGuide                         = lazy(() => import("./pages/tools/SeniorTSAGuide"));
 const SeniorAirportShuttles                  = lazy(() => import("./pages/tools/SeniorAirportShuttles"));
-const SeniorVoicemail                        = lazy(() => import("./pages/tools/SeniorVoicemail"));
 const SeniorCallScreening                    = lazy(() => import("./pages/tools/SeniorCallScreening"));
 const SeniorPhoneAccessibility               = lazy(() => import("./pages/tools/SeniorPhoneAccessibility"));
 const SeniorWalkieTalkies                    = lazy(() => import("./pages/tools/SeniorWalkieTalkies"));
@@ -3935,6 +3935,7 @@ const AppContent = () => {
           <Route path="/quick-fixes" element={<QuickFixes />} />
           <Route path="/device-hub" element={<DeviceHub />} />
           <Route path="/tools" element={<Tools />} />
+          <Route path="/tools/all" element={<AllToolsDirectory />} />
           <Route path="/brain" element={<Brain />} />
           {/* /tekbrain is the welcoming landing page; /tekbrain/chat is the
               actual chat UI. First-time visitors now see an explainer before
@@ -6606,7 +6607,6 @@ const AppContent = () => {
           <Route path="/tools/senior-currency" element={<SeniorCurrency />} />
           <Route path="/tools/senior-tsa-guide" element={<SeniorTSAGuide />} />
           <Route path="/tools/senior-airport-shuttles" element={<SeniorAirportShuttles />} />
-          <Route path="/tools/senior-voicemail" element={<SeniorVoicemail />} />
           <Route path="/tools/senior-call-screening" element={<SeniorCallScreening />} />
           <Route path="/tools/senior-phone-accessibility" element={<SeniorPhoneAccessibility />} />
           <Route path="/tools/senior-walkie-talkies" element={<SeniorWalkieTalkies />} />

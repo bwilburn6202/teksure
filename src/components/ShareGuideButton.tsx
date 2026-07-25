@@ -17,7 +17,7 @@ interface ShareGuideButtonProps {
 export function ShareGuideButton({ title, url }: ShareGuideButtonProps) {
   const [copied, setCopied] = useState(false);
   const { toast } = useToast();
-  const fullUrl = `https://teksure.com${url}`;
+  const fullUrl = `https://www.teksure.com${url}`;
   const encodedTitle = encodeURIComponent(title);
   const encodedUrl = encodeURIComponent(fullUrl);
 

@@ -531,7 +531,7 @@ export const guidesBatch32: Guide[] = [
       },
       {
         title: 'Choose a subscription plan',
-        content: 'Select Ad-Lite ($9.99), Ad-Free ($15.99), or Ultimate ($19.99). If you just want to try it, Ad-Lite is a low-cost starting point. Create an account with your email and a password.',
+        content: 'Select Ad-Lite ($9.99), Ad-Free ($15.99), or Ultimate ($19.99). If you want to try it, Ad-Lite is a low-cost starting point. Create an account with your email and a password.',
         tip: 'If you have an HBO subscription through your cable or internet provider, check whether you already have Max access included — many providers bundle it. Look for a "Sign In with TV Provider" option.',
       },
       {

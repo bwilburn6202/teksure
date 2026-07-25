@@ -481,7 +481,7 @@ const TROUBLESHOOTING: TroubleItem[] = [
   {
     title: 'I can\'t find the app I want',
     body:
-      'Every device has a search function — look for a magnifying-glass icon on the home screen. Type the app name (Netflix, Hulu, etc.) and press Install. If the app simply doesn\'t exist for your device (rare but possible for older smart TVs), a cheap $30 Roku or Fire Stick will give you every streaming service.',
+      'Every device has a search function — look for a magnifying-glass icon on the home screen. Type the app name (Netflix, Hulu, etc.) and press Install. If the app doesn\'t exist for your device (rare but possible for older smart TVs), a cheap $30 Roku or Fire Stick will give you every streaming service.',
   },
   {
     title: 'The picture looks blurry or the sound is off',

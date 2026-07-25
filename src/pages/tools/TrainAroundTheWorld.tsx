@@ -82,7 +82,7 @@ export default function TrainAroundTheWorld() {
               <li><strong>Tauck</strong> — luxury train tours.</li>
               <li><strong>Road Scholar</strong> — educational rail trips.</li>
               <li>Done-for-you = fewer logistics.</li>
-              <li>Combine cities seamlessly.</li>
+              <li>Combine cities smoothly.</li>
             </ul>
           </CardContent>
         </Card>

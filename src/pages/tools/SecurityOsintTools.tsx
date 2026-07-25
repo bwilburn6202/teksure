@@ -341,7 +341,7 @@ export default function SecurityOsintTools() {
           '@type': 'CollectionPage',
           name: 'Security & OSINT Tools Directory',
           description: `A comprehensive directory of ${totalTools}+ security and open-source intelligence tools.`,
-          url: 'https://teksure.com/tools/security-osint',
+          url: 'https://www.teksure.com/tools/security-osint',
         }}
       />
       <Navbar />

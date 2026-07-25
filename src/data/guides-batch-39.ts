@@ -182,7 +182,7 @@ export const guidesBatch39: Guide[] = [
       {
         title: 'Choose between Windows, Mac, or Chromebook first',
         content: `Windows laptops run Microsoft Windows — they have the widest variety of software, come in every price range, and are familiar to anyone who has used a desktop PC. MacBooks run macOS — they work especially well with iPhones and iPads (AirDrop, iMessage on Mac, Handoff features) and are known for reliability and longevity, but cost more. Chromebooks run Chrome OS — they are designed primarily for web browsing and Google apps (Gmail, Google Docs, YouTube). They are inexpensive, very simple to use, and nearly immune to viruses, but limited for tasks that require offline software.`,
-        tip: `If you use an iPhone, a MacBook makes your digital life feel seamlessly connected. If you use Android, a Windows laptop or Chromebook pairs well with Google's services.`,
+        tip: `If you use an iPhone, a MacBook makes your digital life feel smoothly connected. If you use Android, a Windows laptop or Chromebook pairs well with Google's services.`,
       },
       {
         title: 'What specs actually matter for most users',
@@ -209,7 +209,7 @@ export const guidesBatch39: Guide[] = [
     thumbnailEmoji: '',
     publishedAt: '2026-04-19',
     difficulty: 'Beginner',
-    body: `Windows 11 looks different from older versions of Windows, but it includes many features that make computers genuinely easier to use — especially for those who want larger text, better organization, or voice-based interaction. Most of these features are already installed on your computer; they just need to be turned on or discovered.`,
+    body: `Windows 11 looks different from older versions of Windows, but it includes many features that make computers genuinely easier to use — especially for those who want larger text, better organization, or voice-based interaction. Most of these features are already installed on your computer; they need to be turned on or discovered.`,
     steps: [
       {
         title: 'Make everything larger with Display Scaling',
@@ -604,7 +604,7 @@ export const guidesBatch39: Guide[] = [
     thumbnailEmoji: '',
     publishedAt: '2026-04-19',
     difficulty: 'Beginner',
-    body: `Google Drive is a free cloud storage service from Google that gives every Google account 15 GB of storage — enough for thousands of documents, PDFs, and photos. Files saved to Google Drive are automatically accessible from your phone, any computer, or a tablet simply by signing into your Google account. If your phone breaks or your computer dies, files in Google Drive are safe and retrievable immediately.`,
+    body: `Google Drive is a free cloud storage service from Google that gives every Google account 15 GB of storage — enough for thousands of documents, PDFs, and photos. Files saved to Google Drive are automatically accessible from your phone, any computer, or a tablet by signing into your Google account. If your phone breaks or your computer dies, files in Google Drive are safe and retrievable immediately.`,
     steps: [
       {
         title: 'Access Google Drive on your phone',

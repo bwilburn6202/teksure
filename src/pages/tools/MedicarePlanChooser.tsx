@@ -50,7 +50,7 @@ interface PlanRecommendation {
   subtitle: string;
   accentClass: string;
   iconClass: string;
-  icon: React.ComponentType<{ className?: string; 'aria-hidden'?: boolean }>;
+  icon: React.ComponentType<{ className?: string; 'aria-hidden'?: boolean | 'true' | 'false' }>;
   letters: string;
   covers: string[];
   monthlyCostRange: string;

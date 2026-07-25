@@ -19,7 +19,7 @@ import {
   Sparkles,
 } from 'lucide-react';
 
-type DeviceType = 'iphone' | 'ipad' | 'android' | 'mac' | 'windows';
+type DeviceType = 'iphone' | 'ipad' | 'android' | 'android-tablet' | 'chromebook' | 'mac' | 'windows';
 
 type SupportStatus = 'supported' | 'limited' | 'unsupported' | 'unknown';
 
@@ -110,10 +110,30 @@ const WINDOWS_MODELS: ModelOption[] = [
   { id: 'win-unknown', label: 'Not sure which version', status: 'unknown' },
 ];
 
+const ANDROID_TABLET_MODELS: ModelOption[] = [
+  { id: 'tab-2024', label: 'Samsung Galaxy Tab S10 or newer', year: 2024, status: 'supported' },
+  { id: 'tab-2023', label: 'Samsung Galaxy Tab S9', year: 2023, status: 'supported' },
+  { id: 'tab-2022', label: 'Samsung Galaxy Tab S8', year: 2022, status: 'supported' },
+  { id: 'tab-a', label: 'Samsung Galaxy Tab A (budget model)', status: 'limited' },
+  { id: 'tab-fire', label: 'Amazon Fire tablet', status: 'limited' },
+  { id: 'tab-old', label: 'Android tablet from 2019 or earlier', year: 2019, status: 'unsupported' },
+  { id: 'tab-unknown', label: 'Not sure which model', status: 'unknown' },
+];
+
+const CHROMEBOOK_MODELS: ModelOption[] = [
+  { id: 'cb-2023', label: 'Bought in 2023 or later', year: 2023, status: 'supported' },
+  { id: 'cb-2021', label: 'Bought in 2021 or 2022', year: 2021, status: 'supported' },
+  { id: 'cb-2019', label: 'Bought in 2019 or 2020', year: 2019, status: 'limited' },
+  { id: 'cb-old', label: 'Bought in 2018 or earlier', year: 2018, status: 'unsupported' },
+  { id: 'cb-unknown', label: 'Not sure when I bought it', status: 'unknown' },
+];
+
 const MODELS_BY_DEVICE: Record<DeviceType, ModelOption[]> = {
   iphone: IPHONE_MODELS,
   ipad: IPAD_MODELS,
   android: ANDROID_MODELS,
+  'android-tablet': ANDROID_TABLET_MODELS,
+  chromebook: CHROMEBOOK_MODELS,
   mac: MAC_MODELS,
   windows: WINDOWS_MODELS,
 };

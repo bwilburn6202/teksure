@@ -20,7 +20,8 @@ export interface SEOHeadProps {
   noindex?: boolean;
 }
 
-const BASE_URL = 'https://teksure.com';
+// www is the canonical host — the apex domain 301s to www at the edge.
+const BASE_URL = 'https://www.teksure.com';
 const DEFAULT_OG_IMAGE = `${BASE_URL}/og-image.png`;
 const DEFAULT_OG_IMAGE_ALT =
   'TekSure — friendly, plain-English tech support for seniors and beginners.';

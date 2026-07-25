@@ -131,7 +131,7 @@ export const guidesBatch17: Guide[] = [
     slug: 'alexa-shopping-list-guide',
     title: 'How to Use Alexa to Create Shopping Lists and Order on Amazon',
     excerpt:
-      'Just say the word and Alexa adds items to your shopping list, which syncs to your phone. You can also reorder Amazon items by voice — here is how it all works.',
+      'Say the word and Alexa adds items to your shopping list, which syncs to your phone. You can also reorder Amazon items by voice — here is how it all works.',
     category: 'smart-home',
     tags: ['alexa', 'shopping list', 'amazon shopping', 'voice shopping', 'echo', 'smart home'],
     readTime: '4 min',
@@ -794,7 +794,7 @@ export const guidesBatch17: Guide[] = [
     thumbnailEmoji: '',
     publishedAt: '2026-04-19',
     difficulty: 'Beginner',
-    body: `If you are thinking about leaving Facebook, or if you simply want a personal archive of your memories, Facebook lets you download a complete copy of your data. This includes all your photos (in their original resolution), every post you made, all messages, your friends list, events you attended, and much more.\n\nThis download is also useful if you worry about losing access to your account. Having a local copy of your photos and important memories means your Facebook memories are not entirely dependent on Facebook remaining operational or you keeping your account.\n\nThe download takes time to prepare (usually a few minutes to a few hours) and the resulting file can be quite large if you have years of photos.`,
+    body: `If you are thinking about leaving Facebook, or if you want a personal archive of your memories, Facebook lets you download a complete copy of your data. This includes all your photos (in their original resolution), every post you made, all messages, your friends list, events you attended, and much more.\n\nThis download is also useful if you worry about losing access to your account. Having a local copy of your photos and important memories means your Facebook memories are not entirely dependent on Facebook remaining operational or you keeping your account.\n\nThe download takes time to prepare (usually a few minutes to a few hours) and the resulting file can be quite large if you have years of photos.`,
     steps: [
       {
         title: 'Request your Facebook data download',

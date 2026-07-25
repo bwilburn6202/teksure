@@ -1,4 +1,41 @@
-export type GuideCategory = 'windows-guides' | 'mac-guides' | 'essential-skills' | 'tips-tricks' | 'ai-guides' | 'ai-advanced' | 'safety-guides' | 'how-to' | 'app-guides' | 'health-tech' | 'phone-guides' | 'social-media' | 'government-civic' | 'financial-tech' | 'smart-home' | 'entertainment' | 'communication' | 'life-transitions' | 'internet-connectivity' | 'online-privacy' | 'online-banking' | 'buying-guides' | 'tech-explained' | 'troubleshooting' | 'work-from-home' | 'travel';
+/**
+ * Every valid guide category, as a runtime value.
+ *
+ * `GuideCategory` is derived from this array, so tests and UI maps can import
+ * the list instead of re-declaring it. Add a new category here once and the
+ * type, the tests, and any exhaustive Record<GuideCategory, …> map will all
+ * tell you what still needs updating.
+ */
+export const GUIDE_CATEGORIES = [
+  'windows-guides',
+  'mac-guides',
+  'essential-skills',
+  'tips-tricks',
+  'ai-guides',
+  'ai-advanced',
+  'safety-guides',
+  'how-to',
+  'app-guides',
+  'health-tech',
+  'phone-guides',
+  'social-media',
+  'government-civic',
+  'financial-tech',
+  'smart-home',
+  'entertainment',
+  'communication',
+  'life-transitions',
+  'internet-connectivity',
+  'online-privacy',
+  'online-banking',
+  'buying-guides',
+  'tech-explained',
+  'troubleshooting',
+  'work-from-home',
+  'travel',
+] as const;
+
+export type GuideCategory = (typeof GUIDE_CATEGORIES)[number];
 
 /** A visual callout overlaid on a guide step's screenshot */
 export interface ScreenshotAnnotation {
@@ -54,6 +91,14 @@ export interface Guide {
   difficulty?: 'Beginner' | 'Intermediate' | 'Advanced';
   steps?: GuideStep[];
   body?: string;
+  /** Guide-level Quick Tip shown alongside the steps */
+  tip?: string;
+  /** Guide-level safety warning shown alongside the steps */
+  warning?: string;
+  /** Name of the official source this guide is based on (e.g. "Apple Support") */
+  sourceName?: string;
+  /** URL of the official source */
+  sourceUrl?: string;
 }
 
 export const categoryLabels: Record<GuideCategory, string> = {
@@ -1049,7 +1094,7 @@ const coreGuides: Guide[] = [
       { title: 'Use an external drive', content: 'Copy files from your old PC to an external hard drive, then plug it into the new PC and copy them over.' , tip: 'External hard drives with 1TB or more of storage cost under 50 dollars and are reusable for backups afterwards.' },
       { title: 'Use Windows Backup', content: 'On your old PC, use Settings → Accounts → Windows Backup to back up apps, settings, and files.' },
       { title: 'Transfer over your local network', content: 'Connect both PCs to the same network and use Nearby Sharing or a shared folder to transfer files.' },
-      { title: 'Reinstall applications', content: 'Apps typically need to be reinstalled. Download them from the Microsoft Store or original websites.' , warning: 'Write down the names of all applications you use on your old PC before you start. It is easy to forget one until you need it.' },
+      { title: 'Reinstall applications', content: 'Apps typically need to be reinstalled. Download them from the Microsoft Store or original websites.' , warning: 'Write down the names of all applications you use on your old PC before you start. It is common to forget one until you need it.' },
     ]
   },
   {
@@ -2776,7 +2821,7 @@ const coreGuides: Guide[] = [
     publishedAt: '2026-03-09',
     difficulty: 'Beginner',
     steps: [
-      { title: 'Remove backgrounds instantly', content: 'Use remove.bg or the built-in background removal in iPhone Photos (iOS 17 and later, including iOS 18). Just tap and hold on a subject to lift it out.' },
+      { title: 'Remove backgrounds instantly', content: 'Use remove.bg or the built-in background removal in iPhone Photos (iOS 17 and later, including iOS 18). Tap and hold on a subject to lift it out.' },
       { title: 'Enhance photo quality', content: `Tools like Remini and Let's Enhance use AI to upscale blurry photos, sharpen details, and improve lighting.` },
       { title: 'Remove unwanted objects', content: `Google Photos Magic Eraser, Samsung Object Eraser, and Adobe's Generative Fill can remove photobombers and distractions.` },
       { title: 'AI filters and styles', content: 'Apps like Prisma and Lensa transform photos into artwork, cartoon styles, or professional headshots using AI.' },
@@ -4430,7 +4475,7 @@ const coreGuides: Guide[] = [
     steps: [
       {
         title: 'Use Google Photos (the easiest option for most people)',
-        content: 'Google Photos (free on iPhone and Android) automatically organizes your photos by date and can recognize people and places. Download it from the App Store or Google Play → sign in with your Google account → allow it to back up your photos. After the initial backup, all your photos are searchable — just type "beach 2024" or "Christmas" and it finds them.', tip: `Google Photos' free storage limit is 15GB. If you're over that, consider Google One ($1.59/month for 100GB) or regularly delete blurry or duplicate photos.`
+        content: 'Google Photos (free on iPhone and Android) automatically organizes your photos by date and can recognize people and places. Download it from the App Store or Google Play → sign in with your Google account → allow it to back up your photos. After the initial backup, all your photos are searchable — type "beach 2024" or "Christmas" and it finds them.', tip: `Google Photos' free storage limit is 15GB. If you're over that, consider Google One ($1.59/month for 100GB) or regularly delete blurry or duplicate photos.`
       },
       {
         title: 'iCloud Photos on iPhone (for Apple users)',
@@ -4450,7 +4495,7 @@ const coreGuides: Guide[] = [
       },
       {
         title: 'Back up your photos to a second location',
-        content: 'The golden rule: 3 copies, 2 locations, 1 offsite. For most people: keep photos on your phone or PC (copy 1), back them up to Google Photos or iCloud (copy 2 — offsite). For extra safety, also back up to an external hard drive once a year (copy 3). Plug-in drives are cheap and easy to use — just drag and drop.', warning: 'Phone theft, loss, or damage without any backup means losing every photo permanently. Cloud backup is the simplest insurance against this.'
+        content: 'The golden rule: 3 copies, 2 locations, 1 offsite. For most people: keep photos on your phone or PC (copy 1), back them up to Google Photos or iCloud (copy 2 — offsite). For extra safety, also back up to an external hard drive once a year (copy 3). Plug-in drives are cheap and easy to use — drag and drop.', warning: 'Phone theft, loss, or damage without any backup means losing every photo permanently. Cloud backup is the simplest insurance against this.'
       },
     ]
   },
@@ -4646,7 +4691,7 @@ const coreGuides: Guide[] = [
     steps: [
       {
         title: 'Activate your voice assistant',
-        content: 'iPhone: say "Hey Siri" or hold the side button. Android: say "Hey Google" or hold the Home button. Amazon Echo/Alexa: just say "Alexa." Make sure the microphone is not muted (on Alexa, the ring should be blue, not red).'
+        content: 'iPhone: say "Hey Siri" or hold the side button. Android: say "Hey Google" or hold the Home button. Amazon Echo/Alexa: say "Alexa." Make sure the microphone is not muted (on Alexa, the ring should be blue, not red).'
       },
       {
         title: 'Most useful everyday commands',
@@ -4859,7 +4904,7 @@ const coreGuides: Guide[] = [
     steps: [
       {
         title: 'Why record your screen?',
-        content: `Screen recordings are useful when you want to: show a grandchild or tech helper exactly what error you're seeing, save a video call or online event, record step-by-step instructions to refer to later, or capture a scam or suspicious message as evidence. Your phone and computer have this feature built in — no extra apps needed.`, tip: 'If you just need a still image rather than a video, use a screenshot instead (quicker and takes up less space).'
+        content: `Screen recordings are useful when you want to: show a grandchild or tech helper exactly what error you're seeing, save a video call or online event, record step-by-step instructions to refer to later, or capture a scam or suspicious message as evidence. Your phone and computer have this feature built in — no extra apps needed.`, tip: 'If you need a still image rather than a video, use a screenshot instead (quicker and takes up less space).'
       },
       {
         title: 'Screen recording on iPhone',
@@ -5007,7 +5052,7 @@ const coreGuides: Guide[] = [
       },
       {
         title: 'Translation extensions',
-        content: 'Google Translate is built into Chrome — if you visit a page in another language, Chrome automatically offers to translate it. Just click "Translate" in the bar that appears at the top. In Firefox or Edge, install the Google Translate extension from the add-on store. This is useful for reading recipes, news, or emails from international family members.'
+        content: 'Google Translate is built into Chrome — if you visit a page in another language, Chrome automatically offers to translate it. Click "Translate" in the bar that appears at the top. In Firefox or Edge, install the Google Translate extension from the add-on store. This is useful for reading recipes, news, or emails from international family members.'
       },
       {
         title: 'Managing and removing extensions',
@@ -5407,7 +5452,7 @@ const coreGuides: Guide[] = [
       { title: 'Essential voice commands', content: `For Amazon Echo, start with "Alexa..." For Google Home, start with "Hey Google..." or "OK Google..." Try these: "Set a timer for 10 minutes." "What's the weather today?" "Play jazz music." "What time is it?" "Tell me a joke." "Add milk to my shopping list." "Call [contact name]." "Remind me to take my medicine at 8 PM."`, tip: `You don't need to shout — speak at a normal volume. The microphone is designed to hear you from across the room.` },
       { title: 'Play music and podcasts', content: 'Say "Alexa, play Frank Sinatra" or "Hey Google, play classical music." You can connect free services like Spotify (free tier), Amazon Music, or YouTube Music. To set a default music service: open the app → Settings → Music → Default Service. You can also listen to podcasts: "Alexa, play the TED Talks Daily podcast."' },
       { title: 'Set up routines', content: 'Routines let you trigger multiple actions with one command. Example: saying "Good morning" can turn on your lights, tell you the weather, read your calendar, and play news. In the Alexa app: More → Routines → + (create). In Google Home: Automations → + (add). Name it, set the trigger (voice command or time), and add actions.' },
-      { title: 'Control smart home devices', content: 'Smart speakers are the hub for controlling smart lights, thermostats, and plugs. After connecting a smart device through its own app, it will appear in your Alexa or Google Home app. Then just say: "Alexa, turn off the living room lights," "Hey Google, set the thermostat to 72 degrees," or "Alexa, lock the front door."', tip: 'Start with one smart bulb or plug to get comfortable. You can always add more devices later.' },
+      { title: 'Control smart home devices', content: 'Smart speakers are the hub for controlling smart lights, thermostats, and plugs. After connecting a smart device through its own app, it will appear in your Alexa or Google Home app. Then say: "Alexa, turn off the living room lights," "Hey Google, set the thermostat to 72 degrees," or "Alexa, lock the front door."', tip: 'Start with one smart bulb or plug to get comfortable. You can always add more devices later.' },
     ]
   },
   {
@@ -5681,7 +5726,7 @@ const coreGuides: Guide[] = [
       { title: 'Use Writing Tools everywhere', content: `Select any text you've written (email, note, message) and tap "Writing Tools" in the popup menu. Options include: Proofread (fixes grammar and spelling), Rewrite (rephrases your text), Make Friendly/Professional/Concise (adjusts tone), and Summarize (shortens long text). This works in Mail, Messages, Notes, and any text field. It's like having an editor built into your keyboard.` },
       { title: 'Smart email and notification summaries', content: `In Mail, Apple Intelligence shows a brief summary of each email right in your inbox — no need to open them to know what they're about. Long email threads get condensed into key points. Notification Summaries group and summarize notifications from the same app so you see "3 messages from Family Group Chat about dinner plans" instead of three separate alerts.` },
       { title: 'Create images with Image Playground', content: 'Open the Image Playground app (comes with iOS 18.2+). Describe what you want to create in plain language — "a golden retriever wearing a birthday hat in a garden." Choose a style: Animation, Illustration, or Sketch. The AI generates the image in seconds. You can also create custom emoji (Genmoji) — type a description in the emoji keyboard and it creates a unique emoji just for you.', tip: `Image Playground creates cartoon/illustration-style images, not photorealistic ones. It's great for fun messages and personal projects.` },
-      { title: 'Enhanced Siri with Apple Intelligence', content: 'Siri now understands natural language much better. You can say things like "Show me the photos I took at the park last Saturday" or "Find the email from my dentist about my appointment." Siri can also type responses for you — just say "Type to Siri" or enable it in Settings → Siri → Type to Siri. Siri now maintains context across follow-up questions too.' },
+      { title: 'Enhanced Siri with Apple Intelligence', content: 'Siri now understands natural language much better. You can say things like "Show me the photos I took at the park last Saturday" or "Find the email from my dentist about my appointment." Siri can also type responses for you — say "Type to Siri" or enable it in Settings → Siri → Type to Siri. Siri now maintains context across follow-up questions too.' },
     ]
   },
   {
@@ -6174,7 +6219,7 @@ const coreGuides: Guide[] = [
     steps: [
       { title: 'Check what is using your storage', content: 'Go to Settings > General > iPhone Storage. Wait a moment for it to load. You will see a colored bar at the top showing how much space is used, and a list below showing what is taking up the most space — usually Photos, Apps, and the iOS system itself.', tip: `For Apple's complete storage guide, visit support.apple.com/en-us/108324` },
       { title: 'Offload apps you rarely use', content: 'In the iPhone Storage screen, scroll down to see your apps listed from largest to smallest. Tap any app you have not used in months and tap "Offload App." This removes the app to free up space but keeps all your data — if you reinstall the app later, everything picks up where you left off.', tip: `You can also let iPhone do this for you automatically. At the top of the iPhone Storage page, tap "Enable" next to "Offload Unused Apps." iPhone will automatically offload apps you haven't used when storage is low.` },
-      { title: 'Move your photos to iCloud', content: 'Go to Settings > [Your Name] > iCloud > Photos and turn on "iCloud Photos." Then go back to Settings > Photos and turn on "Optimize iPhone Storage." Full-resolution photos move to iCloud and your phone keeps smaller versions — this can free several gigabytes instantly.', warning: 'Your photos are still safe in iCloud — you can view and download any of them anytime. You just need a Wi-Fi connection to see the full-quality version.' },
+      { title: 'Move your photos to iCloud', content: 'Go to Settings > [Your Name] > iCloud > Photos and turn on "iCloud Photos." Then go back to Settings > Photos and turn on "Optimize iPhone Storage." Full-resolution photos move to iCloud and your phone keeps smaller versions — this can free several gigabytes instantly.', warning: 'Your photos are still safe in iCloud — you can view and download any of them anytime. You need a Wi-Fi connection to see the full-quality version.' },
       { title: 'Delete old text message photos and videos', content: `Go to Settings > General > iPhone Storage > Messages. Tap "Review Large Attachments." You will see a list of photos and videos sent through text messages, sorted by size. Tap Edit and select the ones you don't need, then delete them.` },
       { title: 'Clear Safari browser cache', content: 'Go to Settings > Safari > Clear History and Website Data. Tap "Clear History and Data" to confirm. This removes temporary web files stored on your phone and can free up several hundred megabytes. Your bookmarks and saved passwords are not affected.' },
       { title: 'Delete duplicate photos', content: 'Open the Photos app, tap Albums at the bottom, scroll down and tap "Duplicates." You will see pairs of identical or near-identical photos. Tap "Merge" to keep one copy and delete the other. This works on iPhones running iOS 17 or later (including iOS 18).' },
@@ -6309,7 +6354,7 @@ const coreGuides: Guide[] = [
     publishedAt: '2026-03-31',
     difficulty: 'Beginner',
     steps: [
-      { title: 'Activate Siri', content: 'On iOS 17 and later (including iOS 18), just say "Siri" — the "Hey" is no longer required. Or press and hold the Side button (or Home button on older iPhones). Wait for the Siri chime before speaking.' },
+      { title: 'Activate Siri', content: 'On iOS 17 and later (including iOS 18), say "Siri" — the "Hey" is no longer required. Or press and hold the Side button (or Home button on older iPhones). Wait for the Siri chime before speaking.' },
       { title: 'Enable hands-free Siri', content: 'Go to Settings > Siri > Talk to Siri and select "Always On." Now you can activate Siri hands-free at any time just by saying "Siri" without picking up your phone.', tip: `For Apple's complete Siri guide, visit support.apple.com/guide/iphone/use-siri-iph83aad8922/ios` },
       { title: 'Try these voice commands', content: `Some useful things to ask: "Siri, call [name]" — "Siri, text [name] I'm on my way" — "Siri, set an alarm for 7am" — "Siri, remind me to take my medication at 8pm" — "Siri, what's the weather today?" — "Siri, open Maps" — "Siri, turn on Bluetooth." Speak naturally and Siri will understand you.` },
       { title: `If Siri doesn't understand you`, content: 'Speak clearly and at a normal pace — not too fast. After speaking, wait for Siri to finish processing before saying anything else. If Siri keeps misunderstanding, try rephrasing your request or check that your microphone is not blocked by a case.' },
@@ -7411,7 +7456,7 @@ const coreGuides: Guide[] = [
       },
       {
         title: 'Choose your language and region',
-        content: 'When the "Hello" screen appears, swipe up (or press the Home button on older iPhones). Pick your language from the list — just tap it. Then choose your country or region. This tells your phone what language to use and what time zone you are in.'
+        content: 'When the "Hello" screen appears, swipe up (or press the Home button on older iPhones). Pick your language from the list — tap it. Then choose your country or region. This tells your phone what language to use and what time zone you are in.'
       },
       {
         title: 'Connect to WiFi',
@@ -7821,7 +7866,7 @@ const coreGuides: Guide[] = [
     steps: [
       { title: 'Check your technology before the visit', content: 'You need a phone, tablet, or computer with a camera and microphone. Test them by opening the camera app and recording a short video. Make sure you can hear yourself clearly. Connect to WiFi for the most reliable connection.', tip: 'Do a test run 15 minutes before your appointment. Most telehealth platforms have a "test your connection" button.' },
       { title: 'Find a quiet, well-lit spot', content: 'Sit facing a window or lamp so your face is well-lit. Choose a quiet room where you will not be interrupted. A plain background is ideal so your doctor can see you clearly.' },
-      { title: 'Have your information ready', content: 'Before the call, gather: your current medications (or take a photo of the bottles), a list of symptoms or questions you want to ask, your insurance card, and a pen and paper to take notes.', tip: 'Write your questions down before the visit. It is easy to forget them once the conversation starts.' },
+      { title: 'Have your information ready', content: 'Before the call, gather: your current medications (or take a photo of the bottles), a list of symptoms or questions you want to ask, your insurance card, and a pen and paper to take notes.', tip: 'Write your questions down before the visit. It is common to forget them once the conversation starts.' },
       { title: 'Join the video visit', content: 'You will receive a link by email or text before your appointment. Click the link at the scheduled time. You may need to allow camera and microphone access when prompted. Wait in the virtual waiting room until your doctor joins.' },
       { title: 'After your visit', content: 'Your doctor will send a visit summary to your patient portal (usually MyChart). Check for follow-up instructions, new prescriptions, or referrals. If you need a follow-up appointment, schedule it before you forget.' },
     ]
@@ -8583,7 +8628,7 @@ const coreGuides: Guide[] = [
       },
       {
         title: 'Safe ways to donate',
-        content: `Once you verify a charity is real, donate safely:\n\n1. **Donate through the charity's official website** — Type the address directly, do not click links in emails\n2. **Pay by credit card or check** — Best protection and a record of your donation\n3. **Never donate by gift card, wire transfer, or cryptocurrency**\n4. **Get a receipt** — A legitimate charity provides a written receipt\n5. **Set up recurring donations** through the official website for ongoing support\n\nYour generosity matters — just make sure it reaches the people who need it.`, warning: 'Never give your bank account number or Social Security number to a charity caller. A real charity will never ask for these.'
+        content: `Once you verify a charity is real, donate safely:\n\n1. **Donate through the charity's official website** — Type the address directly, do not click links in emails\n2. **Pay by credit card or check** — Best protection and a record of your donation\n3. **Never donate by gift card, wire transfer, or cryptocurrency**\n4. **Get a receipt** — A legitimate charity provides a written receipt\n5. **Set up recurring donations** through the official website for ongoing support\n\nYour generosity matters — make sure it reaches the people who need it.`, warning: 'Never give your bank account number or Social Security number to a charity caller. A real charity will never ask for these.'
       },
     ]
   },
@@ -9594,7 +9639,7 @@ const coreGuides: Guide[] = [
   ] },
   // Source: Microsoft Support — Basic Word Tasks (scraped)
   { slug: 'word-basics-beginners', title: 'Microsoft Word Basics for Complete Beginners', excerpt: 'Learn to create, format, save, and print documents in Microsoft Word.', category: 'app-guides', tags: ['word', 'document', 'microsoft', 'office'], readTime: '7 min', thumbnailEmoji: '📝', publishedAt: '2026-04-02', difficulty: 'Beginner', steps: [
-    { title: 'Create a new document', content: 'Open Word. Click File > New. Choose Blank Document for a fresh start, or pick a template (resume, letter, report) with pre-designed formatting — just add your text.' },
+    { title: 'Create a new document', content: 'Open Word. Click File > New. Choose Blank Document for a fresh start, or pick a template (resume, letter, report) with pre-designed formatting — add your text.' },
     { title: 'Type and format text', content: 'Click anywhere and start typing. Select text to format it: Bold (Ctrl+B), Italic (Ctrl+I), change font size, or change the font style from the Home tab toolbar.' },
     { title: 'Use styles for headings', content: 'Instead of manually making text bigger for headings, use Styles on the Home tab. Click "Heading 1" for main titles, "Heading 2" for subtitles. This keeps your document professional and organized.' },
     { title: 'Add images', content: 'Click Insert > Pictures to add a photo from your computer. Click Insert > Online Pictures to search for images. Drag the corners to resize. Click the image for layout options.' },
@@ -9751,7 +9796,7 @@ const coreGuides: Guide[] = [
   { slug: 'apple-ecosystem-guide', title: 'Understanding the Apple Ecosystem', excerpt: 'How iPhone, iPad, Mac, Apple Watch, and Apple TV all work together.', category: 'essential-skills', tags: ['apple', 'ecosystem', 'icloud', 'continuity'], readTime: '7 min', thumbnailEmoji: '🍎', publishedAt: '2026-04-02', difficulty: 'Intermediate', steps: [
     { title: 'One Apple ID connects everything', content: 'Sign into all your Apple devices with the same Apple ID. Your photos, contacts, calendars, notes, and bookmarks sync automatically across all of them.' },
     { title: 'iCloud keeps things in sync', content: 'Take a photo on your iPhone — it appears on your Mac and iPad automatically. Start a note on your phone, finish it on your computer. Everything stays current everywhere.' },
-    { title: 'AirDrop for instant sharing', content: 'Send photos, files, and links to nearby Apple devices instantly. No email, no messaging — just tap AirDrop and select the device.' },
+    { title: 'AirDrop for instant sharing', content: 'Send photos, files, and links to nearby Apple devices instantly. No email, no messaging — tap AirDrop and select the device.' },
     { title: 'Handoff between devices', content: 'Start writing an email on your iPhone, then pick up exactly where you left off on your Mac. Works with Safari, Mail, Maps, and many other apps.' },
     { title: 'Universal Clipboard', content: 'Copy text on your iPhone and paste it on your Mac (or vice versa). The clipboard is shared across all your Apple devices automatically.' },
     { title: 'Apple Watch integration', content: 'Unlock your Mac by wearing your Apple Watch. Approve purchases without typing passwords. Get health alerts and notifications on your wrist.' },
@@ -9811,7 +9856,7 @@ const coreGuides: Guide[] = [
     { title: `Check if it's your device or the network`, content: 'Try connecting a different device to the same Wi-Fi. If other devices work, the problem is your device. If nothing connects, the problem is your router or internet service.' },
     { title: 'Forget and reconnect', content: 'Go to Wi-Fi settings, tap your network name, choose "Forget" or "Remove." Then reconnect by selecting the network and entering the password again.' },
     { title: 'Move closer to the router', content: 'Wi-Fi weakens through walls and distance. If possible, move closer to your router. Thick walls, microwaves, and baby monitors can interfere with the signal.' },
-    { title: 'Check for outages', content: `Visit your internet provider's website or app to check for outages in your area. You can also call their support number. If there's an outage, you just need to wait.` },
+    { title: 'Check for outages', content: `Visit your internet provider's website or app to check for outages in your area. You can also call their support number. If there's an outage, you need to wait.` },
     { title: 'Update router firmware', content: 'Log into your router (usually 192.168.1.1 in a browser). Look for a Firmware Update option. Updated firmware fixes bugs and improves performance.' },
     { title: 'Consider a mesh system', content: 'If your home has dead spots, a mesh Wi-Fi system (like Google Nest WiFi, Eero, or TP-Link Deco) blankets your entire home in strong Wi-Fi. Prices start around $100.' },
   ] },
@@ -10569,7 +10614,7 @@ const coreGuides: Guide[] = [
   // ── Batch 31: Social Media In Depth ────────────────────────────────────────
   { slug: 'tiktok-beginners-guide', title: 'How to Use TikTok', excerpt: 'Browse, create, and share short videos on the most popular social media platform.', category: 'social-media', tags: ['tiktok', 'social-media', 'video', 'entertainment'], readTime: '7 min', thumbnailEmoji: '🎵', publishedAt: '2026-04-02', difficulty: 'Beginner', steps: [
     { title: 'Download and sign up', content: 'Get TikTok from your app store. Sign up with your email, phone, or Google/Apple account. You can browse without an account, but you need one to like, comment, and create videos.' },
-    { title: 'Browse the For You page', content: 'The main feed shows recommended videos. Just scroll. TikTok learns what you like and shows you more of it. Swipe up for the next video. Tap the heart to like, speech bubble to comment.' },
+    { title: 'Browse the For You page', content: 'The main feed shows recommended videos. Scroll. TikTok learns what you like and shows you more of it. Swipe up for the next video. Tap the heart to like, speech bubble to comment.' },
     { title: 'Follow creators', content: `Tap a creator's profile picture to visit their page. Tap Follow. Their new videos appear in your Following feed. Follow topics you enjoy: cooking, gardening, history, pets, news.` },
     { title: 'Create a video', content: 'Tap the + button at the bottom. Record by holding the red button (up to 10 minutes). Add text, music, filters, and effects. Write a caption. Tap Post. Your video is live.' },
     { title: 'Privacy settings', content: 'Settings > Privacy. Set your account to Private if you want to control who sees your videos. Limit who can comment, duet, or stitch your videos. Disable message requests from strangers.' },
@@ -10691,8 +10736,8 @@ const coreGuides: Guide[] = [
     { title: 'Restart your Mac', content: 'Apple menu > Restart. If the Mac is frozen: hold the power button for 10 seconds until it turns off, then turn it back on. Restarting clears temporary files and resets processes.' },
     { title: 'Check Activity Monitor', content: `Applications > Utilities > Activity Monitor. Click the CPU tab and sort by % CPU to find resource-hungry processes. Click the Memory tab to see memory usage. Quit processes using 100%+ CPU that you don't recognize.` },
     { title: 'Free up storage', content: 'Apple menu > About This Mac > Storage > Manage. Use the recommendations: Store in iCloud, Optimize Storage, Empty Trash Automatically. Delete large files you no longer need. Macs slow dramatically when storage is nearly full.' },
-    { title: 'Reset SMC (Intel Macs)', content: `If fans run loud, battery doesn't charge, or sleep/wake has issues: shut down, hold Ctrl+Option+Shift+Power for 10 seconds, release all keys, then turn on. (Apple Silicon Macs: just restart.)` },
-    { title: 'Reset NVRAM/PRAM', content: 'If display, sound, or startup issues persist: shut down, press power, immediately hold Cmd+Option+P+R for 20 seconds. Release and let the Mac boot normally. (Apple Silicon: just restart.)' },
+    { title: 'Reset SMC (Intel Macs)', content: `If fans run loud, battery doesn't charge, or sleep/wake has issues: shut down, hold Ctrl+Option+Shift+Power for 10 seconds, release all keys, then turn on. (Apple Silicon Macs: restart.)` },
+    { title: 'Reset NVRAM/PRAM', content: 'If display, sound, or startup issues persist: shut down, press power, immediately hold Cmd+Option+P+R for 20 seconds. Release and let the Mac boot normally. (Apple Silicon: restart.)' },
     { title: 'Safe Mode', content: 'Intel: restart, hold Shift. Apple Silicon: shut down, hold power button, select your disk, hold Shift, click Continue in Safe Mode. Safe Mode clears caches and checks the disk.' },
     { title: 'Reinstall macOS', content: 'Last resort. Restart, hold Cmd+R (Intel) or hold Power button (Apple Silicon). Choose Reinstall macOS. This reinstalls the system without erasing your files. Takes 30-60 minutes.' },
   ] },
@@ -10881,7 +10926,7 @@ const coreGuides: Guide[] = [
   { slug: 'mac-automator-shortcuts', title: 'Mac Shortcuts (Automator) for Beginners', excerpt: 'Automate repetitive tasks on your Mac with simple shortcuts that save time.', category: 'mac-guides', tags: ['mac', 'shortcuts', 'automation', 'productivity', 'workflow'], readTime: '7 min', thumbnailEmoji: '⚡', publishedAt: '2026-04-02', difficulty: 'Intermediate', steps: [
     { title: 'What are Shortcuts?', content: 'Shortcuts (formerly Automator) lets you create automated workflows. Instead of doing the same steps manually, build a shortcut that does it in one click or voice command.' },
     { title: 'Open the Shortcuts app', content: 'Find Shortcuts in your Applications folder or Spotlight. Browse the Gallery for pre-made shortcuts you can add with one click. Categories include Productivity, Web, and Media.' },
-    { title: 'Download pre-made shortcuts', content: 'The Gallery has hundreds of ready-to-use shortcuts: resize images, create PDFs from images, split bills, convert units, summarize text, and more. Just add to your library.' },
+    { title: 'Download pre-made shortcuts', content: 'The Gallery has hundreds of ready-to-use shortcuts: resize images, create PDFs from images, split bills, convert units, summarize text, and more. Add to your library.' },
     { title: 'Create a simple shortcut', content: 'Click +. Drag actions from the right panel into the workflow. Example: "Get contents of clipboard" > "Make PDF" > "Save File." This converts any copied text to a PDF.' },
     { title: 'Run shortcuts', content: 'Click the shortcut in the app. Add it to your menu bar for quick access. Assign a keyboard shortcut. Ask Siri to run it by name. Add it to the Share menu for context-specific automation.' },
     { title: 'Practical examples', content: 'Batch resize photos for email. Convert HEIC photos to JPEG. Combine images into a PDF. Get your daily schedule summary. Water reminder every hour. Meeting prep: open specific apps and websites.' },
@@ -11417,7 +11462,7 @@ const coreGuides: Guide[] = [
       { title: 'Choose a plan', content: 'Netflix has a few different plans at different prices. The basic plan lets you watch on one screen. The standard plan lets you watch on two screens at the same time. Pick the one that works for you.', tip: 'If you are the only one using the account, the basic plan is a great choice to save money.' },
       { title: 'Create your account', content: 'Enter your email address and create a password. Make sure you pick a password you can remember. Write it down somewhere safe if you need to.' },
       { title: 'Add a payment method', content: 'Enter your credit card, debit card, or other payment information. Netflix will charge you once a month. You can cancel anytime without a fee.', warning: 'Netflix will start charging after your first billing period. Set a reminder if you want to try it out before committing.' },
-      { title: 'Start watching', content: 'Once your account is set up, you can watch on your computer, phone, tablet, or smart TV. Just open the Netflix app or go to netflix.com and sign in with your email and password.' },
+      { title: 'Start watching', content: 'Once your account is set up, you can watch on your computer, phone, tablet, or smart TV. Open the Netflix app or go to netflix.com and sign in with your email and password.' },
     ]
   },
   {
@@ -11914,7 +11959,7 @@ const coreGuides: Guide[] = [
       { title: 'Download WhatsApp', content: 'Search for "WhatsApp" in the App Store or Google Play Store. Download it for free and open it.' },
       { title: 'Set up your account', content: 'Enter your phone number. WhatsApp will send you a verification code by text message. Enter the code to verify your number. Then add your name and a profile photo if you like.' },
       { title: 'Find your contacts', content: 'WhatsApp automatically finds people in your phone contacts who also use WhatsApp. You will see their names in the Chats tab. Tap the new message button (pencil or plus icon) to start a conversation.' },
-      { title: 'Send a message', content: 'Tap on a contact to open a chat. Type your message in the text box at the bottom and tap the send button (arrow icon). You can also tap the camera icon to send a photo or the microphone icon to send a voice message.', tip: 'Voice messages are great if you do not want to type. Just hold the microphone button, speak, and release to send.' },
+      { title: 'Send a message', content: 'Tap on a contact to open a chat. Type your message in the text box at the bottom and tap the send button (arrow icon). You can also tap the camera icon to send a photo or the microphone icon to send a voice message.', tip: 'Voice messages are great if you do not want to type. Hold the microphone button, speak, and release to send.' },
       { title: 'Make a video or voice call', content: 'In any chat, tap the phone icon for a voice call or the video camera icon for a video call. WhatsApp calls are free — they use Wi-Fi or your data plan, not your phone minutes.' },
       { title: 'Create a group chat', content: 'Tap the new message button, then "New Group." Select the people you want to add, give the group a name (like "Family" or "Book Club"), and tap Create. Now everyone in the group can see messages from everyone else.' },
     ]
@@ -11972,7 +12017,7 @@ const coreGuides: Guide[] = [
       { title: 'Download Nextdoor', content: 'Search for "Nextdoor" in the App Store or Google Play Store. Download it for free and open it.' },
       { title: 'Verify your address', content: 'Nextdoor requires you to verify your home address to join your neighborhood. Enter your address and verify through one of the methods offered (postcard, phone, or email).', tip: 'Nextdoor only lets people join the neighborhood where they actually live. This keeps the community local and trusted.' },
       { title: 'Set up your profile', content: 'Add your name and a profile photo. You can also add your interests and what you can offer the community (like gardening advice or tech help).' },
-      { title: 'Browse and post', content: 'Your feed shows posts from neighbors. You can ask for recommendations (like a good plumber), report safety concerns, sell items you no longer need, or just say hello to the neighborhood.' },
+      { title: 'Browse and post', content: 'Your feed shows posts from neighbors. You can ask for recommendations (like a good plumber), report safety concerns, sell items you no longer need, or say hello to the neighborhood.' },
       { title: 'Join groups and events', content: 'Nextdoor has local groups for interests like gardening, pets, and book clubs. You can also find local events like yard sales, community meetings, and volunteer opportunities.' },
     ]
   },
@@ -12010,7 +12055,7 @@ const coreGuides: Guide[] = [
       { title: 'Download Shazam', content: 'Search for "Shazam" in the App Store or Google Play Store. Download it for free and open it.' },
       { title: 'Listen to identify a song', content: 'When you hear a song you like — on the radio, in a store, on TV, or anywhere — open Shazam and tap the big Shazam button in the center. Hold your phone toward the music and wait a few seconds.' },
       { title: 'See the results', content: 'Shazam will show you the song name, artist, and album. You can also see the lyrics, listen to a preview, or open the song in a music app like Spotify or Apple Music.' },
-      { title: 'View your history', content: 'Shazam saves every song you identify. Tap the Library or History section to see all the songs you have discovered. It is a great way to build a list of new music to listen to.', tip: 'On iPhone, you can add Shazam to your Control Center for even faster access. Just swipe down and tap the Shazam icon without opening the app.' },
+      { title: 'View your history', content: 'Shazam saves every song you identify. Tap the Library or History section to see all the songs you have discovered. It is a great way to build a list of new music to listen to.', tip: 'On iPhone, you can add Shazam to your Control Center for even faster access. Swipe down and tap the Shazam icon without opening the app.' },
     ]
   },
     {
@@ -12573,6 +12618,7 @@ import { guidesBatch322 } from './guides-batch-322';
 import { guidesBatch323 } from './guides-batch-323';
 import { guidesBatch324 } from './guides-batch-324';
 import { guidesBatch326 } from './guides-batch-326';
+import { guidesBatch327 } from './guides-batch-327';
 import { guidesBatch200 } from './guides-batch-200';
 import { guidesBatch201 } from './guides-batch-201';
 import { guidesBatch202 } from './guides-batch-202';
@@ -12690,7 +12736,7 @@ import { guidesBatch272 } from "./guides-batch-272";
 import { guidesBatch273 } from "./guides-batch-273";
 import { guidesBatch274 } from "./guides-batch-274";
 
-const allGuides: Guide[] = [...coreGuides,...guidesBatch4, ...guidesBatch5, ...guidesBatch6, ...guidesExpansion, ...guidesSpanish, ...guidesBatch7, ...guidesBatch8, ...guidesBatch9, ...guidesBatch10, ...guidesBatch11, ...guidesBatch12, ...guidesBatch13, ...guidesBatch14, ...guidesBatch15, ...guidesBatch16, ...guidesBatch17, ...guidesBatch18, ...guidesBatch19, ...guidesBatch20, ...guidesBatch21, ...guidesBatch22, ...guidesBatch23, ...guidesBatch24, ...guidesBatch25, ...guidesBatch26, ...guidesBatch27, ...guidesBatch28, ...guidesBatch29, ...guidesBatch30, ...guidesBatch31, ...guidesBatch32, ...guidesBatch33, ...guidesBatch34, ...guidesBatch35, ...guidesBatch36, ...guidesBatch37, ...guidesBatch38, ...guidesBatch39, ...guidesBatch40, ...guidesBatch41, ...guidesBatch42, ...guidesBatch43, ...guidesBatch44, ...guidesBatch45, ...guidesBatch46, ...guidesBatch47, ...guidesBatch48, ...guidesBatch49, ...guidesBatch50, ...guidesBatch51, ...guidesBatch52, ...guidesBatch53, ...guidesBatch54, ...guidesBatch55, ...guidesBatch56, ...guidesBatch57, ...guidesBatch58, ...guidesBatch59, ...guidesBatch60, ...guidesBatch61, ...guidesBatch62, ...guidesBatch63, ...guidesBatch64, ...guidesBatch65, ...guidesBatch66, ...guidesBatch67, ...guidesBatch68, ...guidesBatch69, ...guidesBatch70, ...guidesBatch71, ...guidesBatch72, ...guidesBatch73, ...guidesBatch74, ...guidesBatch75, ...guidesBatch76, ...guidesBatch77, ...guidesBatch78, ...guidesBatch79, ...guidesBatch80, ...guidesBatch81, ...guidesBatch82, ...guidesBatch83, ...guidesBatch84, ...guidesBatch85, ...guidesBatch86, ...guidesBatch87, ...guidesBatch88, ...guidesBatch89, ...guidesBatch90, ...guidesBatch91, ...guidesBatch92, ...guidesBatch93, ...guidesBatch94, ...guidesBatch95, ...guidesBatch96, ...guidesBatch97, ...guidesBatch98, ...guidesBatch99, ...guidesBatch100, ...guidesBatch101, ...guidesBatch102, ...guidesBatch103, ...guidesBatch104, ...guidesBatch105, ...guidesBatch106, ...guidesBatch107, ...guidesBatch108, ...guidesBatch109, ...guidesBatch110, ...guidesBatch111, ...guidesBatch112, ...guidesBatch113, ...guidesBatch114, ...guidesBatch115, ...guidesBatch117, ...guidesBatch118, ...guidesBatch119, ...guidesBatch120, ...guidesBatch121, ...guidesBatch122, ...guidesBatch124, ...guidesBatch125, ...guidesBatch126, ...guidesBatch127, ...guidesBatch128, ...guidesBatch129, ...guidesBatch130, ...guidesBatch131, ...guidesBatch132, ...guidesBatch133, ...guidesBatch134, ...guidesBatch135, ...guidesBatch136, ...guidesBatch137, ...guidesBatch138, ...guidesBatch139, ...guidesBatch140, ...guidesBatch141, ...guidesBatch142, ...guidesBatch143, ...guidesBatch144, ...guidesBatch145, ...guidesBatch146, ...guidesBatch147, ...guidesBatch148, ...guidesBatch149, ...guidesBatch150, ...guidesBatch151, ...guidesBatch152, ...guidesBatch153, ...guidesBatch154, ...guidesBatch155, ...guidesBatch156, ...guidesBatch157, ...guidesBatch158, ...guidesBatch159, ...guidesBatch160, ...guidesBatch161, ...guidesBatch162, ...guidesBatch163, ...guidesBatch164, ...guidesBatch165, ...guidesBatch166, ...guidesBatch167, ...guidesBatch168, ...guidesBatch169, ...guidesBatch170, ...guidesBatch171, ...guidesBatch172, ...guidesBatch173, ...guidesBatch174, ...guidesBatch175, ...guidesBatch176, ...guidesBatch177, ...guidesBatch178, ...guidesBatch179, ...guidesBatch180, ...guidesBatch181, ...guidesBatch182, ...guidesBatch183, ...guidesBatch184, ...guidesBatch185, ...guidesBatch186, ...guidesBatch187, ...guidesBatch188, ...guidesBatch189, ...guidesBatch190, ...guidesBatch191, ...guidesBatch192, ...guidesBatch193, ...guidesBatch194, ...guidesBatch195, ...guidesBatch196, ...guidesBatch197, ...guidesBatch198, ...guidesBatch199, ...guidesBatch200, ...guidesBatch201, ...guidesBatch202, ...guidesBatch203, ...guidesBatch204, ...guidesBatch205, ...guidesBatch206, ...guidesBatch207, ...guidesBatch208, ...guidesBatch209, ...guidesBatch210, ...guidesBatch211, ...guidesBatch212, ...guidesBatch213, ...guidesBatch214, ...guidesBatch215, ...guidesBatch216, ...guidesBatch217, ...guidesBatch218, ...guidesBatch220, ...guidesBatch219, ...guidesBatch223, ...guidesBatch221, ...guidesBatch222, ...guidesBatch225, ...guidesBatch224, ...guidesBatch226, ...guidesBatch227, ...guidesBatch228, ...guidesBatch229, ...guidesBatch230, ...guidesBatch231, ...guidesBatch232, ...guidesBatch233, ...guidesBatch234, ...guidesBatch235, ...guidesBatch236, ...guidesBatch237, ...guidesBatch238, ...guidesBatch239, ...guidesBatch240, ...guidesBatch241, ...guidesBatch242, ...guidesBatch243, ...guidesBatch244, ...guidesBatch245, ...guidesBatch246, ...guidesBatch247, ...guidesBatch248, ...guidesBatch249, ...guidesBatch250, ...guidesBatch251, ...guidesBatch252, ...guidesBatch253, ...guidesBatch254, ...guidesBatch255, ...guidesBatch256, ...guidesBatch257, ...guidesBatch258, ...guidesBatch259, ...guidesBatch263, ...guidesBatch264, ...guidesBatch265, ...guidesBatch266, ...guidesBatch267, ...guidesBatch268, ...guidesBatch269, ...guidesBatch270, ...guidesBatch275, ...guidesBatch276, ...guidesBatch277, ...guidesBatch278, ...guidesBatch279, ...guidesBatch280, ...guidesBatch281, ...guidesBatch282, ...guidesBatch283, ...guidesBatch284, ...guidesBatch285, ...guidesBatch286, ...guidesBatch287, ...guidesBatch291, ...guidesBatch292, ...guidesBatch293, ...guidesBatch294, ...guidesBatch260, ...guidesBatch261, ...guidesBatch262, ...guidesBatch271, ...guidesBatch272, ...guidesBatch273, ...guidesBatch274, ...guidesBatch295, ...guidesBatch296, ...guidesBatch297, ...guidesBatch298, ...guidesBatch299, ...guidesBatch300, ...guidesBatch301, ...guidesBatch302, ...guidesBatch303, ...guidesBatch304, ...guidesBatch305, ...guidesBatch306, ...guidesBatch307, ...guidesBatch308, ...guidesBatch309, ...guidesBatch310, ...guidesBatch311, ...guidesBatch312, ...guidesBatch313, ...guidesBatch314, ...guidesBatch315, ...guidesBatch316, ...guidesBatch317, ...guidesBatch318, ...guidesBatch319, ...guidesBatch320, ...guidesBatch321, ...guidesBatch322, ...guidesBatch323, ...guidesBatch324, ...guidesBatch326];
+const allGuides: Guide[] = [...coreGuides,...guidesBatch4, ...guidesBatch5, ...guidesBatch6, ...guidesExpansion, ...guidesSpanish, ...guidesBatch7, ...guidesBatch8, ...guidesBatch9, ...guidesBatch10, ...guidesBatch11, ...guidesBatch12, ...guidesBatch13, ...guidesBatch14, ...guidesBatch15, ...guidesBatch16, ...guidesBatch17, ...guidesBatch18, ...guidesBatch19, ...guidesBatch20, ...guidesBatch21, ...guidesBatch22, ...guidesBatch23, ...guidesBatch24, ...guidesBatch25, ...guidesBatch26, ...guidesBatch27, ...guidesBatch28, ...guidesBatch29, ...guidesBatch30, ...guidesBatch31, ...guidesBatch32, ...guidesBatch33, ...guidesBatch34, ...guidesBatch35, ...guidesBatch36, ...guidesBatch37, ...guidesBatch38, ...guidesBatch39, ...guidesBatch40, ...guidesBatch41, ...guidesBatch42, ...guidesBatch43, ...guidesBatch44, ...guidesBatch45, ...guidesBatch46, ...guidesBatch47, ...guidesBatch48, ...guidesBatch49, ...guidesBatch50, ...guidesBatch51, ...guidesBatch52, ...guidesBatch53, ...guidesBatch54, ...guidesBatch55, ...guidesBatch56, ...guidesBatch57, ...guidesBatch58, ...guidesBatch59, ...guidesBatch60, ...guidesBatch61, ...guidesBatch62, ...guidesBatch63, ...guidesBatch64, ...guidesBatch65, ...guidesBatch66, ...guidesBatch67, ...guidesBatch68, ...guidesBatch69, ...guidesBatch70, ...guidesBatch71, ...guidesBatch72, ...guidesBatch73, ...guidesBatch74, ...guidesBatch75, ...guidesBatch76, ...guidesBatch77, ...guidesBatch78, ...guidesBatch79, ...guidesBatch80, ...guidesBatch81, ...guidesBatch82, ...guidesBatch83, ...guidesBatch84, ...guidesBatch85, ...guidesBatch86, ...guidesBatch87, ...guidesBatch88, ...guidesBatch89, ...guidesBatch90, ...guidesBatch91, ...guidesBatch92, ...guidesBatch93, ...guidesBatch94, ...guidesBatch95, ...guidesBatch96, ...guidesBatch97, ...guidesBatch98, ...guidesBatch99, ...guidesBatch100, ...guidesBatch101, ...guidesBatch102, ...guidesBatch103, ...guidesBatch104, ...guidesBatch105, ...guidesBatch106, ...guidesBatch107, ...guidesBatch108, ...guidesBatch109, ...guidesBatch110, ...guidesBatch111, ...guidesBatch112, ...guidesBatch113, ...guidesBatch114, ...guidesBatch115, ...guidesBatch117, ...guidesBatch118, ...guidesBatch119, ...guidesBatch120, ...guidesBatch121, ...guidesBatch122, ...guidesBatch124, ...guidesBatch125, ...guidesBatch126, ...guidesBatch127, ...guidesBatch128, ...guidesBatch129, ...guidesBatch130, ...guidesBatch131, ...guidesBatch132, ...guidesBatch133, ...guidesBatch134, ...guidesBatch135, ...guidesBatch136, ...guidesBatch137, ...guidesBatch138, ...guidesBatch139, ...guidesBatch140, ...guidesBatch141, ...guidesBatch142, ...guidesBatch143, ...guidesBatch144, ...guidesBatch145, ...guidesBatch146, ...guidesBatch147, ...guidesBatch148, ...guidesBatch149, ...guidesBatch150, ...guidesBatch151, ...guidesBatch152, ...guidesBatch153, ...guidesBatch154, ...guidesBatch155, ...guidesBatch156, ...guidesBatch157, ...guidesBatch158, ...guidesBatch159, ...guidesBatch160, ...guidesBatch161, ...guidesBatch162, ...guidesBatch163, ...guidesBatch164, ...guidesBatch165, ...guidesBatch166, ...guidesBatch167, ...guidesBatch168, ...guidesBatch169, ...guidesBatch170, ...guidesBatch171, ...guidesBatch172, ...guidesBatch173, ...guidesBatch174, ...guidesBatch175, ...guidesBatch176, ...guidesBatch177, ...guidesBatch178, ...guidesBatch179, ...guidesBatch180, ...guidesBatch181, ...guidesBatch182, ...guidesBatch183, ...guidesBatch184, ...guidesBatch185, ...guidesBatch186, ...guidesBatch187, ...guidesBatch188, ...guidesBatch189, ...guidesBatch190, ...guidesBatch191, ...guidesBatch192, ...guidesBatch193, ...guidesBatch194, ...guidesBatch195, ...guidesBatch196, ...guidesBatch197, ...guidesBatch198, ...guidesBatch199, ...guidesBatch200, ...guidesBatch201, ...guidesBatch202, ...guidesBatch203, ...guidesBatch204, ...guidesBatch205, ...guidesBatch206, ...guidesBatch207, ...guidesBatch208, ...guidesBatch209, ...guidesBatch210, ...guidesBatch211, ...guidesBatch212, ...guidesBatch213, ...guidesBatch214, ...guidesBatch215, ...guidesBatch216, ...guidesBatch217, ...guidesBatch218, ...guidesBatch220, ...guidesBatch219, ...guidesBatch223, ...guidesBatch221, ...guidesBatch222, ...guidesBatch225, ...guidesBatch224, ...guidesBatch226, ...guidesBatch227, ...guidesBatch228, ...guidesBatch229, ...guidesBatch230, ...guidesBatch231, ...guidesBatch232, ...guidesBatch233, ...guidesBatch234, ...guidesBatch235, ...guidesBatch236, ...guidesBatch237, ...guidesBatch238, ...guidesBatch239, ...guidesBatch240, ...guidesBatch241, ...guidesBatch242, ...guidesBatch243, ...guidesBatch244, ...guidesBatch245, ...guidesBatch246, ...guidesBatch247, ...guidesBatch248, ...guidesBatch249, ...guidesBatch250, ...guidesBatch251, ...guidesBatch252, ...guidesBatch253, ...guidesBatch254, ...guidesBatch255, ...guidesBatch256, ...guidesBatch257, ...guidesBatch258, ...guidesBatch259, ...guidesBatch263, ...guidesBatch264, ...guidesBatch265, ...guidesBatch266, ...guidesBatch267, ...guidesBatch268, ...guidesBatch269, ...guidesBatch270, ...guidesBatch275, ...guidesBatch276, ...guidesBatch277, ...guidesBatch278, ...guidesBatch279, ...guidesBatch280, ...guidesBatch281, ...guidesBatch282, ...guidesBatch283, ...guidesBatch284, ...guidesBatch285, ...guidesBatch286, ...guidesBatch287, ...guidesBatch291, ...guidesBatch292, ...guidesBatch293, ...guidesBatch294, ...guidesBatch260, ...guidesBatch261, ...guidesBatch262, ...guidesBatch271, ...guidesBatch272, ...guidesBatch273, ...guidesBatch274, ...guidesBatch295, ...guidesBatch296, ...guidesBatch297, ...guidesBatch298, ...guidesBatch299, ...guidesBatch300, ...guidesBatch301, ...guidesBatch302, ...guidesBatch303, ...guidesBatch304, ...guidesBatch305, ...guidesBatch306, ...guidesBatch307, ...guidesBatch308, ...guidesBatch309, ...guidesBatch310, ...guidesBatch311, ...guidesBatch312, ...guidesBatch313, ...guidesBatch314, ...guidesBatch315, ...guidesBatch316, ...guidesBatch317, ...guidesBatch318, ...guidesBatch319, ...guidesBatch320, ...guidesBatch321, ...guidesBatch322, ...guidesBatch323, ...guidesBatch324, ...guidesBatch326, ...guidesBatch327];
 
 // Auto-set lastVerifiedAt for guides that don't have it explicitly set
 allGuides.forEach(g => {

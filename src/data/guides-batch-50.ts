@@ -160,7 +160,7 @@ After saving, always open the new contact record to check that the phone number 
     thumbnailEmoji: ``,
     publishedAt: `2026-04-19`,
     difficulty: `Beginner`,
-    body: `Microsoft Lens is a free app made by Microsoft that turns your phone camera into a high-quality document scanner. Unlike simply taking a photo of a document, Microsoft Lens automatically adjusts perspective, sharpens the text, removes shadows, and saves the result as a clean PDF or image file. It is available for both iPhone and Android and costs nothing to download or use.
+    body: `Microsoft Lens is a free app made by Microsoft that turns your phone camera into a high-quality document scanner. Unlike taking a photo of a document, Microsoft Lens automatically adjusts perspective, sharpens the text, removes shadows, and saves the result as a clean PDF or image file. It is available for both iPhone and Android and costs nothing to download or use.
 
 The app is especially useful when you need to keep digital copies of important papers — tax documents, insurance cards, medical records, receipts, or letters. Instead of keeping stacks of paper, you can scan them, save the PDFs, and find them later by searching on your phone or in your email.
 
@@ -210,7 +210,7 @@ The app is free and does not put watermarks on your scans, which is a significan
     difficulty: `Beginner`,
     body: `Your Apple Watch face is the screen you see every time you raise your wrist. Apple lets you change not just how it looks, but what information it shows you — all without touching your iPhone. You can have a simple clock face for casual wear and a detailed one for days when you want to track your health, weather, or calendar at a glance.
 
-The small pieces of information that appear around the main clock display are called "complications." This is an old watchmaking term, and it simply means any extra feature beyond showing the time. On an Apple Watch, complications can show you the current temperature, your step count, your heart rate, the next event on your calendar, the battery level, a timer shortcut, and much more. You get to choose which complications appear and where.
+The small pieces of information that appear around the main clock display are called "complications." This is an old watchmaking term, and it means any extra feature beyond showing the time. On an Apple Watch, complications can show you the current temperature, your step count, your heart rate, the next event on your calendar, the battery level, a timer shortcut, and much more. You get to choose which complications appear and where.
 
 Apple includes a library of watch faces to choose from, and new ones are added with software updates. Faces range from simple analog clock designs to colorful, information-packed digital displays. Some faces have more spots for complications than others.
 
@@ -641,7 +641,7 @@ Adding money to your digital transit card is done through the transit system's a
       },
       {
         title: `Use your phone at the fare reader`,
-        content: `At a bus or subway fare reader, hold your phone near the contactless symbol on the reader. On an iPhone, you do not need to unlock your phone or open any app — just hold it near the reader and a tap will be detected. On Android, make sure NFC is enabled (Settings > Connections > NFC). Your fare is deducted automatically from your transit card balance.`,
+        content: `At a bus or subway fare reader, hold your phone near the contactless symbol on the reader. On an iPhone, you do not need to unlock your phone or open any app — hold it near the reader and a tap will be detected. On Android, make sure NFC is enabled (Settings > Connections > NFC). Your fare is deducted automatically from your transit card balance.`,
       },
       {
         title: `Check your balance and add more funds`,

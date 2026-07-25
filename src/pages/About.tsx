@@ -139,7 +139,7 @@ const involvement: InvolvementItem[] = [
     title: 'Share with a friend',
     body: 'The best thing you can do is send TekSure to someone who’s been stuck. A forwarded link changes lives.',
     cta: 'Visit teksure.com',
-    href: 'https://teksure.com',
+    href: 'https://www.teksure.com',
     external: true,
   },
 ];
@@ -155,8 +155,8 @@ const About = () => {
           '@context': 'https://schema.org',
           '@type': 'Organization',
           name: 'TekSure',
-          url: 'https://teksure.com',
-          logo: 'https://teksure.com/og-image.png',
+          url: 'https://www.teksure.com',
+          logo: 'https://www.teksure.com/og-image.png',
           description:
             'Free technology support and guides for everyday people. An American company making tech simple.',
           contactPoint: {

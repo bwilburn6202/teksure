@@ -125,7 +125,7 @@ export const guidesBatch20: Guide[] = [
     thumbnailEmoji: '',
     publishedAt: '2026-04-19',
     difficulty: 'Beginner',
-    body: `Apple Wallet is the app on your iPhone that stores digital versions of your everyday cards and passes — credit cards, debit cards, boarding passes, event tickets, loyalty program cards, and even your driver's license in some states. Think of it as a digital version of the physical wallet in your pocket.\n\nOnce a card is in Apple Wallet, you can use it to pay at stores using Apple Pay — just hold your phone near the card reader. You can also use boarding passes stored in Wallet to check in at the airport without printing anything. Loyalty cards stored in Wallet appear automatically when you're near the store.\n\nApple Wallet is separate from but works closely with Apple Pay (which handles payments). This guide covers how to add different types of cards and passes, so you get the most out of the app.`,
+    body: `Apple Wallet is the app on your iPhone that stores digital versions of your everyday cards and passes — credit cards, debit cards, boarding passes, event tickets, loyalty program cards, and even your driver's license in some states. Think of it as a digital version of the physical wallet in your pocket.\n\nOnce a card is in Apple Wallet, you can use it to pay at stores using Apple Pay — hold your phone near the card reader. You can also use boarding passes stored in Wallet to check in at the airport without printing anything. Loyalty cards stored in Wallet appear automatically when you're near the store.\n\nApple Wallet is separate from but works closely with Apple Pay (which handles payments). This guide covers how to add different types of cards and passes, so you get the most out of the app.`,
     steps: [
       {
         title: 'Open Apple Wallet',
@@ -212,7 +212,7 @@ export const guidesBatch20: Guide[] = [
       },
       {
         title: 'Make your phone ring',
-        content: `On the Find My Device page, click or tap "Play sound." Your phone will ring at full volume for 5 minutes — even if it's on silent or vibrate. This is handy when you've simply misplaced it somewhere in your home.`,
+        content: `On the Find My Device page, click or tap "Play sound." Your phone will ring at full volume for 5 minutes — even if it's on silent or vibrate. This is handy when you've misplaced it somewhere in your home.`,
       },
       {
         title: 'Lock your phone remotely',
@@ -236,7 +236,7 @@ export const guidesBatch20: Guide[] = [
     thumbnailEmoji: '',
     publishedAt: '2026-04-19',
     difficulty: 'Beginner',
-    body: `Opening a brand-new Windows laptop is exciting — but the setup process can feel overwhelming if you've never done it before. The good news is that Windows 11 walks you through each step on-screen, and most choices are straightforward once you understand what's being asked.\n\nThis guide covers the full first-time setup from the moment you press the power button. We'll go through creating your account, connecting to Wi-Fi, setting up Microsoft features, and the first things to do once Windows is ready — including running updates and making sure your files will be backed up.\n\nPlan to spend about 20–30 minutes on the initial setup. You don't need any technical knowledge — just follow along and take your time with each screen.`,
+    body: `Opening a brand-new Windows laptop is exciting — but the setup process can feel overwhelming if you've never done it before. The good news is that Windows 11 walks you through each step on-screen, and most choices are straightforward once you understand what's being asked.\n\nThis guide covers the full first-time setup from the moment you press the power button. We'll go through creating your account, connecting to Wi-Fi, setting up Microsoft features, and the first things to do once Windows is ready — including running updates and making sure your files will be backed up.\n\nPlan to spend about 20–30 minutes on the initial setup. You don't need any technical knowledge — follow along and take your time with each screen.`,
     steps: [
       {
         title: 'Press power and follow the welcome screens',
@@ -468,7 +468,7 @@ export const guidesBatch20: Guide[] = [
     thumbnailEmoji: '',
     publishedAt: '2026-04-19',
     difficulty: 'Beginner',
-    body: `When your Android phone stops charging, it's easy to assume the worst — but most of the time, the problem is something small and fixable. Common culprits include lint clogging the charging port, a frayed cable, a failing power adapter, or a minor software issue.\n\nThis guide takes you through the most common fixes in order of likelihood. Try each step before moving to the next. The majority of charging issues are resolved with the first two or three steps — a clean port and a working cable. Take a deep breath and let's work through it together.`,
+    body: `When your Android phone stops charging, it is common to assume the worst — but most of the time, the problem is something small and fixable. Common culprits include lint clogging the charging port, a frayed cable, a failing power adapter, or a minor software issue.\n\nThis guide takes you through the most common fixes in order of likelihood. Try each step before moving to the next. The majority of charging issues are resolved with the first two or three steps — a clean port and a working cable. Take a deep breath and let's work through it together.`,
     steps: [
       {
         title: 'Clean the charging port',
@@ -622,7 +622,7 @@ export const guidesBatch20: Guide[] = [
     steps: [
       {
         title: 'Check if your TV already supports video calls',
-        content: `On your TV's home screen or app menu, look for: Google Meet, Google Duo, Zoom, Amazon Alexa Calling, or Facebook. Some newer smart TVs have these pre-installed. If you see one, you're already most of the way there — you just need a camera.`,
+        content: `On your TV's home screen or app menu, look for: Google Meet, Google Duo, Zoom, Amazon Alexa Calling, or Facebook. Some newer smart TVs have these pre-installed. If you see one, you're already most of the way there — you need a camera.`,
       },
       {
         title: 'Option 1 — Use Google Meet on Google TV',

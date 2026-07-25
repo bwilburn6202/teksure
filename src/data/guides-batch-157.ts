@@ -372,7 +372,7 @@ Apple's built-in dictation requires no setup — it is ready to use on every iPh
 2. Look at the keyboard that appears at the bottom of the screen. You will see a **microphone icon** at the bottom-left corner of the keyboard, just to the left of the space bar.
 3. Tap the microphone icon. A small sound wave or microphone indicator will appear to show the phone is listening.
 4. Speak your message in a clear, natural voice at your normal pace. There is no need to shout or slow down dramatically.
-5. When you are finished, tap the microphone icon again to stop — or simply pause for a moment and the phone will stop on its own.
+5. When you are finished, tap the microphone icon again to stop — or pause for a moment and the phone will stop on its own.
 6. Review the text that appeared. If something was misheard, tap that word and correct it.
 
 **Punctuation by voice:** Say "period," "comma," "question mark," "exclamation point," or "new line" to add punctuation and paragraph breaks. For example: "I will be there at two o'clock period See you then period" becomes "I will be there at two o'clock. See you then."
@@ -586,7 +586,7 @@ Write it down or take a photo of the screen.
 5. Your Mac will ask for your Mac login password or Touch ID to confirm — enter it.
 6. The Wi-Fi password will appear. Copy it or write it down.
 
-On older Macs (macOS Monterey or earlier), you can also find it in the **Keychain Access** application by searching for your network name and checking "Show Password."
+On any Mac (macOS Sequoia is current in 2026; the same trick works on Ventura, Sonoma, and back to Monterey), you can also find it in the **Keychain Access** application by searching for your network name and checking "Show Password."
 
 ---
 

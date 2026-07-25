@@ -103,7 +103,7 @@ const EMPTY_DATA: NewsletterData = {
   howToSteps: ['', '', ''],
   events: ['', '', ''],
   contactInfo: '',
-  qrUrl: 'https://teksure.com',
+  qrUrl: 'https://www.teksure.com',
   qrCaption: 'Scan for more free tech tips',
   styleId: 'friendly',
 };
@@ -487,7 +487,7 @@ function formatSavedAgo(ts: number | null): string {
 
 function QrSvg({ text, size = 120 }: { text: string; size?: number }) {
   const { path, total } = useMemo(() => {
-    const clean = text.trim() || 'https://teksure.com';
+    const clean = text.trim() || 'https://www.teksure.com';
     try {
       const matrix = encodeText(clean, 'MEDIUM');
       const { path: p, size: total } = toSvgPath(matrix, 4);
@@ -1356,7 +1356,7 @@ export default function WeeklyNewsletterTemplate() {
                       id="qr"
                       value={data.qrUrl}
                       onChange={(e) => update('qrUrl', e.target.value)}
-                      placeholder="https://teksure.com"
+                      placeholder="https://www.teksure.com"
                       className="min-h-14 text-base"
                     />
                     <Label htmlFor="qrc" className="text-base mt-3">
@@ -1536,7 +1536,7 @@ export default function WeeklyNewsletterTemplate() {
                         </div>
                       </div>
                       <div className="wn-qr">
-                        <QrSvg text={data.qrUrl || 'https://teksure.com'} size={96} />
+                        <QrSvg text={data.qrUrl || 'https://www.teksure.com'} size={96} />
                         {data.qrCaption && (
                           <div className="wn-qr-caption">{data.qrCaption}</div>
                         )}

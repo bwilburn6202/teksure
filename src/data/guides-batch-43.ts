@@ -211,7 +211,7 @@ This is useful for medical forms, insurance documents, rental agreements, tax fo
 
 There are two main scenarios:
 
-**Fillable PDFs**: Some PDFs have interactive form fields — text boxes that light up when you tap them. These are the easiest to fill out. Just tap each field and type your information.
+**Fillable PDFs**: Some PDFs have interactive form fields — text boxes that light up when you tap them. These are the easiest to fill out. Tap each field and type your information.
 
 **Non-fillable PDFs (flat forms)**: Scanned documents or older forms may not have interactive fields. With Markup, you can add text boxes and type your information anywhere on the document, then add a signature.
 
@@ -432,7 +432,7 @@ Changing the wallpaper takes about a minute and can be changed as often as you w
       },
       {
         title: `Set it for lock screen, home screen, or both`,
-        content: `After tapping "Add," you are asked: "Set as Wallpaper Pair" (uses the same image for both lock and home screen), "Customize Home Screen" (uses a different look for the home screen), or simply previewing it. Tap "Set as Wallpaper Pair" for the most common, simple option.`,
+        content: `After tapping "Add," you are asked: "Set as Wallpaper Pair" (uses the same image for both lock and home screen), "Customize Home Screen" (uses a different look for the home screen), or previewing it. Tap "Set as Wallpaper Pair" for the most common, simple option.`,
       },
       {
         title: `Add widgets to your lock screen (optional)`,

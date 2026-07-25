@@ -78,7 +78,7 @@ export const guidesBatch15: Guide[] = [
   {
     slug: 'how-to-use-mac-spotlight-search',
     title: 'How to Find Anything on Your Mac Using Spotlight Search',
-    excerpt: "Spotlight lets you find any file, app, email, or web result on your Mac in seconds — just press Command+Space and start typing.",
+    excerpt: "Spotlight lets you find any file, app, email, or web result on your Mac in seconds — press Command+Space and start typing.",
     category: 'mac-guides',
     tags: ['spotlight', 'mac', 'search', 'find files', 'macos', 'keyboard shortcut'],
     readTime: '3 min',
@@ -517,7 +517,7 @@ export const guidesBatch15: Guide[] = [
     thumbnailEmoji: '',
     publishedAt: '2026-04-19',
     difficulty: 'Beginner',
-    body: "Apple TV is a small box (about the size of a hockey puck) that connects to your television and provides access to Apple TV+, Netflix, Hulu, Disney+, and hundreds of other streaming apps. It's the best option if you already use Apple devices and want seamless AirPlay integration.",
+    body: "Apple TV is a small box (about the size of a hockey puck) that connects to your television and provides access to Apple TV+, Netflix, Hulu, Disney+, and hundreds of other streaming apps. It's the best option if you already use Apple devices and want smooth AirPlay integration.",
     steps: [
       {
         title: 'Connect Apple TV to your television',

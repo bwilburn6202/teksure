@@ -232,7 +232,7 @@ export const guidesBatch220: Guide[] = [
     slug: "how-to-order-groceries-rural-area",
     title: "How to Order Groceries When Stores Are Far",
     excerpt: "Plain-English guide to ordering fresh groceries online when the nearest supermarket is a long drive, with delivery, mail-order, and pickup options.",
-    category: "shopping",
+    category: "buying-guides",
     tags: ["groceries", "rural", "delivery", "instacart", "walmart", "seniors", "shopping"],
     readTime: "8 min",
     thumbnailEmoji: "🛒",

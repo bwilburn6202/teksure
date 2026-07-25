@@ -19,7 +19,7 @@ export default function SeniorKhanAcademy() {
           <Card><CardContent className="p-6"><h2 className="text-xl font-semibold mb-2">1. Always free</h2><p>Non-profit funded. App or khanacademy.org. Sign up optional.</p></CardContent></Card>
           <Card><CardContent className="p-6"><h2 className="text-xl font-semibold mb-2">2. Math</h2><p>From basic arithmetic to calculus. Helpful if you're tutoring grandkids.</p></CardContent></Card>
           <Card><CardContent className="p-6"><h2 className="text-xl font-semibold mb-2">3. History</h2><p>World history, US history, art history. Hours of free video lessons.</p></CardContent></Card>
-          <Card><CardContent className="p-6"><h2 className="text-xl font-semibold mb-2">4. Personal finance</h2><p>Stocks, retirement, mortgages explained simply. Great refresher.</p></CardContent></Card>
+          <Card><CardContent className="p-6"><h2 className="text-xl font-semibold mb-2">4. Personal finance</h2><p>Stocks, retirement, mortgages explained in plain language. Great refresher.</p></CardContent></Card>
           <Card><CardContent className="p-6"><h2 className="text-xl font-semibold mb-2">5. Computer basics</h2><p>How computers work. Internet history. Plain-English lessons.</p></CardContent></Card>
           <Card><CardContent className="p-6"><h2 className="text-xl font-semibold mb-2">6. Khanmigo AI</h2><p>$4/month. AI tutor that answers questions. Excellent for learning new topics.</p></CardContent></Card>
           <Card className="bg-muted/40"><CardContent className="p-6"><p>Each video is 5-15 minutes. Easy to fit one or two into your day.</p></CardContent></Card>

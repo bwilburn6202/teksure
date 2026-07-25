@@ -418,7 +418,7 @@ export const guidesBatch38: Guide[] = [
       },
       {
         title: 'Review personalized ads settings',
-        content: `In the Privacy Checkup, you will also see "Ad settings." Google shows you the topics and demographic categories it uses to decide which ads to show you. You can remove topics you find intrusive, or turn off "My Ad Center" personalization entirely. This does not reduce the number of ads you see — it just makes them less targeted to your interests. Some people prefer random ads; others prefer ads related to things they have searched for.`,
+        content: `In the Privacy Checkup, you will also see "Ad settings." Google shows you the topics and demographic categories it uses to decide which ads to show you. You can remove topics you find intrusive, or turn off "My Ad Center" personalization entirely. This does not reduce the number of ads you see — it makes them less targeted to your interests. Some people prefer random ads; others prefer ads related to things they have searched for.`,
       },
       {
         title: 'Delete stored data you no longer want',
@@ -473,7 +473,7 @@ export const guidesBatch38: Guide[] = [
     steps: [
       {
         title: 'What Siri is best at',
-        content: `Siri excels at tasks that are tightly connected to your Apple devices and apps. Best uses: "Hey Siri, call Dad" (uses your iPhone contacts seamlessly), "Hey Siri, set a reminder for my dentist appointment Thursday at 2 PM" (adds to your iPhone Reminders), "Hey Siri, read my last text from Mom" (reads and replies to iMessages), "Hey Siri, turn on Do Not Disturb" (controls iPhone settings), "Hey Siri, navigate home" (opens Apple Maps). Siri is the right choice when you want to control your iPhone or interact with Apple apps hands-free.`,
+        content: `Siri excels at tasks that are tightly connected to your Apple devices and apps. Best uses: "Hey Siri, call Dad" (uses your iPhone contacts smoothly), "Hey Siri, set a reminder for my dentist appointment Thursday at 2 PM" (adds to your iPhone Reminders), "Hey Siri, read my last text from Mom" (reads and replies to iMessages), "Hey Siri, turn on Do Not Disturb" (controls iPhone settings), "Hey Siri, navigate home" (opens Apple Maps). Siri is the right choice when you want to control your iPhone or interact with Apple apps hands-free.`,
       },
       {
         title: 'What Google Assistant is best at',
@@ -646,7 +646,7 @@ export const guidesBatch38: Guide[] = [
       },
       {
         title: 'What to do after removing access',
-        content: `After removing an app's access, the next time you try to use that app it will ask you to sign in again. If you no longer use the app, no action is needed — access is simply revoked. If you want to keep using the app but with a more limited connection, most apps let you create a regular username and password instead of the social login. For apps you deleted from your phone months ago but forgot about, removing their Google/Apple/Facebook access is purely a security and privacy cleanup — they can no longer send data back to those platforms.`,
+        content: `After removing an app's access, the next time you try to use that app it will ask you to sign in again. If you no longer use the app, no action is needed — access is revoked. If you want to keep using the app but with a more limited connection, most apps let you create a regular username and password instead of the social login. For apps you deleted from your phone months ago but forgot about, removing their Google/Apple/Facebook access is purely a security and privacy cleanup — they can no longer send data back to those platforms.`,
       },
     ],
   },

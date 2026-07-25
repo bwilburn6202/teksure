@@ -601,7 +601,7 @@ One of Tynker's most popular features is its Minecraft modding courses — child
 
 Tynker has both a free tier and a paid subscription. The free tier includes a limited set of courses and activities, which is enough to decide whether your child enjoys the platform. The premium subscription costs around $10 per month or $80 per year and unlocks hundreds of additional courses, projects, and features. The platform also has a school edition used by many teachers, which may mean your child already has access through their school.
 
-Tynker works on iPad, Android tablets, iPhone, Android phones, and web browsers on Mac and Windows computers. Lessons are organized by age group and skill level, so it is easy to find a starting point without prior experience.`,
+Tynker works on iPad, Android tablets, iPhone, Android phones, and web browsers on Mac and Windows computers. Lessons are organized by age group and skill level, so you can find a starting point without prior experience.`,
     steps: [
       {
         title: `Create a free Tynker account`,

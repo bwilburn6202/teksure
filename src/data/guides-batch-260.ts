@@ -140,7 +140,7 @@ export const guidesBatch260: Guide[] = [
       },
       {
         title: "Stage 3, moderate-to-severe — separate rooms",
-        content: "If your spouse is up most of the night, talking to people who are not there, getting dressed and undressed, or you simply cannot get any sleep, the next step is separate bedrooms. This is the hardest emotional change for most spouse caregivers. Some grieve it for weeks. It helps to reframe: you are not leaving the marriage, you are protecting it. A rested caregiver is a kinder, safer caregiver. Use a video baby monitor so you can see and hear your spouse from your room.",
+        content: "If your spouse is up most of the night, talking to people who are not there, getting dressed and undressed, or you cannot get any sleep, the next step is separate bedrooms. This is the hardest emotional change for most spouse caregivers. Some grieve it for weeks. It helps to reframe: you are not leaving the marriage, you are protecting it. A rested caregiver is a kinder, safer caregiver. Use a video baby monitor so you can see and hear your spouse from your room.",
         warning: "If your spouse is at risk of wandering out of the house at night, a separate room must include a door alarm and ideally a deadbolt at the top of the door that they cannot reach. Six in ten people with dementia wander, and nighttime wandering in pajamas in winter has killed many.",
       },
       {

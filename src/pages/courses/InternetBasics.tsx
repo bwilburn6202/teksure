@@ -253,12 +253,12 @@ const InternetBasics = () => {
             provider: {
               '@type': 'Organization',
               name: 'TekSure',
-              sameAs: 'https://teksure.com',
+              sameAs: 'https://www.teksure.com',
             },
             inLanguage: 'en',
             isAccessibleForFree: true,
             educationalLevel: 'Beginner',
-            url: 'https://teksure.com/courses/internet-basics',
+            url: 'https://www.teksure.com/courses/internet-basics',
           },
         ]}
       />
@@ -735,7 +735,7 @@ const InternetBasics = () => {
 
               <h3 className="text-xl font-semibold tracking-tight mt-8">It's OK to ask</h3>
               <p>
-                There's nothing embarrassing about asking for help with technology. New devices, apps, and websites come out every week — nobody knows them all. The people who seem the most confident are simply the ones who have learned to ask good questions and look things up. You can do that too.
+                There's nothing embarrassing about asking for help with technology. New devices, apps, and websites come out every week — nobody knows them all. The people who seem the most confident are the ones who have learned to ask good questions and look things up. You can do that too.
               </p>
 
               <div className="rounded-xl border border-primary/20 bg-primary/5 p-5 mt-8">

@@ -41,7 +41,7 @@ export const guidesBatch31: Guide[] = [
     slug: 'iphone-namedrop-guide',
     title: 'How to Use NameDrop to Share Your Contact Info',
     excerpt: 'Hold two iPhones close together to instantly share contact details — no typing or texting required. Works on iPhone XS and later.',
-    body: `NameDrop is a feature introduced in iOS 17 that lets you share your contact information with another person by simply holding the top edges of two iPhones close together. A glowing animation appears, and both people can choose to share their contact card.\n\nThis works on iPhone XS or newer, and both phones need to be running iOS 17 or later. It uses a combination of Bluetooth and NFC technology to detect when two phones are nearby.\n\nWhen you bring the phones together, you each see a prompt on your screen. You can choose "Share" to send your contact card, or "Receive Only" to get theirs without sharing yours, or "Don't Share" to cancel. Each person is in control — no one's contact is shared without permission.\n\nNameDrop is also useful for sharing AirDrop content like photos or links when you just tap the phones together and then select what to share from the prompt.\n\nIf NameDrop does not appear to work, check that both phones have AirDrop turned on and set to "Everyone for 10 Minutes" or "Contacts Only." NameDrop uses AirDrop under the hood. You may also need to have your Contact Poster set up in the Contacts app.\n\nNameDrop is a great way to exchange numbers at events, with neighbors, or with new friends without the awkward back-and-forth of spelling out phone numbers.`,
+    body: `NameDrop is a feature introduced in iOS 17 that lets you share your contact information with another person by holding the top edges of two iPhones close together. A glowing animation appears, and both people can choose to share their contact card.\n\nThis works on iPhone XS or newer, and both phones need to be running iOS 17 or later. It uses a combination of Bluetooth and NFC technology to detect when two phones are nearby.\n\nWhen you bring the phones together, you each see a prompt on your screen. You can choose "Share" to send your contact card, or "Receive Only" to get theirs without sharing yours, or "Don't Share" to cancel. Each person is in control — no one's contact is shared without permission.\n\nNameDrop is also useful for sharing AirDrop content like photos or links when you tap the phones together and then select what to share from the prompt.\n\nIf NameDrop does not appear to work, check that both phones have AirDrop turned on and set to "Everyone for 10 Minutes" or "Contacts Only." NameDrop uses AirDrop under the hood. You may also need to have your Contact Poster set up in the Contacts app.\n\nNameDrop is a great way to exchange numbers at events, with neighbors, or with new friends without the awkward back-and-forth of spelling out phone numbers.`,
     category: 'phone-guides',
     tags: ['iphone', 'namedrop', 'share contacts', 'ios 17', 'airdrop'],
     readTime: '4 min',
@@ -177,7 +177,7 @@ export const guidesBatch31: Guide[] = [
       },
       {
         title: 'Respond to alerts in daily use',
-        content: `When the alert appears, simply hold the phone at arm's length (about 12+ inches from your face) until it clears. It only takes a moment.`,
+        content: `When the alert appears, hold the phone at arm's length (about 12+ inches from your face) until it clears. It only takes a moment.`,
       },
     ],
   },

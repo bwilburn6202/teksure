@@ -80,7 +80,7 @@ export default function BitwardenSetupSeniors() {
               <li>Tap fill — auto-types your saved info.</li>
               <li>Generate strong unique passwords for new accounts.</li>
               <li>Bitwarden warns about reused or weak passwords.</li>
-              <li>Browser extension makes this seamless.</li>
+              <li>Browser extension makes this smooth.</li>
               <li>Phone autofill for app logins too.</li>
             </ul>
           </CardContent>

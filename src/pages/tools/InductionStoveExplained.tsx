@@ -18,7 +18,7 @@ export default function InductionStoveExplained() {
 
         <Card className="mb-4">
           <CardContent className="pt-6">
-            <h2 className="font-bold text-xl mb-3">How it works (simply)</h2>
+            <h2 className="font-bold text-xl mb-3">How it works (in plain words)</h2>
             <ul className="list-disc pl-5 space-y-2 text-sm">
               <li>Magnets heat the PAN, not the surface.</li>
               <li>Stove top stays cool to touch.</li>

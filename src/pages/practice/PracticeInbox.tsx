@@ -403,10 +403,10 @@ function FinishedSummary({
       </div>
 
       <div className="mt-6 flex flex-wrap gap-2 justify-center">
-        <Badge variant="outline" asChild>
+        <Badge variant="outline">
           <Link to="/guides/phishing-emails">Read: Phishing emails</Link>
         </Badge>
-        <Badge variant="outline" asChild>
+        <Badge variant="outline">
           <Link to="/guides/avoiding-scams">Read: Avoiding scams</Link>
         </Badge>
       </div>

@@ -89,7 +89,7 @@ export const guidesBatch12: Guide[] = [
     thumbnailEmoji: '',
     publishedAt: '2026-04-19',
     difficulty: 'Beginner',
-    body: "A fast-draining iPhone battery is one of the most common frustrations people have with their phones. The good news is that a few simple settings changes can often extend how long your battery lasts during the day. You do not need a new phone — you just need to know where to look.",
+    body: "A fast-draining iPhone battery is one of the most common frustrations people have with their phones. The good news is that a few simple settings changes can often extend how long your battery lasts during the day. You do not need a new phone — you need to know where to look.",
     steps: [
       {
         title: 'Check your battery health',
@@ -166,7 +166,7 @@ export const guidesBatch12: Guide[] = [
     publishedAt: '2026-04-19',
     lastVerifiedAt: '2026-05-15',
     difficulty: 'Beginner',
-    body: "Forgetting your WiFi password happens to everyone. The good news is your password is almost always saved somewhere on a device that's already connected — you just need to know where to look.",
+    body: "Forgetting your WiFi password happens to everyone. The good news is your password is almost always saved somewhere on a device that's already connected — you need to know where to look.",
     steps: [
       {
         title: 'Find it on an iPhone (iOS 17 or later)',
@@ -510,7 +510,7 @@ export const guidesBatch12: Guide[] = [
     thumbnailEmoji: '',
     publishedAt: '2026-04-19',
     difficulty: 'Beginner',
-    body: "Apple builds accessibility features into every iPhone, and they're designed to make the phone easier to use for everyone — especially people with vision, hearing, or dexterity challenges. These features are already on your iPhone right now; you just need to turn them on.",
+    body: "Apple builds accessibility features into every iPhone, and they're designed to make the phone easier to use for everyone — especially people with vision, hearing, or dexterity challenges. These features are already on your iPhone right now; you need to turn them on.",
     steps: [
       {
         title: 'Make text larger across your entire iPhone',
@@ -632,7 +632,7 @@ export const guidesBatch12: Guide[] = [
       },
       {
         title: 'Control your call with the on-screen buttons',
-        content: `During a call, tap the screen once to see the control buttons. The red phone button ends the call. The microphone button (with a line through it) mutes you so the other person can't hear you — tap it again to unmute. The camera button flips between your front and back cameras. If the buttons disappear, just tap the screen again to bring them back.`,
+        content: `During a call, tap the screen once to see the control buttons. The red phone button ends the call. The microphone button (with a line through it) mutes you so the other person can't hear you — tap it again to unmute. The camera button flips between your front and back cameras. If the buttons disappear, tap the screen again to bring them back.`,
       },
       {
         title: 'Add more family members to the call',

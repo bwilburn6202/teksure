@@ -429,7 +429,7 @@ Live Text does not require an internet connection — the text recognition happe
     difficulty: 'Beginner',
     body: `AirTag (made by Apple) and Tile are small tracking devices about the size of a quarter. You attach one to your keys, put one in your wallet, or slip one into your luggage — and if that item goes missing, you use your phone to find it. Both trackers work well, but they have real differences in how they work and which phones they are compatible with.
 
-The biggest factor in choosing between AirTag and Tile is what kind of phone you own. AirTag is designed specifically for iPhone users and works with Apple's Find My network. If you have an iPhone, AirTag is the more seamless choice. If you have an Android phone — or if the person you are buying a tracker for uses Android — Tile is the better option.
+The biggest factor in choosing between AirTag and Tile is what kind of phone you own. AirTag is designed specifically for iPhone users and works with Apple's Find My network. If you have an iPhone, AirTag is the more smooth choice. If you have an Android phone — or if the person you are buying a tracker for uses Android — Tile is the better option.
 
 AirTag uses Apple's "Find My" network, which is a massive crowd-sourced tracking system. Every iPhone in the world (including strangers' iPhones) can detect your AirTag's Bluetooth signal and relay your item's location back to you anonymously and privately. This makes AirTag extremely effective in populated areas — cities, airports, shopping malls — where iPhones are everywhere.
 
@@ -701,7 +701,7 @@ Bedtime Mode (also called Wind Down) is useful for better sleep. At a time you c
     thumbnailEmoji: '',
     publishedAt: '2026-04-19',
     difficulty: 'Beginner',
-    body: `"Hey Siri" lets you talk to your iPhone without pressing any buttons. You say "Hey Siri" from across the room and your iPhone wakes up and listens for your request. This is especially useful when your hands are busy — cooking, driving, or simply when your phone is out of reach.
+    body: `"Hey Siri" lets you talk to your iPhone without pressing any buttons. You say "Hey Siri" from across the room and your iPhone wakes up and listens for your request. This is especially useful when your hands are busy — cooking, driving, or when your phone is out of reach.
 
 Siri can do a surprising number of things by voice: make phone calls, send text messages, set timers and reminders, play music, get directions, answer questions, control smart home devices, and open any app on your phone.
 

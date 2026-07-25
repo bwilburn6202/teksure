@@ -35,7 +35,7 @@ export const guidesBatch324: Guide[] = [
       {
         title: "Report the call",
         content: "Report suspected scam calls to the FTC at reportfraud.ftc.gov and to your phone carrier. If you already sent money, contact your bank or the gift card company immediately — some can freeze or reverse a transaction if you act fast.",
-        tip: "Quick Tip: Save the FTC's scam reporting site as a browser bookmark so it's easy to find in an emergency.",
+        tip: "Quick Tip: Save the FTC's scam reporting site as a browser bookmark so you can find in an emergency.",
       },
     ],
   },

@@ -60,7 +60,7 @@ export const guidesBatch34: Guide[] = [
       },
       {
         title: 'Refuse and hang up',
-        content: 'If a caller asks you to buy gift cards, hang up immediately. You do not need to be polite. Do not explain yourself. Simply hang up.',
+        content: 'If a caller asks you to buy gift cards, hang up immediately. You do not need to be polite. Do not explain yourself. Hang up.',
         tip: 'If you feel uncertain, do not buy the cards first and "figure it out later." Call a trusted family member right away and describe what happened.',
       },
       {
@@ -151,7 +151,7 @@ export const guidesBatch34: Guide[] = [
     slug: 'medicare-fraud-guide',
     title: 'How to Recognize Medicare Fraud and Scams',
     excerpt: `Medicare fraud costs billions per year and often starts with an unsolicited call offering "free" equipment or asking to confirm your Medicare number. Here's how to protect yourself.`,
-    body: `Medicare fraud is a major and growing problem. Scammers target Medicare beneficiaries (people age 65 and older or those with certain disabilities) using several common approaches.\n\n**Common Medicare scams**:\n\n**"Free" medical equipment**: A caller offers free braces, wheelchairs, or medical devices — you "just need" to provide your Medicare number to claim them. The caller then bills Medicare for equipment you never ordered or needed, pocketing the money. Medicare fraud of this type is a federal crime, but you may be held responsible for equipment charges on your account.\n\n**Fake cards and enrollment**: Near Medicare Open Enrollment (October 15 – December 7 each year), scammers call claiming your Medicare card is being updated and you need to verify your number. Medicare cards are never updated over the phone.\n\n**DNA testing kits**: Scammers offer "free" genetic tests, claiming Medicare covers them. They take a cheek swab, bill Medicare for the test, and sell your genetic data.\n\n**What your Medicare number is worth**: Your Medicare number is as valuable as your Social Security number. With it, criminals can bill Medicare for thousands of dollars in fake services in your name.\n\n**Protections**: Review your Medicare Summary Notice (MSN) or check your claims at MyMedicare.gov every month. If you see services, equipment, or providers you do not recognize, call 1-800-MEDICARE immediately.`,
+    body: `Medicare fraud is a major and growing problem. Scammers target Medicare beneficiaries (people age 65 and older or those with certain disabilities) using several common approaches.\n\n**Common Medicare scams**:\n\n**"Free" medical equipment**: A caller offers free braces, wheelchairs, or medical devices — you "need" to provide your Medicare number to claim them. The caller then bills Medicare for equipment you never ordered or needed, pocketing the money. Medicare fraud of this type is a federal crime, but you may be held responsible for equipment charges on your account.\n\n**Fake cards and enrollment**: Near Medicare Open Enrollment (October 15 – December 7 each year), scammers call claiming your Medicare card is being updated and you need to verify your number. Medicare cards are never updated over the phone.\n\n**DNA testing kits**: Scammers offer "free" genetic tests, claiming Medicare covers them. They take a cheek swab, bill Medicare for the test, and sell your genetic data.\n\n**What your Medicare number is worth**: Your Medicare number is as valuable as your Social Security number. With it, criminals can bill Medicare for thousands of dollars in fake services in your name.\n\n**Protections**: Review your Medicare Summary Notice (MSN) or check your claims at MyMedicare.gov every month. If you see services, equipment, or providers you do not recognize, call 1-800-MEDICARE immediately.`,
     category: 'safety-guides',
     tags: ['medicare fraud', 'medicare scam', 'elder fraud', 'health insurance fraud', 'senior safety'],
     readTime: '5 min',
@@ -347,7 +347,7 @@ export const guidesBatch34: Guide[] = [
       {
         title: 'Turn on 2-Step Verification',
         content: 'In the Security Checkup, click "2-Step Verification" → "Get Started." Choose your verification method: Google prompt (a tap on your phone — easiest), authenticator app, or text message code.',
-        tip: 'Google Prompt is the most convenient — you just tap "Yes" on your phone when signing in from a new device. No codes to enter.',
+        tip: 'Google Prompt is the most convenient — you tap "Yes" on your phone when signing in from a new device. No codes to enter.',
       },
       {
         title: 'Review your signed-in devices',

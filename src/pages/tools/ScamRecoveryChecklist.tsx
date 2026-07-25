@@ -13,7 +13,7 @@ interface Step {
 }
 
 const STEPS: Step[] = [
-  { id: "a1", category: "First hour - stop the bleeding", title: "Stop. Send no more money. Take a slow breath.", detail: "The scammer will pressure you. Hang up. Block the number. Step away from the computer. Nothing you do in the next 60 minutes makes it worse if you simply STOP." },
+  { id: "a1", category: "First hour - stop the bleeding", title: "Stop. Send no more money. Take a slow breath.", detail: "The scammer will pressure you. Hang up. Block the number. Step away from the computer. Nothing you do in the next 60 minutes makes it worse if you STOP." },
   { id: "a2", category: "First hour - stop the bleeding", title: "Write down what happened while it's fresh", detail: "Names used, phone numbers, websites, dollar amounts, payment methods, dates. Even fragments help investigators. Save screenshots if there was a website or text." },
   { id: "a3", category: "First hour - stop the bleeding", title: "Tell one trusted person", detail: "Spouse, adult child, neighbor, pastor, friend. You don't have to tell everyone, but telling one person breaks the isolation and gets a calm second pair of hands." },
   { id: "a4", category: "First hour - stop the bleeding", title: "This was NOT your fault", detail: "Scammers are professionals running psychological attacks designed by teams of people. You were targeted, not stupid. The shame you feel is the scammer's last weapon — don't carry it." },

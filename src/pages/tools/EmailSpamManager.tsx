@@ -388,7 +388,7 @@ const FAQ_ITEMS = [
   },
   {
     q: 'Is it safer to use a separate email for shopping?',
-    a: 'Yes — and highly recommended. Create one free email address just for online shopping, loyalty programs, and anything non-essential. Keep your main email for family, your bank, your doctor, and taxes. If the shopping address gets overloaded with spam, you can simply abandon it and make a new one — without losing important contacts.',
+    a: 'Yes — and highly recommended. Create one free email address just for online shopping, loyalty programs, and anything non-essential. Keep your main email for family, your bank, your doctor, and taxes. If the shopping address gets overloaded with spam, you can abandon it and make a new one — without losing important contacts.',
   },
   {
     q: 'What\'s a disposable email?',

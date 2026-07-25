@@ -133,7 +133,7 @@ ClassPass also includes a selection of on-demand video classes you can do at hom
       },
       {
         title: `Attend the class`,
-        content: `Arrive five to ten minutes early and let the front desk know you're a ClassPass member. Most studios ask you to check in through the ClassPass app or simply show your booking confirmation. First-timers usually get a quick studio orientation from the instructor.`,
+        content: `Arrive five to ten minutes early and let the front desk know you're a ClassPass member. Most studios ask you to check in through the ClassPass app or show your booking confirmation. First-timers usually get a quick studio orientation from the instructor.`,
         warning: `If you need to cancel, do it at least 12 hours before the class starts. Late cancellations and no-shows result in a credit penalty charged to your account.`,
       },
       {
@@ -534,7 +534,7 @@ Thumbtack is available as a free app on iPhone and Android, and also works on an
       {
         title: `Hire the pro and leave a review`,
         content: `Tap "Hire" on the professional you've chosen to officially book their services. Payment is arranged directly between you and the pro — Thumbtack does not handle payment for most categories. After the work is complete, return to the app to leave an honest review. Your review helps other homeowners in your area find reliable professionals.`,
-        warning: `Never pay the full project cost upfront before any work begins. A reasonable deposit is standard, but paying in full before work starts removes your leverage if problems arise.`,
+        warning: `Never pay the full project cost upfront before any work begins. A reasonable deposit is standard, but paying in full before work starts removes your use if problems arise.`,
       },
     ],
   },

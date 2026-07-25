@@ -434,7 +434,7 @@ export const guidesBatch35: Guide[] = [
   {
     slug: 'gmail-smart-compose-guide',
     title: 'How to Use Gmail Smart Compose to Write Emails Faster',
-    excerpt: `Gmail's Smart Compose suggests words and phrases as you type — just press Tab to accept a suggestion and finish sentences in seconds.`,
+    excerpt: `Gmail's Smart Compose suggests words and phrases as you type — press Tab to accept a suggestion and finish sentences in seconds.`,
     body: `Gmail's Smart Compose feature shows text suggestions as you type an email. When Smart Compose predicts what you are going to write next, it shows the suggested text in light gray after your cursor. Press Tab on a keyboard (or tap the suggestion on mobile) to accept it and continue.\n\nFor example, if you start typing "Looking forward to," Gmail might suggest "hearing from you." Press Tab and that phrase is inserted. This speeds up writing repetitive phrases significantly.\n\nSmart Compose learns from your writing patterns over time. The more you use it and accept (or reject) suggestions, the more accurately it reflects how you personally write.\n\n**Smart Reply** is a companion feature that suggests short responses at the bottom of emails you receive. For common responses like "Thank you, see you then" or "Sounds great!" tapping a Smart Reply suggestion creates and sends the response in seconds.\n\nBoth features work on Gmail for iPhone, Android, and the Gmail website on a computer.\n\nSome people find Smart Compose helpful for formal emails but distracting for casual ones. You can turn it off for specific accounts while keeping it on for others, or disable it entirely in Gmail Settings → General → Smart Compose.`,
     category: 'app-guides',
     tags: ['gmail', 'smart compose', 'email tips', 'productivity', 'writing'],
@@ -458,7 +458,7 @@ export const guidesBatch35: Guide[] = [
       },
       {
         title: 'Ignore suggestions you do not want',
-        content: 'Simply keep typing if you do not want the suggestion. The gray suggestion disappears and your typed text replaces it. There is no need to dismiss it.',
+        content: 'Keep typing if you do not want the suggestion. The gray suggestion disappears and your typed text replaces it. There is no need to dismiss it.',
       },
       {
         title: 'Try Smart Reply for quick responses',

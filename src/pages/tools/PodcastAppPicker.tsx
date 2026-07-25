@@ -52,7 +52,7 @@ export default function PodcastAppPicker() {
             <ul className="list-disc pl-5 space-y-2 text-sm">
               <li><strong>This American Life</strong> — beloved storytelling on NPR. Always good.</li>
               <li><strong>The Daily (NYT)</strong> — 20-minute morning news catch-up.</li>
-              <li><strong>Hidden Brain</strong> — psychology, simply explained.</li>
+              <li><strong>Hidden Brain</strong> — psychology, clearly explained.</li>
               <li><strong>Stuff You Should Know</strong> — explains anything, friendly tone.</li>
               <li><strong>Revisionist History (Malcolm Gladwell)</strong> — fascinating takes on famous events.</li>
               <li><strong>Hardcore History (Dan Carlin)</strong> — 4-hour deep dives. Free and famously good.</li>

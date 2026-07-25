@@ -62,7 +62,7 @@ interface Tier {
 
 interface Provider {
   name: string;
-  type: 'Cable' | 'Fiber' | 'DSL' | '5G Home' | 'Satellite' | 'Fixed Wireless' | 'Municipal';
+  type: 'Cable' | 'Fiber' | 'DSL' | 'Cable / Fiber' | 'DSL / Fiber' | '5G Home' | 'Satellite' | 'Fixed Wireless' | 'Municipal';
   tiers: string;
   dataCap: string;
   contract: string;

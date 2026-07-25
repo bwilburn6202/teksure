@@ -1,6 +1,6 @@
 import { useState, useMemo, useEffect } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
-import { Search, Monitor, Apple, Lightbulb, Sparkles, Bot, Clock, CheckCircle2, ShieldCheck, BookOpen, Phone, Heart, LayoutList, LayoutGrid, Wifi, CreditCard, Tv, MessageSquare, ArrowRightLeft, Globe, Landmark, EyeOff, Building2, ShoppingCart, Cpu, Wrench, Briefcase, Shield, KeyRound, Video, PiggyBank, Home, GraduationCap, Star, Flame, ArrowRight, ArrowLeft, TrendingUp, Brain, MessageCircle, type LucideIcon } from 'lucide-react';
+import { Search, Monitor, Apple, Lightbulb, Sparkles, Bot, Clock, CheckCircle2, ShieldCheck, BookOpen, Phone, Heart, LayoutList, LayoutGrid, Wifi, CreditCard, Tv, MessageSquare, ArrowRightLeft, Globe, Landmark, EyeOff, Building2, ShoppingCart, Cpu, Wrench, Briefcase, Shield, KeyRound, Video, PiggyBank, Home, GraduationCap, Star, Flame, ArrowRight, ArrowLeft, TrendingUp, Brain, MessageCircle, Compass, type LucideIcon } from 'lucide-react';
 import { Input } from '@/components/ui/input';
 import { Badge } from '@/components/ui/badge';
 import { Button } from '@/components/ui/button';
@@ -44,6 +44,7 @@ const categoryIcons: Record<GuideCategory, typeof Monitor> = {
   'tech-explained': Cpu,
   'troubleshooting': Wrench,
   'work-from-home': Briefcase,
+  travel: Compass,
 };
 
 const categoryTints: Partial<Record<GuideCategory, string>> = {
@@ -522,8 +523,8 @@ const Guides = () => {
           '@type': 'CollectionPage',
           name: 'TekSure Technology Guides',
           description: 'Free step-by-step technology guides written in plain language for everyday people.',
-          url: 'https://teksure.com/guides',
-          isPartOf: { '@type': 'WebSite', name: 'TekSure', url: 'https://teksure.com' },
+          url: 'https://www.teksure.com/guides',
+          isPartOf: { '@type': 'WebSite', name: 'TekSure', url: 'https://www.teksure.com' },
           numberOfItems: guides.length,
         }}
       />

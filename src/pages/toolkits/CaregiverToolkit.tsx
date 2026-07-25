@@ -32,6 +32,7 @@ import {
   BookOpen,
   Landmark,
   ShieldAlert,
+  Car,
   type LucideIcon,
 } from 'lucide-react';
 import { Navbar } from '@/components/layout/Navbar';
@@ -411,24 +412,28 @@ const hardConversations: Array<{
 }> = [
   {
     topic: 'The driving conversation',
+    icon: Car,
     intro: "Start from love and specifics, not from a verdict.",
     script:
       '"Dad, I want to talk about driving, and I want you to know I\'m not telling you to stop. I saw the side-swipe on the garage and the missed turn last Sunday, and I\'m worried. Can we get a fresh driving evaluation — an occupational therapist does them, it\'s about an hour — and then we\'ll decide together what the right next step looks like? I want you keeping your independence safely."',
   },
   {
     topic: "Talking about the finances",
+    icon: Wallet,
     intro: 'Money is identity. Approach it as a partnership, not a takeover.',
     script:
       '"Mom, I\'d like to help with the bills — not take them over. Can you walk me through how you pay things so I can be a backup if anything ever happened? If it\'s okay, I\'d love to be a view-only on your checking account so I can catch anything weird early. You stay in charge. I only want to have your back."',
   },
   {
     topic: 'Where do you want to live when...',
+    icon: Home,
     intro: 'Ask before the decision is forced on everyone.',
     script:
       '"I don\'t want to wait until something happens to talk about this. If one day the stairs got hard, or the driving got hard, where would you most want to be? Your house with help? Closer to me? A community with other people around? There are no wrong answers. I want to know what you want so we can plan for it together."',
   },
   {
     topic: 'When Mom and Dad disagree',
+    icon: Users,
     intro: 'Hold both truths. Do not referee.',
     script:
       '"I hear Dad wants to stay in the house. I hear Mom is exhausted and scared. Both of those things are real, and both of you matter. Can we get a geriatric care manager involved for one assessment — someone neutral who can lay out the options? Whatever we do next, I want both of you to feel heard."',

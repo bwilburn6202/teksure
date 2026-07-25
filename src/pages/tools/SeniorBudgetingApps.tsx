@@ -13,7 +13,7 @@ export default function SeniorBudgetingApps() {
         <div className="text-center mb-8">
           <PiggyBank className="w-14 h-14 text-primary mx-auto mb-3" />
           <h1 className="text-4xl font-bold mb-2">Budgeting Apps</h1>
-          <p className="text-lg text-muted-foreground">Track every dollar, simply.</p>
+          <p className="text-lg text-muted-foreground">Track every dollar, without the hassle.</p>
         </div>
         <div className="space-y-4">
           <Card><CardContent className="p-6"><h2 className="text-xl font-semibold mb-2">1. Rocket Money</h2><p>Free version cancels unused subscriptions. Spots fees you didn't know about.</p></CardContent></Card>

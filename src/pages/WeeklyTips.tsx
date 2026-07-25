@@ -132,7 +132,7 @@ export default function WeeklyTips() {
     if (email.trim()) setSubscribed(true);
   };
 
-  const shareText = `I read this week\u2019s tech tips on TekSure and thought of you. Five quick, practical tips for ${weekRange}:\n\nhttps://teksure.com/this-week${
+  const shareText = `I read this week\u2019s tech tips on TekSure and thought of you. Five quick, practical tips for ${weekRange}:\n\nhttps://www.teksure.com/this-week${
     requested ? `?week=${isoLabel(viewing.year, viewing.week)}` : ''
   }`;
 

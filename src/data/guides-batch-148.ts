@@ -37,7 +37,7 @@ On iPhone, after you tap, a small sun icon appears next to the focus square. Sli
 
 **Turn on the camera grid to straighten your shots**
 
-The rule of thirds is a photography principle that says a photo looks more balanced when the main subject sits on one of the lines dividing the frame into thirds — rather than dead center. You do not need to memorize the theory; you just need to turn on the grid overlay in your camera settings, and the lines appear right on your viewfinder.
+The rule of thirds is a photography principle that says a photo looks more balanced when the main subject sits on one of the lines dividing the frame into thirds — rather than dead center. You do not need to memorize the theory; you need to turn on the grid overlay in your camera settings, and the lines appear right on your viewfinder.
 
 On iPhone: open Settings, scroll down and tap Camera, then turn on Grid.
 On Android (Samsung): open the Camera app, tap the gear icon (Settings), and turn on Grid lines. On Google Pixel: open Camera, tap the arrow or settings icon, and look for Grid type.

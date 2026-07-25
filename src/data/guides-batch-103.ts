@@ -8,7 +8,7 @@ export const guidesBatch103: Guide[] = [
     slug: `qr-codes-scanning-guide`,
     title: "How to Use QR Codes (They're Everywhere Now)",
     excerpt: "QR codes are those square black-and-white patterns you see everywhere — restaurants, stores, parking meters, TV ads. Here's how to scan them safely with your phone, what happens when you do, and how to make your own.",
-    category: 'basics',
+    category: 'essential-skills',
     tags: ['QR code', 'scanning', 'iPhone', 'Android', 'safety', 'payments', 'beginner'],
     readTime: '8 min',
     thumbnailEmoji: '📱',
@@ -38,7 +38,7 @@ export const guidesBatch103: Guide[] = [
       },
       {
         title: 'What happens when you scan a QR code',
-        content: 'When you scan a QR code, your phone reads the information stored in the pattern and shows you what it found. In most cases, it shows a website address and asks if you want to open it. Here is what to expect in different situations:\n\nRestaurant menu — Your phone opens a webpage showing the restaurant\'s menu. You can scroll through it, zoom in, and browse just like any website.\n\nPayment — The code opens a payment page where you enter your amount or confirm a purchase. You are not charged anything just by scanning — you have to actively complete the payment.\n\nWiFi — Some QR codes connect you to a WiFi network automatically. Your phone will ask you to confirm before connecting.\n\nContact information — The code may offer to add someone\'s name, phone number, and email to your contacts. You tap "Add" to save it.\n\nApp download — Some codes take you to the App Store or Google Play Store to download an app. Nothing installs automatically — you still have to tap "Download" or "Install."\n\nThe most important thing to remember: scanning a QR code does not automatically do anything dangerous. It simply shows you information, and you choose what to do next. You always have a chance to review before tapping.',
+        content: 'When you scan a QR code, your phone reads the information stored in the pattern and shows you what it found. In most cases, it shows a website address and asks if you want to open it. Here is what to expect in different situations:\n\nRestaurant menu — Your phone opens a webpage showing the restaurant\'s menu. You can scroll through it, zoom in, and browse just like any website.\n\nPayment — The code opens a payment page where you enter your amount or confirm a purchase. You are not charged anything just by scanning — you have to actively complete the payment.\n\nWiFi — Some QR codes connect you to a WiFi network automatically. Your phone will ask you to confirm before connecting.\n\nContact information — The code may offer to add someone\'s name, phone number, and email to your contacts. You tap "Add" to save it.\n\nApp download — Some codes take you to the App Store or Google Play Store to download an app. Nothing installs automatically — you still have to tap "Download" or "Install."\n\nThe most important thing to remember: scanning a QR code does not automatically do anything dangerous. It shows you information, and you choose what to do next. You always have a chance to review before tapping.',
       },
       {
         title: 'Safety tips for scanning QR codes',
@@ -53,7 +53,7 @@ export const guidesBatch103: Guide[] = [
       {
         title: 'QR codes for payments',
         content: 'QR codes have become a popular way to pay for things, especially at farmers markets, small businesses, food trucks, and charity events.\n\nVenmo, PayPal, and Cash App — If someone asks you to "scan to pay," they are usually showing you a QR code linked to their Venmo, PayPal, or Cash App account. Open the payment app on your phone, tap the scan icon (usually looks like a camera or QR code symbol), point it at their code, enter the amount, and confirm. The money goes directly to them.\n\nApple Pay and Google Pay — Some stores have QR codes at the register instead of tap-to-pay terminals. If you have Apple Pay or Google Pay set up on your phone, you can scan the store\'s QR code to pay. The store\'s payment system tells your phone the amount, and you confirm with Face ID, fingerprint, or your passcode.\n\nParking and transit — Many cities now use QR codes on parking meters and transit stations. Scan the code, enter your license plate or transit details, and pay right from your phone.\n\nThe same safety rules apply: only scan QR codes from sources you trust, check that the payment amount looks correct before confirming, and never send money to someone you do not know based on a random QR code.',
-        tip: 'At farmers markets or small vendor booths, it is normal to pay by scanning a QR code linked to Venmo or similar apps. Just make sure the name that appears in the app matches the vendor you are paying — this confirms the code belongs to the right person.',
+        tip: 'At farmers markets or small vendor booths, it is normal to pay by scanning a QR code linked to Venmo or similar apps. Make sure the name that appears in the app matches the vendor you are paying — this confirms the code belongs to the right person.',
       },
       {
         title: 'Troubleshooting: QR code won\'t scan',

@@ -157,27 +157,27 @@ export default function KnowledgeBase() {
 
   const loadData = useCallback(async () => {
     const [{ count: documents }, { count: concepts }, { count: outputs }, { count: manualSources }, { data: outputRows }, { data: manualRows }, { data: documentRows }, { data: conceptRows }] = await Promise.all([
-      supabase.from('knowledge_documents' as any).select('*', { head: true, count: 'exact' }),
-      supabase.from('knowledge_concepts' as any).select('*', { head: true, count: 'exact' }),
-      supabase.from('knowledge_outputs' as any).select('id', { head: true, count: 'exact' }),
-      supabase.from('knowledge_manual_sources' as any).select('*', { head: true, count: 'exact' }),
+      supabase.from('knowledge_documents').select('*', { head: true, count: 'exact' }),
+      supabase.from('knowledge_concepts').select('*', { head: true, count: 'exact' }),
+      supabase.from('knowledge_outputs').select('id', { head: true, count: 'exact' }),
+      supabase.from('knowledge_manual_sources').select('*', { head: true, count: 'exact' }),
       supabase
-        .from('knowledge_outputs' as any)
+        .from('knowledge_outputs')
         .select('id, title, output_type, markdown, source_document_ids, created_at')
         .order('created_at', { ascending: false })
         .limit(6),
       supabase
-        .from('knowledge_manual_sources' as any)
+        .from('knowledge_manual_sources')
         .select('id, title, source_type, original_filename, source_url, content, created_at')
         .order('created_at', { ascending: false })
         .limit(8),
       supabase
-        .from('knowledge_documents' as any)
+        .from('knowledge_documents')
         .select('id, title, source_url, summary, keywords, markdown, updated_at')
         .order('updated_at', { ascending: false })
         .limit(24),
       supabase
-        .from('knowledge_concepts' as any)
+        .from('knowledge_concepts')
         .select('id, title, summary, markdown, source_document_ids, updated_at')
         .order('updated_at', { ascending: false })
         .limit(24),
@@ -327,7 +327,7 @@ export default function KnowledgeBase() {
 
   const deleteSource = async (sourceId: string) => {
     setDeletingSourceId(sourceId);
-    const { error } = await supabase.from('knowledge_manual_sources' as any).delete().eq('id', sourceId);
+    const { error } = await supabase.from('knowledge_manual_sources').delete().eq('id', sourceId);
     setDeletingSourceId(null);
     if (error) {
       toast.error(error.message);

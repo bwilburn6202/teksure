@@ -39,7 +39,7 @@ export const guidesBatch13: Guide[] = [
       },
       {
         title: `What to do if the technology isn't working`,
-        content: `If you can't get the video to work, most doctors can switch to a phone-only audio call — just call the office directly. If your internet connection is weak and the video keeps freezing, try moving closer to your WiFi router or asking family members to pause streaming video in your home during the visit. Many telehealth platforms also have a "Call me instead" option that lets you dial in by phone.`,
+        content: `If you can't get the video to work, most doctors can switch to a phone-only audio call — call the office directly. If your internet connection is weak and the video keeps freezing, try moving closer to your WiFi router or asking family members to pause streaming video in your home during the visit. Many telehealth platforms also have a "Call me instead" option that lets you dial in by phone.`,
         tip: `Medicare covers telehealth through December 2026 due to the Consolidated Appropriations Act, 2026. Confirm with your doctor's office whether your specific visit is covered before scheduling.`,
       },
     ],
@@ -405,7 +405,7 @@ export const guidesBatch13: Guide[] = [
   {
     slug: 'how-to-use-siri-iphone',
     title: 'How to Use Siri to Control Your iPhone With Your Voice',
-    excerpt: "Siri is Apple's built-in voice assistant — just say 'Hey Siri' and ask it anything, set reminders, make calls, or send texts hands-free.",
+    excerpt: "Siri is Apple's built-in voice assistant — say 'Hey Siri' and ask it anything, set reminders, make calls, or send texts hands-free.",
     category: 'tips-tricks',
     tags: ['siri', 'voice assistant', 'iphone', 'hands-free', 'accessibility'],
     readTime: '4 min',
@@ -490,7 +490,7 @@ export const guidesBatch13: Guide[] = [
       },
       {
         title: 'Share photos and videos to a smart TV without full screen mirroring',
-        content: `If you just want to watch a specific video or show a photo rather than mirror your whole screen, open the Photos app, select the photo or video, tap the Share button, and look for your TV's name in the sharing options (it may show as "Play on TV" or your TV's name). For videos, many smart TVs support "casting" from the YouTube or Netflix app directly — tap the cast icon (a rectangle with a WiFi symbol) in the app.`,
+        content: `If you want to watch a specific video or show a photo rather than mirror your whole screen, open the Photos app, select the photo or video, tap the Share button, and look for your TV's name in the sharing options (it may show as "Play on TV" or your TV's name). For videos, many smart TVs support "casting" from the YouTube or Netflix app directly — tap the cast icon (a rectangle with a WiFi symbol) in the app.`,
       },
       {
         title: `What to do if AirPlay doesn't show your TV`,
@@ -543,7 +543,7 @@ export const guidesBatch13: Guide[] = [
     thumbnailEmoji: '',
     publishedAt: '2026-04-19',
     difficulty: 'Beginner',
-    body: "Apps you downloaded once and never use again take up storage space on your phone and can even drain your battery in the background. Deleting unused apps is one of the quickest ways to free up space. Don't worry — deleting an app doesn't delete your account with that service. If you want to use it again, just download it from the App Store or Google Play.",
+    body: "Apps you downloaded once and never use again take up storage space on your phone and can even drain your battery in the background. Deleting unused apps is one of the quickest ways to free up space. Don't worry — deleting an app doesn't delete your account with that service. If you want to use it again, download it from the App Store or Google Play.",
     steps: [
       {
         title: 'Delete an app on iPhone',

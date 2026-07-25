@@ -292,7 +292,7 @@ export default function MedicareCostEstimator() {
 
       <main className="flex-1">
         <PageBreadcrumb
-          items={[
+          segments={[
             { label: 'Tools', href: '/tools' },
             { label: 'Medicare Cost Estimator' },
           ]}

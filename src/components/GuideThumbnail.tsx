@@ -2,6 +2,7 @@ import {
   AppWindow,
   Apple,
   BookOpen,
+  Compass,
   Bot,
   Brain,
   Building2,
@@ -55,6 +56,7 @@ const ICON_BY_CATEGORY: Record<GuideCategory, LucideIcon> = {
   "tech-explained": Monitor,
   "troubleshooting": Wrench,
   "work-from-home": Home,
+  travel: Compass,
 };
 
 interface GuideThumbnailProps {

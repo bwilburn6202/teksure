@@ -125,6 +125,7 @@ export const categoryAccent: Record<GuideCategory, CategoryAccent> = {
   'tech-explained': MIST,
   'troubleshooting': ROSE,
   'work-from-home': OCEAN,
+  travel: SKY,
 };
 
 /** Default accent used when no category is in scope (Violet Haze — TekSure's primary accent). */

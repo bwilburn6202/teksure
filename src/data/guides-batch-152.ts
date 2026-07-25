@@ -137,7 +137,7 @@ After you unfriend someone, they can still send you a friend request again in th
 
 Blocking is a stronger action. When you block someone, they cannot see your profile at all, cannot find you by searching for your name, cannot send you messages, and cannot tag you in posts or photos. You will also be unable to see their profile. Blocking goes both ways.
 
-The person you blocked will not receive a notification, but if they try to find your profile, they simply will not be able to. It will appear as if you do not exist on Facebook.
+The person you blocked will not receive a notification, but if they try to find your profile, they will not be able to. It will appear as if you do not exist on Facebook.
 
 You can unblock someone later, but there is a 48-hour waiting period before you can re-block them again. Also note that unblocking someone does not automatically re-friend them — you would need to send a new friend request if you wanted to reconnect.
 

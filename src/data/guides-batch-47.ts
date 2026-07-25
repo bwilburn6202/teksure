@@ -102,7 +102,7 @@ You can use Check In for short trips or longer journeys. The feature asks for yo
     thumbnailEmoji: ``,
     publishedAt: `2026-04-19`,
     difficulty: `Beginner`,
-    body: `Journal is a free app from Apple that comes pre-installed on iPhones running iOS 17.2 or later. It's a private diary for your phone — a place to record your thoughts, save meaningful photos, log what you've been listening to, or simply write down how your day went.
+    body: `Journal is a free app from Apple that comes pre-installed on iPhones running iOS 17.2 or later. It's a private diary for your phone — a place to record your thoughts, save meaningful photos, log what you've been listening to, or write down how your day went.
 
 What makes Journal different from a standard notes app is that it offers personalized suggestions. Based on what's already on your phone — recent photos, songs you've played, places you've visited, or workouts you've completed — Journal will suggest prompts to help you start writing. You're never forced to write about those suggestions; they're just there to spark ideas.
 
@@ -151,7 +151,7 @@ Journaling has real benefits for mental health — writing down what's on your m
 
 This feature works during FaceTime calls and also in third-party apps like Zoom or Microsoft Teams when you're on a supported iPhone.
 
-The reactions are triggered by hand gestures. For example, hold up a single thumb for a thumbs-up emoji effect, or make a double thumbs-up for confetti. A single heart gesture (index finger and thumb making a shape) triggers heart animations. These don't require you to press any buttons — just hold the gesture steady for a moment and FaceTime does the rest.
+The reactions are triggered by hand gestures. For example, hold up a single thumb for a thumbs-up emoji effect, or make a double thumbs-up for confetti. A single heart gesture (index finger and thumb making a shape) triggers heart animations. These don't require you to press any buttons — hold the gesture steady for a moment and FaceTime does the rest.
 
 You can also tap the effects button during a call to manually choose from a list of reactions rather than using gestures. Some effects include laser beams, fireworks, rain, and confetti.
 
@@ -441,7 +441,7 @@ Beyond tracking refunds, IRS2Go also lets you:
 - Find free tax preparation help near you (including IRS Free File)
 - Sign up for IRS news and tax tips by email
 
-The app is completely free and does not require creating an account to check a refund. You just need your Social Security number or ITIN, your filing status, and the exact refund amount from your return.`,
+The app is completely free and does not require creating an account to check a refund. You need your Social Security number or ITIN, your filing status, and the exact refund amount from your return.`,
     steps: [
       {
         title: `Download IRS2Go`,
@@ -628,7 +628,7 @@ This feature is available on most Android phones, though the way you activate it
 
 Once enabled, you activate one-handed mode in real time by swiping down on the bottom edge of the screen (on many phones) or by double-tapping the home button area. The screen content shifts down to fill only the bottom half or two-thirds of the display, and you can move it to the left or right side depending on which hand you're using.
 
-Tap anywhere in the empty upper area to return to full-screen mode, or tap the X button if one appears. You can also just use the phone normally in apps and it will usually exit one-handed mode automatically.
+Tap anywhere in the empty upper area to return to full-screen mode, or tap the X button if one appears. You can also use the phone normally in apps and it will usually exit one-handed mode automatically.
 
 One-handed mode is especially helpful when you're carrying something in the other hand, using public transportation, or have limited mobility in one hand. It doesn't affect the way apps work — it just shifts where on the screen everything appears.`,
     steps: [
@@ -760,7 +760,7 @@ Here's what you can do with the USB-C port on your iPhone:
   {
     slug: `google-tv-remote-app-guide`,
     title: `How to Use the Google TV App as a Remote Control`,
-    excerpt: `If you lose your Google TV remote — or just want to control your TV from your phone — the free Google TV app turns your phone into a full remote.`,
+    excerpt: `If you lose your Google TV remote — or want to control your TV from your phone — the free Google TV app turns your phone into a full remote.`,
     category: `entertainment`,
     tags: [`google tv`, `remote control`, `chromecast`, `android tv`, `streaming`, `app`],
     readTime: `4 min`,
@@ -769,7 +769,7 @@ Here's what you can do with the USB-C port on your iPhone:
     difficulty: `Beginner`,
     body: `Google TV is the operating system used on Chromecast with Google TV devices and many smart TVs from Sony, TCL, and other brands. If you have one of these devices, the free Google TV app for iPhone or Android can turn your phone into a complete remote control — including a keyboard for typing searches, which is much faster than hunting through letters on screen with the physical remote.
 
-The app works over your home Wi-Fi network, so your phone and TV just need to be connected to the same network. Once they're paired, you can use the app to:
+The app works over your home Wi-Fi network, so your phone and TV need to be connected to the same network. Once they're paired, you can use the app to:
 
 - Navigate menus with a touchpad (swipe and tap, just like a trackpad)
 - Open Netflix, YouTube, Disney+, or any other app on your TV

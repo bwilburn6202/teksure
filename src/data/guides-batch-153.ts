@@ -278,7 +278,7 @@ Apple Pay is built into every iPhone — you do not need to download anything. Y
           'At a sit-down restaurant, the server may bring a portable payment terminal to your table. The same steps apply — double-click the side button on iPhone or hold your unlocked Android near the terminal. The server does not need to touch your phone. At a drive-through, the payment window will have a terminal on an arm or ledge. Hold your phone out the window close to the terminal screen. You may need to lean slightly, but most drive-through terminals are positioned to accommodate this. If the cashier seems unfamiliar with it, you can say "I\'d like to use tap to pay" and they can direct you.',
         tip: 'You can still leave a tip when paying with your phone. The terminal will ask you to select a tip amount on its own touchscreen before or after the phone payment step.',
         warning:
-          'If a terminal does not accept contactless payment, you will see a message or the terminal simply will not respond. In that case, pay with your physical card as a backup. Not every store has upgraded its equipment yet.',
+          'If a terminal does not accept contactless payment, you will see a message or the terminal will not respond. In that case, pay with your physical card as a backup. Not every store has upgraded its equipment yet.',
       },
       {
         title: 'Check your payment history and remove a card',

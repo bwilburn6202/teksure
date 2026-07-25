@@ -96,7 +96,7 @@ export const guidesBatch19: Guide[] = [
     thumbnailEmoji: '',
     publishedAt: '2026-04-19',
     difficulty: 'Beginner',
-    body: `You receive an email from Google, Facebook, your bank, or another service: "We noticed a new sign-in to your account" or "Suspicious activity detected." Your heart rate goes up. Is someone in your account? Should you panic?\n\nMost of the time, these alerts are triggered by routine activity that just looks unusual — signing in on a new device, traveling to a different city, or using a different browser. But sometimes they indicate a real intrusion, and knowing how to tell the difference — and what to do in each case — can protect your accounts.\n\nThis guide walks through how to respond to login alerts from the most common services.`,
+    body: `You receive an email from Google, Facebook, your bank, or another service: "We noticed a new sign-in to your account" or "Suspicious activity detected." Your heart rate goes up. Is someone in your account? Should you panic?\n\nMost of the time, these alerts are triggered by routine activity that looks unusual — signing in on a new device, traveling to a different city, or using a different browser. But sometimes they indicate a real intrusion, and knowing how to tell the difference — and what to do in each case — can protect your accounts.\n\nThis guide walks through how to respond to login alerts from the most common services.`,
     steps: [
       {
         title: 'Read the alert carefully to identify what happened',
@@ -364,7 +364,7 @@ export const guidesBatch19: Guide[] = [
     thumbnailEmoji: '🆘',
     publishedAt: '2026-04-19',
     difficulty: 'Beginner',
-    body: `Emergencies — hurricanes, wildfires, floods, earthquakes, or a sudden medical crisis — can happen without warning. In those moments, having critical information accessible on your phone and backed up online can mean the difference between a manageable situation and a chaotic one.\n\nA digital emergency preparedness plan is simply a collection of important information, contacts, documents, and instructions stored in a way that is accessible even if you cannot be home or cannot think clearly under stress. The goal is to have everything important available from your phone, even away from home.\n\nThis guide walks through what to include and the best way to organize and store it.`,
+    body: `Emergencies — hurricanes, wildfires, floods, earthquakes, or a sudden medical crisis — can happen without warning. In those moments, having critical information accessible on your phone and backed up online can mean the difference between a manageable situation and a chaotic one.\n\nA digital emergency preparedness plan is a collection of important information, contacts, documents, and instructions stored in a way that is accessible even if you cannot be home or cannot think clearly under stress. The goal is to have everything important available from your phone, even away from home.\n\nThis guide walks through what to include and the best way to organize and store it.`,
     steps: [
       {
         title: 'Save emergency contacts and medical information',
@@ -571,7 +571,7 @@ export const guidesBatch19: Guide[] = [
         title: 'Check streaming services for senior or AARP discounts',
         content:
           "Streaming discounts change frequently — always check the current offer. Known discounts to research: Paramount+ (AARP discount for members), Peacock Premium (AARP negotiated rate), SiriusXM radio (55+ listener pricing available via phone), The New York Times digital subscription (student and senior rates available — call 1-800-698-4637 and ask), and Washington Post digital (call and ask for a senior rate). Many discounts require calling customer service and specifically asking — they are not always visible on the website.",
-        tip: "Quick Tip: When calling any subscription service, simply say: \"I'm a senior over 55 — do you have any discounts or promotions available for me?\" You may be surprised how often the answer is yes.",
+        tip: "Quick Tip: When calling any subscription service, say: \"I'm a senior over 55 — do you have any discounts or promotions available for me?\" You may be surprised how often the answer is yes.",
       },
       {
         title: 'Find free and reduced-cost tech resources through nonprofits',
@@ -652,7 +652,7 @@ export const guidesBatch19: Guide[] = [
       {
         title: `Share ETA with people who don't have iPhones`,
         content:
-          "If the recipient uses Android or doesn't have iMessage: Apple Maps sends a regular SMS text with a link. They can tap the link to open a webpage showing your location on a map that updates approximately every 2-3 minutes. The experience is slightly less seamless than iMessage sharing, but still provides real-time tracking.",
+          "If the recipient uses Android or doesn't have iMessage: Apple Maps sends a regular SMS text with a link. They can tap the link to open a webpage showing your location on a map that updates approximately every 2-3 minutes. The experience is slightly less smooth than iMessage sharing, but still provides real-time tracking.",
       },
       {
         title: 'Add frequent contacts as Favorites for quick ETA sharing',
@@ -765,7 +765,7 @@ export const guidesBatch19: Guide[] = [
       {
         title: 'Remove apps you never use from the Dock',
         content:
-          "To remove an app from the Dock: right-click the icon → Options → \"Remove from Dock.\" Or simply drag the icon away from the Dock and hold it for a second — a \"Remove\" badge appears and the icon disappears when you let go (with a satisfying poof). This does not uninstall the app — it just removes the shortcut from the Dock. The app is still in your Applications folder.",
+          "To remove an app from the Dock: right-click the icon → Options → \"Remove from Dock.\" Or drag the icon away from the Dock and hold it for a second — a \"Remove\" badge appears and the icon disappears when you let go (with a satisfying poof). This does not uninstall the app — it just removes the shortcut from the Dock. The app is still in your Applications folder.",
         tip: "Quick Tip: A clean Dock with only 8-12 of your most-used apps is much easier to navigate than a crowded Dock with 30 icons. Remove anything you haven't clicked in a month.",
       },
       {

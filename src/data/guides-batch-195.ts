@@ -136,7 +136,7 @@ export const guidesBatch195: Guide[] = [
     slug: "how-to-check-return-window-receipt",
     title: "How to Check the Return Window Before Throwing a Receipt Away",
     excerpt: "Find the return deadline printed on every receipt so you do not miss the window for store credit, cash back, or an exchange.",
-    category: "shopping",
+    category: "buying-guides",
     tags: ["returns", "receipts", "shopping", "store policy", "consumer rights"],
     readTime: "5 min",
     thumbnailEmoji: "↩️",

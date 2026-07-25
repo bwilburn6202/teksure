@@ -148,7 +148,7 @@ When you set app limits, your iPhone will ask if you want to set a Screen Time p
 
 **This is a tool, not a punishment**
 
-Screen Time is a wellness feature. Think of it as a gentle tap on the shoulder that says, "You have been on this app for a while." Many people find that simply seeing the usage report is enough to help them make more intentional choices about how they spend their time.
+Screen Time is a wellness feature. Think of it as a gentle tap on the shoulder that says, "You have been on this app for a while." Many people find that seeing the usage report is enough to help them make more intentional choices about how they spend their time.
 
 **Quick Tip:** The Screen Time report resets every Sunday at midnight, so the best time to review your weekly usage is on a Sunday before it resets.`,
     steps: [

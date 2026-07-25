@@ -5,7 +5,7 @@ import { SEOHead } from '@/components/SEOHead';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
-import { Shield, Smartphone, Monitor, Gamepad2, Tv, Router, ExternalLink, CheckCircle, ArrowRight, ArrowLeft } from 'lucide-react';
+import { Shield, Smartphone, Monitor, Gamepad2, Tv, Router, ExternalLink, CheckCircle, Circle, ArrowRight, ArrowLeft } from 'lucide-react';
 
 interface Platform {
   id: string;

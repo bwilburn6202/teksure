@@ -129,7 +129,7 @@ Be cautious if a buyer offers to pay more than your asking price and asks you to
     publishedAt: '2026-05-06',
     lastVerifiedAt: '2026-05-06',
     difficulty: 'Beginner',
-    body: `Every photo on your phone exists in one place: your phone. If that phone is lost, stolen, damaged, or simply replaced, those photos can vanish forever. Google Photos solves this problem by automatically copying every photo to the internet (called "the cloud") as soon as you take it.
+    body: `Every photo on your phone exists in one place: your phone. If that phone is lost, stolen, damaged, or replaced, those photos can vanish forever. Google Photos solves this problem by automatically copying every photo to the internet (called "the cloud") as soon as you take it.
 
 Once backup is on, your photos are safe even if something happens to your phone. You can also view them from any other device — a tablet, a computer, even a friend's phone — by signing in to your Google account.
 

@@ -22,7 +22,6 @@ import { guides } from '../data/guides';
 const BANNED_PHRASES = [
   "it's easy",
   'simply',
-  'just',
   'obviously',
   'leverage',
   'utilize',
@@ -30,6 +29,24 @@ const BANNED_PHRASES = [
   'cutting-edge',
   'pro tip',
 ];
+
+/**
+ * "just" is banned for its *minimizing* sense — "just tap Settings" tells a
+ * stuck reader the thing they cannot do is trivial. The ordinary English senses
+ * ("just in case", "just like", "just one", "just below") carry real meaning
+ * and are not a voice problem, so we only flag "just" when it directly precedes
+ * an instruction verb. Keep this list in sync with
+ * scripts/fix-minimizing-just.mjs.
+ */
+const MINIMIZING_JUST = new RegExp(
+  '\\bjust (tap|taps|click|clicks|press|presses|open|opens|go|goes|type|types|' +
+  'select|selects|choose|chooses|say|says|ask|asks|call|calls|visit|visits|' +
+  'head|look|looks|turn|turns|plug|plugs|hold|holds|swipe|swipes|drag|drags|' +
+  'scroll|scrolls|enter|enters|download|downloads|install|installs|follow|follows|' +
+  'check|checks|use|uses|set|sets|add|adds|need|needs|want|wants|leave|leaves|' +
+  'wait|waits|keep|keeps|make|makes|take|takes|sign|signs|answer|answers|' +
+  'delete|deletes|restart|restarts|unplug|unplugs|repeat|repeats|copy|paste|save|saves)\\b'
+);
 
 /** Guides published on or after this date must pass the banned-word scan. */
 const ENFORCEMENT_CUTOVER = '2026-04-19';
@@ -41,9 +58,35 @@ const AUTHOR_FIELDS: Array<(g: typeof guides[0]) => string[]> = [
   g => (g.steps ?? []).flatMap(s => [s.title ?? '', s.content ?? '', s.tip ?? '', s.warning ?? '']),
 ];
 
+/**
+ * Real product names that happen to contain a banned word. We cannot rename
+ * Google Fi's "Simply Unlimited" plan or TaxSlayer's "Simply Free" tier, so
+ * these are masked out before scanning.
+ */
+const PRODUCT_NAME_EXCEPTIONS = [
+  'simply unlimited',
+  'simply free',
+  'simply piano',
+  'simplygo',
+  'simplythick',
+  'simplisafe',
+];
+
+/**
+ * "leverage" is banned as corporate jargon ("leverage our platform"). The
+ * ordinary noun — bargaining power — is plain English and stays.
+ */
+const NOUN_SENSE_EXCEPTIONS = ['legal leverage', 'leverage with', 'leverage over', 'leverage against'];
+
 function scan(text: string): string[] {
   const hits: string[] = [];
-  const haystack = text.toLowerCase();
+  let haystack = text.toLowerCase();
+  for (const name of [...PRODUCT_NAME_EXCEPTIONS, ...NOUN_SENSE_EXCEPTIONS]) {
+    // Mask both the spaced and hyphenated forms (URLs use "simply-piano").
+    for (const variant of [name, name.replace(/ /g, '-')]) {
+      haystack = haystack.split(variant).join('\u0000');
+    }
+  }
   for (const phrase of BANNED_PHRASES) {
     // Word-boundary match. Phrase may contain spaces so we anchor on boundaries
     // at the phrase edges rather than within.
@@ -51,6 +94,7 @@ function scan(text: string): string[] {
     const re = new RegExp(`\\b${escaped}\\b`);
     if (re.test(haystack)) hits.push(phrase);
   }
+  if (MINIMIZING_JUST.test(haystack)) hits.push('just (minimizing)');
   return hits;
 }
 

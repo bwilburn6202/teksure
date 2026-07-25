@@ -126,7 +126,7 @@ Watch a walkthrough: search YouTube for "Visual Intelligence iPhone 17 tutorial"
     publishedAt: '2026-05-19',
     lastVerifiedAt: '2026-05-19',
     difficulty: 'Beginner',
-    body: `An Amazon Echo Show is a smart speaker with a screen. It is one of the best technology gifts for grandparents because video calling on it is dead simple: say "Alexa, call Grandma" and the call starts. No app to open, no password to remember, no PIN to type. The grandparent on the receiving end can just tap a green button or say "Alexa, answer" — they do not even need to know the names of their grandchildren.
+    body: `An Amazon Echo Show is a smart speaker with a screen. It is one of the best technology gifts for grandparents because video calling on it is dead simple: say "Alexa, call Grandma" and the call starts. No app to open, no password to remember, no PIN to type. The grandparent on the receiving end can tap a green button or say "Alexa, answer" — they do not even need to know the names of their grandchildren.
 
 This guide assumes you (the family member helping) are setting up an Echo Show for an older parent or grandparent. The cheapest option is the Echo Show 5 ($90 retail, often $50 on sale). The Echo Show 8 ($150) has a bigger screen and is the sweet spot for video calls. The Echo Show 10 ($250) has a motorized base that follows the person around the room during calls — best for someone who moves around a lot.
 
@@ -317,7 +317,7 @@ Watch a walkthrough: search YouTube for "Google Lens beginner tutorial 2026" —
       },
       {
         title: 'Translate a sign, menu, or label in real time',
-        content: 'Open Google Lens and tap "Translate" at the top. Point your camera at any foreign-language text — a restaurant menu in Italian, a sign in Japanese, a prescription label in Spanish. The translation appears live, overlaid on the original text, in your phone\'s language. You do not even have to take a photo — just hold the camera steady and Google translates as you move. It supports 100+ languages including Arabic, Hebrew, Russian, Mandarin, Korean, and most European languages.',
+        content: 'Open Google Lens and tap "Translate" at the top. Point your camera at any foreign-language text — a restaurant menu in Italian, a sign in Japanese, a prescription label in Spanish. The translation appears live, overlaid on the original text, in your phone\'s language. You do not even have to take a photo — hold the camera steady and Google translates as you move. It supports 100+ languages including Arabic, Hebrew, Russian, Mandarin, Korean, and most European languages.',
         tip: 'Quick Tip: For long documents, take a photo first. Then in the photo view, you can pinch to zoom and read the translation more comfortably than holding the camera up.',
       },
       {
@@ -368,7 +368,7 @@ Watch a walkthrough: search YouTube for "toll road scam text 2026" — AARP Frau
       },
       {
         title: 'Do NOT tap the link or call any number in the text',
-        content: 'Tapping the link does not just take you to a fake website — it can also install tracking pixels that confirm your phone number is active, leading to more scam texts. Calling the number connects you to a scammer who will ask for your "license plate to verify" and "card on file." Just delete the text. If you genuinely think you might owe a toll, look up the toll agency in your state by typing their website directly into your browser. Never trust a link in an unexpected text.',
+        content: 'Tapping the link does not take you to a fake website — it can also install tracking pixels that confirm your phone number is active, leading to more scam texts. Calling the number connects you to a scammer who will ask for your "license plate to verify" and "card on file." Delete the text. If you genuinely think you might owe a toll, look up the toll agency in your state by typing their website directly into your browser. Never trust a link in an unexpected text.',
       },
       {
         title: 'Report the text to your phone provider (free)',

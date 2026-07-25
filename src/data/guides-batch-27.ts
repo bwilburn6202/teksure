@@ -110,7 +110,7 @@ Traditional single routers struggle to cover homes over about 1,500 square feet,
 
 Popular mesh Wi-Fi systems in 2026: Amazon Eero (3-pack covers 5,000 sq ft, ~$130-200), Google Nest WiFi Pro ($200-300), Netgear Orbi (~$200-500 depending on speed tier), and TP-Link Deco (~$100-200).
 
-How mesh differs from a Wi-Fi extender: a standard range extender creates a separate, secondary network with its own network name. Devices must manually switch between networks. Mesh systems create one seamless network — the same password, same network name, and your device switches to the best node automatically without any manual action.
+How mesh differs from a Wi-Fi extender: a standard range extender creates a separate, secondary network with its own network name. Devices must manually switch between networks. Mesh systems create one smooth network — the same password, same network name, and your device switches to the best node automatically without any manual action.
 
 Whether you need mesh Wi-Fi depends on your home: a small apartment or one-story house under 1,000 sq ft with a quality router probably does not need mesh. A two-story home, a home with brick or concrete walls, or a home with outdoor coverage needs often benefit significantly from mesh.
 
@@ -337,7 +337,7 @@ The most impactful fix for most households: physically move the router closer to
     difficulty: 'Beginner',
     body: `Your home router is essentially a small computer that manages all the internet traffic in your home. Like any computer, it benefits from occasional restarts. A restart clears temporary memory, resets connections to your ISP, and often resolves issues like slow speeds, devices unable to connect, and dropped internet connections.
 
-There is an important distinction: restarting is different from resetting. Restarting (also called rebooting) simply powers the router off and back on — your settings and password are preserved. Resetting wipes all settings and returns the router to factory defaults, which is something you typically want to avoid.
+There is an important distinction: restarting is different from resetting. Restarting (also called rebooting) powers the router off and back on — your settings and password are preserved. Resetting wipes all settings and returns the router to factory defaults, which is something you typically want to avoid.
 
 When should you restart your router? When internet seems slow across multiple devices; when specific devices cannot connect to Wi-Fi even though others can; after a power outage or surge; when the router's indicator lights look unusual (wrong colors, blinking rapidly); and as a general monthly maintenance practice.
 
@@ -587,7 +587,7 @@ Setting up a guest network requires logging into your router's admin panel (as d
       },
       {
         title: 'Enable and Name the Guest Network',
-        content: 'Toggle the guest network on. Set a Network Name (SSID) for the guest network — something like "YourName_Guest" or simply "Guest." Keep the name simple and recognizable.',
+        content: 'Toggle the guest network on. Set a Network Name (SSID) for the guest network — something like "YourName_Guest" or "Guest." Keep the name simple and recognizable.',
         tip: 'Choose a name that does not reveal your home address or last name for security. Something like "GuestWifi" works fine.',
       },
       {
@@ -756,7 +756,7 @@ Recovery mode works through Apple's iTunes (on Windows) or Finder (on Mac with m
 
 Always try Update first — it downloads and reinstalls the latest iOS version while preserving your data. Restore is the nuclear option that erases everything, used only when Update fails or when you need to set up the phone fresh.
 
-Entering recovery mode requires a computer and a cable. If you do not have a computer available, you cannot use recovery mode. For iPhones that simply will not turn on or are stuck, a "force restart" (holding specific buttons to hard-restart the phone) is always the first thing to try — it does not require a computer and solves most minor software freezes.`,
+Entering recovery mode requires a computer and a cable. If you do not have a computer available, you cannot use recovery mode. For iPhones that will not turn on or are stuck, a "force restart" (holding specific buttons to hard-restart the phone) is always the first thing to try — it does not require a computer and solves most minor software freezes.`,
     steps: [
       {
         title: 'Try a Force Restart First',
@@ -822,7 +822,7 @@ Your phone shows "Safe mode" in the bottom left corner of the screen when safe m
       },
       {
         title: 'Exit Safe Mode',
-        content: 'Simply restart your phone normally: press and hold the Power button → tap "Restart." Your phone reboots into normal mode with all your apps active.',
+        content: 'Restart your phone normally: press and hold the Power button → tap "Restart." Your phone reboots into normal mode with all your apps active.',
       },
       {
         title: 'Uninstall the Problematic App',

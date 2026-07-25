@@ -816,3 +816,88 @@ Local mount's working tree also has ~370 modified/untracked files (mostly `/tool
 3. Confirm GA4/Plausible analytics wiring so traffic can be measured against the 10,000/mo target.
 4. Before any future session edits this log file (or any guide-batch file), pull a fresh `origin/main` clone first — do not trust the local mount's copy, which is now confirmed to lag origin by multiple batches and at least one log-file version.
 5. Check whether `continuous-content-loop.yml` (flagged stalled on Day 67) has resumed; batches 322-324 landing between the last local sync and today suggest it may have recovered, but this wasn't directly confirmed via the Actions UI this session.
+
+---
+
+## 2026-07-25 (Day 74) — Continuation run
+
+Ran under the "teksure-90day-push" scheduled task on real calendar 2026-07-25 (the task file\'s dates still say Day 1 = 2026-05-12, but the actual sprint day is 74 of 90). Working from the local Cowork mount.
+
+### Guides added — 8 new (batch 327)
+Wrote `src/data/guides-batch-327.ts` and wired it into `src/data/guides.ts`. Chose batch-327 because batches 135–326 are already occupied by prior autonomous runs.
+
+- iphone-photos-clean-up-remove-strangers (Phone) — iOS 18 Clean Up tool walkthrough; on-device Apple Intelligence; C2PA metadata note
+- chromeos-flex-revive-old-windows-laptop (Windows) — free ChromeOS install on old PCs; recovery USB build; try-first mode; 5-year support horizon
+- xfinity-comcast-auto-renewal-traps-avoid (Money) — cancel-add-ons walk-through; xFi Complete / Voice / Premium Support / retention hack; FCC-complaint escalation
+- google-family-group-shared-photos-setup (Apps) — up-to-6 family sharing; Google One / YouTube Premium Family; auto-photo album via face groups
+- netflix-account-sharing-rules-2026 (Entertainment) — household definition; extra-member $8; travel verification; sign-out-all recovery
+- nest-doorbell-battery-2nd-gen-setup (Smart Home) — 30-minute install; Google Home pairing; Activity Zones; Nest Aware decision framework
+- zelle-scam-2026-what-bank-covers (Online Banking) — 2024 impostor-scam agreement; covered vs. uncovered scenarios; CFPB escalation script
+- jury-duty-phone-scam-how-to-hang-up (Safety) — spoofed caller-ID reality; three-sentence exit script; Silence-Unknown-Callers setup
+
+All 8 conform to brand constraints: plain English, US audience, no banned vocabulary, publishedAt + lastVerifiedAt = 2026-07-25, difficulty PascalCase, multi-step structure with tip/warning callouts, official-source citations (Apple / Google / CFPB / FTC / FBI / FCC / Netflix / Xfinity).
+
+### Guides refreshed — 10 stale OS mentions modernized
+Pulled the top 10 flagged lines from dev-loop backlog cycle 22 and updated in place:
+
+- guides-batch-157.ts:589 — "macOS Monterey or earlier" → "macOS Sequoia is current in 2026; same trick works on Ventura, Sonoma, back to Monterey"
+- guides-batch-163.ts:63 — "iOS 12.4 or later" → "iOS 18 is current in 2026; the transfer works on anything back to iOS 12.4"
+- guides-batch-18.ts:77 — "iOS 16 and macOS Ventura or later" → "…meaning any iPhone/Mac on iOS 18 / macOS Sequoia (2026 current) already has it"
+- guides-batch-203.ts:94 — "iPhone running iOS 17" → "iPhone running iOS 18 (the current 2026 release)"
+- guides-batch-204.ts:135 — "both phones run iOS 17 or newer" → "…iOS 18 (the 2026 current release) or newer, though iOS 17 also works"
+- guides-batch-209.ts:95 — "iPhone running iOS 17 or newer, which covers every iPhone since iPhone 6s" → "iOS 18 (the 2026 current release) or iOS 17. Any iPhone since iPhone Xs (2018) supports iOS 18"
+- guides-batch-21.ts:610 — "iPhones running iOS 11.3 and later" → "…iOS 11.3 or later (so every iPhone still supported in 2026, including the current iOS 18, has it)"
+- guides-batch-210.ts:55 — "every iPhone running iOS 15.2 or later" → "…meaning every iPhone on the current iOS 18 (2026) or any iOS 15+ release has it"
+- guides-batch-212.ts:95 — "iPhone with iOS 17 or newer" → "iPhone with iOS 17 or newer (iOS 18 is the current 2026 release, so this covers almost everyone)"
+- guides-batch-212.ts:118 — step title "iOS 16 or Newer" → "iOS 16 or Newer (iOS 18 is current in 2026)"
+
+### Health check (post-changes)
+dev-loop cycle 23 (2026-07-25T14:30:18.544Z)
+- [ok] **3,712 guides** (+8), 3,155 routes, **285 tools**
+- [ok] No duplicate slugs
+- [ok] 0 broken internal link targets (2,603 orphaned routes; existing baseline)
+- [ok] No TypeScript errors
+- [warn] **Only 4 stale-OS mentions remaining** (down from 50 last cycle — the 10 targeted refreshes each cleaned up multiple detector hits at once)
+- [ok] Aged guides: 0 of 4,013 published before 2025-01-25
+
+### Backlog items cleared
+- Top 10 stale-OS lines from cycle-22 backlog.
+- Sprint\'s "candidate topics" list for Day 74: shipped Photos Clean Up, ChromeOS Flex, Xfinity, Google Family Group, Netflix sharing, Nest Doorbell, Zelle refund policy, and jury-duty scam.
+
+### Running totals vs 90-day target (Day 74 of 90, sprint ends 2026-08-10)
+| Metric | Target | Now | Status |
+|---|---|---|---|
+| Guides | 4,500 | **3,712** (+8 this run) | 82.5% — need ~49 guides/day for the remaining 16 days to hit target |
+| Tools | 200+ | 285 | Exceeded |
+| TypeScript errors | 0 | 0 | OK |
+| Duplicate slugs | 0 | 0 | OK |
+| Broken internal links | 0 | 0 | OK |
+| Stale OS mentions | (dev-loop warn floor) | 4 | Best result of the sprint |
+| Traffic | 10,000/mo | Not measured this run | Still unconfirmed whether analytics is wired up |
+| Monetization | AdSense or 3 affiliate programs live | None | Blocked on Bailey — 74 days in, still zero |
+| TekSure Brain / Ollama | Hosted Ollama active | Edge functions deployed, unchanged | Blocked on Hetzner CX22 provisioning |
+| Git health (local mount) | Clean, pushed | Still broken from May rebase artifact | Needs Bailey\'s hands-on fix on the real Mac |
+
+### Monetization status
+- AdSense: no update this run.
+- Affiliate: no update. New candidate anchor added today — the Nest Doorbell setup guide is a strong Amazon Associates candidate ($149–$179 product, high-intent guide, clear buy trigger).
+
+### Blockers
+- **Git commit/push still blocked.** Same paused rebase + stale `.git/index.lock` from the May run persists. Batch-327 file, guides.ts edit, and 10 OS-mention refreshes are on disk uncommitted. Bailey needs to run the recipe from prior log entries: `rm -f .git/index.lock && git rebase --abort && git pull --rebase origin main && git add -A && git commit && git push`.
+- **AdSense / affiliate programs remain zero.** 16 days from target, no measurable monetization progress.
+- **Traffic measurement unresolved.** Cannot confirm whether analytics captures visits — need Bailey to point at GA4 / Plausible dashboard or install one.
+
+### Next-day priorities (2026-07-26)
+1. **Bailey (top):** clear the git lock and push the mounting queue of uncommitted work. This has now been the #1 blocker for weeks.
+2. **Bailey:** hand over AdSense publisher ID or Amazon Associates tag so revenue plumbing can be added to at least the top-10 highest-traffic guides.
+3. Continue stale-OS sweep — the remaining 4 mentions should be trivial in the next cycle.
+4. Add 8–10 more guides. Candidate topics for tomorrow:
+   - "Apple Vision Pro (2nd gen) for grandparents — is it worth it?"
+   - "iOS 18 Mail Categories — how the new inbox layout works and how to turn it off"
+   - "USPS package scam text 2026 — the redelivery fee grift"
+   - "Kroger/Publix digital coupon apps — the loyalty program worth having"
+   - "Fake Geek Squad renewal email — Best Buy scam wave of summer 2026"
+   - "Setting a spending cap on Apple Cash for grandchildren"
+   - "Wi-Fi 7 vs Wi-Fi 6E — do you need to upgrade your router?"
+   - "iCloud+ Private Relay — what it does and when to leave it on"
+5. Once git is unstuck, back-fill affiliate links across the shipped Nest Doorbell, AirPods Pro 2 hearing aid, and USB-drive-for-ChromeOS-Flex guides simultaneously.

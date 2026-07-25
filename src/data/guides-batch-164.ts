@@ -71,7 +71,7 @@ export const guidesBatch164: Guide[] = [
       },
       {
         title: "Speak your message naturally",
-        content: "Once the microphone is active, speak your message at a comfortable pace. The phone will display your words as you talk. You can pause briefly between sentences — the phone will wait for you. When you are done speaking, either tap the microphone icon again to stop, or simply pause for a moment and the phone will stop listening on its own.",
+        content: "Once the microphone is active, speak your message at a comfortable pace. The phone will display your words as you talk. You can pause briefly between sentences — the phone will wait for you. When you are done speaking, either tap the microphone icon again to stop, or pause for a moment and the phone will stop listening on its own.",
         tip: "To add punctuation, say the word out loud: \"period,\" \"comma,\" \"exclamation point,\" \"question mark,\" or \"new line.\" For example: \"I will be there at two o clock period\" becomes \"I will be there at two o clock.\""
       },
       {

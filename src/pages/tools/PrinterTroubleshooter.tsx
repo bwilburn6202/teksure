@@ -2,6 +2,8 @@ import { useState } from 'react';
 import { Link } from 'react-router-dom';
 import {
   Printer,
+  Laptop,
+  KeyRound,
   RotateCcw,
   ArrowLeft,
   ChevronRight,
@@ -85,31 +87,84 @@ type Node = QuestionNode | FixNode;
  * The tree
  * ───────────────────────────────────────────────────────────────────────── */
 
+// Multi-choice start question options — every major flow in the tree is
+// reachable from here. Keep in sync when adding a new top-level symptom.
+const START_OPTIONS = [
+  { label: 'Printer says "Offline"', desc: 'It shows offline even though it is on', next: 'offline_q1' },
+  { label: 'Paper jam', desc: 'Paper is stuck, or it jams over and over', next: 'jam_q1' },
+  { label: 'Print quality is poor', desc: 'Faded, streaky, blurry, or smudged pages', next: 'quality_q1' },
+  { label: 'Ink or toner problem', desc: 'Out of ink, or the cartridge is not recognized', next: 'ink_q1' },
+  { label: 'Will not connect to WiFi', desc: 'Setting up wireless, or it keeps dropping off', next: 'wifiConnect' },
+  { label: 'Colors look wrong', desc: 'Wrong shades, or printing in black and white', next: 'weirdColors' },
+  { label: 'Blinking or error lights', desc: 'A light is flashing and you are not sure why', next: 'errorLights' },
+  { label: 'My computer cannot find the printer', desc: 'It is not in the list of printers', next: 'findPrinter' },
+  { label: 'Two-sided printing problems', desc: 'Double-sided pages come out wrong', next: 'duplex' },
+  { label: 'Scanner problems', desc: 'Scanning fails, or scans come out blank', next: 'scanner' },
+];
+
+// Multi-choice for USB vs WiFi connection type
+const CONNECTION_OPTIONS = [
+  { label: 'USB cable (plugged in)', desc: 'A cable runs from the printer to the computer', next: 'offline_usb' },
+  { label: 'WiFi (wireless)', desc: 'No cable — it prints over your home network', next: 'offline_wifi' },
+  { label: 'WiFi, and I have already checked the basics', desc: 'Power and network are fine but it still says offline', next: 'fix_offlineWifi' },
+  { label: 'I\'m not sure', desc: 'Show me the general offline fix to try first', next: 'fix_offlineAny' },
+];
+
+// Multi-choice for print quality issue type
+const QUALITY_OPTIONS = [
+  { label: 'Faded or light printing', next: 'quality_faded' },
+  { label: 'Streaks or lines on the page', next: 'quality_streaky' },
+  { label: 'Blurry or smudged', next: 'quality_blurry' },
+];
+
 const tree: Record<string, Node> = {
   /* ── Root ────────────────────────────────────────────────── */
   start: {
-    id: 'start',
-    type: 'question',
-    question: 'What best describes your printer problem?',
-    emoji: '',
+    kind: 'question',
+    title: 'What best describes your printer problem?',
+    icon: Printer,
+    options: START_OPTIONS,
+  },
+
+  /* ── Ink / toner branch ──────────────────────────────────── */
+  ink_q1: {
+    kind: 'question',
+    title: 'What is happening with the ink or toner?',
+    icon: Printer,
+    options: [
+      { label: 'It is empty or nearly empty', desc: 'Time to put in a new cartridge', next: 'outOfInk' },
+      { label: 'It says the cartridge is not recognized', desc: 'You installed one but the printer rejects it', next: 'ink_not_recognized' },
+      { label: 'Prints are faded even with ink in it', desc: 'Ink is there but pages look light', next: 'quality_faded' },
+    ],
+  },
+
+  /* ── "Computer cannot find the printer" branch ───────────── */
+  findPrinter: {
+    kind: 'question',
+    title: 'Which kind of computer are you using?',
+    subtitle: 'The steps to add a printer are different on Windows and Mac, so pick the one you have.',
+    icon: Laptop,
+    options: [
+      { label: 'Windows', desc: 'A PC or laptop with the Start button', next: 'fix_findWindows' },
+      { label: 'Mac', desc: 'An Apple computer, iMac, or MacBook', next: 'fix_findMac' },
+    ],
   },
 
   // ── Printer offline flow ──────────────────────────────────────
   offline_q1: {
-    id: 'offline_q1',
-    type: 'question',
-    question: 'Is your printer turned on? Look for a power light on the front or top.',
-    helpText: 'The power light is usually a small green, blue, or white light. Some printers also have a small screen that shows information.',
-    yesNext: 'offline_q2',
-    noNext: 'offline_turn_on',
+    kind: 'question',
+    title: 'Is your printer turned on? Look for a power light on the front or top.',
+    subtitle: 'The power light is usually a small green, blue, or white light. Some printers also have a small screen that shows information.',
+    options: [
+      { label: 'Yes', next: 'offline_q2' },
+      { label: 'No', next: 'offline_turn_on' },
+    ],
   },
   offline_turn_on: {
-    id: 'offline_turn_on',
-    type: 'solution',
-    emoji: '',
-    statement: 'Turn on your printer',
-    solution: 'Your printer may be off or not getting power.',
-    solutionSteps: [
+    kind: 'fix',
+    title: 'Turn on your printer',
+    why: 'Your printer may be off or not getting power.',
+    steps: [
       'Check that the power cable is plugged firmly into the back of the printer and into the wall outlet.',
       'Press the power button on the printer. It is usually on the front or top.',
       'Wait about 30 seconds for the printer to start up. You may hear it making sounds — this is normal.',
@@ -118,26 +173,24 @@ const tree: Record<string, Node> = {
     ],
   },
   offline_q2: {
-    id: 'offline_q2',
-    type: 'question',
-    question: 'Is your printer connected by a USB cable (plugged directly into your computer) or by WiFi (wirelessly)?',
-    // Multi-choice — handled in UI
+    kind: 'question',
+    title: 'How is your printer connected — USB cable or WiFi?',
+    options: CONNECTION_OPTIONS,
   },
   offline_usb: {
-    id: 'offline_usb',
-    type: 'question',
-    question: 'Is the USB cable firmly plugged into both the printer and your computer?',
-    helpText: 'Check both ends of the cable. The printer end is usually a square-shaped plug. The computer end is the flat rectangular USB plug.',
-    yesNext: 'offline_usb_restart',
-    noNext: 'offline_usb_replug',
+    kind: 'question',
+    title: 'Is the USB cable firmly plugged into both the printer and your computer?',
+    subtitle: 'Check both ends of the cable. The printer end is usually a square-shaped plug. The computer end is the flat rectangular USB plug.',
+    options: [
+      { label: 'Yes', next: 'offline_usb_restart' },
+      { label: 'No', next: 'offline_usb_replug' },
+    ],
   },
   offline_usb_replug: {
-    id: 'offline_usb_replug',
-    type: 'solution',
-    emoji: '',
-    statement: 'Reconnect the USB cable',
-    solution: 'A loose cable is one of the most common printer problems.',
-    solutionSteps: [
+    kind: 'fix',
+    title: 'Reconnect the USB cable',
+    why: 'A loose cable is one of the most common printer problems.',
+    steps: [
       'Unplug the USB cable from both ends — the printer and the computer.',
       'Wait 10 seconds.',
       'Plug the cable back into the printer first, then into the computer.',
@@ -146,12 +199,10 @@ const tree: Record<string, Node> = {
     ],
   },
   offline_usb_restart: {
-    id: 'offline_usb_restart',
-    type: 'solution',
-    emoji: '',
-    statement: 'Restart your printer and computer',
-    solution: 'A restart often fixes communication issues between your computer and printer.',
-    solutionSteps: [
+    kind: 'fix',
+    title: 'Restart your printer and computer',
+    why: 'A restart often fixes communication issues between your computer and printer.',
+    steps: [
       'Turn off your printer using the power button.',
       'On your computer, click Start (Windows) or the Apple menu (Mac) and choose Restart.',
       'Once your computer has fully restarted, turn the printer back on.',
@@ -161,20 +212,19 @@ const tree: Record<string, Node> = {
     ],
   },
   offline_wifi: {
-    id: 'offline_wifi',
-    type: 'question',
-    question: 'Is the WiFi light on your printer lit or blinking?',
-    helpText: 'The WiFi light is usually a small icon that looks like radio waves. It may be on the front panel or next to the screen.',
-    yesNext: 'offline_wifi_same_network',
-    noNext: 'offline_wifi_reconnect',
+    kind: 'question',
+    title: 'Is the WiFi light on your printer lit or blinking?',
+    subtitle: 'The WiFi light is usually a small icon that looks like radio waves. It may be on the front panel or next to the screen.',
+    options: [
+      { label: 'Yes', next: 'offline_wifi_same_network' },
+      { label: 'No', next: 'offline_wifi_reconnect' },
+    ],
   },
   offline_wifi_reconnect: {
-    id: 'offline_wifi_reconnect',
-    type: 'solution',
-    emoji: '',
-    statement: 'Reconnect your printer to WiFi',
-    solution: 'Your printer has lost its WiFi connection.',
-    solutionSteps: [
+    kind: 'fix',
+    title: 'Reconnect your printer to WiFi',
+    why: 'Your printer has lost its WiFi connection.',
+    steps: [
       'On your printer, find the WiFi setup option. This is usually in the Settings or Network menu on the printer screen. If there is no screen, look for a WiFi button.',
       'Select your home WiFi network name from the list.',
       'Enter your WiFi password using the printer buttons or touchscreen. The password is the same one you use on your phone or computer.',
@@ -184,20 +234,19 @@ const tree: Record<string, Node> = {
     ],
   },
   offline_wifi_same_network: {
-    id: 'offline_wifi_same_network',
-    type: 'question',
-    question: 'Are your computer and printer connected to the same WiFi network?',
-    helpText: 'Check your computer\'s WiFi settings to see which network it is on. Then check your printer\'s network settings (usually in Settings > Network on the printer screen). They must match.',
-    yesNext: 'offline_wifi_restart_all',
-    noNext: 'offline_wifi_fix_network',
+    kind: 'question',
+    title: 'Are your computer and printer connected to the same WiFi network?',
+    subtitle: 'Check your computer\'s WiFi settings to see which network it is on. Then check your printer\'s network settings (usually in Settings > Network on the printer screen). They must match.',
+    options: [
+      { label: 'Yes', next: 'offline_wifi_restart_all' },
+      { label: 'No', next: 'offline_wifi_fix_network' },
+    ],
   },
   offline_wifi_fix_network: {
-    id: 'offline_wifi_fix_network',
-    type: 'solution',
-    emoji: '',
-    statement: 'Connect both devices to the same network',
-    solution: 'Your printer and computer must be on the same WiFi network to communicate.',
-    solutionSteps: [
+    kind: 'fix',
+    title: 'Connect both devices to the same network',
+    why: 'Your printer and computer must be on the same WiFi network to communicate.',
+    steps: [
       'Check which WiFi network your computer is connected to. On Windows: click the WiFi icon in the taskbar. On Mac: click the WiFi icon in the menu bar.',
       'On your printer, go to Settings > Network and check which network it is connected to.',
       'If they are different, reconnect one of them to match the other. It is usually easier to change the printer.',
@@ -206,12 +255,10 @@ const tree: Record<string, Node> = {
     ],
   },
   offline_wifi_restart_all: {
-    id: 'offline_wifi_restart_all',
-    type: 'solution',
-    emoji: '',
-    statement: 'Restart everything',
-    solution: 'When the printer shows "offline" but everything looks connected, a full restart usually fixes it.',
-    solutionSteps: [
+    kind: 'fix',
+    title: 'Restart everything',
+    why: 'When the printer shows "offline" but everything looks connected, a full restart usually fixes it.',
+    steps: [
       'Turn off your printer.',
       'Restart your WiFi router: unplug it from the wall, wait 30 seconds, and plug it back in. Wait 2-3 minutes for it to fully restart.',
       'Restart your computer.',
@@ -223,20 +270,20 @@ const tree: Record<string, Node> = {
 
   // ── Paper jam flow ────────────────────────────────────────────
   jam_q1: {
-    id: 'jam_q1',
-    type: 'question',
-    question: 'Can you see the jammed paper inside the printer?',
-    helpText: 'Open the front cover or top lid of the printer and look inside. You may also need to check the back panel — some printers have a door on the back.',
-    yesNext: 'jam_remove',
-    noNext: 'jam_hidden',
+    kind: 'question',
+    title: 'Can you see the jammed paper inside the printer?',
+    subtitle: 'Open the front cover or top lid of the printer and look inside. You may also need to check the back panel — some printers have a door on the back.',
+    options: [
+      { label: 'Yes, I can see it', next: 'jam_remove' },
+      { label: 'No, I cannot find any paper', next: 'jam_hidden' },
+      { label: 'It jams over and over', desc: 'Every print job jams, not just this one', next: 'fix_repeatJam' },
+    ],
   },
   jam_remove: {
-    id: 'jam_remove',
-    type: 'solution',
-    emoji: '',
-    statement: 'Carefully remove the jammed paper',
-    solution: 'Gently pull the paper out to avoid tearing it or damaging the printer.',
-    solutionSteps: [
+    kind: 'fix',
+    title: 'Carefully remove the jammed paper',
+    why: 'Gently pull the paper out to avoid tearing it or damaging the printer.',
+    steps: [
       'Turn off the printer first. This prevents the paper from being pulled further in.',
       'Open the printer cover or lid. Check the front, top, and back access panels.',
       'Grip the jammed paper with both hands and pull it slowly and evenly in the direction the paper normally travels. Do not yank — pull gently.',
@@ -246,12 +293,10 @@ const tree: Record<string, Node> = {
     ],
   },
   jam_hidden: {
-    id: 'jam_hidden',
-    type: 'solution',
-    emoji: '',
-    statement: 'Check all access points for hidden paper',
-    solution: 'Paper can get stuck in places that are hard to see at first.',
-    solutionSteps: [
+    kind: 'fix',
+    title: 'Check all access points for hidden paper',
+    why: 'Paper can get stuck in places that are hard to see at first.',
+    steps: [
       'Turn off the printer.',
       'Open the front cover. Remove the ink or toner cartridge — look for paper behind it.',
       'Open the TOP cover if there is one — scanner beds lift on many all-in-ones.',
@@ -290,35 +335,86 @@ const tree: Record<string, Node> = {
     title: 'What happens when you try to connect to WiFi?',
     icon: Wifi,
     options: [
-      { label: 'Printer doesn\'t see my network',       emoji: '',  next: 'fix_wifiNotVisible' },
-      { label: 'Says my password is wrong',              emoji: '',  next: 'fix_wifiPassword' },
-      { label: 'Connects but won\'t print',              emoji: '',  next: 'fix_wifiSameNetwork' },
-      { label: 'I don\'t know how to set it up',         emoji: '',  next: 'fix_wifiFirstTime' },
+      { label: 'Printer doesn\'t see my network',  next: 'fix_wifiNotVisible' },
+      { label: 'Says my password is wrong',        next: 'fix_wifiPassword' },
+      { label: 'Connects but won\'t print',        next: 'offline_wifi_fix_network' },
+      { label: 'I don\'t know how to set it up',   next: 'fix_wifiFirstTime' },
     ],
+  },
+
+  fix_wifiNotVisible: {
+    kind: 'fix',
+    icon: Wifi,
+    title: 'Your printer does not see your WiFi network',
+    why: 'Most home printers can only join 2.4 GHz networks. Many modern routers broadcast both 2.4 GHz and 5 GHz under the same name, and the printer sometimes only finds the 5 GHz one — which it cannot use.',
+    steps: [
+      'Move the printer closer to the router for setup — within 10 feet if you can. You can move it back afterward.',
+      'On the printer, go to Settings or Network, then choose Wireless Setup Wizard, and let it scan again.',
+      'If your network still does not appear, check your router for a separate 2.4 GHz network name (it often ends in "-2G" or "-2.4"). Choose that one.',
+      'If both bands share one name, sign in to your router settings and turn on "band steering" off, or temporarily rename the 5 GHz network so the printer can find the 2.4 GHz one.',
+      'Restart the printer, then run the Wireless Setup Wizard once more.',
+    ],
+    ifFails: 'If the printer supports WPS, press the WPS button on your router, then press the WPS button on the printer within two minutes. This skips network selection entirely.',
+    proHelp: 'If the printer never lists any network at all — not even a neighbor\'s — the wireless radio inside the printer may have failed. Connect it with a USB cable as a reliable workaround.',
+    guide: { label: 'WiFi help', to: '/tools/wifi-speed' },
+  },
+
+  fix_wifiPassword: {
+    kind: 'fix',
+    icon: KeyRound,
+    title: 'The printer says your WiFi password is wrong',
+    why: 'Printer keypads make password entry error-prone, and WiFi passwords are case-sensitive. Most "wrong password" errors are a typo or a lookalike character, not an actual mismatch.',
+    steps: [
+      'Find your exact WiFi password. It is often printed on a sticker on the router, next to "Password" or "WPA key".',
+      'Type it slowly on the printer, watching the screen. Capital and lowercase letters must match exactly.',
+      'Watch out for lookalike characters: the number 0 versus the letter O, the number 1 versus lowercase l, and the letter S versus the number 5.',
+      'If the printer has a "show password" option, turn it on so you can read what you typed before confirming.',
+      'If it still fails, confirm the password by connecting your phone to the same network with it. If your phone connects, the password is right and the printer is the problem — restart the printer and try again.',
+    ],
+    ifFails: 'Use the WPS button method instead: press WPS on your router, then WPS on the printer within two minutes. No password typing required.',
+    proHelp: 'If you cannot find your WiFi password at all, call your internet provider — they can look it up or reset it for you. Have your account number ready.',
+    guide: { label: 'Password help', to: '/tools/password-strength' },
+  },
+
+  fix_wifiFirstTime: {
+    kind: 'fix',
+    icon: Wifi,
+    title: 'Set up your printer on WiFi for the first time',
+    why: 'A first-time wireless setup just tells the printer your network name and password. Once it joins, your computer and phone can find it automatically.',
+    steps: [
+      'Place the printer within about 10 feet of your router while you set it up.',
+      'Turn the printer on and wait for it to finish starting up.',
+      'On the printer screen, go to Settings, then Network or Wireless, then Wireless Setup Wizard. If the printer has no screen, look for a WiFi button and hold it for three seconds.',
+      'Choose your home network name from the list the printer shows.',
+      'Enter your WiFi password using the printer buttons or touchscreen, then confirm. Wait for the WiFi light to become steady.',
+      'On your computer, add the printer: on Windows go to Settings > Bluetooth & devices > Printers & scanners > Add device. On Mac go to System Settings > Printers & Scanners > Add Printer.',
+      'Print a test page to confirm everything works.',
+    ],
+    ifFails: 'If the wizard cannot finish, install your printer maker\'s free app on your phone — HP Smart, Canon PRINT, Epson Smart Panel, or Brother Mobile Connect. These walk you through setup and are usually easier than the printer buttons.',
+    proHelp: 'If setup fails repeatedly, connect the printer to your computer with a USB cable. It will print reliably that way while you sort out wireless later.',
+    guide: { label: 'New device setup', to: '/tools/new-phone-setup-assistant' },
   },
 
   // ── Print quality flow ────────────────────────────────────────
   quality_q1: {
-    id: 'quality_q1',
-    type: 'question',
-    question: 'What does the printed page look like?',
-    // Multi-choice — handled in UI
+    kind: 'question',
+    title: 'What does the printed page look like?',
+    options: QUALITY_OPTIONS,
   },
   quality_faded: {
-    id: 'quality_faded',
-    type: 'question',
-    question: 'Have you checked the ink or toner levels?',
-    helpText: 'On most printers, you can check ink levels on the printer screen by going to Settings > Ink Levels. You can also check from your computer: on Windows search for your printer name, on Mac go to System Settings > Printers & Scanners.',
-    yesNext: 'quality_faded_low',
-    noNext: 'quality_check_ink',
+    kind: 'question',
+    title: 'Have you checked the ink or toner levels?',
+    subtitle: 'On most printers, you can check ink levels on the printer screen by going to Settings > Ink Levels. You can also check from your computer: on Windows search for your printer name, on Mac go to System Settings > Printers & Scanners.',
+    options: [
+      { label: 'Yes', next: 'quality_faded_low' },
+      { label: 'No', next: 'quality_check_ink' },
+    ],
   },
   quality_check_ink: {
-    id: 'quality_check_ink',
-    type: 'solution',
-    emoji: '',
-    statement: 'Check and replace ink or toner',
-    solution: 'Faded printing is usually caused by low ink or toner.',
-    solutionSteps: [
+    kind: 'fix',
+    title: 'Check and replace ink or toner',
+    why: 'Faded printing is usually caused by low ink or toner.',
+    steps: [
       'Check your ink or toner levels. On the printer screen: look in Settings or Setup > Ink Levels. On your computer: search for your printer name in Settings.',
       'If any color is low or empty, you need to replace that cartridge.',
       'Find your printer model number (usually on a sticker on the front or inside the lid).',
@@ -331,12 +427,10 @@ const tree: Record<string, Node> = {
     guide: { label: 'WiFi troubleshooter', to: '/tools/wifi-troubleshooter' },
   },
   quality_faded_low: {
-    id: 'quality_faded_low',
-    type: 'solution',
-    emoji: '',
-    statement: 'Run a cleaning cycle',
-    solution: 'If ink levels are fine but prints are faded, the print heads may be clogged.',
-    solutionSteps: [
+    kind: 'fix',
+    title: 'Run a cleaning cycle',
+    why: 'If ink levels are fine but prints are faded, the print heads may be clogged.',
+    steps: [
       'On your printer screen, go to Settings or Setup > Maintenance or Tools.',
       'Select "Clean Print Heads" or "Print Head Cleaning." The printer will run a cleaning cycle.',
       'After cleaning, print a test page to see if the quality improved.',
@@ -349,12 +443,10 @@ const tree: Record<string, Node> = {
     guide: { label: 'WiFi password finder', to: '/tools/wifi-password-finder' },
   },
   quality_streaky: {
-    id: 'quality_streaky',
-    type: 'solution',
-    emoji: '',
-    statement: 'Clean the print heads and check alignment',
-    solution: 'Streaks or lines on printed pages are usually caused by dirty print heads or misalignment.',
-    solutionSteps: [
+    kind: 'fix',
+    title: 'Clean the print heads and check alignment',
+    why: 'Streaks or lines on printed pages are usually caused by dirty print heads or misalignment.',
+    steps: [
       'On your printer screen, go to Settings > Maintenance or Tools.',
       'Run "Clean Print Heads" first. Wait for it to finish.',
       'Then run "Align Print Heads" or "Print Head Alignment." Follow the on-screen instructions — you may need to select the best-looking alignment pattern.',
@@ -367,12 +459,10 @@ const tree: Record<string, Node> = {
     guide: { label: 'Home network map', to: '/tools/home-network-map' },
   },
   quality_blurry: {
-    id: 'quality_blurry',
-    type: 'solution',
-    emoji: '',
-    statement: 'Fix blurry or smudged prints',
-    solution: 'Blurry prints are usually caused by paper settings, damp paper, or dirty rollers.',
-    solutionSteps: [
+    kind: 'fix',
+    title: 'Fix blurry or smudged prints',
+    why: 'Blurry prints are usually caused by paper settings, damp paper, or dirty rollers.',
+    steps: [
       'Check that the paper type setting on your computer matches the actual paper. When you click Print, look for "Paper Type" or "Media Type" in the settings.',
       'Make sure the paper is dry. Damp or humid paper causes smudging. Store paper in a dry place and fan the sheets before loading.',
       'Check print quality setting. When you click Print, look for "Quality" and set it to "Normal" or "High" instead of "Draft."',
@@ -418,28 +508,11 @@ const tree: Record<string, Node> = {
     replaceOrRepair: 'If your printer was released before 2012, there\'s often no Mac support at all. A $80 new printer beats days of troubleshooting.',
     guide: { label: 'Find the right printer', to: '/tools/device-chooser' },
   },
-  ink_replace: {
-    id: 'ink_replace',
-    type: 'solution',
-    emoji: '',
-    statement: 'Replace the ink or toner cartridge',
-    solution: 'When ink or toner is empty, you need a new cartridge.',
-    solutionSteps: [
-      'Find your printer model number. It is usually printed on the front of the printer or on a sticker inside the lid.',
-      'Write it down. It will look something like "HP DeskJet 2755e" or "Brother HL-L2350DW."',
-      'Search online for "[your printer model] replacement ink" or "[your printer model] replacement toner."',
-      'Buy the correct cartridge from Amazon, Walmart, Staples, Office Depot, or your printer brand\'s website.',
-      'To install: open the printer cover, wait for the cartridge holder to move to the center, push down on the old cartridge to release it, and snap in the new one.',
-      'Close the cover and print a test page. The printer may run an alignment process automatically.',
-    ],
-  },
   ink_not_recognized: {
-    id: 'ink_not_recognized',
-    type: 'solution',
-    emoji: '',
-    statement: 'Fix "cartridge not recognized" errors',
-    solution: 'Sometimes a printer does not recognize a cartridge even when it is installed correctly.',
-    solutionSteps: [
+    kind: 'fix',
+    title: 'Fix "cartridge not recognized" errors',
+    why: 'Sometimes a printer does not recognize a cartridge even when it is installed correctly.',
+    steps: [
       'Turn off the printer and unplug it from the wall. Wait 60 seconds.',
       'Open the cartridge cover and remove the cartridge that is not being recognized.',
       'Check the gold or copper contacts on the bottom of the cartridge. Gently wipe them with a dry, lint-free cloth. Do not use water.',
@@ -495,10 +568,10 @@ const tree: Record<string, Node> = {
     title: 'What\'s wrong with the colours?',
     icon: Palette,
     options: [
-      { label: 'Everything has a colour tint (yellow / blue / pink)', emoji: '',  next: 'fix_colorCalibrate' },
-      { label: 'One colour is totally missing',                       emoji: '',  next: 'fix_clogHead' },
-      { label: 'Only printing in black and white',                    emoji: '',  next: 'fix_colorMode' },
-      { label: 'Colours swapped — reds where greens should be',       emoji: '',  next: 'fix_driverColor' },
+      { label: 'Everything has a colour tint (yellow / blue / pink)',  next: 'fix_colorCalibrate' },
+      { label: 'One colour is totally missing',  next: 'quality_streaky' },
+      { label: 'Only printing in black and white',  next: 'fix_colorMode' },
+      { label: 'Colours swapped — reds where greens should be',  next: 'fix_driverColor' },
     ],
   },
 
@@ -563,10 +636,10 @@ const tree: Record<string, Node> = {
     title: 'What do the error lights look like?',
     icon: AlertTriangle,
     options: [
-      { label: 'Blinking orange / amber',                emoji: '',  next: 'fix_blinkingAmber' },
-      { label: 'Solid red',                               emoji: '',  next: 'fix_solidRed' },
-      { label: 'Blinking red',                            emoji: '',  next: 'fix_blinkingRed' },
-      { label: 'Error code on the screen',                emoji: '',  next: 'fix_errorCode' },
+      { label: 'Blinking orange / amber',  next: 'fix_blinkingAmber' },
+      { label: 'Solid red',  next: 'fix_solidRed' },
+      { label: 'Blinking red',  next: 'fix_blinkingRed' },
+      { label: 'Error code on the screen',  next: 'fix_blinkingAmber' },
     ],
   },
 
@@ -653,10 +726,10 @@ const tree: Record<string, Node> = {
     title: 'What\'s happening with two-sided printing?',
     icon: Layers,
     options: [
-      { label: 'Paper jams on the second side',          emoji: '',  next: 'fix_duplexJam' },
-      { label: 'Second side comes out blank',             emoji: '',  next: 'fix_duplexBlank' },
-      { label: 'Pages print upside-down / wrong order',   emoji: '',  next: 'fix_duplexOrientation' },
-      { label: 'My printer doesn\'t do two-sided',        emoji: '',  next: 'fix_manualDuplex' },
+      { label: 'Paper jams on the second side',  next: 'fix_duplexJam' },
+      { label: 'Second side comes out blank',  next: 'fix_duplexBlank' },
+      { label: 'Pages print upside-down / wrong order',  next: 'fix_duplexOrientation' },
+      { label: 'My printer doesn\'t do two-sided',  next: 'fix_manualDuplex' },
     ],
   },
 
@@ -739,10 +812,10 @@ const tree: Record<string, Node> = {
     title: 'What happens when you try to scan?',
     icon: Scan,
     options: [
-      { label: 'Computer doesn\'t find the scanner',      emoji: '',  next: 'fix_scannerFind' },
-      { label: 'Scanner error message',                    emoji: '',  next: 'fix_scannerError' },
-      { label: 'Scans come out blank or black',            emoji: '',  next: 'fix_scannerBlank' },
-      { label: 'Scans to email aren\'t sending',           emoji: '',  next: 'fix_scanEmail' },
+      { label: 'Computer doesn\'t find the scanner',  next: 'fix_scannerFind' },
+      { label: 'Scanner error message',  next: 'fix_scannerError' },
+      { label: 'Scans come out blank or black',  next: 'fix_scannerBlank' },
+      { label: 'Scans to email aren\'t sending',  next: 'fix_scanEmail' },
     ],
   },
 
@@ -821,33 +894,14 @@ const tree: Record<string, Node> = {
   },
 };
 
-// Multi-choice start question options
-const START_OPTIONS = [
-  { label: 'Printer says "Offline"', emoji: '', next: 'offline_q1' },
-  { label: 'Paper jam', emoji: '', next: 'jam_q1' },
-  { label: 'Print quality is poor (faded, streaky, blurry)', emoji: '', next: 'quality_q1' },
-  { label: 'Ink or toner problem', emoji: '', next: 'ink_q1' },
-];
-
-// Multi-choice for USB vs WiFi connection type
-const CONNECTION_OPTIONS = [
-  { label: 'USB cable (plugged in)', emoji: '', next: 'offline_usb' },
-  { label: 'WiFi (wireless)', emoji: '', next: 'offline_wifi' },
-  { label: 'I\'m not sure', emoji: '', next: 'offline_usb' },
-];
-
-// Multi-choice for print quality issue type
-const QUALITY_OPTIONS = [
-  { label: 'Faded or light printing', emoji: '', next: 'quality_faded' },
-  { label: 'Streaks or lines on the page', emoji: '', next: 'quality_streaky' },
-  { label: 'Blurry or smudged', emoji: '', next: 'quality_blurry' },
-];
 
 export default function PrinterTroubleshooter() {
   // History stack — current node is always the last entry. Enables reliable "Back" navigation.
   const [history, setHistory] = useState<string[]>(['start']);
   const currentId = history[history.length - 1];
-  const current = tree[currentId];
+  // Fall back to the start node if an unknown id ever lands in the history —
+  // a missing node would otherwise blank the page for the user.
+  const current = tree[currentId] ?? tree.start;
   // JSX requires a capitalised local identifier for a component reference.
   const NodeIcon = current.icon;
 

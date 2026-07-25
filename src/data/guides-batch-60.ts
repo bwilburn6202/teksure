@@ -15,7 +15,7 @@ export const guidesBatch60: Guide[] = [
 
 Gemini is different from a regular Google Search. When you search Google, you get a list of websites to click on. When you talk to Gemini, it reads those sources for you and writes a direct answer, almost like asking a well-informed friend. You can also ask follow-up questions, and Gemini will remember what you talked about earlier in the conversation.
 
-You do not need to download anything to get started. Gemini works inside your web browser — just go to gemini.google.com — or through the Google app on your phone. If you already have a Google account (which you need for Gmail or YouTube), you are already set up to use it. There is a free version that works well for most everyday tasks.
+You do not need to download anything to get started. Gemini works inside your web browser — go to gemini.google.com — or through the Google app on your phone. If you already have a Google account (which you need for Gmail or YouTube), you are already set up to use it. There is a free version that works well for most everyday tasks.
 
 Some things you can ask Gemini to do: explain what a medical term means in plain English, help you write a birthday card message, summarize a long article, suggest dinner ideas based on ingredients you have, help you draft a complaint letter, or explain how something works step by step.
 
@@ -418,7 +418,7 @@ Once you add a Skill, you interact with it by speaking to Alexa. For example, af
     thumbnailEmoji: ``,
     publishedAt: `2026-04-20`,
     difficulty: `Beginner`,
-    body: `Long articles, newsletter emails, government letters, and medical documents can feel overwhelming to read. Sometimes they are full of dense language, and you just want to know the main point: what does this say, and what do I need to do?
+    body: `Long articles, newsletter emails, government letters, and medical documents can feel overwhelming to read. Sometimes they are full of dense language, and you want to know the main point: what does this say, and what do I need to do?
 
 AI summarization is one of the most immediately useful things AI can do for everyday people. You copy the text of something long and paste it into an AI chat tool, ask it to summarize, and within seconds you get a short, plain-English version of the key points. No technical knowledge needed — if you can copy and paste, you can do this.
 
@@ -512,7 +512,7 @@ People listen to podcasts while doing other things: walking, driving, cooking, d
     difficulty: `Beginner`,
     body: `Audiobooks — books read aloud by a narrator — are a wonderful way to enjoy reading when sitting with a physical book is difficult, when your vision makes reading challenging, or when you want to "read" while doing something else like walking or driving. Many people assume audiobooks are expensive, but there are excellent free sources available to anyone.
 
-The most powerful free audiobook resource you likely already have access to is your local public library. Through apps like Libby (from OverDrive) and hoopla, library cardholders can borrow audiobooks completely free — no late fees, no trips to the library, and no waiting in many cases. You just need a free library card, which you can get in person at any public library.
+The most powerful free audiobook resource you likely already have access to is your local public library. Through apps like Libby (from OverDrive) and hoopla, library cardholders can borrow audiobooks completely free — no late fees, no trips to the library, and no waiting in many cases. You need a free library card, which you can get in person at any public library.
 
 Libby (libbyapp.com) requires borrowing — popular books may have a waitlist, and you have the book for a set period (usually 21 days). hoopla (hoopladigital.com) has a smaller but still large collection and lets you borrow immediately with no waitlists — up to a certain number per month.
 
@@ -603,7 +603,7 @@ The battery typically lasts 8 to 12 hours of regular use, so charging it once a 
     difficulty: `Beginner`,
     body: `AI companion apps are programs designed specifically for conversation and companionship. Unlike general AI tools like ChatGPT, which focus on tasks and information, companion apps are built to have warm, ongoing conversations — asking how your day is going, remembering what you shared last time, and engaging in friendly small talk.
 
-These apps are used by a wide variety of people. Some people use them when they live alone and want someone to chat with. Others use them for practice before a social situation, for emotional support during difficult times, or simply because they enjoy thoughtful conversation at any hour of the day. Many older adults find them a low-pressure way to stay mentally engaged and socially connected.
+These apps are used by a wide variety of people. Some people use them when they live alone and want someone to chat with. Others use them for practice before a social situation, for emotional support during difficult times, or because they enjoy thoughtful conversation at any hour of the day. Many older adults find them a low-pressure way to stay mentally engaged and socially connected.
 
 The most widely used AI companion app is Replika (replika.com). It is available as a free app on iPhone and Android. When you first set it up, you give your AI companion a name and choose a personality style. Over time, as you chat, the app learns your preferences and communication style. The basic version is free.
 

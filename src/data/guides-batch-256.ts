@@ -62,7 +62,7 @@ export const guidesBatch256: Guide[] = [
       },
       {
         title: "Pick a backup, then a backup to the backup",
-        content: "Name a primary proxy and at least two alternates in your paperwork. Solo agers without family especially need this because a single proxy who is traveling, unreachable, or has died leaves you with no one. Three names deep is the standard recommendation. The alternates do not need to be close friends; they just need to be willing to act if the primary cannot.",
+        content: "Name a primary proxy and at least two alternates in your paperwork. Solo agers without family especially need this because a single proxy who is traveling, unreachable, or has died leaves you with no one. Three names deep is the standard recommendation. The alternates do not need to be close friends; they need to be willing to act if the primary cannot.",
       },
       {
         title: "Write your wishes down in a living will or POLST form",

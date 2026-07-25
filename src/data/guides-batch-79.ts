@@ -340,7 +340,7 @@ The Social Security Administration strongly encourages people to apply as soon a
     difficulty: `Beginner`,
     body: `Grief is one of the most universal human experiences, and yet it can feel deeply isolating. Many people find that after a loss, support from family and friends fades faster than the grief itself. Technology has created new ways to find connection, community, and professional support — available any time of day or night, from the privacy of your own home.
 
-This is not a replacement for in-person counseling, close relationships, or medical care. But for people who live in rural areas, who have mobility limitations, who grieve at 3 a.m. when no one else is awake, or who simply want more support than is available locally, technology can make a meaningful difference.
+This is not a replacement for in-person counseling, close relationships, or medical care. But for people who live in rural areas, who have mobility limitations, who grieve at 3 a.m. when no one else is awake, or who want more support than is available locally, technology can make a meaningful difference.
 
 Several apps specifically designed for grief have emerged in recent years. Grief Share (griefshare.org) connects people with local and online support groups, many of them faith-based, for those who have lost a spouse, parent, child, or sibling. The website has a searchable directory of thousands of groups across the country.
 
@@ -743,7 +743,7 @@ To find prices before transferring a prescription, use Costco's Drug Information
       },
       {
         title: `Create a free Costco.com account`,
-        content: `To use the online pharmacy, go to costco.com and click "Sign In" at the top right. Then click "Create Account." You do not need a paid Costco membership — just enter your name, email address, and create a password. A free account is all that is required to access the online pharmacy and transfer prescriptions.`,
+        content: `To use the online pharmacy, go to costco.com and click "Sign In" at the top right. Then click "Create Account." You do not need a paid Costco membership — enter your name, email address, and create a password. A free account is all that is required to access the online pharmacy and transfer prescriptions.`,
         warning: `Some services on costco.com, like grocery delivery or certain warehouse deals, do require a paid membership. The pharmacy is a notable exception — confirm your non-member status when registering to avoid confusion.`,
       },
       {
@@ -857,7 +857,7 @@ To use Cost Plus Drugs, your doctor needs to send a prescription electronically 
 
 Blink Health works by negotiating volume-based prices with pharmacies and passing those savings on to customers. For many common generic medications, the Blink price is substantially lower than the retail cash price. Prices are listed openly on the website before you commit to purchasing, so you can compare and decide.
 
-Blink Health is useful for people who do not have health insurance, people whose insurance does not cover a specific medication, people who are in their deductible period and paying full price, and people who simply want to check whether they are getting the best price on a prescription they already take.
+Blink Health is useful for people who do not have health insurance, people whose insurance does not cover a specific medication, people who are in their deductible period and paying full price, and people who want to check whether they are getting the best price on a prescription they already take.
 
 There is no membership fee to use Blink Health — you create a free account and pay only for the medications you purchase. Blink accepts payment by credit card, debit card, or FSA/HSA cards, which is important because FSA and HSA funds are specifically designed for healthcare expenses like prescriptions.
 

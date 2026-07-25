@@ -769,7 +769,7 @@ For more creative control, standalone collage apps give you much more to work wi
 
 In Pic Collage: download the app, open it, and tap Collage. Choose a template — the templates show different grid arrangements. Then tap each slot to select which photo goes there. You can pinch to zoom within a slot, drag to reposition the photo, and switch photos in and out. Once your layout looks right, add text by tapping the T button, change the background color, or add stickers. When you're done, save to your camera roll by tapping the export or save button.
 
-Tips for a great collage: choose photos with consistent lighting and color tones so they look like they belong together. Mix portrait (vertical) and landscape (horizontal) photos thoughtfully — most grid templates look better when photos share a similar orientation. Leaving a small gap between photos (padding) makes the collage look clean; no padding gives a more modern, seamless feel.
+Tips for a great collage: choose photos with consistent lighting and color tones so they look like they belong together. Mix portrait (vertical) and landscape (horizontal) photos thoughtfully — most grid templates look better when photos share a similar orientation. Leaving a small gap between photos (padding) makes the collage look clean; no padding gives a more modern, smooth feel.
 
 When you've saved the collage, share it by text message, email, or post it on social media. For a physical copy, apps like Walgreens, CVS Photo, or Shutterfly let you order a printed version delivered to your door or available for pickup at a store.`,
     category: `tips-tricks`,

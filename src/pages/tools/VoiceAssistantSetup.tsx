@@ -177,7 +177,7 @@ function recommend(a: QuizAnswers): { id: DeviceId; reason: string } {
   if (a.apple === 'yes') {
     return {
       id: 'siri',
-      reason: 'Since you already prefer Apple, Siri on a HomePod Mini will talk to your iPhone and iPad seamlessly — your reminders, calendar, and music all live in one place.',
+      reason: 'Since you already prefer Apple, Siri on a HomePod Mini will talk to your iPhone and iPad smoothly — your reminders, calendar, and music all live in one place.',
     };
   }
   if (a.amazon === 'yes') {
@@ -283,7 +283,7 @@ const ALEXA: DeviceInfo = {
       instruction:
         'The app offers "Voice Profile" setup. Tap "Set up now". Alexa will ask you to say 10 short phrases like "Alexa, what\'s the weather?". This helps Alexa recognize YOU specifically — useful in households with multiple people. Takes about 3 minutes.',
       stumble:
-        'Speak normally — not louder or slower. If Alexa doesn\'t understand a phrase, it will simply repeat that one. You can skip this step entirely and still use the Echo.',
+        'Speak normally — not louder or slower. If Alexa doesn\'t understand a phrase, it will repeat that one. You can skip this step entirely and still use the Echo.',
       screenshot: 'Alexa app "Create your voice profile" screen',
     },
     {

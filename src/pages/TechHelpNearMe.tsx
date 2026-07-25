@@ -40,10 +40,13 @@ interface HelpOption {
   icon: typeof Library;
   emoji: string;
   title: string;
-  offers: string;
-  howToFind: string;
-  cost: string;
+  /** Older entries use a single `description` instead of the three fields below. */
+  description?: string;
+  offers?: string;
+  howToFind?: string;
+  cost?: string;
   primaryLink?: { label: string; url: string; internal?: boolean };
+  secondaryLink?: { label: string; url: string; internal?: boolean };
 }
 
 interface SessionTip {
@@ -300,19 +303,27 @@ const OptionCard = ({ option }: { option: HelpOption }) => {
         <CardTitle className="text-xl text-stone-900">{option.title}</CardTitle>
       </CardHeader>
       <CardContent className="flex-1 flex flex-col space-y-3">
-        <p className="text-base text-stone-700 leading-relaxed">
-          <span className="font-semibold text-stone-900">What they offer: </span>
-          {option.offers}
-        </p>
-        <p className="text-base text-stone-700 leading-relaxed">
-          <span className="font-semibold text-stone-900">How to find them: </span>
-          {option.howToFind}
-        </p>
-        <div className="flex items-center gap-2 pt-1">
-          <Badge className="bg-amber-100 text-amber-900 hover:bg-amber-100 border border-amber-300">
-            {option.cost}
-          </Badge>
-        </div>
+        {option.offers ? (
+          <p className="text-base text-stone-700 leading-relaxed">
+            <span className="font-semibold text-stone-900">What they offer: </span>
+            {option.offers}
+          </p>
+        ) : option.description ? (
+          <p className="text-base text-stone-700 leading-relaxed">{option.description}</p>
+        ) : null}
+        {option.howToFind && (
+          <p className="text-base text-stone-700 leading-relaxed">
+            <span className="font-semibold text-stone-900">How to find them: </span>
+            {option.howToFind}
+          </p>
+        )}
+        {option.cost && (
+          <div className="flex items-center gap-2 pt-1">
+            <Badge className="bg-amber-100 text-amber-900 hover:bg-amber-100 border border-amber-300">
+              {option.cost}
+            </Badge>
+          </div>
+        )}
         {option.primaryLink && (
           <div className="mt-auto pt-2">
             <Button

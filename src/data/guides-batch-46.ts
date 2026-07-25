@@ -100,7 +100,7 @@ Samsung phones have a slightly different interface where the merge option may ap
     difficulty: `Beginner`,
     body: `Google Forms is a free tool included with every Google account that lets you create online surveys, RSVP forms, sign-up sheets, polls, quizzes, and more. You design the form, share the link, and responses are collected automatically in a spreadsheet — no paper, no tallying, no emailing back and forth.
 
-Forms are great for gathering information from groups: an RSVP for a family reunion, a potluck sign-up, a neighborhood poll, a committee survey, or a feedback form for a club or organization. Respondents do not need a Google account to fill out the form — they just click the link and answer.
+Forms are great for gathering information from groups: an RSVP for a family reunion, a potluck sign-up, a neighborhood poll, a committee survey, or a feedback form for a club or organization. Respondents do not need a Google account to fill out the form — they click the link and answer.
 
 Creating a form takes about 5 minutes for a simple survey. You add questions one by one, choosing from different formats: multiple choice (pick one answer), checkboxes (pick multiple), short text, paragraph, dropdown, date, or time.
 
@@ -175,7 +175,7 @@ This is one of the most powerful inbox management features in Gmail and requires
       {
         title: `Save and Test the Filter`,
         content: `Click "Create filter." The filter is now active. To test it, send yourself an email matching the criteria or wait for the next email from that sender. It should automatically receive the treatment you specified. You can see all your filters at any time: Gmail Settings (gear icon) → See all settings → Filters and Blocked Addresses.`,
-        warning: `Be careful with "Delete it" as an action — deleted emails skip the inbox entirely and go to Trash, where they are permanently deleted after 30 days. Use "Skip the Inbox + Apply Label" instead of delete for important senders you just want organized.`,
+        warning: `Be careful with "Delete it" as an action — deleted emails skip the inbox entirely and go to Trash, where they are permanently deleted after 30 days. Use "Skip the Inbox + Apply Label" instead of delete for important senders you want organized.`,
       },
     ],
   },
@@ -193,7 +193,7 @@ This is one of the most powerful inbox management features in Gmail and requires
 
 Call Screen is one of the most praised Pixel-only features. When an unknown number calls you, Google Assistant answers on your behalf, asks the caller why they are calling, and shows you a live transcript of their response on your screen. You read what they say and decide whether to pick up, mark it as spam, or hang up — without ever putting the phone to your ear.
 
-Magic Eraser, found in the Google Photos app, removes unwanted objects from photos with one tap. Photobomb ruined a beach photo? Select the person in the background and erase them. Magic Eraser uses AI to fill in the background seamlessly.
+Magic Eraser, found in the Google Photos app, removes unwanted objects from photos with one tap. Photobomb ruined a beach photo? Select the person in the background and erase them. Magic Eraser uses AI to fill in the background smoothly.
 
 Now Playing is a passive music recognition feature. Even when your phone is locked, the Pixel quietly listens for nearby music and displays the song name on your lock screen — without sending any audio to Google's servers. It works offline using a local database.
 
@@ -419,7 +419,7 @@ Saved places sync across all your devices. Save a restaurant on your phone and i
 
 You can also create custom lists for different purposes: "Family Restaurants," "Doctor Offices," "Places to Visit on Vacation," or anything else. Share lists with family members so you can coordinate on places together.
 
-Starred places are the simplest — a star symbol marks the location on the map so it is easy to spot when you are browsing the area.`,
+Starred places are the simplest — a star symbol marks the location on the map so you can spot when you are browsing the area.`,
     steps: [
       {
         title: `Find a Place to Save`,

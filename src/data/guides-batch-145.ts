@@ -221,7 +221,7 @@ What is NOT automatically protected: apps you paid for (you can re-download thos
       {
         title: 'Understand what the cloud is',
         content:
-          'The cloud is simply a group of computers in a building that store your files over the internet. When something is "in the cloud," a copy of it lives on those computers — not only on your device. That means if your phone breaks, your files are still safe and you can get them back on a new device.',
+          'The cloud is a group of computers in a building that store your files over the internet. When something is "in the cloud," a copy of it lives on those computers — not only on your device. That means if your phone breaks, your files are still safe and you can get them back on a new device.',
       },
       {
         title: 'Find out which cloud service you already have',

@@ -292,8 +292,8 @@ function BookingCard({
               <p className="text-sm font-medium text-primary capitalize">{booking.service_type.replace(/_/g, ' ')}</p>
             )}
 
-            {booking.description && (
-              <p className="text-sm text-muted-foreground line-clamp-2">{booking.description}</p>
+            {booking.problem_description && (
+              <p className="text-sm text-muted-foreground line-clamp-2">{booking.problem_description}</p>
             )}
 
             <div className="flex flex-wrap items-center gap-x-4 gap-y-1 text-xs text-muted-foreground pt-1">

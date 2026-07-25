@@ -33,15 +33,17 @@ type Category = {
   conditions: string[];
   accent: string;
   to: string;
+  /** Optional short label, e.g. "New" or "Most used" */
+  badge?: string;
 };
 
 const categories: Category[] = [
   {
     id: 'vision',
     icon: Eye,
-    badge: ' VISION',
-    title: 'Vision',
-    subtitle: 'For people with low vision or blindness',
+    label: 'Vision',
+    tagline: 'Read the screen out loud, magnify text, and adjust colors.',
+    conditions: ['Low Vision', 'Blindness', 'Color Blindness'],
     accent: 'from-sky-50 to-sky-100/40 dark:from-sky-950/30 dark:to-sky-900/10',
     to: '/accessibility#vision',
   },
@@ -83,6 +85,10 @@ type FeatureDetail = {
   heading: string;
   intro: string;
   features: { name: string; description: string; to: string }[];
+  /** Optional short label, e.g. "New" or "Most used" */
+  badge?: string;
+  /** Optional gradient classes for the section header */
+  accent?: string;
 };
 
 const categoryDetails: FeatureDetail[] = [
@@ -123,9 +129,10 @@ const categoryDetails: FeatureDetail[] = [
   {
     id: 'hearing',
     icon: Ear,
-    badge: ' HEARING',
-    title: 'Hearing',
-    subtitle: 'For people with hearing loss',
+    label: 'Hearing',
+    heading: 'Hearing — for hearing loss and deafness',
+    intro:
+      'Your phone can turn speech into text as it happens, flash a light when the doorbell rings, and send call audio straight to your hearing aids. All of it is built in.',
     accent: 'from-emerald-50 to-emerald-100/40 dark:from-emerald-950/30 dark:to-emerald-900/10',
     features: [
       {
@@ -157,9 +164,10 @@ const categoryDetails: FeatureDetail[] = [
   {
     id: 'motor',
     icon: Hand,
-    badge: ' MOTOR',
-    title: 'Motor',
-    subtitle: 'For people with limited dexterity',
+    label: 'Motor',
+    heading: 'Motor — for limited dexterity, tremors, and pain',
+    intro:
+      'If tapping small buttons is hard, you can run your device by voice, slow down what counts as a double-tap, or replace gestures with a single button. Nothing extra to buy.',
     accent: 'from-amber-50 to-amber-100/40 dark:from-amber-950/30 dark:to-amber-900/10',
     features: [
       {
@@ -191,9 +199,10 @@ const categoryDetails: FeatureDetail[] = [
   {
     id: 'cognitive',
     icon: Brain,
-    badge: ' COGNITIVE',
-    title: 'Cognitive',
-    subtitle: 'For focus, learning, and memory',
+    label: 'Cognitive',
+    heading: 'Cognitive — for memory, focus, and learning',
+    intro:
+      'You can strip a phone down to a few large buttons, silence everything except the people who matter, and set reminders that speak up on their own.',
     accent: 'from-violet-50 to-violet-100/40 dark:from-violet-950/30 dark:to-violet-900/10',
     features: [
       {

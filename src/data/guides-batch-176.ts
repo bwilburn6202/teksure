@@ -16,7 +16,7 @@ export const guidesBatch176: Guide[] = [
     steps: [
       { title: "Open the Health app", content: "Find the white icon with a pink heart on your home screen. Tap it to open. If you do not see it, swipe down on your home screen and type \"Health\" in the search bar." },
       { title: "Go to Browse, then Medications", content: "Tap Browse at the bottom right of the screen. Scroll down until you see Medications and tap it. Then tap \"Add a Medication.\"" },
-      { title: "Enter the medication name and details", content: "Type the name of your medication. The app will suggest matches. Pick the right one, then enter the dose (for example, 10 mg) and choose the shape and color of the pill so it is easy to recognize." },
+      { title: "Enter the medication name and details", content: "Type the name of your medication. The app will suggest matches. Pick the right one, then enter the dose (for example, 10 mg) and choose the shape and color of the pill so you can recognize." },
       { title: "Set the schedule and time", content: "Choose how often you take it (daily, every other day, weekly) and the exact time. You can add more than one time per day if needed. Tap Done when finished." },
       { title: "Allow notifications", content: "When prompted, tap Allow so the reminder will appear on your screen at the right time. You can also turn on critical alerts if you want the sound to play even when your phone is silent." }
     ]

@@ -130,7 +130,7 @@ Both iPhone and Android let you change the reading voice and how fast it speaks.
 
 **Which apps does this work in?**
 
-Speak Screen on iPhone works in Safari, Mail, Messages, Notes, Apple Books, and most other apps that display text. It does not work on video content (obviously nothing to read there) and may not work in some apps that use non-standard text display.
+Speak Screen on iPhone works in Safari, Mail, Messages, Notes, Apple Books, and most other apps that display text. It does not work on video content (there is no text to read) and may not work in some apps that use non-standard text display.
 
 Android Select to Speak works in Chrome, Gmail, Messages, and most apps. You tap the Select to Speak icon and then tap or highlight any text on screen.
 

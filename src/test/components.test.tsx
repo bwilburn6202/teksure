@@ -1,6 +1,7 @@
 import { describe, it, expect, beforeEach } from 'vitest';
 import { render, screen, fireEvent } from '@testing-library/react';
 import { MemoryRouter } from 'react-router-dom';
+import { HelmetProvider } from 'react-helmet-async';
 import { BackToTop } from '@/components/BackToTop';
 import { ShareGuideButton } from '@/components/ShareGuideButton';
 import { ReportBrokenLink } from '@/components/ReportBrokenLink';
@@ -70,18 +71,22 @@ describe('ReportBrokenLink', () => {
 describe('PageBreadcrumb', () => {
   it('renders Home as first breadcrumb', () => {
     render(
-      <MemoryRouter>
-        <PageBreadcrumb segments={[{ label: 'Guides', href: '/guides' }, { label: 'Test Guide' }]} />
-      </MemoryRouter>
+      <HelmetProvider>
+        <MemoryRouter>
+          <PageBreadcrumb segments={[{ label: 'Guides', href: '/guides' }, { label: 'Test Guide' }]} />
+        </MemoryRouter>
+      </HelmetProvider>
     );
     expect(screen.getByText('Home')).toBeInTheDocument();
   });
 
   it('renders correct breadcrumb trail', () => {
     render(
-      <MemoryRouter>
-        <PageBreadcrumb segments={[{ label: 'Guides', href: '/guides' }, { label: 'My Guide' }]} />
-      </MemoryRouter>
+      <HelmetProvider>
+        <MemoryRouter>
+          <PageBreadcrumb segments={[{ label: 'Guides', href: '/guides' }, { label: 'My Guide' }]} />
+        </MemoryRouter>
+      </HelmetProvider>
     );
     expect(screen.getByText('Home')).toBeInTheDocument();
     expect(screen.getByText('Guides')).toBeInTheDocument();
@@ -90,9 +95,11 @@ describe('PageBreadcrumb', () => {
 
   it('renders last segment as current page (not a link)', () => {
     render(
-      <MemoryRouter>
-        <PageBreadcrumb segments={[{ label: 'Current Page' }]} />
-      </MemoryRouter>
+      <HelmetProvider>
+        <MemoryRouter>
+          <PageBreadcrumb segments={[{ label: 'Current Page' }]} />
+        </MemoryRouter>
+      </HelmetProvider>
     );
     // The last segment should not be a link
     const currentPage = screen.getByText('Current Page');
@@ -106,24 +113,24 @@ describe('CookieConsent', () => {
   });
 
   it('shows when no consent in localStorage', () => {
-    render(<CookieConsent />);
+    render(<MemoryRouter><CookieConsent /></MemoryRouter>);
     expect(screen.getByRole('dialog', { name: /cookie consent/i })).toBeInTheDocument();
   });
 
   it('hides when consent already given', () => {
     localStorage.setItem('teksure-cookie-consent', 'accepted');
-    const { container } = render(<CookieConsent />);
+    const { container } = render(<MemoryRouter><CookieConsent /></MemoryRouter>);
     expect(container.innerHTML).toBe('');
   });
 
   it('hides after clicking Accept', () => {
-    render(<CookieConsent />);
+    render(<MemoryRouter><CookieConsent /></MemoryRouter>);
     fireEvent.click(screen.getByText('Accept'));
     expect(screen.queryByRole('dialog')).toBeNull();
   });
 
   it('stores consent in localStorage after accepting', () => {
-    render(<CookieConsent />);
+    render(<MemoryRouter><CookieConsent /></MemoryRouter>);
     fireEvent.click(screen.getByText('Accept'));
     expect(localStorage.getItem('teksure-cookie-consent')).toBe('accepted');
   });

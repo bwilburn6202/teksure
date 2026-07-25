@@ -26,4 +26,4 @@ Disallow: /payment/success
 Disallow: /payment/cancel
 Disallow: /api/
 
-Sitemap: https://teksure.com/sitemap.xml
+Sitemap: https://www.teksure.com/sitemap.xml

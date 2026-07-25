@@ -265,7 +265,7 @@ Hue works with Amazon Alexa, Google Home, and Apple HomeKit, so you can also con
       {
         title: 'Get a Hue Starter Kit',
         content: 'Purchase a Philips Hue Starter Kit from Best Buy, Target, Amazon, or Costco. The kit includes a Hue Bridge (the hub) and 2-3 bulbs. Make sure to get bulbs in the right base size — A19 (standard screw-in) fits most US lamps and fixtures.',
-        tip: 'If you just want to try smart bulbs without a full system, Philips also makes Bluetooth-only Hue bulbs that work without the Bridge — but you lose remote access and advanced scheduling.',
+        tip: 'If you want to try smart bulbs without a full system, Philips also makes Bluetooth-only Hue bulbs that work without the Bridge — but you lose remote access and advanced scheduling.',
       },
       {
         title: 'Screw in the bulbs',

@@ -89,7 +89,7 @@ function findRelevantGuides(query: string, count = 5) {
 async function queryBrainAPI(question: string, contextGuides: typeof guides): Promise<string | null> {
   try {
     const context = contextGuides.slice(0, 3).map(g =>
-      `GUIDE: ${g.title}\nURL: https://teksure.com/guides/${g.slug}\nSUMMARY: ${g.excerpt}\n${g.steps?.slice(0, 3).map(s => `- ${s.title}: ${s.content}`).join('\n') || ''}`
+      `GUIDE: ${g.title}\nURL: https://www.teksure.com/guides/${g.slug}\nSUMMARY: ${g.excerpt}\n${g.steps?.slice(0, 3).map(s => `- ${s.title}: ${s.content}`).join('\n') || ''}`
     ).join('\n\n---\n\n');
 
     const { data, error } = await supabase.functions.invoke('brain-query', {

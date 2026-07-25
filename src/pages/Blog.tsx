@@ -376,13 +376,13 @@ export default function Blog() {
             description: detailPost.excerpt,
             datePublished: detailPost.date,
             dateModified: detailPost.date,
-            author: { '@type': 'Organization', name: 'TekSure', url: 'https://teksure.com' },
+            author: { '@type': 'Organization', name: 'TekSure', url: 'https://www.teksure.com' },
             publisher: {
               '@type': 'Organization',
               name: 'TekSure',
-              logo: { '@type': 'ImageObject', url: 'https://teksure.com/og-image.png' },
+              logo: { '@type': 'ImageObject', url: 'https://www.teksure.com/og-image.png' },
             },
-            mainEntityOfPage: { '@type': 'WebPage', '@id': `https://teksure.com/blog/${detailPost.slug}` },
+            mainEntityOfPage: { '@type': 'WebPage', '@id': `https://www.teksure.com/blog/${detailPost.slug}` },
             articleSection: detailPost.category,
             keywords: detailPost.category,
           }}

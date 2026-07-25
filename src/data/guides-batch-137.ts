@@ -81,7 +81,7 @@ Watch a comparison: on YouTube, search for "Roku vs Google TV 2026 comparison" �
     steps: [
       {
         title: 'Roku — what it does well',
-        content: 'Roku makes the simplest streaming device on the market. The home screen is a grid of app icons — Netflix, Hulu, YouTube, Disney+. You click an app, you watch. There are no recommendations from Roku trying to steer you to other content, no algorithm, no Google account required. The remote is small and has a real "Home" button that always brings you back to the grid. Roku also has the best free channel selection in 2026 — The Roku Channel (free with ads), Pluto TV, Tubi, and Freevee are all built in. For someone who just wants to watch their shows without learning new technology, Roku is the right answer.',
+        content: 'Roku makes the simplest streaming device on the market. The home screen is a grid of app icons — Netflix, Hulu, YouTube, Disney+. You click an app, you watch. There are no recommendations from Roku trying to steer you to other content, no algorithm, no Google account required. The remote is small and has a real "Home" button that always brings you back to the grid. Roku also has the best free channel selection in 2026 — The Roku Channel (free with ads), Pluto TV, Tubi, and Freevee are all built in. For someone who wants to watch their shows without learning new technology, Roku is the right answer.',
         tip: 'Quick Tip: The Roku Streaming Stick 4K is the best buy at around $50 — it does everything most people need.',
       },
       {

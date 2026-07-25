@@ -420,10 +420,10 @@ const GuideDetail = () => {
     '@type': 'VideoObject',
     name: `${guide.title} — Video Tutorial`,
     description: guide.excerpt,
-    thumbnailUrl: `https://teksure.com/og-image.png`,
+    thumbnailUrl: `https://www.teksure.com/og-image.png`,
     uploadDate: guide.publishedAt,
     embedUrl: guide.videoUrl,
-    publisher: { '@type': 'Organization', name: 'TekSure', logo: { '@type': 'ImageObject', url: 'https://teksure.com/og-image.png' } },
+    publisher: { '@type': 'Organization', name: 'TekSure', logo: { '@type': 'ImageObject', url: 'https://www.teksure.com/og-image.png' } },
   } : undefined;
 
   // FAQ schema from guide steps — boosts chances of rich snippets in Google
@@ -444,10 +444,10 @@ const GuideDetail = () => {
     '@context': 'https://schema.org',
     '@type': 'BreadcrumbList',
     itemListElement: [
-      { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://teksure.com/' },
-      { '@type': 'ListItem', position: 2, name: 'Guides', item: 'https://teksure.com/guides' },
-      { '@type': 'ListItem', position: 3, name: categoryLabels[guide.category], item: `https://teksure.com/guides?category=${guide.category}` },
-      { '@type': 'ListItem', position: 4, name: guide.title, item: `https://teksure.com/guides/${guide.slug}` },
+      { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://www.teksure.com/' },
+      { '@type': 'ListItem', position: 2, name: 'Guides', item: 'https://www.teksure.com/guides' },
+      { '@type': 'ListItem', position: 3, name: categoryLabels[guide.category], item: `https://www.teksure.com/guides?category=${guide.category}` },
+      { '@type': 'ListItem', position: 4, name: guide.title, item: `https://www.teksure.com/guides/${guide.slug}` },
     ],
   };
 

@@ -101,7 +101,7 @@ export const guidesBatch200: Guide[] = [
     slug: "how-to-use-etsy-for-handmade-gifts",
     title: "How to Use Etsy to Find Handmade Gifts",
     excerpt: "Shop Etsy safely for one-of-a-kind handmade and vintage gifts, with tips on reading reviews, checking shipping, and avoiding scams.",
-    category: "shopping",
+    category: "buying-guides",
     tags: ["etsy", "gifts", "handmade", "shopping", "online"],
     readTime: "9 min",
     thumbnailEmoji: "🧶",

@@ -250,7 +250,7 @@ Teleparty works only on a computer, in the Chrome, Edge, or Firefox browser. It 
 
 Everyone in the party needs their own subscription to the streaming service being watched. You're not sharing an account — Teleparty just synchronizes playback so everyone is watching the same thing at the same time from their own accounts.
 
-The chat window on the side shows everyone who's watching and lets you comment, react with emoji, and share reactions in real time. You can turn chat off if you just want synchronized viewing without the side conversation.
+The chat window on the side shows everyone who's watching and lets you comment, react with emoji, and share reactions in real time. You can turn chat off if you want synchronized viewing without the side conversation.
 
 Setup takes about five minutes: install the extension, start a watch party, and share the link. Anyone with the link and the extension can join.`,
     steps: [
@@ -639,7 +639,7 @@ If you use Android Auto (connecting your phone to your car's screen), that inter
       },
       {
         title: 'Turn Off When Not Driving',
-        content: `Driving mode deactivates automatically when your phone detects you've stopped. If it stays on after parking, swipe down to open Quick Settings and tap the Do Not Disturb icon to turn it off manually. Or just wait — most phones detect when you've been stationary for a few minutes and deactivate automatically.`,
+        content: `Driving mode deactivates automatically when your phone detects you've stopped. If it stays on after parking, swipe down to open Quick Settings and tap the Do Not Disturb icon to turn it off manually. Or wait — most phones detect when you've been stationary for a few minutes and deactivate automatically.`,
       },
     ],
   },
@@ -709,7 +709,7 @@ Along the right side are volume up and volume down buttons. If your TV is connec
 
 The Back button (arrow pointing left) goes back one screen, the same as the back button on a phone. The Home button (TV shape) takes you back to the Apple TV home screen from anywhere. The Mute button silences audio.
 
-The Siri button (the circle with a microphone icon) is one of the most useful features: hold it and speak a command. "Play The Queen's Gambit on Netflix," "Show me action movies," "What did he just say?" (replays the last 15 seconds with captions), "Turn on captions," or "How long is this movie?" — Siri handles all of these.
+The Siri button (the circle with a microphone icon) is one of the most useful features: hold it and speak a command. "Play The Queen's Gambit on Netflix," "Show me action movies," "What did he say?" (replays the last 15 seconds with captions), "Turn on captions," or "How long is this movie?" — Siri handles all of these.
 
 The remote also controls playback: single click the clickpad to pause/play. Click and hold briefly to scrub through a video. Swipe left or right to skip back or forward.`,
     steps: [

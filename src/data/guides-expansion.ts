@@ -5311,7 +5311,7 @@ Set a Screen Time passcode that is different from the child's login password. Th
     thumbnailEmoji: '',
     publishedAt: '2026-04-16',
     difficulty: 'Beginner' as any,
-    body: `Spotify has over 100 million songs and 5 million podcasts available on demand. The free tier lets you listen with occasional ads, while Spotify Premium removes ads and lets you download music for offline listening. It works on phones, computers, smart speakers, and in your car — and it is easy to get started.`,
+    body: `Spotify has over 100 million songs and 5 million podcasts available on demand. The free tier lets you listen with occasional ads, while Spotify Premium removes ads and lets you download music for offline listening. It works on phones, computers, smart speakers, and in your car — and you can get started.`,
     steps: [
       { title: 'Create a free Spotify account', content: 'Go to spotify.com or download the Spotify app on your phone. Click "Sign up for free" and register with your email address or your Google or Facebook account. The free plan gives you access to the full library with ads.' },
       { title: 'Search for music or artists', content: `Tap the magnifying glass icon and type an artist name, song title, or genre. Tap a result to see that artist's top songs and albums. Tap the play button next to any song to start listening.` },

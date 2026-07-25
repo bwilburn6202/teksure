@@ -50,7 +50,7 @@ export default function HardwareSecurityKeys() {
             <ul className="list-disc pl-5 space-y-2 text-sm">
               <li>$30 — Google&apos;s alternative.</li>
               <li>Bluetooth + USB versions.</li>
-              <li>Works seamlessly with Google accounts.</li>
+              <li>Works smoothly with Google accounts.</li>
               <li>Less universal than YubiKey.</li>
               <li>Good for Google-heavy users.</li>
               <li>Buy from Google Store.</li>

@@ -105,7 +105,7 @@ This guide shows how to turn it on, what works and what does not, and a couple o
       },
       {
         title: 'Quit iPhone Mirroring',
-        content: 'When you are done, simply close the iPhone Mirroring window — click the red dot in the top-left corner of the window. Your iPhone unlocks and goes back to normal. You can also quit the iPhone Mirroring app entirely from the Mac menu bar. To remove the connection later or reset the trust between your devices: open iPhone Mirroring → Settings menu → Sign Out or Reset.',
+        content: 'When you are done, close the iPhone Mirroring window — click the red dot in the top-left corner of the window. Your iPhone unlocks and goes back to normal. You can also quit the iPhone Mirroring app entirely from the Mac menu bar. To remove the connection later or reset the trust between your devices: open iPhone Mirroring → Settings menu → Sign Out or Reset.',
       },
       {
         title: 'Common problems and fixes',
@@ -197,7 +197,7 @@ This guide walks through Google's free Security Checkup and a 30-minute spring c
       {
         title: 'Audit third-party apps connected to your Google account',
         content: 'Click "Third-party apps with account access" or go directly to myaccount.google.com/permissions. This list shows every app, website, and service you have given permission to read your email, calendar, contacts, or Google Drive. Look through it carefully. Anything you do not actively use? Click it and choose "Remove Access." Common cleanup targets: trial productivity apps, old expense trackers, calendar add-ons from a former job, fitness apps you stopped using, marketing tools.',
-        tip: 'Quick Tip: If a service you removed access from is one you actively use, it will simply ask you to sign in again next time. You are not breaking anything permanent.',
+        tip: 'Quick Tip: If a service you removed access from is one you actively use, it will ask you to sign in again next time. You are not breaking anything permanent.',
       },
       {
         title: 'Check who can see your YouTube, Photos, and Maps activity',

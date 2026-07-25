@@ -155,7 +155,7 @@ People post questions, articles, photos, and videos to subreddits, and other mem
 
 Reddit is one of the best places on the internet to get genuine human advice on specific problems. If you have a technology question, a question about a medication, a travel recommendation, or a problem with a product, there is likely a Reddit community where someone has asked the same question — or you can ask and get responses from people with real experience.
 
-You do not need an account to read Reddit. Browsing is completely free and does not require any registration. Simply go to reddit.com or open the Reddit app and search for any topic.
+You do not need an account to read Reddit. Browsing is completely free and does not require any registration. Go to reddit.com or open the Reddit app and search for any topic.
 
 Reddit is heavily text-based and the interface can feel cluttered at first. The most important things to know: "upvote" means people found a post or comment helpful; "downvote" means people found it unhelpful. The highest-upvoted answers in a thread are usually the most reliable. The newest answers appear lower in the list — scroll past them to see the top-voted responses.
 
@@ -290,7 +290,7 @@ Editing dictated text works the same as editing any text — tap where you want 
     thumbnailEmoji: '',
     publishedAt: '2026-04-19',
     difficulty: 'Beginner',
-    body: `Android phones have a built-in voice typing feature that lets you speak your text instead of typing. It works in any app where you can type — messaging, email, search bars, notes, forms, and more. Just tap the microphone icon on the Google keyboard and speak.
+    body: `Android phones have a built-in voice typing feature that lets you speak your text instead of typing. It works in any app where you can type — messaging, email, search bars, notes, forms, and more. Tap the microphone icon on the Google keyboard and speak.
 
 Voice typing on Android uses Google's speech recognition technology, which is highly accurate and improves as you use it. It handles natural speech well and can recognize punctuation if you say the words: say "comma," "period," "question mark," or "new line" to add those characters.
 
@@ -300,7 +300,7 @@ Voice typing requires an internet connection on most Android phones — it sends
 
 Voice typing is distinct from Google Assistant — "Hey Google" activates the Assistant, which does tasks like making calls or searching the web. Voice typing specifically inserts spoken words into whatever text field you have open.
 
-For people with arthritis, hand tremors, visual difficulties, or anyone who simply types more slowly than they speak, voice typing can dramatically increase communication speed and comfort.`,
+For people with arthritis, hand tremors, visual difficulties, or anyone who types more slowly than they speak, voice typing can dramatically increase communication speed and comfort.`,
     steps: [
       {
         title: 'Find the Microphone on Your Keyboard',

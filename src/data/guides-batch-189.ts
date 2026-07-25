@@ -119,7 +119,7 @@ export const guidesBatch189: Guide[] = [
         warning: "Double check each name before you send. A wrong contact means your private health news goes to a stranger."
       },
       {
-        title: "Name the group so it is easy to find later",
+        title: "Name the group so you can find it later",
         content: "On iPhone, tap the names at the top of the group chat. Tap \"Change Name and Photo.\" Type a name like \"Family Updates\" or \"Dad's Health News.\" Pick a photo or icon. Tap \"Done.\" On Android, tap the three dots in the top right of the chat, tap \"Group settings,\" and tap \"Change group name.\" A named group is easy to find next month when you have another update to send.",
         tip: "Save this group as a favorite so you can find it fast. On iPhone, swipe right on the group in your message list and tap the yellow pin."
       },

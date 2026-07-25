@@ -145,7 +145,7 @@ This guide covers the Gmail app specifically. If you use a different email app l
     thumbnailEmoji: ``,
     publishedAt: `2026-04-19`,
     difficulty: `Beginner`,
-    body: `When you get dozens of emails a day, it's easy for something important to get buried — a message from your doctor, a note from your child or grandchild, or something from your bank. Apple Mail has a feature called VIP that solves this problem.
+    body: `When you get dozens of emails a day, it is common for something important to get buried — a message from your doctor, a note from your child or grandchild, or something from your bank. Apple Mail has a feature called VIP that solves this problem.
 
 When you add someone as a VIP in Apple Mail, a few things happen:
 - Their emails get a special star icon so they're easy to spot
@@ -244,7 +244,7 @@ This guide will walk you through setting up the Mail app with a Gmail account as
     difficulty: `Beginner`,
     body: `Keeping track of paper documents — medical records, receipts, insurance cards, tax forms — is a constant challenge. The Google Drive app on Android has a built-in document scanner that makes it quick and convenient to turn any paper document into a digital file.
 
-Here's what makes it useful: when you scan a document with the Google Drive app, it doesn't just take a photo. It automatically adjusts the image for better readability, straightens the edges, and removes shadows. It saves the result as a PDF file — which is a standard document format that anyone can open. The PDF also becomes searchable, meaning you can search for words inside it later.
+Here's what makes it useful: when you scan a document with the Google Drive app, it doesn't take a photo. It automatically adjusts the image for better readability, straightens the edges, and removes shadows. It saves the result as a PDF file — which is a standard document format that anyone can open. The PDF also becomes searchable, meaning you can search for words inside it later.
 
 Once it's in Google Drive, your scanned document is accessible from any device: your phone, a tablet, or a computer. You can share it with your doctor, accountant, or family member by sending them a link. You can organize it into folders. And because it's stored in the cloud, it's safe even if you lose your phone.
 
@@ -447,7 +447,7 @@ This works especially well if you wake up cold in the middle of the night — no
 
 Here's a summary of what this guide will cover:
 
-**Saving Home and Work:** You can tell Apple Maps where you live and where you work. Then instead of typing your address every time, you say "Take me home" or just tap "Home" with one tap.
+**Saving Home and Work:** You can tell Apple Maps where you live and where you work. Then instead of typing your address every time, you say "Take me home" or tap "Home" with one tap.
 
 **Reporting Hazards:** If you see an accident, a hazard in the road, or a speed trap, you can report it while navigating. Apple Maps shares this information with other drivers to improve their routes.
 
@@ -613,7 +613,7 @@ This guide covers both sending and listening to voice messages.`,
       },
       {
         title: `Record a voice message`,
-        content: `Press and hold the microphone icon. While you're holding it, speak your message clearly. You'll see a red recording indicator showing how long you've been recording. When you're done, simply lift your finger off the button. WhatsApp will automatically send the message.`,
+        content: `Press and hold the microphone icon. While you're holding it, speak your message clearly. You'll see a red recording indicator showing how long you've been recording. When you're done, lift your finger off the button. WhatsApp will automatically send the message.`,
         tip: `Hold the phone a comfortable distance from your face — you don't need to speak directly into it. Normal conversational volume works fine.`
       },
       {

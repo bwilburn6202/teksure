@@ -27,7 +27,7 @@ Open the Settings app and tap Privacy (on some phones it is labeled Permissions 
 
 To change a permission, tap the app name and choose a different setting. "Allow only while using the app" is a good middle-ground for apps that genuinely need the camera or microphone but should not have it running in the background.
 
-**Quick Tip:** If an app you rarely use has camera or microphone access, it is perfectly safe to remove that permission. The app will still work for most things — it will just ask you again if it ever needs camera or microphone access in the future.
+**Quick Tip:** If an app you rarely use has camera or microphone access, it is perfectly safe to remove that permission. The app will still work for most things — it will ask you again if it ever needs camera or microphone access in the future.
 
 **A good habit to build**
 
@@ -137,7 +137,7 @@ If your phone goes missing, go to icloud.com/find on any computer or phone, sign
     excerpt: "Learn how to activate and use Google Assistant on your Android phone to get answers, set reminders, make calls, and more — without typing a word.",
     body: `Google Assistant is a voice-activated helper built into most Android phones. You can ask it questions, set reminders, send text messages, make phone calls, get directions, and much more — all by speaking out loud. You do not need to type anything.
 
-This is especially helpful if you find small touchscreen keyboards frustrating, if your hands are busy, or if you simply prefer talking to typing.
+This is especially helpful if you find small touchscreen keyboards frustrating, if your hands are busy, or if you prefer talking to typing.
 
 **What Google Assistant can do**
 

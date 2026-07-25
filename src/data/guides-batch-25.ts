@@ -398,7 +398,7 @@ Grocery chains like Walmart, Target, and Kroger offer free Wi-Fi in-store. Publi
       },
       {
         title: 'Connect to a Trusted Network',
-        content: 'On your phone, go to Settings → Wi-Fi. Tap the name of the hotspot network to connect. For library and government networks, simply tap and connect. For coffee shops and restaurants, you may need to open a browser and accept terms of service before internet access begins.',
+        content: 'On your phone, go to Settings → Wi-Fi. Tap the name of the hotspot network to connect. For library and government networks, tap and connect. For coffee shops and restaurants, you may need to open a browser and accept terms of service before internet access begins.',
         tip: `Familiar brand names (Starbucks, McDonald's, Barnes & Noble) are more reliable than random network names you do not recognize.`,
       },
       {

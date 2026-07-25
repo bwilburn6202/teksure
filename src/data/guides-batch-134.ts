@@ -151,7 +151,7 @@ This guide shows the four signals to check on any email like this, what a real C
       },
       {
         title: 'Report the email to Costco and the FTC',
-        content: 'Forward the email to phishing@costco.com (that is the real Costco anti-fraud address). Then file a quick complaint at reportfraud.ftc.gov — it takes 3 minutes, no account needed. The more people who report, the faster the scam domains get taken down. After reporting, delete the email. Do not just leave it in your inbox — it is easy to forget and accidentally click later.',
+        content: 'Forward the email to phishing@costco.com (that is the real Costco anti-fraud address). Then file a quick complaint at reportfraud.ftc.gov — it takes 3 minutes, no account needed. The more people who report, the faster the scam domains get taken down. After reporting, delete the email. Do not leave it in your inbox — it is common to forget and accidentally click later.',
       },
       {
         title: 'What to do if you already clicked',
@@ -358,7 +358,7 @@ For seniors who hate remembering passwords or who have been phished before, pass
       },
       {
         title: 'Sign in using your passkey',
-        content: 'Next time you visit the bank website or app, tap "Sign in with passkey" (or just tap Sign In on a phone — the passkey usually appears automatically). Your phone shows a prompt: "Use Face ID to sign into Chase?" Look at the camera or touch the sensor. You are in. No username, no password, nothing to type.',
+        content: 'Next time you visit the bank website or app, tap "Sign in with passkey" (or tap Sign In on a phone — the passkey usually appears automatically). Your phone shows a prompt: "Use Face ID to sign into Chase?" Look at the camera or touch the sensor. You are in. No username, no password, nothing to type.',
         tip: 'Quick Tip: If the passkey prompt does not appear, your phone may have screen lock disabled. Passkeys require some form of lock — Face ID, Touch ID, or a PIN. Set one in Settings > Face ID & Passcode (iPhone) or Settings > Security (Android) first.',
       },
       {

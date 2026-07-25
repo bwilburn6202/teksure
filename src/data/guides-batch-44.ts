@@ -112,7 +112,7 @@ After the call, if you recorded it, Zoom saves the recording to your computer (f
     difficulty: `Beginner`,
     body: `Adding an email account to your Android phone means you can check your inbox, reply to messages, and send new emails right from your phone — without opening a web browser. Android phones come with the Gmail app already installed, and it handles not just Gmail but also Yahoo Mail, Outlook, AOL, and most other email providers.
 
-If you have a Gmail address, the Gmail app is already set up from the moment you sign into your Google account on the phone. But if you want to add a second email address — say, a Yahoo account or a work email — you just need to add it in settings.
+If you have a Gmail address, the Gmail app is already set up from the moment you sign into your Google account on the phone. But if you want to add a second email address — say, a Yahoo account or a work email — you need to add it in settings.
 
 For email services like Yahoo Mail, Outlook.com (Hotmail), or iCloud, the Gmail app will handle the connection automatically once you enter your email address and password. For workplace emails that use a private server, your IT department may need to give you server settings.
 
@@ -662,7 +662,7 @@ Captions are generated automatically by Zoom's speech-to-text engine. Accuracy i
 
 Zoom has two types of recording: local recording (saves to your computer) and cloud recording (saves to Zoom's servers online). Local recording is available on the free Zoom plan. Cloud recording requires a paid Zoom subscription.
 
-For most everyday uses, local recording works great. The recording saves as an MP4 video file on your computer — you can watch it in any video player, upload it to Google Drive or YouTube to share, or just keep it for your own reference.
+For most everyday uses, local recording works great. The recording saves as an MP4 video file on your computer — you can watch it in any video player, upload it to Google Drive or YouTube to share, or keep it for your own reference.
 
 Only the meeting host and any participants granted recording permission can record a Zoom meeting. Participants receive a notification when recording starts so everyone knows the call is being saved. This is an important privacy consideration — always let participants know before you start recording.
 

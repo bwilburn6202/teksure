@@ -16,7 +16,7 @@ export const guidesBatch320: Guide[] = [
     publishedAt: "2026-07-11",
     lastVerifiedAt: "2026-07-11",
     difficulty: "Beginner",
-    body: "Tax return fraud happens when someone files a fake tax return using your name and Social Security number, hoping to collect your refund before you file your real one. The IRS's free Identity Protection PIN (IP PIN) program stops this cold: once you have one, the IRS will reject any tax return filed under your Social Security number unless it includes your current 6-digit PIN, which only you know and which changes every year.\n\nGetting an IP PIN is one of the single most effective free steps anyone can take to protect themselves from tax identity theft, and the IRS recommends it for everyone, not just people who have already been victimized. It takes about ten minutes to set up online through the IRS's official identity verification system, and after the first year it's easy to retrieve a new PIN each January.\n\nBeware of tax season phone calls, texts, or emails claiming to be from the IRS asking you to \"verify\" your PIN or Social Security number — the real IRS never initiates contact this way and never asks for your PIN over the phone. Source: irs.gov/identity-theft-fraud-scams/get-an-identity-protection-pin.",
+    body: "Tax return fraud happens when someone files a fake tax return using your name and Social Security number, hoping to collect your refund before you file your real one. The IRS's free Identity Protection PIN (IP PIN) program stops this cold: once you have one, the IRS will reject any tax return filed under your Social Security number unless it includes your current 6-digit PIN, which only you know and which changes every year.\n\nGetting an IP PIN is one of the single most effective free steps anyone can take to protect themselves from tax identity theft, and the IRS recommends it for everyone, not just people who have already been victimized. It takes about ten minutes to set up online through the IRS's official identity verification system, and after the first year you can retrieve a new PIN each January.\n\nBeware of tax season phone calls, texts, or emails claiming to be from the IRS asking you to \"verify\" your PIN or Social Security number — the real IRS never initiates contact this way and never asks for your PIN over the phone. Source: irs.gov/identity-theft-fraud-scams/get-an-identity-protection-pin.",
     steps: [
       {
         title: "Go to the official IRS site",
@@ -107,7 +107,7 @@ export const guidesBatch320: Guide[] = [
         content: "On a computer, go to myaccount.google.com, select \"Security,\" then \"2-Step Verification.\" Scroll to \"Backup codes\" and select \"Get backup codes.\" Google generates 10 codes, each usable once.",
       },
       {
-        title: "Print or write down the codes — don't just leave them on screen",
+        title: "Print or write down the codes — don't leave them on screen",
         content: "Print the list or write it by hand, then store it somewhere secure like a locked drawer or with other important documents — not saved as a photo on the same phone you're protecting against losing.",
         warning: "Treat backup codes like spare keys to your house: anyone who finds them can get into your account, so don't leave them somewhere easily found, like taped to your computer monitor.",
       },

@@ -165,7 +165,7 @@ Before purchasing, make a list of what you want to connect: how many monitors, w
       },
       {
         title: `Set up the dock on your desk`,
-        content: `Place the dock in a convenient spot on your desk — near the edge where it is easy to reach the connection cable. Plug your monitor, keyboard, mouse, ethernet cable, and other accessories into the dock's ports. Then connect the dock's main cable (USB-C or Thunderbolt) to your laptop.`,
+        content: `Place the dock in a convenient spot on your desk — near the edge where you can reach the connection cable. Plug your monitor, keyboard, mouse, ethernet cable, and other accessories into the dock's ports. Then connect the dock's main cable (USB-C or Thunderbolt) to your laptop.`,
       },
       {
         title: `Confirm everything is working`,

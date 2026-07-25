@@ -19,7 +19,7 @@ The free tier lets you stream music with occasional ads. YouTube Music Premium (
 
 One standout feature: YouTube Music is excellent at finding hard-to-find songs, live versions, and cover songs that Spotify and Apple Music do not have. If you are looking for a specific version of a song, YouTube Music often has it.
 
-If you have a Google or Gmail account, you already have a YouTube Music account — no separate sign-up needed. Just download the app or go to music.youtube.com.`,
+If you have a Google or Gmail account, you already have a YouTube Music account — no separate sign-up needed. Download the app or go to music.youtube.com.`,
     steps: [
       {
         title: `Download or open YouTube Music`,
@@ -253,7 +253,7 @@ The result: no checkout line at all. This is especially valuable at Sam's Club w
 
 The app also gives you access to your digital membership card (no physical card needed), weekly member savings, tire center scheduling, pharmacy services, and curbside pickup or delivery ordering.
 
-Scan & Go is free for all Sam's Club members. You just need a Sam's Club membership ($50/year for basic Club membership or $110/year for Plus membership, which adds free shipping, early shopping hours, and more savings).
+Scan & Go is free for all Sam's Club members. You need a Sam's Club membership ($50/year for basic Club membership or $110/year for Plus membership, which adds free shipping, early shopping hours, and more savings).
 
 The Sam's Club app is free on iPhone and Android.`,
     steps: [
@@ -444,7 +444,7 @@ Nearby Share requires both devices to have Bluetooth and Wi-Fi turned on.`,
 
 Once connected, your health data appears in the Health app under "Health Records." You can see your blood test results, vaccination history, active medications, allergies on file, and a timeline of your medical visits.
 
-The data syncs automatically when your providers update it. You always have your up-to-date medical history with you — useful for emergency situations, new provider visits, or simply keeping track of your own health.
+The data syncs automatically when your providers update it. You always have your up-to-date medical history with you — useful for emergency situations, new provider visits, or keeping track of your own health.
 
 Your health records stay on your iPhone and are protected by your Face ID or Touch ID. Apple does not see your medical information.
 

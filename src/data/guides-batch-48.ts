@@ -45,7 +45,7 @@ You can also find Reels mixed in on your regular Home feed from accounts you fol
       {
         title: `Mute or adjust volume`,
         content: `Reels play with sound by default. Tap once anywhere on the video to mute it; tap again to unmute. You can also use your phone's physical volume buttons to adjust the level while a Reel is playing.`,
-        tip: `If you find Reels overwhelming, you can also just scroll past them in your regular Home feed without opening the Reels tab at all.`,
+        tip: `If you find Reels overwhelming, you can also scroll past them in your regular Home feed without opening the Reels tab at all.`,
       },
     ],
   },
@@ -110,7 +110,7 @@ When someone goes Live on Facebook, you'll see a notification if you follow them
 
 After a Live broadcast ends, it's usually saved as a regular video post on the person's profile or page, so you can watch it any time even if you missed it live.
 
-Going Live yourself is also available to everyone with a Facebook account. You can go Live from your phone using the Facebook app — no special equipment needed. People go Live to share family milestones, show off a hobby, or just say hello to friends and family spread across the country.
+Going Live yourself is also available to everyone with a Facebook account. You can go Live from your phone using the Facebook app — no special equipment needed. People go Live to share family milestones, show off a hobby, or say hello to friends and family spread across the country.
 
 If you run a Facebook Page (for a small business or community group), going Live is one of the best ways to get your posts seen by more people, since Facebook's system shows Live videos to more viewers than regular posts.`,
     steps: [
@@ -569,7 +569,7 @@ To use NFC, it must be turned on in your Android phone's settings — check Sett
       },
       {
         title: `Scan an NFC tag`,
-        content: `With NFC turned on, you don't usually need to open any app to scan an NFC tag. Simply touch the back of your phone to the tag — your phone will automatically read it and take the programmed action (opening a website, showing text, or launching an app). A small notification may appear at the top of your screen.`,
+        content: `With NFC turned on, you don't usually need to open any app to scan an NFC tag. Touch the back of your phone to the tag — your phone will automatically read it and take the programmed action (opening a website, showing text, or launching an app). A small notification may appear at the top of your screen.`,
       },
       {
         title: `Connect Bluetooth accessories with NFC`,
@@ -753,7 +753,7 @@ Pressure sensitivity means the harder you press, the darker and thicker your str
     steps: [
       {
         title: `Pair your Apple Pencil with your iPad`,
-        content: `For Apple Pencil 2nd gen: simply press the flat side of the Pencil against the magnetic connector strip on the side of your iPad. A pairing notification will appear on the iPad screen — tap "Pair." For Apple Pencil 1st gen: remove the cap on the blunt end of the Pencil and plug it into the Lightning port on your iPad. Tap "Pair" on the notification.`,
+        content: `For Apple Pencil 2nd gen: press the flat side of the Pencil against the magnetic connector strip on the side of your iPad. A pairing notification will appear on the iPad screen — tap "Pair." For Apple Pencil 1st gen: remove the cap on the blunt end of the Pencil and plug it into the Lightning port on your iPad. Tap "Pair" on the notification.`,
         tip: `You only need to pair once. After that, the Pencil reconnects automatically whenever you pick it up near your iPad.`,
       },
       {
@@ -796,7 +796,7 @@ When you share a calendar, you choose what level of access to give the other per
 
 You can also create a separate calendar (like "Family Events") and share just that calendar rather than your personal one. This keeps your work or personal appointments private while sharing family activities.
 
-Once someone accepts your share invitation, your calendar appears in their Google Calendar alongside their own — they see it in a different color so it's easy to tell apart. Changes you make appear instantly on their end, and vice versa if they have edit permissions.
+Once someone accepts your share invitation, your calendar appears in their Google Calendar alongside their own — they see it in a different color so you can tell apart. Changes you make appear instantly on their end, and vice versa if they have edit permissions.
 
 Sharing works between any two people with Google accounts, and they can view your calendar in a browser, on Android, on iPhone via the Google Calendar app, or even in Apple Calendar on Mac.`,
     steps: [
@@ -924,7 +924,7 @@ All recordings are saved to your phone's storage and can be accessed from within
       },
       {
         title: `Share or transcribe a recording`,
-        content: `Tap and hold a recording (or tap the three-dot menu next to it) to see options: share via email or message, rename the file, or (on Samsung) view the text transcription. On Google Pixel's Recorder app, the transcription is automatic — just tap the "Transcription" tab while playing back a recording to read the spoken words.`,
+        content: `Tap and hold a recording (or tap the three-dot menu next to it) to see options: share via email or message, rename the file, or (on Samsung) view the text transcription. On Google Pixel's Recorder app, the transcription is automatic — tap the "Transcription" tab while playing back a recording to read the spoken words.`,
         tip: `Recordings are saved to your phone's internal storage under a folder called "Recordings" or "VoiceRecorder." You can also access them through the Files app and move them to Google Drive for backup.`,
       },
     ],
@@ -942,7 +942,7 @@ All recordings are saved to your phone's storage and can be accessed from within
     difficulty: `Intermediate`,
     body: `Drag and drop on iPad lets you pick up an item with your finger — a photo, a block of text, a file, or a link — hold it while you navigate to another app, and then drop it there. It's a faster and more natural way to move content between apps than the traditional copy-and-paste approach.
 
-For example: you're looking at photos in your Photos app and want to include one in an email. Instead of copying, switching apps, tapping the attachment button, and finding the photo again — you can simply long-press the photo, drag it to the bottom of the screen while still holding it, tap the Mail app to open it, navigate to a draft, and drop the photo directly into the message body. The whole thing takes just a few seconds.
+For example: you're looking at photos in your Photos app and want to include one in an email. Instead of copying, switching apps, tapping the attachment button, and finding the photo again — you can long-press the photo, drag it to the bottom of the screen while still holding it, tap the Mail app to open it, navigate to a draft, and drop the photo directly into the message body. The whole thing takes just a few seconds.
 
 Drag and drop is especially powerful when two apps are open side-by-side using Split View. With both apps visible at once — say, Safari on the left and Notes on the right — you can drag text from a webpage directly into your note, drag a link into a message, or move a file from Files into a document you're editing.
 

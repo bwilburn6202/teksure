@@ -178,12 +178,12 @@ Alexa can call family members who also have an Echo or the Alexa app on their ph
 2. Tap the phone icon and allow access to your contacts when asked.
 3. Family members who have the Alexa app will appear. You can "invite" others to connect.
 
-Once connected: just say "Alexa, call [name]." Alexa finds them in your contacts and calls. They hear it on their Echo or Alexa app.
+Once connected: say "Alexa, call [name]." Alexa finds them in your contacts and calls. They hear it on their Echo or Alexa app.
 
 **Daily reminders for medications or appointments**
 
 1. Open the Alexa app → tap "More" (three lines) → Reminders & Alarms → Reminders → Add Reminder.
-2. Or just say: "Alexa, remind me to take my medication every day at 8 AM."
+2. Or say: "Alexa, remind me to take my medication every day at 8 AM."
 
 Alexa announces the reminder out loud at the time you set — helpful if you do not always have your phone nearby.
 
@@ -223,7 +223,7 @@ The Echo Show is especially popular with seniors because it has a screen — fam
       {
         title: 'Set up daily reminders for medications or appointments',
         content:
-          'Just say: "Alexa, remind me to take my blood pressure medicine every day at 8 AM." Alexa will confirm and announce it aloud at that time every day. You can also add reminders in the Alexa app under More → Reminders & Alarms.',
+          'Say: "Alexa, remind me to take my blood pressure medicine every day at 8 AM." Alexa will confirm and announce it aloud at that time every day. You can also add reminders in the Alexa app under More → Reminders & Alarms.',
       },
       {
         title: 'Connect Alexa to family members for free calling',

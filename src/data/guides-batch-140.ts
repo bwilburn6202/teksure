@@ -17,7 +17,7 @@ export const guidesBatch140: Guide[] = [
 
 **What does 5G mean?**
 
-5G stands for "fifth generation" — it is simply the fifth version of wireless network technology used by cell phones. The generations went: 1G (basic voice calls in the 1980s), 2G (text messages), 3G (basic internet on phones), 4G/LTE (fast internet, streaming video), and now 5G (even faster, in theory).
+5G stands for "fifth generation" — it is the fifth version of wireless network technology used by cell phones. The generations went: 1G (basic voice calls in the 1980s), 2G (text messages), 3G (basic internet on phones), 4G/LTE (fast internet, streaming video), and now 5G (even faster, in theory).
 
 The "G" just means generation, like "class of 2026" — it tells you which era of technology your phone is using to connect to cell towers.
 
@@ -147,7 +147,7 @@ On iPhone (you need to download the Google Maps app from the App Store first):
 
 **How to use offline maps while driving**
 
-Once downloaded, just use Google Maps normally. Type in an address or business name and tap "Directions." If your phone has no cell service, Maps uses the downloaded area and your GPS (which always works, even without service) to navigate.
+Once downloaded, use Google Maps normally. Type in an address or business name and tap "Directions." If your phone has no cell service, Maps uses the downloaded area and your GPS (which always works, even without service) to navigate.
 
 You will notice:
 - Traffic overlays are grayed out or missing

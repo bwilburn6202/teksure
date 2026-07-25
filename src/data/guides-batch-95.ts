@@ -123,7 +123,7 @@ If you check your Battery settings and notice one specific app is using a surpri
 
 iOS updates typically need between 500MB and 2.5GB of free space to download and install. If your phone is nearly full, you may need to temporarily free up some room even though the update itself will not permanently increase your phone's storage use.
 
-The single biggest space-saver for most people is photos and videos. If your photos are backed up to iCloud, Google Photos, or another cloud service, you can remove them from your phone without losing them — they will still be accessible through the Photos app (they will just download from the cloud when you open them instead of being stored on your phone).
+The single biggest space-saver for most people is photos and videos. If your photos are backed up to iCloud, Google Photos, or another cloud service, you can remove them from your phone without losing them — they will still be accessible through the Photos app (they will download from the cloud when you open them instead of being stored on your phone).
 
 If clearing space on your phone does not work, there is an alternative method: update your iPhone through a computer using iTunes (Windows) or Finder (Mac). This method does not require the phone to have free space for the update because the computer handles the download.`,
     steps: [
@@ -167,7 +167,7 @@ If clearing space on your phone does not work, there is an alternative method: u
     difficulty: 'Beginner',
     body: `If Gmail suddenly stopped loading, sending, or syncing in Outlook, Apple Mail, or another email program on your phone or computer, the most likely reason is a change Google made to how Gmail accounts log in to third-party apps.
 
-Google used to allow email apps to sign in to Gmail using a username and password the same way a person would. Starting in 2024, Google ended this older method — called Basic Authentication — and now requires all apps to use a newer, more secure sign-in system called OAuth 2.0. Apps that have not been updated to use this system will simply stop connecting to Gmail.
+Google used to allow email apps to sign in to Gmail using a username and password the same way a person would. Starting in 2024, Google ended this older method — called Basic Authentication — and now requires all apps to use a newer, more secure sign-in system called OAuth 2.0. Apps that have not been updated to use this system will stop connecting to Gmail.
 
 The fix is not complicated. You remove your Gmail account from the email app and add it back again. When you add it back, the app will use the correct, updated sign-in method and connect to Gmail successfully.
 

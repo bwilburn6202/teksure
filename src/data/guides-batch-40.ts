@@ -21,7 +21,7 @@ One thing people like about Bluesky is that it lets you create custom "starter p
 
 Your username on Bluesky ends with .bsky.social by default (for example, @janedoe.bsky.social), but you can also connect your own domain name if you have one — a feature popular with journalists and organizations.
 
-Bluesky is worth joining if you enjoyed Twitter in its earlier days, want to follow real-time conversations about news and current events, or simply want another way to stay connected with friends and public figures.`,
+Bluesky is worth joining if you enjoyed Twitter in its earlier days, want to follow real-time conversations about news and current events, or want another way to stay connected with friends and public figures.`,
     steps: [
       {
         title: `Download the Bluesky app`,
@@ -118,7 +118,7 @@ One popular feature: Peacock often streams live local NBC content, which is grea
     steps: [
       {
         title: `Create a free Peacock account`,
-        content: `Go to peacocktv.com on your computer or phone. Click "Get Free." Enter your email address and create a password. You do not need a credit card for the free plan — just click "Start Watching Free" when prompted.`,
+        content: `Go to peacocktv.com on your computer or phone. Click "Get Free." Enter your email address and create a password. You do not need a credit card for the free plan — click "Start Watching Free" when prompted.`,
         tip: `Your existing NBC, Hulu, or Xfinity credentials will not work here — you need a separate Peacock account.`,
       },
       {
@@ -339,7 +339,7 @@ A Disney+ subscription ($7.99/month with ads or $13.99/month without ads) is req
     difficulty: `Beginner`,
     body: `Spotify Premium includes the ability to download music, podcasts, and audiobooks to your phone so you can listen without an internet connection. This is one of the main advantages of Spotify Premium over the free plan.
 
-Offline listening is great for road trips, flights, working out in a gym with poor signal, or simply saving your mobile data for other things. Downloaded content plays from your device's storage — no streaming required.
+Offline listening is great for road trips, flights, working out in a gym with poor signal, or saving your mobile data for other things. Downloaded content plays from your device's storage — no streaming required.
 
 To use offline downloads, you need a Spotify Premium subscription ($11.99/month for individual). The free Spotify tier does not include offline listening.
 
@@ -390,7 +390,7 @@ The free version of EveryDollar lets you manually create a budget, add income an
 
 EveryDollar is available as a free app on iPhone and Android, and also at everydollar.com on a computer. You can start your first budget in about 15 minutes.
 
-Many people find that simply writing down where they plan to spend money — before spending it — helps them stay within their means and feel less stressed about finances. You do not have to follow Dave Ramsey's philosophy to get value from the app.`,
+Many people find that writing down where they plan to spend money — before spending it — helps them stay within their means and feel less stressed about finances. You do not have to follow Dave Ramsey's philosophy to get value from the app.`,
     steps: [
       {
         title: `Download and create a free account`,

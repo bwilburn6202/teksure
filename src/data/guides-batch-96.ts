@@ -269,7 +269,7 @@ Which should you use? If you want the strongest protection and do not mind the s
       },
       {
         title: `Understand what a fraud alert actually does`,
-        content: `A fraud alert does NOT block new accounts — it just asks lenders to take an extra verification step (often a phone call to you) before approving credit. A sloppy lender could still open an account without calling. That is why fraud alerts are weaker protection than a credit freeze, which blocks access to your credit report entirely.`,
+        content: `A fraud alert does NOT block new accounts — it asks lenders to take an extra verification step (often a phone call to you) before approving credit. A sloppy lender could still open an account without calling. That is why fraud alerts are weaker protection than a credit freeze, which blocks access to your credit report entirely.`,
       },
       {
         title: `Decide: fraud alert, freeze, or both?`,
@@ -526,7 +526,7 @@ Google's "Switch to Android" app (free on the App Store) handles most of the res
 
 The one critical rule: start the transfer during the brand-new iPhone's initial setup screen, NOT after. If you have already set up and used the iPhone, you will need to erase it and start over to run Move to iOS. When you first turn on the new iPhone, at the "Apps & Data" step, choose "Move Data from Android" — then install Move to iOS on your Android and follow the pairing code.
 
-What does NOT transfer automatically: WhatsApp chat history (though a newer special migration feature now handles this), paid Android apps (you rebuy iOS versions), Google Photos (sign in to the Google Photos iOS app after setup — the whole library appears), and certain Google services that simply work better with their Android versions. Expect to spend another hour after the transfer signing into your apps (email, banking, streaming) and setting up Apple-specific features like Face ID and iCloud. Some things will feel strange at first: no back button (iPhone uses a gesture swipe from the left edge), no file manager (iPhone hides the file system), and the app drawer is replaced by every app living on the home screen (you can hide them in the App Library).`,
+What does NOT transfer automatically: WhatsApp chat history (though a newer special migration feature now handles this), paid Android apps (you rebuy iOS versions), Google Photos (sign in to the Google Photos iOS app after setup — the whole library appears), and certain Google services that work better with their Android versions. Expect to spend another hour after the transfer signing into your apps (email, banking, streaming) and setting up Apple-specific features like Face ID and iCloud. Some things will feel strange at first: no back button (iPhone uses a gesture swipe from the left edge), no file manager (iPhone hides the file system), and the app drawer is replaced by every app living on the home screen (you can hide them in the App Library).`,
     steps: [
       {
         title: `Set up the new iPhone just past the language screen`,
@@ -703,7 +703,7 @@ A real home setup that follows the rule: original files live on your computer (c
       },
       {
         title: `Add a cloud backup (copy 3, off-site)`,
-        content: `Subscribe to Backblaze ($9/month unlimited), iDrive ($60/year for 500GB), or Carbonite ($90/year). These services run in the background and back up your entire computer continuously to their data centers. After an initial upload (1-2 weeks depending on internet speed), ongoing backup is seamless. If your house burns down, you restore everything from the cloud.`,
+        content: `Subscribe to Backblaze ($9/month unlimited), iDrive ($60/year for 500GB), or Carbonite ($90/year). These services run in the background and back up your entire computer continuously to their data centers. After an initial upload (1-2 weeks depending on internet speed), ongoing backup is smooth. If your house burns down, you restore everything from the cloud.`,
       },
       {
         title: `Verify your backups work`,

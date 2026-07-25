@@ -49,7 +49,7 @@ export const guidesBatch22: Guide[] = [
     thumbnailEmoji: '',
     publishedAt: '2026-04-19',
     difficulty: 'Beginner',
-    body: `AirPlay is Apple's wireless technology for sharing your iPhone or iPad screen on a compatible TV — no cables, no setup wizard, just tap a button. Your entire screen appears on the TV so everyone in the room can see what's on your phone.\n\nAirPlay works with Apple TV devices and most modern smart TVs from Samsung, LG, Sony, and Vizio that have AirPlay built in. Both your iPhone and the TV need to be on the same Wi-Fi network.\n\nYou can use AirPlay to: show family photos on the big screen, stream a video from your phone to the TV, share a video call so the whole family can see, or display any app that you'd prefer to see on a larger display.`,
+    body: `AirPlay is Apple's wireless technology for sharing your iPhone or iPad screen on a compatible TV — no cables, no setup wizard, tap a button. Your entire screen appears on the TV so everyone in the room can see what's on your phone.\n\nAirPlay works with Apple TV devices and most modern smart TVs from Samsung, LG, Sony, and Vizio that have AirPlay built in. Both your iPhone and the TV need to be on the same Wi-Fi network.\n\nYou can use AirPlay to: show family photos on the big screen, stream a video from your phone to the TV, share a video call so the whole family can see, or display any app that you'd prefer to see on a larger display.`,
     steps: [
       {
         title: 'Check if your TV supports AirPlay',
@@ -237,7 +237,7 @@ export const guidesBatch22: Guide[] = [
       {
         title: 'Prepare your symptoms and medications ahead of time',
         content: 'Write down: your main concern or symptoms (when they started, how bad on a scale of 1–10, what makes them better or worse), all medications you currently take including supplements (take photos of your pill bottles if helpful), any recent test results or readings (blood pressure, blood sugar, weight), and any questions you want to ask.',
-        tip: `Quick Tip: Keep a notepad or notes app open during the call to write down what the doctor tells you. Video appointments move quickly and it's easy to forget details afterward.`,
+        tip: `Quick Tip: Keep a notepad or notes app open during the call to write down what the doctor tells you. Video appointments move quickly and it is common to forget details afterward.`,
       },
       {
         title: 'Test your device and internet 15 minutes before',

@@ -14,7 +14,7 @@ If you would rather use the phone, look on the back of the card for a toll-free 
 A third option is to take the card to the store that issued it. A cashier can swipe the card at the register and tell you the balance. Many stores will print a small receipt showing the amount left.
 
 Always keep your gift cards in a safe place, like a wallet or a small folder near your computer. Write down the card number on a separate piece of paper in case the card is ever lost or stolen. Some stores can replace a card if you have proof of the number, but only if no one has spent the money yet. Checking the balance regularly helps you plan your shopping and avoid surprises at the checkout counter.`,
-    category: "shopping",
+    category: "buying-guides",
     tags: ["gift cards", "shopping", "balance", "money"],
     thumbnailEmoji: "🎁",
     difficulty: "Beginner",
@@ -57,7 +57,7 @@ To register, look for the website printed on the back of the card. It is usually
 Once you finish, the registration usually takes effect right away. You can then use the card online or at any gas pump. Keep the card itself in a safe place, and write down the website and card number separately in case the card is lost.
 
 Never give your gift card number to anyone over the phone or by email. Real banks and stores will never ask for it. If you receive a call asking you to "verify" or "activate" your gift card by reading the numbers, hang up. That is always a scam. Only enter the card details on the official website printed on the back of the card.`,
-    category: "shopping",
+    category: "buying-guides",
     tags: ["gift cards", "prepaid", "visa", "mastercard", "shopping"],
     thumbnailEmoji: "💳",
     difficulty: "Beginner",
@@ -100,7 +100,7 @@ The fastest way to redeem an Apple Gift Card is through the Settings app on your
 After you redeem the card, the money shows up in your Apple Account balance. The next time you buy an app or pay for iCloud storage, the cost comes out of that balance first. You can check your balance any time in the Settings app under your name at the top.
 
 Apple Gift Cards never expire, so there is no rush to spend the money. But never give your redemption code to anyone who calls you on the phone. Apple will never ask you to read a gift card code over the phone. If anyone asks, it is a scam. Always redeem the card yourself, on your own iPhone, using the steps below.`,
-    category: "shopping",
+    category: "buying-guides",
     tags: ["apple", "iphone", "gift cards", "app store", "itunes"],
     thumbnailEmoji: "🍎",
     difficulty: "Beginner",

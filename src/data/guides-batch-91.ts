@@ -236,7 +236,7 @@ Eufy also supports end-to-end encryption — meaning the video is scrambled befo
 
 One of the most helpful things about Uber is that you see the price before you confirm the ride. Unlike a taxi where the meter runs and you find out the cost at the end, Uber shows you an upfront fare estimate based on your pickup and destination. You can choose whether to accept that price or cancel at no charge.
 
-Uber is available in hundreds of cities across the United States and works 24 hours a day, seven days a week. It is especially useful when you do not have a car available, when parking is difficult, when you have had a drink and should not drive, or when you simply prefer not to drive somewhere unfamiliar.
+Uber is available in hundreds of cities across the United States and works 24 hours a day, seven days a week. It is especially useful when you do not have a car available, when parking is difficult, when you have had a drink and should not drive, or when you prefer not to drive somewhere unfamiliar.
 
 This guide is written for someone who has never used Uber before. It covers creating your account, adding a payment method, requesting a ride, what to expect while you wait and during the ride, and what to do if something goes wrong.`,
     steps: [
@@ -260,7 +260,7 @@ This guide is written for someone who has never used Uber before. It covers crea
       },
       {
         title: `During the ride and paying`,
-        content: `Sit back and enjoy the ride — Uber's built-in GPS navigation guides the driver to your destination. You can follow along on the map in the app if you like. When you arrive, the driver will stop and you simply get out — the fare is automatically charged to your saved payment method within a few minutes. You will receive an email receipt showing the route, time, and amount charged.`,
+        content: `Sit back and enjoy the ride — Uber's built-in GPS navigation guides the driver to your destination. You can follow along on the map in the app if you like. When you arrive, the driver will stop and you get out — the fare is automatically charged to your saved payment method within a few minutes. You will receive an email receipt showing the route, time, and amount charged.`,
       },
       {
         title: `Rate your driver and leave a tip`,
@@ -438,7 +438,7 @@ This guide explains Back Market's condition grades, how to browse for a good dea
       },
       {
         title: `Know your warranty and return rights`,
-        content: `Every Back Market purchase includes a 1-year warranty covering defects — meaning if the screen stops working, the battery fails, or a button breaks through normal use, Back Market will arrange a repair or replacement at no cost. The 30-day return window covers situations where you are simply unhappy with the purchase or the condition does not match the listing description. To initiate a return, log into your Back Market account and go to "My Orders," then "Get Help."`,
+        content: `Every Back Market purchase includes a 1-year warranty covering defects — meaning if the screen stops working, the battery fails, or a button breaks through normal use, Back Market will arrange a repair or replacement at no cost. The 30-day return window covers situations where you are unhappy with the purchase or the condition does not match the listing description. To initiate a return, log into your Back Market account and go to "My Orders," then "Get Help."`,
         warning: `Back Market's warranty does not cover physical damage caused after purchase — for example, if you drop the device and crack the screen. Consider purchasing a protective case immediately after receiving your device.`,
       },
     ],

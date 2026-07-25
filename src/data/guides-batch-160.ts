@@ -36,7 +36,7 @@ A cloud backup means your contacts are stored on a secure server (run by Apple o
 
 **How phone contacts work**
 
-On an iPhone, contacts are managed by Apple's iCloud service. On Android phones (Samsung, Google Pixel, Motorola, and others), they are managed by your Google account. Both services are free and included with your phone. You just need to make sure the backup feature is switched on.
+On an iPhone, contacts are managed by Apple's iCloud service. On Android phones (Samsung, Google Pixel, Motorola, and others), they are managed by your Google account. Both services are free and included with your phone. You need to make sure the backup feature is switched on.
 
 ---
 

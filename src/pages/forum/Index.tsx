@@ -99,7 +99,7 @@ export default function ForumIndex() {
           '@type': 'DiscussionForumPosting',
           name: 'TekSure Community Forum',
           description: 'Peer-to-peer tech support community for everyday people.',
-          url: 'https://teksure.com/forum',
+          url: 'https://www.teksure.com/forum',
         }}
       />
       <Navbar />

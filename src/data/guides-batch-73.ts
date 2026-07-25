@@ -752,7 +752,7 @@ Tubi is owned by Fox Corporation and is one of the most popular free streaming s
       },
       {
         title: `Browse Without an Account (Optional)`,
-        content: `You do not need to sign up or log in to watch Tubi. Simply open the app and start browsing. Content is organized into categories on the home screen — scroll through to see what is available. Tap any title to read a description, then tap "Watch" to start streaming.`,
+        content: `You do not need to sign up or log in to watch Tubi. Open the app and start browsing. Content is organized into categories on the home screen — scroll through to see what is available. Tap any title to read a description, then tap "Watch" to start streaming.`,
         tip: `Creating a free Tubi account (using your email address) lets you save shows to a watchlist and resume watching where you left off. This is optional but handy.`,
       },
       {

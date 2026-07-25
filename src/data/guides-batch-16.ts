@@ -258,7 +258,7 @@ export const guidesBatch16: Guide[] = [
       {
         title: 'Create a Skype account or sign in with Microsoft',
         content:
-          "When Skype opens, click \"Sign in or create.\" If you have a Microsoft account (the same email you use for Outlook, Hotmail, or Windows), you can sign in with that. If not, click \"Create account\" to make a new free Microsoft account — you'll just need an email address and password. Once signed in, Skype may ask permission to use your camera and microphone — click Allow. This is needed for video calls.",
+          "When Skype opens, click \"Sign in or create.\" If you have a Microsoft account (the same email you use for Outlook, Hotmail, or Windows), you can sign in with that. If not, click \"Create account\" to make a new free Microsoft account — you'll need an email address and password. Once signed in, Skype may ask permission to use your camera and microphone — click Allow. This is needed for video calls.",
       },
       {
         title: 'Find a contact and make your first call',

@@ -110,7 +110,7 @@ export default function Videos() {
           '@type': 'CollectionPage',
           name: 'TekSure Video Tutorials',
           description: 'Free step-by-step video tutorials for Windows, Mac, iPhone, and Android.',
-          url: 'https://teksure.com/videos',
+          url: 'https://www.teksure.com/videos',
         }}
       />
       <Navbar />

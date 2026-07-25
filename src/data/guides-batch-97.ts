@@ -758,7 +758,7 @@ Watch for data caps. Your home WiFi plan usually has no cap (or a very high one)
     difficulty: `Beginner`,
     body: `A QR code — the black-and-white square you scan with your phone — is nothing more than a 2D barcode. It stores a bit of text, usually a web address, in a pattern a camera can read quickly. When your phone's camera looks at one, it decodes the text and offers to open the web page. QR codes went from obscure to universal during 2020, when restaurants swapped paper menus for codes to reduce shared surfaces, and the habit stuck.
 
-Modern phones (any iPhone in the past 8 years, most Android phones in the past 5) scan QR codes automatically through the regular camera app — you don't need a separate scanner app. Just open the camera, point it at the QR code, and a notification pops up asking if you want to open the encoded link.
+Modern phones (any iPhone in the past 8 years, most Android phones in the past 5) scan QR codes automatically through the regular camera app — you don't need a separate scanner app. Open the camera, point it at the QR code, and a notification pops up asking if you want to open the encoded link.
 
 The scam version is called "quishing" — QR code phishing. Scammers print fake QR codes and place them over real ones on parking meters, gas pumps, bike-share docks, restaurant menus, and public posters. You scan expecting to pay for parking or view a menu; instead the link goes to a fake payment page that captures your credit card, or to a page that quietly installs malware on your phone. In 2023 the FTC and FBI both issued warnings about quishing scams specifically targeting parking meters in cities including Austin, Atlanta, and Portland.
 
@@ -846,7 +846,7 @@ Passkeys are a newer method — they use your device's biometrics (Face ID, Touc
 
 The top of an EOB identifies you (your name and member ID), the date of service, and which provider submitted the claim. Always confirm these match your actual visit. Wrong member ID or wrong provider is a red flag for fraud.
 
-The middle section breaks down the claim line by line. You'll see a "billed amount" — what the provider charged — followed by an "allowed amount" — the maximum your insurance agreed to pay under their contract with the provider. The difference between billed and allowed is simply written off; you don't owe it. Then the EOB shows how much insurance paid, and how much goes toward your deductible, copay, or coinsurance.
+The middle section breaks down the claim line by line. You'll see a "billed amount" — what the provider charged — followed by an "allowed amount" — the maximum your insurance agreed to pay under their contract with the provider. The difference between billed and allowed is written off; you don't owe it. Then the EOB shows how much insurance paid, and how much goes toward your deductible, copay, or coinsurance.
 
 At the bottom you'll see a "your responsibility" total. This is what you may owe the provider. I say "may" because the EOB is not a bill — the provider will send a separate bill. Wait for that bill before paying anything.
 
@@ -864,7 +864,7 @@ Keep every EOB for at least one year and match them against provider bills. Bill
       },
       {
         title: `Read the allowed amount vs. billed amount`,
-        content: `The billed amount is what the provider charged. The allowed amount is the negotiated rate your insurance has with that provider. If you used an in-network provider, the difference between billed and allowed is simply written off — you don't owe it. If the allowed amount equals the billed amount, your provider is out-of-network, which means you may owe more.`,
+        content: `The billed amount is what the provider charged. The allowed amount is the negotiated rate your insurance has with that provider. If you used an in-network provider, the difference between billed and allowed is written off — you don't owe it. If the allowed amount equals the billed amount, your provider is out-of-network, which means you may owe more.`,
       },
       {
         title: `Find what insurance paid and what you owe`,
@@ -1034,7 +1034,7 @@ The same rule applies to phone numbers you see in pop-up messages, emails, or te
     difficulty: `Beginner`,
     body: `Google Chrome is the most popular web browser in the United States, and it comes with a handful of settings that can make a real difference for anyone who struggles with small text or wants a safer browsing experience. Out of the box, Chrome uses a standard font size that works well on big desktop monitors but can feel too small on a laptop or tablet. A few minutes of adjusting settings can make every website clearer and more comfortable.
 
-The most impactful change is simply increasing the default zoom level. Chrome lets you set a global zoom — meaning every website loads at a larger size automatically. You can also increase the font size independently, so text is larger even on websites that try to use small fonts. These two settings together transform the browsing experience for most people who find reading websites tiring.
+The most impactful change is increasing the default zoom level. Chrome lets you set a global zoom — meaning every website loads at a larger size automatically. You can also increase the font size independently, so text is larger even on websites that try to use small fonts. These two settings together transform the browsing experience for most people who find reading websites tiring.
 
 Chrome also has a built-in safety feature called Safe Browsing that warns you before you visit a dangerous website. There are three levels: standard, enhanced, and a basic version. Turning on Enhanced Safe Browsing gives you the fastest possible warning before you accidentally click on a phishing or malware site — it's the setting Google recommends.
 

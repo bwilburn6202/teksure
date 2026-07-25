@@ -7,7 +7,7 @@
     "dev": "vite",
     "dev:ssr": "node --import tsx server.ts",
     "validate:slugs": "node scripts/validate-slugs.mjs",
-    "prebuild": "npm run validate:slugs",
+    "prebuild": "npm run validate:slugs && node scripts/generate-tools-directory.mjs && node scripts/generate-sitemap.mjs",
     "build": "vite build",
     "prebuild:ssr": "npm run validate:slugs",
     "build:ssr": "npm run build:client && npm run build:server",

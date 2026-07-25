@@ -80,7 +80,7 @@ This setup works well for families keeping track of doctor appointments, grandch
       },
       {
         title: `Check it on your phone`,
-        content: `Open the Google Calendar app on your iPhone or Android. Tap the three-line menu in the top left and scroll down — you should see the Family calendar listed. Tap it to toggle it on (colored dot means it's visible). Now family events will show up on your phone's calendar view automatically. Color-coding tip: tap the calendar name in the menu to change its color so it's easy to spot at a glance.`,
+        content: `Open the Google Calendar app on your iPhone or Android. Tap the three-line menu in the top left and scroll down — you should see the Family calendar listed. Tap it to toggle it on (colored dot means it's visible). Now family events will show up on your phone's calendar view automatically. Color-coding tip: tap the calendar name in the menu to change its color so you can spot at a glance.`,
       },
     ],
     tip: `Quick Tip — If a family member uses Apple Calendar on an iPhone or iPad, they can still subscribe to your Google Calendar. In their iPhone Settings, go to Calendar > Accounts > Add Account > Google and sign in to link both together.`,
@@ -300,7 +300,7 @@ The update process takes less than 30 seconds and you don't lose anything — yo
     slug: `aarp-fraud-watch-network`,
     title: `How to Use the AARP Fraud Watch Network`,
     excerpt: `AARP's free Fraud Watch Network gives you real-time scam alerts, a helpline to call if you've been targeted, and tools to protect yourself and your family — at no cost.`,
-    category: `safety`,
+    category: `safety-guides`,
     tags: [`AARP`, `scam alerts`, `fraud prevention`, `seniors`, `free resources`],
     readTime: `6 min`,
     thumbnailEmoji: ``,
@@ -343,7 +343,7 @@ AARP also has a large library of free online videos showing exactly how common s
     slug: `iphone-accessibility-shortcut`,
     title: `How to Use the iPhone Accessibility Shortcut`,
     excerpt: `Triple-click the side or Home button on your iPhone to instantly turn on zoom, larger text, magnifier, or other helpful features — without digging through Settings every time.`,
-    category: `accessibility`,
+    category: `health-tech`,
     tags: [`iPhone`, `accessibility`, `shortcut`, `zoom`, `magnifier`, `seniors`],
     readTime: `5 min`,
     thumbnailEmoji: ``,
@@ -400,7 +400,7 @@ For reading signs, menus, or documents in a foreign language, Apple's Translate 
     steps: [
       {
         title: `Find the Translate app`,
-        content: `Swipe down from the middle of the Home screen to open Search, then type "Translate." The app has a blue icon with a speech bubble. Tap to open it. If you don't see it, it may have been placed in a folder — look in the Extras or Utilities folder, or simply tap and hold the app icon and move it to your Home screen.`,
+        content: `Swipe down from the middle of the Home screen to open Search, then type "Translate." The app has a blue icon with a speech bubble. Tap to open it. If you don't see it, it may have been placed in a folder — look in the Extras or Utilities folder, or tap and hold the app icon and move it to your Home screen.`,
       },
       {
         title: `Translate typed text`,
@@ -435,7 +435,7 @@ For reading signs, menus, or documents in a foreign language, Apple's Translate 
 
 This isn't just for kids. Screen Time is increasingly used by adults who want to reduce mindless scrolling, cut back on news consumption, or protect their sleep by limiting phone use after a certain hour.
 
-When you hit your daily limit on an app, the app dims and shows a message saying "Time Limit Reached." You can choose to allow one more minute, allow the full day, or simply put the phone down. The gentle friction is often enough to break the automatic habit of opening an app without thinking.
+When you hit your daily limit on an app, the app dims and shows a message saying "Time Limit Reached." You can choose to allow one more minute, allow the full day, or put the phone down. The gentle friction is often enough to break the automatic habit of opening an app without thinking.
 
 Screen Time also includes a Downtime feature, which blocks all apps except ones you specifically allow during hours you set — typically overnight or during dinner. And Communication Limits let you restrict who can call or message during certain hours.
 
@@ -675,7 +675,7 @@ HDMI cables are inexpensive. A quality cable for everyday use costs $5 to $15 at
     slug: `check-windows-malware`,
     title: `How to Check Your Windows Computer for Malware (Free)`,
     excerpt: `Run a free malware scan on your Windows PC using tools you already have — Microsoft Defender and Malwarebytes Free — to check if anything harmful is hiding on your computer.`,
-    category: `safety`,
+    category: `safety-guides`,
     tags: [`malware`, `virus scan`, `Windows Defender`, `Malwarebytes`, `security`, `Windows`],
     readTime: `7 min`,
     thumbnailEmoji: ``,
@@ -886,7 +886,7 @@ Setting up a Sleep schedule in the Focus system is particularly valuable. It aut
     slug: `use-google-lens`,
     title: `How to Use Google Lens to Identify Things Around You`,
     excerpt: `Point your camera at anything — a plant, a product label, foreign text, or a restaurant dish — and Google Lens tells you what it is, translates it, or finds it for purchase.`,
-    category: `apps`,
+    category: `app-guides`,
     tags: [`Google Lens`, `camera`, `identify`, `translate`, `Android`, `iPhone`],
     readTime: `6 min`,
     thumbnailEmoji: ``,
@@ -968,7 +968,7 @@ For seniors and anyone who wants key information visible at a glance, widgets ar
     slug: `secure-home-network-basics`,
     title: `How to Make Your Home Wi-Fi Network More Secure`,
     excerpt: `Five practical steps to keep your home network safe — including changing the default router password, turning on WPA3 encryption, and disabling remote management.`,
-    category: `safety`,
+    category: `safety-guides`,
     tags: [`Wi-Fi security`, `router`, `home network`, `password`, `encryption`, `WPA3`],
     readTime: `8 min`,
     thumbnailEmoji: ``,

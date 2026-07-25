@@ -84,7 +84,7 @@ export default function PhotoBookServices() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Apple Photos auto-book</h3>
-            <p className="text-sm text-muted-foreground">If you have iPhone — open Photos → Memories → tap any auto-generated memory → "Create a Project" → Book. iOS picks best photos, lays them out, and you can edit. Way faster than starting blank. Apple Print works seamlessly.</p>
+            <p className="text-sm text-muted-foreground">If you have iPhone — open Photos → Memories → tap any auto-generated memory → "Create a Project" → Book. iOS picks best photos, lays them out, and you can edit. Way faster than starting blank. Apple Print works smoothly.</p>
           </CardContent>
         </Card>
       </main>

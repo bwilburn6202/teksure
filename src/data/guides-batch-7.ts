@@ -328,7 +328,7 @@ You can find Inactive Account Manager in your Google account settings at myaccou
       { title: 'Set your inactivity timeout period', content: 'Choose how long Google should wait before considering your account inactive: 3, 6, 12, or 18 months of no sign-ins. Google will send you an alert before this period ends so you can sign in if you are still active.' },
       { title: 'Add a trusted contact', content: 'Click "Add person" to name someone who will be notified when your account becomes inactive. Enter their phone number and email address. You can add up to 10 people.' },
       { title: 'Choose what data to share with them', content: 'For each trusted contact, select which parts of your Google account they can download: Gmail, Drive, Photos, Calendar, and so on. They will receive a download link with that data.' },
-      { title: 'Optionally set automatic deletion', content: 'After your trusted contacts have been notified, you can also instruct Google to delete your entire account. If you prefer your account to simply be preserved without anyone accessing it, you can skip this step.' },
+      { title: 'Optionally set automatic deletion', content: 'After your trusted contacts have been notified, you can also instruct Google to delete your entire account. If you prefer your account to be preserved without anyone accessing it, you can skip this step.' },
     ],
   },
   {

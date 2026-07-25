@@ -11,7 +11,7 @@ export const guidesBatch23: Guide[] = [
     thumbnailEmoji: '',
     publishedAt: '2026-04-19',
     difficulty: 'Beginner',
-    body: `Face ID is the facial recognition feature on iPhones that don't have a Home button (iPhone X and later). Instead of entering a passcode every time, you just look at your phone — it recognizes your face instantly and unlocks. Face ID also approves App Store purchases, authenticates Apple Pay, and auto-fills passwords.\n\nFace ID is secure: Apple says the chance of a random person's face unlocking your iPhone is approximately 1 in 1,000,000 (compared to 1 in 50,000 for a fingerprint). It works in the dark, with glasses or sunglasses on, and adapts to changes in your appearance over time.\n\nSetup takes about two minutes and only needs to be done once. You can also add an "alternate appearance" (like a family member's face) if you want someone else to be able to unlock your phone.`,
+    body: `Face ID is the facial recognition feature on iPhones that don't have a Home button (iPhone X and later). Instead of entering a passcode every time, you look at your phone — it recognizes your face instantly and unlocks. Face ID also approves App Store purchases, authenticates Apple Pay, and auto-fills passwords.\n\nFace ID is secure: Apple says the chance of a random person's face unlocking your iPhone is approximately 1 in 1,000,000 (compared to 1 in 50,000 for a fingerprint). It works in the dark, with glasses or sunglasses on, and adapts to changes in your appearance over time.\n\nSetup takes about two minutes and only needs to be done once. You can also add an "alternate appearance" (like a family member's face) if you want someone else to be able to unlock your phone.`,
     steps: [
       {
         title: 'Open Face ID settings',
@@ -28,7 +28,7 @@ export const guidesBatch23: Guide[] = [
       },
       {
         title: 'Use Face ID for App Store and payments',
-        content: 'When you go to buy an app or make an Apple Pay purchase, your phone will ask for Face ID confirmation. A prompt appears — just look at your phone and it approves. No more typing your Apple ID password for every purchase.',
+        content: 'When you go to buy an app or make an Apple Pay purchase, your phone will ask for Face ID confirmation. A prompt appears — look at your phone and it approves. No more typing your Apple ID password for every purchase.',
       },
       {
         title: 'Add an alternate appearance',
@@ -193,7 +193,7 @@ export const guidesBatch23: Guide[] = [
     thumbnailEmoji: '',
     publishedAt: '2026-04-19',
     difficulty: 'Beginner',
-    body: `Once you've set up your Ring or Nest video doorbell, most people just leave the default settings and use it as a basic notification device. But a few minutes of adjusting settings can make it much more useful: you'll get fewer false alerts, better video quality, and more control over privacy.\n\nThe settings covered here apply to both Ring and Nest Hello/Nest Cam Doorbell — the concepts are the same even if the menu names differ slightly between the Ring app and Google Home app. This guide focuses on the most impactful settings changes.`,
+    body: `Once you've set up your Ring or Nest video doorbell, most people leave the default settings and use it as a basic notification device. But a few minutes of adjusting settings can make it much more useful: you'll get fewer false alerts, better video quality, and more control over privacy.\n\nThe settings covered here apply to both Ring and Nest Hello/Nest Cam Doorbell — the concepts are the same even if the menu names differ slightly between the Ring app and Google Home app. This guide focuses on the most impactful settings changes.`,
     steps: [
       {
         title: 'Adjust motion sensitivity and zones',
@@ -266,7 +266,7 @@ export const guidesBatch23: Guide[] = [
     thumbnailEmoji: '',
     publishedAt: '2026-04-19',
     difficulty: 'Beginner',
-    body: `Google Earth is a free app that gives you a three-dimensional view of our entire planet, powered by satellite imagery, aerial photography, and geographic data. You can zoom in to see streets and buildings, fly to any address or landmark in the world, and explore places you've always wanted to see — all from your couch.\n\nPeople use Google Earth to: revisit places they lived or grew up in decades ago, show grandchildren where the family came from, virtually visit national parks and monuments, view famous architecture, or simply spend a relaxing hour exploring the planet.\n\nGoogle Earth is completely free and available on iPhone, Android, and web browsers.`,
+    body: `Google Earth is a free app that gives you a three-dimensional view of our entire planet, powered by satellite imagery, aerial photography, and geographic data. You can zoom in to see streets and buildings, fly to any address or landmark in the world, and explore places you've always wanted to see — all from your couch.\n\nPeople use Google Earth to: revisit places they lived or grew up in decades ago, show grandchildren where the family came from, virtually visit national parks and monuments, view famous architecture, or spend a relaxing hour exploring the planet.\n\nGoogle Earth is completely free and available on iPhone, Android, and web browsers.`,
     steps: [
       {
         title: 'Download and open Google Earth',
@@ -671,12 +671,12 @@ export const guidesBatch23: Guide[] = [
     steps: [
       {
         title: 'Choose Amazon Echo (Alexa) if you shop Amazon frequently',
-        content: 'Amazon Echo is the most popular smart speaker family. Sizes range from $30 (Echo Dot) to $100+ (Echo Studio with better audio). Best for: Amazon Prime members (it integrates seamlessly with Amazon orders and deliveries), households with no strong iPhone/Android preference, and people who want the widest smart home device compatibility. Alexa works with more smart home devices than any other platform.',
+        content: 'Amazon Echo is the most popular smart speaker family. Sizes range from $30 (Echo Dot) to $100+ (Echo Studio with better audio). Best for: Amazon Prime members (it integrates smoothly with Amazon orders and deliveries), households with no strong iPhone/Android preference, and people who want the widest smart home device compatibility. Alexa works with more smart home devices than any other platform.',
         tip: 'Quick Tip: The Echo Dot ($50) is the best entry point — small, affordable, and full-featured. Upgrade to Echo (4th gen) or Echo Studio if you want better music quality.',
       },
       {
         title: 'Choose Google Nest if you have Android phones',
-        content: 'Google Nest Mini and Nest Audio work best with Android phones and Google services (Gmail, Google Calendar, Google Maps). Google Assistant is excellent at answering factual questions, managing Google Calendar appointments, and understanding natural language. If your household has multiple Android users, Nest fits seamlessly.',
+        content: 'Google Nest Mini and Nest Audio work best with Android phones and Google services (Gmail, Google Calendar, Google Maps). Google Assistant is excellent at answering factual questions, managing Google Calendar appointments, and understanding natural language. If your household has multiple Android users, Nest fits smoothly.',
       },
       {
         title: `Choose Apple HomePod if you're deep in the Apple ecosystem`,
@@ -708,7 +708,7 @@ export const guidesBatch23: Guide[] = [
       {
         title: 'Use Siri to find what to watch across all apps',
         content: `Press and hold the microphone button on the Siri Remote and say what you're looking for: "Show me Tom Hanks movies," "Find nature documentaries," "Play something funny," or "What's on tonight?" Siri searches across Apple TV+, Netflix, Hulu, Amazon Prime, Disney+, and other installed apps simultaneously and shows results from all of them.`,
-        tip: 'Quick Tip: Asking Siri "What did he just say?" rewinds the scene you just watched by 15 seconds and turns on captions for that brief segment — great for moments when dialogue is hard to hear.',
+        tip: 'Quick Tip: Asking Siri "What did he say?" rewinds the scene you just watched by 15 seconds and turns on captions for that brief segment — great for moments when dialogue is hard to hear.',
       },
       {
         title: 'Enable Reduce Loud Sounds for consistent audio',

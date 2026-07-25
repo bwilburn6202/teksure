@@ -95,7 +95,7 @@ Sources: How-To Geek, AARP, individual grocery chain help pages (Walmart, Kroger
       {
         title: 'Ask for help anytime',
         content:
-          'Every self-checkout area has at least one store employee — sometimes called a self-checkout host — standing nearby. They can override error messages, apply paper coupons, check that your loyalty discounts went through, and help with anything the machine could not handle. There is no limit on how much you can ask for help. Tap "Call Attendant" on the screen at any time, or simply make eye contact with the employee nearby and wave them over.',
+          'Every self-checkout area has at least one store employee — sometimes called a self-checkout host — standing nearby. They can override error messages, apply paper coupons, check that your loyalty discounts went through, and help with anything the machine could not handle. There is no limit on how much you can ask for help. Tap "Call Attendant" on the screen at any time, or make eye contact with the employee nearby and wave them over.',
       },
     ],
   },

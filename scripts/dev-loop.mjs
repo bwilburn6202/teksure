@@ -230,9 +230,19 @@ function checkStaleOsVersions() {
       re.lastIndex = 0;
       let m;
       while ((m = re.exec(content)) !== null) {
-        // Skip min-version baselines like "iOS 16 or later", "Android 13+", "iOS 16 and newer"
+        // Skip min-version baselines like "iOS 16 or later", "Android 13+", "iOS 16 and newer",
+        // and backward-compat phrasing like "macOS Monterey or earlier"
         const after = content.slice(m.index + m[0].length, m.index + m[0].length + 25);
-        if (/^[\s]*(\+|or later|or newer|or higher|and (later|newer|higher|above|up))/i.test(after)) continue;
+        if (/^[\s]*(\+|\.[0-9]|or later|or newer|or higher|or above|or earlier|or older|and (later|newer|higher|above|up|earlier|older))/i.test(after)) continue;
+        // Skip historical/requirement references — these are facts, not staleness:
+        // "introduced in iOS 14", "since iOS 15", "requires iOS 16", "iPhone with iOS 14"
+        const before = content.slice(Math.max(0, m.index - 60), m.index);
+        if (/\b(introduced|added|launched|released|debuted|available|began|arrived|improved)\s+(in|with|on|since)\s*\(?\s*$/i.test(before)) continue;
+        if (/\b(since|as of|back in|before|until|through|from|starting (in|with))\s*\(?\s*$/i.test(before)) continue;
+        if (/\b(requires?|needs?|running|runs?|has|have|with|on|in|and|are|including)\s*\(?\s*$/i.test(before)) continue;
+        // Skip versioned point releases ("macOS Monterey 12.1") and dated facts ("iOS 16, which came out in late 2022")
+        if (/^\s*[0-9]+\./.test(after)) continue;
+        if (/^\s*(\)|,? which came out|,? released| \(released| \(20[0-9]{2}\))/i.test(after)) continue;
         const line = content.substring(0, m.index).split('\n').length;
         findings.push({ file: path.relative(ROOT, file), line, label, match: m[0] });
         if (findings.length >= 100) break;

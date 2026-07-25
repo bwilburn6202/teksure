@@ -26,7 +26,7 @@ export default function FamilySharing() {
   const [email, setEmail] = useState('');
   const [copied, setCopied] = useState(false);
 
-  const inviteLink = `https://teksure.com/join?ref=${user?.id ?? 'demo'}&type=family`;
+  const inviteLink = `https://www.teksure.com/join?ref=${user?.id ?? 'demo'}&type=family`;
 
   function save(m: Member[]) { setMembers(m); localStorage.setItem('teksure-family-members', JSON.stringify(m)); }
 

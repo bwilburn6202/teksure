@@ -63,7 +63,7 @@ Unlike traditional resale platforms, Depop has a social media-style layout. Sell
 
 Depop is free to download and use. Sellers list items for free; Depop takes a 10% fee plus a small payment processing fee when something sells. Buyers pay for items via credit card, PayPal, or Apple/Google Pay.
 
-The platform is popular for finding items you simply can't find at a standard retail store — a particular vintage style, a discontinued brand, or a unique handmade piece. Many sellers specialize in specific aesthetics like cottagecore, Y2K, preppy, or minimalist styles.
+The platform is popular for finding items you can't find at a standard retail store — a particular vintage style, a discontinued brand, or a unique handmade piece. Many sellers specialize in specific aesthetics like cottagecore, Y2K, preppy, or minimalist styles.
 
 Depop works on iPhone, Android, and the web at depop.com.`,
     steps: [
@@ -620,7 +620,7 @@ Other sites like Vitals.com, US News Doctor Finder, and your insurance company's
       {
         title: `Review a doctor's profile`,
         content: `Tap on any doctor to see their profile. Look for: board certifications (indicates specialty training), years in practice, hospital affiliations, education and residency, and patient ratings. A "Healthgrades Award for Excellence" or "Patient's Choice Award" indicates consistently high ratings over multiple years.`,
-        warning: `A low number of reviews doesn't necessarily mean the doctor is bad — some excellent doctors simply don't have many online reviewers. Read the reviews that exist carefully rather than just looking at the overall star number.`,
+        warning: `A low number of reviews doesn't necessarily mean the doctor is bad — some excellent doctors don't have many online reviewers. Read the reviews that exist carefully rather than just looking at the overall star number.`,
       },
       {
         title: 'Check for disciplinary history',
@@ -648,7 +648,7 @@ Other sites like Vitals.com, US News Doctor Finder, and your insurance company's
 
 Find My Mobile is different from Google's "Find My Device" — while both can locate a phone, Samsung's service offers additional features like ringing the phone at full volume even if it's on silent, locking with a custom message, and backing up data to Samsung Cloud before a remote wipe.
 
-The service is free and comes pre-installed on all Samsung Galaxy phones. You just need a Samsung account (free) set up on your phone, and location services enabled.
+The service is free and comes pre-installed on all Samsung Galaxy phones. You need a Samsung account (free) set up on your phone, and location services enabled.
 
 It's important to set this up before you need it — once a phone is lost, you can't enable Find My Mobile remotely. Take a few minutes to confirm it's active on your Samsung device today.
 

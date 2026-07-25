@@ -13,7 +13,7 @@ export const guidesBatch85: Guide[] = [
     difficulty: `Beginner`,
     body: `TripIt is a travel organizer that takes the chaos out of managing flights, hotels, rental cars, and activities across multiple trips. Instead of hunting through your inbox for booking confirmations, TripIt reads those emails automatically and turns them into a clean, easy-to-follow itinerary that you can access from your phone — even without a Wi-Fi connection.
 
-Here is how it works: when you book a flight, a hotel, or a rental car, you simply forward the confirmation email to plans@tripit.com. TripIt reads the details from that email — dates, times, confirmation numbers, addresses — and adds them to your trip automatically. If you connect TripIt directly to your email account, it can even do this forwarding step for you without any extra effort on your part.
+Here is how it works: when you book a flight, a hotel, or a rental car, you forward the confirmation email to plans@tripit.com. TripIt reads the details from that email — dates, times, confirmation numbers, addresses — and adds them to your trip automatically. If you connect TripIt directly to your email account, it can even do this forwarding step for you without any extra effort on your part.
 
 The free version of TripIt handles the basics very well. Your itinerary shows each leg of your trip in chronological order, so you can see at a glance what comes next. The app also stores confirmation numbers and contact information for hotels or airlines, which is helpful when you need to call someone on the road.
 
@@ -240,7 +240,7 @@ Most listings on Booking.com allow you to pay at the property rather than at the
 
 Before you list your home, it is important to check a few things. First, review your lease or homeowners association (HOA) rules — some leases prohibit subletting, and some HOAs restrict short-term rentals. Second, check with your local city government about short-term rental regulations and whether you need a permit. Many cities now require a license number to list on platforms like Airbnb.
 
-Setting the right price takes some research. Airbnb has a pricing tool called "Smart Pricing" that adjusts your rate based on demand in your area. You can also browse what other hosts in your neighborhood charge for comparable spaces to set a competitive rate. Do not price too low just to get bookings — a rate that is too cheap can attract problem guests or simply leave money on the table.
+Setting the right price takes some research. Airbnb has a pricing tool called "Smart Pricing" that adjusts your rate based on demand in your area. You can also browse what other hosts in your neighborhood charge for comparable spaces to set a competitive rate. Do not price too low just to get bookings — a rate that is too cheap can attract problem guests or leave money on the table.
 
 Photography matters a great deal. Listings with clear, well-lit photos of every room consistently outperform listings with blurry or limited photos. You do not need a professional photographer — a modern smartphone in good lighting can produce excellent results. Take photos during the day when natural light fills the rooms.
 

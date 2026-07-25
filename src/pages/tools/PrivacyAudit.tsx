@@ -12,19 +12,21 @@ import { Link } from 'react-router-dom';
 import {
   ShieldCheck, ExternalLink, Lock, CheckCircle2, ArrowLeft,
   Facebook, Apple, Smartphone, Globe, Info, BookOpen,
+  Camera, ShoppingCart, MessageCircle, Laptop,
 } from 'lucide-react';
 
 /* ── Types ─────────────────────────────────────── */
 interface PrivacyCheck {
   id: string;
   label: string;
-  where: string;         // Plain-English path like "Settings > Privacy > Face ID"
+  where?: string;         // Plain-English path like "Settings > Privacy > Face ID"
   link?: string;         // Direct https:// link when available
   why: string;           // 2–3 sentences on why it matters
+  linkLabel?: string;
 }
 
 interface ServiceSection {
-  id: 'facebook' | 'google' | 'apple' | 'iphone' | 'android';
+  id: 'facebook' | 'google' | 'apple' | 'iphone' | 'android' | 'instagram' | 'amazon' | 'whatsapp' | 'windows' | 'mac';
   title: string;
   tagline: string;
   icon: React.ElementType;
@@ -37,8 +39,12 @@ interface ServiceSection {
 const SERVICES: ServiceSection[] = [
   /* ── Facebook ───────────────────────────────── */
   {
-    id: 'iphone', name: 'iPhone', icon: '',
-    settings: [
+    id: 'iphone',
+    title: 'iPhone',
+    tagline: 'Lock down location, tracking, and ads on your iPhone.',
+    icon: Smartphone,
+    color: 'bg-slate-100 dark:bg-slate-800',
+    checks: [
       { id: 'ip-loc', label: 'Turn off location tracking for apps that do not need it', why: 'Many apps request your location even when they have no reason to.', link: 'https://support.apple.com/en-us/HT207092', linkLabel: 'Apple: Location Services' },
       { id: 'ip-track', label: 'Turn on "Ask App Not to Track"', why: 'This stops apps from tracking your activity across other apps and websites.', link: 'https://support.apple.com/en-us/HT212025', linkLabel: 'Apple: App Tracking' },
       { id: 'ip-ad', label: 'Turn off personalized ads in Apple settings', why: 'Apple uses your information to show targeted ads in the App Store and Apple News.' },
@@ -54,8 +60,12 @@ const SERVICES: ServiceSection[] = [
 
   /* ── Google ─────────────────────────────────── */
   {
-    id: 'android', name: 'Android', icon: '',
-    settings: [
+    id: 'android',
+    title: 'Android',
+    tagline: 'Control what Google and your apps collect on Android.',
+    icon: Smartphone,
+    color: 'bg-green-100 dark:bg-green-900/40',
+    checks: [
       { id: 'an-loc', label: 'Review app location permissions', why: 'Set most apps to "Only while using" or "Deny."', link: 'https://support.google.com/android/answer/6179507', linkLabel: 'Google: Location permissions' },
       { id: 'an-ad', label: 'Opt out of ad personalization', why: 'Google uses your activity to show targeted ads. Opting out means less tracking.', link: 'https://support.google.com/android/answer/3118621', linkLabel: 'Google: Ad settings' },
       { id: 'an-goog', label: 'Turn off Google activity tracking you do not need', why: 'Google tracks your searches, location history, and YouTube history by default.', link: 'https://myactivity.google.com/activitycontrols', linkLabel: 'Google: Activity Controls' },
@@ -71,8 +81,12 @@ const SERVICES: ServiceSection[] = [
 
   /* ── Apple ID ───────────────────────────────── */
   {
-    id: 'facebook', name: 'Facebook', icon: '',
-    settings: [
+    id: 'facebook',
+    title: 'Facebook',
+    tagline: 'Decide who sees your posts and stop off-Facebook tracking.',
+    icon: Facebook,
+    color: 'bg-blue-100 dark:bg-blue-900/40',
+    checks: [
       { id: 'fb-who', label: 'Set "Who can see your future posts" to Friends Only', why: 'Posts set to Public can be seen by anyone on the internet.', link: 'https://www.facebook.com/settings?tab=privacy', linkLabel: 'Facebook Privacy Settings' },
       { id: 'fb-search', label: 'Limit who can look you up by email or phone number', why: 'Scammers can use your phone number or email to find your profile.' },
       { id: 'fb-face', label: 'Turn off facial recognition', why: 'Prevents your face from being automatically identified in photos.' },
@@ -86,8 +100,12 @@ const SERVICES: ServiceSection[] = [
 
   /* ── iPhone ─────────────────────────────────── */
   {
-    id: 'google', name: 'Google', icon: '',
-    settings: [
+    id: 'google',
+    title: 'Google',
+    tagline: 'Turn off search, location, and YouTube history you do not want kept.',
+    icon: Globe,
+    color: 'bg-red-100 dark:bg-red-900/40',
+    checks: [
       { id: 'go-activity', label: 'Turn off Web & App Activity', why: 'Google saves every search and website visit. Turning this off stops that collection.', link: 'https://myactivity.google.com/activitycontrols', linkLabel: 'Google Activity Controls' },
       { id: 'go-loc', label: 'Turn off Location History', why: 'Google tracks everywhere you go and saves a timeline.' },
       { id: 'go-yt', label: 'Turn off YouTube History', why: 'Google saves every YouTube video you watch.' },
@@ -102,8 +120,12 @@ const SERVICES: ServiceSection[] = [
 
   /* ── Android ───────────────────────────────── */
   {
-    id: 'instagram', name: 'Instagram', icon: '',
-    settings: [
+    id: 'instagram',
+    title: 'Instagram',
+    tagline: 'Make your account private and limit who can message you.',
+    icon: Camera,
+    color: 'bg-pink-100 dark:bg-pink-900/40',
+    checks: [
       { id: 'ig-priv', label: 'Set your account to Private', why: 'A private account means only approved followers can see your posts and stories.' },
       { id: 'ig-activity', label: 'Turn off Activity Status', why: 'Activity status shows others when you were last online.' },
       { id: 'ig-story', label: 'Review who can reply to your stories', why: 'You can limit story replies to close friends only or turn them off.' },
@@ -115,8 +137,12 @@ const SERVICES: ServiceSection[] = [
     ],
   },
   {
-    id: 'amazon', name: 'Amazon', icon: '',
-    settings: [
+    id: 'amazon',
+    title: 'Amazon',
+    tagline: 'Stop ad targeting and manage what Alexa keeps.',
+    icon: ShoppingCart,
+    color: 'bg-amber-100 dark:bg-amber-900/40',
+    checks: [
       { id: 'am-2fa', label: 'Turn on two-step verification', why: 'Your Amazon account has your payment info and order history.', link: 'https://www.amazon.com/a/settings/approval', linkLabel: 'Amazon: Two-Step Verification' },
       { id: 'am-history', label: 'Review and manage your browsing history', why: 'Amazon tracks everything you look at to recommend products and target ads.' },
       { id: 'am-alexa', label: 'Delete Alexa voice recordings', why: 'Amazon stores recordings of what you say to Alexa.', link: 'https://www.amazon.com/alexa-privacy/apd/myad', linkLabel: 'Amazon: Alexa Privacy' },
@@ -128,8 +154,12 @@ const SERVICES: ServiceSection[] = [
     ],
   },
   {
-    id: 'whatsapp', name: 'WhatsApp', icon: '',
-    settings: [
+    id: 'whatsapp',
+    title: 'WhatsApp',
+    tagline: 'Control your last-seen, profile photo, and group invites.',
+    icon: MessageCircle,
+    color: 'bg-emerald-100 dark:bg-emerald-900/40',
+    checks: [
       { id: 'wa-2fa', label: 'Turn on two-step verification', why: 'Adds a PIN required when registering your number again. Prevents account hijacking.' },
       { id: 'wa-photo', label: 'Set profile photo visibility to "My Contacts"', why: 'Strangers should not be able to see your profile photo.' },
       { id: 'wa-last', label: 'Set "Last Seen" to "My Contacts" or "Nobody"', why: 'Prevents strangers from knowing when you were last active.' },
@@ -141,8 +171,12 @@ const SERVICES: ServiceSection[] = [
     ],
   },
   {
-    id: 'windows', name: 'Windows PC', icon: '',
-    settings: [
+    id: 'windows',
+    title: 'Windows PC',
+    tagline: 'Turn off advertising IDs and diagnostic data on Windows.',
+    icon: Laptop,
+    color: 'bg-sky-100 dark:bg-sky-900/40',
+    checks: [
       { id: 'wi-update', label: 'Turn on automatic Windows updates', why: 'Security updates fix vulnerabilities that hackers exploit.' },
       { id: 'wi-diag', label: 'Set diagnostic data to "Required" (not Full)', why: 'Setting it to Required sends the minimum amount of data to Microsoft.' },
       { id: 'wi-ad-id', label: 'Turn off advertising ID', why: 'Windows assigns a unique ID that apps use to track you.' },
@@ -154,8 +188,12 @@ const SERVICES: ServiceSection[] = [
     ],
   },
   {
-    id: 'mac', name: 'Mac', icon: '',
-    settings: [
+    id: 'mac',
+    title: 'Mac',
+    tagline: 'Review app permissions and analytics sharing on your Mac.',
+    icon: Apple,
+    color: 'bg-zinc-100 dark:bg-zinc-800',
+    checks: [
       { id: 'mc-update', label: 'Turn on automatic macOS updates', why: 'Apple regularly patches security vulnerabilities.' },
       { id: 'mc-firewall', label: 'Turn on the built-in firewall', why: 'The macOS firewall blocks unwanted incoming connections. It is off by default.' },
       { id: 'mc-filevault', label: 'Turn on FileVault disk encryption', why: 'FileVault encrypts your entire hard drive. If your Mac is stolen, your files stay protected.' },
@@ -398,15 +436,17 @@ export default function PrivacyAudit() {
                             </label>
                           </div>
 
-                          {/* Where to find it */}
-                          <div className="ml-9 mb-3 p-3 bg-muted/50 rounded-lg">
-                            <p className="text-sm font-semibold text-muted-foreground mb-1">
-                              Where to find it:
-                            </p>
-                            <p className="text-base font-mono text-foreground break-words">
-                              {check.where}
-                            </p>
-                          </div>
+                          {/* Where to find it — not every check has a settings path */}
+                          {check.where && (
+                            <div className="ml-9 mb-3 p-3 bg-muted/50 rounded-lg">
+                              <p className="text-sm font-semibold text-muted-foreground mb-1">
+                                Where to find it:
+                              </p>
+                              <p className="text-base font-mono text-foreground break-words">
+                                {check.where}
+                              </p>
+                            </div>
+                          )}
 
                           {/* Why it matters */}
                           <div className="ml-9 mb-3 flex items-start gap-2">

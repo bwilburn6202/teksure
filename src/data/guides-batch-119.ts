@@ -2,7 +2,7 @@
 import type { Guide } from './guides';
 
 export const guidesBatch119: Guide[] = [
-  // Social: "If you live far away from an aging parent, you have probably become their IT department whether you wanted the job or not. Broken printers. Mystery passwords. Suspicious emails. Zoom that will not zoom. This guide is for you — the adult child who is tired, who is a thousand miles away, and who just wants to help without feeling like pulling your hair out. Real tools. Real scripts. Real compassion."
+  // Social: "If you live far away from an aging parent, you have probably become their IT department whether you wanted the job or not. Broken printers. Mystery passwords. Suspicious emails. Zoom that will not zoom. This guide is for you — the adult child who is tired, who is a thousand miles away, and who wants to help without feeling like pulling your hair out. Real tools. Real scripts. Real compassion."
   // Newsletter: "Long-distance caregiving is one of the quiet hardships of modern life. Your parent needs help. You want to help. But you are in a different state, a different time zone, sometimes a different country, and every tech problem has to be solved over a crackly phone call with a lot of 'now what button do I press?' It is exhausting. It is emotional. And it is surprisingly common — more than one in four American adults is some flavor of long-distance caregiver. This guide is a full toolkit for doing the job more gently and more effectively, without losing yourself in the process."
   {
     slug: 'helping-parents-grandparents-from-far-away-caregivers-tech-kit',
@@ -152,7 +152,7 @@ To set up:
 5. Their screen appears on yours. You can see what they see in real time.
 6. If you need to guide them, draw on your screen — your finger traces appear on theirs as highlights.
 
-Pro tip: If they say they can't find the button, you can say "Ask Siri to start screen sharing with me" — Siri will do it.
+Quick Tip: If they say they can't find the button, you can say "Ask Siri to start screen sharing with me" — Siri will do it.
 
 Who it works with: iPhone, iPad, and Mac. Works best iPhone-to-iPhone but Mac-to-iPhone also works.
 
@@ -220,7 +220,7 @@ TeamViewer is the industry standard and free for home use. The "QuickSupport" ve
 How it works:
 
 1. You install TeamViewer on your computer (teamviewer.com/download — free for personal use).
-2. Your parent downloads "TeamViewer QuickSupport" on theirs. It is a tiny file that doesn't install — they just open it when they need help.
+2. Your parent downloads "TeamViewer QuickSupport" on theirs. It is a tiny file that doesn't install — they open it when they need help.
 3. When they open it, it shows a 9-digit ID and a password.
 4. They read those numbers to you over the phone.
 5. You type them into your TeamViewer. You are now controlling their computer.
@@ -333,7 +333,7 @@ Step C: Test the connection
 
 Step D: Make it easy for them to find
 
-1. On their computer, drag the TeamViewer QuickSupport icon to the Desktop so it is easy to find.
+1. On their computer, drag the TeamViewer QuickSupport icon to the Desktop so you can find.
 2. Rename it something they will recognize. Right-click → Rename → "[Your name] Help" (for example, "Sarah Help" or "Grandson's Help App").
 3. Give them a physical cheat sheet (paper, printed, taped near the computer):
 
@@ -597,7 +597,7 @@ For Windows OneDrive / Backblaze:
 
 Set a calendar reminder — check backups quarterly:
 
-Put a reminder on your calendar every 3 months: "Verify Mom's backups." Spend 5 minutes confirming all three layers are still running. This is the single highest-leverage habit you can build.
+Put a reminder on your calendar every 3 months: "Verify Mom's backups." Spend 5 minutes confirming all three layers are still running. This is the single highest-use habit you can build.
 
 When a disaster does happen:
 
@@ -606,7 +606,7 @@ If they drop their phone in the pool, accidentally delete a photo album, or get 
 One more thing — set up Photo Sharing so you have copies too:
 
 Turn on iCloud Shared Photo Library (iPhone) or a shared Google Photos album (Android). This automatically copies their photos into an album that you also have access to. Now even if every cloud backup fails, you have copies of the photos that matter most on your own phone.`,
-        tip: 'When you verify backups quarterly, do not just check that they are running — actually try to recover something. Download one photo from iCloud.com or photos.google.com. If you can actually see and download it, the backup is real. "The app says it is backing up" is not the same as "I can get my data back."',
+        tip: 'When you verify backups quarterly, do not check that they are running — actually try to recover something. Download one photo from iCloud.com or photos.google.com. If you can actually see and download it, the backup is real. "The app says it is backing up" is not the same as "I can get my data back."',
       },
       {
         title: 'Step 8: Password management they can actually use',
@@ -814,7 +814,7 @@ Caregiving looks like:
 
 Taking over looks like:
 
-• "I'll just take care of it, don't worry about it."
+• "I'll take care of it, don't worry about it."
 • "You wouldn't understand."
 • "Let me handle everything."
 • "I'm doing this whether you want it or not."
@@ -872,7 +872,7 @@ Who might be in the network:
 
 How to introduce them to the network:
 
-Do not just say "if something goes wrong, call Janet next door." Make the introduction real:
+Do not say "if something goes wrong, call Janet next door." Make the introduction real:
 
 • Go over during a visit. Meet the neighbor. Say "Hi Janet, I'm Sarah's daughter. She mentioned you're good with computers. If she ever has a quick question when I'm not available, would you mind if she asked?"
 • Exchange phone numbers.
@@ -902,7 +902,7 @@ Distributing the load does two things:
 You will feel less guilty saying "I can't help until Sunday" when there's a known backup. And your parent will feel less guilty calling because they won't be limited to one person.
 
 This is how communities have always handled caregiving. The nuclear-family, adult-kids-do-everything model is historically weird. Most of human history, help came from neighbors, church, extended family, and community. Rebuild some of that for your parent. They'll be happier, safer, and more connected.`,
-        tip: 'Ask your parent, genuinely: "Who are the three people in your life you would feel most comfortable asking a dumb tech question?" Their answer reveals the network already exists — you just need to tell those three people you appreciate them and exchange numbers.',
+        tip: 'Ask your parent, genuinely: "Who are the three people in your life you would feel most comfortable asking a dumb tech question?" Their answer reveals the network already exists — you need to tell those three people you appreciate them and exchange numbers.',
       },
       {
         title: 'Step 12: Signs to escalate — when tech trouble is a medical signal',
@@ -1063,7 +1063,7 @@ Talk about this with them while they are well. It is awkward. It is also one of 
 
 10. Care for the relationship, not just the logistics.
 
-It's easy for every call to become "here's what's broken" and nothing else. Make space for the rest. Ask about their day. Tell them about yours. Laugh at something. Listen to a story you've heard before. These moments — not the tech fixes — are what you will treasure later.
+It is common for every call to become "here's what's broken" and nothing else. Make space for the rest. Ask about their day. Tell them about yours. Laugh at something. Listen to a story you've heard before. These moments — not the tech fixes — are what you will treasure later.
 
 The real goal:
 

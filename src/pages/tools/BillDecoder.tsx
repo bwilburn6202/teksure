@@ -292,7 +292,7 @@ const BILLS: Record<BillType, BillData> = {
       'What is your financial assistance policy? (Nonprofit hospitals must have one.)',
       'Can I get a cash discount if I pay today?',
     ],
-    disputeGuidance: 'ALWAYS request an itemized bill before paying anything — studies show 30–80% of medical bills have errors. Dispute surprise billing under the federal No Surprises Act by calling 1-800-985-3059 or filing at cms.gov/nosurprises. Most hospitals will negotiate down cash payments by 30–50% if you simply ask. Nonprofit hospitals are federally required to offer financial assistance — ask.',
+    disputeGuidance: 'ALWAYS request an itemized bill before paying anything — studies show 30–80% of medical bills have errors. Dispute surprise billing under the federal No Surprises Act by calling 1-800-985-3059 or filing at cms.gov/nosurprises. Most hospitals will negotiate down cash payments by 30–50% if you ask. Nonprofit hospitals are federally required to offer financial assistance — ask.',
     resourceLinks: [
       { label: 'No Surprises Act help', href: 'https://www.cms.gov/nosurprises' },
       { label: 'Price-check CPT codes', href: 'https://www.fairhealthconsumer.org/' },

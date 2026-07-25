@@ -10,11 +10,13 @@ interface BreadcrumbSegment {
 }
 
 interface PageBreadcrumbProps {
-  segments: BreadcrumbSegment[];
+  segments?: BreadcrumbSegment[];
+  /** Alias for `segments` — some pages use this name. */
+  items?: BreadcrumbSegment[];
   className?: string;
 }
 
-const BASE_URL = 'https://teksure.com';
+const BASE_URL = 'https://www.teksure.com';
 
 /**
  * Reusable breadcrumb navigation for any page.
@@ -22,8 +24,8 @@ const BASE_URL = 'https://teksure.com';
  * Also emits BreadcrumbList JSON-LD so Google can render rich-result
  * breadcrumb trails in search snippets.
  */
-export function PageBreadcrumb({ segments, className = 'mb-6' }: PageBreadcrumbProps) {
-  const allSegments = [{ label: 'Home', href: '/' }, ...segments];
+export function PageBreadcrumb({ segments, items, className = 'mb-6' }: PageBreadcrumbProps) {
+  const allSegments = [{ label: 'Home', href: '/' }, ...(segments ?? items ?? [])];
 
   const breadcrumbJsonLd = {
     '@context': 'https://schema.org',

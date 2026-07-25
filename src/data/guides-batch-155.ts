@@ -439,7 +439,7 @@ The flashlight uses your phone's camera LED, which draws more battery power than
       {
         title: 'iPhone: adjust flashlight brightness',
         content:
-          'Open Control Center, then press and hold the flashlight icon (do not just tap — hold it for about a second). A brightness slider will appear. Drag up for more light, drag down for less. A dimmer setting is useful for reading in a dark restaurant without the full brightness being harsh.',
+          'Open Control Center, then press and hold the flashlight icon (do not tap — hold it for about a second). A brightness slider will appear. Drag up for more light, drag down for less. A dimmer setting is useful for reading in a dark restaurant without the full brightness being harsh.',
         tip: 'Dimming the flashlight also uses less battery — a good option if you need light for a longer period.',
       },
       {

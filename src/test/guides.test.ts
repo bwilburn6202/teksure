@@ -1,33 +1,9 @@
 import { describe, it, expect } from 'vitest';
-import { guides, type GuideCategory } from '@/data/guides';
+import { guides, GUIDE_CATEGORIES, type GuideCategory } from '@/data/guides';
 
-const validCategories: GuideCategory[] = [
-  'windows-guides',
-  'mac-guides',
-  'essential-skills',
-  'tips-tricks',
-  'ai-guides',
-  'ai-advanced',
-  'safety-guides',
-  'how-to',
-  'app-guides',
-  'health-tech',
-  'phone-guides',
-  'social-media',
-  'government-civic',
-  'financial-tech',
-  'smart-home',
-  'entertainment',
-  'communication',
-  'life-transitions',
-  'internet-connectivity',
-  'online-privacy',
-  'online-banking',
-  'buying-guides',
-  'tech-explained',
-  'troubleshooting',
-  'work-from-home',
-];
+// Derived from the single source of truth in src/data/guides.ts, so this list
+// can never drift out of sync with the GuideCategory type again.
+const validCategories: readonly GuideCategory[] = GUIDE_CATEGORIES;
 
 describe('guides data', () => {
   it('guides array is not empty', () => {
@@ -85,9 +61,12 @@ describe('guides data', () => {
     }
   });
 
-  it('every guide has a thumbnailEmoji', () => {
+  it('every guide defines a thumbnailEmoji field', () => {
     for (const guide of guides) {
-      expect(guide.thumbnailEmoji, `guide "${guide.slug}" missing thumbnailEmoji`).toBeTruthy();
+      // Decorative emoji were intentionally stripped site-wide (guide cards now
+      // render lucide icons via GuideThumbnail). The field must still exist as a
+      // string so older code paths do not crash, but empty is valid.
+      expect(typeof guide.thumbnailEmoji, `guide "${guide.slug}" missing thumbnailEmoji`).toBe('string');
     }
   });
 });

@@ -355,7 +355,7 @@ Available for free on iPhone and Android, the NASA app is one of the best free s
     thumbnailEmoji: ``,
     publishedAt: `2026-04-20`,
     difficulty: `Beginner`,
-    body: `The moon goes through a predictable cycle every 29.5 days, moving through eight distinct phases from New Moon to Full Moon and back again. Tracking these phases is useful for a surprising variety of reasons — planning nighttime photography, scheduling fishing trips, gardening by lunar cycles, or simply satisfying your curiosity about the bright or dark sky overhead.
+    body: `The moon goes through a predictable cycle every 29.5 days, moving through eight distinct phases from New Moon to Full Moon and back again. Tracking these phases is useful for a surprising variety of reasons — planning nighttime photography, scheduling fishing trips, gardening by lunar cycles, or satisfying your curiosity about the bright or dark sky overhead.
 
 Several excellent free apps make it easy to see the current moon phase, the phase for any past or future date, and the exact time of moonrise and moonset in your location. The best options for most people are the following: Moon — Current Moon Phase (available on iPhone and Android), My Moon Phase (Android), and the built-in lunar calendar in Stellarium (covered separately). The USNO Moon Phase Calendar at aa.usno.navy.mil is a free government website that requires no app at all.
 

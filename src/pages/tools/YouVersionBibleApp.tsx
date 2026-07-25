@@ -103,7 +103,7 @@ export default function YouVersionBibleApp() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Listen during chores</h3>
-            <p className="text-sm text-muted-foreground">For seniors with vision issues or who simply enjoy listening, YouVersion&apos;s audio Bible turns any task into Bible study time. Listen while cooking, gardening, or driving. James Earl Jones narrated KJV is particularly beautiful. Free, on every device, available offline once downloaded. The most-used Bible app in the world for good reason.</p>
+            <p className="text-sm text-muted-foreground">For seniors with vision issues or who enjoy listening, YouVersion&apos;s audio Bible turns any task into Bible study time. Listen while cooking, gardening, or driving. James Earl Jones narrated KJV is particularly beautiful. Free, on every device, available offline once downloaded. The most-used Bible app in the world for good reason.</p>
           </CardContent>
         </Card>
       </main>

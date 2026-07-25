@@ -296,7 +296,7 @@ This app is for iPhone only. Android users should look at other sleep tracking a
 
 The sounds available include rain, thunderstorms, a babbling creek, wind in the trees, coffee shop chatter, crackling fire, white noise, pink noise, and brown noise. White noise is a steady, even hiss that covers up other sounds. Pink noise is softer and more soothing. Brown noise is even deeper, similar to the rumble of distant thunder — many people find it especially relaxing.
 
-What makes Noisli different from simply playing a rain video on YouTube is that you can layer sounds on top of each other. For example, you might combine rain, a gentle fireplace, and a touch of brown noise for the perfect cozy background while reading. Or you might use white noise and coffee shop sounds to help your brain focus while working from home.
+What makes Noisli different from playing a rain video on YouTube is that you can layer sounds on top of each other. For example, you might combine rain, a gentle fireplace, and a touch of brown noise for the perfect cozy background while reading. Or you might use white noise and coffee shop sounds to help your brain focus while working from home.
 
 Noisli is available as a website (noisli.com), an iPhone app, and an Android app. A free account gives you access to a set of core sounds with limited customization. A premium plan (around $2 per month or $20 per year) unlocks all sounds, custom mixes, a timer, and offline listening.
 

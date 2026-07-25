@@ -203,7 +203,7 @@ export const guidesBatch21: Guide[] = [
     thumbnailEmoji: '',
     publishedAt: '2026-04-19',
     difficulty: 'Beginner',
-    body: `Amazon Music is a music streaming service — it lets you listen to millions of songs without buying them individually. If you have Amazon Prime, you already have Amazon Music Prime included at no extra cost. That gives you access to a large catalog of songs in shuffle mode and a selection of playlists curated by genre, mood, or decade.\n\nFor unlimited, on-demand listening (play any song whenever you want), Amazon offers Amazon Music Unlimited for $9.99/month, or $8.99/month if you're a Prime member. There's also a free ad-supported tier for casual listening.\n\nAmazon Music works on your phone, tablet, computer, and any Amazon Echo (Alexa) speaker. Just say "Alexa, play some country music" or "Alexa, play Elvis Presley" and it starts playing.`,
+    body: `Amazon Music is a music streaming service — it lets you listen to millions of songs without buying them individually. If you have Amazon Prime, you already have Amazon Music Prime included at no extra cost. That gives you access to a large catalog of songs in shuffle mode and a selection of playlists curated by genre, mood, or decade.\n\nFor unlimited, on-demand listening (play any song whenever you want), Amazon offers Amazon Music Unlimited for $9.99/month, or $8.99/month if you're a Prime member. There's also a free ad-supported tier for casual listening.\n\nAmazon Music works on your phone, tablet, computer, and any Amazon Echo (Alexa) speaker. Say "Alexa, play some country music" or "Alexa, play Elvis Presley" and it starts playing.`,
     steps: [
       {
         title: 'Download the Amazon Music app',
@@ -429,8 +429,8 @@ export const guidesBatch21: Guide[] = [
       },
       {
         title: 'Understand the two models',
-        content: 'The Lively Flip ($99) is a flip phone with physical number buttons and a simple menu — no touchscreen needed. Great for those who just want to make calls and texts. The Lively Smart ($149) is a full touchscreen smartphone with a simplified home screen, larger icons, and the Urgent Response button. It can also run regular apps like Netflix and Facebook.',
-        tip: 'Quick Tip: For someone who has never used a smartphone and just wants reliable phone calls, the Lively Flip is the simpler choice. For someone who wants smartphone features in a more manageable package, the Lively Smart makes more sense.',
+        content: 'The Lively Flip ($99) is a flip phone with physical number buttons and a simple menu — no touchscreen needed. Great for those who want to make calls and texts. The Lively Smart ($149) is a full touchscreen smartphone with a simplified home screen, larger icons, and the Urgent Response button. It can also run regular apps like Netflix and Facebook.',
+        tip: 'Quick Tip: For someone who has never used a smartphone and wants reliable phone calls, the Lively Flip is the simpler choice. For someone who wants smartphone features in a more manageable package, the Lively Smart makes more sense.',
       },
       {
         title: 'The Urgent Response feature',
@@ -607,7 +607,7 @@ export const guidesBatch21: Guide[] = [
     thumbnailEmoji: '',
     publishedAt: '2026-04-19',
     difficulty: 'Beginner',
-    body: `Every rechargeable battery loses capacity over time. After 500 full charges (a cycle), an iPhone battery may hold only about 80% of its original capacity — meaning your phone won't last as long between charges as it once did. After more cycles, this can drop further.\n\nApple built a Battery Health feature into iPhones running iOS 11.3 and later that shows you exactly what percentage of original capacity your battery still holds, and whether the battery is performing normally or degrading to a point where replacement makes sense.\n\nIf your iPhone battery doesn't last through a full day anymore and the health percentage is below 80%, an Apple battery replacement ($49 for most models at an Apple Store) can make your phone feel brand new again — without buying a new phone.`,
+    body: `Every rechargeable battery loses capacity over time. After 500 full charges (a cycle), an iPhone battery may hold only about 80% of its original capacity — meaning your phone won't last as long between charges as it once did. After more cycles, this can drop further.\n\nApple built a Battery Health feature into iPhones running iOS 11.3 or later (so every iPhone still supported in 2026, including the current iOS 18, has it) that shows you exactly what percentage of original capacity your battery still holds, and whether the battery is performing normally or degrading to a point where replacement makes sense.\n\nIf your iPhone battery doesn't last through a full day anymore and the health percentage is below 80%, an Apple battery replacement ($49 for most models at an Apple Store) can make your phone feel brand new again — without buying a new phone.`,
     steps: [
       {
         title: 'Open Battery Health settings',
@@ -657,7 +657,7 @@ export const guidesBatch21: Guide[] = [
       {
         title: 'Clear cache on Android (Chrome)',
         content: 'Open the Chrome app. Tap the three-dot menu (⋮) at the top right. Tap "History," then "Clear browsing data." Check "Cached images and files" (and "Cookies and site data" if you want a fuller clean). Select time range, then tap "Clear data."',
-        tip: `Quick Tip: If you just want to fix a single website that's acting odd, you don't need to clear everything — just hold your finger on a link to that site in Chrome > "Open in incognito tab" to load a fresh version without cache.`,
+        tip: `Quick Tip: If you want to fix a single website that's acting odd, you don't need to clear everything — hold your finger on a link to that site in Chrome > "Open in incognito tab" to load a fresh version without cache.`,
       },
       {
         title: 'Clear cache on Android (Samsung Internet)',
@@ -716,7 +716,7 @@ export const guidesBatch21: Guide[] = [
     thumbnailEmoji: '',
     publishedAt: '2026-04-19',
     difficulty: 'Beginner',
-    body: `Your Windows computer just stopped responding — the cursor won't move, nothing happens when you click, or the screen is stuck. This is called a system freeze, and it happens for a variety of reasons: a program crashed and is hogging all the system resources, Windows ran out of memory, a driver crashed, or the computer simply needs a restart after long uptime.\n\nThe good news: a computer freeze usually fixes itself with a restart. The bad news: if you have unsaved work open, you may lose it. This guide takes you through the steps in order of how gentle they are, starting with the least disruptive and ending with a hard power-off as the last resort.`,
+    body: `Your Windows computer just stopped responding — the cursor won't move, nothing happens when you click, or the screen is stuck. This is called a system freeze, and it happens for a variety of reasons: a program crashed and is hogging all the system resources, Windows ran out of memory, a driver crashed, or the computer needs a restart after long uptime.\n\nThe good news: a computer freeze usually fixes itself with a restart. The bad news: if you have unsaved work open, you may lose it. This guide takes you through the steps in order of how gentle they are, starting with the least disruptive and ending with a hard power-off as the last resort.`,
     steps: [
       {
         title: 'Wait first — it might just be thinking',
@@ -754,7 +754,7 @@ export const guidesBatch21: Guide[] = [
     thumbnailEmoji: '',
     publishedAt: '2026-04-19',
     difficulty: 'Beginner',
-    body: `Amazon makes returning items much more convenient than it used to be. Most items sold by Amazon can be returned within 30 days for any reason — the item didn't fit, wasn't what you expected, or you simply changed your mind. The process is done online in about 2 minutes, and in many cases you don't even need a box or a printed label.\n\nAmazon offers several free drop-off locations: UPS stores (no box or label needed — they do it for you), Whole Foods stores (if there's one nearby), Kohl's stores (they pack and ship it free), and Amazon lockers and hubs. This guide walks through the return process from start to finish.`,
+    body: `Amazon makes returning items much more convenient than it used to be. Most items sold by Amazon can be returned within 30 days for any reason — the item didn't fit, wasn't what you expected, or you changed your mind. The process is done online in about 2 minutes, and in many cases you don't even need a box or a printed label.\n\nAmazon offers several free drop-off locations: UPS stores (no box or label needed — they do it for you), Whole Foods stores (if there's one nearby), Kohl's stores (they pack and ship it free), and Amazon lockers and hubs. This guide walks through the return process from start to finish.`,
     steps: [
       {
         title: 'Find your order to return',
