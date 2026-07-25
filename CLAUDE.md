@@ -54,8 +54,27 @@ TekSure is a tech support and digital literacy platform for non-technical users 
 ```
 
 ## Supabase Tables (live)
-`auth.users`, `profiles`, `bookings` (+ payment_status, stripe_session_id, deposit_paid_at),
-`forum_threads`, `forum_replies`, `guide_ratings`
+`auth.users`, `profiles` (+ tier), `bookings` (+ payment_status, stripe_session_id, deposit_paid_at),
+`forum_threads`, `forum_replies`, `guide_ratings`, `guide_progress`, `testimonials`,
+`community_questions`, `community_question_votes`
+
+## Invariants — do not break these (added 2026-07-25 audit)
+
+- **`GuideCategory` derives from `GUIDE_CATEGORIES`** in `src/data/guides.ts`. Add a new
+  category to that array only; the type, tests, and `Record<GuideCategory, …>` maps follow.
+- **Sitemap and tools directory are generated in `prebuild`** — never hand-edit
+  `public/sitemap.xml` or `src/data/tools-directory.ts`. Do NOT add a second sitemap
+  generator to `vite.config.ts`; one used to overwrite the good sitemap with guides only.
+- **Canonical host is `https://www.teksure.com`** (apex 301s to www). Sitemap, robots.txt,
+  `SEOHead`, and JSON-LD must all agree.
+- **Guide data shape is `Guide` in `src/data/guides.ts`.** Use `thumbnailEmoji` (not
+  `emoji`), `steps[].content` (not `description`), and a category from `GUIDE_CATEGORIES`.
+  Writing a different shape is what produced 440 type errors and four crashing pages.
+- **Every new batch file must be imported AND spread** in `src/data/guides.ts` — otherwise
+  its guides silently do not exist.
+- **Run `npm test` before committing.** The suite enforces brand voice and guide schema.
+- After finishing work: **commit and push.** A stale `.git/index.lock` once blocked commits
+  for two weeks and the live site fell 12 weeks behind.
 
 ## Edge Functions (live)
 `send-help-confirmation`, `send-booking-confirmation`, `create-checkout-session`, `stripe-webhook`
@@ -65,7 +84,15 @@ Stripe — LIVE. $15 deposit model. Never touch the Stripe edge functions withou
 
 ---
 
-## Current State (as of 2026-05-04)
+## Current State (as of 2026-07-25 — post full audit)
+- **4,013 guides**, 3,117 routes, 2,969 tool pages, 7,110 sitemap URLs
+- TypeScript clean (0 errors), 104/104 tests passing, production build passing
+- Orphaned routes: 6 (admin + Stripe callbacks only) — `/tools/all` links everything else
+- See `AUDIT-REPORT-2026-07-25.md` for what was fixed and what is still open
+- Open items: enable leaked-password protection in Auth; add commit+push to content tasks;
+  pick a single writer for `.claude/dev-loop-state.json`; Supabase performance pass
+
+## Earlier State (as of 2026-05-04)
 - **~2,900 guides** across 19 categories (incl. 50 Spanish at /guias, Batch 93+ in progress)
 - **145+ interactive tools** at /tools
 - **3,000+ routes**, 218+ pages
