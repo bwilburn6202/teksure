@@ -113,16 +113,25 @@ export default function TechEmergencyKit() {
                 </CardTitle>
               </CardHeader>
               <CardContent className="space-y-2">
+                {/* Each row is a real <button> so the checklist works with a
+                    keyboard, a switch device, or a screen reader — not just a
+                    mouse. It used to be a <div onClick>. */}
                 {section.items.map(item => (
-                  <div key={item.id} className={`rounded-xl p-4 cursor-pointer transition-all ${done.has(item.id) ? 'bg-green-50/50 dark:bg-green-950/10' : 'hover:bg-muted/50'}`} onClick={() => toggle(item.id)}>
+                  <button
+                    key={item.id}
+                    type="button"
+                    onClick={() => toggle(item.id)}
+                    aria-pressed={done.has(item.id)}
+                    className={`w-full text-left rounded-xl p-4 transition-all focus:outline-none focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2 ${done.has(item.id) ? 'bg-green-50/50 dark:bg-green-950/10' : 'hover:bg-muted/50'}`}
+                  >
                     <div className="flex items-start gap-3">
-                      {done.has(item.id) ? <CheckCircle className="h-5 w-5 text-green-500 shrink-0 mt-0.5" /> : <Circle className="h-5 w-5 text-muted-foreground/40 shrink-0 mt-0.5" />}
+                      {done.has(item.id) ? <CheckCircle className="h-5 w-5 text-green-500 shrink-0 mt-0.5" aria-hidden="true" /> : <Circle className="h-5 w-5 text-muted-foreground/40 shrink-0 mt-0.5" aria-hidden="true" />}
                       <div>
                         <p className={`text-sm font-medium ${done.has(item.id) ? 'line-through text-muted-foreground' : ''}`}>{item.title}</p>
                         <p className="text-xs text-muted-foreground mt-1">{item.description}</p>
                       </div>
                     </div>
-                  </div>
+                  </button>
                 ))}
               </CardContent>
             </Card>

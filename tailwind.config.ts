@@ -13,6 +13,24 @@ export default {
       },
     },
     extend: {
+      /**
+       * Type scale floor for an audience that is mostly over 60.
+       *
+       * Tailwind's defaults put text-xs at 12px and text-sm at 14px. An audit of
+       * the codebase found 3,000+ uses of text-xs — captions, badges, helper
+       * text, form hints — which is a squint for the people this site exists to
+       * help. Raising the two smallest steps lifts every one of those instances
+       * at once, without touching 500 files or disturbing the visual hierarchy
+       * (the steps stay in order, just less extreme).
+       *
+       * If you need genuinely tiny text for a decorative label, use an explicit
+       * arbitrary value like text-[11px] so the intent is visible in the code.
+       */
+      fontSize: {
+        xs: ['0.875rem', { lineHeight: '1.35rem' }],   // 12px → 14px
+        sm: ['0.9375rem', { lineHeight: '1.5rem' }],   // 14px → 15px
+        base: ['1.0625rem', { lineHeight: '1.7rem' }], // 16px → 17px, roomier leading
+      },
       colors: {
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",

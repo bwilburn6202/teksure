@@ -345,6 +345,94 @@ function checkSiteMetrics() {
   };
 }
 
+/**
+ * Duplicate <title>s across guides.
+ *
+ * Two URLs with the same title compete for the same search query and split
+ * their ranking signals, so neither ranks as well as one page would. Fix by
+ * setting `canonicalSlug` on the weaker one (scripts/fix-duplicate-titles.mjs
+ * does this automatically) or by giving them genuinely different titles.
+ */
+function checkDuplicateTitles() {
+  const dataDir = path.join(ROOT, 'src', 'data');
+  const titles = new Map();
+  for (const file of fs.readdirSync(dataDir)) {
+    if (!file.startsWith('guides') || !file.endsWith('.ts')) continue;
+    const text = fs.readFileSync(path.join(dataDir, file), 'utf8');
+    const re = /slug:\s*(['"`])([^'"`]+)\1([\s\S]{0,400}?)title:\s*(['"`])((?:\\.|(?!\4)[\s\S])*)\4/g;
+    let m;
+    while ((m = re.exec(text)) !== null) {
+      // A guide that already points at a canonical is intentionally a duplicate.
+      if (/canonicalSlug:/.test(m[3])) continue;
+      const title = m[5].trim();
+      if (!title) continue;
+      if (!titles.has(title)) titles.set(title, []);
+      titles.get(title).push(m[2]);
+    }
+  }
+  const dupes = [...titles.entries()].filter(([, slugs]) => slugs.length > 1);
+  return {
+    name: 'duplicate-titles',
+    label: 'Duplicate guide titles',
+    ok: dupes.length === 0,
+    severity: dupes.length === 0 ? 'info' : 'warn',
+    summary:
+      dupes.length === 0
+        ? 'No duplicate guide titles.'
+        : `${dupes.length} title(s) used by more than one guide.`,
+    details: dupes
+      .slice(0, 10)
+      .map(([t, slugs]) => `- "${t.slice(0, 60)}" → ${slugs.join(', ')}`)
+      .join('\n'),
+    metrics: { count: dupes.length },
+  };
+}
+
+/**
+ * Reading level and small-type usage, via scripts/audit-senior-ux.mjs.
+ *
+ * TekSure is written for people who mostly did not grow up with this stuff and
+ * are often over 60. Content pitched above roughly grade 8 stops doing its job,
+ * however accurate it is.
+ */
+function checkSeniorUx() {
+  try {
+    const res = spawnSync('node', ['scripts/audit-senior-ux.mjs', '--json'], {
+      cwd: ROOT,
+      encoding: 'utf8',
+      maxBuffer: 20 * 1024 * 1024,
+    });
+    if (res.status !== 0) throw new Error(res.stderr?.split('\n')[0] || 'audit failed');
+    const { report, hardGuides } = JSON.parse(res.stdout);
+    const overTarget = report.guidesAboveGrade8Pct;
+    return {
+      name: 'senior-ux',
+      label: 'Readability & senior UX',
+      ok: overTarget < 50 && report.imagesMissingAlt === 0,
+      severity: overTarget >= 50 ? 'warn' : 'info',
+      summary:
+        `avg reading grade ${report.readingGradeAverage} (target <= 8), ` +
+        `${overTarget}% of guides above grade 8, ` +
+        `${report.imagesMissingAlt} images missing alt.`,
+      details: hardGuides
+        .slice(0, 10)
+        .map((g) => `- grade ${g.grade}: ${g.slug}`)
+        .join('\n'),
+      metrics: report,
+    };
+  } catch (err) {
+    return {
+      name: 'senior-ux',
+      label: 'Readability & senior UX',
+      ok: true,
+      severity: 'info',
+      summary: `audit did not run (${err.message.split('\n')[0]}).`,
+      details: '',
+      metrics: null,
+    };
+  }
+}
+
 const ALL_CHECKS = [
   { name: 'metrics', fn: checkSiteMetrics },
   { name: 'slugs', fn: checkSlugs },
@@ -352,6 +440,8 @@ const ALL_CHECKS = [
   { name: 'typescript', fn: checkTypeScript },
   { name: 'stale-os', fn: checkStaleOsVersions },
   { name: 'old-guides', fn: checkOldGuides },
+  { name: 'duplicate-titles', fn: checkDuplicateTitles },
+  { name: 'senior-ux', fn: checkSeniorUx },
 ];
 
 // ── State + backlog ──────────────────────────────────────────────────────

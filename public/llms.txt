@@ -4,7 +4,7 @@
 
 ## About this site
 
-- 3,727 step-by-step guides and 2,969 interactive tools, all free and without a paywall.
+- 3,729 step-by-step guides and 2,969 interactive tools, all free and without a paywall.
 - Audience: non-technical adults, especially people aged 60+, and caregivers.
 - US-focused: prices in USD, US carriers, US government services (Medicare, Social Security, IRS).
 - Editorial rule: plain English, no jargon without an explanation, no "it's easy".
@@ -72,7 +72,7 @@ each guide is self-contained and includes the exact menu paths for the device.
 - [How to Substitute Ingredients When You Run Out](https://www.teksure.com/guides/how-to-substitute-ingredients-recipe)
 - …and 499 more in this topic — see https://www.teksure.com/sitemap.xml
 
-### app guides (406)
+### app guides (407)
 
 - [How to Use Google Flights to Find Cheap Tickets](https://www.teksure.com/guides/use-google-flights)
 - [How to Book Travel on Expedia](https://www.teksure.com/guides/use-expedia-bookings)
@@ -114,7 +114,7 @@ each guide is self-contained and includes the exact menu paths for the device.
 - [How to Use Amazon Photos to Back Up and Store Your Pictures](https://www.teksure.com/guides/amazon-photos-backup)
 - [How to Use Google Calendar to Track Appointments and Set Reminders](https://www.teksure.com/guides/how-to-use-google-calendar-for-appointments-and-reminders-2026)
 - [How to Use Google One to Manage Your Storage](https://www.teksure.com/guides/google-one-storage-guide)
-- …and 366 more in this topic — see https://www.teksure.com/sitemap.xml
+- …and 367 more in this topic — see https://www.teksure.com/sitemap.xml
 
 ### Phones (iPhone and Android) (349)
 
@@ -160,7 +160,7 @@ each guide is self-contained and includes the exact menu paths for the device.
 - [How to Use the Different Camera Modes on Your iPhone](https://www.teksure.com/guides/iphone-camera-modes-guide)
 - …and 309 more in this topic — see https://www.teksure.com/sitemap.xml
 
-### Health technology and accessibility (335)
+### Health technology and accessibility (336)
 
 - [How to Submit a Health Insurance Claim](https://www.teksure.com/guides/submit-health-insurance-claim)
 - [How to Use Papa for Senior Companionship](https://www.teksure.com/guides/use-papa-companionship-app)
@@ -202,7 +202,7 @@ each guide is self-contained and includes the exact menu paths for the device.
 - [How to Send a Text Health Update to Family](https://www.teksure.com/guides/how-to-text-health-update-to-family)
 - [How to Keep a Caregiver Log for an Aging Parent](https://www.teksure.com/guides/how-to-keep-caregiver-log-aging-parent)
 - [How to Use the Apple Watch ECG and Heart Rate Features](https://www.teksure.com/guides/apple-watch-ecg-heart-health)
-- …and 295 more in this topic — see https://www.teksure.com/sitemap.xml
+- …and 296 more in this topic — see https://www.teksure.com/sitemap.xml
 
 ### Essential everyday skills (302)
 
