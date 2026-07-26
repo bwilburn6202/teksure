@@ -1,13 +1,18 @@
-# Readability backlog — regenerated 2026-07-26
+# Readability backlog — regenerated 2026-07-26 (post automated-splitter passes)
 
 Sorted worst-first by Flesch-Kincaid grade (target: <=8). Spanish guides (es-*) score
 artificially high on this English-tuned syllable heuristic and are lower priority —
 listed separately at the bottom.
 
-Guides above grade 10 (total, from audit-senior-ux.mjs): 784
-Non-Spanish guides shown here (top 210 by grade): see below
+Guides above grade 10 (total, from audit-senior-ux.mjs): 683
+Non-Spanish guides shown here (top 207 by grade): see below
 
-- [ ] 14.0  retirement-account-online-access
+Note: three automated passes now run safely across the whole corpus and can be
+re-run any time new content is added — see scripts/split-semicolons.mjs and
+scripts/split-comma-conjunctions.mjs. They fix run-on sentences (semicolons,
+", but/and/so <subject>") without changing meaning. Remaining guides below need
+manual rewrites (shorter vocabulary, breaking up dense clauses further).
+
 - [ ] 13.9  alexa-plus-ai-guide
 - [ ] 13.6  how-to-use-my-social-security-account
 - [ ] 13.5  alexa-reminders-setup
@@ -16,7 +21,6 @@ Non-Spanish guides shown here (top 210 by grade): see below
 - [ ] 13.3  windows-11-focus-sessions
 - [ ] 13.3  nasa-app-guide
 - [ ] 13.3  chromebook-buying-guide
-- [ ] 13.2  how-to-protect-gender-identity-medical-records
 - [ ] 13.2  telehealth-beginners
 - [ ] 13.2  hurricane-prep-app
 - [ ] 13.2  refurbished-laptop-guide
@@ -24,26 +28,20 @@ Non-Spanish guides shown here (top 210 by grade): see below
 - [ ] 13.1  power-of-attorney-digital
 - [ ] 13.1  wells-fargo-app-guide
 - [ ] 13.1  amazon-clinic-guide
-- [ ] 13.0  kindle-fire-kids-setup
 - [ ] 13.0  how-to-stop-app-downloads-on-android-for-dementia-caregiver
-- [ ] 12.9  youtube-videos-buffering-fix
-- [ ] 12.9  android-emergency-sos-setup
 - [ ] 12.9  how-to-spot-ai-generated-images
 - [ ] 12.9  identity-theft-guide
 - [ ] 12.9  america-beautiful-senior-pass
-- [ ] 12.9  tech-gift-guide-seniors
 - [ ] 12.9  use-google-lens
 - [ ] 12.8  windows-storage-sense-guide
 - [ ] 12.8  secure-home-network-basics
+- [ ] 12.7  how-to-protect-gender-identity-medical-records
 - [ ] 12.7  apple-google-trusted-contacts-account-recovery
-- [ ] 12.7  onenote-beginners-guide
 - [ ] 12.7  ipad-tips-everyday-seniors
 - [ ] 12.7  clear-browser-history-cache
 - [ ] 12.7  amazon-flex-guide
 - [ ] 12.7  apple-family-share-setup
-- [ ] 12.7  opendoor-home-selling
 - [ ] 12.6  how-to-use-iphone-health-app
-- [ ] 12.6  google-assistant-phone-tips
 - [ ] 12.6  vietnamese-american-senior-community-centers-bpsos-care
 - [ ] 12.6  delete-alexa-voice-history
 - [ ] 12.6  online-notary-guide
@@ -52,21 +50,16 @@ Non-Spanish guides shown here (top 210 by grade): see below
 - [ ] 12.6  sharecare-guide
 - [ ] 12.6  grammarly-student-guide
 - [ ] 12.6  zotero-research-citation
-- [ ] 12.6  fiber-internet-guide
 - [ ] 12.5  why-does-my-app-keep-crashing-how-to-fix-it
 - [ ] 12.5  iphone-crash-detection
-- [ ] 12.5  vanguard-app-guide
 - [ ] 12.5  zelle-scam-recognition-2026
 - [ ] 12.5  temu-shopping-guide
 - [ ] 12.5  book-medical-transportation-online
 - [ ] 12.5  needymeds-guide
 - [ ] 12.5  ssa-gov-my-account-guide
-- [ ] 12.5  starz-app-guide
 - [ ] 12.5  google-career-certificates
-- [ ] 12.5  nerdwallet-app-guide
 - [ ] 12.4  check-social-security-benefit-online
 - [ ] 12.4  iphone-serial-number-guide
-- [ ] 12.4  windows-vs-mac-guide
 - [ ] 12.4  use-fema-app-emergency-alerts
 - [ ] 12.3  how-to-set-up-roku-streaming-device
 - [ ] 12.3  google-nest-thermostat-setup
@@ -75,29 +68,24 @@ Non-Spanish guides shown here (top 210 by grade): see below
 - [ ] 12.3  oura-ring-sleep-tracker
 - [ ] 12.3  tubi-free-tv-guide
 - [ ] 12.3  alltrails-beginner
-- [ ] 12.3  canva-video-guide
 - [ ] 12.3  assistive-access-iphone
 - [ ] 12.3  starlink-setup-guide
 - [ ] 12.3  new-computer-setup-checklist
 - [ ] 12.2  senior-discounts-online-apps
-- [ ] 12.2  how-to-find-senior-pain-clinic-not-opioids
 - [ ] 12.2  how-to-find-refugee-resettlement-agency
+- [ ] 12.2  android-emergency-sos-setup
 - [ ] 12.2  bluetooth-troubleshoot
-- [ ] 12.2  use-facetime-iphone-ipad
 - [ ] 12.2  soundcloud-listen-guide
 - [ ] 12.2  echo-show-8-guide
 - [ ] 12.2  chrono24-watches
+- [ ] 12.2  kindle-fire-kids-setup
 - [ ] 12.2  snipping-tool-windows-guide
 - [ ] 12.1  cant-find-a-file-on-computer
 - [ ] 12.1  aarp-tech-member-benefits
 - [ ] 12.1  emergency-contacts-iphone
-- [ ] 12.1  how-to-apply-va-presumptive-conditions
-- [ ] 12.1  medigap-supplement-guide
 - [ ] 12.1  iphone-weather-app-guide
-- [ ] 12.1  rocket-mortgage-app
 - [ ] 12.1  wise-money-transfer
-- [ ] 12.0  how-to-use-va-caregiver-support-program
-- [ ] 12.0  smart-plug-setup-for-lamps-and-holiday-lights
+- [ ] 12.1  fiber-internet-guide
 - [ ] 12.0  imessage-vs-sms-vs-rcs-explained
 - [ ] 12.0  memorialize-facebook-account
 - [ ] 12.0  retirement-budgeting
@@ -110,9 +98,7 @@ Non-Spanish guides shown here (top 210 by grade): see below
 - [ ] 11.9  use-silvur-retirement-planning
 - [ ] 11.9  bluetooth-wont-connect-fix
 - [ ] 11.9  government-imposter-scam-guide
-- [ ] 11.9  how-to-keep-medications-safe-power-outage
-- [ ] 11.9  medicare-app-guide
-- [ ] 11.9  senior-firearm-suicide-prevention-988-wait-time
+- [ ] 11.9  vanguard-app-guide
 - [ ] 11.9  medical-id-android-setup
 - [ ] 11.9  android-notification-settings
 - [ ] 11.9  amazon-prime-benefits-guide
@@ -121,27 +107,21 @@ Non-Spanish guides shown here (top 210 by grade): see below
 - [ ] 11.9  samsung-internet-tips-guide
 - [ ] 11.9  fedex-delivery-manager-guide
 - [ ] 11.9  cloud-vs-local-backup
-- [ ] 11.9  kindle-unlimited-how-it-works
+- [ ] 11.9  starz-app-guide
 - [ ] 11.9  amwell-telehealth-guide
 - [ ] 11.9  fidelity-app-guide
 - [ ] 11.9  fishbrain-guide
+- [ ] 11.9  windows-vs-mac-guide
 - [ ] 11.9  iphone-accessibility-shortcut
 - [ ] 11.9  use-instacart-grocery-delivery
 - [ ] 11.8  cant-log-into-account-fix
 - [ ] 11.8  how-to-use-task-manager-windows
-- [ ] 11.8  how-to-find-va-approved-nursing-home
-- [ ] 11.8  how-to-get-hisa-grant-home-modifications
 - [ ] 11.8  lgbtq-senior-care-protective-documentation-advance-directive-poa
 - [ ] 11.8  citizen-safety-app-guide
 - [ ] 11.8  ticktick-app-guide
-- [ ] 11.8  secure-home-wifi-router
 - [ ] 11.8  google-drive-backup-guide
 - [ ] 11.8  apple-watch-health-seniors
-- [ ] 11.8  health-insurance-app-guide
-- [ ] 11.8  ublock-origin-guide
 - [ ] 11.8  livongo-diabetes-guide
-- [ ] 11.8  irs-direct-file-guide
-- [ ] 11.8  lutron-caseta-guide
 - [ ] 11.8  google-family-link-guide
 - [ ] 11.7  telehealth-appointments-see-your-doctor-from-home
 - [ ] 11.7  computer-fan-loud-and-hot
@@ -149,41 +129,40 @@ Non-Spanish guides shown here (top 210 by grade): see below
 - [ ] 11.7  investment-scams-social-media
 - [ ] 11.7  senior-citizen-discount-apps-programs
 - [ ] 11.7  how-to-use-apple-tv
-- [ ] 11.7  how-to-apply-for-fmla-care-for-parent
 - [ ] 11.7  facebook-marketplace-buy-safely
+- [ ] 11.7  google-assistant-phone-tips
+- [ ] 11.7  how-to-apply-va-presumptive-conditions
 - [ ] 11.7  senior-center-ncoa-accreditation-quality-markers
+- [ ] 11.7  onenote-beginners-guide
 - [ ] 11.7  review-connected-apps-google-apple
 - [ ] 11.7  delete-duplicate-photos-guide
 - [ ] 11.7  android-adaptive-battery-guide
 - [ ] 11.7  avoid-roaming-guide
 - [ ] 11.7  online-therapy-app-guide
-- [ ] 11.7  curiosity-stream-guide
 - [ ] 11.7  mayoclinic-guide
-- [ ] 11.7  roblox-safety-guide
-- [ ] 11.7  tripit-app-guide
+- [ ] 11.7  canva-video-guide
 - [ ] 11.7  5g-home-internet-guide
 - [ ] 11.7  check-windows-malware
 - [ ] 11.7  free-file-converter-websites-track-you-with-hundreds-of-cookies
+- [ ] 11.6  youtube-videos-buffering-fix
+- [ ] 11.6  how-to-keep-medications-safe-power-outage
+- [ ] 11.6  medigap-supplement-guide
+- [ ] 11.6  senior-firearm-suicide-prevention-988-wait-time
 - [ ] 11.6  google-family-group-shared-photos-setup
 - [ ] 11.6  recover-hacked-email-account
-- [ ] 11.6  opentable-app-guide
 - [ ] 11.6  use-ipad-for-reading
 - [ ] 11.6  lifelock-review
 - [ ] 11.6  universal-remote-guide
 - [ ] 11.6  omron-blood-pressure-guide
 - [ ] 11.6  mdlive-guide
-- [ ] 11.6  vita-free-tax-help
-- [ ] 11.6  roth-ira-beginners
-- [ ] 11.6  betterment-guide
+- [ ] 11.6  rocket-mortgage-app
 - [ ] 11.6  wildfire-guide
 - [ ] 11.6  set-up-smart-thermostat
 - [ ] 11.5  computer-keeps-restarting-fix
 - [ ] 11.5  use-iphone-emergency-sos-feature
 - [ ] 11.5  iphone-magnifier-accessibility
 - [ ] 11.5  live-text-iphone-copy-photo
-- [ ] 11.5  alexa-guard-home-security
 - [ ] 11.5  how-to-file-us-taxes-as-expat
-- [ ] 11.5  how-to-find-va-certified-service-dog
 - [ ] 11.5  iphone-recovery-mode
 - [ ] 11.5  medicare-plan-finder-annual-enrollment
 - [ ] 11.5  apple-id-recovery-guide
@@ -193,7 +172,6 @@ Non-Spanish guides shown here (top 210 by grade): see below
 - [ ] 11.5  cronometer-guide
 - [ ] 11.5  doctor-on-demand-guide
 - [ ] 11.5  bandcamp-music-guide
-- [ ] 11.5  taxslayer-guide
 - [ ] 11.5  schwab-app-guide
 - [ ] 11.5  amazon-parent-dashboard
 - [ ] 11.5  arlo-camera-setup-guide
@@ -201,10 +179,8 @@ Non-Spanish guides shown here (top 210 by grade): see below
 - [ ] 11.5  use-telehealth-doctor-visits
 - [ ] 11.4  facetime-on-ipad
 - [ ] 11.4  how-to-use-iphone-widgets
-- [ ] 11.4  how-to-find-va-adaptive-sports-program
+- [ ] 11.4  medicare-app-guide
 - [ ] 11.4  youtube-captions-guide
-- [ ] 11.4  gmail-tabs-guide
-- [ ] 11.4  lgbtq-older-adult-estate-planning-couples-survivor-benefits
 - [ ] 11.4  android-driving-mode
 - [ ] 11.4  digital-wallet-loyalty-cards
 - [ ] 11.4  senior-fishing-license-discounts-free-65-lifetime
@@ -214,9 +190,36 @@ Non-Spanish guides shown here (top 210 by grade): see below
 - [ ] 11.4  patent-search-beginners-guide
 - [ ] 11.4  share-passwords-safely-family
 - [ ] 11.4  aging-in-place-tech
-- [ ] 11.4  ssdi-application-guide
 - [ ] 11.4  cobra-health-guide
+- [ ] 11.4  ublock-origin-guide
 - [ ] 11.4  caring-village-guide
+- [ ] 11.4  priority-pass-guide
+- [ ] 11.4  opendoor-home-selling
+- [ ] 11.4  fabric-life-insurance-app
+- [ ] 11.4  ipad-guided-access-kids
+- [ ] 11.3  windows-auto-update-guide
+- [ ] 11.3  discord-basics-guide
+- [ ] 11.3  iphone-driving-mode-setup
+- [ ] 11.3  use-google-translate-camera-real-time
+- [ ] 11.3  senior-hospice-volunteer-training-process
+- [ ] 11.3  aarp-tax-aide-volunteer-to-leader-local-district-coordinator
+- [ ] 11.3  crunchyroll-streaming-guide
+- [ ] 11.3  android-quick-settings-guide
+- [ ] 11.3  smart-speaker-routines-guide
+- [ ] 11.3  android-storage-cleanup-guide
+- [ ] 11.3  google-inactive-account-manager
+- [ ] 11.3  kindle-unlimited-how-it-works
+- [ ] 11.3  asurion-phone-insurance
+- [ ] 11.3  curiosity-stream-guide
+- [ ] 11.3  cancer-screening-guide
+- [ ] 11.3  houzz-design-app
+- [ ] 11.3  powershell-beginners
+- [ ] 11.3  national-parks-app-guide
+- [ ] 11.3  use-walmart-pickup-delivery
+- [ ] 11.3  your-phone-number-is-listed-on-data-broker-websites
+- [ ] 11.2  connect-iphone-to-tv
+- [ ] 11.2  emergency-weather-alerts-setup
+- [ ] 11.2  gmail-inbox-management-guide
 
 ## Spanish guides (heuristic-inflated, lower priority)
 
@@ -225,7 +228,6 @@ Non-Spanish guides shown here (top 210 by grade): see below
 - [ ] 14.7  es-find-lost-phone
 - [ ] 14.3  es-update-phone
 - [ ] 13.8  es-block-spam-calls
-- [ ] 13.7  es-phone-calculator
 - [ ] 13.7  es-battery-saver
 - [ ] 13.6  es-venmo-safely
 - [ ] 13.5  es-free-audiobooks-library
@@ -236,6 +238,7 @@ Non-Spanish guides shown here (top 210 by grade): see below
 - [ ] 13.1  es-facebook-beginners
 - [ ] 13.1  es-free-phone-storage
 - [ ] 13.0  es-online-banking-security
+- [ ] 13.0  es-phone-calculator
 - [ ] 12.9  es-patient-portal-mychart
 - [ ] 12.9  es-protect-phone-stolen
 - [ ] 12.8  es-facebook-marketplace-safe
@@ -246,13 +249,13 @@ Non-Spanish guides shown here (top 210 by grade): see below
 - [ ] 12.5  es-check-credit-score-free
 - [ ] 12.4  es-setup-apple-google-pay
 - [ ] 12.4  es-setup-new-iphone
-- [ ] 12.4  es-phone-camera
 - [ ] 12.2  es-amazon-alexa-setup
 - [ ] 12.1  es-setup-email-phone
 - [ ] 12.0  es-spot-phishing-email
 - [ ] 12.0  es-spotify-music
 - [ ] 12.0  es-weather-app
 - [ ] 11.8  es-connect-bluetooth-headphones
+- [ ] 11.8  es-phone-camera
 - [ ] 11.7  es-setup-medicare-gov
 - [ ] 11.6  es-take-screenshot
 - [ ] 11.6  es-send-photos-text
@@ -260,3 +263,6 @@ Non-Spanish guides shown here (top 210 by grade): see below
 - [ ] 11.6  es-copy-paste
 - [ ] 11.5  es-strong-password
 - [ ] 11.5  es-voicemail-setup
+- [ ] 11.4  es-phone-lock-password
+- [ ] 11.4  es-netflix-guide
+- [ ] 11.3  es-setup-alexa
