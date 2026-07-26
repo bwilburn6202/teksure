@@ -52,3 +52,7 @@ vite.config.ts.timestamp-*.mjs
 *.stale.bak
 newprobe.txt
 tsc_check_local.json
+
+# FUSE mount temp files / vitest timestamps
+.fuse_hidden*
+vitest.config.ts.timestamp-*
