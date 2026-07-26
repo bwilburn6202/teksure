@@ -56,3 +56,4 @@ tsc_check_local.json
 # FUSE mount temp files / vitest timestamps
 .fuse_hidden*
 vitest.config.ts.timestamp-*
+scripts/revert-require-swap.mjs
