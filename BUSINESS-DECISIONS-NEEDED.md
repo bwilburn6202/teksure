@@ -109,6 +109,46 @@ deposit on "not resolved," and surface the rate in the admin console.
 
 ---
 
+## 4b. URGENT — about 2,400 of your guides return 404 to customers
+
+Found July 26 while checking why the build reports 4,662 prerendered pages
+against 7,101 routes. This is the most damaging thing on the list and it is
+costing you traffic right now.
+
+**What's happening.** Two separate faults stacked:
+
+1. **The prerender run is being cut short.** It renders shortest-URL-first (by
+   design, so hub pages survive a truncated run) and stops around 4,662 of
+   7,101. The evidence is clean — short slugs work, long ones don't:
+
+   | URL | Length | Status |
+   |---|---|---|
+   | `/guides/use-google-lens` | 23 | 200 |
+   | `/guides/nasa-app-guide` | 22 | 200 |
+   | `/guides/how-to-use-my-social-security-account` | 45 | **404** |
+   | `/guides/telehealth-appointments-see-your-doctor-from-home` | 57 | **404** |
+
+2. **The SPA fallback was broken,** so those un-prerendered routes returned a
+   bare Vercel 404 instead of loading the app. The catch-all rewrite's negative
+   lookahead wasn't being honored — even `/this-page-does-not-exist` 404'd.
+
+**What I fixed:** #2. The rewrite now uses the canonical `/(.*)` form, so
+missing routes fall through to the app and render client-side instead of dying.
+Prerendered pages are unaffected (Vercel checks the filesystem before rewrites —
+proven by the old catch-all coexisting with 4,662 static pages).
+
+**What's still open:** #1. Those 2,400 guides will load for humans but still
+ship without their real title/meta, so search engines see generic tags. Fixing
+it needs the Vercel build log to see whether prerender is timing out, running out
+of memory, or erroring on specific routes — I can't reach that from here.
+
+**What to do:** open the latest deployment on Vercel, find the `[prerender]`
+lines in the build log, and send me the last 30 or so. They print progress
+(`done/total`), failures, and degraded pages. That'll tell us in one look whether
+it's a timeout or a crash.
+
+---
+
 ## 5. Things I deliberately did *not* touch
 
 - **Stripe edge functions.** `CLAUDE.md` says not to touch these without explicit
