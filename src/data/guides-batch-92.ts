@@ -362,7 +362,9 @@ Family Link works on Android phones and tablets, as well as Chromebooks when the
     thumbnailEmoji: ``,
     publishedAt: `2026-04-20`,
     difficulty: `Beginner`,
-    body: `The Amazon Kindle Fire Kids tablet (sometimes called Fire HD Kids) is a version of Amazon's standard Fire tablet sold specifically for children. It comes in a kid-proof case with a guaranteed two-year warranty (if it breaks for any reason, Amazon will replace it). And it includes a one-year subscription to Amazon Kids+, which is a curated library of books, educational apps, videos, and games appropriate for children.
+    body: `The Amazon Kindle Fire Kids tablet, sometimes called Fire HD Kids, is Amazon's standard Fire tablet sold in a version made for children.
+
+It comes in a kid-proof case with a two-year warranty. If it breaks for any reason, Amazon replaces it. It also includes a one-year subscription to Amazon Kids+, a library of books, educational apps, videos, and games chosen as appropriate for children.
 
 Setting up the tablet involves creating a child profile, linking it to the Amazon Kids+ subscription, and configuring parental controls through the Amazon Parent Dashboard — a website (or app) where parents can manage everything from a browser or their own phone.
 

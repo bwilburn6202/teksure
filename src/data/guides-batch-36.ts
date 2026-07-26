@@ -576,7 +576,9 @@ NRC is also social: you can connect with friends, cheer each other on, and parti
     thumbnailEmoji: '',
     publishedAt: '2026-04-19',
     difficulty: 'Beginner',
-    body: `Circle to Search is an Android feature from Google that lets you search for anything on your screen without switching apps. Whether you're watching a YouTube video, reading a news article, or scrolling social media, you can circle, highlight, scribble on, or tap anything on the screen and instantly get Google search results about it.
+    body: `Circle to Search is an Android feature from Google. It lets you look something up without leaving the app you are in.
+
+Say you are watching a YouTube video, reading a news article, or scrolling social media. You can circle, highlight, scribble on, or tap anything on the screen, and Google search results appear right away.
 
 This is especially useful when you see something and want to know more — for example, you're watching a cooking video and want to find the recipe, or you see a product and want to buy it, or you're reading about a person and want to learn who they are.
 

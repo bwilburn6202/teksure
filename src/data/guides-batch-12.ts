@@ -472,7 +472,7 @@ export const guidesBatch12: Guide[] = [
     thumbnailEmoji: '',
     publishedAt: '2026-04-19',
     difficulty: 'Beginner',
-    body: "A Roku is a small device about the size of a USB stick that plugs into your TV and lets you watch Netflix, Hulu, Amazon Prime Video, YouTube, and hundreds of free channels without paying for cable. Roku devices cost between $30 and $80 at most electronics stores, and there's no monthly fee for the Roku itself.",
+    body: "A Roku is a small device, about the size of a USB stick, that plugs into your TV. It lets you watch Netflix, Hulu, Amazon Prime Video, YouTube, and hundreds of free channels without paying for cable.\n\nRoku devices cost between $30 and $80 at most electronics stores. There is no monthly fee for the Roku itself.",
     steps: [
       {
         title: 'Plug the Roku into your TV',

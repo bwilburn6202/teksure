@@ -157,7 +157,7 @@ export const guidesBatch14: Guide[] = [
     thumbnailEmoji: '',
     publishedAt: '2026-04-19',
     difficulty: 'Intermediate',
-    body: "A Google Nest thermostat replaces your existing wall thermostat and adds WiFi and learning capabilities. After a week of using it normally, the Nest learns your schedule and temperature preferences and starts adjusting automatically. You can also control the temperature from your phone from anywhere.",
+    body: "A Google Nest thermostat replaces the thermostat already on your wall. It adds WiFi, and it learns your habits.\n\nUse it normally for about a week. In that time it picks up your schedule and the temperatures you prefer, then starts adjusting on its own. You can also change the temperature from your phone, wherever you happen to be.",
     steps: [
       {
         title: 'Check compatibility and turn off power before installing',

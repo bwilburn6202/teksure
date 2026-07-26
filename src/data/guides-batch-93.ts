@@ -255,7 +255,9 @@ You will need a Microsoft account to use Clipchamp. If you are signed into Windo
     thumbnailEmoji: ``,
     publishedAt: `2026-04-20`,
     difficulty: `Beginner`,
-    body: `The Snipping Tool is a free program built into Windows that lets you capture screenshots — pictures of what is on your screen — and record video of your screen. It has been part of Windows for many years, but Microsoft greatly upgraded it in Windows 11 with a new design, a delay timer, an annotation pen, and a screen recording feature.
+    body: `The Snipping Tool is a free program built into Windows. It captures screenshots — pictures of what is on your screen — and it can record video of your screen too.
+
+It has been part of Windows for many years. Microsoft gave it a big upgrade in Windows 11, adding a new design, a delay timer, an annotation pen, and screen recording.
 
 Screenshots are useful in many everyday situations: saving a photo of a confirmation number, capturing an error message to show a tech support person, documenting steps in a process, saving a recipe from a website, or capturing a conversation you want to keep. Instead of trying to describe what you see on screen to someone, you can send them a picture of it.
 
