@@ -47,7 +47,9 @@ export const guidesBatch38: Guide[] = [
     thumbnailEmoji: '',
     publishedAt: '2026-04-19',
     difficulty: 'Beginner',
-    body: `The Oura Ring is a lightweight titanium ring that tracks your sleep, readiness, and activity 24 hours a day. It has been clinically validated for sleep staging accuracy and is used by athletes, doctors, and everyday people who want detailed insight into how their body recovers overnight. The ring pairs with a free app on iPhone or Android, and gives you three daily scores — Sleep, Readiness, and Activity — each rated from 0 to 100.`,
+    body: `The Oura Ring is a lightweight titanium ring that tracks your sleep, readiness, and activity around the clock. It has been clinically validated for sleep-stage accuracy, and it is used by athletes, doctors, and everyday people who want to understand how their body recovers overnight.
+
+The ring pairs with a free app on iPhone or Android. Each morning it gives you three scores — Sleep, Readiness, and Activity — rated from 0 to 100.`,
     steps: [
       {
         title: 'Order the right ring size',

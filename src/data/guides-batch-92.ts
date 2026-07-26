@@ -509,7 +509,9 @@ Screen Time works on every currently supported version of macOS (including Sonom
     thumbnailEmoji: ``,
     publishedAt: `2026-04-20`,
     difficulty: `Beginner`,
-    body: `Grammarly is a writing tool that checks your text as you type and points out errors in spelling, grammar, and punctuation. It also suggests improvements to how you phrase things, flags sentences that are too long or confusing, and checks whether your tone matches the situation — for example, whether an email sounds professional enough.
+    body: `Grammarly is a writing tool that checks your text as you type. It points out mistakes in spelling, grammar, and punctuation.
+
+It does more than catch errors, though. It suggests better ways to phrase things and flags sentences that run too long or get confusing. It also checks whether your tone fits the situation — for example, whether an email sounds professional enough.
 
 Grammarly has a free version that covers most common writing needs: catching spelling mistakes, basic grammar errors, and punctuation problems. The Premium version (paid) adds more advanced suggestions including vocabulary improvements, plagiarism checking, and more detailed tone and clarity analysis.
 
@@ -554,7 +556,9 @@ Important for academic integrity: Grammarly's free grammar checking is generally
     thumbnailEmoji: ``,
     publishedAt: `2026-04-20`,
     difficulty: `Intermediate`,
-    body: `Zotero is a free, open-source tool used by millions of researchers, students, and academics to collect, organize, and cite their sources. Instead of manually copying author names, publication dates, and URLs into your bibliography, Zotero does it for you — automatically capturing all the necessary citation information from a webpage, library database, or PDF with a single click.
+    body: `Zotero is a free tool that millions of researchers, students, and academics use to collect, organize, and cite their sources. It is open-source, so there is nothing to pay.
+
+Normally you would copy author names, publication dates, and web addresses into your bibliography by hand. Zotero does that for you. One click captures everything it needs from a webpage, a library database, or a PDF.
 
 Once you have saved sources to Zotero, you can insert properly formatted citations into Word documents or Google Docs using a Zotero plugin. When you are done writing, Zotero generates your full bibliography in whatever citation style your assignment requires — APA, MLA, Chicago, Harvard, and hundreds of others.
 
