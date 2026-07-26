@@ -638,7 +638,7 @@ For most people, casting from a phone or using a laptop + HDMI cable are the sim
       {
         title: `Install Zoom on Amazon Fire TV`,
         content: `On your Fire TV: go to the Home screen → Find → Search → type "Zoom." Install the Zoom for Home app. Sign in with your Zoom account. For video, you need a separate USB-C or compatible camera connected to the Fire TV USB port (Logitech or Zoom Rooms camera). Without a camera, you can see others but they cannot see you.`,
-        tip: `Quick Tip: A Bluetooth speaker and camera can a lot improve audio quality for large-screen Zoom calls on Fire TV.`,
+        tip: `Quick Tip: A Bluetooth speaker and camera can greatly improve audio quality for large-screen Zoom calls on Fire TV.`,
       },
       {
         title: `Use a laptop connected via HDMI`,

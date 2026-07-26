@@ -122,7 +122,7 @@ export const guidesBatch22: Guide[] = [
     thumbnailEmoji: '',
     publishedAt: '2026-04-19',
     difficulty: 'Beginner',
-    body: `Your Google account (the one tied to your Gmail) is used across most of what you do online — searching, watching YouTube, using Google Maps, using Android. By default, Google records a lot: your search history, location history, YouTube watch history, and more. This data is used to personalize ads and suggestions.\n\nThe good news: Google gives you control over all of this. You can review what's been recorded, delete specific items or your entire history, turn off future tracking, and lock down account security. This doesn't require anything technical — Google's privacy settings are designed to be accessible.\n\nThis guide walks through the key settings worth reviewing. Even making one or two changes can a lot reduce data collection.`,
+    body: `Your Google account (the one tied to your Gmail) is used across most of what you do online — searching, watching YouTube, using Google Maps, using Android. By default, Google records a lot: your search history, location history, YouTube watch history, and more. This data is used to personalize ads and suggestions.\n\nThe good news: Google gives you control over all of this. You can review what's been recorded, delete specific items or your entire history, turn off future tracking, and lock down account security. This doesn't require anything technical — Google's privacy settings are designed to be accessible.\n\nThis guide walks through the key settings worth reviewing. Even making one or two changes can greatly reduce data collection.`,
     steps: [
       {
         title: 'Open your Google Account settings',

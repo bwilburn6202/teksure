@@ -215,7 +215,7 @@ Parental controls are available under Account Settings. You can restrict content
     slug: `goodrx-savings-guide`,
     title: `How to Save Money on Prescriptions with GoodRx`,
     excerpt: `GoodRx finds the lowest price for your prescription at nearby pharmacies — often cheaper than insurance copays.`,
-    body: `GoodRx is a free service that searches prescription drug prices at pharmacies near you and provides a coupon that can a lot reduce what you pay at the counter. It is not insurance — it is a discount program that works by negotiating group pricing with pharmacy chains. Using GoodRx is completely legal, and pharmacists deal with GoodRx coupons every day.
+    body: `GoodRx is a free service that searches prescription drug prices at pharmacies near you and provides a coupon that can greatly reduce what you pay at the counter. It is not insurance — it is a discount program that works by negotiating group pricing with pharmacy chains. Using GoodRx is completely legal, and pharmacists deal with GoodRx coupons every day.
 
 Many people are surprised to find that GoodRx prices are lower than their insurance copay, especially for common generic medications. For example, a 30-day supply of a common blood pressure medication that might cost $15 to $20 with insurance could cost $4 to $8 with a GoodRx coupon at certain pharmacies.
 

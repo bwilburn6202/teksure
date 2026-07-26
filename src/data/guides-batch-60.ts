@@ -781,7 +781,7 @@ The free AI tools that work well for travel planning are ChatGPT (chat.openai.co
     difficulty: `Intermediate`,
     body: `Looking for work can feel overwhelming, especially if you have been out of the workforce for a while, are changing careers, or feel uncertain about how to present yourself on paper. AI tools can help at every stage of the process — writing and improving your resume, drafting personalized cover letters, preparing for interview questions, and researching potential employers.
 
-The key thing to understand is that AI does not find jobs for you. It helps you present yourself well and prepare thoroughly. You still need to search for job listings on sites like Indeed, LinkedIn, or USAJOBS (for federal jobs). And you still need to do the interviews. But AI can a lot reduce the stress and time involved in the writing and preparation parts.
+The key thing to understand is that AI does not find jobs for you. It helps you present yourself well and prepare thoroughly. You still need to search for job listings on sites like Indeed, LinkedIn, or USAJOBS (for federal jobs). And you still need to do the interviews. But AI can greatly reduce the stress and time involved in the writing and preparation parts.
 
 For resume improvement, AI is particularly useful at taking a rough description of your work history and turning it into clear, well-organized bullet points that highlight your accomplishments. Many people struggle to write about their own experience in a professional way — AI makes this much easier. You describe what you did, and the AI helps you phrase it in a way that reads well to hiring managers.
 

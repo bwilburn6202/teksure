@@ -129,7 +129,7 @@ You can check the estimated value of your phone before committing to anything. A
       {
         title: `Check trade-in estimates at multiple places`,
         content: `Visit Apple's trade-in page (apple.com/shop/trade-in), Samsung's trade-in page (samsung.com/us/trade-in), and your carrier's website. Enter your phone's model and answer questions about its condition. Compare the offers — they can vary by $50 to $200 or more for the same phone. Best Buy and Amazon also have trade-in estimators worth checking.`,
-        tip: `Carrier promotions sometimes offer dramatically higher trade-in values for a limited time — especially when a new phone model launches. If you are not in a rush, timing your trade-in around these promotions can a lot increase your credit.`,
+        tip: `Carrier promotions sometimes offer dramatically higher trade-in values for a limited time — especially when a new phone model launches. If you are not in a rush, timing your trade-in around these promotions can greatly increase your credit.`,
       },
       {
         title: `Sign out of your accounts on the old phone`,
@@ -605,15 +605,15 @@ Setting up Honey takes about two minutes. You install the browser extension once
     thumbnailEmoji: ``,
     publishedAt: `2026-04-20`,
     difficulty: `Beginner`,
-    body: `Identity theft happens when someone uses your personal information — your Social Security number, credit card number, bank account details, or other identifying information — without your permission, usually to steal money or open new accounts in your name. It affects millions of Americans every year and can take months or years to fully resolve. Understanding how it happens and what you can do to prevent it is one of the most valuable investments you can make in your personal security.
+    body: `Identity theft happens when someone uses your personal information without your permission, usually to steal money or open new accounts in your name. This can include your Social Security number, credit card number, bank account details, or other identifying information. It affects millions of Americans every year and can take months or years to fully resolve. Understanding how it happens and what you can do to prevent it is one of the most valuable investments you can make in your personal security.
 
-Criminals get personal information through several common methods. Data breaches happen when hackers break into the computer systems of a company you do business with — a retailer, bank, health insurance company, or government agency — and steal large databases of customer information. This has happened to major companies including Target, Equifax, Yahoo, and many others. If your information was in one of those databases, it may now be circulating on illegal markets.
+Criminals get personal information through several common methods. Data breaches happen when hackers break into the computer systems of a company you do business with, such as a retailer, bank, health insurance company, or government agency, and steal large databases of customer information. This has happened to major companies including Target, Equifax, Yahoo, and many others. If your information was in one of those databases, it may now be circulating on illegal markets.
 
 Phishing is another common method — criminals send emails or text messages pretending to be your bank, the IRS, Social Security Administration, or another trusted organization. These messages try to trick you into entering your login credentials, Social Security number, or credit card information on a fake website. The message often creates urgency: "Your account will be closed unless you verify your information now."
 
-Physical theft still occurs too. Criminals steal mail from mailboxes (particularly new credit cards, bank statements, and tax documents), go through trash for discarded documents with personal information, and steal wallets and purses containing Social Security cards, credit cards, and ID.
+Physical theft still occurs too. Criminals steal mail from mailboxes, particularly new credit cards, bank statements, and tax documents. They also go through trash for discarded documents with personal information, and steal wallets and purses containing Social Security cards, credit cards, and ID.
 
-The encouraging news is that there are specific, practical steps that a lot reduce your risk. Freezing your credit reports, monitoring your accounts regularly, using strong unique passwords, and being skeptical of unsolicited messages are all proven protections. You do not need to be a technology expert to implement these — this guide walks you through each one.`,
+The encouraging news is that there are specific, practical steps that greatly reduce your risk. Freezing your credit reports, monitoring your accounts regularly, using strong unique passwords, and being skeptical of unsolicited messages are all proven protections. You do not need to be a technology expert to implement these — this guide walks you through each one.`,
     steps: [
       {
         title: `Freeze your credit reports at all three bureaus`,

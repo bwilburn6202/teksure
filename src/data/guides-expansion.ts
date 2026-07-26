@@ -3925,7 +3925,7 @@ If you have already fallen for a tech support scam: change your passwords right 
     thumbnailEmoji: '',
     publishedAt: '2026-04-15',
     difficulty: 'Beginner',
-    body: `Social media accounts are often set to share more than you realize. Your posts, photos, friends list, location, and personal details may be visible to anyone on the internet — not only your friends and family. Taking a few minutes to adjust your privacy settings can a lot reduce what strangers can see.
+    body: `Social media accounts are often set to share more than you realize. Your posts, photos, friends list, location, and personal details may be visible to anyone on the internet — not only your friends and family. Taking a few minutes to adjust your privacy settings can greatly reduce what strangers can see.
 
 Facebook: Go to Settings and Privacy, then Settings, then Privacy. Under "Who can see your future posts?" change it from "Public" to "Friends." Under "Who can send you friend requests?" choose "Friends of friends." Under "Who can look you up by email/phone?" change to "Friends." Also go to your Profile, tap the three dots, then "View As" to see what your profile looks like to the public.
 
@@ -5501,7 +5501,7 @@ Set a Screen Time passcode that is different from the child's login password. Th
     thumbnailEmoji: '',
     publishedAt: '2026-04-16',
     difficulty: 'Beginner' as any,
-    body: `Managing prescriptions online saves trips to the pharmacy, lets you set up automatic refills, and makes it easy to track your medications. Most major pharmacies — CVS, Walgreens, Rite Aid, and Walmart — have apps and websites where you can transfer prescriptions, request refills, and choose delivery or in-store pickup. Free discount tools like GoodRx can also a lot reduce your out-of-pocket costs.`,
+    body: `Managing prescriptions online saves trips to the pharmacy, lets you set up automatic refills, and makes it easy to track your medications. Most major pharmacies — CVS, Walgreens, Rite Aid, and Walmart — have apps and websites where you can transfer prescriptions, request refills, and choose delivery or in-store pickup. Free discount tools like GoodRx can also greatly reduce your out-of-pocket costs.`,
     steps: [
       { title: 'Create an account with your pharmacy', content: `Go to your pharmacy's website (cvs.com, walgreens.com, etc.) or download their app. Create an account with your name, date of birth, insurance information, and address. Your prescription history and insurance will be linked to your account.` },
       { title: 'Transfer or add a prescription', content: `To transfer a prescription from another pharmacy, enter the current pharmacy's name and your prescription number in the transfer section. To add a new prescription, your doctor can send it electronically to your chosen pharmacy, or you can bring in a paper prescription.` },

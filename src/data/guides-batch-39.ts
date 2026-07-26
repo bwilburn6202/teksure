@@ -148,7 +148,7 @@ export const guidesBatch39: Guide[] = [
     steps: [
       {
         title: 'The iPad (standard) — best for most people',
-        content: `The base iPad starts around $329 for the 11-inch model. It handles video calls, web browsing, email, streaming TV, reading, and most apps with no trouble at all. The screen is bright and large enough for comfortable use. Battery life lasts 10 hours of active use. For someone new to tablets or who uses one mainly for communication and media, this is the right choice. Spending more does not a lot improve the experience for these uses.`,
+        content: `The base iPad starts around $329 for the 11-inch model. It handles video calls, web browsing, email, streaming TV, reading, and most apps with no trouble at all. The screen is bright and large enough for comfortable use. Battery life lasts 10 hours of active use. For someone new to tablets or who uses one mainly for communication and media, this is the right choice. Spending more does not greatly improve the experience for these uses.`,
         tip: `Buy with at least 128 GB of storage. The base 64 GB fills up faster than expected once you add photos, apps, and offline videos for travel.`,
       },
       {

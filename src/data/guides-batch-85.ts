@@ -297,7 +297,7 @@ Rental income from VRBO is taxable in the United States. You are generally requi
       },
       {
         title: `Add your property details`,
-        content: `Enter your property's address, type (house, condo, cabin, etc.), the number of bedrooms and bathrooms, how many guests it can sleep, and all available amenities. VRBO prompts you with a checklist of common amenities — items like a hot tub, fireplace, or private pool can a lot increase your nightly rate and attract more bookings.`,
+        content: `Enter your property's address, type (house, condo, cabin, etc.), the number of bedrooms and bathrooms, how many guests it can sleep, and all available amenities. VRBO prompts you with a checklist of common amenities — items like a hot tub, fireplace, or private pool can greatly increase your nightly rate and attract more bookings.`,
         tip: `Quick Tip: Properties with at least 20 high-quality photos receive a lot more bookings. Photograph every room, outdoor spaces, and any standout features.`,
       },
       {

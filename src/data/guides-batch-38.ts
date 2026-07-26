@@ -603,7 +603,7 @@ Parents can use Screen Time to manage a child's phone remotely through Family Sh
     steps: [
       {
         title: 'Look at the hands and fingers first',
-        content: `AI image generators historically struggle with hands and fingers. Look for: extra fingers (six fingers on a hand), missing fingers, fingers that bend the wrong way, fingers that merge together or fade at the tips, or hands that look waxy or rubbery. While AI tools have improved a lot, close inspection of hands still reveals flaws in many AI images. Zoom in on any person's hands in a suspicious photo.`,
+        content: `AI image generators historically struggle with hands and fingers. Look for extra fingers, like six fingers on a hand, or missing fingers. Also look for fingers that bend the wrong way, fingers that merge together or fade at the tips, or hands that look waxy or rubbery. While AI tools have improved a lot, close inspection of hands still reveals flaws in many AI images. Zoom in on any person's hands in a suspicious photo.`,
         tip: `Also look at teeth — AI often produces too many, oddly shaped, or glowing white teeth in portrait images.`,
       },
       {

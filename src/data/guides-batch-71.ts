@@ -1061,7 +1061,7 @@ If you have an Apple Magic Keyboard with a trackpad, you can control the iPad en
       },
       {
         title: `Learn navigation shortcuts`,
-        content: `Practice these core shortcuts: Command+Space (open Spotlight to search or launch apps), Command+H (go to the Home Screen), Command+Tab (see recently used apps and switch between them). These three shortcuts alone a lot reduce how often you need to touch the screen.`,
+        content: `Practice these core shortcuts: Command+Space (open Spotlight to search or launch apps), Command+H (go to the Home Screen), Command+Tab (see recently used apps and switch between them). These three shortcuts alone greatly reduce how often you need to touch the screen.`,
       },
       {
         title: `Use text editing shortcuts`,

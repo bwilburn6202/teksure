@@ -142,7 +142,7 @@ If this is your very first iPad, setup takes about 10 to 15 minutes. Apple's set
     difficulty: `Intermediate`,
     body: `You've probably noticed that after you search for something online or look at a product, ads for that item seem to follow you everywhere — on websites, in apps, and on social media. This is called targeted or personalized advertising, and it's powered by tracking systems that monitor your browsing behavior, your location, and your purchase history.
 
-You can't make all ads disappear. But you can a lot reduce how much tracking happens and stop companies from using your data to build a detailed profile about you. It takes about 15 to 20 minutes to go through these settings across your main devices and accounts, and the effect is noticeable.
+You can't make all ads disappear. But you can greatly reduce how much tracking happens and stop companies from using your data to build a detailed profile about you. It takes about 15 to 20 minutes to go through these settings across your main devices and accounts, and the effect is noticeable.
 
 There are four main places to adjust: your iPhone or Android's advertising settings, your Google account, your Facebook account, and your web browser. Each of these controls a different slice of the tracking ecosystem.
 

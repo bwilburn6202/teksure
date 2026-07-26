@@ -634,7 +634,7 @@ If your school uses both Teams and another system like Canvas or Schoology, Team
       {
         title: `Join a class video meeting`,
         content: `When your teacher starts a class video call, you will see a notification in Teams and a "Join" button in the class's Posts channel. Click Join to enter the meeting. Before entering, you will see a preview screen where you can turn your camera and microphone on or off. During the meeting, use the "Raise Hand" button (a hand icon in the meeting toolbar) to let the teacher know you want to speak without interrupting.`,
-        tip: `Quick Tip: If your internet connection is slow, turning off your camera (while keeping your microphone on) can a lot improve call quality for everyone in the meeting.`,
+        tip: `Quick Tip: If your internet connection is slow, turning off your camera (while keeping your microphone on) can greatly improve call quality for everyone in the meeting.`,
       },
       {
         title: `Check your grades and feedback`,

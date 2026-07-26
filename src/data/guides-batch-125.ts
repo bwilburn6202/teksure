@@ -117,7 +117,7 @@ If you discover a fraudulent check was paid from your account, call your bank ri
       },
       {
         title: 'Consider a locking mailbox',
-        content: 'Locking mailboxes accept incoming mail through a slot but require a key to retrieve it. They are available at hardware stores for $50 to $150 and a lot reduce the risk of mail theft. If you are renting, ask your landlord — some apartment buildings can install cluster locking units. The US Postal Service also offers PO Boxes at your local post office starting around $5 to $25 per month for secure incoming mail.',
+        content: 'Locking mailboxes accept incoming mail through a slot but require a key to retrieve it. They are available at hardware stores for $50 to $150 and greatly reduce the risk of mail theft. If you are renting, ask your landlord — some apartment buildings can install cluster locking units. The US Postal Service also offers PO Boxes at your local post office starting around $5 to $25 per month for secure incoming mail.',
       },
     ],
   },
