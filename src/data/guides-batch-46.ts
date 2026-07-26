@@ -497,9 +497,9 @@ For apps, Spotlight is faster than searching your home screen pages. Type the fi
     thumbnailEmoji: ``,
     publishedAt: `2026-04-19`,
     difficulty: `Beginner`,
-    body: `Over time, Windows accumulates gigabytes of temporary files, old system files, cached data, and Recycle Bin items that serve no purpose but take up storage space. Storage Sense is a built-in Windows feature that automatically cleans up this clutter on a schedule — so your PC stays healthy without you having to do anything.
+    body: `Over time, Windows accumulates gigabytes of temporary files, old system files, cached data, and Recycle Bin items. None of it serves any purpose, but it all takes up storage space. Storage Sense is a built-in Windows feature that automatically cleans up this clutter on a schedule, so your PC stays healthy without you having to do anything.
 
-Storage Sense can delete: temporary files created by Windows and apps, the Recycle Bin contents after a certain number of days, files in your Downloads folder older than a threshold you set, and offline versions of OneDrive files you have not used in a while.
+Storage Sense can delete temporary files created by Windows and apps, and Recycle Bin contents after a certain number of days. It can also clear files in your Downloads folder older than a threshold you set, and offline versions of OneDrive files you have not used in a while.
 
 Once turned on, Storage Sense runs automatically when your disk space gets low, or on a schedule you choose (daily, weekly, or monthly). You can also run it manually whenever you want a cleanup.
 

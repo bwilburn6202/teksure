@@ -896,7 +896,7 @@ Setting up a Sleep schedule in the Focus system is particularly valuable. It aut
 
 Google Lens is built into Android phones and comes with the Google app. On iPhone, it's available inside the Google app and Google Photos. You can access it from the Google Search bar, from Google Photos, from Google Assistant, and on some Android phones through the camera app directly.
 
-Common uses that people find right away valuable: identifying a plant or flower in your garden, finding where a product is sold online (just point the camera at the product), translating a sign or menu from a foreign language, copying text from a physical piece of paper (like a receipt or business card) into your phone, solving a math problem by pointing the camera at the equation, and looking up information on a book by pointing at the cover.
+Common uses that people find valuable right away include identifying a plant or flower in your garden, and finding where a product is sold online just by pointing the camera at it. It can also translate a sign or menu from a foreign language, and copy text from a physical piece of paper, like a receipt or business card, into your phone. It can even solve a math problem by pointing the camera at the equation, or look up information about a book by pointing at the cover.
 
 For seniors, the plant identification and translation features are often the most used — especially travelers who encounter foreign-language menus or signs and people who want to identify garden plants without knowing the name.`,
     steps: [
@@ -974,13 +974,13 @@ For seniors and anyone who wants key information visible at a glance, widgets ar
     thumbnailEmoji: ``,
     publishedAt: `2026-04-21`,
     difficulty: `Intermediate`,
-    body: `Your home Wi-Fi network is the gateway to the internet for every device in your home — your computers, phones, tablets, smart TVs, security cameras, smart doorbells, thermostats, and more. If someone gains unauthorized access to your network, they can potentially intercept your internet traffic, access unsecured devices, or use your connection to do something illegal.
+    body: `Your home Wi-Fi network is the gateway to the internet for every device in your home. That includes your computers, phones, tablets, smart TVs, security cameras, smart doorbells, thermostats, and more. If someone gains unauthorized access to your network, they can potentially intercept your internet traffic, access unsecured devices, or use your connection to do something illegal.
 
-Most home network security problems come from not changing the factory defaults. The router your internet provider gave you has a default admin password (usually something simple like "admin" or "password123") that's the same on every device they deploy. If you've never changed it, a knowledgeable person on your network — or in some cases nearby — may be able to log into your router's settings.
+Most home network security problems come from not changing the factory defaults. The router your internet provider gave you has a default admin password, usually something simple like "admin" or "password123," that's the same on every device they deploy. If you've never changed it, a knowledgeable person on your network — or in some cases nearby — may be able to log into your router's settings.
 
 The good news is that securing a home network doesn't require technical expertise. The steps below take about 20 minutes and cover the most impactful changes you can make.
 
-The five things that matter most: (1) change your router's admin password, (2) change your Wi-Fi network password to something strong, (3) make sure your network uses WPA2 or WPA3 encryption (not the older WEP), (4) update your router's firmware, and (5) turn off remote management if you don't need it.`,
+Five things matter most. Change your router's admin password. Change your Wi-Fi network password to something strong. Make sure your network uses WPA2 or WPA3 encryption, not the older WEP. Update your router's firmware. And turn off remote management if you don't need it.`,
     steps: [
       {
         title: `Log in to your router's settings`,
