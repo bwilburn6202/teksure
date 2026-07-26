@@ -251,7 +251,7 @@ export const guidesBatch272: Guide[] = [
       },
       {
         title: "Separate joint bank accounts, credit cards, and safe deposit boxes",
-        content: "Close joint checking and savings accounts. Open new accounts in your name only. Move automatic deposits (Social Security, pension) to the new accounts using the SSA online portal at ssa.gov/myaccount and the pension plan portal. Close joint credit cards right away even with zero balance — new charges after divorce can become a problem in some states. Empty the joint safe deposit box together if possible; if not, take legal possession and have the bank witness the contents inventory.",
+        content: "Close joint checking and savings accounts. Open new accounts in your name only. Move automatic deposits (Social Security, pension) to the new accounts using the SSA online portal at ssa.gov/myaccount and the pension plan portal. Close joint credit cards right away even with zero balance — new charges after divorce can become a problem in some states. Empty the joint safe deposit box together if possible. If not, take legal possession and have the bank witness the contents inventory.",
         tip: "Quick Tip: Move automatic bill payments (utilities, phone, internet) onto the new individual account before closing the joint one. Otherwise auto-payments bounce and trigger late fees.",
       },
       {

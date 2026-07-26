@@ -25,11 +25,11 @@ This guide is written for Windows 10 and 11. The exact menus look slightly diffe
     steps: [
       {
         title: 'Restart your computer (do not skip this)',
-        content: 'It sounds basic, but most people leave their Windows PC running for weeks at a time. Each program you open uses memory; some never fully release it. Restarting clears everything. Click the Start menu → Power button → Restart. Wait for the PC to fully boot up before testing again.',
+        content: 'It sounds basic, but most people leave their Windows PC running for weeks at a time. Each program you open uses memory. Some never fully release it. Restarting clears everything. Click the Start menu → Power button → Restart. Wait for the PC to fully boot up before testing again.',
       },
       {
         title: 'Disable programs that auto-start with Windows',
-        content: 'Many apps install themselves to launch when Windows boots, slowing the boot process. Press Ctrl + Shift + Esc to open Task Manager. Click the "Startup apps" tab. You see a list of programs that run automatically. For each one you do not need (Spotify, Adobe, manufacturer "helpers" — leave Microsoft items alone), right-click and choose Disable. They still work when you launch them manually; they no longer slow boot.',
+        content: 'Many apps install themselves to launch when Windows boots, slowing the boot process. Press Ctrl + Shift + Esc to open Task Manager. Click the "Startup apps" tab. You see a list of programs that run automatically. For each one you do not need (Spotify, Adobe, manufacturer "helpers" — leave Microsoft items alone), right-click and choose Disable. They still work when you launch them manually. They no longer slow boot.',
         warning: 'Do not disable anything labeled "Microsoft," "Windows Defender," or anything you do not recognize. When in doubt, leave it on. Disabling system items can break Windows.',
       },
       {

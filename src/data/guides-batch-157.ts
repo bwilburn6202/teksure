@@ -7,8 +7,7 @@ export const guidesBatch157: Guide[] = [
   {
     slug: 'how-to-use-venmo-or-zelle-to-send-money-2026',
     title: 'How to Use Zelle or Venmo to Send Money to Family and Friends',
-    excerpt:
-      'Send money to family and friends from your phone in minutes using Zelle (built into most bank apps) or Venmo. Includes safety rules every sender should know.',
+    excerpt: 'Send money to family and friends from your phone in minutes using Zelle (built into most bank apps) or Venmo. Includes safety rules every sender should know.',
     category: 'financial-tech',
     tags: [
       'Zelle',
@@ -35,7 +34,7 @@ export const guidesBatch157: Guide[] = [
 
 The two most widely used apps in the United States are:
 
-- **Zelle** — built directly into most major bank apps. Money moves from one bank account to another, usually in minutes. There is no separate Zelle balance; the money goes straight to the recipient's bank.
+- **Zelle** — built directly into most major bank apps. Money moves from one bank account to another, usually in minutes. There is no separate Zelle balance. The money goes straight to the recipient's bank.
 - **Venmo** — a separate free app owned by PayPal. Money you receive lands in a Venmo balance inside the app. You can then spend it via Venmo or transfer it to your bank account (usually takes 1–3 business days for free, or a small fee for instant transfer).
 
 ---
@@ -131,35 +130,28 @@ Both apps are free for personal use. Neither charges a fee for standard bank tra
     steps: [
       {
         title: 'Decide which app to use',
-        content:
-          'Check whether your bank app already has Zelle built in (look for a "Send Money" or "Zelle" button). If it does, no extra download is needed. If your bank does not offer Zelle, or if the person you are paying prefers Venmo, download the free Venmo app from the App Store or Google Play Store.',
+        content: 'Check whether your bank app already has Zelle built in (look for a "Send Money" or "Zelle" button). If it does, no extra download is needed. If your bank does not offer Zelle, or if the person you are paying prefers Venmo, download the free Venmo app from the App Store or Google Play Store.',
         tip: 'Most major U.S. banks — Chase, Bank of America, Wells Fargo, U.S. Bank, Capital One — already include Zelle in their mobile apps.',
       },
       {
         title: 'Set up your account',
-        content:
-          'For Zelle inside your bank app: you are already set up — log in as you normally would and look for the Zelle or "Send Money" section. For Venmo: open the app, tap "Sign Up," provide your email and phone number, verify your phone, then link a bank account or debit card so you have funds available to send.',
+        content: 'For Zelle inside your bank app: you are already set up — log in as you normally would and look for the Zelle or "Send Money" section. For Venmo: open the app, tap "Sign Up," provide your email and phone number, verify your phone, then link a bank account or debit card so you have funds available to send.',
         tip: 'When linking your bank account to Venmo, the app will make two small test deposits (each under $1) into your account within 1–2 days. Confirm those exact amounts inside Venmo to complete the connection.',
       },
       {
         title: 'Send money to someone you know',
-        content:
-          'In Zelle: open your bank app, go to the Zelle section, tap "Send Money," enter your recipient\'s email address or U.S. phone number, enter the dollar amount, review the name shown on the confirmation screen to make sure it matches the right person, then tap "Send." In Venmo: tap the blue "Pay or Request" button, search for the person by username or phone number, enter the amount, write a short note describing the payment, set privacy to "Private" if desired, and tap "Pay."',
-        warning:
-          'Double-check the name on the confirmation screen before tapping Send. Sending to the wrong number is very difficult to reverse.',
+        content: 'In Zelle: open your bank app, go to the Zelle section, tap "Send Money," enter your recipient\'s email address or U.S. phone number, enter the dollar amount, review the name shown on the confirmation screen to make sure it matches the right person, then tap "Send." In Venmo: tap the blue "Pay or Request" button, search for the person by username or phone number, enter the amount, write a short note describing the payment, set privacy to "Private" if desired, and tap "Pay."',
+        warning: 'Double-check the name on the confirmation screen before tapping Send. Sending to the wrong number is very difficult to reverse.',
       },
       {
         title: 'Receive money and (for Venmo) transfer it to your bank',
-        content:
-          'Zelle deposits money directly to your bank account — no extra step needed. With Venmo, received money stays in your Venmo balance until you move it. To transfer your Venmo balance to your bank: go to your profile, tap the balance amount at the top, then tap "Transfer to Bank." Free standard transfers arrive in 1–3 business days. Instant transfer (small fee) arrives within 30 minutes.',
+        content: 'Zelle deposits money directly to your bank account — no extra step needed. With Venmo, received money stays in your Venmo balance until you move it. To transfer your Venmo balance to your bank: go to your profile, tap the balance amount at the top, then tap "Transfer to Bank." Free standard transfers arrive in 1–3 business days. Instant transfer (small fee) arrives within 30 minutes.',
         tip: 'Set up a standard transfer to your bank as a habit after every Venmo payment you receive. That way your money stays in your federally insured bank account rather than sitting in the app.',
       },
       {
         title: 'Follow the safety rules every time',
-        content:
-          'Only send money to people you know personally. Verify the recipient\'s name on the confirmation screen before every transfer. Never send money to claim a "prize" or to a buyer/seller you have only met online. Remember: Zelle and Venmo transfers cannot be charged back like a credit card — once sent, recovery is not guaranteed. If you receive an unexpected payment followed by a request to "send it back," contact your bank before doing anything.',
-        warning:
-          'Scammers specifically target Zelle and Venmo users because transfers are instant and nearly impossible to reverse. When in doubt, call the person directly on a phone number you already have — do not use the number in the suspicious message.',
+        content: 'Only send money to people you know personally. Verify the recipient\'s name on the confirmation screen before every transfer. Never send money to claim a "prize" or to a buyer/seller you have only met online. Remember: Zelle and Venmo transfers cannot be charged back like a credit card — once sent, recovery is not guaranteed. If you receive an unexpected payment followed by a request to "send it back," contact your bank before doing anything.',
+        warning: 'Scammers specifically target Zelle and Venmo users because transfers are instant and nearly impossible to reverse. When in doubt, call the person directly on a phone number you already have — do not use the number in the suspicious message.',
       },
     ],
   },
@@ -167,8 +159,7 @@ Both apps are free for personal use. Neither charges a fee for standard bank tra
   {
     slug: 'how-to-block-spam-calls-on-iphone-2026',
     title: 'How to Block Spam and Robocalls on Your iPhone',
-    excerpt:
-      'Silence unknown callers, block specific numbers, and report unwanted calls on your iPhone. Includes free and paid filtering options and FTC reporting steps.',
+    excerpt: 'Silence unknown callers, block specific numbers, and report unwanted calls on your iPhone. Includes free and paid filtering options and FTC reporting steps.',
     category: 'phone-guides',
     tags: [
       'spam calls',
@@ -284,34 +275,28 @@ The safest response to any suspicious call: hang up. You can always call back us
     steps: [
       {
         title: 'Turn on Silence Unknown Callers',
-        content:
-          'Open the Settings app on your iPhone (the gray icon with gears). Scroll down and tap "Phone." Tap "Silence Unknown Callers." Flip the toggle to ON — it will turn green. From now on, calls from numbers not in your Contacts or recent call history will be silenced and sent to voicemail automatically.',
+        content: 'Open the Settings app on your iPhone (the gray icon with gears). Scroll down and tap "Phone." Tap "Silence Unknown Callers." Flip the toggle to ON — it will turn green. From now on, calls from numbers not in your Contacts or recent call history will be silenced and sent to voicemail automatically.',
         tip: 'This single setting stops the majority of spam calls for most iPhone users. Check your voicemail regularly after enabling it so you do not miss legitimate calls from unfamiliar numbers.',
       },
       {
         title: 'Register your number on the Do Not Call Registry',
-        content:
-          'Open Safari (or any browser) and go to donotcall.gov. Tap "Register Your Phone" and enter your phone number and email address. You will receive a confirmation email — tap the link inside it to complete registration. Your number will be added to the list within 31 days. Registration never expires.',
+        content: 'Open Safari (or any browser) and go to donotcall.gov. Tap "Register Your Phone" and enter your phone number and email address. You will receive a confirmation email — tap the link inside it to complete registration. Your number will be added to the list within 31 days. Registration never expires.',
         tip: 'The registry stops legitimate telemarketers but does not stop illegal robocallers. Think of it as a baseline protection — the other steps in this guide handle the rest.',
       },
       {
         title: 'Install a call-filtering app for stronger protection',
-        content:
-          'Open the App Store and search for "Nomorobo" (free tier available). Download and open it, then follow the in-app setup instructions. After setup, go to Settings → Phone → Call Blocking & Identification and turn on the Nomorobo toggle. Your iPhone will now cross-reference incoming calls against Nomorobo\'s database of known spam numbers.',
+        content: 'Open the App Store and search for "Nomorobo" (free tier available). Download and open it, then follow the in-app setup instructions. After setup, go to Settings → Phone → Call Blocking & Identification and turn on the Nomorobo toggle. Your iPhone will now cross-reference incoming calls against Nomorobo\'s database of known spam numbers.',
         tip: 'If you want the most aggressive spam call blocking available, Robokiller ($4–5/month) goes further — it answers spam calls with automated recordings designed to waste the robocaller\'s time.',
       },
       {
         title: 'Block a specific number that keeps calling you',
-        content:
-          'Open the Phone app and tap "Recents" (the clock icon at the bottom of the screen). Find the number you want to block and tap the small "i" circle to the right of it. Scroll all the way to the bottom of the screen and tap "Block this Caller," then confirm by tapping "Block Contact." That number will never ring your phone again.',
+        content: 'Open the Phone app and tap "Recents" (the clock icon at the bottom of the screen). Find the number you want to block and tap the small "i" circle to the right of it. Scroll all the way to the bottom of the screen and tap "Block this Caller," then confirm by tapping "Block Contact." That number will never ring your phone again.',
         tip: 'To see and manage all your blocked numbers: Settings → Phone → Blocked Contacts. You can remove any number from the list by tapping "Edit" in the top-right corner.',
       },
       {
         title: 'Report spam calls to the FTC',
-        content:
-          'When you receive an unwanted call, write down the number (or find it in your Recents). Go to donotcall.gov and tap "Report Unwanted Calls." Fill in the number, the date it called, and what the caller said. For calls that appeared to be scams — fake IRS, fake tech support, prize scams — also file a report at reportfraud.ftc.gov. The FTC uses these reports to investigate and take action against illegal callers.',
-        warning:
-          'Never call the spam number back to tell them to remove you from their list. Calling back confirms your number is active and can result in more calls.',
+        content: 'When you receive an unwanted call, write down the number (or find it in your Recents). Go to donotcall.gov and tap "Report Unwanted Calls." Fill in the number, the date it called, and what the caller said. For calls that appeared to be scams — fake IRS, fake tech support, prize scams — also file a report at reportfraud.ftc.gov. The FTC uses these reports to investigate and take action against illegal callers.',
+        warning: 'Never call the spam number back to tell them to remove you from their list. Calling back confirms your number is active and can result in more calls.',
       },
     ],
   },
@@ -319,8 +304,7 @@ The safest response to any suspicious call: hang up. You can always call back us
   {
     slug: 'how-to-use-voice-dictation-on-your-phone-2026',
     title: 'How to Type by Speaking: Voice Dictation on iPhone and Android',
-    excerpt:
-      'Skip the small keyboard and speak your messages instead. Voice dictation turns your spoken words into text — works in texts, emails, notes, and more.',
+    excerpt: 'Skip the small keyboard and speak your messages instead. Voice dictation turns your spoken words into text — works in texts, emails, notes, and more.',
     category: 'phone-guides',
     tags: [
       'voice dictation',
@@ -443,32 +427,27 @@ When you use voice dictation, a short audio clip of your speech is sent to Apple
     steps: [
       {
         title: 'Find the microphone on your keyboard',
-        content:
-          'On iPhone: tap any text field to bring up the keyboard, then look at the bottom row. The microphone icon appears to the left of the space bar. On Android with Gboard: tap a text field, then look for the microphone icon in the top toolbar row above the keys. If you do not see it on Android, tap and hold the space bar on the Gboard keyboard and look for a microphone option.',
+        content: 'On iPhone: tap any text field to bring up the keyboard, then look at the bottom row. The microphone icon appears to the left of the space bar. On Android with Gboard: tap a text field, then look for the microphone icon in the top toolbar row above the keys. If you do not see it on Android, tap and hold the space bar on the Gboard keyboard and look for a microphone option.',
         tip: 'The microphone icon shows up wherever the keyboard appears — in Messages, Gmail, Notes, a web search bar, or any app that lets you type text.',
       },
       {
         title: 'Tap the microphone and speak your message',
-        content:
-          'Tap the microphone icon once. Wait for the listening indicator (a wave or pulsing microphone). Then speak your message in a clear, natural voice at your normal pace. For example: "Hi Mom, I will be there at two o\'clock period See you soon exclamation point." Pause when you are done and the phone will stop recording automatically, or tap the microphone again to stop it.',
+        content: 'Tap the microphone icon once. Wait for the listening indicator (a wave or pulsing microphone). Then speak your message in a clear, natural voice at your normal pace. For example: "Hi Mom, I will be there at two o\'clock period See you soon exclamation point." Pause when you are done and the phone will stop recording automatically, or tap the microphone again to stop it.',
         tip: 'Say "period," "comma," "question mark," or "new line" out loud to add punctuation. Without punctuation your message can be hard to read.',
       },
       {
         title: 'Review and correct any mistakes',
-        content:
-          'After dictating, read over the text that appeared on screen. If a word was misheard, tap it to place the cursor there, then delete the wrong word and type the correct one — or tap the microphone again and re-say just that part. You do not need to re-dictate the whole message if only one word was wrong.',
+        content: 'After dictating, read over the text that appeared on screen. If a word was misheard, tap it to place the cursor there, then delete the wrong word and type the correct one — or tap the microphone again and re-say just that part. You do not need to re-dictate the whole message if only one word was wrong.',
         tip: 'Names are often the trickiest part for voice recognition. If the phone keeps misreading a contact\'s name, type it manually the first time.',
       },
       {
         title: 'Try sending a message completely hands-free',
-        content:
-          'On iPhone, say "Hey Siri, send a text to [person\'s name]." Siri will ask what you want to say — speak your message. Siri reads it back and asks if you are ready to send. Say "Yes" and it sends. On Android, say "Hey Google, text [person\'s name]" and follow the same process. No screen tapping required.',
+        content: 'On iPhone, say "Hey Siri, send a text to [person\'s name]." Siri will ask what you want to say — speak your message. Siri reads it back and asks if you are ready to send. Say "Yes" and it sends. On Android, say "Hey Google, text [person\'s name]" and follow the same process. No screen tapping required.',
         tip: 'This hands-free method works when driving (phone mounted safely and legally), cooking, or any situation where your hands are busy. It is one of the most useful accessibility features on any smartphone.',
       },
       {
         title: 'Practice with low-stakes messages to build confidence',
-        content:
-          'The best way to get comfortable with voice dictation is to use it for simple, short messages first — a quick "I\'ll call you in a bit" text to a family member, or a note to yourself. Once you feel confident, you can use it for longer emails or more detailed messages. Most people find that after a few days of practice, dictation becomes faster than typing.',
+        content: 'The best way to get comfortable with voice dictation is to use it for simple, short messages first — a quick "I\'ll call you in a bit" text to a family member, or a note to yourself. Once you feel confident, you can use it for longer emails or more detailed messages. Most people find that after a few days of practice, dictation becomes faster than typing.',
         warning: 'Always review your message before tapping Send. Voice recognition sometimes mishears a word in a way that could change the meaning of your message — a quick read-over before sending prevents any awkward misunderstandings.',
       },
     ],
@@ -477,8 +456,7 @@ When you use voice dictation, a short audio clip of your speech is sent to Apple
   {
     slug: 'how-to-share-wifi-password-without-typing-2026',
     title: 'How to Share Your Home Wi-Fi Password Without Typing It',
-    excerpt:
-      'Share your home Wi-Fi password with guests in seconds — no typing needed. Works between iPhones, via QR code, and on Android. Includes how to find your password when you need it.',
+    excerpt: 'Share your home Wi-Fi password with guests in seconds — no typing needed. Works between iPhones, via QR code, and on Android. Includes how to find your password when you need it.',
     category: 'tips-tricks',
     tags: [
       'Wi-Fi password',
@@ -610,32 +588,27 @@ When you share your Wi-Fi password, you are giving that person access to your ho
     steps: [
       {
         title: 'Try the iPhone-to-iPhone automatic method first',
-        content:
-          'Make sure both phones have Wi-Fi and Bluetooth turned on. Your guest should open Settings → Wi-Fi on their iPhone and tap your network name. Watch your own iPhone — a prompt will appear asking if you want to share your password with your guest. Tap "Share Password." Their phone connects automatically. No password reading or typing required.',
+        content: 'Make sure both phones have Wi-Fi and Bluetooth turned on. Your guest should open Settings → Wi-Fi on their iPhone and tap your network name. Watch your own iPhone — a prompt will appear asking if you want to share your password with your guest. Tap "Share Password." Their phone connects automatically. No password reading or typing required.',
         tip: 'For this to work, you and your guest need to have each other\'s contact information saved (a phone number or email address) in your Contacts apps. If the prompt does not appear, check that both phones have Bluetooth on and are within a few feet of each other.',
       },
       {
         title: 'Look for a QR code sticker on your router',
-        content:
-          'Turn your router over or look at the back panel. Many routers made in the last few years have a sticker with a QR code (a square grid of black and white dots) labeled "Wi-Fi" or "WLAN." Have your guest open their phone\'s Camera app and point it at the QR code from about 6–12 inches away. A notification or banner will appear on their screen offering to connect to the network — tap it and they are connected.',
+        content: 'Turn your router over or look at the back panel. Many routers made in the last few years have a sticker with a QR code (a square grid of black and white dots) labeled "Wi-Fi" or "WLAN." Have your guest open their phone\'s Camera app and point it at the QR code from about 6–12 inches away. A notification or banner will appear on their screen offering to connect to the network — tap it and they are connected.',
         tip: 'If you do not find a QR code sticker on your router, the sticker may have fallen off or your model may not include one. Move on to the next step.',
       },
       {
         title: 'Find your Wi-Fi password if you need to look it up',
-        content:
-          'On Windows: Start → Settings → Network & Internet → Advanced network settings → click your Wi-Fi name → Wireless Properties → Security tab → check "Show characters." On Mac: click the Wi-Fi icon in the menu bar → Network Settings → Details → Password tab → authenticate with your Mac login. Write the password down or take a photo of the screen.',
+        content: 'On Windows: Start → Settings → Network & Internet → Advanced network settings → click your Wi-Fi name → Wireless Properties → Security tab → check "Show characters." On Mac: click the Wi-Fi icon in the menu bar → Network Settings → Details → Password tab → authenticate with your Mac login. Write the password down or take a photo of the screen.',
         tip: 'Your router also has the factory default password printed on a sticker on the bottom or back, usually labeled "Wi-Fi Password," "Network Key," or "WPA2 Password." If you have never changed it, that is still your password.',
       },
       {
         title: 'Make a printed QR code card to keep near the router',
-        content:
-          'On your computer, go to qr-code-generator.com (or search "free Wi-Fi QR code generator"). Select the Wi-Fi option, enter your network name and password, choose WPA/WPA2 as the security type, and click Generate. Download and print the image. Tape it to a small card and keep it near the router. Any guest can now scan it with their phone camera to connect — no typing ever.',
+        content: 'On your computer, go to qr-code-generator.com (or search "free Wi-Fi QR code generator"). Select the Wi-Fi option, enter your network name and password, choose WPA/WPA2 as the security type, and click Generate. Download and print the image. Tape it to a small card and keep it near the router. Any guest can now scan it with their phone camera to connect — no typing ever.',
         tip: 'Print two copies — keep one near the router and one inside a kitchen drawer as a backup. If you change your Wi-Fi password, generate a new QR code and replace the printed one.',
       },
       {
         title: 'Write your password on a card for non-smartphone devices',
-        content:
-          'QR codes and automatic sharing work great for phones, but some devices — older smart TVs, printers, voice assistants — can only connect by having the password typed in directly. Write your Wi-Fi network name and password on an index card and keep it near your router. When setting up a new device, you will have it on hand. Change the card any time you change the password.',
+        content: 'QR codes and automatic sharing work great for phones, but some devices — older smart TVs, printers, voice assistants — can only connect by having the password typed in directly. Write your Wi-Fi network name and password on an index card and keep it near your router. When setting up a new device, you will have it on hand. Change the card any time you change the password.',
         tip: 'Writing down your home Wi-Fi password is perfectly safe — the only risk would be someone physically inside your home finding the card. It is far more useful to have it available than to lock yourself out of your own network when adding a new device.',
       },
     ],

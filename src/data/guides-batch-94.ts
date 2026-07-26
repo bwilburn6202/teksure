@@ -707,7 +707,7 @@ Whether you can actually see the difference between resolutions depends on two t
       },
       {
         title: `Learn the common resolution names`,
-        content: `720p (1280×720) — standard HD; looks adequate but soft on larger screens. 1080p (1920×1080) — Full HD; sharp and clear for most screens up to 27 inches. 1440p (2560×1440) — QHD or 2K; noticeably sharper for computer monitors. 4K or 2160p (3840×2160) — Ultra HD; the current high-end standard for TVs, monitors, and premium laptops. When a TV or monitor advertises "4K," it means 3840×2160 resolution.`,
+        content: `720p (1280×720) — standard HD. Looks adequate but soft on larger screens. 1080p (1920×1080) — Full HD. Sharp and clear for most screens up to 27 inches. 1440p (2560×1440) — QHD or 2K. Noticeably sharper for computer monitors. 4K or 2160p (3840×2160) — Ultra HD. The current high-end standard for TVs, monitors, and premium laptops. When a TV or monitor advertises "4K," it means 3840×2160 resolution.`,
         tip: `Quick Tip: For a laptop you use at a desk, 1080p is fine. 1440p is a meaningful upgrade. 4K on a laptop screen smaller than 15 inches is hard to tell from 1440p for most people and uses more battery power.`,
       },
       {

@@ -846,7 +846,7 @@ Gmail filters let you automatically sort, label, or delete emails from specific 
 
 This guide covers five practical tips: organizing emails into folders, using the Focused Inbox to see important emails first, recalling an email you sent by accident, setting up an out-of-office auto-reply when you are away, and using the built-in calendar to set appointment reminders.
 
-One of the most useful Outlook features for managing email volume is the "Focused Inbox." Outlook uses AI to decide which emails are most important to you and places them in a "Focused" tab. Less important mail — newsletters, notifications — goes into the "Other" tab. This is different from spam filtering; these are all legitimate emails, just organized by priority.
+One of the most useful Outlook features for managing email volume is the "Focused Inbox." Outlook uses AI to decide which emails are most important to you and places them in a "Focused" tab. Less important mail — newsletters, notifications — goes into the "Other" tab. This is different from spam filtering. These are all legitimate emails, just organized by priority.
 
 Email folders help keep your inbox manageable over time. Unlike just deleting emails, saving important messages to a named folder means you can search for them later. Good folder names to start with: Family, Medical, Financial, Home, Receipts.
 

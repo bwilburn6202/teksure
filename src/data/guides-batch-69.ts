@@ -83,7 +83,7 @@ If your speed test shows numbers a lot lower than what your internet plan promis
     steps: [
       {
         title: `Choose a Speed Test Tool`,
-        content: `Go to Speedtest.net, Fast.com, or search "internet speed test" in Google. All three work directly in your web browser. Speedtest.net gives the most detailed results; Fast.com is the simplest.`,
+        content: `Go to Speedtest.net, Fast.com, or search "internet speed test" in Google. All three work directly in your web browser. Speedtest.net gives the most detailed results. Fast.com is the simplest.`,
       },
       {
         title: `Prepare for an Accurate Test`,
@@ -259,7 +259,7 @@ For older monitors with VGA ports (the trapezoid-shaped port with many small pin
 
 The most important compatibility fact: Apple Watch only works with iPhone. If you have an Android phone, an Apple Watch will not connect to it for notifications, health sync, or any of its smart features. Garmin watches work with both iPhone and Android — making Garmin the only real choice for Android users.
 
-Apple Watch shines as a health companion for iPhone users. It tracks heart rate continuously, detects irregular heart rhythms (AFib detection on Series 4 and later), and can perform an ECG reading. Crash detection and emergency SOS call for help if you are in an accident. It connects tightly to the iPhone, shows all your notifications, lets you reply to messages, and works with Apple Pay for contactless purchases at checkout. The Series 10 has an 18-hour battery life; the Ultra models can reach around 60 hours in low-power mode.
+Apple Watch shines as a health companion for iPhone users. It tracks heart rate continuously, detects irregular heart rhythms (AFib detection on Series 4 and later), and can perform an ECG reading. Crash detection and emergency SOS call for help if you are in an accident. It connects tightly to the iPhone, shows all your notifications, lets you reply to messages, and works with Apple Pay for contactless purchases at checkout. The Series 10 has an 18-hour battery life. The Ultra models can reach around 60 hours in low-power mode.
 
 Garmin's biggest advantage is battery life. The Forerunner 255 lasts about 14 days. The Fenix 7 can last up to 40 days in smartwatch mode and over 80 hours in GPS mode — genuinely useful for long hikes or multi-day camping trips. Garmin also leads in GPS accuracy, which matters for runners and cyclists who want precise distance and pace data. Features like Body Battery (an energy level estimate based on heart rate variability, stress, and sleep), advanced sleep stages, and VO2 max estimation are particularly detailed on Garmin.
 
@@ -281,7 +281,7 @@ For someone who uses an iPhone and wants health monitoring with smart features: 
       },
       {
         title: `Set a Budget`,
-        content: `Apple Watch SE starts around $250. Apple Watch Series 10 starts around $400. Garmin Forerunner 55 is about $200; Garmin Vivoactive 5 is about $250. Both brands have budget and premium tiers — you do not need to buy the most expensive model for solid health tracking.`,
+        content: `Apple Watch SE starts around $250. Apple Watch Series 10 starts around $400. Garmin Forerunner 55 is about $200. Garmin Vivoactive 5 is about $250. Both brands have budget and premium tiers — you do not need to buy the most expensive model for solid health tracking.`,
         tip: `Certified refurbished Apple Watches from Apple's website carry a 1-year warranty and cost 15–20% less than new. Garmin sells refurbished watches directly on their site as well.`,
       },
       {
@@ -446,7 +446,7 @@ Pairing wireless earbuds to your phone is usually straightforward. For Apple Air
 
 There are several types to choose from. True wireless earbuds (like AirPods or Galaxy Buds) have no wire connecting the two earbuds at all — each sits completely independently in your ear. These are the most popular style today. Neckband earbuds have a cord connecting the two buds that rests around your neck — they are harder to lose but slightly bulkier. Sports hooks wrap around your ear for a more secure fit during exercise and are harder to knock loose while running or working out.
 
-Key features to think about before buying: Active Noise Cancellation (ANC) electronically reduces background noise — excellent for use on airplanes, in coffee shops, or in loud offices. Transparency mode does the opposite, letting outside sounds in while you listen, which is useful when you need to stay aware of your surroundings. Fit matters enormously — earbuds that do not seal your ear canal sound worse and fall out more easily. Many earbuds include several sizes of silicone ear tips in the box; try different sizes to find the most secure fit.
+Key features to think about before buying: Active Noise Cancellation (ANC) electronically reduces background noise — excellent for use on airplanes, in coffee shops, or in loud offices. Transparency mode does the opposite, letting outside sounds in while you listen, which is useful when you need to stay aware of your surroundings. Fit matters enormously — earbuds that do not seal your ear canal sound worse and fall out more easily. Many earbuds include several sizes of silicone ear tips in the box. Try different sizes to find the most secure fit.
 
 Battery life varies: most earbuds last 5–8 hours per charge, with the charging case providing 2–4 additional charges before the case itself needs recharging. For a full day of music and calls, look for a total battery life (buds plus case) of at least 20 hours.
 
@@ -493,7 +493,7 @@ The Windows key (the key with the Windows logo, between Ctrl and Alt on most key
 
 For managing windows and the desktop: Win + D instantly minimizes all open windows to show your desktop — press it again to restore them. Win + E opens File Explorer directly. Win + L locks your computer right away, which is good security practice whenever you step away from your desk. Alt + Tab shows thumbnails of all open apps and lets you switch between them by pressing Tab repeatedly while holding Alt.
 
-For working with text in any app: Ctrl + C copies selected text or a file. Ctrl + X cuts it. Ctrl + V pastes. Ctrl + Z undoes the last action (repeat to undo multiple steps). Ctrl + Y redoes something you undid. Ctrl + A selects everything in the current document or folder. The Home key moves your cursor to the start of a line; the End key moves it to the end. Ctrl + Home jumps to the very beginning of a document; Ctrl + End jumps to the very end.
+For working with text in any app: Ctrl + C copies selected text or a file. Ctrl + X cuts it. Ctrl + V pastes. Ctrl + Z undoes the last action (repeat to undo multiple steps). Ctrl + Y redoes something you undid. Ctrl + A selects everything in the current document or folder. The Home key moves your cursor to the start of a line. The End key moves it to the end. Ctrl + Home jumps to the very beginning of a document. Ctrl + End jumps to the very end.
 
 In any web browser: Ctrl + T opens a new tab. Ctrl + W closes the current tab. Ctrl + L puts the cursor in the address bar so you can type a new web address right away. Ctrl + F opens a search box to find specific text on the page. F5 refreshes the page.
 
@@ -631,7 +631,7 @@ In Microsoft Edge, when you visit a news article, blog post, or most text-heavy 
 
 Once inside Immersive Reader, a toolbar at the top gives you access to all the features. Text Preferences lets you increase font size, change line spacing, and switch to a wider or narrower column width. Some people find a narrower column (about 40 characters wide) easier to track than full-page text. You can also change the background color — a soft yellow, green, or sepia tone reduces eye strain for many readers compared to a bright white background.
 
-The Line Focus feature highlights one, two, or three lines at a time and dims the rest of the text. This can help readers who lose their place or feel overwhelmed by a full page of text. Only the highlighted lines are in focus; the rest fade out.
+The Line Focus feature highlights one, two, or three lines at a time and dims the rest of the text. This can help readers who lose their place or feel overwhelmed by a full page of text. Only the highlighted lines are in focus. The rest fade out.
 
 Read Aloud (the speaker icon) reads the text in a natural voice, highlights each word as it is spoken, and lets you adjust the speed and choose from several voices including male and female options. You can pause, rewind, and jump forward.
 
@@ -865,7 +865,7 @@ Key brands worth knowing: OtterBox (rugged and popular with reliable drop protec
 
 For screen protectors, tempered glass is a lot better than plastic film. Glass protectors absorb impact energy that would otherwise crack the phone's screen. Look for one rated 9H hardness — this is the standard scratch-resistant rating for tempered glass. Full-glue versions adhere across the entire surface and tend to look cleaner than frame-adhesion versions that only stick at the edges.
 
-One practical option: privacy screen protectors have a filter that makes the screen hard to see from the side. Anyone sitting next to you on a bus or plane sees a dark screen; you see it clearly from straight on. Useful if you regularly use your phone in public with sensitive information.
+One practical option: privacy screen protectors have a filter that makes the screen hard to see from the side. Anyone sitting next to you on a bus or plane sees a dark screen. You see it clearly from straight on. Useful if you regularly use your phone in public with sensitive information.
 
 Always buy a case made specifically for your exact phone model — a case for an iPhone 15 will not fit an iPhone 15 Plus, and a case designed for one Galaxy model will not fit a different one. Check the listing carefully.
 

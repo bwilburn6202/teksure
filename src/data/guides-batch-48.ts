@@ -44,7 +44,7 @@ You can also find Reels mixed in on your regular Home feed from accounts you fol
       },
       {
         title: `Mute or adjust volume`,
-        content: `Reels play with sound by default. Tap once anywhere on the video to mute it; tap again to unmute. You can also use your phone's physical volume buttons to adjust the level while a Reel is playing.`,
+        content: `Reels play with sound by default. Tap once anywhere on the video to mute it. Tap again to unmute. You can also use your phone's physical volume buttons to adjust the level while a Reel is playing.`,
         tip: `If you find Reels overwhelming, you can also scroll past them in your regular Home feed without opening the Reels tab at all.`,
       },
     ],
@@ -211,7 +211,7 @@ Some popular and genuinely useful extensions include:
 
 Extensions are installed from the Chrome Web Store, which is Google's official marketplace. Any extension in the store must meet Google's guidelines, so it's generally safe to install from there. That said, avoid installing extensions you've never heard of or ones that ask for more permissions than they need — only add what you'll actually use.
 
-Once installed, extensions appear as small icons to the right of your address bar. Some show up automatically; others need you to click the puzzle piece icon to see and pin them. You can remove any extension at any time, which right away returns your browser to exactly how it was before.
+Once installed, extensions appear as small icons to the right of your address bar. Some show up automatically. Others need you to click the puzzle piece icon to see and pin them. You can remove any extension at any time, which right away returns your browser to exactly how it was before.
 
 Extensions only work in Chrome on a computer — they don't carry over to Chrome on your phone or to other browsers like Safari or Firefox.`,
     steps: [

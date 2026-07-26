@@ -778,7 +778,7 @@ When you no longer need a note, hover over it and click the X button to delete i
       },
       {
         title: 'Resize and Move Notes',
-        content: 'Drag any corner of the note to resize it. Drag the top bar of the note to move it anywhere on your desktop. Larger notes are easier to read; smaller notes take up less screen space.',
+        content: 'Drag any corner of the note to resize it. Drag the top bar of the note to move it anywhere on your desktop. Larger notes are easier to read. Smaller notes take up less screen space.',
       },
       {
         title: 'Delete a Note When Done',

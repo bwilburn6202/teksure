@@ -363,7 +363,7 @@ If you're unsure whether MasterClass is right for you, look for occasional promo
       },
       {
         title: `Start a course and track your progress`,
-        content: `Tap any course to see the instructor introduction and lesson list. Start with the first lesson — it usually sets the context for everything that follows. The app tracks which lessons you've completed so you can easily see where you left off. There is no time limit; you can take as long as you like to finish a course.`,
+        content: `Tap any course to see the instructor introduction and lesson list. Start with the first lesson — it usually sets the context for everything that follows. The app tracks which lessons you've completed so you can easily see where you left off. There is no time limit. You can take as long as you like to finish a course.`,
       },
       {
         title: `Download and use the course workbook`,
@@ -633,7 +633,7 @@ This is worth bookmarking if you regularly use Microsoft products and want a rel
       {
         title: `Find the right learning path for your goals`,
         content: `Use the "Browse" or "Training" section in the navigation to explore Learning Paths — grouped series of modules that build on each other. For Microsoft 365 basics, look for paths labeled "Fundamentals" or "Beginner." These are designed for people new to the product and cover the most common tasks step by step.`,
-        tip: `Quick Tip: Microsoft's support.microsoft.com website is separate from Learn but equally useful for quick how-to questions. Learn is better for structured, comprehensive learning; support.microsoft.com is better for answering one specific question quickly.`,
+        tip: `Quick Tip: Microsoft's support.microsoft.com website is separate from Learn but equally useful for quick how-to questions. Learn is better for structured, comprehensive learning. Support.microsoft.com is better for answering one specific question quickly.`,
       },
       {
         title: `Sign in with a Microsoft account to track progress`,
@@ -901,7 +901,7 @@ Carrd is free for up to three published sites. The free plan includes a good sel
 
 Building a Carrd site requires no account to start — you can create a site and preview it before signing up. This is a great way to test the tool risk-free.
 
-Templates are minimalist and modern. Carrd doesn't try to do everything; it focuses on doing one thing — a single page — very well. The editing experience is cleaner and faster than most full website builders. Most people have a finished, published site within 20 to 30 minutes of opening Carrd for the first time.
+Templates are minimalist and modern. Carrd doesn't try to do everything. It focuses on doing one thing — a single page — very well. The editing experience is cleaner and faster than most full website builders. Most people have a finished, published site within 20 to 30 minutes of opening Carrd for the first time.
 
 Carrd sites are mobile-responsive by default, meaning they look good on phone screens without any extra work from you.`,
     steps: [

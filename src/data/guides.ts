@@ -4486,7 +4486,7 @@ const coreGuides: Guide[] = [
       },
       {
         title: 'iCloud Photos on iPhone (for Apple users)',
-        content: 'Settings → [your name] → iCloud → Photos → toggle on "iCloud Photos". All photos automatically upload to iCloud and sync across all your Apple devices. You get 5GB free; more storage starts at 99p/month for 50GB.', tip: `With iCloud Photos enabled, you can delete photos from your iPhone to free up space — they stay safely in iCloud and on any other Apple device you're signed into.`
+        content: 'Settings → [your name] → iCloud → Photos → toggle on "iCloud Photos". All photos automatically upload to iCloud and sync across all your Apple devices. You get 5GB free. More storage starts at 99p/month for 50GB.', tip: `With iCloud Photos enabled, you can delete photos from your iPhone to free up space — they stay safely in iCloud and on any other Apple device you're signed into.`
       },
       {
         title: 'Create albums to organize by topic',
@@ -4779,7 +4779,7 @@ const coreGuides: Guide[] = [
       },
       {
         title: 'Borrow ebooks for free from the library',
-        content: 'With a free library card, you can borrow ebooks using the Libby app (free, by OverDrive). Download Libby, add your library, sign in with your library card number, and borrow ebooks that can be sent directly to your Kindle or read in the Libby app. Most popular titles are available; some have waiting lists.'
+        content: 'With a free library card, you can borrow ebooks using the Libby app (free, by OverDrive). Download Libby, add your library, sign in with your library card number, and borrow ebooks that can be sent directly to your Kindle or read in the Libby app. Most popular titles are available. Some have waiting lists.'
       },
     ]
   },
@@ -4976,7 +4976,7 @@ const coreGuides: Guide[] = [
       },
       {
         title: 'Streaming calls, music, and TV',
-        content: `Once paired, phone calls stream directly to your hearing aids automatically — no need to hold the phone to your ear. For music or podcasts, just play them on your phone; the audio routes to your aids. For TV, many manufacturers sell a separate TV Connector accessory (plugs into your TV's audio output) that streams TV audio to your aids wirelessly. Ask your audiologist about TV streaming accessories for your specific aids.`, tip: `During a phone call, speak normally — your phone's microphone picks up your voice and streams it to the caller. You don't need to speak into the hearing aid.`
+        content: `Once paired, phone calls stream directly to your hearing aids automatically — no need to hold the phone to your ear. For music or podcasts, just play them on your phone. The audio routes to your aids. For TV, many manufacturers sell a separate TV Connector accessory (plugs into your TV's audio output) that streams TV audio to your aids wirelessly. Ask your audiologist about TV streaming accessories for your specific aids.`, tip: `During a phone call, speak normally — your phone's microphone picks up your voice and streams it to the caller. You don't need to speak into the hearing aid.`
       },
       {
         title: 'Troubleshooting connection drops',
@@ -5054,7 +5054,7 @@ const coreGuides: Guide[] = [
       },
       {
         title: 'Grammar and spelling checkers',
-        content: 'Grammarly is a free extension that checks your spelling and grammar as you type — in emails, Facebook posts, forms, anywhere on the web. It underlines mistakes in red (spelling) or blue (grammar) and suggests corrections when you hover over them. Install it from the Chrome Web Store. The free version covers the basics; the paid version adds style suggestions.',
+        content: 'Grammarly is a free extension that checks your spelling and grammar as you type — in emails, Facebook posts, forms, anywhere on the web. It underlines mistakes in red (spelling) or blue (grammar) and suggests corrections when you hover over them. Install it from the Chrome Web Store. The free version covers the basics. The paid version adds style suggestions.',
         tip: 'Grammarly is particularly helpful for emails to banks, doctors, or employers where you want to sound professional.'
       },
       {
@@ -5381,7 +5381,7 @@ const coreGuides: Guide[] = [
     publishedAt: '2026-03-29',
     difficulty: 'Beginner',
     steps: [
-      { title: 'Printer shows "Offline"', content: `This is the most common printer issue. First, make sure the printer is turned on (look for a power light). Check that it's connected: wired printers need a USB cable plugged in; wireless printers need to be on the same Wi-Fi network as your computer. On Windows: go to Settings → Devices → Printers & Scanners → click your printer → "Open queue" → uncheck "Use Printer Offline."` },
+      { title: 'Printer shows "Offline"', content: `This is the most common printer issue. First, make sure the printer is turned on (look for a power light). Check that it's connected: wired printers need a USB cable plugged in. Wireless printers need to be on the same Wi-Fi network as your computer. On Windows: go to Settings → Devices → Printers & Scanners → click your printer → "Open queue" → uncheck "Use Printer Offline."` },
       { title: 'Paper jam', content: `Open all accessible doors and trays on the printer. Gently pull the jammed paper out in the direction it would normally travel (usually forward, toward the output tray). Pull slowly and evenly — don't yank, as torn paper is harder to remove. Check for small torn pieces. Close all doors and trays, then try printing again.`, warning: 'If the paper is stuck near the hot fuser unit (the part that heats the paper), wait a few minutes for it to cool before reaching in.' },
       { title: 'Print quality is poor', content: `Faded or streaky prints usually mean low ink or toner. Check your ink levels: on the printer's screen (if it has one) or through the printer software on your computer. If ink levels look fine, run a "Clean Print Head" cycle: open the printer software → Maintenance → Clean Print Heads. Try printing a test page to check if quality improves.`, tip: 'If you rarely print, ink can dry out in the nozzles. Run a print head cleaning once a month to prevent this.' },
       { title: `Computer can't find the printer`, content: `On Windows: go to Settings → Devices → Add a printer or scanner. Wait for it to search. If your printer doesn't appear, click "The printer I want isn't listed" for manual setup options. On Mac: System Settings → Printers & Scanners → click "+" to add. For wireless printers, make sure both devices are on the same Wi-Fi network.` },
@@ -5402,7 +5402,7 @@ const coreGuides: Guide[] = [
     steps: [
       { title: `Use your phone's built-in scanner`, content: 'Most modern phones have a document scanner built in. On iPhone: open the Notes app → tap the + icon → "Scan Documents." On Android: open Google Drive → tap the + icon → "Scan." Point your camera at the document — the app will automatically detect the edges and capture a clean image.' },
       { title: 'Position for the best scan', content: `Place your document on a flat, dark surface (a dark table works well against white paper). Hold your phone directly above, parallel to the document. Make sure there's good lighting — natural daylight is best. Avoid shadows from your hand or phone falling across the document. The app will auto-capture when it detects the edges clearly.` },
-      { title: 'Adjust and save', content: `After scanning, you can crop the edges if they're not perfect, rotate the image, or adjust the contrast (try "Black & White" or "Grayscale" for text documents — they look cleaner than color). Tap "Save" to keep the scan. On iPhone it saves to your note; on Google Drive it saves as a PDF automatically.`, tip: 'For multi-page documents, keep scanning pages one after another. The app will combine them into a single PDF file.' },
+      { title: 'Adjust and save', content: `After scanning, you can crop the edges if they're not perfect, rotate the image, or adjust the contrast (try "Black & White" or "Grayscale" for text documents — they look cleaner than color). Tap "Save" to keep the scan. On iPhone it saves to your note. On Google Drive it saves as a PDF automatically.`, tip: 'For multi-page documents, keep scanning pages one after another. The app will combine them into a single PDF file.' },
       { title: 'Share your scan', content: 'To email a scanned document: open the scan, tap the share icon (square with arrow on iPhone, or three dots on Android), choose "Mail" or "Gmail," attach it, and send. You can also share to cloud storage (iCloud, Google Drive, Dropbox) or send via WhatsApp or text message.' },
     ]
   },
@@ -5694,7 +5694,7 @@ const coreGuides: Guide[] = [
     steps: [
       { title: `Use your phone's built-in editor`, content: `You don't need to download anything — your phone has a powerful photo editor built in. On iPhone: open Photos → tap a photo → tap "Edit" (top right). On Android: open Google Photos → tap a photo → tap "Edit" (bottom center). Both give you tools for cropping, adjusting brightness, applying filters, and more.` },
       { title: 'Crop and straighten', content: 'In the editor, tap the crop icon (overlapping right angles). Drag the corners to crop out unwanted parts of the photo. Use the rotation slider to straighten a tilted horizon. Tap "Aspect Ratio" to crop to a specific shape (square for Instagram, 16:9 for widescreen, 4:3 for printing). Tap Done when finished.' },
-      { title: 'Fix brightness and color', content: 'Tap the adjustment icon (sliders). The key adjustments are: Exposure/Brightness (if the photo is too dark or too light), Contrast (makes colors pop), Saturation (makes colors more vibrant), Warmth (cooler = blue tint, warmer = golden tint). Start with Auto/Enhance for a one-tap fix. Then fine-tune individual sliders if needed.', tip: 'Less is more with editing. Small adjustments look natural; over-editing makes photos look artificial.' },
+      { title: 'Fix brightness and color', content: 'Tap the adjustment icon (sliders). The key adjustments are: Exposure/Brightness (if the photo is too dark or too light), Contrast (makes colors pop), Saturation (makes colors more vibrant), Warmth (cooler = blue tint, warmer = golden tint). Start with Auto/Enhance for a one-tap fix. Then fine-tune individual sliders if needed.', tip: 'Less is more with editing. Small adjustments look natural. Over-editing makes photos look artificial.' },
       { title: 'Apply filters', content: 'Tap the filters icon (three overlapping circles or a magic wand). Swipe through the filter options — each preview shows how your photo will look. Popular choices: "Vivid" for brighter colors, "Dramatic" for moody black-and-white, "Warm" for a golden glow. You can usually adjust filter intensity with a slider. Tap to apply.' },
       { title: 'Remove unwanted objects (AI tools)', content: 'The latest phones have AI-powered erasers: iPhone 16+ has "Clean Up" (tap Edit → Clean Up → brush over the object). Google Pixel has "Magic Eraser" (Edit → Tools → Magic Eraser). Samsung has "Object Eraser" (Edit → three dots → Object Eraser). Circle the object you want removed, and the AI fills in the background. It works best on small objects against simple backgrounds.', tip: `All edits in your phone's photo app are non-destructive — you can always tap "Revert to Original" if you don't like the changes.` },
     ]
@@ -5930,7 +5930,7 @@ const coreGuides: Guide[] = [
       },
       {
         title: `Request removal using each site's opt-out form`,
-        content: 'Each data broker is required by law to offer a way to opt out or remove your data. Look for links labeled "Privacy," "Do Not Sell My Info," or "Opt Out" — usually in the website footer. Follow their removal process. Some send a confirmation email; click the link to confirm your request.',
+        content: 'Each data broker is required by law to offer a way to opt out or remove your data. Look for links labeled "Privacy," "Do Not Sell My Info," or "Opt Out" — usually in the website footer. Follow their removal process. Some send a confirmation email. Click the link to confirm your request.',
         warning: 'Removals can take 7–30 days to take effect. Your information may reappear after several months as data brokers refresh their databases — you may need to opt out again periodically.',
       },
       {
@@ -6343,7 +6343,7 @@ For stronger privacy, do three things. Turn on Airplane Mode to disable all radi
     publishedAt: '2026-03-31',
     difficulty: 'Beginner',
     steps: [
-      { title: 'Lower your screen brightness', content: 'Your screen is the biggest battery drain. Pull down from the top of your screen and drag the brightness slider down to around 50%. Or enable Auto-Brightness: on iPhone go to Settings > Accessibility > Display & Text Size > Auto-Brightness; on Android go to Settings > Display > Adaptive brightness.', tip: 'Even dropping brightness from 80% to 50% can add an hour or more of battery life.' },
+      { title: 'Lower your screen brightness', content: 'Your screen is the biggest battery drain. Pull down from the top of your screen and drag the brightness slider down to around 50%. Or enable Auto-Brightness: on iPhone go to Settings > Accessibility > Display & Text Size > Auto-Brightness. On Android go to Settings > Display > Adaptive brightness.', tip: 'Even dropping brightness from 80% to 50% can add an hour or more of battery life.' },
       { title: 'Turn off Wi-Fi and Bluetooth when not in use', content: 'If you are out and not using Wi-Fi or Bluetooth, turn them off. On both iPhone and Android, you can do this from the quick settings panel — swipe down from the top of the screen and tap the Wi-Fi or Bluetooth button to toggle them off.' },
       { title: 'Check which apps are draining your battery', content: 'iPhone: go to Settings > Battery and scroll down to see apps and their battery usage percentages. Android: go to Settings > Battery > Battery Usage. Delete or restrict background activity for any apps using an unusually high percentage.', tip: 'Social media apps like Facebook and Instagram are frequent battery hogs. Try restricting their background activity first.' },
       { title: 'Reduce background app refresh', content: 'This setting lets apps update in the background even when you are not using them — and it drains your battery. iPhone: Settings > General > Background App Refresh — turn it off entirely or set it to Wi-Fi only. Android: Settings > Apps > [app name] > Battery > Restricted.' },
@@ -10115,7 +10115,7 @@ For stronger privacy, do three things. Turn on Airplane Mode to disable all radi
   { slug: 'windows-backup-guide', title: 'How to Back Up Your Windows Computer', excerpt: 'Protect your files, photos, and documents by setting up automatic backups on Windows.', category: 'windows-guides', tags: ['windows', 'backup', 'files', 'onedrive', 'recovery'], readTime: '8 min', thumbnailEmoji: '💾', publishedAt: '2026-04-02', difficulty: 'Beginner', videoUrl: 'https://www.youtube.com/embed/f-3CI5_T3v4', steps: [
     { title: 'Why backups matter', content: 'Hard drives fail, computers get stolen, and ransomware can lock your files. Regular backups mean you never lose important documents, photos, or memories. Set it up once, and it works automatically.' },
     { title: 'OneDrive backup (easiest)', content: 'Windows 11 includes OneDrive built in. Sign in with your Microsoft account. Right-click the OneDrive icon (cloud, bottom-right taskbar) > Settings > Sync and Backup > Manage Backup. Select Desktop, Documents, and Pictures.', tip: 'Windows 10 reached end of support on October 14, 2025. If you are still on Windows 10, consider upgrading to Windows 11 for continued security updates.' },
-    { title: 'How OneDrive works', content: `Files in your backed-up folders automatically sync to Microsoft's cloud. Access them from any device at onedrive.com. 5 GB free storage; Microsoft 365 includes 1 TB ($6.99/month).` },
+    { title: 'How OneDrive works', content: `Files in your backed-up folders automatically sync to Microsoft's cloud. Access them from any device at onedrive.com. 5 GB free storage. Microsoft 365 includes 1 TB ($6.99/month).` },
     { title: 'External drive backup', content: 'Connect an external USB hard drive ($40-80 for 1-2 TB). Go to Settings > System > Storage > Advanced Storage Settings > Backup Options > Back Up Using File History. Select the drive and turn on.' },
     { title: 'File History', content: 'File History automatically saves copies of your files every hour. If you accidentally delete or change a file, right-click it > Properties > Previous Versions to restore an older copy.' },
     { title: 'System Image backup', content: 'For a complete backup (including Windows itself): Control Panel > Backup and Restore (Windows 7) > Create a System Image. This lets you restore your entire computer if something goes very wrong.' },
@@ -10331,7 +10331,7 @@ For stronger privacy, do three things. Turn on Airplane Mode to disable all radi
   { slug: 'digital-photos-sharing', title: 'How to Share Photos and Videos with Family', excerpt: 'Easy ways to share precious moments with family near and far using your phone.', category: 'how-to', tags: ['photos', 'sharing', 'family', 'google-photos', 'icloud'], readTime: '6 min', thumbnailEmoji: '📷', publishedAt: '2026-04-02', difficulty: 'Beginner', steps: [
     { title: 'Shared albums (best method)', content: 'Create a shared album that family can view and add to. Google Photos: Library > + > Shared Album. iCloud: Photos > + > New Shared Album. Invite family by email or phone number.' },
     { title: 'Send via text message', content: 'Open a photo, tap Share, then Messages. Select the contact. Photos send as attachments. For multiple photos, select several before sharing. Quality may be reduced for large files.' },
-    { title: 'Send via email', content: 'Share > Mail. Email works well for 1-5 photos. For more, use a shared album or cloud sharing link. Gmail allows attachments up to 25 MB; Google Drive handles larger files.' },
+    { title: 'Send via email', content: 'Share > Mail. Email works well for 1-5 photos. For more, use a shared album or cloud sharing link. Gmail allows attachments up to 25 MB. Google Drive handles larger files.' },
     { title: 'AirDrop (Apple to Apple)', content: 'Both devices need Bluetooth and Wi-Fi on. Select photos > tap Share > AirDrop > choose the person. Photos transfer in full quality in seconds. Only works between nearby Apple devices.' },
     { title: 'Share a Google Photos link', content: 'Select photos > Share > Create Link. Send the link via text, email, or any app. Recipients can view (and optionally download) without needing a Google account.' },
     { title: 'Digital picture frames', content: 'Frameo and Aura are digital frames that family can send photos to from anywhere. Buy one for grandparents — their frame automatically displays new photos you send. No setup needed on their end.' },
@@ -10404,7 +10404,7 @@ For stronger privacy, do three things. Turn on Airplane Mode to disable all radi
   { slug: 'venmo-zelle-cashapp-guide', title: 'How to Send Money with Venmo, Zelle, and Cash App', excerpt: 'Send and receive money instantly using your phone — split bills, pay friends, and more.', category: 'app-guides', tags: ['venmo', 'zelle', 'cashapp', 'money', 'payment'], readTime: '7 min', thumbnailEmoji: '💸', publishedAt: '2026-04-02', difficulty: 'Beginner', videoUrl: 'https://www.youtube.com/embed/YhXkJYPLhC4', steps: [
     { title: 'The big three compared', content: 'Zelle: built into most banking apps, instant transfers to bank accounts, no fees. Venmo: social feed, can hold balance, accepted by many merchants. Cash App: includes investing features, Cash Card for spending.' },
     { title: 'Set up Zelle', content: `Open your banking app and look for Zelle (most major banks include it). Register your email or phone number. Send money using the recipient's email or phone number. Money arrives in minutes.` },
-    { title: 'Set up Venmo', content: 'Download Venmo, create an account, and link your bank account or debit card. Search for friends by name, username, or phone number. Enter the amount and tap Pay. Bank transfers are free; instant transfers cost 1.75%.' },
+    { title: 'Set up Venmo', content: 'Download Venmo, create an account, and link your bank account or debit card. Search for friends by name, username, or phone number. Enter the amount and tap Pay. Bank transfers are free. Instant transfers cost 1.75%.' },
     { title: 'Set up Cash App', content: 'Download Cash App, create an account with your phone number or email. Get a unique $cashtag (like $JohnSmith). Link your bank account. Send money to anyone using their $cashtag, phone, or email.' },
     { title: 'Important safety rules', content: `Only send money to people you know and trust. These services are like handing someone cash — once sent, it's very hard to get back. Scammers often ask for payment via these apps.` },
     { title: 'Common scam warning', content: `If someone you don't know asks you to send money via Zelle, Venmo, or Cash App — it's a scam. The IRS, your bank, and tech companies will never ask for payment through these apps.` },

@@ -25,7 +25,7 @@ export const guidesBatch198: Guide[] = [
       {
         title: "Estimate transportation to and from the destination",
         content: "This is flights, train tickets, or fuel and tolls if you drive. Search round-trip prices on Google Flights, Kayak, or Amtrak.com for the actual dates and write the result down. Add airport parking ($15 to $25 a day at most US airports), checked-bag fees ($35 to $40 per bag each way on most airlines), and a taxi or rideshare to and from the airport on both ends. For a driving trip, multiply round-trip miles by your car's miles-per-gallon, then by current gas price, and add tolls.",
-        tip: "AAA's TripTik tool gives a free fuel-cost estimate for any driving route in the US. Members get the estimate online at AAA.com; non-members can use GasBuddy's Trip Cost Calculator at no charge.",
+        tip: "AAA's TripTik tool gives a free fuel-cost estimate for any driving route in the US. Members get the estimate online at AAA.com. Non-members can use GasBuddy's Trip Cost Calculator at no charge.",
       },
       {
         title: "Estimate lodging for every night",
@@ -112,7 +112,7 @@ export const guidesBatch198: Guide[] = [
     steps: [
       {
         title: "Open Google Flights in a browser",
-        content: "On a computer, phone, or tablet, open a web browser (Chrome, Safari, Edge, or Firefox all work fine) and go to google.com/flights. The site loads with a search box at the top. There is no app to download — Google Flights is a website, not an app. If a Google account is signed in on the browser, the site will save searches; if not, the site still works fully without signing in.",
+        content: "On a computer, phone, or tablet, open a web browser (Chrome, Safari, Edge, or Firefox all work fine) and go to google.com/flights. The site loads with a search box at the top. There is no app to download — Google Flights is a website, not an app. If a Google account is signed in on the browser, the site will save searches. If not, the site still works fully without signing in.",
       },
       {
         title: "Enter the route and dates",
@@ -162,7 +162,7 @@ export const guidesBatch198: Guide[] = [
       },
       {
         title: "Compare third-party sites first to set a baseline price",
-        content: "Open Booking.com, Hotels.com, and Google Hotels (google.com/hotels) in three browser tabs. Search the dates and city. Sort by price. Note the lowest \"total\" rate (including taxes and resort fees) at the hotel you want. This is your baseline number — the rate to beat. Do not book here yet; this is research only.",
+        content: "Open Booking.com, Hotels.com, and Google Hotels (google.com/hotels) in three browser tabs. Search the dates and city. Sort by price. Note the lowest \"total\" rate (including taxes and resort fees) at the hotel you want. This is your baseline number — the rate to beat. Do not book here yet. This is research only.",
         warning: "\"Total\" rates on third-party sites sometimes hide the resort fee until the very last screen. Click through to the booking page and confirm the final total before noting the price.",
       },
       {

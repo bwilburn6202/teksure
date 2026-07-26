@@ -106,7 +106,7 @@ export const guidesBatch13: Guide[] = [
       {
         title: 'Try your first Alexa commands',
         content: `To use Alexa, say "Alexa," wait for the blue light ring to appear (it's listening), then ask your question or give your command. Some useful things to try first: "Alexa, what's the weather today?" — "Alexa, set a timer for 10 minutes" — "Alexa, what time is it?" — "Alexa, tell me a joke" — "Alexa, play some relaxing music." Alexa will respond out loud through the Echo speaker.`,
-        tip: `You don't need to be close to the Echo — it can hear you from across the room, even with moderate background noise. Speak at a normal pace; you don't need to shout.`,
+        tip: `You don't need to be close to the Echo — it can hear you from across the room, even with moderate background noise. Speak at a normal pace. You don't need to shout.`,
       },
       {
         title: 'Set up reminders for medications or appointments',

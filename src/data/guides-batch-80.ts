@@ -30,7 +30,7 @@ Always talk to your doctor before making any changes to your diabetes medication
       },
       {
         title: `Pair your sensor and read your numbers`,
-        content: `After inserting your sensor according to the instructions in the box, open the app and tap "Pair Sensor." Hold your phone close to the sensor site until the pairing is complete. Once connected, your glucose number will appear on the home screen along with a trend arrow. A single arrow pointing right means stable; arrows pointing up or down show the direction your glucose is moving.`,
+        content: `After inserting your sensor according to the instructions in the box, open the app and tap "Pair Sensor." Hold your phone close to the sensor site until the pairing is complete. Once connected, your glucose number will appear on the home screen along with a trend arrow. A single arrow pointing right means stable. Arrows pointing up or down show the direction your glucose is moving.`,
         warning: `It takes about 30 minutes after pairing for the first reading to appear. Do not be concerned if you do not see a number right away.`,
       },
       {

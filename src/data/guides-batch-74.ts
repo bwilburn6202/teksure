@@ -723,7 +723,7 @@ Visible is a good fit for people who want a straightforward unlimited plan witho
       },
       {
         title: `Manage your account through the Visible app`,
-        content: `Download the "Visible" app from the App Store or Google Play Store (you may have already done this during activation). The app is your main control panel — use it to pay your monthly bill, change your plan, check your data usage, report problems, and contact Visible's chat-based customer support. There is no phone number to call for support; all help is through the app's chat feature or visible.com.`,
+        content: `Download the "Visible" app from the App Store or Google Play Store (you may have already done this during activation). The app is your main control panel — use it to pay your monthly bill, change your plan, check your data usage, report problems, and contact Visible's chat-based customer support. There is no phone number to call for support. All help is through the app's chat feature or visible.com.`,
       },
     ],
   },

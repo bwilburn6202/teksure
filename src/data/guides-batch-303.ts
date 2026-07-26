@@ -70,7 +70,7 @@ export const guidesBatch303: Guide[] = [
       },
       {
         title: "Add a hummingbird feeder from late April through October",
-        content: "Hang a 6-inch glass hummingbird feeder near a flower bed or a window. Mix the nectar at home: four parts water to one part plain white sugar. Bring the mix to a boil on the stove, cool to room temperature, fill the feeder, and store extra in a glass jar in the refrigerator for up to one week. Replace the nectar every three days in hot weather, every five days in cool weather. Avoid red food dye, honey, or brown sugar. Hummingbirds in the eastern US are mostly ruby-throated; western yards see Anna's, Black-chinned, Rufous, and others depending on the state.",
+        content: "Hang a 6-inch glass hummingbird feeder near a flower bed or a window. Mix the nectar at home: four parts water to one part plain white sugar. Bring the mix to a boil on the stove, cool to room temperature, fill the feeder, and store extra in a glass jar in the refrigerator for up to one week. Replace the nectar every three days in hot weather, every five days in cool weather. Avoid red food dye, honey, or brown sugar. Hummingbirds in the eastern US are mostly ruby-throated. Western yards see Anna's, Black-chinned, Rufous, and others depending on the state.",
       },
       {
         title: "Set a weekly cleaning routine to prevent disease",

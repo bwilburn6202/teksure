@@ -88,7 +88,7 @@ Throughout the process, the app shows a running total of your expected refund or
       },
       {
         title: `Claim Deductions and Credits`,
-        content: `The app will ask about possible deductions and tax credits you may qualify for — things like the Earned Income Tax Credit, Child Tax Credit, or deductions for student loan interest. Answer the questions honestly and the app will apply every benefit you are eligible for. You do not need to know which credits exist; the app asks about your life circumstances and figures out what applies.`,
+        content: `The app will ask about possible deductions and tax credits you may qualify for — things like the Earned Income Tax Credit, Child Tax Credit, or deductions for student loan interest. Answer the questions honestly and the app will apply every benefit you are eligible for. You do not need to know which credits exist. The app asks about your life circumstances and figures out what applies.`,
         tip: `Quick Tip: The Earned Income Tax Credit is one of the largest credits available for working families and individuals with moderate income. The app will check automatically whether you qualify.`,
       },
       {
@@ -110,7 +110,7 @@ Throughout the process, the app shows a running total of your expected refund or
     difficulty: `Beginner`,
     body: `TaxSlayer is a tax preparation software that consistently costs less than competing products from TurboTax and H&R Block while covering the same range of tax situations. If you have a relatively standard return — W-2 income, the standard deduction, and a few common credits — TaxSlayer's lower-priced tiers get the job done without the premium price tag.
 
-The software is available through a web browser on any computer or through mobile apps for iPhone and Android. You work through a series of questions organized by topic — personal information, income sources, deductions, credits — and the software builds your tax return as you go. You do not see the actual IRS forms; instead, you see plain-English questions and fill in the relevant numbers.
+The software is available through a web browser on any computer or through mobile apps for iPhone and Android. You work through a series of questions organized by topic — personal information, income sources, deductions, credits — and the software builds your tax return as you go. You do not see the actual IRS forms. Instead, you see plain-English questions and fill in the relevant numbers.
 
 TaxSlayer's free tier, called "Simply Free," covers federal filing for basic returns with one W-2 and no itemized deductions. The "Classic" tier, which handles most tax situations including self-employment income, itemized deductions, and investments, is priced a lot below comparable tiers from other major providers. TaxSlayer also offers a self-employed tier for freelancers, gig workers, and small business owners who need to file a Schedule C.
 
@@ -317,7 +317,7 @@ AARP Tax-Aide also offers a fully online option called "Tax-Aide Online" where y
       },
       {
         title: `Review and Approve Your Return`,
-        content: `The volunteer will prepare your return and then review it with you before submitting. They will explain the key numbers — your total income, taxable income, any credits applied, and your refund or amount owed. A second volunteer or site coordinator typically performs a quality review check before you sign. Ask any questions you have; no question is too basic.`,
+        content: `The volunteer will prepare your return and then review it with you before submitting. They will explain the key numbers — your total income, taxable income, any credits applied, and your refund or amount owed. A second volunteer or site coordinator typically performs a quality review check before you sign. Ask any questions you have. No question is too basic.`,
       },
       {
         title: `File and Get Your Refund`,
@@ -347,7 +347,7 @@ One more benefit worth knowing: with a Roth IRA, you can withdraw your original 
     steps: [
       {
         title: `Confirm You Are Eligible to Contribute`,
-        content: `Check that you have earned income this year — a paycheck from a job, self-employment earnings, or alimony received under pre-2019 divorce agreements all count. Passive income like dividends or rental income does not qualify. Also check that your income falls below the IRS limits for your filing status. The IRS updates these limits annually; current figures are available at irs.gov.`,
+        content: `Check that you have earned income this year — a paycheck from a job, self-employment earnings, or alimony received under pre-2019 divorce agreements all count. Passive income like dividends or rental income does not qualify. Also check that your income falls below the IRS limits for your filing status. The IRS updates these limits annually. Current figures are available at irs.gov.`,
         tip: `Quick Tip: Even if you do not qualify for a direct Roth IRA contribution due to income limits, there is a strategy called the "backdoor Roth IRA" that may still allow you to contribute. A tax professional or financial advisor can explain how it works.`,
       },
       {
@@ -847,7 +847,7 @@ Simplifi is available on iPhone, Android, and through a web browser. It does not
 
 The NerdWallet app also provides your free credit score, updated weekly, along with a breakdown of the factors affecting it. This includes your payment history, how much of your available credit you are using, the age of your accounts, and other elements that credit bureaus use to calculate your score. Understanding these factors makes it easier to take steps that improve your score over time.
 
-NerdWallet does not charge you anything. Its business model is built on referral fees — when you click through to a financial product and apply, NerdWallet may receive a payment from that provider. The site discloses this clearly, and it does not affect the rankings or recommendations shown to you; NerdWallet maintains editorial standards that keep product reviews independent.
+NerdWallet does not charge you anything. Its business model is built on referral fees — when you click through to a financial product and apply, NerdWallet may receive a payment from that provider. The site discloses this clearly, and it does not affect the rankings or recommendations shown to you. NerdWallet maintains editorial standards that keep product reviews independent.
 
 In addition to comparison tools, the app lets you link your bank and credit card accounts to track your net worth, spending, and cash flow — similar to a basic budgeting app. This gives you a single place to check your credit score and see where your money is going.
 

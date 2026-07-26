@@ -331,7 +331,7 @@ Before disabling any service, it is critical to research it first. Disabling the
 
 Pinning apps to the taskbar means putting a shortcut icon there so you can open that program with one click, without having to search for it or navigate through menus. You can pin as many apps as you like, though adding too many makes it harder to find what you need quickly.
 
-Widgets is a feature that shows you a panel of news headlines, weather, sports scores, and other information at a glance. You open it by clicking the small weather icon on the left side of the taskbar, or by pressing the Windows key and the letter W at the same time. Some people find Widgets useful for checking the weather quickly; others prefer to turn it off to keep the taskbar less cluttered.
+Widgets is a feature that shows you a panel of news headlines, weather, sports scores, and other information at a glance. You open it by clicking the small weather icon on the left side of the taskbar, or by pressing the Windows key and the letter W at the same time. Some people find Widgets useful for checking the weather quickly. Others prefer to turn it off to keep the taskbar less cluttered.
 
 The Windows 11 taskbar has some limitations compared to Windows 10 — for example, you cannot move it to the side or top of the screen in the standard settings. However, most core features work well and become second nature with a little practice.
 
@@ -465,7 +465,7 @@ An internet connection is required to download games and to verify your active s
 
 Think of the Microsoft Store like a vetted shopping mall — every store in it has been checked and approved to be there. Downloading apps from random websites, by contrast, is more like buying from a stranger on the street — you cannot always be sure what you are getting.
 
-The Microsoft Store offers a wide range of applications: productivity tools like Microsoft Office and Adobe Acrobat Reader, entertainment apps like Netflix and Spotify, games from Xbox Game Pass and independent developers, and utilities like VLC Media Player and various photo editors. Many apps are free; others have a one-time purchase price or a subscription.
+The Microsoft Store offers a wide range of applications: productivity tools like Microsoft Office and Adobe Acrobat Reader, entertainment apps like Netflix and Spotify, games from Xbox Game Pass and independent developers, and utilities like VLC Media Player and various photo editors. Many apps are free. Others have a one-time purchase price or a subscription.
 
 When you install an app from the Microsoft Store, Windows automatically keeps it updated. You do not need to manually check for updates or download update files from websites — the Store handles this in the background. This is both convenient and safer, since updates often include security fixes.
 
@@ -612,11 +612,11 @@ Running CHKDSK on your main C: drive while Windows is running requires a restart
       },
       {
         title: `Type the CHKDSK command`,
-        content: `In the Command Prompt window, type the following and press Enter: chkdsk C: /f /r — This command tells Windows to check the C: drive, fix any errors it finds (/f), and locate and recover readable information from bad sectors (/r). The C: refers to your main Windows drive; replace it with another letter if you want to check a different drive.`,
+        content: `In the Command Prompt window, type the following and press Enter: chkdsk C: /f /r — This command tells Windows to check the C: drive, fix any errors it finds (/f), and locate and recover readable information from bad sectors (/r). The C: refers to your main Windows drive. Replace it with another letter if you want to check a different drive.`,
       },
       {
         title: `Schedule the check and restart your computer`,
-        content: `Because Windows is actively using your C: drive, CHKDSK cannot check it while Windows is running. You will see a message asking whether to schedule the check for the next restart. Type "Y" and press Enter. Then restart your computer. CHKDSK will run before Windows loads — this is normal. Do not press any keys during the check; let it finish on its own.`,
+        content: `Because Windows is actively using your C: drive, CHKDSK cannot check it while Windows is running. You will see a message asking whether to schedule the check for the next restart. Type "Y" and press Enter. Then restart your computer. CHKDSK will run before Windows loads — this is normal. Do not press any keys during the check. Let it finish on its own.`,
         warning: `CHKDSK can take anywhere from 15 minutes to several hours depending on your drive's size and condition. Do not turn off your computer during the scan, as this could cause additional problems.`,
       },
       {

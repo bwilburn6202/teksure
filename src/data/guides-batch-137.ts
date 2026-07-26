@@ -95,7 +95,7 @@ Watch a comparison: on YouTube, search for "Roku vs Google TV 2026 comparison" �
       },
       {
         title: 'Google TV — what is not great',
-        content: 'Google TV is busier than Roku. The home screen pushes content at you, sometimes content you have no interest in, and you cannot fully turn it off. It requires a Google account (which means a Gmail address), which Roku does not. Some users find the interface overwhelming if they only watch a few channels. Setup is slightly longer — you have to sign in with Google during initial setup. And the Google TV Streamer (released 2024, $100) is overkill for most people; the older Chromecast with Google TV 4K is around $50 and does the same job.',
+        content: 'Google TV is busier than Roku. The home screen pushes content at you, sometimes content you have no interest in, and you cannot fully turn it off. It requires a Google account (which means a Gmail address), which Roku does not. Some users find the interface overwhelming if they only watch a few channels. Setup is slightly longer — you have to sign in with Google during initial setup. And the Google TV Streamer (released 2024, $100) is overkill for most people. The older Chromecast with Google TV 4K is around $50 and does the same job.',
         warning: 'If you do not already have a Gmail/Google account, you have to create one to set up Google TV. There is no way around this.',
       },
       {
@@ -139,7 +139,7 @@ Watch a comparison: on YouTube, search for "T-Mobile vs Verizon senior plan 2026
       },
       {
         title: 'T-Mobile Magenta 55+ — the upgrade for $70/month (one line)',
-        content: 'If you want extras, T-Mobile Magenta 55+ adds Netflix Basic (one stream, ad-free for $7.99 value), free in-flight Wi-Fi on most U.S. airlines, free texting in 215+ countries, and faster hotspot data (5 GB at 4G/5G speeds, then unlimited at 3G). One line is $70/month with taxes; two lines are $90/month total. For travelers, the international texting and in-flight Wi-Fi alone are worth the upgrade.',
+        content: 'If you want extras, T-Mobile Magenta 55+ adds Netflix Basic (one stream, ad-free for $7.99 value), free in-flight Wi-Fi on most U.S. airlines, free texting in 215+ countries, and faster hotspot data (5 GB at 4G/5G speeds, then unlimited at 3G). One line is $70/month with taxes. Two lines are $90/month total. For travelers, the international texting and in-flight Wi-Fi alone are worth the upgrade.',
         warning: 'Netflix Basic does NOT include 4K or multiple screens. If you want full Netflix, you pay the difference.',
       },
       {
@@ -340,7 +340,7 @@ Watch a walkthrough: search YouTube for "How to use Apple Pay 2026" — Apple Su
     difficulty: 'Beginner',
     body: `Instacart is a service that sends a real person — called a "shopper" — to a store near you to pick out your groceries, then deliver them to your door. You pay through the app, you tip the shopper, and you never leave the house. It is especially useful if you have trouble carrying heavy bags, do not drive, or live far from a good grocery store.
 
-The basics: Instacart works with most major U.S. grocery chains — Aldi, Costco, Kroger, Publix, Safeway, Wegmans, Whole Foods, ShopRite, H-E-B, Sam\'s Club, BJ\'s, CVS, Walgreens, Sprouts, and many regional chains. Delivery usually arrives within 1–2 hours of placing the order. The first order is usually free delivery for new customers; after that, expect a $4–$8 delivery fee plus an optional tip ($5–$10 is typical).
+The basics: Instacart works with most major U.S. grocery chains — Aldi, Costco, Kroger, Publix, Safeway, Wegmans, Whole Foods, ShopRite, H-E-B, Sam\'s Club, BJ\'s, CVS, Walgreens, Sprouts, and many regional chains. Delivery usually arrives within 1–2 hours of placing the order. The first order is usually free delivery for new customers. After that, expect a $4–$8 delivery fee plus an optional tip ($5–$10 is typical).
 
 (Sources: Instacart help center, instacart.com/help; Consumer Reports 2026 grocery delivery comparison; AARP article on grocery delivery for seniors)
 

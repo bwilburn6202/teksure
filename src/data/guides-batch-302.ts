@@ -135,7 +135,7 @@ export const guidesBatch302: Guide[] = [
       },
       {
         title: "Request a free Vessel Safety Check",
-        content: "On either organization's site, click the Vessel Safety Check link and enter the ZIP code. The system lists local examiners with email addresses or phone numbers. Email or call to schedule a 30-minute appointment at the boat's home dock or the trailer storage location. Provide the boat's hull identification number, registration number, length, and motor type. The examiner shows up with a clipboard, walks the boat, and explains any items missing. Failing the check is not a citation; it is just a list of items to fix before a re-inspection.",
+        content: "On either organization's site, click the Vessel Safety Check link and enter the ZIP code. The system lists local examiners with email addresses or phone numbers. Email or call to schedule a 30-minute appointment at the boat's home dock or the trailer storage location. Provide the boat's hull identification number, registration number, length, and motor type. The examiner shows up with a clipboard, walks the boat, and explains any items missing. Failing the check is not a citation. It is just a list of items to fix before a re-inspection.",
       },
       {
         title: "Take the basic boating course at the local unit",

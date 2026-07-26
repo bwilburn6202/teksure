@@ -160,7 +160,7 @@ The app also sends you a reminder when your parking time is about to expire, giv
 
 ParkMobile charges your credit or debit card automatically. There is no need to carry exact change or find a working meter. The app keeps a history of your parking sessions for expense tracking.
 
-ParkMobile is free to download. You pay your normal parking rate plus a small convenience fee (usually $0.35–$0.45 per transaction). Some cities absorb the fee; others pass it to the driver.
+ParkMobile is free to download. You pay your normal parking rate plus a small convenience fee (usually $0.35–$0.45 per transaction). Some cities absorb the fee. Others pass it to the driver.
 
 The app works on iPhone and Android. You can also pay at parkmobile.io on a computer.`,
     steps: [

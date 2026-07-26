@@ -4,8 +4,7 @@ export const guidesBatch140: Guide[] = [
   {
     slug: 'understanding-5g-vs-4g-lte-plain-english-2026',
     title: 'What Is 5G? A Plain-English Explanation for Everyday People',
-    excerpt:
-      'Your phone may say "5G" — but what does that actually mean for your calls, texts, and internet speed?',
+    excerpt: 'Your phone may say "5G" — but what does that actually mean for your calls, texts, and internet speed?',
     category: 'tech-explained',
     tags: ['5g', '4g lte', 'wireless', 'cell signal', 'phone speed', 'technology explained'],
     readTime: '5 min',
@@ -67,32 +66,27 @@ Some internet providers (T-Mobile Home Internet, Verizon Home Internet) now offe
     steps: [
       {
         title: 'Check what signal your phone is currently using',
-        content:
-          'Look at the top of your phone screen. You will see "5G," "LTE," "4G," or sometimes "3G." This tells you which network your phone is connected to right now. It can change as you move around.',
+        content: 'Look at the top of your phone screen. You will see "5G," "LTE," "4G," or sometimes "3G." This tells you which network your phone is connected to right now. It can change as you move around.',
       },
       {
         title: 'Understand that low-band 5G feels similar to 4G',
-        content:
-          'If your phone shows 5G in a suburban or rural area, you likely have low-band 5G — which is similar in speed to a good 4G connection. This is not a problem; it works great for everything most people do.',
+        content: 'If your phone shows 5G in a suburban or rural area, you likely have low-band 5G — which is similar in speed to a good 4G connection. This is not a problem. It works great for everything most people do.',
       },
       {
         title: 'Do a speed test to see your actual connection speed',
-        content:
-          'Go to fast.com on your phone (no app needed). The number you see is your actual internet speed in Mbps. For context: streaming HD video needs about 5 Mbps; video calls need 3–5 Mbps. Most people with 4G or 5G have far more than that.',
+        content: 'Go to fast.com on your phone (no app needed). The number you see is your actual internet speed in Mbps. For context: streaming HD video needs about 5 Mbps. Video calls need 3–5 Mbps. Most people with 4G or 5G have far more than that.',
         tip: 'The number on screen matters more than whether it says "4G" or "5G" — 30 Mbps on 4G is faster than 10 Mbps on 5G.',
       },
       {
         title: 'Do not upgrade your phone just to get 5G',
-        content:
-          '4G LTE handles all everyday phone tasks perfectly. If your current phone works well, there is no reason to upgrade it for 5G. When you do eventually need a new phone, 5G will likely come standard.',
+        content: '4G LTE handles all everyday phone tasks perfectly. If your current phone works well, there is no reason to upgrade it for 5G. When you do eventually need a new phone, 5G will likely come standard.',
       },
     ],
   },
   {
     slug: 'use-google-maps-offline-no-signal-2026',
     title: 'How to Use Google Maps Without Cell Service or Wi-Fi',
-    excerpt:
-      'Download maps ahead of time so you can navigate even when there is no signal — perfect for road trips and remote areas.',
+    excerpt: 'Download maps ahead of time so you can navigate even when there is no signal — perfect for road trips and remote areas.',
     category: 'how-to',
     tags: ['google maps', 'offline maps', 'navigation', 'road trip', 'no signal', 'travel'],
     readTime: '5 min',
@@ -184,37 +178,31 @@ If you normally use Waze for traffic and navigation, note that Waze does not sup
     steps: [
       {
         title: 'Open Google Maps and go to Offline Maps',
-        content:
-          'Open Google Maps on your phone. Tap your profile picture in the top right corner. Tap "Offline maps." This is where all your downloaded map areas are managed.',
+        content: 'Open Google Maps on your phone. Tap your profile picture in the top right corner. Tap "Offline maps." This is where all your downloaded map areas are managed.',
       },
       {
         title: 'Tap "Select your own map" and draw the download area',
-        content:
-          'Tap "Select your own map." A blue square appears on the map. Use two fingers to zoom the map and move it so the square covers the area you want to download. For a road trip, download the route plus extra area on each side.',
+        content: 'Tap "Select your own map." A blue square appears on the map. Use two fingers to zoom the map and move it so the square covers the area you want to download. For a road trip, download the route plus extra area on each side.',
         tip: 'Do this on Wi-Fi at home — offline map downloads can be 1–3 GB and are slow on cellular data.',
       },
       {
         title: 'Tap Download and wait for it to finish',
-        content:
-          'Tap "Download" and keep the app open while it downloads. Large areas can take several minutes on a fast Wi-Fi connection. You will get a confirmation when the download is complete.',
+        content: 'Tap "Download" and keep the app open while it downloads. Large areas can take several minutes on a fast Wi-Fi connection. You will get a confirmation when the download is complete.',
       },
       {
         title: 'Use Google Maps normally — it works the same without signal',
-        content:
-          'When you are in an area without cell service, open Google Maps and navigate as you normally would. Your GPS location still works (GPS uses satellites, not cellular). Turn-by-turn directions work. You just won\'t see live traffic.',
+        content: 'When you are in an area without cell service, open Google Maps and navigate as you normally would. Your GPS location still works (GPS uses satellites, not cellular). Turn-by-turn directions work. You just won\'t see live traffic.',
       },
       {
         title: 'Update your offline maps before they expire (every 30 days)',
-        content:
-          'Go to Google Maps → profile picture → Offline Maps and check the expiration dates. Tap "Update" on any area that is expiring soon. Google Maps updates automatically when you are on Wi-Fi if you have the setting enabled.',
+        content: 'Go to Google Maps → profile picture → Offline Maps and check the expiration dates. Tap "Update" on any area that is expiring soon. Google Maps updates automatically when you are on Wi-Fi if you have the setting enabled.',
       },
     ],
   },
   {
     slug: 'voice-to-text-iphone-android-2026',
     title: 'Stop Typing — Use Your Voice Instead: Voice-to-Text on iPhone and Android',
-    excerpt:
-      'Dictate text messages, emails, and notes by speaking instead of typing. Works on any modern smartphone.',
+    excerpt: 'Dictate text messages, emails, and notes by speaking instead of typing. Works on any modern smartphone.',
     category: 'tips-tricks',
     tags: ['voice to text', 'dictation', 'speech to text', 'accessibility', 'typing', 'siri', 'google'],
     readTime: '5 min',
@@ -294,37 +282,31 @@ Voice-to-text accuracy on modern phones is over 95% for clear speech in a quiet 
     steps: [
       {
         title: 'Tap a text field and look for the microphone icon on your keyboard',
-        content:
-          'Open any app where you type — Messages, Gmail, Notes. Tap the text area to bring up the keyboard. Look for a microphone icon (🎤). On iPhone it is to the right of the space bar. On Android it is usually on the top row of the keyboard.',
+        content: 'Open any app where you type — Messages, Gmail, Notes. Tap the text area to bring up the keyboard. Look for a microphone icon (🎤). On iPhone it is to the right of the space bar. On Android it is usually on the top row of the keyboard.',
       },
       {
         title: 'Tap the microphone and start speaking',
-        content:
-          'Tap the microphone icon. On iPhone, you will hear a soft chime. On Android, you see "Speak now." Start talking at a normal pace. Your words appear on screen as you speak.',
+        content: 'Tap the microphone icon. On iPhone, you will hear a soft chime. On Android, you see "Speak now." Start talking at a normal pace. Your words appear on screen as you speak.',
         tip: 'Speak in a quiet room for best accuracy. Background TV or music causes more errors.',
       },
       {
         title: 'Say punctuation out loud',
-        content:
-          'To add a period, say "period." For a comma, say "comma." Say "question mark," "exclamation point," or "new paragraph" for those. Practice this: say "Hi there comma how are you question mark" — it should type "Hi there, how are you?"',
+        content: 'To add a period, say "period." For a comma, say "comma." Say "question mark," "exclamation point," or "new paragraph" for those. Practice this: say "Hi there comma how are you question mark" — it should type "Hi there, how are you?"',
       },
       {
         title: 'Tap the microphone again when finished',
-        content:
-          'Tap the microphone to stop listening. Review the text that appeared. If any word is wrong, tap it to correct it manually or just re-dictate that part.',
+        content: 'Tap the microphone to stop listening. Review the text that appeared. If any word is wrong, tap it to correct it manually or just re-dictate that part.',
       },
       {
         title: 'Try Siri or Google Assistant for hands-free messaging',
-        content:
-          'Say "Hey Siri, send a text to [name]: [your message]" on iPhone. Say "Hey Google, send a text to [name]: [your message]" on Android. The assistant drafts and sends the message — you can compose entire messages without touching the phone.',
+        content: 'Say "Hey Siri, send a text to [name]: [your message]" on iPhone. Say "Hey Google, send a text to [name]: [your message]" on Android. The assistant drafts and sends the message — you can compose entire messages without touching the phone.',
       },
     ],
   },
   {
     slug: 'how-to-spot-fake-websites-2026',
     title: 'How to Spot a Fake or Fraudulent Website Before You Buy',
-    excerpt:
-      'Scammers build websites that look real. These 7 checks take 60 seconds and protect you from entering your payment info on a fake site.',
+    excerpt: 'Scammers build websites that look real. These 7 checks take 60 seconds and protect you from entering your payment info on a fake site.',
     category: 'safety-guides',
     tags: ['fake websites', 'online scams', 'shopping safety', 'phishing', 'website safety', 'https'],
     readTime: '6 min',
@@ -421,29 +403,24 @@ When in doubt, go to the source:
     steps: [
       {
         title: 'Check that the URL starts with https:// and shows a padlock',
-        content:
-          'Look at the address bar at the top of your browser. It should start with "https://" and show a padlock icon. Never enter payment information on a page that shows "http://" without the "s."',
+        content: 'Look at the address bar at the top of your browser. It should start with "https://" and show a padlock icon. Never enter payment information on a page that shows "http://" without the "s."',
         warning: 'HTTPS is a minimum requirement, not proof of a legitimate site. Always check the other steps too.',
       },
       {
         title: 'Read the URL character by character',
-        content:
-          'Look carefully at the web address. Scammers use subtle misspellings: amaz0n.com, walmrt.com, paypa1.com. Government services always use .gov — not .com, .net, or .org.',
+        content: 'Look carefully at the web address. Scammers use subtle misspellings: amaz0n.com, walmrt.com, paypa1.com. Government services always use .gov — not .com, .net, or .org.',
       },
       {
         title: 'Look for a real phone number and address on the site',
-        content:
-          'Find the "Contact Us" or footer of the website. There should be a real phone number and physical address. Search both in Google — do they check out? A missing or fake phone number is a major red flag.',
+        content: 'Find the "Contact Us" or footer of the website. There should be a real phone number and physical address. Search both in Google — do they check out? A missing or fake phone number is a major red flag.',
       },
       {
         title: 'Search "[company name] reviews" before buying',
-        content:
-          'Search Google for the company name plus "reviews" or "scam." Check bbb.org (Better Business Bureau) and trustpilot.com for complaints. If the site has many reports of non-delivery or fraud, walk away.',
+        content: 'Search Google for the company name plus "reviews" or "scam." Check bbb.org (Better Business Bureau) and trustpilot.com for complaints. If the site has many reports of non-delivery or fraud, walk away.',
       },
       {
         title: 'If the price seems impossibly low, it probably is',
-        content:
-          'Prices 50–80% below what a product normally costs are a classic scam signal. Real sales are rarely more than 40% off. If it is too good to be true, close the tab and find the product from a trusted retailer.',
+        content: 'Prices 50–80% below what a product normally costs are a classic scam signal. Real sales are rarely more than 40% off. If it is too good to be true, close the tab and find the product from a trusted retailer.',
         tip: 'When in doubt, buy from retailers you already know and trust — Amazon, Walmart.com, Target.com, BestBuy.com — by typing their address directly.',
       },
     ],

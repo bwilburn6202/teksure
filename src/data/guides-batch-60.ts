@@ -785,7 +785,7 @@ The key thing to understand is that AI does not find jobs for you — it helps y
 
 For resume improvement, AI is particularly useful at taking a rough description of your work history and turning it into clear, well-organized bullet points that highlight your accomplishments. Many people struggle to write about their own experience in a professional way — AI makes this much easier. You describe what you did, and the AI helps you phrase it in a way that reads well to hiring managers.
 
-For cover letters, the traditional advice is to tailor each letter to the specific job you are applying for. AI makes this practical. You paste in the job description and ask the AI to write a cover letter that connects your experience to what the employer is looking for. This used to take an hour; with AI, it takes about five minutes to get a strong draft.
+For cover letters, the traditional advice is to tailor each letter to the specific job you are applying for. AI makes this practical. You paste in the job description and ask the AI to write a cover letter that connects your experience to what the employer is looking for. This used to take an hour. With AI, it takes about five minutes to get a strong draft.
 
 For interview preparation, AI can generate likely interview questions for any job title, explain what interviewers are really looking for, and help you practice thoughtful answers using the STAR method (Situation, Task, Action, Result).`,
     steps: [

@@ -368,7 +368,7 @@ export const guidesBatch33: Guide[] = [
     slug: 'windows-11-widgets-guide',
     title: 'How to Use the Windows 11 Widgets Panel',
     excerpt: 'Windows 11 has a widgets panel that shows news, weather, sports scores, stock prices, and a calendar at a glance — accessible with one click.',
-    body: `Windows 11 includes a Widgets panel — a sidebar that shows live, at-a-glance information without opening any apps. You can access it by clicking the weather/news icon in the taskbar (usually showing the current temperature) or by pressing Windows key + W.\n\nThe default widgets include:\n- **Weather**: Current conditions and a five-day forecast\n- **News**: Top headlines personalized to your interests\n- **Calendar**: Your upcoming appointments and events\n- **Sports**: Scores and standings for your favorite teams\n- **Stocks/markets**: Price updates for stocks you follow\n- **Photos**: Your recent photos from OneDrive\n- **To Do**: Tasks from Microsoft To Do\n- **Traffic**: Current conditions on your commute route\n\nYou can add, remove, and rearrange widgets by clicking the pencil icon ("Edit widgets") at the top of the panel. Each widget can be resized — small, medium, or large — depending on how much detail you want to see.\n\nThe news feed at the bottom of the Widgets panel is personalized based on topics you follow. You can hide topics you are not interested in and add new ones.\n\nWidgets is designed to be glanceable — you open it briefly, see what you need, and close it. It does not replace any apps; it gives you quick access to information you check often without opening a browser or multiple apps.`,
+    body: `Windows 11 includes a Widgets panel — a sidebar that shows live, at-a-glance information without opening any apps. You can access it by clicking the weather/news icon in the taskbar (usually showing the current temperature) or by pressing Windows key + W.\n\nThe default widgets include:\n- **Weather**: Current conditions and a five-day forecast\n- **News**: Top headlines personalized to your interests\n- **Calendar**: Your upcoming appointments and events\n- **Sports**: Scores and standings for your favorite teams\n- **Stocks/markets**: Price updates for stocks you follow\n- **Photos**: Your recent photos from OneDrive\n- **To Do**: Tasks from Microsoft To Do\n- **Traffic**: Current conditions on your commute route\n\nYou can add, remove, and rearrange widgets by clicking the pencil icon ("Edit widgets") at the top of the panel. Each widget can be resized — small, medium, or large — depending on how much detail you want to see.\n\nThe news feed at the bottom of the Widgets panel is personalized based on topics you follow. You can hide topics you are not interested in and add new ones.\n\nWidgets is designed to be glanceable — you open it briefly, see what you need, and close it. It does not replace any apps. It gives you quick access to information you check often without opening a browser or multiple apps.`,
     category: 'windows-guides',
     tags: ['windows 11', 'widgets', 'news feed', 'weather', 'windows tips'],
     readTime: '4 min',
@@ -395,7 +395,7 @@ export const guidesBatch33: Guide[] = [
       },
       {
         title: 'Resize a widget',
-        content: 'Click the three dots (⋯) on any widget → "Small," "Medium," or "Large." Larger widgets show more detail; smaller ones take up less space.',
+        content: 'Click the three dots (⋯) on any widget → "Small," "Medium," or "Large." Larger widgets show more detail. Smaller ones take up less space.',
       },
     ],
   },

@@ -186,7 +186,7 @@ Here's a real money nudge: many home insurance companies (Travelers, State Farm,
       },
       {
         title: `Decide between point sensors and whole-home`,
-        content: `If you are a renter or want an inexpensive first step, buy point sensors only. If you own your home, travel often, or had a previous water claim, add a whole-home monitor too. Moen Flo and Phyn Plus include auto-shutoff valves; Flume is detection-only but does not require plumbing work.`,
+        content: `If you are a renter or want an inexpensive first step, buy point sensors only. If you own your home, travel often, or had a previous water claim, add a whole-home monitor too. Moen Flo and Phyn Plus include auto-shutoff valves. Flume is detection-only but does not require plumbing work.`,
       },
       {
         title: `Place and pair point sensors`,
@@ -213,7 +213,7 @@ Here's a real money nudge: many home insurance companies (Travelers, State Farm,
     thumbnailEmoji: ``,
     publishedAt: `2026-04-20`,
     difficulty: `Beginner`,
-    body: `Instagram's Close Friends feature is one of the most useful privacy tools on any social media platform, and a lot of people don't know it exists. It's a private list you curate yourself. Anyone on the list sees your Close Friends Stories and Notes; everyone else sees nothing. No one is notified when they're added or removed, so you can adjust it freely without awkward conversations.
+    body: `Instagram's Close Friends feature is one of the most useful privacy tools on any social media platform, and a lot of people don't know it exists. It's a private list you curate yourself. Anyone on the list sees your Close Friends Stories and Notes. Everyone else sees nothing. No one is notified when they're added or removed, so you can adjust it freely without awkward conversations.
 
 Close Friends is designed for moments when a regular Story feels too public. Grandparents and cousins wanting the daily grandkid photos, without broadcasting to 800 followers. A small group watching a home renovation. Updates during a difficult life moment — a health issue, a job search, a loss — where a wider audience feels wrong. Some people also use it for "finsta"-style personal content, an inner ring of real friends who see unfiltered daily moments.
 
@@ -227,7 +227,7 @@ The setup is fast. You can add or remove people from Close Friends at any time t
       },
       {
         title: `Add people to the list`,
-        content: `Tap the circle next to each person you want on the list. A green checkmark fills in. Start with immediate family and your closest friends. Instagram suggests accounts you message and interact with most; these suggestions are a good place to start.`,
+        content: `Tap the circle next to each person you want on the list. A green checkmark fills in. Start with immediate family and your closest friends. Instagram suggests accounts you message and interact with most. These suggestions are a good place to start.`,
       },
       {
         title: `Post a Story to Close Friends only`,
@@ -343,7 +343,7 @@ Before you can go live, you need to meet two requirements. You must be at least 
 
 Once you qualify, the button is at the bottom of the screen. Tap the plus to create, then swipe across the capture modes until you see LIVE. You'll be prompted to set a title ("Friday night Q&A — ask me anything about gardening"), upload a cover image, and choose settings like whether comments are open, whether the broadcast is public, and whether you want to invite another user to co-host.
 
-During the live, you'll see floating comments, heart animations when people tap the screen, and virtual gifts if viewers send them. Gifts are small animations that viewers buy with TikTok Coins; they convert to real money for the creator. You can invite up to three moderators (trusted viewers) to delete spam comments and ban problem accounts, which is essential on a larger broadcast.`,
+During the live, you'll see floating comments, heart animations when people tap the screen, and virtual gifts if viewers send them. Gifts are small animations that viewers buy with TikTok Coins. They convert to real money for the creator. You can invite up to three moderators (trusted viewers) to delete spam comments and ban problem accounts, which is essential on a larger broadcast.`,
     steps: [
       {
         title: `Confirm you meet the requirements`,
@@ -470,7 +470,7 @@ Example: "Plan a 5-day trip to Rome for a couple in their 60s, moderate walking 
 
 AI will return a day-by-day itinerary with morning, afternoon, and evening activities, usually with approximate walking times. Ask it to group activities that are near each other geographically — the common flaw in AI itineraries is sending you across town for lunch and back again. Ask for restaurant suggestions that fit dietary needs.
 
-Now the important part: AI hallucinations. AI can confidently invent restaurants that don't exist, list closed museums, or quote incorrect hours. Always verify specific names and addresses on Google Maps or the venue's official website before counting on them. Use the AI for the shape of the trip; use official sources for the bookings.`,
+Now the important part: AI hallucinations. AI can confidently invent restaurants that don't exist, list closed museums, or quote incorrect hours. Always verify specific names and addresses on Google Maps or the venue's official website before counting on them. Use the AI for the shape of the trip. Use official sources for the bookings.`,
     steps: [
       {
         title: `Write a detailed trip prompt`,
@@ -546,7 +546,7 @@ The one absolute rule: never let AI invent qualifications. If it writes that you
     thumbnailEmoji: ``,
     publishedAt: `2026-04-20`,
     difficulty: `Beginner`,
-    body: `AI bedtime stories are a small thing that make a big difference at the end of a long day. You can have a personalized 5-minute story ready in under a minute, starring your child as the main character, themed around their current favorite animal or topic, and ending with a gentle lesson if you want one. The kids love that the story is about them; parents love that bedtime doesn't require reading the same dinosaur book for the 400th night in a row.
+    body: `AI bedtime stories are a small thing that make a big difference at the end of a long day. You can have a personalized 5-minute story ready in under a minute, starring your child as the main character, themed around their current favorite animal or topic, and ending with a gentle lesson if you want one. The kids love that the story is about them. Parents love that bedtime doesn't require reading the same dinosaur book for the 400th night in a row.
 
 A good bedtime story prompt includes the child's first name, age (so the vocabulary and attention span match), a theme or setting they love (pirates, octopuses, unicorns, trains, space), optional supporting characters (a sibling, a pet, a stuffed animal), a target length (5 minutes is about 500 to 700 words), and the mood you want — calming is usually the goal at bedtime, not thrilling.
 
@@ -679,7 +679,7 @@ Breaches are frighteningly common. The websites Have I Been Pwned (haveibeenpwne
 
 Finding the accounts is the real work. Three techniques find about 95 percent of them. First, search your email inbox for the words "welcome," "verify your account," and "confirm your email." Every account creation sent at least one of those messages, and the messages are usually still in your Inbox or Archive. Second, open your password manager (if you use one) and scroll through — you'll see logins you haven't touched in years. Third, Google your own name, email address, and old usernames — sometimes you'll find public profiles you didn't know still existed.
 
-Once you've found an account, the site JustDeleteMe.xyz is your friend. It's a crowd-sourced directory of account deletion links for over 700 websites, rated from "Easy" (one click) to "Impossible" (cannot be deleted). For US residents, CCPA gives you a legal right to request deletion at many companies; EU residents have the same right via GDPR. Both laws apply to companies that do business in their respective regions.`,
+Once you've found an account, the site JustDeleteMe.xyz is your friend. It's a crowd-sourced directory of account deletion links for over 700 websites, rated from "Easy" (one click) to "Impossible" (cannot be deleted). For US residents, CCPA gives you a legal right to request deletion at many companies. EU residents have the same right via GDPR. Both laws apply to companies that do business in their respective regions.`,
     steps: [
       {
         title: `Check breach history`,
@@ -718,7 +718,7 @@ Once you've found an account, the site JustDeleteMe.xyz is your friend. It's a c
 
 WiFi is short-range wireless that comes from a router inside a building. Your home router, the one at a cafe, the one at a hotel — they all connect to the internet through a wired connection (fiber, cable, or DSL) and broadcast that connection over WiFi radio signals across maybe 100 feet indoors. The newest versions of WiFi — WiFi 6, WiFi 6E, and WiFi 7 — can deliver speeds of 1 Gbps or faster when the underlying wired connection supports it. Older routers (WiFi 4 or early WiFi 5) often cap at 100 to 300 Mbps regardless of your internet plan.
 
-5G is cellular, meaning it comes from cell towers operated by Verizon, T-Mobile, AT&T, and others, and reaches you through your phone's SIM card. 5G has two flavors: sub-6GHz 5G covers most of the country and typically delivers 100 to 400 Mbps; mmWave 5G is the super-fast flavor (1+ Gbps) but has a very short range (often just downtown blocks of major cities). Your phone chooses automatically.
+5G is cellular, meaning it comes from cell towers operated by Verizon, T-Mobile, AT&T, and others, and reaches you through your phone's SIM card. 5G has two flavors: sub-6GHz 5G covers most of the country and typically delivers 100 to 400 Mbps. MmWave 5G is the super-fast flavor (1+ Gbps) but has a very short range (often just downtown blocks of major cities). Your phone chooses automatically.
 
 When does 5G beat home WiFi? If your home router is old and your cellular service is strong, 5G may be faster. T-Mobile and Verizon sell 5G home internet (a cellular router that stays in your house) as a replacement for cable or fiber for $50 to $70 per month — often competitive in suburbs with weak cable service.
 
@@ -760,7 +760,7 @@ Watch for data caps. Your home WiFi plan usually has no cap (or a very high one)
 
 Modern phones (any iPhone in the past 8 years, most Android phones in the past 5) scan QR codes automatically through the regular camera app — you don't need a separate scanner app. Open the camera, point it at the QR code, and a notification pops up asking if you want to open the encoded link.
 
-The scam version is called "quishing" — QR code phishing. Scammers print fake QR codes and place them over real ones on parking meters, gas pumps, bike-share docks, restaurant menus, and public posters. You scan expecting to pay for parking or view a menu; instead the link goes to a fake payment page that captures your credit card, or to a page that quietly installs malware on your phone. In 2023 the FTC and FBI both issued warnings about quishing scams specifically targeting parking meters in cities including Austin, Atlanta, and Portland.
+The scam version is called "quishing" — QR code phishing. Scammers print fake QR codes and place them over real ones on parking meters, gas pumps, bike-share docks, restaurant menus, and public posters. You scan expecting to pay for parking or view a menu. Instead the link goes to a fake payment page that captures your credit card, or to a page that quietly installs malware on your phone. In 2023 the FTC and FBI both issued warnings about quishing scams specifically targeting parking meters in cities including Austin, Atlanta, and Portland.
 
 The simple defense is to preview the URL before you follow it. When your phone scans a QR code, it shows you the web address in a notification before opening. Read it. If the QR code is on a parking meter and the URL goes to some unfamiliar domain ("quick-park-pay.xyz") instead of the city's official parking site, do not tap. When paying or logging in after a QR scan, it's worth a second look.`,
     steps: [
@@ -846,7 +846,7 @@ Passkeys are a newer method — they use your device's biometrics (Face ID, Touc
 
 The top of an EOB identifies you (your name and member ID), the date of service, and which provider submitted the claim. Always confirm these match your actual visit. Wrong member ID or wrong provider is a red flag for fraud.
 
-The middle section breaks down the claim line by line. You'll see a "billed amount" — what the provider charged — followed by an "allowed amount" — the maximum your insurance agreed to pay under their contract with the provider. The difference between billed and allowed is written off; you don't owe it. Then the EOB shows how much insurance paid, and how much goes toward your deductible, copay, or coinsurance.
+The middle section breaks down the claim line by line. You'll see a "billed amount" — what the provider charged — followed by an "allowed amount" — the maximum your insurance agreed to pay under their contract with the provider. The difference between billed and allowed is written off. You don't owe it. Then the EOB shows how much insurance paid, and how much goes toward your deductible, copay, or coinsurance.
 
 At the bottom you'll see a "your responsibility" total. This is what you may owe the provider. I say "may" because the EOB is not a bill — the provider will send a separate bill. Wait for that bill before paying anything.
 
@@ -940,7 +940,7 @@ Login alerts are the third must-have. Any time someone logs into your online ban
     thumbnailEmoji: ``,
     publishedAt: `2026-04-21`,
     difficulty: `Beginner`,
-    body: `Few things are more frustrating than watching your tracking app switch to "Delivered" — then going to your door and finding nothing there. This happens more often than you'd think, and in most cases your package isn't stolen; it was left at the wrong address, delivered to a neighbor, or tucked somewhere out of the way. Here is a calm, step-by-step plan for tracking it down.
+    body: `Few things are more frustrating than watching your tracking app switch to "Delivered" — then going to your door and finding nothing there. This happens more often than you'd think, and in most cases your package isn't stolen. It was left at the wrong address, delivered to a neighbor, or tucked somewhere out of the way. Here is a calm, step-by-step plan for tracking it down.
 
 First, give it a little time. Carriers sometimes update tracking before the driver physically arrives. If it just turned to "Delivered," wait 30 to 60 minutes before starting your search.
 

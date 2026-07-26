@@ -4,8 +4,7 @@ export const guidesBatch139: Guide[] = [
   {
     slug: 'understand-your-phone-bill-2026',
     title: 'How to Read and Understand Your Phone Bill',
-    excerpt:
-      'Decode every line of your wireless bill — and find charges you can remove to lower your monthly cost.',
+    excerpt: 'Decode every line of your wireless bill — and find charges you can remove to lower your monthly cost.',
     category: 'financial-tech',
     tags: ['phone bill', 'wireless', 'charges', 'save money', 'verizon', 'att', 'tmobile', 'consumer cellular'],
     readTime: '6 min',
@@ -87,37 +86,31 @@ Most carriers give a $5–$15/month discount for setting up autopay from a bank 
     steps: [
       {
         title: 'Find your latest bill — online or paper',
-        content:
-          'Log into your carrier\'s app or website to see the itemized bill. Look for a "View Bill" or "Bill Details" section. If you receive paper bills, find the most recent one.',
+        content: 'Log into your carrier\'s app or website to see the itemized bill. Look for a "View Bill" or "Bill Details" section. If you receive paper bills, find the most recent one.',
       },
       {
         title: 'Identify every charge beyond your base plan',
-        content:
-          'Make a list of every line item that is not your plan charge, taxes, or device payment. These "add-ons" are the most likely candidates for removal.',
+        content: 'Make a list of every line item that is not your plan charge, taxes, or device payment. These "add-ons" are the most likely candidates for removal.',
         tip: 'Insurance, cloud storage upgrades, hotspot boosts, and spam filtering add-ons are the most common avoidable charges.',
       },
       {
         title: 'Check your actual data usage vs. your plan',
-        content:
-          'On iPhone: Settings → Cellular → look at the data totals. On Android: Settings → Network → Data Usage. If you use less than 3–5 GB per month, you may be paying for more data than you need.',
+        content: 'On iPhone: Settings → Cellular → look at the data totals. On Android: Settings → Network → Data Usage. If you use less than 3–5 GB per month, you may be paying for more data than you need.',
       },
       {
         title: 'Call your carrier and ask for retention offers',
-        content:
-          'Say: "I\'ve been a customer for [X years] and I want to see if there are any promotions I qualify for." The retention team has access to deals not listed online. This call takes 15 minutes and can save $10–$30 per month.',
+        content: 'Say: "I\'ve been a customer for [X years] and I want to see if there are any promotions I qualify for." The retention team has access to deals not listed online. This call takes 15 minutes and can save $10–$30 per month.',
       },
       {
         title: 'Remove any add-ons you do not use',
-        content:
-          'In your carrier\'s app or website, find "Add-ons," "Extras," or "Manage Features." Remove any services you did not intentionally choose or no longer use. Changes take effect on your next billing cycle.',
+        content: 'In your carrier\'s app or website, find "Add-ons," "Extras," or "Manage Features." Remove any services you did not intentionally choose or no longer use. Changes take effect on your next billing cycle.',
       },
     ],
   },
   {
     slug: 'amazon-alexa-setup-for-seniors-2026',
     title: 'How to Set Up Amazon Alexa for Seniors: A Plain-English Guide',
-    excerpt:
-      'Alexa can set reminders, make calls, play music, and control lights — all by voice. Here is how to get started.',
+    excerpt: 'Alexa can set reminders, make calls, play music, and control lights — all by voice. Here is how to get started.',
     category: 'smart-home',
     tags: ['alexa', 'amazon echo', 'smart speaker', 'voice assistant', 'seniors', 'smart home'],
     readTime: '7 min',
@@ -206,37 +199,31 @@ The Echo Show is especially popular with seniors because it has a screen — fam
     steps: [
       {
         title: 'Plug in your Echo device and download the Alexa app',
-        content:
-          'Plug the Echo into a power outlet — the light ring turns orange. On your phone, search "Amazon Alexa" in the App Store or Play Store and download the free app. Sign in with your Amazon account.',
+        content: 'Plug the Echo into a power outlet — the light ring turns orange. On your phone, search "Amazon Alexa" in the App Store or Play Store and download the free app. Sign in with your Amazon account.',
       },
       {
         title: 'Connect the Echo to your Wi-Fi in the Alexa app',
-        content:
-          'In the Alexa app, tap "Devices" → "+" → "Add Device" → "Amazon Echo" → select your model. The app walks you through connecting to your home Wi-Fi network. When done, Alexa greets you.',
+        content: 'In the Alexa app, tap "Devices" → "+" → "Add Device" → "Amazon Echo" → select your model. The app walks you through connecting to your home Wi-Fi network. When done, Alexa greets you.',
       },
       {
         title: 'Try your first voice command',
-        content:
-          'Say "Alexa" to wake it up, then ask something simple: "Alexa, what time is it?" or "Alexa, set a timer for 5 minutes." The light ring glows blue when it is listening.',
+        content: 'Say "Alexa" to wake it up, then ask something simple: "Alexa, what time is it?" or "Alexa, set a timer for 5 minutes." The light ring glows blue when it is listening.',
         tip: 'Speak at a normal conversational volume — you do not need to shout.',
       },
       {
         title: 'Set up daily reminders for medications or appointments',
-        content:
-          'Say: "Alexa, remind me to take my blood pressure medicine every day at 8 AM." Alexa will confirm and announce it aloud at that time every day. You can also add reminders in the Alexa app under More → Reminders & Alarms.',
+        content: 'Say: "Alexa, remind me to take my blood pressure medicine every day at 8 AM." Alexa will confirm and announce it aloud at that time every day. You can also add reminders in the Alexa app under More → Reminders & Alarms.',
       },
       {
         title: 'Connect Alexa to family members for free calling',
-        content:
-          'In the Alexa app, tap "Communicate" → the phone icon → allow contact access. Family members who have the Alexa app will appear. Once connected, say "Alexa, call [name]" to reach them by voice, for free.',
+        content: 'In the Alexa app, tap "Communicate" → the phone icon → allow contact access. Family members who have the Alexa app will appear. Once connected, say "Alexa, call [name]" to reach them by voice, for free.',
       },
     ],
   },
   {
     slug: 'what-to-do-if-phone-lost-or-stolen-2026',
     title: 'What to Do If Your Phone Is Lost or Stolen',
-    excerpt:
-      'Act fast — these steps protect your accounts, locate your phone, and prevent identity theft if your phone goes missing.',
+    excerpt: 'Act fast — these steps protect your accounts, locate your phone, and prevent identity theft if your phone goes missing.',
     category: 'troubleshooting',
     tags: ['lost phone', 'stolen phone', 'find my phone', 'security', 'identity theft'],
     readTime: '5 min',
@@ -328,38 +315,32 @@ Five minutes of preparation now means much less panic later.`,
     steps: [
       {
         title: 'Go to icloud.com/find (iPhone) or android.com/find (Android)',
-        content:
-          'Use any computer, tablet, or borrowed phone. Sign in with your Apple ID or Google account. Your phone appears on a map if it is on and connected to the internet.',
+        content: 'Use any computer, tablet, or borrowed phone. Sign in with your Apple ID or Google account. Your phone appears on a map if it is on and connected to the internet.',
         tip: 'Bookmark these sites on your computer right now so you have them ready if needed.',
       },
       {
         title: 'Play a sound to locate it nearby',
-        content:
-          'If you think the phone is somewhere in your home, click "Play Sound." It rings at full volume even if the phone is silenced. Check under cushions, in another room, in coat pockets.',
+        content: 'If you think the phone is somewhere in your home, click "Play Sound." It rings at full volume even if the phone is silenced. Check under cushions, in another room, in coat pockets.',
       },
       {
         title: 'Activate Lost Mode / Secure Device',
-        content:
-          'If it is not found in a few minutes, click "Mark as Lost" (iPhone) or "Secure Device" (Android). This locks the phone, displays your callback number on the screen, and continues tracking its location.',
+        content: 'If it is not found in a few minutes, click "Mark as Lost" (iPhone) or "Secure Device" (Android). This locks the phone, displays your callback number on the screen, and continues tracking its location.',
       },
       {
         title: 'Change your email password immediately',
-        content:
-          'From a computer or borrowed device, change your email password. Anyone with access to your email can reset passwords for your bank, Amazon, and other accounts. Changing your email password first cuts off that chain.',
+        content: 'From a computer or borrowed device, change your email password. Anyone with access to your email can reset passwords for your bank, Amazon, and other accounts. Changing your email password first cuts off that chain.',
         warning: 'Do this within the first hour of realizing the phone is gone, even before you call your carrier.',
       },
       {
         title: 'Call your carrier to report the loss',
-        content:
-          'Verizon: 1-800-922-0204. AT&T: 1-800-331-0500. T-Mobile: 1-800-937-8997. Consumer Cellular: 1-888-345-5509. They can suspend service and block the device using the IMEI number to prevent unauthorized use.',
+        content: 'Verizon: 1-800-922-0204. AT&T: 1-800-331-0500. T-Mobile: 1-800-937-8997. Consumer Cellular: 1-888-345-5509. They can suspend service and block the device using the IMEI number to prevent unauthorized use.',
       },
     ],
   },
   {
     slug: 'digital-photo-frames-best-for-seniors-2026',
     title: 'The Best Digital Photo Frames for Seniors in 2026',
-    excerpt:
-      'Family can send photos directly from their phones to your frame. No tech skills needed once it is set up.',
+    excerpt: 'Family can send photos directly from their phones to your frame. No tech skills needed once it is set up.',
     category: 'buying-guides',
     tags: ['digital photo frame', 'smart frame', 'aura', 'nixplay', 'amazon echo show', 'gift ideas'],
     readTime: '6 min',
@@ -392,7 +373,7 @@ Nixplay is Aura's closest competitor. Key features:
 - 10.1-inch IPS display, good color accuracy
 - Family shares via the free Nixplay app or by email — email sharing is especially easy for family members who are not tech-savvy
 - Playlist feature lets you group photos by occasion (grandchildren, vacations, etc.)
-- Nixplay requires a free account; storage is free for basic use
+- Nixplay requires a free account. Storage is free for basic use
 
 Available at nixplay.com, Amazon, Walmart, and Target.
 
@@ -408,7 +389,7 @@ A larger 15.6-inch wall-mounted or standing smart display. Excellent as a kitche
 
 - **Screen size:** 10–15 inches is ideal for most living rooms. Smaller frames (7–8 inch) work on a nightstand.
 - **Photo quality:** Look for IPS displays — better color accuracy than basic LCD screens.
-- **Storage:** Aura offers unlimited free storage. Nixplay free accounts store up to 1,000 photos; more requires a subscription.
+- **Storage:** Aura offers unlimited free storage. Nixplay free accounts store up to 1,000 photos. More requires a subscription.
 - **Ease of sharing for family:** Aura and Nixplay both have good apps. Nixplay's email sharing is helpful for family who resist downloading apps.
 - **Wi-Fi requirement:** All smart frames require home Wi-Fi to receive new photos.
 
@@ -435,29 +416,24 @@ Prices drop a lot during Amazon Prime Day (July) and Black Friday (late November
     steps: [
       {
         title: 'Choose a frame based on where it will sit',
-        content:
-          'For a living room or prominent display, get at least a 10-inch screen — the Aura Carver (10.1") or Nixplay (10.1") both look great at that size. For a bedside table, a smaller 8" frame works well.',
+        content: 'For a living room or prominent display, get at least a 10-inch screen — the Aura Carver (10.1") or Nixplay (10.1") both look great at that size. For a bedside table, a smaller 8" frame works well.',
         tip: 'Aura Carver is the top recommendation for photo quality and easy family sharing with no subscription fee.',
       },
       {
         title: 'During setup: connect to Wi-Fi',
-        content:
-          'When you first power on the frame, it will ask for your Wi-Fi network name and password. This is the only technical step. Once connected, the frame shows a code you enter in the companion app on your phone.',
+        content: 'When you first power on the frame, it will ask for your Wi-Fi network name and password. This is the only technical step. Once connected, the frame shows a code you enter in the companion app on your phone.',
       },
       {
         title: 'Create an account and download the app on your phone',
-        content:
-          'Create a free account at the frame maker\'s website (auraframes.com or nixplay.com). Download the companion app on your phone. Sign in. The frame and app link together automatically.',
+        content: 'Create a free account at the frame maker\'s website (auraframes.com or nixplay.com). Download the companion app on your phone. Sign in. The frame and app link together automatically.',
       },
       {
         title: 'Send a test photo from your phone',
-        content:
-          'In the app, select a photo from your phone\'s camera roll and tap "Add to Frame." Within seconds, it should appear on the display. This confirms the connection is working.',
+        content: 'In the app, select a photo from your phone\'s camera roll and tap "Add to Frame." Within seconds, it should appear on the display. This confirms the connection is working.',
       },
       {
         title: 'Invite family members to contribute',
-        content:
-          'In the app, look for "Share Frame" or "Invite Contributors." Send an invitation link to family members. Once they accept and download the app, they can send photos directly to your frame from anywhere in the world.',
+        content: 'In the app, look for "Share Frame" or "Invite Contributors." Send an invitation link to family members. Once they accept and download the app, they can send photos directly to your frame from anywhere in the world.',
       },
     ],
   },

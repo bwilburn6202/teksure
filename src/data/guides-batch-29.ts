@@ -766,7 +766,7 @@ If online notarization isn't available for your document, banks (particularly cr
     steps: [
       {
         title: 'Verify Your Document and State Allow RON',
-        content: `Check if your state allows Remote Online Notarization: notarize.com/state-requirements lists requirements by state. Confirm your document type qualifies — powers of attorney and affidavits almost always do; real estate deeds vary by state. If your state doesn't support RON or your document doesn't qualify, use an in-person notary instead.`,
+        content: `Check if your state allows Remote Online Notarization: notarize.com/state-requirements lists requirements by state. Confirm your document type qualifies — powers of attorney and affidavits almost always do. Real estate deeds vary by state. If your state doesn't support RON or your document doesn't qualify, use an in-person notary instead.`,
       },
       {
         title: 'Choose an Online Notary Platform',
@@ -820,7 +820,7 @@ A typical family can save $20-50/month on groceries with consistent Ibotta use. 
       },
       {
         title: 'Shop Normally and Buy the Claimed Products',
-        content: `Buy the products you've claimed offers for during your normal shopping. You don't need to do anything special at checkout — just buy the items. In-store purchase works with receipt scan; online purchase works differently (link below).`,
+        content: `Buy the products you've claimed offers for during your normal shopping. You don't need to do anything special at checkout — just buy the items. In-store purchase works with receipt scan. Online purchase works differently (link below).`,
       },
       {
         title: 'Submit Your Receipt',
@@ -912,7 +912,7 @@ iCloud storage is separate from your iPhone's built-in storage and they're manag
       },
       {
         title: 'Free Up iPhone Storage: Photos and Videos',
-        content: 'Enable "Optimize iPhone Storage" (Settings → Photos → toggle "Optimize iPhone Storage"). This keeps small previews of photos and videos on your phone while storing the full-quality originals in iCloud. Your photos remain visible and accessible; only downloads on demand when you tap one. This can reclaim dozens of gigabytes on phones with years of photos.',
+        content: 'Enable "Optimize iPhone Storage" (Settings → Photos → toggle "Optimize iPhone Storage"). This keeps small previews of photos and videos on your phone while storing the full-quality originals in iCloud. Your photos remain visible and accessible. Only downloads on demand when you tap one. This can reclaim dozens of gigabytes on phones with years of photos.',
       },
       {
         title: 'Delete Old Message Attachments',

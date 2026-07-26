@@ -67,7 +67,7 @@ One thing trips people up constantly: you need both the right adapter AND the ri
       },
       {
         title: `Use a cable rated for the wattage you need`,
-        content: `Not every USB-C cable is the same. Cheap cables may only support 60W; charging a 100W laptop through one will charge slowly or not work at all. Look for cables rated "100W" or "5A" for laptops. For fast phone charging (20-30W), almost any quality USB-C cable works, but avoid no-name Amazon bargain cables.`,
+        content: `Not every USB-C cable is the same. Cheap cables may only support 60W. Charging a 100W laptop through one will charge slowly or not work at all. Look for cables rated "100W" or "5A" for laptops. For fast phone charging (20-30W), almost any quality USB-C cable works, but avoid no-name Amazon bargain cables.`,
       },
       {
         title: `Match charger and cable to your device`,
@@ -90,7 +90,7 @@ One thing trips people up constantly: you need both the right adapter AND the ri
     thumbnailEmoji: ``,
     publishedAt: `2026-04-20`,
     difficulty: `Beginner`,
-    body: `One of the most confusing things in modern tech is that "USB-C" describes only the physical shape of the connector — that small oval plug that goes in either way up. It does not tell you anything about what the port or cable can do. Two USB-C ports that look identical on the outside can behave completely differently. One might be a slow 480 Mbps USB 2.0 port that only charges your phone; another might be a 40 Gbps Thunderbolt 4 port that drives a 4K monitor AND transfers a full movie in seconds.
+    body: `One of the most confusing things in modern tech is that "USB-C" describes only the physical shape of the connector — that small oval plug that goes in either way up. It does not tell you anything about what the port or cable can do. Two USB-C ports that look identical on the outside can behave completely differently. One might be a slow 480 Mbps USB 2.0 port that only charges your phone. Another might be a 40 Gbps Thunderbolt 4 port that drives a 4K monitor AND transfers a full movie in seconds.
 
 The actual capability is determined by which standard the port supports: USB 2.0 (480 Mbps — mostly for charging and slow data), USB 3.2 Gen 1 (5 Gbps), USB 3.2 Gen 2 (10 Gbps), USB 3.2 Gen 2x2 (20 Gbps), USB 4 (20 or 40 Gbps), and Thunderbolt 3 / 4 / 5 (40-80 Gbps). Thunderbolt is a premium Intel-designed standard that includes USB 4 speeds plus extras: driving external monitors, connecting external GPUs, and daisy-chaining multiple devices off one port.
 
@@ -392,7 +392,7 @@ Display size is about portability vs. screen real estate: 13-14 inches is the sw
       },
       {
         title: `Set RAM as your priority spec`,
-        content: `16GB RAM is the 2026 sweet spot — enough for 20+ browser tabs, Zoom, Office, and music all at once. 8GB is the floor but feels cramped within a year. 32GB is only needed for heavy creative or developer work. On Windows, RAM is sometimes upgradable later; on MacBooks, it is NOT upgradable — pick carefully at purchase.`,
+        content: `16GB RAM is the 2026 sweet spot — enough for 20+ browser tabs, Zoom, Office, and music all at once. 8GB is the floor but feels cramped within a year. 32GB is only needed for heavy creative or developer work. On Windows, RAM is sometimes upgradable later. On MacBooks, it is NOT upgradable — pick carefully at purchase.`,
       },
       {
         title: `Pick storage based on your files`,
@@ -634,7 +634,7 @@ Only after the security basics are handled should you sign in to cloud services 
     difficulty: `Beginner`,
     body: `When you buy a new computer, the most common question is: how do I get my files over? There are four main options, and the right choice depends on how much data you have and whether the two computers can be side-by-side. The four options are: external hard drive, cloud storage sync, direct cable or network transfer, and built-in migration tools (Windows Backup for Windows, Migration Assistant for Mac).
 
-External hard drive is the most universal method: plug an external drive into your old computer, copy your Documents, Desktop, Downloads, Pictures, Videos, and any special folders to it. Unplug, plug into new computer, copy over. Works across any operating systems. Takes longer for large libraries (~1 hour per 500GB), but totally reliable. Cloud storage (OneDrive, Google Drive, iCloud Drive, Dropbox) is slickest if your files are not too large — everything syncs automatically to the new machine once you sign in. Slow on poor internet; limited on free tiers.
+External hard drive is the most universal method: plug an external drive into your old computer, copy your Documents, Desktop, Downloads, Pictures, Videos, and any special folders to it. Unplug, plug into new computer, copy over. Works across any operating systems. Takes longer for large libraries (~1 hour per 500GB), but totally reliable. Cloud storage (OneDrive, Google Drive, iCloud Drive, Dropbox) is slickest if your files are not too large — everything syncs automatically to the new machine once you sign in. Slow on poor internet. Limited on free tiers.
 
 Direct transfer via cable or network is the fastest when both computers are same-brand. Mac-to-Mac uses Migration Assistant over Wi-Fi or a Thunderbolt cable, transferring everything including apps and settings in about 30-60 minutes. Windows-to-Windows uses Windows Backup with a Microsoft account. Even more impressively, Mac Migration Assistant can migrate from a Windows PC too (transferring files, contacts, email). One big rule: do NOT copy system files, program files, or Windows/System folders — these are specific to the old machine and will not work on the new one. Only move your personal files and settings, then reinstall apps fresh.`,
     steps: [
@@ -786,7 +786,7 @@ Specific situations to watch for: if a contact who used to have an iPhone recent
     steps: [
       {
         title: `Figure out which type of message is failing`,
-        content: `On iPhone: blue bubbles = iMessage (needs internet); green bubbles = SMS (needs cellular). On Android: bubbles with lock icons or rich features = RCS (needs internet); plain bubbles = SMS. Look at which kind of message is stuck. This tells you whether to check internet or cell signal.`,
+        content: `On iPhone: blue bubbles = iMessage (needs internet). Green bubbles = SMS (needs cellular). On Android: bubbles with lock icons or rich features = RCS (needs internet). Plain bubbles = SMS. Look at which kind of message is stuck. This tells you whether to check internet or cell signal.`,
       },
       {
         title: `Check cellular signal and data`,

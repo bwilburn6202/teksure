@@ -7,8 +7,7 @@ export const guidesBatch158: Guide[] = [
   {
     slug: 'how-to-scan-documents-with-your-phone-2026',
     title: 'How to Scan Documents with Your Phone (No Scanner Required)',
-    excerpt:
-      'Turn your phone into a document scanner using free built-in tools on iPhone and Android. Save clean PDFs to email, text, or store in the cloud.',
+    excerpt: 'Turn your phone into a document scanner using free built-in tools on iPhone and Android. Save clean PDFs to email, text, or store in the cloud.',
     category: 'how-to',
     tags: [
       'document scanning',
@@ -41,10 +40,10 @@ A physical scanner that connects to a computer costs $80 to $200 and takes time 
 
 **Before you scan: set up for a good result**
 
-- Lay the document flat on a solid-color surface. A dark table works best when the document is white paper; a light table works well for darker documents.
+- Lay the document flat on a solid-color surface. A dark table works best when the document is white paper. A light table works well for darker documents.
 - Make sure the room is well lit. Natural light from a window is excellent. Avoid scanning under a single overhead light that creates a hot-spot glare.
 - Smooth out any folds or creases before scanning — creases can create shadows that make text hard to read.
-- Keep the document fully within the camera frame; do not let any edge go off screen.
+- Keep the document fully within the camera frame. Do not let any edge go off screen.
 
 ---
 
@@ -153,38 +152,31 @@ If you have an iPhone and want the fastest option, use the Notes app — no extr
     steps: [
       {
         title: 'Set up good lighting and a flat surface',
-        content:
-          'Lay the document flat on a solid-color table. Use natural light from a window or turn on a ceiling light. Smooth out any folds in the paper. Poor lighting is the most common reason scans come out blurry or hard to read.',
+        content: 'Lay the document flat on a solid-color table. Use natural light from a window or turn on a ceiling light. Smooth out any folds in the paper. Poor lighting is the most common reason scans come out blurry or hard to read.',
         tip: 'A dark-colored table works best for white paper — it helps the phone see where the document edges are.',
       },
       {
         title: 'Open the scanner on your phone',
-        content:
-          'iPhone: Open the Notes app, start a new note, tap the camera icon above the keyboard, and choose "Scan Documents." Android: Open Google Drive, tap the + button, then tap "Scan." Both options are free and already on your phone.',
+        content: 'iPhone: Open the Notes app, start a new note, tap the camera icon above the keyboard, and choose "Scan Documents." Android: Open Google Drive, tap the + button, then tap "Scan." Both options are free and already on your phone.',
       },
       {
         title: 'Capture the document',
-        content:
-          'Hold your phone directly above the document. The camera will show a colored rectangle around the paper as it detects the edges. The phone may scan automatically, or you can tap the shutter button yourself. For a multi-page document, scan one page at a time.',
+        content: 'Hold your phone directly above the document. The camera will show a colored rectangle around the paper as it detects the edges. The phone may scan automatically, or you can tap the shutter button yourself. For a multi-page document, scan one page at a time.',
         tip: 'Rest your elbows on the table while holding the phone to keep it steady — this prevents blurry scans.',
       },
       {
         title: 'Adjust the edges and keep the scan',
-        content:
-          'After each capture, review the colored outline around the document. If a corner is cut off or crooked, drag it to the correct position. When the outline matches all four edges of the paper, tap "Keep Scan" (iPhone) or the checkmark (Android/Adobe Scan).',
+        content: 'After each capture, review the colored outline around the document. If a corner is cut off or crooked, drag it to the correct position. When the outline matches all four edges of the paper, tap "Keep Scan" (iPhone) or the checkmark (Android/Adobe Scan).',
       },
       {
         title: 'Save and share the finished PDF',
-        content:
-          'Tap Save to store the scan as a PDF. Then use the share button (a box with an arrow on iPhone, or the three-dot menu on Android) to send it by email, text it to someone, or upload it to iCloud Drive or Google Drive for safekeeping.',
+        content: 'Tap Save to store the scan as a PDF. Then use the share button (a box with an arrow on iPhone, or the three-dot menu on Android) to send it by email, text it to someone, or upload it to iCloud Drive or Google Drive for safekeeping.',
         tip: 'Name the file something descriptive before saving — for example "Medicare Card May 2026" — so you can find it later.',
       },
       {
         title: 'Verify the scan looks correct before sending',
-        content:
-          'Open the saved PDF and zoom in to check that all text is readable and no edges are cut off. If the scan looks dark or blurry, delete it and try again with better lighting or a steadier hand. It is quicker to re-scan now than to resend later.',
-        warning:
-          'Before emailing a scanned document that contains your Social Security number, Medicare number, or financial account number, double-check that you are sending it to the correct email address.',
+        content: 'Open the saved PDF and zoom in to check that all text is readable and no edges are cut off. If the scan looks dark or blurry, delete it and try again with better lighting or a steadier hand. It is quicker to re-scan now than to resend later.',
+        warning: 'Before emailing a scanned document that contains your Social Security number, Medicare number, or financial account number, double-check that you are sending it to the correct email address.',
       },
     ],
   },
@@ -192,8 +184,7 @@ If you have an iPhone and want the fastest option, use the Notes app — no extr
   {
     slug: 'how-to-set-up-automatic-bill-pay-online-2026',
     title: 'How to Set Up Automatic Bill Pay So You Never Miss a Payment',
-    excerpt:
-      'Set up recurring automatic payments through your bank or directly through each company so bills are paid on time every month without manual effort.',
+    excerpt: 'Set up recurring automatic payments through your bank or directly through each company so bills are paid on time every month without manual effort.',
     category: 'online-banking',
     tags: [
       'automatic bill pay',
@@ -313,36 +304,29 @@ Both methods work well. If you prefer having everything in one place, start with
     steps: [
       {
         title: 'Gather your payment information before you start',
-        content:
-          'Find a recent paper bill or bank statement and have your bank account routing number, account number, or credit card number ready. The routing number and account number are printed at the bottom of any paper check — routing is the first 9-digit number on the left, and your account number follows.',
+        content: 'Find a recent paper bill or bank statement and have your bank account routing number, account number, or credit card number ready. The routing number and account number are printed at the bottom of any paper check — routing is the first 9-digit number on the left, and your account number follows.',
         tip: 'Take a photo of the bottom of a check and keep it on your phone so you have the numbers handy when setting up multiple payees.',
       },
       {
         title: 'Choose your method: pay through the company or through your bank',
-        content:
-          'Method 1 — Set up autopay directly on the company\'s website (they charge your account on the due date). Method 2 — Set up bill pay through your bank\'s app or website (your bank sends the payment on a date you choose). Both methods are free and safe. Use your bank\'s bill pay if you want all payments in one place.',
+        content: 'Method 1 — Set up autopay directly on the company\'s website (they charge your account on the due date). Method 2 — Set up bill pay through your bank\'s app or website (your bank sends the payment on a date you choose). Both methods are free and safe. Use your bank\'s bill pay if you want all payments in one place.',
       },
       {
         title: 'Log in and find the payment or billing settings',
-        content:
-          'For the company method: log into the company\'s website and look for "Autopay," "Automatic Payments," or "Payment Settings" under your account or billing section. For the bank method: log into your bank\'s website or app and look for a section called "Bill Pay" or "Pay Bills."',
+        content: 'For the company method: log into the company\'s website and look for "Autopay," "Automatic Payments," or "Payment Settings" under your account or billing section. For the bank method: log into your bank\'s website or app and look for a section called "Bill Pay" or "Pay Bills."',
       },
       {
         title: 'Add the payment details and set the schedule',
-        content:
-          'Enter your bank account or credit card number when prompted. Choose the payment amount (statement balance in full is recommended for credit cards). Set the payment date. For recurring monthly bills, select "Recurring" or "Automatic" so the payment repeats every month without you needing to do anything.',
-        warning:
-          'If paying by bank bill pay, schedule the payment 3–5 days before the due date. Bank bill pay takes time to process, and sending it too late can result in a late fee even though you set up automatic payment.',
+        content: 'Enter your bank account or credit card number when prompted. Choose the payment amount (statement balance in full is recommended for credit cards). Set the payment date. For recurring monthly bills, select "Recurring" or "Automatic" so the payment repeats every month without you needing to do anything.',
+        warning: 'If paying by bank bill pay, schedule the payment 3–5 days before the due date. Bank bill pay takes time to process, and sending it too late can result in a late fee even though you set up automatic payment.',
       },
       {
         title: 'Confirm and save a record of the setup',
-        content:
-          'Click "Confirm" or "Enroll." Most companies send a confirmation email — save it in a folder labeled "Bill Pay" in your email inbox. If no email arrives within a day, log back in to verify the autopay shows as "Active" or "Enrolled."',
+        content: 'Click "Confirm" or "Enroll." Most companies send a confirmation email — save it in a folder labeled "Bill Pay" in your email inbox. If no email arrives within a day, log back in to verify the autopay shows as "Active" or "Enrolled."',
       },
       {
         title: 'Check your account statement every month',
-        content:
-          'Autopay does not mean set-it-and-forget-it completely. Once a month, open your bank account and scan through the payments. Confirm the right amounts were charged on the expected dates. This habit catches billing errors and any unauthorized charges quickly.',
+        content: 'Autopay does not mean set-it-and-forget-it completely. Once a month, open your bank account and scan through the payments. Confirm the right amounts were charged on the expected dates. This habit catches billing errors and any unauthorized charges quickly.',
         tip: 'Set a monthly reminder on your phone calendar labeled "Check bank statement" — the whole review takes about five minutes.',
       },
     ],
@@ -351,8 +335,7 @@ Both methods work well. If you prefer having everything in one place, start with
   {
     slug: 'how-to-check-your-medicare-account-online-2026',
     title: 'How to Check Your Medicare Account Online at Medicare.gov',
-    excerpt:
-      'Create a free Medicare.gov account to view your coverage, check recent claims, track your deductible, and download your Medicare Summary Notice from home.',
+    excerpt: 'Create a free Medicare.gov account to view your coverage, check recent claims, track your deductible, and download your Medicare Summary Notice from home.',
     category: 'government-civic',
     tags: [
       'Medicare',
@@ -490,37 +473,30 @@ Medicare will never call you to ask for your Medicare number, Social Security nu
     steps: [
       {
         title: 'Gather your Medicare card and personal information',
-        content:
-          'Find your red, white, and blue Medicare card. You will need the Medicare number printed on it (an 11-character combination of letters and numbers). Also have your Social Security number, date of birth, and home address ready. You will use these to verify your identity when creating the account.',
+        content: 'Find your red, white, and blue Medicare card. You will need the Medicare number printed on it (an 11-character combination of letters and numbers). Also have your Social Security number, date of birth, and home address ready. You will use these to verify your identity when creating the account.',
         tip: 'If you cannot find your Medicare card, call 1-800-MEDICARE (1-800-633-4227) to request a replacement before creating your online account.',
       },
       {
         title: 'Go to Medicare.gov and start account creation',
-        content:
-          'Open your web browser and type medicare.gov in the address bar. Confirm the address starts with https:// and shows a padlock icon — this confirms you are on the official government site. Click "Log in to Medicare" at the top of the page, then click "Create an account."',
-        warning:
-          'Never click a link in an email or text message claiming to be from Medicare to create your account. Always type medicare.gov directly into your browser yourself.',
+        content: 'Open your web browser and type medicare.gov in the address bar. Confirm the address starts with https:// and shows a padlock icon — this confirms you are on the official government site. Click "Log in to Medicare" at the top of the page, then click "Create an account."',
+        warning: 'Never click a link in an email or text message claiming to be from Medicare to create your account. Always type medicare.gov directly into your browser yourself.',
       },
       {
         title: 'Set up your Login.gov credentials and two-step verification',
-        content:
-          'You will be directed to Login.gov — the federal government\'s secure login system. Enter your email address, create a strong password (at least 12 characters), and confirm your email with the code sent to your inbox. Then set up two-step authentication, which sends you a code by text or phone call each time you log in. This keeps your account secure.',
+        content: 'You will be directed to Login.gov — the federal government\'s secure login system. Enter your email address, create a strong password (at least 12 characters), and confirm your email with the code sent to your inbox. Then set up two-step authentication, which sends you a code by text or phone call each time you log in. This keeps your account secure.',
       },
       {
         title: 'Verify your identity with your Medicare information',
-        content:
-          'After logging in for the first time, Medicare.gov will ask you to verify your identity. Enter your Medicare number (from your card), Social Security number, date of birth, and address. This is a one-time step that connects your Login.gov account to your Medicare records.',
+        content: 'After logging in for the first time, Medicare.gov will ask you to verify your identity. Enter your Medicare number (from your card), Social Security number, date of birth, and address. This is a one-time step that connects your Login.gov account to your Medicare records.',
       },
       {
         title: 'Review your coverage details and recent claims',
-        content:
-          'From your account dashboard, click "My Coverage" to see your current Medicare plan details. Then click "Claims" to see all medical claims from the past 36 months. For each claim, review the provider name, service date, amount billed, and what Medicare paid. Look for anything you do not recognize.',
+        content: 'From your account dashboard, click "My Coverage" to see your current Medicare plan details. Then click "Claims" to see all medical claims from the past 36 months. For each claim, review the provider name, service date, amount billed, and what Medicare paid. Look for anything you do not recognize.',
         tip: 'Set a reminder to review your claims section every three months — the same schedule as the paper Medicare Summary Notice.',
       },
       {
         title: 'Download your Medicare Summary Notice and report any problems',
-        content:
-          'In your account, find the Medicare Summary Notice (MSN) section to download a PDF copy of your official benefits statement. If you spot a claim for a service you never received, click "Report fraud" inside your account, or call 1-800-HHS-TIPS. Reporting Medicare fraud is free and helps protect other people on Medicare too.',
+        content: 'In your account, find the Medicare Summary Notice (MSN) section to download a PDF copy of your official benefits statement. If you spot a claim for a service you never received, click "Report fraud" inside your account, or call 1-800-HHS-TIPS. Reporting Medicare fraud is free and helps protect other people on Medicare too.',
       },
     ],
   },
@@ -528,8 +504,7 @@ Medicare will never call you to ask for your Medicare number, Social Security nu
   {
     slug: 'how-to-use-instacart-for-grocery-delivery-2026',
     title: 'How to Order Groceries Delivered to Your Door with Instacart',
-    excerpt:
-      'Use Instacart to have groceries from Kroger, Costco, Publix, Aldi, and hundreds of other stores delivered the same day. A step-by-step guide for first-time users.',
+    excerpt: 'Use Instacart to have groceries from Kroger, Costco, Publix, Aldi, and hundreds of other stores delivered the same day. A step-by-step guide for first-time users.',
     category: 'app-guides',
     tags: [
       'Instacart',
@@ -658,7 +633,7 @@ Instacart shows digital coupons from the store inside the app. Before checking o
 
 **Compare prices before ordering large amounts**
 
-For staple items you buy in bulk (rice, paper towels, olive oil), it is worth checking whether Instacart's price matches the in-store price. Some stores charge the same price; others have a small markup. If you see a big difference on a large purchase, it may make sense to buy that item in person.
+For staple items you buy in bulk (rice, paper towels, olive oil), it is worth checking whether Instacart's price matches the in-store price. Some stores charge the same price. Others have a small markup. If you see a big difference on a large purchase, it may make sense to buy that item in person.
 
 **Schedule your delivery instead of ordering right away**
 
@@ -674,37 +649,30 @@ You can also rate your shopper after delivery. A rating helps good shoppers cont
     steps: [
       {
         title: 'Download the Instacart app and create your account',
-        content:
-          'Search for "Instacart" in the App Store (iPhone) or Google Play Store (Android) and download the free app. You can also use instacart.com on a computer. Open the app, tap "Sign up," and create a free account using your email address. Confirm your email by clicking the link Instacart sends you.',
+        content: 'Search for "Instacart" in the App Store (iPhone) or Google Play Store (Android) and download the free app. You can also use instacart.com on a computer. Open the app, tap "Sign up," and create a free account using your email address. Confirm your email by clicking the link Instacart sends you.',
       },
       {
         title: 'Enter your delivery address and choose a store',
-        content:
-          'When prompted, type your full home address. Instacart will show you all grocery stores that deliver to your location. Tap the store you normally shop at — you will recognize names like Kroger, Publix, Aldi, Costco, or Safeway. The store\'s departments will appear just like walking through a real grocery store.',
+        content: 'When prompted, type your full home address. Instacart will show you all grocery stores that deliver to your location. Tap the store you normally shop at — you will recognize names like Kroger, Publix, Aldi, Costco, or Safeway. The store\'s departments will appear just like walking through a real grocery store.',
         tip: 'If you do not see your regular grocery store listed, check the full list by scrolling down — some stores appear lower on the list based on distance or availability.',
       },
       {
         title: 'Search for items and add them to your cart',
-        content:
-          'Use the search bar at the top of the screen to find specific products, or browse by department (Produce, Dairy, Bakery, etc.). Tap any item to see details, then tap "Add to cart." Adjust the quantity with the + and – buttons. Your running total appears at the bottom of the screen at all times.',
+        content: 'Use the search bar at the top of the screen to find specific products, or browse by department (Produce, Dairy, Bakery, etc.). Tap any item to see details, then tap "Add to cart." Adjust the quantity with the + and – buttons. Your running total appears at the bottom of the screen at all times.',
         tip: 'If you shop at the same store weekly, Instacart remembers your past orders under "Buy Again" — tap that section to quickly re-add your usual items instead of searching from scratch.',
       },
       {
         title: 'Set your item replacement preferences',
-        content:
-          'For each item in your cart, decide what you want the shopper to do if the item is out of stock. Choosing "Replace with best match" lets the shopper pick something similar — this is the most convenient option for most items. For specialty items where only that specific brand or size works for you, choose "Pick specific replacement" and select your backup choice.',
+        content: 'For each item in your cart, decide what you want the shopper to do if the item is out of stock. Choosing "Replace with best match" lets the shopper pick something similar — this is the most convenient option for most items. For specialty items where only that specific brand or size works for you, choose "Pick specific replacement" and select your backup choice.',
       },
       {
         title: 'Go to checkout and choose your delivery window',
-        content:
-          'Tap "Go to checkout." Confirm your delivery address is correct. Choose a delivery time — "As soon as possible" usually means 1–2 hours, or you can schedule a window later in the day or tomorrow. Scheduled windows sometimes cost less. Enter your payment card information.',
-        warning:
-          'Check that your delivery address shows your actual home address, not a saved address from a previous session. Groceries delivered to the wrong address can be difficult to recover.',
+        content: 'Tap "Go to checkout." Confirm your delivery address is correct. Choose a delivery time — "As soon as possible" usually means 1–2 hours, or you can schedule a window later in the day or tomorrow. Scheduled windows sometimes cost less. Enter your payment card information.',
+        warning: 'Check that your delivery address shows your actual home address, not a saved address from a previous session. Groceries delivered to the wrong address can be difficult to recover.',
       },
       {
         title: 'Review the full cost, adjust your tip, and place the order',
-        content:
-          'Before tapping "Place order," review the breakdown: item total, delivery fee, service fee, and tip. You can increase or decrease the tip — your shopper will see the amount after delivery. Tap "Place order" to confirm. You will receive a confirmation and can track your shopper live in the app.',
+        content: 'Before tapping "Place order," review the breakdown: item total, delivery fee, service fee, and tip. You can increase or decrease the tip — your shopper will see the amount after delivery. Tap "Place order" to confirm. You will receive a confirmation and can track your shopper live in the app.',
         tip: 'After your first order, check whether Instacart+ membership would save you money. If you order groceries more than twice a month, the $9.99/month membership typically covers the delivery fees it waives.',
       },
     ],

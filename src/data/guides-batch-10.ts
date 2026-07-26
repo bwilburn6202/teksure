@@ -632,7 +632,7 @@ Membership costs about $16 a year and often pays for itself with a few restauran
 
 Unlike general finance apps, Silvur focuses on retirement-specific questions like "Should I claim Social Security at 62 or wait until 67?"`,
     steps: [
-      { title: 'Download Silvur', content: 'Install the Silvur app from the App Store or Play Store. Create an account with your email and a password. Basic features are free; premium tools cost about $10/month.' },
+      { title: 'Download Silvur', content: 'Install the Silvur app from the App Store or Play Store. Create an account with your email and a password. Basic features are free. Premium tools cost about $10/month.' },
       { title: 'Enter your retirement age goal', content: 'Silvur will ask when you plan to retire and what your expected monthly expenses are. It is fine to estimate — you can adjust this later.' },
       { title: 'Link your accounts', content: 'Silvur uses Plaid (a secure bank-connection service) to pull balances from your 401(k), IRA, and bank accounts. This is read-only — Silvur cannot move or withdraw money.' },
       { title: 'Run the Retirement Score', content: 'Tap "Retirement Score" to see a single number from 0 to 100 showing how ready you are. Below that, Silvur shows a year-by-year projection of income and spending.' },
@@ -785,7 +785,7 @@ Basic searching is free, but the detailed records and DNA matching require a sub
       { title: 'Start a free tree', content: 'Go to ancestry.com and click "Start your free tree." Enter your name, parents, and anything you know about your grandparents. You do not need to pay to start the tree.' },
       { title: 'Add what you know', content: 'Fill in names, birth years, marriage years, and locations for every family member you can remember. The more details you give, the better Ancestry can match historical records.' },
       { title: 'Watch for the green leaves', content: `Ancestry marks each person in your tree with a small green leaf when it finds matching records — a census, birth certificate, or someone else's tree. Click the leaf to review and add the record if it is truly the same person.` },
-      { title: 'Start a subscription if you want more', content: 'A paid subscription unlocks the historical records themselves. Use the 14-day free trial to do a burst of research, then cancel if you are done. US Discovery plans cover American records only; World Explorer covers everywhere.' },
+      { title: 'Start a subscription if you want more', content: 'A paid subscription unlocks the historical records themselves. Use the 14-day free trial to do a burst of research, then cancel if you are done. US Discovery plans cover American records only. World Explorer covers everywhere.' },
       { title: 'Take a DNA test (optional)', content: 'For about $99, Ancestry will mail you a saliva kit. You spit in the tube, mail it back, and 4 to 6 weeks later see your ethnicity estimate and any DNA cousin matches who are also on Ancestry.' },
     ],
   },

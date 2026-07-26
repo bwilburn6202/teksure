@@ -72,7 +72,7 @@ You do not need a paid app. Apps like RoboKiller and Hiya have free tiers, but t
     steps: [
       {
         title: 'On iPhone: turn on Silence Unknown Callers',
-        content: 'On your iPhone, open Settings → Phone → Silence Unknown Callers. Turn the switch on (green). Now any caller whose number is not in your contacts, recent outgoing calls, or Siri suggestions goes straight to voicemail. Real callers can still leave a message; spam callers usually do not.',
+        content: 'On your iPhone, open Settings → Phone → Silence Unknown Callers. Turn the switch on (green). Now any caller whose number is not in your contacts, recent outgoing calls, or Siri suggestions goes straight to voicemail. Real callers can still leave a message. Spam callers usually do not.',
         tip: 'Quick Tip: This may also silence legitimate calls from doctors, pharmacies, or delivery drivers. Either add their numbers to your contacts in advance, or check your voicemail regularly for any messages.',
       },
       {

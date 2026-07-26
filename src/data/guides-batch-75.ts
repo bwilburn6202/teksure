@@ -382,7 +382,7 @@ Kanopy is funded by public libraries, which pay a small fee each time a patron w
 
 To use Kanopy, all you need is a library card from a participating library. Most public libraries in the United States participate — over 4,000 library systems are part of the Kanopy network. If your library doesn't participate yet, you can often request that they join through your library's website or by speaking with a librarian.
 
-Each library sets a limit on how many films you can watch per month — typically around eight to ten "plays." Watching a short film uses one play; a full-length documentary or movie also uses one play. The counter resets each month, giving you a fresh allowance every month.
+Each library sets a limit on how many films you can watch per month — typically around eight to ten "plays." Watching a short film uses one play. A full-length documentary or movie also uses one play. The counter resets each month, giving you a fresh allowance every month.
 
 Kanopy also includes a separate section called "Kanopy Kids" with hundreds of children's films and educational series that do not count against your monthly play limit. Families with children get even more value from the service.
 

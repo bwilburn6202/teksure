@@ -217,7 +217,7 @@ Most listings on Booking.com allow you to pay at the property rather than at the
       },
       {
         title: `Create an account and complete your booking`,
-        content: `Click "Reserve" or "Book Now" on the room you have chosen. You will be prompted to create a free Booking.com account or sign in. Enter your name, email, and payment details. Some bookings require payment now; others let you pay at check-in. Read the payment terms shown before submitting.`,
+        content: `Click "Reserve" or "Book Now" on the room you have chosen. You will be prompted to create a free Booking.com account or sign in. Enter your name, email, and payment details. Some bookings require payment now. Others let you pay at check-in. Read the payment terms shown before submitting.`,
       },
       {
         title: `Manage your booking`,

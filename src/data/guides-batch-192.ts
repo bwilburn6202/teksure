@@ -74,7 +74,7 @@ export const guidesBatch192: Guide[] = [
       },
       {
         title: "Pick three to five causes you care about",
-        content: "VolunteerMatch shows a list of cause areas. Click the ones that matter most to you — common picks for retirees are Seniors, Veterans, Animals, Education, and Hunger. You do not have to pick everything; three to five gives the site enough to suggest good matches without overwhelming your inbox.",
+        content: "VolunteerMatch shows a list of cause areas. Click the ones that matter most to you — common picks for retirees are Seniors, Veterans, Animals, Education, and Hunger. You do not have to pick everything. Three to five gives the site enough to suggest good matches without overwhelming your inbox.",
       },
       {
         title: "Check off your skills",
@@ -155,7 +155,7 @@ export const guidesBatch192: Guide[] = [
     steps: [
       {
         title: "Find your local AmeriCorps Seniors sponsor",
-        content: "Go to americorps.gov/serve/americorps-seniors. Click the link labeled \"Find Local Programs.\" Type your zip code into the search box. The site shows the closest Foster Grandparent, Senior Companion, and RSVP sponsors with phone numbers and addresses. Most counties have at least one of the three; large metro areas have all three.",
+        content: "Go to americorps.gov/serve/americorps-seniors. Click the link labeled \"Find Local Programs.\" Type your zip code into the search box. The site shows the closest Foster Grandparent, Senior Companion, and RSVP sponsors with phone numbers and addresses. Most counties have at least one of the three. Large metro areas have all three.",
         tip: "If nothing shows up within 25 miles, try your state's Department of Aging website. Some smaller programs are not on the federal map.",
       },
       {

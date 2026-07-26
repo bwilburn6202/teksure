@@ -146,7 +146,7 @@ You can't make all ads disappear, but you can a lot reduce how much tracking hap
 
 There are four main places to adjust: your iPhone or Android's advertising settings, your Google account, your Facebook account, and your web browser. Each of these controls a different slice of the tracking ecosystem.
 
-One important thing to understand: opting out of targeted ads doesn't mean you'll see zero ads. You'll still see ads — they just won't be personalized based on your behavior. Some people find the generic ads less useful; others prefer the privacy. Either way, less tracking means less data about you floating around.`,
+One important thing to understand: opting out of targeted ads doesn't mean you'll see zero ads. You'll still see ads — they just won't be personalized based on your behavior. Some people find the generic ads less useful. Others prefer the privacy. Either way, less tracking means less data about you floating around.`,
     steps: [
       {
         title: `Turn off ad tracking on iPhone`,
@@ -238,7 +238,7 @@ Android support varies by manufacturer. Google Pixel phones receive 5–7 years 
       },
       {
         title: `Check whether your device is still supported`,
-        content: `For Windows: Microsoft's Windows lifecycle page lists exact end-of-support dates. Windows 11 is currently supported; Windows 10 reached end of support October 14, 2025. For iPhone: Apple lists the oldest supported iOS version at apple.com/ios/feature-availability — if your iPhone can't run the current iOS, it's no longer receiving security updates. For Android: search your phone model name plus "software update end date."`,
+        content: `For Windows: Microsoft's Windows lifecycle page lists exact end-of-support dates. Windows 11 is currently supported. Windows 10 reached end of support October 14, 2025. For iPhone: Apple lists the oldest supported iOS version at apple.com/ios/feature-availability — if your iPhone can't run the current iOS, it's no longer receiving security updates. For Android: search your phone model name plus "software update end date."`,
       },
       {
         title: `If still supported — install updates immediately`,
@@ -490,7 +490,7 @@ Third, other people nearby can see your hotspot name (called the SSID) — but t
       },
       {
         title: `Turn on the hotspot on iPhone`,
-        content: `Go to Settings > Personal Hotspot. Toggle "Allow Others to Join" to green (on). You'll see a Wi-Fi Password below — this is what you'll enter on other devices to connect. The default password is automatically generated; you can tap it to change it to something easier to type. Your iPhone's hotspot name is your iPhone's name (shown at the top of the Settings app).`,
+        content: `Go to Settings > Personal Hotspot. Toggle "Allow Others to Join" to green (on). You'll see a Wi-Fi Password below — this is what you'll enter on other devices to connect. The default password is automatically generated. You can tap it to change it to something easier to type. Your iPhone's hotspot name is your iPhone's name (shown at the top of the Settings app).`,
       },
       {
         title: `Turn on the hotspot on Android`,
@@ -695,7 +695,7 @@ Run these two scans back-to-back on a regular schedule — perhaps once a month 
       },
       {
         title: `Review what Defender found`,
-        content: `When the scan completes, Windows Security shows results. If "No current threats" appears, your computer is clean according to Defender. If threats are listed, click "Start actions" — Defender will automatically quarantine or remove what it found. Quarantine means the file is isolated so it can't do damage; you can review quarantined items under "Protection history" and remove them permanently.`,
+        content: `When the scan completes, Windows Security shows results. If "No current threats" appears, your computer is clean according to Defender. If threats are listed, click "Start actions" — Defender will automatically quarantine or remove what it found. Quarantine means the file is isolated so it can't do damage. You can review quarantined items under "Protection history" and remove them permanently.`,
       },
       {
         title: `Download Malwarebytes Free for a second scan`,

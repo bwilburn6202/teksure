@@ -231,7 +231,7 @@ Important disclaimer: This guide is for informational purposes only. Telehealth 
       },
       {
         title: `Enter your medical history`,
-        content: `The app will ask you to fill out a brief medical history — current medications, allergies, and any chronic conditions. Take five minutes to fill this in accurately. The doctor will review this before your visit and it helps them provide better care. You only need to enter this once; it is saved for future visits.`,
+        content: `The app will ask you to fill out a brief medical history — current medications, allergies, and any chronic conditions. Take five minutes to fill this in accurately. The doctor will review this before your visit and it helps them provide better care. You only need to enter this once. It is saved for future visits.`,
         tip: `Have your current medication bottles nearby so you can enter the names and dosages correctly.`,
       },
       {

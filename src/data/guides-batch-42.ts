@@ -570,7 +570,7 @@ A CGM is a small sensor worn on the skin (usually the arm or abdomen) that measu
 
 **Dexcom G6 and G7**: The Dexcom app shows your current glucose level, a direction arrow showing whether it is rising or falling, and a graph of the last 3 hours. You can set high and low alerts that vibrate or sound an alarm on your phone. The Dexcom app also allows optional "sharing" — your readings can appear in real time on a caregiver's, parent's, or family member's phone.
 
-**Abbott FreeStyle Libre 2 and Libre 3**: The LibreLink app (also called LibreLinkUp) shows readings and alarms similarly. Libre 3 transmits every minute continuously like Dexcom; Libre 2 transmits automatically when it detects you are close to a phone.
+**Abbott FreeStyle Libre 2 and Libre 3**: The LibreLink app (also called LibreLinkUp) shows readings and alarms similarly. Libre 3 transmits every minute continuously like Dexcom. Libre 2 transmits automatically when it detects you are close to a phone.
 
 Having readings on your phone means you see your glucose without reaching for a separate receiver device. You can also share your data with your doctor via each company's cloud platform (Dexcom Clarity, LibreView).`,
     steps: [
@@ -663,7 +663,7 @@ Under federal law (the Fair Credit Reporting Act), you are entitled to one free 
 
 The only authorized free credit report website is **AnnualCreditReport.com** — this is the official site mandated by federal law. Other sites advertising "free credit reports" may require you to sign up for paid services.
 
-**Your credit report is NOT your credit score.** The report shows your history; the score (a number like 720) is calculated from that history. Free scores are available through many bank apps and credit card websites.
+**Your credit report is NOT your credit score.** The report shows your history. The score (a number like 720) is calculated from that history. Free scores are available through many bank apps and credit card websites.
 
 Checking your own credit report does NOT affect your credit score. This is called a "soft pull."
 
@@ -998,7 +998,7 @@ Google Maps transit directions work offline if you have downloaded the area map 
       {
         title: `Follow the step-by-step directions`,
         content: `Tap "Start" on your chosen route. Google Maps guides you through each step: walk to the stop, wait for the bus/train (with the exact route number and direction), board, ride a specified number of stops, exit at the right stop, transfer if needed, then walk to your final destination. The app alerts you as you approach your stop.`,
-        warning: `Keep an eye on the notifications — Google Maps will alert you when it is almost time to get off. Do not rely solely on counting stops; delays can shift the sequence.`,
+        warning: `Keep an eye on the notifications — Google Maps will alert you when it is almost time to get off. Do not rely solely on counting stops. Delays can shift the sequence.`,
       },
       {
         title: `Check real-time departures at a stop`,

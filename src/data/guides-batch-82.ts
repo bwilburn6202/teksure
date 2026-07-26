@@ -471,7 +471,7 @@ For anyone with a closet full of clothes they no longer wear, Poshmark is a stra
       },
       {
         title: `List an Item for Sale`,
-        content: `Tap the camera icon at the bottom of the screen and take at least four to six photos of the item — front, back, close-up of any labels, and any areas with wear or imperfections. Write an honest description that includes the brand, size, color, and condition. Disclose any flaws clearly; undisclosed flaws are the main reason buyers open disputes. Set a price that leaves room for offers — buyers often send "offers" below your asking price.`,
+        content: `Tap the camera icon at the bottom of the screen and take at least four to six photos of the item — front, back, close-up of any labels, and any areas with wear or imperfections. Write an honest description that includes the brand, size, color, and condition. Disclose any flaws clearly. Undisclosed flaws are the main reason buyers open disputes. Set a price that leaves room for offers — buyers often send "offers" below your asking price.`,
         tip: `Quick Tip: Natural daylight produces the clearest photos. Lay items flat on a clean white or neutral-colored surface, or hang them on a plain wall, for the most professional-looking listings.`,
       },
       {
@@ -575,7 +575,7 @@ The platform has protections for both buyers and sellers. Buyers can rate a tran
       },
       {
         title: `Get Paid After the Buyer Confirms`,
-        content: `After the buyer receives the item and rates the transaction, your earnings appear in your Mercari balance. If the buyer does not rate within three days of confirmed delivery, Mercari automatically releases your funds. Transfer the balance to your bank account from the "Balance" section of your profile. Standard transfers are free (two to three business days); Instant Pay transfers cost $2 and arrive within minutes.`,
+        content: `After the buyer receives the item and rates the transaction, your earnings appear in your Mercari balance. If the buyer does not rate within three days of confirmed delivery, Mercari automatically releases your funds. Transfer the balance to your bank account from the "Balance" section of your profile. Standard transfers are free (two to three business days). Instant Pay transfers cost $2 and arrive within minutes.`,
         tip: `Quick Tip: Respond quickly to any questions buyers send before a sale closes — prompt, friendly responses increase the chance someone follows through on a purchase.`,
       },
     ],
@@ -743,7 +743,7 @@ One practical consideration: Rent the Runway includes backup size options with m
       },
       {
         title: `Select Your Rental Dates and Size`,
-        content: `For a one-time rental, click on an item you like and select your rental period — typically four or eight days. Choose your size from the dropdown, and if available, add a backup size to your order at no extra cost. The backup size ships with your primary item so you have options when it arrives. Your rental fee covers the full period; you do not pay extra per day.`,
+        content: `For a one-time rental, click on an item you like and select your rental period — typically four or eight days. Choose your size from the dropdown, and if available, add a backup size to your order at no extra cost. The backup size ships with your primary item so you have options when it arrives. Your rental fee covers the full period. You do not pay extra per day.`,
         tip: `Quick Tip: Order your rental to arrive at least two days before your event. This gives you time to try it on and contact customer service if there is any issue with fit or condition before your event day.`,
       },
       {

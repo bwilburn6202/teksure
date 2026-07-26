@@ -141,7 +141,7 @@ Mercari is particularly popular for selling electronics, gaming items, trading c
       },
       {
         title: 'Confirm and get paid',
-        content: `Mercari holds the payment until the buyer receives the item and confirms it. Buyers have 3 days to rate the sale; if they don't, Mercari automatically releases the funds. Transfer your balance to your bank account from the "Balance" section in the app.`,
+        content: `Mercari holds the payment until the buyer receives the item and confirms it. Buyers have 3 days to rate the sale. If they don't, Mercari automatically releases the funds. Transfer your balance to your bank account from the "Balance" section in the app.`,
       },
     ],
   },
@@ -256,7 +256,7 @@ With Hue lights, you can turn lights on or off from anywhere, set schedules so l
 
 Smart lighting is especially useful for home security (lights that turn on when you're away make it look like someone is home), for people with mobility challenges (turn off downstairs lights from bed), and for setting the right mood for reading, watching TV, or relaxing.
 
-Hue bulbs come in several types: White (dim and brighten), White Ambiance (adjust from warm yellow to cool daylight white), and White and Color Ambiance (full color control). White bulbs start around $15 each; color bulbs are $40-$50 each.
+Hue bulbs come in several types: White (dim and brighten), White Ambiance (adjust from warm yellow to cool daylight white), and White and Color Ambiance (full color control). White bulbs start around $15 each. Color bulbs are $40-$50 each.
 
 To get started, you need a Hue Starter Kit, which includes a Bridge (the hub) and two or three bulbs. The Bridge plugs into your router with an included cable. After the initial setup, you can add more individual bulbs purchased separately.
 
@@ -325,7 +325,7 @@ The app also has an "Angi Services" feature where you can book pre-priced jobs l
       {
         title: 'Request a quote',
         content: `Tap "Request a Quote" on a pro's profile. Describe your project in as much detail as possible — include the size of the job, what materials might be needed, and any urgency. Request quotes from 2-3 different pros to compare prices.`,
-        warning: `Never pay the full project cost upfront. A standard deposit of 25-33% is normal; the rest should be paid when the work is complete and you're satisfied.`,
+        warning: `Never pay the full project cost upfront. A standard deposit of 25-33% is normal. The rest should be paid when the work is complete and you're satisfied.`,
       },
       {
         title: 'Book and confirm',
@@ -724,7 +724,7 @@ Designs you create in Canva are saved to your account automatically, so you can 
       },
       {
         title: 'Choose a template',
-        content: 'Browse the results and click on any template you like. Tap "Customize this template" to open it in the editor. Free templates are marked without any crown icon; templates with a gold crown icon require Canva Pro.',
+        content: 'Browse the results and click on any template you like. Tap "Customize this template" to open it in the editor. Free templates are marked without any crown icon. Templates with a gold crown icon require Canva Pro.',
       },
       {
         title: 'Edit the text',
@@ -826,7 +826,7 @@ Deleting accounts takes some time, but it's one of the most effective privacy ac
       },
       {
         title: 'Handle difficult cases',
-        content: `If a service doesn't have a self-service deletion option, email their privacy or support team and explicitly request account deletion under your data privacy rights. In the US, California residents have rights under CCPA; if you're in Europe, GDPR applies. Many companies will comply when you formally request it.`,
+        content: `If a service doesn't have a self-service deletion option, email their privacy or support team and explicitly request account deletion under your data privacy rights. In the US, California residents have rights under CCPA. If you're in Europe, GDPR applies. Many companies will comply when you formally request it.`,
       },
       {
         title: 'Clean up "Sign in with Google/Facebook"',

@@ -582,7 +582,7 @@ Setting up Honey takes about two minutes. You install the browser extension once
       },
       {
         title: `Shop as you normally do`,
-        content: `Go to any online store where you plan to make a purchase and add items to your cart as usual. Proceed to checkout. On the checkout page, look for the small Honey button or popup that appears near the coupon code box. In some stores it appears automatically; in others you click the Honey icon in your browser.`,
+        content: `Go to any online store where you plan to make a purchase and add items to your cart as usual. Proceed to checkout. On the checkout page, look for the small Honey button or popup that appears near the coupon code box. In some stores it appears automatically. In others you click the Honey icon in your browser.`,
       },
       {
         title: `Let Honey find coupon codes`,
@@ -668,7 +668,7 @@ Many services now also offer dark web monitoring as part of their security packa
       {
         title: `Check your email on Have I Been Pwned`,
         content: `On your computer or phone, open a web browser and go to haveibeenpwned.com. In the search box, type your email address and click the pwned? button (or tap the search icon). Within seconds, the site shows you whether your email address appears in any known data breaches, and which breaches specifically. A green result means no breaches found for that email. A red result with details means your email appeared in one or more breaches.`,
-        tip: `Check all email addresses you use or have used in the past — an old address from years ago may have been exposed. The site does not store your email in a way that exposes you; it uses a security technique called k-anonymity that protects your privacy while checking your data.`,
+        tip: `Check all email addresses you use or have used in the past — an old address from years ago may have been exposed. The site does not store your email in a way that exposes you. It uses a security technique called k-anonymity that protects your privacy while checking your data.`,
       },
       {
         title: `Understand what your results mean`,
@@ -846,7 +846,7 @@ Data breaches happen constantly. Websites you signed up for years ago — online
 
 The solution that security experts universally recommend is using a unique, strong password for every website and account. The challenge is that most people have dozens or even hundreds of online accounts accumulated over years. Memorizing a unique, strong password for each one is not realistic.
 
-This is exactly the problem that password managers were designed to solve. A password manager is an app that stores all your passwords in an encrypted (scrambled) database protected by a single master password that only you know. You remember one strong master password; the password manager remembers everything else. It can also generate strong random passwords for you automatically when you create new accounts.
+This is exactly the problem that password managers were designed to solve. A password manager is an app that stores all your passwords in an encrypted (scrambled) database protected by a single master password that only you know. You remember one strong master password. The password manager remembers everything else. It can also generate strong random passwords for you automatically when you create new accounts.
 
 Password managers are not a new or experimental idea. They have been used by security professionals for decades and are now mainstream consumer tools. Several excellent options are available, including some that are completely free. This guide walks you through the process of getting started with one.`,
     steps: [

@@ -262,7 +262,7 @@ The whole process takes about two minutes once your signature is saved, and the 
       },
       {
         title: `Create Your Signature`,
-        content: `Choose one of three methods: Trackpad — tap "Click Here to Begin" and draw your signature with your finger on the trackpad, then press any key when done. Camera — sign your name on a white piece of paper, hold it up to your Mac camera, and Preview will trace it. Type — click the Type tab and type your name; choose the handwriting font you prefer.`,
+        content: `Choose one of three methods: Trackpad — tap "Click Here to Begin" and draw your signature with your finger on the trackpad, then press any key when done. Camera — sign your name on a white piece of paper, hold it up to your Mac camera, and Preview will trace it. Type — click the Type tab and type your name. Choose the handwriting font you prefer.`,
         tip: `Quick Tip: The trackpad method works best if you use a slow, deliberate stroke. Preview saves your signature for future use, so you only need to do this once.`,
       },
       {

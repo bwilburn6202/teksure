@@ -53,7 +53,7 @@ Watch a walkthrough: search YouTube for "Medicare wellness scam 2026" — AARP F
       },
       {
         title: 'Report the call to the FTC and Senior Medicare Patrol',
-        content: 'Two reports help shut down the operation. (1) FTC: go to reportfraud.ftc.gov and fill out a 5-minute form describing the call. (2) Senior Medicare Patrol: call 1-877-808-2468 or visit smpresource.org/help to find your state office. Both organizations share data with law enforcement. Even one report helps; many reports about the same scammer can lead to arrests and seizures.',
+        content: 'Two reports help shut down the operation. (1) FTC: go to reportfraud.ftc.gov and fill out a 5-minute form describing the call. (2) Senior Medicare Patrol: call 1-877-808-2468 or visit smpresource.org/help to find your state office. Both organizations share data with law enforcement. Even one report helps. Many reports about the same scammer can lead to arrests and seizures.',
         tip: 'Quick Tip: After reporting, your phone may get fewer of these calls because your carrier flags the number based on FTC data.',
       },
       {
@@ -260,7 +260,7 @@ Watch a walkthrough: search YouTube for "Windows 11 Recall privacy guide 2026" �
       },
       {
         title: 'Turn Recall on (only if you want to)',
-        content: 'Open Settings → Privacy & Security → Recall & Snapshots. Toggle "Save snapshots" to On. Windows will prompt you to enable Windows Hello (fingerprint or face recognition) — this is mandatory. You cannot use Recall with a password alone. Once set up, Recall starts taking screenshots every 5 seconds when your screen is active. The first 50 GB of snapshots are kept; older ones are deleted automatically.',
+        content: 'Open Settings → Privacy & Security → Recall & Snapshots. Toggle "Save snapshots" to On. Windows will prompt you to enable Windows Hello (fingerprint or face recognition) — this is mandatory. You cannot use Recall with a password alone. Once set up, Recall starts taking screenshots every 5 seconds when your screen is active. The first 50 GB of snapshots are kept. Older ones are deleted automatically.',
         tip: 'Quick Tip: You can pause Recall at any time by clicking the Recall icon in the system tray (lower right corner) and clicking "Pause." Useful when you are about to do something sensitive like online banking.',
       },
       {
@@ -402,7 +402,7 @@ Watch a walkthrough: search YouTube for "toll road scam text 2026" — AARP Frau
     difficulty: 'Beginner',
     body: `An over-the-air (OTA) TV antenna picks up free local channels — ABC, CBS, NBC, Fox, PBS, plus a dozen sub-channels with classic TV reruns, weather, and music. Picture quality is full 1080p HD (often better than cable for live sports because there is no compression). The catch: you need to be within 30 to 60 miles of a broadcast tower for a flat indoor antenna to work. Most U.S. metros are well-covered.
 
-Antennas in 2026 are nothing like the rabbit ears from the 1980s. The best ones are flat, paper-thin, and stick to a window like a sticker. The cheapest workable models cost $20; a quality model costs $40 to $80. There is no subscription, ever — you pay once and watch free for as long as the TV lasts.
+Antennas in 2026 are nothing like the rabbit ears from the 1980s. The best ones are flat, paper-thin, and stick to a window like a sticker. The cheapest workable models cost $20. A quality model costs $40 to $80. There is no subscription, ever — you pay once and watch free for as long as the TV lasts.
 
 This guide walks through choosing the right antenna for your address, setting it up in 20 minutes, and tuning your TV to find every channel in your area.
 
@@ -436,7 +436,7 @@ Watch a walkthrough: search YouTube for "TV antenna setup 2026 guide" — Antenn
       },
       {
         title: 'Reposition the antenna if you got fewer channels than expected',
-        content: 'If you scanned and got only 5 to 10 channels but the FCC map promised 40, the antenna is not in the right spot. Move it 3 to 6 feet to a different position on the window. Rotate it 90 degrees. Try a different window facing the same direction. After each move, re-run the channel scan. Sometimes shifting the antenna 1 foot makes the difference between 12 channels and 60 channels — it is finicky. Spend 15 minutes experimenting; it is worth it.',
+        content: 'If you scanned and got only 5 to 10 channels but the FCC map promised 40, the antenna is not in the right spot. Move it 3 to 6 feet to a different position on the window. Rotate it 90 degrees. Try a different window facing the same direction. After each move, re-run the channel scan. Sometimes shifting the antenna 1 foot makes the difference between 12 channels and 60 channels — it is finicky. Spend 15 minutes experimenting. It is worth it.',
         tip: 'Quick Tip: The best position is rarely the most convenient. If the perfect spot is awkward, consider a longer coax cable (Amazon sells 25-foot lengths for $15) so the antenna goes where the signal is and the TV stays where you want it.',
       },
       {

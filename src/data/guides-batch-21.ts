@@ -129,7 +129,7 @@ export const guidesBatch21: Guide[] = [
     thumbnailEmoji: '',
     publishedAt: '2026-04-19',
     difficulty: 'Beginner',
-    body: `Wyze cameras are some of the most popular home security cameras in the US — mainly because they do a lot for a low price. A Wyze Cam v3 costs around $35 and gives you live 1080p video streaming, motion alerts, two-way audio (you can talk through it), and night vision. Many caregivers use them to check on elderly parents; many seniors use them to see who's at the door or monitor pets.\n\nSetup requires the Wyze app on your smartphone, your home Wi-Fi password, and the camera. The whole process takes about 10 minutes. Once set up, you can view the camera from anywhere with your phone — from another room or across the country.\n\nWyze offers a free tier that lets you see live video, get motion alerts, and review brief event clips. An optional paid plan ($1.99/month per camera) adds continuous video recording and longer clip storage.`,
+    body: `Wyze cameras are some of the most popular home security cameras in the US — mainly because they do a lot for a low price. A Wyze Cam v3 costs around $35 and gives you live 1080p video streaming, motion alerts, two-way audio (you can talk through it), and night vision. Many caregivers use them to check on elderly parents. Many seniors use them to see who's at the door or monitor pets.\n\nSetup requires the Wyze app on your smartphone, your home Wi-Fi password, and the camera. The whole process takes about 10 minutes. Once set up, you can view the camera from anywhere with your phone — from another room or across the country.\n\nWyze offers a free tier that lets you see live video, get motion alerts, and review brief event clips. An optional paid plan ($1.99/month per camera) adds continuous video recording and longer clip storage.`,
     steps: [
       {
         title: 'Download the Wyze app',
@@ -470,7 +470,7 @@ export const guidesBatch21: Guide[] = [
       },
       {
         title: 'Test in the right place',
-        content: `For the most accurate result, run the test on the device you actually use, in the room where you use it. Speed through Wi-Fi will be lower than speed directly plugged into the router via a cable — that's normal. Also test at different times of day; internet can be slower in the evenings when more people are online.`,
+        content: `For the most accurate result, run the test on the device you actually use, in the room where you use it. Speed through Wi-Fi will be lower than speed directly plugged into the router via a cable — that's normal. Also test at different times of day. Internet can be slower in the evenings when more people are online.`,
       },
       {
         title: `Compare to what you're paying for`,

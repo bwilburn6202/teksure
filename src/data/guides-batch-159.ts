@@ -8,8 +8,7 @@ export const guidesBatch159: Guide[] = [
   {
     slug: 'how-to-set-up-bank-text-alerts-for-fraud-protection-2026',
     title: 'How to Set Up Bank Text and Email Alerts to Catch Fraud Fast',
-    excerpt:
-      'Turn on transaction alerts from your bank so you are notified within minutes of every purchase, ATM withdrawal, or suspicious login — before fraud goes unnoticed.',
+    excerpt: 'Turn on transaction alerts from your bank so you are notified within minutes of every purchase, ATM withdrawal, or suspicious login — before fraud goes unnoticed.',
     category: 'online-banking',
     tags: [
       'bank alerts',
@@ -161,26 +160,21 @@ Within a day or two, you should start receiving notifications for your normal tr
     steps: [
       {
         title: 'Sign in to your bank account online or in the app',
-        content:
-          'Open your bank\'s official website by typing its address directly in your browser (for example, chase.com, bankofamerica.com, or wellsfargo.com), or open the bank\'s official mobile app. Log in with your username and password.',
-        warning:
-          'Never click a link in an email or text to reach your bank\'s website. Always type the bank\'s address directly into your browser yourself.',
+        content: 'Open your bank\'s official website by typing its address directly in your browser (for example, chase.com, bankofamerica.com, or wellsfargo.com), or open the bank\'s official mobile app. Log in with your username and password.',
+        warning: 'Never click a link in an email or text to reach your bank\'s website. Always type the bank\'s address directly into your browser yourself.',
       },
       {
         title: 'Find the Alerts or Notifications section',
-        content:
-          'Chase: tap the menu icon, then "Alerts & Messages." Bank of America: go to Help & Support, then "Set up Account Alerts." Wells Fargo: go to Account Services, then "Alerts." For other banks, look in Account Settings, Profile & Settings, or search for "alerts" within the app.',
+        content: 'Chase: tap the menu icon, then "Alerts & Messages." Bank of America: go to Help & Support, then "Set up Account Alerts." Wells Fargo: go to Account Services, then "Alerts." For other banks, look in Account Settings, Profile & Settings, or search for "alerts" within the app.',
       },
       {
         title: 'Turn on transaction alerts for every purchase',
-        content:
-          'Find the option for transaction or purchase notifications and turn it on. Set it to notify you for every transaction, including small amounts. Fraudsters often test a stolen card with a small charge of $1 or $2 before making larger purchases — catching these small charges early is key.',
+        content: 'Find the option for transaction or purchase notifications and turn it on. Set it to notify you for every transaction, including small amounts. Fraudsters often test a stolen card with a small charge of $1 or $2 before making larger purchases — catching these small charges early is key.',
         tip: 'Choose both text message and email notifications so you receive the alert even if one channel has a delay.',
       },
       {
         title: 'Set up a low balance alert and a large transaction alert',
-        content:
-          'Look for balance alerts and set a threshold below which you want to be notified — for example, when your balance drops below $200 or $500 depending on your normal balance. Also turn on a large transaction alert for any single charge over an amount you choose, such as $100 or $200. These two alerts are your backup safety nets if something unusual happens.',
+        content: 'Look for balance alerts and set a threshold below which you want to be notified — for example, when your balance drops below $200 or $500 depending on your normal balance. Also turn on a large transaction alert for any single charge over an amount you choose, such as $100 or $200. These two alerts are your backup safety nets if something unusual happens.',
       },
       {
         title: 'Turn on security and new login alerts',
@@ -189,8 +183,7 @@ Within a day or two, you should start receiving notifications for your normal tr
       },
       {
         title: 'Confirm your contact information and save',
-        content:
-          'Before saving, verify that the phone number and email address shown in your alerts settings are current. If they show an old number or email, update your profile first. Then click or tap "Save." You should receive a test notification or confirmation message within a few minutes.',
+        content: 'Before saving, verify that the phone number and email address shown in your alerts settings are current. If they show an old number or email, update your profile first. Then click or tap "Save." You should receive a test notification or confirmation message within a few minutes.',
       },
     ],
   },
@@ -198,8 +191,7 @@ Within a day or two, you should start receiving notifications for your normal tr
   {
     slug: 'how-to-use-telehealth-for-a-doctor-visit-from-home-2026',
     title: 'How to Have a Doctor Visit by Video Call from Home (Telehealth)',
-    excerpt:
-      'See a real doctor from your phone, tablet, or computer without driving to an office. This guide explains how telehealth works, what Medicare covers, and how to prepare for your first video visit.',
+    excerpt: 'See a real doctor from your phone, tablet, or computer without driving to an office. This guide explains how telehealth works, what Medicare covers, and how to prepare for your first video visit.',
     category: 'health-tech',
     tags: [
       'telehealth',
@@ -233,7 +225,7 @@ Telehealth works well for conditions a doctor can evaluate by seeing and hearing
 - Skin rashes, redness, or irritation — many telehealth platforms let you send a close-up photo that the doctor reviews before or during the call
 - Pink eye and ear infections
 - Medication refills for ongoing prescriptions (blood pressure, cholesterol, diabetes medications — your doctor may be able to renew these during a routine telehealth check-in)
-- Mental health appointments — therapy and psychiatry appointments are among the most common telehealth visits; many patients prefer the privacy of home
+- Mental health appointments — therapy and psychiatry appointments are among the most common telehealth visits. Many patients prefer the privacy of home
 - Follow-up appointments after a procedure or hospital stay
 - Questions about test results your doctor has already reviewed
 
@@ -361,37 +353,30 @@ Check your email and patient portal within a few hours for any follow-up instruc
     steps: [
       {
         title: 'Decide which telehealth service to use',
-        content:
-          'Check first whether your own doctor offers video visits through your patient portal (log in and look for "Schedule a Visit" or "Video Visit"). If not, go to teladoc.com or mdlive.com to create a free account and connect with a doctor within minutes for urgent care, or schedule a primary care or mental health appointment.',
+        content: 'Check first whether your own doctor offers video visits through your patient portal (log in and look for "Schedule a Visit" or "Video Visit"). If not, go to teladoc.com or mdlive.com to create a free account and connect with a doctor within minutes for urgent care, or schedule a primary care or mental health appointment.',
         tip: 'Call your Medicare Advantage plan (the number is on your insurance card) to find out which telehealth services are covered at no extra cost before signing up.',
       },
       {
         title: 'Charge your device and check your camera and microphone',
-        content:
-          'Plug in your phone, tablet, or computer or make sure it is fully charged before the appointment. On your phone, open the camera app briefly to confirm it works. On a computer, go to zoom.us/test to test your camera and microphone. A device that goes dead mid-appointment or a microphone that does not work will cut your visit short.',
+        content: 'Plug in your phone, tablet, or computer or make sure it is fully charged before the appointment. On your phone, open the camera app briefly to confirm it works. On a computer, go to zoom.us/test to test your camera and microphone. A device that goes dead mid-appointment or a microphone that does not work will cut your visit short.',
       },
       {
         title: 'Set up good lighting and a quiet space',
-        content:
-          'Sit facing a window or a lamp so your face is clearly visible to the doctor — not in shadow. Choose a private room, close the door, and turn off background noise like a TV. Your doctor needs to hear you clearly and see your face, skin color, and any visible symptoms.',
+        content: 'Sit facing a window or a lamp so your face is clearly visible to the doctor — not in shadow. Choose a private room, close the door, and turn off background noise like a TV. Your doctor needs to hear you clearly and see your face, skin color, and any visible symptoms.',
       },
       {
         title: 'Write down your medications and symptoms before the call',
-        content:
-          'Make a list of all your current medications (including vitamins and supplements) with the dosage. Write down your main symptom: when it started, how it feels, and what makes it better or worse. Have your pharmacy name ready so the doctor can send a prescription there electronically.',
+        content: 'Make a list of all your current medications (including vitamins and supplements) with the dosage. Write down your main symptom: when it started, how it feels, and what makes it better or worse. Have your pharmacy name ready so the doctor can send a prescription there electronically.',
         tip: 'Keep this medication list updated and stored in a note on your phone — it is also useful for in-person appointments and emergency room visits.',
       },
       {
         title: 'Join the video call 5 minutes before your appointment',
-        content:
-          'Open the link sent to you by email or text from your telehealth provider. On your phone, tap the link — it will open in your browser or a specific app. On a computer, click the link and allow the site to use your camera and microphone when asked. You will enter a waiting room screen. The doctor will appear when ready.',
-        warning:
-          'If the video does not connect after a few minutes, do not close the app. Try refreshing the page or call the telehealth service\'s support line — the number is in your appointment confirmation email.',
+        content: 'Open the link sent to you by email or text from your telehealth provider. On your phone, tap the link — it will open in your browser or a specific app. On a computer, click the link and allow the site to use your camera and microphone when asked. You will enter a waiting room screen. The doctor will appear when ready.',
+        warning: 'If the video does not connect after a few minutes, do not close the app. Try refreshing the page or call the telehealth service\'s support line — the number is in your appointment confirmation email.',
       },
       {
         title: 'After the visit, check your email and patient portal for follow-up',
-        content:
-          'Your doctor may send a prescription to your pharmacy electronically, order lab tests at a nearby location, or provide written visit notes. Check your email and patient portal (if your doctor uses one) within a few hours after the appointment for any instructions, prescriptions, or referrals.',
+        content: 'Your doctor may send a prescription to your pharmacy electronically, order lab tests at a nearby location, or provide written visit notes. Check your email and patient portal (if your doctor uses one) within a few hours after the appointment for any instructions, prescriptions, or referrals.',
       },
     ],
   },
@@ -399,8 +384,7 @@ Check your email and patient portal within a few hours for any follow-up instruc
   {
     slug: 'how-to-organize-your-iphone-home-screen-apps-and-folders-2026',
     title: 'How to Organize Your iPhone Home Screen So Your Apps Are Easy to Find',
-    excerpt:
-      'Move apps, create folders, remove clutter, and add useful widgets so your iPhone home screen shows exactly what you need — and nothing you do not.',
+    excerpt: 'Move apps, create folders, remove clutter, and add useful widgets so your iPhone home screen shows exactly what you need — and nothing you do not.',
     category: 'phone-guides',
     tags: [
       'iPhone home screen',
@@ -533,7 +517,7 @@ Under the View section, tap **"Display Zoom."**
 
 You will see two options: "Default" and "Larger Text." Tap **"Larger Text"** and then tap **"Set."** Your iPhone will restart briefly to apply the change.
 
-With Display Zoom on, every element of the screen — app icons, text, buttons — is displayed at a larger size. This setting does not change the way your phone works; it only makes the screen easier to read.
+With Display Zoom on, every element of the screen — app icons, text, buttons — is displayed at a larger size. This setting does not change the way your phone works. It only makes the screen easier to read.
 
 ---
 
@@ -560,35 +544,29 @@ To move an app into the dock: enter jiggle mode and drag the app down to the doc
     steps: [
       {
         title: 'Enter jiggle mode to start rearranging',
-        content:
-          'Press and hold (long-press) any blank space on your home screen, or press and hold any app icon, for about one second. The apps will start to wiggle — this is jiggle mode. In this mode you can move, group, and remove apps. Tap "Done" in the upper-right corner when you are finished rearranging.',
+        content: 'Press and hold (long-press) any blank space on your home screen, or press and hold any app icon, for about one second. The apps will start to wiggle — this is jiggle mode. In this mode you can move, group, and remove apps. Tap "Done" in the upper-right corner when you are finished rearranging.',
         tip: 'If you accidentally tap an app and it opens instead of starting jiggle mode, press and hold longer — about 2 seconds — until the wiggle starts.',
       },
       {
         title: 'Move your most-used apps to page 1 and the dock',
-        content:
-          'While in jiggle mode, drag your most-used apps (Phone, Messages, Camera, Safari, etc.) to the first page of your home screen so they are always visible when you unlock your phone. Drag up to 4 apps to the dock at the bottom — the dock stays visible on every home screen page. To add an app to the dock, drag it down to the dock area (move any current dock app out first if needed).',
+        content: 'While in jiggle mode, drag your most-used apps (Phone, Messages, Camera, Safari, etc.) to the first page of your home screen so they are always visible when you unlock your phone. Drag up to 4 apps to the dock at the bottom — the dock stays visible on every home screen page. To add an app to the dock, drag it down to the dock area (move any current dock app out first if needed).',
       },
       {
         title: 'Create folders for related apps',
-        content:
-          'While in jiggle mode, drag one app directly on top of another app you want to group with it. A folder is created automatically with a suggested name. Tap the name field to rename the folder something clear (for example, "Health Apps" or "Family"). Drag additional apps onto the folder to add them.',
+        content: 'While in jiggle mode, drag one app directly on top of another app you want to group with it. A folder is created automatically with a suggested name. Tap the name field to rename the folder something clear (for example, "Health Apps" or "Family"). Drag additional apps onto the folder to add them.',
         tip: 'A good rule of thumb: if you have three or more apps in the same category (health, shopping, games), put them in a folder. It clears space on the home screen and makes the group easier to find.',
       },
       {
         title: 'Remove apps you never use',
-        content:
-          'While in jiggle mode, tap the X or – button in the upper-left corner of any app you want to remove. Choose "Remove from Home Screen" to hide it (the app stays on your phone and is still in the App Library), or "Delete App" to remove it entirely. You can always re-download any App Store app for free if you change your mind later.',
+        content: 'While in jiggle mode, tap the X or – button in the upper-left corner of any app you want to remove. Choose "Remove from Home Screen" to hide it (the app stays on your phone and is still in the App Library), or "Delete App" to remove it entirely. You can always re-download any App Store app for free if you change your mind later.',
       },
       {
         title: 'Add a helpful widget to see useful information at a glance',
-        content:
-          'Press and hold an empty area of the home screen until jiggle mode starts, then tap the + button in the upper-left corner. Browse or search for a widget — Weather, Calendar, and Clock are the most useful for at-a-glance information. Tap your chosen widget, select a size (small or medium fits well on most screens), and tap "Add Widget." Drag it to where you want it on your home screen.',
+        content: 'Press and hold an empty area of the home screen until jiggle mode starts, then tap the + button in the upper-left corner. Browse or search for a widget — Weather, Calendar, and Clock are the most useful for at-a-glance information. Tap your chosen widget, select a size (small or medium fits well on most screens), and tap "Add Widget." Drag it to where you want it on your home screen.',
       },
       {
         title: 'Make app icons larger with Display Zoom',
-        content:
-          'If the app icons look too small, open Settings, tap "Display & Brightness," then tap "Display Zoom." Select "Larger Text" and tap "Set." Your iPhone will restart and all icons, text, and buttons will appear larger. This does not remove any features — it only increases the display size throughout the phone.',
+        content: 'If the app icons look too small, open Settings, tap "Display & Brightness," then tap "Display Zoom." Select "Larger Text" and tap "Set." Your iPhone will restart and all icons, text, and buttons will appear larger. This does not remove any features — it only increases the display size throughout the phone.',
         tip: 'You can reverse Display Zoom at any time by going back to Settings → Display & Brightness → Display Zoom and selecting "Default."',
       },
     ],
@@ -597,8 +575,7 @@ To move an app into the dock: enter jiggle mode and drag the app down to the doc
   {
     slug: 'how-to-share-photos-with-family-using-google-photos-2026',
     title: 'How to Share Photos with Family Using Google Photos',
-    excerpt:
-      'Use the free Google Photos app to share individual photos, create shared family albums, or automatically send every photo you take to a trusted family member.',
+    excerpt: 'Use the free Google Photos app to share individual photos, create shared family albums, or automatically send every photo you take to a trusted family member.',
     category: 'app-guides',
     tags: [
       'Google Photos',
@@ -742,24 +719,20 @@ They do not need to do anything other than tap the link or notification to see y
     steps: [
       {
         title: 'Download Google Photos and sign in with your Google account',
-        content:
-          'On iPhone, search for "Google Photos" in the App Store and tap "Get." On Android, it may already be installed — check your app list or search the Play Store. Open the app and sign in with your Gmail email address and password. If you do not have a Google account, tap "Create account" — it is free and takes about three minutes.',
+        content: 'On iPhone, search for "Google Photos" in the App Store and tap "Get." On Android, it may already be installed — check your app list or search the Play Store. Open the app and sign in with your Gmail email address and password. If you do not have a Google account, tap "Create account" — it is free and takes about three minutes.',
         tip: 'If you use Gmail for email, that is already your Google account. Use the same email and password to sign in to Google Photos.',
       },
       {
         title: 'Turn on Backup to protect your photos automatically',
-        content:
-          'When Google Photos first opens, it will ask whether to turn on Backup. Tap "Turn on." With Backup enabled, every new photo you take is automatically copied to your Google account online. Your photos are safe even if your phone is lost or damaged. You can check backup status anytime by tapping your profile photo in the upper-right corner.',
+        content: 'When Google Photos first opens, it will ask whether to turn on Backup. Tap "Turn on." With Backup enabled, every new photo you take is automatically copied to your Google account online. Your photos are safe even if your phone is lost or damaged. You can check backup status anytime by tapping your profile photo in the upper-right corner.',
       },
       {
         title: 'Share a single photo with a family member',
-        content:
-          'Open Google Photos and tap the photo you want to share. Tap the Share button at the bottom of the screen. Tap "Send in Google Photos," then type your family member\'s email address or phone number. Tap "Send." They will receive a notification and can view the photo in their own Google Photos app or by clicking the link in an email.',
+        content: 'Open Google Photos and tap the photo you want to share. Tap the Share button at the bottom of the screen. Tap "Send in Google Photos," then type your family member\'s email address or phone number. Tap "Send." They will receive a notification and can view the photo in their own Google Photos app or by clicking the link in an email.',
       },
       {
         title: 'Create a shared album for a family event or ongoing collection',
-        content:
-          'Tap Library at the bottom of Google Photos, then tap Albums, then "Create album." Give the album a name and add photos from your phone. Tap the share icon inside the album and enter your family members\' email addresses. Tap "Send." They will be able to view the album and, if you allow it, add their own photos.',
+        content: 'Tap Library at the bottom of Google Photos, then tap Albums, then "Create album." Give the album a name and add photos from your phone. Tap the share icon inside the album and enter your family members\' email addresses. Tap "Send." They will be able to view the album and, if you allow it, add their own photos.',
         tip: 'When sending the album invite, turn on "Allow adding photos" so family members can contribute their own pictures from the same event — you will see all their photos too.',
       },
       {
@@ -768,10 +741,8 @@ They do not need to do anything other than tap the link or notification to see y
       },
       {
         title: 'Set up automatic sharing with a trusted family member',
-        content:
-          'Tap your profile photo in the upper-right corner of Google Photos. Tap "Photo sharing," then "Get started." Enter your family member\'s email address. Choose to share new photos automatically. Tap "Send invite." Once they accept, your new photos will appear in their Google Photos account automatically — no need to remember to share each one.',
-        warning:
-          'Automatic photo sharing sends every new photo you take to that person. Only set this up with someone you fully trust, such as an adult child or close family member — not a casual acquaintance.',
+        content: 'Tap your profile photo in the upper-right corner of Google Photos. Tap "Photo sharing," then "Get started." Enter your family member\'s email address. Choose to share new photos automatically. Tap "Send invite." Once they accept, your new photos will appear in their Google Photos account automatically — no need to remember to share each one.',
+        warning: 'Automatic photo sharing sends every new photo you take to that person. Only set this up with someone you fully trust, such as an adult child or close family member — not a casual acquaintance.',
       },
     ],
   },

@@ -204,7 +204,7 @@ The good news: real browsers do not show update popups on top of web pages. Once
       },
       {
         title: 'Set up two protections that stop most fake updates',
-        content: 'First, turn on your browser\'s built-in protection. In Chrome: Settings > Privacy and security > Security > pick "Enhanced protection." In Safari: it is on by default; check Settings > Safari > make sure "Fraudulent Website Warning" is on. Second, use an ad blocker — most fake updates show up as ads on websites. uBlock Origin is free and trusted (available for Chrome, Edge, Firefox). On Safari, AdGuard for Safari is the equivalent. With both protections on, you will rarely see a fake update popup at all.',
+        content: 'First, turn on your browser\'s built-in protection. In Chrome: Settings > Privacy and security > Security > pick "Enhanced protection." In Safari: it is on by default. Check Settings > Safari > make sure "Fraudulent Website Warning" is on. Second, use an ad blocker — most fake updates show up as ads on websites. uBlock Origin is free and trusted (available for Chrome, Edge, Firefox). On Safari, AdGuard for Safari is the equivalent. With both protections on, you will rarely see a fake update popup at all.',
         tip: 'Quick Tip: Tell a friend or family member about this. Fake updates are the most common way grandparents get malware. A 60-second conversation prevents weeks of cleanup.',
       },
     ],
@@ -235,7 +235,7 @@ This guide walks through the four-step setup: taking the at-home hearing test, e
       },
       {
         title: 'Find a quiet room and put the AirPods in',
-        content: 'You need a quiet space for about 5 minutes — a closed bedroom or office, no TV, no fans, no air conditioner if you can pause it. The room must be very quiet for the hearing test to be accurate. Put both AirPods in. Make sure the silicone tips fit well — if they are loose, the test will be inaccurate. Apple includes four ear tip sizes in the box; the medium size is usually the right one but try each if the AirPods feel loose.',
+        content: 'You need a quiet space for about 5 minutes — a closed bedroom or office, no TV, no fans, no air conditioner if you can pause it. The room must be very quiet for the hearing test to be accurate. Put both AirPods in. Make sure the silicone tips fit well — if they are loose, the test will be inaccurate. Apple includes four ear tip sizes in the box. The medium size is usually the right one but try each if the AirPods feel loose.',
         tip: 'Quick Tip: To check the tip fit, open Settings > [Your AirPods] > scroll to "Ear Tip Fit Test." It plays a quick tone and tells you if the seal is good. Re-do it if either ear shows "Adjust or try a different size."',
       },
       {
@@ -406,7 +406,7 @@ The walkthrough below works for both the Galaxy S25 and the S25 Ultra running On
       },
       {
         title: 'Use Live Translate during phone calls — the killer feature',
-        content: 'Live Translate translates a phone call in real time, in both directions. Useful if you have a relative who speaks Spanish, Korean, French, or any of 15+ supported languages. To use: open the Phone app. Start or receive a call. Tap the on-screen "Live Translate" button (or Settings > Call settings > Live Translate to enable). Pick your language and the other person\'s language. Speak normally — the other person hears your words in their language; you hear theirs in yours, after a small pause.',
+        content: 'Live Translate translates a phone call in real time, in both directions. Useful if you have a relative who speaks Spanish, Korean, French, or any of 15+ supported languages. To use: open the Phone app. Start or receive a call. Tap the on-screen "Live Translate" button (or Settings > Call settings > Live Translate to enable). Pick your language and the other person\'s language. Speak normally — the other person hears your words in their language. You hear theirs in yours, after a small pause.',
         warning: 'Live Translate is good for casual conversation. Do not rely on it for medical, legal, or business decisions — use a human translator instead.',
       },
       {

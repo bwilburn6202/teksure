@@ -292,7 +292,7 @@ Android also supports Switch Access through Google's Accessibility Suite app, wh
       {
         title: `Adjust scan speed and visual settings`,
         content: `Go to Settings → Accessibility → Switch Access → Settings → Auto-Scan Settings if you are using auto-scanning. Increase the "Time Between Auto-Scans" slider to give more time between each highlight movement — start with 1.5 to 2 seconds and adjust from there based on the user's reaction time. You can also change the highlight color (making it brighter or more contrasting) and the highlight border thickness.`,
-        tip: `Quick Tip: Work with the person using Switch Access to find the scan speed that feels comfortable. Too fast creates frustration; too slow makes navigation tedious. A good starting point is about 1.5 seconds between scans.`,
+        tip: `Quick Tip: Work with the person using Switch Access to find the scan speed that feels comfortable. Too fast creates frustration. Too slow makes navigation tedious. A good starting point is about 1.5 seconds between scans.`,
       },
       {
         title: `Practice navigating an app`,

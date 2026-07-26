@@ -8,8 +8,7 @@ export const guidesBatch145: Guide[] = [
   {
     slug: 'how-to-use-venmo-zelle-safely-seniors-2026',
     title: 'How to Use Venmo and Zelle Safely',
-    excerpt:
-      'Learn what Venmo and Zelle are, how they differ, and the golden rules that keep your money safe when paying people digitally.',
+    excerpt: 'Learn what Venmo and Zelle are, how they differ, and the golden rules that keep your money safe when paying people digitally.',
     category: 'online-banking',
     tags: ['venmo', 'zelle', 'payment apps', 'scams', 'money transfer', 'banking', 'fraud'],
     readTime: '8 min',
@@ -35,7 +34,7 @@ Venmo is a separate app made by PayPal. You download it, create a free account, 
 |---|---|---|
 | Where it lives | Inside your bank's app | Separate Venmo app |
 | How long transfers take | Minutes | 1–3 days (free) or minutes (fee) |
-| Cost | Free | Free (standard); small fee for instant |
+| Cost | Free | Free (standard). Small fee for instant |
 | Social feed | No | Yes — turn it off |
 | Can payments be reversed? | Rarely | Rarely |
 
@@ -75,28 +74,22 @@ Recovery is not guaranteed, but reporting quickly gives you the best chance. The
     steps: [
       {
         title: 'Find out if your bank already has Zelle',
-        content:
-          'Open your bank\'s app and look for a tab that says "Zelle," "Send Money," or "Pay People." Most major US banks include Zelle at no charge. If you see it, you already have access — no download needed.',
+        content: 'Open your bank\'s app and look for a tab that says "Zelle," "Send Money," or "Pay People." Most major US banks include Zelle at no charge. If you see it, you already have access — no download needed.',
         tip: 'Not sure if your bank has Zelle? Visit zellepay.com and tap "Find Your Bank" to check.',
       },
       {
         title: 'Set up Venmo if you need it',
-        content:
-          'If your bank does not have Zelle, or if the person you are paying prefers Venmo, download the Venmo app from the App Store (iPhone) or Google Play Store (Android). Create an account with your name and email address, then link your bank account or debit card. Venmo will make two small test deposits in your bank account — check your bank statement in a day or two and enter those amounts in Venmo to confirm your account.',
-        warning:
-          'Only download Venmo from the official App Store or Google Play Store. Search "Venmo" and look for the blue logo from PayPal, Inc.',
+        content: 'If your bank does not have Zelle, or if the person you are paying prefers Venmo, download the Venmo app from the App Store (iPhone) or Google Play Store (Android). Create an account with your name and email address, then link your bank account or debit card. Venmo will make two small test deposits in your bank account — check your bank statement in a day or two and enter those amounts in Venmo to confirm your account.',
+        warning: 'Only download Venmo from the official App Store or Google Play Store. Search "Venmo" and look for the blue logo from PayPal, Inc.',
       },
       {
         title: 'Send a payment safely',
-        content:
-          'Before you tap "Send," verify the recipient\'s phone number or email address out loud with them. On Zelle, a profile picture or name will appear if the number is registered — confirm it matches the person you expect. On Venmo, search the person\'s username and confirm the photo and name are correct. Start with a small test payment (like $1) if you are paying someone for the first time.',
-        warning:
-          'Payments sent to the wrong number or a scammer are almost never recoverable. Take an extra 30 seconds to confirm before you send.',
+        content: 'Before you tap "Send," verify the recipient\'s phone number or email address out loud with them. On Zelle, a profile picture or name will appear if the number is registered — confirm it matches the person you expect. On Venmo, search the person\'s username and confirm the photo and name are correct. Start with a small test payment (like $1) if you are paying someone for the first time.',
+        warning: 'Payments sent to the wrong number or a scammer are almost never recoverable. Take an extra 30 seconds to confirm before you send.',
       },
       {
         title: 'Turn on privacy settings in Venmo',
-        content:
-          'Open the Venmo app, tap the three lines in the top-right corner, then tap "Settings," then "Privacy." Change "Default Privacy Setting" to "Private." This means strangers cannot see your payment history. Also consider turning off "Appear in other users\' friends lists."',
+        content: 'Open the Venmo app, tap the three lines in the top-right corner, then tap "Settings," then "Privacy." Change "Default Privacy Setting" to "Private." This means strangers cannot see your payment history. Also consider turning off "Appear in other users\' friends lists."',
         tip: 'Your payment history is visible to the public by default in Venmo. Changing it to Private takes less than one minute and is strongly recommended.',
       },
       {
@@ -105,8 +98,7 @@ Recovery is not guaranteed, but reporting quickly gives you the best chance. The
       },
       {
         title: 'Know what to do if you suspect a scam',
-        content:
-          'If you receive an unexpected "Zelle alert" by text or a call from someone claiming to be your bank\'s fraud department, hang up and call your bank directly using the number printed on the back of your debit card. Never send money at the instruction of someone who called you — your real bank will never ask you to do that.',
+        content: 'If you receive an unexpected "Zelle alert" by text or a call from someone claiming to be your bank\'s fraud department, hang up and call your bank directly using the number printed on the back of your debit card. Never send money at the instruction of someone who called you — your real bank will never ask you to do that.',
         warning: 'If you have already sent money and believe it was a scam, call your bank\'s fraud line right away. Then report it to the FTC at ReportFraud.ftc.gov.',
       },
     ],
@@ -115,8 +107,7 @@ Recovery is not guaranteed, but reporting quickly gives you the best chance. The
   {
     slug: 'what-is-cloud-storage-and-how-to-use-it-2026',
     title: 'What Is Cloud Storage and How Do You Use It?',
-    excerpt:
-      'A plain-English explanation of "the cloud" — what it is, how iCloud, Google Drive, and OneDrive compare, and how to save a file or photo today.',
+    excerpt: 'A plain-English explanation of "the cloud" — what it is, how iCloud, Google Drive, and OneDrive compare, and how to save a file or photo today.',
     category: 'tech-explained',
     tags: [
       'cloud storage',
@@ -166,7 +157,7 @@ Cloud storage also lets you share things with family easily — send a photo alb
 ### OneDrive (Microsoft)
 - **Who it's for:** People who use Windows computers and Microsoft 365 (formerly called Office).
 - **Free storage:** 5 GB.
-- **Cost for more:** $1.99/month for 100 GB; included free with Microsoft 365 subscriptions (which give you 1 TB — that is 1,000 GB).
+- **Cost for more:** $1.99/month for 100 GB. Included free with Microsoft 365 subscriptions (which give you 1 TB — that is 1,000 GB).
 - **What it does:** Stores files and automatically backs up the Documents, Desktop, and Pictures folders on your Windows computer.
 - **Where to find it:** OneDrive usually comes pre-installed on Windows computers. Look for the cloud icon in your taskbar.
 
@@ -218,37 +209,30 @@ What is NOT automatically protected: apps you paid for (you can re-download thos
     steps: [
       {
         title: 'Understand what the cloud is',
-        content:
-          'The cloud is a group of computers in a building that store your files over the internet. When something is "in the cloud," a copy of it lives on those computers — not only on your device. That means if your phone breaks, your files are still safe and you can get them back on a new device.',
+        content: 'The cloud is a group of computers in a building that store your files over the internet. When something is "in the cloud," a copy of it lives on those computers — not only on your device. That means if your phone breaks, your files are still safe and you can get them back on a new device.',
       },
       {
         title: 'Find out which cloud service you already have',
-        content:
-          'You may already have cloud storage without knowing it. On an iPhone: tap Settings > your name at the top — if you see "iCloud," you have 5 GB free. On Android: open Settings > Google > Backup to see your Google Drive status. On a Windows PC: look for the white or blue cloud icon in the bottom-right taskbar — that is OneDrive.',
+        content: 'You may already have cloud storage without knowing it. On an iPhone: tap Settings > your name at the top — if you see "iCloud," you have 5 GB free. On Android: open Settings > Google > Backup to see your Google Drive status. On a Windows PC: look for the white or blue cloud icon in the bottom-right taskbar — that is OneDrive.',
         tip: 'Most people already have at least one cloud account set up. Check before you sign up for anything new.',
       },
       {
         title: 'Pick the right service for you',
-        content:
-          'Use iCloud if you have an iPhone or iPad. Use Google Drive if you have an Android phone or want the best free storage (15 GB). Use OneDrive if you have a Windows computer. All three are free to start.',
+        content: 'Use iCloud if you have an iPhone or iPad. Use Google Drive if you have an Android phone or want the best free storage (15 GB). Use OneDrive if you have a Windows computer. All three are free to start.',
       },
       {
         title: 'Upload your first photo to Google Drive',
-        content:
-          'Open the Google Drive app (download it free from the App Store or Google Play if needed). Sign in with your Google/Gmail account. Tap the blue "+" button, then tap "Upload," then choose a photo from your camera roll. In a few seconds, your photo will be safely stored in the cloud.',
+        content: 'Open the Google Drive app (download it free from the App Store or Google Play if needed). Sign in with your Google/Gmail account. Tap the blue "+" button, then tap "Upload," then choose a photo from your camera roll. In a few seconds, your photo will be safely stored in the cloud.',
         tip: 'After uploading, try opening Google Drive on a different device — a tablet or computer — and see if the photo appears there. It should.',
       },
       {
         title: 'Turn on automatic backup',
-        content:
-          'Manual uploads are fine, but automatic backup is better. On iPhone: go to Settings > your name > iCloud > iCloud Backup, and turn it on. Your phone will back up every night while it charges and is connected to Wi-Fi. On Android: go to Settings > Google > Backup and turn on "Back up to Google Drive."',
-        warning:
-          'Automatic backup uses Wi-Fi, not your cellular data plan, so you will not be charged extra by your carrier. Make sure your phone is on your home Wi-Fi when it charges at night.',
+        content: 'Manual uploads are fine, but automatic backup is better. On iPhone: go to Settings > your name > iCloud > iCloud Backup, and turn it on. Your phone will back up every night while it charges and is connected to Wi-Fi. On Android: go to Settings > Google > Backup and turn on "Back up to Google Drive."',
+        warning: 'Automatic backup uses Wi-Fi, not your cellular data plan, so you will not be charged extra by your carrier. Make sure your phone is on your home Wi-Fi when it charges at night.',
       },
       {
         title: 'Know what is protected and what is not',
-        content:
-          'Cloud backup protects your photos, contacts, and (usually) your text messages. It does not protect apps you downloaded — but you can re-download free and paid apps at no extra charge from the App Store or Google Play. It also does not protect things you never backed up, so the sooner you turn on automatic backup, the more protected you are.',
+        content: 'Cloud backup protects your photos, contacts, and (usually) your text messages. It does not protect apps you downloaded — but you can re-download free and paid apps at no extra charge from the App Store or Google Play. It also does not protect things you never backed up, so the sooner you turn on automatic backup, the more protected you are.',
       },
     ],
   },
@@ -256,8 +240,7 @@ What is NOT automatically protected: apps you paid for (you can re-download thos
   {
     slug: 'how-to-request-a-lyft-or-uber-2026',
     title: 'How to Request a Lyft or Uber Ride',
-    excerpt:
-      'Step-by-step guide to getting your first Lyft or Uber ride — from downloading the app to arriving home safely. Great for seniors who no longer drive.',
+    excerpt: 'Step-by-step guide to getting your first Lyft or Uber ride — from downloading the app to arriving home safely. Great for seniors who no longer drive.',
     category: 'app-guides',
     tags: ['lyft', 'uber', 'rideshare', 'transportation', 'seniors', 'no driving', 'ride-hailing'],
     readTime: '10 min',
@@ -335,45 +318,36 @@ Both Lyft and Uber let you share your ride status with a trusted person. In Lyft
     steps: [
       {
         title: 'Download the Lyft or Uber app',
-        content:
-          'On your iPhone, open the App Store (the blue icon with an "A"). On Android, open the Google Play Store (the colorful triangle icon). Search for "Lyft" or "Uber." Tap the correct app and tap "Get" or "Install." Wait for it to download — this takes about one minute on most connections.',
+        content: 'On your iPhone, open the App Store (the blue icon with an "A"). On Android, open the Google Play Store (the colorful triangle icon). Search for "Lyft" or "Uber." Tap the correct app and tap "Get" or "Install." Wait for it to download — this takes about one minute on most connections.',
         tip: 'You can download both apps and use whichever one is cheaper at the time. Prices change based on how busy the service is in your area.',
       },
       {
         title: 'Create your account',
-        content:
-          'Open the app and tap "Sign Up." Enter your first and last name, your email address, and a password. The app will text a four- to six-digit code to your phone number. Enter that code when asked. This confirms you own the phone number.',
-        warning:
-          'Only create your account through the official app. Never create an Uber or Lyft account through a link in an email or text you were not expecting.',
+        content: 'Open the app and tap "Sign Up." Enter your first and last name, your email address, and a password. The app will text a four- to six-digit code to your phone number. Enter that code when asked. This confirms you own the phone number.',
+        warning: 'Only create your account through the official app. Never create an Uber or Lyft account through a link in an email or text you were not expecting.',
       },
       {
         title: 'Add your payment method',
-        content:
-          'Tap the menu icon (three lines, usually in the top-left or bottom corner). Find "Payment" or "Wallet" and tap it. Tap "Add Payment Method" or "Add Credit/Debit Card." Enter your card number, expiration date, and the three-digit security code from the back. The app saves this securely and charges it automatically after each ride.',
+        content: 'Tap the menu icon (three lines, usually in the top-left or bottom corner). Find "Payment" or "Wallet" and tap it. Tap "Add Payment Method" or "Add Credit/Debit Card." Enter your card number, expiration date, and the three-digit security code from the back. The app saves this securely and charges it automatically after each ride.',
         tip: 'You can also use PayPal, Apple Pay, or Google Pay if you prefer not to enter a card number directly.',
       },
       {
         title: 'Request your first ride',
-        content:
-          'Open the app. Your current location should appear on the map. Tap "Where to?" and type your destination — this can be an address, a business name (like "CVS on Main Street"), or a saved place like "Home." Choose the standard ride option (UberX or Lyft) and check the price shown. Tap "Request" to confirm.',
+        content: 'Open the app. Your current location should appear on the map. Tap "Where to?" and type your destination — this can be an address, a business name (like "CVS on Main Street"), or a saved place like "Home." Choose the standard ride option (UberX or Lyft) and check the price shown. Tap "Request" to confirm.',
       },
       {
         title: 'Wait for your driver and confirm the car',
-        content:
-          'After requesting, you will see the driver\'s name, photo, car model, color, and license plate on screen. Wait inside until the app shows the car is about one minute away. When the car arrives, match the plate and color to what the app shows. Then ask: "What name is this ride for?" — let the driver say your name first.',
-        warning:
-          'Never get into a car that does not match the details in your app, even if the driver waves at you or calls your name first. Scammers sometimes wait near rideshare areas.',
+        content: 'After requesting, you will see the driver\'s name, photo, car model, color, and license plate on screen. Wait inside until the app shows the car is about one minute away. When the car arrives, match the plate and color to what the app shows. Then ask: "What name is this ride for?" — let the driver say your name first.',
+        warning: 'Never get into a car that does not match the details in your app, even if the driver waves at you or calls your name first. Scammers sometimes wait near rideshare areas.',
       },
       {
         title: 'Share your ride status with family',
-        content:
-          'While your ride is in progress, look for a "Share Status" or share icon. Tap it and choose a family member\'s contact. They will receive a link that shows your car moving on a map in real time. This is a safe, reassuring feature — use it every time.',
+        content: 'While your ride is in progress, look for a "Share Status" or share icon. Tap it and choose a family member\'s contact. They will receive a link that shows your car moving on a map in real time. This is a safe, reassuring feature — use it every time.',
         tip: 'You can save a family member\'s contact as a "Trusted Contact" in the Lyft app so sharing takes one tap next time.',
       },
       {
         title: 'Rate your driver and check your receipt',
-        content:
-          'After the ride ends, the app will ask you to rate the driver from one to five stars. Your card is charged automatically — no cash needed. You will also receive an email receipt. If anything looks wrong with the price, tap "Get Help" in the app to reach customer support.',
+        content: 'After the ride ends, the app will ask you to rate the driver from one to five stars. Your card is charged automatically — no cash needed. You will also receive an email receipt. If anything looks wrong with the price, tap "Get Help" in the app to reach customer support.',
       },
     ],
   },
@@ -381,8 +355,7 @@ Both Lyft and Uber let you share your ride status with a trusted person. In Lyft
   {
     slug: 'how-to-clear-browser-history-and-cache-2026',
     title: 'How to Clear Your Browser History, Cache, and Cookies',
-    excerpt:
-      'A step-by-step guide to clearing browsing history on iPhone (Safari), Android (Chrome), and computers — and what actually gets deleted vs. what stays.',
+    excerpt: 'A step-by-step guide to clearing browsing history on iPhone (Safari), Android (Chrome), and computers — and what actually gets deleted vs. what stays.',
     category: 'tips-tricks',
     tags: [
       'browser history',
@@ -491,45 +464,36 @@ For most home users, clearing history once every one to three months is a reason
     steps: [
       {
         title: 'Understand what you are clearing (and what stays)',
-        content:
-          'Clearing your browser history removes the list of websites you visited. Clearing the cache removes temporary files stored to speed up page loading. Clearing cookies signs you out of most websites. Your bookmarks, saved passwords, photos, and files on your device are NOT affected. Nothing bad will happen to your computer or phone.',
+        content: 'Clearing your browser history removes the list of websites you visited. Clearing the cache removes temporary files stored to speed up page loading. Clearing cookies signs you out of most websites. Your bookmarks, saved passwords, photos, and files on your device are NOT affected. Nothing bad will happen to your computer or phone.',
         tip: 'If your main reason for clearing history is to fix a website that looks broken, clearing just the cache is enough. You can always clear only that option.',
       },
       {
         title: 'Clear history on an iPhone (Safari)',
-        content:
-          'Open the Settings app (gray gear icon). Scroll down and tap Safari. Scroll down and tap "Clear History and Website Data." Tap "Clear History and Data" in the pop-up to confirm. Your bookmarks and saved AutoFill information will remain.',
-        warning:
-          'This signs you out of websites you were logged in to in Safari. You will need your username and password to log back in to sites like your email or bank.',
+        content: 'Open the Settings app (gray gear icon). Scroll down and tap Safari. Scroll down and tap "Clear History and Website Data." Tap "Clear History and Data" in the pop-up to confirm. Your bookmarks and saved AutoFill information will remain.',
+        warning: 'This signs you out of websites you were logged in to in Safari. You will need your username and password to log back in to sites like your email or bank.',
       },
       {
         title: 'Clear history on an Android phone (Chrome)',
-        content:
-          'Open Chrome. Tap the three dots in the top-right corner, then tap "History." Tap "Clear browsing data" at the top. Check "Browsing history," "Cached images and files," and "Cookies and site data." Tap "Clear data" to confirm.',
+        content: 'Open Chrome. Tap the three dots in the top-right corner, then tap "History." Tap "Clear browsing data" at the top. Check "Browsing history," "Cached images and files," and "Cookies and site data." Tap "Clear data" to confirm.',
         tip: 'You can set the time range to "Last 7 days" or "Last 4 weeks" instead of "All time" if you want to keep older history.',
       },
       {
         title: 'Clear history on a computer — Chrome',
-        content:
-          'Open Chrome on your computer. Press Ctrl+Shift+Delete (Windows) or Command+Shift+Delete (Mac). Set the time range at the top, then check "Browsing history," "Cached images and files," and "Cookies and other site data." Click "Clear data."',
+        content: 'Open Chrome on your computer. Press Ctrl+Shift+Delete (Windows) or Command+Shift+Delete (Mac). Set the time range at the top, then check "Browsing history," "Cached images and files," and "Cookies and other site data." Click "Clear data."',
       },
       {
         title: 'Clear history on a computer — Microsoft Edge',
-        content:
-          'Open Edge. Click the three dots (...) in the top-right corner, then click "Settings." Click "Privacy, search, and services" on the left. Under "Clear browsing data," click "Choose what to clear." Check the boxes for history, cached files, and cookies, then click "Clear now."',
+        content: 'Open Edge. Click the three dots (...) in the top-right corner, then click "Settings." Click "Privacy, search, and services" on the left. Under "Clear browsing data," click "Choose what to clear." Check the boxes for history, cached files, and cookies, then click "Clear now."',
       },
       {
         title: 'Clear history on a computer — Firefox',
-        content:
-          'Open Firefox. Click the three-line menu icon in the top-right corner. Click "History," then "Clear Recent History." Choose "Everything" as the time range. Check "Browsing & Download History," "Cookies," and "Cache," then click "Clear Now."',
+        content: 'Open Firefox. Click the three-line menu icon in the top-right corner. Click "History," then "Clear Recent History." Choose "Everything" as the time range. Check "Browsing & Download History," "Cookies," and "Cache," then click "Clear Now."',
         tip: 'In Firefox, you can also press Ctrl+Shift+Delete (Windows) or Command+Shift+Delete (Mac) to open the Clear Recent History window directly.',
       },
       {
         title: 'Log back in to your websites',
-        content:
-          'After clearing cookies, you will be signed out of websites like your email, bank, and shopping accounts. Open each site, enter your email address and password as usual, and you will be back in. If your browser had your passwords saved, it will offer to fill them in for you.',
-        warning:
-          'If you do not remember a password, use the "Forgot Password" link on the website to reset it. Do not skip this step — make sure you can get back in to your important accounts before you clear cookies on a shared or public computer.',
+        content: 'After clearing cookies, you will be signed out of websites like your email, bank, and shopping accounts. Open each site, enter your email address and password as usual, and you will be back in. If your browser had your passwords saved, it will offer to fill them in for you.',
+        warning: 'If you do not remember a password, use the "Forgot Password" link on the website to reset it. Do not skip this step — make sure you can get back in to your important accounts before you clear cookies on a shared or public computer.',
       },
     ],
   },

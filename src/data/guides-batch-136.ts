@@ -131,7 +131,7 @@ Watch a demo: search YouTube for "Apple Stolen Device Protection setup" — Appl
     publishedAt: '2026-05-15',
     lastVerifiedAt: '2026-05-15',
     difficulty: 'Beginner',
-    body: `If you have a Samsung Galaxy phone and so does someone you want to send photos to — a grandchild, a friend, anyone in the room — you do not need text messaging, email, or Wi-Fi. Samsung built a free system called Quick Share that beams files between phones directly. It is fast (a 20-photo album moves in about 10 seconds), free, and quality stays full. Texting photos shrinks them; Quick Share does not.
+    body: `If you have a Samsung Galaxy phone and so does someone you want to send photos to — a grandchild, a friend, anyone in the room — you do not need text messaging, email, or Wi-Fi. Samsung built a free system called Quick Share that beams files between phones directly. It is fast (a 20-photo album moves in about 10 seconds), free, and quality stays full. Texting photos shrinks them. Quick Share does not.
 
 Quick Share works between any two Samsung Galaxy phones from 2021 and later. As of 2024, Samsung and Google merged their sharing systems, so Quick Share now also works with Google Pixel phones, Chromebooks, and some Windows laptops. The interface looks the same as Google's old Nearby Share.
 

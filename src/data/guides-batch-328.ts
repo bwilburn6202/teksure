@@ -31,7 +31,7 @@ This guide walks through ordering groceries with the Walmart app on a smartphone
       },
       {
         title: 'Set your store and pickup or delivery preference',
-        content: 'When you first open the app, it asks for your ZIP code or location. It then shows your nearest Walmart store. Tap to confirm. At the top of the screen, look for a "Pickup" or "Delivery" toggle — pick whichever you prefer. Pickup means you drive to the store; delivery means a driver brings it to you.',
+        content: 'When you first open the app, it asks for your ZIP code or location. It then shows your nearest Walmart store. Tap to confirm. At the top of the screen, look for a "Pickup" or "Delivery" toggle — pick whichever you prefer. Pickup means you drive to the store. Delivery means a driver brings it to you.',
       },
       {
         title: 'Browse and add groceries to your cart',
@@ -40,7 +40,7 @@ This guide walks through ordering groceries with the Walmart app on a smartphone
       },
       {
         title: 'Pick a pickup time or delivery window',
-        content: 'When your cart is ready, tap "Checkout." The app asks you to choose a time slot. Pickup slots are usually 1-hour windows; delivery slots are 1 to 2 hours. The earliest pickup is often 1 to 2 hours after you place the order. Pick whatever works best for you.',
+        content: 'When your cart is ready, tap "Checkout." The app asks you to choose a time slot. Pickup slots are usually 1-hour windows. Delivery slots are 1 to 2 hours. The earliest pickup is often 1 to 2 hours after you place the order. Pick whatever works best for you.',
       },
       {
         title: 'Pay with a saved card or EBT',

@@ -539,7 +539,7 @@ Here are the most useful things that changed:
 
 **Lock Screen App Icons**: You can now put any two apps directly on your lock screen for quick access without unlocking first.
 
-**Photos App Redesign**: The Photos app was completely reorganized with automatic categorization — Recent Days, People, Pets, Trips, and more. Some people love it; others preferred the old layout (you can switch back).`,
+**Photos App Redesign**: The Photos app was completely reorganized with automatic categorization — Recent Days, People, Pets, Trips, and more. Some people love it. Others preferred the old layout (you can switch back).`,
     steps: [
       {
         title: `Check that you have iOS 18`,

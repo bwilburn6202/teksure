@@ -24,7 +24,7 @@ Setting up SimpliSafe does not require any special technical knowledge. You plac
       },
       {
         title: `Place the Base Station and Keypad`,
-        content: `Put the Base Station on a shelf or table near the center of your home — not in a closet, since it needs a clear signal path to sensors and your router. Plug it into an outlet using the included power cord. Mount the Keypad near your main entry door using the adhesive on the back; peel the backing off and press firmly for 30 seconds.`,
+        content: `Put the Base Station on a shelf or table near the center of your home — not in a closet, since it needs a clear signal path to sensors and your router. Plug it into an outlet using the included power cord. Mount the Keypad near your main entry door using the adhesive on the back. Peel the backing off and press firmly for 30 seconds.`,
         warning: `Do not place the Base Station in a metal cabinet or directly on the floor — both can weaken the wireless signal to your sensors.`,
       },
       {
@@ -110,7 +110,7 @@ This guide covers setting up your first Arlo camera, choosing the best placement
     steps: [
       {
         title: `Download the Arlo app and create your account`,
-        content: `Search for "Arlo" in the App Store (iPhone) or Google Play (Android) and install the free app. Open it and tap "Create Account" — you will need an email address and a password. Arlo will send a verification email; click the link in that email before continuing. Your Arlo account is what ties your cameras, recordings, and settings together, so use an email address you check regularly.`,
+        content: `Search for "Arlo" in the App Store (iPhone) or Google Play (Android) and install the free app. Open it and tap "Create Account" — you will need an email address and a password. Arlo will send a verification email. Click the link in that email before continuing. Your Arlo account is what ties your cameras, recordings, and settings together, so use an email address you check regularly.`,
       },
       {
         title: `Set up the SmartHub or connect directly to Wi-Fi`,
@@ -603,7 +603,7 @@ This guide walks through creating an account, searching for campgrounds, reading
       },
       {
         title: `Complete the reservation and understand cancellations`,
-        content: `Select your arrival and departure dates, choose your specific site, and click "Reserve." Enter payment information — credit or debit card — and review the total, which includes the campsite fee plus the Recreation.gov booking fee. After payment, you receive a confirmation email with a reservation number. Print or save this number — some park entrance stations ask for it. To cancel, log into your account and find your reservation. Canceling at least 14 days before your arrival typically provides a partial refund; canceling closer to the arrival date forfeits more of the fee.`,
+        content: `Select your arrival and departure dates, choose your specific site, and click "Reserve." Enter payment information — credit or debit card — and review the total, which includes the campsite fee plus the Recreation.gov booking fee. After payment, you receive a confirmation email with a reservation number. Print or save this number — some park entrance stations ask for it. To cancel, log into your account and find your reservation. Canceling at least 14 days before your arrival typically provides a partial refund. Canceling closer to the arrival date forfeits more of the fee.`,
       },
     ],
   },
@@ -714,7 +714,7 @@ The Schlage Home app is where you manage access codes, view entry logs (a histor
     steps: [
       {
         title: `Gather tools and remove the old deadbolt`,
-        content: `You will need a Phillips head screwdriver (the type with an X-shaped tip) — that is the only tool required. Turn off nothing electrical; this is purely mechanical work. From inside your home, remove the two long screws that pass through the interior part of your existing deadbolt and hold the front and back pieces of the lock together. The lock will come apart into two pieces — one on each side of the door. Pull them out along with the bolt assembly in the door edge, which slides out after the main lock is removed.`,
+        content: `You will need a Phillips head screwdriver (the type with an X-shaped tip) — that is the only tool required. Turn off nothing electrical. This is purely mechanical work. From inside your home, remove the two long screws that pass through the interior part of your existing deadbolt and hold the front and back pieces of the lock together. The lock will come apart into two pieces — one on each side of the door. Pull them out along with the bolt assembly in the door edge, which slides out after the main lock is removed.`,
         warning: `Before you start, make sure your door is open and propped so it cannot close and lock you out while you are mid-installation with the lock removed.`,
       },
       {
@@ -811,7 +811,7 @@ Installing a Caséta dimmer involves working with your home's electrical wiring 
       },
       {
         title: `Remove the old switch and note the wiring`,
-        content: `Remove the switch's cover plate by unscrewing the single center screw. Then remove the two screws holding the switch itself to the electrical box inside the wall. Gently pull the switch out — you will see wires connected to it. Most standard switches have a black wire (hot — carries electricity), a white wire (neutral — completes the circuit), and a bare copper or green wire (ground — a safety wire). The Caséta dimmer requires a neutral wire; check that a white wire is present. Take a photo of the wiring before disconnecting anything.`,
+        content: `Remove the switch's cover plate by unscrewing the single center screw. Then remove the two screws holding the switch itself to the electrical box inside the wall. Gently pull the switch out — you will see wires connected to it. Most standard switches have a black wire (hot — carries electricity), a white wire (neutral — completes the circuit), and a bare copper or green wire (ground — a safety wire). The Caséta dimmer requires a neutral wire. Check that a white wire is present. Take a photo of the wiring before disconnecting anything.`,
       },
       {
         title: `Install the Caséta dimmer`,

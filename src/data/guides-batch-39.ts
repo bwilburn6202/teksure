@@ -186,7 +186,7 @@ export const guidesBatch39: Guide[] = [
       },
       {
         title: 'What specs actually matter for most users',
-        content: `For everyday use, focus on: RAM — 8 GB is the minimum; 16 GB is comfortable for keeping many tabs and apps open. Storage — 256 GB is the minimum; 512 GB gives room for photos and documents. Processor — any current Intel Core i5, AMD Ryzen 5, or Apple M-series chip is fast enough for everyday tasks. Screen size — 13–14 inches is portable; 15–16 inches is better for those who prefer larger text. Battery life — look for 10+ hours of real-world use; manufacturers' claims are often optimistic.`,
+        content: `For everyday use, focus on: RAM — 8 GB is the minimum; 16 GB is comfortable for keeping many tabs and apps open. Storage — 256 GB is the minimum; 512 GB gives room for photos and documents. Processor — any current Intel Core i5, AMD Ryzen 5, or Apple M-series chip is fast enough for everyday tasks. Screen size — 13–14 inches is portable; 15–16 inches is better for those who prefer larger text. Battery life — look for 10+ hours of real-world use. Manufacturers' claims are often optimistic.`,
       },
       {
         title: 'Recommended options by budget',
@@ -411,7 +411,7 @@ export const guidesBatch39: Guide[] = [
     thumbnailEmoji: '',
     publishedAt: '2026-04-19',
     difficulty: 'Beginner',
-    body: `Marco Polo is a free app that lets you record and send short video messages — like video voicemail. Unlike FaceTime or Zoom, both people do not have to be available at the same time. You record a message and send it; the other person watches it and records a reply when they are ready. It is popular with families spread across different time zones, grandparents staying connected with grandchildren, and anyone who wants to share a moment without scheduling a call.`,
+    body: `Marco Polo is a free app that lets you record and send short video messages — like video voicemail. Unlike FaceTime or Zoom, both people do not have to be available at the same time. You record a message and send it. The other person watches it and records a reply when they are ready. It is popular with families spread across different time zones, grandparents staying connected with grandchildren, and anyone who wants to share a moment without scheduling a call.`,
     steps: [
       {
         title: 'Download Marco Polo and create your account',
@@ -428,7 +428,7 @@ export const guidesBatch39: Guide[] = [
       },
       {
         title: 'Start a group conversation for family updates',
-        content: `Marco Polo supports group conversations — tap the compose button → "New Group" → add family members. In a group, anyone can post a video and everyone sees it. This works well for keeping a whole family connected without everyone having to be on a call at the same time. Grandparents can post videos of what they are up to; grandchildren can send videos from school events. Everyone checks in at their own pace.`,
+        content: `Marco Polo supports group conversations — tap the compose button → "New Group" → add family members. In a group, anyone can post a video and everyone sees it. This works well for keeping a whole family connected without everyone having to be on a call at the same time. Grandparents can post videos of what they are up to. Grandchildren can send videos from school events. Everyone checks in at their own pace.`,
       },
     ],
   },

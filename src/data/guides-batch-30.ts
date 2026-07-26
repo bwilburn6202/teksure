@@ -722,7 +722,7 @@ A few benefits have their own apps: Prime Video has its own app (Prime Video), P
       },
       {
         title: 'Stream Music With Prime Music',
-        content: 'Download the "Amazon Music" app. Sign in with your Amazon account. Tap the menu icon → select "Prime Music" to see content included with your membership. You can play any Prime Music playlist, album, or station at no extra charge. Shuffle mode is available; on-demand playback of specific songs works at this tier.',
+        content: 'Download the "Amazon Music" app. Sign in with your Amazon account. Tap the menu icon → select "Prime Music" to see content included with your membership. You can play any Prime Music playlist, album, or station at no extra charge. Shuffle mode is available. On-demand playback of specific songs works at this tier.',
       },
       {
         title: 'Borrow Books With Prime Reading',
@@ -818,7 +818,7 @@ Keeping the Dock uncluttered (10-15 icons) makes it more useful than trying to p
       },
       {
         title: 'Remove Apps From the Dock',
-        content: `Right-click (or Control-click) any app icon in the Dock → "Options" → "Remove from Dock." Or drag the icon out of the Dock and release — it disappears with a poof animation. Removing an app from the Dock doesn't uninstall it; it just removes the shortcut. The app stays in your Applications folder.`,
+        content: `Right-click (or Control-click) any app icon in the Dock → "Options" → "Remove from Dock." Or drag the icon out of the Dock and release — it disappears with a poof animation. Removing an app from the Dock doesn't uninstall it. It just removes the shortcut. The app stays in your Applications folder.`,
       },
       {
         title: 'Rearrange Dock Icons',

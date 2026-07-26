@@ -106,11 +106,11 @@ export const guidesBatch321: Guide[] = [
       },
       {
         title: "Turn your camera and microphone on or off during a call",
-        content: "Look for a small camera icon and microphone icon at the bottom of the call screen. Tapping the camera icon turns your video on or off; tapping the microphone icon mutes or unmutes your sound. A line through the icon means it's currently off.",
+        content: "Look for a small camera icon and microphone icon at the bottom of the call screen. Tapping the camera icon turns your video on or off. Tapping the microphone icon mutes or unmutes your sound. A line through the icon means it's currently off.",
       },
       {
         title: "End the call",
-        content: "Tap the red phone icon (sometimes labeled \"Leave call\") at the bottom of the screen to hang up. On FaceTime, this may be a red button with a phone symbol; on Google Meet, it's usually a red circle with a phone hang-up icon.",
+        content: "Tap the red phone icon (sometimes labeled \"Leave call\") at the bottom of the screen to hang up. On FaceTime, this may be a red button with a phone symbol. On Google Meet, it's usually a red circle with a phone hang-up icon.",
       },
     ],
   },
@@ -214,7 +214,7 @@ export const guidesBatch321: Guide[] = [
       {
         title: "Choose \"While Using the App\" instead of \"Always\" for location",
         content: "When an app asks for location access, choosing \"While Using the App\" (rather than \"Always\") means it can only see your location while you actually have it open, not constantly in the background.",
-        tip: "Weather and map apps genuinely need location to work; most games, shopping apps, and flashlight apps do not.",
+        tip: "Weather and map apps genuinely need location to work. Most games, shopping apps, and flashlight apps do not.",
       },
       {
         title: "Turn off permissions that don't make sense for the app",

@@ -490,7 +490,7 @@ export const guidesBatch23: Guide[] = [
     steps: [
       {
         title: 'Common menu bar icons explained',
-        content: 'Working from right to left:\n- Clock: current time and date\n- Battery (laptop only): charge percentage — a lightning bolt means charging\n- Wi-Fi: wave icon shows signal strength; no waves = disconnected\n- Bluetooth: a B-like icon; solid = connected to a device, hollow = on but not connected\n- Spotlight: the magnifying glass for searching your Mac\n- Siri: the multicolored swoosh for Siri\n- Control Center: the toggle switches icon for quick settings',
+        content: 'Working from right to left:\n- Clock: current time and date\n- Battery (laptop only): charge percentage — a lightning bolt means charging\n- Wi-Fi: wave icon shows signal strength. No waves = disconnected\n- Bluetooth: a B-like icon. Solid = connected to a device, hollow = on but not connected\n- Spotlight: the magnifying glass for searching your Mac\n- Siri: the multicolored swoosh for Siri\n- Control Center: the toggle switches icon for quick settings',
       },
       {
         title: 'Click icons to see details or toggle settings',

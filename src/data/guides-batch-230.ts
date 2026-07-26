@@ -121,7 +121,7 @@ export const guidesBatch230: Guide[] = [
       },
       {
         title: "Attach the Tracker to the Collar Correctly",
-        content: "Slide the tracker onto your pet's existing collar through the strap holders on the back of the unit. Make sure the unit sits snug against the collar with no rocking back and forth. The tracker should be in the middle of the back of the neck so it does not flop into a water bowl. Check the collar tightness: you should be able to slip two fingers between the collar and your pet's neck. A collar that is too loose can let the tracker slide off when your pet shakes; too tight can cause skin irritation. Some trackers, like Fi, come with their own collar, so you do not need a separate one. Indoor cats need a breakaway collar that pops open if it gets caught, which means a heavier tracker may not stay on; choose a lightweight model.",
+        content: "Slide the tracker onto your pet's existing collar through the strap holders on the back of the unit. Make sure the unit sits snug against the collar with no rocking back and forth. The tracker should be in the middle of the back of the neck so it does not flop into a water bowl. Check the collar tightness: you should be able to slip two fingers between the collar and your pet's neck. A collar that is too loose can let the tracker slide off when your pet shakes. Too tight can cause skin irritation. Some trackers, like Fi, come with their own collar, so you do not need a separate one. Indoor cats need a breakaway collar that pops open if it gets caught, which means a heavier tracker may not stay on. Choose a lightweight model.",
         warning: "Do not attach two trackers to one collar. The extra weight can stress an older pet's neck."
       },
       {
@@ -131,7 +131,7 @@ export const guidesBatch230: Guide[] = [
       },
       {
         title: "Find a Lost Pet in Real Time",
-        content: "If your pet ever does leave the safe zone, open the app right away. Tap the Live Tracking button, which shows a moving dot updating every few seconds. Put on shoes, grab the leash, and head out the door. Watch the dot as you walk, drive, or call out. Most trackers also have a sound feature that plays a beep or flashing light to help you find the unit in tall grass or behind a bush. If the tracker stops moving, your pet may be hiding or hurt; head to the location and look carefully. If the tracker keeps moving fast, your pet may be in a car with someone who picked them up; head to the spot, ask neighbors, and call the local animal shelter. Save the live tracking link to share with a family member who can join the search from another street.",
+        content: "If your pet ever does leave the safe zone, open the app right away. Tap the Live Tracking button, which shows a moving dot updating every few seconds. Put on shoes, grab the leash, and head out the door. Watch the dot as you walk, drive, or call out. Most trackers also have a sound feature that plays a beep or flashing light to help you find the unit in tall grass or behind a bush. If the tracker stops moving, your pet may be hiding or hurt. Head to the location and look carefully. If the tracker keeps moving fast, your pet may be in a car with someone who picked them up. Head to the spot, ask neighbors, and call the local animal shelter. Save the live tracking link to share with a family member who can join the search from another street.",
         warning: "Cell service gaps in remote areas can pause the tracker. If the dot freezes, the tracker may be working but unable to send updates. Look at the timestamp on the last known location and head there first."
       }
     ]
@@ -216,7 +216,7 @@ export const guidesBatch230: Guide[] = [
       },
       {
         title: "Bring Your Pet for a Second Visit",
-        content: "After narrowing to two or three top choices, ask if you can bring your pet for a second visit. Most communities welcome this and call it a pet meet and greet. Walk your pet around the lobby, the hallways, and the room you might rent. Watch how your pet reacts. Some pets shake with anxiety in new places; others sniff every corner with curiosity. Notice how the staff greets your pet. A warm staff that bends down to say hello is a great sign. A staff that ignores your pet may not be the right fit. Have your pet do a brief sample walk on the path you would use every day. Confirm that the path is safe, well lit, and free of loose dogs from neighbors.",
+        content: "After narrowing to two or three top choices, ask if you can bring your pet for a second visit. Most communities welcome this and call it a pet meet and greet. Walk your pet around the lobby, the hallways, and the room you might rent. Watch how your pet reacts. Some pets shake with anxiety in new places. Others sniff every corner with curiosity. Notice how the staff greets your pet. A warm staff that bends down to say hello is a great sign. A staff that ignores your pet may not be the right fit. Have your pet do a brief sample walk on the path you would use every day. Confirm that the path is safe, well lit, and free of loose dogs from neighbors.",
         tip: "Bring water, a few treats, and a familiar blanket. A pet that has been to the vet that same morning will be more stressed than usual, so pick a calm day for the visit."
       },
       {

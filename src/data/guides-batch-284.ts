@@ -25,7 +25,7 @@ The first ride is the most intimidating. After the first one, every subsequent r
     steps: [
       {
         title: 'Download the Uber app and create an account',
-        content: 'Open the App Store (iPhone) or Google Play (Android) and search for "Uber." Install the official app — look for the black square with white "Uber" text. Open it and tap "Sign up" or "Create an account." Enter your phone number; Uber sends a 6-digit code to confirm. Then add your name, email, and a credit or debit card.',
+        content: 'Open the App Store (iPhone) or Google Play (Android) and search for "Uber." Install the official app — look for the black square with white "Uber" text. Open it and tap "Sign up" or "Create an account." Enter your phone number. Uber sends a 6-digit code to confirm. Then add your name, email, and a credit or debit card.',
         warning: 'Use the official Uber app only. Several scam apps with similar names exist on the app store. The real Uber has tens of millions of reviews.',
       },
       {

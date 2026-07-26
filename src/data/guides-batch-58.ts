@@ -312,7 +312,7 @@ Shortcuts you create can be run from your home screen, from Siri (say the shortc
 
 Here is how it works: each family member installs the Life360 app on their phone and joins a shared group called a Circle. Once everyone is in the Circle, you can open the app at any time and see a map with each person's location shown as a photo bubble. You can tap a person's name to see their exact address, how fast they are moving, and how much battery their phone has.
 
-Life360 also sends you automatic notifications — called Place Alerts — when a family member arrives at or leaves from a saved location like home, school, or a family member's house. You do not have to check the app constantly; it will alert you automatically.
+Life360 also sends you automatic notifications — called Place Alerts — when a family member arrives at or leaves from a saved location like home, school, or a family member's house. You do not have to check the app constantly. It will alert you automatically.
 
 The free version of Life360 includes real-time location sharing, Place Alerts, and a two-day location history so you can see where someone was earlier in the day. A paid membership adds features like crash detection, roadside help, and stolen phone protection — but those are entirely optional.
 
@@ -320,7 +320,7 @@ All family members must agree to be in the Circle and must install the app thems
     steps: [
       {
         title: `Download Life360 on everyone's phone`,
-        content: `Each person who will be in the family Circle needs to download the Life360 app. On iPhone, search for "Life360" in the App Store. On Android, search for it in the Google Play Store. The app is free to download. One family member will create the account; others will join the group using an invitation link or code.`,
+        content: `Each person who will be in the family Circle needs to download the Life360 app. On iPhone, search for "Life360" in the App Store. On Android, search for it in the Google Play Store. The app is free to download. One family member will create the account. Others will join the group using an invitation link or code.`,
       },
       {
         title: `Create an account and set up a Circle`,
@@ -354,7 +354,7 @@ All family members must agree to be in the Circle and must install the app thems
     difficulty: `Beginner`,
     body: `Facebook Messenger is a free app that lets you send text messages, photos, and videos to your friends and family — and make voice or video calls — all over the internet, which means no phone minutes are used. As long as you have Wi-Fi or a mobile data connection, Messenger calls and messages are free no matter how far away the other person is.
 
-Messenger works with your Facebook account. If you have Facebook, you already have Messenger — your Facebook friends are automatically available to message. You do not need to share your phone number with anyone; contact is through Facebook.
+Messenger works with your Facebook account. If you have Facebook, you already have Messenger — your Facebook friends are automatically available to message. You do not need to share your phone number with anyone. Contact is through Facebook.
 
 Many families use Messenger as their main way to stay in touch because it works the same on iPhone and Android, it is free, and it makes video calls accessible even for people who are not comfortable with technology. You tap one button and you are face-to-face with someone.
 
@@ -455,7 +455,7 @@ To use Instagram, you need the app on your phone. It is available for both iPhon
 
 Outlook is not just for Microsoft email addresses. You can add Gmail, Yahoo Mail, iCloud, and most other email accounts to Outlook and manage them all from the same app. This makes it convenient if you have multiple email addresses — you can check everything in one place instead of switching between different apps.
 
-One thing that makes Outlook stand out from the iPhone or Android built-in mail apps is its Focused Inbox feature. Outlook uses a filter to separate your most important emails (from people you communicate with often, or work emails) from lower-priority emails like newsletters and automated messages. Important emails go into the Focused tab; everything else goes into Other. This helps reduce inbox clutter.
+One thing that makes Outlook stand out from the iPhone or Android built-in mail apps is its Focused Inbox feature. Outlook uses a filter to separate your most important emails (from people you communicate with often, or work emails) from lower-priority emails like newsletters and automated messages. Important emails go into the Focused tab. Everything else goes into Other. This helps reduce inbox clutter.
 
 Outlook's built-in calendar connects to your email — so if someone sends you a meeting invitation or a confirmation email with an event date, Outlook can automatically add it to your calendar. You can view your schedule, add appointments, and set reminders, all inside the same app.
 
@@ -556,7 +556,7 @@ Deleting: Emails you definitely will never need again — advertisements, old co
 
 Unsubscribing: Many cluttered inboxes are full of newsletters and promotional emails you never signed up for or no longer want. Unsubscribing from these (covered in a related guide) removes them at the source.
 
-Star or Flag important emails: Gmail lets you star emails; Outlook and Apple Mail let you flag them. Starred or flagged emails appear in a special view so you can quickly find things you need to act on.
+Star or Flag important emails: Gmail lets you star emails. Outlook and Apple Mail let you flag them. Starred or flagged emails appear in a special view so you can quickly find things you need to act on.
 
 Inbox Zero is a goal some people pursue — getting their inbox completely empty each day by responding, archiving, or deleting every email. For most people, a consistent weekly tidy-up is more realistic and equally effective.`,
     steps: [

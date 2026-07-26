@@ -54,7 +54,7 @@ export const guidesBatch324: Guide[] = [
     steps: [
       {
         title: "Check if the website offers passkeys",
-        content: "Log in to the account as usual, then look in Settings for \"Security,\" \"Sign-in options,\" or \"Passkeys.\" Major sites like Google, Amazon, and PayPal list this option clearly; if you don't see it, the site may not support passkeys yet.",
+        content: "Log in to the account as usual, then look in Settings for \"Security,\" \"Sign-in options,\" or \"Passkeys.\" Major sites like Google, Amazon, and PayPal list this option clearly. If you don't see it, the site may not support passkeys yet.",
       },
       {
         title: "Create your passkey",
@@ -163,7 +163,7 @@ export const guidesBatch324: Guide[] = [
       },
       {
         title: "Get free, unbiased help if you want it",
-        content: "Contact your State Health Insurance Help Program (SHIP) for free one-on-one counseling — find your local SHIP office at shiphelp.org. Be cautious of anyone who calls you uninvited offering to \"help\" with Medicare; SHIP counselors do not cold-call.",
+        content: "Contact your State Health Insurance Help Program (SHIP) for free one-on-one counseling — find your local SHIP office at shiphelp.org. Be cautious of anyone who calls you uninvited offering to \"help\" with Medicare. SHIP counselors do not cold-call.",
       },
     ],
   },

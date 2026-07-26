@@ -675,7 +675,7 @@ You can reach Gboard's settings by opening any app with a text field, tapping to
 
 **Autocorrect strength**
 
-Gboard lets you choose how aggressively it corrects. In Gboard settings, go to "Text correction" and find "Autocorrect." You can set it to "Off," "Modest," or "Aggressive." Modest means it only corrects clear mistakes; Aggressive means it corrects more freely, including unusual words it thinks might be wrong.
+Gboard lets you choose how aggressively it corrects. In Gboard settings, go to "Text correction" and find "Autocorrect." You can set it to "Off," "Modest," or "Aggressive." Modest means it only corrects clear mistakes. Aggressive means it corrects more freely, including unusual words it thinks might be wrong.
 
 Quick Tip: If Gboard keeps changing a specific word every time, long-press the word after autocorrect changes it. You may see an option to "Add to dictionary" — tap it to prevent the correction from happening again.`,
     steps: [

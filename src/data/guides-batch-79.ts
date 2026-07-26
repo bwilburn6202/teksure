@@ -578,7 +578,7 @@ MyChart is available at mychart.com and as a free app for iPhone and Android. Yo
       },
       {
         title: `Message your doctor through the portal`,
-        content: `To send a non-urgent message to your care team, tap "Messaging" or "Message Your Doctor." Choose the care team you want to contact — your primary care doctor, a specialist, or a nurse — and type your message. Describe your question or concern clearly and include relevant details. Responses typically arrive within one to three business days. This feature is intended for non-urgent questions; if you have a medical emergency, call 911.`,
+        content: `To send a non-urgent message to your care team, tap "Messaging" or "Message Your Doctor." Choose the care team you want to contact — your primary care doctor, a specialist, or a nurse — and type your message. Describe your question or concern clearly and include relevant details. Responses typically arrive within one to three business days. This feature is intended for non-urgent questions. If you have a medical emergency, call 911.`,
         tip: `Use the messaging feature to request prescription refills, ask about side effects you are experiencing, clarify discharge instructions, or ask about test results you have seen in the portal.`,
       },
       {

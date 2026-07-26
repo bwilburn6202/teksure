@@ -41,7 +41,7 @@ export const guidesBatch190: Guide[] = [
       },
       {
         title: "Refill the fund after you use it",
-        content: "When you take money out for a real emergency, plan how to put it back. Bump up your monthly transfer for a few months until the fund is whole again. Do not feel bad about using the money; that is what it is there for. The fund is a tool, not a trophy. Refilling it is part of how the tool works.",
+        content: "When you take money out for a real emergency, plan how to put it back. Bump up your monthly transfer for a few months until the fund is whole again. Do not feel bad about using the money. That is what it is there for. The fund is a tool, not a trophy. Refilling it is part of how the tool works.",
         warning: "Do not put the refill on a credit card. That defeats the purpose. Refill from income, not from new debt."
       }
     ]
@@ -127,7 +127,7 @@ export const guidesBatch190: Guide[] = [
       {
         title: "Link your checking account and make a first deposit",
         content: "After approval, the bank asks you to link your existing checking account so you can move money in. Type the routing and account number from your local bank. The online bank will send two small test deposits (usually a few cents each) to your local checking in two business days. Log in, see the amounts, and type them back into the online bank to confirm the link. Once the link is confirmed, transfer your first deposit (start with $100 to make sure everything works).",
-        warning: "If you do not see the test deposits within three business days, call the online bank's customer service line listed on their official website. Do not click links in any email about test deposits; go to the website directly."
+        warning: "If you do not see the test deposits within three business days, call the online bank's customer service line listed on their official website. Do not click links in any email about test deposits. Go to the website directly."
       },
       {
         title: "Set up alerts and a monthly transfer",

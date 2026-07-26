@@ -771,7 +771,7 @@ Before assuming the battery is worn out, however, it is worth checking your sett
     steps: [
       {
         title: 'Check your battery health',
-        content: "On iPhone: go to Settings > Battery > Battery Health & Charging. If the Maximum Capacity is below 80%, the battery is a lot worn and replacement will make a noticeable difference. Battery replacement through Apple costs $99 and can make an older phone feel like new. On Android: some phones show battery health in Settings > Battery; others require a diagnostic app.",
+        content: "On iPhone: go to Settings > Battery > Battery Health & Charging. If the Maximum Capacity is below 80%, the battery is a lot worn and replacement will make a noticeable difference. Battery replacement through Apple costs $99 and can make an older phone feel like new. On Android: some phones show battery health in Settings > Battery. Others require a diagnostic app.",
       },
       {
         title: 'Reduce screen brightness',

@@ -63,7 +63,7 @@ iCloud backup stores a complete snapshot of your iPhone including app data, your
 
 To turn on iCloud Backup, open the Settings app and tap your name at the top. Choose iCloud, then scroll down to iCloud Backup. Tap the toggle to turn it on. You will see the date and time of the last backup listed below the toggle.
 
-To run a backup right now rather than waiting for the automatic overnight backup, tap "Back up Now." Your phone needs to be connected to Wi-Fi and plugged in to power for this to work. The first backup may take 20 to 40 minutes; subsequent backups only transfer what has changed, so they go faster.
+To run a backup right now rather than waiting for the automatic overnight backup, tap "Back up Now." Your phone needs to be connected to Wi-Fi and plugged in to power for this to work. The first backup may take 20 to 40 minutes. Subsequent backups only transfer what has changed, so they go faster.
 
 iCloud gives every Apple ID 5 gigabytes of free storage. For most people, that fills up quickly — especially if you have a lot of photos and videos. You can upgrade storage for $1 per month (50GB), $3 per month (200GB), or $10 per month (2TB). The 50GB plan is enough for most people who also have iCloud Photos enabled.
 
@@ -624,7 +624,7 @@ Alternatives include Kanary and Privacy Bee, which offer similar services. For t
       },
       {
         title: `Review your first report`,
-        content: `Within a few days, DeleteMe sends your first Privacy Report by email. It lists every site where they found your information and what was included in each profile. Removal requests have been submitted. Some removals happen in days; others take weeks depending on the broker's process.`,
+        content: `Within a few days, DeleteMe sends your first Privacy Report by email. It lists every site where they found your information and what was included in each profile. Removal requests have been submitted. Some removals happen in days. Others take weeks depending on the broker's process.`,
         tip: `Read the report carefully. You may be surprised by how much information was publicly available — and which specific sites had the most detail. This can inform other privacy steps you take.`,
       },
       {
@@ -692,7 +692,7 @@ What DuckDuckGo does not change: your internet provider can still see the websit
 
 Technology has transformed language learning from a classroom-only experience into something you can do on your phone for 15 minutes while having your morning coffee. The apps available today are engaging, affordable, and designed for adult learners.
 
-Duolingo is the most popular language learning app and it is free. It uses short, game-like lessons that make practice feel less like studying and more like a daily game. The app tracks your progress, sends friendly reminders, and covers over 40 languages. Duolingo is excellent for building vocabulary and basic grammar. The free version is enough for most learners — the paid version removes ads. One honest note: Duolingo is best for beginners and intermediate learners; advanced learners may want to supplement it with other resources.
+Duolingo is the most popular language learning app and it is free. It uses short, game-like lessons that make practice feel less like studying and more like a daily game. The app tracks your progress, sends friendly reminders, and covers over 40 languages. Duolingo is excellent for building vocabulary and basic grammar. The free version is enough for most learners — the paid version removes ads. One honest note: Duolingo is best for beginners and intermediate learners. Advanced learners may want to supplement it with other resources.
 
 Babbel takes a more structured approach, with a focus on real-world conversation from the very beginning. Lessons are built around scenarios — ordering at a restaurant, asking for directions, making a doctor's appointment. Babbel costs around $15 per month or about $84 per year, and covers 14 languages. Many adult learners prefer Babbel's more organized curriculum.
 

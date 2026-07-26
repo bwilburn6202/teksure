@@ -128,7 +128,7 @@ Unlike physical cards, eCards arrive instantly. The recipient gets an email with
 
 **Hallmark eCards** has both free and premium options. The free cards are fully usable and include a good variety of designs. If you want access to the full library including the most popular musical and animated cards, a subscription costs around $19.99 per year (which lets you send unlimited cards). Many people find the free selection perfectly adequate.
 
-**American Greetings** works similarly. Some cards are free; others require a paid membership. Their free selection is also generous.
+**American Greetings** works similarly. Some cards are free. Others require a paid membership. Their free selection is also generous.
 
 To send a card, you don't need to download anything. You can go directly to the website from any phone or computer web browser. You'll need to create a free account with your email address to send cards — this is how the service tracks what you've sent and lets recipients verify the card is real.
 
@@ -532,7 +532,7 @@ If this tablet will also be used by children or grandchildren, Amazon Fire table
 The password for your home Wi-Fi is case-sensitive. If it doesn't work, double-check that you're typing capital letters and lowercase letters exactly as they appear on the sticker on your router (the box that provides your internet connection).
 
 **Storage and updates:**
-Fire tablets come with limited internal storage (32GB or 64GB on most models). You can add more storage using a microSD card, which slides into a small slot on the side of the tablet — this is a good idea if you plan to download many books or videos for offline viewing. The tablet will also periodically download software updates automatically. Let these install when prompted; they improve performance and fix security issues.
+Fire tablets come with limited internal storage (32GB or 64GB on most models). You can add more storage using a microSD card, which slides into a small slot on the side of the tablet — this is a good idea if you plan to download many books or videos for offline viewing. The tablet will also periodically download software updates automatically. Let these install when prompted. They improve performance and fix security issues.
 
 **Help resources:**
 Amazon has free customer service by phone, chat, and email. Go to amazon.com/help or say "Alexa, call Amazon customer service" if you have the Alexa app installed.`,
@@ -920,7 +920,7 @@ Swipe down from the top of the screen to see all notifications and quick setting
       },
       {
         title: `Download apps from the Google Play Store`,
-        content: `Tap the Google Play Store icon on your home screen (colorful triangle icon). Tap the search bar at the top and type the name of the app you want. Tap the app in the results list, then tap "Install." Free apps install right away; paid apps ask for payment confirmation. Once installed, the app appears on your home screen or in your app drawer.`,
+        content: `Tap the Google Play Store icon on your home screen (colorful triangle icon). Tap the search bar at the top and type the name of the app you want. Tap the app in the results list, then tap "Install." Free apps install right away. Paid apps ask for payment confirmation. Once installed, the app appears on your home screen or in your app drawer.`,
       },
       {
         title: `Set up Parental Controls`,
@@ -961,7 +961,7 @@ The print ordering feature is built into the Google Photos app on both iPhone an
 - **Canvas prints** — Your photo printed on canvas and mounted on a frame, ready to hang.
 - **Photo magnets, mugs, and calendars** — Personalized photo products.
 
-All products are shipped to your home. Depending on the product, shipping typically takes 3–10 business days. Standard shipping is free on orders over a certain amount; express shipping costs extra.
+All products are shipped to your home. Depending on the product, shipping typically takes 3–10 business days. Standard shipping is free on orders over a certain amount. Express shipping costs extra.
 
 **Payment:** You'll pay with the credit or debit card linked to your Google account (the same one used for Google Play purchases). If no card is on file, you'll be prompted to add one.
 

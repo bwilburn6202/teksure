@@ -61,7 +61,7 @@ export const guidesBatch195: Guide[] = [
     steps: [
       {
         title: "Find the model and serial number",
-        content: "On most appliances, the model and serial numbers are printed on a sticker inside the door, on the back, or under the lid. On electronics, look on the back of the device or in the Settings menu under About. Write both numbers down on a sticky note along with the date and store of purchase. The model number says which product it is; the serial number says which exact unit you own.",
+        content: "On most appliances, the model and serial numbers are printed on a sticker inside the door, on the back, or under the lid. On electronics, look on the back of the device or in the Settings menu under About. Write both numbers down on a sticky note along with the date and store of purchase. The model number says which product it is. The serial number says which exact unit you own.",
         tip: "Snap a photo of the sticker with your phone. The numbers are small and the sticker is often in an awkward spot. A photo lets you read it slowly later without bending behind the dryer.",
       },
       {
@@ -71,7 +71,7 @@ export const guidesBatch195: Guide[] = [
       },
       {
         title: "Fill in the required fields",
-        content: "The form asks for your name, address, email, the model number, the serial number, and the purchase date. Fields with a red asterisk must be filled in; the rest are optional. Skip questions about household income, brand preferences, or marketing surveys. Type carefully — a wrong serial number breaks the registration.",
+        content: "The form asks for your name, address, email, the model number, the serial number, and the purchase date. Fields with a red asterisk must be filled in. The rest are optional. Skip questions about household income, brand preferences, or marketing surveys. Type carefully — a wrong serial number breaks the registration.",
       },
       {
         title: "Decline marketing emails if you want",

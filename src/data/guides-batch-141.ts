@@ -4,8 +4,7 @@ export const guidesBatch141: Guide[] = [
   {
     slug: 'use-apple-health-app-for-seniors-2026',
     title: 'How to Use the iPhone Health App — A Plain-English Guide for Seniors',
-    excerpt:
-      'Track your steps, heart rate, sleep, and more. Set up your Medical ID so first responders can help you faster.',
+    excerpt: 'Track your steps, heart rate, sleep, and more. Set up your Medical ID so first responders can help you faster.',
     category: 'health-tech',
     tags: [
       'apple health',
@@ -25,7 +24,7 @@ export const guidesBatch141: Guide[] = [
     difficulty: 'Beginner',
     body: `The Health app comes pre-installed on every iPhone. You do not need to download anything — it is already there. The pink heart icon lives on your home screen. Many people ignore it, but it holds useful information and one feature — Medical ID — that could help emergency responders care for you faster.
 
-This guide walks through the most useful parts of the Health app in plain English. Some features need an Apple Watch; others work on any iPhone.
+This guide walks through the most useful parts of the Health app in plain English. Some features need an Apple Watch. Others work on any iPhone.
 
 **What you do NOT need an Apple Watch for**
 
@@ -97,32 +96,26 @@ To check if your doctor's office supports this: Open Health → tap your profile
     steps: [
       {
         title: 'Open the Health app and explore your Summary tab',
-        content:
-          'Find the pink heart icon on your iPhone home screen and tap it. You land on the Summary tab. You should already see steps and other data — your phone has been collecting this quietly. Scroll down to see what is being tracked.',
+        content: 'Find the pink heart icon on your iPhone home screen and tap it. You land on the Summary tab. You should already see steps and other data — your phone has been collecting this quietly. Scroll down to see what is being tracked.',
         tip: 'If you do not see the Health app on your home screen, swipe down from the middle of the screen and type "Health" in the search bar.',
       },
       {
         title: 'Set up your Medical ID right now',
-        content:
-          'Tap your profile picture (top-right corner) → tap Medical ID → tap Edit → fill in your name, date of birth, blood type, any allergies, your current medications, and at least one emergency contact. Make sure "Show When Locked" is switched on. Tap Done when finished.',
-        warning:
-          'Do not skip this step. Medical ID is the most important feature in the Health app. Emergency responders can read it from your locked phone without needing your password.',
+        content: 'Tap your profile picture (top-right corner) → tap Medical ID → tap Edit → fill in your name, date of birth, blood type, any allergies, your current medications, and at least one emergency contact. Make sure "Show When Locked" is switched on. Tap Done when finished.',
+        warning: 'Do not skip this step. Medical ID is the most important feature in the Health app. Emergency responders can read it from your locked phone without needing your password.',
       },
       {
         title: 'Check your step history',
-        content:
-          'Tap Browse at the bottom of the screen → tap Activity → tap Steps. You will see today\'s count and a bar chart of recent days. Tap "Week," "Month," or "Year" at the top to change the time range. This data goes back to whenever you first set up this iPhone.',
+        content: 'Tap Browse at the bottom of the screen → tap Activity → tap Steps. You will see today\'s count and a bar chart of recent days. Tap "Week," "Month," or "Year" at the top to change the time range. This data goes back to whenever you first set up this iPhone.',
         tip: 'Tap the heart icon next to "Steps" to add it as a favorite. It will then appear on your Summary tab every day.',
       },
       {
         title: 'Set up sleep tracking',
-        content:
-          'Tap Browse → tap Sleep → tap "Set Up Sleep." Choose a sleep goal (most adults aim for 7–9 hours) and set your typical bedtime and wake-up time. Keep your iPhone on your nightstand while sleeping for the best results. If you have an Apple Watch, wear it to bed for detailed sleep stage information.',
+        content: 'Tap Browse → tap Sleep → tap "Set Up Sleep." Choose a sleep goal (most adults aim for 7–9 hours) and set your typical bedtime and wake-up time. Keep your iPhone on your nightstand while sleeping for the best results. If you have an Apple Watch, wear it to bed for detailed sleep stage information.',
       },
       {
         title: 'Connect your doctor\'s health records (if available)',
-        content:
-          'Tap your profile picture → tap Health Records → tap Get Started → search for your hospital, clinic, or doctor\'s office by name. If they appear in the list, tap them and follow the steps to connect your account. Once connected, your medical history, lab results, and medications will appear in the Health app.',
+        content: 'Tap your profile picture → tap Health Records → tap Get Started → search for your hospital, clinic, or doctor\'s office by name. If they appear in the list, tap them and follow the steps to connect your account. Once connected, your medical history, lab results, and medications will appear in the Health app.',
         tip: 'Not all medical offices support this yet, but major health systems like Mayo Clinic, Kaiser Permanente, and most large hospital networks do.',
       },
     ],
@@ -131,8 +124,7 @@ To check if your doctor's office supports this: Open Health → tap your profile
   {
     slug: 'share-wifi-password-iphone-android-2026',
     title: 'How to Share Your Wi-Fi Password With a Guest or New Device',
-    excerpt:
-      'No more reading out long Wi-Fi passwords. Learn four ways to share your Wi-Fi — including the one-tap iPhone method and QR codes.',
+    excerpt: 'No more reading out long Wi-Fi passwords. Learn four ways to share your Wi-Fi — including the one-tap iPhone method and QR codes.',
     category: 'how-to',
     tags: [
       'wifi',
@@ -208,35 +200,29 @@ The password is usually 8–12 characters of random letters, numbers, and someti
 
 If you often have visitors, consider setting up a separate guest Wi-Fi network. Most modern routers support this. A guest network gives visitors internet access without letting them see your other devices (your computer, printer, or smart home devices). Check your router's app or your internet provider's app — look for "Guest Network" or "Guest Wi-Fi" in the settings.
 
-**Sources:** Apple Support — Share Wi-Fi password on iPhone (support.apple.com); Google Android Help — Share your Wi-Fi connection (support.google.com)`,
+**Sources:** Apple Support — Share Wi-Fi password on iPhone (support.apple.com). Google Android Help — Share your Wi-Fi connection (support.google.com)`,
     steps: [
       {
         title: 'Try the automatic iPhone share first (fastest method)',
-        content:
-          'Make sure the person wanting to connect is in your Contacts with their Apple ID email address listed. Both of you should have Wi-Fi and Bluetooth on, and stand close together. Have them go to Settings → Wi-Fi and tap your network. A pop-up will appear on your phone — tap "Share Password."',
+        content: 'Make sure the person wanting to connect is in your Contacts with their Apple ID email address listed. Both of you should have Wi-Fi and Bluetooth on, and stand close together. Have them go to Settings → Wi-Fi and tap your network. A pop-up will appear on your phone — tap "Share Password."',
         tip: 'If the pop-up never appears, move both phones closer together and make sure both screens are unlocked.',
       },
       {
         title: 'Use a QR code if the automatic method does not work (iPhone)',
-        content:
-          'On your iPhone, go to Settings → Wi-Fi → tap the circle-i button next to your network name. Look for a QR code on that screen. Hold your phone so the guest can point their camera at it. They tap the banner that appears and connect automatically.',
+        content: 'On your iPhone, go to Settings → Wi-Fi → tap the circle-i button next to your network name. Look for a QR code on that screen. Hold your phone so the guest can point their camera at it. They tap the banner that appears and connect automatically.',
       },
       {
         title: 'Use a QR code on Android',
-        content:
-          'Open Settings → Network & Internet → Wi-Fi → tap your connected network → tap Share or the QR code icon. The QR code appears on screen. The guest scans it with their camera to connect. On Samsung phones: Settings → Connections → Wi-Fi → tap the gear icon next to your network → tap QR code.',
+        content: 'Open Settings → Network & Internet → Wi-Fi → tap your connected network → tap Share or the QR code icon. The QR code appears on screen. The guest scans it with their camera to connect. On Samsung phones: Settings → Connections → Wi-Fi → tap the gear icon next to your network → tap QR code.',
       },
       {
         title: 'Read the password from your router label',
-        content:
-          'Turn your router around and look at the back or bottom. Find the label. Look for a field labeled "Password," "Network Key," "WPA2 Key," or "Wi-Fi Password." Type that password on the device you want to connect. Enter it exactly as shown — the password is case-sensitive.',
-        warning:
-          'If you have ever changed your Wi-Fi password, the label will no longer be accurate. Contact your internet provider for help retrieving the current password.',
+        content: 'Turn your router around and look at the back or bottom. Find the label. Look for a field labeled "Password," "Network Key," "WPA2 Key," or "Wi-Fi Password." Type that password on the device you want to connect. Enter it exactly as shown — the password is case-sensitive.',
+        warning: 'If you have ever changed your Wi-Fi password, the label will no longer be accurate. Contact your internet provider for help retrieving the current password.',
       },
       {
         title: 'Consider setting up a guest Wi-Fi network',
-        content:
-          'If friends and family visit often, a guest network keeps your main network more secure. Open your router\'s app (common apps: Xfinity app, AT&T Smart Home Manager, Spectrum app, or your router brand\'s own app). Look for "Guest Network" or "Guest Wi-Fi" and turn it on. Give guests that password instead of your main one.',
+        content: 'If friends and family visit often, a guest network keeps your main network more secure. Open your router\'s app (common apps: Xfinity app, AT&T Smart Home Manager, Spectrum app, or your router brand\'s own app). Look for "Guest Network" or "Guest Wi-Fi" and turn it on. Give guests that password instead of your main one.',
         tip: 'A guest network gives visitors internet access without letting them see your printer, computer, or smart home devices.',
       },
     ],
@@ -245,8 +231,7 @@ If you often have visitors, consider setting up a separate guest Wi-Fi network. 
   {
     slug: 'phone-storage-full-how-to-free-up-space-2026',
     title: 'How to Free Up Space When Your Phone Says "Storage Full"',
-    excerpt:
-      'That "storage full" warning stops you from taking photos and downloading apps. Here is how to fix it on iPhone and Android without losing anything important.',
+    excerpt: 'That "storage full" warning stops you from taking photos and downloading apps. Here is how to fix it on iPhone and Android without losing anything important.',
     category: 'troubleshooting',
     tags: [
       'storage full',
@@ -351,36 +336,30 @@ Check your storage monthly. It takes 30 seconds: iPhone — Settings → General
 
 If you find yourself filling up storage repeatedly, the longer-term fix is either buying more iCloud/Google storage (both cost under $3/month) or upgrading to a phone with more built-in storage when you are ready for a new device. Common storage sizes today: 128 GB (plenty for most people), 256 GB (good for people who take lots of photos), 512 GB (for heavy video recorders).
 
-**Sources:** Apple Support — iPhone Storage overview (support.apple.com); Google Help — Free up space with Google Photos (support.google.com)`,
+**Sources:** Apple Support — iPhone Storage overview (support.apple.com). Google Help — Free up space with Google Photos (support.google.com)`,
     steps: [
       {
         title: 'Check your current storage breakdown',
-        content:
-          'On iPhone: Settings → General → iPhone Storage. On Android: Settings → Storage (or Settings → Device Care → Storage on Samsung). Wait for the colored bar to finish loading. The categories listed from top to bottom tell you exactly where your storage is going. Start with the biggest category.',
+        content: 'On iPhone: Settings → General → iPhone Storage. On Android: Settings → Storage (or Settings → Device Care → Storage on Samsung). Wait for the colored bar to finish loading. The categories listed from top to bottom tell you exactly where your storage is going. Start with the biggest category.',
         tip: 'Screenshots, videos, and photos almost always top the list. If Apps is at the top, look for large streaming apps with downloaded content.',
       },
       {
         title: 'Back up your photos to the cloud and free up phone storage',
-        content:
-          'On iPhone: Settings → your name → iCloud → Photos → turn on Sync → then go to Settings → General → iPhone Storage → Photos → tap Enable next to "Optimize iPhone Storage." On Android: Open Google Photos → tap your profile picture → Photos settings → Backup → turn on Backup → after backup completes, tap your profile picture again → tap "Free up space" → tap Free up.',
-        warning:
-          'Do not delete photos from your phone until you have confirmed they are backed up to iCloud or Google Photos. Open the cloud app and make sure your photos appear there before removing anything from the phone itself.',
+        content: 'On iPhone: Settings → your name → iCloud → Photos → turn on Sync → then go to Settings → General → iPhone Storage → Photos → tap Enable next to "Optimize iPhone Storage." On Android: Open Google Photos → tap your profile picture → Photos settings → Backup → turn on Backup → after backup completes, tap your profile picture again → tap "Free up space" → tap Free up.',
+        warning: 'Do not delete photos from your phone until you have confirmed they are backed up to iCloud or Google Photos. Open the cloud app and make sure your photos appear there before removing anything from the phone itself.',
       },
       {
         title: 'Delete or offload large apps',
-        content:
-          'On iPhone: Settings → General → iPhone Storage → scroll to the app list → tap any large app → tap "Offload App" to remove the app but save your data, or "Delete App" to remove everything. On Android: Settings → Apps → tap a large app → Uninstall. Any app from the App Store or Google Play can be re-downloaded for free later.',
+        content: 'On iPhone: Settings → General → iPhone Storage → scroll to the app list → tap any large app → tap "Offload App" to remove the app but save your data, or "Delete App" to remove everything. On Android: Settings → Apps → tap a large app → Uninstall. Any app from the App Store or Google Play can be re-downloaded for free later.',
         tip: 'Check Netflix, Disney+, and Spotify for downloaded content. Open each app and look for a Downloads section — delete shows and songs you have already watched or listened to.',
       },
       {
         title: 'Clear your browser cache',
-        content:
-          'On iPhone using Safari: Settings → Safari → Clear History and Website Data → confirm. On iPhone using Chrome: Open Chrome → three dots (bottom right) → Settings → Privacy → Clear Browsing Data → check Cached Images and Files → Clear Browsing Data. On Android using Chrome: Open Chrome → three dots (top right) → Settings → Privacy and Security → Clear Browsing Data → check Cached Images and Files → Clear data.',
+        content: 'On iPhone using Safari: Settings → Safari → Clear History and Website Data → confirm. On iPhone using Chrome: Open Chrome → three dots (bottom right) → Settings → Privacy → Clear Browsing Data → check Cached Images and Files → Clear Browsing Data. On Android using Chrome: Open Chrome → three dots (top right) → Settings → Privacy and Security → Clear Browsing Data → check Cached Images and Files → Clear data.',
       },
       {
         title: 'Delete old text messages and set up auto-delete',
-        content:
-          'On iPhone: Settings → Messages → Keep Messages → choose "1 Year" or "30 Days." To delete a single conversation manually, swipe left on it in Messages and tap the red trash icon. On Android: Open Messages → press and hold a conversation → tap the trash icon. For auto-delete, open Messages → three dots → Settings → turn on "Delete old messages."',
+        content: 'On iPhone: Settings → Messages → Keep Messages → choose "1 Year" or "30 Days." To delete a single conversation manually, swipe left on it in Messages and tap the red trash icon. On Android: Open Messages → press and hold a conversation → tap the trash icon. For auto-delete, open Messages → three dots → Settings → turn on "Delete old messages."',
         tip: 'Group texts with lots of photos and videos are often the biggest message storage consumers. Check those conversations first.',
       },
     ],
@@ -389,8 +368,7 @@ If you find yourself filling up storage repeatedly, the longer-term fix is eithe
   {
     slug: 'how-to-recognize-email-phishing-2026',
     title: 'How to Recognize a Phishing Email — 7 Red Flags to Check Every Time',
-    excerpt:
-      'Phishing emails try to trick you into giving away your password or personal information. Learn the 7 warning signs and how to protect yourself.',
+    excerpt: 'Phishing emails try to trick you into giving away your password or personal information. Learn the 7 warning signs and how to protect yourself.',
     category: 'safety-guides',
     tags: [
       'phishing',
@@ -524,33 +502,27 @@ Do not panic — clicking a link does not automatically mean your accounts are c
     steps: [
       {
         title: 'Check the sender\'s actual email address — not just the display name',
-        content:
-          'In your email inbox, tap or click on the sender\'s name to reveal the full email address. Legitimate companies use their own domain: amazon.com, paypal.com, ssa.gov, cms.hhs.gov. If the email address is a Gmail account, a misspelled domain, or a random string of words, the email is almost certainly fake.',
+        content: 'In your email inbox, tap or click on the sender\'s name to reveal the full email address. Legitimate companies use their own domain: amazon.com, paypal.com, ssa.gov, cms.hhs.gov. If the email address is a Gmail account, a misspelled domain, or a random string of words, the email is almost certainly fake.',
         tip: 'Even one letter off matters. "amaz0n.com" (with a zero instead of the letter O) is a fake domain.',
       },
       {
         title: 'Look for urgency, threats, and generic greetings',
-        content:
-          'Read the email calmly. If it threatens account suspension within 24 hours, claims your benefits are at risk, or says you will face legal action — that is designed to make you panic and act without thinking. Also check the greeting: "Dear Customer" or "Dear Account Holder" instead of your name is a strong warning sign.',
-        warning:
-          'The IRS never contacts people by email. The Social Security Administration never contacts people by email about suspended numbers. Medicare does not ask for personal information by email. These are always scams.',
+        content: 'Read the email calmly. If it threatens account suspension within 24 hours, claims your benefits are at risk, or says you will face legal action — that is designed to make you panic and act without thinking. Also check the greeting: "Dear Customer" or "Dear Account Holder" instead of your name is a strong warning sign.',
+        warning: 'The IRS never contacts people by email. The Social Security Administration never contacts people by email about suspended numbers. Medicare does not ask for personal information by email. These are always scams.',
       },
       {
         title: 'Check any links before clicking them',
-        content:
-          'On a computer: hover your mouse over the link without clicking. The real web address appears in the bottom-left corner of your browser. On a phone: press and hold the link with your finger for 1-2 seconds. A preview of the web address appears. Verify the address matches the real company\'s official website before proceeding.',
+        content: 'On a computer: hover your mouse over the link without clicking. The real web address appears in the bottom-left corner of your browser. On a phone: press and hold the link with your finger for 1-2 seconds. A preview of the web address appears. Verify the address matches the real company\'s official website before proceeding.',
       },
       {
         title: 'Report the phishing email',
-        content:
-          'In Gmail: open the email → click the three dots (top right of the email) → Report phishing. In Outlook: click the three dots at the top of the email → Report → Report phishing. You can also forward phishing emails to phishing@reportfraud.ftc.gov. Reporting helps protect other people from the same scam.',
+        content: 'In Gmail: open the email → click the three dots (top right of the email) → Report phishing. In Outlook: click the three dots at the top of the email → Report → Report phishing. You can also forward phishing emails to phishing@reportfraud.ftc.gov. Reporting helps protect other people from the same scam.',
         tip: 'After reporting, delete the email from your inbox and your trash folder so you are not tempted to click anything in it later.',
       },
       {
         title: 'Act quickly if you clicked a suspicious link or shared information',
         content: 'Close the page right away without entering any information. Change your password for the account mentioned in the email — go directly to the real website by typing the address yourself. If you shared credit card information, call your bank right away. If you shared your Social Security number, visit IdentityTheft.gov to start the recovery process. Call 1-877-FTC-HELP (1-877-382-4357) for free guidance.',
-        warning:
-          'Do not use any contact information from inside the suspicious email — phone numbers and websites listed there may be fake too. Look up the real company\'s phone number on their official website or on the back of your card.',
+        warning: 'Do not use any contact information from inside the suspicious email — phone numbers and websites listed there may be fake too. Look up the real company\'s phone number on their official website or on the back of your card.',
       },
     ],
   },

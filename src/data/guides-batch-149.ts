@@ -7,8 +7,7 @@ export const guidesBatch149: Guide[] = [
   {
     slug: 'how-to-organize-your-iphone-home-screen-2026',
     title: 'How to Organize Your iPhone Home Screen',
-    excerpt:
-      'Move apps, create folders, hide clutter, and keep your most-used apps — Phone, Messages, Camera — within easy reach. Takes about 10 minutes.',
+    excerpt: 'Move apps, create folders, hide clutter, and keep your most-used apps — Phone, Messages, Camera — within easy reach. Takes about 10 minutes.',
     category: 'phone-guides',
     tags: [
       'iphone',
@@ -35,7 +34,7 @@ When Phone, Messages, and Camera are buried on page three behind twenty other ic
 
 **How to move an app**
 
-Press and hold on any app icon until the icons start to wiggle (jiggle) and small minus signs appear in their corners. Your phone is now in what Apple calls "jiggle mode" or edit mode. In this state, you can drag any icon to a new spot. Press and hold the icon you want to move, then drag it — slowly — to where you want it to go. To move an app to a different page, drag it to the edge of the screen and wait a moment; the next page will appear. When you are done arranging, tap Done in the upper-right corner, or press the side button to exit jiggle mode.
+Press and hold on any app icon until the icons start to wiggle (jiggle) and small minus signs appear in their corners. Your phone is now in what Apple calls "jiggle mode" or edit mode. In this state, you can drag any icon to a new spot. Press and hold the icon you want to move, then drag it — slowly — to where you want it to go. To move an app to a different page, drag it to the edge of the screen and wait a moment. The next page will appear. When you are done arranging, tap Done in the upper-right corner, or press the side button to exit jiggle mode.
 
 **How to create a folder**
 
@@ -61,37 +60,30 @@ Source: Apple Support — Organize apps in folders on iPhone (support.apple.com)
     steps: [
       {
         title: 'Enter jiggle mode to start rearranging',
-        content:
-          'Press and hold on any empty spot on your home screen — or press and hold on any app icon — until the icons start to wiggle. Small minus signs appear in their corners. Your phone is now ready for you to move things around. Tap Done in the upper-right corner (or press the side button) when you are finished.',
+        content: 'Press and hold on any empty spot on your home screen — or press and hold on any app icon — until the icons start to wiggle. Small minus signs appear in their corners. Your phone is now ready for you to move things around. Tap Done in the upper-right corner (or press the side button) when you are finished.',
         tip: 'Quick Tip: If a menu appears instead of jiggle mode, you pressed on an icon that has a shortcut menu. Tap anywhere else to dismiss the menu, then try pressing on an empty space on the screen.',
       },
       {
         title: 'Move your most-used apps to the first page',
-        content:
-          'While in jiggle mode, press and hold Phone, Messages, Camera, or any app you use daily, then drag it to the spot you want. To move it to the first page, drag it to the left edge of the screen and hold — the previous page will slide into view. Place it where you can reach it with your thumb.',
+        content: 'While in jiggle mode, press and hold Phone, Messages, Camera, or any app you use daily, then drag it to the spot you want. To move it to the first page, drag it to the left edge of the screen and hold — the previous page will slide into view. Place it where you can reach it with your thumb.',
       },
       {
         title: 'Set up the Dock with your four most-used apps',
-        content:
-          'The Dock is the row of four app icons at the very bottom of the screen. It appears on every home screen page. To change what is there: drag an existing Dock app out to free up a slot, then drag a new app from the home screen into the Dock. A good starting set: Phone, Messages, Camera, and Maps (or FaceTime).',
+        content: 'The Dock is the row of four app icons at the very bottom of the screen. It appears on every home screen page. To change what is there: drag an existing Dock app out to free up a slot, then drag a new app from the home screen into the Dock. A good starting set: Phone, Messages, Camera, and Maps (or FaceTime).',
         tip: 'Quick Tip: Keep the number of apps in the Dock at three or four. More than that and the icons get small and harder to tap.',
       },
       {
         title: 'Create folders to group related apps',
-        content:
-          'In jiggle mode, drag one app directly on top of another app and hold it there for one second. A folder is created with both apps inside. The phone suggests a name — tap the name field to type your own, such as "Health Apps" or "Games." Drag additional apps onto the folder to add them. To remove an app from a folder, open the folder, enter jiggle mode, and drag the app back out.',
+        content: 'In jiggle mode, drag one app directly on top of another app and hold it there for one second. A folder is created with both apps inside. The phone suggests a name — tap the name field to type your own, such as "Health Apps" or "Games." Drag additional apps onto the folder to add them. To remove an app from a folder, open the folder, enter jiggle mode, and drag the app back out.',
       },
       {
         title: 'Hide apps you rarely use (without deleting them)',
-        content:
-          'In jiggle mode, tap the small minus sign on any app you want to hide. Choose "Remove from Home Screen" — not "Delete App." The app disappears from your home screen but stays on your phone. To find it later, swipe all the way left past your last home screen page to reach App Library, where all your apps are organized automatically.',
-        warning:
-          'Be careful to choose "Remove from Home Screen" and not "Delete App." Deleting an app removes it entirely. If you choose the wrong option by accident, you can reinstall any deleted app from the App Store at no cost.',
+        content: 'In jiggle mode, tap the small minus sign on any app you want to hide. Choose "Remove from Home Screen" — not "Delete App." The app disappears from your home screen but stays on your phone. To find it later, swipe all the way left past your last home screen page to reach App Library, where all your apps are organized automatically.',
+        warning: 'Be careful to choose "Remove from Home Screen" and not "Delete App." Deleting an app removes it entirely. If you choose the wrong option by accident, you can reinstall any deleted app from the App Store at no cost.',
       },
       {
         title: 'Add a weather or calendar widget',
-        content:
-          'Press and hold an empty area of the home screen to enter jiggle mode, then tap the plus sign (+) in the upper-left corner. A widget gallery opens. Tap "Weather" to see size options — choose Medium for a good balance of information and size. Tap "Add Widget." Then drag the widget to the top of your home screen. Repeat the process and tap "Calendar" to add a calendar widget showing today\'s events.',
+        content: 'Press and hold an empty area of the home screen to enter jiggle mode, then tap the plus sign (+) in the upper-left corner. A widget gallery opens. Tap "Weather" to see size options — choose Medium for a good balance of information and size. Tap "Add Widget." Then drag the widget to the top of your home screen. Repeat the process and tap "Calendar" to add a calendar widget showing today\'s events.',
         tip: 'Quick Tip: Widgets update automatically. You do not need to tap them to get fresh information — the weather widget updates throughout the day on its own.',
       },
     ],
@@ -100,8 +92,7 @@ Source: Apple Support — Organize apps in folders on iPhone (support.apple.com)
   {
     slug: 'how-to-spot-fake-product-reviews-online-2026',
     title: 'How to Spot Fake Product Reviews Online',
-    excerpt:
-      'Fake reviews on Amazon, Google, and Facebook Marketplace can lead you toward scam products. Learn the warning signs and free tools that help you shop with confidence.',
+    excerpt: 'Fake reviews on Amazon, Google, and Facebook Marketplace can lead you toward scam products. Learn the warning signs and free tools that help you shop with confidence.',
     category: 'safety-guides',
     tags: [
       'fake reviews',
@@ -148,7 +139,7 @@ Fake review services often operate overseas, and the resulting reviews may have 
 
 **The Amazon "Verified Purchase" badge**
 
-Amazon marks reviews with "Verified Purchase" when the reviewer actually bought the item through Amazon. This is a useful signal — it means Amazon confirmed the purchase happened. That said, it does not guarantee honesty; some fake review operations do purchase the product before leaving a review to earn this badge. Still, a mix of verified and unverified reviews, where the unverified ones are more positive, is worth noticing.
+Amazon marks reviews with "Verified Purchase" when the reviewer actually bought the item through Amazon. This is a useful signal — it means Amazon confirmed the purchase happened. That said, it does not guarantee honesty. Some fake review operations do purchase the product before leaving a review to earn this badge. Still, a mix of verified and unverified reviews, where the unverified ones are more positive, is worth noticing.
 
 **Free tools: Fakespot and ReviewMeta**
 
@@ -172,37 +163,30 @@ Sources: Federal Trade Commission — Fake Reviews (ftc.gov), Amazon Help — Ab
     steps: [
       {
         title: 'Look at the date distribution of reviews',
-        content:
-          'On an Amazon product page, scroll down to the customer reviews section. Look for a bar chart that shows when reviews were posted. Real products get reviews gradually over many months. If you see a large spike where many reviews arrived at once — all in the same week — that suggests the seller arranged those reviews artificially.',
+        content: 'On an Amazon product page, scroll down to the customer reviews section. Look for a bar chart that shows when reviews were posted. Real products get reviews gradually over many months. If you see a large spike where many reviews arrived at once — all in the same week — that suggests the seller arranged those reviews artificially.',
         tip: 'Quick Tip: On mobile, the review date chart may be smaller. Zoom in with two fingers if you need a clearer look.',
       },
       {
         title: 'Read several reviews and look for identical phrasing',
-        content:
-          'Click through to read at least ten reviews, not just the first few. Genuine reviewers mention specific details — what they used the product for, what they liked and disliked. If multiple reviews use the same phrases, have the same sentence structure, or all sound like advertising copy, those reviews were likely written by the same source.',
-        warning:
-          'Short reviews that say nothing specific — "Great product! Works as described!" — are not necessarily fake, but they provide very little useful information. Rely most on detailed reviews that mention real-world use.',
+        content: 'Click through to read at least ten reviews, not just the first few. Genuine reviewers mention specific details — what they used the product for, what they liked and disliked. If multiple reviews use the same phrases, have the same sentence structure, or all sound like advertising copy, those reviews were likely written by the same source.',
+        warning: 'Short reviews that say nothing specific — "Great product! Works as described!" — are not necessarily fake, but they provide very little useful information. Rely most on detailed reviews that mention real-world use.',
       },
       {
         title: "Click on a reviewer's name to check their history",
-        content:
-          'On Amazon, click the name of any reviewer. Their review history page shows every product they have ever reviewed. Look for accounts with only one review (this product), very new accounts, or accounts that have only reviewed products from the same brand. Any of these patterns suggests the review may not be genuine.',
+        content: 'On Amazon, click the name of any reviewer. Their review history page shows every product they have ever reviewed. Look for accounts with only one review (this product), very new accounts, or accounts that have only reviewed products from the same brand. Any of these patterns suggests the review may not be genuine.',
       },
       {
         title: 'Check the overall star distribution for gaps',
-        content:
-          'On Amazon, a bar chart next to the overall star rating shows how many reviewers gave 1, 2, 3, 4, or 5 stars. Almost every real product has at least some 1-star and 2-star reviews from customers who were not satisfied. A product with zero or nearly zero low-star reviews out of thousands of reviews is suspicious.',
+        content: 'On Amazon, a bar chart next to the overall star rating shows how many reviewers gave 1, 2, 3, 4, or 5 stars. Almost every real product has at least some 1-star and 2-star reviews from customers who were not satisfied. A product with zero or nearly zero low-star reviews out of thousands of reviews is suspicious.',
       },
       {
         title: 'Run the product URL through Fakespot or ReviewMeta',
-        content:
-          'Go to fakespot.com or reviewmeta.com. Copy the full web address of the Amazon product page from your browser\'s address bar. Paste it into the search box on either site and press Enter or click Analyze. Fakespot gives the reviews a letter grade (A is trustworthy, F is highly suspicious). ReviewMeta recalculates the star rating after filtering out questionable reviews. Use both for a second opinion.',
+        content: 'Go to fakespot.com or reviewmeta.com. Copy the full web address of the Amazon product page from your browser\'s address bar. Paste it into the search box on either site and press Enter or click Analyze. Fakespot gives the reviews a letter grade (A is trustworthy, F is highly suspicious). ReviewMeta recalculates the star rating after filtering out questionable reviews. Use both for a second opinion.',
         tip: 'Quick Tip: To copy the web address on a phone, tap the address bar at the top of your browser. The full address will be highlighted. Tap Copy, then go to the review-checking site and paste it in.',
       },
       {
         title: 'Apply the same thinking to Google and Facebook reviews',
-        content:
-          'For Google business reviews, click "Google reviews" and sort by "Newest" to spot bursts of recent reviews. Look for reviewer accounts with only one review total. On Facebook Marketplace, ask the seller a specific question about the item — "Does the charger cable work with an iPhone 14?" A scammer often cannot answer because they do not have the product. Prefer sellers with a profile history and real photos.',
+        content: 'For Google business reviews, click "Google reviews" and sort by "Newest" to spot bursts of recent reviews. Look for reviewer accounts with only one review total. On Facebook Marketplace, ask the seller a specific question about the item — "Does the charger cable work with an iPhone 14?" A scammer often cannot answer because they do not have the product. Prefer sellers with a profile history and real photos.',
       },
     ],
   },
@@ -210,8 +194,7 @@ Sources: Federal Trade Commission — Fake Reviews (ftc.gov), Amazon Help — Ab
   {
     slug: 'how-to-set-up-windows-11-recall-and-privacy-2026',
     title: 'How to Manage Windows 11 Recall and Privacy Settings',
-    excerpt:
-      'Windows 11 Recall takes periodic snapshots of your screen. Learn what that means, how to turn it off, and which other privacy settings are worth reviewing.',
+    excerpt: 'Windows 11 Recall takes periodic snapshots of your screen. Learn what that means, how to turn it off, and which other privacy settings are worth reviewing.',
     category: 'windows-guides',
     tags: [
       'windows 11',
@@ -266,31 +249,25 @@ Source: Microsoft Support — Recall and privacy in Windows 11 (support.microsof
     steps: [
       {
         title: 'Open Windows Settings',
-        content:
-          'Click the Start button — the Windows logo in the lower-left corner of your screen. Then click the gear icon labeled Settings. Alternatively, press the Windows key and the letter I at the same time. The Settings window opens.',
+        content: 'Click the Start button — the Windows logo in the lower-left corner of your screen. Then click the gear icon labeled Settings. Alternatively, press the Windows key and the letter I at the same time. The Settings window opens.',
         tip: 'Quick Tip: The Windows key is the key with the four-square logo, usually between the Ctrl and Alt keys on the bottom row of your keyboard.',
       },
       {
         title: 'Check whether Recall is available and enabled on your PC',
-        content:
-          'In the Settings search bar at the top, type "Recall" and press Enter. If "Recall & snapshots" appears in the results, your computer has this feature — click it to open the settings. If nothing appears for Recall, your computer does not have the feature and you can skip to Step 4. On the Recall page, look for the "Save snapshots" toggle. If it is blue (on), click it to turn it gray (off).',
-        warning:
-          'If you turn off Recall, your computer will stop taking new screenshots. Any snapshots already stored remain on your computer until you delete them. Look for a "Delete all snapshots" button on the same page to remove stored snapshots completely.',
+        content: 'In the Settings search bar at the top, type "Recall" and press Enter. If "Recall & snapshots" appears in the results, your computer has this feature — click it to open the settings. If nothing appears for Recall, your computer does not have the feature and you can skip to Step 4. On the Recall page, look for the "Save snapshots" toggle. If it is blue (on), click it to turn it gray (off).',
+        warning: 'If you turn off Recall, your computer will stop taking new screenshots. Any snapshots already stored remain on your computer until you delete them. Look for a "Delete all snapshots" button on the same page to remove stored snapshots completely.',
       },
       {
         title: 'Turn off the Advertising ID',
-        content:
-          'In Settings, click "Privacy & security" in the left-hand menu. Then click "General." The first toggle reads "Let apps show me personalized ads by using my advertising ID." Click the toggle to turn it off (gray). This stops advertisers from tracking your computer across apps and websites. It does not change how many ads you see — only whether those ads are targeted based on your activity.',
+        content: 'In Settings, click "Privacy & security" in the left-hand menu. Then click "General." The first toggle reads "Let apps show me personalized ads by using my advertising ID." Click the toggle to turn it off (gray). This stops advertisers from tracking your computer across apps and websites. It does not change how many ads you see — only whether those ads are targeted based on your activity.',
       },
       {
         title: 'Limit diagnostic data to "required only"',
-        content:
-          'In Privacy & security, click "Diagnostics & feedback." Under the "Diagnostic data" section, click the option for "Send required diagnostic data only." This allows Windows to receive the minimum information needed for security updates while reducing the additional usage data Microsoft collects by default.',
+        content: 'In Privacy & security, click "Diagnostics & feedback." Under the "Diagnostic data" section, click the option for "Send required diagnostic data only." This allows Windows to receive the minimum information needed for security updates while reducing the additional usage data Microsoft collects by default.',
       },
       {
         title: 'Review which apps can access your location, camera, and microphone',
-        content:
-          'In Privacy & security, scroll down to the "App permissions" section. Click "Location" to see which apps can see where you are. Click "Camera" to see which apps can use your camera. Click "Microphone" to see which apps can hear you. For each category, you can toggle off access for individual apps. Remove access from any app that you do not recognize or that has no reason to need that capability.',
+        content: 'In Privacy & security, scroll down to the "App permissions" section. Click "Location" to see which apps can see where you are. Click "Camera" to see which apps can use your camera. Click "Microphone" to see which apps can hear you. For each category, you can toggle off access for individual apps. Remove access from any app that you do not recognize or that has no reason to need that capability.',
         tip: 'Quick Tip: If you use Zoom, Microsoft Teams, or FaceTime for video calls, keep the camera and microphone turned on for those specific apps. You can leave them off for everything else.',
       },
       {
@@ -303,8 +280,7 @@ Source: Microsoft Support — Recall and privacy in Windows 11 (support.microsof
   {
     slug: 'how-to-use-find-my-iphone-or-android-device-2026',
     title: 'How to Find a Lost iPhone or Android Phone',
-    excerpt:
-      'Lost your phone? Find My (iPhone) and Find My Device (Android) can show you where it is, make it ring, and lock or erase it remotely — but only if set up in advance.',
+    excerpt: 'Lost your phone? Find My (iPhone) and Find My Device (Android) can show you where it is, make it ring, and lock or erase it remotely — but only if set up in advance.',
     category: 'troubleshooting',
     tags: [
       'find my iphone',
@@ -376,37 +352,30 @@ Sources: Apple Support — Use Find My on iPhone (support.apple.com). Google Sup
     steps: [
       {
         title: 'Verify Find My is turned on right now (iPhone)',
-        content:
-          'Open the Settings app. Tap your name at the top of Settings to open your Apple ID page. Tap "Find My," then tap "Find My iPhone." Make sure the top toggle is green (on). Also turn on "Enable Offline Finding" and "Send Last Location" if they are not already green. These extra options help locate your phone even when the battery is almost dead or there is no cell signal nearby.',
+        content: 'Open the Settings app. Tap your name at the top of Settings to open your Apple ID page. Tap "Find My," then tap "Find My iPhone." Make sure the top toggle is green (on). Also turn on "Enable Offline Finding" and "Send Last Location" if they are not already green. These extra options help locate your phone even when the battery is almost dead or there is no cell signal nearby.',
         tip: 'Quick Tip: Do this check right now while you are reading this guide. It takes about 30 seconds and you will be glad you did if your phone ever goes missing.',
       },
       {
         title: 'Verify Find My Device is turned on right now (Android)',
-        content:
-          'Open the Settings app on your Android phone. Tap "Security" or "Security & privacy" (the name varies by phone brand). Look for "Find My Device" and tap it. Make sure the toggle is turned on. Also confirm your phone is signed in to a Google account: go to Settings → Accounts and look for your Gmail address in the list.',
+        content: 'Open the Settings app on your Android phone. Tap "Security" or "Security & privacy" (the name varies by phone brand). Look for "Find My Device" and tap it. Make sure the toggle is turned on. Also confirm your phone is signed in to a Google account: go to Settings → Accounts and look for your Gmail address in the list.',
       },
       {
         title: 'Locate your missing iPhone using iCloud.com or another Apple device',
-        content:
-          'If your iPhone goes missing, open a web browser on any computer and go to icloud.com. Sign in with your Apple ID email and password. Click "Find iPhone" or "Find My." Your phone will appear on a map. Click the phone name to see three choices: Play Sound (makes the phone ring loudly), Mark as Lost (locks it and shows your contact info on the screen), or Erase iPhone (deletes all data permanently). Start with Play Sound if the phone might be nearby — it could be under a couch cushion.',
+        content: 'If your iPhone goes missing, open a web browser on any computer and go to icloud.com. Sign in with your Apple ID email and password. Click "Find iPhone" or "Find My." Your phone will appear on a map. Click the phone name to see three choices: Play Sound (makes the phone ring loudly), Mark as Lost (locks it and shows your contact info on the screen), or Erase iPhone (deletes all data permanently). Start with Play Sound if the phone might be nearby — it could be under a couch cushion.',
         tip: 'Quick Tip: You can also use the Find My app on an iPad or a borrowed iPhone. Tap the Devices tab, find your phone in the list, and tap it to see location and options.',
       },
       {
         title: 'Locate your missing Android phone using android.com/find',
-        content:
-          'Open a web browser on any computer or tablet. Go to android.com/find and sign in with the same Google account that is on your missing phone. A map appears showing your phone\'s approximate location. Three options appear: Play sound (rings for five minutes even on silent), Secure device (locks the phone remotely and lets you leave a contact message), and Erase device (permanently deletes all data). Use Play sound first if the phone is likely nearby.',
-        warning:
-          'Erase device permanently removes all photos, contacts, and data on the phone. Only use this option if you are certain the phone is not recoverable and you need to protect your personal information.',
+        content: 'Open a web browser on any computer or tablet. Go to android.com/find and sign in with the same Google account that is on your missing phone. A map appears showing your phone\'s approximate location. Three options appear: Play sound (rings for five minutes even on silent), Secure device (locks the phone remotely and lets you leave a contact message), and Erase device (permanently deletes all data). Use Play sound first if the phone is likely nearby.',
+        warning: 'Erase device permanently removes all photos, contacts, and data on the phone. Only use this option if you are certain the phone is not recoverable and you need to protect your personal information.',
       },
       {
         title: 'What to do if the phone shows as offline',
-        content:
-          'If the map shows the phone as offline, it means the phone is turned off or has no internet connection. The map will display the last known location before it went offline. Write down or screenshot that location. Check back every hour — if someone turns the phone on, the location will update. Do not go to retrieve a potentially stolen phone yourself; share the location with local police instead.',
+        content: 'If the map shows the phone as offline, it means the phone is turned off or has no internet connection. The map will display the last known location before it went offline. Write down or screenshot that location. Check back every hour — if someone turns the phone on, the location will update. Do not go to retrieve a potentially stolen phone yourself. Share the location with local police instead.',
       },
       {
         title: 'Report the phone stolen and protect your accounts',
-        content:
-          'If the phone was stolen, call your wireless carrier (AT&T: 1-800-331-0500, Verizon: 1-800-922-0204, T-Mobile: 1-800-937-8997) to report the device stolen. They can disable service to the phone. Also change the passwords for your most important accounts — email, bank, and social media — from another device, since those apps were on the missing phone. Use the remote erase option in Find My or Find My Device to clear your data from the lost phone.',
+        content: 'If the phone was stolen, call your wireless carrier (AT&T: 1-800-331-0500, Verizon: 1-800-922-0204, T-Mobile: 1-800-937-8997) to report the device stolen. They can disable service to the phone. Also change the passwords for your most important accounts — email, bank, and social media — from another device, since those apps were on the missing phone. Use the remote erase option in Find My or Find My Device to clear your data from the lost phone.',
         tip: 'Quick Tip: If you use the same password for multiple accounts, this is a good time to update each one to a unique password. A free password manager like Bitwarden can help you keep track of different passwords.',
       },
     ],

@@ -99,7 +99,7 @@ This guide walks through setting up Amazon Pharmacy, transferring an existing pr
       },
       {
         title: 'Consider RxPass if you take multiple generics',
-        content: 'If you take 2 or more generic medications regularly, Prime members can subscribe to RxPass for $5 per month. RxPass covers about 60 common generic medications — including blood pressure, cholesterol, diabetes, and depression medications. There is no per-prescription copay; the $5 is your only cost. Check the RxPass medication list at amazon.com/rxpass to see if your prescriptions are covered.',
+        content: 'If you take 2 or more generic medications regularly, Prime members can subscribe to RxPass for $5 per month. RxPass covers about 60 common generic medications — including blood pressure, cholesterol, diabetes, and depression medications. There is no per-prescription copay. The $5 is your only cost. Check the RxPass medication list at amazon.com/rxpass to see if your prescriptions are covered.',
       },
     ],
   },

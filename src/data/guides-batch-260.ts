@@ -214,7 +214,7 @@ export const guidesBatch260: Guide[] = [
       },
       {
         title: "Tour at least three communities before you need one",
-        content: "Visit on a weekday morning and a weekend evening, both unannounced if the community allows it. Walk through the dementia unit, not just the lobby. Watch how the staff talks to residents who are confused or agitated. Smell the air — a faint clean smell is good; a heavy chemical or unpleasant smell is bad. Eat a meal. Ask the staff-to-resident ratio overnight (1 to 8 is reasonable, 1 to 15 is dangerous). Ask about RN coverage. Ask the turnover rate of aides. Read the most recent state inspection report at medicare.gov/care-compare.",
+        content: "Visit on a weekday morning and a weekend evening, both unannounced if the community allows it. Walk through the dementia unit, not just the lobby. Watch how the staff talks to residents who are confused or agitated. Smell the air — a faint clean smell is good. A heavy chemical or unpleasant smell is bad. Eat a meal. Ask the staff-to-resident ratio overnight (1 to 8 is reasonable, 1 to 15 is dangerous). Ask about RN coverage. Ask the turnover rate of aides. Read the most recent state inspection report at medicare.gov/care-compare.",
       },
       {
         title: "Understand what memory care actually costs",

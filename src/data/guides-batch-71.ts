@@ -216,7 +216,7 @@ To check whether you have recording available, start or join any Google Meet cal
 
 Here's how to record when it is available. During an active call, click the Activities icon — it looks like three icons stacked together, found in the bottom-right area of the screen. In the Activities panel that opens, click Recording, then click Start Recording. A message appears reminding you that all participants will be notified when recording begins. Confirm by clicking Start.
 
-Once recording is active, everyone in the meeting sees a red dot in the top-left corner of the screen — a clear signal that the call is being recorded. No one is silently recorded; Google Meet always announces it.
+Once recording is active, everyone in the meeting sees a red dot in the top-left corner of the screen — a clear signal that the call is being recorded. No one is silently recorded. Google Meet always announces it.
 
 To stop recording, go back to Activities > Recording and click Stop Recording. The recording also stops automatically when everyone leaves the call.
 
@@ -1214,7 +1214,7 @@ For brightness: in a lit room, you typically want the ring light set to 50–70%
       },
       {
         title: `Adjust brightness to your room`,
-        content: `Start at about 50–60% brightness and look at your camera preview in Zoom, Teams, or whatever app you use. Increase brightness if your face still looks dim; reduce it if your face looks washed out or overly bright. In a dark room you'll need more brightness than in a well-lit room.`,
+        content: `Start at about 50–60% brightness and look at your camera preview in Zoom, Teams, or whatever app you use. Increase brightness if your face still looks dim. Reduce it if your face looks washed out or overly bright. In a dark room you'll need more brightness than in a well-lit room.`,
       },
     ],
   },

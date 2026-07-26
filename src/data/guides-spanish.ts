@@ -1743,7 +1743,7 @@ Un consejo importante: activa las notificaciones para que tu teléfono te avise 
     publishedAt: '2026-04-16',
     body: `La cámara de tu teléfono es una herramienta increíble que llevas contigo a todos lados. Los teléfonos modernos toman fotos de excelente calidad — en muchos casos, mejores que las cámaras digitales de hace unos años. Ya sea para capturar un momento familiar, tomar una foto de una receta, o grabar un video del recital de tus nietos, tu teléfono puede hacerlo todo.
 
-La app de cámara es una de las más fáciles de usar. La mayoría de los teléfonos te permiten abrirla rápidamente sin desbloquear el teléfono — en iPhone, desliza a la izquierda desde la pantalla de bloqueo; en Android, presiona dos veces el botón de encendido.
+La app de cámara es una de las más fáciles de usar. La mayoría de los teléfonos te permiten abrirla rápidamente sin desbloquear el teléfono — en iPhone, desliza a la izquierda desde la pantalla de bloqueo. En Android, presiona dos veces el botón de encendido.
 
 Para tomar una buena foto, lo más importante es la luz. Trata de tener la luz frente a lo que estás fotografiando, no detrás. Por ejemplo, si quieres tomarle una foto a alguien, no los pongas frente a una ventana con el sol detrás porque saldrán oscuros. También asegúrate de que la lente de la cámara esté limpia — con frecuencia se ensucia con huellas de dedos.
 
@@ -2309,7 +2309,7 @@ En Android, la app se llama "Calculadora" y generalmente tiene un ícono con el 
 
 Los botones básicos son: números del 0 al 9, + (sumar), - (restar), × (multiplicar), ÷ (dividir), y = (obtener el resultado). El botón "C" o "AC" borra todo para empezar un cálculo nuevo. Si te equivocas en un número, puedes tocar el botón de borrar (generalmente una flecha con una "x") para borrar el último dígito.
 
-Un truco muy útil: si giras tu teléfono horizontalmente (de lado), la calculadora se convierte en una calculadora científica con más funciones como porcentajes, raíces cuadradas y más. Esto funciona en iPhone; en Android depende de la app que uses.`,
+Un truco muy útil: si giras tu teléfono horizontalmente (de lado), la calculadora se convierte en una calculadora científica con más funciones como porcentajes, raíces cuadradas y más. Esto funciona en iPhone. En Android depende de la app que uses.`,
     steps: [
       {
         title: 'Abre la calculadora',

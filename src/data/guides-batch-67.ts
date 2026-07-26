@@ -262,7 +262,7 @@ The range of subjects is broad. Khan Academy covers mathematics from basic arith
 
 To get started, go to khanacademy.org in a web browser or download the Khan Academy app from the App Store or Google Play. Creating a free account lets you track your progress and pick up where you left off — you can also use a Google, Apple, or Facebook account to sign in.
 
-When you browse for a subject, you'll find it broken into courses and then individual units. Each unit contains short video lessons (usually 5 to 15 minutes each) followed by practice questions. The questions adapt based on how you're doing — if you get several wrong, it slows down and gives you more foundational practice; if you're flying through, it advances.
+When you browse for a subject, you'll find it broken into courses and then individual units. Each unit contains short video lessons (usually 5 to 15 minutes each) followed by practice questions. The questions adapt based on how you're doing — if you get several wrong, it slows down and gives you more foundational practice. If you're flying through, it advances.
 
 Adults use Khan Academy regularly. Some people brush up on algebra before helping a teenager with homework. Others work through personal finance lessons to better understand investing or budgeting. Retirees explore art history or world history courses for personal enrichment. There's no age gate and no judgment for starting from the beginning.
 
@@ -529,7 +529,7 @@ Conversations are saved in the sidebar on the left. You can return to a previous
     steps: [
       {
         title: `Download the official app`,
-        content: `Search "ChatGPT" in the App Store (iPhone) or Google Play (Android). Install the app published by OpenAI — it's free. Avoid apps with similar names that charge a download fee; the real app is always free to install.`,
+        content: `Search "ChatGPT" in the App Store (iPhone) or Google Play (Android). Install the app published by OpenAI — it's free. Avoid apps with similar names that charge a download fee. The real app is always free to install.`,
         warning: `There are many fake ChatGPT apps that charge weekly subscription fees. The official OpenAI app costs nothing to download and offers a free tier.`,
       },
       {
@@ -769,7 +769,7 @@ For more creative control, standalone collage apps give you much more to work wi
 
 In Pic Collage: download the app, open it, and tap Collage. Choose a template — the templates show different grid arrangements. Then tap each slot to select which photo goes there. You can pinch to zoom within a slot, drag to reposition the photo, and switch photos in and out. Once your layout looks right, add text by tapping the T button, change the background color, or add stickers. When you're done, save to your camera roll by tapping the export or save button.
 
-Tips for a great collage: choose photos with consistent lighting and color tones so they look like they belong together. Mix portrait (vertical) and landscape (horizontal) photos thoughtfully — most grid templates look better when photos share a similar orientation. Leaving a small gap between photos (padding) makes the collage look clean; no padding gives a more modern, smooth feel.
+Tips for a great collage: choose photos with consistent lighting and color tones so they look like they belong together. Mix portrait (vertical) and landscape (horizontal) photos thoughtfully — most grid templates look better when photos share a similar orientation. Leaving a small gap between photos (padding) makes the collage look clean. No padding gives a more modern, smooth feel.
 
 When you've saved the collage, share it by text message, email, or post it on social media. For a physical copy, apps like Walgreens, CVS Photo, or Shutterfly let you order a printed version delivered to your door or available for pickup at a store.`,
     category: `tips-tricks`,
@@ -862,7 +862,7 @@ Snapfish stores all the photos you upload, and you can re-order the same photos 
 
 The menu is hidden by default, but enabling it is straightforward. Go to Settings, scroll down and tap About Phone (on some phones this is under General Management or System), then find the Build Number entry. Tap it seven times in a row. After the last tap, Android will say "You are now a developer!" and the Developer Options menu will appear in your Settings, usually near the bottom under General Management, System, or directly in the main Settings list depending on your phone brand.
 
-The most useful setting for most users is the animation speed controls. Inside Developer Options, look for three sliders: Window Animation Scale, Transition Animation Scale, and Animator Duration Scale. By default, all three are set to 1x. Changing them to 0.5x makes animations run twice as fast — menus open faster, apps launch quicker, and the whole phone feels more responsive. This is not a trick or a placebo; Android literally runs every animation in half the time.
+The most useful setting for most users is the animation speed controls. Inside Developer Options, look for three sliders: Window Animation Scale, Transition Animation Scale, and Animator Duration Scale. By default, all three are set to 1x. Changing them to 0.5x makes animations run twice as fast — menus open faster, apps launch quicker, and the whole phone feels more responsive. This is not a trick or a placebo. Android literally runs every animation in half the time.
 
 Stay Awake is another practical option. When enabled, the screen stays on while the phone is plugged in and charging. This is useful if you're using your phone as a recipe display while cooking, running a GPS route without a car mount, or monitoring something over a long period.
 

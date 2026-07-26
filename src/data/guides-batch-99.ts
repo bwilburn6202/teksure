@@ -386,7 +386,7 @@ Using Google Maps costs nothing. It does need an internet connection, either thr
 
 The first time you open Google Maps, it will ask to use your location. Tap "Allow While Using App." Without this, the app cannot know where you are, so directions will not work. You may also be asked to sign in with a Google account (the same one you use for Gmail). Signing in is optional, but it lets you save favorite places and your home address.
 
-One everyday tip: you can pinch the screen with two fingers to zoom in and out. Two fingers spreading apart zooms in; two fingers pinching together zooms out. This helps when the map feels too crowded or too far away.`,
+One everyday tip: you can pinch the screen with two fingers to zoom in and out. Two fingers spreading apart zooms in. Two fingers pinching together zooms out. This helps when the map feels too crowded or too far away.`,
     steps: [
       {
         title: 'Open Google Maps',
@@ -541,7 +541,7 @@ If you think you have been scammed or someone is trying, do not feel embarrassed
 
 The most popular brands in the US are Samsung, LG, Sony, TCL, Hisense, Vizio, and Amazon Fire TVs. They all set up in about the same way, and the setup takes 30 to 45 minutes if you have your Wi-Fi password and your streaming service passwords handy.
 
-Before you start, put the TV where you want it permanently and make sure the power cord reaches the outlet. Open the box carefully — the TV is heavy and the screen is fragile, so have someone else help you lift it. Do not touch the screen with your fingers; a soft dry cloth is the only thing that should touch it.
+Before you start, put the TV where you want it permanently and make sure the power cord reaches the outlet. Open the box carefully — the TV is heavy and the screen is fragile, so have someone else help you lift it. Do not touch the screen with your fingers. A soft dry cloth is the only thing that should touch it.
 
 You will need a few things: your Wi-Fi network name and password, the passwords for any streaming services you subscribe to (like Netflix or Prime Video), and the remote that came with the TV. Make sure the remote has fresh batteries — they usually come in the box separately.
 
@@ -827,7 +827,7 @@ A shared album (Apple's iCloud Shared Album, or a Google Photos album) is the be
       },
       {
         title: 'Tap the Share button',
-        content: 'Look for the square icon with an arrow pointing up out of it. On iPhone it is in the bottom-left corner; on Android it is usually at the bottom or top-right. Tap it to open the sharing menu.',
+        content: 'Look for the square icon with an arrow pointing up out of it. On iPhone it is in the bottom-left corner. On Android it is usually at the bottom or top-right. Tap it to open the sharing menu.',
       },
       {
         title: 'Select more than one photo if needed',
@@ -1006,7 +1006,7 @@ The controls look the same on every device. A microphone icon at the bottom to m
       },
       {
         title: 'Leave the call when done',
-        content: 'Tap the red phone icon in the middle of the bottom toolbar. The call ends for you only — the host and other attendees keep going. No one is notified in a dramatic way; you just disappear from their screens.',
+        content: 'Tap the red phone icon in the middle of the bottom toolbar. The call ends for you only — the host and other attendees keep going. No one is notified in a dramatic way. You just disappear from their screens.',
       },
     ],
     sourceName: 'Google Meet Help — Start or join a video meeting',
@@ -1301,7 +1301,7 @@ Used between people you know — your son for rent, your grandchild for a birthd
 
 The good news is that deleting an app does not lose your data permanently, in most cases. If the app stored information with your account (like Facebook posts, Gmail messages, or your Amazon order history), that stays safe on the company's servers. If you ever change your mind and install the app again, signing back in brings everything back. Only apps that stored things only on your phone — like certain notes apps or offline games — actually lose content when deleted.
 
-There are a few apps you cannot delete because they are built into the phone: on iPhone, apps like Camera, Messages, and Phone cannot be removed. You can hide them in a folder, but not delete them. On Android, the pre-installed apps vary by phone maker; some can be disabled (hidden and stopped from running) even if not fully deleted.
+There are a few apps you cannot delete because they are built into the phone: on iPhone, apps like Camera, Messages, and Phone cannot be removed. You can hide them in a folder, but not delete them. On Android, the pre-installed apps vary by phone maker. Some can be disabled (hidden and stopped from running) even if not fully deleted.
 
 Before deleting, if an app is tied to a subscription (like Netflix, a newspaper, or gym app), deleting the app does not cancel your subscription. You will keep getting charged. To stop the subscription, go to Settings > [your name] > Subscriptions on iPhone, or Play Store > your profile > Payments & subscriptions on Android, and cancel it there first.
 

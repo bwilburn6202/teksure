@@ -22,7 +22,7 @@ export const guidesBatch38: Guide[] = [
       },
       {
         title: 'Set up the Samsung Health app',
-        content: `Download the free Samsung Health app from the Google Play Store (it works on Samsung and non-Samsung Android phones running Android 14 or later). Open the app and sign in with your Samsung account — or create a free one at samsung.com/us/account. Once signed in, tap the "Ring" icon or go to the Devices section and select "Add device." Hold your ring near your phone; it will connect automatically over Bluetooth and pair within about 30 seconds.`,
+        content: `Download the free Samsung Health app from the Google Play Store (it works on Samsung and non-Samsung Android phones running Android 14 or later). Open the app and sign in with your Samsung account — or create a free one at samsung.com/us/account. Once signed in, tap the "Ring" icon or go to the Devices section and select "Add device." Hold your ring near your phone. It will connect automatically over Bluetooth and pair within about 30 seconds.`,
       },
       {
         title: 'Wear it overnight to track your sleep',
@@ -247,7 +247,7 @@ export const guidesBatch38: Guide[] = [
       {
         title: 'Know the major paid services and what they specialize in',
         content: `Netflix ($7–23/month) — the largest library of original series, dramas, documentaries, comedies, and international shows. Best for variety. Hulu ($8–18/month) — the only service with current-season episodes of network TV shows (NBC, ABC, Fox) the day after they air, plus originals and movies. Disney+ ($8–14/month) — Disney movies, all Marvel movies and series, Star Wars, National Geographic, and Pixar. Best for families and Marvel fans. Max ($10–20/month) — HBO originals (Game of Thrones, Succession), Warner Bros. movies, and CNN content. Best for prestige TV. Peacock ($6–14/month) — NBC shows, Universal movies, live sports (Olympics, NFL).`,
-        tip: `All prices listed are approximate 2026 monthly costs. Ad-supported plans are cheaper; ad-free plans cost more. Most services offer annual plans at a discount.`,
+        tip: `All prices listed are approximate 2026 monthly costs. Ad-supported plans are cheaper. Ad-free plans cost more. Most services offer annual plans at a discount.`,
       },
       {
         title: 'Know the free and cheap options',
@@ -358,7 +358,7 @@ export const guidesBatch38: Guide[] = [
       },
       {
         title: 'What does not transfer automatically (and what to do)',
-        content: `A few things need to be done manually: Two-factor authentication apps — if you use Google Authenticator or Microsoft Authenticator, you need to set those up again on the new phone using each service's account recovery process. Text message history — iPhone messages transfer via the Quick Start process; Android messages from one brand to another may not. Some apps need you to log back in. Bank and financial apps usually require re-verification for security. WhatsApp: follow the in-app transfer instructions specifically, as its messages require a separate backup process.`,
+        content: `A few things need to be done manually: Two-factor authentication apps — if you use Google Authenticator or Microsoft Authenticator, you need to set those up again on the new phone using each service's account recovery process. Text message history — iPhone messages transfer via the Quick Start process. Android messages from one brand to another may not. Some apps need you to log back in. Bank and financial apps usually require re-verification for security. WhatsApp: follow the in-app transfer instructions specifically, as its messages require a separate backup process.`,
         tip: `Before trading in or selling your old phone, do a factory reset: Settings → General → Transfer or Reset iPhone → Erase All Content and Settings (iPhone) or Settings → General Management → Reset → Factory Data Reset (Android). This removes all your personal data from the device.`,
       },
     ],
@@ -421,7 +421,7 @@ Parents can use Screen Time to manage a child's phone remotely through Family Sh
       },
       {
         title: 'Review personalized ads settings',
-        content: `In the Privacy Checkup, you will also see "Ad settings." Google shows you the topics and demographic categories it uses to decide which ads to show you. You can remove topics you find intrusive, or turn off "My Ad Center" personalization entirely. This does not reduce the number of ads you see — it makes them less targeted to your interests. Some people prefer random ads; others prefer ads related to things they have searched for.`,
+        content: `In the Privacy Checkup, you will also see "Ad settings." Google shows you the topics and demographic categories it uses to decide which ads to show you. You can remove topics you find intrusive, or turn off "My Ad Center" personalization entirely. This does not reduce the number of ads you see — it makes them less targeted to your interests. Some people prefer random ads. Others prefer ads related to things they have searched for.`,
       },
       {
         title: 'Delete stored data you no longer want',
@@ -637,7 +637,7 @@ Parents can use Screen Time to manage a child's phone remotely through Family Sh
       {
         title: 'Review apps connected to your Google account',
         content: `On any device, go to myaccount.google.com → Security → scroll down to "Third-party apps with account access." You will see every app that has been granted access to your Google account using "Sign in with Google." Tap any app in the list to see what access it has. If you see an app you no longer use or do not recognize, tap "Remove Access." This logs that app out and prevents it from accessing your Google data.`,
-        tip: `The level of access varies — some apps can only see your name and email; others can read your Gmail, Google Drive, or Google Calendar. The permissions are listed when you tap an app. More access = more reason to remove if you no longer use the app.`,
+        tip: `The level of access varies — some apps can only see your name and email. Others can read your Gmail, Google Drive, or Google Calendar. The permissions are listed when you tap an app. More access = more reason to remove if you no longer use the app.`,
       },
       {
         title: 'Review apps using Sign in with Apple',

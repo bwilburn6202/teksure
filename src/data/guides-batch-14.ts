@@ -491,7 +491,7 @@ export const guidesBatch14: Guide[] = [
     steps: [
       {
         title: 'Download Cash App and create an account',
-        content: 'Download the free "Cash App" from the App Store or Google Play. Open it and enter your phone number or email address. Create a $Cashtag — this is your unique username (like $YourName) that people use to send you money. Link a debit card or bank account to send and receive money. Cash App is free to receive money; sending money from a credit card has a 3% fee, while debit card and bank account sends are free.',
+        content: 'Download the free "Cash App" from the App Store or Google Play. Open it and enter your phone number or email address. Create a $Cashtag — this is your unique username (like $YourName) that people use to send you money. Link a debit card or bank account to send and receive money. Cash App is free to receive money. Sending money from a credit card has a 3% fee, while debit card and bank account sends are free.',
       },
       {
         title: 'Send money safely',
@@ -504,7 +504,7 @@ export const guidesBatch14: Guide[] = [
       },
       {
         title: 'Recognize Cash App scams',
-        content: `Common Cash App scams: (1) "Cash App Friday" giveaways on social media — Cash App never asks you to send money to receive a larger payout. (2) Fake Cash App support on social media or phone — Cash App has no phone support; real support is only through the app. (3) Accidental payment scam — same as with Venmo. (4) Flipping scams — "send me $50 and I'll flip it to $500." These always result in total loss.`,
+        content: `Common Cash App scams: (1) "Cash App Friday" giveaways on social media — Cash App never asks you to send money to receive a larger payout. (2) Fake Cash App support on social media or phone — Cash App has no phone support. Real support is only through the app. (3) Accidental payment scam — same as with Venmo. (4) Flipping scams — "send me $50 and I'll flip it to $500." These always result in total loss.`,
         tip: `Enable Cash App's security lock: tap the profile icon → Security → Enable Security Lock. This requires your fingerprint or PIN for every payment.`,
       },
     ],

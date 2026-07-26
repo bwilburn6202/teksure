@@ -626,7 +626,7 @@ This resource is especially valuable for seniors on fixed incomes, people betwee
       },
       {
         title: `Apply to the Program with Your Doctor's Help`,
-        content: `Most patient help programs require your doctor or healthcare provider to complete part of the application or sign a form. Contact your doctor's office and let them know you found a program you want to apply to. Many doctor's offices are familiar with these programs and can assist with the paperwork. Some programs allow applications directly online; others require a paper form mailed to the company.`,
+        content: `Most patient help programs require your doctor or healthcare provider to complete part of the application or sign a form. Contact your doctor's office and let them know you found a program you want to apply to. Many doctor's offices are familiar with these programs and can assist with the paperwork. Some programs allow applications directly online. Others require a paper form mailed to the company.`,
         warning: `Be cautious of third-party websites that charge a fee to help you apply for patient help programs. NeedyMeds and the manufacturer programs themselves are free — you should never have to pay someone to apply.`,
       },
       {

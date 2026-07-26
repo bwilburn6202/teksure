@@ -171,7 +171,7 @@ To get started, download the Crunchyroll app from the App Store, Google Play, Ro
 
 Create a free account using your email address. You do not need a credit card for the free tier. Once you are signed in, search for a show or browse the featured section.
 
-One important feature to know about: most anime series offer two audio options. "Sub" (subtitled) plays the original Japanese voice acting with English text at the bottom of the screen. "Dub" (dubbed) plays an English-language audio track recorded by American voice actors. Many fans prefer sub for authenticity; dubbed is often easier for beginners or those who do not want to read while watching. Both versions are available for most popular shows — look for the audio selector when you start an episode.
+One important feature to know about: most anime series offer two audio options. "Sub" (subtitled) plays the original Japanese voice acting with English text at the bottom of the screen. "Dub" (dubbed) plays an English-language audio track recorded by American voice actors. Many fans prefer sub for authenticity. Dubbed is often easier for beginners or those who do not want to read while watching. Both versions are available for most popular shows — look for the audio selector when you start an episode.
 
 Once you find a series, tap the first episode and start from the beginning. Crunchyroll tracks your progress automatically and will show you where you left off when you return.
 
@@ -611,7 +611,7 @@ If you need help, free, unbiased help is available through trained navigators an
       {
         title: `Enter your estimated household income`,
         content: `Enter your best estimate of your total household income for the coming year. Include all income sources: wages, self-employment, Social Security, retirement distributions, and any other income. HealthCare.gov uses this to calculate your premium tax credit (subsidy). If your income changes during the year, you can update it.`,
-        tip: `If you are not sure of your exact income, use a reasonable estimate. You can adjust it later if needed. Underestimating may mean owing money at tax time; overestimating means you might get money back.`,
+        tip: `If you are not sure of your exact income, use a reasonable estimate. You can adjust it later if needed. Underestimating may mean owing money at tax time. Overestimating means you might get money back.`,
       },
       {
         title: `Review your eligibility results`,
@@ -679,7 +679,7 @@ For recipe help in the kitchen, say "Alexa, show me a recipe for chicken soup." 
       },
       {
         title: `Set a Do Not Disturb schedule`,
-        content: `Swipe down from the top of the screen to open the settings panel. Tap "Do Not Disturb" and set start and end times for when you do not want to be interrupted by calls or announcements — for example, 10 PM to 7 AM. Alexa will still respond to your voice commands during this time; it will not ring or announce incoming calls.`,
+        content: `Swipe down from the top of the screen to open the settings panel. Tap "Do Not Disturb" and set start and end times for when you do not want to be interrupted by calls or announcements — for example, 10 PM to 7 AM. Alexa will still respond to your voice commands during this time. It will not ring or announce incoming calls.`,
       },
     ],
   },
@@ -952,7 +952,7 @@ Seeing AI is available exclusively on iPhone and iPad. Download it free from the
 
 Once opened, Seeing AI offers several "channels," each designed for a different task. You switch between channels by swiping left or right on the screen.
 
-The Short Text channel is the most used feature. When you point your camera at any printed text — a label, a sign, a menu, a receipt — the app reads it aloud almost instantly as you move the phone. There is no button to press; it reads continuously as text comes into view. This makes it ideal for quickly checking a product label or finding a specific piece of text.
+The Short Text channel is the most used feature. When you point your camera at any printed text — a label, a sign, a menu, a receipt — the app reads it aloud almost instantly as you move the phone. There is no button to press. It reads continuously as text comes into view. This makes it ideal for quickly checking a product label or finding a specific piece of text.
 
 The Documents channel is for longer pieces of text — a full letter, a page from a book, a form. The app guides you with audio cues to get the page fully in frame, then reads the whole document aloud. You can also tap anywhere on the document image to have a specific section re-read.
 

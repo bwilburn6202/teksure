@@ -210,7 +210,7 @@ export const guidesBatch253: Guide[] = [
       },
       {
         title: "Ask the right questions at your fitting",
-        content: "When you go to be fitted, ask the audiologist these five things: (1) Does my package include tinnitus programming? Some clinics charge extra. (2) Will you do pitch matching to find my tinnitus frequency? (3) Can I switch the masker on and off myself with a button? (4) Is there a smartphone app, and do you offer training on it? (5) What is your trial period and return policy? Federal law gives you at least 45 days in most states; some clinics offer 60 or 90.",
+        content: "When you go to be fitted, ask the audiologist these five things: (1) Does my package include tinnitus programming? Some clinics charge extra. (2) Will you do pitch matching to find my tinnitus frequency? (3) Can I switch the masker on and off myself with a button? (4) Is there a smartphone app, and do you offer training on it? (5) What is your trial period and return policy? Federal law gives you at least 45 days in most states. Some clinics offer 60 or 90.",
         warning: "If your audiologist dismisses tinnitus relief features or tells you they do not matter, find a different audiologist. Tinnitus management is now standard practice.",
       },
       {

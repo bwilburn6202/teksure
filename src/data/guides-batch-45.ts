@@ -541,7 +541,7 @@ To set up voicemail for the first time, you typically call your voicemail system
 
 If your phone supports Visual Voicemail, it is usually already configured by your carrier. Open the Phone app and look for a Voicemail tab or icon.
 
-Some carriers charge a small monthly fee for Visual Voicemail; others include it free with your plan. Check your plan details if you are unsure.`,
+Some carriers charge a small monthly fee for Visual Voicemail. Others include it free with your plan. Check your plan details if you are unsure.`,
     steps: [
       {
         title: `Access Voicemail Setup`,
@@ -583,7 +583,7 @@ Offline maps for Apple Maps were added in iOS 17 (released fall 2023), so you ne
 
 Downloaded maps include roads, place names, points of interest, and turn-by-turn navigation — everything you need for directions even without a connection. The map does not include live traffic updates (that requires internet) but static routing works fine offline.
 
-You choose the area to download — a city, a region, a national park, or wherever you are heading. Larger areas use more storage space. A downloaded map of a city might use 150–400 MB; a larger region could be 1–2 GB.
+You choose the area to download — a city, a region, a national park, or wherever you are heading. Larger areas use more storage space. A downloaded map of a city might use 150–400 MB. A larger region could be 1–2 GB.
 
 Offline maps expire after 30 days if you have not updated them. Apple Maps automatically updates them when you have Wi-Fi, so they stay fresh without effort.`,
     steps: [

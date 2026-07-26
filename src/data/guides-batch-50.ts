@@ -88,7 +88,7 @@ A few minutes of setup before important calls can make you look more confident, 
       },
       {
         title: `Raise your camera to eye level`,
-        content: `Set your laptop, tablet, or phone so the camera lens is roughly level with your eyes. On a laptop, a stack of books or a sturdy box under the laptop works well. On a phone, prop it up against something stable or use a small stand. Looking straight ahead into the camera looks natural; looking down into a camera placed on a desk does not.`,
+        content: `Set your laptop, tablet, or phone so the camera lens is roughly level with your eyes. On a laptop, a stack of books or a sturdy box under the laptop works well. On a phone, prop it up against something stable or use a small stand. Looking straight ahead into the camera looks natural. Looking down into a camera placed on a desk does not.`,
       },
       {
         title: `Tidy your background`,
@@ -265,7 +265,7 @@ You choose how much to share. You can share your entire photo library, or you ca
 
 Your partner receives an invitation by email and must accept it before sharing begins. Either person can end the partnership at any time in the app settings, which right away stops the automatic sharing.
 
-Both the sharer and the receiver need a Google account (free) and the Google Photos app installed. Google Photos is free and comes pre-installed on most Android phones; iPhone users can download it free from the App Store.
+Both the sharer and the receiver need a Google account (free) and the Google Photos app installed. Google Photos is free and comes pre-installed on most Android phones. iPhone users can download it free from the App Store.
 
 This feature removes the hassle of texting photos individually. Once set up, it works quietly in the background — new photos appear for your partner without any extra effort on your part.`,
     steps: [
@@ -731,7 +731,7 @@ A good refurbished phone from a reputable source can provide years of reliable u
       },
       {
         title: `Check the battery health`,
-        content: `Battery condition is the most important factor in a used phone. For iPhones, once you receive the phone, go to Settings > Battery > Battery Health and Charging. Look for "Maximum Capacity" — anything above 85% is good, above 90% is excellent. For Android phones, battery condition information varies by manufacturer; some show it in Settings > Battery, and apps like AccuBattery can estimate it.`,
+        content: `Battery condition is the most important factor in a used phone. For iPhones, once you receive the phone, go to Settings > Battery > Battery Health and Charging. Look for "Maximum Capacity" — anything above 85% is good, above 90% is excellent. For Android phones, battery condition information varies by manufacturer. Some show it in Settings > Battery, and apps like AccuBattery can estimate it.`,
         warning: `A certified refurbished iPhone from Apple comes with a new battery by default. If you buy from any other source, check the battery health before the return window closes.`,
       },
       {
@@ -838,7 +838,7 @@ A key benefit is the ability to pause the work profile. Swiping down your notifi
       },
       {
         title: `Locate your work apps`,
-        content: `After the work profile is created, look at your app drawer (the screen showing all your apps). Work profile apps have a small briefcase badge on their icon. You may see two versions of the same app — Gmail without a badge (personal) and Gmail with a briefcase badge (work). The work version connects to your work email; the personal version connects to your personal email. They do not share data.`,
+        content: `After the work profile is created, look at your app drawer (the screen showing all your apps). Work profile apps have a small briefcase badge on their icon. You may see two versions of the same app — Gmail without a badge (personal) and Gmail with a briefcase badge (work). The work version connects to your work email. The personal version connects to your personal email. They do not share data.`,
       },
       {
         title: `Pause the work profile`,

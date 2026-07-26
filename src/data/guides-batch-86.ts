@@ -63,7 +63,7 @@ The app is designed for plant owners of all experience levels. If you are brand 
 
 Greg is free to download with optional subscriptions for advanced features. It is available on iPhone and Android. The company behind Greg, Greg the Plant App Inc., has built a database of more than 1,000 common plant species with care guides written in plain English.
 
-One feature that stands out is Greg's "care journal." Every time you water, fertilize, or repot, Greg logs it. If a plant starts struggling, you can look back at the history and often spot what went wrong — maybe you went too long between waterings, or fertilized too heavily before a cold spell. This kind of record-keeping used to require a physical notebook; Greg does it automatically.`,
+One feature that stands out is Greg's "care journal." Every time you water, fertilize, or repot, Greg logs it. If a plant starts struggling, you can look back at the history and often spot what went wrong — maybe you went too long between waterings, or fertilized too heavily before a cold spell. This kind of record-keeping used to require a physical notebook. Greg does it automatically.`,
     steps: [
       {
         title: `Download Greg and create your account`,
@@ -483,7 +483,7 @@ For the app layer, the best free options are the Red Cross Tornado App, the FEMA
 
 The Air Quality Index, or AQI, is the standard scale used in the United States to measure outdoor air pollution. It runs from 0 to 500. The higher the number, the more polluted the air and the greater the health risk. The scale is divided into color-coded categories that translate the number into a plain-language recommendation.
 
-AQI categories: 0–50 is Good (green) — air quality is satisfactory. 51–100 is Moderate (yellow) — acceptable for most people, but sensitive individuals should limit prolonged outdoor exertion. 101–150 is Unhealthy for Sensitive Groups (orange) — people with asthma, lung disease, or heart disease should reduce outdoor activity. 151–200 is Unhealthy (red) — everyone may begin to experience health effects. 201–300 is Very Unhealthy (purple) — health alert; everyone should avoid prolonged outdoor exertion. Above 300 is Hazardous (maroon) — emergency conditions; everyone should stay indoors.
+AQI categories: 0–50 is Good (green) — air quality is satisfactory. 51–100 is Moderate (yellow) — acceptable for most people, but sensitive individuals should limit prolonged outdoor exertion. 101–150 is Unhealthy for Sensitive Groups (orange) — people with asthma, lung disease, or heart disease should reduce outdoor activity. 151–200 is Unhealthy (red) — everyone may begin to experience health effects. 201–300 is Very Unhealthy (purple) — health alert. Everyone should avoid prolonged outdoor exertion. Above 300 is Hazardous (maroon) — emergency conditions. Everyone should stay indoors.
 
 The best free resources for checking AQI are AirNow.gov (the official EPA air quality site), the IQAir app, and the built-in air quality data in Apple Weather and Google Weather on modern smartphones.`,
     steps: [
@@ -674,7 +674,7 @@ Fishbrain is free with optional premium features available through a subscriptio
       },
       {
         title: `Check the fishing forecast`,
-        content: `Fishbrain offers a basic fishing forecast in the free version that combines weather, moon phase, water temperature, and barometric pressure to give you a predicted fishing condition rating for any day. Access it from the home screen. Higher ratings suggest conditions where fish are more likely to be active and feeding. Free users see a general forecast; Fishbrain Pro subscribers get more detailed hourly breakdowns.`,
+        content: `Fishbrain offers a basic fishing forecast in the free version that combines weather, moon phase, water temperature, and barometric pressure to give you a predicted fishing condition rating for any day. Access it from the home screen. Higher ratings suggest conditions where fish are more likely to be active and feeding. Free users see a general forecast. Fishbrain Pro subscribers get more detailed hourly breakdowns.`,
       },
       {
         title: `Explore the community and ask questions`,
@@ -717,7 +717,7 @@ Before you go on any hike — especially your first one — it is worth spending
       {
         title: `Start navigation when you arrive at the trailhead`,
         content: `Before you leave your car, open the AllTrails trail page and tap "Start" to begin recording your hike. The app activates GPS tracking and shows your position as a blue dot moving along the trail route on the map. If you veer off the trail, the app alerts you. The screen shows your current distance traveled, elevation, pace, and estimated time remaining. You can also see the trail ahead so you know when turns are coming.`,
-        tip: `Quick Tip: Download the trail for offline use before you leave home Wi-Fi, especially if the trail is in an area with spotty cell service. Free users can download a limited number of offline maps each month; AllTrails Pro has unlimited offline downloads.`,
+        tip: `Quick Tip: Download the trail for offline use before you leave home Wi-Fi, especially if the trail is in an area with spotty cell service. Free users can download a limited number of offline maps each month. AllTrails Pro has unlimited offline downloads.`,
       },
       {
         title: `Complete your hike and write a review`,

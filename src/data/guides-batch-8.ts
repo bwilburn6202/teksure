@@ -59,7 +59,7 @@ After a one-time setup, Android Auto connects automatically whenever you start t
 
 These apps show which chargers are available right now, how fast they charge, what it costs, and what real drivers say about the location. Some EV brands like Tesla have their own built-in navigation that finds Supercharger stations automatically.`,
     steps: [
-      { title: 'Download PlugShare or ChargePoint', content: 'Open the App Store or Play Store, search for "PlugShare" or "ChargePoint," and install one or both. PlugShare shows chargers from every network; ChargePoint mainly shows its own.' },
+      { title: 'Download PlugShare or ChargePoint', content: 'Open the App Store or Play Store, search for "PlugShare" or "ChargePoint," and install one or both. PlugShare shows chargers from every network. ChargePoint mainly shows its own.' },
       { title: 'Create a free account', content: 'Sign up with email to save favorite chargers and filter by plug type. Tesla owners should also download the Tesla app to see Superchargers.' },
       { title: 'Filter by plug type', content: 'In PlugShare, tap the filter icon and pick your connector — usually J1772 for Level 2, CCS or NACS for fast charging, or Tesla. This hides stations your car cannot use.' },
       { title: 'Check real-time status', content: 'Tap a charger on the map to see if the plugs are free or in use right now. Read recent check-ins from other drivers to learn if the station works reliably.' },
@@ -232,7 +232,7 @@ TalkBack takes time to learn, but it makes Android fully usable without sight. M
       { title: 'Turn on TalkBack', content: 'Open Settings, tap Accessibility, then TalkBack, and flip the switch on. A screen will explain that gestures will change — tap OK.' },
       { title: 'Use one finger to explore', content: 'Slide your finger around the screen. TalkBack reads aloud whatever is under your finger — "Back button," "Gmail," and so on. Nothing is activated yet.' },
       { title: 'Double-tap to activate', content: 'Once you hear the name of the thing you want, lift your finger and double-tap anywhere on the screen. Android will open that app or press that button.' },
-      { title: 'Swipe to scroll', content: 'To scroll through a list or page, use two fingers instead of one — swipe up or down with both fingers together. One finger is for exploring; two fingers is for scrolling.' },
+      { title: 'Swipe to scroll', content: 'To scroll through a list or page, use two fingers instead of one — swipe up or down with both fingers together. One finger is for exploring. Two fingers is for scrolling.' },
       { title: 'Adjust speech speed', content: 'Open Settings, tap Accessibility, then TalkBack, then Text-to-Speech. Drag the speech rate slider — start slow and speed it up as you practice.' },
     ],
   },
@@ -253,7 +253,7 @@ Once paired, you can also change hearing-aid settings from the phone's Accessibi
       { title: 'Turn on your hearing aids', content: 'Open the battery doors or place the hearing aids in their charger, then take them out and put them in your ears. They need to be on and near the phone for pairing.' },
       { title: 'Open iPhone Accessibility settings', content: 'Go to Settings, tap Accessibility, then scroll down and tap Hearing Devices. The phone will start searching for nearby hearing aids.' },
       { title: 'Wait for the hearing aids to appear', content: 'Your hearing aid model (with your name, if your audiologist set it up) should appear on the screen. Tap it.' },
-      { title: 'Confirm pairing on the iPhone', content: 'A pairing request will pop up for each ear — tap Pair on both. This only happens the first time; after that, the hearing aids reconnect automatically.' },
+      { title: 'Confirm pairing on the iPhone', content: 'A pairing request will pop up for each ear — tap Pair on both. This only happens the first time. After that, the hearing aids reconnect automatically.' },
       { title: 'Test a phone call', content: 'Call someone and check that their voice plays clearly in the hearing aids. If the sound is too quiet or too loud, go back to Settings, Accessibility, Hearing Devices, and adjust the volume sliders.' },
     ],
   },
@@ -269,7 +269,7 @@ Once paired, you can also change hearing-aid settings from the phone's Accessibi
     difficulty: 'Beginner',
     body: `Live Captions turn spoken words into text on your screen in real time — no internet needed. It works on any audio: YouTube videos, FaceTime calls, podcasts, or even a video someone sends you.
 
-Both iPhone (iOS 17 and newer) and Android (version 10 and newer) support Live Captions. On iPhone it is called Live Captions; on Android it is called Live Caption (no "s").`,
+Both iPhone (iOS 17 and newer) and Android (version 10 and newer) support Live Captions. On iPhone it is called Live Captions. On Android it is called Live Caption (no "s").`,
     steps: [
       { title: 'On iPhone, open Accessibility settings', content: 'Open Settings, tap Accessibility, then scroll down to Live Captions and tap it. Flip the switch on. Your phone may download a language pack — this can take a few minutes.' },
       { title: 'On Android, open Sound settings', content: 'Open Settings, tap Sound or Sound & Vibration, then Live Caption. Flip the switch on. On some phones the setting is under Accessibility instead.' },
@@ -380,7 +380,7 @@ You control everything from a parent profile that requires your Google account p
       { title: 'Download YouTube Kids', content: 'Open the App Store (iPhone) or Play Store (Android), search for "YouTube Kids," and install the app. It has a red icon with a play button — not the regular YouTube icon.' },
       { title: 'Sign in as a parent', content: `Open the app and tap I'm a Parent. Enter your birth year and sign in with your Google account. This creates the parent profile.` },
       { title: 'Create a profile for each child', content: `Tap Add Profile and enter the child's name, age, and photo (optional). Each child gets their own profile so YouTube Kids can match content to their age.` },
-      { title: 'Pick a content setting', content: 'Choose Preschool (under 5), Younger (5–8), Older (9–12), or Approve Content Yourself. The first three filter videos automatically; the last one lets you hand-pick every allowed video.' },
+      { title: 'Pick a content setting', content: 'Choose Preschool (under 5), Younger (5–8), Older (9–12), or Approve Content Yourself. The first three filter videos automatically. The last one lets you hand-pick every allowed video.' },
       { title: 'Set a timer to limit watching', content: 'Tap the lock icon in the corner, solve the math problem, and tap Timer. Set how many minutes your child can watch — when time runs out, the app locks and tells them to take a break.' },
     ],
   },
@@ -396,7 +396,7 @@ You control everything from a parent profile that requires your Google account p
     difficulty: 'Intermediate',
     body: `Blocking websites on a home computer is a good way to keep kids safer online or to stop yourself from losing hours on distracting sites. Both Windows and Mac have built-in tools, and for Chromebooks you can use a free browser extension.
 
-The method depends on how strict you need to be. Built-in Mac Screen Time and Windows Family Safety block sites across the whole computer; browser extensions only work in that browser.`,
+The method depends on how strict you need to be. Built-in Mac Screen Time and Windows Family Safety block sites across the whole computer. Browser extensions only work in that browser.`,
     steps: [
       { title: 'On Mac, open Screen Time', content: 'Click the Apple menu, then System Settings, then Screen Time. Click Content & Privacy, then Content Restrictions, then Access to Web Content.' },
       { title: 'Add sites to the block list', content: 'On Mac, pick Limit Adult Websites to block adult content automatically, or pick Allowed Websites Only to choose exactly which sites are allowed. Click the plus to add a site URL.' },
@@ -586,7 +586,7 @@ Filters work best on a computer — mobile apps do not let you create them, thou
     thumbnailEmoji: '',
     publishedAt: '2026-04-17',
     difficulty: 'Beginner',
-    body: `Organizing email with folders or labels makes it much easier to find an old message and keeps your inbox from feeling overwhelming. Gmail calls them labels; Outlook and Apple Mail call them folders — they work the same way.
+    body: `Organizing email with folders or labels makes it much easier to find an old message and keeps your inbox from feeling overwhelming. Gmail calls them labels. Outlook and Apple Mail call them folders — they work the same way.
 
 A simple system works best: one folder for each big category (Bills, Family, Work, Travel) rather than many tiny ones. Most people do not need more than five or six.`,
     steps: [
@@ -694,7 +694,7 @@ The fixes are small: brighter or dimmer screens to match the room, bigger text, 
     difficulty: 'Beginner',
     body: `On a video call, people notice bad audio and bad lighting far more than a fuzzy camera. Cheap fixes — a desk lamp, earbuds with a mic, or an external USB microphone — make you look and sound much better for under $50.
 
-The biggest single upgrade is lighting that comes from in front of you, not behind. A window at your back turns your face into a silhouette; a lamp in front of you fixes it.`,
+The biggest single upgrade is lighting that comes from in front of you, not behind. A window at your back turns your face into a silhouette. A lamp in front of you fixes it.`,
     steps: [
       { title: 'Put your light source in front of you', content: 'Face a window or put a desk lamp behind your webcam pointing at your face. Never sit with a window or bright light behind you — it makes your face dark.' },
       { title: 'Use headphones or earbuds', content: 'Built-in laptop speakers pick up sound and cause echo. Even cheap wired earbuds fix this. AirPods, Galaxy Buds, or any Bluetooth headphones also work.' },

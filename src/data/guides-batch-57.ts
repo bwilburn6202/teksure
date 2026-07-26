@@ -771,7 +771,7 @@ None of these apps have access to your calls, voicemails, or messages — they o
       },
       {
         title: `Give the app the permissions it needs`,
-        content: `When you first open the app, it will ask for permission to access your phone calls or contacts so it can check incoming numbers. Grant the permissions it requests — they are needed for the app to work. The app does not read your contacts or listen to calls; it checks phone numbers only.`,
+        content: `When you first open the app, it will ask for permission to access your phone calls or contacts so it can check incoming numbers. Grant the permissions it requests — they are needed for the app to work. The app does not read your contacts or listen to calls. It checks phone numbers only.`,
       },
       {
         title: `Enable the caller ID or blocking feature in your phone settings`,

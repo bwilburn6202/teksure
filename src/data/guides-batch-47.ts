@@ -104,7 +104,7 @@ You can use Check In for short trips or longer journeys. The feature asks for yo
     difficulty: `Beginner`,
     body: `Journal is a free app from Apple that comes pre-installed on iPhones running iOS 17.2 or later. It's a private diary for your phone — a place to record your thoughts, save meaningful photos, log what you've been listening to, or write down how your day went.
 
-What makes Journal different from a standard notes app is that it offers personalized suggestions. Based on what's already on your phone — recent photos, songs you've played, places you've visited, or workouts you've completed — Journal will suggest prompts to help you start writing. You're never forced to write about those suggestions; they're just there to spark ideas.
+What makes Journal different from a standard notes app is that it offers personalized suggestions. Based on what's already on your phone — recent photos, songs you've played, places you've visited, or workouts you've completed — Journal will suggest prompts to help you start writing. You're never forced to write about those suggestions. They're just there to spark ideas.
 
 Every entry you write is stored privately on your device and backed up to iCloud, encrypted so only you can read it. Nobody else can see your journal, not even Apple.
 

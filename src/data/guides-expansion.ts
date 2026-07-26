@@ -206,7 +206,7 @@ If you need help choosing a plan, healthcare.gov has free in-person help. Click 
     difficulty: 'Beginner',
     body: `Registering to vote is one of the most important things you can do as a citizen, and in most states you can do it online in under five minutes. You can also check whether you are already registered and update your information if you moved or changed your name.
 
-The official starting point is vote.gov, a federal website that directs you to your state's online registration system. Most states offer online registration; a few still require a paper form.
+The official starting point is vote.gov, a federal website that directs you to your state's online registration system. Most states offer online registration. A few still require a paper form.
 
 To register, you typically need: your driver's license or state ID number, the last four digits of your Social Security number, your date of birth, and your current home address.
 
@@ -366,7 +366,7 @@ Choose which reports to view — you can request all three at once or stagger th
 
 If you find an error, you have the right to dispute it. Each bureau has an online dispute process and must investigate within 30 days.
 
-Your credit report does NOT include your credit score. The report is free; the score is sometimes sold separately. However, many banks and credit card companies now show your score for free in their app.`,
+Your credit report does NOT include your credit score. The report is free. The score is sometimes sold separately. However, many banks and credit card companies now show your score for free in their app.`,
     steps: [
       { title: 'Go to AnnualCreditReport.com', content: 'This is the only federally authorized website for free credit reports. Do not use other websites that may charge you.' },
       { title: 'Request your reports', content: 'Click "Request your free credit reports" and enter your personal information.' },
@@ -562,11 +562,11 @@ Only use Venmo with people you know. Never use it to pay strangers for online pu
     difficulty: 'Beginner',
     body: `Cash App by Block (formerly Square) lets you send and receive money, invest, and buy Bitcoin. For most people, the main use is sending money to friends and family. Download Cash App, enter your phone number or email, verify with a code, and create a unique $cashtag (your Cash App username).
 
-Link a funding source: tap your profile icon, then "Linked Banks." Enter your bank routing and account numbers or a debit card. Bank transfers are free; credit cards charge 3%.
+Link a funding source: tap your profile icon, then "Linked Banks." Enter your bank routing and account numbers or a debit card. Bank transfers are free. Credit cards charge 3%.
 
 To send money: tap the "$" on the home screen, type the amount, tap "Pay," enter the recipient's $cashtag, phone number, or email, add a note, and confirm. Money comes from your Cash App balance first, then your linked bank.
 
-When you receive money, tap "Cash Out" to transfer to your bank. Standard transfers (1-3 business days) are free; instant costs 0.5% to 1.75%.
+When you receive money, tap "Cash Out" to transfer to your bank. Standard transfers (1-3 business days) are free. Instant costs 0.5% to 1.75%.
 
 Safety is critical. Never send money to someone you do not know. Never share your sign-in code with anyone. Cash App support will never ask for your PIN or sign-in code. If someone promises to "flip" your money, it is always a scam. Turn on Security Lock in settings to require Face ID, Touch ID, or PIN every time you open the app.`,
     steps: [
@@ -574,7 +574,7 @@ Safety is critical. Never send money to someone you do not know. Never share you
       { title: 'Create your $cashtag', content: 'Choose a unique $cashtag — your public username for receiving payments (like $JohnSmith).' },
       { title: 'Link your bank account', content: 'Tap your profile → "Linked Banks" → enter routing and account numbers or add a debit card. Bank transfers are free.' },
       { title: 'Send money', content: 'Tap "$," enter amount, tap "Pay," search for recipient by $cashtag, phone, or email. Add a note and confirm.' },
-      { title: 'Cash out to your bank', content: 'Tap "Cash Out" to transfer your balance. Standard is free (1-3 days); instant has a small fee.' },
+      { title: 'Cash out to your bank', content: 'Tap "Cash Out" to transfer your balance. Standard is free (1-3 days). Instant has a small fee.' },
       { title: 'Enable Security Lock', content: 'Go to profile → Privacy & Security → Security Lock. This requires biometric or PIN authentication every time you open Cash App.' },
     ],
   },
@@ -651,7 +651,7 @@ Create an account at paypal.com — click "Sign Up," choose "Personal Account," 
 
 At checkout online, look for the PayPal button. Click it, sign in, and confirm. PayPal's buyer protection means if an item does not arrive or is a lot different from described, PayPal investigates and may refund your money — protection for eligible purchases within 180 days.
 
-Enable two-factor authentication in Settings → Security → 2-Step Verification. Never send money to strangers outside normal checkout. Never click links in emails claiming to be PayPal — always type paypal.com directly. Do not keep a large balance in PayPal; link a bank account and let PayPal pull when needed to minimize exposure if compromised.`,
+Enable two-factor authentication in Settings → Security → 2-Step Verification. Never send money to strangers outside normal checkout. Never click links in emails claiming to be PayPal — always type paypal.com directly. Do not keep a large balance in PayPal. Link a bank account and let PayPal pull when needed to minimize exposure if compromised.`,
     steps: [
       { title: 'Create a PayPal account', content: 'Go to paypal.com, click "Sign Up," choose "Personal Account," enter your details, and verify your email.' },
       { title: 'Link your bank account', content: 'In PayPal Wallet, click "Link a bank account" and enter routing and account numbers. Verify with the two small deposits PayPal makes.' },
@@ -702,7 +702,7 @@ You can add multiple cards and set a default for everyday purchases. Switch card
 
 Download your bank's official app from the App Store or Google Play Store. Verify the publisher matches your bank's name. Sign in with your online banking credentials. If you have never set up online banking, the app guides you through enrollment.
 
-Enable Face ID, Touch ID, or fingerprint login when prompted — this is faster and adds security. The home screen shows account balances; tap an account for recent transactions and available balance.
+Enable Face ID, Touch ID, or fingerprint login when prompted — this is faster and adds security. The home screen shows account balances. Tap an account for recent transactions and available balance.
 
 Key features: "Transfer" or "Move Money" for moving between accounts, "Bill Pay" for scheduling payments, "Mobile Deposit" for photographing checks, and the ability to lock/unlock your debit card if misplaced.
 
@@ -765,7 +765,7 @@ For Social Security: sign in at ssa.gov and update your payment method in accoun
 
 Double-check every digit before submitting. A wrong number can send money to someone else's account. Most banks display these numbers clearly in their app.`,
     steps: [
-      { title: 'Find your routing and account numbers', content: 'Open your bank app and look for "Account Details" or "Direct Deposit Info." The routing number is 9 digits; the account number identifies your specific account.' },
+      { title: 'Find your routing and account numbers', content: 'Open your bank app and look for "Account Details" or "Direct Deposit Info." The routing number is 9 digits. The account number identifies your specific account.' },
       { title: 'Get the form from your employer', content: 'Ask HR or payroll for a direct deposit authorization form, or look for the option in your employee portal.' },
       { title: 'Fill in bank information', content: 'Enter routing number, account number, and specify checking or savings. Double-check every digit.' },
       { title: 'Choose deposit split (optional)', content: 'Many employers let you split your paycheck — consider sending a percentage directly to savings.' },
@@ -1823,7 +1823,7 @@ To get started, ask your doctor's office for a portal activation code or enrollm
 
 Once logged in, the dashboard shows your upcoming appointments, recent messages, and new test results. Tap "Test Results" to view lab work — results often appear within 1-2 days of your test. Tap "Messages" to send a secure message to your doctor's team about non-emergency questions (they typically respond within 1-2 business days).
 
-To schedule or cancel an appointment, look for "Appointments" → "Schedule an Appointment." Some offices let you book directly; others let you request a time and the office confirms.
+To schedule or cancel an appointment, look for "Appointments" → "Schedule an Appointment." Some offices let you book directly. Others let you request a time and the office confirms.
 
 For prescription refills, go to "Medications" → "Request Refill." Select the medication and your preferred pharmacy. Your doctor approves and sends it to the pharmacy.
 
@@ -1833,7 +1833,7 @@ Patient portals are secure — your health information is protected by federal l
       { title: 'Create your account', content: 'Go to the portal website or download the MyChart app. Use the activation code to create an account with your email and a strong password.' },
       { title: 'View test results', content: 'Tap "Test Results" to see lab work. Results typically appear within 1-2 days of your test.' },
       { title: 'Message your doctor', content: `Tap "Messages" to send secure, non-emergency questions to your doctor's team. Expect a reply within 1-2 business days.` },
-      { title: 'Schedule appointments', content: 'Go to "Appointments" to schedule, reschedule, or cancel visits. Some offices allow direct booking; others confirm your request.' },
+      { title: 'Schedule appointments', content: 'Go to "Appointments" to schedule, reschedule, or cancel visits. Some offices allow direct booking. Others confirm your request.' },
       { title: 'Request prescription refills', content: 'Go to "Medications" → "Request Refill." Select the medication and pharmacy. Your doctor approves and sends it.' },
     ],
   },
@@ -2721,7 +2721,7 @@ For Google Home: open the Google Home app → profile icon → Assistant Setting
 
 Once linked, try: "Play my Liked Songs." "Play the Daily Mix." "Play [artist name]." "Play [playlist name]." "What song is this?" You can also use Spotify Connect — open Spotify on your phone, start playing, tap "Devices Available," and select your speaker for full app-controlled playback.
 
-Both free and premium Spotify accounts work. Free accounts have ads between songs; Premium has no ads and higher quality audio.`,
+Both free and premium Spotify accounts work. Free accounts have ads between songs. Premium has no ads and higher quality audio.`,
     steps: [
       { title: `Open your speaker's app`, content: 'Echo: open Alexa app. Google Home: open Google Home app.' },
       { title: 'Link Spotify', content: 'Alexa: More → Settings → Music → Link New Service → Spotify. Google: profile → Assistant Settings → Music → Spotify.' },
@@ -3585,7 +3585,7 @@ Zoom tips: position your camera at eye level for the most natural look. Make sur
 
 On iPhone, the Calculator app has numbers on the bottom, basic operations on the right (plus, minus, multiply, divide), and clear/percent/plus-minus buttons at the top. Rotate your phone to landscape mode (sideways) to reveal a scientific calculator with advanced functions.
 
-On Android, the Calculator app (or Google Calculator) works the same way. Some Android phones have it in the app drawer; you can also say "OK Google, open calculator" or search for "calculator" to find it.
+On Android, the Calculator app (or Google Calculator) works the same way. Some Android phones have it in the app drawer. You can also say "OK Google, open calculator" or search for "calculator" to find it.
 
 Here are practical ways to use your calculator every day:
 
@@ -3762,7 +3762,7 @@ To set up Nearby Share, go to Settings then Google then Devices and sharing then
 
 To share something, find the content you want to send — a photo, file, or link. Tap the share button (usually three connected dots or a square with an arrow). In the sharing options, look for "Nearby Share" or "Quick Share." Tap it. Your phone searches for nearby devices. When the other person's device appears, tap their name.
 
-The receiving device shows a notification asking to accept the file. Once they tap "Accept," the transfer begins. Small files transfer in seconds; larger files may take a minute or two.
+The receiving device shows a notification asking to accept the file. Once they tap "Accept," the transfer begins. Small files transfer in seconds. Larger files may take a minute or two.
 
 On Samsung phones, this feature is called "Quick Share." The process is the same — tap the share button on any content and look for "Quick Share" in the options.
 
@@ -4962,7 +4962,7 @@ Set a Screen Time passcode that is different from the child's login password. Th
     body: `A VPN (Virtual Private Network) creates a secure, private tunnel for your internet connection — protecting your data when you are on public WiFi or accessing sensitive accounts. Many employers require employees to use a VPN when working from home. Consumer VPNs also protect your privacy from advertisers and help keep your browsing secure on the go.`,
     steps: [
       { title: 'Understand when you need a VPN', content: 'Use a VPN whenever you are on public WiFi — at a coffee shop, hotel, airport, or library. It is also useful if your employer requires it for accessing company systems remotely. For everyday home internet use, a VPN is optional but adds an extra layer of privacy.' },
-      { title: 'Choose a reputable VPN service', content: 'Trusted consumer VPN services include NordVPN, ExpressVPN, and Proton VPN (which has a free tier). Avoid free VPNs from unknown companies — they may sell your data. Many employers provide a VPN app; check with your IT department.' },
+      { title: 'Choose a reputable VPN service', content: 'Trusted consumer VPN services include NordVPN, ExpressVPN, and Proton VPN (which has a free tier). Avoid free VPNs from unknown companies — they may sell your data. Many employers provide a VPN app. Check with your IT department.' },
       { title: 'Install the VPN app', content: `Download the VPN app from the provider's official website or your phone's app store. Create an account and follow the setup instructions. Most VPN apps require you to allow a VPN configuration on your device — approve this when prompted.` },
       { title: 'Connect to the VPN', content: 'Open the VPN app and tap or click "Connect." The app will choose the best server automatically, or you can choose a specific country. A VPN icon — often a small padlock or key — will appear in your status bar when you are connected.' },
       { title: 'Disconnect when done', content: 'When you are finished working or leave the public location, open the VPN app and tap "Disconnect." Leaving a VPN on continuously can slow your connection. For home use, connect only when needed for extra privacy.' },

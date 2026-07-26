@@ -86,7 +86,7 @@ This guide walks through checking whether your laptop qualifies, making a USB in
     steps: [
       {
         title: 'Check whether your laptop is officially supported',
-        content: 'Go to chromeos.google/products/chromeos-flex/certified-models on any computer. The page lists every officially tested laptop. Search by brand and model. If your model is listed, ChromeOS Flex is guaranteed to work. If not, it may still work; Google supports the install on almost any x86-64 laptop with 4 GB of RAM and 16 GB of storage made after 2010. Chromebooks themselves cannot install ChromeOS Flex (they already run ChromeOS).',
+        content: 'Go to chromeos.google/products/chromeos-flex/certified-models on any computer. The page lists every officially tested laptop. Search by brand and model. If your model is listed, ChromeOS Flex is guaranteed to work. If not, it may still work. Google supports the install on almost any x86-64 laptop with 4 GB of RAM and 16 GB of storage made after 2010. Chromebooks themselves cannot install ChromeOS Flex (they already run ChromeOS).',
         warning: 'ChromeOS Flex does not run Microsoft Word, Excel, iTunes, Photoshop, or any Windows-only program. It runs websites and Chrome apps only. If you need Word installed locally, ChromeOS Flex is not for you — use Windows 11 or buy a new PC instead.',
       },
       {
@@ -113,7 +113,7 @@ This guide walks through checking whether your laptop qualifies, making a USB in
       },
       {
         title: 'Try ChromeOS Flex without installing first',
-        content: 'The USB boots into a "try first" mode. You can browse, sign in to Google, and test everything — WiFi, sound, keyboard, trackpad — without erasing Windows. Spend 15 minutes making sure everything works before you install. If sound does not work, WiFi does not work, or the screen flickers badly, do not install; ChromeOS Flex is not compatible with this laptop.',
+        content: 'The USB boots into a "try first" mode. You can browse, sign in to Google, and test everything — WiFi, sound, keyboard, trackpad — without erasing Windows. Spend 15 minutes making sure everything works before you install. If sound does not work, WiFi does not work, or the screen flickers badly, do not install. ChromeOS Flex is not compatible with this laptop.',
       },
       {
         title: 'Install ChromeOS Flex over Windows',

@@ -748,7 +748,7 @@ A better option banks don't always advertise: link your checking account to your
     publishedAt: '2026-05-03',
     lastVerifiedAt: '2026-05-03',
     difficulty: 'Beginner',
-    body: `Your credit score is a 3-digit number (typically ranging from 300 to 850) that lenders use to decide whether to approve you for a loan, credit card, or apartment rental, and at what interest rate. A higher number means lower risk in the lender's eyes. Scores above 700 are generally considered good; above 750 is excellent.
+    body: `Your credit score is a 3-digit number (typically ranging from 300 to 850) that lenders use to decide whether to approve you for a loan, credit card, or apartment rental, and at what interest rate. A higher number means lower risk in the lender's eyes. Scores above 700 are generally considered good. Above 750 is excellent.
 
 Checking your own credit score does not hurt your score — this is called a "soft inquiry" and has no effect. Only hard inquiries (when a lender checks your credit because you applied for something) can temporarily lower your score by a small amount.
 

@@ -38,7 +38,7 @@ export const guidesBatch199: Guide[] = [
       },
       {
         title: "Set up a simple watering routine",
-        content: "New plants need water every day for the first week. After that, most vegetables want a deep soaking two or three times a week — about 1 inch of water per week, including rainfall. The finger test is reliable: push a finger 2 inches into the soil. If it feels dry, water; if it feels damp, wait a day. Water early in the morning so leaves dry before evening, which prevents fungus. A simple soaker hose on a battery timer ($25 to $40 at any hardware store) automates this entirely.",
+        content: "New plants need water every day for the first week. After that, most vegetables want a deep soaking two or three times a week — about 1 inch of water per week, including rainfall. The finger test is reliable: push a finger 2 inches into the soil. If it feels dry, water. If it feels damp, wait a day. Water early in the morning so leaves dry before evening, which prevents fungus. A simple soaker hose on a battery timer ($25 to $40 at any hardware store) automates this entirely.",
       },
       {
         title: "Add mulch and check weekly for pests",

@@ -84,7 +84,7 @@ export const guidesBatch319: Guide[] = [
       },
       {
         title: "Set direct deposit and get statements here, not by phone",
-        content: "Any time you need to change the bank account your benefit is deposited into, do it through this account or in person at an office — never over the phone with someone who calls you first. The SSA does not call people asking to \"verify\" or \"update\" direct deposit information; that request is one of the most common Social Security scams.",
+        content: "Any time you need to change the bank account your benefit is deposited into, do it through this account or in person at an office — never over the phone with someone who calls you first. The SSA does not call people asking to \"verify\" or \"update\" direct deposit information. That request is one of the most common Social Security scams.",
       },
     ],
   },

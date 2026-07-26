@@ -8,8 +8,7 @@ export const guidesBatch154: Guide[] = [
   {
     slug: 'how-to-check-internet-outage-before-calling-2026',
     title: 'How to Check if Your Internet Is Out — Before You Call Your Provider',
-    excerpt:
-      'Before spending time on hold with your internet provider, find out in minutes whether the outage is on their end, your router, or your building.',
+    excerpt: 'Before spending time on hold with your internet provider, find out in minutes whether the outage is on their end, your router, or your building.',
     category: 'internet-connectivity',
     tags: [
       'internet outage',
@@ -103,33 +102,27 @@ Giving the representative this information upfront usually cuts the call time in
     steps: [
       {
         title: 'Check your provider\'s own outage page',
-        content:
-          'On your smartphone using cellular data, visit your provider\'s outage page: Xfinity at xfinity.com/support/status, AT&T at att.com/outages, Verizon Fios through the My Fios app, or Spectrum through the My Spectrum app. Sign in if prompted, then look for a service status message tied to your address.',
+        content: 'On your smartphone using cellular data, visit your provider\'s outage page: Xfinity at xfinity.com/support/status, AT&T at att.com/outages, Verizon Fios through the My Fios app, or Spectrum through the My Spectrum app. Sign in if prompted, then look for a service status message tied to your address.',
         tip: 'Download your provider\'s app now, while the internet is working, so you have it ready the next time the connection goes down.',
       },
       {
         title: 'Check Downdetector for a spike in reports',
-        content:
-          'Open a browser on your phone and go to downdetector.com. Search for your provider\'s name. Look at the chart — a large spike of reports in the last hour or two, especially on the map near your area, means many customers are affected and the outage is on the provider\'s network.',
+        content: 'Open a browser on your phone and go to downdetector.com. Search for your provider\'s name. Look at the chart — a large spike of reports in the last hour or two, especially on the map near your area, means many customers are affected and the outage is on the provider\'s network.',
         tip: 'Downdetector covers hundreds of providers. You can also search by city name if you are not sure which provider serves your neighborhood.',
       },
       {
         title: 'Test whether it is your WiFi router, not a provider problem',
-        content:
-          'Turn off WiFi on your phone and try loading a website on cellular data. If it loads, your provider\'s network is likely working and the problem is your home router. Try restarting your modem and router: unplug both, wait 30 seconds, plug the modem in first and wait for its lights to stabilize, then plug in the router.',
-        warning:
-          'Do not unplug your modem if it is also your home phone base — that will disconnect your landline during the restart.',
+        content: 'Turn off WiFi on your phone and try loading a website on cellular data. If it loads, your provider\'s network is likely working and the problem is your home router. Try restarting your modem and router: unplug both, wait 30 seconds, plug the modem in first and wait for its lights to stabilize, then plug in the router.',
+        warning: 'Do not unplug your modem if it is also your home phone base — that will disconnect your landline during the restart.',
       },
       {
         title: 'Read the lights on your modem and router',
-        content:
-          'Look at the lights on the front of your modem (the box connected to the cable or phone line on the wall). A red or off internet/WAN light means the modem is not getting a signal from the provider. Write down the color and state of each light — the support team will ask for this.',
+        content: 'Look at the lights on the front of your modem (the box connected to the cable or phone line on the wall). A red or off internet/WAN light means the modem is not getting a signal from the provider. Write down the color and state of each light — the support team will ask for this.',
         tip: 'Your modem\'s manual (or a quick web search for your modem model + "light meanings") will explain each light in detail.',
       },
       {
         title: 'Gather your information before calling',
-        content:
-          'Before you dial, have ready: your account number (on your bill or in the app), your service address, a description of the modem lights, what you have already tried, and whether all devices are affected or just one. Sharing this upfront helps the representative find a solution faster.',
+        content: 'Before you dial, have ready: your account number (on your bill or in the app), your service address, a description of the modem lights, what you have already tried, and whether all devices are affected or just one. Sharing this upfront helps the representative find a solution faster.',
         tip: 'Most providers now offer a callback option so you do not have to stay on hold. Ask for it when the automated system answers.',
       },
     ],
@@ -138,8 +131,7 @@ Giving the representative this information upfront usually cuts the call time in
   {
     slug: 'how-to-use-notes-app-on-iphone-and-android-2026',
     title: 'How to Use the Notes App on iPhone and Android',
-    excerpt:
-      'The Notes app on your phone is a quick place to write down ideas, make shopping lists, and keep important info. Learn how to create, organize, and share notes.',
+    excerpt: 'The Notes app on your phone is a quick place to write down ideas, make shopping lists, and keep important info. Learn how to create, organize, and share notes.',
     category: 'phone-guides',
     tags: [
       'notes app',
@@ -232,37 +224,31 @@ Tap the paint palette icon inside a note to give it a color — useful for group
     steps: [
       {
         title: 'Open the Notes app (iPhone) or Google Keep (Android)',
-        content:
-          'On iPhone, find the yellow Notes icon on your home screen, or swipe down from the middle of the screen and search "Notes." On Android, look for the yellow Google Keep icon or download it free from the Google Play Store.',
+        content: 'On iPhone, find the yellow Notes icon on your home screen, or swipe down from the middle of the screen and search "Notes." On Android, look for the yellow Google Keep icon or download it free from the Google Play Store.',
         tip: 'You can add a Notes shortcut to your home screen for one-tap access. On iPhone, press and hold the Notes icon, tap "Add to Home Screen."',
       },
       {
         title: 'Create a new note',
-        content:
-          'On iPhone: tap the orange pencil-and-paper icon in the bottom-right corner. On Google Keep: tap the "+" button or the "Take a note…" box. Type your note — the first line becomes the title. Notes saves automatically when you go back.',
+        content: 'On iPhone: tap the orange pencil-and-paper icon in the bottom-right corner. On Google Keep: tap the "+" button or the "Take a note…" box. Type your note — the first line becomes the title. Notes saves automatically when you go back.',
         tip: 'Tap the microphone key on your keyboard to dictate a note by speaking instead of typing.',
       },
       {
         title: 'Add a checklist for shopping or to-do lists',
-        content:
-          'On iPhone: tap the checklist button (a circle with a checkmark) in the toolbar above the keyboard. On Google Keep: tap the checkboxes icon below the text area when starting a new note. Each line becomes a checkbox item you can tap to mark done.',
+        content: 'On iPhone: tap the checklist button (a circle with a checkmark) in the toolbar above the keyboard. On Google Keep: tap the checkboxes icon below the text area when starting a new note. Each line becomes a checkbox item you can tap to mark done.',
         tip: 'Checked items move to the bottom of the list automatically, so you always see what is left to do.',
       },
       {
         title: 'Pin important notes to the top',
-        content:
-          'On iPhone: swipe right on any note in your list and tap the yellow Pin button. On Google Keep: tap the pushpin icon at the top right of any note. Pinned notes stay at the top of your list so they are always easy to find.',
+        content: 'On iPhone: swipe right on any note in your list and tap the yellow Pin button. On Google Keep: tap the pushpin icon at the top right of any note. Pinned notes stay at the top of your list so they are always easy to find.',
       },
       {
         title: 'Search notes and share with family',
-        content:
-          'On iPhone: tap the magnifying glass at the top of the Notes list and type any word — it searches inside every note. To share a note, open it, tap the Share button (square with upward arrow), and choose Messages or Email. On Keep: tap the magnifying glass at the top of the screen to search.',
+        content: 'On iPhone: tap the magnifying glass at the top of the Notes list and type any word — it searches inside every note. To share a note, open it, tap the Share button (square with upward arrow), and choose Messages or Email. On Keep: tap the magnifying glass at the top of the screen to search.',
         tip: 'On iPhone, you can invite a family member to collaborate on a shared note — great for a joint grocery list. Both of you will see changes instantly.',
       },
       {
         title: 'Make sure Notes syncs to your other Apple devices',
-        content:
-          'On iPhone, go to Settings → tap your name at the top → iCloud → and check that the switch next to "Notes" is green. When it is on, every note you create on your phone will appear automatically on your iPad and Mac.',
+        content: 'On iPhone, go to Settings → tap your name at the top → iCloud → and check that the switch next to "Notes" is green. When it is on, every note you create on your phone will appear automatically on your iPad and Mac.',
         tip: 'Google Keep syncs to any device where you sign into the same Google account, including a computer at keep.google.com.',
       },
     ],
@@ -271,8 +257,7 @@ Tap the paint palette icon inside a note to give it a color — useful for group
   {
     slug: 'how-to-unsubscribe-from-junk-email-2026',
     title: 'How to Unsubscribe from Unwanted Marketing Emails',
-    excerpt:
-      'A crowded inbox slows you down. Learn safe ways to unsubscribe from marketing emails — and which "unsubscribe" links to avoid so you do not accidentally confirm your address to scammers.',
+    excerpt: 'A crowded inbox slows you down. Learn safe ways to unsubscribe from marketing emails — and which "unsubscribe" links to avoid so you do not accidentally confirm your address to scammers.',
     category: 'communication',
     tags: [
       'unsubscribe',
@@ -357,38 +342,31 @@ The best way to keep your inbox manageable is to be selective about giving out y
     steps: [
       {
         title: 'Decide whether it is safe to unsubscribe',
-        content:
-          'Before clicking anything, ask: do I recognize this company? If yes — a store you have shopped at, a newsletter you signed up for, an app you use — it is safe to unsubscribe. If you do not recognize the sender or the email feels off, do not click the unsubscribe link. Mark it as spam and delete it instead.',
-        warning:
-          'Clicking "unsubscribe" in a scam email can tell the scammer your address is active, leading to more unwanted messages — not fewer.',
+        content: 'Before clicking anything, ask: do I recognize this company? If yes — a store you have shopped at, a newsletter you signed up for, an app you use — it is safe to unsubscribe. If you do not recognize the sender or the email feels off, do not click the unsubscribe link. Mark it as spam and delete it instead.',
+        warning: 'Clicking "unsubscribe" in a scam email can tell the scammer your address is active, leading to more unwanted messages — not fewer.',
       },
       {
         title: 'Find the Unsubscribe link at the bottom of the email',
-        content:
-          'Scroll to the very bottom of the marketing email. Look for small text that says "Unsubscribe," "Manage preferences," or "Opt out." Click that link and confirm on the page that opens. The company must remove you within 10 business days.',
+        content: 'Scroll to the very bottom of the marketing email. Look for small text that says "Unsubscribe," "Manage preferences," or "Opt out." Click that link and confirm on the page that opens. The company must remove you within 10 business days.',
         tip: 'If the confirmation page asks you to enter your email address, that is normal for legitimate companies — go ahead and enter it.',
       },
       {
         title: 'Use Gmail\'s Unsubscribe button at the top of the email',
-        content:
-          'If you use Gmail, open the marketing email and look for "(Unsubscribe)" next to the sender\'s name at the top of the message — no scrolling needed. On your phone in the Gmail app, tap the sender\'s name to see the Unsubscribe option. Click or tap it and confirm.',
+        content: 'If you use Gmail, open the marketing email and look for "(Unsubscribe)" next to the sender\'s name at the top of the message — no scrolling needed. On your phone in the Gmail app, tap the sender\'s name to see the Unsubscribe option. Click or tap it and confirm.',
         tip: 'Gmail groups marketing emails in the "Promotions" tab. Check there first — it keeps promotional mail separate from your main inbox automatically.',
       },
       {
         title: 'Use iPhone Mail\'s Unsubscribe banner',
-        content:
-          'If you read email on an iPhone, open a marketing email and look for a blue "Unsubscribe" banner near the top of the message. Tap "Unsubscribe" and then confirm. Apple handles the request for you — no need to scroll or visit an external website.',
+        content: 'If you read email on an iPhone, open a marketing email and look for a blue "Unsubscribe" banner near the top of the message. Tap "Unsubscribe" and then confirm. Apple handles the request for you — no need to scroll or visit an external website.',
       },
       {
         title: 'Mark stubborn senders as spam',
-        content:
-          'If a sender keeps emailing after you unsubscribed, or if the email came from a company you never signed up with, mark it as spam. In Gmail: tap the three-dot menu and select "Report spam." In iPhone Mail: swipe left on the email, tap "More," then "Move to Junk." Your email service will learn to filter similar messages automatically.',
+        content: 'If a sender keeps emailing after you unsubscribed, or if the email came from a company you never signed up with, mark it as spam. In Gmail: tap the three-dot menu and select "Report spam." In iPhone Mail: swipe left on the email, tap "More," then "Move to Junk." Your email service will learn to filter similar messages automatically.',
         tip: 'Marking something as spam is always safe — you can always check your Spam or Junk folder later if you think something was filtered by mistake.',
       },
       {
         title: 'Try Unroll.me to manage many subscriptions at once',
-        content:
-          'Go to unroll.me on a computer and sign in with your email account. The service scans your inbox and shows you a list of your active subscriptions. You can unsubscribe from several at once, or roll them all into a single daily digest email instead of receiving them individually throughout the day.',
+        content: 'Go to unroll.me on a computer and sign in with your email account. The service scans your inbox and shows you a list of your active subscriptions. You can unsubscribe from several at once, or roll them all into a single daily digest email instead of receiving them individually throughout the day.',
         tip: 'Unroll.me works best as a one-time cleanup tool. After the initial session, the manual methods above are fast enough for keeping up with new subscriptions.',
       },
     ],
@@ -397,8 +375,7 @@ The best way to keep your inbox manageable is to be selective about giving out y
   {
     slug: 'what-is-an-imei-number-and-why-it-matters-2026',
     title: 'What Is an IMEI Number — and Why It Matters for Your Phone',
-    excerpt:
-      'Your phone has a unique 15-digit IMEI number — like a VIN for a car. Learn how to find yours, why it matters if your phone is stolen, and how to check one before buying a used phone.',
+    excerpt: 'Your phone has a unique 15-digit IMEI number — like a VIN for a car. Learn how to find yours, why it matters if your phone is stolen, and how to check one before buying a used phone.',
     category: 'phone-guides',
     tags: [
       'IMEI',
@@ -449,7 +426,7 @@ Open the Settings app (the gray gear icon). Scroll down and tap "General." Tap "
 
 **Method 3: Android — Settings → About phone**
 
-Open the Settings app. Scroll to the bottom and tap "About phone" (on some Android phones it may be called "About device" or "Phone information"). Look for "IMEI" or "IMEI information." On phones with two SIM slots, you may see IMEI 1 and IMEI 2 — both refer to your device; the first one is the primary number.
+Open the Settings app. Scroll to the bottom and tap "About phone" (on some Android phones it may be called "About device" or "Phone information"). Look for "IMEI" or "IMEI information." On phones with two SIM slots, you may see IMEI 1 and IMEI 2 — both refer to your device. The first one is the primary number.
 
 **Method 4: Look on the SIM card tray or the phone's box**
 
@@ -484,30 +461,25 @@ If the check shows the phone is clean — not stolen, not blocked, not still und
     steps: [
       {
         title: 'Understand what the IMEI number is',
-        content:
-          'IMEI stands for International Mobile Equipment Identity. It is a 15-digit number that is unique to your specific phone — no other phone in the world has the same one. It stays with the phone forever, even if you change the SIM card or transfer the phone to someone else.',
+        content: 'IMEI stands for International Mobile Equipment Identity. It is a 15-digit number that is unique to your specific phone — no other phone in the world has the same one. It stays with the phone forever, even if you change the SIM card or transfer the phone to someone else.',
       },
       {
         title: 'Find your IMEI by dialing *#06#',
-        content:
-          'Open your Phone app as if making a call and type *#06# — do not press the call button. Your IMEI number will appear on the screen within a second. This method works on both iPhone and Android phones.',
+        content: 'Open your Phone app as if making a call and type *#06# — do not press the call button. Your IMEI number will appear on the screen within a second. This method works on both iPhone and Android phones.',
         tip: 'Write your IMEI down and store it somewhere safe — a filing cabinet, a note in your email, or a note on paper with your other important documents. You may need it when you cannot access your phone.',
       },
       {
         title: 'Find your IMEI in Settings',
-        content:
-          'On iPhone: go to Settings → General → About → scroll down to IMEI. On Android: go to Settings → About phone → IMEI. You can press and hold the number to copy it. The IMEI is also printed on your phone\'s original box and sometimes on the SIM card tray on the side of the phone.',
+        content: 'On iPhone: go to Settings → General → About → scroll down to IMEI. On Android: go to Settings → About phone → IMEI. You can press and hold the number to copy it. The IMEI is also printed on your phone\'s original box and sometimes on the SIM card tray on the side of the phone.',
       },
       {
         title: 'Report a stolen phone using your IMEI',
-        content:
-          'If your phone is stolen: (1) file a police report and get the report number, (2) call your carrier and give them your IMEI to have the device blocked on all US networks, (3) ask the carrier to suspend your service so no charges can be made, (4) change passwords for email, banking, and other important apps from another device.',
+        content: 'If your phone is stolen: (1) file a police report and get the report number, (2) call your carrier and give them your IMEI to have the device blocked on all US networks, (3) ask the carrier to suspend your service so no charges can be made, (4) change passwords for email, banking, and other important apps from another device.',
         warning: 'Blocking the IMEI with your carrier stops the phone from working on any US network — but do this right away after theft, before the thief has a chance to access your accounts.',
       },
       {
         title: 'Check a used phone\'s IMEI before buying',
-        content:
-          'Before paying for a used phone, ask the seller to show you the IMEI (or use *#06# yourself). Then enter the number at imei.info or your carrier\'s free IMEI check page. A clean result means the phone has not been reported stolen and is not blocked.',
+        content: 'Before paying for a used phone, ask the seller to show you the IMEI (or use *#06# yourself). Then enter the number at imei.info or your carrier\'s free IMEI check page. A clean result means the phone has not been reported stolen and is not blocked.',
         tip: 'If the seller refuses to let you check the IMEI, that is a red flag. Walk away from the sale.',
       },
     ],

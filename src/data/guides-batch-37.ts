@@ -61,7 +61,7 @@ For buyers, ThredUp is free to use with no membership required. Shipping is typi
 
 Unlike traditional resale platforms, Depop has a social media-style layout. Sellers create profiles with a personal style, and buyers can follow sellers they like. The "Explore" tab curates items based on your preferences.
 
-Depop is free to download and use. Sellers list items for free; Depop takes a 10% fee plus a small payment processing fee when something sells. Buyers pay for items via credit card, PayPal, or Apple/Google Pay.
+Depop is free to download and use. Sellers list items for free. Depop takes a 10% fee plus a small payment processing fee when something sells. Buyers pay for items via credit card, PayPal, or Apple/Google Pay.
 
 The platform is popular for finding items you can't find at a standard retail store — a particular vintage style, a discontinued brand, or a unique handmade piece. Many sellers specialize in specific aesthetics like cottagecore, Y2K, preppy, or minimalist styles.
 
@@ -173,7 +173,7 @@ The app is free. A paid subscription called AeroAPI unlocks additional features 
       },
       {
         title: 'Watch the live map',
-        content: 'Tap "Track Flight" to open the live map. The plane icon moves in real time, showing exactly where the flight is. The dotted line shows the planned route; the solid line shows where the plane has already flown. Pinch to zoom in and out of the map.',
+        content: 'Tap "Track Flight" to open the live map. The plane icon moves in real time, showing exactly where the flight is. The dotted line shows the planned route. The solid line shows where the plane has already flown. Pinch to zoom in and out of the map.',
         tip: `The estimated arrival time is much more accurate than the airline's official estimate because it's based on the plane's actual position, speed, and altitude — not just the schedule.`,
       },
       {
@@ -264,7 +264,7 @@ SeatGeek has its own exclusive deals and is the official ticketing partner for s
       },
       {
         title: 'Use the seat map',
-        content: 'Tap "View Seat Map" to see the color-coded pricing across the entire venue. Green sections are the least expensive; red sections are the most expensive. Tap any section to see available tickets and their Deal Scores. This makes it much faster to find value in different seating areas.',
+        content: 'Tap "View Seat Map" to see the color-coded pricing across the entire venue. Green sections are the least expensive. Red sections are the most expensive. Tap any section to see available tickets and their Deal Scores. This makes it much faster to find value in different seating areas.',
       },
       {
         title: 'Purchase and access tickets',

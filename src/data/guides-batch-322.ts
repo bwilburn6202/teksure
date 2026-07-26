@@ -251,7 +251,7 @@ export const guidesBatch322: Guide[] = [
       {
         title: "Turn on volume warnings on Android (where available)",
         content: "On supported Android and Pixel phones, open Settings, tap Sound & vibration, then look for 'Headphone safety' or 'Media volume warning' to turn on alerts when volume reaches unsafe levels.",
-        tip: "Not all Android phone models include this feature by default; if you don't see it, check your phone manufacturer's app store for a hearing health app from the manufacturer.",
+        tip: "Not all Android phone models include this feature by default. If you don't see it, check your phone manufacturer's app store for a hearing health app from the manufacturer.",
       },
       {
         title: "Use the 'Hearing Test' features where available",

@@ -8,8 +8,7 @@ export const guidesBatch156: Guide[] = [
   {
     slug: 'how-to-check-your-credit-score-for-free-2026',
     title: 'How to Check Your Credit Score for Free (Without Hurting Your Credit)',
-    excerpt:
-      'Check your credit score and full credit reports at no cost using AnnualCreditReport.com and Credit Karma. Checking your own score never lowers it.',
+    excerpt: 'Check your credit score and full credit reports at no cost using AnnualCreditReport.com and Credit Karma. Checking your own score never lowers it.',
     category: 'financial-tech',
     tags: [
       'credit score',
@@ -28,7 +27,7 @@ export const guidesBatch156: Guide[] = [
     publishedAt: '2026-05-08',
     lastVerifiedAt: '2026-05-08',
     difficulty: 'Beginner',
-    body: `Your credit score is a three-digit number that tells lenders — banks, mortgage companies, auto dealers, even some landlords — how reliably you pay back money you have borrowed. It affects whether you can get approved for a loan or credit card, and what interest rate you will be charged. A higher score saves you money; a lower score can cost you hundreds or thousands of dollars in higher interest over the life of a loan.
+    body: `Your credit score is a three-digit number that tells lenders — banks, mortgage companies, auto dealers, even some landlords — how reliably you pay back money you have borrowed. It affects whether you can get approved for a loan or credit card, and what interest rate you will be charged. A higher score saves you money. A lower score can cost you hundreds or thousands of dollars in higher interest over the life of a loan.
 
 The good news: checking your own credit score is free, completely safe, and will never hurt your score. This is called a "soft inquiry," which is different from the "hard inquiry" that happens when a lender checks your credit as part of an application. You can check as many times as you want without any negative effect.
 
@@ -136,40 +135,32 @@ Each bureau has an online dispute process. Go to the bureau's website — **equi
     steps: [
       {
         title: 'Understand the credit score scale before you check',
-        content:
-          'Credit scores in the US run from 300 to 850. Scores of 670–739 are considered Good, 740–799 are Very Good, and 800–850 are Exceptional. Scores below 580 are considered Poor. Knowing the scale helps you understand what your number means when you see it. Checking your own score is always free and will never lower your score — this is called a soft inquiry.',
+        content: 'Credit scores in the US run from 300 to 850. Scores of 670–739 are considered Good, 740–799 are Very Good, and 800–850 are Exceptional. Scores below 580 are considered Poor. Knowing the scale helps you understand what your number means when you see it. Checking your own score is always free and will never lower your score — this is called a soft inquiry.',
         tip: 'The three companies that track your credit are Equifax, Experian, and TransUnion. Your score at each may be slightly different — this is normal. Lenders typically use one or two of these when reviewing an application.',
       },
       {
         title: 'Get your free credit reports at AnnualCreditReport.com',
-        content:
-          'Open a browser and go to www.annualcreditreport.com — this is the only federally mandated free report site. Click "Request your free credit reports." Enter your name, address, date of birth, and Social Security number. Select all three bureaus and answer the identity verification questions. Your full credit reports will appear on screen. You can download them as PDFs. Since the COVID-19 pandemic, free weekly reports have been available — you can check as often as every week.',
-        warning:
-          'Only use www.annualcreditreport.com. Many look-alike sites claim to offer free reports but require a credit card or sign you up for paid subscriptions. The official site never requires a credit card.',
+        content: 'Open a browser and go to www.annualcreditreport.com — this is the only federally mandated free report site. Click "Request your free credit reports." Enter your name, address, date of birth, and Social Security number. Select all three bureaus and answer the identity verification questions. Your full credit reports will appear on screen. You can download them as PDFs. Since the COVID-19 pandemic, free weekly reports have been available — you can check as often as every week.',
+        warning: 'Only use www.annualcreditreport.com. Many look-alike sites claim to offer free reports but require a credit card or sign you up for paid subscriptions. The official site never requires a credit card.',
       },
       {
         title: 'Check your score on Credit Karma for a clear score number',
-        content:
-          'Go to www.creditkarma.com or download the "Credit Karma" app on your phone. Click "Get your free score," create a free account with your email and a password, and fill in your personal information including your Social Security number to verify your identity. Your TransUnion and Equifax scores will appear on screen. Credit Karma updates these scores weekly and sends alerts when something changes.',
+        content: 'Go to www.creditkarma.com or download the "Credit Karma" app on your phone. Click "Get your free score," create a free account with your email and a password, and fill in your personal information including your Social Security number to verify your identity. Your TransUnion and Equifax scores will appear on screen. Credit Karma updates these scores weekly and sends alerts when something changes.',
         tip: 'Credit Karma is free and legitimate. It makes money by showing you offers for credit cards and loans — you are never required to click on any of them. Use it for the score information and ignore the advertisements.',
       },
       {
         title: 'Review what is helping and hurting your score',
-        content:
-          'Both AnnualCreditReport.com (for account details) and Credit Karma (for score factors) show what is affecting your score. The two biggest factors are payment history (do you pay on time?) and amounts owed (how much of your credit limit are you using?). Look for any late payments, high balances, or accounts you do not recognize.',
+        content: 'Both AnnualCreditReport.com (for account details) and Credit Karma (for score factors) show what is affecting your score. The two biggest factors are payment history (do you pay on time?) and amounts owed (how much of your credit limit are you using?). Look for any late payments, high balances, or accounts you do not recognize.',
         tip: 'Keeping your credit card balances below 30 percent of your limit — and ideally below 10 percent — can meaningfully improve your score over time.',
       },
       {
         title: 'Dispute any errors you find',
-        content:
-          'If you see an account you do not recognize, a payment marked late that was on time, or any other incorrect information, you can dispute it directly with the bureau. Go to equifax.com/personal/credit-report-services, experian.com/disputes, or transunion.com/credit-disputes and follow the dispute instructions. Bureaus are required by law to investigate and respond within 30 days. Correcting a significant error can raise your score quickly.',
-        warning:
-          'If you see accounts you never opened, this may be a sign of identity theft. Report it to the FTC at identitytheft.gov and consider placing a free credit freeze at all three bureaus to prevent new accounts from being opened in your name.',
+        content: 'If you see an account you do not recognize, a payment marked late that was on time, or any other incorrect information, you can dispute it directly with the bureau. Go to equifax.com/personal/credit-report-services, experian.com/disputes, or transunion.com/credit-disputes and follow the dispute instructions. Bureaus are required by law to investigate and respond within 30 days. Correcting a significant error can raise your score quickly.',
+        warning: 'If you see accounts you never opened, this may be a sign of identity theft. Report it to the FTC at identitytheft.gov and consider placing a free credit freeze at all three bureaus to prevent new accounts from being opened in your name.',
       },
       {
         title: 'Take steps to improve a low score over time',
-        content:
-          'The most effective actions are: pay every bill on time every month (set up auto-pay if possible), pay down credit card balances starting with the card closest to its limit, avoid closing old accounts you are not actively using, and avoid applying for new credit unless you genuinely need it. Credit improvement is gradual — consistent on-time payments typically produce visible improvement within 6 to 12 months.',
+        content: 'The most effective actions are: pay every bill on time every month (set up auto-pay if possible), pay down credit card balances starting with the card closest to its limit, avoid closing old accounts you are not actively using, and avoid applying for new credit unless you genuinely need it. Credit improvement is gradual — consistent on-time payments typically produce visible improvement within 6 to 12 months.',
         tip: 'Set a calendar reminder to check your credit reports every three months. Catching a fraudulent account or error early is far easier than dealing with it years down the road.',
       },
     ],
@@ -178,8 +169,7 @@ Each bureau has an online dispute process. Go to the bureau's website — **equi
   {
     slug: 'how-to-use-whatsapp-for-the-first-time-2026',
     title: 'How to Use WhatsApp for the First Time',
-    excerpt:
-      'WhatsApp lets you send free text messages and make free voice or video calls to family anywhere in the world using your home Wi-Fi. No extra charges on your phone bill.',
+    excerpt: 'WhatsApp lets you send free text messages and make free voice or video calls to family anywhere in the world using your home Wi-Fi. No extra charges on your phone bill.',
     category: 'communication',
     tags: [
       'WhatsApp',
@@ -320,38 +310,31 @@ WhatsApp is owned by Meta/Facebook. Like any app, it collects some data about ho
     steps: [
       {
         title: 'Download WhatsApp from the App Store or Google Play',
-        content:
-          'On iPhone, open the App Store, search for "WhatsApp Messenger," and tap Get. On Android, open Google Play, search for "WhatsApp Messenger," and tap Install. The app is free to download. Look for the green icon with a white phone symbol inside a speech bubble — developer name is "WhatsApp LLC." The download usually completes in under a minute.',
+        content: 'On iPhone, open the App Store, search for "WhatsApp Messenger," and tap Get. On Android, open Google Play, search for "WhatsApp Messenger," and tap Install. The app is free to download. Look for the green icon with a white phone symbol inside a speech bubble — developer name is "WhatsApp LLC." The download usually completes in under a minute.',
         tip: 'You do not need a Facebook account to use WhatsApp. It uses your phone number as your identity, not a username or password.',
       },
       {
         title: 'Set up your account with your phone number',
-        content:
-          'Open WhatsApp and tap "Agree and Continue." Enter your phone number including your area code and make sure the country is set to United States. Tap Next — WhatsApp will text you a 6-digit verification code. WhatsApp usually enters this code automatically. If not, open your Messages app, find the code, and type it in. Then enter your name (at minimum your first name) so contacts can recognize you.',
-        warning:
-          'WhatsApp will only send the verification code to the phone number you enter. Make sure you enter your own number — not a family member\'s. You need to receive the text on the same phone you are setting up.',
+        content: 'Open WhatsApp and tap "Agree and Continue." Enter your phone number including your area code and make sure the country is set to United States. Tap Next — WhatsApp will text you a 6-digit verification code. WhatsApp usually enters this code automatically. If not, open your Messages app, find the code, and type it in. Then enter your name (at minimum your first name) so contacts can recognize you.',
+        warning: 'WhatsApp will only send the verification code to the phone number you enter. Make sure you enter your own number — not a family member\'s. You need to receive the text on the same phone you are setting up.',
       },
       {
         title: 'Find a family member in your contacts and send your first message',
-        content:
-          'Tap the new chat icon (green pencil or paper icon, bottom-right corner). Tap "New Chat." You will see a list of your phone contacts who already have WhatsApp. Tap a family member\'s name to open a conversation. Type a message in the box at the bottom and tap the green send button. For international contacts, their number must be saved with the country code — for example, +52 for Mexico or +63 for the Philippines.',
+        content: 'Tap the new chat icon (green pencil or paper icon, bottom-right corner). Tap "New Chat." You will see a list of your phone contacts who already have WhatsApp. Tap a family member\'s name to open a conversation. Type a message in the box at the bottom and tap the green send button. For international contacts, their number must be saved with the country code — for example, +52 for Mexico or +63 for the Philippines.',
         tip: 'If a family member does not appear in your WhatsApp contact list, they may not have the app yet. Send them a regular text asking them to download it — once they do, they will appear automatically.',
       },
       {
         title: 'Make a free voice or video call',
-        content:
-          'Open a conversation with the person you want to call. In the top-right corner, tap the phone icon for a voice call or the video camera icon for a video call. Their phone will ring. Tap the red phone icon to end the call. These calls are free — even to other countries — as long as both of you are connected to Wi-Fi or have internet access.',
+        content: 'Open a conversation with the person you want to call. In the top-right corner, tap the phone icon for a voice call or the video camera icon for a video call. Their phone will ring. Tap the red phone icon to end the call. These calls are free — even to other countries — as long as both of you are connected to Wi-Fi or have internet access.',
         tip: 'For the best call quality, both people should be on home Wi-Fi rather than cellular data. If the call is choppy or cuts out, moving closer to your Wi-Fi router usually helps.',
       },
       {
         title: 'Join a family group chat or create one',
-        content:
-          'To join an existing group, ask a family member who runs the group to add you — they go into the group settings and tap "Add Participant," then search for your name. To create a new group: tap the new chat icon → New Group → select family members → tap the green arrow → give the group a name → tap the checkmark. Any message you post in the group is seen by all members.',
+        content: 'To join an existing group, ask a family member who runs the group to add you — they go into the group settings and tap "Add Participant," then search for your name. To create a new group: tap the new chat icon → New Group → select family members → tap the green arrow → give the group a name → tap the checkmark. Any message you post in the group is seen by all members.',
       },
       {
         title: 'Understand the checkmarks and adjust your privacy settings',
-        content:
-          'One gray checkmark means your message was sent. Two gray checkmarks mean it was delivered to the other person\'s phone. Two blue checkmarks mean they have read it. To review your privacy settings, tap the three dots (Android) or Settings tab (iPhone) → Privacy. You can control who sees your profile photo and last-seen time.',
+        content: 'One gray checkmark means your message was sent. Two gray checkmarks mean it was delivered to the other person\'s phone. Two blue checkmarks mean they have read it. To review your privacy settings, tap the three dots (Android) or Settings tab (iPhone) → Privacy. You can control who sees your profile photo and last-seen time.',
         tip: 'If you would rather family members not know exactly when you read their messages, go to Settings → Privacy → Read Receipts and turn off "Read Receipts." When this is off, your checkmarks will not turn blue for others — but you also will not see blue checkmarks on their messages.',
       },
     ],
@@ -360,8 +343,7 @@ WhatsApp is owned by Meta/Facebook. Like any app, it collects some data about ho
   {
     slug: 'how-to-organize-apps-into-folders-on-your-phone-2026',
     title: 'How to Organize Your Phone Apps into Folders',
-    excerpt:
-      'Group your apps into labeled folders on your home screen — like "Banking," "Health," or "Family" — so you can find what you need in seconds without scrolling through dozens of icons.',
+    excerpt: 'Group your apps into labeled folders on your home screen — like "Banking," "Health," or "Family" — so you can find what you need in seconds without scrolling through dozens of icons.',
     category: 'phone-guides',
     tags: [
       'phone organization',
@@ -496,36 +478,30 @@ You cannot delete a folder directly — you delete it by removing all the apps f
     steps: [
       {
         title: 'Plan your folders before you start',
-        content:
-          'Before moving apps, decide what categories make sense for how you use your phone. Good examples: Banking, Health, Family, Shopping, Entertainment, News. Aim for 4 to 8 folders — enough to organize things meaningfully without being complicated. Group apps by purpose (what you use them for) rather than by type.',
+        content: 'Before moving apps, decide what categories make sense for how you use your phone. Good examples: Banking, Health, Family, Shopping, Entertainment, News. Aim for 4 to 8 folders — enough to organize things meaningfully without being complicated. Group apps by purpose (what you use them for) rather than by type.',
         tip: 'You do not need to organize every single app. Start with your most-used apps and group those first. Apps you rarely use can stay on a back page of your home screen.',
       },
       {
         title: 'iPhone: enter jiggle mode by pressing and holding empty screen space',
-        content:
-          'On iPhone, press and hold your finger on any empty space on the home screen for about one second. All app icons will start gently jiggling and an Edit button will appear in the top-left corner. You are now in edit mode. While icons are jiggling, you can move and group them. Tap Done in the top-right corner when you are finished to exit.',
+        content: 'On iPhone, press and hold your finger on any empty space on the home screen for about one second. All app icons will start gently jiggling and an Edit button will appear in the top-left corner. You are now in edit mode. While icons are jiggling, you can move and group them. Tap Done in the top-right corner when you are finished to exit.',
         tip: 'If tapping empty space does not work, try pressing and holding directly on an app icon instead — a light, steady press works better than a firm press.',
       },
       {
         title: 'iPhone: drag one app onto another to create a folder',
-        content:
-          'While in jiggle mode, press and hold an app until it lifts slightly, then slowly drag it on top of a second app you want in the same folder. Hold it there briefly — a folder will form automatically. iPhone will suggest a name. Tap the name field, delete the suggestion, and type your own name (for example, "Banking" or "Health"). Tap Done on the keyboard, then tap outside the folder to close it.',
+        content: 'While in jiggle mode, press and hold an app until it lifts slightly, then slowly drag it on top of a second app you want in the same folder. Hold it there briefly — a folder will form automatically. iPhone will suggest a name. Tap the name field, delete the suggestion, and type your own name (for example, "Banking" or "Health"). Tap Done on the keyboard, then tap outside the folder to close it.',
       },
       {
         title: 'Android: long-press and drag one app onto another',
-        content:
-          'On Android, press and hold an app icon for about one second until it lifts. Drag it slowly on top of a second app. When the two apps combine, a folder is created. Tap the name field, delete the default name, and type your own (for example, "Shopping"). Tap Done. Tap outside the folder to close it and return to the home screen.',
+        content: 'On Android, press and hold an app icon for about one second until it lifts. Drag it slowly on top of a second app. When the two apps combine, a folder is created. Tap the name field, delete the default name, and type your own (for example, "Shopping"). Tap Done. Tap outside the folder to close it and return to the home screen.',
         tip: 'On Samsung phones, a "Create folder" label appears when you hold one app over another — release your finger when you see this. On Google Pixel and most other Android phones, the folder forms as soon as you release the app on top of another.',
       },
       {
         title: 'Add more apps to your folders',
-        content:
-          'iPhone: while in jiggle mode, drag additional app icons onto the folder icon to add them. Android: press and hold an app icon, then drag it onto the folder icon. On Samsung, you can also tap the "+" inside an open folder to select apps from a list. Keep adding apps until each folder contains everything related to that category.',
+        content: 'iPhone: while in jiggle mode, drag additional app icons onto the folder icon to add them. Android: press and hold an app icon, then drag it onto the folder icon. On Samsung, you can also tap the "+" inside an open folder to select apps from a list. Keep adding apps until each folder contains everything related to that category.',
       },
       {
         title: 'Remove an app from a folder or delete a folder you no longer need',
-        content:
-          'To remove an app from a folder on iPhone: tap the folder to open it, enter jiggle mode (long-press an empty area), then drag the app out onto the home screen. On Android: long-press the app inside the folder and drag it to an empty spot on the home screen. To delete a folder, remove all apps from it — once empty, the folder disappears on its own.',
+        content: 'To remove an app from a folder on iPhone: tap the folder to open it, enter jiggle mode (long-press an empty area), then drag the app out onto the home screen. On Android: long-press the app inside the folder and drag it to an empty spot on the home screen. To delete a folder, remove all apps from it — once empty, the folder disappears on its own.',
         tip: 'If your home screen feels crowded after organizing, remember that you can always swipe down from the middle of your iPhone screen (or up on Android) to search for any app by name — you do not need every app visible on the home screen.',
       },
     ],
@@ -534,8 +510,7 @@ You cannot delete a folder directly — you delete it by removing all the apps f
   {
     slug: 'how-to-set-up-do-not-disturb-on-your-phone-2026',
     title: 'How to Set Up Do Not Disturb to Silence Your Phone at Night',
-    excerpt:
-      'Do Not Disturb silences calls, texts, and notifications while keeping your phone on and reachable for emergencies. Set it to turn on automatically every night so you are never woken by alerts.',
+    excerpt: 'Do Not Disturb silences calls, texts, and notifications while keeping your phone on and reachable for emergencies. Set it to turn on automatically every night so you are never woken by alerts.',
     category: 'phone-guides',
     tags: [
       'Do Not Disturb',
@@ -697,38 +672,31 @@ With this setup, random notifications will not wake you, but if your son or daug
     steps: [
       {
         title: 'Understand what Do Not Disturb does and does not do',
-        content:
-          'Do Not Disturb silences incoming call ringtones, text notification sounds, and app alerts. Your phone stays fully on — you can still make calls, set alarms, and use apps normally. Alarms you have already set will still go off. Government emergency broadcasts (severe weather, Amber Alerts) still come through regardless of your settings. 911 always works.',
+        content: 'Do Not Disturb silences incoming call ringtones, text notification sounds, and app alerts. Your phone stays fully on — you can still make calls, set alarms, and use apps normally. Alarms you have already set will still go off. Government emergency broadcasts (severe weather, Amber Alerts) still come through regardless of your settings. 911 always works.',
         tip: 'Think of Do Not Disturb as a "quiet hours" mode. It mutes the noise your phone makes from incoming alerts, but does not isolate you from the world.',
       },
       {
         title: 'Turn Do Not Disturb on manually using Control Center (iPhone) or Quick Settings (Android)',
-        content:
-          'iPhone: swipe down from the top-right corner of your screen to open Control Center. Tap the crescent moon icon — it turns highlighted to show Do Not Disturb is on. A moon symbol appears at the top of your screen. Android: swipe down from the top of your screen to open Quick Settings. Find and tap the Do Not Disturb tile (circle with a minus sign or line). Tap again to turn it off.',
+        content: 'iPhone: swipe down from the top-right corner of your screen to open Control Center. Tap the crescent moon icon — it turns highlighted to show Do Not Disturb is on. A moon symbol appears at the top of your screen. Android: swipe down from the top of your screen to open Quick Settings. Find and tap the Do Not Disturb tile (circle with a minus sign or line). Tap again to turn it off.',
         tip: 'Turning Do Not Disturb on from Control Center or Quick Settings activates it until you turn it off manually — or until a scheduled end time if you have one set up.',
       },
       {
         title: 'Schedule Do Not Disturb to turn on automatically at bedtime — iPhone',
-        content:
-          'Open Settings → Focus → Do Not Disturb → Add Schedule → Time. Set a start time (for example, 10:00 PM) and an end time (for example, 7:00 AM). Select Every Day (or choose specific days). Tap Done. From now on, Do Not Disturb will activate automatically at your chosen time each night without you needing to do anything.',
+        content: 'Open Settings → Focus → Do Not Disturb → Add Schedule → Time. Set a start time (for example, 10:00 PM) and an end time (for example, 7:00 AM). Select Every Day (or choose specific days). Tap Done. From now on, Do Not Disturb will activate automatically at your chosen time each night without you needing to do anything.',
       },
       {
         title: 'Schedule Do Not Disturb automatically at bedtime — Android',
-        content:
-          'Open Settings and search for "Do Not Disturb." Look for a Schedules option — this may be under Digital Wellbeing, Do Not Disturb settings, or a "Sleeping" preset. Tap Add Schedule or Sleeping, set your start and end times, choose Every Day, and save. The schedule activates automatically going forward.',
+        content: 'Open Settings and search for "Do Not Disturb." Look for a Schedules option — this may be under Digital Wellbeing, Do Not Disturb settings, or a "Sleeping" preset. Tap Add Schedule or Sleeping, set your start and end times, choose Every Day, and save. The schedule activates automatically going forward.',
         tip: 'On Samsung phones, long-pressing the Do Not Disturb tile in Quick Settings often gives you a direct shortcut to the scheduling screen.',
       },
       {
         title: 'Allow emergency calls to ring through while Do Not Disturb is on',
-        content:
-          'iPhone: go to Settings → Focus → Do Not Disturb → People → Allow Calls From. Choose "Everyone" (all calls ring through), "Contacts Only" (only people in your contacts), or "Favorites" (only your starred contacts). Also turn on "Repeated Calls" so that if anyone calls twice within 3 minutes, the second call rings through. Android: go to Settings → Do Not Disturb → Calls (or Exceptions) and set "Calls from contacts only" or "From anyone." Turn on Repeat Callers.',
-        warning:
-          'If you set Allow Calls From to "No One," no phone calls will ring — including from family in an emergency. For overnight use, "Contacts Only" with Repeated Calls turned on is the safest combination.',
+        content: 'iPhone: go to Settings → Focus → Do Not Disturb → People → Allow Calls From. Choose "Everyone" (all calls ring through), "Contacts Only" (only people in your contacts), or "Favorites" (only your starred contacts). Also turn on "Repeated Calls" so that if anyone calls twice within 3 minutes, the second call rings through. Android: go to Settings → Do Not Disturb → Calls (or Exceptions) and set "Calls from contacts only" or "From anyone." Turn on Repeat Callers.',
+        warning: 'If you set Allow Calls From to "No One," no phone calls will ring — including from family in an emergency. For overnight use, "Contacts Only" with Repeated Calls turned on is the safest combination.',
       },
       {
         title: 'Test your setup before relying on it overnight',
-        content:
-          'Turn Do Not Disturb on manually and ask a family member to call you. Verify the call behaves as you expect — ringing through or going quietly to voicemail depending on your settings. Then try calling twice in quick succession to confirm the Repeated Calls feature works. Once confirmed, you can trust the scheduled setting to work the same way each night.',
+        content: 'Turn Do Not Disturb on manually and ask a family member to call you. Verify the call behaves as you expect — ringing through or going quietly to voicemail depending on your settings. Then try calling twice in quick succession to confirm the Repeated Calls feature works. Once confirmed, you can trust the scheduled setting to work the same way each night.',
         tip: 'Make sure the family members you most want to be reachable from — your children, a close friend — are saved as contacts in your phone. "Contacts Only" mode only rings through numbers saved in your contacts list.',
       },
     ],

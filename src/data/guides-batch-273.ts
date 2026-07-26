@@ -188,7 +188,7 @@ export const guidesBatch273: Guide[] = [
       },
       {
         title: "Choose biometric over combination or key",
-        content: "For older adults, biometric (fingerprint) locks are usually the best choice. No combination to forget under stress, no key to lose. Most modern biometric safes store three to five fingerprints, which is enough for the owner, a spouse, and an adult child. Test the fingerprint reader before buying — some readers struggle with dry skin or thin fingerprints common in older hands. Brands with high reliability include Vaultek, RPNB, Awesafe, and Sentry Safe. Avoid no-name imports under 100 dollars; the readers often degrade within a year.",
+        content: "For older adults, biometric (fingerprint) locks are usually the best choice. No combination to forget under stress, no key to lose. Most modern biometric safes store three to five fingerprints, which is enough for the owner, a spouse, and an adult child. Test the fingerprint reader before buying — some readers struggle with dry skin or thin fingerprints common in older hands. Brands with high reliability include Vaultek, RPNB, Awesafe, and Sentry Safe. Avoid no-name imports under 100 dollars. The readers often degrade within a year.",
         warning: "Every biometric safe should also have a manual override — either a backup key or a backup numeric keypad. Store the override key in a separate location, not inside the safe.",
       },
       {

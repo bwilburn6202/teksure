@@ -88,7 +88,7 @@ export const guidesBatch246: Guide[] = [
       },
       {
         title: "Handle Restaurants and Family Meals With a Few Quiet Rules",
-        content: "Eating out does not have to mean failing your diet. Pick restaurants that grill, roast, or steam rather than fry or sauce heavily. Ask for sauces and dressings on the side and use only a small amount. Skip the bread basket, the chips, and the salty appetizers. Order grilled chicken, fish, salads, baked potatoes, and steamed vegetables without added butter or salt. Politely ask the server for the dish prepared with no added salt; most kitchens will accommodate. At family meals, fix your own plate first so you can manage portion sizes and avoid heavily salted dishes such as ham, casseroles with canned soup bases, and pickles.",
+        content: "Eating out does not have to mean failing your diet. Pick restaurants that grill, roast, or steam rather than fry or sauce heavily. Ask for sauces and dressings on the side and use only a small amount. Skip the bread basket, the chips, and the salty appetizers. Order grilled chicken, fish, salads, baked potatoes, and steamed vegetables without added butter or salt. Politely ask the server for the dish prepared with no added salt. Most kitchens will accommodate. At family meals, fix your own plate first so you can manage portion sizes and avoid heavily salted dishes such as ham, casseroles with canned soup bases, and pickles.",
         warning: "Soy sauce, teriyaki, fish sauce, and Worcestershire sauce are sodium giants. A single tablespoon of soy sauce holds more than 900 milligrams, more than half a day's limit."
       },
       {
@@ -118,7 +118,7 @@ export const guidesBatch246: Guide[] = [
       },
       {
         title: "Read the Result Against the Right Target",
-        content: "Most laboratories report vitamin D in nanograms per milliliter, abbreviated ng/mL. The Endocrine Society and most aging experts consider 30 to 50 ng/mL the healthy range for older adults. Below 20 ng/mL is deficient and calls for higher-dose treatment. Between 20 and 30 ng/mL is insufficient and needs a daily supplement. Above 50 ng/mL is generally fine; above 80 ng/mL may be too high. Some labs report in nanomoles per liter, or nmol/L; multiply the ng/mL number by 2.5 to convert. Write the number in your medical notebook. Retest every six to twelve months until the number is stable, then once a year.",
+        content: "Most laboratories report vitamin D in nanograms per milliliter, abbreviated ng/mL. The Endocrine Society and most aging experts consider 30 to 50 ng/mL the healthy range for older adults. Below 20 ng/mL is deficient and calls for higher-dose treatment. Between 20 and 30 ng/mL is insufficient and needs a daily supplement. Above 50 ng/mL is generally fine. Above 80 ng/mL may be too high. Some labs report in nanomoles per liter, or nmol/L. Multiply the ng/mL number by 2.5 to convert. Write the number in your medical notebook. Retest every six to twelve months until the number is stable, then once a year.",
         warning: "Never take more than 4,000 IU per day long-term without a doctor's guidance. Too much vitamin D causes high calcium levels, which can damage the kidneys, heart, and bones."
       },
       {
@@ -129,7 +129,7 @@ export const guidesBatch246: Guide[] = [
       {
         title: "Take Vitamin D With the Largest Meal of the Day",
         content: "Vitamin D is fat-soluble, meaning the body absorbs it best when there is some fat in the stomach. Take your supplement with whichever meal includes the most fat, often lunch or dinner. A piece of cheese, a tablespoon of peanut butter, a serving of salmon, or a salad with olive oil all count. Studies show that taking vitamin D with a fat-containing meal increases absorption by about 30 to 50 percent compared to taking it on an empty stomach. Pair the supplement with a regular activity, such as brushing your teeth after dinner, so the habit sticks. A pill organizer with a Sunday-through-Saturday layout helps prevent missed days.",
-        tip: "If you forget your evening dose, take it with breakfast the next day instead of doubling up later. Skipping a single day is fine; doubling up causes inconsistent levels."
+        tip: "If you forget your evening dose, take it with breakfast the next day instead of doubling up later. Skipping a single day is fine. Doubling up causes inconsistent levels."
       },
       {
         title: "Get Some Vitamin D From Food When You Can",
@@ -213,7 +213,7 @@ export const guidesBatch246: Guide[] = [
       },
       {
         title: "Search for a Local Dietitian Who Takes Medicare",
-        content: "The Academy of Nutrition and Dietetics runs a free public directory at EatRight.org. Click Find a Nutrition Expert, enter your ZIP code, and filter by Medicare under Insurance Accepted. Each listing shows the dietitian's specialty, contact information, and whether they offer telehealth. The Medicare.gov Care Compare tool at medicare.gov/care-compare also lists registered dietitians in your area; choose the Doctors and Clinicians option. Local hospitals, federally qualified health centers, and Area Agencies on Aging often have dietitians on staff who bill Medicare. Call ahead to confirm Medicare assignment and current openings.",
+        content: "The Academy of Nutrition and Dietetics runs a free public directory at EatRight.org. Click Find a Nutrition Expert, enter your ZIP code, and filter by Medicare under Insurance Accepted. Each listing shows the dietitian's specialty, contact information, and whether they offer telehealth. The Medicare.gov Care Compare tool at medicare.gov/care-compare also lists registered dietitians in your area. Choose the Doctors and Clinicians option. Local hospitals, federally qualified health centers, and Area Agencies on Aging often have dietitians on staff who bill Medicare. Call ahead to confirm Medicare assignment and current openings.",
         tip: "Ask the dietitian's office whether they take Medicare assignment, not only whether they accept Medicare. Accepting Medicare assignment means they cannot charge you more than the Medicare-approved rate."
       },
       {
@@ -223,12 +223,12 @@ export const guidesBatch246: Guide[] = [
       },
       {
         title: "Schedule Follow-Up Visits to Cement the Habit",
-        content: "Nutrition change takes time. One visit gives you the plan; follow-up visits help you stick with it. Schedule a follow-up two to four weeks after the first visit, and then every six to eight weeks for the first six months. Medicare typically covers two follow-up hours per year after the first year. During follow-ups, the dietitian reviews your new food diary, troubleshoots problems, adjusts the plan as needed, and tracks progress on weight, blood sugar, blood pressure, or other markers. Most patients see meaningful improvement within three to six months. Without follow-ups, the plan often slides back into old habits.",
+        content: "Nutrition change takes time. One visit gives you the plan. Follow-up visits help you stick with it. Schedule a follow-up two to four weeks after the first visit, and then every six to eight weeks for the first six months. Medicare typically covers two follow-up hours per year after the first year. During follow-ups, the dietitian reviews your new food diary, troubleshoots problems, adjusts the plan as needed, and tracks progress on weight, blood sugar, blood pressure, or other markers. Most patients see meaningful improvement within three to six months. Without follow-ups, the plan often slides back into old habits.",
         warning: "If insurance denies a follow-up claim, ask the dietitian's office to appeal. Denials based on coverage limits or coding errors are often reversed with one phone call."
       },
       {
         title: "Use Telehealth if In-Person Visits Are Difficult",
-        content: "Medicare expanded telehealth coverage in 2020 and made many of those changes permanent. Nutrition counseling by video or even by phone is now covered for the same conditions and at the same rate as in-person visits. Telehealth works well for seniors with mobility limits, those who live far from a dietitian, or those who would rather skip the parking and waiting room. The dietitian will send a secure video link by email; some offices use a phone call instead. Most patients use a smartphone, tablet, or computer with a camera. Public libraries often provide private rooms with internet access for telehealth visits if home internet is not available.",
+        content: "Medicare expanded telehealth coverage in 2020 and made many of those changes permanent. Nutrition counseling by video or even by phone is now covered for the same conditions and at the same rate as in-person visits. Telehealth works well for seniors with mobility limits, those who live far from a dietitian, or those who would rather skip the parking and waiting room. The dietitian will send a secure video link by email. Some offices use a phone call instead. Most patients use a smartphone, tablet, or computer with a camera. Public libraries often provide private rooms with internet access for telehealth visits if home internet is not available.",
         tip: "Ask the dietitian's office for a free practice call before the first telehealth visit. Five minutes of testing the audio and video prevents a wasted appointment."
       }
     ]
@@ -273,7 +273,7 @@ export const guidesBatch246: Guide[] = [
       },
       {
         title: "Track Progress and Adjust Every Month",
-        content: "Weigh in once a week on the same morning, in the same clothes, on the same scale, right after using the bathroom. Write the number on a calendar. Weight bounces up and down day to day for many reasons; the weekly number is what matters. Once a month, take your tape measurement again, retake the body photo, and check your blood pressure if you track it. If you are losing too fast, add an extra small protein snack or a serving of whole grains. If you are not losing at all after four weeks of careful eating and exercise, recheck your meal sizes or talk with a dietitian. Adjust gradually rather than slashing calories further.",
+        content: "Weigh in once a week on the same morning, in the same clothes, on the same scale, right after using the bathroom. Write the number on a calendar. Weight bounces up and down day to day for many reasons. The weekly number is what matters. Once a month, take your tape measurement again, retake the body photo, and check your blood pressure if you track it. If you are losing too fast, add an extra small protein snack or a serving of whole grains. If you are not losing at all after four weeks of careful eating and exercise, recheck your meal sizes or talk with a dietitian. Adjust gradually rather than slashing calories further.",
         warning: "Unintended weight loss, sudden weakness, falls, dizzy spells, or a loss of appetite are signs the plan is not working safely. Stop and call your doctor for a checkup."
       }
     ]

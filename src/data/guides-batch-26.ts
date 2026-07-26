@@ -813,7 +813,7 @@ The exact setup varies slightly by Android brand (Samsung, Pixel, Motorola), but
 
 By default on most Android phones, pressing the power button five times rapidly activates Emergency SOS. On some phones, pressing and holding the side button works. A countdown occurs before the call is placed, giving you a chance to cancel if it was accidental.
 
-Emergency contacts are set up separately — these are the people who receive your location and an alert message when Emergency SOS activates. These contacts do not need to have any special app installed; they receive an SMS text message with your location link.
+Emergency contacts are set up separately — these are the people who receive your location and an alert message when Emergency SOS activates. These contacts do not need to have any special app installed. They receive an SMS text message with your location link.
 
 Google's Personal Safety app (built into Pixel phones and available on Google Play for other Android phones) extends these features: it adds crisis contact sharing, location sharing for solo activities, and integration with Pixel's crash detection. For the best Android safety features, this app is worth installing if it is not already on your phone.
 

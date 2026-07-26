@@ -8,8 +8,7 @@ export const guidesBatch161: Guide[] = [
   {
     slug: 'how-to-cancel-a-free-trial-before-getting-charged-2026',
     title: 'How to Cancel a Free Trial Before Getting Charged',
-    excerpt:
-      'Set a calendar reminder the day you sign up, then follow these steps to cancel Netflix, Hulu, Amazon Prime, Apple, and Disney+ before your card is billed.',
+    excerpt: 'Set a calendar reminder the day you sign up, then follow these steps to cancel Netflix, Hulu, Amazon Prime, Apple, and Disney+ before your card is billed.',
     category: 'tips-tricks',
     tags: [
       'free trial',
@@ -125,22 +124,18 @@ To get started: go to privacy.com, create a free account, link your bank account
     steps: [
       {
         title: 'Set a calendar reminder immediately when you sign up',
-        content:
-          'The moment you start a free trial, open your phone\'s calendar and create an event titled "Cancel [service name] trial" for two days before the trial ends. This gives you enough time to cancel without rushing.',
+        content: 'The moment you start a free trial, open your phone\'s calendar and create an event titled "Cancel [service name] trial" for two days before the trial ends. This gives you enough time to cancel without rushing.',
         tip: 'Set the reminder to send you a notification the morning of that day so it does not slip by.',
       },
       {
         title: 'Find all your active subscriptions',
-        content:
-          'On iPhone: go to Settings → your name → Subscriptions. On Android: open Google Play → tap your profile photo → Payments & subscriptions → Subscriptions. On Amazon: go to Account & Lists → Memberships & Subscriptions.',
+        content: 'On iPhone: go to Settings → your name → Subscriptions. On Android: open Google Play → tap your profile photo → Payments & subscriptions → Subscriptions. On Amazon: go to Account & Lists → Memberships & Subscriptions.',
         tip: 'Take a screenshot of your subscriptions list and save it somewhere easy to find.',
       },
       {
         title: 'Cancel Netflix, Hulu, or Disney+ through the website',
-        content:
-          'Sign in to the service\'s website on your computer or phone browser. Go to Account settings and look for a "Cancel" or "Cancel Membership" option. Confirm the cancellation and save the confirmation email.',
-        warning:
-          'Canceling through the app does not always work on Android — use the website for the most reliable results.',
+        content: 'Sign in to the service\'s website on your computer or phone browser. Go to Account settings and look for a "Cancel" or "Cancel Membership" option. Confirm the cancellation and save the confirmation email.',
+        warning: 'Canceling through the app does not always work on Android — use the website for the most reliable results.',
       },
       {
         title: 'Cancel Amazon Prime through your Amazon account',
@@ -148,22 +143,18 @@ To get started: go to privacy.com, create a free account, link your bank account
       },
       {
         title: 'Cancel Apple subscriptions in Settings',
-        content:
-          'On your iPhone: Settings → tap your name → Subscriptions → tap the service → Cancel Subscription → Confirm. This works for any app or service you subscribed to through Apple.',
+        content: 'On your iPhone: Settings → tap your name → Subscriptions → tap the service → Cancel Subscription → Confirm. This works for any app or service you subscribed to through Apple.',
         tip: 'Apple sends a confirmation email right away. If you do not receive one within a few minutes, check your spam folder and make sure the cancellation went through.',
       },
       {
         title: 'Use a virtual card for trials you are unsure about',
-        content:
-          'Visit privacy.com on your computer and create a free account. Link your bank account and generate a one-time virtual card number. Use that number when signing up for trials — it can block automatic charges if you forget to cancel.',
+        content: 'Visit privacy.com on your computer and create a free account. Link your bank account and generate a one-time virtual card number. Use that number when signing up for trials — it can block automatic charges if you forget to cancel.',
         tip: 'You can set a spending limit on Privacy.com virtual cards — for example, limit it to $0 so it cannot be charged at all.',
       },
       {
         title: 'Check your bank statement after the trial ends',
-        content:
-          'Within three days of the trial end date, log in to your bank account or credit card app and look for any new charges from the service. If you see an unexpected charge, call your bank right away and ask about disputing it.',
-        warning:
-          'Act quickly — most banks require you to dispute charges within 60 days, but the sooner you call, the better your chances of getting a refund.',
+        content: 'Within three days of the trial end date, log in to your bank account or credit card app and look for any new charges from the service. If you see an unexpected charge, call your bank right away and ask about disputing it.',
+        warning: 'Act quickly — most banks require you to dispute charges within 60 days, but the sooner you call, the better your chances of getting a refund.',
       },
     ],
   },
@@ -171,8 +162,7 @@ To get started: go to privacy.com, create a free account, link your bank account
   {
     slug: 'how-to-check-if-a-website-is-safe-before-buying-2026',
     title: 'How to Check If a Website Is Safe Before You Buy',
-    excerpt:
-      'Five things to look for — the HTTPS padlock, the correct domain name, real contact info, customer reviews, and Google Safe Browsing — before entering your card number.',
+    excerpt: 'Five things to look for — the HTTPS padlock, the correct domain name, real contact info, customer reviews, and Google Safe Browsing — before entering your card number.',
     category: 'safety-guides',
     tags: [
       'website safety',
@@ -297,46 +287,36 @@ If you completed a purchase and now have doubts, act right away:
     steps: [
       {
         title: 'Check for HTTPS and the padlock in your browser',
-        content:
-          'Look at the website address in your browser bar before entering any payment information. A safe website address starts with "https://" — note the "s." You may also see a small padlock icon to the left of the address. If the address starts with only "http://" (no "s"), do not enter your card number.',
-        warning:
-          'HTTPS means your connection is private, but it does not guarantee the business is honest. Always complete all five checks.',
+        content: 'Look at the website address in your browser bar before entering any payment information. A safe website address starts with "https://" — note the "s." You may also see a small padlock icon to the left of the address. If the address starts with only "http://" (no "s"), do not enter your card number.',
+        warning: 'HTTPS means your connection is private, but it does not guarantee the business is honest. Always complete all five checks.',
       },
       {
         title: 'Read the domain name letter by letter for misspellings',
-        content:
-          'Look carefully at the website address. Scammers use addresses like "amaz0n.com" (zero instead of O) or "apple-support-help.com" (extra words). The correct addresses for major stores are short and simple — amazon.com, walmart.com, target.com. If anything looks off, close the tab and type the correct address yourself.',
+        content: 'Look carefully at the website address. Scammers use addresses like "amaz0n.com" (zero instead of O) or "apple-support-help.com" (extra words). The correct addresses for major stores are short and simple — amazon.com, walmart.com, target.com. If anything looks off, close the tab and type the correct address yourself.',
         tip: 'When in doubt, search for the store name in Google and click the result rather than following a link from an email or text.',
       },
       {
         title: 'Find the "Contact" or "About Us" page and confirm real contact details',
-        content:
-          'Scroll to the bottom of the website and look for a "Contact Us" or "About Us" link. A real business lists a physical address, a phone number, and a return policy. If none of these exist — or the page is blank — do not buy.',
-        warning:
-          'An email address at Gmail or Yahoo (rather than the business\'s own domain) is a red flag for a personal or scam operation.',
+        content: 'Scroll to the bottom of the website and look for a "Contact Us" or "About Us" link. A real business lists a physical address, a phone number, and a return policy. If none of these exist — or the page is blank — do not buy.',
+        warning: 'An email address at Gmail or Yahoo (rather than the business\'s own domain) is a red flag for a personal or scam operation.',
       },
       {
         title: 'Search for reviews on Google and check the BBB',
-        content:
-          'In Google, search for "[website name] reviews" and "[website name] scam." Also visit bbb.org and search for the business. Look at customer ratings, the number of unresolved complaints, and how long the business has been listed.',
+        content: 'In Google, search for "[website name] reviews" and "[website name] scam." Also visit bbb.org and search for the business. Look at customer ratings, the number of unresolved complaints, and how long the business has been listed.',
         tip: 'If the business has zero reviews anywhere online, that itself is a warning sign for a new or fake site.',
       },
       {
         title: 'Check the site with Google Safe Browsing',
-        content:
-          'Go to google.com/transparencyreport/safebrowsing/ in your browser. Paste the website address into the "Check site status" box and click the search button. Google will report whether the site is currently flagged as dangerous.',
+        content: 'Go to google.com/transparencyreport/safebrowsing/ in your browser. Paste the website address into the "Check site status" box and click the search button. Google will report whether the site is currently flagged as dangerous.',
       },
       {
         title: 'Walk away if red flags appear',
-        content:
-          'Prices that seem impossibly low, no contact information, requests for your Social Security number, and payment only by gift card or wire transfer are all signs of a scam. Close the browser tab and find a trusted retailer instead.',
-        warning:
-          'No legitimate store will ever ask for your Social Security number at checkout.',
+        content: 'Prices that seem impossibly low, no contact information, requests for your Social Security number, and payment only by gift card or wire transfer are all signs of a scam. Close the browser tab and find a trusted retailer instead.',
+        warning: 'No legitimate store will ever ask for your Social Security number at checkout.',
       },
       {
         title: 'Act immediately if you suspect you bought from a fraudulent site',
-        content:
-          'Call the number on the back of your credit or debit card right away and tell them you may have been defrauded. Ask about disputing the charge. Report the site to the FTC at reportfraud.ftc.gov to protect others.',
+        content: 'Call the number on the back of your credit or debit card right away and tell them you may have been defrauded. Ask about disputing the charge. Report the site to the FTC at reportfraud.ftc.gov to protect others.',
         tip: 'Credit cards offer stronger fraud protection than debit cards. If you shop online often, consider using a credit card (paid in full each month) rather than a debit card for purchases.',
       },
     ],
@@ -345,8 +325,7 @@ If you completed a purchase and now have doubts, act right away:
   {
     slug: 'how-to-download-music-to-listen-without-wifi-2026',
     title: 'How to Download Music and Podcasts to Listen Without Wi-Fi',
-    excerpt:
-      'Save songs, podcasts, and audiobooks directly to your phone so you can listen on road trips, airplanes, or anywhere you do not have an internet connection.',
+    excerpt: 'Save songs, podcasts, and audiobooks directly to your phone so you can listen on road trips, airplanes, or anywhere you do not have an internet connection.',
     category: 'entertainment',
     tags: [
       'offline music',
@@ -382,7 +361,7 @@ Not every music service lets you download for offline listening on a free accoun
 |---|---|---|
 | Spotify (music) | Premium subscribers only | ~$11/month |
 | Apple Music | Subscribers only | ~$11/month |
-| Amazon Music | Prime members get limited selection; Unlimited subscribers get full catalog | Included with Prime (limited) or ~$9/month |
+| Amazon Music | Prime members get limited selection. Unlimited subscribers get full catalog | Included with Prime (limited) or ~$9/month |
 | Spotify Podcasts | Free — no subscription needed | Free |
 | iPhone Podcasts app | Free — no subscription needed | Free |
 | YouTube Music | Premium subscribers only | ~$11/month |
@@ -494,43 +473,35 @@ If you enjoy audiobooks, check out **Libby** (libbyapp.com) — a free app conne
     steps: [
       {
         title: 'Check which service you have and whether downloads are included',
-        content:
-          'Music downloads require a paid subscription for Spotify, Apple Music, Amazon Music Unlimited, and YouTube Music. Podcasts are free to download on any service. If you are not sure whether you have a paid music subscription, check Settings → your name → Subscriptions (iPhone) or Google Play → Payments & subscriptions (Android).',
+        content: 'Music downloads require a paid subscription for Spotify, Apple Music, Amazon Music Unlimited, and YouTube Music. Podcasts are free to download on any service. If you are not sure whether you have a paid music subscription, check Settings → your name → Subscriptions (iPhone) or Google Play → Payments & subscriptions (Android).',
         tip: 'If you do not want to pay for a music subscription, focus on the free podcast downloads — there are thousands of shows covering every topic.',
       },
       {
         title: 'Download Spotify playlists or albums (Premium required)',
-        content:
-          'Open the Spotify app → find a playlist or album → tap the three dots → tap "Download." A download icon appears next to the playlist when all songs are saved. Do this at home on Wi-Fi, not on cellular data.',
-        warning:
-          'Downloaded songs are only available while your Spotify Premium subscription is active. If you cancel, downloads become unplayable.',
+        content: 'Open the Spotify app → find a playlist or album → tap the three dots → tap "Download." A download icon appears next to the playlist when all songs are saved. Do this at home on Wi-Fi, not on cellular data.',
+        warning: 'Downloaded songs are only available while your Spotify Premium subscription is active. If you cancel, downloads become unplayable.',
       },
       {
         title: 'Download Apple Music songs to your iPhone',
-        content:
-          'Open the Apple Music app → find a song or album → tap the three dots → tap "Add to Library." Then tap the cloud-with-downward-arrow icon next to the song or album to download it. The icon disappears when the download is complete.',
+        content: 'Open the Apple Music app → find a song or album → tap the three dots → tap "Add to Library." Then tap the cloud-with-downward-arrow icon next to the song or album to download it. The icon disappears when the download is complete.',
         tip: 'To see all your downloaded music in one place, go to Library → Downloaded Music.',
       },
       {
         title: 'Download podcasts for free on iPhone',
-        content:
-          'Open the Podcasts app (purple microphone icon) → search for a show → tap the episode → tap the three dots → tap "Download." To get new episodes automatically, tap "Follow" on the show page and turn on "Download New Episodes" in the show settings.',
+        content: 'Open the Podcasts app (purple microphone icon) → search for a show → tap the episode → tap the three dots → tap "Download." To get new episodes automatically, tap "Follow" on the show page and turn on "Download New Episodes" in the show settings.',
       },
       {
         title: 'Download podcasts for free on Spotify',
-        content:
-          'Open the Spotify app (no paid subscription needed for podcasts) → search for a podcast → open the show page → tap "Follow." Spotify will download new episodes automatically when your phone is connected to Wi-Fi.',
+        content: 'Open the Spotify app (no paid subscription needed for podcasts) → search for a podcast → open the show page → tap "Follow." Spotify will download new episodes automatically when your phone is connected to Wi-Fi.',
         tip: 'In Spotify settings, you can choose to only download over Wi-Fi — a good way to protect your cellular data allowance.',
       },
       {
         title: 'Confirm the download by looking for the download icon',
-        content:
-          'Look for a phone icon, green checkmark, or the disappearance of the cloud icon next to a song or episode. This confirms the content is stored on your phone and will play without an internet connection.',
+        content: 'Look for a phone icon, green checkmark, or the disappearance of the cloud icon next to a song or episode. This confirms the content is stored on your phone and will play without an internet connection.',
       },
       {
         title: 'Test playback in Airplane Mode before your trip',
-        content:
-          'Before a long trip, put your phone in Airplane Mode (swipe down from the top of the screen → tap the airplane icon) and try playing your downloaded content. If it plays, you are all set. If it does not, re-download while connected to Wi-Fi and try again.',
+        content: 'Before a long trip, put your phone in Airplane Mode (swipe down from the top of the screen → tap the airplane icon) and try playing your downloaded content. If it plays, you are all set. If it does not, re-download while connected to Wi-Fi and try again.',
         tip: 'Airplane Mode turns off all wireless connections, which is exactly the condition you will face on a flight. Testing this way confirms everything will work.',
       },
     ],
@@ -539,8 +510,7 @@ If you enjoy audiobooks, check out **Libby** (libbyapp.com) — a free app conne
   {
     slug: 'how-to-use-the-find-my-app-to-locate-a-lost-iphone-2026',
     title: 'How to Use Find My to Locate a Lost iPhone',
-    excerpt:
-      'Set up Find My before you ever need it, then use iCloud.com or another Apple device to see your iPhone on a map, play a sound, or put it in Lost Mode.',
+    excerpt: 'Set up Find My before you ever need it, then use iCloud.com or another Apple device to see your iPhone on a map, play a sound, or put it in Lost Mode.',
     category: 'phone-guides',
     tags: [
       'Find My iPhone',
@@ -676,45 +646,36 @@ If you help a family member set up their iPhone, take five minutes to turn on Fi
     steps: [
       {
         title: 'Turn on Find My iPhone before you ever lose your phone',
-        content:
-          'Open Settings → tap your name at the top → tap "Find My" → tap "Find My iPhone." Turn on all three switches: "Find My iPhone," "Find My network," and "Send Last Location." All three should be green. This takes less than two minutes and protects you from the moment you are done.',
-        warning:
-          'Find My cannot be set up after the phone is lost. You must do this now, while you have the phone in your hands.',
+        content: 'Open Settings → tap your name at the top → tap "Find My" → tap "Find My iPhone." Turn on all three switches: "Find My iPhone," "Find My network," and "Send Last Location." All three should be green. This takes less than two minutes and protects you from the moment you are done.',
+        warning: 'Find My cannot be set up after the phone is lost. You must do this now, while you have the phone in your hands.',
       },
       {
         title: 'Open the Find My app on another Apple device to see your phone\'s location',
-        content:
-          'If your phone is missing, open the Find My app (green radar icon) on a second iPhone, iPad, or Mac. Tap the "Devices" tab. Tap your iPhone in the list. A map appears showing where the phone is or where it was last seen.',
+        content: 'If your phone is missing, open the Find My app (green radar icon) on a second iPhone, iPad, or Mac. Tap the "Devices" tab. Tap your iPhone in the list. A map appears showing where the phone is or where it was last seen.',
         tip: 'A green dot on the map means the phone is currently online and the location is live. A gray dot means the phone is offline and the location shown is the last place it was detected.',
       },
       {
         title: 'Use icloud.com from any computer if you do not have another Apple device',
-        content:
-          'Go to icloud.com in any web browser. Sign in with your Apple ID email and password. Click "Find My." Click "All Devices" and select your iPhone. Your phone\'s location appears on the map.',
+        content: 'Go to icloud.com in any web browser. Sign in with your Apple ID email and password. Click "Find My." Click "All Devices" and select your iPhone. Your phone\'s location appears on the map.',
         tip: 'You can do this from a library computer, a friend\'s laptop, or any device with a browser — you are not limited to Apple products.',
       },
       {
         title: 'Play a sound to find the phone if it is nearby',
-        content:
-          'In Find My (on another device or icloud.com), tap your iPhone in the Devices list, then tap "Play Sound." Your iPhone will make a loud alert tone — even if it is set to silent — for about two minutes. Follow the sound to find it.',
+        content: 'In Find My (on another device or icloud.com), tap your iPhone in the Devices list, then tap "Play Sound." Your iPhone will make a loud alert tone — even if it is set to silent — for about two minutes. Follow the sound to find it.',
       },
       {
         title: 'Turn on Lost Mode if the phone is missing outside your home',
-        content:
-          'Tap your iPhone in the Devices list → tap "Mark As Lost" → enter a phone number where you can be reached → add a short message (example: "Please call 555-0147") → tap "Activate." This locks the phone, shows your message on the screen, disables Apple Pay, and keeps tracking the location.',
+        content: 'Tap your iPhone in the Devices list → tap "Mark As Lost" → enter a phone number where you can be reached → add a short message (example: "Please call 555-0147") → tap "Activate." This locks the phone, shows your message on the screen, disables Apple Pay, and keeps tracking the location.',
         tip: 'Lost Mode does not erase your data. Your photos, contacts, and everything else stay on the phone — they are just locked behind your passcode.',
       },
       {
         title: 'Erase the device only as a last resort',
-        content:
-          'If you are certain the phone is stolen and will never be recovered, tap "Erase This Device" in Find My and confirm. This removes all personal data from the phone. Be aware that once erased, the phone can no longer be tracked.',
-        warning:
-          'Erasing is permanent and removes the phone from Find My. Do not erase unless you are completely sure you will not recover the phone.',
+        content: 'If you are certain the phone is stolen and will never be recovered, tap "Erase This Device" in Find My and confirm. This removes all personal data from the phone. Be aware that once erased, the phone can no longer be tracked.',
+        warning: 'Erasing is permanent and removes the phone from Find My. Do not erase unless you are completely sure you will not recover the phone.',
       },
       {
         title: 'Contact your carrier and file a report if the phone was stolen',
-        content:
-          'Call your mobile carrier (AT&T: 800-331-0500, Verizon: 800-922-0204, T-Mobile: 877-746-0909) to report the phone stolen. They can suspend your line to prevent unauthorized calls and charges. If you believe the phone was stolen, file a report with your local police — bring a screenshot of the last known location from Find My.',
+        content: 'Call your mobile carrier (AT&T: 800-331-0500, Verizon: 800-922-0204, T-Mobile: 877-746-0909) to report the phone stolen. They can suspend your line to prevent unauthorized calls and charges. If you believe the phone was stolen, file a report with your local police — bring a screenshot of the last known location from Find My.',
         tip: 'Take a screenshot of the Find My map showing your phone\'s last location before you erase the device, so you have a record to share with police if needed.',
       },
     ],

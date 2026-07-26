@@ -93,7 +93,7 @@ Pack a portable Level 2 adapter and a standard outlet adapter in your car as a b
       },
       {
         title: `Plan activities during charging stops`,
-        content: `A 20 to 30 minute DC fast charge is a natural break — enough time for a restroom visit, a meal, or a walk around a rest area. When reviewing your charging stops in ABRP or PlugShare, look at what is nearby. Many Electrify America stations are at Walmart or Costco; Tesla Superchargers are often near restaurants and shopping centers. Building charging into your trip rhythm makes it feel less like a chore and more like a planned rest stop.`,
+        content: `A 20 to 30 minute DC fast charge is a natural break — enough time for a restroom visit, a meal, or a walk around a rest area. When reviewing your charging stops in ABRP or PlugShare, look at what is nearby. Many Electrify America stations are at Walmart or Costco. Tesla Superchargers are often near restaurants and shopping centers. Building charging into your trip rhythm makes it feel less like a chore and more like a planned rest stop.`,
       },
       {
         title: `Book hotels with EV charging`,
@@ -284,7 +284,7 @@ If you value supporting musicians directly and owning your music rather than ren
       },
       {
         title: `Download your music after purchase`,
-        content: `After completing a purchase, Bandcamp shows a download page. Choose your preferred format — MP3 (320kbps) works on any device and is a good default choice; FLAC is a higher-quality format for audiophiles who want the best possible sound. Click Download and save the files to your computer. You can also access past purchases any time by signing in and going to your "Collection" page.`,
+        content: `After completing a purchase, Bandcamp shows a download page. Choose your preferred format — MP3 (320kbps) works on any device and is a good default choice. FLAC is a higher-quality format for audiophiles who want the best possible sound. Click Download and save the files to your computer. You can also access past purchases any time by signing in and going to your "Collection" page.`,
         warning: `Save your downloaded music files to a backup location such as an external hard drive or cloud storage. If something happens to your computer, your Bandcamp account lets you re-download purchases at any time, but having a local backup is good practice.`,
       },
       {
@@ -907,7 +907,7 @@ A few limitations to be aware of: Meta AI does not have access to your personal 
 
 What makes Grok distinct from most other AI assistants is its real-time access to posts on X. Because xAI is closely tied to X, Grok can search current posts on the platform to find breaking news, trending topics, and public reactions in real time. This is a meaningful advantage for questions about current events, where other AI tools that lack live internet access may provide outdated information.
 
-Grok also has a personality that is more casual and direct than most AI tools. xAI describes it as having a sense of humor and willingness to answer questions that other AI tools might decline. In practice, Grok is willing to engage with edgy topics more readily than competitors like ChatGPT. Some users find this refreshing; others prefer the more conservative guardrails of other tools. All AI tools can make mistakes, and Grok is no exception.
+Grok also has a personality that is more casual and direct than most AI tools. xAI describes it as having a sense of humor and willingness to answer questions that other AI tools might decline. In practice, Grok is willing to engage with edgy topics more readily than competitors like ChatGPT. Some users find this refreshing. Others prefer the more conservative guardrails of other tools. All AI tools can make mistakes, and Grok is no exception.
 
 Access to Grok varies by subscription tier. A limited version of Grok is available free on the X website and app for users with a standard X account. The full version with more capabilities — including access to Grok 3, xAI's most capable model — requires an X Premium subscription ($8 per month) or an X Premium+ subscription ($22 per month). The standalone grok.com website offers a generous free tier for users who do not want an X account.
 
@@ -917,7 +917,7 @@ For users already on X who want an AI assistant without switching to another pla
     steps: [
       {
         title: `Access Grok inside the X app`,
-        content: `Open the X app on your phone (formerly Twitter — the icon is a black X) or go to x.com in your web browser. Sign in with your account. Look for the Grok icon in the navigation — it appears as a sparkling or star-like symbol in the left sidebar on the website, or in the bottom navigation bar on the app. Tap it to open the Grok chat interface. If you have a basic X account, you will have limited access; upgrading to X Premium unlocks the full Grok experience.`,
+        content: `Open the X app on your phone (formerly Twitter — the icon is a black X) or go to x.com in your web browser. Sign in with your account. Look for the Grok icon in the navigation — it appears as a sparkling or star-like symbol in the left sidebar on the website, or in the bottom navigation bar on the app. Tap it to open the Grok chat interface. If you have a basic X account, you will have limited access. Upgrading to X Premium unlocks the full Grok experience.`,
         tip: `You can also access Grok directly at grok.com without an X account. Create a free xAI account with your email address and you get access to a capable version of Grok at no cost.`,
       },
       {

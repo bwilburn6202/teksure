@@ -896,7 +896,7 @@ The process described here works on Windows 10 and Windows 11. The Task Manager 
 
 macOS gives you a simple way to manage this in System Settings. Under General > Login Items, you can see every app set to open when you log in and remove any that you don't need loading automatically.
 
-This is different from closing or quitting an app — removing an app from Login Items means it won't open itself automatically. The app stays installed and works perfectly; you open it yourself when you need it.
+This is different from closing or quitting an app — removing an app from Login Items means it won't open itself automatically. The app stays installed and works perfectly. You open it yourself when you need it.
 
 Some Login Items are important and should stay. Your security software (like Malwarebytes or a VPN) often needs to run at login to protect you. iCloud Drive and Handoff-related services are also important for Apple features to work. When in doubt about a specific item, search its name online to understand what it does before removing it.
 
@@ -1137,7 +1137,7 @@ Common reasons to access your router: changing your WiFi name (called the SSID) 
   {
     slug: `wifi-band-guide`,
     title: `2.4 GHz vs 5 GHz WiFi: Which One Should You Connect To?`,
-    excerpt: `Most routers broadcast two WiFi networks. The 2.4 GHz band has better range; the 5 GHz band is faster but shorter range. Here's when to use each.`,
+    excerpt: `Most routers broadcast two WiFi networks. The 2.4 GHz band has better range. The 5 GHz band is faster but shorter range. Here's when to use each.`,
     category: `internet-connectivity`,
     tags: [`wifi`, `2.4ghz`, `5ghz`, `router`, `wireless`, `internet`, `network`, `connectivity`],
     readTime: `5 min`,

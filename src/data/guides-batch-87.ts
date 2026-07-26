@@ -83,7 +83,7 @@ Yousician is available on iPhone, iPad, Android, Windows, and Mac. You can learn
       },
       {
         title: `Work through your first mission`,
-        content: `Your first mission introduces the most fundamental skill for your instrument — for guitar, this is usually fretting your first chord; for piano, it is finding Middle C and playing a short scale. The screen shows you exactly where to put your fingers using diagrams or animated hand positions. Play the exercise, and Yousician scores you right away. You need to reach a minimum score (usually around 60%) to pass and unlock the next step.`,
+        content: `Your first mission introduces the most fundamental skill for your instrument — for guitar, this is usually fretting your first chord. For piano, it is finding Middle C and playing a short scale. The screen shows you exactly where to put your fingers using diagrams or animated hand positions. Play the exercise, and Yousician scores you right away. You need to reach a minimum score (usually around 60%) to pass and unlock the next step.`,
         tip: `Quick Tip: Replay each mission until you score above 80% before moving on. A higher score means you have truly learned the skill rather than barely passing.`,
       },
       {
@@ -208,7 +208,7 @@ Apple's official GarageBand tutorials are available at support.apple.com and on 
       },
       {
         title: `Try the Smart Drums instrument`,
-        content: `Tap "Drums" in the instrument list, then tap "Smart Drums" at the top of the screen. Smart Drums gives you a grid where you drag drum sounds — kick drum, snare, hi-hat, clap — and place them in different positions. Items placed in the upper-right corner of the grid are louder and more frequent; lower-left items are quieter and less frequent. Tap the play button to hear your beat. Move the pieces around until you like the sound. This is one of the most beginner-friendly ways to create music in GarageBand.`,
+        content: `Tap "Drums" in the instrument list, then tap "Smart Drums" at the top of the screen. Smart Drums gives you a grid where you drag drum sounds — kick drum, snare, hi-hat, clap — and place them in different positions. Items placed in the upper-right corner of the grid are louder and more frequent. Lower-left items are quieter and less frequent. Tap the play button to hear your beat. Move the pieces around until you like the sound. This is one of the most beginner-friendly ways to create music in GarageBand.`,
       },
       {
         title: `Record your voice or an instrument`,

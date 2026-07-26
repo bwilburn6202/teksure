@@ -704,7 +704,7 @@ The app talks you through each workout, telling you when to walk and when to run
       { title: 'Download the app', content: 'Install the official "C25K - 5K Trainer" app from the App Store or Play Store. The free version includes all 9 weeks — you do not need to pay for anything.' },
       { title: 'Set up your profile', content: 'Enter your name and pick a voice coach that you like. The coach will speak in your headphones during workouts, telling you when to walk and run.' },
       { title: 'Do Week 1 Day 1', content: 'Start with Week 1 Day 1: a 5-minute warm-up walk, then alternating 60 seconds of running with 90 seconds of walking for 20 minutes, then a 5-minute cool-down. Put on headphones and follow the voice prompts.' },
-      { title: 'Follow the schedule', content: 'Do 3 workouts per week, with a rest day in between. Each week gets a bit harder — longer running times and less walking. Repeat a week if you feel it is too much; there is no rush.' },
+      { title: 'Follow the schedule', content: 'Do 3 workouts per week, with a rest day in between. Each week gets a bit harder — longer running times and less walking. Repeat a week if you feel it is too much. There is no rush.' },
       { title: 'Finish Week 9 with a 5K', content: 'By Week 9, you will be running 30 minutes without stopping — about 5K for most people. Sign up for a local 5K race or just run one yourself for the sense of accomplishment.' },
     ],
   },

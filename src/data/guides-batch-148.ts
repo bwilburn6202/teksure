@@ -7,8 +7,7 @@ export const guidesBatch148: Guide[] = [
   {
     slug: 'how-to-take-better-phone-photos-2026',
     title: 'How to Take Better Photos With Your Phone',
-    excerpt:
-      'Hold steady, tap to focus, and use natural light. These practical tips work on any iPhone or Android and make a real difference in your pictures.',
+    excerpt: 'Hold steady, tap to focus, and use natural light. These practical tips work on any iPhone or Android and make a real difference in your pictures.',
     category: 'tips-tricks',
     tags: [
       'phone camera',
@@ -37,7 +36,7 @@ On iPhone, after you tap, a small sun icon appears next to the focus square. Sli
 
 **Turn on the camera grid to straighten your shots**
 
-The rule of thirds is a photography principle that says a photo looks more balanced when the main subject sits on one of the lines dividing the frame into thirds — rather than dead center. You do not need to memorize the theory; you need to turn on the grid overlay in your camera settings, and the lines appear right on your viewfinder.
+The rule of thirds is a photography principle that says a photo looks more balanced when the main subject sits on one of the lines dividing the frame into thirds — rather than dead center. You do not need to memorize the theory. You need to turn on the grid overlay in your camera settings, and the lines appear right on your viewfinder.
 
 On iPhone: open Settings, scroll down and tap Camera, then turn on Grid.
 On Android (Samsung): open the Camera app, tap the gear icon (Settings), and turn on Grid lines. On Google Pixel: open Camera, tap the arrow or settings icon, and look for Grid type.
@@ -79,43 +78,35 @@ Source: Apple Support — Camera tips (support.apple.com) and Google Support —
     steps: [
       {
         title: 'Hold the phone steady with both hands',
-        content:
-          'Cup one hand under the bottom of the phone and use the other hand to hold the sides. Tuck your elbows against your body. Press the shutter button gently — do not jab it. This alone prevents most blurry photos.',
+        content: 'Cup one hand under the bottom of the phone and use the other hand to hold the sides. Tuck your elbows against your body. Press the shutter button gently — do not jab it. This alone prevents most blurry photos.',
         tip: 'Quick Tip: If your hand tends to shake, lean against a wall or rest your elbows on a table for extra steadiness.',
       },
       {
         title: 'Tap the screen to focus on your subject',
-        content:
-          'Before you shoot, tap once on the person or object you most want to be sharp. A small square or circle appears showing where the camera is focused. The camera also adjusts brightness for that spot. Without this tap, the camera guesses — and sometimes gets it wrong.',
+        content: 'Before you shoot, tap once on the person or object you most want to be sharp. A small square or circle appears showing where the camera is focused. The camera also adjusts brightness for that spot. Without this tap, the camera guesses — and sometimes gets it wrong.',
         tip: 'Quick Tip: On iPhone, slide the small sun icon that appears after tapping to brighten or darken the photo before you take it.',
       },
       {
         title: 'Turn on the camera grid in Settings',
-        content:
-          'The grid places two horizontal and two vertical lines over your viewfinder, dividing the frame into thirds. Try placing faces or the horizon on one of those lines instead of the exact center — the photo will look more balanced. On iPhone: Settings → Camera → Grid (toggle on). On Samsung: open Camera → gear icon → Grid lines. On Google Pixel: open Camera → Settings → Grid type.',
+        content: 'The grid places two horizontal and two vertical lines over your viewfinder, dividing the frame into thirds. Try placing faces or the horizon on one of those lines instead of the exact center — the photo will look more balanced. On iPhone: Settings → Camera → Grid (toggle on). On Samsung: open Camera → gear icon → Grid lines. On Google Pixel: open Camera → Settings → Grid type.',
       },
       {
         title: 'Turn off the flash and move toward a window',
-        content:
-          'The built-in flash creates harsh, flat light. Turn it off by tapping the lightning bolt icon in the Camera app and selecting Off. Then position your subject so a window or lamp is in front of them, not behind them. Soft natural light from a window produces warmer, more flattering photos.',
-        warning:
-          'Avoid standing your subject in front of a bright window — the camera will expose for the window light and your subject will appear as a dark shadow. Face them toward the window instead.',
+        content: 'The built-in flash creates harsh, flat light. Turn it off by tapping the lightning bolt icon in the Camera app and selecting Off. Then position your subject so a window or lamp is in front of them, not behind them. Soft natural light from a window produces warmer, more flattering photos.',
+        warning: 'Avoid standing your subject in front of a bright window — the camera will expose for the window light and your subject will appear as a dark shadow. Face them toward the window instead.',
       },
       {
         title: 'Walk closer rather than pinching to zoom',
-        content:
-          'Pinching the screen to zoom in makes photos look blurry and grainy because it stretches the image digitally. If you need to get closer, walk toward your subject. If your phone has numbered zoom buttons near the shutter (0.5, 1x, 2x), you can use those — they switch to a real lens and stay sharp.',
+        content: 'Pinching the screen to zoom in makes photos look blurry and grainy because it stretches the image digitally. If you need to get closer, walk toward your subject. If your phone has numbered zoom buttons near the shutter (0.5, 1x, 2x), you can use those — they switch to a real lens and stay sharp.',
       },
       {
         title: 'Take three or four shots and choose the best one',
-        content:
-          'Take a few photos of the same moment. At least one will be sharper than the others. On iPhone, hold down the shutter button to take a rapid burst of photos. Then open the Photos app and pick your favorite — delete the rest to keep your storage tidy.',
+        content: 'Take a few photos of the same moment. At least one will be sharper than the others. On iPhone, hold down the shutter button to take a rapid burst of photos. Then open the Photos app and pick your favorite — delete the rest to keep your storage tidy.',
         tip: 'Quick Tip: To delete an unwanted photo on iPhone: open it in Photos, tap the trash can icon, then tap "Delete Photo." On Android: open the photo in Google Photos and tap the trash icon.',
       },
       {
         title: 'Make quick edits in your Photos app',
-        content:
-          'Open a photo, tap Edit (iPhone) or the pencil icon (Google Photos). Use the Brightness slider to lift a dark photo slightly and the Crop tool to trim out distracting edges. If the result looks wrong, tap Revert or Cancel to restore the original. Edits are non-destructive — the original is never permanently changed until you save.',
+        content: 'Open a photo, tap Edit (iPhone) or the pencil icon (Google Photos). Use the Brightness slider to lift a dark photo slightly and the Crop tool to trim out distracting edges. If the result looks wrong, tap Revert or Cancel to restore the original. Edits are non-destructive — the original is never permanently changed until you save.',
         tip: 'Quick Tip: The single most useful edit is a small brightness boost — slide it about one-quarter of the way up on a dark indoor photo and it can look like a completely different picture.',
       },
     ],
@@ -124,8 +115,7 @@ Source: Apple Support — Camera tips (support.apple.com) and Google Support —
   {
     slug: 'what-is-an-app-store-and-how-to-use-it-2026',
     title: 'What Is an App Store and How Do You Use It?',
-    excerpt:
-      'The App Store (iPhone) and Play Store (Android) are the official, safe places to download apps. Learn how to find, read reviews, install, and update apps with confidence.',
+    excerpt: 'The App Store (iPhone) and Play Store (Android) are the official, safe places to download apps. Learn how to find, read reviews, install, and update apps with confidence.',
     category: 'essential-skills',
     tags: [
       'app store',
@@ -175,39 +165,31 @@ Source: Apple Support — App Store (support.apple.com/apps) and Google Support 
     steps: [
       {
         title: 'Find the App Store or Play Store on your phone',
-        content:
-          'On iPhone or iPad: look for the blue App Store icon (it looks like a white letter "A" made of sticks). On Android phones: look for the colorful Google Play Store icon (a triangle pointing right, in four colors). Both icons are usually on your home screen or in your list of all apps.',
+        content: 'On iPhone or iPad: look for the blue App Store icon (it looks like a white letter "A" made of sticks). On Android phones: look for the colorful Google Play Store icon (a triangle pointing right, in four colors). Both icons are usually on your home screen or in your list of all apps.',
         tip: 'Quick Tip: If you cannot find the store icon, swipe down on your home screen and type "App Store" or "Play Store" in the search bar at the top.',
       },
       {
         title: 'Search for an app by name',
-        content:
-          'Tap the Search icon at the bottom of the screen (it looks like a magnifying glass). Type the name of the app you want — for example, "Facebook," "Zoom," or "Weather Channel." A list of results will appear. Look for the exact name and the correct company logo before tapping on a result.',
-        warning:
-          'Watch for "copycat" apps that use a similar name or logo to a popular app. Always check the developer name below the app title. The official Facebook app is made by "Meta Platforms, Inc." If the developer name looks wrong, scroll past it and look for the correct one.',
+        content: 'Tap the Search icon at the bottom of the screen (it looks like a magnifying glass). Type the name of the app you want — for example, "Facebook," "Zoom," or "Weather Channel." A list of results will appear. Look for the exact name and the correct company logo before tapping on a result.',
+        warning: 'Watch for "copycat" apps that use a similar name or logo to a popular app. Always check the developer name below the app title. The official Facebook app is made by "Meta Platforms, Inc." If the developer name looks wrong, scroll past it and look for the correct one.',
       },
       {
         title: 'Read the reviews and check the rating',
-        content:
-          'Before installing, scroll down on the app\'s page to see the star rating and reviews. Look for 4 stars or higher with a large number of reviews (at least a few hundred). Scroll to the most recent reviews to check for any recent problems. Also look for the "In-App Purchases" section to see if the app charges money for anything after you install it.',
+        content: 'Before installing, scroll down on the app\'s page to see the star rating and reviews. Look for 4 stars or higher with a large number of reviews (at least a few hundred). Scroll to the most recent reviews to check for any recent problems. Also look for the "In-App Purchases" section to see if the app charges money for anything after you install it.',
       },
       {
         title: 'Install the app',
-        content:
-          'Tap the "Get" button (iPhone) or "Install" button (Android). If the app costs money, the button will show the price instead (for example, "$2.99") — tap it and confirm with your Face ID, fingerprint, or password. For free apps, no payment is needed. The app will download and appear on your home screen when it is ready. This usually takes less than a minute on Wi-Fi.',
+        content: 'Tap the "Get" button (iPhone) or "Install" button (Android). If the app costs money, the button will show the price instead (for example, "$2.99") — tap it and confirm with your Face ID, fingerprint, or password. For free apps, no payment is needed. The app will download and appear on your home screen when it is ready. This usually takes less than a minute on Wi-Fi.',
         tip: 'Quick Tip: Downloading over Wi-Fi is faster and does not use your cellular data. Check that the Wi-Fi symbol is showing at the top of your screen before you start a download.',
       },
       {
         title: 'Open and sign in to the app',
-        content:
-          'Once installed, tap the app icon on your home screen. Most apps will ask you to create a free account or sign in with an existing one. For apps from services you already use — like your bank, your email provider, or Netflix — use the same email address and password you use on their website.',
-        warning:
-          'Never download an app from a link in an email or text message, even if the message appears to be from a company you trust. Go to the App Store or Play Store yourself and search for the app by name.',
+        content: 'Once installed, tap the app icon on your home screen. Most apps will ask you to create a free account or sign in with an existing one. For apps from services you already use — like your bank, your email provider, or Netflix — use the same email address and password you use on their website.',
+        warning: 'Never download an app from a link in an email or text message, even if the message appears to be from a company you trust. Go to the App Store or Play Store yourself and search for the app by name.',
       },
       {
         title: 'Update your apps regularly',
-        content:
-          'On iPhone: open the App Store, tap your profile picture in the top-right corner, then scroll down to see "Available Updates." Tap "Update All" to install them all at once. On Android: open the Play Store, tap your profile picture in the top-right corner, then tap "Manage apps and device" to see and install updates.',
+        content: 'On iPhone: open the App Store, tap your profile picture in the top-right corner, then scroll down to see "Available Updates." Tap "Update All" to install them all at once. On Android: open the Play Store, tap your profile picture in the top-right corner, then tap "Manage apps and device" to see and install updates.',
         tip: 'Quick Tip: To turn on automatic updates on iPhone: Settings → App Store → turn on "App Updates." On Android: open Play Store → profile picture → Settings → Network Preferences → Auto-update apps → "Over Wi-Fi only."',
       },
       {
@@ -220,8 +202,7 @@ Source: Apple Support — App Store (support.apple.com/apps) and Google Support 
   {
     slug: 'how-to-stop-unwanted-emails-unsubscribe-2026',
     title: 'How to Stop Unwanted Emails',
-    excerpt:
-      'Learn how to unsubscribe from marketing emails, when NOT to click unsubscribe, how to mark spam, block senders, and use filters to keep your inbox tidy.',
+    excerpt: 'Learn how to unsubscribe from marketing emails, when NOT to click unsubscribe, how to mark spam, block senders, and use filters to keep your inbox tidy.',
     category: 'online-privacy',
     tags: [
       'email',
@@ -297,37 +278,30 @@ Source: FTC.gov — CAN-SPAM Act (ftc.gov/tips-advice/business-center/guidance/c
     steps: [
       {
         title: 'Decide: do you recognize the sender?',
-        content:
-          'Before doing anything with an unwanted email, check who sent it. Look at the sender\'s name and email address (tap the sender name to see the full address). If you recognize the company and remember signing up or buying something from them, it is a legitimate marketing email — safe to unsubscribe from. If you do not recognize the sender at all, or the email is alarming or urgent in tone, treat it as suspicious.',
-        warning:
-          'Never click "Unsubscribe" in an email from an unknown sender. Doing so confirms your email address is active, which can lead to even more unwanted mail.',
+        content: 'Before doing anything with an unwanted email, check who sent it. Look at the sender\'s name and email address (tap the sender name to see the full address). If you recognize the company and remember signing up or buying something from them, it is a legitimate marketing email — safe to unsubscribe from. If you do not recognize the sender at all, or the email is alarming or urgent in tone, treat it as suspicious.',
+        warning: 'Never click "Unsubscribe" in an email from an unknown sender. Doing so confirms your email address is active, which can lead to even more unwanted mail.',
       },
       {
         title: 'Check for Gmail\'s built-in Unsubscribe option',
-        content:
-          'If you use Gmail, open the email and look just below the sender\'s name and email address at the top. For many marketing emails, Gmail displays a small gray "Unsubscribe" link right there. Tap it — Gmail processes the request through its own system, which is safer than clicking a link inside the email. This is the first place to look before scrolling to the bottom.',
+        content: 'If you use Gmail, open the email and look just below the sender\'s name and email address at the top. For many marketing emails, Gmail displays a small gray "Unsubscribe" link right there. Tap it — Gmail processes the request through its own system, which is safer than clicking a link inside the email. This is the first place to look before scrolling to the bottom.',
         tip: 'Quick Tip: The Gmail unsubscribe option appears only for emails that Gmail has already identified as newsletters or marketing messages. If you do not see it, scroll to the bottom of the email instead.',
       },
       {
         title: 'Use the Unsubscribe link at the bottom of legitimate emails',
-        content:
-          'For legitimate marketing emails, scroll all the way to the bottom of the email and look for very small text that says "Unsubscribe," "Manage email preferences," or "Opt out." Tap that link. You will usually land on a webpage from the company confirming your request. Allow up to 10 business days for the emails to stop — that is the legal deadline under US law.',
+        content: 'For legitimate marketing emails, scroll all the way to the bottom of the email and look for very small text that says "Unsubscribe," "Manage email preferences," or "Opt out." Tap that link. You will usually land on a webpage from the company confirming your request. Allow up to 10 business days for the emails to stop — that is the legal deadline under US law.',
       },
       {
         title: 'Mark suspicious emails as spam',
-        content:
-          'For emails from senders you do not recognize, mark the message as spam instead of unsubscribing. This moves the email out of your inbox and helps train your email service to catch similar messages automatically. In Gmail: open the email, tap the three dots, select "Report spam." In iPhone Mail: swipe left on the message, tap More, then Move to Junk. In Outlook: right-click or long-press and select "Mark as junk."',
+        content: 'For emails from senders you do not recognize, mark the message as spam instead of unsubscribing. This moves the email out of your inbox and helps train your email service to catch similar messages automatically. In Gmail: open the email, tap the three dots, select "Report spam." In iPhone Mail: swipe left on the message, tap More, then Move to Junk. In Outlook: right-click or long-press and select "Mark as junk."',
       },
       {
         title: 'Block senders who keep emailing you',
-        content:
-          'If a sender ignores your unsubscribe request and keeps emailing, block their address. In Gmail: open the email, tap the three dots in the top-right corner, tap "Block [sender name]." In iPhone Mail: open the email, tap the sender\'s name at the top, tap their full email address, then tap "Block this Contact." In Outlook: open the email, tap the three dots, select "Block" or "Block Sender." Future emails from that address go straight to spam or trash.',
+        content: 'If a sender ignores your unsubscribe request and keeps emailing, block their address. In Gmail: open the email, tap the three dots in the top-right corner, tap "Block [sender name]." In iPhone Mail: open the email, tap the sender\'s name at the top, tap their full email address, then tap "Block this Contact." In Outlook: open the email, tap the three dots, select "Block" or "Block Sender." Future emails from that address go straight to spam or trash.',
         tip: 'Quick Tip: Blocking only stops that exact email address. A determined sender may switch addresses. If that happens, mark the new message as spam and block the new address too.',
       },
       {
         title: 'Set up a filter to automatically handle repeat senders',
-        content:
-          'A filter tells your email program to automatically sort or delete certain messages before they ever reach your inbox. In Gmail on a computer: open an email from the sender, click the three dots, choose "Filter messages like these," and then pick an action (delete it, skip the inbox, or label it). Search Google Support for "Gmail filters" (support.google.com/mail) for screenshots of each step.',
+        content: 'A filter tells your email program to automatically sort or delete certain messages before they ever reach your inbox. In Gmail on a computer: open an email from the sender, click the three dots, choose "Filter messages like these," and then pick an action (delete it, skip the inbox, or label it). Search Google Support for "Gmail filters" (support.google.com/mail) for screenshots of each step.',
         tip: 'Quick Tip: Filters are especially useful for store receipts, bill notifications, or newsletters you want to save but do not need to see every day. Send them to a folder labeled "Receipts" or "Shopping" so your inbox stays clear.',
       },
       {
@@ -340,8 +314,7 @@ Source: FTC.gov — CAN-SPAM Act (ftc.gov/tips-advice/business-center/guidance/c
   {
     slug: 'how-to-set-up-a-new-tv-smart-tv-basics-2026',
     title: 'How to Set Up a New Smart TV',
-    excerpt:
-      'Unbox safely, connect to Wi-Fi, sign into Netflix or Prime Video, and adjust the picture and sound. The on-screen setup wizard guides you through most of it.',
+    excerpt: 'Unbox safely, connect to Wi-Fi, sign into Netflix or Prime Video, and adjust the picture and sound. The on-screen setup wizard guides you through most of it.',
     category: 'entertainment',
     tags: [
       'smart tv',
@@ -391,14 +364,12 @@ Source: Consumer Reports — TV Buying Guide (consumerreports.org) and Samsung S
     steps: [
       {
         title: 'Unbox the TV safely — do not lift it alone',
-        content:
-          'Large TVs are best moved by two people. Slide the box onto the floor before opening it. Lift the TV from the sides, not the screen — the screen is fragile and pressing on it can damage it. Lay the TV face-down on a soft surface (the foam it came in works well) while you attach the stand legs, if it has them. Tighten the stand screws firmly so the TV does not wobble.',
+        content: 'Large TVs are best moved by two people. Slide the box onto the floor before opening it. Lift the TV from the sides, not the screen — the screen is fragile and pressing on it can damage it. Lay the TV face-down on a soft surface (the foam it came in works well) while you attach the stand legs, if it has them. Tighten the stand screws firmly so the TV does not wobble.',
         tip: 'Quick Tip: Keep the box and packaging for at least 30 days in case you need to return the TV. If you ever need to move, having the original box makes transport much safer.',
       },
       {
         title: 'Connect your cable box, streaming device, or antenna using HDMI',
-        content:
-          'HDMI is a flat, slightly wider-than-a-USB connector. If you have a cable or satellite box, plug one end of an HDMI cable into the back of that box and the other end into an HDMI port on the back or side of the TV. The HDMI ports are labeled HDMI 1, HDMI 2, etc. Remember which number you plugged into — you will need to switch the TV\'s input to that number later. If you have a Roku stick, Amazon Fire Stick, or Google Chromecast, plug it into any open HDMI port.',
+        content: 'HDMI is a flat, slightly wider-than-a-USB connector. If you have a cable or satellite box, plug one end of an HDMI cable into the back of that box and the other end into an HDMI port on the back or side of the TV. The HDMI ports are labeled HDMI 1, HDMI 2, etc. Remember which number you plugged into — you will need to switch the TV\'s input to that number later. If you have a Roku stick, Amazon Fire Stick, or Google Chromecast, plug it into any open HDMI port.',
         tip: 'Quick Tip: Most TVs include one HDMI cable in the box. If yours did not, any standard HDMI cable from a hardware store works — you do not need an expensive brand.',
       },
       {
@@ -407,33 +378,27 @@ Source: Consumer Reports — TV Buying Guide (consumerreports.org) and Samsung S
       },
       {
         title: 'Follow the on-screen setup wizard',
-        content:
-          'The setup wizard will appear automatically and guide you through the initial steps: selecting your language, choosing your country (United States), and confirming your time zone. Use the arrow buttons on the remote to move between options and press OK or Enter to confirm each one. Take it one screen at a time — there is no time pressure.',
+        content: 'The setup wizard will appear automatically and guide you through the initial steps: selecting your language, choosing your country (United States), and confirming your time zone. Use the arrow buttons on the remote to move between options and press OK or Enter to confirm each one. Take it one screen at a time — there is no time pressure.',
         tip: 'Quick Tip: Write down each answer you select so you can remember your choices if you need to redo the setup later.',
       },
       {
         title: 'Connect the TV to your home Wi-Fi network',
-        content:
-          'The setup wizard will ask you to connect to Wi-Fi. Your TV will search and display a list of nearby networks. Find your home network name in the list (it is the same name you see when you connect your phone to Wi-Fi) and select it. You will then be asked to enter your Wi-Fi password. Use the on-screen keyboard and the remote\'s arrow and OK buttons to type each character. Wi-Fi passwords are case-sensitive, so check the exact capitalization on your router label.',
-        warning:
-          'If your Wi-Fi password is not working, double-check that you are reading capital letters and numbers correctly from the router label. The number "0" and the letter "O" look similar — the password label on most routers uses a different font to tell them apart.',
+        content: 'The setup wizard will ask you to connect to Wi-Fi. Your TV will search and display a list of nearby networks. Find your home network name in the list (it is the same name you see when you connect your phone to Wi-Fi) and select it. You will then be asked to enter your Wi-Fi password. Use the on-screen keyboard and the remote\'s arrow and OK buttons to type each character. Wi-Fi passwords are case-sensitive, so check the exact capitalization on your router label.',
+        warning: 'If your Wi-Fi password is not working, double-check that you are reading capital letters and numbers correctly from the router label. The number "0" and the letter "O" look similar — the password label on most routers uses a different font to tell them apart.',
       },
       {
         title: 'Sign in to your streaming services',
-        content:
-          'Once connected to Wi-Fi, the wizard (or the TV home screen) will prompt you to sign in to streaming apps. Select the app you want — for example, Netflix — and enter your email address and password using the on-screen keyboard. If you do not have a Netflix account yet, you can create a free trial at netflix.com on your phone or computer first, then sign in on the TV. Repeat this for each service you use (Prime Video, Hulu, Disney+, etc.).',
+        content: 'Once connected to Wi-Fi, the wizard (or the TV home screen) will prompt you to sign in to streaming apps. Select the app you want — for example, Netflix — and enter your email address and password using the on-screen keyboard. If you do not have a Netflix account yet, you can create a free trial at netflix.com on your phone or computer first, then sign in on the TV. Repeat this for each service you use (Prime Video, Hulu, Disney+, etc.).',
         tip: 'Quick Tip: If typing on the TV remote feels slow, many streaming services let you activate the TV by entering a short code at their website on your phone instead of typing a full email and password. Look for a "Sign in with a code" or "Activate" option on the TV screen.',
       },
       {
         title: 'Adjust the picture and sound settings',
-        content:
-          'After setup, go to the TV\'s Settings menu (usually a gear icon on the remote or home screen). Under Picture, change the mode from "Vivid" or "Dynamic" to "Movie," "Cinema," or "Filmmaker" — this looks much more natural at home. Under Sound, look for "Clear Voice," "Speech Enhancement," or "Dialogue Boost" and turn it on if voices sound hard to hear. These two adjustments make the biggest difference in everyday viewing comfort.',
+        content: 'After setup, go to the TV\'s Settings menu (usually a gear icon on the remote or home screen). Under Picture, change the mode from "Vivid" or "Dynamic" to "Movie," "Cinema," or "Filmmaker" — this looks much more natural at home. Under Sound, look for "Clear Voice," "Speech Enhancement," or "Dialogue Boost" and turn it on if voices sound hard to hear. These two adjustments make the biggest difference in everyday viewing comfort.',
         tip: 'Quick Tip: The picture and sound settings vary slightly by brand. If you cannot find them, search "[your TV brand] how to change picture mode" on Google — each brand posts its own instructions on YouTube and its support website.',
       },
       {
         title: 'Switch inputs to use your cable box or streaming stick',
-        content:
-          'To watch cable TV or use a streaming stick you connected by HDMI, press the Input or Source button on your remote (sometimes labeled with a rectangle with an arrow pointing in). A list of inputs will appear (HDMI 1, HDMI 2, etc.). Select the input that matches where you plugged in your device. The TV will switch to that device and you should see its picture on screen.',
+        content: 'To watch cable TV or use a streaming stick you connected by HDMI, press the Input or Source button on your remote (sometimes labeled with a rectangle with an arrow pointing in). A list of inputs will appear (HDMI 1, HDMI 2, etc.). Select the input that matches where you plugged in your device. The TV will switch to that device and you should see its picture on screen.',
       },
     ],
   },

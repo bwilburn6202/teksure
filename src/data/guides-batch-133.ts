@@ -91,7 +91,7 @@ This guide shows how to turn it on, what works and what does not, and a couple o
       },
       {
         title: 'Use your iPhone with the Mac trackpad and keyboard',
-        content: 'Once mirroring is active, your iPhone screen appears in a window on your Mac. Click anywhere with your trackpad — it works like tapping on the phone. Scroll with two fingers on the trackpad like you would scroll a webpage. Type with your Mac keyboard wherever the iPhone keyboard would have appeared. The mouse acts as your finger; the keyboard acts as the iPhone keyboard. You can also click and hold to do the iPhone "press and hold" gesture. Swipe from the bottom of the iPhone window to go home, just like on the phone.',
+        content: 'Once mirroring is active, your iPhone screen appears in a window on your Mac. Click anywhere with your trackpad — it works like tapping on the phone. Scroll with two fingers on the trackpad like you would scroll a webpage. Type with your Mac keyboard wherever the iPhone keyboard would have appeared. The mouse acts as your finger. The keyboard acts as the iPhone keyboard. You can also click and hold to do the iPhone "press and hold" gesture. Swipe from the bottom of the iPhone window to go home, just like on the phone.',
         tip: 'Quick Tip: To open Spotlight Search inside the iPhone window, click the top edge of the iPhone screen and drag downward — same as pulling down on a physical iPhone.',
       },
       {

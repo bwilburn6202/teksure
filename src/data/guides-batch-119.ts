@@ -368,7 +368,7 @@ Family Sharing is Apple's system for family members to share purchases, storage,
 To set up:
 
 1. One family member creates a "family group." Go to Settings → your name → Family (or Family Sharing).
-2. Invite your parent. They get an email; they accept by signing in with their Apple ID.
+2. Invite your parent. They get an email. They accept by signing in with their Apple ID.
 3. Once your parent is in the group, you can enable several super-useful features:
 
    • Purchase Sharing — everyone can share App Store purchases (so you can help them install an app you already own).
@@ -783,7 +783,7 @@ Some of the time, a tech call is actually an invitation: "I want to understand t
 
 3. When the problem has an easy non-tech solution.
 
-Her printer is always jammed? Maybe she doesn't need a printer anymore. Most things can be read on screen, or you can mail her the printouts from your office. Stop solving problems by adding more tech; sometimes the solution is less tech.
+Her printer is always jammed? Maybe she doesn't need a printer anymore. Most things can be read on screen, or you can mail her the printouts from your office. Stop solving problems by adding more tech. Sometimes the solution is less tech.
 
 4. When you are frustrated.
 
@@ -833,7 +833,7 @@ If you're not sure — ask her first.
 
 When the answer is complicated:
 
-Sometimes there is no clean answer. Your parent has early-stage cognitive decline. They are still capable of some decisions but not others. They insist they are fine; you can see they are not. This is where professional help matters.
+Sometimes there is no clean answer. Your parent has early-stage cognitive decline. They are still capable of some decisions but not others. They insist they are fine. You can see they are not. This is where professional help matters.
 
 • A geriatric care manager can do a full assessment and help the whole family figure out a reasonable level of support.
 • An elder law attorney can help set up Powers of Attorney so that if your parent loses capacity, you can legally manage their affairs — but only under defined conditions, with accountability.
@@ -975,7 +975,7 @@ A proper workup checks all of these first. Many people labeled "confused" turn o
 
 The hardest conversation:
 
-If it becomes clear that your parent's cognition is declining, tech support has to change. Teaching new things becomes futile; simplifying and protecting becomes the goal. This means:
+If it becomes clear that your parent's cognition is declining, tech support has to change. Teaching new things becomes futile. Simplifying and protecting becomes the goal. This means:
 
 • Restrict their apps. Delete the ones they no longer use.
 • Move to simpler devices (GrandPad, Jitterbug phone) if appropriate.
@@ -989,7 +989,7 @@ The difference between "this is hard to learn" and "something is slipping." Most
 
 Trust your gut. You know your parent. If something feels off, it probably is. Gentle investigation is an act of love.`,
         tip: 'Keep a shared note (on your phone, not theirs) with dates and descriptions of concerning tech moments. "April 12 — forgot how to answer FaceTime. April 19 — called twice about same email. April 28 — gave credit card to scam caller." Over 6 months, patterns emerge. Take that note to their doctor.',
-        warning: 'Sudden, acute confusion — over hours or days, not months — is a medical emergency. It is often a UTI, stroke, or medication problem. Call their doctor or 911 the same day. Long, slow changes are something to monitor; fast, new changes are something to act on right away.',
+        warning: 'Sudden, acute confusion — over hours or days, not months — is a medical emergency. It is often a UTI, stroke, or medication problem. Call their doctor or 911 the same day. Long, slow changes are something to monitor. Fast, new changes are something to act on right away.',
       },
       {
         title: 'Step 13: Caregiver burnout — taking care of yourself too',
@@ -1136,7 +1136,7 @@ A short list of resources to bookmark:
 • TekSure's Phone & Tablet guides — for device-specific walk-throughs you can share.
 
 Close the laptop. Breathe. Text your parent that you love them. Then go live your own life for a while. They're going to be okay. So are you.`,
-        tip: 'Print this guide, or save it to a note on your phone. You will come back to it. Different steps will matter at different times. Setup is done once; the emotional work is done forever.',
+        tip: 'Print this guide, or save it to a note on your phone. You will come back to it. Different steps will matter at different times. Setup is done once. The emotional work is done forever.',
       },
     ],
   },

@@ -416,7 +416,7 @@ Watch a comparison: YouTube → "best live TV streaming for seniors 2026 Consume
     steps: [
       {
         title: 'Add up what you actually pay cable today',
-        content: 'Pull your last cable bill out. Add up every line: service, equipment rental, DVR fee, broadcast TV surcharge, regional sports surcharge, HD service fee, late fees, franchise fees, federal fees, taxes. The total at the bottom is what you actually pay. Many cable customers tell us they pay $80 — and the actual bill is $189. The base rate is a marketing number; the bill is the real number.',
+        content: 'Pull your last cable bill out. Add up every line: service, equipment rental, DVR fee, broadcast TV surcharge, regional sports surcharge, HD service fee, late fees, franchise fees, federal fees, taxes. The total at the bottom is what you actually pay. Many cable customers tell us they pay $80 — and the actual bill is $189. The base rate is a marketing number. The bill is the real number.',
       },
       {
         title: 'Check your internet — you may already have what you need',

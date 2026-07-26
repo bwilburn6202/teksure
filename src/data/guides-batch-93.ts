@@ -73,7 +73,7 @@ The best way to learn Excel is to start with a simple project. A monthly budget 
       {
         title: `Open Excel Online at Office.com`,
         content: `Open your web browser and go to office.com. Sign in with your free Microsoft account. Click the Excel icon (green with an X logo) from the app grid. On the Excel home screen, click New blank workbook to open a fresh, empty spreadsheet.`,
-        tip: `A workbook is the whole file; a worksheet (the tab at the bottom) is a single page inside it. One workbook can hold many worksheets.`,
+        tip: `A workbook is the whole file. A worksheet (the tab at the bottom) is a single page inside it. One workbook can hold many worksheets.`,
       },
       {
         title: `Enter data into cells`,
@@ -672,7 +672,7 @@ The cost of Starlink includes a one-time equipment fee (currently around $349 fo
     steps: [
       {
         title: `Check availability and order at Starlink.com`,
-        content: `Go to starlink.com in your browser and enter your home address to check if service is available at your location. In some areas Starlink has a waitlist; you can reserve your spot with a small refundable deposit. Once service is confirmed available, place your order — you will receive the dish kit by mail, typically within 1-2 weeks. The package contains the dish, a WiFi router, a power supply, and mounting hardware.`,
+        content: `Go to starlink.com in your browser and enter your home address to check if service is available at your location. In some areas Starlink has a waitlist. You can reserve your spot with a small refundable deposit. Once service is confirmed available, place your order — you will receive the dish kit by mail, typically within 1-2 weeks. The package contains the dish, a WiFi router, a power supply, and mounting hardware.`,
         tip: `Download the Starlink app (free on iPhone and Android) before your equipment arrives. It has a sky obstruction checker you can use to find the ideal spot for your dish before the hardware shows up.`,
       },
       {
@@ -797,7 +797,7 @@ If fiber is available at your address, it is generally worth switching from cabl
 
 The most important factor is often not the device itself but the support that comes with it. A senior who receives a new Amazon Echo Show from a family member who lives nearby and helps set it up, teaches them how to use it over a few sessions, and is available to answer questions will have a completely different experience than someone who receives the same device but has to figure it out alone. Consider the gift of your time and patience alongside — or instead of — expensive hardware.
 
-Before buying a tech gift, ask yourself a few questions: Does the person already have devices they are comfortable with, and will this new gift work alongside them? Does the gift require a subscription or ongoing costs that the recipient needs to commit to? Is the gift relevant to their interests and actual daily needs? A Kindle e-reader is a wonderful gift for a book lover; it is much less useful for someone who does not read regularly.
+Before buying a tech gift, ask yourself a few questions: Does the person already have devices they are comfortable with, and will this new gift work alongside them? Does the gift require a subscription or ongoing costs that the recipient needs to commit to? Is the gift relevant to their interests and actual daily needs? A Kindle e-reader is a wonderful gift for a book lover. It is much less useful for someone who does not read regularly.
 
 The tech gifts that tend to work best for older adults share some common traits: they do one or two things very well rather than trying to do everything, they have a straightforward physical design with clear buttons or a simple touchscreen, they are made by a major company with robust customer support, and they make existing activities — reading, watching TV, staying connected with family — noticeably better.
 

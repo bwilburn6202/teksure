@@ -174,7 +174,7 @@ Checking your score regularly and understanding what drives it is one of the bes
       },
       {
         title: `View your credit scores`,
-        content: `After signing in, your TransUnion and Equifax VantageScore 3.0 scores appear on the home screen. Scores range from 300 to 850. Above 700 is generally considered good; above 750 is very good. Tap either score to see the detailed breakdown of factors.`,
+        content: `After signing in, your TransUnion and Equifax VantageScore 3.0 scores appear on the home screen. Scores range from 300 to 850. Above 700 is generally considered good. Above 750 is very good. Tap either score to see the detailed breakdown of factors.`,
       },
       {
         title: `Understand the score factors`,
@@ -884,7 +884,7 @@ Next, tackle newsletters and promotional email. Look through your inbox for recu
 
 For senders who don't have an unsubscribe link, use your email's Block Sender feature. Blocked senders' emails either go straight to trash or to spam.
 
-Once the volume is reduced, set up folders or labels to organize what remains. A simple structure works better than a complex one: try Work, Bills, Receipts, Personal, and Family. In Gmail, these are called Labels; in Outlook, they're Folders. Drag emails into the appropriate category, or set up filters to route incoming email automatically.
+Once the volume is reduced, set up folders or labels to organize what remains. A simple structure works better than a complex one: try Work, Bills, Receipts, Personal, and Family. In Gmail, these are called Labels. In Outlook, they're Folders. Drag emails into the appropriate category, or set up filters to route incoming email automatically.
 
 Gmail's tab system (Primary, Social, Promotions, Updates) is already a simple version of this. Check that your settings have these tabs enabled — many important newsletters and promotional emails end up in Promotions automatically, keeping your Primary tab cleaner.
 
@@ -947,7 +947,7 @@ Compared to WhatsApp, GroupMe is more common in everyday US social circles and d
       {
         title: `Create a new group`,
         content: `Tap the compose or pencil icon and choose New Group. Type a name for the group (like "Smith Family" or "Book Club 2026"). Optionally add a group photo. Then add members by typing their name (if they're in your contacts), phone number, or GroupMe username.`,
-        tip: `You can add people who don't have GroupMe yet — they'll receive a text message inviting them to join. They don't need a smartphone; they can even receive GroupMe messages as regular texts.`,
+        tip: `You can add people who don't have GroupMe yet — they'll receive a text message inviting them to join. They don't need a smartphone. They can even receive GroupMe messages as regular texts.`,
       },
       {
         title: `Send messages, photos, and GIFs`,

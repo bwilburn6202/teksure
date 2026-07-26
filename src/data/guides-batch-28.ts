@@ -528,7 +528,7 @@ The app also allows some account management: you can view and update beneficiari
 
 For active management — changing what funds your money is in, initiating withdrawals, or setting up new contributions — you typically have more options through the full Vanguard website on a computer. But for day-to-day account monitoring, the app is convenient and enough.
 
-Vanguard's app is separate from your employer's 401(k) portal if your employer uses a different record-keeper. Some employers use Vanguard as record-keeper; others use Fidelity, Empower, or another company. Make sure you know which company holds your specific account.`,
+Vanguard's app is separate from your employer's 401(k) portal if your employer uses a different record-keeper. Some employers use Vanguard as record-keeper. Others use Fidelity, Empower, or another company. Make sure you know which company holds your specific account.`,
     steps: [
       {
         title: 'Download the Vanguard App',
@@ -715,7 +715,7 @@ The remote also controls playback: single click the clickpad to pause/play. Clic
     steps: [
       {
         title: 'Navigate With Swipes and Clicks',
-        content: 'Lightly swipe your thumb up, down, left, or right on the clickpad (top portion) to move the selection highlight on screen. Press the center firmly to select. Press the outer edge of the clickpad (top, bottom, left, right edges) to move without swiping. Swipes tend to scroll faster; edge presses move one item at a time.',
+        content: 'Lightly swipe your thumb up, down, left, or right on the clickpad (top portion) to move the selection highlight on screen. Press the center firmly to select. Press the outer edge of the clickpad (top, bottom, left, right edges) to move without swiping. Swipes tend to scroll faster. Edge presses move one item at a time.',
         tip: 'If swiping feels too sensitive, go to Settings → Remotes and Devices → Touch Surface Tracking → change the speed to Slow.',
       },
       {
@@ -724,7 +724,7 @@ The remote also controls playback: single click the clickpad to pause/play. Clic
       },
       {
         title: 'Control Playback',
-        content: 'While watching a video: click once to pause or play. Hold the clickpad down briefly to bring up a scrubber to skip through the video. Swipe left to jump back 10 seconds; swipe right to jump forward 10 seconds. Press the outer ring left/right to skip back or forward.',
+        content: 'While watching a video: click once to pause or play. Hold the clickpad down briefly to bring up a scrubber to skip through the video. Swipe left to jump back 10 seconds. Swipe right to jump forward 10 seconds. Press the outer ring left/right to skip back or forward.',
       },
       {
         title: 'Use Siri for Voice Control',

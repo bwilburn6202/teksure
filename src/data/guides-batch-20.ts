@@ -477,7 +477,7 @@ export const guidesBatch20: Guide[] = [
       },
       {
         title: 'Switch to a different cable',
-        content: `USB-C cables fray and fail, especially at the ends. Try a different cable — ideally one you know is working, like the one that came in the box. Avoid very cheap cables from dollar stores; they often fail quickly and can damage your phone's charging port over time.`,
+        content: `USB-C cables fray and fail, especially at the ends. Try a different cable — ideally one you know is working, like the one that came in the box. Avoid very cheap cables from dollar stores. They often fail quickly and can damage your phone's charging port over time.`,
       },
       {
         title: 'Test a different power adapter and outlet',

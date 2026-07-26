@@ -68,7 +68,7 @@ If you have recently lost a wallet, had your Social Security number exposed in a
     steps: [
       {
         title: 'Go to AnnualCreditReport.com',
-        content: 'Open your web browser and type AnnualCreditReport.com in the address bar at the top of the screen. Press Enter. Make sure the address bar shows "annualcreditreport.com" — this is the only official free-report site. Do not search for it in Google and click an ad; type the address directly.',
+        content: 'Open your web browser and type AnnualCreditReport.com in the address bar at the top of the screen. Press Enter. Make sure the address bar shows "annualcreditreport.com" — this is the only official free-report site. Do not search for it in Google and click an ad. Type the address directly.',
         warning: 'Impostor sites with similar names often charge fees or ask for a credit card. The real site is free and never asks for payment.',
       },
       {
@@ -82,7 +82,7 @@ If you have recently lost a wallet, had your Social Security number exposed in a
       },
       {
         title: 'Answer the identity verification questions',
-        content: 'Each bureau may ask a few multiple-choice questions to confirm you are who you say you are. These questions are drawn from public records — things like "Which of these streets have you lived on?" or "Which bank holds a loan in your name?" Choose the best answer for each. If you are not sure, pick your best guess; most bureaus allow one wrong answer.',
+        content: 'Each bureau may ask a few multiple-choice questions to confirm you are who you say you are. These questions are drawn from public records — things like "Which of these streets have you lived on?" or "Which bank holds a loan in your name?" Choose the best answer for each. If you are not sure, pick your best guess. Most bureaus allow one wrong answer.',
       },
       {
         title: 'View and save your report',
@@ -111,7 +111,7 @@ If you have recently lost a wallet, had your Social Security number exposed in a
     publishedAt: '2026-05-06',
     lastVerifiedAt: '2026-05-06',
     difficulty: 'Beginner',
-    body: `Do Not Disturb is a setting on your phone that silences calls, texts, and app alerts during times you choose — like while you sleep, attend a doctor's appointment, or sit down to read. Your phone is still on and receiving messages; it silences them until you are ready to look.
+    body: `Do Not Disturb is a setting on your phone that silences calls, texts, and app alerts during times you choose — like while you sleep, attend a doctor's appointment, or sit down to read. Your phone is still on and receiving messages. It silences them until you are ready to look.
 
 One of the most common phone problems seniors call us about is: "My phone stopped ringing." In many cases, Do Not Disturb was turned on by accident and never turned off. This guide shows you how to check whether it is on, how to set a schedule so it turns on and off automatically, and how to make sure family members can always reach you in a real emergency.
 

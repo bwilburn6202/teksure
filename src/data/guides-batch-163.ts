@@ -7,8 +7,7 @@ export const guidesBatch163: Guide[] = [
   {
     slug: 'how-to-transfer-data-from-your-old-phone-to-a-new-phone-2026',
     title: 'How to Transfer Data from Your Old Phone to a New Phone',
-    excerpt:
-      'Moving your photos, contacts, apps, and settings to a new phone does not have to be complicated. Here is how to do it on iPhone and Android — step by step.',
+    excerpt: 'Moving your photos, contacts, apps, and settings to a new phone does not have to be complicated. Here is how to do it on iPhone and Android — step by step.',
     category: 'phone-guides',
     tags: [
       'transfer phone data',
@@ -158,46 +157,37 @@ Once you are satisfied, you can safely erase your old phone. On iPhone: Settings
     steps: [
       {
         title: 'Choose your transfer method',
-        content:
-          'iPhone to iPhone: use Quick Start (hold the new phone next to the old one during setup) or iCloud Backup. Android to Android: use the Google backup restore during new phone setup. Samsung to Samsung: use the Smart Switch app on both phones. Have both phones charged to at least 50% and plugged in before you start.',
+        content: 'iPhone to iPhone: use Quick Start (hold the new phone next to the old one during setup) or iCloud Backup. Android to Android: use the Google backup restore during new phone setup. Samsung to Samsung: use the Smart Switch app on both phones. Have both phones charged to at least 50% and plugged in before you start.',
         tip: 'The direct phone-to-phone transfer (Quick Start or Smart Switch with a cable) is faster and more complete than a cloud backup restore when both phones are available.',
       },
       {
         title: 'Transfer iPhone to iPhone using Quick Start',
-        content:
-          'Turn on the new iPhone. Place it next to your old iPhone. Your old iPhone shows "Set Up New iPhone" — tap Continue. Point your old iPhone\'s camera at the swirling pattern on the new iPhone to pair them. Enter your old passcode on the new phone when asked. Select "Transfer from iPhone" (not iCloud). Keep both phones side by side and plugged in until the transfer finishes.',
-        warning:
-          'Do not separate the two phones during a wireless Quick Start transfer, and do not let either phone\'s battery die. The transfer can take several hours if you have many photos and videos.',
+        content: 'Turn on the new iPhone. Place it next to your old iPhone. Your old iPhone shows "Set Up New iPhone" — tap Continue. Point your old iPhone\'s camera at the swirling pattern on the new iPhone to pair them. Enter your old passcode on the new phone when asked. Select "Transfer from iPhone" (not iCloud). Keep both phones side by side and plugged in until the transfer finishes.',
+        warning: 'Do not separate the two phones during a wireless Quick Start transfer, and do not let either phone\'s battery die. The transfer can take several hours if you have many photos and videos.',
       },
       {
         title: 'Transfer iPhone to iPhone using iCloud Backup (alternative)',
-        content:
-          'On the old iPhone: go to Settings → your name → iCloud → iCloud Backup → Back Up Now. Wait for the backup to complete. On the new iPhone during setup: choose "Restore from iCloud Backup," sign in with your Apple ID, and select the most recent backup. Keep the new phone connected to Wi-Fi and power until the restore finishes.',
+        content: 'On the old iPhone: go to Settings → your name → iCloud → iCloud Backup → Back Up Now. Wait for the backup to complete. On the new iPhone during setup: choose "Restore from iCloud Backup," sign in with your Apple ID, and select the most recent backup. Keep the new phone connected to Wi-Fi and power until the restore finishes.',
         tip: 'Check that the backup date shown is today — if it says weeks ago, the backup did not complete. Connect to Wi-Fi and tap Back Up Now again.',
       },
       {
         title: 'Transfer Android to Android using Google Backup',
-        content:
-          'On the old Android phone: go to Settings, search for "Backup," and turn on Google One Backup. Tap "Back up now." On the new Android phone during setup: when you reach the "Copy apps & data" screen, follow the steps to restore from your Google account or connect the old phone nearby. Sign in with your Google account to restore your apps and data.',
+        content: 'On the old Android phone: go to Settings, search for "Backup," and turn on Google One Backup. Tap "Back up now." On the new Android phone during setup: when you reach the "Copy apps & data" screen, follow the steps to restore from your Google account or connect the old phone nearby. Sign in with your Google account to restore your apps and data.',
         tip: 'Open Google Photos on your old phone before switching and confirm backup is turned on so your pictures are saved to the cloud.',
       },
       {
         title: 'Transfer Samsung to Samsung using Smart Switch',
-        content:
-          'Install Smart Switch (free) on both Samsung phones from the Google Play Store if it is not already there. Open Smart Switch on both phones. On the old phone tap "Send data"; on the new phone tap "Receive data." Choose Wireless or Cable. Review the list of items to transfer, then tap Transfer. Keep both phones nearby and plugged in.',
+        content: 'Install Smart Switch (free) on both Samsung phones from the Google Play Store if it is not already there. Open Smart Switch on both phones. On the old phone tap "Send data". On the new phone tap "Receive data." Choose Wireless or Cable. Review the list of items to transfer, then tap Transfer. Keep both phones nearby and plugged in.',
       },
       {
         title: 'Verify the transfer was successful',
-        content:
-          'Before erasing your old phone, check that your photos, contacts, and key apps arrived on the new phone. Open Photos and scroll through your pictures. Open Contacts and look up a few names. Open your most-used apps and confirm your data is there.',
+        content: 'Before erasing your old phone, check that your photos, contacts, and key apps arrived on the new phone. Open Photos and scroll through your pictures. Open Contacts and look up a few names. Open your most-used apps and confirm your data is there.',
         tip: 'Do not erase your old phone until you have confirmed everything transferred. Once erased, the data cannot be recovered.',
       },
       {
         title: 'Erase your old phone before selling or trading it in',
-        content:
-          'On iPhone: go to Settings → General → Transfer or Reset iPhone → Erase All Content and Settings. On Android: go to Settings → General Management → Reset → Factory Data Reset. This removes all your personal data from the old device so the next owner cannot access it.',
-        warning:
-          'Sign out of your Apple ID or Google account on the old phone before erasing it. On iPhone, this is Settings → your name → Sign Out. On Android, go to Settings → Accounts and remove your Google account. If you skip this step, the phone may be locked to your account after the reset.',
+        content: 'On iPhone: go to Settings → General → Transfer or Reset iPhone → Erase All Content and Settings. On Android: go to Settings → General Management → Reset → Factory Data Reset. This removes all your personal data from the old device so the next owner cannot access it.',
+        warning: 'Sign out of your Apple ID or Google account on the old phone before erasing it. On iPhone, this is Settings → your name → Sign Out. On Android, go to Settings → Accounts and remove your Google account. If you skip this step, the phone may be locked to your account after the reset.',
       },
     ],
   },
@@ -205,8 +195,7 @@ Once you are satisfied, you can safely erase your old phone. On iPhone: Settings
   {
     slug: 'how-to-free-up-storage-space-on-your-iphone-2026',
     title: 'How to Free Up Storage Space on Your iPhone',
-    excerpt:
-      'Getting the "iPhone Storage Full" message? Here are six proven ways to free up space — from deleting unused apps to turning on iCloud Photos — without losing anything important.',
+    excerpt: 'Getting the "iPhone Storage Full" message? Here are six proven ways to free up space — from deleting unused apps to turning on iCloud Photos — without losing anything important.',
     category: 'phone-guides',
     tags: [
       'iPhone storage full',
@@ -355,43 +344,35 @@ After completing the steps above, go back to Settings → General → iPhone Sto
     steps: [
       {
         title: 'Check your current storage usage',
-        content:
-          'Go to Settings → General → iPhone Storage. Look at the colorful bar at the top — it shows which categories are using the most space. Below the bar, apps are listed from largest to smallest. This tells you exactly where to focus your cleanup.',
+        content: 'Go to Settings → General → iPhone Storage. Look at the colorful bar at the top — it shows which categories are using the most space. Below the bar, apps are listed from largest to smallest. This tells you exactly where to focus your cleanup.',
         tip: 'The "System Data" or "Other" category shown in the bar often includes cached data that iOS will clear on its own when space is very low. You can also clear the Safari cache manually (see Step 6).',
       },
       {
         title: 'Delete apps you never use',
-        content:
-          'In Settings → General → iPhone Storage, review the list of apps. Tap any app you have not used in months, then tap "Delete App." You can re-download any free app from the App Store at no cost, and paid apps stay linked to your Apple ID — you will never be charged again to reinstall them.',
+        content: 'In Settings → General → iPhone Storage, review the list of apps. Tap any app you have not used in months, then tap "Delete App." You can re-download any free app from the App Store at no cost, and paid apps stay linked to your Apple ID — you will never be charged again to reinstall them.',
         tip: 'The storage list shows when you last used each app. If an app shows "Never" or a date from over a year ago, it is a good candidate for deletion.',
       },
       {
         title: 'Turn on Offload Unused Apps',
-        content:
-          'In Settings → General → iPhone Storage, find the option to "Enable" Offload Unused Apps and tap it. This setting automatically removes apps you have not opened in a long time, but keeps your app data. If you ever need the app again, tap its icon to re-download it — your data will still be there.',
+        content: 'In Settings → General → iPhone Storage, find the option to "Enable" Offload Unused Apps and tap it. This setting automatically removes apps you have not opened in a long time, but keeps your app data. If you ever need the app again, tap its icon to re-download it — your data will still be there.',
       },
       {
         title: 'Delete old photos and empty the Recently Deleted album',
-        content:
-          'Open the Photos app, tap Select, choose photos to delete, and tap the trash icon. Then go to Albums → Recently Deleted → Select → Delete All. Deleting photos does not free up space until you empty the Recently Deleted album — that step is required.',
-        warning:
-          'Photos in Recently Deleted are permanently gone after you empty that album. Make sure you have reviewed them and do not need them before deleting.',
+        content: 'Open the Photos app, tap Select, choose photos to delete, and tap the trash icon. Then go to Albums → Recently Deleted → Select → Delete All. Deleting photos does not free up space until you empty the Recently Deleted album — that step is required.',
+        warning: 'Photos in Recently Deleted are permanently gone after you empty that album. Make sure you have reviewed them and do not need them before deleting.',
       },
       {
         title: 'Turn on iCloud Photos with Optimize iPhone Storage',
-        content:
-          'Go to Settings → your name → iCloud → Photos → turn on iCloud Photos → select "Optimize iPhone Storage." Your phone will upload full-size photos to iCloud and keep smaller versions on the device. Your photos are still available any time you want to view or share them.',
+        content: 'Go to Settings → your name → iCloud → Photos → turn on iCloud Photos → select "Optimize iPhone Storage." Your phone will upload full-size photos to iCloud and keep smaller versions on the device. Your photos are still available any time you want to view or share them.',
         tip: 'Apple gives you 5 GB of free iCloud storage. If you have many photos, the 50 GB plan for $0.99 per month is enough for most people and also protects your photos from being lost if your phone is damaged or stolen.',
       },
       {
         title: 'Clear large message attachments',
-        content:
-          'In Settings → General → iPhone Storage, tap Messages. You will see categories like Photos, Videos, and GIFs with the storage each is using. Tap a category to review and delete files. You can also open a conversation in Messages, tap the contact name at the top, and scroll through shared photos to delete them individually.',
+        content: 'In Settings → General → iPhone Storage, tap Messages. You will see categories like Photos, Videos, and GIFs with the storage each is using. Tap a category to review and delete files. You can also open a conversation in Messages, tap the contact name at the top, and scroll through shared photos to delete them individually.',
       },
       {
         title: 'Clear your Safari browser cache',
-        content:
-          'Go to Settings → Safari → Clear History and Website Data → Clear History and Data. This removes stored web page data that can accumulate over months of browsing. It does not delete your bookmarks or saved passwords.',
+        content: 'Go to Settings → Safari → Clear History and Website Data → Clear History and Data. This removes stored web page data that can accumulate over months of browsing. It does not delete your bookmarks or saved passwords.',
         tip: 'After completing all these steps, go back to Settings → General → iPhone Storage and check the bar again. Most people free up several gigabytes and no longer see the storage warning.',
       },
     ],
@@ -400,8 +381,7 @@ After completing the steps above, go back to Settings → General → iPhone Sto
   {
     slug: 'how-to-spot-fake-online-reviews-before-buying-2026',
     title: 'How to Spot Fake Online Reviews Before You Buy',
-    excerpt:
-      'Fake reviews can trick you into buying products that do not work as described. Learn the warning signs, the free tools that grade review quality, and where to find trustworthy opinions.',
+    excerpt: 'Fake reviews can trick you into buying products that do not work as described. Learn the warning signs, the free tools that grade review quality, and where to find trustworthy opinions.',
     category: 'buying-guides',
     tags: [
       'fake reviews',
@@ -527,43 +507,35 @@ These steps take about five minutes and can save you from buying something that 
     steps: [
       {
         title: 'Look at the review distribution chart',
-        content:
-          'On the product page, find the bar chart that shows how many 1-star through 5-star reviews exist. Real products have some negative reviews — even good ones. If the 1- and 2-star bars are completely empty on a product with hundreds of reviews, that is a warning sign worth investigating further.',
+        content: 'On the product page, find the bar chart that shows how many 1-star through 5-star reviews exist. Real products have some negative reviews — even good ones. If the 1- and 2-star bars are completely empty on a product with hundreds of reviews, that is a warning sign worth investigating further.',
         tip: 'Also read the 2- and 3-star reviews specifically. They tend to reveal real, nuanced problems that honest customers experience.',
       },
       {
         title: 'Read the review text for specific details',
-        content:
-          'Genuine reviews mention specific things: how long the person has used the product, what they use it for, what works well, and what does not. Phrases like "Great product! Very happy!" with no other detail are common in fake reviews. Look for reviews that describe a real person\'s actual experience.',
+        content: 'Genuine reviews mention specific things: how long the person has used the product, what they use it for, what works well, and what does not. Phrases like "Great product! Very happy!" with no other detail are common in fake reviews. Look for reviews that describe a real person\'s actual experience.',
       },
       {
         title: 'Check the reviewer\'s profile and history',
-        content:
-          'Click on a reviewer\'s name to see their profile. Real customers typically have reviewed many different products over time. If a reviewer joined the site recently and this is their only review — or if several reviewers all have that same pattern on the same product — the reviews may have been purchased.',
-        warning:
-          'Be especially cautious when multiple reviewers posted their reviews on the same day or the same week, all with similar language and no review history.',
+        content: 'Click on a reviewer\'s name to see their profile. Real customers typically have reviewed many different products over time. If a reviewer joined the site recently and this is their only review — or if several reviewers all have that same pattern on the same product — the reviews may have been purchased.',
+        warning: 'Be especially cautious when multiple reviewers posted their reviews on the same day or the same week, all with similar language and no review history.',
       },
       {
         title: 'Use Fakespot or ReviewMeta to get a grade',
-        content:
-          'Go to fakespot.com or reviewmeta.com. Copy the product\'s web address from Amazon and paste it into the search box. Both tools analyze the reviews and give you a letter grade. A grade of C or lower means a significant portion of the reviews appear unreliable. They also show an adjusted star rating based only on reviews the tool considers genuine.',
+        content: 'Go to fakespot.com or reviewmeta.com. Copy the product\'s web address from Amazon and paste it into the search box. Both tools analyze the reviews and give you a letter grade. A grade of C or lower means a significant portion of the reviews appear unreliable. They also show an adjusted star rating based only on reviews the tool considers genuine.',
         tip: 'Fakespot also offers a free browser extension that shows the grade directly on Amazon product pages as you browse, so you do not have to visit a separate website.',
       },
       {
         title: 'Search YouTube for a video review',
-        content:
-          'Type the product name followed by "review" into YouTube\'s search bar. Video reviewers show the product being used in real life — photos and the actual performance are visible, which is much harder to fake than written text. Look for channels with a history of reviews and a reasonable number of subscribers.',
+        content: 'Type the product name followed by "review" into YouTube\'s search bar. Video reviewers show the product being used in real life — photos and the actual performance are visible, which is much harder to fake than written text. Look for channels with a history of reviews and a reasonable number of subscribers.',
       },
       {
         title: 'Check Consumer Reports for unbiased lab testing',
-        content:
-          'For significant purchases — appliances, electronics, health devices — check consumerreports.org. Consumer Reports buys products at retail prices and tests them in their own labs. They accept no advertising or free samples. Many US public libraries offer free access to Consumer Reports with a library card. Call your local branch or check the library website to see if this is available.',
+        content: 'For significant purchases — appliances, electronics, health devices — check consumerreports.org. Consumer Reports buys products at retail prices and tests them in their own labs. They accept no advertising or free samples. Many US public libraries offer free access to Consumer Reports with a library card. Call your local branch or check the library website to see if this is available.',
         tip: 'If Consumer Reports has tested the product, their ratings are among the most reliable available — they have no financial relationship with the manufacturers they test.',
       },
       {
         title: 'Sort reviews by "Most Recent" before deciding',
-        content:
-          'The default "Top Reviews" sort on Amazon is selected by the platform and may feature older reviews from when a product was new. Switch to "Most Recent" to see what current buyers are experiencing. Product quality can change over time as manufacturers update components or change suppliers.',
+        content: 'The default "Top Reviews" sort on Amazon is selected by the platform and may feature older reviews from when a product was new. Switch to "Most Recent" to see what current buyers are experiencing. Product quality can change over time as manufacturers update components or change suppliers.',
       },
     ],
   },
@@ -571,8 +543,7 @@ These steps take about five minutes and can save you from buying something that 
   {
     slug: 'how-to-pay-with-your-phone-using-apple-pay-or-google-pay-2026',
     title: 'How to Pay at a Store with Apple Pay or Google Pay',
-    excerpt:
-      'Apple Pay and Google Pay let you pay at checkout by holding your phone near the card reader — no wallet needed. Here is how to set them up and use them safely.',
+    excerpt: 'Apple Pay and Google Pay let you pay at checkout by holding your phone near the card reader — no wallet needed. Here is how to set them up and use them safely.',
     category: 'financial-tech',
     tags: [
       'Apple Pay',
@@ -712,44 +683,36 @@ When shopping on a website or in an app, you may see an "Apple Pay" or "Google P
     steps: [
       {
         title: 'Understand why this is safe to use',
-        content:
-          'Apple Pay and Google Pay never share your real card number with the store. Each transaction uses a unique one-time code generated by your phone. Even if a store is hacked, criminals cannot use that code for anything else. The payment only processes after you confirm with your face, fingerprint, or device PIN.',
+        content: 'Apple Pay and Google Pay never share your real card number with the store. Each transaction uses a unique one-time code generated by your phone. Even if a store is hacked, criminals cannot use that code for anything else. The payment only processes after you confirm with your face, fingerprint, or device PIN.',
         tip: 'This is the same technology used by banks in contactless credit and debit cards — the ones with the radio wave symbol on the front that you can tap at a terminal. Your phone does the same thing.',
       },
       {
         title: 'Set up Apple Pay on an iPhone',
-        content:
-          'Open the Wallet app (the icon with colored cards on a white background). Tap the + button in the upper right, then tap "Debit or Credit Card." Scan your card with the camera or enter the details manually. Enter the security code and expiration date. Your bank will send a verification code by text or email — enter it to activate the card.',
+        content: 'Open the Wallet app (the icon with colored cards on a white background). Tap the + button in the upper right, then tap "Debit or Credit Card." Scan your card with the camera or enter the details manually. Enter the security code and expiration date. Your bank will send a verification code by text or email — enter it to activate the card.',
         tip: 'You can add several cards to Wallet. In Settings → Wallet & Apple Pay, you can set a default card that is used automatically at checkout.',
       },
       {
         title: 'Pay with Apple Pay at a store',
-        content:
-          'Look for the contactless symbol (sideways radio waves) at the register. On iPhones with Face ID: double-click the side button, glance at the phone to confirm with Face ID, then hold the top of the phone near the card reader. On iPhones with Touch ID: rest your finger on the Home button and hold the top of the phone near the reader. A vibration and tone confirm the payment went through.',
+        content: 'Look for the contactless symbol (sideways radio waves) at the register. On iPhones with Face ID: double-click the side button, glance at the phone to confirm with Face ID, then hold the top of the phone near the card reader. On iPhones with Touch ID: rest your finger on the Home button and hold the top of the phone near the reader. A vibration and tone confirm the payment went through.',
         tip: 'The card reader is usually the small device closest to you at the register — not the big screen. Hold your phone within an inch or two of it.',
       },
       {
         title: 'Set up Google Pay on an Android phone',
-        content:
-          'Open the Google Wallet app (install it free from the Google Play Store if needed). Tap "Add to Wallet" → "Payment card" → "New credit or debit card." Scan your card or enter the details manually. Complete your bank\'s verification step (usually a text with a code). Also confirm that NFC is turned on: Settings → Connected devices → Connection preferences → NFC → on.',
+        content: 'Open the Google Wallet app (install it free from the Google Play Store if needed). Tap "Add to Wallet" → "Payment card" → "New credit or debit card." Scan your card or enter the details manually. Complete your bank\'s verification step (usually a text with a code). Also confirm that NFC is turned on: Settings → Connected devices → Connection preferences → NFC → on.',
       },
       {
         title: 'Pay with Google Pay at a store',
-        content:
-          'Make sure your phone screen is on. Hold the back of your phone near the contactless payment terminal — the NFC antenna is typically in the center-back of the phone. You will hear a sound or feel a vibration and see a confirmation on screen. On some phones and stores, you may be asked to confirm with your fingerprint.',
+        content: 'Make sure your phone screen is on. Hold the back of your phone near the contactless payment terminal — the NFC antenna is typically in the center-back of the phone. You will hear a sound or feel a vibration and see a confirmation on screen. On some phones and stores, you may be asked to confirm with your fingerprint.',
         tip: 'If payment does not go through, try adjusting the position of your phone on the terminal. Move it slightly up, down, or closer until the terminal recognizes it.',
       },
       {
         title: 'Use Apple Pay or Google Pay when shopping online',
-        content:
-          'When shopping on a website or in an app, look for the Apple Pay or Google Pay button at checkout. Tapping it confirms the purchase with Face ID, Touch ID, or your screen lock — no need to type your card number. This is faster and protects your card number from being stored on the website.',
+        content: 'When shopping on a website or in an app, look for the Apple Pay or Google Pay button at checkout. Tapping it confirms the purchase with Face ID, Touch ID, or your screen lock — no need to type your card number. This is faster and protects your card number from being stored on the website.',
       },
       {
         title: 'Troubleshoot if the payment does not work',
-        content:
-          'Confirm the contactless symbol is on the terminal at that register. On iPhone, make sure you double-clicked the side button to activate payment mode before holding the phone to the reader. On Android, check that NFC is turned on in Settings. If the terminal shows "Declined," contact your bank — the card itself may need to be enabled for digital wallet use by your bank.',
-        warning:
-          'Not every lane at a store accepts tap payments even if the store does overall. If one register does not work, try another lane or ask the cashier which registers accept tap-to-pay.',
+        content: 'Confirm the contactless symbol is on the terminal at that register. On iPhone, make sure you double-clicked the side button to activate payment mode before holding the phone to the reader. On Android, check that NFC is turned on in Settings. If the terminal shows "Declined," contact your bank — the card itself may need to be enabled for digital wallet use by your bank.',
+        warning: 'Not every lane at a store accepts tap payments even if the store does overall. If one register does not work, try another lane or ask the cashier which registers accept tap-to-pay.',
       },
     ],
   },

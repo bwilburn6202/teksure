@@ -366,7 +366,7 @@ Setting up iMessage on iPad takes about two minutes and just requires your Apple
       },
       {
         title: `Send Your First Message`,
-        content: `Open the Messages app on your iPad. Tap the compose button (pencil icon, top right). Type a name or phone number in the "To" field. Type your message and tap the blue send button. If the button is green, you are sending an SMS; if it is blue, it is going as an iMessage.`,
+        content: `Open the Messages app on your iPad. Tap the compose button (pencil icon, top right). Type a name or phone number in the "To" field. Type your message and tap the blue send button. If the button is green, you are sending an SMS. If it is blue, it is going as an iMessage.`,
       },
       {
         title: `Adjust Notification Settings`,
