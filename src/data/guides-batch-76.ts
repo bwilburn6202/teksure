@@ -567,7 +567,7 @@ Many people who learned to code as adults mention Codecademy as the platform whe
     thumbnailEmoji: ``,
     publishedAt: `2026-04-20`,
     difficulty: `Beginner`,
-    body: `Google Career Certificates are online training programs created by Google and hosted on the Coursera platform. They are designed to prepare people for entry-level jobs in fields like IT support, data analytics, project management, UX design, cybersecurity, and digital marketing — without requiring a college degree.
+    body: `Google Career Certificates are online training programs created by Google and hosted on the Coursera platform. They are designed to prepare people for entry-level jobs, and none of them require a college degree. Fields covered include IT support, data analytics, project management, UX design, cybersecurity, and digital marketing.
 
 Each certificate program takes about three to six months to complete at a pace of about 10 hours per week. They are self-paced, meaning you set your own schedule and can go faster or slower depending on your life circumstances. When you finish, you receive a certificate issued by Google that you can add to your LinkedIn profile and resume.
 

@@ -646,9 +646,9 @@ This resource is especially valuable for seniors on fixed incomes, people betwee
     thumbnailEmoji: ``,
     publishedAt: `2026-04-20`,
     difficulty: `Intermediate`,
-    body: `Creating a my Social Security account at ssa.gov is one of the most useful things you can do to manage your retirement and Social Security benefits online. Once you have an account, you can view your complete earnings history — a record of every year you worked and paid into Social Security — and see an estimate of what your monthly benefit will be when you retire. This helps you plan ahead and verify that all your work years are recorded correctly.
+    body: `Creating a my Social Security account at ssa.gov is one of the most useful things you can do to manage your retirement and Social Security benefits online. Once you have an account, you can view your complete earnings history — a record of every year you worked and paid into Social Security. You can also see an estimate of what your monthly benefit will be when you retire. This helps you plan ahead and verify that all your work years are recorded correctly.
 
-If you are already receiving Social Security benefits, the online account gives you access to your benefit verification letters (proof of your benefit amount, useful for housing applications or loans), your tax form 1099-SSA each January, and the ability to change your direct deposit information without visiting a local office.
+If you are already receiving Social Security benefits, the online account gives you access to your benefit verification letters. These are proof of your benefit amount, useful for housing applications or loans. You can also view your tax form 1099-SSA each January, and change your direct deposit information without visiting a local office.
 
 Setting up the account does require a few steps to verify your identity — Social Security takes security very seriously since this involves sensitive information. You will go through the process using Login.gov, a secure government identity service used across multiple federal agencies. You will need a valid email address, a smartphone or phone number to receive a security code, and some personal information to verify your identity.
 

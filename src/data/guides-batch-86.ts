@@ -564,11 +564,11 @@ Understanding your specific allergens matters. If you are allergic to tree polle
     thumbnailEmoji: ``,
     publishedAt: `2026-04-20`,
     difficulty: `Beginner`,
-    body: `Atlantic hurricane season runs from June 1 through November 30, though storms can form outside those dates. For the roughly 60 million Americans living along the Gulf Coast, Atlantic Coast, and in vulnerable inland areas, having a digital preparedness plan in place well before any storm threatens can make the difference between an organized, safe response and a chaotic scramble under pressure.
+    body: `Atlantic hurricane season runs from June 1 through November 30, though storms can form outside those dates. Roughly 60 million Americans live along the Gulf Coast, Atlantic Coast, and in vulnerable inland areas. For them, having a digital preparedness plan in place well before any storm threatens can make the difference between an organized, safe response and a chaotic scramble under pressure.
 
 The best hurricane preparedness apps are not storm-tracking tools you use only during an active hurricane. They are year-round resources for building your preparedness plan, knowing your evacuation zone, and receiving official alerts in real time. Start using them now, before storm season begins.
 
-The three most useful free tools for hurricane preparedness are the Red Cross Emergency app, the FEMA app, and the National Hurricane Center website at nhc.noaa.gov. Each serves a different purpose: the Red Cross app covers preparedness checklists and shelter locations; the FEMA app sends official emergency alerts and helps you apply for disaster help; and the National Hurricane Center provides the most accurate and authoritative storm tracking, forecasts, and maps directly from NOAA meteorologists.
+The three most useful free tools for hurricane preparedness are the Red Cross Emergency app, the FEMA app, and the National Hurricane Center website at nhc.noaa.gov. Each serves a different purpose. The Red Cross app covers preparedness checklists and shelter locations. The FEMA app sends official emergency alerts and helps you apply for disaster help. And the National Hurricane Center provides the most accurate and authoritative storm tracking, forecasts, and maps directly from NOAA meteorologists.
 
 Know your evacuation zone before a storm is named. Every county along the Gulf and Atlantic coasts has designated evacuation zones labeled A through E or similar. Zone A is closest to the coast and most vulnerable to storm surge — if you are in Zone A and a major hurricane is approaching, you should evacuate when authorities issue a Zone A evacuation order, not wait for a mandatory order for your zone.`,
     steps: [

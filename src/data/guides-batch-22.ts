@@ -596,7 +596,7 @@ export const guidesBatch22: Guide[] = [
     thumbnailEmoji: '',
     publishedAt: '2026-04-19',
     difficulty: 'Beginner',
-    body: `The Social Security Administration runs an online portal called "my Social Security." There you can see your future benefit estimate, review your lifetime earnings record (which sets your benefit amount), update your personal information, and manage your benefits if you're already receiving them — all without waiting on hold.\n\nIf you're still working, seeing your estimated benefit at different retirement ages helps you plan ahead. If you're already receiving benefits, you can pull up your benefit verification letter, update your direct deposit, and change your address. Using the site online saves a lot of time compared to calling or visiting a Social Security office.`,
+    body: `The Social Security Administration runs an online portal called "my Social Security." There you can see your future benefit estimate, and review your lifetime earnings record, which sets your benefit amount. You can also update your personal information, and manage your benefits if you're already receiving them, all without waiting on hold.\n\nIf you're still working, seeing your estimated benefit at different retirement ages helps you plan ahead. If you're already receiving benefits, you can pull up your benefit verification letter, update your direct deposit, and change your address. Using the site online saves a lot of time compared to calling or visiting a Social Security office.`,
     steps: [
       {
         title: 'Create your my Social Security account',
