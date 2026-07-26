@@ -68,7 +68,7 @@ This guide walks through joining a Zoom video visit step by step, with notes on 
     difficulty: 'Beginner',
     body: `Apple and Google bill many app subscriptions through your Apple ID or Google Play account. This is convenient — you do not have to enter a credit card for each app — but it also means subscriptions can pile up where you cannot easily see them. Many people are surprised to find $5 here, $10 there, all charged to a card they barely remember signing up for.
 
-Both Apple and Google have a single screen that lists every active subscription. From that screen, you can cancel any of them with two taps. The cancellation always takes effect at the end of the current billing period, so you keep access to anything you already paid for.
+Both Apple and Google have a single screen that lists every active subscription. From that screen, you can cancel any of them with two taps. The cancellation always takes effect at the end of the current billing period. So you keep access to anything you already paid for.
 
 This guide shows where to look on iPhone and Android, and what to do about lifetime subscriptions or "free trials" that auto-renew.
 

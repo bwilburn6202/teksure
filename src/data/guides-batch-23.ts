@@ -739,7 +739,7 @@ export const guidesBatch23: Guide[] = [
     thumbnailEmoji: '',
     publishedAt: '2026-04-19',
     difficulty: 'Beginner',
-    body: `iCloud Keychain is Apple's free, built-in password manager that works across all your Apple devices. If you've ever tapped "Save Password" when logging into a website on your iPhone, your passwords are already being stored in iCloud Keychain.\n\nKeychain fills in your username and password automatically when you return to a website or app, so you don't have to remember or retype them. It also generates strong, unique passwords for new accounts, and warns you if you're using the same password on multiple sites (which makes accounts more vulnerable).\n\nAll passwords are encrypted and unlocked only with Face ID, Touch ID, or your passcode — Apple cannot see them.`,
+    body: `iCloud Keychain is Apple's free, built-in password manager that works across all your Apple devices. If you've ever tapped "Save Password" when logging into a website on your iPhone, your passwords are already being stored in iCloud Keychain.\n\nKeychain fills in your username and password automatically when you return to a website or app. So you don't have to remember or retype them. It also generates strong, unique passwords for new accounts, and warns you if you're using the same password on multiple sites (which makes accounts more vulnerable).\n\nAll passwords are encrypted and unlocked only with Face ID, Touch ID, or your passcode — Apple cannot see them.`,
     steps: [
       {
         title: 'Turn on iCloud Keychain',

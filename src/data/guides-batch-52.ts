@@ -11,7 +11,7 @@ export const guidesBatch52: Guide[] = [
     thumbnailEmoji: ``,
     publishedAt: `2026-04-19`,
     difficulty: `Beginner`,
-    body: `Your ringtone is the first thing you hear when someone calls, so it makes sense to pick something you actually like. Android phones let you choose a custom ringtone — either a song you already have on your phone, a file you downloaded specifically as a ringtone, or one of the built-in tones that came with your phone.
+    body: `Your ringtone is the first thing you hear when someone calls. So it makes sense to pick something you actually like. Android phones let you choose a custom ringtone — either a song you already have on your phone, a file you downloaded specifically as a ringtone, or one of the built-in tones that came with your phone.
 
 The steps vary slightly depending on which brand of Android phone you have (Samsung, Google Pixel, Motorola, and others all look a little different in their settings), but the overall process is the same on every Android device.
 
@@ -492,7 +492,7 @@ Here are some of the most useful alarm clock features built into iPhone and Andr
       {
         title: `Create a labeled alarm`,
         content: `On iPhone: Open the Clock app and tap "Alarm" at the bottom. Tap the plus (+) button to add an alarm. Set the time using the scroll wheels. Tap "Label" and type a name — something like "Morning medication" or "Tuesday yoga class." Tap "Save." On Android: Open the Clock app. Tap the plus (+) button. Set the time and tap the pencil icon next to the alarm to add a label.`,
-        tip: `Labeled alarms are especially helpful for medication reminders — you'll see the label right on your screen when the alarm goes off, so you know exactly why it's ringing.`
+        tip: `Labeled alarms are especially helpful for medication reminders — you'll see the label right on your screen when the alarm goes off. So you know exactly why it's ringing.`
       },
       {
         title: `Set an alarm to repeat on specific days`,

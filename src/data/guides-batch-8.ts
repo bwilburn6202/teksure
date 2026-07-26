@@ -148,7 +148,7 @@ Both computers need the Chrome browser and a Google account. The person asking f
       { title: `On the helper's computer, click Remote Support`, content: 'On the screen, click Remote Support. This is the section for helping someone else — not for connecting to your own computer.' },
       { title: `On the family member's computer, generate a code`, content: 'Have them click Remote Support, then under "Get Support" click Generate Code. A 12-digit code appears — they read it to you over the phone.' },
       { title: `Enter the code on the helper's computer`, content: 'Under "Give Support," type the 12-digit code and click Connect. The family member will see a pop-up asking to share their screen — they click Share.' },
-      { title: 'End the session when done', content: 'When you finish helping, either person can click the Stop Sharing button. The code expires after five minutes, so you cannot reconnect without a new code — this keeps things secure.' },
+      { title: 'End the session when done', content: 'When you finish helping, either person can click the Stop Sharing button. The code expires after five minutes. So you cannot reconnect without a new code — this keeps things secure.' },
     ],
   },
   {

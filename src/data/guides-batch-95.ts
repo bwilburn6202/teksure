@@ -50,7 +50,7 @@ After you are back in, Microsoft has released a follow-up update that prevents t
       {
         title: 'Enter the 48-digit recovery key on the locked computer',
         content: 'Go back to the locked computer. Use your keyboard to type the 48-digit recovery key exactly as shown in your Microsoft account. The key entry field is separated into groups of six digits — type them in order. When you finish entering all 48 digits, press Enter or click the Continue button. Windows will unlock and boot normally.',
-        warning: 'Type slowly and carefully. The recovery screen does not show you what you are typing, so it helps to read the digits in groups of six.',
+        warning: 'Type slowly and carefully. The recovery screen does not show you what you are typing. So it helps to read the digits in groups of six.',
       },
       {
         title: 'Install the follow-up fix from Windows Update',

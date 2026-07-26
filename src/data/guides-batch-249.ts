@@ -45,7 +45,7 @@ export const guidesBatch249: Guide[] = [
       {
         title: "Revisit the Document Every Two to Three Years",
         content: "Life shifts. Friends move, fall ill, or pass away. Your own preferences may change after a hospital stay, a new diagnosis, or watching a loved one go through end-of-life care. Mark a recurring date on the calendar, such as your birthday, to review your advance directive every two to three years. Confirm your primary and backup proxies are still willing and able. Update phone numbers and addresses. Replace the document if any major change happens, then collect or destroy the old copies. A current document with the right phone number does more for you than a perfect document from 15 years ago that points to a phone line nobody answers anymore.",
-        tip: "Keep a single dated note inside the folder that lists everyone who has a copy, so you know who to call when you update the form."
+        tip: "Keep a single dated note inside the folder that lists everyone who has a copy. So you know who to call when you update the form."
       }
     ]
   },

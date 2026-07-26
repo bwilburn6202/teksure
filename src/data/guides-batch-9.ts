@@ -290,7 +290,7 @@ The monthly monitoring plan costs about $20 and includes professional 24/7 monit
     thumbnailEmoji: '',
     publishedAt: '2026-04-17',
     difficulty: 'Intermediate',
-    body: `SimpliSafe is a do-it-yourself alarm system you order online and set up in under an hour. Everything is wireless and sticks to walls with removable tape, so you do not need tools or a contractor.
+    body: `SimpliSafe is a do-it-yourself alarm system you order online and set up in under an hour. Everything is wireless and sticks to walls with removable tape. So you do not need tools or a contractor.
 
 Monitoring costs around $30 a month for the full plan, which includes phone app alerts, video recording, and 24/7 police dispatch. You can cancel any time without a contract.`,
     steps: [
@@ -332,7 +332,7 @@ The setup is done through the Google Home app and takes about 15 minutes. Basic 
     thumbnailEmoji: '',
     publishedAt: '2026-04-17',
     difficulty: 'Beginner',
-    body: `Blink Outdoor is a weather-resistant camera that runs on two AA batteries for up to two years. It does not need wires, so you can stick it anywhere outside — on a porch, garage, or backyard shed.
+    body: `Blink Outdoor is a weather-resistant camera that runs on two AA batteries for up to two years. It does not need wires. So you can stick it anywhere outside — on a porch, garage, or backyard shed.
 
 The camera connects to Wi-Fi through a small hub called the Sync Module that plugs in indoors. You get free motion alerts on your phone, and a $3 monthly plan unlocks cloud recording.`,
     steps: [
@@ -420,7 +420,7 @@ You should sign up during your 7-month enrollment window around your 65th birthd
     difficulty: 'Intermediate',
     body: `Medicare Advantage (Part C) plans are offered by private insurance companies and combine Parts A, B, and usually D into one plan. Costs, doctor networks, and extra benefits like dental or vision vary widely by plan.
 
-Medicare.gov has a free Plan Finder tool that shows every plan in your area with your exact drugs and doctors, so you can see the real price you will pay.`,
+Medicare.gov has a free Plan Finder tool that shows every plan in your area with your exact drugs and doctors. So you can see the real price you will pay.`,
     steps: [
       { title: 'Open the Medicare Plan Finder', content: 'Go to medicare.gov/plan-compare in your browser. Click "Start" to begin the comparison.' },
       { title: 'Enter your ZIP code and plan type', content: 'Type your ZIP code and pick "Medicare Advantage Plan (Part C)". Medicare will show only the Advantage plans available where you live.' },
@@ -462,7 +462,7 @@ The appeal is free, and there are five levels. Most people win at the first or s
     difficulty: 'Beginner',
     body: `Medicare Open Enrollment runs October 15 through December 7 every year. During this window, you can switch Medicare Advantage plans, change drug plans, or move from Advantage back to Original Medicare — no questions asked.
 
-Plans change their drug lists and doctor networks every year, so it is worth comparing your current plan to new options each fall. Changes you make take effect January 1.`,
+Plans change their drug lists and doctor networks every year. So it is worth comparing your current plan to new options each fall. Changes you make take effect January 1.`,
     steps: [
       { title: `Check your plan's Annual Notice of Change`, content: 'Every September, your current plan mails you a packet called the Annual Notice of Change (ANOC). Look at any differences for next year — new drug costs, removed doctors, or a higher premium.' },
       { title: 'Go to medicare.gov/plan-compare', content: 'Open your browser and go to medicare.gov/plan-compare. Enter your ZIP code, then sign in with your Medicare account so the tool remembers your drugs and doctors.' },
@@ -825,7 +825,7 @@ It costs $5 a month after a free trial. If you cook even twice a week, it quickl
     thumbnailEmoji: '',
     publishedAt: '2026-04-17',
     difficulty: 'Beginner',
-    body: `Yummly is a free recipe app with millions of recipes collected from top cooking websites. It suggests recipes based on what you tell it you like and what diet you follow, so you spend less time scrolling.
+    body: `Yummly is a free recipe app with millions of recipes collected from top cooking websites. It suggests recipes based on what you tell it you like and what diet you follow. So you spend less time scrolling.
 
 You can also search by ingredient — type in what you already have and it will show dinners you can make tonight without a grocery run.`,
     steps: [
@@ -846,7 +846,7 @@ You can also search by ingredient — type in what you already have and it will 
     thumbnailEmoji: '',
     publishedAt: '2026-04-17',
     difficulty: 'Beginner',
-    body: `AllRecipes has been around since 1997 and is the biggest free recipe site on the internet. Every recipe is posted by home cooks and reviewed by other home cooks, so you see what really works in real kitchens.
+    body: `AllRecipes has been around since 1997 and is the biggest free recipe site on the internet. Every recipe is posted by home cooks and reviewed by other home cooks. So you see what really works in real kitchens.
 
 The best feature is the ratings. Sort any search by rating and you can trust that recipes with 4.5 stars and hundreds of reviews are going to turn out well.`,
     steps: [
@@ -997,7 +997,7 @@ You can also share lists with family members, so everyone can add to a grocery l
     thumbnailEmoji: '',
     publishedAt: '2026-04-17',
     difficulty: 'Beginner',
-    body: `Google Keep is a free note-taking app that works on any phone, tablet, or computer. Notes sync instantly between your devices, so you can start a grocery list on your phone and see it on your laptop when you sit down to plan meals.
+    body: `Google Keep is a free note-taking app that works on any phone, tablet, or computer. Notes sync instantly between your devices. So you can start a grocery list on your phone and see it on your laptop when you sit down to plan meals.
 
 Notes can be plain text, checklists, photos, or even voice recordings that Google transcribes to text automatically.`,
     steps: [
@@ -1041,7 +1041,7 @@ The free version works well for most people. Todoist Pro ($4 a month) adds thing
     difficulty: 'Beginner',
     body: `AnyList is a free grocery list app that works great for couples and families. You share one list, and anyone can add items from their phone — so when your spouse finishes the last of the milk, they can add it right away.
 
-The app sorts items into aisles automatically, so you shop in an efficient order instead of wandering back and forth. It also saves your favorite items for quick re-adding.`,
+The app sorts items into aisles automatically. So you shop in an efficient order instead of wandering back and forth. It also saves your favorite items for quick re-adding.`,
     steps: [
       { title: 'Install AnyList', content: 'Download AnyList from the App Store or Play Store. Open it and sign up with your email.' },
       { title: 'Create your grocery list', content: 'Tap the plus sign to start adding items. Type a food name — AnyList auto-suggests the item and puts it in the right aisle category (Produce, Dairy, etc.).' },

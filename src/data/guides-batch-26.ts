@@ -75,7 +75,7 @@ This feature requires iOS 17 or later on the iPhone creating the link. Non-Apple
       {
         title: 'Share the Link',
         content: 'From the share menu, choose how to send the link: tap "Messages" to send a text, "Mail" to send an email, or "Copy" to copy the link and paste it wherever you want. Send the link to everyone you want to invite — iPhone users, Android users, and Windows users alike.',
-        tip: 'FaceTime links do not expire, so you can create one ahead of time and share it in a family group text for a scheduled call.',
+        tip: 'FaceTime links do not expire. So you can create one ahead of time and share it in a family group text for a scheduled call.',
       },
       {
         title: 'Join from an iPhone or iPad',
@@ -663,7 +663,7 @@ Shutterfly books regularly go on sale — 40-50% off sales happen most weekends 
     difficulty: 'Beginner',
     body: `Streaming services seemed like a money-saving alternative to cable when there were only one or two of them. But as more services launched and prices increased, many households now pay $80-150 per month for streaming — comparable to or more expensive than cable.
 
-This guide provides a current breakdown of the major streaming service prices and what each includes, so you can decide which services are worth keeping for your household.
+This guide provides a current breakdown of the major streaming service prices and what each includes. So you can decide which services are worth keeping for your household.
 
 As of 2026, here are approximate monthly prices for ad-supported (cheaper) and ad-free tiers:
 

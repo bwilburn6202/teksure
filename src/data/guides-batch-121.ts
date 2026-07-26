@@ -580,7 +580,7 @@ The same rules apply to texts and emails. Your bank may send you a fraud text as
       {
         title: 'Hang up and call your bank directly',
         content: 'If you are unsure whether a call is real, hang up — even if the caller seems upset or insistent. Call the number on the back of your debit card or the official number from your bank\'s website. Ask: "Was there a fraud alert or unusual activity on my account today?"',
-        tip: 'Quick Tip: Save your bank\'s real customer service number in your phone contacts right now, so you always have it available.',
+        tip: 'Quick Tip: Save your bank\'s real customer service number in your phone contacts right now. So you always have it available.',
       },
       {
         title: 'Never share a one-time security code',

@@ -39,7 +39,7 @@ A barcode is the series of black and white stripes printed on nearly every packa
 
 **Weighing loose produce**
 
-Loose fruits and vegetables — apples, bananas, broccoli, green beans — do not have a barcode, so you cannot scan them the normal way. Instead, the machine weighs them. You place the produce on the scale (usually the bagging area or a small scale to the side), then identify what it is on the touchscreen. The machine multiplies the weight by the price per pound.
+Loose fruits and vegetables — apples, bananas, broccoli, green beans — do not have a barcode. So you cannot scan them the normal way. Instead, the machine weighs them. You place the produce on the scale (usually the bagging area or a small scale to the side), then identify what it is on the touchscreen. The machine multiplies the weight by the price per pound.
 
 To identify produce, you can either type in the four- or five-digit PLU code (Product Look-Up code) printed on the small sticker on the item, or tap "Find Item" on the screen and search by name. For example, you might tap "Find Item," type "banana," and select the right option from the list. You do not need to memorize any codes.
 

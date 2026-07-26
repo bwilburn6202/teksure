@@ -100,7 +100,7 @@ Circle Home Plus costs about $129 upfront for the hardware, plus a $9.99 per mon
     difficulty: `Intermediate`,
     body: `Qustodio is a comprehensive parental control solution that works across virtually every device your child might use. Unlike tools that only work on one type of device, Qustodio has apps for iPhone, Android, Windows PC, Mac, Chromebook, and Kindle. This makes it a strong choice for families where children use a mix of different devices.
 
-The Qustodio dashboard gives parents a clear picture of how much time a child spends on each app, which websites they visit, what they search for online, and where they are located. Reports are organized by day, week, or month, so you can spot trends over time rather than reacting to individual incidents. For example, you might notice that your child's social media usage spikes on school nights, or that they are visiting websites in a category you would prefer to block.
+The Qustodio dashboard gives parents a clear picture of how much time a child spends on each app, which websites they visit, what they search for online, and where they are located. Reports are organized by day, week, or month. So you can spot trends over time rather than reacting to individual incidents. For example, you might notice that your child's social media usage spikes on school nights, or that they are visiting websites in a category you would prefer to block.
 
 Qustodio's location tracking feature shows where your child's phone is on a map, with a history of recent locations. This is useful for knowing when a child has arrived at school or a friend's house. The app also supports geofencing — you can create a virtual boundary around a location like home or school, and receive a notification when your child enters or leaves that area.
 
@@ -147,7 +147,7 @@ The most important feature of Kids Mode is that it is locked with a PIN. Your ch
 
 Kids Mode also disables autoplay previews, which means graphic or loud content will not start playing automatically while your child is browsing. The interface in Kids Mode is simplified and more visual, making it easier for younger children to find shows they enjoy without needing to read a lot of text.
 
-You can create a Kids Mode profile for each child in your household with a Disney+ subscription. The service supports up to seven profiles per account, so there is room for the whole family. Kids Mode is available on smart TVs, Fire sticks, Roku, phones, tablets, and the Disney+ website. Setting it up takes less than five minutes.`,
+You can create a Kids Mode profile for each child in your household with a Disney+ subscription. The service supports up to seven profiles per account. So there is room for the whole family. Kids Mode is available on smart TVs, Fire sticks, Roku, phones, tablets, and the Disney+ website. Setting it up takes less than five minutes.`,
     steps: [
       {
         title: `Open Disney+ and go to your profile menu`,
@@ -601,7 +601,7 @@ One of Tynker's most popular features is its Minecraft modding courses — child
 
 Tynker has both a free tier and a paid subscription. The free tier includes a limited set of courses and activities, which is enough to decide whether your child enjoys the platform. The premium subscription costs around $10 per month or $80 per year and unlocks hundreds of additional courses, projects, and features. The platform also has a school edition used by many teachers, which may mean your child already has access through their school.
 
-Tynker works on iPad, Android tablets, iPhone, Android phones, and web browsers on Mac and Windows computers. Lessons are organized by age group and skill level, so you can find a starting point without prior experience.`,
+Tynker works on iPad, Android tablets, iPhone, Android phones, and web browsers on Mac and Windows computers. Lessons are organized by age group and skill level. So you can find a starting point without prior experience.`,
     steps: [
       {
         title: `Create a free Tynker account`,

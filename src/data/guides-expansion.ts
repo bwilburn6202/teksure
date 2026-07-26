@@ -3255,7 +3255,7 @@ On Android: Go to Settings then Wallpaper (or Settings then Display then Wallpap
 
 On Samsung phones, you can also press and hold on an empty area of your Home Screen and tap "Wallpaper and style" for quick access.
 
-Tips for choosing a good wallpaper: pick an image that is not too busy, so you can still read your app names and notifications clearly. Darker wallpapers tend to look better and use less battery on phones with OLED screens. Photos of landscapes, sunsets, or solid colors work well.`,
+Tips for choosing a good wallpaper: pick an image that is not too busy. So you can still read your app names and notifications clearly. Darker wallpapers tend to look better and use less battery on phones with OLED screens. Photos of landscapes, sunsets, or solid colors work well.`,
     steps: [
       { title: 'Open wallpaper settings', content: 'iPhone: Settings then Wallpaper then "Add New Wallpaper." Android: Settings then Wallpaper (or Settings then Display then Wallpaper).' },
       { title: 'Choose your image source', content: 'Select "Photos" or "Gallery" to use your own photo. Or browse built-in wallpapers, colors, and other options provided by your phone.' },
@@ -3352,7 +3352,7 @@ Both platforms let you schedule Do Not Disturb to turn on automatically at bedti
 
 You can also allow specific contacts to break through Do Not Disturb. This way, if your kids, parents, or spouse calls, the phone rings — but everyone else gets sent to voicemail or silence.
 
-Alarms still work during Do Not Disturb on both iPhone and Android, so you do not need to worry about sleeping through your morning alarm.`,
+Alarms still work during Do Not Disturb on both iPhone and Android. So you do not need to worry about sleeping through your morning alarm.`,
     steps: [
       { title: 'Turn on Do Not Disturb quickly', content: 'iPhone: swipe down from top-right, tap the moon icon (Focus), then "Do Not Disturb." Android: swipe down from top, tap the Do Not Disturb tile.' },
       { title: 'Allow calls from important contacts', content: 'iPhone: Settings then Focus then Do Not Disturb then People then "Allow Calls From" and choose "Favorites" or specific contacts. Android: Settings then Sound then Do Not Disturb then Exceptions.' },
@@ -3595,7 +3595,7 @@ Figuring out a sale discount: If something is 30 percent off, multiply the price
 
 Splitting a bill: Add up the total, then divide by the number of people. For a $120 dinner with four people: type 120 / 4 = $30 each.
 
-The calculator keeps your last answer on screen, so you can continue calculating without starting over. Tap "AC" (All Clear) or "C" (Clear) to start fresh. "C" clears the current number, while "AC" clears everything.
+The calculator keeps your last answer on screen. So you can continue calculating without starting over. Tap "AC" (All Clear) or "C" (Clear) to start fresh. "C" clears the current number, while "AC" clears everything.
 
 You can also ask Siri or Google Assistant to do math for you. Say "Hey Siri, what is 20 percent of 85?" or "OK Google, what is 156 divided by 4?" and get the answer without opening the app.`,
     steps: [
@@ -3754,7 +3754,7 @@ Privacy tip: set AirDrop to "Contacts Only" when you are in public places. The "
     thumbnailEmoji: '',
     publishedAt: '2026-04-15',
     difficulty: 'Beginner',
-    body: `Nearby Share (also called Quick Share on Samsung phones) is Android's answer to Apple's AirDrop. It lets you wirelessly share photos, videos, files, links, and more between Android phones, tablets, and Chromebooks. The transfer uses a combination of Bluetooth, WiFi, and your internet connection, so it is fast even for large files.
+    body: `Nearby Share (also called Quick Share on Samsung phones) is Android's answer to Apple's AirDrop. It lets you wirelessly share photos, videos, files, links, and more between Android phones, tablets, and Chromebooks. The transfer uses a combination of Bluetooth, WiFi, and your internet connection. So it is fast even for large files.
 
 Both devices need to have Bluetooth and Location turned on. The devices should be within about 15 feet of each other. Nearby Share is built into most Android phones running Android 6 or later — no app installation needed.
 
@@ -4859,7 +4859,7 @@ Set a Screen Time passcode that is different from the child's login password. Th
     thumbnailEmoji: '',
     publishedAt: '2026-04-16',
     difficulty: 'Beginner' as any,
-    body: `Google Docs is a free online word processor from Google that works in any web browser. It saves your work automatically as you type, so you never lose a document. And you can access it from any phone, tablet, or computer. It is a popular alternative to Microsoft Word that costs nothing to use.`,
+    body: `Google Docs is a free online word processor from Google that works in any web browser. It saves your work automatically as you type. So you never lose a document. And you can access it from any phone, tablet, or computer. It is a popular alternative to Microsoft Word that costs nothing to use.`,
     steps: [
       { title: 'Sign in to Google', content: 'Go to docs.google.com. If you have a Gmail account, sign in with your Gmail email and password. If you do not have a Google account, click "Create account" to set one up for free.' },
       { title: 'Create a new document', content: 'Click the large "+" button or "Blank" template to open a new document. Give it a name by clicking "Untitled document" at the top and typing a title.' },

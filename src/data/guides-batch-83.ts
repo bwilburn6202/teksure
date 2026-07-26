@@ -19,7 +19,7 @@ One of the most convenient features is the W-2 import tool. Instead of typing in
 
 TurboTax also includes a refund tracker so you can see whether you owe money or are getting a refund as you go. The app updates that number in real time as you enter more information. By the time you reach the end, you already know what to expect.
 
-The free version covers simple returns — one W-2, the standard deduction, no investment income. Most people who have a more complicated return will need to pay for an upgraded tier, but even those are generally less expensive than hiring a professional tax preparer. TurboTax saves your progress automatically, so you can start on one day and finish on another.`,
+The free version covers simple returns — one W-2, the standard deduction, no investment income. Most people who have a more complicated return will need to pay for an upgraded tier, but even those are generally less expensive than hiring a professional tax preparer. TurboTax saves your progress automatically. So you can start on one day and finish on another.`,
     steps: [
       {
         title: `Download TurboTax and Create an Account`,
@@ -205,7 +205,7 @@ The service is available in participating states, and the list has been expandin
 
 The filing experience is straightforward. You answer guided questions in plain language, similar to commercial tax software. The IRS pulls some information directly from its records — for example, the income the agency has already received from your employer — which reduces the amount of manual data entry required.
 
-Because Direct File is a federal-only tool, it does not handle your state taxes. However, in many participating states the program includes a way to transfer your federal information to a free state filing tool at the end of the federal process, so you can complete both returns without much extra work.
+Because Direct File is a federal-only tool, it does not handle your state taxes. However, in many participating states the program includes a way to transfer your federal information to a free state filing tool at the end of the federal process. So you can complete both returns without much extra work.
 
 If your situation qualifies, Direct File is the most direct, lowest-cost option available. You are dealing with the IRS directly, without a middleman.`,
     steps: [
@@ -335,7 +335,7 @@ AARP Tax-Aide also offers a fully online option called "Tax-Aide Online" where y
     thumbnailEmoji: ``,
     publishedAt: `2026-04-20`,
     difficulty: `Intermediate`,
-    body: `A Roth IRA is a special type of retirement savings account with a major long-term benefit: the money you put in grows tax-free, and when you take it out in retirement, you pay no taxes on the growth. You contribute money you've already paid income tax on, so you don't get a tax break today. But every future gain is yours to keep — you won't owe the IRS anything when you withdraw it.
+    body: `A Roth IRA is a special type of retirement savings account with a major long-term benefit: the money you put in grows tax-free, and when you take it out in retirement, you pay no taxes on the growth. You contribute money you've already paid income tax on. So you don't get a tax break today. But every future gain is yours to keep — you won't owe the IRS anything when you withdraw it.
 
 That's the opposite of a traditional IRA or a 401(k), where you get a tax deduction now but pay income taxes when you withdraw the money in retirement. The Roth approach is especially valuable if you expect to be in a higher tax bracket later in life, or if tax rates in general go up over time — which many financial professionals consider likely.
 
@@ -389,7 +389,7 @@ The most valuable feature of many 401(k) plans is the employer match. This is wh
 
 In 2026, you can contribute up to $23,500 per year to a 401(k) if you are under 50. If you are 50 or older, the limit is $31,000 due to a "catch-up contribution" provision designed to help people save more as retirement approaches.
 
-When you leave a job, your 401(k) money stays yours. You can leave it in your former employer's plan, roll it over into your new employer's plan, or move it into an IRA. Withdrawing the money early (before age 59½) comes with taxes plus a 10% penalty, so it is best to leave retirement savings alone until you actually retire.`,
+When you leave a job, your 401(k) money stays yours. You can leave it in your former employer's plan, roll it over into your new employer's plan, or move it into an IRA. Withdrawing the money early (before age 59½) comes with taxes plus a 10% penalty. So it is best to leave retirement savings alone until you actually retire.`,
     steps: [
       {
         title: `Find Out If Your Employer Offers a 401(k)`,

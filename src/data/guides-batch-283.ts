@@ -94,7 +94,7 @@ This guide covers the most useful AirPods features beyond music alone — pairin
       },
       {
         title: 'Take phone calls hands-free',
-        content: 'When the iPhone rings while AirPods are in your ears, double-tap an AirPod (or pinch the stem on AirPods Pro) to answer. The microphone is built into the AirPods, so you can talk without holding the phone. Double-tap again to hang up.',
+        content: 'When the iPhone rings while AirPods are in your ears, double-tap an AirPod (or pinch the stem on AirPods Pro) to answer. The microphone is built into the AirPods. So you can talk without holding the phone. Double-tap again to hang up.',
       },
     ],
   },

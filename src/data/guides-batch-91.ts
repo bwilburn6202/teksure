@@ -13,7 +13,7 @@ export const guidesBatch91: Guide[] = [
     difficulty: `Beginner`,
     body: `SimpliSafe is a home security system you set up yourself — no tools, no drilling, and no technician visit needed. Everything sticks to your walls and doors with adhesive strips that peel off cleanly when you move. You purchase the hardware once. And you can choose whether or not to pay for professional monitoring. If you skip monitoring, the alarm will still sound loudly if a sensor is triggered — you just handle calling for help yourself. If you add 24/7 professional monitoring, a real person at SimpliSafe's monitoring center will contact you and, if needed, dispatch police or fire services.
 
-When your SimpliSafe package arrives, you will find a Base Station (the brain of the system), a Keypad (where you enter your PIN), and a set of sensors for doors, windows, and possibly motion. The Base Station connects to your home Wi-Fi and cellular networks, so it keeps working even if your internet goes down. The keypad mounts near your front door.
+When your SimpliSafe package arrives, you will find a Base Station (the brain of the system), a Keypad (where you enter your PIN), and a set of sensors for doors, windows, and possibly motion. The Base Station connects to your home Wi-Fi and cellular networks. So it keeps working even if your internet goes down. The keypad mounts near your front door.
 
 Setting up SimpliSafe does not require any special technical knowledge. You place each sensor, set a PIN you will remember, download the app, and test that everything is working. The whole process takes most people about 30 to 45 minutes. This guide walks you through each step so you can feel confident your home is protected.`,
     steps: [
@@ -82,7 +82,7 @@ Setting up Ring Alarm is designed to take about 30 minutes. You do not need any 
       {
         title: `Learn the three arming modes`,
         content: `Ring Alarm has three modes you set using the Keypad or the app: Disarmed means the system is off and sensors are silent; Home means the system is on but Motion Detectors are paused (so you can move around inside while still protecting entry points); Away means all sensors are active, including motion detectors. You enter your PIN on the Keypad to switch between modes, or tap the mode buttons in the Ring app from anywhere.`,
-        tip: `Quick Tip: Set up an Entry Delay in the Ring app — this gives you 30 to 60 seconds to disarm after opening the front door before the alarm sounds, so you are not startled every time you come home.`,
+        tip: `Quick Tip: Set up an Entry Delay in the Ring app — this gives you 30 to 60 seconds to disarm after opening the front door before the alarm sounds. So you are not startled every time you come home.`,
       },
       {
         title: `Set up Ring app notifications`,
@@ -147,7 +147,7 @@ This guide covers setting up your first Arlo camera, choosing the best placement
     thumbnailEmoji: ``,
     publishedAt: `2026-04-20`,
     difficulty: `Beginner`,
-    body: `Blink is Amazon's budget-friendly line of wireless security cameras. They run on two AA lithium batteries that can last up to two years, so there are no cables to run and no outlet required near your camera. Blink makes cameras for both indoor and outdoor use — the outdoor models are weather-resistant and can handle rain and temperature changes.
+    body: `Blink is Amazon's budget-friendly line of wireless security cameras. They run on two AA lithium batteries that can last up to two years. So there are no cables to run and no outlet required near your camera. Blink makes cameras for both indoor and outdoor use — the outdoor models are weather-resistant and can handle rain and temperature changes.
 
 Blink cameras connect to a small device called the Sync Module, which plugs into a standard outlet and acts as the bridge between your cameras and your home Wi-Fi. One Sync Module supports up to ten cameras. Some newer Blink devices have Wi-Fi built in and do not need a Sync Module — check your box.
 
@@ -194,7 +194,7 @@ Blink cameras are a great starting point for home monitoring because they are af
 
 The HomeBase is a small white box about the size of a paperback book. It plugs into your router with a network cable and into a wall outlet for power. Your Eufy cameras connect wirelessly to the HomeBase, which acts as the hub for the whole system. Most Eufy cameras are battery-powered and weather-resistant for outdoor use, though Eufy also sells wired cameras for areas where you want continuous power.
 
-The eufy Security app (free, for iPhone and Android) is where you see live video, review clips, adjust settings, and receive motion alerts. Eufy's AI (artificial intelligence — a computer program that learns to recognize patterns) can distinguish between people, pets, and vehicles, so you get an alert when a person approaches your door rather than every time a car drives by in the background.
+The eufy Security app (free, for iPhone and Android) is where you see live video, review clips, adjust settings, and receive motion alerts. Eufy's AI (artificial intelligence — a computer program that learns to recognize patterns) can distinguish between people, pets, and vehicles. So you get an alert when a person approaches your door rather than every time a car drives by in the background.
 
 Eufy also supports end-to-end encryption — meaning the video is scrambled before it leaves your camera and can only be unscrambled on your phone. Even Eufy itself cannot see your footage. This guide walks through the full setup process.`,
     steps: [
@@ -213,7 +213,7 @@ Eufy also supports end-to-end encryption — meaning the video is scrambled befo
       },
       {
         title: `Enable AI person detection`,
-        content: `In the app, go to your camera settings and tap "Motion Detection Type." Select "Human Only" (the exact label may vary by model — look for options like "All Motion" vs "Human Only" or "Smart Detection"). With this setting active, the camera will only record and send you an alert when it detects a human shape — not a dog walking through the yard or a tree branch moving. This AI detection works locally on the HomeBase, so it does not require an internet connection or a subscription to function.`,
+        content: `In the app, go to your camera settings and tap "Motion Detection Type." Select "Human Only" (the exact label may vary by model — look for options like "All Motion" vs "Human Only" or "Smart Detection"). With this setting active, the camera will only record and send you an alert when it detects a human shape — not a dog walking through the yard or a tree branch moving. This AI detection works locally on the HomeBase. So it does not require an internet connection or a subscription to function.`,
       },
       {
         title: `Enable end-to-end encryption for maximum privacy`,
@@ -232,7 +232,7 @@ Eufy also supports end-to-end encryption — meaning the video is scrambled befo
     thumbnailEmoji: ``,
     publishedAt: `2026-04-20`,
     difficulty: `Beginner`,
-    body: `Uber is a service that connects you with nearby drivers who use their own cars to give rides, similar to calling a taxi — but you do everything through a smartphone app instead of a phone call. You tap a few buttons, a driver comes to your exact location. And you are dropped off at your destination. The fare is charged automatically to your credit card or PayPal account, so there is no need to carry cash or fumble with payment at the end of the ride.
+    body: `Uber is a service that connects you with nearby drivers who use their own cars to give rides, similar to calling a taxi — but you do everything through a smartphone app instead of a phone call. You tap a few buttons, a driver comes to your exact location. And you are dropped off at your destination. The fare is charged automatically to your credit card or PayPal account. So there is no need to carry cash or fumble with payment at the end of the ride.
 
 One of the most helpful things about Uber is that you see the price before you confirm the ride. Unlike a taxi where the meter runs and you find out the cost at the end, Uber shows you an upfront fare estimate based on your pickup and destination. You can choose whether to accept that price or cancel at no charge.
 
@@ -246,7 +246,7 @@ This guide is written for someone who has never used Uber before. It covers crea
       },
       {
         title: `Add a payment method`,
-        content: `After creating your account, Uber will prompt you to add a payment method. Tap "Payment" and choose "Add Credit or Debit Card." Enter your card number, expiration date, and the 3-digit security code on the back. You can also link a PayPal account if you prefer that. Your card is charged automatically at the end of each ride, so you never need to handle money in the car. Uber saves your payment method securely for future rides.`,
+        content: `After creating your account, Uber will prompt you to add a payment method. Tap "Payment" and choose "Add Credit or Debit Card." Enter your card number, expiration date, and the 3-digit security code on the back. You can also link a PayPal account if you prefer that. Your card is charged automatically at the end of each ride. So you never need to handle money in the car. Uber saves your payment method securely for future rides.`,
         tip: `Quick Tip: Many credit cards offer cashback or travel rewards on rideshare purchases — check if your card has this benefit before adding it.`,
       },
       {
@@ -336,7 +336,7 @@ GoGoGrandparent charges a service fee on top of the regular Uber or Lyft fare, t
       {
         title: `Sign up for GoGoGrandparent`,
         content: `A family member or the rider themselves can sign up at gogograndparent.com on any computer or smartphone. Click "Get Started" and enter the rider's name, home address, phone number, and a payment method (credit or debit card). The home address becomes the default "take me home" destination so the rider does not have to say the address out loud every time. Setup takes about 5 minutes online.`,
-        tip: `Quick Tip: Add a few saved destinations during signup — for example, the doctor's office, the grocery store, or a family member's home. These become quick-dial options when you call, so you can request a ride there without reading an address out loud.`,
+        tip: `Quick Tip: Add a few saved destinations during signup — for example, the doctor's office, the grocery store, or a family member's home. These become quick-dial options when you call. So you can request a ride there without reading an address out loud.`,
       },
       {
         title: `Call to request a ride`,
@@ -710,7 +710,7 @@ The lock runs on four AA batteries, which typically last 6 to 12 months dependin
 
 Installing the Schlage Encode requires a few basic household tasks: removing the existing deadbolt using a screwdriver, and fitting the new lock hardware onto the door. Schlage's instructions and online videos guide you through the process step by step. Most people complete the installation in 30 to 45 minutes. The lock fits most standard US door preparations — the industry term for the pre-drilled holes in your door — without any cutting or drilling.
 
-The Schlage Home app is where you manage access codes, view entry logs (a history of every time someone used the lock), and set up auto-lock schedules. The lock also works with Amazon Alexa and Google Home, so you can ask your smart speaker to lock the door without picking up your phone. This guide covers the installation process, app setup, and the most useful features.`,
+The Schlage Home app is where you manage access codes, view entry logs (a history of every time someone used the lock), and set up auto-lock schedules. The lock also works with Amazon Alexa and Google Home. So you can ask your smart speaker to lock the door without picking up your phone. This guide covers the installation process, app setup, and the most useful features.`,
     steps: [
       {
         title: `Gather tools and remove the old deadbolt`,
@@ -754,7 +754,7 @@ The Schlage Home app is where you manage access codes, view entry logs (a histor
 
 Kasa makes several types of smart bulbs. The basic models offer adjustable brightness and warm to cool white light. The color models (often called KL125 or similar) also let you choose from millions of colors — red, green, blue, purple, or any custom shade. All models can be turned on and off remotely from your phone, set on a schedule, and controlled with Amazon Alexa or Google Home voice commands.
 
-Kasa bulbs use standard screw-in bases (the same E26 base that most US floor lamps and ceiling fixtures use), so they fit in most household light sockets. They use LED technology, meaning they are more energy-efficient and last much longer than traditional bulbs.
+Kasa bulbs use standard screw-in bases (the same E26 base that most US floor lamps and ceiling fixtures use). So they fit in most household light sockets. They use LED technology, meaning they are more energy-efficient and last much longer than traditional bulbs.
 
 The Kasa Smart app is free for iPhone and Android. You use it to control bulbs individually or group several bulbs together into a "Room" — so you can turn all the living room lights on at once with one tap instead of individually. The app also has a "Scenes" feature where you can save preset settings — for example, a warm dim setting called "Evening" that you activate with one tap.
 

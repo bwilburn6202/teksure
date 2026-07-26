@@ -183,7 +183,7 @@ export const guidesBatch245: Guide[] = [
       },
       {
         title: "Mix In One-on-One Mentorship and In-Person Options",
-        content: "Online groups are not the only path. Cancer Hope Network and the Imerman Angels program match you with a one-on-one mentor by phone or video, often someone who had your exact cancer and is willing to talk for as long as you need. Many local cancer centers host in-person support groups that meet at the hospital or a community room. Religious communities, the YMCA, and the Wellness Community also run survivor circles. Pair the online group with one in-person option, even if it is once a month, so you also leave the house and shake hands with someone who understands.",
+        content: "Online groups are not the only path. Cancer Hope Network and the Imerman Angels program match you with a one-on-one mentor by phone or video, often someone who had your exact cancer and is willing to talk for as long as you need. Many local cancer centers host in-person support groups that meet at the hospital or a community room. Religious communities, the YMCA, and the Wellness Community also run survivor circles. Pair the online group with one in-person option, even if it is once a month. So you also leave the house and shake hands with someone who understands.",
         tip: "Ask the oncology social worker for a list of local in-person groups. Many are not listed on big websites and exist quietly through word of mouth."
       }
     ]
@@ -223,7 +223,7 @@ export const guidesBatch245: Guide[] = [
       },
       {
         title: "Use the Insurance the Moment You Need Care",
-        content: "If you get sick or injured during the trip, call the help line on the back of your insurance card before going to the hospital, if possible. The help line can recommend an English-speaking doctor or hospital and often pays the bill directly, so you avoid laying out money. Save every receipt, prescription, and discharge paper. Even a 25-dollar pharmacy receipt can be reimbursable. After you return home, the insurer will ask for a claim form, your receipts, and a copy of the medical record. Submit everything within the time window listed in the policy, usually 90 days.",
+        content: "If you get sick or injured during the trip, call the help line on the back of your insurance card before going to the hospital, if possible. The help line can recommend an English-speaking doctor or hospital and often pays the bill directly. So you avoid laying out money. Save every receipt, prescription, and discharge paper. Even a 25-dollar pharmacy receipt can be reimbursable. After you return home, the insurer will ask for a claim form, your receipts, and a copy of the medical record. Submit everything within the time window listed in the policy, usually 90 days.",
         tip: "Pay with a credit card, not cash, when buying medicine or doctor visits abroad. The credit card statement is an extra layer of proof for the claim."
       },
       {

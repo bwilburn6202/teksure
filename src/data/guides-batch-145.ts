@@ -228,7 +228,7 @@ What is NOT automatically protected: apps you paid for (you can re-download thos
       {
         title: 'Turn on automatic backup',
         content: 'Manual uploads are fine, but automatic backup is better. On iPhone: go to Settings > your name > iCloud > iCloud Backup, and turn it on. Your phone will back up every night while it charges and is connected to Wi-Fi. On Android: go to Settings > Google > Backup and turn on "Back up to Google Drive."',
-        warning: 'Automatic backup uses Wi-Fi, not your cellular data plan, so you will not be charged extra by your carrier. Make sure your phone is on your home Wi-Fi when it charges at night.',
+        warning: 'Automatic backup uses Wi-Fi, not your cellular data plan. So you will not be charged extra by your carrier. Make sure your phone is on your home Wi-Fi when it charges at night.',
       },
       {
         title: 'Know what is protected and what is not',
@@ -305,7 +305,7 @@ You do not need to do anything during the ride — payment is automatic at the e
 
 Both Lyft and Uber let you share your ride status with a trusted person. In Lyft: during a ride, tap "Share Status" and choose a contact. In Uber: tap the share button during a ride. Your family member will see your car on a map in real time and know when you have arrived.
 
-**Quick Tip:** Ask a grandchild or trusted family member to walk through this guide with you the first time. Many families set up the app together before it is needed, so there is no stress when an appointment comes up.
+**Quick Tip:** Ask a grandchild or trusted family member to walk through this guide with you the first time. Many families set up the app together before it is needed. So there is no stress when an appointment comes up.
 
 ## What to Do If Something Goes Wrong
 
@@ -385,7 +385,7 @@ Clearing your history, cache, and cookies fixes many of these issues. It can als
 
 **Cache** (pronounced "cash") — copies of web pages, images, and files that your browser saved to make websites load faster next time. When this gets outdated, websites can look broken. Clearing the cache forces the browser to download a fresh, current version of the page.
 
-**Cookies** — small files that websites store on your device to remember you. They keep you signed in to websites and remember your preferences. Clearing cookies will sign you out of most websites, so you will need to log back in.
+**Cookies** — small files that websites store on your device to remember you. They keep you signed in to websites and remember your preferences. Clearing cookies will sign you out of most websites. So you will need to log back in.
 
 ## What Stays After You Clear
 

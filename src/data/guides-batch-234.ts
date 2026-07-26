@@ -66,7 +66,7 @@ export const guidesBatch234: Guide[] = [
       },
       {
         title: "Complete the Personality Questionnaire Honestly",
-        content: "The questionnaire takes about 30 minutes. It asks about your habits, your views on family, your activity level, your political and religious comfort zones, and what you want in a partner. Answer honestly even if a question feels awkward. Lying on these questions makes the matching system worse, not better, and the matches you get will not fit who you actually are. Take a break if you feel tired. The site saves your progress, so you can finish the questionnaire over two or three sittings if needed. After you finish, the system needs about a day to generate your first batch of matches.",
+        content: "The questionnaire takes about 30 minutes. It asks about your habits, your views on family, your activity level, your political and religious comfort zones, and what you want in a partner. Answer honestly even if a question feels awkward. Lying on these questions makes the matching system worse, not better, and the matches you get will not fit who you actually are. Take a break if you feel tired. The site saves your progress. So you can finish the questionnaire over two or three sittings if needed. After you finish, the system needs about a day to generate your first batch of matches.",
         tip: "If a question does not have an answer that fits you, pick the closest option and adjust your written profile later to add context. Forced-choice questions never capture every shade of a real person."
       },
       {
@@ -136,7 +136,7 @@ export const guidesBatch234: Guide[] = [
       },
       {
         title: "Report the Scam to Three Places",
-        content: "If you spot a scammer, do not message them again. Block them on the dating site by clicking the three-dot menu and choosing Report and Block. Then file three reports. First, the dating site itself, so they can ban the account and warn others. Second, the FTC at reportfraud.ftc.gov. Third, the FBI Internet Crime Complaint Center at ic3.gov. These reports help law enforcement track scammer networks and warn other dating users. If you sent money, report it to your bank in the same day. Wire transfers can sometimes be reversed within 24 to 48 hours. Gift card purchases can sometimes be refunded if you call the issuer right away. Save every message, every email, and every receipt as evidence.",
+        content: "If you spot a scammer, do not message them again. Block them on the dating site by clicking the three-dot menu and choosing Report and Block. Then file three reports. First, the dating site itself. So they can ban the account and warn others. Second, the FTC at reportfraud.ftc.gov. Third, the FBI Internet Crime Complaint Center at ic3.gov. These reports help law enforcement track scammer networks and warn other dating users. If you sent money, report it to your bank in the same day. Wire transfers can sometimes be reversed within 24 to 48 hours. Gift card purchases can sometimes be refunded if you call the issuer right away. Save every message, every email, and every receipt as evidence.",
         warning: "Some scammers come back weeks later with a new profile and a new story, claiming to be a fraud recovery agent who can get your money back for a fee. That is a second scam targeting victims. Never pay anyone who offers to recover stolen funds."
       },
       {

@@ -218,7 +218,7 @@ export const guidesBatch322: Guide[] = [
       },
       {
         title: "Set a calendar reminder before free trials end",
-        content: "When signing up for a free trial, add a reminder on your phone's calendar for a day or two before the trial ends, so you have time to decide whether to keep it or cancel before you're charged.",
+        content: "When signing up for a free trial, add a reminder on your phone's calendar for a day or two before the trial ends. So you have time to decide whether to keep it or cancel before you're charged.",
       },
       {
         title: "Cancel directly through the app store, not the company",

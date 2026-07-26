@@ -142,7 +142,7 @@ On Windows 11, you can open Copilot by pressing the Windows key and the letter C
       },
       {
         title: `Use Copilot inside Word or Outlook (Microsoft 365 users)`,
-        content: `If you have a Microsoft 365 subscription, open Microsoft Word and look for the Copilot icon in the Home ribbon at the top. Click it and describe the document you want to create, or highlight existing text and ask Copilot to rewrite or improve it. In Outlook, open any long email thread and click the Copilot button to get a plain-English summary of the whole conversation, so you do not have to read every message.`,
+        content: `If you have a Microsoft 365 subscription, open Microsoft Word and look for the Copilot icon in the Home ribbon at the top. Click it and describe the document you want to create, or highlight existing text and ask Copilot to rewrite or improve it. In Outlook, open any long email thread and click the Copilot button to get a plain-English summary of the whole conversation. So you do not have to read every message.`,
         warning: `Copilot inside Word, Excel, and Outlook with full capabilities may require a Microsoft 365 Copilot add-on license, which costs extra beyond the standard Microsoft 365 subscription.`,
       },
     ],
@@ -262,7 +262,7 @@ You can read ebooks directly in the Libby app, or you can send them to a Kindle 
 
 Popular new releases often have waiting lists, just like physical books at the library. You can place a hold on a book and Libby will notify you when it is your turn. Most libraries let you have multiple books checked out at the same time. And you can borrow from more than one library system if you have cards for multiple libraries.
 
-Libby works on iPhone, Android, Kindle Fire tablets, and most web browsers. Your reading progress syncs across all your devices, so you can start reading on your phone and pick up where you left off on a tablet.`,
+Libby works on iPhone, Android, Kindle Fire tablets, and most web browsers. Your reading progress syncs across all your devices. So you can start reading on your phone and pick up where you left off on a tablet.`,
     steps: [
       {
         title: `Download Libby and add your library card`,
@@ -308,7 +308,7 @@ One feature that sets Hoopla apart is BingePass. Certain TV show publishers offe
 
 Most libraries set a monthly borrow limit for Hoopla — typically around 10 borrows per month. This resets on the first of each month. Each movie, album, or book you access counts as one borrow. Downloads for offline viewing also count as a borrow and expire after the loan period.
 
-The Hoopla app is available on iPhone, Android, Kindle Fire, Roku, Apple TV, Chromecast, and most smart TVs, so you can watch on your big screen at home.`,
+The Hoopla app is available on iPhone, Android, Kindle Fire, Roku, Apple TV, Chromecast, and most smart TVs. So you can watch on your big screen at home.`,
     steps: [
       {
         title: `Sign up with your library card`,
@@ -509,7 +509,7 @@ Trulia also shows a Noise Score for listings, indicating whether the area has el
       },
       {
         title: `Check school ratings`,
-        content: `Tap the "Schools" layer to see nearby public and private schools marked on the map. Each school shows a GreatSchools rating from 1 to 10. Tap any school icon to see a summary including the rating, enrollment size, and grade levels. Even if you do not have children, school district quality tends to affect home values, so it is relevant information for most buyers.`,
+        content: `Tap the "Schools" layer to see nearby public and private schools marked on the map. Each school shows a GreatSchools rating from 1 to 10. Tap any school icon to see a summary including the rating, enrollment size, and grade levels. Even if you do not have children, school district quality tends to affect home values. So it is relevant information for most buyers.`,
       },
       {
         title: `Calculate your commute time`,
@@ -674,7 +674,7 @@ Paprika syncs your recipe library across all your devices using Paprika's own sy
 
 The Tasty app is free to download and offers thousands of recipes across every type of food: breakfast, dinner, desserts, vegetarian, international cuisines, quick 30-minute meals, and much more. Most features are free, though some premium content may require an optional subscription.
 
-The standout feature is the guided cooking mode. When you start a recipe, the app walks you through each step one at a time on your screen, so you are never scrolling back and forth through a long ingredient list and trying to track where you are. Each step has its own built-in timer if one is needed — the timer starts right on screen without you having to open the clock app separately.
+The standout feature is the guided cooking mode. When you start a recipe, the app walks you through each step one at a time on your screen. So you are never scrolling back and forth through a long ingredient list and trying to track where you are. Each step has its own built-in timer if one is needed — the timer starts right on screen without you having to open the clock app separately.
 
 Tasty also has a recipe search by ingredient, which is useful when you have a few things in your refrigerator and want to find something to make with them. Enter what you have, and Tasty surfaces recipes that use those items.
 
@@ -724,7 +724,7 @@ The app also includes a massive library of on-demand cooking classes covering ev
 
 One distinctive feature is the Amazon Alexa integration. If you have an Alexa speaker at home, you can connect Food Network Kitchen to it. While cooking, you can ask Alexa to read the next step, repeat an instruction, or set a timer — all without touching your phone or tablet. This hands-free experience is especially helpful when your hands are covered in dough or raw chicken.
 
-Food Network Kitchen requires a subscription after the free trial period. The app is available on iPhone, Android, Fire TV, Apple TV, Roku, and most major streaming platforms, so you can follow along on a kitchen TV instead of a small phone screen.`,
+Food Network Kitchen requires a subscription after the free trial period. The app is available on iPhone, Android, Fire TV, Apple TV, Roku, and most major streaming platforms. So you can follow along on a kitchen TV instead of a small phone screen.`,
     steps: [
       {
         title: `Download the app and start your free trial`,
@@ -741,7 +741,7 @@ Food Network Kitchen requires a subscription after the free trial period. The ap
       },
       {
         title: `Choose on-demand classes by skill level`,
-        content: `Tap the "Classes" section to browse on-demand cooking lessons. Look for a skill level filter — beginner, intermediate, or advanced — to find lessons appropriate for where you are in your cooking journey. Classes are structured as multi-step lessons, not single videos, so you learn a concept from start to finish. Watching an on-demand class before attempting a new technique at home is a great way to build confidence.`,
+        content: `Tap the "Classes" section to browse on-demand cooking lessons. Look for a skill level filter — beginner, intermediate, or advanced — to find lessons appropriate for where you are in your cooking journey. Classes are structured as multi-step lessons, not single videos. So you learn a concept from start to finish. Watching an on-demand class before attempting a new technique at home is a great way to build confidence.`,
         tip: `Quick Tip: Start with a skills-based class rather than a specific recipe class. Learning a core technique — like how to properly sear meat or make a basic sauce — will improve every recipe you cook, not just one.`,
       },
       {
@@ -906,7 +906,7 @@ The Fabric will feature is free for anyone, even if you do not purchase life ins
     steps: [
       {
         title: `Download Fabric and create your account`,
-        content: `Search for "Fabric" in the App Store (iPhone) or Google Play (Android) and install the free app. You can also access Fabric at meetfabric.com in your web browser. Open the app and create a free account with your email address and a password. You can explore the app and create a free will without purchasing insurance, so there is no obligation when you sign up.`,
+        content: `Search for "Fabric" in the App Store (iPhone) or Google Play (Android) and install the free app. You can also access Fabric at meetfabric.com in your web browser. Open the app and create a free account with your email address and a password. You can explore the app and create a free will without purchasing insurance. So there is no obligation when you sign up.`,
         tip: `Quick Tip: Fabric is operated by Western & Southern Financial Group, a well-established insurance company with a long history. This backing means your policy is supported by a financially stable company.`,
       },
       {

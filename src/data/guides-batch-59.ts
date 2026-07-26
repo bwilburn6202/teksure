@@ -169,7 +169,7 @@ If you find that you are regularly coming close to your data limit, there are a 
     steps: [
       {
         title: `Check data usage on iPhone`,
-        content: `Go to Settings and tap Cellular (or Mobile Data on some versions). Scroll down and you will see a list of apps along with how much data each one has used during the current period. At the top you will see your total cellular data used. Scroll to the very bottom to find a Reset Statistics button — your carrier resets data on your billing cycle date, so you may want to reset this counter on the same day each month to keep the numbers aligned.`,
+        content: `Go to Settings and tap Cellular (or Mobile Data on some versions). Scroll down and you will see a list of apps along with how much data each one has used during the current period. At the top you will see your total cellular data used. Scroll to the very bottom to find a Reset Statistics button — your carrier resets data on your billing cycle date. So you may want to reset this counter on the same day each month to keep the numbers aligned.`,
         tip: `Look for apps using surprisingly large amounts of data. Streaming apps like Netflix, YouTube, and TikTok are often the biggest data consumers. If you see a big number next to an app you rarely use, check your settings for that app.`,
       },
       {
@@ -867,7 +867,7 @@ Password managers are not a new or experimental idea. They have been used by sec
       {
         title: `Start saving passwords as you log in`,
         content: `You do not need to add all your passwords at once. Instead, each time you log in to a website over the next few weeks, allow your password manager to save that login. Over time, your vault will fill up with your actual accounts. For accounts where you have been reusing a password, change the password to a new unique one (use the password manager's Generate feature to create a strong random one) and save the new password.`,
-        tip: `Start with your most important accounts first — email, bank accounts, and any account connected to a payment method. These are the highest-value targets for criminals, so they benefit most from unique strong passwords.`,
+        tip: `Start with your most important accounts first — email, bank accounts, and any account connected to a payment method. These are the highest-value targets for criminals. So they benefit most from unique strong passwords.`,
       },
       {
         title: `Install the app on your phone`,

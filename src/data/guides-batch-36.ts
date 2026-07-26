@@ -13,7 +13,7 @@ export const guidesBatch36: Guide[] = [
     difficulty: 'Beginner',
     body: `CapCut is a free video editing app made by the same company as TikTok. It works on both iPhone and Android and is one of the most popular tools for creating short videos that look professional without any prior experience.
 
-You can use CapCut to trim video clips, add music, text, captions, and special effects — all from your phone. It has templates that do most of the work for you, so you don't need to understand complicated editing software.
+You can use CapCut to trim video clips, add music, text, captions, and special effects — all from your phone. It has templates that do most of the work for you. So you don't need to understand complicated editing software.
 
 CapCut is popular for making birthday slideshows, family memory videos, travel recaps, and funny clips to share with friends or post on social media. Many people use it to create Instagram Reels, TikToks, and Facebook videos.
 
@@ -114,7 +114,7 @@ The app is free to download and use. Listing items is free — you only pay when
 
 Unlike eBay, Mercari doesn't require an auction. You set a fixed price, and when someone buys, you ship it. The app is available on iPhone, Android, and the web at mercari.com.
 
-Mercari charges sellers a 10% fee plus a small payment processing fee on each completed sale — there are no listing fees, so it costs nothing to post an item. You can list something in about 2 minutes using your phone's camera.
+Mercari charges sellers a 10% fee plus a small payment processing fee on each completed sale — there are no listing fees. So it costs nothing to post an item. You can list something in about 2 minutes using your phone's camera.
 
 The platform handles payment processing and provides prepaid shipping labels for most items. Once a sale is confirmed by the buyer, your earnings are deposited to your Mercari balance, which you can transfer to your bank account or use to purchase other items.
 
@@ -160,7 +160,7 @@ Mercari is particularly popular for selling electronics, gaming items, trading c
 
 Unlike Poshmark or Mercari, OfferUp is designed primarily for local meetups — the buyer picks up the item in person, so there's no shipping or packing required. This makes it ideal for larger items like furniture, appliances, bikes, tools, and televisions that would be expensive or difficult to ship.
 
-OfferUp also supports shipping for smaller items, so it works for nationwide sales too. The app is free to download and list items. You can bump your listings for better visibility for a small fee, but free listings work fine.
+OfferUp also supports shipping for smaller items. So it works for nationwide sales too. The app is free to download and list items. You can bump your listings for better visibility for a small fee, but free listings work fine.
 
 Safety is built into the platform — OfferUp has a list of "Community MeetUp Spots" at verified locations like police stations and coffee shops where you can meet buyers. All users have ratings and reviews. You can also request identity verification from buyers or sellers before meeting.
 
@@ -260,7 +260,7 @@ Hue bulbs come in several types: White (dim and brighten), White Ambiance (adjus
 
 To get started, you need a Hue Starter Kit, which includes a Bridge (the hub) and two or three bulbs. The Bridge plugs into your router with an included cable. After the initial setup, you can add more individual bulbs purchased separately.
 
-Hue works with Amazon Alexa, Google Home, and Apple HomeKit, so you can also control your lights with voice commands.`,
+Hue works with Amazon Alexa, Google Home, and Apple HomeKit. So you can also control your lights with voice commands.`,
     steps: [
       {
         title: 'Get a Hue Starter Kit',
@@ -715,7 +715,7 @@ Many people use Canva to create designs that they print at home or at a local pr
 
 Canva is free for most features. Canva Pro ($15/month or $120/year) unlocks a larger premium template library, background remover, and more advanced tools — but the free version has thousands of excellent templates and is more than enough for cards and invitations.
 
-Designs you create in Canva are saved to your account automatically, so you can edit them on your phone, tablet, or computer and pick up right where you left off.`,
+Designs you create in Canva are saved to your account automatically. So you can edit them on your phone, tablet, or computer and pick up right where you left off.`,
     steps: [
       {
         title: 'Open Canva and find a template',
@@ -882,7 +882,7 @@ The Quick Settings panel looks slightly different depending on your Android phon
   {
     slug: 'iphone-live-voicemail-guide',
     title: 'How to Use iPhone Live Voicemail',
-    excerpt: `Live Voicemail shows you a real-time text transcript of a voicemail as it's being left, so you can decide whether to pick up.`,
+    excerpt: `Live Voicemail shows you a real-time text transcript of a voicemail as it's being left. So you can decide whether to pick up.`,
     category: 'phone-guides',
     tags: ['live voicemail', 'iphone', 'voicemail', 'phone calls', 'iOS 17', 'call screening'],
     readTime: '4 min',

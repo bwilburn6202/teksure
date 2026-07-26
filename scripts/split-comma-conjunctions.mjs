@@ -31,7 +31,7 @@ const SUBJECTS = ['I', 'you', 'he', 'she', 'it', 'we', 'they', 'there'];
 // (the start of the predicate) — case-insensitive on the conjunction, subject list
 // itself is case-sensitive-ish (we lowercase-compare).
 const SPLIT_RE = new RegExp(
-  ',\\s+(but|and)\\s+(' + SUBJECTS.join('|') + ')\\s+(?=[a-z])',
+  ',\\s+(but|and|so)\\s+(' + SUBJECTS.join('|') + ')\\s+(?=[a-z])',
   'gi'
 );
 

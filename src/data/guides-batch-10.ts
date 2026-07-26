@@ -339,7 +339,7 @@ AirTags are not designed for pets — they do not have real-time GPS like a dedi
       { title: 'Pair the AirTag with your iPhone', content: `Pull the plastic tab on the AirTag to start it. Hold it near your iPhone. A pop-up asks you to name it — pick something like "Buddy's Collar" — and tap Continue.` },
       { title: 'Attach it securely to the collar', content: 'Slide the AirTag into the pet-safe holder and attach the holder to the collar. Give it a tug to make sure it will not fall off when your pet runs or scratches.' },
       { title: 'Find your pet in the Find My app', content: `Open the Find My app on your iPhone and tap the Items tab. You will see your pet's name with its last-known location on a map. Tap "Play Sound" to make the AirTag beep if you are nearby.` },
-      { title: 'Know the limits', content: 'AirTags need other iPhones nearby to update their location, so they are less helpful in rural areas. For outdoor cats or dogs that roam, a dedicated GPS collar like Fi or Tractive works better because it uses cell networks.' },
+      { title: 'Know the limits', content: 'AirTags need other iPhones nearby to update their location. So they are less helpful in rural areas. For outdoor cats or dogs that roam, a dedicated GPS collar like Fi or Tractive works better because it uses cell networks.' },
     ],
   },
   {

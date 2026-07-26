@@ -79,7 +79,7 @@ export const guidesBatch248: Guide[] = [
       },
       {
         title: "Cover the Basic Safety Setup First",
-        content: "Safety gear comes before saws, not after. Stock the shop with safety glasses with side shields, a pair of earmuffs rated for at least 25 decibels of reduction, an N95 dust mask or, better, a half-face respirator with replaceable filters, a sturdy first aid kit with bandages and burn cream, a fire extinguisher rated for wood and electrical fires, and a sharp pair of safety scissors. Mount the fire extinguisher near the door, not at the workbench, so you can reach it on your way out. Add a smoke detector with a battery if the garage does not already have one. Keep a phone charger and a corded landline backup nearby in case of emergencies. A shop without these items is a shop waiting for trouble.",
+        content: "Safety gear comes before saws, not after. Stock the shop with safety glasses with side shields, a pair of earmuffs rated for at least 25 decibels of reduction, an N95 dust mask or, better, a half-face respirator with replaceable filters, a sturdy first aid kit with bandages and burn cream, a fire extinguisher rated for wood and electrical fires, and a sharp pair of safety scissors. Mount the fire extinguisher near the door, not at the workbench. So you can reach it on your way out. Add a smoke detector with a battery if the garage does not already have one. Keep a phone charger and a corded landline backup nearby in case of emergencies. A shop without these items is a shop waiting for trouble.",
         warning: "Never wear loose sleeves, dangling jewelry, or long unsecured hair near spinning tools. Tie back hair, remove watches and rings, and roll up or button shirt cuffs every time."
       },
       {

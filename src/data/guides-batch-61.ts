@@ -163,7 +163,7 @@ Important disclaimer: This guide is for informational purposes only. A medicatio
 
 These apps vary slightly from company to company. But they all include the same core features. You can see your current coverage, find doctors and hospitals that are in your plan's network, view the status of recent claims, see your deductible and out-of-pocket spending, and often access your digital insurance card.
 
-Knowing which doctors are "in-network" is especially important because visiting an out-of-network provider can cost you a lot more money, sometimes thousands of dollars more for a procedure. The provider search in your insurance app is updated more often than the paper directory you may have received in the mail, so it is a more reliable source.
+Knowing which doctors are "in-network" is especially important because visiting an out-of-network provider can cost you a lot more money, sometimes thousands of dollars more for a procedure. The provider search in your insurance app is updated more often than the paper directory you may have received in the mail. So it is a more reliable source.
 
 Checking your claims through the app is also useful. After a doctor visit, the insurance company processes a claim — a bill from your provider. The app shows you what was billed, what the insurance paid, and what you owe the provider. Reviewing claims helps you catch billing errors, which happen more often than most people realize.
 
@@ -352,7 +352,7 @@ Important disclaimer: This guide is for informational purposes only. No fall det
     difficulty: `Beginner`,
     body: `You may not know it, but your smartphone has been quietly counting your steps all along. Both iPhones and Android phones have built-in motion sensors (called accelerometers) that detect the movement pattern of walking. The step data is stored automatically in your phone's health app — no setup required.
 
-On an iPhone, the Health app records your steps, distance walked, and flights of stairs climbed. On Android phones, Google Fit tracks the same data. Samsung phones have their own Health app as well. All of these apps store historical data going back months, so you can see how active you have been over time.
+On an iPhone, the Health app records your steps, distance walked, and flights of stairs climbed. On Android phones, Google Fit tracks the same data. Samsung phones have their own Health app as well. All of these apps store historical data going back months. So you can see how active you have been over time.
 
 The commonly cited goal of 10,000 steps per day is a reasonable benchmark for general health. But it is not a magic number. Research published in JAMA Internal Medicine found significant health benefits starting at 7,000 steps per day, and benefits continued to increase above that. If 10,000 steps feels overwhelming, starting with a goal of 5,000 and building from there is a perfectly reasonable approach.
 
@@ -403,7 +403,7 @@ Most hydration apps work the same way. You enter your weight and activity level,
 
 The reminder feature is the most important part for most users. You set a time range — say, 8 AM to 8 PM — and the app sends a notification every hour or 90 minutes. Tapping the notification takes you directly to the log screen.
 
-These apps pair well with a water bottle that has ounce markings on the side, so you know exactly how much to log when you take a drink.
+These apps pair well with a water bottle that has ounce markings on the side. So you know exactly how much to log when you take a drink.
 
 Quick Tip: Log your morning coffee or tea too — caffeinated drinks do contribute to your daily fluid intake, though they count for slightly less than plain water.
 

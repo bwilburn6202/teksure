@@ -61,9 +61,9 @@ iNaturalist is more than just an identification tool. It is a global community o
 
 The app covers plants, trees, fungi, birds, insects, spiders, reptiles, mammals, and more. It works best when you take clear, well-lit photos that show the subject up close. For birds, try to photograph them from the side so markings are visible. For plants, a photo of the leaves, flowers, and stem together gives the best results.
 
-iNaturalist is free to download and use. It is available on iPhone and Android. You can also visit the iNaturalist website on a computer at inaturalist.org. Your observations are tied to your account, so you can look back through your sightings over time — a wonderful nature journal that builds itself from your photos.
+iNaturalist is free to download and use. It is available on iPhone and Android. You can also visit the iNaturalist website on a computer at inaturalist.org. Your observations are tied to your account. So you can look back through your sightings over time — a wonderful nature journal that builds itself from your photos.
 
-The app is a project of the California Academy of Sciences and National Geographic Society, so you can trust that it is built on solid science.`,
+The app is a project of the California Academy of Sciences and National Geographic Society. So you can trust that it is built on solid science.`,
     steps: [
       {
         title: `Download iNaturalist`,
@@ -561,7 +561,7 @@ Services like RxSaver, GoodRx, and NeedyMeds work similarly and are all worth co
 
 You can use RxSaver at the website rxsaver.com or through the free mobile app available for iPhone and Android. The process is straightforward: you search for your medication by name, enter your zip code, and the service shows you prices at nearby pharmacies including Walgreens, CVS, Walmart, Costco, Rite Aid, and independent pharmacies. You select the best price, print or show the coupon on your phone, and hand it to the pharmacist.
 
-RxSaver coupons cannot be combined with insurance in most cases, so you will want to compare the coupon price against your insurance copay to decide which is lower.`,
+RxSaver coupons cannot be combined with insurance in most cases. So you will want to compare the coupon price against your insurance copay to decide which is lower.`,
     steps: [
       {
         title: `Visit RxSaver.com or Download the App`,
@@ -782,7 +782,7 @@ Tubi is owned by Fox Corporation and is one of the most popular free streaming s
     difficulty: `Beginner`,
     body: `Starz is a premium streaming service that offers a mix of original television series, movies from major Hollywood studios, and classic favorites. It is comparable to HBO Max or Showtime in that it carries a curated, high-quality library rather than trying to have something for everyone.
 
-Starz original programming includes popular series like Outlander, Power (and its many spinoffs), The Great (a historical comedy-drama), and Becoming Elizabeth, among others. The movie library rotates regularly and includes content from Sony Pictures and Lionsgate, so you often find major theatrical releases available to stream a few months after they leave theaters.
+Starz original programming includes popular series like Outlander, Power (and its many spinoffs), The Great (a historical comedy-drama), and Becoming Elizabeth, among others. The movie library rotates regularly and includes content from Sony Pictures and Lionsgate. So you often find major theatrical releases available to stream a few months after they leave theaters.
 
 As of 2026, Starz costs around $9 to $10 per month. There is typically a promotional rate available for new subscribers — sometimes as low as $3 per month for the first few months. The service offers unlimited streaming on your devices, with the ability to download episodes to watch offline without an internet connection.
 
@@ -810,7 +810,7 @@ Starz is available on smartphones, tablets, computers, Roku, Amazon Fire TV, App
       },
       {
         title: `Cancel or Manage Your Subscription`,
-        content: `To cancel or change your subscription, go to starz.com, sign in, and navigate to account settings. If you subscribed through Apple or Amazon, you must cancel through those services instead. Cancellations take effect at the end of your current billing period, so you retain access until then.`,
+        content: `To cancel or change your subscription, go to starz.com, sign in, and navigate to account settings. If you subscribed through Apple or Amazon, you must cancel through those services instead. Cancellations take effect at the end of your current billing period. So you retain access until then.`,
         warning: `If you signed up through a cable provider, cancellation must go through your cable company's customer service — not through the Starz website directly.`,
       },
     ],
@@ -830,7 +830,7 @@ Starz is available on smartphones, tablets, computers, Roku, Amazon Fire TV, App
 
 The service works through the free Kindle app, which runs on virtually every device: smartphones, tablets, iPads, computers, Amazon Fire tablets, and dedicated Kindle e-reader devices. You do not need a physical Kindle device to use Kindle Unlimited — the app is all you need.
 
-The Kindle Unlimited library covers a very wide range of genres: romance, mystery, thriller, science fiction, self-help, biography, history, cooking, children's books, and more. Many self-published authors and independent publishers participate, so you will find some titles that are not available elsewhere. Some major bestsellers and traditionally published works from large publishers are not included in Kindle Unlimited — those still need to be purchased individually — but the variety is genuinely impressive.
+The Kindle Unlimited library covers a very wide range of genres: romance, mystery, thriller, science fiction, self-help, biography, history, cooking, children's books, and more. Many self-published authors and independent publishers participate. So you will find some titles that are not available elsewhere. Some major bestsellers and traditionally published works from large publishers are not included in Kindle Unlimited — those still need to be purchased individually — but the variety is genuinely impressive.
 
 You can have up to 20 Kindle Unlimited titles downloaded to your account at one time. To get a new title, you return one of your current books (it disappears from your device but can be re-borrowed at any time), and download the new one. You are never truly "done" with a book — returning and re-borrowing is free and unlimited.
 

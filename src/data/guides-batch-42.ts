@@ -100,7 +100,7 @@ The Files app is the blue folder icon on your home screen. If you do not see it,
       },
       {
         title: `Connect Google Drive or Dropbox`,
-        content: `Install the Google Drive or Dropbox app on your iPhone. Once installed, open the Files app → tap "Browse" → scroll to "Locations" → tap "Edit" → toggle on Google Drive or Dropbox. These services appear as locations in Files, so you can access all your files in one place.`,
+        content: `Install the Google Drive or Dropbox app on your iPhone. Once installed, open the Files app → tap "Browse" → scroll to "Locations" → tap "Edit" → toggle on Google Drive or Dropbox. These services appear as locations in Files. So you can access all your files in one place.`,
       },
     ],
   },

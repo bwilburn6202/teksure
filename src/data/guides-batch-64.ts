@@ -59,7 +59,7 @@ When you arrive at your destination, the fare is charged automatically to your s
 
 To get started, download the Lyft app for free from the App Store on iPhone or the Google Play Store on Android. You will create an account with your phone number or email, then verify your identity with a code sent by text. Once inside the app, go to the Payment section and add a credit card, debit card, or PayPal. If you prefer not to use a card, you can purchase Lyft Gift Cards at many retail stores and add that balance to your account as Lyft Cash.
 
-Requesting a ride works the same way every time. The app detects your location automatically, so you confirm your pickup spot on the map, then enter your destination. You will see two main options: Lyft is the standard ride at the most affordable price, while Lyft XL fits up to six passengers and is great for groups or when you have a lot of luggage. The app shows the estimated fare and how many minutes away your driver is before you confirm anything.
+Requesting a ride works the same way every time. The app detects your location automatically. So you confirm your pickup spot on the map, then enter your destination. You will see two main options: Lyft is the standard ride at the most affordable price, while Lyft XL fits up to six passengers and is great for groups or when you have a lot of luggage. The app shows the estimated fare and how many minutes away your driver is before you confirm anything.
 
 One of Lyft's most reassuring features is driver verification. Every driver's profile shows their name, photo, and the exact car they are driving — including the color and license plate. Before you get in, match those details to what the app shows. You can also tap a button to call or text your driver directly through the app if you need to give them special directions.
 
@@ -108,7 +108,7 @@ When the trip ends, payment happens automatically. You can leave a tip inside th
 
 Waze is available on both iPhone and Android. Download it for free from the App Store or Google Play Store. No account is required to use basic navigation, but creating a free account lets you save your home and work addresses so you can reach them in one tap.
 
-To get directions, tap the search bar at the bottom of the screen and type your destination — a business name, address, or even a contact from your phone. Waze calculates the fastest route based on current traffic conditions and starts turn-by-turn voice directions automatically. The voice prompts are clear and timely, so you can keep your eyes on the road.
+To get directions, tap the search bar at the bottom of the screen and type your destination — a business name, address, or even a contact from your phone. Waze calculates the fastest route based on current traffic conditions and starts turn-by-turn voice directions automatically. The voice prompts are clear and timely. So you can keep your eyes on the road.
 
 While you are driving, Waze shows icons on the map for things drivers ahead have reported: a car icon means there is a crash, a cone means road work, a red car icon means heavy traffic, and a police badge icon means other drivers spotted law enforcement nearby. You do not have to interact with these alerts — they appear automatically as you approach.
 
@@ -163,11 +163,11 @@ The process starts after you check in for your flight. You can check in online t
 
 When you reach the TSA checkpoint, open your Wallet app (it is the app with a small wallet icon on iPhone, or find "Google Wallet" on Android). Your boarding pass should appear right at the top. Tap it to display the barcode and hold it up to the scanner. The same process applies at the boarding gate.
 
-A few things to keep in mind: your phone screen needs to be bright enough for the scanner to read the barcode, so turn your brightness up before you get in line. If you have an iPhone, the boarding pass also works with Face ID or Touch ID, so it unlocks quickly even with your phone locked.
+A few things to keep in mind: your phone screen needs to be bright enough for the scanner to read the barcode, so turn your brightness up before you get in line. If you have an iPhone, the boarding pass also works with Face ID or Touch ID. So it unlocks quickly even with your phone locked.
 
 One practical backup strategy: take a screenshot of your boarding pass and save it to your Photos app. If your phone battery dies or you lose cellular service at the airport, you can ask someone to charge your phone briefly or use an airport charging station — but having the screenshot means you are never completely stuck.
 
-Digital boarding passes are accepted at all major US airports. They are scanned the same way as paper tickets, so there is no need to worry about whether the technology will work. If you run into any issues, airline staff at the gate can always pull up your reservation with your name and ID.`,
+Digital boarding passes are accepted at all major US airports. They are scanned the same way as paper tickets. So there is no need to worry about whether the technology will work. If you run into any issues, airline staff at the gate can always pull up your reservation with your name and ID.`,
     category: `how-to`,
     tags: [`boarding pass`, `travel`, `airline`, `airport`],
     thumbnailEmoji: ``,

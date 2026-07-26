@@ -319,7 +319,7 @@ Multiple profiles let each family member have their own watchlist and viewing hi
     thumbnailEmoji: ``,
     publishedAt: `2026-04-19`,
     difficulty: `Beginner`,
-    body: `YouTube playlists are collections of videos grouped together under a name you choose. You can make a playlist of your favorite music videos, a series of exercise routines, cooking tutorials from different channels, or anything else. Playlists play back to back automatically, so you can set one going and come back to it.
+    body: `YouTube playlists are collections of videos grouped together under a name you choose. You can make a playlist of your favorite music videos, a series of exercise routines, cooking tutorials from different channels, or anything else. Playlists play back to back automatically. So you can set one going and come back to it.
 
 You need a free Google account to create playlists. Once created, they sync across all your devices — a playlist you make on your phone appears on your computer and vice versa.
 
@@ -535,7 +535,7 @@ After running the checkup, Chrome gives you direct links to the affected website
     difficulty: `Beginner`,
     body: `Voicemail lets people leave you a recorded message when you miss a phone call. Setting it up on Android is a quick process, but the exact steps vary slightly depending on your carrier (Verizon, AT&T, T-Mobile, etc.).
 
-Most Android phones support Visual Voicemail — a feature that shows your voicemail messages as a list on screen, like an email inbox, so you can tap any message to listen to it without calling in. Visual Voicemail is more convenient than the traditional method of dialing a number and using a dial pad.
+Most Android phones support Visual Voicemail — a feature that shows your voicemail messages as a list on screen, like an email inbox. So you can tap any message to listen to it without calling in. Visual Voicemail is more convenient than the traditional method of dialing a number and using a dial pad.
 
 To set up voicemail for the first time, you typically call your voicemail system (by pressing and holding the 1 key on your dial pad) and follow the recorded instructions to create a PIN and record a personal greeting.
 
@@ -562,7 +562,7 @@ Some carriers charge a small monthly fee for Visual Voicemail. Others include it
       },
       {
         title: `Turn on Voicemail Notifications`,
-        content: `Go to Settings → Apps → Phone → Notifications. Make sure notifications are turned on. This sends you a notification on your home screen when a new voicemail arrives, so you never miss a message. Most carriers also send a brief text message when someone leaves a voicemail.`,
+        content: `Go to Settings → Apps → Phone → Notifications. Make sure notifications are turned on. This sends you a notification on your home screen when a new voicemail arrives. So you never miss a message. Most carriers also send a brief text message when someone leaves a voicemail.`,
         warning: `If you are not receiving voicemail notifications, check with your carrier — some carriers require a separate activation step or charge for visual voicemail. Customer service can usually activate it in a few minutes.`,
       },
     ],
@@ -579,13 +579,13 @@ Some carriers charge a small monthly fee for Visual Voicemail. Others include it
     difficulty: `Beginner`,
     body: `Apple Maps has a feature that lets you download a portion of a map to your iPhone so you can use it for navigation even when you have no cell service or Wi-Fi. This is essential for road trips through rural areas, camping, hiking, international travel (where roaming data is expensive), or anywhere you expect to lose signal.
 
-Offline maps for Apple Maps were added in iOS 17 (released fall 2023), so you need an iPhone running iOS 17 or later. Go to Settings → General → About to check your iOS version.
+Offline maps for Apple Maps were added in iOS 17 (released fall 2023). So you need an iPhone running iOS 17 or later. Go to Settings → General → About to check your iOS version.
 
 Downloaded maps include roads, place names, points of interest, and turn-by-turn navigation — everything you need for directions even without a connection. The map does not include live traffic updates (that requires internet) but static routing works fine offline.
 
 You choose the area to download — a city, a region, a national park, or wherever you are heading. Larger areas use more storage space. A downloaded map of a city might use 150–400 MB. A larger region could be 1–2 GB.
 
-Offline maps expire after 30 days if you have not updated them. Apple Maps automatically updates them when you have Wi-Fi, so they stay fresh without effort.`,
+Offline maps expire after 30 days if you have not updated them. Apple Maps automatically updates them when you have Wi-Fi. So they stay fresh without effort.`,
     steps: [
       {
         title: `Make Sure You Have iOS 17 or Later`,

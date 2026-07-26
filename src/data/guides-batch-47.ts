@@ -557,7 +557,7 @@ This is especially handy when:
       },
       {
         title: `Tips for better searches`,
-        content: `Search for a partial word if you're not sure of the exact spelling — for example, searching "insur" will find "insurance," "insured," and "insurers." The search is not case-sensitive by default, so you don't need to worry about capital letters.`,
+        content: `Search for a partial word if you're not sure of the exact spelling — for example, searching "insur" will find "insurance," "insured," and "insurers." The search is not case-sensitive by default. So you don't need to worry about capital letters.`,
       },
     ],
   },

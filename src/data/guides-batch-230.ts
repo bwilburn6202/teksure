@@ -31,7 +31,7 @@ export const guidesBatch230: Guide[] = [
       },
       {
         title: "Pick the Right Delivery Frequency",
-        content: "The frequency is the question most new subscribers get wrong. Pick too often, and bags pile up in the garage. Pick too rarely, and you run out and have to make an emergency store trip. For dry food, start with the bag size divided by the daily feeding amount. A 30-pound bag fed at one pound per day lasts about 30 days, so a monthly delivery makes sense. For canned food, count the cans per case and the cans per day. For litter, weigh how often you replace it. Most services let you change the frequency from a calendar view in your account. You can also push the next delivery out by a week or two if you are going out of town. Set a phone reminder to check the upcoming order three days before it ships, so you have time to adjust if needed.",
+        content: "The frequency is the question most new subscribers get wrong. Pick too often, and bags pile up in the garage. Pick too rarely, and you run out and have to make an emergency store trip. For dry food, start with the bag size divided by the daily feeding amount. A 30-pound bag fed at one pound per day lasts about 30 days, so a monthly delivery makes sense. For canned food, count the cans per case and the cans per day. For litter, weigh how often you replace it. Most services let you change the frequency from a calendar view in your account. You can also push the next delivery out by a week or two if you are going out of town. Set a phone reminder to check the upcoming order three days before it ships. So you have time to adjust if needed.",
         warning: "If your pet's appetite changes due to age, illness, or a new medicine, the old frequency will not match. Adjust within a month to avoid waste."
       },
       {
@@ -94,7 +94,7 @@ export const guidesBatch230: Guide[] = [
   {
     slug: "how-to-use-pet-gps-tracker",
     title: "How to Use a Pet GPS Tracker",
-    excerpt: "Plain-English guide to choosing, setting up, and using a GPS tracker that attaches to your dog or cat's collar, so you always know where they are.",
+    excerpt: "Plain-English guide to choosing, setting up, and using a GPS tracker that attaches to your dog or cat's collar. So you always know where they are.",
     category: "smart-home",
     tags: ["pets", "gps", "tracker", "smart home", "safety", "apple airtag", "fi", "tractive"],
     readTime: "9 min",
@@ -121,7 +121,7 @@ export const guidesBatch230: Guide[] = [
       },
       {
         title: "Attach the Tracker to the Collar Correctly",
-        content: "Slide the tracker onto your pet's existing collar through the strap holders on the back of the unit. Make sure the unit sits snug against the collar with no rocking back and forth. The tracker should be in the middle of the back of the neck so it does not flop into a water bowl. Check the collar tightness: you should be able to slip two fingers between the collar and your pet's neck. A collar that is too loose can let the tracker slide off when your pet shakes. Too tight can cause skin irritation. Some trackers, like Fi, come with their own collar, so you do not need a separate one. Indoor cats need a breakaway collar that pops open if it gets caught, which means a heavier tracker may not stay on. Choose a lightweight model.",
+        content: "Slide the tracker onto your pet's existing collar through the strap holders on the back of the unit. Make sure the unit sits snug against the collar with no rocking back and forth. The tracker should be in the middle of the back of the neck so it does not flop into a water bowl. Check the collar tightness: you should be able to slip two fingers between the collar and your pet's neck. A collar that is too loose can let the tracker slide off when your pet shakes. Too tight can cause skin irritation. Some trackers, like Fi, come with their own collar. So you do not need a separate one. Indoor cats need a breakaway collar that pops open if it gets caught, which means a heavier tracker may not stay on. Choose a lightweight model.",
         warning: "Do not attach two trackers to one collar. The extra weight can stress an older pet's neck."
       },
       {

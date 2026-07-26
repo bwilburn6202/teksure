@@ -37,7 +37,7 @@ Gemini sometimes gets things wrong, so always double-check important information
       },
       {
         title: `Read the response and ask follow-up questions`,
-        content: `Gemini will type out a response in a few seconds. Read through it. If something is unclear, type a follow-up question like "Can you explain that in simpler terms?" or "Can you give me an example?" Gemini remembers the whole conversation, so you do not need to repeat yourself.`,
+        content: `Gemini will type out a response in a few seconds. Read through it. If something is unclear, type a follow-up question like "Can you explain that in simpler terms?" or "Can you give me an example?" Gemini remembers the whole conversation. So you do not need to repeat yourself.`,
       },
       {
         title: `Start a new conversation when switching topics`,
@@ -148,7 +148,7 @@ Siri works best when you speak naturally in full sentences. You do not need to u
     difficulty: `Beginner`,
     body: `Google Assistant is a voice-activated helper built into Android phones and many other Google devices. If you have an Android phone, it is already on your device and free to use. You can speak to it naturally. And it responds to your voice with answers, actions, and reminders.
 
-Google Assistant is designed to understand everyday speech — you do not need to memorize specific commands. You can say things the way you would naturally say them, and the assistant figures out what you mean. It is connected to your Google account, so it can access your Google Calendar, Gmail, and Google Maps to give you personalized responses.
+Google Assistant is designed to understand everyday speech — you do not need to memorize specific commands. You can say things the way you would naturally say them, and the assistant figures out what you mean. It is connected to your Google account. So it can access your Google Calendar, Gmail, and Google Maps to give you personalized responses.
 
 Some of the most useful things Google Assistant can do: set alarms and timers, add items to a shopping list, navigate you to an address using Google Maps, answer general knowledge questions, play music or podcasts, make phone calls or send texts, and control smart home devices like lights or thermostats.
 
@@ -618,7 +618,7 @@ It is worth being clear about what these apps are: they are software programs, n
       },
       {
         title: `Name your AI companion and choose a personality`,
-        content: `Replika will ask you to give your AI companion a name and choose an avatar appearance. You can pick anything you like — a name you enjoy, any gender presentation, and a personality style. This is your personal companion, so there are no wrong choices.`,
+        content: `Replika will ask you to give your AI companion a name and choose an avatar appearance. You can pick anything you like — a name you enjoy, any gender presentation, and a personality style. This is your personal companion. So there are no wrong choices.`,
       },
       {
         title: `Start a conversation`,

@@ -219,7 +219,7 @@ export const guidesBatch220: Guide[] = [
       {
         title: "Test the UPS Twice a Year",
         content: "Twice a year, on April 15 and October 15 (the same days as your emergency kit check), test the UPS. With everything plugged in as normal, walk to the wall outlet that powers the UPS and unplug only the UPS cord from the wall (not the devices). Watch and listen. The UPS will start beeping; that is normal. The devices plugged into the battery row should stay on. Let the test run for 5 minutes, then plug the UPS back into the wall. The beeping should stop. If the runtime number on the screen is more than 25 percent lower than the first time you wrote it down, the battery is starting to wear out. Most UPS batteries last 3 to 5 years before needing a $40 to $80 replacement battery.",
-        warning: "Do not let the UPS battery drain all the way to zero during a test. Plug it back in once you confirm the runtime number, so you do not shorten the battery's life."
+        warning: "Do not let the UPS battery drain all the way to zero during a test. Plug it back in once you confirm the runtime number. So you do not shorten the battery's life."
       },
       {
         title: "Replace the Battery When the Runtime Drops",

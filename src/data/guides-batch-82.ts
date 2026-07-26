@@ -57,7 +57,7 @@ If you need advice, the app connects you to project guides and how-to videos cre
     thumbnailEmoji: ``,
     publishedAt: `2026-04-20`,
     difficulty: `Beginner`,
-    body: `The Lowe's app is built for homeowners, renters, and anyone who likes to work on their living space. It gives you access to the full Lowe's product catalog right from your phone, with features that make shopping smarter and faster. One of the most useful features is in-store navigation — the app can show you the exact aisle where a product is stocked in your local Lowe's, so you spend less time searching and more time getting things done.
+    body: `The Lowe's app is built for homeowners, renters, and anyone who likes to work on their living space. It gives you access to the full Lowe's product catalog right from your phone, with features that make shopping smarter and faster. One of the most useful features is in-store navigation — the app can show you the exact aisle where a product is stocked in your local Lowe's. So you spend less time searching and more time getting things done.
 
 You can also check real-time inventory before visiting the store, which is especially helpful if you have a specific item in mind. Searching by product name, brand, or model number works well. And you can filter results by what is available locally versus what must be shipped. The app also allows you to scan barcodes or search with your phone camera if you already have the product and need a replacement or matching item.
 
@@ -127,7 +127,7 @@ Zillow also lets you save homes to a favorites list, set up alerts when new home
       },
       {
         title: `Save Homes and Set Up Alerts`,
-        content: `Tap the heart icon on any listing to save it to your favorites list, accessible from your account profile. To get notified when new homes matching your search criteria come on the market, tap "Save Search" after running a search. Zillow will email or push-notify you with new matches as they appear, so you do not have to check back manually every day.`,
+        content: `Tap the heart icon on any listing to save it to your favorites list, accessible from your account profile. To get notified when new homes matching your search criteria come on the market, tap "Save Search" after running a search. Zillow will email or push-notify you with new matches as they appear. So you do not have to check back manually every day.`,
         tip: `Quick Tip: The "Zestimate" for your own home updates regularly — you can claim your home on Zillow to correct any outdated facts about it, which can improve the estimate's accuracy.`,
       },
     ],
@@ -280,7 +280,7 @@ The most common type of reverse mortgage is the Home Equity Conversion Mortgage,
 
 The loan amount you can receive depends on three things: your age (older borrowers qualify for more), your home's current appraised value, and current interest rates. Your home must be your primary residence — vacation homes and investment properties do not qualify. You must also have significant equity in the home, meaning you either own it outright or have a small remaining mortgage balance.
 
-One important detail: you remain responsible for property taxes, homeowner's insurance, and home maintenance throughout the loan. If you fall behind on taxes or let the insurance lapse, the lender can call the loan due. This catches some borrowers off guard, so it is critical to make sure you can manage those ongoing costs.
+One important detail: you remain responsible for property taxes, homeowner's insurance, and home maintenance throughout the loan. If you fall behind on taxes or let the insurance lapse, the lender can call the loan due. This catches some borrowers off guard. So it is critical to make sure you can manage those ongoing costs.
 
 The loan becomes due when you permanently move out of the home, sell it, or pass away. At that point, you or your heirs repay the loan balance — typically by selling the home. If the home sells for more than the loan balance, your heirs keep the difference. If it sells for less, FHA insurance covers the shortfall and your heirs owe nothing beyond the home itself.
 
@@ -366,7 +366,7 @@ Houzz is free to browse and use as an idea-gathering tool. Professionals pay to 
     thumbnailEmoji: ``,
     publishedAt: `2026-04-20`,
     difficulty: `Beginner`,
-    body: `Moving furniture is exhausting work, and discovering that the sofa you wrestled into position blocks the window or makes the room feel cramped is deeply frustrating. Room planning apps let you test out different layouts on your phone or computer first, so you only physically move furniture once — into the arrangement you already know will work.
+    body: `Moving furniture is exhausting work, and discovering that the sofa you wrestled into position blocks the window or makes the room feel cramped is deeply frustrating. Room planning apps let you test out different layouts on your phone or computer first. So you only physically move furniture once — into the arrangement you already know will work.
 
 These apps all work on the same basic idea: you enter the dimensions of your room (length and width in feet or inches), place a digital floor plan on the screen, and then drag and drop scaled furniture pieces into position. Because every item is drawn to scale, you can tell at a glance whether that sectional sofa will actually fit along the wall or whether the dresser will block the closet door.
 
@@ -530,7 +530,7 @@ Depop charges sellers a fee on each sale, plus payment processing fees. Buyers p
       },
       {
         title: `Ship Promptly and Communicate With Buyers`,
-        content: `When an item sells, you will receive a notification and payment. Ship within the time frame you listed — most sellers aim for two to three business days. Depop does not generate shipping labels like Poshmark does, so you will need to purchase postage yourself through USPS, UPS, or another carrier. Lightweight clothing ships inexpensively with USPS First Class. Message the buyer once you have shipped and include the tracking number.`,
+        content: `When an item sells, you will receive a notification and payment. Ship within the time frame you listed — most sellers aim for two to three business days. Depop does not generate shipping labels like Poshmark does. So you will need to purchase postage yourself through USPS, UPS, or another carrier. Lightweight clothing ships inexpensively with USPS First Class. Message the buyer once you have shipped and include the tracking number.`,
         tip: `Quick Tip: Package items with care — wrapping in tissue paper or placing in a neat bag before the shipping envelope creates a positive impression and often results in a five-star review.`,
       },
     ],

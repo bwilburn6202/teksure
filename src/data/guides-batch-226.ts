@@ -98,7 +98,7 @@ export const guidesBatch226: Guide[] = [
       {
         title: "Plan Carefully for a Return to the United States",
         content: "If you move back to the United States someday, you will want Medicare to be ready. If you kept Part B, you walk back into your old coverage with no gap. If you dropped Part B, you can re-enroll during the General Enrollment Period, which runs from January 1 through March 31 each year, with coverage starting the first of the following month. The late enrollment penalty applies and is permanent. There is one important exception: if you had qualifying health coverage abroad through an employer or a foreign national health system, you may be able to enroll during a Special Enrollment Period without the penalty, but the rules are narrow and not every country qualifies. Call the SSA international line at 1-410-965-0160 or visit a Federal Benefits Unit at a United States embassy to discuss your specific situation before you move back.",
-        tip: "Plan a return move at least six months in advance, so you can hit the enrollment windows and avoid a gap in coverage."
+        tip: "Plan a return move at least six months in advance. So you can hit the enrollment windows and avoid a gap in coverage."
       }
     ]
   },
@@ -173,7 +173,7 @@ export const guidesBatch226: Guide[] = [
       {
         title: "Set Up Login That Works From Outside the United States",
         content: "Two-factor login is now required by almost every United States bank, which is a problem for expats whose phone numbers no longer work in the United States. There are three solutions. First, get a Google Voice number or a Skype number that rings on your computer wherever you have internet. Set the bank to send security codes to that virtual number. Second, switch to an app-based two-factor code, like the bank's own app or Google Authenticator or Microsoft Authenticator, which work without a phone number. Third, keep a United States cell phone plan that supports international roaming for texts, like T-Mobile or Google Fi, used only for receiving security codes. The cheapest option is usually a Google Voice number tied to your existing Google account, which costs nothing. Test the setup before you leave the country, while you can still walk into a bank branch if something goes wrong.",
-        warning: "Some banks block logins from foreign IP addresses as a security measure. Use a Virtual Private Network set to a United States server if your bank locks you out of the website from abroad, but always notify the bank first that you plan to use a VPN, so they do not freeze the account."
+        warning: "Some banks block logins from foreign IP addresses as a security measure. Use a Virtual Private Network set to a United States server if your bank locks you out of the website from abroad, but always notify the bank first that you plan to use a VPN. So they do not freeze the account."
       },
       {
         title: "Tell the Bank You Are Traveling Before You Go",
@@ -263,7 +263,7 @@ export const guidesBatch226: Guide[] = [
       {
         title: "Confirm You Have to File and Find Your Forms",
         content: "Open the IRS website at irs.gov. Look for the section called United States Taxpayers Living Abroad. Filing thresholds depend on your age, filing status, and income type. In 2026, a single filer over age 65 generally must file if gross income exceeds $16,550, and a married couple filing jointly with both over 65 must file if gross income exceeds $32,300. Social Security income counts toward gross income for this purpose. The standard form is Form 1040, the same one used by residents. Expats often add Schedule B for interest and dividends, Form 1116 for the foreign tax credit, Form 2555 for the foreign earned income exclusion if applicable, and Form 8938 if foreign financial assets exceed the reporting threshold. Download the instruction booklet for Form 1040 from irs.gov and read the section on expats. The exact list of forms depends on your income sources, your foreign country of residence, and any tax treaty.",
-        tip: "Print a checklist of forms before you start, so you can gather the supporting documents in one pass instead of going back and forth."
+        tip: "Print a checklist of forms before you start. So you can gather the supporting documents in one pass instead of going back and forth."
       },
       {
         title: "Gather Foreign Income, Tax, and Banking Records",

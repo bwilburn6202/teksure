@@ -760,7 +760,7 @@ RoboKiller goes further — it not only blocks robocalls but can also "answer bo
 
 Nomorobo offers a free version for landline phones through your phone carrier's website. For cell phones, the Nomorobo app is available with a subscription. It is straightforward and widely used.
 
-All three services can block a call while still allowing it to be recorded in your call history, so you can still check if a legitimate call was blocked and return it.
+All three services can block a call while still allowing it to be recorded in your call history. So you can still check if a legitimate call was blocked and return it.
 
 None of these apps have access to your calls, voicemails, or messages — they only check the phone number against a database.`,
     steps: [

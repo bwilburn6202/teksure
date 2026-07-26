@@ -114,7 +114,7 @@ export const guidesBatch223: Guide[] = [
       {
         title: "Set Up a Family Code Word Today",
         content: "Pick a word, phrase, or short question that only your family members would know. Good examples include the name of the family's first pet, the street where grandma grew up, the nickname of a beloved family member, or a silly inside joke. Bad examples include anything posted on Facebook, your maiden name, or the year you were married. Call each of your children and grandchildren and tell them the code word in person or by phone. Make a family rule: if anyone ever calls claiming to be in trouble and asking for money, you will ask for the code word before doing anything else. Real family members will know it. Scammers, even with an AI-cloned voice, will not. Write the code word in pencil somewhere safe, like the back of a family photo on your dresser, where you can find it but a burglar would not look.",
-        tip: "Change the code word once a year, the same week each year, so it stays fresh in everyone's memory. Mark it on the calendar like a birthday."
+        tip: "Change the code word once a year, the same week each year. So it stays fresh in everyone's memory. Mark it on the calendar like a birthday."
       },
       {
         title: "Hang Up and Call Back on a Known Number",

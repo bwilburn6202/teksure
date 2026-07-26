@@ -27,7 +27,7 @@ One common hiccup: people click the link too early and land on a blank page, or 
     steps: [
       {
         title: 'Confirm the appointment and write down the details',
-        content: 'When your clinic calls or texts to confirm, write down the date, time, and which platform they use (for example, Doxy.me, MyChart, or Zoom). Ask them to send both an email and a text with the link, so you have two ways to find it.',
+        content: 'When your clinic calls or texts to confirm, write down the date, time, and which platform they use (for example, Doxy.me, MyChart, or Zoom). Ask them to send both an email and a text with the link. So you have two ways to find it.',
       },
       {
         title: 'Do a practice run the day before',
@@ -176,7 +176,7 @@ One tip that saves heartache: when the phone asks about Face ID, iCloud Backup, 
     difficulty: 'Beginner',
     body: `Setting up a new Android phone takes about 30 to 45 minutes the first time. "Android" is the software that runs on phones made by Samsung, Google, Motorola, and many others — so the exact look of the screens depends on who made your phone, but the questions are almost the same on every brand.
 
-Before you begin, have your home Wi-Fi password nearby and know your Google account email and password (the one you use for Gmail or the Play Store). If you do not have a Google account yet, the phone will offer to make you a free one during setup. Your Google account is what holds onto your contacts, photos, and apps, so it is important to pick a password you will remember.
+Before you begin, have your home Wi-Fi password nearby and know your Google account email and password (the one you use for Gmail or the Play Store). If you do not have a Google account yet, the phone will offer to make you a free one during setup. Your Google account is what holds onto your contacts, photos, and apps. So it is important to pick a password you will remember.
 
 If you are moving from another Android phone or an iPhone, the new phone can copy your stuff over using a feature Google calls "Copy your data." You can use a cable that comes in the box, or do it over Wi-Fi. Photos, contacts, text messages, and most apps transfer. Plan on 20 to 40 minutes for the transfer itself — keep both phones plugged in the whole time.
 
@@ -435,7 +435,7 @@ One everyday tip: you can pinch the screen with two fingers to zoom in and out. 
 
 Creating the account is free and takes about 15 minutes. But it does require some care. You will need your Social Security number, a US mailing address, a phone number, and an email address you check regularly. You will also be asked a series of identity-verification questions based on your credit history — things like "which of these addresses have you lived at?" — to make sure it is really you.
 
-In recent years, the Social Security Administration moved to a partner called Login.gov (or ID.me for some people) to handle the sign-in. If you already have a Login.gov account for other federal services, you can use that same account. If not, you will create one during setup. This is the same login system used by the IRS and the USPS, so it is worth setting up well.
+In recent years, the Social Security Administration moved to a partner called Login.gov (or ID.me for some people) to handle the sign-in. If you already have a Login.gov account for other federal services, you can use that same account. If not, you will create one during setup. This is the same login system used by the IRS and the USPS. So it is worth setting up well.
 
 Only go to ssa.gov directly. Type the address yourself — do not click a link from an email or text message, even one that looks official. The SSA will never call you and demand payment in gift cards, threaten arrest, or ask for your full Social Security number by phone. Those are scams.
 

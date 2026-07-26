@@ -57,7 +57,7 @@ Watch a walkthrough: search YouTube for "Medicare Plan Finder tutorial AARP" —
       },
       {
         title: 'Save your confirmation and write down the dates',
-        content: 'After you enroll, Medicare.gov gives you a confirmation number. Write it down or take a screenshot — keep it in a folder with your Medicare card. The confirmation number is your proof of enrollment in case anything goes wrong. Mark January 1 on your calendar — that is when the new plan starts. Cancel any auto-payments to your old plan if you switched. Throw away (or shred) old ID cards on January 1, so you do not accidentally hand them to a doctor.',
+        content: 'After you enroll, Medicare.gov gives you a confirmation number. Write it down or take a screenshot — keep it in a folder with your Medicare card. The confirmation number is your proof of enrollment in case anything goes wrong. Mark January 1 on your calendar — that is when the new plan starts. Cancel any auto-payments to your old plan if you switched. Throw away (or shred) old ID cards on January 1. So you do not accidentally hand them to a doctor.',
       },
       {
         title: 'Get free help if you get stuck',
@@ -89,7 +89,7 @@ Watch a demo: search YouTube for "Apple Stolen Device Protection setup" — Appl
     steps: [
       {
         title: 'Check your iPhone is running iOS 17.3 or later',
-        content: 'Open Settings, tap General, then tap About. Look at the "iOS Version" line. You need 17.3 or higher — by 2026 most iPhones are on iOS 18 or iOS 26, so you are almost certainly fine. If you see anything lower, go back to General → Software Update and install the update first. This setting does not exist on older versions.',
+        content: 'Open Settings, tap General, then tap About. Look at the "iOS Version" line. You need 17.3 or higher — by 2026 most iPhones are on iOS 18 or iOS 26. So you are almost certainly fine. If you see anything lower, go back to General → Software Update and install the update first. This setting does not exist on older versions.',
       },
       {
         title: 'Make sure Face ID or Touch ID and Find My are turned on',
@@ -255,7 +255,7 @@ Watch the setup: search YouTube for "iPhone silence unknown callers 2026" for a 
     steps: [
       {
         title: 'Turn on Silence Unknown Callers (the big one)',
-        content: 'Open Settings → scroll down to Phone (or "Apps" → Phone on iOS 18 and 26) → "Silence Unknown Callers" → turn it on. From now on, any caller who is not in your Contacts, not in your recent outgoing calls, and not in Siri Suggestions (people you have messaged or emailed) will not ring your phone. They go straight to voicemail. You still see a missed call notification, so you know they called — they just cannot interrupt you. Real callers leave voicemails. Spammers usually do not.',
+        content: 'Open Settings → scroll down to Phone (or "Apps" → Phone on iOS 18 and 26) → "Silence Unknown Callers" → turn it on. From now on, any caller who is not in your Contacts, not in your recent outgoing calls, and not in Siri Suggestions (people you have messaged or emailed) will not ring your phone. They go straight to voicemail. You still see a missed call notification. So you know they called — they just cannot interrupt you. Real callers leave voicemails. Spammers usually do not.',
         warning: 'If you are expecting a call from a number you do not know (a doctor, a delivery driver, a job interview), turn this OFF for the day. Then turn it back on. Important real calls do get silenced sometimes — the trade-off is fewer spam interruptions.',
       },
       {

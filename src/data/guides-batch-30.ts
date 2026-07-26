@@ -104,7 +104,7 @@ Honey is available for Chrome, Firefox, Safari, Edge, and Opera on desktop compu
     thumbnailEmoji: '',
     publishedAt: '2026-04-19',
     difficulty: 'Beginner',
-    body: `Amazon prices change constantly — sometimes several times per day. A product listed at $45 today might have been $28 last month or $62 last week. CamelCamelCamel is a free website that tracks and displays Amazon price history over time, so you can see if you're paying a fair price or if you should wait for the price to drop.
+    body: `Amazon prices change constantly — sometimes several times per day. A product listed at $45 today might have been $28 last month or $62 last week. CamelCamelCamel is a free website that tracks and displays Amazon price history over time. So you can see if you're paying a fair price or if you should wait for the price to drop.
 
 The name sounds unusual but it's a well-known, reputable tool used by millions of shoppers. It's been tracking Amazon prices since 2008 and is completely free.
 
@@ -150,7 +150,7 @@ CamelCamelCamel also offers price drop alerts: tell it the price you want to pay
     thumbnailEmoji: '',
     publishedAt: '2026-04-19',
     difficulty: 'Beginner',
-    body: `Gas prices vary a lot between stations in the same area — sometimes by $0.30-0.50 per gallon or more. GasBuddy is a free app that crowdsources gas prices from users and displays them on a map, so you can see which station has the cheapest fuel without driving around to check.
+    body: `Gas prices vary a lot between stations in the same area — sometimes by $0.30-0.50 per gallon or more. GasBuddy is a free app that crowdsources gas prices from users and displays them on a map. So you can see which station has the cheapest fuel without driving around to check.
 
 When you know gas prices before you go, you can plan your fill-up at the cheaper station. The app uses a combination of user-reported prices and data partnerships to keep prices current — many prices are updated within the past hour. Users who report prices earn small rewards (GasBuddy Points) which can be redeemed for fuel discounts.
 

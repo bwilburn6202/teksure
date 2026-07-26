@@ -117,7 +117,7 @@ Taking blood pressure correctly matters just as much as using a good monitor. Si
     steps: [
       {
         title: `Download the Omron Connect app and create an account`,
-        content: `Search for "Omron Connect" in the App Store or Google Play and install the free app. Open it and tap "Create Account." You will enter your name, email, date of birth, and a password. Your account stores all your readings securely in the cloud, so they are safe even if you get a new phone.`,
+        content: `Search for "Omron Connect" in the App Store or Google Play and install the free app. Open it and tap "Create Account." You will enter your name, email, date of birth, and a password. Your account stores all your readings securely in the cloud. So they are safe even if you get a new phone.`,
       },
       {
         title: `Pair your Omron monitor via Bluetooth`,
@@ -484,7 +484,7 @@ Prescriptions from Amazon Clinic can be filled at any pharmacy or through Amazon
       },
       {
         title: `Browse conditions and check the price`,
-        content: `On the Amazon Clinic page, browse the list of conditions that can be treated. Tap on the condition that matches your situation to see the flat fee before you commit to anything. Read the brief description of what the service includes — this will also tell you what Amazon Clinic cannot help with, so you know when you need to see a doctor in person instead.`,
+        content: `On the Amazon Clinic page, browse the list of conditions that can be treated. Tap on the condition that matches your situation to see the flat fee before you commit to anything. Read the brief description of what the service includes — this will also tell you what Amazon Clinic cannot help with. So you know when you need to see a doctor in person instead.`,
         warning: `Amazon Clinic is not covered by most health insurance plans and does not bill insurance. If managing costs is a priority and you have insurance, check whether a service like MDLive or Amwell that bills your insurance might result in a lower out-of-pocket cost.`,
       },
       {

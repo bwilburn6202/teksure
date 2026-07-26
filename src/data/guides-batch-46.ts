@@ -240,7 +240,7 @@ These are just a few of the features that make Pixel phones uniquely useful.`,
 
 The result is called "bokeh" (boh-keh), where the person or object you are photographing is crisp and sharp while the background becomes a soft blur. This makes subjects stand out dramatically and gives photos a polished, professional feel.
 
-Portrait Mode is available on iPhone 7 Plus and newer models. On iPhone X and newer, it works on both the rear camera and the selfie camera, so you can take Portrait Mode selfies too.
+Portrait Mode is available on iPhone 7 Plus and newer models. On iPhone X and newer, it works on both the rear camera and the selfie camera. So you can take Portrait Mode selfies too.
 
 After taking a Portrait Mode photo, you can adjust the blur strength — called "Depth Control" — right in the Photos app. You can make the background more or less blurry after the shot, or remove the blur entirely. The original depth information is saved with the photo.
 
@@ -678,7 +678,7 @@ Alarm volume is separate and set through the Clock app, not through the side but
       },
       {
         title: `Adjust Media Volume`,
-        content: `While music or a video is playing, press the Volume Up or Volume Down buttons — they now control Media Volume. You can also drag the volume slider in the music player or video player on screen. Media volume is separate from ringer volume, so you can have loud music but a quiet ringtone.`,
+        content: `While music or a video is playing, press the Volume Up or Volume Down buttons — they now control Media Volume. You can also drag the volume slider in the music player or video player on screen. Media volume is separate from ringer volume. So you can have loud music but a quiet ringtone.`,
       },
       {
         title: `Adjust Alarm Volume`,

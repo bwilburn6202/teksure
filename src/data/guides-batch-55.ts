@@ -549,7 +549,7 @@ Starting with a few small, simple-to-ship items — like books, DVDs, or small c
     difficulty: `Beginner`,
     body: `OfferUp is a free app that connects buyers and sellers in the same area. You can sell furniture, clothing, electronics, toys, tools, and almost anything else to someone who can come pick it up — no shipping required. You can also ship items nationwide if you prefer.
 
-OfferUp was designed with safety in mind. And it is generally considered safer than older platforms like Craigslist. Every buyer and seller has a public profile with ratings and reviews, so you can see what others have said about someone before agreeing to meet them. OfferUp also partners with police departments across the country to designate "Community MeetUp Spots" — safe, public locations (often police station parking lots or well-lit public areas) where you can complete your transaction.
+OfferUp was designed with safety in mind. And it is generally considered safer than older platforms like Craigslist. Every buyer and seller has a public profile with ratings and reviews. So you can see what others have said about someone before agreeing to meet them. OfferUp also partners with police departments across the country to designate "Community MeetUp Spots" — safe, public locations (often police station parking lots or well-lit public areas) where you can complete your transaction.
 
 The app is free to download on iPhone and Android. Listing an item takes less than five minutes. You can post up to 100 photos of your item and add a price, description, and category. Buyers can make offers (hence the name). And you can accept, decline, or counter-offer.
 
@@ -771,7 +771,7 @@ Reading mode is another useful feature that strips away all the ads, sidebars, a
 
 Most websites use invisible "trackers" — small pieces of code that follow you from site to site and build a profile of your interests to show you targeted ads. When you visit a news site, for example, there may be dozens of trackers running in the background that you never see. Brave blocks these by default.
 
-Brave is based on the same technology as Chrome (called Chromium), so it works with almost all websites and supports Chrome extensions. If you know how to use Chrome, Brave will feel very familiar.
+Brave is based on the same technology as Chrome (called Chromium). So it works with almost all websites and supports Chrome extensions. If you know how to use Chrome, Brave will feel very familiar.
 
 Brave is available for Windows, Mac, iPhone, and Android — and it is free. You do not need to pay anything to use the privacy features. Brave does offer an optional paid product called "Brave VPN," but the basic browser requires no payment.
 

@@ -5,7 +5,7 @@ export const guidesBatch70: Guide[] = [
     slug: `hulu-live-tv-guide`,
     title: `How to Watch Live TV with Hulu + Live TV`,
     excerpt: `Hulu + Live TV combines live local channels and sports with Hulu's on-demand library — all for one monthly subscription.`,
-    body: `Hulu + Live TV is a streaming service that gives you the best of two worlds: live television — including local news, sports, and network shows — plus access to Hulu's full on-demand catalog of movies and TV series. It works through an app, not a cable box, so there are no installation appointments and no long-term contracts.
+    body: `Hulu + Live TV is a streaming service that gives you the best of two worlds: live television — including local news, sports, and network shows — plus access to Hulu's full on-demand catalog of movies and TV series. It works through an app, not a cable box. So there are no installation appointments and no long-term contracts.
 
 The current price is around $83 per month for the ad-supported plan. That includes 90+ live channels: local ABC, CBS, NBC, and Fox affiliates (in most markets), plus cable staples like ESPN, CNN, HGTV, Bravo, Food Network, and Disney Channel. The subscription also bundles Disney+ and ESPN+ at no extra cost, giving your whole household access to Disney movies and live sports on ESPN+.
 

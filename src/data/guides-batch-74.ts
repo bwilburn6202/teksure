@@ -13,7 +13,7 @@ export const guidesBatch74: Guide[] = [
     difficulty: `Beginner`,
     body: `Chatbooks is an app that takes the work out of printing your photos. Instead of downloading photos, uploading them to a website, and designing pages yourself, Chatbooks watches your camera roll and puts photos together into a book for you. When you have enough photos — usually 60 — it creates a new book automatically and asks if you want to print it.
 
-Each book is a small, flat-lay softcover book that costs around $10 to $15 plus shipping. The photos are printed on real paper with real ink, so they hold up much better than photos printed at a drugstore kiosk. Many people use Chatbooks to preserve family memories, holiday moments, and everyday snapshots they would otherwise leave stuck on their phone forever.
+Each book is a small, flat-lay softcover book that costs around $10 to $15 plus shipping. The photos are printed on real paper with real ink. So they hold up much better than photos printed at a drugstore kiosk. Many people use Chatbooks to preserve family memories, holiday moments, and everyday snapshots they would otherwise leave stuck on their phone forever.
 
 You can connect Chatbooks to your iPhone camera roll, Android gallery, Instagram, or Facebook. Once it is connected, the app keeps running in the background and builds books without you having to do anything. You can also review each book before it prints, swap out photos you do not want, or change the order.
 
@@ -837,7 +837,7 @@ Voter registration is free. You should never have to pay to register to vote. If
     steps: [
       {
         title: `Go to Vote.gov to find your state's registration portal`,
-        content: `Open your browser and go to vote.gov — the official US government voter registration hub. Click on your state's name. Vote.gov will take you directly to your state's official election or secretary of state website. Every link on vote.gov points to a government .gov website, so you know you are in the right place.`,
+        content: `Open your browser and go to vote.gov — the official US government voter registration hub. Click on your state's name. Vote.gov will take you directly to your state's official election or secretary of state website. Every link on vote.gov points to a government .gov website. So you know you are in the right place.`,
         warning: `Use only official .gov websites to register to vote. Third-party websites that ask for your personal information and charge fees are not official voter registration services and may be scams.`,
       },
       {

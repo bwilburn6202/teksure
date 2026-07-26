@@ -1098,7 +1098,7 @@ Most home routers use the address 192.168.1.1 or 192.168.0.1. These are called I
 
 To log in, you'll need the router's admin username and password. This is different from your WiFi password. The admin login is used to access the router's configuration, while the WiFi password is what guests and devices use to connect. Many routers have a default admin username of "admin" and a default password of "admin" or "password" — these are printed on a sticker on the bottom or back of the router.
 
-If the defaults were changed and you don't know the admin password, you can usually reset the router to factory settings by holding the reset button (a small pinhole button on the back) for 10–15 seconds — but this also resets your WiFi name and password, so it should be a last resort.
+If the defaults were changed and you don't know the admin password, you can usually reset the router to factory settings by holding the reset button (a small pinhole button on the back) for 10–15 seconds — but this also resets your WiFi name and password. So it should be a last resort.
 
 Once logged in, the router's admin page has menus for WiFi settings, parental controls, connected devices, and more. The exact layout varies by brand — Netgear, Linksys, TP-Link, and Eero all look different, but the core options are similar.
 

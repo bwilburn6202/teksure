@@ -17,7 +17,7 @@ On Android phones, WhatsApp connects to your Google account and saves your chat 
 
 On iPhone, WhatsApp uses iCloud to store your backup. You need to have iCloud Drive turned on in your iPhone settings before WhatsApp can save anything there. Once it is enabled, WhatsApp will run its backup automatically on the schedule you choose.
 
-It is a good habit to check that your backup is actually working from time to time. WhatsApp shows you the date and time of the last successful backup inside the settings menu, so you can confirm everything is running correctly. Setting up an automatic daily backup means you never have to think about it again — your messages stay safe without any extra effort on your part.`,
+It is a good habit to check that your backup is actually working from time to time. WhatsApp shows you the date and time of the last successful backup inside the settings menu. So you can confirm everything is running correctly. Setting up an automatic daily backup means you never have to think about it again — your messages stay safe without any extra effort on your part.`,
     steps: [
       {
         title: `Open WhatsApp Settings`,
@@ -263,7 +263,7 @@ The whole process takes about two minutes once your signature is saved, and the 
       {
         title: `Create Your Signature`,
         content: `Choose one of three methods: Trackpad — tap "Click Here to Begin" and draw your signature with your finger on the trackpad, then press any key when done. Camera — sign your name on a white piece of paper, hold it up to your Mac camera, and Preview will trace it. Type — click the Type tab and type your name. Choose the handwriting font you prefer.`,
-        tip: `Quick Tip: The trackpad method works best if you use a slow, deliberate stroke. Preview saves your signature for future use, so you only need to do this once.`,
+        tip: `Quick Tip: The trackpad method works best if you use a slow, deliberate stroke. Preview saves your signature for future use. So you only need to do this once.`,
       },
       {
         title: `Place the Signature on the Document`,
@@ -893,7 +893,7 @@ The free version of Adobe Express includes access to thousands of templates, bas
 
 To get started, you create a free Adobe account using an email address. If you have used any other Adobe products before, like Acrobat Reader, you may already have an Adobe account.
 
-Adobe Express saves your projects automatically in the cloud, so you can come back and edit them later on any device. This makes it convenient to start a design on a computer and make small tweaks on your phone later.`,
+Adobe Express saves your projects automatically in the cloud. So you can come back and edit them later on any device. This makes it convenient to start a design on a computer and make small tweaks on your phone later.`,
     steps: [
       {
         title: `Go to Adobe Express`,

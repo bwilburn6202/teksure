@@ -359,7 +359,7 @@ Available for free on iPhone and Android, the NASA app is one of the best free s
 
 Several excellent free apps make it easy to see the current moon phase, the phase for any past or future date, and the exact time of moonrise and moonset in your location. The best options for most people are the following: Moon — Current Moon Phase (available on iPhone and Android), My Moon Phase (Android), and the built-in lunar calendar in Stellarium (covered separately). The USNO Moon Phase Calendar at aa.usno.navy.mil is a free government website that requires no app at all.
 
-Understanding the phases themselves is straightforward. A New Moon occurs when the moon is between the Earth and Sun — the side facing us is in shadow, so we see little or nothing. A Full Moon occurs when Earth is between the sun and moon — the side facing us is fully lit. The phases in between (crescent, quarter, gibbous) describe how much of the lit surface we can see from Earth.
+Understanding the phases themselves is straightforward. A New Moon occurs when the moon is between the Earth and Sun — the side facing us is in shadow. So we see little or nothing. A Full Moon occurs when Earth is between the sun and moon — the side facing us is fully lit. The phases in between (crescent, quarter, gibbous) describe how much of the lit surface we can see from Earth.
 
 Full Moons are often bright enough to cast shadows and are popular for outdoor nighttime activities. New Moon nights are the darkest and best for stargazing, since there is no competing moonlight. Tracking the moon helps you plan accordingly.`,
     steps: [
@@ -419,7 +419,7 @@ Unlike a general weather app that shows you a forecast, MyRadar shows you what i
       },
       {
         title: `Set up severe weather alerts`,
-        content: `Tap the menu icon (three horizontal lines) and go to Settings, then Notifications. Enable alerts for your location. You can choose which types of warnings you want to receive — tornado warnings, severe thunderstorm warnings, flood warnings, and others. For maximum safety, enable all of them. MyRadar pulls these alerts directly from the National Weather Service, so they are the same official warnings broadcast on TV and radio.`,
+        content: `Tap the menu icon (three horizontal lines) and go to Settings, then Notifications. Enable alerts for your location. You can choose which types of warnings you want to receive — tornado warnings, severe thunderstorm warnings, flood warnings, and others. For maximum safety, enable all of them. MyRadar pulls these alerts directly from the National Weather Service. So they are the same official warnings broadcast on TV and radio.`,
         warning: `Severe weather alerts are official warnings, not forecasts. If you receive a tornado warning, do not go outside to look at the sky. Move to the lowest floor of a sturdy building, away from windows, right away.`,
       },
     ],
@@ -464,7 +464,7 @@ For the app layer, the best free options are the Red Cross Tornado App, the FEMA
       },
       {
         title: `Know your shelter location before a storm threatens`,
-        content: `The safest place during a tornado is the lowest floor of a sturdy building, in an interior room away from windows — a bathroom, closet, or hallway. Identify that location in your home now, before storm season, so you are not trying to figure it out under pressure. If you receive a tornado warning, move there right away without stopping to watch out a window or take a video.`,
+        content: `The safest place during a tornado is the lowest floor of a sturdy building, in an interior room away from windows — a bathroom, closet, or hallway. Identify that location in your home now, before storm season. So you are not trying to figure it out under pressure. If you receive a tornado warning, move there right away without stopping to watch out a window or take a video.`,
         warning: `Do not wait for a tornado to be visible before seeking shelter. Many tornadoes are wrapped in rain and cannot be seen until they are very close. Rely on official warnings, not your eyes.`,
       },
     ],

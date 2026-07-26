@@ -83,7 +83,7 @@ One thing trips people up constantly: you need both the right adapter AND the ri
   {
     slug: `usb-c-ports-explained`,
     title: `USB-C, Thunderbolt, and USB 4 — What the Port Labels Actually Mean`,
-    excerpt: `USB-C is a shape, not a capability. Learn the difference between the connector and the speeds, so you know what your ports can really do.`,
+    excerpt: `USB-C is a shape, not a capability. Learn the difference between the connector and the speeds. So you know what your ports can really do.`,
     category: `tech-explained`,
     tags: [`USB-C`, `Thunderbolt`, `USB 4`, `ports`, `tech explained`],
     readTime: `6 min`,
@@ -122,7 +122,7 @@ Manufacturers often print tiny icons or text next to the port to tell you what y
   {
     slug: `hdmi-vs-displayport-guide`,
     title: `HDMI vs DisplayPort vs DVI — Which Cable to Use`,
-    excerpt: `A plain-language guide to monitor and TV cables, so you pick the right one the first time and get the picture quality you paid for.`,
+    excerpt: `A plain-language guide to monitor and TV cables. So you pick the right one the first time and get the picture quality you paid for.`,
     category: `tech-explained`,
     tags: [`HDMI`, `DisplayPort`, `DVI`, `monitor cable`, `tech explained`],
     readTime: `6 min`,

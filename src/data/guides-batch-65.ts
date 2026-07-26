@@ -96,7 +96,7 @@ New subscribers who do not have a vehicle subscription can sign up for a streami
       },
       {
         title: `Save your favorite channels`,
-        content: `When a channel is playing, tap the heart or star icon to add it to your Favorites. Your saved channels appear at the top of the channel list every time you open the app, so you can reach them quickly without scrolling.`,
+        content: `When a channel is playing, tap the heart or star icon to add it to your Favorites. Your saved channels appear at the top of the channel list every time you open the app. So you can reach them quickly without scrolling.`,
       },
       {
         title: `Listen on your computer`,
@@ -202,7 +202,7 @@ Parental controls are available under Account Settings. You can restrict content
       },
       {
         title: `Watch on your TV`,
-        content: `Open the Crunchyroll app on your Roku, Fire TV stick, Apple TV, or smart TV. Sign in with the same account. Your watchlist and watch history carry over automatically, so you can start a show on your phone and continue on the TV.`,
+        content: `Open the Crunchyroll app on your Roku, Fire TV stick, Apple TV, or smart TV. Sign in with the same account. Your watchlist and watch history carry over automatically. So you can start a show on your phone and continue on the TV.`,
       },
       {
         title: `Set up parental controls if needed`,

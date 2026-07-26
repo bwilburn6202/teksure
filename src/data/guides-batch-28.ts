@@ -298,7 +298,7 @@ Perplexity is free at perplexity.ai and works in any web browser on a computer, 
 
 Unlike some AI tools that only know information up to a certain date, Perplexity searches the live internet and can answer questions about current events, today's prices, recent news, and anything that changes often.
 
-Each answer includes numbered citations in brackets, like [1] or [2]. Clicking those numbers shows you exactly which website the information came from, so you can go read the original source if you want more detail. This is what separates Perplexity from other AI chatbots — transparency about where the answers come from.`,
+Each answer includes numbered citations in brackets, like [1] or [2]. Clicking those numbers shows you exactly which website the information came from. So you can go read the original source if you want more detail. This is what separates Perplexity from other AI chatbots — transparency about where the answers come from.`,
     steps: [
       {
         title: 'Open Perplexity',

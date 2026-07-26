@@ -153,7 +153,7 @@ Both services are free and do not require you to create an account.
 
 **Tips for Facebook Marketplace**
 
-Facebook Marketplace has fewer review tools, so you need to rely on signals like the seller's profile age, whether they have other active listings, and whether their profile looks like a real person's account. Ask the seller a specific question about the product before agreeing to buy — scam sellers often cannot answer detailed questions because they do not actually have the item. When possible, arrange to pick up the item in person rather than paying for shipping, and pay with cash or PayPal Goods and Services (which offers buyer protection) rather than Venmo or wire transfer.
+Facebook Marketplace has fewer review tools. So you need to rely on signals like the seller's profile age, whether they have other active listings, and whether their profile looks like a real person's account. Ask the seller a specific question about the product before agreeing to buy — scam sellers often cannot answer detailed questions because they do not actually have the item. When possible, arrange to pick up the item in person rather than paying for shipping, and pay with cash or PayPal Goods and Services (which offers buyer protection) rather than Venmo or wire transfer.
 
 **Tips for Google Reviews**
 

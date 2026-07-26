@@ -169,7 +169,7 @@ To set up:
 5. They choose "Your Entire Screen" (easier for them) or "A Tab" (more private).
 6. Their screen is now visible to you.
 
-Google Meet is usually more reliable than other tools — it's designed for professional meetings, so it handles old Wi-Fi and weak connections well.
+Google Meet is usually more reliable than other tools — it's designed for professional meetings. So it handles old Wi-Fi and weak connections well.
 
 Option C: WhatsApp Screen Share (very simple, free)
 

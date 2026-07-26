@@ -132,7 +132,7 @@ Setup requires nothing — the feature is on by default on compatible iPhones. Y
       },
       {
         title: 'Practice the Demo Mode',
-        content: 'You can experience the satellite interface without actually calling for help. Go to Settings → Emergency SOS → Try Demo. The demo walks you through the entire satellite connection process including the positioning screen, so you know exactly what to expect if you ever need it in a real emergency.',
+        content: 'You can experience the satellite interface without actually calling for help. Go to Settings → Emergency SOS → Try Demo. The demo walks you through the entire satellite connection process including the positioning screen. So you know exactly what to expect if you ever need it in a real emergency.',
         warning: `This feature requires an open view of the sky — it does not work inside buildings or in areas with dense overhead cover. If you're in an emergency inside a structure, try to reach a window or exit before attempting satellite SOS.`,
       },
     ],

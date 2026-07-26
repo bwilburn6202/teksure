@@ -802,7 +802,7 @@ Live view: Open the app any time and see a real-time video feed from each camera
 
 Motion alerts: When the camera detects movement, it sends a notification to your phone with a video clip of what triggered it. You can review clips of anyone who approached your door, a delivery, or unexpected activity.
 
-Two-way audio: Many Arlo cameras have a microphone and speaker, so you can hear what is happening and speak through the camera. Useful for telling a delivery driver where to leave a package.
+Two-way audio: Many Arlo cameras have a microphone and speaker. So you can hear what is happening and speak through the camera. Useful for telling a delivery driver where to leave a package.
 
 Night vision: All Arlo cameras see in the dark using infrared night vision. The video is black and white at night. But you can clearly see what is happening.
 

@@ -50,7 +50,7 @@ Quick Tip: If you cannot find a setting, use the search bar at the top of the Se
       },
       {
         title: `Change sound volume`,
-        content: `Click "System" then "Sound." At the top you will see a master volume slider — drag it to adjust the overall volume of your PC. Scroll down to "Volume mixer" to see and adjust individual apps, so you can make a video quieter while keeping other notifications at normal volume.`,
+        content: `Click "System" then "Sound." At the top you will see a master volume slider — drag it to adjust the overall volume of your PC. Scroll down to "Volume mixer" to see and adjust individual apps. So you can make a video quieter while keeping other notifications at normal volume.`,
       },
       {
         title: `Check for Windows Updates`,
@@ -590,7 +590,7 @@ Quick Tip: Before leaving home, write down your home computer's name (found in S
       },
       {
         title: `Disconnect when done`,
-        content: `When you are finished, click the X at the top of the Remote Desktop window or go to Start > Power > Disconnect on the remote session. This ends the session without shutting down your home PC, so it remains on and ready for future connections.`,
+        content: `When you are finished, click the X at the top of the Remote Desktop window or go to Start > Power > Disconnect on the remote session. This ends the session without shutting down your home PC. So it remains on and ready for future connections.`,
       },
     ],
   },
@@ -1042,7 +1042,7 @@ Quick Tip: TP-Link, Netgear, and Belkin all make reliable extenders in the $30�
 
 Signal strength: how strong the Wi-Fi signal is in different parts of your home. Walk around with your phone running the app and watch the signal level rise and fall. This tells you where to place your router or extender for the best coverage.
 
-Channel congestion: Wi-Fi routers broadcast on numbered channels, and if all your neighbors are on the same channel, your connection suffers. A Wi-Fi analyzer shows you all the networks nearby and which channels they use, so you can switch your router to a less-crowded channel.
+Channel congestion: Wi-Fi routers broadcast on numbered channels, and if all your neighbors are on the same channel, your connection suffers. A Wi-Fi analyzer shows you all the networks nearby and which channels they use. So you can switch your router to a less-crowded channel.
 
 **Channels explained**
 

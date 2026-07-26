@@ -28,7 +28,7 @@ Simply Piano is made by JoyTunes and is available on iPhone, iPad, and Android. 
       },
       {
         title: `Complete the placement assessment`,
-        content: `Simply Piano starts with a short quiz to figure out your current skill level. Answer honestly — there is no wrong answer. If you have never touched a piano before, say so. If you played years ago and remember a little, say that too. The app places you in the right starting course based on your answers, so you are not bored reviewing things you already know or confused by things that are too advanced.`,
+        content: `Simply Piano starts with a short quiz to figure out your current skill level. Answer honestly — there is no wrong answer. If you have never touched a piano before, say so. If you played years ago and remember a little, say that too. The app places you in the right starting course based on your answers. So you are not bored reviewing things you already know or confused by things that are too advanced.`,
       },
       {
         title: `Work through your first lessons`,
@@ -303,7 +303,7 @@ Your podcast gets its own RSS feed, which is a standard format that podcast apps
       },
       {
         title: `Edit and add music`,
-        content: `After recording, you can trim the start and end of your segment by dragging the handles at either side of the audio clip. To add background music, tap the music note icon and browse the licensed music library — all of these tracks are cleared for podcast use, so you will not have copyright issues. Keep any background music at a low volume so it does not compete with your voice. The platform shows a visual preview of how the music overlays with your voice track.`,
+        content: `After recording, you can trim the start and end of your segment by dragging the handles at either side of the audio clip. To add background music, tap the music note icon and browse the licensed music library — all of these tracks are cleared for podcast use. So you will not have copyright issues. Keep any background music at a low volume so it does not compete with your voice. The platform shows a visual preview of how the music overlays with your voice track.`,
       },
       {
         title: `Fill in your episode details and publish`,
@@ -625,7 +625,7 @@ Facetune's official support page and tutorial videos are available at lightricks
       },
       {
         title: `Save and share your edited portrait`,
-        content: `When your edits are complete, tap the Share or Save icon at the top of the screen. Save the edited version to your camera roll. Facetune gives you the option to save at full resolution — always choose this. Compressed saves reduce image quality visibly when photos are shared on social media or printed. Your original photo remains unchanged in your camera roll, so you always have the unedited version available.`,
+        content: `When your edits are complete, tap the Share or Save icon at the top of the screen. Save the edited version to your camera roll. Facetune gives you the option to save at full resolution — always choose this. Compressed saves reduce image quality visibly when photos are shared on social media or printed. Your original photo remains unchanged in your camera roll. So you always have the unedited version available.`,
       },
     ],
   },

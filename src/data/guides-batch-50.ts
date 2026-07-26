@@ -863,9 +863,9 @@ A key benefit is the ability to pause the work profile. Swiping down your notifi
     thumbnailEmoji: ``,
     publishedAt: `2026-04-19`,
     difficulty: `Beginner`,
-    body: `Most people know how to copy and paste — you copy something, then paste it once, and the copied item is gone the moment you copy something new. But Windows has a hidden feature called Clipboard History that saves everything you copy for later, so you can go back and paste any of the last 25 items you copied, in any order.
+    body: `Most people know how to copy and paste — you copy something, then paste it once, and the copied item is gone the moment you copy something new. But Windows has a hidden feature called Clipboard History that saves everything you copy for later. So you can go back and paste any of the last 25 items you copied, in any order.
 
-This feature is available in Windows 10 and Windows 11. It is turned off by default on some computers, so you may need to turn it on once before using it.
+This feature is available in Windows 10 and Windows 11. It is turned off by default on some computers. So you may need to turn it on once before using it.
 
 Once enabled, every time you copy text, an image, or a file path, Windows saves it to your clipboard history. You can then press the Windows key plus the V key (Win+V) to open a small panel showing your recent copies. Click on any item in the list to paste it into whatever you are working on.
 

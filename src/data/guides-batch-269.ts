@@ -32,7 +32,7 @@ export const guidesBatch269: Guide[] = [
       },
       {
         title: "List the four planning areas you will address over time",
-        content: "Write down the four areas of a complete permanency plan: legal (who makes decisions when you cannot), financial (how money will be held and spent without losing benefits), residential (where they will live), and personal (the letter of intent and the circle of support). You do not need to solve all four today. You only need to name them, so you know what you are working toward over the next 6 to 18 months.",
+        content: "Write down the four areas of a complete permanency plan: legal (who makes decisions when you cannot), financial (how money will be held and spent without losing benefits), residential (where they will live), and personal (the letter of intent and the circle of support). You do not need to solve all four today. You only need to name them. So you know what you are working toward over the next 6 to 18 months.",
       },
       {
         title: "Name one person you will tell about this plan",
@@ -113,7 +113,7 @@ export const guidesBatch269: Guide[] = [
       },
       {
         title: "Visit during a regular weekday afternoon, not a special tour time",
-        content: "Provider agencies will offer a tour, often on a weekday morning when the home is quiet. Ask instead to visit between 3 and 7 p.m. on a weekday, when residents are coming home from day programs and the real rhythm of the house is on display. Watch how staff greet residents at the door. Watch what the afternoon snack looks like. Watch the bathroom and the kitchen, not the living room. Bring your adult child with you for at least part of the visit, so they can experience the environment and meet potential housemates.",
+        content: "Provider agencies will offer a tour, often on a weekday morning when the home is quiet. Ask instead to visit between 3 and 7 p.m. on a weekday, when residents are coming home from day programs and the real rhythm of the house is on display. Watch how staff greet residents at the door. Watch what the afternoon snack looks like. Watch the bathroom and the kitchen, not the living room. Bring your adult child with you for at least part of the visit. So they can experience the environment and meet potential housemates.",
       },
       {
         title: "Talk to the direct support professionals, not only the manager",

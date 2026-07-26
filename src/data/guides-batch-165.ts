@@ -141,7 +141,7 @@ This is especially helpful if you find small touchscreen keyboards frustrating, 
 
 **What Google Assistant can do**
 
-Google Assistant can answer questions like "What is the weather today?" or "How many cups are in a gallon?" It can set alarms and reminders, so you never forget a doctor's appointment. It can call a contact from your phone's address book, send a text message by voice, or read incoming messages aloud. It can also open apps, play music, get driving directions, and tell you the news.
+Google Assistant can answer questions like "What is the weather today?" or "How many cups are in a gallon?" It can set alarms and reminders. So you never forget a doctor's appointment. It can call a contact from your phone's address book, send a text message by voice, or read incoming messages aloud. It can also open apps, play music, get driving directions, and tell you the news.
 
 Think of it as a helpful assistant who is always available and never gets impatient when you ask the same question twice.
 

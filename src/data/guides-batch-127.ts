@@ -19,7 +19,7 @@ export const guidesBatch127: Guide[] = [
 
 This is a lot safer than writing and mailing checks yourself. Your bank account number does not appear on the check the bank mails — only an internal account reference. And if a Bill Pay check is lost, the bank tracks it and reissues a replacement at no cost to you.
 
-You can pay one-time bills (like an electrician or plumber) or set up recurring monthly payments (like rent, mortgage, utilities, or insurance). For recurring bills, the bank pays automatically each month on the date you choose, so you never miss a payment.
+You can pay one-time bills (like an electrician or plumber) or set up recurring monthly payments (like rent, mortgage, utilities, or insurance). For recurring bills, the bank pays automatically each month on the date you choose. So you never miss a payment.
 
 Setting up Bill Pay takes about 10 minutes for the first bill. After that, paying any bill takes about 30 seconds.
 

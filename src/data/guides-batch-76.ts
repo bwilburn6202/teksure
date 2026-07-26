@@ -337,7 +337,7 @@ Setup is quick: you create an account, download the app to your device, and you'
     difficulty: `Beginner`,
     body: `MasterClass is an online learning platform where you can take courses taught by some of the most accomplished people in the world. Want to learn cooking from Gordon Ramsay? Writing from Margaret Atwood or Neil Gaiman? Negotiation from Chris Voss? Tennis from Serena Williams? MasterClass has courses taught by the actual experts, not substitutes.
 
-The courses are produced like high-quality documentary films — beautiful photography, thoughtful editing, and intimate teaching moments. Each class is broken into video lessons averaging 10 to 20 minutes long, so you can watch one lesson over a morning coffee without committing to a long stretch of time.
+The courses are produced like high-quality documentary films — beautiful photography, thoughtful editing, and intimate teaching moments. Each class is broken into video lessons averaging 10 to 20 minutes long. So you can watch one lesson over a morning coffee without committing to a long stretch of time.
 
 MasterClass uses a subscription model. One membership gives you access to the entire catalog — currently over 200 courses — for a flat annual fee. The price is around $120 per year for a single membership, or $180 per year for a household plan that allows two or more people to have their own accounts.
 

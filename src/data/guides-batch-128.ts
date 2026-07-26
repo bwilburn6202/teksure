@@ -47,7 +47,7 @@ Find My is on by default on every iPhone sold since 2019. But it never hurts to 
       },
       {
         title: 'Erase your iPhone if you cannot recover it',
-        content: 'If you are sure your iPhone is gone for good, click "Erase This Device" in Find My. This wipes all your data so a thief cannot access your photos, messages, or accounts. The phone remains locked to your Apple ID even after the erase, so it is useless to anyone else. After erasing, contact your cellular carrier to suspend the line.',
+        content: 'If you are sure your iPhone is gone for good, click "Erase This Device" in Find My. This wipes all your data so a thief cannot access your photos, messages, or accounts. The phone remains locked to your Apple ID even after the erase. So it is useless to anyone else. After erasing, contact your cellular carrier to suspend the line.',
         tip: 'Quick Tip: Even after erasing, Find My continues working — you can still see if the phone comes back online later, which is useful if police later try to recover it.',
       },
     ],

@@ -522,7 +522,7 @@ These steps take about five minutes and can save you from buying something that 
       {
         title: 'Use Fakespot or ReviewMeta to get a grade',
         content: 'Go to fakespot.com or reviewmeta.com. Copy the product\'s web address from Amazon and paste it into the search box. Both tools analyze the reviews and give you a letter grade. A grade of C or lower means a significant portion of the reviews appear unreliable. They also show an adjusted star rating based only on reviews the tool considers genuine.',
-        tip: 'Fakespot also offers a free browser extension that shows the grade directly on Amazon product pages as you browse, so you do not have to visit a separate website.',
+        tip: 'Fakespot also offers a free browser extension that shows the grade directly on Amazon product pages as you browse. So you do not have to visit a separate website.',
       },
       {
         title: 'Search YouTube for a video review',

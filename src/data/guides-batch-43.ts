@@ -651,7 +651,7 @@ Video calling works on Echo Show devices (Echo Show 5, 8, 10, 15, and the new Ec
     thumbnailEmoji: ``,
     publishedAt: `2026-04-19`,
     difficulty: `Beginner`,
-    body: `Smart speakers are excellent music players — you can request any song, artist, album, genre, decade, or mood by just speaking. But many people do not know all the ways to ask, so they end up frustrated when the speaker does not play what they wanted.
+    body: `Smart speakers are excellent music players — you can request any song, artist, album, genre, decade, or mood by just speaking. But many people do not know all the ways to ask. So they end up frustrated when the speaker does not play what they wanted.
 
 This guide covers both Amazon Echo (Alexa) and Google Nest speakers.
 

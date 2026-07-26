@@ -95,11 +95,11 @@ Never give your gift card number to anyone over the phone or by email. Real bank
 
 Before you start, find the gift card. The redemption code is hidden on the back, under a silver scratch-off panel. Use a coin or your fingernail to gently remove the silver coating. You will see a 16-character code made up of letters and numbers. Be careful not to scratch too hard, because if part of the code is damaged, you may need to call Apple Support to redeem it.
 
-The fastest way to redeem an Apple Gift Card is through the Settings app on your iPhone. You can also do it inside the App Store. The iPhone uses your camera to read the code automatically, so you do not have to type long strings of letters and numbers. If the camera cannot read the code, you can always type it in by hand.
+The fastest way to redeem an Apple Gift Card is through the Settings app on your iPhone. You can also do it inside the App Store. The iPhone uses your camera to read the code automatically. So you do not have to type long strings of letters and numbers. If the camera cannot read the code, you can always type it in by hand.
 
 After you redeem the card, the money shows up in your Apple Account balance. The next time you buy an app or pay for iCloud storage, the cost comes out of that balance first. You can check your balance any time in the Settings app under your name at the top.
 
-Apple Gift Cards never expire, so there is no rush to spend the money. But never give your redemption code to anyone who calls you on the phone. Apple will never ask you to read a gift card code over the phone. If anyone asks, it is a scam. Always redeem the card yourself, on your own iPhone, using the steps below.`,
+Apple Gift Cards never expire. So there is no rush to spend the money. But never give your redemption code to anyone who calls you on the phone. Apple will never ask you to read a gift card code over the phone. If anyone asks, it is a scam. Always redeem the card yourself, on your own iPhone, using the steps below.`,
     category: "buying-guides",
     tags: ["apple", "iphone", "gift cards", "app store", "itunes"],
     thumbnailEmoji: "🍎",

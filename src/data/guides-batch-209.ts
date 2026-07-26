@@ -56,7 +56,7 @@ export const guidesBatch209: Guide[] = [
     steps: [
       {
         title: "Find Your Battery Size",
-        content: "Open the box your hearing aids came in and look for the size number on the included batteries, or check the small printed label on the side of the aid itself. The four common sizes are 10 (yellow), 312 (brown), 13 (orange), and 675 (blue). The color of the sticker on the battery matches the color on the box, so you can grab the right pack at the drug store without reading the small print. Write the size on a sticky note on your medicine cabinet so you remember next trip.",
+        content: "Open the box your hearing aids came in and look for the size number on the included batteries, or check the small printed label on the side of the aid itself. The four common sizes are 10 (yellow), 312 (brown), 13 (orange), and 675 (blue). The color of the sticker on the battery matches the color on the box. So you can grab the right pack at the drug store without reading the small print. Write the size on a sticky note on your medicine cabinet so you remember next trip.",
         tip: "Costco, Walgreens, and CVS all sell hearing aid batteries. Costco is usually the cheapest if you are a member."
       },
       {
@@ -156,7 +156,7 @@ export const guidesBatch209: Guide[] = [
       },
       {
         title: "Schedule the Hearing Test and Bring the Right Items",
-        content: "Book a hearing test at the office you picked. Bring all your insurance cards, a list of medications, and a friend or family member who can take notes. Hearing tests are usually free or low cost through Medicare Advantage. After the test, the audiologist explains your results and shows you hearing aid options. Take the printout home before you decide. You do not have to buy on the same day. Most states require a thirty-day return window on hearing aids, so you can try them and return them if they do not help.",
+        content: "Book a hearing test at the office you picked. Bring all your insurance cards, a list of medications, and a friend or family member who can take notes. Hearing tests are usually free or low cost through Medicare Advantage. After the test, the audiologist explains your results and shows you hearing aid options. Take the printout home before you decide. You do not have to buy on the same day. Most states require a thirty-day return window on hearing aids. So you can try them and return them if they do not help.",
         warning: "Never sign a sales contract on the day of the test without reading the return policy. Federal law and most state laws give you thirty days to return hearing aids for a refund, but only if it is in the contract."
       }
     ]

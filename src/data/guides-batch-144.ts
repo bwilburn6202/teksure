@@ -138,7 +138,7 @@ This guide works whether you have an iPhone or an Android phone.
 ## What You Need Before You Start
 
 - A Google account (a Gmail address). If you do not have one, you can create one free at gmail.com.
-- The Google Photos app on your phone. iPhones do not come with it pre-installed, so you may need to download it. Android phones often include it.
+- The Google Photos app on your phone. iPhones do not come with it pre-installed. So you may need to download it. Android phones often include it.
 - A Wi-Fi connection at home. Backup happens automatically on Wi-Fi so it does not eat up your phone data plan.
 
 ## Understanding Free Storage
@@ -217,7 +217,7 @@ On another phone or tablet, install Google Photos, sign in with your Gmail addre
       },
       {
         title: 'Keep Wi-Fi backup turned on',
-        content: 'Make sure "Back up over Wi-Fi only" is switched on. This means the app will only upload photos when you are on your home Wi-Fi network, so it will not use up your phone\'s data plan.',
+        content: 'Make sure "Back up over Wi-Fi only" is switched on. This means the app will only upload photos when you are on your home Wi-Fi network. So it will not use up your phone\'s data plan.',
         tip: 'The first backup of hundreds of photos can take several hours. Leave your phone plugged in and on Wi-Fi overnight.',
       },
       {

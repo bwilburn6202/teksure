@@ -252,7 +252,7 @@ One of Copilot's most practical features for everyday users is its ability to he
 
 Copilot also has a "web browsing" mode where it searches the internet and gives you a summarized answer with source links. This is faster than searching Google manually and often more helpful for complex questions.
 
-Copilot is included for free with Windows 11 and works best with a Microsoft account. The service is connected to Bing, so it can access current information and is not limited by a knowledge cutoff the way some AI tools are.`,
+Copilot is included for free with Windows 11 and works best with a Microsoft account. The service is connected to Bing. So it can access current information and is not limited by a knowledge cutoff the way some AI tools are.`,
     steps: [
       {
         title: 'Open Copilot',
@@ -564,7 +564,7 @@ You can also move the entire taskbar (including the Start button) back to the le
     thumbnailEmoji: '',
     publishedAt: '2026-04-19',
     difficulty: 'Beginner',
-    body: `OneDrive, Google Drive, and iCloud are all "cloud storage" services — they save copies of your files, photos, and documents on secure servers on the internet, so you can access them from any device and never lose them if your phone or computer breaks.
+    body: `OneDrive, Google Drive, and iCloud are all "cloud storage" services — they save copies of your files, photos, and documents on secure servers on the internet. So you can access them from any device and never lose them if your phone or computer breaks.
 
 All three offer a free storage tier: OneDrive gives 5 GB free, Google Drive gives 15 GB free, and iCloud gives 5 GB free. For most people, 15 GB fills up first because Google counts Gmail and Google Photos toward your Google storage. Paid plans are available from all three if you need more space.
 
@@ -660,7 +660,7 @@ Many families buy an Apple Watch specifically for these features. A parent or gr
 
 Digital Wellbeing is available on most Android phones running Android 9 or later. On Samsung phones, the feature is called "Screen Time" or "Digital Wellbeing and Parental Controls." On Google Pixel phones, it is called "Digital Wellbeing." The tools are identical on both.
 
-The dashboard view shows your daily usage as a colorful pie chart broken down by app. Tapping on any app shows a bar chart of your usage by day, so you can see if your habits are changing. Most people are surprised by how much time they actually spend on certain apps.
+The dashboard view shows your daily usage as a colorful pie chart broken down by app. Tapping on any app shows a bar chart of your usage by day. So you can see if your habits are changing. Most people are surprised by how much time they actually spend on certain apps.
 
 App Timers are the most practical feature. You set a daily time limit for any app — for example, 30 minutes for Facebook. When you reach the limit, the app icon grays out and a reminder appears. You can choose to ignore the timer and keep going, but the gentle nudge is often enough to encourage a break.
 

@@ -128,7 +128,7 @@ If this is your very first iPad, setup takes about 10 to 15 minutes. Apple's set
         content: `After setup completes, go to Settings > Display & Brightness and increase the text size if needed (drag the slider to the right). Go to Settings > Accessibility > Display & Text Size and turn on Bold Text and increase the text size further. Go to Settings > Accessibility > Magnifier to enable the camera magnifier (triple-press the Home or side button to activate it anytime). These settings make the iPad much easier to use.`,
       },
     ],
-    tip: `Quick Tip — After setup, go to Settings > Apple ID > iCloud and make sure iCloud Backup is turned on. This automatically backs up your iPad to the cloud each night when plugged in and connected to Wi-Fi, so you never lose your data.`,
+    tip: `Quick Tip — After setup, go to Settings > Apple ID > iCloud and make sure iCloud Backup is turned on. This automatically backs up your iPad to the cloud each night when plugged in and connected to Wi-Fi. So you never lose your data.`,
   },
   {
     slug: `turn-off-targeted-ads`,
@@ -253,7 +253,7 @@ Android support varies by manufacturer. Google Pixel phones receive 5–7 years 
         content: `If you need to upgrade, you don't have to buy the newest model. A device from 2 to 3 years ago is often much less expensive and will be fully supported for years. For Windows PCs: check if your computer can upgrade to Windows 11 for free (Microsoft's PC Health Check app will tell you). Many Windows 10 computers can run Windows 11 at no cost — it's just an update. For phones: a phone from 2 to 3 years ago typically costs $200 to $400 and will receive updates for 4 to 6 more years.`,
       },
     ],
-    tip: `Quick Tip — Set a calendar reminder once a year to check your device's support status. Companies announce end-of-support dates months in advance, so you have time to plan rather than scrambling at the last minute.`,
+    tip: `Quick Tip — Set a calendar reminder once a year to check your device's support status. Companies announce end-of-support dates months in advance. So you have time to plan rather than scrambling at the last minute.`,
   },
   {
     slug: `update-chrome-browser`,
@@ -439,7 +439,7 @@ When you hit your daily limit on an app, the app dims and shows a message saying
 
 Screen Time also includes a Downtime feature, which blocks all apps except ones you specifically allow during hours you set — typically overnight or during dinner. And Communication Limits let you restrict who can call or message during certain hours.
 
-All of these settings can be protected with a Screen Time passcode that's different from your main iPhone passcode, so you don't accidentally override your own limits in a weak moment.`,
+All of these settings can be protected with a Screen Time passcode that's different from your main iPhone passcode. So you don't accidentally override your own limits in a weak moment.`,
     steps: [
       {
         title: `Turn on Screen Time`,
@@ -962,7 +962,7 @@ For seniors and anyone who wants key information visible at a glance, widgets ar
         content: `To remove a widget: touch and hold the Home Screen to enter editing mode. Tap the minus (-) button that appears in the corner of the widget. Confirm "Remove." The widget disappears but the app itself stays on your phone — removing a widget never deletes the app. You can always add the widget back later from the widget gallery.`,
       },
     ],
-    tip: `Quick Tip — The Calendar widget is one of the most practical for everyday use — it shows your next few appointments right on the Home Screen, so you never have to open the Calendar app just to check your schedule. Try the medium-size Calendar widget to see your next 3 events at a glance.`,
+    tip: `Quick Tip — The Calendar widget is one of the most practical for everyday use — it shows your next few appointments right on the Home Screen. So you never have to open the Calendar app just to check your schedule. Try the medium-size Calendar widget to see your next 3 events at a glance.`,
   },
   {
     slug: `secure-home-network-basics`,

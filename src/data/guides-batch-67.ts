@@ -15,7 +15,7 @@ Once set up, the home screen shows the time, weather, and upcoming calendar even
 
 You can ask Google Assistant anything out loud: "Hey Google, set a timer for 20 minutes," "Hey Google, what's the weather tomorrow," or "Hey Google, turn off the living room light" (if you have smart bulbs connected). The Nest Hub also works as a smart home dashboard — tap the home icon to see and control all your connected devices.
 
-The Nest Hub Max supports Google Meet and Duo video calls. Say "Hey Google, call Mom" and it will ring her phone or device. The standard Nest Hub does not have a camera, so it cannot make video calls, only audio calls.
+The Nest Hub Max supports Google Meet and Duo video calls. Say "Hey Google, call Mom" and it will ring her phone or device. The standard Nest Hub does not have a camera. So it cannot make video calls, only audio calls.
 
 The standard Nest Hub has a sleep-sensing feature that uses ultrasound (not a camera) to detect your breathing and movement overnight, giving you a sleep report each morning. To use it, go to the Nest Hub settings in the Google Home app and enable Sleep Sensing.
 
@@ -317,7 +317,7 @@ Coursera Plus is a subscription that gives unlimited access to most courses for 
 
 Google Career Certificates are among the most popular offerings on Coursera. These are professional programs in fields like IT Support, Data Analytics, Project Management, UX Design, and Cybersecurity. They're designed to be completed in 3 to 6 months with about 10 hours of study per week and are targeted at people looking to change careers. Google reports that many employers actively recruit from these certificate programs.
 
-Each course is broken into weeks of content. A typical week includes 2 to 4 short video lectures, some reading, and a quiz or peer-reviewed assignment. You can go at your own pace — Coursera does not have live class times, so you watch lessons whenever it fits your schedule.
+Each course is broken into weeks of content. A typical week includes 2 to 4 short video lectures, some reading, and a quiz or peer-reviewed assignment. You can go at your own pace — Coursera does not have live class times. So you watch lessons whenever it fits your schedule.
 
 Financial aid is available for paid courses. If the course fee would be a hardship, apply for financial aid on the course page and Coursera often waives the cost entirely.
 
@@ -515,7 +515,7 @@ To start a conversation, tap the message bar at the bottom and type your questio
 
 One of the most useful features is voice mode. Tap the microphone icon in the message bar to speak your question out loud instead of typing. ChatGPT will respond in a voice as well, which makes it feel more like talking to a knowledgeable assistant.
 
-ChatGPT is excellent for drafting, explaining, and brainstorming. It is not reliable for medical diagnoses, legal advice, financial decisions, or breaking news. The model's training has a cutoff date, so it doesn't know about recent events. More importantly, it can sometimes produce confident-sounding answers that are factually wrong — always verify important information from an official source.
+ChatGPT is excellent for drafting, explaining, and brainstorming. It is not reliable for medical diagnoses, legal advice, financial decisions, or breaking news. The model's training has a cutoff date. So it doesn't know about recent events. More importantly, it can sometimes produce confident-sounding answers that are factually wrong — always verify important information from an official source.
 
 On the free plan, you can upload a photo and ask ChatGPT to describe or analyze what's in it, though there are daily limits.
 
@@ -616,7 +616,7 @@ To search, type your question in plain English — the same way you'd ask a pers
 
 Each citation links to the original source. This is important: always click through to verify information before making decisions, especially on health, finance, or legal matters. AI can misread or misrepresent sources, and Perplexity is no exception.
 
-After getting an initial answer, you can ask follow-up questions in the same thread. Perplexity keeps the context of the conversation, so you can type "Tell me more about the Roth IRA income limits" and it will understand you're continuing the same topic.
+After getting an initial answer, you can ask follow-up questions in the same thread. Perplexity keeps the context of the conversation. So you can type "Tell me more about the Roth IRA income limits" and it will understand you're continuing the same topic.
 
 The Focus feature lets you narrow where Perplexity searches. Options include All (general web), Academic (research papers), YouTube (finds relevant videos), Reddit (finds community discussions), and News (recent articles only). Selecting YouTube and searching "how to replace a bathroom faucet" is an excellent way to find tutorial videos quickly.
 
@@ -646,7 +646,7 @@ Google is still better for finding local businesses, checking hours, shopping fo
       },
       {
         title: `Use Follow-up questions`,
-        content: `After getting an answer, type a follow-up question in the same thread. Perplexity remembers the context of your conversation, so you can dig deeper without re-explaining the topic.`,
+        content: `After getting an answer, type a follow-up question in the same thread. Perplexity remembers the context of your conversation. So you can dig deeper without re-explaining the topic.`,
       },
       {
         title: `Try the Focus feature`,
@@ -981,7 +981,7 @@ Location is shown on a map in the Family Link app. You can also set up location 
 
 When a child turns 13, Google prompts you to either remove supervision entirely or continue with a more transparent supervised mode where the child can see what controls are in place. This is worth a direct family conversation about the transition.
 
-For teenagers or older children on their own device, Android's Digital Wellbeing (Settings > Digital Wellbeing & Parental Controls) allows setting app timers, Bedtime Mode (which dims the screen and turns on Do Not Disturb), and a Dashboard showing weekly screen time. These controls are set on the phone itself rather than from a parent's device, so they work on the honor system — the teen can theoretically disable them. A direct conversation about why limits exist tends to be more effective than any technical barrier.`,
+For teenagers or older children on their own device, Android's Digital Wellbeing (Settings > Digital Wellbeing & Parental Controls) allows setting app timers, Bedtime Mode (which dims the screen and turns on Do Not Disturb), and a Dashboard showing weekly screen time. These controls are set on the phone itself rather than from a parent's device. So they work on the honor system — the teen can theoretically disable them. A direct conversation about why limits exist tends to be more effective than any technical barrier.`,
     category: `essential-skills`,
     tags: [`parental controls`, `android`, `kids`, `screen time`, `family`],
     thumbnailEmoji: `‍`,

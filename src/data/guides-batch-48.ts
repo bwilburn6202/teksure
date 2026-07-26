@@ -108,7 +108,7 @@ Viewing your own posted Status and seeing who viewed it is also possible — tap
 
 When someone goes Live on Facebook, you'll see a notification if you follow them. Their post in your News Feed will show a red "LIVE" badge. Live videos are interactive — you can type comments that the person sees in real time, react with emoji (hearts, thumbs up, etc.), and see how many other people are watching at the same time.
 
-After a Live broadcast ends, it's usually saved as a regular video post on the person's profile or page, so you can watch it any time even if you missed it live.
+After a Live broadcast ends, it's usually saved as a regular video post on the person's profile or page. So you can watch it any time even if you missed it live.
 
 Going Live yourself is also available to everyone with a Facebook account. You can go Live from your phone using the Facebook app — no special equipment needed. People go Live to share family milestones, show off a hobby, or say hello to friends and family spread across the country.
 
@@ -850,7 +850,7 @@ You control playback from your phone screen, or in many cars, from the steering 
 
 If your car is older and doesn't have Bluetooth, an FM transmitter (a small device that plugs into the cigarette lighter and your headphone jack) is a low-cost alternative. But for cars made in the last 10+ years, Bluetooth is almost certainly available — it may just be labeled "audio streaming" or "media audio" in your car's Bluetooth settings.
 
-The phone's music keeps playing through the same Bluetooth connection used for phone calls, so you can also receive hands-free calls without touching your phone.`,
+The phone's music keeps playing through the same Bluetooth connection used for phone calls. So you can also receive hands-free calls without touching your phone.`,
     steps: [
       {
         title: `Turn on Bluetooth on your car's audio system`,
@@ -899,7 +899,7 @@ The app works very much like a tape recorder — press record, speak, press stop
 
 On Samsung Galaxy phones, the app is called "Voice Recorder" and has features like scene-based recording modes (standard, interview, speech-to-text) and the ability to bookmark key moments within a long recording.
 
-On Google Pixel phones, it's called "Recorder" and includes a standout feature: it automatically transcribes your speech to text in real time, so you can read the transcript as you listen rather than replaying audio.
+On Google Pixel phones, it's called "Recorder" and includes a standout feature: it automatically transcribes your speech to text in real time. So you can read the transcript as you listen rather than replaying audio.
 
 On other Android phones, the app might be called "Sound Recorder," "Voice Memo," or something similar — search your app drawer or the Play Store for "voice recorder" if you can't find it.
 

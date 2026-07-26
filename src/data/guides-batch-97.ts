@@ -53,7 +53,7 @@ Installation itself takes about 30 to 45 minutes. You will turn off power at the
 
 The installation process is similar to a Nest. You turn off power at the breaker, label the wires on your old thermostat, mount ecobee's base plate, and connect each wire to a matching terminal. Ecobee includes a Power Extender Kit for homes without a C-wire — worth mentioning because not every brand does. Once mounted, ecobee walks you through Wi-Fi setup, HVAC settings, and pairing SmartSensors.
 
-The real payoff is placing the sensors thoughtfully. Put one in the bedroom you sleep in, one in the living room where you spend evenings, and keep one in a often used spot like the kitchen. Then build ecobee's comfort profiles — Home, Away, and Sleep — and assign which sensors matter during each. The Follow Me feature tells the system to prioritize whichever sensor has detected recent motion, so it chases comfort to wherever you actually are.
+The real payoff is placing the sensors thoughtfully. Put one in the bedroom you sleep in, one in the living room where you spend evenings, and keep one in a often used spot like the kitchen. Then build ecobee's comfort profiles — Home, Away, and Sleep — and assign which sensors matter during each. The Follow Me feature tells the system to prioritize whichever sensor has detected recent motion. So it chases comfort to wherever you actually are.
 
 Ecobee models also include a built-in Alexa speaker, intercom, and integration with utility rebate programs called eco+. Many power companies give $50 to $125 back for enrolling.`,
     steps: [
@@ -213,7 +213,7 @@ Here's a real money nudge: many home insurance companies (Travelers, State Farm,
     thumbnailEmoji: ``,
     publishedAt: `2026-04-20`,
     difficulty: `Beginner`,
-    body: `Instagram's Close Friends feature is one of the most useful privacy tools on any social media platform, and a lot of people don't know it exists. It's a private list you curate yourself. Anyone on the list sees your Close Friends Stories and Notes. Everyone else sees nothing. No one is notified when they're added or removed, so you can adjust it freely without awkward conversations.
+    body: `Instagram's Close Friends feature is one of the most useful privacy tools on any social media platform, and a lot of people don't know it exists. It's a private list you curate yourself. Anyone on the list sees your Close Friends Stories and Notes. Everyone else sees nothing. No one is notified when they're added or removed. So you can adjust it freely without awkward conversations.
 
 Close Friends is designed for moments when a regular Story feels too public. Grandparents and cousins wanting the daily grandkid photos, without broadcasting to 800 followers. A small group watching a home renovation. Updates during a difficult life moment — a health issue, a job search, a loss — where a wider audience feels wrong. Some people also use it for "finsta"-style personal content, an inner ring of real friends who see unfiltered daily moments.
 
@@ -239,7 +239,7 @@ The setup is fast. You can add or remove people from Close Friends at any time t
       },
       {
         title: `Review and edit the list anytime`,
-        content: `Return to Settings then Close Friends to remove anyone or add more people. No notification is sent when you add or remove someone, so you can shape the list to whatever feels right in the moment. A small green star next to someone's name means they are currently on the list.`,
+        content: `Return to Settings then Close Friends to remove anyone or add more people. No notification is sent when you add or remove someone. So you can shape the list to whatever feels right in the moment. A small green star next to someone's name means they are currently on the list.`,
       },
     ],
     tip: `Quick Tip — Think of Close Friends as a text-message group chat in Story form. If you'd text a photo to only those people, it probably belongs in Close Friends instead of a public Story.`,

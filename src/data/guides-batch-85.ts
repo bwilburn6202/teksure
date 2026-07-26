@@ -15,7 +15,7 @@ export const guidesBatch85: Guide[] = [
 
 Here is how it works: when you book a flight, a hotel, or a rental car, you forward the confirmation email to plans@tripit.com. TripIt reads the details from that email — dates, times, confirmation numbers, addresses — and adds them to your trip automatically. If you connect TripIt directly to your email account, it can even do this forwarding step for you without any extra effort on your part.
 
-The free version of TripIt handles the basics very well. Your itinerary shows each leg of your trip in chronological order, so you can see at a glance what comes next. The app also stores confirmation numbers and contact information for hotels or airlines, which is helpful when you need to call someone on the road.
+The free version of TripIt handles the basics very well. Your itinerary shows each leg of your trip in chronological order. So you can see at a glance what comes next. The app also stores confirmation numbers and contact information for hotels or airlines, which is helpful when you need to call someone on the road.
 
 TripIt Pro, the paid upgrade at around $49 per year, adds real-time flight alerts, fare refund monitoring, and a feature that checks whether better seats have become available on your flight. Many frequent travelers find this upgrade worthwhile, but the free version is a solid tool for occasional trips.
 
@@ -148,7 +148,7 @@ For domestic travel, Expedia is a strong option because it has negotiated rates 
     difficulty: `Beginner`,
     body: `Hotels.com is a hotel booking site that offers one of the most straightforward loyalty programs in travel: for every ten nights you book and stay at a hotel through Hotels.com, you earn a free night's stay. The reward is now delivered through the One Key program, which also connects with Expedia and Vrbo under the same account.
 
-The value of Hotels.com is in its massive inventory. You can find everything from budget motels to luxury resorts, and the site makes it easy to compare prices side by side. Guest reviews are prominently displayed, so you can quickly see what other travelers thought before making a decision.
+The value of Hotels.com is in its massive inventory. You can find everything from budget motels to luxury resorts, and the site makes it easy to compare prices side by side. Guest reviews are prominently displayed. So you can quickly see what other travelers thought before making a decision.
 
 One feature worth knowing about is the "Secret Prices" program. When you sign in to your Hotels.com account and are a member of the One Key rewards program, you get access to discounted rates that are not visible to guests who are browsing without an account. The discounts are often 10 to 15 percent off the displayed price.
 
@@ -684,7 +684,7 @@ Keep in mind that airlines sometimes swap aircraft types on a route, which means
     difficulty: `Beginner`,
     body: `Packr is a travel packing app that generates a customized packing checklist based on your destination, trip length, the time of year, and the activities you plan to do. Instead of trying to remember everything from scratch or copying a generic list from the internet, Packr builds a list specific to your trip and lets you check off items as you pack them.
 
-The app factors in the weather at your destination during your travel dates, so it knows whether to suggest a heavy coat or a light jacket. It also adjusts based on trip type — a beach vacation calls for different gear than a business trip or a camping trip. You answer a short series of questions about your travel, and Packr puts together a list within seconds.
+The app factors in the weather at your destination during your travel dates. So it knows whether to suggest a heavy coat or a light jacket. It also adjusts based on trip type — a beach vacation calls for different gear than a business trip or a camping trip. You answer a short series of questions about your travel, and Packr puts together a list within seconds.
 
 Packr includes categories for clothing, toiletries, electronics, documents, and activities. Each item can be checked off as you pack it. And you can add custom items that are specific to your personal needs. You can also remove items that do not apply to you.
 
@@ -768,7 +768,7 @@ Battery life is a common concern with any GPS-tracking app. Polarsteps is design
     difficulty: `Beginner`,
     body: `Moovit is a public transit navigation app that gives you step-by-step directions for getting around cities using buses, subways, trains, and light rail. It is available in more than 3,500 cities across 112 countries and works particularly well in the United States, Europe, and other regions with established transit networks.
 
-The app shows you multiple route options for any trip, including how long each option takes, how many transfers are required, and how far you will need to walk between stops. Moovit pulls data from official transit agencies and updates in real time, so it reflects actual bus and train positions and any service disruptions affecting your route.
+The app shows you multiple route options for any trip, including how long each option takes, how many transfers are required, and how far you will need to walk between stops. Moovit pulls data from official transit agencies and updates in real time. So it reflects actual bus and train positions and any service disruptions affecting your route.
 
 One of Moovit's best features for newcomers to public transit is the "Get off here" alert. The app monitors your location as you ride and sends you a notification when you are approaching your stop so you know when to stand up and exit. This is especially helpful in unfamiliar cities where you cannot read the station names or where buses do not always announce stops clearly.
 

@@ -855,7 +855,7 @@ To use Cost Plus Drugs, your doctor needs to send a prescription electronically 
     difficulty: `Beginner`,
     body: `Blink Health is a prescription savings service that works differently from a traditional pharmacy. You search for your medication on the Blink Health website or app, purchase it at Blink's discounted price, and then pick up your prescription at any participating pharmacy near you — including major chains like CVS, Walgreens, Walmart, Kroger, and many independent pharmacies. The pharmacy fills the prescription and checks you in using your Blink ID or confirmation number.
 
-Blink Health works by negotiating volume-based prices with pharmacies and passing those savings on to customers. For many common generic medications, the Blink price is substantially lower than the retail cash price. Prices are listed openly on the website before you commit to purchasing, so you can compare and decide.
+Blink Health works by negotiating volume-based prices with pharmacies and passing those savings on to customers. For many common generic medications, the Blink price is substantially lower than the retail cash price. Prices are listed openly on the website before you commit to purchasing. So you can compare and decide.
 
 Blink Health is useful for people who do not have health insurance, people whose insurance does not cover a specific medication, people who are in their deductible period and paying full price, and people who want to check whether they are getting the best price on a prescription they already take.
 
@@ -875,12 +875,12 @@ Blink Health is available at blinkhealth.com and as a free app for iPhone and An
       },
       {
         title: `Bring your prescription and Blink ID to the pharmacy`,
-        content: `Bring a valid photo ID, your physical prescription (if your doctor gave you one on paper) or confirm that your doctor called it in or sent it electronically to your chosen pharmacy, and your Blink confirmation number or ID. At the pharmacy counter, tell the pharmacist you are using Blink Health and provide your confirmation number. They will process the prescription and give you the medication — you have already paid, so there is nothing more to pay at the counter.`,
+        content: `Bring a valid photo ID, your physical prescription (if your doctor gave you one on paper) or confirm that your doctor called it in or sent it electronically to your chosen pharmacy, and your Blink confirmation number or ID. At the pharmacy counter, tell the pharmacist you are using Blink Health and provide your confirmation number. They will process the prescription and give you the medication — you have already paid. So there is nothing more to pay at the counter.`,
         tip: `If you use the Blink Health app on your phone, your Blink ID barcode is available right on the screen — you can show the pharmacist your phone instead of writing down or printing a confirmation number.`,
       },
       {
         title: `Use Blink for ongoing refills`,
-        content: `Blink Health stores your prescription history in your account. When it is time for a refill, log in to blinkhealth.com or the app and select the medication from your history. Purchase the refill, then pick it up at the same or a different pharmacy. Blink works with pharmacies across the country, so you can pick up at a location convenient to wherever you are — which is helpful when traveling.`,
+        content: `Blink Health stores your prescription history in your account. When it is time for a refill, log in to blinkhealth.com or the app and select the medication from your history. Purchase the refill, then pick it up at the same or a different pharmacy. Blink works with pharmacies across the country. So you can pick up at a location convenient to wherever you are — which is helpful when traveling.`,
         tip: `If you take multiple medications, check the Blink price for each one separately — savings vary widely depending on the drug. Some medications may be cheaper through your insurance, while others may be cheaper through Blink.`,
       },
     ],

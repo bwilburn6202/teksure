@@ -103,7 +103,7 @@ Giving the representative this information upfront usually cuts the call time in
       {
         title: 'Check your provider\'s own outage page',
         content: 'On your smartphone using cellular data, visit your provider\'s outage page: Xfinity at xfinity.com/support/status, AT&T at att.com/outages, Verizon Fios through the My Fios app, or Spectrum through the My Spectrum app. Sign in if prompted, then look for a service status message tied to your address.',
-        tip: 'Download your provider\'s app now, while the internet is working, so you have it ready the next time the connection goes down.',
+        tip: 'Download your provider\'s app now, while the internet is working. So you have it ready the next time the connection goes down.',
       },
       {
         title: 'Check Downdetector for a spike in reports',
@@ -235,7 +235,7 @@ Tap the paint palette icon inside a note to give it a color — useful for group
       {
         title: 'Add a checklist for shopping or to-do lists',
         content: 'On iPhone: tap the checklist button (a circle with a checkmark) in the toolbar above the keyboard. On Google Keep: tap the checkboxes icon below the text area when starting a new note. Each line becomes a checkbox item you can tap to mark done.',
-        tip: 'Checked items move to the bottom of the list automatically, so you always see what is left to do.',
+        tip: 'Checked items move to the bottom of the list automatically. So you always see what is left to do.',
       },
       {
         title: 'Pin important notes to the top',

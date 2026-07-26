@@ -27,7 +27,7 @@ export const guidesBatch160: Guide[] = [
     publishedAt: '2026-05-08',
     lastVerifiedAt: '2026-05-08',
     difficulty: 'Beginner',
-    body: `Your phone contacts — family members, doctors, neighbors, and everyone else you call — represent years of information you have collected. If your phone is lost, stolen, dropped in water, or stops working, those contacts can vanish in an instant unless they have been backed up. This guide shows you how to make sure every contact is saved safely in the cloud, so they come back automatically when you get a new phone or need to restore your device.
+    body: `Your phone contacts — family members, doctors, neighbors, and everyone else you call — represent years of information you have collected. If your phone is lost, stolen, dropped in water, or stops working, those contacts can vanish in an instant unless they have been backed up. This guide shows you how to make sure every contact is saved safely in the cloud. So they come back automatically when you get a new phone or need to restore your device.
 
 A cloud backup means your contacts are stored on a secure server (run by Apple or Google, depending on your phone) — not only on the physical phone itself. Even if the phone is completely destroyed, your contacts survive.
 

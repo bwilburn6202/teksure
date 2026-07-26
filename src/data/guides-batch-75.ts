@@ -88,7 +88,7 @@ Peloton instructors are motivating and encouraging without being aggressive. Man
       },
       {
         title: `Set up your space and follow along`,
-        content: `Clear a small area of floor space — about six feet by four feet is enough for most classes. Start the class and follow the instructor on screen. The instructor calls out every move and offers modifications for different fitness levels, so you can always find an option that works for your body.`,
+        content: `Clear a small area of floor space — about six feet by four feet is enough for most classes. Start the class and follow the instructor on screen. The instructor calls out every move and offers modifications for different fitness levels. So you can always find an option that works for your body.`,
       },
       {
         title: `Track your progress and explore more`,

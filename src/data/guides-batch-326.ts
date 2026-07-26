@@ -17,7 +17,7 @@ export const guidesBatch326: Guide[] = [
     publishedAt: "2026-07-20",
     lastVerifiedAt: "2026-07-20",
     difficulty: "Beginner",
-    body: "Many free apps make money by tracking what you do in other apps and on websites, then using that information to show you targeted ads. Apple's App Tracking Transparency feature requires every app to ask your permission before it's allowed to do this. And it gives you a simple screen to review and turn off tracking for any app that already has permission.\n\nWhen an app first asks 'Allow tracking?', it's specifically requesting permission to follow your activity outside of that one app. Choosing 'Ask App Not to Track' doesn't stop the app from working — it prevents it from building a profile of your behavior across other apps to sell more targeted ads.\n\nYou don't have to wait for each app to ask. There's a single screen that lists every app currently allowed to track you, so you can review and turn tracking off in bulk at any time. Source: support.apple.com/en-us/HT212025.",
+    body: "Many free apps make money by tracking what you do in other apps and on websites, then using that information to show you targeted ads. Apple's App Tracking Transparency feature requires every app to ask your permission before it's allowed to do this. And it gives you a simple screen to review and turn off tracking for any app that already has permission.\n\nWhen an app first asks 'Allow tracking?', it's specifically requesting permission to follow your activity outside of that one app. Choosing 'Ask App Not to Track' doesn't stop the app from working — it prevents it from building a profile of your behavior across other apps to sell more targeted ads.\n\nYou don't have to wait for each app to ask. There's a single screen that lists every app currently allowed to track you. So you can review and turn tracking off in bulk at any time. Source: support.apple.com/en-us/HT212025.",
     steps: [
       {
         title: "Open the Tracking settings screen",
@@ -29,7 +29,7 @@ export const guidesBatch326: Guide[] = [
       },
       {
         title: "Turn off 'Allow Apps to Request to Track' entirely",
-        content: "At the top of the Tracking screen, turn off 'Allow Apps to Request to Track.' This automatically denies tracking permission to every app going forward, so you won't see the pop-up requests anymore.",
+        content: "At the top of the Tracking screen, turn off 'Allow Apps to Request to Track.' This automatically denies tracking permission to every app going forward. So you won't see the pop-up requests anymore.",
         tip: "This is the fastest option if you'd rather not review apps one at a time.",
       },
       {
@@ -161,7 +161,7 @@ export const guidesBatch326: Guide[] = [
     publishedAt: "2026-07-20",
     lastVerifiedAt: "2026-07-20",
     difficulty: "Beginner",
-    body: "Data breaches happen when a company's customer database is hacked or leaked, sometimes exposing email addresses, passwords, and other personal details for millions of users at once. Because many companies you've used online over the years have had breaches at some point, it's worth checking whether any of your own accounts were part of one, so you know to change passwords that may be compromised.\n\nHave I Been Pwned is a widely trusted, free website run by a security researcher that lets you type in your email address to see which known breaches, if any, included it. It doesn't show your actual password — only which breached services had your email address in their records — and it doesn't require creating an account or entering a password to use.\n\nIf you discover your email was part of a breach, the most important response is to change the password for that specific service, and to change it everywhere else too if you had reused that same password anywhere else, since reused passwords are one of the most common ways accounts get broken into. Source: haveibeenpwned.com and consumer.ftc.gov/articles/what-do-if-your-personal-information-exposed-data-breach.",
+    body: "Data breaches happen when a company's customer database is hacked or leaked, sometimes exposing email addresses, passwords, and other personal details for millions of users at once. Because many companies you've used online over the years have had breaches at some point, it's worth checking whether any of your own accounts were part of one. So you know to change passwords that may be compromised.\n\nHave I Been Pwned is a widely trusted, free website run by a security researcher that lets you type in your email address to see which known breaches, if any, included it. It doesn't show your actual password — only which breached services had your email address in their records — and it doesn't require creating an account or entering a password to use.\n\nIf you discover your email was part of a breach, the most important response is to change the password for that specific service, and to change it everywhere else too if you had reused that same password anywhere else, since reused passwords are one of the most common ways accounts get broken into. Source: haveibeenpwned.com and consumer.ftc.gov/articles/what-do-if-your-personal-information-exposed-data-breach.",
     steps: [
       {
         title: "Go to a trusted, free breach-checking site",
@@ -182,7 +182,7 @@ export const guidesBatch326: Guide[] = [
       },
       {
         title: "Set up free breach notifications going forward",
-        content: "On Have I Been Pwned, click 'Notify me' and enter your email to receive a free alert automatically if it ever appears in a future breach, so you don't have to remember to check manually again.",
+        content: "On Have I Been Pwned, click 'Notify me' and enter your email to receive a free alert automatically if it ever appears in a future breach. So you don't have to remember to check manually again.",
       },
     ],
   },
@@ -197,7 +197,7 @@ export const guidesBatch326: Guide[] = [
     publishedAt: "2026-07-20",
     lastVerifiedAt: "2026-07-20",
     difficulty: "Beginner",
-    body: "Over the years, it is common to end up with duplicate photos on a Windows computer — the same picture saved twice from different downloads, copies made while organizing folders, or the same photo imported from a phone more than once. These duplicates take up storage space without adding any value, and clearing them out can free up a meaningful amount of room, especially on computers with smaller hard drives.\n\nWindows 11's Photos app includes a built-in way to scan your Pictures folder for duplicate images and review them before deleting anything, so you stay in control of what gets removed rather than deleting files automatically and blindly.\n\nBefore deleting any photos, it's worth making sure you have a backup, either through OneDrive, an external hard drive, or another cloud photo service, in case you want to recover something later. Source: support.microsoft.com/en-us/windows and support.microsoft.com/en-us/office/backing-up-your-files.",
+    body: "Over the years, it is common to end up with duplicate photos on a Windows computer — the same picture saved twice from different downloads, copies made while organizing folders, or the same photo imported from a phone more than once. These duplicates take up storage space without adding any value, and clearing them out can free up a meaningful amount of room, especially on computers with smaller hard drives.\n\nWindows 11's Photos app includes a built-in way to scan your Pictures folder for duplicate images and review them before deleting anything. So you stay in control of what gets removed rather than deleting files automatically and blindly.\n\nBefore deleting any photos, it's worth making sure you have a backup, either through OneDrive, an external hard drive, or another cloud photo service, in case you want to recover something later. Source: support.microsoft.com/en-us/windows and support.microsoft.com/en-us/office/backing-up-your-files.",
     steps: [
       {
         title: "Open the Photos app",
@@ -214,7 +214,7 @@ export const guidesBatch326: Guide[] = [
       },
       {
         title: "Back up before deleting",
-        content: "Before removing anything, make sure your photos are backed up through OneDrive or another cloud service, so you have a safety net in case you delete something you wanted to keep.",
+        content: "Before removing anything, make sure your photos are backed up through OneDrive or another cloud service. So you have a safety net in case you delete something you wanted to keep.",
         warning: "Once photos are deleted from the Recycle Bin, they generally cannot be recovered, so double-check the Recycle Bin is emptied only after you're confident about your choices.",
       },
       {

@@ -756,7 +756,7 @@ Wolfram Alpha can also answer practical questions, not just academic ones. You c
     difficulty: `Beginner`,
     body: `Circle to Search is a feature developed jointly by Google and Samsung that lets you search for anything you see on your phone's screen without switching apps. While you are in the middle of watching a video, scrolling Instagram, or reading a webpage, you can press and hold the home button (or navigation bar at the bottom of the screen) to bring up the Circle to Search tool. Then draw a circle around whatever you want to search — a product, a plant, a person's outfit, a logo, or a piece of text — and Google will search for it instantly.
 
-The results appear in a panel that slides up from the bottom of the screen, so you never fully leave the app you were in. When you dismiss the search panel, you are right back where you were.
+The results appear in a panel that slides up from the bottom of the screen. So you never fully leave the app you were in. When you dismiss the search panel, you are right back where you were.
 
 Circle to Search can recognize objects in photos and videos (identifying products, plants, dog breeds, landmarks, and more), translate text shown on screen (including text inside images), find where to buy a product you see, identify a song you hear in a video, and search for text you highlight on screen.
 
@@ -912,7 +912,7 @@ These features are built into Pixel phones and require no extra apps or subscrip
       {
         title: `Use Call Screen for unknown calls`,
         content: `When your phone rings with an unknown or spam-likely number, look for the "Screen call" button instead of the green Accept button. Tap Screen Call and Google Assistant will answer, ask the caller who they are and why they are calling, and show you a live transcript of their response. Based on what you read, tap "Accept," "Decline," or "Report as spam." You never have to speak to potential spam callers yourself.`,
-        tip: `Quick Tip: Go to the Phone app → Settings → Spam and Call Screen → Call Screen to configure automatic screening for suspected spam calls, so you do not even need to tap anything for clearly suspicious numbers.`,
+        tip: `Quick Tip: Go to the Phone app → Settings → Spam and Call Screen → Call Screen to configure automatic screening for suspected spam calls. So you do not even need to tap anything for clearly suspicious numbers.`,
       },
       {
         title: `Try Hold For Me on customer service calls`,

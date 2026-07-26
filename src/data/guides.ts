@@ -1348,7 +1348,7 @@ const coreGuides: Guide[] = [
     steps: [
       { title: 'Check for updates', content: 'Click Apple menu → System Settings → General → Software Update. Your Mac will check for available updates.' },
       { title: 'Download and install', content: 'If an update is available, click "Update Now" or "Upgrade Now" for major macOS releases.' },
-      { title: 'Enable automatic updates', content: 'Turn on "Automatic Updates" to have your Mac download and install updates automatically.' , tip: 'Automatic updates download overnight and prompt you in the morning, so they do not interrupt your work.' },
+      { title: 'Enable automatic updates', content: 'Turn on "Automatic Updates" to have your Mac download and install updates automatically.' , tip: 'Automatic updates download overnight and prompt you in the morning. So they do not interrupt your work.' },
       { title: 'Restart when prompted', content: 'Most updates require a restart. Save your work and click Restart when ready.' },
     ]
   },
@@ -4617,7 +4617,7 @@ const coreGuides: Guide[] = [
       },
       {
         title: 'Spot a fake banking app or scam',
-        content: 'Your bank will NEVER ask for your full password, PIN, or one-time code via text, email, phone call, or in-app message. If anything asks for these, hang up or close the app and call your bank directly. Scammers sometimes impersonate banks perfectly — the real test is whether they ask for information your bank already has.', tip: `Save your bank's genuine phone number in your contacts now, so you always have it when needed.`
+        content: 'Your bank will NEVER ask for your full password, PIN, or one-time code via text, email, phone call, or in-app message. If anything asks for these, hang up or close the app and call your bank directly. Scammers sometimes impersonate banks perfectly — the real test is whether they ask for information your bank already has.', tip: `Save your bank's genuine phone number in your contacts now. So you always have it when needed.`
       },
     ]
   },
@@ -5287,7 +5287,7 @@ const coreGuides: Guide[] = [
     publishedAt: '2026-03-29',
     difficulty: 'Beginner',
     steps: [
-      { title: 'Choose and set up a delivery app', content: 'The most popular food delivery apps are DoorDash, Uber Eats, and Grubhub. Download one from your app store, create an account, and enter your delivery address. Add a payment method. Each app shows different restaurants depending on your area, so you may want to check which one has your favorites.' },
+      { title: 'Choose and set up a delivery app', content: 'The most popular food delivery apps are DoorDash, Uber Eats, and Grubhub. Download one from your app store, create an account, and enter your delivery address. Add a payment method. Each app shows different restaurants depending on your area. So you may want to check which one has your favorites.' },
       { title: 'Browse restaurants and menus', content: 'Scroll through nearby restaurants or use the search bar to find a specific cuisine ("pizza," "Chinese," "sushi"). Tap a restaurant to see its full menu, delivery fee, estimated delivery time, and customer ratings. Look for "Free Delivery" promotions to save money.' },
       { title: 'Add items and customize your order', content: `Tap a menu item to see details and customization options (like "no onions" or "extra sauce"). Tap "Add to Cart." Add more items if you'd like. When ready, tap the cart icon to review. You can add special instructions like "Please ring the doorbell" in the delivery notes.`, tip: `Ordering for two or more people? Check if the restaurant has combo deals or family meals — they're usually a better value than individual items.` },
       { title: 'Place your order and track delivery', content: `Review your cart, check the subtotal (food + delivery fee + taxes + tip). Adjust the driver tip — $3-5 is standard for most deliveries. Tap "Place Order." The app will show your order being prepared, picked up, and a live map of your driver on the way. You'll get a notification when the driver arrives.` },
@@ -6710,7 +6710,7 @@ For stronger privacy, do three things. Turn on Airplane Mode to disable all radi
       { title: 'Start a new email', content: 'Open your email (gmail.com or outlook.com) and click Compose or New Message.' },
       { title: 'Click the attachment button', content: 'In Gmail, click the paperclip icon at the bottom. In Outlook, click "Attach file" or the paperclip icon in the toolbar.' },
       { title: 'Select your file', content: 'A file browser will open. Navigate to your photo or document. Click on it, then click "Open." The file name will appear in the email, showing it is attached.', tip: 'Hold Ctrl (Windows) or Cmd (Mac) while clicking to select multiple files at once.' },
-      { title: 'Check the size and send', content: 'Most email providers limit attachments to 25MB. Photos from a modern phone are usually 5-10MB each, so you can send 2-3 per email. Fill in the To address, Subject, and message, then click Send.', warning: 'If your file is too large, use Google Drive or WeTransfer instead. The email will fail silently if the attachment is over the limit.' },
+      { title: 'Check the size and send', content: 'Most email providers limit attachments to 25MB. Photos from a modern phone are usually 5-10MB each. So you can send 2-3 per email. Fill in the To address, Subject, and message, then click Send.', warning: 'If your file is too large, use Google Drive or WeTransfer instead. The email will fail silently if the attachment is over the limit.' },
     ]
   },
   {
@@ -7037,7 +7037,7 @@ For stronger privacy, do three things. Turn on Airplane Mode to disable all radi
     steps: [
       {
         title: 'Know that Windows has free virus protection built in',
-        content: 'Windows 11 includes a free antivirus program called Windows Security (it used to be called Windows Defender). It runs automatically in the background, so you do not need to buy separate antivirus software. If you are still using Windows 10, you should upgrade to Windows 11 — Microsoft stopped providing security updates for Windows 10 on October 14, 2025.',
+        content: 'Windows 11 includes a free antivirus program called Windows Security (it used to be called Windows Defender). It runs automatically in the background. So you do not need to buy separate antivirus software. If you are still using Windows 10, you should upgrade to Windows 11 — Microsoft stopped providing security updates for Windows 10 on October 14, 2025.',
         tip: 'Windows Security is already installed and turned on — you do not need to download or install anything extra.'
       },
       {
@@ -7046,7 +7046,7 @@ For stronger privacy, do three things. Turn on Airplane Mode to disable all radi
       },
       {
         title: 'Run a full scan for a deeper check',
-        content: 'If you want a more thorough scan, go to Virus & threat protection and click "Scan options." Select "Full scan" and then click "Scan now." A full scan checks every single file on your computer, so it can take 30 to 60 minutes. It is best to start this when you will not need your computer for a while — overnight is a good time.',
+        content: 'If you want a more thorough scan, go to Virus & threat protection and click "Scan options." Select "Full scan" and then click "Scan now." A full scan checks every single file on your computer. So it can take 30 to 60 minutes. It is best to start this when you will not need your computer for a while — overnight is a good time.',
         tip: 'A quick scan is fine for regular checkups. Use a full scan if your computer is acting strangely or you suspect a problem.'
       },
       {
@@ -7338,7 +7338,7 @@ For stronger privacy, do three things. Turn on Airplane Mode to disable all radi
       },
       {
         title: 'Find and delete large files',
-        content: 'Open Finder (the blue and white smiley face icon in your Dock). Press Cmd+F to start a search. Click the dropdown that says "Kind" and change it to "File Size." Set the next dropdown to "is greater than" and type 100. Change the unit to "MB." This will show you all files on your Mac that are larger than 100 megabytes, so you can decide which ones you no longer need.'
+        content: 'Open Finder (the blue and white smiley face icon in your Dock). Press Cmd+F to start a search. Click the dropdown that says "Kind" and change it to "File Size." Set the next dropdown to "is greater than" and type 100. Change the unit to "MB." This will show you all files on your Mac that are larger than 100 megabytes. So you can decide which ones you no longer need.'
       },
       {
         title: 'Empty the Trash to reclaim space',

@@ -28,7 +28,7 @@ export const guidesBatch293: Guide[] = [
       },
       {
         title: "Call the garden manager before the first visit",
-        content: "Once a person has narrowed the list to two or three gardens, a five-minute phone call is the most valuable step. Ask about plot size, annual fee, waitlist length, water access, shared tools, raised-bed availability, parking distance, and whether the garden welcomes older gardeners. Most garden managers are volunteers who love talking about the garden, so they tend to be warm and helpful. Write down the answers on a single notepad page to compare gardens later.",
+        content: "Once a person has narrowed the list to two or three gardens, a five-minute phone call is the most valuable step. Ask about plot size, annual fee, waitlist length, water access, shared tools, raised-bed availability, parking distance, and whether the garden welcomes older gardeners. Most garden managers are volunteers who love talking about the garden. So they tend to be warm and helpful. Write down the answers on a single notepad page to compare gardens later.",
         warning: "Important: Skip any garden where the waitlist is longer than one full growing season — better to pick a nearby park flower bed program or a faith community garden that has an open slot now.",
       },
       {

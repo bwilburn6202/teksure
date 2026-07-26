@@ -419,7 +419,7 @@ Legitimate companies do not threaten to shut down your account in 24 hours over 
 
 **Red flag 3: A generic greeting**
 
-Phishing emails are sent to thousands of people at once, so they cannot use your name. They use generic openings like:
+Phishing emails are sent to thousands of people at once. So they cannot use your name. They use generic openings like:
 
 - "Dear Customer"
 - "Dear Account Holder"

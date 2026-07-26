@@ -81,7 +81,7 @@ This is available on iPhone and Android in the Google Photos app, and on any com
       },
       {
         title: 'Search by what is in the photo',
-        content: 'Type a plain description of what you are looking for. Examples that work well: "dog playing," "birthday cake," "Christmas tree," "snow," "graduation," "hospital," "grandchildren." Google Photos analyzes the contents of every photo, so it can find subjects even if you never tagged or labeled the photos.',
+        content: 'Type a plain description of what you are looking for. Examples that work well: "dog playing," "birthday cake," "Christmas tree," "snow," "graduation," "hospital," "grandchildren." Google Photos analyzes the contents of every photo. So it can find subjects even if you never tagged or labeled the photos.',
       },
       {
         title: 'Search by person',

@@ -37,7 +37,7 @@ export const guidesBatch192: Guide[] = [
       },
       {
         title: "Sign up for email alerts on new openings",
-        content: "On any of these sites, look for a button that says \"Save Search\" or \"Email me new opportunities.\" Enter your email address. The site will send you a short list once a week of new openings that match what you are looking for, so you do not have to keep checking by hand.",
+        content: "On any of these sites, look for a button that says \"Save Search\" or \"Email me new opportunities.\" Enter your email address. The site will send you a short list once a week of new openings that match what you are looking for. So you do not have to keep checking by hand.",
       },
       {
         title: "Apply through the site's contact button",

@@ -377,7 +377,7 @@ Many people use Evernote as their digital filing cabinet — photographing recei
     difficulty: 'Beginner',
     body: `Microsoft OneNote is a free digital notebook available on iPhone, Android, Mac, Windows, and the web. It organizes notes like a physical binder — with Notebooks that contain Sections, and Sections that contain Pages.
 
-OneNote is completely free with a Microsoft account, which you likely already have if you use Outlook email, Hotmail, or Xbox. It stores notes in Microsoft OneDrive, so they sync automatically across all your devices.
+OneNote is completely free with a Microsoft account, which you likely already have if you use Outlook email, Hotmail, or Xbox. It stores notes in Microsoft OneDrive. So they sync automatically across all your devices.
 
 What makes OneNote flexible is that you can click or tap anywhere on a page and start writing there — unlike most note apps that only let you type in a linear way from top to bottom. You can have text in one corner, a photo in the middle, and a checklist on the right side of the same page.
 

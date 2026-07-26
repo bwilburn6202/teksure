@@ -132,7 +132,7 @@ Google Tasks does not send you pop-up reminders by default (unlike Google Keep o
       },
       {
         title: `Check off a completed task`,
-        content: `Tap the empty circle to the left of a task to mark it as done. A checkmark appears and the task moves to a "Completed" section at the bottom of your list. Your completed tasks stay there until you delete them, so you have a record of what you finished.`,
+        content: `Tap the empty circle to the left of a task to mark it as done. A checkmark appears and the task moves to a "Completed" section at the bottom of your list. Your completed tasks stay there until you delete them. So you have a record of what you finished.`,
       },
       {
         title: `Create a second list for organization`,
@@ -434,7 +434,7 @@ OpenTable also has a "Dining Rewards" program. You earn points (called Dining Po
 
 The app lets you set special requests when booking, like "window table if possible," "birthday celebration," or "dietary restrictions." The restaurant sees these notes before you arrive.
 
-OpenTable works for restaurants in most US cities, especially at sit-down restaurants with table service. Many diners and fast-casual spots are not on OpenTable, so it works best for nicer restaurants where reservations are expected.
+OpenTable works for restaurants in most US cities, especially at sit-down restaurants with table service. Many diners and fast-casual spots are not on OpenTable. So it works best for nicer restaurants where reservations are expected.
 
 You can also use OpenTable to read restaurant reviews, view menus, and see photos of the food and dining room before you decide where to go.`,
     steps: [
@@ -657,7 +657,7 @@ These features work on the Spotify app for iPhone and Android, and most also wor
     thumbnailEmoji: ``,
     publishedAt: `2026-04-19`,
     difficulty: `Beginner`,
-    body: `A digital wallet is an app on your phone that stores your credit card and debit card information securely, so you can pay at stores and online without pulling out a physical card. The most common digital wallets in the United States are Apple Pay (for iPhones) and Google Pay (for Android phones).
+    body: `A digital wallet is an app on your phone that stores your credit card and debit card information securely. So you can pay at stores and online without pulling out a physical card. The most common digital wallets in the United States are Apple Pay (for iPhones) and Google Pay (for Android phones).
 
 When you use a digital wallet to pay, you hold your phone near the store's payment terminal and either press a button, use Face ID, or place your finger on the fingerprint sensor. The payment goes through in seconds — faster than swiping a card.
 
@@ -686,7 +686,7 @@ You do not need a special bank or credit card to use a digital wallet. Most majo
       },
       {
         title: `Pay online with a digital wallet`,
-        content: `When shopping online, look for the "Apple Pay" or "Google Pay" button at checkout — many major retailers now offer this option. Tapping it brings up your stored card information pre-filled, so you do not have to type anything. You confirm the purchase with Face ID or your fingerprint and you are done.`,
+        content: `When shopping online, look for the "Apple Pay" or "Google Pay" button at checkout — many major retailers now offer this option. Tapping it brings up your stored card information pre-filled. So you do not have to type anything. You confirm the purchase with Face ID or your fingerprint and you are done.`,
       },
       {
         title: `What to do if your phone is lost or stolen`,
@@ -784,7 +784,7 @@ These settings are found in Settings, then Accessibility on most Android phones.
       },
       {
         title: `Try TalkBack if you want audio descriptions`,
-        content: `In Accessibility settings, tap "TalkBack." Tap the toggle to turn it on. TalkBack will begin describing everything you touch before you tap it — meaning a single tap highlights and reads the item, and a double-tap activates it. This is a different way of using the phone, so it takes some getting used to. To turn it off, go back to Settings > Accessibility > TalkBack and double-tap the toggle.`,
+        content: `In Accessibility settings, tap "TalkBack." Tap the toggle to turn it on. TalkBack will begin describing everything you touch before you tap it — meaning a single tap highlights and reads the item, and a double-tap activates it. This is a different way of using the phone. So it takes some getting used to. To turn it off, go back to Settings > Accessibility > TalkBack and double-tap the toggle.`,
         warning: `TalkBack changes how your phone responds to taps a lot. Before turning it on, it helps to know that you will need to double-tap to open anything, and swipe with one finger to move between items on screen.`,
       },
       {
@@ -905,7 +905,7 @@ The device comes with the Siri Remote — a slim aluminum remote with a touchpad
 
 Apple TV 4K works especially well with other Apple devices. AirPlay lets you wirelessly send a video, photo, or music from your iPhone or iPad directly to your TV screen in seconds — without any cables. You can also use your iPhone as an alternative remote if you lose the physical one.
 
-The Apple TV app (not the same as the Apple TV hardware device) has a "Watch Now" section that brings together content from all your streaming services into one feed, so you do not have to open each app separately to find something to watch.
+The Apple TV app (not the same as the Apple TV hardware device) has a "Watch Now" section that brings together content from all your streaming services into one feed. So you do not have to open each app separately to find something to watch.
 
 Setup takes about 10 minutes and requires your TV to have an HDMI port, a WiFi network, and an Apple ID. If you have an iPhone nearby during setup, Apple TV can transfer your WiFi password and account details automatically.`,
     steps: [
@@ -916,7 +916,7 @@ Setup takes about 10 minutes and requires your TV to have an HDMI port, a WiFi n
       },
       {
         title: `Set up using your iPhone (the fast way)`,
-        content: `If you have an iPhone, hold it close to your Apple TV during setup. A prompt will appear on your iPhone asking if you want to set up Apple TV. Tap "Set Up" and follow the on-screen steps. Your iPhone will automatically transfer your WiFi password and Apple ID to the Apple TV, so you do not have to type them manually with the remote.`,
+        content: `If you have an iPhone, hold it close to your Apple TV during setup. A prompt will appear on your iPhone asking if you want to set up Apple TV. Tap "Set Up" and follow the on-screen steps. Your iPhone will automatically transfer your WiFi password and Apple ID to the Apple TV. So you do not have to type them manually with the remote.`,
         tip: `Make sure your iPhone's Bluetooth and WiFi are both turned on for this automatic setup to work.`,
       },
       {

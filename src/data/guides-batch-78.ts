@@ -93,7 +93,7 @@ Wired connections are especially helpful for desktop computers, smart TVs, gamin
   {
     slug: `usb-hub-beginners`,
     title: `USB Hubs: Add More Ports to Your Laptop So You Can Plug In More Things at Once`,
-    excerpt: `A USB hub is a small device that turns one port into many, so you can charge your phone, use a mouse, and plug in a flash drive all at the same time.`,
+    excerpt: `A USB hub is a small device that turns one port into many. So you can charge your phone, use a mouse, and plug in a flash drive all at the same time.`,
     category: `internet-connectivity`,
     tags: [`usb hub`, `laptop ports`, `accessories`, `usb-c`, `peripherals`, `computer setup`],
     readTime: `5 min`,
@@ -213,7 +213,7 @@ These gestures work on all MacBook models, and most also work on Apple's externa
       },
       {
         title: `Tap to click instead of pressing down`,
-        content: `If pressing the trackpad feels tiring, enable "Tap to click" in Trackpad settings under the Point & Click tab. With this on, a light tap anywhere on the trackpad counts as a click, so you never need to press down. Many users find this much more comfortable for long work sessions.`,
+        content: `If pressing the trackpad feels tiring, enable "Tap to click" in Trackpad settings under the Point & Click tab. With this on, a light tap anywhere on the trackpad counts as a click. So you never need to press down. Many users find this much more comfortable for long work sessions.`,
       },
     ],
   },
@@ -402,7 +402,7 @@ Note: The exact location of TalkBack settings may vary slightly depending on you
 
 VoiceOver changes how you interact with your phone. With it on, touching the screen speaks the item under your finger. To actually open or activate something, you double-tap anywhere on the screen. To scroll, you use three fingers instead of one. Swiping right with one finger moves to the next item on screen, and swiping left goes back.
 
-Apple has built a comprehensive VoiceOver tutorial directly into iPhone settings. It walks you through each gesture with practice exercises and speaks instructions aloud, so you can learn the system even if you have difficulty seeing the screen.
+Apple has built a comprehensive VoiceOver tutorial directly into iPhone settings. It walks you through each gesture with practice exercises and speaks instructions aloud. So you can learn the system even if you have difficulty seeing the screen.
 
 VoiceOver integrates deeply with all Apple apps. It reads text messages as they arrive, describes photos (it will say something like "A photo of two people smiling outdoors"), reads web articles in Safari, and announces who is calling. It also works with Braille displays connected over Bluetooth.
 
@@ -607,7 +607,7 @@ Nothing about these changes is permanent — you can return to the original sett
 
 A blue light filter — sometimes called "Night mode," "Night Shift," or "Warm display" — shifts the colors on your screen toward warmer oranges and yellows in the evening. This reduces the amount of blue light reaching your eyes without making the screen harder to see. Many people find their eyes feel less tired and they fall asleep more quickly after using screens with blue light filters turned on.
 
-Every major phone and operating system has a built-in blue light filter that is free and already on your device. On iPhone, it is called Night Shift. On Android, it is typically called Night Light or Comfort View. On Windows, it is called Night Light. On Mac, it is called Night Shift. All of these can be set to turn on automatically at sunset and turn off at sunrise, so you never have to remember to switch them.
+Every major phone and operating system has a built-in blue light filter that is free and already on your device. On iPhone, it is called Night Shift. On Android, it is typically called Night Light or Comfort View. On Windows, it is called Night Light. On Mac, it is called Night Shift. All of these can be set to turn on automatically at sunset and turn off at sunrise. So you never have to remember to switch them.
 
 The strength of the filter is usually adjustable — a slight warming is subtle and barely noticeable, while maximum warmth gives the screen a strong orange tint. For most people, a moderate setting provides eye relief without making colors look too unnatural.
 
@@ -653,7 +653,7 @@ Read Aloud works on any webpage — news articles, how-to guides, government web
 
 You can control the reading voice, speaking speed, and language. Edge offers several different voices — some sound more natural and conversational than others. Microsoft's "Jenny" and "Guy" voices in English are among the clearest and easiest to understand. You can slow the reading speed way down if the voice moves too quickly for comfortable listening.
 
-You can start, pause, and skip forward or backward using a simple toolbar that appears at the top of the screen when Read Aloud is active. Clicking anywhere in the text also moves the reader to that location, so you can skip to a specific section of an article.
+You can start, pause, and skip forward or backward using a simple toolbar that appears at the top of the screen when Read Aloud is active. Clicking anywhere in the text also moves the reader to that location. So you can skip to a specific section of an article.
 
 Read Aloud is especially useful for people who want to multitask — you can listen to an article while eating, resting, or doing something else nearby, with the computer doing the reading for you.`,
     steps: [
@@ -805,7 +805,7 @@ Some websites detect ad blockers and ask you to disable the blocker before readi
     thumbnailEmoji: ``,
     publishedAt: `2026-04-20`,
     difficulty: `Beginner`,
-    body: `uBlock Origin is widely considered the best free ad blocker available. It blocks advertisements, tracking scripts, pop-ups, and malicious content before they load — making your browsing experience faster, cleaner, and safer. Unlike some other ad blockers, uBlock Origin uses very little of your computer's processing power and memory, so it does not slow down your browser.
+    body: `uBlock Origin is widely considered the best free ad blocker available. It blocks advertisements, tracking scripts, pop-ups, and malicious content before they load — making your browsing experience faster, cleaner, and safer. Unlike some other ad blockers, uBlock Origin uses very little of your computer's processing power and memory. So it does not slow down your browser.
 
 uBlock Origin is open-source software, meaning its code is publicly available for anyone to inspect. This transparency is a significant trust signal — security researchers and independent experts have reviewed the code and confirmed it does not collect or sell your data. It is developed and maintained by Raymond Hill and a community of volunteer contributors.
 

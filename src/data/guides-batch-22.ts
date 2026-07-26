@@ -610,7 +610,7 @@ export const guidesBatch22: Guide[] = [
       {
         title: 'Check your earnings record',
         content: `Tap "Earnings Record" to see every year of your work history that Social Security has on file. Review this carefully — errors in the earnings record can reduce your benefit. If you spot a year that's wrong or missing (for instance, a job you worked but the earnings don't appear), you can request a correction by contacting Social Security.`,
-        warning: `Errors in your earnings record directly reduce your monthly benefit. It's worth checking this at least every few years while still working, so you can correct mistakes before you retire.`,
+        warning: `Errors in your earnings record directly reduce your monthly benefit. It's worth checking this at least every few years while still working. So you can correct mistakes before you retire.`,
       },
       {
         title: 'Download a benefit verification letter',

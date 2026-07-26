@@ -676,7 +676,7 @@ If you help a family member set up their iPhone, take five minutes to turn on Fi
       {
         title: 'Contact your carrier and file a report if the phone was stolen',
         content: 'Call your mobile carrier (AT&T: 800-331-0500, Verizon: 800-922-0204, T-Mobile: 877-746-0909) to report the phone stolen. They can suspend your line to prevent unauthorized calls and charges. If you believe the phone was stolen, file a report with your local police — bring a screenshot of the last known location from Find My.',
-        tip: 'Take a screenshot of the Find My map showing your phone\'s last location before you erase the device, so you have a record to share with police if needed.',
+        tip: 'Take a screenshot of the Find My map showing your phone\'s last location before you erase the device. So you have a record to share with police if needed.',
       },
     ],
   },

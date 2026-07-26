@@ -15,7 +15,7 @@ export const guidesBatch93: Guide[] = [
 
 Word Online lets you create new documents, open files someone sends you, and edit existing documents saved in your OneDrive cloud storage. It covers all the basics: typing text, changing fonts, adjusting font size, making words bold or italic, adding headings, inserting lists, and checking spelling. It does lack a few advanced features found in the paid desktop version — things like advanced page layout tools, mail merge, and some macro features — but for everyday letters, resumes, reports, and notes, it handles everything you need.
 
-One of the biggest benefits is automatic saving. Every change you make is saved to your OneDrive automatically, so you will never lose your work due to a computer crash or forgetting to save. You can also share a document with someone else by sending them a link, letting them view or even edit the file — no email attachment required.
+One of the biggest benefits is automatic saving. Every change you make is saved to your OneDrive automatically. So you will never lose your work due to a computer crash or forgetting to save. You can also share a document with someone else by sending them a link, letting them view or even edit the file — no email attachment required.
 
 When you are done, you can download your document as a standard .docx file (which opens in any version of Word) or as a PDF that anyone can read. You can also print directly from the browser.
 
@@ -712,7 +712,7 @@ The pricing structure is straightforward and predictable. As of 2026, T-Mobile H
 
 Typical speeds for T-Mobile Home Internet are 100-300 Mbps download and 20-50 Mbps upload, though speeds vary a lot based on your local tower capacity and how close you are to a T-Mobile tower. Evening hours (7-10 PM) can be slower than mid-day because more people are using the network simultaneously.
 
-T-Mobile offers a 15-day in-home trial, so you can set up the service, test the speeds in your home, and cancel with a full refund if it does not meet your needs. This trial period makes it worth trying even if you are uncertain about the speeds in your area.`,
+T-Mobile offers a 15-day in-home trial. So you can set up the service, test the speeds in your home, and cancel with a full refund if it does not meet your needs. This trial period makes it worth trying even if you are uncertain about the speeds in your area.`,
     steps: [
       {
         title: `Check eligibility at your home address`,

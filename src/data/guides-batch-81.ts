@@ -215,7 +215,7 @@ Unlike Spotify or Apple Music, Audiomack does not require a credit card or paid 
 
 Audiomack is known as a platform where artists upload their own music directly. This means you often find new songs and mixtapes on Audiomack days or weeks before they appear on other services. Many popular artists like Drake, Cardi B, and Burna Boy have released exclusive or early content there.
 
-The app organizes music into trending charts by genre, so you can quickly find what is popular in the specific style you enjoy. You can follow artists and get notified when they upload new music. The "Trending" section updates daily and is a reliable way to discover what is catching on in your favorite genres.
+The app organizes music into trending charts by genre. So you can quickly find what is popular in the specific style you enjoy. You can follow artists and get notified when they upload new music. The "Trending" section updates daily and is a reliable way to discover what is catching on in your favorite genres.
 
 Audiomack works on iPhone, Android, and in a web browser on your computer. Listening on a computer does not require any download — go to audiomack.com and start playing. On mobile, download the app for the best experience, including background playback so the music keeps going when your screen locks.
 
@@ -512,7 +512,7 @@ Pairing with the Bose Music app lets you customize the noise cancellation experi
       },
       {
         title: `Switch between noise cancellation and ambient sound`,
-        content: `There is a dedicated button on the left earcup (marked with a wave or speaker icon) that switches between Quiet Mode (full noise cancellation) and Aware Mode (ambient sound passthrough). Press it once to toggle. If you have the QuietComfort Ultra, a third press adds the Immersion mode. The current mode is announced in your ear each time you switch, so you always know which mode is active.`,
+        content: `There is a dedicated button on the left earcup (marked with a wave or speaker icon) that switches between Quiet Mode (full noise cancellation) and Aware Mode (ambient sound passthrough). Press it once to toggle. If you have the QuietComfort Ultra, a third press adds the Immersion mode. The current mode is announced in your ear each time you switch. So you always know which mode is active.`,
       },
       {
         title: `Download the Bose Music app`,

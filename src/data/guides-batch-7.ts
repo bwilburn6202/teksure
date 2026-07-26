@@ -651,7 +651,7 @@ All the major browsers mentioned above are free, and most computers and phones c
     thumbnailEmoji: '',
     publishedAt: '2026-04-16',
     difficulty: 'Beginner',
-    body: `A bookmark is a saved shortcut to a website — like putting a physical bookmark in a book so you can return to that page without searching for it again. All web browsers let you save bookmarks with one or two clicks. Once saved, your bookmarks appear in a menu or bar that you can reach from anywhere in the browser, so you can jump to your favorite news site, your bank's website, or a recipe blog with a single click.
+    body: `A bookmark is a saved shortcut to a website — like putting a physical bookmark in a book so you can return to that page without searching for it again. All web browsers let you save bookmarks with one or two clicks. Once saved, your bookmarks appear in a menu or bar that you can reach from anywhere in the browser. So you can jump to your favorite news site, your bank's website, or a recipe blog with a single click.
 
 Organizing bookmarks into folders helps when you have many saved sites. You might create folders like "News," "Banking," "Recipes," and "Family" to keep things sorted. Most browsers also sync your bookmarks across your devices when you are signed in — so bookmarks you add on your computer will also appear on your phone.
 

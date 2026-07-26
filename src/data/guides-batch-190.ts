@@ -31,7 +31,7 @@ export const guidesBatch190: Guide[] = [
       },
       {
         title: "Turn on an automatic transfer the day after your check arrives",
-        content: "Ask your bank to set up an automatic transfer from checking to savings on the day after your Social Security or pension deposit hits. This is the single most powerful step. The money moves before you see it, so you do not feel the pinch. Most banks let you set this up online, by phone, or in person. Have the banker show you on their screen so you know it is done.",
+        content: "Ask your bank to set up an automatic transfer from checking to savings on the day after your Social Security or pension deposit hits. This is the single most powerful step. The money moves before you see it. So you do not feel the pinch. Most banks let you set this up online, by phone, or in person. Have the banker show you on their screen so you know it is done.",
         warning: "Do not set the transfer for a date when your account might be low. Pick the day right after your regular deposit so the money is always there."
       },
       {
@@ -156,7 +156,7 @@ export const guidesBatch190: Guide[] = [
       },
       {
         title: "Divide the total by the months remaining in the year",
-        content: "Take your target total and divide it by the number of months between now and November. If your target is $660 and you start in January, that is $60 a month. If you start in May, you have 7 months, so it is about $95 a month. The earlier you start, the smaller the monthly amount. Pick the amount that fits your budget. If the number is too high, lower the gift target instead of stretching the monthly savings too thin.",
+        content: "Take your target total and divide it by the number of months between now and November. If your target is $660 and you start in January, that is $60 a month. If you start in May, you have 7 months. So it is about $95 a month. The earlier you start, the smaller the monthly amount. Pick the amount that fits your budget. If the number is too high, lower the gift target instead of stretching the monthly savings too thin.",
         warning: "Do not promise yourself you will save more than you can afford. A smaller, reliable amount works better than a big plan you abandon by March."
       },
       {

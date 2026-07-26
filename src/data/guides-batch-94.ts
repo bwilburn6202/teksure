@@ -133,7 +133,7 @@ One frustrating reality: your information will likely reappear. Data brokers re-
       },
       {
         title: `Work through BeenVerified, Intelius, and Radaris`,
-        content: `For BeenVerified, go to beenverified.com/opt-out, search your name, find your record, and submit the opt-out form using your email address. For Intelius, visit intelius.com/opt-out and follow the same process. For Radaris, find your profile, click the privacy icon, and select "Control information." Each of these requires email verification. Keep a note of which sites you have submitted to and when, so you can follow up if the listing does not disappear within two weeks.`,
+        content: `For BeenVerified, go to beenverified.com/opt-out, search your name, find your record, and submit the opt-out form using your email address. For Intelius, visit intelius.com/opt-out and follow the same process. For Radaris, find your profile, click the privacy icon, and select "Control information." Each of these requires email verification. Keep a note of which sites you have submitted to and when. So you can follow up if the listing does not disappear within two weeks.`,
       },
       {
         title: `Consider a paid removal service for ongoing protection`,
@@ -492,7 +492,7 @@ Smart TV operating systems vary. Roku TV is widely considered the most intuitive
       },
       {
         title: `Choose 4K for anything larger than 50 inches`,
-        content: `On TVs 50 inches and larger, the difference in sharpness between 1080p and 4K is visible when you sit at a normal distance. 4K TVs now cost the same as — or very close to — 1080p sets in most size ranges, so there is little reason to choose 1080p for a large screen. For a smaller bedroom TV (32 to 43 inches), 1080p is perfectly fine and usually cheaper. Make sure any 4K TV you buy supports HDR (High Dynamic Range) — this improves color richness and is standard on most 4K sets today.`,
+        content: `On TVs 50 inches and larger, the difference in sharpness between 1080p and 4K is visible when you sit at a normal distance. 4K TVs now cost the same as — or very close to — 1080p sets in most size ranges. So there is little reason to choose 1080p for a large screen. For a smaller bedroom TV (32 to 43 inches), 1080p is perfectly fine and usually cheaper. Make sure any 4K TV you buy supports HDR (High Dynamic Range) — this improves color richness and is standard on most 4K sets today.`,
       },
       {
         title: `Decide on panel type based on your room`,

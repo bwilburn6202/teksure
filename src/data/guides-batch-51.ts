@@ -13,7 +13,7 @@ export const guidesBatch51: Guide[] = [
     difficulty: `Beginner`,
     body: `If your Gmail inbox feels like a pile of unsorted mail on the kitchen table, labels can help you bring order to it. Labels work a lot like folders — you can group emails about a specific topic, person, or project into one place. But labels have an extra advantage: one email can have multiple labels at the same time. For example, a message from your doctor about a bill could be labeled both "Doctor" and "Bills."
 
-Labels also show up in the left sidebar of Gmail, so you can click on any label to see all emails with that label at once. You can color-code labels, which makes it even faster to spot what's what. For instance, you might make your "Family" label green, your "Bills" label red, and your "Medical" label blue.
+Labels also show up in the left sidebar of Gmail. So you can click on any label to see all emails with that label at once. You can color-code labels, which makes it even faster to spot what's what. For instance, you might make your "Family" label green, your "Bills" label red, and your "Medical" label blue.
 
 Labels don't move emails out of your inbox unless you choose to archive them — so you can still see everything in one place while also having it organized. Many people use labels to track things they're waiting on, flag messages that need a reply, or group emails from a specific club, organization, or subscription.
 
@@ -65,7 +65,7 @@ This is especially helpful for things like:
 - A receipt you need to review when your credit card statement arrives — snooze it until the end of the month
 - A message you need to reply to, but not until after the weekend — snooze it until Monday morning
 
-Snoozed emails are stored in a special "Snoozed" folder in Gmail's left sidebar, so you can always go find them early if your plans change. When the snooze time arrives, the email moves back to the top of your regular inbox with a small "Snoozed" tag, so you know it's a returning reminder.
+Snoozed emails are stored in a special "Snoozed" folder in Gmail's left sidebar. So you can always go find them early if your plans change. When the snooze time arrives, the email moves back to the top of your regular inbox with a small "Snoozed" tag. So you know it's a returning reminder.
 
 Snooze works on the Gmail website and on the Gmail app for iPhone and Android. You can snooze as many emails as you want, and each one can have its own custom date and time.`,
     steps: [
@@ -107,7 +107,7 @@ Here's how it works: the Gmail app shows a small circle in the top right corner 
 
 You can add any number of Gmail or Google Workspace accounts (those are the "@ company name" addresses some people get through work or school). The process is the same for all of them.
 
-Once you have multiple accounts set up, you can also choose to view all your inboxes combined in one view, so you see all your email from all accounts in a single list. Or you can view each inbox separately if you prefer to keep them distinct. The choice is yours.
+Once you have multiple accounts set up, you can also choose to view all your inboxes combined in one view. So you see all your email from all accounts in a single list. Or you can view each inbox separately if you prefer to keep them distinct. The choice is yours.
 
 This guide covers the Gmail app specifically. If you use a different email app like Apple Mail or the Outlook app, the steps will be a bit different.`,
     steps: [
@@ -150,7 +150,7 @@ This guide covers the Gmail app specifically. If you use a different email app l
 When you add someone as a VIP in Apple Mail, a few things happen:
 - Their emails get a special star icon so they're easy to spot
 - All their emails are collected in a dedicated "VIP" mailbox folder
-- You can set up separate notifications just for VIP emails, so you get alerted even if you've turned off general email notifications
+- You can set up separate notifications just for VIP emails. So you get alerted even if you've turned off general email notifications
 
 VIP works on iPhone, iPad, and Mac — and your VIP list syncs across all your Apple devices automatically if you use the same Apple ID.
 
@@ -498,7 +498,7 @@ Benefits of this setup:
 - If your PC breaks, gets stolen, or is damaged, your files are safe in the cloud
 - You can access your files from any computer or your phone
 - It works silently in the background — you don't have to do anything after setup
-- Files are version-controlled, so you can recover an earlier version if you accidentally change something
+- Files are version-controlled. So you can recover an earlier version if you accidentally change something
 
 This guide assumes you have a Microsoft account and are using Windows 10 or 11.`,
     steps: [

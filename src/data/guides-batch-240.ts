@@ -90,7 +90,7 @@ export const guidesBatch240: Guide[] = [
       },
       {
         title: "Start a Video Call",
-        content: "Open the chat with the family member you want to see. Tap the plus icon next to the typing box. Pick Video Call from the menu. WeChat will ring on their phone. When they answer, you will see each other on the screen. Hold the phone steady at face level. The call uses your home Wi-Fi when you are at home, so it does not eat up cellular data. Calls between WeChat users are free no matter where in the world the other person is. To end the call, tap the red phone icon at the bottom.",
+        content: "Open the chat with the family member you want to see. Tap the plus icon next to the typing box. Pick Video Call from the menu. WeChat will ring on their phone. When they answer, you will see each other on the screen. Hold the phone steady at face level. The call uses your home Wi-Fi when you are at home. So it does not eat up cellular data. Calls between WeChat users are free no matter where in the world the other person is. To end the call, tap the red phone icon at the bottom.",
         warning: "Watch out for the time zone. Mainland China is 12 to 16 hours ahead of most U.S. cities. Send a quick voice note first to make sure the other person is awake before starting a video call."
       },
       {

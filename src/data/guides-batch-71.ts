@@ -946,7 +946,7 @@ The easiest way to start a conversation is right inside Gmail. In the left sideb
 
 You can also use Google Chat as a standalone app. Go to chat.google.com in a browser, or download the Google Chat app from the App Store or Google Play.
 
-Beyond one-on-one messages, Google Chat has a feature called Spaces — these are group conversations with a persistent history, topic organization, and the ability to add members. A Space works like a Slack channel or Discord text channel. You might use a Space for a family group, a project at work, or a club you're part of. Spaces retain the full message history indefinitely, so you can scroll back and find old conversations.
+Beyond one-on-one messages, Google Chat has a feature called Spaces — these are group conversations with a persistent history, topic organization, and the ability to add members. A Space works like a Slack channel or Discord text channel. You might use a Space for a family group, a project at work, or a club you're part of. Spaces retain the full message history indefinitely. So you can scroll back and find old conversations.
 
 You can react to messages with emoji by hovering over any message and clicking the smiley face that appears. Edit or delete a message you've already sent by hovering over it and clicking the three-dot menu.
 
@@ -989,7 +989,7 @@ Google Chat works best for communicating with others who already have Gmail. It'
     publishedAt: `2026-04-20`,
     body: `One of the biggest advantages an iPad has over a phone is the ability to run two apps side by side on the same screen. Instead of switching back and forth between an app and a recipe, or jumping between a map and a messages app, you can see both at the same time. Apple calls these features Split View and Slide Over.
 
-Split View divides the iPad screen into two panels, each showing a different app. You can resize the split by dragging the divider in the middle — giving one app more screen space than the other. Both apps remain fully active, so you can interact with either one at any time.
+Split View divides the iPad screen into two panels, each showing a different app. You can resize the split by dragging the divider in the middle — giving one app more screen space than the other. Both apps remain fully active. So you can interact with either one at any time.
 
 To set up Split View, start with one app open. Swipe up slowly from the bottom of the screen to reveal the Dock (the row of app icons at the bottom). Tap and hold an app icon in the Dock, then drag it toward the left or right edge of the screen without releasing. When a dark panel appears on that side, release the icon. Both apps are now visible simultaneously.
 

@@ -522,7 +522,7 @@ Food tracking is a tool, not a rule. Many registered dietitians recommend using 
       },
       {
         title: `Connect Apple Health or a fitness tracker`,
-        content: `Go to More > Apps & Devices (or Settings > Connected Apps). Choose Apple Health, Google Fit, Fitbit, or Garmin depending on your device. Once connected, steps and calories burn sync automatically, so you don't have to log exercise manually.`,
+        content: `Go to More > Apps & Devices (or Settings > Connected Apps). Choose Apple Health, Google Fit, Fitbit, or Garmin depending on your device. Once connected, steps and calories burn sync automatically. So you don't have to log exercise manually.`,
         tip: `If you want to lose weight, eating 500 fewer calories per day than your goal burns about one pound per week — a safe, steady rate. Going much lower than that is not recommended without medical supervision.`,
       },
     ],
@@ -784,7 +784,7 @@ YouTube Kids is available as a free app for iPhone, Android, iPad, Fire tablets,
 
 When you first set up the app, you'll create a parent account and then add a profile for each child. For each child, you choose an age group: Preschool (4 and under), Younger (5–7), or Older (8–12). The content library shown to your child adjusts based on this selection — Preschool mode shows mainly nursery rhymes and simple cartoons, while Older mode includes educational content, gaming videos, and more complex shows.
 
-You can customize what your child can access. From the parent settings (protected by a PIN or your Google account password), you can search for specific channels and either allow or block them. You can also disable the search bar entirely for young children, so they can only browse what YouTube Kids recommends rather than searching for anything they type.
+You can customize what your child can access. From the parent settings (protected by a PIN or your Google account password), you can search for specific channels and either allow or block them. You can also disable the search bar entirely for young children. So they can only browse what YouTube Kids recommends rather than searching for anything they type.
 
 YouTube Kids includes a built-in timer. You can set a daily screen time limit for each child profile — once the time is up, the app shows a message that screen time is over. This is managed within the app and doesn't require any additional parental control software.
 

@@ -382,7 +382,7 @@ Petcube also offers an optional care subscription (around $5 to $10 per month pe
     difficulty: `Beginner`,
     body: `Whistle is a GPS tracker that clips onto your pet's collar and lets you see where they are on a map from your phone. If your dog or cat ever gets out of the yard, you can pull up the Whistle app and see their location in near real-time rather than searching the neighborhood blindly.
 
-The Whistle tracker is a small, durable device about the size of a large button. It attaches to most standard collars and is water-resistant, so it holds up through rain, puddles, and even swimming. The device works using GPS satellites and cellular networks — this is what lets it report location even when your pet is far from home.
+The Whistle tracker is a small, durable device about the size of a large button. It attaches to most standard collars and is water-resistant. So it holds up through rain, puddles, and even swimming. The device works using GPS satellites and cellular networks — this is what lets it report location even when your pet is far from home.
 
 Because Whistle uses cellular data to communicate location, it requires a monthly subscription. Plans start around $7 to $10 per month after an initial promotional period. You can choose month-to-month or prepay for a year at a discount. The tracker device itself costs around $80 to $130 depending on the model.
 
@@ -473,7 +473,7 @@ Online vet visits are a good fit for a wide range of concerns: your dog is eatin
 
 There are things an online vet cannot do. And it is important to understand these limits. They cannot perform a physical exam, take blood samples, run x-rays, give injections, or handle emergencies. If your pet has a broken bone, is having trouble breathing, has collapsed, or has ingested something toxic, go to an emergency veterinary clinic right away — do not wait for a video appointment.
 
-Vetster visits are typically priced between $50 and $150 depending on the vet and the time of day. Some pet insurance policies cover telehealth visits, so check your policy. Vetster also shows you each vet's credentials, species experience, and patient reviews before you book, so you can pick someone with expertise in your type of pet.
+Vetster visits are typically priced between $50 and $150 depending on the vet and the time of day. Some pet insurance policies cover telehealth visits, so check your policy. Vetster also shows you each vet's credentials, species experience, and patient reviews before you book. So you can pick someone with expertise in your type of pet.
 
 Vetster is available on iPhone, Android, and the web at vetster.com.`,
     steps: [
@@ -849,7 +849,7 @@ Dosh is free to download and has no subscription fees. It is available for iPhon
       },
       {
         title: `Browse Partner Offers`,
-        content: `Tap "Offers" in the app to see which hotels, restaurants, and retailers are currently offering cashback. You do not need to activate individual offers — just pay with your linked card at any of these places and the cashback is applied automatically. Note that offers change periodically, so it is worth browsing the list before trips or big shopping days.`,
+        content: `Tap "Offers" in the app to see which hotels, restaurants, and retailers are currently offering cashback. You do not need to activate individual offers — just pay with your linked card at any of these places and the cashback is applied automatically. Note that offers change periodically. So it is worth browsing the list before trips or big shopping days.`,
         tip: `Quick Tip: Dosh often has elevated hotel cashback offers — if you are planning a trip, check the Hotels tab in Dosh before booking to see if your hotel is a partner.`,
       },
       {

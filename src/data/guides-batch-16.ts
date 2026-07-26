@@ -102,7 +102,7 @@ export const guidesBatch16: Guide[] = [
     thumbnailEmoji: '',
     publishedAt: '2026-04-19',
     difficulty: 'Beginner',
-    body: `Your phone's photos may be the only copies of important memories — family gatherings, grandchildren, vacations, life events. If your phone breaks, gets lost, or is stolen, those photos could be gone forever without a backup. A single backup is good. Two backups in different locations is much safer.\n\nThe approach professionals use is called the "3-2-1 rule": keep 3 copies of important files, on 2 different types of storage, with 1 copy stored off-site (like the cloud). For most people, a practical version is: photos automatically backed up to the cloud (like iCloud or Google Photos) PLUS a second backup to another cloud service or an external hard drive.\n\nThe good news is that most modern phones can back up photos automatically in the background, so you don't have to do anything manually after the initial setup. This guide walks through the most common backup options and how to set them up, so your photos are always protected.`,
+    body: `Your phone's photos may be the only copies of important memories — family gatherings, grandchildren, vacations, life events. If your phone breaks, gets lost, or is stolen, those photos could be gone forever without a backup. A single backup is good. Two backups in different locations is much safer.\n\nThe approach professionals use is called the "3-2-1 rule": keep 3 copies of important files, on 2 different types of storage, with 1 copy stored off-site (like the cloud). For most people, a practical version is: photos automatically backed up to the cloud (like iCloud or Google Photos) PLUS a second backup to another cloud service or an external hard drive.\n\nThe good news is that most modern phones can back up photos automatically in the background. So you don't have to do anything manually after the initial setup. This guide walks through the most common backup options and how to set them up, so your photos are always protected.`,
     steps: [
       {
         title: 'Turn on automatic cloud backup (first line of defense)',
@@ -523,7 +523,7 @@ export const guidesBatch16: Guide[] = [
       },
       {
         title: 'Create access codes for family and caregivers',
-        content: "In the app, look for \"Access\" or \"Codes\" or \"Guest Access.\" Create a unique 4-8 digit PIN for each person who needs access. Name the code (\"Daughter Sarah,\" \"Tuesday Caregiver\") and optionally set time restrictions — for example, a caregiver code that only works Monday-Friday between 9 AM and 6 PM. The door logs every time each code is used, so you always know who came and went.",
+        content: "In the app, look for \"Access\" or \"Codes\" or \"Guest Access.\" Create a unique 4-8 digit PIN for each person who needs access. Name the code (\"Daughter Sarah,\" \"Tuesday Caregiver\") and optionally set time restrictions — for example, a caregiver code that only works Monday-Friday between 9 AM and 6 PM. The door logs every time each code is used. So you always know who came and went.",
         tip: "Quick Tip: Never share your master PIN widely. Create separate codes for each person so you can revoke individual access without changing everyone's codes.",
       },
     ],

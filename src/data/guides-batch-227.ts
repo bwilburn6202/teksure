@@ -154,7 +154,7 @@ export const guidesBatch227: Guide[] = [
   {
     slug: "how-to-talk-spouse-caring-in-laws",
     title: "How to Talk to Your Spouse About Caring for Your In-Laws",
-    excerpt: "Honest, plain-English guide for couples on how to have the in-law caregiving conversation before the crisis, so you both go in as a team.",
+    excerpt: "Honest, plain-English guide for couples on how to have the in-law caregiving conversation before the crisis. So you both go in as a team.",
     category: "tips-tricks",
     tags: ["in-laws", "spouse", "marriage", "caregiving", "communication", "family", "sandwich generation"],
     readTime: "8 min",
@@ -286,7 +286,7 @@ export const guidesBatch227: Guide[] = [
       },
       {
         title: "Plan Around Multiple Grandchildren Fairly",
-        content: "If you have more than one grandchild, fairness matters. Kids notice. A simple rule is to give each grandchild the same kind of one-on-one time, even if the activities differ. If one grandchild gets a yearly weekend at your house, every grandchild should get a yearly weekend at your house, adjusted for age and ability. If one gets a weekly call, every grandchild should get a weekly call. Many grandparents keep a small calendar with each grandchild's solo time written down, so they can spot at a glance if one is getting more attention than another. Try not to compare grandchildren to each other in conversation: a remark like Your cousin would have loved this trip can sting more than a grandparent realizes. Each grandchild deserves to feel like they have their own special place in your life.",
+        content: "If you have more than one grandchild, fairness matters. Kids notice. A simple rule is to give each grandchild the same kind of one-on-one time, even if the activities differ. If one grandchild gets a yearly weekend at your house, every grandchild should get a yearly weekend at your house, adjusted for age and ability. If one gets a weekly call, every grandchild should get a weekly call. Many grandparents keep a small calendar with each grandchild's solo time written down. So they can spot at a glance if one is getting more attention than another. Try not to compare grandchildren to each other in conversation: a remark like Your cousin would have loved this trip can sting more than a grandparent realizes. Each grandchild deserves to feel like they have their own special place in your life.",
         tip: "If grandchildren are close in age and live nearby, occasional combined activities are fine, but make sure each child still gets dedicated solo time with you on a regular basis."
       },
       {

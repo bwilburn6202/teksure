@@ -117,7 +117,7 @@ export const guidesBatch275: Guide[] = [
       },
       {
         title: "Try aquatic therapy if land exercises hurt too much",
-        content: "If walking on land scores 5 or higher on your pain scale, ask the therapist about aquatic therapy. The pool is heated to 88 to 92 degrees, which relaxes muscles. Water reduces joint load by half or more, so you can do exercises that would be impossible on land. Sessions last 30 to 45 minutes. Most facilities have steps and handrails for safe entry and exit. If you cannot swim, that is fine — therapeutic exercise in water happens in chest-deep depth, not deep water.",
+        content: "If walking on land scores 5 or higher on your pain scale, ask the therapist about aquatic therapy. The pool is heated to 88 to 92 degrees, which relaxes muscles. Water reduces joint load by half or more. So you can do exercises that would be impossible on land. Sessions last 30 to 45 minutes. Most facilities have steps and handrails for safe entry and exit. If you cannot swim, that is fine — therapeutic exercise in water happens in chest-deep depth, not deep water.",
         warning: "Tell the PT and pool staff if you have any of the following: open wounds, uncontrolled diabetes, severe heart failure, or a fear of water. Some conditions need to be managed before pool work is safe.",
       },
       {

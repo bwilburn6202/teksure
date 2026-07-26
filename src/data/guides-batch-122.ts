@@ -27,7 +27,7 @@ If you prefer a larger screen and longer battery life, the iPhone 16 offers an e
 The Pixel 9a runs "stock" Android (Google's own clean version, without extra clutter added by manufacturers). The camera is excellent, call quality is very clear. And it includes Google's live phone call screening feature — which screens suspected spam calls automatically. Starting at around $499.
 
 **Jitterbug Flip2 (by Lively) — Best for simplicity**
-If you primarily want to make phone calls and send texts, the Jitterbug Flip2 is a flip phone with a large keypad, a bright screen, and a dedicated urgent response button. It does not run apps the way an iPhone does, so it is a better fit for someone who does not want a full smartphone. The monthly plan costs extra through Lively.
+If you primarily want to make phone calls and send texts, the Jitterbug Flip2 is a flip phone with a large keypad, a bright screen, and a dedicated urgent response button. It does not run apps the way an iPhone does. So it is a better fit for someone who does not want a full smartphone. The monthly plan costs extra through Lively.
 
 When shopping, look for: screen size of at least 5 inches, physical buttons you can feel, a home button you can press, and compatibility with hearing aids (look for "M4/T4" hearing aid compatibility rating on the spec sheet).
 
@@ -347,7 +347,7 @@ You do not need to pay your internet company a monthly fee to "rent" their route
       },
       {
         title: 'Make sure the printer connects wirelessly',
-        content: 'Look for "wireless" or "WiFi" in the printer description. Wireless printers connect to your home WiFi, so you can print from your phone, tablet, or computer without plugging in a cable. This is now standard on most printers — confirm before buying.',
+        content: 'Look for "wireless" or "WiFi" in the printer description. Wireless printers connect to your home WiFi. So you can print from your phone, tablet, or computer without plugging in a cable. This is now standard on most printers — confirm before buying.',
         tip: 'Quick Tip: Most HP, Epson, and Canon printers can also be set up and operated through a smartphone app. This can be much more convenient than using the small buttons on the printer itself.',
       },
       {

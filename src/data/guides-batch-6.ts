@@ -231,7 +231,7 @@ export const guidesBatch6: Guide[] = [
     steps: [
       { title: 'Try Perplexity first', content: 'Visit perplexity.ai. Type any question in plain English — "What is the best way to remove a red wine stain?" — and you get a clear, cited answer instead of 10 blue links. It is free and requires no account.' },
       { title: 'Compare with ChatGPT', content: 'Visit chat.openai.com. ChatGPT is more conversational — it is better for follow-up questions, brainstorming, and creative tasks. But it does not always cite its sources the way Perplexity does.' },
-      { title: 'Try Microsoft Copilot', content: 'Visit copilot.microsoft.com. Copilot is built into Windows and Edge. It combines Bing search results with AI, so you get answers plus links. It is free and works well for factual questions.' },
+      { title: 'Try Microsoft Copilot', content: 'Visit copilot.microsoft.com. Copilot is built into Windows and Edge. It combines Bing search results with AI. So you get answers plus links. It is free and works well for factual questions.' },
       { title: 'Understand the tradeoffs', content: 'Perplexity is best for research (it cites sources). ChatGPT is best for creative tasks and conversations. Copilot is best if you already use Windows or Edge. All three are free for basic use.' },
       { title: 'Know the limitations', content: 'AI search engines can make mistakes ("hallucinate"). Always verify important information — especially about health, legal, or financial topics — with an official source. AI is a starting point, not the final word.' },
     ],

@@ -19,7 +19,7 @@ Policygenius does not charge you anything to use. The insurance companies pay Po
 
 If you find a plan you like, you can apply directly through the website. For life insurance, the application usually involves answering health questions and sometimes a short phone or video call with a licensed agent. For home and auto insurance, many policies can be purchased completely online.
 
-Policygenius is especially helpful if you have recently gone through a life change — getting married, having a baby, buying a home, or retiring — and need to review your coverage. Their agents are salaried, not commission-based on individual sales, so they are focused on helping you find the right fit rather than selling you the most expensive option.
+Policygenius is especially helpful if you have recently gone through a life change — getting married, having a baby, buying a home, or retiring — and need to review your coverage. Their agents are salaried, not commission-based on individual sales. So they are focused on helping you find the right fit rather than selling you the most expensive option.
 
 Even if you are not ready to buy today, the site is a great way to learn what different types of insurance cost and what they cover.`,
     steps: [
@@ -158,7 +158,7 @@ The app is free and works on both iPhone and Android. Once you are signed in wit
 
 The digital ID card feature is particularly useful. Instead of keeping a paper card in your glove box, your insurance information is always on your phone. If you get pulled over or are in an accident, you can show the officer your current coverage right on your screen.
 
-GEICO's app also has a feature called "Virtual Assistant" — a chat tool that can answer common questions about your policy, help you make changes, and walk you through processes like adding a vehicle or updating your address. It is available around the clock, so you are not stuck waiting for office hours.
+GEICO's app also has a feature called "Virtual Assistant" — a chat tool that can answer common questions about your policy, help you make changes, and walk you through processes like adding a vehicle or updating your address. It is available around the clock. So you are not stuck waiting for office hours.
 
 For roadside emergencies, the app includes a one-tap button to request help. Whether your car has a dead battery, a flat tire, or you are locked out, you can send your GPS location to a service technician and track when they will arrive.
 
@@ -301,7 +301,7 @@ With Original Medicare, the federal government pays your medical bills directly.
 
 Medicare Advantage works differently. Instead of the government paying your bills, you enroll in a plan offered by a private company — like Humana, UnitedHealthcare, or Blue Cross — and that company manages your coverage. You still pay the Part B premium, but the plan itself may have a lower or even $0 additional monthly premium.
 
-Medicare Advantage plans often include extra benefits that Original Medicare does not cover, such as dental care, vision exams, hearing aids, gym memberships, and sometimes transportation to medical appointments. Many plans also include prescription drug coverage, so you do not need a separate Part D plan.
+Medicare Advantage plans often include extra benefits that Original Medicare does not cover, such as dental care, vision exams, hearing aids, gym memberships, and sometimes transportation to medical appointments. Many plans also include prescription drug coverage. So you do not need a separate Part D plan.
 
 The trade-off is that Medicare Advantage plans usually require you to use a network of doctors and hospitals. If you see an out-of-network provider, you may pay more or the visit may not be covered at all.
 
@@ -796,7 +796,7 @@ For people who feel overwhelmed by scattered sticky notes, forgotten mental list
       },
       {
         title: `Check off tasks and review your day each morning`,
-        content: `Open Todoist each morning and tap "Today" in the sidebar to see everything due that day. Work through the list and tap the circle next to each task to check it off. Completed tasks disappear from your active list and move to your completed history, so you always have a record of what you have done.`,
+        content: `Open Todoist each morning and tap "Today" in the sidebar to see everything due that day. Work through the list and tap the circle next to each task to check it off. Completed tasks disappear from your active list and move to your completed history. So you always have a record of what you have done.`,
         tip: `Quick Tip: The "Upcoming" view shows tasks due over the next several days, which helps you plan ahead and avoid last-minute surprises.`,
       },
     ],
@@ -819,7 +819,7 @@ Tasks in TickTick work much like other to-do apps. You create tasks, set due dat
 
 The habit tracker is one of TickTick's most popular features. You can set up a daily or weekly habit — like walking 20 minutes, reading before bed, or calling a family member — and track your progress with a visual streak chart. Seeing your streak grow encourages consistency in a way a plain list cannot.
 
-The built-in calendar shows your tasks and events together on a weekly or monthly view, so you can see at a glance what is coming up. You can also connect TickTick to your Google Calendar so your events appear alongside your tasks.
+The built-in calendar shows your tasks and events together on a weekly or monthly view. So you can see at a glance what is coming up. You can also connect TickTick to your Google Calendar so your events appear alongside your tasks.
 
 For anyone who wants more than a basic list but finds complex project management tools overwhelming, TickTick strikes a useful balance.`,
     steps: [

@@ -90,7 +90,7 @@ This guide covers Spotify, the most popular service, with notes on Pandora at th
       },
       {
         title: 'Save artists and playlists you like',
-        content: 'When you find an artist you enjoy, tap "Follow" to save them. When you find a playlist (Spotify makes thousands of curated playlists like "Classic Country" or "60s Rock"), tap the heart icon to save it. Saved items appear in "Your Library" at the bottom of the app, so you can find them again later.',
+        content: 'When you find an artist you enjoy, tap "Follow" to save them. When you find a playlist (Spotify makes thousands of curated playlists like "Classic Country" or "60s Rock"), tap the heart icon to save it. Saved items appear in "Your Library" at the bottom of the app. So you can find them again later.',
       },
       {
         title: 'Try Daily Mix and Discover Weekly',

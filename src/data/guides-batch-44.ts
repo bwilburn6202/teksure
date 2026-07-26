@@ -116,7 +116,7 @@ If you have a Gmail address, the Gmail app is already set up from the moment you
 
 For email services like Yahoo Mail, Outlook.com (Hotmail), or iCloud, the Gmail app will handle the connection automatically once you enter your email address and password. For workplace emails that use a private server, your IT department may need to give you server settings.
 
-Once an account is added, you will see all your email inboxes either combined into one view or separated by account — you can switch between them with a tap. Notifications appear on your phone when new emails arrive, so you never miss an important message.`,
+Once an account is added, you will see all your email inboxes either combined into one view or separated by account — you can switch between them with a tap. Notifications appear on your phone when new emails arrive. So you never miss an important message.`,
     steps: [
       {
         title: `Open the Gmail App`,
@@ -553,7 +553,7 @@ You can attach an AirTag with a keyring holder, a loop, or a case — various ac
       },
       {
         title: `Attach the AirTag`,
-        content: `Slip the AirTag into a keyring holder or loop (sold separately) and attach it to your key ring or bag zipper. For a wallet, use a slim wallet case or a credit card holder that fits an AirTag. The AirTag itself is water resistant, so it handles rain and splashes without a problem.`,
+        content: `Slip the AirTag into a keyring holder or loop (sold separately) and attach it to your key ring or bag zipper. For a wallet, use a slim wallet case or a credit card holder that fits an AirTag. The AirTag itself is water resistant. So it handles rain and splashes without a problem.`,
       },
     ],
   },

@@ -17,7 +17,7 @@ export const guidesBatch13: Guide[] = [
     thumbnailEmoji: '',
     publishedAt: '2026-04-19',
     difficulty: 'Beginner',
-    body: "Telehealth — seeing your doctor through a video call — has become one of the most common ways people manage their health. It works on any smartphone, tablet, or computer with a camera and internet connection. Medicare now covers telehealth visits for most appointments, so there is usually no extra cost compared to an in-person visit.",
+    body: "Telehealth — seeing your doctor through a video call — has become one of the most common ways people manage their health. It works on any smartphone, tablet, or computer with a camera and internet connection. Medicare now covers telehealth visits for most appointments. So there is usually no extra cost compared to an in-person visit.",
     steps: [
       {
         title: 'Confirm your appointment details and the platform your doctor uses',
@@ -509,7 +509,7 @@ export const guidesBatch13: Guide[] = [
     thumbnailEmoji: '',
     publishedAt: '2026-04-19',
     difficulty: 'Beginner',
-    body: "Zelle is a fast, free way to send money directly from your bank account to someone else's bank account. It's built into most major bank apps, so you don't need a separate app. Money transfers instantly — usually within minutes. It's useful for splitting a dinner bill, paying rent, or reimbursing a family member. However, Zelle transfers cannot be reversed, which is why it's important to know how scammers try to misuse it.",
+    body: "Zelle is a fast, free way to send money directly from your bank account to someone else's bank account. It's built into most major bank apps. So you don't need a separate app. Money transfers instantly — usually within minutes. It's useful for splitting a dinner bill, paying rent, or reimbursing a family member. However, Zelle transfers cannot be reversed, which is why it's important to know how scammers try to misuse it.",
     steps: [
       {
         title: `Find Zelle in your bank's app`,

@@ -35,7 +35,7 @@ Second, updates fix bugs — small errors in the software that can make your pho
 
 One of the most common worries is that updating will delete photos, messages, or apps. It will not. A software update replaces the operating system code running in the background — not your personal files. Your photos, contacts, text messages, and apps stay exactly where they are.
 
-That said, it is always a smart habit to back up your phone before any major update, so you have a copy of your data no matter what. The steps below include how to do this quickly.
+That said, it is always a smart habit to back up your phone before any major update. So you have a copy of your data no matter what. The steps below include how to do this quickly.
 
 **Before you update: three things to do**
 
@@ -119,7 +119,7 @@ Only you can see your calendar unless you choose to share it. Sharing is optiona
 
 **Syncing with your phone**
 
-If you add an event on your computer, it automatically appears on your phone within seconds — and vice versa. This means you only have to enter an appointment once. Google Calendar also works well with Apple's built-in Calendar app on iPhone, so you can see Google Calendar events alongside iCloud events if you prefer.
+If you add an event on your computer, it automatically appears on your phone within seconds — and vice versa. This means you only have to enter an appointment once. Google Calendar also works well with Apple's built-in Calendar app on iPhone. So you can see Google Calendar events alongside iCloud events if you prefer.
 
 **Source:** Google Calendar Help Center at support.google.com/calendar`,
     steps: [
