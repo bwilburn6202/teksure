@@ -9,24 +9,21 @@ blocking something real. They're ordered by how much they cost you to leave alon
 
 ---
 
-## 1. What is your service area? — blocks in-home bookings
+## 1. Service area — RESOLVED (July 26): remote-only, nationwide
 
-**Status:** the booking flow now asks whether the customer wants remote or
-in-home help and collects their address. Nothing validates that address.
+You confirmed there's no homebase and no technicians placed anywhere yet, so
+in-home visits can't be fulfilled. The site now sells **remote support, anywhere
+in the United States** — which you can deliver today, with no travel and no
+service-area limits.
 
-**Why it matters:** someone in another state can book an in-home visit, pay a
-$15 deposit, and nothing stops them. You'd have to refund it and apologize. The
-site also says "travel within 10 miles" and "$0.45/mile beyond" without saying
-10 miles *from where*.
+Nothing was deleted. There's a single flag, `ONSITE_AVAILABLE` in
+`src/data/pricing.ts`, currently `false`. Flip it to `true` the day you have
+technicians who can travel, and the in-home option, the address fields, and the
+travel/mileage pricing all come back across the booking flow, pricing page, and
+policy pages at once.
 
-**What I need from you:** the ZIP codes or the city + radius you actually cover.
-Once you tell me, I'll add the check to the booking form so out-of-area
-customers are told immediately and offered a remote session instead — rather
-than being charged and disappointed.
-
-**Interim option:** if you're only doing remote work right now, say so and I'll
-hide the in-home option entirely. That's a 10-minute change and it's better than
-promising something you can't deliver.
+**Before you flip it, you'll need to decide:** the covered ZIPs or city + radius,
+so out-of-area customers get told immediately instead of charged and disappointed.
 
 ---
 
@@ -68,6 +65,31 @@ refund policy; you had neither). Both are written and live. Two gaps:
 
 Neither blocks you from operating today, but the first one weakens the terms if
 you ever need to rely on them.
+
+---
+
+## 3b. Insurance and the audit — claims are held back until they're real
+
+You said insured and audited are the plan but not yet in place, so **neither word
+appears anywhere on the site.** That was deliberate.
+
+Advertising them before they exist would be a false advertising claim. It matters
+more than usual here because fake tech-support operations targeting seniors use
+exactly those words to sound legitimate — if TekSure is ever caught overstating
+on the same axis, it costs far more trust than the claims would have bought.
+
+`TRUST_POINTS` in `src/data/pricing.ts` is the one place to add them. When the
+policy is bound and the audit is done, **keep the certificate and the audit report
+on file first**, then add them there and they appear across every page at once.
+
+I also removed a badge the old pricing page carried: *"Vetted technicians —
+ID-checked, background-verified."* If TekSure is currently one person, that badge
+implies a screened team you don't have. It's replaced with three things that are
+true today: based in America, no fix no charge, available nationwide.
+
+**When you hire your first technician,** actually run the background check and put
+the badge back — it's a strong claim precisely because most competitors can't make
+it honestly.
 
 ---
 
