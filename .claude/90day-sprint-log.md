@@ -901,3 +901,58 @@ dev-loop cycle 23 (2026-07-25T14:30:18.544Z)
    - "Wi-Fi 7 vs Wi-Fi 6E — do you need to upgrade your router?"
    - "iCloud+ Private Relay — what it does and when to leave it on"
 5. Once git is unstuck, back-fill affiliate links across the shipped Nest Doorbell, AirPods Pro 2 hearing aid, and USB-drive-for-ChromeOS-Flex guides simultaneously.
+
+---
+
+## 2026-07-26 (Day 76)
+
+### Guides added — 6 new (batch 329)
+- toll-road-text-scam-warning (Safety) — E-ZPass/SunPass/FasTrak phishing text scam
+- set-up-medication-reminders-iphone-android-2026 (Health Tech) — iPhone Health app Medications + Android alarm/voice reminders
+- turn-on-live-captions-phone-calls (Health Tech) — Live Captions setup on iPhone and Android for calls
+- freeze-credit-all-three-bureaus (Financial Tech) — Equifax/Experian/TransUnion credit freeze walkthrough
+- apple-check-in-safety-feature (Safety) — iOS 17+ Check In feature in Messages
+- amazon-subscribe-and-save-guide (Buying Guides) — Subscribe & Save discount mechanics and management
+
+All 6 include an official source citation, plain-language steps, and a Quick Tip or warning callout. `npm test` (104/104) and `tsc --noEmit` both clean before commit.
+
+### Freshness sweep
+- Reviewed the 4 remaining dev-loop stale-OS flags (guides-batch-327, -94, -42). All three are contextually correct as written — minimum-OS-version requirements and historical "old hardware" framing, not actually outdated claims — so left unchanged rather than editing for the sake of clearing the warning count.
+
+### Features shipped
+- None this run (feature day is Monday; today is Sunday).
+
+### Backlog items cleared
+- Confirmed cycle 23/24 dev-loop findings: 0 duplicate slugs, 0 broken internal links, TypeScript clean, only 4 stale-OS warnings (down from 67 in early June).
+
+### Git health — RESOLVED this run
+The local mounted checkout's `.git` directory cannot `unlink()` its own lock files or loose objects on this filesystem (`rm -f`/`os.remove` fail with "Operation not permitted" even as the owning user; `mv`/`rename` works). This blocked every commit and push for weeks per prior log entries. Worked around it today by cloning a **fresh copy to `/tmp/teksure-push`**, copying the two changed files over, committing, and pushing from there — bypassing the corrupted local `.git` state entirely. Push succeeded: `2508f369` is now on `origin/main`. The local mounted checkout is still stuck (`git reset --hard origin/main` fails with the same unlink errors on tracked files, not just lock files), but that no longer blocks shipping — **the `/tmp` clone pattern is now the standing workaround for every future run** until Bailey resets the mount on the real Mac.
+
+### Running totals vs 90-day targets
+| Metric | Target (2026-08-10) | Current | Status |
+|---|---|---|---|
+| Guides | 4,500 | **4,021** (+6 this run) | 89.4% — 15 days left, need ~32/day to hit target |
+| Tools | 200+ | 285 | Exceeded |
+| TypeScript errors | 0 | 0 | OK |
+| Duplicate slugs | 0 | 0 | OK |
+| Broken internal links | 0 | 0 | OK |
+| Stale OS mentions | (dev-loop warn floor) | 4 (all reviewed, contextually valid) | Stable |
+| Traffic | 10,000/mo | Not measured this run | Still unconfirmed whether analytics is wired up |
+| Monetization | AdSense or 3 affiliate programs live | None | Blocked on Bailey — 76 days in, still zero |
+| TekSure Brain / Ollama | Hosted Ollama active | Edge functions deployed, unchanged | Blocked on Hetzner CX22 provisioning |
+| Git health (local mount) | Clean, pushed | **Push path unblocked via /tmp clone workaround**; mount itself still corrupted | No longer a shipping blocker |
+
+### Monetization status
+- AdSense: no update this run.
+- Affiliate: no update. No new blocker beyond the standing one — still waiting on Bailey for a publisher ID or Associates tag.
+
+### Blockers
+- **AdSense / affiliate programs remain zero.** 15 days from target, no measurable monetization progress — this is now the single biggest gap against the 90-day targets.
+- **Traffic measurement unresolved.** Cannot confirm whether analytics captures visits — need Bailey to point at GA4/Plausible or install one.
+- **Local mount `.git` is still corrupted** (can't `reset --hard`, can't clean up rebase/lock artifacts). Not blocking shipping anymore (see workaround above) but should be reset properly by Bailey on the real Mac when convenient — 10 `.stale-*` lock files and multiple `rebase-merge.bak*` dirs have accumulated in `.git/`.
+
+### Next-day priorities (2026-07-27)
+1. Use the `/tmp/teksure-push` clone pattern for all future commits until the mount is reset.
+2. Add 8–10 more guides toward the ~32/day pace needed to hit 4,500 by 2026-08-10. Candidate topics carried over from yesterday's list are still open (Apple Vision Pro, iOS 18 Mail Categories, USPS redelivery scam, grocery loyalty apps, fake Geek Squad renewal scam, Apple Cash spending caps, Wi-Fi 7 vs 6E, iCloud+ Private Relay).
+3. **Bailey:** hand over AdSense publisher ID or Amazon Associates tag — this is the only unmet target with zero measurable progress after 76 days.
+4. Monday (2026-07-27) is feature day — ship one new tool from the backlog.
