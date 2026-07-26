@@ -241,9 +241,9 @@ export default function SavingsGoalTracker() {
                           placeholder="Add deposit $"
                           value={depositAmounts[g.id] || ""}
                           onChange={e => setDepositAmounts(prev => ({ ...prev, [g.id]: e.target.value }))}
-                          className="text-sm h-8"
+                          className="text-sm h-11"
                         />
-                        <Button size="sm" onClick={() => deposit(g.id)} className="h-8">Deposit</Button>
+                        <Button size="sm" onClick={() => deposit(g.id)} className="h-11">Deposit</Button>
                       </div>
                     )}
                     {done && <p className="text-sm font-semibold text-green-700">🎉 Goal reached!</p>}

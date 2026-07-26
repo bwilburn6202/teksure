@@ -78,7 +78,7 @@ const PasswordStrength = () => {
               <Button
                 variant="ghost"
                 size="icon"
-                className="absolute right-1 top-1/2 -translate-y-1/2 h-8 w-8 min-h-0"
+                className="absolute right-0.5 top-1/2 -translate-y-1/2 h-11 w-11 min-h-0"
                 onClick={() => setShowPassword(!showPassword)}
                 aria-label={showPassword ? 'Hide password' : 'Show password'}
               >

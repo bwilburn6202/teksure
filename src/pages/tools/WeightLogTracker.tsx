@@ -206,7 +206,7 @@ export default function WeightLogTracker() {
                       <Button
                         variant="ghost"
                         size="icon"
-                        className="h-8 w-8 text-red-400 hover:text-red-600 print:hidden"
+                        className="h-11 w-11 text-red-400 hover:text-red-600 print:hidden"
                         onClick={() => remove(r.id)}
                         aria-label="Remove reading"
                       >

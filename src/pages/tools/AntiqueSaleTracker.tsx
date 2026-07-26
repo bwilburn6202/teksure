@@ -174,9 +174,9 @@ function SellNowRow({ id, markSold }: { id: string; markSold: (id: string, sold:
   const [fees, setFees] = useState("");
   return (
     <div className="mt-2 flex gap-2 items-center print:hidden">
-      <Input type="number" step="0.01" placeholder="Sold price $" value={sold} onChange={e => setSold(e.target.value)} className="h-8 text-sm flex-1" />
-      <Input type="number" step="0.01" placeholder="Fees $" value={fees} onChange={e => setFees(e.target.value)} className="h-8 text-sm w-24" />
-      <Button size="sm" onClick={() => markSold(id, sold, fees)} disabled={!sold} className="h-8 bg-emerald-600 hover:bg-emerald-700">Mark Sold</Button>
+      <Input type="number" step="0.01" placeholder="Sold price $" value={sold} onChange={e => setSold(e.target.value)} className="h-11 text-sm flex-1" />
+      <Input type="number" step="0.01" placeholder="Fees $" value={fees} onChange={e => setFees(e.target.value)} className="h-11 text-sm w-24" />
+      <Button size="sm" onClick={() => markSold(id, sold, fees)} disabled={!sold} className="h-11 bg-emerald-600 hover:bg-emerald-700">Mark Sold</Button>
     </div>
   );
 }

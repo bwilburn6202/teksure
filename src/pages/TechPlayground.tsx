@@ -141,11 +141,20 @@ function MousePlayground() {
           )}
 
           {currentExercise === 1 && (
-            <div 
+            <div
               id="double-click-icon"
+              role="button"
+              tabIndex={0}
+              aria-label="Double-click practice target"
               onClick={handleComplete}
               onDoubleClick={handleComplete}
-              className="h-16 w-16 bg-primary/20 rounded-xl flex items-center justify-center cursor-pointer hover:bg-primary/30 transition-colors"
+              onKeyDown={(e) => {
+                if (e.key === 'Enter' || e.key === ' ') {
+                  e.preventDefault();
+                  handleComplete();
+                }
+              }}
+              className="h-16 w-16 bg-primary/20 rounded-xl flex items-center justify-center cursor-pointer hover:bg-primary/30 transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary"
             >
               <MousePointer className="h-8 w-8 text-primary" />
             </div>
@@ -471,10 +480,19 @@ const TechPlayground = () => {
               {playgroundModules.map((module) => {
                 const Icon = module.icon;
                 return (
-                  <Card 
-                    key={module.id} 
-                    className="hover-lift cursor-pointer border-border/60 hover:border-primary/30"
+                  <Card
+                    key={module.id}
+                    role="button"
+                    tabIndex={0}
+                    aria-label={`Open ${module.title} module`}
+                    className="hover-lift cursor-pointer border-border/60 hover:border-primary/30 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary"
                     onClick={() => setActiveModule(module.id)}
+                    onKeyDown={(e) => {
+                      if (e.key === 'Enter' || e.key === ' ') {
+                        e.preventDefault();
+                        setActiveModule(module.id);
+                      }
+                    }}
                   >
                     <CardHeader className="pb-3">
                       <div className="flex items-start justify-between">

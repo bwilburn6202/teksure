@@ -343,7 +343,7 @@ const Index = () => {
                   onClick={() => send()}
                   disabled={!input.trim() || typing}
                   aria-label="Send message"
-                  className="h-9 w-9 flex items-center justify-center rounded-full bg-foreground text-background hover:opacity-90 transition-opacity disabled:opacity-30"
+                  className="h-11 w-11 flex items-center justify-center rounded-full bg-foreground text-background hover:opacity-90 transition-opacity disabled:opacity-30"
                 >
                   <ArrowUp className="h-4 w-4" aria-hidden="true" />
                 </button>

@@ -88,7 +88,7 @@ export default function KnowledgeBaseManager({
             id="doc-group-select"
             value={activeUrlGroupId}
             onChange={(e) => onSetGroupId(e.target.value)}
-            className="w-full h-9 pl-3 pr-8 appearance-none border border-border bg-background text-foreground rounded-lg text-sm focus:ring-2 focus:ring-primary/30 focus:border-primary transition"
+            className="w-full h-11 pl-3 pr-8 appearance-none border border-border bg-background text-foreground rounded-lg text-sm focus:ring-2 focus:ring-primary/30 focus:border-primary transition"
           >
             {urlGroups.map((g) => (
               <option key={g.id} value={g.id}>
@@ -107,7 +107,7 @@ export default function KnowledgeBaseManager({
           value={urlInput}
           onChange={(e) => setUrlInput(e.target.value)}
           placeholder="https://support.apple.com/..."
-          className="h-9 text-sm"
+          className="h-11 text-sm"
           onKeyDown={(e) => e.key === "Enter" && handleAdd()}
         />
         <Button
@@ -116,7 +116,7 @@ export default function KnowledgeBaseManager({
           onClick={handleAdd}
           disabled={urls.length >= maxUrls}
           aria-label="Add link"
-          className="h-9 w-9 shrink-0"
+          className="h-11 w-11 shrink-0"
         >
           <Plus className="h-4 w-4" />
         </Button>

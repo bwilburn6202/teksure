@@ -77,13 +77,13 @@ function NumStep({ label, value, set, max = 10 }: { label: string; value: number
       <div className="flex items-center gap-2">
         <button
           onClick={() => set(Math.max(0, value - 1))}
-          className="h-8 w-8 rounded-lg border hover:bg-muted text-lg leading-none"
+          className="h-11 w-11 rounded-lg border hover:bg-muted text-lg leading-none"
           aria-label={`Decrease ${label}`}
         >−</button>
         <span className="w-8 text-center font-semibold">{value}</span>
         <button
           onClick={() => set(Math.min(max, value + 1))}
-          className="h-8 w-8 rounded-lg border hover:bg-muted text-lg leading-none"
+          className="h-11 w-11 rounded-lg border hover:bg-muted text-lg leading-none"
           aria-label={`Increase ${label}`}
         >+</button>
       </div>
