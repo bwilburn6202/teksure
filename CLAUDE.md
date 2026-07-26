@@ -77,6 +77,16 @@ invisible to Bing, social crawlers, and AI answer engines.
   reports the deployed commit and prerendered page count.
 - Redirects come from `<Navigate>` routes in `App.tsx` via `scripts/generate-redirects.mjs`.
   Add a redirect there, not by hand in `vercel.json`.
+- **Turning a redirect back into a real page takes TWO steps.** Removing the
+  `<Navigate>` route is not enough. `generate-redirects.mjs` keeps any redirect
+  it no longer finds in `App.tsx`, treating it as hand-added — so the stale 308
+  survives and silently shadows the new page, which then 308s away forever while
+  looking perfectly correct in the source. Delete the entry from `vercel.json`
+  by hand as well. (Hit on 2026-07-26 restoring `/pricing`: the page was live in
+  the bundle and still redirected to `/get-help` at the edge.)
+- **`vercel.json` is read at the edge from the committed file**, before the build
+  runs. Regenerating it during `prebuild` does not affect the deploy in progress.
+  Commit the regenerated file.
 
 ## Invariants — do not break these (added 2026-07-25 audit)
 

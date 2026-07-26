@@ -72,11 +72,6 @@
       "permanent": true
     },
     {
-      "source": "/pricing",
-      "destination": "/get-help",
-      "permanent": true
-    },
-    {
       "source": "/tools/jargon-translator",
       "destination": "/tools/tech-jargon-translator",
       "permanent": true
