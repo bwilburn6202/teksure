@@ -1,5 +1,5 @@
 import { useEffect, useMemo, useState } from 'react';
-import { useNavigate, useSearchParams } from 'react-router-dom';
+import { Link, useNavigate, useSearchParams } from 'react-router-dom';
 import {
   Phone, Mail, User, Monitor, MessageSquare, CheckCircle, ArrowRight, Loader2,
   Calendar, Clock, Wrench, CheckCircle2, Wifi, Shield, Printer, Smartphone,
@@ -19,6 +19,14 @@ import { Footer } from '@/components/layout/Footer';
 import { SEOHead } from '@/components/SEOHead';
 import { supabase } from '@/integrations/supabase/client';
 import { useAuth } from '@/contexts/AuthContext';
+import {
+  FIRST_HOUR_PRICE,
+  ADDITIONAL_HOUR_PRICE,
+  DEPOSIT_AMOUNT,
+  FREE_CANCELLATION_HOURS,
+  formatPrice,
+  remainderAfterDeposit,
+} from '@/data/pricing';
 
 type Mode = 'asap' | 'schedule';
 type ServiceType = 'wifi' | 'setup' | 'security' | 'printer' | 'phone' | 'general';
@@ -466,7 +474,10 @@ const GetHelp = () => {
 
               {step === 0 && (
                 <div>
-                  <h2 className="text-2xl font-bold tracking-tight mb-6">What do you need help with?</h2>
+                  <h2 className="text-2xl font-bold tracking-tight mb-2">What do you need help with?</h2>
+                  <p className="text-muted-foreground mb-6">
+                    Every service is the same price: <strong className="text-foreground">{formatPrice(FIRST_HOUR_PRICE)} for the first hour</strong>, {formatPrice(ADDITIONAL_HOUR_PRICE)} for each additional hour. If we can't fix it, you pay nothing.
+                  </p>
                   <div className="grid gap-3 sm:grid-cols-2 mb-4">
                     {services.map((s) => {
                       const Icon = s.icon;
@@ -603,8 +614,8 @@ const GetHelp = () => {
                   <Card className="rounded-xl border border-border bg-card mb-6">
                     <CardContent className="p-4">
                       <p className="text-xs font-semibold text-muted-foreground uppercase tracking-wider mb-3">Pricing</p>
-                      <div className="flex justify-between text-sm mb-2"><span>First hour</span><strong>$49</strong></div>
-                      <div className="flex justify-between text-sm text-muted-foreground mb-3"><span>Each additional hour</span><span>$29</span></div>
+                      <div className="flex justify-between text-sm mb-2"><span>First hour</span><strong>{formatPrice(FIRST_HOUR_PRICE)}</strong></div>
+                      <div className="flex justify-between text-sm text-muted-foreground mb-3"><span>Each additional hour</span><span>{formatPrice(ADDITIONAL_HOUR_PRICE)}</span></div>
                       <p className="text-xs text-muted-foreground">Most jobs take 1 hour. You only pay for time spent — no fix, no charge.</p>
                     </CardContent>
                   </Card>
@@ -635,8 +646,12 @@ const GetHelp = () => {
                         {paymentOption === 'deposit' && <div className="w-2.5 h-2.5 rounded-full bg-primary" />}
                       </div>
                       <div>
-                        <p className="font-semibold text-sm">Pay $15 deposit now</p>
-                        <p className="text-xs text-muted-foreground mt-1">Secure your booking with a small deposit. Refundable if you cancel 24+ hours before.</p>
+                        <p className="font-semibold text-sm">Pay {formatPrice(DEPOSIT_AMOUNT)} deposit now</p>
+                        <p className="text-xs text-muted-foreground mt-1">
+                          Secure your booking with a small deposit. It comes off your bill — a 1-hour job leaves{' '}
+                          {formatPrice(remainderAfterDeposit())} to pay on the day. Fully refundable if you cancel{' '}
+                          {FREE_CANCELLATION_HOURS}+ hours before.
+                        </p>
                       </div>
                     </button>
                   </div>
@@ -661,7 +676,11 @@ const GetHelp = () => {
                       <p className="flex items-center gap-2"><Wrench className="h-4 w-4 text-muted-foreground" /> <strong>{selectedService?.label}</strong></p>
                       <p className="flex items-center gap-2"><Calendar className="h-4 w-4 text-muted-foreground" /> <strong>{selectedDate?.dayName}, {selectedDate?.label}</strong></p>
                       <p className="flex items-center gap-2"><Clock className="h-4 w-4 text-muted-foreground" /> <strong>{selectedSlot?.label}</strong></p>
-                      <p className="flex items-center gap-2"><CreditCard className="h-4 w-4 text-muted-foreground" /> <strong>{paymentOption === 'deposit' ? 'Deposit $15 now + remainder on day' : 'Pay on the day'}</strong></p>
+                      <p className="flex items-center gap-2"><CreditCard className="h-4 w-4 text-muted-foreground" /> <strong>{paymentOption === 'deposit' ? `${formatPrice(DEPOSIT_AMOUNT)} now, ${formatPrice(remainderAfterDeposit())} on the day` : `${formatPrice(FIRST_HOUR_PRICE)} on the day`}</strong></p>
+                      <p className="text-xs text-muted-foreground pt-1">
+                        Based on a 1-hour job. Longer jobs add {formatPrice(ADDITIONAL_HOUR_PRICE)} per extra hour. If we can't fix it, you pay nothing.{' '}
+                        <Link to="/refund-policy" className="text-primary hover:underline">Refund policy</Link>
+                      </p>
                     </CardContent>
                   </Card>
 

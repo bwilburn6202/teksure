@@ -2,57 +2,37 @@ import { Navbar } from '@/components/layout/Navbar';
 import { Footer } from '@/components/layout/Footer';
 import { SEOHead } from '@/components/SEOHead';
 import { Button } from '@/components/ui/button';
-import { Check, Shield, Clock, Star, Monitor, Home, Award, ArrowRight } from 'lucide-react';
+import { Check, Shield, Clock, Star, ArrowRight } from 'lucide-react';
 import { Link } from 'react-router-dom';
+import {
+  FIRST_HOUR_PRICE,
+  ADDITIONAL_HOUR_PRICE,
+  DEPOSIT_AMOUNT,
+  FREE_CANCELLATION_HOURS,
+  INCLUDED_TRAVEL_MILES,
+  PER_MILE_RATE,
+  formatPrice,
+  remainderAfterDeposit,
+} from '@/data/pricing';
 
-const plans = [
-  {
-    name: 'Remote Fix',
-    price: '$49',
-    deposit: '$15',
-    desc: 'Quick help over the phone or screen sharing',
-    icon: Monitor,
-    features: [
-      '30-min remote session',
-      'Screen sharing support',
-      'Follow-up email summary',
-      'Chat support included',
-    ],
-  },
-  {
-    name: 'On-Site Visit',
-    price: '$99',
-    deposit: '$15',
-    desc: 'A technician comes to your home',
-    icon: Home,
-    features: [
-      '1-hour on-site visit',
-      'Hardware diagnostics',
-      'Setup & installation',
-      'Priority technician matching',
-      'No fix, no charge',
-    ],
-    popular: true,
-  },
-  {
-    name: 'Premium',
-    price: '$149',
-    deposit: '$15',
-    desc: 'Comprehensive support for bigger jobs',
-    icon: Award,
-    features: [
-      '2-hour session',
-      'Full system health check',
-      'Data backup assistance',
-      'Dedicated technician',
-      '48-hr follow-up call',
-    ],
-  },
+/**
+ * NOTE: this page previously advertised three flat tiers ($49 / $99 / $149)
+ * that did not exist in the booking flow. The booking flow charges by the hour
+ * and is what is wired to Stripe, so this page now describes that same model
+ * and reads every number from src/data/pricing.ts.
+ */
+
+const included = [
+  'A real person who explains things in plain English',
+  'As much of the hour as your problem needs',
+  'A written summary emailed to you afterward',
+  'Follow-up questions answered at no extra charge',
+  `Travel within ${INCLUDED_TRAVEL_MILES} miles for in-home visits`,
 ];
 
 const trustBadges = [
   { icon: Shield, label: 'No fix, no charge', sub: 'You only pay if we sort it' },
-  { icon: Clock, label: 'Same-week appointments', sub: 'Book for as soon as tomorrow' },
+  { icon: Clock, label: 'Same-week appointments', sub: 'Often as soon as tomorrow' },
   { icon: Star, label: 'Vetted technicians', sub: 'ID-checked, background-verified' },
 ];
 
@@ -62,59 +42,26 @@ const pricingJsonLd = [
     '@type': 'Service',
     name: 'TekSure Tech Support',
     provider: { '@type': 'Organization', name: 'TekSure', url: 'https://www.teksure.com' },
-    description: 'Professional tech support for seniors and non-technical users — remote and on-site.',
+    description:
+      'Patient, plain-English tech support for seniors and non-technical users — remote or in your home.',
     url: 'https://www.teksure.com/pricing',
-    hasOfferCatalog: {
-      '@type': 'OfferCatalog',
-      name: 'Tech Support Plans',
-      itemListElement: plans.map(plan => ({
-        '@type': 'Offer',
-        name: plan.name,
-        description: plan.desc,
-        price: plan.price.replace('$', ''),
-        priceCurrency: 'USD',
-        url: 'https://www.teksure.com/book',
-        itemOffered: { '@type': 'Service', name: plan.name, description: plan.desc },
-      })),
+    offers: {
+      '@type': 'Offer',
+      price: String(FIRST_HOUR_PRICE),
+      priceCurrency: 'USD',
+      url: 'https://www.teksure.com/get-help',
+      description: `${formatPrice(FIRST_HOUR_PRICE)} for the first hour, then ${formatPrice(
+        ADDITIONAL_HOUR_PRICE,
+      )} for each additional hour.`,
     },
-  },
-  {
-    '@context': 'https://schema.org',
-    '@type': 'FAQPage',
-    mainEntity: [
-      {
-        '@type': 'Question',
-        name: 'How does the $15 deposit work?',
-        acceptedAnswer: {
-          '@type': 'Answer',
-          text: 'Book with just a $15 deposit. Pay the rest on the day of your appointment. If we can\'t fix it, you get a full refund — no questions asked.',
-        },
-      },
-      {
-        '@type': 'Question',
-        name: 'Do you offer a no-fix, no-charge guarantee?',
-        acceptedAnswer: {
-          '@type': 'Answer',
-          text: 'Yes. If our technician cannot resolve your issue, you pay nothing — not even the deposit.',
-        },
-      },
-      {
-        '@type': 'Question',
-        name: 'How quickly can I get an appointment?',
-        acceptedAnswer: {
-          '@type': 'Answer',
-          text: 'We offer same-week appointments, often as soon as the next day depending on your location.',
-        },
-      },
-    ],
   },
 ];
 
 const Pricing = () => (
   <div className="min-h-screen bg-background flex flex-col">
     <SEOHead
-      title="Tech Support Pricing | TekSure — From $49, Book with $15 Deposit"
-      description="Transparent tech support pricing: Remote Fix $49, On-Site Visit $99, Premium $149. Book with just a $15 deposit. No fix, no charge guarantee."
+      title={`Tech Support Pricing | TekSure — ${formatPrice(FIRST_HOUR_PRICE)} the First Hour`}
+      description={`Honest tech support pricing: ${formatPrice(FIRST_HOUR_PRICE)} for the first hour, ${formatPrice(ADDITIONAL_HOUR_PRICE)} for each additional hour. Hold your slot with a ${formatPrice(DEPOSIT_AMOUNT)} deposit. No fix, no charge.`}
       path="/pricing"
       jsonLd={pricingJsonLd}
     />
@@ -126,67 +73,71 @@ const Pricing = () => (
           <div>
             <h1 className="text-3xl md:text-5xl font-bold tracking-tight mb-4">Simple, Honest Pricing</h1>
             <p className="text-muted-foreground text-lg mb-3 max-w-xl mx-auto">
-              No subscriptions. No hidden fees. Pay only for the help you need.
+              One rate for every kind of problem. No subscriptions, no hidden fees, no upselling.
             </p>
-            <p className="text-sm text-muted-foreground">Prices include travel within 10 miles · Extra miles at $0.45/mi</p>
           </div>
         </div>
       </section>
 
-      {/* Plans */}
+      {/* The single rate */}
       <section className="container py-12 md:py-16">
-        <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-6 md:gap-8 max-w-5xl mx-auto mb-12">
-          {plans.map((plan) => (
-            <div key={plan.name}>
-              <div className={`relative flex flex-col h-full rounded-3xl border p-6 md:p-8 transition-all ${
-                plan.popular
-                  ? 'border-primary bg-primary/[0.03] shadow-lg shadow-primary/10'
-                  : 'border-border bg-card hover:shadow-md'
-              }`}>
-                {plan.popular && (
-                  <div className="absolute -top-3 left-1/2 -translate-x-1/2 bg-primary text-primary-foreground text-xs font-semibold px-3 py-1 rounded-full">
-                    Most Popular
-                  </div>
-                )}
-                <div className="text-center mb-6 pt-2">
-                  <div className="flex justify-center mb-3">{(() => { const PIcon = plan.icon; return <PIcon className="h-10 w-10 text-primary" />; })()}</div>
-                  <h3 className="text-xl font-bold mb-1">{plan.name}</h3>
-                  <p className="text-sm text-muted-foreground mb-4">{plan.desc}</p>
-                  <div className="text-5xl font-bold tracking-tight">{plan.price}</div>
-                  <p className="text-xs text-primary font-medium mt-2">Book with just a {plan.deposit} deposit</p>
-                </div>
-                <ul className="space-y-3 mb-8 flex-1">
-                  {plan.features.map((f) => (
-                    <li key={f} className="flex items-start gap-3 text-sm">
-                      <Check className="h-5 w-5 text-primary flex-shrink-0 mt-0.5" />
-                      <span className="text-muted-foreground">{f}</span>
-                    </li>
-                  ))}
-                </ul>
-                <Button asChild className="w-full rounded-xl" variant={plan.popular ? 'default' : 'outline'}>
-                  <Link to="/book">Book Now</Link>
-                </Button>
-              </div>
+        <div className="max-w-2xl mx-auto mb-12">
+          <div className="rounded-3xl border border-primary bg-primary/[0.03] shadow-lg shadow-primary/10 p-6 md:p-10 text-center">
+            <h2 className="text-xl font-bold mb-1">Tech help, by the hour</h2>
+            <p className="text-sm text-muted-foreground mb-6">
+              Remote or in your home — same rate either way
+            </p>
+
+            <div className="flex items-end justify-center gap-2 mb-1">
+              <span className="text-6xl font-bold tracking-tight">{formatPrice(FIRST_HOUR_PRICE)}</span>
+              <span className="text-muted-foreground mb-2">for the first hour</span>
             </div>
-          ))}
+            <p className="text-muted-foreground mb-6">
+              then {formatPrice(ADDITIONAL_HOUR_PRICE)} for each additional hour
+            </p>
+
+            <p className="text-sm text-primary font-medium mb-8">
+              Most jobs are done within the first hour.
+            </p>
+
+            <ul className="space-y-3 mb-8 text-left max-w-md mx-auto">
+              {included.map((f) => (
+                <li key={f} className="flex items-start gap-3 text-sm">
+                  <Check className="h-5 w-5 text-primary flex-shrink-0 mt-0.5" />
+                  <span className="text-muted-foreground">{f}</span>
+                </li>
+              ))}
+            </ul>
+
+            <Button asChild size="lg" className="w-full sm:w-auto rounded-xl h-12 px-8">
+              <Link to="/get-help">Book a Session</Link>
+            </Button>
+          </div>
         </div>
 
         {/* Deposit explainer */}
         <div className="max-w-lg mx-auto rounded-2xl border border-border bg-muted/30 p-6 text-center mb-8">
-          <h3 className="font-semibold text-base mb-2">How the deposit works</h3>
+          <h3 className="font-semibold text-base mb-2">You can book without paying anything</h3>
           <p className="text-sm text-muted-foreground leading-relaxed">
-            Book with just a <strong className="text-foreground">$15 deposit</strong>. Pay the rest on the day of your appointment.
-            If we can't fix it, you get a full refund — no questions asked.
+            Pay the whole amount on the day, or hold your slot with a{' '}
+            <strong className="text-foreground">{formatPrice(DEPOSIT_AMOUNT)} deposit</strong>. The deposit
+            comes off your bill — on a one-hour job that leaves{' '}
+            {formatPrice(remainderAfterDeposit())} to pay afterward. Cancel {FREE_CANCELLATION_HOURS}+ hours
+            ahead and the deposit is refunded in full.{' '}
+            <Link to="/refund-policy" className="text-primary font-medium hover:underline">
+              Read the refund policy
+            </Link>
+            .
           </p>
         </div>
 
-        <p className="text-center text-sm text-muted-foreground">
-          Not sure which plan you need?{' '}
-          <Link to="/book" className="text-primary font-semibold hover:opacity-80 transition-opacity">
-            Book a free consultation
-          </Link>{' '}
-          and we'll recommend the right option.
-        </p>
+        {/* Honest extras */}
+        <div className="max-w-lg mx-auto text-center">
+          <p className="text-sm text-muted-foreground">
+            The only thing that can change the price: in-home visits more than {INCLUDED_TRAVEL_MILES} miles
+            away add {PER_MILE_RATE.toFixed(2)}/mile. We tell you before you book, never after.
+          </p>
+        </div>
       </section>
 
       {/* Trust badges */}
@@ -217,10 +168,10 @@ const Pricing = () => (
           </p>
           <div className="flex flex-wrap justify-center gap-3">
             <Button asChild size="lg" className="gap-2 rounded-xl h-12 px-6 bg-background text-foreground hover:bg-background/90">
-              <Link to="/book">Book a Session <ArrowRight className="h-4 w-4" /></Link>
+              <Link to="/get-help">Book a Session <ArrowRight className="h-4 w-4" /></Link>
             </Button>
             <Button asChild variant="outline" size="lg" className="gap-2 rounded-xl h-12 px-6 border-background/20 text-background hover:bg-background/10">
-              <Link to="/get-help">Get Free Help</Link>
+              <Link to="/guides">Browse Free Guides</Link>
             </Button>
           </div>
         </div>

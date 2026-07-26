@@ -46,6 +46,12 @@ const STATIC_PAGES = [
   { path: '/pricing',       changefreq: 'monthly', priority: '0.6' },
   { path: '/about',         changefreq: 'monthly', priority: '0.5' },
   { path: '/roadmap',       changefreq: 'weekly',  priority: '0.5' },
+  // Legal pages. Low priority for ranking, but they must be crawlable and
+  // reachable — Stripe expects terms and a refund policy to be discoverable
+  // from the site, and customers look for them before paying.
+  { path: '/terms',         changefreq: 'yearly',  priority: '0.3' },
+  { path: '/refund-policy', changefreq: 'yearly',  priority: '0.3' },
+  { path: '/privacy',       changefreq: 'yearly',  priority: '0.3' },
 ];
 
 // ── 1. Guide slugs from every data file ───────────────────────

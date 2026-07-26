@@ -489,12 +489,14 @@ const categories: FAQCategory[] = [
       {
         q: 'How much does a booking cost?',
         plain:
-          'Remote sessions start at $29 for a 20-minute fix. You see the exact price before you book, and you only pay when the job is done. No subscriptions, no hidden fees.',
+          'Sessions are $49 for the first hour and $29 for each additional hour. Most jobs take about an hour. You see the price before you book, you only pay for the time spent, and if we cannot fix it you pay nothing. No subscriptions, no hidden fees.',
         a: (
           <>
-            Remote sessions start at $29 for a 20-minute fix. You see the
-            exact price before you book, and you only pay when the job is
-            done. No subscriptions, no hidden fees. Prefer local, in-person
+            Sessions are <strong>$49 for the first hour</strong> and $29 for
+            each additional hour. Most jobs take about an hour. You see the
+            price before you book, you only pay for the time actually spent,
+            and if we cannot fix your problem you pay nothing. No
+            subscriptions, no hidden fees. Prefer local, in-person
             help? Try{' '}
             <Link to="/local-help" className="text-primary hover:underline">Local Help</Link>.
           </>

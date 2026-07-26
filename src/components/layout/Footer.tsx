@@ -232,10 +232,22 @@ export function Footer() {
               Privacy
             </Link>
             <Link
-              to="/privacy"
+              to="/terms"
               className="text-foreground/65 hover:text-primary transition-colors"
             >
               Terms
+            </Link>
+            <Link
+              to="/refund-policy"
+              className="text-foreground/65 hover:text-primary transition-colors"
+            >
+              Refunds
+            </Link>
+            <Link
+              to="/pricing"
+              className="text-foreground/65 hover:text-primary transition-colors"
+            >
+              Pricing
             </Link>
             <Link
               to="/accessibility"

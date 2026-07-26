@@ -45,6 +45,9 @@ const FindAGuide             = lazy(() => import("./pages/FindAGuide"));
 const QuickFixes             = lazy(() => import("./pages/QuickFixes"));
 const DeviceHub              = lazy(() => import("./pages/DeviceHub"));
 const About                  = lazy(() => import("./pages/About"));
+const Pricing                = lazy(() => import("./pages/Pricing"));
+const Terms                  = lazy(() => import("./pages/Terms"));
+const RefundPolicy           = lazy(() => import("./pages/RefundPolicy"));
 const Roadmap                = lazy(() => import("./pages/Roadmap"));
 const SearchResults          = lazy(() => import("./pages/SearchResults"));
 const Tools                  = lazy(() => import("./pages/Tools"));
@@ -3913,7 +3916,9 @@ const AppContent = () => {
           <Route path="/signup" element={<Signup />} />
           <Route path="/how-it-works" element={<HowItWorks />} />
           {/* /pricing was retired — its info now lives inside /get-help */}
-          <Route path="/pricing" element={<Navigate to="/get-help" replace />} />
+          <Route path="/pricing" element={<Pricing />} />
+          <Route path="/terms" element={<Terms />} />
+          <Route path="/refund-policy" element={<RefundPolicy />} />
           <Route path="/guides" element={<Guides />} />
           <Route path="/guias" element={<GuidesEspanol />} />
           <Route path="/guides/:slug" element={<GuideDetail />} />
