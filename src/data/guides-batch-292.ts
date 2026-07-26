@@ -242,7 +242,7 @@ export const guidesBatch292: Guide[] = [
     steps: [
       {
         title: "Reach out first, gently, in the early weeks",
-        content: "Call the surviving daughter-in-law or son-in-law within the first week and again within the first month. Keep the message short: I am thinking of you, I love the grandchildren, and I am here when you want to talk. Do not require a response. Surviving spouses report that an in-law who shows up without demanding becomes a lifeline. An in-law who pulls away or who shows up needing comfort themselves becomes another thing to manage.",
+        content: "Call the surviving daughter-in-law or son-in-law within the first week and again within the first month. Keep the message short: I am thinking of you, I love the grandchildren. And I am here when you want to talk. Do not require a response. Surviving spouses report that an in-law who shows up without demanding becomes a lifeline. An in-law who pulls away or who shows up needing comfort themselves becomes another thing to manage.",
         tip: "Quick Tip: A short text or voicemail every week or two for the first six months — without expecting a reply — is gentler than a long phone call once a month.",
       },
       {

@@ -522,7 +522,7 @@ export const guidesBatch23: Guide[] = [
     thumbnailEmoji: '',
     publishedAt: '2026-04-19',
     difficulty: 'Beginner',
-    body: `Apple's Notes app comes on every iPhone, iPad, and Mac, and it's more powerful than it looks. Most people use it for basic text notes, but it also handles checklists, sketches, photo attachments, scanned documents, table organization, and even locked notes for sensitive information.\n\nBecause Notes syncs through iCloud, anything you write on your iPhone appears instantly on your Mac and iPad — and vice versa. For keeping track of appointments, grocery lists, meeting notes, gift ideas, or recipes, Notes is one of the best free tools on any Apple device.`,
+    body: `Apple's Notes app comes on every iPhone, iPad, and Mac, and it's more powerful than it looks. Most people use it for basic text notes. But it also handles checklists, sketches, photo attachments, scanned documents, table organization, and even locked notes for sensitive information.\n\nBecause Notes syncs through iCloud, anything you write on your iPhone appears instantly on your Mac and iPad — and vice versa. For keeping track of appointments, grocery lists, meeting notes, gift ideas, or recipes, Notes is one of the best free tools on any Apple device.`,
     steps: [
       {
         title: 'Create folders to organize notes',

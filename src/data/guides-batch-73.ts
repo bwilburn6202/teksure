@@ -102,7 +102,7 @@ The app is a project of the California Academy of Sciences and National Geograph
     difficulty: `Beginner`,
     body: `HelloFresh is a meal kit delivery service that sends you pre-measured ingredients and step-by-step recipe cards right to your front door. Instead of spending time planning meals, making shopping lists, and measuring out ingredients, you open the box, follow the card, and cook a fresh dinner. Most meals take between 30 and 45 minutes to prepare.
 
-This service is especially appealing if you find grocery shopping tiring, if you want to try new recipes without buying large quantities of ingredients, or if you live alone and struggle with buying produce that goes to waste. HelloFresh ships meals for two people, four people, or more, and you can choose how many nights per week you want to cook — typically two, three, four, or five nights.
+This service is especially appealing if you find grocery shopping tiring, if you want to try new recipes without buying large quantities of ingredients, or if you live alone and struggle with buying produce that goes to waste. HelloFresh ships meals for two people, four people, or more. And you can choose how many nights per week you want to cook — typically two, three, four, or five nights.
 
 When you sign up, you tell HelloFresh about your food preferences — whether you want vegetarian options, low-calorie meals, family-friendly recipes, or something else. Each week, HelloFresh shows you a menu and you select the meals you want. Your box arrives on a scheduled delivery day, packed in an insulated container with ice packs to keep everything fresh.
 
@@ -329,7 +329,7 @@ Once you have a charging station set up, build the habit of placing all your dev
     difficulty: `Beginner`,
     body: `Tile is a small, flat device — about the size of a large postage stamp — that you attach to things you often lose, like keys, a wallet, a purse, or a TV remote. When you cannot find that item, you open the Tile app on your phone and tap a button to make the Tile beep loudly. Follow the sound and you will find your missing item.
 
-The Tile works using Bluetooth technology, which means it communicates wirelessly with your phone when both are within roughly 100 to 400 feet of each other depending on the model. If your item is within range, the app shows you how close you are getting as you move toward it, and you can make it ring. If your item is out of range — say your keys ended up in a different building — Tile's network of millions of users can help. The network works anonymously: if any other Tile user's phone passes near your lost item, Tile's system picks up the location and quietly updates the last known location in your app.
+The Tile works using Bluetooth technology, which means it communicates wirelessly with your phone when both are within roughly 100 to 400 feet of each other depending on the model. If your item is within range, the app shows you how close you are getting as you move toward it. And you can make it ring. If your item is out of range — say your keys ended up in a different building — Tile's network of millions of users can help. The network works anonymously: if any other Tile user's phone passes near your lost item, Tile's system picks up the location and quietly updates the last known location in your app.
 
 Setting up Tile is straightforward. You buy the physical Tile device (available at Target, Best Buy, Walmart, Amazon, and the Tile website), download the free Tile app, and follow the instructions to pair each Tile with your phone. Tile devices come in several styles: a small square with a keyring hole, a slim card-sized version for wallets, and sticker versions for smaller items.
 
@@ -792,7 +792,7 @@ Starz is available on smartphones, tablets, computers, Roku, Amazon Fire TV, App
     steps: [
       {
         title: `Sign Up for Starz`,
-        content: `Go to starz.com on your phone, tablet, or computer. Click "Start Your Free Trial" or "Subscribe." Create an account with your email address and a password. Enter your payment information — a free trial period is often available for new subscribers, and you will be charged after the trial ends unless you cancel.`,
+        content: `Go to starz.com on your phone, tablet, or computer. Click "Start Your Free Trial" or "Subscribe." Create an account with your email address and a password. Enter your payment information — a free trial period is often available for new subscribers. And you will be charged after the trial ends unless you cancel.`,
         tip: `Check the Starz website and Amazon Prime for current promotions before signing up. New subscriber discounts are common and can save significant money for the first several months.`,
       },
       {

@@ -106,7 +106,7 @@ This setting sends any call from a number that's not in your contacts straight t
 
 To turn it on: Go to Settings → Phone → Silence Unknown Callers → toggle it on (green).
 
-Important: You'll still see missed calls from unknown numbers in your Recent Calls list, and they can still leave a voicemail. Only people in your contacts will cause your phone to ring.
+Important: You'll still see missed calls from unknown numbers in your Recent Calls list. And they can still leave a voicemail. Only people in your contacts will cause your phone to ring.
 
 **Option 2: Block a specific number**
 
@@ -255,7 +255,7 @@ If a service makes it hard to cancel (buried menus, endless pop-ups), you can ca
     publishedAt: '2026-04-14',
     body: `Typing on a small phone screen can be frustrating — especially if you have larger fingers, or if your hands aren't as steady as they used to be. The good news: you don't have to type. You can talk to your phone and it will type for you, almost perfectly.
 
-This feature is called voice-to-text (or dictation), and it works in messages, emails, notes, web searches, and almost anywhere else you'd normally type.
+This feature is called voice-to-text (or dictation). And it works in messages, emails, notes, web searches, and almost anywhere else you'd normally type.
 
 **How to use it on iPhone:**
 
@@ -323,7 +323,7 @@ Think of it like this: if you asked a person who had read every book, article, a
 
 **What is ChatGPT and similar tools?**
 
-ChatGPT is a product from a company called OpenAI. It's an AI you can type or talk to, and it will answer questions, write things for you, explain confusing topics, help you draft emails, and much more — all in plain conversational language.
+ChatGPT is a product from a company called OpenAI. It's an AI you can type or talk to. And it will answer questions, write things for you, explain confusing topics, help you draft emails, and much more — all in plain conversational language.
 
 You can use it for free at chat.openai.com.
 
@@ -361,7 +361,7 @@ Similar tools include Google Gemini (gemini.google.com) and Microsoft Copilot (c
     readTime: '6 min',
     videoUrl: 'https://www.youtube.com/embed/JTxsNm9IdYU',
     publishedAt: '2026-04-14',
-    body: `ChatGPT is one of the most useful free tools available right now. You type a question or request in plain English, and it responds with a detailed, conversational answer. Think of it like having a very knowledgeable assistant available 24/7 — one who's read everything and is always willing to help.
+    body: `ChatGPT is one of the most useful free tools available right now. You type a question or request in plain English. And it responds with a detailed, conversational answer. Think of it like having a very knowledgeable assistant available 24/7 — one who's read everything and is always willing to help.
 
 Here's how to start using it safely.
 
@@ -791,7 +791,7 @@ When a website or app asks for information, only fill in what's required (marked
 
 **Step 8: Freeze your credit**
 
-A credit freeze (also called a "security freeze") prevents anyone — including identity thieves — from opening new credit cards or loans in your name. It's free, it's permanent until you lift it, and it doesn't affect your current credit cards or score. Contact each of the three credit bureaus:
+A credit freeze (also called a "security freeze") prevents anyone — including identity thieves — from opening new credit cards or loans in your name. It's free, it's permanent until you lift it. And it doesn't affect your current credit cards or score. Contact each of the three credit bureaus:
 - Equifax: equifax.com
 - Experian: experian.com
 - TransUnion: transunion.com

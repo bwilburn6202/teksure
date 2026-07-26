@@ -17,7 +17,7 @@ export const guidesBatch136: Guide[] = [
     publishedAt: '2026-05-15',
     lastVerifiedAt: '2026-05-15',
     difficulty: 'Beginner',
-    body: `Every fall, Medicare opens a window where you can switch plans, add prescription drug coverage, or move to a Medicare Advantage plan. The window is called Open Enrollment, and it runs from October 15 through December 7 every year. Any changes you make take effect on January 1 of the next year.
+    body: `Every fall, Medicare opens a window where you can switch plans, add prescription drug coverage, or move to a Medicare Advantage plan. The window is called Open Enrollment. And it runs from October 15 through December 7 every year. Any changes you make take effect on January 1 of the next year.
 
 Doing this online at Medicare.gov is faster than calling — and you can compare prices, doctors, and prescription costs side by side. This guide walks through the whole process for 2026.
 
@@ -160,7 +160,7 @@ Watch a walkthrough: search YouTube for "Samsung Quick Share tutorial" — the o
       },
       {
         title: 'Set who can send to you (important privacy setting)',
-        content: 'By default, Quick Share is set to "Contacts only" — meaning random strangers cannot beam things to you. To check, pull down Quick Settings, long-press the Quick Share tile, and you will see three options: (1) No one — Quick Share is off for incoming. (2) Contacts only — only people you have saved in Contacts can send. (3) Everyone — anyone nearby for the next 10 minutes. Leave it on Contacts only for daily use. Switch to Everyone temporarily when you are meeting someone new who needs to send you photos.',
+        content: 'By default, Quick Share is set to "Contacts only" — meaning random strangers cannot beam things to you. To check, pull down Quick Settings, long-press the Quick Share tile. And you will see three options: (1) No one — Quick Share is off for incoming. (2) Contacts only — only people you have saved in Contacts can send. (3) Everyone — anyone nearby for the next 10 minutes. Leave it on Contacts only for daily use. Switch to Everyone temporarily when you are meeting someone new who needs to send you photos.',
         warning: 'Never leave Quick Share on "Everyone" permanently in public — at airports and concerts, strangers can spam you with photos. Always switch back to Contacts only when you are done.',
       },
       {

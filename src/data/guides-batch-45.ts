@@ -272,7 +272,7 @@ Haptic Touch replaced the older "3D Touch" (pressure-sensitive tap) on iPhone XR
     thumbnailEmoji: ``,
     publishedAt: `2026-04-19`,
     difficulty: `Beginner`,
-    body: `Amazon Prime Video is one of the most feature-rich streaming services available, and it comes free with an Amazon Prime membership. But many people use it like a simple video player and miss out on some genuinely useful features.
+    body: `Amazon Prime Video is one of the most feature-rich streaming services available. And it comes free with an Amazon Prime membership. But many people use it like a simple video player and miss out on some genuinely useful features.
 
 X-Ray is one of Prime Video's standout features — tap the screen while watching anything and you see real-time information about the actors in that scene, the music playing in the background, and trivia about the show or movie. It pulls from IMDb (which Amazon owns) and is often more detailed than anything you'd find from a quick Google search.
 

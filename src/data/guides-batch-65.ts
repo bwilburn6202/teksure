@@ -5,7 +5,7 @@ export const guidesBatch65: Guide[] = [
     slug: `pandora-radio-guide`,
     title: `How to Listen to Free Music with Pandora`,
     excerpt: `Pandora lets you stream free music by artist or genre — no credit card needed to get started.`,
-    body: `Pandora is one of the oldest music streaming services in the United States, and it remains one of the most beginner-friendly options available today. Unlike services that require you to pick every song yourself, Pandora works like a smart radio station — you tell it an artist or song you like, and it builds a continuous stream of music with a similar sound.
+    body: `Pandora is one of the oldest music streaming services in the United States. And it remains one of the most beginner-friendly options available today. Unlike services that require you to pick every song yourself, Pandora works like a smart radio station — you tell it an artist or song you like. And it builds a continuous stream of music with a similar sound.
 
 The free version of Pandora is supported by short audio and display ads, similar to how traditional radio works. You do not need a credit card or any payment information to create an account and start listening. All you need is an email address and a password.
 
@@ -163,7 +163,7 @@ TuneIn also aggregates a large catalog of on-demand podcasts. You can find shows
     excerpt: `Crunchyroll is the biggest anime streaming service — here's how to start watching, even if you're brand new to anime.`,
     body: `Crunchyroll is the largest streaming service dedicated entirely to anime — Japanese animated series and films. It carries thousands of titles, from beloved classics like Dragon Ball Z, Naruto, and One Piece to the newest series airing in Japan right now. Crunchyroll typically releases new episodes within hours of their Japanese broadcast, which is why fans call this "simulcast."
 
-If you have never watched anime before, do not let the large catalog overwhelm you. Crunchyroll's home screen highlights popular and highly rated series, and you can browse by genre — Action, Romance, Comedy, Fantasy, Slice of Life — to find something that matches your interests.
+If you have never watched anime before, do not let the large catalog overwhelm you. Crunchyroll's home screen highlights popular and highly rated series. And you can browse by genre — Action, Romance, Comedy, Fantasy, Slice of Life — to find something that matches your interests.
 
 Crunchyroll offers a free tier supported by ads. You can watch many titles for free, though some series are restricted to paying subscribers. Crunchyroll Premium costs around $7.99 per month (Mega Fan plan) and removes all ads, gives you access to the full catalog including the newest simulcast episodes, and allows offline downloads on mobile devices.
 
@@ -227,7 +227,7 @@ When you find the best price, tap "Get Free Coupon." The coupon will appear on s
 
 GoodRx Gold is a paid membership (around $9.99 per month per family) that offers even deeper discounts at select pharmacies.
 
-GoodRx can be used for family members and pets as well. The same process applies — search the medication, get the coupon, show it at the pharmacy. GoodRx does not replace Medicare Part D or other insurance, but you can choose to use it instead of your insurance whenever the GoodRx price is lower.`,
+GoodRx can be used for family members and pets as well. The same process applies — search the medication, get the coupon, show it at the pharmacy. GoodRx does not replace Medicare Part D or other insurance. But you can choose to use it instead of your insurance whenever the GoodRx price is lower.`,
     category: `health-tech`,
     tags: [`goodrx`, `prescriptions`, `savings`, `pharmacy`, `medications`],
     thumbnailEmoji: ``,
@@ -319,7 +319,7 @@ Delivery times vary by location. Prime members in many cities get free same-day 
 
 Zocdoc covers a wide range of medical specialties — primary care physicians, dermatologists, cardiologists, OB/GYNs, dentists, mental health therapists, and many more. Many listings also offer telehealth (video) appointments, which can be done from your home.
 
-To get started, go to zocdoc.com in any web browser or download the free Zocdoc app from the App Store or Google Play. You do not need an account to search, but you will need to create one to complete a booking.
+To get started, go to zocdoc.com in any web browser or download the free Zocdoc app from the App Store or Google Play. You do not need an account to search. But you will need to create one to complete a booking.
 
 In the search area, enter the type of provider you need (for example, "primary care doctor" or "dermatologist") and your ZIP code or city. Zocdoc will show you a list of providers who have upcoming availability. You can filter results by your insurance plan — select your insurance company and plan name to see only doctors who are in-network for you.
 
@@ -484,7 +484,7 @@ To apply, go to tsa.gov/precheck and click "Apply Now." The TSA partners with se
 
 At your appointment, bring a valid government-issued photo ID (such as a U.S. passport or state driver's license) plus a proof of citizenship document (such as a birth certificate or U.S. passport). The appointment takes about 10 minutes. A staff member will take your fingerprints and review your documents. The background check typically takes three to five business days.
 
-When approved, the TSA mails you a Known Traveler Number (KTN). This is a unique number you add to your airline reservations. Every major airline has a field for your KTN in your profile or during booking. Once added, "TSA PRE" will print on your boarding pass, and you will be directed to the PreCheck lane at the airport.
+When approved, the TSA mails you a Known Traveler Number (KTN). This is a unique number you add to your airline reservations. Every major airline has a field for your KTN in your profile or during booking. Once added, "TSA PRE" will print on your boarding pass. And you will be directed to the PreCheck lane at the airport.
 
 Global Entry is a related CBP program that costs $100 for five years and includes TSA PreCheck automatically. It adds the benefit of using automated kiosks when re-entering the U.S. from international travel, skipping the long customs and passport control lines. If you travel internationally even sometimes, Global Entry is the better value.
 
@@ -539,7 +539,7 @@ If you are owed a refund, choosing Direct Deposit gets your money back faster �
 
 After filing, track your refund at irs.gov/refunds using the "Where's My Refund?" tool.
 
-IRS Direct File is an even simpler option now available in many states. It is built and run directly by the IRS (no third-party partner), and it handles straightforward returns — W-2 income, standard deduction, basic credits. Check irs.gov/directfile to see if your state is eligible.`,
+IRS Direct File is an even simpler option now available in many states. It is built and run directly by the IRS (no third-party partner). And it handles straightforward returns — W-2 income, standard deduction, basic credits. Check irs.gov/directfile to see if your state is eligible.`,
     category: `government-civic`,
     tags: [`taxes`, `IRS`, `free file`, `tax return`, `federal taxes`],
     thumbnailEmoji: ``,
@@ -687,7 +687,7 @@ For recipe help in the kitchen, say "Alexa, show me a recipe for chicken soup." 
     slug: `fire-hd-tablet-setup`,
     title: `How to Set Up Your Amazon Fire HD Tablet`,
     excerpt: `Amazon's Fire HD tablets are affordable and work great for reading, video, and browsing. Here's how to get started.`,
-    body: `Amazon's Fire HD tablets are among the most affordable tablets available in the United States, and they work well for everyday tasks like reading books, watching movies and TV shows, video calling family, browsing the web, and playing casual games. They come in several sizes — 8-inch, 10-inch, and 11-inch — and are regularly available for well under $100, especially during Amazon sales.
+    body: `Amazon's Fire HD tablets are among the most affordable tablets available in the United States. And they work well for everyday tasks like reading books, watching movies and TV shows, video calling family, browsing the web, and playing casual games. They come in several sizes — 8-inch, 10-inch, and 11-inch — and are regularly available for well under $100, especially during Amazon sales.
 
 Before you do anything else, charge the tablet fully using the included USB cable. This can take a couple of hours from a completely dead battery. Once charged to 100%, press and hold the power button on the side until the screen lights up.
 

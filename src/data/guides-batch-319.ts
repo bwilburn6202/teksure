@@ -39,7 +39,7 @@ export const guidesBatch319: Guide[] = [
       {
         title: "Turn on Location Sharing only if everyone agrees",
         content: "In Google Maps, tap your profile picture, then \"Location sharing,\" then \"Share location.\" Choose how long to share (1 hour, until you turn it off, or a custom time) and pick which family members can see it. This is optional and can be turned off at any time from the same screen.",
-        tip: "Location sharing is popular for peace of mind — an adult child can see that mom or dad made it home from an errand — but it is entirely your choice whether to turn it on, and you can stop sharing instantly.",
+        tip: "Location sharing is popular for peace of mind — an adult child can see that mom or dad made it home from an errand — but it is entirely your choice whether to turn it on. And you can stop sharing instantly.",
       },
       {
         title: "Review who's in the group anytime",
@@ -148,7 +148,7 @@ export const guidesBatch319: Guide[] = [
       },
       {
         title: "Apple: the recovery contact confirms",
-        content: "The person you choose gets a notification asking them to accept. Once accepted, if you're ever locked out of your Apple ID, you can call them, and they can generate a special recovery code from their own device to help you back in — they never see your password.",
+        content: "The person you choose gets a notification asking them to accept. Once accepted, if you're ever locked out of your Apple ID, you can call them. And they can generate a special recovery code from their own device to help you back in — they never see your password.",
         tip: "You can also set up a Legacy Contact at the same screen, which is different — it lets a trusted person access your account's data after you pass away, rather than helping with a forgotten password.",
       },
       {
@@ -188,7 +188,7 @@ export const guidesBatch319: Guide[] = [
       },
       {
         title: "Turn on Reduce Loud Sounds",
-        content: "Switch on \"Reduce Loud Sounds,\" then drag the slider below it to set a decibel limit. Apple sets a default around 100 dB (roughly as loud as a lawn mower), but you can lower it to 90 dB or below for extra protection, especially if you already notice ringing in your ears after listening to music or podcasts.",
+        content: "Switch on \"Reduce Loud Sounds,\" then drag the slider below it to set a decibel limit. Apple sets a default around 100 dB (roughly as loud as a lawn mower). But you can lower it to 90 dB or below for extra protection, especially if you already notice ringing in your ears after listening to music or podcasts.",
         tip: "80 dB is roughly the volume of city traffic heard from inside a car — a comfortable, safe setting for long listening sessions.",
       },
       {

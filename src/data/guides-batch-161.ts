@@ -288,7 +288,7 @@ If you completed a purchase and now have doubts, act right away:
       {
         title: 'Check for HTTPS and the padlock in your browser',
         content: 'Look at the website address in your browser bar before entering any payment information. A safe website address starts with "https://" — note the "s." You may also see a small padlock icon to the left of the address. If the address starts with only "http://" (no "s"), do not enter your card number.',
-        warning: 'HTTPS means your connection is private, but it does not guarantee the business is honest. Always complete all five checks.',
+        warning: 'HTTPS means your connection is private. But it does not guarantee the business is honest. Always complete all five checks.',
       },
       {
         title: 'Read the domain name letter by letter for misspellings',

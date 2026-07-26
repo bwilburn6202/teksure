@@ -5,13 +5,13 @@ export const guidesBatch68: Guide[] = [
     slug: `windows-11-upgrade`,
     title: `How to Upgrade from Windows 10 to Windows 11`,
     excerpt: `Windows 10 support ends in October 2025 — here's how to check if your PC qualifies for Windows 11 and how to upgrade safely.`,
-    body: `Windows 10 will stop receiving security updates from Microsoft in October 2025. After that date, your computer will still work, but it will no longer get patches that protect you from new viruses and security threats. That is why upgrading to Windows 11 — while it is still free — is a smart move for most people.
+    body: `Windows 10 will stop receiving security updates from Microsoft in October 2025. After that date, your computer will still work. But it will no longer get patches that protect you from new viruses and security threats. That is why upgrading to Windows 11 — while it is still free — is a smart move for most people.
 
 Before doing anything else, you need to check whether your PC can run Windows 11. Microsoft has a free tool called PC Health Check that does this automatically. Go to microsoft.com, search for "PC Health Check," download and run it. It will tell you in seconds whether your machine qualifies.
 
 The minimum requirements for Windows 11 are: a 64-bit processor (most PCs from 2015 or newer have this), 4GB of RAM, 64GB of storage space, and something called TPM 2.0. TPM stands for Trusted Platform Module — it is a small security chip built into most PCs manufactured from 2018 onward. It stores encryption keys and helps protect your system from certain attacks. If your PC was bought before 2017, it may not have TPM 2.0, which would mean it does not qualify.
 
-If your PC passes the check, back up your data before upgrading. Copy important files to an external hard drive or make sure your OneDrive is synced. This is a precaution — upgrades rarely erase files, but it is always safer to have a backup.
+If your PC passes the check, back up your data before upgrading. Copy important files to an external hard drive or make sure your OneDrive is synced. This is a precaution — upgrades rarely erase files. But it is always safer to have a backup.
 
 To start the upgrade, go to Settings, then Update and Security, then Windows Update. If your PC qualifies, you will see an option to download and install Windows 11 for free. Click it and follow the prompts.
 
@@ -172,7 +172,7 @@ If you have an older version of Microsoft Office that you bought as a one-time p
       },
       {
         title: `Set up OneDrive for automatic backup`,
-        content: `Once installed, OneDrive appears as a folder on your computer (Windows) or in your menu bar (Mac). Move your Documents and Pictures folders into OneDrive, and they will sync to the cloud automatically. You can access them at onedrive.live.com from any browser.`,
+        content: `Once installed, OneDrive appears as a folder on your computer (Windows) or in your menu bar (Mac). Move your Documents and Pictures folders into OneDrive. And they will sync to the cloud automatically. You can access them at onedrive.live.com from any browser.`,
       },
     ],
   },
@@ -488,7 +488,7 @@ If you are upgrading from an iPhone 13 or older, you will notice major camera im
     excerpt: `AllTrails has over 400,000 trails worldwide with maps, reviews, and difficulty ratings — great for weekend walks and serious hikes alike.`,
     body: `AllTrails is an app and website that helps you find, navigate, and track hiking trails — from short, flat nature walks to multi-day mountain routes. With over 400,000 trails indexed worldwide and millions of user reviews, it is one of the most useful outdoor apps available.
 
-To get started, download AllTrails from the App Store or Google Play, or visit alltrails.com. Create a free account. Open the app and allow it to use your location, then browse the Explore tab to see trails near you. The map shows colored markers for different trails, and you can tap any one for more details.
+To get started, download AllTrails from the App Store or Google Play, or visit alltrails.com. Create a free account. Open the app and allow it to use your location, then browse the Explore tab to see trails near you. The map shows colored markers for different trails. And you can tap any one for more details.
 
 The search filters are where AllTrails really earns its place. You can filter by difficulty level (Easy, Moderate, Hard), distance (1 mile, 3 miles, 10+ miles), elevation gain (minimal, moderate, challenging), trail type (loop, out-and-back, or point-to-point), and features like dog-friendly, wheelchair accessible, or kid-friendly. This means you can find trails that genuinely match your fitness level and situation rather than guessing.
 
@@ -537,7 +537,7 @@ The built-in iPhone Weather app has a clean, readable design and gets its data f
 
 Weather Underground stands out for hyperlocal data. It pulls readings from a network of personal weather stations operated by private homeowners and hobbyists. In many neighborhoods, you can see the temperature and wind speed from a station two blocks away rather than from the airport 12 miles across town. This is particularly useful in microclimates like coastal areas or hilly regions where conditions vary dramatically over short distances.
 
-Weather.gov is the website of the National Weather Service — the actual government forecasters who predict the weather. It is the most authoritative source available. The interface is not the prettiest, but this is where official severe weather warnings originate, and it is worth bookmarking for any time you are trying to verify a forecast.
+Weather.gov is the website of the National Weather Service — the actual government forecasters who predict the weather. It is the most authoritative source available. The interface is not the prettiest, but this is where official severe weather warnings originate. And it is worth bookmarking for any time you are trying to verify a forecast.
 
 For radar during storms, two apps stand out. RadarScope is a professional-grade radar app that costs around $10 as a one-time purchase. It shows NEXRAD radar data with fine detail and is favored by weather enthusiasts and storm chasers. MyRadar is a free alternative that is simpler but still very useful for watching a storm track toward your area.
 
@@ -574,7 +574,7 @@ For most people, the recommendation is: use your built-in app for daily use, che
     excerpt: `Android includes a built-in magnifier that turns your phone into a powerful magnifying glass for menus, labels, and small print.`,
     body: `If you find yourself holding menus at arm's length, struggling to read medicine labels, or squinting at small print in documents, your Android phone has a built-in solution that most people do not know exists. The Magnification feature uses your phone's camera to zoom in on physical objects around you, turning your phone into a digital magnifying glass.
 
-There are actually two different types of magnification on Android, and it helps to understand the difference. Screen magnification zooms in on what is on your phone's display — useful if the text in an app or website is too small to read comfortably. Camera magnification uses the phone's camera to zoom in on physical objects in the real world — menus, packaging, mail, handwriting, and so on. This guide focuses on both.
+There are actually two different types of magnification on Android. And it helps to understand the difference. Screen magnification zooms in on what is on your phone's display — useful if the text in an app or website is too small to read comfortably. Camera magnification uses the phone's camera to zoom in on physical objects in the real world — menus, packaging, mail, handwriting, and so on. This guide focuses on both.
 
 Where you find these settings depends on your phone brand. On Samsung phones, go to Settings, then Accessibility, then Vision Enhancements, then Magnification. You will find options for Triple Tap Magnification (triple-tap anywhere on the screen to zoom in and out) and a Magnifier icon shortcut. On Google Pixel phones, go to Settings, then Accessibility, then Magnification. Other Android brands like Motorola, OnePlus, and LG have similar settings under Accessibility in their Settings app.
 
@@ -613,7 +613,7 @@ If your Android phone does not have a built-in camera magnifier, search the Goog
     slug: `paprika-app-guide`,
     title: `How to Build a Personal Recipe Library with Paprika`,
     excerpt: `Paprika saves recipes from any website, organizes them in categories, and builds grocery lists automatically — like a personal cookbook app.`,
-    body: `Paprika is a paid recipe manager app, and it has developed a loyal following among people who are serious about organizing their cooking life. The core appeal is simple: once you buy it, you own it. No subscription, no ads, no sending your data anywhere. Your recipes stay in the app, organized exactly how you want them, forever.
+    body: `Paprika is a paid recipe manager app. And it has developed a loyal following among people who are serious about organizing their cooking life. The core appeal is simple: once you buy it, you own it. No subscription, no ads, no sending your data anywhere. Your recipes stay in the app, organized exactly how you want them, forever.
 
 The app is available for iPhone ($5), Android ($3), and Mac ($30). If you buy it on one platform, you do not automatically get the others — but many people find the iPhone version alone is worth the cost.
 
@@ -623,7 +623,7 @@ You can organize saved recipes into categories you name yourself: Breakfast, Wee
 
 The meal planning calendar lets you schedule recipes for specific days. When you have your week planned, tap "Add to Grocery List" and Paprika compiles all the ingredients from those recipes into one master shopping list. It intelligently combines duplicates — if two recipes call for chicken broth, they are combined into one line item. You can also mark items you already have in your pantry so they do not appear on the list.
 
-Cook Mode displays each step in large text with the screen staying on, and you can advance through steps without touching the app — tap anywhere on screen to advance.
+Cook Mode displays each step in large text with the screen staying on. And you can advance through steps without touching the app — tap anywhere on screen to advance.
 
 Paprika syncs across all your devices through its own sync system, and works completely offline once recipes are saved.`,
     category: `app-guides`,
@@ -656,7 +656,7 @@ Paprika syncs across all your devices through its own sync system, and works com
     slug: `nytimes-cooking-app`,
     title: `How to Use NYT Cooking for Recipes and Meal Ideas`,
     excerpt: `NYT Cooking offers professionally tested recipes from New York Times food editors — worth the subscription for cooking enthusiasts.`,
-    body: `NYT Cooking is the recipe platform from the New York Times, and it has a different character than community-focused apps like Allrecipes. Every recipe has been developed and tested by professional food editors and recipe developers — people whose job is to make sure a recipe works reliably before it gets published. If a NYT Cooking recipe says to roast a chicken at 425 degrees for 45 minutes, that instruction has been tested multiple times in multiple ovens.
+    body: `NYT Cooking is the recipe platform from the New York Times. And it has a different character than community-focused apps like Allrecipes. Every recipe has been developed and tested by professional food editors and recipe developers — people whose job is to make sure a recipe works reliably before it gets published. If a NYT Cooking recipe says to roast a chicken at 425 degrees for 45 minutes, that instruction has been tested multiple times in multiple ovens.
 
 The platform currently offers more than 25,000 recipes covering every cuisine, skill level, and occasion. Subscriptions run around $40 per year (often discounted, especially for existing NYT News subscribers). If you subscribe to the NYT News package, check your account settings — NYT Cooking access may already be included.
 
@@ -741,8 +741,8 @@ Finally, Medical ID (set up in the Health app) displays your name, blood type, a
   {
     slug: `google-maps-timeline-guide`,
     title: `How to View and Manage Your Google Maps Location History`,
-    excerpt: `Google Maps Timeline shows everywhere you've been — great for remembering trips, but you can also delete or pause it for privacy.`,
-    body: `If you use Google Maps on your Android or iPhone, there is a good chance the app has been quietly recording everywhere you go — every restaurant, doctor's office, store, and park. This feature is called Timeline, and it stores a detailed log of your movements tied to your Google account.
+    excerpt: `Google Maps Timeline shows everywhere you've been — great for remembering trips. But you can also delete or pause it for privacy.`,
+    body: `If you use Google Maps on your Android or iPhone, there is a good chance the app has been quietly recording everywhere you go — every restaurant, doctor's office, store, and park. This feature is called Timeline. And it stores a detailed log of your movements tied to your Google account.
 
 Many people find Timeline genuinely useful. It can remind you of a great restaurant you visited two years ago and cannot quite remember the name of. It can help you reconstruct a timeline for tax purposes (business travel, medical appointments). If you enjoy looking back at trips, Timeline shows you the routes you took with maps.
 
@@ -754,7 +754,7 @@ To delete specific data, open Timeline, find the day or place you want to remove
 
 Auto-delete settings let you choose how long Google keeps your data: you can set it to automatically delete after 3 months or 18 months, or keep it until you manually delete it.
 
-It is worth knowing that Google stores this data in your account and says it does not sell individual location history. However, it has been used in some criminal investigations via court orders, and it is data you have a right to delete or disable if you choose.`,
+It is worth knowing that Google stores this data in your account and says it does not sell individual location history. However, it has been used in some criminal investigations via court orders. And it is data you have a right to delete or disable if you choose.`,
     category: `how-to`,
     tags: [`google maps`, `location history`, `timeline`, `privacy`, `travel history`],
     thumbnailEmoji: ``,
@@ -836,7 +836,7 @@ The tool is especially useful for complex or unfamiliar routes. If you want to g
 
 To use it, go to rome2rio.com or download the free Rome2rio app on your phone. Type your starting point and your destination — these can be cities, landmarks, airports, addresses, or even general regions. Rome2rio searches its database and returns a list of all available routes. Each route card shows the mode of transportation, approximate total travel time, and approximate cost range.
 
-Click any route to see more detail about that option, including which airlines fly the route, which train operators service it, or which bus lines cover it. From the detail view, you can click through to booking sites to purchase tickets — Rome2rio itself does not sell tickets, but it links directly to the providers.
+Click any route to see more detail about that option, including which airlines fly the route, which train operators service it, or which bus lines cover it. From the detail view, you can click through to booking sites to purchase tickets — Rome2rio itself does not sell tickets. But it links directly to the providers.
 
 For domestic US travel, Rome2rio often surfaces useful alternatives people overlook. Amtrak routes between cities, Greyhound and FlixBus connections, and the regional bus networks that exist in many metro areas all appear alongside flight and driving options.
 

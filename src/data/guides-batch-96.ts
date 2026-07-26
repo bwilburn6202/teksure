@@ -169,9 +169,9 @@ As a general rule of thumb: use HDMI for TVs, game consoles, streaming boxes, an
     thumbnailEmoji: ``,
     publishedAt: `2026-04-20`,
     difficulty: `Beginner`,
-    body: `Your credit report is a record of every loan, credit card, and line of credit tied to your name — including how reliably you pay them. Federal law guarantees you free access to this report from each of the three major credit bureaus (Experian, Equifax, and TransUnion), and there is exactly one official website set up to provide it: AnnualCreditReport.com. This site was created by the three bureaus together to comply with the Fair Credit Reporting Act, and it is the only place to get your truly free reports with no strings attached.
+    body: `Your credit report is a record of every loan, credit card, and line of credit tied to your name — including how reliably you pay them. Federal law guarantees you free access to this report from each of the three major credit bureaus (Experian, Equifax, and TransUnion). And there is exactly one official website set up to provide it: AnnualCreditReport.com. This site was created by the three bureaus together to comply with the Fair Credit Reporting Act. And it is the only place to get your truly free reports with no strings attached.
 
-Be careful: a search for "free credit report" turns up dozens of sites that will offer you a "free" report in exchange for signing up for a paid monitoring service. Some of these will charge you monthly after a trial period. AnnualCreditReport.com is the only site authorized by the federal government, and it never asks for a credit card.
+Be careful: a search for "free credit report" turns up dozens of sites that will offer you a "free" report in exchange for signing up for a paid monitoring service. Some of these will charge you monthly after a trial period. AnnualCreditReport.com is the only site authorized by the federal government. And it never asks for a credit card.
 
 Since 2023, the bureaus have voluntarily extended access to weekly free reports from each bureau — a holdover from pandemic-era rules. That means you can check your credit any week of the year, for free. Your report will show every account in your name, your payment history, credit limits, balances, and any inquiries from lenders. What it does NOT show is your credit score — the score is a separate product, often available free from your bank, credit card company, or services like Credit Karma.`,
     steps: [
@@ -211,7 +211,7 @@ Since 2023, the bureaus have voluntarily extended access to weekly free reports 
     difficulty: `Beginner`,
     body: `A credit freeze locks your credit report so that lenders cannot pull it when someone applies for a new loan or credit card in your name. It is the single most effective defense against identity theft because most lenders will deny an application outright if they cannot pull credit. And thanks to a 2018 federal law, placing and lifting a credit freeze is completely free at all three bureaus — no fees, no catches.
 
-A freeze does NOT affect your existing accounts. You can still use your credit cards, pay your mortgage, and your score is not harmed. What it does is block new accounts from being opened by anyone, including you, until you temporarily "thaw" the freeze. You might thaw it before applying for a car loan, a new apartment, a mortgage, or a new credit card — it takes minutes online, and you can set it to thaw for a specific date range or for a specific creditor.
+A freeze does NOT affect your existing accounts. You can still use your credit cards, pay your mortgage, and your score is not harmed. What it does is block new accounts from being opened by anyone, including you, until you temporarily "thaw" the freeze. You might thaw it before applying for a car loan, a new apartment, a mortgage, or a new credit card — it takes minutes online. And you can set it to thaw for a specific date range or for a specific creditor.
 
 To be protected, you need to freeze your credit at all three bureaus — Experian, Equifax, and TransUnion — because lenders may check any of the three. Each has its own online account you create, with a password or PIN you will need to thaw the freeze later. Write that PIN down somewhere safe (not in your email). Freezing all three takes about 30 minutes total the first time. Some people also add Innovis and ChexSystems as a fourth and fifth layer for extra safety, though those are optional.`,
     steps: [
@@ -348,7 +348,7 @@ Output speed depends on which ports the power bank has and their wattage. A 5W o
       },
       {
         title: `Pick an output wattage that matches your fastest device`,
-        content: `For phone-only use: 18W is plenty. For iPad or tablet: 20-30W. For a MacBook Air or similar light laptop: 45-65W. For a bigger laptop: 100W. Look for the wattage on the output port (like "USB-C PD 65W"). Charging a 65W laptop with an 18W power bank will work slowly, but it is not a fast top-up.`,
+        content: `For phone-only use: 18W is plenty. For iPad or tablet: 20-30W. For a MacBook Air or similar light laptop: 45-65W. For a bigger laptop: 100W. Look for the wattage on the output port (like "USB-C PD 65W"). Charging a 65W laptop with an 18W power bank will work slowly. But it is not a fast top-up.`,
       },
       {
         title: `Check the ports`,
@@ -431,7 +431,7 @@ Display size is about portability vs. screen real estate: 13-14 inches is the sw
 
 Within iPhone, the 2026 lineup is: iPhone SE (budget, $429), iPhone 16 ($799), iPhone 16 Plus (bigger screen, $899), iPhone 16 Pro ($999), and iPhone 16 Pro Max ($1,199). The non-Pro models are great for most people — the Pro adds a telephoto lens, ProMotion 120Hz display, and more storage options. Within Android, the big three are: Google Pixel (cleanest Android, best cameras, longest software updates), Samsung Galaxy S (most features, best displays, but busy interface), and Motorola (great budget options). OnePlus and Nothing also make good mid-range phones.
 
-Two other things to consider. Software update length: iPhones get 6-7 years of updates. Google Pixels get 7 years. Samsung Galaxy S series now gets 7 years. Other Android brands vary widely (Motorola often only 2-3 years). Storage: 128GB is the floor for a phone today — 256GB is much better if you take photos or video. Unlike laptops, phone storage is not upgradable. Finally, carrier trade-in credits often make an $800 phone feel like $400, but they lock you into 24-36 months with one carrier — compare buying unlocked vs. financing through the carrier.`,
+Two other things to consider. Software update length: iPhones get 6-7 years of updates. Google Pixels get 7 years. Samsung Galaxy S series now gets 7 years. Other Android brands vary widely (Motorola often only 2-3 years). Storage: 128GB is the floor for a phone today — 256GB is much better if you take photos or video. Unlike laptops, phone storage is not upgradable. Finally, carrier trade-in credits often make an $800 phone feel like $400. But they lock you into 24-36 months with one carrier — compare buying unlocked vs. financing through the carrier.`,
     steps: [
       {
         title: `Choose your ecosystem first`,
@@ -455,7 +455,7 @@ Two other things to consider. Software update length: iPhones get 6-7 years of u
       },
       {
         title: `Compare buying unlocked vs. carrier trade-in`,
-        content: `Unlocked (direct from Apple/Samsung/Google): pay full price upfront, but you can switch carriers freely, and you can sell the phone for decent value when upgrading. Carrier trade-in credits: the monthly bill looks cheaper, but you are locked in for 24-36 months, and leaving the carrier means losing remaining credits. For most people, unlocked is cleaner long-term.`,
+        content: `Unlocked (direct from Apple/Samsung/Google): pay full price upfront, but you can switch carriers freely, and you can sell the phone for decent value when upgrading. Carrier trade-in credits: the monthly bill looks cheaper. But you are locked in for 24-36 months, and leaving the carrier means losing remaining credits. For most people, unlocked is cleaner long-term.`,
       },
       {
         title: `Consider timing with release cycles`,
@@ -476,7 +476,7 @@ Two other things to consider. Software update length: iPhones get 6-7 years of u
     difficulty: `Intermediate`,
     body: `Switching from iPhone to Android is more involved than switching between two Android phones, because Apple's ecosystem holds onto some data in ways designed for Apple devices. The good news: contacts, photos, videos, calendars, and most Google-based info transfer cleanly. The trickier parts are iMessage (it intercepts texts from iPhone users and sends them as blue bubbles, which will fail to reach your new Android if you do not deregister), paid apps (you have to rebuy Android versions), and iCloud photos (which need to be exported before they transfer).
 
-The most important pre-switch step is deregistering iMessage on your old iPhone BEFORE you switch. If you forget, your iPhone friends will keep sending you "blue bubble" iMessages that silently fail to reach your new Android, and you will seem to have dropped off the face of the earth. You can deregister two ways: while you still have the iPhone, turn off iMessage in Settings → Messages; or if you already switched, visit selfsolve.apple.com/deregister-imessage and enter your old phone number.
+The most important pre-switch step is deregistering iMessage on your old iPhone BEFORE you switch. If you forget, your iPhone friends will keep sending you "blue bubble" iMessages that silently fail to reach your new Android. And you will seem to have dropped off the face of the earth. You can deregister two ways: while you still have the iPhone, turn off iMessage in Settings → Messages; or if you already switched, visit selfsolve.apple.com/deregister-imessage and enter your old phone number.
 
 Google's "Switch to Android" app (free on the App Store) handles most of the rest. It will transfer contacts, calendar, photos, videos, and messages from your iPhone to your new Android during its initial setup. You can also use a USB cable directly between the phones for a faster transfer. Plan to set aside an hour total. After the switch, spend another hour signing into your apps, re-downloading the Android versions of apps you paid for on iOS, and setting up Google Photos as your photo backup.`,
     steps: [
@@ -683,7 +683,7 @@ Direct transfer via cable or network is the fastest when both computers are same
     thumbnailEmoji: ``,
     publishedAt: `2026-04-20`,
     difficulty: `Beginner`,
-    body: `The 3-2-1 backup rule has been the gold standard in data protection for over 20 years, and it is still the best framework for home users today. The rule: keep 3 copies of your important files, on 2 different types of media (not both on the same drive), with 1 copy stored off-site (not in your house). Following this rule means you can survive a hardware failure, a theft, a fire, a flood, or a ransomware attack without losing your files.
+    body: `The 3-2-1 backup rule has been the gold standard in data protection for over 20 years. And it is still the best framework for home users today. The rule: keep 3 copies of your important files, on 2 different types of media (not both on the same drive), with 1 copy stored off-site (not in your house). Following this rule means you can survive a hardware failure, a theft, a fire, a flood, or a ransomware attack without losing your files.
 
 Why does it matter? Because the single most common way people lose precious files is through a failure they thought was unlikely. Hard drives fail about 10% per year after year 3. Ransomware can encrypt every connected drive in under an hour. House fires destroy every device in the home. If all your photos and documents are on one laptop, or even one laptop plus one attached external drive, one bad day wipes everything out. Insurance can replace the device, but not your child's baby photos.
 
@@ -735,7 +735,7 @@ A real home setup that follows the rule: original files live on your computer (c
 
 The fastest first step: pull down on the inbox (on phone) or click the Refresh button (on desktop) to force a manual sync. If that fails, check Downdetector.com or Google for "[Gmail | Outlook | iCloud] outage" — sometimes the provider is down and there is nothing to fix on your end. If the provider is fine, the next most common cause is a password change. Google, Microsoft, and Apple regularly force password resets when they detect suspicious activity, and until you re-enter the new password in your mail app, it silently fails.
 
-If the basics are fine, try force-closing the app completely and reopening it. If that does not work, remove the email account entirely from your device and add it back fresh. This sounds drastic but takes only five minutes, and it fixes the majority of persistent sync issues because it resets any corrupted tokens or cached settings. One more common cause: a full mailbox. If you are over quota (typically 15GB free on Gmail, 15GB on iCloud, 15GB on Outlook), new mail bounces back. Clean out large attachments first (the "Larger than 10MB" filter is your friend).`,
+If the basics are fine, try force-closing the app completely and reopening it. If that does not work, remove the email account entirely from your device and add it back fresh. This sounds drastic but takes only five minutes. And it fixes the majority of persistent sync issues because it resets any corrupted tokens or cached settings. One more common cause: a full mailbox. If you are over quota (typically 15GB free on Gmail, 15GB on iCloud, 15GB on Outlook), new mail bounces back. Clean out large attachments first (the "Larger than 10MB" filter is your friend).`,
     steps: [
       {
         title: `Pull down to force refresh`,
@@ -878,7 +878,7 @@ Naming files well makes them searchable and sortable. The best pattern: YYYY-MM-
     difficulty: `Beginner`,
     body: `A cluttered computer desktop — 80 files, screenshots from last October, PDFs whose names make no sense — has real costs beyond looking messy. Every icon on the desktop is rendered continuously by your computer's graphics system, which uses a measurable amount of RAM and slows startup. On a Mac, a packed desktop can add 5-10 seconds to login time. On Windows, it affects explorer.exe performance. Beyond speed, a cluttered desktop buries important files and makes it harder to focus — the visual noise every time you look at your screen is real.
 
-The one-time cleanup takes about 30 minutes. The rule: almost NOTHING should live on the desktop permanently. Everything else goes into Documents or gets deleted. The best approach: create a "Desktop Cleanup [Date]" folder, drag every file from the desktop into it, then process that folder one file at a time — delete junk, rename and file keepers, and when the cleanup folder is empty, you are done. This way the desktop is instantly clean, and you process the pile at your own pace (even over a few days).
+The one-time cleanup takes about 30 minutes. The rule: almost NOTHING should live on the desktop permanently. Everything else goes into Documents or gets deleted. The best approach: create a "Desktop Cleanup [Date]" folder, drag every file from the desktop into it, then process that folder one file at a time — delete junk, rename and file keepers, and when the cleanup folder is empty, you are done. This way the desktop is instantly clean. And you process the pile at your own pace (even over a few days).
 
 Both macOS and Windows have built-in tools to help. macOS Stacks groups desktop files by type automatically — right-click the desktop → Use Stacks. Files auto-sort into piles (Images, Documents, PDFs). Windows has "Sort by" (right-click desktop → Sort by → Type or Date), though it does not stack them. After cleanup, set a 10-minute weekly routine (every Sunday is a good anchor): anything new on the desktop older than a week gets moved or deleted. This is the single highest-impact computer habit you can build.`,
     steps: [

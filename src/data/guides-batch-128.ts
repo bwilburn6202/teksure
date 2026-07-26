@@ -19,7 +19,7 @@ export const guidesBatch128: Guide[] = [
 
 If your iPhone is recent (iPhone 11 or newer running iOS 17 or later — and this has been a feature on every iPhone since the iPhone 11), Find My works even when the iPhone is turned off or has run out of battery. The phone broadcasts a low-power Bluetooth signal that nearby Apple devices pick up and report back to you anonymously.
 
-Find My is on by default on every iPhone sold since 2019, but it never hurts to confirm. This guide walks through finding a lost iPhone, marking it as lost, and erasing it remotely if you cannot recover it.
+Find My is on by default on every iPhone sold since 2019. But it never hurts to confirm. This guide walks through finding a lost iPhone, marking it as lost, and erasing it remotely if you cannot recover it.
 
 (Sources: Apple Support — Find My, support.apple.com/find-my)`,
     steps: [
@@ -38,7 +38,7 @@ Find My is on by default on every iPhone sold since 2019, but it never hurts to 
       },
       {
         title: 'Mark your iPhone as Lost',
-        content: 'If your iPhone is somewhere outside your home, click "Mark As Lost" in Find My. This locks the phone with your passcode, suspends Apple Pay, and lets you display a custom message on the lock screen — for example, "If found, please call 555-1212." Anyone who finds the phone can see your message and call you, but they cannot use the phone, access your data, or sell it.',
+        content: 'If your iPhone is somewhere outside your home, click "Mark As Lost" in Find My. This locks the phone with your passcode, suspends Apple Pay, and lets you display a custom message on the lock screen — for example, "If found, please call 555-1212." Anyone who finds the phone can see your message and call you. But they cannot use the phone, access your data, or sell it.',
       },
       {
         title: 'Get directions to your iPhone',

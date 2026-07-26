@@ -110,7 +110,7 @@ After the call, if you recorded it, Zoom saves the recording to your computer (f
     thumbnailEmoji: ``,
     publishedAt: `2026-04-19`,
     difficulty: `Beginner`,
-    body: `Adding an email account to your Android phone means you can check your inbox, reply to messages, and send new emails right from your phone — without opening a web browser. Android phones come with the Gmail app already installed, and it handles not just Gmail but also Yahoo Mail, Outlook, AOL, and most other email providers.
+    body: `Adding an email account to your Android phone means you can check your inbox, reply to messages, and send new emails right from your phone — without opening a web browser. Android phones come with the Gmail app already installed. And it handles not just Gmail but also Yahoo Mail, Outlook, AOL, and most other email providers.
 
 If you have a Gmail address, the Gmail app is already set up from the moment you sign into your Google account on the phone. But if you want to add a second email address — say, a Yahoo account or a work email — you need to add it in settings.
 
@@ -670,7 +670,7 @@ The recording starts right away when you click Record and continues until you st
     steps: [
       {
         title: `Start a Meeting as the Host`,
-        content: `Open Zoom and start or join a meeting as the host. Participants join after you. Make sure everyone knows you plan to record — Zoom shows a notification, but it is polite to say "I am going to record this call" verbally as well.`,
+        content: `Open Zoom and start or join a meeting as the host. Participants join after you. Make sure everyone knows you plan to record — Zoom shows a notification. But it is polite to say "I am going to record this call" verbally as well.`,
       },
       {
         title: `Click the Record Button`,

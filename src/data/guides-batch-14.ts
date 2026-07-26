@@ -480,7 +480,7 @@ export const guidesBatch14: Guide[] = [
   {
     slug: 'how-to-use-cash-app-safely',
     title: 'How to Use Cash App Safely',
-    excerpt: 'Cash App is a popular way to send and receive money, but it comes with risks you should know about before sending your first payment.',
+    excerpt: 'Cash App is a popular way to send and receive money. But it comes with risks you should know about before sending your first payment.',
     category: 'financial-tech',
     tags: ['cash app', 'money transfer', 'payments', 'scam', 'safety', 'bank'],
     readTime: '5 min',
@@ -622,7 +622,7 @@ export const guidesBatch14: Guide[] = [
     steps: [
       {
         title: 'Attach a photo or file to an email on iPhone',
-        content: 'Start composing an email in the Mail app. Tap in the body of the email. Look for a small arrow or toolbar above the keyboard — tap the arrow if you need to scroll it. Tap the attachment icon (looks like a paperclip or camera). Choose "Photo Library" to attach a photo from your camera roll, or "Scan Document" to attach a scan. Select the photo or file, and it will appear in your email.',
+        content: 'Start composing an email in the Mail app. Tap in the body of the email. Look for a small arrow or toolbar above the keyboard — tap the arrow if you need to scroll it. Tap the attachment icon (looks like a paperclip or camera). Choose "Photo Library" to attach a photo from your camera roll, or "Scan Document" to attach a scan. Select the photo or file. And it will appear in your email.',
         tip: 'In Gmail on iPhone, compose a new email and tap the paperclip icon at the top right of the compose window to add an attachment. Tap "Attach file" or "Insert from Drive."',
       },
       {

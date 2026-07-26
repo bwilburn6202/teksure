@@ -73,7 +73,7 @@ Watch how the scam sounds and what to do: search YouTube for "FTC AI voice scam 
     publishedAt: '2026-05-13',
     lastVerifiedAt: '2026-05-13',
     difficulty: 'Beginner',
-    body: `Apple added a new physical button to every iPhone 16 model — Camera Control. It sits on the right side of the phone, below the power button, and it is not just a shutter. A single press opens the camera. A long press starts video. A light press lets you adjust zoom, exposure, or focus by sliding your finger across it.
+    body: `Apple added a new physical button to every iPhone 16 model — Camera Control. It sits on the right side of the phone, below the power button. And it is not just a shutter. A single press opens the camera. A long press starts video. A light press lets you adjust zoom, exposure, or focus by sliding your finger across it.
 
 If you have never used it, the button can feel mysterious. This guide explains every gesture in plain English, shows you how to turn off the gestures that drive you crazy, and how to set the button to only do what you want.
 
@@ -112,7 +112,7 @@ Watch the official walkthrough: YouTube → search "Apple Camera Control iPhone 
       },
       {
         title: 'Use it while the phone is locked — the security trade-off',
-        content: 'The Camera Control button opens the camera even when the phone is locked. That is great for catching a moment but means someone who picks up your phone can take photos and videos using it. They cannot see your existing photos without unlocking, but they can take new ones. If you find this unacceptable: open Settings > Face ID & Passcode (or Touch ID & Passcode), enter your passcode, scroll down, and turn off "Camera." Now the button still works when you are unlocked, but ignores presses when locked.',
+        content: 'The Camera Control button opens the camera even when the phone is locked. That is great for catching a moment but means someone who picks up your phone can take photos and videos using it. They cannot see your existing photos without unlocking. But they can take new ones. If you find this unacceptable: open Settings > Face ID & Passcode (or Touch ID & Passcode), enter your passcode, scroll down, and turn off "Camera." Now the button still works when you are unlocked, but ignores presses when locked.',
       },
     ],
   },
@@ -189,7 +189,7 @@ Watch a video walkthrough: YouTube → "Medicare.gov create account 2026" — of
     difficulty: 'Beginner',
     body: `Nearly every smart TV sold since 2017 includes a feature called ACR — Automatic Content Recognition. The TV takes tiny snapshots of whatever is on the screen, hundreds of times per second, and sends them to the manufacturer. The manufacturer sells that data to advertisers so they know what you watched, when, and for how long. This includes content from cable, streaming apps, DVDs, and anything you plug into HDMI.
 
-You can turn it off. The setting is buried in the menus on purpose, but every major brand allows you to disable it. Once it is off, the TV stops sending snapshots and stops the most invasive tracking. You may still see ads on the TV's home screen, but they will not be based on your viewing.
+You can turn it off. The setting is buried in the menus on purpose, but every major brand allows you to disable it. Once it is off, the TV stops sending snapshots and stops the most invasive tracking. You may still see ads on the TV's home screen. But they will not be based on your viewing.
 
 This guide gives you the exact menu steps for the four most common brands sold in the US: Vizio, Samsung, LG, and Roku TVs. The path is different on each, and the setting is sometimes called "Viewing Information" or "Live Plus" instead of ACR. The result is the same.
 
@@ -296,7 +296,7 @@ See it in action: YouTube → "Gmail Manage Subscriptions 2026 tutorial" — Goo
     publishedAt: '2026-05-13',
     lastVerifiedAt: '2026-05-13',
     difficulty: 'Beginner',
-    body: `iPhone Mirroring arrived with macOS Sequoia in late 2024 and is now standard on every Mac running macOS 15 or newer. It lets you see your iPhone screen on your Mac and tap, type, and swipe on it from your Mac\'s mouse and keyboard. Notifications from your phone also come to the Mac, and you can drag files between the phone and the Mac.
+    body: `iPhone Mirroring arrived with macOS Sequoia in late 2024 and is now standard on every Mac running macOS 15 or newer. It lets you see your iPhone screen on your Mac and tap, type, and swipe on it from your Mac\'s mouse and keyboard. Notifications from your phone also come to the Mac. And you can drag files between the phone and the Mac.
 
 This is useful if you spend most of the day at a computer and your iPhone is across the room. You can answer texts, check an app, or copy a photo without picking up the phone. It also helps people with hand or vision issues — typing on a Mac keyboard is easier than tapping a phone screen.
 

@@ -69,7 +69,7 @@ Always test your QR code after creating it. Use your phone camera to scan it and
     difficulty: `Beginner`,
     body: `If you have ever joined a video call and noticed that you looked dark, blurry, or washed out, you are not alone. Lighting and camera angle make a bigger difference than most people realize. The good news is that you can improve how you look on any video call — Zoom, FaceTime, Google Meet, or anything else — without spending much money at all.
 
-The single most important factor is where your light source is. Natural daylight from a window is excellent, but it has to be in front of you, not behind you. When a bright window is behind you, your camera adjusts for that brightness and your face appears as a dark silhouette. Moving so that the window is in front of you — or at least to your side — makes an enormous difference right away.
+The single most important factor is where your light source is. Natural daylight from a window is excellent. But it has to be in front of you, not behind you. When a bright window is behind you, your camera adjusts for that brightness and your face appears as a dark silhouette. Moving so that the window is in front of you — or at least to your side — makes an enormous difference right away.
 
 Camera height matters too. Most laptop cameras sit below your eye level when the laptop rests on a desk. This creates an unflattering upward angle. Raising your laptop on a stack of books, a box, or a laptop stand so that the camera is roughly at eye level creates a much more natural and professional appearance.
 
@@ -77,7 +77,7 @@ Background clutter is another common issue. A plain wall behind you or a tidy bo
 
 For people who want to invest a small amount, a ring light — a circular LED light that sits around or near your camera — provides consistent, flattering illumination. Basic ring lights are available for under twenty dollars and connect via USB. They are especially helpful if you take calls in the evening or in rooms without good natural light.
 
-Audio is often overlooked when thinking about video calls, but it is part of the overall impression you make. Built-in laptop speakers and microphones can pick up room echo. Using earbuds or headphones with a built-in microphone reduces echo and makes you easier to hear.
+Audio is often overlooked when thinking about video calls. But it is part of the overall impression you make. Built-in laptop speakers and microphones can pick up room echo. Using earbuds or headphones with a built-in microphone reduces echo and makes you easier to hear.
 
 A few minutes of setup before important calls can make you look more confident, attentive, and engaged — which is the goal.`,
     steps: [
@@ -121,7 +121,7 @@ A few minutes of setup before important calls can make you look more confident, 
 
 On an iPhone running iOS 17 or later, the Camera app includes a feature called Live Text. When you hold your camera over any printed text, small icons appear that let you interact with that text. Point your camera at a business card, and Live Text will recognize phone numbers and email addresses. Tap a phone number to call or save it, or tap an email address to send an email. For saving a full contact, you can also use the Contacts app directly.
 
-Google Lens is a powerful tool available on Android phones and also through the Google app on iPhones. It can read a business card and extract all the information at once. Open Google Lens (look for a colored viewfinder icon in the Google app or your camera app), point it at the business card, and it will highlight the text. Look for an option to copy all the text or to create a contact.
+Google Lens is a powerful tool available on Android phones and also through the Google app on iPhones. It can read a business card and extract all the information at once. Open Google Lens (look for a colored viewfinder icon in the Google app or your camera app), point it at the business card. And it will highlight the text. Look for an option to copy all the text or to create a contact.
 
 Samsung phones running recent versions of One UI have a dedicated business card scanner built into the Contacts app. Open Contacts, tap the plus button to add a new contact, and look for a "Scan business card" option. The camera opens, you frame the card, and the app fills in all the fields automatically. You then review and save.
 
@@ -210,7 +210,7 @@ The app is free and does not put watermarks on your scans, which is a significan
     difficulty: `Beginner`,
     body: `Your Apple Watch face is the screen you see every time you raise your wrist. Apple lets you change not just how it looks, but what information it shows you — all without touching your iPhone. You can have a simple clock face for casual wear and a detailed one for days when you want to track your health, weather, or calendar at a glance.
 
-The small pieces of information that appear around the main clock display are called "complications." This is an old watchmaking term, and it means any extra feature beyond showing the time. On an Apple Watch, complications can show you the current temperature, your step count, your heart rate, the next event on your calendar, the battery level, a timer shortcut, and much more. You get to choose which complications appear and where.
+The small pieces of information that appear around the main clock display are called "complications." This is an old watchmaking term. And it means any extra feature beyond showing the time. On an Apple Watch, complications can show you the current temperature, your step count, your heart rate, the next event on your calendar, the battery level, a timer shortcut, and much more. You get to choose which complications appear and where.
 
 Apple includes a library of watch faces to choose from, and new ones are added with software updates. Faces range from simple analog clock designs to colorful, information-packed digital displays. Some faces have more spots for complications than others.
 
@@ -293,7 +293,7 @@ This feature removes the hassle of texting photos individually. Once set up, it 
       },
       {
         title: `View shared photos`,
-        content: `Your partner can see your shared photos by opening Google Photos and tapping "Sharing" at the bottom of the screen, then looking in the "Partner" section. They can tap any photo to view it full size, and they can tap the save icon to add a photo to their own library permanently.`,
+        content: `Your partner can see your shared photos by opening Google Photos and tapping "Sharing" at the bottom of the screen, then looking in the "Partner" section. They can tap any photo to view it full size. And they can tap the save icon to add a photo to their own library permanently.`,
         tip: `You can pause or stop partner sharing at any time by going back to the same settings menu and tapping "Stop sharing."`,
       },
     ],
@@ -309,7 +309,7 @@ This feature removes the hassle of texting photos individually. Once set up, it 
     thumbnailEmoji: ``,
     publishedAt: `2026-04-19`,
     difficulty: `Beginner`,
-    body: `An Amazon Prime membership costs money every month or year, but you do not have to pay for two memberships for two adults in the same house. Amazon Household is a free feature that lets one Prime member share most of their Prime benefits with one other adult — and also with up to four children — all under one household arrangement.
+    body: `An Amazon Prime membership costs money every month or year. But you do not have to pay for two memberships for two adults in the same house. Amazon Household is a free feature that lets one Prime member share most of their Prime benefits with one other adult — and also with up to four children — all under one household arrangement.
 
 The benefits that carry over to the other adult include free two-day shipping on Prime-eligible items, access to Prime Video streaming, Prime Reading (a selection of free books and magazines), and Amazon Photos cloud storage. Essentially, your household partner gets nearly everything you get with Prime without needing their own paid membership.
 
@@ -360,7 +360,7 @@ One important note: the other adult you add must actually live in the same house
     thumbnailEmoji: ``,
     publishedAt: `2026-04-19`,
     difficulty: `Beginner`,
-    body: `Amazon makes it very convenient to subscribe to products — household supplies, vitamins, pet food, coffee, and hundreds of other items available on an automatic recurring schedule at a discount. This feature is called Subscribe and Save. But over time, subscriptions can add up, and you may not even remember what you have signed up for. Reviewing and managing these subscriptions is straightforward once you know where to look.
+    body: `Amazon makes it very convenient to subscribe to products — household supplies, vitamins, pet food, coffee, and hundreds of other items available on an automatic recurring schedule at a discount. This feature is called Subscribe and Save. But over time, subscriptions can add up. And you may not even remember what you have signed up for. Reviewing and managing these subscriptions is straightforward once you know where to look.
 
 Subscribe and Save is not the only kind of recurring charge that can appear through Amazon. You might also have subscriptions to Prime, Prime Video add-on channels (like Starz, Showtime, or Discovery+), Audible (audiobooks), Kindle Unlimited (unlimited ebook access), Amazon Music, or third-party services that bill through Amazon. All of these can be found and managed from your Amazon account.
 
@@ -411,7 +411,7 @@ Reviewing your subscriptions every few months is good practice. You may find ite
 
 The good news is that how you charge and use your iPhone greatly affects how quickly the battery degrades. With a few habits, you can keep your battery healthy for a longer period.
 
-One of the most effective tools is built into iOS. Apple introduced a feature called Optimized Battery Charging in iOS 13, and it is turned on by default on most iPhones. This feature uses machine learning to learn your daily charging pattern. If it notices you typically charge overnight, it will charge your iPhone to about 80% quickly, then pause and wait until just before you wake up to finish charging to 100%. This prevents the battery from sitting at 100% charge for hours at a time — which is one of the main causes of battery degradation.
+One of the most effective tools is built into iOS. Apple introduced a feature called Optimized Battery Charging in iOS 13. And it is turned on by default on most iPhones. This feature uses machine learning to learn your daily charging pattern. If it notices you typically charge overnight, it will charge your iPhone to about 80% quickly, then pause and wait until just before you wake up to finish charging to 100%. This prevents the battery from sitting at 100% charge for hours at a time — which is one of the main causes of battery degradation.
 
 Heat is the other major enemy of battery health. Leaving your iPhone in a hot car, direct sunlight, or using it heavily while charging all generate heat that accelerates battery aging. Try to avoid charging your phone on a bed or couch where it cannot dissipate heat.
 
@@ -455,9 +455,9 @@ Several features on your iPhone consume battery faster than others. Keeping scre
     thumbnailEmoji: ``,
     publishedAt: `2026-04-19`,
     difficulty: `Beginner`,
-    body: `Android phones use lithium-ion batteries — the same technology found in iPhones, laptops, and electric cars. These batteries are very capable, but they do degrade over time. How quickly they degrade depends a lot on how you charge and use the phone.
+    body: `Android phones use lithium-ion batteries — the same technology found in iPhones, laptops, and electric cars. These batteries are very capable. But they do degrade over time. How quickly they degrade depends a lot on how you charge and use the phone.
 
-A common misconception is that you should let your phone battery drain completely to zero before charging. This was true for older types of batteries decades ago, but it is actually harmful to modern lithium-ion batteries. Deep discharges (going to 0%) put stress on the battery chemistry. Frequent full discharges accelerate aging.
+A common misconception is that you should let your phone battery drain completely to zero before charging. This was true for older types of batteries decades ago. But it is actually harmful to modern lithium-ion batteries. Deep discharges (going to 0%) put stress on the battery chemistry. Frequent full discharges accelerate aging.
 
 A better approach is to plug in your phone when the battery reaches around 20 to 25% and unplug or stop charging around 80 to 85% if possible. This range is sometimes called the "sweet spot" for lithium-ion batteries. Of course, in everyday life you cannot always hit those exact numbers, and sometimes charging to 100% is fine — the goal is avoiding deep discharges and long periods sitting at 100% as a regular habit.
 
@@ -503,7 +503,7 @@ After two to three years of normal use, most Android phone batteries will hold n
     thumbnailEmoji: ``,
     publishedAt: `2026-04-19`,
     difficulty: `Beginner`,
-    body: `PayPal is one of the oldest and most trusted services for sending money between people online. You do not need to share your bank account number or credit card details with the person you are paying — PayPal handles that part securely. The recipient only needs to know your email address or phone number, and you only need to know theirs.
+    body: `PayPal is one of the oldest and most trusted services for sending money between people online. You do not need to share your bank account number or credit card details with the person you are paying — PayPal handles that part securely. The recipient only needs to know your email address or phone number. And you only need to know theirs.
 
 The PayPal app is available free on both iPhones and Android phones. Once you set it up with your bank account or a debit or credit card, you can send money to almost anyone instantly — as long as they also have a PayPal account. If they do not have one, PayPal will email them an invitation to claim the money by creating a free account.
 
@@ -556,7 +556,7 @@ Your PayPal balance sits in your PayPal account, separate from your bank account
 
 Sending money to friends and family using Google Pay is free when you use a linked bank account or debit card. There is a fee (currently 1.5% per transaction, minimum $0.31) if you send from a credit card. Receiving money is always free.
 
-Google Pay transfers work between Google accounts. The recipient needs a Google account and a bank account or debit card connected to receive the funds. Money sent through Google Pay goes into the recipient's Google Pay balance, and they can then transfer it to their bank account for free within one to three business days.
+Google Pay transfers work between Google accounts. The recipient needs a Google account and a bank account or debit card connected to receive the funds. Money sent through Google Pay goes into the recipient's Google Pay balance. And they can then transfer it to their bank account for free within one to three business days.
 
 One of the most useful aspects of Google Pay for personal use is the contact-based interface. You can find people to pay by searching their name (if they are in your Google contacts), their email address, or their phone number. This makes it straightforward to pay a neighbor, family member, or coworker without needing to know their bank details.
 
@@ -605,7 +605,7 @@ Google Pay is best for personal payments between people you know. For buying thi
     thumbnailEmoji: ``,
     publishedAt: `2026-04-19`,
     difficulty: `Beginner`,
-    body: `Many cities across the United States now let you use your phone to pay for public transit — buses, subways, commuter rail, and light rail — instead of carrying a physical transit card or fumbling for exact change. The technology is called contactless payment, and it works by holding your phone near a small reader at the fare gate or on the bus. The payment happens in less than a second.
+    body: `Many cities across the United States now let you use your phone to pay for public transit — buses, subways, commuter rail, and light rail — instead of carrying a physical transit card or fumbling for exact change. The technology is called contactless payment. And it works by holding your phone near a small reader at the fare gate or on the bus. The payment happens in less than a second.
 
 Whether you have an iPhone or an Android phone, the process involves adding your transit account to Apple Wallet or Google Wallet. Each city has its own transit system and its own process for setting this up, but the general steps are similar across major cities.
 

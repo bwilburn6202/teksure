@@ -128,7 +128,7 @@ If you pick up and hear a recorded message telling you to "Press 1 to speak to a
 
 **The built-in screening tools on your phone**
 
-Every current iPhone has a feature called Silence Unknown Callers. When it is turned on, calls from numbers not in your contacts, recent calls, or Siri suggestions go directly to voicemail without ringing. You can turn it on under Settings > Phone > Silence Unknown Callers. This will not block known contacts, and you will still get the voicemail if someone leaves one.
+Every current iPhone has a feature called Silence Unknown Callers. When it is turned on, calls from numbers not in your contacts, recent calls, or Siri suggestions go directly to voicemail without ringing. You can turn it on under Settings > Phone > Silence Unknown Callers. This will not block known contacts. And you will still get the voicemail if someone leaves one.
 
 If you have a Google Pixel phone, the built-in Phone app includes a Call Screen feature. When an unknown number calls, Google Assistant answers for you and asks the caller to state their name and reason for calling. You see the transcript on your screen in real time and decide whether to pick up, hang up, or mark as spam.
 
@@ -221,9 +221,9 @@ This guide explains the difference between prepaid wireless plans and pay-as-you
 
 **Two types of prepaid phone service**
 
-There are two main types of prepaid phone service, and it helps to understand the difference before you shop.
+There are two main types of prepaid phone service. And it helps to understand the difference before you shop.
 
-The first type is a **prepaid wireless plan**. This works like a regular phone plan, but you pay a flat monthly fee in advance rather than receiving a bill at the end of the month. Carriers like Consumer Cellular, Tracfone, Straight Talk, and Mint Mobile offer prepaid plans. You get a set amount of talk, text, and data each month. These plans range from about $10 to $40 per month depending on how much you want. There is no credit check and no contract — you can cancel at any time.
+The first type is a **prepaid wireless plan**. This works like a regular phone plan. But you pay a flat monthly fee in advance rather than receiving a bill at the end of the month. Carriers like Consumer Cellular, Tracfone, Straight Talk, and Mint Mobile offer prepaid plans. You get a set amount of talk, text, and data each month. These plans range from about $10 to $40 per month depending on how much you want. There is no credit check and no contract — you can cancel at any time.
 
 The second type is a **pay-as-you-go card**, sometimes called a minutes card or airtime card. These are physical cards sold in stores. You buy the card, scratch off a code on the back, and enter that code on your phone or on the carrier's website to add a block of minutes (and sometimes texts or data) to your account. Minutes may expire after 30, 60, or 90 days if you do not use them, depending on the plan. Tracfone is the most well-known carrier for this type of service.
 

@@ -13,7 +13,7 @@ export const guidesBatch57: Guide[] = [
     difficulty: `Beginner`,
     body: `Your iPhone can record everything happening on your screen as a video — no extra app needed. This is useful when you want to show someone how to do something on a phone, save a video call moment, capture a game clip, or save a social media video that does not have a download button.
 
-The feature is called Screen Recording. It is built into every iPhone running iOS 17 or later, and it saves the video directly to your Photos app when you stop recording.
+The feature is called Screen Recording. It is built into every iPhone running iOS 17 or later. And it saves the video directly to your Photos app when you stop recording.
 
 Before you can use it, you need to add the Screen Recording button to your Control Center — the panel of quick-settings buttons you swipe down from the top-right corner of your screen. You only have to do this setup one time.
 
@@ -195,7 +195,7 @@ To get the most out of Voice Access, spend some time practicing with it when you
 
 If you mostly browse the web, watch videos, check email, video chat, write documents, or shop online, a Chromebook can do all of those things well — and it does them at a lower price than most Windows laptops or Macs.
 
-Chromebooks start up very quickly — usually in under 10 seconds — and they update themselves automatically in the background. You do not need to install antivirus software, and they are generally considered more secure than traditional computers because very little software runs directly on the machine.
+Chromebooks start up very quickly — usually in under 10 seconds — and they update themselves automatically in the background. You do not need to install antivirus software. And they are generally considered more secure than traditional computers because very little software runs directly on the machine.
 
 The main limitation is that Chromebooks are not great for specialized software that runs on Windows, like some tax programs, certain photo or video editors, or games. For most everyday tasks, though, they work well.
 
@@ -241,7 +241,7 @@ Chromebooks are popular in schools and are often recommended for seniors and peo
     difficulty: `Beginner`,
     body: `Windows Narrator is a screen reader built into every Windows 10 and Windows 11 computer. A screen reader is a program that reads aloud whatever is on your screen — text in documents, labels on buttons, items in menus, and announcements about what is happening on the computer.
 
-Narrator is designed for people who are blind or have very low vision, but it is also useful for anyone who finds it easier to listen than to read on screen. It can read web pages, emails, documents, and system menus.
+Narrator is designed for people who are blind or have very low vision. But it is also useful for anyone who finds it easier to listen than to read on screen. It can read web pages, emails, documents, and system menus.
 
 Narrator uses a text-to-speech voice that speaks out loud through your speakers or headphones. You can choose from several different voices, adjust the speaking speed, and control how much detail Narrator announces.
 
@@ -288,7 +288,7 @@ If you are new to screen readers, plan to spend some time getting familiar with 
     difficulty: `Intermediate`,
     body: `VoiceOver is a screen reader built into every Mac. It reads aloud everything on your screen — text in documents and web pages, names of buttons and menus, descriptions of images, and status updates about what is happening on the computer.
 
-A screen reader is a program that turns visual content into spoken words. VoiceOver is particularly helpful for people who are blind or have low vision, but it is also useful for anyone who prefers to listen rather than read on screen, or who wants to verify what they are clicking.
+A screen reader is a program that turns visual content into spoken words. VoiceOver is particularly helpful for people who are blind or have low vision. But it is also useful for anyone who prefers to listen rather than read on screen, or who wants to verify what they are clicking.
 
 VoiceOver is more advanced than a basic text-to-speech feature. It describes the entire interface: what type of element something is (a button, a link, a text field), its state (checked or unchecked, expanded or collapsed), and where it sits in the layout.
 
@@ -480,7 +480,7 @@ Setting up automatic payments for regular bills like your utilities, phone, or s
 
 Keep in mind that automatic payments come out of your account whether or not you have reviewed the bill. Check your statements regularly to catch any billing errors.
 
-You can manage, pause, or cancel any automatic payment through your bank's Bill Pay section at any time. The biller does not control the automatic payment — your bank does, and you are always in control.`,
+You can manage, pause, or cancel any automatic payment through your bank's Bill Pay section at any time. The biller does not control the automatic payment — your bank does. And you are always in control.`,
     steps: [
       {
         title: `Find Bill Pay in your bank's app or website`,
@@ -618,7 +618,7 @@ Setting a Screen Time passcode is important. This is a separate 4-digit code (di
 
 Communication Limits controls who your child can call, text, or FaceTime. Content & Privacy Restrictions blocks explicit websites, restricts music or movies with mature ratings, and can prevent your child from installing or deleting apps.
 
-App Limits let you set a daily time allowance for specific app categories. For example, you might allow 1 hour of social media per day. When the time is up, the app grays out and shows a reminder. Your child can ask for more time, and you can approve or deny the request.
+App Limits let you set a daily time allowance for specific app categories. For example, you might allow 1 hour of social media per day. When the time is up, the app grays out and shows a reminder. Your child can ask for more time. And you can approve or deny the request.
 
 Downtime schedules a period when only certain apps and phone calls are available — everything else is locked. This is commonly used for school hours and bedtime.
 
@@ -754,7 +754,7 @@ Call-blocking apps work by checking incoming phone numbers against large databas
 
 Three popular options are Hiya, RoboKiller, and Nomorobo. Each works on both iPhone and Android.
 
-Hiya is free and identifies spam and fraud calls. It labels suspected spam calls on your screen so you can decide whether to answer. It does not automatically block calls in the free version, but it gives you enough information to decide.
+Hiya is free and identifies spam and fraud calls. It labels suspected spam calls on your screen so you can decide whether to answer. It does not automatically block calls in the free version. But it gives you enough information to decide.
 
 RoboKiller goes further — it not only blocks robocalls but can also "answer bot" the calls, playing a recorded response that wastes the scammer's time while they are trying to call real people. It has a free trial and then costs about $4 per month.
 
@@ -798,7 +798,7 @@ None of these apps have access to your calls, voicemails, or messages — they o
     thumbnailEmoji: ``,
     publishedAt: `2026-04-19`,
     difficulty: `Beginner`,
-    body: `CapCut is a free video editing app you can use on your iPhone or Android phone. It was created by the same company as TikTok, but you do not need a TikTok account to use it — it works as a standalone video editor for anyone who wants to make short videos.
+    body: `CapCut is a free video editing app you can use on your iPhone or Android phone. It was created by the same company as TikTok. But you do not need a TikTok account to use it — it works as a standalone video editor for anyone who wants to make short videos.
 
 With CapCut you can combine video clips, trim out the parts you do not want, add text and captions, include background music, adjust the speed, and add transitions between clips. The finished video saves to your phone's camera roll and can be shared anywhere you want — via text, email, social media, or kept privately for yourself.
 
@@ -813,7 +813,7 @@ CapCut is free to download and use. Some advanced templates have a small fee, bu
       {
         title: `Download CapCut and start a new project`,
         content: `Search for "CapCut" in the App Store (iPhone) or Google Play Store (Android). Download and install the free app. Open it and tap the large + New Project button. Your phone's camera roll will open — select the video clips or photos you want to use (tap each one to select it). Tap Add when done.`,
-        tip: `You can mix video clips and still photos in the same project. Still photos will display for about 3 seconds each by default, and you can change that duration later.`,
+        tip: `You can mix video clips and still photos in the same project. Still photos will display for about 3 seconds each by default. And you can change that duration later.`,
       },
       {
         title: `Trim a clip to remove unwanted parts`,
@@ -845,7 +845,7 @@ CapCut is free to download and use. Some advanced templates have a small fee, bu
     thumbnailEmoji: ``,
     publishedAt: `2026-04-19`,
     difficulty: `Beginner`,
-    body: `Google Photos is a free app that stores your photos and also includes a set of editing tools you can use to improve them. You do not need any photo editing experience — the tools are designed to be approachable, and you can always undo any change you make.
+    body: `Google Photos is a free app that stores your photos and also includes a set of editing tools you can use to improve them. You do not need any photo editing experience — the tools are designed to be approachable. And you can always undo any change you make.
 
 The basic editing tools let you adjust brightness (how light or dark the photo is), contrast (the difference between the light and dark areas), color, and sharpness. There is also a one-tap Enhance button that automatically improves a photo's overall look without you having to adjust anything manually.
 

@@ -32,7 +32,7 @@ This guide shows you how to turn it on, make your first Genmoji, share it withou
       },
       {
         title: 'Turn on Apple Intelligence',
-        content: 'Open Settings. Scroll down and tap "Apple Intelligence & Siri." Tap the toggle next to "Apple Intelligence" so it turns green. The phone will spend a few minutes downloading the AI model in the background — this is normal and only happens once. You do not need to be plugged in, but you do need to be on Wi-Fi. Make sure your iPhone has at least 7 GB of free storage before turning this on.',
+        content: 'Open Settings. Scroll down and tap "Apple Intelligence & Siri." Tap the toggle next to "Apple Intelligence" so it turns green. The phone will spend a few minutes downloading the AI model in the background — this is normal and only happens once. You do not need to be plugged in. But you do need to be on Wi-Fi. Make sure your iPhone has at least 7 GB of free storage before turning this on.',
         warning: 'If you do not see "Apple Intelligence & Siri" in Settings, your phone either does not support it or your region has it disabled. Update to the latest iOS first (Settings > General > Software Update).',
       },
       {
@@ -278,7 +278,7 @@ This guide walks through the four-step setup: taking the at-home hearing test, e
     publishedAt: '2026-05-13',
     lastVerifiedAt: '2026-05-13',
     difficulty: 'Beginner',
-    body: `Amazon\'s Subscribe & Save can save you 5–15 percent on things you buy every month or two — toilet paper, vitamins, coffee, pet food. The idea is simple: tell Amazon how often to send the item, and it ships on that schedule automatically.
+    body: `Amazon\'s Subscribe & Save can save you 5–15 percent on things you buy every month or two — toilet paper, vitamins, coffee, pet food. The idea is simple: tell Amazon how often to send the item. And it ships on that schedule automatically.
 
 The problem is that the default settings catch people by surprise. Items can arrive when you do not need them. Prices change without warning. Shipments combine in confusing ways. People wake up to a $146 charge for things they forgot they subscribed to.
 
@@ -344,7 +344,7 @@ For seniors who hate remembering passwords or who have been phished before, pass
     steps: [
       {
         title: 'Understand what a passkey actually is',
-        content: 'A passkey is a small file stored on your iPhone, Android phone, or computer. When you go to log in, the bank sends a challenge, your device proves it has the matching passkey file, and you confirm with Face ID or your fingerprint. There is no password to type. There is nothing for a hacker to steal — the file never leaves your device. If a website asks you to "type your passkey," that is a fake site. Real passkeys never involve typing.',
+        content: 'A passkey is a small file stored on your iPhone, Android phone, or computer. When you go to log in, the bank sends a challenge, your device proves it has the matching passkey file. And you confirm with Face ID or your fingerprint. There is no password to type. There is nothing for a hacker to steal — the file never leaves your device. If a website asks you to "type your passkey," that is a fake site. Real passkeys never involve typing.',
         tip: 'Quick Tip: Think of a passkey like a house key. Your iPhone is the key. Your face or fingerprint is the lock on the key safe. Without both your device AND your face, no one can sign in as you.',
       },
       {

@@ -677,7 +677,7 @@ One important note: once direct deposit is set up, it usually takes one pay peri
       {
         title: 'For Social Security — set up through your My Social Security account',
         content: 'Go to ssa.gov and sign into (or create) a free "my Social Security" account. Under "Direct Deposit," click "Start or Update Direct Deposit." Enter your bank routing number, account number, and account type. Changes take 30-60 days to take effect. You can also call 1-800-772-1213 to make the change by phone.',
-        tip: 'Quick Tip: The SSA strongly encourages direct deposit — it protects your payment from mail theft, and you get access to your money on the payment day even if it falls on a Saturday.',
+        tip: 'Quick Tip: The SSA strongly encourages direct deposit — it protects your payment from mail theft. And you get access to your money on the payment day even if it falls on a Saturday.',
       },
       {
         title: 'For tax refunds — enter bank info when filing',
@@ -796,7 +796,7 @@ The full credit report (which is different from the score) shows every account y
     publishedAt: '2026-05-03',
     lastVerifiedAt: '2026-05-03',
     difficulty: 'Beginner',
-    body: `A savings account is a bank account designed for money you want to keep safe and earn interest on, rather than spending day to day. Unlike your checking account, a savings account typically has limits on how many withdrawals you can make per month, but it earns interest — meaning the bank pays you a small percentage of your balance each month for keeping money there.
+    body: `A savings account is a bank account designed for money you want to keep safe and earn interest on, rather than spending day to day. Unlike your checking account, a savings account typically has limits on how many withdrawals you can make per month. But it earns interest — meaning the bank pays you a small percentage of your balance each month for keeping money there.
 
 Online banks (banks that operate without physical branches) often offer a lot higher interest rates than traditional brick-and-mortar banks. While a traditional bank might pay 0.01% to 0.10% per year, high-yield savings accounts at online banks may pay 4% to 5% annually. On $10,000, that difference is between $10 and $500 per year in interest.
 

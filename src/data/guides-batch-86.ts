@@ -11,7 +11,7 @@ export const guidesBatch86: Guide[] = [
     thumbnailEmoji: ``,
     publishedAt: `2026-04-20`,
     difficulty: `Beginner`,
-    body: `Planta is a free app (with optional paid features) that acts like a personal plant care assistant. You tell it which plants you own, and it builds a customized care schedule for each one — including when to water, mist, fertilize, and repot. The app uses your local weather and light conditions to adjust those recommendations automatically.
+    body: `Planta is a free app (with optional paid features) that acts like a personal plant care assistant. You tell it which plants you own. And it builds a customized care schedule for each one — including when to water, mist, fertilize, and repot. The app uses your local weather and light conditions to adjust those recommendations automatically.
 
 For anyone who has ever lost a houseplant because they forgot to water it — or watered it too much — Planta takes away the guesswork. You do not need any gardening experience to use it. The app explains every task in plain language and tells you exactly what to do and why.
 
@@ -124,7 +124,7 @@ All About Birds works well on any smartphone browser and is also integrated with
       },
       {
         title: `Use range maps to see where and when a bird appears`,
-        content: `The Maps tab shows you where a species lives year-round, where it only appears in summer (breeding season), and where it only shows up in winter. This is valuable for two reasons: it helps confirm whether a bird you spotted could actually be in your area, and it tells you the best times of year to look for species on your wish list. Migration corridors and seasonal changes are clearly marked.`,
+        content: `The Maps tab shows you where a species lives year-round, where it only appears in summer (breeding season), and where it only shows up in winter. This is valuable for two reasons: it helps confirm whether a bird you spotted could actually be in your area. And it tells you the best times of year to look for species on your wish list. Migration corridors and seasonal changes are clearly marked.`,
       },
       {
         title: `Explore the photo galleries and learn to distinguish similar species`,
@@ -144,7 +144,7 @@ All About Birds works well on any smartphone browser and is also integrated with
     difficulty: `Beginner`,
     body: `eBird is a free platform created by the Cornell Lab of Ornithology that lets anyone record bird sightings and share them with a global database used by scientists, conservationists, and bird enthusiasts around the world. When you log a bird you have seen, you are contributing to real research that helps track population trends, migration patterns, and the effects of climate change on bird species.
 
-But eBird is not just for scientists — it is also a practical tool for birders of every level. You can look up what birds have been seen near your home, at a park you are visiting, or along a trail you plan to hike. The "Explore" feature shows you a live map of recent sightings in your area, and you can filter by species to find out if that rare warbler someone mentioned has been spotted nearby.
+But eBird is not just for scientists — it is also a practical tool for birders of every level. You can look up what birds have been seen near your home, at a park you are visiting, or along a trail you plan to hike. The "Explore" feature shows you a live map of recent sightings in your area. And you can filter by species to find out if that rare warbler someone mentioned has been spotted nearby.
 
 eBird is available as a website at ebird.org and as a free smartphone app for iPhone and Android. The app is particularly useful for logging birds while you are out in the field. You select your location, record the birds you see and how many, and submit the checklist. The whole process takes just a few minutes.
 
@@ -187,9 +187,9 @@ As of 2026, eBird has recorded more than 1.5 billion bird observations from more
     difficulty: `Beginner`,
     body: `Merlin Bird ID is a free app from the Cornell Lab of Ornithology, and its Sound ID feature is one of the most remarkable things you can do with a smartphone in the natural world. Open the app, tap Sound ID, hold your phone up toward a tree or a bird feeder, and Merlin listens. Within seconds it shows you the names of the birds it hears, updated in real time as new songs appear. It works even when multiple birds are singing at the same time.
 
-The feature uses machine learning — a type of artificial intelligence — to recognize thousands of distinct bird songs and calls. It was trained on millions of verified bird sound recordings from the Cornell Lab's Macaulay Library, the world's largest archive of wildlife audio. As a result, Merlin's accuracy is remarkably high for common species, and it continues to improve with updates.
+The feature uses machine learning — a type of artificial intelligence — to recognize thousands of distinct bird songs and calls. It was trained on millions of verified bird sound recordings from the Cornell Lab's Macaulay Library, the world's largest archive of wildlife audio. As a result, Merlin's accuracy is remarkably high for common species. And it continues to improve with updates.
 
-Merlin is completely free. There are no in-app purchases, no subscriptions, and no advertisements. It is available for iPhone and Android. Cornell Lab describes it as a tool designed to get more people connected with birds, and it has succeeded — the app has been downloaded more than 10 million times.
+Merlin is completely free. There are no in-app purchases, no subscriptions, and no advertisements. It is available for iPhone and Android. Cornell Lab describes it as a tool designed to get more people connected with birds. And it has succeeded — the app has been downloaded more than 10 million times.
 
 Sound ID works best outdoors in relatively quiet conditions, though it can still pick out birds over moderate background noise like wind or distant traffic. Once a bird is identified in the Sound ID session, you can tap its name to learn more about it through the built-in field guide, which connects to the All About Birds database.`,
     steps: [
@@ -230,7 +230,7 @@ Sound ID works best outdoors in relatively quiet conditions, though it can still
     difficulty: `Beginner`,
     body: `Stellarium is a free, open-source planetarium application that turns your smartphone into a window on the universe. When you hold your phone up toward the night sky, Stellarium uses your GPS location, the device's compass, and the current time to show you an accurate map of exactly what is above you. Stars, planets, constellations, nebulae, and satellites are all labeled and positioned correctly for your location at that exact moment.
 
-The app is often described as a "sky map," and that is the most accurate way to think about it. Unlike a static star chart from a book, Stellarium moves in real time as you tilt and rotate your phone. Pan left, and the display shows what is to your west. Tilt the phone toward the ground, and you can see what the sky looks like on the other side of the Earth.
+The app is often described as a "sky map," and that is the most accurate way to think about it. Unlike a static star chart from a book, Stellarium moves in real time as you tilt and rotate your phone. Pan left, and the display shows what is to your west. Tilt the phone toward the ground. And you can see what the sky looks like on the other side of the Earth.
 
 Stellarium is available as a free web app at stellarium-web.org and as a more feature-rich mobile app. The mobile version is called Stellarium Plus on iPhone and Android, with a small one-time purchase for the full feature set — but the free web version is excellent for most casual stargazers.
 
@@ -243,7 +243,7 @@ Stellarium is developed by a community of astronomers and software developers wh
       },
       {
         title: `Go outside and let your eyes adjust`,
-        content: `Before you start using the app, step outside and give your eyes a few minutes to adjust to the dark. The human eye takes about 10 to 20 minutes to fully adapt to low light, and you will see far more stars once adaptation happens. Dim your phone screen as much as possible — Stellarium's night mode turns the interface red, which is easier on adapted eyes than bright white light.`,
+        content: `Before you start using the app, step outside and give your eyes a few minutes to adjust to the dark. The human eye takes about 10 to 20 minutes to fully adapt to low light. And you will see far more stars once adaptation happens. Dim your phone screen as much as possible — Stellarium's night mode turns the interface red, which is easier on adapted eyes than bright white light.`,
         tip: `Quick Tip: Enable Night Mode in Stellarium's settings (it looks like a moon icon). Red light does not interfere with your night vision the way white light does.`,
       },
       {
@@ -397,7 +397,7 @@ Full Moons are often bright enough to cast shadows and are popular for outdoor n
 
 The app is developed by AJC Mobile and is available for free on iPhone and Android, with an ad-free premium version available if you prefer. The free version has all the core radar and alert features that most people need.
 
-NEXRAD stands for Next Generation Weather Radar, and it is a national network of radar stations operated by the National Weather Service. These stations sweep the sky every few minutes and detect precipitation, wind speed, and storm rotation. MyRadar pulls this data and updates the display every few minutes so you can see where storms are moving.
+NEXRAD stands for Next Generation Weather Radar. And it is a national network of radar stations operated by the National Weather Service. These stations sweep the sky every few minutes and detect precipitation, wind speed, and storm rotation. MyRadar pulls this data and updates the display every few minutes so you can see where storms are moving.
 
 The most important safety feature in MyRadar is its severe weather alert system. You can configure the app to send push notifications when a National Weather Service warning is issued for your location — including tornado warnings, severe thunderstorm warnings, flash flood warnings, and winter storm warnings. These alerts are time-sensitive and can give you critical minutes to take shelter or prepare.
 
@@ -406,7 +406,7 @@ Unlike a general weather app that shows you a forecast, MyRadar shows you what i
       {
         title: `Download and open MyRadar`,
         content: `Search for "MyRadar Weather Radar" in the App Store or Google Play. Download the free version — it is the one with the most reviews and the orange radar icon. Open the app and allow it to access your location. The radar map will right away center on your area and display any current precipitation. If the sky is clear, the map will show your region with no colored overlay.`,
-        tip: `Quick Tip: Allow notifications when prompted. Severe weather alerts are the most important safety feature this app offers, and they only work if notifications are enabled.`,
+        tip: `Quick Tip: Allow notifications when prompted. Severe weather alerts are the most important safety feature this app offers. And they only work if notifications are enabled.`,
       },
       {
         title: `Read the radar colors`,
@@ -702,12 +702,12 @@ Before you go on any hike — especially your first one — it is worth spending
     steps: [
       {
         title: `Download AllTrails and set up your profile`,
-        content: `Search for "AllTrails" in the App Store or Google Play and download the free app. Create a free account with your email or sign in with Google or Apple. On your profile, you can optionally note your experience level. AllTrails uses this to help filter recommendations, but it does not prevent you from browsing any trail. Your account syncs across devices so your saved trails and completed hike history are always available.`,
+        content: `Search for "AllTrails" in the App Store or Google Play and download the free app. Create a free account with your email or sign in with Google or Apple. On your profile, you can optionally note your experience level. AllTrails uses this to help filter recommendations. But it does not prevent you from browsing any trail. Your account syncs across devices so your saved trails and completed hike history are always available.`,
       },
       {
         title: `Search for trails near you`,
         content: `Tap "Explore" or the search bar and then tap "Near Me" to see trails within a few miles of your current location. You can filter results by difficulty (Easy, Moderate, Hard), distance, elevation gain, and features like dog-friendly, paved surfaces, or wheelchair accessible. For a first hike, filter for Easy difficulty and a loop trail of 2–3 miles. A loop returns you to the same trailhead rather than requiring you to backtrack.`,
-        tip: `Quick Tip: Sort trail results by "Most Popular" to see which nearby trails have the most visitor activity. Popular trails are easier to navigate because the path is well-worn, and you are more likely to encounter other hikers if you need help.`,
+        tip: `Quick Tip: Sort trail results by "Most Popular" to see which nearby trails have the most visitor activity. Popular trails are easier to navigate because the path is well-worn. And you are more likely to encounter other hikers if you need help.`,
       },
       {
         title: `Read the trail page before you go`,

@@ -144,7 +144,7 @@ Screen Time is free and built right into every iPhone running iOS 17 or newer (m
 
 **A note on the passcode**
 
-When you set app limits, your iPhone will ask if you want to set a Screen Time passcode. This is optional. If you set one, you will need to enter it to override a limit when the time runs out. If you are setting limits for yourself and want them to be more of a soft reminder than a hard block, you can skip the passcode — the phone will still show a warning when you reach your limit, and you can choose to ignore it or extend the time.
+When you set app limits, your iPhone will ask if you want to set a Screen Time passcode. This is optional. If you set one, you will need to enter it to override a limit when the time runs out. If you are setting limits for yourself and want them to be more of a soft reminder than a hard block, you can skip the passcode — the phone will still show a warning when you reach your limit. And you can choose to ignore it or extend the time.
 
 **This is a tool, not a punishment**
 

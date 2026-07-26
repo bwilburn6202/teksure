@@ -33,7 +33,7 @@ export const guidesBatch254: Guide[] = [
       },
       {
         title: "Carry proof of coverage with you on the trip",
-        content: "Print two copies of your travel insurance policy summary and the 24/7 emergency phone number. Put one copy in your suitcase and one in your day bag. Email a copy to a family member at home. Foreign hospitals often require proof of coverage before admitting you, and you do not want to be searching for paperwork during a real emergency.",
+        content: "Print two copies of your travel insurance policy summary and the 24/7 emergency phone number. Put one copy in your suitcase and one in your day bag. Email a copy to a family member at home. Foreign hospitals often require proof of coverage before admitting you. And you do not want to be searching for paperwork during a real emergency.",
         tip: "Quick Tip: Save the emergency help phone number in your phone with a clear name like INSURANCE EMERGENCY so a stranger can find it if you cannot.",
       },
     ],
@@ -67,7 +67,7 @@ export const guidesBatch254: Guide[] = [
       {
         title: "Pick medical-only for budget trips, comprehensive for big trips",
         content: "A practical guideline: if your prepaid trip cost is under $2,000, medical-only saves you money without much risk. If your prepaid trip cost is between $2,000 and $5,000, comprehensive is worth the price. If your prepaid trip cost is over $5,000, comprehensive is non-negotiable for most older travelers — that money is too much to walk away from.",
-        tip: "Quick Tip: Cruises are the one trip type where comprehensive nearly always pays off. Cruise lines are strict about cancellation penalties, and you can lose 100 percent of the fare with under 30 days notice.",
+        tip: "Quick Tip: Cruises are the one trip type where comprehensive nearly always pays off. Cruise lines are strict about cancellation penalties. And you can lose 100 percent of the fare with under 30 days notice.",
       },
     ],
   },
@@ -193,7 +193,7 @@ export const guidesBatch254: Guide[] = [
     publishedAt: "2026-05-09",
     lastVerifiedAt: "2026-05-09",
     difficulty: "Intermediate",
-    body: "A standard travel insurance policy only refunds your trip cost if the reason for cancellation appears on a specific covered reasons list — illness, injury, death in the family, jury duty, employer-required travel, natural disaster. Anything outside that list is not covered.\n\nThe Cancel-For-Any-Reason upgrade (called CFAR) removes that limitation. With CFAR added, you can cancel for any reason at all — you changed your mind, you are nervous about travel, a family member is unwell but not hospitalized, you have decided you do not want to go — and the insurer will refund 50 to 75 percent of your prepaid non-refundable trip cost.\n\nCFAR costs an extra 40 to 50 percent on top of the base policy premium. So a $400 comprehensive policy plus CFAR runs $560 to $600. In return, you get the right to cancel for any reason up to 48 or 72 hours before departure.\n\nCFAR has three strict purchase requirements: it must be added within 14 to 21 days of the first trip deposit (same window as the pre-existing condition waiver), you must insure 100 percent of the prepaid trip cost, and you must cancel at least 48 to 72 hours before scheduled departure.\n\nFor older travelers, CFAR makes sense when the trip is expensive, the timing is far out, and there is real uncertainty about whether you will feel up to traveling. It is overkill for a $1,500 weekend trip but worth strong consideration for a $15,000 cruise booked 8 months ahead.\n\n(Sources: Squaremouth — CFAR Buyers Guide; InsureMyTrip — CFAR Explained; Allianz Travel)",
+    body: "A standard travel insurance policy only refunds your trip cost if the reason for cancellation appears on a specific covered reasons list — illness, injury, death in the family, jury duty, employer-required travel, natural disaster. Anything outside that list is not covered.\n\nThe Cancel-For-Any-Reason upgrade (called CFAR) removes that limitation. With CFAR added, you can cancel for any reason at all — you changed your mind, you are nervous about travel, a family member is unwell but not hospitalized, you have decided you do not want to go — and the insurer will refund 50 to 75 percent of your prepaid non-refundable trip cost.\n\nCFAR costs an extra 40 to 50 percent on top of the base policy premium. So a $400 comprehensive policy plus CFAR runs $560 to $600. In return, you get the right to cancel for any reason up to 48 or 72 hours before departure.\n\nCFAR has three strict purchase requirements: it must be added within 14 to 21 days of the first trip deposit (same window as the pre-existing condition waiver), you must insure 100 percent of the prepaid trip cost. And you must cancel at least 48 to 72 hours before scheduled departure.\n\nFor older travelers, CFAR makes sense when the trip is expensive, the timing is far out. And there is real uncertainty about whether you will feel up to traveling. It is overkill for a $1,500 weekend trip but worth strong consideration for a $15,000 cruise booked 8 months ahead.\n\n(Sources: Squaremouth — CFAR Buyers Guide; InsureMyTrip — CFAR Explained; Allianz Travel)",
     steps: [
       {
         title: "Calculate the real cost of CFAR for your trip",
@@ -214,7 +214,7 @@ export const guidesBatch254: Guide[] = [
       },
       {
         title: "Decide if the math works for your trip",
-        content: "CFAR is worth it when three things line up: the trip cost is high (over $5,000), the trip is booked far in advance (more than 4 months out), and there is real uncertainty about whether you will be able or willing to travel. For older travelers with mild but stable health concerns, an 8-month-out booking, or family caregiving responsibilities that may shift, CFAR is the most flexible safety net available.",
+        content: "CFAR is worth it when three things line up: the trip cost is high (over $5,000), the trip is booked far in advance (more than 4 months out). And there is real uncertainty about whether you will be able or willing to travel. For older travelers with mild but stable health concerns, an 8-month-out booking, or family caregiving responsibilities that may shift, CFAR is the most flexible safety net available.",
         tip: "Quick Tip: If your trip is fully refundable from the airline and hotel directly, you do not need CFAR. CFAR only matters for prepaid non-refundable costs.",
       },
     ],

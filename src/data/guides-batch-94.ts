@@ -69,7 +69,7 @@ The good news is that several solid options are completely free. Haveibeenpwned.
 
 If you want broader monitoring, paid services cover more data points and often include additional identity protection features. Identity Guard, Aura, and LifeLock are among the most established options in the US, with plans typically ranging from about $10 to $30 per month. Credit Karma also includes a free dark web monitoring feature for members that watches for your Social Security number and email address.
 
-An important thing to understand: these services can tell you that your information was found, but they cannot remove it from the dark web. Once data is out there, it stays out there. What you can do is act fast — change affected passwords right away, freeze your credit if financial information was exposed, and watch your accounts closely.
+An important thing to understand: these services can tell you that your information was found. But they cannot remove it from the dark web. Once data is out there, it stays out there. What you can do is act fast — change affected passwords right away, freeze your credit if financial information was exposed, and watch your accounts closely.
 
 One alert does not mean disaster. Many people find their old email and password from a breach years ago. If you no longer use that password anywhere, the risk is minimal. The real danger is when people reuse the same password across multiple accounts — that is how one old breach can cascade into multiple account takeovers.`,
     steps: [
@@ -93,7 +93,7 @@ One alert does not mean disaster. Many people find their old email and password 
       },
       {
         title: `Understand what monitoring cannot do`,
-        content: `Dark web monitoring is a warning system, not a removal service. Once your information is circulating on the dark web, there is no practical way to delete it. The value of monitoring is the early warning — it gives you time to change passwords, freeze accounts, and place fraud alerts before criminals can do serious damage. Think of it like a smoke alarm: it cannot prevent the fire, but it gives you time to respond.`,
+        content: `Dark web monitoring is a warning system, not a removal service. Once your information is circulating on the dark web, there is no practical way to delete it. The value of monitoring is the early warning — it gives you time to change passwords, freeze accounts, and place fraud alerts before criminals can do serious damage. Think of it like a smoke alarm: it cannot prevent the fire. But it gives you time to respond.`,
       },
     ],
   },
@@ -107,13 +107,13 @@ One alert does not mean disaster. Many people find their old email and password 
     thumbnailEmoji: ``,
     publishedAt: `2026-04-20`,
     difficulty: `Intermediate`,
-    body: `Have you ever searched your own name online and found your home address, phone number, relatives' names, and even your estimated age listed on a website you never signed up for? Those sites are called data brokers, and they make money by collecting and selling your personal information to anyone willing to pay.
+    body: `Have you ever searched your own name online and found your home address, phone number, relatives' names, and even your estimated age listed on a website you never signed up for? Those sites are called data brokers. And they make money by collecting and selling your personal information to anyone willing to pay.
 
 Data brokers gather their information from a wide variety of public records — voter registration databases, property records, court filings, census data, and more. They also purchase data from loyalty card programs, apps, and other companies. The result is detailed profiles of millions of Americans that are available for purchase by marketing companies, background check services, private investigators, and unfortunately, anyone else with a credit card.
 
 The information they hold can vary but typically includes your full name, current and past addresses, phone numbers, email addresses, age, relatives' names, estimated income range, and sometimes criminal or court records. Some sites also include photos pulled from social media.
 
-The good news is that most data broker sites are required to provide an opt-out process. The bad news is that each site has its own process, and there are hundreds of them. The most commonly visited ones to tackle first include Spokeo (spokeo.com/optout), WhitePages (whitepages.com/suppression-requests), BeenVerified (beenverified.com/opt-out), Intelius (intelius.com/opt-out), Radaris (radaris.com), PeopleFinder (peoplefinder.com), and MyLife (mylife.com).
+The good news is that most data broker sites are required to provide an opt-out process. The bad news is that each site has its own process. And there are hundreds of them. The most commonly visited ones to tackle first include Spokeo (spokeo.com/optout), WhitePages (whitepages.com/suppression-requests), BeenVerified (beenverified.com/opt-out), Intelius (intelius.com/opt-out), Radaris (radaris.com), PeopleFinder (peoplefinder.com), and MyLife (mylife.com).
 
 Each opt-out process is different. Some require you to find your listing, submit an opt-out form, and then verify via email. Others require you to mail a written request. Most take anywhere from a few days to a few weeks to process.
 
@@ -199,7 +199,7 @@ For true privacy from your ISP and the websites you visit, you need a VPN (Virtu
     difficulty: `Beginner`,
     body: `Google's services are free because the company uses data about your behavior to show you targeted ads. By default, Google collects quite a lot: every search you run, every YouTube video you watch, your physical location throughout the day, voice activity from Google Assistant, and activity from apps and websites that use Google's advertising system.
 
-This data is stored in your Google account and can be reviewed, limited, or deleted. Many people have never looked at this page, and they are often surprised by how detailed it is. The good news is that Google gives you genuine control over most of these settings — it is not completely hidden.
+This data is stored in your Google account and can be reviewed, limited, or deleted. Many people have never looked at this page. And they are often surprised by how detailed it is. The good news is that Google gives you genuine control over most of these settings — it is not completely hidden.
 
 To get started, open a web browser and go to myaccount.google.com. Sign in with your Google account if you are not already signed in. This is your main control panel for everything related to your Google account, including privacy and data settings.
 
@@ -231,7 +231,7 @@ Finally, if you ever want to download everything Google knows about you, use the
       },
       {
         title: `Check your Ad Settings to see how Google targets you`,
-        content: `On the Data & Privacy page, scroll down to find "Ad settings" or go directly to adssettings.google.com. This page shows the interests and demographic categories Google has inferred about you based on your activity. You can turn off individual interest categories or disable personalized ads entirely by toggling the "Ad personalization" switch to Off. Turning it off means you will still see ads, but they will not be tailored specifically to you.`,
+        content: `On the Data & Privacy page, scroll down to find "Ad settings" or go directly to adssettings.google.com. This page shows the interests and demographic categories Google has inferred about you based on your activity. You can turn off individual interest categories or disable personalized ads entirely by toggling the "Ad personalization" switch to Off. Turning it off means you will still see ads. But they will not be tailored specifically to you.`,
       },
     ],
   },
@@ -392,7 +392,7 @@ To use Bill Pay, you need your online banking account set up (see the guide "How
 
 Before you can pay a company, you need to add it as a payee. You will need the company's name, their mailing address (found on your paper bill), and your account number with that company — which is also on your bill. This setup takes a few minutes the first time, but once a payee is saved, paying them in the future takes only seconds.
 
-You can make one-time payments for any amount, or set up recurring automatic payments for bills that are the same amount each month — like a mortgage, car loan, or gym membership. For bills that vary month-to-month (like your electric bill), you can still automate the payment, but you will want to review the amount first.`,
+You can make one-time payments for any amount, or set up recurring automatic payments for bills that are the same amount each month — like a mortgage, car loan, or gym membership. For bills that vary month-to-month (like your electric bill), you can still automate the payment. But you will want to review the amount first.`,
     steps: [
       {
         title: `Log in and find the Bill Pay section`,

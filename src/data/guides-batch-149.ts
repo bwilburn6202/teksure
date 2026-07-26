@@ -215,7 +215,7 @@ Sources: Federal Trade Commission — Fake Reviews (ftc.gov), Amazon Help — Ab
 
 This feature is only available on computers with a special chip called an NPU (Neural Processing Unit — a type of processor designed to run artificial-intelligence tasks). These are sometimes marketed as "Copilot+ PCs." If your computer was made before 2024, it almost certainly does not have this chip and Recall is not available on it. If you are unsure, you can check: open Settings, go to System, then About, and look at the processor name. If you do not see any mention of Copilot+ or NPU, Recall is not on your machine and this section does not apply to you.
 
-For those who do have a Copilot+ PC, Recall raises a legitimate privacy concern. The snapshots are stored on your computer — not sent to Microsoft's servers — but they are stored in a folder that could be accessed by anyone with access to your computer, or by malware (harmful software). The snapshots can capture anything that appeared on your screen: bank account pages, private messages, medical records, passwords. Microsoft made Recall opt-in after significant public concern, but it is worth knowing how to check and confirm it is turned off if you prefer.
+For those who do have a Copilot+ PC, Recall raises a legitimate privacy concern. The snapshots are stored on your computer — not sent to Microsoft's servers — but they are stored in a folder that could be accessed by anyone with access to your computer, or by malware (harmful software). The snapshots can capture anything that appeared on your screen: bank account pages, private messages, medical records, passwords. Microsoft made Recall opt-in after significant public concern. But it is worth knowing how to check and confirm it is turned off if you prefer.
 
 **How to check whether Recall is enabled**
 
@@ -225,11 +225,11 @@ If you want to turn it off: click the toggle to switch it from on (blue) to off 
 
 **Other Windows 11 privacy settings worth reviewing**
 
-Even if your computer does not have Recall, Windows 11 collects other types of information by default. The following settings are found in Settings (Windows key + I) → Privacy & security. You do not need to change all of them, but it is worth knowing what they do so you can make your own choice.
+Even if your computer does not have Recall, Windows 11 collects other types of information by default. The following settings are found in Settings (Windows key + I) → Privacy & security. You do not need to change all of them. But it is worth knowing what they do so you can make your own choice.
 
 Location: Windows can share your location with apps and websites. Go to Privacy & security → Location. You can turn off location entirely, or scroll down to see which individual apps have access and turn off any you do not recognize or trust. Most people are fine leaving location on for Maps but turning it off for apps that have no reason to need it.
 
-Advertising ID: Windows assigns your computer a unique advertising identifier — a code — that advertisers use to track which ads you see and to show you targeted ads. Go to Privacy & security → General. The first toggle is "Let apps show me personalized ads by using my advertising ID." Turning this off does not reduce the number of ads you see, but it does prevent advertisers from building a profile of your browsing habits tied to your specific computer. Many privacy-minded users turn this off.
+Advertising ID: Windows assigns your computer a unique advertising identifier — a code — that advertisers use to track which ads you see and to show you targeted ads. Go to Privacy & security → General. The first toggle is "Let apps show me personalized ads by using my advertising ID." Turning this off does not reduce the number of ads you see. But it does prevent advertisers from building a profile of your browsing habits tied to your specific computer. Many privacy-minded users turn this off.
 
 Diagnostic data: Microsoft collects information about how Windows is used on your computer to help identify problems and improve future updates. You can limit this to "Required diagnostic data" (the minimum needed for security and updates) rather than the full "Optional diagnostic data" that includes more detailed usage information. Go to Privacy & security → Diagnostics & feedback. Under "Diagnostic data," select "Send required diagnostic data only."
 
@@ -272,7 +272,7 @@ Source: Microsoft Support — Recall and privacy in Windows 11 (support.microsof
       },
       {
         title: 'Save your settings and check back after major updates',
-        content: 'Settings save automatically when you toggle them — there is no Save button to press. Close Settings when you are done. Make a note to revisit Privacy & security settings once or twice a year, or any time you hear about a significant Windows update. Microsoft sometimes adds new privacy-related options with major updates, and it is worth knowing about them.',
+        content: 'Settings save automatically when you toggle them — there is no Save button to press. Close Settings when you are done. Make a note to revisit Privacy & security settings once or twice a year, or any time you hear about a significant Windows update. Microsoft sometimes adds new privacy-related options with major updates. And it is worth knowing about them.',
       },
     ],
   },

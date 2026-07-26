@@ -341,7 +341,7 @@ Reviewing your App Privacy Report sometimes is a healthy privacy habit, especial
     thumbnailEmoji: ``,
     publishedAt: `2026-04-19`,
     difficulty: `Beginner`,
-    body: `Microsoft Paint has been part of Windows for decades, and it remains one of the most straightforward image tools available. While it's not a professional photo editor, Paint does many practical things that everyday users need:
+    body: `Microsoft Paint has been part of Windows for decades. And it remains one of the most straightforward image tools available. While it's not a professional photo editor, Paint does many practical things that everyday users need:
 
 - Draw or write on a screenshot before sharing it
 - Crop a photo to remove unwanted edges
@@ -603,7 +603,7 @@ Chrome also has a Bookmarks Manager — a dedicated page that shows all your boo
 
 Bookmarks sync across all your devices when you're signed into Chrome with your Google account. So the folders you create on your desktop computer will also appear in Chrome on your laptop or, in a limited way, in the Chrome app on your phone.
 
-Once you get your bookmarks organized, you'll find that the websites you need are just a click or two away, and you don't have to hunt through a long unorganized list.`,
+Once you get your bookmarks organized, you'll find that the websites you need are just a click or two away. And you don't have to hunt through a long unorganized list.`,
     steps: [
       {
         title: `Show the Bookmarks Bar`,
@@ -798,7 +798,7 @@ You can also create a separate calendar (like "Family Events") and share just th
 
 Once someone accepts your share invitation, your calendar appears in their Google Calendar alongside their own — they see it in a different color so you can tell apart. Changes you make appear instantly on their end, and vice versa if they have edit permissions.
 
-Sharing works between any two people with Google accounts, and they can view your calendar in a browser, on Android, on iPhone via the Google Calendar app, or even in Apple Calendar on Mac.`,
+Sharing works between any two people with Google accounts. And they can view your calendar in a browser, on Android, on iPhone via the Google Calendar app, or even in Apple Calendar on Mac.`,
     steps: [
       {
         title: `Open Google Calendar on a computer`,
@@ -912,7 +912,7 @@ All recordings are saved to your phone's storage and can be accessed from within
       },
       {
         title: `Start a recording`,
-        content: `Open the app and tap the large record button (a red circle or microphone icon). Speak clearly into the phone's microphone — it's usually at the bottom edge of the phone. The timer shows how long you've been recording, and you may see a waveform animation while audio is being captured.`,
+        content: `Open the app and tap the large record button (a red circle or microphone icon). Speak clearly into the phone's microphone — it's usually at the bottom edge of the phone. The timer shows how long you've been recording. And you may see a waveform animation while audio is being captured.`,
       },
       {
         title: `Pause and stop`,

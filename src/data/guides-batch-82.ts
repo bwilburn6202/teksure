@@ -59,7 +59,7 @@ If you need advice, the app connects you to project guides and how-to videos cre
     difficulty: `Beginner`,
     body: `The Lowe's app is built for homeowners, renters, and anyone who likes to work on their living space. It gives you access to the full Lowe's product catalog right from your phone, with features that make shopping smarter and faster. One of the most useful features is in-store navigation — the app can show you the exact aisle where a product is stocked in your local Lowe's, so you spend less time searching and more time getting things done.
 
-You can also check real-time inventory before visiting the store, which is especially helpful if you have a specific item in mind. Searching by product name, brand, or model number works well, and you can filter results by what is available locally versus what must be shipped. The app also allows you to scan barcodes or search with your phone camera if you already have the product and need a replacement or matching item.
+You can also check real-time inventory before visiting the store, which is especially helpful if you have a specific item in mind. Searching by product name, brand, or model number works well. And you can filter results by what is available locally versus what must be shipped. The app also allows you to scan barcodes or search with your phone camera if you already have the product and need a replacement or matching item.
 
 Lowe's has a loyalty program called MyLowe's Rewards, and the app is where you manage those points and redeem them at checkout. The program tracks your purchase history automatically, which comes in handy when you need to look up a past order or reorder materials for an ongoing project.
 
@@ -101,7 +101,7 @@ For bigger projects, the app includes installation services you can schedule dir
     difficulty: `Beginner`,
     body: `Zillow is one of the most widely used real estate websites in the United States. It brings together listings from the Multiple Listing Service (MLS) — a shared database used by real estate agents — along with for-sale-by-owner properties and rental listings. You can use it to browse homes in any city, set a budget filter, and explore neighborhoods, all without contacting anyone or scheduling a visit.
 
-One of Zillow's most talked-about features is the Zestimate, which is Zillow's automated estimate of what a home is worth. The Zestimate is calculated using public data such as tax records, recent sale prices of nearby homes, and property details. It is helpful as a rough starting point, but it is not an appraisal. The number can be off by tens of thousands of dollars depending on how much data is available in your area and how recently the home was updated. Always treat a Zestimate as a ballpark, not a firm value.
+One of Zillow's most talked-about features is the Zestimate, which is Zillow's automated estimate of what a home is worth. The Zestimate is calculated using public data such as tax records, recent sale prices of nearby homes, and property details. It is helpful as a rough starting point. But it is not an appraisal. The number can be off by tens of thousands of dollars depending on how much data is available in your area and how recently the home was updated. Always treat a Zestimate as a ballpark, not a firm value.
 
 When you find a listing you like, the property page shows you the asking price, square footage, number of bedrooms and bathrooms, property taxes, and a description from the seller's agent. You can also view photos, a 3D tour if one is available, and the home's price history. That price history tab shows you whether the listing price has been reduced and how long the home has been on the market — both useful signals when making an offer.
 
@@ -190,7 +190,7 @@ To apply, you answer questions about your income, employment history, assets, an
 
 Rocket Mortgage offers several loan types: conventional loans, FHA loans (lower down payment requirements), VA loans (for eligible veterans and active-duty military), and jumbo loans for higher-priced properties. Based on your answers during the application, the app guides you toward the loan type that fits your situation.
 
-Already own a home and want a lower interest rate or a different loan term? Rocket Mortgage also handles refinancing. The process is similar to the original mortgage application, and it can be done entirely online.
+Already own a home and want a lower interest rate or a different loan term? Rocket Mortgage also handles refinancing. The process is similar to the original mortgage application. And it can be done entirely online.
 
 One thing to keep in mind: because Rocket Mortgage operates online, you won't have a local loan officer who knows your community. If you'd rather have face-to-face guidance, compare Rocket Mortgage with local credit unions or community banks that offer personal service. That said, if you're comfortable with digital applications and clear online communication, Rocket Mortgage is a strong, efficient option.`,
     steps: [
@@ -205,7 +205,7 @@ One thing to keep in mind: because Rocket Mortgage operates online, you won't ha
       },
       {
         title: `Connect Your Bank Accounts for Faster Verification`,
-        content: `Rocket Mortgage offers the option to connect your bank accounts electronically using Finicity (a financial data service). This lets the lender verify your income and assets without you uploading individual bank statements. Connecting your accounts is optional, but it speeds up the verification step a lot. If you prefer not to share account access, you can upload statement PDFs instead.`,
+        content: `Rocket Mortgage offers the option to connect your bank accounts electronically using Finicity (a financial data service). This lets the lender verify your income and assets without you uploading individual bank statements. Connecting your accounts is optional. But it speeds up the verification step a lot. If you prefer not to share account access, you can upload statement PDFs instead.`,
         warning: `Only connect accounts through Rocket Mortgage's official app or website. Avoid sharing your banking credentials in any other context, including phone calls from people claiming to be Rocket Mortgage staff.`,
       },
       {
@@ -297,7 +297,7 @@ Reverse mortgages are not right for everyone. If you plan to leave your home to 
       },
       {
         title: `Understand the Costs Involved`,
-        content: `Reverse mortgages are not free money. They come with upfront costs including an origination fee (the lender's fee for setting up the loan), closing costs similar to a regular mortgage, and an upfront mortgage insurance premium paid to FHA. There are also ongoing monthly insurance premiums and interest that accrue over the life of the loan. These costs are typically rolled into the loan balance rather than paid out of pocket, but they reduce the net equity you or your heirs will receive.`,
+        content: `Reverse mortgages are not free money. They come with upfront costs including an origination fee (the lender's fee for setting up the loan), closing costs similar to a regular mortgage, and an upfront mortgage insurance premium paid to FHA. There are also ongoing monthly insurance premiums and interest that accrue over the life of the loan. These costs are typically rolled into the loan balance rather than paid out of pocket. But they reduce the net equity you or your heirs will receive.`,
         warning: `Beware of unsolicited reverse mortgage offers that arrive by mail, phone, or door-to-door. Legitimate lenders do not pressure seniors into quick decisions. The FTC and CFPB both warn that reverse mortgage scams specifically target seniors — never sign anything without independent legal or financial review.`,
       },
       {
@@ -343,7 +343,7 @@ Houzz is free to browse and use as an idea-gathering tool. Professionals pay to 
       {
         title: `Find a Local Professional`,
         content: `Tap the "Professionals" tab and select the type of help you need — general contractor, kitchen designer, electrician, and so on. Enter your zip code or city, and Houzz will show you a list of professionals in your area. Each profile includes a portfolio of their past work, a list of services, their typical project size range, and verified reviews from clients. Read at least five or six reviews before contacting anyone.`,
-        warning: `Houzz verifies some business credentials, but you are still responsible for confirming that any contractor you hire has a valid state license and carries liability insurance. Ask for proof of both before signing any contract.`,
+        warning: `Houzz verifies some business credentials. But you are still responsible for confirming that any contractor you hire has a valid state license and carries liability insurance. Ask for proof of both before signing any contract.`,
       },
       {
         title: `Request a Quote and Compare Bids`,
@@ -370,7 +370,7 @@ Houzz is free to browse and use as an idea-gathering tool. Professionals pay to 
 
 These apps all work on the same basic idea: you enter the dimensions of your room (length and width in feet or inches), place a digital floor plan on the screen, and then drag and drop scaled furniture pieces into position. Because every item is drawn to scale, you can tell at a glance whether that sectional sofa will actually fit along the wall or whether the dresser will block the closet door.
 
-Several good room planning apps are available for free or at low cost. IKEA's planning tools are available directly on the IKEA website and are optimized for IKEA furniture, but they work as a general room planner too. Roomstyler 3D Home Planner (available at roomstyler.com) lets you build a room in three dimensions and then "walk through" it virtually. Magicplan is a phone app that uses your camera to measure rooms automatically — you pan the phone around the room and it creates a floor plan for you, which you can then furnish.
+Several good room planning apps are available for free or at low cost. IKEA's planning tools are available directly on the IKEA website and are optimized for IKEA furniture. But they work as a general room planner too. Roomstyler 3D Home Planner (available at roomstyler.com) lets you build a room in three dimensions and then "walk through" it virtually. Magicplan is a phone app that uses your camera to measure rooms automatically — you pan the phone around the room and it creates a floor plan for you, which you can then furnish.
 
 For users who want something very straightforward, Planner 5D offers a free version with a large library of furniture items and lets you switch between a top-down 2D view and a 3D view at any time. It is available as a phone app and a web browser tool.
 
@@ -459,7 +459,7 @@ Fundrise charges an annual management fee of around 0.85 percent, which is low c
 
 To sell on Poshmark, you take photos of an item you want to get rid of, write a description, set a price, and list it. When someone buys the item, Poshmark emails you a prepaid shipping label. You package the item, drop it at any USPS location or leave it in your mailbox, and Poshmark deposits your earnings — minus their fee — into your account once the buyer confirms they received the item in the condition described.
 
-Poshmark takes a flat fee of $2.95 for sales under $15, and 20 percent for sales of $15 or more. That fee structure means selling a $50 sweater nets you $40. Payouts can be sent to your bank account or to a Venmo or PayPal account, and there is no delay once the buyer accepts the item.
+Poshmark takes a flat fee of $2.95 for sales under $15, and 20 percent for sales of $15 or more. That fee structure means selling a $50 sweater nets you $40. Payouts can be sent to your bank account or to a Venmo or PayPal account. And there is no delay once the buyer accepts the item.
 
 Shopping on Poshmark is free, though buyers pay a flat $7.97 shipping fee on all orders, regardless of item size. That shipping cost is worth factoring in when you are comparing a Poshmark price to a sale at a regular retailer. Buyers have three days after delivery to accept an order or open a dispute if the item is a lot different from how it was described. After three days, the sale automatically completes.
 
@@ -607,7 +607,7 @@ thredUP is a particularly good fit for anyone who wants to clean out a closet wi
       },
       {
         title: `Understand the Payout Structure`,
-        content: `After thredUP receives your bag, their team inspects each item individually. Items that are accepted get listed on the site, and you receive a portion of the sale price when each item sells. The percentage you receive depends on the brand, condition, and selling price — higher-value items earn you a larger percentage. You can choose to receive your earnings as cash (sent to PayPal or a check) or as thredUP shopping credit.`,
+        content: `After thredUP receives your bag, their team inspects each item individually. Items that are accepted get listed on the site. And you receive a portion of the sale price when each item sells. The percentage you receive depends on the brand, condition, and selling price — higher-value items earn you a larger percentage. You can choose to receive your earnings as cash (sent to PayPal or a check) or as thredUP shopping credit.`,
         warning: `Payouts can take months because thredUP lists items at their own pace and only pays you when items actually sell. If you want faster returns, do-it-yourself platforms like Poshmark or Mercari will typically earn you more money per item.`,
       },
       {
@@ -616,7 +616,7 @@ thredUP is a particularly good fit for anyone who wants to clean out a closet wi
       },
       {
         title: `Try a Goody Box for Personalized Selections`,
-        content: `Navigate to the Goody Box section and complete a style quiz about your size, preferred styles, and budget per item. thredUP will select and ship a box of items tailored to your preferences. When it arrives, try on each piece and keep what you love. Return the rest in the included bag within five days. You are charged a styling fee for the service (credited toward any items you keep), and you only pay for what you decide to keep.`,
+        content: `Navigate to the Goody Box section and complete a style quiz about your size, preferred styles, and budget per item. thredUP will select and ship a box of items tailored to your preferences. When it arrives, try on each piece and keep what you love. Return the rest in the included bag within five days. You are charged a styling fee for the service (credited toward any items you keep). And you only pay for what you decide to keep.`,
         tip: `Quick Tip: The Goody Box has a "maximum per item" price you can set — this helps make sure the box stays within a price range you are comfortable with before anything is charged.`,
       },
       {
@@ -688,7 +688,7 @@ Vinted covers clothing for all genders and ages, shoes, bags, accessories, and s
 
 The platform generates a prepaid shipping label when a sale is made, so shipping is handled the same way as Poshmark — you pack the item, print the label, and drop it at the carrier. Sellers receive payment after the buyer confirms delivery or after a set number of days if the buyer does not respond.
 
-Vinted also has a "Bump" feature, which is a paid promotion option. Paying to "Bump" a listing gives it higher visibility in search results for a set period. This is optional and not necessary for regular selling, but it can be useful if you have a higher-value item that is not moving.
+Vinted also has a "Bump" feature, which is a paid promotion option. Paying to "Bump" a listing gives it higher visibility in search results for a set period. This is optional and not necessary for regular selling. But it can be useful if you have a higher-value item that is not moving.
 
 If you have clothes to sell and want to keep the maximum amount from each sale, Vinted's zero-fee model is worth taking seriously. It is one of the few platforms where the seller's earnings are genuinely not shared with the platform.`,
     steps: [
@@ -729,7 +729,7 @@ If you have clothes to sell and want to keep the maximum amount from each sale, 
     difficulty: `Beginner`,
     body: `Rent the Runway is a fashion rental service that allows you to wear designer clothing and accessories without purchasing them. The company rents pieces from hundreds of brands — including Diane von Furstenberg, Theory, Joie, and many others — at prices that are a fraction of their retail cost. This makes high-end fashion accessible for a special occasion, a work trip, or an event where you want to wear something special but not spend hundreds of dollars on something you will only wear once.
 
-There are two main ways to use Rent the Runway: one-time rentals for specific events, and a monthly subscription that lets you rotate through a set number of items throughout the month. For single events — a wedding, a holiday party, a gala — you browse the site, choose an item, and select your rental dates. The dress or outfit arrives cleaned and ready to wear two days before your event, and you return it using a prepaid bag when you are done. No dry cleaning on your end.
+There are two main ways to use Rent the Runway: one-time rentals for specific events, and a monthly subscription that lets you rotate through a set number of items throughout the month. For single events — a wedding, a holiday party, a gala — you browse the site, choose an item, and select your rental dates. The dress or outfit arrives cleaned and ready to wear two days before your event. And you return it using a prepaid bag when you are done. No dry cleaning on your end.
 
 The subscription model works differently. For a monthly fee, you can have a certain number of items at home at a time, swap them as often as you want within your plan's limits, and return them when you are finished. Subscribers access the same designer pieces as one-time renters and can keep an item longer if they want by pausing their rotation.
 
@@ -883,7 +883,7 @@ For sellers, listing on Chrono24 is free for private individuals, though the pla
       },
       {
         title: `Use Trusted Checkout for Protection`,
-        content: `When you find a watch you want to buy, choose the Trusted Checkout option rather than paying the seller directly. Trusted Checkout routes your payment through Chrono24's escrow system. The seller ships the watch, it arrives at your door, and you have a set number of days (usually five) to inspect it and confirm the transaction. If it matches the listing, you confirm and the seller receives payment. If there is a problem, you open a dispute before confirming and Chrono24 mediates.`,
+        content: `When you find a watch you want to buy, choose the Trusted Checkout option rather than paying the seller directly. Trusted Checkout routes your payment through Chrono24's escrow system. The seller ships the watch, it arrives at your door. And you have a set number of days (usually five) to inspect it and confirm the transaction. If it matches the listing, you confirm and the seller receives payment. If there is a problem, you open a dispute before confirming and Chrono24 mediates.`,
         tip: `Quick Tip: When the watch arrives, check the reference number on the case back (usually engraved) against the number listed in the advertisement and, if included, the original paperwork. These numbers should match exactly.`,
       },
       {

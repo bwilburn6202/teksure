@@ -180,7 +180,7 @@ export const guidesBatch200: Guide[] = [
       },
       {
         title: "Add a handwritten note inside the cover",
-        content: "On the inside of the cover, write a short note in your own handwriting: \"Dear Sam, I made this for you because every coupon in here is something I want to do with you. Tear out a coupon any time, hand it to me, and we will set a date. I love you. Love, Grandma.\" The note is what makes the book a real gift instead of a craft project.",
+        content: "On the inside of the cover, write a short note in your own handwriting: \"Dear Sam, I made this for you because every coupon in here is something I want to do with you. Tear out a coupon any time, hand it to me. And we will set a date. I love you. Love, Grandma.\" The note is what makes the book a real gift instead of a craft project.",
       },
       {
         title: "Honor the coupons promptly when redeemed",

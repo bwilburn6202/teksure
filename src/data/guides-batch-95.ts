@@ -72,7 +72,7 @@ After you are back in, Microsoft has released a follow-up update that prevents t
     thumbnailEmoji: '',
     publishedAt: '2026-04-20',
     difficulty: 'Beginner',
-    body: `After any major iPhone update, it is completely normal for your battery to drain faster than usual for the first day or two. Your iPhone has a lot of work to do after an update — it rebuilds its search index, re-downloads cached content, checks for compatibility with your apps, and reoptimizes your photos. All of this happens in the background, and it uses extra battery while it runs.
+    body: `After any major iPhone update, it is completely normal for your battery to drain faster than usual for the first day or two. Your iPhone has a lot of work to do after an update — it rebuilds its search index, re-downloads cached content, checks for compatibility with your apps, and reoptimizes your photos. All of this happens in the background. And it uses extra battery while it runs.
 
 If your battery is still draining unusually fast after 48 hours, something else is likely going on. The most common causes are an app that started misbehaving after the update, a background process that got stuck, or a setting that the update changed without you noticing.
 
@@ -119,7 +119,7 @@ If you check your Battery settings and notice one specific app is using a surpri
     thumbnailEmoji: '',
     publishedAt: '2026-04-20',
     difficulty: 'Beginner',
-    body: `When your iPhone tells you there is not enough storage to install an update, it can feel like a catch-22 — you need space to update, but you need to update to stay safe. The good news is you almost always have more space than you think, and there are several ways to free up enough room for any iOS update without permanently losing your photos or contacts.
+    body: `When your iPhone tells you there is not enough storage to install an update, it can feel like a catch-22 — you need space to update. But you need to update to stay safe. The good news is you almost always have more space than you think. And there are several ways to free up enough room for any iOS update without permanently losing your photos or contacts.
 
 iOS updates typically need between 500MB and 2.5GB of free space to download and install. If your phone is nearly full, you may need to temporarily free up some room even though the update itself will not permanently increase your phone's storage use.
 

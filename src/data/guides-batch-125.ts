@@ -133,7 +133,7 @@ If you discover a fraudulent check was paid from your account, call your bank ri
     publishedAt: '2026-05-04',
     lastVerifiedAt: '2026-05-04',
     difficulty: 'Beginner',
-    body: `If you have an Apple TV connected to your living room television, you can now make FaceTime video calls that appear on your big TV screen — while using your iPhone or iPad as the camera and microphone. Instead of squinting at a small phone screen, you see your family members at full TV size, and they see you in a comfortable, living-room setting.
+    body: `If you have an Apple TV connected to your living room television, you can now make FaceTime video calls that appear on your big TV screen — while using your iPhone or iPad as the camera and microphone. Instead of squinting at a small phone screen, you see your family members at full TV size. And they see you in a comfortable, living-room setting.
 
 This feature is called Continuity Camera. Your iPhone or iPad does the camera work wirelessly, while the call itself shows on the TV. You can prop your phone on a nearby surface, sit back in a comfortable chair, and have a video call the way you might watch a movie.
 

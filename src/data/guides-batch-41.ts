@@ -11,7 +11,7 @@ export const guidesBatch41: Guide[] = [
     thumbnailEmoji: ``,
     publishedAt: `2026-04-19`,
     difficulty: `Beginner`,
-    body: `YouTube Music is Google's music streaming service. It has one of the largest music libraries in the world and — unlike Spotify — has a free tier that lets you listen on your phone without paying anything. The free version includes ads and you cannot skip as many songs, but it is a real option for casual listening.
+    body: `YouTube Music is Google's music streaming service. It has one of the largest music libraries in the world and — unlike Spotify — has a free tier that lets you listen on your phone without paying anything. The free version includes ads and you cannot skip as many songs. But it is a real option for casual listening.
 
 YouTube Music is separate from the regular YouTube app, though it uses the same account. You can listen to official songs, music videos, live performances, and even rare recordings that do not exist on other services.
 
@@ -341,7 +341,7 @@ The app works for Kroger and its family of stores, including Fry's, Ralphs, King
     difficulty: `Intermediate`,
     body: `Stage Manager is a multitasking feature Apple introduced in iPadOS 16 that makes using an iPad feel more like a computer. Instead of switching between apps one at a time, you can have multiple apps open in overlapping windows on the same screen — similar to how a Mac or Windows computer works.
 
-With Stage Manager, you can have four apps visible and usable at the same time. A sidebar on the left shows your other recent apps and groups, and you can switch between them by tapping.
+With Stage Manager, you can have four apps visible and usable at the same time. A sidebar on the left shows your other recent apps and groups. And you can switch between them by tapping.
 
 This is especially useful if you want to reference a document while writing an email, look at photos while creating a presentation, or compare two web pages side by side.
 
@@ -352,7 +352,7 @@ Stage Manager is available on:
 
 If your iPad is older or does not have an M1 chip, Stage Manager is not available. You can still use Split View (two apps side by side) instead.
 
-You can use Stage Manager with or without a keyboard and trackpad, but it is most useful when you have a Magic Keyboard or similar accessory attached.`,
+You can use Stage Manager with or without a keyboard and trackpad. But it is most useful when you have a Magic Keyboard or similar accessory attached.`,
     steps: [
       {
         title: `Turn on Stage Manager`,
@@ -622,7 +622,7 @@ Getting a library card is free and takes about 5 minutes at any public library. 
       },
       {
         title: `Access LinkedIn Learning`,
-        content: `Look for "LinkedIn Learning" or "Lynda" on your library's digital resources page. Click the link, sign in with your library card, and you will be connected to your LinkedIn Learning account. Browse thousands of video courses on any topic — Excel, photography, resume writing, managing email, using smartphones, and hundreds more.`,
+        content: `Look for "LinkedIn Learning" or "Lynda" on your library's digital resources page. Click the link, sign in with your library card. And you will be connected to your LinkedIn Learning account. Browse thousands of video courses on any topic — Excel, photography, resume writing, managing email, using smartphones, and hundreds more.`,
         tip: `LinkedIn Learning videos have transcripts and can be watched at any speed. Great for learning at your own pace without time pressure.`,
       },
       {
@@ -845,7 +845,7 @@ Most people leave the default settings and record. But knowing the options helps
     thumbnailEmoji: ``,
     publishedAt: `2026-04-19`,
     difficulty: `Intermediate`,
-    body: `SharePlay is a feature built into FaceTime on iPhone, iPad, and Mac that lets you watch movies, TV shows, or listen to music with someone else — even if you are hundreds of miles apart. Both people see the same content at exactly the same time, and you can talk during it using FaceTime.
+    body: `SharePlay is a feature built into FaceTime on iPhone, iPad, and Mac that lets you watch movies, TV shows, or listen to music with someone else — even if you are hundreds of miles apart. Both people see the same content at exactly the same time. And you can talk during it using FaceTime.
 
 Think of it as a virtual watch party. You can watch something with a grandchild across the country, catch up on a show with a friend who moved away, or re-experience a favorite movie with family during the holidays.
 

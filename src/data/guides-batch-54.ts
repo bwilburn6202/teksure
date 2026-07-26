@@ -103,7 +103,7 @@ Telegram is available as a free download from the Apple App Store or Google Play
     difficulty: `Beginner`,
     body: `Signal is a free messaging app built with privacy as its top priority. Every message, phone call, and video call made through Signal is encrypted end-to-end, which means only you and the person you are talking with can read or hear the conversation — not even Signal itself can access your messages. Signal is recommended by security researchers, journalists, and privacy advocates around the world.
 
-Setting up Signal is straightforward. You download it from the App Store or Google Play, register with your phone number, and you are ready to go. Anyone else who has Signal installed will show up automatically as a contact you can message privately.
+Setting up Signal is straightforward. You download it from the App Store or Google Play, register with your phone number. And you are ready to go. Anyone else who has Signal installed will show up automatically as a contact you can message privately.
 
 One of Signal's most useful features is disappearing messages. When you turn this on for a conversation, every message in that chat automatically deletes itself after a time period you choose — anywhere from 30 seconds to four weeks. This is helpful if you share sensitive information and want it gone after a while.
 
@@ -122,7 +122,7 @@ Because Signal stores almost nothing on its servers, the app keeps your conversa
       },
       {
         title: `Use Note to Self`,
-        content: `Tap the compose button to start a new message. Search for "Note to Self" — this is your private notepad inside Signal. Tap it and type anything you want to save. Only you can see these notes, and they are protected by the same encryption as all Signal messages.`,
+        content: `Tap the compose button to start a new message. Search for "Note to Self" — this is your private notepad inside Signal. Tap it and type anything you want to save. Only you can see these notes. And they are protected by the same encryption as all Signal messages.`,
       },
       {
         title: `Set a Screen Lock`,
@@ -190,7 +190,7 @@ The entire process takes only a couple of taps, and the original photo is never 
     thumbnailEmoji: ``,
     publishedAt: `2026-04-19`,
     difficulty: `Beginner`,
-    body: `Preview is the app that comes built into every Mac for viewing PDFs, images, and other documents. Most people know it as a viewer, but it also has a full set of annotation tools that let you mark up files without needing a paid program like Adobe Acrobat.
+    body: `Preview is the app that comes built into every Mac for viewing PDFs, images, and other documents. Most people know it as a viewer. But it also has a full set of annotation tools that let you mark up files without needing a paid program like Adobe Acrobat.
 
 With Preview's annotation tools, you can highlight text in yellow or other colors, add text boxes anywhere on the page, draw arrows and shapes to point out specific areas, and leave notes that look like sticky notes. These annotations are saved inside the file, so anyone who opens it later will see your markings.
 
@@ -215,7 +215,7 @@ These tools work for both PDFs and images, making Preview a handy all-in-one opt
       },
       {
         title: `Add a Text Box`,
-        content: `Click the Text button in the toolbar (it looks like a letter "A" in a box). A text box will appear on the page. Click inside it and type your note or comment. You can drag the text box to move it anywhere on the page, and you can change the font size using the formatting options in the toolbar.`,
+        content: `Click the Text button in the toolbar (it looks like a letter "A" in a box). A text box will appear on the page. Click inside it and type your note or comment. You can drag the text box to move it anywhere on the page. And you can change the font size using the formatting options in the toolbar.`,
       },
       {
         title: `Draw Shapes and Arrows`,
@@ -330,11 +330,11 @@ You can also use this technique to save email confirmations, online receipts, bo
     difficulty: `Beginner`,
     body: `Chess is one of the oldest and most popular board games in the world, and today you can play it for free online against other people or against a computer. The two best websites for beginners are Chess.com and Lichess.org. Both are free to use, work on phones and computers, and have versions designed for people who have never played before.
 
-Chess.com is the larger of the two sites and has a polished, beginner-friendly interface with built-in lessons, puzzles, and the option to play against a computer at any difficulty level. Lichess.org is completely free with no paid tiers and is popular with more serious players, but it also works well for beginners.
+Chess.com is the larger of the two sites and has a polished, beginner-friendly interface with built-in lessons, puzzles, and the option to play against a computer at any difficulty level. Lichess.org is completely free with no paid tiers and is popular with more serious players. But it also works well for beginners.
 
 If you have never played chess before, do not worry — both websites offer interactive lessons that teach you the rules one piece at a time. You learn how each piece moves, what checkmate means, and basic strategies, all through short games against a computer that is set to a very low difficulty at first.
 
-Playing online chess has several benefits beyond entertainment alone. Studies suggest that chess can help improve memory, concentration, and problem-solving skills at any age. Many people find it a relaxing and rewarding way to spend time, and you can play a quick five-minute game whenever you have a spare moment.
+Playing online chess has several benefits beyond entertainment alone. Studies suggest that chess can help improve memory, concentration, and problem-solving skills at any age. Many people find it a relaxing and rewarding way to spend time. And you can play a quick five-minute game whenever you have a spare moment.
 
 You can play directly in your web browser without downloading anything, or install the free app on your phone for playing on the go. Both websites also have large communities where you can find players at your level.`,
     steps: [
@@ -378,7 +378,7 @@ You can play directly in your web browser without downloading anything, or insta
     difficulty: `Beginner`,
     body: `Free mobile games are a great way to stay mentally active, pass the time, and have fun. The best games for people who are new to smartphones are ones that are straightforward to learn, do not require fast reflexes, and do not pressure you to spend money. This guide covers games across four popular categories: word games, number puzzles, card games, and trivia.
 
-All of the games mentioned here are available for free on both iPhone and Android. Some games include optional purchases (like removing ads or buying extra lives), but you can play them indefinitely without spending anything. If a game starts pushing too hard for purchases, it is fine to delete it and try something else — there are plenty of great free options.
+All of the games mentioned here are available for free on both iPhone and Android. Some games include optional purchases (like removing ads or buying extra lives). But you can play them indefinitely without spending anything. If a game starts pushing too hard for purchases, it is fine to delete it and try something else — there are plenty of great free options.
 
 Research has consistently found that playing games that involve thinking, memory, and strategy can help keep the mind sharp. Whether you enjoy Scrabble-style word games, solitaire, or simple number puzzles, there is a free mobile game out there that you will enjoy.
 
@@ -467,13 +467,13 @@ These tips apply to most Samsung Galaxy phones released in the last few years, i
     difficulty: `Beginner`,
     body: `Action Mode is a video recording feature introduced on the iPhone 14 that uses advanced digital image stabilization to keep your video smooth even when the camera is moving a lot. If you have ever tried to film while walking, running, or following a fast-moving subject, you know how shaky the results can be. Action Mode dramatically reduces that shake, producing video that looks much steadier without needing a tripod or gimbal.
 
-Action Mode works by using more of the camera sensor than normal and then cropping and stabilizing the image in real time. The trade-off is that the video is slightly more zoomed in than standard video, and it works best in good lighting. In very low light, the stabilization may be less effective.
+Action Mode works by using more of the camera sensor than normal and then cropping and stabilizing the image in real time. The trade-off is that the video is slightly more zoomed in than standard video. And it works best in good lighting. In very low light, the stabilization may be less effective.
 
 The feature is available on iPhone 14, iPhone 14 Plus, iPhone 14 Pro, iPhone 14 Pro Max, and all newer models. It works on the main (rear) camera only, not the front-facing camera. You need to be using the standard video mode — it does not appear in Cinematic Mode or Slow Motion mode.
 
 Action Mode is ideal for recording children playing sports, walking tours, hiking videos, concerts, or any other situation where the camera is constantly moving. It produces results that would previously have required an expensive stabilizer device.
 
-Turning it on takes a single tap, and you can switch it on or off mid-session depending on what you are filming.`,
+Turning it on takes a single tap. And you can switch it on or off mid-session depending on what you are filming.`,
     steps: [
       {
         title: `Open the Camera App and Select Video`,
@@ -509,13 +509,13 @@ Turning it on takes a single tap, and you can switch it on or off mid-session de
     thumbnailEmoji: ``,
     publishedAt: `2026-04-19`,
     difficulty: `Beginner`,
-    body: `Google Photos is a free app that automatically backs up your photos and videos to Google's cloud storage. It comes pre-installed on most Android phones and is available as a free download for iPhone. Once your videos are backed up, you can access them from any device, and you never have to worry about losing them if your phone is damaged or replaced.
+    body: `Google Photos is a free app that automatically backs up your photos and videos to Google's cloud storage. It comes pre-installed on most Android phones and is available as a free download for iPhone. Once your videos are backed up, you can access them from any device. And you never have to worry about losing them if your phone is damaged or replaced.
 
 In addition to storage and organization, Google Photos has a set of built-in tools for making light edits to your videos. You can trim the beginning or end of a clip to cut out unwanted footage, stabilize shaky video, adjust the brightness and color, and even rotate a clip that was recorded in the wrong orientation.
 
 These editing tools are not designed for professional video production — for that you would want a dedicated app. But for trimming a clip, adjusting how bright it looks, or rotating it the right way, Google Photos handles the job well and saves your changes without needing to export the video to a separate file.
 
-Google gives everyone 15 GB of free storage shared across Google Photos, Gmail, and Google Drive. If you record a lot of video, that storage can fill up, but you can always choose to back up in "Storage saver" quality (slightly compressed) to keep more videos at no extra cost.
+Google gives everyone 15 GB of free storage shared across Google Photos, Gmail, and Google Drive. If you record a lot of video, that storage can fill up. But you can always choose to back up in "Storage saver" quality (slightly compressed) to keep more videos at no extra cost.
 
 If you have an older Android phone, Google Photos may already be managing your camera roll automatically. On iPhone, you need to download the app and turn on backup manually.`,
     steps: [
@@ -601,7 +601,7 @@ If you have contacts stored in other accounts — like Gmail or Outlook — thos
 
 Audible is a subscription service that charges a monthly fee (around $15 per month as of 2026) and includes one credit per month to buy any audiobook. Your purchased audiobooks belong to you and stay in your library even if you cancel your subscription. Audible also includes Audible Plus, a catalog of audiobooks and podcasts available to stream at no extra cost with a membership.
 
-If you have never used Audible before, Amazon typically offers a free trial period (usually 30 days) that includes one or two free audiobook credits. You can use the free trial to get started without any upfront cost, and you can cancel before the trial ends if you decide it is not for you.
+If you have never used Audible before, Amazon typically offers a free trial period (usually 30 days) that includes one or two free audiobook credits. You can use the free trial to get started without any upfront cost. And you can cancel before the trial ends if you decide it is not for you.
 
 You can also access Audible through an existing Amazon account, which most people already have. The app is free to download from the App Store or Google Play — you only pay for the subscription and the books.
 
@@ -690,7 +690,7 @@ Setting up an Eventbrite account is straightforward and only requires an email a
     thumbnailEmoji: ``,
     publishedAt: `2026-04-19`,
     difficulty: `Intermediate`,
-    body: `Photopea is a free photo editing tool that runs entirely in your web browser. You do not need to download or install anything, and you do not need to create an account. Go to photopea.com, and you can start editing photos straight away.
+    body: `Photopea is a free photo editing tool that runs entirely in your web browser. You do not need to download or install anything. And you do not need to create an account. Go to photopea.com, and you can start editing photos straight away.
 
 Photopea's interface looks very similar to Adobe Photoshop, so if you have used Photoshop before, you will find it familiar. If you have not used Photoshop, do not worry — this guide covers the most useful basic functions for everyday photo editing.
 
@@ -744,7 +744,7 @@ Photopea works on Mac, Windows, Chromebook, and iPad. On a phone, the screen may
 
 When your contacts are synced to Google, every contact you save appears at contacts.google.com on your computer and automatically appears on any new Android phone where you sign in with the same Google account. This makes switching phones or getting a replacement device completely painless.
 
-Most Android phones are set up to sync contacts to Google automatically during the initial setup, but it is worth confirming this is actually happening. This guide walks you through checking and turning on the sync.
+Most Android phones are set up to sync contacts to Google automatically during the initial setup. But it is worth confirming this is actually happening. This guide walks you through checking and turning on the sync.
 
 The process is slightly different depending on the brand of your Android phone (Samsung, Google Pixel, Motorola, etc.), but the general steps are the same across all Android devices. The settings are found either in the phone's main Settings app or inside the Google Contacts app.
 

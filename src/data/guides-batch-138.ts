@@ -20,7 +20,7 @@ export const guidesBatch138: Guide[] = [
     difficulty: 'Beginner',
     body: `In the first half of 2026, the Federal Trade Commission and the Senior Medicare Patrol have logged a sharp rise in calls offering a "free Medicare Wellness Visit." The caller usually sounds friendly and professional. They will ask you to confirm your Medicare number "to schedule your visit." That confirmation is the entire scam — once they have your number, they bill Medicare for services you never received, and your benefits can be drained or your account flagged for fraud.
 
-The real Annual Wellness Visit is a covered Medicare Part B benefit, and you do not need a phone call to set it up. You schedule it with your own doctor.
+The real Annual Wellness Visit is a covered Medicare Part B benefit. And you do not need a phone call to set it up. You schedule it with your own doctor.
 
 This guide walks through how to spot the scam, what to do if you have already shared your number, and how to report the call.
 
@@ -385,7 +385,7 @@ Watch a walkthrough: search YouTube for "toll road scam text 2026" — AARP Frau
       },
       {
         title: 'Turn on "Filter Unknown Senders" to cut future scams 90%',
-        content: 'iPhone: Settings → Messages → Filter Unknown Senders (toggle on). Android: open the Messages app, tap the three-dot menu, tap Settings, tap "Spam protection," and turn on "Enable spam protection." This sends all texts from people not in your contacts to a separate folder. You will still get them, but you will not get notifications, and your main inbox stays clean. This single setting blocks about 90% of toll scams, package delivery scams, and political fundraising spam.',
+        content: 'iPhone: Settings → Messages → Filter Unknown Senders (toggle on). Android: open the Messages app, tap the three-dot menu, tap Settings, tap "Spam protection," and turn on "Enable spam protection." This sends all texts from people not in your contacts to a separate folder. You will still get them. But you will not get notifications, and your main inbox stays clean. This single setting blocks about 90% of toll scams, package delivery scams, and political fundraising spam.',
       },
     ],
   },

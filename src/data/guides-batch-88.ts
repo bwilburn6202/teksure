@@ -11,9 +11,9 @@ export const guidesBatch88: Guide[] = [
     thumbnailEmoji: ``,
     publishedAt: `2026-04-20`,
     difficulty: `Beginner`,
-    body: `On October 14, 2025, Microsoft stopped releasing security updates for Windows 10. This is called the "end of support" date, and it is an important milestone for anyone still running Windows 10 on their computer.
+    body: `On October 14, 2025, Microsoft stopped releasing security updates for Windows 10. This is called the "end of support" date. And it is an important milestone for anyone still running Windows 10 on their computer.
 
-What does "end of support" actually mean? It means Microsoft no longer releases patches — small software fixes that close security holes — for Windows 10. Before this date, hackers who discovered a weakness in Windows 10 would be stopped by an update Microsoft pushed out. After this date, those weaknesses may stay open permanently. Your computer will keep working, but it becomes more vulnerable to viruses, scams, and attackers over time.
+What does "end of support" actually mean? It means Microsoft no longer releases patches — small software fixes that close security holes — for Windows 10. Before this date, hackers who discovered a weakness in Windows 10 would be stopped by an update Microsoft pushed out. After this date, those weaknesses may stay open permanently. Your computer will keep working. But it becomes more vulnerable to viruses, scams, and attackers over time.
 
 Your main options are: upgrade to Windows 11 for free (if your PC qualifies), buy a new PC that already runs Windows 11, pay for Microsoft's Extended Security Updates program (available for businesses and some consumers at extra cost), or switch to a different operating system such as ChromeOS Flex or a Linux distribution designed for everyday users.
 
@@ -198,7 +198,7 @@ This is sometimes called a "version history" backup because File History saves m
 
 An external hard drive is the most common and reliable storage device for File History. You can buy one at any electronics store for $40–$80. Plug it into your computer with a USB cable, and Windows will detect it automatically. You can also use a large USB flash drive (sometimes called a USB stick or thumb drive), though an external hard drive holds much more.
 
-File History does not back up your entire Windows system or all your programs — it focuses on your personal files. For a full system backup (which lets you restore your entire PC if the hard drive fails completely), Windows 10 and Windows 11 still include a tool called "Backup and Restore (Windows 7)" — the name is left over from an older version of Windows, but it still works on current systems. You can also consider a cloud backup service instead. File History and a cloud service together give you very strong protection.
+File History does not back up your entire Windows system or all your programs — it focuses on your personal files. For a full system backup (which lets you restore your entire PC if the hard drive fails completely), Windows 10 and Windows 11 still include a tool called "Backup and Restore (Windows 7)" — the name is left over from an older version of Windows. But it still works on current systems. You can also consider a cloud backup service instead. File History and a cloud service together give you very strong protection.
 
 Ideally, you should leave the external drive plugged into your computer all the time so backups happen automatically. If you unplug the drive and plug it back in later, File History will catch up and back up any changes made while it was disconnected.`,
     steps: [
@@ -263,7 +263,7 @@ If Windows is so broken that it will not start up normally, you can still access
       {
         title: `Choose a restore point`,
         content: `Windows shows you a list of available restore points with their date, time, and a description of what created them. Choose a restore point from before your problem started. If you do not see the one you want, check the box that says "Show more restore points." Click "Scan for affected programs" to see what software will be removed by the restore.`,
-        warning: `Any programs installed after the restore point date will be uninstalled. Your personal files will not be affected, but you may need to reinstall some software afterward.`,
+        warning: `Any programs installed after the restore point date will be uninstalled. Your personal files will not be affected. But you may need to reinstall some software afterward.`,
       },
       {
         title: `Confirm and run the restore`,
@@ -284,7 +284,7 @@ If Windows is so broken that it will not start up normally, you can still access
     difficulty: `Intermediate`,
     body: `Windows runs many programs in the background called "services." These are not apps you see on your screen — they work quietly behind the scenes, handling things like networking, printing, Windows updates, and Bluetooth. Most services are essential and should never be turned off. But some are optional features that you may not use, and disabling them can free up memory and make your PC feel a bit faster.
 
-Think of services like the staff working behind the counter at a restaurant. You do not see them preparing food or washing dishes, but they are essential to the operation. Some restaurant staff handle tasks specific to certain menu items — if a restaurant stops serving pizza, those staff members are not needed. Similarly, some Windows services support features you may not use.
+Think of services like the staff working behind the counter at a restaurant. You do not see them preparing food or washing dishes. But they are essential to the operation. Some restaurant staff handle tasks specific to certain menu items — if a restaurant stops serving pizza, those staff members are not needed. Similarly, some Windows services support features you may not use.
 
 Services are managed in a tool called Services Manager. You can open it by pressing the Windows key and R at the same time, typing "services.msc," and pressing Enter. This shows a long list of all services, their status (Running or Stopped), and their startup type (Automatic, Manual, or Disabled).
 
@@ -508,7 +508,7 @@ The Microsoft Store requires a Microsoft account to download most apps. If you a
     difficulty: `Beginner`,
     body: `Personalizing your Windows 11 desktop is one of the most enjoyable ways to make your computer feel like your own. Windows 11 lets you change your desktop wallpaper (the background image), your color scheme, the sounds Windows makes, and your cursor style — all through the Personalization section in Settings.
 
-A theme is a collection of these settings bundled together — one click applies a matching wallpaper, color, sounds, and cursor style all at once. Windows 11 comes with several built-in themes, and you can download many more for free from the Microsoft Store.
+A theme is a collection of these settings bundled together — one click applies a matching wallpaper, color, sounds, and cursor style all at once. Windows 11 comes with several built-in themes. And you can download many more for free from the Microsoft Store.
 
 Your desktop wallpaper is the image you see behind all your open windows and icons. You can set it to one of the attractive images that come with Windows, a personal photo from your own collection, or a picture you find online. Windows can also rotate through multiple wallpapers on a schedule, showing a different image every 30 minutes, every day, or at another interval you choose.
 
@@ -554,7 +554,7 @@ Accent colors are the highlighted colors Windows uses for buttons, links, and se
 
 Windows has two built-in tools for this job. The first is Disk Cleanup, a classic utility that has been part of Windows for years and works well for a targeted one-time cleanup. The second is Storage Sense, a newer feature in Windows 10 and 11 that can run automatically on a schedule to keep your drive from filling up over time.
 
-A gigabyte (abbreviated GB) is a unit of storage space. To give you a sense of scale, a typical document or spreadsheet is less than 1 megabyte (MB), and there are 1,000 megabytes in a gigabyte. A full-length movie is usually 4–8 gigabytes. Temporary and junk files on an average PC often total between 2 and 10 gigabytes, though on some computers they accumulate to much more.
+A gigabyte (abbreviated GB) is a unit of storage space. To give you a sense of scale, a typical document or spreadsheet is less than 1 megabyte (MB). And there are 1,000 megabytes in a gigabyte. A full-length movie is usually 4–8 gigabytes. Temporary and junk files on an average PC often total between 2 and 10 gigabytes, though on some computers they accumulate to much more.
 
 If your computer's hard drive is almost full — shown as a nearly full bar when you open File Explorer and look at your C: drive — cleaning up unnecessary files is one of the first things you should do. A drive that is more than 90% full can noticeably slow down a Windows PC.
 
@@ -782,7 +782,7 @@ Imagine having two physical desks side by side. On one desk you keep your work �
 
 This is genuinely useful for people who do different things on their Mac at different times of day. A teacher might keep their lesson preparation in one Space and their personal web browsing in another. A small business owner might keep accounting software in one Space and email in a second Space. Seniors who want a less cluttered screen appreciate being able to put just a few apps on one desktop rather than having everything visible at once.
 
-Spaces can also run apps in full-screen mode, which gives each full-screen app its own dedicated Space. When you make Safari full-screen, for instance, it gets its own Space, and you can swipe between your normal desktop and the full-screen browser without the browser window overlapping anything else.
+Spaces can also run apps in full-screen mode, which gives each full-screen app its own dedicated Space. When you make Safari full-screen, for instance, it gets its own Space. And you can swipe between your normal desktop and the full-screen browser without the browser window overlapping anything else.
 
 Spaces is managed through Mission Control. Creating, rearranging, and deleting Spaces all happen from the Mission Control view, which you reach by swiping up with three fingers on the trackpad.`,
     steps: [

@@ -95,7 +95,7 @@ Watch a comparison: on YouTube, search for "Roku vs Google TV 2026 comparison" �
       },
       {
         title: 'Google TV — what is not great',
-        content: 'Google TV is busier than Roku. The home screen pushes content at you, sometimes content you have no interest in, and you cannot fully turn it off. It requires a Google account (which means a Gmail address), which Roku does not. Some users find the interface overwhelming if they only watch a few channels. Setup is slightly longer — you have to sign in with Google during initial setup. And the Google TV Streamer (released 2024, $100) is overkill for most people. The older Chromecast with Google TV 4K is around $50 and does the same job.',
+        content: 'Google TV is busier than Roku. The home screen pushes content at you, sometimes content you have no interest in. And you cannot fully turn it off. It requires a Google account (which means a Gmail address), which Roku does not. Some users find the interface overwhelming if they only watch a few channels. Setup is slightly longer — you have to sign in with Google during initial setup. And the Google TV Streamer (released 2024, $100) is overkill for most people. The older Chromecast with Google TV 4K is around $50 and does the same job.',
         warning: 'If you do not already have a Gmail/Google account, you have to create one to set up Google TV. There is no way around this.',
       },
       {
@@ -109,7 +109,7 @@ Watch a comparison: on YouTube, search for "Roku vs Google TV 2026 comparison" �
       },
       {
         title: 'How to decide',
-        content: 'Pick Roku if: you mostly watch a handful of apps, you find new technology confusing, you do not use Google Home speakers, and you want a remote with a real Home button. Pick Google TV if: you already use Gmail and Google services, you have a Google Home or Nest speaker, you want recommendations across all your apps, or you watch a lot of different content and want help discovering what to watch next. Both are excellent — there is no wrong choice. The free trial of either is built into the box: plug it in, set it up, and if you do not like it, return it within the store\'s return window (usually 14 or 30 days).',
+        content: 'Pick Roku if: you mostly watch a handful of apps, you find new technology confusing, you do not use Google Home speakers. And you want a remote with a real Home button. Pick Google TV if: you already use Gmail and Google services, you have a Google Home or Nest speaker, you want recommendations across all your apps, or you watch a lot of different content and want help discovering what to watch next. Both are excellent — there is no wrong choice. The free trial of either is built into the box: plug it in, set it up, and if you do not like it, return it within the store\'s return window (usually 14 or 30 days).',
       },
     ],
   },
@@ -149,7 +149,7 @@ Watch a comparison: on YouTube, search for "T-Mobile vs Verizon senior plan 2026
       },
       {
         title: 'Verizon Unlimited Welcome (the non-Florida option) — $75/month (one line)',
-        content: 'If you live outside Florida, the cheapest Verizon unlimited plan is Unlimited Welcome at $75/month plus taxes (about $85 all-in). Two lines together drop to $130 total. You still get the strong Verizon network, but you do not get the 55+ discount or some perks. AARP members get $10 off per month (so $65/month with AARP).',
+        content: 'If you live outside Florida, the cheapest Verizon unlimited plan is Unlimited Welcome at $75/month plus taxes (about $85 all-in). Two lines together drop to $130 total. You still get the strong Verizon network. But you do not get the 55+ discount or some perks. AARP members get $10 off per month (so $65/month with AARP).',
         tip: 'Quick Tip: AARP membership is $20/year for the first year, $16/year after. The Verizon discount alone pays for it more than five times over.',
       },
       {
@@ -247,7 +247,7 @@ Watch a walkthrough: search YouTube for "Walgreens app prescription refill 2026"
       {
         title: 'Sign in or create an account',
         content: 'When you open the app the first time, it asks you to sign in or create an account. If you already have a Walgreens.com account (for online orders or photo prints), tap "Sign In" and use that email and password. If not, tap "Create Account," enter your email, create a password (write it down), and verify your email when Walgreens sends you a code. The whole process takes about 3 minutes.',
-        warning: 'Use a password you can remember. If you forget it, you can reset it through the app, but you have to know which email you used.',
+        warning: 'Use a password you can remember. If you forget it, you can reset it through the app. But you have to know which email you used.',
       },
       {
         title: 'Connect your prescriptions to the app',
@@ -285,7 +285,7 @@ Watch a walkthrough: search YouTube for "Walgreens app prescription refill 2026"
     publishedAt: '2026-05-17',
     lastVerifiedAt: '2026-05-17',
     difficulty: 'Beginner',
-    body: `Apple Pay lets you pay for things at a store by holding your iPhone near the credit card reader — no swiping, no inserting your card, no touching the keypad. It is safer than using a physical card because the store never sees your actual card number, and you confirm each payment with Face ID or your passcode. By 2026, about 90% of U.S. stores that take credit cards also take Apple Pay, including Walmart, Target, every grocery chain, gas stations, fast food, and most small businesses.
+    body: `Apple Pay lets you pay for things at a store by holding your iPhone near the credit card reader — no swiping, no inserting your card, no touching the keypad. It is safer than using a physical card because the store never sees your actual card number. And you confirm each payment with Face ID or your passcode. By 2026, about 90% of U.S. stores that take credit cards also take Apple Pay, including Walmart, Target, every grocery chain, gas stations, fast food, and most small businesses.
 
 You need: an iPhone (iPhone 6 or newer, but Face ID iPhones — iPhone X and later — are easiest), a credit or debit card from a U.S. bank, and a Wi-Fi or cellular connection (only needed for setup, not for the actual payment).
 
@@ -338,7 +338,7 @@ Watch a walkthrough: search YouTube for "How to use Apple Pay 2026" — Apple Su
     publishedAt: '2026-05-17',
     lastVerifiedAt: '2026-05-17',
     difficulty: 'Beginner',
-    body: `Instacart is a service that sends a real person — called a "shopper" — to a store near you to pick out your groceries, then deliver them to your door. You pay through the app, you tip the shopper, and you never leave the house. It is especially useful if you have trouble carrying heavy bags, do not drive, or live far from a good grocery store.
+    body: `Instacart is a service that sends a real person — called a "shopper" — to a store near you to pick out your groceries, then deliver them to your door. You pay through the app, you tip the shopper. And you never leave the house. It is especially useful if you have trouble carrying heavy bags, do not drive, or live far from a good grocery store.
 
 The basics: Instacart works with most major U.S. grocery chains — Aldi, Costco, Kroger, Publix, Safeway, Wegmans, Whole Foods, ShopRite, H-E-B, Sam\'s Club, BJ\'s, CVS, Walgreens, Sprouts, and many regional chains. Delivery usually arrives within 1–2 hours of placing the order. The first order is usually free delivery for new customers. After that, expect a $4–$8 delivery fee plus an optional tip ($5–$10 is typical).
 
@@ -407,7 +407,7 @@ Watch a walkthrough: search YouTube for "block political texts iPhone 2026" — 
       },
       {
         title: 'Turn on "Filter Unknown Senders" in Messages',
-        content: 'This is the single most effective setting. It splits your Messages app into two folders: people in your contacts, and unknown senders. Open Settings, scroll down and tap "Messages," then scroll down and turn on "Filter Unknown Senders." Now any text from a number not in your contacts goes to a separate "Unknown Senders" folder in the Messages app. Your main inbox only shows messages from people you know. You can still check the Unknown folder once a day for legitimate messages (a delivery notification, a one-time code), but you will not be notified for every spam text.',
+        content: 'This is the single most effective setting. It splits your Messages app into two folders: people in your contacts, and unknown senders. Open Settings, scroll down and tap "Messages," then scroll down and turn on "Filter Unknown Senders." Now any text from a number not in your contacts goes to a separate "Unknown Senders" folder in the Messages app. Your main inbox only shows messages from people you know. You can still check the Unknown folder once a day for legitimate messages (a delivery notification, a one-time code). But you will not be notified for every spam text.',
         tip: 'Quick Tip: This setting also filters out delivery scam texts ("Your USPS package is on hold"), gift card scams, and most political solicitations.',
       },
       {
@@ -416,7 +416,7 @@ Watch a walkthrough: search YouTube for "block political texts iPhone 2026" — 
       },
       {
         title: 'Report political spam as Junk',
-        content: 'Below every text from an unknown sender, you will see a "Report Junk" link. Tap it and confirm. This does two things: it deletes the message, and it sends the sender\'s phone number to Apple and to your carrier (Verizon, AT&T, T-Mobile). Carriers use these reports to update their spam filters, which protects everyone. It does not stop the specific campaign from texting you, but over time, carrier-level filtering improves and you see fewer of them.',
+        content: 'Below every text from an unknown sender, you will see a "Report Junk" link. Tap it and confirm. This does two things: it deletes the message. And it sends the sender\'s phone number to Apple and to your carrier (Verizon, AT&T, T-Mobile). Carriers use these reports to update their spam filters, which protects everyone. It does not stop the specific campaign from texting you, but over time, carrier-level filtering improves and you see fewer of them.',
       },
       {
         title: 'Stop political emails too (since campaigns use both)',

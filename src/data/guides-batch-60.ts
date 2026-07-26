@@ -56,7 +56,7 @@ Gemini sometimes gets things wrong, so always double-check important information
     thumbnailEmoji: ``,
     publishedAt: `2026-04-20`,
     difficulty: `Beginner`,
-    body: `ChatGPT is a free AI assistant made by a company called OpenAI. It is one of the most widely used AI tools in the world. You talk to it by typing messages, and it responds with helpful text — almost like texting back and forth with a knowledgeable friend who never gets tired of your questions.
+    body: `ChatGPT is a free AI assistant made by a company called OpenAI. It is one of the most widely used AI tools in the world. You talk to it by typing messages. And it responds with helpful text — almost like texting back and forth with a knowledgeable friend who never gets tired of your questions.
 
 ChatGPT is particularly good at tasks involving words and language. You can ask it to help you write an email to your doctor, summarize a long news article, explain a confusing term, come up with ideas for a birthday gift, or help you figure out how to respond to a tricky situation. It can also help you organize your thoughts when you are not sure how to start writing something.
 
@@ -146,7 +146,7 @@ Siri works best when you speak naturally in full sentences. You do not need to u
     thumbnailEmoji: ``,
     publishedAt: `2026-04-20`,
     difficulty: `Beginner`,
-    body: `Google Assistant is a voice-activated helper built into Android phones and many other Google devices. If you have an Android phone, it is already on your device and free to use. You can speak to it naturally, and it responds to your voice with answers, actions, and reminders.
+    body: `Google Assistant is a voice-activated helper built into Android phones and many other Google devices. If you have an Android phone, it is already on your device and free to use. You can speak to it naturally. And it responds to your voice with answers, actions, and reminders.
 
 Google Assistant is designed to understand everyday speech — you do not need to memorize specific commands. You can say things the way you would naturally say them, and the assistant figures out what you mean. It is connected to your Google account, so it can access your Google Calendar, Gmail, and Google Maps to give you personalized responses.
 
@@ -193,7 +193,7 @@ Google Assistant is especially valuable for managing small tasks while your hand
     difficulty: `Beginner`,
     body: `Writing can feel hard — especially when you need to write something formal, like a letter to a doctor's office, a complaint to a company, or a heartfelt message to a family member. Many people feel stuck not knowing how to start or worry about getting the wording just right. AI writing tools can help with all of this.
 
-An AI writing tool is a program you type a request to, and it writes a draft for you. You tell it what the message is about, who you are writing to, and what tone you want (friendly, professional, brief, detailed), and the AI produces a draft within seconds. You can then read it, change any wording you want, and send it along.
+An AI writing tool is a program you type a request to. And it writes a draft for you. You tell it what the message is about, who you are writing to, and what tone you want (friendly, professional, brief, detailed), and the AI produces a draft within seconds. You can then read it, change any wording you want, and send it along.
 
 The most widely used free AI writing tools are ChatGPT (chat.openai.com), Google Gemini (gemini.google.com), and Microsoft Copilot (copilot.microsoft.com). All three are free to use with a free account, and all three work the same basic way: you describe what you need in plain English, and the AI writes a draft.
 
@@ -287,7 +287,7 @@ These tools are popular for creating personalized greeting card images, fun pict
 
 There are several free or free-to-try AI image generators available. Microsoft Designer (designer.microsoft.com) and Adobe Firefly (firefly.adobe.com) are among the most beginner-friendly. Google's AI image tools are built into some of its products. Most of these offer a set number of free image generations per day or per month before asking you to pay.
 
-The images AI generators create look realistic and often quite beautiful, but they are entirely made up — they do not come from anywhere and were not taken by a photographer. That makes them useful for creative and decorative purposes. They also have limits: hands and text inside images often come out wrong, and the AI may misinterpret unusual requests.
+The images AI generators create look realistic and often quite beautiful. But they are entirely made up — they do not come from anywhere and were not taken by a photographer. That makes them useful for creative and decorative purposes. They also have limits: hands and text inside images often come out wrong, and the AI may misinterpret unusual requests.
 
 To get good results, be specific in your description. Instead of "a cat picture," try "a fluffy orange tabby cat wearing a red bow tie, sitting in a cozy library with wooden bookshelves." More detail means a result that is closer to what you have in mind.`,
     steps: [
@@ -418,7 +418,7 @@ Once you add a Skill, you interact with it by speaking to Alexa. For example, af
     thumbnailEmoji: ``,
     publishedAt: `2026-04-20`,
     difficulty: `Beginner`,
-    body: `Long articles, newsletter emails, government letters, and medical documents can feel overwhelming to read. Sometimes they are full of dense language, and you want to know the main point: what does this say, and what do I need to do?
+    body: `Long articles, newsletter emails, government letters, and medical documents can feel overwhelming to read. Sometimes they are full of dense language. And you want to know the main point: what does this say, and what do I need to do?
 
 AI summarization is one of the most right away useful things AI can do for everyday people. You copy the text of something long and paste it into an AI chat tool, ask it to summarize, and within seconds you get a short, plain-English version of the key points. No technical knowledge needed — if you can copy and paste, you can do this.
 
@@ -465,7 +465,7 @@ For articles and public documents with no personal information, AI summarization
     thumbnailEmoji: ``,
     publishedAt: `2026-04-20`,
     difficulty: `Beginner`,
-    body: `A podcast is like a radio show you can listen to any time, on any topic you can imagine. There are podcasts about true crime, history, comedy, gardening, cooking, sports, health, personal finance, religion, current events — almost anything you are interested in. And unlike radio, you choose when and where to listen, and you can pause, rewind, or skip ahead any time you want.
+    body: `A podcast is like a radio show you can listen to any time, on any topic you can imagine. There are podcasts about true crime, history, comedy, gardening, cooking, sports, health, personal finance, religion, current events — almost anything you are interested in. And unlike radio, you choose when and where to listen. And you can pause, rewind, or skip ahead any time you want.
 
 Listening to podcasts is free. The vast majority of podcasts cost nothing — the creators make their money through advertising, donations, or sponsors. You do not need a subscription to get started. You do need a smartphone or computer and either Wi-Fi or a cellular data connection.
 
@@ -510,11 +510,11 @@ People listen to podcasts while doing other things: walking, driving, cooking, d
     thumbnailEmoji: ``,
     publishedAt: `2026-04-20`,
     difficulty: `Beginner`,
-    body: `Audiobooks — books read aloud by a narrator — are a wonderful way to enjoy reading when sitting with a physical book is difficult, when your vision makes reading challenging, or when you want to "read" while doing something else like walking or driving. Many people assume audiobooks are expensive, but there are excellent free sources available to anyone.
+    body: `Audiobooks — books read aloud by a narrator — are a wonderful way to enjoy reading when sitting with a physical book is difficult, when your vision makes reading challenging, or when you want to "read" while doing something else like walking or driving. Many people assume audiobooks are expensive. But there are excellent free sources available to anyone.
 
 The most powerful free audiobook resource you likely already have access to is your local public library. Through apps like Libby (from OverDrive) and hoopla, library cardholders can borrow audiobooks completely free — no late fees, no trips to the library, and no waiting in many cases. You need a free library card, which you can get in person at any public library.
 
-Libby (libbyapp.com) requires borrowing — popular books may have a waitlist, and you have the book for a set period (usually 21 days). hoopla (hoopladigital.com) has a smaller but still large collection and lets you borrow right away with no waitlists — up to a certain number per month.
+Libby (libbyapp.com) requires borrowing — popular books may have a waitlist. And you have the book for a set period (usually 21 days). hoopla (hoopladigital.com) has a smaller but still large collection and lets you borrow right away with no waitlists — up to a certain number per month.
 
 LibriVox (librivox.org) offers thousands of free audiobooks of classic literature read by volunteers. Because these books are out of copyright (older works like Jane Austen, Mark Twain, Charles Dickens, and many more), they are permanently free to download and keep. The reading quality varies since they are volunteers, but many recordings are excellent.
 
@@ -609,7 +609,7 @@ The most widely used AI companion app is Replika (replika.com). It is available 
 
 Another option is Pi (heypi.com), which is a conversational AI focused on thoughtful, empathetic dialogue. It is available free through a web browser and as a phone app, and many people use it for talking through everyday problems or decisions.
 
-It is worth being clear about what these apps are: they are software programs, not real people. They can provide a pleasant conversation experience, but they are not substitutes for human connection. Use them as one source of engagement among many — not a replacement for friends, family, or professional support when that is what you need.`,
+It is worth being clear about what these apps are: they are software programs, not real people. They can provide a pleasant conversation experience. But they are not substitutes for human connection. Use them as one source of engagement among many — not a replacement for friends, family, or professional support when that is what you need.`,
     steps: [
       {
         title: `Download the Replika app`,
@@ -631,7 +631,7 @@ It is worth being clear about what these apps are: they are software programs, n
       },
       {
         title: `Know when to reach out to people instead`,
-        content: `AI companions are a pleasant way to pass time and stay engaged, but they should complement — not replace — human connection. If you are feeling persistently lonely, sad, or anxious, please reach out to a friend, family member, or a counselor. The 988 Suicide and Crisis Lifeline (call or text 988) is available for anyone experiencing emotional distress.`,
+        content: `AI companions are a pleasant way to pass time and stay engaged. But they should complement — not replace — human connection. If you are feeling persistently lonely, sad, or anxious, please reach out to a friend, family member, or a counselor. The 988 Suicide and Crisis Lifeline (call or text 988) is available for anyone experiencing emotional distress.`,
         warning: `Do not share sensitive personal or financial information with any AI companion app. These are entertainment and engagement tools, not secure private channels.`,
       },
     ],
@@ -648,7 +648,7 @@ It is worth being clear about what these apps are: they are software programs, n
     difficulty: `Beginner`,
     body: `One of the most satisfying things AI can do is act as a patient, personal tutor on any topic you want to learn about. Whether you have always been curious about how the stock market works, want to understand the history of a place you are visiting, are trying to learn basic Spanish phrases, or want to finally understand how your medication works — AI can explain it clearly, at exactly the level you need, and as many times as you need to hear it.
 
-Unlike a search engine, which gives you a list of websites to sort through, an AI tutor talks directly to you. You ask a question in plain English, and it answers in plain English. If the answer is confusing, you say "Can you explain that in simpler terms?" and it tries again. If you want to go deeper on one point, you say "Tell me more about that part." There is no rushing, no judgment, and no embarrassment about asking basic questions.
+Unlike a search engine, which gives you a list of websites to sort through, an AI tutor talks directly to you. You ask a question in plain English. And it answers in plain English. If the answer is confusing, you say "Can you explain that in simpler terms?" and it tries again. If you want to go deeper on one point, you say "Tell me more about that part." There is no rushing, no judgment, and no embarrassment about asking basic questions.
 
 AI learning works best when you treat it like a conversation. Start broad, then get more specific. For example: start with "Explain how Social Security benefits work" and once you understand the basics, follow up with "What happens to my benefits if I claim at 62 instead of 67?" Each answer builds on the last.
 
@@ -736,7 +736,7 @@ The free tools that work well for recipe help are ChatGPT (chat.openai.com), Goo
     difficulty: `Beginner`,
     body: `Planning a trip involves a lot of details: where to stay, what to see, how to get around, what to pack, what to avoid, and how to make the most of the time you have. AI is genuinely helpful for all of these tasks. You describe your trip — where, when, how long, who is going, what you enjoy — and the AI gives you a personalized starting point.
 
-Unlike travel websites, which show you options and leave you to sort through them, AI has a conversation with you about your preferences and builds something tailored. If you say "I want to visit Washington D.C. for four days in October with my wife. We are in our 70s, we enjoy history and museums, and we prefer not to walk more than a mile at a stretch," the AI will suggest an itinerary that accounts for all of that — spacing out the walking, including rest breaks, and focusing on the sites most relevant to your interests.
+Unlike travel websites, which show you options and leave you to sort through them, AI has a conversation with you about your preferences and builds something tailored. If you say "I want to visit Washington D.C. for four days in October with my wife. We are in our 70s, we enjoy history and museums. And we prefer not to walk more than a mile at a stretch," the AI will suggest an itinerary that accounts for all of that — spacing out the walking, including rest breaks, and focusing on the sites most relevant to your interests.
 
 AI can help you: build a day-by-day itinerary, create a packing list based on your destination and weather, learn about local customs or tipping norms, understand what to expect at airports, find out about accessible transportation options, and compare types of accommodation.
 
@@ -781,7 +781,7 @@ The free AI tools that work well for travel planning are ChatGPT (chat.openai.co
     difficulty: `Intermediate`,
     body: `Looking for work can feel overwhelming, especially if you have been out of the workforce for a while, are changing careers, or feel uncertain about how to present yourself on paper. AI tools can help at every stage of the process — writing and improving your resume, drafting personalized cover letters, preparing for interview questions, and researching potential employers.
 
-The key thing to understand is that AI does not find jobs for you — it helps you present yourself well and prepare thoroughly. You still need to search for job listings on sites like Indeed, LinkedIn, or USAJOBS (for federal jobs), and you still need to do the interviews. But AI can a lot reduce the stress and time involved in the writing and preparation parts.
+The key thing to understand is that AI does not find jobs for you — it helps you present yourself well and prepare thoroughly. You still need to search for job listings on sites like Indeed, LinkedIn, or USAJOBS (for federal jobs). And you still need to do the interviews. But AI can a lot reduce the stress and time involved in the writing and preparation parts.
 
 For resume improvement, AI is particularly useful at taking a rough description of your work history and turning it into clear, well-organized bullet points that highlight your accomplishments. Many people struggle to write about their own experience in a professional way — AI makes this much easier. You describe what you did, and the AI helps you phrase it in a way that reads well to hiring managers.
 
@@ -824,7 +824,7 @@ For interview preparation, AI can generate likely interview questions for any jo
     thumbnailEmoji: ``,
     publishedAt: `2026-04-20`,
     difficulty: `Beginner`,
-    body: `Android tablets — like the Samsung Galaxy Tab series — are popular, affordable devices that are great for browsing the web, video calling family, watching TV shows, reading, and playing games. Samsung is the most well-known brand, but other brands like Lenovo and TCL make Android tablets as well, and they all work in a similar way.
+    body: `Android tablets — like the Samsung Galaxy Tab series — are popular, affordable devices that are great for browsing the web, video calling family, watching TV shows, reading, and playing games. Samsung is the most well-known brand, but other brands like Lenovo and TCL make Android tablets as well. And they all work in a similar way.
 
 The larger screen of a tablet (typically 8 to 11 inches) makes everything easier to see and tap compared to a phone. Text is bigger, photos are more vibrant, and video calls feel more natural when you can see the person you are talking to at a larger size. Many people find tablets easier to use than phones for this reason.
 
@@ -876,9 +876,9 @@ There are dozens of podcast apps available, but three stand out as the most popu
 
 Apple Podcasts is the built-in podcast app on every iPhone. It is completely free, requires no new account (it uses your Apple ID), and has access to almost every podcast ever made. It is the simplest option for iPhone users who want to get started without downloading anything new. The downside is that it is not available on Android — only Apple devices.
 
-Spotify is the most popular streaming platform in the world, and it handles both music and podcasts in one app. It is free with occasional ads on both iPhone and Android. If you already have Spotify for music, you can search for and listen to podcasts in the same app without switching. One limitation is that Spotify does not have every podcast — some are exclusive to other platforms — but it has the vast majority of popular shows.
+Spotify is the most popular streaming platform in the world. And it handles both music and podcasts in one app. It is free with occasional ads on both iPhone and Android. If you already have Spotify for music, you can search for and listen to podcasts in the same app without switching. One limitation is that Spotify does not have every podcast — some are exclusive to other platforms — but it has the vast majority of popular shows.
 
-Pocket Casts is a paid app (around $4 one-time or $1 per month) widely considered the best podcast experience by frequent listeners. It has powerful features for organizing your library, trimming silence between words to speed up playback without sounding rushed, and cross-device syncing. It is excellent for people who listen to many shows regularly, but it is more than most casual listeners need.`,
+Pocket Casts is a paid app (around $4 one-time or $1 per month) widely considered the best podcast experience by frequent listeners. It has powerful features for organizing your library, trimming silence between words to speed up playback without sounding rushed, and cross-device syncing. It is excellent for people who listen to many shows regularly. But it is more than most casual listeners need.`,
     steps: [
       {
         title: `Decide which app fits your situation`,

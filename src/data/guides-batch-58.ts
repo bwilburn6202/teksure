@@ -316,7 +316,7 @@ Life360 also sends you automatic notifications — called Place Alerts — when 
 
 The free version of Life360 includes real-time location sharing, Place Alerts, and a two-day location history so you can see where someone was earlier in the day. A paid membership adds features like crash detection, roadside help, and stolen phone protection — but those are entirely optional.
 
-All family members must agree to be in the Circle and must install the app themselves. Life360 works on both iPhone and Android, so family members do not all need the same type of phone. Location sharing is completely transparent — everyone in the Circle can see everyone else, and you can see if location sharing is turned off by a member.`,
+All family members must agree to be in the Circle and must install the app themselves. Life360 works on both iPhone and Android, so family members do not all need the same type of phone. Location sharing is completely transparent — everyone in the Circle can see everyone else. And you can see if location sharing is turned off by a member.`,
     steps: [
       {
         title: `Download Life360 on everyone's phone`,
@@ -356,7 +356,7 @@ All family members must agree to be in the Circle and must install the app thems
 
 Messenger works with your Facebook account. If you have Facebook, you already have Messenger — your Facebook friends are automatically available to message. You do not need to share your phone number with anyone. Contact is through Facebook.
 
-Many families use Messenger as their main way to stay in touch because it works the same on iPhone and Android, it is free, and it makes video calls accessible even for people who are not comfortable with technology. You tap one button and you are face-to-face with someone.
+Many families use Messenger as their main way to stay in touch because it works the same on iPhone and Android, it is free. And it makes video calls accessible even for people who are not comfortable with technology. You tap one button and you are face-to-face with someone.
 
 Messenger also supports group chats — a single conversation thread where multiple people can all message and respond together. This is popular for family group chats where everyone can share news, photos, and jokes in one place.
 
@@ -405,7 +405,7 @@ Messenger is separate from the main Facebook app. You need to install Messenger 
     thumbnailEmoji: ``,
     publishedAt: `2026-04-19`,
     difficulty: `Beginner`,
-    body: `Instagram is a photo and video sharing app where people post pictures from their lives, follow celebrities and businesses they like, and stay connected with friends and family. It is owned by Meta, the same company that owns Facebook, but it is a separate app focused on visual content.
+    body: `Instagram is a photo and video sharing app where people post pictures from their lives, follow celebrities and businesses they like, and stay connected with friends and family. It is owned by Meta, the same company that owns Facebook. But it is a separate app focused on visual content.
 
 When you follow someone on Instagram, their posts appear in your Feed — a scrollable stream of photos and videos. At the top of the Feed are Stories — short photos or videos that disappear after 24 hours. Stories are a popular way to share quick everyday moments without it becoming a permanent post.
 
@@ -696,7 +696,7 @@ Once set up, anyone in your household can use "Hey Siri" to play music or ask qu
     thumbnailEmoji: ``,
     publishedAt: `2026-04-19`,
     difficulty: `Beginner`,
-    body: `A smart plug is a small device that goes between your wall outlet and whatever you want to control — a lamp, a fan, a coffee maker, a phone charger. Once plugged in, the smart plug connects to your home Wi-Fi, and you can turn it on or off from an app on your phone, from anywhere in the world.
+    body: `A smart plug is a small device that goes between your wall outlet and whatever you want to control — a lamp, a fan, a coffee maker, a phone charger. Once plugged in, the smart plug connects to your home Wi-Fi. And you can turn it on or off from an app on your phone, from anywhere in the world.
 
 You can also set schedules. For example: turn the lamp on at 6 PM every day, and turn it off at midnight. Or set the coffee maker to start brewing at 7 AM. Once the schedule is set, it happens automatically without any tapping.
 
@@ -794,7 +794,7 @@ Important: Installing a smart thermostat involves connecting it to your home's h
     difficulty: `Intermediate`,
     body: `Arlo makes wireless security cameras you can place around your home — indoors or outdoors — to monitor activity and receive alerts on your phone when something moves. You can check a live view of any camera from anywhere in the world using the free Arlo app.
 
-Arlo cameras are battery-powered and wireless. You do not need to run any cables — just mount them where you want, and they connect to your home Wi-Fi (or a separate Arlo SmartHub base station, depending on the model). Battery life varies from 3 to 6 months depending on how much activity the cameras detect.
+Arlo cameras are battery-powered and wireless. You do not need to run any cables — just mount them where you want. And they connect to your home Wi-Fi (or a separate Arlo SmartHub base station, depending on the model). Battery life varies from 3 to 6 months depending on how much activity the cameras detect.
 
 Here is what Arlo cameras can do:
 
@@ -804,7 +804,7 @@ Motion alerts: When the camera detects movement, it sends a notification to your
 
 Two-way audio: Many Arlo cameras have a microphone and speaker, so you can hear what is happening and speak through the camera. Useful for telling a delivery driver where to leave a package.
 
-Night vision: All Arlo cameras see in the dark using infrared night vision. The video is black and white at night, but you can clearly see what is happening.
+Night vision: All Arlo cameras see in the dark using infrared night vision. The video is black and white at night. But you can clearly see what is happening.
 
 The free Arlo account includes a few days of cloud video storage. An Arlo Secure subscription ($2.99/month per camera) adds 30 days of video history, person/vehicle/animal detection, and package detection.
 

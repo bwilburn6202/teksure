@@ -117,7 +117,7 @@ Trade-in programs work like this: you give your old phone to Apple, Samsung, you
 
 Before you trade in your phone, you need to do a few important steps to protect your personal information. You should back up all your photos, contacts, and other data. Then you erase your phone completely — this is called a factory reset — which wipes all your personal information off the device before you hand it over. This step is critical. Never hand over a phone without erasing it first.
 
-The best trade-in values often come from trading in directly with Apple or Samsung when you buy a new phone from them, or through your carrier when you sign a new plan or upgrade. Third-party services like Best Buy, Amazon, and Decluttr also accept trade-ins and sometimes offer competitive values, but they may pay in gift cards rather than cash.
+The best trade-in values often come from trading in directly with Apple or Samsung when you buy a new phone from them, or through your carrier when you sign a new plan or upgrade. Third-party services like Best Buy, Amazon, and Decluttr also accept trade-ins and sometimes offer competitive values. But they may pay in gift cards rather than cash.
 
 You can check the estimated value of your phone before committing to anything. Apple's trade-in estimator, Samsung's trade-in page, and your carrier's website all let you enter your phone model and answer a few questions about its condition to get an estimate. Shopping around between these options can make a meaningful difference in how much credit you receive.`,
     steps: [
@@ -202,7 +202,7 @@ If you find that you are regularly coming close to your data limit, there are a 
     thumbnailEmoji: ``,
     publishedAt: `2026-04-20`,
     difficulty: `Beginner`,
-    body: `Phone bills in the United States average around $70 to $120 per month per line for many families, and that number can creep up over time as carriers add fees and autopay discounts quietly expire. The good news is that most people are paying more than they need to, and there are several straightforward ways to bring that number down without giving up service quality.
+    body: `Phone bills in the United States average around $70 to $120 per month per line for many families, and that number can creep up over time as carriers add fees and autopay discounts quietly expire. The good news is that most people are paying more than they need to. And there are several straightforward ways to bring that number down without giving up service quality.
 
 The single biggest opportunity for most people is calling their carrier and asking what lower-cost plans are available. Carriers often have plans they do not advertise heavily — especially for seniors — that offer similar coverage at a much lower monthly rate. If you have been with the same carrier for several years without reviewing your plan, there is a good chance you are on an older, more expensive plan when a cheaper current option would serve you equally well.
 
@@ -215,7 +215,7 @@ You can also look at what you are paying for that you may not need. Many plans i
       {
         title: `Review your current bill in detail`,
         content: `Log in to your carrier's website or app, or call customer service, and ask for an itemized breakdown of your monthly charges. Look for line items beyond the base plan cost. Common extras include device insurance ($12–$17/month), international packages, streaming bundles, hotspot add-ons, and equipment fees for rented devices. Note anything you do not recognize or know you do not use.`,
-        tip: `Ask your carrier's customer service representative to explain every line item on your bill. You have a right to understand what you are paying for, and they are required to explain each charge.`,
+        tip: `Ask your carrier's customer service representative to explain every line item on your bill. You have a right to understand what you are paying for. And they are required to explain each charge.`,
       },
       {
         title: `Ask your carrier about senior discounts and current promotions`,
@@ -333,7 +333,7 @@ Another option that has become popular recently is eSIM technology. Some newer p
     thumbnailEmoji: ``,
     publishedAt: `2026-04-20`,
     difficulty: `Intermediate`,
-    body: `Traveling internationally with your smartphone and laptop has become much easier over the past decade, but there are still a handful of practical tech considerations that can make a big difference in your experience. Getting these things sorted before you leave home saves time, money, and frustration once you are abroad.
+    body: `Traveling internationally with your smartphone and laptop has become much easier over the past decade. But there are still a handful of practical tech considerations that can make a big difference in your experience. Getting these things sorted before you leave home saves time, money, and frustration once you are abroad.
 
 The first and most important consideration is power. Different countries use different electrical outlet shapes and voltages. The United States uses 110 volts with flat two-prong or three-prong outlets. Most of Europe uses 220 volts with round two-prong plugs. Other regions use different configurations. If you plug a US appliance into a 220-volt outlet without the proper adapter, you could damage your device or cause a short circuit.
 
@@ -386,7 +386,7 @@ Before you leave, take a few minutes to make sure your important accounts are se
 
 The most impressive feature is the camera translation — you point your phone's camera at a sign, menu, label, or document, and the app translates the text in real time right on your screen. The foreign words seem to disappear and be replaced with the translation in your own language. This works particularly well for restaurant menus, street signs, and product labels when traveling. You do not even need to take a photo — the translation happens live as you hold your camera up.
 
-Google Translate also lets you type text and get a translation, translate your own speech, and have a real-time two-way conversation with someone who speaks a different language. The conversation mode is especially useful — you both speak into the same phone, and it translates back and forth between you automatically. This has made it possible for many people to communicate in medical settings, at stores, or with new neighbors even with no shared language.
+Google Translate also lets you type text and get a translation, translate your own speech, and have a real-time two-way conversation with someone who speaks a different language. The conversation mode is especially useful — you both speak into the same phone. And it translates back and forth between you automatically. This has made it possible for many people to communicate in medical settings, at stores, or with new neighbors even with no shared language.
 
 For travel, one of the best features is offline translation. You can download language packs for countries you plan to visit while you are still connected to Wi-Fi at home. Then, even without any internet connection abroad, Google Translate works for basic text and camera translation. This is invaluable when you are somewhere with limited or expensive cellular data.
 
@@ -435,7 +435,7 @@ Cash back amounts vary but are real money — typically $0.25 to $2.00 per item,
 
 Getting started with Ibotta takes about ten minutes. You download the free app, create a free account, and link any store loyalty programs you already have (like a Kroger card or Walmart account). Many stores can verify your purchases automatically through your loyalty card, which means you do not even need to photograph your receipts — the cash back is applied automatically.
 
-Ibotta is a legitimate company that has been operating since 2012 and has paid out over $1 billion in cash back to its users. It generates revenue through partnerships with product brands who pay to promote their items on the platform. Your participation helps brands gather purchase data, but you always have the option to review and adjust your privacy settings in the app.`,
+Ibotta is a legitimate company that has been operating since 2012 and has paid out over $1 billion in cash back to its users. It generates revenue through partnerships with product brands who pay to promote their items on the platform. Your participation helps brands gather purchase data. But you always have the option to review and adjust your privacy settings in the app.`,
     steps: [
       {
         title: `Download and create your Ibotta account`,
@@ -569,7 +569,7 @@ Honey also has a feature called Honey Gold, where you earn points on purchases a
 
 In addition to coupon codes, Honey has a price tracking feature called Droplist (on Amazon). You can add an item to your Droplist and Honey will notify you when the price drops to a level you set. This is useful for big purchases you are willing to wait on to get a better price.
 
-Setting up Honey takes about two minutes. You install the browser extension once, and it runs automatically every time you shop online afterward.`,
+Setting up Honey takes about two minutes. You install the browser extension once. And it runs automatically every time you shop online afterward.`,
     steps: [
       {
         title: `Install the Honey browser extension`,
@@ -578,7 +578,7 @@ Setting up Honey takes about two minutes. You install the browser extension once
       },
       {
         title: `Create a free Honey account`,
-        content: `Click the orange Honey icon in your browser's top corner and click Sign Up. You can create an account with your email address or sign in with an existing PayPal or Google account. Creating an account lets Honey track your Gold rewards and savings history. You can also use Honey without an account, but you will not earn Gold points.`,
+        content: `Click the orange Honey icon in your browser's top corner and click Sign Up. You can create an account with your email address or sign in with an existing PayPal or Google account. Creating an account lets Honey track your Gold rewards and savings history. You can also use Honey without an account. But you will not earn Gold points.`,
       },
       {
         title: `Shop as you normally do`,
@@ -797,7 +797,7 @@ The volume of phishing attempts has grown dramatically because the technology to
     difficulty: `Beginner`,
     body: `If you have ever used a computer, you have probably heard that antivirus software is essential. But when it comes to smartphones, the picture is more nuanced — and depends a lot on whether you have an iPhone or an Android phone.
 
-iPhones have a security model that greatly limits what any app, including security apps, can do on the device. Apple controls exactly which apps are allowed in the App Store and reviews each one for malicious behavior. iPhone apps are isolated from each other in a way that prevents them from scanning other apps or accessing system files. For these reasons, traditional antivirus scanning as you know it from Windows computers is not possible on an iPhone. Security apps on the App Store for iPhone generally cannot scan for malware because iOS does not allow the deep system access required. What iPhone security apps can do is warn you about unsafe Wi-Fi networks, check if your passwords have appeared in data breaches, and provide a VPN. These can be useful features, but they are not "antivirus" in the traditional sense.
+iPhones have a security model that greatly limits what any app, including security apps, can do on the device. Apple controls exactly which apps are allowed in the App Store and reviews each one for malicious behavior. iPhone apps are isolated from each other in a way that prevents them from scanning other apps or accessing system files. For these reasons, traditional antivirus scanning as you know it from Windows computers is not possible on an iPhone. Security apps on the App Store for iPhone generally cannot scan for malware because iOS does not allow the deep system access required. What iPhone security apps can do is warn you about unsafe Wi-Fi networks, check if your passwords have appeared in data breaches, and provide a VPN. These can be useful features. But they are not "antivirus" in the traditional sense.
 
 Android phones have a more open operating system that gives apps more latitude. Google has built-in security called Google Play Protect that scans installed apps and warns you about suspicious ones. It runs automatically in the background on all Android phones with Google services. For most people using Android normally — installing apps only from the Google Play Store and not clicking suspicious links — Google Play Protect provides adequate protection without installing any additional app.
 

@@ -166,7 +166,7 @@ This is especially useful if you find writing emails stressful, do not know how 
     difficulty: 'Beginner',
     body: `Apple added a clinically-validated hearing test to AirPods Pro 2 in iOS 18 in late 2024. The test takes about five minutes and produces an audiogram — the same chart a hearing specialist creates in an office. You do the entire test at home, sitting quietly with your AirPods in.
 
-The test is not a replacement for seeing a hearing doctor, but it is a useful first step. Many people who have hearing loss do not realize it, and the test can confirm whether a follow-up with an audiologist makes sense. The results are stored in the iPhone Health app alongside your other health data.
+The test is not a replacement for seeing a hearing doctor. But it is a useful first step. Many people who have hearing loss do not realize it, and the test can confirm whether a follow-up with an audiologist makes sense. The results are stored in the iPhone Health app alongside your other health data.
 
 AirPods Pro 2 also include a feature called Hearing Aid mode (added in iOS 18) that uses the AirPods to amplify sounds in real time, similar to an over-the-counter hearing aid — useful if your test results show mild to moderate hearing loss.
 

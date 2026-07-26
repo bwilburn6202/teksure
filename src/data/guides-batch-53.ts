@@ -91,7 +91,7 @@ export const guidesBatch53: Guide[] = [
     publishedAt: '2026-04-19',
     lastVerifiedAt: '2026-04-19',
     difficulty: 'Beginner',
-    body: `Google Gemini is a free AI assistant made by Google. Think of it as a very knowledgeable helper you can have a conversation with — you ask it questions or give it a task in plain English, and it responds in plain English.\n\nIf you have an Android phone, Gemini is most likely already installed. On Samsung, Google Pixel, and most other Android phones, you can reach it by pressing and holding the home button or the power button. On iPhone, you can download the free Gemini app from the App Store. Google also released a standalone Gemini desktop app for Mac in April 2026.\n\nGemini is different from a regular search engine. Instead of showing you a list of links, it gives you a direct, conversational answer. You can ask follow-up questions, ask it to rewrite something, or have it help you draft a message.`,
+    body: `Google Gemini is a free AI assistant made by Google. Think of it as a very knowledgeable helper you can have a conversation with — you ask it questions or give it a task in plain English. And it responds in plain English.\n\nIf you have an Android phone, Gemini is most likely already installed. On Samsung, Google Pixel, and most other Android phones, you can reach it by pressing and holding the home button or the power button. On iPhone, you can download the free Gemini app from the App Store. Google also released a standalone Gemini desktop app for Mac in April 2026.\n\nGemini is different from a regular search engine. Instead of showing you a list of links, it gives you a direct, conversational answer. You can ask follow-up questions, ask it to rewrite something, or have it help you draft a message.`,
     steps: [
       {
         title: 'Open Gemini on your device',
@@ -227,7 +227,7 @@ HDMI ARC eliminates the need for a separate optical audio cable or a second remo
     thumbnailEmoji: ``,
     publishedAt: `2026-04-19`,
     difficulty: `Beginner`,
-    body: `Over-the-air (OTA) TV is completely free, and you don't need a cable or streaming subscription to get it. All you need is a digital TV antenna. With one, you can watch ABC, NBC, CBS, Fox, PBS, and dozens of local channels in HD quality — often with better picture quality than cable because the signal isn't compressed.
+    body: `Over-the-air (OTA) TV is completely free. And you don't need a cable or streaming subscription to get it. All you need is a digital TV antenna. With one, you can watch ABC, NBC, CBS, Fox, PBS, and dozens of local channels in HD quality — often with better picture quality than cable because the signal isn't compressed.
 
 Digital antennas work by picking up broadcast signals that TV stations transmit from towers in your area. These are the same signals that have always been "in the air" — digital antennas are the modern version of the old rabbit ears you may remember. The difference is that today's signals are digital HD instead of analog.
 
@@ -542,7 +542,7 @@ YouTube offers three privacy options for every video you upload. Public means an
 
 For home videos and personal memories, Unlisted is usually the best choice. You upload the video, then share the link with family and friends via text or email. They can watch it without needing a YouTube account. No one else can find it.
 
-To upload a video to YouTube, you need a free Google account (a Gmail address works). The YouTube app is free on iPhone and Android, and you can also upload from YouTube.com on a computer.
+To upload a video to YouTube, you need a free Google account (a Gmail address works). The YouTube app is free on iPhone and Android. And you can also upload from YouTube.com on a computer.
 
 File size and length limits are generous for standard accounts — videos can be up to 15 minutes long and up to 256 GB in size. For most home videos, you'll never hit these limits. Longer upload limits (up to 12 hours) are available if you verify your account with a phone number.
 
@@ -792,7 +792,7 @@ Step data is stored locally on your iPhone and is private — Apple doesn't shar
     thumbnailEmoji: ``,
     publishedAt: `2026-04-19`,
     difficulty: `Beginner`,
-    body: `If you have a Samsung Galaxy phone, Samsung Health is already installed and already counting your steps. This free app uses your phone's built-in motion sensor to track your daily movement, and it stores weeks of step history so you can see how active you've been over time.
+    body: `If you have a Samsung Galaxy phone, Samsung Health is already installed and already counting your steps. This free app uses your phone's built-in motion sensor to track your daily movement. And it stores weeks of step history so you can see how active you've been over time.
 
 Samsung Health goes beyond a simple step counter. It also offers structured Walking programs — guided challenges where you set a weekly step goal and track your progress toward it. It tracks your heart rate (if your phone supports it), your sleep if you wear a Galaxy Watch, your water intake, and more — all in one place.
 

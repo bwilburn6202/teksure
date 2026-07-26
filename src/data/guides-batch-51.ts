@@ -17,7 +17,7 @@ Labels also show up in the left sidebar of Gmail, so you can click on any label 
 
 Labels don't move emails out of your inbox unless you choose to archive them — so you can still see everything in one place while also having it organized. Many people use labels to track things they're waiting on, flag messages that need a reply, or group emails from a specific club, organization, or subscription.
 
-You can create as many labels as you want, and you can apply them by hand or set up filters so Gmail automatically applies a label whenever an email arrives from a certain sender or contains certain words. For example, every email from your electric company could automatically get a "Utilities" label.
+You can create as many labels as you want. And you can apply them by hand or set up filters so Gmail automatically applies a label whenever an email arrives from a certain sender or contains certain words. For example, every email from your electric company could automatically get a "Utilities" label.
 
 Labels are free, built into every Gmail account, and work on both the Gmail website and the Gmail app on your phone.`,
     steps: [
@@ -101,7 +101,7 @@ Snooze works on the Gmail website and on the Gmail app for iPhone and Android. Y
     difficulty: `Beginner`,
     body: `Many people have more than one Gmail address — maybe one for personal use and one for medical or financial matters, or one you share with a spouse. The good news is that the Gmail app on your iPhone or Android phone can handle multiple accounts at the same time, and switching between them takes just a tap.
 
-You don't have to log out of one account to check another. Both accounts stay active in the app simultaneously. You'll get notifications for all of them, and you can read, reply, and send from any of your accounts without signing in again each time.
+You don't have to log out of one account to check another. Both accounts stay active in the app simultaneously. You'll get notifications for all of them. And you can read, reply, and send from any of your accounts without signing in again each time.
 
 Here's how it works: the Gmail app shows a small circle in the top right corner that contains your profile photo or initials. Tapping that circle lets you switch between accounts or add a new one. It's the same on both iPhone and Android.
 
@@ -156,7 +156,7 @@ VIP works on iPhone, iPad, and Mac — and your VIP list syncs across all your A
 
 This is a great tool if you want to make sure you never miss an email from a specific doctor's office, pharmacy, your children or grandchildren, your lawyer, your accountant, or any other person whose messages matter most to you.
 
-You can add up to several dozen VIP contacts, and you can remove anyone from the VIP list just as easily. Apple Mail is the built-in email app on iPhones and Macs — it comes with your device and doesn't require any downloads or subscriptions.`,
+You can add up to several dozen VIP contacts. And you can remove anyone from the VIP list just as easily. Apple Mail is the built-in email app on iPhones and Macs — it comes with your device and doesn't require any downloads or subscriptions.`,
     steps: [
       {
         title: `Add someone as a VIP on iPhone or iPad`,
@@ -517,7 +517,7 @@ This guide assumes you have a Microsoft account and are using Windows 10 or 11.`
       },
       {
         title: `Turn on folder backup`,
-        content: `Click "Manage backup" or toggle the switch next to each folder you want to back up. For most people, turning on all three (Desktop, Documents, and Pictures) is the right choice. Click "Start backup" or "Save changes." OneDrive will begin uploading your files to the cloud — this first upload may take a while depending on how many files you have, but it happens in the background.`,
+        content: `Click "Manage backup" or toggle the switch next to each folder you want to back up. For most people, turning on all three (Desktop, Documents, and Pictures) is the right choice. Click "Start backup" or "Save changes." OneDrive will begin uploading your files to the cloud — this first upload may take a while depending on how many files you have. But it happens in the background.`,
         warning: `If you have a very large number of photos or files, the initial upload might take several hours or even a day. Your computer will work normally during this time.`
       },
       {
@@ -593,7 +593,7 @@ Choose a plan and tap "Buy." The charge goes to the payment method on your Apple
     difficulty: `Beginner`,
     body: `WhatsApp voice messages are one of the most popular features in the app, and for good reason: they're faster than typing, more personal than text, and much easier to use if you have trouble with small keyboards. You record your message by holding down a button, and the other person can listen to it whenever they're ready.
 
-Voice messages in WhatsApp work like leaving a voicemail, but they go directly into your chat conversation as a playable audio clip. The person you're messaging can listen to it right away or come back to it later. They can also speed it up or slow it down with a tap if they want.
+Voice messages in WhatsApp work like leaving a voicemail. But they go directly into your chat conversation as a playable audio clip. The person you're messaging can listen to it right away or come back to it later. They can also speed it up or slow it down with a tap if they want.
 
 Here's when voice messages are especially useful:
 - When your message is long and typing it out would take a while

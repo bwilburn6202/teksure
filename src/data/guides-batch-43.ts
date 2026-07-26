@@ -64,7 +64,7 @@ Reminders syncs via iCloud, so items added on your iPhone appear on your Mac and
 Microsoft To Do replaced the older Wunderlist app (which Microsoft acquired) and is well-regarded for its clean, simple design.
 
 **Key features:**
-- **My Day**: A special daily list where you plan what you want to accomplish today. Each morning it starts fresh, and you add tasks from your lists to focus on
+- **My Day**: A special daily list where you plan what you want to accomplish today. Each morning it starts fresh. And you add tasks from your lists to focus on
 - **Multiple lists**: Create separate lists for Work, Personal, Shopping, Projects, etc.
 - **Subtasks and notes**: Break tasks into steps and add notes to any task
 - **Due dates and reminders**: Set tasks to be due on a specific date with a time-based reminder

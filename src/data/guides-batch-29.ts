@@ -337,7 +337,7 @@ This saves the time and mental energy of deciding "what's for dinner?" every nig
 
 The key to getting useful results from AI is giving it specific constraints. "Give me a meal plan" produces generic suggestions. "Give me a 7-day meal plan for two people, $75 budget, low-sodium because of my husband's heart condition, we don't eat pork, and we have about 30 minutes for dinner most nights" produces something actually useful.
 
-AI can also suggest meals based on what you already have in your refrigerator. Tell it what's in your fridge and pantry, and it will suggest meals that use those ingredients before they go bad — reducing waste and saving money.
+AI can also suggest meals based on what you already have in your refrigerator. Tell it what's in your fridge and pantry. And it will suggest meals that use those ingredients before they go bad — reducing waste and saving money.
 
 Once you have a meal plan, AI can generate exact grocery lists organized by store section (produce, dairy, meat, pantry), scale recipes up or down for different serving sizes, suggest substitutions for ingredients you can't find or don't like, and even estimate the calorie and nutrition count for each meal.
 
@@ -379,7 +379,7 @@ This works with ChatGPT, Perplexity, Claude (Anthropic), or any other AI assista
     difficulty: 'Beginner',
     body: `Online dating is now one of the most common ways people over 50 meet romantic partners. The stigma around it has largely faded, and several apps are designed specifically for people in the 50-and-up age group. Here's an honest overview of what's available and what to expect.
 
-Silver Singles is one of the most popular dedicated senior dating apps. It uses a personality questionnaire to suggest compatible matches, and it focuses on the 50+ age group specifically. The free version lets you create a profile and see who's matched with you, but you need a paid membership (around $25-35/month) to read and send messages. It's available on iPhone, Android, and through a web browser.
+Silver Singles is one of the most popular dedicated senior dating apps. It uses a personality questionnaire to suggest compatible matches. And it focuses on the 50+ age group specifically. The free version lets you create a profile and see who's matched with you. But you need a paid membership (around $25-35/month) to read and send messages. It's available on iPhone, Android, and through a web browser.
 
 OurTime (part of the Match Group, which also owns Match.com) focuses on single men and women over 50. The profile setup is simpler than Silver Singles, and the interface is designed to be accessible for people less familiar with dating apps. Similar paid model for messaging.
 
@@ -581,12 +581,12 @@ Going through your notification settings once a month and pruning apps you've gi
       },
       {
         title: 'Turn Off Notifications for Unnecessary Apps',
-        content: `For apps you don't need interrupting you (games, shopping apps, social media you check on your own schedule): tap the app name → toggle "Allow Notifications" to off. The app can still send you notifications when you actively open it, but it won't interrupt you otherwise.`,
+        content: `For apps you don't need interrupting you (games, shopping apps, social media you check on your own schedule): tap the app name → toggle "Allow Notifications" to off. The app can still send you notifications when you actively open it. But it won't interrupt you otherwise.`,
         tip: `Start with a few obvious ones: news apps, social media, and games. Then check the full list and turn off anything you don't recognize as needing real-time alerts.`,
       },
       {
         title: 'Set Notifications to Silent (No Sound/Vibration)',
-        content: `For apps that are useful to notify you but don't need to interrupt: tap the app → keep "Allow Notifications" on but turn off "Sounds" and "Badges" (the red dot counters). You'll still see these notifications when you look at your Lock Screen or Notification Center, but they won't buzz or ding.`,
+        content: `For apps that are useful to notify you but don't need to interrupt: tap the app → keep "Allow Notifications" on but turn off "Sounds" and "Badges" (the red dot counters). You'll still see these notifications when you look at your Lock Screen or Notification Center. But they won't buzz or ding.`,
       },
       {
         title: 'Enable Notification Summary',
@@ -847,7 +847,7 @@ A typical family can save $20-50/month on groceries with consistent Ibotta use. 
 
 This is useful in many situations: an elderly parent who lives alone can share their location with an adult child for peace of mind. Spouses can see each other without texting "where are you?" Teenagers can be seen by parents when driving. Family members can find each other in a crowded place like an airport.
 
-Location sharing in Find My is mutual and consensual — you choose exactly who can see your location, and you can stop sharing at any time. The person you share with gets a notification that you're sharing, and you can stop with one tap. It's not surveillance — it's voluntary family coordination.
+Location sharing in Find My is mutual and consensual — you choose exactly who can see your location. And you can stop sharing at any time. The person you share with gets a notification that you're sharing. And you can stop with one tap. It's not surveillance — it's voluntary family coordination.
 
 The Find My app can also be used to see your own devices, locate friends who've shared with you, and see the location of AirTags (Apple's Bluetooth trackers).
 

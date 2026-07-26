@@ -150,7 +150,7 @@ HDMI cables come in different lengths — 6-foot cables work for most living roo
     thumbnailEmoji: '',
     publishedAt: '2026-04-19',
     difficulty: 'Beginner',
-    body: `A Skylight digital photo frame is a Wi-Fi-connected picture frame that displays photos sent to it by family and friends. It sits on a shelf or desk like any picture frame, but it shows a rotating slideshow of photos that loved ones send from their phones — from anywhere in the world.
+    body: `A Skylight digital photo frame is a Wi-Fi-connected picture frame that displays photos sent to it by family and friends. It sits on a shelf or desk like any picture frame. But it shows a rotating slideshow of photos that loved ones send from their phones — from anywhere in the world.
 
 What makes Skylight popular for seniors is the simplicity: family members send photos by emailing them to the frame's unique email address. That's it. No app to download, no account to create, no steps to follow. You just email a photo and it appears on the frame.
 
@@ -382,11 +382,11 @@ You should also always hang up and call back on the family member's real number,
     difficulty: 'Beginner',
     body: `If your email inbox feels like a flood you can never stop, you're not alone. Most people accumulate dozens of email subscriptions over the years — newsletters, store promotions, app notifications, loyalty program emails — many from things they signed up for once and forgot about.
 
-The difference between unwanted subscriptions and spam is important. Spam is email from sources you've never interacted with — usually illegal to send without consent. Subscriptions are emails from companies you did interact with (made a purchase, created an account, signed a petition), and you agreed — sometimes without realizing it — to receive their emails.
+The difference between unwanted subscriptions and spam is important. Spam is email from sources you've never interacted with — usually illegal to send without consent. Subscriptions are emails from companies you did interact with (made a purchase, created an account, signed a petition). And you agreed — sometimes without realizing it — to receive their emails.
 
 For subscriptions, the right move is to unsubscribe using the link at the bottom of the email. This legally removes you from their list within 10 business days. For true spam (from sources you've never interacted with), don't click anything — mark it as spam so your email provider learns to filter it.
 
-Every commercial email sent to you is legally required to have an "Unsubscribe" or "Manage Preferences" link at the very bottom, in small print. It's often the tiniest text on the page, but it must be there by law (the CAN-SPAM Act in the US). Clicking it removes you from that company's email list.
+Every commercial email sent to you is legally required to have an "Unsubscribe" or "Manage Preferences" link at the very bottom, in small print. It's often the tiniest text on the page. But it must be there by law (the CAN-SPAM Act in the US). Clicking it removes you from that company's email list.
 
 Going through one unsubscribe at a time is tedious but effective. Alternatively, services like Unroll.me or Gmail's built-in filters can help manage subscriptions in bulk. Gmail also has a "Promotions" tab that automatically sorts many marketing emails so they don't clutter your main inbox.
 
@@ -703,7 +703,7 @@ The best habit is a brief pause before sharing anything shocking or outrageous: 
     difficulty: 'Beginner',
     body: `The Apple TV Siri Remote looks simple — just a slim aluminum rectangle — but it works differently from a traditional TV remote. Instead of pressing directional arrow buttons, you swipe on the top portion of the remote like a touchpad. This surprises many first-time Apple TV users.
 
-The top section of the remote is a clickpad — it's a smooth surface you can swipe across to move the highlight on screen, and you can also press it like a physical button. Swipe up, down, left, or right to navigate menus. Click (press firmly in the center) to select. Press the outer ring of the clickpad to go up, down, left, or right without swiping.
+The top section of the remote is a clickpad — it's a smooth surface you can swipe across to move the highlight on screen. And you can also press it like a physical button. Swipe up, down, left, or right to navigate menus. Click (press firmly in the center) to select. Press the outer ring of the clickpad to go up, down, left, or right without swiping.
 
 Along the right side are volume up and volume down buttons. If your TV is connected via HDMI or ARC, these control your TV volume directly — you may not need your TV remote for volume at all.
 

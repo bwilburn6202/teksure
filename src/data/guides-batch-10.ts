@@ -99,7 +99,7 @@ You pick up the car from the owner (or at some airports) and drop it back when y
     difficulty: 'Beginner',
     body: `Rome2Rio is a free site that shows every way to travel between two places — flights, trains, buses, ferries, and driving — side by side with travel time and rough cost. It is especially helpful in Europe or Asia where trains and ferries are common.
 
-It will not book your tickets, but it links out to the airline, train company, or bus line so you can book directly once you pick a route.`,
+It will not book your tickets. But it links out to the airline, train company, or bus line so you can book directly once you pick a route.`,
     steps: [
       { title: 'Open Rome2Rio', content: 'Go to rome2rio.com in any web browser or install the free Rome2Rio app. No sign-up is needed to search.' },
       { title: 'Enter "from" and "to"', content: 'Type any two locations — cities, airports, landmarks, even hotels. Tap Search and Rome2Rio will show every route within seconds.' },

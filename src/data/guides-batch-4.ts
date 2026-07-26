@@ -133,7 +133,7 @@ Another helpful tip: the Settings app (where you control things like Wi-Fi, disp
     thumbnailEmoji: '',
     publishedAt: '2026-04-08',
     difficulty: 'Beginner',
-    body: `Google gives every account 15 gigabytes of free storage — but that storage is shared between Google Photos, Gmail, and Google Drive. If you use Google Photos to back up your pictures and videos automatically, that 15 GB can fill up faster than you expect, especially if you have had the same Google account for several years. When your storage is full, new photos stop backing up, and you may even stop receiving emails.
+    body: `Google gives every account 15 gigabytes of free storage — but that storage is shared between Google Photos, Gmail, and Google Drive. If you use Google Photos to back up your pictures and videos automatically, that 15 GB can fill up faster than you expect, especially if you have had the same Google account for several years. When your storage is full, new photos stop backing up. And you may even stop receiving emails.
 
 To check how much storage you have left, open Google Photos on your phone, tap your profile picture in the top right corner, and tap "Manage storage." This shows you how full your storage is and offers suggestions for freeing up space. The easiest fix is to let Google "clean up" your photos by converting full-quality pictures to "Storage Saver" quality — this slightly reduces image size in a way that is almost invisible to the eye but frees up a lot of space. Google will offer this option in the storage manager.
 
@@ -155,7 +155,7 @@ You can also delete items you do not need: videos take up the most space, so loo
     thumbnailEmoji: '',
     publishedAt: '2026-04-08',
     difficulty: 'Beginner',
-    body: `Netflix updated its rules about sharing accounts with people outside your home. If you used to share your password with a grown child in another city or a close friend, you may have received notices saying that is no longer allowed. This has confused a lot of people, and it is worth understanding exactly what changed so you are not paying for something you do not need — or accidentally locked out of your own account.
+    body: `Netflix updated its rules about sharing accounts with people outside your home. If you used to share your password with a grown child in another city or a close friend, you may have received notices saying that is no longer allowed. This has confused a lot of people. And it is worth understanding exactly what changed so you are not paying for something you do not need — or accidentally locked out of your own account.
 
 Here is how Netflix now defines a "household": everyone who watches Netflix at your primary home address. Your partner, children living with you, and roommates all count as your household. If someone in another home wants their own access, Netflix offers an "Extra Member" add-on on some plans that lets you add one person outside your home for a small monthly fee. To check your plan and see if this option is available to you, go to Netflix.com on a computer, click your profile picture in the top right, click "Account," and look under your plan details.
 
@@ -225,7 +225,7 @@ There is one important thing to know: if you are in a group chat, read receipts 
     thumbnailEmoji: '',
     publishedAt: '2026-04-08',
     difficulty: 'Beginner',
-    body: `If your iPhone has been showing a message that says "iCloud Storage Is Full," it means the free 5 gigabytes Apple gives every account has been used up. When this happens, your phone stops backing itself up to iCloud, your photos may stop syncing, and you might not receive new iMessages on other Apple devices. It sounds alarming, but it is a common and easy problem to fix.
+    body: `If your iPhone has been showing a message that says "iCloud Storage Is Full," it means the free 5 gigabytes Apple gives every account has been used up. When this happens, your phone stops backing itself up to iCloud, your photos may stop syncing. And you might not receive new iMessages on other Apple devices. It sounds alarming, but it is a common and easy problem to fix.
 
 First, check what is using up your storage: Open the Settings app, tap your name at the top, then tap "iCloud." You will see a colorful bar showing what is taking up space — usually backups, photos, and apps are the biggest users. Tap "Manage Account Storage" to see a detailed breakdown. From here you can delete old phone backups (especially from phones you no longer own), turn off iCloud backup for apps you do not care about, and see if there are large files you no longer need.
 
@@ -272,7 +272,7 @@ If you are buying something, watch out for: Prices that seem far too low compare
     thumbnailEmoji: '',
     publishedAt: '2026-04-08',
     difficulty: 'Beginner',
-    body: `Setting up a wireless printer so it can print from any device on your home Wi-Fi network can feel confusing at first, but it usually only takes a few minutes once you know what to do. The goal is to get your printer and your computer on the same Wi-Fi network so they can "talk" to each other without a cable.
+    body: `Setting up a wireless printer so it can print from any device on your home Wi-Fi network can feel confusing at first. But it usually only takes a few minutes once you know what to do. The goal is to get your printer and your computer on the same Wi-Fi network so they can "talk" to each other without a cable.
 
 Step 1: Connect the printer to your Wi-Fi. Most modern printers have a small screen on the front panel. Look for a menu item called "Wireless Setup," "Wi-Fi Setup," or "Network Settings." When you select it, the printer will search for nearby Wi-Fi networks. Find your home network name in the list (this is the same name you use to connect your phone), tap it, and enter your Wi-Fi password. The printer should display a confirmation message when it connects successfully.
 
@@ -323,7 +323,7 @@ If none of those options work — for example, if you no longer have access to y
 
 To cancel on a computer: Go to YouTube.com and sign in. Click your profile picture in the top right corner, then click "Paid Memberships." Find YouTube Premium in the list and click "Manage." Then click "Deactivate" or "Cancel membership" and confirm. On an iPhone: Go to the Settings app (the gray gear icon), tap your name at the top, then tap "Subscriptions." Find YouTube Premium in the list and tap it, then tap "Cancel Subscription."
 
-On an Android phone purchased through Google: Open the Google Play Store app, tap your profile picture in the top right, tap "Payments & subscriptions," then tap "Subscriptions." Find YouTube Premium and tap it, then tap "Cancel subscription." If you signed up through a different service (like your TV provider or Amazon), you will need to cancel through that service instead — look for a charge on your bill to find where it was set up. After canceling, you will still have Premium access until the end of the month you already paid for, and you will not be charged again.`,
+On an Android phone purchased through Google: Open the Google Play Store app, tap your profile picture in the top right, tap "Payments & subscriptions," then tap "Subscriptions." Find YouTube Premium and tap it, then tap "Cancel subscription." If you signed up through a different service (like your TV provider or Amazon), you will need to cancel through that service instead — look for a charge on your bill to find where it was set up. After canceling, you will still have Premium access until the end of the month you already paid for. And you will not be charged again.`,
     steps: [
       { title: 'Cancel on a computer', content: 'Go to YouTube.com → click your profile picture → Paid Memberships → find YouTube Premium → Manage → Deactivate or Cancel membership.' },
       { title: 'Cancel on iPhone', content: 'Settings → tap your name at the top → Subscriptions → YouTube Premium → Cancel Subscription.' },
@@ -341,7 +341,7 @@ On an Android phone purchased through Google: Open the Google Play Store app, ta
     thumbnailEmoji: '',
     publishedAt: '2026-04-08',
     difficulty: 'Beginner',
-    body: `Apple iPhones and Windows computers do not always work together naturally, which leads to a common question: how do I get photos off my iPhone and onto my PC? The good news is there are several easy ways to do this, and you can choose whichever one feels most comfortable.
+    body: `Apple iPhones and Windows computers do not always work together naturally, which leads to a common question: how do I get photos off my iPhone and onto my PC? The good news is there are several easy ways to do this. And you can choose whichever one feels most comfortable.
 
 Method 1 — USB Cable (fastest, no internet needed): Plug your iPhone into your Windows computer using your charging cable. Your iPhone will ask "Trust This Computer?" — tap "Trust." On your PC, open File Explorer (the folder icon on the taskbar), look for your iPhone listed under "This PC" or "Devices and drives," open it, navigate to "Internal Storage" → "DCIM," and then copy and paste the photos you want to your computer's Pictures folder.
 
@@ -458,9 +458,9 @@ Once downloaded, the map works just like the regular Google Maps when you are of
     difficulty: 'Beginner',
     body: `Apple's Screen Time feature lets you set daily limits on how long a child can use specific apps, block adult websites, and prevent them from downloading new apps without your permission. You can set this up on the child's iPhone or iPad, protected by a separate passcode that only you know, so they cannot change the settings themselves. This is built into all iPhones and iPads running iOS 17 or later — no extra app or purchase required.
 
-To set up Screen Time: On the child's device, go to Settings and tap "Screen Time." Tap "Turn On Screen Time," then tap "This is My Child's iPhone." You will be prompted to set up "Downtime" (hours when the phone is locked, like bedtime) and "App Limits" (how many hours per day they can spend in categories like Social Networking, Games, or Entertainment). After setting these up, you will be asked to create a four-digit Screen Time passcode — this is different from the regular phone passcode, and it is the one only you should know.
+To set up Screen Time: On the child's device, go to Settings and tap "Screen Time." Tap "Turn On Screen Time," then tap "This is My Child's iPhone." You will be prompted to set up "Downtime" (hours when the phone is locked, like bedtime) and "App Limits" (how many hours per day they can spend in categories like Social Networking, Games, or Entertainment). After setting these up, you will be asked to create a four-digit Screen Time passcode — this is different from the regular phone passcode. And it is the one only you should know.
 
-Once Screen Time is on, you can also tap "Content & Privacy Restrictions" to turn it on and block inappropriate websites, prevent purchases, and restrict certain apps. Under "Web Content," choose "Limit Adult Websites" to filter out explicit material automatically. If the child's iPhone is linked to your Apple Family Sharing group, you can manage all these settings remotely from your own phone: go to your Settings → Screen Time → your child's name, and you will see their usage reports and can adjust limits from your own device without needing to touch theirs.`,
+Once Screen Time is on, you can also tap "Content & Privacy Restrictions" to turn it on and block inappropriate websites, prevent purchases, and restrict certain apps. Under "Web Content," choose "Limit Adult Websites" to filter out explicit material automatically. If the child's iPhone is linked to your Apple Family Sharing group, you can manage all these settings remotely from your own phone: go to your Settings → Screen Time → your child's name. And you will see their usage reports and can adjust limits from your own device without needing to touch theirs.`,
     steps: [
       { title: `Open Screen Time on the child's iPhone`, content: `Settings → Screen Time → Turn On Screen Time → This is My Child's iPhone.` },
       { title: 'Set Downtime (off hours)', content: 'Choose the hours when the phone is locked — for example, 9 PM to 7 AM on school nights. During Downtime, only apps you allow are accessible.' },
@@ -571,7 +571,7 @@ Scams take many forms: a fake tech support call where you gave someone remote ac
       },
       {
         title: 'Talk to someone — you are not alone',
-        content: 'Being scammed can feel embarrassing or shameful, but it is not your fault. Scammers are professionals who do this full-time. Millions of people fall for scams every year, including lawyers, doctors, and security experts. If you need to talk to someone, the AARP Fraud Watch Network helpline (877-908-3360) is free and staffed by trained volunteers Monday through Friday, 8 AM to 8 PM Eastern. They can walk you through next steps and provide emotional support.',
+        content: 'Being scammed can feel embarrassing or shameful. But it is not your fault. Scammers are professionals who do this full-time. Millions of people fall for scams every year, including lawyers, doctors, and security experts. If you need to talk to someone, the AARP Fraud Watch Network helpline (877-908-3360) is free and staffed by trained volunteers Monday through Friday, 8 AM to 8 PM Eastern. They can walk you through next steps and provide emotional support.',
       },
     ],
   },

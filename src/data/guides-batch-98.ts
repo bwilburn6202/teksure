@@ -101,7 +101,7 @@ The most important thing to have ready before you start: your Apple ID and passw
 
 If you're upgrading from an older iPad, you have an option called Quick Start that makes setup nearly automatic. Hold the two iPads near each other and your old iPad will offer to transfer your settings and apps to the new one. This is the fastest way to get started and is recommended for most people replacing an older device.
 
-If this is your very first iPad, setup takes about 10 to 15 minutes. Apple's setup assistant is clear and step-by-step, and you can always revisit most settings later in the Settings app. Don't feel pressure to get everything perfect on first run.`,
+If this is your very first iPad, setup takes about 10 to 15 minutes. Apple's setup assistant is clear and step-by-step. And you can always revisit most settings later in the Settings app. Don't feel pressure to get everything perfect on first run.`,
     steps: [
       {
         title: `Charge and turn on your iPad`,
@@ -142,7 +142,7 @@ If this is your very first iPad, setup takes about 10 to 15 minutes. Apple's set
     difficulty: `Intermediate`,
     body: `You've probably noticed that after you search for something online or look at a product, ads for that item seem to follow you everywhere — on websites, in apps, and on social media. This is called targeted or personalized advertising, and it's powered by tracking systems that monitor your browsing behavior, your location, and your purchase history.
 
-You can't make all ads disappear, but you can a lot reduce how much tracking happens and stop companies from using your data to build a detailed profile about you. It takes about 15 to 20 minutes to go through these settings across your main devices and accounts, and the effect is noticeable.
+You can't make all ads disappear. But you can a lot reduce how much tracking happens and stop companies from using your data to build a detailed profile about you. It takes about 15 to 20 minutes to go through these settings across your main devices and accounts, and the effect is noticeable.
 
 There are four main places to adjust: your iPhone or Android's advertising settings, your Google account, your Facebook account, and your web browser. Each of these controls a different slice of the tracking ecosystem.
 
@@ -478,7 +478,7 @@ All of these settings can be protected with a Screen Time passcode that's differ
 
 People use hotspots when they don't have Wi-Fi available: at hotels with unreliable connections, in a coffee shop, while traveling, at a family member's house, or during an internet outage at home. Instead of connecting your laptop to a public Wi-Fi network — which can be a security risk — you connect it to your personal hotspot, which is private and controlled by you.
 
-There are a few things to know before using a hotspot. First, hotspots use your phone's cellular data — the same data your phone uses to load websites and apps. If your plan has a data limit, heavy laptop use on the hotspot can use it up quickly (streaming video uses roughly 1 GB per hour). Most modern smartphone plans include hotspot as a feature, but it may be a separate allowance — check with your carrier if you're not sure.
+There are a few things to know before using a hotspot. First, hotspots use your phone's cellular data — the same data your phone uses to load websites and apps. If your plan has a data limit, heavy laptop use on the hotspot can use it up quickly (streaming video uses roughly 1 GB per hour). Most modern smartphone plans include hotspot as a feature. But it may be a separate allowance — check with your carrier if you're not sure.
 
 Second, running a hotspot drains your phone's battery faster than normal use. Plug your phone in if you're going to use the hotspot for more than an hour.
 

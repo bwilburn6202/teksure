@@ -472,7 +472,7 @@ If you already gave a scammer remote access to your computer or made a payment: 
     slug: `lottery-prize-scam`,
     title: `How to Spot Lottery and Prize Scams`,
     excerpt: `You didn't enter a lottery, but you "won" — it's a scam. Here's why, and what to do when it happens to you.`,
-    body: `Lottery and prize scams are among the oldest cons in existence, and they still work because the promise of a windfall is hard to ignore. The letters, emails, and texts look convincing — sometimes with official-looking logos, seals, and legal language. But the core of every one of these scams is the same: you never entered, and you never won.
+    body: `Lottery and prize scams are among the oldest cons in existence. And they still work because the promise of a windfall is hard to ignore. The letters, emails, and texts look convincing — sometimes with official-looking logos, seals, and legal language. But the core of every one of these scams is the same: you never entered, and you never won.
 
 Here is how they work. You receive a notification — by letter, email, text message, or even a phone call — saying you have won a large prize. It might claim to be from a sweepstakes company, a foreign lottery, a television show, or even a well-known brand like Publishers Clearing House (though be aware that scammers impersonate PCH too). The prize might be cash, a car, a vacation, or a check.
 
@@ -523,7 +523,7 @@ What to do if you receive one of these notices: do not pay anything and do not p
 
 The good news is that a handful of consistent habits make a very big difference in staying safe.
 
-Start by protecting your personal information. Do not share your home address, workplace, or daily routine with someone you have not met in person and do not yet know well. Use the in-app messaging system rather than right away sharing your personal phone number — most dating apps have built-in messaging for this reason, and it keeps your number private until you are comfortable sharing it.
+Start by protecting your personal information. Do not share your home address, workplace, or daily routine with someone you have not met in person and do not yet know well. Use the in-app messaging system rather than right away sharing your personal phone number — most dating apps have built-in messaging for this reason. And it keeps your number private until you are comfortable sharing it.
 
 Video calling before meeting someone in person is one of the smartest safety checks you can do. Scammers create fake profiles using stolen photos of attractive strangers. They almost always refuse or avoid video calls because they cannot fake their appearance in real time. If someone is always "too busy" to video call or has constant technical problems, treat that as a serious warning sign.
 
@@ -628,7 +628,7 @@ Mobile or GPS systems work anywhere, not just at home. A small device you carry 
 
 Smartwatch-style systems look like a regular wristwatch and include cellular calling, GPS, and fall detection built in. These are the most discreet option.
 
-Fall detection is an important feature to understand. With fall detection, the device can sense a hard fall automatically and alert the monitoring center — even if you are unable to press the button. This matters because falls often involve head injuries that leave the person disoriented or unconscious. Not all systems include fall detection, and it sometimes adds to the monthly cost.
+Fall detection is an important feature to understand. With fall detection, the device can sense a hard fall automatically and alert the monitoring center — even if you are unable to press the button. This matters because falls often involve head injuries that leave the person disoriented or unconscious. Not all systems include fall detection. And it sometimes adds to the monthly cost.
 
 All systems should be water resistant so they work in the shower — where a significant number of falls occur.
 
@@ -965,7 +965,7 @@ Let a trusted family member know the overall picture of your finances — not ev
     excerpt: `Lotsa Helping Hands organizes meals, rides, and tasks for someone who needs care — family and friends claim tasks so nothing falls through the cracks.`,
     body: `When a friend, neighbor, or family member is going through a health crisis — recovering from surgery, undergoing cancer treatment, adjusting to a new diagnosis — people want to help. The instinct to bring food, offer rides, and handle household tasks is genuine and generous. But when help is disorganized, it creates its own problems: three people show up with dinner on the same night while other nights go uncovered, ride coordination falls on the one person already overwhelmed, and tasks fall through the cracks entirely.
 
-Lotsa Helping Hands (lotsa.com) was built specifically to solve this problem. It is free to use, and it works by organizing your community of helpers around a shared care calendar.
+Lotsa Helping Hands (lotsa.com) was built specifically to solve this problem. It is free to use. And it works by organizing your community of helpers around a shared care calendar.
 
 Here is how it works. One person — usually the primary caregiver or a close family member — creates a free care community on Lotsa Helping Hands. They name the community after the person being helped and invite family, friends, neighbors, and anyone else who has offered to pitch in. The invitation goes out by email with a link to join.
 

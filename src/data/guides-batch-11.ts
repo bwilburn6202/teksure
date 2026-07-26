@@ -61,7 +61,7 @@ Your phone battery also gradually loses capacity as it ages. iPhones show you ex
     difficulty: 'Beginner',
     body: `After installing Microsoft's April 14, 2026 security update (KB5083769), some Windows 11 computers started showing a blue screen asking for something called a "BitLocker recovery key." If this happened to you, your computer is not broken — it is asking for a security code to confirm you are the real owner.
 
-BitLocker is a security feature built into Windows 11 that encrypts (scrambles) everything on your hard drive. If Windows detects an unusual change — like a major security update — it sometimes asks you to prove you are the owner before letting you in. The good news: if your computer was ever connected to a Microsoft account, your recovery key was saved automatically, and you can get it from another device.
+BitLocker is a security feature built into Windows 11 that encrypts (scrambles) everything on your hard drive. If Windows detects an unusual change — like a major security update — it sometimes asks you to prove you are the owner before letting you in. The good news: if your computer was ever connected to a Microsoft account, your recovery key was saved automatically. And you can get it from another device.
 
 Do not panic, and do not pay anyone who calls offering to help. This is a genuine issue Microsoft has acknowledged, and your data is safe. You need to find the key.`,
     steps: [

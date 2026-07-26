@@ -5,7 +5,7 @@ export const guidesBatch165: Guide[] = [
     slug: "how-to-check-app-camera-microphone-permissions",
     title: "How to Check Which Apps Can Access Your Camera and Microphone",
     excerpt: "Learn how to see which apps have permission to use your camera or microphone — and how to turn off access for apps you no longer trust.",
-    body: `Your phone's camera and microphone are powerful tools, but they can also be used by apps without you realizing it. Some apps ask for camera or microphone access for good reasons — like a video calling app or a voice recorder. But other apps may request access even when they have no real need for it.
+    body: `Your phone's camera and microphone are powerful tools. But they can also be used by apps without you realizing it. Some apps ask for camera or microphone access for good reasons — like a video calling app or a voice recorder. But other apps may request access even when they have no real need for it.
 
 Checking your permissions regularly is one of the best things you can do to protect your privacy. This guide walks you through how to review and manage these settings on both iPhone and Android.
 
@@ -13,7 +13,7 @@ Checking your permissions regularly is one of the best things you can do to prot
 
 When you install an app, it may ask for permission to use your camera or microphone. You might tap "Allow" without thinking much about it. Over time, you may have dozens of apps with this access — including apps you rarely use or no longer trust.
 
-An app with camera access can theoretically take photos or scan your surroundings. An app with microphone access could pick up your conversations. Most apps use these permissions for completely normal reasons, but it is still a good idea to check who has access and remove permissions from apps that do not need them.
+An app with camera access can theoretically take photos or scan your surroundings. An app with microphone access could pick up your conversations. Most apps use these permissions for completely normal reasons. But it is still a good idea to check who has access and remove permissions from apps that do not need them.
 
 **On iPhone**
 

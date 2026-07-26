@@ -205,7 +205,7 @@ If you signed in to your phone with a Google account, your contacts are probably
 
 Google Contacts stores your contacts on Google's servers, tied to your email address. When you get a new Android phone and sign in with the same Google account, all your contacts appear automatically. This is the most reliable long-term backup method.
 
-A second option — saving a VCF file — creates a contact backup file stored on your phone itself. This is a useful extra copy, but it does not update automatically. Think of it as a snapshot backup you take periodically. The VCF file can be transferred to a computer or saved to Google Drive for extra protection.
+A second option — saving a VCF file — creates a contact backup file stored on your phone itself. This is a useful extra copy. But it does not update automatically. Think of it as a snapshot backup you take periodically. The VCF file can be transferred to a computer or saved to Google Drive for extra protection.
 
 Many people wait until they buy a new phone to think about contacts backup, and by then it is sometimes too late. Spending five minutes setting this up now means you can always restore your contacts no matter what happens.`,
     steps: [
@@ -289,7 +289,7 @@ Copilot is included for free with Windows 11 and works best with a Microsoft acc
     thumbnailEmoji: '',
     publishedAt: '2026-04-19',
     difficulty: 'Beginner',
-    body: `ChatGPT is an AI assistant made by a company called OpenAI. You type a question or request in plain English, and it responds with a detailed, conversational answer. You do not need any technical knowledge to use it — if you can type a text message, you can use ChatGPT.
+    body: `ChatGPT is an AI assistant made by a company called OpenAI. You type a question or request in plain English. And it responds with a detailed, conversational answer. You do not need any technical knowledge to use it — if you can type a text message, you can use ChatGPT.
 
 The free version of ChatGPT is available at chat.openai.com. You create a free account with your email address and start chatting right away. There is also a ChatGPT app for iPhone and Android.
 
@@ -522,7 +522,7 @@ This guide highlights the most genuinely useful free apps for seniors in 2026, o
     difficulty: 'Beginner',
     body: `Windows 11 moved the Start Menu from the bottom-left corner to the center of the taskbar, and the menu itself looks quite different from Windows 10. Instead of showing all your apps at once, Windows 11's Start Menu shows "Pinned" apps at the top and "Recommended" recent files at the bottom.
 
-Many people find the new Start Menu confusing at first, but it is actually more customizable than Windows 10's version once you know where to look. You can pin your most-used apps to the top section, move the Start button back to the left corner, resize the pinned area, and remove the Recommended section if you find it cluttered.
+Many people find the new Start Menu confusing at first. But it is actually more customizable than Windows 10's version once you know where to look. You can pin your most-used apps to the top section, move the Start button back to the left corner, resize the pinned area, and remove the Recommended section if you find it cluttered.
 
 Pinning apps to the Start Menu is the most important customization. When you pin an app, it shows up on the first screen of the Start Menu — no searching needed. Aim to pin the 6–8 apps you use every day: your email, web browser, news site, weather app, etc.
 
@@ -749,7 +749,7 @@ Siri works when your iPhone is connected to the internet (for complex questions 
     thumbnailEmoji: '',
     publishedAt: '2026-04-19',
     difficulty: 'Beginner',
-    body: `Microsoft Edge is the web browser that comes built into Windows 10 and Windows 11. It replaced Internet Explorer and has been rebuilt from the ground up using the same technology as Google Chrome — meaning most websites work perfectly in Edge. Many people switch to Chrome out of habit, but Edge has several features that Chrome does not offer, and it uses less battery life on laptops.
+    body: `Microsoft Edge is the web browser that comes built into Windows 10 and Windows 11. It replaced Internet Explorer and has been rebuilt from the ground up using the same technology as Google Chrome — meaning most websites work perfectly in Edge. Many people switch to Chrome out of habit, but Edge has several features that Chrome does not offer. And it uses less battery life on laptops.
 
 Edge has a reading mode that strips away ads and distracting elements from article pages, leaving just the text and images. This is one of the most useful features for people who find web pages cluttered or hard to read. Font size, font style, and background color can all be adjusted.
 
@@ -850,7 +850,7 @@ One of the most useful Outlook features for managing email volume is the "Focuse
 
 Email folders help keep your inbox manageable over time. Unlike just deleting emails, saving important messages to a named folder means you can search for them later. Good folder names to start with: Family, Medical, Financial, Home, Receipts.
 
-The "Recall This Message" feature is a lifesaver if you send an email to the wrong person or realize right away after sending that you made a mistake. It works only if the recipient has not yet opened the email, and only within the same organization (Outlook to Outlook). For personal email, it may not always work, but it is worth trying in an emergency.`,
+The "Recall This Message" feature is a lifesaver if you send an email to the wrong person or realize right away after sending that you made a mistake. It works only if the recipient has not yet opened the email, and only within the same organization (Outlook to Outlook). For personal email, it may not always work. But it is worth trying in an emergency.`,
     steps: [
       {
         title: 'Enable Focused Inbox',

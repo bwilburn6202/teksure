@@ -231,7 +231,7 @@ Go to the company's official website (your electricity provider, cable company, 
 
 **Step 3 — Find "Autopay," "Automatic Payments," or "Payment Settings"**
 
-These labels differ by company, but you will generally find them in "Billing," "Account Settings," or "Payment Center." Look for a button or link that includes the word "automatic."
+These labels differ by company. But you will generally find them in "Billing," "Account Settings," or "Payment Center." Look for a button or link that includes the word "automatic."
 
 **Step 4 — Add your payment method**
 

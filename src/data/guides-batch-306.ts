@@ -65,7 +65,7 @@ export const guidesBatch306: Guide[] = [
       },
       {
         title: "Consider a puppy or kitten only with a documented succession plan",
-        content: "Adopting a young animal at age 70 or older is not wrong, but it requires a clear written plan for who takes the pet if the adopter dies or moves to assisted living. The plan must be written, signed, and shared with the named caregiver in advance. A guide on succession planning in the next file in this batch covers the legal details. Without a plan, a young pet faces a return to a shelter at a vulnerable age. Many shelters will ask about the succession plan during the adoption interview.",
+        content: "Adopting a young animal at age 70 or older is not wrong. But it requires a clear written plan for who takes the pet if the adopter dies or moves to assisted living. The plan must be written, signed, and shared with the named caregiver in advance. A guide on succession planning in the next file in this batch covers the legal details. Without a plan, a young pet faces a return to a shelter at a vulnerable age. Many shelters will ask about the succession plan during the adoption interview.",
         warning: "Important: A verbal promise from a grown child that they will take the pet is not enough. The child must have met the pet, agreed in writing, and confirmed the pet is welcome in their home.",
       },
       {

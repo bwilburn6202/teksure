@@ -379,7 +379,7 @@ This guide walks through unboxing, mounting, connecting to WiFi, and the four no
     publishedAt: '2026-07-25',
     lastVerifiedAt: '2026-07-25',
     difficulty: 'Beginner',
-    body: `Zelle is the instant-transfer service built into most US bank apps. It moves money in seconds and cannot be canceled or reversed once sent. That speed is the appeal, and it is also why Zelle is the #1 scam channel of 2025-2026 according to the CFPB.
+    body: `Zelle is the instant-transfer service built into most US bank apps. It moves money in seconds and cannot be canceled or reversed once sent. That speed is the appeal. And it is also why Zelle is the #1 scam channel of 2025-2026 according to the CFPB.
 
 For years, banks refused to refund Zelle scams by pointing to fine print that said "you authorized the transfer." In June 2024, after Senate hearings and a CFPB lawsuit, the biggest banks (Bank of America, JPMorgan Chase, Wells Fargo, Truist, USAA, and Capital One) agreed to reimburse victims of "impostor scams" where someone posed as the bank, the government, or a company you trust. In 2025 that policy expanded to include some vendor-impersonation scams.
 

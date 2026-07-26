@@ -24,7 +24,7 @@ The iPhone SE is Apple's most affordable new iPhone. It has the same processor a
 If you prefer a larger screen and longer battery life, the iPhone 16 offers an excellent camera, clear display, and Apple's signature simplicity. The iPhone interface has not changed dramatically in years, making it easy to get help from family who use iPhones. Prices start around $799.
 
 **Google Pixel 9a — Best Android for seniors**
-The Pixel 9a runs "stock" Android (Google's own clean version, without extra clutter added by manufacturers). The camera is excellent, call quality is very clear, and it includes Google's live phone call screening feature — which screens suspected spam calls automatically. Starting at around $499.
+The Pixel 9a runs "stock" Android (Google's own clean version, without extra clutter added by manufacturers). The camera is excellent, call quality is very clear. And it includes Google's live phone call screening feature — which screens suspected spam calls automatically. Starting at around $499.
 
 **Jitterbug Flip2 (by Lively) — Best for simplicity**
 If you primarily want to make phone calls and send texts, the Jitterbug Flip2 is a flip phone with a large keypad, a bright screen, and a dedicated urgent response button. It does not run apps the way an iPhone does, so it is a better fit for someone who does not want a full smartphone. The monthly plan costs extra through Lively.
@@ -117,7 +117,7 @@ At around $140-$200, the Fire HD 10 is dramatically less expensive than an iPad.
     body: `A laptop is a full-sized portable computer. For most seniors who use a computer primarily to browse the web, check email, do video calls, manage photos, and handle basic documents, two categories stand out: Chromebooks and Windows laptops.
 
 **Chromebooks — Best for simplicity and price**
-A Chromebook is a laptop that runs Google's Chrome OS instead of Windows. It looks and feels like a regular laptop, but it is designed to run mostly through the internet browser (called Chrome). Because it does less locally and runs a simpler system, Chromebooks are fast, virus-resistant, rarely need updating, and cost a lot less — often $200-$400.
+A Chromebook is a laptop that runs Google's Chrome OS instead of Windows. It looks and feels like a regular laptop. But it is designed to run mostly through the internet browser (called Chrome). Because it does less locally and runs a simpler system, Chromebooks are fast, virus-resistant, rarely need updating, and cost a lot less — often $200-$400.
 
 Chromebooks are ideal if you: browse the web, use Gmail and Google Docs, do video calls on Google Meet or Zoom, stream YouTube or Netflix, and do not need to run specialized software like tax programs installed from a disc.
 
@@ -168,7 +168,7 @@ For seniors, Windows 11 is the current version. Look for: at least 8 GB of RAM (
     difficulty: 'Beginner',
     body: `A medical alert system lets you press a button and right away connect with an emergency monitoring center that can send help. They are most commonly used by people who live alone, have a history of falls, or have medical conditions that could require sudden help.
 
-Life Alert is the most well-known brand (famous for the "Help, I've fallen and I can't get up" advertising), but there are many competitors with more modern features, more flexibility, and lower prices.
+Life Alert is the most well-known brand (famous for the "Help, I've fallen and I can't get up" advertising). But there are many competitors with more modern features, more flexibility, and lower prices.
 
 **Medical Guardian — Best overall**
 Medical Guardian offers home systems and GPS pendants. Their Classic Guardian system starts around $30/month with no long-term contract. The pendant has fall detection (automatically calls for help if it senses a fall, even if you cannot press the button), two-way voice communication, and 24/7 monitoring.
@@ -396,7 +396,7 @@ Galaxy Watch 6 (~$270-$330) works best with Samsung Galaxy phones. It offers hea
       {
         title: 'Consider battery life for your lifestyle',
         content: 'Apple Watch typically needs charging every night (like a phone). Fitbit lasts 4-6 days on a charge. If remembering to charge daily is a concern, Fitbit\'s longer battery life is an advantage. Some medical alert devices (separate from smartwatches) are designed to be charged once a week.',
-        tip: 'Quick Tip: Many people charge their Apple Watch on the nightstand while sleeping — it is usually at 100% by morning, and you wear it all day.',
+        tip: 'Quick Tip: Many people charge their Apple Watch on the nightstand while sleeping — it is usually at 100% by morning. And you wear it all day.',
       },
       {
         title: 'Try the watch on in a store',
@@ -577,7 +577,7 @@ This solves one of the biggest security problems most people face: reusing the s
 Bitwarden's free plan is genuinely full-featured and has no meaningful limitations for individual users. It is open-source (meaning security experts worldwide can and do inspect its code), works across all devices and browsers, and has an excellent reputation. Premium is $10/year and adds a few extras like an authenticator code generator. Bitwarden is the recommendation for most people.
 
 **1Password — Best for ease of use**
-1Password costs $3/month ($36/year) and is widely considered the most polished and easiest to use password manager. The interface is clear, setup guidance is thorough, and it works across iPhone, iPad, Mac, Windows, and Android. Family plans are $5/month and cover up to 5 people.
+1Password costs $3/month ($36/year) and is widely considered the most polished and easiest to use password manager. The interface is clear, setup guidance is thorough. And it works across iPhone, iPad, Mac, Windows, and Android. Family plans are $5/month and cover up to 5 people.
 
 **LastPass — Use with caution**
 LastPass was a popular recommendation for years, but suffered significant data breaches in 2022 where encrypted password vaults were stolen. While passwords were encrypted, this shook confidence in the service. LastPass has made improvements, but Bitwarden and 1Password are currently more trusted options.

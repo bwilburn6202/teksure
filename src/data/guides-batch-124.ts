@@ -351,7 +351,7 @@ The process for all major email providers follows the same general path: click "
     thumbnailEmoji: '🐢',
     publishedAt: '2026-05-03',
     difficulty: 'Beginner',
-    body: `A phone that used to feel fast but now feels sluggish is experiencing one of the most common issues in mobile technology. The good news: this is usually fixable without spending any money, and you do not need to buy a new phone.
+    body: `A phone that used to feel fast but now feels sluggish is experiencing one of the most common issues in mobile technology. The good news: this is usually fixable without spending any money. And you do not need to buy a new phone.
 
 Phones slow down for a few main reasons. First, storage fills up. When a phone has less than 10–15% of its storage free, it slows down noticeably because it has no room to do its temporary work. Second, apps accumulate in the background and keep using memory and processing power even when you are not actively using them. Third, an outdated operating system can cause poor performance because it is not optimized for current apps.
 
@@ -585,7 +585,7 @@ The fix is almost always to forget the old connection on both sides and pair fre
     difficulty: 'Beginner',
     body: `When a YouTube video keeps stopping to buffer — that spinning circle or progress bar — it usually means one thing: the internet connection is not fast enough to deliver the video at the quality level you have selected. The fix is usually to lower the video quality, move closer to your router, or reduce how many things are using the internet at the same time.
 
-YouTube automatically adjusts video quality based on your connection speed, but it doesn't always get it right. Manually setting a lower quality takes 30 seconds and usually solves the problem right away.
+YouTube automatically adjusts video quality based on your connection speed. But it doesn't always get it right. Manually setting a lower quality takes 30 seconds and usually solves the problem right away.
 
 High-definition video (1080p or 4K) requires a much faster internet connection than standard-definition video (360p or 480p). If your internet connection is slow or inconsistent, lower-quality video plays much more smoothly than high-quality video that constantly pauses.`,
     steps: [

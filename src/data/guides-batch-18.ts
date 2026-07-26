@@ -51,7 +51,7 @@ export const guidesBatch18: Guide[] = [
     thumbnailEmoji: '↩',
     publishedAt: '2026-04-19',
     difficulty: 'Beginner',
-    body: `We have all done it — sent an email too soon, to the wrong person, with a typo, or missing an attachment. Most email services give you a brief window to "undo" or "recall" the send before it truly leaves your outbox.\n\nGmail, Outlook, and Apple Mail all offer this feature, but it works differently in each. Gmail and Apple Mail delay the actual send by a few seconds, giving you time to cancel it. Outlook has a "Recall" feature that tries to delete the message from the recipient's inbox — though this only works in certain conditions.\n\nThis guide shows you how to enable and use "Undo Send" in all three services.`,
+    body: `We have all done it — sent an email too soon, to the wrong person, with a typo, or missing an attachment. Most email services give you a brief window to "undo" or "recall" the send before it truly leaves your outbox.\n\nGmail, Outlook, and Apple Mail all offer this feature. But it works differently in each. Gmail and Apple Mail delay the actual send by a few seconds, giving you time to cancel it. Outlook has a "Recall" feature that tries to delete the message from the recipient's inbox — though this only works in certain conditions.\n\nThis guide shows you how to enable and use "Undo Send" in all three services.`,
     steps: [
       {
         title: 'Enable Undo Send in Gmail (and set the window longer)',
@@ -164,7 +164,7 @@ export const guidesBatch18: Guide[] = [
       {
         title: 'Start an Apple Fitness+ subscription',
         content: "On your iPhone, open the Fitness app → tap \"Fitness+\" → \"Try Fitness+ Free.\" You get a free trial (typically 1-3 months for new subscribers), then $9.99/month. Alternatively, Apple Fitness+ is included in Apple One, the bundle that combines Apple services (Music, TV+, Arcade, iCloud+, and Fitness+) at a combined price. To check if you already have Fitness+ through Apple One: Settings → your name → Subscriptions.",
-        tip: "Quick Tip: You do not need an Apple Watch to browse and watch Fitness+ videos, but you need one to see your real-time metrics on screen. Without a watch, you can still follow along — you just won't see your heart rate and calories overlaid on the video.",
+        tip: "Quick Tip: You do not need an Apple Watch to browse and watch Fitness+ videos. But you need one to see your real-time metrics on screen. Without a watch, you can still follow along — you just won't see your heart rate and calories overlaid on the video.",
       },
       {
         title: 'Find beginner and senior-friendly classes',
@@ -412,7 +412,7 @@ export const guidesBatch18: Guide[] = [
       },
       {
         title: 'Set a default navigation app for maps',
-        content: "When someone texts you an address, tapping it should open your preferred navigation app — Google Maps, Apple Maps, or Waze. On Android: go to Settings → Apps → Default apps → and set your map app. On iPhone: Apple Maps is the default, but you can change it — go to Settings → scroll to find Google Maps or Waze → tap \"Default navigation app\" (available on iOS 18 and later) → select your preferred app.",
+        content: "When someone texts you an address, tapping it should open your preferred navigation app — Google Maps, Apple Maps, or Waze. On Android: go to Settings → Apps → Default apps → and set your map app. On iPhone: Apple Maps is the default. But you can change it — go to Settings → scroll to find Google Maps or Waze → tap \"Default navigation app\" (available on iOS 18 and later) → select your preferred app.",
       },
     ],
   },

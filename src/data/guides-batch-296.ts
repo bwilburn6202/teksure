@@ -61,7 +61,7 @@ export const guidesBatch296: Guide[] = [
       },
       {
         title: "Module two: communication and active listening",
-        content: "This module is where most volunteers feel the deepest growth. Trainers run role-play exercises in pairs. One person plays a patient who says something hard, such as I am ready to die or I am scared. The other person practices responses that do not fix, do not minimize, and do not redirect. Phrases the training teaches include That sounds heavy, would you like to tell me more, and It is alright to be quiet together. Volunteers also learn what not to say: at least, everything happens for a reason, and time heals. These phrases shut down the patient and add hurt to grief.",
+        content: "This module is where most volunteers feel the deepest growth. Trainers run role-play exercises in pairs. One person plays a patient who says something hard, such as I am ready to die or I am scared. The other person practices responses that do not fix, do not minimize, and do not redirect. Phrases the training teaches include That sounds heavy, would you like to tell me more. And It is alright to be quiet together. Volunteers also learn what not to say: at least, everything happens for a reason, and time heals. These phrases shut down the patient and add hurt to grief.",
         warning: "Important: Religious or spiritual statements that the volunteer believes personally may not match the patient beliefs. The training teaches a neutral phrase such as Would you like to talk with a chaplain, our hospice has one on call.",
       },
       {

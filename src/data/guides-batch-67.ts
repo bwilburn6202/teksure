@@ -166,7 +166,7 @@ To install an app, press the Home button and navigate to the Apps section — it
 
 To put a favorite app on the home bar for quicker access, open the app from the Apps grid, press and hold the OK button, and choose Add to Home. From there you can also rearrange the order of apps on the home screen bar to match how often you use them.
 
-To remove an app, go back to the Apps section, find the app, press and hold OK, and select Delete. Built-in apps (pre-installed by Samsung) cannot be deleted, but you can move them further down the list.
+To remove an app, go back to the Apps section, find the app, press and hold OK, and select Delete. Built-in apps (pre-installed by Samsung) cannot be deleted. But you can move them further down the list.
 
 Samsung TVs update apps automatically in the background. If you ever notice an app behaving oddly, go to Settings > Support > Self Diagnosis > Reset Smart Hub. This resets your app data without deleting downloaded apps, and often fixes glitches.
 
@@ -311,7 +311,7 @@ For offline use, the mobile app lets you download individual videos to watch wit
 
 The breadth of courses is impressive: data science, computer programming, business strategy, digital marketing, graphic design, psychology, English writing, machine learning, cloud computing, public health, and much more. New courses are added regularly.
 
-Many courses on Coursera can be audited for free. Auditing means you can watch all the video lectures and read the materials at no cost, but you won't receive a certificate of completion and you can't submit graded assignments for feedback. If you want the certificate — which you can display on LinkedIn or share with employers — you pay for the course, usually between $49 and $99.
+Many courses on Coursera can be audited for free. Auditing means you can watch all the video lectures and read the materials at no cost. But you won't receive a certificate of completion and you can't submit graded assignments for feedback. If you want the certificate — which you can display on LinkedIn or share with employers — you pay for the course, usually between $49 and $99.
 
 Coursera Plus is a subscription that gives unlimited access to most courses for $59 per month or $399 per year. If you plan to take several courses in a year, the annual subscription usually works out cheaper than paying for each individually.
 
@@ -365,7 +365,7 @@ The library covers more than 6,500 titles across categories including business a
 
 When you open a book summary in Blinkist, you see a list of the individual Blinks — each one covers a single key insight from the book. You can read them as text or tap the audio button to listen while walking, driving, or doing chores. The audio is professionally narrated, not computer-generated. You can highlight passages, make notes, and save books to your library for later.
 
-Blinkist offers a 7-day free trial so you can explore the full catalog before paying. After the trial, a subscription runs about $13 per month or $100 per year. There is a very limited free tier, but it only offers one summary per day. For most people, the paid subscription is needed for regular use.
+Blinkist offers a 7-day free trial so you can explore the full catalog before paying. After the trial, a subscription runs about $13 per month or $100 per year. There is a very limited free tier. But it only offers one summary per day. For most people, the paid subscription is needed for regular use.
 
 Blinkist Connect lets you share one subscription with a partner or family member, which cuts the per-person cost in half.
 
@@ -416,7 +416,7 @@ The Color panel lets you adjust the color temperature (making a photo warmer or 
 
 The Detail panel adds Sharpening to make edges crisper and Noise Reduction to smooth out graininess in photos taken in low light.
 
-Presets are one-tap styles — like Instagram filters, but adjustable. Lightroom comes with a good set of free presets, and you can download thousands more online. Apply a preset and then tweak individual sliders to match your vision.
+Presets are one-tap styles — like Instagram filters, but adjustable. Lightroom comes with a good set of free presets. And you can download thousands more online. Apply a preset and then tweak individual sliders to match your vision.
 
 After editing, tap the Share icon and choose Export to save the full-resolution edited photo back to your camera roll. You can also sync edits across all your devices if you sign into the same Adobe account on desktop.
 
@@ -806,7 +806,7 @@ When you've saved the collage, share it by text message, email, or post it on so
     slug: `snapfish-guide`,
     title: `How to Print Photos with Snapfish`,
     excerpt: `Snapfish turns your phone photos into prints, photo books, mugs, and more — delivered to your door at affordable prices.`,
-    body: `Snapfish is an online photo printing service that has been around for decades, and it remains one of the most affordable and straightforward ways to turn your digital photos into physical prints and personalized gifts. You can order from the Snapfish website on a computer or through the free mobile app on your iPhone or Android.
+    body: `Snapfish is an online photo printing service that has been around for decades. And it remains one of the most affordable and straightforward ways to turn your digital photos into physical prints and personalized gifts. You can order from the Snapfish website on a computer or through the free mobile app on your iPhone or Android.
 
 Creating an account on Snapfish is free, and storing your photos there is also free — Snapfish offers unlimited photo storage, which makes it a useful backup option as well as a place to order from.
 
@@ -822,7 +822,7 @@ For paper finish, glossy is the standard choice and looks vibrant. Matte has les
 
 Shipping typically takes 7 to 10 business days for standard delivery, with faster options available for a higher fee. Some products can be shipped directly to the gift recipient with a personalized note.
 
-Snapfish stores all the photos you upload, and you can re-order the same photos or products at any time without re-uploading.`,
+Snapfish stores all the photos you upload. And you can re-order the same photos or products at any time without re-uploading.`,
     category: `app-guides`,
     tags: [`snapfish`, `photo prints`, `photo book`, `printing`, `gifts`],
     thumbnailEmoji: ``,

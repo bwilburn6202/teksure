@@ -212,7 +212,7 @@ Assistive Access is not permanent — you can exit it at any time using the pass
     thumbnailEmoji: ``,
     publishedAt: `2026-04-20`,
     difficulty: `Beginner`,
-    body: `Sound Recognition is a feature on iPhone that listens for specific important sounds in your environment and sends you a notification so you do not miss them. It was designed for people who are deaf or hard of hearing, but it is useful for anyone who wears headphones, works in a noisy environment, or wants an extra layer of home safety awareness.
+    body: `Sound Recognition is a feature on iPhone that listens for specific important sounds in your environment and sends you a notification so you do not miss them. It was designed for people who are deaf or hard of hearing. But it is useful for anyone who wears headphones, works in a noisy environment, or wants an extra layer of home safety awareness.
 
 When your iPhone detects one of the sounds you have turned on, a notification appears on your screen with the name of the sound and a visual indicator. If your iPhone is connected to an Apple Watch, the watch will also tap your wrist with a notification.
 
@@ -343,7 +343,7 @@ Family Link works on Android phones and tablets, as well as Chromebooks when the
       },
       {
         title: `See your child's location`,
-        content: `Tap your child's name in Family Link, then tap "Location." If location sharing is on and the child's phone has a signal, you will see their current approximate location on a map. This uses GPS when available and cell tower location otherwise. You can also tap "Locate" for a fresh update. Location is approximate, not exact to the foot, but it is accurate enough for general awareness.`,
+        content: `Tap your child's name in Family Link, then tap "Location." If location sharing is on and the child's phone has a signal, you will see their current approximate location on a map. This uses GPS when available and cell tower location otherwise. You can also tap "Locate" for a fresh update. Location is approximate, not exact to the foot. But it is accurate enough for general awareness.`,
         tip: `Quick Tip: Talk openly with your child about the fact that you can see their location. Transparency about monitoring builds more trust than discovering it unexpectedly.`,
       },
       {
@@ -362,7 +362,7 @@ Family Link works on Android phones and tablets, as well as Chromebooks when the
     thumbnailEmoji: ``,
     publishedAt: `2026-04-20`,
     difficulty: `Beginner`,
-    body: `The Amazon Kindle Fire Kids tablet (sometimes called Fire HD Kids) is a version of Amazon's standard Fire tablet sold specifically for children. It comes in a kid-proof case with a guaranteed two-year warranty (if it breaks for any reason, Amazon will replace it), and it includes a one-year subscription to Amazon Kids+, which is a curated library of books, educational apps, videos, and games appropriate for children.
+    body: `The Amazon Kindle Fire Kids tablet (sometimes called Fire HD Kids) is a version of Amazon's standard Fire tablet sold specifically for children. It comes in a kid-proof case with a guaranteed two-year warranty (if it breaks for any reason, Amazon will replace it). And it includes a one-year subscription to Amazon Kids+, which is a curated library of books, educational apps, videos, and games appropriate for children.
 
 Setting up the tablet involves creating a child profile, linking it to the Amazon Kids+ subscription, and configuring parental controls through the Amazon Parent Dashboard — a website (or app) where parents can manage everything from a browser or their own phone.
 
@@ -661,7 +661,7 @@ If your school uses both Teams and another system like Canvas or Schoology, Team
 
 You access Canvas through your school's Canvas website — usually something like yourschool.instructure.com — using the username and password provided by your school. Many schools also support logging in with your Google or Microsoft school account.
 
-Canvas works in any modern web browser on a computer, and there is also a Canvas Student app for iPhone and Android that lets you check assignments and grades on your phone. The mobile app is convenient for quick checks, but using the full website on a computer is better for reading course documents and submitting assignments.
+Canvas works in any modern web browser on a computer. And there is also a Canvas Student app for iPhone and Android that lets you check assignments and grades on your phone. The mobile app is convenient for quick checks, but using the full website on a computer is better for reading course documents and submitting assignments.
 
 Every course in Canvas has its own structure set up by the professor. Some professors organize content by week (Week 1, Week 2), others by topic or chapter, and others use a simple list. There is no single "right" layout — your professor decides what works best for their class. The Modules section is usually the most important place to start, as it shows all required readings, videos, and assignments in order.
 
@@ -709,7 +709,7 @@ Canvas also has a built-in inbox for messaging your instructor directly, a calen
     difficulty: `Beginner`,
     body: `Wolfram Alpha is a website that works very differently from a search engine. Instead of returning links to websites, it computes answers directly — using mathematics, data, and science. You type a question or equation, and Wolfram Alpha calculates the answer and shows you how it got there.
 
-For students, Wolfram Alpha is especially useful for math and science. You can type in an algebra equation and it will solve for the unknown variable and show each step. You can graph a function. You can calculate statistics from a data set. You can balance a chemistry equation. You can convert units. You can even ask it questions about dates, geography, and statistics, and it will compute an answer from its data.
+For students, Wolfram Alpha is especially useful for math and science. You can type in an algebra equation and it will solve for the unknown variable and show each step. You can graph a function. You can calculate statistics from a data set. You can balance a chemistry equation. You can convert units. You can even ask it questions about dates, geography, and statistics. And it will compute an answer from its data.
 
 The free version of Wolfram Alpha at wolframalpha.com shows answers and usually one or two steps of the solution process. The Wolfram Alpha Pro subscription (paid) gives you all the steps for most problems, which is the most valuable feature for learning — not just getting the answer, but understanding how to arrive at it.
 
@@ -964,7 +964,7 @@ These features have collectively saved Pixel users thousands of hours by filteri
       {
         title: `Receive an unknown call and tap Screen Call`,
         content: `When your Pixel phone rings with an unknown, unrecognized, or "Spam Likely" number, your screen will show three buttons: the green Accept button, the red Decline button, and a gray "Screen call" button. Tap "Screen call." Your phone will not ring again — instead, Google Assistant picks up and says "Hi, the person you are calling is using a screening service. Please state your name and reason for calling after the tone."`,
-        tip: `Quick Tip: Do not worry about missing real callers. Legitimate callers — your doctor, your child's school, a business — will leave their name and reason, and you will see it in the transcript and have a chance to accept.`,
+        tip: `Quick Tip: Do not worry about missing real callers. Legitimate callers — your doctor, your child's school, a business — will leave their name and reason. And you will see it in the transcript and have a chance to accept.`,
       },
       {
         title: `Read the live transcript`,
@@ -977,12 +977,12 @@ These features have collectively saved Pixel users thousands of hours by filteri
       },
       {
         title: `Set up automatic screening for suspected spam`,
-        content: `You can configure Call Screen to automatically screen calls marked as "Spam Likely" without you having to tap anything. Open the Phone app, tap the three-dot menu in the upper right, and go to Settings → Spam and Call Screen → Call Screen. Turn on "Automatically screen calls from suspected spam numbers." These calls will be screened automatically, and you will get a notification showing the transcript only if the caller says something — robocalls that hang up right away will be silently declined.`,
+        content: `You can configure Call Screen to automatically screen calls marked as "Spam Likely" without you having to tap anything. Open the Phone app, tap the three-dot menu in the upper right, and go to Settings → Spam and Call Screen → Call Screen. Turn on "Automatically screen calls from suspected spam numbers." These calls will be screened automatically. And you will get a notification showing the transcript only if the caller says something — robocalls that hang up right away will be silently declined.`,
         tip: `Quick Tip: You can also enable automatic screening for calls from numbers not in your contacts. This is a stronger filter that screens any number you have not saved, not just flagged spam numbers. It is useful if you get many unknown calls.`,
       },
       {
         title: `Use Hold For Me when you call a business`,
-        content: `When you call a customer service line and hear "Your wait time is about 20 minutes," tap the "Hold for Me" button that appears in the call screen on your Pixel. Your phone will listen to the hold music. You can put the phone down and do other things. When a human agent comes on the line, your phone vibrates and plays a chime, and you see "An agent may be available" on screen. Tap "I'm here" and the agent will hear you respond.`,
+        content: `When you call a customer service line and hear "Your wait time is about 20 minutes," tap the "Hold for Me" button that appears in the call screen on your Pixel. Your phone will listen to the hold music. You can put the phone down and do other things. When a human agent comes on the line, your phone vibrates and plays a chime. And you see "An agent may be available" on screen. Tap "I'm here" and the agent will hear you respond.`,
       },
       {
         title: `Review your Call Screen history`,

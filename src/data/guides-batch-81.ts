@@ -64,11 +64,11 @@ The app is free to download and the basic account features cost nothing. Some ad
     thumbnailEmoji: ``,
     publishedAt: `2026-04-20`,
     difficulty: `Intermediate`,
-    body: `Planning a road trip in an electric vehicle is different from planning one in a gas car, but it is very manageable once you understand a few key ideas. The main difference is that instead of stopping at any gas station along the highway, you plan your charging stops in advance — and those stops can take anywhere from 20 minutes to an hour depending on the charger type.
+    body: `Planning a road trip in an electric vehicle is different from planning one in a gas car. But it is very manageable once you understand a few key ideas. The main difference is that instead of stopping at any gas station along the highway, you plan your charging stops in advance — and those stops can take anywhere from 20 minutes to an hour depending on the charger type.
 
 The most important concept to understand is charging levels. Level 1 charging uses a regular household outlet and adds only about 3 to 5 miles of range per hour — this is too slow for road trips. Level 2 charging uses a 240-volt outlet (like the kind used for a dryer) and adds about 15 to 30 miles per hour — this works well overnight at a hotel. DC Fast Charging (also called Level 3, CCS, CHAdeMO, or Supercharging for Teslas) adds 100 to 200 miles in 20 to 30 minutes — this is what you use on a road trip.
 
-For trip planning, two apps stand out. A Better Routeplanner (ABRP) is widely considered the best free tool for EV road trips. You enter your car model, your starting charge level, and your destination, and it calculates exactly where to stop and for how long, accounting for hills, weather, and highway speeds. The Tesla built-in navigation does this automatically for Tesla owners, routing you through Supercharger stations.
+For trip planning, two apps stand out. A Better Routeplanner (ABRP) is widely considered the best free tool for EV road trips. You enter your car model, your starting charge level, and your destination. And it calculates exactly where to stop and for how long, accounting for hills, weather, and highway speeds. The Tesla built-in navigation does this automatically for Tesla owners, routing you through Supercharger stations.
 
 PlugShare is a companion app that shows you real user check-ins at charging stations — so you can see whether a specific charger is working today, how long people waited, and whether there are nearby restaurants or restrooms to visit during your charge.
 
@@ -209,7 +209,7 @@ ChargePoint stations are mostly Level 2, which adds roughly 15 to 30 miles of ra
     thumbnailEmoji: ``,
     publishedAt: `2026-04-20`,
     difficulty: `Beginner`,
-    body: `Audiomack is a free music streaming platform that gives you access to millions of songs, albums, mixtapes, and playlists — with no monthly subscription fee. It is particularly popular for hip-hop, R&B, Afrobeats, reggae, and gospel music, and it is one of the best places to discover independent artists who are not yet on mainstream platforms.
+    body: `Audiomack is a free music streaming platform that gives you access to millions of songs, albums, mixtapes, and playlists — with no monthly subscription fee. It is particularly popular for hip-hop, R&B, Afrobeats, reggae, and gospel music. And it is one of the best places to discover independent artists who are not yet on mainstream platforms.
 
 Unlike Spotify or Apple Music, Audiomack does not require a credit card or paid plan to listen. You can create a free account or browse without signing in at all. The free tier includes all the music with occasional audio ads — similar to the free version of Spotify. There is an optional paid tier called Audiomack Premium that removes ads and lets you download music for offline listening, but many people find the free version completely enough.
 
@@ -361,7 +361,7 @@ Tidal also offers a free trial period — usually 30 days — so you can test th
     steps: [
       {
         title: `Sign up for a Tidal account`,
-        content: `Go to tidal.com in your web browser or download the Tidal app from the App Store or Google Play Store. Tap "Start Free Trial" and choose your subscription tier — the standard HiFi plan at $10.99 per month includes lossless audio. Enter your email address, create a password, and add your payment method. You will not be charged until the trial period ends, and you can cancel before then if you choose.`,
+        content: `Go to tidal.com in your web browser or download the Tidal app from the App Store or Google Play Store. Tap "Start Free Trial" and choose your subscription tier — the standard HiFi plan at $10.99 per month includes lossless audio. Enter your email address, create a password, and add your payment method. You will not be charged until the trial period ends. And you can cancel before then if you choose.`,
         tip: `Tidal offers a student discount and a family plan that covers up to five accounts at a reduced total cost. Check tidal.com/store for current pricing options.`,
       },
       {
@@ -406,7 +406,7 @@ AirPods Pro also support Personalized Spatial Audio, which maps the shape of you
 
 The stem of each AirPod Pro responds to a squeeze gesture. A single squeeze pauses or plays music. A double squeeze skips to the next track. A triple squeeze goes back to the previous track. You can also squeeze and hold to cycle through listening modes. These gestures work even with gloves on, making them useful in cold weather.
 
-AirPods Pro pair with any iPhone, iPad, Mac, or Apple Watch signed in to the same Apple ID, and they switch between devices automatically as you move between them.`,
+AirPods Pro pair with any iPhone, iPad, Mac, or Apple Watch signed in to the same Apple ID. And they switch between devices automatically as you move between them.`,
     steps: [
       {
         title: `Pair your AirPods Pro with your iPhone`,
@@ -450,7 +450,7 @@ The headphones also include a feature called Speak-to-Chat. When the headphones 
 
 The Sony Headphones Connect app (free, available for iPhone and Android) unlocks additional features: a customizable equalizer, the ability to adjust noise cancellation level manually, DSEE Extreme audio upscaling (which enhances compressed streaming audio), and the ability to create location-based rules. For example, you can set the headphones to automatically switch to ambient sound mode when you are at a specific address like your gym or workplace.
 
-Battery life on the WH-1000XM5 is excellent. A full charge lasts about 30 hours with noise cancellation active. A 3-minute quick charge gives you about 3 hours of listening. The headphones charge via USB-C, and they can also be used with the included 3.5mm audio cable when the battery is completely dead.
+Battery life on the WH-1000XM5 is excellent. A full charge lasts about 30 hours with noise cancellation active. A 3-minute quick charge gives you about 3 hours of listening. The headphones charge via USB-C. And they can also be used with the included 3.5mm audio cable when the battery is completely dead.
 
 The headphones come in two colors — black and platinum silver — and include a compact carrying case. The case is rigid and provides good protection when traveling.`,
     steps: [

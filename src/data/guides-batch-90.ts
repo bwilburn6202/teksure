@@ -13,7 +13,7 @@ export const guidesBatch90: Guide[] = [
     difficulty: `Beginner`,
     body: `When you type a question into a regular search engine, you get a long list of links and have to click through several websites to piece together an answer. Perplexity AI works differently. You ask it a question in plain English and it reads the web for you, then gives you a clear answer with links to its sources right there on the same page.
 
-Perplexity is available as a free app for iPhone and Android, and you can also use it in any web browser at perplexity.ai. The free version is very capable for everyday questions. A paid Pro plan unlocks faster AI models and more searches per day, but you can get a lot done without it.
+Perplexity is available as a free app for iPhone and Android. And you can also use it in any web browser at perplexity.ai. The free version is very capable for everyday questions. A paid Pro plan unlocks faster AI models and more searches per day. But you can get a lot done without it.
 
 When you type a question, Perplexity searches the web in real time and writes a summary based on what it finds. At the bottom of every answer you will see numbered source links — those are the actual websites it pulled information from. You can tap any source to read the original article.
 
@@ -67,7 +67,7 @@ Focus modes let you tell Perplexity where to search. Academic mode searches peer
 
 Gemini is available as a free app on Android phones, and iPhone users can access it through the Google app. On many newer Android phones, Gemini is already installed. On some Android phones, you can set Gemini as your default assistant so it activates when you hold down the home button, replacing Google Assistant.
 
-What makes Gemini different from a regular Google search is that it holds a conversation. You do not just get a list of links — you get a real response, and you can ask follow-up questions. Gemini also connects to your Google account, which means it can help you draft replies in Gmail, summarize documents in Google Docs, and look up information from your Google Calendar if you allow it.
+What makes Gemini different from a regular Google search is that it holds a conversation. You do not just get a list of links — you get a real response. And you can ask follow-up questions. Gemini also connects to your Google account, which means it can help you draft replies in Gmail, summarize documents in Google Docs, and look up information from your Google Calendar if you allow it.
 
 You can also point your phone's camera at something and ask Gemini about it. Take a photo of a plant and ask what it is. Take a picture of a menu in a foreign language and ask what the dishes are. This makes Gemini especially useful when you are out in the world and need quick information.
 
@@ -89,7 +89,7 @@ The free version of Gemini runs on Google's standard AI model. A paid Gemini Adv
       },
       {
         title: `Use Gemini to help with Gmail drafts`,
-        content: `Open the Gmail app on your Android phone and start composing a new email. Look for the small Gemini or sparkle icon inside the compose window. Tap it and describe the email you want to write. For example: "Write a polite email asking my landlord to fix the leaky faucet." Gemini will draft the email for you, and you can edit it before sending.`,
+        content: `Open the Gmail app on your Android phone and start composing a new email. Look for the small Gemini or sparkle icon inside the compose window. Tap it and describe the email you want to write. For example: "Write a polite email asking my landlord to fix the leaky faucet." Gemini will draft the email for you. And you can edit it before sending.`,
         tip: `Quick Tip: Gemini's Gmail integration works best on Android phones where Gemini is set as the default assistant. iPhone users can draft text in the Gemini app and paste it into Gmail manually.`,
       },
       {
@@ -98,7 +98,7 @@ The free version of Gemini runs on Google's standard AI model. A paid Gemini Adv
       },
       {
         title: `Review your privacy settings`,
-        content: `Open the Gemini app and tap your profile picture or the menu icon in the top corner. Look for "Gemini Apps Activity" in your Google account settings. Here you can see what conversations have been saved and turn off activity saving if you prefer your conversations not to be stored. Google uses saved conversations to improve its AI, but you are not required to keep this on.`,
+        content: `Open the Gemini app and tap your profile picture or the menu icon in the top corner. Look for "Gemini Apps Activity" in your Google account settings. Here you can see what conversations have been saved and turn off activity saving if you prefer your conversations not to be stored. Google uses saved conversations to improve its AI. But you are not required to keep this on.`,
       },
     ],
   },
@@ -260,7 +260,7 @@ Libraries across the United States participate in the Libby program, and most ma
 
 You can read ebooks directly in the Libby app, or you can send them to a Kindle device or the Kindle app on your phone. Audiobooks play in the Libby app with a simple listen button — you can speed up or slow down playback, set a sleep timer, and bookmark where you left off.
 
-Popular new releases often have waiting lists, just like physical books at the library. You can place a hold on a book and Libby will notify you when it is your turn. Most libraries let you have multiple books checked out at the same time, and you can borrow from more than one library system if you have cards for multiple libraries.
+Popular new releases often have waiting lists, just like physical books at the library. You can place a hold on a book and Libby will notify you when it is your turn. Most libraries let you have multiple books checked out at the same time. And you can borrow from more than one library system if you have cards for multiple libraries.
 
 Libby works on iPhone, Android, Kindle Fire tablets, and most web browsers. Your reading progress syncs across all your devices, so you can start reading on your phone and pick up where you left off on a tablet.`,
     steps: [
@@ -302,7 +302,7 @@ Libby works on iPhone, Android, Kindle Fire tablets, and most web browsers. Your
 
 Like Libby, Hoopla is completely free for anyone with a public library card from a participating library. You connect your library card to your Hoopla account, and the library pays for your borrows on a per-use basis.
 
-Hoopla has a much broader content mix than most people expect. It includes movies, TV shows, music albums, comic books, graphic novels, manga, ebooks, and audiobooks. The movie selection focuses more on classic films, independent releases, and older titles rather than brand-new blockbusters, but there is a large catalog to explore.
+Hoopla has a much broader content mix than most people expect. It includes movies, TV shows, music albums, comic books, graphic novels, manga, ebooks, and audiobooks. The movie selection focuses more on classic films, independent releases, and older titles rather than brand-new blockbusters. But there is a large catalog to explore.
 
 One feature that sets Hoopla apart is BingePass. Certain TV show publishers offer BingePass options, which means you can use one borrow to unlock access to an entire season or a large collection of content from that publisher, rather than counting each episode as a separate borrow.
 
@@ -354,7 +354,7 @@ You have two ways to pay for audiobooks on Libro.fm. The monthly membership give
 
 The Libro.fm app is free to download on iPhone and Android. Your audiobooks are stored in the app and download to your device so you can listen without an internet connection. You can also listen in your web browser at libro.fm if you prefer.
 
-Libro.fm lets you gift audiobooks to others, which is a thoughtful option for book lovers. The recipient gets an email with a link to claim their audiobook, and they can choose their own bookstore to support when they sign up.`,
+Libro.fm lets you gift audiobooks to others, which is a thoughtful option for book lovers. The recipient gets an email with a link to claim their audiobook. And they can choose their own bookstore to support when they sign up.`,
     steps: [
       {
         title: `Pick a bookstore and create your account`,
@@ -376,7 +376,7 @@ Libro.fm lets you gift audiobooks to others, which is a thoughtful option for bo
       },
       {
         title: `Gift an audiobook to a friend or family member`,
-        content: `On the Libro.fm website, find the audiobook you want to give and select the "Give as a gift" option. Enter the recipient's email address and a personal message. You will be charged for the audiobook, and the recipient will get an email with a link to claim their gift. They can create their own free Libro.fm account when they claim it, and they get to choose which bookstore they want to support.`,
+        content: `On the Libro.fm website, find the audiobook you want to give and select the "Give as a gift" option. Enter the recipient's email address and a personal message. You will be charged for the audiobook, and the recipient will get an email with a link to claim their gift. They can create their own free Libro.fm account when they claim it. And they get to choose which bookstore they want to support.`,
       },
     ],
   },
@@ -392,7 +392,7 @@ Libro.fm lets you gift audiobooks to others, which is a thoughtful option for bo
     difficulty: `Beginner`,
     body: `WEBTOON is a free app that hosts thousands of comic series and manga from creators all over the world. Unlike traditional comic books, WEBTOON comics are designed to be read on a phone screen — you scroll down through vertical panels instead of flipping through pages. This format makes them very comfortable to read on a phone without zooming in and out.
 
-Most comics on WEBTOON are completely free to read. Some popular series offer early access to new episodes for a small fee through a feature called Fast Pass, but you can always read the same episodes for free a few weeks later. There is no subscription required and no credit card needed to browse and read the vast majority of content.
+Most comics on WEBTOON are completely free to read. Some popular series offer early access to new episodes for a small fee through a feature called Fast Pass. But you can always read the same episodes for free a few weeks later. There is no subscription required and no credit card needed to browse and read the vast majority of content.
 
 WEBTOON was originally created by the South Korean company Naver and became popular worldwide. Today it hosts creators from dozens of countries, and the content spans every genre imaginable — romance, fantasy, horror, thriller, science fiction, slice of life, action, and more.
 
@@ -406,7 +406,7 @@ Creating a free account lets you subscribe to series and get notified when new e
       },
       {
         title: `Browse by genre to find something you like`,
-        content: `From the main screen, tap the "Discover" tab or browse the featured sections. Tap "Browse by Genre" to see all available categories. Romance and fantasy are among the most popular, but there are also thrillers, action series, horror, coming-of-age stories, and many others. Tap on any series cover to read its description and the first episode to decide if you enjoy it before committing to follow it.`,
+        content: `From the main screen, tap the "Discover" tab or browse the featured sections. Tap "Browse by Genre" to see all available categories. Romance and fantasy are among the most popular. But there are also thrillers, action series, horror, coming-of-age stories, and many others. Tap on any series cover to read its description and the first episode to decide if you enjoy it before committing to follow it.`,
         tip: `Quick Tip: WEBTOON shows the total number of likes and episode count on each series page. Series with millions of likes and many episodes tend to have large, active fan communities and are a good place to start.`,
       },
       {
@@ -482,7 +482,7 @@ The mortgage calculator on each listing page helps you estimate monthly payments
     thumbnailEmoji: ``,
     publishedAt: `2026-04-20`,
     difficulty: `Beginner`,
-    body: `Trulia is a home search website and app owned by Zillow Group, but it has developed a reputation for its especially detailed neighborhood information. While you can certainly search for homes on Trulia, what makes it stand out is the depth of data it provides about the areas surrounding those homes.
+    body: `Trulia is a home search website and app owned by Zillow Group. But it has developed a reputation for its especially detailed neighborhood information. While you can certainly search for homes on Trulia, what makes it stand out is the depth of data it provides about the areas surrounding those homes.
 
 Before you buy a house, you want to know more than just the price and number of bedrooms. You want to know: Is the neighborhood safe? Are the nearby schools good? How long would my commute be? What stores and restaurants are nearby? Will I be bothered by traffic noise or a busy highway? Trulia tries to answer all of these questions on a single listing page.
 
@@ -534,11 +534,11 @@ Trulia also shows a Noise Score for listings, indicating whether the area has el
     difficulty: `Beginner`,
     body: `Opendoor is what the real estate industry calls an iBuyer — a company that purchases homes directly from sellers using its own money, then resells the homes afterward. If you want to sell your house without listing it publicly, hosting open houses, negotiating with multiple buyers, or dealing with a sale falling through at the last minute, Opendoor offers an alternative worth understanding.
 
-The process starts online: you enter your home's address and answer some basic questions about the property, and Opendoor provides a preliminary cash offer — often within 24 hours. If you like the offer, Opendoor sends someone to assess the home in person. After that assessment, they confirm the final offer price, and you choose your own closing date.
+The process starts online: you enter your home's address and answer some basic questions about the property, and Opendoor provides a preliminary cash offer — often within 24 hours. If you like the offer, Opendoor sends someone to assess the home in person. After that assessment, they confirm the final offer price. And you choose your own closing date.
 
 Opendoor charges a service fee (typically around 5% of the sale price, though this can vary) plus repair costs if the assessment finds items that need fixing. This is different from a traditional sale where you pay a real estate agent commission (usually 5–6% split between buyer and seller agents) and also handle any repairs or concessions yourself.
 
-Whether Opendoor's offer is competitive depends heavily on your local market and the condition of your home. In some cases, Opendoor's offer may be slightly below what you could get on the open market — the trade-off is speed, certainty, and convenience. You avoid the stress of keeping your home show-ready for weeks or months, and you know exactly when the money will arrive.
+Whether Opendoor's offer is competitive depends heavily on your local market and the condition of your home. In some cases, Opendoor's offer may be slightly below what you could get on the open market — the trade-off is speed, certainty, and convenience. You avoid the stress of keeping your home show-ready for weeks or months. And you know exactly when the money will arrive.
 
 Opendoor operates in dozens of major markets across the United States. It works best for people who need to move quickly — because of a job change, divorce, estate situation, or just wanting a clean, predictable transaction without the uncertainty of the traditional market.`,
     steps: [
@@ -562,7 +562,7 @@ Opendoor operates in dozens of major markets across the United States. It works 
       },
       {
         title: `Choose your closing date and complete the sale`,
-        content: `If you accept the final offer, you get to pick your own closing date — Opendoor allows flexibility of typically 14 to 60 days from acceptance. This is one of the biggest advantages: you can time the sale to coordinate with your move, the purchase of your next home, or other life events. On closing day, the transaction is handled like a standard real estate closing, and you receive the agreed payment minus fees and any repair deductions.`,
+        content: `If you accept the final offer, you get to pick your own closing date — Opendoor allows flexibility of typically 14 to 60 days from acceptance. This is one of the biggest advantages: you can time the sale to coordinate with your move, the purchase of your next home, or other life events. On closing day, the transaction is handled like a standard real estate closing. And you receive the agreed payment minus fees and any repair deductions.`,
       },
     ],
   },
@@ -630,7 +630,7 @@ Once your recipes are in Paprika, you can plan your meals for the week by draggi
 
 You can also scale recipe servings. If a recipe serves four but you are cooking for ten, Paprika recalculates all the ingredient amounts automatically. If you are cooking for one, it scales down as well.
 
-Paprika syncs your recipe library across all your devices using Paprika's own sync service. Start a recipe on your phone during the commute home, and it will be waiting on your kitchen tablet when you start cooking.`,
+Paprika syncs your recipe library across all your devices using Paprika's own sync service. Start a recipe on your phone during the commute home. And it will be waiting on your kitchen tablet when you start cooking.`,
     steps: [
       {
         title: `Download and purchase Paprika`,
@@ -716,7 +716,7 @@ Tasty also features a shopping list function: add any recipe's ingredients to yo
     thumbnailEmoji: ``,
     publishedAt: `2026-04-20`,
     difficulty: `Beginner`,
-    body: `Food Network Kitchen is the app version of the Food Network cable channel, but it offers much more than TV episode replays. It is a full cooking education platform with thousands of recipes, on-demand cooking lessons, and live cooking classes where you can interact with real Food Network chefs in real time.
+    body: `Food Network Kitchen is the app version of the Food Network cable channel. But it offers much more than TV episode replays. It is a full cooking education platform with thousands of recipes, on-demand cooking lessons, and live cooking classes where you can interact with real Food Network chefs in real time.
 
 The live class feature is what sets Food Network Kitchen apart from other recipe apps. Multiple times per week, well-known Food Network chefs host live cooking sessions where they cook a dish step by step and viewers can watch, follow along at home, and even ask questions. You can cook alongside the chef in real time, which is a uniquely engaging experience compared to watching a pre-recorded video.
 
@@ -728,7 +728,7 @@ Food Network Kitchen requires a subscription after the free trial period. The ap
     steps: [
       {
         title: `Download the app and start your free trial`,
-        content: `Search for "Food Network Kitchen" in the App Store (iPhone) or Google Play (Android) and install the app. Food Network Kitchen typically offers a free trial for new subscribers. Open the app and tap "Start Free Trial" to create an account with your email address and payment information. You will not be charged until the trial period ends, and you can cancel before then if you decide it is not for you.`,
+        content: `Search for "Food Network Kitchen" in the App Store (iPhone) or Google Play (Android) and install the app. Food Network Kitchen typically offers a free trial for new subscribers. Open the app and tap "Start Free Trial" to create an account with your email address and payment information. You will not be charged until the trial period ends. And you can cancel before then if you decide it is not for you.`,
         tip: `Quick Tip: Food Network Kitchen is also available through Amazon Prime Video channels and the Amazon Fire TV ecosystem, which may offer promotional pricing for Prime members.`,
       },
       {
@@ -760,7 +760,7 @@ Food Network Kitchen requires a subscription after the free trial period. The ap
     thumbnailEmoji: ``,
     publishedAt: `2026-04-20`,
     difficulty: `Beginner`,
-    body: `Cooklist approaches meal planning from a different angle than most recipe apps. Instead of showing you recipes and then sending you to buy ingredients, Cooklist starts with what you already have. You tell Cooklist what is in your pantry and refrigerator, and it suggests recipes that use those ingredients — helping you cook more of what you already own before buying more.
+    body: `Cooklist approaches meal planning from a different angle than most recipe apps. Instead of showing you recipes and then sending you to buy ingredients, Cooklist starts with what you already have. You tell Cooklist what is in your pantry and refrigerator. And it suggests recipes that use those ingredients — helping you cook more of what you already own before buying more.
 
 This approach has two practical benefits. First, it reduces food waste. Most households throw away a significant amount of food because items get forgotten in the back of the refrigerator or pantry until they spoil. Cooklist surfaces recipes that use what you have before things go bad. Second, it often saves money on groceries because you are not buying new ingredients for a recipe when you already have what you need.
 
@@ -812,7 +812,7 @@ Traditionally, getting something notarized meant finding a notary at a bank, UPS
 
 Notarize.com is one of the leading platforms for online notarization. You create an account, upload your document, verify your identity through an automated ID check, and then connect via live video with a commissioned notary who witnesses your electronic signature. After the session, you receive a digitally notarized PDF that is legally valid in most states.
 
-Not all states accept online notarization and not all document types qualify. Notarize.com's website will tell you upfront if your state and document type are supported before you start the process. As of 2026, most U.S. states accept remote online notarization for most document types, but there are still some exceptions — particularly for certain real estate transactions in some states.
+Not all states accept online notarization and not all document types qualify. Notarize.com's website will tell you upfront if your state and document type are supported before you start the process. As of 2026, most U.S. states accept remote online notarization for most document types. But there are still some exceptions — particularly for certain real estate transactions in some states.
 
 The cost for a notarization on Notarize.com is a flat fee per document, typically around $25 for the first notarial act with additional acts available for a smaller fee. This compares favorably to the time and inconvenience of an in-person appointment, especially for people who have difficulty traveling or who need documents notarized quickly.`,
     steps: [
@@ -866,7 +866,7 @@ Filing a claim on Lemonade is done through the app with an AI named Maya. You de
       },
       {
         title: `Choose your coverage amount and deductible`,
-        content: `Lemonade will ask how much personal property coverage you want — this is the total value of your belongings that would be covered. Think about the replacement cost of your furniture, electronics, clothing, and other possessions to estimate a reasonable number. You will also choose a deductible, which is the amount you pay out of pocket before insurance kicks in. A higher deductible means a lower monthly premium, but you pay more if something happens.`,
+        content: `Lemonade will ask how much personal property coverage you want — this is the total value of your belongings that would be covered. Think about the replacement cost of your furniture, electronics, clothing, and other possessions to estimate a reasonable number. You will also choose a deductible, which is the amount you pay out of pocket before insurance kicks in. A higher deductible means a lower monthly premium. But you pay more if something happens.`,
         tip: `Quick Tip: Most renters underestimate the value of their belongings. Add up the replacement cost (not the used value) of your TV, laptop, furniture, clothing, and kitchen items — most people find they have $15,000 to $30,000 or more in possessions.`,
       },
       {
@@ -924,7 +924,7 @@ The Fabric will feature is free for anyone, even if you do not purchase life ins
       },
       {
         title: `Complete the underwriting process`,
-        content: `After submitting your application, Fabric will either approve your policy right away (called instant issue) or notify you that additional information is needed. For instant issue, you can activate your policy right away and begin coverage the same day. If a medical exam is needed, Fabric arranges a free in-home exam — a technician comes to you to take basic measurements and a blood sample. Results are reviewed by the insurance underwriters, and you typically hear back within a few weeks.`,
+        content: `After submitting your application, Fabric will either approve your policy right away (called instant issue) or notify you that additional information is needed. For instant issue, you can activate your policy right away and begin coverage the same day. If a medical exam is needed, Fabric arranges a free in-home exam — a technician comes to you to take basic measurements and a blood sample. Results are reviewed by the insurance underwriters. And you typically hear back within a few weeks.`,
       },
       {
         title: `Create your free digital will`,

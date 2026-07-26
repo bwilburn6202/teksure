@@ -117,7 +117,7 @@ For domestic travel, Expedia is a strong option because it has negotiated rates 
       },
       {
         title: `Search for a flight or hotel`,
-        content: `On the Expedia home page, choose whether you want to search for a flight, a hotel, or a bundle (flight + hotel together). Enter your destination, travel dates, and number of guests. Click the orange search button. Results appear with prices listed clearly, and you can sort by price, star rating, or guest reviews.`,
+        content: `On the Expedia home page, choose whether you want to search for a flight, a hotel, or a bundle (flight + hotel together). Enter your destination, travel dates, and number of guests. Click the orange search button. Results appear with prices listed clearly. And you can sort by price, star rating, or guest reviews.`,
         tip: `Quick Tip: Booking a flight and hotel together as a bundle often saves between $50 and $200 compared to booking each separately. Look for the "Bundle" option on the search bar.`,
       },
       {
@@ -167,7 +167,7 @@ The Hotels.com mobile app is reliable and well-designed. It stores all your book
       },
       {
         title: `Read the cancellation policy before booking`,
-        content: `Each hotel listing shows a cancellation policy near the price. Look for "Free cancellation until [date]" if you want flexibility. Some rooms are labeled "Non-refundable" and cost less, but you lose your money if your plans change. Choose based on how certain your travel dates are.`,
+        content: `Each hotel listing shows a cancellation policy near the price. Look for "Free cancellation until [date]" if you want flexibility. Some rooms are labeled "Non-refundable" and cost less. But you lose your money if your plans change. Choose based on how certain your travel dates are.`,
         warning: `Non-refundable rates save money but carry real risk. If there is any chance your plans could change, the small extra cost of a refundable rate is usually worth it.`,
       },
       {
@@ -401,7 +401,7 @@ CLEAR stores your biometric data securely and does not share it with government 
       },
       {
         title: `Use CLEAR at stadiums and venues`,
-        content: `At participating sports venues and arenas, look for signs indicating a CLEAR entry lane. Open the CLEAR app on your phone and have your ticket pulled up. Scan your fingerprint at the CLEAR pod and show your ticket, and you can enter through the biometric lane. Some venues integrate CLEAR with their ticketing app so both steps happen at once.`,
+        content: `At participating sports venues and arenas, look for signs indicating a CLEAR entry lane. Open the CLEAR app on your phone and have your ticket pulled up. Scan your fingerprint at the CLEAR pod and show your ticket. And you can enter through the biometric lane. Some venues integrate CLEAR with their ticketing app so both steps happen at once.`,
         tip: `Quick Tip: Download the CLEAR app before your first venue visit — it makes the biometric check faster when your phone is ready to go.`,
       },
     ],
@@ -491,7 +491,7 @@ The app works offline once you have loaded rate data. This means you can convert
       },
       {
         title: `Use XE offline during your trip`,
-        content: `Before departing for a destination with limited data access, open the XE app and load the exchange rates. The app caches recently viewed rates so you can still convert prices while offline. Tap the rates you need in advance, and they will be available even without an internet connection during your trip.`,
+        content: `Before departing for a destination with limited data access, open the XE app and load the exchange rates. The app caches recently viewed rates so you can still convert prices while offline. Tap the rates you need in advance. And they will be available even without an internet connection during your trip.`,
         tip: `Quick Tip: Update your rates in XE every few days during a long trip, as exchange rates shift over time.`,
       },
     ],
@@ -686,7 +686,7 @@ Keep in mind that airlines sometimes swap aircraft types on a route, which means
 
 The app factors in the weather at your destination during your travel dates, so it knows whether to suggest a heavy coat or a light jacket. It also adjusts based on trip type — a beach vacation calls for different gear than a business trip or a camping trip. You answer a short series of questions about your travel, and Packr puts together a list within seconds.
 
-Packr includes categories for clothing, toiletries, electronics, documents, and activities. Each item can be checked off as you pack it, and you can add custom items that are specific to your personal needs. You can also remove items that do not apply to you.
+Packr includes categories for clothing, toiletries, electronics, documents, and activities. Each item can be checked off as you pack it. And you can add custom items that are specific to your personal needs. You can also remove items that do not apply to you.
 
 One practical feature is the ability to save trip profiles. If you travel regularly for work or take similar vacations each year, you can create a saved template and reuse it with minor adjustments rather than starting over each time.
 

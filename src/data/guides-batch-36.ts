@@ -17,7 +17,7 @@ You can use CapCut to trim video clips, add music, text, captions, and special e
 
 CapCut is popular for making birthday slideshows, family memory videos, travel recaps, and funny clips to share with friends or post on social media. Many people use it to create Instagram Reels, TikToks, and Facebook videos.
 
-The app is completely free to download and use. Some premium effects and templates require a subscription, but there are hundreds of free options that are more than enough for most people. You can export finished videos in high quality and share them directly to any social media app.
+The app is completely free to download and use. Some premium effects and templates require a subscription. But there are hundreds of free options that are more than enough for most people. You can export finished videos in high quality and share them directly to any social media app.
 
 One of CapCut's best features is Auto Captions, which automatically adds captions to your video by listening to the speech in it. This makes your videos accessible to people who watch without sound — which is about 85% of social media viewers.
 
@@ -831,7 +831,7 @@ Deleting accounts takes some time, but it's one of the most effective privacy ac
       {
         title: 'Clean up "Sign in with Google/Facebook"',
         content: `Go to myaccount.google.com → Security → Third-party apps with account access. You'll see every service that has access to your Google account. Click any old service and tap "Remove Access" to revoke their permission. Do the same on Facebook: Settings → Apps and Websites.`,
-        tip: `Revoking app access doesn't delete the account, but it does stop the service from accessing your Google or Facebook data going forward.`,
+        tip: `Revoking app access doesn't delete the account. But it does stop the service from accessing your Google or Facebook data going forward.`,
       },
     ],
   },

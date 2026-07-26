@@ -509,7 +509,7 @@ Setting up takes about five minutes. Apple Pay is built into iPhones (iPhone 6 a
     thumbnailEmoji: '',
     publishedAt: '2026-04-16',
     difficulty: 'Beginner',
-    body: `FaceTime is Apple's built-in video and voice calling app, and it comes pre-installed on every iPhone and iPad. Calls made over Wi-Fi are completely free — you can talk face-to-face with family members and friends who also have an iPhone, iPad, or Mac for as long as you want without using any of your phone plan's minutes. FaceTime also works over cellular data (your mobile data plan) when Wi-Fi is not available.
+    body: `FaceTime is Apple's built-in video and voice calling app. And it comes pre-installed on every iPhone and iPad. Calls made over Wi-Fi are completely free — you can talk face-to-face with family members and friends who also have an iPhone, iPad, or Mac for as long as you want without using any of your phone plan's minutes. FaceTime also works over cellular data (your mobile data plan) when Wi-Fi is not available.
 
 The image and sound quality on FaceTime is generally very good, making it a popular choice for keeping in touch with family members, especially grandchildren. You can call someone's Apple ID (their email address) or their iPhone phone number.
 
@@ -534,7 +534,7 @@ Starting in iOS 15, Apple also added the ability to invite Android and Windows u
     thumbnailEmoji: '',
     publishedAt: '2026-04-16',
     difficulty: 'Beginner',
-    body: `Microsoft Office (Word, Excel, PowerPoint) is the most widely known productivity suite, but it can cost $100–$150 per year as a subscription or more as a one-time purchase. Several completely free alternatives exist that can create, edit, and save files in Microsoft's own formats — so files you create can still be opened by others who use Microsoft Office.
+    body: `Microsoft Office (Word, Excel, PowerPoint) is the most widely known productivity suite. But it can cost $100–$150 per year as a subscription or more as a one-time purchase. Several completely free alternatives exist that can create, edit, and save files in Microsoft's own formats — so files you create can still be opened by others who use Microsoft Office.
 
 The most popular free options are Google Workspace (Docs, Sheets, Slides — free with a Google account and works in a browser), LibreOffice (a free downloadable program for Windows, Mac, and Linux), and Microsoft's own free web versions at office.com (these require a free Microsoft account but have most Word and Excel features). All three can open and save .docx and .xlsx files.
 
@@ -542,7 +542,7 @@ For most everyday document needs — writing letters, making lists, creating bas
     steps: [
       { title: 'Try Google Docs first', content: 'If you have a Google account (Gmail), go to docs.google.com for word processing, sheets.google.com for spreadsheets, and slides.google.com for presentations. They are free, work in any browser, and save automatically to Google Drive.' },
       { title: 'Try Microsoft Office for the Web', content: `Go to office.com and sign in with a free Microsoft account. You can create and edit Word, Excel, and PowerPoint files in your browser without paying for a subscription. Files save to Microsoft's free OneDrive cloud storage.` },
-      { title: 'Download LibreOffice for offline use', content: 'If you prefer a program installed on your computer (rather than browser-based), go to libreoffice.org and download LibreOffice for free. It includes Writer (like Word), Calc (like Excel), and Impress (like PowerPoint), and it runs without an internet connection.' },
+      { title: 'Download LibreOffice for offline use', content: 'If you prefer a program installed on your computer (rather than browser-based), go to libreoffice.org and download LibreOffice for free. It includes Writer (like Word), Calc (like Excel), and Impress (like PowerPoint). And it runs without an internet connection.' },
       { title: 'Open existing Word or Excel files', content: 'All three free alternatives can open files that were created in Microsoft Word or Excel. In Google Docs, drag a .docx file into Google Drive and double-click it to open. In LibreOffice, go to File > Open and browse to the file.' },
       { title: 'Save in Microsoft format when needed', content: 'If you need to send a file to someone who uses Microsoft Office, save in the Microsoft format. In Google Docs: File > Download > Microsoft Word (.docx). In LibreOffice: File > Save As > choose "Word 2007-365 (.docx)" from the format dropdown.' },
     ],
@@ -747,7 +747,7 @@ Before you start, have your Wi-Fi network name (also called SSID) and your Wi-Fi
     difficulty: 'Beginner',
     body: `Printing photos at home is a good option when you want a quick print without waiting for an online order to arrive. The quality of home photo prints has improved dramatically — modern inkjet printers can produce sharp, colorful prints that rival those from a photo lab, as long as you use photo paper (not regular printer paper) and a photo-quality ink cartridge.
 
-Before printing, it helps to know the size you want to print. Standard photo sizes are 4x6 inches, 5x7 inches, and 8x10 inches. The photo paper you buy must match the size you plan to print — 4x6 photo paper for 4x6 prints, and so on. Photo paper is sold at office supply stores, big box stores, and online, and it costs about $10–$20 for a pack of 50 sheets.
+Before printing, it helps to know the size you want to print. Standard photo sizes are 4x6 inches, 5x7 inches, and 8x10 inches. The photo paper you buy must match the size you plan to print — 4x6 photo paper for 4x6 prints, and so on. Photo paper is sold at office supply stores, big box stores, and online. And it costs about $10–$20 for a pack of 50 sheets.
 
 The most common reason home photo prints look dull or blurry is using regular copy paper instead of actual photo paper. Photo paper is glossy or semi-glossy and is designed to hold ink evenly for sharp, bright images.`,
     steps: [

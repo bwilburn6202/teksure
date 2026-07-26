@@ -36,7 +36,7 @@ The removal request takes about 10 minutes, and your information usually comes o
     difficulty: 'Beginner',
     body: `Spokeo is a people-search website that shows your age, address history, phone numbers, relatives, and sometimes old email addresses. Anyone who searches your name can see this for free or pay for more details.
 
-Spokeo has a free opt-out page that hides your profile within a day or two. You do not need to pay for anything, and you do not need a Spokeo account.`,
+Spokeo has a free opt-out page that hides your profile within a day or two. You do not need to pay for anything. And you do not need a Spokeo account.`,
     steps: [
       { title: 'Find your Spokeo listing', content: 'Go to spokeo.com and type your full name and the state where you live. Click your name in the results to open your profile page.' },
       { title: 'Copy the web address of your profile', content: 'Look at the top of your browser window and copy the full web address (URL) of the page showing your details. You will paste this on the opt-out page.' },
@@ -99,7 +99,7 @@ Removing your listing is free and takes about 5 minutes. Your record usually dis
     difficulty: 'Beginner',
     body: `Google offers a free tool called "Results About You" that scans the web for pages showing your personal contact information. When it finds something, you can ask Google to hide that page from search results in one click.
 
-This does not delete the page from the internet, but it stops people from finding it on Google. That alone makes a big difference, since most people only find your info by searching your name.`,
+This does not delete the page from the internet. But it stops people from finding it on Google. That alone makes a big difference, since most people only find your info by searching your name.`,
     steps: [
       { title: 'Sign in to your Google account', content: 'Go to google.com and click Sign In at the top right. Use the Gmail account you normally use.' },
       { title: 'Open the Results About You tool', content: 'Go to myactivity.google.com/results-about-you in your browser. You can also search for "Google Results About You" to find the page.' },
@@ -183,7 +183,7 @@ The service keeps checking every three months to see if your info has come back,
     thumbnailEmoji: '',
     publishedAt: '2026-04-17',
     difficulty: 'Beginner',
-    body: `Your iPhone records where you go all day, every day. Apple uses this for features like suggesting traffic routes home, but you can turn it off without losing Maps or weather.
+    body: `Your iPhone records where you go all day, every day. Apple uses this for features like suggesting traffic routes home. But you can turn it off without losing Maps or weather.
 
 You can also control which specific apps get to see your location. This is a good idea because many apps ask for location permission even when they do not really need it.`,
     steps: [
@@ -233,7 +233,7 @@ Most social networks strip this data automatically, but texting and email usuall
       { title: 'Tap Adjust to remove the location', content: 'Under the map, tap the word "Adjust" and then tap "No Location". The GPS tag is now stripped from that photo.' },
       { title: 'On Android, open Google Photos', content: 'Find the photo and tap the three-dot menu at the top right. Scroll down and tap "Remove geo-location" to strip the GPS tag.' },
       { title: 'For multiple photos, turn off location when taking them', content: 'In your Camera settings, look for "Location tags" or "GPS" and turn it off. From now on, new photos will not have location attached in the first place.' },
-      { title: 'Share without location', content: 'Send the adjusted photo by text, email, or upload. The receiver can still see the picture, but they cannot see where you were when you took it.' },
+      { title: 'Share without location', content: 'Send the adjusted photo by text, email, or upload. The receiver can still see the picture. But they cannot see where you were when you took it.' },
     ],
   },
   {
@@ -361,7 +361,7 @@ You manage everything from the Arlo app on your phone. Free plans give you live 
       { title: 'Install the Arlo app and make an account', content: 'Download the Arlo Secure app from the App Store or Play Store. Tap "Create Account" and sign up with your email and a strong password.' },
       { title: 'Set up the base station (if included)', content: 'If your Arlo kit came with a base station (a small plastic box), connect it to your internet router with the Ethernet cable and plug it into power. Wait for the light to turn green.' },
       { title: 'Add the camera in the app', content: 'Tap the plus sign in the app and pick "Add New Device". Scan the QR code on the bottom of the camera or follow the prompts to connect to your Wi-Fi. Name the camera (like "Front Door").' },
-      { title: 'Mount and test the camera', content: 'Screw or magnetically mount the camera where you want it. Open the app, tap the camera name, and you should see live video. Walk in front to test motion alerts on your phone.' },
+      { title: 'Mount and test the camera', content: 'Screw or magnetically mount the camera where you want it. Open the app, tap the camera name. And you should see live video. Walk in front to test motion alerts on your phone.' },
     ],
   },
   {
@@ -374,7 +374,7 @@ You manage everything from the Arlo app on your phone. Free plans give you live 
     thumbnailEmoji: '',
     publishedAt: '2026-04-17',
     difficulty: 'Beginner',
-    body: `News stories about hackers watching people through their own security cameras are real, but they are almost always the result of weak passwords or reused ones. With a few small steps, you can make your cameras extremely hard to break into.
+    body: `News stories about hackers watching people through their own security cameras are real. But they are almost always the result of weak passwords or reused ones. With a few small steps, you can make your cameras extremely hard to break into.
 
 The most important changes are a strong unique password and two-factor sign-in. Both take about 5 minutes per camera account and block most attacks.`,
     steps: [
@@ -444,7 +444,7 @@ Medicare.gov has a free Plan Finder tool that shows every plan in your area with
 The appeal is free, and there are five levels. Most people win at the first or second level if they include a letter from their doctor explaining why the service is medically needed.`,
     steps: [
       { title: 'Read the denial notice carefully', content: 'When Medicare denies a claim, they mail you a Medicare Summary Notice or a plan denial letter. This paper tells you exactly what was denied, why, and the deadline to appeal (usually 120 days).' },
-      { title: 'Ask your doctor for a support letter', content: `Call your doctor's office and ask them to write a short letter explaining why this service is medically necessary. Most offices will do this for you, and it is the single most important thing for winning.` },
+      { title: 'Ask your doctor for a support letter', content: `Call your doctor's office and ask them to write a short letter explaining why this service is medically necessary. Most offices will do this for you. And it is the single most important thing for winning.` },
       { title: 'Fill out the Redetermination form', content: 'Download Form CMS-20027 from medicare.gov or call 1-800-MEDICARE to request one by mail. Fill it in with your Medicare number, the denial details, and why you think it should be covered.' },
       { title: 'Mail the appeal and keep copies', content: 'Mail the form, the doctor letter, and a copy of the denial notice to the address on your denial. Send it by certified mail so you have proof it arrived. Keep a copy of everything for yourself.' },
       { title: 'Wait for a decision', content: 'Medicare has 60 days to respond. If they still deny, the notice will tell you how to file the next level of appeal. Free help is available from your State Health Insurance Help Program (SHIP) — call 1-877-839-2675.' },
@@ -592,7 +592,7 @@ Every big pharmacy offers this for free: CVS, Walgreens, Walmart, Rite Aid, and 
     difficulty: 'Beginner',
     body: `Zocdoc is a free website and app that shows doctors near you who are accepting new patients, with real appointment times you can book instantly. You can filter by doctor type, insurance plan, and patient ratings.
 
-Most appointments on Zocdoc are available within a week, and you can see ratings from other patients before choosing. Booking is free — the doctor's office still bills your insurance normally.`,
+Most appointments on Zocdoc are available within a week. And you can see ratings from other patients before choosing. Booking is free — the doctor's office still bills your insurance normally.`,
     steps: [
       { title: 'Open Zocdoc and enter your info', content: 'Go to zocdoc.com or download the Zocdoc app. Enter your ZIP code, insurance plan, and what kind of doctor you need (like primary care or dermatologist).' },
       { title: 'Review the list of doctors', content: 'Zocdoc shows a list of matching doctors with photos, reviews, and the soonest available appointment. Click any doctor to see more details, including their background and patient reviews.' },
@@ -720,7 +720,7 @@ The app talks you through each workout, telling you when to walk and when to run
     difficulty: 'Beginner',
     body: `Nike Training Club (NTC) is a free app with hundreds of guided workouts from Nike trainers. You pick a workout by goal (strength, yoga, endurance, flexibility) and time (as short as 10 minutes) and follow along on your phone or TV.
 
-There are no ads and no paywall. Workouts include video and voice-over instructions, and you can do most of them at home with no equipment.`,
+There are no ads and no paywall. Workouts include video and voice-over instructions. And you can do most of them at home with no equipment.`,
     steps: [
       { title: 'Download Nike Training Club', content: 'Install the Nike Training Club app from the App Store or Play Store. Open it and sign up with your email — no payment info needed.' },
       { title: 'Pick a workout goal', content: 'On the home screen, tap "Find a Workout". Filter by goal (Strength, Yoga, Endurance, Mobility), time (10 min, 20 min, 45 min), and equipment (None, Light, Full Gym).' },
@@ -744,7 +744,7 @@ There are no ads and no paywall. Workouts include video and voice-over instructi
 There is a free trial with several beginner meditations. After that, Calm Premium costs about $70 a year, which is cheaper than most meditation classes.`,
     steps: [
       { title: 'Download Calm', content: 'Install the Calm app from the App Store or Play Store. Open it and tap Sign Up. Create an account with your email.' },
-      { title: 'Take the getting-started quiz', content: 'Calm will ask why you want to use the app — stress, sleep, focus, etc. It uses your answers to suggest content, but you can explore anything in the app later.' },
+      { title: 'Take the getting-started quiz', content: 'Calm will ask why you want to use the app — stress, sleep, focus, etc. It uses your answers to suggest content. But you can explore anything in the app later.' },
       { title: 'Try the "7 Days of Calm" program', content: 'Tap the Meditate tab and start "7 Days of Calm" (free). It is a gentle introduction with a different 10-minute meditation each day. Put on headphones and follow the voice.' },
       { title: 'Play a sleep story at bedtime', content: 'Tap the Sleep tab and pick a sleep story that sounds relaxing. Start it when you get into bed. Most people fall asleep within 15 minutes listening to the calming voice.' },
       { title: 'Set a daily reminder', content: 'Go to the Profile tab and turn on Daily Reminders. Pick a time (like 7 am or 9 pm) and Calm will send a gentle notification so you remember to meditate.' },
@@ -918,7 +918,7 @@ YNAB costs $109 a year or $15 a month, with a 34-day free trial. It is more hand
       { title: 'Start the free trial at ynab.com', content: 'Go to youneedabudget.com (or ynab.com) in your browser. Click "Try it Free" and sign up with your email. You get 34 days free with no payment card required.' },
       { title: 'Connect your bank accounts', content: 'Click Add Account and search for your bank. Enter your online-banking login so YNAB can pull in transactions. Repeat for credit cards and savings.' },
       { title: 'Give every dollar a job', content: 'Click Budget. YNAB shows your available money at the top and asks you to assign every dollar to a category — Rent, Groceries, Gas, Savings, etc. When the "Ready to Assign" number hits zero, your budget is complete.' },
-      { title: 'Record transactions as you spend', content: 'Each time you buy something, YNAB pulls it from your bank, but you can also add it manually. Check the category is right and tap Approve. Watching the category total shrink keeps you on track.' },
+      { title: 'Record transactions as you spend', content: 'Each time you buy something, YNAB pulls it from your bank. But you can also add it manually. Check the category is right and tap Approve. Watching the category total shrink keeps you on track.' },
       { title: 'Roll with the punches', content: 'If you overspend one category (like Groceries), move money from another category (like Dining) to cover it. This is normal — the point is to stay real, not perfect.' },
     ],
   },

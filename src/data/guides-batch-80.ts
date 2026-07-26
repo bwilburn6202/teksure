@@ -195,7 +195,7 @@ Withings scales connect to your home Wi-Fi, so data syncs even if your phone is 
     thumbnailEmoji: ``,
     publishedAt: `2026-04-20`,
     difficulty: `Beginner`,
-    body: `Macros is short for macronutrients — the three main building blocks found in food: protein, carbohydrates, and fat. Every food you eat contains some combination of these three things, and they all serve different purposes in your body. Protein helps build and repair muscle. Carbohydrates give you energy. Fat supports your brain, hormones, and helps your body absorb vitamins.
+    body: `Macros is short for macronutrients — the three main building blocks found in food: protein, carbohydrates, and fat. Every food you eat contains some combination of these three things. And they all serve different purposes in your body. Protein helps build and repair muscle. Carbohydrates give you energy. Fat supports your brain, hormones, and helps your body absorb vitamins.
 
 Tracking macros means keeping a rough record of how much protein, carbs, and fat you eat each day. Many people do this to lose weight, build muscle, manage a health condition like diabetes, or eat more mindfully. You do not have to be obsessive about it — even a general awareness of your protein and carbohydrate intake can make a real difference over time.
 
@@ -574,7 +574,7 @@ Most telehealth services are straightforward to use. If you can make a video cal
       },
       {
         title: `Choose the right telehealth service for your situation`,
-        content: `If you already have a primary care doctor, check whether their practice offers telehealth visits — many clinics now do, and you can often book through your existing patient portal. If you need after-hours care or cannot reach your regular doctor, use an on-demand service like MDLive, Amwell, or Doctor On Demand. If cost is a concern and you do not have insurance, Amazon Clinic offers transparent flat-fee pricing for common conditions.`,
+        content: `If you already have a primary care doctor, check whether their practice offers telehealth visits — many clinics now do. And you can often book through your existing patient portal. If you need after-hours care or cannot reach your regular doctor, use an on-demand service like MDLive, Amwell, or Doctor On Demand. If cost is a concern and you do not have insurance, Amazon Clinic offers transparent flat-fee pricing for common conditions.`,
         warning: `If your insurance covers telehealth, using a service that bills your insurance will usually cost less than paying a flat fee out of pocket. Always check your insurance benefits before assuming you need to pay full price.`,
       },
       {
@@ -666,7 +666,7 @@ Zocdoc is completely free for patients. Doctors pay to be listed. You can use Zo
       {
         title: `Browse providers and check availability`,
         content: `Scroll through the list of matching providers. Each listing shows the doctor's name, specialty, practice name, distance from your location, star rating based on patient reviews, and the next available appointment time. Tap on any provider's name to read their full profile including their credentials, education, languages spoken, and all available appointment times for the next several weeks.`,
-        tip: `Filter the results by "Video visit" if you prefer not to travel to an office. Many providers on Zocdoc offer both in-person and virtual appointments, and you can book either type directly.`,
+        tip: `Filter the results by "Video visit" if you prefer not to travel to an office. Many providers on Zocdoc offer both in-person and virtual appointments. And you can book either type directly.`,
       },
       {
         title: `Book your appointment`,
@@ -679,7 +679,7 @@ Zocdoc is completely free for patients. Doctors pay to be listed. You can use Zo
       },
       {
         title: `Leave a review after your visit`,
-        content: `After your appointment, Zocdoc will send you a short survey asking you to rate your experience. Your review will be posted publicly for future patients to read. Taking two minutes to leave an honest review helps other people in your community find good doctors, and it also provides useful feedback to the practice.`,
+        content: `After your appointment, Zocdoc will send you a short survey asking you to rate your experience. Your review will be posted publicly for future patients to read. Taking two minutes to leave an honest review helps other people in your community find good doctors. And it also provides useful feedback to the practice.`,
       },
     ],
   },

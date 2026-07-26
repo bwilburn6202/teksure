@@ -34,7 +34,7 @@ This guide walks you through a quick set of checks you can do before you pick up
 
 **Why this matters**
 
-Internet providers — Xfinity (Comcast), AT&T, Verizon, Spectrum (Charter), and others — all maintain outage maps and status pages on their websites. They also report issues in real time on a third-party website called Downdetector. These resources are free, available 24 hours a day, and you can check them on your smartphone even when your home internet is down.
+Internet providers — Xfinity (Comcast), AT&T, Verizon, Spectrum (Charter), and others — all maintain outage maps and status pages on their websites. They also report issues in real time on a third-party website called Downdetector. These resources are free, available 24 hours a day. And you can check them on your smartphone even when your home internet is down.
 
 Knowing the difference between a provider outage and a home equipment problem also helps you describe the issue clearly when you do call, which means a faster, less frustrating conversation.
 
@@ -150,7 +150,7 @@ Giving the representative this information upfront usually cuts the call time in
     publishedAt: '2026-05-08',
     lastVerifiedAt: '2026-05-08',
     difficulty: 'Beginner',
-    body: `Your phone's Notes app is one of the most useful tools on the device — and one of the most overlooked. Instead of hunting for a scrap of paper to write down a phone number, a grocery list, or a good idea, you can tap a button and type (or speak) a note in seconds. It is always in your pocket, it never gets lost, and it syncs automatically to your other Apple devices if you use iCloud.
+    body: `Your phone's Notes app is one of the most useful tools on the device — and one of the most overlooked. Instead of hunting for a scrap of paper to write down a phone number, a grocery list, or a good idea, you can tap a button and type (or speak) a note in seconds. It is always in your pocket, it never gets lost. And it syncs automatically to your other Apple devices if you use iCloud.
 
 This guide covers the Notes app on iPhone and its Android equivalent, Google Keep. You do not need any account beyond the one already on your phone.
 
@@ -316,7 +316,7 @@ This feature works with most large retailers and mailing lists. It does not appe
 
 **Method 4: Use a service like Unroll.me**
 
-Unroll.me is a free service designed specifically to help you manage email subscriptions. You sign in with your email account, and it scans your inbox for mailing lists you are subscribed to. It then shows you a list of all your subscriptions and lets you unsubscribe from many of them in one place, one click at a time.
+Unroll.me is a free service designed specifically to help you manage email subscriptions. You sign in with your email account. And it scans your inbox for mailing lists you are subscribed to. It then shows you a list of all your subscriptions and lets you unsubscribe from many of them in one place, one click at a time.
 
 It also offers a feature called "The Rollup" — instead of getting dozens of separate promotional emails throughout the day, Unroll.me groups them into a single daily digest email that arrives at a time you choose.
 
@@ -396,7 +396,7 @@ The best way to keep your inbox manageable is to be selective about giving out y
     difficulty: 'Beginner',
     body: `Every phone manufactured in the world has a unique identification number called an IMEI — short for International Mobile Equipment Identity. It is 15 digits long, and no two phones in the world share the same IMEI. Think of it like a VIN number on a car: just as each vehicle has its own permanent ID number that identifies it no matter who owns it, your phone has a permanent number that identifies your specific device on any cellular network.
 
-Understanding your IMEI number takes about five minutes, and it can save you real headaches if your phone is ever lost or stolen — or if you are buying a used phone and want to make sure it is not stolen or locked to a carrier.
+Understanding your IMEI number takes about five minutes. And it can save you real headaches if your phone is ever lost or stolen — or if you are buying a used phone and want to make sure it is not stolen or locked to a carrier.
 
 **Why your IMEI number matters**
 
@@ -404,7 +404,7 @@ Understanding your IMEI number takes about five minutes, and it can save you rea
 
 If your phone is stolen, your carrier (AT&T, Verizon, T-Mobile, Spectrum Mobile, etc.) can use the IMEI number to block that device from connecting to any cellular network in the United States. This means the thief cannot use your phone to make calls or access mobile data, even if they put in a new SIM card. The phone becomes much less valuable to steal if it cannot connect to any network.
 
-To report a stolen phone, you call your carrier, give them your IMEI, and they add it to a blocklist. This is separate from a police report (which you should also file), but it is an important step.
+To report a stolen phone, you call your carrier, give them your IMEI. And they add it to a blocklist. This is separate from a police report (which you should also file). But it is an important step.
 
 **2. Checking a used phone before you buy**
 
@@ -457,7 +457,7 @@ Before handing over money for a used phone, ask the seller to show you the IMEI 
 
 If the check shows the phone is clean — not stolen, not blocked, not still under a contract — you are in good shape. If it shows any problems, walk away from the sale.
 
-**Quick Tip:** Write your phone's IMEI number down right now and store it somewhere you can find it even without your phone — a note in a filing cabinet, or emailed to yourself and saved in a folder. If your phone is ever stolen, you will need that number quickly, and you will not be able to look it up on the device itself.`,
+**Quick Tip:** Write your phone's IMEI number down right now and store it somewhere you can find it even without your phone — a note in a filing cabinet, or emailed to yourself and saved in a folder. If your phone is ever stolen, you will need that number quickly. And you will not be able to look it up on the device itself.`,
     steps: [
       {
         title: 'Understand what the IMEI number is',

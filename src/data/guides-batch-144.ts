@@ -145,7 +145,7 @@ This guide works whether you have an iPhone or an Android phone.
 
 Google gives everyone 15 gigabytes (GB) of free storage — shared across Gmail, Google Drive, and Google Photos. That sounds like a lot, and for most people it is. Roughly speaking, 15 GB holds around 4,000 to 5,000 photos taken at typical phone quality.
 
-When you set up backup, you will choose "Storage Saver" quality (formerly called "High Quality"). This slightly reduces the size of very large photos in a way that is invisible to the naked eye, and it is the free option. "Original Quality" keeps photos exactly as your camera captured them, but it counts fully toward your 15 GB limit and fills up faster.
+When you set up backup, you will choose "Storage Saver" quality (formerly called "High Quality"). This slightly reduces the size of very large photos in a way that is invisible to the naked eye. And it is the free option. "Original Quality" keeps photos exactly as your camera captured them. But it counts fully toward your 15 GB limit and fills up faster.
 
 **What happens when storage fills up?** Google will stop backing up new photos and will send you an email warning. You can either delete old files from Google Drive or Gmail to free up space, or pay for more storage (Google One plans start at $1.99/month for 100 GB).
 

@@ -114,7 +114,7 @@ Hot Corners work alongside trackpad gestures — you can have both active at the
     publishedAt: `2026-04-20`,
     body: `AirDrop is Apple's wireless file-sharing system that works between iPhones, iPads, and Macs. When both devices are nearby, you can send photos, documents, links, contacts, or almost any file without cables, email, or a USB drive. The transfer happens over a direct Wi-Fi connection between the two devices — it's fast and doesn't use your cellular data or internet connection.
 
-Before using AirDrop, check that both devices meet the requirements: both need Wi-Fi and Bluetooth turned on, the receiving device needs to be unlocked and awake, and they should be within about 30 feet of each other. You don't need to be on the same Wi-Fi network — AirDrop creates its own direct connection.
+Before using AirDrop, check that both devices meet the requirements: both need Wi-Fi and Bluetooth turned on, the receiving device needs to be unlocked and awake. And they should be within about 30 feet of each other. You don't need to be on the same Wi-Fi network — AirDrop creates its own direct connection.
 
 On an iPhone or iPad, AirDrop is in Control Center. Swipe down from the top-right corner, then press and hold the network tile (the box with Wi-Fi, Bluetooth, and Airplane mode icons). Tap AirDrop to turn it on and set who can send to you: Contacts Only or Everyone. Use Contacts Only for day-to-day use and switch to Everyone only when sending to someone not in your contacts.
 
@@ -368,7 +368,7 @@ If you want the best image quality available for a home webcam, the Logitech Bri
 
 Setting up any of these is the same: plug the USB cable into your computer. On Zoom, go to Settings > Video > Camera and select the new webcam from the dropdown. On Teams, go to Settings > Devices > Camera. The webcam takes over right away.
 
-If you own an iPhone (model 11 or newer) running iOS 17 or later, and you have a Mac, you may not need to buy a webcam at all. Apple's Continuity Camera feature uses your iPhone as a webcam wirelessly. The iPhone camera is a lot better than any standalone webcam in the same price range.`,
+If you own an iPhone (model 11 or newer) running iOS 17 or later. And you have a Mac, you may not need to buy a webcam at all. Apple's Continuity Camera feature uses your iPhone as a webcam wirelessly. The iPhone camera is a lot better than any standalone webcam in the same price range.`,
     steps: [
       {
         title: `Decide whether you need an upgrade`,
@@ -405,9 +405,9 @@ If you own an iPhone (model 11 or newer) running iOS 17 or later, and you have a
     publishedAt: `2026-04-20`,
     body: `LinkedIn is the world's largest professional network, with more than 900 million members. While many people think of it as a job-hunting site, it's also used by small business owners, consultants, retirees staying connected in their industry, and professionals who want to keep up with news in their field. You don't have to be looking for a job to benefit from a good LinkedIn profile.
 
-Your profile photo is the first thing anyone sees, and it matters more than you might expect. LinkedIn research suggests that profiles with photos receive dramatically more attention than those without. Use a clear, recent photo where you're facing the camera with a neutral or professional background. It doesn't need to be a studio headshot — a well-lit photo taken by a friend against a plain wall works fine.
+Your profile photo is the first thing anyone sees. And it matters more than you might expect. LinkedIn research suggests that profiles with photos receive dramatically more attention than those without. Use a clear, recent photo where you're facing the camera with a neutral or professional background. It doesn't need to be a studio headshot — a well-lit photo taken by a friend against a plain wall works fine.
 
-Below your name is the headline — a short description that appears everywhere your name shows up on LinkedIn. By default it shows your current job title, but you can change it to something more descriptive. Instead of "Retired Teacher," try "Former Educator | Curriculum Writer | Educational Consultant." Instead of "Owner," try "Owner, Miller's Bakery | Specialty Cakes and Pastries."
+Below your name is the headline — a short description that appears everywhere your name shows up on LinkedIn. By default it shows your current job title. But you can change it to something more descriptive. Instead of "Retired Teacher," try "Former Educator | Curriculum Writer | Educational Consultant." Instead of "Owner," try "Owner, Miller's Bakery | Specialty Cakes and Pastries."
 
 The About section (sometimes called the Summary) is where you tell your story in a few paragraphs. Write in first person, as if you're talking to someone. Describe what you do, what you've accomplished, what you're interested in, and what kind of connections or opportunities you're looking for. Keep it genuine — this isn't a formal biography.
 
@@ -886,7 +886,7 @@ Always keep Signal updated — signal.org releases security updates often, and r
     difficulty: `Beginner`,
     readTime: `6 min`,
     publishedAt: `2026-04-20`,
-    body: `Discord started as a communication platform for gamers, but it has grown into something much broader. Today, communities of all kinds use Discord to organize — hobby groups, sports fans, book clubs, professional networks, mental health support communities, neighborhood associations, and yes, gaming groups. If you've received a Discord invite link from a family member, hobby group, or organization, this guide will help you get started.
+    body: `Discord started as a communication platform for gamers. But it has grown into something much broader. Today, communities of all kinds use Discord to organize — hobby groups, sports fans, book clubs, professional networks, mental health support communities, neighborhood associations, and yes, gaming groups. If you've received a Discord invite link from a family member, hobby group, or organization, this guide will help you get started.
 
 Discord is organized around "servers" — private communities each with their own name, purpose, and set of channels. Think of a server like a private clubhouse. Inside each server, there are text channels (for written conversation) and voice channels (for real-time audio conversation). Text channels start with a # symbol, like #general or #recipes.
 
@@ -1180,7 +1180,7 @@ Air Actions work when the S Pen is held in the air near (not touching) the scree
     publishedAt: `2026-04-20`,
     body: `A ring light is a circular light source that sits in front of you and produces even, shadow-free illumination on your face. Originally used by makeup artists and photographers, ring lights have become standard equipment for anyone who regularly appears on video calls, records YouTube videos, or creates content for social media. The circular shape is why they work so well — light coming from all sides of the circle fills in shadows that a single flat light source would create.
 
-You may have noticed in professional-looking videos or video calls that the person's eyes have a circular catchlight — a small bright ring reflected in their pupils. This is the ring light reflection, and it actually makes the eyes look more alive and engaged. It's subtle but effective.
+You may have noticed in professional-looking videos or video calls that the person's eyes have a circular catchlight — a small bright ring reflected in their pupils. This is the ring light reflection. And it actually makes the eyes look more alive and engaged. It's subtle but effective.
 
 Ring lights come in several sizes. A 6-inch clip-on model costs around $15–25 and attaches directly to your laptop screen, positioning the light right around your camera. It's the smallest and most portable option, and for basic video calls it makes a genuine difference. The downside is that a small light source doesn't spread as evenly across your face.
 

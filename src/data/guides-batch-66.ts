@@ -249,7 +249,7 @@ You can withdraw your money anytime — Acorns is not locked in. But note that s
     difficulty: `Intermediate`,
     readTime: `6 min`,
     publishedAt: `2026-04-20`,
-    body: `A VPN — which stands for Virtual Private Network — is a tool that encrypts your internet connection and routes it through a server in another location. When you use a VPN, websites and anyone monitoring your network connection see the VPN server's address instead of your real one. This provides two main benefits: it hides your activity from people on the same network (important on public Wi-Fi), and it hides your browsing activity from your Internet Service Provider (ISP).
+    body: `A VPN — which stands for Virtual Private Network — is a tool that encrypts your internet connection and routes it through a server in another location. When you use a VPN, websites and anyone monitoring your network connection see the VPN server's address instead of your real one. This provides two main benefits: it hides your activity from people on the same network (important on public Wi-Fi). And it hides your browsing activity from your Internet Service Provider (ISP).
 
 The most important time to use a VPN is on public Wi-Fi — at coffee shops, airports, hotels, and libraries. On a public network, other people on the same network can potentially intercept your unencrypted traffic. A VPN prevents this by encrypting everything before it leaves your device.
 
@@ -687,7 +687,7 @@ Cozi is available on iPhone, Android, and web browsers. One parent creates a fam
 
 Each family member gets their own color in the calendar, so at a glance you can see whose event is whose. Adding an event is straightforward: tap the + button, choose a date and time, select which family member the event is for (or choose "All" for family-wide events), and save. Everyone in the family sees it right away on their own devices.
 
-Cozi's shared shopping list is one of its most practical features. You can add items from anywhere, and when someone is at the store, they can see the list update in real time and check items off as they go. No more calling home to ask if you need bread. Each list item is visible to everyone, and you can create multiple lists — one for groceries, one for a home improvement project, one for holiday shopping.
+Cozi's shared shopping list is one of its most practical features. You can add items from anywhere, and when someone is at the store, they can see the list update in real time and check items off as they go. No more calling home to ask if you need bread. Each list item is visible to everyone. And you can create multiple lists — one for groceries, one for a home improvement project, one for holiday shopping.
 
 The Meal Planner lets you plan dinners for the week and save recipes. If you find a recipe online, Cozi can import it automatically by URL. Planned meals can feed into your shopping list, so the ingredients appear automatically.
 
@@ -730,7 +730,7 @@ For families who already use Google Calendar heavily, Cozi can sync with Google 
     difficulty: `Beginner`,
     readTime: `5 min`,
     publishedAt: `2026-04-20`,
-    body: `Google Messages is the official texting app recommended for Android phones, and it comes pre-installed on many Android devices, including Pixel phones. On some Samsung phones, Samsung Messages is the default instead — but you can switch to Google Messages if you prefer.
+    body: `Google Messages is the official texting app recommended for Android phones. And it comes pre-installed on many Android devices, including Pixel phones. On some Samsung phones, Samsung Messages is the default instead — but you can switch to Google Messages if you prefer.
 
 The core function of Google Messages is the same as any texting app: send and receive SMS and MMS text messages. But Google Messages also supports a newer messaging standard called RCS — which stands for Rich Communication Services. RCS is like a significant upgrade to traditional texting, and when both you and the person you're messaging use an RCS-capable app, the experience improves substantially.
 
@@ -832,7 +832,7 @@ Proton Mail has a free plan with 500MB of storage and one email address (ending 
 
 Creating an account doesn't require you to provide any personal information — you don't need to give a phone number or link an existing email address, though doing so helps with account recovery if you ever forget your password. Your password is critical: because Proton can't access your account, if you forget your password and haven't set up recovery options, your messages may be permanently inaccessible.
 
-Sending and receiving email works the same way as any other email service. When both you and the recipient use Proton Mail, messages are automatically encrypted end-to-end — no extra steps required. When you send to someone who uses Gmail, Outlook, or another service, the email is still encrypted while stored on Proton's servers, but it travels as a regular email once it leaves. For sensitive messages to non-Proton users, you can set a password: the recipient gets a link and must enter the password you share with them separately (ideally via phone or text, not email) to read the message.
+Sending and receiving email works the same way as any other email service. When both you and the recipient use Proton Mail, messages are automatically encrypted end-to-end — no extra steps required. When you send to someone who uses Gmail, Outlook, or another service, the email is still encrypted while stored on Proton's servers. But it travels as a regular email once it leaves. For sensitive messages to non-Proton users, you can set a password: the recipient gets a link and must enter the password you share with them separately (ideally via phone or text, not email) to read the message.
 
 Proton Mail's zero-knowledge policy means that even if a government demands your data, Proton can only hand over encrypted files they cannot read. They cannot tell authorities what's in your messages. However, metadata — like who you emailed and when — may be accessible in some legal circumstances.
 

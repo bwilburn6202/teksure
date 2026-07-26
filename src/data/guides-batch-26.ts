@@ -527,7 +527,7 @@ This same subscription list is visible from a Mac's App Store or from account.ap
 
 Like the iPhone subscription audit, reviewing your Google Play subscriptions is one of the most effective ways to identify forgotten charges. Surveys find that most smartphone users have at least 2-3 subscriptions they either forgot about or no longer use.
 
-Canceling a Google Play subscription is immediate and simple. You retain access to the subscription's features until the current billing period ends, and you are not charged again after cancellation.
+Canceling a Google Play subscription is immediate and simple. You retain access to the subscription's features until the current billing period ends. And you are not charged again after cancellation.
 
 Keep in mind that subscriptions you signed up for directly through a company's website — Netflix, Spotify, Disney+ if you signed up on their site — are not managed in Google Play. Those must be canceled through each company's website. The Google Play subscriptions page only shows subscriptions you signed up for through the Google Play billing system (typically when you signed up inside an app on your Android phone).
 
@@ -854,7 +854,7 @@ Nexus and Pixel phones also have a crisis location sharing feature that sends yo
     thumbnailEmoji: '',
     publishedAt: '2026-04-19',
     difficulty: 'Beginner',
-    body: `Original Medicare (Parts A and B) covers most hospital and medical costs, but it does not cover everything. You are responsible for deductibles, copayments, and coinsurance — costs that can add up to thousands of dollars during a serious illness or surgery. Medigap (also called Medicare Supplement Insurance) is private insurance that covers many of these out-of-pocket costs that Original Medicare leaves unpaid.
+    body: `Original Medicare (Parts A and B) covers most hospital and medical costs. But it does not cover everything. You are responsible for deductibles, copayments, and coinsurance — costs that can add up to thousands of dollars during a serious illness or surgery. Medigap (also called Medicare Supplement Insurance) is private insurance that covers many of these out-of-pocket costs that Original Medicare leaves unpaid.
 
 Medigap is sold by private insurance companies but is highly regulated by the federal government. Plans are standardized and labeled with letters (Plan A, Plan B, Plan C, Plan D, Plan F, Plan G, Plan K, Plan L, Plan M, Plan N). All companies selling Plan G must offer the exact same Plan G benefits — you are only shopping for the best price, not for different coverage.
 

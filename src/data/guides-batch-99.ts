@@ -15,7 +15,7 @@ export const guidesBatch99: Guide[] = [
     thumbnailEmoji: '',
     publishedAt: '2026-04-21',
     difficulty: 'Beginner',
-    body: `A telehealth appointment is a regular doctor visit that happens on a video call instead of in person. You sit in your own living room, your doctor appears on the screen, and you talk the same way you would in an exam room. Medicare, Medicaid, and most private insurance now cover these visits, and many clinics offer them for routine check-ins, medication questions, and follow-ups after a procedure.
+    body: `A telehealth appointment is a regular doctor visit that happens on a video call instead of in person. You sit in your own living room, your doctor appears on the screen. And you talk the same way you would in an exam room. Medicare, Medicaid, and most private insurance now cover these visits, and many clinics offer them for routine check-ins, medication questions, and follow-ups after a procedure.
 
 The biggest worry people have is the technology. The good news is that the clinic usually does most of the work for you. A staff member sends you a link by email or text, and when you tap that link at the right time, a little app opens and puts you on the call. You do not need to install anything complicated or create an account with a stranger.
 
@@ -72,7 +72,7 @@ One common hiccup: people click the link too early and land on a blank page, or 
 
 You do not need a Zoom account to join a call somebody else set up — you only need the link or the nine-digit meeting ID they share with you. Zoom is free for these kinds of calls. If you want to host your own meeting longer than 40 minutes, that needs a paid plan, but most family calls are well under that.
 
-Zoom works on almost any device: iPhone, iPad, Android phone, Android tablet, Windows computer, or Mac. The first time you join, your device will ask to download the Zoom app. Say yes — it is safe and free, and it comes from the official Zoom company.
+Zoom works on almost any device: iPhone, iPad, Android phone, Android tablet, Windows computer, or Mac. The first time you join, your device will ask to download the Zoom app. Say yes — it is safe and free. And it comes from the official Zoom company.
 
 Two small things cause most of the trouble. First, muting. There is a microphone button at the bottom of the screen. If there is a red line through it, the other people cannot hear you. Tap once to fix it. Second, the camera. Next to the microphone is a camera button. If it has a red line, people can hear you but not see you. These two buttons solve about 90% of "they can't hear me!" moments.
 
@@ -229,7 +229,7 @@ If your carrier (Verizon, AT&T, or T-Mobile) already transferred your phone numb
     difficulty: 'Beginner',
     body: `Taking a screenshot means making a picture of whatever is on your screen right now. It is one of the most useful skills on a computer — it lets you show a grandchild exactly what error message you are seeing, save a confirmation number from a purchase, or keep a copy of a recipe that might disappear from a website later.
 
-On a Mac, screenshots are built in. You do not need to download anything. There are three main shortcuts to remember, and they all start by holding down Shift and the Command key together (Command is the key with the little looped square symbol, right next to the space bar).
+On a Mac, screenshots are built in. You do not need to download anything. There are three main shortcuts to remember. And they all start by holding down Shift and the Command key together (Command is the key with the little looped square symbol, right next to the space bar).
 
 The Mac saves screenshots straight to your desktop by default. If you take a few in a row, the desktop gets cluttered — that is normal. The file names look like "Screenshot 2026-04-21 at 3.15.47 PM.png." You can drag these into emails, attach them to messages, or drop them into a folder for safekeeping.
 
@@ -272,7 +272,7 @@ One thing that trips people up: the shortcuts use numbers across the top of the 
     thumbnailEmoji: '',
     publishedAt: '2026-04-21',
     difficulty: 'Beginner',
-    body: `Alexa is the voice that lives inside Amazon Echo speakers. You say her name out loud, ask a question, and she answers back in a calm voice. People use her to check the weather, set cooking timers, turn on lights, play music, and make hands-free phone calls — all without ever touching a screen.
+    body: `Alexa is the voice that lives inside Amazon Echo speakers. You say her name out loud, ask a question. And she answers back in a calm voice. People use her to check the weather, set cooking timers, turn on lights, play music, and make hands-free phone calls — all without ever touching a screen.
 
 The Echo speaker is always listening for the word "Alexa" (or "Amazon" or "Computer" if you changed the wake word). She does not record what you say until she hears her name. Then a blue light ring on top of the speaker turns on, which means she is paying attention. When the blue light goes off, she is done listening.
 
@@ -433,7 +433,7 @@ One everyday tip: you can pinch the screen with two fingers to zoom in and out. 
     difficulty: 'Beginner',
     body: `A "my Social Security" account is your personal, secure connection to the Social Security Administration at ssa.gov. Once you have one, you can check your benefit amount, get a letter showing what you receive each month (called a benefit verification letter), update your direct deposit bank information, and see your earnings record from every job you have ever had.
 
-Creating the account is free and takes about 15 minutes, but it does require some care. You will need your Social Security number, a US mailing address, a phone number, and an email address you check regularly. You will also be asked a series of identity-verification questions based on your credit history — things like "which of these addresses have you lived at?" — to make sure it is really you.
+Creating the account is free and takes about 15 minutes. But it does require some care. You will need your Social Security number, a US mailing address, a phone number, and an email address you check regularly. You will also be asked a series of identity-verification questions based on your credit history — things like "which of these addresses have you lived at?" — to make sure it is really you.
 
 In recent years, the Social Security Administration moved to a partner called Login.gov (or ID.me for some people) to handle the sign-in. If you already have a Login.gov account for other federal services, you can use that same account. If not, you will create one during setup. This is the same login system used by the IRS and the USPS, so it is worth setting up well.
 
@@ -649,7 +649,7 @@ Be careful about giving the app permission to access your location and notificat
     difficulty: 'Beginner',
     body: `MyChart is the online patient portal used by many hospitals and doctors' offices in the United States. It is where you can message your doctor with a question, see the results of blood tests, request a prescription refill, book appointments, and read your after-visit summary — all from your phone or computer.
 
-MyChart is made by a company called Epic, but you do not sign up at Epic's website. Instead, your specific clinic or hospital system (like UCLA Health, Cleveland Clinic, or your local hospital) has its own version of MyChart. You sign up through their website. The app on your phone, however, is the same for every system — you search for "MyChart" in the app store, install it, and then pick your healthcare organization from a list.
+MyChart is made by a company called Epic. But you do not sign up at Epic's website. Instead, your specific clinic or hospital system (like UCLA Health, Cleveland Clinic, or your local hospital) has its own version of MyChart. You sign up through their website. The app on your phone, however, is the same for every system — you search for "MyChart" in the app store, install it, and then pick your healthcare organization from a list.
 
 The first time you sign up, you will need either an activation code from your doctor's office (printed on a recent visit summary or at the front desk) or a way to prove your identity by matching personal information already on file. Once you are in, you can link multiple providers — so if you see a cardiologist at one hospital and a family doctor at another, both may appear in the same MyChart app.
 
@@ -923,7 +923,7 @@ Scammers keep lists of past victims and share them with each other. If you were 
 
 This is always a scam. There is no legitimate private company that can reliably recover money that was wired, sent in cryptocurrency, or put on gift cards. Law enforcement does not charge victims for returning recovered funds. The FTC, FBI, and state attorneys general never call demanding fees to release a refund. If anyone asks you to pay anything — even a small "processing fee" — to get scammed money back, they are trying to scam you a second time.
 
-Real recovery, when it happens, is handled by banks and payment providers working with law enforcement, and it is free. Your own bank's fraud department is where to start. They know their own reversal windows (how long they have to claw back a transfer), and they will work directly with the other bank. If you sent a wire, you usually have a short window — sometimes just a few hours — to reverse it, which is why calling your bank quickly matters so much.
+Real recovery, when it happens, is handled by banks and payment providers working with law enforcement, and it is free. Your own bank's fraud department is where to start. They know their own reversal windows (how long they have to claw back a transfer). And they will work directly with the other bank. If you sent a wire, you usually have a short window — sometimes just a few hours — to reverse it, which is why calling your bank quickly matters so much.
 
 The emotional side of this is the hardest part. People who have been scammed often feel embarrassed and want to make it right. Scammers know this and use it. If you catch yourself thinking, "I need to get my money back and nobody has to know," please talk to a family member, your bank, and law enforcement before doing anything else. Those are the people who can actually help — at no cost.`,
     steps: [
@@ -941,7 +941,7 @@ The emotional side of this is the hardest part. People who have been scammed oft
       },
       {
         title: 'File a report at IC3.gov and ReportFraud.ftc.gov',
-        content: 'Report the original scam at IC3.gov (FBI) and ReportFraud.ftc.gov (FTC). These are the only places a recovery would come from, and it would be through official channels — never a phone call demanding payment.',
+        content: 'Report the original scam at IC3.gov (FBI) and ReportFraud.ftc.gov (FTC). These are the only places a recovery would come from. And it would be through official channels — never a phone call demanding payment.',
       },
       {
         title: 'Check lawyers and services at your state bar',
@@ -970,7 +970,7 @@ The emotional side of this is the hardest part. People who have been scammed oft
     thumbnailEmoji: '',
     publishedAt: '2026-04-21',
     difficulty: 'Beginner',
-    body: `Google Meet is Google's video call service. If you have a Gmail account, you already have Google Meet — there is nothing extra to sign up for. It works much like Zoom: someone sends you a link, you tap it, and you land in a video call with everyone else who was invited.
+    body: `Google Meet is Google's video call service. If you have a Gmail account, you already have Google Meet — there is nothing extra to sign up for. It works much like Zoom: someone sends you a link, you tap it. And you land in a video call with everyone else who was invited.
 
 Google Meet is free for calls up to 60 minutes with up to 100 people. That covers almost every family call, book club, or small meeting you would ever have. Longer meetings or larger groups are possible with a paid Google Workspace plan, but the free version is more than enough for regular use.
 
@@ -1077,7 +1077,7 @@ Siri can also read your text messages and emails out loud when you have a Blueto
     thumbnailEmoji: '',
     publishedAt: '2026-04-21',
     difficulty: 'Beginner',
-    body: `Google Assistant is Google's voice helper, the counterpart to Apple's Siri and Amazon's Alexa. It comes built into most Android phones, and you can also install it on an iPhone from the App Store. You wake it up by saying "Hey Google" or "OK Google" or by pressing and holding the home button on older Android phones.
+    body: `Google Assistant is Google's voice helper, the counterpart to Apple's Siri and Amazon's Alexa. It comes built into most Android phones. And you can also install it on an iPhone from the App Store. You wake it up by saying "Hey Google" or "OK Google" or by pressing and holding the home button on older Android phones.
 
 Google Assistant is especially good at answering questions, because it is tied directly into Google's search. Ask "How tall is Mount Everest?" and you get an instant answer read aloud. Ask "What's the traffic like to Costco?" and it tells you how long the drive will take right now. Ask "What movies are playing near me?" and it reads the list for you.
 
@@ -1134,7 +1134,7 @@ One extra thing Google Assistant does particularly well: it can read your screen
 
 AirPlay is Apple's wireless system. Most smart TVs sold in the last few years — including many Samsung, LG, Sony, Vizio, and Roku models — have AirPlay built in. If you have an Apple TV box, it has AirPlay too. Your iPhone and the TV need to be on the same Wi-Fi network. Then you swipe down from the top-right corner of your iPhone, tap Screen Mirroring, pick the TV from the list, and your iPhone appears on the big screen.
 
-If your TV does not have AirPlay, a cable is the most reliable backup. Apple sells an adapter called the Lightning Digital AV Adapter (about $50) or, for newer iPhones with USB-C ports, a USB-C to HDMI adapter. You plug the adapter into the iPhone, plug an HDMI cable from the adapter into the TV, switch the TV to that HDMI input, and you are up and running.
+If your TV does not have AirPlay, a cable is the most reliable backup. Apple sells an adapter called the Lightning Digital AV Adapter (about $50) or, for newer iPhones with USB-C ports, a USB-C to HDMI adapter. You plug the adapter into the iPhone, plug an HDMI cable from the adapter into the TV, switch the TV to that HDMI input. And you are up and running.
 
 AirPlay is better for showing a few things and walking around the room. A cable is better for a long movie or when the Wi-Fi is spotty. The picture quality is the same either way.
 
@@ -1244,7 +1244,7 @@ Apple Pay is accepted almost everywhere in the US. If you walk up to a register 
 
 Because Zelle is built right into your existing bank app (Bank of America, Chase, Wells Fargo, Capital One, and nearly 2,000 more), there is usually no extra app to download. You open your regular bank app, find the Zelle option (often under "Transfer" or "Send Money"), and follow the prompts. If your bank is small enough that it does not include Zelle, you can use the standalone Zelle app.
 
-Here is the single most important rule about Zelle, and it is the rule that the federal Consumer Financial Protection Bureau (CFPB) warns every American about: only send Zelle money to people you personally know and trust. Unlike a credit card, Zelle transactions cannot be reversed. If you send $500 to a stranger expecting them to ship you something, and they never do, Zelle and your bank are usually not required to give the money back. It is like cash — gone once sent.
+Here is the single most important rule about Zelle. And it is the rule that the federal Consumer Financial Protection Bureau (CFPB) warns every American about: only send Zelle money to people you personally know and trust. Unlike a credit card, Zelle transactions cannot be reversed. If you send $500 to a stranger expecting them to ship you something. And they never do, Zelle and your bank are usually not required to give the money back. It is like cash — gone once sent.
 
 Zelle scams almost always come through two channels: someone pretending to sell you something on Facebook Marketplace or Craigslist asks for Zelle (never do this), or someone pretending to be your bank calls and tells you there is a fraud on your account and you need to "send yourself money through Zelle to a safe account" (also always a scam — real banks will never ask you to do this).
 
@@ -1297,7 +1297,7 @@ Used between people you know — your son for rent, your grandchild for a birthd
     thumbnailEmoji: '',
     publishedAt: '2026-04-21',
     difficulty: 'Beginner',
-    body: `Over time, most phones collect a lot of apps — some you opened once, some you forgot you had, some that came pre-installed. Deleting the ones you do not use has three benefits: your home screen gets tidier, your phone speeds up slightly, and you free up storage space for photos and things you actually care about.
+    body: `Over time, most phones collect a lot of apps — some you opened once, some you forgot you had, some that came pre-installed. Deleting the ones you do not use has three benefits: your home screen gets tidier, your phone speeds up slightly. And you free up storage space for photos and things you actually care about.
 
 The good news is that deleting an app does not lose your data permanently, in most cases. If the app stored information with your account (like Facebook posts, Gmail messages, or your Amazon order history), that stays safe on the company's servers. If you ever change your mind and install the app again, signing back in brings everything back. Only apps that stored things only on your phone — like certain notes apps or offline games — actually lose content when deleted.
 

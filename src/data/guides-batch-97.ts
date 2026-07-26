@@ -90,7 +90,7 @@ Ecobee models also include a built-in Alexa speaker, intercom, and integration w
     thumbnailEmoji: ``,
     publishedAt: `2026-04-20`,
     difficulty: `Intermediate`,
-    body: `MyQ is Chamberlain and LiftMaster's smart garage system, and it turns a regular garage door opener into one you can control from anywhere in the world through your phone. If you've ever driven halfway to work wondering whether you left the garage door open, MyQ solves that problem in about 20 minutes of setup.
+    body: `MyQ is Chamberlain and LiftMaster's smart garage system. And it turns a regular garage door opener into one you can control from anywhere in the world through your phone. If you've ever driven halfway to work wondering whether you left the garage door open, MyQ solves that problem in about 20 minutes of setup.
 
 The MyQ Smart Garage Hub is a small device that mounts near the ceiling of your garage, plugs into a standard outlet, and talks to your opener using a Wi-Fi bridge. Most Chamberlain and LiftMaster openers made after 1993 are compatible — there's a compatibility checker on the MyQ website. The hub works with a door sensor (a two-piece magnetic sensor that attaches to the door itself) so MyQ knows when the door opens and closes, not just when a command was sent.
 
@@ -176,7 +176,7 @@ Two versions exist: battery-powered (6-year AA lithium battery life) and wired (
 
 Smart leak sensors come in two flavors. Point sensors are small pucks you set on the floor in specific risk spots — under the kitchen sink, next to the water heater, behind the washing machine, under the dishwasher, near toilets, and in the ice maker line's tray. They have a Wi-Fi chip and a battery that typically lasts 2 to 5 years. When water touches the two metal contacts on the bottom, the sensor sends you a phone alert and sounds a local beep. Point sensors cost roughly $20 to $40 each. Good brands include Samsung SmartThings, YoLink, Eve Water Guard, and Aqara.
 
-Whole-home monitors are a step up. Brands like Moen Flo, Phyn Plus, and Flume attach to your main water line or water meter and measure water flow patterns. They can detect a slow leak behind a wall that point sensors would never see, alert you if someone leaves a tub running, and — in the case of Moen Flo and Phyn Plus — automatically shut off the water if they detect a major burst. These run $400 to $700 installed, but they can prevent catastrophic damage.
+Whole-home monitors are a step up. Brands like Moen Flo, Phyn Plus, and Flume attach to your main water line or water meter and measure water flow patterns. They can detect a slow leak behind a wall that point sensors would never see, alert you if someone leaves a tub running, and — in the case of Moen Flo and Phyn Plus — automatically shut off the water if they detect a major burst. These run $400 to $700 installed. But they can prevent catastrophic damage.
 
 Here's a real money nudge: many home insurance companies (Travelers, State Farm, Liberty Mutual, Nationwide) give premium discounts of 3 to 10 percent for installing a whole-home leak monitor. The device can pay for itself in a few years, even before a leak.`,
     steps: [
@@ -296,9 +296,9 @@ Custom feeds are Bluesky's secret weapon. Instead of one algorithm controlling w
     difficulty: `Intermediate`,
     body: `Mastodon often gets described as "Twitter but different," and that's half true — it looks like Twitter, but the way it's built is genuinely unusual. Instead of one company running one website, Mastodon is a collection of thousands of independent servers (called "instances") that all speak the same language and connect to each other. Think of it like email: your Gmail account and a friend's Yahoo account can send messages to each other even though Gmail and Yahoo are different companies.
 
-When you sign up for Mastodon, you first pick a server. Mastodon.social is the largest and the most common starting point, but there are servers focused on art (mastodon.art), tech (infosec.exchange, hachyderm.io), journalism (journa.host), and thousands of smaller communities. Your username looks like @yourname@servername — the server is part of your identity, like the @gmail.com part of an email.
+When you sign up for Mastodon, you first pick a server. Mastodon.social is the largest and the most common starting point. But there are servers focused on art (mastodon.art), tech (infosec.exchange, hachyderm.io), journalism (journa.host), and thousands of smaller communities. Your username looks like @yourname@servername — the server is part of your identity, like the @gmail.com part of an email.
 
-You can still follow people on any other Mastodon server. If someone is @sarah@mastodon.art and you're on mastodon.social, you can follow her, reply to her, and she sees it — just like emailing across providers.
+You can still follow people on any other Mastodon server. If someone is @sarah@mastodon.art and you're on mastodon.social, you can follow her, reply to her. And she sees it — just like emailing across providers.
 
 Mastodon shows three timelines. Home is people you follow. Local is everyone on your server (a great way to discover). Federated is everyone your server has ever seen a post from — it's firehose-like and overwhelming to most new users, safe to ignore at first.
 
@@ -337,9 +337,9 @@ The official Mastodon app is fine, but many people prefer third-party apps for i
     thumbnailEmoji: ``,
     publishedAt: `2026-04-20`,
     difficulty: `Beginner`,
-    body: `TikTok Live lets you broadcast real-time video to your followers and anyone else who happens to find the broadcast. Live streams show up at the top of the For You feed for interested viewers, and you can talk with them through live comments. The format is excellent for Q&As, crafting demos, cooking, gaming reactions, performances, or talking through an event as it happens.
+    body: `TikTok Live lets you broadcast real-time video to your followers and anyone else who happens to find the broadcast. Live streams show up at the top of the For You feed for interested viewers. And you can talk with them through live comments. The format is excellent for Q&As, crafting demos, cooking, gaming reactions, performances, or talking through an event as it happens.
 
-Before you can go live, you need to meet two requirements. You must be at least 18 years old, and you must have 1,000 or more followers on your account. (TikTok may have some regional exceptions, but the 1,000-follower minimum is consistent for most US users.) These rules protect against spam and help make sure creators have an actual audience before the live button appears.
+Before you can go live, you need to meet two requirements. You must be at least 18 years old. And you must have 1,000 or more followers on your account. (TikTok may have some regional exceptions, but the 1,000-follower minimum is consistent for most US users.) These rules protect against spam and help make sure creators have an actual audience before the live button appears.
 
 Once you qualify, the button is at the bottom of the screen. Tap the plus to create, then swipe across the capture modes until you see LIVE. You'll be prompted to set a title ("Friday night Q&A — ask me anything about gardening"), upload a cover image, and choose settings like whether comments are open, whether the broadcast is public, and whether you want to invite another user to co-host.
 
@@ -550,7 +550,7 @@ The one absolute rule: never let AI invent qualifications. If it writes that you
 
 A good bedtime story prompt includes the child's first name, age (so the vocabulary and attention span match), a theme or setting they love (pirates, octopuses, unicorns, trains, space), optional supporting characters (a sibling, a pet, a stuffed animal), a target length (5 minutes is about 500 to 700 words), and the mood you want — calming is usually the goal at bedtime, not thrilling.
 
-A strong prompt example: "Write a calming 5-minute bedtime story for my 4-year-old named Emma who loves sea creatures. The main character is Emma, and she meets a friendly octopus who learns about sharing with underwater friends. Gentle, soothing tone. End with Emma feeling sleepy and safe at home."
+A strong prompt example: "Write a calming 5-minute bedtime story for my 4-year-old named Emma who loves sea creatures. The main character is Emma. And she meets a friendly octopus who learns about sharing with underwater friends. Gentle, soothing tone. End with Emma feeling sleepy and safe at home."
 
 You can build a whole series with recurring characters — "the Emma and the Friendly Octopus books" — by saving the opening paragraph describing Emma and her world and reusing it each night. If you want illustrations, Microsoft Designer or ChatGPT (with DALL-E) can generate a watercolor cover for each story.
 
@@ -707,14 +707,14 @@ Once you've found an account, the site JustDeleteMe.xyz is your friend. It's a c
   {
     slug: `5g-vs-wifi-explained`,
     title: `5G vs WiFi — When Each One Is Faster`,
-    excerpt: `5G and WiFi are both wireless internet, but they work in completely different ways. Here's when each one is your best option.`,
+    excerpt: `5G and WiFi are both wireless internet. But they work in completely different ways. Here's when each one is your best option.`,
     category: `tech-explained`,
     tags: [`5G`, `WiFi`, `internet speed`, `mobile data`, `tech explained`],
     readTime: `7 min`,
     thumbnailEmoji: ``,
     publishedAt: `2026-04-20`,
     difficulty: `Beginner`,
-    body: `5G and WiFi are both wireless ways to connect to the internet, but they work through different systems and are fast in different situations. Understanding the difference helps you know when to use your cellular data, when to rely on home WiFi, and whether upgrading one or the other is worth it.
+    body: `5G and WiFi are both wireless ways to connect to the internet. But they work through different systems and are fast in different situations. Understanding the difference helps you know when to use your cellular data, when to rely on home WiFi, and whether upgrading one or the other is worth it.
 
 WiFi is short-range wireless that comes from a router inside a building. Your home router, the one at a cafe, the one at a hotel — they all connect to the internet through a wired connection (fiber, cable, or DSL) and broadcast that connection over WiFi radio signals across maybe 100 feet indoors. The newest versions of WiFi — WiFi 6, WiFi 6E, and WiFi 7 — can deliver speeds of 1 Gbps or faster when the underlying wired connection supports it. Older routers (WiFi 4 or early WiFi 5) often cap at 100 to 300 Mbps regardless of your internet plan.
 
@@ -823,7 +823,7 @@ Passkeys are a newer method — they use your device's biometrics (Face ID, Touc
       },
       {
         title: `Turn on passkeys wherever offered`,
-        content: `Many services now offer passkeys as an option — Google, Apple, Microsoft, Amazon, PayPal, many banks. In the security settings, look for Passkeys or Passwordless Sign-In and turn it on. Your device's fingerprint or face becomes your 2FA, and you never type a code again.`,
+        content: `Many services now offer passkeys as an option — Google, Apple, Microsoft, Amazon, PayPal, many banks. In the security settings, look for Passkeys or Passwordless Sign-In and turn it on. Your device's fingerprint or face becomes your 2FA. And you never type a code again.`,
       },
       {
         title: `Tier your accounts by security level`,
@@ -1032,7 +1032,7 @@ The same rule applies to phone numbers you see in pop-up messages, emails, or te
     thumbnailEmoji: ``,
     publishedAt: `2026-04-21`,
     difficulty: `Beginner`,
-    body: `Google Chrome is the most popular web browser in the United States, and it comes with a handful of settings that can make a real difference for anyone who struggles with small text or wants a safer browsing experience. Out of the box, Chrome uses a standard font size that works well on big desktop monitors but can feel too small on a laptop or tablet. A few minutes of adjusting settings can make every website clearer and more comfortable.
+    body: `Google Chrome is the most popular web browser in the United States. And it comes with a handful of settings that can make a real difference for anyone who struggles with small text or wants a safer browsing experience. Out of the box, Chrome uses a standard font size that works well on big desktop monitors but can feel too small on a laptop or tablet. A few minutes of adjusting settings can make every website clearer and more comfortable.
 
 The most impactful change is increasing the default zoom level. Chrome lets you set a global zoom — meaning every website loads at a larger size automatically. You can also increase the font size independently, so text is larger even on websites that try to use small fonts. These two settings together transform the browsing experience for most people who find reading websites tiring.
 

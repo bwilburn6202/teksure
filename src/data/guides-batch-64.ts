@@ -63,7 +63,7 @@ Requesting a ride works the same way every time. The app detects your location a
 
 One of Lyft's most reassuring features is driver verification. Every driver's profile shows their name, photo, and the exact car they are driving — including the color and license plate. Before you get in, match those details to what the app shows. You can also tap a button to call or text your driver directly through the app if you need to give them special directions.
 
-When the trip ends, payment happens automatically. You can leave a tip inside the app, and you will be asked to rate the driver. Lyft also includes a safety feature called Smart Trip Check-In, which will check in with you during longer trips if anything seems unusual. You can share your live ride status with a family member or friend so someone you trust always knows where you are.`,
+When the trip ends, payment happens automatically. You can leave a tip inside the app. And you will be asked to rate the driver. Lyft also includes a safety feature called Smart Trip Check-In, which will check in with you during longer trips if anything seems unusual. You can share your live ride status with a family member or friend so someone you trust always knows where you are.`,
     category: `how-to`,
     tags: [`lyft`, `rideshare`, `transportation`, `getting around`],
     thumbnailEmoji: ``,
@@ -263,7 +263,7 @@ To get started, go to shipt.com on your computer or download the free Shipt app 
 
 Once you are set up, browse available stores in your area. Select your store, then add items to your cart the same way you would shop on any website. When your order is ready, choose a delivery window — many slots are available for the same day. You can even schedule deliveries for a specific day and time that works for your week.
 
-After placing the order, Shipt assigns a personal shopper. You will receive text updates as they shop, and you can communicate directly with your shopper through the Shipt app if an item is out of stock and you want a substitution. This live communication is one of the most useful parts of the service.
+After placing the order, Shipt assigns a personal shopper. You will receive text updates as they shop. And you can communicate directly with your shopper through the Shipt app if an item is out of stock and you want a substitution. This live communication is one of the most useful parts of the service.
 
 When your groceries arrive, the shopper leaves them at your door. You do not need to be present for the delivery. Tipping your shopper is optional but appreciated — 15 to 20 percent of your order total is standard. You can add the tip in the app after delivery.`,
     category: `app-guides`,
@@ -313,7 +313,7 @@ Subscription memberships can help if you order often. DashPass (from DoorDash) c
 
 One of the best ways to avoid fees entirely is to call the restaurant directly or order from their own website. Many restaurants — especially local and independently owned ones — offer online ordering without any third-party platform fees. You pick it up or they deliver it at a lower price.
 
-The pickup option on delivery apps is also underused. Both DoorDash and Uber Eats let you order ahead for pickup instead of delivery. You pay the menu price without any delivery fee, and you go to the restaurant at the scheduled time. This saves $5 to $15 per order.
+The pickup option on delivery apps is also underused. Both DoorDash and Uber Eats let you order ahead for pickup instead of delivery. You pay the menu price without any delivery fee. And you go to the restaurant at the scheduled time. This saves $5 to $15 per order.
 
 Promo codes are regularly available. Search for "[app name] promo code" before each order — sites like RetailMeNot or Honey often list working codes. Also check for deals inside the app itself, usually shown on the home screen or in a "Promotions" section. Many apps offer a lower service fee or free delivery on specific restaurants each day.
 
@@ -404,7 +404,7 @@ One important note: iPhones with iOS 15.2 or later have an easier path. If the p
     slug: `factory-reset-android-guide`,
     title: `How to Factory Reset Your Android Phone`,
     excerpt: `Resetting your Android phone to factory settings wipes it clean — great before selling or fixing stubborn issues.`,
-    body: `A factory reset on an Android phone erases all of your personal data — contacts, photos, apps, accounts, messages, and settings — and returns the phone to the state it was in the day it was purchased. This is the recommended step before selling or giving away your phone, and it can also resolve stubborn software problems that other fixes cannot solve.
+    body: `A factory reset on an Android phone erases all of your personal data — contacts, photos, apps, accounts, messages, and settings — and returns the phone to the state it was in the day it was purchased. This is the recommended step before selling or giving away your phone. And it can also resolve stubborn software problems that other fixes cannot solve.
 
 The backup step is the most important part of this entire process. Before resetting, go to Settings and search for "Backup." On most Android phones, you will find a "Google One backup" or "Backup to Google account" option. Turn it on and tap "Back Up Now." This saves your contacts, photos (to Google Photos), and app data to your Google account. If you use a Samsung phone, Samsung Cloud is an additional backup option found in Settings under "Accounts and backup."
 
@@ -545,7 +545,7 @@ For apps that request camera or microphone access but have no obvious reason to 
       },
       {
         title: `Deny permissions for apps that do not need them`,
-        content: `A flashlight app does not need access to your contacts. A simple game does not need your microphone. A recipe app does not need your location. When in doubt, tap "Don't allow." Most apps will still work fine without permissions they do not genuinely need, and you can always grant access later if the app asks again for a clear reason.`,
+        content: `A flashlight app does not need access to your contacts. A simple game does not need your microphone. A recipe app does not need your location. When in doubt, tap "Don't allow." Most apps will still work fine without permissions they do not genuinely need. And you can always grant access later if the app asks again for a clear reason.`,
         warning: `If an app refuses to work at all without a permission that seems unrelated to its purpose — for example, a weather app demanding microphone access — consider whether you want that app on your phone.`
       }
     ]
@@ -564,7 +564,7 @@ For the vast majority of apps, "Allow only while using the app" is the right set
 
 Google Maps keeps a separate record called Location History, which stores a timeline of everywhere you have traveled. You can turn this off or delete past history by opening Google Maps, tapping your profile picture, going to "Your data in Maps," and then "Location History." You can pause location history or delete specific time periods.
 
-For apps that have no reason to know your location — social media, shopping apps, news apps — set the permission to "Don't allow." They will still function for their core purpose. You will sometimes see a prompt asking to enable location for a feature, and you can decide in that moment whether it is worth it.
+For apps that have no reason to know your location — social media, shopping apps, news apps — set the permission to "Don't allow." They will still function for their core purpose. You will sometimes see a prompt asking to enable location for a feature. And you can decide in that moment whether it is worth it.
 
 Using "Approximate location" instead of "Precise location" is another option available in Android 14 and later. When you choose this, the app sees a general area rather than your exact address. This is useful for apps that need a rough sense of your city or region but do not need to know your exact street address.`,
     category: `safety-guides`,
@@ -676,7 +676,7 @@ If the Roomba gets stuck on a rug fringe, power cord, or under low furniture, th
       },
       {
         title: `Run your first cleaning cycle`,
-        content: `Tap "Clean" in the iRobot Home app. The Roomba will leave its dock and begin cleaning the room. On the first few runs, it maps the area — after 3–5 cleaning sessions, a complete floor plan of your home will appear in the app, and you can direct it to specific rooms.`
+        content: `Tap "Clean" in the iRobot Home app. The Roomba will leave its dock and begin cleaning the room. On the first few runs, it maps the area — after 3–5 cleaning sessions, a complete floor plan of your home will appear in the app. And you can direct it to specific rooms.`
       },
       {
         title: `Schedule automatic cleanings`,
@@ -794,7 +794,7 @@ If you install multiple smart detectors, they can be interconnected — when one
     slug: `windows-defender-scan-guide`,
     title: `How to Run a Virus Scan with Windows Defender`,
     excerpt: `Windows Defender is your PC's built-in antivirus — here's how to run a manual scan and check your protection status.`,
-    body: `Windows Defender — now officially called Microsoft Defender Antivirus — is a free antivirus and security program built into every Windows 10 and Windows 11 computer. You do not need to buy or download anything extra. It runs automatically in the background and scans new files as they arrive, but you can also run a manual scan at any time to check your computer for threats.
+    body: `Windows Defender — now officially called Microsoft Defender Antivirus — is a free antivirus and security program built into every Windows 10 and Windows 11 computer. You do not need to buy or download anything extra. It runs automatically in the background and scans new files as they arrive. But you can also run a manual scan at any time to check your computer for threats.
 
 Many Windows users are not aware that Defender is running because it works quietly in the background without interrupting you. It updates its list of known viruses and malware every day (as long as your PC has internet access), which is how it stays current against new threats.
 

@@ -17,7 +17,7 @@ export const guidesBatch326: Guide[] = [
     publishedAt: "2026-07-20",
     lastVerifiedAt: "2026-07-20",
     difficulty: "Beginner",
-    body: "Many free apps make money by tracking what you do in other apps and on websites, then using that information to show you targeted ads. Apple's App Tracking Transparency feature requires every app to ask your permission before it's allowed to do this, and it gives you a simple screen to review and turn off tracking for any app that already has permission.\n\nWhen an app first asks 'Allow tracking?', it's specifically requesting permission to follow your activity outside of that one app. Choosing 'Ask App Not to Track' doesn't stop the app from working — it prevents it from building a profile of your behavior across other apps to sell more targeted ads.\n\nYou don't have to wait for each app to ask. There's a single screen that lists every app currently allowed to track you, so you can review and turn tracking off in bulk at any time. Source: support.apple.com/en-us/HT212025.",
+    body: "Many free apps make money by tracking what you do in other apps and on websites, then using that information to show you targeted ads. Apple's App Tracking Transparency feature requires every app to ask your permission before it's allowed to do this. And it gives you a simple screen to review and turn off tracking for any app that already has permission.\n\nWhen an app first asks 'Allow tracking?', it's specifically requesting permission to follow your activity outside of that one app. Choosing 'Ask App Not to Track' doesn't stop the app from working — it prevents it from building a profile of your behavior across other apps to sell more targeted ads.\n\nYou don't have to wait for each app to ask. There's a single screen that lists every app currently allowed to track you, so you can review and turn tracking off in bulk at any time. Source: support.apple.com/en-us/HT212025.",
     steps: [
       {
         title: "Open the Tracking settings screen",
@@ -53,7 +53,7 @@ export const guidesBatch326: Guide[] = [
     publishedAt: "2026-07-20",
     lastVerifiedAt: "2026-07-20",
     difficulty: "Beginner",
-    body: "Find Hub is Google's free tool for locating a missing Android phone, tablet, or other connected device on a map. It works using your phone's last known location and internet connection, and it includes options to make the phone ring at full volume even if it's on silent, lock it remotely, display a message on the lock screen, or erase everything on it if you believe it's been stolen.\n\nFor Find Hub to work, it needs to already be turned on before the phone goes missing — it can't be enabled remotely after the fact. Most Android phones have this location-sharing feature turned on by default, but it's worth checking now rather than after a phone is already lost.\n\nYou can access Find Hub from a web browser on any computer or from the Find Hub app on another Android device, which makes it useful even if the lost phone was your only device. Source: support.google.com/accounts/answer/9433374 and support.google.com/android/answer/6160491.",
+    body: "Find Hub is Google's free tool for locating a missing Android phone, tablet, or other connected device on a map. It works using your phone's last known location and internet connection. And it includes options to make the phone ring at full volume even if it's on silent, lock it remotely, display a message on the lock screen, or erase everything on it if you believe it's been stolen.\n\nFor Find Hub to work, it needs to already be turned on before the phone goes missing — it can't be enabled remotely after the fact. Most Android phones have this location-sharing feature turned on by default, but it's worth checking now rather than after a phone is already lost.\n\nYou can access Find Hub from a web browser on any computer or from the Find Hub app on another Android device, which makes it useful even if the lost phone was your only device. Source: support.google.com/accounts/answer/9433374 and support.google.com/android/answer/6160491.",
     steps: [
       {
         title: "Check that Find Hub is turned on before you need it",
@@ -251,7 +251,7 @@ export const guidesBatch326: Guide[] = [
       },
       {
         title: "Understand what RCS does not change",
-        content: "RCS improves texting between iPhone and Android, but it doesn't turn on iMessage-exclusive features like Tapbacks appearing as text descriptions, or make Android messages show up as blue bubbles.",
+        content: "RCS improves texting between iPhone and Android. But it doesn't turn on iMessage-exclusive features like Tapbacks appearing as text descriptions, or make Android messages show up as blue bubbles.",
       },
       {
         title: "Know that RCS messages aren't end-to-end encrypted in every case",

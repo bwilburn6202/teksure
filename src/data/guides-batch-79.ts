@@ -78,7 +78,7 @@ Once your documents are complete, Trust & Will provides instructions for signing
       },
       {
         title: `Create an account and answer the guided questions`,
-        content: `Enter your email address and create a password to start your account. Trust & Will will then ask you a series of questions about your personal information, the people you want to include (spouse, children, beneficiaries), and your wishes. Each question is written in plain English and includes a short explanation of why it matters. Take your time on each screen — there is no rush, and you can save your progress and come back later.`,
+        content: `Enter your email address and create a password to start your account. Trust & Will will then ask you a series of questions about your personal information, the people you want to include (spouse, children, beneficiaries), and your wishes. Each question is written in plain English and includes a short explanation of why it matters. Take your time on each screen — there is no rush. And you can save your progress and come back later.`,
         warning: `Be very careful when naming beneficiaries and their contact information. An incorrect spelling or address can cause delays when your estate is settled.`,
       },
       {
@@ -110,7 +110,7 @@ Once your documents are complete, Trust & Will provides instructions for signing
     difficulty: `Beginner`,
     body: `When someone passes away, their digital accounts — photos, messages, documents, and more — are often locked away with no way for family members to access them. Apple created the Legacy Contact feature to give you control over who can access your Apple account and its contents after you are gone.
 
-Setting up a Legacy Contact takes only a few minutes, but it can save your family significant stress and heartache. Without one, accessing an Apple account after death requires a court order, which is a lengthy and expensive process. With a Legacy Contact in place, the person you choose can request access directly from Apple using a special access key that you provide to them.
+Setting up a Legacy Contact takes only a few minutes. But it can save your family significant stress and heartache. Without one, accessing an Apple account after death requires a court order, which is a lengthy and expensive process. With a Legacy Contact in place, the person you choose can request access directly from Apple using a special access key that you provide to them.
 
 Your Legacy Contact can be anyone you trust — a spouse, an adult child, a sibling, or a close friend. They must have an Apple ID of their own. Once they request access after your passing, Apple will verify the death certificate and then grant them access to your photos, messages, notes, contacts, and other iCloud content. They will not be able to access your payment information, subscriptions, or App Store purchases.
 
@@ -200,7 +200,7 @@ Setting up your preferences takes just a few minutes and gives you peace of mind
 
 Creating a plan to pass on your digital account information is one of the most practical and caring things you can do. It does not require a lawyer or special software, though using a password manager makes the process a lot more organized and secure.
 
-The key challenge is balancing security with accessibility. You do not want your passwords stored somewhere easy for strangers to find, but your trusted family member needs to be able to access them in an emergency. There are a few approaches that work well, and you can choose the one that fits your comfort level.
+The key challenge is balancing security with accessibility. You do not want your passwords stored somewhere easy for strangers to find, but your trusted family member needs to be able to access them in an emergency. There are a few approaches that work well. And you can choose the one that fits your comfort level.
 
 The first option is a password manager with emergency access — services like Bitwarden, 1Password, and Dashlane allow you to designate a trusted person who can request access after a waiting period you define. This is the most secure method.
 
@@ -292,7 +292,7 @@ Costs also vary by state, but certified copies typically run between $10 and $30
     thumbnailEmoji: ``,
     publishedAt: `2026-04-20`,
     difficulty: `Beginner`,
-    body: `When a person who paid into Social Security passes away, their surviving family members may be entitled to monthly benefits from the Social Security Administration (SSA). These are called survivor benefits, and they can provide meaningful financial support during a difficult time. Many people do not realize they may qualify, or they put off applying because the process seems overwhelming.
+    body: `When a person who paid into Social Security passes away, their surviving family members may be entitled to monthly benefits from the Social Security Administration (SSA). These are called survivor benefits. And they can provide meaningful financial support during a difficult time. Many people do not realize they may qualify, or they put off applying because the process seems overwhelming.
 
 The amount of the benefit depends on the deceased person's earnings record — specifically, how much they earned and paid into Social Security over their lifetime. Generally speaking, the higher their lifetime earnings, the larger the survivor benefit.
 
@@ -300,7 +300,7 @@ Several categories of people may qualify for survivor benefits. A surviving spou
 
 There is also a one-time lump-sum death payment of $255 available to a surviving spouse who was living with the deceased, or in some cases to dependent children. This must be applied for within two years of the death.
 
-The Social Security Administration strongly encourages people to apply as soon as possible after a loved one's death, because benefits cannot be paid for months before the application date. You cannot apply for survivor benefits online — you must call or visit your local SSA office. The SSA's website at ssa.gov has detailed information, and you can call 1-800-772-1213 to start the process.`,
+The Social Security Administration strongly encourages people to apply as soon as possible after a loved one's death, because benefits cannot be paid for months before the application date. You cannot apply for survivor benefits online — you must call or visit your local SSA office. The SSA's website at ssa.gov has detailed information. And you can call 1-800-772-1213 to start the process.`,
     steps: [
       {
         title: `Gather the documents you will need`,
@@ -382,7 +382,7 @@ AARP's Grief and Loss resource page at aarp.org/home-family/friends-family/grief
     thumbnailEmoji: ``,
     publishedAt: `2026-04-20`,
     difficulty: `Beginner`,
-    body: `Moving to a new home is consistently ranked as one of the most stressful life events a person can go through. There are hundreds of tasks to coordinate — packing, hiring movers, changing your address, setting up utilities, notifying banks and government agencies — all happening at the same time. Apps and digital tools cannot eliminate the stress, but they can bring real order to the chaos.
+    body: `Moving to a new home is consistently ranked as one of the most stressful life events a person can go through. There are hundreds of tasks to coordinate — packing, hiring movers, changing your address, setting up utilities, notifying banks and government agencies — all happening at the same time. Apps and digital tools cannot eliminate the stress. But they can bring real order to the chaos.
 
 The most important thing you can do is start an organized checklist early — at least eight weeks before your move date if possible. Several apps are specifically designed to guide you through a move step by step, while general-purpose tools like Google Keep, Apple Notes, or Reminders work perfectly well if you prefer something familiar.
 
@@ -470,7 +470,7 @@ PODS is available in most major metropolitan areas in the United States. In very
     difficulty: `Beginner`,
     body: `Caring for an aging parent or seriously ill family member is often a team effort — and that team needs coordination. Who is taking Mom to her Tuesday appointment? Has anyone picked up the prescription? What did the doctor say at last week's visit? Without a shared system, family members can end up duplicating efforts, missing tasks, or feeling out of the loop.
 
-Caregiver coordination apps solve this problem by giving the whole care team one shared place to communicate, assign tasks, and track information. These tools are designed to be simple enough for people who are not comfortable with technology, and they can dramatically reduce the logistical burden on the primary caregiver.
+Caregiver coordination apps solve this problem by giving the whole care team one shared place to communicate, assign tasks, and track information. These tools are designed to be simple enough for people who are not comfortable with technology. And they can dramatically reduce the logistical burden on the primary caregiver.
 
 CaringBridge (caringbridge.org) is a free service that lets you create a private health journal and updates page for your loved one. Family and friends can read updates, post messages of support, and coordinate through a shared "Task List" feature that lets you assign visits, meals, or errands. CaringBridge is widely used by families dealing with cancer treatment, surgery recovery, and chronic illness.
 
@@ -532,7 +532,7 @@ The app is free to download on iPhone and Android. Some premium features are ava
       {
         title: `Set up medication reminders`,
         content: `After adding a medication, CareZone will ask if you want to set a reminder. Turn on reminders for any medication that is easy to forget or that must be taken at a specific time. You will receive a notification on your phone at the scheduled time. You can also set a second reminder for a caregiver's phone if you want someone else to confirm that the dose was taken.`,
-        warning: `Medication reminders are a helpful tool, but they do not replace medical supervision. If a medication is accidentally doubled or missed, contact your doctor or pharmacist for guidance rather than guessing.`,
+        warning: `Medication reminders are a helpful tool. But they do not replace medical supervision. If a medication is accidentally doubled or missed, contact your doctor or pharmacist for guidance rather than guessing.`,
       },
       {
         title: `Log appointments and health notes`,

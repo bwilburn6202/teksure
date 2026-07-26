@@ -113,7 +113,7 @@ Pinned conversations appear as large circular icons at the top of your Messages 
 
 Pinning is available on iPhones running iOS 17 or later (released in 2020), so most iPhones in use today support it. You can pin individual people, groups, or even a conversation with a business.
 
-Pinning someone doesn't notify them — it's a personal organization tool that only you can see on your phone. You can pin up to 9 conversations total, and you can unpin them at any time in the same way you pinned them.
+Pinning someone doesn't notify them — it's a personal organization tool that only you can see on your phone. You can pin up to 9 conversations total. And you can unpin them at any time in the same way you pinned them.
 
 This is one of those small features that makes a surprisingly big difference in daily use. Instead of hunting for your daughter's texts every morning, her name is right there waiting for you at the top of the screen.`,
     steps: [
@@ -128,7 +128,7 @@ This is one of those small features that makes a surprisingly big difference in 
       },
       {
         title: `See your pinned conversation at the top`,
-        content: `The conversation will move to the top of your Messages list and appear as a large circle with the person's photo or initials. New messages from that person will show a number badge on their circle, and you may see a preview of their latest message below the circle.`
+        content: `The conversation will move to the top of your Messages list and appear as a large circle with the person's photo or initials. New messages from that person will show a number badge on their circle. And you may see a preview of their latest message below the circle.`
       },
       {
         title: `Pin more conversations (up to 9 total)`,
@@ -217,7 +217,7 @@ Once you find the password, write it somewhere you'll remember — a notepad kep
       },
       {
         title: `Find network properties and show the password`,
-        content: `On Windows 11: On the network properties page, scroll down until you see "Network security key" — this is your WiFi password, but it appears as dots (•••••). Click the eye icon next to it to reveal the actual characters. Write down the password.
+        content: `On Windows 11: On the network properties page, scroll down until you see "Network security key" — this is your WiFi password. But it appears as dots (•••••). Click the eye icon next to it to reveal the actual characters. Write down the password.
 
 On Windows 10: Go to Control Panel → Network and Internet → Network and Sharing Center. Click on your WiFi network name (in blue, next to "Connections"). In the window that appears, click "Wireless Properties." Go to the "Security" tab. Check the box that says "Show characters" next to "Network security key." The password will appear.`,
         tip: `Take a photo of the password with your phone, or write it on a sticky note and keep it on or near your router so you always have it handy.`
@@ -283,7 +283,7 @@ Your Mac must have connected to the WiFi network at least once for the password 
     thumbnailEmoji: ``,
     publishedAt: `2026-04-19`,
     difficulty: `Beginner`,
-    body: `If you need to share your home WiFi password with a guest or connect a new device, and you can't remember the password, your Android phone can help — as long as you're already connected to that network.
+    body: `If you need to share your home WiFi password with a guest or connect a new device. And you can't remember the password, your Android phone can help — as long as you're already connected to that network.
 
 Android 14 and later (released in 2019) added the ability to view and share saved WiFi passwords. There are two ways to do this:
 
@@ -430,7 +430,7 @@ With Instagram DMs, you can:
 - Start group conversations with multiple people at once
 - React to messages with emojis
 
-DMs are popular for casual conversation between people who follow each other, but you can also send DMs to people you don't follow — though their messages may land in a "Message Requests" folder that they have to accept before they see it.
+DMs are popular for casual conversation between people who follow each other. But you can also send DMs to people you don't follow — though their messages may land in a "Message Requests" folder that they have to accept before they see it.
 
 To use Instagram DMs, you need an Instagram account (free to create) and the Instagram app installed on your phone. You can also access DMs on the Instagram website on a computer, though the app is more feature-rich.
 
@@ -508,7 +508,7 @@ Here are some of the most useful alarm clock features built into iPhone and Andr
       },
       {
         title: `Set multiple backup alarms`,
-        content: `If you're worried about sleeping through one alarm, set a second alarm 10–15 minutes later as a backup. Give each one a different label so you know which is which. Both alarms will fire on the days they're set for, and you can easily turn off the backup on days you don't need it by tapping the toggle next to it in your alarm list.`,
+        content: `If you're worried about sleeping through one alarm, set a second alarm 10–15 minutes later as a backup. Give each one a different label so you know which is which. Both alarms will fire on the days they're set for. And you can easily turn off the backup on days you don't need it by tapping the toggle next to it in your alarm list.`,
         tip: `A common setup: a gentle alarm 20 minutes before you need to be up (to let you wake slowly), and a firm deadline alarm 5 minutes before you absolutely must get out of bed.`
       },
       {
@@ -951,7 +951,7 @@ You set up linked services and a default service in the Google Home app. Once se
       {
         title: `Open the Google Home app and go to Settings`,
         content: `Open the Google Home app on your phone (colorful house icon). In the bottom right, tap your profile picture or initials. Tap "Assistant settings" or "Google Account." Then look for "Music" in the settings list. This is where you link music services and set your default.`,
-        tip: `You can also say "Hey Google, open music settings" to your speaker, and it may direct you to the right place in the app.`
+        tip: `You can also say "Hey Google, open music settings" to your speaker. And it may direct you to the right place in the app.`
       },
       {
         title: `Link your music service`,

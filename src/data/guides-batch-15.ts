@@ -188,7 +188,7 @@ export const guidesBatch15: Guide[] = [
       {
         title: 'Plug in the Fire TV Stick',
         content: 'Plug the Fire TV Stick into an HDMI port on the back or side of your TV. If the area is tight, use the HDMI extender cable included in the box. Plug the power cable into the Fire TV Stick and into a wall outlet or power strip. Insert the batteries into the Fire TV remote. Turn your TV on and use your TV remote to switch to the HDMI input where you plugged in the Fire Stick.',
-        tip: 'Remember which HDMI number you used. If your TV has HDMI 1, 2, and 3, and you plugged into HDMI 2, press the Input/Source button on your TV remote until you see "HDMI 2."',
+        tip: 'Remember which HDMI number you used. If your TV has HDMI 1, 2, and 3. And you plugged into HDMI 2, press the Input/Source button on your TV remote until you see "HDMI 2."',
       },
       {
         title: 'Connect to your WiFi network',
@@ -451,7 +451,7 @@ export const guidesBatch15: Guide[] = [
     thumbnailEmoji: '',
     publishedAt: '2026-04-19',
     difficulty: 'Beginner',
-    body: "Mental health counseling by video call is now widely available. Most insurance plans cover it, including Medicare, and you can do it from home. For seniors, video therapy removes the need for transportation, can ease feelings of isolation, and gives you access to therapists who specialize in issues that come with aging. Here's how to get started.",
+    body: "Mental health counseling by video call is now widely available. Most insurance plans cover it, including Medicare. And you can do it from home. For seniors, video therapy removes the need for transportation, can ease feelings of isolation, and gives you access to therapists who specialize in issues that come with aging. Here's how to get started.",
     steps: [
       {
         title: 'Check if your insurance covers telehealth therapy',
@@ -484,7 +484,7 @@ export const guidesBatch15: Guide[] = [
     thumbnailEmoji: '',
     publishedAt: '2026-04-19',
     difficulty: 'Beginner',
-    body: "Checking your retirement account balance and activity online is secure and free, and it gives you current information without waiting on a paper statement. Whether you have a 401(k), an IRA, a pension, or Social Security, each one has an online account or portal where you can check balances, review transactions, and make changes.",
+    body: "Checking your retirement account balance and activity online is secure and free. And it gives you current information without waiting on a paper statement. Whether you have a 401(k), an IRA, a pension, or Social Security, each one has an online account or portal where you can check balances, review transactions, and make changes.",
     steps: [
       {
         title: 'Find where your retirement account is held',

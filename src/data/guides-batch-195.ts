@@ -148,7 +148,7 @@ export const guidesBatch195: Guide[] = [
       {
         title: "Look at the bottom of the receipt",
         content: "Hold the receipt under a good light. Below the items list and the total, look for a section with phrases like \"Return Policy,\" \"Return by [date],\" or \"Eligible for return until [date].\" The deadline is often printed in the last 5 lines of the receipt. Walmart, Target, Best Buy, and Home Depot all print it. Some smaller stores do not.",
-        tip: "If the receipt is faint, snap a photo with your phone right at the car. Phone cameras capture detail that the human eye misses, and you can pinch to zoom on small print.",
+        tip: "If the receipt is faint, snap a photo with your phone right at the car. Phone cameras capture detail that the human eye misses. And you can pinch to zoom on small print.",
       },
       {
         title: "Check the back of the receipt",

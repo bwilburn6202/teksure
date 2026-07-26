@@ -59,7 +59,7 @@ These are not optional — they are real government-mandated charges. They inclu
 - 911 fee (usually $0.50–$1.50 per month)
 - Regulatory cost recovery fees
 
-You cannot remove these, but they are not carrier profit — they go to government programs.
+You cannot remove these. But they are not carrier profit — they go to government programs.
 
 **Section 6: Carrier fees**
 
@@ -118,7 +118,7 @@ Most carriers give a $5–$15/month discount for setting up autopay from a bank 
     publishedAt: '2026-05-06',
     lastVerifiedAt: '2026-05-06',
     difficulty: 'Beginner',
-    body: `Amazon Alexa is the voice assistant built into Amazon Echo speakers (the round or cylindrical devices with a light ring). You speak to it naturally, and it answers, plays music, sets timers, makes calls, and more — with no tapping or typing required.
+    body: `Amazon Alexa is the voice assistant built into Amazon Echo speakers (the round or cylindrical devices with a light ring). You speak to it naturally. And it answers, plays music, sets timers, makes calls, and more — with no tapping or typing required.
 
 Alexa can be especially helpful for older adults who find phones or computers physically difficult to use.
 
@@ -195,7 +195,7 @@ To mute the microphone: Press the button with a microphone icon on top of the Ec
 | Echo Show 8 | ~$150 | Has a screen — shows weather, photos, makes video calls |
 | Echo Show 10 | ~$250 | Screen rotates to follow you — great for video calls |
 
-The Echo Show is especially popular with seniors because it has a screen — family can video call you directly on the screen, and you can see them clearly without squinting at a small phone.`,
+The Echo Show is especially popular with seniors because it has a screen — family can video call you directly on the screen. And you can see them clearly without squinting at a small phone.`,
     steps: [
       {
         title: 'Plug in your Echo device and download the Alexa app',

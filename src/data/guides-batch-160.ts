@@ -8,8 +8,7 @@ export const guidesBatch160: Guide[] = [
   {
     slug: 'how-to-back-up-your-phone-contacts-to-the-cloud-2026',
     title: 'How to Back Up Your Phone Contacts to the Cloud',
-    excerpt:
-      'Save your contacts to iCloud or Google so they are safe — and come back automatically — if your phone is ever lost, stolen, or replaced.',
+    excerpt: 'Save your contacts to iCloud or Google so they are safe — and come back automatically — if your phone is ever lost, stolen, or replaced.',
     category: 'phone-guides',
     tags: [
       'contacts backup',
@@ -108,48 +107,41 @@ When you set up a new iPhone, the phone will ask you to sign in with your Apple 
 
 ---
 
-**Quick Tip:** If you are not sure whether your contacts are backed up right now, open your iCloud or Google settings and check — it only takes two minutes, and it could save you from a stressful situation later.`,
+**Quick Tip:** If you are not sure whether your contacts are backed up right now, open your iCloud or Google settings and check — it only takes two minutes. And it could save you from a stressful situation later.`,
     steps: [
       {
         title: 'iPhone — Open Settings and tap your name',
-        content:
-          'Find the gray gear icon called "Settings" on your home screen and tap it. At the very top, tap your name (and Apple ID email) to open your Apple ID settings.',
+        content: 'Find the gray gear icon called "Settings" on your home screen and tap it. At the very top, tap your name (and Apple ID email) to open your Apple ID settings.',
         tip: 'If you are not sure what your Apple ID is, your email address at the top of this screen is your Apple ID.',
       },
       {
         title: 'iPhone — Turn on iCloud Contacts',
-        content:
-          'Tap "iCloud," then scroll down to "Contacts." If the toggle next to Contacts is gray, tap it to turn it green. Green means contacts are syncing to iCloud automatically.',
+        content: 'Tap "iCloud," then scroll down to "Contacts." If the toggle next to Contacts is gray, tap it to turn it green. Green means contacts are syncing to iCloud automatically.',
       },
       {
         title: 'iPhone — Verify the backup at icloud.com',
-        content:
-          'On any computer, go to icloud.com and sign in with your Apple ID. Click the Contacts icon. If you see your full contacts list, the backup is working.',
+        content: 'On any computer, go to icloud.com and sign in with your Apple ID. Click the Contacts icon. If you see your full contacts list, the backup is working.',
         tip: 'You can do this check on a library computer or a family member\'s laptop — you do not need your own computer.',
       },
       {
         title: 'Android — Turn on Google Drive backup',
-        content:
-          'Open Settings → Google → Backup. Turn on "Back up to Google Drive" and tap "Back up now." Verify contacts are saved by visiting contacts.google.com on a computer.',
+        content: 'Open Settings → Google → Backup. Turn on "Back up to Google Drive" and tap "Back up now." Verify contacts are saved by visiting contacts.google.com on a computer.',
       },
       {
         title: 'Export a file copy of your contacts',
-        content:
-          'iPhone: On icloud.com, select all contacts, then click the gear icon and choose "Export vCard." Android: Open the Contacts app → menu → Import/Export → Export. Save the .vcf file on your computer as an extra backup.',
+        content: 'iPhone: On icloud.com, select all contacts, then click the gear icon and choose "Export vCard." Android: Open the Contacts app → menu → Import/Export → Export. Save the .vcf file on your computer as an extra backup.',
         tip: 'Label the file clearly, such as "Contacts-Backup-May2026.vcf," so you can find it easily.',
       },
       {
         title: 'Getting a new phone — your contacts come back automatically',
-        content:
-          'When you sign in to your Apple ID (iPhone) or Google account (Android) during new phone setup, your contacts are downloaded automatically. No extra steps are needed if your backup was turned on.',
+        content: 'When you sign in to your Apple ID (iPhone) or Google account (Android) during new phone setup, your contacts are downloaded automatically. No extra steps are needed if your backup was turned on.',
       },
     ],
   },
   {
     slug: 'how-to-use-google-calendar-for-appointments-and-reminders-2026',
     title: 'How to Use Google Calendar to Track Appointments and Set Reminders',
-    excerpt:
-      'Use Google Calendar to keep doctor appointments, family events, and medication reminders all in one place — with automatic alerts sent to your phone or email.',
+    excerpt: 'Use Google Calendar to keep doctor appointments, family events, and medication reminders all in one place — with automatic alerts sent to your phone or email.',
     category: 'app-guides',
     tags: [
       'Google Calendar',
@@ -277,35 +269,29 @@ To switch views on a phone, tap the three horizontal lines (menu) or look for th
     steps: [
       {
         title: 'Open Google Calendar',
-        content:
-          'On a computer go to calendar.google.com. On Android, open the Google Calendar app. On iPhone, download the free Google Calendar app from the App Store and sign in with your Gmail address.',
+        content: 'On a computer go to calendar.google.com. On Android, open the Google Calendar app. On iPhone, download the free Google Calendar app from the App Store and sign in with your Gmail address.',
         tip: 'If you use Gmail, you already have a Google account — use the same email and password.',
       },
       {
         title: 'Add a new event',
-        content:
-          'Tap or click the "+" button. Type a clear name for the event (for example, "Eye doctor — Dr. Chen"). Set the date and the start and end time. Tap "Save."',
+        content: 'Tap or click the "+" button. Type a clear name for the event (for example, "Eye doctor — Dr. Chen"). Set the date and the start and end time. Tap "Save."',
       },
       {
         title: 'Add reminder alerts',
-        content:
-          'When creating an event, tap "More options." Scroll to "Notification" and set two reminders: one for the day before (1 day) and one for one hour before. Choose Email, phone Notification, or both.',
+        content: 'When creating an event, tap "More options." Scroll to "Notification" and set two reminders: one for the day before (1 day) and one for one hour before. Choose Email, phone Notification, or both.',
         tip: 'Two reminders — one the day before and one an hour before — work well for medical appointments.',
       },
       {
         title: 'Make an event repeat',
-        content:
-          'Tap or click the "Does not repeat" line when creating the event. Choose Daily, Weekly, Monthly, or another option. The event will appear automatically on all future matching dates — no need to re-enter it each time.',
+        content: 'Tap or click the "Does not repeat" line when creating the event. Choose Daily, Weekly, Monthly, or another option. The event will appear automatically on all future matching dates — no need to re-enter it each time.',
       },
       {
         title: 'Share your calendar with a family member',
-        content:
-          'On a computer at calendar.google.com, create a new calendar under "Other calendars." Click the three dots next to it → Settings and sharing → Add people. Enter your family member\'s Gmail address and choose their access level.',
+        content: 'On a computer at calendar.google.com, create a new calendar under "Other calendars." Click the three dots next to it → Settings and sharing → Add people. Enter your family member\'s Gmail address and choose their access level.',
       },
       {
         title: 'Color-code and switch views',
-        content:
-          'Click the three dots next to any calendar name to assign a color. Use Month view to plan ahead, Week view for a busy week, or Schedule (list) view for a simple upcoming-events list.',
+        content: 'Click the three dots next to any calendar name to assign a color. Use Month view to plan ahead, Week view for a busy week, or Schedule (list) view for a simple upcoming-events list.',
         tip: 'The Schedule view is the clearest for everyday use — it shows what is coming up as a simple list.',
       },
     ],
@@ -313,8 +299,7 @@ To switch views on a phone, tap the three horizontal lines (menu) or look for th
   {
     slug: 'how-to-read-your-medicare-explanation-of-benefits-letter-2026',
     title: 'How to Read Your Medicare Explanation of Benefits Letter',
-    excerpt:
-      'Your Medicare EOB letter is not a bill — it is a summary of what Medicare paid. Learn what each section means, how to spot errors, and how to report fraud.',
+    excerpt: 'Your Medicare EOB letter is not a bill — it is a summary of what Medicare paid. Learn what each section means, how to spot errors, and how to report fraud.',
     category: 'health-tech',
     tags: [
       'Medicare EOB',
@@ -378,7 +363,7 @@ A doctor charges $350 (billed amount). Medicare's approved amount for that visit
 
 **What to look for: catching errors and fraud**
 
-Not every mistake on your EOB is fraud — billing errors are common, and they can cost you or Medicare money. When you receive your EOB, check each claim against your own records (appointment calendar, medical paperwork). Look for:
+Not every mistake on your EOB is fraud — billing errors are common. And they can cost you or Medicare money. When you receive your EOB, check each claim against your own records (appointment calendar, medical paperwork). Look for:
 
 - **A date of service you do not recognize.** If Medicare shows a claim for a visit that did not happen, this is either a billing error or potential fraud.
 - **A provider you have not seen.** If you see a doctor's name or a lab you do not recognize, call Medicare to ask about it.
@@ -393,7 +378,7 @@ Not every mistake on your EOB is fraud — billing errors are common, and they c
 
 **Online:** Go to **medicare.gov**, sign in, and navigate to "Claims & Appeals." You can view your claims and submit a question about any claim.
 
-**For suspected fraud:** Medicare has a dedicated fraud reporting line. You can also report fraud to the **HHS Office of Inspector General** at **1-800-HHS-TIPS** (1-800-447-8477) or online at **oig.hhs.gov**. Reporting Medicare fraud is anonymous if you prefer, and it helps protect other Medicare recipients.
+**For suspected fraud:** Medicare has a dedicated fraud reporting line. You can also report fraud to the **HHS Office of Inspector General** at **1-800-HHS-TIPS** (1-800-447-8477) or online at **oig.hhs.gov**. Reporting Medicare fraud is anonymous if you prefer. And it helps protect other Medicare recipients.
 
 ---
 
@@ -425,35 +410,29 @@ Click on any claim to see the full details: provider name, date of service, what
     steps: [
       {
         title: 'Understand what an EOB is (and is not)',
-        content:
-          'An Explanation of Benefits is not a bill. It is a summary showing what Medicare received from your provider, what Medicare paid, and what you may owe. Your provider will send you a separate bill if payment is needed.',
+        content: 'An Explanation of Benefits is not a bill. It is a summary showing what Medicare received from your provider, what Medicare paid, and what you may owe. Your provider will send you a separate bill if payment is needed.',
         warning: 'Never send money based solely on an EOB. Wait for an actual bill from your doctor or hospital.',
       },
       {
         title: 'Find your EOB — paper or online',
-        content:
-          'Paper Medicare Summary Notices arrive every three months by mail. Electronic notices (eNotices) are available sooner at medicare.gov → My Account → Claims & Appeals. You can sign up for electronic notices to get them faster.',
+        content: 'Paper Medicare Summary Notices arrive every three months by mail. Electronic notices (eNotices) are available sooner at medicare.gov → My Account → Claims & Appeals. You can sign up for electronic notices to get them faster.',
       },
       {
         title: 'Read the four key dollar amounts',
-        content:
-          'Billed amount: what your provider charged. Medicare-approved amount: what Medicare agreed to pay. Medicare paid: the actual payment to your provider (usually 80% of approved). You may be billed: your share (usually 20% of approved, plus any deductible).',
+        content: 'Billed amount: what your provider charged. Medicare-approved amount: what Medicare agreed to pay. Medicare paid: the actual payment to your provider (usually 80% of approved). You may be billed: your share (usually 20% of approved, plus any deductible).',
         tip: 'The "You may be billed" column is the only number that comes out of your pocket. The rest is settled between Medicare and your provider.',
       },
       {
         title: 'Check each claim for errors',
-        content:
-          'Compare every claim to your own appointment records. Look for dates you did not visit a doctor, providers you do not recognize, procedures that do not match what happened, or duplicate charges for the same visit.',
+        content: 'Compare every claim to your own appointment records. Look for dates you did not visit a doctor, providers you do not recognize, procedures that do not match what happened, or duplicate charges for the same visit.',
       },
       {
         title: 'Report errors or fraud',
-        content:
-          'Call 1-800-MEDICARE (1-800-633-4227) any time, 24/7, to ask about a claim. For suspected fraud, also report to the HHS Office of Inspector General at 1-800-447-8477 or oig.hhs.gov.',
+        content: 'Call 1-800-MEDICARE (1-800-633-4227) any time, 24/7, to ask about a claim. For suspected fraud, also report to the HHS Office of Inspector General at 1-800-447-8477 or oig.hhs.gov.',
       },
       {
         title: 'Understand your Medigap supplement plan',
-        content:
-          'If you have a Medigap (Medicare Supplement) plan, your insurer automatically receives the claim from Medicare after Medicare pays its 80%. Your Medigap plan pays your 20% share directly to the provider. You usually owe $0 for covered services.',
+        content: 'If you have a Medigap (Medicare Supplement) plan, your insurer automatically receives the claim from Medicare after Medicare pays its 80%. Your Medigap plan pays your 20% share directly to the provider. You usually owe $0 for covered services.',
         tip: 'Your EOB should show $0 in the "You may be billed" column for services fully covered by your Medigap plan.',
       },
     ],
@@ -461,8 +440,7 @@ Click on any claim to see the full details: provider name, date of service, what
   {
     slug: 'how-to-sign-up-for-usps-informed-delivery-2026',
     title: 'How to Sign Up for USPS Informed Delivery',
-    excerpt:
-      'Get a free daily email showing photos of your incoming mail before it arrives — so you always know when a check, prescription, or important document is on the way.',
+    excerpt: 'Get a free daily email showing photos of your incoming mail before it arrives — so you always know when a check, prescription, or important document is on the way.',
     category: 'how-to',
     tags: [
       'USPS Informed Delivery',
@@ -580,36 +558,30 @@ If you try to sign up and are told the address already has an account, contact U
     steps: [
       {
         title: 'Go to informeddelivery.usps.com and click "Sign Up For Free"',
-        content:
-          'Open a web browser and go to informeddelivery.usps.com. Click the blue "Sign Up For Free" button to start the account creation process.',
+        content: 'Open a web browser and go to informeddelivery.usps.com. Click the blue "Sign Up For Free" button to start the account creation process.',
       },
       {
         title: 'Create your USPS.com account',
-        content:
-          'Enter your name, home mailing address, email address, and a password. Your address must be the address where you receive mail. Click "Continue."',
+        content: 'Enter your name, home mailing address, email address, and a password. Your address must be the address where you receive mail. Click "Continue."',
         tip: 'Use an email address you check regularly — this is where your daily mail preview will be sent.',
       },
       {
         title: 'Verify your identity',
-        content:
-          'USPS will verify your identity to protect your privacy. You may answer a few multiple-choice questions online, or USPS may mail a letter with a verification code to your address (arrives in 3–7 days). Enter the code on USPS.com to complete setup.',
+        content: 'USPS will verify your identity to protect your privacy. You may answer a few multiple-choice questions online, or USPS may mail a letter with a verification code to your address (arrives in 3–7 days). Enter the code on USPS.com to complete setup.',
         warning: 'If someone else has already registered your address, call USPS at 1-800-275-8777 right away — this could be a sign of mail fraud.',
       },
       {
         title: 'Set up your notification preferences',
-        content:
-          'After verifying, go to your account settings on USPS.com. Choose to receive your daily Informed Delivery digest by email, by USPS Mobile app notification, or both.',
+        content: 'After verifying, go to your account settings on USPS.com. Choose to receive your daily Informed Delivery digest by email, by USPS Mobile app notification, or both.',
       },
       {
         title: 'Download the USPS Mobile app (optional)',
-        content:
-          'Search for "USPS Mobile" in the App Store (iPhone) or Google Play Store (Android) and install the free app. Sign in with your USPS.com account. Allow notifications when prompted.',
+        content: 'Search for "USPS Mobile" in the App Store (iPhone) or Google Play Store (Android) and install the free app. Sign in with your USPS.com account. Allow notifications when prompted.',
         tip: 'The app also lets you track packages by typing in a tracking number — helpful when you are expecting a delivery.',
       },
       {
         title: 'Check your morning email each day',
-        content:
-          'USPS sends your daily mail preview email between 7 AM and 9 AM. Review the photos of incoming mail and package updates. If expected mail does not arrive by end of day, contact USPS at 1-800-275-8777.',
+        content: 'USPS sends your daily mail preview email between 7 AM and 9 AM. Review the photos of incoming mail and package updates. If expected mail does not arrive by end of day, contact USPS at 1-800-275-8777.',
         tip: 'If the first email goes to your spam folder, add usps@email.informeddelivery.usps.com to your contacts so future emails reach your inbox.',
       },
     ],

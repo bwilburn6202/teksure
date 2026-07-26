@@ -15,11 +15,11 @@ export const guidesBatch280: Guide[] = [
     publishedAt: '2026-05-05',
     lastVerifiedAt: '2026-05-05',
     difficulty: 'Beginner',
-    body: `A telehealth visit is a doctor appointment by video instead of in person. The doctor sees you on a screen, you see the doctor on yours, and you have the same kind of conversation you would have in their office — without the drive or the waiting room.
+    body: `A telehealth visit is a doctor appointment by video instead of in person. The doctor sees you on a screen, you see the doctor on yours. And you have the same kind of conversation you would have in their office — without the drive or the waiting room.
 
 Most major insurance plans, including Medicare, cover telehealth visits the same as in-person appointments. The most common platform doctors use is Zoom (or a hospital-branded version of it like Zoom for Healthcare).
 
-If you are intimidated by video, do not be — most telehealth platforms also let you join by phone call only, with no video at all. The doctor still gets the visit, your insurance still covers it, and you do not need any technology you do not already have.
+If you are intimidated by video, do not be — most telehealth platforms also let you join by phone call only, with no video at all. The doctor still gets the visit, your insurance still covers it. And you do not need any technology you do not already have.
 
 This guide walks through joining a Zoom video visit step by step, with notes on phone-only fallback.
 
@@ -49,7 +49,7 @@ This guide walks through joining a Zoom video visit step by step, with notes on 
       },
       {
         title: 'Join by phone if video does not work',
-        content: 'Every Zoom invitation also includes a phone number you can call to join by audio only. Look in the email for "Or by Phone" — it lists a phone number and a meeting ID. Call the number, type the meeting ID followed by # when prompted, and you join the visit by voice. Your insurance covers this the same as a video visit.',
+        content: 'Every Zoom invitation also includes a phone number you can call to join by audio only. Look in the email for "Or by Phone" — it lists a phone number and a meeting ID. Call the number, type the meeting ID followed by # when prompted. And you join the visit by voice. Your insurance covers this the same as a video visit.',
         tip: 'Quick Tip: Save the office\'s telehealth phone number in your phone contacts. The same number usually works for any future telehealth visit.',
       },
     ],

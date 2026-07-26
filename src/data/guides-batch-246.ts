@@ -34,7 +34,7 @@ export const guidesBatch246: Guide[] = [
       {
         title: "Lean on Affordable, Easy-to-Chew Protein Sources",
         content: "Protein does not require expensive steaks. Eggs, canned tuna, canned salmon, cottage cheese, Greek yogurt, milk, beans, lentils, peanut butter, ground turkey, chicken thighs, and tofu all deliver strong protein for a small price. Eggs cost about 25 cents apiece and pack 6 grams of protein each. A can of tuna runs around a dollar and offers 20 grams. A pound of dried beans gives roughly 100 grams of protein for under two dollars. For seniors with dental concerns, choose softer options such as scrambled eggs, yogurt, cottage cheese, ground meats in slow-cooked stews, flaked fish, and bean soups. Tough cuts of meat can be slow-cooked until they fall apart.",
-        warning: "Processed meats such as bacon, hot dogs, and deli ham are protein sources, but they also raise blood pressure and cancer risk. Use them sparingly, not as your main protein."
+        warning: "Processed meats such as bacon, hot dogs, and deli ham are protein sources. But they also raise blood pressure and cancer risk. Use them sparingly, not as your main protein."
       },
       {
         title: "Use Smart Add-Ins to Boost Everyday Foods",
@@ -133,12 +133,12 @@ export const guidesBatch246: Guide[] = [
       },
       {
         title: "Get Some Vitamin D From Food When You Can",
-        content: "Supplements are the most reliable source for seniors, but food helps. Fatty fish such as salmon, mackerel, sardines, and trout deliver 400 to 700 IU of vitamin D in a 3-ounce serving. Canned tuna offers around 150 IU per serving. Egg yolks contain about 40 IU each. Fortified milk, fortified soy milk, fortified orange juice, and fortified cereals add 100 to 150 IU per serving. Mushrooms exposed to sunlight, sold as UV-treated in many stores, provide a modest plant-based source. A varied diet rarely covers a daily target on its own, but it reduces the supplement dose you need and brings other valuable nutrients along.",
+        content: "Supplements are the most reliable source for seniors, but food helps. Fatty fish such as salmon, mackerel, sardines, and trout deliver 400 to 700 IU of vitamin D in a 3-ounce serving. Canned tuna offers around 150 IU per serving. Egg yolks contain about 40 IU each. Fortified milk, fortified soy milk, fortified orange juice, and fortified cereals add 100 to 150 IU per serving. Mushrooms exposed to sunlight, sold as UV-treated in many stores, provide a modest plant-based source. A varied diet rarely covers a daily target on its own. But it reduces the supplement dose you need and brings other valuable nutrients along.",
         warning: "Cod liver oil contains vitamin D but also large amounts of vitamin A. Long-term high-dose cod liver oil can cause vitamin A toxicity in seniors. Read labels carefully."
       },
       {
         title: "Watch for Warning Signs of Too Much",
-        content: "Vitamin D toxicity is rare with normal doses, but it can happen if a senior takes very high doses for many months without testing. Warning signs include nausea, vomiting, constipation, loss of appetite, weakness, confusion, frequent urination, kidney stones, and irregular heartbeat. The cause is high calcium in the blood, called hypercalcemia, which results from too much vitamin D. If any of these symptoms appear, stop the supplement and call your doctor for a blood test. Retest your level every six to twelve months. Adjust the dose down once your level reaches the healthy range. More vitamin D is not always better.",
+        content: "Vitamin D toxicity is rare with normal doses. But it can happen if a senior takes very high doses for many months without testing. Warning signs include nausea, vomiting, constipation, loss of appetite, weakness, confusion, frequent urination, kidney stones, and irregular heartbeat. The cause is high calcium in the blood, called hypercalcemia, which results from too much vitamin D. If any of these symptoms appear, stop the supplement and call your doctor for a blood test. Retest your level every six to twelve months. Adjust the dose down once your level reaches the healthy range. More vitamin D is not always better.",
         tip: "Bring your supplement bottle to every doctor visit. The doctor needs to see the brand, strength, and how many you take per day to give accurate advice."
       }
     ]

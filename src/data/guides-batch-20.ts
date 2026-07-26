@@ -50,7 +50,7 @@ export const guidesBatch20: Guide[] = [
     thumbnailEmoji: '',
     publishedAt: '2026-04-19',
     difficulty: 'Beginner',
-    body: `Microsoft Copilot is an AI assistant that Microsoft has built directly into Windows 11, Bing, and Microsoft 365. If you've heard of ChatGPT, Copilot is similar — you type a question or request in plain English, and it responds with helpful information, writes text for you, summarizes things, or helps you get things done on your computer.\n\nThe good news: Copilot is free. You don't need to sign up for anything extra if you already use Windows 11 or Bing. You can open it with a single button on many Windows keyboards (the one that looks like two diamond shapes), or find it in the Start menu.\n\nCopilot can help with a surprising number of things: writing a birthday message, summarizing a long article, explaining a confusing news story, looking up information, editing a paragraph you wrote, or helping you figure out what a tech error means. This guide shows you the basics so you can start getting comfortable with it.`,
+    body: `Microsoft Copilot is an AI assistant that Microsoft has built directly into Windows 11, Bing, and Microsoft 365. If you've heard of ChatGPT, Copilot is similar — you type a question or request in plain English. And it responds with helpful information, writes text for you, summarizes things, or helps you get things done on your computer.\n\nThe good news: Copilot is free. You don't need to sign up for anything extra if you already use Windows 11 or Bing. You can open it with a single button on many Windows keyboards (the one that looks like two diamond shapes), or find it in the Start menu.\n\nCopilot can help with a surprising number of things: writing a birthday message, summarizing a long article, explaining a confusing news story, looking up information, editing a paragraph you wrote, or helping you figure out what a tech error means. This guide shows you the basics so you can start getting comfortable with it.`,
     steps: [
       {
         title: 'Open Microsoft Copilot',
@@ -162,7 +162,7 @@ export const guidesBatch20: Guide[] = [
     thumbnailEmoji: '',
     publishedAt: '2026-04-19',
     difficulty: 'Beginner',
-    body: `Google Wallet is the built-in app on Android phones that lets you store payment cards, loyalty cards, boarding passes, and transit cards — all on your phone. It's Google's answer to Apple Wallet, and it works on any Android phone that has NFC (the short-range wireless technology that lets you tap to pay at store terminals).\n\nMost Android phones made in the last five years have NFC and Google Wallet pre-installed. Once you add a credit or debit card, you can pay at checkout counters just by holding your phone near the payment terminal — the same terminals that accept tap-to-pay cards. It's faster, and you don't have to carry every card with you.\n\nGoogle Wallet also stores boarding passes, event tickets, gym memberships, and more. This guide shows you how to set it up, add your first card, and use it confidently.`,
+    body: `Google Wallet is the built-in app on Android phones that lets you store payment cards, loyalty cards, boarding passes, and transit cards — all on your phone. It's Google's answer to Apple Wallet. And it works on any Android phone that has NFC (the short-range wireless technology that lets you tap to pay at store terminals).\n\nMost Android phones made in the last five years have NFC and Google Wallet pre-installed. Once you add a credit or debit card, you can pay at checkout counters just by holding your phone near the payment terminal — the same terminals that accept tap-to-pay cards. It's faster, and you don't have to carry every card with you.\n\nGoogle Wallet also stores boarding passes, event tickets, gym memberships, and more. This guide shows you how to set it up, add your first card, and use it confidently.`,
     steps: [
       {
         title: 'Find and open Google Wallet',
@@ -392,7 +392,7 @@ export const guidesBatch20: Guide[] = [
     thumbnailEmoji: '',
     publishedAt: '2026-04-19',
     difficulty: 'Beginner',
-    body: `Alexa Guard is a free feature built into Amazon Echo speakers that turns your Alexa device into a simple home security monitor. When you tell Alexa you're leaving home, Guard activates and your Echo will listen for specific sounds: smoke or carbon monoxide alarms going off, the sound of glass breaking, or general activity in the house.\n\nIf something is detected, Alexa sends a Smart Alert to your phone — a notification telling you what was heard and when. This doesn't replace a professional security system, but it adds a free extra layer of awareness, especially if you live alone or leave your home unattended for extended periods.\n\nAlexa Guard Plus is an upgraded paid version with more features, but the free version is genuinely useful and requires nothing beyond your existing Echo device and the Alexa app on your phone.`,
+    body: `Alexa Guard is a free feature built into Amazon Echo speakers that turns your Alexa device into a simple home security monitor. When you tell Alexa you're leaving home, Guard activates and your Echo will listen for specific sounds: smoke or carbon monoxide alarms going off, the sound of glass breaking, or general activity in the house.\n\nIf something is detected, Alexa sends a Smart Alert to your phone — a notification telling you what was heard and when. This doesn't replace a professional security system. But it adds a free extra layer of awareness, especially if you live alone or leave your home unattended for extended periods.\n\nAlexa Guard Plus is an upgraded paid version with more features, but the free version is genuinely useful and requires nothing beyond your existing Echo device and the Alexa app on your phone.`,
     steps: [
       {
         title: 'Set up Alexa Guard in the Alexa app',
@@ -814,7 +814,7 @@ export const guidesBatch20: Guide[] = [
       },
       {
         title: 'Register with the Do Not Call Registry',
-        content: `Visit donotcall.gov (official FTC website) and register your phone number. It's free and takes about 2 minutes. Legitimate telemarketers are legally required to stop calling registered numbers. This doesn't stop scammers (who ignore the law), but it does reduce sales calls from companies that follow the rules.`,
+        content: `Visit donotcall.gov (official FTC website) and register your phone number. It's free and takes about 2 minutes. Legitimate telemarketers are legally required to stop calling registered numbers. This doesn't stop scammers (who ignore the law). But it does reduce sales calls from companies that follow the rules.`,
       },
       {
         title: 'Install a free call-blocking app',

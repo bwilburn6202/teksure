@@ -11,7 +11,7 @@ export const guidesBatch84: Guide[] = [
     thumbnailEmoji: ``,
     publishedAt: `2026-04-20`,
     difficulty: `Beginner`,
-    body: `Bark is a parental monitoring service that watches for warning signs in your child's texts, emails, and social media accounts — things like signs of bullying, depression, sexual content, or contact with strangers. Unlike apps that show parents every single message, Bark uses automated analysis to flag only the conversations that seem concerning. That means your child keeps some privacy, and you avoid the time-consuming job of reading hundreds of messages every day.
+    body: `Bark is a parental monitoring service that watches for warning signs in your child's texts, emails, and social media accounts — things like signs of bullying, depression, sexual content, or contact with strangers. Unlike apps that show parents every single message, Bark uses automated analysis to flag only the conversations that seem concerning. That means your child keeps some privacy. And you avoid the time-consuming job of reading hundreds of messages every day.
 
 Bark works across more than 30 platforms, including Instagram, Snapchat, TikTok, Gmail, iMessage, and many others. It also monitors activity on Android and iPhone devices directly when you install its app. When something worrying is detected, Bark sends you an email or text alert explaining the issue and suggesting how to respond. You can then choose to open a conversation with your child rather than reacting to every small thing.
 
@@ -36,7 +36,7 @@ Setting up Bark takes about 20 to 30 minutes. You will create a parent account, 
       },
       {
         title: `Review your alert settings`,
-        content: `In the Bark dashboard, go to Settings and look at the "Alert Preferences" section. You can adjust how sensitive the monitoring is for different categories, such as bullying, depression, or adult content. The default settings work well for most families, but you may want to increase sensitivity for younger children.`,
+        content: `In the Bark dashboard, go to Settings and look at the "Alert Preferences" section. You can adjust how sensitive the monitoring is for different categories, such as bullying, depression, or adult content. The default settings work well for most families. But you may want to increase sensitivity for younger children.`,
       },
       {
         title: `Respond to your first alert`,
@@ -112,7 +112,7 @@ Parental controls include the ability to block specific websites or entire categ
       },
       {
         title: `Add a child profile`,
-        content: `In the dashboard, click "Add Child." Enter your child's name, date of birth, and gender. Qustodio uses the age to suggest default settings, but you can change anything manually. Give the profile a recognizable photo or color to make it easy to identify at a glance.`,
+        content: `In the dashboard, click "Add Child." Enter your child's name, date of birth, and gender. Qustodio uses the age to suggest default settings. But you can change anything manually. Give the profile a recognizable photo or color to make it easy to identify at a glance.`,
       },
       {
         title: `Install Qustodio on your child's device`,
@@ -262,7 +262,7 @@ The subscription costs $4.99 per month for Prime members and $7.99 per month wit
     difficulty: `Beginner`,
     body: `Roblox is one of the most popular online platforms for children and teenagers, with hundreds of millions of accounts worldwide. It is not a single game but rather a platform where users can play millions of different games created by other users, as well as create their own games. Children typically love Roblox for its creativity and social elements — they can play with friends, explore new experiences, and build their own worlds.
 
-For parents, the social and open-ended nature of Roblox raises some valid concerns. Players can chat with each other in real time, make purchases using the in-game currency called Robux, and encounter games created by strangers that may include mature themes. Roblox has built-in safety tools that address most of these concerns, but they need to be actively turned on by parents.
+For parents, the social and open-ended nature of Roblox raises some valid concerns. Players can chat with each other in real time, make purchases using the in-game currency called Robux, and encounter games created by strangers that may include mature themes. Roblox has built-in safety tools that address most of these concerns. But they need to be actively turned on by parents.
 
 The most important controls are Account Restrictions (which lock the account to a curated list of age-appropriate games and prevent chat with strangers), chat settings (which control who can message your child), and spending controls (which limit or require approval for Robux purchases). Roblox also offers Parental PIN protection so your child cannot change their own safety settings.
 
@@ -437,7 +437,7 @@ The app is available on iPhone, iPad, Android phones and tablets, Amazon Fire ta
 
 Children navigate a colorful "Learning Path" where they complete interactive games, puzzles, songs, and short books. As they finish activities, they earn virtual tickets and rewards, which keeps younger children motivated. The learning is entirely self-guided — children move at their own pace without needing a parent to direct each step.
 
-ABCmouse has received strong endorsements from parents and educators, and it covers the same foundational skills taught in preschool and kindergarten. Many families use it to prepare a child for school, reinforce what is being taught in class, or keep learning going during summer breaks.
+ABCmouse has received strong endorsements from parents and educators. And it covers the same foundational skills taught in preschool and kindergarten. Many families use it to prepare a child for school, reinforce what is being taught in class, or keep learning going during summer breaks.
 
 The subscription costs $12.99 per month or $59.99 per year, and a one-month free trial is usually available for new subscribers. The app works on iPhone, iPad, Android devices, Amazon Fire tablets, and through web browsers on Mac and Windows computers. Up to three child profiles can be created under one ABCmouse account.`,
     steps: [
@@ -453,7 +453,7 @@ The subscription costs $12.99 per month or $59.99 per year, and a one-month free
       {
         title: `Start the Learning Path together`,
         content: `Tap on your child's profile to enter the ABCmouse world. You will see a colorful map with their Learning Path. Sit with your child for the first session to help them understand how to navigate the app and what to do when an activity appears. After one or two sessions, most children 4 and older can navigate independently.`,
-        tip: `Quick Tip: For children ages 2 to 3, plan to sit with them for each session. The content is appropriate for toddlers, but they will need a parent's help with navigation.`,
+        tip: `Quick Tip: For children ages 2 to 3, plan to sit with them for each session. The content is appropriate for toddlers. But they will need a parent's help with navigation.`,
       },
       {
         title: `Review progress from the parent dashboard`,
@@ -610,7 +610,7 @@ Tynker works on iPad, Android tablets, iPhone, Android phones, and web browsers 
       {
         title: `Add your child's profile`,
         content: `After logging in, click "Add a Child" in your parent dashboard. Enter your child's name and age. Tynker will recommend a starting course based on the age you enter. You do not need to enter your child's personal information beyond a first name — you can use a nickname if you prefer.`,
-        tip: `Quick Tip: Tynker places children on a learning path automatically, but you can browse the full course catalog and assign any course you think your child would enjoy, regardless of the default recommendation.`,
+        tip: `Quick Tip: Tynker places children on a learning path automatically. But you can browse the full course catalog and assign any course you think your child would enjoy, regardless of the default recommendation.`,
       },
       {
         title: `Start with a beginner course`,

@@ -133,7 +133,7 @@ Source: Apple Support — Camera tips (support.apple.com) and Google Support —
     difficulty: 'Beginner',
     body: `An "app" is a small program — short for application — that runs on your phone or tablet and does one specific thing. A weather app shows the forecast. A banking app lets you check your balance. A video call app lets you talk face-to-face with family members across the country.
 
-The App Store (on iPhones and iPads made by Apple) and the Google Play Store (on Android phones such as Samsung, Motorola, and Google Pixel) are the official stores where you download these apps. Think of them the way you think of a reputable department store: every item on the shelf has been reviewed, the store stands behind what it sells, and you are not buying from a stranger on a street corner.
+The App Store (on iPhones and iPads made by Apple) and the Google Play Store (on Android phones such as Samsung, Motorola, and Google Pixel) are the official stores where you download these apps. Think of them the way you think of a reputable department store: every item on the shelf has been reviewed, the store stands behind what it sells. And you are not buying from a stranger on a street corner.
 
 **Why you should only download apps from the official store**
 
@@ -227,7 +227,7 @@ The good news is that you have several tools to fight back. This guide walks thr
 
 Not all unwanted email is dangerous. There are two main types:
 
-1. Legitimate marketing email: You shopped at a store, donated to a charity, or signed up for a service, and now they send you newsletters or offers. You may not want them, but they are from a real company that has your address because you gave it to them at some point. These are safe to unsubscribe from.
+1. Legitimate marketing email: You shopped at a store, donated to a charity, or signed up for a service, and now they send you newsletters or offers. You may not want them. But they are from a real company that has your address because you gave it to them at some point. These are safe to unsubscribe from.
 
 2. Spam from unknown senders: You receive an email from a company or person you have never heard of, often with an urgent subject line ("Your account has been suspended," "You have won a prize," or "FINAL NOTICE"). These are often sent by scammers. Do not click the unsubscribe link in these emails.
 
@@ -337,7 +337,7 @@ The encouraging news: every major smart TV brand — Samsung, LG, Sony, TCL, Rok
 
 **Choosing the right TV size before you buy**
 
-If you have not purchased your TV yet, here is a practical rule of thumb for sizing. Measure the distance (in feet) between your couch and where the TV will sit. Multiply that distance by 8, and you get the recommended screen size in inches. For example, if you sit 8 feet away, look for a TV around 55 to 65 inches. Sitting too close to a screen that is too large can cause eye strain. Sitting too far from one that is too small means straining to read text.
+If you have not purchased your TV yet, here is a practical rule of thumb for sizing. Measure the distance (in feet) between your couch and where the TV will sit. Multiply that distance by 8. And you get the recommended screen size in inches. For example, if you sit 8 feet away, look for a TV around 55 to 65 inches. Sitting too close to a screen that is too large can cause eye strain. Sitting too far from one that is too small means straining to read text.
 
 Most living rooms with a couch 8 to 10 feet from the wall do well with a 55-inch TV. A bedroom with a viewing distance of 5 to 6 feet is more comfortable with a 40 to 50-inch screen.
 

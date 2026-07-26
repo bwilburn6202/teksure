@@ -171,7 +171,7 @@ Quick Tip: You can double-click a ZIP file to peek inside without extracting. Bu
     thumbnailEmoji: ``,
     publishedAt: `2026-04-20`,
     difficulty: `Beginner`,
-    body: `An external hard drive is one of the best investments you can make for your computer. It is a storage device that plugs into your PC with a USB cable, and it lets you keep a copy of your important files in case your computer breaks, gets stolen, or gets a virus.
+    body: `An external hard drive is one of the best investments you can make for your computer. It is a storage device that plugs into your PC with a USB cable. And it lets you keep a copy of your important files in case your computer breaks, gets stolen, or gets a virus.
 
 The rule in data backup is called "3-2-1": keep three copies of your data, on two different types of storage, with one copy stored somewhere other than your home (like a cloud service). An external drive takes care of the local backup piece.
 
@@ -624,7 +624,7 @@ Some apps let you turn off autocorrect inside them. In apps that use the standar
 
 The bar above the keyboard showing word suggestions is "Predictive text" — a different feature from autocorrect. You can turn it off separately in Settings > General > Keyboard > Predictive Text.
 
-Quick Tip: If you reset your keyboard dictionary (Settings > General > Transfer or Reset iPhone > Reset > Reset Keyboard Dictionary), the iPhone forgets all the words it learned from your typing. This can fix repeated wrong autocorrections, but you will have to re-train it.`,
+Quick Tip: If you reset your keyboard dictionary (Settings > General > Transfer or Reset iPhone > Reset > Reset Keyboard Dictionary), the iPhone forgets all the words it learned from your typing. This can fix repeated wrong autocorrections. But you will have to re-train it.`,
     steps: [
       {
         title: `Undo an autocorrect immediately after it happens`,
@@ -925,7 +925,7 @@ Quick Tip: On Mac, you can share your Focus status with contacts in Messages. Th
     thumbnailEmoji: ``,
     publishedAt: `2026-04-20`,
     difficulty: `Intermediate`,
-    body: `A guest Wi-Fi network is a separate wireless network that runs on the same router as your main home Wi-Fi. Guests connect to it and get internet access, but they are kept separate from your home network. They cannot see your personal computers, printers, smart home devices, or shared files — even if they are on the same physical internet connection.
+    body: `A guest Wi-Fi network is a separate wireless network that runs on the same router as your main home Wi-Fi. Guests connect to it and get internet access. But they are kept separate from your home network. They cannot see your personal computers, printers, smart home devices, or shared files — even if they are on the same physical internet connection.
 
 **Why use a guest network?**
 
@@ -997,7 +997,7 @@ This is the most common mistake people make: placing the extender too far from t
 
 **Setting it up**
 
-Most modern extenders support WPS (Wi-Fi Protected Setup) — press the WPS button on your router and then the WPS button on the extender within two minutes, and they connect automatically without any typing. Otherwise, you set up the extender through a mobile app or a browser-based setup page.
+Most modern extenders support WPS (Wi-Fi Protected Setup) — press the WPS button on your router and then the WPS button on the extender within two minutes. And they connect automatically without any typing. Otherwise, you set up the extender through a mobile app or a browser-based setup page.
 
 Quick Tip: TP-Link, Netgear, and Belkin all make reliable extenders in the $30–$60 range. Look for one that supports the same Wi-Fi standard as your router (Wi-Fi 5 or Wi-Fi 6) for the best results.`,
     steps: [

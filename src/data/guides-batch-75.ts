@@ -11,7 +11,7 @@ export const guidesBatch75: Guide[] = [
     thumbnailEmoji: ``,
     publishedAt: `2026-04-20`,
     difficulty: `Beginner`,
-    body: `Starting a running habit can feel overwhelming if you've never done it before. Your lungs burn after one block, your knees complain, and you wonder how anyone ever runs a whole mile. The Couch to 5K program — available as the official C25K app on iPhone and Android — was designed specifically to solve that problem.
+    body: `Starting a running habit can feel overwhelming if you've never done it before. Your lungs burn after one block, your knees complain. And you wonder how anyone ever runs a whole mile. The Couch to 5K program — available as the official C25K app on iPhone and Android — was designed specifically to solve that problem.
 
 The program works by mixing walking and running intervals. In the first week, you might run for just 60 seconds, then walk for 90 seconds, and repeat that cycle for about 20 minutes. Each week the running intervals get a little longer and the walking breaks get a little shorter. By the end of nine weeks, you're running continuously for 30 minutes — roughly 3.1 miles, which is a 5K.
 
@@ -78,7 +78,7 @@ Peloton instructors are motivating and encouraging without being aggressive. Man
       },
       {
         title: `Start your free trial`,
-        content: `After creating your account, the app will prompt you to start a free trial. You'll need to enter a credit card, but you won't be charged until the trial ends. Set a reminder on your calendar for a few days before the trial expires so you can decide whether to keep the subscription.`,
+        content: `After creating your account, the app will prompt you to start a free trial. You'll need to enter a credit card. But you won't be charged until the trial ends. Set a reminder on your calendar for a few days before the trial expires so you can decide whether to keep the subscription.`,
         warning: `Remember to cancel before the trial ends if you decide it isn't for you. The cancellation option is inside the app under Account > Membership.`,
       },
       {
@@ -376,7 +376,7 @@ One important note: a TV antenna works with any TV that has a built-in digital t
     thumbnailEmoji: ``,
     publishedAt: `2026-04-20`,
     difficulty: `Beginner`,
-    body: `Streaming services keep raising their prices, and keeping up with multiple subscriptions adds up fast. Kanopy is one of the best-kept secrets in free entertainment: it's a streaming service completely free for anyone with a public library card, and it shows no ads during movies or documentaries.
+    body: `Streaming services keep raising their prices, and keeping up with multiple subscriptions adds up fast. Kanopy is one of the best-kept secrets in free entertainment: it's a streaming service completely free for anyone with a public library card. And it shows no ads during movies or documentaries.
 
 Kanopy is funded by public libraries, which pay a small fee each time a patron watches a title. In return, their cardholders get access to a curated library of films — independent movies, foreign films, classic Hollywood cinema, award-winning documentaries, and educational content. The selection leans more toward thoughtful, acclaimed films rather than blockbusters, which makes it a great complement to services like Netflix or Amazon Prime.
 
@@ -423,7 +423,7 @@ You can watch Kanopy in a web browser on any computer, through the Kanopy app on
     difficulty: `Beginner`,
     body: `Not every streaming service needs a credit card or a monthly fee. Crackle is a free, ad-supported streaming platform that gives you access to movies and TV shows at no cost. Like watching television the traditional way, Crackle shows short commercial breaks during programs. The trade-off — watching a few ads in exchange for free entertainment — is the same deal people accepted for decades with broadcast TV.
 
-Crackle's library includes Hollywood films across multiple genres: action, comedy, drama, horror, and thriller. It also has some original programming and complete seasons of well-known TV series. The catalog isn't as large as Netflix or Amazon Prime, but it rotates regularly, so there's usually something worth watching.
+Crackle's library includes Hollywood films across multiple genres: action, comedy, drama, horror, and thriller. It also has some original programming and complete seasons of well-known TV series. The catalog isn't as large as Netflix or Amazon Prime. But it rotates regularly, so there's usually something worth watching.
 
 Crackle doesn't require you to create an account to watch, which makes it one of the lowest-friction free streaming options available. You can open the app or website and start watching right away. Creating a free account does allow you to create a watchlist and resume watching where you left off, which is convenient if you're watching a long movie in multiple sessions.
 
@@ -442,7 +442,7 @@ Crackle is a good complement to Tubi, Pluto TV, and YouTube's free movie section
       },
       {
         title: `Start watching`,
-        content: `Click or tap the play button on any title. Crackle will play a short pre-roll ad (typically 15 to 30 seconds) before the content begins. During the movie, short commercial breaks appear — similar to watching a movie on a regular TV channel. You cannot skip these ads, but they are generally shorter than traditional TV commercial breaks.`,
+        content: `Click or tap the play button on any title. Crackle will play a short pre-roll ad (typically 15 to 30 seconds) before the content begins. During the movie, short commercial breaks appear — similar to watching a movie on a regular TV channel. You cannot skip these ads. But they are generally shorter than traditional TV commercial breaks.`,
       },
       {
         title: `Create a free account for extra features`,

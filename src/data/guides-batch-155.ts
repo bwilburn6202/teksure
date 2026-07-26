@@ -8,8 +8,7 @@ export const guidesBatch155: Guide[] = [
   {
     slug: 'how-to-mirror-your-phone-to-your-tv-2026',
     title: 'How to Show Your Phone Screen on Your TV',
-    excerpt:
-      'Watch YouTube videos, share family photos, or video chat on the big screen. Three methods: AirPlay for iPhone, Google Cast for Android, and an HDMI cable for any phone.',
+    excerpt: 'Watch YouTube videos, share family photos, or video chat on the big screen. Three methods: AirPlay for iPhone, Google Cast for Android, and an HDMI cable for any phone.',
     category: 'entertainment',
     tags: [
       'screen mirroring',
@@ -118,38 +117,31 @@ The wired method does not require Wi-Fi and works with any TV that has an HDMI p
     steps: [
       {
         title: 'Choose which method works for your phone and TV',
-        content:
-          'iPhone with an Apple TV or AirPlay-compatible smart TV: use AirPlay (Method 1). Android phone with a Chromecast or Cast-compatible TV: use Google Cast (Method 2). Any phone with any TV that has an HDMI port: use an HDMI cable and adapter (Method 3). If you are not sure what your TV supports, check its settings menu for "AirPlay" or "Chromecast."',
+        content: 'iPhone with an Apple TV or AirPlay-compatible smart TV: use AirPlay (Method 1). Android phone with a Chromecast or Cast-compatible TV: use Google Cast (Method 2). Any phone with any TV that has an HDMI port: use an HDMI cable and adapter (Method 3). If you are not sure what your TV supports, check its settings menu for "AirPlay" or "Chromecast."',
         tip: 'For wireless methods (AirPlay and Google Cast), your phone and TV must be connected to the same home Wi-Fi network. This is the most common reason mirroring does not work.',
       },
       {
         title: 'AirPlay: open Control Center and tap Screen Mirroring',
-        content:
-          'On iPhone, swipe down from the top-right corner of the screen to open Control Center. Tap the Screen Mirroring icon (two overlapping rectangles with a small triangle). Your AirPlay-compatible TV or Apple TV will appear in the list — tap its name. If prompted, enter the four-digit code shown on your TV.',
+        content: 'On iPhone, swipe down from the top-right corner of the screen to open Control Center. Tap the Screen Mirroring icon (two overlapping rectangles with a small triangle). Your AirPlay-compatible TV or Apple TV will appear in the list — tap its name. If prompted, enter the four-digit code shown on your TV.',
         tip: 'If Screen Mirroring does not appear in Control Center, go to Settings → Control Center and add "Screen Mirroring" to the list of included controls.',
       },
       {
         title: 'Google Cast: tap the Cast icon in your app or Quick Settings',
-        content:
-          'In apps like YouTube, tap the Cast icon (a rectangle with a Wi-Fi signal) and select your TV. To mirror your full Android screen, swipe down to open Quick Settings and tap the "Cast" or "Smart View" tile, then choose your TV from the list.',
+        content: 'In apps like YouTube, tap the Cast icon (a rectangle with a Wi-Fi signal) and select your TV. To mirror your full Android screen, swipe down to open Quick Settings and tap the "Cast" or "Smart View" tile, then choose your TV from the list.',
         tip: 'Casting from inside an app (YouTube, Google Photos) is more stable than full-screen mirroring and uses less battery.',
       },
       {
         title: 'HDMI cable: connect the adapter and switch your TV input',
-        content:
-          'Plug the appropriate adapter (Lightning to HDMI for iPhone, USB-C to HDMI for Android) into your phone\'s charging port. Connect an HDMI cable between the adapter and an HDMI port on your TV. Press the Input or Source button on your TV remote and select the correct HDMI input. Your phone screen will appear on the TV.',
-        warning:
-          'Use Apple\'s official Lightning to Digital AV Adapter or a well-reviewed third-party adapter. Very cheap, unknown-brand adapters sometimes cause a dim or unstable picture.',
+        content: 'Plug the appropriate adapter (Lightning to HDMI for iPhone, USB-C to HDMI for Android) into your phone\'s charging port. Connect an HDMI cable between the adapter and an HDMI port on your TV. Press the Input or Source button on your TV remote and select the correct HDMI input. Your phone screen will appear on the TV.',
+        warning: 'Use Apple\'s official Lightning to Digital AV Adapter or a well-reviewed third-party adapter. Very cheap, unknown-brand adapters sometimes cause a dim or unstable picture.',
       },
       {
         title: 'Show photos, play videos, or start a video call',
-        content:
-          'Once your phone screen is on the TV, open any app as normal — Photos, YouTube, FaceTime, Zoom — and it will display on the big screen. For a video call, prop your phone up so the camera faces you while the TV shows the other person\'s face at a comfortable size.',
+        content: 'Once your phone screen is on the TV, open any app as normal — Photos, YouTube, FaceTime, Zoom — and it will display on the big screen. For a video call, prop your phone up so the camera faces you while the TV shows the other person\'s face at a comfortable size.',
       },
       {
         title: 'Stop mirroring when you are done',
-        content:
-          'AirPlay: open Control Center, tap Screen Mirroring, then tap "Stop Mirroring." Google Cast: open Quick Settings, tap the Cast tile, then tap "Disconnect." HDMI cable: unplug the adapter from your phone. Your TV will return to its normal input.',
+        content: 'AirPlay: open Control Center, tap Screen Mirroring, then tap "Stop Mirroring." Google Cast: open Quick Settings, tap the Cast tile, then tap "Disconnect." HDMI cable: unplug the adapter from your phone. Your TV will return to its normal input.',
         tip: 'Leaving screen mirroring running when you are not using it drains your phone battery faster. Disconnect when you are finished.',
       },
     ],
@@ -158,8 +150,7 @@ The wired method does not require Wi-Fi and works with any TV that has an HDMI p
   {
     slug: 'how-to-share-your-location-with-family-2026',
     title: 'How to Share Your Location with a Family Member',
-    excerpt:
-      'Let a trusted family member see where you are in real time using Find My on iPhone or Google Maps on Android. Stay connected and give your family peace of mind.',
+    excerpt: 'Let a trusted family member see where you are in real time using Find My on iPhone or Google Maps on Android. Stay connected and give your family peace of mind.',
     category: 'communication',
     tags: [
       'location sharing',
@@ -180,7 +171,7 @@ The wired method does not require Wi-Fi and works with any TV that has an HDMI p
     difficulty: 'Beginner',
     body: `Sharing your location with a trusted family member is one of the most practical things you can do with your phone. It means your adult children or spouse can see at a glance that you arrived home safely, find you quickly if you ever need help, and feel reassured without having to call or text every few hours to check in.
 
-This is entirely different from a stranger tracking you — you are in complete control of who sees your location, when they can see it, and you can turn it off at any moment.
+This is entirely different from a stranger tracking you — you are in complete control of who sees your location, when they can see it. And you can turn it off at any moment.
 
 This guide covers two methods: **Find My** for iPhone users, and **Google Maps location sharing** for Android users.
 
@@ -274,38 +265,32 @@ Location sharing uses your phone's GPS, which can use a small amount of extra ba
     steps: [
       {
         title: 'Decide which app to use',
-        content:
-          'iPhone users: use the Find My app (built into every iPhone). Android users: use Google Maps (already on most Android phones). If you have an iPhone but your family member has Android, Google Maps works across both — it sends a link the other person can open in any browser.',
+        content: 'iPhone users: use the Find My app (built into every iPhone). Android users: use Google Maps (already on most Android phones). If you have an iPhone but your family member has Android, Google Maps works across both — it sends a link the other person can open in any browser.',
         tip: 'Only share your location with people you fully trust. You are in control and can turn sharing off at any time.',
       },
       {
         title: 'iPhone: turn on Share My Location in Settings',
-        content:
-          'Open Settings → tap your name at the top → tap Find My → make sure "Share My Location" is switched on (green). This is the master switch that allows any location sharing from your iPhone.',
-        warning:
-          'If Share My Location is turned off, no one can see your location even if you have shared it with them before. Make sure it is on before proceeding.',
+        content: 'Open Settings → tap your name at the top → tap Find My → make sure "Share My Location" is switched on (green). This is the master switch that allows any location sharing from your iPhone.',
+        warning: 'If Share My Location is turned off, no one can see your location even if you have shared it with them before. Make sure it is on before proceeding.',
       },
       {
         title: 'iPhone: share your location via Messages or the Find My app',
-        content:
-          'In Messages: open a conversation with your family member → tap their name at the top → tap Info → tap "Share My Location" → choose how long (one hour, end of day, or indefinitely). In Find My: open the app → tap the People tab → tap "Share My Location" → enter your family member\'s name → tap Send.',
+        content: 'In Messages: open a conversation with your family member → tap their name at the top → tap Info → tap "Share My Location" → choose how long (one hour, end of day, or indefinitely). In Find My: open the app → tap the People tab → tap "Share My Location" → enter your family member\'s name → tap Send.',
         tip: 'Choose "Share Indefinitely" if you want your family to be able to check on you anytime. You can always turn it off later from the Find My app.',
       },
       {
         title: 'Android: start sharing in Google Maps',
-        content:
-          'Open Google Maps → tap your profile picture or initial in the top-right corner → tap "Location sharing" → tap "Share location" → choose a duration or "Until you turn this off" → select your family member\'s contact → tap Share. Google Maps sends them a link.',
+        content: 'Open Google Maps → tap your profile picture or initial in the top-right corner → tap "Location sharing" → tap "Share location" → choose a duration or "Until you turn this off" → select your family member\'s contact → tap Share. Google Maps sends them a link.',
         tip: 'You can share with multiple people at once — repeat the process for each family member.',
       },
       {
         title: 'Confirm your family member can see your location',
-        content:
-          'Ask your family member to open the Find My app (iPhone) or click the Google Maps link you sent (Android). They should see your name and a dot showing your current location on a map. Have them confirm with you that it is showing correctly — a quick phone call or text works well for this.',
+        content: 'Ask your family member to open the Find My app (iPhone) or click the Google Maps link you sent (Android). They should see your name and a dot showing your current location on a map. Have them confirm with you that it is showing correctly — a quick phone call or text works well for this.',
       },
       {
         title: 'Turn location sharing off when you want to',
         content: 'Find My (iPhone): open the app → People tab → tap the family member\'s name → tap "Stop Sharing My Location." Google Maps (Android): open Google Maps → tap your profile photo → Location sharing → tap the person\'s name → tap Stop. Sharing ends right away.',
-        tip: 'Turning off location sharing does not delete anything or notify the other person with an alert. They will stop seeing your location, but there is no dramatic notification.',
+        tip: 'Turning off location sharing does not delete anything or notify the other person with an alert. They will stop seeing your location. But there is no dramatic notification.',
       },
     ],
   },
@@ -313,8 +298,7 @@ Location sharing uses your phone's GPS, which can use a small amount of extra ba
   {
     slug: 'how-to-use-your-phone-as-a-flashlight-2026',
     title: 'How to Turn On the Flashlight on Your iPhone or Android Phone',
-    excerpt:
-      'Your phone has a bright built-in flashlight you can switch on in seconds — no app needed. Learn the fastest ways to turn it on and off on iPhone and Android.',
+    excerpt: 'Your phone has a bright built-in flashlight you can switch on in seconds — no app needed. Learn the fastest ways to turn it on and off on iPhone and Android.',
     category: 'tips-tricks',
     tags: [
       'flashlight',
@@ -426,38 +410,31 @@ The flashlight uses your phone's camera LED, which draws more battery power than
     steps: [
       {
         title: 'iPhone: swipe down to open Control Center and tap the flashlight',
-        content:
-          'On iPhone, swipe down from the top-right corner of your screen to open Control Center. (On older iPhones with a Home button, swipe up from the very bottom of the screen.) Tap the flashlight icon — it looks like a small torch. The LED light on the back of your phone will turn on. Tap the icon again to turn it off.',
+        content: 'On iPhone, swipe down from the top-right corner of your screen to open Control Center. (On older iPhones with a Home button, swipe up from the very bottom of the screen.) Tap the flashlight icon — it looks like a small torch. The LED light on the back of your phone will turn on. Tap the icon again to turn it off.',
         tip: 'You can turn the flashlight on from the lock screen without unlocking your phone — this is useful in a hurry.',
       },
       {
         title: 'iPhone: ask Siri to turn the flashlight on or off',
-        content:
-          'Say "Hey Siri, turn on the flashlight" to turn it on, or "Hey Siri, turn off the flashlight" to turn it off. Siri responds instantly — no need to tap anything. This is the best option when your hands are full.',
+        content: 'Say "Hey Siri, turn on the flashlight" to turn it on, or "Hey Siri, turn off the flashlight" to turn it off. Siri responds instantly — no need to tap anything. This is the best option when your hands are full.',
       },
       {
         title: 'iPhone: adjust flashlight brightness',
-        content:
-          'Open Control Center, then press and hold the flashlight icon (do not tap — hold it for about a second). A brightness slider will appear. Drag up for more light, drag down for less. A dimmer setting is useful for reading in a dark restaurant without the full brightness being harsh.',
+        content: 'Open Control Center, then press and hold the flashlight icon (do not tap — hold it for about a second). A brightness slider will appear. Drag up for more light, drag down for less. A dimmer setting is useful for reading in a dark restaurant without the full brightness being harsh.',
         tip: 'Dimming the flashlight also uses less battery — a good option if you need light for a longer period.',
       },
       {
         title: 'Android: swipe down to open Quick Settings and tap Flashlight',
-        content:
-          'On Android, swipe down from the top of your screen (you may need to swipe down twice or use two fingers) to open the full Quick Settings panel. Find the "Flashlight" tile — it may also say "Torch" on Samsung phones — and tap it to turn the flashlight on. Tap it again to turn it off.',
+        content: 'On Android, swipe down from the top of your screen (you may need to swipe down twice or use two fingers) to open the full Quick Settings panel. Find the "Flashlight" tile — it may also say "Torch" on Samsung phones — and tap it to turn the flashlight on. Tap it again to turn it off.',
         tip: 'If you do not see a Flashlight tile in Quick Settings, tap the pencil or Edit icon and drag the Flashlight tile into the visible area so it appears every time.',
       },
       {
         title: 'Android: ask Google Assistant to turn the flashlight on or off',
-        content:
-          'Say "Hey Google, turn on flashlight" to turn it on. Say "Hey Google, turn off flashlight" to turn it off. Google Assistant handles this instantly and works even if your phone is sitting across the room, as long as it can hear you.',
+        content: 'Say "Hey Google, turn on flashlight" to turn it on. Say "Hey Google, turn off flashlight" to turn it off. Google Assistant handles this instantly and works even if your phone is sitting across the room, as long as it can hear you.',
       },
       {
         title: 'Turn the flashlight off when you are done to save battery',
-        content:
-          'The flashlight uses a bright LED that draws extra power. For short uses of a minute or two, the battery impact is small. For longer use, remember to turn it off when you no longer need it — open Control Center on iPhone or Quick Settings on Android and tap the flashlight icon to switch it off.',
-        warning:
-          'Leaving the flashlight on for a long time while your phone is in your pocket or bag can cause the phone to get warm. Turn it off when it is not needed.',
+        content: 'The flashlight uses a bright LED that draws extra power. For short uses of a minute or two, the battery impact is small. For longer use, remember to turn it off when you no longer need it — open Control Center on iPhone or Quick Settings on Android and tap the flashlight icon to switch it off.',
+        warning: 'Leaving the flashlight on for a long time while your phone is in your pocket or bag can cause the phone to get warm. Turn it off when it is not needed.',
       },
     ],
   },
@@ -465,8 +442,7 @@ The flashlight uses your phone's camera LED, which draws more battery power than
   {
     slug: 'how-to-set-a-pin-or-password-on-your-phone-2026',
     title: 'How to Set a PIN or Password to Lock Your Phone',
-    excerpt:
-      'A phone lock screen is your first line of defense if your phone is ever lost or stolen. Learn how to set a PIN or password on iPhone and Android — and why it matters.',
+    excerpt: 'A phone lock screen is your first line of defense if your phone is ever lost or stolen. Learn how to set a PIN or password on iPhone and Android — and why it matters.',
     category: 'safety-guides',
     tags: [
       'phone PIN',
@@ -580,20 +556,17 @@ The process varies by phone brand. On most Android phones, after too many wrong 
     steps: [
       {
         title: 'Understand why a lock screen PIN matters',
-        content:
-          'A PIN or passcode prevents anyone who picks up your phone from accessing your banking apps, email, photos, and accounts. Without a lock screen, your phone is an open door to your personal and financial information. A 6-digit PIN is a strong and practical choice for most people.',
+        content: 'A PIN or passcode prevents anyone who picks up your phone from accessing your banking apps, email, photos, and accounts. Without a lock screen, your phone is an open door to your personal and financial information. A 6-digit PIN is a strong and practical choice for most people.',
         tip: 'Avoid common PINs like 123456, your birth year, or repeated digits like 111111. Choose a number that is meaningful to you but would not be obvious to anyone who knows you.',
       },
       {
         title: 'iPhone: open Settings → Face ID & Passcode → Turn Passcode On',
-        content:
-          'Open Settings → scroll down and tap "Face ID & Passcode" (or "Touch ID & Passcode" on older iPhones with a Home button). Tap "Turn Passcode On." By default, iPhone will ask for a 6-digit passcode — enter a six-digit number and confirm it. To choose a different length or type, tap "Passcode Options" before entering the code.',
+        content: 'Open Settings → scroll down and tap "Face ID & Passcode" (or "Touch ID & Passcode" on older iPhones with a Home button). Tap "Turn Passcode On." By default, iPhone will ask for a 6-digit passcode — enter a six-digit number and confirm it. To choose a different length or type, tap "Passcode Options" before entering the code.',
         tip: 'After setting your passcode, set up Face ID for day-to-day convenience. Your face unlocks the phone instantly — the passcode is the backup for when Face ID does not work.',
       },
       {
         title: 'Android: open Settings → Security → Screen lock → PIN',
-        content:
-          'Open Settings → tap Security (may be called "Biometrics and Security" or "Lock screen and security" depending on your phone). Tap "Screen lock" → tap "PIN." Enter a six-digit number, tap Continue, enter it again to confirm, and tap OK. Your phone will now lock every time the screen turns off.',
+        content: 'Open Settings → tap Security (may be called "Biometrics and Security" or "Lock screen and security" depending on your phone). Tap "Screen lock" → tap "PIN." Enter a six-digit number, tap Continue, enter it again to confirm, and tap OK. Your phone will now lock every time the screen turns off.',
         tip: 'After setting your PIN, go back to the Security settings and set up your fingerprint for faster day-to-day unlocking. The PIN remains as the secure backup.',
       },
       {
@@ -602,15 +575,12 @@ The process varies by phone brand. On most Android phones, after too many wrong 
       },
       {
         title: 'Write your PIN down and store it somewhere safe',
-        content:
-          'Write your PIN on paper and keep it in a safe place — a locked drawer, a home safe, or with your important documents. Do not store it in your phone or in an email you can easily access. Tell a trusted family member where to find it.',
-        warning:
-          'If you forget your PIN and enter it incorrectly too many times, your phone will eventually require a full reset that erases all your data. Store your PIN somewhere you can find it even without your phone.',
+        content: 'Write your PIN on paper and keep it in a safe place — a locked drawer, a home safe, or with your important documents. Do not store it in your phone or in an email you can easily access. Tell a trusted family member where to find it.',
+        warning: 'If you forget your PIN and enter it incorrectly too many times, your phone will eventually require a full reset that erases all your data. Store your PIN somewhere you can find it even without your phone.',
       },
       {
         title: 'What to do if you are locked out',
-        content:
-          'iPhone: connect to a computer and use iTunes (Windows) or Finder (Mac) to restore the phone via Recovery Mode. If iCloud backup is enabled, your data will restore afterward. Visit support.apple.com for step-by-step instructions. Android: after too many wrong attempts, most phones offer a "Forgot PIN" option using your Google account. You can also use android.com/find to reset the phone remotely.',
+        content: 'iPhone: connect to a computer and use iTunes (Windows) or Finder (Mac) to restore the phone via Recovery Mode. If iCloud backup is enabled, your data will restore afterward. Visit support.apple.com for step-by-step instructions. Android: after too many wrong attempts, most phones offer a "Forgot PIN" option using your Google account. You can also use android.com/find to reset the phone remotely.',
         tip: 'Enabling iCloud Backup on iPhone (Settings → your name → iCloud → iCloud Backup) or Google One Backup on Android protects your data so that even a full reset does not mean losing everything.',
       },
     ],

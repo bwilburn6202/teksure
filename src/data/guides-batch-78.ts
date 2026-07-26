@@ -13,7 +13,7 @@ export const guidesBatch78: Guide[] = [
     difficulty: `Beginner`,
     body: `If your WiFi signal is weak in certain rooms — a basement, a back bedroom, or a home office far from your router — powerline adapters may be the fix you have been looking for. These small devices use the electrical wiring already inside your walls to carry your internet signal from one outlet to another. You do not need to run any new cables or hire a professional to install them.
 
-A powerline adapter kit comes with two units. One plugs into an electrical outlet near your router, and you connect it to the router with a short ethernet cable that typically comes in the box. The second unit plugs into any other outlet in your home, and you connect that one to your computer, smart TV, or streaming device. The two adapters communicate with each other through the electrical wiring in the walls, creating a stable, wired-speed connection anywhere in your house.
+A powerline adapter kit comes with two units. One plugs into an electrical outlet near your router. And you connect it to the router with a short ethernet cable that typically comes in the box. The second unit plugs into any other outlet in your home. And you connect that one to your computer, smart TV, or streaming device. The two adapters communicate with each other through the electrical wiring in the walls, creating a stable, wired-speed connection anywhere in your house.
 
 Powerline adapters work best when both units are on the same electrical circuit. In most homes this is not a problem, but if you have a very large house with separate circuit panels, you may see reduced performance. Avoid plugging them into power strips or surge protectors — they work best when plugged directly into a wall outlet.
 
@@ -58,7 +58,7 @@ This is a great solution for seniors or anyone who wants a steady, wired connect
     difficulty: `Beginner`,
     body: `WiFi is convenient, but a wired ethernet connection is almost always faster and more reliable. If you have ever had a video call freeze, a movie buffer, or a slow download, switching to a wired connection can make an immediate difference. All you need is an ethernet cable and a device with an ethernet port — or a small adapter if your device does not have one.
 
-Ethernet cables look similar to phone cables but slightly wider. They have plastic clips on each end that snap firmly into the port. The most common type sold today is called "Cat 5e" or "Cat 6" — either works well for home internet. You can find them at any electronics or home improvement store, and they range in price from a few dollars to about $15 depending on the length.
+Ethernet cables look similar to phone cables but slightly wider. They have plastic clips on each end that snap firmly into the port. The most common type sold today is called "Cat 5e" or "Cat 6" — either works well for home internet. You can find them at any electronics or home improvement store. And they range in price from a few dollars to about $15 depending on the length.
 
 To set up a wired connection, you run the cable from one of the open ports on the back of your router to the ethernet port on your computer or other device. The router typically has four to six yellow or numbered ports labeled "LAN" — these are the ones you use for wired devices. Do not use the port labeled "WAN" or "Internet" — that one connects to your modem.
 
@@ -102,13 +102,13 @@ Wired connections are especially helpful for desktop computers, smart TVs, gamin
     difficulty: `Beginner`,
     body: `Many modern laptops — especially slim ones — have very few ports. Some have only one or two USB-C ports, which makes it hard to plug in a mouse, charge your phone, and connect a flash drive at the same time. A USB hub solves this problem by turning one port into four, six, or even more ports.
 
-A USB hub is a small device, often about the size of a deck of cards or smaller. You plug it into your laptop's USB port, and it instantly gives you multiple new ports. Most hubs offer a mix of port types: standard USB-A ports (the rectangular ones used by most mice, keyboards, and flash drives), USB-C ports, an SD card slot for camera memory cards, and sometimes an HDMI port for connecting a second monitor.
+A USB hub is a small device, often about the size of a deck of cards or smaller. You plug it into your laptop's USB port. And it instantly gives you multiple new ports. Most hubs offer a mix of port types: standard USB-A ports (the rectangular ones used by most mice, keyboards, and flash drives), USB-C ports, an SD card slot for camera memory cards, and sometimes an HDMI port for connecting a second monitor.
 
 There are two kinds of USB hubs. A basic "bus-powered" hub draws its power from your laptop, which means you do not need a separate power cord. These work well for mice, keyboards, and flash drives. A "powered" hub comes with its own power adapter and is better if you want to charge devices or use power-hungry accessories like an external hard drive.
 
 When shopping, look for terms like "USB 3.0" — this refers to the version of USB technology. USB 3.0 hubs transfer files much faster than older USB 2.0 hubs, which matters when you are copying photos or videos. Popular and affordable options include hubs from Anker, HooToo, and Sabrent, available at Amazon, Best Buy, and Walmart for $20–$50.
 
-A USB hub is one of the most practical accessories you can add to a laptop, and it requires no technical knowledge to use — you plug it in and it works.`,
+A USB hub is one of the most practical accessories you can add to a laptop. And it requires no technical knowledge to use — you plug it in and it works.`,
     steps: [
       {
         title: `Identify what ports your laptop has`,
@@ -227,7 +227,7 @@ These gestures work on all MacBook models, and most also work on Apple's externa
     thumbnailEmoji: ``,
     publishedAt: `2026-04-20`,
     difficulty: `Beginner`,
-    body: `A trackball mouse is a pointing device where a ball is mounted on top or on the side of the mouse, and you move the cursor by rolling that ball with your thumb or fingers rather than moving the entire mouse across a desk. The body of the mouse stays completely still while you work, which means your wrist and arm do not need to make large sweeping movements.
+    body: `A trackball mouse is a pointing device where a ball is mounted on top or on the side of the mouse. And you move the cursor by rolling that ball with your thumb or fingers rather than moving the entire mouse across a desk. The body of the mouse stays completely still while you work, which means your wrist and arm do not need to make large sweeping movements.
 
 This design makes trackball mice an excellent choice for people who experience wrist pain, have arthritis, or have limited mobility in their hands or arms. Because you are only moving your thumb or fingertips — not your whole arm — there's a lot less strain on your joints. Physical therapists and occupational therapists often recommend trackballs to people who experience pain from regular mouse use.
 
@@ -272,7 +272,7 @@ Learning to use a trackball takes a few days of adjustment — most people feel 
     difficulty: `Beginner`,
     body: `Windows comes with a built-in tool called Magnifier that can zoom in on any part of your screen, making text, images, and buttons much easier to see. You do not need to buy anything or download any software — Magnifier is already installed on every Windows computer, and turning it on takes just a few seconds.
 
-Magnifier works in three different modes. Full screen mode enlarges the entire screen — everything you see is zoomed in, and you scroll around by moving your mouse. Lens mode creates a rectangular magnifying window that follows your mouse cursor around the screen, like holding a magnifying glass over the screen. Docked mode attaches a zoomed-in panel to the top of your screen that always shows a magnified view of wherever your cursor is pointing.
+Magnifier works in three different modes. Full screen mode enlarges the entire screen — everything you see is zoomed in. And you scroll around by moving your mouse. Lens mode creates a rectangular magnifying window that follows your mouse cursor around the screen, like holding a magnifying glass over the screen. Docked mode attaches a zoomed-in panel to the top of your screen that always shows a magnified view of wherever your cursor is pointing.
 
 For most people who want to make text easier to read, Full screen mode works best. You can set the zoom level anywhere from 100% (no zoom) all the way to 1600%. A zoom level of 150% to 200% makes most text noticeably larger without feeling overwhelming.
 
@@ -354,7 +354,7 @@ For users who want even larger text without zooming the entire screen, you can a
     difficulty: `Beginner`,
     body: `TalkBack is a free accessibility feature built into every Android phone and tablet. When TalkBack is turned on, your phone speaks aloud the name of everything you touch — buttons, text, icons, menus, and notifications. This makes the phone fully usable for people who are blind, have low vision, or find it difficult to read small text on a screen.
 
-With TalkBack running, you interact with your phone differently than usual. Instead of tapping once to open an app, you tap once to hear what it is, then double-tap to open it. To scroll, you use two fingers instead of one. This new way of navigating takes a little practice, but it is logical and consistent once you learn the pattern.
+With TalkBack running, you interact with your phone differently than usual. Instead of tapping once to open an app, you tap once to hear what it is, then double-tap to open it. To scroll, you use two fingers instead of one. This new way of navigating takes a little practice. But it is logical and consistent once you learn the pattern.
 
 To turn on TalkBack, you typically go to Settings → Accessibility → TalkBack and toggle it on. On some phones you can activate it even faster with a shortcut: press and hold both volume buttons at the same time for three seconds. Google provides a built-in TalkBack tutorial that teaches you the gestures step by step — it is a great place to start.
 
@@ -362,7 +362,7 @@ TalkBack also reads text messages out loud when they arrive, speaks the time whe
 
 If you need to share your phone with someone who does not use TalkBack, turning it off uses the same accessibility shortcut — press and hold both volume buttons for three seconds, or go back to Settings → Accessibility → TalkBack and toggle it off.
 
-Note: The exact location of TalkBack settings may vary slightly depending on your phone model and Android version, but it is always found under Accessibility in Settings.`,
+Note: The exact location of TalkBack settings may vary slightly depending on your phone model and Android version. But it is always found under Accessibility in Settings.`,
     steps: [
       {
         title: `Turn on TalkBack`,
@@ -589,7 +589,7 @@ Nothing about these changes is permanent — you can return to the original sett
       },
       {
         title: `Adjust Bold Text if available`,
-        content: `In the same Accessibility menu, look for a "Bold text" toggle and turn it on if available. Bold text makes letters thicker and easier to read without changing the size. Not all Android phones have this option, but it is available on most Samsung Galaxy and Google Pixel devices.`,
+        content: `In the same Accessibility menu, look for a "Bold text" toggle and turn it on if available. Bold text makes letters thicker and easier to read without changing the size. Not all Android phones have this option. But it is available on most Samsung Galaxy and Google Pixel devices.`,
       },
     ],
   },

@@ -26,7 +26,7 @@ export const guidesBatch157: Guide[] = [
     publishedAt: '2026-05-08',
     lastVerifiedAt: '2026-05-08',
     difficulty: 'Beginner',
-    body: `Sending money to a family member used to mean writing a check, finding an envelope, and hoping it arrived on time. Today, two free apps — Zelle and Venmo — let you send money from your phone in minutes. Both are popular and safe when used correctly, but they work in different ways. Understanding those differences will help you choose the right one and avoid mistakes.
+    body: `Sending money to a family member used to mean writing a check, finding an envelope, and hoping it arrived on time. Today, two free apps — Zelle and Venmo — let you send money from your phone in minutes. Both are popular and safe when used correctly. But they work in different ways. Understanding those differences will help you choose the right one and avoid mistakes.
 
 **What is a peer-to-peer payment app?**
 
@@ -98,7 +98,7 @@ Before tapping "Send," confirm the exact name shown on the confirmation screen m
 If someone you do not know personally — on Facebook Marketplace, Craigslist, or anywhere else — asks you to pay with Zelle or Venmo before you receive goods or services, treat it as a warning sign. Legitimate sellers accept multiple forms of payment.
 
 **Rule 4 — Ignore "lottery" and "overpayment" messages**
-A common scam: someone sends you a message saying you won a prize or overpaid them, and they need you to send back money via Zelle or Venmo. There is no prize. The check or transfer they sent you will bounce, and the money you send back will be gone.
+A common scam: someone sends you a message saying you won a prize or overpaid them. And they need you to send back money via Zelle or Venmo. There is no prize. The check or transfer they sent you will bounce, and the money you send back will be gone.
 
 **Rule 5 — Protect your phone**
 Both apps are protected by your phone's lock screen. Keep your phone locked with a PIN or Face ID so that a thief cannot open your bank or Venmo app.

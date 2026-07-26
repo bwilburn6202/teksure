@@ -283,7 +283,7 @@ export const guidesBatch19: Guide[] = [
     thumbnailEmoji: '',
     publishedAt: '2026-04-19',
     difficulty: 'Beginner',
-    body: `A home inventory is a record of your belongings — ideally with photos, descriptions, purchase dates, and estimated values. If your home is ever burglarized, or damaged by fire, flood, or other disaster, your homeowner's or renter's insurance company will ask for documentation of what you lost. Without a home inventory, remembering everything you owned — and proving it — is extremely difficult.\n\nCreating a thorough home inventory does not need to take more than an hour, and it can be done with nothing more than your smartphone camera. The most important thing is to create one and store it somewhere outside your home (in the cloud, with a family member) so it is safe even if something happens to your house.\n\nMany insurance companies recommend creating and maintaining a home inventory. It can make the difference between a smooth claim and a difficult one.`,
+    body: `A home inventory is a record of your belongings — ideally with photos, descriptions, purchase dates, and estimated values. If your home is ever burglarized, or damaged by fire, flood, or other disaster, your homeowner's or renter's insurance company will ask for documentation of what you lost. Without a home inventory, remembering everything you owned — and proving it — is extremely difficult.\n\nCreating a thorough home inventory does not need to take more than an hour. And it can be done with nothing more than your smartphone camera. The most important thing is to create one and store it somewhere outside your home (in the cloud, with a family member) so it is safe even if something happens to your house.\n\nMany insurance companies recommend creating and maintaining a home inventory. It can make the difference between a smooth claim and a difficult one.`,
     steps: [
       {
         title: 'Walk through each room and video record your belongings',
@@ -355,7 +355,7 @@ export const guidesBatch19: Guide[] = [
       {
         title: 'Check if your iPhone supports MagSafe',
         content: "MagSafe is available on iPhone 12, 12 mini, 12 Pro, 12 Pro Max, and all models from iPhone 13 onward (13, 14, 15, 16 series). If you have one of these models, your iPhone already has the MagSafe magnet ring built in. No setup needed — just bring a MagSafe accessory near the back of the phone and it snaps into place.",
-        tip: "Quick Tip: Standard Qi wireless chargers still work with MagSafe iPhones, but they charge at the slower 7.5W rate instead of MagSafe's 15W. If fast wireless charging matters to you, use a MagSafe charger.",
+        tip: "Quick Tip: Standard Qi wireless chargers still work with MagSafe iPhones. But they charge at the slower 7.5W rate instead of MagSafe's 15W. If fast wireless charging matters to you, use a MagSafe charger.",
       },
       {
         title: 'Use the MagSafe charger',

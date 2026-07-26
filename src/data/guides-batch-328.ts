@@ -49,7 +49,7 @@ This guide walks through ordering groceries with the Walmart app on a smartphone
       },
       {
         title: 'Pick up or receive your groceries',
-        content: 'For pickup: when your order is ready, the app sends a notification. Drive to the store, park in any spot marked "Pickup," and tap "I\'m Here" in the app. An employee brings out your groceries and loads them in your trunk — you do not need to leave your car. For delivery: a driver brings the groceries to your door at the time you scheduled. You do not need to be home, but you may need to sign for items requiring an ID like medications.',
+        content: 'For pickup: when your order is ready, the app sends a notification. Drive to the store, park in any spot marked "Pickup," and tap "I\'m Here" in the app. An employee brings out your groceries and loads them in your trunk — you do not need to leave your car. For delivery: a driver brings the groceries to your door at the time you scheduled. You do not need to be home. But you may need to sign for items requiring an ID like medications.',
       },
     ],
   },
@@ -65,7 +65,7 @@ This guide walks through ordering groceries with the Walmart app on a smartphone
     publishedAt: '2026-07-25',
     lastVerifiedAt: '2026-07-25',
     difficulty: 'Beginner',
-    body: `Modern Bluetooth hearing aids — including most models from Phonak, Oticon, ReSound, Starkey, and Widex — pair directly to an iPhone. When paired, phone calls, music, FaceTime audio, and even iPhone notifications stream straight into your hearing aids without an extra accessory. The audio quality is a lot better than holding the phone to your ear, and there is no echo or feedback.
+    body: `Modern Bluetooth hearing aids — including most models from Phonak, Oticon, ReSound, Starkey, and Widex — pair directly to an iPhone. When paired, phone calls, music, FaceTime audio, and even iPhone notifications stream straight into your hearing aids without an extra accessory. The audio quality is a lot better than holding the phone to your ear. And there is no echo or feedback.
 
 This works only with hearing aids that are labeled "Made for iPhone" (sometimes shown as MFi). Most premium hearing aids sold since 2018 support it. Older or basic hearing aids may need a separate streaming accessory from the manufacturer.
 

@@ -281,7 +281,7 @@ The good news is that turning on contact backup takes less than 5 minutes. Once 
 
 ## Why Contacts Are Not Backed Up by Default
 
-Phone makers do not turn on cloud sync (saving to the internet) by default because some people prefer to keep their data private and not stored on outside servers. This is a reasonable option, but it means you have to make an active choice to turn it on. Most people do not realize this is something they need to do.
+Phone makers do not turn on cloud sync (saving to the internet) by default because some people prefer to keep their data private and not stored on outside servers. This is a reasonable option. But it means you have to make an active choice to turn it on. Most people do not realize this is something they need to do.
 
 ## Two Ways to Back Up Contacts
 
@@ -289,7 +289,7 @@ There are two main approaches:
 
 1. **Cloud sync** — your contacts automatically stay up to date in the cloud every time you add or change a contact. This is the recommended method because it happens without any extra effort from you.
 
-2. **Export as a VCF file** — you create a file that contains all your contacts and save it somewhere safe (your email, a USB drive, or a computer). This is a manual snapshot. Good as an extra safety net, but you have to remember to do it periodically.
+2. **Export as a VCF file** — you create a file that contains all your contacts and save it somewhere safe (your email, a USB drive, or a computer). This is a manual snapshot. Good as an extra safety net. But you have to remember to do it periodically.
 
 ## For iPhone Users: iCloud Contacts Sync
 
@@ -309,7 +309,7 @@ To check if it is already turned on: Open Settings. Tap Accounts or Users & Acco
 
 A VCF file (short for Virtual Contact File) is a single file that contains all your contacts in a format any phone can read. Think of it like a printout of your entire address book.
 
-On iPhone: Open the Contacts app. There is no built-in export button on iPhone, but you can use iCloud.com on a computer — sign in at icloud.com, go to Contacts, press Command+A to select all, then click the gear icon and choose Export vCard.
+On iPhone: Open the Contacts app. There is no built-in export button on iPhone. But you can use iCloud.com on a computer — sign in at icloud.com, go to Contacts, press Command+A to select all, then click the gear icon and choose Export vCard.
 
 On Android: Open the Contacts app. Tap the three lines or the menu. Choose Export or Manage contacts. Select Export to .vcf file. Save the file to your phone's storage. Then email that file to yourself as an attachment, or copy it to a USB drive.
 

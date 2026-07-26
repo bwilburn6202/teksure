@@ -150,7 +150,7 @@ Setup for most mesh systems is done entirely through a smartphone app — the ap
     thumbnailEmoji: '',
     publishedAt: '2026-04-19',
     difficulty: 'Beginner',
-    body: `A Wi-Fi range extender (also called a booster or repeater) is a small device that picks up your existing Wi-Fi signal and rebroadcasts it to areas of your home that have weak or no coverage. You plug the extender into a wall outlet between your router and the problem area, and it extends your network's reach.
+    body: `A Wi-Fi range extender (also called a booster or repeater) is a small device that picks up your existing Wi-Fi signal and rebroadcasts it to areas of your home that have weak or no coverage. You plug the extender into a wall outlet between your router and the problem area. And it extends your network's reach.
 
 Range extenders are an affordable solution — most quality models cost $30-60. They are simpler to set up than a full mesh Wi-Fi system and work well for targeted dead zones: a back bedroom, a basement, a detached garage, or a back patio.
 
@@ -474,7 +474,7 @@ The goal of this system is to reduce inbox clutter by keeping marketing and soci
 
 Many people do not realize that emails are landing in the Promotions or Updates tab and assume they never received them. If you are missing emails from stores, airlines, subscription services, or automated confirmations, check those tabs — the emails are there, just sorted.
 
-The tab system can be enabled or disabled, and you can move specific senders from one tab to another. If a store's emails keep going to Promotions but you want them in Primary, you can right-click the email and tell Gmail to move it.
+The tab system can be enabled or disabled. And you can move specific senders from one tab to another. If a store's emails keep going to Promotions but you want them in Primary, you can right-click the email and tell Gmail to move it.
 
 You can also disable tabs you find confusing. Many users prefer a traditional single-inbox view where all emails arrive in one stream. This is easy to configure in Gmail settings.
 
@@ -592,7 +592,7 @@ Setting up a guest network requires logging into your router's admin panel (as d
       },
       {
         title: 'Set a Password for the Guest Network',
-        content: 'Add a Wi-Fi password to the guest network. This prevents unauthorized use from neighbors. Choose a password you are comfortable sharing with visitors — it does not need to be as strong as your main network password, but it should still be at least 8 characters.',
+        content: 'Add a Wi-Fi password to the guest network. This prevents unauthorized use from neighbors. Choose a password you are comfortable sharing with visitors — it does not need to be as strong as your main network password. But it should still be at least 8 characters.',
       },
       {
         title: 'Enable Client Isolation',

@@ -5,7 +5,7 @@ export const guidesBatch168: Guide[] = [
     slug: "how-to-check-gift-card-balance",
     title: "How to Check the Balance on a Gift Card",
     excerpt: "Find out how much money is left on any gift card using the website, phone number, or store register.",
-    body: `Gift cards are a wonderful way to give and receive money for stores, restaurants, and online services. But after you use one a few times, it can be hard to remember how much money is left. The good news is that checking the balance on a gift card takes only a minute or two, and there are several ways to do it depending on what works best for you.
+    body: `Gift cards are a wonderful way to give and receive money for stores, restaurants, and online services. But after you use one a few times, it can be hard to remember how much money is left. The good news is that checking the balance on a gift card takes only a minute or two. And there are several ways to do it depending on what works best for you.
 
 Most gift cards have a website printed right on the back of the card. The website usually says something like "Check your balance at..." followed by the web address. You will also find a 16-digit card number and a shorter PIN or security code, often hidden under a silver scratch-off panel. To check online, you type in the card number and the PIN, and the website shows you the remaining balance right away.
 
@@ -91,7 +91,7 @@ Never give your gift card number to anyone over the phone or by email. Real bank
     slug: "how-to-redeem-apple-gift-card-iphone",
     title: "How to Redeem an Apple Gift Card on iPhone",
     excerpt: "Add an Apple Gift Card to your account so you can buy apps, music, iCloud storage, and more on your iPhone.",
-    body: `An Apple Gift Card lets you buy apps, songs, movies, books, and even iCloud storage from your iPhone. The card adds money to your Apple Account (which used to be called your Apple ID). Once the money is on your account, you do not need to use a credit card for any Apple purchase until the balance runs out. Redeeming a card takes about a minute, and you can do it right from your iPhone camera.
+    body: `An Apple Gift Card lets you buy apps, songs, movies, books, and even iCloud storage from your iPhone. The card adds money to your Apple Account (which used to be called your Apple ID). Once the money is on your account, you do not need to use a credit card for any Apple purchase until the balance runs out. Redeeming a card takes about a minute. And you can do it right from your iPhone camera.
 
 Before you start, find the gift card. The redemption code is hidden on the back, under a silver scratch-off panel. Use a coin or your fingernail to gently remove the silver coating. You will see a 16-character code made up of letters and numbers. Be careful not to scratch too hard, because if part of the code is damaged, you may need to call Apple Support to redeem it.
 

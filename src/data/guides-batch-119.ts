@@ -32,7 +32,7 @@ Take it slowly. You do not need to do any of this today. Read through. Pick one 
     steps: [
       {
         title: "The reality: you're their IT department now. Here's how to do it gently and effectively.",
-        content: `First, a deep breath. You did not sign up for this, and you are doing more than you realize.
+        content: `First, a deep breath. You did not sign up for this. And you are doing more than you realize.
 
 Here is what long-distance tech caregiving actually looks like, in the real world, for most people:
 
@@ -128,7 +128,7 @@ Services worth knowing:
 
 How to start the conversation:
 
-Try something like this, adjusted for your family: "Mom, I want to figure out a better way to help you with computer stuff. I love that you call me, and I want you to keep calling me — but I also want both of us to feel less frustrated by how it goes. Can we try a few things? Here's what I was thinking..."
+Try something like this, adjusted for your family: "Mom, I want to figure out a better way to help you with computer stuff. I love that you call me. And I want you to keep calling me — but I also want both of us to feel less frustrated by how it goes. Can we try a few things? Here's what I was thinking..."
 
 Most older parents, when approached this way, are relieved. They feel bad about the calls too. They do not want to burden you any more than you want to feel burdened. Name the elephant. Both of you will feel better.`,
         tip: 'Write the agreements down — just a little index card, or a pinned text. Something like "Sunday 2pm, phone not text, one issue at a time, 30 min max." Seeing it written removes ambiguity and lets both of you reset when things slip.',
@@ -688,7 +688,7 @@ And if something happens to them — a stroke, a hospital stay, death — you ar
       },
       {
         title: 'Step 9: Scam monitoring — alerts when something looks wrong',
-        content: `Financial scams are the single biggest threat to most elderly adults' savings. The FBI's elder-fraud report estimated over $3.4 billion in losses in 2023, and actual numbers are far higher because most scams go unreported. Monitoring services cannot prevent every scam, but they can catch one early — often in time to undo the damage.
+        content: `Financial scams are the single biggest threat to most elderly adults' savings. The FBI's elder-fraud report estimated over $3.4 billion in losses in 2023, and actual numbers are far higher because most scams go unreported. Monitoring services cannot prevent every scam. But they can catch one early — often in time to undo the damage.
 
 Here are the services worth knowing, in order of my recommendation.
 
@@ -1012,7 +1012,7 @@ Practical things that help:
 
 1. Schedule tech support, don't do it on demand.
 
-We covered this in Step 2, but it bears repeating — for your sake. If every call is urgent, you can never rest. A scheduled weekly session creates a rhythm where you get predictable rest time.
+We covered this in Step 2. But it bears repeating — for your sake. If every call is urgent, you can never rest. A scheduled weekly session creates a rhythm where you get predictable rest time.
 
 2. Use your full toolkit.
 

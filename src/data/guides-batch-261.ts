@@ -173,7 +173,7 @@ export const guidesBatch261: Guide[] = [
       },
       {
         title: "Welcome the volunteer and use the check-in",
-        content: "When deliveries start, plan to be home and ready at the scheduled window — usually a two-hour window like 11 AM to 1 PM. Greet the volunteer at the door. The visit is often a minute or two of conversation. Volunteers are trained to notice if something is wrong, so if you are feeling poorly, mention it. They are not medical professionals, but they can alert the program coordinator to follow up.",
+        content: "When deliveries start, plan to be home and ready at the scheduled window — usually a two-hour window like 11 AM to 1 PM. Greet the volunteer at the door. The visit is often a minute or two of conversation. Volunteers are trained to notice if something is wrong, so if you are feeling poorly, mention it. They are not medical professionals. But they can alert the program coordinator to follow up.",
         warning: "Meals on Wheels volunteers do not collect cash or checks at the door, do not ask for bank account numbers, and do not sell anything. If anyone showing up claiming to be Meals on Wheels asks for personal financial information, close the door and call the local program directly to verify.",
       },
     ],
@@ -198,11 +198,11 @@ export const guidesBatch261: Guide[] = [
       },
       {
         title: "Bring documents and a sturdy cart or bag",
-        content: "Most pantries ask for a photo ID and proof of where you live (a utility bill or lease) the first time you visit, and then you are in the system. You do not need to prove your income — pantries serve based on need, and you self-attest to that need. Bring a sturdy reusable bag, a rolling cart, or a few canvas totes. Pantry food can be heavier than expected, especially with canned goods.",
+        content: "Most pantries ask for a photo ID and proof of where you live (a utility bill or lease) the first time you visit, and then you are in the system. You do not need to prove your income — pantries serve based on need. And you self-attest to that need. Bring a sturdy reusable bag, a rolling cart, or a few canvas totes. Pantry food can be heavier than expected, especially with canned goods.",
       },
       {
         title: "Ask for fresh produce, eggs, dairy, and protein",
-        content: "When you walk in, the staff or volunteer will often hand you a pre-packed bag or box. Politely ask: Do you have any fresh vegetables today? Eggs? Cheese or milk? Frozen chicken or fish? Most pantries keep these items in the back or in a separate refrigerator, and they are happy to add them to your order. Asking is normal and expected — staff would much rather distribute the perishables than throw them away.",
+        content: "When you walk in, the staff or volunteer will often hand you a pre-packed bag or box. Politely ask: Do you have any fresh vegetables today? Eggs? Cheese or milk? Frozen chicken or fish? Most pantries keep these items in the back or in a separate refrigerator. And they are happy to add them to your order. Asking is normal and expected — staff would much rather distribute the perishables than throw them away.",
         warning: "Check expiration dates on canned and packaged items at the pantry. Most pantries discard expired food, but with high volume it does happen. Polite return of an expired can is appreciated, not embarrassing.",
       },
       {

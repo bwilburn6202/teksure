@@ -325,7 +325,7 @@ If your photos are precious to you, the $0.99 per month plan is a small price fo
 
 Every time you visit a website in Safari, your phone stores a copy of parts of that page to help it load faster next time. Over time, this "cache" of saved web data can grow to hundreds of megabytes.
 
-Clearing it removes that stored data — websites will load slightly slower the first time you visit them again, but they will still work normally.
+Clearing it removes that stored data — websites will load slightly slower the first time you visit them again. But they will still work normally.
 
 1. Open **Settings**.
 2. Scroll down and tap **Safari**.

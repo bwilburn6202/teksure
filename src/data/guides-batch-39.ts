@@ -222,7 +222,7 @@ export const guidesBatch39: Guide[] = [
       },
       {
         title: 'Pin your most-used apps to the taskbar',
-        content: `The taskbar at the bottom of the screen shows your open apps, but you can also pin apps you use regularly so they are always one click away. Find the app you want to pin by clicking the Start button (Windows logo) and searching for it. Right-click the app's icon → "Pin to taskbar." It will appear in your taskbar permanently. To remove a pinned app: right-click it in the taskbar → "Unpin from taskbar."`,
+        content: `The taskbar at the bottom of the screen shows your open apps. But you can also pin apps you use regularly so they are always one click away. Find the app you want to pin by clicking the Start button (Windows logo) and searching for it. Right-click the app's icon → "Pin to taskbar." It will appear in your taskbar permanently. To remove a pinned app: right-click it in the taskbar → "Unpin from taskbar."`,
       },
       {
         title: 'Use Windows + V for a clipboard history',
@@ -565,7 +565,7 @@ export const guidesBatch39: Guide[] = [
   {
     slug: 'ssi-ssdi-difference-guide',
     title: `SSI vs SSDI: What's the Difference and Who Qualifies for Each`,
-    excerpt: `SSI and SSDI are both Social Security programs, but they work very differently — here's a plain-English explanation of which you may qualify for.`,
+    excerpt: `SSI and SSDI are both Social Security programs. But they work very differently — here's a plain-English explanation of which you may qualify for.`,
     category: 'government-civic',
     tags: ['SSI', 'SSDI', 'social security', 'disability benefits', 'government benefits'],
     readTime: '6 min',

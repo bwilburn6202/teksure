@@ -153,7 +153,7 @@ Handoff was introduced in 2014 and is supported on iPhones, iPads, Macs, and App
     thumbnailEmoji: ``,
     publishedAt: `2026-04-19`,
     difficulty: `Beginner`,
-    body: `Universal Clipboard is one of those features that sounds almost too convenient to be real — but it works. When you copy something on your iPhone, it becomes available to paste on your nearby Mac within a few seconds. The same works in reverse: copy text or an image on your Mac, and you can paste it on your iPhone.
+    body: `Universal Clipboard is one of those features that sounds almost too convenient to be real — but it works. When you copy something on your iPhone, it becomes available to paste on your nearby Mac within a few seconds. The same works in reverse: copy text or an image on your Mac. And you can paste it on your iPhone.
 
 This is useful in many everyday situations. Say you receive a verification code in a text message on your iPhone — you can copy it there and paste it directly into a website on your Mac. Or you might want to copy a long email address from your Mac and paste it into a form on your iPhone. Without Universal Clipboard, you would have to retype it or email it to yourself.
 
@@ -243,7 +243,7 @@ The heart of TikTok is a feature called the "For You Page" (sometimes written as
 
 TikTok is free to download on both iPhones and Android phones. You do not even need an account to watch videos — though having one lets you follow your favorite creators and save videos for later.
 
-Some people worry about TikTok because it is owned by a Chinese company called ByteDance, and there have been ongoing policy discussions in the US about privacy. As of 2026, TikTok is still available in the US app stores. You can use TikTok with privacy in mind by limiting what personal information you share in your profile.
+Some people worry about TikTok because it is owned by a Chinese company called ByteDance. And there have been ongoing policy discussions in the US about privacy. As of 2026, TikTok is still available in the US app stores. You can use TikTok with privacy in mind by limiting what personal information you share in your profile.
 
 This guide focuses on watching and enjoying TikTok as a viewer — not on making your own videos.`,
     steps: [
@@ -306,7 +306,7 @@ LinkedIn has over 900 million members worldwide and is used in virtually every i
       },
       {
         title: `Write a headline and summary`,
-        content: `Your headline is the text that appears directly below your name. By default it shows your current job title, but you can change it to something more descriptive — for example, "Retired Nurse | Passionate About Senior Health" or "Small Business Owner | 20 Years in Retail." Your "About" section (found by scrolling down your profile) lets you write a few sentences introducing yourself in your own words. Keep it friendly and honest.`,
+        content: `Your headline is the text that appears directly below your name. By default it shows your current job title. But you can change it to something more descriptive — for example, "Retired Nurse | Passionate About Senior Health" or "Small Business Owner | 20 Years in Retail." Your "About" section (found by scrolling down your profile) lets you write a few sentences introducing yourself in your own words. Keep it friendly and honest.`,
       },
       {
         title: `Connect with people you know`,
@@ -413,7 +413,7 @@ Google Wallet comes pre-installed on most Android phones. If you do not see it, 
     thumbnailEmoji: ``,
     publishedAt: `2026-04-19`,
     difficulty: `Beginner`,
-    body: `We have all had that moment — a song comes on in a store, a restaurant, or a TV commercial, and you think "I love this song — what is it?" Trying to remember song lyrics or hum it to someone later rarely works well. Fortunately, your smartphone can identify almost any song in seconds — by listening for a few moments.
+    body: `We have all had that moment — a song comes on in a store, a restaurant, or a TV commercial. And you think "I love this song — what is it?" Trying to remember song lyrics or hum it to someone later rarely works well. Fortunately, your smartphone can identify almost any song in seconds — by listening for a few moments.
 
 The two most popular music identification apps are Shazam and SoundHound. Both are free and work on iPhones and Android phones. You hold your phone near the music source, tap one button, and the app listens for a few seconds before telling you the song title, artist, and album.
 
@@ -501,7 +501,7 @@ One thing to know: Street View is not a live feed. You are looking at photograph
     difficulty: `Intermediate`,
     body: `eBay is one of the oldest and most popular online marketplaces in the world. You can sell almost anything on eBay — from collectibles and electronics to clothing, books, and household items. Millions of buyers visit eBay every day looking for things to purchase, which means your items have a large audience.
 
-Selling on eBay is not complicated, but it does take a bit of time to do well. The most important factors in making a sale are a clear title, good photos, an accurate description, and a fair price. When buyers search eBay, your listing needs to stand out.
+Selling on eBay is not complicated. But it does take a bit of time to do well. The most important factors in making a sale are a clear title, good photos, an accurate description, and a fair price. When buyers search eBay, your listing needs to stand out.
 
 eBay charges a small fee when your item sells — typically around 12 to 15 percent of the final sale price for most categories. There are usually no fees to list an item (eBay gives you a set number of free listings per month). You get paid via PayPal or direct bank transfer once the buyer pays.
 
@@ -515,7 +515,7 @@ Starting with a few small, simple-to-ship items — like books, DVDs, or small c
       },
       {
         title: `Take clear, well-lit photos`,
-        content: `Good photos are the single most important part of selling on eBay. Take photos in natural daylight or under bright lights — avoid dark or blurry images. Show the item from multiple angles: front, back, sides, and any notable features or flaws. If there is damage, include a photo of it — buyers appreciate honesty, and it protects you from disputes later. eBay allows up to 24 photos per listing.`,
+        content: `Good photos are the single most important part of selling on eBay. Take photos in natural daylight or under bright lights — avoid dark or blurry images. Show the item from multiple angles: front, back, sides, and any notable features or flaws. If there is damage, include a photo of it — buyers appreciate honesty. And it protects you from disputes later. eBay allows up to 24 photos per listing.`,
         tip: `Quick Tip: Use a plain white or neutral background (a white sheet or piece of poster board works well) to make your item stand out clearly.`,
       },
       {
@@ -549,9 +549,9 @@ Starting with a few small, simple-to-ship items — like books, DVDs, or small c
     difficulty: `Beginner`,
     body: `OfferUp is a free app that connects buyers and sellers in the same area. You can sell furniture, clothing, electronics, toys, tools, and almost anything else to someone who can come pick it up — no shipping required. You can also ship items nationwide if you prefer.
 
-OfferUp was designed with safety in mind, and it is generally considered safer than older platforms like Craigslist. Every buyer and seller has a public profile with ratings and reviews, so you can see what others have said about someone before agreeing to meet them. OfferUp also partners with police departments across the country to designate "Community MeetUp Spots" — safe, public locations (often police station parking lots or well-lit public areas) where you can complete your transaction.
+OfferUp was designed with safety in mind. And it is generally considered safer than older platforms like Craigslist. Every buyer and seller has a public profile with ratings and reviews, so you can see what others have said about someone before agreeing to meet them. OfferUp also partners with police departments across the country to designate "Community MeetUp Spots" — safe, public locations (often police station parking lots or well-lit public areas) where you can complete your transaction.
 
-The app is free to download on iPhone and Android. Listing an item takes less than five minutes. You can post up to 100 photos of your item and add a price, description, and category. Buyers can make offers (hence the name), and you can accept, decline, or counter-offer.
+The app is free to download on iPhone and Android. Listing an item takes less than five minutes. You can post up to 100 photos of your item and add a price, description, and category. Buyers can make offers (hence the name). And you can accept, decline, or counter-offer.
 
 OfferUp also has a "shipping" feature — if you want to sell to buyers outside your local area, you can ship items through OfferUp and get a prepaid label. OfferUp handles the transaction and holds payment until the buyer confirms receipt, similar to eBay's system.
 
@@ -727,7 +727,7 @@ Partial screen sharing is a practical addition for video calls — instead of sh
 
 Many people switch to browsers like Chrome or Firefox by habit, but Edge has quietly become a very capable browser with some genuinely useful features that even Chrome does not offer. It also tends to use less battery power on laptops, which can be helpful when you are away from a power outlet.
 
-Edge is built on the same technology as Chrome (called Chromium), which means most websites and extensions that work in Chrome also work in Edge. If you have been hesitant to try Edge, the main difference you will notice day to day is the interface — the buttons are in slightly different places, and it has a few unique features.
+Edge is built on the same technology as Chrome (called Chromium), which means most websites and extensions that work in Chrome also work in Edge. If you have been hesitant to try Edge, the main difference you will notice day to day is the interface — the buttons are in slightly different places. And it has a few unique features.
 
 Collections is one of Edge's standout features. It is like a scrapbook where you can save web pages, images, and notes all together — organized by topic. For example, you could create a "Vacation Ideas" Collection and save pages from different travel sites into it, along with your own typed notes.
 

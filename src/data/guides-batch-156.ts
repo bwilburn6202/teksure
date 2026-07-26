@@ -529,7 +529,7 @@ You cannot delete a folder directly — you delete it by removing all the apps f
     publishedAt: '2026-05-08',
     lastVerifiedAt: '2026-05-08',
     difficulty: 'Beginner',
-    body: `Do Not Disturb is a built-in feature on every iPhone and Android phone that silences calls, texts, and app notification sounds — while keeping your phone fully on and available. You will not be woken up at midnight by a news alert or a late-night text, but you will still be reachable in an actual emergency if you set it up correctly.
+    body: `Do Not Disturb is a built-in feature on every iPhone and Android phone that silences calls, texts, and app notification sounds — while keeping your phone fully on and available. You will not be woken up at midnight by a news alert or a late-night text. But you will still be reachable in an actual emergency if you set it up correctly.
 
 Many people keep their phone on the nightstand in case of emergencies, but then get their sleep interrupted by notifications all night. Do Not Disturb solves this. You can also use it during church services, doctor appointments, important meetings, or any time you need quiet without turning your phone off entirely.
 

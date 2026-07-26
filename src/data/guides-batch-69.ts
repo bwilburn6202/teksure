@@ -588,7 +588,7 @@ To try it for free, go to naturalreaders.com in your web browser. The free versi
 
 If you use Google Chrome, the NaturalReader browser extension lets you highlight any text on a webpage, click the NaturalReader button that appears, and have that text read to you right away — without needing to copy and paste anything.
 
-For documents, the free online version of NaturalReader accepts uploaded PDFs, Word documents, and text files. Click "Upload" on the website, choose your file, and it reads the text aloud.
+For documents, the free online version of NaturalReader accepts uploaded PDFs, Word documents, and text files. Click "Upload" on the website, choose your file. And it reads the text aloud.
 
 The iOS and Android apps bring these same features to your phone or tablet. The mobile apps also let you import documents from your files app or cloud storage.
 
@@ -903,7 +903,7 @@ For iPhone 12 and later: look for cases with MagSafe compatibility if you want t
     excerpt: `Phone insurance and protection plans can save hundreds on repairs — here's how to compare the options and decide what's worth it.`,
     body: `Phone insurance is one of those costs that feels unnecessary right up until the moment you need it. A cracked screen on a flagship iPhone or Samsung Galaxy can cost $200–$400 to repair out of pocket. Theft or loss makes the entire phone a total loss. Whether insurance is worth it depends on the value of your phone, your history of accidents, and which plan you choose — because the options vary a lot in quality and cost.
 
-The most straightforward option for iPhone users is AppleCare+. You pay either monthly ($8–$14 depending on iPhone model) or a one-time upfront fee ($150–$250), and you get two accidental damage incidents per year. Each incident requires a deductible: $29 for a broken screen, $99 for other damage. AppleCare+ also includes Apple's 24/7 technical support by phone and covers battery replacement if the battery holds less than 80% of its original capacity. Adding theft and loss coverage costs a bit more but covers you if the phone is stolen or goes missing. Google Preferred Care for Pixel phones and Samsung Care+ work similarly for their respective devices.
+The most straightforward option for iPhone users is AppleCare+. You pay either monthly ($8–$14 depending on iPhone model) or a one-time upfront fee ($150–$250). And you get two accidental damage incidents per year. Each incident requires a deductible: $29 for a broken screen, $99 for other damage. AppleCare+ also includes Apple's 24/7 technical support by phone and covers battery replacement if the battery holds less than 80% of its original capacity. Adding theft and loss coverage costs a bit more but covers you if the phone is stolen or goes missing. Google Preferred Care for Pixel phones and Samsung Care+ work similarly for their respective devices.
 
 Carrier protection plans are offered by Verizon (Total Equipment Coverage), AT&T (Protect Advantage), and T-Mobile (Protection 360). They cost $15–17 per month and cover cracked screens, theft, loss, and mechanical failure. The catch: deductibles are high. Cracked screen repairs run $29–$99, but theft or loss claims require deductibles of $99–$249 depending on the device. Over time, the monthly premiums add up, and the total cost can approach the value of the phone itself.
 

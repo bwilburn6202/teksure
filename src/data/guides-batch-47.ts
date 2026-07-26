@@ -19,7 +19,7 @@ One of the most useful features is collaboration. You can share your Freeform bo
 
 If you have an Apple Pencil, Freeform really shines — you can draw and write naturally on the screen. But even without a stylus, you can type, add images from your photo library, and use your finger to sketch rough shapes.
 
-Freeform boards are saved automatically in iCloud, so your content stays safe and shows up on all your Apple devices. Boards you haven't touched in a while are listed in the main view, and you can rename or delete them at any time.`,
+Freeform boards are saved automatically in iCloud, so your content stays safe and shows up on all your Apple devices. Boards you haven't touched in a while are listed in the main view. And you can rename or delete them at any time.`,
     steps: [
       {
         title: `Open Freeform on your iPhone or iPad`,
@@ -65,7 +65,7 @@ Here's how it works: you start a Check In from inside the Messages app before yo
 
 Check In shares only what's necessary — it does not send your real-time location throughout the trip, just a check-in message when you arrive (or an alert if something seems wrong). Your contact must be using iPhone and Messages to receive Check In notifications.
 
-You can use Check In for short trips or longer journeys. The feature asks for your estimated arrival time, and you can adjust it on the fly if your plans change.`,
+You can use Check In for short trips or longer journeys. The feature asks for your estimated arrival time. And you can adjust it on the fly if your plans change.`,
     steps: [
       {
         title: `Make sure you have iOS 17 or later (iOS 18 is current)`,
@@ -157,7 +157,7 @@ You can also tap the effects button during a call to manually choose from a list
 
 Reactions add a personal, playful touch to video calls with family or friends. If you find yourself accidentally triggering them, you can turn the gesture-detection feature off entirely in your camera settings or just avoid those specific hand positions.
 
-The feature requires an iPhone 12 or newer running iOS 17 or later, and it works best in good lighting where your hands are clearly visible.`,
+The feature requires an iPhone 12 or newer running iOS 17 or later. And it works best in good lighting where your hands are clearly visible.`,
     steps: [
       {
         title: `Start a FaceTime call`,
@@ -500,7 +500,7 @@ Group chats are saved in the Messages app just like individual conversations. Th
       {
         title: `Add or remove people`,
         content: `Tap the names at the top of the conversation, then tap the "Add Member" option to include someone new. To remove someone, tap their name in the group list and choose "Remove from Conversation." Note: removing someone is only possible in all-iMessage (blue bubble) groups with 3 or more people remaining.`,
-        warning: `Once someone is removed from a group chat, they won't see new messages, but they can still see everything that was sent while they were in the group.`,
+        warning: `Once someone is removed from a group chat, they won't see new messages. But they can still see everything that was sent while they were in the group.`,
       },
       {
         title: `Mute notifications for a busy group`,
@@ -626,7 +626,7 @@ You can also lock a shared note if it contains sensitive information — but not
 
 This feature is available on most Android phones, though the way you activate it and where the setting lives varies by manufacturer. On Google Pixel phones, it's in Settings > System > One-Handed Mode. On Samsung Galaxy devices, it's found in Settings > Advanced Features > One-Handed Mode. Other Android brands typically have it under Accessibility or Display settings.
 
-Once enabled, you activate one-handed mode in real time by swiping down on the bottom edge of the screen (on many phones) or by double-tapping the home button area. The screen content shifts down to fill only the bottom half or two-thirds of the display, and you can move it to the left or right side depending on which hand you're using.
+Once enabled, you activate one-handed mode in real time by swiping down on the bottom edge of the screen (on many phones) or by double-tapping the home button area. The screen content shifts down to fill only the bottom half or two-thirds of the display. And you can move it to the left or right side depending on which hand you're using.
 
 Tap anywhere in the empty upper area to return to full-screen mode, or tap the X button if one appears. You can also use the phone normally in apps and it will usually exit one-handed mode automatically.
 

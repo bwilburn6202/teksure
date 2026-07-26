@@ -67,7 +67,7 @@ This guide walks through the three best options and how to choose between them.
     difficulty: 'Beginner',
     body: `If you have ever wanted to listen to your favorite music without buying CDs or paying for a satellite radio subscription, both Spotify and Pandora offer completely free music streaming on phones, tablets, and computers. The only cost is short audio commercials between songs — similar to AM/FM radio.
 
-Spotify's free tier lets you listen to any artist or playlist on a computer, and gives you "shuffle play" of an artist on a phone — meaning you cannot pick a specific song on your phone, but you can listen to a continuous stream of an artist's music. Pandora's free tier is similar, with ads between songs.
+Spotify's free tier lets you listen to any artist or playlist on a computer, and gives you "shuffle play" of an artist on a phone — meaning you cannot pick a specific song on your phone. But you can listen to a continuous stream of an artist's music. Pandora's free tier is similar, with ads between songs.
 
 Both services have paid options ($10 to $12 per month) that remove ads and add features. But the free tiers work fine for most people.
 

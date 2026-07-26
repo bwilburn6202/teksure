@@ -19,7 +19,7 @@ export const guidesBatch177: Guide[] = [
       { title: "Add your items", content: "Press Return after the title, then type each grocery item on its own line. For example: milk, then Return, then bread, then Return, then eggs. Take your time. There is no rush." },
       { title: "Turn the list into a checklist", content: "Tap once anywhere in the list to place your cursor there. Tap the circle-with-checkmark icon above the keyboard (it looks like a checked-off circle). Every line now has a tappable circle next to it." },
       { title: "Check items off while shopping", content: "At the store, open the same note and tap the circle next to each item as you place it in your cart. Checked items move to the bottom automatically so the rest of your list stays easy to read." },
-      { title: "Share with family (optional)", content: "Tap the three-dots icon at the top of the note, then tap \"Share Note\". Pick the person from your contacts. They can now add items from their own iPhone, and you will see the changes right away." }
+      { title: "Share with family (optional)", content: "Tap the three-dots icon at the top of the note, then tap \"Share Note\". Pick the person from your contacts. They can now add items from their own iPhone. And you will see the changes right away." }
     ]
   },
   {
@@ -41,7 +41,7 @@ export const guidesBatch177: Guide[] = [
       { title: "Add groceries to your cart", content: "Tap the \"Grocery\" section. Browse by aisle, or tap the search bar and type items like \"bananas\" or \"wheat bread\". Tap the plus sign next to each item to add it. Your cart total shows at the bottom." },
       { title: "Pick a pickup time", content: "When your cart is ready, tap \"Checkout\". Choose a one-hour pickup window — for example, Tuesday from 10 AM to 11 AM. Earlier in the morning usually has more openings." },
       { title: "Pay and confirm", content: "Enter a debit or credit card, then tap \"Place Order\". You will get an email and a text confirming the order. Walmart sends another text when your order is being shopped and ready." },
-      { title: "Check in when you arrive", content: "Drive to Walmart at your time slot. Park in any spot marked \"Online Pickup\". Open the app and tap \"I'm here\". Tell the worker your parking spot number when they come out, and they will load your trunk." }
+      { title: "Check in when you arrive", content: "Drive to Walmart at your time slot. Park in any spot marked \"Online Pickup\". Open the app and tap \"I'm here\". Tell the worker your parking spot number when they come out. And they will load your trunk." }
     ]
   },
   {

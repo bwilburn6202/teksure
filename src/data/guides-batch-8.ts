@@ -13,7 +13,7 @@ export const guidesBatch8: Guide[] = [
     thumbnailEmoji: '',
     publishedAt: '2026-04-17',
     difficulty: 'Beginner',
-    body: `Apple CarPlay connects your iPhone to your car's dashboard screen so you can see maps, play music, and answer calls using the car's controls instead of the phone itself. Most cars made after 2018 include CarPlay, and it usually works with a simple USB cable or wirelessly over Bluetooth.
+    body: `Apple CarPlay connects your iPhone to your car's dashboard screen so you can see maps, play music, and answer calls using the car's controls instead of the phone itself. Most cars made after 2018 include CarPlay. And it usually works with a simple USB cable or wirelessly over Bluetooth.
 
 Once set up, you can ask Siri to give directions, read text messages out loud, or play a podcast — all without touching your phone while driving.`,
     steps: [
@@ -63,7 +63,7 @@ These apps show which chargers are available right now, how fast they charge, wh
       { title: 'Create a free account', content: 'Sign up with email to save favorite chargers and filter by plug type. Tesla owners should also download the Tesla app to see Superchargers.' },
       { title: 'Filter by plug type', content: 'In PlugShare, tap the filter icon and pick your connector — usually J1772 for Level 2, CCS or NACS for fast charging, or Tesla. This hides stations your car cannot use.' },
       { title: 'Check real-time status', content: 'Tap a charger on the map to see if the plugs are free or in use right now. Read recent check-ins from other drivers to learn if the station works reliably.' },
-      { title: 'Plan road trips with the trip planner', content: 'Both apps have a trip planner that maps chargers along your route. Enter your start, end, and car model, and it will suggest stops based on your battery range.' },
+      { title: 'Plan road trips with the trip planner', content: 'Both apps have a trip planner that maps chargers along your route. Enter your start, end, and car model. And it will suggest stops based on your battery range.' },
     ],
   },
   {
@@ -227,7 +227,7 @@ VoiceOver changes how you interact with the phone: single-tap to hear an item, d
     difficulty: 'Intermediate',
     body: `TalkBack is Google's screen reader built into every Android phone. When turned on, it reads aloud whatever you touch and changes how gestures work — single-tap to hear, double-tap to select, swipe with two fingers to scroll.
 
-TalkBack takes time to learn, but it makes Android fully usable without sight. Most major apps — Gmail, Maps, Chrome — are designed to work well with TalkBack.`,
+TalkBack takes time to learn. But it makes Android fully usable without sight. Most major apps — Gmail, Maps, Chrome — are designed to work well with TalkBack.`,
     steps: [
       { title: 'Turn on TalkBack', content: 'Open Settings, tap Accessibility, then TalkBack, and flip the switch on. A screen will explain that gestures will change — tap OK.' },
       { title: 'Use one finger to explore', content: 'Slide your finger around the screen. TalkBack reads aloud whatever is under your finger — "Back button," "Gmail," and so on. Nothing is activated yet.' },
@@ -501,7 +501,7 @@ Setup takes about 20 minutes the first time. You will sign in with your Apple ID
     thumbnailEmoji: '',
     publishedAt: '2026-04-17',
     difficulty: 'Beginner',
-    body: `Fitbit is a fitness tracker owned by Google that counts steps, tracks sleep, measures heart rate, and reminds you to move. Models range from simple wristbands to full smart watches, but they all set up the same way: with the free Fitbit app on iPhone or Android.
+    body: `Fitbit is a fitness tracker owned by Google that counts steps, tracks sleep, measures heart rate, and reminds you to move. Models range from simple wristbands to full smart watches. But they all set up the same way: with the free Fitbit app on iPhone or Android.
 
 Setup takes under 15 minutes. You create a Google account (Fitbit accounts moved to Google in 2023), pair the device over Bluetooth, and pick your goals.`,
     steps: [
@@ -594,7 +594,7 @@ A simple system works best: one folder for each big category (Bills, Family, Wor
       { title: 'Create the folders or labels', content: 'In Gmail on a computer, click the plus sign next to Labels in the left sidebar. In Outlook, right-click your email account and pick New Folder. In Apple Mail, click Mailbox, then New Mailbox.' },
       { title: 'Move existing emails', content: 'Drag messages from the inbox onto a folder or label in the sidebar. To move many at once, hold the Shift key while clicking the first and last message, then drag them all together.' },
       { title: 'Set up a filter or rule for future email', content: 'Create a filter (Gmail) or rule (Outlook, Apple Mail) so future emails from the same senders go straight into the right folder. See the Gmail filters guide for step-by-step instructions.' },
-      { title: 'Archive instead of delete', content: 'When you finish reading an email, archive it instead of leaving it in the inbox. Archive means "keep it but hide it" — you can still search for it later, but it clears out the inbox.' },
+      { title: 'Archive instead of delete', content: 'When you finish reading an email, archive it instead of leaving it in the inbox. Archive means "keep it but hide it" — you can still search for it later. But it clears out the inbox.' },
     ],
   },
   {

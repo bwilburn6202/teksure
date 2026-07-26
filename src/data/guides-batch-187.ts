@@ -174,7 +174,7 @@ export const guidesBatch187: Guide[] = [
       },
       {
         title: "Know what urgent care cannot do",
-        content: "Urgent care clinics handle most same-day problems, but they do not have everything. They cannot do CT scans, MRIs, or surgery. They cannot manage heart attacks or strokes. They will send you to the ER if your problem is too big. If you suspect a stroke, heart attack, broken hip, or major bleeding, skip urgent care and go straight to the ER.",
+        content: "Urgent care clinics handle most same-day problems. But they do not have everything. They cannot do CT scans, MRIs, or surgery. They cannot manage heart attacks or strokes. They will send you to the ER if your problem is too big. If you suspect a stroke, heart attack, broken hip, or major bleeding, skip urgent care and go straight to the ER.",
         tip: "Many urgent care clinics now offer video visits for $50 to $75. For a rash, cough, or UTI, a video visit can save you the drive."
       }
     ]

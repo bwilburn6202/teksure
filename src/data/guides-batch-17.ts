@@ -52,7 +52,7 @@ export const guidesBatch17: Guide[] = [
     thumbnailEmoji: '',
     publishedAt: '2026-04-19',
     difficulty: 'Beginner',
-    body: `Google gives every Google account 15 gigabytes (GB) of free cloud storage. This storage is shared between three Google services: Gmail (emails and attachments), Google Drive (documents, files, and presentations), and Google Photos (if you back up photos in "Original quality").\n\nWhen that 15GB fills up, you will stop receiving new emails, Google Photos will stop backing up, and you won't be able to save new files to Google Drive. This is a common frustration — especially for people who have used Gmail for many years and accumulated thousands of emails with large attachments.\n\nGoogle One is the service that manages this storage and lets you purchase more if needed. Plans start at $2.99/month for 100GB, which is enough for most people for years. This guide shows you how to see what is using your storage and how to free up space without paying.`,
+    body: `Google gives every Google account 15 gigabytes (GB) of free cloud storage. This storage is shared between three Google services: Gmail (emails and attachments), Google Drive (documents, files, and presentations), and Google Photos (if you back up photos in "Original quality").\n\nWhen that 15GB fills up, you will stop receiving new emails, Google Photos will stop backing up. And you won't be able to save new files to Google Drive. This is a common frustration — especially for people who have used Gmail for many years and accumulated thousands of emails with large attachments.\n\nGoogle One is the service that manages this storage and lets you purchase more if needed. Plans start at $2.99/month for 100GB, which is enough for most people for years. This guide shows you how to see what is using your storage and how to free up space without paying.`,
     steps: [
       {
         title: 'Check how much storage you are using',
@@ -120,7 +120,7 @@ export const guidesBatch17: Guide[] = [
     thumbnailEmoji: '',
     publishedAt: '2026-04-19',
     difficulty: 'Beginner',
-    body: `One of the most practical features of Amazon Alexa — the voice assistant on Amazon Echo devices — is its ability to manage shopping lists and interact with Amazon. You can add items to a shopping list just by speaking, and the list syncs to the Alexa app on your phone so you can check it at the grocery store.\n\nAlexa can also help you reorder items you have purchased before on Amazon using just your voice. You set up voice purchasing (optionally with a PIN), and you can say "Alexa, order more paper towels" and it will reorder from your purchase history. This guide walks through both features.`,
+    body: `One of the most practical features of Amazon Alexa — the voice assistant on Amazon Echo devices — is its ability to manage shopping lists and interact with Amazon. You can add items to a shopping list just by speaking, and the list syncs to the Alexa app on your phone so you can check it at the grocery store.\n\nAlexa can also help you reorder items you have purchased before on Amazon using just your voice. You set up voice purchasing (optionally with a PIN). And you can say "Alexa, order more paper towels" and it will reorder from your purchase history. This guide walks through both features.`,
     steps: [
       {
         title: 'Add items to your shopping list by voice',
@@ -321,7 +321,7 @@ export const guidesBatch17: Guide[] = [
     thumbnailEmoji: '',
     publishedAt: '2026-04-19',
     difficulty: 'Beginner',
-    body: `FaceTime is Apple's free video calling app, and it allows group calls with up to 32 people at once. This is ideal for family gatherings where people are in different locations — everyone can see and talk to each other at the same time on a split screen.\n\nGroup FaceTime works between iPhones, iPads, and Macs. Everyone on the call must have an Apple device and an active Apple ID. If you have family members with Android phones or Windows computers, they can still join using a FaceTime link sent via text — they connect through a web browser without needing Apple devices.\n\nThis guide shows you how to start a group FaceTime and how to invite non-Apple users.`,
+    body: `FaceTime is Apple's free video calling app. And it allows group calls with up to 32 people at once. This is ideal for family gatherings where people are in different locations — everyone can see and talk to each other at the same time on a split screen.\n\nGroup FaceTime works between iPhones, iPads, and Macs. Everyone on the call must have an Apple device and an active Apple ID. If you have family members with Android phones or Windows computers, they can still join using a FaceTime link sent via text — they connect through a web browser without needing Apple devices.\n\nThis guide shows you how to start a group FaceTime and how to invite non-Apple users.`,
     steps: [
       {
         title: 'Start a group FaceTime call',
@@ -435,7 +435,7 @@ export const guidesBatch17: Guide[] = [
       },
       {
         title: 'Upload photos to the frame',
-        content: "Depending on the brand: **Skylight** — each frame has a unique email address. Attach photos to an email and send them to that address. Photos appear on the frame within minutes. Any family member can send photos without downloading an app. **Nixplay** — create a free account at nixplay.com, upload photos to playlists, and share the playlist link with family members so they can add photos. **Amazon Echo Show** — go to the Alexa app, set the background to your Amazon Photos library, and it rotates through your photos automatically.",
+        content: "Depending on the brand: **Skylight** — each frame has a unique email address. Attach photos to an email and send them to that address. Photos appear on the frame within minutes. Any family member can send photos without downloading an app. **Nixplay** — create a free account at nixplay.com, upload photos to playlists, and share the playlist link with family members so they can add photos. **Amazon Echo Show** — go to the Alexa app, set the background to your Amazon Photos library. And it rotates through your photos automatically.",
         tip: "Quick Tip: For a Skylight frame, share the frame's email address with your children and grandchildren and ask them to send photos after family events. The frame becomes a living, ever-updating photo album.",
       },
       {
@@ -521,7 +521,7 @@ export const guidesBatch17: Guide[] = [
     thumbnailEmoji: '',
     publishedAt: '2026-04-19',
     difficulty: 'Beginner',
-    body: `Helping an aging parent navigate technology from a distance is one of the most common challenges adult children face today. You cannot always be there in person to help, but there are tools and strategies that let you provide support remotely — fixing problems, monitoring for issues, and keeping your parent safe from scams without being intrusive.\n\nThe goal is not to take over control of their digital life, but to give them independence with a safety net. The best solutions involve the parent's informed consent and participation. Setting things up together during a visit, or walking through setup by phone or video call, establishes trust and teaches your parent how to use new tools.`,
+    body: `Helping an aging parent navigate technology from a distance is one of the most common challenges adult children face today. You cannot always be there in person to help. But there are tools and strategies that let you provide support remotely — fixing problems, monitoring for issues, and keeping your parent safe from scams without being intrusive.\n\nThe goal is not to take over control of their digital life, but to give them independence with a safety net. The best solutions involve the parent's informed consent and participation. Setting things up together during a visit, or walking through setup by phone or video call, establishes trust and teaches your parent how to use new tools.`,
     steps: [
       {
         title: 'Set up remote desktop access for technical help',
@@ -530,7 +530,7 @@ export const guidesBatch17: Guide[] = [
       },
       {
         title: 'Help with their phone remotely',
-        content: "For iPhones: Apple does not offer a remote control feature, but you can use screen sharing during a FaceTime call. During a FaceTime call with your parent: tap \"Share My Screen\" → your parent's screen will appear on your FaceTime window, and they can walk you through what they see. On Android: Android phones often support remote screen viewing through apps like TeamViewer QuickSupport — install it on the parent's phone, get the code, and connect from TeamViewer on your computer.",
+        content: "For iPhones: Apple does not offer a remote control feature. But you can use screen sharing during a FaceTime call. During a FaceTime call with your parent: tap \"Share My Screen\" → your parent's screen will appear on your FaceTime window. And they can walk you through what they see. On Android: Android phones often support remote screen viewing through apps like TeamViewer QuickSupport — install it on the parent's phone, get the code, and connect from TeamViewer on your computer.",
       },
       {
         title: 'Set up family sharing so you can see their app purchases and screen time',

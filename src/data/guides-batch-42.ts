@@ -269,7 +269,7 @@ To receive SMS text messages on your Mac (not just iMessages), you need to enabl
 
 iMessages work automatically if you are signed into the same Apple ID on both devices — no special setup needed.
 
-You can also send photos, voice messages, and emoji from Messages on Mac, and you can use group chats.
+You can also send photos, voice messages, and emoji from Messages on Mac. And you can use group chats.
 
 Requirements: Mac with macOS Yosemite or later, iPhone with iOS 8 or later, both signed into the same Apple ID. For SMS forwarding, iPhone and Mac must be on the same Wi-Fi network (or Bluetooth).`,
     steps: [
@@ -708,7 +708,7 @@ Why check your report?
     thumbnailEmoji: ``,
     publishedAt: `2026-04-19`,
     difficulty: `Beginner`,
-    body: `Seeing an unexpected charge on your credit card statement is alarming, but you have strong legal protections. Under the Fair Credit Billing Act, you have the right to dispute billing errors and unauthorized charges with your credit card company.
+    body: `Seeing an unexpected charge on your credit card statement is alarming. But you have strong legal protections. Under the Fair Credit Billing Act, you have the right to dispute billing errors and unauthorized charges with your credit card company.
 
 **When you can dispute a charge:**
 - You do not recognize the charge at all (possible fraud)

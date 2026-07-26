@@ -33,7 +33,7 @@ export const guidesBatch321: Guide[] = [
       },
       {
         title: "Register your number on the Do Not Call list",
-        content: "Visit donotcall.gov and add your phone number for free. This won't stop illegal scam calls, since scammers ignore the list, but it does reduce legitimate telemarketing calls, making it easier to notice which calls are actually suspicious.",
+        content: "Visit donotcall.gov and add your phone number for free. This won't stop illegal scam calls, since scammers ignore the list. But it does reduce legitimate telemarketing calls, making it easier to notice which calls are actually suspicious.",
       },
       {
         title: "Never press a number to \"opt out\"",
@@ -218,7 +218,7 @@ export const guidesBatch321: Guide[] = [
       },
       {
         title: "Turn off permissions that don't make sense for the app",
-        content: "If a simple game is asking for your contacts or microphone, there's rarely a good reason. Turning off a permission an app doesn't truly need won't break the app's core purpose, but it will stop it from collecting information it doesn't require.",
+        content: "If a simple game is asking for your contacts or microphone, there's rarely a good reason. Turning off a permission an app doesn't truly need won't break the app's core purpose. But it will stop it from collecting information it doesn't require.",
       },
     ],
   },

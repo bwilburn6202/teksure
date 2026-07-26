@@ -571,7 +571,7 @@ export const guidesBatch21: Guide[] = [
     thumbnailEmoji: '',
     publishedAt: '2026-04-19',
     difficulty: 'Beginner',
-    body: `Your iPhone freezes, the screen goes black and won't turn back on, or it's completely unresponsive — pressing buttons does nothing. This happens sometimes on all iPhones, and it doesn't mean your phone is broken. A force restart (also called a hard reset) clears whatever got stuck in the system and starts fresh. It takes less than 10 seconds and doesn't delete any of your data.\n\nThe button combination for a force restart varies by iPhone model — newer iPhones use a different sequence than older ones. This guide covers all models so you can find the right method for your iPhone quickly.`,
+    body: `Your iPhone freezes, the screen goes black and won't turn back on, or it's completely unresponsive — pressing buttons does nothing. This happens sometimes on all iPhones. And it doesn't mean your phone is broken. A force restart (also called a hard reset) clears whatever got stuck in the system and starts fresh. It takes less than 10 seconds and doesn't delete any of your data.\n\nThe button combination for a force restart varies by iPhone model — newer iPhones use a different sequence than older ones. This guide covers all models so you can find the right method for your iPhone quickly.`,
     steps: [
       {
         title: 'Identify your iPhone model',
@@ -716,7 +716,7 @@ export const guidesBatch21: Guide[] = [
     thumbnailEmoji: '',
     publishedAt: '2026-04-19',
     difficulty: 'Beginner',
-    body: `Your Windows computer just stopped responding — the cursor won't move, nothing happens when you click, or the screen is stuck. This is called a system freeze, and it happens for a variety of reasons: a program crashed and is hogging all the system resources, Windows ran out of memory, a driver crashed, or the computer needs a restart after long uptime.\n\nThe good news: a computer freeze usually fixes itself with a restart. The bad news: if you have unsaved work open, you may lose it. This guide takes you through the steps in order of how gentle they are, starting with the least disruptive and ending with a hard power-off as the last resort.`,
+    body: `Your Windows computer just stopped responding — the cursor won't move, nothing happens when you click, or the screen is stuck. This is called a system freeze. And it happens for a variety of reasons: a program crashed and is hogging all the system resources, Windows ran out of memory, a driver crashed, or the computer needs a restart after long uptime.\n\nThe good news: a computer freeze usually fixes itself with a restart. The bad news: if you have unsaved work open, you may lose it. This guide takes you through the steps in order of how gentle they are, starting with the least disruptive and ending with a hard power-off as the last resort.`,
     steps: [
       {
         title: 'Wait first — it might just be thinking',
@@ -737,7 +737,7 @@ export const guidesBatch21: Guide[] = [
       },
       {
         title: 'Hard reboot as a last resort',
-        content: 'If nothing else works, press and hold the physical power button on your computer for 5–10 seconds until it turns off. Wait 30 seconds, then press it again to turn it back on. This is the equivalent of pulling the plug — you will lose any unsaved work, but it always breaks the freeze.',
+        content: 'If nothing else works, press and hold the physical power button on your computer for 5–10 seconds until it turns off. Wait 30 seconds, then press it again to turn it back on. This is the equivalent of pulling the plug — you will lose any unsaved work. But it always breaks the freeze.',
         warning: 'Hard power-off should be used only when nothing else works. Regularly shutting down this way (rather than through Windows) can eventually cause file system errors. If your computer freezes often, it may need maintenance — see a technician or run Windows Update to install pending patches.',
       },
     ],

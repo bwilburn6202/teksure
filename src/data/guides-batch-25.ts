@@ -244,7 +244,7 @@ Your PayPal balance is not the same as a bank account — it is not FDIC insured
     difficulty: 'Beginner',
     body: `The official Medicare mobile app gives you quick access to your Medicare benefits, claims history, deductibles, and covered services — right from your phone. Instead of calling 1-800-MEDICARE or waiting for a paper explanation of benefits in the mail, you can check the status of a claim or verify coverage within seconds.
 
-The app is called "What's Covered" from Medicare.gov, and it works alongside the MyMedicare.gov website. There is also a Medicare and You Handbook available digitally. Together, these tools replace most reasons to call the Medicare helpline.
+The app is called "What's Covered" from Medicare.gov. And it works alongside the MyMedicare.gov website. There is also a Medicare and You Handbook available digitally. Together, these tools replace most reasons to call the Medicare helpline.
 
 Here is what you can do with the Medicare app: look up whether a specific service, test, or item is covered by Original Medicare (Part A and B); check your eligibility dates; view your Medicare Summary Notices (the official record of what was billed and paid); find Medicare-participating doctors, hospitals, and suppliers near you; compare nursing homes and home health agencies on quality ratings; and get information about Medicare Advantage, supplemental plans, and Part D prescription coverage.
 
@@ -471,7 +471,7 @@ In-person Senior Planet Centers are located in New York City, Los Angeles, Denve
     difficulty: 'Beginner',
     body: `Google Assistant is a voice assistant built into almost every Android phone. Like Apple's Siri, it responds when you say "Hey Google" (or press and hold the Home button). You can ask it questions, send text messages, set reminders, make phone calls, navigate to addresses, play music, and control your phone settings — all without touching the screen.
 
-Google Assistant is one of the most capable voice assistants available, and it learns your preferences over time. The more you use it, the better it understands your contacts, your regular questions, and your preferences.
+Google Assistant is one of the most capable voice assistants available. And it learns your preferences over time. The more you use it, the better it understands your contacts, your regular questions, and your preferences.
 
 For hands-free use, "Hey Google" wake word detection works even when your phone screen is off — useful when your phone is on the counter or in your pocket. This requires always-on microphone listening to be enabled, which is on by default on most Android phones.
 
@@ -807,7 +807,7 @@ Once added, the Mail app shows all accounts in a combined inbox or lets you view
 
 Mail also syncs your contacts and calendar events if you choose. When adding a Gmail account, iOS may ask if you want to import Gmail contacts to your iPhone's Contacts app and Gmail calendar events to your Calendar app — this is optional but convenient.
 
-If you prefer using a dedicated app (like the Gmail app), you do not need to add your Gmail to the built-in Mail app — both approaches work, and it is a matter of personal preference.`,
+If you prefer using a dedicated app (like the Gmail app), you do not need to add your Gmail to the built-in Mail app — both approaches work. And it is a matter of personal preference.`,
     steps: [
       {
         title: 'Open iPhone Settings and Tap "Mail"',
@@ -853,7 +853,7 @@ For finding files, the same search bar works — but you can also use the search
 
 Windows Search also finds settings. Can't find where to change your screen brightness? Press Windows key, type "brightness," and Settings → Display brightness appears as the top result. This is faster than navigating through layers of menus.
 
-In Windows 11, Microsoft improved search a lot — it can now search inside document contents (not just file names), and it can find web results alongside local content if you have search set to include the web.`,
+In Windows 11, Microsoft improved search a lot — it can now search inside document contents (not just file names). And it can find web results alongside local content if you have search set to include the web.`,
     steps: [
       {
         title: 'Open Search with the Windows Key',
@@ -892,11 +892,11 @@ In Windows 11, Microsoft improved search a lot — it can now search inside docu
     difficulty: 'Intermediate',
     body: `iPhone's built-in Health app can connect directly to your doctor's electronic health record system and pull your medical data — lab results, medications, allergies, immunizations, conditions, and vital signs — directly to your phone. This information updates automatically when your care team adds new data.
 
-This feature is called Health Records, and it is supported by over 12,000 health systems and hospitals across the United States using a technology called FHIR (Fast Healthcare Interoperability Resources). Most major hospitals and medical groups now support it.
+This feature is called Health Records. And it is supported by over 12,000 health systems and hospitals across the United States using a technology called FHIR (Fast Healthcare Interoperability Resources). Most major hospitals and medical groups now support it.
 
 Why is this useful? You have all your key medical information in one place, without needing to log into multiple patient portals. If you see a new specialist, you can easily show them a current medication list or recent lab results directly from your phone. In an emergency, medical information is available on your locked screen through Medical ID.
 
-Privacy is built in: your health data stays on your device and is encrypted. Apple does not have access to the medical records stored in the Health app. You must authorize each health system to share data, and you can revoke that access at any time.
+Privacy is built in: your health data stays on your device and is encrypted. Apple does not have access to the medical records stored in the Health app. You must authorize each health system to share data. And you can revoke that access at any time.
 
 The connection process involves logging in through your existing patient portal account (like MyChart) — the Health app uses that login to establish a one-time connection. After that, data syncs automatically.
 
@@ -937,7 +937,7 @@ Not every doctor's office or small practice supports this yet — it is most rel
     thumbnailEmoji: '',
     publishedAt: '2026-04-19',
     difficulty: 'Beginner',
-    body: `Amazon offers music streaming at three different levels, and it can be confusing to understand what you get at each tier. This guide breaks it down clearly so you know exactly what you are paying for — or what you are already getting for free.
+    body: `Amazon offers music streaming at three different levels. And it can be confusing to understand what you get at each tier. This guide breaks it down clearly so you know exactly what you are paying for — or what you are already getting for free.
 
 **Amazon Music Free:** Available to everyone, no purchase or subscription required. You can listen to a limited catalog of songs with occasional ads. Think of it like free radio — you can shuffle playlists and stations but cannot choose specific songs on demand. Access it through the Amazon Music app.
 

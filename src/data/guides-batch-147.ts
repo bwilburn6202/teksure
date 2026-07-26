@@ -7,8 +7,7 @@ export const guidesBatch147: Guide[] = [
   {
     slug: 'how-to-update-your-phone-to-latest-version-2026',
     title: 'How to Update Your Phone to the Latest Software Version',
-    excerpt:
-      'Keeping your phone updated protects you from hackers and fixes bugs. Learn how to update an iPhone or Android phone safely — your photos stay put.',
+    excerpt: 'Keeping your phone updated protects you from hackers and fixes bugs. Learn how to update an iPhone or Android phone safely — your photos stay put.',
     category: 'essential-skills',
     tags: [
       'phone update',
@@ -56,33 +55,27 @@ Check for updates once a month if your phone does not notify you automatically. 
     steps: [
       {
         title: 'Back up your phone first',
-        content:
-          'On iPhone: open Settings, tap your name at the very top, then tap iCloud, then iCloud Backup, then tap "Back Up Now." Wait until it says "Last Backup: Today." On Android: open Settings, tap "Google," then "Backup," then "Back up now." This saves a copy of your data before anything changes.',
+        content: 'On iPhone: open Settings, tap your name at the very top, then tap iCloud, then iCloud Backup, then tap "Back Up Now." Wait until it says "Last Backup: Today." On Android: open Settings, tap "Google," then "Backup," then "Back up now." This saves a copy of your data before anything changes.',
         tip: 'Quick Tip: Backups only run on Wi-Fi. Make sure you are connected to your home Wi-Fi network before tapping Back Up Now.',
       },
       {
         title: 'Plug in your phone and connect to Wi-Fi',
-        content:
-          'Updates can take 20 to 40 minutes and use a lot of battery. Plug your phone into its charger. Then confirm Wi-Fi is on: on iPhone, swipe down from the top-right corner and check that the Wi-Fi symbol (it looks like curved lines) is highlighted. On Android, swipe down from the top of the screen and make sure Wi-Fi is turned on and shows your home network name.',
-        warning:
-          'Do not start an update on cellular data. It can use up your monthly data allowance and may time out before finishing.',
+        content: 'Updates can take 20 to 40 minutes and use a lot of battery. Plug your phone into its charger. Then confirm Wi-Fi is on: on iPhone, swipe down from the top-right corner and check that the Wi-Fi symbol (it looks like curved lines) is highlighted. On Android, swipe down from the top of the screen and make sure Wi-Fi is turned on and shows your home network name.',
+        warning: 'Do not start an update on cellular data. It can use up your monthly data allowance and may time out before finishing.',
       },
       {
         title: 'Check for and install the update on iPhone',
-        content:
-          'Open the Settings app (the gray gear icon). Tap "General," then tap "Software Update." Your phone will check for available updates. If one is available, you will see a description and a blue button that says "Download and Install" or "Install Now." Tap that button. You may be asked to enter your passcode. The phone will download the update, then restart and install it. The screen may go dark and show an Apple logo with a progress bar — this is normal. Do not turn off your phone until it finishes.',
+        content: 'Open the Settings app (the gray gear icon). Tap "General," then tap "Software Update." Your phone will check for available updates. If one is available, you will see a description and a blue button that says "Download and Install" or "Install Now." Tap that button. You may be asked to enter your passcode. The phone will download the update, then restart and install it. The screen may go dark and show an Apple logo with a progress bar — this is normal. Do not turn off your phone until it finishes.',
         tip: 'Quick Tip: To have your iPhone update itself overnight automatically, scroll down on the Software Update screen and tap "Automatic Updates." Turn on both "Download iOS Updates" and "Install iOS Updates."',
       },
       {
         title: 'Check for and install the update on Android',
-        content:
-          'Open the Settings app (the gear icon). Scroll down and tap "System," then tap "System update." The phone will check for available updates. If one is ready, tap "Download" or "Install." Your phone will restart one or more times during the process. On Samsung phones, the path is Settings → Software update → Download and install. On Google Pixel phones, it is Settings → System → System update.',
+        content: 'Open the Settings app (the gear icon). Scroll down and tap "System," then tap "System update." The phone will check for available updates. If one is ready, tap "Download" or "Install." Your phone will restart one or more times during the process. On Samsung phones, the path is Settings → Software update → Download and install. On Google Pixel phones, it is Settings → System → System update.',
         tip: 'Quick Tip: Android phones from different makers (Samsung, Google, Motorola, LG) have slightly different Settings menus. If you do not see "System," try searching "update" in the Settings search bar at the top of the screen.',
       },
       {
         title: 'Confirm the update installed correctly',
-        content:
-          'After the phone restarts, open Settings and check the software version. On iPhone: Settings → General → About → iOS Version. On Android: Settings → About phone → Android version. Compare the number to the latest version listed on Apple Support (support.apple.com) or your phone maker\'s website to confirm you are up to date.',
+        content: 'After the phone restarts, open Settings and check the software version. On iPhone: Settings → General → About → iOS Version. On Android: Settings → About phone → Android version. Compare the number to the latest version listed on Apple Support (support.apple.com) or your phone maker\'s website to confirm you are up to date.',
       },
     ],
   },
@@ -90,8 +83,7 @@ Check for updates once a month if your phone does not notify you automatically. 
   {
     slug: 'how-to-use-google-calendar-for-appointments-2026',
     title: 'How to Use Google Calendar to Track Appointments and Events',
-    excerpt:
-      'Google Calendar is a free tool for keeping doctor appointments, family events, and reminders in one place — on your phone or computer.',
+    excerpt: 'Google Calendar is a free tool for keeping doctor appointments, family events, and reminders in one place — on your phone or computer.',
     category: 'app-guides',
     tags: [
       'google calendar',
@@ -133,39 +125,32 @@ If you add an event on your computer, it automatically appears on your phone wit
     steps: [
       {
         title: 'Open Google Calendar',
-        content:
-          'On a computer: open any web browser (Chrome, Edge, Safari, Firefox) and go to calendar.google.com. Sign in with your Gmail address and password if asked. On a phone or tablet: download the free "Google Calendar" app from the App Store (iPhone) or Google Play Store (Android). Open the app and sign in with your Gmail address.',
+        content: 'On a computer: open any web browser (Chrome, Edge, Safari, Firefox) and go to calendar.google.com. Sign in with your Gmail address and password if asked. On a phone or tablet: download the free "Google Calendar" app from the App Store (iPhone) or Google Play Store (Android). Open the app and sign in with your Gmail address.',
         tip: 'Quick Tip: If you are already signed into Gmail in your browser, Google Calendar will open directly to your calendar without asking you to sign in again.',
       },
       {
         title: 'Create a new event',
-        content:
-          'On a computer: click the "+ Create" button in the top-left corner or click any date on the calendar. A box will appear where you can type the event name (for example, "Dr. Smith – checkup"). Add the date and time, then click "More options" to add a location, notes, or a reminder. Click "Save" when done. On the phone app: tap the "+" button at the bottom-right corner of the screen. Fill in the event name, date, and time, then tap "Save" at the top.',
+        content: 'On a computer: click the "+ Create" button in the top-left corner or click any date on the calendar. A box will appear where you can type the event name (for example, "Dr. Smith – checkup"). Add the date and time, then click "More options" to add a location, notes, or a reminder. Click "Save" when done. On the phone app: tap the "+" button at the bottom-right corner of the screen. Fill in the event name, date, and time, then tap "Save" at the top.',
         tip: 'Quick Tip: You can type natural language like "Doctor appointment Tuesday at 2 pm" into the event name field and Google Calendar will automatically set the date and time for you.',
       },
       {
         title: 'Set a reminder or notification',
-        content:
-          'When creating or editing an event, scroll down to find the "Add notification" section. Tap or click it to choose when you want a reminder — for example, 1 day before, 2 hours before, or 30 minutes before. You can add more than one reminder to the same event. When the time comes, your phone will show a notification on the screen, and you will also receive an email reminder if you have notifications turned on.',
+        content: 'When creating or editing an event, scroll down to find the "Add notification" section. Tap or click it to choose when you want a reminder — for example, 1 day before, 2 hours before, or 30 minutes before. You can add more than one reminder to the same event. When the time comes, your phone will show a notification on the screen. And you will also receive an email reminder if you have notifications turned on.',
         tip: 'Quick Tip: For doctor appointments, set two reminders — one the day before (so you have time to prepare) and one 2 hours before (so you have time to travel).',
       },
       {
         title: 'Invite a family member to an event',
-        content:
-          'When creating or editing an event, look for the "Add guests" field. Type the Gmail address of the family member you want to invite. They will receive an email invitation and can accept or decline. Once they accept, the event appears on their Google Calendar too. This is useful for family dinners, trips, or doctor appointments where a family member is joining you.',
-        warning:
-          "Make sure you have the correct email address before sending an invitation. Invitations go to the exact address you type — a typo will send it to the wrong person.",
+        content: 'When creating or editing an event, look for the "Add guests" field. Type the Gmail address of the family member you want to invite. They will receive an email invitation and can accept or decline. Once they accept, the event appears on their Google Calendar too. This is useful for family dinners, trips, or doctor appointments where a family member is joining you.',
+        warning: "Make sure you have the correct email address before sending an invitation. Invitations go to the exact address you type — a typo will send it to the wrong person.",
       },
       {
         title: 'Share your calendar with a family member',
-        content:
-          'Sharing your calendar lets a family member see all of your upcoming events without you having to invite them to each one individually. On a computer: click the three-dot menu next to your calendar name on the left side of the screen, then click "Settings and sharing." Under "Share with specific people," enter a family member\'s Gmail address and choose whether they can only see events or also edit them. They will receive an email to accept the shared calendar.',
+        content: 'Sharing your calendar lets a family member see all of your upcoming events without you having to invite them to each one individually. On a computer: click the three-dot menu next to your calendar name on the left side of the screen, then click "Settings and sharing." Under "Share with specific people," enter a family member\'s Gmail address and choose whether they can only see events or also edit them. They will receive an email to accept the shared calendar.',
         tip: 'Quick Tip: This is especially helpful if a family member helps manage your schedule or drives you to appointments. They can see everything coming up on your calendar from their own phone.',
       },
       {
         title: 'Switch between week view and month view',
-        content:
-          'On a computer: look for the view buttons near the top right of the screen — you will see "Day," "Week," "Month," "Year," and "Schedule." Click any of them to switch. "Schedule" view is particularly useful — it shows a simple list of upcoming events in order, which many people find easier to read than a grid. On the phone app: tap the three horizontal lines (menu icon) at the top left and then tap "Schedule," "Day," "3 days," or "Month" to switch views.',
+        content: 'On a computer: look for the view buttons near the top right of the screen — you will see "Day," "Week," "Month," "Year," and "Schedule." Click any of them to switch. "Schedule" view is particularly useful — it shows a simple list of upcoming events in order, which many people find easier to read than a grid. On the phone app: tap the three horizontal lines (menu icon) at the top left and then tap "Schedule," "Day," "3 days," or "Month" to switch views.',
       },
     ],
   },
@@ -173,8 +158,7 @@ If you add an event on your computer, it automatically appears on your phone wit
   {
     slug: 'how-to-block-and-report-spam-text-messages-2026',
     title: 'How to Block and Report Spam Text Messages',
-    excerpt:
-      'Spam texts are annoying and often dangerous. Learn how to block them on iPhone and Android, and how to report them to the FTC to help stop the scammers.',
+    excerpt: 'Spam texts are annoying and often dangerous. Learn how to block them on iPhone and Android, and how to report them to the FTC to help stop the scammers.',
     category: 'troubleshooting',
     tags: [
       'spam texts',
@@ -212,33 +196,27 @@ This guide is about blocking unknown senders sending spam. If you get a text fro
     steps: [
       {
         title: 'Recognize a spam text',
-        content:
-          'Common warning signs: the sender is a number you do not recognize; the message creates urgency ("Act now or your account will be closed"); there is a link asking you to click it; the message claims you won something you did not enter; or the message is about a package delivery when you are not expecting one. If something feels off, trust that feeling — do not tap any links.',
-        warning:
-          'Never tap a link in a suspicious text message. Even visiting the linked page can sometimes trigger a download or expose your information.',
+        content: 'Common warning signs: the sender is a number you do not recognize; the message creates urgency ("Act now or your account will be closed"); there is a link asking you to click it; the message claims you won something you did not enter; or the message is about a package delivery when you are not expecting one. If something feels off, trust that feeling — do not tap any links.',
+        warning: 'Never tap a link in a suspicious text message. Even visiting the linked page can sometimes trigger a download or expose your information.',
       },
       {
         title: 'Block a spam number on iPhone',
-        content:
-          'Open the Messages app. Tap the spam conversation to open it. Tap the sender\'s phone number or name at the top of the screen. Tap the small information icon (a circle with a lowercase "i"). Scroll down and tap "Block this Caller." Tap "Block Contact" to confirm. The number is now blocked — you will no longer receive calls or texts from it. You can manage blocked numbers anytime in Settings → Phone → Blocked Contacts.',
+        content: 'Open the Messages app. Tap the spam conversation to open it. Tap the sender\'s phone number or name at the top of the screen. Tap the small information icon (a circle with a lowercase "i"). Scroll down and tap "Block this Caller." Tap "Block Contact" to confirm. The number is now blocked — you will no longer receive calls or texts from it. You can manage blocked numbers anytime in Settings → Phone → Blocked Contacts.',
         tip: 'Quick Tip: You can also filter unknown senders entirely. Go to Settings → Messages and turn on "Filter Unknown Senders." Texts from people not in your contacts go to a separate folder, keeping your main inbox cleaner.',
       },
       {
         title: 'Block a spam number on Android',
-        content:
-          'Open the Messages app (the one pre-installed on your phone). Tap and hold the spam conversation until a checkmark appears. Tap the three-dot menu icon (top right corner), then tap "Block" or "Block and report spam." On Samsung phones: open the conversation, tap the three-dot menu, tap "Block number," then confirm. The process is similar on most Android phones, though exact menu names may vary slightly by brand.',
+        content: 'Open the Messages app (the one pre-installed on your phone). Tap and hold the spam conversation until a checkmark appears. Tap the three-dot menu icon (top right corner), then tap "Block" or "Block and report spam." On Samsung phones: open the conversation, tap the three-dot menu, tap "Block number," then confirm. The process is similar on most Android phones, though exact menu names may vary slightly by brand.',
         tip: 'Quick Tip: On Android you can also enable spam protection in the Messages app settings. Open Messages, tap the three-dot menu, tap Settings, then "Spam protection," and turn it on. Google will automatically flag likely spam messages.',
       },
       {
         title: 'Forward the spam text to 7726 to report it to your carrier',
-        content:
-          'Typing 7726 spells "SPAM" on a phone keypad. All major US carriers — AT&T, Verizon, T-Mobile, and others — accept spam reports at this number. Forward the suspicious text to 7726. Your carrier will send you an automated reply asking for the sender\'s number, then use that information to take action. This is free and does not count against your messaging plan.',
+        content: 'Typing 7726 spells "SPAM" on a phone keypad. All major US carriers — AT&T, Verizon, T-Mobile, and others — accept spam reports at this number. Forward the suspicious text to 7726. Your carrier will send you an automated reply asking for the sender\'s number, then use that information to take action. This is free and does not count against your messaging plan.',
         tip: 'Quick Tip: On iPhone, to forward a text, press and hold the message bubble, tap "More," then tap the arrow icon to forward it. Type 7726 as the recipient and send.',
       },
       {
         title: 'Report the scam to the FTC',
-        content:
-          'The Federal Trade Commission (FTC) collects reports of spam and scam texts and uses them to investigate and shut down scammers. Go to reportfraud.ftc.gov on your phone or computer. Select "Text" as the contact method, then describe what happened and paste or type the phone number that texted you. You do not need to provide your personal information to file a report. Your report helps protect other people, especially other seniors who may receive the same messages.',
+        content: 'The Federal Trade Commission (FTC) collects reports of spam and scam texts and uses them to investigate and shut down scammers. Go to reportfraud.ftc.gov on your phone or computer. Select "Text" as the contact method, then describe what happened and paste or type the phone number that texted you. You do not need to provide your personal information to file a report. Your report helps protect other people, especially other seniors who may receive the same messages.',
       },
     ],
   },
@@ -246,8 +224,7 @@ This guide is about blocking unknown senders sending spam. If you get a text fro
   {
     slug: 'how-to-use-apple-pay-or-google-pay-2026',
     title: 'How to Use Apple Pay or Google Pay at Stores and Online',
-    excerpt:
-      'Apple Pay and Google Pay let you pay with your phone instead of a physical card — and your real card number is never shared with the store.',
+    excerpt: 'Apple Pay and Google Pay let you pay with your phone instead of a physical card — and your real card number is never shared with the store.',
     category: 'online-banking',
     tags: [
       'apple pay',
@@ -285,33 +262,27 @@ When shopping online, many websites now show an "Apple Pay" or "Google Pay" butt
     steps: [
       {
         title: 'Add your card to Apple Wallet (iPhone)',
-        content:
-          'Open the Wallet app on your iPhone — it looks like a small card wallet on a white background. Tap the "+" button in the top right corner. Tap "Debit or Credit Card." You can point your phone\'s camera at your physical card to scan the numbers automatically, or tap "Enter Card Details Manually" to type them in. Follow the on-screen steps to verify your card — your bank may send a text message or ask you to call to confirm. Once verified, your card appears in the Wallet app and is ready to use.',
+        content: 'Open the Wallet app on your iPhone — it looks like a small card wallet on a white background. Tap the "+" button in the top right corner. Tap "Debit or Credit Card." You can point your phone\'s camera at your physical card to scan the numbers automatically, or tap "Enter Card Details Manually" to type them in. Follow the on-screen steps to verify your card — your bank may send a text message or ask you to call to confirm. Once verified, your card appears in the Wallet app and is ready to use.',
         tip: 'Quick Tip: You can add up to 12 cards to Apple Wallet. You can also add your FSA/HSA card, transit cards, and some store loyalty cards.',
       },
       {
         title: 'Add your card to Google Wallet (Android)',
-        content:
-          'Open the Google Wallet app on your Android phone. If you do not see it, download it for free from the Google Play Store. Tap "Add to Wallet," then tap "Payment card." You can scan your physical card with the camera or enter the card numbers manually. Your bank will verify the card — usually by texting a code to your phone number on file. Once verified, the card appears in Google Wallet and is ready to use.',
+        content: 'Open the Google Wallet app on your Android phone. If you do not see it, download it for free from the Google Play Store. Tap "Add to Wallet," then tap "Payment card." You can scan your physical card with the camera or enter the card numbers manually. Your bank will verify the card — usually by texting a code to your phone number on file. Once verified, the card appears in Google Wallet and is ready to use.',
         tip: 'Quick Tip: On most Android phones, Google Wallet is already installed. Look for an icon that looks like a colorful "G" with a card behind it.',
       },
       {
         title: 'Pay at a store with Apple Pay',
-        content:
-          'When you are ready to pay at the checkout, look for the contactless symbol on the payment reader. On iPhones with Face ID (iPhone X and later): double-click the side button (the one on the right edge of the phone). Your Wallet card appears. Hold your phone near the payment reader and glance at your phone to confirm with Face ID — you will feel a tap and hear a sound when the payment goes through. On iPhones with a Home button (iPhone 8 and earlier): double-click the Home button and confirm with Touch ID (your fingerprint), then hold near the reader.',
-        warning:
-          'Keep your phone within about an inch of the payment terminal. If payment does not go through, try repositioning the phone directly over the contactless symbol.',
+        content: 'When you are ready to pay at the checkout, look for the contactless symbol on the payment reader. On iPhones with Face ID (iPhone X and later): double-click the side button (the one on the right edge of the phone). Your Wallet card appears. Hold your phone near the payment reader and glance at your phone to confirm with Face ID — you will feel a tap and hear a sound when the payment goes through. On iPhones with a Home button (iPhone 8 and earlier): double-click the Home button and confirm with Touch ID (your fingerprint), then hold near the reader.',
+        warning: 'Keep your phone within about an inch of the payment terminal. If payment does not go through, try repositioning the phone directly over the contactless symbol.',
       },
       {
         title: 'Pay at a store with Google Pay',
-        content:
-          'Unlock your Android phone (you do not need to open any app). Hold the back of your phone near the payment terminal\'s contactless symbol. Your phone will detect the reader automatically and may ask you to confirm with your fingerprint or PIN. You will see a checkmark or hear a confirmation sound when the payment is complete. Some Android phones require you to open the Google Wallet app first and tap "Pay" before holding to the reader — check your phone\'s instructions if the first method does not work.',
+        content: 'Unlock your Android phone (you do not need to open any app). Hold the back of your phone near the payment terminal\'s contactless symbol. Your phone will detect the reader automatically and may ask you to confirm with your fingerprint or PIN. You will see a checkmark or hear a confirmation sound when the payment is complete. Some Android phones require you to open the Google Wallet app first and tap "Pay" before holding to the reader — check your phone\'s instructions if the first method does not work.',
         tip: 'Quick Tip: Make sure NFC (Near Field Communication — the technology that enables tap-to-pay) is turned on. On Android: go to Settings → Connected devices → Connection preferences → NFC and make sure it is toggled on.',
       },
       {
         title: 'Pay online with Apple Pay or Google Pay',
-        content:
-          'When shopping on a website or in an app, look for an "Apple Pay" or "Google Pay" button at checkout — usually near the credit card entry fields. On iPhone: tap the Apple Pay button. A summary of your order appears. Double-click the side button to confirm the payment with Face ID. The payment goes through without you typing your card number anywhere. On Android: tap the Google Pay button. Your saved card appears. Confirm the purchase. This protects you from typing your card number into websites that might not be fully secure.',
+        content: 'When shopping on a website or in an app, look for an "Apple Pay" or "Google Pay" button at checkout — usually near the credit card entry fields. On iPhone: tap the Apple Pay button. A summary of your order appears. Double-click the side button to confirm the payment with Face ID. The payment goes through without you typing your card number anywhere. On Android: tap the Google Pay button. Your saved card appears. Confirm the purchase. This protects you from typing your card number into websites that might not be fully secure.',
         tip: 'Quick Tip: Look for Apple Pay or Google Pay buttons on large retail websites like Target, Nike, and many smaller online stores. The option is growing more common each year.',
       },
     ],

@@ -2508,7 +2508,7 @@ const coreGuides: Guide[] = [
       {
         title: 'Learn how AI works behind the scenes',
         content: 'Most modern AI works through something called "machine learning." Instead of a programmer writing rules for every possible situation, the software is trained on huge amounts of data and learns to spot patterns on its own. For example, to teach AI to recognize cats in photos, you show it millions of photos labeled "cat" and "not cat." The AI figures out the patterns \u2014 pointy ears, whiskers, fur \u2014 by itself. Nobody writes a rule that says "look for whiskers." This is why AI gets better over time: the more data it processes, the more accurate it becomes.',
-        tip: 'You do not need to understand the technical details to use AI. Knowing the basics helps you feel more confident, but you can start using AI tools right away without any special knowledge.'
+        tip: 'You do not need to understand the technical details to use AI. Knowing the basics helps you feel more confident. But you can start using AI tools right away without any special knowledge.'
       },
       {
         title: 'Know the different types of AI tools',
@@ -2516,7 +2516,7 @@ const coreGuides: Guide[] = [
       },
       {
         title: 'Understand what AI cannot do',
-        content: 'AI is not perfect, and understanding its limits is just as important as knowing what it can do. AI does not think, feel, or understand \u2014 it processes patterns. It can sometimes be confidently wrong, stating false information as if it were true (this is called a "hallucination"). AI can also reflect biases from its training data. It does not know your personal situation unless you tell it, and it should never replace professional advice for medical, legal, or financial decisions. Always double-check important information from AI, just as you would verify something you read online.',
+        content: 'AI is not perfect, and understanding its limits is just as important as knowing what it can do. AI does not think, feel, or understand \u2014 it processes patterns. It can sometimes be confidently wrong, stating false information as if it were true (this is called a "hallucination"). AI can also reflect biases from its training data. It does not know your personal situation unless you tell it. And it should never replace professional advice for medical, legal, or financial decisions. Always double-check important information from AI, just as you would verify something you read online.',
         warning: 'Do not share sensitive personal information (bank details, passwords, Social Security numbers, medical records) with AI chatbots. Anything you type may be stored and used to improve future versions of the software.'
       },
       {
@@ -4303,7 +4303,7 @@ const coreGuides: Guide[] = [
       },
       {
         title: 'Set up automatic updates everywhere',
-        content: `The easiest approach: turn on automatic updates on every device and browser. You'll be prompted to restart when needed, but you won't have to remember to check manually. Most updates download overnight and only ask for a restart in the morning.`, tip: `Schedule restarts for a time that works for you — both Windows and macOS let you set "Active Hours" so it won't restart mid-video call.`
+        content: `The easiest approach: turn on automatic updates on every device and browser. You'll be prompted to restart when needed. But you won't have to remember to check manually. Most updates download overnight and only ask for a restart in the morning.`, tip: `Schedule restarts for a time that works for you — both Windows and macOS let you set "Active Hours" so it won't restart mid-video call.`
       },
     ]
   },
@@ -4334,7 +4334,7 @@ const coreGuides: Guide[] = [
       },
       {
         title: 'Setting up on a Chromecast',
-        content: `Plug the Chromecast into your TV's HDMI port. Download the Google Home app on your phone. Open Google Home → Add (+) → Set up device → New device. Follow the steps to connect your Chromecast to your Wi-Fi. Once set up, you "cast" from your phone or tablet — open Netflix on your phone, press the cast icon (), and it plays on the TV.`
+        content: `Plug the Chromecast into your TV's HDMI port. Download the Google Home app on your phone. Open Google Home → Add (+) → Set up device → New device. Follow the steps to connect your Chromecast to your Wi-Fi. Once set up, you "cast" from your phone or tablet — open Netflix on your phone, press the cast icon (). And it plays on the TV.`
       },
       {
         title: 'Setting up on Apple TV',
@@ -5364,7 +5364,7 @@ const coreGuides: Guide[] = [
     steps: [
       { title: 'Open Google Docs', content: 'Go to docs.google.com in your web browser and sign in with your Google account (the same account you use for Gmail). Click the big "+" button or "Blank document" to create a new document. You can also open Google Docs from Google Drive (drive.google.com) by clicking "New → Google Docs."' },
       { title: 'Type and format your document', content: 'Click in the document and start typing. Use the toolbar to format: Bold (Ctrl+B), Italic (Ctrl+I), change font, size, and color. The toolbar is simpler than Word but has all the essentials. Use the paragraph styles dropdown ("Normal text") to add headings — great for organizing longer documents.' },
-      { title: 'Your document saves automatically', content: `Google Docs saves every change automatically to your Google Drive — you'll see "Saving..." then "All changes saved in Drive" at the top. You never need to click Save! If your internet cuts out, Docs will sync your changes when you reconnect. You can also access your documents from any device.`, tip: 'Google Docs works offline too! Enable it in Google Drive settings, and you can edit documents even without internet.' },
+      { title: 'Your document saves automatically', content: `Google Docs saves every change automatically to your Google Drive — you'll see "Saving..." then "All changes saved in Drive" at the top. You never need to click Save! If your internet cuts out, Docs will sync your changes when you reconnect. You can also access your documents from any device.`, tip: 'Google Docs works offline too! Enable it in Google Drive settings. And you can edit documents even without internet.' },
       { title: 'Share and collaborate', content: `Click the blue "Share" button (top right). Type someone's email address. Choose their access level: Viewer (can only read), Commenter (can add comments), or Editor (can make changes). Click "Send." They'll get an email with a link to the document. Multiple people can edit the same document at the same time — you'll see their cursors in different colors.` },
       { title: 'Download and print', content: 'To download: File → Download → choose a format (Microsoft Word, PDF, Plain Text, etc.). To print: File → Print or press Ctrl+P. Google Docs can also convert your document to PDF for easy email sharing. Everything you create is stored in your Google Drive and accessible from any computer or phone.' },
     ]
@@ -5478,7 +5478,7 @@ const coreGuides: Guide[] = [
       { title: 'Mahjong', content: 'For classic Mahjong solitaire (tile matching), search "Mahjong" in your app store — "Mahjong Solitaire" by MobilityWare is a clean, free option. For multiplayer Mahjong (the traditional 4-player game), try "Real Mahjong" on your app store or mahjong.com. Both are free with optional upgrades.' },
       { title: 'Chess for all levels', content: 'Chess.com and Lichess.org are both excellent — Lichess is 100% free with no ads. Create an account and play against other humans or computer opponents. Both sites have interactive lessons that teach you from absolute beginner to advanced. Daily puzzles help sharpen your tactics. The apps work on phone, tablet, and computer.' },
       { title: 'Word games and puzzles', content: 'Wordle (nytimes.com/wordle) — one word puzzle per day, completely free. "Words With Friends" — play Scrabble-style games with friends and family, each taking turns at your own pace. "Spelling Bee" (also from NY Times) — make as many words as you can from 7 letters. All three are addictive and great for keeping your mind sharp.' },
-      { title: 'Jigsaw puzzles', content: 'Jigsaw Explorer (jigsawexplorer.com) offers thousands of free jigsaw puzzles in your browser — no download needed. Choose from 6 to 1,000+ pieces. You can also upload your own photos to turn into puzzles. On tablet, "Jigsaw Puzzles — Puzzle Game" (by Easybrain) is a beautiful free app with daily new puzzles and customizable piece counts.', tip: 'Doing jigsaw puzzles on a tablet is especially enjoyable — the touch screen makes moving pieces feel natural, and you never lose a piece under the couch!' },
+      { title: 'Jigsaw puzzles', content: 'Jigsaw Explorer (jigsawexplorer.com) offers thousands of free jigsaw puzzles in your browser — no download needed. Choose from 6 to 1,000+ pieces. You can also upload your own photos to turn into puzzles. On tablet, "Jigsaw Puzzles — Puzzle Game" (by Easybrain) is a beautiful free app with daily new puzzles and customizable piece counts.', tip: 'Doing jigsaw puzzles on a tablet is especially enjoyable — the touch screen makes moving pieces feel natural. And you never lose a piece under the couch!' },
     ]
   },
 
@@ -7275,7 +7275,7 @@ For stronger privacy, do three things. Turn on Airplane Mode to disable all radi
       {
         title: 'What to do if your entire Mac is frozen',
         content: 'If your Mac is completely unresponsive and nothing works — the mouse will not move, keyboard shortcuts do nothing — press and hold the power button for about 10 seconds until the screen goes dark. Wait another 10 seconds, then press the power button again to restart. Only do this as an absolute last resort, because any unsaved work will be lost.',
-        warning: 'A forced shutdown should only be used when nothing else works. It will not damage your Mac, but you will lose anything you had not saved.'
+        warning: 'A forced shutdown should only be used when nothing else works. It will not damage your Mac. But you will lose anything you had not saved.'
       }
     ]
   },
@@ -7334,7 +7334,7 @@ For stronger privacy, do three things. Turn on Airplane Mode to disable all radi
       },
       {
         title: 'Use built-in tools to free up space',
-        content: `In the Storage overview, click "Manage." Your Mac will show recommendations to help you free up space. Options like "Store in iCloud" move older files to Apple's online storage so they do not take up room on your Mac — you can still open them anytime, but they will need to download first. "Optimize Storage" removes movies and shows you have already watched.`
+        content: `In the Storage overview, click "Manage." Your Mac will show recommendations to help you free up space. Options like "Store in iCloud" move older files to Apple's online storage so they do not take up room on your Mac — you can still open them anytime. But they will need to download first. "Optimize Storage" removes movies and shows you have already watched.`
       },
       {
         title: 'Find and delete large files',
@@ -7605,7 +7605,7 @@ For stronger privacy, do three things. Turn on Airplane Mode to disable all radi
       },
       {
         title: 'Tell someone you trust',
-        content: 'Being scammed can feel embarrassing, but there is absolutely no shame in it — scammers are professionals who trick thousands of people every day. Tell a family member, friend, or neighbor what happened. They can:\n\n- Help you think clearly about next steps\n- Watch for follow-up scams (scammers often try again, pretending to help you "recover" your money)\n- Provide emotional support\n\nYou are not alone, and talking about it helps.'
+        content: 'Being scammed can feel embarrassing. But there is absolutely no shame in it — scammers are professionals who trick thousands of people every day. Tell a family member, friend, or neighbor what happened. They can:\n\n- Help you think clearly about next steps\n- Watch for follow-up scams (scammers often try again, pretending to help you "recover" your money)\n- Provide emotional support\n\nYou are not alone, and talking about it helps.'
       },
       {
         title: 'Monitor your accounts for unusual activity',
@@ -7989,7 +7989,7 @@ For stronger privacy, do three things. Turn on Airplane Mode to disable all radi
       { title: 'Headspace (guided meditation)', content: 'Headspace offers structured courses that teach meditation step by step. The free version has a basics course. Paid ($70/year) adds courses for stress, focus, sleep, and more. Sessions range from 3 to 20 minutes.' },
       { title: 'Insight Timer (completely free)', content: 'Insight Timer has over 100,000 free guided meditations from teachers worldwide. You can filter by topic (anxiety, sleep, grief), length, and experience level. There is also a timer for unguided meditation with gentle bells.' },
       { title: 'Breathing exercises on your phone', content: 'You do not need an app for this. On Apple Watch: open the Breathe app and follow the animation. On most phones: search YouTube for "box breathing exercise" — it is a simple technique used by the military to reduce stress in seconds (breathe in 4 seconds, hold 4, out 4, hold 4, repeat).' },
-      { title: 'When to seek professional help', content: 'Apps are a great supplement, but they are not a replacement for professional care. If you are experiencing persistent anxiety, depression, or grief, talk to your doctor. The 988 Suicide and Crisis Lifeline is available 24/7 by call or text at 988.', warning: 'If you or someone you know is in crisis, call or text 988 (Suicide and Crisis Lifeline) or text HOME to 741741 (Crisis Text Line). These services are free and available 24/7.' },
+      { title: 'When to seek professional help', content: 'Apps are a great supplement. But they are not a replacement for professional care. If you are experiencing persistent anxiety, depression, or grief, talk to your doctor. The 988 Suicide and Crisis Lifeline is available 24/7 by call or text at 988.', warning: 'If you or someone you know is in crisis, call or text 988 (Suicide and Crisis Lifeline) or text HOME to 741741 (Crisis Text Line). These services are free and available 24/7.' },
     ]
   },
   
@@ -8113,7 +8113,7 @@ For stronger privacy, do three things. Turn on Airplane Mode to disable all radi
     difficulty: 'Beginner',
     steps: [
       { title: 'What these scams look like', content: 'You receive a text or email saying: "Your package could not be delivered. Click here to reschedule" or "USPS: Your package is held at the facility. Confirm delivery: [link]." The link takes you to a fake website that asks for your personal information or payment for a "redelivery fee."' },
-      { title: 'How to tell it is fake', content: 'Red flags: the message comes from a random phone number (not a 5-digit short code), the link goes to a website that is NOT usps.com, ups.com, or fedex.com, it asks for a credit card to pay a "delivery fee" (real carriers do not charge redelivery fees via text), and it creates urgency ("respond within 24 hours or package will be returned").' },
+      { title: 'How to tell it is fake', content: 'Red flags: the message comes from a random phone number (not a 5-digit short code), the link goes to a website that is NOT usps.com, ups.com, or fedex.com, it asks for a credit card to pay a "delivery fee" (real carriers do not charge redelivery fees via text). And it creates urgency ("respond within 24 hours or package will be returned").' },
       { title: 'What to do instead', content: 'If you are expecting a package, go directly to the carrier website: usps.com, ups.com, or fedex.com. Enter your tracking number from your original order confirmation email. Never click links in unexpected delivery texts.', tip: 'Sign up for free tracking alerts directly from carriers: USPS Informed Delivery, UPS My Choice, and FedEx Delivery Manager. These are the only delivery notifications you should trust.' },
     ]
   },
@@ -8253,7 +8253,7 @@ For stronger privacy, do three things. Turn on Airplane Mode to disable all radi
     publishedAt: '2026-04-06',
     difficulty: 'Beginner',
     steps: [
-      { title: 'What is cloud storage', content: 'Cloud storage means your files are saved on a computer in a secure data center (not just on your device). This means: you can access your files from any device, your files are safe even if your phone or computer breaks, and you can share files with others easily. Think of it like a safety deposit box at a bank — your stuff is there whenever you need it.' },
+      { title: 'What is cloud storage', content: 'Cloud storage means your files are saved on a computer in a secure data center (not just on your device). This means: you can access your files from any device, your files are safe even if your phone or computer breaks. And you can share files with others easily. Think of it like a safety deposit box at a bank — your stuff is there whenever you need it.' },
       { title: 'Which cloud service should you use', content: 'Use the one that matches your devices: iPhone/iPad/Mac users — iCloud (5GB free, built into every Apple device). Android/Chrome users — Google Drive (15GB free, connected to Gmail). Windows users — OneDrive (5GB free, built into Windows). You can use more than one, but keeping it simple with one service is easiest.' },
       { title: 'How to check your storage', content: 'iCloud: Settings, your name, iCloud, Manage Storage. Google Drive: drive.google.com, click the storage bar at the bottom-left. OneDrive: Open OneDrive app or go to onedrive.com, click Settings, then Storage.' },
       { title: 'Free up space when you run out', content: 'Delete: old photos and videos (the biggest space hogs), email attachments you have already saved, old backups from devices you no longer own, and files in the trash (empty it to reclaim space). If you still need more, upgrade to a paid plan — typically $1-3/month for 50-200GB.' },
@@ -8589,7 +8589,7 @@ For stronger privacy, do three things. Turn on Airplane Mode to disable all radi
     steps: [
       {
         title: 'Why online safety matters for kids',
-        content: 'The internet is amazing for learning, but it also has risks for children.\n\nDangers parents should know about:\n- **Inappropriate content** — Violent or disturbing material that is easy to stumble upon\n- **Online predators** — Adults who contact children through games and social media\n- **Cyberbullying** — Bullying through messages or online games\n- **Oversharing** — Kids may share personal information without understanding the risks\n- **Too much screen time** — Excessive use can affect sleep and mental health\n\nEvery phone, tablet, and computer has built-in tools to help protect your children.'
+        content: 'The internet is amazing for learning. But it also has risks for children.\n\nDangers parents should know about:\n- **Inappropriate content** — Violent or disturbing material that is easy to stumble upon\n- **Online predators** — Adults who contact children through games and social media\n- **Cyberbullying** — Bullying through messages or online games\n- **Oversharing** — Kids may share personal information without understanding the risks\n- **Too much screen time** — Excessive use can affect sleep and mental health\n\nEvery phone, tablet, and computer has built-in tools to help protect your children.'
       },
       {
         title: 'Set up parental controls on iPhone and iPad',
@@ -8789,7 +8789,7 @@ For stronger privacy, do three things. Turn on Airplane Mode to disable all radi
     steps: [
       {
         title: 'What is DoorDash?',
-        content: 'DoorDash is one of the most popular food delivery apps in the United States. It lets you order from restaurants, fast food chains, and even convenience stores.\n\nHow it works:\n1. Pick a restaurant and choose your food on the app\n2. A "Dasher" (delivery driver) picks up your order\n3. The Dasher delivers it to your door\n4. You can watch the process on a map\n\nDoorDash charges a delivery fee, service fee, and you can add a tip. Prices may be slightly higher than ordering directly from the restaurant.'
+        content: 'DoorDash is one of the most popular food delivery apps in the United States. It lets you order from restaurants, fast food chains, and even convenience stores.\n\nHow it works:\n1. Pick a restaurant and choose your food on the app\n2. A "Dasher" (delivery driver) picks up your order\n3. The Dasher delivers it to your door\n4. You can watch the process on a map\n\nDoorDash charges a delivery fee, service fee. And you can add a tip. Prices may be slightly higher than ordering directly from the restaurant.'
       },
       {
         title: 'Set up the DoorDash app',
@@ -9067,7 +9067,7 @@ For stronger privacy, do three things. Turn on Airplane Mode to disable all radi
     { title: 'Subscribe to channels you like', content: 'If you find a creator whose videos you enjoy, tap the "Subscribe" button below the video. Subscribed channels will appear in your "Subscriptions" tab, making it easy to find their new videos. Subscribing is free.', tip: 'Some great YouTube channels for tech beginners: "Kevin Stratvert" for Windows, "9to5Mac" for Apple, and "AARP" for senior-focused tech tutorials.' },
     { title: 'Adjust playback speed and captions', content: 'Tap the gear icon on a video for settings. "Playback speed" lets you slow down (0.75x) or speed up (1.25x) the video. "Captions" turns on subtitles — extremely helpful if the speaker talks fast or has an accent.' },
   ] },
-  { slug: 'tiktok-safety-guide', title: 'How to Stay Safe on TikTok', excerpt: 'TikTok can be fun and informative, but it needs some privacy settings to stay safe.', category: 'social-media', tags: ['tiktok', 'safety', 'privacy', 'social'], readTime: '4 min', videoUrl: 'https://www.youtube.com/embed/4vQ4o9t5ND8', thumbnailEmoji: '🎵', publishedAt: '2026-04-08', difficulty: 'Beginner', steps: [
+  { slug: 'tiktok-safety-guide', title: 'How to Stay Safe on TikTok', excerpt: 'TikTok can be fun and informative. But it needs some privacy settings to stay safe.', category: 'social-media', tags: ['tiktok', 'safety', 'privacy', 'social'], readTime: '4 min', videoUrl: 'https://www.youtube.com/embed/4vQ4o9t5ND8', thumbnailEmoji: '🎵', publishedAt: '2026-04-08', difficulty: 'Beginner', steps: [
     { title: 'Set your account to private', content: 'Open TikTok > tap Profile (bottom right) > tap the three lines (top right) > Settings and Privacy > Privacy. Turn on "Private Account." Only people you approve as followers can see your videos. This is especially important for anyone who does not want strangers viewing their content.' },
     { title: 'Control who can interact with you', content: 'In Settings > Privacy: set "Who can comment on your videos" to "Friends" or "No one." Set "Who can send you direct messages" to "Friends" or "No one." Set "Who can duet/stitch with your videos" to "Friends." This prevents unwanted contact from strangers.' },
     { title: 'Be careful what you share', content: 'Never share: your home address or neighborhood landmarks, your daily routine or schedule, financial information, personal identification details. Even with a private account, approved followers can screenshot or screen-record your videos.' },
@@ -9748,7 +9748,7 @@ For stronger privacy, do three things. Turn on Airplane Mode to disable all radi
     { title: 'Getting started', content: 'Buy a Raspberry Pi kit ($50-80 with case, power supply, and SD card). Download Raspberry Pi Imager on your computer. Flash the operating system to the SD card. Boot it up and follow the setup wizard.' },
   ] },
   { slug: 'understanding-cryptocurrency', title: 'What Is Cryptocurrency: A Plain English Guide', excerpt: 'Bitcoin, Ethereum, and crypto explained in terms anyone can understand.', category: 'essential-skills', tags: ['cryptocurrency', 'bitcoin', 'blockchain', 'finance'], readTime: '7 min', thumbnailEmoji: '💰', publishedAt: '2026-04-02', difficulty: 'Advanced', steps: [
-    { title: 'What cryptocurrency is', content: 'Digital money that exists only on computers. No physical coins or bills. It uses encryption (cryptography) to secure transactions, and it operates without a bank or government controlling it.' },
+    { title: 'What cryptocurrency is', content: 'Digital money that exists only on computers. No physical coins or bills. It uses encryption (cryptography) to secure transactions. And it operates without a bank or government controlling it.' },
     { title: 'How it works', content: 'Transactions are recorded on a "blockchain" — a public digital ledger that everyone can see but no one can change. Think of it as a shared spreadsheet that thousands of computers verify simultaneously.' },
     { title: 'Bitcoin vs Ethereum', content: 'Bitcoin was the first cryptocurrency (2009), used mainly as digital money. Ethereum is a newer platform that can run "smart contracts" — automated programs on the blockchain.' },
     { title: 'Risks to understand', content: 'Prices are extremely volatile (Bitcoin has dropped 50%+ multiple times). There is no FDIC insurance. If you lose your password/wallet, your money may be gone forever. Scams are rampant.' },
@@ -9977,7 +9977,7 @@ For stronger privacy, do three things. Turn on Airplane Mode to disable all radi
     { title: 'Get started with Xbox Cloud Gaming', content: 'Subscribe to Xbox Game Pass Ultimate. Visit xbox.com/play in a browser, or download the Xbox app on your device. Sign in and start playing from a library of hundreds of games.' },
     { title: 'Get started with GeForce NOW', content: 'Create a free NVIDIA account at play.geforcenow.com. The free tier lets you play for 1 hour at a time. Connect your Steam or Epic Games library to play games you already own.' },
     { title: 'Tips for best performance', content: 'Use a wired ethernet connection when possible. Close other apps using bandwidth. Sit close to your Wi-Fi router. A 5 GHz Wi-Fi connection is better than 2.4 GHz for gaming.' },
-    { title: 'Is it right for you?', content: `Cloud gaming is perfect for casual gamers who don't want to spend $300-$500 on a console. The tradeoff: you need fast internet, and there can be slight input delay compared to local gaming.` },
+    { title: 'Is it right for you?', content: `Cloud gaming is perfect for casual gamers who don't want to spend $300-$500 on a console. The tradeoff: you need fast internet. And there can be slight input delay compared to local gaming.` },
   ] },
   { slug: '3d-printing-beginners', title: '3D Printing for Beginners', excerpt: 'What 3D printing is, how it works, and how you can get started with this exciting technology.', category: 'how-to', tags: ['3d-printing', 'technology', 'maker', 'creative', 'advanced'], readTime: '8 min', thumbnailEmoji: '🖨️', publishedAt: '2026-04-02', difficulty: 'Advanced', steps: [
     { title: 'What is 3D printing?', content: 'A 3D printer creates physical objects by laying down thin layers of material (usually plastic) one on top of another. Think of it like building something layer by layer, following a digital blueprint.' },
@@ -10168,7 +10168,7 @@ For stronger privacy, do three things. Turn on Airplane Mode to disable all radi
     { title: 'Mute conversations', content: 'Getting too many notifications from a group chat? Swipe left on the conversation (iPhone) or long-press (Android) and select Mute or Hide Alerts. You still receive messages but no notifications.' },
   ] },
   { slug: 'email-basics-guide', title: 'Email for Complete Beginners', excerpt: 'Everything you need to know about email: sending, receiving, attachments, and staying safe.', category: 'essential-skills', tags: ['email', 'gmail', 'outlook', 'beginner', 'communication'], readTime: '8 min', thumbnailEmoji: '📧', publishedAt: '2026-04-02', difficulty: 'Beginner', videoUrl: 'https://www.youtube.com/embed/CtRgwJaW2N4', steps: [
-    { title: 'What is email?', content: `Email (electronic mail) is like sending a letter instantly over the internet. It's free, arrives in seconds, and you can attach photos, documents, and other files. You need an email address to send and receive.` },
+    { title: 'What is email?', content: `Email (electronic mail) is like sending a letter instantly over the internet. It's free, arrives in seconds. And you can attach photos, documents, and other files. You need an email address to send and receive.` },
     { title: 'Get a free email account', content: 'Gmail (by Google) and Outlook (by Microsoft) are the most popular free email services. Visit gmail.com or outlook.com to create an account. Choose an address like yourname@gmail.com.' },
     { title: 'Send an email', content: `Click Compose (Gmail) or New Mail (Outlook). Enter the recipient's email address in the To field. Add a Subject line describing your message. Type your message in the body. Click Send.` },
     { title: 'Read and reply to emails', content: 'Click an email in your inbox to read it. Click Reply to respond to the sender. Click Reply All to respond to everyone on the email. Click Forward to send it to someone new.' },
@@ -10624,7 +10624,7 @@ For stronger privacy, do three things. Turn on Airplane Mode to disable all radi
 
   // ── Batch 31: Social Media In Depth ────────────────────────────────────────
   { slug: 'tiktok-beginners-guide', title: 'How to Use TikTok', excerpt: 'Browse, create, and share short videos on the most popular social media platform.', category: 'social-media', tags: ['tiktok', 'social-media', 'video', 'entertainment'], readTime: '7 min', thumbnailEmoji: '🎵', publishedAt: '2026-04-02', difficulty: 'Beginner', steps: [
-    { title: 'Download and sign up', content: 'Get TikTok from your app store. Sign up with your email, phone, or Google/Apple account. You can browse without an account, but you need one to like, comment, and create videos.' },
+    { title: 'Download and sign up', content: 'Get TikTok from your app store. Sign up with your email, phone, or Google/Apple account. You can browse without an account. But you need one to like, comment, and create videos.' },
     { title: 'Browse the For You page', content: 'The main feed shows recommended videos. Scroll. TikTok learns what you like and shows you more of it. Swipe up for the next video. Tap the heart to like, speech bubble to comment.' },
     { title: 'Follow creators', content: `Tap a creator's profile picture to visit their page. Tap Follow. Their new videos appear in your Following feed. Follow topics you enjoy: cooking, gardening, history, pets, news.` },
     { title: 'Create a video', content: 'Tap the + button at the bottom. Record by holding the red button (up to 10 minutes). Add text, music, filters, and effects. Write a caption. Tap Post. Your video is live.' },
@@ -11760,7 +11760,7 @@ For stronger privacy, do three things. Turn on Airplane Mode to disable all radi
       { title: 'Enter your destination', content: 'Open the app and type where you want to go in the "Where to?" box at the top. Select the correct address from the suggestions that appear.' },
       { title: 'Choose your ride type and confirm', content: 'Uber will show you different ride options (like UberX for a regular car or Comfort for a nicer car) and the estimated price. Pick the one you want and tap "Confirm" to request the ride.' },
       { title: 'Meet your driver', content: `The app will show your driver's name, car type, color, and license plate number. Wait at your pickup spot. When the car arrives, confirm the driver's name before getting in.`, warning: `Always check the license plate and driver's name before getting in the car. Never get into a car that does not match what the app shows.` },
-      { title: 'Rate your ride', content: 'After you arrive, the app will ask you to rate your driver with stars (1-5). Payment is charged automatically to your card — no tipping is required, but you can add a tip in the app if you want.' },
+      { title: 'Rate your ride', content: 'After you arrive, the app will ask you to rate your driver with stars (1-5). Payment is charged automatically to your card — no tipping is required. But you can add a tip in the app if you want.' },
     ]
   },
   {

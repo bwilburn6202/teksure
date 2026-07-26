@@ -113,7 +113,7 @@ Mixbook ships anywhere in the United States, and most standard-quality orders ar
 
 Blue Apron meals are designed for home cooks of all experience levels. Most recipes take between 30 and 50 minutes to prepare and are labeled with a difficulty level. Meals range from classic American dishes like burgers and pasta to globally inspired recipes like tacos, stir-fries, and curries.
 
-Plans start at around $10 to $13 per serving depending on the number of meals you choose each week. A typical plan for two people with three meals per week costs roughly $60 to $80 per week including shipping. While this is more expensive per meal than cooking entirely from scratch, many people find it saves money compared to ordering takeout or eating at restaurants, and it eliminates food waste because every ingredient is measured for the recipe.
+Plans start at around $10 to $13 per serving depending on the number of meals you choose each week. A typical plan for two people with three meals per week costs roughly $60 to $80 per week including shipping. While this is more expensive per meal than cooking entirely from scratch, many people find it saves money compared to ordering takeout or eating at restaurants. And it eliminates food waste because every ingredient is measured for the recipe.
 
 You sign up for a weekly subscription but you are not locked in. You can skip any week you do not want a delivery — for example, if you are traveling or have a busy schedule — or pause your subscription entirely. Changes need to be made by a certain cutoff time each week, usually five to six days before the delivery date, so plan ahead.
 
@@ -158,7 +158,7 @@ Blue Apron ships to most areas in the continental United States. Delivery days v
     thumbnailEmoji: ``,
     publishedAt: `2026-04-20`,
     difficulty: `Beginner`,
-    body: `An absentee ballot — also called a mail-in ballot — lets you vote in an election without going to a polling place in person. Instead, your ballot is mailed to your home, you fill it out, and you send it back by mail or drop it off at an official drop box or election office.
+    body: `An absentee ballot — also called a mail-in ballot — lets you vote in an election without going to a polling place in person. Instead, your ballot is mailed to your home, you fill it out. And you send it back by mail or drop it off at an official drop box or election office.
 
 Most states now allow any registered voter to request an absentee ballot for any reason. A few states require you to provide a reason (such as illness, disability, or travel), but the majority of states have no-excuse absentee voting. Some states, like Oregon, Washington, and Colorado, automatically send a mail-in ballot to every registered voter without you needing to request one.
 
@@ -210,7 +210,7 @@ Always use official government websites when requesting a ballot online. The cor
     difficulty: `Beginner`,
     body: `Petfinder is the largest online database of adoptable pets in the United States. The website and app bring together listings from more than 11,000 animal shelters and rescue groups across the country. Instead of calling shelter after shelter, you can search Petfinder to see which pets are available near you, filter by species, breed, age, and size, and contact a shelter directly through the site.
 
-Petfinder is completely free to use. The shelters pay nothing to list their animals, and you pay nothing to search. Adoption fees charged by the individual shelters — which typically range from $25 to $150 depending on the organization — go directly to the shelter to cover the cost of veterinary care, vaccines, and spay or neuter surgery.
+Petfinder is completely free to use. The shelters pay nothing to list their animals. And you pay nothing to search. Adoption fees charged by the individual shelters — which typically range from $25 to $150 depending on the organization — go directly to the shelter to cover the cost of veterinary care, vaccines, and spay or neuter surgery.
 
 Each pet's listing on Petfinder includes photos, a description written by the shelter, information about the animal's age, sex, and size, and notes about the pet's personality and whether it gets along with children, other dogs, or other cats. Many listings also note whether the pet is already vaccinated, spayed or neutered, and microchipped.
 
@@ -224,7 +224,7 @@ You can use Petfinder at petfinder.com on any computer, or download the free Pet
       },
       {
         title: `Enter your location and choose a pet type`,
-        content: `On the homepage, type your zip code into the location box. Then choose the type of animal you are looking for — dog, cat, rabbit, bird, or others. Click "Search" to see a list of available pets near you. By default, Petfinder searches within 25 miles of your location, but you can expand that distance in the filters if you want to see more results.`,
+        content: `On the homepage, type your zip code into the location box. Then choose the type of animal you are looking for — dog, cat, rabbit, bird, or others. Click "Search" to see a list of available pets near you. By default, Petfinder searches within 25 miles of your location. But you can expand that distance in the filters if you want to see more results.`,
         tip: `Quick Tip: If you live in a rural area, expanding the search radius to 50 or 100 miles will show a lot more adoptable pets.`,
       },
       {
@@ -302,7 +302,7 @@ The app has a database of more than 33 million foods, including items from major
 
 In addition to calories, Lose It! tracks protein, carbohydrates, fat, fiber, sodium, and other nutrients if you are interested in that level of detail. You can also log water intake, exercise, and body measurements. The free version of the app includes all the core tracking features. A premium paid tier adds more detailed nutrition analysis, meal planning, and additional insights, but many people find the free version is everything they need.
 
-Lose It! works well for people who like to see concrete numbers. If you know what you are eating relative to your budget, it becomes easier to make adjustments without guessing. The app is not a replacement for professional dietary advice, but it is a useful tool for building self-awareness around your eating habits.
+Lose It! works well for people who like to see concrete numbers. If you know what you are eating relative to your budget, it becomes easier to make adjustments without guessing. The app is not a replacement for professional dietary advice. But it is a useful tool for building self-awareness around your eating habits.
 
 The app is available at loseit.com and in the App Store and Google Play Store.`,
     steps: [
@@ -346,7 +346,7 @@ The Tasty app has thousands of recipes organized into categories like "Quick & E
 
 Each recipe page shows you the full ingredient list, the number of servings, the estimated prep time and cook time, and a written version of the step-by-step instructions below the video. You can scale the recipe up or down — for example, if a recipe serves four but you are cooking for two, tap "2 servings" and the ingredient amounts will adjust automatically.
 
-The app is free to download and free to use. There is no subscription required to access the recipes or videos. Tasty is available for iPhone and Android, and you can also access recipes through the Tasty website at tasty.co.
+The app is free to download and free to use. There is no subscription required to access the recipes or videos. Tasty is available for iPhone and Android. And you can also access recipes through the Tasty website at tasty.co.
 
 Tasty is a good starting point for anyone who wants to cook more at home but does not know where to begin.`,
     steps: [
@@ -495,7 +495,7 @@ Claims can be filed online at asurion.com, through the MyAsurion app, or by call
       {
         title: `Choose a repair or replacement option`,
         content: `Based on your claim type, Asurion will present your options. For cracked screens or some hardware repairs, same-day or next-day repair through an Asurion-certified repair shop may be available. For lost or stolen phones, or phones that cannot be repaired, Asurion will offer a replacement device shipped overnight. Review the deductible for each option before confirming.`,
-        warning: `Replacement devices are often certified refurbished, not brand new. Asurion guarantees they meet manufacturer standards, but they may show minor cosmetic wear. If you receive a replacement that does not work properly, you can report the issue to Asurion within a set window — usually 30 days.`,
+        warning: `Replacement devices are often certified refurbished, not brand new. Asurion guarantees they meet manufacturer standards. But they may show minor cosmetic wear. If you receive a replacement that does not work properly, you can report the issue to Asurion within a set window — usually 30 days.`,
       },
       {
         title: `Pay the deductible and confirm the claim`,
@@ -695,7 +695,7 @@ The Google Voice app is free and available in the App Store and Google Play Stor
     difficulty: `Beginner`,
     body: `Visible is a wireless phone carrier owned by Verizon. It operates entirely online — there are no retail stores, no paper contracts, and no lengthy customer service phone queues. Everything from signing up to managing your account is done through the Visible app on your phone or through visible.com.
 
-Visible offers unlimited calling, texting, and data for a flat monthly fee. As of 2026, the standard Visible plan starts around $25 per month for new customers, though pricing can vary with promotions. The "Visible+" plan, which uses Verizon's premium 5G network and includes some additional perks, costs more — around $45 per month. Both plans are month-to-month with no annual commitment, and there are no overage charges.
+Visible offers unlimited calling, texting, and data for a flat monthly fee. As of 2026, the standard Visible plan starts around $25 per month for new customers, though pricing can vary with promotions. The "Visible+" plan, which uses Verizon's premium 5G network and includes some additional perks, costs more — around $45 per month. Both plans are month-to-month with no annual commitment. And there are no overage charges.
 
 Because Visible runs on Verizon's network, coverage is strong across most of the continental United States, including suburban and rural areas. Visible devices support 5G where available.
 
@@ -870,7 +870,7 @@ Voter registration is free. You should never have to pay to register to vote. If
     thumbnailEmoji: ``,
     publishedAt: `2026-04-20`,
     difficulty: `Beginner`,
-    body: `Voting by mail — using what is called a mail-in ballot or absentee ballot — allows you to cast your vote without going to a polling place on Election Day. Instead, your ballot is mailed to your home ahead of the election, you fill it out at your own pace, and you return it either through the mail or by dropping it off at an official location.
+    body: `Voting by mail — using what is called a mail-in ballot or absentee ballot — allows you to cast your vote without going to a polling place on Election Day. Instead, your ballot is mailed to your home ahead of the election, you fill it out at your own pace. And you return it either through the mail or by dropping it off at an official location.
 
 All 50 states and the District of Columbia allow some form of mail-in voting. Most states now allow any registered voter to request a mail-in ballot for any reason. A few states require you to give a reason (such as illness, a disability, or planned travel), and states like Oregon, Washington, and Colorado automatically mail a ballot to every registered voter without you needing to request one.
 

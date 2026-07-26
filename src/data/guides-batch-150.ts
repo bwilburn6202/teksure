@@ -112,7 +112,7 @@ This is particularly helpful when your eyes are tired, when you want to listen w
 
 On iPhones, the feature is called **Speak Screen** and **Speak Selection**. On Android phones, it is called **Select to Speak** and **TalkBack** (though TalkBack is for users who are fully blind — Speak Screen and Select to Speak are lighter options that read specific content on request).
 
-Neither feature changes how your phone looks or works for other people who use it. You turn them on, use them when you want, and they stay quietly in the background otherwise.
+Neither feature changes how your phone looks or works for other people who use it. You turn them on, use them when you want. And they stay quietly in the background otherwise.
 
 **Adjusting the voice and speed**
 
@@ -191,7 +191,7 @@ This feature is called **Medical ID** on iPhones and **Emergency Information** (
 
 **Who should set this up**
 
-Anyone can benefit, but it is especially valuable for people who:
+Anyone can benefit. But it is especially valuable for people who:
 - Take multiple prescription medications
 - Have known allergies (especially to medications or latex)
 - Have conditions that affect treatment decisions (diabetes, heart conditions, seizure disorders, bleeding disorders, kidney disease)
@@ -295,7 +295,7 @@ An ad blocker handles the first category. Revoking notification permission handl
 
 An ad blocker is a free browser extension (a small add-on program) that runs quietly in your browser and prevents most ads and pop-ups from loading at all. The most widely trusted free ad blocker is called uBlock Origin — it works in Chrome, Edge, and Firefox on computers. For Safari on iPhone and Mac, the equivalent is called AdGuard. Both are free, maintained by reputable developers, and do not collect your data.
 
-An ad blocker does not block everything — some websites ask you to turn it off to access their content, and you can choose to do so. You can also add websites to a whitelist (an exceptions list) if you want to support a site by letting its ads show.
+An ad blocker does not block everything — some websites ask you to turn it off to access their content. And you can choose to do so. You can also add websites to a whitelist (an exceptions list) if you want to support a site by letting its ads show.
 
 Sources: FTC.gov Tech Support Scams (https://consumer.ftc.gov/articles/tech-support-scams), CISA Phishing Guidance (https://www.cisa.gov/phishing), How-To Geek on uBlock Origin (https://www.howtogeek.com/675095/use-ublock-origin-to-browse-safer/), Apple Support Safari Extensions (https://support.apple.com/en-us/105118).`,
     steps: [

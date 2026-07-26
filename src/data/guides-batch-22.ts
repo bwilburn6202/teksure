@@ -508,7 +508,7 @@ export const guidesBatch22: Guide[] = [
       },
       {
         title: 'Correct words autocorrect changed in the past',
-        content: `If your iPhone keeps autocorrecting a word that you type correctly, there's a fix: go to Settings > General > Transfer or Reset iPhone > Reset > Reset Keyboard Dictionary. This clears all the learned corrections and word history. You'll need to re-teach it your preferred spellings, but it stops persistent wrong corrections.`,
+        content: `If your iPhone keeps autocorrecting a word that you type correctly, there's a fix: go to Settings > General > Transfer or Reset iPhone > Reset > Reset Keyboard Dictionary. This clears all the learned corrections and word history. You'll need to re-teach it your preferred spellings. But it stops persistent wrong corrections.`,
       },
     ],
   },

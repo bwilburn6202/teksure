@@ -53,7 +53,7 @@ export const guidesExpansion: Guide[] = [
     difficulty: 'Beginner',
     body: `Your Social Security account is one of the most important government accounts you can have online. It lets you view your Social Security statement, check your estimated future benefits, request a replacement Social Security card, and manage your payments if you are already receiving benefits — all without making a phone call or visiting an office.
 
-The Social Security Administration (SSA) offers a free online account at ssa.gov. Setting it up takes about 10 to 15 minutes, and you will need to verify your identity. Here is what you need before you start: your Social Security number, a valid email address, a U.S. mailing address, and a phone number that can receive text messages or calls.
+The Social Security Administration (SSA) offers a free online account at ssa.gov. Setting it up takes about 10 to 15 minutes. And you will need to verify your identity. Here is what you need before you start: your Social Security number, a valid email address, a U.S. mailing address, and a phone number that can receive text messages or calls.
 
 To get started, open your web browser and go to ssa.gov. Look for the button that says "Sign in / Up" or "my Social Security" near the top of the page. Click "Create an Account." You will be asked to create a Login.gov account first — this is the government's secure login system used across many federal websites. You will enter your email address, create a strong password, and then verify your identity.
 
@@ -239,7 +239,7 @@ Even if you think you are registered, check before every major election. Voter r
     difficulty: 'Intermediate',
     body: `The U.S. Department of State now allows eligible Americans to renew their passports entirely online. This is faster than the paper form process and eliminates the need to mail your current passport. Processing times for online renewals are typically 4 to 6 weeks for routine processing.
 
-You are eligible if: your most recent passport was issued when you were 16 or older, was issued within the last 15 years, is not damaged, and you are not changing your name (or changed it less than a year ago with legal documentation).
+You are eligible if: your most recent passport was issued when you were 16 or older, was issued within the last 15 years, is not damaged. And you are not changing your name (or changed it less than a year ago with legal documentation).
 
 Go to travel.state.gov and navigate to the passport renewal section. Create a Login.gov account if you do not already have one. Have your current passport nearby, as you will need the information from it.
 
@@ -416,7 +416,7 @@ Many state DMV websites have a document checker tool — enter what documents yo
     difficulty: 'Intermediate',
     body: `If you lost your job through no fault of your own (layoff, company closure, reduction in hours), you may be eligible for unemployment insurance. The program provides temporary financial help while you look for new work. It is run by each state, so application processes and benefit amounts vary.
 
-You may qualify if: you lost your job through no fault of your own, you worked for a certain period and earned a minimum amount (your state sets the requirements), and you are able and actively looking for work.
+You may qualify if: you lost your job through no fault of your own, you worked for a certain period and earned a minimum amount (your state sets the requirements). And you are able and actively looking for work.
 
 To apply, file a claim through your state's unemployment website. Search "[your state] unemployment benefits" or go to careeronestop.org for links to every state's system.
 
@@ -1791,7 +1791,7 @@ Option 1: Mute the conversation (recommended first step). This keeps you in the 
 
 Option 2: Leave the group. On iPhone (iMessage groups with 3+ people): tap the group name → "Leave this Conversation." Note: this sends a notification to the group saying you left. On Android: this depends on the app. In Google Messages, you cannot leave a group SMS/MMS — you can only mute it. In apps like WhatsApp, tap the group name → "Exit Group."
 
-If you want to be polite about leaving: send a brief message first. Something like "Thanks for including me! I need to step away from this group for now, but I am always reachable by regular text. Talk soon!" Then leave. Most people understand — and most have wanted to leave a group chat themselves at some point.
+If you want to be polite about leaving: send a brief message first. Something like "Thanks for including me! I need to step away from this group for now. But I am always reachable by regular text. Talk soon!" Then leave. Most people understand — and most have wanted to leave a group chat themselves at some point.
 
 Option 3: If you do not want to leave entirely but the notifications are too much, ask the group to be less active. Or suggest moving to a platform with better notification controls, like a group in WhatsApp where you can read at your own pace.`,
     steps: [
@@ -2006,7 +2006,7 @@ On Android: go to Settings → Connected Devices → Pair New Device. Put your h
 
 Many hearing aid manufacturers also have companion apps (Phonak myPhonak, Oticon ON, ReSound Smart 3D) that offer additional controls: adjusting bass and treble, creating custom listening programs for different environments, and locating lost hearing aids.
 
-If you have trouble pairing, make sure your hearing aids have fresh batteries (or are charged), your phone's Bluetooth is turned on, and you are within 3 feet of your phone during pairing.`,
+If you have trouble pairing, make sure your hearing aids have fresh batteries (or are charged), your phone's Bluetooth is turned on. And you are within 3 feet of your phone during pairing.`,
     steps: [
       { title: 'Check Bluetooth compatibility', content: `Verify your hearing aids support Bluetooth. Check the manufacturer's website or ask your audiologist.` },
       { title: 'Put hearing aids in pairing mode', content: `Open and close the battery door, or follow your hearing aid's specific pairing instructions. The hearing aids are ready to connect.` },
@@ -2189,7 +2189,7 @@ Check for software updates: Settings → System → Software Update. Installing 
     thumbnailEmoji: '',
     publishedAt: '2026-04-15',
     difficulty: 'Intermediate',
-    body: `Getting a new computer is exciting, but you need to bring your files, photos, and documents along. Here are the most reliable ways to transfer your data.
+    body: `Getting a new computer is exciting. But you need to bring your files, photos, and documents along. Here are the most reliable ways to transfer your data.
 
 For Windows to Windows: use an external hard drive or USB flash drive. On your old computer, copy your important folders (Documents, Pictures, Music, Desktop, and Downloads) to the external drive. Plug the drive into your new computer and copy the folders to the same locations. For a more automated approach, use Microsoft's OneDrive — sign in to OneDrive on your old computer, let it sync your files to the cloud, then sign in on your new computer and your files download automatically.
 
@@ -2713,7 +2713,7 @@ After completing your return, review every number. Choose direct deposit for the
     thumbnailEmoji: '',
     publishedAt: '2026-04-15',
     difficulty: 'Beginner',
-    body: `Connecting Spotify to your smart speaker lets you play any song, album, playlist, or podcast using voice commands. This works with both Amazon Echo and Google Home speakers, and you can set Spotify as your default music service.
+    body: `Connecting Spotify to your smart speaker lets you play any song, album, playlist, or podcast using voice commands. This works with both Amazon Echo and Google Home speakers. And you can set Spotify as your default music service.
 
 For Amazon Echo: open the Alexa app → More → Settings → Music & Podcasts → Link New Service → Spotify. Sign in with your Spotify account. Then tap "Default Services" and set Spotify as the default. Now "Alexa, play jazz" automatically uses Spotify.
 
@@ -2804,7 +2804,7 @@ You can also check whether you qualify for any property tax exemptions. Many sta
     thumbnailEmoji: '',
     publishedAt: '2026-04-15',
     difficulty: 'Beginner',
-    body: `The Social Security Administration offers a free retirement estimator tool that shows you about how much you will receive in monthly Social Security benefits based on your actual earnings record. This is one of the most useful planning tools available, and it takes less than five minutes to use.
+    body: `The Social Security Administration offers a free retirement estimator tool that shows you about how much you will receive in monthly Social Security benefits based on your actual earnings record. This is one of the most useful planning tools available. And it takes less than five minutes to use.
 
 The estimator uses your real work history — every job where Social Security taxes were withheld — to calculate your benefit amount. It shows you estimates at three key ages: 62 (the earliest you can start collecting), your full retirement age (66 or 67, depending on when you were born), and 70 (when your benefit maxes out).
 
@@ -2978,7 +2978,7 @@ The free version of Teams supports meetings with up to 100 participants for up t
     difficulty: 'Beginner',
     body: `Sending a photo through a text message is one of the most common things people do with their phones. Whether it is a picture of the grandkids, a receipt you need to share, or a photo of your garden, the process works the same way on both iPhone and Android.
 
-When you send a photo through a text message, your phone uses MMS (Multimedia Messaging Service) instead of regular SMS. This happens automatically — you do not need to change any settings. The photo gets compressed slightly to fit through the messaging system, but it is still good enough for viewing on a phone screen.
+When you send a photo through a text message, your phone uses MMS (Multimedia Messaging Service) instead of regular SMS. This happens automatically — you do not need to change any settings. The photo gets compressed slightly to fit through the messaging system. But it is still good enough for viewing on a phone screen.
 
 On iPhone: Open the Messages app and tap the conversation with the person you want to send the photo to (or start a new message). Tap the plus sign (+) to the left of the text field. You will see options including "Photos," "Camera," and others. Tap "Photos" to choose a photo from your library, or tap "Camera" to take a new photo right now. Select the photo you want to send — it appears in the message field. Add a text caption if you want, then tap the blue send arrow.
 
@@ -3212,7 +3212,7 @@ If force restart does not work and your phone is completely unresponsive, let th
     thumbnailEmoji: '',
     publishedAt: '2026-04-15',
     difficulty: 'Beginner',
-    body: `When your phone runs out of storage, things start going wrong: you cannot take photos, apps crash, updates fail, and everything slows down. Fortunately, freeing up space is something you can do yourself, and you do not need to delete everything — a targeted cleanup usually recovers a surprising amount of space.
+    body: `When your phone runs out of storage, things start going wrong: you cannot take photos, apps crash, updates fail, and everything slows down. Fortunately, freeing up space is something you can do yourself. And you do not need to delete everything — a targeted cleanup usually recovers a surprising amount of space.
 
 First, check how much storage you are using. On iPhone: Settings then General then iPhone Storage. This shows a bar chart of what is using your space (Apps, Photos, Messages, System, etc.) and a list of apps sorted by size. On Android: Settings then Storage (or Settings then Battery and Device Care then Storage on Samsung). You will see a breakdown of what is taking up space.
 
@@ -3305,7 +3305,7 @@ Lower brightness saves battery. If you are trying to make your phone or laptop l
     thumbnailEmoji: '',
     publishedAt: '2026-04-15',
     difficulty: 'Beginner',
-    body: `Connecting to WiFi is one of the first things you do with any device. WiFi lets you use the internet without using your cellular data, and it is available in homes, coffee shops, libraries, airports, and many other places.
+    body: `Connecting to WiFi is one of the first things you do with any device. WiFi lets you use the internet without using your cellular data. And it is available in homes, coffee shops, libraries, airports, and many other places.
 
 To connect, you need the name of the WiFi network (sometimes called the SSID) and the password. At home, these are usually on a sticker on the back or bottom of your router. In public places, ask staff for the WiFi name and password, or look for a sign.
 
@@ -3411,7 +3411,7 @@ Google Maps also works offline — handy for areas with poor cell service. Befor
     thumbnailEmoji: '',
     publishedAt: '2026-04-15',
     difficulty: 'Beginner',
-    body: `Uber and Lyft are ride-hailing apps that let you request a car and driver to take you somewhere — like a taxi, but you request and pay for it through your phone. Both apps work very similarly, so once you know one, you know the other.
+    body: `Uber and Lyft are ride-hailing apps that let you request a car and driver to take you somewhere — like a taxi. But you request and pay for it through your phone. Both apps work very similarly, so once you know one, you know the other.
 
 To get started, download the Uber or Lyft app from the App Store (iPhone) or Google Play Store (Android). Create an account with your name, phone number, and email address. You will also need to add a payment method: a credit card, debit card, or connect a service like PayPal or Apple Pay. The app charges automatically — you never need cash.
 
@@ -3661,7 +3661,7 @@ The most common way to set up voicemail is through the Phone app. Open the Phone
 
 The setup process typically asks you to create a PIN (4 to 6 digits) and record a greeting. For the PIN, choose something you will remember — you need it to check voicemail from another phone. For the greeting, you can use the default (an automated voice says your number) or record a custom greeting.
 
-For a custom greeting, the system prompts you to record after a beep. Say something like: "Hi, you have reached [your name]. I am not available right now. Please leave your name, number, and a brief message, and I will get back to you." Press the pound key (#) or follow the prompts to save your recording.
+For a custom greeting, the system prompts you to record after a beep. Say something like: "Hi, you have reached [your name]. I am not available right now. Please leave your name, number, and a brief message. And I will get back to you." Press the pound key (#) or follow the prompts to save your recording.
 
 On newer Android phones, you may have Visual Voicemail. This shows your voicemails as a list in the Phone app, similar to how iPhone does it. To check if your phone supports it, open the Phone app and look for a "Voicemail" tab at the bottom. If it is there, tap it to see your messages in a list. If not, press and hold 1 to call into your voicemail the traditional way.
 
@@ -3865,7 +3865,7 @@ To edit a contact later: find them in your Contacts, tap their name, then tap "E
 
 What makes a password strong: length is the single most important factor. A 16-character password is exponentially harder to crack than an 8-character one. The password should also include a mix of uppercase and lowercase letters, numbers, and special characters. And it should be unique — never reuse the same password on multiple accounts.
 
-The passphrase method: one of the best approaches is to create a passphrase — a string of random words that create a mental image. For example: "purple-giraffe-eats-tacos-42" is 28 characters long, includes letters, a number, and special characters, and you can picture it in your head. Pick four to five unrelated words, add a number and a special character, and you have a strong password.
+The passphrase method: one of the best approaches is to create a passphrase — a string of random words that create a mental image. For example: "purple-giraffe-eats-tacos-42" is 28 characters long, includes letters, a number, and special characters. And you can picture it in your head. Pick four to five unrelated words, add a number and a special character. And you have a strong password.
 
 Another method: take a sentence you will remember and use the first letter of each word. "My daughter Sarah was born in Portland in 1998!" becomes "MdSwbiPi1998!" — 13 characters with uppercase, lowercase, numbers, and a special character.
 
@@ -4102,7 +4102,7 @@ Set your phone to lock automatically after a short idle period: iPhone: Settings
 
 The key requirement is a wireless printer. Most printers made in the last 5 to 10 years support wireless printing. Your phone and printer need to be on the same WiFi network.
 
-On iPhone (AirPrint): Apple's built-in printing system is called AirPrint, and it works with most modern wireless printers. Find the document, photo, or web page you want to print. Tap the share button (the square with an upward arrow). Scroll down in the share menu and tap "Print." Your phone searches for printers on your network. Tap "Select Printer" and choose your printer from the list. Adjust options like number of copies and page range if available. Tap "Print."
+On iPhone (AirPrint): Apple's built-in printing system is called AirPrint. And it works with most modern wireless printers. Find the document, photo, or web page you want to print. Tap the share button (the square with an upward arrow). Scroll down in the share menu and tap "Print." Your phone searches for printers on your network. Tap "Select Printer" and choose your printer from the list. Adjust options like number of copies and page range if available. Tap "Print."
 
 On Android: Open the document, photo, or web page. Tap the three-dot menu (or the share button) and look for "Print." If you do not see it, tap "Share" and then look for "Print." Your phone searches for printers on your network. Select your printer, adjust settings, and tap the print button. If your printer does not appear, you may need to install your printer manufacturer's app (like HP Smart, Canon PRINT, or Epson iPrint) from the Google Play Store.
 
@@ -4166,7 +4166,7 @@ You can only connect to one Bluetooth speaker at a time (unless your speaker or 
     difficulty: 'Beginner',
     body: `Voice typing (also called dictation) lets you talk instead of type. Your phone or computer converts your spoken words into text in real time. It works in text messages, emails, search bars, notes apps, documents — anywhere you would normally type.
 
-Voice typing has gotten remarkably accurate in recent years, and it is built into every modern device. It is faster than typing for many people, and it is a great accessibility feature for anyone with difficulty using a keyboard.
+Voice typing has gotten remarkably accurate in recent years. And it is built into every modern device. It is faster than typing for many people. And it is a great accessibility feature for anyone with difficulty using a keyboard.
 
 On iPhone: whenever the keyboard is showing, look for the microphone icon at the bottom of the keyboard (near the space bar). Tap it. Start speaking, and your words appear as text. Speak punctuation out loud: say "period," "comma," "question mark," "exclamation point," or "new line" and the phone types those characters. Tap the microphone icon again to stop dictation.
 
@@ -4211,7 +4211,7 @@ You can also use the official app for your email provider. Microsoft Outlook has
 
 After setting up, you will receive push notifications when new emails arrive (you can turn these off or customize them in your notification settings). Your email syncs automatically — messages you read on your phone are marked as read on your computer too, and messages you send from your phone appear in your Sent folder everywhere.
 
-If you have multiple email accounts, you can add them all to the same app. The Mail app (iPhone) and Gmail app (Android) both support multiple accounts, and you can switch between them by tapping the account selector at the top of the inbox.`,
+If you have multiple email accounts, you can add them all to the same app. The Mail app (iPhone) and Gmail app (Android) both support multiple accounts. And you can switch between them by tapping the account selector at the top of the inbox.`,
     steps: [
       { title: 'iPhone: Go to Mail settings', content: 'Settings then Mail then Accounts then Add Account. Tap your email provider (Google, Outlook, Yahoo, AOL) and sign in with your email and password.' },
       { title: 'Android: Use the Gmail app', content: 'Open Gmail, tap your profile icon, then "Add another account." Choose your provider and enter your email address and password.' },
@@ -4436,7 +4436,7 @@ After creating the account, the new user can sign in from the Windows login scre
 
 To open Windows Defender, click the Start button and type "Windows Security" in the search bar, then click on the Windows Security app. The main dashboard shows you an overview of your security status. Green check marks mean everything is good. Yellow or red indicators mean something needs your attention.
 
-The most important section is "Virus & threat protection." Click on it to see when your last scan was performed and whether any threats were found. Under "Current threats," you will see if anything suspicious has been detected. Windows Defender runs a quick scan automatically, but you can run a manual scan anytime by clicking "Quick scan." A quick scan checks the most common places where threats hide and takes about 5 to 10 minutes.
+The most important section is "Virus & threat protection." Click on it to see when your last scan was performed and whether any threats were found. Under "Current threats," you will see if anything suspicious has been detected. Windows Defender runs a quick scan automatically. But you can run a manual scan anytime by clicking "Quick scan." A quick scan checks the most common places where threats hide and takes about 5 to 10 minutes.
 
 For a more thorough check, click "Scan options" and select "Full scan." A full scan checks every file and program on your computer and can take an hour or more depending on how many files you have. Run a full scan if your computer is behaving strangely, if you recently downloaded something suspicious, or as a monthly maintenance step.
 
@@ -4444,7 +4444,7 @@ Under "Virus & threat protection settings," click "Manage settings" to see your 
 
 The "Firewall & network protection" section controls your Windows Firewall, which monitors internet traffic and blocks unauthorized connections. Make sure the firewall is turned on for all network types (Domain, Private, and Public). Do not turn off the firewall unless specifically instructed to do so by a trusted tech support professional.
 
-Windows Defender updates its virus definitions automatically through Windows Update. You do not need to manually update it, but you can click "Check for updates" in the Virus & threat protection page to make sure you have the latest definitions.`,
+Windows Defender updates its virus definitions automatically through Windows Update. You do not need to manually update it. But you can click "Check for updates" in the Virus & threat protection page to make sure you have the latest definitions.`,
     steps: [
       { title: 'Open Windows Security', content: 'Click the Start button and type "Windows Security" in the search bar. Click the Windows Security app when it appears. The dashboard shows your overall protection status with green, yellow, or red indicators.' },
       { title: 'Run a Quick scan', content: 'Click "Virus & threat protection" and then click the "Quick scan" button. The scan checks common threat locations and takes about 5 to 10 minutes. Any detected threats will be shown with options to remove them.' },
@@ -4599,7 +4599,7 @@ Keep your Time Machine drive connected whenever possible. If you use a desktop M
     thumbnailEmoji: '',
     publishedAt: '2026-04-16',
     difficulty: 'Intermediate',
-    body: `The Mac App Store has thousands of apps, but many popular programs — like Google Chrome, Zoom, Microsoft Office, and others — need to be downloaded directly from their developer's website. macOS includes a security feature called Gatekeeper that protects you from installing malicious software, but you need to know how to work with it properly when installing legitimate apps from the internet.
+    body: `The Mac App Store has thousands of apps, but many popular programs — like Google Chrome, Zoom, Microsoft Office, and others — need to be downloaded directly from their developer's website. macOS includes a security feature called Gatekeeper that protects you from installing malicious software. But you need to know how to work with it properly when installing legitimate apps from the internet.
 
 To install an app from outside the App Store, first go to the developer's official website using your web browser. For example, to install Google Chrome, go to google.com/chrome. Look for a download button and click it. The file will download to your Downloads folder and will typically be a .dmg file (disk image) or a .pkg file (installer package).
 
@@ -4679,7 +4679,7 @@ You can assign specific apps to always open on a particular desktop. Right-click
 
 To remove a desktop you no longer need, open Mission Control and hover over the desktop thumbnail you want to remove. An "X" button will appear in its corner. Click it to close that desktop. Any windows on that desktop will move to an adjacent desktop — nothing is lost.
 
-Multiple desktops work particularly well when paired with full-screen apps. Open an app in full screen (by clicking the green button in the top-left corner of any window), and it automatically becomes its own separate Space that you can swipe to.`,
+Multiple desktops work particularly well when paired with full-screen apps. Open an app in full screen (by clicking the green button in the top-left corner of any window). And it automatically becomes its own separate Space that you can swipe to.`,
     steps: [
       { title: 'Open Mission Control', content: 'Swipe up with three fingers on your trackpad, or press Control + Up Arrow on your keyboard. You will see all open windows and desktop thumbnails across the top of the screen.' },
       { title: 'Create a new desktop', content: 'In Mission Control, move your mouse to the top-right corner of the screen. Click the "+" button that appears to create a new desktop. Repeat to create additional desktops.' },
@@ -4743,7 +4743,7 @@ To send a file from your Mac to your iPhone: Find the file in Finder, right-clic
 
 If the other device does not appear in AirDrop, check the receiving device's AirDrop settings. On iPhone, go to Settings then General then AirDrop, and make sure it is set to "Everyone for 10 Minutes" or "Contacts Only" (if the sender is in your contacts). On Mac, open Finder, click "AirDrop" in the sidebar, and set the receiving option to "Everyone" or "Contacts Only."
 
-AirDrop is one of the best reasons to use Apple devices together. It is faster and more convenient than emailing files to yourself, and it works without an internet connection. Use it to transfer vacation photos from your iPhone to your Mac, send documents from your Mac to your iPhone for reading on the go, or share web links between devices.`,
+AirDrop is one of the best reasons to use Apple devices together. It is faster and more convenient than emailing files to yourself. And it works without an internet connection. Use it to transfer vacation photos from your iPhone to your Mac, send documents from your Mac to your iPhone for reading on the go, or share web links between devices.`,
     steps: [
       { title: 'Turn on Wi-Fi and Bluetooth on both devices', content: 'On iPhone, open Control Center and make sure Wi-Fi and Bluetooth are both turned on (blue icons). On Mac, check the menu bar to confirm Wi-Fi and Bluetooth are enabled.' },
       { title: 'Set AirDrop to be discoverable', content: 'On the receiving device, set AirDrop to "Everyone for 10 Minutes" or "Contacts Only." On iPhone: Settings then General then AirDrop. On Mac: open Finder, click AirDrop in the sidebar.' },
@@ -4764,7 +4764,7 @@ AirDrop is one of the best reasons to use Apple devices together. It is faster a
     thumbnailEmoji: '',
     publishedAt: '2026-04-16',
     difficulty: 'Intermediate',
-    body: `Preview is a free app that comes with every Mac, and it is surprisingly powerful for working with PDF documents. You can use it to fill out PDF forms, add your signature, highlight text, add notes and comments, merge PDFs, and more — all without paying for Adobe Acrobat or other expensive PDF software.
+    body: `Preview is a free app that comes with every Mac. And it is surprisingly powerful for working with PDF documents. You can use it to fill out PDF forms, add your signature, highlight text, add notes and comments, merge PDFs, and more — all without paying for Adobe Acrobat or other expensive PDF software.
 
 To open a PDF in Preview, double-click the PDF file in Finder. If it does not open in Preview by default, right-click the file, select "Open With," and choose "Preview." Once the PDF is open, you can read through it by scrolling or using the arrow keys.
 
@@ -4774,7 +4774,7 @@ To add your signature, click the Markup toolbar button, then click the "Sign" bu
 
 To highlight text, click the Markup button and select the Highlight tool (the marker icon). Then click and drag over the text you want to highlight. You can change the highlight color by clicking the dropdown arrow next to the highlight tool.
 
-To add notes and comments, use the "Note" tool in the Markup toolbar. Click anywhere on the page to place a note. You can type your comments inside the note, and it will appear as a small colored square on the page. This is useful for reviewing documents and leaving feedback.
+To add notes and comments, use the "Note" tool in the Markup toolbar. Click anywhere on the page to place a note. You can type your comments inside the note. And it will appear as a small colored square on the page. This is useful for reviewing documents and leaving feedback.
 
 To merge two PDFs, open the first PDF in Preview, then go to View and make sure "Thumbnails" is checked (so you see page thumbnails in the sidebar). Open a Finder window with the second PDF and drag it from Finder into the thumbnail sidebar of Preview. Drop it where you want the pages to be inserted. Then save the file by pressing Command + S.
 
@@ -4859,7 +4859,7 @@ Set a Screen Time passcode that is different from the child's login password. Th
     thumbnailEmoji: '',
     publishedAt: '2026-04-16',
     difficulty: 'Beginner' as any,
-    body: `Google Docs is a free online word processor from Google that works in any web browser. It saves your work automatically as you type, so you never lose a document, and you can access it from any phone, tablet, or computer. It is a popular alternative to Microsoft Word that costs nothing to use.`,
+    body: `Google Docs is a free online word processor from Google that works in any web browser. It saves your work automatically as you type, so you never lose a document. And you can access it from any phone, tablet, or computer. It is a popular alternative to Microsoft Word that costs nothing to use.`,
     steps: [
       { title: 'Sign in to Google', content: 'Go to docs.google.com. If you have a Gmail account, sign in with your Gmail email and password. If you do not have a Google account, click "Create account" to set one up for free.' },
       { title: 'Create a new document', content: 'Click the large "+" button or "Blank" template to open a new document. Give it a name by clicking "Untitled document" at the top and typing a title.' },
@@ -5128,7 +5128,7 @@ Set a Screen Time passcode that is different from the child's login password. Th
     thumbnailEmoji: '',
     publishedAt: '2026-04-16',
     difficulty: 'Beginner' as any,
-    body: `Google Maps is the most widely used navigation app in the world, and it is free on both iPhone and Android. It gives you turn-by-turn voice directions, real-time traffic updates, and estimated arrival times. Knowing how to use it confidently takes the stress out of driving somewhere new.`,
+    body: `Google Maps is the most widely used navigation app in the world. And it is free on both iPhone and Android. It gives you turn-by-turn voice directions, real-time traffic updates, and estimated arrival times. Knowing how to use it confidently takes the stress out of driving somewhere new.`,
     steps: [
       { title: 'Open Google Maps and allow location access', content: 'Download the Google Maps app from the App Store or Google Play if you do not already have it. When you open it for the first time, allow it to access your location — this is how it knows where you are starting from.' },
       { title: 'Enter your destination', content: 'Tap the search bar at the top of the screen and type the address, business name, or place you want to go. A list of suggestions will appear as you type — tap the correct one from the list.' },
@@ -5148,7 +5148,7 @@ Set a Screen Time passcode that is different from the child's login password. Th
     thumbnailEmoji: '',
     publishedAt: '2026-04-16',
     difficulty: 'Beginner' as any,
-    body: `Booking flights online can save money compared to calling an airline, but there are pitfalls to avoid — scam booking websites, hidden fees, and confusing fare rules. Using trusted platforms and knowing what to look for will help you find a good deal and complete your booking with confidence.`,
+    body: `Booking flights online can save money compared to calling an airline. But there are pitfalls to avoid — scam booking websites, hidden fees, and confusing fare rules. Using trusted platforms and knowing what to look for will help you find a good deal and complete your booking with confidence.`,
     steps: [
       { title: 'Use trusted booking sites', content: `Stick to well-known sites: the airline's own website (such as delta.com or southwest.com), or major travel sites like Google Flights (flights.google.com), Expedia, Kayak, or Priceline. Avoid clicking ads or booking through unfamiliar sites found in search results.` },
       { title: 'Use Google Flights to compare prices', content: 'Go to flights.google.com, enter your departure city, destination, and travel dates. Google Flights shows prices across all airlines side by side and has a calendar view to find the cheapest days to fly. It does not charge booking fees.' },
@@ -5397,7 +5397,7 @@ Set a Screen Time passcode that is different from the child's login password. Th
     thumbnailEmoji: '',
     publishedAt: '2026-04-16',
     difficulty: 'Beginner' as any,
-    body: `A credit freeze (also called a security freeze) blocks anyone from opening new credit accounts in your name, which is the most effective tool to prevent identity theft. It is completely free, does not affect your credit score, and does not stop you from using existing accounts. You must freeze your credit at all three bureaus separately, and you can lift it at any time.`,
+    body: `A credit freeze (also called a security freeze) blocks anyone from opening new credit accounts in your name, which is the most effective tool to prevent identity theft. It is completely free, does not affect your credit score, and does not stop you from using existing accounts. You must freeze your credit at all three bureaus separately. And you can lift it at any time.`,
     steps: [
       { title: 'Freeze your credit at Equifax', content: 'Go to equifax.com/personal/credit-report-services/credit-freeze. Click "Place a Security Freeze" and follow the steps. You will need to create an account and verify your identity. You will receive a PIN — save this, as you will need it to unfreeze your credit later.' },
       { title: 'Freeze your credit at Experian', content: 'Go to experian.com/freeze/center.html and click "Freeze or Manage Freeze." Create an account or log in and follow the instructions to place the freeze. Experian will give you a PIN or confirmation number to save.' },
@@ -5526,7 +5526,7 @@ Set a Screen Time passcode that is different from the child's login password. Th
     thumbnailEmoji: '',
     publishedAt: '2026-04-16',
     difficulty: 'Beginner' as any,
-    body: `WhatsApp is the world's most popular messaging app, with over 2 billion users. It lets you send text messages, voice messages, photos, videos, and make free voice or video calls to anyone else who has WhatsApp — including friends and family in other countries. All messages and calls are encrypted for privacy, and it uses your WiFi or data plan rather than your phone minutes.`,
+    body: `WhatsApp is the world's most popular messaging app, with over 2 billion users. It lets you send text messages, voice messages, photos, videos, and make free voice or video calls to anyone else who has WhatsApp — including friends and family in other countries. All messages and calls are encrypted for privacy. And it uses your WiFi or data plan rather than your phone minutes.`,
     steps: [
       { title: 'Download and install WhatsApp', content: 'Search for "WhatsApp" in the App Store (iPhone) or Google Play (Android) and download the free app. Open it and tap "Agree and Continue."' },
       { title: 'Verify your phone number', content: 'Enter your country code and phone number. WhatsApp will send a 6-digit verification code by text message. Enter the code to verify your account. WhatsApp uses your phone number as your identity — there is no separate username or password needed.' },
@@ -5593,7 +5593,7 @@ Set a Screen Time passcode that is different from the child's login password. Th
       { title: 'Create an account', content: 'Open the app and enter your phone number. Marco Polo will send a verification code by text — enter it to confirm your number. Add your first name and a profile photo to help friends recognize you.' },
       { title: 'Add a contact', content: 'Tap the "+" or "New" button to add a contact. You can search by phone number or name from your contacts. If the person already has Marco Polo, they will appear. If not, you can invite them by text message.' },
       { title: 'Record and send a video', content: `Tap a contact's name to open the conversation. Press and hold the large camera button to record your video message — speak naturally as if you were talking to them in person. Release the button when you are done and it sends automatically.` },
-      { title: 'Watch and reply to videos', content: 'When a friend sends you a video, you will get a notification. Open the app and tap their name to watch it. Press the camera button to record your reply. Videos stay in the conversation so you can rewatch them, and you can see whether the other person has watched your message.' },
+      { title: 'Watch and reply to videos', content: 'When a friend sends you a video, you will get a notification. Open the app and tap their name to watch it. Press the camera button to record your reply. Videos stay in the conversation so you can rewatch them. And you can see whether the other person has watched your message.' },
     ],
   },
 

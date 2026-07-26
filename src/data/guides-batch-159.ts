@@ -448,7 +448,7 @@ The folder opens with a suggested name (iPhone guesses based on the app category
 
 While still in jiggle mode, drag any other app and drop it onto the folder to add it. Tap Done when finished.
 
-To open a folder later, tap it once. All the apps inside are shown, and you tap the one you want.
+To open a folder later, tap it once. All the apps inside are shown. And you tap the one you want.
 
 ---
 
@@ -604,7 +604,7 @@ This guide walks through everything from downloading the app to setting up autom
 
 When you take a photo on your phone, it is saved only on that phone. If your phone is lost, damaged, or replaced, those photos can be gone forever. Google Photos solves this by automatically copying your photos to Google's servers (called "the cloud") so they are safely backed up and accessible from any device — including your computer, a new phone, or your family member's phone.
 
-In addition to backup, Google Photos makes sharing much simpler than texting individual photos one by one. You can share an entire collection with family members, and they can add their own photos to a shared album — so a family trip, a birthday party, or holiday gathering becomes a shared collection that everyone contributes to and can view.
+In addition to backup, Google Photos makes sharing much simpler than texting individual photos one by one. You can share an entire collection with family members. And they can add their own photos to a shared album — so a family trip, a birthday party, or holiday gathering becomes a shared collection that everyone contributes to and can view.
 
 **How much does it cost?**
 

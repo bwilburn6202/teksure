@@ -7,8 +7,7 @@ export const guidesBatch152: Guide[] = [
   {
     slug: 'how-to-make-a-google-account-2026',
     title: 'How to Create a Google Account',
-    excerpt:
-      'A Google account unlocks Gmail, Google Drive, Photos, and more — all for free. This guide walks you through creating one from scratch, step by step.',
+    excerpt: 'A Google account unlocks Gmail, Google Drive, Photos, and more — all for free. This guide walks you through creating one from scratch, step by step.',
     category: 'essential-skills',
     tags: [
       'google account',
@@ -67,33 +66,27 @@ Sources: Google Account Help (support.google.com/accounts), AARP Technology (aar
     steps: [
       {
         title: 'Go to the Google account creation page',
-        content:
-          'Open your web browser (Chrome, Edge, Safari, or Firefox) and go to accounts.google.com. On that page, click or tap the blue button that says "Create account." A menu will appear — choose "For my personal use."',
+        content: 'Open your web browser (Chrome, Edge, Safari, or Firefox) and go to accounts.google.com. On that page, click or tap the blue button that says "Create account." A menu will appear — choose "For my personal use."',
         tip: 'If you already see a Google sign-in page, look for the link that says "Create account" near the bottom of the sign-in form.',
       },
       {
         title: 'Enter your name and choose a username',
-        content:
-          'Type your first name and last name in the boxes provided. Then choose a username — this will become your Gmail address (for example, maryjones1952@gmail.com). If the name you want is already taken, Google will suggest alternatives. Pick one that is easy for you to remember and share with others.',
+        content: 'Type your first name and last name in the boxes provided. Then choose a username — this will become your Gmail address (for example, maryjones1952@gmail.com). If the name you want is already taken, Google will suggest alternatives. Pick one that is easy for you to remember and share with others.',
         tip: 'Your username cannot be changed later without creating a new account, so take a moment to choose one you are happy with.',
       },
       {
         title: 'Create and confirm a password',
-        content:
-          'Type a password that is at least 8 characters long. Google requires a mix of letters and numbers. A longer password — 12 or more characters — is much safer. Type the same password again in the "Confirm" box to make sure you typed it correctly. Write the password down in a safe place before moving on.',
-        warning:
-          'Do not use the same password you use for your bank or other important accounts. Each account should have its own unique password.',
+        content: 'Type a password that is at least 8 characters long. Google requires a mix of letters and numbers. A longer password — 12 or more characters — is much safer. Type the same password again in the "Confirm" box to make sure you typed it correctly. Write the password down in a safe place before moving on.',
+        warning: 'Do not use the same password you use for your bank or other important accounts. Each account should have its own unique password.',
       },
       {
         title: 'Add a recovery phone number and backup email',
-        content:
-          'Google will ask for a recovery phone number. Enter your cell phone number. Google will send a six-digit code to that number to confirm it is yours. Type in the code when it arrives. You can also add a backup email address (if you have one from a family member or a different old account). Both of these help you get back into your account if you ever forget your password.',
+        content: 'Google will ask for a recovery phone number. Enter your cell phone number. Google will send a six-digit code to that number to confirm it is yours. Type in the code when it arrives. You can also add a backup email address (if you have one from a family member or a different old account). Both of these help you get back into your account if you ever forget your password.',
         tip: 'Quick Tip: The recovery phone number is the most important safety net for your account. Do not skip this step.',
       },
       {
         title: 'Enter your birthday and gender',
-        content:
-          'Google asks for your date of birth (month, day, year) and your gender. Your date of birth is used to confirm you meet the age requirement for the service and to personalize certain settings. Select "Prefer not to say" for gender if you do not wish to share that information.',
+        content: 'Google asks for your date of birth (month, day, year) and your gender. Your date of birth is used to confirm you meet the age requirement for the service and to personalize certain settings. Select "Prefer not to say" for gender if you do not wish to share that information.',
       },
       {
         title: 'Review and agree to Google\'s terms',
@@ -106,8 +99,7 @@ Sources: Google Account Help (support.google.com/accounts), AARP Technology (aar
   {
     slug: 'how-to-block-someone-on-facebook-2026',
     title: 'How to Block, Unfriend, or Restrict Someone on Facebook',
-    excerpt:
-      'Learn the difference between unfriending, blocking, and restricting on Facebook — and how to do each one — so you can control who sees your posts and contacts you.',
+    excerpt: 'Learn the difference between unfriending, blocking, and restricting on Facebook — and how to do each one — so you can control who sees your posts and contacts you.',
     category: 'social-media',
     tags: [
       'facebook',
@@ -128,7 +120,7 @@ Sources: Google Account Help (support.google.com/accounts), AARP Technology (aar
 
 **Unfriend: a quiet parting of ways**
 
-When you unfriend someone, you remove them from your Friends list. Your profiles are no longer connected. They will stop seeing your posts in their feed, and you will stop seeing theirs. Facebook does not send them a notification when you unfriend them — they will only notice if they come to your profile and see the "Add Friend" button instead of "Friends."
+When you unfriend someone, you remove them from your Friends list. Your profiles are no longer connected. They will stop seeing your posts in their feed. And you will stop seeing theirs. Facebook does not send them a notification when you unfriend them — they will only notice if they come to your profile and see the "Add Friend" button instead of "Friends."
 
 After you unfriend someone, they can still send you a friend request again in the future if they want to. They can also see any posts you have set to "Public" (visible to everyone). If your posts are set to "Friends only," they cannot see them.
 
@@ -138,7 +130,7 @@ Blocking is a stronger action. When you block someone, they cannot see your prof
 
 The person you blocked will not receive a notification, but if they try to find your profile, they will not be able to. It will appear as if you do not exist on Facebook.
 
-You can unblock someone later, but there is a 48-hour waiting period before you can re-block them again. Also note that unblocking someone does not automatically re-friend them — you would need to send a new friend request if you wanted to reconnect.
+You can unblock someone later. But there is a 48-hour waiting period before you can re-block them again. Also note that unblocking someone does not automatically re-friend them — you would need to send a new friend request if you wanted to reconnect.
 
 **Restrict: the quiet middle option**
 
@@ -160,36 +152,30 @@ Sources: Facebook Help Center (facebook.com/help), AARP Technology (aarp.org/hom
     steps: [
       {
         title: 'Find the person\'s profile',
-        content:
-          'Open the Facebook app or go to facebook.com in your browser. In the search bar at the top, type the name of the person you want to unfriend, block, or restrict. Tap or click their name to open their profile page.',
+        content: 'Open the Facebook app or go to facebook.com in your browser. In the search bar at the top, type the name of the person you want to unfriend, block, or restrict. Tap or click their name to open their profile page.',
       },
       {
         title: 'Unfriend someone',
-        content:
-          'On their profile page, look for the "Friends" button (it looks like a person with a checkmark). Tap or click it. A menu will appear with several options. Choose "Unfriend." A confirmation message may appear — click "Confirm" or "Remove." They are now removed from your Friends list. They will not receive a notification.',
+        content: 'On their profile page, look for the "Friends" button (it looks like a person with a checkmark). Tap or click it. A menu will appear with several options. Choose "Unfriend." A confirmation message may appear — click "Confirm" or "Remove." They are now removed from your Friends list. They will not receive a notification.',
         tip: 'Quick Tip: On a computer, the "Friends" button is near the top of their profile, next to their name and photo.',
       },
       {
         title: 'Block someone',
         content: 'On their profile page, look for three small dots (. . .) near the top right of the page. This is the "More options" menu. Tap or click those dots. Select "Block." Facebook will ask you to confirm — read the short explanation on screen, then click "Confirm." The block goes into effect right away.',
-        warning:
-          'Blocking is a significant step. The person will not be able to find you on Facebook at all. If you only want to limit what they see, use Restrict instead.',
+        warning: 'Blocking is a significant step. The person will not be able to find you on Facebook at all. If you only want to limit what they see, use Restrict instead.',
       },
       {
         title: 'Restrict someone',
-        content:
-          'On their profile page, tap or click the "Friends" button. From the menu that appears, choose "Edit Friend List" or look for the "Restrict" option. On some versions of Facebook, you may need to tap "More options" (the three dots) and then choose "Restrict." Once restricted, their name will have a small lock icon in your Friends list on your own end — they will not see any change on their end.',
+        content: 'On their profile page, tap or click the "Friends" button. From the menu that appears, choose "Edit Friend List" or look for the "Restrict" option. On some versions of Facebook, you may need to tap "More options" (the three dots) and then choose "Restrict." Once restricted, their name will have a small lock icon in your Friends list on your own end — they will not see any change on their end.',
         tip: 'To view your Restricted list: go to your own profile, tap "Friends," then look for "More" or the gear icon to find "Restricted List."',
       },
       {
         title: 'Unblock someone (if you change your mind)',
-        content:
-          'To unblock someone, go to the Facebook menu (the three horizontal lines in the app, or the drop-down arrow on the web). Tap "Settings & Privacy," then "Settings." Scroll to "Blocking" or search for it. You will see a list of people you have blocked. Tap "Unblock" next to their name. Note: you must wait 48 hours before you can block that same person again.',
+        content: 'To unblock someone, go to the Facebook menu (the three horizontal lines in the app, or the drop-down arrow on the web). Tap "Settings & Privacy," then "Settings." Scroll to "Blocking" or search for it. You will see a list of people you have blocked. Tap "Unblock" next to their name. Note: you must wait 48 hours before you can block that same person again.',
       },
       {
         title: 'Check what others can see on your profile',
-        content:
-          'To make sure strangers and unfriended people cannot see your posts, go to Settings & Privacy > Settings > Privacy. Look at "Who can see your future posts?" and set it to "Friends" if you want. Also review "Who can send you friend requests?" and "Who can look you up using your email address?" — setting these to "Friends of friends" gives you more control.',
+        content: 'To make sure strangers and unfriended people cannot see your posts, go to Settings & Privacy > Settings > Privacy. Look at "Who can see your future posts?" and set it to "Friends" if you want. Also review "Who can send you friend requests?" and "Who can look you up using your email address?" — setting these to "Friends of friends" gives you more control.',
         tip: 'Quick Tip: Facebook has a "View As" tool that lets you see your profile the way a stranger (or a specific person) would see it. Look for it in your profile settings.',
       },
     ],
@@ -198,8 +184,7 @@ Sources: Facebook Help Center (facebook.com/help), AARP Technology (aarp.org/hom
   {
     slug: 'how-to-use-microsoft-word-basics-2026',
     title: 'How to Use Microsoft Word for the First Time',
-    excerpt:
-      'Type a letter, change the font size, save your document, and print it — this plain-English guide covers Microsoft Word basics for first-time users.',
+    excerpt: 'Type a letter, change the font size, save your document, and print it — this plain-English guide covers Microsoft Word basics for first-time users.',
     category: 'windows-guides',
     tags: [
       'microsoft word',
@@ -233,7 +218,7 @@ If you are not sure whether you have Word, click the Start button (the Windows l
 You do not have to pay for Word to write documents. Two free alternatives work very well:
 
 - **Google Docs** (docs.google.com) — free, works in your web browser, and automatically saves everything to the internet so you never lose your work. You need a free Google account (see our guide on creating a Google account).
-- **LibreOffice Writer** (libreoffice.org) — free software you download and install on your computer. It looks and works very much like Word, and it can open and save Word files (.docx).
+- **LibreOffice Writer** (libreoffice.org) — free software you download and install on your computer. It looks and works very much like Word. And it can open and save Word files (.docx).
 
 Both alternatives are excellent for everyday documents like letters and notes.
 
@@ -263,14 +248,12 @@ Sources: Microsoft Support (support.microsoft.com/en-us/word), GCFGlobal.org (gc
     steps: [
       {
         title: 'Open Microsoft Word',
-        content:
-          'Click the Start button (the Windows logo in the bottom-left corner of your screen) and look for "Word" or "Microsoft Word" in the list of programs. Click it to open the program. If you do not see it, try typing "Word" into the search bar next to the Start button. Once Word opens, you will see a welcome screen — click "Blank Document" to start with a fresh, empty page.',
+        content: 'Click the Start button (the Windows logo in the bottom-left corner of your screen) and look for "Word" or "Microsoft Word" in the list of programs. Click it to open the program. If you do not see it, try typing "Word" into the search bar next to the Start button. Once Word opens, you will see a welcome screen — click "Blank Document" to start with a fresh, empty page.',
         tip: 'Quick Tip: If you use Word often, right-click its name in the Start menu and choose "Pin to taskbar." That puts a shortcut on the bar at the bottom of your screen so you can open it faster next time.',
       },
       {
         title: 'Type your text',
-        content:
-          'Click anywhere on the white page area. You will see a blinking line (the cursor) appear. Start typing. Your text appears at the cursor position. Press Enter on your keyboard to start a new paragraph. Press Backspace to delete a character to the left of the cursor. There is no wrong way to start — type a sentence and see how it looks.',
+        content: 'Click anywhere on the white page area. You will see a blinking line (the cursor) appear. Start typing. Your text appears at the cursor position. Press Enter on your keyboard to start a new paragraph. Press Backspace to delete a character to the left of the cursor. There is no wrong way to start — type a sentence and see how it looks.',
       },
       {
         title: 'Change the font size and make text bold',
@@ -279,21 +262,17 @@ Sources: Microsoft Support (support.microsoft.com/en-us/word), GCFGlobal.org (gc
       },
       {
         title: 'Save your document',
-        content:
-          'Click the File tab at the very top-left of the Word window. Then click "Save As." A window will open asking where you want to save the file and what to name it. The Documents folder is a good default location. Click in the file name box, delete the existing text, and type a name that describes your document — for example, "Letter to Dr. Smith" or "Holiday Party Invitation." Then click the Save button. Your document is now saved. From this point on, press Ctrl+S (hold Ctrl, tap S) whenever you want to save your latest changes.',
-        warning:
-          'Do not close Word without saving first. If you try to close an unsaved document, Word will ask if you want to save — always click "Save" unless you truly want to throw away your work.',
+        content: 'Click the File tab at the very top-left of the Word window. Then click "Save As." A window will open asking where you want to save the file and what to name it. The Documents folder is a good default location. Click in the file name box, delete the existing text, and type a name that describes your document — for example, "Letter to Dr. Smith" or "Holiday Party Invitation." Then click the Save button. Your document is now saved. From this point on, press Ctrl+S (hold Ctrl, tap S) whenever you want to save your latest changes.',
+        warning: 'Do not close Word without saving first. If you try to close an unsaved document, Word will ask if you want to save — always click "Save" unless you truly want to throw away your work.',
       },
       {
         title: 'Print your document',
-        content:
-          'Make sure your printer is on and connected to your computer. In Word, click the File tab, then click "Print." A Print panel opens on the right side of the screen showing a preview of your document. Check that the correct printer name is shown in the "Printer" section. Click the large "Print" button. Your document will print. If nothing happens, check that the printer has paper and that it is connected (either by USB cable or Wi-Fi).',
+        content: 'Make sure your printer is on and connected to your computer. In Word, click the File tab, then click "Print." A Print panel opens on the right side of the screen showing a preview of your document. Check that the correct printer name is shown in the "Printer" section. Click the large "Print" button. Your document will print. If nothing happens, check that the printer has paper and that it is connected (either by USB cable or Wi-Fi).',
         tip: 'Quick Tip: Use the preview on the Print screen to make sure your document looks the way you expect before printing. If text is getting cut off at the edges, go back and reduce the font size or adjust the margins under the Layout tab.',
       },
       {
         title: 'Share your document by email',
-        content:
-          'Save your document first (Step 4). Then open your email program — Gmail, Outlook, or whatever you use. Start a new email and address it to the person you want to send it to. Look for a paperclip icon or an "Attach" button and click it. A file browser window will open. Navigate to your Documents folder, find your Word file, and double-click it to attach it. Finish writing your message and click Send. The recipient will receive the file attached to your email and can open it on their computer.',
+        content: 'Save your document first (Step 4). Then open your email program — Gmail, Outlook, or whatever you use. Start a new email and address it to the person you want to send it to. Look for a paperclip icon or an "Attach" button and click it. A file browser window will open. Navigate to your Documents folder, find your Word file, and double-click it to attach it. Finish writing your message and click Send. The recipient will receive the file attached to your email and can open it on their computer.',
         tip: 'Quick Tip: If the other person does not have Microsoft Word, they can open your file for free using Google Docs — they upload the file to drive.google.com and it opens automatically.',
       },
     ],
@@ -302,8 +281,7 @@ Sources: Microsoft Support (support.microsoft.com/en-us/word), GCFGlobal.org (gc
   {
     slug: 'how-to-recognize-deepfake-videos-and-photos-2026',
     title: 'How to Recognize Deepfake Videos and Photos',
-    excerpt:
-      'Deepfakes are AI-generated fake videos and photos of real people. Learn 6 warning signs and how to check before you share or believe what you see.',
+    excerpt: 'Deepfakes are AI-generated fake videos and photos of real people. Learn 6 warning signs and how to check before you share or believe what you see.',
     category: 'safety-guides',
     tags: [
       'deepfake',
@@ -353,7 +331,7 @@ The technology has improved dramatically. A few years ago, deepfakes were easy t
 
 5. **Skin and hair that look too smooth or too perfect.** Real people have pores, fine lines, and hair that moves naturally. AI-generated faces often look unusually smooth or have hair that sits strangely — especially at the edges.
 
-6. **The content is too good to be true or designed to make you act fast.** This is not a visual sign, but it is often the most reliable one. A famous doctor endorsing a miracle cure, a celebrity giving away money, or a family member urgently needing cash — these stories are designed to bypass your judgment and push you to act before you think.
+6. **The content is too good to be true or designed to make you act fast.** This is not a visual sign. But it is often the most reliable one. A famous doctor endorsing a miracle cure, a celebrity giving away money, or a family member urgently needing cash — these stories are designed to bypass your judgment and push you to act before you think.
 
 **How to verify suspicious videos before sharing**
 
@@ -373,37 +351,30 @@ Sources: FTC Consumer Information (consumer.ftc.gov), CISA.gov, AARP Fraud Resou
     steps: [
       {
         title: 'Understand what you are looking at',
-        content:
-          'Before watching a video or looking at a photo with skepticism, ask yourself: does this seem designed to make me emotional, alarmed, or eager to act? Deepfakes are almost always attached to a message that pushes you to feel something — urgency, excitement, fear, or anger. That emotional pressure is often the first sign something may not be right.',
+        content: 'Before watching a video or looking at a photo with skepticism, ask yourself: does this seem designed to make me emotional, alarmed, or eager to act? Deepfakes are almost always attached to a message that pushes you to feel something — urgency, excitement, fear, or anger. That emotional pressure is often the first sign something may not be right.',
       },
       {
         title: 'Watch the face carefully',
-        content:
-          'Focus on the person\'s face. Watch how they blink — does it look natural? Watch their mouth as they speak — do the lips match the words? Look at the edges of the face where it meets the hair and ears. In a deepfake, these edges may look slightly blurry, shimmery, or inconsistent, especially when the person moves their head.',
+        content: 'Focus on the person\'s face. Watch how they blink — does it look natural? Watch their mouth as they speak — do the lips match the words? Look at the edges of the face where it meets the hair and ears. In a deepfake, these edges may look slightly blurry, shimmery, or inconsistent, especially when the person moves their head.',
         tip: 'Quick Tip: Pause the video and look at a single frozen frame. AI-generated faces often show small imperfections that are easier to see when the video is not moving.',
       },
       {
         title: 'Check the background and lighting',
-        content:
-          'Look at what is behind the person. Does the background look normal and stable, or does it seem to ripple, repeat, or warp when the person moves? Also notice the lighting — does the light on the person\'s face match the light in the background? Mismatched lighting is a common sign that a face was placed into a scene it was not originally filmed in.',
+        content: 'Look at what is behind the person. Does the background look normal and stable, or does it seem to ripple, repeat, or warp when the person moves? Also notice the lighting — does the light on the person\'s face match the light in the background? Mismatched lighting is a common sign that a face was placed into a scene it was not originally filmed in.',
       },
       {
         title: 'Search for the original source',
-        content:
-          'Copy a phrase or quote from the video and search for it in Google News (news.google.com). If a real news event is being shown, credible news outlets will have reported on it. If the search returns nothing from known organizations, or returns results that say the story is false, that is a strong signal the video may be fake. For photos, right-click the image on your computer and choose "Search image" to do a reverse image search.',
+        content: 'Copy a phrase or quote from the video and search for it in Google News (news.google.com). If a real news event is being shown, credible news outlets will have reported on it. If the search returns nothing from known organizations, or returns results that say the story is false, that is a strong signal the video may be fake. For photos, right-click the image on your computer and choose "Search image" to do a reverse image search.',
         tip: 'Quick Tip: Go to Snopes.com or FactCheck.org and search the topic there. These independent fact-checking sites investigate viral photos and videos.',
       },
       {
         title: 'Be especially cautious about money requests',
-        content:
-          'If a video, voice message, or phone call shows or sounds like a family member in trouble and asks you for money — especially gift cards, wire transfers, or cryptocurrency — stop and verify before doing anything. Hang up or close the message. Call that family member directly using a phone number you already have saved in your phone. Scammers count on you acting fast without checking.',
-        warning:
-          'Legitimate emergencies do not require you to pay with gift cards. No government agency, hospital, or family member in a real emergency will ask you to buy Google Play or Apple gift cards and read the numbers over the phone. That is always a scam.',
+        content: 'If a video, voice message, or phone call shows or sounds like a family member in trouble and asks you for money — especially gift cards, wire transfers, or cryptocurrency — stop and verify before doing anything. Hang up or close the message. Call that family member directly using a phone number you already have saved in your phone. Scammers count on you acting fast without checking.',
+        warning: 'Legitimate emergencies do not require you to pay with gift cards. No government agency, hospital, or family member in a real emergency will ask you to buy Google Play or Apple gift cards and read the numbers over the phone. That is always a scam.',
       },
       {
         title: 'Report what you find and do not share unverified content',
-        content:
-          'If you believe you have seen a deepfake scam, report it to the FTC at reportfraud.ftc.gov. If it appeared on Facebook, Instagram, YouTube, or another platform, use the platform\'s "Report" button to flag the content — look for the three dots next to a post and tap "Report." Most importantly, do not forward or share content you cannot verify. Sharing unverified content — even to warn others — helps it reach more people.',
+        content: 'If you believe you have seen a deepfake scam, report it to the FTC at reportfraud.ftc.gov. If it appeared on Facebook, Instagram, YouTube, or another platform, use the platform\'s "Report" button to flag the content — look for the three dots next to a post and tap "Report." Most importantly, do not forward or share content you cannot verify. Sharing unverified content — even to warn others — helps it reach more people.',
         tip: 'Quick Tip: Share this guide with a friend or family member. The more people know how to spot deepfakes, the harder they are to use as a tool for scams.',
       },
     ],

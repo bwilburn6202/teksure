@@ -622,7 +622,7 @@ The flashlight uses the camera flash LED, which runs warm during extended use. Y
 
 This is useful for: wishing someone a happy birthday at midnight, sending a morning check-in text without waking up at dawn, reminding a family member about an appointment the day before, or drafting a text while you remember but sending it at a more appropriate hour.
 
-You need iOS 18 or later for the built-in Send Later feature. Check Settings → General → About to see your iOS version. If you have an older iPhone, third-party apps like Scheduled or Carrier-based options may work, but they require keeping the app open or have limitations.
+You need iOS 18 or later for the built-in Send Later feature. Check Settings → General → About to see your iOS version. If you have an older iPhone, third-party apps like Scheduled or Carrier-based options may work. But they require keeping the app open or have limitations.
 
 Send Later works for both iMessage (blue bubble) and SMS (green bubble) texts. Scheduled messages appear in the conversation with a small clock icon indicating they are pending.
 
@@ -749,9 +749,9 @@ You can even scroll through multi-page PDFs or use arrow keys to browse through 
     thumbnailEmoji: ``,
     publishedAt: `2026-04-19`,
     difficulty: `Beginner`,
-    body: `iPhone batteries are designed to retain up to 80% of their original capacity after 500 complete charge cycles (roughly 1–2 years of normal use). After that, battery health declines, and you may notice your phone does not last as long through the day, shuts down unexpectedly, or charges slowly.
+    body: `iPhone batteries are designed to retain up to 80% of their original capacity after 500 complete charge cycles (roughly 1–2 years of normal use). After that, battery health declines. And you may notice your phone does not last as long through the day, shuts down unexpectedly, or charges slowly.
 
-The good news: a battery replacement is typically much cheaper than buying a new phone, and it can make an older iPhone feel like new again. Apple offers battery replacement at Apple Stores and Apple Authorized Service Providers for a set price depending on the model.
+The good news: a battery replacement is typically much cheaper than buying a new phone. And it can make an older iPhone feel like new again. Apple offers battery replacement at Apple Stores and Apple Authorized Service Providers for a set price depending on the model.
 
 Your iPhone tracks its own battery health as a percentage. A new battery is 100%. Apple recommends replacing the battery when it drops below 80% — below that level, performance throttling may kick in to prevent unexpected shutdowns.
 

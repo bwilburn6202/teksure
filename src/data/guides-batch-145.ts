@@ -248,7 +248,7 @@ What is NOT automatically protected: apps you paid for (you can re-download thos
     publishedAt: '2026-05-06',
     lastVerifiedAt: '2026-05-06',
     difficulty: 'Beginner',
-    body: `Lyft and Uber are apps that connect you with a nearby driver who can take you where you need to go — a doctor's appointment, the grocery store, a family dinner, or anywhere else. You request the ride from your phone, a driver comes to your location, and you pay through the app. There is no cash required and no need to hail a cab.
+    body: `Lyft and Uber are apps that connect you with a nearby driver who can take you where you need to go — a doctor's appointment, the grocery store, a family dinner, or anywhere else. You request the ride from your phone, a driver comes to your location. And you pay through the app. There is no cash required and no need to hail a cab.
 
 For seniors who have given up driving or do not want to drive at night, these apps can be genuinely life-changing. You can get to medical appointments, visit family, and stay independent without relying on anyone to pick you up.
 
@@ -263,7 +263,7 @@ Both apps work in the same basic way. Lyft is blue; Uber is black and white. Pri
 - Your home address (so you can easily enter it as your destination)
 - An email address to create your account
 
-You do not need a Lyft or Uber account to read this guide, but you will need one to request a ride.
+You do not need a Lyft or Uber account to read this guide. But you will need one to request a ride.
 
 ## Setting Up the App for the First Time
 
@@ -373,7 +373,7 @@ Both Lyft and Uber let you share your ride status with a trusted person. In Lyft
     publishedAt: '2026-05-06',
     lastVerifiedAt: '2026-05-06',
     difficulty: 'Beginner',
-    body: `Your web browser — Safari, Chrome, Firefox, or Edge — keeps a record of every website you visit. It also stores small temporary files called "cache" (pronounced "cash") and "cookies." These files help websites load faster, but they can also cause problems: a website might display incorrectly, get stuck on an old version of a page, or run slowly.
+    body: `Your web browser — Safari, Chrome, Firefox, or Edge — keeps a record of every website you visit. It also stores small temporary files called "cache" (pronounced "cash") and "cookies." These files help websites load faster. But they can also cause problems: a website might display incorrectly, get stuck on an old version of a page, or run slowly.
 
 Clearing your history, cache, and cookies fixes many of these issues. It can also free up storage space on your device and protect your privacy if you share a computer with others.
 
@@ -492,7 +492,7 @@ For most home users, clearing history once every one to three months is a reason
       },
       {
         title: 'Log back in to your websites',
-        content: 'After clearing cookies, you will be signed out of websites like your email, bank, and shopping accounts. Open each site, enter your email address and password as usual, and you will be back in. If your browser had your passwords saved, it will offer to fill them in for you.',
+        content: 'After clearing cookies, you will be signed out of websites like your email, bank, and shopping accounts. Open each site, enter your email address and password as usual. And you will be back in. If your browser had your passwords saved, it will offer to fill them in for you.',
         warning: 'If you do not remember a password, use the "Forgot Password" link on the website to reset it. Do not skip this step — make sure you can get back in to your important accounts before you clear cookies on a shared or public computer.',
       },
     ],

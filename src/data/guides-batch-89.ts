@@ -17,7 +17,7 @@ BetterHelp is not a crisis service. If you are in immediate danger or having tho
 
 When you sign up, BetterHelp asks you a series of questions about what you are going through — things like stress, anxiety, relationship issues, or grief. Based on your answers, the platform matches you with a therapist who specializes in those areas. You can read your therapist's background, credentials, and experience before accepting the match.
 
-Once matched, you have a few ways to connect. The most common option is sending text messages through a private, secure chat. You can write to your therapist any time, and they typically respond within one to two business days. You can also schedule live sessions by video call, phone call, or live text chat.
+Once matched, you have a few ways to connect. The most common option is sending text messages through a private, secure chat. You can write to your therapist any time. And they typically respond within one to two business days. You can also schedule live sessions by video call, phone call, or live text chat.
 
 BetterHelp costs between $65 and $100 per week, billed monthly. This covers unlimited messaging and at least one live session per week. Financial aid is available if cost is a concern — there is a form during sign-up to apply. BetterHelp does not accept insurance directly, but some insurance plans may reimburse part of the cost. Check with your insurance company.
 
@@ -471,7 +471,7 @@ The app is free to download and use for the core features. A premium tier adds a
 
 Online vet visits are a good fit for a wide range of concerns: your dog is eating less than usual, your cat has been scratching more than normal, your pet has a new lump you want looked at, or you have questions about a medication or diet change. A Vetster vet can observe your pet through the camera, ask detailed questions, and give you a professional opinion.
 
-There are things an online vet cannot do, and it is important to understand these limits. They cannot perform a physical exam, take blood samples, run x-rays, give injections, or handle emergencies. If your pet has a broken bone, is having trouble breathing, has collapsed, or has ingested something toxic, go to an emergency veterinary clinic right away — do not wait for a video appointment.
+There are things an online vet cannot do. And it is important to understand these limits. They cannot perform a physical exam, take blood samples, run x-rays, give injections, or handle emergencies. If your pet has a broken bone, is having trouble breathing, has collapsed, or has ingested something toxic, go to an emergency veterinary clinic right away — do not wait for a video appointment.
 
 Vetster visits are typically priced between $50 and $150 depending on the vet and the time of day. Some pet insurance policies cover telehealth visits, so check your policy. Vetster also shows you each vet's credentials, species experience, and patient reviews before you book, so you can pick someone with expertise in your type of pet.
 
@@ -878,7 +878,7 @@ This creates a win-win situation. As a buyer on Raise, you can find gift cards f
 
 Gift cards on Raise come in two forms. Electronic cards are delivered right away to your email or Raise account — you get a card number and PIN you can type in at checkout online or show the cashier on your phone screen. Physical cards are mailed to you and take several days to arrive. Electronic cards are faster and more convenient for most purchases.
 
-Raise verifies every card before listing it for sale, and they offer a money-back guarantee: if you buy a card and the balance is wrong or the card does not work, Raise will replace or refund it within a defined window (check current policy on their website). This protection makes buying from strangers much less risky.
+Raise verifies every card before listing it for sale. And they offer a money-back guarantee: if you buy a card and the balance is wrong or the card does not work, Raise will replace or refund it within a defined window (check current policy on their website). This protection makes buying from strangers much less risky.
 
 Raise is available as a website (raise.com) and as an app for iPhone and Android.`,
     steps: [

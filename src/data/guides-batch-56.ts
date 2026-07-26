@@ -153,7 +153,7 @@ Google Tasks does not send you pop-up reminders by default (unlike Google Keep o
     difficulty: `Beginner`,
     body: `The Walmart app makes it possible to shop for groceries without walking every aisle. You can browse items on your phone, add them to your cart, and then pick them up at the store without ever going inside. A Walmart employee collects your items and brings them right to your car.
 
-This is called Walmart Grocery Pickup, and it is free for all Walmart shoppers — no special membership required for the basic pickup service. You can also use the app for delivery to your home.
+This is called Walmart Grocery Pickup. And it is free for all Walmart shoppers — no special membership required for the basic pickup service. You can also use the app for delivery to your home.
 
 The app also shows you Walmart's current deals, rollbacks (temporary price cuts), and clearance items. You can scan barcodes in the store to check prices, compare sizes, and read product reviews.
 
@@ -206,7 +206,7 @@ Drive Up is Target's curbside pickup service. You shop in the app, choose Drive 
 
 The app also lets you scan barcodes while you are in the store to check prices, see reviews, and find out if an item is in stock. If the app shows something is out of stock at your store, it can show you nearby stores that have it in stock.
 
-You can use the app to track online orders, manage returns, and see your previous purchases. The app works on both iPhone and Android phones, and you will need a free Target account to use the shopping and rewards features.`,
+You can use the app to track online orders, manage returns, and see your previous purchases. The app works on both iPhone and Android phones. And you will need a free Target account to use the shopping and rewards features.`,
     steps: [
       {
         title: `Download the app and sign in`,
@@ -518,7 +518,7 @@ Goodreads is owned by Amazon and works on iPhone, Android, and in any web browse
     thumbnailEmoji: ``,
     publishedAt: `2026-04-19`,
     difficulty: `Beginner`,
-    body: `Your local library card gives you access to thousands of free e-books and audiobooks that you can borrow and read or listen to on your phone, tablet, or computer — no trips to the library required. The app that makes this possible is called Libby, and it was created by a company called OverDrive.
+    body: `Your local library card gives you access to thousands of free e-books and audiobooks that you can borrow and read or listen to on your phone, tablet, or computer — no trips to the library required. The app that makes this possible is called Libby. And it was created by a company called OverDrive.
 
 Libby connects to your local library's digital collection. When you borrow a book through Libby, it appears on your device right away and disappears automatically when the lending period ends (usually 14 to 21 days). There are no late fees, ever.
 
@@ -761,7 +761,7 @@ Font Size and Display Size: You can make text bigger across the entire phone, no
 
 Magnification: This lets you zoom into any part of the screen by tapping three times or using a gesture. It is like having a magnifying glass built into your phone.
 
-TalkBack: TalkBack is a screen reader that reads aloud everything on your screen — the name of buttons, the text in messages, menu items, and more. It is designed for people with significant vision impairment, but it can also help someone who is just starting to learn their phone.
+TalkBack: TalkBack is a screen reader that reads aloud everything on your screen — the name of buttons, the text in messages, menu items, and more. It is designed for people with significant vision impairment. But it can also help someone who is just starting to learn their phone.
 
 Hearing aid support: Android phones support Bluetooth hearing aids that are designed to connect directly to phones. If you have Bluetooth hearing aids, go to Bluetooth settings and pair them like any other Bluetooth device.
 
@@ -812,7 +812,7 @@ This works great for events like birthdays, holidays, and vacations — everyone
 
 You can also set up a "Partner Sharing" arrangement where Google Photos automatically shares every new photo you take with one other person — like a spouse or partner. This way, neither of you has to remember to manually add photos; they share automatically.
 
-Shared albums work across iPhone and Android. The person receiving your invitation to join an album needs a Google account (Gmail), but it does not matter what kind of phone they use.
+Shared albums work across iPhone and Android. The person receiving your invitation to join an album needs a Google account (Gmail). But it does not matter what kind of phone they use.
 
 Google gives everyone 15 gigabytes of free storage. Google Photos compresses photos slightly by default to save space, but for sharing family snapshots, the quality is excellent. If you want to store original full-resolution files, you will eventually need a Google One paid storage plan.`,
     steps: [
@@ -901,7 +901,7 @@ Transcriptions are done automatically by your phone and are usually accurate eno
 
 If your TV does not have a smart TV built in, or if you find your TV's built-in apps slow or confusing, Apple TV 4K is a popular upgrade. It tends to be faster and more responsive than the apps built into most TVs.
 
-The device comes with the Siri Remote — a slim aluminum remote with a touchpad at the top and a few buttons. You can use the touchpad to swipe through menus, and you can press the microphone button to ask Siri questions like "What should I watch tonight?" or "Show me comedies on Netflix."
+The device comes with the Siri Remote — a slim aluminum remote with a touchpad at the top and a few buttons. You can use the touchpad to swipe through menus. And you can press the microphone button to ask Siri questions like "What should I watch tonight?" or "Show me comedies on Netflix."
 
 Apple TV 4K works especially well with other Apple devices. AirPlay lets you wirelessly send a video, photo, or music from your iPhone or iPad directly to your TV screen in seconds — without any cables. You can also use your iPhone as an alternative remote if you lose the physical one.
 

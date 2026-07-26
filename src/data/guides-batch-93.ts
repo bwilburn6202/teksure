@@ -109,7 +109,7 @@ The best way to learn Excel is to start with a simple project. A monthly budget 
     thumbnailEmoji: ``,
     publishedAt: `2026-04-20`,
     difficulty: `Beginner`,
-    body: `PowerPoint Online is Microsoft's free, browser-based presentation tool. You do not need to buy software or install anything. Visit office.com in any web browser, sign in with a free Microsoft account, and you can start building slideshows right away. Your presentations save automatically to OneDrive, and you can run your slideshow directly from the browser.
+    body: `PowerPoint Online is Microsoft's free, browser-based presentation tool. You do not need to buy software or install anything. Visit office.com in any web browser, sign in with a free Microsoft account. And you can start building slideshows right away. Your presentations save automatically to OneDrive. And you can run your slideshow directly from the browser.
 
 A presentation — sometimes called a slideshow — is a series of screens (called slides) that you show one at a time. Each slide can hold text, images, charts, or other visuals. PowerPoint Online gives you everything you need to make a clean, professional presentation for a meeting, a family gathering, a church group, a school project, or any occasion where you want to share information visually.
 
@@ -163,7 +163,7 @@ If you want a free email address and calendar that you access at a website, Outl
 
 On Windows 11, Microsoft replaced the old Mail and Calendar apps with the new Outlook app in late 2024. It looks similar to the website version and connects to your Microsoft, Gmail, and other email accounts all in one place.
 
-Outlook is more than just email. The Calendar feature lets you schedule appointments, set reminders, and invite other people to meetings. People can send you a calendar invitation and you can accept it directly from the email, and it automatically appears in your calendar. The Focused Inbox feature automatically sorts your most important emails to a "Focused" tab and moves newsletters and promotional emails to an "Other" tab, so your most important messages are easier to find.
+Outlook is more than just email. The Calendar feature lets you schedule appointments, set reminders, and invite other people to meetings. People can send you a calendar invitation and you can accept it directly from the email. And it automatically appears in your calendar. The Focused Inbox feature automatically sorts your most important emails to a "Focused" tab and moves newsletters and promotional emails to an "Other" tab, so your most important messages are easier to find.
 
 Setting up Outlook takes just a few minutes, and once your account is configured you will have a reliable, organized place to manage all your email and appointments.`,
     steps: [
@@ -456,8 +456,8 @@ The cost of digitizing varies widely. Professional mail-in services typically ch
       },
       {
         title: `Option 1 — Use a retail or mail-in service`,
-        content: `The most convenient option is to send your tapes to a professional service. Costco Photo Center and Walgreens offer in-store tape digitization at similar prices. Mail-in services like Legacybox (legacybox.com) and Southtree (southtree.com) provide prepaid boxes — you pack your tapes, mail them, and receive digital files on a USB drive or via download. Prices typically run $15-$30 per tape. This option requires no equipment and gives professional results, but you must trust a company with your originals and wait 2-6 weeks for results.`,
-        warning: `Make a written inventory of every tape you send to a mail-in service, including a description of the content on each one. Reputable services have good track records, but you want documentation if anything is damaged or lost.`,
+        content: `The most convenient option is to send your tapes to a professional service. Costco Photo Center and Walgreens offer in-store tape digitization at similar prices. Mail-in services like Legacybox (legacybox.com) and Southtree (southtree.com) provide prepaid boxes — you pack your tapes, mail them, and receive digital files on a USB drive or via download. Prices typically run $15-$30 per tape. This option requires no equipment and gives professional results. But you must trust a company with your originals and wait 2-6 weeks for results.`,
+        warning: `Make a written inventory of every tape you send to a mail-in service, including a description of the content on each one. Reputable services have good track records. But you want documentation if anything is damaged or lost.`,
       },
       {
         title: `Option 2 — Hire a local AV shop or video transfer business`,
@@ -755,7 +755,7 @@ The biggest practical difference you notice with fiber internet is symmetric spe
 
 Fiber internet is also generally more reliable than cable, with fewer outages and less speed fluctuation during peak hours. This is because fiber has much more capacity than copper, so even when many neighbors are online simultaneously, speeds stay consistent.
 
-The main limitation of fiber internet is availability. While cable internet reaches most American homes, fiber is available in only about 50% of US households as of 2025, and it is being expanded steadily. The biggest national fiber providers are AT&T Fiber, Google Fiber (available in select cities), Frontier Fiber, and Ziply Fiber (Pacific Northwest). Many areas also have local or regional fiber providers. Installation requires a technician to run a fiber cable to your house if one is not already there — this is a one-time process.
+The main limitation of fiber internet is availability. While cable internet reaches most American homes, fiber is available in only about 50% of US households as of 2025. And it is being expanded steadily. The biggest national fiber providers are AT&T Fiber, Google Fiber (available in select cities), Frontier Fiber, and Ziply Fiber (Pacific Northwest). Many areas also have local or regional fiber providers. Installation requires a technician to run a fiber cable to your house if one is not already there — this is a one-time process.
 
 If fiber is available at your address, it is generally worth switching from cable, especially if you can get it at a similar or lower price. Many fiber plans offer better speeds and reliability than cable at the same or lower monthly cost, particularly after cable providers' promotional rates expire.`,
     steps: [
@@ -793,13 +793,13 @@ If fiber is available at your address, it is generally worth switching from cabl
     thumbnailEmoji: ``,
     publishedAt: `2026-04-20`,
     difficulty: `Beginner`,
-    body: `Choosing a technology gift for an older adult in your life is a thoughtful idea, but it requires some careful consideration. The best tech gifts for seniors are devices and tools that are genuinely useful in their daily life, work reliably without constant maintenance, have good customer support, and do not require extensive technical knowledge to operate. A gadget that sits in a box because it was too complicated is worse than no gift at all.
+    body: `Choosing a technology gift for an older adult in your life is a thoughtful idea. But it requires some careful consideration. The best tech gifts for seniors are devices and tools that are genuinely useful in their daily life, work reliably without constant maintenance, have good customer support, and do not require extensive technical knowledge to operate. A gadget that sits in a box because it was too complicated is worse than no gift at all.
 
 The most important factor is often not the device itself but the support that comes with it. A senior who receives a new Amazon Echo Show from a family member who lives nearby and helps set it up, teaches them how to use it over a few sessions, and is available to answer questions will have a completely different experience than someone who receives the same device but has to figure it out alone. Consider the gift of your time and patience alongside — or instead of — expensive hardware.
 
 Before buying a tech gift, ask yourself a few questions: Does the person already have devices they are comfortable with, and will this new gift work alongside them? Does the gift require a subscription or ongoing costs that the recipient needs to commit to? Is the gift relevant to their interests and actual daily needs? A Kindle e-reader is a wonderful gift for a book lover. It is much less useful for someone who does not read regularly.
 
-The tech gifts that tend to work best for older adults share some common traits: they do one or two things very well rather than trying to do everything, they have a straightforward physical design with clear buttons or a simple touchscreen, they are made by a major company with robust customer support, and they make existing activities — reading, watching TV, staying connected with family — noticeably better.
+The tech gifts that tend to work best for older adults share some common traits: they do one or two things very well rather than trying to do everything, they have a straightforward physical design with clear buttons or a simple touchscreen, they are made by a major company with robust customer support. And they make existing activities — reading, watching TV, staying connected with family — noticeably better.
 
 Subscription-based gifts (like a streaming service) should generally not be given without discussing them first. Surprise subscriptions can create billing confusion and a sense of obligation that the recipient did not ask for.`,
     steps: [
@@ -847,7 +847,7 @@ When evaluating a specific refurbished laptop, four things matter most: the proc
     steps: [
       {
         title: `Understand what "certified refurbished" means`,
-        content: `Certified refurbished means the laptop has been inspected by trained staff, any defective parts have been replaced, the device has been cleaned and reset to factory settings, and it comes with some form of warranty. Manufacturer-refurbished (sold directly by Dell, Apple, etc.) is the most reliable tier. Third-party certified refurbished from reputable sellers like Back Market and Amazon Renewed is also trustworthy. "Open box" from Best Buy means the item was returned by a customer, inspected by Best Buy staff, and confirmed working. Avoid unlabeled "used" listings on platforms like eBay unless you can verify the seller's return policy.`,
+        content: `Certified refurbished means the laptop has been inspected by trained staff, any defective parts have been replaced, the device has been cleaned and reset to factory settings. And it comes with some form of warranty. Manufacturer-refurbished (sold directly by Dell, Apple, etc.) is the most reliable tier. Third-party certified refurbished from reputable sellers like Back Market and Amazon Renewed is also trustworthy. "Open box" from Best Buy means the item was returned by a customer, inspected by Best Buy staff, and confirmed working. Avoid unlabeled "used" listings on platforms like eBay unless you can verify the seller's return policy.`,
       },
       {
         title: `Choose a trusted place to buy`,
@@ -880,7 +880,7 @@ When evaluating a specific refurbished laptop, four things matter most: the proc
     thumbnailEmoji: ``,
     publishedAt: `2026-04-20`,
     difficulty: `Beginner`,
-    body: `Choosing between a Windows PC and a Mac is one of the most common computer buying decisions, and it is one that causes a lot of confusion. The honest answer is that both are excellent, capable computers for everyday use — email, web browsing, video calls, documents, and streaming video all work essentially the same on either platform. The choice comes down to your specific situation: what phone you use, what your budget is, whether you need specific software, and how much you value a consistent experience versus flexibility and choice.
+    body: `Choosing between a Windows PC and a Mac is one of the most common computer buying decisions. And it is one that causes a lot of confusion. The honest answer is that both are excellent, capable computers for everyday use — email, web browsing, video calls, documents, and streaming video all work essentially the same on either platform. The choice comes down to your specific situation: what phone you use, what your budget is, whether you need specific software, and how much you value a consistent experience versus flexibility and choice.
 
 Windows runs on computers made by many different manufacturers: Dell, HP, Lenovo, ASUS, Acer, Microsoft (Surface), and many others. This competition keeps prices flexible. You can find a perfectly capable Windows laptop for $400, a mid-range machine for $800, and high-end workstations for $2,000 or more. The variety means you can find a Windows computer to match almost any budget.
 

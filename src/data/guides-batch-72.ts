@@ -780,7 +780,7 @@ Whether LifeLock is worth the cost depends on your situation. If you have alread
     publishedAt: `2026-04-20`,
     body: `Every major web browser has a private browsing mode. In Chrome it is called Incognito. In Firefox it is Private Window. In Safari it is Private Browsing. In Edge it is InPrivate. The name varies, but the behavior is similar — and the misunderstanding about what it does is nearly universal.
 
-Many people believe that private browsing makes them anonymous or invisible online. This is not accurate. What private browsing actually does is more limited, but it does have genuine uses.
+Many people believe that private browsing makes them anonymous or invisible online. This is not accurate. What private browsing actually does is more limited. But it does have genuine uses.
 
 Here is what private mode does do: it does not save your browsing history on your device — websites you visit during a private session are not recorded in your browser history. It does not save cookies after the session ends — when you close the private window, websites forget that you visited or logged in. It does not save form entries or searches to your browser's autocomplete memory.
 

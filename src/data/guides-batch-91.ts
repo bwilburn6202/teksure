@@ -11,7 +11,7 @@ export const guidesBatch91: Guide[] = [
     thumbnailEmoji: ``,
     publishedAt: `2026-04-20`,
     difficulty: `Beginner`,
-    body: `SimpliSafe is a home security system you set up yourself — no tools, no drilling, and no technician visit needed. Everything sticks to your walls and doors with adhesive strips that peel off cleanly when you move. You purchase the hardware once, and you can choose whether or not to pay for professional monitoring. If you skip monitoring, the alarm will still sound loudly if a sensor is triggered — you just handle calling for help yourself. If you add 24/7 professional monitoring, a real person at SimpliSafe's monitoring center will contact you and, if needed, dispatch police or fire services.
+    body: `SimpliSafe is a home security system you set up yourself — no tools, no drilling, and no technician visit needed. Everything sticks to your walls and doors with adhesive strips that peel off cleanly when you move. You purchase the hardware once. And you can choose whether or not to pay for professional monitoring. If you skip monitoring, the alarm will still sound loudly if a sensor is triggered — you just handle calling for help yourself. If you add 24/7 professional monitoring, a real person at SimpliSafe's monitoring center will contact you and, if needed, dispatch police or fire services.
 
 When your SimpliSafe package arrives, you will find a Base Station (the brain of the system), a Keypad (where you enter your PIN), and a set of sensors for doors, windows, and possibly motion. The Base Station connects to your home Wi-Fi and cellular networks, so it keeps working even if your internet goes down. The keypad mounts near your front door.
 
@@ -57,7 +57,7 @@ Setting up SimpliSafe does not require any special technical knowledge. You plac
     thumbnailEmoji: ``,
     publishedAt: `2026-04-20`,
     difficulty: `Beginner`,
-    body: `Ring Alarm is Amazon's home security system that you set up yourself without a professional installer. It uses Wi-Fi (and a cellular backup) to keep your home monitored, and you control everything through the free Ring app on your phone or tablet. Ring sells systems in different sizes depending on how many sensors you need — a small apartment might use a 5-piece kit, while a larger house might need an 8-piece kit or more.
+    body: `Ring Alarm is Amazon's home security system that you set up yourself without a professional installer. It uses Wi-Fi (and a cellular backup) to keep your home monitored. And you control everything through the free Ring app on your phone or tablet. Ring sells systems in different sizes depending on how many sensors you need — a small apartment might use a 5-piece kit, while a larger house might need an 8-piece kit or more.
 
 The system includes a Base Station (the central hub), a Keypad, Contact Sensors for doors and windows, and Motion Detectors. You can expand it later by adding more sensors, a Range Extender to strengthen the signal across a large home, or Ring security cameras. The alarm sounds at 104 decibels — loud enough to alert neighbors.
 
@@ -232,7 +232,7 @@ Eufy also supports end-to-end encryption — meaning the video is scrambled befo
     thumbnailEmoji: ``,
     publishedAt: `2026-04-20`,
     difficulty: `Beginner`,
-    body: `Uber is a service that connects you with nearby drivers who use their own cars to give rides, similar to calling a taxi — but you do everything through a smartphone app instead of a phone call. You tap a few buttons, a driver comes to your exact location, and you are dropped off at your destination. The fare is charged automatically to your credit card or PayPal account, so there is no need to carry cash or fumble with payment at the end of the ride.
+    body: `Uber is a service that connects you with nearby drivers who use their own cars to give rides, similar to calling a taxi — but you do everything through a smartphone app instead of a phone call. You tap a few buttons, a driver comes to your exact location. And you are dropped off at your destination. The fare is charged automatically to your credit card or PayPal account, so there is no need to carry cash or fumble with payment at the end of the ride.
 
 One of the most helpful things about Uber is that you see the price before you confirm the ride. Unlike a taxi where the meter runs and you find out the cost at the end, Uber shows you an upfront fare estimate based on your pickup and destination. You can choose whether to accept that price or cancel at no charge.
 
@@ -279,7 +279,7 @@ This guide is written for someone who has never used Uber before. It covers crea
     thumbnailEmoji: ``,
     publishedAt: `2026-04-20`,
     difficulty: `Beginner`,
-    body: `Lyft is a rideshare service very similar to Uber — you use a smartphone app to request a ride, a nearby driver picks you up in their own car, and you are charged automatically through the app. Both services are available in most US cities and work around the clock. Many people have accounts with both apps and use whichever shows a shorter wait time or lower price on a given day.
+    body: `Lyft is a rideshare service very similar to Uber — you use a smartphone app to request a ride, a nearby driver picks you up in their own car. And you are charged automatically through the app. Both services are available in most US cities and work around the clock. Many people have accounts with both apps and use whichever shows a shorter wait time or lower price on a given day.
 
 Lyft has a few features that make it popular, particularly with people who value safety. Every trip includes real-time tracking, and Lyft lets you share your trip status — including a live map and the driver's name — with a friend or family member. There is also an in-app safety button that connects you to 911 directly from the ride screen.
 
@@ -373,7 +373,7 @@ Swappa is what's called peer-to-peer, meaning you buy directly from another pers
 
 If you are looking to sell your old phone, Swappa is one of the better options because you set your own price and generally receive more money than you would from a carrier trade-in program. Carrier trade-ins are convenient, but they typically give you store credit and offer 30–60% less than market value. On Swappa, you get cash (via PayPal) directly from the buyer.
 
-The site is straightforward to use. You can browse without creating an account, but you will need to register (free) to buy or sell. This guide explains how condition grades work, how to list a phone for sale, and how payment and protection work for both buyers and sellers.`,
+The site is straightforward to use. You can browse without creating an account. But you will need to register (free) to buy or sell. This guide explains how condition grades work, how to list a phone for sale, and how payment and protection work for both buyers and sellers.`,
     steps: [
       {
         title: `Understand the condition grades before browsing or listing`,
@@ -549,7 +549,7 @@ This guide explains who qualifies, where to purchase the pass, and how to use it
       },
       {
         title: `Purchase the pass in person at a federal site`,
-        content: `The most straightforward way to get the Senior Pass is to stop at the entrance station of any participating federal recreation site and ask for it. Common locations include national park entrance booths, US Forest Service ranger stations, and Bureau of Land Management offices. Bring your ID, pay the $80 one-time fee (or $20 for the annual version), and you leave with the physical pass in hand. This option has no shipping wait time and lets you use the pass right away for that same visit.`,
+        content: `The most straightforward way to get the Senior Pass is to stop at the entrance station of any participating federal recreation site and ask for it. Common locations include national park entrance booths, US Forest Service ranger stations, and Bureau of Land Management offices. Bring your ID, pay the $80 one-time fee (or $20 for the annual version). And you leave with the physical pass in hand. This option has no shipping wait time and lets you use the pass right away for that same visit.`,
         tip: `Quick Tip: Not all small ranger stations sell the Senior Pass — call ahead before driving out of your way. The National Park Service maintains a list of issuing locations at store.usgs.gov.`,
       },
       {
@@ -750,7 +750,7 @@ The Schlage Home app is where you manage access codes, view entry logs (a histor
     thumbnailEmoji: ``,
     publishedAt: `2026-04-20`,
     difficulty: `Beginner`,
-    body: `TP-Link Kasa makes some of the most popular smart light bulbs available in the US, and one big reason is that they do not require a separate hub device. Many competing smart bulbs — including some Philips Hue products — need you to purchase and plug in a central hub before the bulbs work. Kasa bulbs connect directly to your existing home Wi-Fi network, which means you screw in the bulb, download a free app, and you are ready to go.
+    body: `TP-Link Kasa makes some of the most popular smart light bulbs available in the US, and one big reason is that they do not require a separate hub device. Many competing smart bulbs — including some Philips Hue products — need you to purchase and plug in a central hub before the bulbs work. Kasa bulbs connect directly to your existing home Wi-Fi network, which means you screw in the bulb, download a free app. And you are ready to go.
 
 Kasa makes several types of smart bulbs. The basic models offer adjustable brightness and warm to cool white light. The color models (often called KL125 or similar) also let you choose from millions of colors — red, green, blue, purple, or any custom shade. All models can be turned on and off remotely from your phone, set on a schedule, and controlled with Amazon Alexa or Google Home voice commands.
 
@@ -794,7 +794,7 @@ This guide covers the full setup from screwing in the bulb to setting a daily sc
     thumbnailEmoji: ``,
     publishedAt: `2026-04-20`,
     difficulty: `Intermediate`,
-    body: `Lutron Caséta is widely considered the most reliable smart dimmer switch system available for home use. While smart bulbs like Kasa or Philips Hue replace the bulb itself, Caséta replaces the light switch on the wall. This approach has a significant advantage: any bulb in the fixture — LED, halogen, or fluorescent — works correctly, and you never have to worry about someone turning the switch off and disconnecting the smart bulb from power.
+    body: `Lutron Caséta is widely considered the most reliable smart dimmer switch system available for home use. While smart bulbs like Kasa or Philips Hue replace the bulb itself, Caséta replaces the light switch on the wall. This approach has a significant advantage: any bulb in the fixture — LED, halogen, or fluorescent — works correctly. And you never have to worry about someone turning the switch off and disconnecting the smart bulb from power.
 
 Lutron has been manufacturing lighting controls since the 1960s and is known in the professional electrician world for quality. The Caséta line brings that reliability to the consumer market at a moderate price. A single dimmer switch costs around $60 to $75, which is more than a smart bulb, but covers every light in that fixture permanently.
 

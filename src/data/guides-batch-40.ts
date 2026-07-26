@@ -19,7 +19,7 @@ You can use Bluesky on your phone (iPhone or Android) or in any web browser at b
 
 One thing people like about Bluesky is that it lets you create custom "starter packs" — curated lists of accounts to follow, organized around topics like news, science, cooking, or local communities. When you first join, finding a good starter pack makes the experience much better right away.
 
-Your username on Bluesky ends with .bsky.social by default (for example, @janedoe.bsky.social), but you can also connect your own domain name if you have one — a feature popular with journalists and organizations.
+Your username on Bluesky ends with .bsky.social by default (for example, @janedoe.bsky.social). But you can also connect your own domain name if you have one — a feature popular with journalists and organizations.
 
 Bluesky is worth joining if you enjoyed Twitter in its earlier days, want to follow real-time conversations about news and current events, or want another way to stay connected with friends and public figures.`,
     steps: [
@@ -201,7 +201,7 @@ Many people play these games as part of their morning routine, and sharing score
     difficulty: `Beginner`,
     body: `WhatsApp Channels is a feature added to WhatsApp in 2023 that lets you follow public broadcasts from organizations, news outlets, sports teams, and public figures — right inside the same app you use to message friends and family.
 
-Think of it like following someone on Instagram or subscribing to a newsletter, but the updates arrive in WhatsApp. Channels are one-way: you receive messages from the channel, but you cannot reply or start a conversation with the sender. Your identity as a follower is private — the channel administrator cannot see who is subscribed.
+Think of it like following someone on Instagram or subscribing to a newsletter, but the updates arrive in WhatsApp. Channels are one-way: you receive messages from the channel. But you cannot reply or start a conversation with the sender. Your identity as a follower is private — the channel administrator cannot see who is subscribed.
 
 This makes WhatsApp Channels a great way to receive important information without giving up your phone number to a company, and without the noise of a busy group chat.
 
@@ -477,7 +477,7 @@ Most noise-canceling headphones also include a "Transparency Mode" — this inte
     thumbnailEmoji: ``,
     publishedAt: `2026-04-19`,
     difficulty: `Beginner`,
-    body: `If you find yourself squinting at your iPhone screen, holding the phone at arm's length, or struggling to read small menu text — you are not alone, and you do not have to put up with it. iPhone has several built-in settings that make text and the whole display bigger and easier to see.
+    body: `If you find yourself squinting at your iPhone screen, holding the phone at arm's length, or struggling to read small menu text — you are not alone. And you do not have to put up with it. iPhone has several built-in settings that make text and the whole display bigger and easier to see.
 
 These settings are free, built in, and completely reversible. You can turn them up and down as much as you like.
 
@@ -922,7 +922,7 @@ The steps below cover Gmail and Outlook/Hotmail, which together cover the majori
     difficulty: `Beginner`,
     body: `Online and mobile banking has made managing money much more convenient — check your balance, pay bills, transfer money, and deposit checks from your phone. But it also means your bank account is one stolen password away from serious financial loss if you are not careful.
 
-The good news: a handful of simple habits dramatically reduce your risk. Banks themselves have strong fraud protections, but they work best when you also take basic precautions.
+The good news: a handful of simple habits dramatically reduce your risk. Banks themselves have strong fraud protections. But they work best when you also take basic precautions.
 
 **The most important things:**
 1. Use two-factor authentication (2FA) on your bank account — almost every bank now offers this

@@ -35,7 +35,7 @@ export const guidesBatch13: Guide[] = [
       },
       {
         title: `Join the visit when it's time`,
-        content: 'At your appointment time, tap or click the link your doctor sent. You may be placed in a virtual "waiting room" for a minute or two before the doctor joins. If the platform asks for permission to access your camera and microphone, tap "Allow." Once the doctor appears on screen, the visit works just like an in-person appointment — you talk, they examine you visually, and they can review your records and send prescriptions electronically.',
+        content: 'At your appointment time, tap or click the link your doctor sent. You may be placed in a virtual "waiting room" for a minute or two before the doctor joins. If the platform asks for permission to access your camera and microphone, tap "Allow." Once the doctor appears on screen, the visit works just like an in-person appointment — you talk, they examine you visually. And they can review your records and send prescriptions electronically.',
       },
       {
         title: `What to do if the technology isn't working`,

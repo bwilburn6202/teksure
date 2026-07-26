@@ -114,7 +114,7 @@ When you look up a product, you see a chart showing the price over the past mont
 
 The browser extension, called The Camelizer, adds a small chart icon on every Amazon product page — click it to see the price history without leaving Amazon.
 
-CamelCamelCamel also offers price drop alerts: tell it the price you want to pay, and it emails you when the product reaches that price. This is the set-it-and-forget-it version of price tracking.`,
+CamelCamelCamel also offers price drop alerts: tell it the price you want to pay. And it emails you when the product reaches that price. This is the set-it-and-forget-it version of price tracking.`,
     steps: [
       {
         title: 'Look Up Any Amazon Product',
@@ -198,7 +198,7 @@ Gas prices fluctuate with oil markets, local taxes, and station competition. Kee
     difficulty: 'Beginner',
     body: `Most major concerts, sports games, and live events have moved to mobile-only ticketing. Instead of paper tickets or printed PDFs, your ticket lives in an app and displays as a rotating QR code that you show to staff at the entrance. No paper, no printing required.
 
-This change has frustrated some ticket holders who preferred paper, but mobile tickets have real advantages: you can't lose them (they're always in your phone), they're harder to counterfeit (the QR code rotates every few seconds making screenshots unusable), and you can transfer them to someone else digitally at the last minute.
+This change has frustrated some ticket holders who preferred paper, but mobile tickets have real advantages: you can't lose them (they're always in your phone), they're harder to counterfeit (the QR code rotates every few seconds making screenshots unusable). And you can transfer them to someone else digitally at the last minute.
 
 Ticketmaster is the largest ticket vendor and uses their Ticketmaster app for mobile tickets. AXS is another major platform used by many sports teams and venues. StubHub (resale market) and SeatGeek also use mobile delivery for many tickets.
 

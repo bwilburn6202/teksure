@@ -74,7 +74,7 @@ Keep your medication list and emergency contacts updated here. It takes five min
 
 **Steps tracking — what to expect**
 
-Your iPhone counts a step every time it detects the motion of walking. It is not perfectly accurate, but it is remarkably close for everyday tracking. Aim for a general sense of your activity level rather than treating the number as exact.
+Your iPhone counts a step every time it detects the motion of walking. It is not perfectly accurate. But it is remarkably close for everyday tracking. Aim for a general sense of your activity level rather than treating the number as exact.
 
 To see your steps: Open Health → tap Browse → tap Activity → tap Steps. You will see today's count and a bar chart of recent days. Tap "Show All Data" to see individual daily totals going back as far as your phone has been tracking.
 
@@ -146,7 +146,7 @@ To check if your doctor's office supports this: Open Health → tap your profile
 
 **Method 1: iPhone to iPhone — automatic sharing (no typing needed)**
 
-This is the fastest method, but it has two requirements:
+This is the fastest method. But it has two requirements:
 1. Both iPhones need a reasonably current version of iOS (this works on every iPhone still getting updates).
 2. The person connecting must be in your Contacts app with their Apple ID email address listed.
 

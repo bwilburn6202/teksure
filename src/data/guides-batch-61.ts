@@ -161,7 +161,7 @@ Important disclaimer: This guide is for informational purposes only. A medicatio
     difficulty: `Beginner`,
     body: `Every major health insurance company — including UnitedHealthcare, Blue Cross Blue Shield, Aetna, Cigna, Humana, and Medicare Advantage plans — now offers a free smartphone app that lets you manage your benefits without calling customer service or sorting through paper documents.
 
-These apps vary slightly from company to company, but they all include the same core features. You can see your current coverage, find doctors and hospitals that are in your plan's network, view the status of recent claims, see your deductible and out-of-pocket spending, and often access your digital insurance card.
+These apps vary slightly from company to company. But they all include the same core features. You can see your current coverage, find doctors and hospitals that are in your plan's network, view the status of recent claims, see your deductible and out-of-pocket spending, and often access your digital insurance card.
 
 Knowing which doctors are "in-network" is especially important because visiting an out-of-network provider can cost you a lot more money, sometimes thousands of dollars more for a procedure. The provider search in your insurance app is updated more often than the paper directory you may have received in the mail, so it is a more reliable source.
 
@@ -213,7 +213,7 @@ Teladoc is one of the largest telehealth companies in the United States. Many em
 
 The way it works is straightforward. You create an account, choose the type of visit you need (general medicine, mental health, dermatology, etc.), and request an appointment. For general medical care, you can often get a visit within an hour. For specialty care, you may need to schedule in advance.
 
-During the visit, a doctor or nurse practitioner will review your medical history, ask about your symptoms, and may be able to prescribe medication if appropriate. At the end of the appointment, a visit summary is sent to your email, and you can request that a summary be sent to your regular doctor.
+During the visit, a doctor or nurse practitioner will review your medical history, ask about your symptoms, and may be able to prescribe medication if appropriate. At the end of the appointment, a visit summary is sent to your email. And you can request that a summary be sent to your regular doctor.
 
 Similar services to Teladoc include MDLive, Amwell, Doctor on Demand, and Amazon Clinic. Many insurance apps also have a built-in telehealth option.
 
@@ -354,7 +354,7 @@ Important disclaimer: This guide is for informational purposes only. No fall det
 
 On an iPhone, the Health app records your steps, distance walked, and flights of stairs climbed. On Android phones, Google Fit tracks the same data. Samsung phones have their own Health app as well. All of these apps store historical data going back months, so you can see how active you have been over time.
 
-The commonly cited goal of 10,000 steps per day is a reasonable benchmark for general health, but it is not a magic number. Research published in JAMA Internal Medicine found significant health benefits starting at 7,000 steps per day, and benefits continued to increase above that. If 10,000 steps feels overwhelming, starting with a goal of 5,000 and building from there is a perfectly reasonable approach.
+The commonly cited goal of 10,000 steps per day is a reasonable benchmark for general health. But it is not a magic number. Research published in JAMA Internal Medicine found significant health benefits starting at 7,000 steps per day, and benefits continued to increase above that. If 10,000 steps feels overwhelming, starting with a goal of 5,000 and building from there is a perfectly reasonable approach.
 
 Your phone tracks steps most accurately when you carry it in your pocket or hold it in your hand while walking. It does not track steps as accurately when it is sitting in a bag or on a table.
 
@@ -592,7 +592,7 @@ Quick Tip: Organize your list by aisle or store section. Both OurGroceries and A
 
 There are four main services to know about, and each one works a bit differently.
 
-Instacart works with over 1,400 grocery chains including Kroger, Costco, Safeway, Publix, Aldi, and many local stores. You order through the Instacart app, and a local shopper picks your items and delivers them, usually within one to two hours. You pay a delivery fee per order (around $3–$10), plus a service fee, and it is customary to tip your shopper. For frequent users, Instacart+ costs about $100 per year and includes free delivery on orders over $35.
+Instacart works with over 1,400 grocery chains including Kroger, Costco, Safeway, Publix, Aldi, and many local stores. You order through the Instacart app, and a local shopper picks your items and delivers them, usually within one to two hours. You pay a delivery fee per order (around $3–$10), plus a service fee. And it is customary to tip your shopper. For frequent users, Instacart+ costs about $100 per year and includes free delivery on orders over $35.
 
 Shipt is owned by Target and works similarly to Instacart, but focuses more heavily on Target and a smaller selection of other stores. Same-day delivery, shopper model, and tipping applies. A Shipt membership is about $100 per year for free delivery.
 

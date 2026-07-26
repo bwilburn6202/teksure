@@ -253,7 +253,7 @@ This guide walks through doing all three in the Alexa app on your phone, plus th
       {
         title: 'Turn on auto-delete for future recordings',
         content: 'In Alexa Privacy, scroll to "Manage Your Alexa Data." Tap "Choose how long to save recordings." Pick "Don\'t save recordings" (most private) or "3 months" or "18 months." If you pick "Don\'t save recordings," Alexa still functions but the recordings vanish as soon as they are processed. You give up some personalization (Alexa learns less about your voice) in exchange for less data on Amazon servers.',
-        warning: 'If you choose "Don\'t save recordings," you can still listen to recent recordings for about 30 minutes after they are made, but they will not stay in your history.',
+        warning: 'If you choose "Don\'t save recordings," you can still listen to recent recordings for about 30 minutes after they are made. But they will not stay in your history.',
       },
       {
         title: 'Turn off voice recording on individual Echo devices',
@@ -291,7 +291,7 @@ This guide shows how to check if you have Recall, turn it off, and delete the sc
     steps: [
       {
         title: 'Check if your PC has Recall',
-        content: 'Recall only runs on Copilot+ PCs — these are laptops with a Snapdragon X, Intel Core Ultra (Series 2), or AMD Ryzen AI 300 chip. Most regular Windows 11 laptops do NOT have Recall. To check: Press the Windows key, type "Recall," and press Enter. If a Recall app opens, you have it. If Windows says "no results," you do not have it, and you do not need to do anything else.',
+        content: 'Recall only runs on Copilot+ PCs — these are laptops with a Snapdragon X, Intel Core Ultra (Series 2), or AMD Ryzen AI 300 chip. Most regular Windows 11 laptops do NOT have Recall. To check: Press the Windows key, type "Recall," and press Enter. If a Recall app opens, you have it. If Windows says "no results," you do not have it. And you do not need to do anything else.',
         tip: 'Quick Tip: If you do not have Recall, the rest of this guide does not apply. But you can still tighten Windows 11 privacy — see our guide on Windows 11 privacy settings worth reviewing.',
       },
       {

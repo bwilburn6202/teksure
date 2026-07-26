@@ -16,7 +16,7 @@ export const guidesBatch12: Guide[] = [
     thumbnailEmoji: '',
     publishedAt: '2026-04-19',
     difficulty: 'Beginner',
-    body: "Apple Intelligence is Apple's built-in AI assistant that can summarize emails, rewrite your messages, find old photos by describing them, and help with writing. It's free, already on your iPhone, and you don't need to download anything extra. It works on iPhone 15 Pro and newer, and on iPhone 15 and older models running iOS 18 or later with enough memory.",
+    body: "Apple Intelligence is Apple's built-in AI assistant that can summarize emails, rewrite your messages, find old photos by describing them, and help with writing. It's free, already on your iPhone. And you don't need to download anything extra. It works on iPhone 15 Pro and newer, and on iPhone 15 and older models running iOS 18 or later with enough memory.",
     steps: [
       {
         title: 'Check if your iPhone supports Apple Intelligence',
@@ -356,7 +356,7 @@ export const guidesBatch12: Guide[] = [
       },
       {
         title: 'Create a shared album for family',
-        content: `Tap the Albums tab (the square icon with a plus sign). Tap "New album," give it a name like "Family 2025," and select photos to add. Tap "Share" inside the album and enter a family member's email or phone number. They'll receive a link to view the album — they don't need a Google account to view it, but they do if they want to add their own photos.`,
+        content: `Tap the Albums tab (the square icon with a plus sign). Tap "New album," give it a name like "Family 2025," and select photos to add. Tap "Share" inside the album and enter a family member's email or phone number. They'll receive a link to view the album — they don't need a Google account to view it. But they do if they want to add their own photos.`,
       },
     ],
   },
@@ -547,7 +547,7 @@ export const guidesBatch12: Guide[] = [
     thumbnailEmoji: '',
     publishedAt: '2026-04-19',
     difficulty: 'Beginner',
-    body: "Having your Facebook account hacked is upsetting and stressful. Scammers sometimes break into accounts and change the password and email address so you can't get back in. Facebook has a dedicated recovery process for exactly this situation, and it doesn't require you to remember your old password.",
+    body: "Having your Facebook account hacked is upsetting and stressful. Scammers sometimes break into accounts and change the password and email address so you can't get back in. Facebook has a dedicated recovery process for exactly this situation. And it doesn't require you to remember your old password.",
     steps: [
       {
         title: 'Use the "Forgot password?" link on Facebook',

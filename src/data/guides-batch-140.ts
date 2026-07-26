@@ -210,7 +210,7 @@ If you normally use Waze for traffic and navigation, note that Waze does not sup
     publishedAt: '2026-05-06',
     lastVerifiedAt: '2026-05-06',
     difficulty: 'Beginner',
-    body: `Typing on a phone screen can be frustrating — the keys are small, autocorrect makes strange changes, and it takes far longer than speaking. Voice-to-text lets you speak naturally, and the phone converts your words to text. It works in messages, email, notes, searches, and almost everywhere text can be entered.
+    body: `Typing on a phone screen can be frustrating — the keys are small, autocorrect makes strange changes. And it takes far longer than speaking. Voice-to-text lets you speak naturally, and the phone converts your words to text. It works in messages, email, notes, searches, and almost everywhere text can be entered.
 
 This feature is built into every modern iPhone and Android phone — no additional app or subscription needed.
 

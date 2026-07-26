@@ -344,7 +344,7 @@ You can compare Medicare Advantage plans available in your area using the offici
     difficulty: `Intermediate`,
     body: `Social Security Disability Insurance, or SSDI, is a federal program that provides monthly payments to people who cannot work because of a serious medical condition. It is funded through Social Security taxes that workers pay throughout their careers. If you or a family member has a disabling condition and has worked enough years in jobs covered by Social Security, you may qualify.
 
-To be eligible, you generally must have a medical condition that has lasted or is expected to last at least 12 months (or result in death), and that prevents you from doing any substantial work. The Social Security Administration (SSA) uses a detailed process to evaluate claims, and approval can take several months. Many first applications are denied, but you have the right to appeal.
+To be eligible, you generally must have a medical condition that has lasted or is expected to last at least 12 months (or result in death), and that prevents you from doing any substantial work. The Social Security Administration (SSA) uses a detailed process to evaluate claims, and approval can take several months. Many first applications are denied. But you have the right to appeal.
 
 Before you apply, gather important documents: your Social Security number, birth certificate, medical records and doctor contact information, a list of medications and conditions, your work history for the past 15 years, and tax information. Having these ready will speed up the process a lot.
 
@@ -536,7 +536,7 @@ The Marketplace open enrollment period runs from November 1 to January 15 in mos
 
 Employer open enrollment is set by your employer and usually happens in the fall — often in October or November — with coverage starting January 1. Check with your HR department for your specific dates.
 
-Understanding plan types helps you compare your options. The most common are HMO, PPO, EPO, and HDHP plans. HMOs require you to choose a primary care doctor and get referrals for specialists. PPOs offer more flexibility to see any doctor, but usually cost more. HDHPs have lower premiums but higher deductibles, and they pair well with Health Savings Accounts (HSAs). EPOs are a hybrid — no referrals needed, but only in-network care is covered.
+Understanding plan types helps you compare your options. The most common are HMO, PPO, EPO, and HDHP plans. HMOs require you to choose a primary care doctor and get referrals for specialists. PPOs offer more flexibility to see any doctor, but usually cost more. HDHPs have lower premiums but higher deductibles. And they pair well with Health Savings Accounts (HSAs). EPOs are a hybrid — no referrals needed, but only in-network care is covered.
 
 When comparing plans, look at the monthly premium (what you pay every month whether or not you use healthcare), the deductible (what you pay before insurance kicks in), and the out-of-pocket maximum (the most you could ever pay in a year). Also check that your doctors and preferred hospitals are in-network.`,
     steps: [
@@ -547,7 +547,7 @@ When comparing plans, look at the monthly premium (what you pay every month whet
       },
       {
         title: `Understand the plan types before you compare`,
-        content: `Health insurance plans come in several types. HMOs require a primary care physician who coordinates your care and provides referrals to specialists — they tend to have lower premiums. PPOs allow you to see any doctor in or out of network and do not require referrals — they tend to cost more. HDHPs have low monthly premiums but high deductibles, and they pair with a Health Savings Account (HSA) to help you save money tax-free for medical expenses.`,
+        content: `Health insurance plans come in several types. HMOs require a primary care physician who coordinates your care and provides referrals to specialists — they tend to have lower premiums. PPOs allow you to see any doctor in or out of network and do not require referrals — they tend to cost more. HDHPs have low monthly premiums but high deductibles. And they pair with a Health Savings Account (HSA) to help you save money tax-free for medical expenses.`,
       },
       {
         title: `Check if you qualify for subsidies or Medicaid`,
@@ -622,7 +622,7 @@ If you find a streamer you enjoy, you can follow them for free. When they go liv
     thumbnailEmoji: ``,
     publishedAt: `2026-04-20`,
     difficulty: `Beginner`,
-    body: `Discord is a free communication app that combines voice calls, video chats, and text messaging in one place. It started as a tool for gamers to talk while playing together, but it has grown into a general-purpose platform for communities of all kinds — from hobby groups and book clubs to family servers and business teams.
+    body: `Discord is a free communication app that combines voice calls, video chats, and text messaging in one place. It started as a tool for gamers to talk while playing together. But it has grown into a general-purpose platform for communities of all kinds — from hobby groups and book clubs to family servers and business teams.
 
 The core idea behind Discord is "servers" — think of them as virtual gathering places. A server can have multiple rooms, called channels. Some channels are for text messages. Others are voice channels where you can speak and hear others in real time, like a group phone call that you can drop in and out of. There are also video channels for face-to-face conversations.
 
@@ -717,7 +717,7 @@ Reddit can feel overwhelming at first because of how much content exists. The ke
     thumbnailEmoji: ``,
     publishedAt: `2026-04-20`,
     difficulty: `Beginner`,
-    body: `Trello is a free visual organization tool that helps you track tasks and projects using boards, lists, and cards. It is available on computers, phones, and tablets, and it syncs across all your devices. Whether you are planning a home renovation, tracking a medical treatment plan, or managing a family move, Trello gives you a clear visual picture of everything that needs to happen.
+    body: `Trello is a free visual organization tool that helps you track tasks and projects using boards, lists, and cards. It is available on computers, phones, and tablets. And it syncs across all your devices. Whether you are planning a home renovation, tracking a medical treatment plan, or managing a family move, Trello gives you a clear visual picture of everything that needs to happen.
 
 The basic structure is easy to understand. A board is like a whiteboard for a single project — you might have a board called "Home Remodel" or "Vacation Planning." Inside each board, you create lists — vertical columns with names like "To Do," "In Progress," and "Done." Inside each list, you add cards — individual tasks, ideas, or items. You can drag cards from one list to another as things move forward.
 
@@ -766,7 +766,7 @@ Trello works best for ongoing projects with multiple steps. For simple daily to-
     difficulty: `Beginner`,
     body: `Todoist is one of the most popular to-do list apps in the world, and it is clear why. It is clean, fast, and available on every device — iPhone, Android, Mac, Windows, and in any web browser. You can use it to track daily chores, grocery lists, medical appointments, home maintenance tasks, and anything else you need to remember.
 
-The app centers on a simple idea: everything you need to do goes into Todoist, and you check things off as you complete them. Tasks can have due dates, reminders, priority levels, and notes attached to them. You can organize tasks into projects — like "Grocery List," "Health," or "Home Repairs" — and switch between them easily.
+The app centers on a simple idea: everything you need to do goes into Todoist. And you check things off as you complete them. Tasks can have due dates, reminders, priority levels, and notes attached to them. You can organize tasks into projects — like "Grocery List," "Health," or "Home Repairs" — and switch between them easily.
 
 One of Todoist's most useful features is natural language input. You can type things like "Call the dentist tomorrow at 2pm" and Todoist automatically creates a task with a due date and time set correctly. You do not have to navigate through date pickers and menus.
 
@@ -858,7 +858,7 @@ For anyone who wants more than a basic list but finds complex project management
     thumbnailEmoji: ``,
     publishedAt: `2026-04-20`,
     difficulty: `Intermediate`,
-    body: `Asana is a project management app that was originally built for business teams, but it works very well for personal projects and family coordination too. If you have ever felt overwhelmed by a big goal — renovating a room, planning a family reunion, managing a move, or organizing a medical process — Asana can help you break it down into clear, trackable steps.
+    body: `Asana is a project management app that was originally built for business teams. But it works very well for personal projects and family coordination too. If you have ever felt overwhelmed by a big goal — renovating a room, planning a family reunion, managing a move, or organizing a medical process — Asana can help you break it down into clear, trackable steps.
 
 The app is free for personal use with up to 15 members in a workspace. It is available on iPhone, Android, Mac, Windows, and in web browsers. The free plan covers the core features that most individuals and families need.
 

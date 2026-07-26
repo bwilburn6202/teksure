@@ -31,7 +31,7 @@ export const guidesBatch38: Guide[] = [
       },
       {
         title: 'Check your daily health dashboard',
-        content: `The Samsung Health home screen shows your steps, active calories, heart rate, and sleep data in one place. Tap any card to see the full history. The app can also detect irregular heart rhythm and high or low heart rate and send you a notification — go to Samsung Health → Settings → Notifications to turn these on. These alerts are not medical diagnoses, but they can prompt you to check in with your doctor.`,
+        content: `The Samsung Health home screen shows your steps, active calories, heart rate, and sleep data in one place. Tap any card to see the full history. The app can also detect irregular heart rhythm and high or low heart rate and send you a notification — go to Samsung Health → Settings → Notifications to turn these on. These alerts are not medical diagnoses. But they can prompt you to check in with your doctor.`,
         warning: `The Galaxy Ring is a wellness device, not a medical device. Its readings should not be used to diagnose or treat any health condition. Always consult your doctor for medical concerns.`,
       },
     ],
@@ -79,11 +79,11 @@ export const guidesBatch38: Guide[] = [
     thumbnailEmoji: '',
     publishedAt: '2026-04-19',
     difficulty: 'Beginner',
-    body: `A VPN — short for Virtual Private Network — is software that encrypts your internet connection and routes it through a server in another location. When you use a VPN, websites you visit see the VPN server's location instead of your real one. Anyone watching the network you're on — your internet provider, or the owner of a coffee shop WiFi — can't read your traffic. VPNs are useful in specific situations, but you don't need one for everyday browsing on your home network.`,
+    body: `A VPN — short for Virtual Private Network — is software that encrypts your internet connection and routes it through a server in another location. When you use a VPN, websites you visit see the VPN server's location instead of your real one. Anyone watching the network you're on — your internet provider, or the owner of a coffee shop WiFi — can't read your traffic. VPNs are useful in specific situations. But you don't need one for everyday browsing on your home network.`,
     steps: [
       {
         title: 'Understand what a VPN does and does not do',
-        content: `A VPN protects your traffic from being read by your internet provider, the WiFi network owner, or anyone intercepting data on the same network as you. It does NOT make you completely anonymous online — websites still know who you are when you are signed in to them. It does NOT protect you from phishing scams, malware, or viruses. It does NOT prevent websites from tracking you with cookies. Think of a VPN as a privacy tool, not a security tool — it hides your browsing, but it does not make you immune to scams.`,
+        content: `A VPN protects your traffic from being read by your internet provider, the WiFi network owner, or anyone intercepting data on the same network as you. It does NOT make you completely anonymous online — websites still know who you are when you are signed in to them. It does NOT protect you from phishing scams, malware, or viruses. It does NOT prevent websites from tracking you with cookies. Think of a VPN as a privacy tool, not a security tool — it hides your browsing. But it does not make you immune to scams.`,
         tip: `The most common legitimate reason to use a VPN is when using public WiFi at a coffee shop, airport, hotel, or library. On your home network, a VPN is generally not necessary for most people.`,
       },
       {
@@ -121,7 +121,7 @@ export const guidesBatch38: Guide[] = [
       {
         title: 'Enter your email address and check',
         content: `Type your email address into the search box and press "pwned?" The site will tell you one of two things: a green banner saying "Good news — no pwnage found!" meaning your email has not appeared in any known breach database; or a red banner listing the breaches your email was found in, with the date of each breach and what data was exposed (usually email address, passwords, names, etc.).`,
-        tip: `The site is completely safe — it does not store the email addresses you search, and it is used by the Australian government, the FBI, and the UK National Cyber Security Centre.`,
+        tip: `The site is completely safe — it does not store the email addresses you search. And it is used by the Australian government, the FBI, and the UK National Cyber Security Centre.`,
       },
       {
         title: 'What to do if your email was breached',
@@ -242,7 +242,7 @@ export const guidesBatch38: Guide[] = [
     thumbnailEmoji: '',
     publishedAt: '2026-04-19',
     difficulty: 'Beginner',
-    body: `Streaming services have replaced cable TV for millions of Americans, but there are now so many options that choosing can feel overwhelming. The good news: most people do not need more than two or three services, and most offer a free trial. This guide compares the major streaming services so you can pick what fits your tastes and budget without paying for things you will not watch.`,
+    body: `Streaming services have replaced cable TV for millions of Americans. But there are now so many options that choosing can feel overwhelming. The good news: most people do not need more than two or three services, and most offer a free trial. This guide compares the major streaming services so you can pick what fits your tastes and budget without paying for things you will not watch.`,
     steps: [
       {
         title: 'Know the major paid services and what they specialize in',
@@ -308,7 +308,7 @@ export const guidesBatch38: Guide[] = [
     thumbnailEmoji: '',
     publishedAt: '2026-04-19',
     difficulty: 'Intermediate',
-    body: `Your WiFi router connects all your devices to the internet, but it can also be a security vulnerability if it is not set up correctly. Many people still use the factory default password, which is publicly known or printed on a sticker anyone can read. Securing your router takes about 15 minutes and protects every device in your home — phones, computers, smart TVs, and smart home gadgets.`,
+    body: `Your WiFi router connects all your devices to the internet. But it can also be a security vulnerability if it is not set up correctly. Many people still use the factory default password, which is publicly known or printed on a sticker anyone can read. Securing your router takes about 15 minutes and protects every device in your home — phones, computers, smart TVs, and smart home gadgets.`,
     steps: [
       {
         title: `Find your router's login page`,
@@ -457,7 +457,7 @@ Parents can use Screen Time to manage a child's phone remotely through Family Sh
       },
       {
         title: 'Use Alexa+ for health and daily living help',
-        content: `Alexa+ can also handle health questions conversationally: "Alexa, what are the symptoms of low blood pressure?" or "Alexa, my doctor mentioned I should watch my sodium intake — what foods are high in sodium?" The AI draws on reliable health sources. For medication reminders, smart home routines, and calendar management, Alexa+ works the same as before, but you can set these up in one conversation instead of giving a separate command for each step.`,
+        content: `Alexa+ can also handle health questions conversationally: "Alexa, what are the symptoms of low blood pressure?" or "Alexa, my doctor mentioned I should watch my sodium intake — what foods are high in sodium?" The AI draws on reliable health sources. For medication reminders, smart home routines, and calendar management, Alexa+ works the same as before. But you can set these up in one conversation instead of giving a separate command for each step.`,
       },
     ],
   },
@@ -592,7 +592,7 @@ Parents can use Screen Time to manage a child's phone remotely through Family Sh
   {
     slug: 'how-to-spot-ai-generated-images',
     title: 'How to Tell If a Photo Was Made by AI',
-    excerpt: `AI-generated images are becoming harder to spot, but there are specific signs to look for — and free tools that can help detect them automatically.`,
+    excerpt: `AI-generated images are becoming harder to spot. But there are specific signs to look for — and free tools that can help detect them automatically.`,
     category: 'safety-guides',
     tags: ['AI images', 'deepfake', 'media literacy', 'fake photos', 'disinformation', 'scam awareness'],
     readTime: '5 min',

@@ -111,7 +111,7 @@ Quick Tip: The Social Security Administration's free online tool at ssa.gov/bene
       },
       {
         title: `Calculate the break-even point`,
-        content: `Subtract the age-62 monthly amount from the age-67 monthly amount to find the monthly difference. Then calculate how many months it would take to recover what you gave up by waiting. For example: if waiting gives you $300 more per month, and you gave up 60 months of payments, your break-even is 60 × (original amount) ÷ $300. Or use the SSA's online calculator to do this automatically.`,
+        content: `Subtract the age-62 monthly amount from the age-67 monthly amount to find the monthly difference. Then calculate how many months it would take to recover what you gave up by waiting. For example: if waiting gives you $300 more per month. And you gave up 60 months of payments, your break-even is 60 × (original amount) ÷ $300. Or use the SSA's online calculator to do this automatically.`,
       },
       {
         title: `Consider your health and financial situation`,
@@ -203,7 +203,7 @@ A will (formally called a "last will and testament") is a document that says who
 
 **A living trust**
 
-A revocable living trust is a legal arrangement where you place your assets into a trust that you control during your lifetime. When you die (or become incapacitated), a successor trustee you named takes over and distributes assets according to your instructions — without probate. Trusts offer more privacy and can save time and legal fees, but they take more effort to set up.
+A revocable living trust is a legal arrangement where you place your assets into a trust that you control during your lifetime. When you die (or become incapacitated), a successor trustee you named takes over and distributes assets according to your instructions — without probate. Trusts offer more privacy and can save time and legal fees. But they take more effort to set up.
 
 **Durable power of attorney**
 
@@ -491,7 +491,7 @@ Quick Tip: The Medicare Care Compare tool at medicare.gov lets you search for an
     difficulty: `Beginner`,
     body: `Being a long-distance caregiver — someone who helps care for an aging parent or relative from miles away — is one of the hardest roles a person can take on. You want to help, but you cannot be there in person every day.
 
-Technology has created tools that make long-distance caregiving more manageable. None of them replace in-person care or professional help, but they can give you more visibility, peace of mind, and a stronger connection with your loved one.
+Technology has created tools that make long-distance caregiving more manageable. None of them replace in-person care or professional help. But they can give you more visibility, peace of mind, and a stronger connection with your loved one.
 
 **Video calling**
 
@@ -679,7 +679,7 @@ Two-factor authentication (2FA) means that even if someone learns your password,
 
 **Recognize fake bank emails (phishing)**
 
-Criminals send emails that look exactly like messages from your bank. They create a sense of urgency — "Your account has been suspended!" — and include a link to a fake website that captures your login. Warning signs include: the email address does not match the bank's real domain, the link URL looks unusual, and they ask for your password or full account number.
+Criminals send emails that look exactly like messages from your bank. They create a sense of urgency — "Your account has been suspended!" — and include a link to a fake website that captures your login. Warning signs include: the email address does not match the bank's real domain, the link URL looks unusual. And they ask for your password or full account number.
 
 Your real bank will never ask for your password by email or phone. If you receive a suspicious email, do not click anything — call the number on the back of your debit card instead.
 
@@ -768,7 +768,7 @@ Quick Tip: If someone you have never met in person asks for money — in any for
       },
       {
         title: `Get emotional and practical support`,
-        content: `Romance scam victims often feel ashamed, but there is nothing to be ashamed of — you were deliberately targeted by a professional manipulator. Call the AARP Fraud Watch Network helpline at 1-877-908-3360 for free confidential counseling and guidance on next steps. The FTC's website also has resources at consumer.ftc.gov/articles/what-you-need-know-about-romance-scams.`,
+        content: `Romance scam victims often feel ashamed. But there is nothing to be ashamed of — you were deliberately targeted by a professional manipulator. Call the AARP Fraud Watch Network helpline at 1-877-908-3360 for free confidential counseling and guidance on next steps. The FTC's website also has resources at consumer.ftc.gov/articles/what-you-need-know-about-romance-scams.`,
       },
     ],
   },
@@ -794,7 +794,7 @@ File online through your state's unemployment agency website. Benefits typically
 
 **Understand COBRA for health insurance**
 
-When you leave a job, employer-sponsored health insurance ends — usually at the end of that month. COBRA (Consolidated Omnibus Budget Reconciliation Act) lets you continue your exact same employer coverage for up to 18 months, but you pay the full premium yourself (including the share your employer was paying), which is often expensive — $500–$800+ per month for a single person.
+When you leave a job, employer-sponsored health insurance ends — usually at the end of that month. COBRA (Consolidated Omnibus Budget Reconciliation Act) lets you continue your exact same employer coverage for up to 18 months. But you pay the full premium yourself (including the share your employer was paying), which is often expensive — $500–$800+ per month for a single person.
 
 You have 60 days from losing coverage to elect COBRA. Alternatives may be cheaper: marketplace plans at healthcare.gov, Medicaid (if your income has dropped a lot), or a spouse's employer plan.
 
@@ -1098,7 +1098,7 @@ Quick Tip: Your Social Security earnings record (available at ssa.gov/myaccount)
     steps: [
       {
         title: `Search the PBGC unclaimed pension database`,
-        content: `Go to pbgc.gov and look for the link labeled "Find an Unclaimed Pension." You can search by your last name. If your former employer's pension plan was taken over by the PBGC (due to the company going bankrupt or terminating the plan), and you have not claimed your benefit, your name may appear in the results.`,
+        content: `Go to pbgc.gov and look for the link labeled "Find an Unclaimed Pension." You can search by your last name. If your former employer's pension plan was taken over by the PBGC (due to the company going bankrupt or terminating the plan). And you have not claimed your benefit, your name may appear in the results.`,
         tip: `Try searching under any former last names — maiden names or names used before a legal name change.`,
       },
       {
@@ -1129,7 +1129,7 @@ Quick Tip: Your Social Security earnings record (available at ssa.gov/myaccount)
     thumbnailEmoji: ``,
     publishedAt: `2026-04-20`,
     difficulty: `Intermediate`,
-    body: `Original Medicare — Parts A and B — covers a lot, but it does not cover everything. You still pay a Part B deductible, 20% of most outpatient services, and significant cost-sharing for hospital stays. For people who see doctors regularly or have chronic health conditions, these out-of-pocket costs can add up to thousands of dollars a year.
+    body: `Original Medicare — Parts A and B — covers a lot. But it does not cover everything. You still pay a Part B deductible, 20% of most outpatient services, and significant cost-sharing for hospital stays. For people who see doctors regularly or have chronic health conditions, these out-of-pocket costs can add up to thousands of dollars a year.
 
 Medicare Supplement insurance, commonly called Medigap, is sold by private insurance companies and fills in some or all of those gaps. You pay a monthly premium to the Medigap insurer, and in exchange, they pay all or most of your cost-sharing under original Medicare.
 
