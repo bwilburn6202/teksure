@@ -19,7 +19,7 @@ When you sign up, BetterHelp asks you a series of questions about what you are g
 
 Once matched, you have a few ways to connect. The most common option is sending text messages through a private, secure chat. You can write to your therapist any time. And they typically respond within one to two business days. You can also schedule live sessions by video call, phone call, or live text chat.
 
-BetterHelp costs between $65 and $100 per week, billed monthly. This covers unlimited messaging and at least one live session per week. Financial aid is available if cost is a concern — there is a form during sign-up to apply. BetterHelp does not accept insurance directly, but some insurance plans may reimburse part of the cost. Check with your insurance company.
+BetterHelp costs between $65 and $100 per week, billed monthly. This covers unlimited messaging and at least one live session per week. Financial aid is available if cost is a concern. There is a form during sign-up to apply. BetterHelp does not accept insurance directly, but some insurance plans may reimburse part of the cost. Check with your insurance company.
 
 Your conversations on BetterHelp are private and protected by the same confidentiality rules that apply to in-person therapy. You can cancel your subscription at any time from your account settings.`,
     steps: [
@@ -30,11 +30,11 @@ Your conversations on BetterHelp are private and protected by the same confident
       },
       {
         title: `Review Your Matched Therapist`,
-        content: `After completing the questions, BetterHelp will show you a therapist profile. You can read about their education, license type, years of experience, and areas of specialty before accepting. If the match does not feel right, you can tap "Change therapist" and BetterHelp will find someone else — there is no penalty for switching.`,
+        content: `After completing the questions, BetterHelp will show you a therapist profile. You can read about their education, license type, years of experience, and areas of specialty before accepting. If the match does not feel right, you can tap "Change therapist" and BetterHelp will find someone else. There is no penalty for switching.`,
       },
       {
         title: `Choose a Plan and Set Up Payment`,
-        content: `BetterHelp charges a weekly rate billed every four weeks. Before entering your payment information, look for the financial aid option if cost is a barrier — it is available on the subscription screen. The platform accepts all major credit and debit cards. Once payment is set up, your therapy room opens right away.`,
+        content: `BetterHelp charges a weekly rate billed every four weeks. Before entering your payment information, look for the financial aid option if cost is a barrier. It is available on the subscription screen. The platform accepts all major credit and debit cards. Once payment is set up, your therapy room opens right away.`,
         warning: `BetterHelp does not accept insurance directly. Keep receipts and check with your insurer if you want to seek reimbursement.`,
       },
       {
@@ -135,7 +135,7 @@ Research on Woebot shows it can meaningfully reduce symptoms of anxiety and depr
       },
       {
         title: `Try a CBT Exercise`,
-        content: `During conversations, Woebot may walk you through a CBT exercise. A common one is called a "thought record" — you identify a situation that upset you, the thought that went through your mind, and then examine whether that thought is fully accurate. Woebot guides you through each part step by step. These exercises are designed to help you catch and challenge thinking patterns that make stress or anxiety worse.`,
+        content: `During conversations, Woebot may walk you through a CBT exercise. A common one is called a "thought record". You identify a situation that upset you, the thought that went through your mind, and then examine whether that thought is fully accurate. Woebot guides you through each part step by step. These exercises are designed to help you catch and challenge thinking patterns that make stress or anxiety worse.`,
       },
       {
         title: `Track Your Mood Over Time`,
@@ -214,7 +214,7 @@ Sleep Cycle also creates a visual sleep report each morning. You can see a graph
 
 The app is available on iPhone and Android. A basic version is free, and a premium plan (around $30 per year) unlocks detailed statistics, long-term trends, snore detection, and integration with Apple Health.
 
-Sleep Cycle is best placed on your nightstand — it does not need to be in your bed. Keep the screen face-down to reduce light, and plug the phone in so it does not run out of battery overnight. You do not need to wear any special device for Sleep Cycle to work.`,
+Sleep Cycle is best placed on your nightstand. It does not need to be in your bed. Keep the screen face-down to reduce light, and plug the phone in so it does not run out of battery overnight. You do not need to wear any special device for Sleep Cycle to work.`,
     steps: [
       {
         title: `Download Sleep Cycle and Grant Microphone Permission`,
@@ -227,11 +227,11 @@ Sleep Cycle is best placed on your nightstand — it does not need to be in your
       },
       {
         title: `Place Your Phone Correctly`,
-        content: `Set your phone on your nightstand with the screen facing down and the phone plugged in to charge. The app's microphone can pick up your breathing and movement sounds from the nightstand — you do not need to put the phone under your pillow or in your bed. Make sure the volume on your phone is turned up so the alarm will actually wake you.`,
+        content: `Set your phone on your nightstand with the screen facing down and the phone plugged in to charge. The app's microphone can pick up your breathing and movement sounds from the nightstand. You do not need to put the phone under your pillow or in your bed. Make sure the volume on your phone is turned up so the alarm will actually wake you.`,
       },
       {
         title: `Wake Up and Read Your Sleep Report`,
-        content: `In the morning, Sleep Cycle will play a gentle alarm sound that gradually increases in volume. Once you wake up, tap the screen to dismiss the alarm. After dismissing, the app shows your sleep graph for the night — you can see when you were in deep sleep, light sleep, and when you were nearly awake. Your sleep quality score is shown as a percentage.`,
+        content: `In the morning, Sleep Cycle will play a gentle alarm sound that gradually increases in volume. Once you wake up, tap the screen to dismiss the alarm. After dismissing, the app shows your sleep graph for the night. You can see when you were in deep sleep, light sleep, and when you were nearly awake. Your sleep quality score is shown as a percentage.`,
       },
       {
         title: `Review Weekly and Monthly Trends`,
@@ -270,7 +270,7 @@ This app is for iPhone only. Android users should look at other sleep tracking a
       },
       {
         title: `Start a Sleep Session`,
-        content: `Open Pillow before bed and tap "Go to sleep." The app will begin monitoring in the background — you do not need to keep the screen on. If you are using Apple Watch, you can also start a session from the Watch app directly on your wrist. The tracking happens automatically until you wake up and stop the session in the morning.`,
+        content: `Open Pillow before bed and tap "Go to sleep." The app will begin monitoring in the background. You do not need to keep the screen on. If you are using Apple Watch, you can also start a session from the Watch app directly on your wrist. The tracking happens automatically until you wake up and stop the session in the morning.`,
       },
       {
         title: `Review Your Sleep Report in the Morning`,
@@ -322,7 +322,7 @@ The timer feature is particularly useful for focus sessions. You can set Noisli 
       {
         title: `Set a Timer`,
         content: `If you are using Noisli for sleep, set a timer so the sounds stop automatically after you fall asleep. Look for the timer icon in the app or website interface and set it for 30 to 60 minutes. This saves your phone's battery and means you will not wake up to sounds still playing hours later. Premium users can set longer timer durations.`,
-        tip: `Quick Tip: Use earbuds or a Bluetooth speaker at a low volume rather than high volume — you want the sound to be present in the background, not distractingly loud.`,
+        tip: `Quick Tip: Use earbuds or a Bluetooth speaker at a low volume rather than high volume. You want the sound to be present in the background, not distractingly loud.`,
       },
     ],
   },
@@ -340,7 +340,7 @@ The timer feature is particularly useful for focus sessions. You can set Noisli 
 
 Most Petcube cameras also include two-way audio, which means you can not only hear your pet but speak to them through the camera's built-in speaker. Many dogs and cats will perk up when they hear their owner's voice, which can be comforting for both of you.
 
-Petcube makes a few different models. The Petcube Cam is a basic video camera with two-way audio. The Petcube Bites is a more advanced model that includes a treat dispenser — you can press a button in the app to launch a treat for your pet to catch. There is also the Petcube Play, which includes a laser pointer you can control remotely.
+Petcube makes a few different models. The Petcube Cam is a basic video camera with two-way audio. The Petcube Bites is a more advanced model that includes a treat dispenser. You can press a button in the app to launch a treat for your pet to catch. There is also the Petcube Play, which includes a laser pointer you can control remotely.
 
 Setup takes about fifteen minutes. You will need a 2.4 GHz or 5 GHz Wi-Fi network and a smartphone. Petcube cameras work with iPhones and Android phones.
 
@@ -392,7 +392,7 @@ In addition to GPS tracking, some Whistle models also track your pet's daily act
     steps: [
       {
         title: `Attach the Whistle Tracker to Your Pet's Collar`,
-        content: `Slide the Whistle tracker onto your pet's collar through the attachment loop on the back of the device. Make sure it is secure and sitting flat — it should not hang or dangle. The tracker should be snug enough that it does not slide to the side but loose enough that it does not bother your pet. Most dogs and cats quickly get used to the small added weight.`,
+        content: `Slide the Whistle tracker onto your pet's collar through the attachment loop on the back of the device. Make sure it is secure and sitting flat. It should not hang or dangle. The tracker should be snug enough that it does not slide to the side but loose enough that it does not bother your pet. Most dogs and cats quickly get used to the small added weight.`,
       },
       {
         title: `Download the Whistle App and Activate the Device`,
@@ -400,7 +400,7 @@ In addition to GPS tracking, some Whistle models also track your pet's daily act
       },
       {
         title: `Enter Your Pet's Information`,
-        content: `The app will ask for your pet's name, species (dog or cat), breed, weight, and age. This information helps Whistle calculate activity goals and give you health insights. Upload a photo of your pet too — it makes the app feel more personal and is helpful if you ever need to share the app screen while searching for a lost animal.`,
+        content: `The app will ask for your pet's name, species (dog or cat), breed, weight, and age. This information helps Whistle calculate activity goals and give you health insights. Upload a photo of your pet too. It makes the app feel more personal and is helpful if you ever need to share the app screen while searching for a lost animal.`,
       },
       {
         title: `Set Up a Safe Zone`,
@@ -493,7 +493,7 @@ Vetster is available on iPhone, Android, and the web at vetster.com.`,
       {
         title: `Prepare Before the Call`,
         content: `Before your appointment, find a well-lit room where you can easily move your phone to show different parts of your pet. Have any relevant information ready — when the problem started, any changes in eating or behavior, current medications your pet takes, and any recent vet records if relevant. Write down your questions ahead of time so you do not forget to ask them during the call.`,
-        tip: `Quick Tip: Enlist another person to hold your pet while you manage the phone during the video call — it is much easier with two people.`,
+        tip: `Quick Tip: Enlist another person to hold your pet while you manage the phone during the video call. It is much easier with two people.`,
       },
       {
         title: `Attend Your Video Appointment`,
@@ -519,7 +519,7 @@ During signup, you tell BarkBox about your dog — their size (small, medium, or
 
 BarkBox allows you to swap out items you do not want before a box ships. If you receive treats your dog cannot eat due to an allergy, customer service is generally responsive about sending replacements.
 
-BarkBox is a subscription, which means it automatically renews each month. You can pause or cancel at any time from your account settings on the BarkBox website — there is no cancellation fee.`,
+BarkBox is a subscription, which means it automatically renews each month. You can pause or cancel at any time from your account settings on the BarkBox website. There is no cancellation fee.`,
     steps: [
       {
         title: `Go to BarkBox.com and Choose Your Plan`,
@@ -528,7 +528,7 @@ BarkBox is a subscription, which means it automatically renews each month. You c
       {
         title: `Enter Your Dog's Details`,
         content: `BarkBox will ask for your dog's name, size (small is under 20 pounds, medium is 20 to 50 pounds, large is over 50 pounds), and any food allergies or sensitivities — such as chicken, grain, or beef. Being accurate here matters because treats are chosen based on this information. You can update your dog's profile at any time from your account page.`,
-        tip: `Quick Tip: If your dog tends to destroy toys within minutes, choose the Super Chewer upgrade at checkout — it costs a bit more but the toys are built to last.`,
+        tip: `Quick Tip: If your dog tends to destroy toys within minutes, choose the Super Chewer upgrade at checkout. It costs a bit more but the toys are built to last.`,
       },
       {
         title: `Complete Checkout`,
@@ -710,7 +710,7 @@ SpotHero is free to download. You pay for parking through the app and there are 
       },
       {
         title: `Search for Parking Near Your Destination`,
-        content: `On the SpotHero main screen, tap the search bar and type your destination — an address, a venue name, or a neighborhood. Then select your arrival and departure times. Tap "Search" and SpotHero will show you a map with all available parking options nearby. The price shown is what you will pay in total — there are no surprise fees at checkout in most cases.`,
+        content: `On the SpotHero main screen, tap the search bar and type your destination — an address, a venue name, or a neighborhood. Then select your arrival and departure times. Tap "Search" and SpotHero will show you a map with all available parking options nearby. The price shown is what you will pay in total. There are no surprise fees at checkout in most cases.`,
         tip: `Quick Tip: Reserve your parking a day or more in advance for events or popular destinations — the best prices and most convenient spots sell out first.`,
       },
       {
@@ -834,7 +834,7 @@ Dosh partners with hundreds of well-known businesses including national hotel ch
 
 The automatic nature of Dosh is its biggest appeal. After the initial setup — linking a card — you do not have to remember to open the app before a purchase or check whether an offer applies. If you pay with a linked card at a Dosh partner location, the cashback is credited automatically, usually within a few days of the transaction posting.
 
-Privacy is a common concern when linking a bank card to a third-party app. Dosh uses bank-level 256-bit encryption for all stored card data and does not store your full card number. The app works by matching your transactions (the store name and amount) against its partner list — it does not have access to your full financial account or any other transactions.
+Privacy is a common concern when linking a bank card to a third-party app. Dosh uses bank-level 256-bit encryption for all stored card data and does not store your full card number. The app works by matching your transactions (the store name and amount) against its partner list. It does not have access to your full financial account or any other transactions.
 
 Dosh is free to download and has no subscription fees. It is available for iPhone and Android.`,
     steps: [
@@ -845,7 +845,7 @@ Dosh is free to download and has no subscription fees. It is available for iPhon
       {
         title: `Link Your Debit or Credit Card`,
         content: `Tap "Link a card" and enter your card number, expiration date, and security code. You can link multiple cards — for example, your everyday debit card and a credit card you use for larger purchases. Dosh works with Visa, Mastercard, American Express, and Discover cards. After linking, Dosh will monitor purchases on that card for matches with its partner offers.`,
-        warning: `Only link cards you use for regular purchases. Dosh cannot read your account balance, access other transactions, or move money — it can only detect qualifying purchases at partner merchants.`,
+        warning: `Only link cards you use for regular purchases. Dosh cannot read your account balance, access other transactions, or move money. It can only detect qualifying purchases at partner merchants.`,
       },
       {
         title: `Browse Partner Offers`,
@@ -876,7 +876,7 @@ Dosh is free to download and has no subscription fees. It is available for iPhon
 
 This creates a win-win situation. As a buyer on Raise, you can find gift cards for stores you shop regularly — think Target, Amazon, Best Buy, Starbucks, Gap, or Lowe's — at 3% to 25% below the amount printed on the card. The discount varies by store and how eager sellers are to unload their cards.
 
-Gift cards on Raise come in two forms. Electronic cards are delivered right away to your email or Raise account — you get a card number and PIN you can type in at checkout online or show the cashier on your phone screen. Physical cards are mailed to you and take several days to arrive. Electronic cards are faster and more convenient for most purchases.
+Gift cards on Raise come in two forms. Electronic cards are delivered right away to your email or Raise account. You get a card number and PIN you can type in at checkout online or show the cashier on your phone screen. Physical cards are mailed to you and take several days to arrive. Electronic cards are faster and more convenient for most purchases.
 
 Raise verifies every card before listing it for sale. And they offer a money-back guarantee: if you buy a card and the balance is wrong or the card does not work, Raise will replace or refund it within a defined window (check current policy on their website). This protection makes buying from strangers much less risky.
 
@@ -893,11 +893,11 @@ Raise is available as a website (raise.com) and as an app for iPhone and Android
       },
       {
         title: `Choose Between Electronic and Physical Cards`,
-        content: `For each listing, Raise shows whether the card is electronic (delivered digitally, usually within minutes) or physical (mailed to your address, taking three to five business days). For most everyday shopping and online purchases, choose an electronic card — it arrives faster and you can use it right away. Physical cards are useful for giving as gifts.`,
+        content: `For each listing, Raise shows whether the card is electronic (delivered digitally, usually within minutes) or physical (mailed to your address, taking three to five business days). For most everyday shopping and online purchases, choose an electronic card. It arrives faster and you can use it right away. Physical cards are useful for giving as gifts.`,
       },
       {
         title: `Complete Your Purchase`,
-        content: `Tap the gift card listing you want to buy, review the face value and price, then tap "Buy now." Confirm your payment method and shipping preference, then complete the purchase. Electronic cards are sent to your registered email address and also stored in the "My cards" section of your Raise account. Keep the card number and PIN — you will need both to use the card.`,
+        content: `Tap the gift card listing you want to buy, review the face value and price, then tap "Buy now." Confirm your payment method and shipping preference, then complete the purchase. Electronic cards are sent to your registered email address and also stored in the "My cards" section of your Raise account. Keep the card number and PIN. You will need both to use the card.`,
       },
       {
         title: `Use Your Gift Card at Checkout`,

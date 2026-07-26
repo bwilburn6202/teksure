@@ -55,7 +55,7 @@ Watch a walkthrough: on YouTube, search for "AirDrop not working fix iOS 19" —
       },
       {
         title: 'Sign out and back into iCloud (last resort)',
-        content: 'If nothing else works, the connection between your phone and your Apple ID may be confused. Open Settings, tap your name at the top, scroll all the way to the bottom, and tap "Sign Out." Enter your Apple ID password to confirm. Wait a minute, then tap "Sign In" at the top of Settings and re-enter your Apple ID. This re-registers your device with Apple\'s servers and almost always fixes AirDrop. Heads up: you may need to re-enable iCloud Photos and other syncing features after signing back in — they will catch up automatically over an hour or two.',
+        content: 'If nothing else works, the connection between your phone and your Apple ID may be confused. Open Settings, tap your name at the top, scroll all the way to the bottom, and tap "Sign Out." Enter your Apple ID password to confirm. Wait a minute, then tap "Sign In" at the top of Settings and re-enter your Apple ID. This re-registers your device with Apple\'s servers and almost always fixes AirDrop. Heads up: you may need to re-enable iCloud Photos and other syncing features after signing back in. They will catch up automatically over an hour or two.',
         warning: 'Do not do this step if you do not remember your Apple ID password. Recover the password first at appleid.apple.com.',
       },
     ],
@@ -82,7 +82,7 @@ Watch a comparison: on YouTube, search for "Roku vs Google TV 2026 comparison" �
       {
         title: 'Roku — what it does well',
         content: 'Roku makes the simplest streaming device on the market. The home screen is a grid of app icons — Netflix, Hulu, YouTube, Disney+. You click an app, you watch. There are no recommendations from Roku trying to steer you to other content, no algorithm, no Google account required. The remote is small and has a real "Home" button that always brings you back to the grid. Roku also has the best free channel selection in 2026 — The Roku Channel (free with ads), Pluto TV, Tubi, and Freevee are all built in. For someone who wants to watch their shows without learning new technology, Roku is the right answer.',
-        tip: 'Quick Tip: The Roku Streaming Stick 4K is the best buy at around $50 — it does everything most people need.',
+        tip: 'Quick Tip: The Roku Streaming Stick 4K is the best buy at around $50. It does everything most people need.',
       },
       {
         title: 'Roku — what is not great',
@@ -91,7 +91,7 @@ Watch a comparison: on YouTube, search for "Roku vs Google TV 2026 comparison" �
       },
       {
         title: 'Google TV — what it does well',
-        content: 'Google TV (the brand name for the Chromecast with Google TV and the new Google TV Streamer) puts personalized recommendations on the home screen. It pulls trailers and "Continue Watching" from every app you use — Netflix, Hulu, Max, Disney+ — so you do not have to remember which app a show is on. You can use the remote\'s microphone button to say "Show me Pixar movies" and it will search across all your apps. It works perfectly with Google Home and Nest speakers — you can say "Hey Google, play Ted Lasso on the living room TV" from any room. And it supports Google Photos as a screensaver, so your TV becomes a digital picture frame when you are not watching.',
+        content: 'Google TV (the brand name for the Chromecast with Google TV and the new Google TV Streamer) puts personalized recommendations on the home screen. It pulls trailers and "Continue Watching" from every app you use — Netflix, Hulu, Max, Disney+ — so you do not have to remember which app a show is on. You can use the remote\'s microphone button to say "Show me Pixar movies" and it will search across all your apps. It works perfectly with Google Home and Nest speakers. You can say "Hey Google, play Ted Lasso on the living room TV" from any room. And it supports Google Photos as a screensaver, so your TV becomes a digital picture frame when you are not watching.',
       },
       {
         title: 'Google TV — what is not great',
@@ -158,7 +158,7 @@ Watch a comparison: on YouTube, search for "T-Mobile vs Verizon senior plan 2026
       },
       {
         title: 'How to switch carriers without losing your phone number',
-        content: 'Both carriers let you keep your existing phone number — this is called "porting" your number. Step 1: Get your current account number and PIN from your old carrier (this is on their website under Account Settings, or call customer service). Step 2: Order a new SIM card or eSIM from the new carrier — they will mail you a SIM, or activate an eSIM (a digital SIM your phone can download instantly). Step 3: When the new SIM is activated, your number transfers within a few hours and your old service shuts off automatically. You do not need to cancel the old plan separately. Step 4: Pay any final bill from the old carrier — they will send it within a month.',
+        content: 'Both carriers let you keep your existing phone number — this is called "porting" your number. Step 1: Get your current account number and PIN from your old carrier (this is on their website under Account Settings, or call customer service). Step 2: Order a new SIM card or eSIM from the new carrier. They will mail you a SIM, or activate an eSIM (a digital SIM your phone can download instantly). Step 3: When the new SIM is activated, your number transfers within a few hours and your old service shuts off automatically. You do not need to cancel the old plan separately. Step 4: Pay any final bill from the old carrier. They will send it within a month.',
         warning: 'Do not cancel your old carrier before the new one is active. If you do, you lose the right to port your number.',
       },
       {
@@ -198,21 +198,21 @@ Watch a comparison: search YouTube for "Nest vs Ecobee 2026" — Tech With Brett
       },
       {
         title: 'Nest — what is not great',
-        content: 'The Nest has no built-in speaker — you cannot talk to it directly. To use voice control, you need a Google Home or Nest speaker in the same room. Nest also does not include a remote room sensor in the box (you can buy them separately for $40 each, or a 3-pack for $100). And the 4th generation Nest dropped support for some older HVAC systems — check Nest\'s compatibility checker at nest.com/compatibility before buying. The cheaper Nest Thermostat ($130, the non-Learning version) does not have learning or a temperature sensor in the box — pick the Learning Thermostat for full features.',
+        content: 'The Nest has no built-in speaker. You cannot talk to it directly. To use voice control, you need a Google Home or Nest speaker in the same room. Nest also does not include a remote room sensor in the box (you can buy them separately for $40 each, or a 3-pack for $100). And the 4th generation Nest dropped support for some older HVAC systems — check Nest\'s compatibility checker at nest.com/compatibility before buying. The cheaper Nest Thermostat ($130, the non-Learning version) does not have learning or a temperature sensor in the box — pick the Learning Thermostat for full features.',
       },
       {
         title: 'Ecobee Premium — what you get for $250',
-        content: 'The Ecobee has a square color touchscreen — less elegant than the Nest, but easier to read. Big bonus: it comes with one SmartSensor in the box (a small puck you place in another room). The thermostat reads the temperature from both itself AND the sensor, then averages them — so if your bedroom is always 5 degrees colder than your hallway, the Ecobee accounts for it. You can buy more sensors ($80 for a 2-pack) and put one in every important room. The Ecobee also has Amazon Alexa built into the thermostat itself — you can talk to it like an Echo speaker without buying one. It works with Google Home, Apple HomeKit, and SmartThings too.',
-        tip: 'Quick Tip: The included sensor is a big deal — it is the single feature most homeowners use to fix "this room is always too hot" complaints.',
+        content: 'The Ecobee has a square color touchscreen — less elegant than the Nest, but easier to read. Big bonus: it comes with one SmartSensor in the box (a small puck you place in another room). The thermostat reads the temperature from both itself AND the sensor, then averages them — so if your bedroom is always 5 degrees colder than your hallway, the Ecobee accounts for it. You can buy more sensors ($80 for a 2-pack) and put one in every important room. The Ecobee also has Amazon Alexa built into the thermostat itself. You can talk to it like an Echo speaker without buying one. It works with Google Home, Apple HomeKit, and SmartThings too.',
+        tip: 'Quick Tip: The included sensor is a big deal. It is the single feature most homeowners use to fix "this room is always too hot" complaints.',
       },
       {
         title: 'Ecobee — what is not great',
-        content: 'The Ecobee\'s screen is busier than the Nest\'s — there is more information on display, which some people like and some find cluttered. Its scheduling is not as smart as the Nest — you have to set the schedule yourself in the app, though Ecobee will suggest one based on usage. The built-in Alexa is fine but not as good as a dedicated Echo speaker. Battery on the included sensor lasts about 18 months, then you replace a CR2477 coin cell ($3 on Amazon).',
+        content: 'The Ecobee\'s screen is busier than the Nest\'s. There is more information on display, which some people like and some find cluttered. Its scheduling is not as smart as the Nest. You have to set the schedule yourself in the app, though Ecobee will suggest one based on usage. The built-in Alexa is fine but not as good as a dedicated Echo speaker. Battery on the included sensor lasts about 18 months, then you replace a CR2477 coin cell ($3 on Amazon).',
       },
       {
         title: 'Energy savings — what to expect',
         content: 'Both Nest and Ecobee publish savings data: Nest claims 10–12% off heating and 15% off cooling. Ecobee claims up to 26% off both. Independent studies (Energy.gov, NEEA) put real-world savings closer to 8–13% for either brand — about $130–$200/year for an average U.S. home. The biggest savings come from "geofencing" (the thermostat turning down the temperature when your phone leaves the house) and proper scheduling (cooler at night for heating, warmer at night for A/C). Both brands do this well.',
-        warning: 'Smart thermostats do not save money on their own — you still need to use them correctly. If you keep the house at 72°F all day and night, neither brand will save much.',
+        warning: 'Smart thermostats do not save money on their own. You still need to use them correctly. If you keep the house at 72°F all day and night, neither brand will save much.',
       },
       {
         title: 'How to decide',
@@ -295,7 +295,7 @@ Watch a walkthrough: search YouTube for "How to use Apple Pay 2026" — Apple Su
     steps: [
       {
         title: 'Open the Wallet app',
-        content: 'Find the Wallet app on your iPhone — it has a black icon with colorful card shapes on it. It came pre-installed; you cannot delete it. If you cannot find it, swipe down on the middle of your home screen to open Search, type "Wallet," and tap the app icon. Inside Wallet, tap the plus sign (+) in the top-right corner.',
+        content: 'Find the Wallet app on your iPhone. It has a black icon with colorful card shapes on it. It came pre-installed; you cannot delete it. If you cannot find it, swipe down on the middle of your home screen to open Search, type "Wallet," and tap the app icon. Inside Wallet, tap the plus sign (+) in the top-right corner.',
       },
       {
         title: 'Add a debit or credit card',
@@ -318,7 +318,7 @@ Watch a walkthrough: search YouTube for "How to use Apple Pay 2026" — Apple Su
       },
       {
         title: 'How to know if a store accepts Apple Pay',
-        content: 'Look for one of these symbols at the checkout: the Apple Pay logo (a black Apple silhouette with "Pay" next to it), the contactless payment symbol (a sideways Wi-Fi symbol with four curved lines), or a sticker that says "Tap to Pay." If you see any of these, Apple Pay works there. If the store has a chip reader for credit cards but no contactless symbol, Apple Pay does not work there — you have to use a physical card. In 2026, most chip readers also accept tap, even if they do not have a sticker.',
+        content: 'Look for one of these symbols at the checkout: the Apple Pay logo (a black Apple silhouette with "Pay" next to it), the contactless payment symbol (a sideways Wi-Fi symbol with four curved lines), or a sticker that says "Tap to Pay." If you see any of these, Apple Pay works there. If the store has a chip reader for credit cards but no contactless symbol, Apple Pay does not work there. You have to use a physical card. In 2026, most chip readers also accept tap, even if they do not have a sticker.',
       },
       {
         title: 'Why Apple Pay is safer than a physical card',
@@ -349,7 +349,7 @@ Watch a walkthrough: search YouTube for "Instacart for beginners 2026" — Senio
       {
         title: 'Download the Instacart app',
         content: 'On iPhone: open the App Store, tap Search, type "Instacart," and tap Get on the green carrot logo (the official one is by "Instacart"). On Android: open the Google Play Store, search "Instacart," and tap Install on the same green carrot logo. The app is free. You can also use Instacart in a web browser at instacart.com, which is easier for some people because the screen is bigger.',
-        tip: 'Quick Tip: If you do not have a smartphone, use Instacart on a computer or tablet — it works exactly the same way.',
+        tip: 'Quick Tip: If you do not have a smartphone, use Instacart on a computer or tablet. It works exactly the same way.',
       },
       {
         title: 'Create an account',
@@ -402,7 +402,7 @@ Watch a walkthrough: search YouTube for "block political texts iPhone 2026" — 
     steps: [
       {
         title: 'Reply STOP to known senders (your legal right)',
-        content: 'Federal law (Telephone Consumer Protection Act, or TCPA) requires political campaigns to honor opt-out requests when YOU initiate the relationship — for example, if you donated to a candidate or signed a petition. Reply with just the word "STOP" (no other words) to those texts. The campaign is legally required to remove you within 30 days. This will not stop campaigns you have never interacted with — they did not have to ask permission to text you in the first place. Replying STOP to a campaign you have NEVER engaged with may actually confirm your number is active and bring more texts.',
+        content: 'Federal law (Telephone Consumer Protection Act, or TCPA) requires political campaigns to honor opt-out requests when YOU initiate the relationship — for example, if you donated to a candidate or signed a petition. Reply with just the word "STOP" (no other words) to those texts. The campaign is legally required to remove you within 30 days. This will not stop campaigns you have never interacted with. They did not have to ask permission to text you in the first place. Replying STOP to a campaign you have NEVER engaged with may actually confirm your number is active and bring more texts.',
         warning: 'Do NOT reply STOP to unknown or suspicious numbers — only to campaigns you have donated to or signed up with. Replying to a scam text confirms your number works and brings more spam.',
       },
       {

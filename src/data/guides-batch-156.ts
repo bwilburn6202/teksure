@@ -69,12 +69,12 @@ Since the COVID-19 pandemic, all three bureaus have also offered free weekly onl
 
 1. Open a web browser and go to **www.annualcreditreport.com**. This is the only official site mandated by law. Avoid similar-sounding sites that may charge fees or require a credit card.
 2. Click **Request your free credit reports**.
-3. Fill in your name, address, date of birth, and Social Security number. This information is used to identify you — it is transmitted securely and is required by the bureaus to match your records.
+3. Fill in your name, address, date of birth, and Social Security number. This information is used to identify you. It is transmitted securely and is required by the bureaus to match your records.
 4. Choose which bureaus to request from. You can select all three at once: Equifax, Experian, and TransUnion.
 5. Answer identity verification questions. Each bureau will ask a few multiple-choice questions about your financial history — for example, "Which of the following addresses have you lived at?" These questions help confirm you are who you say you are.
 6. View and save your report. Once verified, your full credit report will appear on screen. You can read it there or download it as a PDF to save for your records.
 
-**AnnualCreditReport.com shows your full history but may not display a single score number** — it focuses on the detail of your accounts. For the score number itself, Credit Karma (below) is easier and shows a score in plain view.
+**AnnualCreditReport.com shows your full history but may not display a single score number**. It focuses on the detail of your accounts. For the score number itself, Credit Karma (below) is easier and shows a score in plain view.
 
 ---
 
@@ -82,7 +82,7 @@ Since the COVID-19 pandemic, all three bureaus have also offered free weekly onl
 
 Credit Karma is a free website (and app) that shows you your credit score from TransUnion and Equifax, updated every week. It has been operating since 2007 and is a legitimate, widely-used service. It does not charge for any of its basic features.
 
-**How Credit Karma makes money:** The site shows you advertisements for credit cards and loans. You are never required to apply for any of them — you can ignore those entirely and use the service just for your score.
+**How Credit Karma makes money:** The site shows you advertisements for credit cards and loans. You are never required to apply for any of them. You can ignore those entirely and use the service just for your score.
 
 **What you get:** Your TransUnion and Equifax scores, a letter grade for different parts of your credit, a summary of what is helping and hurting your score, and alerts when something new appears on your report.
 
@@ -140,13 +140,13 @@ Each bureau has an online dispute process. Go to the bureau's website — **equi
       },
       {
         title: 'Get your free credit reports at AnnualCreditReport.com',
-        content: 'Open a browser and go to www.annualcreditreport.com — this is the only federally mandated free report site. Click "Request your free credit reports." Enter your name, address, date of birth, and Social Security number. Select all three bureaus and answer the identity verification questions. Your full credit reports will appear on screen. You can download them as PDFs. Since the COVID-19 pandemic, free weekly reports have been available — you can check as often as every week.',
+        content: 'Open a browser and go to www.annualcreditreport.com — this is the only federally mandated free report site. Click "Request your free credit reports." Enter your name, address, date of birth, and Social Security number. Select all three bureaus and answer the identity verification questions. Your full credit reports will appear on screen. You can download them as PDFs. Since the COVID-19 pandemic, free weekly reports have been available. You can check as often as every week.',
         warning: 'Only use www.annualcreditreport.com. Many look-alike sites claim to offer free reports but require a credit card or sign you up for paid subscriptions. The official site never requires a credit card.',
       },
       {
         title: 'Check your score on Credit Karma for a clear score number',
         content: 'Go to www.creditkarma.com or download the "Credit Karma" app on your phone. Click "Get your free score," create a free account with your email and a password, and fill in your personal information including your Social Security number to verify your identity. Your TransUnion and Equifax scores will appear on screen. Credit Karma updates these scores weekly and sends alerts when something changes.',
-        tip: 'Credit Karma is free and legitimate. It makes money by showing you offers for credit cards and loans — you are never required to click on any of them. Use it for the score information and ignore the advertisements.',
+        tip: 'Credit Karma is free and legitimate. It makes money by showing you offers for credit cards and loans. You are never required to click on any of them. Use it for the score information and ignore the advertisements.',
       },
       {
         title: 'Review what is helping and hurting your score',
@@ -267,7 +267,7 @@ WhatsApp calls work over Wi-Fi or cellular data and are completely free, even fo
 4. The other person's phone will ring. When they answer, you are connected.
 5. To end the call, tap the red phone icon.
 
-WhatsApp calls work just like regular phone calls — you can hear the other person clearly and speak normally. The quality depends on your internet connection: a strong Wi-Fi connection produces the best call quality.
+WhatsApp calls work just like regular phone calls. You can hear the other person clearly and speak normally. The quality depends on your internet connection: a strong Wi-Fi connection produces the best call quality.
 
 ---
 
@@ -330,7 +330,7 @@ WhatsApp is owned by Meta/Facebook. Like any app, it collects some data about ho
       },
       {
         title: 'Join a family group chat or create one',
-        content: 'To join an existing group, ask a family member who runs the group to add you — they go into the group settings and tap "Add Participant," then search for your name. To create a new group: tap the new chat icon → New Group → select family members → tap the green arrow → give the group a name → tap the checkmark. Any message you post in the group is seen by all members.',
+        content: 'To join an existing group, ask a family member who runs the group to add you. They go into the group settings and tap "Add Participant," then search for your name. To create a new group: tap the new chat icon → New Group → select family members → tap the green arrow → give the group a name → tap the checkmark. Any message you post in the group is seen by all members.',
       },
       {
         title: 'Understand the checkmarks and adjust your privacy settings',
@@ -366,7 +366,7 @@ WhatsApp is owned by Meta/Facebook. Like any app, it collects some data about ho
 
 Instead of a screen full of individual icons, you might have five or six folders: "Banking," "Health," "Family," "Shopping," "Games," and "News." Each folder holds several related apps. Your home screen becomes much less cluttered, and finding an app takes seconds rather than a long search.
 
-Creating folders works similarly on both iPhone and Android — you press and hold an app icon, then drag it on top of another app. The phone creates a folder automatically.
+Creating folders works similarly on both iPhone and Android. You press and hold an app icon, then drag it on top of another app. The phone creates a folder automatically.
 
 ---
 
@@ -459,7 +459,7 @@ To take an app out of a folder and put it back on the home screen:
 
 **How to delete a folder**
 
-You cannot delete a folder directly — you delete it by removing all the apps from it. Once a folder is empty, it disappears automatically.
+You cannot delete a folder directly. You delete it by removing all the apps from it. Once a folder is empty, it disappears automatically.
 
 **iPhone:** Enter jiggle mode (long-press on empty space). Open the folder. Drag each app out one at a time onto the home screen. When the last app is removed, the folder disappears.
 
@@ -502,7 +502,7 @@ You cannot delete a folder directly — you delete it by removing all the apps f
       {
         title: 'Remove an app from a folder or delete a folder you no longer need',
         content: 'To remove an app from a folder on iPhone: tap the folder to open it, enter jiggle mode (long-press an empty area), then drag the app out onto the home screen. On Android: long-press the app inside the folder and drag it to an empty spot on the home screen. To delete a folder, remove all apps from it — once empty, the folder disappears on its own.',
-        tip: 'If your home screen feels crowded after organizing, remember that you can always swipe down from the middle of your iPhone screen (or up on Android) to search for any app by name — you do not need every app visible on the home screen.',
+        tip: 'If your home screen feels crowded after organizing, remember that you can always swipe down from the middle of your iPhone screen (or up on Android) to search for any app by name. You do not need every app visible on the home screen.',
       },
     ],
   },
@@ -562,14 +562,14 @@ What Do Not Disturb does **not** do:
 The fastest way is through Control Center — the quick-access panel on your iPhone.
 
 1. **Swipe down from the top-right corner** of your iPhone screen. (On older iPhones with a Home button, swipe up from the very bottom of the screen.) This opens Control Center.
-2. Look for the **moon icon** — it is a crescent moon shape. Tap it once.
+2. Look for the **moon icon**. It is a crescent moon shape. Tap it once.
 3. The moon turns white or highlighted to show Do Not Disturb is now on. A crescent moon icon will also appear at the top of your screen (near the clock), confirming it is active.
 4. To turn it off, open Control Center again and tap the moon icon a second time.
 
 **On Android:**
 
 1. **Swipe down from the top of your screen** once or twice to open the Quick Settings panel — the area with tiles for Wi-Fi, Bluetooth, and other settings.
-2. Look for a tile labeled **"Do Not Disturb"** — it usually has an icon that looks like a circle with a line through it, or a minus sign inside a circle. On Samsung phones it may have a slightly different appearance but is labeled the same.
+2. Look for a tile labeled **"Do Not Disturb"**. It usually has an icon that looks like a circle with a line through it, or a minus sign inside a circle. On Samsung phones it may have a slightly different appearance but is labeled the same.
 3. Tap it once to turn Do Not Disturb on. The icon will change to show it is active, and a small Do Not Disturb indicator will appear in your status bar at the top of the screen.
 4. Tap it again to turn it off.
 
@@ -577,7 +577,7 @@ The fastest way is through Control Center — the quick-access panel on your iPh
 
 **Part 2: Scheduling Do Not Disturb to turn on automatically every night**
 
-Manually turning it on is useful in the moment, but scheduling it means you never have to think about it — it turns on at your bedtime and off in the morning automatically, every night.
+Manually turning it on is useful in the moment, but scheduling it means you never have to think about it. It turns on at your bedtime and off in the morning automatically, every night.
 
 **On iPhone — scheduling via Settings → Focus:**
 
@@ -672,12 +672,12 @@ With this setup, random notifications will not wake you, but if your son or daug
     steps: [
       {
         title: 'Understand what Do Not Disturb does and does not do',
-        content: 'Do Not Disturb silences incoming call ringtones, text notification sounds, and app alerts. Your phone stays fully on — you can still make calls, set alarms, and use apps normally. Alarms you have already set will still go off. Government emergency broadcasts (severe weather, Amber Alerts) still come through regardless of your settings. 911 always works.',
+        content: 'Do Not Disturb silences incoming call ringtones, text notification sounds, and app alerts. Your phone stays fully on. You can still make calls, set alarms, and use apps normally. Alarms you have already set will still go off. Government emergency broadcasts (severe weather, Amber Alerts) still come through regardless of your settings. 911 always works.',
         tip: 'Think of Do Not Disturb as a "quiet hours" mode. It mutes the noise your phone makes from incoming alerts, but does not isolate you from the world.',
       },
       {
         title: 'Turn Do Not Disturb on manually using Control Center (iPhone) or Quick Settings (Android)',
-        content: 'iPhone: swipe down from the top-right corner of your screen to open Control Center. Tap the crescent moon icon — it turns highlighted to show Do Not Disturb is on. A moon symbol appears at the top of your screen. Android: swipe down from the top of your screen to open Quick Settings. Find and tap the Do Not Disturb tile (circle with a minus sign or line). Tap again to turn it off.',
+        content: 'iPhone: swipe down from the top-right corner of your screen to open Control Center. Tap the crescent moon icon. It turns highlighted to show Do Not Disturb is on. A moon symbol appears at the top of your screen. Android: swipe down from the top of your screen to open Quick Settings. Find and tap the Do Not Disturb tile (circle with a minus sign or line). Tap again to turn it off.',
         tip: 'Turning Do Not Disturb on from Control Center or Quick Settings activates it until you turn it off manually — or until a scheduled end time if you have one set up.',
       },
       {

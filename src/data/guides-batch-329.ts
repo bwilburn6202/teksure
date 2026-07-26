@@ -262,7 +262,7 @@ This guide walks through setting up your first Subscribe & Save item and managin
       {
         title: 'Choose Subscribe & Save and set your delivery frequency',
         content: 'Select the "Subscribe & Save" option instead of a one-time purchase. Choose how often you want it delivered — options are usually every 1, 2, 3, or 6 months. Pick a schedule that roughly matches how long the item actually lasts you, so you do not build up extra unused stock.',
-        tip: 'Quick Tip: Start with a shorter interval like monthly. You can always stretch it out later if items are arriving faster than you use them — it is much easier to lengthen the gap than to guess right the first time.',
+        tip: 'Quick Tip: Start with a shorter interval like monthly. You can always stretch it out later if items are arriving faster than you use them. It is much easier to lengthen the gap than to guess right the first time.',
       },
       {
         title: 'Complete checkout like a normal order',

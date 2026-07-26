@@ -143,7 +143,7 @@ This guide walks through checking whether your laptop qualifies, making a USB in
     difficulty: 'Beginner',
     body: `Xfinity (owned by Comcast) has some of the highest customer complaints in the FCC\'s public database for one reason: recurring add-on charges. Common examples: a "free trial" of Peacock Premium that becomes $12/month after 30 days, an xFi Complete WiFi upgrade that adds $25/month, a "premium technician visit" that keeps auto-billing, and Comcast Business voice lines that keep charging after a service change.
 
-You do not need to call Comcast to cancel these — they can be canceled from the Xfinity website or app in about 10 minutes. This guide walks through the four places to look, the exact clicks to cancel each one, and how to get a refund if you were charged for something you did not use.
+You do not need to call Comcast to cancel these. They can be canceled from the Xfinity website or app in about 10 minutes. This guide walks through the four places to look, the exact clicks to cancel each one, and how to get a refund if you were charged for something you did not use.
 
 (Sources: Xfinity Support — xfinity.com/support; FCC Consumer Complaints Center — consumercomplaints.fcc.gov)`,
     steps: [
@@ -158,7 +158,7 @@ You do not need to call Comcast to cancel these — they can be canceled from th
       },
       {
         title: 'Cancel Peacock, Netflix, and other premium video add-ons',
-        content: 'The most common surprise charge is a premium streaming service (Peacock Premium, Paramount+, Showtime, Starz, Max) that started as a free trial. In the Add-ons or Premium Channels list, find the streaming service. Click it. Click "Remove," "Cancel," or "Manage subscription." Confirm the cancellation. The service continues through the end of the current billing month — you do not lose access right away.',
+        content: 'The most common surprise charge is a premium streaming service (Peacock Premium, Paramount+, Showtime, Starz, Max) that started as a free trial. In the Add-ons or Premium Channels list, find the streaming service. Click it. Click "Remove," "Cancel," or "Manage subscription." Confirm the cancellation. The service continues through the end of the current billing month. You do not lose access right away.',
       },
       {
         title: 'Cancel xFi Complete if you rent an Xfinity router',
@@ -222,7 +222,7 @@ This guide walks through creating the group, inviting family members, sharing a 
       },
       {
         title: 'Share a Google One storage plan with the family',
-        content: 'If the family manager pays for Google One (100 GB, 200 GB, 2 TB, or larger), the plan can be shared. Go to one.google.com. Sign in. Click Settings (gear icon top-right). Click "Manage family sharing" > toggle "Share your storage with family" ON. Now every family member sees the shared storage in their own Google One account — they can use it for Gmail, Google Drive, and Google Photos backup.',
+        content: 'If the family manager pays for Google One (100 GB, 200 GB, 2 TB, or larger), the plan can be shared. Go to one.google.com. Sign in. Click Settings (gear icon top-right). Click "Manage family sharing" > toggle "Share your storage with family" ON. Now every family member sees the shared storage in their own Google One account. They can use it for Gmail, Google Drive, and Google Photos backup.',
         tip: 'Quick Tip: Each family member has their own private storage bucket within the plan. Your daughter cannot see your photos even though you share the same 2 TB. Privacy is preserved.',
       },
       {
@@ -263,7 +263,7 @@ This guide walks through creating the group, inviting family members, sharing a 
     publishedAt: '2026-07-25',
     lastVerifiedAt: '2026-07-25',
     difficulty: 'Beginner',
-    body: `Between 2023 and 2025, Netflix rolled out strict password-sharing rules. If someone outside your household watches on your account, Netflix asks them to pay about $8/month as an "extra member" or start their own account. But there are still ways to legally share with adult children, grandchildren, and traveling family — you need to know the rules.
+    body: `Between 2023 and 2025, Netflix rolled out strict password-sharing rules. If someone outside your household watches on your account, Netflix asks them to pay about $8/month as an "extra member" or start their own account. But there are still ways to legally share with adult children, grandchildren, and traveling family. You need to know the rules.
 
 This guide covers what counts as your "household," how the "extra member" add-on works, how to watch on hotel and vacation TVs without triggering a block, and what to do when Netflix incorrectly says your normal home devices are outside your household.
 
@@ -342,7 +342,7 @@ This guide walks through unboxing, mounting, connecting to WiFi, and the four no
       },
       {
         title: 'Mount the doorbell on your front door frame',
-        content: 'Hold the mounting bracket where you want the doorbell — about 4 feet up from the porch floor, angled so the camera sees the walkway. Mark the two screw holes with a pencil. Drill two 1/4-inch holes (use the included masonry bit for brick or stone). Insert the plastic wall anchors. Screw the mounting bracket to the wall with the two included screws. Click the doorbell onto the bracket — it snaps in place with a satisfying click.',
+        content: 'Hold the mounting bracket where you want the doorbell — about 4 feet up from the porch floor, angled so the camera sees the walkway. Mark the two screw holes with a pencil. Drill two 1/4-inch holes (use the included masonry bit for brick or stone). Insert the plastic wall anchors. Screw the mounting bracket to the wall with the two included screws. Click the doorbell onto the bracket. It snaps in place with a satisfying click.',
         tip: 'Quick Tip: If drilling is not an option (renter, brick you cannot touch, aluminum siding), the doorbell comes with a 3M adhesive pad. Clean the surface with alcohol, peel the pad, press hard for 30 seconds, then let cure overnight before mounting the doorbell.',
       },
       {
@@ -468,7 +468,7 @@ This guide walks through why the scam feels real, the exact scripts scammers use
       },
       {
         title: 'Report the scam call',
-        content: 'File a report at reportfraud.ftc.gov (5 minutes, no account needed). Also report to your local sheriff\'s office non-emergency line — they track how many people in your county are getting the same call. The FBI accepts reports at ic3.gov if any money was lost. Blocking the number on your phone does not help much because scammers use a different number every call, but if you use a call-blocking app like Nomorobo or the free RoboKiller trial, they add these numbers to a shared block list within hours.',
+        content: 'File a report at reportfraud.ftc.gov (5 minutes, no account needed). Also report to your local sheriff\'s office non-emergency line. They track how many people in your county are getting the same call. The FBI accepts reports at ic3.gov if any money was lost. Blocking the number on your phone does not help much because scammers use a different number every call, but if you use a call-blocking app like Nomorobo or the free RoboKiller trial, they add these numbers to a shared block list within hours.',
       },
       {
         title: 'Set your phone to only ring for people you know',

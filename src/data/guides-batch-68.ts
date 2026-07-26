@@ -9,7 +9,7 @@ export const guidesBatch68: Guide[] = [
 
 Before doing anything else, you need to check whether your PC can run Windows 11. Microsoft has a free tool called PC Health Check that does this automatically. Go to microsoft.com, search for "PC Health Check," download and run it. It will tell you in seconds whether your machine qualifies.
 
-The minimum requirements for Windows 11 are: a 64-bit processor (most PCs from 2015 or newer have this), 4GB of RAM, 64GB of storage space, and something called TPM 2.0. TPM stands for Trusted Platform Module — it is a small security chip built into most PCs manufactured from 2018 onward. It stores encryption keys and helps protect your system from certain attacks. If your PC was bought before 2017, it may not have TPM 2.0, which would mean it does not qualify.
+The minimum requirements for Windows 11 are: a 64-bit processor (most PCs from 2015 or newer have this), 4GB of RAM, 64GB of storage space, and something called TPM 2.0. TPM stands for Trusted Platform Module. It is a small security chip built into most PCs manufactured from 2018 onward. It stores encryption keys and helps protect your system from certain attacks. If your PC was bought before 2017, it may not have TPM 2.0, which would mean it does not qualify.
 
 If your PC passes the check, back up your data before upgrading. Copy important files to an external hard drive or make sure your OneDrive is synced. This is a precaution — upgrades rarely erase files. But it is always safer to have a backup.
 
@@ -60,7 +60,7 @@ Before updating, do a Time Machine backup. Connect an external hard drive, open 
 
 To install Sonoma, go to System Settings (formerly System Preferences), click General, then Software Update. If Sonoma is available for your Mac, it will appear there. Click "Update Now" and follow the prompts. The download is several gigabytes. So it may take 30 minutes to an hour depending on your internet connection, and installation adds another 20 to 30 minutes.
 
-What is new in Sonoma? Desktop widgets are the biggest visible change — you can drag widgets from the Notification Center and place them directly on your desktop background. Safari now supports Profiles, which keep your bookmarks, history, and cookies separate between work and personal browsing — very useful. During video calls, a feature called Presenter Overlay lets your image float over a shared screen naturally instead of taking up a separate box. Game Mode improves gaming performance by prioritizing the game for CPU and GPU resources. Passwords, a new app previewing what will become a standalone tool in later versions, gives better access to your saved passwords. Autocorrect is improved and finally stops making embarrassing wrong corrections as often.`,
+What is new in Sonoma? Desktop widgets are the biggest visible change. You can drag widgets from the Notification Center and place them directly on your desktop background. Safari now supports Profiles, which keep your bookmarks, history, and cookies separate between work and personal browsing — very useful. During video calls, a feature called Presenter Overlay lets your image float over a shared screen naturally instead of taking up a separate box. Game Mode improves gaming performance by prioritizing the game for CPU and GPU resources. Passwords, a new app previewing what will become a standalone tool in later versions, gives better access to your saved passwords. Autocorrect is improved and finally stops making embarrassing wrong corrections as often.`,
     category: `mac-guides`,
     tags: [`macOS Sonoma`, `Mac`, `update`, `apple`, `new features`],
     thumbnailEmoji: ``,
@@ -272,7 +272,7 @@ Yummly Premium (a paid subscription) adds video walkthroughs for recipes, which 
     slug: `allrecipes-app-guide`,
     title: `How to Use Allrecipes to Find and Save Your Favorite Recipes`,
     excerpt: `Allrecipes has millions of community-tested recipes with real reviews — here's how to find, save, and cook from the app.`,
-    body: `Allrecipes is one of the most popular cooking websites and apps in the United States, and for good reason: every recipe has been submitted and reviewed by real home cooks. You are not reading instructions written by a professional chef in a test kitchen alone — you are reading feedback from thousands of people who made the exact dish in their own kitchens, with their own ovens, and often with their own substitutions.
+    body: `Allrecipes is one of the most popular cooking websites and apps in the United States, and for good reason: every recipe has been submitted and reviewed by real home cooks. You are not reading instructions written by a professional chef in a test kitchen alone. You are reading feedback from thousands of people who made the exact dish in their own kitchens, with their own ovens, and often with their own substitutions.
 
 That community layer is what makes Allrecipes particularly useful. When you open a recipe, scroll past the ingredients to the reviews section. Look for recipes with at least 100 reviews and a rating of 4 stars or higher — those are the ones that genuinely work. Pay attention to what reviewers changed. Comments like "I reduced the salt by half" or "I added an extra clove of garlic" give you a head start on making the recipe even better.
 
@@ -325,7 +325,7 @@ When it is time to cook, open a recipe in the app for large-text, step-by-step i
 
 Mealime is free for core features. Mealime Pro, which costs around $5 per month or $30 per year, unlocks a larger recipe library and more customization options.
 
-Compared to Yummly, Mealime is more structured — it is built specifically for weekly meal planning rather than casual recipe browsing. If you want a system that tells you what to cook each night and exactly what to buy, Mealime is worth trying.`,
+Compared to Yummly, Mealime is more structured. It is built specifically for weekly meal planning rather than casual recipe browsing. If you want a system that tells you what to cook each night and exactly what to buy, Mealime is worth trying.`,
     category: `app-guides`,
     tags: [`mealime`, `meal planning`, `recipes`, `grocery list`, `healthy eating`],
     thumbnailEmoji: ``,
@@ -492,7 +492,7 @@ To get started, download AllTrails from the App Store or Google Play, or visit a
 
 The search filters are where AllTrails really earns its place. You can filter by difficulty level (Easy, Moderate, Hard), distance (1 mile, 3 miles, 10+ miles), elevation gain (minimal, moderate, challenging), trail type (loop, out-and-back, or point-to-point), and features like dog-friendly, wheelchair accessible, or kid-friendly. This means you can find trails that genuinely match your fitness level and situation rather than guessing.
 
-Each trail page includes a map with the route, an elevation profile graph showing the hills, recent photos posted by hikers, and reviews describing current trail conditions. The conditions section is particularly valuable — it tells you things like whether there is mud, snow, downed trees, or if the parking lot was full on a recent weekend.
+Each trail page includes a map with the route, an elevation profile graph showing the hills, recent photos posted by hikers, and reviews describing current trail conditions. The conditions section is particularly valuable. It tells you things like whether there is mud, snow, downed trees, or if the parking lot was full on a recent weekend.
 
 The free version of AllTrails includes all the trail listings and reviews. AllTrails Pro, which costs around $35 per year, adds the ability to download offline maps for areas without cell coverage — strongly recommended if you hike in remote areas or national parks where signal is unreliable.
 
@@ -556,7 +556,7 @@ For most people, the recommendation is: use your built-in app for daily use, che
       {
         title: `Bookmark Weather.gov for official forecasts`,
         content: `Open a browser and go to weather.gov. Enter your city or zip code. This is the National Weather Service — the official US government weather forecaster. Bookmark this page for any time you want a second opinion on a major storm or need to check whether a warning or watch has been issued for your area.`,
-        tip: `Look for the "Hazardous Weather Outlook" section at Weather.gov for your area — it gives plain-language summaries of any potential weather threats in the coming week.`,
+        tip: `Look for the "Hazardous Weather Outlook" section at Weather.gov for your area. It gives plain-language summaries of any potential weather threats in the coming week.`,
       },
       {
         title: `Download a radar app for storm tracking`,
@@ -593,7 +593,7 @@ If your Android phone does not have a built-in camera magnifier, search the Goog
       {
         title: `Find the Magnification settings on your Android phone`,
         content: `Open the Settings app. Scroll down and tap "Accessibility." On Samsung phones, tap "Vision Enhancements" then "Magnification." On Google Pixel phones, tap "Magnification" directly. On other Android phones, look for "Magnification" or "Magnifier" within the Accessibility section.`,
-        tip: `If you cannot find it, tap the search icon at the top of Settings and type "magnification" — it will locate the setting for you.`,
+        tip: `If you cannot find it, tap the search icon at the top of Settings and type "magnification". It will locate the setting for you.`,
       },
       {
         title: `Turn on Triple Tap to zoom your phone's screen`,
@@ -830,7 +830,7 @@ One important note about Google Maps offline: downloaded areas expire after 15 d
     slug: `rome2rio-guide`,
     title: `How to Use Rome2rio to Plan Any Trip Route`,
     excerpt: `Rome2rio shows you every way to get from anywhere to anywhere — plane, train, bus, ferry, or driving — with prices and travel times.`,
-    body: `Rome2rio answers the question "how do I get from here to there?" for any combination of origin and destination on the planet. It does not specialize in one type of transportation — it searches flights, trains, buses, ferries, rideshares, and driving routes simultaneously and presents all the options with estimated costs and travel times. This makes it invaluable for planning trips where you are not sure what transportation is even available.
+    body: `Rome2rio answers the question "how do I get from here to there?" for any combination of origin and destination on the planet. It does not specialize in one type of transportation. It searches flights, trains, buses, ferries, rideshares, and driving routes simultaneously and presents all the options with estimated costs and travel times. This makes it invaluable for planning trips where you are not sure what transportation is even available.
 
 The tool is especially useful for complex or unfamiliar routes. If you want to get from Chicago to a small coastal town in Croatia, Rome2rio will show you that it requires a flight to Dubrovnik followed by a ferry connection and a local bus — complete with approximate costs and travel times for each segment. That level of multi-modal detail is difficult to get from a single airline booking site or Google Maps.
 

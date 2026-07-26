@@ -65,7 +65,7 @@ Updating your inventory when you buy something new takes only a minute or two, a
 
 Trust & Will guides you through a series of plain-English questions about your wishes. Who should inherit your belongings? Who should make decisions for you if you cannot? Who should care for your children or pets? The service builds the legal document based on your answers and creates documents that meet the requirements for your specific state.
 
-A basic will through Trust & Will covers who gets your belongings, names an executor (the person who carries out your wishes), names guardians for any minor children, and includes a healthcare directive so your medical wishes are known. A living trust goes further — it allows your estate to avoid the court process called probate, which can be slow and expensive.
+A basic will through Trust & Will covers who gets your belongings, names an executor (the person who carries out your wishes), names guardians for any minor children, and includes a healthcare directive so your medical wishes are known. A living trust goes further. It allows your estate to avoid the court process called probate, which can be slow and expensive.
 
 The cost is typically between $69 and $199 depending on whether you choose a will or a trust package. This is a lot less than working with an attorney in person, though Trust & Will does recommend consulting an attorney if your situation is complicated — for example, if you own a business, have a blended family, or have assets in multiple states.
 
@@ -73,7 +73,7 @@ Once your documents are complete, Trust & Will provides instructions for signing
     steps: [
       {
         title: `Go to the Trust & Will website and choose a plan`,
-        content: `Open a web browser and go to trustandwill.com. You will see options for a Will, a Trust, or a Guardianship plan. If you have a straightforward situation — you own a home, have a spouse and children, and want a clear plan for your belongings — a Will plan is a good starting point. If you have significant assets and want to avoid probate, consider the Trust plan. Read the description of each before choosing.`,
+        content: `Open a web browser and go to trustandwill.com. You will see options for a Will, a Trust, or a Guardianship plan. If you have a straightforward situation. You own a home, have a spouse and children, and want a clear plan for your belongings — a Will plan is a good starting point. If you have significant assets and want to avoid probate, consider the Trust plan. Read the description of each before choosing.`,
         tip: `Trust & Will periodically offers discounts through AARP and other organizations. Check aarp.org for current deals before purchasing.`,
       },
       {
@@ -120,7 +120,7 @@ This is one of the kindest things you can do for the people you love. Spending f
     steps: [
       {
         title: `Open your Apple ID settings`,
-        content: `On your iPhone, open the Settings app — it looks like a gray box with gears on it. At the very top of the Settings screen, tap your name. This opens your Apple ID page. Scroll down until you see "Sign-In & Security" and tap it.`,
+        content: `On your iPhone, open the Settings app. It looks like a gray box with gears on it. At the very top of the Settings screen, tap your name. This opens your Apple ID page. Scroll down until you see "Sign-In & Security" and tap it.`,
         tip: `Make sure your iPhone is running iOS 15.2 or later. To check, go to Settings, then General, then About, and look at the Software Version number.`,
       },
       {
@@ -129,7 +129,7 @@ This is one of the kindest things you can do for the people you love. Spending f
       },
       {
         title: `Choose the person you want to designate`,
-        content: `Tap "Choose a Contact" and select someone from your contacts list. This person must have their own Apple ID. You can choose a family member or a trusted friend. After selecting them, tap "Continue." Apple will show you a summary of what access your Legacy Contact will have — they can access photos, messages, notes, and other personal data, but not payment methods or app purchases.`,
+        content: `Tap "Choose a Contact" and select someone from your contacts list. This person must have their own Apple ID. You can choose a family member or a trusted friend. After selecting them, tap "Continue." Apple will show you a summary of what access your Legacy Contact will have. They can access photos, messages, notes, and other personal data, but not payment methods or app purchases.`,
         warning: `Choose someone you trust completely with your personal information. They will have broad access to your Apple account and the private data stored in it.`,
       },
       {
@@ -171,7 +171,7 @@ Setting up your preferences takes just a few minutes and gives you peace of mind
       },
       {
         title: `Choose a Legacy Contact`,
-        content: `Tap "Choose Legacy Contact" and type the name of a Facebook friend you trust. This person will be able to manage your memorialized account — they can post a tribute message, update your profile and cover photo, and respond to new friend requests. Once you select them, Facebook will ask if you want to send them a message letting them know. It is a good idea to notify them so they understand this responsibility.`,
+        content: `Tap "Choose Legacy Contact" and type the name of a Facebook friend you trust. This person will be able to manage your memorialized account. They can post a tribute message, update your profile and cover photo, and respond to new friend requests. Once you select them, Facebook will ask if you want to send them a message letting them know. It is a good idea to notify them so they understand this responsibility.`,
         warning: `Your Legacy Contact cannot access your private messages, delete posts you made while alive, or remove current friends. Make sure the person you choose understands what they can and cannot do.`,
       },
       {
@@ -300,7 +300,7 @@ Several categories of people may qualify for survivor benefits. A surviving spou
 
 There is also a one-time lump-sum death payment of $255 available to a surviving spouse who was living with the deceased, or in some cases to dependent children. This must be applied for within two years of the death.
 
-The Social Security Administration strongly encourages people to apply as soon as possible after a loved one's death, because benefits cannot be paid for months before the application date. You cannot apply for survivor benefits online — you must call or visit your local SSA office. The SSA's website at ssa.gov has detailed information. And you can call 1-800-772-1213 to start the process.`,
+The Social Security Administration strongly encourages people to apply as soon as possible after a loved one's death, because benefits cannot be paid for months before the application date. You cannot apply for survivor benefits online. You must call or visit your local SSA office. The SSA's website at ssa.gov has detailed information. And you can call 1-800-772-1213 to start the process.`,
     steps: [
       {
         title: `Gather the documents you will need`,
@@ -319,7 +319,7 @@ The Social Security Administration strongly encourages people to apply as soon a
       },
       {
         title: `Ask about the lump-sum death payment`,
-        content: `In addition to ongoing monthly benefits, the SSA offers a one-time payment of $255 to qualifying survivors. This payment goes to a surviving spouse who was living with the deceased at the time of death, or to eligible children if there is no qualifying spouse. Ask about this payment when you call — it must be applied for within two years of the date of death.`,
+        content: `In addition to ongoing monthly benefits, the SSA offers a one-time payment of $255 to qualifying survivors. This payment goes to a surviving spouse who was living with the deceased at the time of death, or to eligible children if there is no qualifying spouse. Ask about this payment when you call. It must be applied for within two years of the date of death.`,
       },
       {
         title: `Keep the SSA updated on any life changes`,
@@ -443,7 +443,7 @@ PODS is available in most major metropolitan areas in the United States. In very
       },
       {
         title: `Choose your container size and schedule delivery`,
-        content: `The 16-foot container fits the contents of a 3- to 4-bedroom home. The 12-foot container is right for a 1- to 2-bedroom home. The 7-foot container works for a studio or when you only need to move a portion of your belongings. If you are unsure, PODS customer service at 1-877-770-7637 can help you estimate. Once you choose, schedule a delivery date — you want the container to arrive at least a week before you need to be out of your home.`,
+        content: `The 16-foot container fits the contents of a 3- to 4-bedroom home. The 12-foot container is right for a 1- to 2-bedroom home. The 7-foot container works for a studio or when you only need to move a portion of your belongings. If you are unsure, PODS customer service at 1-877-770-7637 can help you estimate. Once you choose, schedule a delivery date. You want the container to arrive at least a week before you need to be out of your home.`,
         warning: `Check with your homeowners association (HOA) and your city or county before scheduling a delivery. Some neighborhoods prohibit containers in driveways or require permits. PODS can sometimes help with permit applications.`,
       },
       {
@@ -569,7 +569,7 @@ MyChart is available at mychart.com and as a free app for iPhone and Android. Yo
       {
         title: `Request your activation code from your doctor's office`,
         content: `The first step is getting an activation code from your healthcare provider. You can ask for it at your next appointment, call the office, or look for an option on your provider's website to activate a MyChart account online using your date of birth, Social Security number last four digits, and zip code. Some providers will email you an activation code automatically after a visit. Once you have a code, go to mychart.com or your provider's specific MyChart web address and enter it to create your account.`,
-        tip: `Ask the front desk staff for help with activation — they do this regularly and can walk you through the process in just a few minutes.`,
+        tip: `Ask the front desk staff for help with activation. They do this regularly and can walk you through the process in just a few minutes.`,
       },
       {
         title: `Log in and explore your health summary`,
@@ -732,7 +732,7 @@ The app also connects to Walgreens Find Care, which can help you locate health s
 
 Costco's prescription prices are particularly competitive for common generic medications. Generics are drugs that contain the same active ingredient as their brand-name counterparts but are sold at much lower prices because the original patent has expired. Many medications commonly taken for chronic conditions — blood pressure, cholesterol, diabetes, thyroid — are available as generics and can cost just a few dollars per month at Costco.
 
-Costco also has an online pharmacy available at costco.com/pharmacy. You can use the online system to transfer existing prescriptions from another pharmacy, request new prescriptions, and order refills for pickup at your local Costco. There is no membership fee to use the online pharmacy either — you need to create a free Costco.com account, but membership is not required.
+Costco also has an online pharmacy available at costco.com/pharmacy. You can use the online system to transfer existing prescriptions from another pharmacy, request new prescriptions, and order refills for pickup at your local Costco. There is no membership fee to use the online pharmacy either. You need to create a free Costco.com account, but membership is not required.
 
 To find prices before transferring a prescription, use Costco's Drug Information Center at costco.com/pharmacy to search for a medication by name and see the current price for a 30-day or 90-day supply. Comparing this price to what you currently pay can help you decide whether switching makes sense. Costco pharmacists are available by phone at your local warehouse to answer questions about your medications.`,
     steps: [
@@ -832,7 +832,7 @@ To use Cost Plus Drugs, your doctor needs to send a prescription electronically 
       },
       {
         title: `Create an account and enter your delivery address`,
-        content: `Go to costplusdrugs.com and click "Sign Up" to create a free account with your email address and a password. After creating your account, add your full name, date of birth, delivery address, and any medication allergies. This information is required to fill your prescription. Cost Plus Drugs ships all orders to your home — there is no in-store pickup option.`,
+        content: `Go to costplusdrugs.com and click "Sign Up" to create a free account with your email address and a password. After creating your account, add your full name, date of birth, delivery address, and any medication allergies. This information is required to fill your prescription. Cost Plus Drugs ships all orders to your home. There is no in-store pickup option.`,
         warning: `Cost Plus Drugs does not accept health insurance at this time. All orders are cash pay. Keep this in mind for budget planning, especially if you take multiple medications.`,
       },
       {
@@ -859,7 +859,7 @@ Blink Health works by negotiating volume-based prices with pharmacies and passin
 
 Blink Health is useful for people who do not have health insurance, people whose insurance does not cover a specific medication, people who are in their deductible period and paying full price, and people who want to check whether they are getting the best price on a prescription they already take.
 
-There is no membership fee to use Blink Health — you create a free account and pay only for the medications you purchase. Blink accepts payment by credit card, debit card, or FSA/HSA cards, which is important because FSA and HSA funds are specifically designed for healthcare expenses like prescriptions.
+There is no membership fee to use Blink Health. You create a free account and pay only for the medications you purchase. Blink accepts payment by credit card, debit card, or FSA/HSA cards, which is important because FSA and HSA funds are specifically designed for healthcare expenses like prescriptions.
 
 Blink Health is available at blinkhealth.com and as a free app for iPhone and Android. A competing service, GoodRx (goodrx.com), offers similar savings through coupons that you present at the pharmacy — both services are worth comparing before filling an expensive prescription.`,
     steps: [
@@ -876,7 +876,7 @@ Blink Health is available at blinkhealth.com and as a free app for iPhone and An
       {
         title: `Bring your prescription and Blink ID to the pharmacy`,
         content: `Bring a valid photo ID, your physical prescription (if your doctor gave you one on paper) or confirm that your doctor called it in or sent it electronically to your chosen pharmacy, and your Blink confirmation number or ID. At the pharmacy counter, tell the pharmacist you are using Blink Health and provide your confirmation number. They will process the prescription and give you the medication — you have already paid. So there is nothing more to pay at the counter.`,
-        tip: `If you use the Blink Health app on your phone, your Blink ID barcode is available right on the screen — you can show the pharmacist your phone instead of writing down or printing a confirmation number.`,
+        tip: `If you use the Blink Health app on your phone, your Blink ID barcode is available right on the screen. You can show the pharmacist your phone instead of writing down or printing a confirmation number.`,
       },
       {
         title: `Use Blink for ongoing refills`,

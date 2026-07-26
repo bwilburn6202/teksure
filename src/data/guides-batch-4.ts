@@ -229,7 +229,7 @@ There is one important thing to know: if you are in a group chat, read receipts 
 
 First, check what is using up your storage: Open the Settings app, tap your name at the top, then tap "iCloud." You will see a colorful bar showing what is taking up space — usually backups, photos, and apps are the biggest users. Tap "Manage Account Storage" to see a detailed breakdown. From here you can delete old phone backups (especially from phones you no longer own), turn off iCloud backup for apps you do not care about, and see if there are large files you no longer need.
 
-If you want to add more storage, Apple's iCloud+ plans are affordable: 50 GB costs about $1 per month, and 200 GB costs about $3 per month. To upgrade, go to Settings → your name → iCloud → Manage Account Storage → Change Storage Plan. You can also choose to keep photos on your phone and computer instead of iCloud by turning off "iCloud Photos" and backing up photos manually. However, for most people, upgrading to 50 GB for $1 per month is the easiest solution — it typically lasts for years before needing to increase again.`,
+If you want to add more storage, Apple's iCloud+ plans are affordable: 50 GB costs about $1 per month, and 200 GB costs about $3 per month. To upgrade, go to Settings → your name → iCloud → Manage Account Storage → Change Storage Plan. You can also choose to keep photos on your phone and computer instead of iCloud by turning off "iCloud Photos" and backing up photos manually. However, for most people, upgrading to 50 GB for $1 per month is the easiest solution. It typically lasts for years before needing to increase again.`,
     steps: [
       { title: 'Check what is using your storage', content: 'Settings → tap your name → iCloud → Manage Account Storage. You will see a breakdown of what is taking up space.' },
       { title: 'Delete backups from old phones', content: 'In Manage Account Storage, tap "Backups." If you see a backup for an old iPhone you no longer own, tap it and tap "Delete Backup." This can free several gigabytes.' },
@@ -390,7 +390,7 @@ Once logged in, the main "My Medicare" dashboard shows your current coverage at 
 
 First, your phone and TV must be connected to the same home Wi-Fi network. Then download the right app for your TV: Samsung TVs use the "SmartThings" app (available free on iPhone and Android). LG TVs use the "LG ThinQ" app. Roku TVs and Roku streaming sticks use the "Roku" app. Amazon Fire TV and Fire Stick use the "Amazon Fire TV" app. Apple TV uses the "Apple TV Remote" app (built into the iPhone Control Center — swipe down from the top right and tap the remote icon). For older TVs that are not "smart," you can buy a small universal remote for about $10 at any pharmacy or electronics store.
 
-Open the app, make sure your phone's Wi-Fi is on, and tap the "Devices" tab or the TV icon. The app will automatically search for your TV on the same network. When your TV appears, tap it. You may need to enter a code that appears on the TV screen to confirm the connection. Once connected, the app gives you a virtual remote control — you can change channels, adjust volume, and type search terms using your phone's keyboard.`,
+Open the app, make sure your phone's Wi-Fi is on, and tap the "Devices" tab or the TV icon. The app will automatically search for your TV on the same network. When your TV appears, tap it. You may need to enter a code that appears on the TV screen to confirm the connection. Once connected, the app gives you a virtual remote control. You can change channels, adjust volume, and type search terms using your phone's keyboard.`,
     steps: [
       { title: 'Make sure phone and TV are on the same Wi-Fi', content: 'Check that your phone is connected to your home Wi-Fi (not cellular data) and that it is the same network your TV is on — not a guest network.' },
       { title: 'Download the right app', content: 'Samsung: SmartThings. LG: LG ThinQ. Roku: Roku app. Amazon Fire TV: Amazon Fire TV app. Apple TV: built into iPhone (swipe down from top right → tap remote icon). All are free.' },
@@ -411,12 +411,12 @@ Open the app, make sure your phone's Wi-Fi is on, and tap the "Devices" tab or t
     difficulty: 'Beginner',
     body: `Many people are afraid to click the "Unsubscribe" link at the bottom of emails. They worry it will confirm their email address to scammers or open a virus. That instinct is smart — but it only applies to a small category of emails. Knowing when it's safe to unsubscribe, versus when you should delete and report the email, is a useful skill that keeps your inbox cleaner.
 
-It's safe to click "Unsubscribe" when the email is from a company you recognize and have done business with — a store you shop at, a newsletter you signed up for, a bank or insurance company, or a website you use. Legitimate companies are required by law (the CAN-SPAM Act) to include a working unsubscribe link, and clicking it really does remove you from their list within 10 business days. Gmail also has its own unsubscribe button at the top of many promotional emails. Clicking the "Unsubscribe" link right next to the sender's name in Gmail is very safe — it works through Google's own systems.
+It's safe to click "Unsubscribe" when the email is from a company you recognize and have done business with — a store you shop at, a newsletter you signed up for, a bank or insurance company, or a website you use. Legitimate companies are required by law (the CAN-SPAM Act) to include a working unsubscribe link, and clicking it really does remove you from their list within 10 business days. Gmail also has its own unsubscribe button at the top of many promotional emails. Clicking the "Unsubscribe" link right next to the sender's name in Gmail is very safe. It works through Google's own systems.
 
 Do NOT click unsubscribe if the email claims to be from a government agency (the IRS, Social Security, or Medicare don't send mass promotional emails), comes from a sender you don't recognize at all, has spelling errors or asks you to "confirm your email to unsubscribe," or was already sitting in your Spam folder. For those emails, mark them as spam and delete them instead.`,
     steps: [
       { title: 'Safe to unsubscribe: emails from companies you know', content: 'If the email is from a store, bank, or website you actually use, click the Unsubscribe link at the bottom. They are legally required to remove you within 10 days.' },
-      { title: `Use Gmail's built-in Unsubscribe button`, content: `In Gmail, many emails show an "Unsubscribe" link right next to the sender's name at the top of the email. This is Google's own system — it is very safe to click.` },
+      { title: `Use Gmail's built-in Unsubscribe button`, content: `In Gmail, many emails show an "Unsubscribe" link right next to the sender's name at the top of the email. This is Google's own system. It is very safe to click.` },
       { title: 'Do NOT unsubscribe from emails you do not recognize', content: 'If you do not know the company at all, or the email was already in your Spam folder, do not click any links. Delete it.', warning: 'Clicking unsubscribe in a scam email can confirm to the scammer that your address is active, leading to more spam.' },
       { title: 'Mark suspicious emails as spam', content: 'In Gmail, right-click the email → "Report spam." On iPhone Mail, swipe left on the email → More → Move to Junk. This trains your inbox to catch similar emails in the future.' },
     ],
@@ -436,7 +436,7 @@ Do NOT click unsubscribe if the email claims to be from a government agency (the
 
 To download a map on an iPhone or Android: Open Google Maps and make sure you are signed into your Google account. Tap your profile picture in the top right corner. Tap "Offline maps." Tap "Select your own map." A box will appear over the map — drag and resize it to cover the area you want to save (for example, the city and surrounding area where you are traveling). Tap "Download." The app will show you how much phone storage the map will use, and then download it. This usually takes a few minutes on Wi-Fi.
 
-Once downloaded, the map works just like the regular Google Maps when you are offline — you can search for addresses, get turn-by-turn directions, and see where you are on the map. The only thing that does not work offline is live traffic updates and business reviews. Offline maps are stored for 30 days and then need to be re-downloaded (Google will remind you).`,
+Once downloaded, the map works just like the regular Google Maps when you are offline. You can search for addresses, get turn-by-turn directions, and see where you are on the map. The only thing that does not work offline is live traffic updates and business reviews. Offline maps are stored for 30 days and then need to be re-downloaded (Google will remind you).`,
     steps: [
       { title: 'Open Google Maps and sign in', content: 'Make sure you are signed into a Google account in the app. Tap your profile picture in the top right corner.' },
       { title: 'Tap Offline maps', content: 'In the menu that opens, tap "Offline maps."' },
@@ -533,7 +533,7 @@ The scam is spreading rapidly in every state. Scammers are targeting people beca
     difficulty: 'Beginner',
     body: `Being scammed is one of the most distressing things that can happen — and it happens to millions of people every year, including smart, experienced adults. If you have recently realized you may have been scammed, the most important thing is to stay calm and take action quickly. Acting within the first 24 hours gives you the best chance of limiting the damage.
 
-Scams take many forms: a fake tech support call where you gave someone remote access to your computer, a phishing email where you entered your bank login, a gift card demand where you sent money, or a romance scammer who convinced you to wire funds. Each situation is a little different, but the core steps to protect yourself are the same. Go through this guide step by step — you do not need to do everything at once, but start with Step 1 right away.`,
+Scams take many forms: a fake tech support call where you gave someone remote access to your computer, a phishing email where you entered your bank login, a gift card demand where you sent money, or a romance scammer who convinced you to wire funds. Each situation is a little different, but the core steps to protect yourself are the same. Go through this guide step by step. You do not need to do everything at once, but start with Step 1 right away.`,
     steps: [
       {
         title: 'Stop all contact with the scammer right now',
@@ -567,7 +567,7 @@ Scams take many forms: a fake tech support call where you gave someone remote ac
       },
       {
         title: 'Monitor your accounts for unusual activity',
-        content: `Check your bank and credit card statements daily for the next few weeks. Look for any charges you do not recognize — even small ones (scammers often test with a small charge before making larger ones). Sign up for transaction alerts through your bank's app so you get a text every time money moves. Check your credit report for free at AnnualCreditReport.com — you can now check it weekly for free.`,
+        content: `Check your bank and credit card statements daily for the next few weeks. Look for any charges you do not recognize — even small ones (scammers often test with a small charge before making larger ones). Sign up for transaction alerts through your bank's app so you get a text every time money moves. Check your credit report for free at AnnualCreditReport.com. You can now check it weekly for free.`,
       },
       {
         title: 'Talk to someone — you are not alone',
@@ -589,7 +589,7 @@ Scams take many forms: a fake tech support call where you gave someone remote ac
     thumbnailEmoji: '',
     publishedAt: '2026-04-14',
     difficulty: 'Beginner',
-    body: `When you get a new phone, your WhatsApp messages do not transfer automatically — they live on your old phone and will disappear unless you back them up first. The good news is that WhatsApp has a free built-in backup feature that saves all your chats, photos, and videos to either iCloud (for iPhone) or Google Drive (for Android). Once backed up, you can restore everything on your new phone in a few minutes.
+    body: `When you get a new phone, your WhatsApp messages do not transfer automatically. They live on your old phone and will disappear unless you back them up first. The good news is that WhatsApp has a free built-in backup feature that saves all your chats, photos, and videos to either iCloud (for iPhone) or Google Drive (for Android). Once backed up, you can restore everything on your new phone in a few minutes.
 
 The key is to do the backup before you set up your new phone or hand in your old one. This guide covers both iPhone-to-iPhone and Android-to-Android transfers. If you are switching between iPhone and Android (for example, moving from an Android to an iPhone), the process is slightly different — WhatsApp has a special transfer tool for that which is covered in Step 5.`,
     steps: [
@@ -606,7 +606,7 @@ The key is to do the backup before you set up your new phone or hand in your old
       },
       {
         title: 'Set up WhatsApp on your new iPhone using the same phone number',
-        content: 'On your new iPhone, download WhatsApp from the App Store (it is free). Open WhatsApp and enter your phone number — it must be the same number you used on your old phone. WhatsApp will send a verification code by text. Enter the code. WhatsApp will detect your backup on iCloud and ask "Restore Chat History?" — tap Restore. Your messages, photos, and videos will download. This may take a few minutes.',
+        content: 'On your new iPhone, download WhatsApp from the App Store (it is free). Open WhatsApp and enter your phone number. It must be the same number you used on your old phone. WhatsApp will send a verification code by text. Enter the code. WhatsApp will detect your backup on iCloud and ask "Restore Chat History?" — tap Restore. Your messages, photos, and videos will download. This may take a few minutes.',
       },
       {
         title: 'Set up WhatsApp on your new Android phone',
@@ -614,7 +614,7 @@ The key is to do the backup before you set up your new phone or hand in your old
       },
       {
         title: 'Switching from Android to iPhone (or iPhone to Android)',
-        content: 'WhatsApp has a special built-in tool for cross-platform transfers called "Move to iOS" (when moving to iPhone) or using the Android companion app. On your new iPhone, during initial setup, use the "Move to iOS" app on your Android phone — it will prompt you to transfer WhatsApp data directly over a local wireless connection. For the iPhone-to-Android direction, open WhatsApp on your old iPhone → Settings → Chats → Move Chats to Android and follow the prompts. Both phones need to be near each other and connected to the same Wi-Fi.',
+        content: 'WhatsApp has a special built-in tool for cross-platform transfers called "Move to iOS" (when moving to iPhone) or using the Android companion app. On your new iPhone, during initial setup, use the "Move to iOS" app on your Android phone. It will prompt you to transfer WhatsApp data directly over a local wireless connection. For the iPhone-to-Android direction, open WhatsApp on your old iPhone → Settings → Chats → Move Chats to Android and follow the prompts. Both phones need to be near each other and connected to the same Wi-Fi.',
         tip: `WhatsApp's official cross-platform transfer guide is at faq.whatsapp.com — search "move WhatsApp from Android to iPhone" or vice versa.`,
       },
       {
@@ -668,7 +668,7 @@ The most common cause is a router that needs a restart. The second most common i
       },
       {
         title: `Run your internet provider's speed test`,
-        content: `Visit fast.com (free, no sign-up) or speedtest.net to check your actual internet speed. If the speed shown is much lower than what you pay for, the problem is with your internet service, not your home Wi-Fi. In that case, call your internet provider's support line and tell them your speed test result — they can often diagnose and fix connection issues remotely.`,
+        content: `Visit fast.com (free, no sign-up) or speedtest.net to check your actual internet speed. If the speed shown is much lower than what you pay for, the problem is with your internet service, not your home Wi-Fi. In that case, call your internet provider's support line and tell them your speed test result. They can often diagnose and fix connection issues remotely.`,
       },
     ],
   },

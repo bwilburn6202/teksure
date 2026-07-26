@@ -54,7 +54,7 @@ A few things to set up first: make sure your checking account has a comfortable 
     difficulty: `Beginner`,
     body: `Google Calendar has a sharing feature that makes it easy for family members to see each other's schedules, share a single family calendar for shared events, and reduce the "when are you free?" back-and-forth that fills up texts and phone calls.
 
-There are two things you can share in Google Calendar: your main personal calendar, and a separate shared calendar you create specifically for family use. Sharing your personal calendar lets others see your appointments (you control how much detail they see). Creating a shared family calendar is often better — it gives everyone a place to add family events, birthdays, and appointments without mixing in personal items.
+There are two things you can share in Google Calendar: your main personal calendar, and a separate shared calendar you create specifically for family use. Sharing your personal calendar lets others see your appointments (you control how much detail they see). Creating a shared family calendar is often better. It gives everyone a place to add family events, birthdays, and appointments without mixing in personal items.
 
 Everyone involved needs a Google account (a Gmail address or any Google account). The sharing happens through Google's calendar settings on the web (calendar.google.com) or through the Google Calendar app.
 
@@ -72,7 +72,7 @@ This setup works well for families keeping track of doctor appointments, grandch
       },
       {
         title: `Share the calendar with family members`,
-        content: `In the left sidebar, hover over your new Family calendar and click the three-dot menu, then "Settings and sharing." Scroll down to "Share with specific people or groups." Click "+ Add people and groups," type a family member's Gmail address, and choose their permission level: "See all event details" (they can view), "Make changes to events" (they can add/edit events), or "Make changes and manage sharing" (full control). Click Send. They'll get an email invitation — they click the link to add the calendar to their own Google Calendar.`,
+        content: `In the left sidebar, hover over your new Family calendar and click the three-dot menu, then "Settings and sharing." Scroll down to "Share with specific people or groups." Click "+ Add people and groups," type a family member's Gmail address, and choose their permission level: "See all event details" (they can view), "Make changes to events" (they can add/edit events), or "Make changes and manage sharing" (full control). Click Send. They'll get an email invitation. They click the link to add the calendar to their own Google Calendar.`,
       },
       {
         title: `Add events to the shared calendar`,
@@ -80,7 +80,7 @@ This setup works well for families keeping track of doctor appointments, grandch
       },
       {
         title: `Check it on your phone`,
-        content: `Open the Google Calendar app on your iPhone or Android. Tap the three-line menu in the top left and scroll down — you should see the Family calendar listed. Tap it to toggle it on (colored dot means it's visible). Now family events will show up on your phone's calendar view automatically. Color-coding tip: tap the calendar name in the menu to change its color so you can spot at a glance.`,
+        content: `Open the Google Calendar app on your iPhone or Android. Tap the three-line menu in the top left and scroll down. You should see the Family calendar listed. Tap it to toggle it on (colored dot means it's visible). Now family events will show up on your phone's calendar view automatically. Color-coding tip: tap the calendar name in the menu to change its color so you can spot at a glance.`,
       },
     ],
     tip: `Quick Tip — If a family member uses Apple Calendar on an iPhone or iPad, they can still subscribe to your Google Calendar. In their iPhone Settings, go to Calendar > Accounts > Add Account > Google and sign in to link both together.`,
@@ -97,7 +97,7 @@ This setup works well for families keeping track of doctor appointments, grandch
     difficulty: `Beginner`,
     body: `Getting a new iPad is exciting, and the setup process is simpler than it used to be — but it still has a handful of decisions you'll want to make thoughtfully, especially around Apple ID, iCloud, and privacy settings. This guide walks you through every step from unboxing to ready-to-use.
 
-The most important thing to have ready before you start: your Apple ID and password. An Apple ID is the email address and password you use with Apple — it's needed to download apps, use iMessage, access iCloud, and pretty much everything else. If you don't have one, you can create one for free during setup. If you already have one from a previous iPhone or iPad, use the same one — it connects all your devices and keeps your contacts, photos, and purchases in sync.
+The most important thing to have ready before you start: your Apple ID and password. An Apple ID is the email address and password you use with Apple — it's needed to download apps, use iMessage, access iCloud, and pretty much everything else. If you don't have one, you can create one for free during setup. If you already have one from a previous iPhone or iPad, use the same one. It connects all your devices and keeps your contacts, photos, and purchases in sync.
 
 If you're upgrading from an older iPad, you have an option called Quick Start that makes setup nearly automatic. Hold the two iPads near each other and your old iPad will offer to transfer your settings and apps to the new one. This is the fastest way to get started and is recommended for most people replacing an older device.
 
@@ -203,7 +203,7 @@ Privacy policies are legally required disclosures, so companies must disclose wh
       },
       {
         title: `Find the data breach notification section`,
-        content: `Search for "breach" or "data incident." A trustworthy privacy policy says something like: "We will notify you within 72 hours of becoming aware of a data breach affecting your personal information." Vague language like "we take security seriously" without a concrete notification commitment is a red flag — it means you might not hear about a breach until much later.`,
+        content: `Search for "breach" or "data incident." A trustworthy privacy policy says something like: "We will notify you within 72 hours of becoming aware of a data breach affecting your personal information." Vague language like "we take security seriously" without a concrete notification commitment is a red flag. It means you might not hear about a breach until much later.`,
       },
       {
         title: `Check if there's an opt-out or deletion option`,
@@ -283,7 +283,7 @@ The update process takes less than 30 seconds and you don't lose anything — yo
       },
       {
         title: `Install the update if one is available`,
-        content: `If an update is available, you'll see a blue button labeled "Update Google Chrome." Click it. The update downloads and installs in the background — it usually takes 10 to 20 seconds. When it's done, you'll see a button that says "Relaunch." Click Relaunch to restart Chrome with the update applied. Chrome will reopen to the same pages you had open.`,
+        content: `If an update is available, you'll see a blue button labeled "Update Google Chrome." Click it. The update downloads and installs in the background. It usually takes 10 to 20 seconds. When it's done, you'll see a button that says "Relaunch." Click Relaunch to restart Chrome with the update applied. Chrome will reopen to the same pages you had open.`,
       },
       {
         title: `Confirm you're on the latest version`,
@@ -363,7 +363,7 @@ For anyone who uses reading glasses, has difficulty with small text, or uses the
       },
       {
         title: `Choose what the shortcut turns on`,
-        content: `Tap "Accessibility Shortcut." You'll see a list of features. Tap the ones you want to be able to toggle quickly. Good choices for everyday use: Magnifier (to read small print), Zoom (to enlarge the whole screen), AssistiveTouch (an on-screen button to avoid pressing physical buttons), Increase Contrast, and Color Filters. A checkmark appears next to selected features. Select one or two to start — you can always add more.`,
+        content: `Tap "Accessibility Shortcut." You'll see a list of features. Tap the ones you want to be able to toggle quickly. Good choices for everyday use: Magnifier (to read small print), Zoom (to enlarge the whole screen), AssistiveTouch (an on-screen button to avoid pressing physical buttons), Increase Contrast, and Color Filters. A checkmark appears next to selected features. Select one or two to start. You can always add more.`,
       },
       {
         title: `Test the shortcut`,
@@ -396,7 +396,7 @@ The app supports over a dozen languages including Spanish, French, German, Chine
 
 The Conversation mode is the most impressive feature. Two people sit across from each other with one iPhone between them. Each person speaks in their own language, and the app automatically detects who's speaking and translates each person's words for the other. You can even put it in Auto Translate mode where it listens continuously without needing to press a button.
 
-For reading signs, menus, or documents in a foreign language, Apple's Translate integrates with the camera through the Live Text feature (iOS 17+) — you can point the camera at text and tap to translate it on-screen.`,
+For reading signs, menus, or documents in a foreign language, Apple's Translate integrates with the camera through the Live Text feature (iOS 17+). You can point the camera at text and tap to translate it on-screen.`,
     steps: [
       {
         title: `Find the Translate app`,
@@ -564,7 +564,7 @@ Think of digital storage like containers. The smallest common container is a meg
 
 A single photo from a modern smartphone is typically 3 to 8 MB. A music album is roughly 100 to 200 MB. A movie download in HD is about 2 to 6 GB. So when your phone has 128 GB of storage, it can hold roughly 15,000 to 40,000 photos — or a mix of apps, photos, videos, and music that adds up to 128 GB total.
 
-Internet speed is measured in megabits per second (Mbps) or gigabits per second (Gbps). Bits are different from bytes — there are 8 bits in 1 byte. A 100 Mbps internet connection can download about 12 megabytes of data per second. This is fast enough for streaming video in high quality, video calls, and everyday browsing for most households.
+Internet speed is measured in megabits per second (Mbps) or gigabits per second (Gbps). Bits are different from bytes. There are 8 bits in 1 byte. A 100 Mbps internet connection can download about 12 megabytes of data per second. This is fast enough for streaming video in high quality, video calls, and everyday browsing for most households.
 
 Cloud storage services like iCloud, Google Photos, and Google Drive use GB to describe how much space you have. Apple gives you 5 GB free with iCloud. Google gives you 15 GB free. When those fill up (which happens quickly if you have lots of photos), you're prompted to pay for more storage.`,
     steps: [
@@ -607,7 +607,7 @@ The fastest method: check the back or bottom of your router. Most internet provi
 
 If you've changed the password since the router was installed and you can't remember the new one, the next best option is a device that's already connected to the network. A connected iPhone, Windows computer, or Android phone can show you the password you used when you first connected it.
 
-If none of those options work — you can reset the router to factory settings, which puts it back to the original password printed on the sticker. This is a last resort because you'll need to reconnect every device in your home, but it always works.`,
+If none of those options work. You can reset the router to factory settings, which puts it back to the original password printed on the sticker. This is a last resort because you'll need to reconnect every device in your home, but it always works.`,
     steps: [
       {
         title: `Check the sticker on your router`,
@@ -699,7 +699,7 @@ Run these two scans back-to-back on a regular schedule — perhaps once a month 
       },
       {
         title: `Download Malwarebytes Free for a second scan`,
-        content: `Open your browser and go to malwarebytes.com. Click "Free Download." Save the installer file, then open it and follow the installation steps. During installation, Malwarebytes may offer a free trial of the premium version — you can accept the trial or decline and use the free version. The free version has full scanning capability.`,
+        content: `Open your browser and go to malwarebytes.com. Click "Free Download." Save the installer file, then open it and follow the installation steps. During installation, Malwarebytes may offer a free trial of the premium version. You can accept the trial or decline and use the free version. The free version has full scanning capability.`,
       },
       {
         title: `Run a Malwarebytes scan`,
@@ -738,7 +738,7 @@ Once your account is set up, you'll be using it for years, so take a few extra m
       },
       {
         title: `Enter your name and choose a username`,
-        content: `Fill in your first and last name. Then enter your preferred username — this becomes your email address: [username]@gmail.com. If the name you want is taken, Gmail will suggest available alternatives. You can also modify your choice by adding a number or a period (john.smith or johnsmith1952). Type slowly and double-check the spelling — you can't change your Gmail address once it's created.`,
+        content: `Fill in your first and last name. Then enter your preferred username — this becomes your email address: [username]@gmail.com. If the name you want is taken, Gmail will suggest available alternatives. You can also modify your choice by adding a number or a period (john.smith or johnsmith1952). Type slowly and double-check the spelling. You can't change your Gmail address once it's created.`,
       },
       {
         title: `Create a strong password`,
@@ -837,7 +837,7 @@ If your printer is connected wirelessly over Wi-Fi, connection problems are espe
         content: `If none of the above works, the printer's software driver may be corrupted or outdated. On Windows: go to Settings > Bluetooth & Devices > Printers & Scanners. Click your printer, then "Remove device." Then visit the printer manufacturer's website (HP.com, Canon.com, Epson.com, Brother.com), search for your printer model, and download the latest driver. Run the installer and follow the steps to reinstall. On Mac: go to System Settings > Printers & Scanners, click the minus button to remove the printer, then click the plus button to re-add it.`,
       },
     ],
-    tip: `Quick Tip — Printers that sit unused for weeks can have ink dry in the print heads, causing streaky or no output even when everything else is working. Run the printer's built-in "Head Cleaning" or "Print Head Alignment" function from the printer's display menu or software utility — it uses a small amount of ink to flush and clean the heads.`,
+    tip: `Quick Tip — Printers that sit unused for weeks can have ink dry in the print heads, causing streaky or no output even when everything else is working. Run the printer's built-in "Head Cleaning" or "Print Head Alignment" function from the printer's display menu or software utility. It uses a small amount of ink to flush and clean the heads.`,
   },
   {
     slug: `do-not-disturb-iphone`,
@@ -853,7 +853,7 @@ If your printer is connected wirelessly over Wi-Fi, connection problems are espe
 
 This is especially useful overnight (so a 2 AM spam call doesn't wake you), during meals, during doctor appointments, or during any time you want to be present without phone interruptions.
 
-In iOS 17 and later, Apple expanded Do Not Disturb into a system called Focus. Focus works the same way as Do Not Disturb — it silences notifications — but adds the ability to allow specific contacts through, set a custom schedule, and create multiple Focus modes (Sleep, Driving, Work, Personal, etc.).
+In iOS 17 and later, Apple expanded Do Not Disturb into a system called Focus. Focus works the same way as Do Not Disturb. It silences notifications — but adds the ability to allow specific contacts through, set a custom schedule, and create multiple Focus modes (Sleep, Driving, Work, Personal, etc.).
 
 An important feature that a lot of people worry about: even with Do Not Disturb or a Focus mode on, emergency calls get through. If the same number calls twice within three minutes, the call will ring through even during Do Not Disturb. You can also set specific people (like family) as Starred Contacts who can always reach you.
 
@@ -877,7 +877,7 @@ Setting up a Sleep schedule in the Focus system is particularly valuable. It aut
       },
       {
         title: `Set Do Not Disturb to turn on automatically while driving`,
-        content: `Go to Settings > Focus > Driving. This Focus mode can activate automatically when your iPhone detects you're in a moving vehicle (detected by GPS speed or Bluetooth car connection). Turn on Driving Focus for safer driving — it silences notifications and can send automatic text replies to people who message you, letting them know you're driving.`,
+        content: `Go to Settings > Focus > Driving. This Focus mode can activate automatically when your iPhone detects you're in a moving vehicle (detected by GPS speed or Bluetooth car connection). Turn on Driving Focus for safer driving. It silences notifications and can send automatic text replies to people who message you, letting them know you're driving.`,
       },
     ],
     tip: `Quick Tip — If you're unsure whether Do Not Disturb is on, look at the top of your iPhone's screen. During Do Not Disturb or Focus mode, a small moon icon or the Focus name appears in the status bar at the top.`,
@@ -935,7 +935,7 @@ For seniors, the plant identification and translation features are often the mos
     difficulty: `Beginner`,
     body: `Widgets are small boxes on your iPhone's Home Screen that show live information from your apps without you having to open anything. A weather widget shows today's forecast at a glance. A calendar widget shows your next appointment. A battery widget shows how much charge your iPhone and AirPods have. A Photos widget cycles through your favorite pictures.
 
-Widgets were greatly improved in iOS 14 and have gotten even better in iOS 16 and 17 — you can now place them freely on your Home Screen alongside apps, not just in a sidebar. In iOS 17, there are also Interactive Widgets that you can tap to perform actions directly (like checking off a reminder or playing/pausing music) without opening the app.
+Widgets were greatly improved in iOS 14 and have gotten even better in iOS 16 and 17. You can now place them freely on your Home Screen alongside apps, not just in a sidebar. In iOS 17, there are also Interactive Widgets that you can tap to perform actions directly (like checking off a reminder or playing/pausing music) without opening the app.
 
 Adding widgets is done in a visual editing mode that Apple calls "jiggle mode" — when you hold down on the Home Screen, all the icons start shaking (jiggling). In this mode you can add, move, and delete widgets.
 
@@ -951,7 +951,7 @@ For seniors and anyone who wants key information visible at a glance, widgets ar
       },
       {
         title: `Add a widget to your Home Screen`,
-        content: `When you find a widget you like, tap "Add Widget" at the bottom of the preview screen. The widget drops onto your Home Screen in editing mode. It may land in an empty spot or push other icons around — you can drag it to exactly where you want it by holding and dragging while still in editing mode. Place it in the top area of your screen for maximum visibility.`,
+        content: `When you find a widget you like, tap "Add Widget" at the bottom of the preview screen. The widget drops onto your Home Screen in editing mode. It may land in an empty spot or push other icons around. You can drag it to exactly where you want it by holding and dragging while still in editing mode. Place it in the top area of your screen for maximum visibility.`,
       },
       {
         title: `Customize a widget's content`,

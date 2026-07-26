@@ -23,7 +23,7 @@ Setting a custom ringtone takes about two minutes once you know where to look. T
     steps: [
       {
         title: `Open your phone's Settings app`,
-        content: `Find the Settings app on your home screen or in your app drawer — it looks like a gear icon. Tap it to open it. If you can't find it, swipe down from the top of your screen and look for a gear icon in the top corner.`,
+        content: `Find the Settings app on your home screen or in your app drawer. It looks like a gear icon. Tap it to open it. If you can't find it, swipe down from the top of your screen and look for a gear icon in the top corner.`,
         tip: `Once Settings is open, tap the search bar at the top and type "ringtone" to skip straight to the right page.`
       },
       {
@@ -208,7 +208,7 @@ Once you find the password, write it somewhere you'll remember — a notepad kep
     steps: [
       {
         title: `Click the WiFi icon in the taskbar`,
-        content: `Look at the bottom right corner of your Windows screen (the taskbar). You'll see a WiFi symbol — it looks like a series of curved lines, like radio waves. Click it once. A panel opens showing your current network and other nearby networks.`,
+        content: `Look at the bottom right corner of your Windows screen (the taskbar). You'll see a WiFi symbol. It looks like a series of curved lines, like radio waves. Click it once. A panel opens showing your current network and other nearby networks.`,
         tip: `On Windows 11, you may need to click a small arrow next to the WiFi icon to expand the network panel.`
       },
       {
@@ -241,7 +241,7 @@ On Windows 10: Go to Control Panel → Network and Internet → Network and Shar
     difficulty: `Beginner`,
     body: `Your Mac remembers the password for every WiFi network you've ever connected to. If you need to share your home WiFi password with a visitor, connect a new device, or just remind yourself what the password is, your Mac can show it to you.
 
-The steps depend on which version of macOS you're running. Apple made this easier in macOS Ventura (released in 2022) by adding a WiFi password viewer right inside System Settings — you no longer need to open a separate app. On older Macs running macOS Monterey or earlier, you'll use an app called Keychain Access.
+The steps depend on which version of macOS you're running. Apple made this easier in macOS Ventura (released in 2022) by adding a WiFi password viewer right inside System Settings. You no longer need to open a separate app. On older Macs running macOS Monterey or earlier, you'll use an app called Keychain Access.
 
 To find out which version of macOS you have, click the Apple logo in the top left corner of your screen, then click "About This Mac." The version name and number will appear.
 
@@ -283,7 +283,7 @@ Your Mac must have connected to the WiFi network at least once for the password 
     thumbnailEmoji: ``,
     publishedAt: `2026-04-19`,
     difficulty: `Beginner`,
-    body: `If you need to share your home WiFi password with a guest or connect a new device. And you can't remember the password, your Android phone can help — as long as you're already connected to that network.
+    body: `If you need to share your home WiFi password with a guest or connect a new device, and you can't remember the password, your Android phone can help — as long as you're already connected to that network.
 
 Android 14 and later (released in 2019) added the ability to view and share saved WiFi passwords. There are two ways to do this:
 
@@ -341,7 +341,7 @@ There are two modes: **Screen Mirroring**, which shows everything on your Mac sc
       },
       {
         title: `Use the Control Center to start Screen Mirroring`,
-        content: `On your Mac, click the Control Center icon in the top right corner of your menu bar — it looks like two toggle switches. Click "Screen Mirroring." A list of available AirPlay devices will appear. Click your Apple TV or smart TV's name. Your Mac screen will appear on your TV within a few seconds.`,
+        content: `On your Mac, click the Control Center icon in the top right corner of your menu bar. It looks like two toggle switches. Click "Screen Mirroring." A list of available AirPlay devices will appear. Click your Apple TV or smart TV's name. Your Mac screen will appear on your TV within a few seconds.`,
         tip: `If you don't see your TV in the list, make sure it's turned on, connected to the same WiFi, and has AirPlay turned on in its settings.`
       },
       {
@@ -401,7 +401,7 @@ Neither browser is perfect. Many people use Firefox as their main browser for ev
       },
       {
         title: `Explore the privacy settings`,
-        content: `Click the three horizontal lines (the menu icon) in the top right corner of Firefox. Click "Settings." In the left sidebar, click "Privacy & Security." Here you can choose your level of Enhanced Tracking Protection: Standard, Strict, or Custom. Standard is recommended for most users — it blocks many trackers without breaking most websites. Strict blocks more, but may cause a few websites to look or act unexpectedly.`,
+        content: `Click the three horizontal lines (the menu icon) in the top right corner of Firefox. Click "Settings." In the left sidebar, click "Privacy & Security." Here you can choose your level of Enhanced Tracking Protection: Standard, Strict, or Custom. Standard is recommended for most users. It blocks many trackers without breaking most websites. Strict blocks more, but may cause a few websites to look or act unexpectedly.`,
         tip: `Firefox also has a private browsing window (like Chrome's Incognito). Press Ctrl+Shift+P (Windows) or Command+Shift+P (Mac) to open a private window. Websites visited in private mode are not saved in your history.`
       },
       {
@@ -513,7 +513,7 @@ Here are some of the most useful alarm clock features built into iPhone and Andr
       },
       {
         title: `Use your phone as a bedside clock`,
-        content: `On iPhone: Plug your iPhone into a charger and set it face-up or in a stand — it will enter StandBy mode automatically, displaying a large clock on screen. On Android: Many phones have a bedside mode or "Clock" screen saver feature. Go to Settings → Display → Screen Saver (or "Daydream") and set it to show a clock when charging. This way, your phone shows the time clearly all night without you having to unlock it.`
+        content: `On iPhone: Plug your iPhone into a charger and set it face-up or in a stand. It will enter StandBy mode automatically, displaying a large clock on screen. On Android: Many phones have a bedside mode or "Clock" screen saver feature. Go to Settings → Display → Screen Saver (or "Daydream") and set it to show a clock when charging. This way, your phone shows the time clearly all night without you having to unlock it.`
       }
     ]
   },
@@ -540,7 +540,7 @@ The Sleep feature can also connect with Apple Watch to track how long you actual
     steps: [
       {
         title: `Open the Health app`,
-        content: `Find the Health app on your iPhone — it has a white icon with a red heart. Tap it to open it. If this is your first time opening it, you may be asked to enter some basic health information. You can skip optional fields.`,
+        content: `Find the Health app on your iPhone. It has a white icon with a red heart. Tap it to open it. If this is your first time opening it, you may be asked to enter some basic health information. You can skip optional fields.`,
         tip: `The Health app comes pre-installed on all iPhones and cannot be deleted. If you don't see it, swipe down on your home screen and search for "Health."`
       },
       {
@@ -553,7 +553,7 @@ The Sleep feature can also connect with Apple Watch to track how long you actual
       },
       {
         title: `Configure the bedtime reminder`,
-        content: `Look for an option called "Wind Down" or "Bedtime Reminder." This sets how many minutes before your bedtime you'll receive a reminder notification. Choosing 30 minutes is a popular option — you get a gentle nudge to start winding down, put down your devices, and prepare for sleep. Toggle it on and set the time.`
+        content: `Look for an option called "Wind Down" or "Bedtime Reminder." This sets how many minutes before your bedtime you'll receive a reminder notification. Choosing 30 minutes is a popular option. You get a gentle nudge to start winding down, put down your devices, and prepare for sleep. Toggle it on and set the time.`
       },
       {
         title: `Choose your wake-up alarm sound`,
@@ -595,7 +595,7 @@ Here are the most useful accessibility features for everyday use:
 
 **Larger Tap Targets:** Makes many on-screen buttons easier to tap.
 
-None of these settings change what your iPhone can do — they only change how it works for you personally.`,
+None of these settings change what your iPhone can do. They only change how it works for you personally.`,
     steps: [
       {
         title: `Find the Accessibility settings`,
@@ -744,7 +744,7 @@ If you've had your Fire Stick for a while, you may have noticed it getting a lit
 
 **Clearing storage:** Over time, apps can take up storage space and slow down your Fire Stick. Clearing the cache of apps you use regularly is one of the best ways to speed things up.
 
-**Do Not Disturb:** Alexa can make sounds during notifications — you can turn this off in settings for uninterrupted viewing.`,
+**Do Not Disturb:** Alexa can make sounds during notifications. You can turn this off in settings for uninterrupted viewing.`,
     steps: [
       {
         title: `Use the Alexa voice button more effectively`,
@@ -757,7 +757,7 @@ If you've had your Fire Stick for a while, you may have noticed it getting a lit
       },
       {
         title: `Set up Kids Mode`,
-        content: `Go to the Fire Stick home screen and look for a "Kids" icon or profile, or say "Alexa, switch to Kids Mode." If setting it up for the first time, follow the on-screen prompts to create a child profile, set a PIN, and choose an age range. Kids Mode shows only age-appropriate content and requires your PIN to exit. This is great for when grandchildren visit — they can browse freely without accidentally accessing adult content.`
+        content: `Go to the Fire Stick home screen and look for a "Kids" icon or profile, or say "Alexa, switch to Kids Mode." If setting it up for the first time, follow the on-screen prompts to create a child profile, set a PIN, and choose an age range. Kids Mode shows only age-appropriate content and requires your PIN to exit. This is great for when grandchildren visit. They can browse freely without accidentally accessing adult content.`
       },
       {
         title: `Clear app cache to speed up your Fire Stick`,
@@ -814,7 +814,7 @@ The Battery widget is available on any iPhone running iOS 17 or later. There are
       {
         title: `Add the Battery widget to Today View (alternative option)`,
         content: `Swipe right from your main home screen to open Today View (the screen with widgets on a gray background). Press and hold on an empty area to enter edit mode. Tap the plus (+) button at the top, search for "Battery," and add it. This keeps the widget accessible without taking up space on your main home screen.`,
-        tip: `The Battery widget updates automatically throughout the day as your devices charge and discharge — you don't need to refresh it manually.`
+        tip: `The Battery widget updates automatically throughout the day as your devices charge and discharge. You don't need to refresh it manually.`
       }
     ]
   },
@@ -836,7 +836,7 @@ Here's how to block senders in the three most common email services: Gmail, Appl
 
 **A note about phone apps vs. web browser:** The steps below cover both the phone apps and the web browser versions where relevant. If you use Gmail on the website (mail.google.com on a computer), the steps are slightly different from using the Gmail app on your phone — but both are covered.
 
-After you block someone, their existing emails are not automatically deleted from your inbox — you can delete those manually. Only new emails they send after you block them will be redirected away from your inbox.`,
+After you block someone, their existing emails are not automatically deleted from your inbox. You can delete those manually. Only new emails they send after you block them will be redirected away from your inbox.`,
     steps: [
       {
         title: `Block a sender in Gmail (app or website)`,
@@ -892,7 +892,7 @@ Linking and setting a default takes about 5 minutes in the Alexa app on your pho
     steps: [
       {
         title: `Open the Alexa app on your phone`,
-        content: `Find the Alexa app on your phone — it has an orange icon with a dark circle and a white swoosh line inside. Tap it to open it. If you don't have it, download it free from the App Store (iPhone) or Google Play Store (Android). Sign in with the same Amazon account you used to set up your Echo speaker.`
+        content: `Find the Alexa app on your phone. It has an orange icon with a dark circle and a white swoosh line inside. Tap it to open it. If you don't have it, download it free from the App Store (iPhone) or Google Play Store (Android). Sign in with the same Amazon account you used to set up your Echo speaker.`
       },
       {
         title: `Go to Music & Podcasts settings`,

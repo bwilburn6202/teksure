@@ -53,7 +53,7 @@ export const guidesBatch264: Guide[] = [
     steps: [
       {
         title: "Slow down and shorten your sentences",
-        content: "Instead of a long sentence, break it into pieces. Instead of saying, Do you want to go out to lunch at the place we used to go on Tuesdays, try, Lunch today? (pause) The diner? (pause) Or stay home? Give the survivor at least 10 to 20 seconds to respond. Resist the urge to fill silence. Many family members feel rude pausing that long, but the pause is a gift — it gives the brain time to find a word or point to an answer.",
+        content: "Instead of a long sentence, break it into pieces. Instead of saying, Do you want to go out to lunch at the place we used to go on Tuesdays, try, Lunch today? (pause) The diner? (pause) Or stay home? Give the survivor at least 10 to 20 seconds to respond. Resist the urge to fill silence. Many family members feel rude pausing that long, but the pause is a gift. It gives the brain time to find a word or point to an answer.",
         tip: "Quick Tip: Sit at eye level, in good light, and minimize background noise. TV and radio in the same room make aphasia much harder.",
       },
       {

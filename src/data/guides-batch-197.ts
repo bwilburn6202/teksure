@@ -67,12 +67,12 @@ export const guidesBatch197: Guide[] = [
       },
       {
         title: "Sign in with your online banking username and password",
-        content: "Open the app and tap Sign In. Enter the username and password you use for online banking on a computer. If you have never set up online banking, tap \"Enroll\" or \"First time user\" and follow the prompts — you will need your account number, debit card number, and Social Security number on hand. The first sign-in on a new phone may also send a verification code by text message that you type in to confirm your identity.",
+        content: "Open the app and tap Sign In. Enter the username and password you use for online banking on a computer. If you have never set up online banking, tap \"Enroll\" or \"First time user\" and follow the prompts. You will need your account number, debit card number, and Social Security number on hand. The first sign-in on a new phone may also send a verification code by text message that you type in to confirm your identity.",
       },
       {
         title: "Endorse the back of the check correctly",
         content: "Flip the check over. On the back, in the small endorsement box at the top, sign your name exactly as it appears on the front of the check. Below your signature, write \"For mobile deposit only at [Bank Name]\" — for example, \"For mobile deposit only at Chase.\" This restrictive endorsement is required by most banks for mobile deposit and protects you if the photo is intercepted.",
-        tip: "Some banks now require you to also write the date and the last 4 digits of your account number on the endorsement line. Check your bank's mobile deposit instructions inside the app — they appear on the deposit screen.",
+        tip: "Some banks now require you to also write the date and the last 4 digits of your account number on the endorsement line. Check your bank's mobile deposit instructions inside the app. They appear on the deposit screen.",
       },
       {
         title: "Tap Deposit and pick the account",
@@ -131,7 +131,7 @@ export const guidesBatch197: Guide[] = [
       },
       {
         title: "Report a suspected fake check the right way",
-        content: "If you receive a suspicious check, do not deposit it. Take photos of the front and back. Then report it to three places: (1) the FTC at reportfraud.ftc.gov; (2) the U.S. Postal Inspection Service at uspis.gov/report if it arrived by mail; and (3) your local police if a financial loss already happened. If you deposited the check and lost money, also call your bank's fraud department right away. Save every email, text, and letter related to the scam — they help investigators and may help recover funds.",
+        content: "If you receive a suspicious check, do not deposit it. Take photos of the front and back. Then report it to three places: (1) the FTC at reportfraud.ftc.gov; (2) the U.S. Postal Inspection Service at uspis.gov/report if it arrived by mail; and (3) your local police if a financial loss already happened. If you deposited the check and lost money, also call your bank's fraud department right away. Save every email, text, and letter related to the scam. They help investigators and may help recover funds.",
       },
       {
         title: "Talk it over before any large deposit",

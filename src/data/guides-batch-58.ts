@@ -34,7 +34,7 @@ Setup is minimal — there is nothing to install. If you have a HomePod, it was 
       },
       {
         title: `Open the AirPlay speaker selector`,
-        content: `While audio is playing, swipe down from the top-right corner of your iPhone to open Control Center. In the music player card at the top right, tap the AirPlay icon — it looks like a small triangle pointing upward with rings around it. A list of available speakers will appear.`,
+        content: `While audio is playing, swipe down from the top-right corner of your iPhone to open Control Center. In the music player card at the top right, tap the AirPlay icon. It looks like a small triangle pointing upward with rings around it. A list of available speakers will appear.`,
         tip: `You can also find the AirPlay icon inside most audio apps. In Apple Music, it appears in the Now Playing screen at the bottom of the screen.`,
       },
       {
@@ -44,7 +44,7 @@ Setup is minimal — there is nothing to install. If you have a HomePod, it was 
       },
       {
         title: `Adjust the volume`,
-        content: `Use the volume buttons on the side of your iPhone or drag the volume slider in Control Center to change the speaker's volume. The volume control works directly on the AirPlay speaker — you are not just changing your phone's volume. To stop AirPlay and return audio to your iPhone, open the AirPlay speaker selector again and tap iPhone.`,
+        content: `Use the volume buttons on the side of your iPhone or drag the volume slider in Control Center to change the speaker's volume. The volume control works directly on the AirPlay speaker. You are not just changing your phone's volume. To stop AirPlay and return audio to your iPhone, open the AirPlay speaker selector again and tap iPhone.`,
       },
     ],
   },
@@ -187,7 +187,7 @@ On iPhone, Always-On Display is connected to the StandBy feature — when your p
       },
       {
         title: `Adjust when AOD is active to save battery`,
-        content: `On Samsung phones, inside the AOD settings page, tap Show AOD and change the setting from "Always" to either "When New Notifications" (AOD only lights up when you have an unread notification) or "Schedule" (set specific hours, like 7 AM to 11 PM). On iPhones, AOD automatically turns off when face-down or in a pocket — there is no manual schedule setting.`,
+        content: `On Samsung phones, inside the AOD settings page, tap Show AOD and change the setting from "Always" to either "When New Notifications" (AOD only lights up when you have an unread notification) or "Schedule" (set specific hours, like 7 AM to 11 PM). On iPhones, AOD automatically turns off when face-down or in a pocket. There is no manual schedule setting.`,
         warning: `If your phone will sit in a bright sunlit area all day, AOD will draw slightly more power to stay visible. In those situations, turning it off can help preserve battery.`,
       },
     ],
@@ -241,7 +241,7 @@ Widgetsmith is free to download with most features included. A paid subscription
       },
       {
         title: `Edit or swap your widget anytime`,
-        content: `To change what a widget shows, open the Widgetsmith app, tap the widget in the list, and edit it. Changes appear on your home screen automatically — you do not need to remove and re-add the widget. To remove a widget, press and hold it on your home screen, tap Remove Widget, and confirm.`,
+        content: `To change what a widget shows, open the Widgetsmith app, tap the widget in the list, and edit it. Changes appear on your home screen automatically. You do not need to remove and re-add the widget. To remove a widget, press and hold it on your home screen, tap Remove Widget, and confirm.`,
       },
     ],
   },
@@ -275,7 +275,7 @@ Shortcuts you create can be run from your home screen, from Siri (say the shortc
     steps: [
       {
         title: `Open the Shortcuts app`,
-        content: `Find the Shortcuts app on your iPhone — it has an orange icon with white squares that form a diamond shape. If you cannot find it, swipe down on the home screen and type "Shortcuts" in the search bar. Tap to open the app. You will see two tabs at the bottom: Shortcuts (manual shortcuts) and Automation (automatic shortcuts triggered by events).`,
+        content: `Find the Shortcuts app on your iPhone. It has an orange icon with white squares that form a diamond shape. If you cannot find it, swipe down on the home screen and type "Shortcuts" in the search bar. Tap to open the app. You will see two tabs at the bottom: Shortcuts (manual shortcuts) and Automation (automatic shortcuts triggered by events).`,
         tip: `Quick Tip: Apple includes many ready-made shortcuts in the Gallery tab at the bottom of the app. Browse these first — you may find one that does exactly what you want without any building required.`,
       },
       {
@@ -453,7 +453,7 @@ To use Instagram, you need the app on your phone. It is available for both iPhon
     difficulty: `Beginner`,
     body: `Microsoft Outlook is an email app made by Microsoft. It is the same Outlook that many offices use on computers, now available as a free app on your phone. You can use it to check your email, send messages, and view your calendar — all in one place.
 
-Outlook is not just for Microsoft email addresses. You can add Gmail, Yahoo Mail, iCloud, and most other email accounts to Outlook and manage them all from the same app. This makes it convenient if you have multiple email addresses — you can check everything in one place instead of switching between different apps.
+Outlook is not just for Microsoft email addresses. You can add Gmail, Yahoo Mail, iCloud, and most other email accounts to Outlook and manage them all from the same app. This makes it convenient if you have multiple email addresses. You can check everything in one place instead of switching between different apps.
 
 One thing that makes Outlook stand out from the iPhone or Android built-in mail apps is its Focused Inbox feature. Outlook uses a filter to separate your most important emails (from people you communicate with often, or work emails) from lower-priority emails like newsletters and automated messages. Important emails go into the Focused tab. Everything else goes into Other. This helps reduce inbox clutter.
 
@@ -463,7 +463,7 @@ Microsoft offers Outlook free for personal use. The free version covers everythi
     steps: [
       {
         title: `Download the Outlook app`,
-        content: `Open the App Store (iPhone) or Google Play Store (Android) and search for "Microsoft Outlook." Download the free app. Be sure the app is from Microsoft Corporation — there are similar-sounding apps from other developers, so check the developer name before downloading.`,
+        content: `Open the App Store (iPhone) or Google Play Store (Android) and search for "Microsoft Outlook." Download the free app. Be sure the app is from Microsoft Corporation. There are similar-sounding apps from other developers, so check the developer name before downloading.`,
       },
       {
         title: `Add your email account`,
@@ -473,7 +473,7 @@ Microsoft offers Outlook free for personal use. The free version covers everythi
       {
         title: `Read and send emails`,
         content: `After setup, your inbox will appear. Tap any email to open and read it. To reply, tap the reply arrow at the bottom. To forward an email to someone else, tap the forward icon (curved arrow pointing right). To compose a brand new email, tap the pencil icon at the bottom right. Enter the recipient's email address, a subject line, and your message, then tap the send arrow.`,
-        warning: `Be careful about the Focused / Other tabs at the top of your inbox. If you are not seeing an expected email, tap the Other tab — it may have been filtered there. Important emails from unfamiliar senders often land in Other at first.`,
+        warning: `Be careful about the Focused / Other tabs at the top of your inbox. If you are not seeing an expected email, tap the Other tab. It may have been filtered there. Important emails from unfamiliar senders often land in Other at first.`,
       },
       {
         title: `View and manage your calendar`,
@@ -613,7 +613,7 @@ Most email apps have a Mark as Spam or Report Junk button. Use this for emails f
       {
         title: `Unsubscribe manually from a newsletter or promotional email`,
         content: `Open the unwanted email. Scroll all the way to the very bottom of the message. Look for small text that says "Unsubscribe," "Opt Out," "Manage Email Preferences," or "Update your preferences." Click or tap that link. You will be taken to a webpage — usually with a button to confirm that you want to unsubscribe. Tap or click Confirm or Unsubscribe on that page. The company is required to stop sending you emails within 10 business days.`,
-        tip: `Quick Tip: In Gmail, a small "Unsubscribe" link often appears right next to the sender's name at the top of the email — you do not always need to scroll to the bottom. Look for it next to the sender's email address.`,
+        tip: `Quick Tip: In Gmail, a small "Unsubscribe" link often appears right next to the sender's name at the top of the email. You do not always need to scroll to the bottom. Look for it next to the sender's email address.`,
       },
       {
         title: `Mark genuine spam as Junk (do NOT click unsubscribe in spam)`,
@@ -656,7 +656,7 @@ HomePod runs Siri, Apple's voice assistant. You say "Hey Siri" followed by a req
 
 The HomePod mini is the smaller, less expensive model (around $99). The standard HomePod offers better sound quality and is larger. Both models set up the same way and have the same Siri capabilities.
 
-Setting up a HomePod requires an iPhone or iPad running iOS 17 or later and an Apple ID (the account you use for the App Store and iCloud). The HomePod connects to your home's Wi-Fi network — it does not use Bluetooth for its connection.
+Setting up a HomePod requires an iPhone or iPad running iOS 17 or later and an Apple ID (the account you use for the App Store and iCloud). The HomePod connects to your home's Wi-Fi network. It does not use Bluetooth for its connection.
 
 Setup is handled almost entirely by your iPhone. You hold the phone near the HomePod, and a setup screen appears on your phone automatically. You tap through a few options and it sets itself up. Most people complete the setup in under five minutes.
 
@@ -678,7 +678,7 @@ Once set up, anyone in your household can use "Hey Siri" to play music or ask qu
       },
       {
         title: `Wait for the HomePod to finish setup`,
-        content: `After you confirm your choices, the HomePod will take about 1 to 2 minutes to complete setup. It will connect to your Wi-Fi network using the same network your iPhone is on — you do not need to enter the Wi-Fi password separately. A chime sound will play when setup is complete, and the light on top will turn white steadily.`,
+        content: `After you confirm your choices, the HomePod will take about 1 to 2 minutes to complete setup. It will connect to your Wi-Fi network using the same network your iPhone is on. You do not need to enter the Wi-Fi password separately. A chime sound will play when setup is complete, and the light on top will turn white steadily.`,
       },
       {
         title: `Test Siri and start using your HomePod`,
@@ -856,7 +856,7 @@ Nest Cam with floodlight: Outdoor camera with a built-in motion-activated floodl
 
 All Nest Cams are managed through the Google Home app, which also controls other Google Nest products like the Nest Thermostat and Google Nest speakers. If you already use the Google Home app, adding a Nest Cam fits in naturally.
 
-The free Google account includes 3 hours of event video history — you can see short clips from the past 3 hours. A Nest Aware subscription ($6/month or $60/year) extends this to 30 days of event history or 10 days of continuous 24/7 recording.
+The free Google account includes 3 hours of event video history. You can see short clips from the past 3 hours. A Nest Aware subscription ($6/month or $60/year) extends this to 30 days of event history or 10 days of continuous 24/7 recording.
 
 Nest Cams use artificial intelligence to detect people, animals, vehicles, and package deliveries specifically — rather than just generic motion. This reduces false alerts. For example, it can tell you "A person was detected at your front door" rather than just "Motion detected."
 
@@ -910,12 +910,12 @@ The Fire TV Stick requires a Wi-Fi connection. It will not work without the inte
     steps: [
       {
         title: `Plug in the Fire TV Stick`,
-        content: `Find the HDMI port on your TV — it is a small rectangular port, usually on the back or side of the TV, labeled HDMI. Plug the Fire TV Stick directly into the HDMI port. Then connect the included power cable to the side of the Fire TV Stick and plug the other end into a wall outlet (or a USB port on your TV, if available). Turn on your TV.`,
+        content: `Find the HDMI port on your TV. It is a small rectangular port, usually on the back or side of the TV, labeled HDMI. Plug the Fire TV Stick directly into the HDMI port. Then connect the included power cable to the side of the Fire TV Stick and plug the other end into a wall outlet (or a USB port on your TV, if available). Turn on your TV.`,
         tip: `Quick Tip: If the Fire TV Stick is too large to fit comfortably in the HDMI port without touching another port or the wall, use the HDMI extender cable that comes in the box. It gives a few extra inches of clearance.`,
       },
       {
         title: `Switch your TV to the correct input`,
-        content: `Use your TV remote to switch the input (also called source) to the HDMI port where the Fire TV Stick is plugged in. Press the Input or Source button on your TV remote — it usually has an icon that looks like a rectangle with an arrow. Select the HDMI number that matches the port you used (for example, HDMI 2). You should see the Fire TV setup screen appear.`,
+        content: `Use your TV remote to switch the input (also called source) to the HDMI port where the Fire TV Stick is plugged in. Press the Input or Source button on your TV remote. It usually has an icon that looks like a rectangle with an arrow. Select the HDMI number that matches the port you used (for example, HDMI 2). You should see the Fire TV setup screen appear.`,
       },
       {
         title: `Set up the remote and connect to Wi-Fi`,

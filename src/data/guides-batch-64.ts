@@ -55,7 +55,7 @@ When you arrive at your destination, the fare is charged automatically to your s
     slug: `lyft-rideshare-guide`,
     title: `How to Use Lyft: Booking Rides from Your Smartphone`,
     excerpt: `Lyft makes it simple to get a ride anywhere — no cash, no hailing required. Here's how to get started.`,
-    body: `Lyft is a ride service that works a lot like Uber — you use an app on your phone to request a nearby driver, track the ride in real time, and pay automatically when you arrive. It operates in most major US cities and many smaller towns, making it a practical option whether you need a ride to a doctor's appointment, the airport, or the grocery store.
+    body: `Lyft is a ride service that works a lot like Uber. You use an app on your phone to request a nearby driver, track the ride in real time, and pay automatically when you arrive. It operates in most major US cities and many smaller towns, making it a practical option whether you need a ride to a doctor's appointment, the airport, or the grocery store.
 
 To get started, download the Lyft app for free from the App Store on iPhone or the Google Play Store on Android. You will create an account with your phone number or email, then verify your identity with a code sent by text. Once inside the app, go to the Payment section and add a credit card, debit card, or PayPal. If you prefer not to use a card, you can purchase Lyft Gift Cards at many retail stores and add that balance to your account as Lyft Cash.
 
@@ -104,13 +104,13 @@ When the trip ends, payment happens automatically. You can leave a tip inside th
     slug: `waze-navigation-guide`,
     title: `How to Use Waze for Turn-by-Turn Directions`,
     excerpt: `Waze is a free navigation app that warns you about traffic, accidents, and speed traps in real time.`,
-    body: `Waze is a free GPS navigation app that does more than show you how to get somewhere — it also warns you about traffic jams, accidents, road construction, and speed cameras in real time. That information comes from other Waze drivers on the same roads who report what they see, making it especially useful during rush hour or when there is unexpected trouble ahead.
+    body: `Waze is a free GPS navigation app that does more than show you how to get somewhere. It also warns you about traffic jams, accidents, road construction, and speed cameras in real time. That information comes from other Waze drivers on the same roads who report what they see, making it especially useful during rush hour or when there is unexpected trouble ahead.
 
 Waze is available on both iPhone and Android. Download it for free from the App Store or Google Play Store. No account is required to use basic navigation, but creating a free account lets you save your home and work addresses so you can reach them in one tap.
 
 To get directions, tap the search bar at the bottom of the screen and type your destination — a business name, address, or even a contact from your phone. Waze calculates the fastest route based on current traffic conditions and starts turn-by-turn voice directions automatically. The voice prompts are clear and timely. So you can keep your eyes on the road.
 
-While you are driving, Waze shows icons on the map for things drivers ahead have reported: a car icon means there is a crash, a cone means road work, a red car icon means heavy traffic, and a police badge icon means other drivers spotted law enforcement nearby. You do not have to interact with these alerts — they appear automatically as you approach.
+While you are driving, Waze shows icons on the map for things drivers ahead have reported: a car icon means there is a crash, a cone means road work, a red car icon means heavy traffic, and a police badge icon means other drivers spotted law enforcement nearby. You do not have to interact with these alerts. They appear automatically as you approach.
 
 If you see something yourself, you can report it by tapping the orange plus button on the right side of the screen. This takes only a second and helps other drivers behind you.
 
@@ -288,7 +288,7 @@ When your groceries arrive, the shopper leaves them at your door. You do not nee
       },
       {
         title: `Choose a delivery time and check out`,
-        content: `When your cart is ready, tap "Check Out." Select a delivery window — you will see available time slots for today and the next few days. Choose one that works for you, review your order total, and confirm your payment. You will receive a confirmation email right away.`
+        content: `When your cart is ready, tap "Check Out." Select a delivery window. You will see available time slots for today and the next few days. Choose one that works for you, review your order total, and confirm your payment. You will receive a confirmation email right away.`
       },
       {
         title: `Communicate with your shopper`,
@@ -336,7 +336,7 @@ Finally, pay attention to minimum order amounts. A small order fee is often char
       },
       {
         title: `Order directly from the restaurant`,
-        content: `Many restaurants have their own website or phone number for ordering, especially locally owned places. Calling or ordering through the restaurant's own site skips platform fees entirely. The food and quality are identical — you are paying for the meal, not the app.`
+        content: `Many restaurants have their own website or phone number for ordering, especially locally owned places. Calling or ordering through the restaurant's own site skips platform fees entirely. The food and quality are identical. You are paying for the meal, not the app.`
       },
       {
         title: `Choose pickup instead of delivery`,
@@ -362,7 +362,7 @@ Finally, pay attention to minimum order amounts. A small order fee is often char
 
 Before doing anything else, back up your phone. This is the most important step. If you reset without a backup and then change your mind, your data is gone permanently and cannot be recovered. To back up to iCloud, go to Settings, tap your name at the top, then tap iCloud, then iCloud Backup, and tap "Back Up Now." Wait for it to finish completely. Alternatively, you can back up to a Mac or PC using a USB cable and Finder (on Mac) or iTunes (on Windows).
 
-Next, sign out of your Apple ID. This step is critical if you are selling or giving away the phone — it removes Activation Lock, which prevents the next owner from using the device. Go to Settings, tap your name at the top, scroll all the way down, and tap "Sign Out." You will be asked to enter your Apple ID password to confirm.
+Next, sign out of your Apple ID. This step is critical if you are selling or giving away the phone. It removes Activation Lock, which prevents the next owner from using the device. Go to Settings, tap your name at the top, scroll all the way down, and tap "Sign Out." You will be asked to enter your Apple ID password to confirm.
 
 Now you are ready to erase. Go to Settings, tap "General," then scroll down and tap "Transfer or Reset iPhone." Tap "Erase All Content and Settings." The phone will ask you to enter your passcode, then confirm the action. The process takes a few minutes. When it is done, the phone shows the "Hello" screen as if it came fresh from the factory.
 
@@ -396,7 +396,7 @@ One important note: iPhones with iOS 15.2 or later have an easier path. If the p
       },
       {
         title: `Set up the phone or pass it on`,
-        content: `When the erase is complete, the phone shows the "Hello" screen. If this is your own phone and you want to restore your data, tap through the setup screens and choose "Restore from iCloud Backup" when prompted. If you are giving the phone to someone else, leave it on the "Hello" screen — they will set it up with their own information.`
+        content: `When the erase is complete, the phone shows the "Hello" screen. If this is your own phone and you want to restore your data, tap through the setup screens and choose "Restore from iCloud Backup" when prompted. If you are giving the phone to someone else, leave it on the "Hello" screen. They will set it up with their own information.`
       }
     ]
   },
@@ -439,7 +439,7 @@ If you are keeping the phone and resetting to fix a problem, sign in with your G
       {
         title: `Find and start the factory reset`,
         content: `The path varies by brand. Samsung: Settings > General Management > Reset > Factory data reset. Google Pixel: Settings > System > Reset options > Erase all data. Other Android phones: look for "Reset" under Settings or General Management. Tap through until you see a final confirmation screen, then tap "Erase" or "Reset."`,
-        tip: `If you cannot find the reset option, search for "reset" inside your Settings app — there is a search bar at the top of Settings on most Android phones.`
+        tip: `If you cannot find the reset option, search for "reset" inside your Settings app. There is a search bar at the top of Settings on most Android phones.`
       },
       {
         title: `Wait for the reset to complete`,
@@ -516,7 +516,7 @@ The second way gives you an overview of all apps that can access a specific reso
 
 Android 14 and later added a Privacy Dashboard (in Settings under Privacy) that shows you a timeline of which apps accessed your camera, microphone, and location over the past 24 hours. If you see an unfamiliar app showing up often, that is a signal to review or revoke its permissions.
 
-When reviewing location permissions, you will typically see three options: "Allow all the time," "Allow only while using the app," or "Don't allow." For most apps, "Allow only while using the app" is the right choice — it means the app can only check your location when you are actively using it, not when it is running in the background.
+When reviewing location permissions, you will typically see three options: "Allow all the time," "Allow only while using the app," or "Don't allow." For most apps, "Allow only while using the app" is the right choice. It means the app can only check your location when you are actively using it, not when it is running in the background.
 
 For apps that request camera or microphone access but have no obvious reason to need it — like a flashlight app, a simple game, or a text editor — you should deny that permission.`,
     category: `essential-skills`,
@@ -558,7 +558,7 @@ For apps that request camera or microphone access but have no obvious reason to 
 
 The main location setting for your entire phone is found in Settings under Location. There is a master toggle at the top — when this is off, no app on your phone can access your location at all. Turning it off is useful in situations where you want complete privacy, though it also disables navigation apps and any location-based features.
 
-Below the master toggle, you will find a list of apps that have requested location access. Tap "App permissions" to see the full list, organized into three categories: apps allowed all the time, apps allowed only while in use, and apps that are not allowed. This is where most people are surprised — you may find that many apps have "Allow all the time" access, meaning they can track your location constantly even when you are not actively using them.
+Below the master toggle, you will find a list of apps that have requested location access. Tap "App permissions" to see the full list, organized into three categories: apps allowed all the time, apps allowed only while in use, and apps that are not allowed. This is where most people are surprised. You may find that many apps have "Allow all the time" access, meaning they can track your location constantly even when you are not actively using them.
 
 For the vast majority of apps, "Allow only while using the app" is the right setting. This means the app can access your location while you are actively using it but cannot track you in the background. The only apps that genuinely need "Allow all the time" access are things like Find My Device, automatic trip logging apps, or apps specifically designed to work in the background.
 
@@ -684,7 +684,7 @@ If the Roomba gets stuck on a rug fringe, power cord, or under low furniture, th
       },
       {
         title: `Empty the dustbin after every run`,
-        content: `Press the button on top of the Roomba to open the dustbin compartment. Pull out the bin and empty it into a trash can. For households with pets, the dustbin fills quickly — you may need to empty it mid-run on the first few uses. Rinse the dustbin with water monthly and let it dry completely before reinserting.`,
+        content: `Press the button on top of the Roomba to open the dustbin compartment. Pull out the bin and empty it into a trash can. For households with pets, the dustbin fills quickly. You may need to empty it mid-run on the first few uses. Rinse the dustbin with water monthly and let it dry completely before reinserting.`,
         warning: `Never place the dustbin back while still wet — moisture damages the internal filter.`
       }
     ]
@@ -781,7 +781,7 @@ If you install multiple smart detectors, they can be interconnected — when one
       },
       {
         title: `Enable phone notifications`,
-        content: `In the app, make sure push notifications are turned on. You should receive an alert any time the alarm sounds, identifying whether it detected smoke or carbon monoxide. Test the alert by pressing the test button on the detector — you should hear the alarm and receive a phone notification within a few seconds.`
+        content: `In the app, make sure push notifications are turned on. You should receive an alert any time the alarm sounds, identifying whether it detected smoke or carbon monoxide. Test the alert by pressing the test button on the detector. You should hear the alarm and receive a phone notification within a few seconds.`
       },
       {
         title: `Keep up with maintenance reminders`,
@@ -833,7 +833,7 @@ If you have a third-party antivirus program installed — like Norton, McAfee, o
       },
       {
         title: `Review any threats found`,
-        content: `If Defender finds something suspicious, it will notify you and quarantine the file automatically. Click "Protection history" to see a list of items that were detected and quarantined. In most cases, Defender has already handled the threat — you do not need to take additional action unless prompted.`,
+        content: `If Defender finds something suspicious, it will notify you and quarantine the file automatically. Click "Protection history" to see a list of items that were detected and quarantined. In most cases, Defender has already handled the threat. You do not need to take additional action unless prompted.`,
         warning: `If Defender finds a threat it cannot handle automatically, it will ask you to decide what to do. "Remove" is the safest choice for anything flagged as a virus or malware.`
       },
       {
@@ -902,7 +902,7 @@ Live Caption is available on Google Pixel phones starting with the Pixel 3 (runn
 
 There are two ways to turn on Live Caption. The fastest way is to press a volume button on the side of your phone. When the volume slider appears on screen, look for a small caption icon (two lines of text) below the slider. Tap it to enable or disable Live Caption. The second way is through Settings — go to Settings, tap Accessibility, then Live Caption, and toggle it on from there.
 
-Once turned on, the caption box appears automatically whenever your phone plays audio with speech. You do not need to do anything — it starts captioning on its own. If you are watching a YouTube video, listening to a podcast, or playing a voice message, the words appear as text in real time at the bottom of your screen.
+Once turned on, the caption box appears automatically whenever your phone plays audio with speech. You do not need to do anything. It starts captioning on its own. If you are watching a YouTube video, listening to a podcast, or playing a voice message, the words appear as text in real time at the bottom of your screen.
 
 You can drag the caption box to any position on your screen by pressing and holding it, then dragging. Tapping the expand arrow makes the box larger so more text is visible at once. Tapping the collapse arrow shrinks it back down.
 
@@ -960,7 +960,7 @@ For videos and apps, Live Captions captures any audio playing on your phone. Thi
 
 You can move the caption bar by pressing and holding it and dragging it to any position on your screen. Tap the expand icon to make the text area larger. A font size slider in the Live Captions settings lets you make the captions bigger if the default size is hard to read.
 
-Live Captions is also available on Mac (macOS 13 Ventura or later) and on Apple TV — you can enable it through the Accessibility settings on each device.`,
+Live Captions is also available on Mac (macOS 13 Ventura or later) and on Apple TV. You can enable it through the Accessibility settings on each device.`,
     category: `essential-skills`,
     tags: [`live captions`, `accessibility`, `iPhone`, `captions`, `hearing`],
     thumbnailEmoji: ``,
@@ -970,7 +970,7 @@ Live Captions is also available on Mac (macOS 13 Ventura or later) and on Apple 
     steps: [
       {
         title: `Check your iPhone is compatible`,
-        content: `Live Captions requires an iPhone 11 or later running iOS 17 or newer. To check your iOS version, go to Settings, tap General, then "About." Look for the Software Version number — it should start with 16 or higher. If your version is lower, go to Settings > General > Software Update and install the latest available update.`
+        content: `Live Captions requires an iPhone 11 or later running iOS 17 or newer. To check your iOS version, go to Settings, tap General, then "About." Look for the Software Version number. It should start with 16 or higher. If your version is lower, go to Settings > General > Software Update and install the latest available update.`
       },
       {
         title: `Turn on Live Captions in Accessibility settings`,
@@ -979,7 +979,7 @@ Live Captions is also available on Mac (macOS 13 Ventura or later) and on Apple 
       },
       {
         title: `Use Live Captions during a phone call`,
-        content: `When you answer or make a phone call, the Live Captions bar appears automatically at the top of your screen. It shows what the other person is saying as they speak. Your own voice is not captioned. The bar remains on screen for the duration of the call — you can tap anywhere else on the screen and it stays visible.`
+        content: `When you answer or make a phone call, the Live Captions bar appears automatically at the top of your screen. It shows what the other person is saying as they speak. Your own voice is not captioned. The bar remains on screen for the duration of the call. You can tap anywhere else on the screen and it stays visible.`
       },
       {
         title: `Use Live Captions during FaceTime`,

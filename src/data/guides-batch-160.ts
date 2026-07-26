@@ -107,7 +107,7 @@ When you set up a new iPhone, the phone will ask you to sign in with your Apple 
 
 ---
 
-**Quick Tip:** If you are not sure whether your contacts are backed up right now, open your iCloud or Google settings and check — it only takes two minutes. And it could save you from a stressful situation later.`,
+**Quick Tip:** If you are not sure whether your contacts are backed up right now, open your iCloud or Google settings and check. It only takes two minutes. And it could save you from a stressful situation later.`,
     steps: [
       {
         title: 'iPhone — Open Settings and tap your name',
@@ -121,7 +121,7 @@ When you set up a new iPhone, the phone will ask you to sign in with your Apple 
       {
         title: 'iPhone — Verify the backup at icloud.com',
         content: 'On any computer, go to icloud.com and sign in with your Apple ID. Click the Contacts icon. If you see your full contacts list, the backup is working.',
-        tip: 'You can do this check on a library computer or a family member\'s laptop — you do not need your own computer.',
+        tip: 'You can do this check on a library computer or a family member\'s laptop. You do not need your own computer.',
       },
       {
         title: 'Android — Turn on Google Drive backup',
@@ -168,7 +168,7 @@ You can use Google Calendar on any device: a computer using a web browser, an An
 
 **What you need before you start**
 
-A Google account (Gmail address). If you have a Gmail address, you already have a Google account. If you do not have one, go to **accounts.google.com** and click "Create account" — it is free and takes about five minutes.
+A Google account (Gmail address). If you have a Gmail address, you already have a Google account. If you do not have one, go to **accounts.google.com** and click "Create account". It is free and takes about five minutes.
 
 ---
 
@@ -265,7 +265,7 @@ To switch views on a phone, tap the three horizontal lines (menu) or look for th
 
 ---
 
-**Quick Tip:** Use the Schedule view (list view) as your everyday view — it tells you at a glance what is coming up in the next few days without requiring you to click around.`,
+**Quick Tip:** Use the Schedule view (list view) as your everyday view. It tells you at a glance what is coming up in the next few days without requiring you to click around.`,
     steps: [
       {
         title: 'Open Google Calendar',
@@ -292,14 +292,14 @@ To switch views on a phone, tap the three horizontal lines (menu) or look for th
       {
         title: 'Color-code and switch views',
         content: 'Click the three dots next to any calendar name to assign a color. Use Month view to plan ahead, Week view for a busy week, or Schedule (list) view for a simple upcoming-events list.',
-        tip: 'The Schedule view is the clearest for everyday use — it shows what is coming up as a simple list.',
+        tip: 'The Schedule view is the clearest for everyday use. It shows what is coming up as a simple list.',
       },
     ],
   },
   {
     slug: 'how-to-read-your-medicare-explanation-of-benefits-letter-2026',
     title: 'How to Read Your Medicare Explanation of Benefits Letter',
-    excerpt: 'Your Medicare EOB letter is not a bill — it is a summary of what Medicare paid. Learn what each section means, how to spot errors, and how to report fraud.',
+    excerpt: 'Your Medicare EOB letter is not a bill. It is a summary of what Medicare paid. Learn what each section means, how to spot errors, and how to report fraud.',
     category: 'health-tech',
     tags: [
       'Medicare EOB',
@@ -499,7 +499,7 @@ You will be taken to the USPS.com account creation page. Fill in your name, addr
 
 **Step 3 — Verify your identity**
 
-USPS requires identity verification to make sure that only the actual resident at an address can see the mail for that address. This is an important security step — it prevents someone else from signing up to see your mail.
+USPS requires identity verification to make sure that only the actual resident at an address can see the mail for that address. This is an important security step. It prevents someone else from signing up to see your mail.
 
 USPS may verify your identity in one of two ways:
 

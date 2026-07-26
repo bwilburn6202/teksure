@@ -33,7 +33,7 @@ export const guidesBatch15: Guide[] = [
       },
       {
         title: 'Prevent programs from starting automatically',
-        content: `Many programs start automatically when you turn on your computer, which slows down startup. In Task Manager, click the "Startup apps" tab. You'll see all programs that launch when Windows starts, and whether they have a "High," "Medium," or "Low" startup impact. Right-click any program you don't need to start automatically and click "Disable." This doesn't delete the program — it just stops it from starting with Windows.`,
+        content: `Many programs start automatically when you turn on your computer, which slows down startup. In Task Manager, click the "Startup apps" tab. You'll see all programs that launch when Windows starts, and whether they have a "High," "Medium," or "Low" startup impact. Right-click any program you don't need to start automatically and click "Disable." This doesn't delete the program. It just stops it from starting with Windows.`,
         tip: `Good candidates to disable at startup: music apps (Spotify, iTunes), gaming apps, creative software — anything you don't use every single day. Keep your antivirus and cloud backup apps enabled.`,
       },
     ],
@@ -58,7 +58,7 @@ export const guidesBatch15: Guide[] = [
       {
         title: 'Use macOS Optimize Storage feature',
         content: `Click the Apple menu → "About This Mac" → "Storage" → click "Manage." Click "Optimize Storage" → click "Optimize." This removes movies and TV shows you've already watched from Apple TV (they can be re-downloaded for free later). It also keeps only recent email attachments locally, moving older ones to iCloud. This alone can free several gigabytes on many Macs.`,
-        tip: `Also turn on "Store in iCloud" in this same window — it moves files you haven't accessed recently to iCloud, keeping your Mac storage free while preserving all your files.`,
+        tip: `Also turn on "Store in iCloud" in this same window. It moves files you haven't accessed recently to iCloud, keeping your Mac storage free while preserving all your files.`,
       },
       {
         title: 'Empty the Trash',
@@ -118,11 +118,11 @@ export const guidesBatch15: Guide[] = [
     thumbnailEmoji: '',
     publishedAt: '2026-04-19',
     difficulty: 'Beginner',
-    body: "AirPods are Apple's wireless earbuds. They work with iPhone, iPad, Mac, and Apple Watch, and switch between your Apple devices automatically. Setting them up is fast — they pair with one tap on the first connection.",
+    body: "AirPods are Apple's wireless earbuds. They work with iPhone, iPad, Mac, and Apple Watch, and switch between your Apple devices automatically. Setting them up is fast. They pair with one tap on the first connection.",
     steps: [
       {
         title: 'Pair AirPods with your iPhone for the first time',
-        content: 'Make sure your AirPods are in their charging case with the case lid open and the AirPods inside. Hold the open case near your unlocked iPhone. An animation appears on your iPhone showing the AirPods. Tap "Connect." Follow any prompts. The AirPods are now paired with your Apple ID — they will automatically connect to any Apple device signed in to your account.',
+        content: 'Make sure your AirPods are in their charging case with the case lid open and the AirPods inside. Hold the open case near your unlocked iPhone. An animation appears on your iPhone showing the AirPods. Tap "Connect." Follow any prompts. The AirPods are now paired with your Apple ID. They will automatically connect to any Apple device signed in to your account.',
         tip: `If the connection popup doesn't appear, make sure Bluetooth is on in your iPhone's Settings and the AirPods have some charge (the case LED should show a light).`,
       },
       {
@@ -136,7 +136,7 @@ export const guidesBatch15: Guide[] = [
       {
         title: 'Check your AirPods battery level',
         content: 'Open the AirPods case near your iPhone — a pop-up shows the battery level for each AirPod and the case. Or add the Batteries widget to your iPhone: press and hold an empty area of your Home Screen, tap the + button, search for "Batteries," and add it. The widget shows battery levels for all connected devices including your AirPods whenever you open your phone.',
-        tip: `When battery is low on AirPods, you'll hear a tone in your ear. Put them back in the case for even 15 minutes — they charge quickly and the case holds multiple full charges.`,
+        tip: `When battery is low on AirPods, you'll hear a tone in your ear. Put them back in the case for even 15 minutes. They charge quickly and the case holds multiple full charges.`,
       },
     ],
   },
@@ -188,7 +188,7 @@ export const guidesBatch15: Guide[] = [
       {
         title: 'Plug in the Fire TV Stick',
         content: 'Plug the Fire TV Stick into an HDMI port on the back or side of your TV. If the area is tight, use the HDMI extender cable included in the box. Plug the power cable into the Fire TV Stick and into a wall outlet or power strip. Insert the batteries into the Fire TV remote. Turn your TV on and use your TV remote to switch to the HDMI input where you plugged in the Fire Stick.',
-        tip: 'Remember which HDMI number you used. If your TV has HDMI 1, 2, and 3. And you plugged into HDMI 2, press the Input/Source button on your TV remote until you see "HDMI 2."',
+        tip: 'Remember which HDMI number you used. If your TV has HDMI 1, 2, and 3, and you plugged into HDMI 2, press the Input/Source button on your TV remote until you see "HDMI 2."',
       },
       {
         title: 'Connect to your WiFi network',
@@ -224,7 +224,7 @@ export const guidesBatch15: Guide[] = [
       },
       {
         title: 'Make a video call with Drop-In',
-        content: `Echo Shows can make video calls to other Echo Show owners (or through the Alexa app on a phone). Say "Hey Alexa, call [name]" and if that person has an Alexa device or the Alexa app, a video call will start. The screen shows the other person's face. You can also set up "Drop-In" with trusted family members — they can check in on you from their phone or their own Echo Show (with your permission).`,
+        content: `Echo Shows can make video calls to other Echo Show owners (or through the Alexa app on a phone). Say "Hey Alexa, call [name]" and if that person has an Alexa device or the Alexa app, a video call will start. The screen shows the other person's face. You can also set up "Drop-In" with trusted family members. They can check in on you from their phone or their own Echo Show (with your permission).`,
         tip: `Drop-In requires permission to be set up in advance. In the Alexa app, go to the Communicate tab → Contacts → find a family member and enable "Allow Drop-In." They'll need to do the same on their end.`,
       },
       {
@@ -316,7 +316,7 @@ export const guidesBatch15: Guide[] = [
       {
         title: 'Open the Recently Deleted album',
         content: `Open the Photos app. Tap "Albums" at the bottom of the screen. Scroll down to the "Utilities" section. Tap "Recently Deleted." This album shows all photos and videos you've deleted in the last 30 days.`,
-        tip: 'On any current iPhone, the Recently Deleted album is locked by default — you need to authenticate with Face ID or Touch ID to open it.',
+        tip: 'On any current iPhone, the Recently Deleted album is locked by default. You need to authenticate with Face ID or Touch ID to open it.',
       },
       {
         title: 'Recover a photo',
@@ -395,7 +395,7 @@ export const guidesBatch15: Guide[] = [
       {
         title: 'Free tech training and help programs',
         content: 'AARP TEK (Technology Education and Knowledge) offers free in-person workshops at libraries and senior centers — go to aarp.org/tek to find events near you. Senior Planet from AARP offers free tech classes online and in person in many cities — go to seniorplanet.org. Public libraries offer free computer use, internet access, tech help sessions, and digital literacy classes — call your local library or visit their website.',
-        tip: 'The Senior Planet program in New York, Denver, San Francisco, and other cities offers free tech coaching by phone and online — you can participate from anywhere in the US at seniorplanet.org.',
+        tip: 'The Senior Planet program in New York, Denver, San Francisco, and other cities offers free tech coaching by phone and online. You can participate from anywhere in the US at seniorplanet.org.',
       },
       {
         title: 'Software and subscription discounts',

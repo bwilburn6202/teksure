@@ -13,7 +13,7 @@ export const guidesBatch55: Guide[] = [
     difficulty: `Beginner`,
     body: `Google Drive for Desktop is a free program from Google that puts your Google Drive files right inside your Windows File Explorer or Mac Finder. Instead of opening a browser every time you want a file, you can access everything directly from your computer — and any changes you make sync automatically to the cloud and to your other devices.
 
-This is especially helpful if you work on documents often, store photos in Google Photos, or want an automatic backup of important files. Once it is installed, you will see a new "Google Drive" location appear in your file manager — it works the same as any other folder on your computer.
+This is especially helpful if you work on documents often, store photos in Google Photos, or want an automatic backup of important files. Once it is installed, you will see a new "Google Drive" location appear in your file manager. It works the same as any other folder on your computer.
 
 The program works on Windows 10, Windows 11, and macOS 12 or newer. You will need a Google account (Gmail counts) and about 500 MB of free space to install the app.
 
@@ -32,7 +32,7 @@ After installation, the app runs quietly in the background and updates automatic
       },
       {
         title: `Sign in to your Google account`,
-        content: `After installation, Google Drive will open and ask you to sign in. Click "Sign in with browser." Your default web browser will open a Google sign-in page. Enter your Gmail address and password, then click "Allow" when Google asks permission. Once signed in, switch back to the Google Drive setup window — it should now show your account name.`,
+        content: `After installation, Google Drive will open and ask you to sign in. Click "Sign in with browser." Your default web browser will open a Google sign-in page. Enter your Gmail address and password, then click "Allow" when Google asks permission. Once signed in, switch back to the Google Drive setup window. It should now show your account name.`,
         warning: `Make sure you are signing in on a secure, private device. Do not sign in on a shared or public computer unless you plan to sign out when finished.`,
       },
       {
@@ -42,11 +42,11 @@ After installation, the app runs quietly in the background and updates automatic
       },
       {
         title: `Find your Google Drive folder`,
-        content: `Once setup is complete, open File Explorer on Windows (the folder icon in your taskbar) or Finder on Mac. In the left sidebar, look for "Google Drive" — it will appear under "This PC" on Windows or in the Locations section on Mac. Click it to see all your Drive files. You can open, edit, and save files here the same way you would with any other folder.`,
+        content: `Once setup is complete, open File Explorer on Windows (the folder icon in your taskbar) or Finder on Mac. In the left sidebar, look for "Google Drive". It will appear under "This PC" on Windows or in the Locations section on Mac. Click it to see all your Drive files. You can open, edit, and save files here the same way you would with any other folder.`,
       },
       {
         title: `Check the sync status`,
-        content: `Look for the Google Drive icon in your system tray (bottom-right corner on Windows) or menu bar (top-right on Mac). A spinning circle means files are syncing. A checkmark means everything is up to date. If you see an exclamation mark, click the icon to see what needs attention — it usually means a file could not upload because of a naming issue or a full Drive.`,
+        content: `Look for the Google Drive icon in your system tray (bottom-right corner on Windows) or menu bar (top-right on Mac). A spinning circle means files are syncing. A checkmark means everything is up to date. If you see an exclamation mark, click the icon to see what needs attention. It usually means a file could not upload because of a naming issue or a full Drive.`,
       },
     ],
   },
@@ -68,7 +68,7 @@ Widgets come in three sizes: small (takes up four app icons worth of space), med
 
 There is also a feature called a "Smart Stack" — a small pile of widgets that automatically rotates throughout the day showing the most relevant one. For example, in the morning it might show your calendar, and in the evening it might show the weather.
 
-Widgets do more than look nice — they can save you time. Instead of unlocking your phone and finding an app, a glance at your home screen can answer common questions like "What is the weather?" or "When is my next meeting?" This guide walks you through adding your first widget and arranging your home screen the way you want it.`,
+Widgets do more than look nice. They can save you time. Instead of unlocking your phone and finding an app, a glance at your home screen can answer common questions like "What is the weather?" or "When is my next meeting?" This guide walks you through adding your first widget and arranging your home screen the way you want it.`,
     steps: [
       {
         title: `Enter jiggle mode`,
@@ -134,7 +134,7 @@ Handoff was introduced in 2014 and is supported on iPhones, iPads, Macs, and App
       },
       {
         title: `Use Handoff from iPhone to Mac`,
-        content: `Open Mail, Safari, or Notes on your iPhone and start doing something — for example, begin composing an email. On your Mac, look at the bottom of the Dock — you will see a small icon appear for the app you are using on your iPhone, with a tiny iPhone symbol on it. Click that icon in the Dock to open the same thing on your Mac and continue where you left off.`,
+        content: `Open Mail, Safari, or Notes on your iPhone and start doing something — for example, begin composing an email. On your Mac, look at the bottom of the Dock. You will see a small icon appear for the app you are using on your iPhone, with a tiny iPhone symbol on it. Click that icon in the Dock to open the same thing on your Mac and continue where you left off.`,
       },
       {
         title: `Use Handoff from Mac to iPhone`,
@@ -155,7 +155,7 @@ Handoff was introduced in 2014 and is supported on iPhones, iPads, Macs, and App
     difficulty: `Beginner`,
     body: `Universal Clipboard is one of those features that sounds almost too convenient to be real — but it works. When you copy something on your iPhone, it becomes available to paste on your nearby Mac within a few seconds. The same works in reverse: copy text or an image on your Mac. And you can paste it on your iPhone.
 
-This is useful in many everyday situations. Say you receive a verification code in a text message on your iPhone — you can copy it there and paste it directly into a website on your Mac. Or you might want to copy a long email address from your Mac and paste it into a form on your iPhone. Without Universal Clipboard, you would have to retype it or email it to yourself.
+This is useful in many everyday situations. Say you receive a verification code in a text message on your iPhone. You can copy it there and paste it directly into a website on your Mac. Or you might want to copy a long email address from your Mac and paste it into a form on your iPhone. Without Universal Clipboard, you would have to retype it or email it to yourself.
 
 Universal Clipboard is part of Apple's "Continuity" features — a group of tools designed to make your Apple devices work together smoothly. It requires all devices to be signed in to the same iCloud (Apple ID) account, to have Bluetooth and Wi-Fi turned on, and to be within about 30 feet of each other.
 
@@ -197,7 +197,7 @@ Universal Clipboard works with text, images, photos, and even some file types. I
 
 This can be very useful in a few situations. Maybe you are working at your Mac and receive a text message on your iPhone — instead of reaching for the phone, you can reply directly from your Mac. Or perhaps you want to check an app that is only on your iPhone while you are focused on your computer. iPhone Mirroring handles all of that.
 
-Your iPhone screen appears in a floating window on your Mac. Everything works the same as it would on the physical iPhone — you can open apps, scroll through photos, check notifications, and reply to messages. You can even drag files between your iPhone and Mac.
+Your iPhone screen appears in a floating window on your Mac. Everything works the same as it would on the physical iPhone. You can open apps, scroll through photos, check notifications, and reply to messages. You can even drag files between your iPhone and Mac.
 
 To use iPhone Mirroring, you need a Mac running macOS Sequoia or later and an iPhone running iOS 18 or later. Your iPhone must be nearby and locked (the screen off), and both devices must be signed into the same Apple ID. The connection uses Bluetooth and Wi-Fi — no cable needed.
 
@@ -209,7 +209,7 @@ One important thing to know: while iPhone Mirroring is active, your iPhone scree
       },
       {
         title: `Open iPhone Mirroring on your Mac`,
-        content: `On your Mac, open Spotlight Search by pressing Command + Space. Type "iPhone Mirroring" and press Return. Alternatively, look in your Dock or Applications folder for the iPhone Mirroring app — it has an iPhone icon. When you open it for the first time, your Mac will ask you to approve the connection on your iPhone.`,
+        content: `On your Mac, open Spotlight Search by pressing Command + Space. Type "iPhone Mirroring" and press Return. Alternatively, look in your Dock or Applications folder for the iPhone Mirroring app. It has an iPhone icon. When you open it for the first time, your Mac will ask you to approve the connection on your iPhone.`,
       },
       {
         title: `Approve the connection on your iPhone`,
@@ -249,11 +249,11 @@ This guide focuses on watching and enjoying TikTok as a viewer — not on making
     steps: [
       {
         title: `Download and open TikTok`,
-        content: `On iPhone, open the App Store and search for "TikTok." On Android, open the Google Play Store and search for "TikTok." Tap "Get" or "Install" and wait for it to download. Open the app. You will be shown videos right away even before making an account — you can browse first and decide later if you want to sign up.`,
+        content: `On iPhone, open the App Store and search for "TikTok." On Android, open the Google Play Store and search for "TikTok." Tap "Get" or "Install" and wait for it to download. Open the app. You will be shown videos right away even before making an account. You can browse first and decide later if you want to sign up.`,
       },
       {
         title: `Watch videos on the For You Page`,
-        content: `When TikTok opens, you will see a video playing automatically. Swipe up to go to the next video — like turning pages in a book, but upward. Swipe down to go back to a previous video. Each video has buttons on the right side: a heart (Like), a speech bubble (Comments), an arrow (Share), and a spinning record (follow the creator). You do not have to tap anything — you can swipe and watch without tapping a thing.`,
+        content: `When TikTok opens, you will see a video playing automatically. Swipe up to go to the next video — like turning pages in a book, but upward. Swipe down to go back to a previous video. Each video has buttons on the right side: a heart (Like), a speech bubble (Comments), an arrow (Share), and a spinning record (follow the creator). You do not have to tap anything. You can swipe and watch without tapping a thing.`,
         tip: `Quick Tip: The longer you watch a video, the more TikTok learns you enjoy that type of content and will show you more like it.`,
       },
       {
@@ -267,7 +267,7 @@ This guide focuses on watching and enjoying TikTok as a viewer — not on making
       {
         title: `Save a video to watch later`,
         content: `If you see a video you want to come back to, tap the Bookmark icon (it looks like a flag) on the right side of the screen, or tap the Share arrow and choose "Save to Favorites." To find your saved videos later, tap your profile picture in the bottom-right corner, then tap the Bookmark icon on your profile page.`,
-        warning: `TikTok is designed to keep you watching — it is designed to keep you engaged and time can pass quickly. Setting a screen time limit in your phone's settings can help you stay in control.`,
+        warning: `TikTok is designed to keep you watching. It is designed to keep you engaged and time can pass quickly. Setting a screen time limit in your phone's settings can help you stay in control.`,
       },
     ],
   },
@@ -341,7 +341,7 @@ This guide explains how to watch, share, and interact with Facebook Reels as a v
     steps: [
       {
         title: `Find Reels in your Facebook feed`,
-        content: `Open the Facebook app on your phone or go to facebook.com in your browser. Scroll through your News Feed. Reels look like videos in a vertical format — they play automatically as you scroll past them. You can also tap the "Reels" tab at the top of the app (it shows a small film frame icon) to see a dedicated feed of Reels.`,
+        content: `Open the Facebook app on your phone or go to facebook.com in your browser. Scroll through your News Feed. Reels look like videos in a vertical format. They play automatically as you scroll past them. You can also tap the "Reels" tab at the top of the app (it shows a small film frame icon) to see a dedicated feed of Reels.`,
       },
       {
         title: `Watch and control a Reel`,
@@ -381,7 +381,7 @@ Google Wallet comes pre-installed on most Android phones. If you do not see it, 
     steps: [
       {
         title: `Open Google Wallet`,
-        content: `Find the Google Wallet app on your Android phone — it has a blue, green, yellow, and red wallet icon. If you do not see it, open the Google Play Store and search "Google Wallet" to install it. Open the app and sign in with your Google account if prompted.`,
+        content: `Find the Google Wallet app on your Android phone. It has a blue, green, yellow, and red wallet icon. If you do not see it, open the Google Play Store and search "Google Wallet" to install it. Open the app and sign in with your Google account if prompted.`,
       },
       {
         title: `Add a debit or credit card`,
@@ -394,7 +394,7 @@ Google Wallet comes pre-installed on most Android phones. If you do not see it, 
       },
       {
         title: `Pay at a store using tap to pay`,
-        content: `When you are ready to pay at a store, look for the contactless symbol on the payment terminal (it looks like a sideways Wi-Fi signal). Wake up your phone and unlock it with your fingerprint or PIN — you do not need to open the Google Wallet app. Hold the back of your phone near the payment terminal for one to two seconds. You should hear a beep or feel a vibration confirming the payment went through.`,
+        content: `When you are ready to pay at a store, look for the contactless symbol on the payment terminal (it looks like a sideways Wi-Fi signal). Wake up your phone and unlock it with your fingerprint or PIN. You do not need to open the Google Wallet app. Hold the back of your phone near the payment terminal for one to two seconds. You should hear a beep or feel a vibration confirming the payment went through.`,
         warning: `Tap to pay only works when your phone is unlocked. This is a security feature — the payment will not go through if your phone screen is off or locked.`,
       },
       {
@@ -656,7 +656,7 @@ Window tiling is another practical addition — your Mac can now automatically s
       },
       {
         title: `Use the new Passwords app`,
-        content: `Open your Applications folder (click Finder > Applications) and look for the "Passwords" app — it has a key icon. Open it and use your Mac login password or Touch ID to get in. You will see all the passwords your Mac has saved over time — organized by website or app. You can search for a specific one, tap to reveal the password, or add a new entry manually. This app syncs with your iPhone's Passwords too.`,
+        content: `Open your Applications folder (click Finder > Applications) and look for the "Passwords" app. It has a key icon. Open it and use your Mac login password or Touch ID to get in. You will see all the passwords your Mac has saved over time — organized by website or app. You can search for a specific one, tap to reveal the password, or add a new entry manually. This app syncs with your iPhone's Passwords too.`,
       },
       {
         title: `Try window tiling`,
@@ -723,7 +723,7 @@ Partial screen sharing is a practical addition for video calls — instead of sh
     thumbnailEmoji: ``,
     publishedAt: `2026-04-19`,
     difficulty: `Beginner`,
-    body: `Microsoft Edge is the web browser that comes pre-installed on all Windows 10 and Windows 11 computers. A browser is the program you use to visit websites — it is the software that makes internet browsing possible. Edge replaced the older Internet Explorer browser starting in 2020.
+    body: `Microsoft Edge is the web browser that comes pre-installed on all Windows 10 and Windows 11 computers. A browser is the program you use to visit websites. It is the software that makes internet browsing possible. Edge replaced the older Internet Explorer browser starting in 2020.
 
 Many people switch to browsers like Chrome or Firefox by habit, but Edge has quietly become a very capable browser with some genuinely useful features that even Chrome does not offer. It also tends to use less battery power on laptops, which can be helpful when you are away from a power outlet.
 
@@ -740,7 +740,7 @@ Reading mode is another useful feature that strips away all the ads, sidebars, a
       },
       {
         title: `Open and manage tabs`,
-        content: `To open a new tab, click the "+" button at the top of the browser next to your current tabs, or press Ctrl + T on your keyboard. To close a tab, click the "×" on that tab or press Ctrl + W. You can have many tabs open at once — they will shrink in size as you add more. Right-click on any tab to see options like "Pin Tab" (keeps it always open) or "Mute Tab."`,
+        content: `To open a new tab, click the "+" button at the top of the browser next to your current tabs, or press Ctrl + T on your keyboard. To close a tab, click the "×" on that tab or press Ctrl + W. You can have many tabs open at once. They will shrink in size as you add more. Right-click on any tab to see options like "Pin Tab" (keeps it always open) or "Mute Tab."`,
       },
       {
         title: `Save a favorite (bookmark)`,
@@ -752,7 +752,7 @@ Reading mode is another useful feature that strips away all the ads, sidebars, a
       },
       {
         title: `Turn on reading mode`,
-        content: `When you are on a news article or blog post, look for the book icon at the right end of the address bar — it looks like an open book. Click it to switch to reading mode (also called "Immersive Reader"). The page will transform into a clean, distraction-free layout. Use the "Text Preferences" and "Grammar Tools" buttons at the top to adjust font size, line spacing, and background color to suit your comfort.`,
+        content: `When you are on a news article or blog post, look for the book icon at the right end of the address bar. It looks like an open book. Click it to switch to reading mode (also called "Immersive Reader"). The page will transform into a clean, distraction-free layout. Use the "Text Preferences" and "Grammar Tools" buttons at the top to adjust font size, line spacing, and background color to suit your comfort.`,
         tip: `Quick Tip: In reading mode, Edge can read the article out loud to you. Click the "Read Aloud" button at the top — Edge will read the text in a natural voice, and highlight each word as it reads.`,
       },
     ],
@@ -799,7 +799,7 @@ Brave is a good choice for anyone who wants more control over their online priva
       {
         title: `Try Private Window with Tor (optional)`,
         content: `Brave offers a special "Private Window with Tor" option — this is a more advanced privacy mode that hides your internet activity more thoroughly by routing your connection through a network called Tor. This is NOT needed for everyday browsing, but can be useful if you have a specific need for strong anonymity. Access it under Menu > New Private Window with Tor.`,
-        warning: `Private browsing in any browser (including Brave's standard Private window) does not make you completely anonymous — it mainly stops your browser from saving local history. For stronger privacy online, consider a reputable VPN service as well.`,
+        warning: `Private browsing in any browser (including Brave's standard Private window) does not make you completely anonymous. It mainly stops your browser from saving local history. For stronger privacy online, consider a reputable VPN service as well.`,
       },
     ],
   },
@@ -813,7 +813,7 @@ Brave is a good choice for anyone who wants more control over their online priva
     thumbnailEmoji: ``,
     publishedAt: `2026-04-19`,
     difficulty: `Beginner`,
-    body: `Your Android phone's home screen is the first thing you see when you pick it up. By default, it comes with whatever apps and layout the phone manufacturer chose. But the home screen is completely customizable — you can arrange apps wherever you like, add helpful widgets that show live information, change the wallpaper, and make it feel like your own.
+    body: `Your Android phone's home screen is the first thing you see when you pick it up. By default, it comes with whatever apps and layout the phone manufacturer chose. But the home screen is completely customizable. You can arrange apps wherever you like, add helpful widgets that show live information, change the wallpaper, and make it feel like your own.
 
 Unlike iPhones, Android phones offer a lot of flexibility in how the home screen is organized. You can have multiple home screen pages — swipe left and right to move between them. You can resize widgets. You can even download alternative "launchers" (apps that completely change the home screen experience), though this guide focuses on the built-in customization options that work on any Android phone.
 
@@ -830,7 +830,7 @@ The most popular changes people make are: moving apps to a more convenient locat
       },
       {
         title: `Add a widget`,
-        content: `Press and hold on an empty area of your home screen (not on an app). A menu will appear — tap "Widgets" or "Add widgets." You will see a list of available widgets grouped by app. Tap an app to expand its widget options — there are usually multiple sizes to choose from. Press and hold a widget to pick it up, then drag it to an empty space on your home screen. Release to place it.`,
+        content: `Press and hold on an empty area of your home screen (not on an app). A menu will appear — tap "Widgets" or "Add widgets." You will see a list of available widgets grouped by app. Tap an app to expand its widget options. There are usually multiple sizes to choose from. Press and hold a widget to pick it up, then drag it to an empty space on your home screen. Release to place it.`,
         tip: `Quick Tip: Common useful widgets include: Clock (shows the current time in a large format), Weather, Calendar (shows upcoming events), and Battery (shows charge level for your phone and connected devices like headphones).`,
       },
       {
@@ -839,7 +839,7 @@ The most popular changes people make are: moving apps to a more convenient locat
       },
       {
         title: `Create a folder for related apps`,
-        content: `If your home screen is getting crowded, group related apps into folders. Press and hold one app icon and drag it on top of another app icon. A folder will be created automatically containing both apps. Tap the folder to open it — you will see all the apps inside. Tap the folder name at the bottom to rename it (for example, "Banking" or "Travel"). To add more apps to the folder, drag them on top of it.`,
+        content: `If your home screen is getting crowded, group related apps into folders. Press and hold one app icon and drag it on top of another app icon. A folder will be created automatically containing both apps. Tap the folder to open it. You will see all the apps inside. Tap the folder name at the bottom to rename it (for example, "Banking" or "Travel"). To add more apps to the folder, drag them on top of it.`,
       },
       {
         title: `Rearrange or delete home screen pages`,
@@ -888,7 +888,7 @@ One important note: students usually have a school-issued Google account (for ex
       {
         title: `Check for missing assignments`,
         content: `In Google Classroom, have the student click their name icon in the top-right corner of the page and choose "To-do" from the menu. This shows a complete list of all upcoming and past-due assignments across all classes. Past-due items are marked with the due date in red. Helping a student review this list weekly can prevent assignments from slipping through the cracks.`,
-        tip: `Quick Tip: As a Guardian, your weekly email summary from Google Classroom lists any missing work automatically — you do not always need to check the site directly.`,
+        tip: `Quick Tip: As a Guardian, your weekly email summary from Google Classroom lists any missing work automatically. You do not always need to check the site directly.`,
       },
       {
         title: `Contact a teacher through Classroom`,

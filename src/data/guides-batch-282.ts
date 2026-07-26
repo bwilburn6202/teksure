@@ -25,7 +25,7 @@ If your printer is older than ~2018, it may not support AirPrint. In that case, 
     steps: [
       {
         title: 'Make sure your printer is on and connected to Wi-Fi',
-        content: 'Turn on your printer. Look at its small screen or status lights — it should show that it is connected to your home Wi-Fi network. If not, follow the printer\'s setup card or call your printer manufacturer\'s support line. The printer must be on the same Wi-Fi network as your phone.',
+        content: 'Turn on your printer. Look at its small screen or status lights. It should show that it is connected to your home Wi-Fi network. If not, follow the printer\'s setup card or call your printer manufacturer\'s support line. The printer must be on the same Wi-Fi network as your phone.',
       },
       {
         title: 'On iPhone: open the document, photo, or page you want to print',
@@ -38,7 +38,7 @@ If your printer is older than ~2018, it may not support AirPrint. In that case, 
       },
       {
         title: 'On Android: install the manufacturer app',
-        content: 'Most Android phones can print without an app, but the manufacturer app gives you more options. For HP printers, install HP Smart from Google Play. For Epson, install Epson iPrint. For Canon, install Canon Print. For Brother, install Brother iPrint&Scan. Open the app and follow the setup — it finds your printer automatically.',
+        content: 'Most Android phones can print without an app, but the manufacturer app gives you more options. For HP printers, install HP Smart from Google Play. For Epson, install Epson iPrint. For Canon, install Canon Print. For Brother, install Brother iPrint&Scan. Open the app and follow the setup. It finds your printer automatically.',
       },
       {
         title: 'Android: print from any app',
@@ -89,7 +89,7 @@ You do not need a paid app. Apps like RoboKiller and Hiya have free tiers, but t
       },
       {
         title: 'Add yourself to the National Do Not Call Registry',
-        content: 'Visit donotcall.gov and enter your phone number. Legitimate telemarketers are required to stop calling within 31 days. This does not stop scammers — they ignore the law — but it cuts the volume from real telemarketers a lot. The registration is permanent and free.',
+        content: 'Visit donotcall.gov and enter your phone number. Legitimate telemarketers are required to stop calling within 31 days. This does not stop scammers. They ignore the law — but it cuts the volume from real telemarketers a lot. The registration is permanent and free.',
       },
       {
         title: 'Never call back or press buttons during a spam call',

@@ -28,7 +28,7 @@ Remember: the goal of week one is not speed. It's showing up. Walk as briskly as
       {
         title: `Download and open the C25K app`,
         content: `Search for "C25K" in the App Store (iPhone) or Google Play Store (Android) and install the free version. Open the app and create a free account with your email address so your progress is saved between sessions.`,
-        tip: `Quick Tip: The free version of C25K includes the full 9-week program. The Pro upgrade mainly removes ads — you do not need it to finish the program.`,
+        tip: `Quick Tip: The free version of C25K includes the full 9-week program. The Pro upgrade mainly removes ads. You do not need it to finish the program.`,
       },
       {
         title: `Set up your profile and choose Week 1`,
@@ -706,7 +706,7 @@ Strava's free tier includes unlimited activity recording, route mapping, and per
       },
       {
         title: `Keep your phone with you during the activity`,
-        content: `Carry your phone in your pocket, an armband, or a running belt throughout the activity. Strava records your route in the background — you don't need to keep the app open on screen. Your phone's screen can lock normally to save battery. The recording continues until you return to the app and tap "Stop."`,
+        content: `Carry your phone in your pocket, an armband, or a running belt throughout the activity. Strava records your route in the background. You don't need to keep the app open on screen. Your phone's screen can lock normally to save battery. The recording continues until you return to the app and tap "Stop."`,
       },
       {
         title: `Save and review your activity`,
@@ -736,7 +736,7 @@ The only equipment you need is a chair, a wall, and your body weight. That means
 
 Multiple apps bring the 7-Minute Workout to your phone with guided instructions and timers. The most straightforward is the official "7 Minute Workout" app by Perigee AB, available free on iPhone and Android. Other popular versions include the Johnson & Johnson Official 7 Minute Workout app. All of them guide you through each exercise with visual demonstrations and count down the 30 seconds for you so you don't need to watch a clock.
 
-Because the workout is short and requires no equipment, the biggest barrier to skipping it disappears — you never need to drive to a gym, find your gear, or clear a big block of time. A seven-minute commitment is one almost anyone can honor. Many people who struggle with longer workouts find the 7-Minute Workout becomes a consistent daily habit precisely because of its brevity.`,
+Because the workout is short and requires no equipment, the biggest barrier to skipping it disappears. You never need to drive to a gym, find your gear, or clear a big block of time. A seven-minute commitment is one almost anyone can honor. Many people who struggle with longer workouts find the 7-Minute Workout becomes a consistent daily habit precisely because of its brevity.`,
     steps: [
       {
         title: `Download a 7-Minute Workout app`,

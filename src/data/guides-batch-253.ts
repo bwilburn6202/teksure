@@ -117,7 +117,7 @@ export const guidesBatch253: Guide[] = [
       },
       {
         title: "Watch for early signs of progress",
-        content: "CBT-T does not work overnight. Most people notice meaningful change after 6 to 10 sessions or about 8 weeks of self-guided work. The first sign is usually not that the tinnitus is quieter — it is that you notice it less often, and the noticing bothers you less. Track your progress with a simple weekly score from 0 to 10 for how much tinnitus bothered me this week, and look for the trend over months.",
+        content: "CBT-T does not work overnight. Most people notice meaningful change after 6 to 10 sessions or about 8 weeks of self-guided work. The first sign is usually not that the tinnitus is quieter. It is that you notice it less often, and the noticing bothers you less. Track your progress with a simple weekly score from 0 to 10 for how much tinnitus bothered me this week, and look for the trend over months.",
       },
       {
         title: "Combine CBT with sound therapy and good sleep",
@@ -136,7 +136,7 @@ export const guidesBatch253: Guide[] = [
     publishedAt: "2026-05-09",
     lastVerifiedAt: "2026-05-09",
     difficulty: "Beginner",
-    body: "Bedtime is the hardest part of the day for most people with tinnitus. The house is quiet, you are lying still, you have nothing to distract you, and the ringing is suddenly the only thing in the room. About 70 percent of tinnitus sufferers report sleep problems, and for seniors the number is even higher because age-related sleep changes already make falling asleep harder.\n\nGood news: sleep problems caused by tinnitus respond well to changes you can make tonight. Most do not cost anything. The key insight is that you do not need to make the tinnitus quieter — you need to make the rest of the room a little louder. And you need to give your brain something else to focus on as you drift off.\n\nThis guide pulls together the bedtime techniques recommended by the VA Progressive Tinnitus Management program, the British Tinnitus Association, and most board-certified sleep specialists. None of these are medical advice. And you should not stop or start any prescribed sleep medication without talking to your doctor.\n\nAvoid the temptation to use alcohol or older over-the-counter sleep aids (like diphenhydramine, sold as Benadryl, Tylenol PM, or ZzzQuil) as a tinnitus crutch. For seniors, both can worsen tinnitus, cause grogginess the next day, and raise fall risk. The American Geriatrics Society Beers List specifically warns against routine use of these in adults over 65.\n\n(Sources: American Tinnitus Association — Sleep and Tinnitus; National Sleep Foundation; VA Progressive Tinnitus Management; British Tinnitus Association — Sleep Resources)",
+    body: "Bedtime is the hardest part of the day for most people with tinnitus. The house is quiet, you are lying still, you have nothing to distract you, and the ringing is suddenly the only thing in the room. About 70 percent of tinnitus sufferers report sleep problems, and for seniors the number is even higher because age-related sleep changes already make falling asleep harder.\n\nGood news: sleep problems caused by tinnitus respond well to changes you can make tonight. Most do not cost anything. The key insight is that you do not need to make the tinnitus quieter. You need to make the rest of the room a little louder. And you need to give your brain something else to focus on as you drift off.\n\nThis guide pulls together the bedtime techniques recommended by the VA Progressive Tinnitus Management program, the British Tinnitus Association, and most board-certified sleep specialists. None of these are medical advice. And you should not stop or start any prescribed sleep medication without talking to your doctor.\n\nAvoid the temptation to use alcohol or older over-the-counter sleep aids (like diphenhydramine, sold as Benadryl, Tylenol PM, or ZzzQuil) as a tinnitus crutch. For seniors, both can worsen tinnitus, cause grogginess the next day, and raise fall risk. The American Geriatrics Society Beers List specifically warns against routine use of these in adults over 65.\n\n(Sources: American Tinnitus Association — Sleep and Tinnitus; National Sleep Foundation; VA Progressive Tinnitus Management; British Tinnitus Association — Sleep Resources)",
     steps: [
       {
         title: "Use a bedside sound source — but keep it soft",
@@ -243,7 +243,7 @@ export const guidesBatch253: Guide[] = [
       },
       {
         title: "Salt and processed foods",
-        content: "High sodium intake raises blood pressure and increases fluid pressure in the inner ear, both of which can worsen tinnitus and bring on dizziness. This is especially true for people with Meniere's disease. But it affects many seniors with regular tinnitus too. Aim for under 1,500 to 2,000 mg of sodium per day. The biggest sources are not the salt shaker — they are canned soups, deli meats, frozen dinners, restaurant meals, and bread. Read the Nutrition Facts label and compare brands.",
+        content: "High sodium intake raises blood pressure and increases fluid pressure in the inner ear, both of which can worsen tinnitus and bring on dizziness. This is especially true for people with Meniere's disease. But it affects many seniors with regular tinnitus too. Aim for under 1,500 to 2,000 mg of sodium per day. The biggest sources are not the salt shaker. They are canned soups, deli meats, frozen dinners, restaurant meals, and bread. Read the Nutrition Facts label and compare brands.",
       },
       {
         title: "Alcohol — short-term and long-term effects",
@@ -272,7 +272,7 @@ export const guidesBatch253: Guide[] = [
       },
       {
         title: "Keep a brief two-week trigger log",
-        content: "Buy a small notebook or open a notes app on your phone. Each day, write the date, a tinnitus loudness score from 0 to 10, what you ate and drank, any new medications, how you slept, and any unusual stress. After 14 days, look back. Patterns nearly always appear. Bring the log to your audiologist or ENT — it makes your visit far more productive than describing things from memory.",
+        content: "Buy a small notebook or open a notes app on your phone. Each day, write the date, a tinnitus loudness score from 0 to 10, what you ate and drank, any new medications, how you slept, and any unusual stress. After 14 days, look back. Patterns nearly always appear. Bring the log to your audiologist or ENT. It makes your visit far more productive than describing things from memory.",
       },
     ],
   },

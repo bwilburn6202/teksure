@@ -67,7 +67,7 @@ Who this is for:
 What you need to start:
 
 • A smartphone and a computer of your own.
-• Your parent's basic cooperation — they have to agree to let you help this way. This guide does not cover covert monitoring, which is rarely appropriate for a competent adult.
+• Your parent's basic cooperation. They have to agree to let you help this way. This guide does not cover covert monitoring, which is rarely appropriate for a competent adult.
 • Patience with yourself. Pick one thing at a time.
 
 Let's start with expectations — because the single biggest cause of long-distance tech-care burnout is mismatched expectations on both sides.`,
@@ -220,7 +220,7 @@ TeamViewer is the industry standard and free for home use. The "QuickSupport" ve
 How it works:
 
 1. You install TeamViewer on your computer (teamviewer.com/download — free for personal use).
-2. Your parent downloads "TeamViewer QuickSupport" on theirs. It is a tiny file that doesn't install — they open it when they need help.
+2. Your parent downloads "TeamViewer QuickSupport" on theirs. It is a tiny file that doesn't install. They open it when they need help.
 3. When they open it, it shows a 9-digit ID and a password.
 4. They read those numbers to you over the phone.
 5. You type them into your TeamViewer. You are now controlling their computer.
@@ -228,7 +228,7 @@ How it works:
 
 Why this is good for elderly parents:
 
-• They don't install anything permanent — they can't "accidentally" give access.
+• They don't install anything permanent. They can't "accidentally" give access.
 • They have to actively open the app and read you the numbers. Full consent every time.
 • Works on Windows, Mac, iPhone (viewing), Android (viewing and some control), Chromebook.
 • Free for personal use.
@@ -444,7 +444,7 @@ Do this once, together, and their iPhone becomes dramatically easier and safer t
 
 Start with a conversation:
 
-Before enabling any of these, talk. Something like: "Mom, I worry about you. Would it be okay if we set up your phone so that if something happened, I could find you quickly? I won't check it all day — I only want to know you're safe."
+Before enabling any of these, talk. Something like: "Mom, I worry about you. Would it be okay if we set up your phone so that if something happened, I could find you quickly? I won't check it all day. I only want to know you're safe."
 
 Most parents are relieved. The ones who are not, respect that. Autonomy first. Consent matters more than convenience.
 
@@ -763,7 +763,7 @@ Scam calls are devastating for older adults who have been tricked. The shame oft
 
 The sooner a scam is reported, the better the chance of stopping the transaction, reversing a wire, or catching the thief. Shame is the scammer's greatest ally. Love is ours.`,
         tip: 'Add a $1,000-per-day spending limit to their debit card (most banks let you set this in their app or by calling in). Even if a scam gets their card, the damage is capped at one day\'s worth of limit. Same trick works on Zelle and Venmo transfer limits.',
-        warning: 'Be aware that scammers also pretend to be monitoring services. A call saying "this is Aura, we have detected fraud, please confirm your account number" is almost always a scam. Real monitoring services send app notifications and emails — they don\'t cold-call asking for your information.',
+        warning: 'Be aware that scammers also pretend to be monitoring services. A call saying "this is Aura, we have detected fraud, please confirm your account number" is almost always a scam. Real monitoring services send app notifications and emails. They don\'t cold-call asking for your information.',
       },
       {
         title: "Step 10: When NOT to remote in — preserving their autonomy",
@@ -902,7 +902,7 @@ Distributing the load does two things:
 You will feel less guilty saying "I can't help until Sunday" when there's a known backup. And your parent will feel less guilty calling because they won't be limited to one person.
 
 This is how communities have always handled caregiving. The nuclear-family, adult-kids-do-everything model is historically weird. Most of human history, help came from neighbors, church, extended family, and community. Rebuild some of that for your parent. They'll be happier, safer, and more connected.`,
-        tip: 'Ask your parent, genuinely: "Who are the three people in your life you would feel most comfortable asking a dumb tech question?" Their answer reveals the network already exists — you need to tell those three people you appreciate them and exchange numbers.',
+        tip: 'Ask your parent, genuinely: "Who are the three people in your life you would feel most comfortable asking a dumb tech question?" Their answer reveals the network already exists. You need to tell those three people you appreciate them and exchange numbers.',
       },
       {
         title: 'Step 12: Signs to escalate — when tech trouble is a medical signal',
@@ -1130,7 +1130,7 @@ A short list of resources to bookmark:
 • AARP Fraud Watch Helpline: 877-908-3360.
 • Family Caregiver Alliance: caregiver.org.
 • Alzheimer's Association Helpline (24/7, free): 800-272-3900.
-• Eldercare Locator (Administration on Aging): eldercare.acl.gov, 800-677-1116 — they can point you to local services.
+• Eldercare Locator (Administration on Aging): eldercare.acl.gov, 800-677-1116. They can point you to local services.
 • AARP Caregiving Portal: aarp.org/caregiving.
 • TekSure's Safety & Privacy guides — for specific scam education.
 • TekSure's Phone & Tablet guides — for device-specific walk-throughs you can share.

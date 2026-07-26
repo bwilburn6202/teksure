@@ -28,7 +28,7 @@ Gemini sometimes gets things wrong, so always double-check important information
       },
       {
         title: `Sign in with your Google account`,
-        content: `If you have a Gmail address, click Sign in and enter your Gmail address and password. If you do not have a Google account, click Create account and follow the steps — it is free and takes about five minutes.`,
+        content: `If you have a Gmail address, click Sign in and enter your Gmail address and password. If you do not have a Google account, click Create account and follow the steps. It is free and takes about five minutes.`,
       },
       {
         title: `Type your first question or request`,
@@ -101,7 +101,7 @@ The more specific your request, the better the response. Instead of asking "Help
     thumbnailEmoji: ``,
     publishedAt: `2026-04-20`,
     difficulty: `Beginner`,
-    body: `Siri is Apple's built-in voice assistant on every iPhone, iPad, and Mac. It has been around for years, but most people only use a small fraction of what it can do. If you have an iPhone, Siri is already there — you do not need to download or pay for anything.
+    body: `Siri is Apple's built-in voice assistant on every iPhone, iPad, and Mac. It has been around for years, but most people only use a small fraction of what it can do. If you have an iPhone, Siri is already there. You do not need to download or pay for anything.
 
 The most valuable thing about Siri is that it is completely hands-free. You can ask it questions, make phone calls, send text messages, set reminders, check the weather, and do much more — all without touching your phone. That makes it especially useful when your hands are busy, when you are driving, or when small text on the screen is hard to read.
 
@@ -148,7 +148,7 @@ Siri works best when you speak naturally in full sentences. You do not need to u
     difficulty: `Beginner`,
     body: `Google Assistant is a voice-activated helper built into Android phones and many other Google devices. If you have an Android phone, it is already on your device and free to use. You can speak to it naturally. And it responds to your voice with answers, actions, and reminders.
 
-Google Assistant is designed to understand everyday speech — you do not need to memorize specific commands. You can say things the way you would naturally say them, and the assistant figures out what you mean. It is connected to your Google account. So it can access your Google Calendar, Gmail, and Google Maps to give you personalized responses.
+Google Assistant is designed to understand everyday speech. You do not need to memorize specific commands. You can say things the way you would naturally say them, and the assistant figures out what you mean. It is connected to your Google account. So it can access your Google Calendar, Gmail, and Google Maps to give you personalized responses.
 
 Some of the most useful things Google Assistant can do: set alarms and timers, add items to a shopping list, navigate you to an address using Google Maps, answer general knowledge questions, play music or podcasts, make phone calls or send texts, and control smart home devices like lights or thermostats.
 
@@ -287,7 +287,7 @@ These tools are popular for creating personalized greeting card images, fun pict
 
 There are several free or free-to-try AI image generators available. Microsoft Designer (designer.microsoft.com) and Adobe Firefly (firefly.adobe.com) are among the most beginner-friendly. Google's AI image tools are built into some of its products. Most of these offer a set number of free image generations per day or per month before asking you to pay.
 
-The images AI generators create look realistic and often quite beautiful. But they are entirely made up — they do not come from anywhere and were not taken by a photographer. That makes them useful for creative and decorative purposes. They also have limits: hands and text inside images often come out wrong, and the AI may misinterpret unusual requests.
+The images AI generators create look realistic and often quite beautiful. But they are entirely made up. They do not come from anywhere and were not taken by a photographer. That makes them useful for creative and decorative purposes. They also have limits: hands and text inside images often come out wrong, and the AI may misinterpret unusual requests.
 
 To get good results, be specific in your description. Instead of "a cat picture," try "a fluffy orange tabby cat wearing a red bow tie, sitting in a cozy library with wooden bookshelves." More detail means a result that is closer to what you have in mind.`,
     steps: [
@@ -394,7 +394,7 @@ Once you add a Skill, you interact with it by speaking to Alexa. For example, af
       },
       {
         title: `Find a Skill and enable it`,
-        content: `Tap on any Skill to read its description and reviews. When you find one you want, tap the Enable Skill button. The Skill will be added to your Echo device within a few seconds. Some Skills ask you to link an account (like a Spotify or news account) — you only need to do this if you want personalized features.`,
+        content: `Tap on any Skill to read its description and reviews. When you find one you want, tap the Enable Skill button. The Skill will be added to your Echo device within a few seconds. Some Skills ask you to link an account (like a Spotify or news account). You only need to do this if you want personalized features.`,
         warning: `If a Skill asks for payment during setup, read the details carefully before agreeing. Most Skills are free — paid ones are required to disclose the cost upfront.`,
       },
       {
@@ -404,7 +404,7 @@ Once you add a Skill, you interact with it by speaking to Alexa. For example, af
       },
       {
         title: `Remove a Skill if you no longer want it`,
-        content: `In the Alexa app, go to Skills & Games, then tap the menu and select Your Skills to see everything you have enabled. Tap any Skill and then tap Disable Skill to remove it. This does not delete anything from your account — you can re-enable it any time.`,
+        content: `In the Alexa app, go to Skills & Games, then tap the menu and select Your Skills to see everything you have enabled. Tap any Skill and then tap Disable Skill to remove it. This does not delete anything from your account. You can re-enable it any time.`,
       },
     ],
   },
@@ -469,7 +469,7 @@ For articles and public documents with no personal information, AI summarization
 
 Listening to podcasts is free. The vast majority of podcasts cost nothing — the creators make their money through advertising, donations, or sponsors. You do not need a subscription to get started. You do need a smartphone or computer and either Wi-Fi or a cellular data connection.
 
-Podcasts are stored and played through apps called podcast players. Some popular ones include Apple Podcasts (built into iPhones for free), Spotify (free with occasional ads), and Pocket Casts (a paid app many frequent listeners prefer). If you have an iPhone, Apple Podcasts is already installed and free — you do not need to download anything.
+Podcasts are stored and played through apps called podcast players. Some popular ones include Apple Podcasts (built into iPhones for free), Spotify (free with occasional ads), and Pocket Casts (a paid app many frequent listeners prefer). If you have an iPhone, Apple Podcasts is already installed and free. You do not need to download anything.
 
 Podcasts typically come in episodes, like chapters of a show. A new episode might come out once a week, daily, or sporadically. When you find a show you like, you can subscribe to it — which means new episodes automatically appear so you never miss one.
 
@@ -477,8 +477,8 @@ People listen to podcasts while doing other things: walking, driving, cooking, d
     steps: [
       {
         title: `Find the podcast app on your phone`,
-        content: `On an iPhone, look for the purple app with a microphone and sound waves — it is called Podcasts and is already installed. On an Android phone, open the Google Play Store, search for "Spotify" or "Google Podcasts," and download one for free. Spotify works on both iPhone and Android.`,
-        tip: `If you do not see the Podcasts app on your iPhone, swipe down on the home screen and type "Podcasts" in the search bar — it may be in a folder.`,
+        content: `On an iPhone, look for the purple app with a microphone and sound waves. It is called Podcasts and is already installed. On an Android phone, open the Google Play Store, search for "Spotify" or "Google Podcasts," and download one for free. Spotify works on both iPhone and Android.`,
+        tip: `If you do not see the Podcasts app on your iPhone, swipe down on the home screen and type "Podcasts" in the search bar. It may be in a folder.`,
       },
       {
         title: `Search for a topic you already enjoy`,
@@ -522,7 +522,7 @@ If you have an Amazon Echo, Prime membership, or Amazon account, Audible's free 
     steps: [
       {
         title: `Get a free library card if you do not have one`,
-        content: `Visit your local public library branch in person with a photo ID and proof of your address (like a piece of mail). Sign up for a free library card — it takes about five minutes. This card is your key to free digital audiobooks through Libby and hoopla.`,
+        content: `Visit your local public library branch in person with a photo ID and proof of your address (like a piece of mail). Sign up for a free library card. It takes about five minutes. This card is your key to free digital audiobooks through Libby and hoopla.`,
         tip: `Many library systems also let you sign up for a digital library card online. Search for your city or county library website and look for a "get a library card" option.`,
       },
       {
@@ -576,7 +576,7 @@ The battery typically lasts 8 to 12 hours of regular use, so charging it once a 
       },
       {
         title: `Sign in with your Amazon account`,
-        content: `Enter the email address and password you use for Amazon.com. If you do not have an Amazon account, tap Create a new Amazon account and follow the steps — it takes about five minutes and is free. Your Amazon account links your tablet to your Kindle books, Prime Video, and any previous purchases.`,
+        content: `Enter the email address and password you use for Amazon.com. If you do not have an Amazon account, tap Create a new Amazon account and follow the steps. It takes about five minutes and is free. Your Amazon account links your tablet to your Kindle books, Prime Video, and any previous purchases.`,
         warning: `If you are giving this tablet as a gift, set it up with the recipient's Amazon account, not your own — otherwise all purchases will be charged to your account.`,
       },
       {
@@ -781,7 +781,7 @@ The free AI tools that work well for travel planning are ChatGPT (chat.openai.co
     difficulty: `Intermediate`,
     body: `Looking for work can feel overwhelming, especially if you have been out of the workforce for a while, are changing careers, or feel uncertain about how to present yourself on paper. AI tools can help at every stage of the process — writing and improving your resume, drafting personalized cover letters, preparing for interview questions, and researching potential employers.
 
-The key thing to understand is that AI does not find jobs for you — it helps you present yourself well and prepare thoroughly. You still need to search for job listings on sites like Indeed, LinkedIn, or USAJOBS (for federal jobs). And you still need to do the interviews. But AI can a lot reduce the stress and time involved in the writing and preparation parts.
+The key thing to understand is that AI does not find jobs for you. It helps you present yourself well and prepare thoroughly. You still need to search for job listings on sites like Indeed, LinkedIn, or USAJOBS (for federal jobs). And you still need to do the interviews. But AI can a lot reduce the stress and time involved in the writing and preparation parts.
 
 For resume improvement, AI is particularly useful at taking a rough description of your work history and turning it into clear, well-organized bullet points that highlight your accomplishments. Many people struggle to write about their own experience in a professional way — AI makes this much easier. You describe what you did, and the AI helps you phrase it in a way that reads well to hiring managers.
 
@@ -870,7 +870,7 @@ Battery life on most Android tablets is 8 to 12 hours of regular use. The chargi
     thumbnailEmoji: ``,
     publishedAt: `2026-04-20`,
     difficulty: `Beginner`,
-    body: `Once you decide to start listening to podcasts, you need a way to find and play them. That is what podcast apps are for — they organize podcast shows, let you search for new ones, and play episodes through your phone's speaker or headphones.
+    body: `Once you decide to start listening to podcasts, you need a way to find and play them. That is what podcast apps are for. They organize podcast shows, let you search for new ones, and play episodes through your phone's speaker or headphones.
 
 There are dozens of podcast apps available, but three stand out as the most popular and well-supported: Apple Podcasts, Spotify, and Pocket Casts. Each has a different feel, and the right one depends on how you like to discover and organize content.
 
@@ -882,7 +882,7 @@ Pocket Casts is a paid app (around $4 one-time or $1 per month) widely considere
     steps: [
       {
         title: `Decide which app fits your situation`,
-        content: `Use Apple Podcasts if you have an iPhone and want zero setup — it is already on your phone and free. Use Spotify if you already have it for music, or if you have an Android phone and want a free option. Consider Pocket Casts only if you find yourself listening to many podcasts regularly and want advanced features.`,
+        content: `Use Apple Podcasts if you have an iPhone and want zero setup. It is already on your phone and free. Use Spotify if you already have it for music, or if you have an Android phone and want a free option. Consider Pocket Casts only if you find yourself listening to many podcasts regularly and want advanced features.`,
         tip: `Start with whichever free option is already on your device. You can always switch later — your listening preferences will carry over if you search for the same shows again.`,
       },
       {

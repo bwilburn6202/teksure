@@ -15,7 +15,7 @@ export const guidesBatch84: Guide[] = [
 
 Bark works across more than 30 platforms, including Instagram, Snapchat, TikTok, Gmail, iMessage, and many others. It also monitors activity on Android and iPhone devices directly when you install its app. When something worrying is detected, Bark sends you an email or text alert explaining the issue and suggesting how to respond. You can then choose to open a conversation with your child rather than reacting to every small thing.
 
-The service costs around $14 per month for unlimited children and devices, which makes it affordable for families. Bark does not give you a live location tracker or the ability to block apps — it is focused on communication safety. For families who want content filtering or screen time limits alongside monitoring, Bark can be paired with other tools like Circle or your phone's built-in parental controls.
+The service costs around $14 per month for unlimited children and devices, which makes it affordable for families. Bark does not give you a live location tracker or the ability to block apps. It is focused on communication safety. For families who want content filtering or screen time limits alongside monitoring, Bark can be paired with other tools like Circle or your phone's built-in parental controls.
 
 Setting up Bark takes about 20 to 30 minutes. You will create a parent account, connect your child's accounts and devices, and then let Bark run quietly in the background. Parents consistently report that the alert-based model feels more sustainable than constant surveillance, and children often respond better to it as well.`,
     steps: [
@@ -102,7 +102,7 @@ Circle Home Plus costs about $129 upfront for the hardware, plus a $9.99 per mon
 
 The Qustodio dashboard gives parents a clear picture of how much time a child spends on each app, which websites they visit, what they search for online, and where they are located. Reports are organized by day, week, or month. So you can spot trends over time rather than reacting to individual incidents. For example, you might notice that your child's social media usage spikes on school nights, or that they are visiting websites in a category you would prefer to block.
 
-Qustodio's location tracking feature shows where your child's phone is on a map, with a history of recent locations. This is useful for knowing when a child has arrived at school or a friend's house. The app also supports geofencing — you can create a virtual boundary around a location like home or school, and receive a notification when your child enters or leaves that area.
+Qustodio's location tracking feature shows where your child's phone is on a map, with a history of recent locations. This is useful for knowing when a child has arrived at school or a friend's house. The app also supports geofencing. You can create a virtual boundary around a location like home or school, and receive a notification when your child enters or leaves that area.
 
 Parental controls include the ability to block specific websites or entire categories, set daily time limits per app or per device, schedule "pause" windows when devices cannot be used, and monitor incoming and outgoing calls and messages on Android devices. Qustodio offers a free plan for one device with basic features, and paid plans starting around $54.95 per year for five devices. A 30-day free trial of the premium plan is available.`,
     steps: [
@@ -181,7 +181,7 @@ You can create a Kids Mode profile for each child in your household with a Disne
     difficulty: `Beginner`,
     body: `Netflix Kids profiles are a free feature available on all Netflix subscription plans. When you create a Kids profile for a child, Netflix automatically sets the content to only show titles rated for children — typically G, PG, and TV-Y through TV-G content. Older, more mature titles are not visible in the Kids profile at all.
 
-Netflix also allows you to set a PIN on the Kids profile so your child cannot switch to a different profile or change settings without your permission. You can find this option in the account settings on the Netflix website. From a computer, you have the most control — you can set the PIN, adjust the maturity level of content, and choose specific shows you want to block even if they fall within the allowed rating range.
+Netflix also allows you to set a PIN on the Kids profile so your child cannot switch to a different profile or change settings without your permission. You can find this option in the account settings on the Netflix website. From a computer, you have the most control. You can set the PIN, adjust the maturity level of content, and choose specific shows you want to block even if they fall within the allowed rating range.
 
 One thing worth knowing is that Netflix Kids profiles work differently from Netflix's general profile maturity settings. A Kids profile is locked to the lowest content tier and cannot be changed from within the Netflix app — only a parent can modify it by entering the PIN. General profiles, by contrast, let any user change their maturity settings.
 
@@ -193,7 +193,7 @@ Netflix allows up to five profiles per account, and each one can have its own na
       },
       {
         title: `Create a Kids profile`,
-        content: `Click on the profile icon in the top-right corner and select "Manage Profiles." Then click "Add Profile." Enter a name for your child and toggle on the "Kids" option — it appears as a switch labeled "Kid?" under the name field. Click Save. The profile is now set to show only age-appropriate content.`,
+        content: `Click on the profile icon in the top-right corner and select "Manage Profiles." Then click "Add Profile." Enter a name for your child and toggle on the "Kids" option. It appears as a switch labeled "Kid?" under the name field. Click Save. The profile is now set to show only age-appropriate content.`,
         tip: `Quick Tip: You can add a fun avatar to the profile so your child can easily recognize it on the profile selection screen.`,
       },
       {
@@ -260,7 +260,7 @@ The subscription costs $4.99 per month for Prime members and $7.99 per month wit
     thumbnailEmoji: ``,
     publishedAt: `2026-04-20`,
     difficulty: `Beginner`,
-    body: `Roblox is one of the most popular online platforms for children and teenagers, with hundreds of millions of accounts worldwide. It is not a single game but rather a platform where users can play millions of different games created by other users, as well as create their own games. Children typically love Roblox for its creativity and social elements — they can play with friends, explore new experiences, and build their own worlds.
+    body: `Roblox is one of the most popular online platforms for children and teenagers, with hundreds of millions of accounts worldwide. It is not a single game but rather a platform where users can play millions of different games created by other users, as well as create their own games. Children typically love Roblox for its creativity and social elements. They can play with friends, explore new experiences, and build their own worlds.
 
 For parents, the social and open-ended nature of Roblox raises some valid concerns. Players can chat with each other in real time, make purchases using the in-game currency called Robux, and encounter games created by strangers that may include mature themes. Roblox has built-in safety tools that address most of these concerns. But they need to be actively turned on by parents.
 
@@ -364,7 +364,7 @@ The parental controls are accessed through the Epic Games website rather than th
       {
         title: `Set a Parental Controls PIN`,
         content: `In the Parental Controls section, click "Enable Parental Controls" and enter a PIN of your choice. This PIN protects all parental settings — your child cannot change spending limits, chat settings, or mature content filters without it. Choose a number that is not obvious (avoid birth years or repeating digits).`,
-        warning: `Write your PIN down and store it in a safe place. Epic Games cannot recover a lost parental controls PIN — you would need to contact support with account verification information.`,
+        warning: `Write your PIN down and store it in a safe place. Epic Games cannot recover a lost parental controls PIN. You would need to contact support with account verification information.`,
       },
       {
         title: `Set a monthly spending limit`,
@@ -443,7 +443,7 @@ The subscription costs $12.99 per month or $59.99 per year, and a one-month free
     steps: [
       {
         title: `Download ABCmouse and start your free trial`,
-        content: `Search for "ABCmouse: Kids Learning Games" in the App Store or Google Play and download the app. Open it and tap "Start your FREE Trial" on the welcome screen. You will be asked to create an account with your email address and a password. Enter a valid payment method to start the trial — you will not be charged until the trial ends.`,
+        content: `Search for "ABCmouse: Kids Learning Games" in the App Store or Google Play and download the app. Open it and tap "Start your FREE Trial" on the welcome screen. You will be asked to create an account with your email address and a password. Enter a valid payment method to start the trial. You will not be charged until the trial ends.`,
         tip: `Quick Tip: The ABCmouse website at abcmouse.com offers the same content as the app and can be used on a home computer without downloading anything.`,
       },
       {
@@ -490,7 +490,7 @@ Duolingo is free to use with ads. A Duolingo Super subscription at $6.99 per mon
       },
       {
         title: `Set a daily practice goal`,
-        content: `Duolingo will ask how much time per day your child wants to practice. The options range from "Casual" (5 minutes) to "Intense" (20 minutes). For children, "Regular" (10 minutes) is a good starting point — it is achievable on a school day and effective for steady progress. The daily streak system will encourage your child to practice each day to keep their streak alive.`,
+        content: `Duolingo will ask how much time per day your child wants to practice. The options range from "Casual" (5 minutes) to "Intense" (20 minutes). For children, "Regular" (10 minutes) is a good starting point. It is achievable on a school day and effective for steady progress. The daily streak system will encourage your child to practice each day to keep their streak alive.`,
         tip: `Quick Tip: Making Duolingo part of a daily routine — such as after school or before dinner — is much more effective than longer but irregular sessions.`,
       },
       {
@@ -553,7 +553,7 @@ Scratch requires a free account to save and share work, but children can start c
     thumbnailEmoji: ``,
     publishedAt: `2026-04-20`,
     difficulty: `Beginner`,
-    body: `Code.org is a nonprofit organization with a mission to bring computer science education to every school in the world. Its website offers completely free, structured coding courses for students from kindergarten through high school, as well as for adults who want to learn programming fundamentals. Everything on Code.org is browser-based — there is nothing to download, and courses work on any device with a modern web browser.
+    body: `Code.org is a nonprofit organization with a mission to bring computer science education to every school in the world. Its website offers completely free, structured coding courses for students from kindergarten through high school, as well as for adults who want to learn programming fundamentals. Everything on Code.org is browser-based. There is nothing to download, and courses work on any device with a modern web browser.
 
 The most well-known offering from Code.org is the Hour of Code — a one-hour introduction to programming concepts wrapped in themes from popular movies and games, including Minecraft, Star Wars, Frozen, and more. These activities use the same drag-and-drop block coding approach as Scratch, making them approachable for children as young as 5 or 6.
 
@@ -609,7 +609,7 @@ Tynker works on iPad, Android tablets, iPhone, Android phones, and web browsers 
       },
       {
         title: `Add your child's profile`,
-        content: `After logging in, click "Add a Child" in your parent dashboard. Enter your child's name and age. Tynker will recommend a starting course based on the age you enter. You do not need to enter your child's personal information beyond a first name — you can use a nickname if you prefer.`,
+        content: `After logging in, click "Add a Child" in your parent dashboard. Enter your child's name and age. Tynker will recommend a starting course based on the age you enter. You do not need to enter your child's personal information beyond a first name. You can use a nickname if you prefer.`,
         tip: `Quick Tip: Tynker places children on a learning path automatically. But you can browse the full course catalog and assign any course you think your child would enjoy, regardless of the default recommendation.`,
       },
       {
@@ -618,7 +618,7 @@ Tynker works on iPad, Android tablets, iPhone, Android phones, and web browsers 
       },
       {
         title: `Try a Minecraft modding course (for Minecraft fans)`,
-        content: `In the course catalog, look for "Minecraft Modding" under the popular or featured courses. These courses require a Tynker premium subscription. If your child already plays Minecraft, this course type is particularly motivating — they will learn to write actual code that changes how Minecraft looks and behaves, which feels like a superpower to most kids who love the game.`,
+        content: `In the course catalog, look for "Minecraft Modding" under the popular or featured courses. These courses require a Tynker premium subscription. If your child already plays Minecraft, this course type is particularly motivating. They will learn to write actual code that changes how Minecraft looks and behaves, which feels like a superpower to most kids who love the game.`,
         warning: `Minecraft modding through Tynker requires Minecraft: Bedrock Edition. Make sure your child has a Bedrock Edition account before starting this course track.`,
       },
       {
@@ -652,7 +652,7 @@ Family Sharing works across all Apple devices: iPhone, iPad, iPod touch, Mac, an
       },
       {
         title: `Add family members`,
-        content: `Inside Family Sharing settings, tap "Add Member." You can invite family members who already have Apple IDs by entering their email addresses. They will receive an invitation on their iPhone that they need to accept. To create an Apple ID for a child under 13, tap "Create an Account for a Child" and follow the steps — you will need to verify your identity with a credit or debit card.`,
+        content: `Inside Family Sharing settings, tap "Add Member." You can invite family members who already have Apple IDs by entering their email addresses. They will receive an invitation on their iPhone that they need to accept. To create an Apple ID for a child under 13, tap "Create an Account for a Child" and follow the steps. You will need to verify your identity with a credit or debit card.`,
         tip: `Quick Tip: The family organizer (the person who creates the group) has the most control. Make sure the organizer role belongs to a parent, not a child.`,
       },
       {
@@ -685,7 +685,7 @@ Family Sharing works across all Apple devices: iPhone, iPad, iPod touch, Mac, an
 
 One of the most practical features is spending controls. Any Microsoft account can be linked to a payment method, which means a child could make purchases in the Xbox Store, Microsoft Store, or even some game in-app stores without your knowledge. Microsoft Family Safety allows you to set a monthly spending limit, require approval for purchases above a threshold, or block all spending entirely.
 
-The screen time feature is particularly well-designed — you can set separate time limits for each device type. For example, you might allow two hours on the Xbox per day but keep computer time unrestricted, or you can set different allowances for school days versus weekends. You can also set a schedule that completely locks devices during bedtime or school hours.
+The screen time feature is particularly well-designed. You can set separate time limits for each device type. For example, you might allow two hours on the Xbox per day but keep computer time unrestricted, or you can set different allowances for school days versus weekends. You can also set a schedule that completely locks devices during bedtime or school hours.
 
 Microsoft Family Safety is free for anyone with a Microsoft account. The Family Safety app is available on iPhone, iPad, Android, and through the web at family.microsoft.com. The parental monitoring features for Android devices and location tracking require the Family Safety app to be installed on the child's device.`,
     steps: [
@@ -696,7 +696,7 @@ Microsoft Family Safety is free for anyone with a Microsoft account. The Family 
       },
       {
         title: `Set up your family group`,
-        content: `On a web browser, go to account.microsoft.com and sign in to your own Microsoft account. Click "Family" in the left menu and then "Add a Family Member." Enter your child's Microsoft account email and click "Send Invite." Your child will receive an email — you may need to help them accept the invitation on their device. Once accepted, your child's account appears in your family dashboard.`,
+        content: `On a web browser, go to account.microsoft.com and sign in to your own Microsoft account. Click "Family" in the left menu and then "Add a Family Member." Enter your child's Microsoft account email and click "Send Invite." Your child will receive an email. You may need to help them accept the invitation on their device. Once accepted, your child's account appears in your family dashboard.`,
       },
       {
         title: `Set screen time limits`,

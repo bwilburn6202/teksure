@@ -23,7 +23,7 @@ If you have a Microsoft account from Xbox, Hotmail, Outlook.com, or a school, yo
     steps: [
       {
         title: `Go to Office.com and sign in`,
-        content: `Open your web browser and type office.com in the address bar, then press Enter. Click Sign In and enter your Microsoft account email and password. If you do not have a Microsoft account, click Create one — it is free and takes about two minutes.`,
+        content: `Open your web browser and type office.com in the address bar, then press Enter. Click Sign In and enter your Microsoft account email and password. If you do not have a Microsoft account, click Create one. It is free and takes about two minutes.`,
         tip: `If you have an Outlook.com, Hotmail, or Xbox email address, that is already a Microsoft account. Use those same login details here.`,
       },
       {
@@ -37,7 +37,7 @@ If you have a Microsoft account from Xbox, Hotmail, Outlook.com, or a school, yo
       },
       {
         title: `Save your work to OneDrive`,
-        content: `Word Online saves your document automatically every few seconds to your OneDrive cloud storage — you will see a small "Saved" message near the top of the screen when it saves. To rename your document, click on the default name (usually "Document1") at the very top of the page and type a new name, then press Enter. Your file will appear in your OneDrive folder the next time you visit office.com.`,
+        content: `Word Online saves your document automatically every few seconds to your OneDrive cloud storage. You will see a small "Saved" message near the top of the screen when it saves. To rename your document, click on the default name (usually "Document1") at the very top of the page and type a new name, then press Enter. Your file will appear in your OneDrive folder the next time you visit office.com.`,
       },
       {
         title: `Share your document with someone else`,
@@ -68,7 +68,7 @@ Excel Online covers all the everyday uses people rely on spreadsheets for: track
 
 There are a few things Excel Online does not do that the paid desktop version can: it does not support VBA macros (automated scripts), it has fewer chart customization options, and some advanced features like Power Query are not available. For most personal and small-business needs, though, Excel Online is more than enough.
 
-The best way to learn Excel is to start with a simple project. A monthly budget spreadsheet is a perfect first project — you will learn how to enter data, write formulas, and format your sheet all at once.`,
+The best way to learn Excel is to start with a simple project. A monthly budget spreadsheet is a perfect first project. You will learn how to enter data, write formulas, and format your sheet all at once.`,
     steps: [
       {
         title: `Open Excel Online at Office.com`,
@@ -157,7 +157,7 @@ When you are ready to present, you can run your slideshow right in the browser w
     thumbnailEmoji: ``,
     publishedAt: `2026-04-20`,
     difficulty: `Beginner`,
-    body: `Microsoft Outlook is one of the most widely used email and calendar programs in the world. It comes in two forms that can be confusing at first. Outlook.com is the free web-based email service — it works like Gmail but uses a @outlook.com or @hotmail.com address. The Outlook app is the full program that comes with a Microsoft 365 subscription and is also available as a free app on iPhone and Android.
+    body: `Microsoft Outlook is one of the most widely used email and calendar programs in the world. It comes in two forms that can be confusing at first. Outlook.com is the free web-based email service. It works like Gmail but uses a @outlook.com or @hotmail.com address. The Outlook app is the full program that comes with a Microsoft 365 subscription and is also available as a free app on iPhone and Android.
 
 If you want a free email address and calendar that you access at a website, Outlook.com is what you want. If you work for a company or school that uses Microsoft 365, your IT department has likely already set up an Outlook account for you and you use the Outlook app on your computer.
 
@@ -231,7 +231,7 @@ You will need a Microsoft account to use Clipchamp. If you are signed into Windo
       },
       {
         title: `Add background music`,
-        content: `Click the Music icon in the left panel (it looks like a musical note). You can browse Clipchamp's free built-in music library by mood or genre, or click Import media to use your own MP3 file. Drag the music track down to the timeline — it will appear on a separate row below your video clips. Drag the right edge of the music bar to shorten it to match your video length. Click on the music in the timeline and use the volume slider to adjust how loud the music is.`,
+        content: `Click the Music icon in the left panel (it looks like a musical note). You can browse Clipchamp's free built-in music library by mood or genre, or click Import media to use your own MP3 file. Drag the music track down to the timeline. It will appear on a separate row below your video clips. Drag the right edge of the music bar to shorten it to match your video length. Click on the music in the timeline and use the volume slider to adjust how loud the music is.`,
         tip: `A music volume around 30-40% usually works well so the audio from your video clips is still clearly audible over the background music.`,
       },
       {
@@ -306,7 +306,7 @@ Snipping Tool also has an annotation feature that lets you draw on your screensh
     difficulty: `Beginner`,
     body: `Microsoft Designer is a free AI-powered design tool from Microsoft. You can access it at designer.microsoft.com using a free Microsoft account. It lets you create images from text descriptions, design social media posts, make greeting cards, build flyers, and produce other visual content — without needing any graphic design experience or expensive software like Adobe Photoshop.
 
-The star feature is AI image generation. You type a description of what you want — called a prompt — and Designer creates a unique image based on your words. For example, you could type "a golden retriever sitting in a meadow of wildflowers at sunset" and Designer will generate several image options for you to choose from. These images are created on demand and do not exist anywhere else — they are made specifically from your description.
+The star feature is AI image generation. You type a description of what you want — called a prompt — and Designer creates a unique image based on your words. For example, you could type "a golden retriever sitting in a meadow of wildflowers at sunset" and Designer will generate several image options for you to choose from. These images are created on demand and do not exist anywhere else. They are made specifically from your description.
 
 Designer is built on DALL-E, the same AI image technology that powers Bing Image Creator. Microsoft has integrated it into Designer with an easy-to-use interface that also lets you add text, change backgrounds, resize for different platforms (Instagram, Facebook, greeting card, etc.), and make other adjustments without leaving the browser.
 
@@ -316,7 +316,7 @@ Images you create in Designer are yours to use for personal purposes. Be aware t
     steps: [
       {
         title: `Go to Microsoft Designer and sign in`,
-        content: `Open your browser and type designer.microsoft.com in the address bar. Click Sign In and enter your Microsoft account email and password. If you do not have a Microsoft account, click Create one for free — it takes about two minutes. Once signed in, you will see the Designer home screen with options to create different types of designs.`,
+        content: `Open your browser and type designer.microsoft.com in the address bar. Click Sign In and enter your Microsoft account email and password. If you do not have a Microsoft account, click Create one for free. It takes about two minutes. Once signed in, you will see the Designer home screen with options to create different types of designs.`,
       },
       {
         title: `Generate an AI image from a text prompt`,
@@ -445,7 +445,7 @@ If you have boxes of home movies from the 1980s and 1990s — birthday parties, 
 
 The good news is that you have several options for converting tapes to digital files, ranging from professional services that do all the work for you to do-it-yourself approaches that cost very little if you have the right equipment. The end result should be an MP4 video file that you can play on any modern device, upload to YouTube (privately or publicly), share with family, or archive on an external drive and in cloud storage.
 
-The format you want is MP4 — it is the most universally compatible video format for long-term storage and playback on phones, computers, smart TVs, and streaming devices. Avoid formats like AVI, MOV, or MPEG-2 for long-term storage unless you specifically need them for a particular use — MP4 is the safe, universal choice.
+The format you want is MP4. It is the most universally compatible video format for long-term storage and playback on phones, computers, smart TVs, and streaming devices. Avoid formats like AVI, MOV, or MPEG-2 for long-term storage unless you specifically need them for a particular use — MP4 is the safe, universal choice.
 
 The cost of digitizing varies widely. Professional mail-in services typically charge $15-$30 per tape. Retail services at Costco or Walgreens are similar. A local AV shop may be cheaper or more expensive depending on your area. DIY with your own equipment costs almost nothing if you already have a working VCR.`,
     steps: [
@@ -456,7 +456,7 @@ The cost of digitizing varies widely. Professional mail-in services typically ch
       },
       {
         title: `Option 1 — Use a retail or mail-in service`,
-        content: `The most convenient option is to send your tapes to a professional service. Costco Photo Center and Walgreens offer in-store tape digitization at similar prices. Mail-in services like Legacybox (legacybox.com) and Southtree (southtree.com) provide prepaid boxes — you pack your tapes, mail them, and receive digital files on a USB drive or via download. Prices typically run $15-$30 per tape. This option requires no equipment and gives professional results. But you must trust a company with your originals and wait 2-6 weeks for results.`,
+        content: `The most convenient option is to send your tapes to a professional service. Costco Photo Center and Walgreens offer in-store tape digitization at similar prices. Mail-in services like Legacybox (legacybox.com) and Southtree (southtree.com) provide prepaid boxes. You pack your tapes, mail them, and receive digital files on a USB drive or via download. Prices typically run $15-$30 per tape. This option requires no equipment and gives professional results. But you must trust a company with your originals and wait 2-6 weeks for results.`,
         warning: `Make a written inventory of every tape you send to a mail-in service, including a description of the content on each one. Reputable services have good track records. But you want documentation if anything is damaged or lost.`,
       },
       {
@@ -501,7 +501,7 @@ A protective case with a built-in stand is nearly essential — tablets without 
       {
         title: `Consider the Apple iPad for the most straightforward experience`,
         content: `The standard iPad (10th generation, 10.9-inch screen) costs around $349 and is often the easiest tablet for older adults to use, especially if they already have an iPhone. The interface is consistent, apps are high quality and well-designed, and Apple provides software updates for 6-7 years. The iPad is available in Apple Stores where staff can provide in-person setup help. For someone who is also an iPhone user, features like AirDrop, iMessage on the tablet, and iCloud photo sharing between devices work smoothly.`,
-        tip: `The Apple Pencil (sold separately, around $99 for the USB-C version) is a great addition for older adults who find the touch screen hard to tap precisely — it is much easier to control than a fingertip for small targets.`,
+        tip: `The Apple Pencil (sold separately, around $99 for the USB-C version) is a great addition for older adults who find the touch screen hard to tap precisely. It is much easier to control than a fingertip for small targets.`,
       },
       {
         title: `Consider the Samsung Galaxy Tab for Android users`,
@@ -514,7 +514,7 @@ A protective case with a built-in stand is nearly essential — tablets without 
       {
         title: `Choose a protective case with a stand`,
         content: `Whichever tablet you choose, buy a protective case before the tablet is even used. Look for a case that covers all four edges and the back, has raised edges to protect the screen if placed face-down, and includes a fold-out stand or kickstand so the tablet can be propped up on a table for hands-free video calls and movie watching. Cases for iPads and Samsung Galaxy Tabs are widely available on Amazon for $15-$40. A good case can mean the difference between a working tablet and a costly repair after a drop.`,
-        warning: `Avoid tempered glass screen protectors that are installed wet — they can trap bubbles and are harder to apply correctly. A good protective case with raised edges provides adequate screen protection for most users.`,
+        warning: `Avoid tempered glass screen protectors that are installed wet. They can trap bubbles and are harder to apply correctly. A good protective case with raised edges provides adequate screen protection for most users.`,
       },
     ],
   },
@@ -540,7 +540,7 @@ Most people who buy a Chromebook and use it within its intended scope — web br
     steps: [
       {
         title: `Check the AUE date before buying`,
-        content: `The most important thing to check before buying a Chromebook is its Auto Update Expiration (AUE) date. This is when Google stops providing security updates for that specific model. Visit google.com/intl/en/chromebook/auto-update and look up the model you are considering. You want a Chromebook with at least 5-6 years of updates remaining from today. Avoid buying older models with AUE dates in 2025 or 2026 — they will quickly become unsafe to use for banking and personal information.`,
+        content: `The most important thing to check before buying a Chromebook is its Auto Update Expiration (AUE) date. This is when Google stops providing security updates for that specific model. Visit google.com/intl/en/chromebook/auto-update and look up the model you are considering. You want a Chromebook with at least 5-6 years of updates remaining from today. Avoid buying older models with AUE dates in 2025 or 2026. They will quickly become unsafe to use for banking and personal information.`,
         warning: `Purchasing a Chromebook without checking the AUE date is one of the most common mistakes buyers make. A $150 Chromebook with an AUE date one year away is far worse value than a $300 Chromebook with eight years of updates remaining.`,
       },
       {
@@ -580,7 +580,7 @@ iPads run iPadOS, which is Apple's version of iOS designed for tablets. All iPad
 
 Android tablets run Google's Android operating system. The leader in Android tablets is Samsung, whose Galaxy Tab line ranges from the budget-friendly Tab A9 to the professional Galaxy Tab S10. Amazon's Fire tablets also run Android, but a customized version that does not have the standard Google Play Store. Android tablets from Samsung and Lenovo receive 4-5 years of software updates on current models.
 
-Neither platform is inherently better — they are genuinely different tools that suit different people. The best choice is the one that fits how you already use technology and what you plan to do with the tablet.`,
+Neither platform is inherently better. They are genuinely different tools that suit different people. The best choice is the one that fits how you already use technology and what you plan to do with the tablet.`,
     steps: [
       {
         title: `Start with your phone`,
@@ -664,7 +664,7 @@ Speed-wise, most 5G home internet customers experience download speeds of 100-30
 
 Starlink is especially valuable for people in rural areas, remote properties, farms, and other locations where cable, fiber, and 5G home internet are not available. In many such areas, Starlink is the only way to get reliable, modern broadband internet.
 
-The Starlink kit includes a satellite dish (the company has nicknamed it "Dishy McFlatface" — an informal name that stuck), a WiFi router, a base for mounting, and cables. Setup requires no professional installation in most cases — you position the dish with a clear view of the sky and plug in the router.
+The Starlink kit includes a satellite dish (the company has nicknamed it "Dishy McFlatface" — an informal name that stuck), a WiFi router, a base for mounting, and cables. Setup requires no professional installation in most cases. You position the dish with a clear view of the sky and plug in the router.
 
 Typical Starlink download speeds range from 100 to 200 Mbps, with some users seeing faster speeds in less congested areas. Upload speeds are typically 10-20 Mbps. This is fast enough for streaming 4K video, video calls, browsing, working from home, and most household uses. Latency is typically 20-60 milliseconds — much better than old satellite internet, which often had 600+ millisecond latency that made video calls feel choppy.
 
@@ -672,7 +672,7 @@ The cost of Starlink includes a one-time equipment fee (currently around $349 fo
     steps: [
       {
         title: `Check availability and order at Starlink.com`,
-        content: `Go to starlink.com in your browser and enter your home address to check if service is available at your location. In some areas Starlink has a waitlist. You can reserve your spot with a small refundable deposit. Once service is confirmed available, place your order — you will receive the dish kit by mail, typically within 1-2 weeks. The package contains the dish, a WiFi router, a power supply, and mounting hardware.`,
+        content: `Go to starlink.com in your browser and enter your home address to check if service is available at your location. In some areas Starlink has a waitlist. You can reserve your spot with a small refundable deposit. Once service is confirmed available, place your order. You will receive the dish kit by mail, typically within 1-2 weeks. The package contains the dish, a WiFi router, a power supply, and mounting hardware.`,
         tip: `Download the Starlink app (free on iPhone and Android) before your equipment arrives. It has a sky obstruction checker you can use to find the ideal spot for your dish before the hardware shows up.`,
       },
       {
@@ -690,7 +690,7 @@ The cost of Starlink includes a one-time equipment fee (currently around $349 fo
       },
       {
         title: `Monitor performance and get support through the app`,
-        content: `The Starlink app shows your real-time download and upload speeds, any outages or disruptions caused by obstructions, and your data usage. If you experience a problem, the app's support section provides troubleshooting steps specific to your dish and network. Starlink's customer support is primarily online through the app — there is no phone support number, so the app is your main resource for resolving issues.`,
+        content: `The Starlink app shows your real-time download and upload speeds, any outages or disruptions caused by obstructions, and your data usage. If you experience a problem, the app's support section provides troubleshooting steps specific to your dish and network. Starlink's customer support is primarily online through the app. There is no phone support number, so the app is your main resource for resolving issues.`,
       },
     ],
   },
@@ -725,7 +725,7 @@ T-Mobile offers a 15-day in-home trial. So you can set up the service, test the 
       },
       {
         title: `Unbox the gateway and find a good placement spot`,
-        content: `The T-Mobile gateway is a cylindrical white device about 8 inches tall. Unbox it and before plugging it in, download the T-Mobile Internet app (free on iPhone and Android). Open the app and go to the signal finder tool — it uses your gateway's location to show you which spots in your home have the strongest signal from the nearest T-Mobile tower. Generally, placing the gateway near an exterior wall or window facing the direction of the nearest tower gives the best results.`,
+        content: `The T-Mobile gateway is a cylindrical white device about 8 inches tall. Unbox it and before plugging it in, download the T-Mobile Internet app (free on iPhone and Android). Open the app and go to the signal finder tool. It uses your gateway's location to show you which spots in your home have the strongest signal from the nearest T-Mobile tower. Generally, placing the gateway near an exterior wall or window facing the direction of the nearest tower gives the best results.`,
         warning: `Placing the gateway in the center of your home, in a basement, or behind large metal objects greatly reduces the cellular signal strength and can result in much slower speeds. Signal placement is the most important factor in your experience with T-Mobile Home Internet.`,
       },
       {
@@ -779,7 +779,7 @@ If fiber is available at your address, it is generally worth switching from cabl
       {
         title: `Understand the internet type comparison at a glance`,
         content: `A quick comparison to help make the decision: Fiber offers the fastest speeds (up to multiple Gigabits), symmetric upload and download, highest reliability, and requires professional installation. Cable is widely available, typically 200-1,000 Mbps download but slow upload, and is reliable but can slow down during peak hours. DSL runs over phone lines, typically 10-100 Mbps, and is slower and less reliable than cable but available in many areas. 5G Home Internet uses cell towers, typically 100-300 Mbps, with no installation needed, but speeds can vary by location. Satellite (Starlink) is available anywhere with a sky view, typically 100-200 Mbps, and is ideal for rural areas with no other options.`,
-        tip: `If you live in an area where fiber is available, it is worth calling your current cable provider to ask for a price match or loyalty discount before switching — they sometimes offer significant discounts to retain customers who are considering leaving.`,
+        tip: `If you live in an area where fiber is available, it is worth calling your current cable provider to ask for a price match or loyalty discount before switching. They sometimes offer significant discounts to retain customers who are considering leaving.`,
       },
     ],
   },
@@ -896,7 +896,7 @@ Switching from one platform to the other is easier than it used to be. Most of t
       },
       {
         title: `Understand the price difference honestly`,
-        content: `A MacBook Air (M2 or M3 chip) starts at $999 and is genuinely one of the best laptops you can buy at that price for everyday use — exceptional battery life, fast performance, and a premium build quality. A Windows laptop at the same $999 price point will offer more RAM and storage in the spec sheet, but the overall quality varies by manufacturer. For budgets under $700, Windows is the practical choice — there are no Macs in that price range. For budgets of $1,000 or more, both platforms offer strong options and the choice comes down to preference and ecosystem fit.`,
+        content: `A MacBook Air (M2 or M3 chip) starts at $999 and is genuinely one of the best laptops you can buy at that price for everyday use — exceptional battery life, fast performance, and a premium build quality. A Windows laptop at the same $999 price point will offer more RAM and storage in the spec sheet, but the overall quality varies by manufacturer. For budgets under $700, Windows is the practical choice. There are no Macs in that price range. For budgets of $1,000 or more, both platforms offer strong options and the choice comes down to preference and ecosystem fit.`,
         tip: `If you are considering a Mac, check Apple's certified refurbished store at apple.com/shop/refurbished. MacBook Air and MacBook Pro models appear there regularly at 15-20% off with a full one-year Apple warranty.`,
       },
       {
@@ -910,7 +910,7 @@ Switching from one platform to the other is easier than it used to be. Most of t
       },
       {
         title: `Who benefits from each platform`,
-        content: `Choose a Mac if: you use an iPhone and want the ecosystem benefits, you do creative work (video editing, music production, graphic design) where Final Cut Pro, Logic Pro, or Adobe's Mac-optimized apps matter, you want a laptop with exceptional battery life and build quality at the $1,000+ price point, or you prefer low-maintenance computing and are willing to pay for it. Choose a Windows PC if: your budget is under $700, you use Android and Google services, you need specific Windows-only software, you want to do PC gaming, you need the most RAM and storage for your money, or your workplace uses Windows-based systems. Both are genuinely good choices — there is no wrong answer for general everyday computing.`,
+        content: `Choose a Mac if: you use an iPhone and want the ecosystem benefits, you do creative work (video editing, music production, graphic design) where Final Cut Pro, Logic Pro, or Adobe's Mac-optimized apps matter, you want a laptop with exceptional battery life and build quality at the $1,000+ price point, or you prefer low-maintenance computing and are willing to pay for it. Choose a Windows PC if: your budget is under $700, you use Android and Google services, you need specific Windows-only software, you want to do PC gaming, you need the most RAM and storage for your money, or your workplace uses Windows-based systems. Both are genuinely good choices. There is no wrong answer for general everyday computing.`,
       },
     ],
   },

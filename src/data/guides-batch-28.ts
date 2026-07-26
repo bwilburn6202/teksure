@@ -104,7 +104,7 @@ All devices need to be on the same Wi-Fi network for casting to work. The qualit
     thumbnailEmoji: '',
     publishedAt: '2026-04-19',
     difficulty: 'Beginner',
-    body: `Connecting a laptop to a TV is one of the most practical tech setups — you get a much larger screen for video calls, family photo slideshows, streaming movies, or doing anything you'd normally do on your laptop. All you need is an HDMI cable.
+    body: `Connecting a laptop to a TV is one of the most practical tech setups. You get a much larger screen for video calls, family photo slideshows, streaming movies, or doing anything you'd normally do on your laptop. All you need is an HDMI cable.
 
 HDMI (High-Definition Multimedia Interface) carries both video and audio through a single cable. Most TVs have at least two or three HDMI ports on the back or side. Most Windows laptops also have a full-size HDMI port. MacBooks and newer Windows ultrabooks often only have USB-C ports, so you'll need a small USB-C to HDMI adapter (costs about $10-15).
 
@@ -114,7 +114,7 @@ The connection is instant — no Wi-Fi needed, no passwords, no setup. You plug 
 
 Sound comes through the TV speakers automatically when you use HDMI, which is usually better than laptop speakers. You can still adjust the volume with your TV remote.
 
-HDMI cables come in different lengths — 6-foot cables work for most living room setups. Longer cables (10 or 15 feet) let you keep the laptop further from the TV. Standard HDMI cables from any store work fine — you don't need to pay extra for "high-speed" or "premium" cables for typical home use.`,
+HDMI cables come in different lengths — 6-foot cables work for most living room setups. Longer cables (10 or 15 feet) let you keep the laptop further from the TV. Standard HDMI cables from any store work fine. You don't need to pay extra for "high-speed" or "premium" cables for typical home use.`,
     steps: [
       {
         title: 'Get the Right Cable and Adapter',
@@ -265,7 +265,7 @@ Setup takes about five minutes: install the extension, start a watch party, and 
       },
       {
         title: 'Start a Watch Party',
-        content: 'Click the Teleparty icon in your browser toolbar. A small panel appears. Click "Start the Party." Teleparty generates a unique link for your party — it looks like a long web address. Copy that link.',
+        content: 'Click the Teleparty icon in your browser toolbar. A small panel appears. Click "Start the Party." Teleparty generates a unique link for your party. It looks like a long web address. Copy that link.',
       },
       {
         title: 'Share the Link With Family',
@@ -274,7 +274,7 @@ Setup takes about five minutes: install the extension, start a watch party, and 
       {
         title: 'Start Watching Together',
         content: `Once everyone has joined (you can see their names in the chat panel), press play. Teleparty keeps everyone's playback synchronized — if someone pauses, it pauses for everyone. Use the chat on the right to react and comment during the show.`,
-        warning: `Everyone needs their own active subscription to the streaming service. Teleparty is just a sync tool — it doesn't share account credentials.`,
+        warning: `Everyone needs their own active subscription to the streaming service. Teleparty is just a sync tool. It doesn't share account credentials.`,
       },
     ],
   },
@@ -566,7 +566,7 @@ Vanguard's app is separate from your employer's 401(k) portal if your employer u
     difficulty: 'Beginner',
     body: `Distracted driving is a serious safety issue, and phone notifications are one of the biggest culprits. iPhone has a built-in feature called Driving Focus that automatically silences notifications while you're driving — so your screen doesn't light up with texts, news alerts, and app notifications every few minutes behind the wheel.
 
-When Driving Focus is on, your iPhone still receives calls and messages — it just doesn't buzz, beep, or light up to notify you. People who text you can receive an automatic reply letting them know you're driving and will respond later. If something is truly urgent, they can press "Urgent" in that message to break through the silence.
+When Driving Focus is on, your iPhone still receives calls and messages. It just doesn't buzz, beep, or light up to notify you. People who text you can receive an automatic reply letting them know you're driving and will respond later. If something is truly urgent, they can press "Urgent" in that message to break through the silence.
 
 Driving Focus is part of Apple's broader "Focus" feature (introduced in iOS 15), which lets you set different notification rules for different situations — sleeping, working, exercising, or driving. Driving Focus specifically can activate automatically when iPhone detects you're in a moving vehicle.
 
@@ -705,7 +705,7 @@ The best habit is a brief pause before sharing anything shocking or outrageous: 
 
 The top section of the remote is a clickpad — it's a smooth surface you can swipe across to move the highlight on screen. And you can also press it like a physical button. Swipe up, down, left, or right to navigate menus. Click (press firmly in the center) to select. Press the outer ring of the clickpad to go up, down, left, or right without swiping.
 
-Along the right side are volume up and volume down buttons. If your TV is connected via HDMI or ARC, these control your TV volume directly — you may not need your TV remote for volume at all.
+Along the right side are volume up and volume down buttons. If your TV is connected via HDMI or ARC, these control your TV volume directly. You may not need your TV remote for volume at all.
 
 The Back button (arrow pointing left) goes back one screen, the same as the back button on a phone. The Home button (TV shape) takes you back to the Apple TV home screen from anywhere. The Mute button silences audio.
 
@@ -747,13 +747,13 @@ The remote also controls playback: single click the clickpad to pause/play. Clic
     thumbnailEmoji: '',
     publishedAt: '2026-04-19',
     difficulty: 'Beginner',
-    body: `Google Photos makes it straightforward to organize your photos into albums — custom collections you can name, curate, and share with anyone. This is different from the automatic albums Google Photos creates (like "Best of 2024" or "Trip to Florida") — you build these yourself, exactly the way you want.
+    body: `Google Photos makes it straightforward to organize your photos into albums — custom collections you can name, curate, and share with anyone. This is different from the automatic albums Google Photos creates (like "Best of 2024" or "Trip to Florida"). You build these yourself, exactly the way you want.
 
 An album can be anything: vacation photos, a grandchild's birthday party, holiday gatherings over the years, or a collection of garden photos. You can add photos from your camera roll at any time. Albums don't create copies of your photos — they're just organized views of photos that still live in your main library.
 
 Shared albums are a popular use for this feature: you create an album and share a link with family members. They can view all the photos, and if you allow it, they can also add their own photos to the album. This is great for family events where multiple people take photos — everyone can contribute to one shared collection.
 
-Shared album participants need a Google account to add photos but don't need one just to view photos in a shared album — you can share a link that anyone can open in a browser without signing in.
+Shared album participants need a Google account to add photos but don't need one just to view photos in a shared album. You can share a link that anyone can open in a browser without signing in.
 
 Google Photos also lets you create "Partner Sharing" — an automatic, ongoing sharing arrangement where every photo you take is also shared with one other person. This is similar to iCloud Shared Photo Library but between two people rather than a family group.
 
@@ -797,11 +797,11 @@ Albums sync across all your devices — create one on your phone and it appears 
 
 Focus Sessions uses a technique called the Pomodoro Technique — working in focused intervals (typically 25 minutes) followed by short breaks (5 minutes). Research has shown that structured work intervals with regular breaks can improve concentration and reduce mental fatigue compared to trying to work for hours without stopping.
 
-You don't need to follow the Pomodoro method strictly — you can set any session length from 5 minutes to 4 hours. The idea is to decide on a specific task, set a timer, and commit to working on only that task until the timer ends. Interruptions are minimized because notifications are silenced.
+You don't need to follow the Pomodoro method strictly. You can set any session length from 5 minutes to 4 hours. The idea is to decide on a specific task, set a timer, and commit to working on only that task until the timer ends. Interruptions are minimized because notifications are silenced.
 
 During a Focus Session, Windows can do several things automatically: turn on Do Not Disturb (silencing all notifications), set your Microsoft Teams or Skype status to "Focusing," and play a timer sound. After the session ends, a short break timer starts automatically if you've enabled it.
 
-The feature also integrates with Microsoft To Do (a free task management app) — you can see your tasks in the Focus Sessions interface and mark them complete without switching apps.
+The feature also integrates with Microsoft To Do (a free task management app). You can see your tasks in the Focus Sessions interface and mark them complete without switching apps.
 
 Focus Sessions is particularly helpful if you work from home and get easily pulled away by notifications, emails, or social media, or if you're working on a complex project that requires sustained attention.`,
     steps: [
@@ -820,11 +820,11 @@ Focus Sessions is particularly helpful if you work from home and get easily pull
       },
       {
         title: 'Link to Microsoft To Do (Optional)',
-        content: `Click "Get started" or the To Do integration button. Sign in with a Microsoft account to connect Microsoft To Do. Your task list then appears alongside the Focus timer — you can select a specific task to focus on, helping you stay intentional about what you're working on.`,
+        content: `Click "Get started" or the To Do integration button. Sign in with a Microsoft account to connect Microsoft To Do. Your task list then appears alongside the Focus timer. You can select a specific task to focus on, helping you stay intentional about what you're working on.`,
       },
       {
         title: 'Start and Use a Session',
-        content: `Click "Start focus session." The timer counts down. Windows enters Do Not Disturb mode — you won't see pop-up notifications. Work on your chosen task until the timer ends. When it finishes, a tone plays and a break timer starts (5 minutes by default). After the break, start the next session.`,
+        content: `Click "Start focus session." The timer counts down. Windows enters Do Not Disturb mode. You won't see pop-up notifications. Work on your chosen task until the timer ends. When it finishes, a tone plays and a break timer starts (5 minutes by default). After the break, start the next session.`,
         tip: 'You can pause a session mid-way by clicking Pause — useful if a genuine interruption arises. Click Resume to continue from where you paused.',
       },
     ],

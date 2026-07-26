@@ -24,7 +24,7 @@ TripIt works especially well for trips with multiple stops or bookings spread ac
       {
         title: `Create a free TripIt account`,
         content: `Go to tripit.com and click "Sign Up Free." You can register with your email address or sign in with a Google or Apple account. Choose whichever option feels most comfortable. After signing up, you will be taken to your TripIt dashboard, which starts empty and fills up as you add trips.`,
-        tip: `Quick Tip: If you sign in with Google, TripIt can request access to scan your Gmail for travel confirmations automatically — you will be asked about this during setup.`,
+        tip: `Quick Tip: If you sign in with Google, TripIt can request access to scan your Gmail for travel confirmations automatically. You will be asked about this during setup.`,
       },
       {
         title: `Forward your first booking confirmation`,
@@ -34,7 +34,7 @@ TripIt works especially well for trips with multiple stops or bookings spread ac
       {
         title: `Connect your email for automatic import (optional)`,
         content: `In the TripIt app or website, go to Settings and look for "Connected Accounts" or "Auto-Import." From here you can link Gmail, Outlook, or Yahoo Mail so that TripIt scans your inbox for travel confirmation emails on your behalf. Once connected, new bookings will appear in TripIt without any forwarding needed.`,
-        tip: `Quick Tip: TripIt only reads emails that look like travel confirmations — it does not browse through unrelated messages.`,
+        tip: `Quick Tip: TripIt only reads emails that look like travel confirmations. It does not browse through unrelated messages.`,
       },
       {
         title: `Download the TripIt app on your phone`,
@@ -195,7 +195,7 @@ The Hotels.com mobile app is reliable and well-designed. It stores all your book
 
 One of the things that sets Booking.com apart is the sheer volume of guest reviews. Because the site has been operating globally for decades, most properties have hundreds or even thousands of verified reviews from real guests. The review scores are shown prominently so you can quickly gauge how well-rated a property is before clicking through to read more.
 
-Booking.com's Genius loyalty program offers discounts to members who have completed at least two stays booked through the platform. Genius level 1 gives you 10 percent off select properties, and higher levels unlock additional perks like room upgrades or free breakfast. There is no annual fee — you reach Genius status automatically by booking and staying.
+Booking.com's Genius loyalty program offers discounts to members who have completed at least two stays booked through the platform. Genius level 1 gives you 10 percent off select properties, and higher levels unlock additional perks like room upgrades or free breakfast. There is no annual fee. You reach Genius status automatically by booking and staying.
 
 The "Map View" on Booking.com is especially useful when location matters. You can see exactly where each property sits in a city relative to attractions, transit stations, or the neighborhood you prefer. Filtering by map area helps avoid properties that look affordable but turn out to be far from where you want to be.
 
@@ -222,7 +222,7 @@ Most listings on Booking.com allow you to pay at the property rather than at the
       {
         title: `Manage your booking`,
         content: `After booking, log in to your Booking.com account and go to "Bookings" to see your reservation. From here you can view confirmation details, contact the property, modify dates (if the rate allows it), or cancel if needed. The Booking.com app stores all of this in one place for easy reference during your trip.`,
-        tip: `Quick Tip: Download the Booking.com app before your trip — it shows directions to the property and lets you message the host or front desk directly.`,
+        tip: `Quick Tip: Download the Booking.com app before your trip. It shows directions to the property and lets you message the host or front desk directly.`,
       },
     ],
   },
@@ -388,7 +388,7 @@ CLEAR stores your biometric data securely and does not share it with government 
       },
       {
         title: `Start your enrollment online`,
-        content: `Go to clearme.com and click "Get CLEAR." Enter your name, email address, and create a password. You will be asked to enter a payment method to start the membership — you can enroll in a free trial if one is available. The online enrollment captures some of your basic information, but your biometrics must be captured in person.`,
+        content: `Go to clearme.com and click "Get CLEAR." Enter your name, email address, and create a password. You will be asked to enter a payment method to start the membership. You can enroll in a free trial if one is available. The online enrollment captures some of your basic information, but your biometrics must be captured in person.`,
       },
       {
         title: `Complete enrollment at the airport`,
@@ -402,7 +402,7 @@ CLEAR stores your biometric data securely and does not share it with government 
       {
         title: `Use CLEAR at stadiums and venues`,
         content: `At participating sports venues and arenas, look for signs indicating a CLEAR entry lane. Open the CLEAR app on your phone and have your ticket pulled up. Scan your fingerprint at the CLEAR pod and show your ticket. And you can enter through the biometric lane. Some venues integrate CLEAR with their ticketing app so both steps happen at once.`,
-        tip: `Quick Tip: Download the CLEAR app before your first venue visit — it makes the biometric check faster when your phone is ready to go.`,
+        tip: `Quick Tip: Download the CLEAR app before your first venue visit. It makes the biometric check faster when your phone is ready to go.`,
       },
     ],
   },
@@ -418,7 +418,7 @@ CLEAR stores your biometric data securely and does not share it with government 
     difficulty: `Beginner`,
     body: `Priority Pass is a membership program that gives you access to airport lounges around the world, regardless of which airline you are flying or what class of service you purchased. With a Priority Pass membership, you can walk into a participating lounge and enjoy free food, beverages, comfortable seating, Wi-Fi, and a quieter environment than the main terminal.
 
-There are more than 1,300 Priority Pass lounges in airports across 148 countries. They are run by airlines, independent lounge operators, and hospitality companies. Access is available as long as you are a Priority Pass member — you do not need to be flying business class or have elite status with an airline.
+There are more than 1,300 Priority Pass lounges in airports across 148 countries. They are run by airlines, independent lounge operators, and hospitality companies. Access is available as long as you are a Priority Pass member. You do not need to be flying business class or have elite status with an airline.
 
 The most important thing to know is that many credit cards now include Priority Pass as a free cardholder benefit. Cards like the Chase Sapphire Reserve, American Express Platinum, and Capital One Venture X all include Priority Pass membership. If you carry one of these cards, you may already have access without realizing it.
 
@@ -519,7 +519,7 @@ Wise also offers a multi-currency account and a Wise debit card that lets you ho
       {
         title: `Create a Wise account`,
         content: `Go to wise.com and click "Register." You can sign up with your email address or through your Google or Apple account. Wise will ask for your full legal name and address during registration. To complete the identity verification process required for international transfers, you will need to upload a government-issued ID (driver's license or passport) and sometimes a selfie. Verification usually completes within a few hours.`,
-        tip: `Quick Tip: Have your ID ready before starting the registration process — it speeds things up considerably.`,
+        tip: `Quick Tip: Have your ID ready before starting the registration process. It speeds things up considerably.`,
       },
       {
         title: `Start a transfer`,
@@ -559,11 +559,11 @@ Hopper's "Watch" feature is one of its most popular tools. After you search for 
 
 One feature Hopper offers that airlines and other booking sites do not is "Price Freeze." For a small fee (usually $5 to $20), Hopper will lock in the current price for a flight for up to 14 days. This lets you think about a trip or wait for travel approval without risking the price jumping before you decide. If the price drops during the freeze period, you get the lower price.
 
-Hopper books directly within the app — you complete the entire purchase without being redirected to another website. Customer support for bookings made through Hopper is handled by Hopper's own team.`,
+Hopper books directly within the app. You complete the entire purchase without being redirected to another website. Customer support for bookings made through Hopper is handled by Hopper's own team.`,
     steps: [
       {
         title: `Download the Hopper app`,
-        content: `Hopper is only available as a mobile app — there is no desktop website for booking. Search for "Hopper" in the App Store (iPhone) or Google Play (Android) and install the free app. Open the app and create an account using your email address or sign in with Apple or Google.`,
+        content: `Hopper is only available as a mobile app. There is no desktop website for booking. Search for "Hopper" in the App Store (iPhone) or Google Play (Android) and install the free app. Open the app and create an account using your email address or sign in with Apple or Google.`,
         tip: `Quick Tip: Allow Hopper to send notifications during setup — this is how the app tells you when prices change or when you should book.`,
       },
       {
@@ -643,7 +643,7 @@ Skyscanner is free to use and does not charge any service fees. The prices you s
     difficulty: `Beginner`,
     body: `SeatGuru is a free tool that shows you detailed seat maps for airline flights. Before you choose your seat during booking — or before you pay an upgrade fee for what the airline calls a "premium" seat — SeatGuru can tell you which seats are actually worth picking and which ones have problems.
 
-The seat maps on SeatGuru use a color-coding system. Green seats are generally considered good — no obstructions, normal legroom, and a standard recline. Yellow seats have some drawback worth knowing about, like a window that is slightly off-center, reduced recline, or a seat that is slightly narrower than normal. Red seats have significant issues — they may be next to a galley with bright lights and noise, close to lavatories with foot traffic, or missing a window entirely.
+The seat maps on SeatGuru use a color-coding system. Green seats are generally considered good — no obstructions, normal legroom, and a standard recline. Yellow seats have some drawback worth knowing about, like a window that is slightly off-center, reduced recline, or a seat that is slightly narrower than normal. Red seats have significant issues. They may be next to a galley with bright lights and noise, close to lavatories with foot traffic, or missing a window entirely.
 
 The reviews and comments from real passengers are what make SeatGuru most useful. Under each seat on the map, you can click to read notes left by travelers who have sat there. These comments include practical details like whether a tray table is mounted in the armrest (limiting how much you can adjust it), whether the in-seat entertainment screen is positioned awkwardly, or whether the overhead bin nearby tends to fill up quickly.
 
@@ -726,11 +726,11 @@ Packr is available as a free app with basic functionality. A paid version adds w
 
 At the end of each day, Polarsteps shows you a timeline of the places you visited, along with a map that draws out your route. You can add photos and short diary entries to each stop, and the app calculates interesting statistics like total distance traveled, countries visited, and time spent at each location.
 
-Your trip is presented in a visual, shareable format that looks like a travel magazine. Friends and family can follow along in real time by viewing your trip on the Polarsteps website — you can share a link without requiring them to download the app or create an account.
+Your trip is presented in a visual, shareable format that looks like a travel magazine. Friends and family can follow along in real time by viewing your trip on the Polarsteps website. You can share a link without requiring them to download the app or create an account.
 
 One of Polarsteps' most popular features is the printed photo book. After your trip, Polarsteps can generate a professionally designed book featuring your route map, photos, diary entries, and travel statistics. You order it through the app and it arrives by mail. The books start at around $29 for a basic softcover and go up based on number of pages and paper quality.
 
-Battery life is a common concern with any GPS-tracking app. Polarsteps is designed to be more energy-efficient than continuous active tracking — it updates your location periodically rather than every second, which reduces battery drain a lot. Most users report losing an extra 10 to 15 percent of battery life per day compared to not running the app.`,
+Battery life is a common concern with any GPS-tracking app. Polarsteps is designed to be more energy-efficient than continuous active tracking. It updates your location periodically rather than every second, which reduces battery drain a lot. Most users report losing an extra 10 to 15 percent of battery life per day compared to not running the app.`,
     steps: [
       {
         title: `Download Polarsteps and create an account`,
@@ -832,7 +832,7 @@ Luggage is straightforward: one carry-on item and one bag stored under the bus a
       },
       {
         title: `Add luggage if needed`,
-        content: `One carry-on bag and one standard checked bag stored under the bus are included with your ticket. If you are bringing additional bags, add them during checkout — it is cheaper to add them in advance than at the stop. Oversized items like bikes or surfboards require a special luggage ticket.`,
+        content: `One carry-on bag and one standard checked bag stored under the bus are included with your ticket. If you are bringing additional bags, add them during checkout. It is cheaper to add them in advance than at the stop. Oversized items like bikes or surfboards require a special luggage ticket.`,
         warning: `Do not show up with extra bags you have not paid for. FlixBus staff check luggage at boarding, and on-the-spot fees are higher than pre-purchased rates.`,
       },
       {
@@ -858,7 +858,7 @@ Luggage is straightforward: one carry-on item and one bag stored under the bus a
     difficulty: `Beginner`,
     body: `Amtrak is the national passenger rail service in the United States, connecting more than 500 destinations across 46 states. Train travel offers a comfortable alternative to flying — no security lines, no bag fees on most routes, the ability to walk around during the journey, and often spectacular scenery that you cannot see from 35,000 feet.
 
-Amtrak ticket prices vary by train, route, and how far in advance you book. Coach seats are the most affordable option — they recline more than airline seats and come with a footrest. Business class (available on certain routes) adds amenities like complimentary non-alcoholic beverages and extra legroom. Sleeping car options are available on long-distance routes and include meals in the dining car as part of the fare.
+Amtrak ticket prices vary by train, route, and how far in advance you book. Coach seats are the most affordable option. They recline more than airline seats and come with a footrest. Business class (available on certain routes) adds amenities like complimentary non-alcoholic beverages and extra legroom. Sleeping car options are available on long-distance routes and include meals in the dining car as part of the fare.
 
 Amtrak often runs sales, particularly during holidays and slow travel periods. You can sign up for Amtrak's email alerts to receive notification of sales, or follow the official Amtrak Twitter account, which often announces fare promotions. The website also has a "Weekly Rail Sale" section showing discounted fares on specific routes.
 

@@ -161,7 +161,7 @@ On Android, open the Play Store, search for "Google Photos," and install it the 
 
 ## Signing In
 
-When Google Photos opens, tap "Sign in." Enter your Gmail address and password. If you do not have a Gmail account, tap "Create account" and follow the steps — it takes about 5 minutes.
+When Google Photos opens, tap "Sign in." Enter your Gmail address and password. If you do not have a Gmail account, tap "Create account" and follow the steps. It takes about 5 minutes.
 
 After signing in, Google Photos will ask permission to access your photos. Tap "Allow" or "Allow Access to All Photos." Without this, the app cannot back anything up.
 
@@ -200,7 +200,7 @@ On another phone or tablet, install Google Photos, sign in with your Gmail addre
       },
       {
         title: 'Open the app and sign in with Gmail',
-        content: 'Open Google Photos and tap "Sign in." Enter your Gmail address and password. If you do not have a Gmail account, tap "Create account" — it takes about 5 minutes and is free.',
+        content: 'Open Google Photos and tap "Sign in." Enter your Gmail address and password. If you do not have a Gmail account, tap "Create account". It takes about 5 minutes and is free.',
       },
       {
         title: 'Allow access to your photos',
@@ -438,7 +438,7 @@ Text messages have a file size limit — usually around 1 megabyte (MB) for stan
 1. **Use email instead of text.** Email handles larger file sizes better than most text messages.
 2. **Send through the Gmail app or iCloud Photos sharing link.** These services compress the photo automatically without noticeable quality loss.
 3. **Use iMessage (blue bubbles) if you have an iPhone.** iMessage can handle larger files than regular SMS (green bubbles). If both you and the recipient have iPhones, the message goes as iMessage automatically.
-4. **Share a Google Photos link.** Open the photo in Google Photos, tap the Share button, and tap "Create link." You can text or email that link to anyone — they tap the link to view the full-quality photo without any file size problem.
+4. **Share a Google Photos link.** Open the photo in Google Photos, tap the Share button, and tap "Create link." You can text or email that link to anyone. They tap the link to view the full-quality photo without any file size problem.
 5. **On iPhone, try the "Actual Size" option.** When you send a photo via Mail, a pop-up may ask about image size. Choosing "Medium" or "Small" sends a smaller file that arrives faster and is less likely to hit size limits.
 
 **Quick Tip:** If you want to share many photos at once — say, ten or more from a family event — a Google Photos album or an iCloud shared album is the easier approach. You create one shared link and everyone can view all the photos without receiving ten separate messages.
@@ -461,7 +461,7 @@ Text messages have a file size limit — usually around 1 megabyte (MB) for stan
       {
         title: 'Attach the photo to your email',
         content: 'In iPhone Mail, tap inside the email body, then tap the small photo/mountain icon that appears above your keyboard. In Gmail, tap the paperclip icon at the top of the compose window. Select your photo from the library. The photo will appear attached to the email. Tap Send.',
-        warning: 'If you do not see the attachment icon, scroll the toolbar above the keyboard left or right — it may be hidden off to the side.',
+        warning: 'If you do not see the attachment icon, scroll the toolbar above the keyboard left or right. It may be hidden off to the side.',
       },
       {
         title: 'Use the Share button in your Photos app (fastest method)',

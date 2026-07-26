@@ -164,7 +164,7 @@ After saving, always open the new contact record to check that the phone number 
 
 The app is especially useful when you need to keep digital copies of important papers — tax documents, insurance cards, medical records, receipts, or letters. Instead of keeping stacks of paper, you can scan them, save the PDFs, and find them later by searching on your phone or in your email.
 
-Microsoft Lens works in several modes depending on what you are scanning. Document mode is best for standard paper documents and letters — it trims to the edges of the paper automatically. Business card mode reads the card and can save the information as a contact. Whiteboard mode is designed for photographing handwritten notes on a whiteboard and cleans up the image a lot. Photo mode is for general pictures.
+Microsoft Lens works in several modes depending on what you are scanning. Document mode is best for standard paper documents and letters. It trims to the edges of the paper automatically. Business card mode reads the card and can save the information as a contact. Whiteboard mode is designed for photographing handwritten notes on a whiteboard and cleans up the image a lot. Photo mode is for general pictures.
 
 After scanning, you can save your scan in several formats. PDF is the most useful for documents you might share or print later. You can also save as a Word document, which allows editing the text. Or you can save as an image (JPEG) for simple storage.
 
@@ -315,7 +315,7 @@ The benefits that carry over to the other adult include free two-day shipping on
 
 Each adult in the household keeps their own completely separate Amazon account. Your order history, payment methods, browsing history, and Alexa settings remain private and separate. You are sharing the Prime benefits, not merging your accounts. This means you keep your own wish lists, your own purchase history, and your own recommendations.
 
-Child profiles are slightly different — they can be given access to age-appropriate content and spending controls can be set. Parents can review and approve purchases made by child accounts.
+Child profiles are slightly different. They can be given access to age-appropriate content and spending controls can be set. Parents can review and approve purchases made by child accounts.
 
 To set up Amazon Household, you need to start at amazon.com on a computer or in the Amazon app. Both adults need to verify their Amazon accounts during setup, which requires both people to be present or both to confirm the invitation from their own devices.
 
@@ -368,7 +368,7 @@ The key location for managing everything is the "Memberships and Subscriptions" 
 
 For Subscribe and Save product deliveries specifically, you have additional flexibility. You can pause individual items for one or more months, change the delivery frequency (for example, from monthly to every three months), change the quantity, or cancel the subscription entirely. Pausing is useful if you still want the item eventually but already have plenty in stock.
 
-One thing to be aware of: canceling a Subscribe and Save item is permanent — you would need to sign up again if you change your mind. Pausing is a better option if you are uncertain. You can pause for up to six months.
+One thing to be aware of: canceling a Subscribe and Save item is permanent. You would need to sign up again if you change your mind. Pausing is a better option if you are uncertain. You can pause for up to six months.
 
 Reviewing your subscriptions every few months is good practice. You may find items you are still receiving but no longer need, add-on channels you forgot about, or trial memberships that converted to paid subscriptions.`,
     steps: [
@@ -435,7 +435,7 @@ Several features on your iPhone consume battery faster than others. Keeping scre
       },
       {
         title: `Reduce screen brightness and screen-on time`,
-        content: `Your screen is one of the biggest battery consumers. Go to Settings > Display and Brightness and enable "Auto-Brightness" if it is not already on. This adjusts the screen automatically based on light conditions. Also consider enabling "Low Power Mode" (Settings > Battery) when your charge drops below 30% — it reduces background activity and can add hours of use time.`,
+        content: `Your screen is one of the biggest battery consumers. Go to Settings > Display and Brightness and enable "Auto-Brightness" if it is not already on. This adjusts the screen automatically based on light conditions. Also consider enabling "Low Power Mode" (Settings > Battery) when your charge drops below 30%. It reduces background activity and can add hours of use time.`,
       },
       {
         title: `Limit background app refresh`,
@@ -509,7 +509,7 @@ The PayPal app is available free on both iPhones and Android phones. Once you se
 
 Sending money to friends and family is free when you use your PayPal balance or a linked bank account. If you use a credit card, PayPal typically charges a small fee (currently around 2.9% plus a fixed fee per transaction). Receiving money from a friend or family member is free. Business payments may have different fee structures.
 
-One important distinction in the PayPal app: when you send money, you choose between "Friends and Family" and "Goods and Services." Friends and Family transfers have no seller protection and no buyer protection — they are meant for splitting a dinner bill, paying back a friend, or similar personal transactions. Goods and Services transfers include PayPal's buyer protection, which is appropriate when paying an online seller you do not personally know. Using the wrong category can affect whether you can get a refund if something goes wrong.
+One important distinction in the PayPal app: when you send money, you choose between "Friends and Family" and "Goods and Services." Friends and Family transfers have no seller protection and no buyer protection. They are meant for splitting a dinner bill, paying back a friend, or similar personal transactions. Goods and Services transfers include PayPal's buyer protection, which is appropriate when paying an online seller you do not personally know. Using the wrong category can affect whether you can get a refund if something goes wrong.
 
 Your PayPal balance sits in your PayPal account, separate from your bank account. You can spend it through PayPal or transfer it to your linked bank account at any time. Standard transfers to a bank account are free and take one to three business days. Instant transfers carry a small fee (currently 1.75% of the transfer, minimum 25 cents, maximum $25).`,
     steps: [
@@ -665,7 +665,7 @@ Adding money to your digital transit card is done through the transit system's a
 
 The Google Phone app, which comes pre-installed on most Android phones and is the default calling app on Pixel phones and many other Android devices, includes a feature called spam and call screening. When this is enabled, Google's systems compare incoming calls against a database of known spam numbers. If a call matches a known spam number, your phone will display a warning before you pick up — or can be set to silence the call automatically without ringing.
 
-The call screening feature goes a step further. When you receive an unknown call, you can tap "Screen call" instead of answering. Google Assistant answers on your behalf and asks the caller to state their name and reason for calling. You see the transcription in real time and can then decide whether to pick up, hang up, or mark it as spam. This is particularly useful for calls from numbers you do not recognize but that are not confirmed spam — it filters out robocalls without you having to speak.
+The call screening feature goes a step further. When you receive an unknown call, you can tap "Screen call" instead of answering. Google Assistant answers on your behalf and asks the caller to state their name and reason for calling. You see the transcription in real time and can then decide whether to pick up, hang up, or mark it as spam. This is particularly useful for calls from numbers you do not recognize but that are not confirmed spam. It filters out robocalls without you having to speak.
 
 Samsung phones running One UI have similar features through the Samsung Phone app, called "Smart Call" or "Caller ID and spam protection." The functionality is comparable — callers are checked against a database and warnings are displayed for suspected spam.
 
@@ -727,7 +727,7 @@ A good refurbished phone from a reputable source can provide years of reliable u
       {
         title: `Choose a reputable source`,
         content: `For the safest experience, buy from: Apple's Certified Refurbished store (apple.com/shop/refurbished), Samsung's Certified Re-Newed store, Amazon Renewed with the "Amazon Renewed Guarantee," Best Buy certified refurbished, or Back Market. These sources include warranties and inspection standards.`,
-        tip: `Apple Certified Refurbished iPhones are the gold standard — they are fully inspected, come with a new battery and case, and carry the same warranty as new iPhones. Check this source first before looking elsewhere.`,
+        tip: `Apple Certified Refurbished iPhones are the gold standard. They are fully inspected, come with a new battery and case, and carry the same warranty as new iPhones. Check this source first before looking elsewhere.`,
       },
       {
         title: `Check the battery health`,
@@ -736,7 +736,7 @@ A good refurbished phone from a reputable source can provide years of reliable u
       },
       {
         title: `Confirm the phone is carrier unlocked`,
-        content: `A carrier-unlocked phone works with any carrier's SIM card. A carrier-locked phone only works with one carrier (like AT&T or Verizon) unless you go through an unlocking process. Ask whether the phone is unlocked before buying. On iPhone, you can check by going to Settings > General > About and looking at "Carrier Lock" — it should say "No SIM Restrictions."`,
+        content: `A carrier-unlocked phone works with any carrier's SIM card. A carrier-locked phone only works with one carrier (like AT&T or Verizon) unless you go through an unlocking process. Ask whether the phone is unlocked before buying. On iPhone, you can check by going to Settings > General > About and looking at "Carrier Lock". It should say "No SIM Restrictions."`,
       },
       {
         title: `Verify the IMEI is clean`,
@@ -819,7 +819,7 @@ This separation matters for several reasons. Your employer may require a work pr
 
 Work Profile is available on Android phones running Android 5.0 or later, which covers virtually all modern Android devices.
 
-There are two ways Work Profile gets set up. If your employer uses mobile device management software (MDM), IT may set it up for you through an enrollment process — they send you a link or an app to install that creates the profile automatically. This is common in corporate and government environments.
+There are two ways Work Profile gets set up. If your employer uses mobile device management software (MDM), IT may set it up for you through an enrollment process. They send you a link or an app to install that creates the profile automatically. This is common in corporate and government environments.
 
 If you are self-employed or want to create a work profile for personal organization without IT involvement, some apps allow personal Work Profile creation. However, the most common use case is employer-managed, and the most significant feature (allowing IT to wipe the work profile without touching personal data) requires employer setup.
 
@@ -863,7 +863,7 @@ A key benefit is the ability to pause the work profile. Swiping down your notifi
     thumbnailEmoji: ``,
     publishedAt: `2026-04-19`,
     difficulty: `Beginner`,
-    body: `Most people know how to copy and paste — you copy something, then paste it once, and the copied item is gone the moment you copy something new. But Windows has a hidden feature called Clipboard History that saves everything you copy for later. So you can go back and paste any of the last 25 items you copied, in any order.
+    body: `Most people know how to copy and paste. You copy something, then paste it once, and the copied item is gone the moment you copy something new. But Windows has a hidden feature called Clipboard History that saves everything you copy for later. So you can go back and paste any of the last 25 items you copied, in any order.
 
 This feature is available in Windows 10 and Windows 11. It is turned off by default on some computers. So you may need to turn it on once before using it.
 
@@ -888,7 +888,7 @@ Text from passwords or sensitive information should not be copied and left in Cl
       },
       {
         title: `Paste from your history`,
-        content: `Click on any item in the Clipboard History panel to paste it into your current document or text field. You do not have to use items in order — you can click an item from three copies ago without it affecting anything else. The panel closes after you make a selection.`,
+        content: `Click on any item in the Clipboard History panel to paste it into your current document or text field. You do not have to use items in order. You can click an item from three copies ago without it affecting anything else. The panel closes after you make a selection.`,
       },
       {
         title: `Pin items you use frequently`,
@@ -897,7 +897,7 @@ Text from passwords or sensitive information should not be copied and left in Cl
       },
       {
         title: `Clear individual items or all history`,
-        content: `To remove a single item, hover over it in the Win+V panel, click the three-dot menu, and select "Delete." To clear all clipboard history at once, click "Clear all" at the top right of the panel. Pinned items are not cleared when you use "Clear all" — you must delete them individually.`,
+        content: `To remove a single item, hover over it in the Win+V panel, click the three-dot menu, and select "Delete." To clear all clipboard history at once, click "Clear all" at the top right of the panel. Pinned items are not cleared when you use "Clear all". You must delete them individually.`,
         warning: `If you copy a password or other sensitive information, delete it from Clipboard History right away after use. Click Win+V, find the item, click its three-dot menu, and select "Delete."`,
       },
       {

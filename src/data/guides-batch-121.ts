@@ -131,7 +131,7 @@ Never deposit a check you did not expect to receive. Scammers sometimes send rea
     steps: [
       {
         title: 'Sign the back of the check',
-        content: 'Before taking any photos, flip the check over and sign your name on the line at the back. Many banks also require you to write "For Mobile Deposit Only" under your signature. Check your bank\'s app for specific instructions — they are usually shown on the deposit screen.',
+        content: 'Before taking any photos, flip the check over and sign your name on the line at the back. Many banks also require you to write "For Mobile Deposit Only" under your signature. Check your bank\'s app for specific instructions. They are usually shown on the deposit screen.',
         warning: 'Do not skip the signature. A check without your endorsement on the back may be rejected or cause a delay.',
       },
       {
@@ -231,7 +231,7 @@ Review your auto-pay transactions once a month. Just because it is automatic doe
     steps: [
       {
         title: 'Choose which bills to automate',
-        content: 'Fixed-amount bills are the best candidates: mortgage or rent, car loan, internet service, phone plan, and streaming subscriptions. Bills that vary a lot each month (like credit cards) require more thought — you can auto-pay the minimum or the full balance, depending on your preference.',
+        content: 'Fixed-amount bills are the best candidates: mortgage or rent, car loan, internet service, phone plan, and streaming subscriptions. Bills that vary a lot each month (like credit cards) require more thought. You can auto-pay the minimum or the full balance, depending on your preference.',
       },
       {
         title: 'Set up auto-pay through the billing company',
@@ -317,7 +317,7 @@ Wire transfers are different from ACH transfers. A wire is faster (same day or n
 
 When you freeze your credit, existing accounts (credit cards, loans) still work normally. You can still use your current credit cards and your credit score is not affected. The freeze only prevents new accounts from being opened. If someone steals your Social Security Number and tries to open a credit card or take out a loan using your identity, the lender will run a credit check, hit a wall, and the application will be denied.
 
-There are three major credit reporting bureaus in the US: Equifax, Experian, and TransUnion. You need to freeze your credit at ALL THREE — they are separate companies and do not share freezes with each other.
+There are three major credit reporting bureaus in the US: Equifax, Experian, and TransUnion. You need to freeze your credit at ALL THREE. They are separate companies and do not share freezes with each other.
 
 The federal Fair Credit Reporting Act requires all three bureaus to provide free credit freezes. You can do it online in about 5 minutes per bureau.
 
@@ -328,7 +328,7 @@ When you need to apply for new credit (a car loan, a mortgage, a new credit card
       {
         title: 'Freeze at Equifax',
         content: 'Go to equifax.com/personal/credit-report-services/credit-freeze. Click "Place or Manage a Freeze." Create a free myEquifax account if you don\'t have one (you will need your Social Security Number and date of birth). Follow the prompts to activate the freeze. Save or print the confirmation PIN.',
-        tip: 'Quick Tip: Write down each confirmation PIN and PIN number in a safe place at home — you will need it to unfreeze later.',
+        tip: 'Quick Tip: Write down each confirmation PIN and PIN number in a safe place at home. You will need it to unfreeze later.',
       },
       {
         title: 'Freeze at Experian',
@@ -532,7 +532,7 @@ Zelle is perfect for: splitting a restaurant bill with family, paying back a fri
       {
         title: 'Enroll your email or phone number',
         content: 'Zelle will send a one-time verification code to the email or phone number you provide. Enter the code to complete enrollment. This only needs to be done once.',
-        tip: 'Quick Tip: Use your mobile phone number rather than email for enrollment — it tends to result in faster transfers and fewer issues.',
+        tip: 'Quick Tip: Use your mobile phone number rather than email for enrollment. It tends to result in faster transfers and fewer issues.',
       },
       {
         title: 'Send money to someone',
@@ -541,7 +541,7 @@ Zelle is perfect for: splitting a restaurant bill with family, paying back a fri
       },
       {
         title: 'Receive money',
-        content: 'When someone sends you money via Zelle to your enrolled phone number or email, you will get a notification. If you are already enrolled, the money deposits directly into your bank account — you do not need to do anything to accept it. If you are not enrolled, the sender\'s bank sends you instructions to enroll and claim the payment within 14 days.',
+        content: 'When someone sends you money via Zelle to your enrolled phone number or email, you will get a notification. If you are already enrolled, the money deposits directly into your bank account. You do not need to do anything to accept it. If you are not enrolled, the sender\'s bank sends you instructions to enroll and claim the payment within 14 days.',
       },
       {
         title: 'Know when NOT to use Zelle',
@@ -677,7 +677,7 @@ One important note: once direct deposit is set up, it usually takes one pay peri
       {
         title: 'For Social Security — set up through your My Social Security account',
         content: 'Go to ssa.gov and sign into (or create) a free "my Social Security" account. Under "Direct Deposit," click "Start or Update Direct Deposit." Enter your bank routing number, account number, and account type. Changes take 30-60 days to take effect. You can also call 1-800-772-1213 to make the change by phone.',
-        tip: 'Quick Tip: The SSA strongly encourages direct deposit — it protects your payment from mail theft. And you get access to your money on the payment day even if it falls on a Saturday.',
+        tip: 'Quick Tip: The SSA strongly encourages direct deposit. It protects your payment from mail theft. And you get access to your money on the payment day even if it falls on a Saturday.',
       },
       {
         title: 'For tax refunds — enter bank info when filing',
@@ -771,7 +771,7 @@ The full credit report (which is different from the score) shows every account y
       },
       {
         title: 'Use Credit Karma for ongoing monitoring',
-        content: 'Go to creditkarma.com and create a free account. Enter your Social Security Number to allow Credit Karma to pull your credit file. Credit Karma is genuinely free — they make money from credit product offers, not from you. You will see your TransUnion and Equifax scores and a report of your credit accounts.',
+        content: 'Go to creditkarma.com and create a free account. Enter your Social Security Number to allow Credit Karma to pull your credit file. Credit Karma is genuinely free. They make money from credit product offers, not from you. You will see your TransUnion and Equifax scores and a report of your credit accounts.',
       },
       {
         title: 'Review your credit report for errors',
@@ -825,7 +825,7 @@ You will need your Social Security Number, a government-issued ID (driver's lice
       },
       {
         title: 'Set up your online access and track interest',
-        content: 'Create a username and password for the new account and log in to verify everything looks right. Check back monthly to see the interest credited to your account. The interest you earn is taxable income — you will receive a 1099-INT form from the bank in January for tax filing.',
+        content: 'Create a username and password for the new account and log in to verify everything looks right. Check back monthly to see the interest credited to your account. The interest you earn is taxable income. You will receive a 1099-INT form from the bank in January for tax filing.',
         tip: 'Quick Tip: Set up a recurring monthly transfer from your checking account (even $25 or $50) to build your savings automatically.',
       },
     ],
@@ -903,7 +903,7 @@ Most accounts can be closed online, by phone, or in person at a branch. Some ban
     steps: [
       {
         title: 'Make a list of all automatic payments and direct deposits',
-        content: 'Review 3 months of statements for recurring transactions: monthly bills on auto-pay, subscription services, direct deposits from your employer or Social Security, and any transfers you set up. Write down every one of them — you must redirect all of these before closing the account.',
+        content: 'Review 3 months of statements for recurring transactions: monthly bills on auto-pay, subscription services, direct deposits from your employer or Social Security, and any transfers you set up. Write down every one of them. You must redirect all of these before closing the account.',
       },
       {
         title: 'Open your new account first',

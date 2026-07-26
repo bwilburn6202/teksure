@@ -63,7 +63,7 @@ export const guidesBatch270: Guide[] = [
     steps: [
       {
         title: "Pick a cruise line known for accessibility",
-        content: "The four lines with the best track record for mobility-impaired seniors in 2026 are Royal Caribbean, Princess, Holland America, and Celebrity. Avoid smaller adventure lines and most river cruises in Europe — they have narrow doors, steep gangways, and few accessible cabins. Look at the cruise line website for an Accessibility or Special Needs section. If it has a dedicated phone number and a downloadable form, that is a sign the line takes mobility seriously.",
+        content: "The four lines with the best track record for mobility-impaired seniors in 2026 are Royal Caribbean, Princess, Holland America, and Celebrity. Avoid smaller adventure lines and most river cruises in Europe. They have narrow doors, steep gangways, and few accessible cabins. Look at the cruise line website for an Accessibility or Special Needs section. If it has a dedicated phone number and a downloadable form, that is a sign the line takes mobility seriously.",
         tip: "Quick Tip: Avoid older Carnival ships built before 2010 — their accessible cabins are smaller and harder to maneuver than the newer fleet.",
       },
       {
@@ -212,7 +212,7 @@ export const guidesBatch270: Guide[] = [
       },
       {
         title: "Plan for ground transportation and the hotel",
-        content: "Coordinate with the rental company so the POC is recharged at the destination — most hotels and Airbnbs have standard outlets that work fine. If you also need oxygen tanks at the destination (some patients need both POC for travel and tanks at the hotel), the rental company can deliver liquid oxygen or M6 tanks directly to your hotel. Tell the hotel front desk that you have oxygen equipment in the room — they may need to put a small sticker on the door for the housekeeping team. Open the curtains a bit during oxygen use so the room ventilates.",
+        content: "Coordinate with the rental company so the POC is recharged at the destination — most hotels and Airbnbs have standard outlets that work fine. If you also need oxygen tanks at the destination (some patients need both POC for travel and tanks at the hotel), the rental company can deliver liquid oxygen or M6 tanks directly to your hotel. Tell the hotel front desk that you have oxygen equipment in the room. They may need to put a small sticker on the door for the housekeeping team. Open the curtains a bit during oxygen use so the room ventilates.",
         warning: "Never smoke or allow open flames in a room with oxygen. The fire risk is real, and most insurance policies do not cover oxygen-related fires.",
       },
       {

@@ -108,7 +108,7 @@ export const guidesBatch260: Guide[] = [
       },
       {
         title: "Reduce stimulation and use simple distractions",
-        content: "Turn off background TV. Lower the volume of conversations. Move your spouse to a quieter room. Then offer a calming, familiar activity: folding a basket of warm towels, sorting buttons, looking at a photo album, listening to a playlist of their favorite music from age 18 to 25. The goal is not to entertain — it is to give the agitated brain a gentle, repetitive task that helps it settle.",
+        content: "Turn off background TV. Lower the volume of conversations. Move your spouse to a quieter room. Then offer a calming, familiar activity: folding a basket of warm towels, sorting buttons, looking at a photo album, listening to a playlist of their favorite music from age 18 to 25. The goal is not to entertain. It is to give the agitated brain a gentle, repetitive task that helps it settle.",
       },
       {
         title: "Take care of yourself during the witching hour",

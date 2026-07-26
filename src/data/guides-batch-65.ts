@@ -5,7 +5,7 @@ export const guidesBatch65: Guide[] = [
     slug: `pandora-radio-guide`,
     title: `How to Listen to Free Music with Pandora`,
     excerpt: `Pandora lets you stream free music by artist or genre — no credit card needed to get started.`,
-    body: `Pandora is one of the oldest music streaming services in the United States. And it remains one of the most beginner-friendly options available today. Unlike services that require you to pick every song yourself, Pandora works like a smart radio station — you tell it an artist or song you like. And it builds a continuous stream of music with a similar sound.
+    body: `Pandora is one of the oldest music streaming services in the United States. And it remains one of the most beginner-friendly options available today. Unlike services that require you to pick every song yourself, Pandora works like a smart radio station. You tell it an artist or song you like. And it builds a continuous stream of music with a similar sound.
 
 The free version of Pandora is supported by short audio and display ads, similar to how traditional radio works. You do not need a credit card or any payment information to create an account and start listening. All you need is an email address and a password.
 
@@ -28,11 +28,11 @@ Pandora works on Amazon Echo speakers (ask Alexa to play your Pandora station), 
       {
         title: `Download the Pandora app or go to pandora.com`,
         content: `On iPhone or iPad, open the App Store and search for "Pandora." On Android, open the Google Play Store and search for "Pandora." Tap Install or Get, then open the app. You can also visit pandora.com in any web browser on your computer.`,
-        tip: `The app is free to download — you will not be charged anything for installing it.`,
+        tip: `The app is free to download. You will not be charged anything for installing it.`,
       },
       {
         title: `Create your free account`,
-        content: `Tap "Sign Up Free" and enter your email address, a password, your birth year, and your ZIP code. Pandora uses your ZIP code only to comply with music licensing rules — it does not share your location. No credit card is required for the free tier.`,
+        content: `Tap "Sign Up Free" and enter your email address, a password, your birth year, and your ZIP code. Pandora uses your ZIP code only to comply with music licensing rules. It does not share your location. No credit card is required for the free tier.`,
       },
       {
         title: `Create your first station`,
@@ -61,11 +61,11 @@ Pandora works on Amazon Echo speakers (ask Alexa to play your Pandora station), 
 
 SiriusXM offers hundreds of channels covering every taste: commercial-free music organized by decade and genre, live sports play-by-play, national news (Fox News, CNN, MSNBC), talk radio, comedy, and exclusive shows from popular hosts. The channel lineup is the same whether you are listening in the car or through the app.
 
-To get started on your phone, download the SiriusXM app from the App Store or Google Play Store. It is free to download. Once installed, tap "Sign In" and enter the email address and password tied to your SiriusXM account. If you have never set up an online account, visit siriusxm.com, click "Sign In," and choose "Create Account" — you will need your radio ID (found on your car's SiriusXM radio display or your billing statement) to link the account.
+To get started on your phone, download the SiriusXM app from the App Store or Google Play Store. It is free to download. Once installed, tap "Sign In" and enter the email address and password tied to your SiriusXM account. If you have never set up an online account, visit siriusxm.com, click "Sign In," and choose "Create Account". You will need your radio ID (found on your car's SiriusXM radio display or your billing statement) to link the account.
 
 Once you are logged in, the app shows all available channels in a browsable list organized by category. Tap any channel to start listening. You can mark channels as favorites so they appear at the top of your list. The search feature lets you find specific shows, hosts, or channel names by name.
 
-On a computer, go to siriusxm.com and click "Listen Online" after logging in. No app download is needed — it plays through your browser.
+On a computer, go to siriusxm.com and click "Listen Online" after logging in. No app download is needed. It plays through your browser.
 
 If you have a SiriusXM Platinum subscription, you can pause live broadcasts and rewind up to 30 minutes. Standard subscriptions play channels in real time only.
 
@@ -112,11 +112,11 @@ New subscribers who do not have a vehicle subscription can sign up for a streami
     slug: `tunein-guide`,
     title: `How to Listen to Live Radio and Podcasts with TuneIn`,
     excerpt: `TuneIn streams thousands of live radio stations from around the world — plus news, sports, and podcasts, free.`,
-    body: `TuneIn is a free service that lets you listen to real radio stations from across the United States and around the world, all through your phone, computer, or smart speaker. Unlike Pandora or Spotify, TuneIn is not a music recommendation engine — it streams actual broadcast radio stations live, exactly as they are airing at this moment. That means you can listen to your hometown station while traveling, or tune into any AM or FM station in the country without a radio.
+    body: `TuneIn is a free service that lets you listen to real radio stations from across the United States and around the world, all through your phone, computer, or smart speaker. Unlike Pandora or Spotify, TuneIn is not a music recommendation engine. It streams actual broadcast radio stations live, exactly as they are airing at this moment. That means you can listen to your hometown station while traveling, or tune into any AM or FM station in the country without a radio.
 
 The free version of TuneIn is supported by brief ads. TuneIn Premium ($9.99 per month) removes ads and adds access to live play-by-play sports broadcasts from the NFL, MLB, NBA, and NHL, as well as commercial-free news channels from CNN, Fox News, MSNBC, and others.
 
-To start, download the TuneIn Radio app from the App Store (iPhone/iPad) or Google Play (Android). Once installed, open the app — you do not need an account to start listening. You can browse featured stations right away.
+To start, download the TuneIn Radio app from the App Store (iPhone/iPad) or Google Play (Android). Once installed, open the app. You do not need an account to start listening. You can browse featured stations right away.
 
 To find a specific station, tap the search icon and type either the station's call letters (for example, WBBM or KCRW), a city name, or a topic like "country music" or "Spanish news." TuneIn will show matching stations and you can tap any one to start listening.
 
@@ -223,7 +223,7 @@ To use GoodRx, go to goodrx.com in any browser or download the free GoodRx app f
 
 Type the name of your medication in the search box. Include the dosage and quantity you need — for example, "lisinopril 10mg 30 tablets." GoodRx will show a list of nearby pharmacies and the price you would pay with the GoodRx coupon at each one. Prices vary a lot between pharmacies, so it pays to compare. Costco, Walmart, and Kroger pharmacies often offer some of the lowest prices.
 
-When you find the best price, tap "Get Free Coupon." The coupon will appear on screen — you can show it on your phone screen or print it out. At the pharmacy, tell the pharmacist you have a GoodRx coupon before they ring up your prescription. They will enter the BIN, PCN, and Group numbers from the coupon into their system, and the discounted price will apply.
+When you find the best price, tap "Get Free Coupon." The coupon will appear on screen. You can show it on your phone screen or print it out. At the pharmacy, tell the pharmacist you have a GoodRx coupon before they ring up your prescription. They will enter the BIN, PCN, and Group numbers from the coupon into their system, and the discounted price will apply.
 
 GoodRx Gold is a paid membership (around $9.99 per month per family) that offers even deeper discounts at select pharmacies.
 
@@ -255,7 +255,7 @@ GoodRx can be used for family members and pets as well. The same process applies
       },
       {
         title: `Compare GoodRx vs. your insurance`,
-        content: `GoodRx sometimes beats your insurance copay, especially for generic medications. You can use whichever is cheaper — you are not required to use your insurance every time. If your insurance copay is $25 but GoodRx shows $6 at a nearby pharmacy, choose GoodRx for that fill.`,
+        content: `GoodRx sometimes beats your insurance copay, especially for generic medications. You can use whichever is cheaper. You are not required to use your insurance every time. If your insurance copay is $25 but GoodRx shows $6 at a nearby pharmacy, choose GoodRx for that fill.`,
       },
     ],
   },
@@ -263,7 +263,7 @@ GoodRx can be used for family members and pets as well. The same process applies
     slug: `amazon-pharmacy-setup`,
     title: `How to Use Amazon Pharmacy for Prescription Delivery`,
     excerpt: `Amazon Pharmacy delivers your medications straight to your door, often with same-day or next-day options.`,
-    body: `Amazon Pharmacy is a full-service pharmacy that lets you order prescription medications online and have them delivered to your home. It operates like any licensed pharmacy — it accepts most insurance plans, including Medicare Part D and many commercial plans — but you manage everything through the Amazon website or app instead of visiting a store.
+    body: `Amazon Pharmacy is a full-service pharmacy that lets you order prescription medications online and have them delivered to your home. It operates like any licensed pharmacy. It accepts most insurance plans, including Medicare Part D and many commercial plans — but you manage everything through the Amazon website or app instead of visiting a store.
 
 To use Amazon Pharmacy, you need an existing Amazon account. If you already shop on Amazon, you use the same login. Go to amazon.com/pharmacy in your browser or look for "Pharmacy" in the Amazon app.
 
@@ -271,7 +271,7 @@ The first step is to add your insurance information to your Amazon Pharmacy prof
 
 To transfer a prescription from another pharmacy, tap "Transfer Prescriptions" and provide your current pharmacy's name and phone number, along with your medication information. Amazon contacts your pharmacy directly to handle the transfer. This usually takes one to two business days.
 
-For a new prescription from your doctor, ask your doctor to send it electronically to "Amazon Pharmacy" — they can find it in their e-prescribing system — or have them print it and you can mail or upload it.
+For a new prescription from your doctor, ask your doctor to send it electronically to "Amazon Pharmacy". They can find it in their e-prescribing system — or have them print it and you can mail or upload it.
 
 Amazon Prime members can sign up for RxPass, a $5 per month add-on that covers unlimited 30-day supplies of over 50 common generic medications. Medications covered include many for blood pressure, cholesterol, diabetes, anxiety, and other common conditions. If you take multiple generics, RxPass can save significant money.
 
@@ -329,7 +329,7 @@ When you find a time that works, click it and follow the steps to create a Zocdo
 
 Zocdoc sends reminder notifications by email or text before your appointment. If your plans change, you can cancel or reschedule directly through the app or website.
 
-Before your visit, prepare by writing down your current medications, any symptoms or concerns you want to discuss, and questions for the doctor. Zocdoc is a scheduling tool — it does not replace your actual conversation with the provider.
+Before your visit, prepare by writing down your current medications, any symptoms or concerns you want to discuss, and questions for the doctor. Zocdoc is a scheduling tool. It does not replace your actual conversation with the provider.
 
 Not every doctor in your area will be listed on Zocdoc. The service includes only providers who have chosen to list their availability on the platform. If your preferred doctor is not on Zocdoc, you will still need to call their office directly.`,
     category: `health-tech`,
@@ -488,7 +488,7 @@ When approved, the TSA mails you a Known Traveler Number (KTN). This is a unique
 
 Global Entry is a related CBP program that costs $100 for five years and includes TSA PreCheck automatically. It adds the benefit of using automated kiosks when re-entering the U.S. from international travel, skipping the long customs and passport control lines. If you travel internationally even sometimes, Global Entry is the better value.
 
-CLEAR is a separate, private service (not government-operated) that uses biometrics to verify your identity at the security lane entrance. CLEAR does not replace TSA PreCheck — you can use both together for the fastest airport experience.`,
+CLEAR is a separate, private service (not government-operated) that uses biometrics to verify your identity at the security lane entrance. CLEAR does not replace TSA PreCheck. You can use both together for the fastest airport experience.`,
     category: `government-civic`,
     tags: [`TSA PreCheck`, `travel`, `airport security`, `trusted traveler`],
     thumbnailEmoji: ``,
@@ -507,7 +507,7 @@ CLEAR is a separate, private service (not government-operated) that uses biometr
       },
       {
         title: `Attend your appointment and bring the right documents`,
-        content: `Bring one government-issued photo ID (driver's license or passport) AND one proof of U.S. citizenship (U.S. passport, birth certificate, or naturalization certificate). A staff member will scan your fingerprints and review your documents. No study or preparation is needed — it is a quick, friendly process.`,
+        content: `Bring one government-issued photo ID (driver's license or passport) AND one proof of U.S. citizenship (U.S. passport, birth certificate, or naturalization certificate). A staff member will scan your fingerprints and review your documents. No study or preparation is needed. It is a quick, friendly process.`,
       },
       {
         title: `Wait for your Known Traveler Number (KTN)`,
@@ -562,7 +562,7 @@ IRS Direct File is an even simpler option now available in many states. It is bu
       },
       {
         title: `Complete the interview and review your return`,
-        content: `The software guides you through a series of questions — it is a lot like an interview. Answer each question based on your actual documents. When done, review the completed return carefully before submitting. Pay attention to your refund or balance-due amount.`,
+        content: `The software guides you through a series of questions. It is a lot like an interview. Answer each question based on your actual documents. When done, review the completed return carefully before submitting. Pay attention to your refund or balance-due amount.`,
       },
       {
         title: `E-file and set up direct deposit`,
@@ -644,7 +644,7 @@ To ask Alexa something, say "Alexa" followed by your request. For example: "Alex
 
 Video calling is one of the most popular features. You can call anyone who has an Echo device or the free Alexa app on their phone. Say "Alexa, call [contact name]." The other person's phone or Echo will ring, and when they answer you can see and hear each other. This works well for staying in touch with family members who live far away.
 
-The Drop In feature allows family members to connect instantly without waiting for you to answer — it works like a video intercom. You can enable or restrict Drop In in the Alexa app settings.
+The Drop In feature allows family members to connect instantly without waiting for you to answer. It works like a video intercom. You can enable or restrict Drop In in the Alexa app settings.
 
 To display a slideshow of your own photos on the Echo Show's screen, go to amazon.com/photos, create a free Amazon Photos account, and upload your pictures. Then ask "Alexa, show my photos" and your family photos will rotate on the screen like a digital picture frame.
 
@@ -744,7 +744,7 @@ For families with children, Amazon Kids (formerly FreeTime) provides a curated, 
     excerpt: `UPS My Choice lets you track packages, redirect deliveries, and choose when packages arrive — all from your phone.`,
     body: `UPS My Choice is a free service from UPS that gives you more control over your incoming deliveries. Instead of waiting and hoping a package arrives while you are home, UPS My Choice sends you advance alerts, lets you see which packages are coming before they arrive, and allows you to redirect or reschedule deliveries from your phone or computer.
 
-The service is available to anyone in the United States with a home address — you do not need a UPS account number or a business account. Sign up at ups.com/mychoice or download the UPS Mobile app from the App Store or Google Play.
+The service is available to anyone in the United States with a home address. You do not need a UPS account number or a business account. Sign up at ups.com/mychoice or download the UPS Mobile app from the App Store or Google Play.
 
 During registration, you enter your home address and verify your identity. UPS then connects your address to the UPS shipping system, so when any shipper sends a package to your address via UPS, you automatically receive tracking notifications before it arrives.
 
@@ -847,7 +847,7 @@ FreeTaxUSA is an IRS-authorized e-file provider, meaning the IRS officially acce
 
 To get started, go to freetaxusa.com in any browser. Click "Create a Free Account" and enter your email address and a password. You can also use your Google or Facebook account to sign in if you prefer.
 
-The filing process works through a question-and-answer interview format, similar to TurboTax. The software asks you questions and fills in the tax forms based on your answers — you never see the raw IRS forms unless you want to. The navigation is organized by category: Personal Info, Income, Deductions, Credits, Health Insurance, and State.
+The filing process works through a question-and-answer interview format, similar to TurboTax. The software asks you questions and fills in the tax forms based on your answers. You never see the raw IRS forms unless you want to. The navigation is organized by category: Personal Info, Income, Deductions, Credits, Health Insurance, and State.
 
 Before starting, gather your tax documents: W-2 forms from each employer, 1099 forms for retirement income, Social Security benefits, investment sales, or freelance income, mortgage interest statements (Form 1098) if you own a home, property tax records if you itemize deductions, and last year's tax return for reference.
 
@@ -888,7 +888,7 @@ Download and save a PDF copy of your completed return from FreeTaxUSA — keep i
       },
       {
         title: `Download your completed return and track your refund`,
-        content: `After filing, go to "My Returns" in your FreeTaxUSA account and download the PDF of your completed return. Save it on your computer or print it out. Then go to irs.gov/refunds and use "Where's My Refund?" to check your refund status — you will need your Social Security number, filing status, and exact refund amount.`,
+        content: `After filing, go to "My Returns" in your FreeTaxUSA account and download the PDF of your completed return. Save it on your computer or print it out. Then go to irs.gov/refunds and use "Where's My Refund?" to check your refund status. You will need your Social Security number, filing status, and exact refund amount.`,
       },
     ],
   },

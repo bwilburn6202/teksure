@@ -153,7 +153,7 @@ If you have an iPhone and want the fastest option, use the Notes app — no extr
       {
         title: 'Set up good lighting and a flat surface',
         content: 'Lay the document flat on a solid-color table. Use natural light from a window or turn on a ceiling light. Smooth out any folds in the paper. Poor lighting is the most common reason scans come out blurry or hard to read.',
-        tip: 'A dark-colored table works best for white paper — it helps the phone see where the document edges are.',
+        tip: 'A dark-colored table works best for white paper. It helps the phone see where the document edges are.',
       },
       {
         title: 'Open the scanner on your phone',
@@ -227,7 +227,7 @@ Before you start, have these items ready:
 
 **Step 2 — Log into the company's website**
 
-Go to the company's official website (your electricity provider, cable company, credit card issuer, etc.) and sign in to your account. If you do not have an online account, most companies have a "Register" or "Create Account" option on their login page — you will need your account number from a paper bill.
+Go to the company's official website (your electricity provider, cable company, credit card issuer, etc.) and sign in to your account. If you do not have an online account, most companies have a "Register" or "Create Account" option on their login page. You will need your account number from a paper bill.
 
 **Step 3 — Find "Autopay," "Automatic Payments," or "Payment Settings"**
 
@@ -400,7 +400,7 @@ If you do not already have a Medicare account, click **"Create an account."** Yo
 On the Login.gov page:
 - Enter your email address and create a password (at least 12 characters)
 - Check your email for a verification code, then enter it to confirm your address
-- Set up two-step authentication — you will enter a code sent by text or phone call each time you log in (this protects your account from anyone else accessing it)
+- Set up two-step authentication. You will enter a code sent by text or phone call each time you log in (this protects your account from anyone else accessing it)
 
 After setting up Login.gov, return to Medicare.gov and log in with your new credentials.
 
@@ -653,7 +653,7 @@ You can also rate your shopper after delivery. A rating helps good shoppers cont
       },
       {
         title: 'Enter your delivery address and choose a store',
-        content: 'When prompted, type your full home address. Instacart will show you all grocery stores that deliver to your location. Tap the store you normally shop at — you will recognize names like Kroger, Publix, Aldi, Costco, or Safeway. The store\'s departments will appear just like walking through a real grocery store.',
+        content: 'When prompted, type your full home address. Instacart will show you all grocery stores that deliver to your location. Tap the store you normally shop at. You will recognize names like Kroger, Publix, Aldi, Costco, or Safeway. The store\'s departments will appear just like walking through a real grocery store.',
         tip: 'If you do not see your regular grocery store listed, check the full list by scrolling down — some stores appear lower on the list based on distance or availability.',
       },
       {

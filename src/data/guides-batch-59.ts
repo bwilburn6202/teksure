@@ -72,7 +72,7 @@ Android phones come from many different manufacturers, which means more variety 
 
 In terms of price, iPhones tend to cost more — the newest models start around $800 and can go much higher. However, older iPhone models (like the iPhone 14 or 15) can be bought new or refurbished for a lot less. Android phones have a much wider price range, from budget-friendly options around $200 all the way up to premium models over $1,000.
 
-Both types of phones receive regular security updates that protect your personal information. Both have large selections of apps. Both are used successfully by millions of seniors every day. There is no wrong choice — it truly comes down to which one your family uses, your budget, and which feels more comfortable in your hand when you hold it.
+Both types of phones receive regular security updates that protect your personal information. Both have large selections of apps. Both are used successfully by millions of seniors every day. There is no wrong choice. It truly comes down to which one your family uses, your budget, and which feels more comfortable in your hand when you hold it.
 
 If you are still unsure, visit a phone store and ask to hold a few different models. Trying the screen size and feel of the phone in your hand goes a long way toward making the right decision.`,
     steps: [
@@ -97,7 +97,7 @@ If you are still unsure, visit a phone store and ask to hold a few different mod
       },
       {
         title: `Ask about support and setup help`,
-        content: `Apple stores offer free one-on-one setup sessions called Today at Apple. Many carrier stores (Verizon, AT&T, T-Mobile) will help you set up your new phone and transfer your contacts from your old one. Ask about this service before you buy — it can save you hours of frustration.`,
+        content: `Apple stores offer free one-on-one setup sessions called Today at Apple. Many carrier stores (Verizon, AT&T, T-Mobile) will help you set up your new phone and transfer your contacts from your old one. Ask about this service before you buy. It can save you hours of frustration.`,
       },
     ],
   },
@@ -219,7 +219,7 @@ You can also look at what you are paying for that you may not need. Many plans i
       },
       {
         title: `Ask your carrier about senior discounts and current promotions`,
-        content: `Call your carrier's customer service line or visit a store and specifically say: "I am 55 years old and I want to know if there are any senior plans or current promotions that would lower my bill." Carriers have retention teams whose job is to keep you as a customer — they often have unadvertised offers they can apply to your account.`,
+        content: `Call your carrier's customer service line or visit a store and specifically say: "I am 55 years old and I want to know if there are any senior plans or current promotions that would lower my bill." Carriers have retention teams whose job is to keep you as a customer. They often have unadvertised offers they can apply to your account.`,
         tip: `Mentioning that you are considering switching to a competitor is often enough to prompt an agent to offer you a better rate or add a discount to your account.`,
       },
       {
@@ -252,7 +252,7 @@ You can also look at what you are paying for that you may not need. Many plans i
 
 When Wi-Fi Calling is turned on, your phone automatically uses your Wi-Fi connection to make and receive calls whenever your cell signal is weak. You dial and answer calls exactly the same way you always do — nothing changes about how you use the phone. The only difference is that your calls travel over your internet connection in the background. If you move out of Wi-Fi range, the call smoothly switches back to the cell network without dropping.
 
-Wi-Fi Calling is supported by all four major carriers in the United States — Verizon, AT&T, T-Mobile, and US Cellular — as well as most smaller carriers. It is available on iPhone and nearly all modern Android phones. The feature is typically free with no extra charge on your bill — you are using your existing home internet, and the calls count toward your regular plan's minutes (or are unlimited if your plan includes unlimited talk).
+Wi-Fi Calling is supported by all four major carriers in the United States — Verizon, AT&T, T-Mobile, and US Cellular — as well as most smaller carriers. It is available on iPhone and nearly all modern Android phones. The feature is typically free with no extra charge on your bill. You are using your existing home internet, and the calls count toward your regular plan's minutes (or are unlimited if your plan includes unlimited talk).
 
 One important benefit of Wi-Fi Calling is that it also works when you are traveling internationally. If you are in another country and have access to Wi-Fi at a hotel or a family member's home, you can call US numbers without paying international roaming rates — the call uses Wi-Fi and is treated as a regular domestic call. This can save you significant money compared to international calling plans.
 
@@ -273,7 +273,7 @@ Setting up Wi-Fi Calling takes less than two minutes. You turn it on once in you
       },
       {
         title: `Make calls exactly as you normally would`,
-        content: `Once Wi-Fi Calling is set up, you do not need to do anything differently. Open the Phone app and dial as usual. Your phone chooses Wi-Fi or cellular automatically based on which signal is stronger. You do not need to think about which one you are using — it all happens in the background.`,
+        content: `Once Wi-Fi Calling is set up, you do not need to do anything differently. Open the Phone app and dial as usual. Your phone chooses Wi-Fi or cellular automatically based on which signal is stronger. You do not need to think about which one you are using. It all happens in the background.`,
         tip: `If a call drops or sounds unclear, try moving closer to your Wi-Fi router. Wi-Fi call quality depends on your internet connection speed. Most home internet connections are fast enough for excellent call quality.`,
       },
     ],
@@ -305,7 +305,7 @@ Another option that has become popular recently is eSIM technology. Some newer p
       },
       {
         title: `Turn off cellular data roaming as a safety measure`,
-        content: `On iPhone, go to Settings, then Cellular, then Cellular Data Options, then turn off Data Roaming. On Android, go to Settings, then Network & Internet or Connections, then Mobile Network, then turn off Roaming or Data Roaming. With this turned off, your phone will not use foreign cellular data at all — it will only connect via Wi-Fi. This prevents accidental charges.`,
+        content: `On iPhone, go to Settings, then Cellular, then Cellular Data Options, then turn off Data Roaming. On Android, go to Settings, then Network & Internet or Connections, then Mobile Network, then turn off Roaming or Data Roaming. With this turned off, your phone will not use foreign cellular data at all. It will only connect via Wi-Fi. This prevents accidental charges.`,
         warning: `With data roaming turned off, your phone cannot use maps or internet on the cellular network abroad. Make sure to download offline maps before you leave, and connect to Wi-Fi at your hotel to use data-based apps.`,
       },
       {
@@ -337,7 +337,7 @@ Another option that has become popular recently is eSIM technology. Some newer p
 
 The first and most important consideration is power. Different countries use different electrical outlet shapes and voltages. The United States uses 110 volts with flat two-prong or three-prong outlets. Most of Europe uses 220 volts with round two-prong plugs. Other regions use different configurations. If you plug a US appliance into a 220-volt outlet without the proper adapter, you could damage your device or cause a short circuit.
 
-The good news is that most modern smartphones, laptops, and camera chargers are designed to work with any voltage between 100 and 240 volts — this is called dual-voltage or universal voltage. Check your device's charger for the voltage range printed on it (look for "100-240V"). If yours says that, you only need a plug adapter to change the physical shape of the plug — you do not need a bulky voltage converter. A set of universal plug adapters costs around $15 to $25 and covers outlets in most countries in the world.
+The good news is that most modern smartphones, laptops, and camera chargers are designed to work with any voltage between 100 and 240 volts — this is called dual-voltage or universal voltage. Check your device's charger for the voltage range printed on it (look for "100-240V"). If yours says that, you only need a plug adapter to change the physical shape of the plug. You do not need a bulky voltage converter. A set of universal plug adapters costs around $15 to $25 and covers outlets in most countries in the world.
 
 Protecting your personal data while traveling is also worth thinking about. When you connect to hotel Wi-Fi networks, airport Wi-Fi, or coffee shop networks, your data travels over a shared connection that could potentially be monitored. Avoid logging into your bank account or entering credit card information on public Wi-Fi. Using your phone's cellular data connection for sensitive tasks is safer than using unknown Wi-Fi networks.
 
@@ -345,7 +345,7 @@ Before you leave, take a few minutes to make sure your important accounts are se
     steps: [
       {
         title: `Check your chargers for universal voltage`,
-        content: `Look at the small print on each of your chargers and power adapters. Find the line that says something like "Input: 100-240V." If your charger shows this range, it works worldwide — you only need a plug adapter to change the shape of the prongs. If a charger says only "110V" or "120V," you need a voltage converter for countries with 220V power, or leave that charger at home.`,
+        content: `Look at the small print on each of your chargers and power adapters. Find the line that says something like "Input: 100-240V." If your charger shows this range, it works worldwide. You only need a plug adapter to change the shape of the prongs. If a charger says only "110V" or "120V," you need a voltage converter for countries with 220V power, or leave that charger at home.`,
         tip: `Phone chargers, laptop chargers, and camera battery chargers are almost always dual-voltage. Hair dryers, curling irons, and electric shavers are often not — check carefully before packing these.`,
       },
       {
@@ -358,7 +358,7 @@ Before you leave, take a few minutes to make sure your important accounts are se
       },
       {
         title: `Set up a way to communicate affordably`,
-        content: `Review your carrier's international options (see our guide on avoiding roaming charges). Install WhatsApp before your trip — it is used worldwide and lets you call and message over Wi-Fi for free. Make sure your family or travel companions know they can reach you on WhatsApp while you are abroad. Test a video call before your trip so everyone knows how to use it.`,
+        content: `Review your carrier's international options (see our guide on avoiding roaming charges). Install WhatsApp before your trip. It is used worldwide and lets you call and message over Wi-Fi for free. Make sure your family or travel companions know they can reach you on WhatsApp while you are abroad. Test a video call before your trip so everyone knows how to use it.`,
       },
       {
         title: `Protect your data while traveling`,
@@ -367,7 +367,7 @@ Before you leave, take a few minutes to make sure your important accounts are se
       },
       {
         title: `Make copies of important documents`,
-        content: `Take a photo of your passport, travel insurance card, and any medical information and save these photos in a secure place on your phone or a cloud service. Email a copy to yourself so you can access it from any device. Also write down your carrier's international customer service number — it is different from the standard number and works when calling from abroad.`,
+        content: `Take a photo of your passport, travel insurance card, and any medical information and save these photos in a secure place on your phone or a cloud service. Email a copy to yourself so you can access it from any device. Also write down your carrier's international customer service number. It is different from the standard number and works when calling from abroad.`,
       },
     ],
   },
@@ -384,9 +384,9 @@ Before you leave, take a few minutes to make sure your important accounts are se
     difficulty: `Beginner`,
     body: `Google Translate is a free app available for both iPhone and Android that can translate text between over 130 languages. For anyone who travels, lives in a multilingual community, or has family members who speak a different language, it is an incredibly practical tool that has improved a lot in recent years.
 
-The most impressive feature is the camera translation — you point your phone's camera at a sign, menu, label, or document, and the app translates the text in real time right on your screen. The foreign words seem to disappear and be replaced with the translation in your own language. This works particularly well for restaurant menus, street signs, and product labels when traveling. You do not even need to take a photo — the translation happens live as you hold your camera up.
+The most impressive feature is the camera translation. You point your phone's camera at a sign, menu, label, or document, and the app translates the text in real time right on your screen. The foreign words seem to disappear and be replaced with the translation in your own language. This works particularly well for restaurant menus, street signs, and product labels when traveling. You do not even need to take a photo — the translation happens live as you hold your camera up.
 
-Google Translate also lets you type text and get a translation, translate your own speech, and have a real-time two-way conversation with someone who speaks a different language. The conversation mode is especially useful — you both speak into the same phone. And it translates back and forth between you automatically. This has made it possible for many people to communicate in medical settings, at stores, or with new neighbors even with no shared language.
+Google Translate also lets you type text and get a translation, translate your own speech, and have a real-time two-way conversation with someone who speaks a different language. The conversation mode is especially useful. You both speak into the same phone. And it translates back and forth between you automatically. This has made it possible for many people to communicate in medical settings, at stores, or with new neighbors even with no shared language.
 
 For travel, one of the best features is offline translation. You can download language packs for countries you plan to visit while you are still connected to Wi-Fi at home. Then, even without any internet connection abroad, Google Translate works for basic text and camera translation. This is invaluable when you are somewhere with limited or expensive cellular data.
 
@@ -429,7 +429,7 @@ The app is completely free to download and use. Google does not charge for trans
     difficulty: `Beginner`,
     body: `Ibotta is a free app that pays you real cash back when you buy groceries and other everyday items. Unlike traditional coupons that require you to cut and bring paper to the store, Ibotta works through your smartphone. You select offers before shopping, make your purchases at the store, and then upload a photo of your receipt or link your store loyalty account to claim your cash. The money goes into your Ibotta account and can be transferred to PayPal, Venmo, or redeemed as gift cards.
 
-The app has partnered with hundreds of grocery stores, pharmacies, and retailers including Walmart, Target, Kroger, Publix, CVS, Walgreens, Costco, and many more. There are also online shopping offers — you can shop through Ibotta's interface at Amazon, Walmart.com, and other retailers to earn cash back on purchases automatically.
+The app has partnered with hundreds of grocery stores, pharmacies, and retailers including Walmart, Target, Kroger, Publix, CVS, Walgreens, Costco, and many more. There are also online shopping offers. You can shop through Ibotta's interface at Amazon, Walmart.com, and other retailers to earn cash back on purchases automatically.
 
 Cash back amounts vary but are real money — typically $0.25 to $2.00 per item, sometimes more for specific products. There are also often general offers like "earn $0.25 on any item" that apply to purchases regardless of brand. Over the course of a month of regular grocery shopping, many Ibotta users report earning $15 to $40 or more in cash back.
 
@@ -472,7 +472,7 @@ Ibotta is a legitimate company that has been operating since 2012 and has paid o
     thumbnailEmoji: ``,
     publishedAt: `2026-04-20`,
     difficulty: `Beginner`,
-    body: `Paper coupons used to require cutting them from Sunday newspapers or sorting through flyers before each grocery trip. Digital coupon apps have replaced all of that with a much simpler process — you shop as you normally do, photograph your receipt with your smartphone, and the app automatically finds savings and rewards you with points or cash back.
+    body: `Paper coupons used to require cutting them from Sunday newspapers or sorting through flyers before each grocery trip. Digital coupon apps have replaced all of that with a much simpler process. You shop as you normally do, photograph your receipt with your smartphone, and the app automatically finds savings and rewards you with points or cash back.
 
 Fetch Rewards is one of the most popular of these apps. It works with virtually any grocery store, gas station, or general merchandise store in the United States. You do not need to activate coupons ahead of time or remember specific deals. After shopping, you open Fetch Rewards, tap Snap Receipt, take a photo of your receipt, and submit it. The app scans for brand partners on your receipt and automatically credits your account with points for qualifying purchases.
 
@@ -513,7 +513,7 @@ None of these apps require you to change how or where you shop. They work as a l
     thumbnailEmoji: ``,
     publishedAt: `2026-04-20`,
     difficulty: `Beginner`,
-    body: `Loyalty programs have existed for decades — you probably remember collecting paper punch cards at coffee shops or carrying a key fob at the grocery store. Today, most major retailers have moved their loyalty programs to smartphone apps, which make the experience much more rewarding. Digital loyalty apps automatically track your purchases, send you personalized offers, and let you redeem rewards without carrying physical cards or coupons.
+    body: `Loyalty programs have existed for decades. You probably remember collecting paper punch cards at coffee shops or carrying a key fob at the grocery store. Today, most major retailers have moved their loyalty programs to smartphone apps, which make the experience much more rewarding. Digital loyalty apps automatically track your purchases, send you personalized offers, and let you redeem rewards without carrying physical cards or coupons.
 
 The Starbucks app is one of the most well-known examples. Every time you pay through the app or scan it at checkout, you earn Stars. Accumulate enough Stars and you can redeem them for free drinks, food items, or merchandise. The app also sends you personalized offers (like double Stars on certain drinks) and lets you order ahead to skip the line. If you visit Starbucks even once a week, the free drinks add up quickly.
 
@@ -559,7 +559,7 @@ Setting up these apps takes about five minutes each. Most require only an email 
     thumbnailEmoji: ``,
     publishedAt: `2026-04-20`,
     difficulty: `Beginner`,
-    body: `When you shop online, there is often a box at checkout labeled "coupon code" or "promo code." Most people skip right past it because they do not have a code handy. Honey is a free tool that fills in that box for you automatically — it searches the internet for working discount codes for that specific store and tries them all, applying the one that saves you the most money.
+    body: `When you shop online, there is often a box at checkout labeled "coupon code" or "promo code." Most people skip right past it because they do not have a code handy. Honey is a free tool that fills in that box for you automatically. It searches the internet for working discount codes for that specific store and tries them all, applying the one that saves you the most money.
 
 Honey is made by PayPal and has been used by over 17 million people. It works as a browser extension — a small add-on to your web browser (like Chrome, Firefox, or Safari) that runs in the background while you shop. When you reach a checkout page on a supported site, a small Honey popup appears. You click one button and Honey tests available coupon codes in seconds.
 
@@ -655,7 +655,7 @@ The encouraging news is that there are specific, practical steps that a lot redu
     thumbnailEmoji: ``,
     publishedAt: `2026-04-20`,
     difficulty: `Intermediate`,
-    body: `The "dark web" is a term you may have heard in news coverage of hacking incidents or identity theft. Despite how it sounds, the dark web is not a mysterious or exotic place — it is a part of the internet that is not accessible through regular web browsers like Chrome or Safari, and where activity is intentionally anonymous. While it has some legitimate uses, it is also where criminals buy and sell stolen personal information after data breaches.
+    body: `The "dark web" is a term you may have heard in news coverage of hacking incidents or identity theft. Despite how it sounds, the dark web is not a mysterious or exotic place. It is a part of the internet that is not accessible through regular web browsers like Chrome or Safari, and where activity is intentionally anonymous. While it has some legitimate uses, it is also where criminals buy and sell stolen personal information after data breaches.
 
 When a company suffers a data breach — a hacker breaks into their computer systems — the stolen information often ends up being sold or traded on dark web markets. This information can include email addresses, passwords, Social Security numbers, credit card numbers, home addresses, and phone numbers. Criminals purchase this data to commit identity theft, break into accounts, or send targeted scam messages.
 
@@ -673,7 +673,7 @@ Many services now also offer dark web monitoring as part of their security packa
       {
         title: `Understand what your results mean`,
         content: `If your email was found in a breach, the site lists each breach and what type of data was exposed. "Email and password" is the most common combination and the most important to address. "Social Security numbers" or "financial information" is more serious. "Email only" is lower risk but still worth knowing about. The breach may have happened years ago — this is normal, as breaches are sometimes not discovered until long after they occur.`,
-        tip: `Being in a breach does not mean your identity has been stolen — it means your information is out there and you should take protective steps. Most people whose data was breached never experience direct financial harm because they take precautions promptly.`,
+        tip: `Being in a breach does not mean your identity has been stolen. It means your information is out there and you should take protective steps. Most people whose data was breached never experience direct financial harm because they take precautions promptly.`,
       },
       {
         title: `Change passwords for any affected accounts`,
@@ -717,7 +717,7 @@ You will receive a PIN or a confirmation number when you set up each freeze — 
       },
       {
         title: `Freeze your credit at Experian`,
-        content: `Go to experian.com/freeze/center or call 1-888-397-3742. Click Add a Security Freeze and create an account or log in. Complete the identity verification process and request your freeze. Experian will confirm the freeze and provide a PIN. This is separate from your Equifax freeze — you must complete this step even if you already froze Equifax.`,
+        content: `Go to experian.com/freeze/center or call 1-888-397-3742. Click Add a Security Freeze and create an account or log in. Complete the identity verification process and request your freeze. Experian will confirm the freeze and provide a PIN. This is separate from your Equifax freeze. You must complete this step even if you already froze Equifax.`,
       },
       {
         title: `Freeze your credit at TransUnion`,
@@ -753,7 +753,7 @@ The most important thing to understand is this: legitimate organizations will ne
 
 The sense of urgency is another major warning sign. Phishing emails almost always pressure you to act right away: "Your account will be suspended in 24 hours," or "Immediate action required to avoid losing access to your account," or "Verify your information now to avoid a penalty." This urgency is designed to make you act without thinking. Real organizations give you time to respond to legitimate issues.
 
-The volume of phishing attempts has grown dramatically because the technology to send millions of convincing fake emails is now inexpensive and widely available. Nearly everyone with an email address receives phishing attempts regularly. Recognizing them is not about being especially tech-savvy — it is about knowing a handful of consistent red flags.`,
+The volume of phishing attempts has grown dramatically because the technology to send millions of convincing fake emails is now inexpensive and widely available. Nearly everyone with an email address receives phishing attempts regularly. Recognizing them is not about being especially tech-savvy. It is about knowing a handful of consistent red flags.`,
     steps: [
       {
         title: `Check the sender's email address carefully`,

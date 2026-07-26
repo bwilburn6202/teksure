@@ -83,7 +83,7 @@ Make sure your iPhone is running a current version of iOS. Open Settings, tap Ge
       },
       {
         title: 'Turn off "Hey Siri" if your phone is responding accidentally',
-        content: 'If your phone keeps activating Siri during conversations or while watching TV, the "Hey Siri" feature is picking up sounds that resemble its wake phrase. To stop this: open Settings → Siri. Tap "Listen for" and change it to "Off." You can still use Siri by pressing and holding the side button whenever you need it — you will not lose any Siri features, only the always-on listening. If you want to completely disable Siri, you can also turn off the "Press Side Button for Siri" toggle on that same screen.',
+        content: 'If your phone keeps activating Siri during conversations or while watching TV, the "Hey Siri" feature is picking up sounds that resemble its wake phrase. To stop this: open Settings → Siri. Tap "Listen for" and change it to "Off." You can still use Siri by pressing and holding the side button whenever you need it. You will not lose any Siri features, only the always-on listening. If you want to completely disable Siri, you can also turn off the "Press Side Button for Siri" toggle on that same screen.',
         tip: 'Many people keep the button-press method on and turn off always-listening. This way you have full control over when Siri activates.',
       },
       {
@@ -149,7 +149,7 @@ You only need to follow the section that applies to your device.`,
       },
       {
         title: 'Set iPhone updates to Wi-Fi only (optional)',
-        content: 'If you have a limited data plan on your iPhone, you can tell it to only download updates when connected to Wi-Fi, not when using your cellular (phone) data. On the same App Store settings screen from Step 1, look for "Automatic Downloads" and tap it. You will see an option for "Only Download on Wi-Fi." Turn that toggle on. Updates will still happen automatically — they will wait until your phone connects to your home Wi-Fi before downloading.',
+        content: 'If you have a limited data plan on your iPhone, you can tell it to only download updates when connected to Wi-Fi, not when using your cellular (phone) data. On the same App Store settings screen from Step 1, look for "Automatic Downloads" and tap it. You will see an option for "Only Download on Wi-Fi." Turn that toggle on. Updates will still happen automatically. They will wait until your phone connects to your home Wi-Fi before downloading.',
         tip: 'Most people on unlimited data plans do not need to worry about this. If you are unsure whether you have unlimited data, call your phone carrier (Verizon, AT&T, T-Mobile, etc.) or check your monthly bill.',
       },
       {
@@ -161,11 +161,11 @@ You only need to follow the section that applies to your device.`,
       {
         title: 'Check for and install app updates manually (all phones)',
         content: 'Even with automatic updates turned on, you can check for waiting updates at any time. On iPhone: open the App Store, tap your profile picture in the top-right corner, and scroll down to see "Available Updates." Tap "Update All" to install everything at once, or tap "Update" next to a single app. On Android: open the Google Play Store, tap your profile picture in the top-right corner, tap "Manage apps and device," and then tap "Updates available." Tap "Update all" to install everything at once.',
-        tip: 'If you have not updated apps in a long time, there may be dozens of updates waiting. Let your phone sit on Wi-Fi for a few minutes after tapping "Update all" — it will work through the list on its own.',
+        tip: 'If you have not updated apps in a long time, there may be dozens of updates waiting. Let your phone sit on Wi-Fi for a few minutes after tapping "Update all". It will work through the list on its own.',
       },
       {
         title: 'Turn on automatic app updates on a Mac',
-        content: 'On a Mac computer, apps from the App Store (such as Pages, Numbers, GarageBand, or many third-party apps) update through the App Store. Click the Apple logo in the top-left corner of your screen, then click "App Store." In the App Store window, click "Preferences" in the top menu bar (on older Macs) or go to App Store → Settings. Look for a checkbox labeled "Automatic Updates" or "Install app updates" and make sure it is checked. From now on, your Mac will install app updates in the background. Note: apps you downloaded directly from a company\'s website (not from the App Store) update on their own schedule — you will usually see a notification inside the app itself when an update is ready.',
+        content: 'On a Mac computer, apps from the App Store (such as Pages, Numbers, GarageBand, or many third-party apps) update through the App Store. Click the Apple logo in the top-left corner of your screen, then click "App Store." In the App Store window, click "Preferences" in the top menu bar (on older Macs) or go to App Store → Settings. Look for a checkbox labeled "Automatic Updates" or "Install app updates" and make sure it is checked. From now on, your Mac will install app updates in the background. Note: apps you downloaded directly from a company\'s website (not from the App Store) update on their own schedule. You will usually see a notification inside the app itself when an update is ready.',
         tip: 'Google Chrome, Firefox, Microsoft Office, and Zoom all update themselves independently. Chrome and Firefox update silently in the background. Office and Zoom show a notification or update prompt when you open them.',
       },
       {
@@ -226,11 +226,11 @@ Most major grocery stores, pharmacies, fast-food restaurants, gas stations, and 
 
 **Do you need to have the exact app installed?**
 
-Apple Pay is built into every iPhone — you do not need to download anything. You access it through the Wallet app, which comes pre-installed. Google Pay/Google Wallet is also pre-installed on most Android phones, but if you do not see it, you can download it free from the Google Play Store.`,
+Apple Pay is built into every iPhone. You do not need to download anything. You access it through the Wallet app, which comes pre-installed. Google Pay/Google Wallet is also pre-installed on most Android phones, but if you do not see it, you can download it free from the Google Play Store.`,
     steps: [
       {
         title: 'Set up Apple Pay on iPhone',
-        content: 'Open the Wallet app on your iPhone — it looks like a wallet with cards in it and should already be on your home screen or in your app library. Tap the plus sign (+) in the top-right corner. Your iPhone camera will open and prompt you to position your credit or debit card in the frame. Hold your physical card in front of the camera — it will read the card number automatically. You will then need to enter the three-digit security code from the back of the card and confirm the card\'s expiration date. Your bank or card issuer will send a verification code by text message or ask you to call them. Once verified, your card appears in Wallet and is ready to use. You can add multiple cards and set one as your "default" card that gets used first.',
+        content: 'Open the Wallet app on your iPhone. It looks like a wallet with cards in it and should already be on your home screen or in your app library. Tap the plus sign (+) in the top-right corner. Your iPhone camera will open and prompt you to position your credit or debit card in the frame. Hold your physical card in front of the camera. It will read the card number automatically. You will then need to enter the three-digit security code from the back of the card and confirm the card\'s expiration date. Your bank or card issuer will send a verification code by text message or ask you to call them. Once verified, your card appears in Wallet and is ready to use. You can add multiple cards and set one as your "default" card that gets used first.',
         tip: 'You can add most Visa, Mastercard, American Express, and Discover credit and debit cards. Prepaid cards may or may not be supported depending on the issuer. HSA (health savings account) cards often work too.',
         warning: 'Only add cards that belong to you. Do not add someone else\'s card without their permission.',
       },
@@ -257,7 +257,7 @@ Apple Pay is built into every iPhone — you do not need to download anything. Y
       },
       {
         title: 'Check your payment history and remove a card',
-        content: 'To see recent Apple Pay transactions: open the Wallet app, tap the card you used, and scroll down to see a list of recent purchases. To remove a card from Apple Pay: tap the card, tap the three dots (...) or the "i" icon, scroll down, and tap "Remove Card." To see Google Pay history: open the Google Wallet app and tap "Activity" at the bottom. To remove a card from Google Pay: tap the card, tap the three dots in the top-right corner, and tap "Remove payment method." Removing a card from your phone does not cancel the actual card — it only removes it from tap-to-pay. Your physical card still works normally.',
+        content: 'To see recent Apple Pay transactions: open the Wallet app, tap the card you used, and scroll down to see a list of recent purchases. To remove a card from Apple Pay: tap the card, tap the three dots (...) or the "i" icon, scroll down, and tap "Remove Card." To see Google Pay history: open the Google Wallet app and tap "Activity" at the bottom. To remove a card from Google Pay: tap the card, tap the three dots in the top-right corner, and tap "Remove payment method." Removing a card from your phone does not cancel the actual card. It only removes it from tap-to-pay. Your physical card still works normally.',
         tip: 'If your phone is lost or stolen, you can right away remove all cards from Apple Pay by going to iCloud.com → Find My → your device → Remove. For Google Pay, go to pay.google.com on any computer and remove cards from there. Your money is safe even before you do this, because nobody can use the phone to pay without your face, fingerprint, or PIN.',
       },
     ],
@@ -301,7 +301,7 @@ iPhones come with Apple Maps pre-installed. Apple Maps and Google Maps both offe
 
 **Street View**
 
-Google Maps includes a feature called Street View that lets you see a 360-degree photo of any street taken by a Google camera car. This can be helpful before driving somewhere new — you can "look" at what the building looks like so you recognize it when you arrive. To use it, search for an address, then tap and hold the map at that spot until a small photo appears in the bottom corner. Tap the photo to enter Street View. Drag your finger to look around.
+Google Maps includes a feature called Street View that lets you see a 360-degree photo of any street taken by a Google camera car. This can be helpful before driving somewhere new. You can "look" at what the building looks like so you recognize it when you arrive. To use it, search for an address, then tap and hold the map at that spot until a small photo appears in the bottom corner. Tap the photo to enter Street View. Drag your finger to look around.
 
 **Saving frequent destinations**
 
@@ -321,11 +321,11 @@ You can save addresses you visit often — like your doctor's office, your child
       {
         title: 'Follow the spoken directions and understand the display',
         content: 'While navigating, Google Maps speaks each turn aloud: "In 500 feet, turn right on Oak Street." The screen shows your current street, the next turn highlighted in a large arrow at the top, and your estimated arrival time at the bottom. The blue line on the map shows your path. The moving blue dot is you. The app automatically updates as you drive. You can glance at the top of the screen for the upcoming turn instruction without needing to read the map in detail.',
-        tip: 'The arrival time shown at the bottom is live — it updates based on current traffic. If traffic slows down ahead of you, the estimated time will increase. If traffic clears, it will decrease.',
+        tip: 'The arrival time shown at the bottom is live. It updates based on current traffic. If traffic slows down ahead of you, the estimated time will increase. If traffic clears, it will decrease.',
       },
       {
         title: 'Mute or unmute the spoken directions',
-        content: 'If the voice directions are too loud, too quiet, or you prefer silence, you can adjust them without stopping navigation. While actively navigating, tap the speaker icon on the screen — it appears near the top-right area or in the side panel. Tap it once to lower the volume, again to mute it entirely (you will see a line through the speaker icon), and again to bring the voice back. Alternatively, you can use the physical volume buttons on the side of your phone to turn the navigation voice up or down. If you use your phone connected to your car\'s Bluetooth or a speaker, the directions will play through that speaker.',
+        content: 'If the voice directions are too loud, too quiet, or you prefer silence, you can adjust them without stopping navigation. While actively navigating, tap the speaker icon on the screen. It appears near the top-right area or in the side panel. Tap it once to lower the volume, again to mute it entirely (you will see a line through the speaker icon), and again to bring the voice back. Alternatively, you can use the physical volume buttons on the side of your phone to turn the navigation voice up or down. If you use your phone connected to your car\'s Bluetooth or a speaker, the directions will play through that speaker.',
         tip: 'If you listen to music or a podcast while driving, Google Maps will automatically lower the music volume and speak directions over it, then raise the music again. You do not need to pause your audio manually.',
       },
       {

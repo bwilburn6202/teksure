@@ -36,7 +36,7 @@ export const guidesBatch53: Guide[] = [
       },
       {
         title: 'Test that the fix worked',
-        content: 'After restarting, try opening a file from your OneDrive folder or saving a document to OneDrive. The app should respond normally without freezing. If you use Outlook, open it and send a test email — it should load and save without hanging.',
+        content: 'After restarting, try opening a file from your OneDrive folder or saving a document to OneDrive. The app should respond normally without freezing. If you use Outlook, open it and send a test email. It should load and save without hanging.',
         tip: 'Going forward, keep Windows Update set to "Automatic" so patches like this install automatically. Go to Settings → Windows Update → Advanced Options and make sure "Receive updates for other Microsoft products" is turned on — this covers Office app patches too.',
       },
     ],
@@ -57,12 +57,12 @@ export const guidesBatch53: Guide[] = [
       {
         title: 'Know the warning signs before you invest anything',
         content: 'The FTC says these are the biggest red flags: a promise of guaranteed high returns with little or no risk (no real investment works this way — all investments carry some risk); pressure to invest quickly before you "miss out"; contact from someone you did not seek out — especially through social media, WhatsApp, or a text message; requests to invest using cryptocurrency, wire transfer, or gift cards (these cannot be reversed if you are scammed); an online platform that shows spectacular returns but will not let you withdraw your money without paying a fee first.',
-        tip: 'If someone promises guaranteed returns of 10%, 20%, or more with no risk — it is always a scam. Safe investments like savings accounts and treasury bonds currently pay around 4–5% per year, not 10–20% per month.',
+        tip: 'If someone promises guaranteed returns of 10%, 20%, or more with no risk. It is always a scam. Safe investments like savings accounts and treasury bonds currently pay around 4–5% per year, not 10–20% per month.',
       },
       {
         title: 'Watch out for AI-generated celebrity endorsements',
         content: 'In 2026, scammers commonly use AI-generated videos showing celebrities like Elon Musk, Warren Buffett, or local politicians "endorsing" their investment platform. These videos look and sound real but are completely fake. Before trusting any celebrity endorsement, search for the celebrity\'s name plus "investment scam" on Google. Real investment opportunities from real companies are not promoted through celebrity videos on social media.',
-        warning: "Scammers also use photos of real financial advisors from legitimate companies — they steal LinkedIn profile pictures and create fake websites. Always verify through the company's official website, found by typing the address yourself — never using a link from a message.",
+        warning: "Scammers also use photos of real financial advisors from legitimate companies. They steal LinkedIn profile pictures and create fake websites. Always verify through the company's official website, found by typing the address yourself — never using a link from a message.",
       },
       {
         title: 'Verify any investment opportunity before giving money',
@@ -91,7 +91,7 @@ export const guidesBatch53: Guide[] = [
     publishedAt: '2026-04-19',
     lastVerifiedAt: '2026-04-19',
     difficulty: 'Beginner',
-    body: `Google Gemini is a free AI assistant made by Google. Think of it as a very knowledgeable helper you can have a conversation with — you ask it questions or give it a task in plain English. And it responds in plain English.\n\nIf you have an Android phone, Gemini is most likely already installed. On Samsung, Google Pixel, and most other Android phones, you can reach it by pressing and holding the home button or the power button. On iPhone, you can download the free Gemini app from the App Store. Google also released a standalone Gemini desktop app for Mac in April 2026.\n\nGemini is different from a regular search engine. Instead of showing you a list of links, it gives you a direct, conversational answer. You can ask follow-up questions, ask it to rewrite something, or have it help you draft a message.`,
+    body: `Google Gemini is a free AI assistant made by Google. Think of it as a very knowledgeable helper you can have a conversation with. You ask it questions or give it a task in plain English. And it responds in plain English.\n\nIf you have an Android phone, Gemini is most likely already installed. On Samsung, Google Pixel, and most other Android phones, you can reach it by pressing and holding the home button or the power button. On iPhone, you can download the free Gemini app from the App Store. Google also released a standalone Gemini desktop app for Mac in April 2026.\n\nGemini is different from a regular search engine. Instead of showing you a list of links, it gives you a direct, conversational answer. You can ask follow-up questions, ask it to rewrite something, or have it help you draft a message.`,
     steps: [
       {
         title: 'Open Gemini on your device',
@@ -104,7 +104,7 @@ export const guidesBatch53: Guide[] = [
       },
       {
         title: 'Use Gemini to help you write emails and messages',
-        content: 'Gemini is especially useful for writing. If you need to write a message but are not sure how to word it, type something like: "Help me write a polite email to my doctor\'s office asking to reschedule my appointment." Or: "Write a short thank-you note to my neighbor for watching my cat." Gemini will give you a draft you can copy, adjust, and send. You do not have to use the exact wording — you can ask it to "make it shorter" or "make it sound less formal" and it will try again.',
+        content: 'Gemini is especially useful for writing. If you need to write a message but are not sure how to word it, type something like: "Help me write a polite email to my doctor\'s office asking to reschedule my appointment." Or: "Write a short thank-you note to my neighbor for watching my cat." Gemini will give you a draft you can copy, adjust, and send. You do not have to use the exact wording. You can ask it to "make it shorter" or "make it sound less formal" and it will try again.',
         tip: 'YouTube\'s official Google channel has a video titled "How to Use Google Gemini" that walks through the main features with a live demo. Search "Google Gemini beginner tutorial" on YouTube to find it.',
       },
       {
@@ -114,7 +114,7 @@ export const guidesBatch53: Guide[] = [
       },
       {
         title: 'Adjust your privacy settings',
-        content: 'By default, Google may use your Gemini conversations to improve its AI. To turn this off: in the Gemini app, tap your profile picture in the top-right corner → tap "Gemini Apps Activity" → turn off "Gemini Apps Activity." This stops your conversations from being used for training. Your conversations are still stored for a period of time by default — you can also delete them from that same settings page.',
+        content: 'By default, Google may use your Gemini conversations to improve its AI. To turn this off: in the Gemini app, tap your profile picture in the top-right corner → tap "Gemini Apps Activity" → turn off "Gemini Apps Activity." This stops your conversations from being used for training. Your conversations are still stored for a period of time by default. You can also delete them from that same settings page.',
         tip: 'Google\'s privacy settings for Gemini are at myaccount.google.com — look for "Data & Privacy" to see and control all your activity settings in one place.',
       },
     ],
@@ -149,7 +149,7 @@ export const guidesBatch53: Guide[] = [
       },
       {
         title: 'What to do before switching to a new phone',
-        content: 'Before handing in your old phone or wiping it: (1) Make sure iCloud or Google sync is on and has finished syncing — you will see a "Last synced" timestamp in your account settings. (2) If switching between iPhone and Android (or vice versa), export your contacts as a .vcf file first and import it into the new platform. (3) Sign in to your Apple ID or Google account on the new phone — your contacts should appear automatically within a few minutes.',
+        content: 'Before handing in your old phone or wiping it: (1) Make sure iCloud or Google sync is on and has finished syncing. You will see a "Last synced" timestamp in your account settings. (2) If switching between iPhone and Android (or vice versa), export your contacts as a .vcf file first and import it into the new platform. (3) Sign in to your Apple ID or Google account on the new phone — your contacts should appear automatically within a few minutes.',
         tip: 'When you sign in to your Apple ID or Google account on a new phone, contacts, calendar, and photos all restore automatically over Wi-Fi. Make sure you are on Wi-Fi before setting up a new phone — the initial download can be large.',
       },
       {
@@ -198,7 +198,7 @@ HDMI ARC eliminates the need for a separate optical audio cable or a second remo
       },
       {
         title: `Enable CEC on your TV`,
-        content: `Turn on your TV and go to Settings. Look for a section called "General," "System," or "Connection." Find the CEC setting — it may be called Anynet+ (Samsung), SimpLink (LG), Bravia Sync (Sony), or CEC on Vizio and other brands. Turn it on. This is what allows your TV remote to send commands to the soundbar.`,
+        content: `Turn on your TV and go to Settings. Look for a section called "General," "System," or "Connection." Find the CEC setting. It may be called Anynet+ (Samsung), SimpLink (LG), Bravia Sync (Sony), or CEC on Vizio and other brands. Turn it on. This is what allows your TV remote to send commands to the soundbar.`,
         tip: `Not sure where to find CEC? Search your TV brand name plus "CEC setting" on Google or YouTube for step-by-step screenshots.`
       },
       {
@@ -237,7 +237,7 @@ Before buying an antenna, it's worth checking what channels are available in you
 
 Most flat indoor antennas cost between $20 and $40 at stores like Walmart, Best Buy, or Amazon. Look for one rated for at least 35 miles range if you're in a city, or 50+ miles if you're in a suburb or rural area.
 
-If you have a modern flat-screen TV made after 2007, it almost certainly has a built-in digital tuner — you don't need any extra box. Connect the antenna, run a channel scan, and you're watching free TV within minutes.
+If you have a modern flat-screen TV made after 2007, it almost certainly has a built-in digital tuner. You don't need any extra box. Connect the antenna, run a channel scan, and you're watching free TV within minutes.
 
 Antennas are a one-time purchase with no monthly fees. For news, sports, and network shows, they're often the best option available.`,
     steps: [
@@ -459,7 +459,7 @@ Home movies, vacation recaps, birthday videos, and family memories all benefit f
       },
       {
         title: `Trim your clips in the timeline`,
-        content: `Your clips appear in a timeline at the bottom of the screen. Tap a clip to select it — it gets a yellow border. Drag the yellow handle on the left edge to the right to remove footage from the beginning. Drag the yellow handle on the right edge to the left to remove footage from the end. Preview your changes by tapping the play button above the timeline.`,
+        content: `Your clips appear in a timeline at the bottom of the screen. Tap a clip to select it. It gets a yellow border. Drag the yellow handle on the left edge to the right to remove footage from the beginning. Drag the yellow handle on the right edge to the left to remove footage from the end. Preview your changes by tapping the play button above the timeline.`,
         tip: `To split a clip (cut it into two separate pieces), position the playhead (the white vertical line) where you want the cut, then tap the clip and choose "Split" from the menu that appears.`
       },
       {
@@ -497,7 +497,7 @@ Rotating is useful when you accidentally recorded a video holding your phone the
 
 You can also make the video brighter or more colorful using the same adjustment tools that work on photos — exposure, brilliance, contrast, and more. These adjustments apply to every frame of the video at once.
 
-The Photos editor can't do everything — it can't add music, combine multiple clips, or add text overlays. For those features, use iMovie (covered in a separate guide). But for quick fixes to individual clips, Photos is faster and already on your phone.
+The Photos editor can't do everything. It can't add music, combine multiple clips, or add text overlays. For those features, use iMovie (covered in a separate guide). But for quick fixes to individual clips, Photos is faster and already on your phone.
 
 Everything covered in this guide works on iPhones running iOS 17 or later (any iPhone from the last several years).`,
     steps: [
@@ -521,7 +521,7 @@ Everything covered in this guide works on iPhones running iOS 17 or later (any i
       },
       {
         title: `Save your changes`,
-        content: `When you're happy with the edits, tap "Done" in the bottom-right corner. Your edited video saves automatically and replaces the thumbnail in your Photos library. The original is still preserved — you can always tap Edit > Revert to undo all changes and restore the unedited version.`,
+        content: `When you're happy with the edits, tap "Done" in the bottom-right corner. Your edited video saves automatically and replaces the thumbnail in your Photos library. The original is still preserved. You can always tap Edit > Revert to undo all changes and restore the unedited version.`,
         warning: `Tapping "Revert" after saving will permanently remove all your edits and restore the original. Only tap Revert if you're sure you want to undo everything.`
       }
     ]
@@ -538,7 +538,7 @@ Everything covered in this guide works on iPhones running iOS 17 or later (any i
     difficulty: `Beginner`,
     body: `YouTube isn't only for professional creators. Millions of regular people use it to share home videos with family, save personal memories, or upload videos that would otherwise take up storage space on their phone. The key is understanding YouTube's privacy settings so you control exactly who can see your video.
 
-YouTube offers three privacy options for every video you upload. Public means anyone on the internet can find and watch it. Unlisted means only people who have the direct link can watch it — it won't appear in YouTube searches or on your channel page. Private means only specific people you invite can watch it.
+YouTube offers three privacy options for every video you upload. Public means anyone on the internet can find and watch it. Unlisted means only people who have the direct link can watch it. It won't appear in YouTube searches or on your channel page. Private means only specific people you invite can watch it.
 
 For home videos and personal memories, Unlisted is usually the best choice. You upload the video, then share the link with family and friends via text or email. They can watch it without needing a YouTube account. No one else can find it.
 
@@ -646,7 +646,7 @@ Keeping only the apps you actually use makes your app grid easier to navigate an
 
 The Workout app comes pre-installed on every Apple Watch. It supports dozens of activity types: walking, running, cycling, swimming, yoga, strength training, hiking, and more. Selecting the right type helps your watch give you more accurate calorie and distance estimates.
 
-When you're tracking a workout, your watch shows real-time stats on the screen — you can see your current heart rate, elapsed time, active calories, and distance by raising your wrist. You can swipe between different data screens to see more information.
+When you're tracking a workout, your watch shows real-time stats on the screen. You can see your current heart rate, elapsed time, active calories, and distance by raising your wrist. You can swipe between different data screens to see more information.
 
 Apple Watch tracks three "activity rings" throughout the day: the Move ring (active calories burned), the Exercise ring (minutes of elevated heart rate activity), and the Stand ring (times you stood and moved for at least a minute in each hour). Completing all three rings each day is the primary goal Apple Watch sets for users. Tracking workouts directly contributes to all three rings.
 
@@ -760,7 +760,7 @@ Step data is stored locally on your iPhone and is private — Apple doesn't shar
     steps: [
       {
         title: `Open the Health app`,
-        content: `Find the Health app on your iPhone — it has a white background with a red heart. Tap to open it. If it's your first time opening it, you'll see a brief introduction screen. Fill in the optional profile details (age, height, weight) if you like — these help calculate more accurate calorie counts — or skip for now.`
+        content: `Find the Health app on your iPhone. It has a white background with a red heart. Tap to open it. If it's your first time opening it, you'll see a brief introduction screen. Fill in the optional profile details (age, height, weight) if you like — these help calculate more accurate calorie counts — or skip for now.`
       },
       {
         title: `Find your step count`,
@@ -808,11 +808,11 @@ Samsung Health data stays on your phone and your Samsung account. You can option
     steps: [
       {
         title: `Open Samsung Health`,
-        content: `Look for the Samsung Health app on your Galaxy phone — it has a white circular icon with a blue swoosh shape. Tap to open it. If it's your first time, follow the setup prompts: enter your age, height, and weight for more accurate calorie tracking (or skip these). Grant permission to access motion and fitness data when asked.`
+        content: `Look for the Samsung Health app on your Galaxy phone. It has a white circular icon with a blue swoosh shape. Tap to open it. If it's your first time, follow the setup prompts: enter your age, height, and weight for more accurate calorie tracking (or skip these). Grant permission to access motion and fitness data when asked.`
       },
       {
         title: `Find and view your daily steps`,
-        content: `On the Samsung Health home screen, scroll down to the "Steps" card — it shows a circular dial with today's step count and your goal. Tap the card to open the detailed step view. You'll see a bar chart showing steps for each day of the past week, your daily average, and the number of kilometers walked.`,
+        content: `On the Samsung Health home screen, scroll down to the "Steps" card. It shows a circular dial with today's step count and your goal. Tap the card to open the detailed step view. You'll see a bar chart showing steps for each day of the past week, your daily average, and the number of kilometers walked.`,
         tip: `If you don't see Steps on your home screen, scroll down and tap "Manage items" to add it to the top of your dashboard.`
       },
       {
@@ -920,7 +920,7 @@ After removing several Login Items, restart your Mac to see the improvement. Man
       },
       {
         title: `Remove apps you don't need at startup`,
-        content: `To remove an app from the Login Items list, click on its name to highlight it, then click the minus (–) button at the bottom-left of the list. The app disappears from the list. It's still installed on your Mac and works normally — it won't open automatically anymore. Repeat for each app you want to remove.`
+        content: `To remove an app from the Login Items list, click on its name to highlight it, then click the minus (–) button at the bottom-left of the list. The app disappears from the list. It's still installed on your Mac and works normally. It won't open automatically anymore. Repeat for each app you want to remove.`
       },
       {
         title: `Restart your Mac to see the difference`,
@@ -957,7 +957,7 @@ These steps work on Windows 10 and Windows 11. The interface looks slightly diff
       {
         title: `Select the file types to delete`,
         content: `Disk Cleanup shows a list of file categories with checkboxes and the amount of space each will free. Check the boxes next to: "Temporary Internet Files," "Temporary files," "Recycle Bin," "Windows Update Cleanup" (if listed), and "Downloaded Program Files." Leave other categories unchecked unless you know what they are. The total space to be freed shows at the top.`,
-        tip: `If you see "Windows Update Cleanup" in the list, it's often the largest item — it can be several gigabytes. It's safe to delete.`
+        tip: `If you see "Windows Update Cleanup" in the list, it's often the largest item. It can be several gigabytes. It's safe to delete.`
       },
       {
         title: `Run the cleanup`,
@@ -966,7 +966,7 @@ These steps work on Windows 10 and Windows 11. The interface looks slightly diff
       {
         title: `Open Storage Sense for automatic future cleanups`,
         content: `Press the Windows key + I to open Settings. Go to System > Storage. At the top, you'll see a toggle for "Storage Sense" — turn it on. Scroll down and click "Configure Storage Sense or run it now" to set your preferences. You can set it to run automatically every week or month, and to automatically empty the Recycle Bin after a set number of days.`,
-        tip: `Setting the Recycle Bin to auto-empty after 30 days is a good starting point — it means files sit in the bin for a month (in case you change your mind) and then disappear automatically.`
+        tip: `Setting the Recycle Bin to auto-empty after 30 days is a good starting point. It means files sit in the bin for a month (in case you change your mind) and then disappear automatically.`
       },
       {
         title: `Run Storage Sense manually right now`,
@@ -1054,7 +1054,7 @@ This guide works on any iPhone running iOS 17 or later — which covers virtuall
     steps: [
       {
         title: `Open the iPhone Storage screen`,
-        content: `Open the Settings app (the gray icon with gears). Tap "General," then tap "iPhone Storage." Wait 10–20 seconds for the screen to load — it needs to calculate storage for every app. You'll see a colored bar at the top and a list of apps below it, sorted from largest to smallest.`
+        content: `Open the Settings app (the gray icon with gears). Tap "General," then tap "iPhone Storage." Wait 10–20 seconds for the screen to load. It needs to calculate storage for every app. You'll see a colored bar at the top and a list of apps below it, sorted from largest to smallest.`
       },
       {
         title: `Look at the breakdown bar and recommendations`,
@@ -1063,7 +1063,7 @@ This guide works on any iPhone running iOS 17 or later — which covers virtuall
       {
         title: `Delete or offload large apps`,
         content: `Scroll through the app list and look for large items — especially games, video streaming apps with downloaded content, and photo/video editing apps. Tap an app to see options. "Offload App" removes the app file but keeps your data and settings (recommended for apps you might want again). "Delete App" removes both the app and its data completely.`,
-        tip: `Games are often the safest to delete if you don't play them — they can be re-downloaded for free from the App Store. Your game progress may or may not be saved depending on whether the game uses cloud saves.`
+        tip: `Games are often the safest to delete if you don't play them. They can be re-downloaded for free from the App Store. Your game progress may or may not be saved depending on whether the game uses cloud saves.`
       },
       {
         title: `Clear large message conversations`,
@@ -1077,7 +1077,7 @@ This guide works on any iPhone running iOS 17 or later — which covers virtuall
       },
       {
         title: `Check and manage your Photos storage`,
-        content: `If Photos is using the most storage, open Settings > Photos and look for "Optimize iPhone Storage." Turn this on — it keeps smaller, compressed versions of your photos on your iPhone and stores the full-resolution originals in iCloud. You'll need iCloud storage space for this to work, but your 5 GB of free iCloud space is often enough for hundreds of photos.`,
+        content: `If Photos is using the most storage, open Settings > Photos and look for "Optimize iPhone Storage." Turn this on. It keeps smaller, compressed versions of your photos on your iPhone and stores the full-resolution originals in iCloud. You'll need iCloud storage space for this to work, but your 5 GB of free iCloud space is often enough for hundreds of photos.`,
         tip: `To see exactly how much of your iCloud storage you're using, go to Settings > tap your name at the top > iCloud. The bar shows how much of your storage is used and by what.`
       }
     ]
@@ -1116,7 +1116,7 @@ Common reasons to access your router: changing your WiFi name (called the SSID) 
       {
         title: `Log in with the admin username and password`,
         content: `After entering the address, a login screen appears asking for a username and password. This is the router's admin login — not your WiFi password. Check the sticker on the bottom of your router for the default admin credentials. They're often "admin" for both username and password, or "admin" / "password." Enter them and click Login.`,
-        warning: `If the default credentials don't work, someone may have changed them (possibly when the router was set up). Contact your internet provider if the router was provided by them — they can tell you the credentials or help you reset the router.`
+        warning: `If the default credentials don't work, someone may have changed them (possibly when the router was set up). Contact your internet provider if the router was provided by them. They can tell you the credentials or help you reset the router.`
       },
       {
         title: `Change your WiFi name (SSID)`,

@@ -31,7 +31,7 @@ For comparison: Eero is the simplest to set up. Netgear Orbi has stronger range 
     steps: [
       {
         title: `Download the Eero App`,
-        content: `Search for "Eero" in the App Store or Google Play Store and install the free app. You will need an Amazon account to continue — you can create one for free during setup if you do not have one.`,
+        content: `Search for "Eero" in the App Store or Google Play Store and install the free app. You will need an Amazon account to continue. You can create one for free during setup if you do not have one.`,
       },
       {
         title: `Connect the First Eero to Your Modem`,
@@ -73,7 +73,7 @@ For the most accurate results, connect your computer directly to your router wit
 
 What counts as "good" internet varies by how many people and devices are using it. For one person streaming HD video, 25 Mbps download is enough. A family with multiple devices watching different things simultaneously needs 100 Mbps or more. Homes with 4K streaming, gaming, and video calls at the same time benefit from 500 Mbps or higher.
 
-If your speed test shows numbers a lot lower than what your internet plan promises, start by restarting your router. If that does not help, call your internet provider — they can sometimes push a fix remotely or schedule a technician visit.`,
+If your speed test shows numbers a lot lower than what your internet plan promises, start by restarting your router. If that does not help, call your internet provider. They can sometimes push a fix remotely or schedule a technician visit.`,
     category: `internet-connectivity`,
     tags: [`internet speed`, `speed test`, `wifi`, `broadband`, `troubleshooting`],
     thumbnailEmoji: ``,
@@ -130,7 +130,7 @@ Finally, look at what add-ons are bundled into your bill. TV packages, security 
     steps: [
       {
         title: `Research Competitor Prices First`,
-        content: `Before calling your provider, look up what other internet providers charge in your area. Go to BroadbandSearch.net or AllConnect.com and enter your zip code. Note any deals that are cheaper than what you pay now — you will reference these during your call.`,
+        content: `Before calling your provider, look up what other internet providers charge in your area. Go to BroadbandSearch.net or AllConnect.com and enter your zip code. Note any deals that are cheaper than what you pay now. You will reference these during your call.`,
       },
       {
         title: `Call Customer Service and Ask for Retention`,
@@ -273,7 +273,7 @@ For someone who uses an iPhone and wants health monitoring with smart features: 
     steps: [
       {
         title: `Check Your Phone First`,
-        content: `Apple Watch requires an iPhone — it will not work with Android phones. Garmin works with both iPhone and Android. If you have an Android phone, Garmin (or Samsung Galaxy Watch) is your path forward.`,
+        content: `Apple Watch requires an iPhone. It will not work with Android phones. Garmin works with both iPhone and Android. If you have an Android phone, Garmin (or Samsung Galaxy Watch) is your path forward.`,
       },
       {
         title: `Decide What Matters Most to You`,
@@ -281,7 +281,7 @@ For someone who uses an iPhone and wants health monitoring with smart features: 
       },
       {
         title: `Set a Budget`,
-        content: `Apple Watch SE starts around $250. Apple Watch Series 10 starts around $400. Garmin Forerunner 55 is about $200. Garmin Vivoactive 5 is about $250. Both brands have budget and premium tiers — you do not need to buy the most expensive model for solid health tracking.`,
+        content: `Apple Watch SE starts around $250. Apple Watch Series 10 starts around $400. Garmin Forerunner 55 is about $200. Garmin Vivoactive 5 is about $250. Both brands have budget and premium tiers. You do not need to buy the most expensive model for solid health tracking.`,
         tip: `Certified refurbished Apple Watches from Apple's website carry a 1-year warranty and cost 15–20% less than new. Garmin sells refurbished watches directly on their site as well.`,
       },
       {
@@ -304,7 +304,7 @@ You will be asked to sign into your Samsung account. If you do not have one, you
 
 After setup, explore the main health features: step counting, continuous heart rate monitoring, sleep tracking (wear the watch overnight to get a sleep score), and irregular heart rhythm alerts. All of your health data is collected in the Samsung Health app on your phone, which gives you daily, weekly, and monthly views of your activity.
 
-Samsung Pay lets you make contactless payments from your wrist — you add a debit or credit card through the Samsung Wallet app on your phone, then hold the watch near a payment terminal at checkout.
+Samsung Pay lets you make contactless payments from your wrist. You add a debit or credit card through the Samsung Wallet app on your phone, then hold the watch near a payment terminal at checkout.
 
 To extend battery life, the biggest drain is the always-on display. Turning it off in the watch Settings under Display typically extends battery from about 1.5 days to 2.5 days on a single charge.
 
@@ -327,7 +327,7 @@ Notification settings let you control which apps send alerts to your watch. This
       },
       {
         title: `Sign In to Samsung Account`,
-        content: `You will be asked to sign into a Samsung account. If you have one, sign in. If not, tap "Create account" — it is free and only takes a few minutes. Your health data and watch settings will sync to this account.`,
+        content: `You will be asked to sign into a Samsung account. If you have one, sign in. If not, tap "Create account". It is free and only takes a few minutes. Your health data and watch settings will sync to this account.`,
       },
       {
         title: `Configure Health Tracking`,
@@ -343,7 +343,7 @@ Notification settings let you control which apps send alerts to your watch. This
     slug: `fitbit-charge-guide`,
     title: `How to Set Up and Get the Most from a Fitbit Charge`,
     excerpt: `The Fitbit Charge tracks steps, heart rate, sleep, and more — here's how to set it up and understand your daily stats.`,
-    body: `Fitbit Charge trackers are among the most popular fitness devices sold in the United States, and for good reason — they are straightforward to use, last about a week on a charge, and give you genuinely useful information about your daily activity and sleep.
+    body: `Fitbit Charge trackers are among the most popular fitness devices sold in the United States, and for good reason. They are straightforward to use, last about a week on a charge, and give you genuinely useful information about your daily activity and sleep.
 
 Before wearing your new Fitbit Charge, charge it fully using the magnetic charging cable included in the box. Attach the cable to the back of the tracker and connect the other end to a USB port or phone charger. A full charge takes about two hours, and a small icon on the screen shows when it is complete.
 
@@ -382,8 +382,8 @@ For sleep tracking, wear the tracker to bed. The Fitbit measures movement and he
       },
       {
         title: `Enable Sleep Tracking`,
-        content: `Wear your Fitbit to bed — it tracks movement and heart rate throughout the night automatically. In the morning, open the app and tap the Sleep tile to see how long you slept and how much time was spent in each sleep stage. Aim to wear it consistently for at least a week before drawing conclusions about your sleep patterns.`,
-        tip: `A sleep score between 72 and 83 is considered "Good" by Fitbit. Do not panic if your first few nights score lower — it takes the device time to learn your baseline.`,
+        content: `Wear your Fitbit to bed. It tracks movement and heart rate throughout the night automatically. In the morning, open the app and tap the Sleep tile to see how long you slept and how much time was spent in each sleep stage. Aim to wear it consistently for at least a week before drawing conclusions about your sleep patterns.`,
+        tip: `A sleep score between 72 and 83 is considered "Good" by Fitbit. Do not panic if your first few nights score lower. It takes the device time to learn your baseline.`,
       },
     ],
   },
@@ -440,11 +440,11 @@ The Wear OS app ecosystem is smaller than Apple Watch's, but the essential Googl
     slug: `wireless-earbuds-guide`,
     title: `How to Choose and Use Wireless Earbuds`,
     excerpt: `Wireless earbuds have replaced wired headphones for most people — here's how to pick the right pair and get them set up.`,
-    body: `Wireless earbuds connect to your phone using Bluetooth — there is no cable running between the earbuds and your device. Most modern pairs come in a small charging case that both stores and charges the earbuds when you are not using them.
+    body: `Wireless earbuds connect to your phone using Bluetooth. There is no cable running between the earbuds and your device. Most modern pairs come in a small charging case that both stores and charges the earbuds when you are not using them.
 
 Pairing wireless earbuds to your phone is usually straightforward. For Apple AirPods with an iPhone, open the case near your phone and a connection prompt appears automatically. For most other earbuds, you open the case, hold down a pairing button until a light flashes, then go to your phone's Bluetooth settings and select the earbuds from the list.
 
-There are several types to choose from. True wireless earbuds (like AirPods or Galaxy Buds) have no wire connecting the two earbuds at all — each sits completely independently in your ear. These are the most popular style today. Neckband earbuds have a cord connecting the two buds that rests around your neck — they are harder to lose but slightly bulkier. Sports hooks wrap around your ear for a more secure fit during exercise and are harder to knock loose while running or working out.
+There are several types to choose from. True wireless earbuds (like AirPods or Galaxy Buds) have no wire connecting the two earbuds at all — each sits completely independently in your ear. These are the most popular style today. Neckband earbuds have a cord connecting the two buds that rests around your neck. They are harder to lose but slightly bulkier. Sports hooks wrap around your ear for a more secure fit during exercise and are harder to knock loose while running or working out.
 
 Key features to think about before buying: Active Noise Cancellation (ANC) electronically reduces background noise — excellent for use on airplanes, in coffee shops, or in loud offices. Transparency mode does the opposite, letting outside sounds in while you listen, which is useful when you need to stay aware of your surroundings. Fit matters enormously — earbuds that do not seal your ear canal sound worse and fall out more easily. Many earbuds include several sizes of silicone ear tips in the box. Try different sizes to find the most secure fit.
 
@@ -650,7 +650,7 @@ Beyond Edge, Immersive Reader is built into Word Online, OneNote, Outlook on the
       {
         title: `Open Immersive Reader in Edge`,
         content: `Open Microsoft Edge and navigate to any article or text-heavy web page. Look for a small book icon (it looks like an open book) in the address bar at the far right. Click it. The page will reload in a clean, text-only view with a toolbar at the top.`,
-        tip: `The book icon does not appear on every type of page — it works best on news articles, blog posts, and similar content pages. It will not appear on home pages, search results, or social media feeds.`,
+        tip: `The book icon does not appear on every type of page. It works best on news articles, blog posts, and similar content pages. It will not appear on home pages, search results, or social media feeds.`,
       },
       {
         title: `Adjust Text Size and Background`,
@@ -680,7 +680,7 @@ Touch typing has a brief learning curve, but the investment pays off for years. 
 
 The home row is the foundation of touch typing. Your left hand rests with fingers on A, S, D, and F. Your right hand rests on J, K, L, and the semicolon. You can feel the small bumps on the F and J keys — these are guides so you know your hands are in the right position without looking. From the home row, each finger reaches up to the row above and down to the row below to hit other keys.
 
-Free practice tools make the learning process much more straightforward than it used to be. Keybr.com adapts to your mistakes — it detects which keys you struggle with and gives you more practice on those specific letters. This targeted approach is faster than random practice. TypingClub.com offers a structured course with video lessons that takes you from complete beginner to comfortable typist through hundreds of short exercises. It is used in schools and is completely free. Typing.com is another full course, well-organized and straightforward to follow. NitroType.com is a racing game where you type to make a car go faster — the game format motivates kids and adults who find plain exercises boring. 10FastFingers.com offers timed speed tests where you can track progress week to week.
+Free practice tools make the learning process much more straightforward than it used to be. Keybr.com adapts to your mistakes. It detects which keys you struggle with and gives you more practice on those specific letters. This targeted approach is faster than random practice. TypingClub.com offers a structured course with video lessons that takes you from complete beginner to comfortable typist through hundreds of short exercises. It is used in schools and is completely free. Typing.com is another full course, well-organized and straightforward to follow. NitroType.com is a racing game where you type to make a car go faster — the game format motivates kids and adults who find plain exercises boring. 10FastFingers.com offers timed speed tests where you can track progress week to week.
 
 A realistic practice schedule is 15–20 minutes daily for a few weeks. Accuracy matters more than speed at first — trying to type fast before you know the key positions creates bad habits. Slow, deliberate practice with correct technique leads to faster typing than rushing and making errors.
 
@@ -716,7 +716,7 @@ For seniors learning to type for the first time, TypingClub offers a Senior cour
     slug: `text-to-speech-windows`,
     title: `How to Use Windows Built-In Read Aloud and Text-to-Speech`,
     excerpt: `Windows has built-in tools that read text aloud — no extra software needed for emails, web pages, and documents.`,
-    body: `Windows includes several free text-to-speech tools that can read websites, documents, and other on-screen text aloud. You do not need to download any additional software to use them — they are already on your computer.
+    body: `Windows includes several free text-to-speech tools that can read websites, documents, and other on-screen text aloud. You do not need to download any additional software to use them. They are already on your computer.
 
 The most useful of these for everyday reading is the Read Aloud feature in Microsoft Edge. When you have Edge open on a website, click the three-dot menu in the top right corner and choose "Read aloud" — or press Ctrl + Shift + U. Edge will begin reading the page from where your cursor is, highlighting each word as it speaks. A small toolbar appears where you can pause, skip back, or adjust the reading speed and voice.
 
@@ -753,7 +753,7 @@ For a third-party option, NaturalReader offers a free desktop app for Windows wi
       },
       {
         title: `Turn Narrator On and Off`,
-        content: `Narrator is Windows' full screen reader — it reads everything on screen, including web pages, apps, and menus. Press Win + Ctrl + Enter to toggle it on or off. When turned on for the first time, Windows will ask if you want to enable it. Press Enter to confirm or Escape to cancel.`,
+        content: `Narrator is Windows' full screen reader. It reads everything on screen, including web pages, apps, and menus. Press Win + Ctrl + Enter to toggle it on or off. When turned on for the first time, Windows will ask if you want to enable it. Press Enter to confirm or Escape to cancel.`,
         warning: `Narrator reads everything on screen out loud, including menus and notifications. It can feel overwhelming at first. Press Win + Ctrl + Enter again to turn it off if needed.`,
       },
     ],
@@ -766,7 +766,7 @@ For a third-party option, NaturalReader offers a free desktop app for Windows wi
 
 What makes Orbi somewhat unique compared to other mesh systems is its dedicated backhaul channel. Most mesh systems use the same Wi-Fi band to communicate between units and to serve your devices. Orbi reserves a dedicated radio exclusively for communication between the main router and its satellite units — this means the satellites do not steal bandwidth from the devices connected to your network. The result is more consistent speeds throughout the home.
 
-Setting up Orbi starts with connecting the main Orbi router to your modem. Your modem is the device your internet provider installed — it usually has a cable or phone line coming out of the wall connected to it. Use the Ethernet cable included with your Orbi to connect the modem's output port to the Orbi router's WAN port (labeled "Internet" on most models). Then plug the Orbi router into power.
+Setting up Orbi starts with connecting the main Orbi router to your modem. Your modem is the device your internet provider installed. It usually has a cable or phone line coming out of the wall connected to it. Use the Ethernet cable included with your Orbi to connect the modem's output port to the Orbi router's WAN port (labeled "Internet" on most models). Then plug the Orbi router into power.
 
 Download the free Orbi app on your iPhone or Android phone from the App Store or Google Play Store. Open the app and tap "New Setup." The app guides you through connecting to the Orbi router, signing in or creating a Netgear account, and naming your Wi-Fi network and setting a password.
 
@@ -812,11 +812,11 @@ Comparing Orbi to other systems: Orbi generally offers stronger performance and 
     slug: `airpods-alternatives-guide`,
     title: `Best AirPods Alternatives for Android Users and Budget Shoppers`,
     excerpt: `AirPods work best with iPhone — if you have Android or want to spend less, these alternatives offer similar quality for less money.`,
-    body: `Apple AirPods are among the most popular earbuds in the world, and for iPhone users they offer a genuinely excellent experience. But on an Android phone, AirPods work as standard Bluetooth earbuds — you lose the auto-pause when removed, the instant pairing animation, Siri voice activation, and Spatial Audio features. They still play music and take calls, but at that point you are paying the Apple premium for features that will not work on your device.
+    body: `Apple AirPods are among the most popular earbuds in the world, and for iPhone users they offer a genuinely excellent experience. But on an Android phone, AirPods work as standard Bluetooth earbuds. You lose the auto-pause when removed, the instant pairing animation, Siri voice activation, and Spatial Audio features. They still play music and take calls, but at that point you are paying the Apple premium for features that will not work on your device.
 
 For Android users, or for anyone who wants good earbuds without spending $180–$250, there are several excellent alternatives.
 
-If you have a Samsung Galaxy phone, Samsung Galaxy Buds are the natural match — they integrate directly into Galaxy phones the same way AirPods integrate with iPhone. Galaxy Buds FE (Fan Edition) at about $60 offer active noise cancellation, touch controls, and a comfortable fit. The Galaxy Buds2 Pro at $180 add 360 Audio, improved noise cancellation, and even better sound quality.
+If you have a Samsung Galaxy phone, Samsung Galaxy Buds are the natural match. They integrate directly into Galaxy phones the same way AirPods integrate with iPhone. Galaxy Buds FE (Fan Edition) at about $60 offer active noise cancellation, touch controls, and a comfortable fit. The Galaxy Buds2 Pro at $180 add 360 Audio, improved noise cancellation, and even better sound quality.
 
 For the best noise cancellation available in any earbuds, Sony's WF-1000XM5 (~$280) are the benchmark that other manufacturers compare themselves against. They block out airplane cabin noise, office environments, and city sounds better than anything else at their price. Battery life is 8 hours per charge.
 
@@ -859,7 +859,7 @@ When shopping, check the return policy — fit is personal, and sizing ear tips 
     excerpt: `The right case and screen protector can save your phone from a cracked screen — here's how to pick the best option for your lifestyle.`,
     body: `A dropped phone without protection can cost $150–$400 to repair, depending on the model. The right case and screen protector together cost $20–60 and absorb most of the damage from everyday drops and scratches. Choosing the right combination depends on how you use your phone and how much bulk you are willing to accept.
 
-Phone cases come in several main types. Slim cases add minimal size to your phone — they protect against scratches and light drops but may not absorb the impact of a hard fall onto concrete. These suit careful users who do not like the feeling of a thick phone. Wallet cases replace your wallet by holding one or two cards and your ID in a flap attached to the back of the case. If you like leaving the house with your phone alone, this eliminates the need to carry a wallet. Rugged cases like the OtterBox Defender series add significant bulk but can survive falls that would shatter an unprotected phone. They are a good choice for outdoor workers, people who often drop things, or anyone with an expensive phone they cannot afford to repair. Clear cases show off the phone's original design while adding scratch and drop protection — popular for people who like their phone's color or finish.
+Phone cases come in several main types. Slim cases add minimal size to your phone. They protect against scratches and light drops but may not absorb the impact of a hard fall onto concrete. These suit careful users who do not like the feeling of a thick phone. Wallet cases replace your wallet by holding one or two cards and your ID in a flap attached to the back of the case. If you like leaving the house with your phone alone, this eliminates the need to carry a wallet. Rugged cases like the OtterBox Defender series add significant bulk but can survive falls that would shatter an unprotected phone. They are a good choice for outdoor workers, people who often drop things, or anyone with an expensive phone they cannot afford to repair. Clear cases show off the phone's original design while adding scratch and drop protection — popular for people who like their phone's color or finish.
 
 Key brands worth knowing: OtterBox (rugged and popular with reliable drop protection), Speck (slim but more protective than generic slim cases), CASETiFY (fashionable designs, decent protection), Totallee (ultra-thin, nearly invisible, protects from scratches more than drops), Peak Design (premium cases with a built-in magnet system for mounting the phone to car mounts and other accessories).
 
@@ -936,7 +936,7 @@ Recommendations: AppleCare+ makes sense for iPhones that cost $800 or more, espe
       },
       {
         title: `Consider Third-Party Plans for Non-Apple Phones`,
-        content: `For Android phones, check SquareTrade plans at Costco.com — they tend to cost less than carrier plans for similar coverage. Read the fine print on what is covered (accidental damage vs. mechanical failure vs. theft vs. loss) and what the deductibles are for each type of claim.`,
+        content: `For Android phones, check SquareTrade plans at Costco.com. They tend to cost less than carrier plans for similar coverage. Read the fine print on what is covered (accidental damage vs. mechanical failure vs. theft vs. loss) and what the deductibles are for each type of claim.`,
         warning: `Read the claim process before buying any insurance. Some plans require you to send your phone away for 7–10 business days for repair. If you need your phone for work, a local repair option or on-site replacement matters.`,
       },
       {

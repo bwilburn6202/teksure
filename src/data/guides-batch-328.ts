@@ -45,11 +45,11 @@ This guide walks through ordering groceries with the Walmart app on a smartphone
       {
         title: 'Pay with a saved card or EBT',
         content: 'Tap "Add a payment method." Walmart Grocery accepts credit and debit cards, Walmart gift cards, and EBT (food help) cards for eligible items. Enter your card information once and the app saves it for future orders. Tap "Place Order" to confirm.',
-        warning: 'For EBT, only food items are covered — you cannot use EBT for the delivery fee or for non-food items. The app shows you which items in your cart are EBT-eligible during checkout.',
+        warning: 'For EBT, only food items are covered. You cannot use EBT for the delivery fee or for non-food items. The app shows you which items in your cart are EBT-eligible during checkout.',
       },
       {
         title: 'Pick up or receive your groceries',
-        content: 'For pickup: when your order is ready, the app sends a notification. Drive to the store, park in any spot marked "Pickup," and tap "I\'m Here" in the app. An employee brings out your groceries and loads them in your trunk — you do not need to leave your car. For delivery: a driver brings the groceries to your door at the time you scheduled. You do not need to be home. But you may need to sign for items requiring an ID like medications.',
+        content: 'For pickup: when your order is ready, the app sends a notification. Drive to the store, park in any spot marked "Pickup," and tap "I\'m Here" in the app. An employee brings out your groceries and loads them in your trunk. You do not need to leave your car. For delivery: a driver brings the groceries to your door at the time you scheduled. You do not need to be home. But you may need to sign for items requiring an ID like medications.',
       },
     ],
   },

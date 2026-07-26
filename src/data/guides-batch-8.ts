@@ -34,7 +34,7 @@ Once set up, you can ask Siri to give directions, read text messages out loud, o
     thumbnailEmoji: '',
     publishedAt: '2026-04-17',
     difficulty: 'Beginner',
-    body: `Android Auto is Google's version of CarPlay — it puts a simplified version of your Android phone on the car's screen so you can use Google Maps, play music, and hear messages read aloud while driving. Most new cars and many aftermarket radios support it.
+    body: `Android Auto is Google's version of CarPlay. It puts a simplified version of your Android phone on the car's screen so you can use Google Maps, play music, and hear messages read aloud while driving. Most new cars and many aftermarket radios support it.
 
 After a one-time setup, Android Auto connects automatically whenever you start the car and plug in (or connect wirelessly). You control everything with voice commands or large, easy-to-tap buttons designed to be safer than looking at your phone.`,
     steps: [
@@ -140,7 +140,7 @@ Family Link works for kids under 13 (who need parent permission for a Google acc
     thumbnailEmoji: '',
     publishedAt: '2026-04-17',
     difficulty: 'Intermediate',
-    body: `Chrome Remote Desktop is a free Google tool that lets you see and control another computer over the internet. It is perfect for helping a parent or grandparent fix a problem — you can click around on their screen as if you were sitting in front of it.
+    body: `Chrome Remote Desktop is a free Google tool that lets you see and control another computer over the internet. It is perfect for helping a parent or grandparent fix a problem. You can click around on their screen as if you were sitting in front of it.
 
 Both computers need the Chrome browser and a Google account. The person asking for help generates a short access code, shares it with you, and your computer connects to theirs within seconds.`,
     steps: [
@@ -167,7 +167,7 @@ These changes work on both iPhone and Android. The exact menu names differ sligh
     steps: [
       { title: 'Make text and icons larger', content: 'On iPhone, open Settings, tap Display & Brightness, then Text Size, and drag the slider right. On Android, open Settings, tap Display, then Font Size.' },
       { title: 'Turn up the ringer and notification volume', content: 'Press the volume up button on the side of the phone all the way up. On iPhone, also open Settings, tap Sounds & Haptics, and drag the ringer slider to the top.' },
-      { title: 'Pin emergency contacts to the home screen', content: 'Create a contact for 911, family members, and the doctor. On iPhone, open Contacts, tap the name, then Share Contact and Add to Home Screen — it becomes an icon you can tap once.' },
+      { title: 'Pin emergency contacts to the home screen', content: 'Create a contact for 911, family members, and the doctor. On iPhone, open Contacts, tap the name, then Share Contact and Add to Home Screen. It becomes an icon you can tap once.' },
       { title: 'Reduce motion and animations', content: 'On iPhone, open Settings, tap Accessibility, then Motion, and turn on Reduce Motion. On Android, open Settings, tap Accessibility, then Visibility Enhancements, and turn on Remove Animations.' },
       { title: 'Set up a simple home screen', content: 'Remove games and rarely used apps from the home screen by holding an icon and choosing Remove. Keep only Phone, Messages, Camera, Maps, and a weather app on the first screen.' },
     ],
@@ -182,7 +182,7 @@ These changes work on both iPhone and Android. The exact menu names differ sligh
     thumbnailEmoji: '🆘',
     publishedAt: '2026-04-17',
     difficulty: 'Beginner',
-    body: `Medical ID is a built-in iPhone feature that shows your medical information on the lock screen during an emergency. Paramedics and hospital staff are trained to look for it — they can see your allergies, medications, and emergency contacts without needing your passcode.
+    body: `Medical ID is a built-in iPhone feature that shows your medical information on the lock screen during an emergency. Paramedics and hospital staff are trained to look for it. They can see your allergies, medications, and emergency contacts without needing your passcode.
 
 Setting it up takes about five minutes and could save your life. The information stays private at all other times — only someone pressing the emergency button on a locked phone will see it.`,
     steps: [
@@ -218,7 +218,7 @@ VoiceOver changes how you interact with the phone: single-tap to hear an item, d
   {
     slug: 'use-talkback-android',
     title: 'How to Use TalkBack on Android (Screen Reader)',
-    excerpt: `TalkBack is Android's free screen reader — it speaks everything on your phone so blind and low-vision users can navigate without seeing the screen.`,
+    excerpt: `TalkBack is Android's free screen reader. It speaks everything on your phone so blind and low-vision users can navigate without seeing the screen.`,
     category: 'tips-tricks',
     tags: ['TalkBack', 'Android', 'accessibility', 'screen reader', 'blind'],
     readTime: '7 min',
@@ -507,9 +507,9 @@ Setup takes under 15 minutes. You create a Google account (Fitbit accounts moved
     steps: [
       { title: 'Charge the Fitbit before starting', content: 'Plug the charging cable into a USB port or wall adapter, then clip the Fitbit to the charger. Wait until the battery icon shows full — usually about an hour.' },
       { title: 'Install the Fitbit app', content: 'Open the App Store (iPhone) or Play Store (Android), search "Fitbit," and install it. Open the app and tap Join Fitbit or Sign In.' },
-      { title: 'Sign in with a Google account', content: 'Since 2023, Fitbit requires a Google account — you cannot create a new Fitbit account anymore. Use your existing Gmail or create a new Google account (free).' },
+      { title: 'Sign in with a Google account', content: 'Since 2023, Fitbit requires a Google account. You cannot create a new Fitbit account anymore. Use your existing Gmail or create a new Google account (free).' },
       { title: 'Pair the Fitbit over Bluetooth', content: 'Tap the profile icon, then Set Up a Device, and pick your model. Follow the prompts to put the Fitbit in pairing mode — usually by holding a button for 3 seconds.' },
-      { title: 'Set daily goals', content: 'The app will ask for your age, height, weight, and goals. A common default is 10,000 steps per day and 8 hours of sleep — you can change these any time from Settings.' },
+      { title: 'Set daily goals', content: 'The app will ask for your age, height, weight, and goals. A common default is 10,000 steps per day and 8 hours of sleep. You can change these any time from Settings.' },
     ],
   },
   {
@@ -551,7 +551,7 @@ For older adults or anyone living alone, this feature can be life-saving. Setup 
       { title: 'Pick when it is active', content: 'Apple gives two options: "Always On" (detects falls 24/7) and "Only on During Workouts" (only while you are exercising). Pick Always On for maximum safety, especially for older adults.' },
       { title: 'On Pixel phones, open Personal Safety', content: 'Open the Personal Safety app (pre-installed on Pixel phones). Tap Features, then Car crash detection and Emergency SOS. The car crash detection also covers falls on newer Pixel models.' },
       { title: 'Add emergency contacts', content: 'Back in Medical ID (iPhone) or Personal Safety (Pixel), add at least two emergency contacts. If a fall is detected and you do not respond, these people are called automatically.' },
-      { title: 'Test it carefully', content: 'Do not test by actually falling. Instead, check that the feature is on by opening Emergency SOS or Personal Safety and confirming the Fall Detection toggle is green. The first real fall will trigger a countdown — you can cancel if you are okay.' },
+      { title: 'Test it carefully', content: 'Do not test by actually falling. Instead, check that the feature is on by opening Emergency SOS or Personal Safety and confirming the Fall Detection toggle is green. The first real fall will trigger a countdown. You can cancel if you are okay.' },
     ],
   },
   // ── ADVANCED EMAIL ──────────────────────────────────────────────────────────
@@ -586,7 +586,7 @@ Filters work best on a computer — mobile apps do not let you create them, thou
     thumbnailEmoji: '',
     publishedAt: '2026-04-17',
     difficulty: 'Beginner',
-    body: `Organizing email with folders or labels makes it much easier to find an old message and keeps your inbox from feeling overwhelming. Gmail calls them labels. Outlook and Apple Mail call them folders — they work the same way.
+    body: `Organizing email with folders or labels makes it much easier to find an old message and keeps your inbox from feeling overwhelming. Gmail calls them labels. Outlook and Apple Mail call them folders. They work the same way.
 
 A simple system works best: one folder for each big category (Bills, Family, Work, Travel) rather than many tiny ones. Most people do not need more than five or six.`,
     steps: [
@@ -594,7 +594,7 @@ A simple system works best: one folder for each big category (Bills, Family, Wor
       { title: 'Create the folders or labels', content: 'In Gmail on a computer, click the plus sign next to Labels in the left sidebar. In Outlook, right-click your email account and pick New Folder. In Apple Mail, click Mailbox, then New Mailbox.' },
       { title: 'Move existing emails', content: 'Drag messages from the inbox onto a folder or label in the sidebar. To move many at once, hold the Shift key while clicking the first and last message, then drag them all together.' },
       { title: 'Set up a filter or rule for future email', content: 'Create a filter (Gmail) or rule (Outlook, Apple Mail) so future emails from the same senders go straight into the right folder. See the Gmail filters guide for step-by-step instructions.' },
-      { title: 'Archive instead of delete', content: 'When you finish reading an email, archive it instead of leaving it in the inbox. Archive means "keep it but hide it" — you can still search for it later. But it clears out the inbox.' },
+      { title: 'Archive instead of delete', content: 'When you finish reading an email, archive it instead of leaving it in the inbox. Archive means "keep it but hide it". You can still search for it later. But it clears out the inbox.' },
     ],
   },
   {
@@ -696,9 +696,9 @@ The fixes are small: brighter or dimmer screens to match the room, bigger text, 
 
 The biggest single upgrade is lighting that comes from in front of you, not behind. A window at your back turns your face into a silhouette. A lamp in front of you fixes it.`,
     steps: [
-      { title: 'Put your light source in front of you', content: 'Face a window or put a desk lamp behind your webcam pointing at your face. Never sit with a window or bright light behind you — it makes your face dark.' },
+      { title: 'Put your light source in front of you', content: 'Face a window or put a desk lamp behind your webcam pointing at your face. Never sit with a window or bright light behind you. It makes your face dark.' },
       { title: 'Use headphones or earbuds', content: 'Built-in laptop speakers pick up sound and cause echo. Even cheap wired earbuds fix this. AirPods, Galaxy Buds, or any Bluetooth headphones also work.' },
-      { title: 'Raise the camera to eye level', content: 'Looking up into a laptop camera shows your ceiling and makes you look tired. Stack books or use a laptop stand so the camera sits at eye level — you look more engaged this way.' },
+      { title: 'Raise the camera to eye level', content: 'Looking up into a laptop camera shows your ceiling and makes you look tired. Stack books or use a laptop stand so the camera sits at eye level. You look more engaged this way.' },
       { title: 'Mute when not speaking', content: 'Background noise — dogs, kids, dishwashers — is distracting. In Zoom, Teams, and Google Meet, press the spacebar to temporarily unmute so you do not forget to mute again.' },
       { title: 'Check the background', content: 'Tidy the area behind you before the call. Avoid clutter, open doors, or bright windows. If your space is messy, most apps let you blur the background — look for a small icon next to the camera or mic button.' },
     ],

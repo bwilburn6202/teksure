@@ -11,7 +11,7 @@ export const guidesBatch91: Guide[] = [
     thumbnailEmoji: ``,
     publishedAt: `2026-04-20`,
     difficulty: `Beginner`,
-    body: `SimpliSafe is a home security system you set up yourself — no tools, no drilling, and no technician visit needed. Everything sticks to your walls and doors with adhesive strips that peel off cleanly when you move. You purchase the hardware once. And you can choose whether or not to pay for professional monitoring. If you skip monitoring, the alarm will still sound loudly if a sensor is triggered — you just handle calling for help yourself. If you add 24/7 professional monitoring, a real person at SimpliSafe's monitoring center will contact you and, if needed, dispatch police or fire services.
+    body: `SimpliSafe is a home security system you set up yourself — no tools, no drilling, and no technician visit needed. Everything sticks to your walls and doors with adhesive strips that peel off cleanly when you move. You purchase the hardware once. And you can choose whether or not to pay for professional monitoring. If you skip monitoring, the alarm will still sound loudly if a sensor is triggered. You just handle calling for help yourself. If you add 24/7 professional monitoring, a real person at SimpliSafe's monitoring center will contact you and, if needed, dispatch police or fire services.
 
 When your SimpliSafe package arrives, you will find a Base Station (the brain of the system), a Keypad (where you enter your PIN), and a set of sensors for doors, windows, and possibly motion. The Base Station connects to your home Wi-Fi and cellular networks. So it keeps working even if your internet goes down. The keypad mounts near your front door.
 
@@ -38,7 +38,7 @@ Setting up SimpliSafe does not require any special technical knowledge. You plac
       },
       {
         title: `Download the SimpliSafe app and connect to Wi-Fi`,
-        content: `Search for "SimpliSafe" in the App Store (iPhone) or Google Play Store (Android) and install the free app. Open it and create a SimpliSafe account using your email address. The app will guide you through connecting your Base Station to your home Wi-Fi network — you will need your Wi-Fi password ready. Once connected, you can arm, disarm, and check sensor status from anywhere.`,
+        content: `Search for "SimpliSafe" in the App Store (iPhone) or Google Play Store (Android) and install the free app. Open it and create a SimpliSafe account using your email address. The app will guide you through connecting your Base Station to your home Wi-Fi network. You will need your Wi-Fi password ready. Once connected, you can arm, disarm, and check sensor status from anywhere.`,
       },
       {
         title: `Test the system before relying on it`,
@@ -61,7 +61,7 @@ Setting up SimpliSafe does not require any special technical knowledge. You plac
 
 The system includes a Base Station (the central hub), a Keypad, Contact Sensors for doors and windows, and Motion Detectors. You can expand it later by adding more sensors, a Range Extender to strengthen the signal across a large home, or Ring security cameras. The alarm sounds at 104 decibels — loud enough to alert neighbors.
 
-Ring Protect is the optional monitoring subscription. The basic plan ($10/month or $100/year) adds professional 24/7 monitoring, cellularbackup in case your internet goes down, and extended video history for cameras. Without a subscription, you still get loud alarm sounds and app notifications — you just handle contacting emergency services yourself.
+Ring Protect is the optional monitoring subscription. The basic plan ($10/month or $100/year) adds professional 24/7 monitoring, cellularbackup in case your internet goes down, and extended video history for cameras. Without a subscription, you still get loud alarm sounds and app notifications. You just handle contacting emergency services yourself.
 
 Setting up Ring Alarm is designed to take about 30 minutes. You do not need any wiring experience. Each sensor uses adhesive mounting strips and a small screwdriver is only needed if you prefer screw mounting. This guide walks you through the complete setup from start to finish.`,
     steps: [
@@ -110,7 +110,7 @@ This guide covers setting up your first Arlo camera, choosing the best placement
     steps: [
       {
         title: `Download the Arlo app and create your account`,
-        content: `Search for "Arlo" in the App Store (iPhone) or Google Play (Android) and install the free app. Open it and tap "Create Account" — you will need an email address and a password. Arlo will send a verification email. Click the link in that email before continuing. Your Arlo account is what ties your cameras, recordings, and settings together, so use an email address you check regularly.`,
+        content: `Search for "Arlo" in the App Store (iPhone) or Google Play (Android) and install the free app. Open it and tap "Create Account". You will need an email address and a password. Arlo will send a verification email. Click the link in that email before continuing. Your Arlo account is what ties your cameras, recordings, and settings together, so use an email address you check regularly.`,
       },
       {
         title: `Set up the SmartHub or connect directly to Wi-Fi`,
@@ -162,7 +162,7 @@ Blink cameras are a great starting point for home monitoring because they are af
       {
         title: `Set up the Sync Module`,
         content: `Plug the Blink Sync Module into a wall outlet near your router. In the Blink app, tap the "+" button to add a new device and select "Sync Module." The app will display a QR code — hold your phone's camera up to the QR code on the Sync Module's label to scan it. Follow the prompts to connect the Sync Module to your home Wi-Fi by entering your Wi-Fi password. The Sync Module's LED will turn solid blue when it is connected.`,
-        tip: `Quick Tip: Place the Sync Module in the same room as your router during setup — you can move it to a more central location afterward if needed.`,
+        tip: `Quick Tip: Place the Sync Module in the same room as your router during setup. You can move it to a more central location afterward if needed.`,
       },
       {
         title: `Add your Blink camera`,
@@ -171,7 +171,7 @@ Blink cameras are a great starting point for home monitoring because they are af
       {
         title: `Position the camera for best coverage`,
         content: `Place indoor cameras on a shelf or mount them to a wall 7 to 8 feet high, angled slightly downward so you can see faces. For outdoor cameras, mount them under an eave or overhang to protect from direct rain on the lens, and angle them so approaching visitors move across the frame rather than walking straight at the camera. Avoid pointing the camera at bright light sources, which can make people appear as dark silhouettes.`,
-        warning: `If you are mounting an outdoor camera in very cold climates (below -4°F or -20°C), standard alkaline batteries will fail quickly in the cold. Blink recommends lithium AA batteries specifically — they are printed as "Lithium" on the package.`,
+        warning: `If you are mounting an outdoor camera in very cold climates (below -4°F or -20°C), standard alkaline batteries will fail quickly in the cold. Blink recommends lithium AA batteries specifically. They are printed as "Lithium" on the package.`,
       },
       {
         title: `View live video and motion clips`,
@@ -279,13 +279,13 @@ This guide is written for someone who has never used Uber before. It covers crea
     thumbnailEmoji: ``,
     publishedAt: `2026-04-20`,
     difficulty: `Beginner`,
-    body: `Lyft is a rideshare service very similar to Uber — you use a smartphone app to request a ride, a nearby driver picks you up in their own car. And you are charged automatically through the app. Both services are available in most US cities and work around the clock. Many people have accounts with both apps and use whichever shows a shorter wait time or lower price on a given day.
+    body: `Lyft is a rideshare service very similar to Uber. You use a smartphone app to request a ride, a nearby driver picks you up in their own car. And you are charged automatically through the app. Both services are available in most US cities and work around the clock. Many people have accounts with both apps and use whichever shows a shorter wait time or lower price on a given day.
 
 Lyft has a few features that make it popular, particularly with people who value safety. Every trip includes real-time tracking, and Lyft lets you share your trip status — including a live map and the driver's name — with a friend or family member. There is also an in-app safety button that connects you to 911 directly from the ride screen.
 
 Lyft offers several ride types depending on your needs. Lyft Standard is the everyday affordable option — usually a sedan or small SUV. Lyft XL fits up to 6 passengers and is good for groups or when you are carrying large items. Lyft Lux is a higher-end option with luxury vehicles. Lyft Assisted pairs you with a driver who has been trained in helping passengers with mobility needs.
 
-The Lyft Pass program is worth knowing about if you ride often — it lets employers, healthcare providers, and some senior programs offer discounted or prepaid rides to specific groups of people. If someone has set up a Lyft Pass for you, you will receive a code to enter in the app that automatically applies discounts.
+The Lyft Pass program is worth knowing about if you ride often. It lets employers, healthcare providers, and some senior programs offer discounted or prepaid rides to specific groups of people. If someone has set up a Lyft Pass for you, you will receive a code to enter in the app that automatically applies discounts.
 
 This guide covers creating your Lyft account, requesting a ride, the key safety features, and how to cancel a ride if you need to.`,
     steps: [
@@ -295,7 +295,7 @@ This guide covers creating your Lyft account, requesting a ride, the key safety 
       },
       {
         title: `Add your payment method`,
-        content: `Tap the profile icon in the top corner of the app and go to "Payment." Tap "Add Payment Method" and enter your credit or debit card number, expiration date, and security code. Lyft also accepts PayPal, Apple Pay, and Google Pay. Once added, your payment information is stored securely — you will never need to hand over money or a card inside a Lyft vehicle. The charge appears on your statement after the ride ends.`,
+        content: `Tap the profile icon in the top corner of the app and go to "Payment." Tap "Add Payment Method" and enter your credit or debit card number, expiration date, and security code. Lyft also accepts PayPal, Apple Pay, and Google Pay. Once added, your payment information is stored securely. You will never need to hand over money or a card inside a Lyft vehicle. The charge appears on your statement after the ride ends.`,
         tip: `Quick Tip: Some health insurance plans and Medicare Advantage programs cover non-emergency medical transportation through Lyft. Ask your insurance provider if this benefit is included in your plan.`,
       },
       {
@@ -304,12 +304,12 @@ This guide covers creating your Lyft account, requesting a ride, the key safety 
       },
       {
         title: `Use the safety features`,
-        content: `While waiting for or riding in your Lyft, tap the shield icon on the ride screen to access safety tools. "Share Trip" lets you send a live link to a family member or friend so they can watch your ride on a map in real time — they do not need a Lyft account to view it. There is also a "Call 911" shortcut that dials emergency services and shares your GPS location with the operator. You can also report a safety issue directly to Lyft through this menu.`,
+        content: `While waiting for or riding in your Lyft, tap the shield icon on the ride screen to access safety tools. "Share Trip" lets you send a live link to a family member or friend so they can watch your ride on a map in real time. They do not need a Lyft account to view it. There is also a "Call 911" shortcut that dials emergency services and shares your GPS location with the operator. You can also report a safety issue directly to Lyft through this menu.`,
         warning: `Always verify the driver's name, photo, and license plate before entering the vehicle. Lyft shows all three on the pickup screen. If any detail does not match, do not get in — cancel the ride and request a new one.`,
       },
       {
         title: `Cancel a ride if needed`,
-        content: `If you need to cancel a ride, tap the "X" button on the ride status screen right away — canceling within 2 minutes of the driver accepting is usually free. If you wait longer and the driver is already on the way, Lyft charges a small cancellation fee (typically $2 to $5) to compensate the driver for their time. Once the driver arrives, no cancellation fee applies if you decide not to get in — you are charged only if you cancel after a certain window has passed.`,
+        content: `If you need to cancel a ride, tap the "X" button on the ride status screen right away — canceling within 2 minutes of the driver accepting is usually free. If you wait longer and the driver is already on the way, Lyft charges a small cancellation fee (typically $2 to $5) to compensate the driver for their time. Once the driver arrives, no cancellation fee applies if you decide not to get in. You are charged only if you cancel after a certain window has passed.`,
       },
     ],
   },
@@ -352,7 +352,7 @@ GoGoGrandparent charges a service fee on top of the regular Uber or Lyft fare, t
       },
       {
         title: `Know when to call for help`,
-        content: `If anything goes wrong during a ride — you feel unsafe, the driver takes a wrong route, or you need help — pressing "0" on your phone at any time during a GoGoGrandparent interaction connects you to a live human operator. The operator can contact the driver, flag the ride for Uber or Lyft support, or help arrange alternative transportation. This is one of the key advantages of GoGoGrandparent over using the Uber or Lyft apps directly.`,
+        content: `If anything goes wrong during a ride. You feel unsafe, the driver takes a wrong route, or you need help — pressing "0" on your phone at any time during a GoGoGrandparent interaction connects you to a live human operator. The operator can contact the driver, flag the ride for Uber or Lyft support, or help arrange alternative transportation. This is one of the key advantages of GoGoGrandparent over using the Uber or Lyft apps directly.`,
         warning: `GoGoGrandparent adds a service fee to every ride. Before each ride, ask the operator for the estimated total cost including the GoGoGrandparent fee so there are no billing surprises.`,
       },
     ],
@@ -453,22 +453,22 @@ This guide explains Back Market's condition grades, how to browse for a good dea
     thumbnailEmoji: ``,
     publishedAt: `2026-04-20`,
     difficulty: `Beginner`,
-    body: `Decluttr is a website and app that buys used electronics and media items directly from you — you do not have to find a buyer or negotiate a price. You scan an item's barcode or enter a device's model number, and Decluttr tells you right away what they will pay. If you accept the price, you ship your items to them for free using a prepaid shipping label they provide. Once they receive and verify the items, they pay you the next business day by PayPal, direct bank deposit, or check.
+    body: `Decluttr is a website and app that buys used electronics and media items directly from you. You do not have to find a buyer or negotiate a price. You scan an item's barcode or enter a device's model number, and Decluttr tells you right away what they will pay. If you accept the price, you ship your items to them for free using a prepaid shipping label they provide. Once they receive and verify the items, they pay you the next business day by PayPal, direct bank deposit, or check.
 
 The types of items Decluttr accepts include smartphones, tablets, iPods, gaming consoles, video games, CDs, DVDs, Blu-rays, and Lego sets. They do not accept every item — very old phones, scratched discs that will not play, or items not in their catalog will be declined. But for many households clearing out a closet or drawer full of old tech and entertainment, Decluttr is one of the fastest ways to turn clutter into cash.
 
-The convenience is the main appeal. You do not have to list items, answer buyer questions, meet strangers, or wait for someone to purchase. The tradeoff is that Decluttr's prices are often lower than what you would get selling individually on eBay or Facebook Marketplace — you are paying for convenience and speed. For a single high-value item like a recent-model iPhone, you might make more selling it yourself on Swappa. But for a box of 30 CDs and an old tablet, Decluttr can be the fastest and most practical solution.
+The convenience is the main appeal. You do not have to list items, answer buyer questions, meet strangers, or wait for someone to purchase. The tradeoff is that Decluttr's prices are often lower than what you would get selling individually on eBay or Facebook Marketplace. You are paying for convenience and speed. For a single high-value item like a recent-model iPhone, you might make more selling it yourself on Swappa. But for a box of 30 CDs and an old tablet, Decluttr can be the fastest and most practical solution.
 
 This guide walks through the entire Decluttr process from getting a quote to receiving payment.`,
     steps: [
       {
         title: `Get an instant price quote`,
         content: `Go to decluttr.com or download the free Decluttr app (available for iPhone and Android). For CDs, DVDs, and games, use the app's camera to scan the barcode on the back of the case — the barcode is the pattern of black and white lines usually near the bottom of the back cover. For phones and tablets, select the device type and model from a dropdown menu and answer a few questions about condition. Decluttr shows you the offer price instantly.`,
-        tip: `Quick Tip: Decluttr's prices fluctuate based on supply and demand. If the price seems low today, you can check back in a week or two — it may have increased if they run low on that item.`,
+        tip: `Quick Tip: Decluttr's prices fluctuate based on supply and demand. If the price seems low today, you can check back in a week or two. It may have increased if they run low on that item.`,
       },
       {
         title: `Add items to your basket and review the total`,
-        content: `Add each item you want to sell to your Decluttr "basket" one at a time. As you scan or enter each item, the price is added to a running total at the bottom of the screen. There is no minimum number of items — you can sell just one thing or a whole box full. When you are done adding items, review the basket total and tap "Sell Now" to proceed to checkout and get your free shipping label.`,
+        content: `Add each item you want to sell to your Decluttr "basket" one at a time. As you scan or enter each item, the price is added to a running total at the bottom of the screen. There is no minimum number of items. You can sell just one thing or a whole box full. When you are done adding items, review the basket total and tap "Sell Now" to proceed to checkout and get your free shipping label.`,
       },
       {
         title: `Pack and ship your items for free`,
@@ -501,7 +501,7 @@ StockX charges fees to both buyers and sellers. Buyers pay a "transaction fee" (
     steps: [
       {
         title: `Create a StockX account`,
-        content: `Go to stockx.com and click "Sign Up." Enter your email address and create a password, then verify your email. You will also need to add a payment method to buy (credit or debit card) and a payout method to sell (PayPal or bank account). StockX requires identity verification for sellers to comply with financial regulations — you may be asked to upload a photo ID before you can list items for sale.`,
+        content: `Go to stockx.com and click "Sign Up." Enter your email address and create a password, then verify your email. You will also need to add a payment method to buy (credit or debit card) and a payout method to sell (PayPal or bank account). StockX requires identity verification for sellers to comply with financial regulations. You may be asked to upload a photo ID before you can list items for sale.`,
       },
       {
         title: `Understand how the bid and ask system works`,
@@ -514,11 +514,11 @@ StockX charges fees to both buyers and sellers. Buyers pay a "transaction fee" (
       },
       {
         title: `List an item to sell`,
-        content: `To sell, search for the exact product you want to sell on StockX and click "Sell." StockX only accepts items that are already in its catalog — you cannot list a custom or one-of-a-kind item. Select the specific size, style, or variant, and then enter your "Ask" price — the minimum you will accept. StockX shows you the current highest bid and recent sales prices to help you price competitively. If a buyer's bid matches your ask, you receive an email to ship the item within 2 business days.`,
+        content: `To sell, search for the exact product you want to sell on StockX and click "Sell." StockX only accepts items that are already in its catalog. You cannot list a custom or one-of-a-kind item. Select the specific size, style, or variant, and then enter your "Ask" price — the minimum you will accept. StockX shows you the current highest bid and recent sales prices to help you price competitively. If a buyer's bid matches your ask, you receive an email to ship the item within 2 business days.`,
       },
       {
         title: `Ship your item to StockX for authentication`,
-        content: `When a sale triggers, StockX emails you a prepaid shipping label. Do not ship directly to the buyer — you ship to StockX's authentication center. Use the original box and all original accessories if possible, as authenticators check those too. Once your item passes authentication, StockX ships it to the buyer and releases your payment (minus fees) to your PayPal or bank account within 1 to 3 business days. If your item fails authentication, it is returned to you and the sale is cancelled.`,
+        content: `When a sale triggers, StockX emails you a prepaid shipping label. Do not ship directly to the buyer. You ship to StockX's authentication center. Use the original box and all original accessories if possible, as authenticators check those too. Once your item passes authentication, StockX ships it to the buyer and releases your payment (minus fees) to your PayPal or bank account within 1 to 3 business days. If your item fails authentication, it is returned to you and the sale is cancelled.`,
         warning: `Never try to sell a counterfeit or fake item on StockX — their authenticators are trained to detect fakes, and getting caught results in a permanent ban from the platform plus potential legal consequences.`,
       },
     ],
@@ -558,7 +558,7 @@ This guide explains who qualifies, where to purchase the pass, and how to use it
       },
       {
         title: `Use the pass at recreation sites`,
-        content: `When you arrive at a national park or other federal site, pull up to the entrance station and hand the pass to the attendant. The pass covers the cardholder and up to three other people in the same non-commercial vehicle — so a car with four people pays nothing. For sites without vehicle entry fees (like trails accessed on foot or by bike), the pass covers the cardholder and up to three guests. The pass does not guarantee a campsite reservation — it only covers the entrance fee.`,
+        content: `When you arrive at a national park or other federal site, pull up to the entrance station and hand the pass to the attendant. The pass covers the cardholder and up to three other people in the same non-commercial vehicle — so a car with four people pays nothing. For sites without vehicle entry fees (like trails accessed on foot or by bike), the pass covers the cardholder and up to three guests. The pass does not guarantee a campsite reservation. It only covers the entrance fee.`,
         warning: `The Senior Pass covers entrance fees but not all reservation fees. You still need to book and pay for campsites, lodging, and some guided tours separately — the pass gives you a 50% discount on some of those fees, but not all sites participate in the discount program.`,
       },
     ],
@@ -575,7 +575,7 @@ This guide explains who qualifies, where to purchase the pass, and how to use it
     difficulty: `Beginner`,
     body: `Recreation.gov is the official website operated by the US government for reserving campsites, cabins, day-use areas, and permits at federal recreation sites — including national parks, national forests, and Bureau of Land Management areas. If you want to camp at Yosemite Valley, the Grand Canyon's South Rim, or Acadia National Park, this is where those reservations are made. There is no other official way to book these sites.
 
-The site is free to browse. Creating an account is also free — you only pay when you complete a reservation. Most reservations require a non-refundable $6 to $10 booking fee per site per night, plus the actual campsite fee which varies by location (typically $20 to $40 per night).
+The site is free to browse. Creating an account is also free. You only pay when you complete a reservation. Most reservations require a non-refundable $6 to $10 booking fee per site per night, plus the actual campsite fee which varies by location (typically $20 to $40 per night).
 
 The most important thing to know about Recreation.gov is timing. Many popular campgrounds in national parks release their reservation windows exactly 6 months in advance, often at precisely 10:00 AM Eastern Time. For peak summer dates at the most popular parks, sites can sell out within minutes of opening. This means planning ahead is essential — not nice to have, but necessary for popular destinations.
 
@@ -640,7 +640,7 @@ The app is also a good resource for planning. Before you go, browse ranger-led p
       },
       {
         title: `Collect virtual passport stamps`,
-        content: `When you arrive at a park, tap the stamp icon within that park's section of the app. The app uses your phone's GPS to confirm you are actually at the park location before issuing the stamp. Each stamp is saved in a digital "Passport Book" inside the app — you can see all the parks you have visited in one scrollable collection. If you also have a physical passport book, many visitor centers still offer free ink stamps at the front desk.`,
+        content: `When you arrive at a park, tap the stamp icon within that park's section of the app. The app uses your phone's GPS to confirm you are actually at the park location before issuing the stamp. Each stamp is saved in a digital "Passport Book" inside the app. You can see all the parks you have visited in one scrollable collection. If you also have a physical passport book, many visitor centers still offer free ink stamps at the front desk.`,
       },
       {
         title: `Use audio tours while exploring`,
@@ -690,7 +690,7 @@ The activity is completely free to start. There is a premium membership ($30/yea
       {
         title: `Sign the logbook and log your find online`,
         content: `Inside the cache you will find a small paper logbook — write the date and your geocaching username. Some caches also contain small trinkets you can trade (take one, leave one of equal or greater value). Close the cache container completely and return it to exactly where you found it. Back in the app, tap "Log Visit" and select "Found It." Write a short note about your experience — even just a few sentences. Your find count goes up by one and the cache owner receives a notification that someone found their hide.`,
-        tip: `Quick Tip: After finding a few Traditional Caches, try a Multi-Cache for more of an adventure — they send you on a short journey through multiple waypoints before reaching the final container.`,
+        tip: `Quick Tip: After finding a few Traditional Caches, try a Multi-Cache for more of an adventure. They send you on a short journey through multiple waypoints before reaching the final container.`,
       },
     ],
   },
@@ -719,7 +719,7 @@ The Schlage Home app is where you manage access codes, view entry logs (a histor
       },
       {
         title: `Install the Schlage Encode hardware`,
-        content: `Follow the printed instructions included in the Schlage box — they use clear diagrams for each step. Insert the new bolt assembly into the door edge first. Then position the exterior keypad unit (the larger piece with the keypad, on the outside of the door) through the hole and align it with the bolt mechanism. From inside, attach the interior cover piece and drive the two long screws through it to pull both sides together tightly. The lock should turn smoothly with the thumb turn on the inside.`,
+        content: `Follow the printed instructions included in the Schlage box. They use clear diagrams for each step. Insert the new bolt assembly into the door edge first. Then position the exterior keypad unit (the larger piece with the keypad, on the outside of the door) through the hole and align it with the bolt mechanism. From inside, attach the interior cover piece and drive the two long screws through it to pull both sides together tightly. The lock should turn smoothly with the thumb turn on the inside.`,
       },
       {
         title: `Connect the lock to the Schlage Home app and Wi-Fi`,
@@ -767,7 +767,7 @@ This guide covers the full setup from screwing in the bulb to setting a daily sc
       },
       {
         title: `Add the bulb to the Kasa app`,
-        content: `Open the Kasa app and tap the "+" button to add a new device. Select "Lighting" and then your specific bulb model from the list. The app will instruct you to make sure the bulb is powered on — it should be glowing already. The bulb broadcasts its own temporary Wi-Fi signal during setup. Follow the on-screen prompts: the app will connect your phone to the bulb temporarily, then ask you to enter your home Wi-Fi name and password so the bulb can connect permanently. The bulb will blink when the connection is complete.`,
+        content: `Open the Kasa app and tap the "+" button to add a new device. Select "Lighting" and then your specific bulb model from the list. The app will instruct you to make sure the bulb is powered on. It should be glowing already. The bulb broadcasts its own temporary Wi-Fi signal during setup. Follow the on-screen prompts: the app will connect your phone to the bulb temporarily, then ask you to enter your home Wi-Fi name and password so the bulb can connect permanently. The bulb will blink when the connection is complete.`,
       },
       {
         title: `Name the bulb and adjust brightness or color`,
@@ -811,7 +811,7 @@ Installing a Caséta dimmer involves working with your home's electrical wiring 
       },
       {
         title: `Remove the old switch and note the wiring`,
-        content: `Remove the switch's cover plate by unscrewing the single center screw. Then remove the two screws holding the switch itself to the electrical box inside the wall. Gently pull the switch out — you will see wires connected to it. Most standard switches have a black wire (hot — carries electricity), a white wire (neutral — completes the circuit), and a bare copper or green wire (ground — a safety wire). The Caséta dimmer requires a neutral wire. Check that a white wire is present. Take a photo of the wiring before disconnecting anything.`,
+        content: `Remove the switch's cover plate by unscrewing the single center screw. Then remove the two screws holding the switch itself to the electrical box inside the wall. Gently pull the switch out. You will see wires connected to it. Most standard switches have a black wire (hot — carries electricity), a white wire (neutral — completes the circuit), and a bare copper or green wire (ground — a safety wire). The Caséta dimmer requires a neutral wire. Check that a white wire is present. Take a photo of the wiring before disconnecting anything.`,
       },
       {
         title: `Install the Caséta dimmer`,

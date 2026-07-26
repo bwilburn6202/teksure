@@ -116,7 +116,7 @@ Your credit score — the number lenders use to decide whether to give you a loa
 
 ## What to Do if a Payment Is Missed
 
-If your bank reports that a payment failed (you will usually get an email or text alert), call the biller right away and make a one-time payment by phone or on their website. Then call your bank to find out why the automatic payment did not go through — it is often a low balance issue. Ask the biller to waive any late fee since the error was not intentional. Most will do so once, especially if you have a good history with them.
+If your bank reports that a payment failed (you will usually get an email or text alert), call the biller right away and make a one-time payment by phone or on their website. Then call your bank to find out why the automatic payment did not go through. It is often a low balance issue. Ask the biller to waive any late fee since the error was not intentional. Most will do so once, especially if you have a good history with them.
 
 ## Official Sources
 
@@ -229,7 +229,7 @@ If Medicare denies a service you believe should be covered, you have the right t
     steps: [
       {
         title: 'Find the "This is not a bill" notice',
-        content: 'When a Medicare EOB or Medicare Summary Notice (MSN) arrives, look for the phrase "This is not a bill" — it is usually printed in bold near the top. This confirms you do not owe money based on this letter alone. Set it aside until a separate bill arrives from your provider.',
+        content: 'When a Medicare EOB or Medicare Summary Notice (MSN) arrives, look for the phrase "This is not a bill". It is usually printed in bold near the top. This confirms you do not owe money based on this letter alone. Set it aside until a separate bill arrives from your provider.',
       },
       {
         title: 'Check the provider name and service date',
@@ -252,7 +252,7 @@ If Medicare denies a service you believe should be covered, you have the right t
       },
       {
         title: 'View your EOBs online at Medicare.gov',
-        content: 'Go to medicare.gov in your web browser. Click Sign In at the top right. If you do not have an account, click Create an Account and follow the steps — you will need your Medicare number (on your red, white, and blue Medicare card). Once logged in, click My Account, then Claims and EOBs. You will see every claim from the past three years listed by date.',
+        content: 'Go to medicare.gov in your web browser. Click Sign In at the top right. If you do not have an account, click Create an Account and follow the steps. You will need your Medicare number (on your red, white, and blue Medicare card). Once logged in, click My Account, then Claims and EOBs. You will see every claim from the past three years listed by date.',
         tip: 'Your Medicare number is on the front of your Medicare card. It is a combination of letters and numbers, not your Social Security number.',
       },
       {
@@ -289,7 +289,7 @@ There are two main approaches:
 
 1. **Cloud sync** — your contacts automatically stay up to date in the cloud every time you add or change a contact. This is the recommended method because it happens without any extra effort from you.
 
-2. **Export as a VCF file** — you create a file that contains all your contacts and save it somewhere safe (your email, a USB drive, or a computer). This is a manual snapshot. Good as an extra safety net. But you have to remember to do it periodically.
+2. **Export as a VCF file**. You create a file that contains all your contacts and save it somewhere safe (your email, a USB drive, or a computer). This is a manual snapshot. Good as an extra safety net. But you have to remember to do it periodically.
 
 ## For iPhone Users: iCloud Contacts Sync
 

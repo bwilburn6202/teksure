@@ -11,13 +11,13 @@ export const guidesBatch37: Guide[] = [
     thumbnailEmoji: '',
     publishedAt: '2026-04-19',
     difficulty: 'Beginner',
-    body: `ThredUp is one of the largest online secondhand clothing stores in the United States. It works as a consignment shop — you can send in bags of your old clothes and ThredUp does all the work of photographing, listing, and selling them for you. In return, you receive a portion of the sale price.
+    body: `ThredUp is one of the largest online secondhand clothing stores in the United States. It works as a consignment shop. You can send in bags of your old clothes and ThredUp does all the work of photographing, listing, and selling them for you. In return, you receive a portion of the sale price.
 
 As a buyer, ThredUp offers women's and kids' clothing from hundreds of brands at prices that are 70-90% below retail. You can find items from brands like Levi's, J.Crew, Anthropologie, Gap, and more. All items are inspected and authenticated before listing.
 
 The selling process is called a "Clean Out Kit." You order a free bag from ThredUp, fill it with your gently used clothes, and ship it back using the prepaid label. ThredUp processes your items and lists the ones that meet their quality standards. You earn cash or ThredUp credit when items sell.
 
-ThredUp takes a commission that varies based on the sale price — you earn a higher percentage on more expensive items. Items that don't sell can be returned to you for a small fee, or ThredUp will donate or recycle them.
+ThredUp takes a commission that varies based on the sale price. You earn a higher percentage on more expensive items. Items that don't sell can be returned to you for a small fee, or ThredUp will donate or recycle them.
 
 For buyers, ThredUp is free to use with no membership required. Shipping is typically $3-$6, and many items ship free with a minimum purchase. All items come with a 14-day return policy.`,
     steps: [
@@ -241,7 +241,7 @@ StubHub charges a service fee on top of the ticket price — typically 10-15%. T
     difficulty: 'Beginner',
     body: `SeatGeek is a ticket marketplace and price comparison app that makes it easier to find good deals on concert, sports, and theater tickets. Its standout feature is the "Deal Score" — a rating from 0 to 100 on every listing that tells you whether the price is below average (a good deal) or above average (expensive) compared to similar seats at the same event.
 
-Green Deal Score badges mean the price is below average — those seats are a relative bargain. Red badges mean it's above average — you might find better prices if you wait or look at other sections. This system takes out the guesswork of trying to figure out if a ticket price is fair.
+Green Deal Score badges mean the price is below average — those seats are a relative bargain. Red badges mean it's above average. You might find better prices if you wait or look at other sections. This system takes out the guesswork of trying to figure out if a ticket price is fair.
 
 SeatGeek also shows a clean, color-coded seat map that displays pricing for every section at once. You can see at a glance which sections are affordable and which are expensive without tapping each listing individually.
 
@@ -300,7 +300,7 @@ Many people find TickTick replaces a combination of sticky notes, paper lists, p
       },
       {
         title: 'Create your first list',
-        content: 'Tap the "+" button to create a new list. Name it something like "Grocery Shopping," "Home Tasks," or "Doctor Appointments." Choose a color to help identify it visually. Tap "Create." Lists appear in the left sidebar — you can have as many as you need.',
+        content: 'Tap the "+" button to create a new list. Name it something like "Grocery Shopping," "Home Tasks," or "Doctor Appointments." Choose a color to help identify it visually. Tap "Create." Lists appear in the left sidebar. You can have as many as you need.',
       },
       {
         title: 'Add tasks and set reminders',
@@ -422,11 +422,11 @@ If you have Microsoft 365 (formerly Office 365), OneNote integrates with Word, E
     difficulty: 'Beginner',
     body: `App Library is an iPhone feature introduced in iOS 14 that automatically organizes all your apps into smart categories — Suggestions, Recently Added, Social, Entertainment, Utilities, Finance, and more. It lives on the far-right screen of your home screen, one swipe past all your home screen pages.
 
-App Library is useful if your home screen has become cluttered with apps you don't use regularly. You can hide apps from your home screen entirely while keeping them fully installed — they move to the App Library and remain just as accessible, just without taking up space on your home screen pages.
+App Library is useful if your home screen has become cluttered with apps you don't use regularly. You can hide apps from your home screen entirely while keeping them fully installed. They move to the App Library and remain just as accessible, just without taking up space on your home screen pages.
 
 You can also search the App Library by typing in the search bar at the top, making it possible to find any app in seconds regardless of where it's organized. This is often faster than scrolling through multiple home screen pages looking for an app you rarely use.
 
-The App Library works automatically — you don't need to set anything up. All your installed apps are already in there.`,
+The App Library works automatically. You don't need to set anything up. All your installed apps are already in there.`,
     steps: [
       {
         title: 'Find the App Library',
@@ -466,7 +466,7 @@ The App Library works automatically — you don't need to set anything up. All y
 
 There are two widget areas on the lock screen: one row directly below the clock (for larger widgets) and a small area above the clock (for date, activity rings, or a single piece of info).
 
-Lock screen widgets are "glanceable" — they show information but you can't interact with them fully without unlocking your phone. They're designed to answer common quick questions: What's the weather right now? Do I have any events today? How many steps have I taken?
+Lock screen widgets are "glanceable". They show information but you can't interact with them fully without unlocking your phone. They're designed to answer common quick questions: What's the weather right now? Do I have any events today? How many steps have I taken?
 
 Available widget types depend on the apps installed on your phone. Apple provides widgets for Weather, Calendar, Activity (fitness rings), Clock (for a second time zone), Reminders, and Battery. Third-party apps like Spotify, Nike Run Club, and transit apps often offer lock screen widgets too.
 
@@ -537,7 +537,7 @@ The platform is used by both families seeking care and individuals looking to of
       },
       {
         title: 'Manage care through the platform',
-        content: 'Care.com has tools for tracking hours and processing payments if you choose to use them. You can also message your caregiver through the app. After care begins, leave a review for your caregiver — it helps other families and provides helpful feedback.',
+        content: 'Care.com has tools for tracking hours and processing payments if you choose to use them. You can also message your caregiver through the app. After care begins, leave a review for your caregiver. It helps other families and provides helpful feedback.',
         tip: `Care.com's HomePay service (a separate subscription) can handle payroll taxes and payments automatically if you hire a caregiver as a household employee — which the IRS requires for regularly scheduled in-home care.`,
       },
     ],
@@ -747,7 +747,7 @@ WhatsApp is free and works over Wi-Fi or your cellular data connection. All mess
     steps: [
       {
         title: 'Open a new group chat',
-        content: `In WhatsApp, tap the chat icon (pencil icon on iPhone, or the new chat button on Android). Tap "New Group." You'll see your WhatsApp contacts. Tap each person you want to add to the group — they must already have WhatsApp installed. Tap the green arrow when done.`,
+        content: `In WhatsApp, tap the chat icon (pencil icon on iPhone, or the new chat button on Android). Tap "New Group." You'll see your WhatsApp contacts. Tap each person you want to add to the group. They must already have WhatsApp installed. Tap the green arrow when done.`,
         tip: `You can add more people after creating the group, so don't worry if someone is missing at first.`,
       },
       {
@@ -767,7 +767,7 @@ WhatsApp is free and works over Wi-Fi or your cellular data connection. All mess
       {
         title: 'Mute or leave a group',
         content: `If a group becomes too busy, tap the group name → Mute and choose 8 hours, 1 week, or Always. You'll still receive messages but won't get sound notifications. To leave a group entirely, tap the group name → Scroll down → Exit Group. Members will see that you left.`,
-        tip: `You can mute a group's notifications while still being able to read messages when you choose. This is better than leaving — you stay connected but aren't interrupted constantly.`,
+        tip: `You can mute a group's notifications while still being able to read messages when you choose. This is better than leaving. You stay connected but aren't interrupted constantly.`,
       },
     ],
   },
@@ -788,7 +788,7 @@ This feature is popular for safety and peace of mind. Many seniors who live alon
 
 Location sharing only goes to the specific people you choose. Your location is not visible to the public, to Google users in general, or to anyone you haven't explicitly selected. You can stop sharing at any time.
 
-The person receiving your location needs a Google account and the Google Maps app to see it. Both people must agree to share — you can't see someone else's location unless they've shared it with you.
+The person receiving your location needs a Google account and the Google Maps app to see it. Both people must agree to share. You can't see someone else's location unless they've shared it with you.
 
 Location sharing uses a small amount of battery life and mobile data when active. This is worth considering if battery life is a concern.`,
     steps: [
@@ -803,7 +803,7 @@ Location sharing uses a small amount of battery life and mobile data when active
       {
         title: 'Choose who to share with',
         content: `Search for the person's name from your Google contacts, enter their email address, or choose them from your suggested contacts. The person will receive a notification or email that you're sharing your location with them. They can accept to see your location on their Maps.`,
-        tip: `If the person uses an iPhone, they can still see your location in the Google Maps app on their iPhone — they don't need an Android phone.`,
+        tip: `If the person uses an iPhone, they can still see your location in the Google Maps app on their iPhone. They don't need an Android phone.`,
       },
       {
         title: `View someone's location who's sharing with you`,
@@ -833,7 +833,7 @@ Temu has grown rapidly in the United States and is now one of the most downloade
 
 The main considerations with Temu are shipping times (7-21 business days is common, though "guaranteed" delivery dates are offered), product quality (varies widely — some items are great, others are poor quality), and return logistics (returning items often requires shipping them internationally, though Temu does offer free returns for your first return per order).
 
-Temu's return and refund policy is actually quite generous for a discount retailer — they offer full refunds for orders that don't arrive on time, items that are a lot different from photos, and damaged products. Purchases are protected by Temu's "Purchase Protection Program."
+Temu's return and refund policy is actually quite generous for a discount retailer. They offer full refunds for orders that don't arrive on time, items that are a lot different from photos, and damaged products. Purchases are protected by Temu's "Purchase Protection Program."
 
 Privacy-conscious users should know that Temu collects extensive data through its app, as do most shopping apps. Using it on a dedicated shopping browser or limiting its access in your phone's privacy settings reduces data collection.`,
     steps: [
@@ -876,7 +876,7 @@ Privacy-conscious users should know that Temu collects extensive data through it
     difficulty: 'Beginner',
     body: `PictureThis is a plant identification app that uses your phone's camera to identify plants, flowers, trees, and weeds in seconds. Point your camera at any plant, tap the button, and within a few seconds the app tells you exactly what it is — along with details about care, origin, common uses, and whether it's toxic to pets or people.
 
-The app is accurate for tens of thousands of plant species. It works for flowers in the garden, plants growing in the yard, trees in the neighborhood, houseplants, and wild plants on a hike. It even identifies plants from photos you've already taken — you don't need to be standing in front of the plant.
+The app is accurate for tens of thousands of plant species. It works for flowers in the garden, plants growing in the yard, trees in the neighborhood, houseplants, and wild plants on a hike. It even identifies plants from photos you've already taken. You don't need to be standing in front of the plant.
 
 PictureThis is especially useful for gardeners who receive a plant as a gift and want to know how to care for it, homeowners who want to identify unknown plants growing in their yard (and whether they're weeds or valuable), people who want to know if a plant is safe around pets or children, and anyone curious about nature and plant life.
 

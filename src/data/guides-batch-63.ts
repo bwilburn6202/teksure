@@ -46,7 +46,7 @@ Quick Tip: If you cannot find a setting, use the search bar at the top of the Se
       {
         title: `Adjust display brightness and text size`,
         content: `Click "System" on the left side, then click "Display." Drag the "Brightness" slider left or right to dim or brighten the screen. To make text and icons larger, find the "Scale" dropdown and choose a higher percentage such as 125% or 150%.`,
-        tip: `If your eyes get tired easily, try increasing the scale to 125% — it makes everything on screen easier to read without changing your resolution.`,
+        tip: `If your eyes get tired easily, try increasing the scale to 125%. It makes everything on screen easier to read without changing your resolution.`,
       },
       {
         title: `Change sound volume`,
@@ -77,7 +77,7 @@ Folders let you group related files together. Think of them like labeled bins. Y
 
 **Using color tags**
 
-Mac Finder lets you assign a colored tag to any file or folder. Tags are great for sorting by project or urgency — you might tag work files red and personal files blue. To add a tag, right-click a file, hover over "Tags," and click a color circle. Once tagged, you can click that color in the Finder sidebar to see every file with that tag, no matter where it is stored.
+Mac Finder lets you assign a colored tag to any file or folder. Tags are great for sorting by project or urgency. You might tag work files red and personal files blue. To add a tag, right-click a file, hover over "Tags," and click a color circle. Once tagged, you can click that color in the Finder sidebar to see every file with that tag, no matter where it is stored.
 
 **Sorting files**
 
@@ -125,7 +125,7 @@ Quick Tip: Press Command + F inside any Finder window to search all your files b
     difficulty: `Beginner`,
     body: `A ZIP file is a compressed container that holds one or more files or folders in a smaller package. People use ZIP files to send multiple files in a single email attachment, to save storage space, or to share a whole folder of photos without sending dozens of individual files.
 
-Windows has built-in support for ZIP files — you do not need to download WinZip, 7-Zip, or any other program to create or open them.
+Windows has built-in support for ZIP files. You do not need to download WinZip, 7-Zip, or any other program to create or open them.
 
 **Why ZIP files are useful**
 
@@ -285,7 +285,7 @@ Windows 11 has a feature called virtual desktops that lets you create separate "
 
 **How virtual desktops work**
 
-Virtual desktops are not separate computers — they share the same hardware. But they give you separate views. Apps you open on Desktop 1 stay on Desktop 1 and do not show up on Desktop 2. You can switch between them from the Task View button on the taskbar.
+Virtual desktops are not separate computers. They share the same hardware. But they give you separate views. Apps you open on Desktop 1 stay on Desktop 1 and do not show up on Desktop 2. You can switch between them from the Task View button on the taskbar.
 
 **The Task View button**
 
@@ -299,7 +299,7 @@ Quick Tip: You can right-click any open app in Task View and choose "Move to" to
     steps: [
       {
         title: `Open Task View`,
-        content: `Click the Task View button on the taskbar — it looks like two rectangles overlapping, sitting to the right of the search bar. You can also press Windows key + Tab on your keyboard. Task View shows all your currently open windows and a row of desktops at the top.`,
+        content: `Click the Task View button on the taskbar. It looks like two rectangles overlapping, sitting to the right of the search bar. You can also press Windows key + Tab on your keyboard. Task View shows all your currently open windows and a row of desktops at the top.`,
         tip: `If you do not see the Task View button, right-click the taskbar and make sure "Task View" is checked.`,
       },
       {
@@ -345,7 +345,7 @@ After snapping two apps, you will see a divider line between them. Click and dra
 
 **Unsnapping**
 
-To go back to normal, click the maximize button on either app — it returns to its original floating window. Or drag the window away from the edge of the screen.
+To go back to normal, click the maximize button on either app. It returns to its original floating window. Or drag the window away from the edge of the screen.
 
 Quick Tip: Snap works on most Windows 10 and 11 PCs. If you are on a small laptop with limited screen space, it works best when your monitor is 13 inches or larger.`,
     steps: [
@@ -561,7 +561,7 @@ Remote Desktop is only available on Windows Pro, Enterprise, and Education editi
 
 **The two computers involved**
 
-The computer you want to connect to is called the "host" — it stays on and accepts connections. The computer you are connecting from is called the "client" — it runs the Remote Desktop app. The host must have Remote Desktop enabled and must stay powered on.
+The computer you want to connect to is called the "host". It stays on and accepts connections. The computer you are connecting from is called the "client". It runs the Remote Desktop app. The host must have Remote Desktop enabled and must stay powered on.
 
 **Security considerations**
 
@@ -576,7 +576,7 @@ Quick Tip: Before leaving home, write down your home computer's name (found in S
       },
       {
         title: `Note the PC name and your username`,
-        content: `While still in Settings > System > Remote Desktop, look for the "PC name" field. Write it down. Also make note of which Windows user account you log in with — you will need both pieces of information when connecting from the other computer.`,
+        content: `While still in Settings > System > Remote Desktop, look for the "PC name" field. Write it down. Also make note of which Windows user account you log in with. You will need both pieces of information when connecting from the other computer.`,
         tip: `If both PCs are on the same home network, the PC name usually works for the connection. If connecting over the internet from outside your home, you may also need your home's public IP address, which requires additional router configuration.`,
       },
       {
@@ -681,7 +681,7 @@ Quick Tip: If Gboard keeps changing a specific word every time, long-press the w
     steps: [
       {
         title: `Open Gboard settings`,
-        content: `Tap on any text field in any app to open the keyboard. Look at the row above the keyboard — you may see a gear icon on the far left. Tap it to open Gboard settings. If you do not see a gear icon, tap the three-dot menu icon and look for "Settings" in the menu that appears.`,
+        content: `Tap on any text field in any app to open the keyboard. Look at the row above the keyboard. You may see a gear icon on the far left. Tap it to open Gboard settings. If you do not see a gear icon, tap the three-dot menu icon and look for "Settings" in the menu that appears.`,
         tip: `You can also reach Gboard settings through your phone's Settings app: Settings > General Management > Keyboard list and default > Gboard > Gboard settings.`,
       },
       {
@@ -719,7 +719,7 @@ Your screen's backlight is usually the single biggest consumer of battery power 
 
 **Power plans on Windows**
 
-Windows has built-in power plans that balance performance against battery life. The "Balanced" plan is fine for most tasks. If you need to stretch the battery, switch to "Power saver" mode — it reduces background activity and limits how hard the processor works. Click the battery icon in the taskbar to see a slider that adjusts between "Battery saver" and "Best performance."
+Windows has built-in power plans that balance performance against battery life. The "Balanced" plan is fine for most tasks. If you need to stretch the battery, switch to "Power saver" mode. It reduces background activity and limits how hard the processor works. Click the battery icon in the taskbar to see a slider that adjusts between "Battery saver" and "Best performance."
 
 **Finding battery-hungry apps**
 
@@ -734,7 +734,7 @@ Quick Tip: Closing browser tabs you are not using is one of the quickest battery
       {
         title: `Lower your screen brightness`,
         content: `Press the brightness-down key on your keyboard (usually a function key with a sun icon) to reduce screen brightness. Aim for the lowest brightness that is still comfortable to look at. On Windows you can also go to Settings > System > Display and drag the "Brightness" slider down.`,
-        tip: `Turn on "Adaptive brightness" in Display settings if your laptop has an ambient light sensor — it automatically adjusts brightness based on the room lighting.`,
+        tip: `Turn on "Adaptive brightness" in Display settings if your laptop has an ambient light sensor. It automatically adjusts brightness based on the room lighting.`,
       },
       {
         title: `Switch to Battery Saver mode`,
@@ -776,7 +776,7 @@ The app drawer is a screen that holds every single app installed on your Android
 
 Your home screen is like a bulletin board where you put shortcuts to the apps you use most. The app drawer is the full organized list of everything. When you install a new app, it goes to the app drawer automatically. It only appears on your home screen if you drag it there.
 
-This design helps keep your home screen from becoming cluttered — you choose which apps to feature on the home screen, while the app drawer holds the rest safely in the background.
+This design helps keep your home screen from becoming cluttered. You choose which apps to feature on the home screen, while the app drawer holds the rest safely in the background.
 
 **Finding a specific app**
 
@@ -856,7 +856,7 @@ Quick Tip: Windows 11 automatically turns on Do Not Disturb when you are playing
       {
         title: `Allow priority notifications through`,
         content: `In the same Notifications settings, look for "Set priority notifications" or "Priority list." Click it and add the apps or contacts that can always reach you. For example, you might allow phone calls and messages from family members while silencing everything else.`,
-        tip: `Adding only your messaging app to the priority list is a good balance — you stay reachable to people but screen out all the less-urgent app alerts.`,
+        tip: `Adding only your messaging app to the priority list is a good balance. You stay reachable to people but screen out all the less-urgent app alerts.`,
       },
     ],
   },
@@ -935,7 +935,7 @@ Guest networks are also useful for smart home devices (smart bulbs, TVs, voice a
 
 **How to set it up**
 
-You set up a guest network through your router's settings page, which you access through a web browser on your computer. Most routers support guest networks — you usually need to log into the router's admin panel, find the "Guest Network" or "Wireless" section, and turn it on.
+You set up a guest network through your router's settings page, which you access through a web browser on your computer. Most routers support guest networks. You usually need to log into the router's admin panel, find the "Guest Network" or "Wireless" section, and turn it on.
 
 **Finding your router's IP address**
 

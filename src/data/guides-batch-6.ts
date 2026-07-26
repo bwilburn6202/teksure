@@ -112,7 +112,7 @@ export const guidesBatch6: Guide[] = [
     difficulty: 'Beginner' as const,
     readTime: '7 min',
     publishedAt: '2026-04-15',
-    body: `OSINT stands for Open Source Intelligence — it is the practice of collecting and analyzing publicly available information. Governments, journalists, researchers, and unfortunately criminals all use OSINT techniques. The important thing for you to know: there is probably more public information about you on the internet than you realize.\n\n**This is not about paranoia.** It is about awareness. Once you understand what is out there, you can take practical steps to reduce your exposure.`,
+    body: `OSINT stands for Open Source Intelligence. It is the practice of collecting and analyzing publicly available information. Governments, journalists, researchers, and unfortunately criminals all use OSINT techniques. The important thing for you to know: there is probably more public information about you on the internet than you realize.\n\n**This is not about paranoia.** It is about awareness. Once you understand what is out there, you can take practical steps to reduce your exposure.`,
     steps: [
       { title: 'Google yourself', content: 'Search your full name in quotes ("John Smith"), your email address, your phone number, and your home address. See what comes up. This is exactly what anyone else can find about you.' },
       { title: 'Check data broker sites', content: 'Search for yourself on Spokeo (spokeo.com), WhitePages (whitepages.com), and BeenVerified (beenverified.com). These sites aggregate your public records, addresses, phone numbers, and relatives.' },
@@ -213,7 +213,7 @@ export const guidesBatch6: Guide[] = [
       { title: 'Go to Google Patents', content: 'Visit patents.google.com. You will see a simple search bar, just like regular Google.' },
       { title: 'Search for your topic', content: 'Type what you are looking for in plain English. For example: "portable water filter" or "folding bicycle" or "solar phone charger." Google will find patents related to your search.' },
       { title: 'Read the patent abstract', content: 'Each result shows a title and abstract (summary). The abstract explains what the invention does in a few sentences. Click any result to see the full patent with diagrams.' },
-      { title: 'Check the drawings', content: 'Most patents include detailed technical drawings showing how the invention works. These are often the most useful part — they visually explain the design.' },
+      { title: 'Check the drawings', content: 'Most patents include detailed technical drawings showing how the invention works. These are often the most useful part. They visually explain the design.' },
       { title: 'Check if a patent is still active', content: 'On the patent page, look for the "Legal events" section. It shows whether the patent is active, expired, or abandoned. Expired patents are free for anyone to use.' },
     ],
   },

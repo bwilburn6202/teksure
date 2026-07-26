@@ -201,7 +201,7 @@ export const guidesBatch222: Guide[] = [
       {
         title: "Ask Your Hospice or Funeral Home for Local Recommendations",
         content: "If your spouse received hospice care in their final months, call the hospice agency and ask about their bereavement program. Federal Medicare rules require hospice agencies to offer free grief support to family members for 13 months after a death. Ask for a list of upcoming support group sessions, one-on-one grief counseling appointments, and any printed grief materials they have available. Even if your spouse did not use hospice, most funeral homes maintain a list of local grief groups and will mail or email it to you upon request. These referrals are typically the highest quality because the hospice and funeral home staff visit the groups regularly and know which ones are well-run.",
-        tip: "Hospice grief programs are open to anyone who lost a loved one, not only to family members of their patients. If a hospice is near you, call and ask — they often welcome community members for free."
+        tip: "Hospice grief programs are open to anyone who lost a loved one, not only to family members of their patients. If a hospice is near you, call and ask. They often welcome community members for free."
       },
       {
         title: "Search the GriefShare Website for a Group Near You",
@@ -245,7 +245,7 @@ export const guidesBatch222: Guide[] = [
     steps: [
       {
         title: "Start With a Short Trip Close to Home",
-        content: "For your first solo trip, pick somewhere small and familiar. A two-night stay at a hotel two or three hours from home is a perfect starting point. Maybe a beach town you both visited, a state park with a lodge, a city with a museum or theater you have always wanted to see, or a quiet bed and breakfast in the country. Drive yourself or take a train so you control the schedule. Stay no more than three nights so the trip does not feel overwhelming. The point of this first trip is not to see somewhere new — it is to prove to yourself that you can do this. After a successful first weekend, longer and farther trips will feel more possible.",
+        content: "For your first solo trip, pick somewhere small and familiar. A two-night stay at a hotel two or three hours from home is a perfect starting point. Maybe a beach town you both visited, a state park with a lodge, a city with a museum or theater you have always wanted to see, or a quiet bed and breakfast in the country. Drive yourself or take a train so you control the schedule. Stay no more than three nights so the trip does not feel overwhelming. The point of this first trip is not to see somewhere new. It is to prove to yourself that you can do this. After a successful first weekend, longer and farther trips will feel more possible.",
         tip: "Pick a hotel with a restaurant on site so you do not have to find a place to eat alone in an unfamiliar town. Eating in the hotel restaurant for your first meal removes one source of stress."
       },
       {

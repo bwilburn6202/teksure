@@ -17,11 +17,11 @@ Canva works in a web browser (canva.com) and also has a free app for iPhone and 
 
 Some of the most popular uses for everyday users: creating birthday cards with a grandchild's photo, making a holiday greeting to email to family, designing a simple flyer for a church or community event, making a photo collage from vacation pictures, and creating a customized calendar as a gift.
 
-Canva's template library is organized by use case: Birthday, Invitation, Flyer, Certificate, Card, Instagram Post, Facebook Cover, and many more. When you choose a template, all the spacing, fonts, and colors are already set up — you change the text and photos to personalize it.
+Canva's template library is organized by use case: Birthday, Invitation, Flyer, Certificate, Card, Instagram Post, Facebook Cover, and many more. When you choose a template, all the spacing, fonts, and colors are already set up. You change the text and photos to personalize it.
 
 You can upload photos from your phone or computer directly into Canva. Canva also has a built-in library of free stock photos, icons, and illustrations you can use in any design.
 
-Finished designs can be downloaded as image files (JPEG or PNG), printed through Canva's printing service, or shared via a link. Canva also integrates with email — you can send a design directly from within the app.`,
+Finished designs can be downloaded as image files (JPEG or PNG), printed through Canva's printing service, or shared via a link. Canva also integrates with email. You can send a design directly from within the app.`,
     steps: [
       {
         title: 'Create a Free Canva Account',
@@ -44,7 +44,7 @@ Finished designs can be downloaded as image files (JPEG or PNG), printed through
       {
         title: 'Download Your Design',
         content: 'When your design is finished, click the "Share" button (top right) → "Download." Choose PNG or JPEG for photos, or PDF for printable documents. Click "Download" and save the file to your device.',
-        tip: `To print a card at home, download as PDF and print to your printer. For a professional print, use Canva's built-in print service — they mail the finished card directly to you.`,
+        tip: `To print a card at home, download as PDF and print to your printer. For a professional print, use Canva's built-in print service. They mail the finished card directly to you.`,
       },
     ],
   },
@@ -121,7 +121,7 @@ For families spread across different states or countries, Discord can serve as a
       },
       {
         title: 'Join a Family Server',
-        content: 'If a family member has already created a server and sent you an invitation link, tap the link on your phone — it opens Discord and shows a preview of the server. Tap "Accept Invite" to join. You can now see all the channels in that server.',
+        content: 'If a family member has already created a server and sent you an invitation link, tap the link on your phone. It opens Discord and shows a preview of the server. Tap "Accept Invite" to join. You can now see all the channels in that server.',
         tip: 'If you have not received an invitation, ask the family member who manages the server to send you an invite link. They can create one in Server Settings.',
       },
       {
@@ -130,7 +130,7 @@ For families spread across different states or countries, Discord can serve as a
       },
       {
         title: 'Join a Voice or Video Call',
-        content: 'Voice channels show a speaker icon (). Tap a voice channel to join — you right away connect to a voice call with anyone else in that channel. Tap the camera icon to turn on your video. Tap the microphone icon to mute or unmute yourself.',
+        content: 'Voice channels show a speaker icon (). Tap a voice channel to join. You right away connect to a voice call with anyone else in that channel. Tap the camera icon to turn on your video. Tap the microphone icon to mute or unmute yourself.',
         tip: 'You do not need to be invited to join a voice channel — if someone is in the channel, you can tap it anytime to join the conversation. This makes it easy to drop in and chat.',
       },
       {
@@ -149,7 +149,7 @@ For families spread across different states or countries, Discord can serve as a
     thumbnailEmoji: '',
     publishedAt: '2026-04-19',
     difficulty: 'Beginner',
-    body: `Reddit is a website organized into thousands of topic communities called "subreddits." Each subreddit (written as r/topicname) is focused on one subject — there are subreddits for technology help, cooking, travel, local cities, hobbies, health questions, news, and virtually anything else you can think of.
+    body: `Reddit is a website organized into thousands of topic communities called "subreddits." Each subreddit (written as r/topicname) is focused on one subject. There are subreddits for technology help, cooking, travel, local cities, hobbies, health questions, news, and virtually anything else you can think of.
 
 People post questions, articles, photos, and videos to subreddits, and other members comment with answers, advice, and opinions. The most helpful or popular posts and comments get "upvoted" to the top by readers.
 
@@ -206,7 +206,7 @@ Beyond English, YouTube often provides automatic captions in other languages, an
 
 The caption button looks like a CC symbol (closed captioning) in the video controls. On a phone, it may also appear as a speech bubble icon or a small rectangular icon. The exact location depends on whether you are watching on a phone, tablet, or computer.
 
-Automatic captions can be translated in real time — you can watch a Spanish or French video with English captions by using the Translation feature in YouTube's caption settings.`,
+Automatic captions can be translated in real time. You can watch a Spanish or French video with English captions by using the Translation feature in YouTube's caption settings.`,
     steps: [
       {
         title: 'Turn On Captions for a Single Video (Computer)',
@@ -296,7 +296,7 @@ Voice typing on Android uses Google's speech recognition technology, which is hi
 
 On Android phones using the default Gboard keyboard (made by Google), the microphone icon appears on the keyboard. Tapping it activates voice typing. Some Samsung phones use Samsung Keyboard instead, which has a similar microphone button.
 
-Voice typing requires an internet connection on most Android phones — it sends your audio to Google's servers for processing. However, on newer Android phones (Pixel 3 and later, and many 2022+ Samsung models), on-device voice recognition is available and works offline.
+Voice typing requires an internet connection on most Android phones. It sends your audio to Google's servers for processing. However, on newer Android phones (Pixel 3 and later, and many 2022+ Samsung models), on-device voice recognition is available and works offline.
 
 Voice typing is distinct from Google Assistant — "Hey Google" activates the Assistant, which does tasks like making calls or searching the web. Voice typing specifically inserts spoken words into whatever text field you have open.
 
@@ -341,13 +341,13 @@ For people with arthritis, hand tremors, visual difficulties, or anyone who type
 
 Voice typing in Windows 11 is powered by Microsoft's speech recognition, the same technology behind Cortana and Microsoft Office dictation. It is accurate for natural, clearly spoken English and handles punctuation through spoken commands.
 
-Windows 11 voice typing works with automatic punctuation — you do not need to say "comma" or "period" manually. With "Auto punctuation" enabled in the voice typing settings, the system inserts punctuation automatically based on your speech patterns and pauses. This makes it feel more natural than manual punctuation commands.
+Windows 11 voice typing works with automatic punctuation. You do not need to say "comma" or "period" manually. With "Auto punctuation" enabled in the voice typing settings, the system inserts punctuation automatically based on your speech patterns and pauses. This makes it feel more natural than manual punctuation commands.
 
 Voice typing requires a working microphone. Most Windows laptops have a built-in microphone. Desktop computers may need a USB or plug-in microphone. The built-in laptop microphone is usually adequate for voice typing in a quiet room.
 
 For longer typing tasks — writing emails, composing letters, drafting documents — voice typing in Windows can be a lot faster than keyboard typing for many people. A spoken average of 130 words per minute dramatically outpaces most people's keyboard typing speed.
 
-Windows 11 also has a full voice access feature for people with mobility impairments — it allows voice control of the entire computer, not just typing. This guide covers the simpler voice typing feature for casual use.`,
+Windows 11 also has a full voice access feature for people with mobility impairments. It allows voice control of the entire computer, not just typing. This guide covers the simpler voice typing feature for casual use.`,
     steps: [
       {
         title: 'Enable Voice Typing with a Keyboard Shortcut',
@@ -389,7 +389,7 @@ Local events of all kinds are listed on Facebook: church events, community festi
 
 When a friend or family member creates an event on Facebook and invites you, you receive a notification. You can RSVP with three options: "Going," "Interested" (maybe), or "Can't go." Your response is visible to the event organizer but not always to the general public.
 
-Creating your own event is simple — you fill in the event name, date, time, location, and a description. You can set it as public (anyone can find it) or private (only invited people can see it). For a family reunion, birthday party, or holiday gathering, a private Facebook event is a convenient way to manage invitations and share updates with attendees.
+Creating your own event is simple. You fill in the event name, date, time, location, and a description. You can set it as public (anyone can find it) or private (only invited people can see it). For a family reunion, birthday party, or holiday gathering, a private Facebook event is a convenient way to manage invitations and share updates with attendees.
 
 Once people RSVP, you can message them through the event, post updates (like "parking tip: use the side street lot"), and see who is coming. Attendees can see each other's RSVPs and the event discussion.
 
@@ -484,7 +484,7 @@ Subscriptions paid through the App Store go on your Apple ID. This includes apps
 
 How much money can this save? Surveys suggest the average person has 4-6 forgotten app subscriptions, averaging $30-70 per month total. A 10-minute audit of your subscriptions can often reveal $10-30 per month in charges for apps you do not remember subscribing to.
 
-When you cancel an App Store subscription, you retain access until the end of the current billing period — you are not cut off right away. You can also resubscribe at any time if you change your mind.
+When you cancel an App Store subscription, you retain access until the end of the current billing period. You are not cut off right away. You can also resubscribe at any time if you change your mind.
 
 This same subscription list is visible from a Mac's App Store or from account.apple.com in a browser — useful if you want to review subscriptions on a larger screen.`,
     steps: [
@@ -540,7 +540,7 @@ To see a complete picture of all your subscriptions, check both Google Play and 
       {
         title: 'Review the List',
         content: 'Scroll through your subscriptions. Tap each one to see details: app name, subscription price, billing date, and what is included in the subscription. Note any you do not remember signing up for or no longer use.',
-        tip: 'Pay attention to annual subscriptions that renew once a year — they are easy to forget about until the charge reappears.',
+        tip: 'Pay attention to annual subscriptions that renew once a year. They are easy to forget about until the charge reappears.',
       },
       {
         title: 'Cancel a Subscription',
@@ -586,7 +586,7 @@ Presenting from Google Slides is straightforward: open the presentation in full-
       {
         title: 'Choose a Theme',
         content: 'In a new presentation, click "Themes" in the toolbar at the top right (or go to Slide menu → Change theme). Browse the available themes — they show coordinated colors, fonts, and slide layouts. Click a theme to apply it to all slides.',
-        tip: 'You can change the theme at any time — it updates all slides automatically. Pick one with colors that feel appropriate for your topic.',
+        tip: 'You can change the theme at any time. It updates all slides automatically. Pick one with colors that feel appropriate for your topic.',
       },
       {
         title: 'Add Text to a Slide',
@@ -702,7 +702,7 @@ The most common advice: maintain one to two subscription services at a time and 
       {
         title: 'Rotate Services Seasonally',
         content: 'Cancel services you are not actively watching and resubscribe when a show you want comes back or when a new season drops. Most services do not charge cancellation fees. You keep your account history and watch progress — just lose access to content until you resubscribe.',
-        tip: 'Follow a site like JustWatch.com to see which streaming service currently has a specific movie or show — it updates in real time as content moves between services.',
+        tip: 'Follow a site like JustWatch.com to see which streaming service currently has a specific movie or show. It updates in real time as content moves between services.',
       },
     ],
   },
@@ -770,7 +770,7 @@ For most users, Crash Detection works in the background automatically — no set
 
 False positives do sometimes occur: Crash Detection has activated for some people during intense roller coaster rides or skiing trips — the motion pattern resembles a crash. If an alert appears and you are fine, tap "I'm OK" within 10 seconds to cancel the call.
 
-Note that Crash Detection works even if your iPhone is in low-power mode or in a pocket or bag — you do not need to be actively using the phone. It runs passively in the background at all times on supported models.`,
+Note that Crash Detection works even if your iPhone is in low-power mode or in a pocket or bag. You do not need to be actively using the phone. It runs passively in the background at all times on supported models.`,
     steps: [
       {
         title: 'Check If Your iPhone Supports Crash Detection',
@@ -856,9 +856,9 @@ Nexus and Pixel phones also have a crisis location sharing feature that sends yo
     difficulty: 'Beginner',
     body: `Original Medicare (Parts A and B) covers most hospital and medical costs. But it does not cover everything. You are responsible for deductibles, copayments, and coinsurance — costs that can add up to thousands of dollars during a serious illness or surgery. Medigap (also called Medicare Supplement Insurance) is private insurance that covers many of these out-of-pocket costs that Original Medicare leaves unpaid.
 
-Medigap is sold by private insurance companies but is highly regulated by the federal government. Plans are standardized and labeled with letters (Plan A, Plan B, Plan C, Plan D, Plan F, Plan G, Plan K, Plan L, Plan M, Plan N). All companies selling Plan G must offer the exact same Plan G benefits — you are only shopping for the best price, not for different coverage.
+Medigap is sold by private insurance companies but is highly regulated by the federal government. Plans are standardized and labeled with letters (Plan A, Plan B, Plan C, Plan D, Plan F, Plan G, Plan K, Plan L, Plan M, Plan N). All companies selling Plan G must offer the exact same Plan G benefits. You are only shopping for the best price, not for different coverage.
 
-Medigap is separate from Medicare Advantage. Medigap works alongside Original Medicare — you keep your Medicare card and use any doctor or hospital in the US that accepts Medicare. Medicare Advantage plans replace Original Medicare and typically limit you to a network of providers. These are fundamentally different approaches.
+Medigap is separate from Medicare Advantage. Medigap works alongside Original Medicare. You keep your Medicare card and use any doctor or hospital in the US that accepts Medicare. Medicare Advantage plans replace Original Medicare and typically limit you to a network of providers. These are fundamentally different approaches.
 
 **Plan G** is currently the most popular Medigap plan for new Medicare enrollees (since Plan F was discontinued for those who became eligible after 2020). Plan G covers: Part A deductible and coinsurance, Part B coinsurance (the 20% Medicare does not pay), skilled nursing facility coinsurance, and foreign travel emergencies. You only pay the Part B annual deductible yourself.
 
@@ -886,8 +886,8 @@ Medigap does not cover prescription drugs (Part D), dental, vision, or hearing �
       },
       {
         title: 'Understand What Medigap Does Not Cover',
-        content: 'Medigap plans do not include prescription drug coverage — you need a separate Part D plan for medications. They also do not cover dental, vision, or hearing. For these services, you would need additional coverage through a standalone dental/vision plan or a Medicare Advantage plan.',
-        tip: 'If you have Medigap, do NOT also enroll in a Medicare Advantage plan — they cannot be used together. Medigap works with Original Medicare only.',
+        content: 'Medigap plans do not include prescription drug coverage. You need a separate Part D plan for medications. They also do not cover dental, vision, or hearing. For these services, you would need additional coverage through a standalone dental/vision plan or a Medicare Advantage plan.',
+        tip: 'If you have Medigap, do NOT also enroll in a Medicare Advantage plan. They cannot be used together. Medigap works with Original Medicare only.',
       },
     ],
   },
@@ -980,7 +980,7 @@ Customer service is available by phone (888-345-5509) Monday-Friday 8 AM - 9 PM 
       },
       {
         title: 'Transfer Your Phone Number',
-        content: `During signup, choose "Keep my current number." Provide your current carrier's account number and PIN/password (call your current carrier if you do not know these). Consumer Cellular handles the transfer — it typically takes 4-6 hours. Do not cancel your old plan until the transfer is confirmed complete.`,
+        content: `During signup, choose "Keep my current number." Provide your current carrier's account number and PIN/password (call your current carrier if you do not know these). Consumer Cellular handles the transfer. It typically takes 4-6 hours. Do not cancel your old plan until the transfer is confirmed complete.`,
         warning: 'Keep your old phone active and do not cancel service until Consumer Cellular confirms your number has been fully transferred. Canceling early can permanently lose your number.',
       },
     ],

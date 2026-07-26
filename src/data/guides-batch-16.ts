@@ -221,7 +221,7 @@ export const guidesBatch16: Guide[] = [
       {
         title: 'Download and install Skype',
         content: "On a computer: go to skype.com and click \"Get Skype for Windows\" or \"Get Skype for Mac.\" Download and run the installer. On iPhone: open the App Store and search \"Skype\" — it's the blue app with a white \"S\" by Microsoft. On Android: open the Google Play Store and search \"Skype.\" Download and install the free app. Open Skype after installing.",
-        tip: "Quick Tip: Skype is also built into Windows 11 computers — you may already have it. Look for the Skype icon in the Start menu before downloading a new copy.",
+        tip: "Quick Tip: Skype is also built into Windows 11 computers. You may already have it. Look for the Skype icon in the Start menu before downloading a new copy.",
       },
       {
         title: 'Create a Skype account or sign in with Microsoft',
@@ -261,7 +261,7 @@ export const guidesBatch16: Guide[] = [
       {
         title: 'Cast from your Android phone using the YouTube app',
         content: "On Android: open the YouTube app, start any video, and tap the cast icon — a small rectangle with a Wi-Fi signal in the corner. It appears at the top right of the video player. Your phone and TV must be on the same Wi-Fi network. A list of available devices appears — tap your TV or Chromecast. The video begins playing on the TV. You can still control playback (play, pause, volume) from your phone even after it locks.",
-        tip: 'Quick Tip: You can keep using your phone for other things while the video plays on TV — it works like a remote control.',
+        tip: 'Quick Tip: You can keep using your phone for other things while the video plays on TV. It works like a remote control.',
       },
       {
         title: 'Cast from iPhone using AirPlay',
@@ -270,7 +270,7 @@ export const guidesBatch16: Guide[] = [
       },
       {
         title: 'Use a YouTube code to link your phone and TV',
-        content: "Another option: open YouTube on your smart TV and go to Settings → Sign in or Link TV. The TV shows a code. On your phone, open youtube.com/activate and enter that code. Now your phone becomes a remote for YouTube on TV — you can search and browse on your phone and the video plays on the big screen. This works on any YouTube-capable TV without needing Chromecast or AirPlay.",
+        content: "Another option: open YouTube on your smart TV and go to Settings → Sign in or Link TV. The TV shows a code. On your phone, open youtube.com/activate and enter that code. Now your phone becomes a remote for YouTube on TV. You can search and browse on your phone and the video plays on the big screen. This works on any YouTube-capable TV without needing Chromecast or AirPlay.",
       },
     ],
   },
@@ -328,7 +328,7 @@ export const guidesBatch16: Guide[] = [
     thumbnailEmoji: '',
     publishedAt: '2026-04-19',
     difficulty: 'Intermediate',
-    body: `Phone plans have changed dramatically in recent years. Many carriers now offer plans specifically designed for people 55 and older, and smaller "virtual" carriers (called MVNOs) often use the same towers as Verizon, AT&T, or T-Mobile but charge 40-70% less per month.\n\nSwitching your cell phone carrier sounds intimidating. But it is a routine process that happens thousands of times a day. Your phone number is yours — it belongs to you, not the carrier — and you have the legal right to take it with you when you switch. This is called "porting" your number.\n\nBefore switching, make sure your phone is unlocked (not tied to your current carrier). Most phones are automatically unlocked after they are paid off, or after 12 months of service. You can call your current carrier to confirm.`,
+    body: `Phone plans have changed dramatically in recent years. Many carriers now offer plans specifically designed for people 55 and older, and smaller "virtual" carriers (called MVNOs) often use the same towers as Verizon, AT&T, or T-Mobile but charge 40-70% less per month.\n\nSwitching your cell phone carrier sounds intimidating. But it is a routine process that happens thousands of times a day. Your phone number is yours. It belongs to you, not the carrier — and you have the legal right to take it with you when you switch. This is called "porting" your number.\n\nBefore switching, make sure your phone is unlocked (not tied to your current carrier). Most phones are automatically unlocked after they are paid off, or after 12 months of service. You can call your current carrier to confirm.`,
     steps: [
       {
         title: 'Compare plans before you switch',
@@ -337,7 +337,7 @@ export const guidesBatch16: Guide[] = [
       },
       {
         title: 'Do NOT cancel your old service before switching',
-        content: 'This is the most important rule of switching carriers. Do not cancel your current plan until your new carrier has activated your service and ported your number. Canceling first causes your number to be released, which makes it much harder to transfer. Instead, start the switch with the new carrier — they will handle contacting your old carrier and initiating the number transfer.',
+        content: 'This is the most important rule of switching carriers. Do not cancel your current plan until your new carrier has activated your service and ported your number. Canceling first causes your number to be released, which makes it much harder to transfer. Instead, start the switch with the new carrier. They will handle contacting your old carrier and initiating the number transfer.',
         warning: 'If you have a contract with your current carrier, check if an early termination fee applies. Many carriers now offer no-contract plans, so this is less common, but worth confirming before you switch.',
       },
       {
@@ -400,7 +400,7 @@ export const guidesBatch16: Guide[] = [
     steps: [
       {
         title: 'Sign up for Max',
-        content: "Go to max.com on any device or download the Max app from the App Store (iPhone/iPad) or Google Play Store (Android). Click \"Sign Up\" and choose a plan. The ad-supported plan at ~$9.99/month is a good starting point. Enter your email address and create a password. Add a payment method. If you have HBO through cable or satellite, click \"Sign in with TV Provider\" and choose your provider — you can log in without paying extra.",
+        content: "Go to max.com on any device or download the Max app from the App Store (iPhone/iPad) or Google Play Store (Android). Click \"Sign Up\" and choose a plan. The ad-supported plan at ~$9.99/month is a good starting point. Enter your email address and create a password. Add a payment method. If you have HBO through cable or satellite, click \"Sign in with TV Provider\" and choose your provider. You can log in without paying extra.",
         tip: 'Quick Tip: Max offers a bundle with Disney+ and Hulu at a reduced combined price through Disney. If you use multiple streaming services, the bundle can save money.',
       },
       {
@@ -429,7 +429,7 @@ export const guidesBatch16: Guide[] = [
     thumbnailEmoji: '',
     publishedAt: '2026-04-19',
     difficulty: 'Beginner',
-    body: `YouTube TV is not the same as YouTube. While regular YouTube is a free video platform where anyone can post videos, YouTube TV is a paid live television service that streams the same channels you would normally get through cable or satellite — ABC, CBS, NBC, Fox, CNN, MSNBC, ESPN, HGTV, Food Network, and more.\n\nYouTube TV costs around $72.99 per month and includes over 100 channels, unlimited cloud DVR recording (no storage limit), and up to 3 simultaneous streams so multiple people can watch different channels at the same time. Unlike cable, there is no equipment to rent and no installation appointment — you watch on any TV, phone, tablet, or computer.\n\nMany people switch to YouTube TV (or a similar service like Hulu + Live TV, DirecTV Stream, or FuboTV) to cut their cable bill. This guide explains what YouTube TV is and whether it might be right for you.`,
+    body: `YouTube TV is not the same as YouTube. While regular YouTube is a free video platform where anyone can post videos, YouTube TV is a paid live television service that streams the same channels you would normally get through cable or satellite — ABC, CBS, NBC, Fox, CNN, MSNBC, ESPN, HGTV, Food Network, and more.\n\nYouTube TV costs around $72.99 per month and includes over 100 channels, unlimited cloud DVR recording (no storage limit), and up to 3 simultaneous streams so multiple people can watch different channels at the same time. Unlike cable, there is no equipment to rent and no installation appointment. You watch on any TV, phone, tablet, or computer.\n\nMany people switch to YouTube TV (or a similar service like Hulu + Live TV, DirecTV Stream, or FuboTV) to cut their cable bill. This guide explains what YouTube TV is and whether it might be right for you.`,
     steps: [
       {
         title: 'Check which channels are available in your area',
@@ -439,11 +439,11 @@ export const guidesBatch16: Guide[] = [
       {
         title: 'Set up YouTube TV on your devices',
         content: "Sign up at tv.youtube.com using a Google account. Then download the YouTube TV app on your TV (most smart TVs, Roku, Fire TV, Apple TV, and Chromecast support it), phone, or tablet. Sign in with the same Google account. You can watch live TV right away after sign-up. Use the guide (a channel listing like a traditional TV guide) to browse what is on right now, or search for specific shows.",
-        tip: "Quick Tip: The YouTube TV app looks different from the regular YouTube app. Make sure you're opening YouTube TV specifically — it has a blue \"TV\" logo.",
+        tip: "Quick Tip: The YouTube TV app looks different from the regular YouTube app. Make sure you're opening YouTube TV specifically. It has a blue \"TV\" logo.",
       },
       {
         title: 'Use the unlimited DVR to record shows',
-        content: "One of YouTube TV's best features is its unlimited cloud DVR — you can record as many shows as you want and they are saved for 9 months. To record: find any show in the guide or search for it, click the \"Add to Library\" button (a + icon). YouTube TV will record every episode of that show going forward. To watch recordings, click \"Library\" in the navigation bar.",
+        content: "One of YouTube TV's best features is its unlimited cloud DVR. You can record as many shows as you want and they are saved for 9 months. To record: find any show in the guide or search for it, click the \"Add to Library\" button (a + icon). YouTube TV will record every episode of that show going forward. To watch recordings, click \"Library\" in the navigation bar.",
         tip: "Quick Tip: Unlike a traditional DVR box, YouTube TV's recordings are saved online — so you can watch them from any device anywhere, not just from your home TV.",
       },
       {
@@ -463,16 +463,16 @@ export const guidesBatch16: Guide[] = [
     thumbnailEmoji: '',
     publishedAt: '2026-04-19',
     difficulty: 'Beginner',
-    body: `Sharing your location with family members — a spouse, adult child, or sibling — can provide real comfort for everyone involved. If you go out and are later than expected, a family member can check where you are without a phone call. If you are in an unfamiliar area, someone else can see you arrived safely. Many older adults share their location with adult children as a way to maintain independence while providing reassurance.\n\nLocation sharing is optional, private, and controlled entirely by you — you choose who sees your location. And you can stop sharing at any time. The location is only shared with the specific people you approve. No one else can see it.\n\nThis guide covers the two most common ways to share your location: using Apple's Find My (for iPhones) and Google Maps (available on both iPhone and Android).`,
+    body: `Sharing your location with family members — a spouse, adult child, or sibling — can provide real comfort for everyone involved. If you go out and are later than expected, a family member can check where you are without a phone call. If you are in an unfamiliar area, someone else can see you arrived safely. Many older adults share their location with adult children as a way to maintain independence while providing reassurance.\n\nLocation sharing is optional, private, and controlled entirely by you. You choose who sees your location. And you can stop sharing at any time. The location is only shared with the specific people you approve. No one else can see it.\n\nThis guide covers the two most common ways to share your location: using Apple's Find My (for iPhones) and Google Maps (available on both iPhone and Android).`,
     steps: [
       {
         title: 'Share location on iPhone using Find My',
-        content: `Open the Find My app on your iPhone (it comes pre-installed — search for it if you don't see it). Tap "People" at the bottom. Tap "Share My Location" or the "+" button. Type in the name or phone number of the family member you want to share with — they need to have an iPhone and an Apple ID. Choose whether to share "For One Hour," "Until End of Day," or "Share Indefinitely." They will receive a notification and can accept your location sharing request.`,
+        content: `Open the Find My app on your iPhone (it comes pre-installed — search for it if you don't see it). Tap "People" at the bottom. Tap "Share My Location" or the "+" button. Type in the name or phone number of the family member you want to share with. They need to have an iPhone and an Apple ID. Choose whether to share "For One Hour," "Until End of Day," or "Share Indefinitely." They will receive a notification and can accept your location sharing request.`,
         tip: 'Quick Tip: Both people can share with each other — so you can also see where your family member is, not just the other way around. Each person has to agree to sharing.',
       },
       {
         title: 'Share location on iPhone or Android using Google Maps',
-        content: "Open Google Maps on your phone. Tap your profile picture at the top right → \"Location sharing\" → \"Share location.\" Choose how long to share (1 hour, until you turn it off, etc.). Select the contact you want to share with — they can see your location in Google Maps or receive a link by text or email. Your location shows as a dot on their map. To stop sharing, go back to Location sharing and tap your name → Stop.",
+        content: "Open Google Maps on your phone. Tap your profile picture at the top right → \"Location sharing\" → \"Share location.\" Choose how long to share (1 hour, until you turn it off, etc.). Select the contact you want to share with. They can see your location in Google Maps or receive a link by text or email. Your location shows as a dot on their map. To stop sharing, go back to Location sharing and tap your name → Stop.",
         tip: 'Quick Tip: Google Maps location sharing works across iPhone and Android — great for mixed-device families where some members have iPhones and others have Android phones.',
       },
       {
@@ -563,7 +563,7 @@ export const guidesBatch16: Guide[] = [
       },
       {
         title: 'Manage or stop sharing the album',
-        content: "To remove someone from the album: open the album → tap the three-dot menu (⋮) → \"Options\" or \"Sharing settings\" → tap the person's name → \"Remove.\" To stop sharing with everyone: tap the three-dot menu → \"Sharing options\" → turn off sharing. The album remains in your Google Photos library — it just becomes private again. You can also delete the album entirely from the same menu.",
+        content: "To remove someone from the album: open the album → tap the three-dot menu (⋮) → \"Options\" or \"Sharing settings\" → tap the person's name → \"Remove.\" To stop sharing with everyone: tap the three-dot menu → \"Sharing options\" → turn off sharing. The album remains in your Google Photos library. It just becomes private again. You can also delete the album entirely from the same menu.",
         tip: "Quick Tip: You can print photos directly from Google Photos through its partner services. Open any photo → tap the three-dot menu → \"Order photo.\" Printed photos make wonderful gifts for family members who prefer physical pictures.",
       },
     ],
@@ -598,7 +598,7 @@ export const guidesBatch16: Guide[] = [
       {
         title: 'Order prints and photo gifts directly from the app',
         content: "Amazon Photos connects directly to Amazon's print services. You can order printed photos, photo books, canvases, and personalized gifts right from the app. Tap any photo → tap the shopping cart or print icon → choose a product type and size → add to your Amazon cart. Prints typically arrive in 5-7 days with Prime. This is a convenient way to turn digital photos into physical memories to display or give as gifts.",
-        tip: "Quick Tip: Amazon Photos is also available on Amazon Fire tablets and Fire TV — you can view your entire photo library as a screensaver or slideshow on your TV, which makes a lovely digital picture frame.",
+        tip: "Quick Tip: Amazon Photos is also available on Amazon Fire tablets and Fire TV. You can view your entire photo library as a screensaver or slideshow on your TV, which makes a lovely digital picture frame.",
       },
     ],
   },

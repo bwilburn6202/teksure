@@ -120,7 +120,7 @@ Sources: Google Account Help (support.google.com/accounts), AARP Technology (aar
 
 **Unfriend: a quiet parting of ways**
 
-When you unfriend someone, you remove them from your Friends list. Your profiles are no longer connected. They will stop seeing your posts in their feed. And you will stop seeing theirs. Facebook does not send them a notification when you unfriend them — they will only notice if they come to your profile and see the "Add Friend" button instead of "Friends."
+When you unfriend someone, you remove them from your Friends list. Your profiles are no longer connected. They will stop seeing your posts in their feed. And you will stop seeing theirs. Facebook does not send them a notification when you unfriend them. They will only notice if they come to your profile and see the "Add Friend" button instead of "Friends."
 
 After you unfriend someone, they can still send you a friend request again in the future if they want to. They can also see any posts you have set to "Public" (visible to everyone). If your posts are set to "Friends only," they cannot see them.
 
@@ -130,7 +130,7 @@ Blocking is a stronger action. When you block someone, they cannot see your prof
 
 The person you blocked will not receive a notification, but if they try to find your profile, they will not be able to. It will appear as if you do not exist on Facebook.
 
-You can unblock someone later. But there is a 48-hour waiting period before you can re-block them again. Also note that unblocking someone does not automatically re-friend them — you would need to send a new friend request if you wanted to reconnect.
+You can unblock someone later. But there is a 48-hour waiting period before you can re-block them again. Also note that unblocking someone does not automatically re-friend them. You would need to send a new friend request if you wanted to reconnect.
 
 **Restrict: the quiet middle option**
 
@@ -166,7 +166,7 @@ Sources: Facebook Help Center (facebook.com/help), AARP Technology (aarp.org/hom
       },
       {
         title: 'Restrict someone',
-        content: 'On their profile page, tap or click the "Friends" button. From the menu that appears, choose "Edit Friend List" or look for the "Restrict" option. On some versions of Facebook, you may need to tap "More options" (the three dots) and then choose "Restrict." Once restricted, their name will have a small lock icon in your Friends list on your own end — they will not see any change on their end.',
+        content: 'On their profile page, tap or click the "Friends" button. From the menu that appears, choose "Edit Friend List" or look for the "Restrict" option. On some versions of Facebook, you may need to tap "More options" (the three dots) and then choose "Restrict." Once restricted, their name will have a small lock icon in your Friends list on your own end. They will not see any change on their end.',
         tip: 'To view your Restricted list: go to your own profile, tap "Friends," then look for "More" or the gear icon to find "Restricted List."',
       },
       {
@@ -273,7 +273,7 @@ Sources: Microsoft Support (support.microsoft.com/en-us/word), GCFGlobal.org (gc
       {
         title: 'Share your document by email',
         content: 'Save your document first (Step 4). Then open your email program — Gmail, Outlook, or whatever you use. Start a new email and address it to the person you want to send it to. Look for a paperclip icon or an "Attach" button and click it. A file browser window will open. Navigate to your Documents folder, find your Word file, and double-click it to attach it. Finish writing your message and click Send. The recipient will receive the file attached to your email and can open it on their computer.',
-        tip: 'Quick Tip: If the other person does not have Microsoft Word, they can open your file for free using Google Docs — they upload the file to drive.google.com and it opens automatically.',
+        tip: 'Quick Tip: If the other person does not have Microsoft Word, they can open your file for free using Google Docs. They upload the file to drive.google.com and it opens automatically.',
       },
     ],
   },

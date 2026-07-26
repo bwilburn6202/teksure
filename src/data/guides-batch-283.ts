@@ -73,7 +73,7 @@ This guide covers the most useful AirPods features beyond music alone — pairin
     steps: [
       {
         title: 'Pair AirPods with your iPhone (10 seconds)',
-        content: 'Open the AirPods case lid near your iPhone (the case must be charged). Within seconds, an animation appears on the iPhone screen showing the AirPods. Tap "Connect." Pairing is done. The AirPods now appear on every Apple device signed into the same Apple ID — you do not need to pair them again to your Mac, iPad, or Apple TV.',
+        content: 'Open the AirPods case lid near your iPhone (the case must be charged). Within seconds, an animation appears on the iPhone screen showing the AirPods. Tap "Connect." Pairing is done. The AirPods now appear on every Apple device signed into the same Apple ID. You do not need to pair them again to your Mac, iPad, or Apple TV.',
       },
       {
         title: 'Switch between devices automatically',

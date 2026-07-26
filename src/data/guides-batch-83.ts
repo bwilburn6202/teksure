@@ -211,12 +211,12 @@ If your situation qualifies, Direct File is the most direct, lowest-cost option 
     steps: [
       {
         title: `Check Whether You Qualify and Your State Participates`,
-        content: `Go to directfile.irs.gov from any web browser. The site lists the states where Direct File is available and the types of income and deductions it currently supports. Read the eligibility checklist carefully. If your income came entirely from W-2 employment, Social Security, or unemployment benefits. And you did not have self-employment income or itemized deductions, you very likely qualify.`,
+        content: `Go to directfile.irs.gov from any web browser. The site lists the states where Direct File is available and the types of income and deductions it currently supports. Read the eligibility checklist carefully. If your income came entirely from W-2 employment, Social Security, or unemployment benefits, and you did not have self-employment income or itemized deductions, you very likely qualify.`,
         tip: `Quick Tip: The eligibility checker on the Direct File website takes only a few minutes. Answer the questions honestly and it will tell you right away whether you can proceed.`,
       },
       {
         title: `Verify Your Identity with ID.me or Login.gov`,
-        content: `To protect your tax information, the IRS requires you to verify your identity before filing. Direct File uses ID.me or Login.gov for this step. If you already have an account with either service — you may have created one to access other government benefits — sign in. If not, create a new account. You will need a government-issued photo ID and will go through a short identity verification process.`,
+        content: `To protect your tax information, the IRS requires you to verify your identity before filing. Direct File uses ID.me or Login.gov for this step. If you already have an account with either service. You may have created one to access other government benefits — sign in. If not, create a new account. You will need a government-issued photo ID and will go through a short identity verification process.`,
         warning: `The identity verification step is mandatory and cannot be skipped. Have your driver's license or state ID ready before starting.`,
       },
       {
@@ -238,7 +238,7 @@ If your situation qualifies, Direct File is the most direct, lowest-cost option 
   {
     slug: `vita-free-tax-help`,
     title: `How to Get Free In-Person Tax Help Through the VITA Program`,
-    excerpt: `VITA offers free tax preparation by IRS-certified volunteers for qualifying individuals and families — you bring your documents and they file for you.`,
+    excerpt: `VITA offers free tax preparation by IRS-certified volunteers for qualifying individuals and families. You bring your documents and they file for you.`,
     category: `government-civic`,
     tags: [`vita`, `free tax help`, `irs certified`, `tax preparation`, `low income`, `in-person`],
     readTime: `5 min`,
@@ -272,7 +272,7 @@ If you qualify, VITA is one of the best deals available during tax season. The v
       {
         title: `Review Your Completed Return Before Signing`,
         content: `The VITA volunteer will prepare your return and then go through it with you before filing. They will explain the key figures — your income total, any credits applied, and whether you are receiving a refund or owe a balance. Ask any questions at this stage. Do not sign or authorize the return until you understand what was filed and agree that everything is accurate.`,
-        tip: `Quick Tip: You are entitled to a copy of your completed return. Ask for one before you leave — it is useful for next year and as a record of what was filed.`,
+        tip: `Quick Tip: You are entitled to a copy of your completed return. Ask for one before you leave. It is useful for next year and as a record of what was filed.`,
       },
       {
         title: `Authorize Filing and Track Your Refund`,
@@ -307,7 +307,7 @@ AARP Tax-Aide also offers a fully online option called "Tax-Aide Online" where y
       },
       {
         title: `Gather Your Documents`,
-        content: `Before your appointment, collect your photo ID, Social Security cards for yourself and your spouse or dependents, all income documents (W-2s, 1099 forms for Social Security, pensions, bank interest, and investment distributions), proof of any deductions you plan to claim, and your bank account information for direct deposit. Bring last year's tax return if you have it — it helps the volunteer confirm your information is consistent year over year.`,
+        content: `Before your appointment, collect your photo ID, Social Security cards for yourself and your spouse or dependents, all income documents (W-2s, 1099 forms for Social Security, pensions, bank interest, and investment distributions), proof of any deductions you plan to claim, and your bank account information for direct deposit. Bring last year's tax return if you have it. It helps the volunteer confirm your information is consistent year over year.`,
         warning: `Medicare Part B premiums, which are deducted from Social Security checks, can sometimes be deducted as a medical expense if you itemize. Bring your Social Security benefit statement (SSA-1099) and any Medicare statements so the volunteer can check this for you.`,
       },
       {
@@ -335,7 +335,7 @@ AARP Tax-Aide also offers a fully online option called "Tax-Aide Online" where y
     thumbnailEmoji: ``,
     publishedAt: `2026-04-20`,
     difficulty: `Intermediate`,
-    body: `A Roth IRA is a special type of retirement savings account with a major long-term benefit: the money you put in grows tax-free, and when you take it out in retirement, you pay no taxes on the growth. You contribute money you've already paid income tax on. So you don't get a tax break today. But every future gain is yours to keep — you won't owe the IRS anything when you withdraw it.
+    body: `A Roth IRA is a special type of retirement savings account with a major long-term benefit: the money you put in grows tax-free, and when you take it out in retirement, you pay no taxes on the growth. You contribute money you've already paid income tax on. So you don't get a tax break today. But every future gain is yours to keep. You won't owe the IRS anything when you withdraw it.
 
 That's the opposite of a traditional IRA or a 401(k), where you get a tax deduction now but pay income taxes when you withdraw the money in retirement. The Roth approach is especially valuable if you expect to be in a higher tax bracket later in life, or if tax rates in general go up over time — which many financial professionals consider likely.
 
@@ -367,7 +367,7 @@ One more benefit worth knowing: with a Roth IRA, you can withdraw your original 
       {
         title: `Choose Your Investments`,
         content: `Log into your new account and go to the investment section. For most long-term retirement savers, a simple choice is a "target-date fund" matched to the year you plan to retire — for example, a "2040 Fund" if you plan to retire around 2040. These funds automatically hold a mix of stocks and bonds and gradually become more conservative as you approach retirement. They are designed to be a single investment you do not need to actively manage.`,
-        tip: `Quick Tip: Look for target-date funds labeled "index" — they typically have lower annual fees than actively managed funds, which matters a lot over decades of saving.`,
+        tip: `Quick Tip: Look for target-date funds labeled "index". They typically have lower annual fees than actively managed funds, which matters a lot over decades of saving.`,
       },
     ],
   },
@@ -381,7 +381,7 @@ One more benefit worth knowing: with a Roth IRA, you can withdraw your original 
     thumbnailEmoji: ``,
     publishedAt: `2026-04-20`,
     difficulty: `Beginner`,
-    body: `A 401(k) is a retirement savings account offered through your employer. The name comes from the section of the tax code that created it — you do not need to know what the number means, only that it is one of the most powerful tools available for saving for retirement. Money goes into the account directly from your paycheck before income taxes are calculated, which lowers the amount of income you are taxed on each year.
+    body: `A 401(k) is a retirement savings account offered through your employer. The name comes from the section of the tax code that created it. You do not need to know what the number means, only that it is one of the most powerful tools available for saving for retirement. Money goes into the account directly from your paycheck before income taxes are calculated, which lowers the amount of income you are taxed on each year.
 
 The money grows inside the account without being taxed each year. You only pay income taxes when you withdraw the money in retirement. This is called "tax-deferred" growth. And it allows your savings to compound faster than if taxes were taken out along the way.
 
@@ -646,7 +646,7 @@ Betterment supports multiple account types: regular taxable brokerage accounts, 
       {
         title: `Monitor Your Progress Without Overreacting`,
         content: `Log in periodically to see your account balance, projected growth, and how you are tracking toward your goal. The app shows a projection of what your account may be worth at your target date based on current contributions and historical returns. When markets decline temporarily — which happens regularly — your portfolio value will drop. This is normal. Betterment's strategy is built for long-term holding, not short-term market reactions.`,
-        tip: `Quick Tip: Betterment's tax-loss harvesting feature works in the background automatically. You do not need to do anything to activate it — it monitors your portfolio and makes tax-efficient adjustments on its own.`,
+        tip: `Quick Tip: Betterment's tax-loss harvesting feature works in the background automatically. You do not need to do anything to activate it. It monitors your portfolio and makes tax-efficient adjustments on its own.`,
       },
     ],
   },
@@ -718,12 +718,12 @@ The app is available on iPhone, Android, and through a web browser on any comput
       {
         title: `Sign Up and Start Your Free Trial`,
         content: `Go to ynab.com or download the YNAB app from the App Store or Google Play. Tap "Start for Free" and create an account with your email address. The 34-day free trial does not require a credit card. When you first log in, YNAB will guide you through a brief onboarding that explains the core concepts. Read through it — the method makes more sense after understanding the "why" behind it.`,
-        tip: `Quick Tip: YNAB offers free live workshops and recorded video classes at ynab.com/classes. The 90-minute introductory class is worth your time — it makes the whole system click.`,
+        tip: `Quick Tip: YNAB offers free live workshops and recorded video classes at ynab.com/classes. The 90-minute introductory class is worth your time. It makes the whole system click.`,
       },
       {
         title: `Connect Your Bank Accounts`,
         content: `Go to "Account" settings and select "Add Account." YNAB can connect directly to most major US banks to import transactions automatically. Search for your bank, log in through YNAB's secure connection, and your transactions will begin importing within a day. Add all accounts you actively use — checking, savings, and any credit cards you pay regularly.`,
-        warning: `YNAB uses read-only access to your bank accounts — it can see transactions but cannot move money. Your banking credentials are handled through a secure third-party service, not stored by YNAB directly.`,
+        warning: `YNAB uses read-only access to your bank accounts. It can see transactions but cannot move money. Your banking credentials are handled through a secure third-party service, not stored by YNAB directly.`,
       },
       {
         title: `Set Up Your Budget Categories`,
@@ -736,7 +736,7 @@ The app is available on iPhone, Android, and through a web browser on any comput
       },
       {
         title: `Record Spending and Adjust Throughout the Month`,
-        content: `When you spend money, open YNAB and add a transaction — or let the bank connection import it automatically. When a transaction appears, YNAB deducts it from the appropriate category. If a category runs out before the month ends, move money from a lower-priority category to cover it. This active adjustment is the heart of the YNAB method — you are never surprised by where your money went because you are making decisions along the way.`,
+        content: `When you spend money, open YNAB and add a transaction — or let the bank connection import it automatically. When a transaction appears, YNAB deducts it from the appropriate category. If a category runs out before the month ends, move money from a lower-priority category to cover it. This active adjustment is the heart of the YNAB method. You are never surprised by where your money went because you are making decisions along the way.`,
         tip: `Quick Tip: At first, adjusting your budget often may feel like you are failing. You are not — you are learning what your actual spending patterns look like. It typically takes two to three months before your budget reflects reality closely enough to feel in control.`,
       },
     ],
@@ -764,12 +764,12 @@ The app costs $14.99 per month or $99.99 per year. A free trial is available. Un
       {
         title: `Sign Up and Start Your Free Trial`,
         content: `Go to monarchmoney.com or download the Monarch Money app from the App Store or Google Play. Tap "Try Free" and create an account with your email address. You will be walked through an initial setup that asks about your financial goals and what accounts you want to connect. This information helps Monarch personalize your dashboard from the start.`,
-        tip: `Quick Tip: Monarch supports collaboration — you can invite a spouse or partner to share your financial dashboard. Both people can view and manage the budget from their own phones with the same account.`,
+        tip: `Quick Tip: Monarch supports collaboration. You can invite a spouse or partner to share your financial dashboard. Both people can view and manage the budget from their own phones with the same account.`,
       },
       {
         title: `Connect Your Financial Accounts`,
         content: `In the app, go to "Accounts" and tap "Add Account." Search for your bank by name and log in through Monarch's secure connection. Repeat this process for every account: checking, savings, credit cards, investment accounts, mortgage or loans, and retirement accounts. The more accounts you connect, the more complete your financial picture will be. Account connections typically sync within a few hours.`,
-        warning: `Monarch uses read-only access to your financial accounts — it cannot move money or make changes. If a connection fails or an account stops syncing, you may need to re-enter your banking credentials in the Accounts section.`,
+        warning: `Monarch uses read-only access to your financial accounts. It cannot move money or make changes. If a connection fails or an account stops syncing, you may need to re-enter your banking credentials in the Accounts section.`,
       },
       {
         title: `Review and Categorize Your Transactions`,
@@ -815,7 +815,7 @@ Simplifi is available on iPhone, Android, and through a web browser. It does not
       {
         title: `Connect Your Accounts`,
         content: `Tap "Add Accounts" and search for your bank by name. Sign in through Simplifi's secure connection. Add your checking account, savings account, credit cards, and any loan or investment accounts you want to track. Simplifi will begin importing your recent transaction history — often the past 90 days — to give you an immediate picture of your spending patterns.`,
-        warning: `Some smaller regional banks and credit unions may not be available for automatic connection. In those cases, you can add the account manually and enter a balance — you will need to update it periodically to keep it current.`,
+        warning: `Some smaller regional banks and credit unions may not be available for automatic connection. In those cases, you can add the account manually and enter a balance. You will need to update it periodically to keep it current.`,
       },
       {
         title: `Review Your Spending Plan`,
@@ -855,7 +855,7 @@ NerdWallet's reviews and comparisons are written by financial journalists and co
     steps: [
       {
         title: `Download the App and Create a Free Account`,
-        content: `Search for "NerdWallet" in the App Store or Google Play and install the free app. Tap "Sign Up Free" and enter your email address and a password. You will be asked for your date of birth and the last four digits of your Social Security number to pull your credit score. This is a "soft pull" — it does not affect your credit score in any way. NerdWallet shows your VantageScore 3.0 credit score from TransUnion.`,
+        content: `Search for "NerdWallet" in the App Store or Google Play and install the free app. Tap "Sign Up Free" and enter your email address and a password. You will be asked for your date of birth and the last four digits of your Social Security number to pull your credit score. This is a "soft pull". It does not affect your credit score in any way. NerdWallet shows your VantageScore 3.0 credit score from TransUnion.`,
         tip: `Quick Tip: Your NerdWallet credit score is a VantageScore, which uses a slightly different calculation than the FICO score most lenders use. The two scores are usually close but may differ by 10 to 30 points.`,
       },
       {
@@ -897,7 +897,7 @@ High-yield savings accounts are federally insured — accounts at FDIC-insured b
 
 These accounts work best for money you want to keep safe and accessible but are not spending in the short term — an emergency fund, money you are saving for a car or home down payment, or a cash cushion you want to keep separate from your everyday checking. They are not designed for money you invest in stocks, which carries different risk and potential return.
 
-Opening one takes about 10 minutes online. You will link your existing checking account, transfer your savings, and from that point forward the interest accrues and compounds monthly or daily. You can move money in and out as needed — there is no lockup period.`,
+Opening one takes about 10 minutes online. You will link your existing checking account, transfer your savings, and from that point forward the interest accrues and compounds monthly or daily. You can move money in and out as needed. There is no lockup period.`,
     steps: [
       {
         title: `Compare Rates at Reputable Online Banks`,
@@ -922,7 +922,7 @@ Opening one takes about 10 minutes online. You will link your existing checking 
       {
         title: `Set Up Automatic Transfers to Build Your Savings`,
         content: `Go to the new bank's settings and look for "Recurring Transfers" or "Auto Save." Set up an automatic transfer from your checking account to your savings account on a regular schedule — monthly or with each paycheck. Even $50 or $100 per transfer adds up a lot over months and years, and the high interest rate accelerates the growth. The most effective savings habit is one that happens without you having to think about it each time.`,
-        tip: `Quick Tip: Treat your savings transfer like a recurring bill — it goes out every month regardless of what else is happening with your budget. Building this habit is more important than the starting amount.`,
+        tip: `Quick Tip: Treat your savings transfer like a recurring bill. It goes out every month regardless of what else is happening with your budget. Building this habit is more important than the starting amount.`,
       },
     ],
   },

@@ -25,7 +25,7 @@ A Windows PC and a Mac handle start-up in slightly different ways, but the troub
       {
         title: 'Check the power source first',
         content: "Trace the power cord from your computer all the way to the wall. Make sure every connection is firmly plugged in — into the computer, into any power brick or adapter, and into the wall outlet or power strip. If you use a power strip, look for a reset button on it and press it once. Try a different outlet in the room to rule out a dead outlet.",
-        tip: "Power strips that protect against surges have a small reset button — it looks like a tiny raised circle. Press it once and then try the computer again.",
+        tip: "Power strips that protect against surges have a small reset button. It looks like a tiny raised circle. Press it once and then try the computer again.",
       },
       {
         title: 'For laptops — check the charging indicator',
@@ -70,7 +70,7 @@ A Windows PC and a Mac handle start-up in slightly different ways, but the troub
 
 Modern phones — both iPhones and Android phones — use charging ports with very small openings. Over months of daily use, lint from pockets and purses gradually packs itself into that opening. Even a thin layer of lint can prevent the cable from making proper electrical contact. This is the number-one cause of "suddenly my phone won't charge" calls.
 
-The cable itself is another frequent culprit. The small connector at the end of a charging cable takes a beating — it gets bent, stepped on, wound too tightly, and yanked at odd angles. A cable that looks fine on the outside can have a broken wire inside that causes it to charge intermittently or not at all.
+The cable itself is another frequent culprit. The small connector at the end of a charging cable takes a beating. It gets bent, stepped on, wound too tightly, and yanked at odd angles. A cable that looks fine on the outside can have a broken wire inside that causes it to charge intermittently or not at all.
 
 Before buying a new phone or going to the repair shop, spend 10 minutes on the steps below.`,
     steps: [
@@ -194,7 +194,7 @@ This guide works for the major free email services — Gmail (Google), Yahoo Mai
       },
       {
         title: 'Check if the email service is having an outage',
-        content: "Sometimes Gmail, Yahoo, or Outlook experiences a temporary service disruption. Visit downdetector.com and search for 'Gmail,' 'Yahoo Mail,' or 'Outlook' to see if other people are reporting the same problem right now. If there is an outage, you need to wait — it usually resolves within a few hours.",
+        content: "Sometimes Gmail, Yahoo, or Outlook experiences a temporary service disruption. Visit downdetector.com and search for 'Gmail,' 'Yahoo Mail,' or 'Outlook' to see if other people are reporting the same problem right now. If there is an outage, you need to wait. It usually resolves within a few hours.",
       },
       {
         title: 'Update or reinstall the email app',
@@ -262,7 +262,7 @@ This guide focuses on three platforms: iCloud (iPhone users), Google Photos (And
 
 Phones freeze most often when an app crashes and ties up the phone's processor, when the phone runs low on available memory (different from storage — think of it like working space for the phone's brain), or after an update that didn't finish correctly.
 
-The forced restart process is different depending on your phone model. The steps below cover the most common iPhones and Android phones. None of these steps will delete your photos, contacts, or apps — they turn the phone off and back on quickly.
+The forced restart process is different depending on your phone model. The steps below cover the most common iPhones and Android phones. None of these steps will delete your photos, contacts, or apps. They turn the phone off and back on quickly.
 
 **Important:** A forced restart is different from a factory reset. A factory reset erases everything. A forced restart is a quick reboot and is completely safe.`,
     steps: [
@@ -337,7 +337,7 @@ The process for all major email providers follows the same general path: click "
       },
       {
         title: "If you can't verify — contact support",
-        content: "If you no longer have access to the recovery phone or email, the process is harder. Gmail has an Account Recovery form at accounts.google.com/signin/recovery that asks you additional questions about your account history. Yahoo and Outlook have similar forms. This process can take several days. If the account was a work or school email, contact your IT department — they can reset it directly.",
+        content: "If you no longer have access to the recovery phone or email, the process is harder. Gmail has an Account Recovery form at accounts.google.com/signin/recovery that asks you additional questions about your account history. Yahoo and Outlook have similar forms. This process can take several days. If the account was a work or school email, contact your IT department. They can reset it directly.",
       },
     ],
   },
@@ -401,7 +401,7 @@ The steps below are in order of impact — the first steps will make the biggest
     thumbnailEmoji: '🌡️',
     publishedAt: '2026-05-03',
     difficulty: 'Beginner',
-    body: `When your computer's fan suddenly gets loud or runs at high speed all the time, it is working hard to cool something down. This is the computer's built-in protection system — it is trying to prevent heat damage to its internal parts. Taking action sooner rather than later is important, because excessive heat over time can shorten the life of a computer.
+    body: `When your computer's fan suddenly gets loud or runs at high speed all the time, it is working hard to cool something down. This is the computer's built-in protection system. It is trying to prevent heat damage to its internal parts. Taking action sooner rather than later is important, because excessive heat over time can shorten the life of a computer.
 
 The most common causes are something demanding running in the background that is using a lot of the processor, dust blocking the air vents, the computer sitting on a soft surface like a bed or carpet that blocks airflow, or — for older computers — dried-out thermal paste inside (this requires professional repair).
 
@@ -652,7 +652,7 @@ The good news is that most "No Service" situations are temporary and resolve on 
       {
         title: 'Check if your SIM card is seated correctly',
         content: "The SIM card is a tiny card that stores your phone number and carrier information. It sits in a small tray on the side of your phone. If it has shifted slightly, your phone may lose service. Use the SIM tray removal tool that came with your phone (or a straightened paper clip) to pop out the tray, remove the SIM, reinsert it firmly, and close the tray. Then restart the phone.",
-        warning: "Do this only while the phone is powered off. Contact your carrier if you are unsure about locating the SIM tray — they can guide you over the phone.",
+        warning: "Do this only while the phone is powered off. Contact your carrier if you are unsure about locating the SIM tray. They can guide you over the phone.",
       },
       {
         title: 'Check if your carrier is having an outage',

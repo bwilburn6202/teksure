@@ -65,7 +65,7 @@ export const guidesBatch271: Guide[] = [
       {
         title: "Create one master medication list and print 10 copies",
         content: "Open a Word document or use the back of an envelope. Write across the top: NAME, DATE OF BIRTH, ALLERGIES. Below, list every prescription medication with name, dose (e.g. 25 milligrams), how often (twice daily), what for (blood pressure), who prescribed it, and the date started. Add every over-the-counter medication and supplement on the same list. Print 10 copies. Put one in the kitchen, one in the medicine cabinet, one in the car glove box, one in your purse, and bring the rest to appointments. Update it after every appointment that changes a medication. This single document prevents more harm than any other thing a caregiver does.",
-        tip: "Quick Tip: Many pharmacies will print a medication list for you on request. Walgreens, CVS, and most independent pharmacies generate one in under five minutes. Ask the pharmacist for a Medication Therapy Management review while you are there — it is free under Medicare Part D.",
+        tip: "Quick Tip: Many pharmacies will print a medication list for you on request. Walgreens, CVS, and most independent pharmacies generate one in under five minutes. Ask the pharmacist for a Medication Therapy Management review while you are there. It is free under Medicare Part D.",
       },
       {
         title: "Sign one HIPAA release at every doctor's office",
@@ -78,7 +78,7 @@ export const guidesBatch271: Guide[] = [
       },
       {
         title: "Schedule a yearly Annual Wellness Visit with the primary care doctor",
-        content: "Medicare covers a free Annual Wellness Visit every 12 months — it is not the same as a physical. But it is the longest scheduled appointment your parent will get all year and the best chance to update everything. Bring the medication list. Bring a printout of every specialist visit since the last AWV. Ask the PCP to write down their answer to one question: Is anything on this medication list contradictory or unnecessary? This is called deprescribing, and geriatricians recommend reviewing it annually after age 80. Many seniors take a pill that was started for a problem long since resolved.",
+        content: "Medicare covers a free Annual Wellness Visit every 12 months. It is not the same as a physical. But it is the longest scheduled appointment your parent will get all year and the best chance to update everything. Bring the medication list. Bring a printout of every specialist visit since the last AWV. Ask the PCP to write down their answer to one question: Is anything on this medication list contradictory or unnecessary? This is called deprescribing, and geriatricians recommend reviewing it annually after age 80. Many seniors take a pill that was started for a problem long since resolved.",
       },
       {
         title: "Request a Medicare Chronic Care Management enrollment",

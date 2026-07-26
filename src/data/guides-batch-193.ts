@@ -79,7 +79,7 @@ export const guidesBatch193: Guide[] = [
       },
       {
         title: "Drink normally and watch the goal fill up",
-        content: "Use the bottle the same way you would use any water bottle. Each sip the cap records is added to the daily total in the app. At the end of the day, you can see how close you got to your goal. The cap resets at midnight on its own — you do not have to do anything.",
+        content: "Use the bottle the same way you would use any water bottle. Each sip the cap records is added to the daily total in the app. At the end of the day, you can see how close you got to your goal. The cap resets at midnight on its own. You do not have to do anything.",
       },
       {
         title: "Wash the bottle weekly",

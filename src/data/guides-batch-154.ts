@@ -160,19 +160,19 @@ Apple's Notes app comes pre-installed on every iPhone. You cannot delete it. Her
 
 **Opening Notes**
 
-The Notes app icon is yellow with a white notepad. It is usually on your home screen. If you cannot find it, swipe down from the middle of any home screen to open the search bar and type "Notes" — it will appear right away.
+The Notes app icon is yellow with a white notepad. It is usually on your home screen. If you cannot find it, swipe down from the middle of any home screen to open the search bar and type "Notes". It will appear right away.
 
 **Creating your first note**
 
 Open Notes. You will see a list of any notes you have already created (or it may be empty the first time). Tap the orange pencil-and-paper icon in the bottom-right corner to start a new note. A blank white screen will appear with a keyboard ready for you to type.
 
-The first line you type becomes the title of the note — it will appear in bold at the top and as the note's name in your list. Type whatever is on your mind: a shopping list, a phone number, a reminder, a name you do not want to forget.
+The first line you type becomes the title of the note. It will appear in bold at the top and as the note's name in your list. Type whatever is on your mind: a shopping list, a phone number, a reminder, a name you do not want to forget.
 
 When you are done, tap "Done" in the top-right corner (or tap the Back arrow on the left) to save. Notes saves automatically — you cannot accidentally lose what you typed.
 
 **Making a checklist (great for shopping or to-do lists)**
 
-Inside any note, tap the checklist button — it looks like a small circle with a checkmark, located in the toolbar above your keyboard. This turns your note into a list where you can tap each item to check it off when you are done.
+Inside any note, tap the checklist button. It looks like a small circle with a checkmark, located in the toolbar above your keyboard. This turns your note into a list where you can tap each item to check it off when you are done.
 
 To add items, tap after the last item and type the next entry. Each item gets its own line with a circle you can tap to mark it complete. Checked items move to the bottom automatically. This is perfect for grocery shopping — tap each item as you put it in your cart.
 
@@ -194,7 +194,7 @@ Open the note you want to share, then tap the Share button (the square with an u
 
 **How Notes syncs across your Apple devices**
 
-If you are signed into iCloud on your iPhone, iPad, and Mac, your notes sync automatically. A note you type on your phone appears on your computer within seconds, and the other way around. You do not need to do anything to make this happen — it works as long as iCloud Drive is turned on. To check: go to Settings → tap your name at the top → iCloud → and make sure the switch next to "Notes" is green.
+If you are signed into iCloud on your iPhone, iPad, and Mac, your notes sync automatically. A note you type on your phone appears on your computer within seconds, and the other way around. You do not need to do anything to make this happen. It works as long as iCloud Drive is turned on. To check: go to Settings → tap your name at the top → iCloud → and make sure the switch next to "Notes" is green.
 
 ---
 
@@ -204,7 +204,7 @@ Android phones do not come with a single universal Notes app — the available a
 
 **Finding Google Keep**
 
-Look for a yellow lightbulb icon on your home screen or in your app drawer. If it is not there, open the Google Play Store and search "Google Keep" — it is free to download. Sign in with your Google account (the same one tied to your Gmail address).
+Look for a yellow lightbulb icon on your home screen or in your app drawer. If it is not there, open the Google Play Store and search "Google Keep". It is free to download. Sign in with your Google account (the same one tied to your Gmail address).
 
 **Creating a note in Google Keep**
 
@@ -212,7 +212,7 @@ Tap the "+" button or the "Take a note…" box at the bottom of the screen. Type
 
 **Making a checklist in Keep**
 
-When creating a new note, tap the checkboxes icon (it looks like a small list with checkmarks) below the text area. This creates a checkbox-style list. Type each item on its own line. Tap the circle next to an item to mark it done — it moves to the bottom with a strikethrough.
+When creating a new note, tap the checkboxes icon (it looks like a small list with checkmarks) below the text area. This creates a checkbox-style list. Type each item on its own line. Tap the circle next to an item to mark it done. It moves to the bottom with a strikethrough.
 
 **Color-coding and searching in Keep**
 
@@ -243,7 +243,7 @@ Tap the paint palette icon inside a note to give it a color — useful for group
       },
       {
         title: 'Search notes and share with family',
-        content: 'On iPhone: tap the magnifying glass at the top of the Notes list and type any word — it searches inside every note. To share a note, open it, tap the Share button (square with upward arrow), and choose Messages or Email. On Keep: tap the magnifying glass at the top of the screen to search.',
+        content: 'On iPhone: tap the magnifying glass at the top of the Notes list and type any word. It searches inside every note. To share a note, open it, tap the Share button (square with upward arrow), and choose Messages or Email. On Keep: tap the magnifying glass at the top of the screen to search.',
         tip: 'On iPhone, you can invite a family member to collaborate on a shared note — great for a joint grocery list. Both of you will see changes instantly.',
       },
       {
@@ -290,7 +290,7 @@ In those cases, mark the message as spam and delete it. Never reply to it, and n
 
 **Method 1: Use the Unsubscribe link at the bottom of the email**
 
-Legitimate marketing emails are required by US law (the CAN-SPAM Act) to include an unsubscribe option. It is almost always in very small print at the very bottom of the email — you may need to scroll past several sections of the email to find it.
+Legitimate marketing emails are required by US law (the CAN-SPAM Act) to include an unsubscribe option. It is almost always in very small print at the very bottom of the email. You may need to scroll past several sections of the email to find it.
 
 Look for words like "Unsubscribe," "Manage your email preferences," "Opt out," or "Update your email settings." Click that link. It will take you to a page where you either confirm you want to unsubscribe with one click, or where you can choose which types of emails to stop receiving.
 
@@ -298,7 +298,7 @@ If the page asks you to enter your email address to confirm, that is normal for 
 
 **Method 2: Use Gmail's built-in Unsubscribe button**
 
-If you use Gmail (on a computer or phone), Google automatically detects marketing emails and adds an "Unsubscribe" link right next to the sender's name at the top of the email — you do not have to scroll to the bottom to find it.
+If you use Gmail (on a computer or phone), Google automatically detects marketing emails and adds an "Unsubscribe" link right next to the sender's name at the top of the email. You do not have to scroll to the bottom to find it.
 
 On a computer: open the email and look for the sender's name at the top. Next to it, you will see "(Unsubscribe)" in small text. Click it and confirm.
 
@@ -362,7 +362,7 @@ The best way to keep your inbox manageable is to be selective about giving out y
       {
         title: 'Mark stubborn senders as spam',
         content: 'If a sender keeps emailing after you unsubscribed, or if the email came from a company you never signed up with, mark it as spam. In Gmail: tap the three-dot menu and select "Report spam." In iPhone Mail: swipe left on the email, tap "More," then "Move to Junk." Your email service will learn to filter similar messages automatically.',
-        tip: 'Marking something as spam is always safe — you can always check your Spam or Junk folder later if you think something was filtered by mistake.',
+        tip: 'Marking something as spam is always safe. You can always check your Spam or Junk folder later if you think something was filtered by mistake.',
       },
       {
         title: 'Try Unroll.me to manage many subscriptions at once',
@@ -408,7 +408,7 @@ To report a stolen phone, you call your carrier, give them your IMEI. And they a
 
 **2. Checking a used phone before you buy**
 
-If you are buying a phone from someone on Facebook Marketplace, Craigslist, or a similar site, you should always check the IMEI before handing over any money. A blocked or reported-stolen IMEI means the phone will not work on US networks — you would be paying for a device that is essentially useless as a phone.
+If you are buying a phone from someone on Facebook Marketplace, Craigslist, or a similar site, you should always check the IMEI before handing over any money. A blocked or reported-stolen IMEI means the phone will not work on US networks. You would be paying for a device that is essentially useless as a phone.
 
 You can also check whether the phone is still under a carrier contract or installment plan that was never paid off — which can result in the phone being locked or blocked.
 
@@ -440,7 +440,7 @@ The IMEI is also printed on the original box the phone came in, if you still hav
 
 If your phone is stolen:
 
-1. **File a police report first.** Go to your local police department or file online at your city or county's non-emergency reporting portal. Ask for a copy of the report — you will need the report number.
+1. **File a police report first.** Go to your local police department or file online at your city or county's non-emergency reporting portal. Ask for a copy of the report. You will need the report number.
 2. **Call your carrier right away.** Tell them your phone was stolen and provide your IMEI number. Ask them to add the IMEI to the blocklist so the phone cannot be used on any network.
 3. **Suspend your service.** Ask the carrier to suspend your phone line so no calls or data can be billed to your account while the phone is missing.
 4. **Change your passwords.** If your phone was unlocked when stolen, the thief may have access to your email, banking apps, and other accounts. Change passwords for important accounts from another device as soon as possible.

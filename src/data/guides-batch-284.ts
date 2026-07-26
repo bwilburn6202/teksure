@@ -30,7 +30,7 @@ The first ride is the most intimidating. After the first one, every subsequent r
       },
       {
         title: 'Set your home address',
-        content: 'Tap the menu icon (three lines) → Settings → Saved Places. Add your home address as "Home." Add common destinations like your doctor or grocery store. Saved places make booking faster — you can tap "Home" to set it as the destination instead of typing every time.',
+        content: 'Tap the menu icon (three lines) → Settings → Saved Places. Add your home address as "Home." Add common destinations like your doctor or grocery store. Saved places make booking faster. You can tap "Home" to set it as the destination instead of typing every time.',
       },
       {
         title: 'Book your first ride',
@@ -43,7 +43,7 @@ The first ride is the most intimidating. After the first one, every subsequent r
       },
       {
         title: 'During and after the ride',
-        content: 'You do not need to give the driver directions — they have GPS and your destination already. You can sit anywhere in the car (front or back). When you arrive, get out — there is no need to pay or sign anything. The fare is automatically charged. The app then asks you to rate the driver (5 stars is normal for a fine ride) and lets you add an optional tip.',
+        content: 'You do not need to give the driver directions. They have GPS and your destination already. You can sit anywhere in the car (front or back). When you arrive, get out. There is no need to pay or sign anything. The fare is automatically charged. The app then asks you to rate the driver (5 stars is normal for a fine ride) and lets you add an optional tip.',
       },
       {
         title: 'Save the support number in case of issues',

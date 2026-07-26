@@ -59,7 +59,7 @@ Ecobee models also include a built-in Alexa speaker, intercom, and integration w
     steps: [
       {
         title: `Check wiring and run compatibility`,
-        content: `Shut off power at the breaker and remove your old thermostat's cover. Snap a photo of the wires, then visit ecobee.com/compatibility and enter each labeled terminal. If you do not have a C-wire, ecobee's included Power Extender Kit solves that — you will install it inside your furnace's control board.`,
+        content: `Shut off power at the breaker and remove your old thermostat's cover. Snap a photo of the wires, then visit ecobee.com/compatibility and enter each labeled terminal. If you do not have a C-wire, ecobee's included Power Extender Kit solves that. You will install it inside your furnace's control board.`,
       },
       {
         title: `Mount the thermostat and connect wires`,
@@ -96,7 +96,7 @@ The MyQ Smart Garage Hub is a small device that mounts near the ceiling of your 
 
 Once installed, the MyQ app does several useful things. You can open or close the door from anywhere on your phone. You get a push notification each time the door opens or closes, including who in the family triggered it. You can schedule auto-close (for example, always close the door at 10:00 PM if it's left open). And through MyQ's guest feature, you can grant a dog walker, cleaner, or Amazon delivery driver temporary access.
 
-The Amazon Key for Garage integration is notable — it allows Amazon drivers to open your garage door, place the package inside, and close it behind them. For anyone sick of porch pirates, this is a genuine upgrade.`,
+The Amazon Key for Garage integration is notable. It allows Amazon drivers to open your garage door, place the package inside, and close it behind them. For anyone sick of porch pirates, this is a genuine upgrade.`,
     steps: [
       {
         title: `Check that your opener is compatible`,
@@ -153,7 +153,7 @@ Two versions exist: battery-powered (6-year AA lithium battery life) and wired (
       },
       {
         title: `Twist the unit onto the base`,
-        content: `Align the Nest Protect with the base plate and twist until it clicks into place. The LED ring will pulse green briefly to show it's connected. If you have multiple Nest Protects, pair each one to the same Google Home — they talk to each other, so an alarm in the basement alerts upstairs.`,
+        content: `Align the Nest Protect with the base plate and twist until it clicks into place. The LED ring will pulse green briefly to show it's connected. If you have multiple Nest Protects, pair each one to the same Google Home. They talk to each other, so an alarm in the basement alerts upstairs.`,
       },
       {
         title: `Set up monthly Sound Check and test`,
@@ -194,7 +194,7 @@ Here's a real money nudge: many home insurance companies (Travelers, State Farm,
       },
       {
         title: `Install a whole-home monitor if chosen`,
-        content: `Whole-home monitors with auto-shutoff (Moen Flo, Phyn Plus) almost always need a plumber to install — they sit on your main water line. Expect $150 to $300 in plumber time. Flume attaches to your water meter outside with a strap and needs no plumbing, but only detects — it cannot shut water off.`,
+        content: `Whole-home monitors with auto-shutoff (Moen Flo, Phyn Plus) almost always need a plumber to install. They sit on your main water line. Expect $150 to $300 in plumber time. Flume attaches to your water meter outside with a strap and needs no plumbing, but only detects. It cannot shut water off.`,
       },
       {
         title: `Test, then notify your insurance`,
@@ -264,7 +264,7 @@ Custom feeds are Bluesky's secret weapon. Instead of one algorithm controlling w
     steps: [
       {
         title: `Create an account`,
-        content: `Go to bsky.app or download the Bluesky app from the App Store or Google Play. Tap Create Account. Enter your email, set a password, and choose a handle (username) — you can change it later. The default handle format is yourname.bsky.social.`,
+        content: `Go to bsky.app or download the Bluesky app from the App Store or Google Play. Tap Create Account. Enter your email, set a password, and choose a handle (username). You can change it later. The default handle format is yourname.bsky.social.`,
       },
       {
         title: `Set up your profile`,
@@ -294,7 +294,7 @@ Custom feeds are Bluesky's secret weapon. Instead of one algorithm controlling w
     thumbnailEmoji: ``,
     publishedAt: `2026-04-20`,
     difficulty: `Intermediate`,
-    body: `Mastodon often gets described as "Twitter but different," and that's half true — it looks like Twitter, but the way it's built is genuinely unusual. Instead of one company running one website, Mastodon is a collection of thousands of independent servers (called "instances") that all speak the same language and connect to each other. Think of it like email: your Gmail account and a friend's Yahoo account can send messages to each other even though Gmail and Yahoo are different companies.
+    body: `Mastodon often gets described as "Twitter but different," and that's half true. It looks like Twitter, but the way it's built is genuinely unusual. Instead of one company running one website, Mastodon is a collection of thousands of independent servers (called "instances") that all speak the same language and connect to each other. Think of it like email: your Gmail account and a friend's Yahoo account can send messages to each other even though Gmail and Yahoo are different companies.
 
 When you sign up for Mastodon, you first pick a server. Mastodon.social is the largest and the most common starting point. But there are servers focused on art (mastodon.art), tech (infosec.exchange, hachyderm.io), journalism (journa.host), and thousands of smaller communities. Your username looks like @yourname@servername — the server is part of your identity, like the @gmail.com part of an email.
 
@@ -347,7 +347,7 @@ During the live, you'll see floating comments, heart animations when people tap 
     steps: [
       {
         title: `Confirm you meet the requirements`,
-        content: `Open TikTok and check your follower count on your profile — you need 1,000 or more followers to unlock Live. You also need to be 18 or older. If you qualify, the LIVE option will appear in the camera's capture mode swiper. If not, focus on posting regular content first to reach 1,000 followers.`,
+        content: `Open TikTok and check your follower count on your profile. You need 1,000 or more followers to unlock Live. You also need to be 18 or older. If you qualify, the LIVE option will appear in the camera's capture mode swiper. If not, focus on posting regular content first to reach 1,000 followers.`,
       },
       {
         title: `Open the Live composer`,
@@ -421,7 +421,7 @@ Two honest cautions. AI can sometimes suggest recipes with imprecise cooking tim
     thumbnailEmoji: ``,
     publishedAt: `2026-04-20`,
     difficulty: `Beginner`,
-    body: `If you've ever sat with a blank birthday card for 10 minutes unsure what to write, you're not alone. AI assistants are genuinely good at this task — they can generate warm, personal, non-generic messages as long as you give them real details to work with. The key word is "real." Generic prompts produce generic messages. Specific prompts produce something that could only have been written for the person receiving it.
+    body: `If you've ever sat with a blank birthday card for 10 minutes unsure what to write, you're not alone. AI assistants are genuinely good at this task. They can generate warm, personal, non-generic messages as long as you give them real details to work with. The key word is "real." Generic prompts produce generic messages. Specific prompts produce something that could only have been written for the person receiving it.
 
 A weak prompt looks like this: "Write a birthday card for my mom." An AI will return something like "Happy birthday, Mom! I hope your day is filled with love and joy." That's fine, but it could be for anyone's mom. The same card for $4 at the drug store.
 
@@ -636,7 +636,7 @@ Facebook has by far the most settings, and also the best guided tool for reviewi
 
 Instagram is simpler — most of the important choice is whether your account is Public (anyone can see your posts) or Private (only followers you approve). For many users, switching to Private is the single biggest privacy improvement. Beyond that, check Story controls to limit who can see and share Stories, and check the tagging and mention controls.
 
-LinkedIn is trickier because it's professional — you probably want a fair amount public. But check Profile Visibility (decide if your profile appears in search engine results), Connections Visibility (many people prefer hiding their connections list), and Activity Broadcasts (turn off when you're job hunting).
+LinkedIn is trickier because it's professional. You probably want a fair amount public. But check Profile Visibility (decide if your profile appears in search engine results), Connections Visibility (many people prefer hiding their connections list), and Activity Broadcasts (turn off when you're job hunting).
 
 X (Twitter) lets you make all your posts Protected, meaning only approved followers see them. Review whether your direct messages are open to everyone. And on every platform, audit third-party apps you connected in the past — old Zynga games, quizzes, and long-dead apps often still have permission to read your data.`,
     steps: [
@@ -716,7 +716,7 @@ Once you've found an account, the site JustDeleteMe.xyz is your friend. It's a c
     difficulty: `Beginner`,
     body: `5G and WiFi are both wireless ways to connect to the internet. But they work through different systems and are fast in different situations. Understanding the difference helps you know when to use your cellular data, when to rely on home WiFi, and whether upgrading one or the other is worth it.
 
-WiFi is short-range wireless that comes from a router inside a building. Your home router, the one at a cafe, the one at a hotel — they all connect to the internet through a wired connection (fiber, cable, or DSL) and broadcast that connection over WiFi radio signals across maybe 100 feet indoors. The newest versions of WiFi — WiFi 6, WiFi 6E, and WiFi 7 — can deliver speeds of 1 Gbps or faster when the underlying wired connection supports it. Older routers (WiFi 4 or early WiFi 5) often cap at 100 to 300 Mbps regardless of your internet plan.
+WiFi is short-range wireless that comes from a router inside a building. Your home router, the one at a cafe, the one at a hotel. They all connect to the internet through a wired connection (fiber, cable, or DSL) and broadcast that connection over WiFi radio signals across maybe 100 feet indoors. The newest versions of WiFi — WiFi 6, WiFi 6E, and WiFi 7 — can deliver speeds of 1 Gbps or faster when the underlying wired connection supports it. Older routers (WiFi 4 or early WiFi 5) often cap at 100 to 300 Mbps regardless of your internet plan.
 
 5G is cellular, meaning it comes from cell towers operated by Verizon, T-Mobile, AT&T, and others, and reaches you through your phone's SIM card. 5G has two flavors: sub-6GHz 5G covers most of the country and typically delivers 100 to 400 Mbps. MmWave 5G is the super-fast flavor (1+ Gbps) but has a very short range (often just downtown blocks of major cities). Your phone chooses automatically.
 
@@ -758,7 +758,7 @@ Watch for data caps. Your home WiFi plan usually has no cap (or a very high one)
     difficulty: `Beginner`,
     body: `A QR code — the black-and-white square you scan with your phone — is nothing more than a 2D barcode. It stores a bit of text, usually a web address, in a pattern a camera can read quickly. When your phone's camera looks at one, it decodes the text and offers to open the web page. QR codes went from obscure to universal during 2020, when restaurants swapped paper menus for codes to reduce shared surfaces, and the habit stuck.
 
-Modern phones (any iPhone in the past 8 years, most Android phones in the past 5) scan QR codes automatically through the regular camera app — you don't need a separate scanner app. Open the camera, point it at the QR code, and a notification pops up asking if you want to open the encoded link.
+Modern phones (any iPhone in the past 8 years, most Android phones in the past 5) scan QR codes automatically through the regular camera app. You don't need a separate scanner app. Open the camera, point it at the QR code, and a notification pops up asking if you want to open the encoded link.
 
 The scam version is called "quishing" — QR code phishing. Scammers print fake QR codes and place them over real ones on parking meters, gas pumps, bike-share docks, restaurant menus, and public posters. You scan expecting to pay for parking or view a menu. Instead the link goes to a fake payment page that captures your credit card, or to a page that quietly installs malware on your phone. In 2023 the FTC and FBI both issued warnings about quishing scams specifically targeting parking meters in cities including Austin, Atlanta, and Portland.
 
@@ -778,7 +778,7 @@ The simple defense is to preview the URL before you follow it. When your phone s
       },
       {
         title: `Never enter login or payment info after a random QR scan`,
-        content: `If a QR code takes you to a page asking for your Apple ID, Google, or bank password, stop. No legitimate service requires a password login from a QR code in public. If it's a legitimate parking meter or menu, it should not ask for a password — it will take a payment through Apple Pay or a card form on a clearly branded site.`,
+        content: `If a QR code takes you to a page asking for your Apple ID, Google, or bank password, stop. No legitimate service requires a password login from a QR code in public. If it's a legitimate parking meter or menu, it should not ask for a password. It will take a payment through Apple Pay or a card form on a clearly branded site.`,
       },
       {
         title: `Use Apple Pay or Google Pay when paying after a QR scan`,
@@ -807,7 +807,7 @@ Push-based 2FA (Apple ID, Duo, Microsoft Authenticator) is similar in strength. 
 
 Hardware security keys (YubiKey, Google Titan Key, other FIDO2 keys) are the strongest option available. A physical USB or NFC device you keep on your keychain. Logins require you to physically tap the key. These are phishing-resistant in a way software 2FA is not — even if someone tricks you onto a fake login page, the hardware key refuses to authenticate to the wrong domain. Use hardware keys for your most important accounts: primary email, bank, password manager, retirement accounts.
 
-Passkeys are a newer method — they use your device's biometrics (Face ID, Touch ID, Windows Hello) as the second factor, built on the same phishing-resistant technology as hardware keys. Passkeys are spreading rapidly and will likely replace passwords for most services over the next few years.`,
+Passkeys are a newer method. They use your device's biometrics (Face ID, Touch ID, Windows Hello) as the second factor, built on the same phishing-resistant technology as hardware keys. Passkeys are spreading rapidly and will likely replace passwords for most services over the next few years.`,
     steps: [
       {
         title: `Upgrade everything from SMS to an authenticator app`,
@@ -950,7 +950,7 @@ If you live in an apartment complex, check the package locker or leasing office.
 
 If none of that works, open the tracking page and look for a delivery photo. UPS, FedEx, and Amazon now routinely take a photo of where they left the package. That photo might show a neighbor's porch, a building lobby, or even the wrong address.
 
-Once you've done your physical search, it's time to contact the carrier and the retailer. Carriers can file a trace on a package — they contact the driver who made the delivery and try to recover it. This usually happens within 24 to 48 hours. In parallel, contact the retailer (Amazon, Walmart, Target, etc.) directly. Most large retailers will reship or refund a missing package without requiring you to first resolve the carrier investigation.`,
+Once you've done your physical search, it's time to contact the carrier and the retailer. Carriers can file a trace on a package. They contact the driver who made the delivery and try to recover it. This usually happens within 24 to 48 hours. In parallel, contact the retailer (Amazon, Walmart, Target, etc.) directly. Most large retailers will reship or refund a missing package without requiring you to first resolve the carrier investigation.`,
     steps: [
       {
         title: `Wait 30–60 minutes, then search your property`,
@@ -977,7 +977,7 @@ Once you've done your physical search, it's time to contact the carrier and the 
         content: `If you have video footage showing your package was stolen off the porch, or if multiple packages have gone missing, file a police report with your local non-emergency line (not 911). A police report number can be required by some carriers or insurance companies for larger claim amounts. It also helps local authorities track a pattern of porch theft in your neighborhood.`,
       },
     ],
-    tip: `Quick Tip — Most missing packages are found within 48 hours, either at a neighbor's address or signed for at the building office. Before calling anyone, do a full physical search — it saves time and stress.`,
+    tip: `Quick Tip — Most missing packages are found within 48 hours, either at a neighbor's address or signed for at the building office. Before calling anyone, do a full physical search. It saves time and stress.`,
   },
   {
     slug: `fake-customer-service-numbers`,
@@ -989,7 +989,7 @@ Once you've done your physical search, it's time to contact the carrier and the 
     thumbnailEmoji: ``,
     publishedAt: `2026-04-21`,
     difficulty: `Beginner`,
-    body: `Here is a trick scammers use that has cost people thousands of dollars: they pay for Google ads showing a fake phone number at the top of search results when you type "Amazon customer service" or "Microsoft support number." The ad looks legitimate — it may even show the company's real name and logo. But the number connects you to a scammer posing as a customer service agent.
+    body: `Here is a trick scammers use that has cost people thousands of dollars: they pay for Google ads showing a fake phone number at the top of search results when you type "Amazon customer service" or "Microsoft support number." The ad looks legitimate. It may even show the company's real name and logo. But the number connects you to a scammer posing as a customer service agent.
 
 Once you call, the scammer builds trust, tells you there's a serious problem with your account, and walks you toward sending gift cards, sharing your credit card number, or giving remote access to your computer. By the time you realize something is wrong, money is gone.
 

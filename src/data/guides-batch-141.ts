@@ -64,7 +64,7 @@ When you open the Health app, you see four tabs along the bottom:
 
 **How to set up your Medical ID**
 
-Medical ID stores your name, date of birth, blood type, allergies, medications, medical conditions, and emergency contacts. First responders, paramedics, and emergency room staff can read your Medical ID from your locked iPhone — they do not need your password.
+Medical ID stores your name, date of birth, blood type, allergies, medications, medical conditions, and emergency contacts. First responders, paramedics, and emergency room staff can read your Medical ID from your locked iPhone. They do not need your password.
 
 To set it up: Open the Health app → tap your profile picture in the top-right corner → tap Medical ID → tap Edit (top right) → fill in your information → make sure the "Show When Locked" toggle is turned on → tap Done.
 
@@ -82,7 +82,7 @@ A common goal is 7,000–10,000 steps per day, but any increase from your person
 
 **Sleep tracking**
 
-On iPhone alone (no watch): Open Health → tap Browse → tap Sleep → tap "Set Up Sleep." You set a sleep goal and a schedule. The phone uses motion detection to estimate when you fell asleep and woke up — it works best when your phone is on the bed near you or charging on your nightstand.
+On iPhone alone (no watch): Open Health → tap Browse → tap Sleep → tap "Set Up Sleep." You set a sleep goal and a schedule. The phone uses motion detection to estimate when you fell asleep and woke up. It works best when your phone is on the bed near you or charging on your nightstand.
 
 With an Apple Watch: Wear your watch to bed (or charge it for 30 minutes before bed and put it back on). The watch tracks your sleep stages — light sleep, deep sleep, and REM sleep — and sends that data to the Health app automatically.
 
@@ -187,7 +187,7 @@ On Samsung phones specifically: Settings → Connections → Wi-Fi → tap the g
 
 If none of the above methods work, or if you are connecting a device that does not have a camera (like a smart TV or printer), you can find your Wi-Fi password on the router itself.
 
-Your router is the box that connects to your internet service — it may also be your modem, or they may be separate devices. Look for a label on the back or bottom. It typically shows:
+Your router is the box that connects to your internet service. It may also be your modem, or they may be separate devices. Look for a label on the back or bottom. It typically shows:
 
 - Network name (also called SSID or Wi-Fi name)
 - Password (also called Network Key, Wi-Fi Password, or WPA2 Key)

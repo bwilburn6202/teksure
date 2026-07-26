@@ -49,7 +49,7 @@ Quick Tip: The Social Security Administration provides a free estimate of your f
       {
         title: `Review your savings accounts`,
         content: `Log into any 401(k) or IRA accounts you have. Check the current balance, how the money is invested, and whether your employer offers a matching contribution you are not taking full advantage of. If you are 50 or older, IRS rules allow you to make extra "catch-up" contributions each year.`,
-        tip: `If you are unsure how to log into an old 401(k), contact your former employer's HR department — they can tell you who manages the plan.`,
+        tip: `If you are unsure how to log into an old 401(k), contact your former employer's HR department. They can tell you who manages the plan.`,
       },
       {
         title: `Learn your Medicare enrollment window`,
@@ -58,7 +58,7 @@ Quick Tip: The Social Security Administration provides a free estimate of your f
       },
       {
         title: `Consider talking with a fee-only financial advisor`,
-        content: `A fee-only advisor charges you directly for their time — they do not earn commissions for selling you products. This means their advice is less likely to be biased. The National Association of Personal Financial Advisors (napfa.org) has a free directory to find one near you.`,
+        content: `A fee-only advisor charges you directly for their time. They do not earn commissions for selling you products. This means their advice is less likely to be biased. The National Association of Personal Financial Advisors (napfa.org) has a free directory to find one near you.`,
       },
     ],
   },
@@ -222,7 +222,7 @@ Quick Tip: Keep your documents in a secure but accessible place. Tell your execu
       {
         title: `Make a list of your assets and who you want them to go to`,
         content: `Write down your bank accounts, retirement accounts, real estate, vehicles, and valuable personal property. For each, note who you would want to inherit it. This list becomes the foundation of your estate plan.`,
-        tip: `Retirement accounts (IRA, 401k) and life insurance policies pass directly to named beneficiaries — they are NOT controlled by your will. Make sure beneficiary designations are current.`,
+        tip: `Retirement accounts (IRA, 401k) and life insurance policies pass directly to named beneficiaries. They are NOT controlled by your will. Make sure beneficiary designations are current.`,
       },
       {
         title: `Choose the people who will carry out your wishes`,
@@ -389,7 +389,7 @@ A proven approach: as you go through each room, sort everything into four catego
 
 **Getting help**
 
-You do not have to do this alone. Senior move managers specialize in helping older adults downsize — they can coordinate packing, donations, and estate sales. The National Association of Senior Move Managers (nasmm.org) has a free directory.
+You do not have to do this alone. Senior move managers specialize in helping older adults downsize. They can coordinate packing, donations, and estate sales. The National Association of Senior Move Managers (nasmm.org) has a free directory.
 
 **Estate sales and consignment**
 
@@ -413,7 +413,7 @@ Quick Tip: Take photographs of sentimental items you cannot keep. A photo album 
       },
       {
         title: `Sell valuable items`,
-        content: `For individual items, list them on Facebook Marketplace (facebook.com/marketplace) — it is free and local buyers pick up items. For a large volume of valuable items, contact an estate sale company. The American Society of Estate Liquidators (aselonline.com) has a directory of certified professionals.`,
+        content: `For individual items, list them on Facebook Marketplace (facebook.com/marketplace). It is free and local buyers pick up items. For a large volume of valuable items, contact an estate sale company. The American Society of Estate Liquidators (aselonline.com) has a directory of certified professionals.`,
       },
       {
         title: `Consider hiring a senior move manager`,
@@ -451,7 +451,7 @@ Memory care is a specialized form of assisted living designed for people with Al
 
 **Skilled Nursing Facilities (Nursing Homes)**
 
-Skilled nursing facilities (SNFs) provide 24-hour nursing care for people who need significant medical support. Medicare may cover short stays for rehabilitation after a hospital stay, but long-term care is generally not covered by Medicare — it is paid out of pocket or through Medicaid (for those who qualify) or long-term care insurance.
+Skilled nursing facilities (SNFs) provide 24-hour nursing care for people who need significant medical support. Medicare may cover short stays for rehabilitation after a hospital stay, but long-term care is generally not covered by Medicare. It is paid out of pocket or through Medicaid (for those who qualify) or long-term care insurance.
 
 Quick Tip: The Medicare Care Compare tool at medicare.gov lets you search for and compare nursing homes, home health agencies, and other senior care providers by location and quality rating.`,
     steps: [
@@ -517,7 +517,7 @@ Quick Tip: Always get your loved one's permission before installing any monitori
     steps: [
       {
         title: `Set up regular video calls`,
-        content: `Schedule a regular video call time with your loved one — same day and time each week so it becomes a routine they look forward to. FaceTime works on any Apple device. For Android or computers, use Google Meet or Zoom. If your loved one struggles with the technology, consider an Amazon Echo Show — they can answer video calls by saying "Alexa, answer."`,
+        content: `Schedule a regular video call time with your loved one — same day and time each week so it becomes a routine they look forward to. FaceTime works on any Apple device. For Android or computers, use Google Meet or Zoom. If your loved one struggles with the technology, consider an Amazon Echo Show. They can answer video calls by saying "Alexa, answer."`,
         tip: `During video calls, pay attention to whether they seem confused, are moving with difficulty, or the home appears unusually disorganized — these can be early warning signs.`,
       },
       {
@@ -573,11 +573,11 @@ The National Respite Locator (archrespite.org) helps you find local respite prog
 
 You do not have to find a group that meets in your neighborhood. Online caregiver support groups through organizations like AARP, the Alzheimer's Association, and Caregiver Action Network provide community from home. The Caregiver Help Desk (1-855-227-3640) offers free counseling by phone.
 
-Quick Tip: Taking care of yourself is not selfish — it is what allows you to keep taking care of someone else.`,
+Quick Tip: Taking care of yourself is not selfish. It is what allows you to keep taking care of someone else.`,
     steps: [
       {
         title: `Acknowledge what you are feeling`,
-        content: `The first step is being honest with yourself. Write down how you have been feeling over the past month. Are you sleeping? Eating? Seeing friends? Taking your own medications? If you have been putting everything else first for a long time, acknowledge that clearly — you cannot solve a problem you are not willing to name.`,
+        content: `The first step is being honest with yourself. Write down how you have been feeling over the past month. Are you sleeping? Eating? Seeing friends? Taking your own medications? If you have been putting everything else first for a long time, acknowledge that clearly. You cannot solve a problem you are not willing to name.`,
         tip: `The AARP Caregiver Assessment Tool (aarp.org/caregiving) is a short questionnaire that helps you identify where you most need support.`,
       },
       {
@@ -609,7 +609,7 @@ Quick Tip: Taking care of yourself is not selfish — it is what allows you to k
     thumbnailEmoji: ``,
     publishedAt: `2026-04-20`,
     difficulty: `Beginner`,
-    body: `Filing your taxes online with software like TurboTax or H&R Block is much more manageable than it sounds. Both programs walk you through your return one question at a time — you answer questions in plain English, and the software does the math, finds deductions, and fills out the actual tax forms for you.
+    body: `Filing your taxes online with software like TurboTax or H&R Block is much more manageable than it sounds. Both programs walk you through your return one question at a time. You answer questions in plain English, and the software does the math, finds deductions, and fills out the actual tax forms for you.
 
 **Free filing options**
 
@@ -638,7 +638,7 @@ Quick Tip: E-filing with direct deposit is the fastest way to receive a refund �
       },
       {
         title: `Choose your software and create an account`,
-        content: `Go to turbotax.intuit.com or hrblock.com and select the free or appropriate paid version. Create an account with your email address. If you filed with the same software last year, log into your existing account — it may pre-fill information from last year's return.`,
+        content: `Go to turbotax.intuit.com or hrblock.com and select the free or appropriate paid version. Create an account with your email address. If you filed with the same software last year, log into your existing account. It may pre-fill information from last year's return.`,
         warning: `Be careful of look-alike websites. Always type the address directly into your browser rather than clicking an email link.`,
       },
       {
@@ -651,7 +651,7 @@ Quick Tip: E-filing with direct deposit is the fastest way to receive a refund �
       },
       {
         title: `Submit and track your refund`,
-        content: `Once satisfied, click the submit or file button. The program transmits your return electronically to the IRS (and your state). You will receive a confirmation email. Track your refund status at irs.gov/refunds using the "Where's My Refund?" tool — you need your Social Security number, filing status, and expected refund amount.`,
+        content: `Once satisfied, click the submit or file button. The program transmits your return electronically to the IRS (and your state). You will receive a confirmation email. Track your refund status at irs.gov/refunds using the "Where's My Refund?" tool. You need your Social Security number, filing status, and expected refund amount.`,
       },
     ],
   },
@@ -700,7 +700,7 @@ Quick Tip: If you ever receive a phone call from someone claiming to be your ban
       },
       {
         title: `Learn to spot fake bank emails`,
-        content: `Check the sender's email address carefully — it may look almost right but have a slight misspelling (like "wellsfarg0.com" instead of "wellsfargo.com"). Real banks do not ask for your password, full account number, or Social Security number by email. If the email makes you feel urgent or afraid, treat it as suspicious.`,
+        content: `Check the sender's email address carefully. It may look almost right but have a slight misspelling (like "wellsfarg0.com" instead of "wellsfargo.com"). Real banks do not ask for your password, full account number, or Social Security number by email. If the email makes you feel urgent or afraid, treat it as suspicious.`,
         warning: `Never click a link in an unexpected email claiming to be your bank. Instead, go to your bank's website by typing the address directly in your browser.`,
       },
       {
@@ -755,7 +755,7 @@ Quick Tip: If someone you have never met in person asks for money — in any for
       },
       {
         title: `Never send money to someone you have not met in person`,
-        content: `No matter how well you feel you know someone online, never send money, gift cards, cryptocurrency, or wire transfers to someone you have not met face-to-face. Legitimate romantic interests do not ask people they have never met for financial help. Gift cards and wire transfers are especially suspicious — they are nearly impossible to trace or recover.`,
+        content: `No matter how well you feel you know someone online, never send money, gift cards, cryptocurrency, or wire transfers to someone you have not met face-to-face. Legitimate romantic interests do not ask people they have never met for financial help. Gift cards and wire transfers are especially suspicious. They are nearly impossible to trace or recover.`,
         warning: `Scammers often say they need one final payment, or that they will pay you back as soon as they arrive. These are manipulation tactics. The money is gone once sent.`,
       },
       {
@@ -768,7 +768,7 @@ Quick Tip: If someone you have never met in person asks for money — in any for
       },
       {
         title: `Get emotional and practical support`,
-        content: `Romance scam victims often feel ashamed. But there is nothing to be ashamed of — you were deliberately targeted by a professional manipulator. Call the AARP Fraud Watch Network helpline at 1-877-908-3360 for free confidential counseling and guidance on next steps. The FTC's website also has resources at consumer.ftc.gov/articles/what-you-need-know-about-romance-scams.`,
+        content: `Romance scam victims often feel ashamed. But there is nothing to be ashamed of. You were deliberately targeted by a professional manipulator. Call the AARP Fraud Watch Network helpline at 1-877-908-3360 for free confidential counseling and guidance on next steps. The FTC's website also has resources at consumer.ftc.gov/articles/what-you-need-know-about-romance-scams.`,
       },
     ],
   },
@@ -959,7 +959,7 @@ Knowing these processes in advance — either to plan for your own accounts or t
 
 **Facebook**
 
-Facebook offers two options for a deceased person's account: memorialization or removal. A memorialized account is converted to a tribute page where friends can still share memories. The word "Remembering" appears before the name. To request memorialization, go to facebook.com/help and search for "memorialization request" — you will need to provide proof of death.
+Facebook offers two options for a deceased person's account: memorialization or removal. A memorialized account is converted to a tribute page where friends can still share memories. The word "Remembering" appears before the name. To request memorialization, go to facebook.com/help and search for "memorialization request". You will need to provide proof of death.
 
 Facebook also allows you to designate a "Legacy Contact" while you are alive — a person who can manage your account after you pass (change the profile photo, pin a tribute post, respond to friend requests). Set this up in Settings → Your Facebook Information → Memorialization Settings.
 
@@ -1098,7 +1098,7 @@ Quick Tip: Your Social Security earnings record (available at ssa.gov/myaccount)
     steps: [
       {
         title: `Search the PBGC unclaimed pension database`,
-        content: `Go to pbgc.gov and look for the link labeled "Find an Unclaimed Pension." You can search by your last name. If your former employer's pension plan was taken over by the PBGC (due to the company going bankrupt or terminating the plan). And you have not claimed your benefit, your name may appear in the results.`,
+        content: `Go to pbgc.gov and look for the link labeled "Find an Unclaimed Pension." You can search by your last name. If your former employer's pension plan was taken over by the PBGC (due to the company going bankrupt or terminating the plan) and you have not claimed your benefit, your name may appear in the results.`,
         tip: `Try searching under any former last names — maiden names or names used before a legal name change.`,
       },
       {
@@ -1141,11 +1141,11 @@ Each plan letter covers the same benefits regardless of which insurance company 
 
 **What Medigap covers**
 
-Most Medigap plans cover: the Part A coinsurance and hospital costs, the Part B coinsurance (20%), blood transfusions, hospice coinsurance, and some cover the Part A and Part B deductibles. Most do NOT cover dental, vision, hearing, or prescription drugs — you still need a separate Part D drug plan.
+Most Medigap plans cover: the Part A coinsurance and hospital costs, the Part B coinsurance (20%), blood transfusions, hospice coinsurance, and some cover the Part A and Part B deductibles. Most do NOT cover dental, vision, hearing, or prescription drugs. You still need a separate Part D drug plan.
 
 **Medigap vs. Medicare Advantage (Part C)**
 
-These are two different ways to supplement Medicare. Medigap works alongside original Medicare — you can see any doctor or hospital in the US that accepts Medicare, which is most of them. Medicare Advantage replaces original Medicare with a private plan that usually has lower premiums but requires you to use a specific network of providers.
+These are two different ways to supplement Medicare. Medigap works alongside original Medicare. You can see any doctor or hospital in the US that accepts Medicare, which is most of them. Medicare Advantage replaces original Medicare with a private plan that usually has lower premiums but requires you to use a specific network of providers.
 
 **The best time to buy Medigap**
 

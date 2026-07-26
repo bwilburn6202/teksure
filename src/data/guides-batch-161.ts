@@ -148,7 +148,7 @@ To get started: go to privacy.com, create a free account, link your bank account
       },
       {
         title: 'Use a virtual card for trials you are unsure about',
-        content: 'Visit privacy.com on your computer and create a free account. Link your bank account and generate a one-time virtual card number. Use that number when signing up for trials — it can block automatic charges if you forget to cancel.',
+        content: 'Visit privacy.com on your computer and create a free account. Link your bank account and generate a one-time virtual card number. Use that number when signing up for trials. It can block automatic charges if you forget to cancel.',
         tip: 'You can set a spending limit on Privacy.com virtual cards — for example, limit it to $0 so it cannot be charged at all.',
       },
       {
@@ -182,7 +182,7 @@ To get started: go to privacy.com, create a free account, link your bank account
     publishedAt: '2026-05-08',
     lastVerifiedAt: '2026-05-08',
     difficulty: 'Beginner',
-    body: `Online shopping is convenient, but not every website that looks real actually is. Scammers build fake websites that look almost identical to real stores — they copy logos, product photos, and even customer reviews. Once you enter your credit card number, the money disappears and no product ever arrives.
+    body: `Online shopping is convenient, but not every website that looks real actually is. Scammers build fake websites that look almost identical to real stores. They copy logos, product photos, and even customer reviews. Once you enter your credit card number, the money disappears and no product ever arrives.
 
 The good news is that there are five reliable checks you can do in about two minutes before purchasing anything online. None of them require technical knowledge. This guide walks you through each one.
 
@@ -200,7 +200,7 @@ An unsafe website starts with just **http://** (no "s"). Never enter a credit ca
 - On a computer: look at the address bar near the top of your browser window.
 - On a phone: tap the address bar to see the full address. On many phones, a padlock icon appears directly to the left of the address.
 
-One important note: HTTPS alone does not mean a website is honest — it means your connection to it is private. A scam site can have HTTPS too. That is why you need all five checks together.
+One important note: HTTPS alone does not mean a website is honest. It means your connection to it is private. A scam site can have HTTPS too. That is why you need all five checks together.
 
 ---
 
@@ -474,7 +474,7 @@ If you enjoy audiobooks, check out **Libby** (libbyapp.com) — a free app conne
       {
         title: 'Check which service you have and whether downloads are included',
         content: 'Music downloads require a paid subscription for Spotify, Apple Music, Amazon Music Unlimited, and YouTube Music. Podcasts are free to download on any service. If you are not sure whether you have a paid music subscription, check Settings → your name → Subscriptions (iPhone) or Google Play → Payments & subscriptions (Android).',
-        tip: 'If you do not want to pay for a music subscription, focus on the free podcast downloads — there are thousands of shows covering every topic.',
+        tip: 'If you do not want to pay for a music subscription, focus on the free podcast downloads. There are thousands of shows covering every topic.',
       },
       {
         title: 'Download Spotify playlists or albums (Premium required)',
@@ -632,10 +632,10 @@ If you are certain the phone has been stolen and will not be recovered, you can 
 
 If the map shows "No location found," it means the phone has been off or out of signal range since the last update. Here is what to do:
 
-- Check the timestamp shown under your phone's name — it tells you when the last location was recorded.
+- Check the timestamp shown under your phone's name. It tells you when the last location was recorded.
 - If "Send Last Location" was enabled, you should see where the phone was when the battery got low.
 - Wait a few minutes and refresh — if someone turns the phone on and it connects to the internet, the location will update.
-- Call your mobile carrier (AT&T, Verizon, T-Mobile, etc.) — they may be able to help you suspend the line to prevent unauthorized calls.
+- Call your mobile carrier (AT&T, Verizon, T-Mobile, etc.). They may be able to help you suspend the line to prevent unauthorized calls.
 - File a police report if you believe the phone was stolen. You can share the Find My map screenshot with the officer.
 
 ---
@@ -657,7 +657,7 @@ If you help a family member set up their iPhone, take five minutes to turn on Fi
       {
         title: 'Use icloud.com from any computer if you do not have another Apple device',
         content: 'Go to icloud.com in any web browser. Sign in with your Apple ID email and password. Click "Find My." Click "All Devices" and select your iPhone. Your phone\'s location appears on the map.',
-        tip: 'You can do this from a library computer, a friend\'s laptop, or any device with a browser — you are not limited to Apple products.',
+        tip: 'You can do this from a library computer, a friend\'s laptop, or any device with a browser. You are not limited to Apple products.',
       },
       {
         title: 'Play a sound to find the phone if it is nearby',
@@ -666,7 +666,7 @@ If you help a family member set up their iPhone, take five minutes to turn on Fi
       {
         title: 'Turn on Lost Mode if the phone is missing outside your home',
         content: 'Tap your iPhone in the Devices list → tap "Mark As Lost" → enter a phone number where you can be reached → add a short message (example: "Please call 555-0147") → tap "Activate." This locks the phone, shows your message on the screen, disables Apple Pay, and keeps tracking the location.',
-        tip: 'Lost Mode does not erase your data. Your photos, contacts, and everything else stay on the phone — they are just locked behind your passcode.',
+        tip: 'Lost Mode does not erase your data. Your photos, contacts, and everything else stay on the phone. They are just locked behind your passcode.',
       },
       {
         title: 'Erase the device only as a last resort',

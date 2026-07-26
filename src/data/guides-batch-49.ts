@@ -13,7 +13,7 @@ export const guidesBatch49: Guide[] = [
     difficulty: `Beginner`,
     body: `Snapseed is a free photo editing app made by Google. It works on both iPhone and Android and gives you powerful tools to improve your photos without needing any design skills. Whether you want to brighten a dark photo, crop out a distraction, or fix a blemish, Snapseed makes it approachable.
 
-When you open a photo in Snapseed, you see three tabs at the bottom: Photos, Looks, and Tools. "Looks" are one-tap filter presets that change the overall style of a photo instantly. "Tools" is where the real editing power lives — it has over a dozen individual tools you can use one at a time.
+When you open a photo in Snapseed, you see three tabs at the bottom: Photos, Looks, and Tools. "Looks" are one-tap filter presets that change the overall style of a photo instantly. "Tools" is where the real editing power lives. It has over a dozen individual tools you can use one at a time.
 
 The four most useful tools for everyday photos are:
 
@@ -176,7 +176,7 @@ The recipient gets an email from Hallmark or American Greetings letting them kno
     thumbnailEmoji: ``,
     publishedAt: `2026-04-19`,
     difficulty: `Beginner`,
-    body: `You don't need a separate app to edit photos on your iPhone. The built-in Photos app includes a full set of editing tools — you can adjust brightness, contrast, color, crop, straighten, add filters, and even remove red-eye — all without leaving the app you already use to view your pictures.
+    body: `You don't need a separate app to edit photos on your iPhone. The built-in Photos app includes a full set of editing tools. You can adjust brightness, contrast, color, crop, straighten, add filters, and even remove red-eye — all without leaving the app you already use to view your pictures.
 
 The best part: every edit is non-destructive. That means your original photo is always saved. If you make changes and later don't like them, you can tap "Revert" to instantly go back to the original. There's no risk of permanently ruining a photo.
 
@@ -351,7 +351,7 @@ The button combination for taking a screenshot depends on which iPad model you h
 After you take a screenshot, a small preview thumbnail appears in the bottom left corner of the screen for a few seconds. You can:
 - **Tap it** to open the screenshot and annotate it before saving or sharing
 - **Swipe it away** to dismiss without opening it (it saves automatically to your Photos app)
-- **Ignore it** — it will disappear on its own and save to your Photos app in the Screenshots album
+- **Ignore it**. It will disappear on its own and save to your Photos app in the Screenshots album
 
 If you tap the thumbnail, the screenshot opens in the Markup editor. Here you can:
 - Draw on the image with your finger (or Apple Pencil) using the pen, highlighter, or pencil tools
@@ -479,7 +479,7 @@ If you decide you prefer the original size, you can go back to Settings > Displa
     steps: [
       {
         title: `Open Settings`,
-        content: `Tap the Settings app on your iPhone — it looks like a gray square with gears on it. You'll find it on your home screen or by swiping down and searching for "Settings."`,
+        content: `Tap the Settings app on your iPhone. It looks like a gray square with gears on it. You'll find it on your home screen or by swiping down and searching for "Settings."`,
       },
       {
         title: `Go to Display & Brightness`,
@@ -491,7 +491,7 @@ If you decide you prefer the original size, you can go back to Settings > Displa
       },
       {
         title: `Select Larger Text and confirm`,
-        content: `Tap "Larger Text" to select it — it will have a checkmark next to it. Then tap "Set" in the top right corner of the screen. A prompt will appear warning you that your iPhone needs to restart. Tap "Use Zoomed" to confirm. Your phone will turn off and back on in about 15 seconds.`,
+        content: `Tap "Larger Text" to select it. It will have a checkmark next to it. Then tap "Set" in the top right corner of the screen. A prompt will appear warning you that your iPhone needs to restart. Tap "Use Zoomed" to confirm. Your phone will turn off and back on in about 15 seconds.`,
         warning: `Your phone will restart automatically. This is normal and takes about 15 seconds. You will not lose anything.`,
       },
       {
@@ -526,7 +526,7 @@ When you turn on a new Fire tablet for the first time, it walks you through setu
 Fire tablets use the Amazon Appstore, not the Google Play Store. Most popular apps (Netflix, YouTube, Facebook, Zoom, Gmail) are available in the Amazon Appstore. A few niche apps may not be there, but for everyday use you'll find everything you need.
 
 **Parental Controls:**
-If this tablet will also be used by children or grandchildren, Amazon Fire tablets have excellent parental controls. Look for "Amazon Kids" in the settings — you can set time limits, restrict purchases, and choose what types of content are allowed. You can set a parental PIN so children can't change these settings.
+If this tablet will also be used by children or grandchildren, Amazon Fire tablets have excellent parental controls. Look for "Amazon Kids" in the settings. You can set time limits, restrict purchases, and choose what types of content are allowed. You can set a parental PIN so children can't change these settings.
 
 **Wi-Fi tip:**
 The password for your home Wi-Fi is case-sensitive. If it doesn't work, double-check that you're typing capital letters and lowercase letters exactly as they appear on the sticker on your router (the box that provides your internet connection).
@@ -553,7 +553,7 @@ Amazon has free customer service by phone, chat, and email. Go to amazon.com/hel
       },
       {
         title: `Complete the setup wizard`,
-        content: `Follow any remaining setup screens — you may be asked about setting a 1-click purchasing PIN (recommended, to prevent accidental purchases), connecting a payment method, or setting up Amazon Kids. Read each screen carefully and choose what applies to you. Tap "Continue" or "Skip" to move forward.`,
+        content: `Follow any remaining setup screens. You may be asked about setting a 1-click purchasing PIN (recommended, to prevent accidental purchases), connecting a payment method, or setting up Amazon Kids. Read each screen carefully and choose what applies to you. Tap "Continue" or "Skip" to move forward.`,
       },
       {
         title: `Find and install apps from the Amazon Appstore`,
@@ -577,7 +577,7 @@ Amazon has free customer service by phone, chat, and email. Go to amazon.com/hel
     thumbnailEmoji: ``,
     publishedAt: `2026-04-19`,
     difficulty: `Beginner`,
-    body: `Sometimes an app on your Android phone gets stuck — it stops responding to taps, shows a spinning wheel forever, or keeps crashing. This can happen to any app: Facebook, Gmail, YouTube, a banking app, or even your phone dialer. When this happens, the fastest fix is to force stop the app.
+    body: `Sometimes an app on your Android phone gets stuck. It stops responding to taps, shows a spinning wheel forever, or keeps crashing. This can happen to any app: Facebook, Gmail, YouTube, a banking app, or even your phone dialer. When this happens, the fastest fix is to force stop the app.
 
 **What does Force Stop do?**
 Force Stop right away shuts down the app completely, including any processes running in the background. It's like turning off a light switch — the app stops entirely. When you reopen the app afterward, it starts fresh. Your data in the app (like your saved messages or account info) is not deleted. Only the running process is ended.
@@ -648,7 +648,7 @@ Clearing the cache deletes these temporary files. The app then rebuilds the cach
 Clearing the cache does not delete your account, your messages, your photos, or your saved data within the app. Your Gmail emails will still be there. Your Facebook friends list stays. Your Amazon order history is untouched. The cache only contains temporary data the app uses for speed — not your actual content.
 
 **What about "Clear Data"?**
-On the same App Info screen, you'll also see a button called "Clear Data" or "Clear Storage." This is different and more powerful — it deletes all your saved data for the app, including your login information, preferences, and any content stored locally. Use Clear Data only as a last resort, because you'll need to log back in to the app afterward.
+On the same App Info screen, you'll also see a button called "Clear Data" or "Clear Storage." This is different and more powerful. It deletes all your saved data for the app, including your login information, preferences, and any content stored locally. Use Clear Data only as a last resort, because you'll need to log back in to the app afterward.
 
 For most troubleshooting, clearing the cache is all you need.
 
@@ -734,7 +734,7 @@ If you use Chrome or Firefox on your iPhone instead of Safari, you'll clear the 
       },
       {
         title: `Scroll down and tap Safari`,
-        content: `In Settings, scroll down until you see "Safari" — it has a compass icon and is typically listed alphabetically with other apps. Tap it to open Safari's settings.`,
+        content: `In Settings, scroll down until you see "Safari". It has a compass icon and is typically listed alphabetically with other apps. Tap it to open Safari's settings.`,
       },
       {
         title: `Tap Clear History and Website Data`,
@@ -788,7 +788,7 @@ Once you're back in, right away add a recovery phone number (Settings > Security
     steps: [
       {
         title: `Go to Google's account recovery page`,
-        content: `On your phone or computer, open a web browser and go to accounts.google.com/signin/recovery — you can type this directly in the address bar at the top of your browser. Alternatively, go to gmail.com, tap "Sign in," enter your email address, and tap "Forgot password?" on the password screen.`,
+        content: `On your phone or computer, open a web browser and go to accounts.google.com/signin/recovery. You can type this directly in the address bar at the top of your browser. Alternatively, go to gmail.com, tap "Sign in," enter your email address, and tap "Forgot password?" on the password screen.`,
       },
       {
         title: `Enter your Gmail address`,
@@ -967,7 +967,7 @@ All products are shipped to your home. Depending on the product, shipping typica
 
 **Note:** The availability of print products may vary by region. The service is operated through Google's partner Chatbooks for photo books and other specialty items.
 
-This is a convenient option because all your photos are already in Google Photos — you don't need to export or transfer anything. Find the photo you love and place a print order in a few taps.`,
+This is a convenient option because all your photos are already in Google Photos. You don't need to export or transfer anything. Find the photo you love and place a print order in a few taps.`,
     steps: [
       {
         title: `Open Google Photos and find the photo you want to print`,
@@ -1018,7 +1018,7 @@ Apple introduced a Health Sharing feature that lets you securely share specific 
 - Any other metrics you track in the Health app
 
 **Who can see your data:**
-Only the people you specifically invite — they need to accept your invitation. You can stop sharing with anyone at any time.
+Only the people you specifically invite. They need to accept your invitation. You can stop sharing with anyone at any time.
 
 **Privacy note:**
 When you share health data with someone, they can see the actual values — not only summary alerts. Be thoughtful about who you share with. Sharing with your adult children or your doctor is usually appropriate. Apple encrypts all Health data in transit and at rest.
@@ -1118,7 +1118,7 @@ In an emergency where you are unconscious or unable to speak, first responders f
       },
       {
         title: `Save your information`,
-        content: `Tap "Save" or "Done" when you've finished filling in the form. The information is now stored on your phone. It does not need an internet connection to display — it will work even if your phone has no service.`,
+        content: `Tap "Save" or "Done" when you've finished filling in the form. The information is now stored on your phone. It does not need an internet connection to display. It will work even if your phone has no service.`,
         warning: `This information is visible to anyone who picks up your phone and taps the Emergency button on the lock screen. Avoid including sensitive financial information or passwords here — stick to medical facts and emergency contacts only.`,
       },
       {
@@ -1167,7 +1167,7 @@ Quick Settings is a real time-saver. Instead of going to Settings > System > Blu
       },
       {
         title: `Toggle Wi-Fi on or off`,
-        content: `Find the Wi-Fi tile in the Quick Settings panel — it looks like a set of curved lines (a signal icon). Click it once to turn Wi-Fi off (the tile will turn gray). Click it again to turn it back on. To connect to a different Wi-Fi network, click the small arrow icon to the right of the Wi-Fi tile, and a list of available networks will appear.`,
+        content: `Find the Wi-Fi tile in the Quick Settings panel. It looks like a set of curved lines (a signal icon). Click it once to turn Wi-Fi off (the tile will turn gray). Click it again to turn it back on. To connect to a different Wi-Fi network, click the small arrow icon to the right of the Wi-Fi tile, and a list of available networks will appear.`,
       },
       {
         title: `Toggle Bluetooth`,

@@ -49,7 +49,7 @@ If you have paper coupons, hand them to the attendant — most stores have you g
 
 **Paying by card or phone**
 
-You can pay with a debit or credit card by inserting it into the chip reader (the narrow slot) or swiping it. If you use Apple Pay or Google Pay (paying by holding your phone near the card reader), look for the contactless symbol — it looks like a sideways Wi-Fi icon — on the payment terminal.
+You can pay with a debit or credit card by inserting it into the chip reader (the narrow slot) or swiping it. If you use Apple Pay or Google Pay (paying by holding your phone near the card reader), look for the contactless symbol. It looks like a sideways Wi-Fi icon — on the payment terminal.
 
 **When something goes wrong**
 
@@ -76,7 +76,7 @@ Sources: How-To Geek, AARP, individual grocery chain help pages (Walmart, Kroger
       {
         title: 'Apply coupons and loyalty savings',
         content: 'If you have paper coupons, set them aside and hand them to the attendant when you finish scanning — do not try to feed paper coupons into the machine unless the screen specifically asks for them. If you have a store app with digital coupons, your loyalty account was already linked when you entered your phone number at the start. Your clipped digital coupons will be deducted automatically at the end of scanning.',
-        tip: 'Check the screen before you pay — it should show a subtotal and any discounts applied. If a discount is missing, ask the attendant to look at your order before you finalize payment.',
+        tip: 'Check the screen before you pay. It should show a subtotal and any discounts applied. If a discount is missing, ask the attendant to look at your order before you finalize payment.',
       },
       {
         title: 'Pay and finish',
@@ -215,7 +215,7 @@ Sources: FTC.gov (consumer.ftc.gov), CISA.gov, AARP Fraud Watch Network, Apple S
     publishedAt: '2026-05-07',
     lastVerifiedAt: '2026-05-07',
     difficulty: 'Beginner',
-    body: `If you use your phone mostly to call family members, receive calls from your doctor, and send the occasional text message, you do not need to pay for an unlimited plan that costs $60 or more per month. Prepaid phone options are designed for exactly this situation — you pay only for what you use, with no long-term contract and no credit check.
+    body: `If you use your phone mostly to call family members, receive calls from your doctor, and send the occasional text message, you do not need to pay for an unlimited plan that costs $60 or more per month. Prepaid phone options are designed for exactly this situation. You pay only for what you use, with no long-term contract and no credit check.
 
 This guide explains the difference between prepaid wireless plans and pay-as-you-go minutes cards, where to buy them, and how to add minutes or data when you run low.
 
@@ -223,7 +223,7 @@ This guide explains the difference between prepaid wireless plans and pay-as-you
 
 There are two main types of prepaid phone service. And it helps to understand the difference before you shop.
 
-The first type is a **prepaid wireless plan**. This works like a regular phone plan. But you pay a flat monthly fee in advance rather than receiving a bill at the end of the month. Carriers like Consumer Cellular, Tracfone, Straight Talk, and Mint Mobile offer prepaid plans. You get a set amount of talk, text, and data each month. These plans range from about $10 to $40 per month depending on how much you want. There is no credit check and no contract — you can cancel at any time.
+The first type is a **prepaid wireless plan**. This works like a regular phone plan. But you pay a flat monthly fee in advance rather than receiving a bill at the end of the month. Carriers like Consumer Cellular, Tracfone, Straight Talk, and Mint Mobile offer prepaid plans. You get a set amount of talk, text, and data each month. These plans range from about $10 to $40 per month depending on how much you want. There is no credit check and no contract. You can cancel at any time.
 
 The second type is a **pay-as-you-go card**, sometimes called a minutes card or airtime card. These are physical cards sold in stores. You buy the card, scratch off a code on the back, and enter that code on your phone or on the carrier's website to add a block of minutes (and sometimes texts or data) to your account. Minutes may expire after 30, 60, or 90 days if you do not use them, depending on the plan. Tracfone is the most well-known carrier for this type of service.
 
@@ -334,7 +334,7 @@ This guide covers four tools: Magnifier, Narrator, High Contrast mode, and the m
 
 **Magnifier — zoom in on any part of the screen**
 
-Magnifier works like a magnifying glass for your computer screen. You can zoom in on text, images, buttons, or anything else on the screen. It does not change your computer's settings permanently — you can turn it on when you need it and turn it off when you are done.
+Magnifier works like a magnifying glass for your computer screen. You can zoom in on text, images, buttons, or anything else on the screen. It does not change your computer's settings permanently. You can turn it on when you need it and turn it off when you are done.
 
 To turn on Magnifier instantly: press and hold the Windows key (the key with the Windows logo, usually in the lower-left area of the keyboard) and press the Plus (+) key at the same time. Each time you press Windows + Plus, the screen zooms in further. To zoom back out, press Windows + Minus (-). To close Magnifier and return to normal view, press Windows + Escape.
 

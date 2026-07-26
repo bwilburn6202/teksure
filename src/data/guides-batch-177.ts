@@ -35,7 +35,7 @@ export const guidesBatch177: Guide[] = [
     publishedAt: "2026-05-08",
     lastVerifiedAt: "2026-05-08",
     steps: [
-      { title: "Download the Walmart app", content: "On your phone, open the App Store (iPhone) or Play Store (Android). Type \"Walmart\" in the search bar. Tap \"Get\" or \"Install\" next to the official Walmart app — it has a yellow spark logo on a blue background." },
+      { title: "Download the Walmart app", content: "On your phone, open the App Store (iPhone) or Play Store (Android). Type \"Walmart\" in the search bar. Tap \"Get\" or \"Install\" next to the official Walmart app. It has a yellow spark logo on a blue background." },
       { title: "Create a free account", content: "Open the app and tap \"Sign Up\". Enter your email, a password you will remember, and your phone number. Walmart sends a code by text — type that code in to confirm your phone." },
       { title: "Choose your home store", content: "Tap the location bar at the top of the app. Allow Walmart to use your location, or type your ZIP code. Pick the closest store that offers Pickup. A green \"Pickup available\" label confirms it." },
       { title: "Add groceries to your cart", content: "Tap the \"Grocery\" section. Browse by aisle, or tap the search bar and type items like \"bananas\" or \"wheat bread\". Tap the plus sign next to each item to add it. Your cart total shows at the bottom." },

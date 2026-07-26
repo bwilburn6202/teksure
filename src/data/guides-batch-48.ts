@@ -121,7 +121,7 @@ If you run a Facebook Page (for a small business or community group), going Live
       },
       {
         title: `React and comment during a Live`,
-        content: `While watching a Live, tap any of the emoji reaction icons at the bottom (like  or ) to send a reaction — it floats up the screen for everyone to see. Tap the comment box at the bottom to type a message. The person going Live can see your comments and may respond to you.`,
+        content: `While watching a Live, tap any of the emoji reaction icons at the bottom (like  or ) to send a reaction. It floats up the screen for everyone to see. Tap the comment box at the bottom to type a message. The person going Live can see your comments and may respond to you.`,
       },
       {
         title: `Start your own Facebook Live`,
@@ -213,7 +213,7 @@ Extensions are installed from the Chrome Web Store, which is Google's official m
 
 Once installed, extensions appear as small icons to the right of your address bar. Some show up automatically. Others need you to click the puzzle piece icon to see and pin them. You can remove any extension at any time, which right away returns your browser to exactly how it was before.
 
-Extensions only work in Chrome on a computer — they don't carry over to Chrome on your phone or to other browsers like Safari or Firefox.`,
+Extensions only work in Chrome on a computer. They don't carry over to Chrome on your phone or to other browsers like Safari or Firefox.`,
     steps: [
       {
         title: `Open the Chrome Web Store`,
@@ -275,7 +275,7 @@ This feature works on both Windows and Mac computers. It's not available in Chro
       },
       {
         title: `Collapse and expand a group`,
-        content: `Click on the group's name label in the tab bar. The group collapses and hides all the tabs inside it — you just see the small colored dot and name. Click the label again to expand the group and see all those tabs again. This is great for keeping your tab bar clean.`,
+        content: `Click on the group's name label in the tab bar. The group collapses and hides all the tabs inside it. You just see the small colored dot and name. Click the label again to expand the group and see all those tabs again. This is great for keeping your tab bar clean.`,
       },
       {
         title: `Remove tabs from a group or delete the group`,
@@ -302,7 +302,7 @@ The App Privacy Report helps you spot unusual activity. For example, if a flashl
 
 Beyond showing what's being accessed, the report also lists what websites third-party apps are contacting. Some apps send data to dozens of advertising and analytics companies without you realizing it. This section of the report gives you insight into that activity.
 
-Turning on the App Privacy Report doesn't change anything about how apps work — it just starts keeping a log you can review. The information is stored privately on your iPhone and is not sent to Apple. You can turn it off at any time if you prefer not to track this data.
+Turning on the App Privacy Report doesn't change anything about how apps work. It just starts keeping a log you can review. The information is stored privately on your iPhone and is not sent to Apple. You can turn it off at any time if you prefer not to track this data.
 
 Reviewing your App Privacy Report sometimes is a healthy privacy habit, especially for any apps you haven't used recently that you've left installed on your phone.`,
     steps: [
@@ -701,7 +701,7 @@ What makes the Outlook app different from your phone's built-in mail app:
 - **File attachment from cloud storage** — Attach files from OneDrive, Dropbox, or Google Drive directly from within an email
 - **Search that works well** — Quickly find old emails by keyword, sender, or date range
 
-Outlook is free to download and use. Setup is as straightforward as entering your email address and password — it handles everything else automatically for most major email providers.`,
+Outlook is free to download and use. Setup is as straightforward as entering your email address and password. It handles everything else automatically for most major email providers.`,
     steps: [
       {
         title: `Download Microsoft Outlook`,
@@ -758,7 +758,7 @@ Pressure sensitivity means the harder you press, the darker and thicker your str
       },
       {
         title: `Check the battery level`,
-        content: `Add the Batteries widget to your iPad home screen or swipe right to the Today View and look for a Batteries widget — it shows the charge level for your Apple Pencil. Apple Pencil 2nd gen charges wirelessly when attached to the iPad's magnetic side. 1st gen charges via the Lightning port.`,
+        content: `Add the Batteries widget to your iPad home screen or swipe right to the Today View and look for a Batteries widget. It shows the charge level for your Apple Pencil. Apple Pencil 2nd gen charges wirelessly when attached to the iPad's magnetic side. 1st gen charges via the Lightning port.`,
       },
       {
         title: `Try writing in Apple Notes`,
@@ -796,7 +796,7 @@ When you share a calendar, you choose what level of access to give the other per
 
 You can also create a separate calendar (like "Family Events") and share just that calendar rather than your personal one. This keeps your work or personal appointments private while sharing family activities.
 
-Once someone accepts your share invitation, your calendar appears in their Google Calendar alongside their own — they see it in a different color so you can tell apart. Changes you make appear instantly on their end, and vice versa if they have edit permissions.
+Once someone accepts your share invitation, your calendar appears in their Google Calendar alongside their own. They see it in a different color so you can tell apart. Changes you make appear instantly on their end, and vice versa if they have edit permissions.
 
 Sharing works between any two people with Google accounts. And they can view your calendar in a browser, on Android, on iPhone via the Google Calendar app, or even in Apple Calendar on Mac.`,
     steps: [
@@ -848,7 +848,7 @@ Here's what you can play over Bluetooth in your car:
 
 You control playback from your phone screen, or in many cars, from the steering wheel buttons or center console controls. Some cars show the song title and artist on the dashboard display.
 
-If your car is older and doesn't have Bluetooth, an FM transmitter (a small device that plugs into the cigarette lighter and your headphone jack) is a low-cost alternative. But for cars made in the last 10+ years, Bluetooth is almost certainly available — it may just be labeled "audio streaming" or "media audio" in your car's Bluetooth settings.
+If your car is older and doesn't have Bluetooth, an FM transmitter (a small device that plugs into the cigarette lighter and your headphone jack) is a low-cost alternative. But for cars made in the last 10+ years, Bluetooth is almost certainly available. It may just be labeled "audio streaming" or "media audio" in your car's Bluetooth settings.
 
 The phone's music keeps playing through the same Bluetooth connection used for phone calls. So you can also receive hands-free calls without touching your phone.`,
     steps: [
@@ -942,7 +942,7 @@ All recordings are saved to your phone's storage and can be accessed from within
     difficulty: `Intermediate`,
     body: `Drag and drop on iPad lets you pick up an item with your finger — a photo, a block of text, a file, or a link — hold it while you navigate to another app, and then drop it there. It's a faster and more natural way to move content between apps than the traditional copy-and-paste approach.
 
-For example: you're looking at photos in your Photos app and want to include one in an email. Instead of copying, switching apps, tapping the attachment button, and finding the photo again — you can long-press the photo, drag it to the bottom of the screen while still holding it, tap the Mail app to open it, navigate to a draft, and drop the photo directly into the message body. The whole thing takes just a few seconds.
+For example: you're looking at photos in your Photos app and want to include one in an email. Instead of copying, switching apps, tapping the attachment button, and finding the photo again. You can long-press the photo, drag it to the bottom of the screen while still holding it, tap the Mail app to open it, navigate to a draft, and drop the photo directly into the message body. The whole thing takes just a few seconds.
 
 Drag and drop is especially powerful when two apps are open side-by-side using Split View. With both apps visible at once — say, Safari on the left and Notes on the right — you can drag text from a webpage directly into your note, drag a link into a message, or move a file from Files into a document you're editing.
 
@@ -975,7 +975,7 @@ Drag and drop works anywhere in iPadOS, including the home screen (to rearrange 
       },
       {
         title: `Try it with Split View open`,
-        content: `Open two apps side by side using Split View (drag an app from the Dock to the edge of the screen while another is open). With two apps visible, drag and drop becomes even faster — you can transfer content between them without any navigation. Try dragging a line of text from Safari into a Notes app on the other side.`,
+        content: `Open two apps side by side using Split View (drag an app from the Dock to the edge of the screen while another is open). With two apps visible, drag and drop becomes even faster. You can transfer content between them without any navigation. Try dragging a line of text from Safari into a Notes app on the other side.`,
         tip: `You can also drag files from the Files app into any app that supports file imports, like Pages, Numbers, or email.`,
       },
     ],

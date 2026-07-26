@@ -66,7 +66,7 @@ export const guidesBatch200: Guide[] = [
     steps: [
       {
         title: "Pick a card that fits the person, not the rack",
-        content: "Stand in the card aisle and read three or four cards before grabbing one. Pick a card whose printed message says something you actually mean — if the printed verse is sappy and you are not a sappy person, pick a different card. Funny cards work for friends with a sense of humor. Plain blank-inside cards are the most flexible — you write the whole message yourself, which fits any occasion. Cards run $3 to $7. Boxed sets of 10 to 20 from Costco, Hallmark, or Amazon run $15 to $25 and are a good investment for sending several cards a year.",
+        content: "Stand in the card aisle and read three or four cards before grabbing one. Pick a card whose printed message says something you actually mean — if the printed verse is sappy and you are not a sappy person, pick a different card. Funny cards work for friends with a sense of humor. Plain blank-inside cards are the most flexible. You write the whole message yourself, which fits any occasion. Cards run $3 to $7. Boxed sets of 10 to 20 from Costco, Hallmark, or Amazon run $15 to $25 and are a good investment for sending several cards a year.",
       },
       {
         title: "Write a short, specific message",

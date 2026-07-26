@@ -15,7 +15,7 @@ export const guidesBatch22: Guide[] = [
     steps: [
       {
         title: 'Open Facebook Marketplace',
-        content: `Open the Facebook app on your phone. Look for the Marketplace icon at the bottom — it looks like a small storefront or house. Tap it. You'll see listings from people near you. To sell something, tap "Create new listing" or the "+" button.`,
+        content: `Open the Facebook app on your phone. Look for the Marketplace icon at the bottom. It looks like a small storefront or house. Tap it. You'll see listings from people near you. To sell something, tap "Create new listing" or the "+" button.`,
       },
       {
         title: 'Take clear photos and write a description',
@@ -93,7 +93,7 @@ export const guidesBatch22: Guide[] = [
       },
       {
         title: 'Cast directly from an app',
-        content: 'In YouTube, Netflix, Spotify, or most Google apps, look for the Cast icon — it looks like a small rectangle with Wi-Fi waves in one corner. Tap it to see nearby Cast-compatible devices. Tap your TV or Chromecast to start sending audio and video directly to it.',
+        content: 'In YouTube, Netflix, Spotify, or most Google apps, look for the Cast icon. It looks like a small rectangle with Wi-Fi waves in one corner. Tap it to see nearby Cast-compatible devices. Tap your TV or Chromecast to start sending audio and video directly to it.',
         tip: 'Quick Tip: App casting is better quality than full screen mirroring because the video streams directly from the internet to the TV — your phone just acts as the remote control.',
       },
       {
@@ -217,7 +217,7 @@ export const guidesBatch22: Guide[] = [
       },
       {
         title: 'Receive a fax',
-        content: 'Most fax apps also give you a fax number so others can send faxes to you. In the app settings, look for "My Fax Number" — you can share this with doctors, lawyers, or anyone who needs to fax you. Received faxes show up in the app as PDFs you can download and print or save.',
+        content: 'Most fax apps also give you a fax number so others can send faxes to you. In the app settings, look for "My Fax Number". You can share this with doctors, lawyers, or anyone who needs to fax you. Received faxes show up in the app as PDFs you can download and print or save.',
       },
     ],
   },
@@ -345,7 +345,7 @@ export const guidesBatch22: Guide[] = [
     steps: [
       {
         title: 'Open Apple News',
-        content: `Look for the News app on your iPhone — it has a white icon with a red "N." If you don't see it, swipe down on your home screen and search "News." Tap to open. On first launch, Apple News will show you a setup screen to choose topics.`,
+        content: `Look for the News app on your iPhone. It has a white icon with a red "N." If you don't see it, swipe down on your home screen and search "News." Tap to open. On first launch, Apple News will show you a setup screen to choose topics.`,
       },
       {
         title: 'Choose topics you care about',
@@ -377,7 +377,7 @@ export const guidesBatch22: Guide[] = [
     thumbnailEmoji: '',
     publishedAt: '2026-04-19',
     difficulty: 'Beginner',
-    body: `Google News is Google's free news aggregation app — it pulls stories from thousands of news publishers worldwide and presents them based on your interests and location. If you use an Android phone, Google News may already be installed. It's also available as a free download for iPhone.\n\nUnlike Apple News (which is iPhone-only), Google News works on both Android and iPhone. It has a clean, readable interface and personalizes your feed based on what you read and tap — the more you use it, the better it learns what you care about.\n\nFor following specific topics, local news, or keeping up with health, technology, or any subject area, Google News is an excellent free option.`,
+    body: `Google News is Google's free news aggregation app. It pulls stories from thousands of news publishers worldwide and presents them based on your interests and location. If you use an Android phone, Google News may already be installed. It's also available as a free download for iPhone.\n\nUnlike Apple News (which is iPhone-only), Google News works on both Android and iPhone. It has a clean, readable interface and personalizes your feed based on what you read and tap — the more you use it, the better it learns what you care about.\n\nFor following specific topics, local news, or keeping up with health, technology, or any subject area, Google News is an excellent free option.`,
     steps: [
       {
         title: 'Get Google News',
@@ -459,7 +459,7 @@ export const guidesBatch22: Guide[] = [
       },
       {
         title: 'Move your most-used apps to the Dock',
-        content: 'The Dock is the row of apps at the bottom of your screen — it appears on every home screen page. You can have up to 4 apps in the Dock. While in jiggle mode, drag your most-used apps down to the Dock. Most people keep Phone, Messages, Safari, and Mail there — or substitute your own most-used apps.',
+        content: 'The Dock is the row of apps at the bottom of your screen. It appears on every home screen page. You can have up to 4 apps in the Dock. While in jiggle mode, drag your most-used apps down to the Dock. Most people keep Phone, Messages, Safari, and Mail there — or substitute your own most-used apps.',
       },
       {
         title: 'Create a folder to group similar apps',
@@ -496,7 +496,7 @@ export const guidesBatch22: Guide[] = [
       {
         title: 'Adjust or turn off autocorrect',
         content: 'Toggle "Auto-Correction" off to completely disable autocorrect — your phone will stop changing words you type. If you want to keep it but reduce how aggressively it changes things, keep it on but also turn off "Predictive Text" — this shows the row of suggested words above the keyboard which can sometimes cause confusion.',
-        tip: `Quick Tip: iOS 17 and later made autocorrect smarter — it now shows when it's about to correct you and gives you a chance to accept or reject. iOS 18 (the current version) improved this further. Update at Settings → General → Software Update to get the latest behavior.`,
+        tip: `Quick Tip: iOS 17 and later made autocorrect smarter. It now shows when it's about to correct you and gives you a chance to accept or reject. iOS 18 (the current version) improved this further. Update at Settings → General → Software Update to get the latest behavior.`,
       },
       {
         title: 'Create text shortcuts',
@@ -532,7 +532,7 @@ export const guidesBatch22: Guide[] = [
       {
         title: 'Connect with HDMI ARC (recommended)',
         content: `Plug one end of an HDMI cable into the port labeled "HDMI ARC" on your TV, and the other end into the "HDMI ARC" port on your soundbar. Power on both. Go to your TV's Settings > Audio > Audio Output and select "HDMI ARC" or "External speakers." Your TV remote volume buttons should now control the soundbar.`,
-        tip: `Quick Tip: HDMI ARC lets your TV remote control the soundbar volume — you won't need a second remote. This is a major convenience advantage over other connection methods.`,
+        tip: `Quick Tip: HDMI ARC lets your TV remote control the soundbar volume. You won't need a second remote. This is a major convenience advantage over other connection methods.`,
       },
       {
         title: 'Connect with optical cable',
@@ -687,7 +687,7 @@ export const guidesBatch22: Guide[] = [
       },
       {
         title: 'Use your loyalty card at checkout',
-        content: `At the store checkout, scan your loyalty card (physical card or the barcode in the app under "My Card" or "Scan Card"). All your clipped coupons automatically deduct from your total — you don't need to show or hand over anything. The discount appears on the checkout screen as each qualifying item is scanned.`,
+        content: `At the store checkout, scan your loyalty card (physical card or the barcode in the app under "My Card" or "Scan Card"). All your clipped coupons automatically deduct from your total. You don't need to show or hand over anything. The discount appears on the checkout screen as each qualifying item is scanned.`,
       },
       {
         title: 'Check the weekly ad for more savings',

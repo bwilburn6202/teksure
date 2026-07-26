@@ -16,9 +16,9 @@ export const guidesBatch140: Guide[] = [
 
 **What does 5G mean?**
 
-5G stands for "fifth generation" — it is the fifth version of wireless network technology used by cell phones. The generations went: 1G (basic voice calls in the 1980s), 2G (text messages), 3G (basic internet on phones), 4G/LTE (fast internet, streaming video), and now 5G (even faster, in theory).
+5G stands for "fifth generation". It is the fifth version of wireless network technology used by cell phones. The generations went: 1G (basic voice calls in the 1980s), 2G (text messages), 3G (basic internet on phones), 4G/LTE (fast internet, streaming video), and now 5G (even faster, in theory).
 
-The "G" just means generation, like "class of 2026" — it tells you which era of technology your phone is using to connect to cell towers.
+The "G" just means generation, like "class of 2026". It tells you which era of technology your phone is using to connect to cell towers.
 
 **How is 5G different from 4G LTE?**
 
@@ -166,7 +166,7 @@ Apple Maps offline works the same way — GPS navigation without cell service, b
 
 **Alternative: Download Waze for traffic, keep Google Maps for offline**
 
-If you normally use Waze for traffic and navigation, note that Waze does not support offline maps — it requires a data connection. For trips where you might lose signal, switch to Google Maps (or Apple Maps on iPhone) for that leg.
+If you normally use Waze for traffic and navigation, note that Waze does not support offline maps. It requires a data connection. For trips where you might lose signal, switch to Google Maps (or Apple Maps on iPhone) for that leg.
 
 **Before a road trip: 5-minute prep routine**
 
@@ -291,7 +291,7 @@ Voice-to-text accuracy on modern phones is over 95% for clear speech in a quiet 
       },
       {
         title: 'Say punctuation out loud',
-        content: 'To add a period, say "period." For a comma, say "comma." Say "question mark," "exclamation point," or "new paragraph" for those. Practice this: say "Hi there comma how are you question mark" — it should type "Hi there, how are you?"',
+        content: 'To add a period, say "period." For a comma, say "comma." Say "question mark," "exclamation point," or "new paragraph" for those. Practice this: say "Hi there comma how are you question mark". It should type "Hi there, how are you?"',
       },
       {
         title: 'Tap the microphone again when finished',
@@ -299,7 +299,7 @@ Voice-to-text accuracy on modern phones is over 95% for clear speech in a quiet 
       },
       {
         title: 'Try Siri or Google Assistant for hands-free messaging',
-        content: 'Say "Hey Siri, send a text to [name]: [your message]" on iPhone. Say "Hey Google, send a text to [name]: [your message]" on Android. The assistant drafts and sends the message — you can compose entire messages without touching the phone.',
+        content: 'Say "Hey Siri, send a text to [name]: [your message]" on iPhone. Say "Hey Google, send a text to [name]: [your message]" on Android. The assistant drafts and sends the message. You can compose entire messages without touching the phone.',
       },
     ],
   },
@@ -373,7 +373,7 @@ A website selling popular products that was registered last week is suspicious. 
 
 **Check 7: Look for too-good-to-be-true prices**
 
-If a site is offering iPhones for $89, Nike shoes for $15, or concert tickets at 80% off face value — it is almost certainly a scam. Prices a lot below market value are bait.
+If a site is offering iPhones for $89, Nike shoes for $15, or concert tickets at 80% off face value. It is almost certainly a scam. Prices a lot below market value are bait.
 
 Real discounts are usually 10–40% off. If it seems impossibly cheap, it is.
 

@@ -15,7 +15,7 @@ export const guidesBatch92: Guide[] = [
 
 This feature was originally designed for people who are deaf or hard of hearing, but many people find it helpful for all kinds of situations: noisy environments where you cannot hear well, watching videos in a quiet place without headphones, or following along when someone speaks too quickly.
 
-Live Captions supports English, French, German, Italian, Japanese, Korean, and Spanish, depending on your Android version and phone model. Not every Android phone includes it — it is available on Google Pixel phones and most Samsung Galaxy phones running Android 14 or newer.
+Live Captions supports English, French, German, Italian, Japanese, Korean, and Spanish, depending on your Android version and phone model. Not every Android phone includes it. It is available on Google Pixel phones and most Samsung Galaxy phones running Android 14 or newer.
 
 One important privacy note: because all processing happens on your device, nothing you hear is sent to Google or any other company. Your conversations and audio stay private.
 
@@ -45,7 +45,7 @@ Live Captions will not always be perfectly accurate — fast speech, accents, or
       {
         title: `Use Live Captions during phone calls`,
         content: `When you receive or make a phone call, the Live Captions box will appear and transcribe both sides of the conversation. On some Android versions, you may need to tap a "Captions" button that appears during the call. This can be very helpful if you are in a noisy place or if the other person is difficult to hear.`,
-        warning: `The person you are calling will not see or know about the captions — they appear only on your screen. However, be aware that call audio is being processed locally on your device.`,
+        warning: `The person you are calling will not see or know about the captions. They appear only on your screen. However, be aware that call audio is being processed locally on your device.`,
       },
       {
         title: `Adjust caption settings`,
@@ -135,7 +135,7 @@ Personal Voice works together with Live Speech (also in Accessibility settings),
       {
         title: `Record the 150 phrases`,
         content: `Tap "Continue" and begin reading the phrases shown on your screen one at a time. After each phrase, your iPhone records a short clip. You will see a progress bar as you work through all 150 phrases. You can pause at any time and come back later — your progress is saved. Try to speak clearly and at a comfortable, natural pace.`,
-        tip: `Quick Tip: If you stumble on a phrase or cough, do not worry — there is a re-record button that lets you redo individual phrases. Getting a clean recording for each one is worth the extra moment.`,
+        tip: `Quick Tip: If you stumble on a phrase or cough, do not worry. There is a re-record button that lets you redo individual phrases. Getting a clean recording for each one is worth the extra moment.`,
       },
       {
         title: `Wait for your voice to be created`,
@@ -171,7 +171,7 @@ In Assistive Access mode, the iPhone works completely differently. There are two
 
 Only the apps you specifically add will be visible. You can include Phone (for calls to selected contacts only), Camera, Photos, Messages, Music, and a handful of others. The device user cannot add apps, change settings, or exit Assistive Access without the passcode set by the caregiver.
 
-Assistive Access is not permanent — you can exit it at any time using the passcode, so the full iPhone is still accessible to caregivers or family members when needed.`,
+Assistive Access is not permanent. You can exit it at any time using the passcode, so the full iPhone is still accessible to caregivers or family members when needed.`,
     steps: [
       {
         title: `Open Accessibility settings and find Assistive Access`,
@@ -231,13 +231,13 @@ Sound Recognition requires an iPhone with iOS 17 or later. It works alongside he
       },
       {
         title: `Turn on Sound Recognition`,
-        content: `Tap the toggle at the top of the Sound Recognition screen to turn it on. The toggle will turn green. Your iPhone will now begin listening for sounds in the background. You will not notice the phone doing anything differently — it works quietly behind the scenes.`,
+        content: `Tap the toggle at the top of the Sound Recognition screen to turn it on. The toggle will turn green. Your iPhone will now begin listening for sounds in the background. You will not notice the phone doing anything differently. It works quietly behind the scenes.`,
         warning: `Sound Recognition uses your iPhone's microphone continuously in the background. If you have set any app microphone restrictions, Sound Recognition may not work correctly. Make sure no other app is actively using the microphone when you need Sound Recognition to work well.`,
       },
       {
         title: `Choose which sounds to detect`,
         content: `Scroll down the Sound Recognition screen to see all available sound categories: Alarms, Animals, Home Devices, People, and more. Tap any category to expand it, then turn on the specific sounds you want. For home safety, many people turn on Smoke Alarm, Carbon Monoxide Alarm, and Doorbell. For parents, Baby Crying is a popular choice.`,
-        tip: `Quick Tip: Do not turn on every sound at once — you may get too many notifications for everyday sounds. Start with the two or three most important ones and add more over time if needed.`,
+        tip: `Quick Tip: Do not turn on every sound at once. You may get too many notifications for everyday sounds. Start with the two or three most important ones and add more over time if needed.`,
       },
       {
         title: `Test the feature`,
@@ -272,7 +272,7 @@ Android also supports Switch Access through Google's Accessibility Suite app, wh
     steps: [
       {
         title: `Connect your switch device`,
-        content: `Before setting up Switch Access in Android, connect your physical switch hardware to the phone. For a Bluetooth switch, put it into pairing mode and go to Settings → Connected Devices → Bluetooth, then pair it like you would pair a Bluetooth keyboard. For a USB switch, plug it into the phone using an appropriate adapter if needed. Make note of the button name that appears in Bluetooth settings — you will need it in the next steps.`,
+        content: `Before setting up Switch Access in Android, connect your physical switch hardware to the phone. For a Bluetooth switch, put it into pairing mode and go to Settings → Connected Devices → Bluetooth, then pair it like you would pair a Bluetooth keyboard. For a USB switch, plug it into the phone using an appropriate adapter if needed. Make note of the button name that appears in Bluetooth settings. You will need it in the next steps.`,
         tip: `Quick Tip: If you do not have a dedicated switch device, you can test Switch Access using the volume buttons on the phone itself during setup. This lets you try the feature before purchasing specialized hardware.`,
       },
       {
@@ -314,7 +314,7 @@ Android also supports Switch Access through Google's Accessibility Suite app, wh
 
 With Family Link, parents can see which apps their child has installed, approve or block new app downloads from the Google Play Store, set a daily limit on how many hours the child can use the phone, schedule "downtime" (hours when the device is locked, such as bedtime or homework time), see the child's approximate location on a map, and remotely lock the device with one tap.
 
-Family Link does not let parents read their child's messages or see everything they type — it focuses on app management, screen time, and location rather than detailed surveillance. This approach gives parents meaningful oversight while giving children some privacy.
+Family Link does not let parents read their child's messages or see everything they type. It focuses on app management, screen time, and location rather than detailed surveillance. This approach gives parents meaningful oversight while giving children some privacy.
 
 The parent needs the Family Link app (for parents) installed on their own Android or iPhone. The child needs a Google Account — this can be an existing account, or you can create a supervised account for them through the Family Link setup process. Children under 13 automatically get supervised accounts when set up through Family Link.
 
@@ -424,7 +424,7 @@ It is also useful for accessibility purposes — for example, handing someone wi
     steps: [
       {
         title: `Enable Guided Access in Settings`,
-        content: `Open the Settings app on the iPad. Tap Accessibility, then scroll down to the "General" section at the bottom and tap Guided Access. Tap the toggle to turn Guided Access on. This does not start Guided Access yet — it just enables the feature so you can use it when needed.`,
+        content: `Open the Settings app on the iPad. Tap Accessibility, then scroll down to the "General" section at the bottom and tap Guided Access. Tap the toggle to turn Guided Access on. This does not start Guided Access yet. It just enables the feature so you can use it when needed.`,
         tip: `Quick Tip: While you are in the Guided Access settings, also tap "Passcode Settings" and set a Guided Access passcode. Choose a code the child does not know. This passcode is required to exit Guided Access.`,
       },
       {
@@ -433,7 +433,7 @@ It is also useful for accessibility purposes — for example, handing someone wi
       },
       {
         title: `Start a Guided Access session`,
-        content: `With the desired app open, triple-click the Side button (the button on the right edge of modern iPads) or the Home button (on older iPads with a circular button at the bottom). A Guided Access screen will appear with options. Tap "Start" in the upper right corner. The app is now locked. The side or Home button will no longer switch apps — it will instead prompt for the Guided Access passcode.`,
+        content: `With the desired app open, triple-click the Side button (the button on the right edge of modern iPads) or the Home button (on older iPads with a circular button at the bottom). A Guided Access screen will appear with options. Tap "Start" in the upper right corner. The app is now locked. The side or Home button will no longer switch apps. It will instead prompt for the Guided Access passcode.`,
         tip: `Quick Tip: Before tapping Start, you can circle any part of the screen to disable it. Draw a circle or box over an area (like an ad banner or the settings button) and that section of the screen becomes untouchable during the session.`,
       },
       {
@@ -573,7 +573,7 @@ For long research papers or projects with dozens of sources, Zotero saves hours 
       },
       {
         title: `Save a source with one click`,
-        content: `Navigate to a webpage, academic article, news article, or library database entry you want to cite. Look for the Zotero Connector icon in your browser toolbar — it changes shape based on the type of page (a document icon for articles, a book for library records, a webpage icon for general sites). Click it to save the source. Zotero will automatically extract the title, author, date, and URL and add it to your library.`,
+        content: `Navigate to a webpage, academic article, news article, or library database entry you want to cite. Look for the Zotero Connector icon in your browser toolbar. It changes shape based on the type of page (a document icon for articles, a book for library records, a webpage icon for general sites). Click it to save the source. Zotero will automatically extract the title, author, date, and URL and add it to your library.`,
         tip: `Quick Tip: On JSTOR, Google Scholar, PubMed, and most university library databases, Zotero can save a source with all complete citation information including volume, issue, and page numbers. This is far more reliable than saving from a general web search.`,
       },
       {
@@ -812,7 +812,7 @@ One common question: should you use Bixby or Google Assistant? Both are availabl
     steps: [
       {
         title: `Wake up Bixby`,
-        content: `Say "Hey Bixby" out loud, or press and hold the Side key (the button on the right side of your phone) for one to two seconds. Bixby will show a colored icon at the bottom of your screen and play a chime to show it is listening. Speak your command clearly and naturally — you do not need to use specific keywords.`,
+        content: `Say "Hey Bixby" out loud, or press and hold the Side key (the button on the right side of your phone) for one to two seconds. Bixby will show a colored icon at the bottom of your screen and play a chime to show it is listening. Speak your command clearly and naturally. You do not need to use specific keywords.`,
         tip: `Quick Tip: If "Hey Bixby" wake word is not working, go to Settings → Advanced Features → Bixby → Voice Wake-Up and make sure it is turned on. You may need to train Bixby to recognize your voice by reading a few sample phrases.`,
       },
       {
@@ -849,7 +849,7 @@ One common question: should you use Bixby or Google Assistant? Both are availabl
 
 Galaxy Watches run Wear OS with Samsung's One UI Watch interface layered on top. They connect to your phone via Bluetooth and, on some models, also have their own cellular connection so they can work even when you leave your phone at home.
 
-For health tracking, the Galaxy Watch automatically detects many workouts without you needing to start them — it will notice you have been running or cycling and start tracking automatically. You can also start a workout manually from the watch by pressing the top button and selecting "Workout." Samsung Health, the companion app on your phone, stores all your health data and shows trends over time.
+For health tracking, the Galaxy Watch automatically detects many workouts without you needing to start them. It will notice you have been running or cycling and start tracking automatically. You can also start a workout manually from the watch by pressing the top button and selecting "Workout." Samsung Health, the companion app on your phone, stores all your health data and shows trends over time.
 
 The watch battery typically lasts 1 to 3 days depending on the model and how many features you use. GPS workout tracking drains the battery faster than regular use. Charging uses a wireless charging pad that comes in the box — set the watch on the pad with the screen facing up.
 
@@ -866,12 +866,12 @@ To get the full experience, you should use a Samsung Galaxy phone with the Galax
       },
       {
         title: `Customize your watch face`,
-        content: `On the watch, press and hold the watch face to enter watch face editing mode. Swipe left and right to browse available watch faces. Tap one to apply it. For more options, open the Galaxy Wearable app on your phone and tap "Watch Faces" — you can browse hundreds of faces and download new ones from the Galaxy Store. Many watch faces show health stats like heart rate, steps, and battery level directly on the face.`,
+        content: `On the watch, press and hold the watch face to enter watch face editing mode. Swipe left and right to browse available watch faces. Tap one to apply it. For more options, open the Galaxy Wearable app on your phone and tap "Watch Faces". You can browse hundreds of faces and download new ones from the Galaxy Store. Many watch faces show health stats like heart rate, steps, and battery level directly on the face.`,
         tip: `Quick Tip: Choose a watch face that shows the information you care most about right at a glance — steps, heart rate, and next calendar event are popular choices that save you from navigating into apps often.`,
       },
       {
         title: `Set up health tracking`,
-        content: `Open the Samsung Health app on your phone (it comes pre-installed on Galaxy phones). Enter your age, height, weight, and daily step goal. The app uses this information to calculate calorie burn and give accurate health insights. Your Galaxy Watch automatically tracks steps, heart rate, and sleep every day once paired — you do not need to start anything manually for basic tracking.`,
+        content: `Open the Samsung Health app on your phone (it comes pre-installed on Galaxy phones). Enter your age, height, weight, and daily step goal. The app uses this information to calculate calorie burn and give accurate health insights. Your Galaxy Watch automatically tracks steps, heart rate, and sleep every day once paired. You do not need to start anything manually for basic tracking.`,
       },
       {
         title: `Start a workout`,
@@ -925,7 +925,7 @@ These features are built into Pixel phones and require no extra apps or subscrip
       },
       {
         title: `See what song is playing with Now Playing`,
-        content: `Now Playing runs automatically in the background on Pixel phones. When a song plays near your phone (from a speaker, TV, or nearby device), the song title and artist name appear quietly on your lock screen or as an ambient display below the clock. No asking or tapping required. To see your history of identified songs, swipe up on your home screen and search for "Now Playing History" — it keeps a log of every song recognized.`,
+        content: `Now Playing runs automatically in the background on Pixel phones. When a song plays near your phone (from a speaker, TV, or nearby device), the song title and artist name appear quietly on your lock screen or as an ambient display below the clock. No asking or tapping required. To see your history of identified songs, swipe up on your home screen and search for "Now Playing History". It keeps a log of every song recognized.`,
         tip: `Quick Tip: To turn Now Playing on or off, go to Settings → Display → Lock Screen → Now Playing. It is on by default and uses only a tiny amount of battery since all processing happens on-device.`,
       },
       {

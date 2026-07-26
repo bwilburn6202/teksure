@@ -19,7 +19,7 @@ Your ability to make conference calls depends on your carrier. Most US carriers 
 
 Wi-Fi Calling, if enabled, also works for conference calls as long as everyone is connected to cellular or Wi-Fi.
 
-Note that conference calls using the Phone app are not encrypted like FaceTime calls — they use the standard phone network. For private conversations, use FaceTime Group Calls or Zoom instead.`,
+Note that conference calls using the Phone app are not encrypted like FaceTime calls. They use the standard phone network. For private conversations, use FaceTime Group Calls or Zoom instead.`,
     steps: [
       {
         title: `Start Your First Call`,
@@ -55,7 +55,7 @@ Note that conference calls using the Phone app are not encrypted like FaceTime c
     thumbnailEmoji: ``,
     publishedAt: `2026-04-19`,
     difficulty: `Beginner`,
-    body: `Making a three-way conference call on Android works similarly to iPhone — you call the first person, add a second call, and then merge them together. The feature is built into the standard Phone app and works on Samsung, Google Pixel, Motorola, and most other Android phones.
+    body: `Making a three-way conference call on Android works similarly to iPhone. You call the first person, add a second call, and then merge them together. The feature is built into the standard Phone app and works on Samsung, Google Pixel, Motorola, and most other Android phones.
 
 The exact layout of on-screen buttons varies slightly by phone brand and Android version, but the steps are the same. Look for "Add call," call person two, then find "Merge" or "Conference."
 
@@ -100,7 +100,7 @@ Samsung phones have a slightly different interface where the merge option may ap
     difficulty: `Beginner`,
     body: `Google Forms is a free tool included with every Google account that lets you create online surveys, RSVP forms, sign-up sheets, polls, quizzes, and more. You design the form, share the link, and responses are collected automatically in a spreadsheet — no paper, no tallying, no emailing back and forth.
 
-Forms are great for gathering information from groups: an RSVP for a family reunion, a potluck sign-up, a neighborhood poll, a committee survey, or a feedback form for a club or organization. Respondents do not need a Google account to fill out the form — they click the link and answer.
+Forms are great for gathering information from groups: an RSVP for a family reunion, a potluck sign-up, a neighborhood poll, a committee survey, or a feedback form for a club or organization. Respondents do not need a Google account to fill out the form. They click the link and answer.
 
 Creating a form takes about 5 minutes for a simple survey. You add questions one by one, choosing from different formats: multiple choice (pick one answer), checkboxes (pick multiple), short text, paragraph, dropdown, date, or time.
 
@@ -325,7 +325,7 @@ For outdoor night scenes like city streets, restaurant lighting, or holiday ligh
     difficulty: `Beginner`,
     body: `Two of the most useful but often overlooked iPhone camera features are the self-timer and Burst Mode.
 
-The self-timer delays the shutter — you tap the button and the camera counts down 3 or 10 seconds before taking the photo. This gives you time to set the phone down on a surface or tripod, walk into the frame, and be in the photo yourself. It is also useful for reducing camera shake: prop the phone up, set a 3-second timer, and let the vibration from tapping settle before the shot fires.
+The self-timer delays the shutter. You tap the button and the camera counts down 3 or 10 seconds before taking the photo. This gives you time to set the phone down on a surface or tripod, walk into the frame, and be in the photo yourself. It is also useful for reducing camera shake: prop the phone up, set a 3-second timer, and let the vibration from tapping settle before the shot fires.
 
 Burst Mode takes a rapid series of photos — typically 10 per second — as long as you hold the shutter button. This is excellent for action shots (kids at play, sports, pets chasing toys) where a single tap might miss the exact moment. After shooting, you pick the best frame from the burst.
 
@@ -574,7 +574,7 @@ Smart Lock does not replace a strong lock screen — it works alongside it. You 
   {
     slug: `iphone-flashlight-guide`,
     title: `How to Use the iPhone Flashlight and Make It Brighter`,
-    excerpt: `Your iPhone's flashlight is more powerful than most people realize — you can turn it on instantly from the lock screen and adjust the brightness. Here is everything you need to know.`,
+    excerpt: `Your iPhone's flashlight is more powerful than most people realize. You can turn it on instantly from the lock screen and adjust the brightness. Here is everything you need to know.`,
     category: `tips-tricks`,
     tags: [`iphone`, `flashlight`, `torch`, `control center`, `brightness`, `tips`],
     readTime: `3 min`,
@@ -678,11 +678,11 @@ Alarm volume is separate and set through the Clock app, not through the side but
       },
       {
         title: `Adjust Media Volume`,
-        content: `While music or a video is playing, press the Volume Up or Volume Down buttons — they now control Media Volume. You can also drag the volume slider in the music player or video player on screen. Media volume is separate from ringer volume. So you can have loud music but a quiet ringtone.`,
+        content: `While music or a video is playing, press the Volume Up or Volume Down buttons. They now control Media Volume. You can also drag the volume slider in the music player or video player on screen. Media volume is separate from ringer volume. So you can have loud music but a quiet ringtone.`,
       },
       {
         title: `Adjust Alarm Volume`,
-        content: `Alarm volume in the Clock app does not respond to the volume buttons — it has its own setting. Go to Settings → Sounds & Haptics. Look for the "Ringer and Alerts" slider at the top. This controls both ringtone AND alarm volume in the same setting. Drag it to set how loud alarms will be.`,
+        content: `Alarm volume in the Clock app does not respond to the volume buttons. It has its own setting. Go to Settings → Sounds & Haptics. Look for the "Ringer and Alerts" slider at the top. This controls both ringtone AND alarm volume in the same setting. Drag it to set how loud alarms will be.`,
         warning: `The Mute Switch (silent mode) does NOT mute alarms. Alarms always play at the volume set in Sounds & Haptics, even in silent mode. This is by design. If you want a completely silent night, set the alarm volume low or use the "Bedtime" feature in Health/Clock which has its own gentle alarm.`,
       },
       {
@@ -734,7 +734,7 @@ You can even scroll through multi-page PDFs or use arrow keys to browse through 
       },
       {
         title: `Close Quick Look`,
-        content: `Press the Space bar again to close the preview window, or press Escape. Quick Look closes instantly. No app was opened, no file was modified — you are right back in Finder where you started.`,
+        content: `Press the Space bar again to close the preview window, or press Escape. Quick Look closes instantly. No app was opened, no file was modified. You are right back in Finder where you started.`,
         tip: `Quick Tip: From Quick Look, you can open the file in its default app by clicking the "Open with [App Name]" button at the top-right of the Quick Look window — so Quick Look becomes a preview-first approach before committing to opening an app.`,
       },
     ],

@@ -97,7 +97,7 @@ Source: Apple Support — Camera tips (support.apple.com) and Google Support —
       },
       {
         title: 'Walk closer rather than pinching to zoom',
-        content: 'Pinching the screen to zoom in makes photos look blurry and grainy because it stretches the image digitally. If you need to get closer, walk toward your subject. If your phone has numbered zoom buttons near the shutter (0.5, 1x, 2x), you can use those — they switch to a real lens and stay sharp.',
+        content: 'Pinching the screen to zoom in makes photos look blurry and grainy because it stretches the image digitally. If you need to get closer, walk toward your subject. If your phone has numbered zoom buttons near the shutter (0.5, 1x, 2x), you can use those. They switch to a real lens and stay sharp.',
       },
       {
         title: 'Take three or four shots and choose the best one',
@@ -151,7 +151,7 @@ If you are worried about accidental purchases, you can turn on a "require passwo
 
 **How to read ratings and reviews before installing**
 
-Every app in the store has a star rating from 1 to 5, along with written reviews from people who have already downloaded it. A rating of 4 stars or higher with many reviews (hundreds or thousands) is a good sign. Read a few of the most recent reviews — they will tell you if the app has problems that developed recently.
+Every app in the store has a star rating from 1 to 5, along with written reviews from people who have already downloaded it. A rating of 4 stars or higher with many reviews (hundreds or thousands) is a good sign. Read a few of the most recent reviews. They will tell you if the app has problems that developed recently.
 
 Pay attention to the number of reviews, not the star rating alone. An app with five stars but only two reviews does not tell you much. An app with 4.2 stars and 50,000 reviews is a much more reliable signal.
 
@@ -194,7 +194,7 @@ Source: Apple Support — App Store (support.apple.com/apps) and Google Support 
       },
       {
         title: 'Remove apps you no longer want',
-        content: 'Unused apps take up storage space and sometimes run in the background. To delete on iPhone: press and hold the app icon until a small menu appears, then tap "Remove App," then "Delete App." On Android: press and hold the app icon, then drag it to the "Uninstall" option that appears, or tap the X that appears over the icon. Deleting a free app is permanent but costs nothing — you can always reinstall it from the store later.',
+        content: 'Unused apps take up storage space and sometimes run in the background. To delete on iPhone: press and hold the app icon until a small menu appears, then tap "Remove App," then "Delete App." On Android: press and hold the app icon, then drag it to the "Uninstall" option that appears, or tap the X that appears over the icon. Deleting a free app is permanent but costs nothing. You can always reinstall it from the store later.',
       },
     ],
   },
@@ -246,7 +246,7 @@ If you answer "no" to any of these, treat the email as suspicious.
 
 **Using Gmail's built-in Unsubscribe button**
 
-If you use Gmail (Google's email service, which you access at gmail.com or through the Gmail app), look at the top of the email right below the sender's name. For many marketing emails, Gmail will show a small gray "Unsubscribe" link directly in that area — you do not need to scroll to the bottom. Tapping that link sends an unsubscribe request through Gmail's own system, which is safer than clicking a link inside the email itself. Look for this option first before scrolling to the bottom.
+If you use Gmail (Google's email service, which you access at gmail.com or through the Gmail app), look at the top of the email right below the sender's name. For many marketing emails, Gmail will show a small gray "Unsubscribe" link directly in that area. You do not need to scroll to the bottom. Tapping that link sends an unsubscribe request through Gmail's own system, which is safer than clicking a link inside the email itself. Look for this option first before scrolling to the bottom.
 
 **Finding and using the unsubscribe link at the bottom**
 
@@ -369,16 +369,16 @@ Source: Consumer Reports — TV Buying Guide (consumerreports.org) and Samsung S
       },
       {
         title: 'Connect your cable box, streaming device, or antenna using HDMI',
-        content: 'HDMI is a flat, slightly wider-than-a-USB connector. If you have a cable or satellite box, plug one end of an HDMI cable into the back of that box and the other end into an HDMI port on the back or side of the TV. The HDMI ports are labeled HDMI 1, HDMI 2, etc. Remember which number you plugged into — you will need to switch the TV\'s input to that number later. If you have a Roku stick, Amazon Fire Stick, or Google Chromecast, plug it into any open HDMI port.',
-        tip: 'Quick Tip: Most TVs include one HDMI cable in the box. If yours did not, any standard HDMI cable from a hardware store works — you do not need an expensive brand.',
+        content: 'HDMI is a flat, slightly wider-than-a-USB connector. If you have a cable or satellite box, plug one end of an HDMI cable into the back of that box and the other end into an HDMI port on the back or side of the TV. The HDMI ports are labeled HDMI 1, HDMI 2, etc. Remember which number you plugged into. You will need to switch the TV\'s input to that number later. If you have a Roku stick, Amazon Fire Stick, or Google Chromecast, plug it into any open HDMI port.',
+        tip: 'Quick Tip: Most TVs include one HDMI cable in the box. If yours did not, any standard HDMI cable from a hardware store works. You do not need an expensive brand.',
       },
       {
         title: 'Plug in the power cord and turn on the TV',
-        content: 'Plug the power cord into the back of the TV and then into the wall. Press the power button on the remote — it is usually the button at the very top. The TV will show a startup screen and then begin the setup wizard. If the remote came with batteries already installed, it should work right away. If not, open the battery compartment on the back of the remote and insert the AA or AAA batteries that came in the box, matching the + and - ends to the diagram inside.',
+        content: 'Plug the power cord into the back of the TV and then into the wall. Press the power button on the remote. It is usually the button at the very top. The TV will show a startup screen and then begin the setup wizard. If the remote came with batteries already installed, it should work right away. If not, open the battery compartment on the back of the remote and insert the AA or AAA batteries that came in the box, matching the + and - ends to the diagram inside.',
       },
       {
         title: 'Follow the on-screen setup wizard',
-        content: 'The setup wizard will appear automatically and guide you through the initial steps: selecting your language, choosing your country (United States), and confirming your time zone. Use the arrow buttons on the remote to move between options and press OK or Enter to confirm each one. Take it one screen at a time — there is no time pressure.',
+        content: 'The setup wizard will appear automatically and guide you through the initial steps: selecting your language, choosing your country (United States), and confirming your time zone. Use the arrow buttons on the remote to move between options and press OK or Enter to confirm each one. Take it one screen at a time. There is no time pressure.',
         tip: 'Quick Tip: Write down each answer you select so you can remember your choices if you need to redo the setup later.',
       },
       {

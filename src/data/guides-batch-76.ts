@@ -114,7 +114,7 @@ CuriosityStream works on smart TVs, Roku, Amazon Fire Stick, Apple TV, iPhone, A
 
 One feature worth knowing about: CuriosityStream partners with another service called Nebula, a platform created by educational YouTube creators. Some bundle offers include access to both CuriosityStream and Nebula together at a discounted rate. If you enjoy thoughtful video essays and educational content from YouTube channels, this bundle is worth considering.
 
-The browse experience is excellent — you can filter by topic, length, difficulty level, and whether a title is suitable for kids or adults. The library includes both short films under 20 minutes and full feature-length documentaries.`,
+The browse experience is excellent. You can filter by topic, length, difficulty level, and whether a title is suitable for kids or adults. The library includes both short films under 20 minutes and full feature-length documentaries.`,
     steps: [
       {
         title: `Visit CuriosityStream.com`,
@@ -158,7 +158,7 @@ Shudder costs around $5.99 per month or $56.99 per year. There is a free trial a
 
 Shudder works on smart TVs, Roku, Amazon Fire Stick, Apple TV, iPhone, Android, and web browsers. The interface is dark-themed to match the genre and is straightforward to navigate.
 
-The content is rated mostly TV-MA and R — it is not intended for young children. If you are sharing an account with others, be aware that the content is aimed at adult audiences.
+The content is rated mostly TV-MA and R. It is not intended for young children. If you are sharing an account with others, be aware that the content is aimed at adult audiences.
 
 One standout feature is Shudder TV, a free 24/7 streaming channel available inside the app. It plays horror movies in a scheduled format — like watching a cable channel — which is a nice option if you don't want to spend time choosing what to watch and prefer something already playing.`,
     steps: [
@@ -363,7 +363,7 @@ If you're unsure whether MasterClass is right for you, look for occasional promo
       },
       {
         title: `Start a course and track your progress`,
-        content: `Tap any course to see the instructor introduction and lesson list. Start with the first lesson — it usually sets the context for everything that follows. The app tracks which lessons you've completed so you can easily see where you left off. There is no time limit. You can take as long as you like to finish a course.`,
+        content: `Tap any course to see the instructor introduction and lesson list. Start with the first lesson. It usually sets the context for everything that follows. The app tracks which lessons you've completed so you can easily see where you left off. There is no time limit. You can take as long as you like to finish a course.`,
       },
       {
         title: `Download and use the course workbook`,
@@ -404,7 +404,7 @@ If you have a creative hobby you've wanted to develop — or a professional skil
       },
       {
         title: `Watch at your own pace`,
-        content: `There are no scheduled class times — you watch whenever you want. Tap the first lesson to begin. Video lessons are typically 3 to 15 minutes each. You can pause, rewind, and watch any lesson as many times as you need. Your progress is saved automatically so you can return to exactly where you left off.`,
+        content: `There are no scheduled class times. You watch whenever you want. Tap the first lesson to begin. Video lessons are typically 3 to 15 minutes each. You can pause, rewind, and watch any lesson as many times as you need. Your progress is saved automatically so you can return to exactly where you left off.`,
         tip: `Quick Tip: Many Skillshare lessons include downloadable project files, templates, or reference materials. Check the "Projects & Resources" tab on the class page to download anything the instructor provides.`,
       },
       {
@@ -441,7 +441,7 @@ Udemy is available on iPhone, Android, and in any web browser. The mobile app al
     steps: [
       {
         title: `Create a free Udemy account`,
-        content: `Go to udemy.com and click "Sign Up." Create a free account with your email or sign in with a Google or Facebook account. Creating an account is free — you only pay when you buy a specific course. Having an account also lets you access free courses and wishlist paid courses you want to buy later.`,
+        content: `Go to udemy.com and click "Sign Up." Create a free account with your email or sign in with a Google or Facebook account. Creating an account is free. You only pay when you buy a specific course. Having an account also lets you access free courses and wishlist paid courses you want to buy later.`,
       },
       {
         title: `Search for courses on your topic`,
@@ -451,7 +451,7 @@ Udemy is available on iPhone, Android, and in any web browser. The mobile app al
       {
         title: `Read reviews and watch free preview lessons`,
         content: `Every course page includes student reviews — read several, including the critical ones, to get a balanced picture. Click "Preview This Course" to watch a few free lessons before purchasing. This gives you a sense of the instructor's teaching style and whether the content matches what you're looking for.`,
-        warning: `Wait for a Udemy sale before buying at full price. Udemy runs frequent sitewide sales — you can sign up for email notifications or check back in a few days. Courses almost never sell at their listed "original" price.`,
+        warning: `Wait for a Udemy sale before buying at full price. Udemy runs frequent sitewide sales. You can sign up for email notifications or check back in a few days. Courses almost never sell at their listed "original" price.`,
       },
       {
         title: `Purchase and start your course`,
@@ -668,7 +668,7 @@ The free plan on WordPress.com gives you a website at an address like yourname.w
 
 WordPress.com is well suited for personal blogs, family updates, hobbyist websites, memorial pages, church or community group sites, and small organizations sharing news and information. It handles photo galleries, written posts, pages, and embedded videos.
 
-The interface uses a visual block editor — you add content by inserting blocks, similar to stacking building blocks. There is a block for text, one for photos, one for video, one for quotes, and many others. You don't need to know any code.
+The interface uses a visual block editor. You add content by inserting blocks, similar to stacking building blocks. There is a block for text, one for photos, one for video, one for quotes, and many others. You don't need to know any code.
 
 Setting up a new site takes about 20 minutes from start to your first published post.`,
     steps: [
@@ -772,7 +772,7 @@ Wix has an extensive help center, tutorial videos, and a community forum where y
       {
         title: `Choose how to create your site`,
         content: `Wix offers two options: use Wix ADI (the AI website builder) which creates a personalized site after answering a few questions, or choose a template yourself and edit it manually. For most beginners, Wix ADI is the faster and less overwhelming option. For people who want complete control over the starting design, browsing templates is better.`,
-        tip: `Quick Tip: If you try one approach and don't like the result, you can always start over. Wix doesn't lock you into a design choice — you can create a fresh site at any time from your account dashboard.`,
+        tip: `Quick Tip: If you try one approach and don't like the result, you can always start over. Wix doesn't lock you into a design choice. You can create a fresh site at any time from your account dashboard.`,
       },
       {
         title: `Edit your site in the drag-and-drop editor`,
@@ -899,7 +899,7 @@ One-page sites are surprisingly effective for many purposes: a personal introduc
 
 Carrd is free for up to three published sites. The free plan includes a good selection of templates and covers most basic needs. A paid "Pro" plan at $19 per year (not per month — per year) adds custom domains, form submissions, more templates, and the ability to publish more than three sites. At that price, the paid plan is exceptional value for what it offers.
 
-Building a Carrd site requires no account to start — you can create a site and preview it before signing up. This is a great way to test the tool risk-free.
+Building a Carrd site requires no account to start. You can create a site and preview it before signing up. This is a great way to test the tool risk-free.
 
 Templates are minimalist and modern. Carrd doesn't try to do everything. It focuses on doing one thing — a single page — very well. The editing experience is cleaner and faster than most full website builders. Most people have a finished, published site within 20 to 30 minutes of opening Carrd for the first time.
 
@@ -907,12 +907,12 @@ Carrd sites are mobile-responsive by default, meaning they look good on phone sc
     steps: [
       {
         title: `Go to carrd.co and start building`,
-        content: `Open your browser and go to carrd.co. Click "Build Your Own" or "Start For Free." You don't need to create an account yet — you can build your site first and sign up when you're ready to publish it. Browse the template categories (Profile, Portfolio, Landing Page, etc.) and click one to open it in the editor.`,
+        content: `Open your browser and go to carrd.co. Click "Build Your Own" or "Start For Free." You don't need to create an account yet. You can build your site first and sign up when you're ready to publish it. Browse the template categories (Profile, Portfolio, Landing Page, etc.) and click one to open it in the editor.`,
         tip: `Quick Tip: The "Profile" templates are great for personal introduction pages. The "Landing Page" templates work well for business or product pages. Both styles are included in the free plan.`,
       },
       {
         title: `Edit text and images in the template`,
-        content: `Click on any text element to select it and type your own content. Click on images to replace them with your own photos — you can upload images from your computer or use a provided URL. Work through each section of the template from top to bottom, replacing all placeholder content with your own information.`,
+        content: `Click on any text element to select it and type your own content. Click on images to replace them with your own photos. You can upload images from your computer or use a provided URL. Work through each section of the template from top to bottom, replacing all placeholder content with your own information.`,
       },
       {
         title: `Add or remove sections`,

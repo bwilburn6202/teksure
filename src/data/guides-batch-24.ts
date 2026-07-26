@@ -23,7 +23,7 @@ If the picture looks washed out or too bright, the factory settings are rarely i
 
 Your Samsung TV can mirror your phone screen through a feature called Smart View (Samsung phones) or Screen Mirroring (other Android phones). This lets you show family photos or videos on the big screen without any cables.
 
-The Universal Guide gathers recommendations from all your apps in one place. Look for it on the Home screen — it learns your preferences over time and surfaces content you might enjoy.`,
+The Universal Guide gathers recommendations from all your apps in one place. Look for it on the Home screen. It learns your preferences over time and surfaces content you might enjoy.`,
     steps: [
       {
         title: 'Find the Home Screen and Smart Hub',
@@ -176,7 +176,7 @@ This feature works the same way whether you are using Gmail on a computer, iPhon
       {
         title: 'Pick a Time to Send',
         content: 'Gmail shows suggestions like "Tomorrow morning (8:00 AM)" or "Tomorrow afternoon (1:00 PM)." To choose a specific date and time, tap "Pick date & time" at the bottom of the list. Select your date, set the hour and minute, then tap "Schedule send."',
-        tip: 'Gmail uses your local time zone automatically — you do not need to do any time zone math.',
+        tip: 'Gmail uses your local time zone automatically. You do not need to do any time zone math.',
       },
       {
         title: 'Confirm the Email Is Scheduled',
@@ -244,7 +244,7 @@ Many people wait until they buy a new phone to think about contacts backup, and 
     thumbnailEmoji: '',
     publishedAt: '2026-04-19',
     difficulty: 'Beginner',
-    body: `Microsoft Copilot is an AI assistant built directly into Windows 11. You do not need to download anything or sign up for a new service — it is already on your computer if you have Windows 11 with recent updates. Press the Copilot button on your taskbar (it looks like a colorful swirl icon) and a panel opens on the right side of your screen where you can type questions and get instant, helpful responses.
+    body: `Microsoft Copilot is an AI assistant built directly into Windows 11. You do not need to download anything or sign up for a new service. It is already on your computer if you have Windows 11 with recent updates. Press the Copilot button on your taskbar (it looks like a colorful swirl icon) and a panel opens on the right side of your screen where you can type questions and get instant, helpful responses.
 
 Copilot is powered by the same technology that runs Bing Chat and is based on large language models. It can answer general knowledge questions, help you write a letter or email, explain a confusing bill, summarize long documents, and even control some Windows settings like turning on Dark Mode or adjusting your screen brightness.
 
@@ -256,7 +256,7 @@ Copilot is included for free with Windows 11 and works best with a Microsoft acc
     steps: [
       {
         title: 'Open Copilot',
-        content: 'Look for the Copilot icon on your taskbar — it looks like a colorful circular design. Click it to open the Copilot panel on the right side of your screen. If you do not see it, go to Settings → Personalization → Taskbar and make sure Copilot is toggled on.',
+        content: 'Look for the Copilot icon on your taskbar. It looks like a colorful circular design. Click it to open the Copilot panel on the right side of your screen. If you do not see it, go to Settings → Personalization → Taskbar and make sure Copilot is toggled on.',
         tip: 'You can also open Copilot by pressing the Windows key + C on your keyboard.',
       },
       {
@@ -266,7 +266,7 @@ Copilot is included for free with Windows 11 and works best with a Microsoft acc
       {
         title: 'Get Help Writing',
         content: 'To draft a letter or email, ask Copilot directly: "Write a letter to my landlord asking to fix a leaking pipe" or "Help me write a thank-you note to my doctor." Copilot writes a draft. Copy and paste the text into your email or Word document and personalize it.',
-        tip: 'You can say "Make it shorter" or "Make it more formal" after Copilot writes something — it adjusts based on your feedback.',
+        tip: 'You can say "Make it shorter" or "Make it more formal" after Copilot writes something. It adjusts based on your feedback.',
       },
       {
         title: 'Change Windows Settings with Copilot',
@@ -493,7 +493,7 @@ This guide highlights the most genuinely useful free apps for seniors in 2026, o
       {
         title: 'Set Up a Medication Reminder',
         content: 'Download the "Medisafe" app from the App Store or Google Play. During setup, enter the name of each medication, the dosage, and the time you take it. Medisafe sends you a reminder notification at each scheduled time and lets you confirm when you took it.',
-        tip: 'Share your Medisafe profile with a family member or caregiver — they receive a notification if you miss a dose.',
+        tip: 'Share your Medisafe profile with a family member or caregiver. They receive a notification if you miss a dose.',
       },
       {
         title: `Install Your Hospital's Patient App`,
@@ -501,12 +501,12 @@ This guide highlights the most genuinely useful free apps for seniors in 2026, o
       },
       {
         title: 'Add a Borrow Library Books App',
-        content: 'Download the "Libby" app. Open the app and search for your local library by name or zip code. Sign in with your library card number. Browse and borrow e-books and audiobooks for free — they automatically return when the loan period ends, no late fees ever.',
+        content: 'Download the "Libby" app. Open the app and search for your local library by name or zip code. Sign in with your library card number. Browse and borrow e-books and audiobooks for free. They automatically return when the loan period ends, no late fees ever.',
         tip: 'No library card? Visit your local library with a photo ID to get one for free.',
       },
       {
         title: 'Install a Safety App',
-        content: 'The "Life360" app (free tier available) lets a trusted family member see your location on a map and receive a notification if you do not arrive home as expected. On Android phones, look for the "Personal Safety" app in Settings — it can detect falls and car crashes and call 911 automatically.',
+        content: 'The "Life360" app (free tier available) lets a trusted family member see your location on a map and receive a notification if you do not arrive home as expected. On Android phones, look for the "Personal Safety" app in Settings. It can detect falls and car crashes and call 911 automatically.',
       },
     ],
   },
@@ -541,7 +541,7 @@ You can also move the entire taskbar (including the Start button) back to the le
       },
       {
         title: 'Remove Apps You Do Not Want Pinned',
-        content: 'In the Pinned section of the Start Menu, right-click any app you want to remove. Click "Unpin from Start." The app is not deleted — it is still installed and available in "All apps." It just no longer shows on the first Start Menu screen.',
+        content: 'In the Pinned section of the Start Menu, right-click any app you want to remove. Click "Unpin from Start." The app is not deleted. It is still installed and available in "All apps." It just no longer shows on the first Start Menu screen.',
       },
       {
         title: 'Move the Start Button to the Left Corner',
@@ -564,7 +564,7 @@ You can also move the entire taskbar (including the Start button) back to the le
     thumbnailEmoji: '',
     publishedAt: '2026-04-19',
     difficulty: 'Beginner',
-    body: `OneDrive, Google Drive, and iCloud are all "cloud storage" services — they save copies of your files, photos, and documents on secure servers on the internet. So you can access them from any device and never lose them if your phone or computer breaks.
+    body: `OneDrive, Google Drive, and iCloud are all "cloud storage" services. They save copies of your files, photos, and documents on secure servers on the internet. So you can access them from any device and never lose them if your phone or computer breaks.
 
 All three offer a free storage tier: OneDrive gives 5 GB free, Google Drive gives 15 GB free, and iCloud gives 5 GB free. For most people, 15 GB fills up first because Google counts Gmail and Google Photos toward your Google storage. Paid plans are available from all three if you need more space.
 
@@ -578,7 +578,7 @@ The bottom line: use OneDrive if your main device is a Windows PC. Use Google Dr
     steps: [
       {
         title: 'Decide Based on Your Main Device',
-        content: 'Windows PC users: start with OneDrive — it is already built in. iPhone/iPad/Mac users: start with iCloud — it is already built in. Android users or multi-device users: Google Drive works everywhere. There is no wrong answer — you can even use more than one service.',
+        content: 'Windows PC users: start with OneDrive. It is already built in. iPhone/iPad/Mac users: start with iCloud. It is already built in. Android users or multi-device users: Google Drive works everywhere. There is no wrong answer. You can even use more than one service.',
       },
       {
         title: 'Check How Much Free Space You Have',
@@ -772,7 +772,7 @@ Edge is tightly integrated with Microsoft Copilot, which means you can ask quest
       },
       {
         title: 'Use Collections to Save and Organize Websites',
-        content: 'Click the grid icon (Collections) in the top-right toolbar — it looks like a box with dots. Click "New collection" and name it. As you browse, click the "+" button in the Collections panel to save any page to your collection. This is great for organizing research, recipes, or shopping ideas.',
+        content: 'Click the grid icon (Collections) in the top-right toolbar. It looks like a box with dots. Click "New collection" and name it. As you browse, click the "+" button in the Collections panel to save any page to your collection. This is great for organizing research, recipes, or shopping ideas.',
       },
       {
         title: 'Check for Coupons When Shopping',
@@ -809,8 +809,8 @@ Gmail filters let you automatically sort, label, or delete emails from specific 
     steps: [
       {
         title: 'Use the One-Click Unsubscribe',
-        content: `Open any marketing or newsletter email in Gmail. Look just below the sender's name — there is often a small "Unsubscribe" link in gray text. Click it. Gmail shows a confirmation — click "Unsubscribe." The company must honor this request within 10 business days by law.`,
-        tip: 'If there is no Unsubscribe link at the top, scroll to the very bottom of the email — it is almost always there in small print.',
+        content: `Open any marketing or newsletter email in Gmail. Look just below the sender's name. There is often a small "Unsubscribe" link in gray text. Click it. Gmail shows a confirmation — click "Unsubscribe." The company must honor this request within 10 business days by law.`,
+        tip: 'If there is no Unsubscribe link at the top, scroll to the very bottom of the email. It is almost always there in small print.',
       },
       {
         title: 'Mark Suspicious Emails as Spam',
@@ -819,12 +819,12 @@ Gmail filters let you automatically sort, label, or delete emails from specific 
       },
       {
         title: 'Block a Specific Sender',
-        content: 'Open an email from someone you never want to hear from again. Click the three-dot menu in the top right. Select "Block [sender name]." All future emails from that address go directly to your Spam folder — they will never reach your inbox.',
+        content: 'Open an email from someone you never want to hear from again. Click the three-dot menu in the top right. Select "Block [sender name]." All future emails from that address go directly to your Spam folder. They will never reach your inbox.',
       },
       {
         title: 'Create a Filter to Automatically Sort Emails',
         content: `In Gmail, click the search bar at the top and click "Show search options" (the sliders icon). Enter the sender's email address or a keyword in the "From" or "Has the words" field. Click "Create filter." Choose an action: Skip inbox, Mark as read, Delete it, or Label it. Click "Create filter."`,
-        tip: 'Filters run on future emails — they do not apply retroactively to existing emails in your inbox.',
+        tip: 'Filters run on future emails. They do not apply retroactively to existing emails in your inbox.',
       },
       {
         title: 'Check Your Spam Folder Monthly',
@@ -936,11 +936,11 @@ If you are not sure whether your contacts are backed up, the safest thing to do 
     difficulty: 'Beginner',
     body: `Smart TVs are essentially large computers with television screens. In addition to live TV, they run apps — Netflix, Hulu, Disney+, Peacock, YouTube, Spotify, and hundreds of others. Each TV brand has its own app store where you can add, remove, and manage apps.
 
-The app stores on smart TVs work similarly to the app store on your phone. You search for an app by name, select it, and install it. Most apps are free to download — you may need an account and subscription to actually watch the content, but the app itself costs nothing.
+The app stores on smart TVs work similarly to the app store on your phone. You search for an app by name, select it, and install it. Most apps are free to download. You may need an account and subscription to actually watch the content, but the app itself costs nothing.
 
 The main smart TV brands each have a slightly different interface, but the overall process is the same. Samsung smart TVs run Tizen OS. LG runs webOS. Vizio runs SmartCast. TCL and Hisense often run Roku TV or Google TV. Knowing which operating system your TV uses helps you find the right instructions.
 
-A common situation: you subscribe to a new streaming service on your phone but cannot find it on your TV. The service is not there because it is not installed yet — you need to go to your TV's app store and add it. This guide walks you through the process for the most popular TV platforms.
+A common situation: you subscribe to a new streaming service on your phone but cannot find it on your TV. The service is not there because it is not installed yet. You need to go to your TV's app store and add it. This guide walks you through the process for the most popular TV platforms.
 
 Once an app is installed, it stays on your TV unless you remove it. You do not need to reinstall apps after unplugging or restarting your TV. App settings and your logged-in account information are also saved.`,
     steps: [

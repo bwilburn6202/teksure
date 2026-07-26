@@ -57,7 +57,7 @@ Planta is available on iPhone (App Store) and Android (Google Play). The app fro
     thumbnailEmoji: ``,
     publishedAt: `2026-04-20`,
     difficulty: `Beginner`,
-    body: `Greg is a plant care app that does something most others do not — it learns from your behavior and your home's conditions over time. Instead of giving you a fixed watering schedule, Greg uses information about your location, the humidity in your home, and how your plants have responded to previous care to fine-tune reminders that actually match your plants' real needs.
+    body: `Greg is a plant care app that does something most others do not. It learns from your behavior and your home's conditions over time. Instead of giving you a fixed watering schedule, Greg uses information about your location, the humidity in your home, and how your plants have responded to previous care to fine-tune reminders that actually match your plants' real needs.
 
 The app is designed for plant owners of all experience levels. If you are brand new to houseplants, Greg will teach you what each plant needs in simple terms. If you already know your way around a fiddle-leaf fig, Greg's community features let you connect with other enthusiasts, share progress photos, and get advice from people who have grown the same species.
 
@@ -110,7 +110,7 @@ All About Birds works well on any smartphone browser and is also integrated with
     steps: [
       {
         title: `Visit allaboutbirds.org or download the app`,
-        content: `You can access All About Birds at allaboutbirds.org in any web browser — it works well on phones, tablets, and computers. The Cornell Lab also has the Merlin Bird ID app (covered in a separate guide) that connects with the same species database. For desktop research and deep dives into a species, the website is the most complete experience.`,
+        content: `You can access All About Birds at allaboutbirds.org in any web browser. It works well on phones, tablets, and computers. The Cornell Lab also has the Merlin Bird ID app (covered in a separate guide) that connects with the same species database. For desktop research and deep dives into a species, the website is the most complete experience.`,
         tip: `Quick Tip: Bookmark allaboutbirds.org on your phone's home screen for quick access. Open your browser, go to the site, tap the Share button, and choose "Add to Home Screen."`,
       },
       {
@@ -144,7 +144,7 @@ All About Birds works well on any smartphone browser and is also integrated with
     difficulty: `Beginner`,
     body: `eBird is a free platform created by the Cornell Lab of Ornithology that lets anyone record bird sightings and share them with a global database used by scientists, conservationists, and bird enthusiasts around the world. When you log a bird you have seen, you are contributing to real research that helps track population trends, migration patterns, and the effects of climate change on bird species.
 
-But eBird is not just for scientists — it is also a practical tool for birders of every level. You can look up what birds have been seen near your home, at a park you are visiting, or along a trail you plan to hike. The "Explore" feature shows you a live map of recent sightings in your area. And you can filter by species to find out if that rare warbler someone mentioned has been spotted nearby.
+But eBird is not just for scientists. It is also a practical tool for birders of every level. You can look up what birds have been seen near your home, at a park you are visiting, or along a trail you plan to hike. The "Explore" feature shows you a live map of recent sightings in your area. And you can filter by species to find out if that rare warbler someone mentioned has been spotted nearby.
 
 eBird is available as a website at ebird.org and as a free smartphone app for iPhone and Android. The app is particularly useful for logging birds while you are out in the field. You select your location, record the birds you see and how many, and submit the checklist. The whole process takes just a few minutes.
 
@@ -365,7 +365,7 @@ Full Moons are often bright enough to cast shadows and are popular for outdoor n
     steps: [
       {
         title: `Choose a moon phase app or website`,
-        content: `For a no-installation option, visit aa.usno.navy.mil/moon/phases in any browser. The US Naval Observatory site shows the exact dates and times of all four major phases for any year. For a richer visual experience on your phone, search for "Moon Phase" in the App Store or Google Play and download one of the top-rated free apps. Look for apps with good reviews and simple interfaces — you do not need anything complicated.`,
+        content: `For a no-installation option, visit aa.usno.navy.mil/moon/phases in any browser. The US Naval Observatory site shows the exact dates and times of all four major phases for any year. For a richer visual experience on your phone, search for "Moon Phase" in the App Store or Google Play and download one of the top-rated free apps. Look for apps with good reviews and simple interfaces. You do not need anything complicated.`,
         tip: `Quick Tip: Many weather apps, including Apple Weather and Google Weather, show the current moon phase in their daily forecast. Check your existing weather app before downloading a new one.`,
       },
       {
@@ -545,7 +545,7 @@ Understanding your specific allergens matters. If you are allergic to tree polle
       },
       {
         title: `Track how pollen affects you personally`,
-        content: `Some allergy apps include a symptom diary feature where you log how you feel each day alongside the pollen data. Over several weeks, patterns emerge — you might notice that your worst days always correspond to high grass pollen, even when tree pollen is also elevated. This kind of tracking helps you and your doctor understand your specific triggers and adjust treatment accordingly.`,
+        content: `Some allergy apps include a symptom diary feature where you log how you feel each day alongside the pollen data. Over several weeks, patterns emerge. You might notice that your worst days always correspond to high grass pollen, even when tree pollen is also elevated. This kind of tracking helps you and your doctor understand your specific triggers and adjust treatment accordingly.`,
         tip: `Quick Tip: Keep windows closed and use air conditioning on high-pollen days. Pollen is light and travels easily through open windows. Showering and changing clothes after spending time outside removes pollen from your hair and skin before it can cause additional exposure indoors.`,
       },
       {
@@ -566,7 +566,7 @@ Understanding your specific allergens matters. If you are allergic to tree polle
     difficulty: `Beginner`,
     body: `Atlantic hurricane season runs from June 1 through November 30, though storms can form outside those dates. For the roughly 60 million Americans living along the Gulf Coast, Atlantic Coast, and in vulnerable inland areas, having a digital preparedness plan in place well before any storm threatens can make the difference between an organized, safe response and a chaotic scramble under pressure.
 
-The best hurricane preparedness apps are not storm-tracking tools you use only during an active hurricane — they are year-round resources for building your preparedness plan, knowing your evacuation zone, and receiving official alerts in real time. Start using them now, before storm season begins.
+The best hurricane preparedness apps are not storm-tracking tools you use only during an active hurricane. They are year-round resources for building your preparedness plan, knowing your evacuation zone, and receiving official alerts in real time. Start using them now, before storm season begins.
 
 The three most useful free tools for hurricane preparedness are the Red Cross Emergency app, the FEMA app, and the National Hurricane Center website at nhc.noaa.gov. Each serves a different purpose: the Red Cross app covers preparedness checklists and shelter locations; the FEMA app sends official emergency alerts and helps you apply for disaster help; and the National Hurricane Center provides the most accurate and authoritative storm tracking, forecasts, and maps directly from NOAA meteorologists.
 
@@ -711,7 +711,7 @@ Before you go on any hike — especially your first one — it is worth spending
       },
       {
         title: `Read the trail page before you go`,
-        content: `Tap any trail to open its full profile. Read the difficulty rating, the distance, and the elevation profile graph — the graph shows you how much the trail goes up and down. Scroll through recent reviews from other hikers to see current conditions: Is the trail muddy? Are there stream crossings? Is the parking area crowded? Look at the photos hikers have uploaded — they give you a realistic sense of what to expect on the ground.`,
+        content: `Tap any trail to open its full profile. Read the difficulty rating, the distance, and the elevation profile graph — the graph shows you how much the trail goes up and down. Scroll through recent reviews from other hikers to see current conditions: Is the trail muddy? Are there stream crossings? Is the parking area crowded? Look at the photos hikers have uploaded. They give you a realistic sense of what to expect on the ground.`,
         warning: `Check the trail conditions tab for closures or seasonal warnings. Some trails close during winter or wet seasons to prevent erosion damage. Arriving at a closed trailhead wastes your trip and sometimes results in a fine.`,
       },
       {
@@ -793,7 +793,7 @@ The app is developed by Outside Inc. and is available for iPhone and Android. It
       },
       {
         title: `Download maps before you leave home`,
-        content: `This step is essential and must be done while you have Wi-Fi or a strong cell signal — you cannot download maps once you are in the backcountry. In Gaia GPS, navigate to your planned hiking area on the map screen, then tap the download icon (cloud with arrow pointing down). The app asks you to select a region size and map source. Download the USGS topographic layer if you have premium, or the available free layers for your area. Allow the download to complete fully before leaving.`,
+        content: `This step is essential and must be done while you have Wi-Fi or a strong cell signal. You cannot download maps once you are in the backcountry. In Gaia GPS, navigate to your planned hiking area on the map screen, then tap the download icon (cloud with arrow pointing down). The app asks you to select a region size and map source. Download the USGS topographic layer if you have premium, or the available free layers for your area. Allow the download to complete fully before leaving.`,
         warning: `Do not assume you have downloaded maps until you check offline mode. Go to Settings and toggle off your phone's cellular data, then return to the Gaia GPS map and confirm your area loads. This confirms the download worked before you depend on it.`,
       },
       {

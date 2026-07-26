@@ -63,7 +63,7 @@ export const guidesBatch259: Guide[] = [
       },
       {
         title: "Use the 60-day special enrollment window on healthcare.gov",
-        content: "Losing job-based coverage triggers a Special Enrollment Period of 60 days. You can apply on healthcare.gov as soon as you know your retirement date — you do not have to wait until coverage ends. Have on hand your projected income, your last day of coverage from HR, and your social security number. The application takes about 45 minutes. If you miss the 60 days, you have to wait for open enrollment in November.",
+        content: "Losing job-based coverage triggers a Special Enrollment Period of 60 days. You can apply on healthcare.gov as soon as you know your retirement date. You do not have to wait until coverage ends. Have on hand your projected income, your last day of coverage from HR, and your social security number. The application takes about 45 minutes. If you miss the 60 days, you have to wait for open enrollment in November.",
         warning: "If you skip coverage even for one month, a single hospital trip can wipe out a retirement savings account. Do not gamble on going uninsured between work and Medicare.",
       },
       {

@@ -52,7 +52,7 @@ export const guidesBatch21: Guide[] = [
     thumbnailEmoji: '',
     publishedAt: '2026-04-19',
     difficulty: 'Beginner',
-    body: `If you use an iPhone, you've probably noticed that some text messages appear in blue bubbles and others appear in green. This isn't just a color choice — it tells you whether a message was sent as an iMessage (Apple's internet-based messaging system) or a regular SMS text (the old-fashioned phone network kind).\n\nThe difference matters: iMessages are free even when traveling internationally, can be sent over Wi-Fi, support features like read receipts and typing indicators, and are end-to-end encrypted. SMS messages use your carrier's text messaging plan, don't have delivery receipts by default, and work even without Wi-Fi.\n\nUnderstanding the difference helps you know what to expect and when each type of message is being used.`,
+    body: `If you use an iPhone, you've probably noticed that some text messages appear in blue bubbles and others appear in green. This isn't just a color choice. It tells you whether a message was sent as an iMessage (Apple's internet-based messaging system) or a regular SMS text (the old-fashioned phone network kind).\n\nThe difference matters: iMessages are free even when traveling internationally, can be sent over Wi-Fi, support features like read receipts and typing indicators, and are end-to-end encrypted. SMS messages use your carrier's text messaging plan, don't have delivery receipts by default, and work even without Wi-Fi.\n\nUnderstanding the difference helps you know what to expect and when each type of message is being used.`,
     steps: [
       {
         title: 'Blue bubble = iMessage',
@@ -110,7 +110,7 @@ export const guidesBatch21: Guide[] = [
       {
         title: 'Adjust text size and lighting',
         content: 'While reading, tap the top of the screen to bring up the reading menu. Tap the "Aa" (font) button to change text size — most people find 14–18pt comfortable. Also adjust the warm light (orange tint) for evening reading to reduce eye strain. Swipe right on the brightness bar to add warmth.',
-        tip: 'Quick Tip: The Kindle Paperwhite is fully waterproof — you can read by the pool or in the bathtub without worry.',
+        tip: 'Quick Tip: The Kindle Paperwhite is fully waterproof. You can read by the pool or in the bathtub without worry.',
       },
       {
         title: 'Borrow free library books',
@@ -203,7 +203,7 @@ export const guidesBatch21: Guide[] = [
     thumbnailEmoji: '',
     publishedAt: '2026-04-19',
     difficulty: 'Beginner',
-    body: `Amazon Music is a music streaming service — it lets you listen to millions of songs without buying them individually. If you have Amazon Prime, you already have Amazon Music Prime included at no extra cost. That gives you access to a large catalog of songs in shuffle mode and a selection of playlists curated by genre, mood, or decade.\n\nFor unlimited, on-demand listening (play any song whenever you want), Amazon offers Amazon Music Unlimited for $9.99/month, or $8.99/month if you're a Prime member. There's also a free ad-supported tier for casual listening.\n\nAmazon Music works on your phone, tablet, computer, and any Amazon Echo (Alexa) speaker. Say "Alexa, play some country music" or "Alexa, play Elvis Presley" and it starts playing.`,
+    body: `Amazon Music is a music streaming service. It lets you listen to millions of songs without buying them individually. If you have Amazon Prime, you already have Amazon Music Prime included at no extra cost. That gives you access to a large catalog of songs in shuffle mode and a selection of playlists curated by genre, mood, or decade.\n\nFor unlimited, on-demand listening (play any song whenever you want), Amazon offers Amazon Music Unlimited for $9.99/month, or $8.99/month if you're a Prime member. There's also a free ad-supported tier for casual listening.\n\nAmazon Music works on your phone, tablet, computer, and any Amazon Echo (Alexa) speaker. Say "Alexa, play some country music" or "Alexa, play Elvis Presley" and it starts playing.`,
     steps: [
       {
         title: 'Download the Amazon Music app',
@@ -240,11 +240,11 @@ export const guidesBatch21: Guide[] = [
     thumbnailEmoji: '',
     publishedAt: '2026-04-19',
     difficulty: 'Beginner',
-    body: `Apple Books is a free app that comes on every iPhone and iPad — it lets you read ebooks just like you'd read on a Kindle, but without needing a separate device. Your phone or tablet becomes your reading device. The app has its own bookstore where you can buy bestsellers, find free books, and even sample a book before you buy.\n\nOne of the nicest features of Apple Books is how flexible the reading experience is. You can make text much larger, change the font, adjust the background color for nighttime reading (dark background with light text is easy on the eyes), and the app remembers exactly where you stopped reading.\n\nThousands of classic books — from Jane Austen to Mark Twain — are completely free because they're in the public domain. This is a great way to rediscover old favorites or explore literature you never had time to read.`,
+    body: `Apple Books is a free app that comes on every iPhone and iPad. It lets you read ebooks just like you'd read on a Kindle, but without needing a separate device. Your phone or tablet becomes your reading device. The app has its own bookstore where you can buy bestsellers, find free books, and even sample a book before you buy.\n\nOne of the nicest features of Apple Books is how flexible the reading experience is. You can make text much larger, change the font, adjust the background color for nighttime reading (dark background with light text is easy on the eyes), and the app remembers exactly where you stopped reading.\n\nThousands of classic books — from Jane Austen to Mark Twain — are completely free because they're in the public domain. This is a great way to rediscover old favorites or explore literature you never had time to read.`,
     steps: [
       {
         title: 'Open the Books app',
-        content: `Look for the Books app on your iPhone or iPad — it has an orange icon with a white book on it. If you don't see it, swipe down on your home screen and search "Books" to find it. Tap to open.`,
+        content: `Look for the Books app on your iPhone or iPad. It has an orange icon with a white book on it. If you don't see it, swipe down on your home screen and search "Books" to find it. Tap to open.`,
       },
       {
         title: 'Browse the bookstore',
@@ -277,11 +277,11 @@ export const guidesBatch21: Guide[] = [
     thumbnailEmoji: '',
     publishedAt: '2026-04-19',
     difficulty: 'Beginner',
-    body: `Google Play Books is Google's ebook reading app — it comes pre-installed on most Android phones and is also available on iPhone and iPad. It works like a personal library on your phone: you can buy books from Google Play, download free classic literature, upload PDF files you already own, and read everything in one app.\n\nThe reading experience is comfortable and customizable. You can set the text size as large as you need, choose from several font styles, and switch to night mode (light text on dark background) for reading in dim light. The app syncs your reading position across all your devices — start on your phone, continue on your tablet, exactly where you left off.\n\nMany people use Google Play Books alongside their library's Libby app — one for purchased books and one for free library borrows.`,
+    body: `Google Play Books is Google's ebook reading app. It comes pre-installed on most Android phones and is also available on iPhone and iPad. It works like a personal library on your phone: you can buy books from Google Play, download free classic literature, upload PDF files you already own, and read everything in one app.\n\nThe reading experience is comfortable and customizable. You can set the text size as large as you need, choose from several font styles, and switch to night mode (light text on dark background) for reading in dim light. The app syncs your reading position across all your devices — start on your phone, continue on your tablet, exactly where you left off.\n\nMany people use Google Play Books alongside their library's Libby app — one for purchased books and one for free library borrows.`,
     steps: [
       {
         title: 'Open Google Play Books',
-        content: `Look for the Google Play Books app on your Android phone — it has a blue icon with a white letter "G" and a book. If it's not installed, open the Play Store and search "Google Play Books" to install it free. Sign in with your Google account.`,
+        content: `Look for the Google Play Books app on your Android phone. It has a blue icon with a white letter "G" and a book. If it's not installed, open the Play Store and search "Google Play Books" to install it free. Sign in with your Google account.`,
       },
       {
         title: 'Browse and buy books',
@@ -385,11 +385,11 @@ export const guidesBatch21: Guide[] = [
     thumbnailEmoji: '',
     publishedAt: '2026-04-19',
     difficulty: 'Beginner',
-    body: `If you find the text on your Android phone too small, the screen too dim, or the colors hard to distinguish, you don't need a different phone — you need to adjust the settings. Android has robust accessibility features specifically designed for people with vision challenges, and most of them are turned off by default because they're not needed by everyone.\n\nChanging these settings takes about five minutes and can make your phone dramatically easier to use. You can increase text size, increase the overall display size (making everything bigger, not just text), turn on high contrast, enable color correction, or activate TalkBack (which reads everything on screen aloud).\n\nThis guide covers the most useful visual adjustments without going into highly specialized accessibility tools.`,
+    body: `If you find the text on your Android phone too small, the screen too dim, or the colors hard to distinguish, you don't need a different phone. You need to adjust the settings. Android has robust accessibility features specifically designed for people with vision challenges, and most of them are turned off by default because they're not needed by everyone.\n\nChanging these settings takes about five minutes and can make your phone dramatically easier to use. You can increase text size, increase the overall display size (making everything bigger, not just text), turn on high contrast, enable color correction, or activate TalkBack (which reads everything on screen aloud).\n\nThis guide covers the most useful visual adjustments without going into highly specialized accessibility tools.`,
     steps: [
       {
         title: 'Find Accessibility settings',
-        content: `Open the Settings app on your Android phone. Look for "Accessibility" in the list — it may be near the bottom. On Samsung Galaxy phones it's called "Accessibility." On Google Pixel phones it's under Settings > Accessibility. Tap to open.`,
+        content: `Open the Settings app on your Android phone. Look for "Accessibility" in the list. It may be near the bottom. On Samsung Galaxy phones it's called "Accessibility." On Google Pixel phones it's under Settings > Accessibility. Tap to open.`,
       },
       {
         title: 'Increase text size',
@@ -406,7 +406,7 @@ export const guidesBatch21: Guide[] = [
       },
       {
         title: 'Explore color correction and dark mode',
-        content: 'If colors are hard to distinguish, look for "Color correction" or "Color adjustment" in Accessibility settings — it can adjust for common color blindness types. Also try turning on Dark mode (Settings > Display > Dark theme) which shows white text on black backgrounds throughout the phone, many people find this much easier on the eyes.',
+        content: 'If colors are hard to distinguish, look for "Color correction" or "Color adjustment" in Accessibility settings. It can adjust for common color blindness types. Also try turning on Dark mode (Settings > Display > Dark theme) which shows white text on black backgrounds throughout the phone, many people find this much easier on the eyes.',
       },
     ],
   },
@@ -519,7 +519,7 @@ export const guidesBatch21: Guide[] = [
       {
         title: 'Call your provider if nothing helped',
         content: `Call the customer service number on your bill and tell them: "My internet has been slow/dropping for [X days]. I've restarted my modem and router and the problem continues." Ask them to check the signal levels coming into your home, run a line test, and send a technician if needed. Technician visits for service issues are typically free.`,
-        warning: `If a stranger calls you claiming to be from your internet provider and says your connection has an issue, hang up — it may be a scam. Only call the number on your bill or the provider's official website.`,
+        warning: `If a stranger calls you claiming to be from your internet provider and says your connection has an issue, hang up. It may be a scam. Only call the number on your bill or the provider's official website.`,
       },
     ],
   },
@@ -725,7 +725,7 @@ export const guidesBatch21: Guide[] = [
       {
         title: 'Try Ctrl+Alt+Delete',
         content: 'Hold Ctrl and Alt, then press Delete. This often breaks through a freeze and brings up the Windows security screen. From there, click "Task Manager." Task Manager shows all running programs and which ones are "Not Responding" (highlighted in red). Click the frozen program and click "End Task" to close it forcefully.',
-        tip: 'Quick Tip: Ctrl+Alt+Delete works even when the regular keyboard and mouse are frozen — it sends a direct signal to Windows that often breaks through.',
+        tip: 'Quick Tip: Ctrl+Alt+Delete works even when the regular keyboard and mouse are frozen. It sends a direct signal to Windows that often breaks through.',
       },
       {
         title: 'Use Task Manager to close the troublemaker',
@@ -737,7 +737,7 @@ export const guidesBatch21: Guide[] = [
       },
       {
         title: 'Hard reboot as a last resort',
-        content: 'If nothing else works, press and hold the physical power button on your computer for 5–10 seconds until it turns off. Wait 30 seconds, then press it again to turn it back on. This is the equivalent of pulling the plug — you will lose any unsaved work. But it always breaks the freeze.',
+        content: 'If nothing else works, press and hold the physical power button on your computer for 5–10 seconds until it turns off. Wait 30 seconds, then press it again to turn it back on. This is the equivalent of pulling the plug. You will lose any unsaved work. But it always breaks the freeze.',
         warning: 'Hard power-off should be used only when nothing else works. Regularly shutting down this way (rather than through Windows) can eventually cause file system errors. If your computer freezes often, it may need maintenance — see a technician or run Windows Update to install pending patches.',
       },
     ],
@@ -767,7 +767,7 @@ export const guidesBatch21: Guide[] = [
       {
         title: 'Choose your drop-off method',
         content: `Amazon will show you drop-off options near you. The most convenient options:\n- "UPS Store" — Drop off without a box or label. UPS prints the label and packages it for you, free.\n- "Kohl's" — Drop off and they pack it free.\n- "Whole Foods" — Label-free drop off.\n\nChoose one and tap "Confirm Return."`,
-        tip: 'Quick Tip: The "UPS Drop Off" with no box required is by far the most convenient option — you just walk in with the loose item, they handle everything, and you get a receipt.',
+        tip: 'Quick Tip: The "UPS Drop Off" with no box required is by far the most convenient option. You just walk in with the loose item, they handle everything, and you get a receipt.',
       },
       {
         title: 'Get your return QR code',

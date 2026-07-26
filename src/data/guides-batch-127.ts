@@ -50,7 +50,7 @@ Setting up Bill Pay takes about 10 minutes for the first bill. After that, payin
       },
       {
         title: 'Track your payments',
-        content: 'Bill Pay keeps a history of every payment you have sent. From the Bill Pay home page, click "Payment Activity" or "History" to see what was paid, when, and to whom. Match these against your monthly bank statement to confirm everything went through. If a payment shows as sent but the company says they did not receive it, contact your bank — they will trace it for you at no cost.',
+        content: 'Bill Pay keeps a history of every payment you have sent. From the Bill Pay home page, click "Payment Activity" or "History" to see what was paid, when, and to whom. Match these against your monthly bank statement to confirm everything went through. If a payment shows as sent but the company says they did not receive it, contact your bank. They will trace it for you at no cost.',
       },
     ],
   },

@@ -11,7 +11,7 @@ The current price is around $83 per month for the ad-supported plan. That includ
 
 Every Hulu + Live TV account comes with 75 hours of cloud DVR storage so you can record live games, news programs, or TV shows to watch later. You can upgrade to unlimited DVR storage for an extra fee if you record often.
 
-To get started, go to hulu.com and sign up for the Hulu + Live TV plan. Download the Hulu app on your device — it works on Roku, Amazon Fire TV, Apple TV, Samsung and LG smart TVs, Xbox, PlayStation, iPhone, iPad, and Android phones, or you can watch in any web browser.
+To get started, go to hulu.com and sign up for the Hulu + Live TV plan. Download the Hulu app on your device. It works on Roku, Amazon Fire TV, Apple TV, Samsung and LG smart TVs, Xbox, PlayStation, iPhone, iPad, and Android phones, or you can watch in any web browser.
 
 Once you are in, tap the Live TV tab to see what is airing right now across all your channels. The Guide view shows a traditional channel grid, similar to a cable TV guide. Tap any channel to start watching, or tap a future show to set a recording.
 
@@ -88,7 +88,7 @@ For sports fans on a budget who do not need local channels, Sling Orange + Sport
       },
       {
         title: `Add Optional Channel Packs`,
-        content: `After selecting your base package, you will be offered add-on packs like Sports Extra, Comedy Extra, or News Extra. You can also add individual premium channels like HBO Max or Showtime. Add only what you know you will watch — you can always add more later.`,
+        content: `After selecting your base package, you will be offered add-on packs like Sports Extra, Comedy Extra, or News Extra. You can also add individual premium channels like HBO Max or Showtime. Add only what you know you will watch. You can always add more later.`,
       },
       {
         title: `Download the Sling App`,
@@ -177,7 +177,7 @@ What Philo does well: unlimited cloud DVR with recordings stored for 12 months. 
 
 You can stream on up to three devices simultaneously, which works well for households where multiple people want to watch different shows.
 
-Signing up does not require a credit card for the free trial — you only need an email address, which makes it very low risk to try. Go to philo.com, sign up, and start watching. Download the Philo app on Roku, Amazon Fire TV, Apple TV, iPhone, Android, and most smart TVs. You can also watch in a web browser.
+Signing up does not require a credit card for the free trial. You only need an email address, which makes it very low risk to try. Go to philo.com, sign up, and start watching. Download the Philo app on Roku, Amazon Fire TV, Apple TV, iPhone, Android, and most smart TVs. You can also watch in a web browser.
 
 Cancel anytime from your account settings — no contracts, no fees.
 
@@ -265,7 +265,7 @@ Compared to Eero: Deco is generally cheaper for the same coverage area. Eero has
       },
       {
         title: `Set Up HomeShield and Guest Network`,
-        content: `In the Deco app, go to More > HomeShield to enable parental controls or device protection. Go to More > Guest Network to create a separate Wi-Fi network for visitors — they get internet access but cannot reach your personal devices like printers or smart speakers.`,
+        content: `In the Deco app, go to More > HomeShield to enable parental controls or device protection. Go to More > Guest Network to create a separate Wi-Fi network for visitors. They get internet access but cannot reach your personal devices like printers or smart speakers.`,
       },
     ],
   },
@@ -299,7 +299,7 @@ To check if your Apple ID email address has appeared in a known data breach, vis
     steps: [
       {
         title: `Verify Two-Factor Authentication Is On`,
-        content: `Open the Settings app on your iPhone or iPad. Tap your name at the top, then tap "Sign-In & Security." Look for Two-Factor Authentication — it should say "On." If it says "Off," tap it and follow the prompts to enable it. This is the single most important step.`,
+        content: `Open the Settings app on your iPhone or iPad. Tap your name at the top, then tap "Sign-In & Security." Look for Two-Factor Authentication. It should say "On." If it says "Off," tap it and follow the prompts to enable it. This is the single most important step.`,
         warning: `Without two-factor authentication, a stolen password gives a scammer full access to your iCloud account and everything in it.`,
       },
       {
@@ -313,7 +313,7 @@ To check if your Apple ID email address has appeared in a known data breach, vis
       {
         title: `Set Up a Recovery Contact`,
         content: `Go to Settings > your name > Sign-In & Security > Account Recovery. Tap "Add Recovery Contact" and choose a trusted family member or friend. If you ever get locked out of your account, they can receive a code to help you recover access.`,
-        tip: `Choose someone who is reliable and accessible — a family member or close friend you speak with regularly. They do not need to know your password — they only assist with the account recovery process.`,
+        tip: `Choose someone who is reliable and accessible — a family member or close friend you speak with regularly. They do not need to know your password. They only assist with the account recovery process.`,
       },
       {
         title: `Turn On Advanced Data Protection (Optional)`,
@@ -402,7 +402,7 @@ If you clicked a link or called a number: change your Apple ID password right aw
       {
         title: `Recognize That Apple Never Calls You First`,
         content: `If you receive a phone call claiming to be from Apple Support, know this: Apple does not make unsolicited outbound calls to customers about security issues. Hang up. If you are worried your account has a real problem, call Apple directly at 1-800-275-2273 or visit apple.com/support.`,
-        warning: `Do not call back any number left in a voicemail from "Apple Support" — it goes to scammers, not Apple.`,
+        warning: `Do not call back any number left in a voicemail from "Apple Support". It goes to scammers, not Apple.`,
       },
       {
         title: `Check the Real Email Address Before Clicking Any Link`,
@@ -662,7 +662,7 @@ Questions to ask before buying: Does it work in the shower? Is fall detection in
       },
       {
         title: `Test the System After Setup`,
-        content: `Once the system is set up, do a test call by pressing the button when you are ready. The monitoring center will answer and confirm the test — they receive test calls regularly. This confirms the device works and that you know how it feels to use it in a real situation.`,
+        content: `Once the system is set up, do a test call by pressing the button when you are ready. The monitoring center will answer and confirm the test. They receive test calls regularly. This confirms the device works and that you know how it feels to use it in a real situation.`,
       },
     ],
   },
@@ -769,7 +769,7 @@ CaringBridge is used by people going through cancer treatment, major surgeries, 
 
 To create a CaringBridge site, go to caringbridge.org on any computer, phone, or tablet. Tap "Start a Site" and create a free account with your email address and a password. You will give the site a name — usually the care recipient's name — and briefly describe the situation.
 
-Choose your privacy setting carefully. Private means only people you invite can read the site — they receive an email link and must create a free CaringBridge account to read it. This is the best option for medical updates you want to keep within a specific group. Public means anyone with the link can read without an account — easier access but less control.
+Choose your privacy setting carefully. Private means only people you invite can read the site. They receive an email link and must create a free CaringBridge account to read it. This is the best option for medical updates you want to keep within a specific group. Public means anyone with the link can read without an account — easier access but less control.
 
 Writing updates: go to your journal and tap "Post an Update." Write in plain, honest language — people appreciate knowing the real situation, even when it is hard. You do not need to make updates long. Even a few sentences saying how the day went is valuable to people who care and are wondering.
 
@@ -791,7 +791,7 @@ You can use CaringBridge for as long as the journey continues — months or year
       },
       {
         title: `Choose Your Privacy Setting`,
-        content: `After creating the site, choose between Private (only people you invite can read, they need a free account) and Public (anyone with the link can read). For medical updates about a specific person, Private is usually the better choice — it keeps sensitive health information within a trusted group.`,
+        content: `After creating the site, choose between Private (only people you invite can read, they need a free account) and Public (anyone with the link can read). For medical updates about a specific person, Private is usually the better choice. It keeps sensitive health information within a trusted group.`,
       },
       {
         title: `Write Your First Journal Update`,
@@ -822,7 +822,7 @@ To sign up, go to IRS.gov and search for "Get an IP PIN" or go directly to IRS.g
 
 Your IP PIN changes every year. The IRS mails your new PIN to your address on file each January. You can also retrieve your current year's PIN at any time by logging in to your IRS Online Account.
 
-When you file your taxes, enter your IP PIN in the designated field. If you use tax software like TurboTax, H&R Block, or FreeTaxUSA, each has a clearly labeled field for "Identity Protection PIN." If you use a tax preparer, share your IP PIN with them — they are required to include it on your return.
+When you file your taxes, enter your IP PIN in the designated field. If you use tax software like TurboTax, H&R Block, or FreeTaxUSA, each has a clearly labeled field for "Identity Protection PIN." If you use a tax preparer, share your IP PIN with them. They are required to include it on your return.
 
 Keep your IP PIN completely private. Do not share it with anyone except your authorized tax preparer. The IRS will never call you to ask for your IP PIN.
 
@@ -845,7 +845,7 @@ If you lose your IP PIN before filing: log in to your IRS Online Account at IRS.
       },
       {
         title: `Request Your IP PIN`,
-        content: `After logging in, navigate to the IP PIN section of your account. Click to request your IP PIN. The IRS will assign you a six-digit number right away. Write it down and store it securely — you will need it when you file your taxes.`,
+        content: `After logging in, navigate to the IP PIN section of your account. Click to request your IP PIN. The IRS will assign you a six-digit number right away. Write it down and store it securely. You will need it when you file your taxes.`,
         warning: `Your IP PIN is confidential. Do not share it with anyone except your authorized tax preparer. The IRS will never call or email you to ask for your IP PIN.`,
       },
       {

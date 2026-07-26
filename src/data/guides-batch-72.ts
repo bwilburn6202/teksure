@@ -57,7 +57,7 @@ When you get a new Android phone, sign in to your Google account during setup an
     thumbnailEmoji: ``,
     difficulty: `Beginner`,
     publishedAt: `2026-04-20`,
-    body: `Phones get lost, dropped in water, stolen, or eventually wear out. When that happens, the difference between losing years of photos and messages versus having them all back in an hour comes down to one thing: whether your iPhone was backed up. iCloud backup is Apple's answer to this — it runs automatically in the background and requires almost no effort once set up.
+    body: `Phones get lost, dropped in water, stolen, or eventually wear out. When that happens, the difference between losing years of photos and messages versus having them all back in an hour comes down to one thing: whether your iPhone was backed up. iCloud backup is Apple's answer to this. It runs automatically in the background and requires almost no effort once set up.
 
 iCloud backup stores a complete snapshot of your iPhone including app data, your home screen layout, device settings, iMessage and SMS message history (when iCloud Messages is off), contacts if iCloud Contacts is not separately enabled, call history, and photos and videos if iCloud Photos is not turned on separately. Each of these overlapping systems makes sure your data is covered.
 
@@ -67,7 +67,7 @@ To run a backup right now rather than waiting for the automatic overnight backup
 
 iCloud gives every Apple ID 5 gigabytes of free storage. For most people, that fills up quickly — especially if you have a lot of photos and videos. You can upgrade storage for $1 per month (50GB), $3 per month (200GB), or $10 per month (2TB). The 50GB plan is enough for most people who also have iCloud Photos enabled.
 
-Note that iCloud Backup and iCloud Photos are separate features. iCloud Photos keeps your photos synced continuously to the cloud — it is not the same as a backup. Turn on both for complete coverage.
+Note that iCloud Backup and iCloud Photos are separate features. iCloud Photos keeps your photos synced continuously to the cloud. It is not the same as a backup. Turn on both for complete coverage.
 
 When setting up a new iPhone, you choose "Restore from iCloud Backup" during the setup process. Sign in to your Apple ID and choose the most recent backup — your apps, settings, and data will be restored.`,
     steps: [
@@ -83,7 +83,7 @@ When setting up a new iPhone, you choose "Restore from iCloud Backup" during the
       {
         title: `Run a backup right now`,
         content: `Connect your iPhone to Wi-Fi and plug it in to a charger. Then tap "Back Up Now" on the iCloud Backup screen. Watch the progress bar — it may take 10 to 40 minutes depending on how much data you have. Do not close the Settings app or lock your screen while it runs.`,
-        warning: `Backing up over cellular data is not recommended — it can use a large portion of your data plan. Always connect to Wi-Fi first.`,
+        warning: `Backing up over cellular data is not recommended. It can use a large portion of your data plan. Always connect to Wi-Fi first.`,
       },
       {
         title: `Check your iCloud storage`,
@@ -130,7 +130,7 @@ Quick Tip: leave your external drive plugged in whenever your Mac is at home. Ti
       },
       {
         title: `Let the first backup complete`,
-        content: `The first backup copies everything on your Mac and may take several hours. Keep your Mac plugged in and connected to the external drive. You can continue using your Mac normally during the backup — it runs in the background. Time Machine will notify you when the first backup finishes.`,
+        content: `The first backup copies everything on your Mac and may take several hours. Keep your Mac plugged in and connected to the external drive. You can continue using your Mac normally during the backup. It runs in the background. Time Machine will notify you when the first backup finishes.`,
         warning: `Do not disconnect the drive while the first backup is in progress — this can corrupt the backup. Wait for Time Machine to show "Backup Completed."`,
       },
       {
@@ -204,7 +204,7 @@ The storage professionals' rule of thumb is called the 3-2-1 backup rule: keep a
 
 For most people, a practical approach combines automatic cloud backup for photos (Google Photos or iCloud Photos) with a cloud backup service like Backblaze for everything else on your computer, plus an occasional local backup to an external drive for fast restoration speed.
 
-Quick Tip: even a basic external hard drive kept at a friend's or family member's house counts as an offsite backup — you do not need expensive equipment to meet the spirit of the 3-2-1 rule.`,
+Quick Tip: even a basic external hard drive kept at a friend's or family member's house counts as an offsite backup. You do not need expensive equipment to meet the spirit of the 3-2-1 rule.`,
     steps: [
       {
         title: `Set up a local backup drive`,
@@ -249,7 +249,7 @@ Quick Tip: whichever service you choose, check that backup is actually running. 
     steps: [
       {
         title: `Choose your service based on your devices`,
-        content: `If all your devices are Apple (iPhone, iPad, Mac), start with iCloud Photos — it requires no extra setup and integrates with the built-in Photos app. If you use Android or Windows, or want a second backup, use Google Photos. Download the Google Photos app from the App Store (iPhone) or Google Play (Android).`,
+        content: `If all your devices are Apple (iPhone, iPad, Mac), start with iCloud Photos. It requires no extra setup and integrates with the built-in Photos app. If you use Android or Windows, or want a second backup, use Google Photos. Download the Google Photos app from the App Store (iPhone) or Google Play (Android).`,
       },
       {
         title: `Enable iCloud Photos on iPhone`,
@@ -282,7 +282,7 @@ On iPhone, contacts are backed up through iCloud. Open Settings, tap your name a
 
 To export your contacts as a file (a VCF file, also called a vCard) from iCloud: go to icloud.com, click Contacts, select all contacts by pressing Command+A (Mac) or Ctrl+A (Windows), then click the gear icon in the bottom left and choose "Export vCard." This saves a file you can store on your computer or email to yourself as an extra backup.
 
-On Android, contacts sync to your Google account automatically when you are signed in. Open the Google Contacts app and look at the top of your screen — it should show your Google account name, which means contacts are syncing. You can also check at contacts.google.com in a web browser and verify your contacts appear there.
+On Android, contacts sync to your Google account automatically when you are signed in. Open the Google Contacts app and look at the top of your screen. It should show your Google account name, which means contacts are syncing. You can also check at contacts.google.com in a web browser and verify your contacts appear there.
 
 To export Android contacts as a file: go to contacts.google.com, click the three-line menu on the left, choose "Export," and download as a VCF file. This file can be imported into almost any contact management system, including Outlook, Apple iCloud, or a new phone.
 
@@ -424,13 +424,13 @@ In Word, Copilot is most useful for drafting. Click the Copilot icon and type a 
 
 In Excel, Copilot helps people who find formulas confusing. Select your data and open Copilot. Describe what you want: "Show me total sales by month" or "Which products had the highest returns?" Copilot creates the formula or chart and explains what it did. This can save significant time for people who know what they want to see but are not sure how to write the formula to get there.
 
-In Outlook, Copilot can summarize your inbox: "What did I miss while I was on vacation?" It reads your emails and gives you a digest. You can also ask it to "Draft a reply saying I am not available Friday but am free Tuesday or Wednesday" — it writes the reply and you review it before sending.
+In Outlook, Copilot can summarize your inbox: "What did I miss while I was on vacation?" It reads your emails and gives you a digest. You can also ask it to "Draft a reply saying I am not available Friday but am free Tuesday or Wednesday". It writes the reply and you review it before sending.
 
 In Teams, Copilot can join meetings and generate a summary of what was discussed and what actions were agreed upon. This is helpful for catching up if you had to step away or for distributing meeting notes.
 
 Important note: Copilot can make mistakes. It may summarize incorrectly or draft something that does not say quite what you intended. Always read the output carefully before sending or saving any Copilot-generated content.
 
-Your data used by Copilot is subject to Microsoft's enterprise privacy commitments — it does not use your business data to train the general AI model.`,
+Your data used by Copilot is subject to Microsoft's enterprise privacy commitments. It does not use your business data to train the general AI model.`,
     steps: [
       {
         title: `Check if Copilot is available in your Microsoft 365`,
@@ -466,7 +466,7 @@ Your data used by Copilot is subject to Microsoft's enterprise privacy commitmen
 
 Setting up a Flash Briefing takes about five minutes in the Alexa app on your phone.
 
-Open the Alexa app. Tap the menu icon (three horizontal lines) at the bottom right of the screen or tap "More." Go to Settings, then scroll down to find "Flash Briefing." This is the control center for your daily briefing — you can add sources here.
+Open the Alexa app. Tap the menu icon (three horizontal lines) at the bottom right of the screen or tap "More." Go to Settings, then scroll down to find "Flash Briefing." This is the control center for your daily briefing. You can add sources here.
 
 The source library includes dozens of options: NPR News (available in both short and longer formats), BBC World Service, The Associated Press, CNN, Fox News, ABC News, local news stations (available for many cities), sports highlights from ESPN, stock market updates, tech news, and more. Each source is an Alexa Skill — tap the + button or "Enable" to add it. You will be taken to the skill's page where you confirm the addition.
 
@@ -484,7 +484,7 @@ Quick Tip: the difference between Flash Briefing and asking "Alexa, what's in th
       },
       {
         title: `Add news sources`,
-        content: `Tap "Add Content" or browse the available sources. Search for sources by name (NPR, BBC, ESPN, CNN, your local news station) or browse by category. Tap each source you want to add. Start with three to five sources — you can always add more later.`,
+        content: `Tap "Add Content" or browse the available sources. Search for sources by name (NPR, BBC, ESPN, CNN, your local news station) or browse by category. Tap each source you want to add. Start with three to five sources. You can always add more later.`,
         tip: `Search for your city name plus "news" to find local news stations available as Alexa skills. Having a local source is great for school closings, traffic, and weather specific to your area.`,
       },
       {
@@ -509,7 +509,7 @@ Quick Tip: the difference between Flash Briefing and asking "Alexa, what's in th
     publishedAt: `2026-04-20`,
     body: `Distance does not have to mean disconnection. Technology has made it genuinely possible to be a present, engaged grandparent even when grandchildren live hours away. The key is finding the right tools — ones your grandchildren already use and that you find manageable to learn.
 
-For video calls, the best option depends on what phones your family uses. FaceTime is the smoothest choice when everyone has an iPhone or iPad — it requires no account setup, calls are free, and the quality is excellent. WhatsApp video works across iPhone and Android, is free, and is popular with families that have a mix of devices. Facebook Messenger video calls are worth knowing because many grandparents already have Facebook accounts — this is often the lowest-friction option. Google Meet and Google Duo are also free and work on any device.
+For video calls, the best option depends on what phones your family uses. FaceTime is the smoothest choice when everyone has an iPhone or iPad. It requires no account setup, calls are free, and the quality is excellent. WhatsApp video works across iPhone and Android, is free, and is popular with families that have a mix of devices. Facebook Messenger video calls are worth knowing because many grandparents already have Facebook accounts — this is often the lowest-friction option. Google Meet and Google Duo are also free and work on any device.
 
 Shared photo albums are one of the most meaningful ways to stay connected. Google Photos lets you create a Shared Album that family members can all add photos to — grandparents can watch their grandchildren grow through daily snapshots without anyone having to remember to email photos. Amazon Photos gives unlimited free storage to Prime members and straightforward sharing features.
 
@@ -554,7 +554,7 @@ Quick Tip: ask your grandchild to teach you their favorite app. Children love be
 
 The most important first step is to focus on financial and bill-paying accounts before anything else. If your spouse managed any automatic bill payments — utilities, insurance, mortgage, subscriptions — you need to identify and either transfer or cancel them to avoid missed payments or unwanted charges. Look through recent bank or credit card statements for recurring charges. Note any accounts that were solely in your spouse's name that may need to be transferred or closed.
 
-For phone and computer access, if you need to access your spouse's phone and do not know the passcode, both Apple and Samsung have official processes for next-of-kin or executor access. These processes require a death certificate and sometimes a court order. Contact Apple Support or Samsung directly and explain the situation — they have handled this before and will guide you. If you know the passcode, take time to look through contacts, photos, and important documents at your own pace before deciding what to do with the accounts.
+For phone and computer access, if you need to access your spouse's phone and do not know the passcode, both Apple and Samsung have official processes for next-of-kin or executor access. These processes require a death certificate and sometimes a court order. Contact Apple Support or Samsung directly and explain the situation. They have handled this before and will guide you. If you know the passcode, take time to look through contacts, photos, and important documents at your own pace before deciding what to do with the accounts.
 
 For email accounts, the main providers — Google, Yahoo, Microsoft — have processes for requesting access to or downloading the contents of a deceased person's account. You will need to provide documentation including a death certificate. Google has an Inactive Account Manager feature that allows people to designate a trusted contact in advance — if your spouse had set this up, you may already have access.
 
@@ -577,7 +577,7 @@ Take your time. Grief does not follow a schedule, and most of these accounts wil
       },
       {
         title: `Request access to email and Apple/Google accounts`,
-        content: `For Google accounts: visit support.google.com and search "deceased user's account" for the official request form — you will need a death certificate. For Apple accounts: if you were designated as a Legacy Contact in their Digital Legacy settings, visit appleid.apple.com to submit your request. For Microsoft email: contact Microsoft Support with a death certificate.`,
+        content: `For Google accounts: visit support.google.com and search "deceased user's account" for the official request form. You will need a death certificate. For Apple accounts: if you were designated as a Legacy Contact in their Digital Legacy settings, visit appleid.apple.com to submit your request. For Microsoft email: contact Microsoft Support with a death certificate.`,
       },
       {
         title: `Handle social media accounts`,
@@ -608,7 +608,7 @@ The problem with removing your own data is the scale of the work. There are hund
 
 DeleteMe automates this process. You provide your name, current and past addresses, and age. DeleteMe scans over 750 data broker sites for profiles matching your information, submits removal requests, and sends you a detailed report showing what was found and what was removed. The service continues monitoring and sending new removal requests every three months, because removed data has a habit of reappearing.
 
-The individual plan is about $129 per year, which works out to about $11 per month. A family plan covering two people runs about $229 per year. DeleteMe also offers a trial report — you can see what they find before committing.
+The individual plan is about $129 per year, which works out to about $11 per month. A family plan covering two people runs about $229 per year. DeleteMe also offers a trial report. You can see what they find before committing.
 
 What DeleteMe does not cover: it cannot remove information from news articles, court records, your own social media profiles, or government databases. Those require separate action and are often not removable. DeleteMe focuses on the commercial data broker ecosystem — which is where most of the consumer privacy risk lives.
 
@@ -670,7 +670,7 @@ What DuckDuckGo does not change: your internet provider can still see the websit
       {
         title: `Learn the bang shortcut feature`,
         content: `In DuckDuckGo, type an exclamation mark followed by a website code to search that site directly. Examples: "!amazon wireless headphones" searches Amazon, "!wiki climate change" goes to Wikipedia, "!yt guitar lessons" searches YouTube, "!maps coffee shops" opens Google Maps. Type "!help" to see more available bang shortcuts.`,
-        tip: `Bang shortcuts make DuckDuckGo faster for shopping and research — you can reach any major website's search directly without visiting the site first.`,
+        tip: `Bang shortcuts make DuckDuckGo faster for shopping and research. You can reach any major website's search directly without visiting the site first.`,
       },
       {
         title: `Download the DuckDuckGo browser app`,
@@ -700,13 +700,13 @@ Rosetta Stone uses an immersive approach — lessons are entirely in the target 
 
 Pimsleur is audio-based — lessons are 30-minute recordings you listen to while walking, driving, or doing chores. This is ideal for people who prefer learning through listening rather than reading apps. Pimsleur costs around $20 per month per language.
 
-In the US, Spanish is the most practical language to learn — it is spoken by over 40 million Americans and is enormously useful for everyday interactions, healthcare appointments, and travel. French, Italian, and Portuguese are popular for travel and cultural enjoyment.
+In the US, Spanish is the most practical language to learn. It is spoken by over 40 million Americans and is enormously useful for everyday interactions, healthcare appointments, and travel. French, Italian, and Portuguese are popular for travel and cultural enjoyment.
 
 Consistency matters far more than session length. Fifteen to twenty minutes every day produces better results than two hours once a week. Pair app learning with watching Spanish-language TV shows with subtitles (many are available on Netflix), and consider finding a conversation partner through italki.com — a platform where you can hire a teacher or find a free language exchange partner (you help them with English, they help you with your target language).`,
     steps: [
       {
         title: `Choose an app and a language`,
-        content: `Start with one language and one app. For most people in the US, Spanish is the most practical choice. Download Duolingo from the App Store or Google Play — it is free and a good starting point. If you prefer more structure and are willing to pay, try Babbel ($15/month) or Pimsleur ($20/month) for audio-based learning.`,
+        content: `Start with one language and one app. For most people in the US, Spanish is the most practical choice. Download Duolingo from the App Store or Google Play. It is free and a good starting point. If you prefer more structure and are willing to pay, try Babbel ($15/month) or Pimsleur ($20/month) for audio-based learning.`,
       },
       {
         title: `Set a daily practice goal`,
@@ -742,7 +742,7 @@ What LifeLock does not do is prevent identity theft from happening. It monitors 
 
 LifeLock offers three tiers. Standard (about $12 per month) covers basic monitoring including SSN alerts, dark web monitoring, and credit monitoring through one bureau. Advantage (about $22 per month) adds bank account alerts, credit monitoring through all three bureaus, and higher reimbursement limits. Ultimate Plus (about $35 per month) is the most comprehensive, including credit score tracking, home title alerts, investment account activity monitoring, and a VPN.
 
-The "$1 million protection" advertised by LifeLock is often misunderstood. This covers the fees LifeLock pays to lawyers and specialists on your behalf during recovery — it is not a cash payment to you directly. Coverage limits vary by plan and are subject to terms and conditions.
+The "$1 million protection" advertised by LifeLock is often misunderstood. This covers the fees LifeLock pays to lawyers and specialists on your behalf during recovery. It is not a cash payment to you directly. Coverage limits vary by plan and are subject to terms and conditions.
 
 For people who want similar protection without the cost, there are strong free alternatives. Credit Karma monitors your credit for free and alerts you to new accounts or changes. Placing a free credit freeze with Experian, Equifax, and TransUnion prevents anyone from opening new credit accounts in your name — this is arguably the single most effective protection available. Checking your free annual credit reports at AnnualCreditReport.com helps you spot unauthorized accounts.
 
@@ -803,7 +803,7 @@ For actual privacy from websites and your internet provider, the tools that make
       },
       {
         title: `Know what private mode does NOT protect`,
-        content: `Your internet provider still sees the websites you visit. Websites still see your IP address. If you sign in to Google or any account during the private session, that account records your activity. Your employer or school can still monitor network traffic. Private mode is local privacy from others who use the same computer — it is not internet-wide anonymity.`,
+        content: `Your internet provider still sees the websites you visit. Websites still see your IP address. If you sign in to Google or any account during the private session, that account records your activity. Your employer or school can still monitor network traffic. Private mode is local privacy from others who use the same computer. It is not internet-wide anonymity.`,
         warning: `Do not rely on private mode to hide internet activity from your internet provider, employer, or school network. For that level of privacy, you need a VPN.`,
       },
       {
@@ -830,7 +830,7 @@ The single most important step is changing default passwords. Nearly every route
 
 Firmware updates are the next priority. Manufacturers find and fix security vulnerabilities in their devices and release updates to address them. These updates only protect you if you install them. Most smart home device apps have an update option — check periodically or enable automatic updates wherever available. Outdated firmware is one of the most common ways smart devices get compromised.
 
-Using your router's Guest Network for smart home devices is a highly effective protection strategy. A Guest Network is a separate Wi-Fi network your router creates alongside your main network. Devices on the Guest Network cannot communicate with devices on your main network. This means if a smart light bulb gets compromised, the attacker cannot use it to access your laptop or phone — they are on separate networks. This is called network segmentation and IT professionals recommend it strongly.
+Using your router's Guest Network for smart home devices is a highly effective protection strategy. A Guest Network is a separate Wi-Fi network your router creates alongside your main network. Devices on the Guest Network cannot communicate with devices on your main network. This means if a smart light bulb gets compromised, the attacker cannot use it to access your laptop or phone. They are on separate networks. This is called network segmentation and IT professionals recommend it strongly.
 
 Buy devices from reputable brands with track records of issuing security updates: Amazon Echo, Google Nest, Ring, Arlo, Philips Hue, August, and similar well-known brands. Avoid very cheap, unknown-brand smart devices. Budget devices often have weak security, receive no firmware updates, and may have been manufactured with backdoors.
 
@@ -876,7 +876,7 @@ Once per year, open your router app and look at the connected device list. Remov
 
 Universal remotes come in several types and price ranges, and the best choice depends on how many devices you have and how much setup complexity you are comfortable with.
 
-The most straightforward option is a basic universal remote, available at Best Buy, Target, Walmart, or Amazon for $15 to $40. Brands like GE and RCA make reliable options. These remotes work by using a code system: every TV brand has a number code that tells the remote how to control it. You look up your TV's brand code in the manual (or on the manufacturer's website), press and hold the TV button on the remote, enter the code, and test a few buttons. Repeat for each device. This type of remote works without an internet connection and requires no account or app — it is the lowest-tech option and works well for many people.
+The most straightforward option is a basic universal remote, available at Best Buy, Target, Walmart, or Amazon for $15 to $40. Brands like GE and RCA make reliable options. These remotes work by using a code system: every TV brand has a number code that tells the remote how to control it. You look up your TV's brand code in the manual (or on the manufacturer's website), press and hold the TV button on the remote, enter the code, and test a few buttons. Repeat for each device. This type of remote works without an internet connection and requires no account or app. It is the lowest-tech option and works well for many people.
 
 Logitech's Harmony lineup (now discontinued for new production but still widely available on Amazon and eBay) is a step up in convenience. The Harmony Hub is a small box that sits near your TV equipment and sends both infrared signals (the kind traditional remotes use) and Wi-Fi/Bluetooth signals. This means it can control streaming devices that do not respond to traditional infrared remotes, like Roku, Fire TV, Apple TV, and PlayStation. Setup is done through the free Harmony app. You create "Activities" — such as "Watch Netflix" — and the remote turns on every device needed and switches each one to the right input automatically.
 

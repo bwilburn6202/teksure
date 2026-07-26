@@ -93,7 +93,7 @@ One alert does not mean disaster. Many people find their old email and password 
       },
       {
         title: `Understand what monitoring cannot do`,
-        content: `Dark web monitoring is a warning system, not a removal service. Once your information is circulating on the dark web, there is no practical way to delete it. The value of monitoring is the early warning — it gives you time to change passwords, freeze accounts, and place fraud alerts before criminals can do serious damage. Think of it like a smoke alarm: it cannot prevent the fire. But it gives you time to respond.`,
+        content: `Dark web monitoring is a warning system, not a removal service. Once your information is circulating on the dark web, there is no practical way to delete it. The value of monitoring is the early warning. It gives you time to change passwords, freeze accounts, and place fraud alerts before criminals can do serious damage. Think of it like a smoke alarm: it cannot prevent the fire. But it gives you time to respond.`,
       },
     ],
   },
@@ -123,7 +123,7 @@ One frustrating reality: your information will likely reappear. Data brokers re-
     steps: [
       {
         title: `Search your name to find where your information appears`,
-        content: `Open a web browser and search your full name along with your city or state (for example, "Jane Smith Dallas Texas"). Look at the results and note which data broker sites appear. Common ones include Spokeo, WhitePages, BeenVerified, Radaris, and PeopleFinder. Make a list of every site where you find your information listed — you will need to opt out of each one separately.`,
+        content: `Open a web browser and search your full name along with your city or state (for example, "Jane Smith Dallas Texas"). Look at the results and note which data broker sites appear. Common ones include Spokeo, WhitePages, BeenVerified, Radaris, and PeopleFinder. Make a list of every site where you find your information listed. You will need to opt out of each one separately.`,
         tip: `Quick Tip: Search in a private/incognito browser window so your personalized search history does not affect the results.`,
       },
       {
@@ -199,7 +199,7 @@ For true privacy from your ISP and the websites you visit, you need a VPN (Virtu
     difficulty: `Beginner`,
     body: `Google's services are free because the company uses data about your behavior to show you targeted ads. By default, Google collects quite a lot: every search you run, every YouTube video you watch, your physical location throughout the day, voice activity from Google Assistant, and activity from apps and websites that use Google's advertising system.
 
-This data is stored in your Google account and can be reviewed, limited, or deleted. Many people have never looked at this page. And they are often surprised by how detailed it is. The good news is that Google gives you genuine control over most of these settings — it is not completely hidden.
+This data is stored in your Google account and can be reviewed, limited, or deleted. Many people have never looked at this page. And they are often surprised by how detailed it is. The good news is that Google gives you genuine control over most of these settings. It is not completely hidden.
 
 To get started, open a web browser and go to myaccount.google.com. Sign in with your Google account if you are not already signed in. This is your main control panel for everything related to your Google account, including privacy and data settings.
 
@@ -303,8 +303,8 @@ After submitting the deposit, the app will display a confirmation message with a
     steps: [
       {
         title: `Endorse the back of the check before anything else`,
-        content: `Flip the check over and look for the endorsement area near one end — it usually has one or more horizontal lines and may say "Endorse Here." Sign your name on the first line exactly as it appears on the front of the check (the "Pay to the order of" line). On the line below your signature, write "For Mobile Deposit Only." This step is required by most banks and helps protect you if the check is ever lost or stolen.`,
-        warning: `Do not write "For Mobile Deposit Only" until you are ready to deposit the check through the app. Once you write it, the check cannot be cashed at a branch or ATM — it can only be deposited via mobile.`,
+        content: `Flip the check over and look for the endorsement area near one end. It usually has one or more horizontal lines and may say "Endorse Here." Sign your name on the first line exactly as it appears on the front of the check (the "Pay to the order of" line). On the line below your signature, write "For Mobile Deposit Only." This step is required by most banks and helps protect you if the check is ever lost or stolen.`,
+        warning: `Do not write "For Mobile Deposit Only" until you are ready to deposit the check through the app. Once you write it, the check cannot be cashed at a branch or ATM. It can only be deposited via mobile.`,
       },
       {
         title: `Open your bank app and find the deposit feature`,
@@ -317,7 +317,7 @@ After submitting the deposit, the app will display a confirmation message with a
       },
       {
         title: `Review and submit the deposit`,
-        content: `After photographing both sides, the app will display a summary showing the check amount and the account it will be deposited into. Review this carefully to make sure the amount matches what is written on the check. Confirm the deposit account is correct — you do not want to deposit a check into your savings account when you meant your checking account. Tap "Submit" or "Deposit" to complete the transaction.`,
+        content: `After photographing both sides, the app will display a summary showing the check amount and the account it will be deposited into. Review this carefully to make sure the amount matches what is written on the check. Confirm the deposit account is correct. You do not want to deposit a check into your savings account when you meant your checking account. Tap "Submit" or "Deposit" to complete the transaction.`,
       },
       {
         title: `Keep the check until it fully clears`,
@@ -414,7 +414,7 @@ You can make one-time payments for any amount, or set up recurring automatic pay
       },
       {
         title: `Verify payments and keep records`,
-        content: `After scheduling a payment, you will see it listed under "Upcoming Payments" or "Scheduled Payments." Check this section regularly to confirm payments are going out as expected. After a payment is processed, it will move to your payment history, where you can see the date it was sent, the amount, and the payee. Keep these records for at least a year in case a company claims they did not receive a payment — you will have documentation showing when and how much was sent.`,
+        content: `After scheduling a payment, you will see it listed under "Upcoming Payments" or "Scheduled Payments." Check this section regularly to confirm payments are going out as expected. After a payment is processed, it will move to your payment history, where you can see the date it was sent, the amount, and the payee. Keep these records for at least a year in case a company claims they did not receive a payment. You will have documentation showing when and how much was sent.`,
       },
     ],
   },
@@ -434,7 +434,7 @@ The first is the processor, also called the CPU. This is the brain of the comput
 
 The second is RAM, which stands for Random Access Memory. Think of RAM as your desk space — the more RAM you have, the more things you can have open and running at the same time without the computer slowing down. For browsing, emails, and streaming, 8 GB of RAM is fine. If you like having many browser tabs open at once, or you use productivity software, 16 GB is noticeably better. Video editors and people who run multiple demanding programs should look for 32 GB.
 
-The third is storage. This is where your files, photos, and programs are saved. You will see two types: HDD (Hard Disk Drive) and SSD (Solid State Drive). Always choose an SSD if you have the option — it makes the computer start up in seconds and makes programs open much faster. For storage space, 256 GB is a minimum for most people, 512 GB is comfortable, and 1 TB is generous.
+The third is storage. This is where your files, photos, and programs are saved. You will see two types: HDD (Hard Disk Drive) and SSD (Solid State Drive). Always choose an SSD if you have the option. It makes the computer start up in seconds and makes programs open much faster. For storage space, 256 GB is a minimum for most people, 512 GB is comfortable, and 1 TB is generous.
 
 The fourth is the display. For laptops, 13 to 15 inches is the most portable range. Resolution of 1080p (Full HD) is perfectly sharp for everyday use. Higher resolutions like 1440p or 4K give you a crisper image but reduce battery life.
 
@@ -446,7 +446,7 @@ The fifth is battery life. For a laptop you plan to take anywhere, look for at l
       },
       {
         title: `Check RAM first — it affects everyday speed the most`,
-        content: `Find the RAM specification on the product page — it is listed in gigabytes (GB). For everyday browsing, email, and video calls, 8 GB is the minimum you should consider. If you regularly have more than ten browser tabs open, use office software, or do light photo editing, choose 16 GB. Be aware that most modern laptops have RAM soldered directly to the motherboard, meaning it cannot be upgraded later — so it is worth choosing the right amount upfront rather than planning to add more.`,
+        content: `Find the RAM specification on the product page. It is listed in gigabytes (GB). For everyday browsing, email, and video calls, 8 GB is the minimum you should consider. If you regularly have more than ten browser tabs open, use office software, or do light photo editing, choose 16 GB. Be aware that most modern laptops have RAM soldered directly to the motherboard, meaning it cannot be upgraded later — so it is worth choosing the right amount upfront rather than planning to add more.`,
         tip: `Quick Tip: If you are deciding between two otherwise identical laptops and one has 8 GB RAM and the other 16 GB for an extra $50 to $100, the 16 GB model is almost always worth the upgrade for long-term usefulness.`,
       },
       {
@@ -473,7 +473,7 @@ The fifth is battery life. For a laptop you plan to take anywhere, look for at l
     thumbnailEmoji: ``,
     publishedAt: `2026-04-20`,
     difficulty: `Beginner`,
-    body: `Walk into any electronics store and you will see dozens of televisions with price tags ranging from $200 to $3,000 and specifications full of acronyms. OLED, QLED, 4K, HDR, 120Hz — it sounds like a foreign language. This guide cuts through the marketing and explains what actually affects your viewing experience.
+    body: `Walk into any electronics store and you will see dozens of televisions with price tags ranging from $200 to $3,000 and specifications full of acronyms. OLED, QLED, 4K, HDR, 120Hz. It sounds like a foreign language. This guide cuts through the marketing and explains what actually affects your viewing experience.
 
 The first and most important decision is screen size. Bigger is not always better — a screen that is too large for the distance you sit from it can look blurry or tiring to watch. The general rule is that your viewing distance in inches should be about 1.5 to 2.5 times the screen size. For a 55-inch TV, you want to sit 7 to 12 feet away. For a 65-inch TV, 8 to 14 feet. Measure the distance from your couch to where the TV will sit before you shop.
 
@@ -520,7 +520,7 @@ Smart TV operating systems vary. Roku TV is widely considered the most intuitive
     difficulty: `Beginner`,
     body: `Printers have one of the most complicated true costs of any home electronics purchase. The printer itself might be inexpensive, but the ongoing cost of ink or toner can dwarf the purchase price within a year or two. Understanding this upfront is the most important part of buying the right printer.
 
-There are two main types of home printers: inkjet and laser. Inkjet printers use liquid ink cartridges. They are generally cheaper to buy upfront — you can find a basic inkjet for $50 to $100 — and they produce better quality color photos and graphics. The downside is that ink cartridges are expensive relative to how much they print, and if you do not print often, the ink can dry out inside the print head and cause clogs.
+There are two main types of home printers: inkjet and laser. Inkjet printers use liquid ink cartridges. They are generally cheaper to buy upfront. You can find a basic inkjet for $50 to $100 — and they produce better quality color photos and graphics. The downside is that ink cartridges are expensive relative to how much they print, and if you do not print often, the ink can dry out inside the print head and cause clogs.
 
 Laser printers use powdered toner instead of liquid ink. Toner cartridges cost more upfront than inkjet cartridges but print many more pages per cartridge, making the cost per page much lower. Laser printers are ideal for people who print often, especially black-and-white text documents. They do not suffer from ink drying out. Color laser printers exist but are a lot more expensive than black-and-white laser models.
 
@@ -550,7 +550,7 @@ Ink subscription services like HP Instant Ink and Epson ReadyPrint charge a mont
       {
         title: `Evaluate ink subscription plans`,
         content: `HP Instant Ink and Epson ReadyPrint work by charging a flat monthly fee for a set number of pages — typically $2.99 for 10 pages per month up to $9.99 for 100 pages per month. If you regularly hit your page limit, these plans cost a lot less than buying cartridges individually. They also offer the convenience of automatic delivery before you run out. If you are a very light printer who might go months without printing, a subscription may not be worth it — unused pages often do not roll over.`,
-        warning: `Some HP and Epson printers will not work with third-party ink cartridges — they are designed to work only with the manufacturer's cartridges or ink subscriptions. Check the printer's compatibility policy before buying if you plan to use aftermarket ink.`,
+        warning: `Some HP and Epson printers will not work with third-party ink cartridges. They are designed to work only with the manufacturer's cartridges or ink subscriptions. Check the printer's compatibility policy before buying if you plan to use aftermarket ink.`,
       },
     ],
   },
@@ -568,7 +568,7 @@ Ink subscription services like HP Instant Ink and Epson ReadyPrint charge a mont
 
 If your router is more than five years old, upgrading it is one of the most cost-effective tech improvements you can make. You will likely notice faster Wi-Fi speeds, fewer dropped connections, and better coverage throughout your home — all for a one-time cost of $60 to $200.
 
-Wi-Fi has several generational standards. Wi-Fi 5 (also written as 802.11ac) was the dominant standard from around 2013 to 2020 and is still plenty fast for most homes. Wi-Fi 6 (802.11ax) is the current mainstream standard — it handles more devices simultaneously and delivers better speeds especially in homes with many connected devices (smart TVs, phones, tablets, smart home gadgets). Wi-Fi 6E adds a third radio band at 6 GHz for even less congestion, though it requires devices that also support 6E to benefit. For most households, Wi-Fi 6 is the sweet spot.
+Wi-Fi has several generational standards. Wi-Fi 5 (also written as 802.11ac) was the dominant standard from around 2013 to 2020 and is still plenty fast for most homes. Wi-Fi 6 (802.11ax) is the current mainstream standard. It handles more devices simultaneously and delivers better speeds especially in homes with many connected devices (smart TVs, phones, tablets, smart home gadgets). Wi-Fi 6E adds a third radio band at 6 GHz for even less congestion, though it requires devices that also support 6E to benefit. For most households, Wi-Fi 6 is the sweet spot.
 
 Single routers work well for smaller homes and apartments — typically up to 1,500 to 2,000 square feet. If you have a larger home, multiple floors, thick walls, or a detached garage you want covered, a mesh Wi-Fi system uses two or three small access points placed around your home that all share a single network name so your devices switch between them automatically. Brands like Eero, Google Nest, and TP-Link Deco make well-regarded mesh systems.
 
@@ -581,7 +581,7 @@ If your ISP provides a router as part of your plan, it is often worth replacing 
       },
       {
         title: `Choose Wi-Fi 6 for most households`,
-        content: `When shopping for a new router, look for one that says Wi-Fi 6 or 802.11ax. Wi-Fi 6 routers handle many simultaneous devices better than older standards — this matters in homes with smart TVs, phones, tablets, laptops, and smart home devices all connected at once. Wi-Fi 6 routers are widely available for $80 to $150. Wi-Fi 6E adds a 6 GHz band for less interference in dense areas, but most home devices do not yet support 6E — it is a future-proofing investment rather than an immediate benefit.`,
+        content: `When shopping for a new router, look for one that says Wi-Fi 6 or 802.11ax. Wi-Fi 6 routers handle many simultaneous devices better than older standards — this matters in homes with smart TVs, phones, tablets, laptops, and smart home devices all connected at once. Wi-Fi 6 routers are widely available for $80 to $150. Wi-Fi 6E adds a 6 GHz band for less interference in dense areas, but most home devices do not yet support 6E. It is a future-proofing investment rather than an immediate benefit.`,
       },
       {
         title: `Measure your home and consider a mesh system`,
@@ -612,7 +612,7 @@ If your ISP provides a router as part of your plan, it is often worth replacing 
 
 Think of RAM like the surface of a physical desk. The bigger the desk, the more things you can spread out and work on at the same time. When you open a web browser, a document, a video call, and a music app all at once, each one takes up space on your "desk." If the desk fills up, you have to start stacking things — and your computer slows down because it has to dig things out of storage (which is much slower) to bring them back to the desk whenever you switch between programs.
 
-This is different from your computer's storage, which works like a filing cabinet. Storage is where your files, photos, programs, and the operating system are permanently kept when the computer is off. RAM is erased every time you turn the computer off — it is only meant for the things you are actively working with right now.
+This is different from your computer's storage, which works like a filing cabinet. Storage is where your files, photos, programs, and the operating system are permanently kept when the computer is off. RAM is erased every time you turn the computer off. It is only meant for the things you are actively working with right now.
 
 How much RAM do you need? For basic everyday use — web browsing, email, video calls, and watching videos — 8 GB of RAM is the minimum you should consider. It handles these tasks without too much strain. If you regularly have many browser tabs open at once, use Microsoft Office or Google Workspace, or do light photo editing, 16 GB makes a noticeable difference. Creative professionals who edit video, work with large audio projects, or run multiple demanding programs simultaneously benefit from 32 GB or more.
 
@@ -635,7 +635,7 @@ One important caveat: on most modern laptops, RAM is soldered directly to the mo
       },
       {
         title: `Understand that most laptop RAM cannot be upgraded`,
-        content: `In older computers, RAM came as separate sticks that could be removed and replaced with larger ones. In most modern thin and light laptops, the RAM is soldered (permanently attached) to the main circuit board and cannot be changed. Desktop computers and some larger laptops still have removable RAM. If you are considering a new laptop purchase, choose the right amount of RAM at the time of purchase — you will likely not be able to add more later.`,
+        content: `In older computers, RAM came as separate sticks that could be removed and replaced with larger ones. In most modern thin and light laptops, the RAM is soldered (permanently attached) to the main circuit board and cannot be changed. Desktop computers and some larger laptops still have removable RAM. If you are considering a new laptop purchase, choose the right amount of RAM at the time of purchase. You will likely not be able to add more later.`,
         warning: `When buying a new laptop or computer, prioritize RAM over processor speed if you are on a budget. An extra 8 GB of RAM will make a bigger difference to everyday speed than a faster processor for most common tasks.`,
       },
     ],
@@ -677,7 +677,7 @@ Within SSDs, there is a further distinction. SATA SSDs connect using the same in
       },
       {
         title: `Decide which SSD type you need when buying`,
-        content: `When shopping for a new computer, look for NVMe SSD if you plan to edit video or work with large files — it is the fastest option available. For everyday use — browsing, email, streaming, productivity software — a standard SATA SSD is excellent and often costs less. Any SSD is dramatically better than an HDD for everyday tasks. If a product listing shows a drive measured in RPM (like "5400 RPM" or "7200 RPM"), it is a traditional HDD — consider a different model.`,
+        content: `When shopping for a new computer, look for NVMe SSD if you plan to edit video or work with large files. It is the fastest option available. For everyday use — browsing, email, streaming, productivity software — a standard SATA SSD is excellent and often costs less. Any SSD is dramatically better than an HDD for everyday tasks. If a product listing shows a drive measured in RPM (like "5400 RPM" or "7200 RPM"), it is a traditional HDD — consider a different model.`,
       },
     ],
   },
@@ -695,7 +695,7 @@ Within SSDs, there is a further distinction. SATA SSDs connect using the same in
 
 Resolution is expressed as width by height in pixels. A 1920 by 1080 display — written as 1920×1080 — has 1,920 pixels across and 1,080 pixels from top to bottom. The shorthand "1080p" refers to this resolution. A 3840 by 2160 display — called "4K" or "2160p" — has four times as many pixels as 1080p, arranged in the same way but much more densely.
 
-Here is the progression most people will encounter, from lowest to highest: 720p (1280×720) is called HD and is rarely used in new devices today — it looks soft on screens larger than about 27 inches. 1080p (1920×1080) is called Full HD and remains perfectly sharp for most people on screens up to about 27 inches. 1440p (2560×1440) is called QHD or 2K and is noticeably sharper than 1080p on computer monitors and laptops. 2160p (3840×2160) is called 4K or Ultra HD and offers the highest sharpness widely available in consumer devices.
+Here is the progression most people will encounter, from lowest to highest: 720p (1280×720) is called HD and is rarely used in new devices today. It looks soft on screens larger than about 27 inches. 1080p (1920×1080) is called Full HD and remains perfectly sharp for most people on screens up to about 27 inches. 1440p (2560×1440) is called QHD or 2K and is noticeably sharper than 1080p on computer monitors and laptops. 2160p (3840×2160) is called 4K or Ultra HD and offers the highest sharpness widely available in consumer devices.
 
 "Retina" is Apple's marketing term for any display that is dense enough that individual pixels are not distinguishable at a normal viewing distance. It is not a specific resolution — different Apple devices use different resolutions under the Retina label. What it means in practice is that text looks very sharp and smooth on those screens.
 
@@ -750,11 +750,11 @@ One more fix many people overlook: a true full shutdown and restart. Many people
       },
       {
         title: `Disable unnecessary startup programs (Windows)`,
-        content: `On Windows 10 or 11, right-click the Start button and select "Task Manager." Click "More details" if you see a condensed view, then click the "Startup" tab. This shows every program that launches when Windows starts, along with its impact (High, Medium, Low). Right-click any program you do not need running at startup — such as Spotify, Discord, or Teams — and select "Disable." This does not uninstall the program — it still works, it just will not slow down your startup.`,
+        content: `On Windows 10 or 11, right-click the Start button and select "Task Manager." Click "More details" if you see a condensed view, then click the "Startup" tab. This shows every program that launches when Windows starts, along with its impact (High, Medium, Low). Right-click any program you do not need running at startup — such as Spotify, Discord, or Teams — and select "Disable." This does not uninstall the program. It still works, it just will not slow down your startup.`,
       },
       {
         title: `Free up storage space by clearing clutter`,
-        content: `On Windows, open Settings → System → Storage to see what is taking up space. Look for large files in your Downloads folder (open File Explorer, click "Downloads" in the left panel) and delete anything you no longer need. Empty the Recycle Bin by right-clicking it on the desktop and selecting "Empty Recycle Bin." Run the built-in Disk Cleanup tool by searching "Disk Cleanup" in the Start menu — it safely removes temporary files and system cache. On a Mac, click the Apple logo → About This Mac → More Info → Storage to see usage and recommended cleanup options.`,
+        content: `On Windows, open Settings → System → Storage to see what is taking up space. Look for large files in your Downloads folder (open File Explorer, click "Downloads" in the left panel) and delete anything you no longer need. Empty the Recycle Bin by right-clicking it on the desktop and selecting "Empty Recycle Bin." Run the built-in Disk Cleanup tool by searching "Disk Cleanup" in the Start menu. It safely removes temporary files and system cache. On a Mac, click the Apple logo → About This Mac → More Info → Storage to see usage and recommended cleanup options.`,
         warning: `Only delete files you are certain you no longer need. When in doubt, leave it. Deleting system files or program files can cause problems — stick to your personal files in Downloads, Documents, and Desktop.`,
       },
       {
@@ -844,7 +844,7 @@ If wireless charging works on your phone but wired does not, the charging port i
       {
         title: `Clean the charging port`,
         content: `Hold your phone under a light and look closely into the charging port. If you see gray or brown material packed inside, that is lint. Use a wooden or plastic toothpick to very gently scrape the lint out, working from the inside edges toward the opening. Be careful not to press hard or scratch the metal contacts at the back of the port. A few puffs of compressed air (sold at office supply stores) can also blow out loose debris. After cleaning, plug in the cable again and test.`,
-        warning: `Never use a metal object like a pin or needle inside your charging port — it can bend the pins or cause a short circuit. Wood or plastic toothpicks are safe for this purpose.`,
+        warning: `Never use a metal object like a pin or needle inside your charging port. It can bend the pins or cause a short circuit. Wood or plastic toothpicks are safe for this purpose.`,
       },
       {
         title: `Restart the phone while connected to power`,

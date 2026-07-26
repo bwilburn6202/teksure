@@ -49,7 +49,7 @@ This guide walks through joining a Zoom video visit step by step, with notes on 
       },
       {
         title: 'Join by phone if video does not work',
-        content: 'Every Zoom invitation also includes a phone number you can call to join by audio only. Look in the email for "Or by Phone" — it lists a phone number and a meeting ID. Call the number, type the meeting ID followed by # when prompted. And you join the visit by voice. Your insurance covers this the same as a video visit.',
+        content: 'Every Zoom invitation also includes a phone number you can call to join by audio only. Look in the email for "Or by Phone". It lists a phone number and a meeting ID. Call the number, type the meeting ID followed by # when prompted. And you join the visit by voice. Your insurance covers this the same as a video visit.',
         tip: 'Quick Tip: Save the office\'s telehealth phone number in your phone contacts. The same number usually works for any future telehealth visit.',
       },
     ],

@@ -249,7 +249,7 @@ The most important factors for seniors are: screen size (bigger is usually bette
       },
       {
         title: 'Check the sound before settling on a TV',
-        content: 'Built-in TV speakers have gotten thinner as TVs have become thinner, and many sound tinny or quiet. Before finalizing your choice, ask the store to show the sound at a comfortable volume. If the sound is weak, budget $100-$200 for a simple soundbar — it sits under the TV and dramatically improves audio clarity.',
+        content: 'Built-in TV speakers have gotten thinner as TVs have become thinner, and many sound tinny or quiet. Before finalizing your choice, ask the store to show the sound at a comfortable volume. If the sound is weak, budget $100-$200 for a simple soundbar. It sits under the TV and dramatically improves audio clarity.',
         tip: 'Quick Tip: Clear dialogue is especially important for those with any hearing changes. Look for TVs with "Clear Voice" or speech enhancement modes in their audio settings.',
       },
       {
@@ -396,7 +396,7 @@ Galaxy Watch 6 (~$270-$330) works best with Samsung Galaxy phones. It offers hea
       {
         title: 'Consider battery life for your lifestyle',
         content: 'Apple Watch typically needs charging every night (like a phone). Fitbit lasts 4-6 days on a charge. If remembering to charge daily is a concern, Fitbit\'s longer battery life is an advantage. Some medical alert devices (separate from smartwatches) are designed to be charged once a week.',
-        tip: 'Quick Tip: Many people charge their Apple Watch on the nightstand while sleeping — it is usually at 100% by morning. And you wear it all day.',
+        tip: 'Quick Tip: Many people charge their Apple Watch on the nightstand while sleeping. It is usually at 100% by morning. And you wear it all day.',
       },
       {
         title: 'Try the watch on in a store',
@@ -446,7 +446,7 @@ The Sony WH-1000XM5 or XM4 are considered the best overall noise-canceling headp
       {
         title: 'Look for comfortable cushions and adjustable headband',
         content: 'Headphones should feel comfortable after 30-60 minutes of wear. Soft foam or leather-style cushions on the ear cups distribute pressure more evenly. An adjustable headband accommodates different head sizes. If possible, try headphones on before purchasing.',
-        tip: 'Quick Tip: If you wear glasses, look for headphones with soft, oval ear cups — they accommodate glasses frames more comfortably than headphones with round cups.',
+        tip: 'Quick Tip: If you wear glasses, look for headphones with soft, oval ear cups. They accommodate glasses frames more comfortably than headphones with round cups.',
       },
     ],
   },
@@ -592,7 +592,7 @@ LastPass was a popular recommendation for years, but suffered significant data b
       },
       {
         title: 'Start with Bitwarden (free)',
-        content: 'Go to bitwarden.com and click "Get Started." Create a free account with your email address and your new master password. Install the browser extension (in Chrome, Firefox, or Edge) — it adds a small icon to your browser that offers to save passwords as you log into sites.',
+        content: 'Go to bitwarden.com and click "Get Started." Create a free account with your email address and your new master password. Install the browser extension (in Chrome, Firefox, or Edge). It adds a small icon to your browser that offers to save passwords as you log into sites.',
       },
       {
         title: 'Add your existing passwords',
@@ -699,7 +699,7 @@ The rule of data backup is the "3-2-1 rule": keep 3 copies of important data, on
       {
         title: 'Connect and do your first backup',
         content: 'Plug the USB cable into your computer. The drive will appear as a new folder (on Windows it shows up in File Explorer; on Mac it appears on the Desktop). Open your Pictures folder, select all photos (Ctrl+A on Windows, Command+A on Mac), and drag them to the external drive folder.',
-        tip: 'Quick Tip: The first backup may take 30-60 minutes if you have many photos. Your computer will still work normally while it copies — you do not need to sit and watch it.',
+        tip: 'Quick Tip: The first backup may take 30-60 minutes if you have many photos. Your computer will still work normally while it copies. You do not need to sit and watch it.',
       },
       {
         title: 'Set up automatic backups',
@@ -855,7 +855,7 @@ Screen: look for cracks, dead pixels (spots that stay black or one color), or un
       },
       {
         title: 'Test the screen, buttons, and cameras',
-        content: 'Run your finger across the entire screen — it should respond evenly everywhere. Test the Home button, volume buttons, and side buttons. Open the front and back cameras and take photos. Make a phone call to test the microphone and earpiece. Connect to WiFi. Charge it briefly to confirm the charging port works.',
+        content: 'Run your finger across the entire screen. It should respond evenly everywhere. Test the Home button, volume buttons, and side buttons. Open the front and back cameras and take photos. Make a phone call to test the microphone and earpiece. Connect to WiFi. Charge it briefly to confirm the charging port works.',
       },
       {
         title: 'Check battery health',

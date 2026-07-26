@@ -83,7 +83,7 @@ Use this method if you no longer have your old phone, or if the Quick Start tran
 1. On your old iPhone, open **Settings** and tap your name at the top.
 2. Tap **iCloud**.
 3. Tap **iCloud Backup**.
-4. Tap **Back Up Now**. Wait for the backup to finish — you will see the date and time of the last successful backup when it is done. Make sure your phone is connected to Wi-Fi before starting.
+4. Tap **Back Up Now**. Wait for the backup to finish. You will see the date and time of the last successful backup when it is done. Make sure your phone is connected to Wi-Fi before starting.
 
 **Step B: Restore your new iPhone from the iCloud backup**
 
@@ -117,7 +117,7 @@ Samsung phones include an app called Smart Switch that is specifically designed 
 3. Open Smart Switch on both phones.
 4. On the old phone, tap **Send data**. On the new phone, tap **Receive data**.
 5. Choose **Wireless** to transfer over Wi-Fi (slower but no cable needed) or **Cable** (faster) if you have the right USB cable.
-6. Follow the on-screen instructions on both phones. Smart Switch will show you a list of what it plans to transfer — you can uncheck anything you do not want to move.
+6. Follow the on-screen instructions on both phones. Smart Switch will show you a list of what it plans to transfer. You can uncheck anything you do not want to move.
 7. Tap **Transfer** and wait. A progress screen shows how much has moved and how much is left.
 
 ---
@@ -140,7 +140,7 @@ Keep both phones plugged into chargers and do not use them during the transfer.
 - Keep both phones within arm's reach of each other — do not move them far apart during a wireless transfer.
 - Check that Wi-Fi is on and connected to the same network on both phones (for wireless transfers).
 - If the transfer freezes for more than 30 minutes without any progress, restart both phones and try again.
-- If Quick Start fails repeatedly, use the iCloud Backup method instead — it is more reliable in some situations.
+- If Quick Start fails repeatedly, use the iCloud Backup method instead. It is more reliable in some situations.
 
 ---
 
@@ -248,7 +248,7 @@ Apps take up storage even when you never open them. If you see apps on your phon
 1. **On your Home Screen:** Press and hold the app icon until a small menu appears. Tap **Remove App**, then tap **Delete App**. Confirm by tapping **Delete App** again.
 2. **From the Storage list:** In Settings → General → iPhone Storage, tap any app in the list, then tap **Delete App**. This screen also shows when you last used the app — helpful for identifying apps worth removing.
 
-**You can always re-download a free app** from the App Store at no charge. Your purchased apps stay linked to your Apple ID permanently — you will never be charged again to re-download something you already purchased.
+**You can always re-download a free app** from the App Store at no charge. Your purchased apps stay linked to your Apple ID permanently. You will never be charged again to re-download something you already purchased.
 
 ---
 
@@ -344,12 +344,12 @@ After completing the steps above, go back to Settings → General → iPhone Sto
     steps: [
       {
         title: 'Check your current storage usage',
-        content: 'Go to Settings → General → iPhone Storage. Look at the colorful bar at the top — it shows which categories are using the most space. Below the bar, apps are listed from largest to smallest. This tells you exactly where to focus your cleanup.',
+        content: 'Go to Settings → General → iPhone Storage. Look at the colorful bar at the top. It shows which categories are using the most space. Below the bar, apps are listed from largest to smallest. This tells you exactly where to focus your cleanup.',
         tip: 'The "System Data" or "Other" category shown in the bar often includes cached data that iOS will clear on its own when space is very low. You can also clear the Safari cache manually (see Step 6).',
       },
       {
         title: 'Delete apps you never use',
-        content: 'In Settings → General → iPhone Storage, review the list of apps. Tap any app you have not used in months, then tap "Delete App." You can re-download any free app from the App Store at no cost, and paid apps stay linked to your Apple ID — you will never be charged again to reinstall them.',
+        content: 'In Settings → General → iPhone Storage, review the list of apps. Tap any app you have not used in months, then tap "Delete App." You can re-download any free app from the App Store at no cost, and paid apps stay linked to your Apple ID. You will never be charged again to reinstall them.',
         tip: 'The storage list shows when you last used each app. If an app shows "Never" or a date from over a year ago, it is a good candidate for deletion.',
       },
       {
@@ -464,11 +464,11 @@ Both tools are free to use and require no account or login.
 
 **YouTube video reviews**
 
-Search for the product name followed by "review" on YouTube. Video reviewers show the product being unboxed and used in real life — it is much harder to fake than a written review. Look for channels with a significant subscriber base and a history of reviewing similar products. The reviewer may receive a free sample from the company (they are usually required to disclose this), but most serious reviewers give honest assessments regardless.
+Search for the product name followed by "review" on YouTube. Video reviewers show the product being unboxed and used in real life. It is much harder to fake than a written review. Look for channels with a significant subscriber base and a history of reviewing similar products. The reviewer may receive a free sample from the company (they are usually required to disclose this), but most serious reviewers give honest assessments regardless.
 
 **Consumer Reports (consumerreports.org)**
 
-Consumer Reports is a nonprofit organization that buys products off store shelves and tests them in their own labs — they do not accept advertising or free samples from manufacturers. Their ratings are unbiased. A Consumer Reports subscription costs about $40 per year, but many US public library systems offer free digital access to Consumer Reports through their library card. Check your library's website or call your local branch.
+Consumer Reports is a nonprofit organization that buys products off store shelves and tests them in their own labs. They do not accept advertising or free samples from manufacturers. Their ratings are unbiased. A Consumer Reports subscription costs about $40 per year, but many US public library systems offer free digital access to Consumer Reports through their library card. Check your library's website or call your local branch.
 
 **How-To Geek and Wirecutter**
 
@@ -497,7 +497,7 @@ When in doubt, sort reviews by "most recent" (rather than "top reviews," which t
 Run through this quick checklist:
 
 1. Look at the review distribution chart — are there any 1- and 2-star reviews at all?
-2. Read three or four of the 2- and 3-star reviews — they often reveal real flaws.
+2. Read three or four of the 2- and 3-star reviews. They often reveal real flaws.
 3. Look at reviewer profiles — do they have a history of reviews?
 4. Paste the URL into Fakespot or ReviewMeta and check the grade.
 5. Search YouTube for a video review.
@@ -531,7 +531,7 @@ These steps take about five minutes and can save you from buying something that 
       {
         title: 'Check Consumer Reports for unbiased lab testing',
         content: 'For significant purchases — appliances, electronics, health devices — check consumerreports.org. Consumer Reports buys products at retail prices and tests them in their own labs. They accept no advertising or free samples. Many US public libraries offer free access to Consumer Reports with a library card. Call your local branch or check the library website to see if this is available.',
-        tip: 'If Consumer Reports has tested the product, their ratings are among the most reliable available — they have no financial relationship with the manufacturers they test.',
+        tip: 'If Consumer Reports has tested the product, their ratings are among the most reliable available. They have no financial relationship with the manufacturers they test.',
       },
       {
         title: 'Sort reviews by "Most Recent" before deciding',
@@ -632,7 +632,7 @@ Google Pay is available on most Android phones running Android 5.0 or later — 
 5. Scan your card with the camera or enter the details manually.
 6. Enter the card's expiration date and security code.
 7. Tap **Save and continue**.
-8. Verify the card with your bank — you will receive a text, email, or be asked to call your bank, depending on your bank's process.
+8. Verify the card with your bank. You will receive a text, email, or be asked to call your bank, depending on your bank's process.
 
 Once verified, the card appears in your Google Wallet and is ready to use for payments.
 

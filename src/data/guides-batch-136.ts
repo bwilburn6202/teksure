@@ -29,7 +29,7 @@ Watch a walkthrough: search YouTube for "Medicare Plan Finder tutorial AARP" —
     steps: [
       {
         title: 'Create or sign in to your Medicare account',
-        content: 'Open your web browser and go to medicare.gov. Click the orange "Log in / Create account" button in the top right. If you have not signed up before, click "Create account." You will need your Medicare number (the 11-character ID on your red, white, and blue card), your date of birth, your zip code, and an email address you can check. Medicare will email you a code to confirm the account. Write down your username and password somewhere safe — you will need them every year.',
+        content: 'Open your web browser and go to medicare.gov. Click the orange "Log in / Create account" button in the top right. If you have not signed up before, click "Create account." You will need your Medicare number (the 11-character ID on your red, white, and blue card), your date of birth, your zip code, and an email address you can check. Medicare will email you a code to confirm the account. Write down your username and password somewhere safe. You will need them every year.',
         tip: 'Quick Tip: If you already have a Login.gov or ID.me account from another government service, Medicare lets you sign in with that instead. One less password to remember.',
       },
       {
@@ -61,7 +61,7 @@ Watch a walkthrough: search YouTube for "Medicare Plan Finder tutorial AARP" —
       },
       {
         title: 'Get free help if you get stuck',
-        content: 'Every state has a free Medicare counseling program called SHIP (State Health Insurance Help Program). SHIP counselors are trained, unbiased, and do not sell anything. Find your local SHIP by calling 1-877-839-2675 or going to shiphelp.org. AARP also has a free Medicare hotline at 1-877-227-1620 — they can walk you through the plan comparison over the phone if you prefer not to use the website. Both services are free for everyone, including non-AARP members.',
+        content: 'Every state has a free Medicare counseling program called SHIP (State Health Insurance Help Program). SHIP counselors are trained, unbiased, and do not sell anything. Find your local SHIP by calling 1-877-839-2675 or going to shiphelp.org. AARP also has a free Medicare hotline at 1-877-227-1620. They can walk you through the plan comparison over the phone if you prefer not to use the website. Both services are free for everyone, including non-AARP members.',
         tip: 'Quick Tip: Avoid the unsolicited phone calls and TV commercials that say "Compare plans now!" Many of those go to insurance brokers paid commission for steering you to specific plans. SHIP and AARP have no financial stake.',
       },
     ],
@@ -81,7 +81,7 @@ Watch a walkthrough: search YouTube for "Medicare Plan Finder tutorial AARP" —
 
 Apple's response was Stolen Device Protection, a free setting that adds a second layer of security when your iPhone is away from familiar places like home or work. With it on, a thief who knows your passcode still cannot change your Apple ID, view saved passwords, or wipe the phone. They have to wait an hour and then do Face ID, which they cannot fake.
 
-As of 2026 this feature is on iOS 17.3 and every version since. If you have an iPhone, you should have this on. This guide shows you how — it takes about 60 seconds.
+As of 2026 this feature is on iOS 17.3 and every version since. If you have an iPhone, you should have this on. This guide shows you how. It takes about 60 seconds.
 
 (Sources: Apple Support — Stolen Device Protection, support.apple.com/118021; Wall Street Journal "iPhone Thieves Drain Bank Accounts" investigation; FTC Consumer Alert on phone theft, consumer.ftc.gov)
 
@@ -202,7 +202,7 @@ Watch a walkthrough: search YouTube for "how to cancel Netflix Disney Plus Hulu 
       },
       {
         title: 'Netflix',
-        content: 'Open a web browser and go to netflix.com. Sign in. Click your profile picture (top right) → "Account." Scroll to "Membership & Billing." Click "Cancel Membership." Confirm. Netflix keeps your account active through the end of the current billing period — you do not lose access right away. If you change your mind in the next 10 months, your viewing history and downloads come back automatically when you restart.',
+        content: 'Open a web browser and go to netflix.com. Sign in. Click your profile picture (top right) → "Account." Scroll to "Membership & Billing." Click "Cancel Membership." Confirm. Netflix keeps your account active through the end of the current billing period. You do not lose access right away. If you change your mind in the next 10 months, your viewing history and downloads come back automatically when you restart.',
       },
       {
         title: 'Disney+ / Hulu / ESPN+ (the Disney bundle)',
@@ -227,7 +227,7 @@ Watch a walkthrough: search YouTube for "how to cancel Netflix Disney Plus Hulu 
       },
       {
         title: 'Replace a stolen card without losing access (the trick)',
-        content: 'If your card is replaced and you do not want any streaming service to renew, do nothing — they will all fail to charge and put your account in a paused state for 7-30 days. After that, they cancel automatically. This is the lazy person\'s mass cancellation. The only catch: you lose access right away when each charge fails, not at the end of the billing month. Use this trick only if you genuinely want to cancel.',
+        content: 'If your card is replaced and you do not want any streaming service to renew, do nothing. They will all fail to charge and put your account in a paused state for 7-30 days. After that, they cancel automatically. This is the lazy person\'s mass cancellation. The only catch: you lose access right away when each charge fails, not at the end of the billing month. Use this trick only if you genuinely want to cancel.',
         tip: 'Quick Tip: A separate "subscription debit card" through Privacy.com (free for personal use) lets you create a virtual card just for subscriptions. Cancel a service by deleting the virtual card — no website hunting needed.',
       },
     ],
@@ -243,7 +243,7 @@ Watch a walkthrough: search YouTube for "how to cancel Netflix Disney Plus Hulu 
     publishedAt: '2026-05-15',
     lastVerifiedAt: '2026-05-15',
     difficulty: 'Beginner',
-    body: `The FCC estimates Americans get 33 spam calls per person per month. Robocalls, scammers pretending to be the IRS, "your car warranty is about to expire" — they all use spoofed phone numbers that look like real local numbers.
+    body: `The FCC estimates Americans get 33 spam calls per person per month. Robocalls, scammers pretending to be the IRS, "your car warranty is about to expire". They all use spoofed phone numbers that look like real local numbers.
 
 iPhone has three free settings that, used together, block almost all of them. Add a free third-party app like Hiya or Truecaller and you can knock spam calls down to maybe one a week. The whole setup takes 5 minutes and costs nothing.
 
@@ -255,7 +255,7 @@ Watch the setup: search YouTube for "iPhone silence unknown callers 2026" for a 
     steps: [
       {
         title: 'Turn on Silence Unknown Callers (the big one)',
-        content: 'Open Settings → scroll down to Phone (or "Apps" → Phone on iOS 18 and 26) → "Silence Unknown Callers" → turn it on. From now on, any caller who is not in your Contacts, not in your recent outgoing calls, and not in Siri Suggestions (people you have messaged or emailed) will not ring your phone. They go straight to voicemail. You still see a missed call notification. So you know they called — they just cannot interrupt you. Real callers leave voicemails. Spammers usually do not.',
+        content: 'Open Settings → scroll down to Phone (or "Apps" → Phone on iOS 18 and 26) → "Silence Unknown Callers" → turn it on. From now on, any caller who is not in your Contacts, not in your recent outgoing calls, and not in Siri Suggestions (people you have messaged or emailed) will not ring your phone. They go straight to voicemail. You still see a missed call notification. So you know they called. They just cannot interrupt you. Real callers leave voicemails. Spammers usually do not.',
         warning: 'If you are expecting a call from a number you do not know (a doctor, a delivery driver, a job interview), turn this OFF for the day. Then turn it back on. Important real calls do get silenced sometimes — the trade-off is fewer spam interruptions.',
       },
       {
@@ -315,7 +315,7 @@ Watch a walkthrough: search YouTube for "TP-Link Kasa smart plug setup 2026" for
       },
       {
         title: 'Download the right app before you unbox the plug',
-        content: 'Before you plug anything in, download the app the plug needs. Each brand has its own. Kasa = "Kasa Smart" (TP-Link). Wyze = "Wyze." Amazon Basics smart plug = "Amazon Alexa." Govee = "Govee Home." Apple HomeKit plugs use the built-in Apple Home app. Install the app on your phone (App Store on iPhone, Play Store on Android). Open it, tap "Sign Up," create an account with your email — you will need it to be signed in for setup.',
+        content: 'Before you plug anything in, download the app the plug needs. Each brand has its own. Kasa = "Kasa Smart" (TP-Link). Wyze = "Wyze." Amazon Basics smart plug = "Amazon Alexa." Govee = "Govee Home." Apple HomeKit plugs use the built-in Apple Home app. Install the app on your phone (App Store on iPhone, Play Store on Android). Open it, tap "Sign Up," create an account with your email. You will need it to be signed in for setup.',
       },
       {
         title: 'Plug in the smart plug and watch for the blinking light',
@@ -361,7 +361,7 @@ Watch a walkthrough: search YouTube for "TP-Link Kasa smart plug setup 2026" for
 
 This guide walks you through the recovery process in the order Google actually does it, what each question is really asking, and what to do when the system says no. Most people get back in within an hour if they go in calm and answer carefully.
 
-Two things make recovery much easier if you set them up BEFORE losing access: a recovery phone number and a recovery email. If you can still get in right now, add both at myaccount.google.com — it takes 60 seconds and saves you from this guide.
+Two things make recovery much easier if you set them up BEFORE losing access: a recovery phone number and a recovery email. If you can still get in right now, add both at myaccount.google.com. It takes 60 seconds and saves you from this guide.
 
 (Sources: Google Account Help — Account Recovery, support.google.com/accounts/answer/7682439; Google Safety Center, safety.google)
 
@@ -429,12 +429,12 @@ Watch a walkthrough: search YouTube for "Chrome settings for seniors 2026" for s
     steps: [
       {
         title: 'Set a larger default font size',
-        content: 'Open Chrome → click the three-dot menu in the top right → Settings → in the left sidebar, click "Appearance." Find the "Font size" dropdown. Default is "Medium." Change it to "Large" or "Very Large." Every website you visit right away shows in bigger text. This is the single biggest improvement for daily web reading. If you want even more control, click "Customize fonts" right below — you can set separate sizes for body text, headings, and minimum allowed size (set the minimum to 16 or 18 to block tiny print everywhere).',
+        content: 'Open Chrome → click the three-dot menu in the top right → Settings → in the left sidebar, click "Appearance." Find the "Font size" dropdown. Default is "Medium." Change it to "Large" or "Very Large." Every website you visit right away shows in bigger text. This is the single biggest improvement for daily web reading. If you want even more control, click "Customize fonts" right below. You can set separate sizes for body text, headings, and minimum allowed size (set the minimum to 16 or 18 to block tiny print everywhere).',
         tip: 'Quick Tip: On Chrome for iPhone or Android, the same setting is at: tap the three-dot menu → Settings → Accessibility → Text scaling. Slide to 150% or higher.',
       },
       {
         title: 'Turn on page zoom for all sites',
-        content: 'In the same Appearance section, find "Page zoom." Default is 100%. Change it to 110% or 125%. Now every site loads at that zoom level by default. If a specific site looks too big, press Ctrl+minus (or Cmd+minus on Mac) to zoom out for just that one site — Chrome remembers per-site zoom. Press Ctrl+0 to reset a site to default. Page zoom is different from font size — it scales the whole layout, including images and buttons.',
+        content: 'In the same Appearance section, find "Page zoom." Default is 100%. Change it to 110% or 125%. Now every site loads at that zoom level by default. If a specific site looks too big, press Ctrl+minus (or Cmd+minus on Mac) to zoom out for just that one site — Chrome remembers per-site zoom. Press Ctrl+0 to reset a site to default. Page zoom is different from font size. It scales the whole layout, including images and buttons.',
       },
       {
         title: 'Block autoplay videos (the news site fix)',

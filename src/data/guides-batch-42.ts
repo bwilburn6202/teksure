@@ -4,7 +4,7 @@ export const guidesBatch42: Guide[] = [
   {
     slug: `icloud-drive-guide`,
     title: `How to Use iCloud Drive to Store and Share Files`,
-    excerpt: `iCloud Drive is Apple's cloud storage — it keeps your documents, photos, and files available on all your Apple devices and lets you share them with others.`,
+    excerpt: `iCloud Drive is Apple's cloud storage. It keeps your documents, photos, and files available on all your Apple devices and lets you share them with others.`,
     category: `essential-skills`,
     tags: [`icloud drive`, `icloud`, `cloud storage`, `files`, `apple`, `documents`],
     readTime: `5 min`,
@@ -42,7 +42,7 @@ Files stored in iCloud Drive sync automatically across devices — any change yo
       },
       {
         title: `Share a file with someone`,
-        content: `In the Files app, press and hold a file → tap "Share." Choose "Add People" to share directly with another iCloud user — they get a link and can view or edit the file. Or tap "Copy Link" to paste the link into a message or email. Set whether the recipient can view only or make edits.`,
+        content: `In the Files app, press and hold a file → tap "Share." Choose "Add People" to share directly with another iCloud user. They get a link and can view or edit the file. Or tap "Copy Link" to paste the link into a message or email. Set whether the recipient can view only or make edits.`,
         tip: `For sharing with someone who uses Windows or Android, send them the link and they can open it at icloud.com in any web browser — no Apple device needed.`,
       },
       {
@@ -55,7 +55,7 @@ Files stored in iCloud Drive sync automatically across devices — any change yo
   {
     slug: `iphone-files-app-guide`,
     title: `How to Use the Files App on iPhone and iPad`,
-    excerpt: `The Files app on iPhone and iPad is your digital filing cabinet — it lets you find, open, move, and organize documents from iCloud, your device, and other apps in one place.`,
+    excerpt: `The Files app on iPhone and iPad is your digital filing cabinet. It lets you find, open, move, and organize documents from iCloud, your device, and other apps in one place.`,
     category: `phone-guides`,
     tags: [`files app`, `iphone`, `ipad`, `documents`, `icloud drive`, `file management`],
     readTime: `5 min`,
@@ -175,7 +175,7 @@ You can use Sidecar in two modes:
 - **Extended display**: The iPad adds more screen space to your Mac. Different things can show on each screen.
 - **Mirror display**: The iPad shows exactly the same thing as your Mac.
 
-The iPad's touch screen also works as a pointing device when in Sidecar mode — you can tap on the iPad to click things in macOS. And if you have an Apple Pencil, you can draw on the iPad and have it appear in Mac apps.
+The iPad's touch screen also works as a pointing device when in Sidecar mode. You can tap on the iPad to click things in macOS. And if you have an Apple Pencil, you can draw on the iPad and have it appear in Mac apps.
 
 Requirements: iPad with iPadOS 13 or later (most iPads from 2014 onward), Mac running macOS Sonoma or later, both signed into the same Apple ID.`,
     steps: [
@@ -232,7 +232,7 @@ Requirements: Both devices signed into the same Apple ID, Bluetooth on, Wi-Fi on
       },
       {
         title: `Use Handoff from iPhone to Mac`,
-        content: `Start using a supported app on your iPhone (like Safari, Mail, or Notes). On your Mac, look at the Dock — you will see a small icon at the far right of the Dock showing the app you are using on your iPhone. Click that icon to open the app and continue right where you left off.`,
+        content: `Start using a supported app on your iPhone (like Safari, Mail, or Notes). On your Mac, look at the Dock. You will see a small icon at the far right of the Dock showing the app you are using on your iPhone. Click that icon to open the app and continue right where you left off.`,
         tip: `The Handoff icon in the Dock appears automatically when your iPhone is nearby and you are actively using a compatible app.`,
       },
       {
@@ -375,12 +375,12 @@ Notes sync via iCloud, so anything you write on iPhone appears on your Mac and i
     steps: [
       {
         title: `Make a checklist note`,
-        content: `Open Notes and start a new note (tap the pencil icon). Tap the checklist button (circle with a checkmark) in the formatting toolbar above the keyboard. Each new line becomes a checkbox item. Type your list. Tap any checkbox to mark it done — it moves to the completed section. Great for grocery or packing lists.`,
+        content: `Open Notes and start a new note (tap the pencil icon). Tap the checklist button (circle with a checkmark) in the formatting toolbar above the keyboard. Each new line becomes a checkbox item. Type your list. Tap any checkbox to mark it done. It moves to the completed section. Great for grocery or packing lists.`,
         tip: `Quick Tip: Ask Siri to "Add milk to my note" or "Add milk to my shopping list note" and Siri will add it to the note you specify without opening the app.`,
       },
       {
         title: `Lock a note with Face ID`,
-        content: `Press and hold any note in the notes list → tap "Lock Note." Set a passcode or use Face ID/Touch ID. The note content becomes hidden — it shows only the title until you unlock it. This is good for storing passwords, financial information, or personal details.`,
+        content: `Press and hold any note in the notes list → tap "Lock Note." Set a passcode or use Face ID/Touch ID. The note content becomes hidden. It shows only the title until you unlock it. This is good for storing passwords, financial information, or personal details.`,
         tip: `Locked notes use a separate password from your phone passcode by default. You can change this in Settings → Notes → Password.`,
       },
       {
@@ -422,7 +422,7 @@ Programs it can find include:
 - **Utility company discount programs** — many electric companies offer low-income rates
 - **State-specific programs** for transportation, vision, dental, and more
 
-BenefitsCheckUp does not collect your Social Security number and keeps your information confidential. It is purely a screening tool — you can answer questions to see what programs you likely qualify for, then apply for the ones that interest you.
+BenefitsCheckUp does not collect your Social Security number and keeps your information confidential. It is purely a screening tool. You can answer questions to see what programs you likely qualify for, then apply for the ones that interest you.
 
 The website is benefitscheckup.org. It is free and takes about 10 minutes to complete.`,
     steps: [
@@ -447,7 +447,7 @@ The website is benefitscheckup.org. It is free and takes about 10 minutes to com
       {
         title: `Apply for programs that interest you`,
         content: `Start with any programs in the Health category (prescription savings can be significant) and Energy category (LIHEAP helps with bills). Call the provided phone number or visit the program website. Have your income information, Medicare card (if applicable), and photo ID ready for most applications.`,
-        warning: `BenefitsCheckUp only screens for eligibility — it does not apply on your behalf. You need to contact each program separately to complete an official application.`,
+        warning: `BenefitsCheckUp only screens for eligibility. It does not apply on your behalf. You need to contact each program separately to complete an official application.`,
       },
     ],
   },
@@ -493,7 +493,7 @@ Sites operate February through mid-April. Some operate year-round for amended re
       },
       {
         title: `Attend your appointment`,
-        content: `At the appointment, a trained volunteer prepares your return while you are present. They will ask questions, enter your information, calculate your refund or amount owed, and review the completed return with you before filing. The service is completely free — you should never be asked to pay.`,
+        content: `At the appointment, a trained volunteer prepares your return while you are present. They will ask questions, enter your information, calculate your refund or amount owed, and review the completed return with you before filing. The service is completely free. You should never be asked to pay.`,
         warning: `Legitimate VITA and TCE volunteers are IRS-certified and do not charge fees. If anyone at a "free tax site" asks for payment, leave and report it to 1-800-829-1040.`,
       },
       {
@@ -612,13 +612,13 @@ Having readings on your phone means you see your glucose without reaching for a 
     difficulty: `Intermediate`,
     body: `Watching a family Zoom call on a 55-inch TV is a much better experience than squinting at a phone screen. There are several ways to get Zoom on your TV, depending on what kind of TV or streaming device you have.
 
-**Option 1 — Zoom app on Fire TV**: Amazon Fire TV sticks and Fire TV Cube have a native Zoom app. This is the most complete option — you can use a Fire TV Zoom Room Camera (sold separately) for the video and audio, or cast video from your phone while using the TV for display.
+**Option 1 — Zoom app on Fire TV**: Amazon Fire TV sticks and Fire TV Cube have a native Zoom app. This is the most complete option. You can use a Fire TV Zoom Room Camera (sold separately) for the video and audio, or cast video from your phone while using the TV for display.
 
 **Option 2 — Cast from phone or computer**: Use AirPlay (iPhone/Mac → Apple TV), Google Cast (Android/Chrome → Chromecast or Chromecast-enabled TV), or screen mirroring to show your Zoom call on the TV. This is the most common approach and requires no special TV support.
 
 **Option 3 — Zoom app on Samsung Smart TV**: Some Samsung Smart TVs (2021 or newer running Tizen OS) have a Zoom app in the app store.
 
-**Option 4 — Computer to TV via HDMI**: Connect your laptop to your TV with an HDMI cable. Set the TV as your computer display. Join Zoom on the laptop — it appears on the big screen. Your laptop's camera and microphone handle audio and video.
+**Option 4 — Computer to TV via HDMI**: Connect your laptop to your TV with an HDMI cable. Set the TV as your computer display. Join Zoom on the laptop. It appears on the big screen. Your laptop's camera and microphone handle audio and video.
 
 For most people, casting from a phone or using a laptop + HDMI cable are the simplest approaches.`,
     steps: [
@@ -684,7 +684,7 @@ Why check your report?
       {
         title: `View your reports`,
         content: `Select which bureaus you want to see and click "Continue." Each bureau's report opens in a new window or downloads as a PDF. You can view all three at once or spread them out through the year (for example, one bureau every 4 months to monitor throughout the year).`,
-        tip: `Quick Tip: Download or print each report — you cannot go back and view the same report again without requesting a new one.`,
+        tip: `Quick Tip: Download or print each report. You cannot go back and view the same report again without requesting a new one.`,
       },
       {
         title: `Review accounts and payment history`,
@@ -728,7 +728,7 @@ Why check your report?
       {
         title: `Check if you recognize the merchant`,
         content: `Look up the charge name online — sometimes purchases show up under a parent company name or generic processor name rather than the store you shopped at. For example, "AMZN Mktp US" is Amazon. "SQ *" prefix means the merchant uses Square as their payment processor. If you still do not recognize it after searching, proceed to dispute.`,
-        tip: `Quick Tip: Check your email for a receipt matching the date and amount — you may have forgotten about a purchase.`,
+        tip: `Quick Tip: Check your email for a receipt matching the date and amount. You may have forgotten about a purchase.`,
       },
       {
         title: `Try contacting the merchant first (for errors)`,
@@ -761,7 +761,7 @@ Why check your report?
     thumbnailEmoji: ``,
     publishedAt: `2026-04-19`,
     difficulty: `Beginner`,
-    body: `Google Translate is a free app that can do much more than translate text you type in. One of its most impressive features is camera translation — you point your phone camera at text in another language and the app overlays a translation in real time, right on top of the original text.
+    body: `Google Translate is a free app that can do much more than translate text you type in. One of its most impressive features is camera translation. You point your phone camera at text in another language and the app overlays a translation in real time, right on top of the original text.
 
 This is incredibly useful for:
 - Reading menus at foreign-cuisine restaurants where the menu is partly or entirely in another language
@@ -919,7 +919,7 @@ The key question is: do you have a backup? If yes, recovery is straightforward. 
 
 Many Android users run out of storage without realizing how much space is being used by junk. Files by Google scans your phone and organizes what it finds into easy-to-clean categories.
 
-The app also works as a regular file manager — you can browse all your files organized by type (images, videos, audio, documents), move files, and share files with nearby Android devices using Nearby Share.
+The app also works as a regular file manager. You can browse all your files organized by type (images, videos, audio, documents), move files, and share files with nearby Android devices using Nearby Share.
 
 **Storage categories Files by Google identifies:**
 - **Junk files**: App cache, temporary files
@@ -941,7 +941,7 @@ Files by Google is completely free and available in the Google Play Store. On ma
       },
       {
         title: `Clean up junk files`,
-        content: `Tap "Clean" → "Junk files." The app scans for temporary files, app cache, and residual downloads. Tap "Confirm and free up [X] MB" to delete them all at once. Junk files are safe to delete — they will rebuild as needed by apps. This often frees 500 MB to several GB instantly.`,
+        content: `Tap "Clean" → "Junk files." The app scans for temporary files, app cache, and residual downloads. Tap "Confirm and free up [X] MB" to delete them all at once. Junk files are safe to delete. They will rebuild as needed by apps. This often frees 500 MB to several GB instantly.`,
         tip: `Quick Tip: Clean junk files once a month to keep your phone running smoothly. It takes about 30 seconds.`,
       },
       {

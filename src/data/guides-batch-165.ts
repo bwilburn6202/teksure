@@ -27,7 +27,7 @@ Open the Settings app and tap Privacy (on some phones it is labeled Permissions 
 
 To change a permission, tap the app name and choose a different setting. "Allow only while using the app" is a good middle-ground for apps that genuinely need the camera or microphone but should not have it running in the background.
 
-**Quick Tip:** If an app you rarely use has camera or microphone access, it is perfectly safe to remove that permission. The app will still work for most things — it will ask you again if it ever needs camera or microphone access in the future.
+**Quick Tip:** If an app you rarely use has camera or microphone access, it is perfectly safe to remove that permission. The app will still work for most things. It will ask you again if it ever needs camera or microphone access in the future.
 
 **A good habit to build**
 
@@ -42,7 +42,7 @@ Set a reminder to check your camera and microphone permissions every few months.
     steps: [
       {
         title: "Open your phone's Settings app",
-        content: "Find the Settings app on your phone — it looks like a gear icon. Tap it to open your phone's main settings menu."
+        content: "Find the Settings app on your phone. It looks like a gear icon. Tap it to open your phone's main settings menu."
       },
       {
         title: "Go to Privacy or Permission settings",
@@ -165,7 +165,7 @@ If the Assistant misunderstands you, you can tap the microphone icon and try aga
 
 **Privacy note**
 
-Google Assistant only activates when it hears the words "Hey Google" — it is not continuously recording your conversations. If you would prefer not to use voice activation, you can leave Hey Google turned off and open the Assistant by pressing and holding the home button instead.
+Google Assistant only activates when it hears the words "Hey Google". It is not continuously recording your conversations. If you would prefer not to use voice activation, you can leave Hey Google turned off and open the Assistant by pressing and holding the home button instead.
 
 **Quick Tip:** You can ask Google Assistant to call a contact by name. Say "Hey Google, call John Smith" and it will find that person in your contacts and dial the number for you — no need to search through your contacts list.`,
     category: "phone-guides",
@@ -217,7 +217,7 @@ This guide walks you through everything you need to know — from opening the Ca
 
 The Camera app is the built-in app Apple includes on every iPhone. It has an icon that looks like a small camera. You will find it on your home screen, or you can swipe left on the lock screen to open it quickly without even unlocking your phone.
 
-When the Camera app opens, it starts in Photo mode by default — you will see a shutter button (a large white circle) at the bottom of the screen. This takes still photos.
+When the Camera app opens, it starts in Photo mode by default. You will see a shutter button (a large white circle) at the bottom of the screen. This takes still photos.
 
 **Switching to Video mode**
 
@@ -256,7 +256,7 @@ Videos take up more storage space than photos. A one-minute video in standard qu
     steps: [
       {
         title: "Open the Camera app on your iPhone",
-        content: "Find the Camera app on your home screen — it looks like a small camera. Tap it to open. You can also swipe left from your lock screen to open the Camera without unlocking your phone first."
+        content: "Find the Camera app on your home screen. It looks like a small camera. Tap it to open. You can also swipe left from your lock screen to open the Camera without unlocking your phone first."
       },
       {
         title: "Switch from Photo mode to Video mode",

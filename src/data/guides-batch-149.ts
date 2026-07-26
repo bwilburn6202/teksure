@@ -30,7 +30,7 @@ These steps work on any current iPhone with an up-to-date version of iOS. If you
 
 **Why organizing your home screen matters**
 
-When Phone, Messages, and Camera are buried on page three behind twenty other icons, it takes longer to do the things you need most. A tidy home screen means fewer taps, less searching, and less frustration. You are not changing how the phone works — you are rearranging the furniture so the most useful items are closest to hand.
+When Phone, Messages, and Camera are buried on page three behind twenty other icons, it takes longer to do the things you need most. A tidy home screen means fewer taps, less searching, and less frustration. You are not changing how the phone works. You are rearranging the furniture so the most useful items are closest to hand.
 
 **How to move an app**
 
@@ -46,7 +46,7 @@ You do not have to delete an app to get it off your home screen. iOS has a featu
 
 **How to customize the Dock**
 
-The Dock is the row of four apps at the very bottom of your home screen — it stays visible on every page. By default, Apple puts Phone, Safari, Messages, and Mail there. You can change any of those. Enter jiggle mode, drag an app out of the Dock to free up a slot, then drag any app from the home screen into the Dock. Most people find it helpful to keep Phone, Messages, Camera, and either Maps or a video-calling app (like FaceTime) in the Dock so those four are always one tap away.
+The Dock is the row of four apps at the very bottom of your home screen. It stays visible on every page. By default, Apple puts Phone, Safari, Messages, and Mail there. You can change any of those. Enter jiggle mode, drag an app out of the Dock to free up a slot, then drag any app from the home screen into the Dock. Most people find it helpful to keep Phone, Messages, Camera, and either Maps or a video-calling app (like FaceTime) in the Dock so those four are always one tap away.
 
 **How to add a widget**
 
@@ -139,7 +139,7 @@ Fake review services often operate overseas, and the resulting reviews may have 
 
 **The Amazon "Verified Purchase" badge**
 
-Amazon marks reviews with "Verified Purchase" when the reviewer actually bought the item through Amazon. This is a useful signal — it means Amazon confirmed the purchase happened. That said, it does not guarantee honesty. Some fake review operations do purchase the product before leaving a review to earn this badge. Still, a mix of verified and unverified reviews, where the unverified ones are more positive, is worth noticing.
+Amazon marks reviews with "Verified Purchase" when the reviewer actually bought the item through Amazon. This is a useful signal. It means Amazon confirmed the purchase happened. That said, it does not guarantee honesty. Some fake review operations do purchase the product before leaving a review to earn this badge. Still, a mix of verified and unverified reviews, where the unverified ones are more positive, is worth noticing.
 
 **Free tools: Fakespot and ReviewMeta**
 
@@ -237,7 +237,7 @@ App permissions: Individual apps may have access to your camera, microphone, con
 
 **Which settings to keep on versus off**
 
-Keep location on for apps like Maps and Weather — they need your location to work properly. Keep the camera and microphone on for apps like Zoom or FaceTime if you use video calls. Turn off the advertising ID — there is no benefit to you from having it on. Turn off Recall snapshots if you have a Copilot+ PC and you are not actively using the feature. Set diagnostic data to "required only."
+Keep location on for apps like Maps and Weather. They need your location to work properly. Keep the camera and microphone on for apps like Zoom or FaceTime if you use video calls. Turn off the advertising ID. There is no benefit to you from having it on. Turn off Recall snapshots if you have a Copilot+ PC and you are not actively using the feature. Set diagnostic data to "required only."
 
 There is no single right answer for everyone. The goal is to be aware of what your computer is sharing and make intentional choices rather than leaving everything at the factory defaults.
 
@@ -272,7 +272,7 @@ Source: Microsoft Support — Recall and privacy in Windows 11 (support.microsof
       },
       {
         title: 'Save your settings and check back after major updates',
-        content: 'Settings save automatically when you toggle them — there is no Save button to press. Close Settings when you are done. Make a note to revisit Privacy & security settings once or twice a year, or any time you hear about a significant Windows update. Microsoft sometimes adds new privacy-related options with major updates. And it is worth knowing about them.',
+        content: 'Settings save automatically when you toggle them. There is no Save button to press. Close Settings when you are done. Make a note to revisit Privacy & security settings once or twice a year, or any time you hear about a significant Windows update. Microsoft sometimes adds new privacy-related options with major updates. And it is worth knowing about them.',
       },
     ],
   },
@@ -361,7 +361,7 @@ Sources: Apple Support — Use Find My on iPhone (support.apple.com). Google Sup
       },
       {
         title: 'Locate your missing iPhone using iCloud.com or another Apple device',
-        content: 'If your iPhone goes missing, open a web browser on any computer and go to icloud.com. Sign in with your Apple ID email and password. Click "Find iPhone" or "Find My." Your phone will appear on a map. Click the phone name to see three choices: Play Sound (makes the phone ring loudly), Mark as Lost (locks it and shows your contact info on the screen), or Erase iPhone (deletes all data permanently). Start with Play Sound if the phone might be nearby — it could be under a couch cushion.',
+        content: 'If your iPhone goes missing, open a web browser on any computer and go to icloud.com. Sign in with your Apple ID email and password. Click "Find iPhone" or "Find My." Your phone will appear on a map. Click the phone name to see three choices: Play Sound (makes the phone ring loudly), Mark as Lost (locks it and shows your contact info on the screen), or Erase iPhone (deletes all data permanently). Start with Play Sound if the phone might be nearby. It could be under a couch cushion.',
         tip: 'Quick Tip: You can also use the Find My app on an iPad or a borrowed iPhone. Tap the Devices tab, find your phone in the list, and tap it to see location and options.',
       },
       {

@@ -27,7 +27,7 @@ export const guidesBatch150: Guide[] = [
 
 This works using a technology called NFC — short for Near Field Communication. Think of it as a very short-range radio signal that your phone and the payment terminal exchange when they are held close together (usually within an inch or two). The signal is encrypted, which means the store never sees your real card number.
 
-On iPhones, this feature is called Apple Pay. On Android phones, it is called Google Pay (also sometimes called Google Wallet). Both work the same way at the store — you hold your phone near the terminal and it pays.
+On iPhones, this feature is called Apple Pay. On Android phones, it is called Google Pay (also sometimes called Google Wallet). Both work the same way at the store. You hold your phone near the terminal and it pays.
 
 **Why tap-to-pay is safer than swiping your physical card**
 
@@ -55,7 +55,7 @@ Sources: Apple Support (https://support.apple.com/en-us/111900), Google Help (ht
     steps: [
       {
         title: 'Add your card to Apple Pay or Google Wallet',
-        content: 'iPhone: open the built-in Wallet app and tap the + button in the top-right corner. Tap "Debit or Credit Card," then follow the prompts — you can photograph the card or type the number manually. Your bank will send a short verification code to confirm it is you. Android: open the Google Wallet app (install it free from the Play Store if needed). Tap "Add to Wallet," then "Payment card." Follow the same steps. Most major US bank cards are supported.',
+        content: 'iPhone: open the built-in Wallet app and tap the + button in the top-right corner. Tap "Debit or Credit Card," then follow the prompts. You can photograph the card or type the number manually. Your bank will send a short verification code to confirm it is you. Android: open the Google Wallet app (install it free from the Play Store if needed). Tap "Add to Wallet," then "Payment card." Follow the same steps. Most major US bank cards are supported.',
         tip: 'Quick Tip: You can add more than one card and set a default. Your default card is the one that charges when you tap without selecting another.',
       },
       {
@@ -148,7 +148,7 @@ Sources: Apple Support (https://support.apple.com/en-us/111797), Google Android 
       {
         title: 'Use Select to Speak on Android',
         content: 'Navigate to the article, email, or page you want to hear. Tap the accessibility icon at the bottom of the screen (the circle with a person inside). The screen dims slightly to show Select to Speak is active. Now tap any word and your phone will start reading from that point forward. Or drag your finger to highlight a specific section and it will read only that. A small media controller appears at the bottom — tap pause, stop, or the speed control (1x) to adjust.',
-        tip: 'Quick Tip: Tap the speed control labeled "1x" to change reading speed. Try 0.75x when starting out — it is noticeably easier to follow than the default.',
+        tip: 'Quick Tip: Tap the speed control labeled "1x" to change reading speed. Try 0.75x when starting out. It is noticeably easier to follow than the default.',
       },
       {
         title: 'Adjust the reading voice',
@@ -220,7 +220,7 @@ Sources: Apple Support (https://support.apple.com/en-us/111799), Google Android 
     steps: [
       {
         title: 'Open the Health app on iPhone and find Medical ID',
-        content: 'On your iPhone, find and open the Health app — it has a white background with a red heart icon. Tap your profile picture or initials in the top-right corner. On the next screen, tap "Medical ID." If you have never filled it in, you will see a prompt to create one. Tap "Edit" in the top-right corner to begin entering your information. You can also reach Medical ID directly by going to Health → Browse → Medical ID.',
+        content: 'On your iPhone, find and open the Health app. It has a white background with a red heart icon. Tap your profile picture or initials in the top-right corner. On the next screen, tap "Medical ID." If you have never filled it in, you will see a prompt to create one. Tap "Edit" in the top-right corner to begin entering your information. You can also reach Medical ID directly by going to Health → Browse → Medical ID.',
       },
       {
         title: 'Fill in your medical information on iPhone',
@@ -293,7 +293,7 @@ An ad blocker handles the first category. Revoking notification permission handl
 
 **What an ad blocker does**
 
-An ad blocker is a free browser extension (a small add-on program) that runs quietly in your browser and prevents most ads and pop-ups from loading at all. The most widely trusted free ad blocker is called uBlock Origin — it works in Chrome, Edge, and Firefox on computers. For Safari on iPhone and Mac, the equivalent is called AdGuard. Both are free, maintained by reputable developers, and do not collect your data.
+An ad blocker is a free browser extension (a small add-on program) that runs quietly in your browser and prevents most ads and pop-ups from loading at all. The most widely trusted free ad blocker is called uBlock Origin. It works in Chrome, Edge, and Firefox on computers. For Safari on iPhone and Mac, the equivalent is called AdGuard. Both are free, maintained by reputable developers, and do not collect your data.
 
 An ad blocker does not block everything — some websites ask you to turn it off to access their content. And you can choose to do so. You can also add websites to a whitelist (an exceptions list) if you want to support a site by letting its ads show.
 
@@ -311,7 +311,7 @@ Sources: FTC.gov Tech Support Scams (https://consumer.ftc.gov/articles/tech-supp
       },
       {
         title: 'Install uBlock Origin on Chrome, Edge, or Firefox (computer)',
-        content: 'Open Chrome or Edge. Go to the Chrome Web Store (https://chromewebstore.google.com) and search "uBlock Origin." Look for the extension by developer "Raymond Hill" — it has millions of users and five-star ratings. Click "Add to Chrome" (or "Add to Edge"). Click "Add extension" when the confirmation box appears. A small red shield icon appears in your browser toolbar. That is it — uBlock Origin is now active and blocking ads automatically. For Firefox: go to the Firefox Add-ons site (https://addons.mozilla.org) and search "uBlock Origin" to install it the same way.',
+        content: 'Open Chrome or Edge. Go to the Chrome Web Store (https://chromewebstore.google.com) and search "uBlock Origin." Look for the extension by developer "Raymond Hill". It has millions of users and five-star ratings. Click "Add to Chrome" (or "Add to Edge"). Click "Add extension" when the confirmation box appears. A small red shield icon appears in your browser toolbar. That is it — uBlock Origin is now active and blocking ads automatically. For Firefox: go to the Firefox Add-ons site (https://addons.mozilla.org) and search "uBlock Origin" to install it the same way.',
         tip: 'Quick Tip: uBlock Origin is free and open source — meaning volunteers and security researchers can inspect its code. It does not sell your browsing data. Avoid paid or unfamiliar ad blockers. Some are themselves adware in disguise.',
       },
       {

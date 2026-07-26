@@ -26,7 +26,7 @@ Zelle is built directly into the mobile apps of most major US banks — Bank of 
 
 ## What Is Venmo?
 
-Venmo is a separate app made by PayPal. You download it, create a free account, and link your bank account or debit card. Unlike Zelle, Venmo holds your money in a Venmo balance first. Transfers to your bank account take one to three business days unless you pay a small fee for an instant transfer. Venmo also has a social feed that shows your friends' payments — you can and should turn this off in your privacy settings (see Step 4 below).
+Venmo is a separate app made by PayPal. You download it, create a free account, and link your bank account or debit card. Unlike Zelle, Venmo holds your money in a Venmo balance first. Transfers to your bank account take one to three business days unless you pay a small fee for an instant transfer. Venmo also has a social feed that shows your friends' payments. You can and should turn this off in your privacy settings (see Step 4 below).
 
 ## Key Differences at a Glance
 
@@ -420,7 +420,7 @@ That is all. Safari's history, cache, and cookies are now cleared. Your bookmark
 5. Make sure the checkboxes next to "Browsing history," "Cached images and files," and "Cookies and site data" are all checked.
 6. Tap **Clear data** (it may say "Delete" on some Android versions).
 
-Passwords and bookmarks are on separate tabs — they will not be deleted unless you specifically go to those tabs and choose to delete them.
+Passwords and bookmarks are on separate tabs. They will not be deleted unless you specifically go to those tabs and choose to delete them.
 
 ## How to Clear History on a Computer — Chrome
 

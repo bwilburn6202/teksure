@@ -150,7 +150,7 @@ If you add an event on your computer, it automatically appears on your phone wit
       },
       {
         title: 'Switch between week view and month view',
-        content: 'On a computer: look for the view buttons near the top right of the screen — you will see "Day," "Week," "Month," "Year," and "Schedule." Click any of them to switch. "Schedule" view is particularly useful — it shows a simple list of upcoming events in order, which many people find easier to read than a grid. On the phone app: tap the three horizontal lines (menu icon) at the top left and then tap "Schedule," "Day," "3 days," or "Month" to switch views.',
+        content: 'On a computer: look for the view buttons near the top right of the screen. You will see "Day," "Week," "Month," "Year," and "Schedule." Click any of them to switch. "Schedule" view is particularly useful. It shows a simple list of upcoming events in order, which many people find easier to read than a grid. On the phone app: tap the three horizontal lines (menu icon) at the top left and then tap "Schedule," "Day," "3 days," or "Month" to switch views.',
       },
     ],
   },
@@ -201,7 +201,7 @@ This guide is about blocking unknown senders sending spam. If you get a text fro
       },
       {
         title: 'Block a spam number on iPhone',
-        content: 'Open the Messages app. Tap the spam conversation to open it. Tap the sender\'s phone number or name at the top of the screen. Tap the small information icon (a circle with a lowercase "i"). Scroll down and tap "Block this Caller." Tap "Block Contact" to confirm. The number is now blocked — you will no longer receive calls or texts from it. You can manage blocked numbers anytime in Settings → Phone → Blocked Contacts.',
+        content: 'Open the Messages app. Tap the spam conversation to open it. Tap the sender\'s phone number or name at the top of the screen. Tap the small information icon (a circle with a lowercase "i"). Scroll down and tap "Block this Caller." Tap "Block Contact" to confirm. The number is now blocked. You will no longer receive calls or texts from it. You can manage blocked numbers anytime in Settings → Phone → Blocked Contacts.',
         tip: 'Quick Tip: You can also filter unknown senders entirely. Go to Settings → Messages and turn on "Filter Unknown Senders." Texts from people not in your contacts go to a separate folder, keeping your main inbox cleaner.',
       },
       {
@@ -252,7 +252,7 @@ Your payment is also protected by your phone's security. On iPhone, Face ID, Tou
 
 **Which stores accept it?**
 
-Look for a contactless payment symbol at the checkout — it looks like a series of curved lines (like a sideways Wi-Fi symbol) or the Apple Pay or Google Pay logo. Most major grocery chains, pharmacies like CVS and Walgreens, fast-food restaurants, Target, Walmart, and many smaller businesses accept contactless payments. The number of participating stores grows every year.
+Look for a contactless payment symbol at the checkout. It looks like a series of curved lines (like a sideways Wi-Fi symbol) or the Apple Pay or Google Pay logo. Most major grocery chains, pharmacies like CVS and Walgreens, fast-food restaurants, Target, Walmart, and many smaller businesses accept contactless payments. The number of participating stores grows every year.
 
 **What about online?**
 
@@ -262,7 +262,7 @@ When shopping online, many websites now show an "Apple Pay" or "Google Pay" butt
     steps: [
       {
         title: 'Add your card to Apple Wallet (iPhone)',
-        content: 'Open the Wallet app on your iPhone — it looks like a small card wallet on a white background. Tap the "+" button in the top right corner. Tap "Debit or Credit Card." You can point your phone\'s camera at your physical card to scan the numbers automatically, or tap "Enter Card Details Manually" to type them in. Follow the on-screen steps to verify your card — your bank may send a text message or ask you to call to confirm. Once verified, your card appears in the Wallet app and is ready to use.',
+        content: 'Open the Wallet app on your iPhone. It looks like a small card wallet on a white background. Tap the "+" button in the top right corner. Tap "Debit or Credit Card." You can point your phone\'s camera at your physical card to scan the numbers automatically, or tap "Enter Card Details Manually" to type them in. Follow the on-screen steps to verify your card — your bank may send a text message or ask you to call to confirm. Once verified, your card appears in the Wallet app and is ready to use.',
         tip: 'Quick Tip: You can add up to 12 cards to Apple Wallet. You can also add your FSA/HSA card, transit cards, and some store loyalty cards.',
       },
       {
@@ -272,7 +272,7 @@ When shopping online, many websites now show an "Apple Pay" or "Google Pay" butt
       },
       {
         title: 'Pay at a store with Apple Pay',
-        content: 'When you are ready to pay at the checkout, look for the contactless symbol on the payment reader. On iPhones with Face ID (iPhone X and later): double-click the side button (the one on the right edge of the phone). Your Wallet card appears. Hold your phone near the payment reader and glance at your phone to confirm with Face ID — you will feel a tap and hear a sound when the payment goes through. On iPhones with a Home button (iPhone 8 and earlier): double-click the Home button and confirm with Touch ID (your fingerprint), then hold near the reader.',
+        content: 'When you are ready to pay at the checkout, look for the contactless symbol on the payment reader. On iPhones with Face ID (iPhone X and later): double-click the side button (the one on the right edge of the phone). Your Wallet card appears. Hold your phone near the payment reader and glance at your phone to confirm with Face ID. You will feel a tap and hear a sound when the payment goes through. On iPhones with a Home button (iPhone 8 and earlier): double-click the Home button and confirm with Touch ID (your fingerprint), then hold near the reader.',
         warning: 'Keep your phone within about an inch of the payment terminal. If payment does not go through, try repositioning the phone directly over the contactless symbol.',
       },
       {

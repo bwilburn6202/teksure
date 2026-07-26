@@ -166,7 +166,7 @@ Withings scales connect to your home Wi-Fi, so data syncs even if your phone is 
       },
       {
         title: `Add your scale in the app`,
-        content: `In the Health Mate app, tap the plus button and select "Add a Device." Choose your scale model from the list. The app will walk you through connecting the scale to your home Wi-Fi network — you will need to enter your Wi-Fi password during setup. Keep your phone and scale close to your router during this process.`,
+        content: `In the Health Mate app, tap the plus button and select "Add a Device." Choose your scale model from the list. The app will walk you through connecting the scale to your home Wi-Fi network. You will need to enter your Wi-Fi password during setup. Keep your phone and scale close to your router during this process.`,
         tip: `If your Wi-Fi has both a 2.4 GHz and 5 GHz network, connect the scale to the 2.4 GHz network. Most smart home devices work more reliably on 2.4 GHz.`,
       },
       {
@@ -199,7 +199,7 @@ Withings scales connect to your home Wi-Fi, so data syncs even if your phone is 
 
 Tracking macros means keeping a rough record of how much protein, carbs, and fat you eat each day. Many people do this to lose weight, build muscle, manage a health condition like diabetes, or eat more mindfully. You do not have to be obsessive about it — even a general awareness of your protein and carbohydrate intake can make a real difference over time.
 
-Several apps make macro tracking straightforward. MyFitnessPal is the most widely used — it has a database of millions of foods and can scan barcodes on packages. Cronometer is excellent if you want more detail beyond just macros, including vitamins and minerals. Carb Manager is tailored for people reducing carbohydrates or following a ketogenic diet.
+Several apps make macro tracking straightforward. MyFitnessPal is the most widely used. It has a database of millions of foods and can scan barcodes on packages. Cronometer is excellent if you want more detail beyond just macros, including vitamins and minerals. Carb Manager is tailored for people reducing carbohydrates or following a ketogenic diet.
 
 Most of these apps ask you to enter your age, height, weight, and goal, and then they calculate a daily target for each macro. After that, you log your meals by searching for foods or scanning barcodes, and the app subtracts from your daily totals.
 
@@ -258,7 +258,7 @@ The free version of Cronometer covers everything most people need. A paid upgrad
       },
       {
         title: `Log a meal and explore the nutrient breakdown`,
-        content: `Tap the plus button and select "Add Food." Type in what you ate or use the barcode scanner for packaged items. After adding a food, tap on it in your diary to see the full nutrient breakdown — you will see not just calories, protein, carbs, and fat, but also every vitamin and mineral that food contains. This is where Cronometer shines compared to simpler apps.`,
+        content: `Tap the plus button and select "Add Food." Type in what you ate or use the barcode scanner for packaged items. After adding a food, tap on it in your diary to see the full nutrient breakdown. You will see not just calories, protein, carbs, and fat, but also every vitamin and mineral that food contains. This is where Cronometer shines compared to simpler apps.`,
       },
       {
         title: `Review your daily nutrient targets`,
@@ -363,7 +363,7 @@ To use MDLive you need a smartphone, tablet, or computer with a camera and micro
       },
       {
         title: `Get your prescription or follow-up instructions`,
-        content: `After the visit, the doctor will send a summary of your visit and any prescriptions to your patient account. Prescriptions are sent electronically to a pharmacy of your choice — you can pick them up the same day in most cases. The visit summary will also include any follow-up instructions, such as when to see your regular doctor if symptoms do not improve.`,
+        content: `After the visit, the doctor will send a summary of your visit and any prescriptions to your patient account. Prescriptions are sent electronically to a pharmacy of your choice. You can pick them up the same day in most cases. The visit summary will also include any follow-up instructions, such as when to see your regular doctor if symptoms do not improve.`,
       },
     ],
   },
@@ -403,7 +403,7 @@ Amwell works well for conditions like cold and flu symptoms, sinus problems, ras
       },
       {
         title: `Start your video visit`,
-        content: `At your appointment time, or when the on-demand doctor is ready, tap the notification in the app and then tap "Start Visit." Allow camera and microphone access when prompted. Speak clearly and hold the phone at face level. The doctor can see and hear you well at a normal talking volume — there is no need to shout or hold the phone unnaturally close to your face.`,
+        content: `At your appointment time, or when the on-demand doctor is ready, tap the notification in the app and then tap "Start Visit." Allow camera and microphone access when prompted. Speak clearly and hold the phone at face level. The doctor can see and hear you well at a normal talking volume. There is no need to shout or hold the phone unnaturally close to your face.`,
         warning: `Position yourself in a well-lit room with your face clearly visible. Poor lighting makes it harder for the doctor to visually assess you and can slow down the visit.`,
       },
       {
@@ -695,7 +695,7 @@ Zocdoc is completely free for patients. Doctors pay to be listed. You can use Zo
     difficulty: `Beginner`,
     body: `WebMD is one of the most visited health information websites in the United States, and its app brings that same wealth of information to your smartphone. The WebMD app is best used as a starting point for learning about symptoms, conditions, and medications — not as a replacement for your doctor's professional judgment.
 
-The Symptom Checker tool in the WebMD app lets you select your symptoms from a body diagram and answer a series of questions. It then provides a list of conditions that commonly match your symptoms along with a brief explanation of each. This can be very helpful before a doctor's appointment — it gives you vocabulary to describe your symptoms and helps you understand what questions the doctor might ask.
+The Symptom Checker tool in the WebMD app lets you select your symptoms from a body diagram and answer a series of questions. It then provides a list of conditions that commonly match your symptoms along with a brief explanation of each. This can be very helpful before a doctor's appointment. It gives you vocabulary to describe your symptoms and helps you understand what questions the doctor might ask.
 
 WebMD also has a Pill Identifier tool where you can enter the imprint code, shape, and color of an unidentified pill to find out what it is. This is particularly useful if you have mixed-up medications or find an unlabeled pill and need to identify it safely.
 
@@ -795,7 +795,7 @@ The most important step is to talk openly with your doctor about which screening
     steps: [
       {
         title: `Ask your doctor which screenings apply to you`,
-        content: `At your next annual physical or preventive care visit, ask your doctor directly: "Which cancer screenings do I need, and when are each of them due?" Write down the answers in a notebook or the notes app on your phone. Screening recommendations are based on your age, sex, personal health history, and family history — there is no single list that applies to everyone. Your doctor is the best source for your specific situation.`,
+        content: `At your next annual physical or preventive care visit, ask your doctor directly: "Which cancer screenings do I need, and when are each of them due?" Write down the answers in a notebook or the notes app on your phone. Screening recommendations are based on your age, sex, personal health history, and family history. There is no single list that applies to everyone. Your doctor is the best source for your specific situation.`,
         tip: `If you have a close family member who had cancer, especially a parent or sibling, tell your doctor. Some cancers have genetic components that mean you should start screening earlier or more often than standard guidelines suggest.`,
       },
       {
@@ -891,7 +891,7 @@ Livongo is typically offered as a free benefit through many employer health plan
       },
       {
         title: `Receive and set up your smart meter`,
-        content: `After enrolling, Livongo ships a starter kit to your home within a few days. The kit includes the Livongo blood glucose meter, lancets, a lancing device, and an initial supply of test strips. The meter has a built-in cellular connection — there is no Wi-Fi or Bluetooth pairing needed. Insert a test strip and it will connect on its own. Download the Livongo app from the App Store or Google Play and log in with your enrollment account to see your readings appear automatically after each test.`,
+        content: `After enrolling, Livongo ships a starter kit to your home within a few days. The kit includes the Livongo blood glucose meter, lancets, a lancing device, and an initial supply of test strips. The meter has a built-in cellular connection. There is no Wi-Fi or Bluetooth pairing needed. Insert a test strip and it will connect on its own. Download the Livongo app from the App Store or Google Play and log in with your enrollment account to see your readings appear automatically after each test.`,
         warning: `Even if you already have a different glucose meter, use the Livongo meter for readings you want tracked in the program. Only readings taken on the Livongo meter are uploaded to your health team and coaching system.`,
       },
       {

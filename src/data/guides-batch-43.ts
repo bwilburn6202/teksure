@@ -119,7 +119,7 @@ Key things to know:
 - The message can be customized with whatever text you want
 - Gmail keeps working normally while the responder is on — emails still arrive in your inbox as usual
 
-The vacation responder is available in Gmail on your computer (gmail.com). The smartphone app does not have this feature — you must set it up on a computer or tablet browser.`,
+The vacation responder is available in Gmail on your computer (gmail.com). The smartphone app does not have this feature. You must set it up on a computer or tablet browser.`,
     steps: [
       {
         title: `Open Gmail Settings on a computer`,
@@ -133,7 +133,7 @@ The vacation responder is available in Gmail on your computer (gmail.com). The s
       {
         title: `Write your message`,
         content: `Fill in the "Subject" (for example, "Out of Office — Back [Date]") and the message body. Keep it brief and professional: tell people you are away, your return date, and who to contact if urgent. Example: "Thank you for your email. I am currently out of office until [date] and will respond when I return. For urgent matters, please contact [name] at [email]."`,
-        tip: `Quick Tip: Do not include your phone number, home address, or too many personal details in an out-of-office message — it is sent to every sender, including strangers.`,
+        tip: `Quick Tip: Do not include your phone number, home address, or too many personal details in an out-of-office message. It is sent to every sender, including strangers.`,
       },
       {
         title: `Choose who receives the auto-reply`,
@@ -228,12 +228,12 @@ No account or subscription is needed — Markup is completely free and built int
       },
       {
         title: `Fill in text fields (fillable PDF)`,
-        content: `If the PDF has interactive form fields, tapping inside a text box opens the keyboard automatically. Type your name, address, date, or other required information. Use the Next button on the keyboard or tap the next field. These interactive fields look slightly different — they often have a blue outline when active.`,
+        content: `If the PDF has interactive form fields, tapping inside a text box opens the keyboard automatically. Type your name, address, date, or other required information. Use the Next button on the keyboard or tap the next field. These interactive fields look slightly different. They often have a blue outline when active.`,
       },
       {
         title: `Add text to a non-fillable PDF`,
         content: `If the form does not have clickable fields: in Markup, tap the "+" button at the bottom → "Text." A text box appears. Drag it to the field you want to fill in. Tap the text box to type. Change the font size by tapping the "aA" icon. Tap outside to deselect, then move to the next field.`,
-        tip: `Quick Tip: Zoom in to the area you need to fill before adding a text box — it is much easier to position text accurately when zoomed in.`,
+        tip: `Quick Tip: Zoom in to the area you need to fill before adding a text box. It is much easier to position text accurately when zoomed in.`,
       },
       {
         title: `Add your signature`,
@@ -280,7 +280,7 @@ Compressing or resizing photos before sending makes them smaller — faster to s
       {
         title: `Compress on a computer using Squoosh (free, web-based)`,
         content: `On any computer, go to squoosh.app in your web browser. Drag a photo onto the page or click "Open image" to upload it. On the right side, you can see a preview and adjust the quality setting. Drag the quality slider left to reduce file size — watch the estimated file size in the corner. Click "Download" to save the compressed image.`,
-        tip: `Squoosh works without any account or software installation — it processes images in your browser. Good for a quick one-time compress.`,
+        tip: `Squoosh works without any account or software installation. It processes images in your browser. Good for a quick one-time compress.`,
       },
       {
         title: `Use Windows Photos app to resize`,
@@ -355,7 +355,7 @@ Contacts sync via iCloud by default. Go to Settings → your name → iCloud →
     thumbnailEmoji: ``,
     publishedAt: `2026-04-19`,
     difficulty: `Beginner`,
-    body: `Changing your iPhone's ringtone is more than just personalization — it can also be practical. If you are in a room with other iPhones, having a distinctive ringtone makes it clear when it is yours ringing. A loud, distinctive tone is also important if you have trouble hearing the default ring.
+    body: `Changing your iPhone's ringtone is more than just personalization. It can also be practical. If you are in a room with other iPhones, having a distinctive ringtone makes it clear when it is yours ringing. A loud, distinctive tone is also important if you have trouble hearing the default ring.
 
 iPhone comes with a large selection of built-in ringtones at no cost. You can also purchase additional ringtones from the iTunes Store for $1.29 each, or use your own music to create a custom ringtone (requires a computer and some setup).
 
@@ -379,11 +379,11 @@ iPhone comes with a large selection of built-in ringtones at no cost. You can al
       {
         title: `Change your text message sound`,
         content: `Go to Settings → Sounds & Haptics → Text Tone. The list of sounds is the same as ringtones. Tap any to preview. Select one that sounds noticeably different from your ringtone so you can tell the two apart. Tap "Back" to save.`,
-        tip: `Quick Tip: If you are hard of hearing, choose "Alert" or "Note" for text tones — they are more distinctive and piercing than the quiet default.`,
+        tip: `Quick Tip: If you are hard of hearing, choose "Alert" or "Note" for text tones. They are more distinctive and piercing than the quiet default.`,
       },
       {
         title: `Set a custom ringtone for one person`,
-        content: `Open the Contacts app → find the contact → tap "Edit" → scroll down and tap "Ringtone" → choose any ringtone. Tap "Done." Now when that specific person calls, their unique ringtone plays — you know who it is before you even look at your phone.`,
+        content: `Open the Contacts app → find the contact → tap "Edit" → scroll down and tap "Ringtone" → choose any ringtone. Tap "Done." Now when that specific person calls, their unique ringtone plays. You know who it is before you even look at your phone.`,
       },
       {
         title: `Adjust ringtone volume`,
@@ -411,7 +411,7 @@ iPhone comes with a large selection of built-in ringtones at no cost. You can al
 
 Many people love using a photo of grandchildren, family, pets, or a favorite vacation spot as their wallpaper. Others prefer a clean, simple color or Apple's built-in designs.
 
-On iPhones with iOS 17 or later, the lock screen has become especially customizable — you can add widgets that show the time, weather, calendar events, or battery level. The depth effect feature even puts the lock screen clock behind your subject (like a photo of a person), creating a layered look.
+On iPhones with iOS 17 or later, the lock screen has become especially customizable. You can add widgets that show the time, weather, calendar events, or battery level. The depth effect feature even puts the lock screen clock behind your subject (like a photo of a person), creating a layered look.
 
 You can use any photo from your photo library, a live (animated) photo, a portrait photo for the depth effect, or one of Apple's many built-in wallpapers.
 
@@ -567,8 +567,8 @@ Note: If you download a file from an email attachment, it may save to a differen
     steps: [
       {
         title: `Use the Files app to find downloads`,
-        content: `Open the Files app on your Android phone. The icon looks like a folder — it may be pre-installed or available as "My Files" on Samsung, "Files" on Google Pixel, or "File Manager" on other phones. Once open, look for "Downloads" in the list of folders and tap it.`,
-        tip: `If you cannot find a Files app, search for "Files" in your app drawer or install "Files by Google" from the Google Play Store — it is the most reliable option.`,
+        content: `Open the Files app on your Android phone. The icon looks like a folder. It may be pre-installed or available as "My Files" on Samsung, "Files" on Google Pixel, or "File Manager" on other phones. Once open, look for "Downloads" in the list of folders and tap it.`,
+        tip: `If you cannot find a Files app, search for "Files" in your app drawer or install "Files by Google" from the Google Play Store. It is the most reliable option.`,
       },
       {
         title: `Use Chrome browser to find web downloads`,
@@ -585,7 +585,7 @@ Note: If you download a file from an email attachment, it may save to a differen
       },
       {
         title: `Manage and delete old downloads`,
-        content: `Downloaded files accumulate and take up space. In Files by Google → "Downloads" — you can see all downloaded files with their sizes. Tap and hold any file → select multiple → tap the trash icon to delete. Regularly cleaning Downloads frees up phone storage.`,
+        content: `Downloaded files accumulate and take up space. In Files by Google → "Downloads". You can see all downloaded files with their sizes. Tap and hold any file → select multiple → tap the trash icon to delete. Regularly cleaning Downloads frees up phone storage.`,
       },
     ],
   },
@@ -651,7 +651,7 @@ Video calling works on Echo Show devices (Echo Show 5, 8, 10, 15, and the new Ec
     thumbnailEmoji: ``,
     publishedAt: `2026-04-19`,
     difficulty: `Beginner`,
-    body: `Smart speakers are excellent music players — you can request any song, artist, album, genre, decade, or mood by just speaking. But many people do not know all the ways to ask. So they end up frustrated when the speaker does not play what they wanted.
+    body: `Smart speakers are excellent music players. You can request any song, artist, album, genre, decade, or mood by just speaking. But many people do not know all the ways to ask. So they end up frustrated when the speaker does not play what they wanted.
 
 This guide covers both Amazon Echo (Alexa) and Google Nest speakers.
 
@@ -761,7 +761,7 @@ Most major airlines support Apple Wallet boarding passes. The process is usually
 Taking control of your notification settings is one of the best things you can do for your digital wellbeing. It silences the noise while keeping the alerts that actually matter.
 
 **Types of notifications:**
-- **Badges**: The red number bubbles on app icons — they show counts of unread items
+- **Badges**: The red number bubbles on app icons. They show counts of unread items
 - **Alerts/Banners**: Popup messages that appear at the top of the screen while you are using your phone
 - **Lock Screen notifications**: Messages that appear when your screen is off
 - **Sounds**: Audio alerts for incoming notifications
@@ -769,7 +769,7 @@ Taking control of your notification settings is one of the best things you can d
 
 You can control all of these individually for each app. For example, you might keep Messages sounds and banners but turn off email sounds and only keep badges for Mail.
 
-The goal is not to eliminate all notifications — it is to keep the ones that are genuinely useful to you and quiet the ones that just cause interruptions.`,
+The goal is not to eliminate all notifications. It is to keep the ones that are genuinely useful to you and quiet the ones that just cause interruptions.`,
     steps: [
       {
         title: `Review which apps send notifications`,
@@ -798,7 +798,7 @@ The goal is not to eliminate all notifications — it is to keep the ones that a
   {
     slug: `block-phone-number-iphone-android`,
     title: `How to Block a Phone Number on iPhone or Android`,
-    excerpt: `Blocking a number stops calls, texts, and FaceTime from that person — they can no longer reach you. Here is how to block numbers on iPhone and Android in a few taps.`,
+    excerpt: `Blocking a number stops calls, texts, and FaceTime from that person. They can no longer reach you. Here is how to block numbers on iPhone and Android in a few taps.`,
     category: `safety-guides`,
     tags: [`block number`, `iphone`, `android`, `block calls`, `block texts`, `unwanted calls`, `harassment`],
     readTime: `4 min`,
@@ -807,7 +807,7 @@ The goal is not to eliminate all notifications — it is to keep the ones that a
     difficulty: `Beginner`,
     body: `Blocking a phone number prevents that number from calling you, sending you text messages, or reaching you via FaceTime (on iPhone). When a blocked number calls, the call goes directly to voicemail without your phone ringing. Texts go to a hidden "Blocked Messages" folder.
 
-The blocked person is not notified that they have been blocked — it looks to them like the call is not being answered or the message is not delivered.
+The blocked person is not notified that they have been blocked. It looks to them like the call is not being answered or the message is not delivered.
 
 **When to block a number:**
 - Repeated unwanted calls or texts from someone you do not want contact with
@@ -815,7 +815,7 @@ The blocked person is not notified that they have been blocked — it looks to t
 - Spam calls that keep coming back (blocking does not fully stop all robocalls, but it helps for persistent ones)
 - An ex or other person you no longer want to hear from
 
-Blocking is reversible — you can unblock at any time.
+Blocking is reversible. You can unblock at any time.
 
 **For robocalls and spam specifically**: Blocking individual numbers may not stop all spam calls since many robocalls come from different numbers each time. For spam call protection, also turn on "Silence Unknown Callers" (iPhone: Settings → Phone → Silence Unknown Callers) or use a dedicated spam-blocking service like Nomorobo or Hiya.`,
     steps: [
@@ -860,7 +860,7 @@ In recent years, the FTC has used consumer reports to pursue hundreds of million
 
 **Where to report:**
 1. **FTC at ReportFraud.ftc.gov**: For any scam — phone calls, texts, emails, fake websites, impersonation scams, lottery scams, tech support scams, etc.
-2. **DoNotCall.gov**: Specifically for unwanted telemarketing calls — you can also add your number to the Do Not Call Registry here
+2. **DoNotCall.gov**: Specifically for unwanted telemarketing calls. You can also add your number to the Do Not Call Registry here
 3. **FCC at consumercomplaints.fcc.gov**: For issues with robocalls, call blocking failures, and wireless carrier complaints
 4. **Your phone carrier**: AT&T, Verizon, T-Mobile all have spam reporting — text "SPAM" to 7726 to report the number to your carrier
 
@@ -879,7 +879,7 @@ Filing a report takes about 5 minutes. No immediate personal action results from
       },
       {
         title: `Register on the Do Not Call Registry`,
-        content: `Go to donotcall.gov (or call 1-888-382-1222 from the number you want to register). Register your phone number for free. After 31 days, legitimate telemarketers should not call you. Note: the registry does not stop illegal robocallers — it only applies to law-abiding companies. But it establishes that calls you receive after 31 days are more likely illegal.`,
+        content: `Go to donotcall.gov (or call 1-888-382-1222 from the number you want to register). Register your phone number for free. After 31 days, legitimate telemarketers should not call you. Note: the registry does not stop illegal robocallers. It only applies to law-abiding companies. But it establishes that calls you receive after 31 days are more likely illegal.`,
       },
       {
         title: `Report unwanted texts by forwarding them`,

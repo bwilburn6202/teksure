@@ -89,7 +89,7 @@ export const guidesBatch12: Guide[] = [
     thumbnailEmoji: '',
     publishedAt: '2026-04-19',
     difficulty: 'Beginner',
-    body: "A fast-draining iPhone battery is one of the most common frustrations people have with their phones. The good news is that a few simple settings changes can often extend how long your battery lasts during the day. You do not need a new phone — you need to know where to look.",
+    body: "A fast-draining iPhone battery is one of the most common frustrations people have with their phones. The good news is that a few simple settings changes can often extend how long your battery lasts during the day. You do not need a new phone. You need to know where to look.",
     steps: [
       {
         title: 'Check your battery health',
@@ -166,7 +166,7 @@ export const guidesBatch12: Guide[] = [
     publishedAt: '2026-04-19',
     lastVerifiedAt: '2026-05-15',
     difficulty: 'Beginner',
-    body: "Forgetting your WiFi password happens to everyone. The good news is your password is almost always saved somewhere on a device that's already connected — you need to know where to look.",
+    body: "Forgetting your WiFi password happens to everyone. The good news is your password is almost always saved somewhere on a device that's already connected. You need to know where to look.",
     steps: [
       {
         title: 'Find it on an iPhone (iOS 17 or later)',
@@ -175,7 +175,7 @@ export const guidesBatch12: Guide[] = [
       },
       {
         title: 'Find it on an Android phone',
-        content: `Go to Settings → Wi-Fi (or Connections → Wi-Fi on Samsung phones). Tap the name of the WiFi network you're currently connected to. Look for a "Share" button — it will show a QR code along with the password written out in plain text below the QR code. If you don't see the password, tap the eye icon next to the password field to reveal it.`,
+        content: `Go to Settings → Wi-Fi (or Connections → Wi-Fi on Samsung phones). Tap the name of the WiFi network you're currently connected to. Look for a "Share" button. It will show a QR code along with the password written out in plain text below the QR code. If you don't see the password, tap the eye icon next to the password field to reveal it.`,
         tip: 'On Samsung Galaxy phones, you may need to tap the three-dot menu in the top right of the Wi-Fi screen and choose "QR code" to find the password.',
       },
       {
@@ -356,7 +356,7 @@ export const guidesBatch12: Guide[] = [
       },
       {
         title: 'Create a shared album for family',
-        content: `Tap the Albums tab (the square icon with a plus sign). Tap "New album," give it a name like "Family 2025," and select photos to add. Tap "Share" inside the album and enter a family member's email or phone number. They'll receive a link to view the album — they don't need a Google account to view it. But they do if they want to add their own photos.`,
+        content: `Tap the Albums tab (the square icon with a plus sign). Tap "New album," give it a name like "Family 2025," and select photos to add. Tap "Share" inside the album and enter a family member's email or phone number. They'll receive a link to view the album. They don't need a Google account to view it. But they do if they want to add their own photos.`,
       },
     ],
   },
@@ -380,7 +380,7 @@ export const guidesBatch12: Guide[] = [
       },
       {
         title: 'Block a specific number on iPhone',
-        content: `Open the spam text message. Tap the phone number or name at the very top of the screen. Tap "info" (the circle with a lowercase i). Scroll down and tap "Block this Caller." Tap "Block Contact" to confirm. Blocked numbers can't call or text you — they go directly to voicemail without ringing.`,
+        content: `Open the spam text message. Tap the phone number or name at the very top of the screen. Tap "info" (the circle with a lowercase i). Scroll down and tap "Block this Caller." Tap "Block Contact" to confirm. Blocked numbers can't call or text you. They go directly to voicemail without ringing.`,
       },
       {
         title: 'Enable spam protection on Android',
@@ -452,7 +452,7 @@ export const guidesBatch12: Guide[] = [
       {
         title: 'Upgrade for free if your computer is compatible',
         content: 'If PC Health Check says your computer is compatible, you can upgrade for free. Go to Settings → Windows Update. You should see an offer to upgrade to Windows 11. Click "Download and install." The upgrade takes 30 to 60 minutes, keeps all your files, apps, and settings exactly as they are, and requires a restart to complete.',
-        tip: `Do the upgrade when you don't need your computer for a few hours — it will restart several times during the process. Make sure your laptop is plugged in or your desktop is not likely to lose power.`,
+        tip: `Do the upgrade when you don't need your computer for a few hours. It will restart several times during the process. Make sure your laptop is plugged in or your desktop is not likely to lose power.`,
       },
       {
         title: 'What to do if your computer is not compatible',
@@ -551,7 +551,7 @@ export const guidesBatch12: Guide[] = [
     steps: [
       {
         title: 'Use the "Forgot password?" link on Facebook',
-        content: 'Go to facebook.com and click "Forgot password?" below the login box. Type in the email address or phone number connected to your account and click "Search." Facebook will find your account and show you options to verify your identity — it may offer to send a code to your phone, email, or let you answer security questions.',
+        content: 'Go to facebook.com and click "Forgot password?" below the login box. Type in the email address or phone number connected to your account and click "Search." Facebook will find your account and show you options to verify your identity. It may offer to send a code to your phone, email, or let you answer security questions.',
       },
       {
         title: 'Request a recovery code to your phone',
@@ -622,7 +622,7 @@ export const guidesBatch12: Guide[] = [
     steps: [
       {
         title: 'Open FaceTime and start a call',
-        content: `Find the FaceTime app on your iPhone — it has a green background with a white video camera icon. Tap it to open. Tap the plus (+) button in the top right corner. Type in the name of someone in your contacts, or their phone number or Apple ID (their email address). When their name appears, tap it, then tap "Video" to start a video call. Their phone will ring and when they answer, you'll see their face on your screen.`,
+        content: `Find the FaceTime app on your iPhone. It has a green background with a white video camera icon. Tap it to open. Tap the plus (+) button in the top right corner. Type in the name of someone in your contacts, or their phone number or Apple ID (their email address). When their name appears, tap it, then tap "Video" to start a video call. Their phone will ring and when they answer, you'll see their face on your screen.`,
         tip: 'You can also start a FaceTime call directly from the Contacts app or Messages: find the person, tap their name, and look for the FaceTime video icon.',
       },
       {
@@ -670,7 +670,7 @@ export const guidesBatch12: Guide[] = [
       },
       {
         title: `Remove browser extensions you don't use`,
-        content: `Browser extensions run quietly in the background and can slow things down a lot. In Chrome, click the puzzle piece icon near the top right — this shows your installed extensions. Click the three-dot menu next to any extension you don't recognize or no longer use and click "Remove from Chrome." If you're not sure what an extension does, removing it is usually safe — you can always reinstall it later.`,
+        content: `Browser extensions run quietly in the background and can slow things down a lot. In Chrome, click the puzzle piece icon near the top right — this shows your installed extensions. Click the three-dot menu next to any extension you don't recognize or no longer use and click "Remove from Chrome." If you're not sure what an extension does, removing it is usually safe. You can always reinstall it later.`,
       },
     ],
   },

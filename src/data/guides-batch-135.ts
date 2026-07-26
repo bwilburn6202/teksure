@@ -139,7 +139,7 @@ Watch a video walkthrough: YouTube → "Medicare.gov create account 2026" — of
     steps: [
       {
         title: 'Gather what you need before you start',
-        content: 'You need four things: (1) Your red, white, and blue Medicare card (or your Medicare Number — 11 characters with a mix of letters and digits). (2) An email address you can check right now. (3) A phone that can receive text messages or phone calls. (4) About 15 minutes. Make sure you are in a quiet place — you may need to read text out loud to a voice prompt or take a picture of an ID.',
+        content: 'You need four things: (1) Your red, white, and blue Medicare card (or your Medicare Number — 11 characters with a mix of letters and digits). (2) An email address you can check right now. (3) A phone that can receive text messages or phone calls. (4) About 15 minutes. Make sure you are in a quiet place. You may need to read text out loud to a voice prompt or take a picture of an ID.',
         tip: 'Quick Tip: If you share an email with a spouse, set up the Medicare account under YOUR email, not the shared one. Medicare records are individual and accounts cannot be shared.',
       },
       {
@@ -159,11 +159,11 @@ Watch a video walkthrough: YouTube → "Medicare.gov create account 2026" — of
       {
         title: 'Link your Medicare information',
         content: 'After Login.gov is set up, you are sent back to Medicare.gov. The site asks you to enter your Medicare information so it can connect your account to your benefits. Type your Medicare Number from your red, white, and blue card (11 characters, no spaces). Enter your last name, date of birth, and the date your Part A or Part B coverage started (printed on your card). Click "Continue." Medicare matches you to your record. If something does not match, the error message tells you which field to fix.',
-        warning: 'If you get "We cannot verify your information," double-check your Medicare Number — it includes both letters and numbers and is case-sensitive in some places. Also confirm your name matches your Medicare card exactly (e.g., "Robert" not "Bob").',
+        warning: 'If you get "We cannot verify your information," double-check your Medicare Number. It includes both letters and numbers and is case-sensitive in some places. Also confirm your name matches your Medicare card exactly (e.g., "Robert" not "Bob").',
       },
       {
         title: 'Take a tour of what your account can do',
-        content: 'Once linked, you are at the Medicare dashboard. Major sections: "Claims" (everything billed in your name), "Coverage" (what is covered and what is not), "Drug list & pharmacies" (if you have Part D), "Plans & coverage" (compare plans during open enrollment), and "Order a replacement card." Click each one once to get familiar. Nothing you click here costs money or changes your coverage — it is all read-only until you actively change something.',
+        content: 'Once linked, you are at the Medicare dashboard. Major sections: "Claims" (everything billed in your name), "Coverage" (what is covered and what is not), "Drug list & pharmacies" (if you have Part D), "Plans & coverage" (compare plans during open enrollment), and "Order a replacement card." Click each one once to get familiar. Nothing you click here costs money or changes your coverage. It is all read-only until you actively change something.',
       },
       {
         title: 'Set up your preferences and notifications',
@@ -205,7 +205,7 @@ Watch a walkthrough: YouTube → "Consumer Reports turn off smart TV tracking" �
       {
         title: 'Samsung — Turn off Viewing Information Services',
         content: 'On Samsung TVs running Tizen (most 2017–2026 models): press the Home button. Go to Settings (gear icon) > General > Terms & Privacy > Privacy Choices. Find "Viewing Information Services" — turn it OFF. Below that, find "Interest-Based Advertising Service" — also turn OFF. While you are there, scroll to "Voice Recognition Services" — if you do not use voice search, turn that off too (it sends audio from the remote\'s microphone to Samsung).',
-        warning: 'Samsung may show a warning that "some features will be limited." This usually means personalized recommendations and ads. The TV still works fine — you can still use all apps and inputs.',
+        warning: 'Samsung may show a warning that "some features will be limited." This usually means personalized recommendations and ads. The TV still works fine. You can still use all apps and inputs.',
       },
       {
         title: 'LG — Disable Live Plus',
@@ -322,7 +322,7 @@ Watch the official demo: YouTube → "Apple macOS Sequoia iPhone Mirroring" — 
       {
         title: 'Use the iPhone — what works and what does not',
         content: 'You see your iPhone screen in a window on your Mac. Click and drag like you would tap and swipe. Type with the Mac keyboard. Most apps work normally: Messages, Mail, Safari, Notes, Photos, third-party apps. Some things do NOT work yet: the camera (you cannot use the iPhone camera through mirroring), Apple Pay (must be done on the phone directly), and apps that require gyroscope (some games). The phone itself stays locked on its screen — anyone walking past the phone cannot see what you are doing.',
-        tip: 'Quick Tip: To go back to the iPhone home screen, click the small arrow at the top of the mirroring window — it works like the swipe-up gesture.',
+        tip: 'Quick Tip: To go back to the iPhone home screen, click the small arrow at the top of the mirroring window. It works like the swipe-up gesture.',
       },
       {
         title: 'Drag files between phone and Mac',
@@ -331,7 +331,7 @@ Watch the official demo: YouTube → "Apple macOS Sequoia iPhone Mirroring" — 
       {
         title: 'Get iPhone notifications on your Mac',
         content: 'When you set up iPhone Mirroring, the Mac asks if you want iPhone notifications on the Mac too. Say Yes. From then on, when your iPhone gets a text, alert, or app notification, it appears on the Mac\'s notification banner. Clicking the banner opens iPhone Mirroring and takes you to the right app. This is the part most people end up using daily.',
-        tip: 'Quick Tip: To pause notifications when you do not want to be interrupted, open Control Center on the Mac and turn on Focus or Do Not Disturb — it carries over to the iPhone notifications too.',
+        tip: 'Quick Tip: To pause notifications when you do not want to be interrupted, open Control Center on the Mac and turn on Focus or Do Not Disturb. It carries over to the iPhone notifications too.',
       },
       {
         title: 'Turn it off if you change your mind',
@@ -362,7 +362,7 @@ Watch a plain-language summary: YouTube → "CFPB peer to peer payment app FDIC"
     steps: [
       {
         title: 'Understand the basic rule — passing through vs. parked',
-        content: 'Most of these apps offer two scenarios: (1) Money that is passing through — you got paid, you spend or move it within a few days. Generally fine, low risk. (2) Money that is parked — you leave a balance sitting in the app for weeks or months. This is where the FDIC protection question matters. Money parked in the app is held by the app\'s partner bank, but the app, not you, is the actual customer of that bank. If the app fails, recovery is messy.',
+        content: 'Most of these apps offer two scenarios: (1) Money that is passing through. You got paid, you spend or move it within a few days. Generally fine, low risk. (2) Money that is parked. You leave a balance sitting in the app for weeks or months. This is where the FDIC protection question matters. Money parked in the app is held by the app\'s partner bank, but the app, not you, is the actual customer of that bank. If the app fails, recovery is messy.',
       },
       {
         title: 'Venmo — money is NOT FDIC-insured in your balance',
@@ -376,7 +376,7 @@ Watch a plain-language summary: YouTube → "CFPB peer to peer payment app FDIC"
       {
         title: 'Cash App — balance is FDIC-insured (the exception)',
         content: 'Cash App is different. Money in your Cash App balance IS FDIC-insured up to $250,000 through Sutton Bank and Wells Fargo as of 2023. This is a real, pass-through insurance — if Cash App failed, you would file directly with the FDIC. Cash App is the safest of the major peer-to-peer apps for parked money. Cash App\'s investing and Bitcoin features are NOT FDIC-insured (different category — securities and crypto have separate protection rules).',
-        warning: 'Cash App suffered a large data breach in 2022 and another in 2024. FDIC insurance protects you against the bank failing — it does not protect you against fraud or scammers. Even on Cash App, do not park more than you can afford to lose for a week.',
+        warning: 'Cash App suffered a large data breach in 2022 and another in 2024. FDIC insurance protects you against the bank failing. It does not protect you against fraud or scammers. Even on Cash App, do not park more than you can afford to lose for a week.',
       },
       {
         title: 'Zelle — there is no balance to insure',
@@ -421,7 +421,7 @@ Watch a comparison: YouTube → "best live TV streaming for seniors 2026 Consume
       {
         title: 'Check your internet — you may already have what you need',
         content: 'Streaming live TV needs about 25 megabits per second per device. If three people in the house watch at the same time, 75 mbps is comfortable. Most US households already pay for 100 mbps or higher. To check: Settings on your router, or go to fast.com on a computer connected to your Wi-Fi. If your number is above 50 mbps, you are fine. If not, call your internet provider and ask for an upgrade. Internet alone is usually $50–80/month. Cable internet + streaming is still cheaper than cable TV + cable internet bundled.',
-        tip: 'Quick Tip: When you cancel cable TV but keep internet, your bill may go UP for the internet line because they lose the bundle discount. Ask the retention department before cancelling — they can usually keep the bundle price for internet-only.',
+        tip: 'Quick Tip: When you cancel cable TV but keep internet, your bill may go UP for the internet line because they lose the bundle discount. Ask the retention department before cancelling. They can usually keep the bundle price for internet-only.',
       },
       {
         title: 'Pick one of three options that match cable most closely',

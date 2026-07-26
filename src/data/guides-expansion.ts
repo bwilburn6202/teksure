@@ -92,10 +92,10 @@ Once logged in, you will see your Medicare dashboard. You can check your coverag
 
 Click "Claims" to see a history of your medical bills and what Medicare paid. This is helpful for catching billing errors or understanding your out-of-pocket costs.
 
-If you need help navigating the site, call 1-800-MEDICARE (1-800-633-4227) — they have trained counselors who can walk you through the website over the phone.`,
+If you need help navigating the site, call 1-800-MEDICARE (1-800-633-4227). They have trained counselors who can walk you through the website over the phone.`,
     steps: [
       { title: 'Go to medicare.gov', content: 'Open your web browser and go to medicare.gov. Click the "Log in" button in the top-right corner of the page.' },
-      { title: 'Sign in or create an account', content: 'Choose Login.gov or ID.me to sign in. If you do not have an account, click "Create an account" and follow the steps — you will need your Medicare card number.' },
+      { title: 'Sign in or create an account', content: 'Choose Login.gov or ID.me to sign in. If you do not have an account, click "Create an account" and follow the steps. You will need your Medicare card number.' },
       { title: 'View your coverage details', content: 'Once logged in, click "Coverage" on your dashboard. This shows what Part A, Part B, and any supplemental plans cover, including copays and deductibles.' },
       { title: 'Find doctors who accept Medicare', content: 'Click "Find Care" and enter your ZIP code. Filter by specialty, distance, and patient ratings to find doctors and hospitals near you that accept Medicare.' },
       { title: 'Compare drug plans', content: 'Click "Find a Plan" and enter the medications you take. Medicare.gov will estimate your annual costs under different Part D plans so you can choose the most affordable one.' },
@@ -121,7 +121,7 @@ To get started, go to irs.gov/freefile. You will see two options. "Guided Tax So
 
 You will need: your W-2 forms from each employer, any 1099 forms, your Social Security number, bank routing and account numbers for direct deposit, and last year's AGI (found on line 11 of your previous return).
 
-After completing your return, review every number carefully. Choose direct deposit for your refund — it typically arrives within 21 days versus 6 to 8 weeks for a mailed check. E-file your return and save the confirmation.
+After completing your return, review every number carefully. Choose direct deposit for your refund. It typically arrives within 21 days versus 6 to 8 weeks for a mailed check. E-file your return and save the confirmation.
 
 File early to get your refund sooner and reduce the risk of tax identity theft, where someone files a fraudulent return using your Social Security number before you do.`,
     steps: [
@@ -197,7 +197,7 @@ If you need help choosing a plan, healthcare.gov has free in-person help. Click 
   {
     slug: 'register-to-vote-online',
     title: 'How to Register to Vote Online',
-    excerpt: 'Check your voter registration status and register to vote online in most states — it takes less than 5 minutes.',
+    excerpt: 'Check your voter registration status and register to vote online in most states. It takes less than 5 minutes.',
     category: 'government-civic' as any,
     tags: ['voting', 'voter registration', 'elections', 'government', 'civic'],
     readTime: '5 min',
@@ -362,7 +362,7 @@ Federal law guarantees a free credit report from each of the three major bureaus
 
 Go to annualcreditreport.com and click "Request your free credit reports." Provide your name, address, Social Security number, and date of birth, then answer security questions based on your credit history.
 
-Choose which reports to view — you can request all three at once or stagger them throughout the year for ongoing monitoring. When reviewing, check for accounts you do not recognize, incorrect personal information, late payments that were made on time, and accounts that should be closed.
+Choose which reports to view. You can request all three at once or stagger them throughout the year for ongoing monitoring. When reviewing, check for accounts you do not recognize, incorrect personal information, late payments that were made on time, and accounts that should be closed.
 
 If you find an error, you have the right to dispute it. Each bureau has an online dispute process and must investigate within 30 days.
 
@@ -540,7 +540,7 @@ To send money, tap "Pay or Request," search for the person by username, phone, o
 
 When you receive money, it goes to your Venmo balance. Transfer it to your bank account — standard transfers (1-3 days) are free, instant transfers cost 1.75%. Enable PIN or biometric login in Settings, then Security for extra protection.
 
-Only use Venmo with people you know. Never use it to pay strangers for online purchases. If someone you do not know sends you money, do not spend it — it may be a scam involving a stolen card.`,
+Only use Venmo with people you know. Never use it to pay strangers for online purchases. If someone you do not know sends you money, do not spend it. It may be a scam involving a stolen card.`,
     steps: [
       { title: 'Download and set up Venmo', content: 'Download from App Store or Google Play Store. Create an account and link a bank account or debit card.' },
       { title: 'Change privacy to Private immediately', content: 'Go to Settings → Privacy → change default to "Private" to prevent transactions from being visible to others.' },
@@ -936,7 +936,7 @@ Download the Ring app, create an account, tap "Set Up a Device" → "Doorbells,"
 
 For battery-powered models: position the mounting bracket at about 4 feet from the ground, mark and drill screw holes, attach the bracket, and snap the Ring onto it. For wired models: turn off power at the breaker, remove your old doorbell, connect the two wires to the Ring's terminals, mount it, and turn power back on.
 
-Test by pressing the doorbell button — you should receive a notification and see live video. Adjust motion sensitivity in the app to reduce false alerts. Use Motion Zones to focus detection on your porch and walkway only.
+Test by pressing the doorbell button. You should receive a notification and see live video. Adjust motion sensitivity in the app to reduce false alerts. Use Motion Zones to focus detection on your porch and walkway only.
 
 Ring Protect subscription plans let you save and review video recordings. Without a plan, you still get live video and motion alerts.`,
     steps: [
@@ -1165,7 +1165,7 @@ Put your speaker/headphones into pairing mode — usually hold the power or Blue
 
 Audio now plays through the Bluetooth device. To switch back, change the output to "TV Speaker" in Sound settings.
 
-If there is a delay between video and audio (lip sync issue), look for "Audio Delay" or "Lip Sync" in your TV's Sound settings. For the best experience with soundbars, use HDMI ARC instead of Bluetooth — it provides better quality with no delay. Look for an HDMI port labeled "ARC" or "eARC."`,
+If there is a delay between video and audio (lip sync issue), look for "Audio Delay" or "Lip Sync" in your TV's Sound settings. For the best experience with soundbars, use HDMI ARC instead of Bluetooth. It provides better quality with no delay. Look for an HDMI port labeled "ARC" or "eARC."`,
     steps: [
       { title: 'Check if your TV has Bluetooth', content: 'Go to Settings → Sound. Look for "Bluetooth" or "Bluetooth Speaker List."' },
       { title: 'Put speaker in pairing mode', content: 'Hold the power or Bluetooth button until the light flashes blue or you hear "pairing mode."' },
@@ -1335,7 +1335,7 @@ Extra Members: Netflix Standard and Premium plans allow you to add extra members
 
 For people in your household: Netflix plans support 1-4 simultaneous streams depending on your plan. Standard supports 2 screens, and Premium supports 4 screens. Everyone in the same home can have their own profile within the account.
 
-To manage profiles: go to netflix.com → Manage Profiles. You can add, edit, or delete profiles. Set up a Kids profile for children — it limits content to age-appropriate titles and uses a more colorful interface.
+To manage profiles: go to netflix.com → Manage Profiles. You can add, edit, or delete profiles. Set up a Kids profile for children. It limits content to age-appropriate titles and uses a more colorful interface.
 
 To see who is using your account: go to Account → Manage Access and Devices. This shows every device signed into your account and lets you sign out devices you do not recognize.
 
@@ -1789,7 +1789,7 @@ For scheduling calls: tap "Calendar" → "New Meeting" → set a date and time �
 
 Option 1: Mute the conversation (recommended first step). This keeps you in the group but stops notifications. iPhone: open the group, tap the group name at the top → "Hide Alerts." Android: open the group → three dots → "Mute" or "Notifications Off." You can still read messages when you open the app, but your phone will not buzz.
 
-Option 2: Leave the group. On iPhone (iMessage groups with 3+ people): tap the group name → "Leave this Conversation." Note: this sends a notification to the group saying you left. On Android: this depends on the app. In Google Messages, you cannot leave a group SMS/MMS — you can only mute it. In apps like WhatsApp, tap the group name → "Exit Group."
+Option 2: Leave the group. On iPhone (iMessage groups with 3+ people): tap the group name → "Leave this Conversation." Note: this sends a notification to the group saying you left. On Android: this depends on the app. In Google Messages, you cannot leave a group SMS/MMS. You can only mute it. In apps like WhatsApp, tap the group name → "Exit Group."
 
 If you want to be polite about leaving: send a brief message first. Something like "Thanks for including me! I need to step away from this group for now. But I am always reachable by regular text. Talk soon!" Then leave. Most people understand — and most have wanted to leave a group chat themselves at some point.
 
@@ -1910,7 +1910,7 @@ Whatever method you choose, consistency is key. Set your reminders for the same 
     difficulty: 'Beginner',
     body: `Your phone can track your daily steps, walking distance, and other activity without any extra devices — using its built-in motion sensors. Apple Health (iPhone) and Google Fit (Android) are free apps that collect this data and present it in an easy-to-understand dashboard.
 
-Apple Health comes pre-installed on every iPhone (white icon with a red heart). Open it and you will see a Summary dashboard showing your recent activity. The app automatically tracks your steps and walking distance using your phone's motion sensors — you do not need to turn anything on. You can also manually log other health data like weight, blood pressure, sleep, and medications.
+Apple Health comes pre-installed on every iPhone (white icon with a red heart). Open it and you will see a Summary dashboard showing your recent activity. The app automatically tracks your steps and walking distance using your phone's motion sensors. You do not need to turn anything on. You can also manually log other health data like weight, blood pressure, sleep, and medications.
 
 Google Fit is available on Android (download from Play Store if not pre-installed). Open it, sign in with your Google account, and set your activity goals. Like Apple Health, it automatically tracks steps and active minutes using your phone's sensors.
 
@@ -2195,7 +2195,7 @@ For Windows to Windows: use an external hard drive or USB flash drive. On your o
 
 For Mac to Mac: use Apple's Migration Assistant. Connect both Macs to the same WiFi network. On the new Mac, open Migration Assistant (Applications → Utilities). On the old Mac, also open Migration Assistant. Follow the on-screen steps — it transfers your files, apps, settings, and even user accounts. You can also use Time Machine: back up your old Mac to an external drive, then during new Mac setup, choose "Restore from Time Machine Backup."
 
-For Windows to Mac (or vice versa): use an external drive or cloud storage (Google Drive, Dropbox, or OneDrive) to move files. Copy files from your old computer to the cloud or drive, then download them on the new one. Note that Windows programs do not run on Mac and vice versa — you will need to download Mac versions of your software.
+For Windows to Mac (or vice versa): use an external drive or cloud storage (Google Drive, Dropbox, or OneDrive) to move files. Copy files from your old computer to the cloud or drive, then download them on the new one. Note that Windows programs do not run on Mac and vice versa. You will need to download Mac versions of your software.
 
 Before getting rid of your old computer: make sure everything is transferred, sign out of all accounts, and reset the computer to factory settings. Windows: Settings → System → Recovery → Reset this PC. Mac: System Settings → General → Transfer or Reset → Erase All Content and Settings.`,
     steps: [
@@ -2253,7 +2253,7 @@ Before you leave, make sure they can: make a phone call, send and receive a text
     difficulty: 'Intermediate',
     body: `When a loved one passes away, their online accounts do not close automatically. Email, social media, banking, subscriptions, and other accounts remain active — and in some cases, they continue to charge fees. Handling these accounts is an important part of settling their affairs.
 
-Start with the most critical accounts first: financial accounts and recurring charges. Check their bank and credit card statements (online or paper) for recurring subscriptions. Cancel these to stop ongoing charges. Contact their bank to close or freeze accounts — you will typically need a death certificate and proof that you are the executor or next of kin.
+Start with the most critical accounts first: financial accounts and recurring charges. Check their bank and credit card statements (online or paper) for recurring subscriptions. Cancel these to stop ongoing charges. Contact their bank to close or freeze accounts. You will typically need a death certificate and proof that you are the executor or next of kin.
 
 For email accounts: gaining access to a deceased person's email is important because it is often the key to finding and closing their other accounts. Google (Gmail) has an "Inactive Account Manager" and a process for requesting access. Apple has a "Digital Legacy" program. In both cases, you need a death certificate and legal documentation.
 
@@ -2286,11 +2286,11 @@ If the deceased had a password manager or left a written list of accounts and pa
     difficulty: 'Beginner',
     body: `Printed photos fade over time, and paper documents can be lost in floods, fires, or moves. Digitizing your most important photos and documents preserves them forever and makes them available for sharing with family.
 
-The fastest free option is Google PhotoScan (free app, iPhone and Android). It is specifically designed for scanning printed photos — it reduces glare, automatically crops, and enhances colors. Open the app, position your phone above the photo, tap the shutter button, then move your phone to capture four corner markers. The app combines these into a single, glare-free digital copy.
+The fastest free option is Google PhotoScan (free app, iPhone and Android). It is specifically designed for scanning printed photos. It reduces glare, automatically crops, and enhances colors. Open the app, position your phone above the photo, tap the shutter button, then move your phone to capture four corner markers. The app combines these into a single, glare-free digital copy.
 
 For documents (birth certificates, insurance policies, legal papers), use your phone's built-in scanner. iPhone: open the Notes app → create a new note → tap the camera icon → "Scan Documents." Position the document under the camera and it automatically captures and crops it. You can save as PDF. Android: open Google Drive → tap "+" → "Scan." Same process — position the document and it captures and saves it.
 
-For large photo projects (shoe boxes full of old photos), consider a dedicated photo scanner ($50-100) or a scanning service. Companies like ScanCafe and GoPhoto send you a prepaid box — you mail your photos, they scan them at high quality, and mail them back. Prices range from 10 to 40 cents per photo.
+For large photo projects (shoe boxes full of old photos), consider a dedicated photo scanner ($50-100) or a scanning service. Companies like ScanCafe and GoPhoto send you a prepaid box. You mail your photos, they scan them at high quality, and mail them back. Prices range from 10 to 40 cents per photo.
 
 After digitizing, back up your files. Upload to Google Photos, iCloud, or a cloud storage service. Also keep a copy on an external hard drive stored in a different location than the originals (a family member's house, a safe deposit box).
 
@@ -2451,7 +2451,7 @@ Unplug your old router (if you have one). Plug an Ethernet cable from your modem
 
 Most modern routers have a setup app. Check the router's packaging or quick-start guide for the app name (TP-Link Tether, Netgear Nighthawk, ASUS Router, Linksys, etc.). Download the app and follow the setup wizard.
 
-During setup, you will create a WiFi network name (SSID) and password. Choose a name you will recognize (like "SmithFamily-WiFi") and a strong password that is at least 12 characters with a mix of letters, numbers, and symbols. Write these down and keep them somewhere safe — you will need the password to connect every device.
+During setup, you will create a WiFi network name (SSID) and password. Choose a name you will recognize (like "SmithFamily-WiFi") and a strong password that is at least 12 characters with a mix of letters, numbers, and symbols. Write these down and keep them somewhere safe. You will need the password to connect every device.
 
 Place your router in a central location in your home, elevated if possible (on a shelf, not on the floor). Avoid placing it near thick walls, metal objects, mirrors, or microwaves, which can interfere with the signal. The more central the location, the more even the coverage throughout your home.
 
@@ -2599,7 +2599,7 @@ Move your router to a central location. If your router is in a corner of the hou
 
 Remove obstructions. WiFi signals are weakened by thick walls (especially concrete and brick), metal objects, mirrors, aquariums, and microwaves. Move your router away from these obstacles. Even moving it a few feet can make a difference.
 
-Reduce interference. Other electronic devices can interfere with WiFi: baby monitors, cordless phones, and Bluetooth devices. If your router is 2.4GHz, try switching to 5GHz (faster but shorter range) or vice versa. Most modern routers broadcast both — they usually have separate names or one combined network.
+Reduce interference. Other electronic devices can interfere with WiFi: baby monitors, cordless phones, and Bluetooth devices. If your router is 2.4GHz, try switching to 5GHz (faster but shorter range) or vice versa. Most modern routers broadcast both. They usually have separate names or one combined network.
 
 Update your router's firmware. Log in to your router's admin page (usually 192.168.1.1 or 192.168.0.1 — check the router's label) and check for firmware updates. Updates can improve performance and fix bugs.
 
@@ -2810,7 +2810,7 @@ The estimator uses your real work history — every job where Social Security ta
 
 The difference between starting at 62 versus 70 can be significant. Your monthly benefit at 70 can be 70 to 80 percent higher than at 62. The estimator helps you see these numbers clearly so you can plan.
 
-To use the estimator, go to ssa.gov and look for "Estimate My Benefits" or "Retirement Estimator." You can use the quick estimator without logging in — you enter your date of birth, this year's earnings, and the age you plan to stop working. For a more detailed estimate based on your actual earnings history, sign in to your my Social Security account.
+To use the estimator, go to ssa.gov and look for "Estimate My Benefits" or "Retirement Estimator." You can use the quick estimator without logging in. You enter your date of birth, this year's earnings, and the age you plan to stop working. For a more detailed estimate based on your actual earnings history, sign in to your my Social Security account.
 
 Once signed in, the estimator pulls your complete earnings record and gives you personalized estimates. You can adjust the numbers by changing your expected future earnings or your planned retirement age to see how different scenarios affect your monthly payment.
 
@@ -2918,7 +2918,7 @@ You will be prompted to give your group a name. This is optional but helpful, es
 
 Type your first message in the text field and tap the send button. All members receive the message and can reply to the group. If anyone in the group uses RCS (Rich Communication Services, which is like iMessage for Android), you will see features like read receipts, typing indicators, and higher-quality photos.
 
-To manage the group later, open the conversation and tap the group name at the top. You can add or remove members, change the group name, or mute notifications. Muting is helpful if the group gets chatty — you will still see messages when you open the conversation, but your phone will not buzz for every new text.
+To manage the group later, open the conversation and tap the group name at the top. You can add or remove members, change the group name, or mute notifications. Muting is helpful if the group gets chatty. You will still see messages when you open the conversation, but your phone will not buzz for every new text.
 
 If you are using Samsung Messages instead of Google Messages, the process is almost identical: tap the compose button, add multiple contacts, and send your first message. Samsung Messages also supports group naming and management.`,
     steps: [
@@ -2941,7 +2941,7 @@ If you are using Samsung Messages instead of Google Messages, the process is alm
     thumbnailEmoji: '',
     publishedAt: '2026-04-15',
     difficulty: 'Beginner',
-    body: `Microsoft Teams is a popular video calling and messaging app used by many workplaces, schools, and families. The good news is there is a free version that anyone can use for personal video calls, group chats, and screen sharing — you do not need a paid Microsoft 365 subscription.
+    body: `Microsoft Teams is a popular video calling and messaging app used by many workplaces, schools, and families. The good news is there is a free version that anyone can use for personal video calls, group chats, and screen sharing. You do not need a paid Microsoft 365 subscription.
 
 To get started, you need a Microsoft account. If you have ever used Outlook, Hotmail, Xbox, or Skype, you already have one. If not, you can create a free account at account.microsoft.com. You will need an email address and a password.
 
@@ -2980,7 +2980,7 @@ The free version of Teams supports meetings with up to 100 participants for up t
 
 When you send a photo through a text message, your phone uses MMS (Multimedia Messaging Service) instead of regular SMS. This happens automatically — you do not need to change any settings. The photo gets compressed slightly to fit through the messaging system. But it is still good enough for viewing on a phone screen.
 
-On iPhone: Open the Messages app and tap the conversation with the person you want to send the photo to (or start a new message). Tap the plus sign (+) to the left of the text field. You will see options including "Photos," "Camera," and others. Tap "Photos" to choose a photo from your library, or tap "Camera" to take a new photo right now. Select the photo you want to send — it appears in the message field. Add a text caption if you want, then tap the blue send arrow.
+On iPhone: Open the Messages app and tap the conversation with the person you want to send the photo to (or start a new message). Tap the plus sign (+) to the left of the text field. You will see options including "Photos," "Camera," and others. Tap "Photos" to choose a photo from your library, or tap "Camera" to take a new photo right now. Select the photo you want to send. It appears in the message field. Add a text caption if you want, then tap the blue send arrow.
 
 On Android (Google Messages): Open the Messages app and tap the conversation. Tap the plus sign (+) or the camera icon next to the text field. Choose "Gallery" or "Photos" to pick an existing photo, or "Camera" to take a new one. Select your photo, add an optional message, and tap the send arrow.
 
@@ -3090,10 +3090,10 @@ On a Mac, select text by clicking and dragging, then press Command + C to copy a
 
 You can copy more than text. To copy a link from your browser, tap the address bar (the URL at the top), select all the text, and copy it. To copy an image on a computer, right-click the image and choose "Copy image." On a phone, press and hold on an image and look for "Copy" in the menu.
 
-One important thing to know: your clipboard holds only one item at a time. When you copy something new, it replaces whatever was there before. If you need to paste the same thing multiple times, you can — it stays on the clipboard until you copy something else.`,
+One important thing to know: your clipboard holds only one item at a time. When you copy something new, it replaces whatever was there before. If you need to paste the same thing multiple times, you can. It stays on the clipboard until you copy something else.`,
     steps: [
       { title: 'Select text on a phone', content: 'Press and hold on a word until it highlights. Drag the handles to select the text you want. A menu appears above the selection.' },
-      { title: 'Copy the selection', content: 'Tap "Copy" from the menu. The text is stored on your clipboard — you will not see anything happen, but it is saved.' },
+      { title: 'Copy the selection', content: 'Tap "Copy" from the menu. The text is stored on your clipboard. You will not see anything happen, but it is saved.' },
       { title: 'Paste on a phone', content: 'Go to where you want to put the text (message, email, search bar). Tap and hold in the text field. Tap "Paste" from the menu.' },
       { title: 'Copy on a Windows computer', content: 'Click and drag your mouse to select text. Press Ctrl + C to copy. To paste, click where you want the text and press Ctrl + V.' },
       { title: 'Copy on a Mac', content: 'Click and drag to select text. Press Command + C to copy. Press Command + V to paste. These shortcuts work in nearly every app.' },
@@ -3150,7 +3150,7 @@ There are two types of updates: major updates (like going from iOS 18 to iOS 19,
 
 Before updating, make sure your phone is connected to WiFi (updates are large and can use a lot of mobile data), has at least 50 percent battery (or is plugged in), and has enough storage space (some updates need several gigabytes of free space).
 
-On iPhone: Go to Settings, then General, then Software Update. Your phone checks for available updates. If one is available, you will see a description of what it includes. Tap "Download and Install." You may need to enter your passcode. The download can take several minutes depending on your internet speed, and the installation requires your phone to restart. Do not use your phone during the installation — it will come back on when it is done.
+On iPhone: Go to Settings, then General, then Software Update. Your phone checks for available updates. If one is available, you will see a description of what it includes. Tap "Download and Install." You may need to enter your passcode. The download can take several minutes depending on your internet speed, and the installation requires your phone to restart. Do not use your phone during the installation. It will come back on when it is done.
 
 On Android: Go to Settings, then System, then System Update (the exact path varies by phone brand — Samsung uses Settings then Software Update). Tap "Check for updates." If an update is available, tap "Download" or "Download and Install." Your phone downloads the update, then restarts to install it. The whole process can take 10 to 30 minutes.
 
@@ -3179,7 +3179,7 @@ If you are running low on storage and cannot install an update, delete old photo
     difficulty: 'Beginner',
     body: `A frozen phone — where the screen does not respond to taps and nothing seems to work — is frustrating but usually not serious. Most of the time, a force restart fixes the problem. A force restart is different from a normal restart: it forces the phone to power off and back on even when the screen is unresponsive.
 
-A force restart does not delete your data, apps, or settings. Think of it like unplugging a computer and plugging it back in — it clears whatever was causing the freeze and starts fresh.
+A force restart does not delete your data, apps, or settings. Think of it like unplugging a computer and plugging it back in. It clears whatever was causing the freeze and starts fresh.
 
 iPhone (Face ID models — iPhone X and later): Press and quickly release the Volume Up button. Then press and quickly release the Volume Down button. Then press and hold the Side button until you see the Apple logo appear. This takes about 10 seconds. Let go of the Side button and wait for the phone to restart.
 
@@ -3342,7 +3342,7 @@ Public WiFi networks (at cafes, airports, hotels) are convenient but less secure
     difficulty: 'Beginner',
     body: `Do Not Disturb mode silences incoming calls, texts, and app notifications so your phone does not ring, buzz, or light up. It is perfect for sleeping, meetings, meals, or any time you want peace and quiet without turning off your phone entirely.
 
-When Do Not Disturb is on, everything still arrives — you will see the notifications when you check your phone. They are being collected, not deleted. The difference is your phone stays silent and the screen stays dark.
+When Do Not Disturb is on, everything still arrives. You will see the notifications when you check your phone. They are being collected, not deleted. The difference is your phone stays silent and the screen stays dark.
 
 On iPhone: You can turn on Do Not Disturb two ways. The quickest: open Control Center (swipe down from the top-right corner) and tap the Focus button (the crescent moon icon). Select "Do Not Disturb." For more options, go to Settings then Focus then Do Not Disturb. Here you can allow calls from specific people (like family members), allow repeated calls (if someone calls twice within three minutes, the second call comes through — useful for emergencies), and schedule Do Not Disturb to turn on and off automatically at certain times.
 
@@ -3421,7 +3421,7 @@ Tap the ride type you want and then tap "Request" or "Confirm." The app matches 
 
 When the driver is close, go outside to your pickup location. Verify the car matches what the app shows — check the license plate number. Many riders also confirm by asking the driver "Who are you here for?" to make sure they get in the right car.
 
-During the ride, the app shows your route in real time. You can share your trip status with a friend or family member using the "Share trip" feature — they can follow your ride live on a map.
+During the ride, the app shows your route in real time. You can share your trip status with a friend or family member using the "Share trip" feature. They can follow your ride live on a map.
 
 When you arrive, you do not need to do anything — the fare is charged to your payment method automatically. After the trip, the app asks you to rate your driver (1 to 5 stars) and leave an optional tip.`,
     steps: [
@@ -3491,7 +3491,7 @@ To reply to an email, open the message and tap "Reply" at the bottom. Type your 
 
 Gmail automatically filters spam (junk email) into a separate folder. Check your Spam folder sometimes — sometimes legitimate emails end up there by mistake. If you find one, tap "Not spam" to move it to your inbox.
 
-You can organize emails by starring important ones (tap the star next to any email), archiving emails you have dealt with (swipe right to archive), or using labels to categorize them. The search bar at the top is powerful — you can search by sender, subject, date, or any word in the email body.`,
+You can organize emails by starring important ones (tap the star next to any email), archiving emails you have dealt with (swipe right to archive), or using labels to categorize them. The search bar at the top is powerful. You can search by sender, subject, date, or any word in the email body.`,
     steps: [
       { title: 'Create your Gmail account', content: 'Go to gmail.com and click "Create account." Choose a username (your email address), set a password, and fill in your name and date of birth.' },
       { title: 'Open Gmail on your device', content: 'On a computer: go to gmail.com. On iPhone: download the Gmail app from the App Store. On Android: the Gmail app is pre-installed.' },
@@ -3626,7 +3626,7 @@ You can also ask Siri or Google Assistant to do math for you. Say "Hey Siri, wha
 
 To set up voicemail for the first time, open the Phone app (the green phone icon) and tap the "Voicemail" tab at the bottom-right corner. If this is your first time, you will see a "Set Up Now" button. Tap it.
 
-You will be asked to create a voicemail password. Choose a 4 to 6 digit number and enter it twice to confirm. Write this down somewhere safe — you may need it if you ever need to reset your voicemail or access it from a different phone.
+You will be asked to create a voicemail password. Choose a 4 to 6 digit number and enter it twice to confirm. Write this down somewhere safe. You may need it if you ever need to reset your voicemail or access it from a different phone.
 
 Next, you record your greeting. You have two options: "Default" plays a generic carrier greeting that says your phone number. "Custom" lets you record your own message. Most people choose Custom so callers hear their voice and know they reached the right person.
 
@@ -3638,7 +3638,7 @@ You can delete voicemails by swiping left on them or tapping "Delete." Deleted v
     steps: [
       { title: 'Open the Phone app', content: 'Tap the green Phone icon on your home screen. Tap the "Voicemail" tab at the bottom-right corner of the screen.' },
       { title: 'Tap Set Up Now', content: 'If this is your first time, a "Set Up Now" button appears. Tap it to begin the setup process.' },
-      { title: 'Create a voicemail password', content: 'Choose a 4 to 6 digit password and enter it twice. Write this down somewhere safe — you will need it to access voicemail from another phone.' },
+      { title: 'Create a voicemail password', content: 'Choose a 4 to 6 digit password and enter it twice. Write this down somewhere safe. You will need it to access voicemail from another phone.' },
       { title: 'Choose and record your greeting', content: 'Choose "Custom" to record your own greeting. Tap "Record," speak your message, and tap "Stop." Tap "Play" to listen, then "Save" when satisfied.' },
       { title: 'Listen to voicemails', content: 'When someone leaves a message, it appears in the Voicemail tab. Tap any message to play it. A text transcription also appears below each message.' },
       { title: 'Manage your voicemails', content: 'Swipe left on a voicemail to delete it. Tap "Speaker" to play through the speaker. Tap "Call Back" to return the call directly.' },
@@ -3659,7 +3659,7 @@ You can delete voicemails by swiping left on them or tapping "Delete." Deleted v
 
 The most common way to set up voicemail is through the Phone app. Open the Phone app (the phone icon on your home screen) and press and hold the number 1 on the keypad. This is the universal voicemail speed dial on most carriers. The first time you call, you will hear automated prompts walking you through setup.
 
-The setup process typically asks you to create a PIN (4 to 6 digits) and record a greeting. For the PIN, choose something you will remember — you need it to check voicemail from another phone. For the greeting, you can use the default (an automated voice says your number) or record a custom greeting.
+The setup process typically asks you to create a PIN (4 to 6 digits) and record a greeting. For the PIN, choose something you will remember. You need it to check voicemail from another phone. For the greeting, you can use the default (an automated voice says your number) or record a custom greeting.
 
 For a custom greeting, the system prompts you to record after a beep. Say something like: "Hi, you have reached [your name]. I am not available right now. Please leave your name, number, and a brief message. And I will get back to you." Press the pound key (#) or follow the prompts to save your recording.
 
@@ -3671,7 +3671,7 @@ To check voicemail the traditional way: press and hold 1 in the Phone app. Enter
     steps: [
       { title: 'Open the Phone app', content: 'Tap the Phone icon on your home screen. If you see a "Voicemail" tab at the bottom, you have Visual Voicemail. If not, proceed to the next step.' },
       { title: 'Press and hold 1 to call voicemail', content: 'Open the keypad in the Phone app and press and hold the number 1. This calls your voicemail system. The first time, it walks you through setup.' },
-      { title: 'Create a voicemail PIN', content: 'When prompted, choose a 4 to 6 digit PIN. Enter it twice to confirm. Write it down somewhere safe — you need it to access voicemail remotely.' },
+      { title: 'Create a voicemail PIN', content: 'When prompted, choose a 4 to 6 digit PIN. Enter it twice to confirm. Write it down somewhere safe. You need it to access voicemail remotely.' },
       { title: 'Record your greeting', content: 'Choose "Personal" or "Custom" greeting. Record after the beep. Press pound (#) or follow prompts to save.' },
       { title: 'Check your voicemails', content: 'Visual Voicemail: tap the Voicemail tab in the Phone app to see messages in a list. Traditional: press and hold 1, enter your PIN, and listen to messages.' },
       { title: 'Consider a Visual Voicemail app', content: `If your Phone app does not have a Voicemail tab, search the Play Store for your carrier's Visual Voicemail app (T-Mobile, Verizon, AT&T each offer one).` },
@@ -3822,7 +3822,7 @@ Your alarm clock still works normally during Do Not Disturb on both iPhone and A
     thumbnailEmoji: '',
     publishedAt: '2026-04-15',
     difficulty: 'Beginner',
-    body: `Adding contacts to your phone means you do not have to remember phone numbers — you can call or text people by name. It also means when they call you, their name shows up on your screen instead of an unknown number.
+    body: `Adding contacts to your phone means you do not have to remember phone numbers. You can call or text people by name. It also means when they call you, their name shows up on your screen instead of an unknown number.
 
 On iPhone: Open the Phone app and tap the "Contacts" tab at the bottom. Tap the plus sign (+) in the top-right corner. Enter the person's first name, last name, and phone number. You can also add their email address, home address, birthday, and a note. Tap "Done" in the top-right corner to save.
 
@@ -3997,7 +3997,7 @@ Monitor your statements. After shopping online, check your credit card or bank s
 
 These scams work because so many people order packages online. At any given time, you might actually be expecting a delivery, which makes the scam message seem plausible.
 
-How to recognize a delivery scam: the message creates urgency ("Your package will be returned if you do not respond within 24 hours"). Real delivery companies leave a note or try again — they do not threaten to return packages by text. The link looks off — the URL might be something like usps-delivery-update.com instead of the real domain (usps.com). It asks for payment — real delivery companies do not charge unexpected fees by text. It asks for personal information — a real delivery notification never asks for your Social Security number or credit card number.
+How to recognize a delivery scam: the message creates urgency ("Your package will be returned if you do not respond within 24 hours"). Real delivery companies leave a note or try again. They do not threaten to return packages by text. The link looks off — the URL might be something like usps-delivery-update.com instead of the real domain (usps.com). It asks for payment — real delivery companies do not charge unexpected fees by text. It asks for personal information — a real delivery notification never asks for your Social Security number or credit card number.
 
 What to do instead: if you get a suspicious delivery message, do not click the link. If you are expecting a package, go directly to the carrier's official website (usps.com, ups.com, fedex.com) and enter your tracking number there. You can also use the official app for each carrier to track packages.
 
@@ -4067,7 +4067,7 @@ Password: a longer combination of letters, numbers, and special characters. More
 
 Pattern (Android only): draw a pattern connecting dots on a grid. This is fast but can be guessed by someone watching over your shoulder or by looking at smudge marks on your screen.
 
-Biometrics: Face ID (iPhone X and later), Touch ID (older iPhones), or fingerprint sensors (most Android phones). These are the most convenient — you unlock your phone by looking at it or touching the sensor. You still set a PIN or password as a backup.
+Biometrics: Face ID (iPhone X and later), Touch ID (older iPhones), or fingerprint sensors (most Android phones). These are the most convenient. You unlock your phone by looking at it or touching the sensor. You still set a PIN or password as a backup.
 
 On iPhone: Go to Settings then Face ID and Passcode (or Touch ID and Passcode on older models). Tap "Turn Passcode On." Choose a 6-digit passcode (recommended) or tap "Passcode Options" for a 4-digit PIN or a custom password. After setting a passcode, the phone asks if you want to set up Face ID or Touch ID — follow the prompts to register your face or fingerprint.
 
@@ -4139,7 +4139,7 @@ On iPhone: Go to Settings then Bluetooth. Make sure Bluetooth is turned on (the 
 
 On Android: Go to Settings then Connected devices then "Pair new device" (or Settings then Bluetooth on some phones). Make sure Bluetooth is turned on. Under "Available devices," your speaker should appear. Tap it. A "Connected" label appears when pairing is complete.
 
-Once paired, your phone remembers the speaker. Next time you want to use it, turn on the speaker and turn on Bluetooth on your phone — they will reconnect automatically without going through the pairing process again.
+Once paired, your phone remembers the speaker. Next time you want to use it, turn on the speaker and turn on Bluetooth on your phone. They will reconnect automatically without going through the pairing process again.
 
 If you have trouble connecting: make sure the speaker is in pairing mode (not connected to another device). Move the phone and speaker closer together. Turn both off and back on. If the speaker was previously connected to a different phone, it may need to be unpaired from that phone first or put back into pairing mode.
 
@@ -4533,7 +4533,7 @@ A good approach is to pin 5 to 8 of your most-used apps. Common choices include 
 
 In Windows 11, the Start menu has two main sections: "Pinned" at the top (showing app icons you have pinned there) and "Recommended" at the bottom (showing recently opened files and apps). You can pin any app to the Start menu by right-clicking it in the All Apps list and selecting "Pin to Start."
 
-To remove an app from the pinned section, right-click its icon in the Start menu and select "Unpin from Start." This does not uninstall the app — it only removes it from the pinned area. The app remains available in the All Apps list.
+To remove an app from the pinned section, right-click its icon in the Start menu and select "Unpin from Start." This does not uninstall the app. It only removes it from the pinned area. The app remains available in the All Apps list.
 
 You can rearrange pinned apps by clicking and dragging them to different positions. Group related apps together — for example, put all your communication apps (email, video calling, messaging) near each other and all your productivity apps (word processor, spreadsheet, calendar) together.
 
@@ -4636,7 +4636,7 @@ Stay safe by only downloading apps from official developer websites. Avoid downl
 
 To add an app to the Dock, open Finder, click "Applications" in the sidebar, find the app you want, and drag its icon down to the Dock. You can also add a currently running app by right-clicking its icon in the Dock and selecting "Options" then "Keep in Dock."
 
-To remove an app from the Dock, click and drag its icon out of the Dock toward the center of your screen. Hold it there for a moment until you see the word "Remove" appear, then release. The icon will disappear with a small poof animation. This does not delete or uninstall the app — it only removes the shortcut from your Dock. The app is still available in your Applications folder.
+To remove an app from the Dock, click and drag its icon out of the Dock toward the center of your screen. Hold it there for a moment until you see the word "Remove" appear, then release. The icon will disappear with a small poof animation. This does not delete or uninstall the app. It only removes the shortcut from your Dock. The app is still available in your Applications folder.
 
 You can rearrange apps in the Dock by clicking and dragging them left or right to new positions. The Dock has a divider line (a thin vertical line) that separates apps on the left from folders and files on the right. You can drag folders (like Downloads or Documents) to the right side of this divider for quick access.
 
@@ -4715,7 +4715,7 @@ If an app freezes repeatedly, it may show a problem. Try updating the app to the
 Force-quit should be a last resort — always try closing the app normally first (Command + Q). Give a slow app a minute or two before force-quitting, as it may be processing something that takes time. But if the rainbow wheel spins for more than a couple of minutes and the app is truly frozen, force-quit is the right move.`,
     steps: [
       { title: 'Use the keyboard shortcut', content: 'Press Command + Option + Esc on your keyboard. The Force Quit Applications window will open showing all running apps.' },
-      { title: 'Select the unresponsive app', content: 'Find the frozen app in the list — it may say "Not Responding" next to its name. Click on it to select it.' },
+      { title: 'Select the unresponsive app', content: 'Find the frozen app in the list. It may say "Not Responding" next to its name. Click on it to select it.' },
       { title: 'Click Force Quit', content: 'Click the "Force Quit" button at the bottom of the window. Confirm by clicking "Force Quit" again in the dialog that appears. The app will close right away.' },
       { title: 'Alternative: Use the Apple menu', content: 'Click the Apple icon in the top-left corner of your screen and select "Force Quit" to open the same Force Quit Applications window.' },
       { title: 'Alternative: Use the Dock', content: `Hold down the Option key on your keyboard, then right-click (or Control-click) the frozen app's icon in the Dock. Select "Force Quit" from the menu that appears.` },
@@ -4901,7 +4901,7 @@ Set a Screen Time passcode that is different from the child's login password. Th
     difficulty: 'Beginner' as any,
     body: `Cloud storage saves your files on the internet so you can access them from any phone, tablet, or computer — and so you do not lose them if your device is lost or breaks. Google Drive, Microsoft OneDrive, and Apple iCloud each offer free storage. Knowing how to use at least one of these is one of the most useful digital skills you can have.`,
     steps: [
-      { title: 'Choose a cloud storage service', content: 'Use Google Drive (drive.google.com) if you have a Gmail account — it gives you 15 GB free. Use OneDrive (onedrive.com) if you use Windows or Microsoft — also 15 GB free. Use iCloud if you have an iPhone or Mac — 5 GB free, with upgrades available.' },
+      { title: 'Choose a cloud storage service', content: 'Use Google Drive (drive.google.com) if you have a Gmail account. It gives you 15 GB free. Use OneDrive (onedrive.com) if you use Windows or Microsoft — also 15 GB free. Use iCloud if you have an iPhone or Mac — 5 GB free, with upgrades available.' },
       { title: 'Upload a file', content: 'On Google Drive or OneDrive, go to the website and drag a file from your computer into the browser window, or click "New" then "File upload." On iPhone, files saved in apps like Photos or Notes sync to iCloud automatically.' },
       { title: 'Access your files from another device', content: 'Sign in to the same account on any device and your files will be there. On a phone, download the Google Drive, OneDrive, or Files app (iPhone) to access your cloud files.' },
       { title: 'Organize files into folders', content: 'Right-click (or tap and hold on mobile) to create a new folder. Drag files into folders to keep things organized. Good folder names like "Tax Documents 2025" or "Family Photos" make it easy to find things later.' },
@@ -4942,7 +4942,7 @@ Set a Screen Time passcode that is different from the child's login password. Th
     body: `A well-organized file system saves you from frantically searching for important documents at the worst possible moments. Most people save files wherever is convenient and then struggle to find them later. Spending 30 minutes setting up a simple folder structure will save you hours of searching over time.`,
     steps: [
       { title: 'Start with a few main folders', content: 'Open your Documents folder on your computer. Create a handful of broad folders for the main areas of your life — for example: "Finance," "Health," "Family," "Work," and "Photos." Right-click in any empty space and choose "New Folder" to create one.' },
-      { title: 'Create subfolders inside each main folder', content: 'Inside "Finance," create subfolders like "Tax Returns," "Bank Statements," and "Insurance." Inside "Health," create "Medical Records" and "Insurance Cards." Keep it simple — you can always add more later.' },
+      { title: 'Create subfolders inside each main folder', content: 'Inside "Finance," create subfolders like "Tax Returns," "Bank Statements," and "Insurance." Inside "Health," create "Medical Records" and "Insurance Cards." Keep it simple. You can always add more later.' },
       { title: 'Name files clearly with dates', content: 'Rename files so you know what they are at a glance. A name like "2025-Tax-Return-Federal.pdf" is much better than "document1.pdf." Including the year at the start of the name helps files sort in order automatically.' },
       { title: 'Move existing files into their folders', content: 'Go through your Downloads folder and Desktop and move files into the right folders. Delete anything you no longer need. A cluttered Desktop makes finding things harder — aim to keep it mostly empty.' },
       { title: 'Keep up the habit', content: 'When you download or save a new file, put it directly in the right folder instead of leaving it in Downloads. At the end of each month, take five minutes to file anything that has piled up. Consistency is the key to staying organized.' },
@@ -4962,7 +4962,7 @@ Set a Screen Time passcode that is different from the child's login password. Th
     body: `A VPN (Virtual Private Network) creates a secure, private tunnel for your internet connection — protecting your data when you are on public WiFi or accessing sensitive accounts. Many employers require employees to use a VPN when working from home. Consumer VPNs also protect your privacy from advertisers and help keep your browsing secure on the go.`,
     steps: [
       { title: 'Understand when you need a VPN', content: 'Use a VPN whenever you are on public WiFi — at a coffee shop, hotel, airport, or library. It is also useful if your employer requires it for accessing company systems remotely. For everyday home internet use, a VPN is optional but adds an extra layer of privacy.' },
-      { title: 'Choose a reputable VPN service', content: 'Trusted consumer VPN services include NordVPN, ExpressVPN, and Proton VPN (which has a free tier). Avoid free VPNs from unknown companies — they may sell your data. Many employers provide a VPN app. Check with your IT department.' },
+      { title: 'Choose a reputable VPN service', content: 'Trusted consumer VPN services include NordVPN, ExpressVPN, and Proton VPN (which has a free tier). Avoid free VPNs from unknown companies. They may sell your data. Many employers provide a VPN app. Check with your IT department.' },
       { title: 'Install the VPN app', content: `Download the VPN app from the provider's official website or your phone's app store. Create an account and follow the setup instructions. Most VPN apps require you to allow a VPN configuration on your device — approve this when prompted.` },
       { title: 'Connect to the VPN', content: 'Open the VPN app and tap or click "Connect." The app will choose the best server automatically, or you can choose a specific country. A VPN icon — often a small padlock or key — will appear in your status bar when you are connected.' },
       { title: 'Disconnect when done', content: 'When you are finished working or leave the public location, open the VPN app and tap "Disconnect." Leaving a VPN on continuously can slow your connection. For home use, connect only when needed for extra privacy.' },
@@ -5048,7 +5048,7 @@ Set a Screen Time passcode that is different from the child's login password. Th
       { title: 'Create a Walmart account', content: 'Go to walmart.com or download the Walmart app. Click "Create an account" and enter your email address and a password. You will need to add your delivery address and a payment method.' },
       { title: 'Shop for items online', content: 'Use the search bar to find items, or browse the Grocery section. Add items to your cart just like any online store. The app shows which items are in stock at your local store.' },
       { title: 'Choose pickup or delivery at checkout', content: 'When you are ready to check out, select "Pickup" for free curbside service or "Delivery" if you prefer items brought to your door. Choose a pickup or delivery time slot that works for you.' },
-      { title: 'Check in when you arrive (for pickup)', content: `When you pull into the Walmart parking lot, open the app and tap "I'm here." Tell the app which parking spot you are in. A Walmart associate will bring your order to your car — you do not need to go inside.` },
+      { title: 'Check in when you arrive (for pickup)', content: `When you pull into the Walmart parking lot, open the app and tap "I'm here." Tell the app which parking spot you are in. A Walmart associate will bring your order to your car. You do not need to go inside.` },
       { title: 'Review your order after pickup', content: 'If any items were out of stock, the app will show substitutions that were made. You can approve substitutions in advance in your account settings. Report any missing or incorrect items through the app for a quick refund.' },
     ],
   },
@@ -5193,7 +5193,7 @@ Set a Screen Time passcode that is different from the child's login password. Th
     steps: [
       { title: `Check your carrier's international plan`, content: 'Before traveling, call your carrier or check their app. T-Mobile and Google Fi include free international data in most countries. AT&T and Verizon offer day passes (around $10 per day) that include your existing plan abroad. Adding a plan for the duration of your trip is the simplest option.' },
       { title: 'Turn on WiFi Calling', content: 'On iPhone, go to Settings, then Phone, then WiFi Calling and turn it on. On Android, go to Settings, then Connections, then WiFi Calling. When connected to WiFi, your calls and texts will use WiFi instead of the cellular network, avoiding roaming charges.' },
-      { title: 'Buy a local SIM card at your destination', content: 'For trips longer than a week, buying a prepaid SIM card from a local carrier at the airport or a convenience store in your destination country can be much cheaper. Look for prepaid data plans — they are widely available in Europe and most tourist destinations.' },
+      { title: 'Buy a local SIM card at your destination', content: 'For trips longer than a week, buying a prepaid SIM card from a local carrier at the airport or a convenience store in your destination country can be much cheaper. Look for prepaid data plans. They are widely available in Europe and most tourist destinations.' },
       { title: 'Use an eSIM for a modern option', content: 'If your phone supports eSIM (most phones made after 2019 do), you can purchase and activate an international data plan before you leave home through apps like Airalo or Holafly. An eSIM is a digital SIM — no physical card needed. Rates start around $5 for 1 GB.' },
       { title: 'Connect to hotel and public WiFi for most tasks', content: 'Use hotel WiFi for emails, maps, messaging apps, and video calls. Download Google Maps offline before you travel by searching your destination, tapping the offline maps icon, and downloading the area. This lets you navigate without using any data at all.' },
     ],
@@ -5257,7 +5257,7 @@ Set a Screen Time passcode that is different from the child's login password. Th
     steps: [
       { title: 'Find the Apple TV app on your device', content: 'On iPhone or iPad, the Apple TV app comes pre-installed — look for the black and white TV icon. On a Samsung, LG, or Vizio smart TV, go to the app store on your TV and search for "Apple TV." It is also built into Roku, Fire TV, and Apple TV devices.' },
       { title: 'Sign in with your Apple ID', content: 'Open the app and sign in with your Apple ID (the email and password you use for the App Store). If you do not have an Apple ID, you can create one for free at appleid.apple.com.' },
-      { title: 'Subscribe to Apple TV+ for original content', content: 'Tap "Apple TV+" in the app to see original shows and movies. Tap "Subscribe" to start a subscription — it costs around $10 per month and includes a free trial for new subscribers. Many Apple devices come with a complimentary trial period as well.' },
+      { title: 'Subscribe to Apple TV+ for original content', content: 'Tap "Apple TV+" in the app to see original shows and movies. Tap "Subscribe" to start a subscription. It costs around $10 per month and includes a free trial for new subscribers. Many Apple devices come with a complimentary trial period as well.' },
       { title: 'Browse and watch', content: 'The "Watch Now" tab shows recommendations and content from your connected streaming apps. The "Apple TV+" tab shows only Apple originals. Tap any title and select "Play" to start watching.' },
       { title: 'Rent or buy movies', content: 'Tap the "Store" tab to browse movies available to rent or buy. Rental prices are typically around $4 to $6 and give you 30 days to start watching and 48 hours to finish once you press play. Purchased movies stay in your library permanently.' },
     ],
@@ -5383,7 +5383,7 @@ Set a Screen Time passcode that is different from the child's login password. Th
       { title: 'Do not trust caller ID', content: `Scammers can fake (spoof) phone numbers to make it look like your real bank is calling. A call that shows your bank's name on caller ID does not mean the caller is actually from your bank.` },
       { title: 'Hang up and call your bank directly', content: `If you receive a call or text that worries you, hang up or ignore it. Call the number on the back of your debit card or on your bank's official website to check whether there is actually a problem with your account.` },
       { title: 'Recognize urgent language as a red flag', content: 'Scammers create panic by saying things like "Your account will be closed in 30 minutes" or "Unusual charges are being made right now." This urgency is designed to make you act without thinking. Take a breath and verify independently before doing anything.' },
-      { title: 'Report scam attempts', content: `If you receive a bank impersonation call, report it to the FTC at reportfraud.ftc.gov and to your bank's fraud line. If you shared information or sent money, contact your bank right away — they may be able to stop or reverse a transfer.` },
+      { title: 'Report scam attempts', content: `If you receive a bank impersonation call, report it to the FTC at reportfraud.ftc.gov and to your bank's fraud line. If you shared information or sent money, contact your bank right away. They may be able to stop or reverse a transfer.` },
     ],
   },
 
@@ -5402,7 +5402,7 @@ Set a Screen Time passcode that is different from the child's login password. Th
       { title: 'Freeze your credit at Equifax', content: 'Go to equifax.com/personal/credit-report-services/credit-freeze. Click "Place a Security Freeze" and follow the steps. You will need to create an account and verify your identity. You will receive a PIN — save this, as you will need it to unfreeze your credit later.' },
       { title: 'Freeze your credit at Experian', content: 'Go to experian.com/freeze/center.html and click "Freeze or Manage Freeze." Create an account or log in and follow the instructions to place the freeze. Experian will give you a PIN or confirmation number to save.' },
       { title: 'Freeze your credit at TransUnion', content: 'Go to transunion.com/credit-help/credit-freeze and click "Get Started." Create an account and follow the steps. TransUnion lets you manage the freeze through their website or app.' },
-      { title: 'Unfreeze when you need to apply for credit', content: `If you want to apply for a loan, credit card, or apartment that requires a credit check, you will need to temporarily unfreeze your credit at the relevant bureau. Log in to each bureau's website and select "Temporary Lift" — you can usually do this in minutes.` },
+      { title: 'Unfreeze when you need to apply for credit', content: `If you want to apply for a loan, credit card, or apartment that requires a credit check, you will need to temporarily unfreeze your credit at the relevant bureau. Log in to each bureau's website and select "Temporary Lift". You can usually do this in minutes.` },
       { title: `Consider freezing a child's credit too`, content: 'Identity thieves sometimes target children because the fraud can go undetected for years. If you have children under 16, you can request a credit freeze on their behalf by contacting each bureau with proof of your identity and their relationship to you.' },
     ],
   },
@@ -5423,7 +5423,7 @@ Set a Screen Time passcode that is different from the child's login password. Th
       { title: 'Go to IRS Free File at irs.gov/freefile', content: 'Type irs.gov/freefile directly into your browser — do not search for it to avoid lookalike scam sites. Click "Use Free Guided Tax Software" to see the list of participating companies. Each has different income requirements and state filing options.' },
       { title: 'Choose a Free File partner and start your return', content: 'Compare the options and click the link to your chosen provider. You will be taken directly to their Free File version. Create an account with your email address and start a new tax return. The software will ask you questions and fill in the forms for you.' },
       { title: 'Enter your income and deductions', content: 'Follow the step-by-step interview. Enter your wages from your W-2, any other income sources, and answer questions about deductions. The software calculates your refund or amount owed automatically as you go.' },
-      { title: 'Review and submit your return', content: 'Review your completed return before submitting. If you are getting a refund, enter your bank account number and routing number for direct deposit — it is faster and safer than a paper check. Click "Submit" to file. You will receive an email confirmation that the IRS accepted your return.' },
+      { title: 'Review and submit your return', content: 'Review your completed return before submitting. If you are getting a refund, enter your bank account number and routing number for direct deposit. It is faster and safer than a paper check. Click "Submit" to file. You will receive an email confirmation that the IRS accepted your return.' },
     ],
   },
 
@@ -5529,7 +5529,7 @@ Set a Screen Time passcode that is different from the child's login password. Th
     body: `WhatsApp is the world's most popular messaging app, with over 2 billion users. It lets you send text messages, voice messages, photos, videos, and make free voice or video calls to anyone else who has WhatsApp — including friends and family in other countries. All messages and calls are encrypted for privacy. And it uses your WiFi or data plan rather than your phone minutes.`,
     steps: [
       { title: 'Download and install WhatsApp', content: 'Search for "WhatsApp" in the App Store (iPhone) or Google Play (Android) and download the free app. Open it and tap "Agree and Continue."' },
-      { title: 'Verify your phone number', content: 'Enter your country code and phone number. WhatsApp will send a 6-digit verification code by text message. Enter the code to verify your account. WhatsApp uses your phone number as your identity — there is no separate username or password needed.' },
+      { title: 'Verify your phone number', content: 'Enter your country code and phone number. WhatsApp will send a 6-digit verification code by text message. Enter the code to verify your account. WhatsApp uses your phone number as your identity. There is no separate username or password needed.' },
       { title: 'Set up your profile', content: 'Enter your name and optionally add a profile photo. Tap the checkmark when done. WhatsApp will automatically show you which of your existing phone contacts also use WhatsApp.' },
       { title: 'Send a message or make a call', content: 'Tap the chat bubble icon at the bottom (or top right on Android). Tap a contact name to open a conversation and type a message. To make a call, open a conversation and tap the phone icon for a voice call or the video camera icon for a video call. Both are free.' },
       { title: 'Create a group chat', content: 'To chat with multiple people at once — great for family groups — tap the new chat icon, then "New Group." Select the contacts to add, then give the group a name and photo. You can have up to 1,024 people in a WhatsApp group.' },
@@ -5636,7 +5636,7 @@ Set a Screen Time passcode that is different from the child's login password. Th
       { title: 'Buy a smart plug', content: 'Smart plugs are available for $10 to $20 each at Amazon, Walmart, Best Buy, and Target. Popular reliable options include the Kasa Smart Plug (TP-Link), the Amazon Smart Plug (works with Alexa), and the Wyze Plug. Make sure it is compatible with your smart speaker if you have one.' },
       { title: 'Plug it in and download the app', content: 'Plug the smart plug into a standard outlet. Download the companion app — Kasa uses the Kasa app, Wyze uses the Wyze app. Create a free account with your email address.' },
       { title: 'Connect the smart plug to your WiFi', content: 'Open the app and tap "Add device" or "+". Follow the on-screen instructions to connect the smart plug to your home WiFi network. The process takes about 2 to 3 minutes and usually involves pressing a button on the plug while the app sets it up.' },
-      { title: 'Control it with the app', content: 'Once set up, you will see the smart plug in your app. Tap the power button icon to turn it on or off from anywhere. Plug a lamp into the smart plug and test it — you should see the light turn on and off when you tap the app.' },
+      { title: 'Control it with the app', content: 'Once set up, you will see the smart plug in your app. Tap the power button icon to turn it on or off from anywhere. Plug a lamp into the smart plug and test it. You should see the light turn on and off when you tap the app.' },
       { title: 'Create a schedule', content: 'In the app, tap your smart plug and find "Schedule" or "Automations." Set it to turn on at sunset and off at 10 PM, for example. You can also add it to Amazon Alexa or Google Home to control it by voice: say "Alexa, turn on the living room lamp."' },
     ],
   },
@@ -5654,7 +5654,7 @@ Set a Screen Time passcode that is different from the child's login password. Th
     body: `A smart thermostat lets you control your home's heating and cooling from your smartphone and can learn your schedule to automatically save energy when you are away. The Nest Learning Thermostat and ecobee are the most popular options. Studies show smart thermostats save homeowners an average of $140 per year on energy bills, making them one of the best return-on-investment smart home upgrades.`,
     steps: [
       { title: 'Check compatibility before buying', content: 'Most homes with a standard forced-air heating and cooling system are compatible. Use the compatibility checker on the Nest website (nest.com/compatibility) or ecobee website before purchasing. You will need to look at the wires on your current thermostat — check for a wire labeled "C" or "Common" for the best experience.' },
-      { title: 'Turn off power and remove your old thermostat', content: 'Turn off the power to your HVAC system at the circuit breaker before starting. Remove your old thermostat from the wall and photograph the wiring configuration before disconnecting anything — you will need to replicate it on the new thermostat.' },
+      { title: 'Turn off power and remove your old thermostat', content: 'Turn off the power to your HVAC system at the circuit breaker before starting. Remove your old thermostat from the wall and photograph the wiring configuration before disconnecting anything. You will need to replicate it on the new thermostat.' },
       { title: 'Install the new thermostat', content: `Attach the new thermostat's base plate to the wall, connect the wires to the matching terminals (use the photo you took), and snap the thermostat display onto the base. Turn the power back on at the breaker.` },
       { title: 'Connect to WiFi using the app', content: `Download the Nest app or ecobee app and create a free account. Follow the in-app setup instructions to connect your new thermostat to your home WiFi. The thermostat's screen will also guide you through the process.` },
       { title: 'Set your schedule and preferences', content: 'Use the app to set your preferred temperatures for morning, daytime, evening, and night. Both Nest and ecobee will learn your schedule over time and suggest adjustments. Enable the "Away" mode so temperatures automatically adjust when everyone leaves home.' },

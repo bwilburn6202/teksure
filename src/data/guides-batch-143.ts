@@ -121,7 +121,7 @@ Without Do Not Disturb, every text, news alert, and app notification wakes you u
 
 **iPhone: Do Not Disturb and Focus**
 
-Apple calls this feature "Focus" on every current iPhone. Do Not Disturb is the simplest Focus option — it silences everything except the contacts you choose.
+Apple calls this feature "Focus" on every current iPhone. Do Not Disturb is the simplest Focus option. It silences everything except the contacts you choose.
 
 To turn it on right now, swipe down from the upper-right corner of your screen to open the Control Center. Look for a crescent moon icon. Tap it once to turn on Do Not Disturb. Tap it again to turn it off. If you do not see the crescent moon, look for a "Focus" button instead.
 
@@ -225,7 +225,7 @@ The second key is usually a short code that gets sent to your phone by text mess
 
 **Why does this matter?**
 
-Data breaches happen regularly at large companies. When a company's database is stolen, millions of usernames and passwords end up for sale online. If you use the same password at multiple sites, criminals will try that password everywhere. Two-factor authentication stops them cold — they have the password but not your phone.
+Data breaches happen regularly at large companies. When a company's database is stolen, millions of usernames and passwords end up for sale online. If you use the same password at multiple sites, criminals will try that password everywhere. Two-factor authentication stops them cold. They have the password but not your phone.
 
 According to Google's own research, turning on 2FA blocks over 99% of automated hacking attempts. It is one of the single most effective things you can do for your online safety.
 

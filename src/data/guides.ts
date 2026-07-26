@@ -185,7 +185,7 @@ const coreGuides: Guide[] = [
     publishedAt: '2026-01-05',
     difficulty: 'Beginner',
     steps: [
-      { title: 'Locate the power button', content: 'Find the power button on your PC tower or laptop — it usually has a circle with a line through the top.' },
+      { title: 'Locate the power button', content: 'Find the power button on your PC tower or laptop. It usually has a circle with a line through the top.' },
       { title: 'Press to turn on', content: 'Press the power button once and release. Wait for the Windows logo and login screen to appear.' },
       { title: 'Log in to Windows', content: 'Enter your PIN, password, or use Windows Hello (fingerprint/face) to sign in.', tip: `Set up Windows Hello (fingerprint or face) for the fastest login — you'll never type a password again!` },
       { title: 'Shut down properly', content: 'Click the Start menu (Windows icon) → Power → Shut Down. Never hold the power button unless the PC is frozen.', warning: 'Never hold the power button to force shutdown unless your PC is completely frozen. This can cause data loss.' },
@@ -2721,7 +2721,7 @@ const coreGuides: Guide[] = [
     steps: [
       { title: 'Google Translate basics', content: 'Still great for quick translations. Use the camera feature to translate signs and menus in real-time while traveling.' },
       { title: 'DeepL for quality', content: 'DeepL often produces more natural-sounding translations than Google Translate, especially for European languages.' },
-      { title: 'Use ChatGPT for context', content: 'Ask ChatGPT to "translate this email to Spanish, keeping a professional tone" — it understands context better than traditional translators.' },
+      { title: 'Use ChatGPT for context', content: 'Ask ChatGPT to "translate this email to Spanish, keeping a professional tone". It understands context better than traditional translators.' },
       { title: 'Real-time conversation translation', content: `Google Translate's conversation mode and Apple Translate let two people speak different languages and hear translations live.` },
     ]
   },
@@ -4213,7 +4213,7 @@ const coreGuides: Guide[] = [
       },
       {
         title: 'How to report suspicious accounts',
-        content: 'On Facebook: go to the profile → tap the three dots (···) → Find Support or Report. On Instagram: tap the three dots on a post or profile → Report. Both platforms take reports seriously and act quickly on fake accounts and scams.', tip: `Reporting fake accounts doesn't just protect you — it protects everyone else that account might target next. If you believe you have been scammed through social media, report it at ReportFraud.ftc.gov and read the latest alerts at consumer.ftc.gov/consumer-alerts.`
+        content: 'On Facebook: go to the profile → tap the three dots (···) → Find Support or Report. On Instagram: tap the three dots on a post or profile → Report. Both platforms take reports seriously and act quickly on fake accounts and scams.', tip: `Reporting fake accounts doesn't just protect you. It protects everyone else that account might target next. If you believe you have been scammed through social media, report it at ReportFraud.ftc.gov and read the latest alerts at consumer.ftc.gov/consumer-alerts.`
       },
     ]
   },
@@ -4236,7 +4236,7 @@ const coreGuides: Guide[] = [
     steps: [
       {
         title: 'Download the official app — from the official source',
-        content: `Only download your bank's app from the App Store (iPhone) or Google Play Store (Android). Search for your bank's name and look for the official listing — it should have thousands of reviews and show the bank's real website as the developer. Never install a banking app from a link in an email or text message.`, warning: 'Fake banking apps exist on both app stores. If reviews are few or mostly negative, or the developer name looks odd, do not install it.'
+        content: `Only download your bank's app from the App Store (iPhone) or Google Play Store (Android). Search for your bank's name and look for the official listing. It should have thousands of reviews and show the bank's real website as the developer. Never install a banking app from a link in an email or text message.`, warning: 'Fake banking apps exist on both app stores. If reviews are few or mostly negative, or the developer name looks odd, do not install it.'
       },
       {
         title: 'Set up Face ID or fingerprint login',
@@ -4330,7 +4330,7 @@ const coreGuides: Guide[] = [
       },
       {
         title: 'Setting up on an Amazon Fire Stick',
-        content: `Plug the Fire Stick into your TV's HDMI port, plug in the USB power cable, and switch your TV to that HDMI input. Follow the on-screen setup to connect to Wi-Fi and sign in with your Amazon account. Then go to the Home screen and search for any streaming app to install it.`, tip: 'Fire Sticks come with Alexa — you can say "Alexa, open Netflix" or "Alexa, play The Crown" without pressing any buttons.'
+        content: `Plug the Fire Stick into your TV's HDMI port, plug in the USB power cable, and switch your TV to that HDMI input. Follow the on-screen setup to connect to Wi-Fi and sign in with your Amazon account. Then go to the Home screen and search for any streaming app to install it.`, tip: 'Fire Sticks come with Alexa. You can say "Alexa, open Netflix" or "Alexa, play The Crown" without pressing any buttons.'
       },
       {
         title: 'Setting up on a Chromecast',
@@ -4419,7 +4419,7 @@ const coreGuides: Guide[] = [
       },
       {
         title: 'Sort and search for files',
-        content: 'In File Explorer (Windows) or Finder (Mac), you can sort files by name, date, or size — click the column header. To search: press Ctrl+F (Windows) or Command+Space (Mac Spotlight) and type part of the file name. Spotlight on Mac is especially powerful — it searches inside documents too.'
+        content: 'In File Explorer (Windows) or Finder (Mac), you can sort files by name, date, or size — click the column header. To search: press Ctrl+F (Windows) or Command+Space (Mac Spotlight) and type part of the file name. Spotlight on Mac is especially powerful. It searches inside documents too.'
       },
       {
         title: 'Tame your Downloads folder',
@@ -4486,7 +4486,7 @@ const coreGuides: Guide[] = [
       },
       {
         title: 'iCloud Photos on iPhone (for Apple users)',
-        content: 'Settings → [your name] → iCloud → Photos → toggle on "iCloud Photos". All photos automatically upload to iCloud and sync across all your Apple devices. You get 5GB free. More storage starts at 99p/month for 50GB.', tip: `With iCloud Photos enabled, you can delete photos from your iPhone to free up space — they stay safely in iCloud and on any other Apple device you're signed into.`
+        content: 'Settings → [your name] → iCloud → Photos → toggle on "iCloud Photos". All photos automatically upload to iCloud and sync across all your Apple devices. You get 5GB free. More storage starts at 99p/month for 50GB.', tip: `With iCloud Photos enabled, you can delete photos from your iPhone to free up space. They stay safely in iCloud and on any other Apple device you're signed into.`
       },
       {
         title: 'Create albums to organize by topic',
@@ -4582,7 +4582,7 @@ const coreGuides: Guide[] = [
       },
       {
         title: 'Adjust picture and sound settings',
-        content: `Once streaming, if the picture looks dark or washed out, press the Settings button on your remote and look for "Picture Mode." Try "Standard" or "Movie" mode for the best colors. For sound, "Standard" or "Movie" mode usually sounds clearest. If using a soundbar, make sure it's set to the correct input.`, tip: 'Turn off "Motion Smoothing" (sometimes called TruMotion or MotionFlow) — it makes films look cheap and soap-opera-like.'
+        content: `Once streaming, if the picture looks dark or washed out, press the Settings button on your remote and look for "Picture Mode." Try "Standard" or "Movie" mode for the best colors. For sound, "Standard" or "Movie" mode usually sounds clearest. If using a soundbar, make sure it's set to the correct input.`, tip: 'Turn off "Motion Smoothing" (sometimes called TruMotion or MotionFlow). It makes films look cheap and soap-opera-like.'
       },
     ]
   },
@@ -4767,7 +4767,7 @@ const coreGuides: Guide[] = [
       },
       {
         title: 'Adjust text size and brightness for comfortable reading',
-        content: 'While reading, tap the top of the screen to show the toolbar. Tap the "Aa" button to see display settings. Increase the font size using the slider — make it as large as you need. You can also change the font style, line spacing, and margin width. For the screen brightness, drag the sun icon left or right.', tip: 'Try "Warm Light" mode (on newer Kindles) in the evening — it reduces blue light which can help you sleep better after reading.'
+        content: 'While reading, tap the top of the screen to show the toolbar. Tap the "Aa" button to see display settings. Increase the font size using the slider — make it as large as you need. You can also change the font style, line spacing, and margin width. For the screen brightness, drag the sun icon left or right.', tip: 'Try "Warm Light" mode (on newer Kindles) in the evening. It reduces blue light which can help you sleep better after reading.'
       },
       {
         title: 'Buy and download books',
@@ -4775,7 +4775,7 @@ const coreGuides: Guide[] = [
       },
       {
         title: 'Use the Kindle app on your phone or tablet',
-        content: `Don't have a Kindle device? The free Kindle app on your iPhone or Android gives you the same experience. Download it from the App Store or Google Play, sign in with your Amazon account, and all your books are there. The advantage: your phone is always with you, so you can read anywhere.`, tip: 'You can read the same book on your Kindle device AND your phone — they sync automatically to the same page.'
+        content: `Don't have a Kindle device? The free Kindle app on your iPhone or Android gives you the same experience. Download it from the App Store or Google Play, sign in with your Amazon account, and all your books are there. The advantage: your phone is always with you, so you can read anywhere.`, tip: 'You can read the same book on your Kindle device AND your phone. They sync automatically to the same page.'
       },
       {
         title: 'Borrow ebooks for free from the library',
@@ -4836,7 +4836,7 @@ const coreGuides: Guide[] = [
       },
       {
         title: 'Book an NHS video appointment through your GP surgery',
-        content: `Contact your GP surgery as normal — by phone or their online booking system. Ask for a "telephone consultation" or "video consultation." Many surgeries use NHS-approved platforms like Attend Anywhere or AccuRx. You'll receive a text or email with a link to click when it's time for your appointment — you don't need to download anything.`
+        content: `Contact your GP surgery as normal — by phone or their online booking system. Ask for a "telephone consultation" or "video consultation." Many surgeries use NHS-approved platforms like Attend Anywhere or AccuRx. You'll receive a text or email with a link to click when it's time for your appointment. You don't need to download anything.`
       },
       {
         title: 'Set yourself up before the call',
@@ -4844,7 +4844,7 @@ const coreGuides: Guide[] = [
       },
       {
         title: 'Join the call',
-        content: `When it's time, click or tap the link you were sent — it usually opens in your web browser. You may be asked to allow access to your camera and microphone — tap "Allow." You'll often enter a virtual waiting room and the doctor will join when ready. If using an app like Livi or Babylon, open the app and tap "Join Consultation" when prompted.`, warning: `If the link doesn't work, try a different browser (Chrome works best). If you can't connect, call the surgery right away — they can switch to a telephone call.`
+        content: `When it's time, click or tap the link you were sent. It usually opens in your web browser. You may be asked to allow access to your camera and microphone — tap "Allow." You'll often enter a virtual waiting room and the doctor will join when ready. If using an app like Livi or Babylon, open the app and tap "Join Consultation" when prompted.`, warning: `If the link doesn't work, try a different browser (Chrome works best). If you can't connect, call the surgery right away. They can switch to a telephone call.`
       },
       {
         title: 'During the call',
@@ -5002,13 +5002,13 @@ const coreGuides: Guide[] = [
       },
       {
         title: 'Making a FaceTime call (iPhone/iPad)',
-        content: 'Open the FaceTime app (green icon). Tap the + (New FaceTime) button. Type the name, phone number, or email of the person you want to call — they must also have an Apple device. Tap the green camera icon to start a video call. The call connects automatically if they answer.',
+        content: 'Open the FaceTime app (green icon). Tap the + (New FaceTime) button. Type the name, phone number, or email of the person you want to call. They must also have an Apple device. Tap the green camera icon to start a video call. The call connects automatically if they answer.',
         tip: 'To call from your Contacts app: open Contacts, find the person, scroll down, and tap the FaceTime button.'
       },
       {
         title: 'Setting up Zoom',
         content: 'Download Zoom from the App Store (iPhone/iPad), Play Store (Android), or zoom.us (computer). Open Zoom and tap "Sign Up Free" to create an account with your email. Once logged in, tap "New Meeting" to start a call right away, or "Join" to enter a meeting code someone sent you. To invite family, tap "Participants" during a call → "Invite" → share a link via WhatsApp or email.',
-        tip: `Ask a family member to send you a Zoom invite link. Just tapping the link joins the call automatically — you don't need to know your own Zoom details.`, warning: 'Never share your Zoom personal meeting ID publicly — only share it with people you want to join.'
+        tip: `Ask a family member to send you a Zoom invite link. Just tapping the link joins the call automatically. You don't need to know your own Zoom details.`, warning: 'Never share your Zoom personal meeting ID publicly — only share it with people you want to join.'
       },
       {
         title: 'Using Google Meet',
@@ -5086,7 +5086,7 @@ const coreGuides: Guide[] = [
     steps: [
       {
         title: 'Check for the padlock — always',
-        content: 'Before entering any personal details or payment information on a shopping website, look at the address bar at the top of your browser. You should see a padlock icon  and the address should start with "https://" (the "s" stands for secure). If you see a warning, a broken padlock, or "http://" without the "s", leave the site right away — it is not safe to enter payment details.', tip: `The padlock doesn't guarantee a site is legitimate — it just means your data is encrypted. Always double-check the website name too.`, warning: 'Scam sites can have padlocks too. Always verify the exact website address — "amazon.co.uk" is real; "amazon-deals.co.uk" or "amazon.shop-secure.com" are fakes.'
+        content: 'Before entering any personal details or payment information on a shopping website, look at the address bar at the top of your browser. You should see a padlock icon  and the address should start with "https://" (the "s" stands for secure). If you see a warning, a broken padlock, or "http://" without the "s", leave the site right away. It is not safe to enter payment details.', tip: `The padlock doesn't guarantee a site is legitimate. It just means your data is encrypted. Always double-check the website name too.`, warning: 'Scam sites can have padlocks too. Always verify the exact website address — "amazon.co.uk" is real; "amazon-deals.co.uk" or "amazon.shop-secure.com" are fakes.'
       },
       {
         title: 'Stick to trusted retailers',
@@ -5098,7 +5098,7 @@ const coreGuides: Guide[] = [
       },
       {
         title: 'Safe payment methods',
-        content: `The safest payment method is a credit card — if something goes wrong (item not delivered, damaged, or wrong), your credit card company must refund you under Section 75 of the Consumer Credit Act for purchases over $100. Debit cards also offer Chargeback protection. PayPal is also very safe — you can raise a dispute through PayPal's Resolution Center. Avoid: bank transfers, gift cards, and cryptocurrency — these offer no consumer protection.`, tip: 'Even for small purchases, using a credit card (and paying it off right away) gives you extra protection. A dedicated low-limit credit card just for online shopping is ideal.'
+        content: `The safest payment method is a credit card — if something goes wrong (item not delivered, damaged, or wrong), your credit card company must refund you under Section 75 of the Consumer Credit Act for purchases over $100. Debit cards also offer Chargeback protection. PayPal is also very safe. You can raise a dispute through PayPal's Resolution Center. Avoid: bank transfers, gift cards, and cryptocurrency — these offer no consumer protection.`, tip: 'Even for small purchases, using a credit card (and paying it off right away) gives you extra protection. A dedicated low-limit credit card just for online shopping is ideal.'
       },
       {
         title: 'Checking seller reviews on Amazon and eBay',
@@ -5231,7 +5231,7 @@ const coreGuides: Guide[] = [
     difficulty: 'Beginner',
     steps: [
       { title: 'Download and set up the app', content: `Search "Uber" or "Lyft" in your app store and install it. Open the app and create an account with your phone number and email. You'll need to add a payment method — a credit card, debit card, or link your PayPal. Both apps will ask for location permission — tap "Allow While Using" so they can find nearby drivers.` },
-      { title: 'Enter your destination', content: 'Tap "Where to?" (Uber) or "Where are you going?" (Lyft). Type the address, business name, or choose from saved locations like Home or Work. The app will show your current location as the pickup point — you can adjust this by dragging the pin on the map.' },
+      { title: 'Enter your destination', content: 'Tap "Where to?" (Uber) or "Where are you going?" (Lyft). Type the address, business name, or choose from saved locations like Home or Work. The app will show your current location as the pickup point. You can adjust this by dragging the pin on the map.' },
       { title: 'Choose your ride type', content: `After entering your destination, you'll see ride options: UberX/Lyft (standard, 1-4 passengers), UberXL/Lyft XL (larger vehicle, up to 6), Comfort (nicer car, more legroom). Each shows an estimated price and arrival time. Tap your preferred option, then tap "Confirm" or "Request."`, tip: 'Prices go up during busy times ("surge pricing"). If the price seems high, wait 10-15 minutes and check again.' },
       { title: 'Meet your driver', content: `Once confirmed, you'll see your driver's name, photo, car make/model, color, and license plate number. A map shows the car moving toward you in real-time. When the driver arrives, verify the license plate matches before getting in. Some drivers will confirm your name.`, warning: 'Never get in a car without verifying the license plate and driver name. If something feels wrong, cancel the ride.' },
       { title: 'During and after the ride', content: `The app shows your route on the map during the ride. You can share your trip with a family member by tapping "Share trip status" — they'll see your live location. When you arrive, the payment is automatic — no cash needed. Rate your driver 1-5 stars and add a tip if you'd like.` },
@@ -5270,8 +5270,8 @@ const coreGuides: Guide[] = [
     steps: [
       { title: 'Choose a grocery delivery service', content: 'The most popular options are: Instacart (delivers from local stores like Costco, Kroger, Publix), Walmart Grocery (order from Walmart, pick up or deliver), Amazon Fresh (if you have Amazon Prime). Most offer free delivery on orders over a certain amount. Download the app for whichever service has your preferred local store.' },
       { title: 'Create your account and add your address', content: 'Open the app and sign up with your email or phone number. Enter your delivery address — the app will show which stores are available in your area. Add a payment method (credit card, debit card, or digital wallet). Some apps like Instacart also accept EBT/SNAP for eligible items.' },
-      { title: 'Browse and add items to your cart', content: 'Browse by category (Produce, Dairy, Bakery, etc.) or use the search bar to find specific items. Tap an item to see the price, then tap "Add to Cart." Adjust the quantity with + and − buttons. Look for the "On Sale" tags for deals. Most apps let you add notes like "Pick green bananas" or "Substitute if unavailable."', tip: 'Build a favorites list for items you buy regularly — it makes reordering much faster next time.' },
-      { title: 'Review your order and check out', content: 'Tap the cart icon to review your items. Check quantities and prices. Choose a delivery window (today, tomorrow, or a specific time slot). Add a tip for your shopper — they do the work of picking and delivering your groceries. Tap "Place Order" to confirm.' },
+      { title: 'Browse and add items to your cart', content: 'Browse by category (Produce, Dairy, Bakery, etc.) or use the search bar to find specific items. Tap an item to see the price, then tap "Add to Cart." Adjust the quantity with + and − buttons. Look for the "On Sale" tags for deals. Most apps let you add notes like "Pick green bananas" or "Substitute if unavailable."', tip: 'Build a favorites list for items you buy regularly. It makes reordering much faster next time.' },
+      { title: 'Review your order and check out', content: 'Tap the cart icon to review your items. Check quantities and prices. Choose a delivery window (today, tomorrow, or a specific time slot). Add a tip for your shopper. They do the work of picking and delivering your groceries. Tap "Place Order" to confirm.' },
       { title: 'Track your delivery', content: `After ordering, the app shows your shopper's progress in real-time — when they start shopping, when they check out, and when they're on the way. If an item is out of stock, your shopper may message you through the app to suggest a replacement. You can approve, choose a different substitute, or skip the item.` },
     ]
   },
@@ -5538,7 +5538,7 @@ const coreGuides: Guide[] = [
     steps: [
       { title: 'Use Apple Health or Google Health Connect', content: 'Your phone has a built-in health hub. On iPhone: open the "Health" app → tap your profile → "Health Records" → add your healthcare provider. It pulls in lab results, immunizations, medications, and allergies automatically. On Android: "Health Connect" syncs data between fitness apps and can store medical information from supported providers.' },
       { title: 'Keep a medication list', content: 'In your Health app, go to "Medications" (iPhone) and add each medication you take — name, dosage, frequency. You can set reminders for each one. This list is invaluable during doctor visits and emergencies. Share it with family members using the Health Sharing feature (iPhone: Health → Sharing → Share with Someone).' },
-      { title: 'Store insurance and emergency info', content: 'Keep photos of your insurance card (front and back) in a secure folder on your phone. On iPhone: set up your Medical ID (Health app → profile → Medical ID) with allergies, blood type, emergency contacts, and conditions. This is accessible from the lock screen in emergencies — first responders can see it without unlocking your phone.', tip: 'Show a family member how to access your Medical ID from the lock screen — it could be critical in an emergency.' },
+      { title: 'Store insurance and emergency info', content: 'Keep photos of your insurance card (front and back) in a secure folder on your phone. On iPhone: set up your Medical ID (Health app → profile → Medical ID) with allergies, blood type, emergency contacts, and conditions. This is accessible from the lock screen in emergencies — first responders can see it without unlocking your phone.', tip: 'Show a family member how to access your Medical ID from the lock screen. It could be critical in an emergency.' },
       { title: 'Download and organize records', content: `Request your full medical records from each provider (it's your legal right under HIPAA). Most patient portals have a "Download My Data" option. Save records as PDFs in a cloud folder (Google Drive or iCloud) organized by provider and date. Keep records from the last 5-10 years easily accessible.` },
     ]
   },
@@ -5601,7 +5601,7 @@ const coreGuides: Guide[] = [
       { title: 'Find any photo instantly', content: `The magic of Google Photos is its search. Tap the search bar and type anything: "beach," "dog," "birthday cake," "New York," or a person's name. Google's AI recognizes objects, places, and faces in your photos. You can also browse by "People & Pets," "Places," or "Things" in the search tab to see your photos organized automatically.` },
       { title: 'Create and share albums', content: 'Tap Library → Create Album. Name it (e.g., "Grandkids 2026" or "Garden Progress"). Select photos to add. To share: open the album → tap the Share icon → enter email addresses or create a link. Shared albums let others view and even add their own photos — perfect for family events where everyone takes pictures.', tip: `Create a shared family album and invite everyone to add their photos. You'll end up with a wonderful collection from every perspective.` },
       { title: 'Edit photos', content: 'Open any photo and tap "Edit" (the sliders icon). You can: Crop and rotate, Adjust brightness/contrast/color, Apply filters (like "Vivid" or "West"), Use "Magic Eraser" (on newer phones) to remove unwanted objects, and use "Enhance" for one-tap auto-improvement. All edits are non-destructive — you can always revert to the original.' },
-      { title: 'Free up phone storage', content: 'Once your photos are backed up to the cloud, you can delete them from your phone to free up space without losing them. Go to Google Photos → tap your profile icon → "Free up space." The app will show you how much space you can recover by removing already-backed-up photos from your device. They remain safely in your Google Photos cloud.', warning: 'Before using "Free up space," make sure "Back up & sync" has finished uploading all your photos. Check for the green checkmark in backup settings.', tip: `For Google's official backup guide, visit support.google.com/photos/answer/6193313 — it explains backup settings, storage limits, and quality options.` },
+      { title: 'Free up phone storage', content: 'Once your photos are backed up to the cloud, you can delete them from your phone to free up space without losing them. Go to Google Photos → tap your profile icon → "Free up space." The app will show you how much space you can recover by removing already-backed-up photos from your device. They remain safely in your Google Photos cloud.', warning: 'Before using "Free up space," make sure "Back up & sync" has finished uploading all your photos. Check for the green checkmark in backup settings.', tip: `For Google's official backup guide, visit support.google.com/photos/answer/6193313. It explains backup settings, storage limits, and quality options.` },
     ]
   },
   {
@@ -5620,7 +5620,7 @@ const coreGuides: Guide[] = [
       { title: `Use your phone's built-in call screening`, content: `On iPhone: Settings → Phone → "Silence Unknown Callers" — this sends calls from numbers not in your contacts straight to voicemail. On Android (Pixel): Phone app → Settings → "Caller ID & spam" → turn on "Filter spam calls." Samsung: Phone app → Settings → "Caller ID and spam protection." These won't block real calls from your contacts.`, tip: `If you're expecting a call from an unknown number (like a doctor's office or delivery), temporarily turn off "Silence Unknown Callers" or check your voicemail promptly.` },
       { title: 'Install a call-blocking app', content: `Free apps like "Nomorobo" (free for landlines, $2/month for mobile), "Hiya," or "Truecaller" identify and block known spam numbers using a constantly updated database. Your carrier may also offer free blocking: T-Mobile has "Scam Shield," AT&T has "ActiveArmor," and Verizon has "Call Filter." Check your carrier's app store for their free version.` },
       { title: 'Block specific numbers', content: `When a spam call gets through, block the number right away. On iPhone: go to Recents → tap the (i) next to the number → "Block this Caller." On Android: go to Recents → tap the number → "Block/Report spam." Blocked numbers can't call, text, or FaceTime you. You can manage your blocked list in Settings → Phone → Blocked Contacts.` },
-      { title: 'Recognize and avoid phone scams', content: `Red flags: caller says you owe the IRS money (the IRS contacts you by mail first), caller asks for gift card payments (no real company does this), caller says you've won a prize but need to pay a fee, caller pressures you to act "right now." Hang up on suspicious calls — you can always call the company back using the number on their official website.`, warning: `Never give your Social Security number, bank details, or credit card number to someone who calls you. Real companies and government agencies don't ask for this by phone.`, tip: 'Report phone scams at ReportFraud.ftc.gov. The FTC tracks these calls and works to shut down scam operations. Learn more at consumer.ftc.gov/scams.' },
+      { title: 'Recognize and avoid phone scams', content: `Red flags: caller says you owe the IRS money (the IRS contacts you by mail first), caller asks for gift card payments (no real company does this), caller says you've won a prize but need to pay a fee, caller pressures you to act "right now." Hang up on suspicious calls. You can always call the company back using the number on their official website.`, warning: `Never give your Social Security number, bank details, or credit card number to someone who calls you. Real companies and government agencies don't ask for this by phone.`, tip: 'Report phone scams at ReportFraud.ftc.gov. The FTC tracks these calls and works to shut down scam operations. Learn more at consumer.ftc.gov/scams.' },
     ]
   },
   {
@@ -5675,7 +5675,7 @@ const coreGuides: Guide[] = [
     steps: [
       { title: 'Check if your car supports it', content: `Most cars made after 2016 support CarPlay (iPhone) or Android Auto. Check your car's infotainment screen for a CarPlay or Android Auto icon, or check your owner's manual. Some older cars can be upgraded with an aftermarket head unit. CarPlay requires iPhone; Android Auto requires an Android phone running Android 8.0 or later.` },
       { title: 'Connect your phone', content: `Wired: Plug your phone into the car's USB port using your charging cable. Your car screen should show CarPlay or Android Auto automatically. Wireless: If your car supports wireless CarPlay/Android Auto, go to your car's Bluetooth settings and pair your phone. Then enable wireless CarPlay (iPhone: Settings → General → CarPlay → select your car) or Android Auto (open the app → tap your car).`, tip: 'Even if your car supports wireless, using a USB cable gives a more stable connection and charges your phone at the same time.' },
-      { title: 'Navigate with Maps', content: `Tap the Maps icon on your car screen. You can say "Hey Siri, navigate to [address]" (CarPlay) or "Hey Google, take me to [address]" (Android Auto) for hands-free navigation. The turn-by-turn directions appear on your car screen with voice guidance. Your phone's Maps app runs in the background — you can also start navigation on your phone before connecting.` },
+      { title: 'Navigate with Maps', content: `Tap the Maps icon on your car screen. You can say "Hey Siri, navigate to [address]" (CarPlay) or "Hey Google, take me to [address]" (Android Auto) for hands-free navigation. The turn-by-turn directions appear on your car screen with voice guidance. Your phone's Maps app runs in the background. You can also start navigation on your phone before connecting.` },
       { title: 'Play music and make calls', content: `Tap the Music icon to play from your phone's music app (Apple Music, Spotify, etc.). Use the car's volume knob or steering wheel controls to adjust volume. For calls: tap Phone on the car screen, or say "Hey Siri/Google, call [name]." Incoming calls appear on screen — tap to answer. Text messages are read aloud and you can dictate replies hands-free.` },
       { title: 'Customize your CarPlay/Auto layout', content: 'CarPlay: On your iPhone, go to Settings → General → CarPlay → tap your car → rearrange apps by dragging them. Android Auto: Open the Android Auto app → Settings → Customize launcher → reorder your apps. You can also set preferences for which Maps app to use by default and whether to auto-launch when connected.' },
     ]
@@ -5696,7 +5696,7 @@ const coreGuides: Guide[] = [
       { title: 'Crop and straighten', content: 'In the editor, tap the crop icon (overlapping right angles). Drag the corners to crop out unwanted parts of the photo. Use the rotation slider to straighten a tilted horizon. Tap "Aspect Ratio" to crop to a specific shape (square for Instagram, 16:9 for widescreen, 4:3 for printing). Tap Done when finished.' },
       { title: 'Fix brightness and color', content: 'Tap the adjustment icon (sliders). The key adjustments are: Exposure/Brightness (if the photo is too dark or too light), Contrast (makes colors pop), Saturation (makes colors more vibrant), Warmth (cooler = blue tint, warmer = golden tint). Start with Auto/Enhance for a one-tap fix. Then fine-tune individual sliders if needed.', tip: 'Less is more with editing. Small adjustments look natural. Over-editing makes photos look artificial.' },
       { title: 'Apply filters', content: 'Tap the filters icon (three overlapping circles or a magic wand). Swipe through the filter options — each preview shows how your photo will look. Popular choices: "Vivid" for brighter colors, "Dramatic" for moody black-and-white, "Warm" for a golden glow. You can usually adjust filter intensity with a slider. Tap to apply.' },
-      { title: 'Remove unwanted objects (AI tools)', content: 'The latest phones have AI-powered erasers: iPhone 16+ has "Clean Up" (tap Edit → Clean Up → brush over the object). Google Pixel has "Magic Eraser" (Edit → Tools → Magic Eraser). Samsung has "Object Eraser" (Edit → three dots → Object Eraser). Circle the object you want removed, and the AI fills in the background. It works best on small objects against simple backgrounds.', tip: `All edits in your phone's photo app are non-destructive — you can always tap "Revert to Original" if you don't like the changes.` },
+      { title: 'Remove unwanted objects (AI tools)', content: 'The latest phones have AI-powered erasers: iPhone 16+ has "Clean Up" (tap Edit → Clean Up → brush over the object). Google Pixel has "Magic Eraser" (Edit → Tools → Magic Eraser). Samsung has "Object Eraser" (Edit → three dots → Object Eraser). Circle the object you want removed, and the AI fills in the background. It works best on small objects against simple backgrounds.', tip: `All edits in your phone's photo app are non-destructive. You can always tap "Revert to Original" if you don't like the changes.` },
     ]
   },
   {
@@ -5750,7 +5750,7 @@ const coreGuides: Guide[] = [
     steps: [
       { title: 'Choose a streaming device', content: `Popular options: Roku Streaming Stick ($30-50, easiest to use), Amazon Fire TV Stick ($30-50, works great with Alexa), Chromecast with Google TV ($30-50, good if you use Google), Apple TV 4K ($130, best for iPhone/Mac users). All of them plug into your TV's HDMI port and connect to your Wi-Fi to stream apps like Netflix, YouTube, Hulu, and more.` },
       { title: 'Plug in and connect', content: 'Plug the device into any HDMI port on the back or side of your TV. Plug the power cable into a wall outlet. Switch your TV to the correct HDMI input using your TV remote (press "Input" or "Source" and select HDMI 1, 2, etc.). The setup screen will appear. Follow the on-screen instructions to connect to your Wi-Fi network and sign in or create an account.', tip: `Write down your Wi-Fi password before starting — you'll need to enter it during setup.` },
-      { title: 'Install your favorite apps', content: 'After setup, browse the app/channel store on your device. Install free apps like YouTube, Pluto TV, and Tubi for free content. Install subscription apps like Netflix ($7-23/month), Hulu ($10-18/month), Disney+ ($10-14/month), and Amazon Prime Video ($9/month or included with Prime). Each app requires its own account — you may already have some through your cable or internet provider.' },
+      { title: 'Install your favorite apps', content: 'After setup, browse the app/channel store on your device. Install free apps like YouTube, Pluto TV, and Tubi for free content. Install subscription apps like Netflix ($7-23/month), Hulu ($10-18/month), Disney+ ($10-14/month), and Amazon Prime Video ($9/month or included with Prime). Each app requires its own account. You may already have some through your cable or internet provider.' },
       { title: 'Use your remote', content: 'Most streaming remotes have: a navigation pad (up/down/left/right + select in center), a Home button (go back to the main screen), a Back button (go to previous screen), volume controls, and a voice button (hold it and speak to search for shows). Roku remotes may have shortcut buttons for Netflix, Disney+, etc. Fire Stick remotes work with "Alexa, play [show name]."' },
       { title: 'Troubleshoot common issues', content: 'No picture: Make sure your TV is on the correct HDMI input. Try a different HDMI port. Buffering/loading: Move your streaming device closer to your Wi-Fi router, or try restarting your router. Remote not working: Replace batteries (AAA for most remotes). Re-pair the remote by holding the pairing button for 5 seconds. App crashes: Uninstall and reinstall the app, or restart the device (Settings → System → Restart).' },
     ]
@@ -5873,7 +5873,7 @@ const coreGuides: Guide[] = [
       },
       {
         title: 'Try a different search engine',
-        content: `DuckDuckGo (duckduckgo.com) does not show AI summaries by default and respects your privacy more than Google — it does not track your searches. Bing also lets you turn off AI answers in its settings if you prefer Microsoft's search engine.`,
+        content: `DuckDuckGo (duckduckgo.com) does not show AI summaries by default and respects your privacy more than Google. It does not track your searches. Bing also lets you turn off AI answers in its settings if you prefer Microsoft's search engine.`,
       },
     ],
   },
@@ -5931,11 +5931,11 @@ const coreGuides: Guide[] = [
       {
         title: `Request removal using each site's opt-out form`,
         content: 'Each data broker is required by law to offer a way to opt out or remove your data. Look for links labeled "Privacy," "Do Not Sell My Info," or "Opt Out" — usually in the website footer. Follow their removal process. Some send a confirmation email. Click the link to confirm your request.',
-        warning: 'Removals can take 7–30 days to take effect. Your information may reappear after several months as data brokers refresh their databases — you may need to opt out again periodically.',
+        warning: 'Removals can take 7–30 days to take effect. Your information may reappear after several months as data brokers refresh their databases. You may need to opt out again periodically.',
       },
       {
         title: 'Consider a removal service for ongoing protection',
-        content: 'If removing your data manually from hundreds of sites sounds overwhelming, services like DeleteMe (joindeleteme.com) do it for you — they charge around $129 per year and submit removal requests to 750+ brokers on your behalf, with quarterly reports. This is the most thorough option for ongoing privacy.',
+        content: 'If removing your data manually from hundreds of sites sounds overwhelming, services like DeleteMe (joindeleteme.com) do it for you. They charge around $129 per year and submit removal requests to 750+ brokers on your behalf, with quarterly reports. This is the most thorough option for ongoing privacy.',
       },
       {
         title: 'Reduce future data collection',
@@ -6002,7 +6002,7 @@ For stronger privacy, do three things. Turn on Airplane Mode to disable all radi
       },
       {
         title: 'Why this matters',
-        content: 'Ad tracking IDs allow advertisers to build detailed profiles of your interests, habits, and behavior by watching which apps you open, how long you use them, and what you search for. Deleting or resetting the ID breaks that profile. Your apps still work normally — you just see less targeted advertising.',
+        content: 'Ad tracking IDs allow advertisers to build detailed profiles of your interests, habits, and behavior by watching which apps you open, how long you use them, and what you search for. Deleting or resetting the ID breaks that profile. Your apps still work normally. You just see less targeted advertising.',
       },
     ],
   },
@@ -6060,7 +6060,7 @@ For stronger privacy, do three things. Turn on Airplane Mode to disable all radi
       {
         title: 'Set up Google Family Link for full caregiver control',
         content: `Google Family Link (available at families.google.com/familylink) lets a caregiver approve or block every app download, even on an adult's account. The caregiver downloads the Family Link for Parents app on their own phone, and the supervised person uses the Family Link for Children & Teens app. Once linked, the caregiver receives a notification every time an app install is requested and can approve or deny it.`,
-        tip: 'Family Link is free and does not require the supervised person to be a child — it can be set up for any Google account that the caregiver manages.',
+        tip: 'Family Link is free and does not require the supervised person to be a child. It can be set up for any Google account that the caregiver manages.',
       },
       {
         title: 'Use App Pinning to keep the phone on a single app',
@@ -6190,7 +6190,7 @@ For stronger privacy, do three things. Turn on Airplane Mode to disable all radi
     difficulty: 'Beginner',
     steps: [
       { title: 'Open Settings and go to Display & Brightness', content: 'Open the Settings app (the grey gear icon). Scroll down and tap "Display & Brightness." Then tap "Text Size." You will see a slider at the bottom of the screen.' },
-      { title: 'Drag the slider to make text bigger', content: 'Drag the slider to the right to increase the text size. As you drag, the preview text above the slider will grow larger so you can see exactly what it will look like. When you are happy with the size, press the back arrow or close Settings — the change takes effect right away.', tip: `Apple's guide to changing text size is at support.apple.com/en-us/111799 — it covers all accessibility display options.` },
+      { title: 'Drag the slider to make text bigger', content: 'Drag the slider to the right to increase the text size. As you drag, the preview text above the slider will grow larger so you can see exactly what it will look like. When you are happy with the size, press the back arrow or close Settings — the change takes effect right away.', tip: `Apple's guide to changing text size is at support.apple.com/en-us/111799. It covers all accessibility display options.` },
       { title: 'Enable even larger text sizes', content: 'If the regular slider does not go big enough, go to Settings > Accessibility > Display & Text Size > Larger Text. Turn on "Larger Accessibility Sizes." This unlocks a much larger range — drag the new slider all the way to the right for maximum size.' },
       { title: 'Make text bold', content: 'Go to Settings > Display & Brightness and turn on "Bold Text." Bold text is much easier to read for many people, especially in dim lighting. This works alongside any text size you have chosen.' },
       { title: 'Zoom in on any part of the screen', content: 'For extra help reading specific things, turn on Zoom. Go to Settings > Accessibility > Zoom and turn it on. Then double-tap the screen with three fingers to zoom in on anything — a menu, a small label, or a phone number.', tip: 'You can also pinch and spread two fingers in Safari to zoom in on any webpage, even without turning on Zoom in Settings.' },
@@ -6228,7 +6228,7 @@ For stronger privacy, do three things. Turn on Airplane Mode to disable all radi
     steps: [
       { title: 'Check what is using your storage', content: 'Go to Settings > General > iPhone Storage. Wait a moment for it to load. You will see a colored bar at the top showing how much space is used, and a list below showing what is taking up the most space — usually Photos, Apps, and the iOS system itself.', tip: `For Apple's complete storage guide, visit support.apple.com/en-us/108324` },
       { title: 'Offload apps you rarely use', content: 'In the iPhone Storage screen, scroll down to see your apps listed from largest to smallest. Tap any app you have not used in months and tap "Offload App." This removes the app to free up space but keeps all your data — if you reinstall the app later, everything picks up where you left off.', tip: `You can also let iPhone do this for you automatically. At the top of the iPhone Storage page, tap "Enable" next to "Offload Unused Apps." iPhone will automatically offload apps you haven't used when storage is low.` },
-      { title: 'Move your photos to iCloud', content: 'Go to Settings > [Your Name] > iCloud > Photos and turn on "iCloud Photos." Then go back to Settings > Photos and turn on "Optimize iPhone Storage." Full-resolution photos move to iCloud and your phone keeps smaller versions — this can free several gigabytes instantly.', warning: 'Your photos are still safe in iCloud — you can view and download any of them anytime. You need a Wi-Fi connection to see the full-quality version.' },
+      { title: 'Move your photos to iCloud', content: 'Go to Settings > [Your Name] > iCloud > Photos and turn on "iCloud Photos." Then go back to Settings > Photos and turn on "Optimize iPhone Storage." Full-resolution photos move to iCloud and your phone keeps smaller versions — this can free several gigabytes instantly.', warning: 'Your photos are still safe in iCloud. You can view and download any of them anytime. You need a Wi-Fi connection to see the full-quality version.' },
       { title: 'Delete old text message photos and videos', content: `Go to Settings > General > iPhone Storage > Messages. Tap "Review Large Attachments." You will see a list of photos and videos sent through text messages, sorted by size. Tap Edit and select the ones you don't need, then delete them.` },
       { title: 'Clear Safari browser cache', content: 'Go to Settings > Safari > Clear History and Website Data. Tap "Clear History and Data" to confirm. This removes temporary web files stored on your phone and can free up several hundred megabytes. Your bookmarks and saved passwords are not affected.' },
       { title: 'Delete duplicate photos', content: 'Open the Photos app, tap Albums at the bottom, scroll down and tap "Duplicates." You will see pairs of identical or near-identical photos. Tap "Merge" to keep one copy and delete the other. This works on iPhones running iOS 17 or later (including iOS 18).' },
@@ -6266,7 +6266,7 @@ For stronger privacy, do three things. Turn on Airplane Mode to disable all radi
     difficulty: 'Beginner',
     steps: [
       { title: 'Turn on iCloud Backup', content: 'Go to Settings, tap your name at the very top, then tap iCloud. Scroll down and tap "iCloud Backup." Tap the toggle to turn it on. Then tap "Back Up Now" to start your first backup right away.', tip: `Apple's full iCloud Backup guide is at support.apple.com/guide/iphone/back-up-iphone-iph3ecf67d29/ios` },
-      { title: 'What gets backed up', content: 'An iCloud backup saves your contacts, photos (if iCloud Photos is off), messages, app data, settings, and ringtones. Apps themselves are not backed up — they can be re-downloaded for free from the App Store. Photos stored in iCloud Photos are already in iCloud and do not need to be in your backup separately.' },
+      { title: 'What gets backed up', content: 'An iCloud backup saves your contacts, photos (if iCloud Photos is off), messages, app data, settings, and ringtones. Apps themselves are not backed up. They can be re-downloaded for free from the App Store. Photos stored in iCloud Photos are already in iCloud and do not need to be in your backup separately.' },
       { title: 'Let it back up automatically every night', content: 'Your iPhone backs up automatically when it is plugged into power, connected to Wi-Fi, and the screen is locked. The easiest way to keep your backup current is to plug your phone in to charge each night before bed — the backup happens on its own while you sleep.' },
       { title: 'Check when your last backup was', content: 'Go to Settings > [Your Name] > iCloud > iCloud Backup. Underneath the toggle, you will see the date and time of your most recent backup. If it says "Never" or the date is weeks old, tap "Back Up Now" to create a fresh backup.', warning: 'If your backup is more than a week old, you could lose recent photos and contacts if your phone is lost or breaks. Aim to keep it backed up every few days at minimum.' },
       { title: 'Check your iCloud storage', content: 'Apple gives you 5GB of free iCloud storage. To see how much you have used, go to Settings > [Your Name] > iCloud > Manage Account Storage. If your backup is failing due to full storage, you can upgrade to 50GB for $0.99 per month or delete old backups from devices you no longer use.' },
@@ -6324,7 +6324,7 @@ For stronger privacy, do three things. Turn on Airplane Mode to disable all radi
     publishedAt: '2026-03-31',
     difficulty: 'Beginner',
     steps: [
-      { title: 'Turn on Silence Unknown Callers', content: 'Go to Settings > Phone > Silence Unknown Callers and turn it on. Calls from numbers not saved in your contacts will be automatically silenced and sent to voicemail. You will still see missed calls from unknown numbers in your Recents list.', tip: `Apple's guide on managing calls is at support.apple.com/en-us/111106 — it covers blocking, filtering, and silencing options on iPhone.` },
+      { title: 'Turn on Silence Unknown Callers', content: 'Go to Settings > Phone > Silence Unknown Callers and turn it on. Calls from numbers not saved in your contacts will be automatically silenced and sent to voicemail. You will still see missed calls from unknown numbers in your Recents list.', tip: `Apple's guide on managing calls is at support.apple.com/en-us/111106. It covers blocking, filtering, and silencing options on iPhone.` },
       { title: 'Block a specific number', content: 'Open the Phone app and tap "Recents." Find the number you want to block and tap the (i) icon next to it. Scroll down and tap "Block this Caller." Future calls, texts, and FaceTime from that number will be blocked automatically.', tip: 'You can view and manage your blocked numbers by going to Settings > Phone > Blocked Contacts.' },
       { title: 'Report spam calls', content: 'In the Phone app, tap "Recents" and tap the (i) icon next to a spam number. Scroll down and tap "Report as Junk." Apple uses this information to improve spam detection for all iPhone users.' },
       { title: 'Register on the National Do Not Call Registry', content: 'Visit DoNotCall.gov or call 1-888-382-1222 to add your phone number to the National Do Not Call Registry. Most legitimate companies are legally required to stop calling you within 31 days of registration. It is free and takes less than a minute.', tip: 'Registration lasts permanently. If you still get calls after 31 days, those are likely scammers (who do not follow the law) — report them at DoNotCall.gov.' },
@@ -6649,7 +6649,7 @@ For stronger privacy, do three things. Turn on Airplane Mode to disable all radi
       { title: 'Check if YouTube is already on your TV', content: 'Most smart TVs (Samsung, LG, Sony, Hisense, and others) come with YouTube already installed. Press the Home button on your TV remote and look for the YouTube icon. If you see it, open it and you are ready to watch.', tip: `If YouTube is not on your TV, go to your TV's app store (called "Smart Hub" on Samsung, "Content Store" on LG, or "Google Play" on Android TV). Search for "YouTube" and download it for free.` },
       { title: 'Use your remote to find videos', content: 'Once YouTube is open on your TV, use the arrow buttons on your remote to move around the screen. Select the search icon (magnifying glass) at the top, then use the on-screen keyboard to type what you want to watch. Press Enter or OK on your remote to search.' },
       { title: 'Cast from your phone (alternative method)', content: 'If you have a Chromecast plugged into your TV, or if your smart TV supports casting, open YouTube on your phone and start a video. Tap the Cast icon (a rectangle with Wi-Fi waves in the corner). Choose your TV from the list. The video will play on the big screen and you can control it from your phone.' },
-      { title: 'Connect a laptop with an HDMI cable (another option)', content: `Plug one end of an HDMI cable into your laptop and the other end into an HDMI port on your TV. Switch your TV's input to the correct HDMI channel using the Input or Source button on your remote. Then open YouTube in your laptop's web browser — it will show on the TV screen.` },
+      { title: 'Connect a laptop with an HDMI cable (another option)', content: `Plug one end of an HDMI cable into your laptop and the other end into an HDMI port on your TV. Switch your TV's input to the correct HDMI channel using the Input or Source button on your remote. Then open YouTube in your laptop's web browser. It will show on the TV screen.` },
       { title: 'Sign in to your Google account on the TV', content: 'To see your subscriptions and saved videos on the TV, open the YouTube app on your TV and go to Sign In. A code will appear on screen. On your phone or computer, go to youtube.com/activate and type in that code. Your account will be linked to the TV.', warning: `Only sign in on a TV you own or trust. If you are at someone else's home, you can watch YouTube without signing in.` },
     ]
   },
@@ -6743,7 +6743,7 @@ For stronger privacy, do three things. Turn on Airplane Mode to disable all radi
     publishedAt: '2026-03-31',
     difficulty: 'Intermediate',
     steps: [
-      { title: 'Create a new folder or label', content: 'In Gmail, scroll down the left sidebar and click "+ Create new label." Name it something clear like "Bank," "Family," "Medical," or "Receipts" and click Create. In Outlook, right-click "Inbox" in the left sidebar and choose "New folder." Type a name and press Enter.', tip: 'Gmail calls folders "Labels" but they work the same way — they help you group related emails together.' },
+      { title: 'Create a new folder or label', content: 'In Gmail, scroll down the left sidebar and click "+ Create new label." Name it something clear like "Bank," "Family," "Medical," or "Receipts" and click Create. In Outlook, right-click "Inbox" in the left sidebar and choose "New folder." Type a name and press Enter.', tip: 'Gmail calls folders "Labels" but they work the same way. They help you group related emails together.' },
       { title: 'Move emails into your folders', content: 'In Gmail, check the box next to an email, then click the label icon at the top of the screen and pick the label you want. In Outlook, right-click the email and choose "Move," then select your folder. You can also drag and drop the email onto the folder name in the sidebar.' },
       { title: 'Set up rules to sort emails automatically', content: 'In Gmail, open an email, click the three dots menu, and choose "Filter messages like these." Then select "Apply label" and pick your label. Future emails from that sender will go there automatically. In Outlook, go to Home, then Rules, then Create Rule, and set your conditions.' },
       { title: 'Unsubscribe from emails you do not need', content: 'The fastest way to tidy your inbox is to open any newsletter you no longer want, scroll to the very bottom, and click "Unsubscribe." In Gmail, many marketing emails also show an "Unsubscribe" link right at the top, next to the sender name.', tip: 'Unsubscribing from emails you never read can cut your daily inbox clutter in half.' },
@@ -6937,7 +6937,7 @@ For stronger privacy, do three things. Turn on Airplane Mode to disable all radi
     difficulty: 'Beginner',
     steps: [
       { title: 'Check what you need before you start', content: 'You will need a smart TV (or a streaming device like a Roku, Amazon Fire Stick, Apple TV, or Chromecast plugged into your TV), a broadband internet connection, and a Netflix account. Netflix plans start from around $4.99 per month.' },
-      { title: 'Find and open the Netflix app on your TV', content: `Press the Home or Menu button on your TV remote. Look for the Netflix app — it comes pre-installed on most Samsung, LG, Sony, and Panasonic smart TVs made after 2012. If you do not see it, go to your TV's App Store and search for "Netflix" to download it for free.`, tip: 'If you are using an Amazon Fire Stick, Netflix is already installed. Look for it on the Fire Stick home screen.' },
+      { title: 'Find and open the Netflix app on your TV', content: `Press the Home or Menu button on your TV remote. Look for the Netflix app. It comes pre-installed on most Samsung, LG, Sony, and Panasonic smart TVs made after 2012. If you do not see it, go to your TV's App Store and search for "Netflix" to download it for free.`, tip: 'If you are using an Amazon Fire Stick, Netflix is already installed. Look for it on the Fire Stick home screen.' },
       { title: 'Sign in to your Netflix account', content: 'Open the Netflix app and select "Sign In." Use your TV remote to type your email address and password. If typing with the remote is difficult, Netflix may show a code on screen — go to netflix.com/tv on your phone or computer and enter the code to sign in without typing.' },
       { title: 'Browse and start watching', content: 'Use the arrow buttons on your remote to scroll through categories and shows. Press OK or Enter to select something. Press OK or Play again to start watching. Use the back button to return to browsing.' },
       { title: 'Set up parental controls (optional)', content: 'If children use your TV, go to Netflix Settings and create a Kids profile — this only shows age-appropriate content. You can also set a PIN to stop anyone from watching mature-rated shows without permission.' },
@@ -6957,7 +6957,7 @@ For stronger privacy, do three things. Turn on Airplane Mode to disable all radi
     steps: [
       { title: 'Unbox and check the contents', content: 'Your Roku comes with the Roku stick or box, an HDMI cable (or the stick plugs directly into the TV), a remote control, and batteries. Make sure you have all the pieces before you start.' },
       { title: 'Connect the Roku to your TV', content: `Plug the Roku into a spare HDMI port on the back or side of your TV. Plug the Roku's power cable into a wall outlet. Then use your TV remote to switch to the correct HDMI input — look for a button labeled "Input" or "Source" on your TV remote.` },
-      { title: 'Follow the on-screen setup', content: 'The Roku will guide you through setup step by step. First, choose your language. Next, connect to your home Wi-Fi by selecting your network name and typing your Wi-Fi password. The Roku will then update its software, which takes a few minutes. Finally, you will create a free Roku account or sign in at roku.com/link.', tip: 'Have your Wi-Fi password written down before you start — you will need to type it using the on-screen keyboard.' },
+      { title: 'Follow the on-screen setup', content: 'The Roku will guide you through setup step by step. First, choose your language. Next, connect to your home Wi-Fi by selecting your network name and typing your Wi-Fi password. The Roku will then update its software, which takes a few minutes. Finally, you will create a free Roku account or sign in at roku.com/link.', tip: 'Have your Wi-Fi password written down before you start. You will need to type it using the on-screen keyboard.' },
       { title: 'Add channels (apps) to watch', content: 'From the Roku home screen, select "Streaming Channels" to browse the Channel Store. Free channels include YouTube, Pluto TV, and Tubi. Paid services like Netflix and Disney+ are also available but require their own subscriptions.' },
       { title: 'Learn the Roku remote basics', content: 'Use the arrow buttons to move around the screen and press OK to select. The Home button always takes you back to the main menu. The star (*) button opens settings for whatever you are watching. Some remotes also have shortcut buttons for popular apps like Netflix.' },
     ]
@@ -6994,7 +6994,7 @@ For stronger privacy, do three things. Turn on Airplane Mode to disable all radi
     difficulty: 'Intermediate',
     steps: [
       { title: 'Make sure your phone and TV are on the same Wi-Fi network', content: `Before you can cast wirelessly, both your phone and your TV (or streaming device) need to be connected to the same home Wi-Fi network. Check your phone's Wi-Fi settings and your TV's network settings to confirm they match.`, warning: 'If your phone is on a different Wi-Fi network than your TV, casting will not work. This is the most common reason it fails.' },
-      { title: 'Cast from an Android phone using Chromecast', content: 'If you have a Chromecast plugged into your TV, open a supported app on your phone (like YouTube, Netflix, or Google Photos). Look for the Cast icon — it looks like a rectangle with Wi-Fi waves in the corner. Tap it and select your Chromecast from the list. The video or photo will appear on your TV, and your phone becomes the remote control.' },
+      { title: 'Cast from an Android phone using Chromecast', content: 'If you have a Chromecast plugged into your TV, open a supported app on your phone (like YouTube, Netflix, or Google Photos). Look for the Cast icon. It looks like a rectangle with Wi-Fi waves in the corner. Tap it and select your Chromecast from the list. The video or photo will appear on your TV, and your phone becomes the remote control.' },
       { title: 'Cast from an iPhone using AirPlay', content: 'On your iPhone, open the app or photo you want to show on the TV. Tap the Share icon (a box with an arrow pointing up) or the AirPlay icon (a rectangle with a small triangle at the bottom). Select your Apple TV or AirPlay-compatible smart TV from the list that appears.' },
       { title: 'Mirror your entire phone screen (Android)', content: 'On Samsung, LG, and many other Android phones, swipe down from the top of the screen to open quick settings. Look for "Smart View," "Screen Mirror," or "Cast" and tap it. Select your TV from the list. Everything on your phone screen will now show on the TV.' },
       { title: 'Use an HDMI adapter as a backup option', content: `If wireless casting is not working, you can connect your phone to the TV with a cable. Buy a USB-C to HDMI adapter (for most Android phones) or a Lightning to HDMI adapter (for iPhones). Plug one end into your phone and the other into your TV's HDMI port. Switch the TV to that HDMI input, and your phone screen will appear on the TV.`, tip: 'A wired connection using an HDMI adapter always gives the most reliable picture with no lag or buffering.' },
@@ -7038,7 +7038,7 @@ For stronger privacy, do three things. Turn on Airplane Mode to disable all radi
       {
         title: 'Know that Windows has free virus protection built in',
         content: 'Windows 11 includes a free antivirus program called Windows Security (it used to be called Windows Defender). It runs automatically in the background. So you do not need to buy separate antivirus software. If you are still using Windows 10, you should upgrade to Windows 11 — Microsoft stopped providing security updates for Windows 10 on October 14, 2025.',
-        tip: 'Windows Security is already installed and turned on — you do not need to download or install anything extra.'
+        tip: 'Windows Security is already installed and turned on. You do not need to download or install anything extra.'
       },
       {
         title: 'Run a quick virus scan',
@@ -7099,7 +7099,7 @@ For stronger privacy, do three things. Turn on Airplane Mode to disable all radi
   {
     slug: 'screenshot-windows-quick',
     title: 'How to Take a Screenshot on Windows',
-    excerpt: 'Capture anything on your computer screen to save or share — there are several ways to do this on Windows.',
+    excerpt: 'Capture anything on your computer screen to save or share. There are several ways to do this on Windows.',
     category: 'windows-guides',
     tags: ['windows', 'screenshot', 'snip', 'tips', 'beginner'],
     readTime: '3 min',
@@ -7150,7 +7150,7 @@ For stronger privacy, do three things. Turn on Airplane Mode to disable all radi
       },
       {
         title: 'Create a zip file on Windows',
-        content: 'Open File Explorer (the yellow folder icon on your taskbar). Navigate to the files or folder you want to compress. To select multiple files, hold down the Ctrl key and click each file you want to include. Once your files are highlighted, right-click on any one of them. On Windows 11, choose "Compress to ZIP file." On Windows 10, choose "Send to" and then "Compressed (zipped) folder." A new zip file will appear in the same folder — you can rename it to something descriptive by right-clicking it and choosing "Rename."',
+        content: 'Open File Explorer (the yellow folder icon on your taskbar). Navigate to the files or folder you want to compress. To select multiple files, hold down the Ctrl key and click each file you want to include. Once your files are highlighted, right-click on any one of them. On Windows 11, choose "Compress to ZIP file." On Windows 10, choose "Send to" and then "Compressed (zipped) folder." A new zip file will appear in the same folder. You can rename it to something descriptive by right-clicking it and choosing "Rename."',
         tip: 'To select all files in a folder at once, press Ctrl+A. To select a range of files, click the first one, then hold Shift and click the last one.'
       },
       {
@@ -7229,7 +7229,7 @@ For stronger privacy, do three things. Turn on Airplane Mode to disable all radi
       },
       {
         title: 'Capture a single window',
-        content: 'Press Cmd+Shift+4, and then press the Space bar. Your cursor will change into a small camera icon. Move the camera over the window you want to capture — it will highlight in blue. Click on it to take a screenshot of that window only. This is great for capturing a single app or dialog box without the rest of your screen.'
+        content: 'Press Cmd+Shift+4, and then press the Space bar. Your cursor will change into a small camera icon. Move the camera over the window you want to capture. It will highlight in blue. Click on it to take a screenshot of that window only. This is great for capturing a single app or dialog box without the rest of your screen.'
       },
       {
         title: 'Use the screenshot toolbar for more options',
@@ -7256,7 +7256,7 @@ For stronger privacy, do three things. Turn on Airplane Mode to disable all radi
     steps: [
       {
         title: 'Use the keyboard shortcut (quickest method)',
-        content: 'Press and hold Cmd+Option+Esc (all three keys at the same time). The Option key is also labeled "Alt" on some keyboards — it is right next to the Cmd key. A window called "Force Quit Applications" will appear. Look for the app that says "(not responding)" next to its name, click on it to highlight it, and then click the "Force Quit" button.',
+        content: 'Press and hold Cmd+Option+Esc (all three keys at the same time). The Option key is also labeled "Alt" on some keyboards. It is right next to the Cmd key. A window called "Force Quit Applications" will appear. Look for the app that says "(not responding)" next to its name, click on it to highlight it, and then click the "Force Quit" button.',
         tip: 'This keyboard shortcut is the fastest way to close a frozen app. Try to memorize it: Cmd+Option+Esc.'
       },
       {
@@ -7293,7 +7293,7 @@ For stronger privacy, do three things. Turn on Airplane Mode to disable all radi
     steps: [
       {
         title: 'Open Spotlight search',
-        content: 'Press and hold the Cmd key, then press the Space bar (Cmd+Space). A search bar will appear in the center of your screen. You can start typing right away — there is no need to click anything first.',
+        content: 'Press and hold the Cmd key, then press the Space bar (Cmd+Space). A search bar will appear in the center of your screen. You can start typing right away. There is no need to click anything first.',
         tip: 'Spotlight is the fastest way to find anything on your Mac. Once you get used to it, you will use it many times a day.'
       },
       {
@@ -7306,7 +7306,7 @@ For stronger privacy, do three things. Turn on Airplane Mode to disable all radi
       },
       {
         title: 'Search for words inside a document',
-        content: 'Spotlight does not only search file names — it can also search for words inside your documents. If you remember a phrase from a letter or a note but cannot remember what you named the file, type that phrase into Spotlight. It will find documents that contain that text.',
+        content: 'Spotlight does not only search file names. It can also search for words inside your documents. If you remember a phrase from a letter or a note but cannot remember what you named the file, type that phrase into Spotlight. It will find documents that contain that text.',
         tip: 'This is especially helpful when you saved a file with a name you cannot remember. Search for a word you know is in the document instead.'
       },
       {
@@ -7334,7 +7334,7 @@ For stronger privacy, do three things. Turn on Airplane Mode to disable all radi
       },
       {
         title: 'Use built-in tools to free up space',
-        content: `In the Storage overview, click "Manage." Your Mac will show recommendations to help you free up space. Options like "Store in iCloud" move older files to Apple's online storage so they do not take up room on your Mac — you can still open them anytime. But they will need to download first. "Optimize Storage" removes movies and shows you have already watched.`
+        content: `In the Storage overview, click "Manage." Your Mac will show recommendations to help you free up space. Options like "Store in iCloud" move older files to Apple's online storage so they do not take up room on your Mac. You can still open them anytime. But they will need to download first. "Optimize Storage" removes movies and shows you have already watched.`
       },
       {
         title: 'Find and delete large files',
@@ -7383,7 +7383,7 @@ For stronger privacy, do three things. Turn on Airplane Mode to disable all radi
       },
       {
         title: 'Know your options if your Mac needs to be replaced',
-        content: `If your Mac breaks down or you get a new one, you can restore everything from your Time Machine backup. During the setup of your new Mac, choose "Restore from Time Machine Backup" when prompted. Connect your backup drive and follow the steps. All your files, apps, and settings will be transferred to the new Mac. As an extra safety net, consider also turning on iCloud Drive in System Settings — it syncs your Desktop and Documents folders to Apple's online storage automatically.`,
+        content: `If your Mac breaks down or you get a new one, you can restore everything from your Time Machine backup. During the setup of your new Mac, choose "Restore from Time Machine Backup" when prompted. Connect your backup drive and follow the steps. All your files, apps, and settings will be transferred to the new Mac. As an extra safety net, consider also turning on iCloud Drive in System Settings. It syncs your Desktop and Documents folders to Apple's online storage automatically.`,
         tip: 'iCloud Drive is not a full replacement for Time Machine, but having both gives you two layers of protection for your most important files.'
       }
     ]
@@ -7469,7 +7469,7 @@ For stronger privacy, do three things. Turn on Airplane Mode to disable all radi
       },
       {
         title: 'Connect to WiFi',
-        content: 'Your iPhone will show a list of WiFi networks nearby. Find your home WiFi network name and tap it. Type in your WiFi password carefully — it is case-sensitive, meaning capital and lowercase letters matter. If you do not know your WiFi password, check the sticker on the bottom or back of your router (the box with blinking lights).', tip: 'If you cannot find your WiFi password, it is often printed on a label on your internet router. Look for "Network Key," "WiFi Password," or "WPA Key."'
+        content: 'Your iPhone will show a list of WiFi networks nearby. Find your home WiFi network name and tap it. Type in your WiFi password carefully. It is case-sensitive, meaning capital and lowercase letters matter. If you do not know your WiFi password, check the sticker on the bottom or back of your router (the box with blinking lights).', tip: 'If you cannot find your WiFi password, it is often printed on a label on your internet router. Look for "Network Key," "WiFi Password," or "WPA Key."'
       },
       {
         title: 'Sign in with your Apple ID (or create one)',
@@ -7501,7 +7501,7 @@ For stronger privacy, do three things. Turn on Airplane Mode to disable all radi
       },
       {
         title: 'Learn more with free video tutorials',
-        content: 'Apple has a YouTube channel with short, easy-to-follow videos on every iPhone feature. They are free and designed for beginners. You can also visit an Apple Store near you for free "Today at Apple" classes where staff will help you in person.', tip: 'For a video walkthrough, visit the Apple Support YouTube channel (youtube.com/@AppleSupport) — they have short, easy-to-follow videos on every iPhone feature.'
+        content: 'Apple has a YouTube channel with short, easy-to-follow videos on every iPhone feature. They are free and designed for beginners. You can also visit an Apple Store near you for free "Today at Apple" classes where staff will help you in person.', tip: 'For a video walkthrough, visit the Apple Support YouTube channel (youtube.com/@AppleSupport). They have short, easy-to-follow videos on every iPhone feature.'
       },
     ]
   },
@@ -7529,7 +7529,7 @@ For stronger privacy, do three things. Turn on Airplane Mode to disable all radi
       },
       {
         title: 'Connect to WiFi',
-        content: 'Your phone will scan for WiFi networks nearby. Find your home WiFi network name in the list and tap it. Enter your WiFi password carefully — it is case-sensitive (capital and lowercase letters matter). If you do not know your WiFi password, look for a sticker on the bottom or back of your internet router.', tip: 'Your WiFi password is often printed on a label on your router. Look for "Network Key," "WiFi Password," or "WPA Key."'
+        content: 'Your phone will scan for WiFi networks nearby. Find your home WiFi network name in the list and tap it. Enter your WiFi password carefully. It is case-sensitive (capital and lowercase letters matter). If you do not know your WiFi password, look for a sticker on the bottom or back of your internet router.', tip: 'Your WiFi password is often printed on a label on your router. Look for "Network Key," "WiFi Password," or "WPA Key."'
       },
       {
         title: 'Sign in with your Google account (or create one)',
@@ -7758,7 +7758,7 @@ For stronger privacy, do three things. Turn on Airplane Mode to disable all radi
   {
     slug: 'how-to-use-qr-codes',
     title: 'How to Use QR Codes (Those Square Barcode Things)',
-    excerpt: 'Learn what QR codes are and how to scan them with your phone — it is easier than you think.',
+    excerpt: 'Learn what QR codes are and how to scan them with your phone. It is easier than you think.',
     category: 'essential-skills',
     tags: ['qr code', 'camera', 'beginner'],
     readTime: '5 min',
@@ -7769,11 +7769,11 @@ For stronger privacy, do three things. Turn on Airplane Mode to disable all radi
     steps: [
       {
         title: 'What is a QR code?',
-        content: `A QR code is a square pattern of black and white dots — it looks like a small, pixelated maze. Think of it like a barcode (the lines you see on products at the grocery store), but instead of just a product number, it can store a website address, phone number, or other information.\n\nYou have probably seen QR codes on restaurant menus ("Scan for menu"), event tickets, business cards, product packaging, or signs. When you scan one with your phone's camera, it instantly takes you to a website or shows you information — no typing needed.`
+        content: `A QR code is a square pattern of black and white dots. It looks like a small, pixelated maze. Think of it like a barcode (the lines you see on products at the grocery store), but instead of just a product number, it can store a website address, phone number, or other information.\n\nYou have probably seen QR codes on restaurant menus ("Scan for menu"), event tickets, business cards, product packaging, or signs. When you scan one with your phone's camera, it instantly takes you to a website or shows you information — no typing needed.`
       },
       {
         title: 'How to scan a QR code on an iPhone',
-        content: `Scanning a QR code on an iPhone is very easy — you do not need to download any special app.\n\n1. Open your Camera app (the icon that looks like a camera)\n2. Point your phone's camera at the QR code — hold it steady, about 6 to 12 inches away\n3. Wait a moment — a yellow notification will appear at the top of the screen showing a website address\n4. Tap that notification to open the link\n\nThat is it. Your iPhone camera automatically recognizes QR codes without you needing to press any buttons.`
+        content: `Scanning a QR code on an iPhone is very easy. You do not need to download any special app.\n\n1. Open your Camera app (the icon that looks like a camera)\n2. Point your phone's camera at the QR code — hold it steady, about 6 to 12 inches away\n3. Wait a moment — a yellow notification will appear at the top of the screen showing a website address\n4. Tap that notification to open the link\n\nThat is it. Your iPhone camera automatically recognizes QR codes without you needing to press any buttons.`
       },
       {
         title: 'How to scan a QR code on an Android phone',
@@ -7825,7 +7825,7 @@ For stronger privacy, do three things. Turn on Airplane Mode to disable all radi
       },
       {
         title: 'Android — Clear the app cache',
-        content: 'The cache is temporary data that apps store to load faster. Sometimes this data gets corrupted and causes crashes. Clearing it is completely safe.\n\n1. Go to Settings > Apps\n2. Tap the crashing app\n3. Tap "Storage" (or "Storage & Cache")\n4. Tap "Clear Cache"\n\nThis does NOT delete your data, photos, messages, or login information — it only removes temporary files. The app may load a little slower the first time after clearing the cache, but it should work normally.', tip: 'Clearing the cache does NOT delete your data — it just removes temporary files. It is safe to do anytime. For official help, visit support.google.com/googleplay/answer/2668665'
+        content: 'The cache is temporary data that apps store to load faster. Sometimes this data gets corrupted and causes crashes. Clearing it is completely safe.\n\n1. Go to Settings > Apps\n2. Tap the crashing app\n3. Tap "Storage" (or "Storage & Cache")\n4. Tap "Clear Cache"\n\nThis does NOT delete your data, photos, messages, or login information. It only removes temporary files. The app may load a little slower the first time after clearing the cache, but it should work normally.', tip: 'Clearing the cache does NOT delete your data. It just removes temporary files. It is safe to do anytime. For official help, visit support.google.com/googleplay/answer/2668665'
       },
       {
         title: 'Android — Update the app',
@@ -7952,7 +7952,7 @@ For stronger privacy, do three things. Turn on Airplane Mode to disable all radi
       { title: 'Set up on iPhone', content: 'Go to Settings, then Emergency SOS. Turn on "Call with Hold and Release" (press and hold the side button and volume button to call 911). Also set up your Medical ID: open the Health app, tap your profile photo, then Medical ID. Enter your emergency contacts, blood type, allergies, and medications.' },
       { title: 'Set up on Android', content: 'Go to Settings, then Safety & Emergency. Tap "Emergency SOS" and turn it on. Set it to call 911 when you press the power button 5 times quickly. Then tap "Emergency Contacts" and add at least one trusted person.' },
       { title: 'Add your emergency contacts', content: 'Your emergency contacts will receive a text message with your location when you trigger Emergency SOS. Add at least 2 people: a family member and a close friend or neighbor. Make sure they know they are listed as your emergency contact.' },
-      { title: 'Test it (carefully)', content: 'You can test Emergency SOS without actually calling 911. On iPhone, start the hold but release before the countdown finishes. On Android, your phone will show a countdown before calling. Cancel before it completes. This confirms the feature is working.', warning: 'Do NOT let the countdown complete during testing — it will actually call 911. Only complete the action in a real emergency.' },
+      { title: 'Test it (carefully)', content: 'You can test Emergency SOS without actually calling 911. On iPhone, start the hold but release before the countdown finishes. On Android, your phone will show a countdown before calling. Cancel before it completes. This confirms the feature is working.', warning: 'Do NOT let the countdown complete during testing. It will actually call 911. Only complete the action in a real emergency.' },
     ]
   },
   {
@@ -7988,7 +7988,7 @@ For stronger privacy, do three things. Turn on Airplane Mode to disable all radi
       { title: 'Calm (best for beginners)', content: 'Download Calm from the App Store or Google Play. The free version includes: a daily calm meditation (10 minutes), breathing exercises, and sleep stories read by soothing voices. Paid version ($70/year) adds hundreds more sessions. Great if you have never tried meditation before.' },
       { title: 'Headspace (guided meditation)', content: 'Headspace offers structured courses that teach meditation step by step. The free version has a basics course. Paid ($70/year) adds courses for stress, focus, sleep, and more. Sessions range from 3 to 20 minutes.' },
       { title: 'Insight Timer (completely free)', content: 'Insight Timer has over 100,000 free guided meditations from teachers worldwide. You can filter by topic (anxiety, sleep, grief), length, and experience level. There is also a timer for unguided meditation with gentle bells.' },
-      { title: 'Breathing exercises on your phone', content: 'You do not need an app for this. On Apple Watch: open the Breathe app and follow the animation. On most phones: search YouTube for "box breathing exercise" — it is a simple technique used by the military to reduce stress in seconds (breathe in 4 seconds, hold 4, out 4, hold 4, repeat).' },
+      { title: 'Breathing exercises on your phone', content: 'You do not need an app for this. On Apple Watch: open the Breathe app and follow the animation. On most phones: search YouTube for "box breathing exercise". It is a simple technique used by the military to reduce stress in seconds (breathe in 4 seconds, hold 4, out 4, hold 4, repeat).' },
       { title: 'When to seek professional help', content: 'Apps are a great supplement. But they are not a replacement for professional care. If you are experiencing persistent anxiety, depression, or grief, talk to your doctor. The 988 Suicide and Crisis Lifeline is available 24/7 by call or text at 988.', warning: 'If you or someone you know is in crisis, call or text 988 (Suicide and Crisis Lifeline) or text HOME to 741741 (Crisis Text Line). These services are free and available 24/7.' },
     ]
   },
@@ -8069,7 +8069,7 @@ For stronger privacy, do three things. Turn on Airplane Mode to disable all radi
     steps: [
       { title: 'Act immediately — first 24 hours matter', content: 'If you discover unauthorized transactions, accounts you did not open, or bills for things you did not buy: call your bank and credit card companies right away to freeze your accounts, change passwords for your email and any compromised accounts, and file a report at identitytheft.gov (the FTC official recovery site).' },
       { title: 'Place a fraud alert', content: 'Call any one of the three credit bureaus (Equifax: 1-800-525-6285, Experian: 1-888-397-3742, TransUnion: 1-800-680-7289) and request a fraud alert. They are required to notify the other two bureaus. This makes it harder for thieves to open new accounts in your name.' },
-      { title: 'Freeze your credit', content: 'Contact all three bureaus to place a credit freeze. This is stronger than a fraud alert — it completely blocks new credit applications. It is free and you can lift it temporarily when needed.', tip: 'Write down the PINs each bureau gives you when you freeze your credit. You will need them to unfreeze later.' },
+      { title: 'Freeze your credit', content: 'Contact all three bureaus to place a credit freeze. This is stronger than a fraud alert. It completely blocks new credit applications. It is free and you can lift it temporarily when needed.', tip: 'Write down the PINs each bureau gives you when you freeze your credit. You will need them to unfreeze later.' },
       { title: 'File a police report', content: 'File a report with your local police department. Bring copies of fraudulent transactions, your FTC identity theft report from identitytheft.gov, and your government-issued ID. Keep a copy of the police report — creditors may ask for it.' },
       { title: 'Monitor and follow up', content: 'Check your credit reports weekly for the next 6 months. Dispute any fraudulent accounts in writing with the credit bureaus. Keep records of every call, letter, and action you take. The FTC recovery plan at identitytheft.gov creates a personalized checklist you can follow.' },
     ]
@@ -8089,7 +8089,7 @@ For stronger privacy, do three things. Turn on Airplane Mode to disable all radi
       { title: 'How romance scams work', content: 'A scammer creates a fake profile on a dating site, social media, or messaging app. They build a relationship over weeks or months, expressing strong feelings quickly. Eventually, they ask for money — usually for an emergency, travel to visit you, or a business opportunity. They always have a reason why they cannot meet in person or video call.' },
       { title: 'Warning signs', content: 'Red flags: the relationship moves unusually fast (saying "I love you" within days or weeks), they can never video call (camera is always "broken"), their photos look like professional model shots, they claim to be a US military member stationed overseas, they ask for money via gift cards, wire transfer, or cryptocurrency, and their story has inconsistencies.' },
       { title: 'Protect yourself', content: 'Never send money to someone you have not met in person. Do a reverse image search on their photos (go to images.google.com, click the camera icon, upload their photo) — if the same face appears under different names, it is a scam. Ask to video call early in the relationship. Trust your instincts if something feels off.' },
-      { title: 'If you think you are being scammed', content: 'Stop all contact right away. Do not send any more money. Report the profile to the dating site or social media platform. File a report at reportfraud.ftc.gov. If you sent money, contact your bank — some transfers can be reversed. Talk to someone you trust — there is no shame in being targeted by a professional scammer.', warning: 'Romance scammers are professionals who manipulate emotions for a living. Being targeted does not mean you are foolish — it means someone deliberately exploited your kindness.' },
+      { title: 'If you think you are being scammed', content: 'Stop all contact right away. Do not send any more money. Report the profile to the dating site or social media platform. File a report at reportfraud.ftc.gov. If you sent money, contact your bank — some transfers can be reversed. Talk to someone you trust. There is no shame in being targeted by a professional scammer.', warning: 'Romance scammers are professionals who manipulate emotions for a living. Being targeted does not mean you are foolish. It means someone deliberately exploited your kindness.' },
     ]
   },
   // Social: "Microsoft will NEVER call you to say your computer has a virus. If someone does — hang up."
@@ -8296,7 +8296,7 @@ For stronger privacy, do three things. Turn on Airplane Mode to disable all radi
       },
       {
         title: 'View and understand your claims',
-        content: 'After you visit a doctor, your insurance company processes a "claim" — this is the record of what was billed and what insurance paid.\n\n1. Log in and look for "Claims," "My Claims," or "Claim History"\n2. Each claim will show:\n   - **Date of service** — when you went to the doctor\n   - **Provider** — the doctor or facility name\n   - **Billed amount** — what the doctor charged\n   - **Plan paid** — what your insurance paid\n   - **Your responsibility** — what you owe\n3. If a claim says "Pending," it is still being processed\n4. If a claim says "Denied," click on it to see why — you can often appeal the decision\n\nReview your claims regularly to catch any errors.'
+        content: 'After you visit a doctor, your insurance company processes a "claim" — this is the record of what was billed and what insurance paid.\n\n1. Log in and look for "Claims," "My Claims," or "Claim History"\n2. Each claim will show:\n   - **Date of service** — when you went to the doctor\n   - **Provider** — the doctor or facility name\n   - **Billed amount** — what the doctor charged\n   - **Plan paid** — what your insurance paid\n   - **Your responsibility** — what you owe\n3. If a claim says "Pending," it is still being processed\n4. If a claim says "Denied," click on it to see why. You can often appeal the decision\n\nReview your claims regularly to catch any errors.'
       },
     ]
   },
@@ -8353,7 +8353,7 @@ For stronger privacy, do three things. Turn on Airplane Mode to disable all radi
       },
       {
         title: 'Access records through your patient portal',
-        content: `The easiest way to see your records is through your doctor's patient portal.\n\n1. Check if your doctor uses a patient portal — common ones include MyChart, FollowMyHealth, and Athenahealth\n2. Log in to the portal\n3. Look for "Medical Records," "Health Summary," or "Visit History"\n4. You should be able to see:\n   - Lab and test results\n   - Visit summaries (notes from your doctor)\n   - Immunization records\n   - Medication history\n   - Allergies\n5. To download, look for a "Download" or "Export" button — you may be able to download as a PDF`
+        content: `The easiest way to see your records is through your doctor's patient portal.\n\n1. Check if your doctor uses a patient portal — common ones include MyChart, FollowMyHealth, and Athenahealth\n2. Log in to the portal\n3. Look for "Medical Records," "Health Summary," or "Visit History"\n4. You should be able to see:\n   - Lab and test results\n   - Visit summaries (notes from your doctor)\n   - Immunization records\n   - Medication history\n   - Allergies\n5. To download, look for a "Download" or "Export" button. You may be able to download as a PDF`
       },
       {
         title: 'Use Apple Health to gather all your records',
@@ -8361,7 +8361,7 @@ For stronger privacy, do three things. Turn on Airplane Mode to disable all radi
       },
       {
         title: 'Request records if digital access is not available',
-        content: `If your doctor does not have a patient portal, you can still get your records.\n\n1. **Call your doctor's office** and ask the medical records department for a copy\n2. **Fill out a release form** — they will ask you to sign an authorization form\n3. **Specify what you need** — You can ask for everything or specific items like lab results\n4. **Choose your format** — Ask for electronic records if possible (PDF or CD)\n5. **Know your rights:**\n   - They must respond within 30 days\n   - They can charge a reasonable fee for copies\n   - They cannot refuse to give you your records`
+        content: `If your doctor does not have a patient portal, you can still get your records.\n\n1. **Call your doctor's office** and ask the medical records department for a copy\n2. **Fill out a release form**. They will ask you to sign an authorization form\n3. **Specify what you need** — You can ask for everything or specific items like lab results\n4. **Choose your format** — Ask for electronic records if possible (PDF or CD)\n5. **Know your rights:**\n   - They must respond within 30 days\n   - They can charge a reasonable fee for copies\n   - They cannot refuse to give you your records`
       },
       {
         title: 'Store and share your records safely',
@@ -8669,7 +8669,7 @@ For stronger privacy, do three things. Turn on Airplane Mode to disable all radi
       },
       {
         title: 'Protect your financial information',
-        content: 'If the breach included financial data or your Social Security number:\n\n1. **Check your bank and credit card statements** for unrecognized charges\n2. **If your credit card was exposed** — Call your bank for a new card number\n3. **If your Social Security number was exposed:**\n   - Place a credit freeze at all three credit bureaus (Equifax, Experian, TransUnion) — this is free\n   - Set up free credit monitoring with Credit Karma or your bank\n   - Consider an IRS Identity Protection PIN at irs.gov\n4. **Accept free monitoring** — Many breached companies offer 1-2 years of free credit monitoring\n5. **File your taxes early** — If your SSN was exposed, file early to prevent fake returns\n\nAct quickly — the first 48 hours after a breach notification are the most critical.', warning: 'If the breach included your Social Security number, place a credit freeze right away — it is free and prevents anyone from opening new accounts in your name.'
+        content: 'If the breach included financial data or your Social Security number:\n\n1. **Check your bank and credit card statements** for unrecognized charges\n2. **If your credit card was exposed** — Call your bank for a new card number\n3. **If your Social Security number was exposed:**\n   - Place a credit freeze at all three credit bureaus (Equifax, Experian, TransUnion) — this is free\n   - Set up free credit monitoring with Credit Karma or your bank\n   - Consider an IRS Identity Protection PIN at irs.gov\n4. **Accept free monitoring** — Many breached companies offer 1-2 years of free credit monitoring\n5. **File your taxes early** — If your SSN was exposed, file early to prevent fake returns\n\nAct quickly — the first 48 hours after a breach notification are the most critical.', warning: 'If the breach included your Social Security number, place a credit freeze right away. It is free and prevents anyone from opening new accounts in your name.'
       },
     ]
   },
@@ -8733,7 +8733,7 @@ For stronger privacy, do three things. Turn on Airplane Mode to disable all radi
       },
       {
         title: 'Make checklists and scan documents',
-        content: '**Checklists:**\n1. Open a note and tap the checklist button (circle with checkmark) in the toolbar\n2. Type each item and press Enter for the next\n3. Tap the circle to check items off — they move to the bottom\n\n**Scan documents:**\n1. Open a note and tap the camera icon\n2. Tap "Scan Documents"\n3. Hold your phone over the document — it auto-detects and captures\n4. Scan multiple pages, then tap "Save"\n\nThis is great for keeping digital copies of insurance cards, receipts, and important letters.', tip: 'Scan your insurance cards and Medicare card into a locked note. You will always have them handy.'
+        content: '**Checklists:**\n1. Open a note and tap the checklist button (circle with checkmark) in the toolbar\n2. Type each item and press Enter for the next\n3. Tap the circle to check items off. They move to the bottom\n\n**Scan documents:**\n1. Open a note and tap the camera icon\n2. Tap "Scan Documents"\n3. Hold your phone over the document — it auto-detects and captures\n4. Scan multiple pages, then tap "Save"\n\nThis is great for keeping digital copies of insurance cards, receipts, and important letters.', tip: 'Scan your insurance cards and Medicare card into a locked note. You will always have them handy.'
       },
       {
         title: 'Lock sensitive notes and share with family',
@@ -8897,7 +8897,7 @@ For stronger privacy, do three things. Turn on Airplane Mode to disable all radi
       },
       {
         title: 'Let AI organize photos for you',
-        content: 'Modern photo apps use AI to organize automatically.\n\n**Google Photos:**\n- **People & Pets:** Groups photos by faces. Label them with names.\n- **Places:** Organized by location automatically\n- **Search:** Type anything — "birthday cake," "beach sunset," "red car" — and it finds matching photos\n\n**Apple Photos:**\n- **People & Pets:** Albums > People & Pets to see and name faces\n- **Places:** Albums > Places for a map of your photos\n- **Search:** Tap Search and type anything\n\nTry searching for something specific — you will be amazed at what it finds.'
+        content: 'Modern photo apps use AI to organize automatically.\n\n**Google Photos:**\n- **People & Pets:** Groups photos by faces. Label them with names.\n- **Places:** Organized by location automatically\n- **Search:** Type anything — "birthday cake," "beach sunset," "red car" — and it finds matching photos\n\n**Apple Photos:**\n- **People & Pets:** Albums > People & Pets to see and name faces\n- **Places:** Albums > Places for a map of your photos\n- **Search:** Tap Search and type anything\n\nTry searching for something specific. You will be amazed at what it finds.'
       },
       {
         title: 'Keep your library organized going forward',
@@ -9055,7 +9055,7 @@ For stronger privacy, do three things. Turn on Airplane Mode to disable all radi
     { title: 'Check your tagged photos', content: 'Go to Settings > Privacy > Profile and Tagging. Turn on "Review tags people add to your posts before they appear" and "Review posts you are tagged in before they appear on your profile." This gives you control over what others post about you.' },
   ] },
   { slug: 'instagram-beginners', title: 'Getting Started with Instagram', excerpt: 'Create an account, find people to follow, and share your first photo on Instagram.', category: 'social-media', tags: ['instagram', 'beginner', 'photos', 'social'], readTime: '5 min', videoUrl: 'https://www.youtube.com/embed/4vQ4o9t5ND8', thumbnailEmoji: '📸', publishedAt: '2026-04-07', difficulty: 'Beginner', steps: [
-    { title: 'Download and create your account', content: 'Download Instagram from the App Store or Google Play. Open it and tap "Create new account." Enter your email or phone number, create a username and password. Your username is how people find you — it can be your real name or a nickname.' },
+    { title: 'Download and create your account', content: 'Download Instagram from the App Store or Google Play. Open it and tap "Create new account." Enter your email or phone number, create a username and password. Your username is how people find you. It can be your real name or a nickname.' },
     { title: 'Set up your profile', content: 'Tap your profile icon (bottom right). Tap "Edit Profile." Add a profile photo (a clear photo of yourself helps friends find you). Write a short bio — just a line or two about yourself. Set your account to "Private" if you only want approved followers to see your posts: Settings > Account Privacy > toggle on.' },
     { title: 'Find people to follow', content: 'Instagram will suggest people from your contacts if you allow it. You can also search for people by name using the search icon (magnifying glass). Tap "Follow" next to anyone you want to follow. Start with family and close friends. You will see their photos and videos in your feed.' },
     { title: 'Share your first photo', content: 'Tap the + icon at the bottom center. Choose a photo from your gallery or take a new one. Apply a filter if you want (swipe left/right to see options). Write a caption describing the photo. Tap "Share." Your followers will now see it in their feed.' },
@@ -9082,7 +9082,7 @@ For stronger privacy, do three things. Turn on Airplane Mode to disable all radi
   ] },
   { slug: 'social-media-for-grandparents', title: 'How to Use Social Media to Stay Connected with Grandkids', excerpt: 'See photos, share messages, and video call your grandchildren using the apps they already use.', category: 'social-media', tags: ['grandparents', 'family', 'social-media', 'connection', 'beginner'], readTime: '4 min', thumbnailEmoji: '👨‍👩‍👧‍👦', publishedAt: '2026-04-08', difficulty: 'Beginner', videoUrl: 'https://www.youtube.com/embed/UXivTFSYQ6Q', steps: [
     { title: 'Ask which apps they use', content: 'Different age groups use different apps. Teens and young adults are most active on Instagram, TikTok, and Snapchat. Adults tend to use Facebook and Instagram. The key is to be where they are — not the other way around. Ask your grandchild which app they prefer.' },
-    { title: 'Share photos on Facebook or Instagram', content: 'Both Facebook and Instagram make it easy to share photos and see what family members post. Create an account on whichever your family uses. Follow or friend your grandchildren. Like and comment on their posts — they notice and appreciate it more than you think.' },
+    { title: 'Share photos on Facebook or Instagram', content: 'Both Facebook and Instagram make it easy to share photos and see what family members post. Create an account on whichever your family uses. Follow or friend your grandchildren. Like and comment on their posts. They notice and appreciate it more than you think.' },
     { title: 'Use group messaging', content: 'Create a family group chat on iMessage (iPhone), WhatsApp, or Facebook Messenger. This is a great way to share daily updates, photos, and quick messages with the whole family at once. Ask a family member to help set up the group and add everyone.' },
     { title: 'Video call regularly', content: 'FaceTime (Apple), Google Meet, or WhatsApp Video are all free and easy. Schedule a regular "Sunday video call" or similar routine. Seeing faces and hearing voices is much more connecting than text messages. Even 10 minutes makes a difference.', tip: 'If your grandchildren are young, try playing simple games during video calls — hold up drawings, play "I Spy," or read a story together. It makes the call more engaging for kids.' },
   ] },
@@ -9622,7 +9622,7 @@ For stronger privacy, do three things. Turn on Airplane Mode to disable all radi
   // ===== BATCH 14: Scraped Content — Beginner Level =====
   // Source: Microsoft Support — Windows Security
   { slug: 'windows-security-defender-guide', title: 'How to Use Windows Security (Windows Defender)', excerpt: 'Your PC has free built-in antivirus protection — here is how to use it.', category: 'windows-guides', tags: ['windows', 'security', 'antivirus', 'defender'], readTime: '6 min', thumbnailEmoji: '🛡️', publishedAt: '2026-04-02', difficulty: 'Beginner', steps: [
-    { title: 'Open Windows Security', content: 'Search for "Windows Security" in the Start menu. This app protects your PC from viruses, malware, and threats — it comes free with Windows.' },
+    { title: 'Open Windows Security', content: 'Search for "Windows Security" in the Start menu. This app protects your PC from viruses, malware, and threats. It comes free with Windows.' },
     { title: 'Run a Quick Scan', content: 'Click Virus & Threat Protection, then Quick Scan. This checks your most common files for threats. It runs in the background while you work.' },
     { title: 'Scan a specific file', content: 'Right-click any file or folder in File Explorer, then select "Scan with Microsoft Defender." On Windows 11, you may need to click "Show more options" first.' },
     { title: 'Check real-time protection', content: 'Go to Virus & Threat Protection > Manage Settings. Make sure Real-time Protection is turned on. If you turn it off, it turns back on automatically for safety.' },
@@ -9772,7 +9772,7 @@ For stronger privacy, do three things. Turn on Airplane Mode to disable all radi
     { title: 'Tell someone your plan', content: 'Let a trusted family member know your plan exists and where to find your digital inventory. Consider including digital account info in your will or giving it to your estate attorney.' },
   ] },
   { slug: 'telehealth-appointments', title: 'How to Do a Telehealth Video Appointment', excerpt: 'See your doctor through a video call from the comfort of home.', category: 'health-tech', tags: ['telehealth', 'doctor', 'video-call', 'healthcare'], readTime: '6 min', thumbnailEmoji: '🏥', publishedAt: '2026-04-02', difficulty: 'Beginner', videoUrl: 'https://www.youtube.com/embed/Ed40jgObFA4', steps: [
-    { title: 'What is telehealth', content: 'A telehealth appointment is a video call with your doctor. You see and talk to them on your phone, tablet, or computer. It is real medical care — they can diagnose, prescribe medicine, and refer you to specialists.' },
+    { title: 'What is telehealth', content: 'A telehealth appointment is a video call with your doctor. You see and talk to them on your phone, tablet, or computer. It is real medical care. They can diagnose, prescribe medicine, and refer you to specialists.' },
     { title: 'Schedule your appointment', content: `Call your doctor's office and ask for a telehealth visit. Or use your patient portal (MyChart, patient website) to book online. They will send you a link or instructions.` },
     { title: 'Prepare your technology', content: 'Test your camera and microphone before the appointment. Make sure you have a stable internet connection (Wi-Fi is best). Charge your device. Find a quiet, well-lit room.' },
     { title: 'Prepare for the visit', content: 'Have your medications nearby so you can show them. Write down your symptoms and questions beforehand. Have your insurance card ready.' },
@@ -9790,7 +9790,7 @@ For stronger privacy, do three things. Turn on Airplane Mode to disable all radi
     { title: 'Set up online banking', content: `Visit your bank's website and click "Enroll" or "Sign Up for Online Banking." You will need your account number, Social Security number (last 4), and contact information.` },
     { title: 'Download the mobile app', content: 'Search for your bank in the App Store or Google Play. Download the official app only. Sign in with your new online banking credentials.' },
     { title: 'Check balances and transactions', content: `The main screen shows your account balances. Tap an account to see recent transactions. Review regularly for any charges you don't recognize.` },
-    { title: 'Pay bills online', content: 'Look for "Bill Pay" in your banking app. Add a payee (like your electric company). Enter the amount and date. The bank sends payment electronically or by check — you never mail a check again.' },
+    { title: 'Pay bills online', content: 'Look for "Bill Pay" in your banking app. Add a payee (like your electric company). Enter the amount and date. The bank sends payment electronically or by check. You never mail a check again.' },
     { title: 'Transfer money', content: 'Use the Transfer feature to move money between your accounts. For sending to other people, use Zelle (built into most banking apps) for free instant transfers.' },
     { title: 'Deposit checks from home', content: 'Use Mobile Deposit: open the banking app, tap Deposit, take photos of the front and back of your check. The money appears in your account within 1-2 business days.' },
     { title: 'Stay secure', content: 'Enable two-factor authentication. Use biometric login (fingerprint/face). Never use public Wi-Fi for banking. Set up transaction alerts. Call your bank right away if you see suspicious activity.' },
@@ -9806,7 +9806,7 @@ For stronger privacy, do three things. Turn on Airplane Mode to disable all radi
   ] },
   { slug: 'apple-ecosystem-guide', title: 'Understanding the Apple Ecosystem', excerpt: 'How iPhone, iPad, Mac, Apple Watch, and Apple TV all work together.', category: 'essential-skills', tags: ['apple', 'ecosystem', 'icloud', 'continuity'], readTime: '7 min', thumbnailEmoji: '🍎', publishedAt: '2026-04-02', difficulty: 'Intermediate', steps: [
     { title: 'One Apple ID connects everything', content: 'Sign into all your Apple devices with the same Apple ID. Your photos, contacts, calendars, notes, and bookmarks sync automatically across all of them.' },
-    { title: 'iCloud keeps things in sync', content: 'Take a photo on your iPhone — it appears on your Mac and iPad automatically. Start a note on your phone, finish it on your computer. Everything stays current everywhere.' },
+    { title: 'iCloud keeps things in sync', content: 'Take a photo on your iPhone. It appears on your Mac and iPad automatically. Start a note on your phone, finish it on your computer. Everything stays current everywhere.' },
     { title: 'AirDrop for instant sharing', content: 'Send photos, files, and links to nearby Apple devices instantly. No email, no messaging — tap AirDrop and select the device.' },
     { title: 'Handoff between devices', content: 'Start writing an email on your iPhone, then pick up exactly where you left off on your Mac. Works with Safari, Mail, Maps, and many other apps.' },
     { title: 'Universal Clipboard', content: 'Copy text on your iPhone and paste it on your Mac (or vice versa). The clipboard is shared across all your Apple devices automatically.' },
@@ -9817,7 +9817,7 @@ For stronger privacy, do three things. Turn on Airplane Mode to disable all radi
     { slug: 'windows-sfc-dism-repair', title: 'How to Repair Windows Using SFC and DISM Commands', excerpt: 'Fix corrupted system files and restore Windows health using built-in command-line tools.', category: 'windows-guides', tags: ['windows', 'repair', 'sfc', 'dism', 'command-prompt'], readTime: '8 min', thumbnailEmoji: '🔧', publishedAt: '2026-04-02', difficulty: 'Advanced', steps: [
     { title: 'When to use these tools', content: `If Windows is crashing, showing errors, running slowly, or programs won't open, system files may be corrupted. SFC (System File Checker) and DISM (Deployment Image Servicing) can detect and repair these problems.` },
     { title: 'Open Command Prompt as administrator', content: 'Right-click the Start button and select "Terminal (Admin)" or "Command Prompt (Admin)." Click Yes when asked to allow changes. You must run as administrator for these commands to work.' },
-    { title: 'Run SFC first', content: `Type: sfc /scannow and press Enter. This scans all protected system files and replaces corrupted ones with cached copies. Wait for it to complete — it can take 10-30 minutes. Don't close the window.` },
+    { title: 'Run SFC first', content: `Type: sfc /scannow and press Enter. This scans all protected system files and replaces corrupted ones with cached copies. Wait for it to complete. It can take 10-30 minutes. Don't close the window.` },
     { title: 'Read the SFC results', content: `"Windows did not find any integrity violations" means files are fine. "Windows Resource Protection found corrupt files and successfully repaired them" means problems were fixed. If it says files couldn't be repaired, try DISM next.` },
     { title: 'Run DISM if SFC fails', content: 'Type: DISM /Online /Cleanup-Image /RestoreHealth and press Enter. This downloads fresh copies of system files from Windows Update. Requires internet connection. Can take 15-30 minutes.' },
     { title: 'Run SFC again after DISM', content: `After DISM completes successfully, run sfc /scannow one more time. DISM repairs the source files that SFC uses, so SFC can now fix issues it couldn't before.` },
@@ -9881,7 +9881,7 @@ For stronger privacy, do three things. Turn on Airplane Mode to disable all radi
   ] },
   { slug: 'audiobooks-getting-started', title: 'How to Get Started with Audiobooks', excerpt: 'Listen to books on your phone, in the car, or around the house. Many are free through your library.', category: 'how-to', tags: ['audiobooks', 'reading', 'audible', 'libby', 'library'], readTime: '6 min', thumbnailEmoji: '📚', publishedAt: '2026-04-02', difficulty: 'Beginner', steps: [
     { title: 'What are audiobooks?', content: 'Audiobooks are professionally narrated books you listen to instead of read. Perfect for commutes, walks, exercising, or relaxing. Most bestsellers are available as audiobooks.' },
-    { title: 'Free audiobooks from your library', content: 'Download the Libby app (by OverDrive). Sign in with your library card. Browse and borrow audiobooks for free — they automatically return after the lending period.' },
+    { title: 'Free audiobooks from your library', content: 'Download the Libby app (by OverDrive). Sign in with your library card. Browse and borrow audiobooks for free. They automatically return after the lending period.' },
     { title: 'Audible by Amazon', content: 'Audible is the largest audiobook store. Plans start at $14.99/month for one book credit. You keep books forever, even if you cancel. First book is often free with a trial.' },
     { title: 'Apple Books and Google Play', content: 'Both offer audiobooks for individual purchase — no subscription needed. Prices range from $5 to $30 per book.' },
     { title: 'Listening tips', content: 'Start with a topic or author you already enjoy. Use bookmarks to save your place. Adjust narration speed. Download books over Wi-Fi to save cellular data.' },
@@ -10343,7 +10343,7 @@ For stronger privacy, do three things. Turn on Airplane Mode to disable all radi
     { title: 'Request a ride', content: 'Open the app and enter your destination in the "Where to?" box. The app shows estimated price and arrival time. Tap "Confirm" to request the ride. A nearby driver is matched to you.' },
     { title: 'Track your driver', content: `The app shows your driver's name, photo, car model, color, and license plate. Watch the map as they approach. You'll get a notification when they arrive.` },
     { title: 'Verify your ride', content: `Before getting in, confirm the driver's name, car, and license plate match the app. Ask "Who are you here for?" The driver should say YOUR name. Never get into an unmarked car.` },
-    { title: 'During the ride', content: 'Share your trip with family using the "Share Status" feature — they can track your route in real time. You can change the destination mid-trip. Rate your driver afterward.' },
+    { title: 'During the ride', content: 'Share your trip with family using the "Share Status" feature. They can track your route in real time. You can change the destination mid-trip. Rate your driver afterward.' },
     { title: 'Ride options explained', content: 'UberX/Lyft: Standard sedan (cheapest). Comfort: newer car with more legroom. XL: SUV for groups. Shared rides: split with strangers going the same direction (cheapest option).' },
     { title: 'Tips for saving money', content: 'Prices increase during "surge" or busy times. Wait 10-15 minutes for prices to drop. Compare Uber and Lyft prices — one is often cheaper. Schedule rides in advance for guaranteed pricing.' },
   ] },
@@ -10369,7 +10369,7 @@ For stronger privacy, do three things. Turn on Airplane Mode to disable all radi
     { title: 'TSA PreCheck basics', content: 'TSA PreCheck lets you use a faster security line at 200+ airports. Keep shoes, belts, and jackets on. Leave laptops and liquids in your bag. Costs $78 for 5 years ($15.60/year).' },
     { title: 'Global Entry basics', content: 'Global Entry includes TSA PreCheck PLUS expedited customs when returning to the US from international travel. Use automated kiosks instead of waiting in long customs lines. Costs $100 for 5 years.' },
     { title: 'How to apply', content: 'Visit ttp.cbp.dhs.gov. Create an account and fill out the application. Pay the fee. Wait for conditional approval (usually 2-3 weeks). Then schedule an in-person interview at an enrollment center.' },
-    { title: 'The interview', content: 'Bring your passport and one other ID. The interview is brief (5-10 minutes) — they verify your identity and take fingerprints. Most people are approved on the spot.' },
+    { title: 'The interview', content: 'Bring your passport and one other ID. The interview is brief (5-10 minutes). They verify your identity and take fingerprints. Most people are approved on the spot.' },
     { title: 'Credit card reimbursement', content: 'Many credit cards reimburse the TSA PreCheck or Global Entry fee. Check if your card offers this before paying out of pocket. Popular cards: Chase Sapphire, Amex Platinum, Capital One Venture.' },
     { title: 'Add it to your boarding pass', content: 'After approval, add your Known Traveler Number (KTN) to your airline profiles and booking confirmations. "TSA PRE" appears on your boarding pass automatically.' },
   ] },
@@ -10465,7 +10465,7 @@ For stronger privacy, do three things. Turn on Airplane Mode to disable all radi
     { title: 'Wi-Fi bands explained', content: '2.4 GHz: longer range, slower speed, travels through walls better. 5 GHz: shorter range, faster speed, best for streaming and gaming nearby. Wi-Fi 6E adds 6 GHz for even faster speeds.' },
     { title: 'Optimal router placement', content: `Place your router centrally, elevated (shelf height), away from walls and metal objects. Don't put it inside a cabinet, near a microwave, or on the floor. Central placement gives the best coverage.` },
     { title: 'Ethernet vs Wi-Fi', content: 'Ethernet cables provide faster, more reliable connections. Use ethernet for desktop computers, gaming consoles, and smart TVs when possible. Wi-Fi is for mobile devices and convenience.' },
-    { title: 'Wi-Fi extenders and mesh systems', content: 'Extenders repeat your signal but halve speed. Mesh systems (Google Nest WiFi, Eero, TP-Link Deco) are better — they create one smooth network with multiple access points.' },
+    { title: 'Wi-Fi extenders and mesh systems', content: 'Extenders repeat your signal but halve speed. Mesh systems (Google Nest WiFi, Eero, TP-Link Deco) are better. They create one smooth network with multiple access points.' },
     { title: 'How many devices is too many?', content: 'A typical router handles 20-30 devices. Count all connected devices: phones, tablets, computers, smart TVs, smart home devices, thermostats. If you have 30+, consider a newer Wi-Fi 6 router.' },
     { title: `Check what's connected`, content: `Log into your router (usually 192.168.1.1) or use the Fing app (free) to see all devices on your network. Remove any you don't recognize and change your password if needed.` },
   ] },
@@ -10851,7 +10851,7 @@ For stronger privacy, do three things. Turn on Airplane Mode to disable all radi
     { title: 'Set up your space', content: 'Choose a quiet room with a door. Face a window for natural light (never have a window behind you). Use a plain, tidy background. Remove distractions. Inform household members of your interview time.' },
     { title: 'Camera positioning', content: 'Position your camera at eye level (stack books under your laptop if needed). Look at the camera, not the screen, when speaking — this creates the impression of eye contact. Sit centered in the frame.' },
     { title: 'Audio quality matters', content: 'Use earbuds or a headset — built-in laptop microphones pick up echo and background noise. A quiet environment is more important than expensive equipment.' },
-    { title: 'Dress professionally', content: 'Dress fully (not just the top half) — you might need to stand up. Avoid busy patterns and stripes that can look distracting on camera. Solid colors work best.' },
+    { title: 'Dress professionally', content: 'Dress fully (not just the top half). You might need to stand up. Avoid busy patterns and stripes that can look distracting on camera. Solid colors work best.' },
     { title: 'During the interview', content: 'Mute when not speaking in group interviews. Nod and react visually — the interviewer needs visual cues. Speak slightly slower than normal. Pause before answering to avoid talking over someone due to video delay.' },
     { title: 'Have materials ready', content: `Keep your resume open on screen or printed nearby. Have notes with key talking points. Prepare questions to ask. Have the interviewer's name and title handy. A glass of water for your voice.` },
   ] },
@@ -10860,14 +10860,14 @@ For stronger privacy, do three things. Turn on Airplane Mode to disable all radi
     { title: 'Enter and format data', content: 'Click a cell and type. Press Tab to move right, Enter to move down. Format with the toolbar: bold, colors, number formats (currency, dates, percentages). Select multiple cells by clicking and dragging.' },
     { title: 'Basic formulas', content: '=SUM(A1:A10) adds numbers. =AVERAGE(A1:A10) finds the average. =COUNT(A1:A10) counts entries. =MAX and =MIN find highest and lowest. Always start formulas with = (equals).' },
     { title: 'Sort and filter', content: 'Select your data, then Data > Create a Filter. Click the filter arrows in column headers to sort A-Z, Z-A, or filter to show specific values. Great for finding things in large lists.' },
-    { title: 'Share and collaborate', content: 'Click Share (top-right). Add people by email. Choose "Editor" or "Viewer" access. Multiple people can edit simultaneously — you see their changes in real time with colored cursors.' },
+    { title: 'Share and collaborate', content: 'Click Share (top-right). Add people by email. Choose "Editor" or "Viewer" access. Multiple people can edit simultaneously. You see their changes in real time with colored cursors.' },
     { title: 'Useful templates', content: 'sheets.google.com/templates offers: monthly budget, expense tracker, project timeline, to-do list, meal planner, and more. Start with a template and customize it for your needs.' },
     { title: 'Tips for better spreadsheets', content: 'Freeze the header row: View > Freeze > 1 Row. This keeps headers visible when scrolling. Use alternating colors: Format > Alternating Colors for easier reading. Name your sheets clearly (tabs at the bottom).' },
   ] },
   { slug: 'presentation-tips', title: 'How to Create a Great Presentation', excerpt: 'Build clear, engaging presentations using PowerPoint, Google Slides, or Canva.', category: 'how-to', tags: ['presentation', 'powerpoint', 'google-slides', 'public-speaking'], readTime: '7 min', thumbnailEmoji: '📽️', publishedAt: '2026-04-02', difficulty: 'Beginner', steps: [
     { title: 'Choose your tool', content: 'Google Slides (free): works in browser, easy sharing. PowerPoint (Microsoft 365): most features, industry standard. Canva (free tier): beautiful templates, easiest to make look professional.' },
     { title: 'Start with a template', content: `Don't start from a blank slide. Choose a template that matches your topic. All three tools offer professional templates. Pick one with a clean, simple design.` },
-    { title: 'The 6x6 rule', content: `No more than 6 bullet points per slide, no more than 6 words per bullet. Your slides support your talk — they shouldn't be a script. The audience should listen to you, not read slides.` },
+    { title: 'The 6x6 rule', content: `No more than 6 bullet points per slide, no more than 6 words per bullet. Your slides support your talk. They shouldn't be a script. The audience should listen to you, not read slides.` },
     { title: 'Use visually appealing slides', content: `Use large images that fill the slide. One idea per slide is better than cramming everything in. Use consistent fonts and colors. White space is your friend — don't fill every inch.` },
     { title: 'Add images and charts', content: 'Insert > Image for photos. Insert > Chart for data visualizations. Images make information memorable. Charts make numbers understandable. Avoid clip art — use real photos.' },
     { title: 'Practice your delivery', content: 'Practice out loud, not just in your head. Time yourself. Know your first and last sentences by heart. Speak to the audience, not to the screen. Use Presenter Notes for reminders.' },
@@ -10906,7 +10906,7 @@ For stronger privacy, do three things. Turn on Airplane Mode to disable all radi
     { title: 'Check for errors', content: 'Expand Windows Logs > Application or System. Look for red circles (Errors) and yellow triangles (Warnings). Click an event to see details below. Recent errors around the time of a crash are most relevant.' },
     { title: 'Understanding entries', content: 'Level: Error (red) is a failure, Warning (yellow) is a potential issue, Information (blue) is routine. Source tells you which program caused it. The Description field explains what happened.' },
     { title: 'Search for help', content: `Copy the Event ID number and source name. Search online: "Event ID 1000 Application Error." You'll find specific solutions for that exact error. Microsoft's support pages often explain common event IDs.` },
-    { title: 'When to use Event Viewer', content: 'After a blue screen crash. When programs keep crashing. When Windows takes forever to start. When troubleshooting with tech support — they may ask you to check specific events.' },
+    { title: 'When to use Event Viewer', content: 'After a blue screen crash. When programs keep crashing. When Windows takes forever to start. When troubleshooting with tech support. They may ask you to check specific events.' },
   ] },
   { slug: 'windows-power-plans', title: 'Windows Power Plans Explained', excerpt: `Optimize your laptop's battery life or maximize performance with the right power settings.`, category: 'windows-guides', tags: ['windows', 'power', 'battery', 'laptop', 'performance'], readTime: '5 min', thumbnailEmoji: '🔋', publishedAt: '2026-04-02', difficulty: 'Beginner', steps: [
     { title: 'Access power settings', content: 'Settings > System > Power & Battery (laptops) or Power (desktops). You can also right-click the battery icon in the taskbar and select Power Options.' },
@@ -11139,7 +11139,7 @@ For stronger privacy, do three things. Turn on Airplane Mode to disable all radi
     { title: 'Affordable internet programs', content: `The FCC's Affordable Connectivity Program provides discounts. Many ISPs offer low-income plans ($10-30/month). Lifeline provides discounts for qualifying low-income households. Ask your ISP about affordable options.` },
   ] },
   { slug: 'computer-maintenance-guide', title: 'Essential Computer Maintenance Tasks', excerpt: 'Keep your computer running smoothly with these regular maintenance tasks.', category: 'essential-skills', tags: ['maintenance', 'computer', 'performance', 'cleaning', 'updates'], readTime: '7 min', thumbnailEmoji: '🔧', publishedAt: '2026-04-02', difficulty: 'Beginner', steps: [
-    { title: 'Keep it updated', content: 'Install operating system updates promptly — they fix security vulnerabilities and bugs. Windows: Settings > Update & Security. Mac: System Settings > General > Software Update. Enable automatic updates.' },
+    { title: 'Keep it updated', content: 'Install operating system updates promptly. They fix security vulnerabilities and bugs. Windows: Settings > Update & Security. Mac: System Settings > General > Software Update. Enable automatic updates.' },
     { title: 'Restart weekly', content: `Restart your computer at least once a week. This clears memory, applies pending updates, and resolves many minor issues. Don't just close the lid — actually restart or shut down.` },
     { title: 'Clean up storage monthly', content: 'Windows: Settings > System > Storage > Temporary Files. Mac: About This Mac > Storage > Manage. Delete temporary files, empty the Trash/Recycle Bin, and remove programs you no longer use.' },
     { title: 'Run antivirus scans', content: `Windows Defender runs automatically (it's good enough for most people). Run a full scan monthly: Windows Security > Virus & Threat Protection > Scan Options > Full Scan. Mac: malware is less common but consider Malwarebytes (free).` },
@@ -11363,7 +11363,7 @@ For stronger privacy, do three things. Turn on Airplane Mode to disable all radi
   ] },
 
   // ── Batch 49: More Essential Skills ─────────────────────────────────────────
-  { slug: 'understanding-updates', title: 'Why Software Updates Matter (And How to Handle Them)', excerpt: 'Stop ignoring those update notifications — they protect your security and improve performance.', category: 'essential-skills', tags: ['updates', 'security', 'maintenance', 'software', 'patches'], readTime: '6 min', thumbnailEmoji: '🔄', publishedAt: '2026-04-02', difficulty: 'Beginner', videoUrl: 'https://www.youtube.com/embed/5lZxPW2U9NQ', steps: [
+  { slug: 'understanding-updates', title: 'Why Software Updates Matter (And How to Handle Them)', excerpt: 'Stop ignoring those update notifications. They protect your security and improve performance.', category: 'essential-skills', tags: ['updates', 'security', 'maintenance', 'software', 'patches'], readTime: '6 min', thumbnailEmoji: '🔄', publishedAt: '2026-04-02', difficulty: 'Beginner', videoUrl: 'https://www.youtube.com/embed/5lZxPW2U9NQ', steps: [
     { title: 'Why updates are critical', content: `Software updates fix security holes that hackers exploit. The WannaCry ransomware attack of 2017 only affected computers that hadn't installed a security update released months earlier. Updates literally prevent attacks.` },
     { title: 'Types of updates', content: 'Security patches: fix vulnerabilities (install right away). Feature updates: add new capabilities (install when convenient). Bug fixes: resolve crashes and errors. Driver updates: improve hardware compatibility.' },
     { title: 'Enable automatic updates', content: 'Windows: Settings > Update & Security > Advanced Options > enable all auto-updates. Mac: System Settings > General > Software Update > Automatic Updates. Phone: enabled by default. Let updates install overnight.' },
@@ -11529,7 +11529,7 @@ For stronger privacy, do three things. Turn on Airplane Mode to disable all radi
       { title: 'Go to Amazon Prime Video', content: 'Open a web browser and go to amazon.com/primevideo. Click "Start Your Free Trial" or "Sign Up."' },
       { title: 'Sign in or create an Amazon account', content: 'If you already shop on Amazon, sign in with that same account. If not, click "Create your Amazon account" and enter your name, email, and a password.', tip: 'If you already have Amazon Prime for free shipping, Prime Video is already included at no extra cost.' },
       { title: 'Choose Prime Video or full Prime membership', content: 'You can get just Prime Video for a lower monthly price, or get a full Amazon Prime membership that includes free shipping, Prime Video, Prime Music, and more.' },
-      { title: 'Add your payment method', content: 'Enter your credit or debit card. Amazon may offer a free trial — you will not be charged until the trial ends. You can cancel anytime.' },
+      { title: 'Add your payment method', content: 'Enter your credit or debit card. Amazon may offer a free trial. You will not be charged until the trial ends. You can cancel anytime.' },
       { title: 'Watch on any device', content: 'Download the Prime Video app on your smart TV, phone, or tablet. Sign in with your Amazon account and start browsing. You can also watch on your computer at amazon.com/primevideo.' },
     ]
   },
@@ -11660,7 +11660,7 @@ For stronger privacy, do three things. Turn on Airplane Mode to disable all radi
       { title: 'Make sure both devices are on the same Wi-Fi', content: 'Your phone and your TV (or streaming device) must be connected to the same Wi-Fi network. If they are on different networks, casting will not work.', warning: 'If casting is not working, double-check that both your phone and TV are on the exact same Wi-Fi network.' },
       { title: 'For iPhone users (AirPlay)', content: 'Open the Control Center by swiping down from the top-right corner of your iPhone screen. Tap "Screen Mirroring" and select your TV from the list. Your phone screen will appear on the TV.' },
       { title: 'For Android users (Cast)', content: 'Swipe down from the top of your screen to open Quick Settings. Look for a button called "Cast," "Smart View," or "Screen Mirror." Tap it and select your TV from the list.' },
-      { title: 'Cast from a specific app', content: 'You can also cast from inside apps like YouTube, Netflix, or Photos. Look for the Cast icon — it looks like a little TV screen with Wi-Fi waves in the corner. Tap it and choose your TV.', tip: 'Casting from inside an app (like YouTube) often works better than mirroring your whole screen.' },
+      { title: 'Cast from a specific app', content: 'You can also cast from inside apps like YouTube, Netflix, or Photos. Look for the Cast icon. It looks like a little TV screen with Wi-Fi waves in the corner. Tap it and choose your TV.', tip: 'Casting from inside an app (like YouTube) often works better than mirroring your whole screen.' },
       { title: 'Stop casting', content: 'To stop, go back to the casting menu on your phone and tap "Disconnect" or "Stop Mirroring." You can also just close the app you were casting from.' },
     ]
   },
@@ -11874,7 +11874,7 @@ For stronger privacy, do three things. Turn on Airplane Mode to disable all radi
     steps: [
       { title: 'Find the weather app', content: 'Most phones come with a weather app already installed. On iPhone, it is called "Weather" (blue icon with a sun). On Android, it may be called "Weather" or you can download "The Weather Channel" or "AccuWeather" from the app store for free.' },
       { title: 'Allow location access', content: 'When you first open the app, it may ask to use your location. Tap "Allow" so it can show you the weather for where you are right now.' },
-      { title: `Read today's forecast`, content: 'The main screen shows the current temperature and weather conditions (sunny, cloudy, rainy, etc.). Scroll down to see the hourly forecast and the forecast for the next several days.', tip: 'Check the hourly forecast before heading out. The weather can change during the day — it might be sunny in the morning but rainy in the afternoon.' },
+      { title: `Read today's forecast`, content: 'The main screen shows the current temperature and weather conditions (sunny, cloudy, rainy, etc.). Scroll down to see the hourly forecast and the forecast for the next several days.', tip: 'Check the hourly forecast before heading out. The weather can change during the day. It might be sunny in the morning but rainy in the afternoon.' },
       { title: 'Add other locations', content: 'You can add cities to check the weather in other places. Tap the search bar or the + button, then type a city name. This is helpful if you are traveling or want to check on family in another state.' },
     ]
   },
@@ -12085,7 +12085,7 @@ For stronger privacy, do three things. Turn on Airplane Mode to disable all radi
       { title: 'Choose a language', content: 'Pick the language you want to learn. Duolingo offers over 40 languages including Spanish, French, Italian, German, Japanese, and more. You can always add more languages later.' },
       { title: 'Set your daily goal', content: 'Duolingo will ask how much time you want to spend each day. Choose "Casual" (5 minutes), "Regular" (10 minutes), "Serious" (15 minutes), or "Intense" (20 minutes). You can change this anytime.', tip: 'Start with just 5 minutes a day. It is better to practice a little bit every day than to do a lot once a week.' },
       { title: 'Complete lessons', content: 'Each lesson teaches you new words and phrases through matching, multiple choice, listening, and speaking exercises. Lessons are short — usually about 5 minutes each. You earn points and streak badges for practicing every day.' },
-      { title: 'Practice daily', content: 'Duolingo sends you daily reminders to practice. Try to keep your streak going — it tracks how many days in a row you have practiced. Even one lesson a day makes a difference over time.' },
+      { title: 'Practice daily', content: 'Duolingo sends you daily reminders to practice. Try to keep your streak going. It tracks how many days in a row you have practiced. Even one lesson a day makes a difference over time.' },
     ]
   },
   {
@@ -12186,7 +12186,7 @@ For stronger privacy, do three things. Turn on Airplane Mode to disable all radi
       {
         title: 'Forward spam texts to 7726',
         content: `Forward any suspicious text message to 7726 (which spells SPAM on your keypad). It's free on all US carriers. This reports the scam to your carrier so they can block it for other customers.`,
-        tip: 'You can also report text scams directly to the FTC at ReportFraud.ftc.gov — it takes less than 2 minutes.',
+        tip: 'You can also report text scams directly to the FTC at ReportFraud.ftc.gov. It takes less than 2 minutes.',
       },
       {
         title: 'What to do if you already tapped a link',

@@ -38,7 +38,7 @@ Your phone battery also gradually loses capacity as it ages. iPhones show you ex
       {
         title: 'Turn off location services for apps that do not need them',
         content: 'On iPhone, go to Settings → Privacy & Security → Location Services. Tap each app and choose "Never" or "While Using the App" — not "Always." Apps like games, recipe apps, and shopping apps have no reason to know where you are. On Android, go to Settings → Location → App Permissions and switch apps from "Allow all the time" to "Only while using the app."',
-        tip: 'Weather apps only need your location "While Using" — they do not need it "Always." The same goes for most apps that request location.',
+        tip: 'Weather apps only need your location "While Using". They do not need it "Always." The same goes for most apps that request location.',
       },
       {
         title: 'Restart your phone once a week',
@@ -59,7 +59,7 @@ Your phone battery also gradually loses capacity as it ages. iPhones show you ex
     thumbnailEmoji: '',
     publishedAt: '2026-04-18',
     difficulty: 'Beginner',
-    body: `After installing Microsoft's April 14, 2026 security update (KB5083769), some Windows 11 computers started showing a blue screen asking for something called a "BitLocker recovery key." If this happened to you, your computer is not broken — it is asking for a security code to confirm you are the real owner.
+    body: `After installing Microsoft's April 14, 2026 security update (KB5083769), some Windows 11 computers started showing a blue screen asking for something called a "BitLocker recovery key." If this happened to you, your computer is not broken. It is asking for a security code to confirm you are the real owner.
 
 BitLocker is a security feature built into Windows 11 that encrypts (scrambles) everything on your hard drive. If Windows detects an unusual change — like a major security update — it sometimes asks you to prove you are the owner before letting you in. The good news: if your computer was ever connected to a Microsoft account, your recovery key was saved automatically. And you can get it from another device.
 
@@ -68,7 +68,7 @@ Do not panic, and do not pay anyone who calls offering to help. This is a genuin
       {
         title: 'Look for your recovery key on another device',
         content: 'On a phone, tablet, or another computer, go to account.microsoft.com/devices/recoverykey and sign in with the same Microsoft account you use on your PC. If your key was saved there (most computers set up in the last five years do this automatically), you will see a 48-digit number next to your device name. Write it down.',
-        tip: 'Not sure which Microsoft account? Look for any email from Microsoft confirming a past Windows setup or sign-in — it was sent to that account.',
+        tip: 'Not sure which Microsoft account? Look for any email from Microsoft confirming a past Windows setup or sign-in. It was sent to that account.',
       },
       {
         title: 'Type the recovery key on your locked computer',
@@ -164,7 +164,7 @@ Following Apple's iOS 18 release and Google's Android 15 update, many apps had t
       },
       {
         title: `Clear the app's cache (Android only)`,
-        content: 'On Android, go to Settings → Apps → tap the crashing app → Storage & Cache → tap "Clear Cache." This deletes temporary files the app stored — it does not delete your account, saved content, or settings. On iPhone, the equivalent is to delete and reinstall the app (see the next step) since iOS manages cache differently.',
+        content: 'On Android, go to Settings → Apps → tap the crashing app → Storage & Cache → tap "Clear Cache." This deletes temporary files the app stored. It does not delete your account, saved content, or settings. On iPhone, the equivalent is to delete and reinstall the app (see the next step) since iOS manages cache differently.',
         warning: 'Tap "Clear Cache" — not "Clear Data." Clearing data wipes the app back to a fresh install state and will log you out of your account.',
       },
       {

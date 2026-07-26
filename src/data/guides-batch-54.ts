@@ -194,7 +194,7 @@ The entire process takes only a couple of taps, and the original photo is never 
 
 With Preview's annotation tools, you can highlight text in yellow or other colors, add text boxes anywhere on the page, draw arrows and shapes to point out specific areas, and leave notes that look like sticky notes. These annotations are saved inside the file, so anyone who opens it later will see your markings.
 
-Preview is available on every Mac — you do not need to download anything. To open a file in Preview, you can double-click most PDF or image files and Preview will open automatically. If it opens in a different app, right-click the file, choose Open With, and select Preview.
+Preview is available on every Mac. You do not need to download anything. To open a file in Preview, you can double-click most PDF or image files and Preview will open automatically. If it opens in a different app, right-click the file, choose Open With, and select Preview.
 
 Annotations are stored as part of the document. If you share the PDF with someone else, they will see your highlights and notes when they open the file. If you need to send a clean copy without annotations, Preview also lets you export a flattened version where the annotations are burned in and cannot be edited — or you can remove them before exporting.
 
@@ -258,7 +258,7 @@ The whole process takes about two minutes once your signature is saved, and the 
       },
       {
         title: `Click the Signature Button`,
-        content: `In the Markup toolbar, click the signature button — it looks like a cursive letter with a line underneath it. A dropdown will appear showing any saved signatures. If this is your first time, you will see options to create a new signature.`,
+        content: `In the Markup toolbar, click the signature button. It looks like a cursive letter with a line underneath it. A dropdown will appear showing any saved signatures. If this is your first time, you will see options to create a new signature.`,
       },
       {
         title: `Create Your Signature`,
@@ -378,7 +378,7 @@ You can play directly in your web browser without downloading anything, or insta
     difficulty: `Beginner`,
     body: `Free mobile games are a great way to stay mentally active, pass the time, and have fun. The best games for people who are new to smartphones are ones that are straightforward to learn, do not require fast reflexes, and do not pressure you to spend money. This guide covers games across four popular categories: word games, number puzzles, card games, and trivia.
 
-All of the games mentioned here are available for free on both iPhone and Android. Some games include optional purchases (like removing ads or buying extra lives). But you can play them indefinitely without spending anything. If a game starts pushing too hard for purchases, it is fine to delete it and try something else — there are plenty of great free options.
+All of the games mentioned here are available for free on both iPhone and Android. Some games include optional purchases (like removing ads or buying extra lives). But you can play them indefinitely without spending anything. If a game starts pushing too hard for purchases, it is fine to delete it and try something else. There are plenty of great free options.
 
 Research has consistently found that playing games that involve thinking, memory, and strategy can help keep the mind sharp. Whether you enjoy Scrabble-style word games, solitaire, or simple number puzzles, there is a free mobile game out there that you will enjoy.
 
@@ -389,7 +389,7 @@ Many people find that starting their morning with a short word game or puzzle is
       {
         title: `Word Games`,
         content: `Wordle (free in any browser at nytimes.com/games/wordle) gives you one puzzle per day — guess a five-letter word in six tries. Wordscapes (free on App Store and Google Play) lets you form words from a set of letters to fill a crossword-style grid. Both are great for vocabulary and quiet concentration.`,
-        tip: `Quick Tip: Wordle requires no account and no app — you can play it in any web browser, which makes it one of the most accessible options.`,
+        tip: `Quick Tip: Wordle requires no account and no app. You can play it in any web browser, which makes it one of the most accessible options.`,
       },
       {
         title: `Number and Logic Puzzles`,
@@ -402,7 +402,7 @@ Many people find that starting their morning with a short word game or puzzle is
       },
       {
         title: `Trivia Games`,
-        content: `Trivia Crack (free on both platforms) lets you answer questions across six categories including science, entertainment, history, and sports. You can play against friends or random opponents at your own pace — there is no time pressure to answer in seconds if you choose the right mode.`,
+        content: `Trivia Crack (free on both platforms) lets you answer questions across six categories including science, entertainment, history, and sports. You can play against friends or random opponents at your own pace. There is no time pressure to answer in seconds if you choose the right mode.`,
       },
       {
         title: `Brain Training`,
@@ -469,7 +469,7 @@ These tips apply to most Samsung Galaxy phones released in the last few years, i
 
 Action Mode works by using more of the camera sensor than normal and then cropping and stabilizing the image in real time. The trade-off is that the video is slightly more zoomed in than standard video. And it works best in good lighting. In very low light, the stabilization may be less effective.
 
-The feature is available on iPhone 14, iPhone 14 Plus, iPhone 14 Pro, iPhone 14 Pro Max, and all newer models. It works on the main (rear) camera only, not the front-facing camera. You need to be using the standard video mode — it does not appear in Cinematic Mode or Slow Motion mode.
+The feature is available on iPhone 14, iPhone 14 Plus, iPhone 14 Pro, iPhone 14 Pro Max, and all newer models. It works on the main (rear) camera only, not the front-facing camera. You need to be using the standard video mode. It does not appear in Cinematic Mode or Slow Motion mode.
 
 Action Mode is ideal for recording children playing sports, walking tours, hiking videos, concerts, or any other situation where the camera is constantly moving. It produces results that would previously have required an expensive stabilizer device.
 
@@ -553,7 +553,7 @@ If you have an older Android phone, Google Photos may already be managing your c
     thumbnailEmoji: ``,
     publishedAt: `2026-04-19`,
     difficulty: `Beginner`,
-    body: `Your iPhone contacts are important — they contain the phone numbers and email addresses of everyone you know. If your phone is lost, stolen, or breaks, having a backup means you can get all of those contacts back on a new phone without starting from scratch.
+    body: `Your iPhone contacts are important. They contain the phone numbers and email addresses of everyone you know. If your phone is lost, stolen, or breaks, having a backup means you can get all of those contacts back on a new phone without starting from scratch.
 
 The safest and most automatic way to back up iPhone contacts is through iCloud. When iCloud Contacts sync is turned on, every contact you save is automatically copied to Apple's cloud servers. If you ever need to restore your phone or set up a new one, signing in to your Apple account will bring all your contacts back right away.
 
@@ -603,7 +603,7 @@ Audible is a subscription service that charges a monthly fee (around $15 per mon
 
 If you have never used Audible before, Amazon typically offers a free trial period (usually 30 days) that includes one or two free audiobook credits. You can use the free trial to get started without any upfront cost. And you can cancel before the trial ends if you decide it is not for you.
 
-You can also access Audible through an existing Amazon account, which most people already have. The app is free to download from the App Store or Google Play — you only pay for the subscription and the books.
+You can also access Audible through an existing Amazon account, which most people already have. The app is free to download from the App Store or Google Play. You only pay for the subscription and the books.
 
 For people who find reading on screens tiring, or who have difficulty reading small print, audiobooks can be a wonderful alternative. Many popular bestsellers, classic novels, self-help books, and biographies are available as audiobooks with excellent narrators.`,
     steps: [
@@ -748,7 +748,7 @@ Most Android phones are set up to sync contacts to Google automatically during t
 
 The process is slightly different depending on the brand of your Android phone (Samsung, Google Pixel, Motorola, etc.), but the general steps are the same across all Android devices. The settings are found either in the phone's main Settings app or inside the Google Contacts app.
 
-Google account sync uses very little data and runs in the background — you will not notice it happening. Any time you add, edit, or delete a contact on your phone, the change syncs to Google within a few minutes.`,
+Google account sync uses very little data and runs in the background. You will not notice it happening. Any time you add, edit, or delete a contact on your phone, the change syncs to Google within a few minutes.`,
     steps: [
       {
         title: `Open Settings on Your Android Phone`,
@@ -800,7 +800,7 @@ Excel on a phone can feel a little tight on a small screen because spreadsheets 
       },
       {
         title: `Sign In with a Free Microsoft Account`,
-        content: `Open the Excel app and tap Sign In. Enter your Microsoft account email and password. If you do not have one, tap Create Account and follow the steps — you can use any email address to create a free account. You do not need to buy anything.`,
+        content: `Open the Excel app and tap Sign In. Enter your Microsoft account email and password. If you do not have one, tap Create Account and follow the steps. You can use any email address to create a free account. You do not need to buy anything.`,
         tip: `Quick Tip: If you already have an Outlook.com, Hotmail, or Xbox account, you already have a Microsoft account and can use those same login details.`,
       },
       {
@@ -834,11 +834,11 @@ Excel on a phone can feel a little tight on a small screen because spreadsheets 
     difficulty: `Beginner`,
     body: `Google Meet is a free video calling service from Google. You can use it to have face-to-face conversations with friends and family anywhere in the world, hold virtual meetings, or join group calls with multiple people. It works on iPhone, Android phones, computers, and tablets.
 
-You do not need to download an app to use Google Meet on a computer — it works directly in a web browser. On a phone or tablet, the free Google Meet app from the App Store or Google Play gives the best experience.
+You do not need to download an app to use Google Meet on a computer. It works directly in a web browser. On a phone or tablet, the free Google Meet app from the App Store or Google Play gives the best experience.
 
 To use Google Meet, you need a Google account (Gmail is a Google account). Creating a Google account is free and takes only a few minutes if you do not have one already.
 
-Google Meet is different from some other video calling apps in one important way: you can start a meeting and share a link with anyone. The other person only needs to click the link to join — they do not need to have Google Meet installed or even a Google account in some cases. This makes it very convenient for connecting with people who use different apps or services.
+Google Meet is different from some other video calling apps in one important way: you can start a meeting and share a link with anyone. The other person only needs to click the link to join. They do not need to have Google Meet installed or even a Google account in some cases. This makes it very convenient for connecting with people who use different apps or services.
 
 The free version of Google Meet supports video calls with up to 100 participants and calls of up to 60 minutes for group meetings (one-on-one calls between two people have no time limit). For most personal and family use, the free tier is more than enough.
 

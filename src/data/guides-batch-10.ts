@@ -55,7 +55,7 @@ You earn "One Key" points on most bookings that can be used later for discounts 
     thumbnailEmoji: '',
     publishedAt: '2026-04-17',
     difficulty: 'Beginner',
-    body: `Kayak is a travel search site that checks hundreds of airlines and travel agencies at the same time and shows you the lowest prices. Like Google Flights, it does not sell tickets directly — it sends you to the site that has the best deal.
+    body: `Kayak is a travel search site that checks hundreds of airlines and travel agencies at the same time and shows you the lowest prices. Like Google Flights, it does not sell tickets directly. It sends you to the site that has the best deal.
 
 Kayak also has handy extras like a price forecast that tells you whether to book now or wait.`,
     steps: [
@@ -317,7 +317,7 @@ You can get a transcript free at IRS.gov in about 15 minutes — no need to requ
       { title: 'Create or sign in to ID.me', content: `The IRS uses a service called ID.me to verify your identity. You will upload a photo of your driver's license and take a selfie so ID.me can match them.` },
       { title: 'Pick the transcript you need', content: 'Once signed in, you will see several transcript types. For most lenders, pick "Return Transcript" and then the tax year they asked about. For income questions, pick "Wage and Income Transcript."' },
       { title: 'Download the PDF', content: 'The transcript opens as a PDF in your browser. Save it to your computer and either print it or email it to whoever asked for it.' },
-      { title: 'Know the alternatives', content: 'If online verification does not work, you can request a transcript by mail at irs.gov/transcript — it arrives in 5 to 10 days. You can also call 800-908-9946 for a mailed transcript.' },
+      { title: 'Know the alternatives', content: 'If online verification does not work, you can request a transcript by mail at irs.gov/transcript. It arrives in 5 to 10 days. You can also call 800-908-9946 for a mailed transcript.' },
     ],
   },
   // ── PET TECH ────────────────────────────────────────────────────────────────
@@ -333,7 +333,7 @@ You can get a transcript free at IRS.gov in about 15 minutes — no need to requ
     difficulty: 'Beginner',
     body: `An Apple AirTag is a small button-shaped tracker that pairs with your iPhone. Many pet owners clip one to their dog or cat's collar so they can find them if they wander off, using the Find My app on any iPhone.
 
-AirTags are not designed for pets — they do not have real-time GPS like a dedicated pet tracker (see Fi or Tractive). But they work well as an inexpensive backup in areas with lots of iPhones nearby.`,
+AirTags are not designed for pets. They do not have real-time GPS like a dedicated pet tracker (see Fi or Tractive). But they work well as an inexpensive backup in areas with lots of iPhones nearby.`,
     steps: [
       { title: 'Buy an AirTag and a pet-safe holder', content: 'AirTags cost about $29 each at any Apple store or Amazon. Buy a dedicated AirTag pet collar holder (about $10) — the standard keychain holder is not designed to survive a dog shaking or chewing.' },
       { title: 'Pair the AirTag with your iPhone', content: `Pull the plastic tab on the AirTag to start it. Hold it near your iPhone. A pop-up asks you to name it — pick something like "Buddy's Collar" — and tap Continue.` },
@@ -437,7 +437,7 @@ Most U.S. public libraries have Libby. If there is a waitlist for a popular titl
     thumbnailEmoji: '',
     publishedAt: '2026-04-17',
     difficulty: 'Beginner',
-    body: `Hoopla is a free app available through many public libraries. Unlike Libby, there are no waitlists — you can borrow any title right away, up to a monthly limit set by your library (often 5 to 10 items).
+    body: `Hoopla is a free app available through many public libraries. Unlike Libby, there are no waitlists. You can borrow any title right away, up to a monthly limit set by your library (often 5 to 10 items).
 
 It has more than just books: you can watch movies, TV shows, listen to music, and read comics.`,
     steps: [
@@ -527,7 +527,7 @@ It is free to join groups as a member. Some events are free, some charge a small
 It is especially popular after a move to a new city or after life changes like retirement or a divorce when old friend circles shift.`,
     steps: [
       { title: 'Download Bumble', content: 'Install the free Bumble app from the App Store or Play Store. Sign up with your phone number and create a basic profile with 3 to 6 photos and a short bio.' },
-      { title: 'Switch to BFF mode', content: 'On the home screen, tap the mode button at the top — it might say "Date" by default. Switch it to "BFF." Your profile now only shows to people looking for friends.' },
+      { title: 'Switch to BFF mode', content: 'On the home screen, tap the mode button at the top. It might say "Date" by default. Switch it to "BFF." Your profile now only shows to people looking for friends.' },
       { title: 'Write a friendly bio', content: 'Describe what you are looking for ("new-in-town hiking buddies," "book club friends," "coffee and board games"). List 3 hobbies. Avoid anything that sounds romantic since this is friend-only.' },
       { title: 'Swipe and match', content: 'Swipe right on people whose profiles sound like a good match. If they swipe right on you too, it is a match and you can message each other.' },
       { title: 'Meet up for coffee', content: 'After a few back-and-forth messages, suggest a low-pressure first meet — coffee, a dog park, or a yoga class. Meet in a public place and tell someone where you are going, same as any first meeting with someone online.' },
@@ -569,7 +569,7 @@ Most groups are great for getting advice and meeting like-minded people, but sca
 
 Subscriptions cost around $80 a month. That covers the tablet, unlimited data, and 24/7 phone support when something goes wrong.`,
     steps: [
-      { title: 'Order the GrandPad', content: 'Go to grandpad.net or call 800-704-9412. Pick a subscription and the color. A family member is usually set as the "Care Circle Leader" — they get admin access through their own free app.' },
+      { title: 'Order the GrandPad', content: 'Go to grandpad.net or call 800-704-9412. Pick a subscription and the color. A family member is usually set as the "Care Circle Leader". They get admin access through their own free app.' },
       { title: 'Turn it on and sign in', content: 'GrandPads arrive already set up. Press the power button on top. The tablet walks the user through a quick tutorial — how to tap a button and scroll a list.' },
       { title: 'Add family members', content: 'The Care Circle Leader opens the Companion App on their phone and invites other family members by email. Only Care Circle members can call, message, or share photos with the GrandPad.' },
       { title: 'Make a video call', content: 'On the GrandPad, tap Video Chat. All Care Circle members appear as big buttons with their photo. Tap any person to ring their phone or computer.' },
@@ -633,7 +633,7 @@ Membership costs about $16 a year and often pays for itself with a few restauran
 Unlike general finance apps, Silvur focuses on retirement-specific questions like "Should I claim Social Security at 62 or wait until 67?"`,
     steps: [
       { title: 'Download Silvur', content: 'Install the Silvur app from the App Store or Play Store. Create an account with your email and a password. Basic features are free. Premium tools cost about $10/month.' },
-      { title: 'Enter your retirement age goal', content: 'Silvur will ask when you plan to retire and what your expected monthly expenses are. It is fine to estimate — you can adjust this later.' },
+      { title: 'Enter your retirement age goal', content: 'Silvur will ask when you plan to retire and what your expected monthly expenses are. It is fine to estimate. You can adjust this later.' },
       { title: 'Link your accounts', content: 'Silvur uses Plaid (a secure bank-connection service) to pull balances from your 401(k), IRA, and bank accounts. This is read-only — Silvur cannot move or withdraw money.' },
       { title: 'Run the Retirement Score', content: 'Tap "Retirement Score" to see a single number from 0 to 100 showing how ready you are. Below that, Silvur shows a year-by-year projection of income and spending.' },
       { title: 'Try the Social Security optimizer', content: 'Tap "Social Security" to see how much more you could collect over a lifetime by waiting to claim. For most people, waiting until 67 or 70 gives a much larger lifetime total — Silvur calculates the exact number for your situation.' },
@@ -658,7 +658,7 @@ Even if you have an older Instant Pot, the recipes alone are worth downloading t
       { title: 'Search for recipes', content: 'Type any main ingredient ("chicken," "rice," "chili") and the app shows tested recipes with cook times, ingredient lists, and photos. Each recipe says which size Instant Pot it works for.' },
       { title: 'Save favorites', content: 'Tap the heart on any recipe to save it. Your saved list becomes your personal cookbook that you can pull up anytime, even offline.' },
       { title: 'Connect a Smart model', content: 'If your Instant Pot is a Smart model (Pro Plus or Duo Crisp with Wi-Fi), tap "Add Device" in the app. Hold your phone near the cooker and follow the pairing instructions to link it.' },
-      { title: 'Start a cook from the app', content: 'With a connected cooker, pick a recipe and tap "Send to cooker." The Instant Pot sets the time and pressure automatically — you still have to add the ingredients and press Start on the cooker itself.' },
+      { title: 'Start a cook from the app', content: 'With a connected cooker, pick a recipe and tap "Send to cooker." The Instant Pot sets the time and pressure automatically. You still have to add the ingredients and press Start on the cooker itself.' },
     ],
   },
   {
@@ -698,7 +698,7 @@ This only works if the coffee maker has Wi-Fi built in. Older Keurigs do not con
     steps: [
       { title: 'Confirm your coffee maker is smart', content: 'Check the model name on the front of the machine and in the manual. Look for "Smart" in the name or a Wi-Fi symbol on the top panel. If not, these steps will not apply to your machine.' },
       { title: `Download the brand's app`, content: 'Install Keurig from the App Store or Play Store (for Keurig K-Supreme Plus Smart), or Nespresso from the App Store or Play Store for Nespresso machines.' },
-      { title: 'Pair the coffee maker', content: 'Plug in the coffee maker. Open the app and tap "Add Device." Follow the on-screen prompts — you will press a button on the machine to put it in pairing mode, then select your Wi-Fi network.' },
+      { title: 'Pair the coffee maker', content: 'Plug in the coffee maker. Open the app and tap "Add Device." Follow the on-screen prompts. You will press a button on the machine to put it in pairing mode, then select your Wi-Fi network.' },
       { title: 'Customize your favorites', content: 'In the app, pick your regular K-Cup or Nespresso pod and set your preferred cup size, brew temperature, and strength. The machine remembers these settings for next time.' },
       { title: 'Brew from bed', content: 'Put a fresh pod in and a mug under the spout the night before. In the morning, tap "Brew" in the app. Your coffee will be ready by the time you get to the kitchen.' },
     ],
@@ -722,7 +722,7 @@ You see the Tasker's hourly rate and reviews before you book. Payments are handl
       { title: 'Pick a task category', content: 'Tap "New task" and pick the category — Furniture Assembly, Moving Help, Handyman, Cleaning, Yard Work, or General Help. Each category has different hourly rates.' },
       { title: 'Describe your job', content: 'Write what needs to be done in plain language. Add how many hours you think it will take (most Taskers have a 1-hour minimum). Attach a photo of the item or the space.' },
       { title: 'Pick a Tasker', content: 'The app shows nearby Taskers with their hourly rate, reviews, and completed jobs. Stick with Taskers who have 4.8 stars or higher and at least 50 completed jobs for reliability.' },
-      { title: 'Meet, review, and tip', content: 'The Tasker arrives at your chosen time. Pay through the app when the job is done — you can add a tip. Leave a review so the next customer knows what to expect.' },
+      { title: 'Meet, review, and tip', content: 'The Tasker arrives at your chosen time. Pay through the app when the job is done. You can add a tip. Leave a review so the next customer knows what to expect.' },
     ],
   },
   {
@@ -801,7 +801,7 @@ Basic searching is free, but the detailed records and DNA matching require a sub
     difficulty: 'Intermediate',
     body: `FamilySearch is the free alternative to Ancestry, run as a public service by the Church of Jesus Christ of Latter-day Saints. It has billions of indexed records and a shared public family tree where everyone collaborates on the same tree.
 
-Because the tree is shared, you can often find ancestors already researched by distant relatives — you need to connect your branch to theirs.`,
+Because the tree is shared, you can often find ancestors already researched by distant relatives. You need to connect your branch to theirs.`,
     steps: [
       { title: 'Create a free account', content: 'Go to familysearch.org and click "Create a free account." Enter your name and email. You do not need to be a church member — the site is open to everyone.' },
       { title: 'Enter your parents and grandparents', content: 'Tap "Family Tree" then "Add Parent" or "Add Spouse" to start filling in what you know. Names, birth dates, places, and relationships are the key fields.' },

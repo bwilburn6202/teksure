@@ -21,7 +21,7 @@ export const guidesBatch321: Guide[] = [
       {
         title: "Turn on Silence Unknown Callers (iPhone)",
         content: "Open Settings, scroll down and tap Phone, then tap \"Silence Unknown Callers.\" Turn this on and calls from numbers not in your contacts will go straight to voicemail without ringing.",
-        tip: "Voicemails still come through, so you won't miss anything truly important — you just won't be interrupted by the ring.",
+        tip: "Voicemails still come through, so you won't miss anything truly important. You just won't be interrupted by the ring.",
       },
       {
         title: "Turn on Caller ID & Spam Protection (Android)",
@@ -98,7 +98,7 @@ export const guidesBatch321: Guide[] = [
       },
       {
         title: "Start a Google Meet call (works on any device)",
-        content: "Open a web browser and go to meet.google.com, or open the Google Meet app on Android. Tap \"New meeting,\" then \"Share\" and send the link to whoever you want to join — they can click it from any phone or computer, even without a Google account.",
+        content: "Open a web browser and go to meet.google.com, or open the Google Meet app on Android. Tap \"New meeting,\" then \"Share\" and send the link to whoever you want to join. They can click it from any phone or computer, even without a Google account.",
       },
       {
         title: "Join a video call from a link someone sent you",

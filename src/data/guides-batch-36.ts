@@ -85,7 +85,7 @@ The app is free to download and use. Listing items is free — you only pay when
       },
       {
         title: 'Price your item',
-        content: `Search Poshmark for the same or similar item and filter by "Sold" to see what others got for it. Price your item 10-20% higher than your minimum so there's room to accept offers. Poshmark lets buyers make offers — you can accept, decline, or counter.`,
+        content: `Search Poshmark for the same or similar item and filter by "Sold" to see what others got for it. Price your item 10-20% higher than your minimum so there's room to accept offers. Poshmark lets buyers make offers. You can accept, decline, or counter.`,
       },
       {
         title: 'Ship when something sells',
@@ -114,7 +114,7 @@ The app is free to download and use. Listing items is free — you only pay when
 
 Unlike eBay, Mercari doesn't require an auction. You set a fixed price, and when someone buys, you ship it. The app is available on iPhone, Android, and the web at mercari.com.
 
-Mercari charges sellers a 10% fee plus a small payment processing fee on each completed sale — there are no listing fees. So it costs nothing to post an item. You can list something in about 2 minutes using your phone's camera.
+Mercari charges sellers a 10% fee plus a small payment processing fee on each completed sale. There are no listing fees. So it costs nothing to post an item. You can list something in about 2 minutes using your phone's camera.
 
 The platform handles payment processing and provides prepaid shipping labels for most items. Once a sale is confirmed by the buyer, your earnings are deposited to your Mercari balance, which you can transfer to your bank account or use to purchase other items.
 
@@ -221,7 +221,7 @@ Smart locks are especially helpful for people who forget to lock the door, want 
       },
       {
         title: 'Remove the old deadbolt interior piece',
-        content: 'The August lock installs on the interior side of your door — you keep your existing exterior hardware and keys. Use a screwdriver to remove the two screws on the inside of your deadbolt. Keep your existing key cylinder on the outside. The new lock attaches in its place using the same screw holes.',
+        content: 'The August lock installs on the interior side of your door. You keep your existing exterior hardware and keys. Use a screwdriver to remove the two screws on the inside of your deadbolt. Keep your existing key cylinder on the outside. The new lock attaches in its place using the same screw holes.',
         warning: 'Do not begin installation with the door locked. Make sure the door is open before removing the old deadbolt interior.',
       },
       {
@@ -329,7 +329,7 @@ The app also has an "Angi Services" feature where you can book pre-priced jobs l
       },
       {
         title: 'Book and confirm',
-        content: `Once you've chosen a pro, book the appointment through the app. Angi sends a confirmation with the pro's contact information. Save this confirmation. After the job is done, leave a review — it helps other homeowners in your community find trustworthy help.`,
+        content: `Once you've chosen a pro, book the appointment through the app. Angi sends a confirmation with the pro's contact information. Save this confirmation. After the job is done, leave a review. It helps other homeowners in your community find trustworthy help.`,
       },
     ],
   },
@@ -408,7 +408,7 @@ If you're planning a trip to another country, have family members who speak anot
       },
       {
         title: 'Start the free trial',
-        content: `Babbel offers a 20-day free trial. Tap "Try Free" to begin — you don't need to enter a credit card. This gives you access to the first course in your chosen language. After the trial, a subscription is required to continue.`,
+        content: `Babbel offers a 20-day free trial. Tap "Try Free" to begin. You don't need to enter a credit card. This gives you access to the first course in your chosen language. After the trial, a subscription is required to continue.`,
         tip: `If you prefer a completely free option, Duolingo offers basic language learning at no cost. Babbel's paid model goes deeper into grammar and practical phrases.`,
       },
       {
@@ -485,7 +485,7 @@ Citizen does not replace calling 911 in an emergency — it's an information too
     difficulty: 'Beginner',
     body: `Neighbors is a free community safety app made by Ring (owned by Amazon). It's a neighborhood watch platform where local residents, businesses, and law enforcement share safety information, video clips from security cameras, and alerts about suspicious activity.
 
-Anyone can use the Neighbors app for free — you do not need to own a Ring doorbell or camera. You can post text alerts about things you've seen, view posts from neighbors nearby, and follow updates about incidents in your area.
+Anyone can use the Neighbors app for free. You do not need to own a Ring doorbell or camera. You can post text alerts about things you've seen, view posts from neighbors nearby, and follow updates about incidents in your area.
 
 If you do have a Ring device, you can optionally share clips from your camera to the community feed when relevant — for example, footage of a package theft or someone trying door handles at night. Sharing is always optional and you control what's posted.
 
@@ -682,7 +682,7 @@ Screen mirroring is great for showing vacation photos on the big screen, video c
       },
       {
         title: 'Open Control Center',
-        content: 'On your iPhone, swipe down from the top right corner of the screen to open Control Center. (On older iPhones with a Home button, swipe up from the bottom.) Look for the "Screen Mirroring" button — it looks like two overlapping rectangles.',
+        content: 'On your iPhone, swipe down from the top right corner of the screen to open Control Center. (On older iPhones with a Home button, swipe up from the bottom.) Look for the "Screen Mirroring" button. It looks like two overlapping rectangles.',
       },
       {
         title: 'Select your TV',
@@ -822,7 +822,7 @@ Deleting accounts takes some time, but it's one of the most effective privacy ac
       {
         title: 'Delete easy accounts first',
         content: 'For easy deletions, follow the link from JustDeleteMe directly to the deletion page. You may need to log in first to access the deletion option. Look for phrases like "Delete Account," "Close Account," or "Deactivate Account" in your account Settings. Confirm the deletion when prompted.',
-        warning: 'Some services make it very hard to delete accounts — they may only let you deactivate (which keeps your data) rather than fully delete. For the best privacy protection, look for the actual "Delete" option, not just "Deactivate."',
+        warning: 'Some services make it very hard to delete accounts. They may only let you deactivate (which keeps your data) rather than fully delete. For the best privacy protection, look for the actual "Delete" option, not just "Deactivate."',
       },
       {
         title: 'Handle difficult cases',
@@ -897,7 +897,7 @@ Live Voicemail works even if your voicemail is set up through your carrier's sta
 
 The feature is available on iPhone running iOS 17 or later and requires a carrier that supports Visual Voicemail (all major US carriers do — AT&T, Verizon, T-Mobile, and most regional carriers).
 
-Live Voicemail is turned on by default in iOS 17 and later — you likely already have it without knowing.`,
+Live Voicemail is turned on by default in iOS 17 and later. You likely already have it without knowing.`,
     steps: [
       {
         title: 'Check if Live Voicemail is enabled',
@@ -914,7 +914,7 @@ Live Voicemail is turned on by default in iOS 17 and later — you likely alread
       {
         title: 'Pick up if needed',
         content: 'If you decide the call is worth taking while the voicemail is being recorded, tap the green "Pick Up" button at the top of the screen. The call connects right away and the caller is brought into a live conversation. This lets you screen calls without fully missing them.',
-        tip: 'This is especially useful for calls from unknown numbers — you can screen out robocalls while picking up calls from real people like doctors, repair companies, or delivery services.',
+        tip: 'This is especially useful for calls from unknown numbers. You can screen out robocalls while picking up calls from real people like doctors, repair companies, or delivery services.',
       },
       {
         title: 'Listen to or read saved voicemails',

@@ -500,7 +500,7 @@ In the same Medical ID screen, you can fill in:
 - Blood type
 - Medications you're taking
 
-Emergency responders can see this information from your lock screen without needing your password — it can save your life.
+Emergency responders can see this information from your lock screen without needing your password. It can save your life.
 
 **How to set up fall detection (Apple Watch users):**
 
@@ -599,7 +599,7 @@ Open Google Photos or your Gallery app and delete duplicates, blurry shots, and 
 
 **Step 2: Clear app caches**
 
-Apps store temporary files ("cache") that can build up over time. Clearing the cache is safe — it doesn't delete your data, just temporary files.
+Apps store temporary files ("cache") that can build up over time. Clearing the cache is safe. It doesn't delete your data, just temporary files.
 
 Go to Settings → Storage → Other Apps (or Apps). Tap any app → Storage → "Clear Cache."
 

@@ -25,7 +25,7 @@ The app is free to download and the basic account features cost nothing. Some ad
     steps: [
       {
         title: `Download and create your FordPass account`,
-        content: `Open the App Store (iPhone) or Google Play Store (Android) and search for "FordPass." Download the official app — it has a blue oval Ford logo. Open the app and tap "Create Account." Enter your name, email address, and a password you choose. Ford will send a confirmation email — open it and click the link to verify your address before moving on.`,
+        content: `Open the App Store (iPhone) or Google Play Store (Android) and search for "FordPass." Download the official app. It has a blue oval Ford logo. Open the app and tap "Create Account." Enter your name, email address, and a password you choose. Ford will send a confirmation email — open it and click the link to verify your address before moving on.`,
         tip: `Use an email address you check regularly. Ford sends important alerts and account messages there.`,
       },
       {
@@ -122,7 +122,7 @@ The app shows charging stations on an interactive map, color-coded by charger ty
 
 When you tap a station, you can see the most recent activity. If a driver checked in within the last few hours and reported success, that is a strong indicator the charger is working. If the most recent comments say "out of order" or "only 2 of 4 plugs working," you know to have a backup plan. This kind of live community data is something no official charging network app provides.
 
-PlugShare also lets you add home chargers to the map. Some EV owners share their home Level 2 outlet with other drivers — you can contact them through the app to request access and arrange a time. This is particularly useful in rural areas where public charging is sparse.
+PlugShare also lets you add home chargers to the map. Some EV owners share their home Level 2 outlet with other drivers. You can contact them through the app to request access and arrange a time. This is particularly useful in rural areas where public charging is sparse.
 
 The app is free and requires no account to browse the map. Creating a free account lets you leave check-ins, save favorite stations, and filter for stations that accept your specific vehicle's connector type. There is no paid tier — the app earns revenue through its relationship with charging networks, not from users.
 
@@ -163,7 +163,7 @@ Whether you are a new EV owner figuring out your neighborhood charging options o
     thumbnailEmoji: ``,
     publishedAt: `2026-04-20`,
     difficulty: `Beginner`,
-    body: `ChargePoint operates the largest electric vehicle charging network in the United States, with more than 30,000 charging locations spread across workplaces, shopping centers, hotels, parking garages, and public lots. The free ChargePoint app is your control center for finding and using those stations — you can locate chargers near you, start a charging session, monitor your charge in real time, and pay all from your phone.
+    body: `ChargePoint operates the largest electric vehicle charging network in the United States, with more than 30,000 charging locations spread across workplaces, shopping centers, hotels, parking garages, and public lots. The free ChargePoint app is your control center for finding and using those stations. You can locate chargers near you, start a charging session, monitor your charge in real time, and pay all from your phone.
 
 Getting started with ChargePoint requires creating a free account and adding a payment method. Once that is set up, starting a charge is as quick as pulling up the app, finding the station you are at, and tapping "Start Charging." Many ChargePoint stations also accept tap-to-pay credit or debit cards directly at the unit without using the app, which is handy if your phone battery is low.
 
@@ -194,7 +194,7 @@ ChargePoint stations are mostly Level 2, which adds roughly 15 to 30 miles of ra
       },
       {
         title: `Monitor and stop your session`,
-        content: `You do not need to stay in the app while charging — it will send you a notification when your vehicle is nearly full or when the session is complete. To end a session early, open the app, go to your active session, and tap "Stop Charging." Wait for the charger to release the plug (you may hear a click) before pulling the connector out. The total cost for the session is charged to your payment method automatically.`,
+        content: `You do not need to stay in the app while charging. It will send you a notification when your vehicle is nearly full or when the session is complete. To end a session early, open the app, go to your active session, and tap "Stop Charging." Wait for the charger to release the plug (you may hear a click) before pulling the connector out. The total cost for the session is charged to your payment method automatically.`,
         tip: `ChargePoint stations often have a fee for staying parked after your car is finished charging, called an "idle fee." Check the station details in the app so you know when to return to your vehicle.`,
       },
     ],
@@ -279,7 +279,7 @@ If you value supporting musicians directly and owning your music rather than ren
       },
       {
         title: `Buy an album or song`,
-        content: `On any artist or album page, you will see a price listed — often "name your price" (meaning you can pay any amount, including the minimum shown) or a fixed price. Click "Buy Digital Album" and enter the amount you want to pay if it is flexible. Then enter your payment information (credit card or PayPal). Bandcamp does not store your card details for future purchases — you enter payment information each time, which some people prefer for privacy.`,
+        content: `On any artist or album page, you will see a price listed — often "name your price" (meaning you can pay any amount, including the minimum shown) or a fixed price. Click "Buy Digital Album" and enter the amount you want to pay if it is flexible. Then enter your payment information (credit card or PayPal). Bandcamp does not store your card details for future purchases. You enter payment information each time, which some people prefer for privacy.`,
         tip: `"Name your price" does not mean you must pay extra. Pay the minimum if your budget is tight — the artist still receives a lot more than they would from a streaming service.`,
       },
       {
@@ -521,7 +521,7 @@ Pairing with the Bose Music app lets you customize the noise cancellation experi
       {
         title: `Use the right earcup controls for playback`,
         content: `The right earcup has touch-sensitive areas for controlling music. Swipe forward on the right earcup to skip to the next track, swipe back to go to the previous track, swipe up to raise volume, and swipe down to lower it. Tap once in the center to pause or resume playback. These controls work with any music or podcast app on your phone. Pressing the volume up or down quickly also works on the physical buttons on the right earcup edge.`,
-        tip: `During a phone call, tap once to answer an incoming call and tap once again to hang up. You can speak normally into the integrated microphones — there is no need to hold the headphones or your phone.`,
+        tip: `During a phone call, tap once to answer an incoming call and tap once again to hang up. You can speak normally into the integrated microphones. There is no need to hold the headphones or your phone.`,
       },
     ],
   },
@@ -539,7 +539,7 @@ Pairing with the Bose Music app lets you customize the noise cancellation experi
 
 Setup is done through the Alexa app on your smartphone. The process takes about 10 minutes, and once complete, your Echo Dot is ready to answer questions the moment you say "Alexa." You do not need to press any button — Alexa is always listening for its wake word, though it only records and processes audio after it hears "Alexa."
 
-The Echo Dot connects to your existing Wi-Fi network. It does not require a separate internet plan or a subscription — it uses the same internet connection you already have at home. Some features, like Amazon Music without ads, do require an Amazon Prime membership or a separate Amazon Music Unlimited subscription, but the basic features — weather, timers, alarms, questions and answers, and smart home control — are completely free.
+The Echo Dot connects to your existing Wi-Fi network. It does not require a separate internet plan or a subscription. It uses the same internet connection you already have at home. Some features, like Amazon Music without ads, do require an Amazon Prime membership or a separate Amazon Music Unlimited subscription, but the basic features — weather, timers, alarms, questions and answers, and smart home control — are completely free.
 
 Privacy is a common question about Echo devices. The microphone can be physically muted by pressing the button on the top of the device — a red light confirms that Alexa cannot hear anything. You can also review and delete your voice history in the Alexa app at any time under Settings > Alexa Privacy.
 
@@ -554,7 +554,7 @@ After getting your Echo Dot working, the best way to discover its capabilities i
       },
       {
         title: `Learn the wake word and basic controls`,
-        content: `Say "Alexa" clearly to wake the device — you will see a blue light ring appear. Then speak your request. Alexa processes the request in the cloud and responds through the speaker. To stop Alexa mid-response, say "Alexa, stop." To adjust volume, say "Alexa, volume 5" (scale of 1–10). The top of the device has physical buttons: a microphone mute button (turns the ring red), a volume up button, a volume down button, and an action button (the dot on top) for waking Alexa or ending an alarm.`,
+        content: `Say "Alexa" clearly to wake the device. You will see a blue light ring appear. Then speak your request. Alexa processes the request in the cloud and responds through the speaker. To stop Alexa mid-response, say "Alexa, stop." To adjust volume, say "Alexa, volume 5" (scale of 1–10). The top of the device has physical buttons: a microphone mute button (turns the ring red), a volume up button, a volume down button, and an action button (the dot on top) for waking Alexa or ending an alarm.`,
       },
       {
         title: `Try these 10 first voice commands`,
@@ -764,9 +764,9 @@ Privacy controls are built in. The microphone button on the side of the Nest Min
     difficulty: `Beginner`,
     body: `Microsoft Copilot is an artificial intelligence assistant built directly into Windows 11 and Microsoft 365 applications like Word, Excel, PowerPoint, and Outlook. It can answer questions, help you write and edit documents, summarize long emails, explain data in spreadsheets, and generate images — all without leaving the apps you already use.
 
-The name "Copilot" reflects Microsoft's approach: the AI is designed to work alongside you rather than replace your decision-making. You remain in control of what gets written, saved, or sent. Copilot makes suggestions, drafts content, and explains things — you decide what to keep.
+The name "Copilot" reflects Microsoft's approach: the AI is designed to work alongside you rather than replace your decision-making. You remain in control of what gets written, saved, or sent. Copilot makes suggestions, drafts content, and explains things. You decide what to keep.
 
-There are two versions of Copilot. The free version is available to anyone with a Microsoft account at copilot.microsoft.com or through the Windows 11 taskbar button. It works like an advanced chatbot — you type questions or requests and it responds with detailed answers. This version can browse the internet for current information (unlike some AI tools that have a knowledge cutoff), generate images through Microsoft Designer, and help with general writing tasks.
+There are two versions of Copilot. The free version is available to anyone with a Microsoft account at copilot.microsoft.com or through the Windows 11 taskbar button. It works like an advanced chatbot. You type questions or requests and it responds with detailed answers. This version can browse the internet for current information (unlike some AI tools that have a knowledge cutoff), generate images through Microsoft Designer, and help with general writing tasks.
 
 The paid version, called Copilot for Microsoft 365, is a subscription (typically $30 per user per month, sold through business plans) that integrates Copilot deeply into Word, Excel, PowerPoint, Outlook, and Teams. With this version, you can open a document and ask Copilot to summarize it, rewrite a section in a different tone, or create a PowerPoint presentation from your written notes. Inside Outlook, it can summarize long email threads and draft replies.
 
@@ -776,7 +776,7 @@ Copilot in Windows 11 is accessible by pressing the Windows key + C on your keyb
     steps: [
       {
         title: `Access Copilot in Windows 11`,
-        content: `On a Windows 11 computer, look for the Copilot icon in the taskbar — it looks like a colorful circle or sparkle symbol. Click it, or press the Windows key + C on your keyboard. A panel slides open on the right side of your screen. If you do not see the icon, go to Settings > Personalization > Taskbar and make sure Copilot is toggled on. Sign in with your Microsoft account when prompted to access the full feature set.`,
+        content: `On a Windows 11 computer, look for the Copilot icon in the taskbar. It looks like a colorful circle or sparkle symbol. Click it, or press the Windows key + C on your keyboard. A panel slides open on the right side of your screen. If you do not see the icon, go to Settings > Personalization > Taskbar and make sure Copilot is toggled on. Sign in with your Microsoft account when prompted to access the full feature set.`,
         tip: `You can also access the full Copilot experience in any web browser by going to copilot.microsoft.com — this works on Mac, iPhone, and Android too, not only Windows.`,
       },
       {
@@ -866,7 +866,7 @@ One notable feature of Meta AI is image generation. In any chat with Meta AI, ty
 
 Meta AI also has a standalone website at meta.ai where you can use it in a web browser without the social media context. This is useful for people who want AI help without opening a social media app.
 
-A few limitations to be aware of: Meta AI does not have access to your personal messages or posts by default — it exists as a separate chat participant. It does not know your account history or past conversations with friends. Each new conversation with Meta AI starts fresh, similar to other AI chatbot services. Also, responses from Meta AI are generated by a machine and should be verified for accuracy, especially for health, legal, or financial matters.`,
+A few limitations to be aware of: Meta AI does not have access to your personal messages or posts by default. It exists as a separate chat participant. It does not know your account history or past conversations with friends. Each new conversation with Meta AI starts fresh, similar to other AI chatbot services. Also, responses from Meta AI are generated by a machine and should be verified for accuracy, especially for health, legal, or financial matters.`,
     steps: [
       {
         title: `Find Meta AI inside Facebook or Messenger`,
@@ -917,7 +917,7 @@ For users already on X who want an AI assistant without switching to another pla
     steps: [
       {
         title: `Access Grok inside the X app`,
-        content: `Open the X app on your phone (formerly Twitter — the icon is a black X) or go to x.com in your web browser. Sign in with your account. Look for the Grok icon in the navigation — it appears as a sparkling or star-like symbol in the left sidebar on the website, or in the bottom navigation bar on the app. Tap it to open the Grok chat interface. If you have a basic X account, you will have limited access. Upgrading to X Premium unlocks the full Grok experience.`,
+        content: `Open the X app on your phone (formerly Twitter — the icon is a black X) or go to x.com in your web browser. Sign in with your account. Look for the Grok icon in the navigation. It appears as a sparkling or star-like symbol in the left sidebar on the website, or in the bottom navigation bar on the app. Tap it to open the Grok chat interface. If you have a basic X account, you will have limited access. Upgrading to X Premium unlocks the full Grok experience.`,
         tip: `You can also access Grok directly at grok.com without an X account. Create a free xAI account with your email address and you get access to a capable version of Grok at no cost.`,
       },
       {

@@ -126,7 +126,7 @@ export const guidesBatch275: Guide[] = [
       },
       {
         title: "Reassess at the end of the plan and ask about maintenance",
-        content: "At the final visit, the therapist will measure your strength and pain again. Ask three questions: What exercises should I keep doing forever? What are signs that I need to come back? Am I a candidate for a yearly check-in visit? Medicare does cover periodic re-evaluations when medical necessity returns (a flare-up, a fall, a new diagnosis). Save the home program packet — you may need it again in six months.",
+        content: "At the final visit, the therapist will measure your strength and pain again. Ask three questions: What exercises should I keep doing forever? What are signs that I need to come back? Am I a candidate for a yearly check-in visit? Medicare does cover periodic re-evaluations when medical necessity returns (a flare-up, a fall, a new diagnosis). Save the home program packet. You may need it again in six months.",
       },
     ],
   },
@@ -186,7 +186,7 @@ export const guidesBatch275: Guide[] = [
     steps: [
       {
         title: "Confirm your chronic low back pain qualifies for Medicare acupuncture",
-        content: "Three rules apply. First, the pain must be in the lower back. Sciatica that runs down a leg from a lower-back source counts. Pain in the neck, mid-back, or shoulders does not. Second, the pain must have lasted at least 12 weeks. Third, there must not be a clear specific cause such as an infection, tumor, or recent injury. Your doctor documents the diagnosis as chronic low back pain on the referral. Bring your pain log from the first guide in this batch — it documents the 12-week duration in writing.",
+        content: "Three rules apply. First, the pain must be in the lower back. Sciatica that runs down a leg from a lower-back source counts. Pain in the neck, mid-back, or shoulders does not. Second, the pain must have lasted at least 12 weeks. Third, there must not be a clear specific cause such as an infection, tumor, or recent injury. Your doctor documents the diagnosis as chronic low back pain on the referral. Bring your pain log from the first guide in this batch. It documents the 12-week duration in writing.",
       },
       {
         title: "Find a Medicare-enrolled acupuncturist",

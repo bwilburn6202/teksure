@@ -71,7 +71,7 @@ Search "Venmo" in the App Store (iPhone) or Google Play Store (Android) and inst
 Open the app, tap "Sign Up," and follow the prompts to create an account with your email address and phone number. You will need to verify your phone number.
 
 **Step 3 — Link a payment method**
-Go to your Venmo profile, tap "Settings," then "Payment Methods." Add a bank account or debit card. Venmo will make two small test deposits in your bank account within a day or two — you confirm those amounts inside Venmo to verify the connection.
+Go to your Venmo profile, tap "Settings," then "Payment Methods." Add a bank account or debit card. Venmo will make two small test deposits in your bank account within a day or two. You confirm those amounts inside Venmo to verify the connection.
 
 **Step 4 — Find the person you want to pay**
 Tap the blue "Pay or Request" button. Search for the person by their Venmo username, phone number, or email address. Always confirm the profile photo and name match the person you intend to pay before proceeding.
@@ -110,7 +110,7 @@ Both apps are protected by your phone's lock screen. Keep your phone locked with
 If you sent money to the wrong person or wrong amount:
 
 - **Zelle:** Contact your bank right away. If the recipient has not yet enrolled in Zelle, you may be able to cancel the transfer. Once enrolled, cancellation is not guaranteed, but your bank can attempt to retrieve the funds.
-- **Venmo:** You can request the money back by opening the transaction, tapping the three dots, and selecting "Request." This sends a polite payment request to the other person — they are not required to return it, but many people will if it was a genuine mistake.
+- **Venmo:** You can request the money back by opening the transaction, tapping the three dots, and selecting "Request." This sends a polite payment request to the other person. They are not required to return it, but many people will if it was a genuine mistake.
 
 In both cases, acting quickly gives you the best chance of recovery. Save screenshots of any transaction you are disputing.
 
@@ -234,7 +234,7 @@ If a specific number keeps calling you, block it directly:
 
 That number will never be able to call, FaceTime, or text you again. You can review and remove blocked numbers anytime under **Settings → Phone → Blocked Contacts**.
 
-Note: if a robocaller is spoofing numbers (using a different number each time), blocking individual numbers is less effective — they will call again from a different number. In that case, Silence Unknown Callers or a filtering app like Nomorobo will serve you better.
+Note: if a robocaller is spoofing numbers (using a different number each time), blocking individual numbers is less effective. They will call again from a different number. In that case, Silence Unknown Callers or a filtering app like Nomorobo will serve you better.
 
 ---
 
@@ -286,7 +286,7 @@ The safest response to any suspicious call: hang up. You can always call back us
       {
         title: 'Install a call-filtering app for stronger protection',
         content: 'Open the App Store and search for "Nomorobo" (free tier available). Download and open it, then follow the in-app setup instructions. After setup, go to Settings → Phone → Call Blocking & Identification and turn on the Nomorobo toggle. Your iPhone will now cross-reference incoming calls against Nomorobo\'s database of known spam numbers.',
-        tip: 'If you want the most aggressive spam call blocking available, Robokiller ($4–5/month) goes further — it answers spam calls with automated recordings designed to waste the robocaller\'s time.',
+        tip: 'If you want the most aggressive spam call blocking available, Robokiller ($4–5/month) goes further. It answers spam calls with automated recordings designed to waste the robocaller\'s time.',
       },
       {
         title: 'Block a specific number that keeps calling you',
@@ -348,7 +348,7 @@ Common uses:
 
 **How to use voice dictation on iPhone**
 
-Apple's built-in dictation requires no setup — it is ready to use on every iPhone running iOS 17 or later (which covers any iPhone from the last several years).
+Apple's built-in dictation requires no setup. It is ready to use on every iPhone running iOS 17 or later (which covers any iPhone from the last several years).
 
 **To dictate any message or note:**
 
@@ -536,7 +536,7 @@ Some Android phones (particularly newer Samsung, Google Pixel, and OnePlus model
 2. Tap the name of the network, then look for a "Share" option. On Samsung phones, look for a QR code share button.
 3. Hold the two phones back-to-back (they need to be within an inch or two of each other). On compatible phones, the connection details transfer automatically.
 
-This feature varies by phone model. If it does not work, use the QR code method instead — it works on every phone.
+This feature varies by phone model. If it does not work, use the QR code method instead. It works on every phone.
 
 ---
 
@@ -583,7 +583,7 @@ Change the card any time you change your password. There is nothing wrong with w
 When you share your Wi-Fi password, you are giving that person access to your home internet connection. A few guidelines:
 
 - Sharing with family and trusted friends is completely normal and safe.
-- If you want to give visitors internet access without sharing your main password, most modern routers have a "Guest Network" option. A guest network is a separate connection for visitors — they get internet access but cannot see the files and devices on your main home network. Check your router's settings app or manual for instructions.
+- If you want to give visitors internet access without sharing your main password, most modern routers have a "Guest Network" option. A guest network is a separate connection for visitors. They get internet access but cannot see the files and devices on your main home network. Check your router's settings app or manual for instructions.
 - If you think someone you no longer trust still has your Wi-Fi password, you can change the password in your router's settings. All devices will need to reconnect with the new password, so write it down before you change it.`,
     steps: [
       {

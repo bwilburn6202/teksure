@@ -29,7 +29,7 @@ Questions to ask:
 
 If you got your phone "free" or on a payment plan, this is where you pay for it — usually $20–$45 per month for 24–36 months. Once the payment plan ends, this charge disappears.
 
-Check: How many months are left? Some carriers let you trade in early and restart a new plan. That is rarely financially helpful — you are just extending how long you pay.
+Check: How many months are left? Some carriers let you trade in early and restart a new plan. That is rarely financially helpful. You are just extending how long you pay.
 
 **Section 3: Insurance / device protection**
 
@@ -53,13 +53,13 @@ Action: Go through every line in this section. For each one you do not recognize
 
 **Section 5: Taxes and government fees**
 
-These are not optional — they are real government-mandated charges. They include:
+These are not optional. They are real government-mandated charges. They include:
 - Federal Universal Service Fund (funds phone service in rural areas and schools)
 - State and local taxes (varies a lot by state)
 - 911 fee (usually $0.50–$1.50 per month)
 - Regulatory cost recovery fees
 
-You cannot remove these. But they are not carrier profit — they go to government programs.
+You cannot remove these. But they are not carrier profit. They go to government programs.
 
 **Section 6: Carrier fees**
 
@@ -208,7 +208,7 @@ The Echo Show is especially popular with seniors because it has a screen — fam
       {
         title: 'Try your first voice command',
         content: 'Say "Alexa" to wake it up, then ask something simple: "Alexa, what time is it?" or "Alexa, set a timer for 5 minutes." The light ring glows blue when it is listening.',
-        tip: 'Speak at a normal conversational volume — you do not need to shout.',
+        tip: 'Speak at a normal conversational volume. You do not need to shout.',
       },
       {
         title: 'Set up daily reminders for medications or appointments',
@@ -284,7 +284,7 @@ Also check: Did your phone have banking apps? Call your bank to alert them a dev
 **Step 5: Report the theft (if stolen)**
 
 If your phone was stolen:
-1. File a report with your local police department. You will need your phone's IMEI number (a unique device identifier) — you can find this on your original box, in your carrier account, or at Settings → General → About → IMEI on iPhone, or Settings → About Phone → IMEI on Android.
+1. File a report with your local police department. You will need your phone's IMEI number (a unique device identifier). You can find this on your original box, in your carrier account, or at Settings → General → About → IMEI on iPhone, or Settings → About Phone → IMEI on Android.
 2. Call your carrier to report the theft. They can block the phone from being used on any network using the IMEI number.
 3. File a report at ic3.gov (FBI Internet Crime Complaint Center) if you believe personal data was accessed.
 
@@ -399,7 +399,7 @@ A larger 15.6-inch wall-mounted or standing smart display. Excellent as a kitche
 2. Create an account on the frame manufacturer's website (Aura or Nixplay) using your email.
 3. On your own phone, download the companion app and connect to the same account.
 4. Test by sending one photo from your phone.
-5. Invite other family members to connect via the app — they can all send photos after that.
+5. Invite other family members to connect via the app. They can all send photos after that.
 6. The senior does nothing after initial setup — photos just appear.
 
 **Where to buy and pricing (2026)**

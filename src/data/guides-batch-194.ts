@@ -71,7 +71,7 @@ export const guidesBatch194: Guide[] = [
       },
       {
         title: "Check beneficiaries on every retirement account",
-        content: "Log into each retirement account website. Find the section labeled \"Beneficiaries\" — it is usually under Profile, Account Settings, or My Information. Confirm the names and percentages match your wishes today. Beneficiary forms override what is in your will, so an out-of-date beneficiary can send money to an ex-spouse no matter what your will says.",
+        content: "Log into each retirement account website. Find the section labeled \"Beneficiaries\". It is usually under Profile, Account Settings, or My Information. Confirm the names and percentages match your wishes today. Beneficiary forms override what is in your will, so an out-of-date beneficiary can send money to an ex-spouse no matter what your will says.",
       },
       {
         title: "Gather tax documents in one folder",

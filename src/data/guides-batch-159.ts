@@ -27,7 +27,7 @@ export const guidesBatch159: Guide[] = [
     publishedAt: '2026-05-08',
     lastVerifiedAt: '2026-05-08',
     difficulty: 'Beginner',
-    body: `Checking your bank statement once a month is not enough to catch fraud quickly. By the time your statement arrives, a thief could have made dozens of purchases on your account. Bank text and email alerts fix this — they notify you within minutes of every transaction so you can spot anything unusual the moment it happens.
+    body: `Checking your bank statement once a month is not enough to catch fraud quickly. By the time your statement arrives, a thief could have made dozens of purchases on your account. Bank text and email alerts fix this. They notify you within minutes of every transaction so you can spot anything unusual the moment it happens.
 
 Setting up alerts is free, takes about 10 minutes, and works on any smartphone or computer. This guide covers how to turn on alerts at Chase, Bank of America, and Wells Fargo, plus a general method you can follow for any other bank.
 
@@ -156,7 +156,7 @@ If you receive a text pretending to be from your bank that contains a link or as
 
 **After alerts are set up**
 
-Within a day or two, you should start receiving notifications for your normal transactions. This is a good thing — it means the alerts are working. Over time, you will learn which notifications are routine and which ones stand out as unexpected. If you ever see a charge you do not recognize, call your bank right away using the number on the back of your card.`,
+Within a day or two, you should start receiving notifications for your normal transactions. This is a good thing. It means the alerts are working. Over time, you will learn which notifications are routine and which ones stand out as unexpected. If you ever see a charge you do not recognize, call your bank right away using the number on the back of your card.`,
     steps: [
       {
         title: 'Sign in to your bank account online or in the app',
@@ -221,7 +221,7 @@ Telehealth is not a lesser version of care. For many conditions, it is just as e
 Telehealth works well for conditions a doctor can evaluate by seeing and hearing you and reviewing your description of symptoms:
 
 - Colds, flu, sore throats, and upper respiratory infections
-- Urinary tract infections (UTIs) — you describe your symptoms, the doctor evaluates them, and prescribes antibiotics if appropriate
+- Urinary tract infections (UTIs). You describe your symptoms, the doctor evaluates them, and prescribes antibiotics if appropriate
 - Skin rashes, redness, or irritation — many telehealth platforms let you send a close-up photo that the doctor reviews before or during the call
 - Pink eye and ear infections
 - Medication refills for ongoing prescriptions (blood pressure, cholesterol, diabetes medications — your doctor may be able to renew these during a routine telehealth check-in)
@@ -367,11 +367,11 @@ Check your email and patient portal within a few hours for any follow-up instruc
       {
         title: 'Write down your medications and symptoms before the call',
         content: 'Make a list of all your current medications (including vitamins and supplements) with the dosage. Write down your main symptom: when it started, how it feels, and what makes it better or worse. Have your pharmacy name ready so the doctor can send a prescription there electronically.',
-        tip: 'Keep this medication list updated and stored in a note on your phone — it is also useful for in-person appointments and emergency room visits.',
+        tip: 'Keep this medication list updated and stored in a note on your phone. It is also useful for in-person appointments and emergency room visits.',
       },
       {
         title: 'Join the video call 5 minutes before your appointment',
-        content: 'Open the link sent to you by email or text from your telehealth provider. On your phone, tap the link — it will open in your browser or a specific app. On a computer, click the link and allow the site to use your camera and microphone when asked. You will enter a waiting room screen. The doctor will appear when ready.',
+        content: 'Open the link sent to you by email or text from your telehealth provider. On your phone, tap the link. It will open in your browser or a specific app. On a computer, click the link and allow the site to use your camera and microphone when asked. You will enter a waiting room screen. The doctor will appear when ready.',
         warning: 'If the video does not connect after a few minutes, do not close the app. Try refreshing the page or call the telehealth service\'s support line — the number is in your appointment confirmation email.',
       },
       {
@@ -539,7 +539,7 @@ To move an app into the dock: enter jiggle mode and drag the app down to the doc
 
 - Keep page 1 of your home screen to 8–12 apps maximum — the ones you use every single day. Everything else can go on page 2 or in a folder.
 - Group related apps into folders rather than spreading them across many pages. Four to five well-named folders can replace three or four crowded pages.
-- If you have not opened an app in six months, remove it from your home screen — it will still be in the App Library if you ever need it again.
+- If you have not opened an app in six months, remove it from your home screen. It will still be in the App Library if you ever need it again.
 - Use the App Library search bar whenever you cannot remember where an app is. It is faster than scrolling through every page.`,
     steps: [
       {
@@ -566,7 +566,7 @@ To move an app into the dock: enter jiggle mode and drag the app down to the doc
       },
       {
         title: 'Make app icons larger with Display Zoom',
-        content: 'If the app icons look too small, open Settings, tap "Display & Brightness," then tap "Display Zoom." Select "Larger Text" and tap "Set." Your iPhone will restart and all icons, text, and buttons will appear larger. This does not remove any features — it only increases the display size throughout the phone.',
+        content: 'If the app icons look too small, open Settings, tap "Display & Brightness," then tap "Display Zoom." Select "Larger Text" and tap "Set." Your iPhone will restart and all icons, text, and buttons will appear larger. This does not remove any features. It only increases the display size throughout the phone.',
         tip: 'You can reverse Display Zoom at any time by going back to Settings → Display & Brightness → Display Zoom and selecting "Default."',
       },
     ],
@@ -719,7 +719,7 @@ They do not need to do anything other than tap the link or notification to see y
     steps: [
       {
         title: 'Download Google Photos and sign in with your Google account',
-        content: 'On iPhone, search for "Google Photos" in the App Store and tap "Get." On Android, it may already be installed — check your app list or search the Play Store. Open the app and sign in with your Gmail email address and password. If you do not have a Google account, tap "Create account" — it is free and takes about three minutes.',
+        content: 'On iPhone, search for "Google Photos" in the App Store and tap "Get." On Android, it may already be installed — check your app list or search the Play Store. Open the app and sign in with your Gmail email address and password. If you do not have a Google account, tap "Create account". It is free and takes about three minutes.',
         tip: 'If you use Gmail for email, that is already your Google account. Use the same email and password to sign in to Google Photos.',
       },
       {
@@ -733,7 +733,7 @@ They do not need to do anything other than tap the link or notification to see y
       {
         title: 'Create a shared album for a family event or ongoing collection',
         content: 'Tap Library at the bottom of Google Photos, then tap Albums, then "Create album." Give the album a name and add photos from your phone. Tap the share icon inside the album and enter your family members\' email addresses. Tap "Send." They will be able to view the album and, if you allow it, add their own photos.',
-        tip: 'When sending the album invite, turn on "Allow adding photos" so family members can contribute their own pictures from the same event — you will see all their photos too.',
+        tip: 'When sending the album invite, turn on "Allow adding photos" so family members can contribute their own pictures from the same event. You will see all their photos too.',
       },
       {
         title: 'Add more photos to an album at any time',

@@ -318,7 +318,7 @@ Important disclaimer: This guide is for informational purposes only. No fall det
     steps: [
       {
         title: `Enable fall detection on Apple Watch`,
-        content: `On your iPhone, open the Watch app. Tap My Watch at the bottom, then tap Emergency SOS. Toggle on Fall Detection. The feature is available on Apple Watch Series 4 and newer. Once enabled, wear the watch on your wrist — it only works when worn, not when sitting on a table.`,
+        content: `On your iPhone, open the Watch app. Tap My Watch at the bottom, then tap Emergency SOS. Toggle on Fall Detection. The feature is available on Apple Watch Series 4 and newer. Once enabled, wear the watch on your wrist. It only works when worn, not when sitting on a table.`,
         tip: `Also go to My Watch > Emergency SOS > Add Emergency Contact to make sure the watch knows who to notify.`,
       },
       {
@@ -549,7 +549,7 @@ When one person checks off "milk" at the store, it disappears from everyone else
 
 The most popular shared grocery list apps in the United States include OurGroceries, AnyList, and Google Keep (which has a list feature). Amazon shopping lists and Apple Reminders also support sharing. All of the basic versions are free.
 
-OurGroceries and AnyList are dedicated grocery apps — they organize items by category (produce, dairy, frozen, etc.), remember your most common items, and let you save favorite store layouts so the list is in the order you walk through the store. Google Keep is simpler but works well for people who already use Google.
+OurGroceries and AnyList are dedicated grocery apps. They organize items by category (produce, dairy, frozen, etc.), remember your most common items, and let you save favorite store layouts so the list is in the order you walk through the store. Google Keep is simpler but works well for people who already use Google.
 
 The key step that makes these apps useful is sharing the list with other people in your household. This requires everyone to have the same app installed and an account. Sharing takes about two minutes once everyone has the app.
 
@@ -566,7 +566,7 @@ Quick Tip: Organize your list by aisle or store section. Both OurGroceries and A
       },
       {
         title: `Share the list with your household`,
-        content: `Tap the Share icon (usually a person with a plus sign) next to your list name. Enter the email addresses of the people you want to share with — they must have an OurGroceries account with that email. They will receive an invitation to join your list. Once they accept, any change any of you makes is visible to everyone instantly.`,
+        content: `Tap the Share icon (usually a person with a plus sign) next to your list name. Enter the email addresses of the people you want to share with. They must have an OurGroceries account with that email. They will receive an invitation to join your list. Once they accept, any change any of you makes is visible to everyone instantly.`,
       },
       {
         title: `Check off items as you shop`,
@@ -588,7 +588,7 @@ Quick Tip: Organize your list by aisle or store section. Both OurGroceries and A
     thumbnailEmoji: ``,
     publishedAt: `2026-04-20`,
     difficulty: `Beginner`,
-    body: `Grocery delivery apps bring your groceries directly to your door — you shop from your phone and a shopper (or delivery driver) handles the rest. This is especially helpful for people who have difficulty getting to the store, do not drive, or want to save time.
+    body: `Grocery delivery apps bring your groceries directly to your door. You shop from your phone and a shopper (or delivery driver) handles the rest. This is especially helpful for people who have difficulty getting to the store, do not drive, or want to save time.
 
 There are four main services to know about, and each one works a bit differently.
 
@@ -648,7 +648,7 @@ These services are best for people dealing with anxiety, depression, stress, rel
 
 Cost is a major consideration. These services are not inexpensive at full price, and insurance coverage for them is inconsistent. However, many employers include mental health benefits through Talkspace or through an EAP (Employee Help Program) that covers a set number of free therapy sessions per year. Check your benefits first.
 
-Quick Tip: If cost is a barrier, search for "open path collective" — it is a nonprofit that offers affordable therapy sessions ($30–$80 per session) with licensed therapists for people who cannot afford standard rates.
+Quick Tip: If cost is a barrier, search for "open path collective". It is a nonprofit that offers affordable therapy sessions ($30–$80 per session) with licensed therapists for people who cannot afford standard rates.
 
 Important disclaimer: Online therapy platforms are not appropriate for mental health emergencies. If you are having thoughts of harming yourself or others, call or text 988 (the Suicide and Crisis Lifeline) right away. Online therapy does not replace in-person psychiatric care for serious mental health conditions.`,
     steps: [
@@ -658,7 +658,7 @@ Important disclaimer: Online therapy platforms are not appropriate for mental he
       },
       {
         title: `Complete the intake questionnaire`,
-        content: `Download BetterHelp or Talkspace from the App Store or Google Play. Open the app and answer the intake questionnaire — it asks about your mental health history, what you want to work on, and preferences for your therapist (specialty, gender, language, etc.). This takes about 10 minutes and is used to match you with an appropriate therapist.`,
+        content: `Download BetterHelp or Talkspace from the App Store or Google Play. Open the app and answer the intake questionnaire. It asks about your mental health history, what you want to work on, and preferences for your therapist (specialty, gender, language, etc.). This takes about 10 minutes and is used to match you with an appropriate therapist.`,
       },
       {
         title: `Review your therapist match and accept or request a change`,
@@ -695,7 +695,7 @@ The Health app also stores medical records. If your doctor's office or hospital 
 
 Your health data is encrypted and stored on your device, not shared with Apple. It is only shared with apps or medical systems you explicitly authorize.
 
-Quick Tip: Set up Medical ID in the Health app — it can be accessed from your iPhone's lock screen in an emergency and shows your blood type, allergies, emergency contacts, and medical conditions to first responders even when your phone is locked.
+Quick Tip: Set up Medical ID in the Health app. It can be accessed from your iPhone's lock screen in an emergency and shows your blood type, allergies, emergency contacts, and medical conditions to first responders even when your phone is locked.
 
 Important disclaimer: This guide is for informational purposes only. The iPhone Health app stores data for personal wellness tracking. It does not provide medical diagnoses. Always consult your doctor about your health data and what it means for your care.`,
     steps: [
@@ -753,7 +753,7 @@ Important disclaimer: This guide is for informational purposes only. Activity tr
       },
       {
         title: `Set up your personal profile`,
-        content: `Google Fit will ask for your height, weight, sex, and date of birth. Enter these as accurately as you can — they are used to calculate calorie burn and set appropriate activity goals. You can update this information at any time in Settings.`,
+        content: `Google Fit will ask for your height, weight, sex, and date of birth. Enter these as accurately as you can. They are used to calculate calorie burn and set appropriate activity goals. You can update this information at any time in Settings.`,
       },
       {
         title: `Set your weekly activity goal`,
@@ -805,7 +805,7 @@ Important disclaimer: This guide is for informational purposes only. Consumer he
       },
       {
         title: `Check your heart rate on a Fitbit`,
-        content: `On your Fitbit device, swipe to the heart rate screen — it shows your current pulse in large numbers. In the Fitbit app on your phone, tap your profile, then tap your device name, then view the Heart Rate section. Your resting heart rate for each day is listed there.`,
+        content: `On your Fitbit device, swipe to the heart rate screen. It shows your current pulse in large numbers. In the Fitbit app on your phone, tap your profile, then tap your device name, then view the Heart Rate section. Your resting heart rate for each day is listed there.`,
       },
       {
         title: `Understand what your resting heart rate means`,
@@ -898,7 +898,7 @@ Important disclaimer: This guide is for informational purposes only. Consult you
     steps: [
       {
         title: `Choose a walking app that matches your current fitness level`,
-        content: `If you are completely new to regular exercise or have been inactive for a while, start with Start Walking or Walk at Home — they are designed for very beginners. If you already walk sometimes and want more structure, try MapMyWalk. Download your chosen app from the App Store or Google Play. Most are free or have free tiers.`,
+        content: `If you are completely new to regular exercise or have been inactive for a while, start with Start Walking or Walk at Home. They are designed for very beginners. If you already walk sometimes and want more structure, try MapMyWalk. Download your chosen app from the App Store or Google Play. Most are free or have free tiers.`,
       },
       {
         title: `Complete the onboarding questionnaire`,

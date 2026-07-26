@@ -11,7 +11,7 @@ export const guidesBatch23: Guide[] = [
     thumbnailEmoji: '',
     publishedAt: '2026-04-19',
     difficulty: 'Beginner',
-    body: `Face ID is the facial recognition feature on iPhones that don't have a Home button (iPhone X and later). Instead of entering a passcode every time, you look at your phone — it recognizes your face instantly and unlocks. Face ID also approves App Store purchases, authenticates Apple Pay, and auto-fills passwords.\n\nFace ID is secure: Apple says the chance of a random person's face unlocking your iPhone is about 1 in 1,000,000 (compared to 1 in 50,000 for a fingerprint). It works in the dark, with glasses or sunglasses on, and adapts to changes in your appearance over time.\n\nSetup takes about two minutes and only needs to be done once. You can also add an "alternate appearance" (like a family member's face) if you want someone else to be able to unlock your phone.`,
+    body: `Face ID is the facial recognition feature on iPhones that don't have a Home button (iPhone X and later). Instead of entering a passcode every time, you look at your phone. It recognizes your face instantly and unlocks. Face ID also approves App Store purchases, authenticates Apple Pay, and auto-fills passwords.\n\nFace ID is secure: Apple says the chance of a random person's face unlocking your iPhone is about 1 in 1,000,000 (compared to 1 in 50,000 for a fingerprint). It works in the dark, with glasses or sunglasses on, and adapts to changes in your appearance over time.\n\nSetup takes about two minutes and only needs to be done once. You can also add an "alternate appearance" (like a family member's face) if you want someone else to be able to unlock your phone.`,
     steps: [
       {
         title: 'Open Face ID settings',
@@ -33,7 +33,7 @@ export const guidesBatch23: Guide[] = [
       {
         title: 'Add an alternate appearance',
         content: 'If you want another person to be able to unlock your iPhone (a spouse, adult child, caregiver), go to Settings > Face ID & Passcode > Set Up an Alternate Appearance. That person follows the same scanning process. Your face and their face will both unlock the phone.',
-        warning: 'Only add an alternate appearance for someone you fully trust — they will have the same access to your phone, apps, and payment methods as you.',
+        warning: 'Only add an alternate appearance for someone you fully trust. They will have the same access to your phone, apps, and payment methods as you.',
       },
     ],
   },
@@ -125,7 +125,7 @@ export const guidesBatch23: Guide[] = [
     steps: [
       {
         title: 'Open Voice Memos and start recording',
-        content: `Find the Voice Memos app on your iPhone — it has a gray icon with sound waves. Tap the large red circle button at the bottom to start recording. Speak normally — the phone's microphone picks up audio well from 1–3 feet away. A waveform shows the recording in progress.`,
+        content: `Find the Voice Memos app on your iPhone. It has a gray icon with sound waves. Tap the large red circle button at the bottom to start recording. Speak normally — the phone's microphone picks up audio well from 1–3 feet away. A waveform shows the recording in progress.`,
         tip: 'Quick Tip: You can ask Siri to open Voice Memos and start recording without touching your phone: say "Hey Siri, open Voice Memos" or "Hey Siri, record a voice memo."',
       },
       {
@@ -206,7 +206,7 @@ export const guidesBatch23: Guide[] = [
       },
       {
         title: 'Use the two-way talk feature',
-        content: `Both Ring and Nest doorbells have a microphone and speaker — you can talk to whoever is at your door from your phone, anywhere. When you get a doorbell alert on your phone, tap the video notification and look for a microphone button to start a two-way conversation. Great for accepting deliveries or speaking with visitors when you're away from home.`,
+        content: `Both Ring and Nest doorbells have a microphone and speaker. You can talk to whoever is at your door from your phone, anywhere. When you get a doorbell alert on your phone, tap the video notification and look for a microphone button to start a two-way conversation. Great for accepting deliveries or speaking with visitors when you're away from home.`,
       },
       {
         title: 'Set up package detection',
@@ -306,7 +306,7 @@ export const guidesBatch23: Guide[] = [
     steps: [
       {
         title: `Find your router's admin page address`,
-        content: `Most routers use the address 192.168.1.1 or 192.168.0.1. Type one of these into your browser's address bar (the same bar where you type website addresses) and press Enter. If neither works, check the sticker on the back of your router — it often shows the admin address and default login.`,
+        content: `Most routers use the address 192.168.1.1 or 192.168.0.1. Type one of these into your browser's address bar (the same bar where you type website addresses) and press Enter. If neither works, check the sticker on the back of your router. It often shows the admin address and default login.`,
         tip: `Quick Tip: You can also find your router's address on your computer: Windows — open Command Prompt, type "ipconfig", look for "Default Gateway." Mac — System Settings > Network > your network > Details > "Router" address.`,
       },
       {
@@ -503,7 +503,7 @@ export const guidesBatch23: Guide[] = [
       },
       {
         title: 'Rearrange menu bar icons',
-        content: `Hold the Command key () and click and drag a menu bar icon to move it to a new position. This works for icons you've added yourself and some system icons. Third-party apps often put icons in the menu bar too — you can drag these around the same way.`,
+        content: `Hold the Command key () and click and drag a menu bar icon to move it to a new position. This works for icons you've added yourself and some system icons. Third-party apps often put icons in the menu bar too. You can drag these around the same way.`,
       },
       {
         title: 'Control Center — the hub for quick settings',
@@ -515,7 +515,7 @@ export const guidesBatch23: Guide[] = [
   {
     slug: 'apple-notes-tips-guide',
     title: 'How to Get More from Notes App on iPhone and Mac',
-    excerpt: 'Apple Notes does much more than simple text notes — it can organize, lock, scan, draw, attach photos, make checklists, and sync across all your Apple devices.',
+    excerpt: 'Apple Notes does much more than simple text notes. It can organize, lock, scan, draw, attach photos, make checklists, and sync across all your Apple devices.',
     category: 'tips-tricks',
     tags: ['notes app', 'apple notes', 'iphone', 'mac', 'notes tips', 'organization'],
     readTime: '5 min',
@@ -732,7 +732,7 @@ export const guidesBatch23: Guide[] = [
   {
     slug: 'icloud-keychain-guide',
     title: 'How to Use iCloud Keychain to Manage Your Passwords on iPhone',
-    excerpt: `iCloud Keychain is Apple's built-in password manager — it remembers your passwords, fills them in automatically, generates strong new ones, and alerts you to reused passwords.`,
+    excerpt: `iCloud Keychain is Apple's built-in password manager. It remembers your passwords, fills them in automatically, generates strong new ones, and alerts you to reused passwords.`,
     category: 'safety-guides',
     tags: ['icloud keychain', 'passwords', 'password manager', 'iphone', 'safari', 'autofill'],
     readTime: '5 min',
@@ -748,7 +748,7 @@ export const guidesBatch23: Guide[] = [
       {
         title: 'View and manage your saved passwords',
         content: `Go to Settings > Passwords. Authenticate with Face ID or your passcode. You'll see a list of every username and password saved to your keychain, organized by website or app. Tap any entry to see the full password. You can edit incorrect entries or delete ones you no longer need.`,
-        tip: 'Quick Tip: Look for the yellow warning icon next to passwords — it shows that password was found in a data breach or is reused on multiple sites. These should be changed to new, unique passwords.',
+        tip: 'Quick Tip: Look for the yellow warning icon next to passwords. It shows that password was found in a data breach or is reused on multiple sites. These should be changed to new, unique passwords.',
       },
       {
         title: 'Use AutoFill for automatic login',

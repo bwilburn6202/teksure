@@ -70,7 +70,7 @@ As of 2026, Apple charges $99 to replace an iPhone battery at an Apple Store or 
     tags: ["battery", "iphone", "android", "battery life", "phone tips"],
     body: `Does your phone run out of charge before the day is over? You are not alone. Battery drain is one of the most common complaints among smartphone users. The good news is that a few small changes to your phone settings can make a noticeable difference.
 
-This guide covers the most effective steps you can take on both iPhone and Android phones to stretch your battery life. None of these require technical knowledge — they are all built into your phone.
+This guide covers the most effective steps you can take on both iPhone and Android phones to stretch your battery life. None of these require technical knowledge. They are all built into your phone.
 
 **Why does battery drain so fast?**
 
@@ -96,7 +96,7 @@ Modern phones do best when kept between roughly 20% and 80% charge. Often runnin
     steps: [
       {
         title: "Lower your screen brightness",
-        content: "Swipe down from the top of your screen to open the Control Center (iPhone) or Quick Settings panel (Android). Look for the brightness slider — it usually looks like a sun icon — and drag it down to about 50% or lower. Turning on Auto-Brightness in Settings lets your phone adjust brightness on its own based on the lighting around you."
+        content: "Swipe down from the top of your screen to open the Control Center (iPhone) or Quick Settings panel (Android). Look for the brightness slider. It usually looks like a sun icon — and drag it down to about 50% or lower. Turning on Auto-Brightness in Settings lets your phone adjust brightness on its own based on the lighting around you."
       },
       {
         title: "Turn on Low Power Mode or Battery Saver",

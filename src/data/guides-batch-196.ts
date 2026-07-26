@@ -61,7 +61,7 @@ export const guidesBatch196: Guide[] = [
     steps: [
       {
         title: "Pick a card and gather your supplies",
-        content: "Use any blank or simple card. The drugstore sells packs of 8 to 12 blank cards with envelopes for under $10. Avoid cards with long pre-printed messages — they leave little room for your own words. Set out the card, a pen with smooth ink (gel or rollerball writes more comfortably than ballpoint), the receiver's address, a stamp, and the notes you want to mention. Sit at a clear table with good light.",
+        content: "Use any blank or simple card. The drugstore sells packs of 8 to 12 blank cards with envelopes for under $10. Avoid cards with long pre-printed messages. They leave little room for your own words. Set out the card, a pen with smooth ink (gel or rollerball writes more comfortably than ballpoint), the receiver's address, a stamp, and the notes you want to mention. Sit at a clear table with good light.",
         tip: "Buy cards in a pack and keep them with stamps in a small basket near the kitchen table. The basket removes the friction of \"I should write a card\" turning into a hunt for supplies.",
       },
       {
@@ -107,7 +107,7 @@ export const guidesBatch196: Guide[] = [
       },
       {
         title: "Open the app and answer the welcome questions",
-        content: "Tap the Calm icon on your home screen. The app asks 3 to 5 questions: Why are you here? (Sleep, Stress, Focus, Self-Improvement.) How old are you? Have you meditated before? Pick the answers that match — there are no wrong choices. The answers help the app show relevant content first.",
+        content: "Tap the Calm icon on your home screen. The app asks 3 to 5 questions: Why are you here? (Sleep, Stress, Focus, Self-Improvement.) How old are you? Have you meditated before? Pick the answers that match. There are no wrong choices. The answers help the app show relevant content first.",
       },
       {
         title: "Skip the free trial offer carefully",

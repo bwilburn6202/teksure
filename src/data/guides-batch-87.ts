@@ -74,7 +74,7 @@ Yousician is available on iPhone, iPad, Android, Windows, and Mac. You can learn
       },
       {
         title: `Allow microphone access and do the sound check`,
-        content: `Yousician needs to hear your instrument, so allow microphone access when the app requests it. After granting permission, the app runs a sound check. Play a few notes on your instrument and watch the indicator on screen — it should respond to what you play. If it does not react, check that your microphone is not blocked and that you are playing close enough to your device. On desktop, check your system's microphone settings to confirm the correct input is selected.`,
+        content: `Yousician needs to hear your instrument, so allow microphone access when the app requests it. After granting permission, the app runs a sound check. Play a few notes on your instrument and watch the indicator on screen. It should respond to what you play. If it does not react, check that your microphone is not blocked and that you are playing close enough to your device. On desktop, check your system's microphone settings to confirm the correct input is selected.`,
         warning: `Do not practice in a room with loud background music or TV noise. The app may score your performance incorrectly if it hears multiple sound sources at once.`,
       },
       {
@@ -203,7 +203,7 @@ Apple's official GarageBand tutorials are available at support.apple.com and on 
     steps: [
       {
         title: `Open GarageBand and start a new project`,
-        content: `Find GarageBand on your iPhone or iPad home screen — it has a black icon with a white guitar. Tap it to open. If you do not see it, download it for free from the App Store. On the main screen, tap the plus (+) button to create a new project. You will be taken to the instrument chooser, which shows all the virtual instruments available. Swipe left and right to browse them.`,
+        content: `Find GarageBand on your iPhone or iPad home screen. It has a black icon with a white guitar. Tap it to open. If you do not see it, download it for free from the App Store. On the main screen, tap the plus (+) button to create a new project. You will be taken to the instrument chooser, which shows all the virtual instruments available. Swipe left and right to browse them.`,
         tip: `Quick Tip: If you want to experiment with pre-made music without playing anything yourself, swipe to find "Apple Loops" and tap it. You can build an entire song by dragging and dropping loops without touching a single virtual instrument.`,
       },
       {
@@ -253,7 +253,7 @@ Download Audacity for free at audacityteam.org. The site also has a comprehensiv
       },
       {
         title: `Set your microphone as the input device`,
-        content: `At the top of the Audacity window, find the toolbar that shows recording device settings. Click the microphone dropdown menu and select the microphone you want to use. If you are using your computer's built-in microphone, choose "Built-in Microphone" or "Default." If you have a USB microphone plugged in, it should appear in the list by its name. Speak into the microphone and watch the level meter at the top of the screen — it should bounce with your voice. If it stays flat, the wrong input is selected.`,
+        content: `At the top of the Audacity window, find the toolbar that shows recording device settings. Click the microphone dropdown menu and select the microphone you want to use. If you are using your computer's built-in microphone, choose "Built-in Microphone" or "Default." If you have a USB microphone plugged in, it should appear in the list by its name. Speak into the microphone and watch the level meter at the top of the screen. It should bounce with your voice. If it stays flat, the wrong input is selected.`,
         warning: `Make sure no other program is using the microphone when you try to record. If another app has exclusive access to the microphone, Audacity will not be able to capture audio. Close any video call software like Zoom or Teams before recording.`,
       },
       {
@@ -352,7 +352,7 @@ The free plan is a reasonable starting point to see whether podcasting is right 
       },
       {
         title: `Review your listener statistics`,
-        content: `After your first episode has been live for a few days, click "Statistics" in your dashboard. Buzzsprout shows total downloads, which episodes are most popular, which countries your listeners are in, and which podcast apps they use. Downloads are counted when a listener's app fully downloads the episode file — it is a standard measurement used across the podcast industry. Compare numbers across episodes to see which topics attracted the most listeners.`,
+        content: `After your first episode has been live for a few days, click "Statistics" in your dashboard. Buzzsprout shows total downloads, which episodes are most popular, which countries your listeners are in, and which podcast apps they use. Downloads are counted when a listener's app fully downloads the episode file. It is a standard measurement used across the podcast industry. Compare numbers across episodes to see which topics attracted the most listeners.`,
         tip: `Quick Tip: Do not be discouraged by small numbers at the start. Most podcasts grow slowly through word of mouth. Consistent publishing, a clear topic, and asking friends and family to share the show are the most effective early growth tactics.`,
       },
       {
@@ -371,7 +371,7 @@ The free plan is a reasonable starting point to see whether podcasting is right 
     thumbnailEmoji: ``,
     publishedAt: `2026-04-20`,
     difficulty: `Intermediate`,
-    body: `Procreate is the most popular drawing and painting app for iPad. It is used by professional illustrators, tattoo artists, graphic designers, and hobbyists who want a digital canvas that behaves like real art materials. Procreate costs a one-time fee of $12.99 from the App Store — there is no ongoing subscription — making it one of the best-value creative tools available.
+    body: `Procreate is the most popular drawing and painting app for iPad. It is used by professional illustrators, tattoo artists, graphic designers, and hobbyists who want a digital canvas that behaves like real art materials. Procreate costs a one-time fee of $12.99 from the App Store. There is no ongoing subscription — making it one of the best-value creative tools available.
 
 The app works best with an Apple Pencil, which responds to the pressure and angle of your stroke in the same way a real pencil or brush would. Press harder and lines get thicker or darker. Tilt the Pencil and shading changes. This responsiveness makes Procreate feel closer to traditional art than any other digital tool. That said, you can also use your finger to draw, though you will have less precision.
 
@@ -385,7 +385,7 @@ Procreate requires iPadOS 16.2 or later. More information and official tutorials
     steps: [
       {
         title: `Purchase and open Procreate`,
-        content: `Open the App Store on your iPad, search for "Procreate," and tap the price button ($12.99) to purchase it. This is a one-time payment — you will not be charged again. After installation, tap the Procreate icon to open it. The gallery screen shows your existing artworks (empty when you are new). Tap the plus (+) button in the upper-right corner to create a new canvas. Choose a preset size — "Screen Size" creates a canvas that fills your iPad screen perfectly, which is a good starting point.`,
+        content: `Open the App Store on your iPad, search for "Procreate," and tap the price button ($12.99) to purchase it. This is a one-time payment. You will not be charged again. After installation, tap the Procreate icon to open it. The gallery screen shows your existing artworks (empty when you are new). Tap the plus (+) button in the upper-right corner to create a new canvas. Choose a preset size — "Screen Size" creates a canvas that fills your iPad screen perfectly, which is a good starting point.`,
         tip: `Quick Tip: If you are not ready to spend money yet, explore Procreate Pocket, a version for iPhone that costs $4.99 and has most of the same features on a smaller screen.`,
       },
       {
@@ -434,7 +434,7 @@ The app is available at sketchbook.com and through the App Store, Google Play, a
       },
       {
         title: `Get to know the interface`,
-        content: `Sketchbook's interface is minimal by design — it keeps tools out of the way so the canvas is as large as possible. A small toolbar called the Copic Library sits on one side, and a radial menu appears when you press and hold the screen. On tablets and desktops, a more complete toolbar runs along the top or side. The layer panel opens from the stacked squares icon. Take five minutes to tap every icon once and read the tooltip that appears — this gives you a map of where everything is.`,
+        content: `Sketchbook's interface is minimal by design. It keeps tools out of the way so the canvas is as large as possible. A small toolbar called the Copic Library sits on one side, and a radial menu appears when you press and hold the screen. On tablets and desktops, a more complete toolbar runs along the top or side. The layer panel opens from the stacked squares icon. Take five minutes to tap every icon once and read the tooltip that appears — this gives you a map of where everything is.`,
       },
       {
         title: `Try the symmetry tool for easy practice`,
@@ -554,7 +554,7 @@ Photoshop Express is available in the App Store and on Google Play. Adobe's offi
 
 The three most powerful features for intermediate users are Selective adjustments, the Healing tool, and RAW file support. Selective adjustments let you change the brightness, contrast, or saturation of a specific area of your photo without affecting the rest of the image. The Healing tool removes unwanted objects — a power line crossing the sky, a piece of litter on the ground, a mark on a wall — by replacing the selected area with matching background. RAW file support lets you open and edit the highest-quality format that many smartphone cameras and all digital cameras can save, giving you more detail and range to work with than a standard JPEG.
 
-Understanding these tools expands what you can do with Snapseed from applying a quick filter to making thoughtful, targeted improvements that make your photos look genuinely better. The changes Snapseed makes are stored as edits — you can go back and revise or delete any step from your edit history at any time.
+Understanding these tools expands what you can do with Snapseed from applying a quick filter to making thoughtful, targeted improvements that make your photos look genuinely better. The changes Snapseed makes are stored as edits. You can go back and revise or delete any step from your edit history at any time.
 
 Snapseed works best on photos that are already reasonably well composed. Advanced editing tools can improve a photo. But they cannot fix a fundamentally poor composition or severe underexposure. That said, the RAW support in particular can rescue shots that look hopeless as JPEGs, pulling back highlight detail and recovering shadow information that a JPEG would have permanently lost.
 
@@ -643,7 +643,7 @@ Facetune's official support page and tutorial videos are available at lightricks
 
 This makes Pixlr E particularly useful if you are using a computer where you cannot install software — a public library computer, a work machine with restricted permissions, or a family member's laptop. Because it runs in the browser, it works on Windows, Mac, Linux, and Chromebooks equally well.
 
-Pixlr E's tools are modeled after professional desktop software. The interface includes a layers panel, a selection tool with multiple selection modes (rectangle, ellipse, lasso, and AI-powered object selection), an eraser, a crop tool, a text tool, and a healing brush for removing unwanted objects. These are not simplified versions of professional tools — they work the same way and produce the same quality of results.
+Pixlr E's tools are modeled after professional desktop software. The interface includes a layers panel, a selection tool with multiple selection modes (rectangle, ellipse, lasso, and AI-powered object selection), an eraser, a crop tool, a text tool, and a healing brush for removing unwanted objects. These are not simplified versions of professional tools. They work the same way and produce the same quality of results.
 
 Free accounts have access to most features. Pixlr Plus (a paid subscription) removes ads, unlocks additional AI tools, and provides access to a template library. The free version handles all the photo editing tasks most people regularly need.
 
@@ -836,7 +836,7 @@ LumaFusion requires iPadOS 16 or later. A companion version for iPhone is also a
       },
       {
         title: `Trim clips on the timeline`,
-        content: `Once clips are on the timeline, tap any one to select it (it highlights in yellow). To trim the start or end of a clip, place your finger on the left or right edge of the clip block in the timeline and drag inward. The viewer shows a frame-by-frame preview of where the cut will land. Trimming removes unused footage from the beginning or end of a clip without deleting the original file — you can always restore trimmed footage by dragging the edge back out. To split a clip at a specific point, position the playhead (the vertical white line) where you want to cut, then tap the scissors icon above the timeline.`,
+        content: `Once clips are on the timeline, tap any one to select it (it highlights in yellow). To trim the start or end of a clip, place your finger on the left or right edge of the clip block in the timeline and drag inward. The viewer shows a frame-by-frame preview of where the cut will land. Trimming removes unused footage from the beginning or end of a clip without deleting the original file. You can always restore trimmed footage by dragging the edge back out. To split a clip at a specific point, position the playhead (the vertical white line) where you want to cut, then tap the scissors icon above the timeline.`,
         warning: `LumaFusion edits your project non-destructively — the original source files are never modified. But if you delete the source files from your Photos library or Files app, LumaFusion loses access to the footage and the clips in your project will show as offline. Keep your source files in place until your final export is complete.`,
       },
       {

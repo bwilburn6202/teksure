@@ -35,7 +35,7 @@ export const guidesBatch13: Guide[] = [
       },
       {
         title: `Join the visit when it's time`,
-        content: 'At your appointment time, tap or click the link your doctor sent. You may be placed in a virtual "waiting room" for a minute or two before the doctor joins. If the platform asks for permission to access your camera and microphone, tap "Allow." Once the doctor appears on screen, the visit works just like an in-person appointment — you talk, they examine you visually. And they can review your records and send prescriptions electronically.',
+        content: 'At your appointment time, tap or click the link your doctor sent. You may be placed in a virtual "waiting room" for a minute or two before the doctor joins. If the platform asks for permission to access your camera and microphone, tap "Allow." Once the doctor appears on screen, the visit works just like an in-person appointment. You talk, they examine you visually. And they can review your records and send prescriptions electronically.',
       },
       {
         title: `What to do if the technology isn't working`,
@@ -97,7 +97,7 @@ export const guidesBatch13: Guide[] = [
       {
         title: 'Plug in your Echo device and download the Alexa app',
         content: `Plug your Echo into a wall outlet using the included power cord. The light ring on top will turn orange, which means it's ready to set up. On your phone, download the free "Amazon Alexa" app from the App Store or Google Play Store. Sign in with your Amazon account (the same one you use to shop on Amazon). The app will detect your Echo device automatically.`,
-        tip: `If you don't have an Amazon account, you can create one for free at amazon.com. An Amazon account is separate from Amazon Prime — you don't need a Prime membership to use Alexa.`,
+        tip: `If you don't have an Amazon account, you can create one for free at amazon.com. An Amazon account is separate from Amazon Prime. You don't need a Prime membership to use Alexa.`,
       },
       {
         title: 'Connect Alexa to your WiFi',
@@ -106,7 +106,7 @@ export const guidesBatch13: Guide[] = [
       {
         title: 'Try your first Alexa commands',
         content: `To use Alexa, say "Alexa," wait for the blue light ring to appear (it's listening), then ask your question or give your command. Some useful things to try first: "Alexa, what's the weather today?" — "Alexa, set a timer for 10 minutes" — "Alexa, what time is it?" — "Alexa, tell me a joke" — "Alexa, play some relaxing music." Alexa will respond out loud through the Echo speaker.`,
-        tip: `You don't need to be close to the Echo — it can hear you from across the room, even with moderate background noise. Speak at a normal pace. You don't need to shout.`,
+        tip: `You don't need to be close to the Echo. It can hear you from across the room, even with moderate background noise. Speak at a normal pace. You don't need to shout.`,
       },
       {
         title: 'Set up reminders for medications or appointments',
@@ -133,7 +133,7 @@ export const guidesBatch13: Guide[] = [
     steps: [
       {
         title: 'Open Maps and search for your destination',
-        content: 'Open the Maps app (it has an icon that looks like a road map with a red pin). Tap the search bar at the top and type where you want to go — you can type a full address, a business name, or even a general place like "nearest pharmacy" or "Italian restaurants nearby." Maps will show matching options — tap the correct one to see its location on the map.',
+        content: 'Open the Maps app (it has an icon that looks like a road map with a red pin). Tap the search bar at the top and type where you want to go. You can type a full address, a business name, or even a general place like "nearest pharmacy" or "Italian restaurants nearby." Maps will show matching options — tap the correct one to see its location on the map.',
       },
       {
         title: 'Get directions and start navigation',
@@ -288,7 +288,7 @@ export const guidesBatch13: Guide[] = [
       },
       {
         title: 'Tap the Share button',
-        content: 'On iPhone: tap the Share button — it looks like a square with an arrow pointing upward, located in the bottom left corner. On Android (Samsung, Pixel): tap the Share icon — it looks like three circles connected by lines, or an arrow pointing left, usually at the bottom of the screen.',
+        content: 'On iPhone: tap the Share button. It looks like a square with an arrow pointing upward, located in the bottom left corner. On Android (Samsung, Pixel): tap the Share icon. It looks like three circles connected by lines, or an arrow pointing left, usually at the bottom of the screen.',
       },
       {
         title: 'Choose how to send the photo',
@@ -297,7 +297,7 @@ export const guidesBatch13: Guide[] = [
       },
       {
         title: 'Use AirDrop to share instantly with nearby Apple devices',
-        content: `If you're sharing with someone who's physically nearby and they have an iPhone or iPad, AirDrop is the fastest option — it transfers photos instantly over WiFi without using any of your data plan. Tap Share → AirDrop → tap the person's name if they appear in the list. They'll get a notification on their device asking if they want to accept.`,
+        content: `If you're sharing with someone who's physically nearby and they have an iPhone or iPad, AirDrop is the fastest option. It transfers photos instantly over WiFi without using any of your data plan. Tap Share → AirDrop → tap the person's name if they appear in the list. They'll get a notification on their device asking if they want to accept.`,
         tip: 'AirDrop only works between Apple devices. For sharing with Android users, use text messages or email instead.',
       },
     ],
@@ -355,7 +355,7 @@ export const guidesBatch13: Guide[] = [
       },
       {
         title: 'Know the warning signs',
-        content: `Every recovery scam shares these red flags: (1) They contacted you first — you didn't seek them out; (2) They claim to know the details of your previous scam loss; (3) They ask for an upfront payment, "retainer," or "release fee" before any recovery happens; (4) They promise specific amounts will be returned; (5) They pressure you to act quickly before the opportunity expires.`,
+        content: `Every recovery scam shares these red flags: (1) They contacted you first. You didn't seek them out; (2) They claim to know the details of your previous scam loss; (3) They ask for an upfront payment, "retainer," or "release fee" before any recovery happens; (4) They promise specific amounts will be returned; (5) They pressure you to act quickly before the opportunity expires.`,
       },
       {
         title: `What to do if you're contacted by a recovery scammer`,
@@ -372,7 +372,7 @@ export const guidesBatch13: Guide[] = [
   {
     slug: 'how-to-use-google-meet',
     title: 'How to Use Google Meet for Free Video Calls',
-    excerpt: 'Google Meet is a free video calling service built into Gmail — you can start or join a call with anyone who has an email address.',
+    excerpt: 'Google Meet is a free video calling service built into Gmail. You can start or join a call with anyone who has an email address.',
     category: 'essential-skills',
     tags: ['google meet', 'video call', 'google', 'gmail', 'meeting', 'free'],
     readTime: '5 min',

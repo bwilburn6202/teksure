@@ -171,7 +171,7 @@ The wired method does not require Wi-Fi and works with any TV that has an HDMI p
     difficulty: 'Beginner',
     body: `Sharing your location with a trusted family member is one of the most practical things you can do with your phone. It means your adult children or spouse can see at a glance that you arrived home safely, find you quickly if you ever need help, and feel reassured without having to call or text every few hours to check in.
 
-This is entirely different from a stranger tracking you — you are in complete control of who sees your location, when they can see it. And you can turn it off at any moment.
+This is entirely different from a stranger tracking you. You are in complete control of who sees your location, when they can see it. And you can turn it off at any moment.
 
 This guide covers two methods: **Find My** for iPhone users, and **Google Maps location sharing** for Android users.
 
@@ -228,7 +228,7 @@ Open Find My → People tab. Tap your family member's name → tap **Stop Sharin
 
 **Method 2: Google Maps on Android**
 
-Google Maps includes a real-time location sharing feature for Android phones. You do not need a separate app — it is built into Google Maps, which most Android phones already have installed.
+Google Maps includes a real-time location sharing feature for Android phones. You do not need a separate app. It is built into Google Maps, which most Android phones already have installed.
 
 **Step 1: Open Google Maps and find Location Sharing**
 
@@ -265,7 +265,7 @@ Location sharing uses your phone's GPS, which can use a small amount of extra ba
     steps: [
       {
         title: 'Decide which app to use',
-        content: 'iPhone users: use the Find My app (built into every iPhone). Android users: use Google Maps (already on most Android phones). If you have an iPhone but your family member has Android, Google Maps works across both — it sends a link the other person can open in any browser.',
+        content: 'iPhone users: use the Find My app (built into every iPhone). Android users: use Google Maps (already on most Android phones). If you have an iPhone but your family member has Android, Google Maps works across both. It sends a link the other person can open in any browser.',
         tip: 'Only share your location with people you fully trust. You are in control and can turn sharing off at any time.',
       },
       {
@@ -377,7 +377,7 @@ A lower brightness setting is useful for reading a menu at the table or finding 
 On Android phones, Quick Settings is the panel that drops down from the top of your screen when you swipe down. It contains shortcuts for Wi-Fi, Bluetooth, and — on most Android phones — a Flashlight button.
 
 1. **Swipe down from the top of your screen.** On many phones you may need to swipe down twice, or use two fingers in a single downward swipe, to see the full Quick Settings panel with all available shortcuts.
-2. **Look for a tile labeled "Flashlight"** — it usually has an icon that looks like a small torch or beam of light. On Samsung phones, it may also say "Torch."
+2. **Look for a tile labeled "Flashlight"**. It usually has an icon that looks like a small torch or beam of light. On Samsung phones, it may also say "Torch."
 3. **Tap it once** to turn the flashlight on.
 4. **Tap it again** to turn it off.
 
@@ -410,7 +410,7 @@ The flashlight uses your phone's camera LED, which draws more battery power than
     steps: [
       {
         title: 'iPhone: swipe down to open Control Center and tap the flashlight',
-        content: 'On iPhone, swipe down from the top-right corner of your screen to open Control Center. (On older iPhones with a Home button, swipe up from the very bottom of the screen.) Tap the flashlight icon — it looks like a small torch. The LED light on the back of your phone will turn on. Tap the icon again to turn it off.',
+        content: 'On iPhone, swipe down from the top-right corner of your screen to open Control Center. (On older iPhones with a Home button, swipe up from the very bottom of the screen.) Tap the flashlight icon. It looks like a small torch. The LED light on the back of your phone will turn on. Tap the icon again to turn it off.',
         tip: 'You can turn the flashlight on from the lock screen without unlocking your phone — this is useful in a hurry.',
       },
       {
@@ -479,7 +479,7 @@ When your phone has no lock screen PIN, anyone who finds or takes your phone can
 
 A PIN or passcode does not prevent this scenario entirely — but it creates a strong barrier. Modern iPhones and Android phones encrypt all their data using your passcode as part of the encryption key. That means even someone who knows what they are doing cannot easily access your files without the correct code.
 
-The lock screen passcode also works alongside Face ID (iPhone) or fingerprint recognition (Android) — you still get the convenience of unlocking quickly with your face or finger, but the PIN is the backup that protects you if those methods fail or someone tries to access your phone while you are asleep.
+The lock screen passcode also works alongside Face ID (iPhone) or fingerprint recognition (Android). You still get the convenience of unlocking quickly with your face or finger, but the PIN is the backup that protects you if those methods fail or someone tries to access your phone while you are asleep.
 
 ---
 
@@ -487,8 +487,8 @@ The lock screen passcode also works alongside Face ID (iPhone) or fingerprint re
 
 When you set up a phone lock, you usually have several choices. Here is what each one means:
 
-- **4-digit PIN:** A four-number code such as 1234 or 7291. Fast to type, but the weakest option — there are only 10,000 possible combinations, and a determined person could guess it by trying combinations.
-- **6-digit PIN:** A six-number code such as 489201. Much stronger than a 4-digit PIN — there are one million possible combinations. This is a good balance between security and convenience for most people.
+- **4-digit PIN:** A four-number code such as 1234 or 7291. Fast to type, but the weakest option. There are only 10,000 possible combinations, and a determined person could guess it by trying combinations.
+- **6-digit PIN:** A six-number code such as 489201. Much stronger than a 4-digit PIN. There are one million possible combinations. This is a good balance between security and convenience for most people.
 - **Alphanumeric password:** A password that mixes letters and numbers, similar to a computer password. The most secure option. Takes slightly longer to type on a phone keyboard but provides the best protection.
 
 **Which should you choose?** For most people, a **6-digit PIN** is a strong and practical choice. Avoid common patterns like 123456, your birth year, or repeating digits like 111111.

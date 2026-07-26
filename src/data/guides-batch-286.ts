@@ -17,7 +17,7 @@ export const guidesBatch286: Guide[] = [
     difficulty: 'Beginner',
     body: `Shazam is a free service that identifies songs by listening to them. You hear a song on the car radio, in a restaurant, or in a store, and Shazam tells you the name of the song, the artist, and where to find it. It works in seconds.
 
-Apple owns Shazam, and starting with iOS 15, Shazam is built directly into iPhone — you do not need to download an app. You can ask Siri "What song is this?" or add a Shazam button to Control Center for one-tap identification.
+Apple owns Shazam, and starting with iOS 15, Shazam is built directly into iPhone. You do not need to download an app. You can ask Siri "What song is this?" or add a Shazam button to Control Center for one-tap identification.
 
 There is also a free Shazam app available on iPhone and Android with extra features like saved history of every song you have identified.
 

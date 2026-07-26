@@ -15,7 +15,7 @@ export const guidesBatch78: Guide[] = [
 
 A powerline adapter kit comes with two units. One plugs into an electrical outlet near your router. And you connect it to the router with a short ethernet cable that typically comes in the box. The second unit plugs into any other outlet in your home. And you connect that one to your computer, smart TV, or streaming device. The two adapters communicate with each other through the electrical wiring in the walls, creating a stable, wired-speed connection anywhere in your house.
 
-Powerline adapters work best when both units are on the same electrical circuit. In most homes this is not a problem, but if you have a very large house with separate circuit panels, you may see reduced performance. Avoid plugging them into power strips or surge protectors — they work best when plugged directly into a wall outlet.
+Powerline adapters work best when both units are on the same electrical circuit. In most homes this is not a problem, but if you have a very large house with separate circuit panels, you may see reduced performance. Avoid plugging them into power strips or surge protectors. They work best when plugged directly into a wall outlet.
 
 Modern powerline kits from brands like TP-Link (their AV1000 and AV2000 lines are popular) and NETGEAR typically cost between $35 and $80 at stores like Amazon, Walmart, or Best Buy. They are a lot faster and more reliable than WiFi range extenders, and far less expensive than having an electrician run new ethernet cables through your walls.
 
@@ -68,7 +68,7 @@ Wired connections are especially helpful for desktop computers, smart TVs, gamin
     steps: [
       {
         title: `Buy an ethernet cable`,
-        content: `Choose a cable long enough to reach from your router to your device. Standard lengths are 3, 6, 10, 15, and 25 feet. A Cat 5e or Cat 6 cable from any brand works fine — you can find them at Walmart, Target, Amazon, or Best Buy for $5–$15. Pick a length with a little extra slack so you are not stretching it tight.`,
+        content: `Choose a cable long enough to reach from your router to your device. Standard lengths are 3, 6, 10, 15, and 25 feet. A Cat 5e or Cat 6 cable from any brand works fine. You can find them at Walmart, Target, Amazon, or Best Buy for $5–$15. Pick a length with a little extra slack so you are not stretching it tight.`,
         tip: `Quick Tip: Cat 6 cables are slightly faster than Cat 5e, but for most home internet connections the difference is not noticeable. Either type works great.`,
       },
       {
@@ -108,7 +108,7 @@ There are two kinds of USB hubs. A basic "bus-powered" hub draws its power from 
 
 When shopping, look for terms like "USB 3.0" — this refers to the version of USB technology. USB 3.0 hubs transfer files much faster than older USB 2.0 hubs, which matters when you are copying photos or videos. Popular and affordable options include hubs from Anker, HooToo, and Sabrent, available at Amazon, Best Buy, and Walmart for $20–$50.
 
-A USB hub is one of the most practical accessories you can add to a laptop. And it requires no technical knowledge to use — you plug it in and it works.`,
+A USB hub is one of the most practical accessories you can add to a laptop. And it requires no technical knowledge to use. You plug it in and it works.`,
     steps: [
       {
         title: `Identify what ports your laptop has`,
@@ -186,7 +186,7 @@ Before purchasing, make a list of what you want to connect: how many monitors, w
     difficulty: `Beginner`,
     body: `The trackpad on a MacBook is one of the most capable touchpads made. Beyond moving the cursor and clicking, it responds to a wide range of finger gestures that can save you a great deal of time. Once you learn these gestures, you will find yourself navigating your Mac faster and more comfortably than ever before.
 
-The good news is that most of these gestures are intuitive — they feel like natural movements. Spreading two fingers apart zooms in on a page, which mimics what you might do on a phone screen. Swiping three fingers across the trackpad moves between open apps or desktop spaces. Pinching all four fingers together brings up your app launcher.
+The good news is that most of these gestures are intuitive. They feel like natural movements. Spreading two fingers apart zooms in on a page, which mimics what you might do on a phone screen. Swiping three fingers across the trackpad moves between open apps or desktop spaces. Pinching all four fingers together brings up your app launcher.
 
 You do not need to press hard. The Mac trackpad is "force touch" capable, meaning it can detect light taps as clicks. A normal, light tap anywhere on the trackpad counts as a left click. Pressing firmly gives you additional options, like looking up the definition of a word.
 
@@ -231,7 +231,7 @@ These gestures work on all MacBook models, and most also work on Apple's externa
 
 This design makes trackball mice an excellent choice for people who experience wrist pain, have arthritis, or have limited mobility in their hands or arms. Because you are only moving your thumb or fingertips — not your whole arm — there's a lot less strain on your joints. Physical therapists and occupational therapists often recommend trackballs to people who experience pain from regular mouse use.
 
-Trackballs also require much less desk space than a regular mouse. Since the device itself does not move, you do not need a large mousepad or clear area — you can set it down on a small corner of your desk and it will work perfectly.
+Trackballs also require much less desk space than a regular mouse. Since the device itself does not move, you do not need a large mousepad or clear area. You can set it down on a small corner of your desk and it will work perfectly.
 
 The two most popular styles are thumb-controlled trackballs (like the Logitech MX Ergo and M575, which range from $45 to $100) and finger-controlled trackballs where you roll the ball with your index and middle fingers (like the Kensington Expert Mouse or Slimblade, ranging from $70 to $130). Thumb-controlled versions tend to feel more natural to most beginners because the mouse shape is similar to a regular mouse.
 
@@ -276,7 +276,7 @@ Magnifier works in three different modes. Full screen mode enlarges the entire s
 
 For most people who want to make text easier to read, Full screen mode works best. You can set the zoom level anywhere from 100% (no zoom) all the way to 1600%. A zoom level of 150% to 200% makes most text noticeably larger without feeling overwhelming.
 
-Magnifier also includes a text-to-speech feature called "Read from here" — you can have it read aloud whatever is under your cursor, which is helpful for anyone who wants both visual and audio help.
+Magnifier also includes a text-to-speech feature called "Read from here". You can have it read aloud whatever is under your cursor, which is helpful for anyone who wants both visual and audio help.
 
 The quickest way to turn Magnifier on or off is the keyboard shortcut Windows key + Plus sign (+) to turn it on, and Windows key + Escape to turn it off. You can also increase the zoom with Windows key + Plus and decrease it with Windows key + Minus. These shortcuts work instantly from anywhere on your computer without needing to open any menus.`,
     steps: [
@@ -291,7 +291,7 @@ The quickest way to turn Magnifier on or off is the keyboard shortcut Windows ke
       },
       {
         title: `Choose a magnifier mode`,
-        content: `Click the gear icon (settings) on the Magnifier toolbar to open Magnifier settings. Under "Magnifier view," you can choose Full screen, Lens, or Docked. Full screen is recommended for most users — it magnifies everything and you pan around by moving your mouse to the edges of the screen.`,
+        content: `Click the gear icon (settings) on the Magnifier toolbar to open Magnifier settings. Under "Magnifier view," you can choose Full screen, Lens, or Docked. Full screen is recommended for most users. It magnifies everything and you pan around by moving your mouse to the edges of the screen.`,
       },
       {
         title: `Set Magnifier to start automatically if needed`,
@@ -356,7 +356,7 @@ For users who want even larger text without zooming the entire screen, you can a
 
 With TalkBack running, you interact with your phone differently than usual. Instead of tapping once to open an app, you tap once to hear what it is, then double-tap to open it. To scroll, you use two fingers instead of one. This new way of navigating takes a little practice. But it is logical and consistent once you learn the pattern.
 
-To turn on TalkBack, you typically go to Settings → Accessibility → TalkBack and toggle it on. On some phones you can activate it even faster with a shortcut: press and hold both volume buttons at the same time for three seconds. Google provides a built-in TalkBack tutorial that teaches you the gestures step by step — it is a great place to start.
+To turn on TalkBack, you typically go to Settings → Accessibility → TalkBack and toggle it on. On some phones you can activate it even faster with a shortcut: press and hold both volume buttons at the same time for three seconds. Google provides a built-in TalkBack tutorial that teaches you the gestures step by step. It is a great place to start.
 
 TalkBack also reads text messages out loud when they arrive, speaks the time when you unlock your phone, and reads web pages aloud. Combined with Google Assistant, it makes it possible to send messages, make phone calls, set reminders, and search the internet entirely by voice.
 
@@ -408,7 +408,7 @@ VoiceOver integrates deeply with all Apple apps. It reads text messages as they 
 
 You can quickly turn VoiceOver on or off without digging through Settings. Go to Settings → Accessibility → Accessibility Shortcut and select VoiceOver. Then, triple-clicking the side button (or the home button on older iPhones) will toggle VoiceOver on and off instantly.
 
-VoiceOver works on iPhones running iOS 17 or later, which covers almost every iPhone from the past several years. There is nothing to download or pay for — it is a core part of iPhone.`,
+VoiceOver works on iPhones running iOS 17 or later, which covers almost every iPhone from the past several years. There is nothing to download or pay for. It is a core part of iPhone.`,
     steps: [
       {
         title: `Turn on VoiceOver`,
@@ -421,7 +421,7 @@ VoiceOver works on iPhones running iOS 17 or later, which covers almost every iP
       },
       {
         title: `Take the VoiceOver Practice tutorial`,
-        content: `In Settings → Accessibility → VoiceOver, tap "VoiceOver Practice" (you may need to double-tap it with VoiceOver active). This dedicated practice area lets you try all the gestures without accidentally opening or changing anything. Spend 10–15 minutes here before using the phone normally — it makes the learning curve much shorter.`,
+        content: `In Settings → Accessibility → VoiceOver, tap "VoiceOver Practice" (you may need to double-tap it with VoiceOver active). This dedicated practice area lets you try all the gestures without accidentally opening or changing anything. Spend 10–15 minutes here before using the phone normally. It makes the learning curve much shorter.`,
       },
       {
         title: `Set up the Accessibility Shortcut for quick toggle`,
@@ -572,7 +572,7 @@ These two settings are independent and you can use them together. Increasing Fon
 
 The exact location of these settings may vary slightly by phone brand. Samsung Galaxy phones, for example, have these settings under Settings → Display → Font Size and Style. Pixel phones and most stock Android phones use Settings → Accessibility → Display Size and Text. If you cannot find them, search for "font size" in your phone's search bar within Settings.
 
-Nothing about these changes is permanent — you can return to the original settings at any time.`,
+Nothing about these changes is permanent. You can return to the original settings at any time.`,
     steps: [
       {
         title: `Open Accessibility settings`,
@@ -655,7 +655,7 @@ You can control the reading voice, speaking speed, and language. Edge offers sev
 
 You can start, pause, and skip forward or backward using a simple toolbar that appears at the top of the screen when Read Aloud is active. Clicking anywhere in the text also moves the reader to that location. So you can skip to a specific section of an article.
 
-Read Aloud is especially useful for people who want to multitask — you can listen to an article while eating, resting, or doing something else nearby, with the computer doing the reading for you.`,
+Read Aloud is especially useful for people who want to multitask. You can listen to an article while eating, resting, or doing something else nearby, with the computer doing the reading for you.`,
     steps: [
       {
         title: `Open Microsoft Edge and navigate to a page or PDF`,
@@ -786,7 +786,7 @@ Some websites detect ad blockers and ask you to disable the blocker before readi
       },
       {
         title: `Confirm it is working`,
-        content: `After installation, a small red shield icon appears in the top-right corner of your Chrome browser. Visit any news website or general interest website — you should notice fewer ads loading, pages that look cleaner, and potentially faster loading times. Click the red shield icon to see a count of how many elements it has blocked on the current page.`,
+        content: `After installation, a small red shield icon appears in the top-right corner of your Chrome browser. Visit any news website or general interest website. You should notice fewer ads loading, pages that look cleaner, and potentially faster loading times. Click the red shield icon to see a count of how many elements it has blocked on the current page.`,
       },
       {
         title: `Whitelist websites you want to support (optional)`,
@@ -819,7 +819,7 @@ uBlock Origin is available for Chrome, Firefox, Microsoft Edge, and Opera.`,
     steps: [
       {
         title: `Install uBlock Origin from the official source`,
-        content: `For Chrome: Open Chrome and go to chromewebstore.google.com. Search for "uBlock Origin" and click the result published by developer "Raymond Hill" — it should have millions of users and a four-star-plus rating. Click "Add to Chrome," then "Add extension." For Firefox: go to addons.mozilla.org, search "uBlock Origin," and click "Add to Firefox." The extension installs in seconds.`,
+        content: `For Chrome: Open Chrome and go to chromewebstore.google.com. Search for "uBlock Origin" and click the result published by developer "Raymond Hill". It should have millions of users and a four-star-plus rating. Click "Add to Chrome," then "Add extension." For Firefox: go to addons.mozilla.org, search "uBlock Origin," and click "Add to Firefox." The extension installs in seconds.`,
         warning: `There are imitation extensions with very similar names like "uBlock" or "uBlock Plus" or "uBlock Origin Lite" (a weaker version with limited features). For the full, trusted version, confirm the developer is "Raymond Hill" and the name is exactly "uBlock Origin."`,
       },
       {

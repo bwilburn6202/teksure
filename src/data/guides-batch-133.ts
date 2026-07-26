@@ -51,12 +51,12 @@ This guide walks through how the scam works, how to recognize it during a call, 
       },
       {
         title: 'Lock down what scammers can find about your family',
-        content: 'AI voice cloning needs source audio. Make it harder to find. On Facebook, set videos to "Friends only." On Instagram, set the account to private. On TikTok, set it to private unless your family member specifically wants public exposure. Talk to your grandchildren about this — they may not realize their TikTok voice is being scraped to scam their grandparents. Also: remove your phone number from your public social profiles. Scammers use it to match voices to family members.',
+        content: 'AI voice cloning needs source audio. Make it harder to find. On Facebook, set videos to "Friends only." On Instagram, set the account to private. On TikTok, set it to private unless your family member specifically wants public exposure. Talk to your grandchildren about this. They may not realize their TikTok voice is being scraped to scam their grandparents. Also: remove your phone number from your public social profiles. Scammers use it to match voices to family members.',
         tip: 'Quick Tip: Search your own name on Google once a year. Look at what comes up. If your phone number, address, or family info is showing on data-broker sites like Spokeo or WhitePages, you can request removal. The FTC has free instructions at consumer.ftc.gov.',
       },
       {
         title: 'If it happens to you — report it',
-        content: 'If you have been targeted by a voice-cloning scam (whether or not money was lost), report it. Go to reportfraud.ftc.gov to file with the Federal Trade Commission. If money was sent, also report at ic3.gov (the FBI). Then call the bank, card issuer, or app you sent the money through — they may be able to claw it back if you act in the first few hours. Finally, tell your friends and your church or community group. These scams spread by word of mouth — and so does the defense.',
+        content: 'If you have been targeted by a voice-cloning scam (whether or not money was lost), report it. Go to reportfraud.ftc.gov to file with the Federal Trade Commission. If money was sent, also report at ic3.gov (the FBI). Then call the bank, card issuer, or app you sent the money through. They may be able to claw it back if you act in the first few hours. Finally, tell your friends and your church or community group. These scams spread by word of mouth — and so does the defense.',
       },
     ],
   },
@@ -91,7 +91,7 @@ This guide shows how to turn it on, what works and what does not, and a couple o
       },
       {
         title: 'Use your iPhone with the Mac trackpad and keyboard',
-        content: 'Once mirroring is active, your iPhone screen appears in a window on your Mac. Click anywhere with your trackpad — it works like tapping on the phone. Scroll with two fingers on the trackpad like you would scroll a webpage. Type with your Mac keyboard wherever the iPhone keyboard would have appeared. The mouse acts as your finger. The keyboard acts as the iPhone keyboard. You can also click and hold to do the iPhone "press and hold" gesture. Swipe from the bottom of the iPhone window to go home, just like on the phone.',
+        content: 'Once mirroring is active, your iPhone screen appears in a window on your Mac. Click anywhere with your trackpad. It works like tapping on the phone. Scroll with two fingers on the trackpad like you would scroll a webpage. Type with your Mac keyboard wherever the iPhone keyboard would have appeared. The mouse acts as your finger. The keyboard acts as the iPhone keyboard. You can also click and hold to do the iPhone "press and hold" gesture. Swipe from the bottom of the iPhone window to go home, just like on the phone.',
         tip: 'Quick Tip: To open Spotlight Search inside the iPhone window, click the top edge of the iPhone screen and drag downward — same as pulling down on a physical iPhone.',
       },
       {
@@ -201,7 +201,7 @@ This guide walks through Google's free Security Checkup and a 30-minute spring c
       },
       {
         title: 'Check who can see your YouTube, Photos, and Maps activity',
-        content: 'Google quietly shares more of your activity than you might expect. Go to myaccount.google.com/data-and-privacy. Look at: Web & App Activity (turn on Auto-delete every 3 months if you want), YouTube History (auto-delete every 3 months reduces what advertisers and recommendations know about you), Location History (turn it off entirely unless you actively want Google to track every place you go), and Ad Personalization (turn it off if you do not want ads based on your data). None of these breaks how Google works — they just give you privacy.',
+        content: 'Google quietly shares more of your activity than you might expect. Go to myaccount.google.com/data-and-privacy. Look at: Web & App Activity (turn on Auto-delete every 3 months if you want), YouTube History (auto-delete every 3 months reduces what advertisers and recommendations know about you), Location History (turn it off entirely unless you actively want Google to track every place you go), and Ad Personalization (turn it off if you do not want ads based on your data). None of these breaks how Google works. They just give you privacy.',
       },
       {
         title: 'Turn on (or upgrade) two-step verification',

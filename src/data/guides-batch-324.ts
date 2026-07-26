@@ -114,7 +114,7 @@ export const guidesBatch324: Guide[] = [
     publishedAt: "2026-07-18",
     lastVerifiedAt: "2026-07-18",
     difficulty: "Beginner",
-    body: "Setting up a new Windows computer used to mean manually copying files and reinstalling every program one at a time. The Windows Backup app, built into Windows 11, makes this much easier by saving your files, a list of your installed apps, and many of your settings to your Microsoft account (using OneDrive). So you can bring them over to a new PC automatically during setup.\n\nWindows Backup saves your desktop, documents, pictures, and other personal folders to OneDrive, remembers your Wi-Fi network settings, and keeps a list of apps you had installed so Windows can offer to reinstall them for you on the new computer (from the Microsoft Store or, where available, other sources). It does not duplicate everything on your old hard drive — it focuses on your personal files and setup preferences rather than creating a full copy of the entire hard drive.\n\nBecause backed-up files go to OneDrive, you'll want to check how much free OneDrive storage you have before starting, since a free Microsoft account includes a limited amount (5 GB as of this writing) and larger backups may require a paid Microsoft 365 subscription for more storage. Source: support.microsoft.com/windows (Back up your Windows PC).",
+    body: "Setting up a new Windows computer used to mean manually copying files and reinstalling every program one at a time. The Windows Backup app, built into Windows 11, makes this much easier by saving your files, a list of your installed apps, and many of your settings to your Microsoft account (using OneDrive). So you can bring them over to a new PC automatically during setup.\n\nWindows Backup saves your desktop, documents, pictures, and other personal folders to OneDrive, remembers your Wi-Fi network settings, and keeps a list of apps you had installed so Windows can offer to reinstall them for you on the new computer (from the Microsoft Store or, where available, other sources). It does not duplicate everything on your old hard drive. It focuses on your personal files and setup preferences rather than creating a full copy of the entire hard drive.\n\nBecause backed-up files go to OneDrive, you'll want to check how much free OneDrive storage you have before starting, since a free Microsoft account includes a limited amount (5 GB as of this writing) and larger backups may require a paid Microsoft 365 subscription for more storage. Source: support.microsoft.com/windows (Back up your Windows PC).",
     steps: [
       {
         title: "Open the Windows Backup app",
@@ -151,7 +151,7 @@ export const guidesBatch324: Guide[] = [
       {
         title: "Mark the dates on your calendar",
         content: "Medicare Open Enrollment runs October 15 through December 7 every year. Set a reminder a week or two before it opens so you have time to review your Annual Notice of Change letter.",
-        tip: "Quick Tip: Changes made during Open Enrollment start January 1 of the following year — you don't need to do anything if you're happy with your current plan.",
+        tip: "Quick Tip: Changes made during Open Enrollment start January 1 of the following year. You don't need to do anything if you're happy with your current plan.",
       },
       {
         title: "Read your Annual Notice of Change letter",

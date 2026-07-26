@@ -17,13 +17,13 @@ Each book is a small, flat-lay softcover book that costs around $10 to $15 plus 
 
 You can connect Chatbooks to your iPhone camera roll, Android gallery, Instagram, or Facebook. Once it is connected, the app keeps running in the background and builds books without you having to do anything. You can also review each book before it prints, swap out photos you do not want, or change the order.
 
-Chatbooks offers several book styles. The "Series" plan is the most popular — it automatically sends a new book every time your photo count reaches 60. You can also order one-off books if you prefer not to subscribe. Prices depend on book size, page count, and shipping destination.
+Chatbooks offers several book styles. The "Series" plan is the most popular. It automatically sends a new book every time your photo count reaches 60. You can also order one-off books if you prefer not to subscribe. Prices depend on book size, page count, and shipping destination.
 
 Photo books make meaningful gifts for grandparents, parents, or anyone who would rather hold a real photo than look at a screen. You can also use Chatbooks to preserve vacation memories, school years, or milestone moments without spending hours at a computer designing layouts.`,
     steps: [
       {
         title: `Download the Chatbooks app`,
-        content: `Open the App Store on iPhone or the Google Play Store on Android. Search for "Chatbooks" and tap the download button. The app is free to install — you only pay when you order a printed book.`,
+        content: `Open the App Store on iPhone or the Google Play Store on Android. Search for "Chatbooks" and tap the download button. The app is free to install. You only pay when you order a printed book.`,
         tip: `Quick Tip: Chatbooks also works through its website at chatbooks.com if you prefer to work on a computer instead of your phone.`,
       },
       {
@@ -32,7 +32,7 @@ Photo books make meaningful gifts for grandparents, parents, or anyone who would
       },
       {
         title: `Connect your photo source`,
-        content: `After signing in, the app will ask which photos to use. Tap "Camera Roll" to use photos saved on your phone, or choose Instagram or Facebook if you would like to pull photos from social media. When prompted, allow Chatbooks to access your photos — it needs this permission to see your pictures.`,
+        content: `After signing in, the app will ask which photos to use. Tap "Camera Roll" to use photos saved on your phone, or choose Instagram or Facebook if you would like to pull photos from social media. When prompted, allow Chatbooks to access your photos. It needs this permission to see your pictures.`,
         warning: `Chatbooks only reads your photos to create books. It does not post to social media or share your photos with anyone.`,
       },
       {
@@ -72,7 +72,7 @@ Mixbook ships anywhere in the United States, and most standard-quality orders ar
     steps: [
       {
         title: `Go to Mixbook.com and create a free account`,
-        content: `Open your web browser and type mixbook.com into the address bar. Click "Sign Up" in the top-right corner. Enter your name, email address, and a password. You can also sign in with your Google account if you prefer. Creating an account is free — you only pay when you place a print order.`,
+        content: `Open your web browser and type mixbook.com into the address bar. Click "Sign Up" in the top-right corner. Enter your name, email address, and a password. You can also sign in with your Google account if you prefer. Creating an account is free. You only pay when you place a print order.`,
       },
       {
         title: `Choose a product type`,
@@ -109,7 +109,7 @@ Mixbook ships anywhere in the United States, and most standard-quality orders ar
     thumbnailEmoji: ``,
     publishedAt: `2026-04-20`,
     difficulty: `Beginner`,
-    body: `Blue Apron is a meal kit delivery service. Each week, the company ships a box of fresh, pre-measured ingredients directly to your home, along with recipe cards that walk you through cooking each dish step by step. The idea is to take the guesswork out of weeknight cooking — you do not need to plan a menu, make a grocery list, or measure anything out. Everything you need arrives ready to use.
+    body: `Blue Apron is a meal kit delivery service. Each week, the company ships a box of fresh, pre-measured ingredients directly to your home, along with recipe cards that walk you through cooking each dish step by step. The idea is to take the guesswork out of weeknight cooking. You do not need to plan a menu, make a grocery list, or measure anything out. Everything you need arrives ready to use.
 
 Blue Apron meals are designed for home cooks of all experience levels. Most recipes take between 30 and 50 minutes to prepare and are labeled with a difficulty level. Meals range from classic American dishes like burgers and pasta to globally inspired recipes like tacos, stir-fries, and curries.
 
@@ -258,7 +258,7 @@ When you sign up, Noom asks you a series of questions about your health history,
 
 Noom uses a food color system instead of strict rules. Foods are labeled green (low in calories relative to their volume — fruits, vegetables, whole grains), yellow (moderate — lean meats, dairy, beans), or red (high in calories — fried foods, sweets, processed snacks). The system is not about forbidding any food. The idea is to help you notice patterns and make more intentional choices over time.
 
-The app is available for iPhone and Android and costs around $60 to $70 per month, though Noom often offers promotional pricing for new users. Many people find the first few weeks free or deeply discounted as a trial. Noom does not require a gym membership or special foods — you eat what you normally have access to and work within a budget.
+The app is available for iPhone and Android and costs around $60 to $70 per month, though Noom often offers promotional pricing for new users. Many people find the first few weeks free or deeply discounted as a trial. Noom does not require a gym membership or special foods. You eat what you normally have access to and work within a budget.
 
 Noom is best suited for people who want behavioral support alongside calorie tracking, not just a food diary.`,
     steps: [
@@ -298,7 +298,7 @@ Noom is best suited for people who want behavioral support alongside calorie tra
     difficulty: `Beginner`,
     body: `Lose It! is one of the most popular free calorie tracking apps available for iPhone and Android. It helps you set a daily calorie budget based on your age, weight, height, activity level, and goal — whether that is losing weight, maintaining your current weight, or eating more mindfully. Each day, you log what you eat, and the app shows you how many calories you have left for the rest of the day.
 
-The app has a database of more than 33 million foods, including items from major restaurant chains, packaged grocery products, and generic home-cooked ingredients. Searching for most common foods takes just a few seconds. Lose It! also has a barcode scanner — you point your phone's camera at any packaged food label and the app pulls up the nutrition information automatically.
+The app has a database of more than 33 million foods, including items from major restaurant chains, packaged grocery products, and generic home-cooked ingredients. Searching for most common foods takes just a few seconds. Lose It! also has a barcode scanner. You point your phone's camera at any packaged food label and the app pulls up the nutrition information automatically.
 
 In addition to calories, Lose It! tracks protein, carbohydrates, fat, fiber, sodium, and other nutrients if you are interested in that level of detail. You can also log water intake, exercise, and body measurements. The free version of the app includes all the core tracking features. A premium paid tier adds more detailed nutrition analysis, meal planning, and additional insights, but many people find the free version is everything they need.
 
@@ -365,7 +365,7 @@ Tasty is a good starting point for anyone who wants to cook more at home but doe
       },
       {
         title: `Read the written steps while you cook`,
-        content: `Below the video, Tasty shows the full list of ingredients and numbered written steps. While you cook, follow along with the written steps — they include more detail than the video. Tap "Cook Mode" if the app offers it, which keeps your screen from going dark while you are in the kitchen and displays steps in a large, easy-to-read format.`,
+        content: `Below the video, Tasty shows the full list of ingredients and numbered written steps. While you cook, follow along with the written steps. They include more detail than the video. Tap "Cook Mode" if the app offers it, which keeps your screen from going dark while you are in the kitchen and displays steps in a large, easy-to-read format.`,
       },
       {
         title: `Save recipes and build a shopping list`,
@@ -446,11 +446,11 @@ One important thing to know: TracFone minutes and plans expire after a certain n
       },
       {
         title: `Activate your phone or SIM`,
-        content: `Activation can be done online at tracfone.com, through the TracFone app, or by calling 1-800-867-7183. You will need the serial number (called the IMEI or MEID) from your phone — it is usually printed on a sticker inside the battery compartment or under Settings > About Phone. During activation, you will choose a phone number or transfer your existing number, and enter a service plan or airtime card code if you purchased one.`,
+        content: `Activation can be done online at tracfone.com, through the TracFone app, or by calling 1-800-867-7183. You will need the serial number (called the IMEI or MEID) from your phone. It is usually printed on a sticker inside the battery compartment or under Settings > About Phone. During activation, you will choose a phone number or transfer your existing number, and enter a service plan or airtime card code if you purchased one.`,
       },
       {
         title: `Add a service plan or airtime card`,
-        content: `TracFone offers two ways to add service. The first is a monthly plan — you pay a set amount each month for a bundle of minutes, texts, and data. The second is an "airtime card" — a physical card sold at retailers with a code that adds minutes and days of service when you scratch off and enter the code. Monthly plans are generally the better value for regular users.`,
+        content: `TracFone offers two ways to add service. The first is a monthly plan. You pay a set amount each month for a bundle of minutes, texts, and data. The second is an "airtime card" — a physical card sold at retailers with a code that adds minutes and days of service when you scratch off and enter the code. Monthly plans are generally the better value for regular users.`,
       },
       {
         title: `Download the My TracFone app`,
@@ -473,7 +473,7 @@ One important thing to know: TracFone minutes and plans expire after a certain n
     thumbnailEmoji: ``,
     publishedAt: `2026-04-20`,
     difficulty: `Beginner`,
-    body: `Asurion is the largest phone insurance provider in the United States. If you have phone insurance through Verizon, AT&T, T-Mobile, or another major carrier, there is a good chance Asurion is the company actually handling your claims. Many people discover they have Asurion insurance only when they need it — it is often added automatically when you buy a new phone from a carrier.
+    body: `Asurion is the largest phone insurance provider in the United States. If you have phone insurance through Verizon, AT&T, T-Mobile, or another major carrier, there is a good chance Asurion is the company actually handling your claims. Many people discover they have Asurion insurance only when they need it. It is often added automatically when you buy a new phone from a carrier.
 
 Asurion covers a range of situations that can happen to a phone: cracked screens, water damage, hardware malfunctions, theft, and loss. Coverage details vary based on your specific plan, but most standard plans include all of these. There is typically a deductible (a fee you pay when filing a claim) that depends on your phone model — for newer, higher-end phones, deductibles can range from $29 to $299.
 
@@ -499,7 +499,7 @@ Claims can be filed online at asurion.com, through the MyAsurion app, or by call
       },
       {
         title: `Pay the deductible and confirm the claim`,
-        content: `Once you choose your repair or replacement option, you will be asked to pay the deductible by credit or debit card. Review the confirmation screen carefully before paying — it shows the deductible amount, what you are receiving, and the estimated delivery or repair time. After payment, you will receive an email confirmation with tracking information if your device is being shipped.`,
+        content: `Once you choose your repair or replacement option, you will be asked to pay the deductible by credit or debit card. Review the confirmation screen carefully before paying. It shows the deductible amount, what you are receiving, and the estimated delivery or repair time. After payment, you will receive an email confirmation with tracking information if your device is being shipped.`,
       },
       {
         title: `Report a stolen phone to local police first`,
@@ -529,7 +529,7 @@ The Chase Mobile app is available in the App Store (iPhone) and Google Play Stor
     steps: [
       {
         title: `Download the Chase Mobile app and sign in`,
-        content: `Search "Chase Mobile" in the App Store or Google Play Store and install the free app. Open it and tap "Sign In." If you already have a Chase online banking account, enter your username and password. If this is your first time setting up online access, tap "Enroll" and follow the steps — you will need your Chase account number, Social Security number, and a valid email address.`,
+        content: `Search "Chase Mobile" in the App Store or Google Play Store and install the free app. Open it and tap "Sign In." If you already have a Chase online banking account, enter your username and password. If this is your first time setting up online access, tap "Enroll" and follow the steps. You will need your Chase account number, Social Security number, and a valid email address.`,
         tip: `Quick Tip: After your first sign-in, set up Face ID or fingerprint login so you do not have to type your password every time. Go to Profile (top right) > Security Settings > Enable Face/Touch ID.`,
       },
       {
@@ -573,7 +573,7 @@ Download the app by searching "Bank of America Mobile Banking" in the App Store 
     steps: [
       {
         title: `Download the app and sign in or enroll`,
-        content: `Search "Bank of America Mobile Banking" in the App Store (iPhone) or Google Play Store (Android). Download the free app and open it. If you already have online banking set up, tap "Sign In" and enter your Online ID and password. If this is your first time using digital banking with Bank of America, tap "Enroll" and follow the steps — you will need your account number and the last four digits of your Social Security number.`,
+        content: `Search "Bank of America Mobile Banking" in the App Store (iPhone) or Google Play Store (Android). Download the free app and open it. If you already have online banking set up, tap "Sign In" and enter your Online ID and password. If this is your first time using digital banking with Bank of America, tap "Enroll" and follow the steps. You will need your account number and the last four digits of your Social Security number.`,
       },
       {
         title: `Set up quick access with fingerprint or Face ID`,
@@ -653,7 +653,7 @@ To use the app, you need a Wells Fargo account. If you bank with Wells Fargo but
 
 Google Voice is useful in a number of situations. People use it as a second phone number — for example, to give out to businesses, online listings, or new contacts while keeping their personal number private. It is also handy for people who travel internationally, since you can make calls back to the US for free over Wi-Fi without paying international calling charges. Others use it to set up a voicemail inbox they can check from a computer.
 
-To use Google Voice, you need a Google account (Gmail). You do not need a separate phone plan — Google Voice calls and texts are free within the US when made over Wi-Fi. However, Google Voice is designed to work alongside a phone — it needs to be linked to an existing phone number during setup (called a "forwarding number") to verify your identity and enable call forwarding.
+To use Google Voice, you need a Google account (Gmail). You do not need a separate phone plan — Google Voice calls and texts are free within the US when made over Wi-Fi. However, Google Voice is designed to work alongside a phone. It needs to be linked to an existing phone number during setup (called a "forwarding number") to verify your identity and enable call forwarding.
 
 There is also a Google Voice for Google Workspace (business accounts) option, but the personal version described here is the free version available to anyone with a Gmail account.
 
@@ -675,7 +675,7 @@ The Google Voice app is free and available in the App Store and Google Play Stor
       },
       {
         title: `Set up your voicemail`,
-        content: `In the Google Voice app, go to Settings (the gear icon) and tap "Voicemail." You can record a personal greeting by tapping "Record a greeting" and speaking your message. Google Voice also offers a text transcription service — it will attempt to convert voicemail messages to text and send them to you as a notification, which is useful if you are in a meeting or quiet location.`,
+        content: `In the Google Voice app, go to Settings (the gear icon) and tap "Voicemail." You can record a personal greeting by tapping "Record a greeting" and speaking your message. Google Voice also offers a text transcription service. It will attempt to convert voicemail messages to text and send them to you as a notification, which is useful if you are in a meeting or quiet location.`,
       },
       {
         title: `Make a call or send a text using Google Voice`,
@@ -737,9 +737,9 @@ Visible is a good fit for people who want a straightforward unlimited plan witho
     thumbnailEmoji: ``,
     publishedAt: `2026-04-20`,
     difficulty: `Intermediate`,
-    body: `Xfinity Mobile is a wireless phone service offered by Comcast to customers who already have Xfinity home internet service. It is not available to the general public — you must be an active Xfinity internet subscriber to sign up. The upside is that Xfinity Mobile can be quite affordable for households already paying for Xfinity internet, especially for people who do not use large amounts of cellular data.
+    body: `Xfinity Mobile is a wireless phone service offered by Comcast to customers who already have Xfinity home internet service. It is not available to the general public. You must be an active Xfinity internet subscriber to sign up. The upside is that Xfinity Mobile can be quite affordable for households already paying for Xfinity internet, especially for people who do not use large amounts of cellular data.
 
-Xfinity Mobile runs on Verizon's network for cellular coverage and automatically connects to Xfinity Wi-Fi hotspots — there are millions of them around the country — when you are within range. This combination helps reduce how much cellular data you use, which can lower your bill if you are on a by-the-gig plan.
+Xfinity Mobile runs on Verizon's network for cellular coverage and automatically connects to Xfinity Wi-Fi hotspots. There are millions of them around the country — when you are within range. This combination helps reduce how much cellular data you use, which can lower your bill if you are on a by-the-gig plan.
 
 Xfinity Mobile offers two pricing models. The "By the Gig" model lets you share a pool of data across your lines and pay only for what you use — starting around $15 for 1 GB per month per line. The "Unlimited" model charges a flat monthly rate per line, similar to other carriers. If you use more than a few gigabytes of data each month, the unlimited option is usually better value.
 

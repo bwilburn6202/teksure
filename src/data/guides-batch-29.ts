@@ -109,7 +109,7 @@ The feature is free for two years from the date you activate a new iPhone. After
 
 Here's how it works: if you dial 911 or use Emergency SOS when your iPhone has no cell service, the phone checks for satellite connectivity. If satellites are available (which requires being outdoors or near an open window — satellites can't be reached through buildings), the phone walks you through positioning yourself toward the satellite for the strongest signal, then transmits your emergency message and GPS location to a relay center that contacts local emergency services on your behalf.
 
-Because satellite data transmission is slow, the feature is limited to emergencies — you can't send regular texts via satellite. The iPhone guides you through a questionnaire (Are you injured? Is someone else injured? What happened?) and relays your answers. Response times via satellite are longer than a standard 911 call — expect at least a few minutes for confirmation.
+Because satellite data transmission is slow, the feature is limited to emergencies. You can't send regular texts via satellite. The iPhone guides you through a questionnaire (Are you injured? Is someone else injured? What happened?) and relays your answers. Response times via satellite are longer than a standard 911 call — expect at least a few minutes for confirmation.
 
 Setup requires nothing — the feature is on by default on compatible iPhones. You need to have your iPhone set up and know how to trigger Emergency SOS. You can also use it to share your location with friends and family when out of cell range through the Roadside Help via Satellite feature.`,
     steps: [
@@ -133,7 +133,7 @@ Setup requires nothing — the feature is on by default on compatible iPhones. Y
       {
         title: 'Practice the Demo Mode',
         content: 'You can experience the satellite interface without actually calling for help. Go to Settings → Emergency SOS → Try Demo. The demo walks you through the entire satellite connection process including the positioning screen. So you know exactly what to expect if you ever need it in a real emergency.',
-        warning: `This feature requires an open view of the sky — it does not work inside buildings or in areas with dense overhead cover. If you're in an emergency inside a structure, try to reach a window or exit before attempting satellite SOS.`,
+        warning: `This feature requires an open view of the sky. It does not work inside buildings or in areas with dense overhead cover. If you're in an emergency inside a structure, try to reach a window or exit before attempting satellite SOS.`,
       },
     ],
   },
@@ -308,7 +308,7 @@ One limitation: ChatGPT's Voice Mode does not browse the internet in real time (
       },
       {
         title: 'Have a Natural Conversation',
-        content: `ChatGPT responds out loud. You can let it finish, or interrupt by speaking — it detects that you've started talking and pauses. Ask follow-ups naturally: "Can you explain that more?" or "What about..." Continue as long as you want. The conversation is also transcribed as text so you can scroll back and read the exchange.`,
+        content: `ChatGPT responds out loud. You can let it finish, or interrupt by speaking. It detects that you've started talking and pauses. Ask follow-ups naturally: "Can you explain that more?" or "What about..." Continue as long as you want. The conversation is also transcribed as text so you can scroll back and read the exchange.`,
       },
       {
         title: 'Change the Voice',
@@ -317,7 +317,7 @@ One limitation: ChatGPT's Voice Mode does not browse the internet in real time (
       {
         title: 'Exit Voice Mode',
         content: 'Tap the "X" or swipe down to exit voice mode and return to the standard text chat. The conversation you had is saved in your chat history as a text transcript. You can continue by typing follow-up questions even after leaving voice mode.',
-        tip: `Voice Mode works best with headphones — it prevents the phone's speaker from picking up ChatGPT's voice as input and causing an echo loop.`,
+        tip: `Voice Mode works best with headphones. It prevents the phone's speaker from picking up ChatGPT's voice as input and causing an echo loop.`,
       },
     ],
   },
@@ -431,7 +431,7 @@ Mobile Order & Pay is the most popular feature. You browse the full menu, custom
 
 The Starbucks Rewards program is built into the app. Every dollar you spend earns Stars. Accumulate enough Stars and you can redeem them for free drinks, food, or merchandise. 25 Stars gets a free food item upgrade; 150 Stars gets a free handcrafted drink. The rate is roughly one free drink per $25-30 spent.
 
-Stars also earn from purchases made in-store by showing your app barcode — you don't have to mobile-order to earn rewards. Show the barcode before the cashier charges you.
+Stars also earn from purchases made in-store by showing your app barcode. You don't have to mobile-order to earn rewards. Show the barcode before the cashier charges you.
 
 The app also gives access to Starbucks promotions: bonus Star opportunities, limited-time offers, and seasonal drink launches. Notifications alert you to current offers, though you can turn these off if you prefer.
 
@@ -475,7 +475,7 @@ Starbucks often runs "Happy Hours" visible in the app — promotional times when
 
 An electronic signature (e-signature) is legally binding in all US states under the ESIGN Act and UETA. Courts recognize e-signatures as equivalent to handwritten signatures for most documents. The main exceptions are wills, trusts, and certain real estate deeds in some states — for those, consult an attorney.
 
-When someone sends you a DocuSign document to sign, you'll receive an email notification. You don't need a DocuSign account to sign — you click a link in the email, review the document, and sign it through DocuSign's website or app. The signature is date-stamped and creates an audit trail of who signed and when.
+When someone sends you a DocuSign document to sign, you'll receive an email notification. You don't need a DocuSign account to sign. You click a link in the email, review the document, and sign it through DocuSign's website or app. The signature is date-stamped and creates an audit trail of who signed and when.
 
 Creating your own DocuSign account (free tier available) allows you to initiate signature requests yourself — upload a document, add signature fields, and send it to others to sign. This is useful if you need someone else to sign a form, like a permission slip or rental agreement.
 
@@ -527,7 +527,7 @@ In Apple Wallet, you can organize passes so the most relevant ones appear at the
 
 This is also useful for membership cards: library cards, gym memberships, and even health insurance cards (some insurers now offer this). Check if your specific card issuer supports Wallet integration.
 
-Adding cards to your Wallet doesn't replace your physical cards — you can keep them as backups. But over time, you'll likely find you rarely need to bring a physical loyalty wallet anymore.`,
+Adding cards to your Wallet doesn't replace your physical cards. You can keep them as backups. But over time, you'll likely find you rarely need to bring a physical loyalty wallet anymore.`,
     steps: [
       {
         title: 'Add Cards to Apple Wallet (iPhone)',
@@ -627,7 +627,7 @@ Do Not Disturb on Android is more granular than many users realize: you can allo
       },
       {
         title: 'Turn Off Notifications for Individual Apps',
-        content: `Scroll through the app list. Tap any app. Toggle "Allow notifications" to off for apps you don't need interrupting you. Apps like games, shopping apps, and social media you check on your own schedule are good candidates to silence completely. This doesn't affect the app's function — it just stops unprompted interruptions.`,
+        content: `Scroll through the app list. Tap any app. Toggle "Allow notifications" to off for apps you don't need interrupting you. Apps like games, shopping apps, and social media you check on your own schedule are good candidates to silence completely. This doesn't affect the app's function. It just stops unprompted interruptions.`,
         tip: `On Samsung phones, apps are listed with a "Recent" sort by default. Sort by "Most recent" or "All" to see everything that's been notifying you.`,
       },
       {
@@ -655,7 +655,7 @@ Do Not Disturb on Android is more granular than many users realize: you can allo
     thumbnailEmoji: '',
     publishedAt: '2026-04-19',
     difficulty: 'Beginner',
-    body: `Missing or doubling up on medication is one of the most common and preventable health problems among older adults. Smart pill dispensers automate the sorting and reminding process — they beep or speak at the right time, dispense the correct dose, and some send alerts to family members or caregivers if a dose is skipped.
+    body: `Missing or doubling up on medication is one of the most common and preventable health problems among older adults. Smart pill dispensers automate the sorting and reminding process. They beep or speak at the right time, dispense the correct dose, and some send alerts to family members or caregivers if a dose is skipped.
 
 These are not the same as a basic weekly pill organizer. Smart pill dispensers actively manage the process: they're programmable (you set your medication schedule), automated (the device prepares each dose), connected (they can text or call a caregiver if medication isn't taken), and trackable (some keep logs of when doses were taken).
 
@@ -760,7 +760,7 @@ The process works like this: you upload your document to an RON platform, comple
 
 Popular RON platforms include Notarize (now Proof), DocuSign Notary, and NotaryCam. Most charge $25-40 per notarization. Some banks and insurance companies now offer free RON services to their customers — worth checking before paying.
 
-RON is accepted as legally valid in most states, but some states still require in-person notarization for specific document types (like real estate deeds in certain states). Always verify your specific document type and state requirements before proceeding with online notarization — you don't want a rejected document.
+RON is accepted as legally valid in most states, but some states still require in-person notarization for specific document types (like real estate deeds in certain states). Always verify your specific document type and state requirements before proceeding with online notarization. You don't want a rejected document.
 
 If online notarization isn't available for your document, banks (particularly credit unions), UPS Stores, shipping and postal stores, libraries, and AAA offices often offer free or low-cost notary services for customers.`,
     steps: [
@@ -847,7 +847,7 @@ A typical family can save $20-50/month on groceries with consistent Ibotta use. 
 
 This is useful in many situations: an elderly parent who lives alone can share their location with an adult child for peace of mind. Spouses can see each other without texting "where are you?" Teenagers can be seen by parents when driving. Family members can find each other in a crowded place like an airport.
 
-Location sharing in Find My is mutual and consensual — you choose exactly who can see your location. And you can stop sharing at any time. The person you share with gets a notification that you're sharing. And you can stop with one tap. It's not surveillance — it's voluntary family coordination.
+Location sharing in Find My is mutual and consensual. You choose exactly who can see your location. And you can stop sharing at any time. The person you share with gets a notification that you're sharing. And you can stop with one tap. It's not surveillance — it's voluntary family coordination.
 
 The Find My app can also be used to see your own devices, locate friends who've shared with you, and see the location of AirTags (Apple's Bluetooth trackers).
 

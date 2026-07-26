@@ -18,7 +18,7 @@ export const guidesBatch17: Guide[] = [
     thumbnailEmoji: '',
     publishedAt: '2026-04-19',
     difficulty: 'Beginner',
-    body: `Wi-Fi calling is a feature available on most modern smartphones that routes your calls and text messages through your home Wi-Fi internet connection instead of the cellular network. This is extremely useful if you live in an area with weak cell signal, a basement apartment, or a building with thick walls that block cell coverage.\n\nWhen Wi-Fi calling is enabled, your phone automatically switches to Wi-Fi for calls when the cell signal is poor and switches back to cellular when the signal improves. You do not need to do anything manually — it happens in the background. The call quality is often better than a weak cellular call, and calls use your regular cellular minutes (you are not making an internet call like Skype or FaceTime).\n\nWi-Fi calling is supported by all major carriers (Verizon, AT&T, T-Mobile) and most smaller carriers. It is available on iPhones (model 5c and newer) and most Android phones from the last several years. Your carrier may need to have this feature enabled on your account before it works on your phone.`,
+    body: `Wi-Fi calling is a feature available on most modern smartphones that routes your calls and text messages through your home Wi-Fi internet connection instead of the cellular network. This is extremely useful if you live in an area with weak cell signal, a basement apartment, or a building with thick walls that block cell coverage.\n\nWhen Wi-Fi calling is enabled, your phone automatically switches to Wi-Fi for calls when the cell signal is poor and switches back to cellular when the signal improves. You do not need to do anything manually. It happens in the background. The call quality is often better than a weak cellular call, and calls use your regular cellular minutes (you are not making an internet call like Skype or FaceTime).\n\nWi-Fi calling is supported by all major carriers (Verizon, AT&T, T-Mobile) and most smaller carriers. It is available on iPhones (model 5c and newer) and most Android phones from the last several years. Your carrier may need to have this feature enabled on your account before it works on your phone.`,
     steps: [
       {
         title: 'Enable Wi-Fi calling on iPhone',
@@ -91,7 +91,7 @@ export const guidesBatch17: Guide[] = [
       {
         title: 'Try to regain access immediately',
         content: "Go to the login page and click \"Forgot password\" or \"Need help logging in.\" Use the account recovery options: phone number or backup email where a recovery code can be sent. On Facebook: go to facebook.com/hacked and follow the \"My account was hacked\" flow. On Instagram: tap \"Get more help\" on the login screen and follow the identity verification steps. The sooner you initiate recovery, the more likely the hacker hasn't yet changed your recovery options.",
-        tip: "Quick Tip: If the hacker changed your password and email, try Facebook's or Instagram's identity verification process — you may be asked to verify your identity with a photo ID to reclaim your account.",
+        tip: "Quick Tip: If the hacker changed your password and email, try Facebook's or Instagram's identity verification process. You may be asked to verify your identity with a photo ID to reclaim your account.",
       },
       {
         title: 'Change your password immediately after regaining access',
@@ -129,7 +129,7 @@ export const guidesBatch17: Guide[] = [
       },
       {
         title: 'Share your shopping list with a family member',
-        content: "In the Alexa app, go to Lists → Shopping List → tap the share icon. You can share the list by email or as a link. A shared list means family members can also add and check off items. This is useful when someone else is doing the grocery shopping — they can see and update the shared list in real time.",
+        content: "In the Alexa app, go to Lists → Shopping List → tap the share icon. You can share the list by email or as a link. A shared list means family members can also add and check off items. This is useful when someone else is doing the grocery shopping. They can see and update the shared list in real time.",
       },
       {
         title: 'Set up voice purchasing for Amazon',
@@ -188,7 +188,7 @@ export const guidesBatch17: Guide[] = [
     thumbnailEmoji: '5⃣',
     publishedAt: '2026-04-19',
     difficulty: 'Beginner',
-    body: `You have probably heard about 5G — it has been in phone ads and the news for several years. But what does it actually mean, and should you care? This guide cuts through the marketing language and explains 5G in straightforward terms.\n\nIn short: 5G is the fifth generation of cellular network technology. Every decade or so, the cellular industry upgrades to a new generation. We went from 3G (which allowed basic mobile internet) to 4G LTE (which enabled smartphone apps and streaming) and now to 5G (which is a lot faster and handles many more devices simultaneously).\n\nFor most everyday phone users, 5G means faster downloads and fewer slowdowns in crowded places. Whether 5G is available in your area, and whether your phone supports it, determines how much it affects you.`,
+    body: `You have probably heard about 5G. It has been in phone ads and the news for several years. But what does it actually mean, and should you care? This guide cuts through the marketing language and explains 5G in straightforward terms.\n\nIn short: 5G is the fifth generation of cellular network technology. Every decade or so, the cellular industry upgrades to a new generation. We went from 3G (which allowed basic mobile internet) to 4G LTE (which enabled smartphone apps and streaming) and now to 5G (which is a lot faster and handles many more devices simultaneously).\n\nFor most everyday phone users, 5G means faster downloads and fewer slowdowns in crowded places. Whether 5G is available in your area, and whether your phone supports it, determines how much it affects you.`,
     steps: [
       {
         title: 'Understand what 5G actually does differently',
@@ -201,7 +201,7 @@ export const guidesBatch17: Guide[] = [
       },
       {
         title: 'Know which type of 5G you are getting',
-        content: "There are two main types of 5G: \"Sub-6 GHz\" 5G and \"mmWave\" 5G. Sub-6 GHz is the most common — it covers most US cities and suburban areas and is available from all major carriers. It is moderately faster than 4G. mmWave 5G is extremely fast but only covers a small area (roughly a city block) around a 5G antenna — typically found in dense urban areas, airports, and stadiums. If you see \"5G UW\" (Verizon), \"5G UC\" (T-Mobile), or \"5G+\" (AT&T) in your signal bar, you are on the faster version.",
+        content: "There are two main types of 5G: \"Sub-6 GHz\" 5G and \"mmWave\" 5G. Sub-6 GHz is the most common. It covers most US cities and suburban areas and is available from all major carriers. It is moderately faster than 4G. mmWave 5G is extremely fast but only covers a small area (roughly a city block) around a 5G antenna — typically found in dense urban areas, airports, and stadiums. If you see \"5G UW\" (Verizon), \"5G UC\" (T-Mobile), or \"5G+\" (AT&T) in your signal bar, you are on the faster version.",
       },
       {
         title: 'Decide whether to upgrade your phone for 5G',
@@ -292,7 +292,7 @@ export const guidesBatch17: Guide[] = [
     steps: [
       {
         title: 'Control a Samsung TV with your phone',
-        content: "Download the \"SmartThings\" app (free, by Samsung) from the App Store or Google Play. Open the app and sign in with a Samsung account (or create one for free). Tap the + button → \"Device\" → \"TV\" and follow the on-screen steps to connect to your Samsung TV. Both your phone and TV must be on the same Wi-Fi network. Once connected, a remote control interface appears in the app — you can change channels, adjust volume, and navigate menus.",
+        content: "Download the \"SmartThings\" app (free, by Samsung) from the App Store or Google Play. Open the app and sign in with a Samsung account (or create one for free). Tap the + button → \"Device\" → \"TV\" and follow the on-screen steps to connect to your Samsung TV. Both your phone and TV must be on the same Wi-Fi network. Once connected, a remote control interface appears in the app. You can change channels, adjust volume, and navigate menus.",
         tip: 'Quick Tip: Some Samsung TVs also respond to the Samsung TV Plus or Samsung TV Remote apps — search "Samsung TV Remote" in your app store to find the right one for your model.',
       },
       {
@@ -321,7 +321,7 @@ export const guidesBatch17: Guide[] = [
     thumbnailEmoji: '',
     publishedAt: '2026-04-19',
     difficulty: 'Beginner',
-    body: `FaceTime is Apple's free video calling app. And it allows group calls with up to 32 people at once. This is ideal for family gatherings where people are in different locations — everyone can see and talk to each other at the same time on a split screen.\n\nGroup FaceTime works between iPhones, iPads, and Macs. Everyone on the call must have an Apple device and an active Apple ID. If you have family members with Android phones or Windows computers, they can still join using a FaceTime link sent via text — they connect through a web browser without needing Apple devices.\n\nThis guide shows you how to start a group FaceTime and how to invite non-Apple users.`,
+    body: `FaceTime is Apple's free video calling app. And it allows group calls with up to 32 people at once. This is ideal for family gatherings where people are in different locations — everyone can see and talk to each other at the same time on a split screen.\n\nGroup FaceTime works between iPhones, iPads, and Macs. Everyone on the call must have an Apple device and an active Apple ID. If you have family members with Android phones or Windows computers, they can still join using a FaceTime link sent via text. They connect through a web browser without needing Apple devices.\n\nThis guide shows you how to start a group FaceTime and how to invite non-Apple users.`,
     steps: [
       {
         title: 'Start a group FaceTime call',
@@ -364,7 +364,7 @@ export const guidesBatch17: Guide[] = [
       },
       {
         title: 'Use the offline map when you have no signal',
-        content: "When you are in an area with no cell service, Google Maps automatically uses the downloaded offline map. Search for an address or tap a destination as normal — it works the same as when online. Turn-by-turn navigation, street names, and points of interest all work offline. Real-time traffic data and public transit directions are not available offline, but basic navigation works well.",
+        content: "When you are in an area with no cell service, Google Maps automatically uses the downloaded offline map. Search for an address or tap a destination as normal. It works the same as when online. Turn-by-turn navigation, street names, and points of interest all work offline. Real-time traffic data and public transit directions are not available offline, but basic navigation works well.",
       },
       {
         title: 'Download an offline map in Apple Maps',
@@ -464,7 +464,7 @@ export const guidesBatch17: Guide[] = [
       },
       {
         title: 'Set up Face ID or Touch ID on iPhone',
-        content: "Go to Settings → Face ID & Passcode (or Touch ID & Passcode). Tap \"Set Up Face ID\" and follow the on-screen instructions — you will slowly rotate your head in a circle twice while looking at the camera. This takes about 30 seconds. For Touch ID: tap \"Add a Fingerprint\" and press your finger on the Home button repeatedly as instructed. Add 2-3 fingers (including a thumb and pointer finger) for convenience. Once set up, your phone unlocks automatically by looking at it or touching the button.",
+        content: "Go to Settings → Face ID & Passcode (or Touch ID & Passcode). Tap \"Set Up Face ID\" and follow the on-screen instructions. You will slowly rotate your head in a circle twice while looking at the camera. This takes about 30 seconds. For Touch ID: tap \"Add a Fingerprint\" and press your finger on the Home button repeatedly as instructed. Add 2-3 fingers (including a thumb and pointer finger) for convenience. Once set up, your phone unlocks automatically by looking at it or touching the button.",
       },
       {
         title: 'Set a strong PIN and fingerprint on Android',
@@ -488,7 +488,7 @@ export const guidesBatch17: Guide[] = [
     thumbnailEmoji: '',
     publishedAt: '2026-04-19',
     difficulty: 'Beginner',
-    body: `Wireless Emergency Alerts (WEA) are government-issued notifications sent directly to your phone during serious emergencies — things like tornado warnings, flash flood warnings, AMBER Alerts for missing children, and extreme threat presidential alerts. These alerts do not require you to sign up for anything — they are broadcast to all phones in the affected geographic area automatically.\n\nHowever, some alert categories can be turned off in your phone settings, and some people unknowingly disable them. This guide shows you how to confirm all important alerts are turned on, and how to add additional local weather alerts through dedicated apps.\n\nEmergency alerts can save lives — a few minutes of preparation now makes sure you hear critical warnings when they matter most.`,
+    body: `Wireless Emergency Alerts (WEA) are government-issued notifications sent directly to your phone during serious emergencies — things like tornado warnings, flash flood warnings, AMBER Alerts for missing children, and extreme threat presidential alerts. These alerts do not require you to sign up for anything. They are broadcast to all phones in the affected geographic area automatically.\n\nHowever, some alert categories can be turned off in your phone settings, and some people unknowingly disable them. This guide shows you how to confirm all important alerts are turned on, and how to add additional local weather alerts through dedicated apps.\n\nEmergency alerts can save lives — a few minutes of preparation now makes sure you hear critical warnings when they matter most.`,
     steps: [
       {
         title: 'Check your Wireless Emergency Alerts settings on iPhone',
@@ -662,7 +662,7 @@ export const guidesBatch17: Guide[] = [
       },
       {
         title: 'Archive emails instead of deleting',
-        content: "Archiving removes an email from your inbox without deleting it. Archived emails still appear in searches — they are just out of the inbox. This is ideal for emails you've read and dealt with but might want to reference later (receipts, confirmations). To archive: select an email → click the archive button (box with a down arrow) or press \"E\" on the keyboard. To find archived emails: click \"All Mail\" in the left sidebar, or search for the email by keyword.",
+        content: "Archiving removes an email from your inbox without deleting it. Archived emails still appear in searches. They are just out of the inbox. This is ideal for emails you've read and dealt with but might want to reference later (receipts, confirmations). To archive: select an email → click the archive button (box with a down arrow) or press \"E\" on the keyboard. To find archived emails: click \"All Mail\" in the left sidebar, or search for the email by keyword.",
         tip: "Quick Tip: Select multiple emails at once by clicking the checkboxes next to each. Then archive them all at once. This is the fastest way to clear a large backlog.",
       },
       {

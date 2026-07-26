@@ -59,11 +59,11 @@ One thing trips people up constantly: you need both the right adapter AND the ri
     steps: [
       {
         title: `Learn the main fast charging standards`,
-        content: `USB Power Delivery (USB-PD) is the universal standard — it works with iPhone, most Android phones, tablets, and laptops. Qualcomm Quick Charge is older and mostly found on budget Androids. Samsung Super Fast Charging is Samsung's version of USB-PD (up to 45W). Apple MagSafe is a wireless standard for iPhone that magnetically attaches and charges up to 25W.`,
+        content: `USB Power Delivery (USB-PD) is the universal standard. It works with iPhone, most Android phones, tablets, and laptops. Qualcomm Quick Charge is older and mostly found on budget Androids. Samsung Super Fast Charging is Samsung's version of USB-PD (up to 45W). Apple MagSafe is a wireless standard for iPhone that magnetically attaches and charges up to 25W.`,
       },
       {
         title: `Look at the wattage rating on the charger`,
-        content: `Check the small print on your charger or its box — it lists the maximum wattage (like "20W" or "65W"). For an iPhone, 20W is the sweet spot. For an iPad, 20-30W. For a modern laptop, look at what the manufacturer included originally (usually 45W, 65W, or 100W). Going higher than needed does not hurt — the device only draws what it needs.`,
+        content: `Check the small print on your charger or its box. It lists the maximum wattage (like "20W" or "65W"). For an iPhone, 20W is the sweet spot. For an iPad, 20-30W. For a modern laptop, look at what the manufacturer included originally (usually 45W, 65W, or 100W). Going higher than needed does not hurt — the device only draws what it needs.`,
       },
       {
         title: `Use a cable rated for the wattage you need`,
@@ -75,7 +75,7 @@ One thing trips people up constantly: you need both the right adapter AND the ri
       },
       {
         title: `Know when fast charging does not apply`,
-        content: `Older devices (iPhone before 8, older budget Androids) do not support fast charging at all — they cap at 5-10W no matter what charger you use. Wireless charging is usually slower than wired (except MagSafe). And devices that are very hot will automatically slow down to protect the battery — this is normal, not a problem.`,
+        content: `Older devices (iPhone before 8, older budget Androids) do not support fast charging at all. They cap at 5-10W no matter what charger you use. Wireless charging is usually slower than wired (except MagSafe). And devices that are very hot will automatically slow down to protect the battery — this is normal, not a problem.`,
       },
     ],
     tip: `Quick Tip: GaN (gallium nitride) chargers from brands like Anker and UGREEN are smaller, cooler, and more efficient than older chargers. A 65W GaN charger can be barely larger than an old 5W Apple cube.`,
@@ -133,11 +133,11 @@ Manufacturers often print tiny icons or text next to the port to tell you what y
 
 Where it gets confusing is the versions. HDMI 1.4 tops out at 1080p at 60 frames per second — fine for older TVs but not enough for 4K. HDMI 2.0 handles 4K at 60Hz. HDMI 2.1 handles 4K at 120Hz and up to 8K. DisplayPort 1.4 supports 4K at 120Hz and 8K at 60Hz. DisplayPort 2.0 (and 2.1) handles 8K at 60Hz with HDR, and up to 16K. A cable rated for an older version will not magically carry a newer signal — if your setup is 4K at 120Hz, you need a cable that supports that speed.
 
-As a general rule of thumb: use HDMI for TVs, game consoles, streaming boxes, and any home theater gear (it is the only one most TVs accept). Use DisplayPort for gaming PCs and higher-end computer monitors — it has slightly more bandwidth and better support for high refresh rates. Use DVI only for older monitors that do not have newer ports. Adapters between them exist (HDMI to DisplayPort, DVI to HDMI) and work fine for most uses.`,
+As a general rule of thumb: use HDMI for TVs, game consoles, streaming boxes, and any home theater gear (it is the only one most TVs accept). Use DisplayPort for gaming PCs and higher-end computer monitors. It has slightly more bandwidth and better support for high refresh rates. Use DVI only for older monitors that do not have newer ports. Adapters between them exist (HDMI to DisplayPort, DVI to HDMI) and work fine for most uses.`,
     steps: [
       {
         title: `Know what each cable carries`,
-        content: `HDMI carries video and audio, plus things like HDR and CEC (remote control signals). DisplayPort carries video and audio with higher bandwidth for high refresh rates. DVI is older and carries video only — you will need a separate audio cable if you use DVI. VGA (the old blue plug with screws) is analog video only and has been outdated for over a decade.`,
+        content: `HDMI carries video and audio, plus things like HDR and CEC (remote control signals). DisplayPort carries video and audio with higher bandwidth for high refresh rates. DVI is older and carries video only. You will need a separate audio cable if you use DVI. VGA (the old blue plug with screws) is analog video only and has been outdated for over a decade.`,
       },
       {
         title: `Match the HDMI version to what you need`,
@@ -177,11 +177,11 @@ Since 2023, the bureaus have voluntarily extended access to weekly free reports 
     steps: [
       {
         title: `Go to the official site — and only this site`,
-        content: `Open your web browser and go to annualcreditreport.com. Check the address bar carefully — there are copycat sites with similar names. The real site has no flashy ads, no "free trial" offers, and no credit card requirement. If a site asks for credit card information, it is not the right one.`,
+        content: `Open your web browser and go to annualcreditreport.com. Check the address bar carefully. There are copycat sites with similar names. The real site has no flashy ads, no "free trial" offers, and no credit card requirement. If a site asks for credit card information, it is not the right one.`,
       },
       {
         title: `Fill in your personal information`,
-        content: `You will be asked for your full name, current address (previous address if you moved recently), date of birth, and Social Security number. This information is used only to verify your identity with the bureaus — it is not stored for marketing. Use your legal name exactly as it appears on tax records.`,
+        content: `You will be asked for your full name, current address (previous address if you moved recently), date of birth, and Social Security number. This information is used only to verify your identity with the bureaus. It is not stored for marketing. Use your legal name exactly as it appears on tax records.`,
       },
       {
         title: `Select which reports you want`,
@@ -217,11 +217,11 @@ To be protected, you need to freeze your credit at all three bureaus — Experia
     steps: [
       {
         title: `Understand freeze vs. lock vs. fraud alert`,
-        content: `A credit freeze is free, federally protected, and blocks new accounts entirely. A credit lock is a paid monthly service from each bureau that does roughly the same thing but with less legal backing. A fraud alert is free but only asks lenders to verify your identity before approving new credit — it does not block applications. For most people, a freeze is the strongest free option.`,
+        content: `A credit freeze is free, federally protected, and blocks new accounts entirely. A credit lock is a paid monthly service from each bureau that does roughly the same thing but with less legal backing. A fraud alert is free but only asks lenders to verify your identity before approving new credit. It does not block applications. For most people, a freeze is the strongest free option.`,
       },
       {
         title: `Freeze your Experian credit report`,
-        content: `Go to experian.com/freeze. Click "Add a security freeze". Create an account with your email, or log in if you have one. Answer identity verification questions. Save the PIN Experian provides — you need it to thaw the freeze later. The freeze takes effect right away online.`,
+        content: `Go to experian.com/freeze. Click "Add a security freeze". Create an account with your email, or log in if you have one. Answer identity verification questions. Save the PIN Experian provides. You need it to thaw the freeze later. The freeze takes effect right away online.`,
       },
       {
         title: `Freeze your Equifax credit report`,
@@ -233,14 +233,14 @@ To be protected, you need to freeze your credit at all three bureaus — Experia
       },
       {
         title: `Thaw temporarily when you need to apply for credit`,
-        content: `Before applying for a new credit card, loan, apartment, or mortgage, ask the lender which bureau they pull from (most use one or two specific ones). Log into that bureau's site and "thaw" the freeze — you can pick a date range (like 7 days) or a specific creditor. After the thaw period ends, the freeze goes back on automatically. If you do not know which bureau the lender uses, thaw all three.`,
+        content: `Before applying for a new credit card, loan, apartment, or mortgage, ask the lender which bureau they pull from (most use one or two specific ones). Log into that bureau's site and "thaw" the freeze. You can pick a date range (like 7 days) or a specific creditor. After the thaw period ends, the freeze goes back on automatically. If you do not know which bureau the lender uses, thaw all three.`,
       },
       {
         title: `Protect children and family members too`,
         content: `You can freeze a child's credit at each bureau (using their SSN) to protect against child identity theft — this requires a mailed request with proof of guardianship. Family members who have passed away should also have their credit frozen ("deceased alert") to prevent fraud using their identity. Each bureau has a separate process for these.`,
       },
     ],
-    tip: `Quick Tip: Save your freeze PINs and account logins in a password manager like Bitwarden or 1Password — you will need them years from now when you apply for a mortgage.`,
+    tip: `Quick Tip: Save your freeze PINs and account logins in a password manager like Bitwarden or 1Password. You will need them years from now when you apply for a mortgage.`,
     warning: `Avoid the paid "credit lock" services. They cost $10-30/month and do less than a free freeze does under federal law. The freeze is the stronger, free, federally backed option.`,
   },
   {
@@ -257,7 +257,7 @@ To be protected, you need to freeze your credit at all three bureaus — Experia
 
 There are three types of fraud alerts you can place. An initial fraud alert lasts one year and is available to anyone — no proof required. An extended fraud alert lasts seven years and is only available to confirmed identity theft victims who have filed an FTC report at identitytheft.gov. An active-duty military alert lasts one year and is designed for service members who are deployed. The big advantage of fraud alerts: you only need to contact ONE bureau, and by law they must notify the other two automatically.
 
-Which should you use? If you want the strongest protection and do not mind the small hassle of thawing when you apply for credit, a credit freeze is better — it blocks new accounts entirely. Fraud alerts are a good middle ground if you want some protection but not the extra step of managing a freeze. Many identity theft experts recommend doing BOTH: freezing your credit AND placing a fraud alert, for layered defense. If you are already a victim of identity theft, place an extended fraud alert AND freeze all three bureaus, then visit IdentityTheft.gov to start your recovery plan.`,
+Which should you use? If you want the strongest protection and do not mind the small hassle of thawing when you apply for credit, a credit freeze is better. It blocks new accounts entirely. Fraud alerts are a good middle ground if you want some protection but not the extra step of managing a freeze. Many identity theft experts recommend doing BOTH: freezing your credit AND placing a fraud alert, for layered defense. If you are already a victim of identity theft, place an extended fraud alert AND freeze all three bureaus, then visit IdentityTheft.gov to start your recovery plan.`,
     steps: [
       {
         title: `Know the three fraud alert types`,
@@ -269,7 +269,7 @@ Which should you use? If you want the strongest protection and do not mind the s
       },
       {
         title: `Understand what a fraud alert actually does`,
-        content: `A fraud alert does NOT block new accounts — it asks lenders to take an extra verification step (often a phone call to you) before approving credit. A sloppy lender could still open an account without calling. That is why fraud alerts are weaker protection than a credit freeze, which blocks access to your credit report entirely.`,
+        content: `A fraud alert does NOT block new accounts. It asks lenders to take an extra verification step (often a phone call to you) before approving credit. A sloppy lender could still open an account without calling. That is why fraud alerts are weaker protection than a credit freeze, which blocks access to your credit report entirely.`,
       },
       {
         title: `Decide: fraud alert, freeze, or both?`,
@@ -280,7 +280,7 @@ Which should you use? If you want the strongest protection and do not mind the s
         content: `Start at IdentityTheft.gov (run by the FTC). Fill out the identity theft affidavit — this is what qualifies you for the extended seven-year fraud alert. The site also generates a recovery plan with specific letters to send to creditors, the credit bureaus, and the police. File a police report in your local jurisdiction. Freeze all three bureaus.`,
       },
     ],
-    tip: `Quick Tip: A credit freeze has no expiration date — it stays until you remove it. Fraud alerts expire after 1 or 7 years and need to be renewed if you still want them.`,
+    tip: `Quick Tip: A credit freeze has no expiration date. It stays until you remove it. Fraud alerts expire after 1 or 7 years and need to be renewed if you still want them.`,
   },
   {
     slug: `contactless-payment-setup`,
@@ -396,7 +396,7 @@ Display size is about portability vs. screen real estate: 13-14 inches is the sw
       },
       {
         title: `Pick storage based on your files`,
-        content: `256GB SSD: tight, only works if most files live in the cloud. 512GB SSD: recommended — room for apps, photos, and some local files. 1TB SSD: if you store lots of photos, videos, or work files locally. 2TB: creators with large project files. Always an SSD, never a spinning HDD — it is 10x faster and much more reliable.`,
+        content: `256GB SSD: tight, only works if most files live in the cloud. 512GB SSD: recommended — room for apps, photos, and some local files. 1TB SSD: if you store lots of photos, videos, or work files locally. 2TB: creators with large project files. Always an SSD, never a spinning HDD. It is 10x faster and much more reliable.`,
       },
       {
         title: `Pick a screen size that matches your use`,
@@ -408,7 +408,7 @@ Display size is about portability vs. screen real estate: 13-14 inches is the sw
       },
       {
         title: `Check battery life realistically`,
-        content: `Expect about 70% of the advertised number in real-world use. A laptop that claims "18 hours" usually delivers 12-13. Apple Silicon MacBooks are the honest exception — they often meet or exceed their claims. Aim for at least 10 real hours if you travel or work away from an outlet.`,
+        content: `Expect about 70% of the advertised number in real-world use. A laptop that claims "18 hours" usually delivers 12-13. Apple Silicon MacBooks are the honest exception. They often meet or exceed their claims. Aim for at least 10 real hours if you travel or work away from an outlet.`,
       },
       {
         title: `Consider refurbished for savings`,
@@ -542,7 +542,7 @@ Some things do not transfer automatically. WhatsApp chat history needs a newer, 
       },
       {
         title: `Select what to transfer and wait`,
-        content: `The Android app asks what to transfer: contacts, messages, photos, videos, Chrome bookmarks, email accounts, calendars. Select everything you want. Tap Continue. Keep both phones plugged in and do NOT use them during the transfer — it can take 30 to 60 minutes for large photo libraries. When done, the iPhone continues its setup.`,
+        content: `The Android app asks what to transfer: contacts, messages, photos, videos, Chrome bookmarks, email accounts, calendars. Select everything you want. Tap Continue. Keep both phones plugged in and do NOT use them during the transfer. It can take 30 to 60 minutes for large photo libraries. When done, the iPhone continues its setup.`,
       },
       {
         title: `Handle WhatsApp chat history separately`,
@@ -884,7 +884,7 @@ Both macOS and Windows have built-in tools to help. macOS Stacks groups desktop 
     steps: [
       {
         title: `Understand why clutter matters`,
-        content: `Each desktop icon uses RAM to render and slows down login, window switching, and finder/explorer responsiveness. Beyond speed, clutter creates decision fatigue every time you glance at the screen. A clean desktop is not aesthetic preference — it is genuine performance and focus improvement.`,
+        content: `Each desktop icon uses RAM to render and slows down login, window switching, and finder/explorer responsiveness. Beyond speed, clutter creates decision fatigue every time you glance at the screen. A clean desktop is not aesthetic preference. It is genuine performance and focus improvement.`,
       },
       {
         title: `Do the one-time bulk cleanup`,

@@ -112,7 +112,7 @@ Ingredients arrive clearly labeled and portioned. The recipe cards use simple la
     steps: [
       {
         title: `Visit HelloFresh and Choose a Plan`,
-        content: `Go to hellofresh.com on your phone, tablet, or computer. Click "Get Started." You will be asked how many people you are cooking for and how many nights per week you want meals delivered. Start with two nights per week if you are not sure — you can always increase later.`,
+        content: `Go to hellofresh.com on your phone, tablet, or computer. Click "Get Started." You will be asked how many people you are cooking for and how many nights per week you want meals delivered. Start with two nights per week if you are not sure. You can always increase later.`,
         tip: `New customers almost always receive a large discount on their first few boxes. Look for a promo code on the website or search online for "HelloFresh promo code" before signing up.`,
       },
       {
@@ -148,13 +148,13 @@ Ingredients arrive clearly labeled and portioned. The recipe cards use simple la
     difficulty: `Beginner`,
     body: `StoryWorth is a service that helps families capture and preserve the life stories of people they love. Here is how it works: you sign up and provide the email address of a family member — a parent, grandparent, aunt, or anyone whose stories you want to save. Each week, StoryWorth sends that person an email with a question. Questions might be things like "What is your earliest childhood memory?" or "What was your first job?" or "What advice would you give your younger self?"
 
-The person receiving the questions writes their answer right in the email, like writing a letter. They do not need to download any app or learn new technology — they answer directly from their regular email. Their response is saved automatically. Family members can even add photos to their stories.
+The person receiving the questions writes their answer right in the email, like writing a letter. They do not need to download any app or learn new technology. They answer directly from their regular email. Their response is saved automatically. Family members can even add photos to their stories.
 
 After a year, StoryWorth compiles all the answers into a beautifully formatted book that you can order as a printed keepsake. This book becomes a treasured family heirloom — the kind of thing grandchildren will read for generations.
 
 The service costs around $99 per year, which includes one printed book at the end. Additional copies of the book can be ordered at an extra cost. Many families find this to be one of the most meaningful gifts they have ever given, particularly for older relatives whose stories might otherwise be lost.
 
-StoryWorth lets you browse through a library of hundreds of question prompts and choose which ones get sent, or you can write your own questions. You can also view your family member's stories at any time through the StoryWorth website — you do not have to wait for the year to end to read what they have written.`,
+StoryWorth lets you browse through a library of hundreds of question prompts and choose which ones get sent, or you can write your own questions. You can also view your family member's stories at any time through the StoryWorth website. You do not have to wait for the year to end to read what they have written.`,
     steps: [
       {
         title: `Sign Up at StoryWorth.com`,
@@ -191,7 +191,7 @@ StoryWorth lets you browse through a library of hundreds of question prompts and
     thumbnailEmoji: ``,
     publishedAt: `2026-04-20`,
     difficulty: `Beginner`,
-    body: `Many people assume that any power strip with multiple outlets protects their electronics from power surges. This is a common and potentially costly misunderstanding. A basic power strip is nothing more than a way to add more outlets to a wall — it offers no protection at all against electrical surges. A surge protector, on the other hand, is designed to absorb excess voltage and protect connected devices like your computer, television, or printer from damage.
+    body: `Many people assume that any power strip with multiple outlets protects their electronics from power surges. This is a common and potentially costly misunderstanding. A basic power strip is nothing more than a way to add more outlets to a wall. It offers no protection at all against electrical surges. A surge protector, on the other hand, is designed to absorb excess voltage and protect connected devices like your computer, television, or printer from damage.
 
 A power surge is a sudden spike of electricity that travels through your wiring. Surges can be caused by lightning strikes near your home, power grid switching, large appliances like air conditioners turning on, and even the utility company restoring power after an outage. A strong enough surge can destroy sensitive electronics in an instant.
 
@@ -241,7 +241,7 @@ If you live in an area with frequent thunderstorms, consider unplugging sensitiv
 
 Sudden power losses are hard on computers. When the power cuts out with no warning, your computer cannot save what you were working on. You may lose important documents or photos. In some cases, the sudden shutdown can even corrupt files on your hard drive, causing bigger problems later. A UPS prevents all of this by giving you a graceful shutdown window.
 
-A UPS is different from a surge protector, though most UPS devices include surge protection as well. The key difference is the battery backup capability. A surge protector alone cannot keep your computer running when the power goes out — it only protects against voltage spikes. A UPS does both.
+A UPS is different from a surge protector, though most UPS devices include surge protection as well. The key difference is the battery backup capability. A surge protector alone cannot keep your computer running when the power goes out. It only protects against voltage spikes. A UPS does both.
 
 When choosing a UPS for a home computer, look at two key numbers: the volt-ampere (VA) rating and the runtime. A higher VA rating means the UPS can support more devices. A typical desktop computer with a monitor needs a UPS rated at least 500 to 650 VA. Runtime tells you how long the battery will keep your equipment running — for most people, five to fifteen minutes is enough time to save files and shut down normally.
 
@@ -253,7 +253,7 @@ Popular and reliable brands include APC, CyberPower, and Eaton. UPS units need p
       },
       {
         title: `Choose the Right Size`,
-        content: `Look for a UPS with a VA rating that covers your equipment. For a typical desktop computer and monitor, a 650 VA model is a good starting point. If you also want to connect a printer or external hard drive, step up to 900 VA or 1,000 VA. Do not plug laser printers into the battery-backed outlets — they draw too much power.`,
+        content: `Look for a UPS with a VA rating that covers your equipment. For a typical desktop computer and monitor, a 650 VA model is a good starting point. If you also want to connect a printer or external hard drive, step up to 900 VA or 1,000 VA. Do not plug laser printers into the battery-backed outlets. They draw too much power.`,
         tip: `Most UPS models have two types of outlets: battery-backed outlets and surge-only outlets. Plug your computer and monitor into the battery-backed ones. Plug a lamp or other non-essential items into the surge-only outlets.`,
       },
       {
@@ -397,11 +397,11 @@ You can watch ESPN+ on your smartphone, tablet, computer, Apple TV, Roku, Amazon
       },
       {
         title: `Find ESPN+ Content`,
-        content: `Open the ESPN app and look for the ESPN+ badge on programming — it appears as a small "E+" symbol on thumbnails. Tap any ESPN+ event or show to start watching. Live events appear under the "Live" tab. You can also browse by sport or search for a specific team or event.`,
+        content: `Open the ESPN app and look for the ESPN+ badge on programming. It appears as a small "E+" symbol on thumbnails. Tap any ESPN+ event or show to start watching. Live events appear under the "Live" tab. You can also browse by sport or search for a specific team or event.`,
       },
       {
         title: `Manage or Cancel Your Subscription`,
-        content: `Log into your account at espnplus.com and navigate to account settings to view your subscription details. From there you can change your plan, update payment information, or cancel. Cancellations take effect at the end of your current billing period — you keep access until then.`,
+        content: `Log into your account at espnplus.com and navigate to account settings to view your subscription details. From there you can change your plan, update payment information, or cancel. Cancellations take effect at the end of your current billing period. You keep access until then.`,
         warning: `If you subscribed through Apple's App Store or Google Play, you must cancel through those stores — not through the ESPN website. Check which method you used when you signed up.`,
       },
     ],
@@ -434,7 +434,7 @@ Signing up takes only a few minutes and you can cancel any time if you decide it
       {
         title: `Choose Your Plan`,
         content: `Select either the ad-supported plan (fewer dollars per month but includes commercials) or the ad-free plan. Both include the same programming library. Enter your payment information — credit card, debit card, or PayPal — to complete the signup. A free trial may be available for new subscribers.`,
-        tip: `If you primarily watch shows on a Roku or Amazon Fire TV, consider subscribing through those platforms instead — it may make billing simpler and consolidated with your other streaming services.`,
+        tip: `If you primarily watch shows on a Roku or Amazon Fire TV, consider subscribing through those platforms instead. It may make billing simpler and consolidated with your other streaming services.`,
       },
       {
         title: `Download the Discovery+ App`,
@@ -512,7 +512,7 @@ Microsoft 365 Family requires a Microsoft account to set up and manage. If you h
 
 For many people, digital photos pile up on phones and computers without ever being printed or shared in a physical form. Walmart Photo Center makes it affordable and straightforward to turn those memories into something you can hold, frame, or give as a gift. A standard 4x6 print costs only a few cents, making it one of the most affordable ways to print your photos.
 
-The service is available at photos.walmart.com and also through the Walmart app. You do not need a special account — you can sign in with your regular Walmart.com account, or create a free one if you do not already have one.
+The service is available at photos.walmart.com and also through the Walmart app. You do not need a special account. You can sign in with your regular Walmart.com account, or create a free one if you do not already have one.
 
 Photo gifts make wonderful presents that feel personal and thoughtful. A photo book filled with family vacation pictures, a canvas print of a grandchild's portrait, or a blanket featuring a beloved pet — these are gifts people treasure for years. The website makes the creation process step by step, guiding you through adding photos, adding captions if desired, and customizing the layout before you order.
 
@@ -557,7 +557,7 @@ For same-day pickup, Walmart typically has your standard prints ready in about a
 
 RxSaver is not insurance. It is a discount program that negotiates lower rates with major pharmacy chains. When you use an RxSaver coupon, you are paying a pre-negotiated cash price that is often a lot lower than what pharmacies charge without a coupon — and sometimes lower than what you would pay even with insurance, particularly for generic medications.
 
-Services like RxSaver, GoodRx, and NeedyMeds work similarly and are all worth comparing. RxSaver is free to use — you will never be charged to search for prices or download a coupon. The service generates revenue through partnerships with pharmacies, not from users.
+Services like RxSaver, GoodRx, and NeedyMeds work similarly and are all worth comparing. RxSaver is free to use. You will never be charged to search for prices or download a coupon. The service generates revenue through partnerships with pharmacies, not from users.
 
 You can use RxSaver at the website rxsaver.com or through the free mobile app available for iPhone and Android. The process is straightforward: you search for your medication by name, enter your zip code, and the service shows you prices at nearby pharmacies including Walgreens, CVS, Walmart, Costco, Rite Aid, and independent pharmacies. You select the best price, print or show the coupon on your phone, and hand it to the pharmacist.
 
@@ -605,7 +605,7 @@ Many major pharmaceutical companies operate what are called patient help program
 
 Beyond manufacturer programs, NeedyMeds also lists state pharmaceutical help programs (which are run by individual states and help low-income residents), disease-specific help funds for people with conditions like cancer, diabetes, or heart disease, and a directory of free clinics and community health centers across the country where you can receive medical care regardless of your ability to pay.
 
-The NeedyMeds website is at needymeds.org. It is completely free to use — there is no registration required, no fees, and no strings attached. The organization is funded by grants and donations, not by pharmaceutical companies, so the information is unbiased.
+The NeedyMeds website is at needymeds.org. It is completely free to use. There is no registration required, no fees, and no strings attached. The organization is funded by grants and donations, not by pharmaceutical companies, so the information is unbiased.
 
 NeedyMeds also offers a discount drug card — similar to RxSaver or GoodRx — that can be used at participating pharmacies. You can print it from the website or call 1-800-503-6897 to have one mailed to you for free.
 
@@ -627,7 +627,7 @@ This resource is especially valuable for seniors on fixed incomes, people betwee
       {
         title: `Apply to the Program with Your Doctor's Help`,
         content: `Most patient help programs require your doctor or healthcare provider to complete part of the application or sign a form. Contact your doctor's office and let them know you found a program you want to apply to. Many doctor's offices are familiar with these programs and can assist with the paperwork. Some programs allow applications directly online. Others require a paper form mailed to the company.`,
-        warning: `Be cautious of third-party websites that charge a fee to help you apply for patient help programs. NeedyMeds and the manufacturer programs themselves are free — you should never have to pay someone to apply.`,
+        warning: `Be cautious of third-party websites that charge a fee to help you apply for patient help programs. NeedyMeds and the manufacturer programs themselves are free. You should never have to pay someone to apply.`,
       },
       {
         title: `Use the NeedyMeds Discount Drug Card`,
@@ -748,7 +748,7 @@ Tubi is owned by Fox Corporation and is one of the most popular free streaming s
     steps: [
       {
         title: `Open Tubi on Your Device`,
-        content: `On a Smart TV, Roku, or Fire TV, find Tubi in your app store or channel store and install it — it is free to add. On a phone or tablet, search "Tubi" in the App Store or Google Play and download the free app. On a computer, go to tubitv.com in any web browser.`,
+        content: `On a Smart TV, Roku, or Fire TV, find Tubi in your app store or channel store and install it. It is free to add. On a phone or tablet, search "Tubi" in the App Store or Google Play and download the free app. On a computer, go to tubitv.com in any web browser.`,
       },
       {
         title: `Browse Without an Account (Optional)`,
@@ -839,7 +839,7 @@ Amazon often offers introductory rates for new Kindle Unlimited subscribers — 
       {
         title: `Download the Kindle App`,
         content: `If you do not already have the Kindle app, search for "Kindle" in the App Store (iPhone or iPad) or Google Play Store (Android) and download the free app. Sign in with your Amazon account, or create a free Amazon account if you do not have one.`,
-        tip: `If you already buy ebooks from Amazon, you already have a Kindle account — it uses the same Amazon login.`,
+        tip: `If you already buy ebooks from Amazon, you already have a Kindle account. It uses the same Amazon login.`,
       },
       {
         title: `Sign Up for Kindle Unlimited`,

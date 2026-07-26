@@ -59,13 +59,13 @@ Set a Do Not Disturb schedule under Settings so the Hub stays quiet during overn
     excerpt: `Chromecast plugs into your TV's HDMI port and lets you stream Netflix, YouTube, Disney+, and more from your phone or tablet.`,
     body: `Google Chromecast is a small device that plugs into the HDMI port on the back or side of your TV and connects to your home Wi-Fi. Once it's set up, you can send — or "cast" — video from your phone, tablet, or computer directly to your TV screen.
 
-There are currently two main versions. The original Chromecast (and older models) requires you to use your phone as the remote — you open an app like YouTube or Netflix on your phone and tap the cast icon to send it to the TV. The newer Chromecast with Google TV comes with a physical remote, has its own full interface for browsing apps, and works more like a traditional streaming stick (similar to a Roku or Fire Stick).
+There are currently two main versions. The original Chromecast (and older models) requires you to use your phone as the remote. You open an app like YouTube or Netflix on your phone and tap the cast icon to send it to the TV. The newer Chromecast with Google TV comes with a physical remote, has its own full interface for browsing apps, and works more like a traditional streaming stick (similar to a Roku or Fire Stick).
 
 To set up either version, start by plugging the Chromecast into your TV's HDMI port. If the power adapter doesn't reach an outlet, use the included USB cable to power it from the TV's USB port instead (though a wall outlet gives more reliable power). Switch your TV's input to the correct HDMI channel — the same way you'd switch to a game console or DVD player.
 
 Next, download the Google Home app on your iPhone or Android phone. Open the app, tap the + icon, and select Set Up Device. Follow the prompts: the app will find the Chromecast, display a code on your TV to confirm it's the right device, connect it to your Wi-Fi, and give it a name like "Living Room TV."
 
-For the original Chromecast, casting is done from within apps. Open Netflix, YouTube, Hulu, HBO Max, Disney+, or Spotify on your phone, then look for the cast icon — it looks like a rectangle with Wi-Fi waves in the corner. Tap it, select your Chromecast, and the video moves to the TV. Your phone acts as the remote: press pause on your phone and the TV pauses.
+For the original Chromecast, casting is done from within apps. Open Netflix, YouTube, Hulu, HBO Max, Disney+, or Spotify on your phone, then look for the cast icon. It looks like a rectangle with Wi-Fi waves in the corner. Tap it, select your Chromecast, and the video moves to the TV. Your phone acts as the remote: press pause on your phone and the TV pauses.
 
 For Chromecast with Google TV, use the included remote to browse and open apps directly on the TV without needing your phone. The Google TV interface organizes content across all your streaming services in one place.
 
@@ -109,7 +109,7 @@ If the Chromecast loses its Wi-Fi connection, open the Google Home app, find the
     excerpt: `LG smart TVs run webOS and have a built-in app store — here's how to add streaming services and manage your apps.`,
     body: `LG smart TVs run an operating system called webOS, which LG developed specifically for its televisions. If you've had your LG TV for a few years and it didn't come loaded with every streaming service you want, the good news is that you can add most of them from the built-in LG Content Store.
 
-The remote that comes with LG smart TVs is called the Magic Remote. It works like a mouse — you point it at the screen and a cursor appears, which you move by tilting the remote. You can also use the directional arrows on the remote if the cursor feel isn't for you. The Home button (the house icon) brings up the LG home screen bar at the bottom of the screen.
+The remote that comes with LG smart TVs is called the Magic Remote. It works like a mouse. You point it at the screen and a cursor appears, which you move by tilting the remote. You can also use the directional arrows on the remote if the cursor feel isn't for you. The Home button (the house icon) brings up the LG home screen bar at the bottom of the screen.
 
 To install an app, press the Home button and scroll along the bottom bar until you see the LG Content Store icon (it looks like a shopping bag). Open it and use the search bar to find an app by name — Netflix, Hulu, Peacock, Max, Disney+, Paramount+, YouTube, Prime Video, Apple TV+, Tubi, Pluto TV, and many others are available.
 
@@ -134,7 +134,7 @@ For picture quality, press the Settings button (the gear icon) and go to Picture
       {
         title: `Open the LG Content Store`,
         content: `Press the Home button on your Magic Remote to bring up the home bar at the bottom of the screen. Scroll right until you find the LG Content Store icon (a shopping bag) and select it.`,
-        tip: `If you don't see the Content Store icon, look for an Apps section on the home bar — it may be hidden further to the right.`,
+        tip: `If you don't see the Content Store icon, look for an Apps section on the home bar. It may be hidden further to the right.`,
       },
       {
         title: `Search for and install an app`,
@@ -162,7 +162,7 @@ For picture quality, press the Settings button (the gear icon) and go to Picture
 
 Samsung TVs come with a slim remote called the Smart Remote (also called the One Remote on newer models). The remote relies on the directional pad and a few key buttons rather than a full keyboard. Pressing the Home button (the house icon) brings up the Samsung smart hub bar across the bottom of the screen.
 
-To install an app, press the Home button and navigate to the Apps section — it usually appears as a grid icon on the home bar. Inside the Apps menu, you'll see a search bar and rows of featured and trending apps. Use the search bar to type the name of the service you want: Netflix, Hulu, Max, Disney+, Peacock, Paramount+, Prime Video, YouTube, Tubi, Pluto TV, Apple TV+, or ESPN+. Select the app and press Install or Download. It installs in seconds and appears on your home screen.
+To install an app, press the Home button and navigate to the Apps section. It usually appears as a grid icon on the home bar. Inside the Apps menu, you'll see a search bar and rows of featured and trending apps. Use the search bar to type the name of the service you want: Netflix, Hulu, Max, Disney+, Peacock, Paramount+, Prime Video, YouTube, Tubi, Pluto TV, Apple TV+, or ESPN+. Select the app and press Install or Download. It installs in seconds and appears on your home screen.
 
 To put a favorite app on the home bar for quicker access, open the app from the Apps grid, press and hold the OK button, and choose Add to Home. From there you can also rearrange the order of apps on the home screen bar to match how often you use them.
 
@@ -260,7 +260,7 @@ Duolingo is excellent for building vocabulary and getting comfortable with basic
 
 The range of subjects is broad. Khan Academy covers mathematics from basic arithmetic through calculus and linear algebra, sciences including biology, chemistry, and physics, computer programming, economics, art history, grammar and writing, and test prep for the SAT, ACT, LSAT, MCAT, and GED. There is also a dedicated section for personal finance and a complete curriculum aligned to K-12 grade levels.
 
-To get started, go to khanacademy.org in a web browser or download the Khan Academy app from the App Store or Google Play. Creating a free account lets you track your progress and pick up where you left off — you can also use a Google, Apple, or Facebook account to sign in.
+To get started, go to khanacademy.org in a web browser or download the Khan Academy app from the App Store or Google Play. Creating a free account lets you track your progress and pick up where you left off. You can also use a Google, Apple, or Facebook account to sign in.
 
 When you browse for a subject, you'll find it broken into courses and then individual units. Each unit contains short video lessons (usually 5 to 15 minutes each) followed by practice questions. The questions adapt based on how you're doing — if you get several wrong, it slows down and gives you more foundational practice. If you're flying through, it advances.
 
@@ -763,7 +763,7 @@ Google Assistant and Amazon Alexa can both be added to Sonos for voice control. 
     excerpt: `Making a photo collage on your phone takes only a few minutes — here's how to do it with Google Photos or a free collage app.`,
     body: `A photo collage combines several photos into a single image — great for holidays, birthdays, milestones, or just organizing memories into a shareable snapshot. You can make one on your phone in a few minutes using tools that are already available or free to download.
 
-The quickest option on Android is Google Photos, which has a built-in collage maker. Open the Google Photos app (download it free if you don't have it), tap the Library tab at the bottom, then tap Utilities near the top. Select Collage and choose 2 to 9 photos from your library. Google Photos automatically arranges them in a grid, and within seconds you have a collage you can save and share. The layouts are simple and the tool is fast, but there's not much customization — you can't add text, change colors, or adjust individual photo sizes.
+The quickest option on Android is Google Photos, which has a built-in collage maker. Open the Google Photos app (download it free if you don't have it), tap the Library tab at the bottom, then tap Utilities near the top. Select Collage and choose 2 to 9 photos from your library. Google Photos automatically arranges them in a grid, and within seconds you have a collage you can save and share. The layouts are simple and the tool is fast, but there's not much customization. You can't add text, change colors, or adjust individual photo sizes.
 
 For more creative control, standalone collage apps give you much more to work with. Pic Collage (free, available on iPhone and Android) is one of the most popular. Canva (also free) is another strong choice with hundreds of professional-looking templates. PicsArt (free with optional in-app purchases) offers both collages and full photo editing.
 
@@ -941,7 +941,7 @@ To delete or pause an automation, go to Automations, tap it, and toggle Enable T
     steps: [
       {
         title: `Open the Shortcuts app`,
-        content: `Look for the Shortcuts app on your iPhone — it has an orange and white icon with two interlocking squares. If you can't find it, swipe down from the middle of your home screen to search for "Shortcuts."`,
+        content: `Look for the Shortcuts app on your iPhone. It has an orange and white icon with two interlocking squares. If you can't find it, swipe down from the middle of your home screen to search for "Shortcuts."`,
       },
       {
         title: `Create a new automation`,

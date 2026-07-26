@@ -142,7 +142,7 @@ export const guidesBatch263: Guide[] = [
       },
       {
         title: "Find a Korean-speaking counselor through KAFSC or your insurance directory",
-        content: "Call KAFSC (Korean American Family Service Center) at 718-460-3800 — they serve nationally by phone — and ask for a referral to a Korean-speaking therapist in your area. Or check your Medicare or Medicare Advantage plan directory online and filter by language Korean. Ask the counselor up front: Do you accept Medicare? Do you have experience with Korean-American seniors? Do you offer sessions in Korean? You can interview two or three counselors before choosing.",
+        content: "Call KAFSC (Korean American Family Service Center) at 718-460-3800. They serve nationally by phone — and ask for a referral to a Korean-speaking therapist in your area. Or check your Medicare or Medicare Advantage plan directory online and filter by language Korean. Ask the counselor up front: Do you accept Medicare? Do you have experience with Korean-American seniors? Do you offer sessions in Korean? You can interview two or three counselors before choosing.",
       },
       {
         title: "Try a Korean senior support group at a church or community center",

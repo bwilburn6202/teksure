@@ -76,7 +76,7 @@ A good starting setup for many people: top-left corner for Mission Control, bott
 
 One important option: you can require holding a modifier key (Shift, Option, Command, or Control) before the Hot Corner fires. Hold Option while selecting an action in the dropdown to add that requirement. This prevents accidental triggers when you move your cursor near a corner while working normally. If you find Hot Corners fire too often by accident, adding a modifier key solves that completely.
 
-Hot Corners work alongside trackpad gestures — you can have both active at the same time without conflict.`,
+Hot Corners work alongside trackpad gestures. You can have both active at the same time without conflict.`,
     steps: [
       {
         title: `Open Desktop & Dock settings`,
@@ -162,7 +162,7 @@ If a device isn't showing up, try toggling Bluetooth off and back on, move the d
     publishedAt: `2026-04-20`,
     body: `If you're coming from an iPhone or iPad, Launchpad will feel right away familiar. It's a full-screen display of all the apps installed on your Mac, arranged in a grid — exactly like the home screen on your iPhone. Many Mac users prefer it to digging through the Dock or opening the Applications folder.
 
-To open Launchpad, click its icon in the Dock — it looks like a silver rocket ship on a grid of colored squares. If it's not in your Dock, open Spotlight (Command+Space) and type "Launchpad." You can also open it by pinching with four fingers on a trackpad.
+To open Launchpad, click its icon in the Dock. It looks like a silver rocket ship on a grid of colored squares. If it's not in your Dock, open Spotlight (Command+Space) and type "Launchpad." You can also open it by pinching with four fingers on a trackpad.
 
 Once inside, you'll see all your apps spread across one or more pages. Swipe left or right with two fingers to move between pages. At the top, there's a search bar — start typing an app name to filter the grid instantly, which is faster than scrolling.
 
@@ -170,7 +170,7 @@ You can organize apps into folders, the same way you do on iPhone. Drag one app 
 
 To rearrange apps, click and hold any icon until all icons start wiggling. Drag them to new positions. Click anywhere outside the icons (or press Escape) to stop wiggling.
 
-To delete an app you downloaded from the App Store, click and hold until the icons wiggle, then click the small X that appears in the top-left corner of the app you want to remove. This works for App Store apps only — it doesn't work for system apps like Safari or Mail.
+To delete an app you downloaded from the App Store, click and hold until the icons wiggle, then click the small X that appears in the top-left corner of the app you want to remove. This works for App Store apps only. It doesn't work for system apps like Safari or Mail.
 
 When you're done with Launchpad, press Escape, click anywhere outside an app icon, or spread four fingers on the trackpad to go back to your Desktop.
 
@@ -214,7 +214,7 @@ Quick Tip: If you know the name of the app you want to open, Spotlight (Command+
 
 To check whether you have recording available, start or join any Google Meet call and look for the Activities panel. If you see a "Recording" option there, you're all set. If not, your account type may not include it.
 
-Here's how to record when it is available. During an active call, click the Activities icon — it looks like three icons stacked together, found in the bottom-right area of the screen. In the Activities panel that opens, click Recording, then click Start Recording. A message appears reminding you that all participants will be notified when recording begins. Confirm by clicking Start.
+Here's how to record when it is available. During an active call, click the Activities icon. It looks like three icons stacked together, found in the bottom-right area of the screen. In the Activities panel that opens, click Recording, then click Start Recording. A message appears reminding you that all participants will be notified when recording begins. Confirm by clicking Start.
 
 Once recording is active, everyone in the meeting sees a red dot in the top-left corner of the screen — a clear signal that the call is being recorded. No one is silently recorded. Google Meet always announces it.
 
@@ -226,7 +226,7 @@ If you're using a free Gmail account and don't have recording, consider alternat
     steps: [
       {
         title: `Confirm your account supports recording`,
-        content: `Start or join a Google Meet call. Look for the Activities button in the bottom-right corner of the screen. Click it and look for a "Recording" option. If you don't see it, your Google account type may not include recording — you may need a Google Workspace plan.`,
+        content: `Start or join a Google Meet call. Look for the Activities button in the bottom-right corner of the screen. Click it and look for a "Recording" option. If you don't see it, your Google account type may not include recording. You may need a Google Workspace plan.`,
         tip: `Google Workspace accounts through work or school almost always have recording enabled. Free personal Gmail accounts may not.`,
       },
       {
@@ -262,11 +262,11 @@ If you're using a free Gmail account and don't have recording, consider alternat
 
 There are two ways to access background settings: before joining a meeting, and during an active meeting.
 
-Before joining: when you click a meeting link or start a call, Teams shows a preview screen where you can check your camera and microphone settings before entering. Look for the background effects button — it looks like a small person with a star or sparkle icon. Click it, and a panel opens on the right side of the screen. From there you can choose blur or a virtual background image.
+Before joining: when you click a meeting link or start a call, Teams shows a preview screen where you can check your camera and microphone settings before entering. Look for the background effects button. It looks like a small person with a star or sparkle icon. Click it, and a panel opens on the right side of the screen. From there you can choose blur or a virtual background image.
 
 During a meeting: if you forgot to change it beforehand, click the three-dot menu (More options) at the top of the meeting controls. Choose Effects and Avatars, then Background Effects. The same panel opens.
 
-In the background panel, you'll see several options. The blur option is at the top — it keeps your face clear and sharp while making everything behind you soft and indistinct, like a photo taken with a fancy camera. Below that are built-in virtual backgrounds: office spaces, living rooms, outdoor scenes, and more.
+In the background panel, you'll see several options. The blur option is at the top. It keeps your face clear and sharp while making everything behind you soft and indistinct, like a photo taken with a fancy camera. Below that are built-in virtual backgrounds: office spaces, living rooms, outdoor scenes, and more.
 
 You can also add your own custom background image. Scroll down in the panel to find the "+ Add New" option. This lets you upload any image from your computer — a professional office photo, a favorite travel destination, or your company's branded background if they've provided one.
 
@@ -275,7 +275,7 @@ One thing to keep in mind: background blur and virtual backgrounds require your 
       {
         title: `Access background settings before joining`,
         content: `When you click a Teams meeting link, a preview screen appears before you enter. Look for the background effects button (a small icon that looks like a person with a star). Click it to open the background panel on the right side of the screen.`,
-        tip: `Setting your background before joining is the most reliable method — you can see exactly how it looks before anyone else sees you.`,
+        tip: `Setting your background before joining is the most reliable method. You can see exactly how it looks before anyone else sees you.`,
       },
       {
         title: `Access background settings during a meeting`,
@@ -288,7 +288,7 @@ One thing to keep in mind: background blur and virtual backgrounds require your 
       {
         title: `Add your own custom background`,
         content: `Scroll to the bottom of the background panel and click the "+ Add New" button. Browse your computer for any image file (JPEG or PNG works best). Select it and it will appear in your background options. Click it to apply.`,
-        tip: `A photo of a tidy office or bookshelf makes an excellent custom background — it looks natural and professional without requiring you to set up your real room.`,
+        tip: `A photo of a tidy office or bookshelf makes an excellent custom background. It looks natural and professional without requiring you to set up your real room.`,
       },
       {
         title: `Turn off background effects`,
@@ -368,7 +368,7 @@ If you want the best image quality available for a home webcam, the Logitech Bri
 
 Setting up any of these is the same: plug the USB cable into your computer. On Zoom, go to Settings > Video > Camera and select the new webcam from the dropdown. On Teams, go to Settings > Devices > Camera. The webcam takes over right away.
 
-If you own an iPhone (model 11 or newer) running iOS 17 or later. And you have a Mac, you may not need to buy a webcam at all. Apple's Continuity Camera feature uses your iPhone as a webcam wirelessly. The iPhone camera is a lot better than any standalone webcam in the same price range.`,
+If you own an iPhone (model 11 or newer) running iOS 17 or later and you have a Mac, you may not need to buy a webcam at all. Apple's Continuity Camera feature uses your iPhone as a webcam wirelessly. The iPhone camera is a lot better than any standalone webcam in the same price range.`,
     steps: [
       {
         title: `Decide whether you need an upgrade`,
@@ -377,7 +377,7 @@ If you own an iPhone (model 11 or newer) running iOS 17 or later. And you have a
       {
         title: `Choose a webcam for your budget`,
         content: `Budget ($30–60): Logitech C270 or C310. Mid-range ($80–120): Logitech C920 or Brio 300. High-end ($130+): Logitech Brio 4K or Elgato Facecam Pro. For most people, the C920 or Brio 300 is the best balance of quality and cost.`,
-        tip: `If you have an iPhone 11 or newer and a Mac, try Continuity Camera before buying anything — it uses your iPhone as a webcam wirelessly and may be better than any standalone option.`,
+        tip: `If you have an iPhone 11 or newer and a Mac, try Continuity Camera before buying anything. It uses your iPhone as a webcam wirelessly and may be better than any standalone option.`,
       },
       {
         title: `Connect and position the webcam`,
@@ -520,7 +520,7 @@ One important note: Reddit is not a replacement for professional advice. Medical
       {
         title: `Browse Reddit without an account`,
         content: `Go to reddit.com and use the search bar at the top to type any topic you're curious about. Click on a subreddit from the results to read recent posts and discussions. No account required for reading.`,
-        tip: `Try searching for topics you're already interested in — you may find active communities you didn't know existed, like r/quilting, r/SeniorLiving, or r/genealogy.`,
+        tip: `Try searching for topics you're already interested in. You may find active communities you didn't know existed, like r/quilting, r/SeniorLiving, or r/genealogy.`,
       },
       {
         title: `Create a free account`,
@@ -692,11 +692,11 @@ For privacy, consider making your account Private in Settings so only people you
     difficulty: `Beginner`,
     readTime: `4 min`,
     publishedAt: `2026-04-20`,
-    body: `Threads is a text-based social media app launched by Meta in July 2023. It's directly connected to Instagram — you log in with your Instagram account, and your Instagram username and followers automatically carry over. Threads was created as Meta's answer to X (formerly Twitter), and it's grown into a popular alternative for people who want a less chaotic text-sharing experience.
+    body: `Threads is a text-based social media app launched by Meta in July 2023. It's directly connected to Instagram. You log in with your Instagram account, and your Instagram username and followers automatically carry over. Threads was created as Meta's answer to X (formerly Twitter), and it's grown into a popular alternative for people who want a less chaotic text-sharing experience.
 
 Unlike Instagram, which is centered on photos and videos, Threads is built around text posts up to 500 characters long. You can add photos, videos, and links to posts, but text is the focus. The tone tends to be more conversational and lighthearted than X.
 
-Getting started takes about two minutes if you already have Instagram. Download the Threads app from the App Store or Google Play. Open it and log in with your Instagram account. Threads will show you your Instagram followers who are already on Threads and ask if you want to follow them all — you can do this in one tap or go through the list individually.
+Getting started takes about two minutes if you already have Instagram. Download the Threads app from the App Store or Google Play. Open it and log in with your Instagram account. Threads will show you your Instagram followers who are already on Threads and ask if you want to follow them all. You can do this in one tap or go through the list individually.
 
 Your Threads feed shows posts from accounts you follow, plus recommended content from accounts you don't follow (similar to the Instagram For You system). Tap the heart to like a post, the speech bubble to reply, or the two-arrows icon to repost.
 
@@ -788,7 +788,7 @@ You can link up to four devices to one WhatsApp account. This includes tablets a
     difficulty: `Beginner`,
     readTime: `4 min`,
     publishedAt: `2026-04-20`,
-    body: `Telegram is a free messaging app used by hundreds of millions of people worldwide. Unlike WhatsApp, which tethers its desktop version to your phone being on and nearby, Telegram's desktop apps are standalone — they work even when your phone is powered off, because all your messages are stored in Telegram's cloud rather than only on your device.
+    body: `Telegram is a free messaging app used by hundreds of millions of people worldwide. Unlike WhatsApp, which tethers its desktop version to your phone being on and nearby, Telegram's desktop apps are standalone. They work even when your phone is powered off, because all your messages are stored in Telegram's cloud rather than only on your device.
 
 This makes Telegram desktop particularly convenient for long typing sessions, sharing large files, or using Telegram as your primary messaging tool on a computer.
 
@@ -867,7 +867,7 @@ Always keep Signal updated — signal.org releases security updates often, and r
       },
       {
         title: `Use Note to Self for reminders and file transfer`,
-        content: `Click on "Note to Self" in your conversation list (it looks like a conversation with yourself). Send any text, link, or file to this conversation — it shows up on your phone in the same Note to Self thread. This is a great way to pass files between your computer and phone without email.`,
+        content: `Click on "Note to Self" in your conversation list (it looks like a conversation with yourself). Send any text, link, or file to this conversation. It shows up on your phone in the same Note to Self thread. This is a great way to pass files between your computer and phone without email.`,
       },
       {
         title: `Keep Signal updated`,
@@ -1016,7 +1016,7 @@ To close Split View, drag the divider all the way to the left or right edge — 
       },
       {
         title: `Try Slide Over for a floating app panel`,
-        content: `Slide Over works similarly to Split View, but instead of dividing the screen evenly, the second app appears as a floating narrow panel. To activate Slide Over, drag an app from the Dock to the middle of the screen — it lands as a hovering panel instead of splitting the screen. Swipe the panel to the edge to hide it temporarily.`,
+        content: `Slide Over works similarly to Split View, but instead of dividing the screen evenly, the second app appears as a floating narrow panel. To activate Slide Over, drag an app from the Dock to the middle of the screen. It lands as a hovering panel instead of splitting the screen. Swipe the panel to the edge to hide it temporarily.`,
       },
       {
         title: `Close Split View`,
@@ -1099,7 +1099,7 @@ The Scribble feature is one of the most practical additions: handwrite in any te
     steps: [
       {
         title: `Check compatibility and connect your Pencil`,
-        content: `Verify which Apple Pencil your iPad supports at support.apple.com/en-us/chart/ipad-apple-pencil-compatibility. For the 2nd generation Pencil, attach it to the magnetic side of your iPad — it pairs and starts charging automatically. For the 1st generation, connect it to the Lightning or USB-C port briefly to pair.`,
+        content: `Verify which Apple Pencil your iPad supports at support.apple.com/en-us/chart/ipad-apple-pencil-compatibility. For the 2nd generation Pencil, attach it to the magnetic side of your iPad. It pairs and starts charging automatically. For the 1st generation, connect it to the Lightning or USB-C port briefly to pair.`,
       },
       {
         title: `Open Notes and start writing`,
@@ -1221,7 +1221,7 @@ For brightness: in a lit room, you typically want the ring light set to 50–70%
   {
     slug: `youtube-channel-guide`,
     title: `How to Start a YouTube Channel`,
-    excerpt: `Anyone can start a YouTube channel — you don't need fancy equipment or editing skills to share your knowledge, hobby, or story.`,
+    excerpt: `Anyone can start a YouTube channel. You don't need fancy equipment or editing skills to share your knowledge, hobby, or story.`,
     category: `social-media`,
     tags: [`youtube`, `channel`, `content creation`, `video`, `seniors`],
     thumbnailEmoji: ``,
@@ -1294,7 +1294,7 @@ Adding a folder to the sidebar is as straightforward as dragging it. Open Finder
 
 You can also add a folder with a right-click: Control-click (or right-click) the folder and choose "Add to Sidebar" from the menu.
 
-To remove an item you don't use from the sidebar, right-click it and choose "Remove from Sidebar." This doesn't delete the folder — it only removes the shortcut. The folder stays exactly where it is on your Mac.
+To remove an item you don't use from the sidebar, right-click it and choose "Remove from Sidebar." This doesn't delete the folder. It only removes the shortcut. The folder stays exactly where it is on your Mac.
 
 Reordering the sidebar is done by dragging items up and down within their section. Hold and drag any item to a new position.
 
@@ -1315,7 +1315,7 @@ Quick Tip: Keyboard shortcut to show or hide the sidebar entirely: Option+Comman
       },
       {
         title: `Remove items you don't use`,
-        content: `Right-click any sidebar item and choose "Remove from Sidebar" to remove it. This removes the shortcut only — it does not move or delete the actual folder. Common items to remove if you don't use them: Recent, AirDrop (if you don't use file sharing), or any location shortcuts for drives you don't have connected.`,
+        content: `Right-click any sidebar item and choose "Remove from Sidebar" to remove it. This removes the shortcut only. It does not move or delete the actual folder. Common items to remove if you don't use them: Recent, AirDrop (if you don't use file sharing), or any location shortcuts for drives you don't have connected.`,
       },
       {
         title: `Customize sidebar sections in Finder Settings`,

@@ -136,7 +136,7 @@ export const guidesBatch19: Guide[] = [
       },
       {
         title: 'Follow safe money transfer rules for every payment',
-        content: "Safe payment app rules: Only send money to people you know in real life. Double-check the recipient's name and photo before confirming — one wrong letter in a username can send to the wrong person. Never send money to claim a prize, receive a gift, or resolve a legal threat. Treat these apps like cash — there is usually no way to reverse a payment. Enable transaction notifications so you are alerted of any payment activity right away. Review your transaction history monthly for anything unfamiliar.",
+        content: "Safe payment app rules: Only send money to people you know in real life. Double-check the recipient's name and photo before confirming — one wrong letter in a username can send to the wrong person. Never send money to claim a prize, receive a gift, or resolve a legal threat. Treat these apps like cash. There is usually no way to reverse a payment. Enable transaction notifications so you are alerted of any payment activity right away. Review your transaction history monthly for anything unfamiliar.",
       },
     ],
   },
@@ -155,7 +155,7 @@ export const guidesBatch19: Guide[] = [
     steps: [
       {
         title: 'Increase the font size',
-        content: "Go to Settings → Display → Font Size and Style (or \"Font Size\" on some phones). A preview shows how text will look. Drag the slider to the right to increase the font size. Most Android phones offer 4-5 size options from small to largest. Choose \"Large\" or \"Largest\" for maximum readability. The change applies right away across the entire phone — you will see the difference in your settings menu right away.",
+        content: "Go to Settings → Display → Font Size and Style (or \"Font Size\" on some phones). A preview shows how text will look. Drag the slider to the right to increase the font size. Most Android phones offer 4-5 size options from small to largest. Choose \"Large\" or \"Largest\" for maximum readability. The change applies right away across the entire phone. You will see the difference in your settings menu right away.",
         tip: "Quick Tip: On Samsung Galaxy phones: Settings → Display → Font size and style → adjust the font size slider. On Google Pixel: Settings → Display → Font size.",
       },
       {
@@ -297,11 +297,11 @@ export const guidesBatch19: Guide[] = [
       {
         title: 'Keep important documents with the inventory',
         content: "Photograph or scan: purchase receipts for major appliances and electronics, warranty cards and documentation, appraisals for jewelry, art, and antiques, serial numbers for computers, TVs, and cameras. Compile these in the same album or folder as your inventory photos. The combination of photos + receipts gives your insurance company everything they need to process a claim efficiently.",
-        tip: "Quick Tip: Use the free **Encircle** app (available for iPhone and Android) — it is specifically designed for home inventories. It organizes photos by room, lets you add item details and values, and stores everything securely in the cloud. Insurance companies often recommend it.",
+        tip: "Quick Tip: Use the free **Encircle** app (available for iPhone and Android). It is specifically designed for home inventories. It organizes photos by room, lets you add item details and values, and stores everything securely in the cloud. Insurance companies often recommend it.",
       },
       {
         title: 'Store the inventory somewhere outside your home',
-        content: "The most important step: your home inventory is useless if it is destroyed along with your home. Store it in at least two places: a cloud service (iCloud, Google Drive, or Google Photos) and with a trusted family member or lawyer. If you use the Encircle app, it backs up automatically to the cloud. Email yourself the video walkthrough and key photos — they will remain in your email even if your home is damaged.",
+        content: "The most important step: your home inventory is useless if it is destroyed along with your home. Store it in at least two places: a cloud service (iCloud, Google Drive, or Google Photos) and with a trusted family member or lawyer. If you use the Encircle app, it backs up automatically to the cloud. Email yourself the video walkthrough and key photos. They will remain in your email even if your home is damaged.",
       },
     ],
   },
@@ -350,7 +350,7 @@ export const guidesBatch19: Guide[] = [
     thumbnailEmoji: '',
     publishedAt: '2026-04-19',
     difficulty: 'Beginner',
-    body: `MagSafe is Apple's wireless charging and accessory attachment system, built into the iPhone 12 and all later models. The back of these iPhones contains a ring of magnets that snaps any MagSafe accessory into precise alignment automatically — you don't need to carefully center the phone on a charging pad. The magnets do that for you.\n\nMagSafe charges iPhones faster than standard Qi wireless charging (up to 15W versus 7.5W) and works with a growing ecosystem of magnetic accessories: chargers, wallets, cases, car mounts, and stands. MagSafe accessories are labeled with the MagSafe logo and snap magnetically to the back of the phone.\n\nYou do not need to use MagSafe — regular cables and standard Qi wireless chargers still work. But MagSafe is convenient, and if you are already buying iPhone accessories, MagSafe versions offer the best fit.`,
+    body: `MagSafe is Apple's wireless charging and accessory attachment system, built into the iPhone 12 and all later models. The back of these iPhones contains a ring of magnets that snaps any MagSafe accessory into precise alignment automatically. You don't need to carefully center the phone on a charging pad. The magnets do that for you.\n\nMagSafe charges iPhones faster than standard Qi wireless charging (up to 15W versus 7.5W) and works with a growing ecosystem of magnetic accessories: chargers, wallets, cases, car mounts, and stands. MagSafe accessories are labeled with the MagSafe logo and snap magnetically to the back of the phone.\n\nYou do not need to use MagSafe — regular cables and standard Qi wireless chargers still work. But MagSafe is convenient, and if you are already buying iPhone accessories, MagSafe versions offer the best fit.`,
     steps: [
       {
         title: 'Check if your iPhone supports MagSafe',
@@ -359,7 +359,7 @@ export const guidesBatch19: Guide[] = [
       },
       {
         title: 'Use the MagSafe charger',
-        content: "The official Apple MagSafe charger is a disc-shaped charging puck that attaches magnetically to the back of your iPhone. Plug it into power using a USB-C cable and a USB-C power adapter (sold separately — or use any USB-C power brick you have). Hold the charging disc near the back of your phone — it snaps into place with a satisfying click. A charging animation appears on screen. You can pick up the phone and the charger comes along, then detach it when you want.",
+        content: "The official Apple MagSafe charger is a disc-shaped charging puck that attaches magnetically to the back of your iPhone. Plug it into power using a USB-C cable and a USB-C power adapter (sold separately — or use any USB-C power brick you have). Hold the charging disc near the back of your phone. It snaps into place with a satisfying click. A charging animation appears on screen. You can pick up the phone and the charger comes along, then detach it when you want.",
       },
       {
         title: 'Explore MagSafe accessories',
@@ -368,7 +368,7 @@ export const guidesBatch19: Guide[] = [
       },
       {
         title: 'Use MagSafe with a case',
-        content: "Most modern iPhone cases are MagSafe compatible — they have a clear window or built-in alignment ring that allows MagSafe accessories to snap through the case without removing the phone. Look for \"MagSafe compatible\" in case descriptions. Cases without the MagSafe alignment ring still work, but the magnetic snap is weaker. Very thick cases may reduce charging speed slightly, but most standard cases have no noticeable effect.",
+        content: "Most modern iPhone cases are MagSafe compatible. They have a clear window or built-in alignment ring that allows MagSafe accessories to snap through the case without removing the phone. Look for \"MagSafe compatible\" in case descriptions. Cases without the MagSafe alignment ring still work, but the magnetic snap is weaker. Very thick cases may reduce charging speed slightly, but most standard cases have no noticeable effect.",
       },
     ],
   },
@@ -435,7 +435,7 @@ export const guidesBatch19: Guide[] = [
       },
       {
         title: 'Bring a trusted person and use them as a second set of ears',
-        content: "The most effective approach for important medical appointments: bring a family member or trusted friend. Ask them to listen and take notes while you focus on talking with the doctor. Two people together remember more than one alone. Your companion can also ask follow-up questions you might not think of in the moment. After the appointment, compare what each of you heard and noted — you will often find each person remembered different things the doctor said.",
+        content: "The most effective approach for important medical appointments: bring a family member or trusted friend. Ask them to listen and take notes while you focus on talking with the doctor. Two people together remember more than one alone. Your companion can also ask follow-up questions you might not think of in the moment. After the appointment, compare what each of you heard and noted. You will often find each person remembered different things the doctor said.",
       },
     ],
   },
@@ -454,7 +454,7 @@ export const guidesBatch19: Guide[] = [
     steps: [
       {
         title: 'Use Google Translate camera for signs and menus',
-        content: "Download Google Translate (free) from your app store. Open the app → tap the camera icon. Select your language pair (for example, French → English). Point your camera at any text in a foreign language. Google Translate overlays the English translation directly on the image in real time — you see the sign or menu in English as you look through the camera. For a cleaner result, tap to pause the camera and read the overlay at your own pace.",
+        content: "Download Google Translate (free) from your app store. Open the app → tap the camera icon. Select your language pair (for example, French → English). Point your camera at any text in a foreign language. Google Translate overlays the English translation directly on the image in real time. You see the sign or menu in English as you look through the camera. For a cleaner result, tap to pause the camera and read the overlay at your own pace.",
         tip: "Quick Tip: Google Translate's camera works on printed text. For handwritten notes, the image translate mode (taking a photo rather than live camera) works better — tap the camera icon and then the photo icon to translate a photo from your library.",
       },
       {
@@ -493,7 +493,7 @@ export const guidesBatch19: Guide[] = [
       },
       {
         title: 'Check streaming services for senior or AARP discounts',
-        content: "Streaming discounts change often — always check the current offer. Known discounts to research: Paramount+ (AARP discount for members), Peacock Premium (AARP negotiated rate), SiriusXM radio (55+ listener pricing available via phone), The New York Times digital subscription (student and senior rates available — call 1-800-698-4637 and ask), and Washington Post digital (call and ask for a senior rate). Many discounts require calling customer service and specifically asking — they are not always visible on the website.",
+        content: "Streaming discounts change often — always check the current offer. Known discounts to research: Paramount+ (AARP discount for members), Peacock Premium (AARP negotiated rate), SiriusXM radio (55+ listener pricing available via phone), The New York Times digital subscription (student and senior rates available — call 1-800-698-4637 and ask), and Washington Post digital (call and ask for a senior rate). Many discounts require calling customer service and specifically asking. They are not always visible on the website.",
         tip: "Quick Tip: When calling any subscription service, say: \"I'm a senior over 55 — do you have any discounts or promotions available for me?\" You may be surprised how often the answer is yes.",
       },
       {
@@ -526,7 +526,7 @@ export const guidesBatch19: Guide[] = [
       },
       {
         title: 'Share a Memory with family',
-        content: "Open any Memory → tap the share icon. You can share directly to Messages, WhatsApp, email, or any other app. You can also share the Memory as an animated GIF or a short video. Tap \"Send a copy\" to choose how to share it. Recipients can watch the slideshow even if they don't have Google Photos — it opens as a web link.",
+        content: "Open any Memory → tap the share icon. You can share directly to Messages, WhatsApp, email, or any other app. You can also share the Memory as an animated GIF or a short video. Tap \"Send a copy\" to choose how to share it. Recipients can watch the slideshow even if they don't have Google Photos. It opens as a web link.",
         tip: "Quick Tip: Memories make wonderful shareable moments for family group chats. A \"5 years ago today\" memory from a family reunion or a grandchild's birthday is the kind of content that delights people.",
       },
       {
@@ -543,7 +543,7 @@ export const guidesBatch19: Guide[] = [
   {
     slug: 'apple-maps-share-eta-guide',
     title: 'How to Share Your ETA With Family Using Apple Maps',
-    excerpt: "Apple Maps lets you share your estimated arrival time with anyone while you're navigating — they can track your progress in real time so they know when to expect you.",
+    excerpt: "Apple Maps lets you share your estimated arrival time with anyone while you're navigating. They can track your progress in real time so they know when to expect you.",
     category: 'app-guides',
     tags: ['apple maps', 'share eta', 'navigation', 'arrival time', 'iphone', 'family safety'],
     readTime: '4 min',
@@ -626,7 +626,7 @@ export const guidesBatch19: Guide[] = [
       {
         title: 'Enable Night Light in Windows 11',
         content: "Go to Settings → System → Display → Night Light. Click the toggle to turn it on right away, or click \"Night Light settings\" to configure a schedule. \"Set hours\" lets you choose specific times (for example, 8 PM to 7 AM). \"Sunset to sunrise\" automatically adjusts based on your location's actual sunset time. The \"Strength\" slider controls how warm the colors shift — drag it right for more warmth or left for a subtler effect.",
-        tip: "Quick Tip: Night Light takes several minutes to fully warm to its target color temperature — it shifts gradually rather than switching abruptly, which is less jarring.",
+        tip: "Quick Tip: Night Light takes several minutes to fully warm to its target color temperature. It shifts gradually rather than switching abruptly, which is less jarring.",
       },
       {
         title: 'Enable Dark Mode in Chrome (separate from Windows)',
@@ -662,7 +662,7 @@ export const guidesBatch19: Guide[] = [
       },
       {
         title: 'Remove apps you never use from the Dock',
-        content: "To remove an app from the Dock: right-click the icon → Options → \"Remove from Dock.\" Or drag the icon away from the Dock and hold it for a second — a \"Remove\" badge appears and the icon disappears when you let go (with a satisfying poof). This does not uninstall the app — it just removes the shortcut from the Dock. The app is still in your Applications folder.",
+        content: "To remove an app from the Dock: right-click the icon → Options → \"Remove from Dock.\" Or drag the icon away from the Dock and hold it for a second — a \"Remove\" badge appears and the icon disappears when you let go (with a satisfying poof). This does not uninstall the app. It just removes the shortcut from the Dock. The app is still in your Applications folder.",
         tip: "Quick Tip: A clean Dock with only 8-12 of your most-used apps is much easier to navigate than a crowded Dock with 30 icons. Remove anything you haven't clicked in a month.",
       },
       {

@@ -35,7 +35,7 @@ Millions of Americans are still running Windows 10. If that is you, you are not 
       },
       {
         title: 'Upgrade to Windows 11 if your PC qualifies (free)',
-        content: 'If the PC Health Check app gives your PC a green light, upgrading is free and takes about 30 to 60 minutes. Open Settings > Windows Update > Check for updates. Look for "Windows 11 is available." Click Download and install. Windows will restart a few times during the process. Your files, programs, and settings will carry over — you do not need to do anything to preserve them ahead of time. After upgrading, Windows 11 will receive security updates through 2031.',
+        content: 'If the PC Health Check app gives your PC a green light, upgrading is free and takes about 30 to 60 minutes. Open Settings > Windows Update > Check for updates. Look for "Windows 11 is available." Click Download and install. Windows will restart a few times during the process. Your files, programs, and settings will carry over. You do not need to do anything to preserve them ahead of time. After upgrading, Windows 11 will receive security updates through 2031.',
         tip: 'Quick Tip: If you do not see the Windows 11 offer in Windows Update, go directly to microsoft.com/software-download/windows11 and click "Download Windows 11 Disk Image." This starts the upgrade manually.',
       },
       {
@@ -148,7 +148,7 @@ This is especially useful if you find writing emails stressful, do not know how 
       {
         title: 'Add the recipient and subject, then send',
         content: 'Once you are happy with the body text, fill in the To field (the recipient\'s email address) and the Subject line if one was not already there. Double-check the recipient — it is possible to accidentally send to the wrong person. Then click or tap Send.',
-        tip: 'Quick Tip: You can also use "Help Me Write" to improve something you already typed. Start writing the email yourself, then tap the Help Me Write button — it will offer to polish what you have written rather than starting from scratch.',
+        tip: 'Quick Tip: You can also use "Help Me Write" to improve something you already typed. Start writing the email yourself, then tap the Help Me Write button. It will offer to polish what you have written rather than starting from scratch.',
       },
     ],
   },
@@ -181,7 +181,7 @@ Requirements: AirPods Pro 2 (second generation), iPhone with iOS 18 or later, a 
       },
       {
         title: 'Update to iOS 18 and update your AirPods firmware',
-        content: 'The hearing test requires iOS 18 or later. To check, open Settings > General > About and look at "iOS Version." If it says 17 or lower, go to Settings > General > Software Update and install the update. AirPods firmware updates automatically when the AirPods are connected and charging — you do not need to do anything for that.',
+        content: 'The hearing test requires iOS 18 or later. To check, open Settings > General > About and look at "iOS Version." If it says 17 or lower, go to Settings > General > Software Update and install the update. AirPods firmware updates automatically when the AirPods are connected and charging. You do not need to do anything for that.',
       },
       {
         title: 'Find the Hearing Test in Settings',

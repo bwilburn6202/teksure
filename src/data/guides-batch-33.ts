@@ -105,7 +105,7 @@ export const guidesBatch33: Guide[] = [
       {
         title: 'Switch between clock styles',
         content: 'While in StandBy, swipe left or right to change the clock style. Options include a digital clock, an analog clock, a world clock, and a photo frame mode showing your recent photos.',
-        tip: 'The red Night Mode activates automatically in dark rooms. This is intentional and much easier on the eyes — it does not show an error.',
+        tip: 'The red Night Mode activates automatically in dark rooms. This is intentional and much easier on the eyes. It does not show an error.',
       },
     ],
   },
@@ -177,7 +177,7 @@ export const guidesBatch33: Guide[] = [
       },
       {
         title: 'Test your new Control Center',
-        content: 'Swipe down from the top-right corner of your screen to open Control Center. Your added and rearranged controls should appear exactly as set. Tap the Magnifier to test it — it opens the camera with a zoom slider.',
+        content: 'Swipe down from the top-right corner of your screen to open Control Center. Your added and rearranged controls should appear exactly as set. Tap the Magnifier to test it. It opens the camera with a zoom slider.',
       },
     ],
   },
@@ -186,7 +186,7 @@ export const guidesBatch33: Guide[] = [
     slug: 'dynamic-island-guide',
     title: 'How to Use the Dynamic Island on iPhone',
     excerpt: 'The Dynamic Island on iPhone 14 Pro and later replaces the notch with an interactive display that shows alerts, Live Activities, and controls right at the top of your screen.',
-    body: `The Dynamic Island is a pill-shaped cutout at the top center of the screen on iPhone 14 Pro, iPhone 15, and later models. Unlike a regular notch that is purely decorative, the Dynamic Island is interactive — it expands, shrinks, and animates to show useful information and alerts.\n\n**What it displays**:\n- Music controls when you are playing something\n- A timer counting down\n- Directions when navigation is active\n- A phone call in progress\n- A sports game score in real time\n- A food delivery or ride-share status\n- AirDrop transfers\n- Silent/vibrate mode toggle alerts\n- Face ID status\n\n**How to interact with it**:\n- **Tap** the Dynamic Island to expand it and see more detail about the current activity\n- **Long-press** to see a larger expanded view with controls (like music playback controls)\n- **Swipe** down from the Dynamic Island to jump directly to the related app\n\nApps that support Live Activities can send ongoing updates to the Dynamic Island. For example, a food delivery app can show your order status ("In the kitchen," "Out for delivery") right in the Dynamic Island without you needing to open the app.\n\nThe Dynamic Island works automatically — you do not need to set it up. Just be aware it is there and tap it when you see it showing something relevant.`,
+    body: `The Dynamic Island is a pill-shaped cutout at the top center of the screen on iPhone 14 Pro, iPhone 15, and later models. Unlike a regular notch that is purely decorative, the Dynamic Island is interactive. It expands, shrinks, and animates to show useful information and alerts.\n\n**What it displays**:\n- Music controls when you are playing something\n- A timer counting down\n- Directions when navigation is active\n- A phone call in progress\n- A sports game score in real time\n- A food delivery or ride-share status\n- AirDrop transfers\n- Silent/vibrate mode toggle alerts\n- Face ID status\n\n**How to interact with it**:\n- **Tap** the Dynamic Island to expand it and see more detail about the current activity\n- **Long-press** to see a larger expanded view with controls (like music playback controls)\n- **Swipe** down from the Dynamic Island to jump directly to the related app\n\nApps that support Live Activities can send ongoing updates to the Dynamic Island. For example, a food delivery app can show your order status ("In the kitchen," "Out for delivery") right in the Dynamic Island without you needing to open the app.\n\nThe Dynamic Island works automatically. You do not need to set it up. Just be aware it is there and tap it when you see it showing something relevant.`,
     category: 'phone-guides',
     tags: ['iphone', 'dynamic island', 'live activities', 'iphone 14 pro', 'ios tips'],
     readTime: '4 min',
@@ -232,7 +232,7 @@ export const guidesBatch33: Guide[] = [
     steps: [
       {
         title: 'Open the Translate app',
-        content: 'Look for the Translate app on your Home screen — it has a blue background with a globe icon. If you cannot find it, search "Translate" in the Spotlight search (swipe down from the middle of your Home screen).',
+        content: 'Look for the Translate app on your Home screen. It has a blue background with a globe icon. If you cannot find it, search "Translate" in the Spotlight search (swipe down from the middle of your Home screen).',
       },
       {
         title: 'Set your language pair',
@@ -347,7 +347,7 @@ export const guidesBatch33: Guide[] = [
       {
         title: 'Add your first device',
         content: 'Tap the "+" button in the top-left corner → "Set up device." Choose "New device" if you are adding a brand new Google product. The app guides you through plugging in the device and connecting it to Wi-Fi.',
-        tip: 'Have your Wi-Fi password handy — you will need to enter it during device setup.',
+        tip: 'Have your Wi-Fi password handy. You will need to enter it during device setup.',
       },
       {
         title: 'Assign devices to rooms',
@@ -368,7 +368,7 @@ export const guidesBatch33: Guide[] = [
     slug: 'windows-11-widgets-guide',
     title: 'How to Use the Windows 11 Widgets Panel',
     excerpt: 'Windows 11 has a widgets panel that shows news, weather, sports scores, stock prices, and a calendar at a glance — accessible with one click.',
-    body: `Windows 11 includes a Widgets panel — a sidebar that shows live, at-a-glance information without opening any apps. You can access it by clicking the weather/news icon in the taskbar (usually showing the current temperature) or by pressing Windows key + W.\n\nThe default widgets include:\n- **Weather**: Current conditions and a five-day forecast\n- **News**: Top headlines personalized to your interests\n- **Calendar**: Your upcoming appointments and events\n- **Sports**: Scores and standings for your favorite teams\n- **Stocks/markets**: Price updates for stocks you follow\n- **Photos**: Your recent photos from OneDrive\n- **To Do**: Tasks from Microsoft To Do\n- **Traffic**: Current conditions on your commute route\n\nYou can add, remove, and rearrange widgets by clicking the pencil icon ("Edit widgets") at the top of the panel. Each widget can be resized — small, medium, or large — depending on how much detail you want to see.\n\nThe news feed at the bottom of the Widgets panel is personalized based on topics you follow. You can hide topics you are not interested in and add new ones.\n\nWidgets is designed to be glanceable — you open it briefly, see what you need, and close it. It does not replace any apps. It gives you quick access to information you check often without opening a browser or multiple apps.`,
+    body: `Windows 11 includes a Widgets panel — a sidebar that shows live, at-a-glance information without opening any apps. You can access it by clicking the weather/news icon in the taskbar (usually showing the current temperature) or by pressing Windows key + W.\n\nThe default widgets include:\n- **Weather**: Current conditions and a five-day forecast\n- **News**: Top headlines personalized to your interests\n- **Calendar**: Your upcoming appointments and events\n- **Sports**: Scores and standings for your favorite teams\n- **Stocks/markets**: Price updates for stocks you follow\n- **Photos**: Your recent photos from OneDrive\n- **To Do**: Tasks from Microsoft To Do\n- **Traffic**: Current conditions on your commute route\n\nYou can add, remove, and rearrange widgets by clicking the pencil icon ("Edit widgets") at the top of the panel. Each widget can be resized — small, medium, or large — depending on how much detail you want to see.\n\nThe news feed at the bottom of the Widgets panel is personalized based on topics you follow. You can hide topics you are not interested in and add new ones.\n\nWidgets is designed to be glanceable. You open it briefly, see what you need, and close it. It does not replace any apps. It gives you quick access to information you check often without opening a browser or multiple apps.`,
     category: 'windows-guides',
     tags: ['windows 11', 'widgets', 'news feed', 'weather', 'windows tips'],
     readTime: '4 min',
@@ -585,7 +585,7 @@ export const guidesBatch33: Guide[] = [
     slug: 'imessage-games-guide',
     title: 'How to Play Games in iMessage with Friends and Family',
     excerpt: 'The App Store inside iMessage has free games you can play turn-by-turn with friends and family right inside a text conversation — no separate app needed.',
-    body: `iMessage has a built-in App Store with games and apps that work inside a text message conversation. The most popular are turn-by-turn games where you and a friend or family member take turns playing — like word games, trivia, or board games — inside the Messages app itself.\n\n**Popular iMessage games**:\n- **GamePigeon**: A collection of classic games including Pool (8-ball), Checkers, Poker, Mini Golf, Sea Battle, Darts, and Anagrams. This is the most-used iMessage game pack.\n- **Word games** like Wordie or Word Laces where you compete to find words\n- **Trivia** games where you answer questions and compare scores\n\nHow it works: You play your turn and it sends the result to the other person. They open the message, take their turn. And it comes back to you. You both play at your own pace — there is no need to be online at the same time.\n\nBoth people need an iPhone and iOS 17 or later. The other person does not need to have installed the game app first — they download it automatically when they open your game invitation.\n\nThis is a wonderful way for grandparents and grandchildren to stay connected and have something to do together when they cannot be in person. A quick game of Pool or word challenge is a natural conversation starter.`,
+    body: `iMessage has a built-in App Store with games and apps that work inside a text message conversation. The most popular are turn-by-turn games where you and a friend or family member take turns playing — like word games, trivia, or board games — inside the Messages app itself.\n\n**Popular iMessage games**:\n- **GamePigeon**: A collection of classic games including Pool (8-ball), Checkers, Poker, Mini Golf, Sea Battle, Darts, and Anagrams. This is the most-used iMessage game pack.\n- **Word games** like Wordie or Word Laces where you compete to find words\n- **Trivia** games where you answer questions and compare scores\n\nHow it works: You play your turn and it sends the result to the other person. They open the message, take their turn. And it comes back to you. You both play at your own pace. There is no need to be online at the same time.\n\nBoth people need an iPhone and iOS 17 or later. The other person does not need to have installed the game app first. They download it automatically when they open your game invitation.\n\nThis is a wonderful way for grandparents and grandchildren to stay connected and have something to do together when they cannot be in person. A quick game of Pool or word challenge is a natural conversation starter.`,
     category: 'communication',
     tags: ['imessage', 'games', 'family', 'iphone', 'gamepigeon'],
     readTime: '4 min',
@@ -622,7 +622,7 @@ export const guidesBatch33: Guide[] = [
     slug: 'bixby-samsung-guide',
     title: 'How to Use Bixby on Samsung Galaxy Phones',
     excerpt: `Bixby is Samsung's voice assistant built into Galaxy phones — use it to control your phone, send texts, set reminders, and get answers hands-free.`,
-    body: `Bixby is Samsung's built-in voice assistant available on Galaxy smartphones. It works similarly to Siri (on iPhone) or Google Assistant — you give voice commands and Bixby performs actions or answers questions.\n\nYou can wake Bixby by pressing and holding the side button on your Galaxy phone (if configured) or by saying "Hi Bixby" if voice wake is turned on.\n\n**What Bixby can do**:\n- Set alarms, timers, and calendar events\n- Send text messages or make calls by voice\n- Open any app on your phone\n- Change phone settings (turn on Wi-Fi, adjust brightness, enable Do Not Disturb)\n- Answer general knowledge questions\n- Read out your schedule or reminders\n- Take photos or start recording by voice\n- Set up routines that perform multiple actions with one command\n\n**Bixby Routines**: This is Bixby's most powerful feature for everyday use. You create automation rules — "When I connect to my home Wi-Fi, turn on Do Not Disturb and reduce brightness." Or "At 9 PM every night, start playing calm music and dim my screen." Routines run automatically without any voice command.\n\nIf you find Bixby accidentally opens when you press the side button, you can go to Settings → Advanced Features → Side key and change what the side button does (long press can be set to power menu instead).`,
+    body: `Bixby is Samsung's built-in voice assistant available on Galaxy smartphones. It works similarly to Siri (on iPhone) or Google Assistant. You give voice commands and Bixby performs actions or answers questions.\n\nYou can wake Bixby by pressing and holding the side button on your Galaxy phone (if configured) or by saying "Hi Bixby" if voice wake is turned on.\n\n**What Bixby can do**:\n- Set alarms, timers, and calendar events\n- Send text messages or make calls by voice\n- Open any app on your phone\n- Change phone settings (turn on Wi-Fi, adjust brightness, enable Do Not Disturb)\n- Answer general knowledge questions\n- Read out your schedule or reminders\n- Take photos or start recording by voice\n- Set up routines that perform multiple actions with one command\n\n**Bixby Routines**: This is Bixby's most powerful feature for everyday use. You create automation rules — "When I connect to my home Wi-Fi, turn on Do Not Disturb and reduce brightness." Or "At 9 PM every night, start playing calm music and dim my screen." Routines run automatically without any voice command.\n\nIf you find Bixby accidentally opens when you press the side button, you can go to Settings → Advanced Features → Side key and change what the side button does (long press can be set to power menu instead).`,
     category: 'phone-guides',
     tags: ['bixby', 'samsung', 'galaxy', 'voice assistant', 'android'],
     readTime: '5 min',
@@ -637,7 +637,7 @@ export const guidesBatch33: Guide[] = [
       {
         title: 'Try a basic voice command',
         content: 'Say "Bixby, what time is it?" or "Bixby, set a timer for 10 minutes" to test that it is working. You can also try "Bixby, open the camera" or "Bixby, call Mom."',
-        tip: 'Speak clearly and at a normal pace. Bixby works best in quiet environments — it may struggle in noisy rooms.',
+        tip: 'Speak clearly and at a normal pace. Bixby works best in quiet environments. It may struggle in noisy rooms.',
       },
       {
         title: 'Enable voice wake (optional)',

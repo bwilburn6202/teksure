@@ -129,7 +129,7 @@ export const guidesBatch31: Guide[] = [
       {
         title: 'Choose your preferred setting',
         content: 'Select "Show Automatically" to let iPhone decide when you are in a vehicle, or choose "Always On" to always display the dots when using the phone.',
-        tip: '"Show Automatically" is the best option for most people — it saves battery and does not activate when you are walking or sitting still.',
+        tip: '"Show Automatically" is the best option for most people. It saves battery and does not activate when you are walking or sitting still.',
       },
       {
         title: 'Add it to Control Center for quick access',
@@ -447,7 +447,7 @@ export const guidesBatch31: Guide[] = [
     slug: 'senior-travel-discounts-guide',
     title: 'How to Find and Use Senior Travel Discounts',
     excerpt: 'Travelers age 55 and older can save significantly on flights, hotels, rental cars, and cruises — if you know where to look and when to book.',
-    body: `Senior travel discounts can save you hundreds of dollars on trips. But they are not always advertised prominently. You often need to ask for them or know where to look.\n\n**Airlines**: Many airlines offer senior fares, though they have become less common. Airlines like American, Delta, and United sometimes offer senior discounts on select domestic routes. It is worth calling the airline directly and asking about senior fares, since these are not always shown on booking websites. AARP Travel also partners with airlines and car rental companies for member discounts.\n\n**Hotels**: Most major chains offer senior discounts of 10% to 20% for AARP members. Marriott, Hilton, Best Western, and IHG all participate. Always ask at check-in or during booking whether a senior or AARP rate is available — it may be lower than the rate you found online.\n\n**Rental cars**: AARP members receive discounts at Avis, Budget, Hertz, and Enterprise. Book through the AARP Travel Center for guaranteed rates. If you are 65 or older, Enterprise and National also sometimes offer specific senior pricing.\n\n**Cruises**: Cruise lines often offer seniors age 55+ discounts of $100 to $500 off, especially during shoulder seasons (spring and fall). Booking through a travel agent who specializes in cruises can uncover better deals than booking directly.\n\n**National Parks**: Anyone 62 or older can purchase an America the Beautiful Senior Pass for $80 (lifetime) or $20 (annual), which gives free access to over 2,000 federal recreation areas including all national parks.`,
+    body: `Senior travel discounts can save you hundreds of dollars on trips. But they are not always advertised prominently. You often need to ask for them or know where to look.\n\n**Airlines**: Many airlines offer senior fares, though they have become less common. Airlines like American, Delta, and United sometimes offer senior discounts on select domestic routes. It is worth calling the airline directly and asking about senior fares, since these are not always shown on booking websites. AARP Travel also partners with airlines and car rental companies for member discounts.\n\n**Hotels**: Most major chains offer senior discounts of 10% to 20% for AARP members. Marriott, Hilton, Best Western, and IHG all participate. Always ask at check-in or during booking whether a senior or AARP rate is available. It may be lower than the rate you found online.\n\n**Rental cars**: AARP members receive discounts at Avis, Budget, Hertz, and Enterprise. Book through the AARP Travel Center for guaranteed rates. If you are 65 or older, Enterprise and National also sometimes offer specific senior pricing.\n\n**Cruises**: Cruise lines often offer seniors age 55+ discounts of $100 to $500 off, especially during shoulder seasons (spring and fall). Booking through a travel agent who specializes in cruises can uncover better deals than booking directly.\n\n**National Parks**: Anyone 62 or older can purchase an America the Beautiful Senior Pass for $80 (lifetime) or $20 (annual), which gives free access to over 2,000 federal recreation areas including all national parks.`,
     category: 'life-transitions',
     tags: ['senior discounts', 'travel', 'aarp', 'national parks', 'savings'],
     readTime: '6 min',
@@ -535,7 +535,7 @@ export const guidesBatch31: Guide[] = [
       },
       {
         title: 'Connect your bank accounts',
-        content: 'Tap "Add Account" and search for your bank by name. The app uses Plaid to connect — you enter your online banking username and password through a secure Plaid screen, not directly in PocketGuard.',
+        content: 'Tap "Add Account" and search for your bank by name. The app uses Plaid to connect. You enter your online banking username and password through a secure Plaid screen, not directly in PocketGuard.',
         tip: 'Connect your main checking account first. You can add savings accounts and credit cards later to get a complete picture.',
       },
       {

@@ -15,7 +15,7 @@ export const guidesBatch77: Guide[] = [
 
 The site works by asking you a few basic questions — your age, health status, how much coverage you want — and then showing you real quotes from well-known insurance companies like AIG, Banner Life, Prudential, and others. You can see the monthly cost, the coverage amount, and key details about each plan side by side.
 
-Policygenius does not charge you anything to use. The insurance companies pay Policygenius a commission if you decide to buy, which means you pay the same price you would get anywhere else — you are not charged extra for using the comparison tool.
+Policygenius does not charge you anything to use. The insurance companies pay Policygenius a commission if you decide to buy, which means you pay the same price you would get anywhere else. You are not charged extra for using the comparison tool.
 
 If you find a plan you like, you can apply directly through the website. For life insurance, the application usually involves answering health questions and sometimes a short phone or video call with a licensed agent. For home and auto insurance, many policies can be purchased completely online.
 
@@ -26,7 +26,7 @@ Even if you are not ready to buy today, the site is a great way to learn what di
       {
         title: `Go to Policygenius and choose what you want to compare`,
         content: `Open your web browser and go to policygenius.com. You will see options for life insurance, home insurance, auto insurance, disability insurance, and more. Click the type of insurance you are researching. Each section has a short form to fill out — usually about five to ten questions.`,
-        tip: `Quick Tip: Start with life insurance if you are not sure — it is the most commonly used section and the quotes come back quickly.`,
+        tip: `Quick Tip: Start with life insurance if you are not sure. It is the most commonly used section and the quotes come back quickly.`,
       },
       {
         title: `Answer the health and coverage questions honestly`,
@@ -90,7 +90,7 @@ If you rent your home or apartment and do not already have renters insurance, Le
       },
       {
         title: `Know how to file a claim if you need to`,
-        content: `If something is stolen or damaged, open the app and tap "Claim." You will record a short video explaining what happened and answer a few questions. Lemonade will review it and let you know the decision. Keep receipts or photos of valuable items in a safe place — they can speed up the claims process.`,
+        content: `If something is stolen or damaged, open the app and tap "Claim." You will record a short video explaining what happened and answer a few questions. Lemonade will review it and let you know the decision. Keep receipts or photos of valuable items in a safe place. They can speed up the claims process.`,
         tip: `Quick Tip: Store photos of your expensive items in a cloud folder like Google Photos or iCloud before anything happens. This makes claims much easier.`,
       },
     ],
@@ -119,7 +119,7 @@ Whether you are a long-time Allstate customer or recently signed up, spending a 
     steps: [
       {
         title: `Download the app and sign in`,
-        content: `Search for "Allstate Mobile" in your phone's app store and install it. Open the app and tap "Log In." Enter the email address and password you use for your Allstate online account. If you have never set up an online account, tap "Create Account" and follow the steps — you will need your policy number, which is printed on any letter from Allstate.`,
+        content: `Search for "Allstate Mobile" in your phone's app store and install it. Open the app and tap "Log In." Enter the email address and password you use for your Allstate online account. If you have never set up an online account, tap "Create Account" and follow the steps. You will need your policy number, which is printed on any letter from Allstate.`,
       },
       {
         title: `Find your digital insurance card`,
@@ -258,7 +258,7 @@ For billing, the app lets you view your payment history, make a payment, and set
 
 If you need to report a claim, the app walks you through each step, including uploading photos and getting connected with your local State Farm agent or a claims representative.
 
-Many State Farm customers also use the app to connect with their personal agent — you can message them directly or schedule a call without going through a main phone line.`,
+Many State Farm customers also use the app to connect with their personal agent. You can message them directly or schedule a call without going through a main phone line.`,
     steps: [
       {
         title: `Download the app and log in`,
@@ -328,7 +328,7 @@ You can compare Medicare Advantage plans available in your area using the offici
       },
       {
         title: `Enroll during open enrollment`,
-        content: `The main Medicare open enrollment period runs from October 15 to December 7 each year. Changes take effect on January 1. You can enroll through the Medicare website, by calling 1-800-MEDICARE, or by contacting the plan directly. If you have questions or want help comparing plans, contact your local State Health Insurance Help Program (SHIP) — they offer free, unbiased counseling.`,
+        content: `The main Medicare open enrollment period runs from October 15 to December 7 each year. Changes take effect on January 1. You can enroll through the Medicare website, by calling 1-800-MEDICARE, or by contacting the plan directly. If you have questions or want help comparing plans, contact your local State Health Insurance Help Program (SHIP). They offer free, unbiased counseling.`,
       },
     ],
   },
@@ -442,7 +442,7 @@ Medicaid covers a wide range of services: doctor visits, hospital stays, prescri
 
 Who qualifies for Medicaid depends on your state, but generally includes low-income adults, children, pregnant women, seniors, and people with disabilities. As of 2010, the Affordable Care Act allowed states to expand Medicaid to cover all adults earning up to 138% of the federal poverty level. Most states have adopted this expansion, which opened coverage to millions of working adults who previously did not qualify.
 
-You can apply for Medicaid any time during the year — there is no open enrollment window. You apply through your state's Medicaid agency, through HealthCare.gov, or through your local Department of Social Services office. The online application at HealthCare.gov is the most convenient option for most people.
+You can apply for Medicaid any time during the year. There is no open enrollment window. You apply through your state's Medicaid agency, through HealthCare.gov, or through your local Department of Social Services office. The online application at HealthCare.gov is the most convenient option for most people.
 
 Once approved, coverage can be retroactive — meaning it may cover medical bills from up to three months before your approval date, which can be a significant financial relief if you had unexpected medical expenses.
 
@@ -547,7 +547,7 @@ When comparing plans, look at the monthly premium (what you pay every month whet
       },
       {
         title: `Understand the plan types before you compare`,
-        content: `Health insurance plans come in several types. HMOs require a primary care physician who coordinates your care and provides referrals to specialists — they tend to have lower premiums. PPOs allow you to see any doctor in or out of network and do not require referrals — they tend to cost more. HDHPs have low monthly premiums but high deductibles. And they pair with a Health Savings Account (HSA) to help you save money tax-free for medical expenses.`,
+        content: `Health insurance plans come in several types. HMOs require a primary care physician who coordinates your care and provides referrals to specialists. They tend to have lower premiums. PPOs allow you to see any doctor in or out of network and do not require referrals. They tend to cost more. HDHPs have low monthly premiums but high deductibles. And they pair with a Health Savings Account (HSA) to help you save money tax-free for medical expenses.`,
       },
       {
         title: `Check if you qualify for subsidies or Medicaid`,
@@ -585,11 +585,11 @@ The variety of content on Twitch has grown a lot. While gaming is the largest ca
 
 You can watch Twitch on a phone, tablet, computer, smart TV, or Roku and Fire TV streaming devices. The Twitch app is free in every app store.
 
-If you find a streamer you enjoy, you can follow them for free. When they go live, you will see them listed in your "Following" feed. Following does not cost anything — it is like bookmarking a channel.`,
+If you find a streamer you enjoy, you can follow them for free. When they go live, you will see them listed in your "Following" feed. Following does not cost anything. It is like bookmarking a channel.`,
     steps: [
       {
         title: `Go to Twitch in your browser or download the app`,
-        content: `On a computer, open your web browser and go to twitch.tv. On a phone or tablet, search for "Twitch" in your app store and install the free app. You do not need to create an account to start watching — you can browse right away as a guest.`,
+        content: `On a computer, open your web browser and go to twitch.tv. On a phone or tablet, search for "Twitch" in your app store and install the free app. You do not need to create an account to start watching. You can browse right away as a guest.`,
         tip: `Quick Tip: Twitch also works on Roku, Amazon Fire TV, Apple TV, and most smart TVs through the app store built into your television.`,
       },
       {
@@ -599,7 +599,7 @@ If you find a streamer you enjoy, you can follow them for free. When they go liv
       {
         title: `Click on a stream to start watching`,
         content: `When you find a category that interests you, click on it to see a list of live streams in that category. Click on any thumbnail to open that stream. The video starts playing in the main area on the left, and a chat window appears on the right where viewers and the streamer are talking. You can adjust the volume or make the video full screen using the controls at the bottom of the video player.`,
-        tip: `Quick Tip: If you prefer quieter or smaller communities, look for streamers with a few hundred viewers rather than thousands — they tend to be more interactive and personal.`,
+        tip: `Quick Tip: If you prefer quieter or smaller communities, look for streamers with a few hundred viewers rather than thousands. They tend to be more interactive and personal.`,
       },
       {
         title: `Create a free account to follow your favorite streamers`,
@@ -641,7 +641,7 @@ Voice channels are especially popular for ongoing group connections. If you want
       },
       {
         title: `Join a server using an invite link`,
-        content: `To join a server someone has shared with you, look for the invite link — it usually looks like discord.gg/something or discord.com/invite/something. Click the link and then click "Accept Invite." You are now in that server and can see all of its channels in the left sidebar.`,
+        content: `To join a server someone has shared with you, look for the invite link. It usually looks like discord.gg/something or discord.com/invite/something. Click the link and then click "Accept Invite." You are now in that server and can see all of its channels in the left sidebar.`,
       },
       {
         title: `Browse public servers on the Discord Discovery page`,
@@ -650,7 +650,7 @@ Voice channels are especially popular for ongoing group connections. If you want
       },
       {
         title: `Join a voice channel to talk with others`,
-        content: `Inside a server, look for channels listed on the left side. Text channels have a hashtag symbol (#) in front. Voice channels have a speaker symbol. Click on a voice channel to join it — you will hear any other people currently in that channel and they will hear you. To leave, click the red phone icon at the bottom of the screen or click "Disconnect."`,
+        content: `Inside a server, look for channels listed on the left side. Text channels have a hashtag symbol (#) in front. Voice channels have a speaker symbol. Click on a voice channel to join it. You will hear any other people currently in that channel and they will hear you. To leave, click the red phone icon at the bottom of the screen or click "Disconnect."`,
         warning: `Make sure your microphone permissions are granted when Discord asks. Without microphone access, you will be able to hear others but they will not hear you.`,
       },
       {
@@ -697,7 +697,7 @@ Reddit can feel overwhelming at first because of how much content exists. The ke
       },
       {
         title: `Create a free account to subscribe to communities`,
-        content: `Click "Log In" at the top right and then "Sign Up." Enter an email address and choose a username — it does not have to be your real name. Once logged in, visit subreddits you enjoy and click the "Join" button on the community page. Your home feed will now show posts from those communities rather than general trending content.`,
+        content: `Click "Log In" at the top right and then "Sign Up." Enter an email address and choose a username. It does not have to be your real name. Once logged in, visit subreddits you enjoy and click the "Join" button on the community page. Your home feed will now show posts from those communities rather than general trending content.`,
         tip: `Quick Tip: Start by joining three to five subreddits you genuinely care about. A focused feed is much more useful than subscribing to dozens of communities at once.`,
       },
       {
@@ -719,7 +719,7 @@ Reddit can feel overwhelming at first because of how much content exists. The ke
     difficulty: `Beginner`,
     body: `Trello is a free visual organization tool that helps you track tasks and projects using boards, lists, and cards. It is available on computers, phones, and tablets. And it syncs across all your devices. Whether you are planning a home renovation, tracking a medical treatment plan, or managing a family move, Trello gives you a clear visual picture of everything that needs to happen.
 
-The basic structure is easy to understand. A board is like a whiteboard for a single project — you might have a board called "Home Remodel" or "Vacation Planning." Inside each board, you create lists — vertical columns with names like "To Do," "In Progress," and "Done." Inside each list, you add cards — individual tasks, ideas, or items. You can drag cards from one list to another as things move forward.
+The basic structure is easy to understand. A board is like a whiteboard for a single project. You might have a board called "Home Remodel" or "Vacation Planning." Inside each board, you create lists — vertical columns with names like "To Do," "In Progress," and "Done." Inside each list, you add cards — individual tasks, ideas, or items. You can drag cards from one list to another as things move forward.
 
 Each card can hold a lot of information: a detailed description, a due date, a checklist, file attachments, photos, and more. You can also assign cards to specific people if you are working with a partner or family member.
 
@@ -731,7 +731,7 @@ Trello works best for ongoing projects with multiple steps. For simple daily to-
     steps: [
       {
         title: `Create a free Trello account`,
-        content: `Go to trello.com and click "Sign Up — it's free." Enter your email address and create a password, or sign in with your Google account if you prefer. Trello will ask you a few questions about how you plan to use it — you can skip these or answer quickly. You will land on your Trello home screen, which is empty at first.`,
+        content: `Go to trello.com and click "Sign Up — it's free." Enter your email address and create a password, or sign in with your Google account if you prefer. Trello will ask you a few questions about how you plan to use it. You can skip these or answer quickly. You will land on your Trello home screen, which is empty at first.`,
       },
       {
         title: `Create your first board`,
@@ -815,7 +815,7 @@ For people who feel overwhelmed by scattered sticky notes, forgotten mental list
 
 The app is available free on iPhone, Android, Mac, Windows, and in web browsers. The free version is generous and covers everything most people need for personal use. A paid version called TickTick Premium adds extras like more advanced calendar views, unlimited lists, and detailed statistics — but the free tier is fully functional.
 
-Tasks in TickTick work much like other to-do apps. You create tasks, set due dates and times, and check them off. What makes TickTick stand out is how it handles reminders — you can set multiple reminders for a single task, which is useful for appointments or medications where you want a heads-up an hour before and again 15 minutes before.
+Tasks in TickTick work much like other to-do apps. You create tasks, set due dates and times, and check them off. What makes TickTick stand out is how it handles reminders. You can set multiple reminders for a single task, which is useful for appointments or medications where you want a heads-up an hour before and again 15 minutes before.
 
 The habit tracker is one of TickTick's most popular features. You can set up a daily or weekly habit — like walking 20 minutes, reading before bed, or calling a family member — and track your progress with a visual streak chart. Seeing your streak grow encourages consistency in a way a plain list cannot.
 
@@ -844,7 +844,7 @@ For anyone who wants more than a basic list but finds complex project management
       {
         title: `Organize tasks into lists`,
         content: `In the sidebar, tap "Add List" to create a new list. Name it something like "Health," "Shopping," or "Family." When you add tasks, assign them to the right list by tapping the list selector. This keeps your tasks organized by area of life rather than mixed together in one long stream.`,
-        tip: `Quick Tip: The "Today" view in TickTick collects all tasks due today across all lists — it is a great way to start your morning and see what needs your attention first.`,
+        tip: `Quick Tip: The "Today" view in TickTick collects all tasks due today across all lists. It is a great way to start your morning and see what needs your attention first.`,
       },
     ],
   },

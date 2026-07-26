@@ -108,7 +108,7 @@ The free app works on iPhone and Android. The website at tripadvisor.com works o
 
 Unlike a hotel, a vacation rental gives you the whole property to yourself. You get a kitchen to cook meals, multiple bedrooms for families or groups, and often a yard or private amenities. For families or groups of people traveling together, rentals often cost less per person than multiple hotel rooms.
 
-Vrbo is similar to Airbnb but focuses entirely on whole-property rentals — you will not find shared rooms or "rent a couch" listings on Vrbo. Every listing is an entire home or unit.
+Vrbo is similar to Airbnb but focuses entirely on whole-property rentals. You will not find shared rooms or "rent a couch" listings on Vrbo. Every listing is an entire home or unit.
 
 Vrbo has over 2 million properties in 190 countries. Popular property types include beach houses, mountain cabins, lakefront homes, and city apartments.
 
@@ -227,7 +227,7 @@ The app is free on iPhone and Android. You can also book at amtrak.com on any co
       {
         title: `Apply discounts before paying`,
         content: `During checkout, tap "Add Discount" or "Promo Code." If you are 65 or older, select "Senior" for the 15% discount. If you are a AAA member, there is a separate AAA discount. Veterans and active military qualify for a 10% discount. Enter any promotional code you have. Apply the discount before entering payment.`,
-        warning: `Senior discounts must be applied during booking — you cannot add them after purchase. The conductor may ask for ID confirming your age.`,
+        warning: `Senior discounts must be applied during booking. You cannot add them after purchase. The conductor may ask for ID confirming your age.`,
       },
       {
         title: `Show your mobile ticket`,
@@ -247,7 +247,7 @@ The app is free on iPhone and Android. You can also book at amtrak.com on any co
     thumbnailEmoji: ``,
     publishedAt: `2026-04-19`,
     difficulty: `Beginner`,
-    body: `The Sam's Club app includes a feature called "Scan & Go" that changes how you shop at Sam's Club. Instead of loading items into a cart, pushing to a checkout lane, waiting in line, unloading, and reloading — you use the app to scan each item's barcode as you put it in your cart. When you are ready to leave, you pay through the app and show a receipt QR code to the exit greeter.
+    body: `The Sam's Club app includes a feature called "Scan & Go" that changes how you shop at Sam's Club. Instead of loading items into a cart, pushing to a checkout lane, waiting in line, unloading, and reloading. You use the app to scan each item's barcode as you put it in your cart. When you are ready to leave, you pay through the app and show a receipt QR code to the exit greeter.
 
 The result: no checkout line at all. This is especially valuable at Sam's Club where checkout lines can be very long.
 
@@ -492,7 +492,7 @@ Requirements: iPhone with iOS 11.3 or later (iOS 17 or later recommended for the
 
 The main benefit is a discount. Subscribing to an item gives you 5–15% off the regular price. If you have five or more subscriptions arriving in the same month, Amazon gives you an additional 5% off all of them. Over a year, this can add up to significant savings on items you would buy anyway.
 
-You can choose how often each item ships — every 2 weeks, every month, every 2 months, or on other schedules. You can change the frequency, skip a shipment, pause a subscription, or cancel any time — there is no contract or commitment.
+You can choose how often each item ships — every 2 weeks, every month, every 2 months, or on other schedules. You can change the frequency, skip a shipment, pause a subscription, or cancel any time. There is no contract or commitment.
 
 If the price of a subscribed item goes up, Amazon notifies you before shipment and gives you a chance to cancel before being charged. Your card is only charged when each shipment actually ships, not when you set up the subscription.
 
@@ -502,12 +502,12 @@ You need an Amazon account to use Subscribe & Save. Prime membership is not requ
     steps: [
       {
         title: `Find a Subscribe & Save item`,
-        content: `On Amazon, search for any product you buy regularly. On the product page, look for the "Subscribe & Save" option below the price — it shows the discounted price and the percentage you save. Not every product offers this, but most household staples do.`,
+        content: `On Amazon, search for any product you buy regularly. On the product page, look for the "Subscribe & Save" option below the price. It shows the discounted price and the percentage you save. Not every product offers this, but most household staples do.`,
       },
       {
         title: `Set your delivery frequency`,
         content: `Click "Subscribe & Save" and choose how often you want it delivered from the dropdown: every 2 weeks, monthly, every 2 months, every 3 months, or other options. Choose based on how quickly you go through the item. Click "Subscribe Now."`,
-        tip: `Start with every 2 or 3 months for most items — you can always speed it up later if you run out before the next delivery.`,
+        tip: `Start with every 2 or 3 months for most items. You can always speed it up later if you run out before the next delivery.`,
       },
       {
         title: `Manage your subscriptions`,
@@ -545,7 +545,7 @@ There are several ways to get help with medical transportation:
 
 **Medicaid**: Most state Medicaid programs include free non-emergency medical transportation. Call your state's Medicaid office or your Medicaid managed care plan to arrange covered rides.
 
-**Lyft Concierge (through healthcare)**: Many hospitals, clinics, and healthcare systems use Lyft Concierge to arrange rides for patients directly. If your healthcare provider offers this, they can schedule a Lyft on your behalf — you may not even need the app.
+**Lyft Concierge (through healthcare)**: Many hospitals, clinics, and healthcare systems use Lyft Concierge to arrange rides for patients directly. If your healthcare provider offers this, they can schedule a Lyft on your behalf. You may not even need the app.
 
 **Local Programs**: Many counties, Area Agencies on Aging, and senior centers offer free or subsidized ride programs. Call your local senior center or 211 to ask about options in your area.
 
@@ -609,7 +609,7 @@ Getting a library card is free and takes about 5 minutes at any public library. 
     steps: [
       {
         title: `Find out what your library offers`,
-        content: `Go to your public library's website (search your city or county name + "public library"). Look for sections called "Digital Resources," "Online Services," or "eLibrary." The list of available services should be there. If you cannot find it, call your library and ask a librarian — they are delighted to tell you what is available.`,
+        content: `Go to your public library's website (search your city or county name + "public library"). Look for sections called "Digital Resources," "Online Services," or "eLibrary." The list of available services should be there. If you cannot find it, call your library and ask a librarian. They are delighted to tell you what is available.`,
       },
       {
         title: `Get or find your library card number`,
@@ -706,7 +706,7 @@ The "What's Covered" app is free on iPhone and Android, developed by the Centers
     steps: [
       {
         title: `Download the official app`,
-        content: `Search "What's Covered" in the App Store (iPhone) or Google Play (Android). The official app is published by "Centers for Medicare & Medicaid Services." It is free. Install it. No login or account required — you can search right away without entering any personal information.`,
+        content: `Search "What's Covered" in the App Store (iPhone) or Google Play (Android). The official app is published by "Centers for Medicare & Medicaid Services." It is free. Install it. No login or account required. You can search right away without entering any personal information.`,
         tip: `Quick Tip: You can also access the same information at medicare.gov/coverage and searching there on any web browser.`,
       },
       {
@@ -838,7 +838,7 @@ Most people leave the default settings and record. But knowing the options helps
   {
     slug: `facetime-shareplay-watch-together`,
     title: `How to Watch Movies and TV Together Over FaceTime Using SharePlay`,
-    excerpt: `SharePlay lets you and a friend or family member watch the same movie or show at the exact same time on a FaceTime call — you each watch on your own device but everything syncs up.`,
+    excerpt: `SharePlay lets you and a friend or family member watch the same movie or show at the exact same time on a FaceTime call. You each watch on your own device but everything syncs up.`,
     category: `communication`,
     tags: [`facetime`, `shareplay`, `watch together`, `remote viewing`, `apple tv plus`, `disney plus`, `family`],
     readTime: `5 min`,
@@ -863,7 +863,7 @@ SharePlay requires iPhone, iPad, or Mac. The person starting SharePlay needs iOS
       {
         title: `Start a FaceTime call`,
         content: `Open the FaceTime app and call the person you want to watch with. You can also start the call from the Phone app or Messages — tap the FaceTime button on a contact's page. Make sure they answer before proceeding.`,
-        tip: `SharePlay works with two or more people on the same FaceTime call — you can have a watch party with your whole family.`,
+        tip: `SharePlay works with two or more people on the same FaceTime call. You can have a watch party with your whole family.`,
       },
       {
         title: `Open a streaming app during the call`,

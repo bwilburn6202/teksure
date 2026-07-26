@@ -50,7 +50,7 @@ export const guidesBatch20: Guide[] = [
     thumbnailEmoji: '',
     publishedAt: '2026-04-19',
     difficulty: 'Beginner',
-    body: `Microsoft Copilot is an AI assistant that Microsoft has built directly into Windows 11, Bing, and Microsoft 365. If you've heard of ChatGPT, Copilot is similar — you type a question or request in plain English. And it responds with helpful information, writes text for you, summarizes things, or helps you get things done on your computer.\n\nThe good news: Copilot is free. You don't need to sign up for anything extra if you already use Windows 11 or Bing. You can open it with a single button on many Windows keyboards (the one that looks like two diamond shapes), or find it in the Start menu.\n\nCopilot can help with a surprising number of things: writing a birthday message, summarizing a long article, explaining a confusing news story, looking up information, editing a paragraph you wrote, or helping you figure out what a tech error means. This guide shows you the basics so you can start getting comfortable with it.`,
+    body: `Microsoft Copilot is an AI assistant that Microsoft has built directly into Windows 11, Bing, and Microsoft 365. If you've heard of ChatGPT, Copilot is similar. You type a question or request in plain English. And it responds with helpful information, writes text for you, summarizes things, or helps you get things done on your computer.\n\nThe good news: Copilot is free. You don't need to sign up for anything extra if you already use Windows 11 or Bing. You can open it with a single button on many Windows keyboards (the one that looks like two diamond shapes), or find it in the Start menu.\n\nCopilot can help with a surprising number of things: writing a birthday message, summarizing a long article, explaining a confusing news story, looking up information, editing a paragraph you wrote, or helping you figure out what a tech error means. This guide shows you the basics so you can start getting comfortable with it.`,
     steps: [
       {
         title: 'Open Microsoft Copilot',
@@ -277,7 +277,7 @@ export const guidesBatch20: Guide[] = [
     thumbnailEmoji: '',
     publishedAt: '2026-04-19',
     difficulty: 'Beginner',
-    body: `Accidentally deleting a file is one of the most common computer mistakes — and one of the most fixable. Windows gives you several ways to recover deleted files depending on how and when they were deleted.\n\nThe fastest recovery is from the Recycle Bin. When you delete a file normally (pressing Delete or right-clicking and choosing Delete), Windows doesn't actually erase it — it moves it to the Recycle Bin where it sits until you empty it. As long as you haven't emptied the Recycle Bin, you can restore the file in seconds.\n\nIf the Recycle Bin has been emptied, there's still hope. Windows has a feature called File History (if you've set it up) that keeps older versions of your files. OneDrive also keeps deleted files for 30 days. This guide walks through all your options.`,
+    body: `Accidentally deleting a file is one of the most common computer mistakes — and one of the most fixable. Windows gives you several ways to recover deleted files depending on how and when they were deleted.\n\nThe fastest recovery is from the Recycle Bin. When you delete a file normally (pressing Delete or right-clicking and choosing Delete), Windows doesn't actually erase it. It moves it to the Recycle Bin where it sits until you empty it. As long as you haven't emptied the Recycle Bin, you can restore the file in seconds.\n\nIf the Recycle Bin has been emptied, there's still hope. Windows has a feature called File History (if you've set it up) that keeps older versions of your files. OneDrive also keeps deleted files for 30 days. This guide walks through all your options.`,
     steps: [
       {
         title: 'Check the Recycle Bin first',
@@ -314,7 +314,7 @@ export const guidesBatch20: Guide[] = [
     thumbnailEmoji: '',
     publishedAt: '2026-04-19',
     difficulty: 'Beginner',
-    body: `On a Mac, when you delete a file it doesn't disappear right away — it goes to the Trash, which works like a holding area. The file stays there until you choose to permanently empty the Trash. As long as you haven't done that, getting your file back is a matter of seconds.\n\nIf you have emptied the Trash or the file was stored in iCloud Drive, don't panic — there are still options. iCloud Drive keeps deleted files for 30 days, and if you've been using Time Machine (Apple's built-in backup system), you may be able to retrieve the exact version of a file you need.\n\nThis guide walks you through all three methods so you can recover what you lost quickly and confidently.`,
+    body: `On a Mac, when you delete a file it doesn't disappear right away. It goes to the Trash, which works like a holding area. The file stays there until you choose to permanently empty the Trash. As long as you haven't done that, getting your file back is a matter of seconds.\n\nIf you have emptied the Trash or the file was stored in iCloud Drive, don't panic — there are still options. iCloud Drive keeps deleted files for 30 days, and if you've been using Time Machine (Apple's built-in backup system), you may be able to retrieve the exact version of a file you need.\n\nThis guide walks you through all three methods so you can recover what you lost quickly and confidently.`,
     steps: [
       {
         title: 'Look in the Trash',
@@ -351,7 +351,7 @@ export const guidesBatch20: Guide[] = [
     thumbnailEmoji: '',
     publishedAt: '2026-04-19',
     difficulty: 'Intermediate',
-    body: `Malware is software that sneaks onto your computer and does harmful things — it might slow your PC to a crawl, show endless pop-up ads, lock your files, steal passwords, or display fake scary warnings saying your computer has been hacked. Ransomware is a particularly nasty type that locks your files and demands payment.\n\nThe most common ways people get malware on Windows: clicking a link in a fake email (phishing), downloading a program from an unofficial website, clicking a fake "Your computer is infected!" pop-up, or installing software bundled with other programs.\n\nThe good news: Windows 11 comes with Windows Defender, a solid built-in security tool that can find and remove most common threats. There's also a free tool called Malwarebytes that catches things Defender misses. Together, these two tools handle the vast majority of malware infections.`,
+    body: `Malware is software that sneaks onto your computer and does harmful things. It might slow your PC to a crawl, show endless pop-up ads, lock your files, steal passwords, or display fake scary warnings saying your computer has been hacked. Ransomware is a particularly nasty type that locks your files and demands payment.\n\nThe most common ways people get malware on Windows: clicking a link in a fake email (phishing), downloading a program from an unofficial website, clicking a fake "Your computer is infected!" pop-up, or installing software bundled with other programs.\n\nThe good news: Windows 11 comes with Windows Defender, a solid built-in security tool that can find and remove most common threats. There's also a free tool called Malwarebytes that catches things Defender misses. Together, these two tools handle the vast majority of malware infections.`,
     steps: [
       {
         title: 'Disconnect from the internet first (if symptoms are severe)',
@@ -513,7 +513,7 @@ export const guidesBatch20: Guide[] = [
       {
         title: 'Check if you qualify for Lifeline',
         content: `The FCC's Lifeline program offers $9.25/month off phone or internet service if your income is at or below 135% of the federal poverty guidelines, or if you participate in programs like Medicaid, SNAP, SSI, Federal Public Housing, or the Veterans Pension and Survivors Benefit. Go to lifelinesupport.org to check eligibility and find participating providers in your area.`,
-        tip: `Quick Tip: If you're on Medicaid, SSI, or SNAP, you automatically qualify for Lifeline — you don't need to check income separately.`,
+        tip: `Quick Tip: If you're on Medicaid, SSI, or SNAP, you automatically qualify for Lifeline. You don't need to check income separately.`,
       },
       {
         title: 'Ask your internet provider about low-income programs',
@@ -544,7 +544,7 @@ export const guidesBatch20: Guide[] = [
     thumbnailEmoji: '',
     publishedAt: '2026-04-19',
     difficulty: 'Beginner',
-    body: `Blocking a phone number is one of the most useful things you can do on a smartphone — and it only takes about 30 seconds once you know where to look. When you block a number, calls from that number go straight to voicemail (they don't ring your phone), text messages are silently filtered, and the blocked caller gets no notification that they've been blocked.\n\nBlocking is useful for stopping unwanted sales calls, silencing an ex, dealing with wrong numbers that keep calling, or shutting down harassment. It doesn't cost anything and it's completely reversible — you can unblock a number anytime in the same settings menu.\n\nThis guide covers blocking on both iPhone and Android, plus a bonus tip for silencing calls from all unknown numbers at once.`,
+    body: `Blocking a phone number is one of the most useful things you can do on a smartphone — and it only takes about 30 seconds once you know where to look. When you block a number, calls from that number go straight to voicemail (they don't ring your phone), text messages are silently filtered, and the blocked caller gets no notification that they've been blocked.\n\nBlocking is useful for stopping unwanted sales calls, silencing an ex, dealing with wrong numbers that keep calling, or shutting down harassment. It doesn't cost anything and it's completely reversible. You can unblock a number anytime in the same settings menu.\n\nThis guide covers blocking on both iPhone and Android, plus a bonus tip for silencing calls from all unknown numbers at once.`,
     steps: [
       {
         title: 'Block a number on iPhone (from recent calls)',
@@ -664,7 +664,7 @@ export const guidesBatch20: Guide[] = [
       },
       {
         title: 'Understand the difference between iCloud and your phone storage',
-        content: 'iCloud Photos stores full-resolution versions in the cloud. To save space on your phone, turn on "Optimize iPhone Storage" (in the same settings screen). With this on, your phone keeps smaller preview versions locally, and the full-size original downloads only when you open a photo. You can still see and share all your photos — they just live in the cloud.',
+        content: 'iCloud Photos stores full-resolution versions in the cloud. To save space on your phone, turn on "Optimize iPhone Storage" (in the same settings screen). With this on, your phone keeps smaller preview versions locally, and the full-size original downloads only when you open a photo. You can still see and share all your photos. They just live in the cloud.',
       },
       {
         title: `Check how much iCloud storage you're using`,
@@ -741,7 +741,7 @@ export const guidesBatch20: Guide[] = [
       },
       {
         title: 'Choose your storage quality',
-        content: `Google Photos asks which quality to use. "Storage saver" compresses photos very slightly — you probably won't notice the difference — and doesn't count against your 15 GB limit. "Original quality" keeps photos at full resolution but counts toward storage. For most people, Storage saver is the better choice.`,
+        content: `Google Photos asks which quality to use. "Storage saver" compresses photos very slightly. You probably won't notice the difference — and doesn't count against your 15 GB limit. "Original quality" keeps photos at full resolution but counts toward storage. For most people, Storage saver is the better choice.`,
       },
       {
         title: 'Set backup to use Wi-Fi only',
@@ -810,7 +810,7 @@ export const guidesBatch20: Guide[] = [
       },
       {
         title: 'Enable call screening on Android',
-        content: 'Open the Phone app. Tap the three-dot menu (⋮) in the top right. Tap "Settings," then "Blocked numbers" — you can add specific numbers here. Also look for "Spam and robocalls" settings and turn on "Filter spam calls" if available on your phone model. On Google Pixel phones, the "Call Screen" feature answers spam calls automatically.',
+        content: 'Open the Phone app. Tap the three-dot menu (⋮) in the top right. Tap "Settings," then "Blocked numbers". You can add specific numbers here. Also look for "Spam and robocalls" settings and turn on "Filter spam calls" if available on your phone model. On Google Pixel phones, the "Call Screen" feature answers spam calls automatically.',
       },
       {
         title: 'Register with the Do Not Call Registry',

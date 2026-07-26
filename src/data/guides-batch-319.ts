@@ -43,7 +43,7 @@ export const guidesBatch319: Guide[] = [
       },
       {
         title: "Review who's in the group anytime",
-        content: "Go back to families.google.com whenever you want to see the current member list, remove someone, or leave the group yourself. Leaving a family group does not delete your Google account or any of your own photos, emails, or files — it only removes the shared calendar and location access.",
+        content: "Go back to families.google.com whenever you want to see the current member list, remove someone, or leave the group yourself. Leaving a family group does not delete your Google account or any of your own photos, emails, or files. It only removes the shared calendar and location access.",
       },
     ],
   },
@@ -99,7 +99,7 @@ export const guidesBatch319: Guide[] = [
     publishedAt: "2026-07-08",
     lastVerifiedAt: "2026-07-08",
     difficulty: "Beginner",
-    body: "Zelle is a fast money-transfer service built into most major banking apps, including Chase, Bank of America, Wells Fargo, and hundreds of others. It moves money between bank accounts in minutes — which is exactly why scammers favor it. Unlike a credit card charge, a Zelle payment behaves like handing someone cash: once it's sent, the money is usually gone, and your bank has limited ability to get it back even if you report it right away.\n\nThe Consumer Financial Protection Bureau and FTC have both issued repeated warnings about Zelle-based scams in recent years, and the pattern is consistent: someone contacts you claiming to be your bank's fraud department, a family member in an emergency, an online seller, or a romantic interest, and creates urgency to send money through Zelle right away. The single most important rule is this: Zelle is meant for paying people you already know and trust, like splitting a dinner bill with a friend or paying rent to a landlord you've met — not for paying strangers, online sellers you've never dealt with before, or anyone who contacts you first asking for money.\n\nIf you use Zelle regularly with family, keep using it — it is a legitimate and convenient tool. The goal of this guide is to help you pause and check before sending money in the specific situations scammers rely on.",
+    body: "Zelle is a fast money-transfer service built into most major banking apps, including Chase, Bank of America, Wells Fargo, and hundreds of others. It moves money between bank accounts in minutes — which is exactly why scammers favor it. Unlike a credit card charge, a Zelle payment behaves like handing someone cash: once it's sent, the money is usually gone, and your bank has limited ability to get it back even if you report it right away.\n\nThe Consumer Financial Protection Bureau and FTC have both issued repeated warnings about Zelle-based scams in recent years, and the pattern is consistent: someone contacts you claiming to be your bank's fraud department, a family member in an emergency, an online seller, or a romantic interest, and creates urgency to send money through Zelle right away. The single most important rule is this: Zelle is meant for paying people you already know and trust, like splitting a dinner bill with a friend or paying rent to a landlord you've met — not for paying strangers, online sellers you've never dealt with before, or anyone who contacts you first asking for money.\n\nIf you use Zelle regularly with family, keep using it. It is a legitimate and convenient tool. The goal of this guide is to help you pause and check before sending money in the specific situations scammers rely on.",
     steps: [
       {
         title: "Know the one rule that stops most Zelle scams",
@@ -140,7 +140,7 @@ export const guidesBatch319: Guide[] = [
     publishedAt: "2026-07-08",
     lastVerifiedAt: "2026-07-08",
     difficulty: "Beginner",
-    body: "One of the most stressful tech problems is getting locked out of an Apple ID or Google account with no way back in — it can mean losing access to years of photos, emails, and contacts. Both Apple and Google offer a free feature that solves this ahead of time: a Recovery Contact (Apple) or a way to add a trusted phone/email (Google) that can help you get back in if you're ever locked out, without needing to remember complicated security questions from years ago.\n\nSetting this up before there's a problem takes about five minutes and is one of the single most useful things you can do to protect years of family photos and memories. It works especially well when an adult child or trusted family member is the recovery contact, since they can help walk you through the process if you ever do get locked out.",
+    body: "One of the most stressful tech problems is getting locked out of an Apple ID or Google account with no way back in. It can mean losing access to years of photos, emails, and contacts. Both Apple and Google offer a free feature that solves this ahead of time: a Recovery Contact (Apple) or a way to add a trusted phone/email (Google) that can help you get back in if you're ever locked out, without needing to remember complicated security questions from years ago.\n\nSetting this up before there's a problem takes about five minutes and is one of the single most useful things you can do to protect years of family photos and memories. It works especially well when an adult child or trusted family member is the recovery contact, since they can help walk you through the process if you ever do get locked out.",
     steps: [
       {
         title: "Apple: open Account Recovery settings",
@@ -148,8 +148,8 @@ export const guidesBatch319: Guide[] = [
       },
       {
         title: "Apple: the recovery contact confirms",
-        content: "The person you choose gets a notification asking them to accept. Once accepted, if you're ever locked out of your Apple ID, you can call them. And they can generate a special recovery code from their own device to help you back in — they never see your password.",
-        tip: "You can also set up a Legacy Contact at the same screen, which is different — it lets a trusted person access your account's data after you pass away, rather than helping with a forgotten password.",
+        content: "The person you choose gets a notification asking them to accept. Once accepted, if you're ever locked out of your Apple ID, you can call them. And they can generate a special recovery code from their own device to help you back in. They never see your password.",
+        tip: "You can also set up a Legacy Contact at the same screen, which is different. It lets a trusted person access your account's data after you pass away, rather than helping with a forgotten password.",
       },
       {
         title: "Google: add a recovery phone and email",

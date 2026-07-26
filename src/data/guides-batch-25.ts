@@ -17,7 +17,7 @@ Two-factor authentication using an authenticator app is more secure than text me
 
 Microsoft Authenticator works with Microsoft accounts (Outlook, Xbox, Office 365) and also with Google, Amazon, Facebook, Twitter, banks, and hundreds of other services. It is not limited to Microsoft products.
 
-For Microsoft accounts specifically, the app offers "passwordless sign-in" — you approve a sign-in notification with a tap rather than typing a password. This is both more secure and more convenient than passwords.
+For Microsoft accounts specifically, the app offers "passwordless sign-in". You approve a sign-in notification with a tap rather than typing a password. This is both more secure and more convenient than passwords.
 
 Setting up the app takes about 10 minutes per account. You scan a QR code shown on the website during two-factor setup, and the app is automatically linked to that account. After that, every time you log in from a new device, you approve it in the app.
 
@@ -206,7 +206,7 @@ PayPal is accepted at thousands of online retailers and many in-person stores as
 
 PayPal also functions as a peer-to-peer payment service: you can send money directly to another person's email address or phone number. This is useful for paying a family member or splitting expenses with a friend. Recipients can transfer the money to their own bank accounts for free, though it takes 1-3 business days. Instant transfers to a bank or debit card are available for a small fee.
 
-Your PayPal balance is not the same as a bank account — it is not FDIC insured beyond certain limits. For safety, transfer money you receive in PayPal to your bank account rather than letting it sit in your PayPal balance.`,
+Your PayPal balance is not the same as a bank account. It is not FDIC insured beyond certain limits. For safety, transfer money you receive in PayPal to your bank account rather than letting it sit in your PayPal balance.`,
     steps: [
       {
         title: 'Create a Free PayPal Account',
@@ -264,7 +264,7 @@ The app requires creating a Medicare.gov account if you do not have one. Your Me
       {
         title: 'Create a Medicare.gov Account',
         content: 'Go to medicare.gov on a computer or tablet. Click "Create Account." Enter your name, Medicare number, and date of birth exactly as they appear on your Medicare card. Create a username and password. Verify with a code sent to your email or phone.',
-        tip: 'Your Medicare number is an 11-character code on your red, white, and blue Medicare card — it contains letters and numbers.',
+        tip: 'Your Medicare number is an 11-character code on your red, white, and blue Medicare card. It contains letters and numbers.',
       },
       {
         title: 'View Your Claims and Summary Notices',
@@ -319,7 +319,7 @@ Meeting safely in person is straightforward if you follow a few common-sense rul
       },
       {
         title: 'Pay Safely',
-        content: 'Cash is the safest payment method for in-person Marketplace transactions — it is final and verifiable. If using Venmo or Zelle at the point of handoff (when you have the item in hand), confirm the payment sent successfully before leaving. Never send money in advance without receiving the item.',
+        content: 'Cash is the safest payment method for in-person Marketplace transactions. It is final and verifiable. If using Venmo or Zelle at the point of handoff (when you have the item in hand), confirm the payment sent successfully before leaving. Never send money in advance without receiving the item.',
       },
     ],
   },
@@ -380,11 +380,11 @@ Craigslist itself advises users to never wire funds to strangers, never give fin
     difficulty: 'Beginner',
     body: `Free Wi-Fi hotspots are available in more places than most people realize. Libraries, coffee shops, fast food restaurants, grocery stores, hospitals, pharmacies, airports, shopping malls, hotels, and many parks all offer free wireless internet access. Connecting to free Wi-Fi instead of using your phone's cellular data can save significant data usage — especially if you have a limited data plan.
 
-However, public Wi-Fi comes with security considerations. Because these networks are open and shared, it is possible for someone else on the same network to intercept unencrypted data. This does not mean you should never use public Wi-Fi — it means you should be mindful about what you do while on it.
+However, public Wi-Fi comes with security considerations. Because these networks are open and shared, it is possible for someone else on the same network to intercept unencrypted data. This does not mean you should never use public Wi-Fi. It means you should be mindful about what you do while on it.
 
 The main rule: do not log in to your bank account, enter credit card numbers, or access sensitive personal information when on public Wi-Fi. General browsing, watching videos, sending emails, and using apps like weather or maps are fine.
 
-Your phone can help you find free hotspots automatically. Many carriers and cable companies provide free hotspot access to their subscribers in large numbers of locations. Xfinity (Comcast) has over 20 million Wi-Fi hotspots nationwide for subscribers. AT&T has hotspots at restaurants, airports, and hotels. Verizon has a hotspot finder in their app. Check whether your provider offers this — it can extend your connectivity dramatically.
+Your phone can help you find free hotspots automatically. Many carriers and cable companies provide free hotspot access to their subscribers in large numbers of locations. Xfinity (Comcast) has over 20 million Wi-Fi hotspots nationwide for subscribers. AT&T has hotspots at restaurants, airports, and hotels. Verizon has a hotspot finder in their app. Check whether your provider offers this. It can extend your connectivity dramatically.
 
 Grocery chains like Walmart, Target, and Kroger offer free Wi-Fi in-store. Public libraries universally offer free Wi-Fi, and many offer it in parking lots as well — useful if the library is closed.`,
     steps: [
@@ -424,7 +424,7 @@ Grocery chains like Walmart, Target, and Kroger offer free Wi-Fi in-store. Publi
     difficulty: 'Beginner',
     body: `Senior Planet is a nonprofit program run by AARP that provides free technology education specifically for adults 60 and older. They offer hundreds of free online classes covering everything from smartphone basics to Zoom video calls, social media, email management, online banking safety, and even coding and creative writing with AI.
 
-Classes are offered as live Zoom sessions, on-demand video recordings, and in-person at Senior Planet community centers in select cities. The online classes are available nationwide — you do not need to live near a Senior Planet location to participate.
+Classes are offered as live Zoom sessions, on-demand video recordings, and in-person at Senior Planet community centers in select cities. The online classes are available nationwide. You do not need to live near a Senior Planet location to participate.
 
 The teaching style is specifically adapted for seniors: patient, non-technical, and hands-on. Instructors understand that many participants are newer to technology and welcome basic questions without judgment. Classes are typically 45-60 minutes and are offered at various times throughout the week.
 
@@ -432,7 +432,7 @@ The technology helpline is one of Senior Planet's most valued offerings: a free 
 
 Registering for Senior Planet is free. You create an account at seniorplanet.org, browse the class calendar, and register for any class you are interested in. You receive a reminder email before each class with the Zoom link to join.
 
-In-person Senior Planet Centers are located in New York City, Los Angeles, Denver, and other cities — they offer computer labs, drop-in help hours, and social events in addition to classes.`,
+In-person Senior Planet Centers are located in New York City, Los Angeles, Denver, and other cities. They offer computer labs, drop-in help hours, and social events in addition to classes.`,
     steps: [
       {
         title: 'Visit the Senior Planet Website',
@@ -524,9 +524,9 @@ Setting up Apple Cash requires that you are 18 or older, have an iPhone running 
 
 Transfers from Apple Cash to your bank account are free but take 1-3 business days. Instant bank transfers are available for a small fee (1.5% of the amount, minimum $0.25).
 
-Apple Cash uses the same contactless payment technology as Apple Pay — it is protected by Face ID, Touch ID, and your device passcode. No one can send money from your account without your biometric or passcode authorization.
+Apple Cash uses the same contactless payment technology as Apple Pay. It is protected by Face ID, Touch ID, and your device passcode. No one can send money from your account without your biometric or passcode authorization.
 
-For most people, Apple Cash is simpler to set up and use than Venmo or Zelle, because it lives within the Messages app they already use every day — there is no separate app to open.`,
+For most people, Apple Cash is simpler to set up and use than Venmo or Zelle, because it lives within the Messages app they already use every day. There is no separate app to open.`,
     steps: [
       {
         title: 'Enable Apple Cash',
@@ -625,7 +625,7 @@ For people who take multiple prescriptions, the medication reminder feature can 
     steps: [
       {
         title: 'Download and Set Up the App',
-        content: 'Search "CVS" or "Walgreens" in the App Store (iPhone) or Google Play (Android). Install the official app. Open it and tap "Sign In." If you have an existing CVS.com or Walgreens.com account, use those credentials. If not, tap "Create account" — you need your prescription number from a recent bottle to link prescriptions.',
+        content: 'Search "CVS" or "Walgreens" in the App Store (iPhone) or Google Play (Android). Install the official app. Open it and tap "Sign In." If you have an existing CVS.com or Walgreens.com account, use those credentials. If not, tap "Create account". You need your prescription number from a recent bottle to link prescriptions.',
         tip: 'Your ExtraCare card number (CVS) or Walgreens Rewards number may be needed to link your account. Check your store card or a recent receipt.',
       },
       {
@@ -639,7 +639,7 @@ For people who take multiple prescriptions, the medication reminder feature can 
       },
       {
         title: 'Set Medication Reminders',
-        content: 'In the prescription list, tap a medication and look for "Set reminder" or "Medication reminders." Set the time(s) you take each medication. The app sends you a notification at those times. This works separately from the Medisafe app — you can use either or both.',
+        content: 'In the prescription list, tap a medication and look for "Set reminder" or "Medication reminders." Set the time(s) you take each medication. The app sends you a notification at those times. This works separately from the Medisafe app. You can use either or both.',
       },
       {
         title: 'Chat with a Pharmacist',
@@ -853,7 +853,7 @@ For finding files, the same search bar works — but you can also use the search
 
 Windows Search also finds settings. Can't find where to change your screen brightness? Press Windows key, type "brightness," and Settings → Display brightness appears as the top result. This is faster than navigating through layers of menus.
 
-In Windows 11, Microsoft improved search a lot — it can now search inside document contents (not just file names). And it can find web results alongside local content if you have search set to include the web.`,
+In Windows 11, Microsoft improved search a lot. It can now search inside document contents (not just file names). And it can find web results alongside local content if you have search set to include the web.`,
     steps: [
       {
         title: 'Open Search with the Windows Key',
@@ -867,7 +867,7 @@ In Windows 11, Microsoft improved search a lot — it can now search inside docu
       {
         title: 'Search for a File by Name or Content',
         content: 'Press Windows key and type part of the file name — for example, "tax return" or "birthday photo." Windows searches Documents, Downloads, Desktop, and other folders. Click a result to open it directly.',
-        tip: `If you remember part of what's inside a document but not the file name, Windows Search can search inside document text. Type words from the document content — it may still find the file.`,
+        tip: `If you remember part of what's inside a document but not the file name, Windows Search can search inside document text. Type words from the document content. It may still find the file.`,
       },
       {
         title: 'Find a Settings Page Quickly',
@@ -900,7 +900,7 @@ Privacy is built in: your health data stays on your device and is encrypted. App
 
 The connection process involves logging in through your existing patient portal account (like MyChart) — the Health app uses that login to establish a one-time connection. After that, data syncs automatically.
 
-Not every doctor's office or small practice supports this yet — it is most reliably available at large hospital systems and medical groups that use Epic, Cerner, or other major electronic health record systems.`,
+Not every doctor's office or small practice supports this yet. It is most reliably available at large hospital systems and medical groups that use Epic, Cerner, or other major electronic health record systems.`,
     steps: [
       {
         title: 'Check if Your Hospital Is Supported',
@@ -939,7 +939,7 @@ Not every doctor's office or small practice supports this yet — it is most rel
     difficulty: 'Beginner',
     body: `Amazon offers music streaming at three different levels. And it can be confusing to understand what you get at each tier. This guide breaks it down clearly so you know exactly what you are paying for — or what you are already getting for free.
 
-**Amazon Music Free:** Available to everyone, no purchase or subscription required. You can listen to a limited catalog of songs with occasional ads. Think of it like free radio — you can shuffle playlists and stations but cannot choose specific songs on demand. Access it through the Amazon Music app.
+**Amazon Music Free:** Available to everyone, no purchase or subscription required. You can listen to a limited catalog of songs with occasional ads. Think of it like free radio. You can shuffle playlists and stations but cannot choose specific songs on demand. Access it through the Amazon Music app.
 
 **Amazon Music Prime:** Included with an Amazon Prime subscription (which costs $14.99/month or $139/year as of 2026). Prime Music gives you access to over 100 million songs on demand, with no ads. You can create playlists, download songs for offline listening, and play any song you choose. If you have Amazon Prime, you already have this — many people do not realize Prime Music is included.
 
@@ -964,7 +964,7 @@ The Amazon Music app is free on iPhone and Android. Sign in with your Amazon acc
       },
       {
         title: 'Create a Playlist',
-        content: 'Long-press any song. Tap "Add to playlist." Tap "Create new playlist" and name it. Add more songs the same way. Your playlists appear in your library and sync across devices — you can build a playlist on your phone and play it on your Echo speaker.',
+        content: 'Long-press any song. Tap "Add to playlist." Tap "Create new playlist" and name it. Add more songs the same way. Your playlists appear in your library and sync across devices. You can build a playlist on your phone and play it on your Echo speaker.',
       },
       {
         title: 'Play Music on Alexa',

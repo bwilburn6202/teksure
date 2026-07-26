@@ -26,7 +26,7 @@ Screen recordings can get large in file size if they are long, so consider keepi
       {
         title: `Add Screen Recording to Control Center`,
         content: `Open the Settings app and tap Control Center. Scroll down to find "Screen Recording" in the list of available controls. Tap the green plus sign (+) next to it. This adds the Screen Recording button to your Control Center. You only need to do this step once.`,
-        tip: `If you already see a Screen Recording button when you open Control Center, you can skip this step — it is already set up.`,
+        tip: `If you already see a Screen Recording button when you open Control Center, you can skip this step. It is already set up.`,
       },
       {
         title: `Open Control Center`,
@@ -34,7 +34,7 @@ Screen recordings can get large in file size if they are long, so consider keepi
       },
       {
         title: `Start the recording`,
-        content: `Tap the Screen Recording button — it looks like a solid circle inside a larger circle. A countdown of three seconds will appear, giving you time to navigate to whatever you want to record. After three seconds, the recording begins and a red status bar appears at the top of your screen.`,
+        content: `Tap the Screen Recording button. It looks like a solid circle inside a larger circle. A countdown of three seconds will appear, giving you time to navigate to whatever you want to record. After three seconds, the recording begins and a red status bar appears at the top of your screen.`,
         tip: `To record your voice along with the screen, press and hold the Screen Recording button and tap the microphone icon to turn it on before starting.`,
       },
       {
@@ -75,7 +75,7 @@ These methods work for your home network and any Wi-Fi network your phone has al
       },
       {
         title: `Share via QR code on Android`,
-        content: `On your Android phone, go to Settings and tap Wi-Fi (or Connections > Wi-Fi). Tap the name of your current network, then look for a Share or QR Code button — it may show a QR code icon. Tap it to display the QR code. Your guest opens their camera app, points it at the QR code on your screen, and taps the notification that appears. They connect instantly.`,
+        content: `On your Android phone, go to Settings and tap Wi-Fi (or Connections > Wi-Fi). Tap the name of your current network, then look for a Share or QR Code button. It may show a QR code icon. Tap it to display the QR code. Your guest opens their camera app, points it at the QR code on your screen, and taps the notification that appears. They connect instantly.`,
       },
       {
         title: `View your Wi-Fi password on iPhone (to share manually)`,
@@ -443,7 +443,7 @@ If you receive a text or email claiming to be from your bank and asking you to c
       },
       {
         title: `Sign in with your online banking credentials`,
-        content: `Open the app and enter your online banking username and password. If you have not set up online banking before, tap "Enroll" or "Sign Up" in the app and follow the steps — you will need your account number and some personal information. Once signed in, enable Face ID or fingerprint login when offered, so future logins are faster.`,
+        content: `Open the app and enter your online banking username and password. If you have not set up online banking before, tap "Enroll" or "Sign Up" in the app and follow the steps. You will need your account number and some personal information. Once signed in, enable Face ID or fingerprint login when offered, so future logins are faster.`,
       },
       {
         title: `Check your balance and recent transactions`,
@@ -474,7 +474,7 @@ If you receive a text or email claiming to be from your bank and asking you to c
 
 Most banks offer a free service called Bill Pay. You set up your billers (the companies you pay each month) once, then send payments whenever you want. You can also set up automatic payments so the bank pays a bill on the same date every month without you having to do anything.
 
-Bill Pay payments are sent from your checking account. The bank either sends an electronic payment directly to the company or mails a paper check on your behalf — you do not need to know which method is used. Payments typically arrive within 1–3 business days, so schedule payments a few days before the due date.
+Bill Pay payments are sent from your checking account. The bank either sends an electronic payment directly to the company or mails a paper check on your behalf. You do not need to know which method is used. Payments typically arrive within 1–3 business days, so schedule payments a few days before the due date.
 
 Setting up automatic payments for regular bills like your utilities, phone, or subscriptions removes the worry about forgetting a due date. Many people set up a small extra amount — for example, paying the minimum on a credit card automatically — and then pay larger amounts manually when they want to pay more.
 
@@ -520,7 +520,7 @@ You can manage, pause, or cancel any automatic payment through your bank's Bill 
 
 Using VA.gov can save veterans hours of phone calls and trips to VA facilities. Many tasks that used to require an in-person visit or a long hold on the phone can now be done online in minutes.
 
-To use most features on VA.gov, you need to sign in with a verified account. VA.gov accepts Login.gov and ID.me as sign-in options. Login.gov is a government identity service — you create an account with your email address and verify your identity by uploading a photo of your driver's license or passport. The process takes about 10 minutes the first time.
+To use most features on VA.gov, you need to sign in with a verified account. VA.gov accepts Login.gov and ID.me as sign-in options. Login.gov is a government identity service. You create an account with your email address and verify your identity by uploading a photo of your driver's license or passport. The process takes about 10 minutes the first time.
 
 Once signed in, you can see your disability rating, the status of any claims or appeals you have filed, your upcoming VA health care appointments, your prescription refill history, and your VA letters (like your benefit summary letter that proves your disability rating).
 
@@ -762,7 +762,7 @@ Nomorobo offers a free version for landline phones through your phone carrier's 
 
 All three services can block a call while still allowing it to be recorded in your call history. So you can still check if a legitimate call was blocked and return it.
 
-None of these apps have access to your calls, voicemails, or messages — they only check the phone number against a database.`,
+None of these apps have access to your calls, voicemails, or messages. They only check the phone number against a database.`,
     steps: [
       {
         title: `Choose and install a call-blocking app`,
@@ -771,7 +771,7 @@ None of these apps have access to your calls, voicemails, or messages — they o
       },
       {
         title: `Give the app the permissions it needs`,
-        content: `When you first open the app, it will ask for permission to access your phone calls or contacts so it can check incoming numbers. Grant the permissions it requests — they are needed for the app to work. The app does not read your contacts or listen to calls. It checks phone numbers only.`,
+        content: `When you first open the app, it will ask for permission to access your phone calls or contacts so it can check incoming numbers. Grant the permissions it requests. They are needed for the app to work. The app does not read your contacts or listen to calls. It checks phone numbers only.`,
       },
       {
         title: `Enable the caller ID or blocking feature in your phone settings`,
@@ -798,7 +798,7 @@ None of these apps have access to your calls, voicemails, or messages — they o
     thumbnailEmoji: ``,
     publishedAt: `2026-04-19`,
     difficulty: `Beginner`,
-    body: `CapCut is a free video editing app you can use on your iPhone or Android phone. It was created by the same company as TikTok. But you do not need a TikTok account to use it — it works as a standalone video editor for anyone who wants to make short videos.
+    body: `CapCut is a free video editing app you can use on your iPhone or Android phone. It was created by the same company as TikTok. But you do not need a TikTok account to use it. It works as a standalone video editor for anyone who wants to make short videos.
 
 With CapCut you can combine video clips, trim out the parts you do not want, add text and captions, include background music, adjust the speed, and add transitions between clips. The finished video saves to your phone's camera roll and can be shared anywhere you want — via text, email, social media, or kept privately for yourself.
 
@@ -860,7 +860,7 @@ All edits in Google Photos are non-destructive, meaning they do not permanently 
       {
         title: `Open a photo and tap Edit`,
         content: `Open the Google Photos app and tap the photo you want to edit. At the bottom of the screen, tap the Edit button (it looks like a set of horizontal sliders or a pencil). The editing interface opens with a row of tools at the bottom: Suggestions, Adjust, Filters, Crop, and more.`,
-        tip: `The Suggestions tab often shows automatic improvements Google recommends for that specific photo — you can accept them with one tap.`,
+        tip: `The Suggestions tab often shows automatic improvements Google recommends for that specific photo. You can accept them with one tap.`,
       },
       {
         title: `Adjust brightness and contrast`,
@@ -934,7 +934,7 @@ You can also rotate a photo to change its orientation, and flip it horizontally 
       {
         title: `Save your edits`,
         content: `When you are happy with the result, tap Done in the bottom-right corner. The edited photo replaces the view in your library, but the original is preserved. To undo all edits and restore the original photo at any time, open the photo, tap Edit, and tap Revert (then confirm).`,
-        warning: `Tapping Revert permanently removes all edits and restores the original. Only tap Revert if you are certain you want to start over — you cannot undo a Revert.`,
+        warning: `Tapping Revert permanently removes all edits and restores the original. Only tap Revert if you are certain you want to start over. You cannot undo a Revert.`,
       },
     ],
   },

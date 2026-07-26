@@ -97,7 +97,7 @@ Watch a walkthrough: search YouTube for "Visual Intelligence iPhone 17 tutorial"
       },
       {
         title: 'Identify plants, animals, and food',
-        content: 'Point your camera at any plant, flower, dog, bird, or piece of food. Tap the green "Search" button at the bottom of the screen — this sends the image to Google Search and brings back what the object is, similar items, and care information (for plants) or breed info (for dogs). For unfamiliar food, it shows recipes. Visual Intelligence is especially good with plants — it will tell you a common name, scientific name, watering needs, and whether it is toxic to pets.',
+        content: 'Point your camera at any plant, flower, dog, bird, or piece of food. Tap the green "Search" button at the bottom of the screen — this sends the image to Google Search and brings back what the object is, similar items, and care information (for plants) or breed info (for dogs). For unfamiliar food, it shows recipes. Visual Intelligence is especially good with plants. It will tell you a common name, scientific name, watering needs, and whether it is toxic to pets.',
         tip: 'Quick Tip: For wild birds, try to capture a clear side view. Visual Intelligence cross-references the Cornell Lab of Ornithology database and is usually accurate on common North American species.',
       },
       {
@@ -126,7 +126,7 @@ Watch a walkthrough: search YouTube for "Visual Intelligence iPhone 17 tutorial"
     publishedAt: '2026-05-19',
     lastVerifiedAt: '2026-05-19',
     difficulty: 'Beginner',
-    body: `An Amazon Echo Show is a smart speaker with a screen. It is one of the best technology gifts for grandparents because video calling on it is dead simple: say "Alexa, call Grandma" and the call starts. No app to open, no password to remember, no PIN to type. The grandparent on the receiving end can tap a green button or say "Alexa, answer" — they do not even need to know the names of their grandchildren.
+    body: `An Amazon Echo Show is a smart speaker with a screen. It is one of the best technology gifts for grandparents because video calling on it is dead simple: say "Alexa, call Grandma" and the call starts. No app to open, no password to remember, no PIN to type. The grandparent on the receiving end can tap a green button or say "Alexa, answer". They do not even need to know the names of their grandchildren.
 
 This guide assumes you (the family member helping) are setting up an Echo Show for an older parent or grandparent. The cheapest option is the Echo Show 5 ($90 retail, often $50 on sale). The Echo Show 8 ($150) has a bigger screen and is the sweet spot for video calls. The Echo Show 10 ($250) has a motorized base that follows the person around the room during calls — best for someone who moves around a lot.
 
@@ -146,7 +146,7 @@ Watch a walkthrough: search YouTube for "Echo Show setup for elderly parents 202
       },
       {
         title: 'Add family members as contacts',
-        content: 'In the Alexa app, tap "More" at the bottom, then "Contacts." Tap the "+" to add a contact. Add yourself and every family member who will call this Echo Show. Each contact needs to have the Alexa app installed on their own phone (or have an Echo device themselves). Without that, Alexa cannot place the call. Help each family member install the free Alexa app on their phone — they can sign in with their own Amazon account.',
+        content: 'In the Alexa app, tap "More" at the bottom, then "Contacts." Tap the "+" to add a contact. Add yourself and every family member who will call this Echo Show. Each contact needs to have the Alexa app installed on their own phone (or have an Echo device themselves). Without that, Alexa cannot place the call. Help each family member install the free Alexa app on their phone. They can sign in with their own Amazon account.',
       },
       {
         title: 'Turn on "Drop In" for trusted family only',
@@ -160,7 +160,7 @@ Watch a walkthrough: search YouTube for "Echo Show setup for elderly parents 202
       },
       {
         title: 'Set up Photo Frame mode (the killer feature)',
-        content: 'Between calls, the Echo Show acts as a digital picture frame showing photos of your family. In the Alexa app: tap the Echo Show device, tap settings, tap "Home & Clock," tap "Personal Photos," and connect your Amazon Photos account or upload a folder of family photos. Each photo rotates every 10 seconds. Most seniors say this is their favorite thing about the Echo Show — they see their grandkids hundreds of times a day even between calls.',
+        content: 'Between calls, the Echo Show acts as a digital picture frame showing photos of your family. In the Alexa app: tap the Echo Show device, tap settings, tap "Home & Clock," tap "Personal Photos," and connect your Amazon Photos account or upload a folder of family photos. Each photo rotates every 10 seconds. Most seniors say this is their favorite thing about the Echo Show. They see their grandkids hundreds of times a day even between calls.',
       },
       {
         title: 'Set up a reminder (e.g., "take your morning pills")',
@@ -168,7 +168,7 @@ Watch a walkthrough: search YouTube for "Echo Show setup for elderly parents 202
       },
       {
         title: 'Show them how to ask for help',
-        content: 'Teach one more command: "Alexa, call [your name] now." If they fall, get scared, or are confused, this gets you on the screen in seconds. Echo Show 8 and 10 have a clear, loud speaker — they can talk to you from across the room without holding anything. For families who want a step further, add Alexa Emergency Assist ($6/month) — this lets your loved one say "Alexa, call for help" to dispatch local 911 directly without needing to pick up a phone.',
+        content: 'Teach one more command: "Alexa, call [your name] now." If they fall, get scared, or are confused, this gets you on the screen in seconds. Echo Show 8 and 10 have a clear, loud speaker. They can talk to you from across the room without holding anything. For families who want a step further, add Alexa Emergency Assist ($6/month) — this lets your loved one say "Alexa, call for help" to dispatch local 911 directly without needing to pick up a phone.',
       },
     ],
   },
@@ -251,7 +251,7 @@ Watch a walkthrough: search YouTube for "Windows 11 Recall privacy guide 2026" �
       },
       {
         title: 'Think about who else uses or sees your PC',
-        content: 'Recall stores screenshots of EVERY screen — including banking, email passwords (if visible), private messages, medical portals, and so on. The screenshots are encrypted on your device, but anyone who knows your Windows password can in theory unlock them. If you share a household PC with grandkids, or if a caregiver helps you with your computer, think carefully before turning Recall on. The risk is not Microsoft — it is anyone in your home who could log in as you.',
+        content: 'Recall stores screenshots of EVERY screen — including banking, email passwords (if visible), private messages, medical portals, and so on. The screenshots are encrypted on your device, but anyone who knows your Windows password can in theory unlock them. If you share a household PC with grandkids, or if a caregiver helps you with your computer, think carefully before turning Recall on. The risk is not Microsoft. It is anyone in your home who could log in as you.',
         warning: 'Recall does NOT exclude banking sites, medical portals, or financial apps automatically. You must add them to the exclusion list yourself in Settings.',
       },
       {
@@ -274,7 +274,7 @@ Watch a walkthrough: search YouTube for "Windows 11 Recall privacy guide 2026" �
       {
         title: 'Delete all snapshots or turn Recall off',
         content: 'If you change your mind, go back to Settings → Privacy & Security → Recall & Snapshots. Click "Delete all snapshots" — this wipes everything Recall has saved. Then toggle "Save snapshots" to Off. The Recall app stays installed but stops capturing anything new. To remove Recall entirely, follow Microsoft\'s uninstall instructions in the Recall settings page — this fully removes the feature from your PC.',
-        warning: 'Once you delete snapshots, they are gone — there is no "undo" and no backup. Make sure that is what you want before clicking Delete.',
+        warning: 'Once you delete snapshots, they are gone. There is no "undo" and no backup. Make sure that is what you want before clicking Delete.',
       },
       {
         title: 'What to do if you suspect someone accessed Recall',
@@ -293,7 +293,7 @@ Watch a walkthrough: search YouTube for "Windows 11 Recall privacy guide 2026" �
     publishedAt: '2026-05-19',
     lastVerifiedAt: '2026-05-19',
     difficulty: 'Beginner',
-    body: `Google Lens is a free tool from Google that lets your phone camera "see" — it identifies plants, animals, breeds of dogs, flowers, products in stores, books, paintings, landmarks, and translates printed text in over 100 languages in real time. It works on Android (built into the camera) and on iPhone (through the Google app or the Google Photos app). There are no ads, no subscription, and no account required.
+    body: `Google Lens is a free tool from Google that lets your phone camera "see". It identifies plants, animals, breeds of dogs, flowers, products in stores, books, paintings, landmarks, and translates printed text in over 100 languages in real time. It works on Android (built into the camera) and on iPhone (through the Google app or the Google Photos app). There are no ads, no subscription, and no account required.
 
 This guide covers the most useful everyday tasks: identifying a mystery plant in your yard, looking up a product to find a better price, scanning a foreign menu and translating it, and copying text from a paper document so you can paste it into an email.
 
@@ -368,7 +368,7 @@ Watch a walkthrough: search YouTube for "toll road scam text 2026" — AARP Frau
       },
       {
         title: 'Do NOT tap the link or call any number in the text',
-        content: 'Tapping the link does not take you to a fake website — it can also install tracking pixels that confirm your phone number is active, leading to more scam texts. Calling the number connects you to a scammer who will ask for your "license plate to verify" and "card on file." Delete the text. If you genuinely think you might owe a toll, look up the toll agency in your state by typing their website directly into your browser. Never trust a link in an unexpected text.',
+        content: 'Tapping the link does not take you to a fake website. It can also install tracking pixels that confirm your phone number is active, leading to more scam texts. Calling the number connects you to a scammer who will ask for your "license plate to verify" and "card on file." Delete the text. If you genuinely think you might owe a toll, look up the toll agency in your state by typing their website directly into your browser. Never trust a link in an unexpected text.',
       },
       {
         title: 'Report the text to your phone provider (free)',
@@ -402,7 +402,7 @@ Watch a walkthrough: search YouTube for "toll road scam text 2026" — AARP Frau
     difficulty: 'Beginner',
     body: `An over-the-air (OTA) TV antenna picks up free local channels — ABC, CBS, NBC, Fox, PBS, plus a dozen sub-channels with classic TV reruns, weather, and music. Picture quality is full 1080p HD (often better than cable for live sports because there is no compression). The catch: you need to be within 30 to 60 miles of a broadcast tower for a flat indoor antenna to work. Most U.S. metros are well-covered.
 
-Antennas in 2026 are nothing like the rabbit ears from the 1980s. The best ones are flat, paper-thin, and stick to a window like a sticker. The cheapest workable models cost $20. A quality model costs $40 to $80. There is no subscription, ever — you pay once and watch free for as long as the TV lasts.
+Antennas in 2026 are nothing like the rabbit ears from the 1980s. The best ones are flat, paper-thin, and stick to a window like a sticker. The cheapest workable models cost $20. A quality model costs $40 to $80. There is no subscription, ever. You pay once and watch free for as long as the TV lasts.
 
 This guide walks through choosing the right antenna for your address, setting it up in 20 minutes, and tuning your TV to find every channel in your area.
 
@@ -441,7 +441,7 @@ Watch a walkthrough: search YouTube for "TV antenna setup 2026 guide" — Antenn
       },
       {
         title: 'Add a DVR if you want to record shows',
-        content: 'Antenna TV is "live only" — you cannot pause or record without extra equipment. Two options: (1) Tablo Quad ($140, no monthly fee) — connects to your antenna and your Wi-Fi, lets you record up to 4 shows at once and watch on any TV, tablet, or phone. (2) AirTV Anywhere ($180, free DVR included) — similar to Tablo but built by Dish. Both let you skip commercials. Set up takes 20 minutes through their app. This is the closest you can get to "cable DVR with no cable bill."',
+        content: 'Antenna TV is "live only". You cannot pause or record without extra equipment. Two options: (1) Tablo Quad ($140, no monthly fee) — connects to your antenna and your Wi-Fi, lets you record up to 4 shows at once and watch on any TV, tablet, or phone. (2) AirTV Anywhere ($180, free DVR included) — similar to Tablo but built by Dish. Both let you skip commercials. Set up takes 20 minutes through their app. This is the closest you can get to "cable DVR with no cable bill."',
       },
       {
         title: 'Combine with a streaming stick for the full free TV setup',

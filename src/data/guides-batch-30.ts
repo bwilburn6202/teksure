@@ -17,7 +17,7 @@ Unlike store loyalty programs that give you store credit or points, Rakuten pays
 
 You can use Rakuten in two ways: the browser extension (most convenient) or the Rakuten website. The browser extension is a small add-on for Chrome, Firefox, Safari, or Edge. When you visit a participating store, a small pop-up appears asking if you want to activate cash back. Click once and your purchase earns cash back automatically — no extra steps during checkout.
 
-The website approach: go to rakuten.com first, search for the store, click through Rakuten's link to the store, then shop normally. The order in which you do this matters — you must start from Rakuten before shopping, not navigate directly to the store.
+The website approach: go to rakuten.com first, search for the store, click through Rakuten's link to the store, then shop normally. The order in which you do this matters. You must start from Rakuten before shopping, not navigate directly to the store.
 
 New members often receive a sign-up bonus ($10-30) after their first qualifying purchase, making it worth signing up even if you're not sure you'll use it regularly.
 
@@ -34,7 +34,7 @@ Rakuten has been operating since 1999 and has paid over $3.5 billion in cash bac
       {
         title: 'Activate Cash Back When Shopping',
         content: 'When you visit Amazon, Target, or another participating store, the Rakuten extension shows a notification (usually a small pop-up or toolbar indicator) offering cash back. Click "Activate Cash Back." Shop and checkout normally. The cash back is recorded based on your purchase total (excluding tax and shipping in most cases).',
-        tip: `The extension only activates when you're actually browsing a participating store — it doesn't constantly monitor your browsing or interfere with other websites.`,
+        tip: `The extension only activates when you're actually browsing a participating store. It doesn't constantly monitor your browsing or interfere with other websites.`,
       },
       {
         title: 'Check Your Cash Back Balance',
@@ -57,7 +57,7 @@ Rakuten has been operating since 1999 and has paid over $3.5 billion in cash bac
     thumbnailEmoji: '',
     publishedAt: '2026-04-19',
     difficulty: 'Beginner',
-    body: `Honey is a free browser extension that automatically tests coupon codes at checkout when you shop online. Instead of searching the web for promo codes and trying them one by one, Honey does it instantly — it tests dozens of codes, applies the one that saves you the most money, and shows you how much you saved.
+    body: `Honey is a free browser extension that automatically tests coupon codes at checkout when you shop online. Instead of searching the web for promo codes and trying them one by one, Honey does it instantly. It tests dozens of codes, applies the one that saves you the most money, and shows you how much you saved.
 
 Honey works on over 30,000 websites including Amazon, Walmart, Target, eBay, Macy's, Nike, and most other online retailers. When you're on a checkout page, a Honey button appears in your browser. Click it, and Honey runs through all the available codes it knows about in a few seconds.
 
@@ -69,7 +69,7 @@ Beyond coupon codes, Honey also has a "Droplist" feature where you can add an Am
 
 Honey also has a rewards program called Honey Gold, where you earn points (called Gold) on purchases at participating stores. Gold can be redeemed for gift cards.
 
-Honey is available for Chrome, Firefox, Safari, Edge, and Opera on desktop computers. It does not have a standalone phone app for automatic discount application — it works through the browser on a computer.`,
+Honey is available for Chrome, Firefox, Safari, Edge, and Opera on desktop computers. It does not have a standalone phone app for automatic discount application. It works through the browser on a computer.`,
     steps: [
       {
         title: 'Install the Honey Extension',
@@ -82,7 +82,7 @@ Honey is available for Chrome, Firefox, Safari, Edge, and Opera on desktop compu
       {
         title: 'Use It at Checkout',
         content: `Shop online normally. When you reach the checkout page where there's a coupon or promo code box, Honey will either pop up automatically or you'll see the Honey icon light up. Click "Apply Coupons" (or the Honey button). Honey runs through available codes and automatically enters the best one that gives you savings.`,
-        tip: `Even if Honey says "No savings found," it checked — there just aren't active coupons for that store at the moment.`,
+        tip: `Even if Honey says "No savings found," it checked. There just aren't active coupons for that store at the moment.`,
       },
       {
         title: 'Set Up a Droplist Price Alert',
@@ -97,7 +97,7 @@ Honey is available for Chrome, Firefox, Safari, Edge, and Opera on desktop compu
   {
     slug: 'camelcamelcamel-guide',
     title: 'How to Track Amazon Price History With CamelCamelCamel',
-    excerpt: 'Before buying anything on Amazon, check its price history — it may have been much cheaper recently and could drop again. CamelCamelCamel shows you this in seconds.',
+    excerpt: 'Before buying anything on Amazon, check its price history. It may have been much cheaper recently and could drop again. CamelCamelCamel shows you this in seconds.',
     category: 'financial-tech',
     tags: ['CamelCamelCamel', 'Amazon', 'price tracking', 'price history', 'deals'],
     readTime: '4 min',
@@ -174,7 +174,7 @@ Gas prices fluctuate with oil markets, local taxes, and station competition. Kee
       {
         title: 'Filter by Fuel Type',
         content: `At the top of the screen, tap the fuel type selector to switch between Regular, Mid-Grade, Premium, and Diesel. Most cars use Regular (87 octane). Check your car's manual or inside the fuel door to confirm what your car requires before selecting. Luxury and sports cars often require Premium.`,
-        warning: 'Do not use lower-octane fuel than your car requires (some vehicles require Premium) — it can damage the engine. Using higher-octane than required is wasteful but not harmful.',
+        warning: 'Do not use lower-octane fuel than your car requires (some vehicles require Premium). It can damage the engine. Using higher-octane than required is wasteful but not harmful.',
       },
       {
         title: 'Report a Price to Earn Points',
@@ -182,7 +182,7 @@ Gas prices fluctuate with oil markets, local taxes, and station competition. Kee
       },
       {
         title: 'Compare Prices on Your Route',
-        content: 'When driving somewhere unfamiliar, tap the map icon and zoom out to see stations along your route. This is especially useful when driving on a highway or in an unfamiliar city — you can plan a gas stop at the cheaper station coming up rather than the expensive one right at the exit.',
+        content: 'When driving somewhere unfamiliar, tap the map icon and zoom out to see stations along your route. This is especially useful when driving on a highway or in an unfamiliar city. You can plan a gas stop at the cheaper station coming up rather than the expensive one right at the exit.',
       },
     ],
   },
@@ -219,7 +219,7 @@ For people who struggle with apps or low vision: inform the venue's accessibilit
       },
       {
         title: 'Understand the Rotating Barcode',
-        content: `Your mobile ticket shows a QR code or barcode that rotates — it changes every few seconds. This is a security feature to prevent screenshots from working as fake tickets. The barcode only works for a short window when it's live on screen. Screenshots won't scan at the gate.`,
+        content: `Your mobile ticket shows a QR code or barcode that rotates. It changes every few seconds. This is a security feature to prevent screenshots from working as fake tickets. The barcode only works for a short window when it's live on screen. Screenshots won't scan at the gate.`,
         warning: `Do NOT screenshot your tickets to share. Screenshots show a frozen barcode that won't scan. If someone else is meeting you at the event, transfer the ticket to them through the app (tap "Transfer Tickets" in Ticketmaster).`,
       },
       {
@@ -257,7 +257,7 @@ Live Photos take slightly more storage space than regular photos because they in
     steps: [
       {
         title: 'Take a Live Photo',
-        content: `Open the Camera app. The Live Photos button is at the top center — it looks like two concentric circles. When it's yellow, Live Photos is on. When it shows a slash through it, it's off. Tap the button to toggle. Take photos normally — Live Photos doesn't change how you shoot.`,
+        content: `Open the Camera app. The Live Photos button is at the top center. It looks like two concentric circles. When it's yellow, Live Photos is on. When it shows a slash through it, it's off. Tap the button to toggle. Take photos normally — Live Photos doesn't change how you shoot.`,
         tip: `Live Photos work best when there's motion in the scene and you hold the phone still for a moment after tapping the shutter. The 1.5 seconds of "before" motion shows what was happening right before you tapped.`,
       },
       {
@@ -300,7 +300,7 @@ Common uses for custom QR codes:
 - **Menu or list**: link to a digital menu, price list, or document
 - **Social media**: link to your Facebook page, Instagram, or other profiles
 
-The simplest QR code generators don't require creating an account — you enter the content (a URL, text, or contact info), click Generate, and download the image. That image can be printed, added to a Word document or flyer, or shared digitally.
+The simplest QR code generators don't require creating an account. You enter the content (a URL, text, or contact info), click Generate, and download the image. That image can be printed, added to a Word document or flyer, or shared digitally.
 
 "Dynamic" QR codes (offered by some paid services) can be changed after printing — the code stays the same but the destination changes. Free "static" QR codes are permanent — the destination is baked into the code and can't be changed later. For most personal and small business uses, static codes are enough.`,
     steps: [
@@ -352,7 +352,7 @@ For RCS to work, you need the Google Messages app (or another RCS-compatible mes
     steps: [
       {
         title: 'Check If You Have Google Messages',
-        content: 'Look for the Google Messages app on your phone — it has a blue speech bubble icon. This is the default messages app on most new Android phones (especially Google Pixel and many Samsung phones). If you use a different messages app, check if it supports RCS in its settings. RCS in Google Messages is the most widely supported.',
+        content: 'Look for the Google Messages app on your phone. It has a blue speech bubble icon. This is the default messages app on most new Android phones (especially Google Pixel and many Samsung phones). If you use a different messages app, check if it supports RCS in its settings. RCS in Google Messages is the most widely supported.',
       },
       {
         title: 'Enable RCS in Google Messages',
@@ -496,7 +496,7 @@ For most recording needs, Xbox Game Bar's Capture widget is the right choice. Se
       {
         title: 'Start Recording',
         content: 'In the Capture widget, click the round dot (record) button to start recording. A small recording timer appears in the corner of your screen showing the duration. Everything happening in the current active app is recorded. The fastest way: use the keyboard shortcut Win + Alt + R to start recording without opening the Game Bar overlay.',
-        tip: `Win + Alt + R is the most efficient shortcut — it starts and stops recording instantly. You don't need to open Game Bar at all once you know this shortcut.`,
+        tip: `Win + Alt + R is the most efficient shortcut. It starts and stops recording instantly. You don't need to open Game Bar at all once you know this shortcut.`,
       },
       {
         title: 'Stop the Recording',
@@ -505,7 +505,7 @@ For most recording needs, Xbox Game Bar's Capture widget is the right choice. Se
       {
         title: 'Find Your Recordings',
         content: 'Recordings save to C:\\Users\\[your name]\\Videos\\Captures by default. Open File Explorer → navigate to Videos → Captures. Double-click any MP4 file to play it. Share by attaching to an email or uploading to cloud storage like OneDrive or Google Drive.',
-        tip: 'You can also find recent recordings by pressing Win + G again and looking in the Capture widget — it shows recent clips with the option to open the Captures folder.',
+        tip: 'You can also find recent recordings by pressing Win + G again and looking in the Capture widget. It shows recent clips with the option to open the Captures folder.',
       },
     ],
   },
@@ -523,7 +523,7 @@ For most recording needs, Xbox Game Bar's Capture widget is the right choice. Se
 
 The built-in audio message feature in iMessage works between iPhone users. It's different from voice texting (where Siri transcribes your speech to text) — a voice message sends the actual audio so the recipient hears your voice.
 
-Audio messages in iMessage are set to expire automatically after 2 minutes by default — they disappear from the conversation after listening. You can change this in Settings if you want them to keep indefinitely. Recipients can also tap "Keep" when they hear a message to save it permanently before the expiration.
+Audio messages in iMessage are set to expire automatically after 2 minutes by default. They disappear from the conversation after listening. You can change this in Settings if you want them to keep indefinitely. Recipients can also tap "Keep" when they hear a message to save it permanently before the expiration.
 
 The recording is done entirely within the Messages app — no separate app needed. A press-and-hold on the microphone icon records; releasing sends. If you want to listen before sending, swipe up instead of just releasing.
 
@@ -777,7 +777,7 @@ A few benefits have their own apps: Prime Video has its own app (Prime Video), P
       },
       {
         title: 'Use Multi Window (Split Screen)',
-        content: `Open the first app. Tap and hold the Recents button (square icon) at the bottom. Tap "Open in split screen view." Your first app moves to the top half. Open the second app from recent apps or the home screen — it fills the bottom half. Drag the divider line to resize each app's portion of the screen.`,
+        content: `Open the first app. Tap and hold the Recents button (square icon) at the bottom. Tap "Open in split screen view." Your first app moves to the top half. Open the second app from recent apps or the home screen. It fills the bottom half. Drag the divider line to resize each app's portion of the screen.`,
       },
       {
         title: 'Connect to Windows With Link to Windows',
@@ -818,7 +818,7 @@ Keeping the Dock uncluttered (10-15 icons) makes it more useful than trying to p
       },
       {
         title: 'Remove Apps From the Dock',
-        content: `Right-click (or Control-click) any app icon in the Dock → "Options" → "Remove from Dock." Or drag the icon out of the Dock and release — it disappears with a poof animation. Removing an app from the Dock doesn't uninstall it. It just removes the shortcut. The app stays in your Applications folder.`,
+        content: `Right-click (or Control-click) any app icon in the Dock → "Options" → "Remove from Dock." Or drag the icon out of the Dock and release. It disappears with a poof animation. Removing an app from the Dock doesn't uninstall it. It just removes the shortcut. The app stays in your Applications folder.`,
       },
       {
         title: 'Rearrange Dock Icons',
@@ -854,7 +854,7 @@ The system tray (bottom right corner) shows quick access to Wi-Fi, volume, batte
 
 One Windows 11 change many people find annoying: clicking the taskbar clock used to open a full calendar. In Windows 11, it opens a small panel. The full calendar is accessible by clicking "Open Notification Center & Calendar" within that panel.
 
-Taskbar customization is limited in Windows 11 compared to Windows 10 — you can't move the taskbar to the top or sides of the screen in Windows 11's standard settings (unlike Windows 10). The centered vs. left alignment toggle is the main positional option.`,
+Taskbar customization is limited in Windows 11 compared to Windows 10. You can't move the taskbar to the top or sides of the screen in Windows 11's standard settings (unlike Windows 10). The centered vs. left alignment toggle is the main positional option.`,
     steps: [
       {
         title: 'Move Icons to the Left (Windows 10 Style)',

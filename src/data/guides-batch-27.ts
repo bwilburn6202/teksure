@@ -58,13 +58,13 @@ Mint Mobile is owned by T-Mobile but operates as a separate brand with its own p
     thumbnailEmoji: '',
     publishedAt: '2026-04-19',
     difficulty: 'Intermediate',
-    body: `An eSIM (embedded SIM) is a digital version of the plastic SIM card traditionally used in phones. Instead of inserting a physical card, you activate a carrier plan digitally by scanning a QR code or entering an activation code. The eSIM is built into your phone's hardware — it never needs to be removed or swapped.
+    body: `An eSIM (embedded SIM) is a digital version of the plastic SIM card traditionally used in phones. Instead of inserting a physical card, you activate a carrier plan digitally by scanning a QR code or entering an activation code. The eSIM is built into your phone's hardware. It never needs to be removed or swapped.
 
 Most newer iPhones (iPhone XR and later) and many Android phones (Samsung Galaxy S20 and later, Google Pixel 3 and later) support eSIM. Some phones support both a physical SIM and an eSIM simultaneously — this means you can have two active phone numbers on one phone.
 
 Why would you want an eSIM? Several practical reasons: switching carriers without waiting for a physical SIM to be mailed; adding a local data plan when traveling internationally without replacing your SIM; having a work number and personal number on one device; or trying a new carrier while keeping your current one active as a backup.
 
-iPhone 14 models sold in the US are eSIM-only — they have no physical SIM card slot at all. If you have one of these models, you must use eSIM.
+iPhone 14 models sold in the US are eSIM-only. They have no physical SIM card slot at all. If you have one of these models, you must use eSIM.
 
 Setting up an eSIM typically involves scanning a QR code your carrier provides, or using an app-based activation flow. The process takes about 5-10 minutes.
 
@@ -90,7 +90,7 @@ One important caveat: not all phone plans support eSIM, and some carriers charge
       {
         title: 'Manage Two Lines (If Using Both SIM and eSIM)',
         content: 'If your phone has both a physical SIM and an eSIM, you can set which line to use for calls, texts, and data. Go to Settings → Cellular (iPhone) or Settings → Network (Android) and set your preferred primary line for each. This is useful for separating personal and work calls.',
-        warning: 'If you factory reset your phone or switch to a new device, your eSIM plan must be transferred or reactivated by your carrier — it does not automatically move like a physical SIM card does.',
+        warning: 'If you factory reset your phone or switch to a new device, your eSIM plan must be transferred or reactivated by your carrier. It does not automatically move like a physical SIM card does.',
       },
     ],
   },
@@ -165,7 +165,7 @@ Placement is the most important factor in getting good results from an extender.
       {
         title: 'Find the Right Placement Location',
         content: 'The extender should be roughly halfway between your router and the dead zone — in an area where your phone shows at least 2-3 Wi-Fi signal bars from the main router. Plug it in to a wall outlet in that location.',
-        warning: 'Do not place the extender in the dead zone itself — it needs a strong signal from the router to rebroadcast. Start at the midpoint and adjust if needed.',
+        warning: 'Do not place the extender in the dead zone itself. It needs a strong signal from the router to rebroadcast. Start at the midpoint and adjust if needed.',
       },
       {
         title: 'Connect the Extender Using WPS (Fastest Method)',
@@ -183,7 +183,7 @@ Placement is the most important factor in getting good results from an extender.
       {
         title: 'Optimize Placement for Best Signal',
         content: `After setup, check the extender's signal indicator light. Green usually means good connection to the router. Amber or red means weak connection — move the extender closer to the router. Aim for the green zone while still reaching the dead zone.`,
-        tip: `Test by bringing your phone to the previously weak area — you should now see the extender's network and get a stronger, more stable connection.`,
+        tip: `Test by bringing your phone to the previously weak area. You should now see the extender's network and get a stronger, more stable connection.`,
       },
     ],
   },
@@ -201,11 +201,11 @@ Placement is the most important factor in getting good results from an extender.
 
 Bitwarden is open-source software, meaning its code has been publicly reviewed by security experts. It has been independently audited and is considered one of the most trustworthy password managers available. Unlike some competitors, the full-featured individual plan is completely free with no important feature locked behind a paywall.
 
-A password manager works like this: you create one strong master password to unlock your vault. Inside the vault, you store usernames and passwords for every website and app you use. When you visit a website, Bitwarden automatically fills in your credentials — you do not need to remember or type them.
+A password manager works like this: you create one strong master password to unlock your vault. Inside the vault, you store usernames and passwords for every website and app you use. When you visit a website, Bitwarden automatically fills in your credentials. You do not need to remember or type them.
 
 Bitwarden works as a browser extension (for Chrome, Edge, Firefox, Safari), a desktop app, and a mobile app for iPhone and Android. Your vault syncs across all devices — change a password on your phone and it updates on your computer right away.
 
-Why use a password manager rather than just saving passwords in your browser (Chrome, Safari)? Browser-saved passwords are less secure — they can be accessed by anyone with access to your computer without a separate password. Bitwarden adds a master password layer and works across all browsers and apps, not just one browser.
+Why use a password manager rather than just saving passwords in your browser (Chrome, Safari)? Browser-saved passwords are less secure. They can be accessed by anyone with access to your computer without a separate password. Bitwarden adds a master password layer and works across all browsers and apps, not just one browser.
 
 The one thing to do first: create a strong master password that you will remember. This is the only password you need to memorize — Bitwarden handles everything else.`,
     steps: [
@@ -229,7 +229,7 @@ The one thing to do first: create a strong master password that you will remembe
       },
       {
         title: 'Let Bitwarden Fill In Passwords Automatically',
-        content: 'When you visit a login page, click the Bitwarden browser extension icon — it shows matching logins for that site. Click the correct entry to auto-fill your username and password. On mobile, tap the key icon above the keyboard to trigger Bitwarden autofill.',
+        content: 'When you visit a login page, click the Bitwarden browser extension icon. It shows matching logins for that site. Click the correct entry to auto-fill your username and password. On mobile, tap the key icon above the keyboard to trigger Bitwarden autofill.',
         tip: `Use Bitwarden's password generator to create strong unique passwords for new accounts: in the extension, tap the "Generator" icon to create a random, strong password — then save it to Bitwarden right away.`,
       },
     ],
@@ -478,7 +478,7 @@ The tab system can be enabled or disabled. And you can move specific senders fro
 
 You can also disable tabs you find confusing. Many users prefer a traditional single-inbox view where all emails arrive in one stream. This is easy to configure in Gmail settings.
 
-Even with tabs enabled, the search function in Gmail finds emails across all tabs — you do not need to know which tab an email is in to find it.`,
+Even with tabs enabled, the search function in Gmail finds emails across all tabs. You do not need to know which tab an email is in to find it.`,
     steps: [
       {
         title: 'Find the Other Inbox Tabs',
@@ -519,9 +519,9 @@ Even with tabs enabled, the search function in Gmail finds emails across all tab
 
 Many routers come with the admin password set to something generic like "admin" or "password" — publicly documented defaults that anyone can use to take control of your router if they access your network. Changing both passwords is an important one-time security step.
 
-Your Wi-Fi password is what you share with guests and family members. Your admin password should be kept private and not shared — it controls who can change your router's settings, including access controls and security configurations.
+Your Wi-Fi password is what you share with guests and family members. Your admin password should be kept private and not shared. It controls who can change your router's settings, including access controls and security configurations.
 
-To change these passwords, you log into your router's admin panel through a web browser. The admin panel is accessed by typing your router's IP address (usually 192.168.1.1 or 192.168.0.1) into a browser address bar while connected to your Wi-Fi network. This is not an internet address — it only works when you are connected to your home network.
+To change these passwords, you log into your router's admin panel through a web browser. The admin panel is accessed by typing your router's IP address (usually 192.168.1.1 or 192.168.0.1) into a browser address bar while connected to your Wi-Fi network. This is not an internet address. It only works when you are connected to your home network.
 
 After changing your Wi-Fi password, every device in your home will need to reconnect using the new password. This means you will need to update the Wi-Fi settings on phones, tablets, computers, smart TVs, streaming devices, smart home devices, and any other connected devices. Plan to spend 20-30 minutes reconnecting everything.
 
@@ -570,7 +570,7 @@ This separation is a useful security measure. Any device on your guest network i
 
 A guest network typically uses a different network name and password from your main network. For example, your main network might be "SmithFamily" and your guest network might be "SmithFamily_Guest" with a simpler, shareable password.
 
-Most modern routers support guest networks — they are a feature in the router's admin settings. You enable the guest network, give it a name, and set a password. Some routers let you limit the guest network's speed or schedule it to be active only during certain hours.
+Most modern routers support guest networks. They are a feature in the router's admin settings. You enable the guest network, give it a name, and set a password. Some routers let you limit the guest network's speed or schedule it to be active only during certain hours.
 
 Some cable-provided routers (from Xfinity, Spectrum, etc.) have a guest network already set up — look for a separate Wi-Fi network with your provider's name and "Guest" in the name. If you see this, your router already has this feature and may be active by default.
 
@@ -592,7 +592,7 @@ Setting up a guest network requires logging into your router's admin panel (as d
       },
       {
         title: 'Set a Password for the Guest Network',
-        content: 'Add a Wi-Fi password to the guest network. This prevents unauthorized use from neighbors. Choose a password you are comfortable sharing with visitors — it does not need to be as strong as your main network password. But it should still be at least 8 characters.',
+        content: 'Add a Wi-Fi password to the guest network. This prevents unauthorized use from neighbors. Choose a password you are comfortable sharing with visitors. It does not need to be as strong as your main network password. But it should still be at least 8 characters.',
       },
       {
         title: 'Enable Client Isolation',
@@ -623,11 +623,11 @@ The keyboard shortcuts are the fastest way to use virtual desktops once you lear
     steps: [
       {
         title: 'Open Task View',
-        content: 'Click the Task View button on the taskbar — it looks like two overlapping rectangles (to the right of the search bar). Or press Windows key + Tab. Task View shows all open windows and your desktops at the top of the screen.',
+        content: 'Click the Task View button on the taskbar. It looks like two overlapping rectangles (to the right of the search bar). Or press Windows key + Tab. Task View shows all open windows and your desktops at the top of the screen.',
       },
       {
         title: 'Create a New Desktop',
-        content: 'In Task View, click "New desktop" (a "+" icon at the top of the screen). A new empty Desktop 2 appears. Click on it to switch to it — you see a blank desktop. Open apps here that you want to keep in this workspace.',
+        content: 'In Task View, click "New desktop" (a "+" icon at the top of the screen). A new empty Desktop 2 appears. Click on it to switch to it. You see a blank desktop. Open apps here that you want to keep in this workspace.',
         tip: 'Press Windows key + Ctrl + D to create a new desktop without opening Task View — the fastest way to add a desktop.',
       },
       {
@@ -670,7 +670,7 @@ A common mistake: deleting apps to free up space, then reinstalling them — eac
       {
         title: 'Check What Is Using Your Storage',
         content: 'Go to Settings → General → iPhone Storage. Review the colored bar at the top showing storage by category. Scroll down to see individual apps ranked by size. The largest items are listed first. Take note of the top 3-5 space consumers.',
-        tip: 'Give the iPhone Storage screen 30-60 seconds to fully calculate — it loads in stages and the final numbers are more accurate after it finishes loading.',
+        tip: 'Give the iPhone Storage screen 30-60 seconds to fully calculate. It loads in stages and the final numbers are more accurate after it finishes loading.',
       },
       {
         title: 'Enable iCloud Photos to Offload Photos',
@@ -756,7 +756,7 @@ Recovery mode works through Apple's iTunes (on Windows) or Finder (on Mac with m
 
 Always try Update first — it downloads and reinstalls the latest iOS version while preserving your data. Restore is the nuclear option that erases everything, used only when Update fails or when you need to set up the phone fresh.
 
-Entering recovery mode requires a computer and a cable. If you do not have a computer available, you cannot use recovery mode. For iPhones that will not turn on or are stuck, a "force restart" (holding specific buttons to hard-restart the phone) is always the first thing to try — it does not require a computer and solves most minor software freezes.`,
+Entering recovery mode requires a computer and a cable. If you do not have a computer available, you cannot use recovery mode. For iPhones that will not turn on or are stuck, a "force restart" (holding specific buttons to hard-restart the phone) is always the first thing to try. It does not require a computer and solves most minor software freezes.`,
     steps: [
       {
         title: 'Try a Force Restart First',
@@ -841,7 +841,7 @@ Your phone shows "Safe mode" in the bottom left corner of the screen when safe m
     thumbnailEmoji: '',
     publishedAt: '2026-04-19',
     difficulty: 'Beginner',
-    body: `Slow Wi-Fi at home is usually not caused by your internet plan — it is caused by how your router is positioned or configured, interference from other devices, or the distance between your devices and the router. Most Wi-Fi improvements are free and require no new hardware.
+    body: `Slow Wi-Fi at home is usually not caused by your internet plan. It is caused by how your router is positioned or configured, interference from other devices, or the distance between your devices and the router. Most Wi-Fi improvements are free and require no new hardware.
 
 Router placement is the single most impactful factor. Routers broadcast Wi-Fi in all directions from the router's location. Placing a router in a corner, inside a closet, behind a TV cabinet, or in a basement dramatically reduces coverage in other parts of the home. A router placed centrally and elevated (on a shelf or table) covers much more of the home.
 
@@ -872,7 +872,7 @@ Before buying any new hardware, try repositioning your router and switching to 5
       {
         title: 'Check for Firmware Updates',
         content: `Router manufacturers release firmware updates that improve performance and fix issues. Log into your router's admin panel → look for "Firmware Update" or "Software Update" under Advanced settings. Install any available updates. Enable automatic updates if the option exists.`,
-        tip: 'Outdated router firmware is one of the most overlooked reasons for slow Wi-Fi — it is worth checking once per year at minimum.',
+        tip: 'Outdated router firmware is one of the most overlooked reasons for slow Wi-Fi. It is worth checking once per year at minimum.',
       },
     ],
   },

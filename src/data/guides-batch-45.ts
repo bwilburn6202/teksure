@@ -155,7 +155,7 @@ For best results, hold the phone steadily and use Measure in good lighting. The 
     steps: [
       {
         title: `Open the Measure App`,
-        content: `Look for the Measure app on your iPhone — it has a white icon with a ruler. If you do not see it, swipe down on your home screen to search and type "Measure." Tap the app to open it. Allow access to your camera if asked.`,
+        content: `Look for the Measure app on your iPhone. It has a white icon with a ruler. If you do not see it, swipe down on your home screen to search and type "Measure." Tap the app to open it. Allow access to your camera if asked.`,
         tip: `Quick Tip: The first time you open Measure, the app asks you to slowly move your phone around the room. This calibrates the AR sensors — give it a few seconds.`,
       },
       {
@@ -233,7 +233,7 @@ PDFs saved to your computer open directly in Edge — no internet connection nee
 
 This shortcut system works throughout iPhone: on the home screen for app shortcuts, in messages to react to texts, on photos to share or copy them, on links to preview them before opening, on email in your inbox for quick actions, and much more.
 
-For example, pressing and holding the Camera app on your home screen reveals options like "Take Selfie," "Record Video," "Take Photo," or "Scan QR Code" — you can go straight to the mode you want without opening the app first.
+For example, pressing and holding the Camera app on your home screen reveals options like "Take Selfie," "Record Video," "Take Photo," or "Scan QR Code". You can go straight to the mode you want without opening the app first.
 
 In Messages, press and hold on a specific text bubble to see emoji reactions, reply, copy, or delete that individual message. In Safari, press and hold any link to see a preview of the page and options like "Open in New Tab" or "Add to Reading List."
 
@@ -364,7 +364,7 @@ You can add videos to a playlist from anywhere — the YouTube search results, a
     difficulty: `Beginner`,
     body: `Watch Later is YouTube's built-in list for videos you want to watch but do not have time for right now. It is like a personal queue — save something with one tap and come back to it tonight, tomorrow, or next weekend.
 
-Watch Later is automatically in every YouTube account. You do not need to create it — it is always there under your Library tab. Everything you save to Watch Later is private — only you can see the list.
+Watch Later is automatically in every YouTube account. You do not need to create it. It is always there under your Library tab. Everything you save to Watch Later is private — only you can see the list.
 
 The Watch Later list syncs across all your devices. Save a video on your phone and you can watch it on your computer or TV later.
 
@@ -421,8 +421,8 @@ For Premium subscribers, downloads work on up to 3 devices at once. Your downloa
       },
       {
         title: `Download a Single Video`,
-        content: `Find a video you want to download. Below the video (on the video page), tap the Download button — it looks like an arrow pointing down with a line under it. Choose your quality: Low (smallest file), Medium, or High (largest file, best picture). Tap your choice and the download starts.`,
-        tip: `Quick Tip: Use "Medium" quality for most videos — it balances file size and picture quality well. Use "Low" if your phone storage is running low.`,
+        content: `Find a video you want to download. Below the video (on the video page), tap the Download button. It looks like an arrow pointing down with a line under it. Choose your quality: Low (smallest file), Medium, or High (largest file, best picture). Tap your choice and the download starts.`,
+        tip: `Quick Tip: Use "Medium" quality for most videos. It balances file size and picture quality well. Use "Low" if your phone storage is running low.`,
       },
       {
         title: `Download an Entire Playlist`,
@@ -455,7 +455,7 @@ Over time, this list can pile up with old phones, tablets, or computers that you
 
 Reviewing and cleaning up your trusted devices list is a good security practice, especially after selling or giving away an Apple device.
 
-Removing a device from your Apple ID does not erase the device — it just unlinks it from your account. The person who has that device cannot access your iCloud data after removal. (You should have erased the device before selling it anyway — see our separate guide on erasing before selling.)
+Removing a device from your Apple ID does not erase the device. It just unlinks it from your account. The person who has that device cannot access your iCloud data after removal. (You should have erased the device before selling it anyway — see our separate guide on erasing before selling.)
 
 You can manage your trusted devices from any iPhone, iPad, Mac, or from appleid.apple.com on any web browser.`,
     steps: [
@@ -602,7 +602,7 @@ Offline maps expire after 30 days if you have not updated them. Apple Maps autom
       },
       {
         title: `Use the Offline Map While Traveling`,
-        content: `When you are in an area without cell service, Apple Maps automatically uses your downloaded offline map. Search for addresses or get directions the same way you normally would. The only difference is live traffic data does not update. Your phone's GPS still works without cell service — it uses satellite positioning instead.`,
+        content: `When you are in an area without cell service, Apple Maps automatically uses your downloaded offline map. Search for addresses or get directions the same way you normally would. The only difference is live traffic data does not update. Your phone's GPS still works without cell service. It uses satellite positioning instead.`,
       },
       {
         title: `Manage and Delete Downloaded Maps`,
@@ -638,7 +638,7 @@ Low Power Mode turns off automatically once you charge your phone back to 80% or
       },
       {
         title: `What Turns Off in Low Power Mode`,
-        content: `Background app refresh pauses (apps do not update in the background), iCloud Photos stops syncing new uploads, some visual animations are reduced, and your iPhone screen dims more quickly. Mail does not fetch new messages automatically — you must open the Mail app to check.`,
+        content: `Background app refresh pauses (apps do not update in the background), iCloud Photos stops syncing new uploads, some visual animations are reduced, and your iPhone screen dims more quickly. Mail does not fetch new messages automatically. You must open the Mail app to check.`,
       },
       {
         title: `What Stays Working Normally`,
@@ -665,7 +665,7 @@ Low Power Mode turns off automatically once you charge your phone back to 80% or
     thumbnailEmoji: ``,
     publishedAt: `2026-04-19`,
     difficulty: `Beginner`,
-    body: `Android's Battery Saver mode works similarly to iPhone's Low Power Mode — it reduces background activity, limits some features, and slows down certain processes to stretch your battery through a long day.
+    body: `Android's Battery Saver mode works similarly to iPhone's Low Power Mode. It reduces background activity, limits some features, and slows down certain processes to stretch your battery through a long day.
 
 When Battery Saver is on, Android reduces or pauses: background app syncing, location services for apps not in use, some visual animations and effects, automatic email checking, and some performance-intensive processes. The phone's screen may also dim slightly more aggressively.
 
@@ -690,7 +690,7 @@ Different Android phone brands call this feature slightly different things. Sams
       },
       {
         title: `Use Extreme Battery Saver for Emergencies`,
-        content: `Some Android phones (especially Pixel phones and newer Samsungs) have an "Extreme Battery Saver" or "Ultra Power Saving Mode." This is more aggressive — it limits you to a small set of approved apps and turns off Wi-Fi and Bluetooth when not actively in use. Use this only when you truly need to make your battery last as long as possible (like getting through 8 more hours on 5% battery).`,
+        content: `Some Android phones (especially Pixel phones and newer Samsungs) have an "Extreme Battery Saver" or "Ultra Power Saving Mode." This is more aggressive. It limits you to a small set of approved apps and turns off Wi-Fi and Bluetooth when not actively in use. Use this only when you truly need to make your battery last as long as possible (like getting through 8 more hours on 5% battery).`,
         warning: `Extreme Battery Saver can prevent some apps from receiving calls or notifications. Let people know if you are in this mode and they cannot reach you easily.`,
       },
       {
@@ -709,13 +709,13 @@ Different Android phone brands call this feature slightly different things. Sams
     thumbnailEmoji: ``,
     publishedAt: `2026-04-19`,
     difficulty: `Beginner`,
-    body: `Many websites are so cluttered with ads, pop-ups, cookie notices, and sidebars that reading an actual article feels like an obstacle course. Safari's Reader Mode solves this in one tap — it strips everything away and shows you just the article text and images in a clean, calm layout.
+    body: `Many websites are so cluttered with ads, pop-ups, cookie notices, and sidebars that reading an actual article feels like an obstacle course. Safari's Reader Mode solves this in one tap. It strips everything away and shows you just the article text and images in a clean, calm layout.
 
 Reader Mode works on iPhone, iPad, and Mac — any device that uses Safari as a browser. It is built right in and does not cost anything extra.
 
 When you turn on Reader Mode, you can also adjust the text size (make it bigger for easier reading), change the font to one you prefer, and switch to a dark background to reduce eye strain in the evening.
 
-Reader Mode does not work on every page — it only activates when Safari detects that the page contains a main article or long text content. For pages that are mostly navigation, videos, or shopping, the Reader Mode button will not appear.
+Reader Mode does not work on every page. It only activates when Safari detects that the page contains a main article or long text content. For pages that are mostly navigation, videos, or shopping, the Reader Mode button will not appear.
 
 You can set Safari to automatically use Reader Mode on all pages of a specific website — great for news sites you visit regularly that have particularly aggressive ads.`,
     steps: [
@@ -752,7 +752,7 @@ You can set Safari to automatically use Reader Mode on all pages of a specific w
     thumbnailEmoji: ``,
     publishedAt: `2026-04-19`,
     difficulty: `Beginner`,
-    body: `Samsung Quick Share is Samsung's built-in file-sharing tool for Galaxy phones and tablets. It works like Apple's AirDrop — you can send photos, videos, contacts, or any file to a nearby Samsung device wirelessly in seconds, without needing Wi-Fi, cellular data, or any cables.
+    body: `Samsung Quick Share is Samsung's built-in file-sharing tool for Galaxy phones and tablets. It works like Apple's AirDrop. You can send photos, videos, contacts, or any file to a nearby Samsung device wirelessly in seconds, without needing Wi-Fi, cellular data, or any cables.
 
 Quick Share uses Bluetooth and Wi-Fi Direct to create a direct connection between two Samsung devices. Files transfer at fast speeds — a high-resolution photo takes about 2–3 seconds, a large video a bit longer.
 

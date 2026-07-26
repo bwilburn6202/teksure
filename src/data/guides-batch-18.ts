@@ -23,7 +23,7 @@ export const guidesBatch18: Guide[] = [
       {
         title: 'Set up a virtual background in Zoom on your computer',
         content: "Open Zoom. Click your profile picture at the top right → \"Settings\" → click \"Backgrounds & Filters\" in the left menu. You will see a row of background options. Click \"Blur\" to blur your real background, or click one of the preset background images. To use your own photo: click the \"+\" button → \"Add Image\" → choose a photo from your computer. The background applies right away in the preview. Close settings and start a meeting — your background is active.",
-        tip: "Quick Tip: If your computer doesn't meet the minimum specs for virtual backgrounds without a green screen, Zoom will warn you. In that case, use background blur instead — it works on older hardware and still hides a messy room.",
+        tip: "Quick Tip: If your computer doesn't meet the minimum specs for virtual backgrounds without a green screen, Zoom will warn you. In that case, use background blur instead. It works on older hardware and still hides a messy room.",
       },
       {
         title: 'Enable virtual backgrounds on the Zoom mobile app',
@@ -31,7 +31,7 @@ export const guidesBatch18: Guide[] = [
       },
       {
         title: 'Choose the right background image',
-        content: "The best virtual background images are: landscape format (wider than tall), at least 1920x1080 pixels for sharpness, not too busy or distracting, appropriate for the context (a beach scene for a family call; a clean bookshelf or plain wall for professional meetings). Avoid backgrounds with lots of fine details (like a forest of leaves) — they can shimmer and distort around the edges of your face and hair.",
+        content: "The best virtual background images are: landscape format (wider than tall), at least 1920x1080 pixels for sharpness, not too busy or distracting, appropriate for the context (a beach scene for a family call; a clean bookshelf or plain wall for professional meetings). Avoid backgrounds with lots of fine details (like a forest of leaves). They can shimmer and distort around the edges of your face and hair.",
         tip: "Quick Tip: Zoom has free professional background packs available at zoom.us/virtual-backgrounds. Many users use the blur option, which requires no image and works well in nearly any situation.",
       },
       {
@@ -69,8 +69,8 @@ export const guidesBatch18: Guide[] = [
       },
       {
         title: 'Recall an email in Outlook',
-        content: "In Outlook (Microsoft 365): open the Sent Items folder → open the email you want to recall → click the three-dot menu (⋯) or \"Message\" tab → \"Actions\" → \"Recall This Message.\" Choose \"Delete unread copies\" (if the recipient hasn't opened it) or \"Delete unread copies and replace with a new message.\" A recall only works if the recipient uses Outlook and has not yet opened the email — it does not work to Gmail, Apple Mail, or other email services.",
-        warning: "Email recall is not reliable — it fails if the recipient has already opened the email, uses a non-Outlook email app, or reads email on a mobile device. Think of it as a last resort, not a guarantee.",
+        content: "In Outlook (Microsoft 365): open the Sent Items folder → open the email you want to recall → click the three-dot menu (⋯) or \"Message\" tab → \"Actions\" → \"Recall This Message.\" Choose \"Delete unread copies\" (if the recipient hasn't opened it) or \"Delete unread copies and replace with a new message.\" A recall only works if the recipient uses Outlook and has not yet opened the email. It does not work to Gmail, Apple Mail, or other email services.",
+        warning: "Email recall is not reliable. It fails if the recipient has already opened the email, uses a non-Outlook email app, or reads email on a mobile device. Think of it as a last resort, not a guarantee.",
       },
     ],
   },
@@ -124,11 +124,11 @@ export const guidesBatch18: Guide[] = [
       {
         title: 'Set up your profile in Samsung Health',
         content: "Open Samsung Health on your Samsung phone (search for it if you don't see it on your home screen — it is pre-installed on most Galaxy phones). Sign in with your Samsung account or create one for free. Enter your profile information: birth date, height, and weight. This information is used to calculate calorie estimates and personalize your goals. Set your daily step goal — Samsung Health suggests 6,000-10,000 steps per day. You can adjust this based on your current activity level.",
-        tip: "Quick Tip: Start with a modest step goal and increase it gradually. Research suggests even 4,000-6,000 steps per day provides significant health benefits for older adults — you don't need to reach 10,000.",
+        tip: "Quick Tip: Start with a modest step goal and increase it gradually. Research suggests even 4,000-6,000 steps per day provides significant health benefits for older adults. You don't need to reach 10,000.",
       },
       {
         title: 'Track your daily steps automatically',
-        content: "Samsung Health begins counting steps as soon as it is set up. Your phone needs to be in your pocket, purse, or hand — it uses the phone's accelerometer to detect walking motion. The home screen of Samsung Health shows your steps for today, a goal ring showing your progress, and a weekly summary chart. Your steps reset at midnight each day. Steps are also shown as a widget on your home screen if you add it.",
+        content: "Samsung Health begins counting steps as soon as it is set up. Your phone needs to be in your pocket, purse, or hand. It uses the phone's accelerometer to detect walking motion. The home screen of Samsung Health shows your steps for today, a goal ring showing your progress, and a weekly summary chart. Your steps reset at midnight each day. Steps are also shown as a widget on your home screen if you add it.",
         tip: "Quick Tip: For accurate step counting, carry your phone on your body (not in a bag sitting on a table) while walking. The more the phone moves with your body, the more accurately it counts steps.",
       },
       {
@@ -164,7 +164,7 @@ export const guidesBatch18: Guide[] = [
       {
         title: 'Start an Apple Fitness+ subscription',
         content: "On your iPhone, open the Fitness app → tap \"Fitness+\" → \"Try Fitness+ Free.\" You get a free trial (typically 1-3 months for new subscribers), then $9.99/month. Alternatively, Apple Fitness+ is included in Apple One, the bundle that combines Apple services (Music, TV+, Arcade, iCloud+, and Fitness+) at a combined price. To check if you already have Fitness+ through Apple One: Settings → your name → Subscriptions.",
-        tip: "Quick Tip: You do not need an Apple Watch to browse and watch Fitness+ videos. But you need one to see your real-time metrics on screen. Without a watch, you can still follow along — you just won't see your heart rate and calories overlaid on the video.",
+        tip: "Quick Tip: You do not need an Apple Watch to browse and watch Fitness+ videos. But you need one to see your real-time metrics on screen. Without a watch, you can still follow along. You just won't see your heart rate and calories overlaid on the video.",
       },
       {
         title: 'Find beginner and senior-friendly classes',
@@ -213,7 +213,7 @@ export const guidesBatch18: Guide[] = [
       },
       {
         title: 'Respond to reminders and track doses',
-        content: "At the scheduled time, Medisafe sends a notification. Tap the notification to open the app → tap \"Taken\" when you take the medication, or \"Skipped\" if you intentionally miss it. A history log records every dose. At a doctor's appointment, you can show your doctor the history — it helps with conversations about medication adherence and timing.",
+        content: "At the scheduled time, Medisafe sends a notification. Tap the notification to open the app → tap \"Taken\" when you take the medication, or \"Skipped\" if you intentionally miss it. A history log records every dose. At a doctor's appointment, you can show your doctor the history. It helps with conversations about medication adherence and timing.",
       },
       {
         title: 'Set up a Medfriend to help a family member',
@@ -279,8 +279,8 @@ export const guidesBatch18: Guide[] = [
       },
       {
         title: 'Subscribe to Apple One',
-        content: "On iPhone or iPad: go to Settings → your name → Subscriptions → \"Get Apple One.\" Alternatively, go to the App Store → tap your profile icon → \"Apple One.\" Choose the Individual, Family, or Premier plan. Your existing Apple subscriptions are automatically bundled — you will not pay twice for services you already have. Those subscriptions end at their current billing date and roll into Apple One.",
-        tip: "Quick Tip: If you subscribe to Apple One Family, all family members in your Apple Family Sharing group get access right away — they do not need to do anything extra to start using the services.",
+        content: "On iPhone or iPad: go to Settings → your name → Subscriptions → \"Get Apple One.\" Alternatively, go to the App Store → tap your profile icon → \"Apple One.\" Choose the Individual, Family, or Premier plan. Your existing Apple subscriptions are automatically bundled. You will not pay twice for services you already have. Those subscriptions end at their current billing date and roll into Apple One.",
+        tip: "Quick Tip: If you subscribe to Apple One Family, all family members in your Apple Family Sharing group get access right away. They do not need to do anything extra to start using the services.",
       },
       {
         title: 'Cancel services you are paying for separately',
@@ -299,7 +299,7 @@ export const guidesBatch18: Guide[] = [
     thumbnailEmoji: '',
     publishedAt: '2026-04-19',
     difficulty: 'Beginner',
-    body: `You do not need a separate photo editing app to make basic improvements to your photos. Both iPhone and Android have capable built-in editing tools in the Photos app that let you crop and straighten images, adjust brightness and contrast, correct color, reduce noise, and apply filters.\n\nBest of all, edits on both iPhone and Android are non-destructive — you can undo any edit at any time, even years later, by tapping "Revert" or "Undo edits." The original photo is always preserved.`,
+    body: `You do not need a separate photo editing app to make basic improvements to your photos. Both iPhone and Android have capable built-in editing tools in the Photos app that let you crop and straighten images, adjust brightness and contrast, correct color, reduce noise, and apply filters.\n\nBest of all, edits on both iPhone and Android are non-destructive. You can undo any edit at any time, even years later, by tapping "Revert" or "Undo edits." The original photo is always preserved.`,
     steps: [
       {
         title: 'Open the edit tools on iPhone',
@@ -313,7 +313,7 @@ export const guidesBatch18: Guide[] = [
       {
         title: 'Adjust brightness, contrast, and other settings',
         content: "Tap the adjustments icon (dial/slider symbol). A row of adjustment tools appears at the bottom: Exposure (overall brightness), Brilliance (auto-enhance), Highlights (bright areas), Shadows (dark areas), Contrast, Brightness, Saturation, and more. Tap any adjustment to select it, then drag the slider below the photo left (less) or right (more). For a quick fix on a dark photo: increase Exposure and Shadows. For a washed-out photo: reduce Highlights and increase Contrast.",
-        tip: "Quick Tip: Tap \"Auto\" (the magic wand icon) for a one-tap automatic enhancement. iPhones analyze the photo and apply corrections automatically — it is a good starting point that you can fine-tune afterward.",
+        tip: "Quick Tip: Tap \"Auto\" (the magic wand icon) for a one-tap automatic enhancement. iPhones analyze the photo and apply corrections automatically. It is a good starting point that you can fine-tune afterward.",
       },
       {
         title: 'Basic editing on Android (Google Photos)',
@@ -365,7 +365,7 @@ export const guidesBatch18: Guide[] = [
     thumbnailEmoji: '↪',
     publishedAt: '2026-04-19',
     difficulty: 'Beginner',
-    body: `Forwarding a text message works like forwarding an email — you send a copy of an existing message to a new person, who can then read the original message. This is useful when you receive information (like a meeting address, a funny message, or an important alert) and want to share it with someone not on the original thread.\n\nForwarding works for both regular SMS text messages and iMessages on iPhone. The forwarded copy starts a new conversation or message thread with the new recipient.`,
+    body: `Forwarding a text message works like forwarding an email. You send a copy of an existing message to a new person, who can then read the original message. This is useful when you receive information (like a meeting address, a funny message, or an important alert) and want to share it with someone not on the original thread.\n\nForwarding works for both regular SMS text messages and iMessages on iPhone. The forwarded copy starts a new conversation or message thread with the new recipient.`,
     steps: [
       {
         title: 'Forward a text on iPhone',
@@ -460,7 +460,7 @@ export const guidesBatch18: Guide[] = [
     thumbnailEmoji: '',
     publishedAt: '2026-04-19',
     difficulty: 'Intermediate',
-    body: `Apple Shortcuts is a free app from Apple that lets you create one-tap buttons or voice commands that perform multiple actions at once. Think of it as a personal automation tool: instead of doing five separate steps every morning, one tap can do all five for you.\n\nFor example, a "Heading Home" shortcut might: open Google Maps with your home address, send a text to your family saying you're on the way, and start your favorite playlist — all from a single tap or by saying "Hey Siri, heading home."\n\nShortcuts comes pre-installed on iPhones running iOS 17 or later. The Gallery inside the app offers hundreds of ready-to-use shortcuts — you do not need to build your own from scratch.`,
+    body: `Apple Shortcuts is a free app from Apple that lets you create one-tap buttons or voice commands that perform multiple actions at once. Think of it as a personal automation tool: instead of doing five separate steps every morning, one tap can do all five for you.\n\nFor example, a "Heading Home" shortcut might: open Google Maps with your home address, send a text to your family saying you're on the way, and start your favorite playlist — all from a single tap or by saying "Hey Siri, heading home."\n\nShortcuts comes pre-installed on iPhones running iOS 17 or later. The Gallery inside the app offers hundreds of ready-to-use shortcuts. You do not need to build your own from scratch.`,
     steps: [
       {
         title: 'Explore the Shortcuts Gallery',
@@ -473,7 +473,7 @@ export const guidesBatch18: Guide[] = [
       },
       {
         title: 'Create a simple custom shortcut',
-        content: "Tap the \"+\" button to create a new shortcut. Tap \"Add Action.\" The action library opens — search for \"Send Message.\" Tap it. Set the recipient and message text. Tap \"Done.\" Name the shortcut something memorable, like \"Check in with family.\" Now run it by tapping the shortcut or saying \"Hey Siri, check in with family\" — it sends the message automatically without you having to type anything.",
+        content: "Tap the \"+\" button to create a new shortcut. Tap \"Add Action.\" The action library opens — search for \"Send Message.\" Tap it. Set the recipient and message text. Tap \"Done.\" Name the shortcut something memorable, like \"Check in with family.\" Now run it by tapping the shortcut or saying \"Hey Siri, check in with family\". It sends the message automatically without you having to type anything.",
         tip: "Quick Tip: The \"Ask Each Time\" option in action fields means Siri will ask you to fill in the value each time the shortcut runs. Use this for shortcuts where the message text or recipient should vary.",
       },
       {
@@ -526,7 +526,7 @@ export const guidesBatch18: Guide[] = [
     thumbnailEmoji: '',
     publishedAt: '2026-04-19',
     difficulty: 'Beginner',
-    body: `Your Android home screen is the first thing you see when you unlock your phone. An organized home screen with your most-used apps in easy reach can make your phone a lot easier to use. Instead of hunting through pages of apps, you can access everything you need with one or two taps.\n\nAndroid home screens are highly customizable — you can rearrange apps, create folders, add widgets, change icon sizes, and even install alternative launchers for completely different layouts. This guide covers the basics for getting your home screen organized.`,
+    body: `Your Android home screen is the first thing you see when you unlock your phone. An organized home screen with your most-used apps in easy reach can make your phone a lot easier to use. Instead of hunting through pages of apps, you can access everything you need with one or two taps.\n\nAndroid home screens are highly customizable. You can rearrange apps, create folders, add widgets, change icon sizes, and even install alternative launchers for completely different layouts. This guide covers the basics for getting your home screen organized.`,
     steps: [
       {
         title: 'Move and rearrange app icons',
@@ -601,7 +601,7 @@ export const guidesBatch18: Guide[] = [
       },
       {
         title: 'Start and stop a screen recording',
-        content: "Open Control Center (swipe down from the top right). Tap the Screen Recording button — it looks like a filled circle inside a circle. A 3-second countdown appears, then recording begins. The status bar at the top of your screen turns red to show recording is active. Use your phone normally — everything you do is being recorded. To stop recording: tap the red indicator at the top of the screen → \"Stop.\" The recording is saved to your Photos app.",
+        content: "Open Control Center (swipe down from the top right). Tap the Screen Recording button. It looks like a filled circle inside a circle. A 3-second countdown appears, then recording begins. The status bar at the top of your screen turns red to show recording is active. Use your phone normally — everything you do is being recorded. To stop recording: tap the red indicator at the top of the screen → \"Stop.\" The recording is saved to your Photos app.",
       },
       {
         title: 'Record with audio (microphone)',
@@ -639,7 +639,7 @@ export const guidesBatch18: Guide[] = [
       {
         title: 'Add events to the shared calendar',
         content: "When creating a new event, always confirm it is being added to the shared family calendar (not a personal calendar). In Google Calendar: tap the + to add an event → scroll down to the Calendar field → change it to your family calendar. In iPhone Calendar: tap + for a new event → find the Calendar field → select the shared family calendar by name. Events added to your personal calendar are not visible to others.",
-        tip: "Quick Tip: For recurring family events (weekly dinners, regular medication reminders, grandkids' activities), set them as repeating events — they appear on the calendar automatically each week or month without re-entering.",
+        tip: "Quick Tip: For recurring family events (weekly dinners, regular medication reminders, grandkids' activities), set them as repeating events. They appear on the calendar automatically each week or month without re-entering.",
       },
       {
         title: 'View the shared calendar on any device',
@@ -662,7 +662,7 @@ export const guidesBatch18: Guide[] = [
     steps: [
       {
         title: 'Enter Split View from the green button',
-        content: "Move your cursor to the top left corner of any app window — you will see three colored dots: red, yellow, and green. Hover over (do not click) the green dot. A small menu appears showing: \"Enter Full Screen,\" \"Tile Window to Left of Screen,\" and \"Tile Window to Right of Screen.\" Click \"Tile Window to Left of Screen.\" The window fills the left half of your screen. macOS then shows all your other windows on the right — click any window to fill the right half.",
+        content: "Move your cursor to the top left corner of any app window. You will see three colored dots: red, yellow, and green. Hover over (do not click) the green dot. A small menu appears showing: \"Enter Full Screen,\" \"Tile Window to Left of Screen,\" and \"Tile Window to Right of Screen.\" Click \"Tile Window to Left of Screen.\" The window fills the left half of your screen. macOS then shows all your other windows on the right — click any window to fill the right half.",
         tip: "Quick Tip: If the hover menu doesn't appear, click and hold the green dot for a moment — the menu should pop up. Alternatively, you may need to enable Tiled windows in System Settings → Desktop & Dock → \"Windows.\"",
       },
       {
@@ -708,7 +708,7 @@ export const guidesBatch18: Guide[] = [
       },
       {
         title: 'Try Pandora for personalized music radio',
-        content: "Pandora is a personalized music radio service — you type in an artist or song you like, and Pandora creates a custom station that plays music similar to your taste. Download the free \"Pandora\" app. The free version plays with occasional ads. You can thumbs-up or thumbs-down songs to refine your station over time. Pandora is one of the original internet radio services and has been around since 2000 — it is widely trusted and works well for discovering new music in genres you already enjoy.",
+        content: "Pandora is a personalized music radio service. You type in an artist or song you like, and Pandora creates a custom station that plays music similar to your taste. Download the free \"Pandora\" app. The free version plays with occasional ads. You can thumbs-up or thumbs-down songs to refine your station over time. Pandora is one of the original internet radio services and has been around since 2000. It is widely trusted and works well for discovering new music in genres you already enjoy.",
         tip: "Quick Tip: Amazon Echo/Alexa devices work well for internet radio. Try saying \"Alexa, play some jazz\" or \"Alexa, play NPR\" to start listening on a smart speaker without picking up your phone.",
       },
     ],
@@ -724,16 +724,16 @@ export const guidesBatch18: Guide[] = [
     thumbnailEmoji: '',
     publishedAt: '2026-04-19',
     difficulty: 'Beginner',
-    body: `You do not need an Amazon Kindle device to read digital books. The free Kindle app on your smartphone or tablet turns your phone into a Kindle — you can read eBooks right on your screen, adjust the text size, change the background color, and read in the dark.\n\nThere are two ways to get eBooks on the Kindle app: purchase books from Amazon (which start at $0.99 and up) or borrow eBooks for free from your public library through an app called Libby (or OverDrive). Library borrowing gives you access to thousands of titles at no cost — the same library card you use for physical books works for digital books too.\n\nThis guide covers both purchasing from Amazon and borrowing from your library.`,
+    body: `You do not need an Amazon Kindle device to read digital books. The free Kindle app on your smartphone or tablet turns your phone into a Kindle. You can read eBooks right on your screen, adjust the text size, change the background color, and read in the dark.\n\nThere are two ways to get eBooks on the Kindle app: purchase books from Amazon (which start at $0.99 and up) or borrow eBooks for free from your public library through an app called Libby (or OverDrive). Library borrowing gives you access to thousands of titles at no cost — the same library card you use for physical books works for digital books too.\n\nThis guide covers both purchasing from Amazon and borrowing from your library.`,
     steps: [
       {
         title: 'Download and set up the Kindle app',
-        content: "Open the App Store (iPhone) or Google Play (Android) and search \"Kindle.\" Download the free app by Amazon. Open it and sign in with your Amazon account. If you do not have an Amazon account, tap \"Create a new Amazon account\" — it is free and only requires an email address. Once signed in, any Kindle books you have purchased previously appear in your library automatically.",
+        content: "Open the App Store (iPhone) or Google Play (Android) and search \"Kindle.\" Download the free app by Amazon. Open it and sign in with your Amazon account. If you do not have an Amazon account, tap \"Create a new Amazon account\". It is free and only requires an email address. Once signed in, any Kindle books you have purchased previously appear in your library automatically.",
         tip: "Quick Tip: Amazon offers a Free Kindle Books section — hundreds of books available at no cost. In the Amazon app or amazon.com, search \"Free Kindle Books\" or browse free titles in the Kindle Store.",
       },
       {
         title: 'Purchase a Kindle book from Amazon',
-        content: "Open the Amazon app or amazon.com. Search for any book title. On the book's page, look for the Kindle edition — there should be a \"Buy with 1-Click\" button or \"Add to Cart\" button with a Kindle price listed. After purchase, the book downloads to your Kindle app within seconds. Open the Kindle app on your phone and the book is in your library, ready to read.",
+        content: "Open the Amazon app or amazon.com. Search for any book title. On the book's page, look for the Kindle edition. There should be a \"Buy with 1-Click\" button or \"Add to Cart\" button with a Kindle price listed. After purchase, the book downloads to your Kindle app within seconds. Open the Kindle app on your phone and the book is in your library, ready to read.",
         tip: "Quick Tip: Before buying, check if the library version is available for free. Many popular books are in the library — if there's a wait list, it is still free and saves the purchase price.",
       },
       {
@@ -743,7 +743,7 @@ export const guidesBatch18: Guide[] = [
       {
         title: 'Adjust reading settings in the Kindle app',
         content: "Open any book in the Kindle app. Tap the center of the screen to reveal controls. Tap the \"Aa\" button (or font icon) to adjust: text size (larger for easier reading), font style, line spacing, and background color (white, sepia, or black with white text for night reading). Tap anywhere on the text to resume reading. Your reading position, highlights, and bookmarks sync automatically if you read on multiple devices.",
-        tip: "Quick Tip: The Sepia background color (warm tan/beige) is recommended for extended reading — it reduces eye strain compared to bright white, especially in the evening.",
+        tip: "Quick Tip: The Sepia background color (warm tan/beige) is recommended for extended reading. It reduces eye strain compared to bright white, especially in the evening.",
       },
     ],
   },

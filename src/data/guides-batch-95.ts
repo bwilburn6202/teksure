@@ -39,12 +39,12 @@ After you are back in, Microsoft has released a follow-up update that prevents t
     steps: [
       {
         title: 'Write down what you see on the blue screen',
-        content: 'Before you reach for your phone, note the Recovery Key ID shown on the blue BitLocker screen — it is a short code that looks like "A1B2-C3D4." You will need this to match the correct key in your Microsoft account if you have multiple devices.',
+        content: 'Before you reach for your phone, note the Recovery Key ID shown on the blue BitLocker screen. It is a short code that looks like "A1B2-C3D4." You will need this to match the correct key in your Microsoft account if you have multiple devices.',
         tip: 'Quick Tip: Take a photo of the blue screen with your phone so you have the Recovery Key ID handy.',
       },
       {
         title: 'Find your BitLocker recovery key using another device',
-        content: 'On your phone, tablet, or another computer, open a web browser and go to account.microsoft.com. Sign in with the same Microsoft account you use on the locked computer (the email address and password you use to sign into Windows). Once signed in, tap or click "Devices" in the left menu, then look for "BitLocker data recovery" or "View recovery key." Your 48-digit recovery key will appear — it looks like groups of numbers separated by dashes.',
+        content: 'On your phone, tablet, or another computer, open a web browser and go to account.microsoft.com. Sign in with the same Microsoft account you use on the locked computer (the email address and password you use to sign into Windows). Once signed in, tap or click "Devices" in the left menu, then look for "BitLocker data recovery" or "View recovery key." Your 48-digit recovery key will appear. It looks like groups of numbers separated by dashes.',
         tip: 'Quick Tip: Microsoft\'s official BitLocker recovery page is at support.microsoft.com/en-us/windows/bitlocker — bookmark it so you can find it quickly.',
       },
       {
@@ -72,7 +72,7 @@ After you are back in, Microsoft has released a follow-up update that prevents t
     thumbnailEmoji: '',
     publishedAt: '2026-04-20',
     difficulty: 'Beginner',
-    body: `After any major iPhone update, it is completely normal for your battery to drain faster than usual for the first day or two. Your iPhone has a lot of work to do after an update — it rebuilds its search index, re-downloads cached content, checks for compatibility with your apps, and reoptimizes your photos. All of this happens in the background. And it uses extra battery while it runs.
+    body: `After any major iPhone update, it is completely normal for your battery to drain faster than usual for the first day or two. Your iPhone has a lot of work to do after an update. It rebuilds its search index, re-downloads cached content, checks for compatibility with your apps, and reoptimizes your photos. All of this happens in the background. And it uses extra battery while it runs.
 
 If your battery is still draining unusually fast after 48 hours, something else is likely going on. The most common causes are an app that started misbehaving after the update, a background process that got stuck, or a setting that the update changed without you noticing.
 
@@ -119,21 +119,21 @@ If you check your Battery settings and notice one specific app is using a surpri
     thumbnailEmoji: '',
     publishedAt: '2026-04-20',
     difficulty: 'Beginner',
-    body: `When your iPhone tells you there is not enough storage to install an update, it can feel like a catch-22 — you need space to update. But you need to update to stay safe. The good news is you almost always have more space than you think. And there are several ways to free up enough room for any iOS update without permanently losing your photos or contacts.
+    body: `When your iPhone tells you there is not enough storage to install an update, it can feel like a catch-22. You need space to update. But you need to update to stay safe. The good news is you almost always have more space than you think. And there are several ways to free up enough room for any iOS update without permanently losing your photos or contacts.
 
 iOS updates typically need between 500MB and 2.5GB of free space to download and install. If your phone is nearly full, you may need to temporarily free up some room even though the update itself will not permanently increase your phone's storage use.
 
-The single biggest space-saver for most people is photos and videos. If your photos are backed up to iCloud, Google Photos, or another cloud service, you can remove them from your phone without losing them — they will still be accessible through the Photos app (they will download from the cloud when you open them instead of being stored on your phone).
+The single biggest space-saver for most people is photos and videos. If your photos are backed up to iCloud, Google Photos, or another cloud service, you can remove them from your phone without losing them. They will still be accessible through the Photos app (they will download from the cloud when you open them instead of being stored on your phone).
 
 If clearing space on your phone does not work, there is an alternative method: update your iPhone through a computer using iTunes (Windows) or Finder (Mac). This method does not require the phone to have free space for the update because the computer handles the download.`,
     steps: [
       {
         title: 'Check how much space you need and how much you have',
-        content: 'Go to Settings → General → iPhone Storage. At the top you will see a colored bar showing how your storage is used: System, Apps, Photos, Messages, and Other. The number in gray at the right of the bar shows how much free space remains. When an update fails, note what size the update is — you can see this in Settings → General → Software Update next to the update name.',
+        content: 'Go to Settings → General → iPhone Storage. At the top you will see a colored bar showing how your storage is used: System, Apps, Photos, Messages, and Other. The number in gray at the right of the bar shows how much free space remains. When an update fails, note what size the update is. You can see this in Settings → General → Software Update next to the update name.',
       },
       {
         title: 'Turn on iCloud Photos to offload photos to the cloud',
-        content: 'If you do not already use iCloud Photos, go to Settings → Photos → iCloud Photos and turn it on. Your photos will upload to iCloud and the high-resolution originals will be replaced with smaller previews on your phone, freeing up significant storage. The photos are not deleted — they are fully accessible in your Photos app whenever you have Wi-Fi.',
+        content: 'If you do not already use iCloud Photos, go to Settings → Photos → iCloud Photos and turn it on. Your photos will upload to iCloud and the high-resolution originals will be replaced with smaller previews on your phone, freeing up significant storage. The photos are not deleted. They are fully accessible in your Photos app whenever you have Wi-Fi.',
         tip: 'Quick Tip: iCloud storage starts free at 5GB, which fills quickly. 50GB of storage costs 99 cents per month and is enough for most people\'s photo libraries.',
       },
       {
@@ -142,7 +142,7 @@ If clearing space on your phone does not work, there is an alternative method: u
       },
       {
         title: 'Delete message attachments from large group chats',
-        content: 'Open your Messages app and look for large group chats or conversations with lots of photos and videos. Tap and hold a conversation, then tap "Delete" to remove the whole conversation, including all attachments. Alternatively, open a conversation, tap the person\'s name or icon at the top, scroll down, and tap "See All Photos" — you can select and delete old photos without deleting the conversation.',
+        content: 'Open your Messages app and look for large group chats or conversations with lots of photos and videos. Tap and hold a conversation, then tap "Delete" to remove the whole conversation, including all attachments. Alternatively, open a conversation, tap the person\'s name or icon at the top, scroll down, and tap "See All Photos". You can select and delete old photos without deleting the conversation.',
       },
       {
         title: 'Clear your browser cache',
@@ -189,7 +189,7 @@ This is not a problem with your Google account, and nothing is wrong with your G
       {
         title: 'Re-add Gmail in Apple Mail on a Mac',
         content: 'Open the Mail app. Click Mail in the menu bar → Settings → Accounts → select your Gmail account → click the minus (−) button to remove it. Then click the plus (+) button → Google → sign in with your Google account. Follow the prompts to authorize Apple Mail. Your inbox will begin re-downloading shortly.',
-        tip: 'Quick Tip: If you use Gmail on a Mac and want fewer sync problems in the future, the Gmail app at mail.google.com in your browser is the most reliable option for Gmail — it is always fully compatible with Google\'s latest sign-in requirements.',
+        tip: 'Quick Tip: If you use Gmail on a Mac and want fewer sync problems in the future, the Gmail app at mail.google.com in your browser is the most reliable option for Gmail. It is always fully compatible with Google\'s latest sign-in requirements.',
       },
       {
         title: 'Re-add Gmail in Microsoft Outlook on a PC',
@@ -242,7 +242,7 @@ Once you're back in, the most important thing you can do is add backup recovery 
       },
       {
         title: 'Contact support as a last resort',
-        content: 'If automated recovery fails: Google support is at support.google.com/accounts/gethelp. Microsoft phone support is 1-800-642-7676 (Monday–Friday, 6 AM–10 PM Pacific). Apple phone support is 1-800-275-2273 (available 24 hours). Be prepared to verify your identity — they may ask for purchase history, account creation details, or other information tied to the account.',
+        content: 'If automated recovery fails: Google support is at support.google.com/accounts/gethelp. Microsoft phone support is 1-800-642-7676 (Monday–Friday, 6 AM–10 PM Pacific). Apple phone support is 1-800-275-2273 (available 24 hours). Be prepared to verify your identity. They may ask for purchase history, account creation details, or other information tied to the account.',
         warning: 'Only contact support through official phone numbers or websites you find yourself. Do not call any phone number given to you in an email, a pop-up, or a search ad — those are often scam numbers targeting people who are locked out of accounts.',
       },
       {

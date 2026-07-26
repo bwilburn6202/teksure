@@ -50,7 +50,7 @@ export const guidesBatch14: Guide[] = [
     thumbnailEmoji: '‍‍',
     publishedAt: '2026-04-19',
     difficulty: 'Beginner',
-    body: "Helping an older parent or family member learn to use technology is one of the most meaningful things you can do for them — it connects them to family, gives them independence, and helps them stay safer. But it requires a different approach than teaching someone your own age. These techniques actually work.",
+    body: "Helping an older parent or family member learn to use technology is one of the most meaningful things you can do for them. It connects them to family, gives them independence, and helps them stay safer. But it requires a different approach than teaching someone your own age. These techniques actually work.",
     steps: [
       {
         title: 'Slow down and focus on one skill at a time',
@@ -124,7 +124,7 @@ export const guidesBatch14: Guide[] = [
     steps: [
       {
         title: 'Download the Ring app and create an account',
-        content: 'Download the free "Ring" app from the App Store or Google Play. Open it and tap "Create Account." Enter your email address and create a password. Confirm your email with the link Ring sends you. This app is the control center for your Ring device — it shows you live video, lets you talk through the doorbell, and manages all your settings.',
+        content: 'Download the free "Ring" app from the App Store or Google Play. Open it and tap "Create Account." Enter your email address and create a password. Confirm your email with the link Ring sends you. This app is the control center for your Ring device. It shows you live video, lets you talk through the doorbell, and manages all your settings.',
       },
       {
         title: 'Charge the battery (or hardwire the power)',
@@ -137,7 +137,7 @@ export const guidesBatch14: Guide[] = [
       },
       {
         title: 'Set up the Ring in the app',
-        content: `Open the Ring app and tap the plus (+) button to add a device. Tap "Doorbell." Follow the step-by-step setup guide in the app — it will ask you to scan a QR code on the back of the Ring, then connect it to your home WiFi network. The setup process takes about 5-10 minutes. You'll be able to see live video from the doorbell in the app when setup is complete.`,
+        content: `Open the Ring app and tap the plus (+) button to add a device. Tap "Doorbell." Follow the step-by-step setup guide in the app. It will ask you to scan a QR code on the back of the Ring, then connect it to your home WiFi network. The setup process takes about 5-10 minutes. You'll be able to see live video from the doorbell in the app when setup is complete.`,
       },
       {
         title: 'Adjust motion sensitivity and notification settings',
@@ -212,7 +212,7 @@ export const guidesBatch14: Guide[] = [
       {
         title: 'Use CarPlay for calls and messages hands-free',
         content: `To make a phone call, tap the Phone icon on CarPlay and tap a contact, or say "Hey Siri, call Mom." The call plays through your car's speakers with your hands on the wheel. To listen to or reply to text messages, say "Hey Siri, read my messages" — Siri reads them and can send a spoken reply, all without touching your phone.`,
-        tip: 'Using your voice through Siri is the safest way to use CarPlay — you keep your eyes on the road and hands on the wheel. CarPlay is designed specifically for this purpose.',
+        tip: 'Using your voice through Siri is the safest way to use CarPlay. You keep your eyes on the road and hands on the wheel. CarPlay is designed specifically for this purpose.',
       },
     ],
   },
@@ -304,7 +304,7 @@ export const guidesBatch14: Guide[] = [
       {
         title: 'Cast from a streaming app on your phone',
         content: 'Open Netflix, YouTube, or another streaming app on your phone. Find the Cast icon — it looks like a rectangle with a WiFi symbol in the bottom left corner. Tap it. Your Chromecast will appear in the list — tap it. The video will appear on your TV screen. You can now control the video from your phone (play, pause, fast-forward) while your TV displays it.',
-        tip: `Once you've started casting, you can put your phone away or use it for other things. The video continues playing on your TV from the internet — you don't need to keep the app open on your phone.`,
+        tip: `Once you've started casting, you can put your phone away or use it for other things. The video continues playing on your TV from the internet. You don't need to keep the app open on your phone.`,
       },
       {
         title: 'Cast photos or music to your TV',
@@ -368,7 +368,7 @@ export const guidesBatch14: Guide[] = [
       },
       {
         title: 'View and share your screenshot',
-        content: `Tap the thumbnail in the bottom left corner right after taking the screenshot to open the markup editor — you can add arrows or text to highlight something. Tap "Done" to save it, or tap the Share icon to right away send it by text or email. If you don't tap the thumbnail, it disappears after a few seconds but is automatically saved to your Photos app in the "Recents" album.`,
+        content: `Tap the thumbnail in the bottom left corner right after taking the screenshot to open the markup editor. You can add arrows or text to highlight something. Tap "Done" to save it, or tap the Share icon to right away send it by text or email. If you don't tap the thumbnail, it disappears after a few seconds but is automatically saved to your Photos app in the "Recents" album.`,
       },
     ],
   },
@@ -410,7 +410,7 @@ export const guidesBatch14: Guide[] = [
   {
     slug: 'how-to-use-amazon-prime',
     title: 'How to Get the Most Out of Amazon Prime',
-    excerpt: `Amazon Prime is more than free shipping — it includes video streaming, photo storage, prescription savings, and more. Here's what you're already paying for.`,
+    excerpt: `Amazon Prime is more than free shipping. It includes video streaming, photo storage, prescription savings, and more. Here's what you're already paying for.`,
     category: 'app-guides',
     tags: ['amazon prime', 'amazon', 'streaming', 'prime video', 'shopping', 'benefits'],
     readTime: '5 min',
@@ -435,7 +435,7 @@ export const guidesBatch14: Guide[] = [
       {
         title: 'Read free books with Prime Reading',
         content: 'Prime includes "Prime Reading" — a rotating library of over 3,000 books, magazines, and comics available for free. Open the Kindle app (free download) or go to amazon.com/kindle and look for the "Prime Reading" category. Tap any book and tap "Read for Free." Books are delivered to your Kindle app or Kindle device instantly.',
-        tip: `The Kindle app is free and works on any iPhone, Android phone, iPad, or tablet — you don't need a physical Kindle device to read Kindle books.`,
+        tip: `The Kindle app is free and works on any iPhone, Android phone, iPad, or tablet. You don't need a physical Kindle device to read Kindle books.`,
       },
     ],
   },
@@ -454,7 +454,7 @@ export const guidesBatch14: Guide[] = [
     steps: [
       {
         title: 'Charge your Apple Watch and download the Watch app',
-        content: 'Place your Apple Watch on its magnetic charging cable before setup — it needs some battery charge to get started. On your iPhone, look for the "Watch" app (gray icon with an Apple Watch face). Open it and tap "Start Pairing." Hold your iPhone camera over the Apple Watch face — the Watch displays a pattern that your iPhone camera scans to begin pairing.',
+        content: 'Place your Apple Watch on its magnetic charging cable before setup. It needs some battery charge to get started. On your iPhone, look for the "Watch" app (gray icon with an Apple Watch face). Open it and tap "Start Pairing." Hold your iPhone camera over the Apple Watch face — the Watch displays a pattern that your iPhone camera scans to begin pairing.',
       },
       {
         title: 'Complete setup through the Watch app',
@@ -533,7 +533,7 @@ export const guidesBatch14: Guide[] = [
       {
         title: 'Try your first voice commands',
         content: `Say "Hey Google, what's the weather?" — your speaker will respond out loud. Other useful starters: "Hey Google, play relaxing music" — "Hey Google, set a timer for 20 minutes" — "Hey Google, how many cups in a quart?" — "Hey Google, tell me a fun fact" — "Hey Google, remind me to take my medication every day at 8 AM." The speaker uses the same Google Assistant as Android phones, so anything you can ask Google Assistant, you can ask it here.`,
-        tip: `Google Home devices can hear you from across the room even with some background noise — you don't need to be close to them or raise your voice.`,
+        tip: `Google Home devices can hear you from across the room even with some background noise. You don't need to be close to them or raise your voice.`,
       },
       {
         title: 'Link smart devices to control them with your voice',
@@ -595,7 +595,7 @@ export const guidesBatch14: Guide[] = [
       {
         title: 'Check your free credit score through your bank or credit card',
         content: 'Many banks and credit card companies now offer free credit score monitoring to their customers. Log in to your bank or credit card app and look for "Credit Score" or "FICO Score" in the app. Popular banks offering this include Chase (Credit Journey), Wells Fargo (Credit Close-Up), Capital One (CreditWise), and many credit unions. This score updates monthly and checking it does not affect your credit.',
-        tip: `CreditWise from Capital One is free to anyone — you don't need to be a Capital One customer. Download the app or go to creditwise.capitalone.com.`,
+        tip: `CreditWise from Capital One is free to anyone. You don't need to be a Capital One customer. Download the app or go to creditwise.capitalone.com.`,
       },
       {
         title: 'Understand what your credit score means',
@@ -651,7 +651,7 @@ export const guidesBatch14: Guide[] = [
     steps: [
       {
         title: 'Create a new note',
-        content: `Open the Notes app (yellow icon with white lines). Tap the compose button — a yellow square with a pencil — in the bottom right corner. A blank note opens with the keyboard ready. Type your note. The first line becomes the title. Tap "Done" when finished. Your note is saved automatically — you don't need to press a Save button.`,
+        content: `Open the Notes app (yellow icon with white lines). Tap the compose button — a yellow square with a pencil — in the bottom right corner. A blank note opens with the keyboard ready. Type your note. The first line becomes the title. Tap "Done" when finished. Your note is saved automatically. You don't need to press a Save button.`,
         tip: 'You can also quickly create a note by saying "Hey Siri, create a new note" or "Hey Siri, add milk to my grocery list."',
       },
       {

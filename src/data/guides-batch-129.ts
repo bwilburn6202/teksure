@@ -67,7 +67,7 @@ The good news: a single phrase will reveal the scam every time. This guide walks
     difficulty: 'Beginner',
     body: `Amazon Pharmacy is a fully licensed online pharmacy that delivers prescription medications to your door, often at prices a lot lower than CVS, Walgreens, or Walmart. It accepts most insurance plans (including Medicare Part D) and offers a separate discount program called RxPass for Prime members that includes many common generics for $5 per month total.
 
-Switching to Amazon Pharmacy does not mean giving up your current pharmacy — you can keep one prescription at Walgreens and have another at Amazon. There is no commitment. If a delivery does not arrive on time, Amazon's customer service handles it like any other Amazon order.
+Switching to Amazon Pharmacy does not mean giving up your current pharmacy. You can keep one prescription at Walgreens and have another at Amazon. There is no commitment. If a delivery does not arrive on time, Amazon's customer service handles it like any other Amazon order.
 
 The main considerations: delivery takes 3 to 5 days, so this works for ongoing medications you take daily, not for urgent prescriptions like antibiotics. And while Amazon's prices are often lower, comparing prices on GoodRx is still worthwhile for some medications.
 

@@ -128,7 +128,7 @@ export const guidesBatch322: Guide[] = [
     publishedAt: "2026-07-19",
     lastVerifiedAt: "2026-07-19",
     difficulty: "Beginner",
-    body: "Digital Wellbeing is a free tool built into most Android phones that shows exactly how much time you spend on your phone each day, broken down by app. It's a helpful way to notice habits you might not realize you have, like checking social media far more often than intended. And it includes simple tools to set daily limits if you'd like to cut back.\n\nUnlike third-party screen-time apps, Digital Wellbeing comes preinstalled on Android phones from Google, Samsung, and most other manufacturers, so there's nothing to download or pay for. It works entirely on your own phone and doesn't share your usage information with anyone else.\n\nThis feature can be especially useful for setting a 'Bedtime mode' that dims the screen and silences notifications at night, or for noticing if a particular app is taking up more time than expected. Everything in Digital Wellbeing is optional and adjustable — you can turn limits off just as easily as you turned them on. Source: support.google.com/android/answer/9346420.",
+    body: "Digital Wellbeing is a free tool built into most Android phones that shows exactly how much time you spend on your phone each day, broken down by app. It's a helpful way to notice habits you might not realize you have, like checking social media far more often than intended. And it includes simple tools to set daily limits if you'd like to cut back.\n\nUnlike third-party screen-time apps, Digital Wellbeing comes preinstalled on Android phones from Google, Samsung, and most other manufacturers, so there's nothing to download or pay for. It works entirely on your own phone and doesn't share your usage information with anyone else.\n\nThis feature can be especially useful for setting a 'Bedtime mode' that dims the screen and silences notifications at night, or for noticing if a particular app is taking up more time than expected. Everything in Digital Wellbeing is optional and adjustable. You can turn limits off just as easily as you turned them on. Source: support.google.com/android/answer/9346420.",
     steps: [
       {
         title: "Open Digital Wellbeing",
@@ -201,7 +201,7 @@ export const guidesBatch322: Guide[] = [
     publishedAt: "2026-07-19",
     lastVerifiedAt: "2026-07-19",
     difficulty: "Beginner",
-    body: "Autopay and auto-renewal are convenient because they mean you never miss a payment. But they can also lead to surprise charges when a free trial quietly turns into a paid subscription, or when a service raises its price without you noticing. Over time, small recurring charges from apps, streaming services, and subscription boxes can add up to a significant amount each month.\n\nBoth Apple and Google let you see every subscription tied to your account in one place, which makes it much easier to review what you're actually paying for and cancel anything you no longer use. Your bank or credit card statement is also a reliable way to spot recurring charges you may have forgotten about entirely.\n\nReviewing your subscriptions every few months is a simple habit that can save real money, and canceling an unwanted subscription doesn't require calling anyone or negotiating — it can almost always be done in a few taps. Source: consumer.ftc.gov/articles/negative-option-rule and support.apple.com/en-us/HT202039.",
+    body: "Autopay and auto-renewal are convenient because they mean you never miss a payment. But they can also lead to surprise charges when a free trial quietly turns into a paid subscription, or when a service raises its price without you noticing. Over time, small recurring charges from apps, streaming services, and subscription boxes can add up to a significant amount each month.\n\nBoth Apple and Google let you see every subscription tied to your account in one place, which makes it much easier to review what you're actually paying for and cancel anything you no longer use. Your bank or credit card statement is also a reliable way to spot recurring charges you may have forgotten about entirely.\n\nReviewing your subscriptions every few months is a simple habit that can save real money, and canceling an unwanted subscription doesn't require calling anyone or negotiating. It can almost always be done in a few taps. Source: consumer.ftc.gov/articles/negative-option-rule and support.apple.com/en-us/HT202039.",
     steps: [
       {
         title: "Review subscriptions on iPhone",
@@ -223,7 +223,7 @@ export const guidesBatch322: Guide[] = [
       {
         title: "Cancel directly through the app store, not the company",
         content: "To fully cancel a subscription billed through Apple or Google, use the Subscriptions screen described above rather than looking for a cancel option within the app itself, which sometimes only pauses notifications rather than stopping billing.",
-        warning: "Deleting an app from your phone does NOT cancel its subscription — you must cancel through Settings > Subscriptions (iPhone) or Play Store > Subscriptions (Android) first.",
+        warning: "Deleting an app from your phone does NOT cancel its subscription. You must cancel through Settings > Subscriptions (iPhone) or Play Store > Subscriptions (Android) first.",
       },
     ],
   },

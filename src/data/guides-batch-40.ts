@@ -77,7 +77,7 @@ Many news organizations, public figures, sports teams, and local businesses now 
       },
       {
         title: `Log in with your Instagram account`,
-        content: `Tap "Log in with Instagram." Enter your Instagram username and password. Threads will pull in your profile photo and bio automatically. You will be asked whether to follow the same people you follow on Instagram — you can say yes or skip it.`,
+        content: `Tap "Log in with Instagram." Enter your Instagram username and password. Threads will pull in your profile photo and bio automatically. You will be asked whether to follow the same people you follow on Instagram. You can say yes or skip it.`,
         tip: `If you do not have Instagram, you can create a new Threads account with just your email.`,
       },
       {
@@ -119,7 +119,7 @@ One popular feature: Peacock often streams live local NBC content, which is grea
       {
         title: `Create a free Peacock account`,
         content: `Go to peacocktv.com on your computer or phone. Click "Get Free." Enter your email address and create a password. You do not need a credit card for the free plan — click "Start Watching Free" when prompted.`,
-        tip: `Your existing NBC, Hulu, or Xfinity credentials will not work here — you need a separate Peacock account.`,
+        tip: `Your existing NBC, Hulu, or Xfinity credentials will not work here. You need a separate Peacock account.`,
       },
       {
         title: `Download Peacock on your device`,
@@ -248,7 +248,7 @@ The feature is built into WhatsApp and requires no separate download. If you hav
 
 This is perfect for airplane flights, road trips, camping, or any situation where you know you will not have reliable Wi-Fi. It is also helpful if you have a limited data plan and want to avoid using mobile data while streaming.
 
-Downloads are available on the Netflix app for iPhone, iPad, and Android. You cannot download to a computer through the browser — you need the mobile app.
+Downloads are available on the Netflix app for iPhone, iPad, and Android. You cannot download to a computer through the browser. You need the mobile app.
 
 Not every title on Netflix is available to download. Movies and shows with a download arrow icon (↓) next to them can be saved. Some content is only available to stream, not download, due to licensing agreements.
 
@@ -262,7 +262,7 @@ You need a Standard or Premium Netflix plan to use downloads. The Standard with 
       },
       {
         title: `Find a title to download`,
-        content: `Browse or search for a movie or TV series you want. On the detail page, look for a download icon — it looks like an arrow pointing down into a line (↓). If you see this icon, the title is available to download. Tap the icon to start downloading.`,
+        content: `Browse or search for a movie or TV series you want. On the detail page, look for a download icon. It looks like an arrow pointing down into a line (↓). If you see this icon, the title is available to download. Tap the icon to start downloading.`,
         tip: `For TV series, you can download individual episodes or tap "Download Season" to save an entire season at once.`,
       },
       {
@@ -277,7 +277,7 @@ You need a Standard or Premium Netflix plan to use downloads. The Standard with 
       {
         title: `Manage your downloaded content`,
         content: `To delete a download and free up storage space, go to Downloads → tap the pencil/edit icon → select the titles to delete → tap Delete. Netflix will show you how much storage your downloads are using.`,
-        tip: `Quick Tip: Download content before you travel so you have it ready — you cannot download once you are offline.`,
+        tip: `Quick Tip: Download content before you travel so you have it ready. You cannot download once you are offline.`,
       },
     ],
   },
@@ -308,7 +308,7 @@ A Disney+ subscription ($7.99/month with ads or $13.99/month without ads) is req
       },
       {
         title: `Find content to download`,
-        content: `Browse or search for a movie or TV show. On the title's detail page, look for a download button — it looks like a downward arrow or a cloud with an arrow. Tap it to start saving. For TV shows, you can download individual episodes or an entire season.`,
+        content: `Browse or search for a movie or TV show. On the title's detail page, look for a download button. It looks like a downward arrow or a cloud with an arrow. Tap it to start saving. For TV shows, you can download individual episodes or an entire season.`,
         tip: `Most Disney+ content is downloadable. You will see the download icon on nearly everything, including Marvel, Star Wars, Pixar, and animated classics.`,
       },
       {
@@ -345,7 +345,7 @@ To use offline downloads, you need a Spotify Premium subscription ($11.99/month 
 
 You can download playlists, albums, and podcasts — but not individual songs (you have to download the entire playlist or album they belong to). Spotify allows up to 10,000 songs downloaded across up to 5 devices.
 
-Downloaded content requires you to connect to the internet at least once every 30 days to verify your subscription. This is just a quick automatic check — you do not need to actively do anything.`,
+Downloaded content requires you to connect to the internet at least once every 30 days to verify your subscription. This is just a quick automatic check. You do not need to actively do anything.`,
     steps: [
       {
         title: `Confirm you have Spotify Premium`,
@@ -353,7 +353,7 @@ Downloaded content requires you to connect to the internet at least once every 3
       },
       {
         title: `Download a playlist or album`,
-        content: `Find a playlist or album you want to save. On its page, you will see a download toggle switch at the top — it looks like a down arrow with a circle around it. Toggle it ON (it turns green). Spotify will start downloading all the songs.`,
+        content: `Find a playlist or album you want to save. On its page, you will see a download toggle switch at the top. It looks like a down arrow with a circle around it. Toggle it ON (it turns green). Spotify will start downloading all the songs.`,
         tip: `Download over Wi-Fi to avoid using mobile data. Spotify can use quite a bit of data for large playlists.`,
       },
       {
@@ -394,7 +394,7 @@ Many people find that writing down where they plan to spend money — before spe
     steps: [
       {
         title: `Download and create a free account`,
-        content: `Search "EveryDollar" in the App Store or Google Play and install the free app. Tap "Create Account" and enter your email and a password. The basic version is completely free — you will be offered a premium trial but you can skip it.`,
+        content: `Search "EveryDollar" in the App Store or Google Play and install the free app. Tap "Create Account" and enter your email and a password. The basic version is completely free. You will be offered a premium trial but you can skip it.`,
       },
       {
         title: `Set up your income`,
@@ -430,7 +430,7 @@ Many people find that writing down where they plan to spend money — before spe
     difficulty: `Beginner`,
     body: `Noise-canceling headphones use tiny microphones and computer chips to detect the sounds around you and create opposing sound waves that cancel most of that noise out before it reaches your ears. The result: you hear much less background noise — traffic, airplane engines, conversations nearby — without having to turn your volume up loud.
 
-There are two types to know about. Active noise cancellation (ANC) is the tech described above — it uses electronics to block noise. Passive noise isolation is simpler: the physical fit of the headphones (especially in-ear designs) blocks some sound just by sealing your ear canal.
+There are two types to know about. Active noise cancellation (ANC) is the tech described above. It uses electronics to block noise. Passive noise isolation is simpler: the physical fit of the headphones (especially in-ear designs) blocks some sound just by sealing your ear canal.
 
 Good noise-canceling headphones are genuinely useful for:
 - Airplane and train travel
@@ -493,7 +493,7 @@ These settings apply across your entire iPhone — not just one app. Once you se
       {
         title: `Make all text larger`,
         content: `Go to Settings → Display & Brightness → Text Size. Drag the slider to the right to increase text size. The text preview at the top of the screen updates live so you can see exactly what each size looks like. Choose whatever feels comfortable to read.`,
-        tip: `Most people find text size 5 or 6 (out of 8) the most comfortable. Go bigger if you need to — there is no wrong answer.`,
+        tip: `Most people find text size 5 or 6 (out of 8) the most comfortable. Go bigger if you need to. There is no wrong answer.`,
       },
       {
         title: `Turn on Bold Text`,
@@ -501,7 +501,7 @@ These settings apply across your entire iPhone — not just one app. Once you se
       },
       {
         title: `Enable larger accessibility text sizes`,
-        content: `If the regular text size slider does not go big enough, go to Settings → Accessibility → Display & Text Size → Larger Text. Toggle "Larger Accessibility Sizes" ON. Now go back to Settings → Display & Brightness → Text Size and drag the slider — you will notice it now goes much further to the right for extra-large sizes.`,
+        content: `If the regular text size slider does not go big enough, go to Settings → Accessibility → Display & Text Size → Larger Text. Toggle "Larger Accessibility Sizes" ON. Now go back to Settings → Display & Brightness → Text Size and drag the slider. You will notice it now goes much further to the right for extra-large sizes.`,
       },
       {
         title: `Zoom the entire display`,
@@ -627,7 +627,7 @@ Here are the most useful changes in Android 15:
     thumbnailEmoji: ``,
     publishedAt: `2026-04-19`,
     difficulty: `Beginner`,
-    body: `Google Photos includes a feature called "Locked Folder" that works like a private vault for your most sensitive photos and videos. Content you move to the Locked Folder is hidden from your main Google Photos library, does not appear in search results, and does not sync to other devices — it stays only on your phone.
+    body: `Google Photos includes a feature called "Locked Folder" that works like a private vault for your most sensitive photos and videos. Content you move to the Locked Folder is hidden from your main Google Photos library, does not appear in search results, and does not sync to other devices. It stays only on your phone.
 
 To access the Locked Folder, you have to enter your fingerprint, face, or PIN. Without that, anyone who picks up your phone and opens Google Photos will not see those photos at all.
 
@@ -661,7 +661,7 @@ One important thing to know: photos in the Locked Folder are NOT backed up to th
       },
       {
         title: `Take photos directly to the Locked Folder`,
-        content: `Inside the Locked Folder, tap the camera icon to take a new photo or video that goes directly into the folder — it never appears in your main library at all. This is useful for photos you want to keep private from the start.`,
+        content: `Inside the Locked Folder, tap the camera icon to take a new photo or video that goes directly into the folder. It never appears in your main library at all. This is useful for photos you want to keep private from the start.`,
         tip: `Quick Tip: The Locked Folder does not appear when someone does a Google Photos backup review or connects your phone to a computer to browse photos.`,
       },
     ],
@@ -830,7 +830,7 @@ Galaxy AI features are available in Settings → Advanced Features → Samsung D
     difficulty: `Beginner`,
     body: `Stolen Device Protection is a security feature Apple added to iPhones with iOS 17.3 and later. It protects you from a specific type of theft that became common: thieves watch you enter your passcode in public, then steal your phone. Within minutes, they can change your Apple ID password, turn off Find My iPhone, and lock you out of your own account permanently.
 
-With Stolen Device Protection turned on, this attack no longer works. The feature requires Face ID or Touch ID (biometric authentication) for sensitive actions — there is no fallback to a passcode. Also, some of the most dangerous actions (like changing your Apple ID password or turning off Find My iPhone) have a built-in one-hour delay when your phone is in an unfamiliar location.
+With Stolen Device Protection turned on, this attack no longer works. The feature requires Face ID or Touch ID (biometric authentication) for sensitive actions. There is no fallback to a passcode. Also, some of the most dangerous actions (like changing your Apple ID password or turning off Find My iPhone) have a built-in one-hour delay when your phone is in an unfamiliar location.
 
 This means even if a thief has your passcode, they cannot instantly take over your account. The delay gives you time to log in from another device and remotely lock or wipe the stolen phone before the thief completes their attack.
 
@@ -936,7 +936,7 @@ Banks typically reimburse fraud losses if you report them quickly — most requi
       {
         title: `Enable two-factor authentication`,
         content: `Log into your bank's website or app. Go to Security Settings (look in Account, Profile, or Settings). Enable "Two-Step Verification," "Login Alerts," or "Two-Factor Authentication." Your bank will text you a code each time you log in from a new device — this stops attackers even if they have your password.`,
-        tip: `Quick Tip: If your bank offers an authenticator app option (like Google Authenticator) in addition to SMS codes, choose that — it is more secure because a thief cannot intercept it by stealing your phone number.`,
+        tip: `Quick Tip: If your bank offers an authenticator app option (like Google Authenticator) in addition to SMS codes, choose that. It is more secure because a thief cannot intercept it by stealing your phone number.`,
       },
       {
         title: `Use the official bank app`,
@@ -946,7 +946,7 @@ Banks typically reimburse fraud losses if you report them quickly — most requi
       {
         title: `Never trust unexpected bank messages`,
         content: `Legitimate banks will never call you unsolicited asking for your account password, full Social Security number, or one-time verification code. If you receive a call, email, or text claiming to be from your bank asking for sensitive information — hang up or ignore it. Call the number on the back of your debit card to verify any real issues.`,
-        tip: `Your bank already knows your account number — they will never call and ask you to confirm it to "verify your identity."`,
+        tip: `Your bank already knows your account number. They will never call and ask you to confirm it to "verify your identity."`,
       },
       {
         title: `Review your account weekly`,

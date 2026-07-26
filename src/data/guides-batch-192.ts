@@ -119,7 +119,7 @@ export const guidesBatch192: Guide[] = [
       },
       {
         title: "Track parking, tolls, and overnight travel",
-        content: "If you pay for parking or tolls during a volunteer trip, save those receipts too — they are deductible on top of the 14-cent mileage rate. For overnight volunteer trips (mission trips, Habitat builds), keep all hotel and meal receipts. The trip must be primarily for volunteer work, not a vacation with a few volunteer hours mixed in.",
+        content: "If you pay for parking or tolls during a volunteer trip, save those receipts too. They are deductible on top of the 14-cent mileage rate. For overnight volunteer trips (mission trips, Habitat builds), keep all hotel and meal receipts. The trip must be primarily for volunteer work, not a vacation with a few volunteer hours mixed in.",
         warning: "Do not claim mileage if the nonprofit reimburses you for gas. You can only deduct expenses you actually paid for yourself.",
       },
       {
@@ -176,7 +176,7 @@ export const guidesBatch192: Guide[] = [
       },
       {
         title: "Attend the in-person interview and orientation",
-        content: "The local sponsor will invite you to an interview after reviewing your application. Bring your driver's license, Social Security card, and proof of income (tax return or benefit letter) if you are applying for a stipend program. Most offices schedule new-volunteer orientation once a month — it lasts about three hours and covers safety rules, paperwork, and how to log your hours.",
+        content: "The local sponsor will invite you to an interview after reviewing your application. Bring your driver's license, Social Security card, and proof of income (tax return or benefit letter) if you are applying for a stipend program. Most offices schedule new-volunteer orientation once a month. It lasts about three hours and covers safety rules, paperwork, and how to log your hours.",
         warning: "Do not pay any fee to apply. AmeriCorps Seniors is a federal program and the application is always free. Anyone asking for a fee is running a scam.",
       },
       {

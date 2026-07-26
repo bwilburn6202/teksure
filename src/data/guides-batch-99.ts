@@ -23,7 +23,7 @@ Before the day of your visit, plan to do a short test run. Find a quiet spot wit
 
 Costs are usually the same as a regular office visit: whatever your normal copay is, you will pay that. Telehealth visits are billed through your insurance just like in-person care. If you are on Medicare, most video visits are covered through at least 2026 under the extended rules passed by Congress.
 
-One common hiccup: people click the link too early and land on a blank page, or too late and the doctor is already waiting. Join about 5 minutes before your scheduled time. If something goes wrong, call the clinic's regular phone number — they will usually switch you to a phone appointment instead so you do not lose your slot.`,
+One common hiccup: people click the link too early and land on a blank page, or too late and the doctor is already waiting. Join about 5 minutes before your scheduled time. If something goes wrong, call the clinic's regular phone number. They will usually switch you to a phone appointment instead so you do not lose your slot.`,
     steps: [
       {
         title: 'Confirm the appointment and write down the details',
@@ -70,7 +70,7 @@ One common hiccup: people click the link too early and land on a blank page, or 
     difficulty: 'Beginner',
     body: `Zoom is one of the most common ways to have a video call in the United States. Grandchildren use it to stay in touch, book clubs use it to meet, and many doctors use it for telehealth visits. Once you have joined a few times, it will feel as familiar as answering your phone.
 
-You do not need a Zoom account to join a call somebody else set up — you only need the link or the nine-digit meeting ID they share with you. Zoom is free for these kinds of calls. If you want to host your own meeting longer than 40 minutes, that needs a paid plan, but most family calls are well under that.
+You do not need a Zoom account to join a call somebody else set up. You only need the link or the nine-digit meeting ID they share with you. Zoom is free for these kinds of calls. If you want to host your own meeting longer than 40 minutes, that needs a paid plan, but most family calls are well under that.
 
 Zoom works on almost any device: iPhone, iPad, Android phone, Android tablet, Windows computer, or Mac. The first time you join, your device will ask to download the Zoom app. Say yes — it is safe and free. And it comes from the official Zoom company.
 
@@ -127,13 +127,13 @@ Before you start, make sure your old phone is charged up to at least 50%. If you
 
 You will also need your Apple ID and password handy. That is the email address you use for the App Store and iCloud. If you cannot remember the password, take a moment to reset it at appleid.apple.com before you start the setup — trying to reset it in the middle of setup is frustrating.
 
-Your carrier (Verizon, AT&T, or T-Mobile) may have already put the SIM card in the phone, or they may have activated it as an "eSIM" that transfers over automatically. If the new phone shows "No Service" after setup, call your carrier's customer service line — they can usually fix it in a few minutes.
+Your carrier (Verizon, AT&T, or T-Mobile) may have already put the SIM card in the phone, or they may have activated it as an "eSIM" that transfers over automatically. If the new phone shows "No Service" after setup, call your carrier's customer service line. They can usually fix it in a few minutes.
 
 One tip that saves heartache: when the phone asks about Face ID, iCloud Backup, and Find My iPhone, say yes to all three. Face ID unlocks the phone with your face so you do not have to type a passcode every time. iCloud Backup makes a copy of your photos and contacts in case the phone is lost. Find My iPhone helps you locate the phone if you misplace it.`,
     steps: [
       {
         title: 'Charge the phone and find your Wi-Fi password',
-        content: 'Plug the new iPhone into its charger for 15 minutes before you start. Write down your home Wi-Fi network name and password on a piece of paper — you will need to type it in during setup.',
+        content: 'Plug the new iPhone into its charger for 15 minutes before you start. Write down your home Wi-Fi network name and password on a piece of paper. You will need to type it in during setup.',
       },
       {
         title: 'Turn on the phone and pick your language',
@@ -182,7 +182,7 @@ If you are moving from another Android phone or an iPhone, the new phone can cop
 
 One thing to watch for: during setup, the phone will ask a lot of yes-or-no questions about things like location, personalized ads, and sending usage data to Google. It is fine to say "no" or "skip" to any of these you are not sure about. None of them are required to use the phone.
 
-If your carrier (Verizon, AT&T, or T-Mobile) already transferred your phone number, you should see signal bars within a few minutes of finishing setup. If not, call the carrier's customer service — they can usually fix it over the phone in under 10 minutes.`,
+If your carrier (Verizon, AT&T, or T-Mobile) already transferred your phone number, you should see signal bars within a few minutes of finishing setup. If not, call the carrier's customer service. They can usually fix it over the phone in under 10 minutes.`,
     steps: [
       {
         title: 'Plug in and power on',
@@ -206,7 +206,7 @@ If your carrier (Verizon, AT&T, or T-Mobile) already transferred your phone numb
       },
       {
         title: 'Set a screen lock',
-        content: 'Choose a PIN (4 to 6 numbers), pattern, or password. Write the PIN down in a safe place. If your phone has a fingerprint sensor or face unlock, set that up too — it makes daily use much easier.',
+        content: 'Choose a PIN (4 to 6 numbers), pattern, or password. Write the PIN down in a safe place. If your phone has a fingerprint sensor or face unlock, set that up too. It makes daily use much easier.',
       },
       {
         title: 'Finish the privacy choices',
@@ -227,7 +227,7 @@ If your carrier (Verizon, AT&T, or T-Mobile) already transferred your phone numb
     thumbnailEmoji: '',
     publishedAt: '2026-04-21',
     difficulty: 'Beginner',
-    body: `Taking a screenshot means making a picture of whatever is on your screen right now. It is one of the most useful skills on a computer — it lets you show a grandchild exactly what error message you are seeing, save a confirmation number from a purchase, or keep a copy of a recipe that might disappear from a website later.
+    body: `Taking a screenshot means making a picture of whatever is on your screen right now. It is one of the most useful skills on a computer. It lets you show a grandchild exactly what error message you are seeing, save a confirmation number from a purchase, or keep a copy of a recipe that might disappear from a website later.
 
 On a Mac, screenshots are built in. You do not need to download anything. There are three main shortcuts to remember. And they all start by holding down Shift and the Command key together (Command is the key with the little looped square symbol, right next to the space bar).
 
@@ -276,7 +276,7 @@ One thing that trips people up: the shortcuts use numbers across the top of the 
 
 The Echo speaker is always listening for the word "Alexa" (or "Amazon" or "Computer" if you changed the wake word). She does not record what you say until she hears her name. Then a blue light ring on top of the speaker turns on, which means she is paying attention. When the blue light goes off, she is done listening.
 
-To set up a new Echo, you plug it into the wall and use the free Alexa app on your phone to connect it to your Wi-Fi. That takes about 10 minutes. After that, most of what you do with Alexa is spoken out loud — you rarely need to open the app again.
+To set up a new Echo, you plug it into the wall and use the free Alexa app on your phone to connect it to your Wi-Fi. That takes about 10 minutes. After that, most of what you do with Alexa is spoken out loud. You rarely need to open the app again.
 
 Alexa is free to use after you buy the speaker. Some features like Amazon Music and certain audiobooks need a subscription, but the basics — weather, timers, news, calls to other Echo owners — cost nothing extra. A standard Echo Dot speaker costs about $50 and often goes on sale for around $25.
 
@@ -325,7 +325,7 @@ A common worry is privacy. You can review and delete everything Alexa has ever h
     thumbnailEmoji: '',
     publishedAt: '2026-04-21',
     difficulty: 'Beginner',
-    body: `Apple Maps is the free map and directions app that comes pre-installed on every iPhone and iPad. You do not need to download anything or sign up for an account — it is already there, with the colorful folded-map icon on your home screen.
+    body: `Apple Maps is the free map and directions app that comes pre-installed on every iPhone and iPad. You do not need to download anything or sign up for an account. It is already there, with the colorful folded-map icon on your home screen.
 
 Apple Maps can do three main things: find a place (like "Walgreens near me"), give you directions from where you are to somewhere else, and show you what a place looks like before you go. It works for driving, walking, public transit, and cycling. A friendly voice reads each turn out loud so you do not have to look at the screen while driving.
 
@@ -494,7 +494,7 @@ The scam almost always follows the same pattern. A friendly stranger or someone 
 
 Warning signs are consistent. Real investment advisors do not message strangers on Facebook. They do not promise high returns with no risk. They do not pressure you to act fast. They do not ask to be paid in cryptocurrency, gift cards, or wire transfers. Anyone who does any of these things is running a scam, even if they have a nice photo and a big smile.
 
-Another red flag is being asked to download a special app to "see your portfolio grow." These apps are fake — they show made-up numbers to convince you the investment is real. Once the scammers have your money, the app stops working or they block you.
+Another red flag is being asked to download a special app to "see your portfolio grow." These apps are fake. They show made-up numbers to convince you the investment is real. Once the scammers have your money, the app stops working or they block you.
 
 If you think you have been scammed or someone is trying, do not feel embarrassed — this happens to smart people every day. Report it to the FTC at ReportFraud.ftc.gov, to the FBI at IC3.gov, and to your state attorney general's office. If money was sent from your bank, call the bank's fraud line right away — some transfers can be reversed if caught fast enough.`,
     steps: [
@@ -543,7 +543,7 @@ The most popular brands in the US are Samsung, LG, Sony, TCL, Hisense, Vizio, an
 
 Before you start, put the TV where you want it permanently and make sure the power cord reaches the outlet. Open the box carefully — the TV is heavy and the screen is fragile, so have someone else help you lift it. Do not touch the screen with your fingers. A soft dry cloth is the only thing that should touch it.
 
-You will need a few things: your Wi-Fi network name and password, the passwords for any streaming services you subscribe to (like Netflix or Prime Video), and the remote that came with the TV. Make sure the remote has fresh batteries — they usually come in the box separately.
+You will need a few things: your Wi-Fi network name and password, the passwords for any streaming services you subscribe to (like Netflix or Prime Video), and the remote that came with the TV. Make sure the remote has fresh batteries. They usually come in the box separately.
 
 Most smart TVs also want you to create or sign in to a free account with the TV maker (Samsung, LG, etc.) during setup. This is optional for most features. If you want to skip it, look for a "Skip" or "Maybe later" button. You can always add the account later under Settings.`,
     steps: [
@@ -602,7 +602,7 @@ Refilling a prescription through the app is the most popular feature. Instead of
 
 Another helpful feature is the medication reminder. You can set the app to buzz or chime at 8 AM and 8 PM (or whenever) to remind you to take a pill. This is especially useful if you take several medications at different times of day. The app can also show you a photo of each pill so you know you have the right one.
 
-Be careful about giving the app permission to access your location and notifications. These permissions are useful (for store hours and refill alerts), but always look at what you are agreeing to. Never type your full Social Security number into a pharmacy app — they do not need it. Your account is tied to your name, date of birth, and the phone number on file at the pharmacy.`,
+Be careful about giving the app permission to access your location and notifications. These permissions are useful (for store hours and refill alerts), but always look at what you are agreeing to. Never type your full Social Security number into a pharmacy app. They do not need it. Your account is tied to your name, date of birth, and the phone number on file at the pharmacy.`,
     steps: [
       {
         title: 'Download the right app for your pharmacy',
@@ -649,7 +649,7 @@ Be careful about giving the app permission to access your location and notificat
     difficulty: 'Beginner',
     body: `MyChart is the online patient portal used by many hospitals and doctors' offices in the United States. It is where you can message your doctor with a question, see the results of blood tests, request a prescription refill, book appointments, and read your after-visit summary — all from your phone or computer.
 
-MyChart is made by a company called Epic. But you do not sign up at Epic's website. Instead, your specific clinic or hospital system (like UCLA Health, Cleveland Clinic, or your local hospital) has its own version of MyChart. You sign up through their website. The app on your phone, however, is the same for every system — you search for "MyChart" in the app store, install it, and then pick your healthcare organization from a list.
+MyChart is made by a company called Epic. But you do not sign up at Epic's website. Instead, your specific clinic or hospital system (like UCLA Health, Cleveland Clinic, or your local hospital) has its own version of MyChart. You sign up through their website. The app on your phone, however, is the same for every system. You search for "MyChart" in the app store, install it, and then pick your healthcare organization from a list.
 
 The first time you sign up, you will need either an activation code from your doctor's office (printed on a recent visit summary or at the front desk) or a way to prove your identity by matching personal information already on file. Once you are in, you can link multiple providers — so if you see a cardiologist at one hospital and a family doctor at another, both may appear in the same MyChart app.
 
@@ -900,7 +900,7 @@ The best defense is a simple rule: if a call demands urgency, money, or secrecy 
       },
       {
         title: 'Report the scam to the FTC and IC3',
-        content: 'File a report at ReportFraud.ftc.gov. If you lost money or sent anything, also file at IC3.gov (FBI Internet Crime Complaint Center). Reports help investigators shut down scam operations — they truly do make a difference.',
+        content: 'File a report at ReportFraud.ftc.gov. If you lost money or sent anything, also file at IC3.gov (FBI Internet Crime Complaint Center). Reports help investigators shut down scam operations. They truly do make a difference.',
       },
     ],
     sourceName: 'FTC Consumer Advice — How To Avoid a Government Impersonation Scam',
@@ -970,7 +970,7 @@ The emotional side of this is the hardest part. People who have been scammed oft
     thumbnailEmoji: '',
     publishedAt: '2026-04-21',
     difficulty: 'Beginner',
-    body: `Google Meet is Google's video call service. If you have a Gmail account, you already have Google Meet — there is nothing extra to sign up for. It works much like Zoom: someone sends you a link, you tap it. And you land in a video call with everyone else who was invited.
+    body: `Google Meet is Google's video call service. If you have a Gmail account, you already have Google Meet. There is nothing extra to sign up for. It works much like Zoom: someone sends you a link, you tap it. And you land in a video call with everyone else who was invited.
 
 Google Meet is free for calls up to 60 minutes with up to 100 people. That covers almost every family call, book club, or small meeting you would ever have. Longer meetings or larger groups are possible with a paid Google Workspace plan, but the free version is more than enough for regular use.
 
@@ -990,7 +990,7 @@ The controls look the same on every device. A microphone icon at the bottom to m
       },
       {
         title: 'Sign in with your Google account',
-        content: 'On a phone, you may be asked to pick which Google account to use. Tap your Gmail address. If you have no Google account, tap Create account and follow the steps — it takes about 5 minutes and is free.',
+        content: 'On a phone, you may be asked to pick which Google account to use. Tap your Gmail address. If you have no Google account, tap Create account and follow the steps. It takes about 5 minutes and is free.',
       },
       {
         title: 'Allow camera and microphone access',
@@ -998,7 +998,7 @@ The controls look the same on every device. A microphone icon at the bottom to m
       },
       {
         title: 'Tap the blue Join button',
-        content: 'You will see a preview of yourself before joining. If you look good, tap the blue "Join now" button. Some meetings require the host to let you in — you will wait a few seconds until they tap Admit.',
+        content: 'You will see a preview of yourself before joining. If you look good, tap the blue "Join now" button. Some meetings require the host to let you in. You will wait a few seconds until they tap Admit.',
       },
       {
         title: 'Mute and unmute as needed',
@@ -1030,7 +1030,7 @@ You can wake Siri up two ways. The hands-free way is to say "Hey Siri" or (on ne
 
 The first time you set up your iPhone, you are asked to train Siri by saying a few phrases so she recognizes your voice. If you skipped this, you can turn it on later in Settings > Siri & Search > Listen for "Hey Siri." Training takes about 2 minutes.
 
-Siri works best with simple, direct commands. "Call Mary." "Set a timer for 10 minutes." "What's the weather tomorrow?" "Remind me to take my pills at 8 PM." Longer, complicated sentences sometimes confuse her. If Siri does not understand, the screen shows what she thought you said — you can correct it by tapping and fixing the text.
+Siri works best with simple, direct commands. "Call Mary." "Set a timer for 10 minutes." "What's the weather tomorrow?" "Remind me to take my pills at 8 PM." Longer, complicated sentences sometimes confuse her. If Siri does not understand, the screen shows what she thought you said. You can correct it by tapping and fixing the text.
 
 Siri can also read your text messages and emails out loud when you have a Bluetooth headset in or are connected to your car. This makes catching up on messages while driving safer and easier. Ask "Read my latest messages" and she reads them to you, then asks if you want to reply.`,
     steps: [

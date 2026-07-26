@@ -24,7 +24,7 @@ export const guidesBatch191: Guide[] = [
       },
       {
         title: "Wash your hands with warm, soapy water",
-        content: "Wash for about 20 seconds, then dry completely. Soap residue or food on your fingers can throw off the reading by a lot. Skip alcohol wipes if you can — they dry out the skin and can sting. Warm water also brings blood closer to the surface so the prick hurts less.",
+        content: "Wash for about 20 seconds, then dry completely. Soap residue or food on your fingers can throw off the reading by a lot. Skip alcohol wipes if you can. They dry out the skin and can sting. Warm water also brings blood closer to the surface so the prick hurts less.",
       },
       {
         title: "Load a test strip into the meter",
@@ -37,7 +37,7 @@ export const guidesBatch191: Guide[] = [
       },
       {
         title: "Touch the drop to the test strip",
-        content: "Bring the edge of the test strip to the drop of blood. The strip pulls the blood in by itself — you do not press the strip into your finger. The meter beeps or shows a countdown for about 5 seconds, then displays your number in mg/dL.",
+        content: "Bring the edge of the test strip to the drop of blood. The strip pulls the blood in by itself. You do not press the strip into your finger. The meter beeps or shows a countdown for about 5 seconds, then displays your number in mg/dL.",
         warning: "If the meter shows an error or the number looks wrong, wash your hands again and retest with a fresh strip before acting on it.",
       },
       {
@@ -102,7 +102,7 @@ export const guidesBatch191: Guide[] = [
     publishedAt: "2026-05-08",
     lastVerifiedAt: "2026-05-08",
     difficulty: "Intermediate",
-    body: "A continuous glucose monitor, or CGM, is a small sensor you wear on your arm or belly that reads your blood sugar every few minutes and sends the number straight to your phone. No finger sticks, no pricking — you can check your level by glancing at your watch. For people with diabetes, this has changed the day-to-day experience of managing the disease.\n\nThree main brands sell CGMs to home users in the United States as of 2026: the Dexcom G7, the Abbott Freestyle Libre 3 Plus, and the Senseonics Eversense 365. Each one has trade-offs in price, sensor life, app quality, and how often you need to replace the part on your skin.\n\nThe Dexcom G7 is small (about the size of three stacked nickels) and lasts 10 days per sensor. It sends a reading every 5 minutes and has alarms that wake you up if your sugar drops at night. Most pharmacies stock it, and Medicare covers it for anyone who takes insulin or has had a serious low in the past year.\n\nThe Freestyle Libre 3 Plus is the thinnest sensor on the market and lasts 15 days, which means fewer replacements and a lower yearly cost. It sends a reading every minute. It used to require you to scan it with your phone, but the newer Plus version sends data automatically like the Dexcom does.\n\nThe Eversense 365 is different — a doctor inserts a small sensor under the skin of your upper arm. And it lasts a full year before replacement. You wear a removable patch on top that you can take off for showers or swimming. It costs more upfront but is the only option if you do not want to change a sensor every two weeks.\n\nMedicare covers all three for people who take insulin daily, and most private insurance does too. Without insurance, expect to pay $200 to $400 a month out of pocket. Talk with your doctor about which one fits your routine.",
+    body: "A continuous glucose monitor, or CGM, is a small sensor you wear on your arm or belly that reads your blood sugar every few minutes and sends the number straight to your phone. No finger sticks, no pricking. You can check your level by glancing at your watch. For people with diabetes, this has changed the day-to-day experience of managing the disease.\n\nThree main brands sell CGMs to home users in the United States as of 2026: the Dexcom G7, the Abbott Freestyle Libre 3 Plus, and the Senseonics Eversense 365. Each one has trade-offs in price, sensor life, app quality, and how often you need to replace the part on your skin.\n\nThe Dexcom G7 is small (about the size of three stacked nickels) and lasts 10 days per sensor. It sends a reading every 5 minutes and has alarms that wake you up if your sugar drops at night. Most pharmacies stock it, and Medicare covers it for anyone who takes insulin or has had a serious low in the past year.\n\nThe Freestyle Libre 3 Plus is the thinnest sensor on the market and lasts 15 days, which means fewer replacements and a lower yearly cost. It sends a reading every minute. It used to require you to scan it with your phone, but the newer Plus version sends data automatically like the Dexcom does.\n\nThe Eversense 365 is different — a doctor inserts a small sensor under the skin of your upper arm. And it lasts a full year before replacement. You wear a removable patch on top that you can take off for showers or swimming. It costs more upfront but is the only option if you do not want to change a sensor every two weeks.\n\nMedicare covers all three for people who take insulin daily, and most private insurance does too. Without insurance, expect to pay $200 to $400 a month out of pocket. Talk with your doctor about which one fits your routine.",
     steps: [
       {
         title: "Check what your insurance will cover",
@@ -115,11 +115,11 @@ export const guidesBatch191: Guide[] = [
       },
       {
         title: "Compare the phone apps",
-        content: "Dexcom and Libre both have free apps for iPhone and Android. The Dexcom Clarity app shares your numbers with up to 10 family members in real time, which is helpful if a grown child wants to keep an eye on you. The Libre app has clean charts but fewer sharing options. Try downloading both apps before you buy — you can preview the screens.",
+        content: "Dexcom and Libre both have free apps for iPhone and Android. The Dexcom Clarity app shares your numbers with up to 10 family members in real time, which is helpful if a grown child wants to keep an eye on you. The Libre app has clean charts but fewer sharing options. Try downloading both apps before you buy. You can preview the screens.",
       },
       {
         title: "Think about alarms and sleep",
-        content: "All three CGMs can wake you up with a phone alarm if your sugar drops overnight. Dexcom has the loudest, most customizable alarms — you can set different sounds for high vs low. If you sleep heavily or live alone, this matters more than features like styling.",
+        content: "All three CGMs can wake you up with a phone alarm if your sugar drops overnight. Dexcom has the loudest, most customizable alarms. You can set different sounds for high vs low. If you sleep heavily or live alone, this matters more than features like styling.",
       },
       {
         title: "Ask your doctor for a prescription",
@@ -131,7 +131,7 @@ export const guidesBatch191: Guide[] = [
       },
       {
         title: "Plan for replacements before you run out",
-        content: "Set a reminder on your phone to reorder sensors a week before the current one expires. Pharmacies sometimes run short, and sensors are not interchangeable between brands — you will need to wait if your refill is late. Auto-refill programs at chain pharmacies help avoid gaps.",
+        content: "Set a reminder on your phone to reorder sensors a week before the current one expires. Pharmacies sometimes run short, and sensors are not interchangeable between brands. You will need to wait if your refill is late. Auto-refill programs at chain pharmacies help avoid gaps.",
       },
     ],
   },
@@ -146,7 +146,7 @@ export const guidesBatch191: Guide[] = [
     publishedAt: "2026-05-08",
     lastVerifiedAt: "2026-05-08",
     difficulty: "Beginner",
-    body: "The Health app on your iPhone is a free tool from Apple that comes pre-installed on every iPhone. It has a section called Blood Glucose where you can type in each reading from your meter, or pull readings in from a continuous glucose monitor. Once a few weeks of numbers are in there, the app draws a chart that shows your patterns at a glance — exactly the kind of picture your doctor wants to see.\n\nThe app is on the home screen as a white square with a red heart in the corner. If you cannot find it, swipe down on the home screen and type \"Health\" into the search bar at the top. Apple does not let you delete this app. So it is always there somewhere.\n\nYou do not need an Apple Watch or any other gear to use it. A plain iPhone running iOS 17 or newer works. The app is free, and Apple does not sell or share your health data — it stays on your phone unless you choose to share it.\n\nThere are three ways to get glucose readings into the app. The first is to type each one in by hand, which works fine if you test two or three times a day. The second is to scan a paper logbook with the camera and let the app read the numbers (a feature added in iOS 18). The third, and easiest, is to pair a Bluetooth meter or CGM and let it send the numbers automatically.\n\nOnce you have a few weeks of data, tap the Browse tab, then Blood Glucose. And you will see a graph of your readings over the past day, week, month, or year. The graph color-codes each dot: green for in range, yellow for borderline, red for too high or low. You can tap Share with Doctor to send a PDF straight to your patient portal or email.",
+    body: "The Health app on your iPhone is a free tool from Apple that comes pre-installed on every iPhone. It has a section called Blood Glucose where you can type in each reading from your meter, or pull readings in from a continuous glucose monitor. Once a few weeks of numbers are in there, the app draws a chart that shows your patterns at a glance — exactly the kind of picture your doctor wants to see.\n\nThe app is on the home screen as a white square with a red heart in the corner. If you cannot find it, swipe down on the home screen and type \"Health\" into the search bar at the top. Apple does not let you delete this app. So it is always there somewhere.\n\nYou do not need an Apple Watch or any other gear to use it. A plain iPhone running iOS 17 or newer works. The app is free, and Apple does not sell or share your health data. It stays on your phone unless you choose to share it.\n\nThere are three ways to get glucose readings into the app. The first is to type each one in by hand, which works fine if you test two or three times a day. The second is to scan a paper logbook with the camera and let the app read the numbers (a feature added in iOS 18). The third, and easiest, is to pair a Bluetooth meter or CGM and let it send the numbers automatically.\n\nOnce you have a few weeks of data, tap the Browse tab, then Blood Glucose. And you will see a graph of your readings over the past day, week, month, or year. The graph color-codes each dot: green for in range, yellow for borderline, red for too high or low. You can tap Share with Doctor to send a PDF straight to your patient portal or email.",
     steps: [
       {
         title: "Open the Health app and find Blood Glucose",

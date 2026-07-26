@@ -23,7 +23,7 @@ export const guidesBatch39: Guide[] = [
       },
       {
         title: 'Start a conversation',
-        content: `Tap the pencil icon (or "New Message") to start a chat. Signal shows which of your existing contacts also use Signal — these contacts will have a small Signal logo next to their name. Tap a contact's name to open a chat. Type your message and tap Send. It looks like a regular text conversation. Messages sent between two Signal users are automatically encrypted — you do not need to turn anything on.`,
+        content: `Tap the pencil icon (or "New Message") to start a chat. Signal shows which of your existing contacts also use Signal — these contacts will have a small Signal logo next to their name. Tap a contact's name to open a chat. Type your message and tap Send. It looks like a regular text conversation. Messages sent between two Signal users are automatically encrypted. You do not need to turn anything on.`,
       },
       {
         title: 'Make encrypted voice and video calls',
@@ -51,7 +51,7 @@ export const guidesBatch39: Guide[] = [
     steps: [
       {
         title: 'Use the PhotoScan app by Google (recommended)',
-        content: `Google PhotoScan is a free app (App Store and Google Play) designed specifically to photograph printed photos without glare or reflection. Open the app and point it at a photo lying flat on a table. The app guides you to take 4 quick shots at different angles — it then automatically stitches them together to eliminate the glare you would get from a single camera shot. The result is a clean, flat, high-resolution digital copy. Tap "Save" and the image goes directly to your Google Photos library.`,
+        content: `Google PhotoScan is a free app (App Store and Google Play) designed specifically to photograph printed photos without glare or reflection. Open the app and point it at a photo lying flat on a table. The app guides you to take 4 quick shots at different angles. It then automatically stitches them together to eliminate the glare you would get from a single camera shot. The result is a clean, flat, high-resolution digital copy. Tap "Save" and the image goes directly to your Google Photos library.`,
         tip: `Good lighting matters most. Scan near a window with indirect daylight, or under bright overhead lights. Avoid direct sunlight falling on the photo, which creates harsh glare.`,
       },
       {
@@ -60,11 +60,11 @@ export const guidesBatch39: Guide[] = [
       },
       {
         title: 'Organize scans into Google Photos albums',
-        content: `After scanning, open Google Photos and create albums to keep your digitized photos organized. Tap "Library" → "+" → "New album." Name it something like "Mom's 1970s Photos" or "Grandma Miller." Select the scanned photos and add them to the album. Then share the album with family members by tapping "Share" inside the album — they get a link to view and download all the photos. No social media account needed.`,
+        content: `After scanning, open Google Photos and create albums to keep your digitized photos organized. Tap "Library" → "+" → "New album." Name it something like "Mom's 1970s Photos" or "Grandma Miller." Select the scanned photos and add them to the album. Then share the album with family members by tapping "Share" inside the album. They get a link to view and download all the photos. No social media account needed.`,
       },
       {
         title: 'For large batches, consider a mail-in scanning service',
-        content: `If you have hundreds or thousands of printed photos, consider a professional scanning service. ScanMyPhotos.com and Legacybox are well-known mail-in services — you box up your photos, mail them, and receive them back with digital files on a USB drive or in a cloud download. Prices range from about $50 for 50 photos to a few hundred dollars for large collections. These services are legitimate and return your originals undamaged.`,
+        content: `If you have hundreds or thousands of printed photos, consider a professional scanning service. ScanMyPhotos.com and Legacybox are well-known mail-in services. You box up your photos, mail them, and receive them back with digital files on a USB drive or in a cloud download. Prices range from about $50 for 50 photos to a few hundred dollars for large collections. These services are legitimate and return your originals undamaged.`,
         tip: `Before mailing originals to any service, photograph every photo with your phone first as a backup. Also ask whether the service has insurance for lost or damaged originals.`,
       },
     ],
@@ -84,7 +84,7 @@ export const guidesBatch39: Guide[] = [
     steps: [
       {
         title: 'Use Smallpdf.com to compress a PDF online',
-        content: `On any device, open a browser and go to smallpdf.com. Click "Compress PDF" on the home screen. Click "Choose File" and select your PDF from your phone or computer. Smallpdf compresses the file automatically. When finished, click "Download." The downloaded file will have "compressed" in the name. Smallpdf is free for occasional use — it processes your file and then deletes it from its servers after one hour.`,
+        content: `On any device, open a browser and go to smallpdf.com. Click "Compress PDF" on the home screen. Click "Choose File" and select your PDF from your phone or computer. Smallpdf compresses the file automatically. When finished, click "Download." The downloaded file will have "compressed" in the name. Smallpdf is free for occasional use. It processes your file and then deletes it from its servers after one hour.`,
         tip: `Smallpdf also has a mobile app if you prefer to keep everything on your phone. The free version handles most everyday compression tasks.`,
       },
       {
@@ -181,7 +181,7 @@ export const guidesBatch39: Guide[] = [
     steps: [
       {
         title: 'Choose between Windows, Mac, or Chromebook first',
-        content: `Windows laptops run Microsoft Windows — they have the widest variety of software, come in every price range, and are familiar to anyone who has used a desktop PC. MacBooks run macOS — they work especially well with iPhones and iPads (AirDrop, iMessage on Mac, Handoff features) and are known for reliability and longevity, but cost more. Chromebooks run Chrome OS — they are designed primarily for web browsing and Google apps (Gmail, Google Docs, YouTube). They are inexpensive, very simple to use, and nearly immune to viruses, but limited for tasks that require offline software.`,
+        content: `Windows laptops run Microsoft Windows. They have the widest variety of software, come in every price range, and are familiar to anyone who has used a desktop PC. MacBooks run macOS — they work especially well with iPhones and iPads (AirDrop, iMessage on Mac, Handoff features) and are known for reliability and longevity, but cost more. Chromebooks run Chrome OS — they are designed primarily for web browsing and Google apps (Gmail, Google Docs, YouTube). They are inexpensive, very simple to use, and nearly immune to viruses, but limited for tasks that require offline software.`,
         tip: `If you use an iPhone, a MacBook makes your digital life feel smoothly connected. If you use Android, a Windows laptop or Chromebook pairs well with Google's services.`,
       },
       {
@@ -230,7 +230,7 @@ export const guidesBatch39: Guide[] = [
       },
       {
         title: 'Set up Windows Hello for fast, secure sign-in',
-        content: `Windows Hello lets you sign into your laptop using your face or fingerprint instead of typing a password. Go to Settings → Accounts → Sign-in options. If your laptop has a camera or fingerprint sensor, you will see options for "Facial recognition (Windows Hello)" or "Fingerprint recognition (Windows Hello)." Click "Set up" and follow the prompts — it takes about 60 seconds. After setup, your laptop unlocks when you sit down and look at the camera, or touch the fingerprint sensor.`,
+        content: `Windows Hello lets you sign into your laptop using your face or fingerprint instead of typing a password. Go to Settings → Accounts → Sign-in options. If your laptop has a camera or fingerprint sensor, you will see options for "Facial recognition (Windows Hello)" or "Fingerprint recognition (Windows Hello)." Click "Set up" and follow the prompts. It takes about 60 seconds. After setup, your laptop unlocks when you sit down and look at the camera, or touch the fingerprint sensor.`,
       },
     ],
   },
@@ -323,7 +323,7 @@ export const guidesBatch39: Guide[] = [
       },
       {
         title: 'Create albums for your most important memories',
-        content: `On iPhone: open Photos → tap "Albums" at the bottom → the plus (+) icon → "New Album." Name it (like "Grandchildren 2025" or "Vacation Oregon"). Tap "Add Photos" and select photos for that album. On Android/Google Photos: tap "Library" → "Albums" → "Create album." Albums do not duplicate your photos — they are just collections that point to existing photos. The original stays in your main library.`,
+        content: `On iPhone: open Photos → tap "Albums" at the bottom → the plus (+) icon → "New Album." Name it (like "Grandchildren 2025" or "Vacation Oregon"). Tap "Add Photos" and select photos for that album. On Android/Google Photos: tap "Library" → "Albums" → "Create album." Albums do not duplicate your photos. They are just collections that point to existing photos. The original stays in your main library.`,
       },
       {
         title: 'Use Google Photos to automatically organize by people and places',
@@ -363,7 +363,7 @@ export const guidesBatch39: Guide[] = [
       },
       {
         title: 'Check how much space you recovered',
-        content: `After deleting duplicates and clearing the Recently Deleted album, check your storage. On iPhone: Settings → General → iPhone Storage — you will see how much space photos and videos now use. On Android: Settings → Storage. Also go to Photos → Albums → Recently Deleted and tap "Delete All" to free the space right away (normally, deleted photos stay in this album for 30 days, counting against your storage the whole time).`,
+        content: `After deleting duplicates and clearing the Recently Deleted album, check your storage. On iPhone: Settings → General → iPhone Storage. You will see how much space photos and videos now use. On Android: Settings → Storage. Also go to Photos → Albums → Recently Deleted and tap "Delete All" to free the space right away (normally, deleted photos stay in this album for 30 days, counting against your storage the whole time).`,
       },
     ],
   },
@@ -479,7 +479,7 @@ export const guidesBatch39: Guide[] = [
     steps: [
       {
         title: 'Check if you qualify for Lifeline',
-        content: `You qualify for Lifeline if your household income is at or below 135% of the Federal Poverty Level, or if you (or someone in your household) participate in one of these programs: Medicaid, SNAP (food stamps), Supplemental Security Income (SSI), Federal Public Housing Help, or Veterans Pension and Survivors Benefits. You qualify automatically through any of these programs — you do not need to submit income documentation.`,
+        content: `You qualify for Lifeline if your household income is at or below 135% of the Federal Poverty Level, or if you (or someone in your household) participate in one of these programs: Medicaid, SNAP (food stamps), Supplemental Security Income (SSI), Federal Public Housing Help, or Veterans Pension and Survivors Benefits. You qualify automatically through any of these programs. You do not need to submit income documentation.`,
         tip: `Only one Lifeline discount is allowed per household — not per person. If someone in your home already receives Lifeline, you cannot apply for a second discount at the same address.`,
       },
       {
@@ -553,11 +553,11 @@ export const guidesBatch39: Guide[] = [
       },
       {
         title: 'Ring Neighbors — for safety-focused alerts',
-        content: `Ring Neighbors is the community safety feature in the Ring app (available even without a Ring doorbell camera). It shows videos and photos of local safety incidents shared by neighbors with Ring cameras — package theft, suspicious activity, car break-ins. Go to the Ring app → Neighbors tab. You can set your alert radius from 0.5 to 5 miles. Ring Neighbors is more focused and less conversational than Nextdoor — it is purely for safety-related sharing and is connected to local law enforcement in some areas.`,
+        content: `Ring Neighbors is the community safety feature in the Ring app (available even without a Ring doorbell camera). It shows videos and photos of local safety incidents shared by neighbors with Ring cameras — package theft, suspicious activity, car break-ins. Go to the Ring app → Neighbors tab. You can set your alert radius from 0.5 to 5 miles. Ring Neighbors is more focused and less conversational than Nextdoor. It is purely for safety-related sharing and is connected to local law enforcement in some areas.`,
       },
       {
         title: 'Choosing the right one for your needs',
-        content: `For recommendations and general community connection: Nextdoor. For buying, selling, and free items locally: Facebook Groups ("Buy Nothing" or "[City] Free & For Sale"). For safety alerts and crime watch: Ring Neighbors. For local events and organizations: Facebook Groups. Many people use both Nextdoor and a local Facebook Group — they serve slightly different purposes. You do not need to choose just one. Start with Nextdoor if you want a single app for neighborhood connection, and add Facebook Groups if you become more active in local community life.`,
+        content: `For recommendations and general community connection: Nextdoor. For buying, selling, and free items locally: Facebook Groups ("Buy Nothing" or "[City] Free & For Sale"). For safety alerts and crime watch: Ring Neighbors. For local events and organizations: Facebook Groups. Many people use both Nextdoor and a local Facebook Group. They serve slightly different purposes. You do not need to choose just one. Start with Nextdoor if you want a single app for neighborhood connection, and add Facebook Groups if you become more active in local community life.`,
       },
     ],
   },
@@ -653,7 +653,7 @@ export const guidesBatch39: Guide[] = [
       },
       {
         title: 'Use AssistiveTouch if tapping is difficult',
-        content: `If the touchscreen is difficult to use due to arthritis or limited dexterity, AssistiveTouch creates a floating button on the screen that replicates home button, volume buttons, and other controls. Go to Settings → Accessibility → Touch → AssistiveTouch (toggle on). A small gray square appears on the screen. Tap it to see a menu of common actions — you can use it to take screenshots, adjust volume, or go home without using the physical buttons. Drag the button to any corner of the screen that is convenient.`,
+        content: `If the touchscreen is difficult to use due to arthritis or limited dexterity, AssistiveTouch creates a floating button on the screen that replicates home button, volume buttons, and other controls. Go to Settings → Accessibility → Touch → AssistiveTouch (toggle on). A small gray square appears on the screen. Tap it to see a menu of common actions. You can use it to take screenshots, adjust volume, or go home without using the physical buttons. Drag the button to any corner of the screen that is convenient.`,
         tip: `You can also connect a Bluetooth mouse to your iPad through Settings → Accessibility → Touch → AssistiveTouch → Pointer Devices. This lets you navigate the iPad with a traditional mouse if touchscreen use is difficult.`,
       },
     ],

@@ -110,7 +110,7 @@ Using Windows Hello is actually more secure than a traditional password in many 
 
 A PIN is another option Windows Hello offers. Unlike a website password, a Windows Hello PIN only works on your specific device. Even if someone else knew your PIN, they could not use it on a different computer. This makes it more secure than a simple password for your computer sign-in.
 
-Not every computer supports face recognition — you need a compatible camera. Fingerprint recognition requires a fingerprint sensor. Most modern laptops (made in the last 3–4 years) have at least one of these features. Desktop computers typically need an external webcam with Windows Hello support or an external fingerprint reader.`,
+Not every computer supports face recognition. You need a compatible camera. Fingerprint recognition requires a fingerprint sensor. Most modern laptops (made in the last 3–4 years) have at least one of these features. Desktop computers typically need an external webcam with Windows Hello support or an external fingerprint reader.`,
     steps: [
       {
         title: `Open Sign-in Options in Settings`,
@@ -159,8 +159,8 @@ BitLocker does slow down your computer very slightly — on modern PCs the diffe
     steps: [
       {
         title: `Check your Windows edition and TPM chip`,
-        content: `Go to Settings > System > About and look at "Edition" — you need Windows 10 Pro, Windows 11 Pro, or Enterprise. Then search for "Manage BitLocker" in the Start menu. If the option appears, your system supports it. BitLocker also requires a TPM (Trusted Platform Module) chip — most PCs made after 2016 have one built in.`,
-        tip: `Quick Tip: Windows 10 and 11 Home users should search for "Device Encryption" in Settings instead — it provides similar protection and works on many Home edition computers.`,
+        content: `Go to Settings > System > About and look at "Edition". You need Windows 10 Pro, Windows 11 Pro, or Enterprise. Then search for "Manage BitLocker" in the Start menu. If the option appears, your system supports it. BitLocker also requires a TPM (Trusted Platform Module) chip — most PCs made after 2016 have one built in.`,
+        tip: `Quick Tip: Windows 10 and 11 Home users should search for "Device Encryption" in Settings instead. It provides similar protection and works on many Home edition computers.`,
       },
       {
         title: `Open BitLocker settings`,
@@ -198,7 +198,7 @@ This is sometimes called a "version history" backup because File History saves m
 
 An external hard drive is the most common and reliable storage device for File History. You can buy one at any electronics store for $40–$80. Plug it into your computer with a USB cable, and Windows will detect it automatically. You can also use a large USB flash drive (sometimes called a USB stick or thumb drive), though an external hard drive holds much more.
 
-File History does not back up your entire Windows system or all your programs — it focuses on your personal files. For a full system backup (which lets you restore your entire PC if the hard drive fails completely), Windows 10 and Windows 11 still include a tool called "Backup and Restore (Windows 7)" — the name is left over from an older version of Windows. But it still works on current systems. You can also consider a cloud backup service instead. File History and a cloud service together give you very strong protection.
+File History does not back up your entire Windows system or all your programs. It focuses on your personal files. For a full system backup (which lets you restore your entire PC if the hard drive fails completely), Windows 10 and Windows 11 still include a tool called "Backup and Restore (Windows 7)" — the name is left over from an older version of Windows. But it still works on current systems. You can also consider a cloud backup service instead. File History and a cloud service together give you very strong protection.
 
 Ideally, you should leave the external drive plugged into your computer all the time so backups happen automatically. If you unplug the drive and plug it back in later, File History will catch up and back up any changes made while it was disconnected.`,
     steps: [
@@ -282,7 +282,7 @@ If Windows is so broken that it will not start up normally, you can still access
     thumbnailEmoji: ``,
     publishedAt: `2026-04-20`,
     difficulty: `Intermediate`,
-    body: `Windows runs many programs in the background called "services." These are not apps you see on your screen — they work quietly behind the scenes, handling things like networking, printing, Windows updates, and Bluetooth. Most services are essential and should never be turned off. But some are optional features that you may not use, and disabling them can free up memory and make your PC feel a bit faster.
+    body: `Windows runs many programs in the background called "services." These are not apps you see on your screen. They work quietly behind the scenes, handling things like networking, printing, Windows updates, and Bluetooth. Most services are essential and should never be turned off. But some are optional features that you may not use, and disabling them can free up memory and make your PC feel a bit faster.
 
 Think of services like the staff working behind the counter at a restaurant. You do not see them preparing food or washing dishes. But they are essential to the operation. Some restaurant staff handle tasks specific to certain menu items — if a restaurant stops serving pizza, those staff members are not needed. Similarly, some Windows services support features you may not use.
 
@@ -352,7 +352,7 @@ Personalizing the taskbar takes only a few minutes and makes your daily computer
       },
       {
         title: `Unpin apps you no longer need`,
-        content: `If your taskbar gets crowded with apps you rarely open, right-click any pinned app icon and choose "Unpin from taskbar." The icon disappears from the taskbar but the program is still installed on your computer — you can find it in the Start menu whenever you need it.`,
+        content: `If your taskbar gets crowded with apps you rarely open, right-click any pinned app icon and choose "Unpin from taskbar." The icon disappears from the taskbar but the program is still installed on your computer. You can find it in the Start menu whenever you need it.`,
       },
       {
         title: `Check the notification area and system tray`,
@@ -416,7 +416,7 @@ Snap Layouts works best on screens 13 inches or larger. On very small laptop scr
     thumbnailEmoji: ``,
     publishedAt: `2026-04-20`,
     difficulty: `Beginner`,
-    body: `Xbox Game Pass for PC (sometimes called PC Game Pass) is a subscription service from Microsoft that gives you access to a library of over 100 PC games for a monthly fee. Think of it like Netflix, but for video games — you pay a flat monthly price and can download and play any game in the library as long as your subscription is active. When you stop subscribing, those games are no longer accessible, but your progress and save files are usually kept if you resubscribe later.
+    body: `Xbox Game Pass for PC (sometimes called PC Game Pass) is a subscription service from Microsoft that gives you access to a library of over 100 PC games for a monthly fee. Think of it like Netflix, but for video games. You pay a flat monthly price and can download and play any game in the library as long as your subscription is active. When you stop subscribing, those games are no longer accessible, but your progress and save files are usually kept if you resubscribe later.
 
 The service is particularly good value if you enjoy trying many different games rather than buying individual titles. Games in the library range from major releases — including all new games from Microsoft's own studios on their launch day — to smaller independent games. The library changes over time, with games being added and sometimes removed.
 
@@ -463,7 +463,7 @@ An internet connection is required to download games and to verify your active s
     difficulty: `Beginner`,
     body: `The Microsoft Store is the official app marketplace built into Windows 10 and Windows 11. It is the safest place to download apps and games for your Windows computer because Microsoft reviews apps before they appear in the store. This reduces the risk of accidentally downloading harmful software that could damage your computer or steal your information.
 
-Think of the Microsoft Store like a vetted shopping mall — every store in it has been checked and approved to be there. Downloading apps from random websites, by contrast, is more like buying from a stranger on the street — you cannot always be sure what you are getting.
+Think of the Microsoft Store like a vetted shopping mall — every store in it has been checked and approved to be there. Downloading apps from random websites, by contrast, is more like buying from a stranger on the street. You cannot always be sure what you are getting.
 
 The Microsoft Store offers a wide range of applications: productivity tools like Microsoft Office and Adobe Acrobat Reader, entertainment apps like Netflix and Spotify, games from Xbox Game Pass and independent developers, and utilities like VLC Media Player and various photo editors. Many apps are free. Others have a one-time purchase price or a subscription.
 
@@ -473,7 +473,7 @@ The Microsoft Store requires a Microsoft account to download most apps. If you a
     steps: [
       {
         title: `Open the Microsoft Store`,
-        content: `Click the Start button and look for the Microsoft Store icon — it looks like a small shopping bag with the Windows logo. You can also click the Start button and type "Microsoft Store," then press Enter. The store opens in its own window with a home page showing featured apps and games.`,
+        content: `Click the Start button and look for the Microsoft Store icon. It looks like a small shopping bag with the Windows logo. You can also click the Start button and type "Microsoft Store," then press Enter. The store opens in its own window with a home page showing featured apps and games.`,
       },
       {
         title: `Search for an app`,
@@ -572,7 +572,7 @@ Running these cleanup tools will not delete your personal files, photos, or docu
       {
         title: `Delete selected files`,
         content: `After checking the categories you want to clean, click OK and then "Delete Files" when Windows asks you to confirm. The cleanup runs and files are removed. This process usually takes 1–5 minutes depending on how many files are being deleted.`,
-        warning: `Do not uncheck categories you are unsure about — it is safer to skip uncertain items than to delete something important. The items listed in Disk Cleanup are all system-generated files, not your personal documents.`,
+        warning: `Do not uncheck categories you are unsure about. It is safer to skip uncertain items than to delete something important. The items listed in Disk Cleanup are all system-generated files, not your personal documents.`,
       },
       {
         title: `Set up Storage Sense for automatic cleanup`,
@@ -653,7 +653,7 @@ One important safety note: never paste PowerShell commands from untrusted source
       {
         title: `Open PowerShell`,
         content: `Click the Start button and type "PowerShell." Click "Windows PowerShell" from the results. For some commands, you need to open it as administrator — right-click "Windows PowerShell" and choose "Run as administrator." A blue or dark window with a blinking cursor appears. Type your command and press Enter to run it.`,
-        tip: `Quick Tip: In Windows 11, PowerShell may be integrated into Windows Terminal. If you see "Terminal" instead of "PowerShell" in the Start menu, that is fine — it works the same way.`,
+        tip: `Quick Tip: In Windows 11, PowerShell may be integrated into Windows Terminal. If you see "Terminal" instead of "PowerShell" in the Start menu, that is fine. It works the same way.`,
       },
       {
         title: `Check your battery and power status`,
@@ -671,7 +671,7 @@ One important safety note: never paste PowerShell commands from untrusted source
       {
         title: `Restart your network adapter`,
         content: `If your Wi-Fi or ethernet connection is acting up, run PowerShell as administrator and type: Restart-NetAdapter -Name "Wi-Fi" — Replace "Wi-Fi" with the exact name of your network adapter if it is different (run Get-NetAdapter to see the list of adapter names first). This restarts the network connection without restarting your whole computer, which fixes many connection glitches.`,
-        tip: `Quick Tip: Microsoft's official PowerShell documentation is at learn.microsoft.com/powershell — it is written for all skill levels and includes explanations of every built-in command.`,
+        tip: `Quick Tip: Microsoft's official PowerShell documentation is at learn.microsoft.com/powershell. It is written for all skill levels and includes explanations of every built-in command.`,
       },
     ],
   },
@@ -708,7 +708,7 @@ As with PowerShell, always be cautious about where you get commands to run. Only
       },
       {
         title: `View your network details with ipconfig`,
-        content: `Type ipconfig and press Enter. This displays information about your network connections, including your IP address (your computer's unique address on the network), your subnet mask, and your default gateway (usually your router's address). This information is useful when calling your internet provider for support — they may ask for your IP address.`,
+        content: `Type ipconfig and press Enter. This displays information about your network connections, including your IP address (your computer's unique address on the network), your subnet mask, and your default gateway (usually your router's address). This information is useful when calling your internet provider for support. They may ask for your IP address.`,
       },
       {
         title: `Reset your internet connection`,
@@ -806,7 +806,7 @@ Spaces is managed through Mission Control. Creating, rearranging, and deleting S
       },
       {
         title: `Delete a Space you no longer need`,
-        content: `Open Mission Control and hover your mouse over the Space thumbnail you want to remove. A small X button appears in the top-left corner of that thumbnail. Click the X to delete the Space. Any open windows in that Space move to the neighboring Space automatically — they are not closed or lost.`,
+        content: `Open Mission Control and hover your mouse over the Space thumbnail you want to remove. A small X button appears in the top-left corner of that thumbnail. Click the X to delete the Space. Any open windows in that Space move to the neighboring Space automatically. They are not closed or lost.`,
         tip: `Quick Tip: In System Settings > Desktop & Dock > Mission Control, you can turn on "Automatically rearrange Spaces based on most recent use." This moves Spaces you use most to the front of the lineup automatically.`,
       },
     ],

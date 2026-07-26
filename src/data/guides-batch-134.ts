@@ -28,7 +28,7 @@ This guide shows you how to turn it on, make your first Genmoji, share it withou
       {
         title: 'Check if your iPhone supports Genmoji',
         content: 'Genmoji is part of Apple Intelligence, which requires an iPhone 15 Pro, iPhone 15 Pro Max, or any iPhone 16 model (16, 16 Plus, 16 Pro, 16 Pro Max). It does not work on iPhone 14 or earlier, no matter how new your iOS is. To check: open Settings, scroll to General, tap About, and look at "Model Name." If you see anything other than the supported models, Genmoji is not available on your phone.',
-        tip: 'Quick Tip: Even on an unsupported phone, you can still receive Genmoji from friends — they appear as little images in your messages.',
+        tip: 'Quick Tip: Even on an unsupported phone, you can still receive Genmoji from friends. They appear as little images in your messages.',
       },
       {
         title: 'Turn on Apple Intelligence',
@@ -95,7 +95,7 @@ You will not break anything by turning these off. Microsoft makes them opt-in or
       },
       {
         title: 'Reduce diagnostic data Microsoft collects',
-        content: 'Windows sends diagnostic data to Microsoft about how you use your PC. You can lower this to the minimum required. Settings > Privacy & security > Diagnostics & feedback. Set "Send optional diagnostic data" to Off. Turn off "Improve inking and typing." Turn off "Tailored experiences." Set "Feedback frequency" to Never. None of these affect Windows working correctly — they only stop Microsoft from receiving extra information about your habits.',
+        content: 'Windows sends diagnostic data to Microsoft about how you use your PC. You can lower this to the minimum required. Settings > Privacy & security > Diagnostics & feedback. Set "Send optional diagnostic data" to Off. Turn off "Improve inking and typing." Turn off "Tailored experiences." Set "Feedback frequency" to Never. None of these affect Windows working correctly. They only stop Microsoft from receiving extra information about your habits.',
       },
       {
         title: 'Clean up lock-screen ads and Start menu suggestions',
@@ -123,7 +123,7 @@ You will not break anything by turning these off. Microsoft makes them opt-in or
     publishedAt: '2026-05-13',
     lastVerifiedAt: '2026-05-13',
     difficulty: 'Beginner',
-    body: `Through April and May 2026, a wave of scam emails has been making the rounds with the subject line "Your Costco Membership Expires Tomorrow" or "Action Required: Costco Membership Renewal." The email looks convincing — it uses the Costco logo, the warehouse-blue colors, and a clear "Renew Now" button. The button takes you to a fake page that asks for your name, address, credit card, and Costco card number.
+    body: `Through April and May 2026, a wave of scam emails has been making the rounds with the subject line "Your Costco Membership Expires Tomorrow" or "Action Required: Costco Membership Renewal." The email looks convincing. It uses the Costco logo, the warehouse-blue colors, and a clear "Renew Now" button. The button takes you to a fake page that asks for your name, address, credit card, and Costco card number.
 
 If you fill it in, the scammers right away try to charge your card and also sell the data on the dark web. AARP and the FTC have both flagged this as one of the top three retail phishing scams of 2026.
 
@@ -138,7 +138,7 @@ This guide shows the four signals to check on any email like this, what a real C
       },
       {
         title: 'Look for the membership number in the email',
-        content: 'A real Costco renewal email includes the last four digits of your membership card number and your member level (Gold Star, Executive, Business). A scam email almost never has these — they do not have access to that data. If the email greets you as "Dear Valued Member" with no specifics, treat it as fake.',
+        content: 'A real Costco renewal email includes the last four digits of your membership card number and your member level (Gold Star, Executive, Business). A scam email almost never has these. They do not have access to that data. If the email greets you as "Dear Valued Member" with no specifics, treat it as fake.',
       },
       {
         title: 'Do not click the button — go directly to Costco.com',
@@ -151,7 +151,7 @@ This guide shows the four signals to check on any email like this, what a real C
       },
       {
         title: 'Report the email to Costco and the FTC',
-        content: 'Forward the email to phishing@costco.com (that is the real Costco anti-fraud address). Then file a quick complaint at reportfraud.ftc.gov — it takes 3 minutes, no account needed. The more people who report, the faster the scam domains get taken down. After reporting, delete the email. Do not leave it in your inbox — it is common to forget and accidentally click later.',
+        content: 'Forward the email to phishing@costco.com (that is the real Costco anti-fraud address). Then file a quick complaint at reportfraud.ftc.gov. It takes 3 minutes, no account needed. The more people who report, the faster the scam domains get taken down. After reporting, delete the email. Do not leave it in your inbox. It is common to forget and accidentally click later.',
       },
       {
         title: 'What to do if you already clicked',
@@ -187,7 +187,7 @@ The good news: real browsers do not show update popups on top of web pages. Once
       {
         title: 'Close the popup the safe way',
         content: 'On Windows: press Ctrl + W to close the tab. If that does not work, press Ctrl + Shift + W to close the entire browser window. Then reopen the browser — your other tabs are still saved. On Mac: press Command + W for the tab, Command + Shift + W for the window. On iPhone/iPad: hard-close the browser by swiping up from the bottom and flicking the browser away. On Android: tap the square button (recent apps) and swipe the browser away.',
-        tip: 'Quick Tip: If keyboard shortcuts feel hard to remember, the keyboard shortcut for "close everything bad" on Windows is Alt + F4 — it closes the active window no matter what.',
+        tip: 'Quick Tip: If keyboard shortcuts feel hard to remember, the keyboard shortcut for "close everything bad" on Windows is Alt + F4. It closes the active window no matter what.',
       },
       {
         title: 'Spot the four tells of a fake update popup',
@@ -258,7 +258,7 @@ This guide walks through the four-step setup: taking the at-home hearing test, e
       },
       {
         title: 'Adjust the sound for comfort',
-        content: 'If the world sounds too loud or too tinny: Settings > [AirPods] > Hearing Health > Hearing Aid > Adjustments. You can change overall volume, balance left/right, and tone (warmer or brighter). If you have not adjusted the fit in a few weeks and things sound off, retake the Ear Tip Fit Test. Hearing also changes day-to-day with sinus pressure, allergies, or sleep — it is normal to tweak slightly.',
+        content: 'If the world sounds too loud or too tinny: Settings > [AirPods] > Hearing Health > Hearing Aid > Adjustments. You can change overall volume, balance left/right, and tone (warmer or brighter). If you have not adjusted the fit in a few weeks and things sound off, retake the Ear Tip Fit Test. Hearing also changes day-to-day with sinus pressure, allergies, or sleep. It is normal to tweak slightly.',
       },
       {
         title: 'Care, battery, and when to see an audiologist',
@@ -293,7 +293,7 @@ You can avoid all of that with seven minutes of one-time setup. This guide shows
       },
       {
         title: 'Turn on monthly email reminders',
-        content: 'In your Subscribe & Save dashboard, click "Settings." Make sure "Send me a monthly reminder email about upcoming deliveries" is checked. Amazon sends one email per month listing everything scheduled to ship in the next 30 days. This is the single most useful setting — it gives you a chance to skip items you no longer need before they ship.',
+        content: 'In your Subscribe & Save dashboard, click "Settings." Make sure "Send me a monthly reminder email about upcoming deliveries" is checked. Amazon sends one email per month listing everything scheduled to ship in the next 30 days. This is the single most useful setting. It gives you a chance to skip items you no longer need before they ship.',
       },
       {
         title: 'Skip a single delivery without canceling',
@@ -309,7 +309,7 @@ You can avoid all of that with seven minutes of one-time setup. This guide shows
       },
       {
         title: 'Unlock the bigger discount with 5 subscriptions per month',
-        content: 'Amazon gives you an extra 10 percent off (on top of the regular 5) when you have 5 or more items arriving in the same month. This is why people batch their subscriptions to a single delivery date. To check what counts: dashboard > "Get more out of Subscribe & Save." It lists how many items you currently have shipping each month. You do not have to keep five forever — you can add a fifth cheap item just for the month a big order comes through.',
+        content: 'Amazon gives you an extra 10 percent off (on top of the regular 5) when you have 5 or more items arriving in the same month. This is why people batch their subscriptions to a single delivery date. To check what counts: dashboard > "Get more out of Subscribe & Save." It lists how many items you currently have shipping each month. You do not have to keep five forever. You can add a fifth cheap item just for the month a big order comes through.',
         tip: 'Quick Tip: Cheap "fifth item" tricks: small bag of dog treats, small jar of vitamins, single roll of paper towels. Anything you can use up eventually.',
       },
       {
@@ -318,7 +318,7 @@ You can avoid all of that with seven minutes of one-time setup. This guide shows
       },
       {
         title: 'Watch out for items that joined accidentally',
-        content: 'Some Amazon product pages put the "Subscribe & Save" option in the same place where "Buy Now" used to be. People click it thinking they are buying once. Always look at the small print under the price: if it says "$24.99 first delivery, every 2 months," you signed up for a subscription, not a one-time purchase. After every Amazon order, check the order confirmation email — it shows whether it was a subscription. If accidentally subscribed, cancel from the dashboard before the second shipment.',
+        content: 'Some Amazon product pages put the "Subscribe & Save" option in the same place where "Buy Now" used to be. People click it thinking they are buying once. Always look at the small print under the price: if it says "$24.99 first delivery, every 2 months," you signed up for a subscription, not a one-time purchase. After every Amazon order, check the order confirmation email. It shows whether it was a subscription. If accidentally subscribed, cancel from the dashboard before the second shipment.',
         warning: 'Amazon\'s default sometimes pre-selects Subscribe & Save on certain items. The savings are real, but only if you actually want recurring deliveries.',
       },
     ],
@@ -336,7 +336,7 @@ You can avoid all of that with seven minutes of one-time setup. This guide shows
     difficulty: 'Intermediate',
     body: `Most major US banks now support a new login method called a passkey. Chase, Bank of America, Wells Fargo, Capital One, USAA, and Charles Schwab all added passkey support in 2024 and 2025. Credit unions are following.
 
-A passkey replaces your username and password. Instead of typing anything, you confirm your identity with Face ID, Touch ID, or your phone\'s PIN. The login is mathematically tied to your specific device — it cannot be phished, cannot be stolen in a data breach, and cannot be guessed.
+A passkey replaces your username and password. Instead of typing anything, you confirm your identity with Face ID, Touch ID, or your phone\'s PIN. The login is mathematically tied to your specific device. It cannot be phished, cannot be stolen in a data breach, and cannot be guessed.
 
 For seniors who hate remembering passwords or who have been phished before, passkeys are a major upgrade. This guide explains what they are in plain language, how to set one up for your bank, and what to do if you lose the phone the passkey is on.
 
@@ -433,7 +433,7 @@ The walkthrough below works for both the Galaxy S25 and the S25 Ultra running On
       },
       {
         title: 'How long Galaxy AI features stay free',
-        content: 'Samsung promised the included Galaxy AI features stay free through the end of 2025, then announced an extension through the end of 2026. After that, some of the cloud-based features may move to a subscription. The on-device features (Photo Assist, Note Assist, Circle to Search) will likely stay free forever — they run on the phone\'s chip, not Samsung\'s servers. The cloud features (Live Translate of certain languages, generative image fills) may eventually have a paid tier. Watch the Samsung Newsroom for updates.',
+        content: 'Samsung promised the included Galaxy AI features stay free through the end of 2025, then announced an extension through the end of 2026. After that, some of the cloud-based features may move to a subscription. The on-device features (Photo Assist, Note Assist, Circle to Search) will likely stay free forever. They run on the phone\'s chip, not Samsung\'s servers. The cloud features (Live Translate of certain languages, generative image fills) may eventually have a paid tier. Watch the Samsung Newsroom for updates.',
         tip: 'Quick Tip: If pricing changes are announced, you can choose to keep using only the free features. Galaxy AI does not stop your phone from working if you do not pay.',
       },
     ],

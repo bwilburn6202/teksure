@@ -7,8 +7,7 @@ export const guidesBatch162: Guide[] = [
   {
     slug: 'how-to-use-your-phone-as-a-wifi-hotspot-2026',
     title: 'How to Use Your Phone as a Wi-Fi Hotspot',
-    excerpt:
-      'Your smartphone can share its cellular internet connection with a laptop or tablet. Here is how to turn on the hotspot on an iPhone or Android phone.',
+    excerpt: 'Your smartphone can share its cellular internet connection with a laptop or tablet. Here is how to turn on the hotspot on an iPhone or Android phone.',
     category: 'phone-guides',
     tags: [
       'mobile hotspot',
@@ -118,33 +117,27 @@ Always turn off the hotspot when you no longer need it. Leaving it on drains you
     steps: [
       {
         title: 'Check your data plan',
-        content:
-          'Before turning on the hotspot, confirm that your cellular plan includes hotspot data. Call your carrier or log in to your carrier\'s app to check. Using a hotspot uses your phone\'s cellular data, and video streaming uses a lot of data quickly.',
+        content: 'Before turning on the hotspot, confirm that your cellular plan includes hotspot data. Call your carrier or log in to your carrier\'s app to check. Using a hotspot uses your phone\'s cellular data, and video streaming uses a lot of data quickly.',
         tip: 'Regular web browsing and email use very little data — a hotspot is fine for those tasks on almost any plan.',
       },
       {
         title: 'Turn on the hotspot on an iPhone',
-        content:
-          'Open Settings, then tap Personal Hotspot. Tap the switch next to "Allow Others to Join" to turn it on. Note the Wi-Fi Password shown on screen — you will need it to connect your laptop.',
+        content: 'Open Settings, then tap Personal Hotspot. Tap the switch next to "Allow Others to Join" to turn it on. Note the Wi-Fi Password shown on screen. You will need it to connect your laptop.',
         tip: 'A blue bar at the top of your iPhone screen confirms the hotspot is active.',
       },
       {
         title: 'Turn on the hotspot on an Android phone',
-        content:
-          'Open Settings, then tap Network & Internet (or Connections on Samsung phones), then Hotspot & tethering, then Wi-Fi hotspot. Tap the switch to turn it on. Tap "Hotspot name and password" to see the network name and password your laptop will need.',
+        content: 'Open Settings, then tap Network & Internet (or Connections on Samsung phones), then Hotspot & tethering, then Wi-Fi hotspot. Tap the switch to turn it on. Tap "Hotspot name and password" to see the network name and password your laptop will need.',
       },
       {
         title: 'Connect your laptop to the hotspot',
-        content:
-          'On a Windows laptop, click the Wi-Fi icon in the lower-right taskbar, find your phone\'s name, click Connect, and enter the password. On a Mac, click the Wi-Fi icon in the menu bar, select your phone\'s name, and enter the password.',
+        content: 'On a Windows laptop, click the Wi-Fi icon in the lower-right taskbar, find your phone\'s name, click Connect, and enter the password. On a Mac, click the Wi-Fi icon in the menu bar, select your phone\'s name, and enter the password.',
         tip: 'Your phone\'s hotspot name is usually your phone\'s name — for example, "Bailey\'s iPhone" or "Galaxy S24."',
       },
       {
         title: 'Turn off the hotspot when you are done',
-        content:
-          'Go back to the hotspot settings on your phone and turn the switch off. This saves your battery and stops using your cellular data.',
-        warning:
-          'Leaving the hotspot on all day can drain your phone battery and use up your monthly data allowance faster than expected.',
+        content: 'Go back to the hotspot settings on your phone and turn the switch off. This saves your battery and stops using your cellular data.',
+        warning: 'Leaving the hotspot on all day can drain your phone battery and use up your monthly data allowance faster than expected.',
       },
     ],
   },
@@ -152,8 +145,7 @@ Always turn off the hotspot when you no longer need it. Leaving it on drains you
   {
     slug: 'how-to-turn-on-closed-captions-on-netflix-hulu-and-youtube-2026',
     title: 'How to Turn On Closed Captions on Netflix, Hulu, and YouTube',
-    excerpt:
-      'Closed captions display spoken words as text on screen. Here is how to turn them on for Netflix, Hulu, YouTube, Disney+, and Amazon Prime Video — and how to make the text larger.',
+    excerpt: 'Closed captions display spoken words as text on screen. Here is how to turn them on for Netflix, Hulu, YouTube, Disney+, and Amazon Prime Video — and how to make the text larger.',
     category: 'entertainment',
     tags: [
       'closed captions',
@@ -281,36 +273,30 @@ These settings apply to any app on your iPhone that supports Apple's caption sys
     steps: [
       {
         title: 'Turn on captions on Netflix',
-        content:
-          'While watching, tap or click the screen to show the controls. Tap the speech bubble icon or "Audio & Subtitles." Under Subtitles, select English or English [CC]. To make captions larger, go to your Account settings on the Netflix website and choose Subtitle Appearance.',
+        content: 'While watching, tap or click the screen to show the controls. Tap the speech bubble icon or "Audio & Subtitles." Under Subtitles, select English or English [CC]. To make captions larger, go to your Account settings on the Netflix website and choose Subtitle Appearance.',
         tip: 'The "English [CC]" option includes descriptions of sound effects, which is more helpful than plain "English" subtitles.',
       },
       {
         title: 'Turn on captions on Hulu',
-        content:
-          'While watching, tap or click the gear icon or the speech bubble icon. Tap Subtitles & Captions and select English Closed Captions.',
+        content: 'While watching, tap or click the gear icon or the speech bubble icon. Tap Subtitles & Captions and select English Closed Captions.',
       },
       {
         title: 'Turn on captions on YouTube',
-        content:
-          'While watching, click or tap the CC button in the lower-right corner of the video player. If it is not visible, click the gear icon (Settings), then Subtitles/CC, then English.',
+        content: 'While watching, click or tap the CC button in the lower-right corner of the video player. If it is not visible, click the gear icon (Settings), then Subtitles/CC, then English.',
         tip: 'Some YouTube videos do not have captions. If the CC button is grayed out, captions are not available for that video.',
       },
       {
         title: 'Turn on captions on Disney+ and Amazon Prime Video',
-        content:
-          'On Disney+, tap the speech bubble icon while watching and select a subtitle language. On Amazon Prime Video, tap the speech bubble icon and select English [CC] under Subtitles.',
+        content: 'On Disney+, tap the speech bubble icon while watching and select a subtitle language. On Amazon Prime Video, tap the speech bubble icon and select English [CC] under Subtitles.',
       },
       {
         title: 'Turn on captions for all TV apps at once',
-        content:
-          'Most smart TVs have an accessibility setting that enables captions across all apps. On Roku: Settings → Accessibility → Captions Mode. On Samsung TV: Settings → General → Accessibility → Caption Settings. On Apple TV: Settings → Accessibility → Subtitles & Captioning.',
+        content: 'Most smart TVs have an accessibility setting that enables captions across all apps. On Roku: Settings → Accessibility → Captions Mode. On Samsung TV: Settings → General → Accessibility → Caption Settings. On Apple TV: Settings → Accessibility → Subtitles & Captioning.',
         tip: 'Turning on captions at the TV level means you will not have to enable them separately inside each streaming app.',
       },
       {
         title: 'Make caption text larger on an iPhone',
-        content:
-          'Go to Settings → Accessibility → Subtitles & Captioning. Turn on Closed Captions + SDH, then tap Style to choose a larger font size or a high-contrast background behind the text.',
+        content: 'Go to Settings → Accessibility → Subtitles & Captioning. Turn on Closed Captions + SDH, then tap Style to choose a larger font size or a high-contrast background behind the text.',
       },
     ],
   },
@@ -318,8 +304,7 @@ These settings apply to any app on your iPhone that supports Apple's caption sys
   {
     slug: 'how-to-spot-a-phishing-email-or-text-2026',
     title: 'How to Spot a Phishing Email or Text Message',
-    excerpt:
-      'Phishing messages look like they come from banks, Medicare, or the IRS — but they are fakes designed to steal your information. Learn the 7 warning signs to look for.',
+    excerpt: 'Phishing messages look like they come from banks, Medicare, or the IRS — but they are fakes designed to steal your information. Learn the 7 warning signs to look for.',
     category: 'safety-guides',
     tags: [
       'phishing',
@@ -443,37 +428,30 @@ Do not panic — but act quickly.
     steps: [
       {
         title: 'Look for urgent or threatening language',
-        content:
-          'Phishing messages almost always create a sense of emergency: "Your account will be closed," "Immediate action required," or "Legal action pending." Legitimate companies do not threaten to close your account within hours over email. Pause before reacting to any alarming message.',
+        content: 'Phishing messages almost always create a sense of emergency: "Your account will be closed," "Immediate action required," or "Legal action pending." Legitimate companies do not threaten to close your account within hours over email. Pause before reacting to any alarming message.',
         tip: 'If a message makes you feel panic or urgency, that feeling itself is a warning sign. Take a breath and look more carefully.',
       },
       {
         title: 'Check the link before clicking',
-        content:
-          'On a computer, hover your mouse over any link in the email — do not click. Look at the web address that appears at the bottom of your screen. On a phone, press and hold the link without tapping to preview the address. If the address does not match the company\'s official website, do not click.',
-        warning:
-          'Scammers use addresses that look almost right: "paypa1.com" instead of "paypal.com" or "amazon-helpdesk.net" instead of "amazon.com." Look carefully at every character.',
+        content: 'On a computer, hover your mouse over any link in the email — do not click. Look at the web address that appears at the bottom of your screen. On a phone, press and hold the link without tapping to preview the address. If the address does not match the company\'s official website, do not click.',
+        warning: 'Scammers use addresses that look almost right: "paypa1.com" instead of "paypal.com" or "amazon-helpdesk.net" instead of "amazon.com." Look carefully at every character.',
       },
       {
         title: 'Check the sender\'s actual email address',
-        content:
-          'The display name in your inbox can say anything — "Amazon," "Medicare," "Your Bank." Click or tap on the sender\'s name to reveal the actual email address. If it does not end in the company\'s official domain (like @amazon.com or @irs.gov), the message is fraudulent.',
+        content: 'The display name in your inbox can say anything — "Amazon," "Medicare," "Your Bank." Click or tap on the sender\'s name to reveal the actual email address. If it does not end in the company\'s official domain (like @amazon.com or @irs.gov), the message is fraudulent.',
       },
       {
         title: 'Watch for requests for personal information',
         content: 'No legitimate company, government agency, or bank will ever ask for your full password, Social Security number, Medicare number, or credit card number in an email or text message. If a message asks for any of this, delete it right away.',
-        warning:
-          'The IRS contacts taxpayers only by US mail — never by email, text, or social media. Medicare does not send emails asking you to confirm your card number.',
+        warning: 'The IRS contacts taxpayers only by US mail — never by email, text, or social media. Medicare does not send emails asking you to confirm your card number.',
       },
       {
         title: 'Do not open unexpected attachments',
-        content:
-          'Be cautious of any email you were not expecting that includes a file attachment, especially .zip, .exe, .doc, or .pdf files. If you think the message might be real, call the sender using a phone number you look up yourself — not one provided in the email.',
+        content: 'Be cautious of any email you were not expecting that includes a file attachment, especially .zip, .exe, .doc, or .pdf files. If you think the message might be real, call the sender using a phone number you look up yourself — not one provided in the email.',
       },
       {
         title: 'Report and delete the message',
-        content:
-          'In Gmail, click the three-dot menu next to the message and select "Report phishing." In Outlook, right-click and choose Report → Phishing. For suspicious texts, forward the message to 7726 (SPAM). Then report to the FTC at reportfraud.ftc.gov and delete the original message.',
+        content: 'In Gmail, click the three-dot menu next to the message and select "Report phishing." In Outlook, right-click and choose Report → Phishing. For suspicious texts, forward the message to 7726 (SPAM). Then report to the FTC at reportfraud.ftc.gov and delete the original message.',
       },
       {
         title: 'If you accidentally clicked or entered information',
@@ -486,8 +464,7 @@ Do not panic — but act quickly.
   {
     slug: 'how-to-apply-for-social-security-benefits-online-2026',
     title: 'How to Apply for Social Security Benefits Online',
-    excerpt:
-      'You can apply for Social Security retirement benefits at ssa.gov without visiting an office. This guide walks through creating an account, checking your estimated payment, and completing the application.',
+    excerpt: 'You can apply for Social Security retirement benefits at ssa.gov without visiting an office. This guide walks through creating an account, checking your estimated payment, and completing the application.',
     category: 'government-civic',
     tags: [
       'Social Security',
@@ -506,7 +483,7 @@ Do not panic — but act quickly.
     publishedAt: '2026-05-08',
     lastVerifiedAt: '2026-05-08',
     difficulty: 'Beginner',
-    body: `Social Security retirement benefits provide a monthly payment to workers who have paid into Social Security through their jobs and have reached the eligible age to claim them. You can apply online at ssa.gov — you do not need to visit a Social Security office, wait on hold, or fill out paper forms.
+    body: `Social Security retirement benefits provide a monthly payment to workers who have paid into Social Security through their jobs and have reached the eligible age to claim them. You can apply online at ssa.gov. You do not need to visit a Social Security office, wait on hold, or fill out paper forms.
 
 This guide walks through everything: when to apply, how to create an account, how to check your estimated payment, and how to complete the online application. It also covers where to get help if you run into trouble.
 
@@ -596,43 +573,35 @@ Your first payment typically arrives the month after your benefits are scheduled
     steps: [
       {
         title: 'Decide when to apply',
-        content:
-          'You can claim Social Security retirement benefits as early as age 62, but your monthly payment is permanently reduced compared to waiting until your full retirement age (67 for those born in 1960 or later). Waiting until age 70 gives you the maximum monthly payment. Think about your health, your other income sources, and how long you expect to receive benefits.',
+        content: 'You can claim Social Security retirement benefits as early as age 62, but your monthly payment is permanently reduced compared to waiting until your full retirement age (67 for those born in 1960 or later). Waiting until age 70 gives you the maximum monthly payment. Think about your health, your other income sources, and how long you expect to receive benefits.',
         tip: 'Your local Area Agency on Aging (eldercare.acl.gov) can connect you with a free counselor who can help you think through the timing decision.',
       },
       {
         title: 'Gather your documents',
-        content:
-          'Before you start, have your Social Security number, your date of birth, your most recent W-2 or tax return, and your bank account and routing number for direct deposit. You may also be asked to mail in your birth certificate after submitting the online application.',
+        content: 'Before you start, have your Social Security number, your date of birth, your most recent W-2 or tax return, and your bank account and routing number for direct deposit. You may also be asked to mail in your birth certificate after submitting the online application.',
       },
       {
         title: 'Create a my Social Security account',
-        content:
-          'Go to ssa.gov/myaccount and click Create an Account. You will verify your identity using Login.gov or ID.me, which involves answering questions based on your financial history. Set up two-step verification with your phone number or email for security.',
+        content: 'Go to ssa.gov/myaccount and click Create an Account. You will verify your identity using Login.gov or ID.me, which involves answering questions based on your financial history. Set up two-step verification with your phone number or email for security.',
         tip: 'If you have trouble creating an account online, call SSA at 1-800-772-1213 for help.',
-        warning:
-          'Make sure you are on the real SSA website: ssa.gov. The address bar should show a padlock icon and the URL should start with https://www.ssa.gov.',
+        warning: 'Make sure you are on the real SSA website: ssa.gov. The address bar should show a padlock icon and the URL should start with https://www.ssa.gov.',
       },
       {
         title: 'Check your estimated benefit amount',
-        content:
-          'After signing in, click Estimated Benefits to see your projected monthly payment at age 62, your full retirement age, and age 70. Also review your earnings history on file. If any years where you worked show zero earnings, contact SSA to correct the record before applying.',
+        content: 'After signing in, click Estimated Benefits to see your projected monthly payment at age 62, your full retirement age, and age 70. Also review your earnings history on file. If any years where you worked show zero earnings, contact SSA to correct the record before applying.',
       },
       {
         title: 'Complete the online application',
-        content:
-          'Go to ssa.gov/apply and click Apply for Retirement Benefits. Sign in when prompted. The application takes about 30 minutes and you can save your progress and return later. When asked, enter your bank routing number and account number for direct deposit.',
+        content: 'Go to ssa.gov/apply and click Apply for Retirement Benefits. Sign in when prompted. The application takes about 30 minutes and you can save your progress and return later. When asked, enter your bank routing number and account number for direct deposit.',
         tip: 'The routing number is the first 9 digits printed at the bottom of a personal check. Your account number follows it.',
       },
       {
         title: 'Submit and save your confirmation',
-        content:
-          'Review your answers on the summary page, then click Submit. Print or save the confirmation page — it contains a confirmation number you can use to check on your application status.',
+        content: 'Review your answers on the summary page, then click Submit. Print or save the confirmation page. It contains a confirmation number you can use to check on your application status.',
       },
       {
         title: 'Wait for your decision letter',
-        content:
-          'Social Security will mail a decision letter within 3 to 5 weeks for most applications. If they need additional documents, they will contact you by mail. Your first payment will arrive in the month after your benefits are scheduled to start, on a Wednesday determined by your birth date.',
+        content: 'Social Security will mail a decision letter within 3 to 5 weeks for most applications. If they need additional documents, they will contact you by mail. Your first payment will arrive in the month after your benefits are scheduled to start, on a Wednesday determined by your birth date.',
         tip: 'For questions at any point, call SSA at 1-800-772-1213 (Monday–Friday, 8 AM–7 PM) or find your nearest office at ssa.gov/agency/contact.',
       },
     ],

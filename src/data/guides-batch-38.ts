@@ -92,7 +92,7 @@ export const guidesBatch38: Guide[] = [
       },
       {
         title: 'Install and use a VPN on your phone',
-        content: `Download your chosen VPN from the App Store or Google Play. Open the app and follow the setup — you will create an account and grant the app permission to set up a VPN configuration on your phone (iOS and Android both ask for this permission; it is normal). Once set up, tap "Connect." The VPN icon (a small key on iPhone, or a key symbol in the notification bar on Android) shows when the VPN is active. Tap "Disconnect" when you are done.`,
+        content: `Download your chosen VPN from the App Store or Google Play. Open the app and follow the setup. You will create an account and grant the app permission to set up a VPN configuration on your phone (iOS and Android both ask for this permission; it is normal). Once set up, tap "Connect." The VPN icon (a small key on iPhone, or a key symbol in the notification bar on Android) shows when the VPN is active. Tap "Disconnect" when you are done.`,
       },
       {
         title: 'When you should and should not use a VPN',
@@ -121,7 +121,7 @@ export const guidesBatch38: Guide[] = [
       {
         title: 'Enter your email address and check',
         content: `Type your email address into the search box and press "pwned?" The site will tell you one of two things: a green banner saying "Good news — no pwnage found!" meaning your email has not appeared in any known breach database; or a red banner listing the breaches your email was found in, with the date of each breach and what data was exposed (usually email address, passwords, names, etc.).`,
-        tip: `The site is completely safe — it does not store the email addresses you search. And it is used by the Australian government, the FBI, and the UK National Cyber Security Centre.`,
+        tip: `The site is completely safe. It does not store the email addresses you search. And it is used by the Australian government, the FBI, and the UK National Cyber Security Centre.`,
       },
       {
         title: 'What to do if your email was breached',
@@ -130,7 +130,7 @@ export const guidesBatch38: Guide[] = [
       },
       {
         title: 'Set up breach notifications for the future',
-        content: `On haveibeenpwned.com, scroll down and look for "Stay informed." Enter your email address to sign up for free alerts — you will get an email notification if your address appears in any future breach. This means you hear about it right away instead of finding out months or years later. The notification emails come from @haveibeenpwned.com, not from a scammer.`,
+        content: `On haveibeenpwned.com, scroll down and look for "Stay informed." Enter your email address to sign up for free alerts. You will get an email notification if your address appears in any future breach. This means you hear about it right away instead of finding out months or years later. The notification emails come from @haveibeenpwned.com, not from a scammer.`,
       },
     ],
   },
@@ -149,7 +149,7 @@ export const guidesBatch38: Guide[] = [
     steps: [
       {
         title: 'Review location access on iPhone',
-        content: `Go to Settings → Privacy & Security → Location Services. You will see a list of every app that has requested your location. Tap each app to see its current setting: "Never," "Ask Next Time," "While Using the App," or "Always." For most apps, "While Using the App" is the right choice — it means the app can only see your location when you have it open, not in the background 24 hours a day. Only navigation apps like Google Maps and Apple Maps need "Always."`,
+        content: `Go to Settings → Privacy & Security → Location Services. You will see a list of every app that has requested your location. Tap each app to see its current setting: "Never," "Ask Next Time," "While Using the App," or "Always." For most apps, "While Using the App" is the right choice. It means the app can only see your location when you have it open, not in the background 24 hours a day. Only navigation apps like Google Maps and Apple Maps need "Always."`,
         tip: `Scroll down in Location Services to see "System Services" — this controls whether Apple can use your location for things like iPhone analytics. Turning off "iPhone Analytics" here does not affect any app.`,
       },
       {
@@ -162,7 +162,7 @@ export const guidesBatch38: Guide[] = [
       },
       {
         title: 'Review which apps have access to your photos',
-        content: `On iPhone, go to Settings → Privacy & Security → Photos. You will see apps listed with their level of access: "None," "Add Photos Only," "Selected Photos," or "All Photos." Consider changing apps like social media or shopping apps to "Selected Photos" — they can only see the specific photos you choose to share rather than your entire photo library. On Android, go to Settings → Privacy → Permission Manager → Photos and Videos for the same review.`,
+        content: `On iPhone, go to Settings → Privacy & Security → Photos. You will see apps listed with their level of access: "None," "Add Photos Only," "Selected Photos," or "All Photos." Consider changing apps like social media or shopping apps to "Selected Photos". They can only see the specific photos you choose to share rather than your entire photo library. On Android, go to Settings → Privacy → Permission Manager → Photos and Videos for the same review.`,
         tip: `Do this review once a season — every three months. App updates sometimes request new permissions, so a quick review keeps things tidy.`,
       },
     ],
@@ -210,7 +210,7 @@ export const guidesBatch38: Guide[] = [
     thumbnailEmoji: '',
     publishedAt: '2026-04-19',
     difficulty: 'Beginner',
-    body: `Google Pixel phones (Pixel 6 and newer) include AI-powered photo editing tools built into the Google Photos app. These tools let you erase strangers from the background of a photo, swap faces in a group shot to get everyone smiling at once, sharpen blurry photos from years ago, and adjust shadows on portraits. None of these require any photo editing skills — you tap a button and the AI does the work.`,
+    body: `Google Pixel phones (Pixel 6 and newer) include AI-powered photo editing tools built into the Google Photos app. These tools let you erase strangers from the background of a photo, swap faces in a group shot to get everyone smiling at once, sharpen blurry photos from years ago, and adjust shadows on portraits. None of these require any photo editing skills. You tap a button and the AI does the work.`,
     steps: [
       {
         title: 'Use Magic Eraser to remove distractions',
@@ -259,7 +259,7 @@ export const guidesBatch38: Guide[] = [
       },
       {
         title: 'Avoid overpaying by auditing your subscriptions',
-        content: `It is common to forget about streaming subscriptions after signing up for a free trial. Check your bank or credit card statement for recurring charges to streaming services. On iPhone, go to Settings → your name → Subscriptions to see every active subscription. On Android, open the Google Play Store → tap your profile picture → Payments & subscriptions → Subscriptions. Cancel any you are not actively using — you can always resubscribe later when you want to catch up on a show.`,
+        content: `It is common to forget about streaming subscriptions after signing up for a free trial. Check your bank or credit card statement for recurring charges to streaming services. On iPhone, go to Settings → your name → Subscriptions to see every active subscription. On Android, open the Google Play Store → tap your profile picture → Payments & subscriptions → Subscriptions. Cancel any you are not actively using. You can always resubscribe later when you want to catch up on a show.`,
         warning: `Never give your streaming service username and password to someone you do not know well, and avoid using the same password for your streaming services as for your email or banking — streaming accounts get sold on criminal marketplaces if stolen.`,
       },
     ],
@@ -317,7 +317,7 @@ export const guidesBatch38: Guide[] = [
       },
       {
         title: 'Change the router admin password',
-        content: `Once inside the router admin panel, find "Admin password," "Management password," or "Advanced settings" → "Administration." Change the admin password to something unique and at least 12 characters long that is not "admin," "password," or your address. Write it on a piece of paper and keep it with your router's paperwork. This password is only needed when you want to change router settings — it is separate from your WiFi network password.`,
+        content: `Once inside the router admin panel, find "Admin password," "Management password," or "Advanced settings" → "Administration." Change the admin password to something unique and at least 12 characters long that is not "admin," "password," or your address. Write it on a piece of paper and keep it with your router's paperwork. This password is only needed when you want to change router settings. It is separate from your WiFi network password.`,
       },
       {
         title: 'Change your WiFi network name and password',
@@ -417,11 +417,11 @@ Parents can use Screen Time to manage a child's phone remotely through Family Sh
       {
         title: 'Review and adjust your activity settings',
         content: `The checkup walks you through Web & App Activity (your Google search history, Maps activity, and app interactions), Location History (a timeline of everywhere you have been with your phone), YouTube History, and Voice & Audio Activity. For each one, you can turn it off entirely, set it to auto-delete after 3, 18, or 36 months, or review what is currently stored and delete specific entries. Most people choose to keep these on auto-delete after 18 months as a balance between privacy and Google's personalized features still working well.`,
-        tip: `Turning off Location History stops Google Maps from building a timeline of your movements. Your Maps app will still work for navigation — it just will not remember where you have been.`,
+        tip: `Turning off Location History stops Google Maps from building a timeline of your movements. Your Maps app will still work for navigation. It just will not remember where you have been.`,
       },
       {
         title: 'Review personalized ads settings',
-        content: `In the Privacy Checkup, you will also see "Ad settings." Google shows you the topics and demographic categories it uses to decide which ads to show you. You can remove topics you find intrusive, or turn off "My Ad Center" personalization entirely. This does not reduce the number of ads you see — it makes them less targeted to your interests. Some people prefer random ads. Others prefer ads related to things they have searched for.`,
+        content: `In the Privacy Checkup, you will also see "Ad settings." Google shows you the topics and demographic categories it uses to decide which ads to show you. You can remove topics you find intrusive, or turn off "My Ad Center" personalization entirely. This does not reduce the number of ads you see. It makes them less targeted to your interests. Some people prefer random ads. Others prefer ads related to things they have searched for.`,
       },
       {
         title: 'Delete stored data you no longer want',
@@ -480,7 +480,7 @@ Parents can use Screen Time to manage a child's phone remotely through Family Sh
       },
       {
         title: 'What Google Assistant is best at',
-        content: `Google Assistant leads at information retrieval and search — it has access to Google's entire search knowledge. Best uses: "Hey Google, what's in the news today?" (comprehensive news summaries), "Hey Google, what restaurants near me are open right now?" (accurate, up-to-date business info), "Hey Google, how far is it from here to Boston?" (precise directions and traffic), "Hey Google, what are the side effects of lisinopril?" (detailed health information), "Hey Google, translate 'where is the pharmacy' into Spanish." Google Assistant is the right choice when you need accurate information quickly.`,
+        content: `Google Assistant leads at information retrieval and search. It has access to Google's entire search knowledge. Best uses: "Hey Google, what's in the news today?" (comprehensive news summaries), "Hey Google, what restaurants near me are open right now?" (accurate, up-to-date business info), "Hey Google, how far is it from here to Boston?" (precise directions and traffic), "Hey Google, what are the side effects of lisinopril?" (detailed health information), "Hey Google, translate 'where is the pharmacy' into Spanish." Google Assistant is the right choice when you need accurate information quickly.`,
       },
       {
         title: 'What Alexa is best at',
@@ -488,7 +488,7 @@ Parents can use Screen Time to manage a child's phone remotely through Family Sh
       },
       {
         title: 'Use more than one — they all have their place',
-        content: `Most people use multiple voice assistants without even thinking about it. An iPhone user might say "Hey Siri, call Mom" from their phone, then "Hey Google" on their smart speaker for a news briefing, then "Alexa" to control their smart lights. There is no need to choose just one. A practical tip: if you ask one voice assistant a question and get a bad answer, try asking Google directly — it tends to have the most comprehensive and current information for factual questions.`,
+        content: `Most people use multiple voice assistants without even thinking about it. An iPhone user might say "Hey Siri, call Mom" from their phone, then "Hey Google" on their smart speaker for a news briefing, then "Alexa" to control their smart lights. There is no need to choose just one. A practical tip: if you ask one voice assistant a question and get a bad answer, try asking Google directly. It tends to have the most comprehensive and current information for factual questions.`,
       },
     ],
   },
@@ -503,7 +503,7 @@ Parents can use Screen Time to manage a child's phone remotely through Family Sh
     thumbnailEmoji: '',
     publishedAt: '2026-04-19',
     difficulty: 'Beginner',
-    body: `If you have an iPhone, you have probably noticed that some text conversations have blue bubbles and some have green bubbles. This difference is not cosmetic — it tells you which messaging system is carrying your messages, and each system works differently in terms of cost, features, and what happens when things go wrong.`,
+    body: `If you have an iPhone, you have probably noticed that some text conversations have blue bubbles and some have green bubbles. This difference is not cosmetic. It tells you which messaging system is carrying your messages, and each system works differently in terms of cost, features, and what happens when things go wrong.`,
     steps: [
       {
         title: 'Understand blue bubbles (iMessage)',
@@ -567,7 +567,7 @@ Parents can use Screen Time to manage a child's phone remotely through Family Sh
     thumbnailEmoji: '',
     publishedAt: '2026-04-19',
     difficulty: 'Intermediate',
-    body: `iCloud Private Relay is an Apple privacy feature that comes with an iCloud+ subscription (50GB, 200GB, or 2TB storage plans). It sends your Safari browsing through two separate internet servers. That way, your internet provider can't see which websites you visit, and Apple can't see your IP address and your browsing activity at the same time. It isn't a full VPN — it only covers Safari, not other apps — but it's a real privacy upgrade for Safari users, and there's no extra software to install.`,
+    body: `iCloud Private Relay is an Apple privacy feature that comes with an iCloud+ subscription (50GB, 200GB, or 2TB storage plans). It sends your Safari browsing through two separate internet servers. That way, your internet provider can't see which websites you visit, and Apple can't see your IP address and your browsing activity at the same time. It isn't a full VPN. It only covers Safari, not other apps — but it's a real privacy upgrade for Safari users, and there's no extra software to install.`,
     steps: [
       {
         title: 'Check if you have iCloud+ (required for Private Relay)',
@@ -645,11 +645,11 @@ Parents can use Screen Time to manage a child's phone remotely through Family Sh
       },
       {
         title: 'Review Facebook and Google login on other accounts',
-        content: `Some apps also offer "Sign in with Facebook." To review those: open Facebook → tap the three horizontal lines → Settings → Security and Login → scroll to "Where you're logged in" and also "Apps and Websites." You will see every app that connected with Facebook. Click any app → "Remove." Revoking access does not delete your account within that app — it just disconnects the login method.`,
+        content: `Some apps also offer "Sign in with Facebook." To review those: open Facebook → tap the three horizontal lines → Settings → Security and Login → scroll to "Where you're logged in" and also "Apps and Websites." You will see every app that connected with Facebook. Click any app → "Remove." Revoking access does not delete your account within that app. It just disconnects the login method.`,
       },
       {
         title: 'What to do after removing access',
-        content: `After removing an app's access, the next time you try to use that app it will ask you to sign in again. If you no longer use the app, no action is needed — access is revoked. If you want to keep using the app but with a more limited connection, most apps let you create a regular username and password instead of the social login. For apps you deleted from your phone months ago but forgot about, removing their Google/Apple/Facebook access is purely a security and privacy cleanup — they can no longer send data back to those platforms.`,
+        content: `After removing an app's access, the next time you try to use that app it will ask you to sign in again. If you no longer use the app, no action is needed — access is revoked. If you want to keep using the app but with a more limited connection, most apps let you create a regular username and password instead of the social login. For apps you deleted from your phone months ago but forgot about, removing their Google/Apple/Facebook access is purely a security and privacy cleanup. They can no longer send data back to those platforms.`,
       },
     ],
   },

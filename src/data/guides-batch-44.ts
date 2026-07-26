@@ -116,7 +116,7 @@ If you have a Gmail address, the Gmail app is already set up from the moment you
 
 For email services like Yahoo Mail, Outlook.com (Hotmail), or iCloud, the Gmail app will handle the connection automatically once you enter your email address and password. For workplace emails that use a private server, your IT department may need to give you server settings.
 
-Once an account is added, you will see all your email inboxes either combined into one view or separated by account — you can switch between them with a tap. Notifications appear on your phone when new emails arrive. So you never miss an important message.`,
+Once an account is added, you will see all your email inboxes either combined into one view or separated by account. You can switch between them with a tap. Notifications appear on your phone when new emails arrive. So you never miss an important message.`,
     steps: [
       {
         title: `Open the Gmail App`,
@@ -186,7 +186,7 @@ Keep in mind that Facebook only shows birthdays for friends who have chosen to s
       {
         title: `Control Who Sees Your Own Birthday`,
         content: `To manage your own birthday visibility: tap your profile photo, then "Edit profile." Tap on your birthday. You can choose who can see your birth year (Friends, Only Me, etc.) and who can see your birthday month and day. Most people show the month/day but hide the year for privacy.`,
-        warning: `Hiding your birth year is a good privacy habit — it reduces information that scammers could use to verify your identity.`,
+        warning: `Hiding your birth year is a good privacy habit. It reduces information that scammers could use to verify your identity.`,
       },
     ],
   },
@@ -200,7 +200,7 @@ Keep in mind that Facebook only shows birthdays for friends who have chosen to s
     thumbnailEmoji: ``,
     publishedAt: `2026-04-19`,
     difficulty: `Beginner`,
-    body: `Windows Photos is the built-in photo viewer and editor on every Windows 10 and Windows 11 computer. You do not need to download anything — it is already there and ready to use. Just double-click any photo on your computer and it opens automatically in Photos.
+    body: `Windows Photos is the built-in photo viewer and editor on every Windows 10 and Windows 11 computer. You do not need to download anything. It is already there and ready to use. Just double-click any photo on your computer and it opens automatically in Photos.
 
 Beyond viewing pictures, Photos lets you do basic editing without any special skills: crop, rotate, adjust brightness and color, remove red-eye, and add filters. The edits are non-destructive — meaning Photos keeps your original photo safe and lets you undo any change.
 
@@ -340,7 +340,7 @@ Clearing your search history on your phone's browser is different from clearing 
     thumbnailEmoji: ``,
     publishedAt: `2026-04-19`,
     difficulty: `Beginner`,
-    body: `Your iPad can do more than just browse the web and watch videos — it can also send and receive messages. The Messages app on iPad works in two ways: iMessage and SMS text forwarding.
+    body: `Your iPad can do more than just browse the web and watch videos. It can also send and receive messages. The Messages app on iPad works in two ways: iMessage and SMS text forwarding.
 
 iMessage works between Apple devices (iPhone, iPad, Mac). When you send a message to another Apple user, it goes as an iMessage (blue bubble) over Wi-Fi or data — no cell plan needed. This means you can text family and friends from your iPad as long as you are connected to Wi-Fi.
 
@@ -433,7 +433,7 @@ If you find gestures confusing, you can always switch back to the three-button l
 
 The process works through a feature called casting. Your phone stays as the "remote control" while your TV displays the photos. Both your phone and TV need to be on the same Wi-Fi network.
 
-If you have a Google Nest Hub display, it can show Google Photos slideshows automatically — it is one of that device's main features. For regular TVs, you use a Chromecast dongle ($30–$50) or a TV with Chromecast built in.
+If you have a Google Nest Hub display, it can show Google Photos slideshows automatically. It is one of that device's main features. For regular TVs, you use a Chromecast dongle ($30–$50) or a TV with Chromecast built in.
 
 You can cast an individual album, a search result (like "photos from 2022"), or the special "Memories" collection that Google automatically assembles from your photos. You can also adjust the slideshow speed and whether captions show the date or location.
 
@@ -575,7 +575,7 @@ DeX works with a simple USB-C to HDMI cable (about $10–$15 on Amazon) or a Sam
 
 Compatible Galaxy phones include the Galaxy S8 and newer, Galaxy Note 8 and newer, Galaxy Tab S4 and newer, and Galaxy Z Fold series. Check if your device is listed at samsung.com/dex.
 
-While in DeX mode, your phone screen acts as a touchpad — you swipe on the phone itself to move the cursor on the monitor. Or plug in a wireless Bluetooth mouse for a more traditional experience.`,
+While in DeX mode, your phone screen acts as a touchpad. You swipe on the phone itself to move the cursor on the monitor. Or plug in a wireless Bluetooth mouse for a more traditional experience.`,
     steps: [
       {
         title: `Check if Your Phone Supports DeX`,
@@ -583,7 +583,7 @@ While in DeX mode, your phone screen acts as a touchpad — you swipe on the pho
       },
       {
         title: `Get the Right Cable`,
-        content: `You need a USB-C to HDMI cable (or adapter). Look for one labeled "USB-C to HDMI" — they cost $10–$20 on Amazon. If you have a Samsung DeX Pad or DeX Station dock, use that instead. Plug the HDMI end into your TV or monitor and the USB-C end into your phone.`,
+        content: `You need a USB-C to HDMI cable (or adapter). Look for one labeled "USB-C to HDMI". They cost $10–$20 on Amazon. If you have a Samsung DeX Pad or DeX Station dock, use that instead. Plug the HDMI end into your TV or monitor and the USB-C end into your phone.`,
         tip: `Quick Tip: Some monitors support USB-C directly — in that case, a USB-C to USB-C cable works and also charges your phone while in DeX mode.`,
       },
       {
@@ -631,7 +631,7 @@ Captions are generated automatically by Zoom's speech-to-text engine. Accuracy i
       {
         title: `Turn On Captions During a Meeting`,
         content: `Join or start a Zoom meeting. Look at the toolbar at the bottom of the Zoom window. Find the "CC" button (Closed Captions) or "Live Transcript" button. Click it and choose "Show Subtitles" or "Enable Auto-Transcription." Captions appear at the bottom of your screen right away.`,
-        tip: `Quick Tip: If you do not see the CC button, click the "More" button (…) in the toolbar — it may be hidden there. Or ask the meeting host to enable captions.`,
+        tip: `Quick Tip: If you do not see the CC button, click the "More" button (…) in the toolbar. It may be hidden there. Or ask the meeting host to enable captions.`,
       },
       {
         title: `Adjust Caption Size`,
@@ -662,7 +662,7 @@ Captions are generated automatically by Zoom's speech-to-text engine. Accuracy i
 
 Zoom has two types of recording: local recording (saves to your computer) and cloud recording (saves to Zoom's servers online). Local recording is available on the free Zoom plan. Cloud recording requires a paid Zoom subscription.
 
-For most everyday uses, local recording works great. The recording saves as an MP4 video file on your computer — you can watch it in any video player, upload it to Google Drive or YouTube to share, or keep it for your own reference.
+For most everyday uses, local recording works great. The recording saves as an MP4 video file on your computer. You can watch it in any video player, upload it to Google Drive or YouTube to share, or keep it for your own reference.
 
 Only the meeting host and any participants granted recording permission can record a Zoom meeting. Participants receive a notification when recording starts so everyone knows the call is being saved. This is an important privacy consideration — always let participants know before you start recording.
 
@@ -675,7 +675,7 @@ The recording starts right away when you click Record and continues until you st
       {
         title: `Click the Record Button`,
         content: `In the meeting toolbar at the bottom, look for the "Record" button (it has a red circle icon). Click it. A red "Recording…" indicator appears in the top-left corner of the Zoom window, along with a timer showing how long you have been recording.`,
-        tip: `Quick Tip: If you do not see a Record button, click "More" (…) in the toolbar — it may be hidden there. If you still do not see it, you may not have recording permission — only the host or co-hosts can record.`,
+        tip: `Quick Tip: If you do not see a Record button, click "More" (…) in the toolbar. It may be hidden there. If you still do not see it, you may not have recording permission — only the host or co-hosts can record.`,
       },
       {
         title: `Pause or Stop the Recording`,
@@ -760,7 +760,7 @@ When buying a replacement cable, check which port your phone has before ordering
     steps: [
       {
         title: `Identify Your Phone's Charging Port`,
-        content: `Look at the bottom of your phone. If the port is a small oval shape, it is USB-C. If it is a narrow rectangle that looks like a tiny door, it is Lightning (older iPhones) or Micro-USB (older Androids). USB-C connectors are slightly larger and symmetrical — they look the same from either side.`,
+        content: `Look at the bottom of your phone. If the port is a small oval shape, it is USB-C. If it is a narrow rectangle that looks like a tiny door, it is Lightning (older iPhones) or Micro-USB (older Androids). USB-C connectors are slightly larger and symmetrical. They look the same from either side.`,
         tip: `Quick Tip: iPhone 15 and newer all use USB-C. iPhone 14 and older use Lightning. Check your iPhone model in Settings → General → About.`,
       },
       {
@@ -890,11 +890,11 @@ The serial number is not the same as your phone number. It is built into the pho
 
 There are several ways to find your serial number — through the Settings app (easiest), through Apple's website (using your Apple ID), on the original box the phone came in, or physically engraved on the phone itself (depending on the model).
 
-Your IMEI (International Mobile Equipment Identity) number is related but different — it is used specifically by phone carriers to block a stolen phone from connecting to cellular networks. You may be asked for either the serial number or IMEI depending on the situation.`,
+Your IMEI (International Mobile Equipment Identity) number is related but different. It is used specifically by phone carriers to block a stolen phone from connecting to cellular networks. You may be asked for either the serial number or IMEI depending on the situation.`,
     steps: [
       {
         title: `Find It in Settings (Easiest Method)`,
-        content: `On your iPhone, go to Settings → General → About. Scroll down until you see "Serial Number." Tap and hold on the number to copy it — you can then paste it into an email, web form, or note.`,
+        content: `On your iPhone, go to Settings → General → About. Scroll down until you see "Serial Number." Tap and hold on the number to copy it. You can then paste it into an email, web form, or note.`,
         tip: `Quick Tip: On the same About page, you will also find your IMEI number a few lines below the serial number. Make a note of both and store them somewhere safe.`,
       },
       {

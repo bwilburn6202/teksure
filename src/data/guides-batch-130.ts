@@ -92,7 +92,7 @@ This guide explains how Emergency SOS works, how to set up your medical ID and e
       },
       {
         title: 'Turn on Crash Detection (if available)',
-        content: 'iPhone 14 and later have Crash Detection — they automatically call 911 if sensors detect a severe car crash. To check, open Settings, tap Emergency SOS, and confirm "Call After Severe Crash" is on. False alarms are rare but possible, especially during certain amusement park rides — the iPhone gives you 10 seconds to cancel before the call goes through.',
+        content: 'iPhone 14 and later have Crash Detection. They automatically call 911 if sensors detect a severe car crash. To check, open Settings, tap Emergency SOS, and confirm "Call After Severe Crash" is on. False alarms are rare but possible, especially during certain amusement park rides — the iPhone gives you 10 seconds to cancel before the call goes through.',
       },
       {
         title: 'Know how to use Satellite SOS (iPhone 14 and newer)',

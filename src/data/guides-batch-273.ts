@@ -37,7 +37,7 @@ export const guidesBatch273: Guide[] = [
       },
       {
         title: "Write down the plan while the gun owner can still sign it",
-        content: "Once the family agrees, put it in writing. A simple one-page document can list each firearm by make, model, and serial number; name the person or place that will hold each firearm if needed; list the warning signs that trigger the plan (a doctors diagnosis, an unsafe handling incident, a memory test below a certain score); and include the gun owners signature. This is not a legal will — it is a family agreement. But the signature matters because it shows everyone agreed while the owner had full capacity.",
+        content: "Once the family agrees, put it in writing. A simple one-page document can list each firearm by make, model, and serial number; name the person or place that will hold each firearm if needed; list the warning signs that trigger the plan (a doctors diagnosis, an unsafe handling incident, a memory test below a certain score); and include the gun owners signature. This is not a legal will. It is a family agreement. But the signature matters because it shows everyone agreed while the owner had full capacity.",
       },
       {
         title: "Review the plan every year",
@@ -119,7 +119,7 @@ export const guidesBatch273: Guide[] = [
       },
       {
         title: "Pair the crisis line with temporary storage",
-        content: "A 988 counselor can help arrange brief firearm storage during a high-risk period. They know the Hold My Guns network, can connect to local FFL dealers, and can talk through whether a trusted family member is the right holder. The goal is a few weeks of physical separation while the immediate crisis passes, treatment starts, or a new prescription stabilizes. This is not a permanent removal — it is a safety bridge.",
+        content: "A 988 counselor can help arrange brief firearm storage during a high-risk period. They know the Hold My Guns network, can connect to local FFL dealers, and can talk through whether a trusted family member is the right holder. The goal is a few weeks of physical separation while the immediate crisis passes, treatment starts, or a new prescription stabilizes. This is not a permanent removal. It is a safety bridge.",
       },
       {
         title: "Take the free CALM training if you are a family member",
@@ -246,7 +246,7 @@ export const guidesBatch273: Guide[] = [
       },
       {
         title: "Plan for unwanted firearms and disputes",
-        content: "Some heirs may not want the firearm — they may not shoot, they may have small children, or they may live in a state with restrictive laws. Add a clause in the will saying that any heir who declines a firearm bequest within 60 days of notification triggers a sale through the executors chosen FFL with proceeds going to that same heir. This avoids the awkwardness of the executor pressuring a reluctant heir to take a firearm. For value disputes, include language that says the executor may get an appraisal from a certified firearms appraiser, with the cost paid by the estate.",
+        content: "Some heirs may not want the firearm. They may not shoot, they may have small children, or they may live in a state with restrictive laws. Add a clause in the will saying that any heir who declines a firearm bequest within 60 days of notification triggers a sale through the executors chosen FFL with proceeds going to that same heir. This avoids the awkwardness of the executor pressuring a reluctant heir to take a firearm. For value disputes, include language that says the executor may get an appraisal from a certified firearms appraiser, with the cost paid by the estate.",
       },
       {
         title: "Review and update every three years",

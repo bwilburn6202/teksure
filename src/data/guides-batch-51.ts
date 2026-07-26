@@ -4,14 +4,14 @@ export const guidesBatch51: Guide[] = [
   {
     slug: `gmail-labels-guide`,
     title: `How to Use Gmail Labels to Organize Your Email`,
-    excerpt: `Color-code and sort your Gmail inbox with labels — they work like folders but let one email belong to multiple groups at once.`,
+    excerpt: `Color-code and sort your Gmail inbox with labels. They work like folders but let one email belong to multiple groups at once.`,
     category: `essential-skills`,
     tags: [`gmail`, `email`, `organization`, `labels`, `inbox`],
     readTime: `6 min`,
     thumbnailEmoji: ``,
     publishedAt: `2026-04-19`,
     difficulty: `Beginner`,
-    body: `If your Gmail inbox feels like a pile of unsorted mail on the kitchen table, labels can help you bring order to it. Labels work a lot like folders — you can group emails about a specific topic, person, or project into one place. But labels have an extra advantage: one email can have multiple labels at the same time. For example, a message from your doctor about a bill could be labeled both "Doctor" and "Bills."
+    body: `If your Gmail inbox feels like a pile of unsorted mail on the kitchen table, labels can help you bring order to it. Labels work a lot like folders. You can group emails about a specific topic, person, or project into one place. But labels have an extra advantage: one email can have multiple labels at the same time. For example, a message from your doctor about a bill could be labeled both "Doctor" and "Bills."
 
 Labels also show up in the left sidebar of Gmail. So you can click on any label to see all emails with that label at once. You can color-code labels, which makes it even faster to spot what's what. For instance, you might make your "Family" label green, your "Bills" label red, and your "Medical" label blue.
 
@@ -81,7 +81,7 @@ Snooze works on the Gmail website and on the Gmail app for iPhone and Android. Y
       {
         title: `Snooze on the Gmail app (iPhone or Android)`,
         content: `Open the Gmail app and find the email you want to snooze. Swipe right on the email to reveal a quick-snooze option, or open the email and tap the three dots (more options) in the top right corner, then tap "Snooze." Choose a time or tap "Pick a date & time" to enter a custom date.`,
-        tip: `On Android, you can change what the swipe gesture does in Gmail Settings under "Swipe actions" — you can set either swipe direction to Snooze.`
+        tip: `On Android, you can change what the swipe gesture does in Gmail Settings under "Swipe actions". You can set either swipe direction to Snooze.`
       },
       {
         title: `Check or change a snoozed email early`,
@@ -156,11 +156,11 @@ VIP works on iPhone, iPad, and Mac — and your VIP list syncs across all your A
 
 This is a great tool if you want to make sure you never miss an email from a specific doctor's office, pharmacy, your children or grandchildren, your lawyer, your accountant, or any other person whose messages matter most to you.
 
-You can add up to several dozen VIP contacts. And you can remove anyone from the VIP list just as easily. Apple Mail is the built-in email app on iPhones and Macs — it comes with your device and doesn't require any downloads or subscriptions.`,
+You can add up to several dozen VIP contacts. And you can remove anyone from the VIP list just as easily. Apple Mail is the built-in email app on iPhones and Macs. It comes with your device and doesn't require any downloads or subscriptions.`,
     steps: [
       {
         title: `Add someone as a VIP on iPhone or iPad`,
-        content: `Open the Mail app. Find an email from the person you want to make a VIP — it can be any email from them, even an old one. Tap the sender's name at the top of the email (where it says "From: [Name]"). A small menu will appear — tap "Add to VIP." You'll see a brief confirmation. That's it — that person is now a VIP.`,
+        content: `Open the Mail app. Find an email from the person you want to make a VIP. It can be any email from them, even an old one. Tap the sender's name at the top of the email (where it says "From: [Name]"). A small menu will appear — tap "Add to VIP." You'll see a brief confirmation. That's it — that person is now a VIP.`,
         tip: `You can also add a VIP by tapping the VIP Mailbox in your inbox list, tapping the info button (a small "i" in a circle), and tapping "Add VIP."`
       },
       {
@@ -170,7 +170,7 @@ You can add up to several dozen VIP contacts. And you can remove anyone from the
       {
         title: `Find your VIP mailbox`,
         content: `In the Mail app on iPhone or iPad, go back to the main mailbox list (the screen that shows "All Inboxes," "Inbox," etc.). You should see "VIP" listed there with a star icon next to it. Tap it to see all emails from your VIP contacts in one place. On Mac, the VIP mailbox appears in the left sidebar under "Favorites."`,
-        tip: `If you don't see the VIP mailbox listed, scroll down in the mailbox list — it may be below the fold.`
+        tip: `If you don't see the VIP mailbox listed, scroll down in the mailbox list. It may be below the fold.`
       },
       {
         title: `Set up special notifications for VIP emails`,
@@ -338,7 +338,7 @@ This guide will show you the basics using a simple expense tracker as an example
     difficulty: `Beginner`,
     body: `A presentation is a set of slides — like digital pages that you can show on a computer screen or projector. Microsoft PowerPoint is the most widely used program for making presentations. You might use it to share photos from a trip, put together a family reunion program, present information at a community meeting, or create a visual aid for a church or club.
 
-If you don't have Microsoft Office installed on your computer, you can use PowerPoint Online for free at office.com — it works directly in your web browser and doesn't require any software installation. This guide applies to both the full desktop version and the free online version.
+If you don't have Microsoft Office installed on your computer, you can use PowerPoint Online for free at office.com. It works directly in your web browser and doesn't require any software installation. This guide applies to both the full desktop version and the free online version.
 
 A typical presentation is made of individual "slides." Each slide usually has:
 - A title at the top
@@ -352,7 +352,7 @@ PowerPoint is free to use online at office.com/PowerPoint with a free Microsoft 
       {
         title: `Start a new presentation`,
         content: `Open PowerPoint on your computer, or go to office.com in your web browser and sign in with a free Microsoft account, then click PowerPoint. Click "New Presentation" or choose a theme/template from the gallery. A blank slide will appear with two text boxes: one for a title and one for a subtitle. Click inside each box and type your title and any subtitle text.`,
-        tip: `Choose a template with colors and fonts you like — it saves time and gives your presentation a polished look without any design work.`
+        tip: `Choose a template with colors and fonts you like. It saves time and gives your presentation a polished look without any design work.`
       },
       {
         title: `Add a new slide`,
@@ -469,7 +469,7 @@ All of these features are free and built into the Maps app on your iPhone or iPa
       {
         title: `Use Look Around to preview a destination`,
         content: `Search for any address or business in Apple Maps. When you see the location highlighted on the map, look for a small binoculars icon or a small square thumbnail in the bottom left of the screen. Tap it. You'll see a full-screen street-level photo that you can drag left and right to look around. This helps you recognize what a building looks like before you arrive, which is especially helpful in unfamiliar areas.`,
-        tip: `Look Around isn't available everywhere — it works best in major US cities and towns. If the binoculars icon doesn't appear, Look Around isn't available for that location yet.`
+        tip: `Look Around isn't available everywhere. It works best in major US cities and towns. If the binoculars icon doesn't appear, Look Around isn't available for that location yet.`
       },
       {
         title: `Explore indoor maps at airports and malls`,
@@ -497,7 +497,7 @@ The feature you'll set up is called "PC Folder Backup" or "Folder Backup." It te
 Benefits of this setup:
 - If your PC breaks, gets stolen, or is damaged, your files are safe in the cloud
 - You can access your files from any computer or your phone
-- It works silently in the background — you don't have to do anything after setup
+- It works silently in the background. You don't have to do anything after setup
 - Files are version-controlled. So you can recover an earlier version if you accidentally change something
 
 This guide assumes you have a Microsoft account and are using Windows 10 or 11.`,
@@ -508,8 +508,8 @@ This guide assumes you have a Microsoft account and are using Windows 10 or 11.`
       },
       {
         title: `Sign in to OneDrive`,
-        content: `Right-click the OneDrive cloud icon in the system tray and choose "Settings." If you're not signed in, click "Sign in" and enter your Microsoft account email address and password. If you're not sure which email address this is, look at your Windows login screen — it often shows your Microsoft account email there.`,
-        tip: `If you don't have a Microsoft account, you can create one for free at account.microsoft.com — you can use any email address, not just an Outlook address.`
+        content: `Right-click the OneDrive cloud icon in the system tray and choose "Settings." If you're not signed in, click "Sign in" and enter your Microsoft account email address and password. If you're not sure which email address this is, look at your Windows login screen. It often shows your Microsoft account email there.`,
+        tip: `If you don't have a Microsoft account, you can create one for free at account.microsoft.com. You can use any email address, not just an Outlook address.`
       },
       {
         title: `Open Backup Settings`,
@@ -614,7 +614,7 @@ This guide covers both sending and listening to voice messages.`,
       {
         title: `Record a voice message`,
         content: `Press and hold the microphone icon. While you're holding it, speak your message clearly. You'll see a red recording indicator showing how long you've been recording. When you're done, lift your finger off the button. WhatsApp will automatically send the message.`,
-        tip: `Hold the phone a comfortable distance from your face — you don't need to speak directly into it. Normal conversational volume works fine.`
+        tip: `Hold the phone a comfortable distance from your face. You don't need to speak directly into it. Normal conversational volume works fine.`
       },
       {
         title: `Record a longer message without holding your finger down`,
@@ -683,7 +683,7 @@ Effects only work when both the sender and recipient are using iPhones with iMes
       },
       {
         title: `Replay an effect you received`,
-        content: `When you receive a message with a screen effect, it plays automatically as soon as the message arrives. If you want to see it again, tap and hold the message bubble briefly — you may see a "Replay" option appear, or you can tap the word "Replay" that sometimes appears below the animation after it plays.`
+        content: `When you receive a message with a screen effect, it plays automatically as soon as the message arrives. If you want to see it again, tap and hold the message bubble briefly. You may see a "Replay" option appear, or you can tap the word "Replay" that sometimes appears below the animation after it plays.`
       }
     ]
   },
@@ -752,7 +752,7 @@ This is especially useful for:
 - Saving a full web page with medical or financial information
 - Sharing an entire page with a family member or advisor
 
-This feature only works in Safari on iPhone — it doesn't work in Chrome, Firefox, or other browsers on iPhone. It also requires iOS 17 or later (if your iPhone was bought after 2018, you almost certainly have iOS 17 or newer).
+This feature only works in Safari on iPhone. It doesn't work in Chrome, Firefox, or other browsers on iPhone. It also requires iOS 17 or later (if your iPhone was bought after 2018, you almost certainly have iOS 17 or newer).
 
 The key to accessing this feature is what you see after you take a regular screenshot — there's an option that most people walk right past.`,
     steps: [
@@ -788,15 +788,15 @@ A small preview of the screenshot will appear in the bottom-left corner. Tap on 
     thumbnailEmoji: ``,
     publishedAt: `2026-04-19`,
     difficulty: `Beginner`,
-    body: `Google Drive is a free cloud storage service from Google. If you use Gmail, you already have Google Drive — it comes with every Google account, and includes 15 GB of free storage. You can use Google Drive to store photos, documents, spreadsheets, and any other files, and access them from any device with an internet connection.
+    body: `Google Drive is a free cloud storage service from Google. If you use Gmail, you already have Google Drive. It comes with every Google account, and includes 15 GB of free storage. You can use Google Drive to store photos, documents, spreadsheets, and any other files, and access them from any device with an internet connection.
 
 The problem is that without some organization, Google Drive can become as cluttered as a desktop covered in papers. This guide will show you how to keep it tidy so you can find what you need quickly.
 
-**Folders** are the foundation of good organization. Think of them like filing cabinet drawers — you can have a folder for Medical, one for Finances, one for Photos, one for Family, and so on. Within any folder, you can create more folders (called subfolders) for even finer organization.
+**Folders** are the foundation of good organization. Think of them like filing cabinet drawers. You can have a folder for Medical, one for Finances, one for Photos, one for Family, and so on. Within any folder, you can create more folders (called subfolders) for even finer organization.
 
 **Color coding** lets you assign a color to any folder so you can spot it at a glance. A red folder for Bills, a green one for Medical records, a blue one for Family photos — whatever makes sense to you.
 
-**Starred files** are a way to mark your most important or most-used files. Think of it like bookmarking — you can click "Starred" in the left sidebar to see all your starred files without searching.
+**Starred files** are a way to mark your most important or most-used files. Think of it like bookmarking. You can click "Starred" in the left sidebar to see all your starred files without searching.
 
 **Search** in Google Drive is powerful. You can search by file name, by type of file, by who shared it, or by date — and Google Drive can even search inside documents for keywords.`,
     steps: [
@@ -820,7 +820,7 @@ The problem is that without some organization, Google Drive can become as clutte
       },
       {
         title: `Search by file type or date`,
-        content: `Click the search bar at the top of Google Drive. Type a file name or keyword to search. For more specific searching, look for a small dropdown arrow or "Search options" near the right side of the search bar. Click it to see advanced search options — you can filter by file type (documents, spreadsheets, images, PDFs), owner, date modified, and more.`,
+        content: `Click the search bar at the top of Google Drive. Type a file name or keyword to search. For more specific searching, look for a small dropdown arrow or "Search options" near the right side of the search bar. Click it to see advanced search options. You can filter by file type (documents, spreadsheets, images, PDFs), owner, date modified, and more.`,
         tip: `Searching for type:pdf will show all your PDF files. Searching for type:spreadsheet shows all spreadsheets. This is faster than scrolling through folders.`
       }
     ]
@@ -867,7 +867,7 @@ These features are free and available on any iPhone running a recent version of 
       {
         title: `Share purchased apps with family members`,
         content: `If you've paid for an app, your family members can download it for free through Family Sharing. First, make sure you have Family Sharing set up: go to Settings, tap your name, then "Family Sharing." Once set up, family members can tap their own name in Settings, then "Family Sharing," and view all apps you've purchased that are eligible for sharing. They can download shared apps directly from the App Store at no charge.`,
-        tip: `Not all apps support family sharing — it depends on the developer. Most paid apps do, but some apps specifically disable sharing.`
+        tip: `Not all apps support family sharing. It depends on the developer. Most paid apps do, but some apps specifically disable sharing.`
       }
     ]
   },
@@ -907,7 +907,7 @@ These features are available on all Android phones with the Google Play Store, i
       },
       {
         title: `Check Play Protect status`,
-        content: `Open the Google Play Store app. Tap your profile picture in the top right corner, then tap "Play Protect." You'll see the current status — it should say "No harmful apps found" if everything is okay. Tap the "Scan" button to run an immediate check of all installed apps. If Play Protect finds anything suspicious, it will alert you and give you the option to remove the problematic app.`
+        content: `Open the Google Play Store app. Tap your profile picture in the top right corner, then tap "Play Protect." You'll see the current status. It should say "No harmful apps found" if everything is okay. Tap the "Scan" button to run an immediate check of all installed apps. If Play Protect finds anything suspicious, it will alert you and give you the option to remove the problematic app.`
       },
       {
         title: `Check an app's safety before downloading`,
@@ -964,7 +964,7 @@ If you ever need to restore a file — even an accidentally deleted one — Time
       },
       {
         title: `Monitor your backup progress`,
-        content: `You'll see a Time Machine icon appear in your menu bar at the top right of your screen (it looks like a clock with a circular arrow). Click it to see the backup status. The first backup will say something like "Backing up: 20 GB of 300 GB." Let the backup run — it may take several hours the first time. Your Mac can be used normally during this time, though it may run slightly slower.`,
+        content: `You'll see a Time Machine icon appear in your menu bar at the top right of your screen (it looks like a clock with a circular arrow). Click it to see the backup status. The first backup will say something like "Backing up: 20 GB of 300 GB." Let the backup run. It may take several hours the first time. Your Mac can be used normally during this time, though it may run slightly slower.`,
         tip: `Leave your Mac plugged into power and the external drive connected during the first backup — it's a long process and you don't want it interrupted.`
       },
       {

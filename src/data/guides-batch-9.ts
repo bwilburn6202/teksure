@@ -206,7 +206,7 @@ You can also control which specific apps get to see your location. This is a goo
     difficulty: 'Beginner',
     body: `Android phones save a detailed record of everywhere you go, and Google keeps a long history in something called Timeline. You can shut this off entirely or pick which apps get to see where you are.
 
-Turning off location tracking does not break your phone. You can still use Maps for directions when you need it — you just stop the always-on logging in the background.`,
+Turning off location tracking does not break your phone. You can still use Maps for directions when you need it. You just stop the always-on logging in the background.`,
     steps: [
       { title: 'Open Settings', content: 'Swipe down from the top of your screen and tap the gear icon. Or find the Settings app in your app drawer.' },
       { title: 'Tap Location', content: 'Scroll down and tap Location. This shows all location settings for your phone.' },
@@ -248,7 +248,7 @@ Most social networks strip this data automatically, but texting and email usuall
     difficulty: 'Beginner',
     body: `Find My iPhone lets you see your phone on a map, play a sound to help find it under the couch, lock it remotely, or erase everything if you cannot get it back. It is free and built into every iPhone.
 
-Turn it on before you lose the phone — you cannot add it after a device is missing. It takes about 2 minutes to set up.`,
+Turn it on before you lose the phone. You cannot add it after a device is missing. It takes about 2 minutes to set up.`,
     steps: [
       { title: 'Open Settings and tap your name', content: 'Open the Settings app and tap your name at the very top of the screen. This opens your Apple ID settings.' },
       { title: 'Tap Find My', content: 'Scroll down and tap Find My. This is where all the lost-phone settings live.' },
@@ -467,7 +467,7 @@ Plans change their drug lists and doctor networks every year. So it is worth com
       { title: `Check your plan's Annual Notice of Change`, content: 'Every September, your current plan mails you a packet called the Annual Notice of Change (ANOC). Look at any differences for next year — new drug costs, removed doctors, or a higher premium.' },
       { title: 'Go to medicare.gov/plan-compare', content: 'Open your browser and go to medicare.gov/plan-compare. Enter your ZIP code, then sign in with your Medicare account so the tool remembers your drugs and doctors.' },
       { title: 'Run a fresh comparison for next year', content: 'The tool will show all plans available next year, including your current one. Sort by Total Yearly Cost to see which plan saves you the most based on the drugs you actually take.' },
-      { title: 'Enroll in the new plan', content: 'When you find a better plan, click Enroll. Medicare handles the switch automatically — you do NOT need to cancel your old plan, it drops off on December 31.' },
+      { title: 'Enroll in the new plan', content: 'When you find a better plan, click Enroll. Medicare handles the switch automatically. You do NOT need to cancel your old plan, it drops off on December 31.' },
       { title: 'Save your confirmation', content: 'After enrolling, save the confirmation email or number. Your new plan card will arrive in the mail by mid-December. Coverage starts January 1 of the new year.' },
     ],
   },
@@ -598,7 +598,7 @@ Most appointments on Zocdoc are available within a week. And you can see ratings
       { title: 'Review the list of doctors', content: 'Zocdoc shows a list of matching doctors with photos, reviews, and the soonest available appointment. Click any doctor to see more details, including their background and patient reviews.' },
       { title: 'Pick an available time slot', content: 'Each doctor shows open appointment times as green buttons. Click the time and date that works for you — in-person visits and video visits are both shown.' },
       { title: 'Enter your name and insurance', content: 'Fill in your name, date of birth, phone number, and insurance details. Zocdoc verifies your insurance automatically to make sure the doctor takes it.' },
-      { title: 'Confirm the appointment', content: 'Click Book. You will get a confirmation email and a text reminder. If you need to reschedule or cancel, do it in the Zocdoc app — it is faster than calling the office.' },
+      { title: 'Confirm the appointment', content: 'Click Book. You will get a confirmation email and a text reminder. If you need to reschedule or cancel, do it in the Zocdoc app. It is faster than calling the office.' },
     ],
   },
   {
@@ -613,7 +613,7 @@ Most appointments on Zocdoc are available within a week. And you can see ratings
     difficulty: 'Beginner',
     body: `Most hospitals and imaging centers now let you book your yearly mammogram online. You pick a date and time that works, upload your insurance, and get a confirmation email — usually in under 5 minutes.
 
-You often do not need a doctor's order if you are over 40 and getting a routine screening. Check with your insurance first — they usually cover one mammogram a year at 100%.`,
+You often do not need a doctor's order if you are over 40 and getting a routine screening. Check with your insurance first. They usually cover one mammogram a year at 100%.`,
     steps: [
       { title: 'Find your local imaging center or hospital', content: 'Call your insurance, check their website, or ask your doctor which imaging centers accept your plan. Common ones include RadNet, your hospital system, and Solis Mammography.' },
       { title: 'Go to their website and look for online booking', content: `Open the imaging center's website in your browser. Look for a button or menu item that says "Schedule Online", "Book an Appointment", or "Request Appointment".` },
@@ -701,7 +701,7 @@ Most people who use the app daily for 3 months lose weight because they become a
 
 The app talks you through each workout, telling you when to walk and when to run. Thousands of people with no running history have finished a 5K using this program.`,
     steps: [
-      { title: 'Download the app', content: 'Install the official "C25K - 5K Trainer" app from the App Store or Play Store. The free version includes all 9 weeks — you do not need to pay for anything.' },
+      { title: 'Download the app', content: 'Install the official "C25K - 5K Trainer" app from the App Store or Play Store. The free version includes all 9 weeks. You do not need to pay for anything.' },
       { title: 'Set up your profile', content: 'Enter your name and pick a voice coach that you like. The coach will speak in your headphones during workouts, telling you when to walk and run.' },
       { title: 'Do Week 1 Day 1', content: 'Start with Week 1 Day 1: a 5-minute warm-up walk, then alternating 60 seconds of running with 90 seconds of walking for 20 minutes, then a 5-minute cool-down. Put on headphones and follow the voice prompts.' },
       { title: 'Follow the schedule', content: 'Do 3 workouts per week, with a rest day in between. Each week gets a bit harder — longer running times and less walking. Repeat a week if you feel it is too much. There is no rush.' },
@@ -852,7 +852,7 @@ The best feature is the ratings. Sort any search by rating and you can trust tha
     steps: [
       { title: 'Go to allrecipes.com', content: 'Open your browser and go to allrecipes.com. You do not need to sign up to browse — but creating a free account lets you save favorites.' },
       { title: 'Search for what you want to cook', content: 'Type a dish name or ingredient in the search bar at the top, like "banana bread" or "beef stew". Hit Enter to see results.' },
-      { title: 'Sort by highest rated', content: 'On the results page, click the Sort menu and pick "Rating". This puts the best-reviewed recipes at the top. Avoid recipes with less than 50 reviews — they may not be tested enough.' },
+      { title: 'Sort by highest rated', content: 'On the results page, click the Sort menu and pick "Rating". This puts the best-reviewed recipes at the top. Avoid recipes with less than 50 reviews. They may not be tested enough.' },
       { title: 'Read the reviews', content: 'Click a recipe and scroll to the reviews at the bottom. Reviewers often share small changes that improve the recipe — like more garlic, less sugar, or a longer cook time.' },
       { title: 'Save your favorites', content: 'Click the heart icon on any recipe to save it. Or use the print icon to print a clean version without ads. You can also email the recipe to yourself to pull up on your phone while cooking.' },
     ],
@@ -913,7 +913,7 @@ Monarch costs $15 a month, or $100 a year if paid upfront. It has no ads, unlike
     difficulty: 'Intermediate',
     body: `YNAB (short for You Need A Budget) is a budgeting app built around a method where every dollar you have is assigned a job — rent, groceries, savings, etc. — before you spend it. People who stick with it for 3 months often save thousands.
 
-YNAB costs $109 a year or $15 a month, with a 34-day free trial. It is more hands-on than Monarch — you enter or approve every transaction — but that is what makes it work.`,
+YNAB costs $109 a year or $15 a month, with a 34-day free trial. It is more hands-on than Monarch. You enter or approve every transaction — but that is what makes it work.`,
     steps: [
       { title: 'Start the free trial at ynab.com', content: 'Go to youneedabudget.com (or ynab.com) in your browser. Click "Try it Free" and sign up with your email. You get 34 days free with no payment card required.' },
       { title: 'Connect your bank accounts', content: 'Click Add Account and search for your bank. Enter your online-banking login so YNAB can pull in transactions. Repeat for credit cards and savings.' },

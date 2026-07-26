@@ -128,7 +128,7 @@ Zillow also lets you save homes to a favorites list, set up alerts when new home
       {
         title: `Save Homes and Set Up Alerts`,
         content: `Tap the heart icon on any listing to save it to your favorites list, accessible from your account profile. To get notified when new homes matching your search criteria come on the market, tap "Save Search" after running a search. Zillow will email or push-notify you with new matches as they appear. So you do not have to check back manually every day.`,
-        tip: `Quick Tip: The "Zestimate" for your own home updates regularly — you can claim your home on Zillow to correct any outdated facts about it, which can improve the estimate's accuracy.`,
+        tip: `Quick Tip: The "Zestimate" for your own home updates regularly. You can claim your home on Zillow to correct any outdated facts about it, which can improve the estimate's accuracy.`,
       },
     ],
   },
@@ -370,7 +370,7 @@ Houzz is free to browse and use as an idea-gathering tool. Professionals pay to 
 
 These apps all work on the same basic idea: you enter the dimensions of your room (length and width in feet or inches), place a digital floor plan on the screen, and then drag and drop scaled furniture pieces into position. Because every item is drawn to scale, you can tell at a glance whether that sectional sofa will actually fit along the wall or whether the dresser will block the closet door.
 
-Several good room planning apps are available for free or at low cost. IKEA's planning tools are available directly on the IKEA website and are optimized for IKEA furniture. But they work as a general room planner too. Roomstyler 3D Home Planner (available at roomstyler.com) lets you build a room in three dimensions and then "walk through" it virtually. Magicplan is a phone app that uses your camera to measure rooms automatically — you pan the phone around the room and it creates a floor plan for you, which you can then furnish.
+Several good room planning apps are available for free or at low cost. IKEA's planning tools are available directly on the IKEA website and are optimized for IKEA furniture. But they work as a general room planner too. Roomstyler 3D Home Planner (available at roomstyler.com) lets you build a room in three dimensions and then "walk through" it virtually. Magicplan is a phone app that uses your camera to measure rooms automatically. You pan the phone around the room and it creates a floor plan for you, which you can then furnish.
 
 For users who want something very straightforward, Planner 5D offers a free version with a large library of furniture items and lets you switch between a top-down 2D view and a 3D view at any time. It is available as a phone app and a web browser tool.
 
@@ -391,7 +391,7 @@ The most important step before using any of these apps is measuring your room ac
       },
       {
         title: `Add and Arrange Furniture`,
-        content: `Browse the furniture library and select items that match what you own or what you are considering buying. Most apps let you resize furniture pieces to match your actual measurements. Drag items onto the floor plan and rotate them to test different orientations. Pay attention to traffic flow — there should be at least 30 to 36 inches of clear path between major pieces of furniture so people can walk through comfortably.`,
+        content: `Browse the furniture library and select items that match what you own or what you are considering buying. Most apps let you resize furniture pieces to match your actual measurements. Drag items onto the floor plan and rotate them to test different orientations. Pay attention to traffic flow. There should be at least 30 to 36 inches of clear path between major pieces of furniture so people can walk through comfortably.`,
         warning: `Remember to check that drawers and doors can open fully in your planned layout. A dresser placed too close to a wall may not allow its drawers to open all the way.`,
       },
       {
@@ -436,11 +436,11 @@ Fundrise charges an annual management fee of around 0.85 percent, which is low c
       },
       {
         title: `Track Your Investment and Dividends`,
-        content: `Log in to your Fundrise dashboard to see your current portfolio value, dividend earnings, and any appreciation in the underlying properties. Dividends are typically paid out quarterly — you can choose to receive them as a cash payout to your bank account or reinvest them automatically for compounding growth. Your dashboard also shows how the individual properties in your portfolio are performing.`,
+        content: `Log in to your Fundrise dashboard to see your current portfolio value, dividend earnings, and any appreciation in the underlying properties. Dividends are typically paid out quarterly. You can choose to receive them as a cash payout to your bank account or reinvest them automatically for compounding growth. Your dashboard also shows how the individual properties in your portfolio are performing.`,
       },
       {
         title: `Understand the Redemption Process Before You Need It`,
-        content: `Fundrise is not a savings account — you cannot withdraw funds on demand. The platform runs a quarterly redemption program where you can request to redeem shares, but Fundrise can limit or suspend redemptions during market stress. Selling within the first five years may result in a penalty of up to 1 percent of the amount withdrawn. Plan this investment for money you genuinely will not need for at least three to five years.`,
+        content: `Fundrise is not a savings account. You cannot withdraw funds on demand. The platform runs a quarterly redemption program where you can request to redeem shares, but Fundrise can limit or suspend redemptions during market stress. Selling within the first five years may result in a penalty of up to 1 percent of the amount withdrawn. Plan this investment for money you genuinely will not need for at least three to five years.`,
         warning: `Fundrise investments are not FDIC insured and are not backed by any government guarantee. Your account value can go down as well as up. Only invest money that would not cause you financial hardship if its value decreased.`,
       },
     ],
@@ -566,7 +566,7 @@ The platform has protections for both buyers and sellers. Buyers can rate a tran
       },
       {
         title: `Set a Price and Choose Shipping Options`,
-        content: `Research comparable listings by searching for similar items before settling on a price. Mercari will estimate the shipping cost based on the item's category and your location — you can choose to pay shipping yourself (which often attracts more buyers) or pass the cost to the buyer. If you select "Mercari Prepaid Label," Mercari generates a label at checkout that covers shipping based on the weight you enter.`,
+        content: `Research comparable listings by searching for similar items before settling on a price. Mercari will estimate the shipping cost based on the item's category and your location. You can choose to pay shipping yourself (which often attracts more buyers) or pass the cost to the buyer. If you select "Mercari Prepaid Label," Mercari generates a label at checkout that covers shipping based on the weight you enter.`,
       },
       {
         title: `Ship the Item After a Sale`,
@@ -651,7 +651,7 @@ To sell on Whatnot, you need to apply for seller access through the app. Once ap
       },
       {
         title: `Browse and Join a Live Stream`,
-        content: `The Whatnot home screen shows live streams happening right now, organized by category. Tap any stream to join. You can watch without bidding to get a feel for how the platform works. The seller's camera shows the items for auction, and a live chat runs alongside the video. Upcoming scheduled shows are also listed — you can tap "Set Reminder" to be notified when a specific seller goes live.`,
+        content: `The Whatnot home screen shows live streams happening right now, organized by category. Tap any stream to join. You can watch without bidding to get a feel for how the platform works. The seller's camera shows the items for auction, and a live chat runs alongside the video. Upcoming scheduled shows are also listed. You can tap "Set Reminder" to be notified when a specific seller goes live.`,
         tip: `Quick Tip: Follow sellers whose collections match your interests. Their upcoming shows will appear in your "Following" tab, making it straightforward to keep track of when they go live.`,
       },
       {
@@ -686,7 +686,7 @@ For sellers, this is a meaningful advantage. You keep everything you earn, which
 
 Vinted covers clothing for all genders and ages, shoes, bags, accessories, and some home and beauty items. Like other resale apps, selling requires you to photograph your items, write descriptions, and set prices. Vinted provides suggested prices based on similar listings, which can be helpful if you are not sure where to start.
 
-The platform generates a prepaid shipping label when a sale is made, so shipping is handled the same way as Poshmark — you pack the item, print the label, and drop it at the carrier. Sellers receive payment after the buyer confirms delivery or after a set number of days if the buyer does not respond.
+The platform generates a prepaid shipping label when a sale is made, so shipping is handled the same way as Poshmark. You pack the item, print the label, and drop it at the carrier. Sellers receive payment after the buyer confirms delivery or after a set number of days if the buyer does not respond.
 
 Vinted also has a "Bump" feature, which is a paid promotion option. Paying to "Bump" a listing gives it higher visibility in search results for a set period. This is optional and not necessary for regular selling. But it can be useful if you have a higher-value item that is not moving.
 
@@ -703,7 +703,7 @@ If you have clothes to sell and want to keep the maximum amount from each sale, 
       },
       {
         title: `Understand the Buyer Fee Structure`,
-        content: `When a buyer purchases your item, Vinted adds a buyer protection fee of roughly 5 percent plus a fixed amount to the buyer's total. This is separate from what you receive — you still get your full asking price. The buyer sees the total cost (item price plus the Vinted fee) before completing the purchase. This transparency helps buyers make informed decisions and eliminates friction between you and the buyer over fees.`,
+        content: `When a buyer purchases your item, Vinted adds a buyer protection fee of roughly 5 percent plus a fixed amount to the buyer's total. This is separate from what you receive. You still get your full asking price. The buyer sees the total cost (item price plus the Vinted fee) before completing the purchase. This transparency helps buyers make informed decisions and eliminates friction between you and the buyer over fees.`,
       },
       {
         title: `Ship With the Prepaid Label`,
@@ -753,7 +753,7 @@ One practical consideration: Rent the Runway includes backup size options with m
       },
       {
         title: `Set Up a Subscription for Regular Access`,
-        content: `If you want ongoing access rather than one-off rentals, sign up for a subscription plan from the app or website. Enter your payment method and select your plan level. Once active, browse the full catalog and choose items to start your rotation. When items arrive, wear them for as long as you want, then ship them back and select your next items. There is no cleaning involved — you return items in the prepaid bag included with every shipment.`,
+        content: `If you want ongoing access rather than one-off rentals, sign up for a subscription plan from the app or website. Enter your payment method and select your plan level. Once active, browse the full catalog and choose items to start your rotation. When items arrive, wear them for as long as you want, then ship them back and select your next items. There is no cleaning involved. You return items in the prepaid bag included with every shipment.`,
       },
       {
         title: `Manage Your Account and Pause or Cancel`,
@@ -788,7 +788,7 @@ For anyone who buys clothing online and currently visits multiple websites befor
       },
       {
         title: `Filter Results to Narrow Your Options`,
-        content: `Use the filter options above the product grid to refine your results. You can filter by price range (drag the slider to set a minimum and maximum), size, color, brand, and whether items are on sale. The "On Sale" filter is particularly useful — it pulls together discounted items from all connected stores simultaneously, showing you deals you would otherwise have to hunt for individually.`,
+        content: `Use the filter options above the product grid to refine your results. You can filter by price range (drag the slider to set a minimum and maximum), size, color, brand, and whether items are on sale. The "On Sale" filter is particularly useful. It pulls together discounted items from all connected stores simultaneously, showing you deals you would otherwise have to hunt for individually.`,
         tip: `Quick Tip: Set a price alert on any item you like but are not ready to buy. Lyst will notify you by email when the price drops or when your size comes back in stock.`,
       },
       {

@@ -17,7 +17,7 @@ When you first open Freeform, you get a blank white canvas with no edges. You ca
 
 One of the most useful features is collaboration. You can share your Freeform board with a family member or friend via iMessage or email. Once they accept, both of you can see each other's changes in real time. This makes it perfect for planning events together even when you're in different locations.
 
-If you have an Apple Pencil, Freeform really shines — you can draw and write naturally on the screen. But even without a stylus, you can type, add images from your photo library, and use your finger to sketch rough shapes.
+If you have an Apple Pencil, Freeform really shines. You can draw and write naturally on the screen. But even without a stylus, you can type, add images from your photo library, and use your finger to sketch rough shapes.
 
 Freeform boards are saved automatically in iCloud, so your content stays safe and shows up on all your Apple devices. Boards you haven't touched in a while are listed in the main view. And you can rename or delete them at any time.`,
     steps: [
@@ -63,7 +63,7 @@ This is especially useful if you're driving home alone at night, going for a wal
 
 Here's how it works: you start a Check In from inside the Messages app before your trip. You type how long you expect the journey to take, and the person you're messaging gets a progress update. When you arrive, they get a confirmation. If your iPhone notices you aren't moving toward your destination or your phone battery dies, your contact is sent your last known location along with other helpful details.
 
-Check In shares only what's necessary — it does not send your real-time location throughout the trip, just a check-in message when you arrive (or an alert if something seems wrong). Your contact must be using iPhone and Messages to receive Check In notifications.
+Check In shares only what's necessary. It does not send your real-time location throughout the trip, just a check-in message when you arrive (or an alert if something seems wrong). Your contact must be using iPhone and Messages to receive Check In notifications.
 
 You can use Check In for short trips or longer journeys. The feature asks for your estimated arrival time. And you can adjust it on the fly if your plans change.`,
     steps: [
@@ -77,7 +77,7 @@ You can use Check In for short trips or longer journeys. The feature asks for yo
       },
       {
         title: `Start a Check In`,
-        content: `Tap the plus (+) icon to the left of the text field, then tap "More." Scroll down and select "Check In." Tap "Continue" on the intro screen. You'll be asked to set your destination — you can type an address, choose a contact's address, or let Check In know when you arrive home.`,
+        content: `Tap the plus (+) icon to the left of the text field, then tap "More." Scroll down and select "Check In." Tap "Continue" on the intro screen. You'll be asked to set your destination. You can type an address, choose a contact's address, or let Check In know when you arrive home.`,
         tip: `If you don't see Check In in the menu, make sure both you and your contact are running iOS 17 or later (iOS 18 is the current version — update at Settings > General > Software Update).`,
       },
       {
@@ -114,7 +114,7 @@ Journaling has real benefits for mental health — writing down what's on your m
     steps: [
       {
         title: `Open the Journal app`,
-        content: `Find the Journal app on your home screen — it looks like a small open book. If you can't find it, swipe down from the center of the home screen and search "Journal." It requires iOS 17.2 or later, so update your iPhone first if needed via Settings > General > Software Update.`,
+        content: `Find the Journal app on your home screen. It looks like a small open book. If you can't find it, swipe down from the center of the home screen and search "Journal." It requires iOS 17.2 or later, so update your iPhone first if needed via Settings > General > Software Update.`,
       },
       {
         title: `Create your first entry`,
@@ -202,7 +202,7 @@ The Home app is free, privacy-focused, and requires no paid subscription. Howeve
     steps: [
       {
         title: `Open the Home app`,
-        content: `Find the Home app on your iPhone — it looks like a small house. If it's not on your home screen, swipe down and search for "Home." The app is pre-installed on all iPhones with iOS 8 or later.`,
+        content: `Find the Home app on your iPhone. It looks like a small house. If it's not on your home screen, swipe down and search for "Home." The app is pre-installed on all iPhones with iOS 8 or later.`,
       },
       {
         title: `Add a smart device`,
@@ -297,7 +297,7 @@ Flash drives are reusable, durable, and inexpensive. A 32GB drive holds roughly 
       {
         title: `Connect the flash drive to your Mac`,
         content: `Plug the flash drive into one of the USB-A or USB-C ports on your Mac. If your flash drive has a USB-A (rectangular) connector and your Mac only has USB-C ports, use a USB-C to USB-A adapter. The drive should appear on your desktop as an icon.`,
-        tip: `If you don't see it on the desktop, open Finder and look in the left sidebar under "Locations" — it will be listed there.`,
+        tip: `If you don't see it on the desktop, open Finder and look in the left sidebar under "Locations". It will be listed there.`,
       },
       {
         title: `Open the flash drive`,
@@ -403,7 +403,7 @@ If you shop at websites like Amazon or eBay often, you'll find the process very 
       },
       {
         title: `Weigh the package (if using Click-N-Ship online)`,
-        content: `If you're paying online at usps.com/ship (the "Click-N-Ship" feature), you'll need the weight and approximate dimensions of the box. A kitchen scale works fine. If you're not sure of the weight, you can pay at the post office — they weigh it for you.`,
+        content: `If you're paying online at usps.com/ship (the "Click-N-Ship" feature), you'll need the weight and approximate dimensions of the box. A kitchen scale works fine. If you're not sure of the weight, you can pay at the post office. They weigh it for you.`,
         tip: `Click-N-Ship saves you time at the post office. After printing the label, just drop the package in any USPS blue mailbox (if it fits) or at a post office lobby drop slot.`,
       },
       {
@@ -504,7 +504,7 @@ Group chats are saved in the Messages app just like individual conversations. Th
       },
       {
         title: `Mute notifications for a busy group`,
-        content: `If the group is very active and the notifications are too much, swipe left on the conversation in your message list and tap the bell icon to "Hide Alerts." You'll still receive the messages — they just won't buzz or ring your phone for that specific conversation. Tap the bell again to turn notifications back on.`,
+        content: `If the group is very active and the notifications are too much, swipe left on the conversation in your message list and tap the bell icon to "Hide Alerts." You'll still receive the messages. They just won't buzz or ring your phone for that specific conversation. Tap the bell again to turn notifications back on.`,
       },
       {
         title: `Leave a group chat`,
@@ -530,7 +530,7 @@ This feature is available in every browser — Chrome, Safari, Firefox, Edge, an
 
 On a computer, the shortcut is usually Ctrl + F on Windows or Command + F on Mac. A small search bar appears at the top or bottom of the screen where you type the word you're looking for. The browser highlights all matches on the page and tells you how many there are (for example, "3 of 12 matches"). You can click the arrows to jump from one match to the next.
 
-On a phone, it's accessed differently in each browser, but the principle is the same — you find a "Find in Page" option in the browser's menu, type your search term, and the page highlights your matches.
+On a phone, it's accessed differently in each browser, but the principle is the same. You find a "Find in Page" option in the browser's menu, type your search term, and the page highlights your matches.
 
 This is especially handy when:
 - Reading a long government website and looking for a specific benefit
@@ -572,7 +572,7 @@ This is especially handy when:
     thumbnailEmoji: ``,
     publishedAt: `2026-04-19`,
     difficulty: `Beginner`,
-    body: `Apple Notes is more than a place to jot things down — it also lets you share individual notes with other people so you can all view and edit the same note together. This is perfect for shared grocery lists, trip planning documents, family medical information, or any note where more than one person needs to contribute.
+    body: `Apple Notes is more than a place to jot things down. It also lets you share individual notes with other people so you can all view and edit the same note together. This is perfect for shared grocery lists, trip planning documents, family medical information, or any note where more than one person needs to contribute.
 
 Once you share a note, the other person gets an invitation (sent via Messages or email). When they accept, the note appears in their Notes app and any changes either of you make will update for both of you right away. You can see who made recent edits and even add comments or mentions.
 
@@ -607,7 +607,7 @@ You can also lock a shared note if it contains sensitive information — but not
       {
         title: `See who's in the note and manage access`,
         content: `Tap the person-plus icon again to see who has access to the note. You can change a person's permissions or remove them from the note at any time. You can also stop sharing entirely by choosing "Stop Sharing."`,
-        tip: `If the other person doesn't see the shared note right away, ask them to check their Notes app — it may appear in a new "Shared" folder.`,
+        tip: `If the other person doesn't see the shared note right away, ask them to check their Notes app. It may appear in a new "Shared" folder.`,
       },
     ],
   },
@@ -630,7 +630,7 @@ Once enabled, you activate one-handed mode in real time by swiping down on the b
 
 Tap anywhere in the empty upper area to return to full-screen mode, or tap the X button if one appears. You can also use the phone normally in apps and it will usually exit one-handed mode automatically.
 
-One-handed mode is especially helpful when you're carrying something in the other hand, using public transportation, or have limited mobility in one hand. It doesn't affect the way apps work — it just shifts where on the screen everything appears.`,
+One-handed mode is especially helpful when you're carrying something in the other hand, using public transportation, or have limited mobility in one hand. It doesn't affect the way apps work. It just shifts where on the screen everything appears.`,
     steps: [
       {
         title: `Enable one-handed mode in Settings`,
@@ -919,7 +919,7 @@ The Passwords app is protected by Face ID or your iPhone passcode, so nobody can
     thumbnailEmoji: ``,
     publishedAt: `2026-04-19`,
     difficulty: `Beginner`,
-    body: `When you're driving somewhere and want your family to know when you'll arrive, Google Maps makes it very easy to share your live location and estimated time of arrival directly from inside the navigation. The person you share with doesn't need to have Google Maps open — they receive a link they can tap to see your progress on a map in any browser.
+    body: `When you're driving somewhere and want your family to know when you'll arrive, Google Maps makes it very easy to share your live location and estimated time of arrival directly from inside the navigation. The person you share with doesn't need to have Google Maps open. They receive a link they can tap to see your progress on a map in any browser.
 
 This is different from sharing your general location through your phone's settings. When you share your ETA in Google Maps, the person sees your exact route, how far along you are, and the exact time you're expected to arrive — and it updates automatically as you drive.
 
@@ -931,7 +931,7 @@ Sharing ETA is useful in many everyday situations:
 
 The share updates live while you're moving, so the estimated arrival time adjusts if you hit traffic, stop for gas, or take a different route. You can stop sharing at any time by tapping "Stop Sharing" in the app.
 
-The recipient sees your location on a map in their web browser — they don't need to download any app. However, if they also use Google Maps and you share via Gmail or Messages, they can also track you directly in their own Google Maps app.`,
+The recipient sees your location on a map in their web browser. They don't need to download any app. However, if they also use Google Maps and you share via Gmail or Messages, they can also track you directly in their own Google Maps app.`,
     steps: [
       {
         title: `Start navigation in Google Maps`,

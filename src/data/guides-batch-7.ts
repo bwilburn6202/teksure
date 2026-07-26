@@ -46,7 +46,7 @@ The whole setup typically takes less than 15 minutes. After it is complete, spen
       { title: 'Connect to Wi-Fi', content: 'Select your home Wi-Fi network from the list. Type in your Wi-Fi password carefully — passwords are case-sensitive, meaning uppercase and lowercase letters matter.' },
       { title: 'Sign in with your Google account', content: 'Enter your Gmail address and password. If you do not have a Google account, click "Create account" and follow the steps. Your Google account ties all of your settings and Gmail to this Chromebook.' },
       { title: 'Set up the display and text size', content: 'Once on the desktop, click the clock in the bottom-right corner, then click the gear icon to open Settings. Under "Device," select "Displays" to adjust brightness. Under "Appearance," increase the font size if needed.' },
-      { title: 'Explore the Shelf and Launcher', content: 'The bar at the bottom of the screen is called the Shelf — it holds shortcuts to your most-used apps. The circle icon on the far left opens the Launcher, which is where you find all your installed apps and can search for anything.' },
+      { title: 'Explore the Shelf and Launcher', content: 'The bar at the bottom of the screen is called the Shelf. It holds shortcuts to your most-used apps. The circle icon on the far left opens the Launcher, which is where you find all your installed apps and can search for anything.' },
     ],
   },
   {
@@ -109,7 +109,7 @@ Once your printer is set up once, it remembers the connection for future print j
     difficulty: 'Beginner',
     body: `When you turn on a new iPad for the first time, Apple walks you through each setup step one screen at a time. The process is straightforward — you will choose your language, connect to Wi-Fi, and sign in (or create) an Apple ID, which is the account that lets you download apps and back up your data. The whole setup typically takes 15–25 minutes.
 
-Before you start, have your Wi-Fi network name and password ready, and your Apple ID email and password if you already have one. If you have never had an Apple device, you will create a free Apple ID during setup. An Apple ID is just an email address and password that Apple uses to identify you — you can use any existing email address to create one.
+Before you start, have your Wi-Fi network name and password ready, and your Apple ID email and password if you already have one. If you have never had an Apple device, you will create a free Apple ID during setup. An Apple ID is just an email address and password that Apple uses to identify you. You can use any existing email address to create one.
 
 After setup, take a few minutes to increase the text size and screen brightness to a comfortable level — these settings make a big difference for everyday use.`,
     steps: [
@@ -132,13 +132,13 @@ After setup, take a few minutes to increase the text size and screen brightness 
     difficulty: 'Beginner',
     body: `Android tablets are made by several different companies — Samsung, Lenovo, Amazon (Fire tablets), and others — but the setup process is similar across all of them. When you turn one on for the first time, it asks you to choose a language, connect to Wi-Fi, and sign in with a Google account. Your Google account is what lets you download apps from the Google Play Store and back up your contacts and photos.
 
-Have your Wi-Fi network name and password ready before you start, along with your Gmail address and password. If you do not have a Gmail account, you can create one for free during setup. Amazon Fire tablets work a little differently — they use an Amazon account instead of Google — but the steps are still very similar.
+Have your Wi-Fi network name and password ready before you start, along with your Gmail address and password. If you do not have a Gmail account, you can create one for free during setup. Amazon Fire tablets work a little differently. They use an Amazon account instead of Google — but the steps are still very similar.
 
 Plan for 15–20 minutes to complete the full setup. After you finish, check the font size settings right away — larger text makes the tablet much more comfortable to read.`,
     steps: [
       { title: 'Power on and choose language', content: 'Press the power button — usually on the side or top of the tablet — until the screen lights up. Follow the on-screen prompts to select your language and region.' },
       { title: 'Connect to Wi-Fi', content: 'Find your home Wi-Fi network in the list and tap it. Enter your Wi-Fi password when asked. If you are unsure of your password, check the sticker on your router or modem.' },
-      { title: 'Sign in with your Google account', content: 'Enter your Gmail address and password. If you do not have a Google account, tap "Create account" and choose "For myself" — you will be guided through creating a free account in about three minutes.' },
+      { title: 'Sign in with your Google account', content: 'Enter your Gmail address and password. If you do not have a Google account, tap "Create account" and choose "For myself". You will be guided through creating a free account in about three minutes.' },
       { title: 'Set a screen lock', content: 'Choose a PIN (a 4–6 digit number) to lock your tablet when you are not using it. This protects your data if the tablet is lost. You can also add a fingerprint on most models under Settings > Biometrics.' },
       { title: 'Adjust font size', content: 'Go to Settings, then "Display," then "Font size and style." Drag the slider toward "Large" or "Largest" so text across the tablet is comfortable to read without straining.' },
     ],
@@ -311,7 +311,7 @@ Never share passwords via text message, regular email, or on paper left in an ob
   {
     slug: 'google-inactive-account-manager',
     title: `How to Set Up Google's Inactive Account Manager`,
-    excerpt: 'Tell Google what to do with your Gmail, Drive, and Photos if your account becomes inactive — you can choose to share or delete your data.',
+    excerpt: 'Tell Google what to do with your Gmail, Drive, and Photos if your account becomes inactive. You can choose to share or delete your data.',
     category: 'life-transitions',
     tags: ['Google', 'Gmail', 'digital legacy', 'account manager', 'estate planning', 'seniors'],
     readTime: '5 min',
@@ -347,7 +347,7 @@ To request either option, you need to submit a form on Facebook's Help Center. F
 
 The process typically takes a few days to a few weeks. You can also designate a "Legacy Contact" on your own Facebook account now — a trusted person who can manage your memorialized account someday.`,
     steps: [
-      { title: `Find the person's Facebook profile link`, content: `Go to facebook.com and search for the person's name. When you find their profile, copy the URL from your browser address bar — it will look something like facebook.com/personname or facebook.com/profile.php?id=123456.` },
+      { title: `Find the person's Facebook profile link`, content: `Go to facebook.com and search for the person's name. When you find their profile, copy the URL from your browser address bar. It will look something like facebook.com/personname or facebook.com/profile.php?id=123456.` },
       { title: 'Go to the Facebook Special Request form', content: 'Go to facebook.com/help and search for "memorialization request" or "deceased person." Click the link for the official form — Facebook has separate forms for memorialization and for removal/deletion.' },
       { title: 'Fill out the memorialization request', content: `Enter your full name, your email address, your relationship to the deceased, the person's name on Facebook, and their profile URL. Upload a photo of an obituary or other documentation if available. Submit the form.` },
       { title: 'Request account removal instead', content: `If you want the account deleted rather than memorialized, find the "Special Request for Deceased Person's Account" form in Facebook's Help Center. This process requires proof of death (a death certificate) and proof of your authority to make the request.` },
@@ -399,7 +399,7 @@ To get started, you will need the free Lyft app, an account with your name and p
       { title: 'Add your payment method', content: 'After verifying your phone number, enter your name and add a payment method under "Payment" in the app menu. Lyft accepts most credit and debit cards as well as Apple Pay and Google Pay.' },
       { title: 'Request a ride', content: 'Tap "Enter destination" on the main screen and type your destination address. Lyft will show available ride types and estimated prices. The standard option is "Lyft" — tap it to see the fare estimate, then tap "Confirm Lyft."' },
       { title: 'Meet your driver', content: `The app shows your driver's name, photo, car make and model, and license plate. Your driver's ETA appears on screen. Walk to your pickup spot — shown as a pin on the map — and wait there.` },
-      { title: 'Ride safely and rate afterward', content: `Before getting in, confirm the driver's name and license plate match the app. After the ride, Lyft asks you to rate the driver. You can also add a tip from the app if you want — it goes entirely to the driver.` },
+      { title: 'Ride safely and rate afterward', content: `Before getting in, confirm the driver's name and license plate match the app. After the ride, Lyft asks you to rate the driver. You can also add a tip from the app if you want. It goes entirely to the driver.` },
     ],
   },
   {
@@ -471,7 +471,7 @@ Your bank's bill pay feature is often the safest option because you enter the co
       { title: 'Create an online account with the company', content: 'Most companies ask you to register for an online account using your account number (found on your paper bill), your email address, and a password. This takes about five minutes and only needs to be done once.' },
       { title: 'Log in and navigate to Pay Bill', content: 'Sign in to your account and look for a button labeled "Pay Bill," "Make a Payment," or "Pay Now." Click it to start the payment process.' },
       { title: 'Enter your payment information', content: 'Choose your payment method: checking account (using your routing and account numbers from the bottom of a check) or debit/credit card. Enter the payment amount and the date you want the payment to post. Review the details carefully before confirming.' },
-      { title: `Use your bank's bill pay as an alternative`, content: `Log into your bank's website or app and look for "Bill Pay." Add the company as a payee — you will need the company's name, your account number with them, and their mailing address. Once added, you can schedule payments without ever visiting the company's site.` },
+      { title: `Use your bank's bill pay as an alternative`, content: `Log into your bank's website or app and look for "Bill Pay." Add the company as a payee. You will need the company's name, your account number with them, and their mailing address. Once added, you can schedule payments without ever visiting the company's site.` },
     ],
   },
   {
@@ -490,9 +490,9 @@ These digital wallets are actually more secure than swiping a physical card. Whe
 
 Setting up takes about five minutes. Apple Pay is built into iPhones (iPhone 6 and newer) and can be set up in the Wallet app. Google Pay works on Android phones.`,
     steps: [
-      { title: 'Set up Apple Pay on iPhone', content: 'Open the Wallet app (it looks like a folded wallet with a colored card). Tap the "+" button in the upper right corner. Follow the prompts to add a credit or debit card — you can take a photo of the card or type the numbers manually. Your bank may send a verification code to confirm.' },
+      { title: 'Set up Apple Pay on iPhone', content: 'Open the Wallet app (it looks like a folded wallet with a colored card). Tap the "+" button in the upper right corner. Follow the prompts to add a credit or debit card. You can take a photo of the card or type the numbers manually. Your bank may send a verification code to confirm.' },
       { title: 'Set up Google Pay on Android', content: 'Open the Google Pay app (or search for "Google Wallet" on Google Play). Tap "Add card" and follow the steps to enter your credit or debit card information. Your bank will verify the card by sending a code to your phone or email.' },
-      { title: 'Pay in a store with Apple Pay', content: 'Look for the contactless symbol at the payment terminal — it looks like a sideways Wi-Fi symbol. Double-click the side button on your iPhone (or press the home button on older models) to bring up Apple Pay. Hold the top of your phone near the terminal until you see a checkmark.' },
+      { title: 'Pay in a store with Apple Pay', content: 'Look for the contactless symbol at the payment terminal. It looks like a sideways Wi-Fi symbol. Double-click the side button on your iPhone (or press the home button on older models) to bring up Apple Pay. Hold the top of your phone near the terminal until you see a checkmark.' },
       { title: 'Pay in a store with Google Pay', content: 'Unlock your Android phone and hold the back of the phone near the contactless payment terminal. Google Pay will activate automatically when the phone detects the terminal. Wait for the checkmark or confirmation sound.' },
       { title: 'Pay online with Apple Pay or Google Pay', content: 'When shopping on websites or apps, look for the "Apple Pay" or "Google Pay" button at checkout. Tapping it will bring up a confirmation screen — verify with your face, fingerprint, or passcode to complete the purchase without typing your card number.' },
     ],
@@ -509,7 +509,7 @@ Setting up takes about five minutes. Apple Pay is built into iPhones (iPhone 6 a
     thumbnailEmoji: '',
     publishedAt: '2026-04-16',
     difficulty: 'Beginner',
-    body: `FaceTime is Apple's built-in video and voice calling app. And it comes pre-installed on every iPhone and iPad. Calls made over Wi-Fi are completely free — you can talk face-to-face with family members and friends who also have an iPhone, iPad, or Mac for as long as you want without using any of your phone plan's minutes. FaceTime also works over cellular data (your mobile data plan) when Wi-Fi is not available.
+    body: `FaceTime is Apple's built-in video and voice calling app. And it comes pre-installed on every iPhone and iPad. Calls made over Wi-Fi are completely free. You can talk face-to-face with family members and friends who also have an iPhone, iPad, or Mac for as long as you want without using any of your phone plan's minutes. FaceTime also works over cellular data (your mobile data plan) when Wi-Fi is not available.
 
 The image and sound quality on FaceTime is generally very good, making it a popular choice for keeping in touch with family members, especially grandchildren. You can call someone's Apple ID (their email address) or their iPhone phone number.
 
@@ -565,7 +565,7 @@ If you do not currently have a library card, many libraries now offer instant di
     steps: [
       { title: 'Download the Libby app', content: 'Search for "Libby, by OverDrive" in the App Store or Google Play Store. Install the free app. On Amazon Fire tablets, search in the Amazon Appstore.' },
       { title: 'Find your library', content: `Open Libby and tap "I'll search for a library." Type your city or the name of your library system (for example, "Chicago Public Library" or "Multnomah County Library"). Select your library from the results.` },
-      { title: 'Sign in with your library card', content: 'Tap "Sign In With My Card" and enter your library card number (the long number on the back of your card) and your PIN. If you do not know your PIN, contact your library — it is often your birth year or a 4-digit number you set up.' },
+      { title: 'Sign in with your library card', content: 'Tap "Sign In With My Card" and enter your library card number (the long number on the back of your card) and your PIN. If you do not know your PIN, contact your library. It is often your birth year or a 4-digit number you set up.' },
       { title: 'Browse and borrow a book', content: 'Tap "Library" to browse available titles. Search for a book by title or author, or browse categories. When you find a book you want, tap "Borrow" — if it is available, it goes to your loans right away. If there is a wait list, tap "Place Hold" and Libby will notify you when it is your turn.' },
       { title: 'Read or listen to your book', content: 'Tap the "Shelf" button (the person icon) to see your borrowed books. Tap any book to open it. For audiobooks, tap the headphones icon to start listening. Tap the "Aa" icon while reading to change font size and background color.' },
     ],
@@ -587,7 +587,7 @@ Amazon's Kindle store has thousands of completely free books — including many 
 The Kindle app has excellent reading customization options: you can increase the font size, change the font style, switch between a white page, sepia (tan) background, or black page with white text, and adjust the screen brightness independently of your device settings.`,
     steps: [
       { title: 'Download the Kindle app', content: 'Search for "Kindle" in the App Store (iPhone/iPad) or Google Play Store (Android). On a Windows or Mac computer, go to amazon.com/kindle-dbs/fd/kcp to download the desktop app. The app is free.' },
-      { title: 'Sign in with your Amazon account', content: 'Open the Kindle app and sign in with your Amazon account email and password. If you do not have an Amazon account, tap "Create a new Amazon account" — it is free to create.' },
+      { title: 'Sign in with your Amazon account', content: 'Open the Kindle app and sign in with your Amazon account email and password. If you do not have an Amazon account, tap "Create a new Amazon account". It is free to create.' },
       { title: 'Find free books', content: `In the Kindle app, tap "Get Books" or open Amazon's website and go to the Kindle store. Search for a title or browse the "Free" section. Many classic books are listed at $0.00. Tap "Buy now with 1-Click" (even if it's free, the button says this) to add it to your library.` },
       { title: 'Open and read your book', content: 'Tap the "Library" tab in the Kindle app to see all your books. Tap any book cover to open it. The book will download to your device — after that, you can read it without an internet connection.' },
       { title: 'Customize your reading experience', content: 'While reading, tap the middle of the screen to see the toolbar. Tap the "Aa" icon to open reading settings. Increase the font size, choose a font style like "Bookerly" (designed for screen reading), and try the Sepia background if the white page feels too bright.' },
@@ -657,7 +657,7 @@ Organizing bookmarks into folders helps when you have many saved sites. You migh
 
 If you lose your bookmarks (for example, after a computer issue or switching to a new device), you can often recover them by signing into your browser account — Google account for Chrome, Apple ID for Safari.`,
     steps: [
-      { title: 'Bookmark a page in Chrome', content: 'Navigate to the website you want to save. Click the star icon at the right end of the address bar. A small window will appear asking you to confirm — you can change the name if you want. Click "Done" to save the bookmark.' },
+      { title: 'Bookmark a page in Chrome', content: 'Navigate to the website you want to save. Click the star icon at the right end of the address bar. A small window will appear asking you to confirm. You can change the name if you want. Click "Done" to save the bookmark.' },
       { title: 'Bookmark a page in Safari', content: 'In Safari on iPhone or iPad, tap the Share button (a square with an arrow pointing up) at the bottom of the screen. Scroll through the options and tap "Add Bookmark." Confirm the name and tap "Save."' },
       { title: 'Access your bookmarks', content: 'In Chrome, click the three vertical dots (menu) in the upper right corner and hover over "Bookmarks" to see your saved sites. In Safari on iPhone, tap the open book icon at the bottom of the screen.' },
       { title: 'Create a bookmarks folder', content: 'In Chrome, click the three dots > Bookmarks > Bookmark Manager. Right-click in the panel and select "Add new folder." Name the folder and then drag bookmarks into it. In Safari on Mac, go to Bookmarks > Edit Bookmarks to organize.' },
@@ -703,7 +703,7 @@ On a phone or tablet, you can pinch two fingers together on the screen and sprea
 
 If you find yourself zooming in on every website you visit, you can set a permanent default zoom level in your browser settings so all pages start at the larger size you prefer.`,
     steps: [
-      { title: 'Zoom in using the keyboard shortcut', content: 'On a Windows or Linux computer, hold the Ctrl key and press the + (plus) key. On a Mac, hold the Command key (the one with the apple or clover symbol) and press +. Each press zooms the page in a bit more — you can press it several times to reach your preferred size.' },
+      { title: 'Zoom in using the keyboard shortcut', content: 'On a Windows or Linux computer, hold the Ctrl key and press the + (plus) key. On a Mac, hold the Command key (the one with the apple or clover symbol) and press +. Each press zooms the page in a bit more. You can press it several times to reach your preferred size.' },
       { title: 'Zoom back out or reset', content: 'Hold Ctrl (or Command on Mac) and press the minus key (-) to zoom out. Hold Ctrl (or Command) and press 0 (zero) to reset the page to its default 100% zoom level.' },
       { title: 'Use the browser menu to zoom', content: 'In Chrome, click the three vertical dots in the upper right. You will see a "Zoom" control with + and – buttons near the top of the menu — click these to adjust the zoom level for the current tab.' },
       { title: 'Set a permanent zoom level in Chrome', content: 'To make all websites start at a larger size, open Chrome, click the three dots > Settings. In the search bar, type "font size." Under "Appearance," change the font size to "Large" or "Very Large." You can also change the "Page zoom" setting to 125% or 150%.' },

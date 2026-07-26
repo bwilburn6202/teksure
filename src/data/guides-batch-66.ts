@@ -221,7 +221,7 @@ You can withdraw your money anytime — Acorns is not locked in. But note that s
       },
       {
         title: `Choose your investment portfolio`,
-        content: `Acorns offers five portfolios from Conservative to Aggressive. Conservative holds mostly bonds and is less likely to swing in value. Aggressive holds mostly stocks and has more potential for growth but more risk. Acorns will suggest a portfolio based on your answers — you can accept the suggestion or choose a different one.`,
+        content: `Acorns offers five portfolios from Conservative to Aggressive. Conservative holds mostly bonds and is less likely to swing in value. Aggressive holds mostly stocks and has more potential for growth but more risk. Acorns will suggest a portfolio based on your answers. You can accept the suggestion or choose a different one.`,
         tip: `If you're new to investing and nervous about risk, the Moderate portfolio is a reasonable middle ground. You can change your portfolio later.`,
       },
       {
@@ -259,7 +259,7 @@ NordVPN is one of the most widely used VPNs. It works on Windows, Mac, iPhone, a
 
 Once installed, tap Quick Connect to connect to the fastest available server — usually one near you. For streaming content from another country, choose a server in that country from the server list. NordVPN also has a Kill Switch feature: if the VPN connection drops, Kill Switch cuts off your internet entirely rather than letting your data leak unprotected. Turn this on in the app settings.
 
-For comparison: ExpressVPN is faster and simpler but more expensive. Proton VPN has a genuinely free tier (with slower speeds) and strong privacy credentials because it's based in Switzerland. Avoid truly free VPNs from unknown companies — they often make money by logging and selling your data, defeating the purpose entirely.`,
+For comparison: ExpressVPN is faster and simpler but more expensive. Proton VPN has a genuinely free tier (with slower speeds) and strong privacy credentials because it's based in Switzerland. Avoid truly free VPNs from unknown companies. They often make money by logging and selling your data, defeating the purpose entirely.`,
     steps: [
       {
         title: `Download and install NordVPN`,
@@ -358,7 +358,7 @@ If you'd rather have someone else handle all of this for you, paid services like
       },
       {
         title: `Opt out of Spokeo and Whitepages`,
-        content: `For Spokeo: go to spokeo.com/optout, paste the URL of your listing, enter your email, and submit. For Whitepages: go to whitepages.com/suppression_requests, find your listing, and follow the verification steps — you may need to receive a phone call to confirm.`,
+        content: `For Spokeo: go to spokeo.com/optout, paste the URL of your listing, enter your email, and submit. For Whitepages: go to whitepages.com/suppression_requests, find your listing, and follow the verification steps. You may need to receive a phone call to confirm.`,
         tip: `Screenshot or write down each opt-out confirmation you receive so you have a record if the listing reappears.`,
       },
       {
@@ -368,7 +368,7 @@ If you'd rather have someone else handle all of this for you, paid services like
       {
         title: `Set a reminder to re-check in six months`,
         content: `Data brokers regularly pull new public records and may re-add you over time. Set a reminder on your phone's calendar for six months from today to search your name on these sites again and submit new opt-outs if needed.`,
-        warning: `Opting out of these sites does not guarantee your information is gone from the internet entirely — it only removes it from these specific databases. Information in public records (like property ownership) may remain accessible elsewhere.`,
+        warning: `Opting out of these sites does not guarantee your information is gone from the internet entirely. It only removes it from these specific databases. Information in public records (like property ownership) may remain accessible elsewhere.`,
       },
       {
         title: `Consider a paid removal service (optional)`,
@@ -390,7 +390,7 @@ If you'd rather have someone else handle all of this for you, paid services like
 
 You can explore Calm for free with limited content, but most features require a subscription — typically around $70 per year, with discounts sometimes available. A free trial period lets you explore before committing.
 
-When you open the app, you'll find several main sections. Meditations include sessions for beginners, stress relief, focus, sleep preparation, managing anxiety, and more. Sessions range from 3 to 30 minutes. If you're new to meditation, start with the "How to Meditate" series — it walks you through the basics step by step over seven days.
+When you open the app, you'll find several main sections. Meditations include sessions for beginners, stress relief, focus, sleep preparation, managing anxiety, and more. Sessions range from 3 to 30 minutes. If you're new to meditation, start with the "How to Meditate" series. It walks you through the basics step by step over seven days.
 
 Sleep Stories are narrated stories read in a slow, soothing voice specifically designed to help you fall asleep. They're one of Calm's most distinctive features. Readers include celebrities like Matthew McConaughey and Stephen Fry. The stories don't have exciting plot twists — they're deliberately gentle and calming, meant to occupy enough of your mind to quiet racing thoughts.
 
@@ -411,7 +411,7 @@ Meditation is a skill, not a quick fix. Most research suggests that regular prac
       {
         title: `Start with the beginner meditation series`,
         content: `Tap Meditate and look for "How to Meditate" or the Basics series. These short guided sessions introduce you to meditation step by step. Start with a 3–5 minute session and work your way up as you get comfortable.`,
-        tip: `Find a quiet place where you won't be interrupted. Sitting comfortably in a chair works fine — you don't need to sit on the floor.`,
+        tip: `Find a quiet place where you won't be interrupted. Sitting comfortably in a chair works fine. You don't need to sit on the floor.`,
       },
       {
         title: `Try a Sleep Story at bedtime`,
@@ -447,7 +447,7 @@ Beyond the Basics course, Headspace offers Sleepcasts — ambient audio experien
 
 The Focus Music section is useful during tasks that require concentration. The tracks are designed to help you stay present without being distracting.
 
-Headspace for Work is a corporate offering, so if your employer offers mental health benefits, check whether Headspace is included — you may be able to access it for free.
+Headspace for Work is a corporate offering, so if your employer offers mental health benefits, check whether Headspace is included. You may be able to access it for free.
 
 Headspace's subscription costs around $70 per year. Student and family discounts may be available. A free trial period lets you try the core content before paying. If cost is a concern, Insight Timer offers thousands of free guided meditations from teachers around the world, and the UCLA Mindful app is entirely free.
 
@@ -569,7 +569,7 @@ For regular route navigation, standard Google Maps is perfectly fine and less ba
       {
         title: `Follow the on-screen arrows`,
         content: `Walk in the direction the arrows point. The arrows update as you move. When you approach a turn, a new arrow appears. When you get close to your destination, Live View shows a marker on the building. You can switch back to the regular map view at any time by tapping the map icon.`,
-        tip: `Switch back to regular map view when walking long straight stretches — it uses less battery and you don't need Live View until the next turn.`,
+        tip: `Switch back to regular map view when walking long straight stretches. It uses less battery and you don't need Live View until the next turn.`,
       },
     ],
   },
@@ -830,7 +830,7 @@ As children get older and approach their teens, you might transition to YouTube 
 
 Proton Mail has a free plan with 500MB of storage and one email address (ending in @proton.me or @protonmail.com). Paid plans add more storage, the ability to use a custom domain like @yourname.com, and additional features. You can sign up at proton.me.
 
-Creating an account doesn't require you to provide any personal information — you don't need to give a phone number or link an existing email address, though doing so helps with account recovery if you ever forget your password. Your password is critical: because Proton can't access your account, if you forget your password and haven't set up recovery options, your messages may be permanently inaccessible.
+Creating an account doesn't require you to provide any personal information. You don't need to give a phone number or link an existing email address, though doing so helps with account recovery if you ever forget your password. Your password is critical: because Proton can't access your account, if you forget your password and haven't set up recovery options, your messages may be permanently inaccessible.
 
 Sending and receiving email works the same way as any other email service. When both you and the recipient use Proton Mail, messages are automatically encrypted end-to-end — no extra steps required. When you send to someone who uses Gmail, Outlook, or another service, the email is still encrypted while stored on Proton's servers. But it travels as a regular email once it leaves. For sensitive messages to non-Proton users, you can set a password: the recipient gets a link and must enter the password you share with them separately (ideally via phone or text, not email) to read the message.
 
@@ -851,7 +851,7 @@ When does Proton Mail make the most sense? For people with heightened privacy co
       },
       {
         title: `Send a password-protected email to a non-Proton address`,
-        content: `When composing an email to someone using Gmail, Outlook, or another service, tap the lock icon in the composer toolbar. Set a password. The recipient gets a link in their inbox — they click it and enter the password to read the message in a secure browser window. Share the password with them by phone or text.`,
+        content: `When composing an email to someone using Gmail, Outlook, or another service, tap the lock icon in the composer toolbar. Set a password. The recipient gets a link in their inbox. They click it and enter the password to read the message in a secure browser window. Share the password with them by phone or text.`,
         tip: `This feature is most useful for sensitive information like tax documents, medical records, or legal matters you need to share with someone who doesn't use Proton.`,
       },
       {

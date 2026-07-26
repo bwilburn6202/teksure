@@ -119,7 +119,7 @@ Google Tasks does not send you pop-up reminders by default (unlike Google Keep o
     steps: [
       {
         title: `Open Google Tasks`,
-        content: `On a phone, download the Google Tasks app from the App Store (iPhone) or Play Store (Android) and sign in with your Google account. In Gmail on a computer, look for the Tasks icon in the right-side panel — it looks like a blue circle with a checkmark. Click it to open your task list.`,
+        content: `On a phone, download the Google Tasks app from the App Store (iPhone) or Play Store (Android) and sign in with your Google account. In Gmail on a computer, look for the Tasks icon in the right-side panel. It looks like a blue circle with a checkmark. Click it to open your task list.`,
       },
       {
         title: `Add a new task`,
@@ -174,7 +174,7 @@ The app works on iPhone and Android phones. You will need a Walmart account to p
       {
         title: `Shop for groceries`,
         content: `Tap "Grocery" at the bottom of the screen. Browse by category (produce, dairy, meat, etc.) or use the search bar to find specific items. When you find something you want, tap "Add to cart." You can add as many items as you need before checking out.`,
-        tip: `Use the "Reorder" feature if you have ordered before — it shows your previous items so you can add your regular staples without searching.`,
+        tip: `Use the "Reorder" feature if you have ordered before. It shows your previous items so you can add your regular staples without searching.`,
       },
       {
         title: `Schedule your pickup time`,
@@ -210,7 +210,7 @@ You can use the app to track online orders, manage returns, and see your previou
     steps: [
       {
         title: `Download the app and sign in`,
-        content: `Search for "Target" in the App Store or Play Store and install the free app. Open it and sign in with your Target account. If you do not have one, tap "Create Account" — it is free and takes about two minutes. Use the same email you use when shopping at Target.com.`,
+        content: `Search for "Target" in the App Store or Play Store and install the free app. Open it and sign in with your Target account. If you do not have one, tap "Create Account". It is free and takes about two minutes. Use the same email you use when shopping at Target.com.`,
       },
       {
         title: `Join Target Circle`,
@@ -643,7 +643,7 @@ These features work on the Spotify app for iPhone and Android, and most also wor
       },
       {
         title: `Explore Your Listening Stats`,
-        content: `Tap the home icon, then tap "Made for You" playlists — these are generated based on your actual listening history. Spotify Wrapped (available each December) gives you a full summary of your year in music. For monthly stats, try visiting stats.fm in your phone's web browser — it is a free third-party tool that connects to your Spotify account and shows detailed listening data.`,
+        content: `Tap the home icon, then tap "Made for You" playlists — these are generated based on your actual listening history. Spotify Wrapped (available each December) gives you a full summary of your year in music. For monthly stats, try visiting stats.fm in your phone's web browser. It is a free third-party tool that connects to your Spotify account and shows detailed listening data.`,
       },
     ],
   },
@@ -667,7 +667,7 @@ Your physical card number stays on your phone and is protected by Face ID or you
 
 For online shopping, digital wallets let you check out without typing in your full card number on every website. This reduces the risk of your card number being stolen if a website gets hacked.
 
-Digital wallets do not replace your physical card — they give you an additional option. Most stores that accept credit cards now also accept contactless payments like Apple Pay and Google Pay. Look for the small wireless symbol (like a sideways WiFi icon) on the payment terminal.
+Digital wallets do not replace your physical card. They give you an additional option. Most stores that accept credit cards now also accept contactless payments like Apple Pay and Google Pay. Look for the small wireless symbol (like a sideways WiFi icon) on the payment terminal.
 
 You do not need a special bank or credit card to use a digital wallet. Most major US banks and credit unions support both Apple Pay and Google Pay.`,
     steps: [
@@ -677,11 +677,11 @@ You do not need a special bank or credit card to use a digital wallet. Most majo
       },
       {
         title: `Add your card to Apple Pay or Google Pay`,
-        content: `On an iPhone, open the Wallet app (it looks like a white card on a black background). Tap the "+" button and follow the steps to add a card — you can take a photo of the front of your card or type the number manually. Your bank may send a verification text message or ask you to call them to confirm it is really you. On Android, open the Google Pay app and tap "Add a card" — the process is similar.`,
+        content: `On an iPhone, open the Wallet app (it looks like a white card on a black background). Tap the "+" button and follow the steps to add a card. You can take a photo of the front of your card or type the number manually. Your bank may send a verification text message or ask you to call them to confirm it is really you. On Android, open the Google Pay app and tap "Add a card" — the process is similar.`,
       },
       {
         title: `Pay in a store`,
-        content: `At checkout, look for the contactless payment symbol on the card reader — it looks like a small sideways WiFi icon. Hold your phone close to that symbol (within an inch or two). On an iPhone, double-press the side button first to bring up Apple Pay, then use Face ID to authorize. On Android, Google Pay may activate automatically when you hold the phone near the terminal.`,
+        content: `At checkout, look for the contactless payment symbol on the card reader. It looks like a small sideways WiFi icon. Hold your phone close to that symbol (within an inch or two). On an iPhone, double-press the side button first to bring up Apple Pay, then use Face ID to authorize. On Android, Google Pay may activate automatically when you hold the phone near the terminal.`,
         tip: `If the cashier looks confused, you can say "I am using Apple Pay" or "Google Pay." Most cashiers are familiar with these and can guide you if needed.`,
       },
       {
@@ -751,7 +751,7 @@ Google Drive is available in any web browser at drive.google.com, and as a free 
     thumbnailEmoji: ``,
     publishedAt: `2026-04-19`,
     difficulty: `Beginner`,
-    body: `Android phones come with a set of built-in accessibility features that can make the phone much easier to use if you have vision, hearing, or dexterity challenges. These features are free and already on your phone — you do not need to download anything.
+    body: `Android phones come with a set of built-in accessibility features that can make the phone much easier to use if you have vision, hearing, or dexterity challenges. These features are free and already on your phone. You do not need to download anything.
 
 Many of these features are also useful for anyone who finds the default phone settings uncomfortable. Making text larger, boosting screen brightness, or turning on high contrast mode can make everyday use easier for people of any age.
 
@@ -827,7 +827,7 @@ Google gives everyone 15 gigabytes of free storage. Google Photos compresses pho
       {
         title: `Invite family members`,
         content: `Type the email addresses or phone numbers of the family members you want to invite. You can invite as many people as you want. Each person will receive a notification by email or text. When they tap the link, they will be asked to sign in with their Google account (or create a free one). After accepting, the album appears in their Google Photos app under "Sharing."`,
-        tip: `Make sure your family members have a Google account before you invite them. They can create one for free at accounts.google.com — it does not require a Gmail address.`,
+        tip: `Make sure your family members have a Google account before you invite them. They can create one for free at accounts.google.com. It does not require a Gmail address.`,
       },
       {
         title: `Add photos to the shared album`,

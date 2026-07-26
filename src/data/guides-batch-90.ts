@@ -67,7 +67,7 @@ Focus modes let you tell Perplexity where to search. Academic mode searches peer
 
 Gemini is available as a free app on Android phones, and iPhone users can access it through the Google app. On many newer Android phones, Gemini is already installed. On some Android phones, you can set Gemini as your default assistant so it activates when you hold down the home button, replacing Google Assistant.
 
-What makes Gemini different from a regular Google search is that it holds a conversation. You do not just get a list of links — you get a real response. And you can ask follow-up questions. Gemini also connects to your Google account, which means it can help you draft replies in Gmail, summarize documents in Google Docs, and look up information from your Google Calendar if you allow it.
+What makes Gemini different from a regular Google search is that it holds a conversation. You do not just get a list of links. You get a real response. And you can ask follow-up questions. Gemini also connects to your Google account, which means it can help you draft replies in Gmail, summarize documents in Google Docs, and look up information from your Google Calendar if you allow it.
 
 You can also point your phone's camera at something and ask Gemini about it. Take a photo of a plant and ask what it is. Take a picture of a menu in a foreign language and ask what the dishes are. This makes Gemini especially useful when you are out in the world and need quick information.
 
@@ -75,7 +75,7 @@ The free version of Gemini runs on Google's standard AI model. A paid Gemini Adv
     steps: [
       {
         title: `Find and open Gemini on your phone`,
-        content: `On an Android phone, look for the Gemini app in your app drawer — it has a colorful sparkle icon. If you do not see it, open the Google Play Store and search for "Google Gemini" to install it. On an iPhone, open the Google app (or download it from the App Store) and tap the Gemini tab at the bottom of the screen. Sign in with your Google account to get started.`,
+        content: `On an Android phone, look for the Gemini app in your app drawer. It has a colorful sparkle icon. If you do not see it, open the Google Play Store and search for "Google Gemini" to install it. On an iPhone, open the Google app (or download it from the App Store) and tap the Gemini tab at the bottom of the screen. Sign in with your Google account to get started.`,
       },
       {
         title: `Ask your first question`,
@@ -112,7 +112,7 @@ The free version of Gemini runs on Google's standard AI model. A paid Gemini Adv
     thumbnailEmoji: ``,
     publishedAt: `2026-04-20`,
     difficulty: `Beginner`,
-    body: `Microsoft Copilot is Microsoft's AI assistant, powered by the same technology behind ChatGPT. It is built into Windows 11, available as a free app for iPhone and Android, and accessible in any web browser at copilot.microsoft.com. You do not need a Microsoft account to use the basic version — you can start asking questions right away.
+    body: `Microsoft Copilot is Microsoft's AI assistant, powered by the same technology behind ChatGPT. It is built into Windows 11, available as a free app for iPhone and Android, and accessible in any web browser at copilot.microsoft.com. You do not need a Microsoft account to use the basic version. You can start asking questions right away.
 
 Copilot can answer questions, help you write emails or letters, summarize articles, explain confusing topics, and even create images from a text description. The image creation tool (called Designer) is included for free with Copilot and can generate artwork, greeting card designs, or illustrations based on whatever you describe.
 
@@ -165,7 +165,7 @@ The free plan gives you 300 minutes of transcription per month, which is enough 
 
 You can use Otter.ai two ways: you can record a live conversation directly inside the app, or you can upload an audio file you already recorded (like a voice memo) and Otter will transcribe it for you.
 
-Otter.ai is useful for people who have trouble keeping up with note-taking during fast conversations, anyone who wants an accurate record of what was agreed upon in a meeting, students who want to review lectures, or caregivers who want to keep notes from medical appointments. The transcript search feature is especially handy — you can search for any word or phrase and jump right to that moment in the conversation.`,
+Otter.ai is useful for people who have trouble keeping up with note-taking during fast conversations, anyone who wants an accurate record of what was agreed upon in a meeting, students who want to review lectures, or caregivers who want to keep notes from medical appointments. The transcript search feature is especially handy. You can search for any word or phrase and jump right to that moment in the conversation.`,
     steps: [
       {
         title: `Create a free Otter.ai account`,
@@ -192,7 +192,7 @@ Otter.ai is useful for people who have trouble keeping up with note-taking durin
       },
       {
         title: `Share a transcript with someone else`,
-        content: `Open a transcript and tap the share icon (a box with an arrow pointing up on iPhone, or three dots on Android). You can share a link that lets the other person view the transcript in their browser — they do not need an Otter account. You can also export the transcript as a text file or copy the text to paste into an email. This is useful for sharing meeting notes with coworkers or keeping a written record for a doctor's visit.`,
+        content: `Open a transcript and tap the share icon (a box with an arrow pointing up on iPhone, or three dots on Android). You can share a link that lets the other person view the transcript in their browser. They do not need an Otter account. You can also export the transcript as a text file or copy the text to paste into an email. This is useful for sharing meeting notes with coworkers or keeping a written record for a doctor's visit.`,
       },
     ],
   },
@@ -206,7 +206,7 @@ Otter.ai is useful for people who have trouble keeping up with note-taking durin
     thumbnailEmoji: ``,
     publishedAt: `2026-04-20`,
     difficulty: `Intermediate`,
-    body: `Notion is a popular app for taking notes, organizing projects, and managing information. Notion AI adds an artificial intelligence writing assistant built right into your existing Notion pages — you do not need to switch to a separate app or copy and paste text anywhere.
+    body: `Notion is a popular app for taking notes, organizing projects, and managing information. Notion AI adds an artificial intelligence writing assistant built right into your existing Notion pages. You do not need to switch to a separate app or copy and paste text anywhere.
 
 With Notion AI, you can ask it to write a first draft of something for you, improve text you have already written, make a long document shorter, translate text into another language, or summarize a page full of notes into a few key bullet points.
 
@@ -232,7 +232,7 @@ One of the most powerful uses is asking Notion AI questions about content alread
       {
         title: `Summarize a long page of notes`,
         content: `Click at the bottom of a page that has a lot of content — like a long set of meeting notes or a research document. Press the Space bar or type "/ai" and choose "Summarize" from the options. Notion AI will read the content of your page and write a concise summary below. This is useful when you need to quickly remind yourself what a long document covers without re-reading the whole thing.`,
-        tip: `Quick Tip: If your page has sub-pages (linked pages within pages), Notion AI may not automatically read those sub-pages — it primarily summarizes the content visible on the current page.`,
+        tip: `Quick Tip: If your page has sub-pages (linked pages within pages), Notion AI may not automatically read those sub-pages. It primarily summarizes the content visible on the current page.`,
       },
       {
         title: `Ask Notion AI a question about your own page`,
@@ -258,7 +258,7 @@ One of the most powerful uses is asking Notion AI questions about content alread
 
 Libraries across the United States participate in the Libby program, and most major public library systems are included. All you need is a library card from a participating library. If you do not have one, most libraries let you sign up for a card online or in person.
 
-You can read ebooks directly in the Libby app, or you can send them to a Kindle device or the Kindle app on your phone. Audiobooks play in the Libby app with a simple listen button — you can speed up or slow down playback, set a sleep timer, and bookmark where you left off.
+You can read ebooks directly in the Libby app, or you can send them to a Kindle device or the Kindle app on your phone. Audiobooks play in the Libby app with a simple listen button. You can speed up or slow down playback, set a sleep timer, and bookmark where you left off.
 
 Popular new releases often have waiting lists, just like physical books at the library. You can place a hold on a book and Libby will notify you when it is your turn. Most libraries let you have multiple books checked out at the same time. And you can borrow from more than one library system if you have cards for multiple libraries.
 
@@ -363,7 +363,7 @@ Libro.fm lets you gift audiobooks to others, which is a thoughtful option for bo
       },
       {
         title: `Choose a membership or pay per audiobook`,
-        content: `Libro.fm offers a monthly membership plan that gives you one audiobook credit per month for a flat fee. This is the most economical option if you listen to at least one audiobook a month. If you listen less often, you can buy individual audiobooks without a subscription at the standard price. Go to your account settings to set up or cancel a membership at any time — there are no long-term contracts.`,
+        content: `Libro.fm offers a monthly membership plan that gives you one audiobook credit per month for a flat fee. This is the most economical option if you listen to at least one audiobook a month. If you listen less often, you can buy individual audiobooks without a subscription at the standard price. Go to your account settings to set up or cancel a membership at any time. There are no long-term contracts.`,
       },
       {
         title: `Search for and purchase an audiobook`,
@@ -390,7 +390,7 @@ Libro.fm lets you gift audiobooks to others, which is a thoughtful option for bo
     thumbnailEmoji: ``,
     publishedAt: `2026-04-20`,
     difficulty: `Beginner`,
-    body: `WEBTOON is a free app that hosts thousands of comic series and manga from creators all over the world. Unlike traditional comic books, WEBTOON comics are designed to be read on a phone screen — you scroll down through vertical panels instead of flipping through pages. This format makes them very comfortable to read on a phone without zooming in and out.
+    body: `WEBTOON is a free app that hosts thousands of comic series and manga from creators all over the world. Unlike traditional comic books, WEBTOON comics are designed to be read on a phone screen. You scroll down through vertical panels instead of flipping through pages. This format makes them very comfortable to read on a phone without zooming in and out.
 
 Most comics on WEBTOON are completely free to read. Some popular series offer early access to new episodes for a small fee through a feature called Fast Pass. But you can always read the same episodes for free a few weeks later. There is no subscription required and no credit card needed to browse and read the vast majority of content.
 
@@ -486,11 +486,11 @@ The mortgage calculator on each listing page helps you estimate monthly payments
 
 Before you buy a house, you want to know more than just the price and number of bedrooms. You want to know: Is the neighborhood safe? Are the nearby schools good? How long would my commute be? What stores and restaurants are nearby? Will I be bothered by traffic noise or a busy highway? Trulia tries to answer all of these questions on a single listing page.
 
-The crime map overlay on Trulia lets you see reported crime incidents in the area plotted on a map. This is not a judgment about any neighborhood — it is information to help you understand the area realistically. The map color-codes different types of crime (property crime, violent crime, etc.) so you can see the breakdown.
+The crime map overlay on Trulia lets you see reported crime incidents in the area plotted on a map. This is not a judgment about any neighborhood. It is information to help you understand the area realistically. The map color-codes different types of crime (property crime, violent crime, etc.) so you can see the breakdown.
 
 School ratings show nearby public and private schools with scores from GreatSchools.org. You can tap on any school to see more detail, including test score data and parent reviews.
 
-The commute time calculator lets you enter your workplace address and see how long the drive or transit ride would take from any home on Trulia. This is invaluable if you are considering a home that is farther from work — you want to know the real commute cost in time before committing.
+The commute time calculator lets you enter your workplace address and see how long the drive or transit ride would take from any home on Trulia. This is invaluable if you are considering a home that is farther from work. You want to know the real commute cost in time before committing.
 
 Trulia also shows a Noise Score for listings, indicating whether the area has elevated levels of traffic, airport, or other environmental noise.`,
     steps: [
@@ -549,7 +549,7 @@ Opendoor operates in dozens of major markets across the United States. It works 
       },
       {
         title: `Review the preliminary offer`,
-        content: `Opendoor will email or display a preliminary offer price, usually within one business day. Review it carefully and compare it to what similar homes in your area have sold for recently — you can look this up on Zillow, Redfin, or Realtor.com. Remember that this preliminary number may change after the in-home assessment. It is a starting point for understanding whether Opendoor's model makes sense for your situation.`,
+        content: `Opendoor will email or display a preliminary offer price, usually within one business day. Review it carefully and compare it to what similar homes in your area have sold for recently. You can look this up on Zillow, Redfin, or Realtor.com. Remember that this preliminary number may change after the in-home assessment. It is a starting point for understanding whether Opendoor's model makes sense for your situation.`,
       },
       {
         title: `Schedule and complete the home assessment`,
@@ -558,7 +558,7 @@ Opendoor operates in dozens of major markets across the United States. It works 
       {
         title: `Understand the fees and compare your options`,
         content: `Before accepting, review the full breakdown of Opendoor's charges. The service fee is typically around 5% of the sale price. Any repairs Opendoor says are needed will be deducted from your offer — or you can make those repairs yourself before closing if you prefer. Add these costs together and compare the net amount you would receive to what a traditional listing might realistically bring you after agent commissions and the cost of staging, repairs, and carrying the home for several months.`,
-        warning: `Do not accept Opendoor's offer without comparing it to local market sales prices. In a strong seller's market, listing traditionally may result in a lot more money. Opendoor is not always the right choice — it is most valuable when speed and certainty matter more than maximizing the final price.`,
+        warning: `Do not accept Opendoor's offer without comparing it to local market sales prices. In a strong seller's market, listing traditionally may result in a lot more money. Opendoor is not always the right choice. It is most valuable when speed and certainty matter more than maximizing the final price.`,
       },
       {
         title: `Choose your closing date and complete the sale`,
@@ -764,7 +764,7 @@ Food Network Kitchen requires a subscription after the free trial period. The ap
 
 This approach has two practical benefits. First, it reduces food waste. Most households throw away a significant amount of food because items get forgotten in the back of the refrigerator or pantry until they spoil. Cooklist surfaces recipes that use what you have before things go bad. Second, it often saves money on groceries because you are not buying new ingredients for a recipe when you already have what you need.
 
-Adding items to your Cooklist pantry can be done manually — you search for an item and add it — or by scanning a grocery receipt. The receipt scan feature reads your grocery store receipt (you can take a photo of it or connect a store loyalty card) and automatically adds all the items you purchased to your pantry inventory.
+Adding items to your Cooklist pantry can be done manually. You search for an item and add it — or by scanning a grocery receipt. The receipt scan feature reads your grocery store receipt (you can take a photo of it or connect a store loyalty card) and automatically adds all the items you purchased to your pantry inventory.
 
 Cooklist also connects to major grocery delivery services. When you do need to buy additional ingredients, you can order them directly through the app from services like Instacart, Walmart Grocery, or Amazon Fresh without switching between apps.
 
@@ -823,7 +823,7 @@ The cost for a notarization on Notarize.com is a flat fee per document, typicall
       {
         title: `Upload your document`,
         content: `After logging in, click "Start Notarization" or "Notarize a Document." You will be asked to select the type of document you need notarized (power of attorney, affidavit, deed, etc.) and enter your state. Notarize.com will confirm whether your state and document type are supported. If they are, upload your document as a PDF file. If you only have a paper document, scan it or photograph each page clearly and convert it to a PDF before uploading.`,
-        tip: `Quick Tip: Make sure your document is complete and ready to sign before uploading. The notary cannot advise you on what the document means or whether it is legally correct — they only witness your signature.`,
+        tip: `Quick Tip: Make sure your document is complete and ready to sign before uploading. The notary cannot advise you on what the document means or whether it is legally correct. They only witness your signature.`,
       },
       {
         title: `Complete the identity verification step`,
@@ -852,7 +852,7 @@ The cost for a notarization on Notarize.com is a flat fee per document, typicall
     difficulty: `Beginner`,
     body: `Lemonade is an insurance company that handles everything through an app and website — no phone calls with agents, no paperwork, and no waiting days for a quote. The company was designed from the ground up around technology, which lets it offer lower prices and a faster experience than many traditional insurers.
 
-Lemonade offers renters insurance and homeowners insurance. Renters insurance protects the things you own (furniture, electronics, clothing, etc.) in case of theft, fire, or other damage — it does not cover the building itself, which your landlord's policy handles. Homeowners insurance protects both your belongings and the physical structure of your home from covered events like fires, certain weather damage, theft, and liability if someone is injured on your property.
+Lemonade offers renters insurance and homeowners insurance. Renters insurance protects the things you own (furniture, electronics, clothing, etc.) in case of theft, fire, or other damage. It does not cover the building itself, which your landlord's policy handles. Homeowners insurance protects both your belongings and the physical structure of your home from covered events like fires, certain weather damage, theft, and liability if someone is injured on your property.
 
 Getting a quote from Lemonade takes about two minutes. You answer a series of questions about yourself, your home, and what coverage amount you want, and Lemonade shows you a monthly price. You can adjust your coverage levels and deductible amounts to change the price.
 

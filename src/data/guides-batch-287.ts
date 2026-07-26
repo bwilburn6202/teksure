@@ -240,7 +240,7 @@ export const guidesBatch287: Guide[] = [
       },
       {
         title: "Install BARD Mobile for instant downloads",
-        content: "BARD Mobile is the free NLS app for iPhone, iPad, and Android. Once approved for NLS, ask the librarian to enable BARD account access — they will email a username and password setup link. Install BARD Mobile from the App Store or Play Store, sign in, and browse the same 140,000 titles available by mail. Tap any title to download it over WiFi in a few minutes. Headphones and Bluetooth speakers both work.",
+        content: "BARD Mobile is the free NLS app for iPhone, iPad, and Android. Once approved for NLS, ask the librarian to enable BARD account access. They will email a username and password setup link. Install BARD Mobile from the App Store or Play Store, sign in, and browse the same 140,000 titles available by mail. Tap any title to download it over WiFi in a few minutes. Headphones and Bluetooth speakers both work.",
       },
       {
         title: "Add NLS books to an Amazon Echo or Google Nest",
