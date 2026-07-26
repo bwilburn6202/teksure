@@ -184,6 +184,46 @@ const failures = [];
 const degradedList = [];
 const started = Date.now();
 
+/**
+ * Write the run's own report to dist/prerender-report.json.
+ *
+ * Called at checkpoints during the run and once at the end, because the run
+ * has been dying partway through: package.json wraps this script in
+ * `npm run prerender || <log a warning>`, so a crash or an OOM kill is
+ * swallowed, the build carries on, and the site deploys with however many
+ * pages happened to be written. The only symptom from outside was a page
+ * count that quietly fell short of the sitemap.
+ *
+ * Route paths and error strings only — no secrets, a couple of KB.
+ */
+function writeReport({ partial }) {
+  try {
+    writeFileSync(
+      join(DIST, 'prerender-report.json'),
+      JSON.stringify(
+        {
+          status: partial ? 'in-progress-or-killed' : 'complete',
+          generatedAt: new Date().toISOString(),
+          routesAttempted: routes.length,
+          completed: done,
+          written: done - failed,
+          failed,
+          renderedWithoutTitle: degraded,
+          elapsedSeconds: Number(((Date.now() - started) / 1000).toFixed(1)),
+          heapUsedMb: Math.round(process.memoryUsage().heapUsed / 1024 / 1024),
+          rssMb: Math.round(process.memoryUsage().rss / 1024 / 1024),
+          sampleFailures: failures,
+          sampleDegraded: degradedList,
+        },
+        null,
+        2
+      ) + '\n'
+    );
+  } catch {
+    /* Reporting must never break an otherwise-good build. */
+  }
+}
+
 async function renderOne(route) {
   try {
     const { html: appHtml, head, errors } = await render(route);
@@ -212,8 +252,38 @@ async function renderOne(route) {
     const secs = ((Date.now() - started) / 1000).toFixed(0);
     const rate = (done / Math.max(1, (Date.now() - started) / 1000)).toFixed(1);
     console.log(`[prerender] ${done}/${routes.length} (${secs}s, ${rate}/s, ${failed} failed)`);
+    // Checkpoint the report mid-run. If this process is killed — which is
+    // what has been happening — the final write at the bottom never
+    // executes, and the only evidence of how far it got dies with it.
+    // A checkpoint every 250 routes means a killed run still leaves a
+    // readable record of where and why it stopped.
+    writeReport({ partial: true });
   }
 }
+
+/**
+ * Leave a report behind even when this process dies unexpectedly.
+ *
+ * The run has been terminating partway through, and because package.json wraps
+ * it in `npm run prerender || <warn>`, the failure is swallowed and the build
+ * ships anyway. These handlers mean the next deploy still carries evidence of
+ * what happened, instead of just a page count that came up short.
+ *
+ * Note a V8 heap OOM kill cannot be trapped in JavaScript at all — that is
+ * what the periodic checkpoint in renderOne() is for.
+ */
+for (const signal of ['SIGTERM', 'SIGINT']) {
+  process.on(signal, () => {
+    console.error(`[prerender] received ${signal} after ${done}/${routes.length} routes`);
+    writeReport({ partial: true });
+    process.exit(1);
+  });
+}
+process.on('uncaughtException', (err) => {
+  console.error(`[prerender] uncaught exception after ${done}/${routes.length} routes:`, err?.message ?? err);
+  writeReport({ partial: true });
+  process.exit(1);
+});
 
 // Simple fixed-size worker pool — React SSR is CPU-bound, so a small pool
 // beats spawning thousands of concurrent renders.
@@ -240,47 +310,9 @@ if (degradedList.length) {
   for (const d of degradedList) console.log('  ! ' + d);
 }
 
-/**
- * Publish the run's own report to dist/prerender-report.json.
- *
- * Everything above goes to stdout, which means it only exists inside a Vercel
- * build log. When ~2,400 routes silently stopped being prerendered in July
- * 2026, that log was the only place the reason existed, and it was not
- * reachable from outside the Vercel dashboard — so the problem sat there,
- * diagnosable only by someone who could open the right build.
- *
- * Writing the same summary into the deployed output makes it answerable with
- * one request:
- *
- *   curl -s https://www.teksure.com/prerender-report.json
- *
- * It is small, contains no secrets (route paths and error strings only), and
- * is worth far more than the couple of KB it costs.
- */
-try {
-  writeFileSync(
-    join(DIST, 'prerender-report.json'),
-    JSON.stringify(
-      {
-        generatedAt: new Date().toISOString(),
-        routesAttempted: routes.length,
-        written: done - failed,
-        failed,
-        renderedWithoutTitle: degraded,
-        durationSeconds: Number(totalSecs),
-        // Capped lists — enough to spot the pattern without bloating the file.
-        sampleFailures: failures,
-        sampleDegraded: degradedList,
-      },
-      null,
-      2
-    ) + '\n'
-  );
-  console.log('[prerender] wrote dist/prerender-report.json');
-} catch (err) {
-  // Never let reporting break a build that otherwise succeeded.
-  console.warn('[prerender] could not write prerender-report.json:', err?.message ?? err);
-}
+// Final report. Readable at https://www.teksure.com/prerender-report.json
+writeReport({ partial: false });
+console.log('[prerender] wrote dist/prerender-report.json');
 // A handful of failures still leaves a working site (those routes fall back to
 // the SPA shell), but a wholesale failure should break the build.
 if (failed > routes.length * 0.25) {
