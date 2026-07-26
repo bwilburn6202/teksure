@@ -239,6 +239,48 @@ if (degradedList.length) {
   console.log('[prerender] pages that fell back on the server (invisible to non-JS crawlers):');
   for (const d of degradedList) console.log('  ! ' + d);
 }
+
+/**
+ * Publish the run's own report to dist/prerender-report.json.
+ *
+ * Everything above goes to stdout, which means it only exists inside a Vercel
+ * build log. When ~2,400 routes silently stopped being prerendered in July
+ * 2026, that log was the only place the reason existed, and it was not
+ * reachable from outside the Vercel dashboard — so the problem sat there,
+ * diagnosable only by someone who could open the right build.
+ *
+ * Writing the same summary into the deployed output makes it answerable with
+ * one request:
+ *
+ *   curl -s https://www.teksure.com/prerender-report.json
+ *
+ * It is small, contains no secrets (route paths and error strings only), and
+ * is worth far more than the couple of KB it costs.
+ */
+try {
+  writeFileSync(
+    join(DIST, 'prerender-report.json'),
+    JSON.stringify(
+      {
+        generatedAt: new Date().toISOString(),
+        routesAttempted: routes.length,
+        written: done - failed,
+        failed,
+        renderedWithoutTitle: degraded,
+        durationSeconds: Number(totalSecs),
+        // Capped lists — enough to spot the pattern without bloating the file.
+        sampleFailures: failures,
+        sampleDegraded: degradedList,
+      },
+      null,
+      2
+    ) + '\n'
+  );
+  console.log('[prerender] wrote dist/prerender-report.json');
+} catch (err) {
+  // Never let reporting break a build that otherwise succeeded.
+  console.warn('[prerender] could not write prerender-report.json:', err?.message ?? err);
+}
 // A handful of failures still leaves a working site (those routes fall back to
 // the SPA shell), but a wholesale failure should break the build.
 if (failed > routes.length * 0.25) {
