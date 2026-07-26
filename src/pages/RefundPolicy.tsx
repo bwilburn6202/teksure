@@ -135,7 +135,7 @@ const RefundPolicy = () => (
             </p>
             <p className="text-sm">
               See <Link to="/pricing" className="text-primary hover:underline">full pricing</Link>{' '}
-              for the complete breakdown, including travel beyond our included radius.
+              for the complete breakdown.
             </p>
           </CardContent>
         </Card>

@@ -2,7 +2,7 @@ import { Navbar } from '@/components/layout/Navbar';
 import { Footer } from '@/components/layout/Footer';
 import { SEOHead } from '@/components/SEOHead';
 import { Button } from '@/components/ui/button';
-import { Check, Shield, Clock, Star, ArrowRight } from 'lucide-react';
+import { Check, Shield, Clock, Flag, ArrowRight } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import {
   FIRST_HOUR_PRICE,
@@ -11,6 +11,8 @@ import {
   FREE_CANCELLATION_HOURS,
   INCLUDED_TRAVEL_MILES,
   PER_MILE_RATE,
+  ONSITE_AVAILABLE,
+  BRAND_PROMISE,
   formatPrice,
   remainderAfterDeposit,
 } from '@/data/pricing';
@@ -27,13 +29,15 @@ const included = [
   'As much of the hour as your problem needs',
   'A written summary emailed to you afterward',
   'Follow-up questions answered at no extra charge',
-  `Travel within ${INCLUDED_TRAVEL_MILES} miles for in-home visits`,
+  ...(ONSITE_AVAILABLE ? [`Travel within ${INCLUDED_TRAVEL_MILES} miles for in-home visits`] : []),
 ];
 
+// Only claims that are true today. See TRUST_POINTS in src/data/pricing.ts for
+// why "insured" and "audited" are deliberately not here yet.
 const trustBadges = [
+  { icon: Flag, label: 'Based in America', sub: 'Not an overseas call center' },
   { icon: Shield, label: 'No fix, no charge', sub: 'You only pay if we sort it' },
-  { icon: Clock, label: 'Same-week appointments', sub: 'Often as soon as tomorrow' },
-  { icon: Star, label: 'Vetted technicians', sub: 'ID-checked, background-verified' },
+  { icon: Clock, label: 'Available nationwide', sub: 'Remote help in all 50 states' },
 ];
 
 const pricingJsonLd = [
@@ -43,7 +47,8 @@ const pricingJsonLd = [
     name: 'TekSure Tech Support',
     provider: { '@type': 'Organization', name: 'TekSure', url: 'https://www.teksure.com' },
     description:
-      'Patient, plain-English tech support for seniors and non-technical users — remote or in your home.',
+      'Patient, plain-English tech support for seniors and non-technical users, delivered remotely across the United States.',
+    areaServed: { '@type': 'Country', name: 'United States' },
     url: 'https://www.teksure.com/pricing',
     offers: {
       '@type': 'Offer',
@@ -61,7 +66,7 @@ const Pricing = () => (
   <div className="min-h-screen bg-background flex flex-col">
     <SEOHead
       title={`Tech Support Pricing | TekSure — ${formatPrice(FIRST_HOUR_PRICE)} the First Hour`}
-      description={`Honest tech support pricing: ${formatPrice(FIRST_HOUR_PRICE)} for the first hour, ${formatPrice(ADDITIONAL_HOUR_PRICE)} for each additional hour. Hold your slot with a ${formatPrice(DEPOSIT_AMOUNT)} deposit. No fix, no charge.`}
+      description={`American tech support, available nationwide: ${formatPrice(FIRST_HOUR_PRICE)} for the first hour, ${formatPrice(ADDITIONAL_HOUR_PRICE)} for each additional hour. Hold your slot with a ${formatPrice(DEPOSIT_AMOUNT)} deposit. No fix, no charge.`}
       path="/pricing"
       jsonLd={pricingJsonLd}
     />
@@ -75,6 +80,9 @@ const Pricing = () => (
             <p className="text-muted-foreground text-lg mb-3 max-w-xl mx-auto">
               One rate for every kind of problem. No subscriptions, no hidden fees, no upselling.
             </p>
+            <p className="text-sm text-muted-foreground">
+              {BRAND_PROMISE} — available anywhere in the United States.
+            </p>
           </div>
         </div>
       </section>
@@ -85,7 +93,9 @@ const Pricing = () => (
           <div className="rounded-3xl border border-primary bg-primary/[0.03] shadow-lg shadow-primary/10 p-6 md:p-10 text-center">
             <h2 className="text-xl font-bold mb-1">Tech help, by the hour</h2>
             <p className="text-sm text-muted-foreground mb-6">
-              Remote or in your home — same rate either way
+              {ONSITE_AVAILABLE
+                ? 'Remote or in your home — same rate either way'
+                : 'Over the phone, anywhere in the United States'}
             </p>
 
             <div className="flex items-end justify-center gap-2 mb-1">
@@ -134,8 +144,19 @@ const Pricing = () => (
         {/* Honest extras */}
         <div className="max-w-lg mx-auto text-center">
           <p className="text-sm text-muted-foreground">
-            The only thing that can change the price: in-home visits more than {INCLUDED_TRAVEL_MILES} miles
-            away add {PER_MILE_RATE.toFixed(2)}/mile. We tell you before you book, never after.
+            {ONSITE_AVAILABLE ? (
+              <>
+                The only thing that can change the price: in-home visits more than{' '}
+                {INCLUDED_TRAVEL_MILES} miles away add ${PER_MILE_RATE.toFixed(2)}/mile. We tell you
+                before you book, never after.
+              </>
+            ) : (
+              <>
+                That is the whole price. No travel fees, no callout charge, no surcharge for
+                evenings or weekends. Help is remote for now, which is why we can offer it
+                everywhere in the country at one rate.
+              </>
+            )}
           </p>
         </div>
       </section>

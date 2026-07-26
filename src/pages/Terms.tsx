@@ -90,9 +90,10 @@ const Terms = () => (
               </li>
               <li>
                 <strong className="text-foreground">Paid tech support sessions</strong> — a real
-                technician helps you remotely or in your home, at{' '}
+                person helps you over the phone, sharing your screen if that makes it easier, at{' '}
                 {formatPrice(FIRST_HOUR_PRICE)} for the first hour and{' '}
-                {formatPrice(ADDITIONAL_HOUR_PRICE)} for each additional hour.
+                {formatPrice(ADDITIONAL_HOUR_PRICE)} for each additional hour. Sessions are
+                remote and available anywhere in the United States.
               </li>
             </ul>
             <p className="text-sm">
@@ -146,8 +147,8 @@ const Terms = () => (
                 repair is risk-free. We're happy to help you back things up first — just ask.
               </li>
               <li>
-                Be present (or have an adult present) for in-home visits, and let us know about
-                anything at the property a technician should be aware of.
+                Be available at the time you booked, and somewhere you can talk and use the device
+                we're helping with.
               </li>
               <li>
                 Treat our technicians decently. We reserve the right to end a session and refuse

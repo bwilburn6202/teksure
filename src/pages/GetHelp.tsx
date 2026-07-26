@@ -25,6 +25,7 @@ import {
   DEPOSIT_AMOUNT,
   FREE_CANCELLATION_HOURS,
   INCLUDED_TRAVEL_MILES,
+  ONSITE_AVAILABLE,
   formatPrice,
   remainderAfterDeposit,
 } from '@/data/pricing';
@@ -102,6 +103,8 @@ const GetHelp = () => {
 
   // Where the session happens. Until this existed, someone could book and pay a
   // deposit for a home visit and we had no idea where to send a technician.
+  // While ONSITE_AVAILABLE is false this stays 'remote' — the picker is hidden,
+  // so it can never be anything else.
   const [serviceLocation, setServiceLocation] = useState<'remote' | 'onsite'>('remote');
   const [streetAddress, setStreetAddress] = useState('');
   const [city, setCity] = useState('');
@@ -205,7 +208,7 @@ const GetHelp = () => {
     setError('');
     if (!name.trim()) { setError('Please enter your name.'); return; }
     if (!email.trim() && !phone.trim()) { setError('Please enter an email or phone so we can reach you.'); return; }
-    if (serviceLocation === 'onsite' && (!streetAddress.trim() || !city.trim() || !postalCode.trim())) {
+    if (ONSITE_AVAILABLE && serviceLocation === 'onsite' && (!streetAddress.trim() || !city.trim() || !postalCode.trim())) {
       setError('Please add the address for your home visit so we know where to send a technician.');
       return;
     }
@@ -245,7 +248,7 @@ const GetHelp = () => {
     setError('');
     if (!name.trim()) { setError('Please enter your name.'); return; }
     if (!email.trim() && !phone.trim()) { setError('Please enter an email or phone so we can reach you.'); return; }
-    if (serviceLocation === 'onsite' && (!streetAddress.trim() || !city.trim() || !postalCode.trim())) {
+    if (ONSITE_AVAILABLE && serviceLocation === 'onsite' && (!streetAddress.trim() || !city.trim() || !postalCode.trim())) {
       setError('Please add the address for your home visit so we know where to send a technician.');
       return;
     }
@@ -633,7 +636,25 @@ const GetHelp = () => {
                     </div>
                   </div>
 
-                  {/* Where the session happens */}
+                  {/* Where the session happens.
+                      While ONSITE_AVAILABLE is false there is nothing to choose
+                      — every session is remote — so we state that plainly
+                      instead of showing a one-option picker. */}
+                  {!ONSITE_AVAILABLE ? (
+                    <Card className="rounded-xl border border-border bg-card mb-6">
+                      <CardContent className="p-4 flex items-start gap-3">
+                        <MapPin className="h-5 w-5 text-primary shrink-0 mt-0.5" aria-hidden="true" />
+                        <div>
+                          <p className="font-semibold text-sm">This is a remote session</p>
+                          <p className="text-xs text-muted-foreground mt-1">
+                            We help you over the phone, and share your screen if that makes it easier.
+                            It works anywhere in the United States — there is nothing to install
+                            beforehand and nobody comes to your door.
+                          </p>
+                        </div>
+                      </CardContent>
+                    </Card>
+                  ) : (
                   <div className="mb-6">
                     <p className="text-sm font-medium mb-3">Where would you like help?</p>
                     <div role="radiogroup" aria-label="Session location" className="space-y-3">
@@ -695,6 +716,7 @@ const GetHelp = () => {
                       </div>
                     )}
                   </div>
+                  )}
 
                   {/* Pricing + payment option */}
                   <Card className="rounded-xl border border-border bg-card mb-6">
@@ -762,7 +784,7 @@ const GetHelp = () => {
                       <p className="flex items-center gap-2"><Wrench className="h-4 w-4 text-muted-foreground" /> <strong>{selectedService?.label}</strong></p>
                       <p className="flex items-center gap-2"><Calendar className="h-4 w-4 text-muted-foreground" /> <strong>{selectedDate?.dayName}, {selectedDate?.label}</strong></p>
                       <p className="flex items-center gap-2"><Clock className="h-4 w-4 text-muted-foreground" /> <strong>{selectedSlot?.label}</strong></p>
-                      <p className="flex items-center gap-2"><MapPin className="h-4 w-4 text-muted-foreground" /> <strong>{serviceLocation === 'onsite' ? `At your home${city.trim() ? ` — ${city.trim()}` : ''}` : 'Remotely, over the phone'}</strong></p>
+                      <p className="flex items-center gap-2"><MapPin className="h-4 w-4 text-muted-foreground" /> <strong>{ONSITE_AVAILABLE && serviceLocation === 'onsite' ? `At your home${city.trim() ? ` — ${city.trim()}` : ''}` : 'Remotely, over the phone'}</strong></p>
                       <p className="flex items-center gap-2"><CreditCard className="h-4 w-4 text-muted-foreground" /> <strong>{paymentOption === 'deposit' ? `${formatPrice(DEPOSIT_AMOUNT)} now, ${formatPrice(remainderAfterDeposit())} on the day` : `${formatPrice(FIRST_HOUR_PRICE)} on the day`}</strong></p>
                       <p className="text-xs text-muted-foreground pt-1">
                         Based on a 1-hour job. Longer jobs add {formatPrice(ADDITIONAL_HOUR_PRICE)} per extra hour. If we can't fix it, you pay nothing.{' '}
