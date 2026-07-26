@@ -735,7 +735,7 @@ Chrome, Edge, Safari, and Firefox all support tab groups. The steps are slightly
     thumbnailEmoji: '',
     publishedAt: '2026-04-17',
     difficulty: 'Beginner',
-    body: `Incognito mode (Chrome), Private Browsing (Safari, Firefox), and InPrivate (Edge) all do the same thing: they open a new window that does not save your browsing history, cookies, or any information typed into forms.
+    body: `Incognito mode (Chrome), Private Browsing (Safari, Firefox), and InPrivate (Edge) all do the same thing. They open a new window that does not save your browsing history, cookies, or any information you type into forms.
 
 It is useful for shopping for a gift on a shared computer, signing into a second email account, or researching something you do not want showing up in your history. It does not hide your activity from your internet provider or employer.`,
     steps: [

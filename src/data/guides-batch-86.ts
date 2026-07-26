@@ -311,9 +311,9 @@ Star Walk 2 also includes a "What's up tonight?" section that summarizes the mos
     thumbnailEmoji: ``,
     publishedAt: `2026-04-20`,
     difficulty: `Beginner`,
-    body: `The NASA app is the official mobile application from the National Aeronautics and Space Administration, the US government agency responsible for space exploration and aeronautics research. It is completely free, with no ads or in-app purchases, and provides direct access to NASA's entire public library of images, videos, and news content.
+    body: `The NASA app is the official mobile application from NASA. NASA stands for the National Aeronautics and Space Administration — the US government agency responsible for space exploration and aeronautics research. The app is completely free, with no ads or in-app purchases. It gives you direct access to NASA's entire public library of images, videos, and news content.
 
-If you have ever seen a breathtaking photo of a distant galaxy or the surface of Mars and wondered where to find more like it, the NASA app is the answer. The app pulls from the same image libraries that NASA publishes for the press and scientific community, which means you are seeing the same stunning content as researchers and journalists — without needing any scientific background to appreciate it.
+If you have ever seen a breathtaking photo of a distant galaxy or the surface of Mars and wondered where to find more like it, the NASA app is the answer. The app pulls from the same image libraries that NASA publishes for the press and scientific community. That means you are seeing the same stunning content as researchers and journalists — no scientific background needed to appreciate it.
 
 The app's home screen shows a feed of the latest NASA news, mission updates, and featured images. The Astronomy Picture of the Day (APOD) is one of the most popular features — every day, NASA selects one image or video of an astronomical phenomenon and provides a brief expert explanation written in accessible language.
 

@@ -440,7 +440,7 @@ Parents can use Screen Time to manage a child's phone remotely through Family Sh
     thumbnailEmoji: '',
     publishedAt: '2026-04-19',
     difficulty: 'Beginner',
-    body: `Amazon released Alexa+ in 2025 — a major upgrade to the Alexa voice assistant that powers Echo devices. It uses generative AI (similar to what powers ChatGPT) so it can hold more natural conversations, remember what you said earlier in the conversation, help with multi-step tasks, and connect to outside services like Grubhub, Uber, and Ticketmaster to take actions for you. Alexa+ works on Echo devices, either through a subscription or as part of Amazon Prime.`,
+    body: `Amazon released Alexa+ in 2025 — a major upgrade to the Alexa voice assistant that powers Echo devices. It uses generative AI, similar to what powers ChatGPT. That means it can hold more natural conversations and remember what you said earlier in the conversation. It can also help with multi-step tasks, and connect to outside services like Grubhub, Uber, and Ticketmaster to take actions for you. Alexa+ works on Echo devices, either through a subscription or as part of Amazon Prime.`,
     steps: [
       {
         title: 'Check if you have Alexa+',
@@ -472,7 +472,7 @@ Parents can use Screen Time to manage a child's phone remotely through Family Sh
     thumbnailEmoji: '',
     publishedAt: '2026-04-19',
     difficulty: 'Beginner',
-    body: `Most smartphones and smart speakers come with at least one voice assistant built in — Siri on Apple devices, Google Assistant on Android phones, and Alexa on Amazon Echo devices. Each has different strengths, and knowing what each one does best helps you get faster, better results instead of asking the wrong one for a task it handles poorly.`,
+    body: `Most smartphones and smart speakers come with at least one voice assistant built in — Siri on Apple devices, Google Assistant on Android phones, and Alexa on Amazon Echo devices. Each has different strengths. Knowing what each one does best helps you get faster, better results, instead of asking the wrong one for a task it handles poorly.`,
     steps: [
       {
         title: 'What Siri is best at',

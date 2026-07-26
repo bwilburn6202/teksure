@@ -906,11 +906,11 @@ The problem: a power of attorney document alone may not be enough to access onli
 
 **Why this matters**
 
-If you become incapacitated — whether from illness, injury, or cognitive decline — your agent needs to be able to: pay your bills online, access your bank and investment accounts, respond to important emails, and manage subscriptions and automatic payments. Without advance preparation, even a legitimate agent with a valid power of attorney may face weeks of delays navigating financial institutions' bureaucracies.
+If you become incapacitated — whether from illness, injury, or cognitive decline — your agent needs to be able to pay your bills online and access your bank and investment accounts. They also need to respond to important emails and manage subscriptions and automatic payments. Without advance preparation, even a legitimate agent with a valid power of attorney may face weeks of delays navigating financial institutions' bureaucracies.
 
 **What to prepare**
 
-The most practical step is creating a "digital access document" — a secure, written record that includes: your email addresses and passwords, your online banking and investment logins, any automatic bill payments and their accounts, and the PIN or passcode for your phone and computer. This document should be stored securely (not on your computer) and shared only with your agent.
+The most practical step is creating a "digital access document" — a secure, written record of your account access. It should include your email addresses and passwords, your online banking and investment logins, any automatic bill payments and their accounts, and the PIN or passcode for your phone and computer. This document should be stored securely, not on your computer, and shared only with your agent.
 
 Password managers like Bitwarden, LastPass, and 1Password allow you to designate an emergency contact who can request access under specific conditions — this is a secure alternative to writing down passwords.
 

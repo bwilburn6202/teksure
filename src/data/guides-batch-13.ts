@@ -166,7 +166,7 @@ export const guidesBatch13: Guide[] = [
     thumbnailEmoji: '',
     publishedAt: '2026-04-19',
     difficulty: 'Beginner',
-    body: "The Social Security Administration offers a free online account called my Social Security at ssa.gov/myaccount. Once you create your account, you can view your estimated future benefits, check your earnings history, get a benefit verification letter, and manage direct deposit information — all without calling or visiting an SSA office.",
+    body: "The Social Security Administration offers a free online account called my Social Security at ssa.gov/myaccount. Once you create your account, you can view your estimated future benefits and check your earnings history. You can also get a benefit verification letter and manage your direct deposit information — all without calling or visiting an SSA office.",
     steps: [
       {
         title: 'Go to the official Social Security website',

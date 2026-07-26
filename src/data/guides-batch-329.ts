@@ -151,11 +151,11 @@ The caption text stays completely private and is not sent anywhere or saved by d
     publishedAt: '2026-07-26',
     lastVerifiedAt: '2026-07-26',
     difficulty: 'Beginner',
-    body: `A credit freeze blocks anyone — including you — from opening a new credit card, loan, or other account in your name, because lenders cannot check your credit report while it is frozen. This makes it very difficult for identity thieves to use stolen personal information to open new accounts, even if they have your Social Security number.
+    body: `A credit freeze blocks anyone — including you — from opening a new credit card, loan, or other account in your name. That's because lenders cannot check your credit report while it is frozen. This makes it very difficult for identity thieves to use stolen personal information to open new accounts, even if they have your Social Security number.
 
-Freezing your credit is free by federal law, does not hurt your existing credit score, and does not affect accounts you already have (you can still use your current credit cards normally). You do need to freeze it separately at all three major credit bureaus — Equifax, Experian, and TransUnion — because each one keeps its own separate report.
+Freezing your credit is free by federal law. It does not hurt your existing credit score, and it does not affect accounts you already have — you can still use your current credit cards normally. You do need to freeze it separately at all three major credit bureaus — Equifax, Experian, and TransUnion — because each one keeps its own separate report.
 
-If you ever need to apply for new credit, or if a business needs to check your credit for a legitimate reason (like a new apartment or a phone plan), you temporarily "thaw" (unfreeze) it, which takes just a few minutes online or by phone, then you can refreeze it afterward.
+If you ever need to apply for new credit, or if a business needs to check your credit for a legitimate reason, like a new apartment or a phone plan, you can temporarily "thaw," or unfreeze, it. This takes just a few minutes online or by phone. You can refreeze it again afterward.
 
 This guide walks through freezing your credit at all three bureaus, which takes about 15-20 minutes total.
 

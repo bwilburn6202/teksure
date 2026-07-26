@@ -258,7 +258,7 @@ export const guidesBatch14: Guide[] = [
     thumbnailEmoji: '',
     publishedAt: '2026-04-19',
     difficulty: 'Beginner',
-    body: "If you have an Amazon Echo device with Alexa, you already have a free, hands-free reminder system. Alexa can remind you to take medications at specific times every day, alert you about upcoming appointments, and prompt you with any custom message — all spoken out loud so you don't have to look at a screen.",
+    body: "If you have an Amazon Echo device with Alexa, you already have a free, hands-free reminder system. Alexa can remind you to take medications at specific times every day. It can also alert you about upcoming appointments, or prompt you with any custom message you choose. Every reminder is spoken out loud, so you don't have to look at a screen.",
     steps: [
       {
         title: 'Set a daily medication reminder by voice',

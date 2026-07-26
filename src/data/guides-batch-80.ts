@@ -469,13 +469,13 @@ If you have a primary care doctor but cannot get an appointment for weeks, Docto
     difficulty: `Beginner`,
     body: `Amazon Clinic is an online healthcare service offered by Amazon that lets you get treated for more than 30 common health conditions at a flat, transparent price — often without needing health insurance or a prior appointment. It is available in most US states to people 18 and older.
 
-The service works differently from most telehealth platforms. Instead of a live video call, Amazon Clinic uses an asynchronous format for many conditions: you fill out a detailed questionnaire about your symptoms, and a licensed clinician reviews your responses and either prescribes treatment or asks follow-up questions — usually within an hour. This approach works well for straightforward conditions where the answer is fairly predictable once the clinician has your symptom details.
+The service works differently from most telehealth platforms. Instead of a live video call, Amazon Clinic uses a message-based format for many conditions. You fill out a detailed questionnaire about your symptoms. A licensed clinician then reviews your answers and either prescribes treatment or asks follow-up questions, usually within an hour. This approach works well for straightforward conditions where the answer is fairly predictable once the clinician has your symptom details.
 
-Conditions Amazon Clinic commonly treats include urinary tract infections, cold sores, erectile dysfunction, birth control, acid reflux, seasonal allergies, eyelash growth, hair loss, and several skin conditions. These are situations where a physical examination is usually not necessary and a prescription is often the standard treatment.
+Conditions Amazon Clinic commonly treats include urinary tract infections, cold sores, erectile dysfunction, and birth control. It also treats acid reflux, seasonal allergies, eyelash growth, hair loss, and several skin conditions. These are situations where a physical examination is usually not necessary and a prescription is often the standard treatment.
 
 Pricing is listed upfront before you start. Costs typically range from around $35 to $75 depending on the condition. If Amazon Clinic is unable to help with your situation, you are not charged.
 
-Prescriptions from Amazon Clinic can be filled at any pharmacy or through Amazon Pharmacy, which often offers discounted prices. Amazon Clinic is not suitable for urgent or emergency situations, chronic disease management, or any condition that genuinely requires an in-person examination.`,
+Prescriptions from Amazon Clinic can be filled at any pharmacy or through Amazon Pharmacy, which often offers discounted prices. Amazon Clinic is not suitable for urgent or emergency situations or chronic disease management. It is also not a fit for any condition that genuinely requires an in-person examination.`,
     steps: [
       {
         title: `Find Amazon Clinic in the Amazon app or website`,
@@ -557,13 +557,13 @@ If you live near a One Medical office and want a primary care experience that co
     thumbnailEmoji: ``,
     publishedAt: `2026-04-20`,
     difficulty: `Beginner`,
-    body: `Telehealth means seeing a doctor, nurse practitioner, or other healthcare provider over the internet instead of traveling to an office. You use a smartphone, tablet, or computer with a camera and microphone, and the visit happens through a video call — similar to the way you might video chat with a family member. The provider can see and hear you, ask you questions, look at visible symptoms, and in most cases prescribe medication if needed.
+    body: `Telehealth means seeing a doctor, nurse practitioner, or other healthcare provider over the internet instead of traveling to an office. You use a smartphone, tablet, or computer with a camera and microphone, and the visit happens through a video call — similar to the way you might video chat with a family member. The provider can see and hear you and ask you questions. In most cases, they can also look at visible symptoms and prescribe medication if needed.
 
-Telehealth became widely available during the COVID-19 pandemic when in-person visits were not possible, and many patients and providers discovered it worked well for a wide range of everyday healthcare needs. Today, millions of Americans use telehealth regularly, and many insurance plans — including Medicare — cover at least some telehealth services.
+Telehealth became widely available during the COVID-19 pandemic, when in-person visits were not possible. Many patients and providers discovered it worked well for a wide range of everyday healthcare needs. Today, millions of Americans use telehealth regularly. Many insurance plans, including Medicare, cover at least some telehealth services.
 
-Telehealth works best for non-emergency conditions that do not require a physical examination, lab work, or imaging. Common examples include cold and flu symptoms, sinus infections, ear pain, pink eye, urinary tract infections, rashes, mild back pain, prescription refills for stable chronic conditions, mental health counseling, and follow-up visits after hospital discharge.
+Telehealth works best for non-emergency conditions that do not require a physical examination, lab work, or imaging. Common examples include cold and flu symptoms, sinus infections, ear pain, pink eye, and urinary tract infections. It also works well for rashes, mild back pain, prescription refills for stable chronic conditions, mental health counseling, and follow-up visits after hospital discharge.
 
-Telehealth is not appropriate when you need hands-on care — for example, if a doctor needs to listen to your lungs closely, look inside your ear with a special tool, draw blood, or perform any kind of procedure. It is also never appropriate for emergencies. Any time you have chest pain, difficulty breathing, sudden severe headache, signs of a stroke, or other potentially life-threatening symptoms, call 911 right away.
+Telehealth is not appropriate when you need hands-on care. For example, skip it if a doctor needs to listen to your lungs closely, look inside your ear with a special tool, draw blood, or perform any kind of procedure. It is also never appropriate for emergencies. Any time you have chest pain, difficulty breathing, a sudden severe headache, signs of a stroke, or other potentially life-threatening symptoms, call 911 right away.
 
 Most telehealth services are straightforward to use. If you can make a video call on a phone or computer, you have everything you need to do a telehealth visit.`,
     steps: [
