@@ -412,7 +412,7 @@ const GetHelp = () => {
                 <span className="font-semibold">Schedule a time</span>
               </div>
               <p className="text-sm text-muted-foreground">
-                Pick a date and time. Pay on the day, or secure with a $15 deposit.
+                Pick a date and time. Pay on the day, or secure with a {formatPrice(DEPOSIT_AMOUNT)} deposit.
               </p>
             </button>
           </div>
@@ -805,7 +805,7 @@ const GetHelp = () => {
                       {submitting
                         ? <><Loader2 className="h-4 w-4 animate-spin" /> {paymentOption === 'deposit' ? 'Redirecting to payment…' : 'Booking…'}</>
                         : paymentOption === 'deposit'
-                        ? <><CreditCard className="h-4 w-4" /> Pay $15 deposit securely</>
+                        ? <><CreditCard className="h-4 w-4" /> Pay {formatPrice(DEPOSIT_AMOUNT)} deposit securely</>
                         : <><CheckCircle2 className="h-4 w-4" /> Confirm — pay on day</>}
                     </Button>
                   </div>

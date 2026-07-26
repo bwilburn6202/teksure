@@ -389,6 +389,129 @@ function checkDuplicateTitles() {
 }
 
 /**
+ * Prices quoted in a page instead of imported from src/data/pricing.ts.
+ *
+ * On 2026-07-26 the site had three different prices live for the same service:
+ * the booking flow charged $49 first hour + $29/additional, /pricing advertised
+ * flat $49/$99/$149 tiers, and the FAQ said "sessions start at $29". A customer
+ * could read one number and be charged another. Nobody introduced that on
+ * purpose — the prices were simply hardcoded in three places and drifted.
+ *
+ * pricing.ts now exists as the single source of truth. This check exists so the
+ * drift cannot quietly start again: any dollar figure typed directly into a
+ * customer-facing page gets flagged.
+ */
+function checkPricingConsistency() {
+  const pagesDir = path.join(ROOT, 'src', 'pages');
+  const offenders = [];
+  // Money written straight into a page. Guides legitimately quote third-party
+  // prices ("Shopify is $29/mo"), so only look at the pages that describe
+  // TekSure's own service and checkout.
+  const OWN_PRICE_PAGES = new Set([
+    'Pricing.tsx',
+    'GetHelp.tsx',
+    'FAQ.tsx',
+    'HowItWorks.tsx',
+    'Terms.tsx',
+    'RefundPolicy.tsx',
+    'TechnicianProfile.tsx',
+  ]);
+  for (const file of OWN_PRICE_PAGES) {
+    const p = path.join(pagesDir, file);
+    if (!fs.existsSync(p)) continue;
+    const text = fs.readFileSync(p, 'utf8');
+    const importsPricing = /from ['"]@\/data\/pricing['"]/.test(text);
+    for (const m of text.matchAll(/\$\d+(?:\.\d{2})?/g)) {
+      // Inside a template literal referencing the constants is fine.
+      const around = text.slice(Math.max(0, m.index - 40), m.index);
+      if (/formatPrice\(|PRICE|DEPOSIT/.test(around)) continue;
+      // Comments explaining past price drift are not price drift. Check the
+      // start of the physical line rather than the whole preceding window.
+      const lineStart = text.lastIndexOf('\n', m.index) + 1;
+      const line = text.slice(lineStart, m.index);
+      if (/^\s*(\/\/|\*|\/\*)/.test(line)) continue;
+      offenders.push(`- ${file}: hardcoded ${m[0]}${importsPricing ? '' : ' (file does not import pricing.ts at all)'}`);
+    }
+  }
+  const unique = [...new Set(offenders)];
+  return {
+    name: 'pricing-consistency',
+    label: 'Hardcoded prices outside pricing.ts',
+    ok: unique.length === 0,
+    severity: unique.length === 0 ? 'info' : 'warn',
+    summary:
+      unique.length === 0
+        ? 'All service prices come from src/data/pricing.ts.'
+        : `${unique.length} hardcoded price(s) on customer-facing pages — these are how the three-way price drift started.`,
+    details: unique.slice(0, 12).join('\n'),
+    metrics: { count: unique.length },
+  };
+}
+
+/**
+ * Invented people presented as real customers, and trust claims we cannot back.
+ *
+ * On 2026-07-26 /technicians was live with four made-up technicians and eleven
+ * fabricated named reviews ("Patricia W., 5 stars: He arrived on time..."),
+ * and /stories ran a dozen invented people under the headline "Real Stories
+ * from Real People" with no disclosure anywhere.
+ *
+ * Publishing invented testimonials as genuine is deceptive advertising; the
+ * FTC's Rule on Consumer Reviews and Testimonials prohibits it and carries
+ * civil penalties. For a brand whose whole promise is "trusted and secure",
+ * aimed at the demographic that fake tech-support outfits target, this is the
+ * single most damaging thing that can end up on the site by accident.
+ *
+ * The rule enforced here: a page that contains review-shaped data must also
+ * contain a disclosure, unless the reviews come from the database (real ones).
+ */
+function checkTestimonialHonesty() {
+  const pagesDir = path.join(ROOT, 'src', 'pages');
+  const flagged = [];
+  const DISCLOSURE = /fictional|illustrative example|representative example|not actual (customer|user) testimonial|names and details are (made up|fictional)/i;
+  /**
+   * Testimonial-shaped data specifically: a person's name paired with words
+   * they supposedly said.
+   *
+   * An earlier, looser version matched `name:` next to `rating:` and flagged
+   * /tools/VpnGuide and /tools/TwoFactorSetup, which rate *products*
+   * ("Proton VPN, rating: 5"). That is TekSure's own editorial opinion and is
+   * completely fine. Requiring a quote/text field alongside the name is what
+   * separates "we rate this app 5 stars" from "Patricia W. said we were
+   * wonderful" — only the second one is a testimonial.
+   */
+  const REVIEW_SHAPE = /(author|reviewer):\s*['"`][^'"`]+['"`][\s\S]{0,200}?(quote|text|review|testimonial):\s*['"`]/i;
+
+  const walk = (dir) => {
+    for (const entry of fs.readdirSync(dir, { withFileTypes: true })) {
+      const p = path.join(dir, entry.name);
+      if (entry.isDirectory()) { walk(p); continue; }
+      if (!entry.name.endsWith('.tsx')) continue;
+      const text = fs.readFileSync(p, 'utf8');
+      if (!REVIEW_SHAPE.test(text)) continue;
+      // Reviews loaded from Supabase are real; only hardcoded ones are suspect.
+      if (/from\(['"]testimonials['"]\)|from\(['"]guide_ratings['"]\)/.test(text)) continue;
+      if (DISCLOSURE.test(text)) continue;
+      flagged.push(`- ${path.relative(ROOT, p)} — hardcoded reviews with ratings and no disclosure`);
+    }
+  };
+  if (fs.existsSync(pagesDir)) walk(pagesDir);
+
+  return {
+    name: 'testimonial-honesty',
+    label: 'Undisclosed invented testimonials',
+    ok: flagged.length === 0,
+    severity: flagged.length === 0 ? 'info' : 'warn',
+    summary:
+      flagged.length === 0
+        ? 'No hardcoded reviews without a disclosure.'
+        : `${flagged.length} page(s) present invented reviews as real. This is an FTC issue, not a style one — fix before anything else in this report.`,
+    details: flagged.slice(0, 10).join('\n'),
+    metrics: { count: flagged.length },
+  };
+}
+
+/**
  * Reading level and small-type usage, via scripts/audit-senior-ux.mjs.
  *
  * TekSure is written for people who mostly did not grow up with this stuff and
@@ -490,6 +613,8 @@ const ALL_CHECKS = [
   { name: 'duplicate-titles', fn: checkDuplicateTitles },
   { name: 'senior-ux', fn: checkSeniorUx },
   { name: 'source-links', fn: checkSourceLinks },
+  { name: 'pricing-consistency', fn: checkPricingConsistency },
+  { name: 'testimonial-honesty', fn: checkTestimonialHonesty },
 ];
 
 // ── State + backlog ──────────────────────────────────────────────────────

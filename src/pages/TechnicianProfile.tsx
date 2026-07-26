@@ -1,3 +1,30 @@
+/**
+ * ⚠️  THIS PAGE IS OFFLINE ON PURPOSE. DO NOT RESTORE THE ROUTE AS-IS.  ⚠️
+ *
+ * Every technician and every review below is invented. "James R." with a 4.9
+ * rating and 112 completed jobs does not exist; neither do "Patricia W." or
+ * "Derek H.", whose five-star reviews describe in-person visits TekSure has
+ * never performed.
+ *
+ * This was live at /technicians until 2026-07-26 — indexed in the sitemap and
+ * linked from the FAQ. Publishing invented reviews and credentials is deceptive
+ * advertising. The FTC's Rule on Consumer Reviews and Testimonials prohibits it
+ * and carries civil penalties per violation, and it is the exact tactic that
+ * fake tech-support operations use on the older adults TekSure serves.
+ *
+ * The routes in App.tsx now redirect to /get-help. The file is kept only so the
+ * layout can be reused.
+ *
+ * BEFORE PUTTING THIS BACK:
+ *   1. Delete every entry in `technicians` below and replace with real people.
+ *   2. Only include reviews from real customers who gave permission — ideally
+ *      read from the `testimonials` table rather than hardcoded here.
+ *   3. Only claim "background-verified" for someone actually background-checked.
+ *   4. Restore the routes in App.tsx and re-add /technicians to the sitemap.
+ *
+ * scripts/dev-loop.mjs has a `testimonial-honesty` check that will keep
+ * flagging this file until the invented data is gone. That is intentional.
+ */
 import { useParams } from 'react-router-dom';
 import { Link } from 'react-router-dom';
 import { Navbar } from '@/components/layout/Navbar';

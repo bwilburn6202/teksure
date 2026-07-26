@@ -24,6 +24,7 @@ import { Navbar } from '@/components/layout/Navbar';
 import { Footer } from '@/components/layout/Footer';
 import { SEOHead } from '@/components/SEOHead';
 import { PageBreadcrumb } from '@/components/PageBreadcrumb';
+import { FIRST_HOUR_PRICE, ADDITIONAL_HOUR_PRICE, formatPrice } from '@/data/pricing';
 
 /**
  * Each FAQ has:
@@ -488,10 +489,10 @@ const categories: FAQCategory[] = [
       {
         q: 'How much does a booking cost?',
         plain:
-          'Sessions are $49 for the first hour and $29 for each additional hour. Most jobs take about an hour. You see the price before you book, you only pay for the time spent, and if we cannot fix it you pay nothing. No subscriptions, no hidden fees.',
+          `Sessions are ${formatPrice(FIRST_HOUR_PRICE)} for the first hour and ${formatPrice(ADDITIONAL_HOUR_PRICE)} for each additional hour. Most jobs take about an hour. You see the price before you book, you only pay for the time spent, and if we cannot fix it you pay nothing. No subscriptions, no hidden fees.`,
         a: (
           <>
-            Sessions are <strong>$49 for the first hour</strong> and $29 for
+            Sessions are <strong>{formatPrice(FIRST_HOUR_PRICE)} for the first hour</strong> and {formatPrice(ADDITIONAL_HOUR_PRICE)} for
             each additional hour. Most jobs take about an hour. You see the
             price before you book, you only pay for the time actually spent,
             and if we cannot fix your problem you pay nothing. No
