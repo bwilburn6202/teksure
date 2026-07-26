@@ -631,7 +631,7 @@ export const guidesBatch23: Guide[] = [
     thumbnailEmoji: '',
     publishedAt: '2026-04-19',
     difficulty: 'Beginner',
-    body: `iPhone has two related features for emergencies: Medical ID (stores your health information — blood type, allergies, conditions — visible to first responders without your passcode) and Emergency Contacts (people your iPhone calls automatically if you use Emergency SOS, and people a first responder can reach from the Medical ID screen).\n\nSetting these up takes about five minutes and could be important in a medical emergency. First responders are trained to check Medical ID on phones at accident scenes. A family member's contact details being there has helped reunite people with their families in emergencies.`,
+    body: `iPhone has two related features for emergencies. Medical ID stores your health information, like blood type, allergies, and conditions, and it is visible to first responders without your passcode. Emergency Contacts are people your iPhone calls automatically if you use Emergency SOS, and people a first responder can reach from the Medical ID screen.\n\nSetting these up takes about five minutes and could be important in a medical emergency. First responders are trained to check Medical ID on phones at accident scenes. A family member's contact details being there has helped reunite people with their families in emergencies.`,
     steps: [
       {
         title: 'Open Medical ID in the Health app',

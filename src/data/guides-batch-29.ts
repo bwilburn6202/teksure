@@ -754,9 +754,9 @@ Fetch has over 17 million active users and has paid out over $1 billion in rewar
     difficulty: 'Intermediate',
     body: `Notarization is the official witnessing of a signature on a legal document. It used to mean going to a bank, UPS Store, or notary's office in person. That's changed. Remote Online Notarization (RON) is now legal in most US states. It lets you get a document notarized over a video call, from home.
 
-Common documents that require notarization include powers of attorney, real estate deeds, affidavits, financial documents, vehicle title transfers, certain contracts, and some forms needed for foreign documents (apostilles). Not all document types qualify for online notarization in every state.
+Common documents that require notarization include powers of attorney, real estate deeds, affidavits, and financial documents. Vehicle title transfers, certain contracts, and some forms needed for foreign documents, called apostilles, also qualify. Not all document types qualify for online notarization in every state.
 
-The process works like this: you upload your document to an RON platform, complete an identity verification (you'll be asked questions about your history based on public records, similar to credit checks), connect via video call with a commissioned notary who witnesses your electronic signature, and receive a digitally notarized document. The whole process typically takes 15-30 minutes.
+The process works like this. You upload your document to an RON platform, and complete an identity verification — you'll be asked questions about your history based on public records, similar to credit checks. Then you connect via video call with a commissioned notary who witnesses your electronic signature, and you receive a digitally notarized document. The whole process typically takes 15-30 minutes.
 
 Popular RON platforms include Notarize (now Proof), DocuSign Notary, and NotaryCam. Most charge $25-40 per notarization. Some banks and insurance companies now offer free RON services to their customers — worth checking before paying.
 

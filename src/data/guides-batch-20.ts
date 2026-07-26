@@ -765,7 +765,7 @@ export const guidesBatch20: Guide[] = [
     thumbnailEmoji: '',
     publishedAt: '2026-04-19',
     difficulty: 'Beginner',
-    body: `AARP membership (available to anyone 50 and over, about $16/year) comes with a surprising range of technology-related benefits that many members never take advantage of. Beyond the well-known discounts on hotels, restaurants, and prescriptions, AARP offers deals on tech products and services, free technology training resources, and access to advocacy work that protects older adults from digital fraud.\n\nThis guide covers the tech-specific benefits worth knowing about and where to find them. Whether you want a discounted antivirus subscription, free help learning a new skill, or resources for protecting yourself from online scams, AARP has something useful.`,
+    body: `AARP membership (available to anyone 50 and over, about $16/year) comes with a surprising range of technology-related benefits that many members never take advantage of. Beyond the well-known discounts on hotels, restaurants, and prescriptions, AARP offers deals on tech products and services. It also offers free technology training resources, and access to advocacy work that protects older adults from digital fraud.\n\nThis guide covers the tech-specific benefits worth knowing about and where to find them. Whether you want a discounted antivirus subscription, free help learning a new skill, or resources for protecting yourself from online scams, AARP has something useful.`,
     steps: [
       {
         title: 'Log into your AARP account to see your benefits',

@@ -449,11 +449,11 @@ The good news is that most of the fixes are straightforward and free.`,
     thumbnailEmoji: '🔍',
     publishedAt: '2026-05-03',
     difficulty: 'Beginner',
-    body: `Losing a file on your own computer is a surprisingly common frustration. Files don't disappear — they are somewhere on your computer, and with the right search technique you can almost always find them in under two minutes.
+    body: `Losing a file on your own computer is a surprisingly common frustration. Files don't disappear. They are somewhere on your computer, and with the right search technique you can almost always find them in under two minutes.
 
 The secret is to use your computer's built-in search feature rather than browsing through folders manually. Both Windows and Mac have powerful search tools that can find a file instantly if you know any part of its name, what type of file it is, or roughly when you last worked on it.
 
-The most important habits for avoiding lost files in the future: always save documents to your Documents folder, always save photos to your Pictures folder, and give files descriptive names (like 'Tax Return 2025' instead of 'Document1').`,
+Three habits go a long way toward avoiding lost files in the future. Always save documents to your Documents folder. Always save photos to your Pictures folder. And give files descriptive names, like "Tax Return 2025" instead of "Document1."`,
     steps: [
       {
         title: 'Search on Windows',
