@@ -640,7 +640,7 @@ Tynker works on iPad, Android tablets, iPhone, Android phones, and web browsers 
     difficulty: `Beginner`,
     body: `Apple Family Sharing is a built-in feature on iPhones, iPads, and Macs that allows up to six family members to share Apple subscriptions, app purchases, and iCloud storage under one family plan. When set up, everyone in the family can access shared subscriptions like Apple TV+, Apple Music, Apple Arcade, and iCloud+ without each person needing to pay separately. Apps purchased by one family member can also be shared with others at no extra cost.
 
-Beyond sharing purchases, Family Sharing is the foundation of Apple's parental controls. When a child's Apple ID is part of a family group, parents can review and approve any App Store purchases before they go through, set Screen Time limits to manage how long a child uses their device, restrict certain apps and content by rating, and see their child's location on a map — all from the parent's own iPhone.
+Beyond sharing purchases, Family Sharing is the foundation of Apple's parental controls. When a child's Apple ID is part of a family group, parents can review and approve any App Store purchases before they go through. They can also set Screen Time limits to manage how long a child uses their device, and restrict certain apps and content by rating. Parents can even see their child's location on a map — all from the parent's own iPhone.
 
 The family organizer — typically a parent — creates the family group and invites other members by email. Each family member needs their own Apple ID. For children under 13, parents create a child Apple ID directly from Family Sharing settings, which automatically puts appropriate restrictions in place.
 

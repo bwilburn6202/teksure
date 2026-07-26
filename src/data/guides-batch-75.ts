@@ -639,9 +639,9 @@ The Dasher app is available for iPhone and Android and uses your phone's GPS for
     thumbnailEmoji: ``,
     publishedAt: `2026-04-20`,
     difficulty: `Beginner`,
-    body: `Amazon Flex is Amazon's program for independent delivery drivers who use their own vehicles to deliver Amazon packages directly to customers' homes. Unlike DoorDash, which involves restaurant food, Amazon Flex drivers pick up pre-packaged delivery batches from Amazon delivery stations, warehouses, or Whole Foods stores and bring them to the addresses printed on each label.
+    body: `Amazon Flex is Amazon's program for independent delivery drivers who use their own vehicles to deliver Amazon packages directly to customers' homes. Unlike DoorDash, which involves restaurant food, Amazon Flex drivers pick up pre-packaged delivery batches from Amazon delivery stations, warehouses, or Whole Foods stores. They then bring those packages to the addresses printed on each label.
 
-Amazon Flex pays between $18 and $25 per hour depending on your market and the type of delivery block. The rate is fixed and displayed before you accept a block — there's no tipping mechanism, but the hourly rate is set at a level that's generally competitive with other gig delivery work.
+Amazon Flex pays between $18 and $25 per hour depending on your market and the type of delivery block. The rate is fixed and displayed before you accept a block. There's no tipping mechanism, but the hourly rate is set at a level that's generally competitive with other gig delivery work.
 
 Work on Amazon Flex is organized into "blocks" — scheduled time slots typically two to four hours long. You browse available blocks in the Flex app (which updates often throughout the day) and claim the ones that fit your schedule. Blocks during peak times like the holiday season, evenings, and weekends are in higher demand and go quickly.
 

@@ -637,7 +637,7 @@ export const guidesBatch39: Guide[] = [
     thumbnailEmoji: '',
     publishedAt: '2026-04-19',
     difficulty: 'Beginner',
-    body: `The iPad has become one of the most popular devices for adults over 60 because of its large, bright screen and straightforward interface. But many iPad owners never discover the built-in features that make it even easier to read, hear, and control — all included at no extra cost and already on your device.`,
+    body: `The iPad has become one of the most popular devices for adults over 60 because of its large, bright screen and straightforward interface. But many iPad owners never discover the built-in features that make it even easier to read, hear, and control. All of these are included at no extra cost, and already on your device.`,
     steps: [
       {
         title: 'Make text larger everywhere on the iPad',

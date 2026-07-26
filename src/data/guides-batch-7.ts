@@ -674,11 +674,11 @@ If you lose your bookmarks (for example, after a computer issue or switching to 
     thumbnailEmoji: '',
     publishedAt: '2026-04-16',
     difficulty: 'Beginner',
-    body: `Your browser keeps a record of every website you have visited — this is called your browsing history. It also stores temporary copies of website images and files on your device so those pages load faster when you revisit them — these temporary files are called the cache (pronounced "cash"). Clearing your history removes the list of sites you have visited, and clearing the cache removes the stored copies of web pages.
+    body: `Your browser keeps a record of every website you have visited. This is called your browsing history. Your browser also stores temporary copies of website images and files on your device, so those pages load faster when you revisit them. These temporary files are called the cache, pronounced "cash." Clearing your history removes the list of sites you have visited, and clearing the cache removes the stored copies of web pages.
 
-There are a few good reasons to clear these: privacy (so others using your computer cannot see where you have been), fixing website problems (a stale cache can cause pages to display incorrectly), and freeing up storage space. On a shared computer, clearing history is especially important if you have been logged into banking or personal accounts.
+There are a few good reasons to clear these. One is privacy, so others using your computer cannot see where you have been. Another is fixing website problems, since a stale cache can cause pages to display incorrectly. A third is simply freeing up storage space. On a shared computer, clearing history is especially important if you have been logged into banking or personal accounts.
 
-The steps are slightly different in each browser, but the basic process is the same: open the browser's settings or menu, find the option to clear browsing data, choose what to delete, and confirm.`,
+The steps are slightly different in each browser, but the basic process is the same. Open the browser's settings or menu, find the option to clear browsing data, choose what to delete, and confirm.`,
     steps: [
       { title: 'Open the Clear Browsing Data menu in Chrome', content: 'In Google Chrome on a computer, click the three vertical dots in the upper right corner. Click "History," then click "History" again in the submenu. On the left side, click "Clear browsing data."' },
       { title: 'In Chrome: select what to clear', content: 'A window will appear with checkboxes for Browsing history, Cookies and other site data, and Cached images and files. Check the boxes for what you want to remove. Use the "Time range" dropdown to choose "All time" to clear everything, or a shorter period like "Last 7 days."' },
