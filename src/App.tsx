@@ -3994,8 +3994,19 @@ const AppContent = () => {
           <Route path="/tools/hardware-security-keys" element={<HardwareSecurityKeys />} />
           <Route path="/tools/state-benefits-finder" element={<StateBenefitsFinder />} />
           <Route path="/notifications" element={<Notifications />} />
-          <Route path="/technicians" element={<TechnicianProfile />} />
-          <Route path="/technicians/:id" element={<TechnicianProfile />} />
+          {/* /technicians is taken out of public reach on purpose.
+              The page shipped four invented technician profiles ("James R.",
+              4.9 rating, 112 jobs completed) and eleven fabricated customer
+              reviews with names, dates and star ratings. Publishing invented
+              reviews and credentials is deceptive advertising — the FTC's Rule
+              on Consumer Reviews and Testimonials prohibits it and carries
+              civil penalties per violation — and several of the reviews
+              describe in-person visits TekSure cannot currently perform.
+              src/pages/TechnicianProfile.tsx is intentionally left in the repo
+              so it can be rebuilt with real people and real reviews; restore
+              these routes then. See BUSINESS-DECISIONS-NEEDED.md. */}
+          <Route path="/technicians" element={<Navigate to="/get-help" replace />} />
+          <Route path="/technicians/:id" element={<Navigate to="/get-help" replace />} />
           <Route path="/book" element={<Navigate to="/get-help" replace />} />
           <Route path="/payment/success" element={<PaymentSuccess />} />
           <Route path="/payment/cancel" element={<PaymentCancel />} />

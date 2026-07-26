@@ -1,28 +1,60 @@
 import { Navbar } from '@/components/layout/Navbar';
 import { Footer } from '@/components/layout/Footer';
 import { SEOHead } from '@/components/SEOHead';
-import { UserPlus, Search, Wrench, CreditCard, ArrowRight, Phone } from 'lucide-react';
+import { Search, Calendar, Wrench, CreditCard, ArrowRight } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Link } from 'react-router-dom';
+import {
+  FIRST_HOUR_PRICE,
+  ADDITIONAL_HOUR_PRICE,
+  DEPOSIT_AMOUNT,
+  formatPrice,
+} from '@/data/pricing';
 
+/**
+ * These steps describe what actually happens in /get-help today.
+ *
+ * They previously described a marketplace that does not exist: a required
+ * account signup, a "want to provide help" path, a remote-or-in-person choice,
+ * and matching "based on skills, location, and availability". None of that is
+ * real — you can book without an account, every session is remote, and there is
+ * no matching engine. Overpromising on the page that explains how the service
+ * works is a bad place to lose someone's trust.
+ */
 const steps = [
-  { icon: UserPlus, title: 'Sign Up', desc: 'Create your free account in seconds. Choose whether you need help or want to provide it.', emoji: '' },
-  { icon: Search, title: 'Describe Your Issue', desc: 'Tell us about your tech problem. Select a category, choose remote or in-person, and add details.', emoji: '' },
-  { icon: Wrench, title: 'Get Matched & Fixed', desc: 'We match you with verified technicians based on skills, location, and availability.', emoji: '' },
-  { icon: CreditCard, title: 'Pay Securely', desc: 'Only pay when the job is done. Transparent pricing with no hidden fees. Leave a review.', emoji: '' },
+  {
+    icon: Search,
+    title: 'Tell us what is wrong',
+    desc: 'Pick the kind of problem and describe it in plain English. No account needed, and no jargon required.',
+  },
+  {
+    icon: Calendar,
+    title: 'Choose a time',
+    desc: 'Pick a day and a time slot that suits you, often as soon as tomorrow. You will get a confirmation by email.',
+  },
+  {
+    icon: Wrench,
+    title: 'We call and fix it',
+    desc: 'A real person calls you at the agreed time and works through it with you, sharing your screen if that helps. Sessions are remote, so this works anywhere in the US.',
+  },
+  {
+    icon: CreditCard,
+    title: 'Pay when it is done',
+    desc: `${formatPrice(FIRST_HOUR_PRICE)} for the first hour, ${formatPrice(ADDITIONAL_HOUR_PRICE)} for each additional hour. Pay on the day or hold your slot with a ${formatPrice(DEPOSIT_AMOUNT)} deposit. If we cannot fix it, you pay nothing.`,
+  },
 ];
 
 const HowItWorks = () => (
   <div className="min-h-screen bg-background flex flex-col">
     <SEOHead
       title="How TekSure Works — Get Tech Help in 4 Simple Steps"
-      description="Getting tech support is easy with TekSure. Sign up free, describe your issue, get matched with a verified technician, and only pay when the job is done."
+      description="Tell us what is wrong, pick a time, and a real person calls you and sorts it out. Remote help anywhere in the US. If we cannot fix it, you pay nothing."
       path="/how-it-works"
       jsonLd={{
         '@context': 'https://schema.org',
         '@type': 'HowTo',
         name: 'How to Get Tech Support with TekSure',
-        description: 'Four simple steps to get your tech problem sorted by a verified technician.',
+        description: 'Four simple steps to get your tech problem sorted by a real person, remotely, anywhere in the United States.',
         step: steps.map((s, i) => ({
           '@type': 'HowToStep',
           position: i + 1,
@@ -56,7 +88,10 @@ const HowItWorks = () => (
               >
                 <div className="flex-shrink-0">
                   <div className="w-14 h-14 rounded-2xl bg-primary/10 flex items-center justify-center group-hover:bg-primary/15 transition-colors">
-                    <span className="text-2xl">{step.emoji}</span>
+                    {/* Was rendering step.emoji, which was always an empty
+                        string — every circle on this page shipped blank while
+                        the icon defined alongside it went unused. */}
+                    {(() => { const StepIcon = step.icon; return <StepIcon className="h-6 w-6 text-primary" aria-hidden="true" />; })()}
                   </div>
                 </div>
                 <div className="flex-1">
@@ -75,14 +110,14 @@ const HowItWorks = () => (
         <div className="container py-20 text-center">
           <h2 className="text-3xl md:text-4xl font-bold tracking-tight mb-4">Ready to get started?</h2>
           <p className="text-background/70 mb-8 max-w-md mx-auto">
-            Get matched with a verified technician today.
+            Book a session today, or just ask us a question first — both are free to start.
           </p>
           <div className="flex flex-wrap justify-center gap-3">
             <Button asChild size="lg" className="gap-2 rounded-xl h-12 px-6 bg-background text-foreground hover:bg-background/90">
               <Link to="/get-help">Get Help Now <ArrowRight className="h-4 w-4" /></Link>
             </Button>
             <Button asChild variant="outline" size="lg" className="gap-2 rounded-xl h-12 px-6 border-background/20 text-background hover:bg-background/10">
-              <Link to="/book"><Phone className="h-4 w-4" /> Book a Session</Link>
+              <Link to="/pricing"><CreditCard className="h-4 w-4" /> See Pricing</Link>
             </Button>
           </div>
         </div>

@@ -804,7 +804,7 @@ const GuideDetail = () => {
           {/* CTA */}
           <div className="rounded-2xl border border-border bg-muted/50 p-10 text-center mb-12">
             <h2 className="text-xl font-bold mb-2">Still stuck? Let a pro handle it.</h2>
-            <p className="text-muted-foreground mb-6 max-w-md mx-auto text-sm">Our verified technicians can fix this issue for you — remotely or in person.</p>
+            <p className="text-muted-foreground mb-6 max-w-md mx-auto text-sm">A real person can walk you through this over the phone, anywhere in the US. If we can't fix it, you don't pay.</p>
             <div className="flex flex-col sm:flex-row items-center justify-center gap-3">
               <Button asChild size="lg" className="rounded-xl gap-2">
                 <Link to="/book">Book a Verified Tech <ArrowRight className="h-4 w-4" /></Link>

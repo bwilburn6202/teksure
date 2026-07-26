@@ -82,6 +82,16 @@
       "permanent": true
     },
     {
+      "source": "/technicians",
+      "destination": "/get-help",
+      "permanent": true
+    },
+    {
+      "source": "/technicians/:id",
+      "destination": "/get-help",
+      "permanent": true
+    },
+    {
       "source": "/book",
       "destination": "/get-help",
       "permanent": true

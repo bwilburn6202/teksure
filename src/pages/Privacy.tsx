@@ -91,7 +91,7 @@ const Privacy = () => {
               <ul className="list-disc pl-6 space-y-2">
                 <li>Provide and improve TekSure's guides, tools, and support services.</li>
                 <li>Remember your preferences (like text size and bookmarks) so you do not have to set them up again.</li>
-                <li>Match you with a verified technician when you request help.</li>
+                <li>Arrange your session and get in touch when you request help.</li>
                 <li>Send you booking confirmations and important account updates.</li>
                 <li>Understand how people use the site so we can make it better.</li>
               </ul>

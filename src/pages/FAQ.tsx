@@ -459,16 +459,15 @@ const categories: FAQCategory[] = [
       {
         q: 'How do I book a technician?',
         plain:
-          'Open the Book page, pick a time, and describe your problem in your own words. We match you with a verified technician based on the issue, your location, and their availability.',
+          'Open the Get Help page, choose the kind of problem, pick a day and time, and describe what is going on in your own words. You do not need an account. We confirm by email, then call you at the agreed time.',
         a: (
           <>
             Open the{' '}
-            <Link to="/get-help" className="text-primary hover:underline">Book page</Link>,
-            pick a time, and describe your problem in your own words. We match
-            you with a verified technician based on the issue, your location,
-            and their availability. You can also browse individual{' '}
-            <Link to="/technicians" className="text-primary hover:underline">technician profiles</Link>{' '}
-            first.
+            <Link to="/get-help" className="text-primary hover:underline">Get Help page</Link>,
+            choose the kind of problem, pick a day and time, and describe what is
+            going on in your own words. You do not need an account to book. We
+            send a confirmation by email and then call you at the time you chose.
+            Sessions are remote, so this works anywhere in the United States.
           </>
         ),
       },

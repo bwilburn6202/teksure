@@ -373,7 +373,7 @@ const QuickFixes = () => {
           <div className="rounded-2xl border border-primary/10 bg-primary/[0.04] p-8 md:p-12 text-center">
             <h2 className="text-2xl md:text-3xl font-bold tracking-tight mb-3">Didn't find your fix?</h2>
             <p className="text-muted-foreground mb-6 max-w-md mx-auto">
-              Our verified technicians can diagnose and solve any tech issue remotely or in person.
+              A real person can diagnose and solve it with you over the phone, anywhere in the US.
             </p>
             <Button asChild size="lg" className="rounded-xl shadow-sm shadow-primary/20">
               <Link to="/get-help">Get Expert Help <ArrowRight className="ml-2 h-4 w-4" /></Link>
