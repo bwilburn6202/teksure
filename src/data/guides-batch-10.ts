@@ -288,9 +288,9 @@ H&R Block also lets you drop off your documents at a local office if you prefer 
     thumbnailEmoji: '🆓',
     publishedAt: '2026-04-17',
     difficulty: 'Beginner',
-    body: `FreeTaxUSA is a lesser-known tax service that is free for federal returns no matter how complex your tax situation is, including self-employment, rental property, and investments. State returns cost about $15.
+    body: `FreeTaxUSA is a lesser-known tax service. It is free for federal returns no matter how complex your tax situation is — even with self-employment income, rental property, or investments. State returns cost about $15.
 
-The site looks plainer than TurboTax or H&R Block, but the tax math is just as accurate and it is an IRS-authorized e-file provider.`,
+The site looks plainer than TurboTax or H&R Block. But the tax math is just as accurate, and it is an IRS-authorized e-file provider.`,
     steps: [
       { title: 'Create a free account', content: 'Go to freetaxusa.com and click "Sign In" then "Create a new account." Use an email you check and set a strong password.' },
       { title: 'Enter your personal info', content: 'Type your name, Social Security number, address, and filing status (single, married filing jointly, head of household). If you have dependents, add their info too.' },
@@ -375,7 +375,7 @@ The collar costs about $150 and needs a monthly plan (around $20) to get the cel
     difficulty: 'Beginner',
     body: `Chewy Autoship is a free program that automatically reorders your pet's food, litter, or medications on a schedule you pick. Boxes arrive every 2, 4, 6, 8, or 12 weeks — whatever matches how fast you use them.
 
-You save 5% on every order (35% on your first one), you can skip or reschedule any delivery, and shipping is free over $49.`,
+You save 5% on every order, and 35% on your first one. You can skip or reschedule any delivery. Shipping is free on orders over $49.`,
     steps: [
       { title: 'Create a Chewy account', content: 'Go to chewy.com or download the free Chewy app. Click "Sign in" then "Create an account." Enter your email, address, and payment card.' },
       { title: `Pick your pet's food or supplies`, content: 'Search for the brand and bag size you already feed. On the product page, look for the blue "Autoship & Save" button with the lower price next to it.' },
@@ -586,7 +586,7 @@ Subscriptions cost around $80 a month. That covers the tablet, unlimited data, a
     thumbnailEmoji: '',
     publishedAt: '2026-04-17',
     difficulty: 'Beginner',
-    body: `Papa is a service that sends a friendly, vetted helper ("Papa Pal") to an older adult's home to run errands, do light chores, help with technology, or keep them company. Many Medicare Advantage plans cover Papa visits at no cost to the member.
+    body: `Papa is a service that sends a friendly, vetted helper, called a "Papa Pal," to an older adult's home. The Pal can run errands, do light chores, help with technology, or just keep them company. Many Medicare Advantage plans cover Papa visits at no cost to the member.
 
 The Papa Pals are not medical professionals — think of them more like a helpful grandchild who shows up when you ask.`,
     steps: [
@@ -628,15 +628,15 @@ Membership costs about $16 a year and often pays for itself with a few restauran
     thumbnailEmoji: '',
     publishedAt: '2026-04-17',
     difficulty: 'Intermediate',
-    body: `Silvur is a retirement planning app built for people close to or already in retirement. It connects to your Social Security, 401(k), IRA, and bank accounts to show a clear picture of your monthly retirement income and how long it will last.
+    body: `Silvur is a retirement planning app built for people close to or already in retirement. It connects to your Social Security, 401(k), IRA, and bank accounts. Together, these show a clear picture of your monthly retirement income and how long it will last.
 
 Unlike general finance apps, Silvur focuses on retirement-specific questions like "Should I claim Social Security at 62 or wait until 67?"`,
     steps: [
       { title: 'Download Silvur', content: 'Install the Silvur app from the App Store or Play Store. Create an account with your email and a password. Basic features are free. Premium tools cost about $10/month.' },
       { title: 'Enter your retirement age goal', content: 'Silvur will ask when you plan to retire and what your expected monthly expenses are. It is fine to estimate. You can adjust this later.' },
-      { title: 'Link your accounts', content: 'Silvur uses Plaid (a secure bank-connection service) to pull balances from your 401(k), IRA, and bank accounts. This is read-only — Silvur cannot move or withdraw money.' },
+      { title: 'Link your accounts', content: 'Silvur uses Plaid, a secure bank-connection service, to pull balances from your 401(k), IRA, and bank accounts. This is read-only. Silvur cannot move or withdraw money.' },
       { title: 'Run the Retirement Score', content: 'Tap "Retirement Score" to see a single number from 0 to 100 showing how ready you are. Below that, Silvur shows a year-by-year projection of income and spending.' },
-      { title: 'Try the Social Security optimizer', content: 'Tap "Social Security" to see how much more you could collect over a lifetime by waiting to claim. For most people, waiting until 67 or 70 gives a much larger lifetime total — Silvur calculates the exact number for your situation.' },
+      { title: 'Try the Social Security optimizer', content: 'Tap "Social Security" to see how much more you could collect over a lifetime by waiting to claim. For most people, waiting until 67 or 70 gives a much larger lifetime total. Silvur calculates the exact number for your situation.' },
     ],
   },
   // ── KITCHEN SMART APPLIANCES ────────────────────────────────────────────────
@@ -799,9 +799,9 @@ Basic searching is free, but the detailed records and DNA matching require a sub
     thumbnailEmoji: '',
     publishedAt: '2026-04-17',
     difficulty: 'Intermediate',
-    body: `FamilySearch is the free alternative to Ancestry, run as a public service by the Church of Jesus Christ of Latter-day Saints. It has billions of indexed records and a shared public family tree where everyone collaborates on the same tree.
+    body: `FamilySearch is the free alternative to Ancestry. It is run as a public service by the Church of Jesus Christ of Latter-day Saints. It has billions of searchable records and one shared family tree that everyone adds to together.
 
-Because the tree is shared, you can often find ancestors already researched by distant relatives. You need to connect your branch to theirs.`,
+Because the tree is shared, you can often find ancestors that other relatives have already researched. You just need to connect your branch to theirs.`,
     steps: [
       { title: 'Create a free account', content: 'Go to familysearch.org and click "Create a free account." Enter your name and email. You do not need to be a church member — the site is open to everyone.' },
       { title: 'Enter your parents and grandparents', content: 'Tap "Family Tree" then "Add Parent" or "Add Spouse" to start filling in what you know. Names, birth dates, places, and relationships are the key fields.' },

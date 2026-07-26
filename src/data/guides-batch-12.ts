@@ -338,7 +338,7 @@ export const guidesBatch12: Guide[] = [
     thumbnailEmoji: '',
     publishedAt: '2026-04-19',
     difficulty: 'Beginner',
-    body: "Google Photos is a free app that automatically organizes your family photos by date, face, and location. It can group every photo that contains a specific grandchild in seconds, find pictures from a specific trip by location, or show all your photos from a holiday. You get 15 GB of free storage, which is enough for thousands of photos.",
+    body: "Google Photos is a free app that automatically organizes your family photos by date, face, and location. It can group every photo that contains a specific grandchild in seconds. It can also find pictures from a specific trip by location, or show all your photos from a holiday. You get 15 GB of free storage, which is enough for thousands of photos.",
     steps: [
       {
         title: 'Download Google Photos and sign in',

@@ -15,7 +15,7 @@ export const guidesBatch11: Guide[] = [
     thumbnailEmoji: '',
     publishedAt: '2026-04-18',
     difficulty: 'Beginner',
-    body: `A phone that loses charge quickly is one of the most common complaints people have — and it is almost always fixable without buying a new phone. The biggest culprits are apps running in the background when you are not using them, a screen that stays on too long or is too bright, and location services running all the time.
+    body: `A phone that loses charge quickly is one of the most common complaints people have — and it is almost always fixable without buying a new phone. The biggest culprit is apps running in the background when you are not using them. Other common causes are a screen that stays on too long or is too bright, and location services running all the time.
 
 After Apple released iOS 18 and Google released Android 15, many users noticed faster battery drain. This often happens because apps re-sync their data after a major update. Making the five adjustments below usually brings battery life back to normal within a couple of days.
 
@@ -146,7 +146,7 @@ A few important warnings: do not use any Google account recovery service you fin
     thumbnailEmoji: '',
     publishedAt: '2026-04-18',
     difficulty: 'Beginner',
-    body: `When an app suddenly closes, freezes, or refuses to open, it almost always comes down to one of four causes: the app needs an update, its temporary data has gotten corrupted, your phone's memory is overloaded, or the app and your phone's operating system are out of sync after a recent update.
+    body: `When an app suddenly closes, freezes, or refuses to open, it almost always comes down to one of four causes. The app may need an update. Its temporary data may have gotten corrupted. Your phone's memory may be overloaded. Or the app and your phone's operating system may be out of sync after a recent update.
 
 The good news is that these four fixes solve app crashes the vast majority of the time — and none of them delete your photos, contacts, or account information. You are clearing temporary files or doing a fresh restart.
 
