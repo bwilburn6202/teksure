@@ -79,7 +79,7 @@ export const guidesBatch38: Guide[] = [
     thumbnailEmoji: '',
     publishedAt: '2026-04-19',
     difficulty: 'Beginner',
-    body: `A VPN — short for Virtual Private Network — is software that encrypts your internet connection and routes it through a server in another location. When you use a VPN, websites you visit see the VPN server's location instead of your real location, and anyone monitoring the network you are on (like your internet provider, or the owner of a coffee shop WiFi) cannot read your traffic. VPNs are useful in specific situations, but they are not required for everyday browsing on your home network.`,
+    body: `A VPN — short for Virtual Private Network — is software that encrypts your internet connection and routes it through a server in another location. When you use a VPN, websites you visit see the VPN server's location instead of your real one. Anyone watching the network you're on — your internet provider, or the owner of a coffee shop WiFi — can't read your traffic. VPNs are useful in specific situations, but you don't need one for everyday browsing on your home network.`,
     steps: [
       {
         title: 'Understand what a VPN does and does not do',
@@ -440,7 +440,7 @@ Parents can use Screen Time to manage a child's phone remotely through Family Sh
     thumbnailEmoji: '',
     publishedAt: '2026-04-19',
     difficulty: 'Beginner',
-    body: `Amazon released Alexa+ in 2025, a major upgrade to the Alexa voice assistant that powers Echo devices. The new version uses generative AI (similar to what powers ChatGPT) to have more natural conversations, remember context across a conversation, help with multi-step tasks, and connect with outside services like Grubhub, Uber, and Ticketmaster to take actions on your behalf. Alexa+ is available on Echo devices with a subscription or as part of Amazon Prime.`,
+    body: `Amazon released Alexa+ in 2025 — a major upgrade to the Alexa voice assistant that powers Echo devices. It uses generative AI (similar to what powers ChatGPT) so it can hold more natural conversations, remember what you said earlier in the conversation, help with multi-step tasks, and connect to outside services like Grubhub, Uber, and Ticketmaster to take actions for you. Alexa+ works on Echo devices, either through a subscription or as part of Amazon Prime.`,
     steps: [
       {
         title: 'Check if you have Alexa+',
@@ -567,7 +567,7 @@ Parents can use Screen Time to manage a child's phone remotely through Family Sh
     thumbnailEmoji: '',
     publishedAt: '2026-04-19',
     difficulty: 'Intermediate',
-    body: `iCloud Private Relay is an Apple privacy feature that comes with an iCloud+ subscription (50GB, 200GB, or 2TB storage plans). It routes your Safari browsing through two separate internet servers so that your internet provider cannot see which websites you visit, and Apple cannot see your IP address and browsing activity at the same time. It is not a full VPN — it only covers Safari, not other apps — but it is a meaningful privacy upgrade for Safari users with no extra software to install.`,
+    body: `iCloud Private Relay is an Apple privacy feature that comes with an iCloud+ subscription (50GB, 200GB, or 2TB storage plans). It sends your Safari browsing through two separate internet servers. That way, your internet provider can't see which websites you visit, and Apple can't see your IP address and your browsing activity at the same time. It isn't a full VPN — it only covers Safari, not other apps — but it's a real privacy upgrade for Safari users, and there's no extra software to install.`,
     steps: [
       {
         title: 'Check if you have iCloud+ (required for Private Relay)',

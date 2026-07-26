@@ -832,7 +832,7 @@ export const guidesBatch16: Guide[] = [
     thumbnailEmoji: '',
     publishedAt: '2026-04-19',
     difficulty: 'Beginner',
-    body: `Macs come with a comprehensive set of accessibility features built directly into the operating system — no additional software or subscriptions required. These tools are designed to help people with vision differences, hearing differences, or motor challenges, but many of them are genuinely useful for anyone who wants larger text, reduced eye strain, or easier navigation.\n\nYou can find all accessibility features in one place: System Settings → Accessibility (or System Preferences → Accessibility on older Macs). This guide covers the most practical features for everyday users, particularly those who want to make text bigger, reduce screen glare, or use the Mac more comfortably.`,
+    body: `Macs come with a full set of accessibility features built right into the operating system — no extra software or subscriptions needed. These tools help people with vision differences, hearing differences, or motor challenges. But many of them are useful for anyone who wants larger text, less eye strain, or easier navigation.\n\nYou can find all accessibility features in one place: System Settings → Accessibility (or System Preferences → Accessibility on older Macs). This guide covers the most practical features for everyday users — especially anyone who wants bigger text, less screen glare, or a more comfortable way to use the Mac.`,
     steps: [
       {
         title: 'Make text and everything on screen larger',

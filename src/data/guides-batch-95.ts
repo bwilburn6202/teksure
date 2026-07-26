@@ -212,7 +212,7 @@ This is not a problem with your Google account, and nothing is wrong with your G
     thumbnailEmoji: '',
     publishedAt: '2026-04-20',
     difficulty: 'Beginner',
-    body: `Getting locked out of an email account — especially after a phone upgrade or a forgotten password — is one of the most common tech problems people face. The lock is frightening because so many other services depend on your email: bank notifications, medical apps, shopping accounts, and social media all use your email address to verify who you are.
+    body: `Getting locked out of an email account is one of the most common tech problems people face — especially after a phone upgrade or a forgotten password. It's frightening because so many other services depend on your email. Bank notifications, medical apps, shopping accounts, and social media all use your email address to prove it's really you.
 
 The good news is that Google, Microsoft, and Apple all have account recovery processes specifically designed to get you back in even if you have forgotten your password and cannot access the two-factor verification method they normally send a code to.
 

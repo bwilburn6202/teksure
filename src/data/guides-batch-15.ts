@@ -451,7 +451,7 @@ export const guidesBatch15: Guide[] = [
     thumbnailEmoji: '',
     publishedAt: '2026-04-19',
     difficulty: 'Beginner',
-    body: "Mental health counseling by video call has become widely available, covered by most insurance plans including Medicare, and accessible from home. For seniors, video therapy eliminates transportation barriers, reduces social isolation concerns, and allows access to therapists who specialize in aging-related issues. Here's how to access it.",
+    body: "Mental health counseling by video call is now widely available. Most insurance plans cover it, including Medicare, and you can do it from home. For seniors, video therapy removes the need for transportation, can ease feelings of isolation, and gives you access to therapists who specialize in issues that come with aging. Here's how to get started.",
     steps: [
       {
         title: 'Check if your insurance covers telehealth therapy',

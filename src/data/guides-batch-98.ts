@@ -892,7 +892,7 @@ Setting up a Sleep schedule in the Focus system is particularly valuable. It aut
     thumbnailEmoji: ``,
     publishedAt: `2026-04-21`,
     difficulty: `Beginner`,
-    body: `Google Lens is a free tool that uses your phone's camera as a search engine. Instead of typing a description into Google, you point your camera at something — a plant you can't identify, a product you want to find online, a menu in a foreign language, a QR code, a document with text you want to copy — and Google figures out what it is and gives you information, links, or translations instantly.
+    body: `Google Lens is a free tool that turns your phone's camera into a search engine. Instead of typing a description into Google, you point your camera at something. It could be a plant you can't identify, a product you want to find online, a menu in another language, a QR code, or a document with text you want to copy. Google figures out what it is and gives you information, links, or a translation right away.
 
 Google Lens is built into Android phones and comes with the Google app. On iPhone, it's available inside the Google app and Google Photos. You can access it from the Google Search bar, from Google Photos, from Google Assistant, and on some Android phones through the camera app directly.
 

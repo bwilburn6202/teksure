@@ -209,7 +209,7 @@ export const guidesBatch39: Guide[] = [
     thumbnailEmoji: '',
     publishedAt: '2026-04-19',
     difficulty: 'Beginner',
-    body: `Windows 11 looks different from older versions of Windows, but it includes many features that make computers genuinely easier to use — especially for those who want larger text, better organization, or voice-based interaction. Most of these features are already installed on your computer; they need to be turned on or discovered.`,
+    body: `Windows 11 looks different from older versions of Windows. But it has many features that make your computer easier to use — especially if you want larger text, better organization, or voice-based controls. Most of these features are already on your computer. You need to turn them on or find where they are.`,
     steps: [
       {
         title: 'Make everything larger with Display Scaling',
@@ -314,7 +314,7 @@ export const guidesBatch39: Guide[] = [
     thumbnailEmoji: '',
     publishedAt: '2026-04-19',
     difficulty: 'Beginner',
-    body: `If you take a lot of photos, your camera roll can quickly grow to thousands of images — screenshots, duplicate shots, blurry photos, and pictures you will never look at again mixed in with cherished memories. A few hours of organization can make your photo library genuinely enjoyable to browse, free up storage space, and make finding specific photos much faster.`,
+    body: `If you take a lot of photos, your camera roll can quickly grow to thousands of images. Screenshots, duplicate shots, and blurry photos end up mixed in with your cherished memories. A few hours of sorting can make your photo library fun to browse again, free up storage space, and help you find specific photos much faster.`,
     steps: [
       {
         title: 'Delete obvious throwaways first',
@@ -572,7 +572,7 @@ export const guidesBatch39: Guide[] = [
     thumbnailEmoji: '',
     publishedAt: '2026-04-19',
     difficulty: 'Beginner',
-    body: `SSI (Supplemental Security Income) and SSDI (Social Security Disability Insurance) are both programs managed by the Social Security Administration, but they have very different eligibility rules, funding sources, and benefit amounts. Many people confuse them or do not know which one they may qualify for. Understanding the key differences helps you know whether to apply and what to expect.`,
+    body: `SSI (Supplemental Security Income) and SSDI (Social Security Disability Insurance) are both run by the Social Security Administration. But they have very different rules for who qualifies, how they're funded, and how much you get. Many people mix them up, or don't know which one applies to them. Knowing the difference helps you figure out whether to apply, and what to expect.`,
     steps: [
       {
         title: 'What is SSDI (Social Security Disability Insurance)',

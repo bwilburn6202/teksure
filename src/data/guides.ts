@@ -6017,7 +6017,7 @@ For stronger privacy, do three things. Turn on Airplane Mode to disable all radi
     thumbnailEmoji: '🔋',
     publishedAt: '2026-03-30',
     difficulty: 'Beginner',
-    body: `Even with background restrictions enabled, some Android apps continue draining battery through push notifications, system-level permissions, and manufacturer-specific wake locks. To dig deeper: go to Settings > Battery > Battery Usage and look for apps consuming power disproportionately. For each culprit, go to Settings > Apps > [App Name] > Battery and set it to "Restricted." Also check Settings > Battery > Background App Optimization. Some manufacturers (Samsung, Xiaomi) have aggressive battery management — search for your phone model plus "battery optimization" for model-specific steps.`,
+    body: `Even with background restrictions turned on, some Android apps still drain battery — through push notifications, system-level permissions, and wake locks built in by the phone maker. To dig deeper: go to Settings > Battery > Battery Usage and look for apps using more than their share of power. For each one, go to Settings > Apps > [App Name] > Battery and set it to "Restricted." Also check Settings > Battery > Background App Optimization. Some phone makers (Samsung, Xiaomi) manage battery very aggressively — search for your phone model plus "battery optimization" to find steps for your exact phone.`,
     steps: [
       {
         title: 'Check which apps are using the most battery',
