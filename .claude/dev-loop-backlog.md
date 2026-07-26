@@ -8,6 +8,61 @@ Newest cycles appear at the top.
 
 ---
 
+## Cycle 25 — 2026-07-26T03:49:32.644Z
+
+### [ok] Site metrics snapshot
+3714 guides, 3154 routes, 285 tools.
+
+### [ok] Duplicate guide slugs
+No duplicate slugs.
+
+### [ok] Internal link audit
+0 broken targets, 6 orphaned routes (of 3117 routes).
+
+### [ok] TypeScript compile
+No TypeScript errors.
+
+### [warn] Stale OS version mentions
+4 mention(s) of older OS versions in guides.
+
+```
+- src/data/guides-batch-327.ts:77 — Windows 7 (`Windows 7`)
+- src/data/guides-batch-327.ts:77 — Windows 8 (`Windows 8`)
+- src/data/guides-batch-42.ts:128 — iOS 10–16 (`iOS 16`)
+- src/data/guides-batch-94.ts:766 — Windows 7 (`Windows 7`)
+```
+
+### [ok] Aged guides
+0 of 4015 guides published before 2025-01-26.
+
+### [ok] Duplicate guide titles
+No duplicate guide titles.
+
+### [warn] Readability & senior UX
+avg reading grade 8.7 (target <= 8), 65% of guides above grade 8, 0 images missing alt.
+
+```
+- grade 10.5: use-freetaxusa-online
+- grade 10.4: use-chewy-autoship
+- grade 10.1: use-papa-companionship-app
+- grade 11.9: use-silvur-retirement-planning
+- grade 10.8: use-familysearch-free-genealogy
+- grade 11.7: telehealth-appointments-see-your-doctor-from-home
+- grade 10.1: why-is-my-phone-battery-dying-so-fast
+- grade 10.5: windows-11-bitlocker-lockout-fix
+- grade 12.5: why-does-my-app-keep-crashing-how-to-fix-it
+- grade 10.6: how-to-use-apple-intelligence-iphone
+```
+
+### [ok] External source link health
+66 source URLs checked, 0 confirmed broken (404/410), 1 unreachable (often bot-blocking).
+
+### Suggested next actions
+- **Stale OS version mentions** — 4 mention(s) of older OS versions in guides.
+- **Readability & senior UX** — avg reading grade 8.7 (target <= 8), 65% of guides above grade 8, 0 images missing alt.
+
+---
+
 ## Cycle 24 — 2026-07-25T19:23:34.143Z
 
 ### [ok] Site metrics snapshot
@@ -8536,61 +8591,6 @@ No TypeScript errors.
 ### [ok] Site metrics snapshot
 3632 guides, 3154 routes, 285 tools.
 
-### [ok] Duplicate guide slugs
-No duplicate slugs.
-
-### [ok] Internal link audit
-0 broken targets, 2602 orphaned routes (of 3116 routes).
-
-### [ok] TypeScript compile
-No TypeScript errors.
-
-### [warn] Stale OS version mentions
-67 mention(s) of older OS versions in guides.
-
-```
-- src/data/guides-batch-103.ts:31 — iOS 10–16 (`iOS 11`)
-- src/data/guides-batch-15.ts:283 — iOS 10–16 (`iOS 14`)
-- src/data/guides-batch-154.ts:326 — iOS 10–16 (`iOS 16`)
-- src/data/guides-batch-157.ts:589 — macOS pre-Ventura (`macOS Monterey`)
-- src/data/guides-batch-163.ts:63 — iOS 10–16 (`iOS 12`)
-- src/data/guides-batch-18.ts:77 — iOS 10–16 (`iOS 16`)
-- src/data/guides-batch-203.ts:94 — iOS 10–16 (`iOS 13`)
-- src/data/guides-batch-209.ts:95 — iOS 10–16 (`iOS 13`)
-- src/data/guides-batch-21.ts:610 — iOS 10–16 (`iOS 11`)
-- src/data/guides-batch-210.ts:55 — iOS 10–16 (`iOS 15`)
-```
-
-### [ok] Aged guides
-0 of 3933 guides published before 2024-12-04.
-
-### Suggested next actions
-- **Stale OS version mentions** — 67 mention(s) of older OS versions in guides.
-
----
-
-## Cycle 118 — 2026-06-04T15:37:46.159Z
-
-### [ok] Site metrics snapshot
-3632 guides, 3154 routes, 285 tools.
-
-### [ok] Duplicate guide slugs
-No duplicate slugs.
-
-### [ok] Internal link audit
-0 broken targets, 2602 orphaned routes (of 3116 routes).
-
-### [ok] TypeScript compile
-No TypeScript errors.
-
-### [warn] Stale OS version mentions
-67 mention(s) of older OS versions in guides.
-
-```
-- src/data/guides-batch-103.ts:31 — iOS 10–16 (`iOS 11`)
-- src/data/guides-batch-15.ts:283 — iOS 10–16 (`iOS 14`)
-- src/data/guides-batch-154.ts:326 — iOS 10–16 (`iOS 16`)
-- src/data/guides-batch-157.ts:589 — macOS pre-Ventura (`macOS Monterey`)
-- src/data/guides-batch-163.ts:63 — iOS 10–16 (`
+### [ok] Dupli
 
 _(older cycles trimmed)_
