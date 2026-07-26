@@ -101,7 +101,7 @@ This guide shows how to turn it on, what works and what does not, and a couple o
       {
         title: 'Lock your iPhone while still using it',
         content: 'A subtle but useful detail: when you are using iPhone Mirroring, your actual iPhone stays locked and shows a "iPhone in Use" notification on the lock screen. Anyone in the room cannot pick up your phone and see what you are doing on your Mac. This is intentional — it protects your privacy. Your phone will not vibrate or buzz for new messages while mirroring is active, because the alerts get delivered to the Mac instead.',
-        warning: 'If someone unlocks your iPhone (with your Face ID or passcode) while mirroring is running, the mirroring session ends immediately. This is by design.',
+        warning: 'If someone unlocks your iPhone (with your Face ID or passcode) while mirroring is running, the mirroring session ends right away. This is by design.',
       },
       {
         title: 'Quit iPhone Mirroring',
@@ -191,8 +191,8 @@ This guide walks through Google's free Security Checkup and a 30-minute spring c
       },
       {
         title: 'Remove old devices that no longer need access',
-        content: 'On the Security Checkup page, click "Your devices." You will see every phone, tablet, laptop, and computer that has signed into your Google account in the last 28 days, plus older ones still trusted. Look through the list. Do you recognize each one? Are any old phones you sold or threw out? Are any laptops you stopped using? For each device you no longer use, click it and choose "Sign out." This kicks that device out of your account immediately.',
-        warning: 'If you see a device you do NOT recognize at all — different city, brand you never owned — sign it out immediately, then change your Google password. That is a sign someone else has access.',
+        content: 'On the Security Checkup page, click "Your devices." You will see every phone, tablet, laptop, and computer that has signed into your Google account in the last 28 days, plus older ones still trusted. Look through the list. Do you recognize each one? Are any old phones you sold or threw out? Are any laptops you stopped using? For each device you no longer use, click it and choose "Sign out." This kicks that device out of your account right away.',
+        warning: 'If you see a device you do NOT recognize at all — different city, brand you never owned — sign it out right away, then change your Google password. That is a sign someone else has access.',
       },
       {
         title: 'Audit third-party apps connected to your Google account',
@@ -422,7 +422,7 @@ This trick has a name: "quishing" (QR + phishing). The FTC issued a public warni
       },
       {
         title: 'Report quishing if you encounter it',
-        content: 'If you spot a fake QR code on a parking meter, sign, or public space, tell the business or property owner so they can remove it. If you actually scanned a fake one and entered any information, change your bank password immediately, call your bank to flag the transaction, and report to the FTC at reportfraud.ftc.gov. Also alert friends and family — quishing spreads through neighborhoods, and one warning post can stop the whole block from falling for it.',
+        content: 'If you spot a fake QR code on a parking meter, sign, or public space, tell the business or property owner so they can remove it. If you actually scanned a fake one and entered any information, change your bank password right away, call your bank to flag the transaction, and report to the FTC at reportfraud.ftc.gov. Also alert friends and family — quishing spreads through neighborhoods, and one warning post can stop the whole block from falling for it.',
       },
     ],
   },

@@ -258,7 +258,7 @@ If you are new to screen readers, plan to spend some time getting familiar with 
       },
       {
         title: `Adjust the voice and reading speed`,
-        content: `With Narrator running, open Settings > Accessibility > Narrator. Here you can change the voice (Microsoft David, Zira, Mark, or others installed on your system), the reading speed using a slider, and the pitch of the voice. Changes take effect immediately so you can test as you adjust.`,
+        content: `With Narrator running, open Settings > Accessibility > Narrator. Here you can change the voice (Microsoft David, Zira, Mark, or others installed on your system), the reading speed using a slider, and the pitch of the voice. Changes take effect right away so you can test as you adjust.`,
       },
       {
         title: `Use the Narrator key to read items`,
@@ -569,7 +569,7 @@ Wire transfers are used for large transactions where speed and certainty matter:
 
 Most banks allow you to send a wire transfer online through your bank's website or app, though some still require you to do it in person or by phone. Domestic wires typically cost $15–$35 per transfer. International wires cost more — often $35–$50.
 
-Wire transfers are final. Once a wire transfer is sent and received, it cannot be reversed. This is why wire fraud is so serious — scammers use wire transfers because the money disappears immediately and cannot be recalled.
+Wire transfers are final. Once a wire transfer is sent and received, it cannot be reversed. This is why wire fraud is so serious — scammers use wire transfers because the money disappears right away and cannot be recalled.
 
 Common wire fraud scams include: contractors or vendors who "change" their bank account information right before you pay (their email was hacked), fake real estate closings where scammers pose as the title company, and romance scammers who ask for wire transfers after gaining trust online.
 
@@ -596,7 +596,7 @@ Before sending any wire transfer, especially a large one, call the recipient dir
       {
         title: `Track the transfer and follow up if needed`,
         content: `Most domestic wires arrive the same business day if sent before the cutoff time (often 2–4 PM). International wires typically take 1–5 business days. Contact your bank with your confirmation number if the recipient does not receive the funds within the expected time.`,
-        warning: `Never wire money to someone you have only met online and have not met in person, even if you have been communicating for months. Romance scams, lottery scams, and fake investment opportunities frequently ask for wire transfers.`,
+        warning: `Never wire money to someone you have only met online and have not met in person, even if you have been communicating for months. Romance scams, lottery scams, and fake investment opportunities often ask for wire transfers.`,
       },
     ],
   },

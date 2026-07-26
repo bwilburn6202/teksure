@@ -72,14 +72,14 @@ For trip planning, two apps stand out. A Better Routeplanner (ABRP) is widely co
 
 PlugShare is a companion app that shows you real user check-ins at charging stations — so you can see whether a specific charger is working today, how long people waited, and whether there are nearby restaurants or restrooms to visit during your charge.
 
-Range anxiety — the worry that you will run out of charge — is common for first-time EV road trippers. The practical solution is to plan to arrive at each charging stop with at least 10 to 20 percent battery remaining, charge to about 80 percent (fast chargers slow down significantly above 80%), and then continue. Most experienced EV drivers find this rhythm natural after one or two trips.
+Range anxiety — the worry that you will run out of charge — is common for first-time EV road trippers. The practical solution is to plan to arrive at each charging stop with at least 10 to 20 percent battery remaining, charge to about 80 percent (fast chargers slow down a lot above 80%), and then continue. Most experienced EV drivers find this rhythm natural after one or two trips.
 
 Pack a portable Level 2 adapter and a standard outlet adapter in your car as a backup. If a fast charger is unexpectedly broken, you can plug in at a campground, RV park, or even a hotel with an outlet to get enough range to reach the next working charger.`,
     steps: [
       {
         title: `Know your car's real-world range`,
         content: `Your vehicle's advertised range (such as "300 miles") is measured under ideal conditions. In the real world, highway driving at 70+ mph, cold weather, and running the heat or air conditioning all reduce range — sometimes by 20 to 30 percent. Before your trip, look up real-world range reports for your specific vehicle model on sites like Edmunds or PlugStar. Plan your charging stops based on the lower, real-world number rather than the window sticker.`,
-        tip: `A good rule of thumb: plan charging stops every 150 to 200 miles for a car with a 250-mile EPA range, more frequently in winter.`,
+        tip: `A good rule of thumb: plan charging stops every 150 to 200 miles for a car with a 250-mile EPA range, more often in winter.`,
       },
       {
         title: `Build your route in A Better Routeplanner (ABRP)`,
@@ -97,8 +97,8 @@ Pack a portable Level 2 adapter and a standard outlet adapter in your car as a b
       },
       {
         title: `Book hotels with EV charging`,
-        content: `For overnight stops, search for hotels that offer Level 2 EV charging — sites like PlugShare, the hotel's own website, or apps like EVTripping can filter for this. Plugging in overnight at 6 to 10 kilowatts is enough to fully charge most EVs by morning. Call ahead to confirm the charger is available and working, especially at smaller hotels where EV equipment may be newer and less frequently maintained.`,
-        tip: `Search "hotel EV charging" on Google Maps along your route to see rated options. Many brands like Hilton and Marriott have expanded their charging programs significantly.`,
+        content: `For overnight stops, search for hotels that offer Level 2 EV charging — sites like PlugShare, the hotel's own website, or apps like EVTripping can filter for this. Plugging in overnight at 6 to 10 kilowatts is enough to fully charge most EVs by morning. Call ahead to confirm the charger is available and working, especially at smaller hotels where EV equipment may be newer and less often maintained.`,
+        tip: `Search "hotel EV charging" on Google Maps along your route to see rated options. Many brands like Hilton and Marriott have expanded their charging programs a lot.`,
       },
       {
         title: `Leave with a full charge and stay flexible`,
@@ -167,7 +167,7 @@ Whether you are a new EV owner figuring out your neighborhood charging options o
 
 Getting started with ChargePoint requires creating a free account and adding a payment method. Once that is set up, starting a charge is as quick as pulling up the app, finding the station you are at, and tapping "Start Charging." Many ChargePoint stations also accept tap-to-pay credit or debit cards directly at the unit without using the app, which is handy if your phone battery is low.
 
-ChargePoint pricing varies by location. Some stations — particularly those at employers and certain retailers — are free. Others charge by the kilowatt-hour (kWh), which is a measure of electricity similar to how gas is priced by the gallon. Pricing is shown in the app before you start charging, so there are no surprises. ChargePoint also offers a membership option that can reduce per-session costs if you charge frequently.
+ChargePoint pricing varies by location. Some stations — particularly those at employers and certain retailers — are free. Others charge by the kilowatt-hour (kWh), which is a measure of electricity similar to how gas is priced by the gallon. Pricing is shown in the app before you start charging, so there are no surprises. ChargePoint also offers a membership option that can reduce per-session costs if you charge often.
 
 The app tracks your charging history, showing how much energy you have added to your vehicle, how much carbon you have avoided compared to a gas car, and your total spending. This data can be useful for budgeting and for logging business mileage if you charge your work vehicle.
 
@@ -211,7 +211,7 @@ ChargePoint stations are mostly Level 2, which adds roughly 15 to 30 miles of ra
     difficulty: `Beginner`,
     body: `Audiomack is a free music streaming platform that gives you access to millions of songs, albums, mixtapes, and playlists — with no monthly subscription fee. It is particularly popular for hip-hop, R&B, Afrobeats, reggae, and gospel music, and it is one of the best places to discover independent artists who are not yet on mainstream platforms.
 
-Unlike Spotify or Apple Music, Audiomack does not require a credit card or paid plan to listen. You can create a free account or browse without signing in at all. The free tier includes all the music with occasional audio ads — similar to the free version of Spotify. There is an optional paid tier called Audiomack Premium that removes ads and lets you download music for offline listening, but many people find the free version completely sufficient.
+Unlike Spotify or Apple Music, Audiomack does not require a credit card or paid plan to listen. You can create a free account or browse without signing in at all. The free tier includes all the music with occasional audio ads — similar to the free version of Spotify. There is an optional paid tier called Audiomack Premium that removes ads and lets you download music for offline listening, but many people find the free version completely enough.
 
 Audiomack is known as a platform where artists upload their own music directly. This means you often find new songs and mixtapes on Audiomack days or weeks before they appear on other services. Many popular artists like Drake, Cardi B, and Burna Boy have released exclusive or early content there.
 
@@ -223,7 +223,7 @@ For anyone who wants to explore beyond mainstream radio without paying for a sub
     steps: [
       {
         title: `Download the Audiomack app`,
-        content: `Search for "Audiomack" in the App Store (iPhone) or Google Play Store (Android) and download the free app. Open it and you can start browsing immediately without creating an account. The home screen shows trending tracks and albums, curated playlists by genre, and featured artists. Tap any song or album cover to start playing.`,
+        content: `Search for "Audiomack" in the App Store (iPhone) or Google Play Store (Android) and download the free app. Open it and you can start browsing right away without creating an account. The home screen shows trending tracks and albums, curated playlists by genre, and featured artists. Tap any song or album cover to start playing.`,
         tip: `You can also use Audiomack on any computer by going to audiomack.com in your web browser — no download needed.`,
       },
       {
@@ -242,7 +242,7 @@ For anyone who wants to explore beyond mainstream radio without paying for a sub
       },
       {
         title: `Follow artists and get new release alerts`,
-        content: `Search for an artist you like by tapping the magnifying glass icon and typing their name. On their profile page, tap "Follow." Audiomack will notify you when that artist uploads new music. This is especially useful for independent artists who release music frequently and do not always make headlines in entertainment news.`,
+        content: `Search for an artist you like by tapping the magnifying glass icon and typing their name. On their profile page, tap "Follow." Audiomack will notify you when that artist uploads new music. This is especially useful for independent artists who release music often and do not always make headlines in entertainment news.`,
       },
     ],
   },
@@ -280,7 +280,7 @@ If you value supporting musicians directly and owning your music rather than ren
       {
         title: `Buy an album or song`,
         content: `On any artist or album page, you will see a price listed — often "name your price" (meaning you can pay any amount, including the minimum shown) or a fixed price. Click "Buy Digital Album" and enter the amount you want to pay if it is flexible. Then enter your payment information (credit card or PayPal). Bandcamp does not store your card details for future purchases — you enter payment information each time, which some people prefer for privacy.`,
-        tip: `"Name your price" does not mean you must pay extra. Pay the minimum if your budget is tight — the artist still receives significantly more than they would from a streaming service.`,
+        tip: `"Name your price" does not mean you must pay extra. Pay the minimum if your budget is tight — the artist still receives a lot more than they would from a streaming service.`,
       },
       {
         title: `Download your music after purchase`,
@@ -317,7 +317,7 @@ Whether you are chasing the latest underground hip-hop, looking for a relaxing l
     steps: [
       {
         title: `Download the SoundCloud app or use the website`,
-        content: `Search for "SoundCloud" in the App Store or Google Play Store and download the free app. Alternatively, visit soundcloud.com in any web browser to listen without downloading anything. The app provides a better mobile experience with background playback, but the website works well on a computer or tablet. You can start listening immediately without creating an account.`,
+        content: `Search for "SoundCloud" in the App Store or Google Play Store and download the free app. Alternatively, visit soundcloud.com in any web browser to listen without downloading anything. The app provides a better mobile experience with background playback, but the website works well on a computer or tablet. You can start listening right away without creating an account.`,
         tip: `Background playback — where music keeps playing when you switch to a different app or lock your screen — requires signing in to a free SoundCloud account on mobile.`,
       },
       {
@@ -326,7 +326,7 @@ Whether you are chasing the latest underground hip-hop, looking for a relaxing l
       },
       {
         title: `Follow artists and build your feed`,
-        content: `When you find an artist you like, tap their name to go to their profile, then tap "Follow." Your feed (accessible from the home screen) then shows new uploads from everyone you follow in chronological order. This is the best way to stay current with emerging artists who release music frequently. Following 10 to 20 artists gives you a consistently fresh listening experience tailored to your taste.`,
+        content: `When you find an artist you like, tap their name to go to their profile, then tap "Follow." Your feed (accessible from the home screen) then shows new uploads from everyone you follow in chronological order. This is the best way to stay current with emerging artists who release music often. Following 10 to 20 artists gives you a consistently fresh listening experience tailored to your taste.`,
       },
       {
         title: `Explore playlists and DJ mixes`,
@@ -367,7 +367,7 @@ Tidal also offers a free trial period — usually 30 days — so you can test th
       {
         title: `Set up the highest quality audio in the app settings`,
         content: `After signing in, tap your profile or the settings gear icon. Go to "Streaming Quality" or "Audio Quality." Set the Wi-Fi quality to "HiFi" or "Master" (the highest available option on your plan). Set Mobile Data quality to "HiFi" if you want full quality on the go, though this uses more data. Tidal will now deliver uncompressed audio whenever you stream on a good connection.`,
-        warning: `HiFi audio files are significantly larger than standard streams. If you have a limited mobile data plan, consider setting mobile quality to "High" rather than "HiFi" to avoid excess data charges.`,
+        warning: `HiFi audio files are a lot larger than standard streams. If you have a limited mobile data plan, consider setting mobile quality to "High" rather than "HiFi" to avoid excess data charges.`,
       },
       {
         title: `Connect Tidal to your speakers or headphones`,
@@ -450,13 +450,13 @@ The headphones also include a feature called Speak-to-Chat. When the headphones 
 
 The Sony Headphones Connect app (free, available for iPhone and Android) unlocks additional features: a customizable equalizer, the ability to adjust noise cancellation level manually, DSEE Extreme audio upscaling (which enhances compressed streaming audio), and the ability to create location-based rules. For example, you can set the headphones to automatically switch to ambient sound mode when you are at a specific address like your gym or workplace.
 
-Battery life on the WH-1000XM5 is excellent. A full charge lasts approximately 30 hours with noise cancellation active. A 3-minute quick charge gives you about 3 hours of listening. The headphones charge via USB-C, and they can also be used with the included 3.5mm audio cable when the battery is completely dead.
+Battery life on the WH-1000XM5 is excellent. A full charge lasts about 30 hours with noise cancellation active. A 3-minute quick charge gives you about 3 hours of listening. The headphones charge via USB-C, and they can also be used with the included 3.5mm audio cable when the battery is completely dead.
 
 The headphones come in two colors — black and platinum silver — and include a compact carrying case. The case is rigid and provides good protection when traveling.`,
     steps: [
       {
         title: `Charge the headphones before first use`,
-        content: `Remove the headphones from the box and locate the USB-C cable included in the packaging. Plug the USB-C end into the headphones (the port is on the bottom of the left earcup) and the other end into a USB charger. A full charge takes about 3.5 hours and is indicated by the charge light turning off. You can use the headphones while charging, though the cable limits mobility.`,
+        content: `Remove the headphones from the box and locate the USB-C cable included in the packaging. Plug the USB-C end into the headphones (the port is on the bottom of the left earcup) and the other end into a USB charger. A full charge takes about 3.5 hours and is showed by the charge light turning off. You can use the headphones while charging, though the cable limits mobility.`,
       },
       {
         title: `Pair with your phone via Bluetooth`,
@@ -475,7 +475,7 @@ The headphones come in two colors — black and platinum silver — and include 
       {
         title: `Use Speak-to-Chat for hands-free conversations`,
         content: `Speak-to-Chat activates automatically when the headphones detect you speaking — no button press needed. The music pauses, ambient sound turns on, and you can talk normally. When you stop speaking, there is a brief pause and then your music resumes. If Speak-to-Chat triggers too often or not enough, adjust its sensitivity in the Sony app under Speak-to-Chat settings. You can also disable the feature entirely if you prefer manual control.`,
-        warning: `Speak-to-Chat activates based on voice detection, not all sounds. Loud coughing or humming to yourself may occasionally trigger it unexpectedly.`,
+        warning: `Speak-to-Chat activates based on voice detection, not all sounds. Loud coughing or humming to yourself may sometimes trigger it unexpectedly.`,
       },
     ],
   },
@@ -493,7 +493,7 @@ The headphones come in two colors — black and platinum silver — and include 
 
 Bose offers several QuietComfort models. The QuietComfort 45 is the reliable, straightforward option. The QuietComfort Ultra Headphones add immersive audio technology that creates a spatial sound experience. Both share the same basic setup process and control scheme, so these instructions apply to either model.
 
-Battery life varies by model — the QC 45 provides up to 24 hours with noise cancellation on, while the QC Ultra provides around 24 hours as well. Both charge via USB-C and support quick charge: 15 minutes of charging provides approximately 3 hours of listening, which is useful when you are in a rush. The headphones can also be used in wired mode with the included 2.5mm to 3.5mm cable when the battery is depleted.
+Battery life varies by model — the QC 45 provides up to 24 hours with noise cancellation on, while the QC Ultra provides around 24 hours as well. Both charge via USB-C and support quick charge: 15 minutes of charging provides about 3 hours of listening, which is useful when you are in a rush. The headphones can also be used in wired mode with the included 2.5mm to 3.5mm cable when the battery is depleted.
 
 Bose's noise cancellation approach is different from Sony's. Rather than multiple levels of adjustment, Bose uses a system called Aware Mode (ambient sound) and Quiet Mode (noise cancellation). The QuietComfort Ultra adds a middle setting called Immersion. The transition between modes is smooth and the headphones respond quickly when you switch.
 
@@ -503,7 +503,7 @@ Pairing with the Bose Music app lets you customize the noise cancellation experi
     steps: [
       {
         title: `Charge the headphones fully before first use`,
-        content: `Connect the USB-C cable (included in the box) to the charging port on the right earcup and plug the other end into a USB power adapter. A full charge takes approximately 2.5 hours. The LED on the headphones shows orange while charging and white when fully charged. Bose recommends a full charge before the first use to calibrate the battery correctly.`,
+        content: `Connect the USB-C cable (included in the box) to the charging port on the right earcup and plug the other end into a USB power adapter. A full charge takes about 2.5 hours. The LED on the headphones shows orange while charging and white when fully charged. Bose recommends a full charge before the first use to calibrate the battery correctly.`,
       },
       {
         title: `Pair the headphones with your phone`,
@@ -516,7 +516,7 @@ Pairing with the Bose Music app lets you customize the noise cancellation experi
       },
       {
         title: `Download the Bose Music app`,
-        content: `Search for "Bose Music" in the App Store or Google Play Store and download the free app. When you open it, it will find your connected headphones automatically. The app shows your battery level, lets you adjust the noise cancellation level with a slider (on supported models), provides an equalizer for adjusting bass and treble, and lets you set up your shortcut button. The shortcut button on the headphones can be customized to trigger your phone's voice assistant, mute yourself on calls, or toggle another frequently used function.`,
+        content: `Search for "Bose Music" in the App Store or Google Play Store and download the free app. When you open it, it will find your connected headphones automatically. The app shows your battery level, lets you adjust the noise cancellation level with a slider (on supported models), provides an equalizer for adjusting bass and treble, and lets you set up your shortcut button. The shortcut button on the headphones can be customized to trigger your phone's voice assistant, mute yourself on calls, or toggle another often used function.`,
       },
       {
         title: `Use the right earcup controls for playback`,
@@ -543,7 +543,7 @@ The Echo Dot connects to your existing Wi-Fi network. It does not require a sepa
 
 Privacy is a common question about Echo devices. The microphone can be physically muted by pressing the button on the top of the device — a red light confirms that Alexa cannot hear anything. You can also review and delete your voice history in the Alexa app at any time under Settings > Alexa Privacy.
 
-The Echo Dot comes in several sizes and generations. The 5th generation (released 2022) is the most recent as of this writing and includes a built-in temperature sensor and a motion sensor for automations. The speaker is small but adequate for clear voice responses and casual music listening. If you want significantly better sound for music, the Echo (standard size) or Echo Studio are larger options with improved speakers.
+The Echo Dot comes in several sizes and generations. The 5th generation (released 2022) is the most recent as of this writing and includes a built-in temperature sensor and a motion sensor for automations. The speaker is small but adequate for clear voice responses and casual music listening. If you want a lot better sound for music, the Echo (standard size) or Echo Studio are larger options with improved speakers.
 
 After getting your Echo Dot working, the best way to discover its capabilities is to try voice commands. Below are 10 starting points.`,
     steps: [
@@ -568,7 +568,7 @@ After getting your Echo Dot working, the best way to discover its capabilities i
       {
         title: `Protect your privacy with the mute button`,
         content: `If you ever want Alexa to stop listening entirely — during a private conversation, for example — press the microphone button on top of the Echo Dot. The ring turns solid red, confirming the microphone is physically disconnected. Alexa cannot hear anything while muted, not even the wake word. Press the button again to restore normal listening. You can also review and delete your voice recordings in the Alexa app under Settings > Alexa Privacy > Review Voice History.`,
-        warning: `Alexa only records after it hears the wake word "Alexa." However, background sounds occasionally trigger it accidentally. Checking your voice history periodically lets you see if any unintended recordings occurred.`,
+        warning: `Alexa only records after it hears the wake word "Alexa." However, background sounds sometimes trigger it accidentally. Checking your voice history periodically lets you see if any unintended recordings occurred.`,
       },
     ],
   },
@@ -584,7 +584,7 @@ After getting your Echo Dot working, the best way to discover its capabilities i
     difficulty: `Beginner`,
     body: `The Amazon Echo Show 8 is a smart display — a combination of an Alexa smart speaker and an 8-inch touchscreen. This screen unlocks a range of features that a standard Echo Dot cannot offer: video calls with family, a rotating photo frame displaying your personal photos, a visual interface for weather and calendars, recipe cards while cooking, and a smart home control panel showing camera feeds and device status.
 
-The Echo Show 8 works with the same Alexa voice commands as the Echo Dot, but the screen adds a visual response to many of those commands. When you ask for the weather, you see a visual forecast alongside the spoken summary. When you set a timer, a countdown appears on screen. When you play music, album art and song information display. This combination of audio and visual responses makes the device significantly more useful for older users who appreciate seeing information rather than only hearing it.
+The Echo Show 8 works with the same Alexa voice commands as the Echo Dot, but the screen adds a visual response to many of those commands. When you ask for the weather, you see a visual forecast alongside the spoken summary. When you set a timer, a countdown appears on screen. When you play music, album art and song information display. This combination of audio and visual responses makes the device a lot more useful for older users who appreciate seeing information rather than only hearing it.
 
 Video calling on the Echo Show 8 is particularly popular for staying connected with family. It supports Alexa Calling (between Echo devices and through the Alexa app), Zoom calls, and Amazon's Drop In feature. Drop In allows close family members to video connect instantly without waiting for the recipient to answer, making it similar to walking into the next room — useful for checking in on an elderly parent who has their own Echo Show.
 
@@ -628,7 +628,7 @@ Setting up the Echo Show 8 takes about 15 minutes and requires the same Alexa ap
     difficulty: `Beginner`,
     body: `Alexa Drop In is one of the most genuinely useful features for families who want to stay connected across households. It works like a two-way intercom — when you Drop In on someone's Echo device, it connects instantly without ringing. If the recipient has a screen (like an Echo Show), they can see and hear you right away. If they have an audio-only Echo (like a Dot), they hear you through the speaker. A green light and a brief chime announces the incoming Drop In.
 
-This feature is particularly valuable for adult children checking in on an elderly parent who lives alone. Rather than calling their cell phone — which may not be answered, may be in another room, or may cause anxiety about urgent situations — a Drop In reaches any Echo device in their home immediately. The parent does not need to do anything to receive it.
+This feature is particularly valuable for adult children checking in on an elderly parent who lives alone. Rather than calling their cell phone — which may not be answered, may be in another room, or may cause anxiety about urgent situations — a Drop In reaches any Echo device in their home right away. The parent does not need to do anything to receive it.
 
 Drop In requires permission and is opt-in. The person you want to Drop In on must explicitly allow you to do so. This is configured in the Alexa app and can be revoked at any time. You cannot Drop In on a stranger — the permission system prevents that.
 
@@ -646,15 +646,15 @@ Drop In sessions can be ended by saying "Alexa, hang up" or by tapping the end c
       {
         title: `Give permission to a family member`,
         content: `Both sides must grant permission for Drop In to work between households. In the Alexa app, both you and the family member go to Communicate > Contacts > find each other's name > and enable Drop In. If the family member is not already in your Alexa contacts, tap the plus (+) icon to add them by entering their phone number or email address. Alexa will send them an invitation to connect.`,
-        warning: `Drop In connects immediately without ringing on the recipient's end. Make sure only trusted family members or close friends have Drop In permission, as it does not give the recipient a chance to decline before the connection opens.`,
+        warning: `Drop In connects right away without ringing on the recipient's end. Make sure only trusted family members or close friends have Drop In permission, as it does not give the recipient a chance to decline before the connection opens.`,
       },
       {
         title: `Drop In on a family member from your phone`,
-        content: `Open the Alexa app and tap "Communicate" at the bottom. Tap "Drop In" (a small icon that looks like a lightning bolt). Choose the person or device you want to connect to. The connection opens within a few seconds. Speak normally — your voice comes through their Echo speaker immediately. If they have an Echo Show, they can see you through their camera. When you are done, say "Alexa, hang up" or tap the end button.`,
+        content: `Open the Alexa app and tap "Communicate" at the bottom. Tap "Drop In" (a small icon that looks like a lightning bolt). Choose the person or device you want to connect to. The connection opens within a few seconds. Speak normally — your voice comes through their Echo speaker right away. If they have an Echo Show, they can see you through their camera. When you are done, say "Alexa, hang up" or tap the end button.`,
       },
       {
         title: `Use Drop In as an intercom within your home`,
-        content: `If you have multiple Echo devices in different rooms (for example, one in the kitchen and one in the bedroom), you can Drop In between them. Say "Alexa, Drop In on the bedroom" while standing near the kitchen Echo. Your voice comes through the bedroom Echo immediately. This is useful for calling family members to dinner, asking a quick question, or announcing something without walking through the house.`,
+        content: `If you have multiple Echo devices in different rooms (for example, one in the kitchen and one in the bedroom), you can Drop In between them. Say "Alexa, Drop In on the bedroom" while standing near the kitchen Echo. Your voice comes through the bedroom Echo right away. This is useful for calling family members to dinner, asking a quick question, or announcing something without walking through the house.`,
         tip: `You can also say "Alexa, announce [your message]" to send a one-way announcement to all Echo devices in your home simultaneously. For example, "Alexa, announce dinner is ready" plays that message through every Echo device in the house.`,
       },
       {
@@ -677,7 +677,7 @@ Drop In sessions can be ended by saying "Alexa, hang up" or by tapping the end c
 
 To use Broadcast, you say "Hey Google, broadcast [your message]" to any Google or Nest speaker in your home. Google records your voice message, then plays it through every other speaker in the house at the same time. If you say "Hey Google, broadcast dinner is ready," that phrase plays out loud on the Google Nest Mini in the bedroom, the Nest Hub in the kitchen, and any other Google Home device connected to the same Wi-Fi network.
 
-The message plays in your actual voice, which family members recognize immediately. This is more personal than a generic text-to-speech announcement and avoids the confusion of hearing an unfamiliar robotic voice.
+The message plays in your actual voice, which family members recognize right away. This is more personal than a generic text-to-speech announcement and avoids the confusion of hearing an unfamiliar robotic voice.
 
 Google has also added preset broadcasts for common household phrases. If you say "Hey Google, broadcast I'm home," Google plays a cheerful chime followed by a "Someone's home!" announcement. Phrases like "Wake up," "Dinner's ready," "Time to leave," and "I'm on my way home" all trigger specific audio clips rather than recording your voice. These work without thinking up what to say.
 
@@ -813,7 +813,7 @@ Copilot in Windows 11 is accessible by pressing the Windows key + C on your keyb
 
 Gemini replaced Google Assistant as the primary AI experience on Android phones and is available on iPhone through the Gemini app. On Android, Gemini can be set as the default assistant so it activates when you hold down the home button — giving you access to AI capabilities in any app, at any moment.
 
-The free version of Gemini (called Gemini 1.5 Flash) is available to anyone with a Google account at no cost. It handles general questions, writing help, and basic analysis well. A paid upgrade called Gemini Advanced ($20 per month as part of Google One AI Premium) unlocks Gemini 1.5 Pro, which is significantly more capable at complex reasoning, long documents, and specialized tasks.
+The free version of Gemini (called Gemini 1.5 Flash) is available to anyone with a Google account at no cost. It handles general questions, writing help, and basic analysis well. A paid upgrade called Gemini Advanced ($20 per month as part of Google One AI Premium) unlocks Gemini 1.5 Pro, which is a lot more capable at complex reasoning, long documents, and specialized tasks.
 
 One of Gemini's standout abilities is working with Google's own services. With the free account, you can ask Gemini to search the web and synthesize information from multiple sources into a clear answer. With the paid plan, Gemini can access your Gmail inbox to find email threads, your Google Drive to analyze documents you have stored there, and your Google Calendar to help you plan and organize.
 
@@ -823,7 +823,7 @@ For casual users, Gemini at gemini.google.com is the easiest starting point — 
     steps: [
       {
         title: `Access Gemini on the web or download the app`,
-        content: `Go to gemini.google.com in any web browser on your computer or phone, and sign in with your Google account. Alternatively, search for "Google Gemini" in the App Store or Google Play Store and download the free app. Once signed in, you see a simple chat interface where you type your questions or requests. No subscription is needed to start — the free version is available immediately.`,
+        content: `Go to gemini.google.com in any web browser on your computer or phone, and sign in with your Google account. Alternatively, search for "Google Gemini" in the App Store or Google Play Store and download the free app. Once signed in, you see a simple chat interface where you type your questions or requests. No subscription is needed to start — the free version is available right away.`,
         tip: `On Android phones running Android 14 or later, you can set Gemini as your default assistant by going to Settings > Apps > Default Apps > Digital assistant app and selecting Gemini. This lets you access it by holding the home button.`,
       },
       {
@@ -864,7 +864,7 @@ Meta AI can answer questions, help you write captions, generate images, explain 
 
 One notable feature of Meta AI is image generation. In any chat with Meta AI, type "Create an image of [description]" and it will generate a custom image based on your words. This works in WhatsApp, Messenger, and Instagram DMs. You can use this to generate fun images, custom greeting card art, or visual inspiration for projects.
 
-Meta AI also has a standalone website at meta.ai where you can use it in a web browser without the social media context. This is useful for people who want AI assistance without opening a social media app.
+Meta AI also has a standalone website at meta.ai where you can use it in a web browser without the social media context. This is useful for people who want AI help without opening a social media app.
 
 A few limitations to be aware of: Meta AI does not have access to your personal messages or posts by default — it exists as a separate chat participant. It does not know your account history or past conversations with friends. Each new conversation with Meta AI starts fresh, similar to other AI chatbot services. Also, responses from Meta AI are generated by a machine and should be verified for accuracy, especially for health, legal, or financial matters.`,
     steps: [

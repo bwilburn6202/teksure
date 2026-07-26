@@ -27,7 +27,7 @@ Apple's Battery Health tool shows you a percentage that tells you how much of th
 - 100% — Brand new or nearly new
 - 90–99% — Good, no action needed
 - 80–89% — Battery is aging but still performing well
-- Below 80% — Apple considers this a significantly degraded battery; you may want a replacement
+- Below 80% — Apple considers this a a lot degraded battery; you may want a replacement
 
 **How much does a replacement cost?**
 
@@ -49,7 +49,7 @@ As of 2026, Apple charges $99 to replace an iPhone battery at an Apple Store or 
       },
       {
         title: "Read your Maximum Capacity percentage",
-        content: "At the top of this screen you will see a number followed by a percent sign — for example, 87%. This is your battery's Maximum Capacity. A higher number means your battery is in better shape. Below 80% means the battery has aged significantly."
+        content: "At the top of this screen you will see a number followed by a percent sign — for example, 87%. This is your battery's Maximum Capacity. A higher number means your battery is in better shape. Below 80% means the battery has aged a lot."
       },
       {
         title: "Check the Peak Performance Capability message",
@@ -90,7 +90,7 @@ Apps that constantly track your location — even when you are not using them �
 
 **Charging habits matter too**
 
-Modern phones do best when kept between roughly 20% and 80% charge. Frequently running all the way to 0% or leaving the phone plugged in at 100% for extended periods can slowly wear down the battery over time. Some phones have a feature called Optimized Charging that handles this automatically.
+Modern phones do best when kept between roughly 20% and 80% charge. Often running all the way to 0% or leaving the phone plugged in at 100% for extended periods can slowly wear down the battery over time. Some phones have a feature called Optimized Charging that handles this automatically.
 
 **Quick Tip:** Enable Low Power Mode (iPhone) or Battery Saver (Android) when your battery drops to 20% or when you know you will not have access to a charger for a while. These modes reduce background activity automatically.`,
     steps: [
@@ -191,7 +191,7 @@ Screen Time is a wellness feature. Think of it as a gentle tap on the shoulder t
     tags: ["data usage", "mobile data", "iphone", "android", "phone tips", "save money"],
     body: `Mobile data — the internet connection your phone uses when it is not connected to Wi-Fi — is limited on most phone plans. If you have ever gotten a warning that you are close to your monthly limit, or been charged extra fees for going over, this guide is for you.
 
-The good news is that most data overages are caused by a small number of apps and behaviors. Once you know what to look for, it is usually straightforward to bring your data usage down significantly.
+The good news is that most data overages are caused by a small number of apps and behaviors. Once you know what to look for, it is usually straightforward to bring your data usage down a lot.
 
 **What uses the most data?**
 
@@ -225,11 +225,11 @@ Both iPhone and Android have a built-in mode that tells apps to use less data. O
       },
       {
         title: "Stop apps from updating over mobile data",
-        content: "On iPhone: Go to Settings, then App Store. Under Automatic Downloads, make sure App Updates is turned off, or that Use Mobile Data is turned off. On Android: Open the Google Play Store app, tap your profile icon at the top right, tap Settings, then Network Preferences, then Auto-update apps. Select Over Wi-Fi only. This ensures app updates only happen when you are connected to Wi-Fi."
+        content: "On iPhone: Go to Settings, then App Store. Under Automatic Downloads, make sure App Updates is turned off, or that Use Mobile Data is turned off. On Android: Open the Google Play Store app, tap your profile icon at the top right, tap Settings, then Network Preferences, then Auto-update apps. Select Over Wi-Fi only. This makes sure app updates only happen when you are connected to Wi-Fi."
       },
       {
         title: "Turn off automatic video playback in social media apps",
-        content: "Videos that start playing automatically as you scroll through Facebook, Instagram, or YouTube use a lot of data. Open each app and look in its settings for options like Autoplay or Video Autoplay. Change the setting to Wi-Fi only or Never. This one change can make a large difference if you use social media frequently."
+        content: "Videos that start playing automatically as you scroll through Facebook, Instagram, or YouTube use a lot of data. Open each app and look in its settings for options like Autoplay or Video Autoplay. Change the setting to Wi-Fi only or Never. This one change can make a large difference if you use social media often."
       },
       {
         title: "Make sure your phone connects to Wi-Fi at home",

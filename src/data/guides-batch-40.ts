@@ -17,7 +17,7 @@ Unlike Twitter/X, Bluesky is built on an open protocol, which means no single co
 
 You can use Bluesky on your phone (iPhone or Android) or in any web browser at bsky.app. The mobile app is free.
 
-One thing people like about Bluesky is that it lets you create custom "starter packs" — curated lists of accounts to follow, organized around topics like news, science, cooking, or local communities. When you first join, finding a good starter pack makes the experience much better immediately.
+One thing people like about Bluesky is that it lets you create custom "starter packs" — curated lists of accounts to follow, organized around topics like news, science, cooking, or local communities. When you first join, finding a good starter pack makes the experience much better right away.
 
 Your username on Bluesky ends with .bsky.social by default (for example, @janedoe.bsky.social), but you can also connect your own domain name if you have one — a feature popular with journalists and organizations.
 
@@ -497,7 +497,7 @@ These settings apply across your entire iPhone — not just one app. Once you se
       },
       {
         title: `Turn on Bold Text`,
-        content: `Go to Settings → Display & Brightness → Bold Text. Toggle it ON. Bold text is darker and thicker, which many people find easier to read even without making it larger. This takes effect immediately with no restart needed.`,
+        content: `Go to Settings → Display & Brightness → Bold Text. Toggle it ON. Bold text is darker and thicker, which many people find easier to read even without making it larger. This takes effect right away with no restart needed.`,
       },
       {
         title: `Enable larger accessibility text sizes`,
@@ -830,7 +830,7 @@ Galaxy AI features are available in Settings → Advanced Features → Samsung D
     difficulty: `Beginner`,
     body: `Stolen Device Protection is a security feature Apple added to iPhones with iOS 17.3 and later. It protects you from a specific type of theft that became common: thieves watch you enter your passcode in public, then steal your phone. Within minutes, they can change your Apple ID password, turn off Find My iPhone, and lock you out of your own account permanently.
 
-With Stolen Device Protection turned on, this attack no longer works. The feature requires Face ID or Touch ID (biometric authentication) for sensitive actions — there is no fallback to a passcode. Additionally, some of the most dangerous actions (like changing your Apple ID password or turning off Find My iPhone) have a built-in one-hour delay when your phone is in an unfamiliar location.
+With Stolen Device Protection turned on, this attack no longer works. The feature requires Face ID or Touch ID (biometric authentication) for sensitive actions — there is no fallback to a passcode. Also, some of the most dangerous actions (like changing your Apple ID password or turning off Find My iPhone) have a built-in one-hour delay when your phone is in an unfamiliar location.
 
 This means even if a thief has your passcode, they cannot instantly take over your account. The delay gives you time to log in from another device and remotely lock or wipe the stolen phone before the thief completes their attack.
 
@@ -855,7 +855,7 @@ Stolen Device Protection is turned off by default. You have to enable it manuall
       },
       {
         title: `What to do if your phone is stolen`,
-        content: `Immediately log in to iCloud.com from any computer or another phone. Click "Find My" → select your iPhone → "Lost Mode" to lock it and display a message with your contact number. If you cannot recover it, use "Erase iPhone." With Stolen Device Protection on, the thief is locked out of making account changes during this window.`,
+        content: `Right away log in to iCloud.com from any computer or another phone. Click "Find My" → select your iPhone → "Lost Mode" to lock it and display a message with your contact number. If you cannot recover it, use "Erase iPhone." With Stolen Device Protection on, the thief is locked out of making account changes during this window.`,
         warning: `If you trade in or sell your iPhone, turn off Stolen Device Protection first, then sign out of your Apple ID, then factory reset. This prevents issues during the trade-in process.`,
       },
     ],
@@ -891,7 +891,7 @@ The steps below cover Gmail and Outlook/Hotmail, which together cover the majori
       {
         title: `Change your password immediately`,
         content: `Once you are in, change your password right away before the hacker tries again. Make it at least 12 characters using a mix of letters, numbers, and symbols. Do not use any part of your old password, your name, or your birthday. A password like "BlueSky$29!Morning" is far stronger than "password123."`,
-        warning: `Log out of all other sessions immediately after changing your password. In Gmail: Google Account settings → Security → Your Devices → Sign out of all devices.`,
+        warning: `Log out of all other sessions right away after changing your password. In Gmail: Google Account settings → Security → Your Devices → Sign out of all devices.`,
       },
       {
         title: `Turn on two-factor authentication`,
@@ -904,7 +904,7 @@ The steps below cover Gmail and Outlook/Hotmail, which together cover the majori
       },
       {
         title: `Check which other accounts may be compromised`,
-        content: `Look at your email's Sent folder for any password reset emails that went out after the hack. Check your inbox for "You requested a password reset" emails from services you use. For each affected account, change the password immediately. Priority: banking, PayPal/Venmo, Amazon, your phone carrier, and Social Security/Medicare accounts.`,
+        content: `Look at your email's Sent folder for any password reset emails that went out after the hack. Check your inbox for "You requested a password reset" emails from services you use. For each affected account, change the password right away. Priority: banking, PayPal/Venmo, Amazon, your phone carrier, and Social Security/Medicare accounts.`,
         warning: `If your email was hacked and used for even an hour, treat any accounts that use that email for login as potentially compromised, especially banking and financial accounts.`,
       },
     ],
@@ -950,7 +950,7 @@ Banks typically reimburse fraud losses if you report them quickly — most requi
       },
       {
         title: `Review your account weekly`,
-        content: `Set a habit to open your bank app at least once a week and scroll through recent transactions. Look for any charges you do not recognize, even small ones. Fraudsters often test stolen card numbers with small $1–$2 charges before making larger ones. Report anything suspicious immediately using the phone number on your card.`,
+        content: `Set a habit to open your bank app at least once a week and scroll through recent transactions. Look for any charges you do not recognize, even small ones. Fraudsters often test stolen card numbers with small $1–$2 charges before making larger ones. Report anything suspicious right away using the phone number on your card.`,
       },
       {
         title: `Set up account alerts`,

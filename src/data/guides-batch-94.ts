@@ -21,7 +21,7 @@ The third layer is the dark web. This is a small collection of websites that are
 
 The dark web has legitimate uses. Journalists use it to communicate safely with sources in countries that censor the internet. Activists in authoritarian regimes use it to organize without government surveillance. Privacy researchers and security professionals rely on it for their work. News organizations like the BBC and The New York Times even have official dark web addresses so people in restricted countries can read their reporting.
 
-Unfortunately, the dark web also hosts illegal marketplaces. Criminals buy and sell stolen personal information — including names, Social Security numbers, credit card numbers, and email and password combinations — that were obtained through data breaches. This is why you may hear about your information "being found on the dark web" after a company you use gets hacked.
+Unfortunately, the dark web also hosts illegal marketplaces. Criminals buy and sell stolen personal information — including names, Social Security numbers, credit card numbers, and email and password combinations — that were got through data breaches. This is why you may hear about your information "being found on the dark web" after a company you use gets hacked.
 
 Should you be scared? Not panicked, but informed. The dark web itself does not reach out and grab your data. Your information ends up there when a company you trusted with it gets breached. Once data is listed on a dark web marketplace, you cannot delete it — but you can take steps to limit the damage. Changing your passwords right away, freezing your credit, and monitoring your accounts closely are the most effective responses.
 
@@ -43,7 +43,7 @@ You do not need to visit the dark web yourself to stay safe. The best protection
       },
       {
         title: `Know what to do if your information is found there`,
-        content: `Change the password for any account associated with the breach immediately. If your email and password combination was leaked, check whether you use that same password anywhere else and change those too. If financial information was exposed, consider placing a free credit freeze at all three credit bureaus — Equifax, Experian, and TransUnion. Monitor your bank statements and credit reports closely for the next several months.`,
+        content: `Change the password for any account associated with the breach right away. If your email and password combination was leaked, check whether you use that same password anywhere else and change those too. If financial information was exposed, consider placing a free credit freeze at all three credit bureaus — Equifax, Experian, and TransUnion. Monitor your bank statements and credit reports closely for the next several months.`,
       },
       {
         title: `Use free monitoring tools to stay informed`,
@@ -65,11 +65,11 @@ You do not need to visit the dark web yourself to stay safe. The best protection
 
 Here is what these services actually do: they take your email address, phone number, Social Security number, credit card numbers, and other details you provide, then continually scan dark web forums, marketplaces, and breach databases to see if any of that information appears. When they find a match, they alert you so you can take action.
 
-The good news is that several solid options are completely free. Haveibeenpwned.com, run by well-known security researcher Troy Hunt, lets you enter your email address and immediately see which known data breaches included it. You can also sign up for free email alerts. Google offers a free dark web report for anyone with a Google account — find it under myaccount.google.com and look for the "Results about you" section. Apple users with an iCloud+ subscription get Safety Check under Settings → Privacy & Security.
+The good news is that several solid options are completely free. Haveibeenpwned.com, run by well-known security researcher Troy Hunt, lets you enter your email address and right away see which known data breaches included it. You can also sign up for free email alerts. Google offers a free dark web report for anyone with a Google account — find it under myaccount.google.com and look for the "Results about you" section. Apple users with an iCloud+ subscription get Safety Check under Settings → Privacy & Security.
 
 If you want broader monitoring, paid services cover more data points and often include additional identity protection features. Identity Guard, Aura, and LifeLock are among the most established options in the US, with plans typically ranging from about $10 to $30 per month. Credit Karma also includes a free dark web monitoring feature for members that watches for your Social Security number and email address.
 
-An important thing to understand: these services can tell you that your information was found, but they cannot remove it from the dark web. Once data is out there, it stays out there. What you can do is act fast — change affected passwords immediately, freeze your credit if financial information was exposed, and watch your accounts closely.
+An important thing to understand: these services can tell you that your information was found, but they cannot remove it from the dark web. Once data is out there, it stays out there. What you can do is act fast — change affected passwords right away, freeze your credit if financial information was exposed, and watch your accounts closely.
 
 One alert does not mean disaster. Many people find their old email and password from a breach years ago. If you no longer use that password anywhere, the risk is minimal. The real danger is when people reuse the same password across multiple accounts — that is how one old breach can cascade into multiple account takeovers.`,
     steps: [
@@ -128,7 +128,7 @@ One frustrating reality: your information will likely reappear. Data brokers re-
       },
       {
         title: `Opt out of WhitePages and Spokeo first`,
-        content: `These two sites are among the most frequently visited. For WhitePages, go to whitepages.com/suppression-requests, find your listing, and submit the removal form. You will receive a verification phone call. For Spokeo, go to spokeo.com/optout, paste the URL of your Spokeo listing into the form, enter your email address, and click the verification link they send. Both removals typically take a few days to process.`,
+        content: `These two sites are among the most often visited. For WhitePages, go to whitepages.com/suppression-requests, find your listing, and submit the removal form. You will receive a verification phone call. For Spokeo, go to spokeo.com/optout, paste the URL of your Spokeo listing into the form, enter your email address, and click the verification link they send. Both removals typically take a few days to process.`,
         warning: `Some data broker sites will show you a confusing page with a paid "monitoring" service when you try to opt out. You do not need to pay anything to opt out — look carefully for the free opt-out or removal link, which is usually smaller and less prominent on the page.`,
       },
       {
@@ -312,7 +312,7 @@ After submitting the deposit, the app will display a confirmation message with a
       },
       {
         title: `Take clear photos of the front and back`,
-        content: `Place the check face-up on a dark, plain surface with no clutter around it. Make sure the check is flat — wrinkled or folded checks often result in rejected deposits. Hold your phone directly above the check (not at an angle), and ensure all four corners are inside the frame. Good lighting is important: use overhead room lighting and avoid casting your own shadow on the check. Let the app auto-capture the image when it is ready, or tap the capture button when the check is clearly in frame.`,
+        content: `Place the check face-up on a dark, plain surface with no clutter around it. Make sure the check is flat — wrinkled or folded checks often result in rejected deposits. Hold your phone directly above the check (not at an angle), and make sure all four corners are inside the frame. Good lighting is important: use overhead room lighting and avoid casting your own shadow on the check. Let the app auto-capture the image when it is ready, or tap the capture button when the check is clearly in frame.`,
         tip: `Quick Tip: If the app keeps rejecting your photo, try laying the check on a dark-colored book or folder instead of a white table — the contrast helps the app read the edges correctly.`,
       },
       {
@@ -345,7 +345,7 @@ Enable biometric login on your phone's bank app. This means the app will require
 
 One of the most important habits is avoiding banking on public Wi-Fi — the free wireless networks in coffee shops, airports, hotels, and restaurants. These networks are often unsecured, meaning that someone with basic technical knowledge could potentially intercept data sent over them. When you need to check your bank account away from home, switch your phone to use its cellular data connection instead of Wi-Fi. This is much more secure.
 
-Turn on transaction notifications in your bank app. Most banks let you set up push notifications or text alerts that fire every time money moves in or out of your account. This way, if someone makes an unauthorized charge, you will know about it immediately rather than discovering it weeks later when you review your statement.`,
+Turn on transaction notifications in your bank app. Most banks let you set up push notifications or text alerts that fire every time money moves in or out of your account. This way, if someone makes an unauthorized charge, you will know about it right away rather than discovering it weeks later when you review your statement.`,
     steps: [
       {
         title: `Download the app only from the official store`,
@@ -363,7 +363,7 @@ Turn on transaction notifications in your bank app. Most banks let you set up pu
       },
       {
         title: `Turn on transaction notifications`,
-        content: `In your bank app, go to Settings or Notifications and look for "Transaction Alerts," "Account Alerts," or "Push Notifications." Enable alerts for every debit transaction, every online payment, and every login to your account from a new device. With these on, you will receive a notification within seconds of any account activity — allowing you to spot unauthorized transactions immediately and call your bank to freeze the account before more damage is done.`,
+        content: `In your bank app, go to Settings or Notifications and look for "Transaction Alerts," "Account Alerts," or "Push Notifications." Enable alerts for every debit transaction, every online payment, and every login to your account from a new device. With these on, you will receive a notification within seconds of any account activity — allowing you to spot unauthorized transactions right away and call your bank to freeze the account before more damage is done.`,
       },
       {
         title: `Recognize and ignore phishing messages`,
@@ -451,7 +451,7 @@ The fifth is battery life. For a laptop you plan to take anywhere, look for at l
       },
       {
         title: `Confirm the storage type and size`,
-        content: `Look for SSD (Solid State Drive) in the storage specification. If the listing says HDD or Hard Drive, the computer will be significantly slower to start up and open programs. SSDs have come down in price and are now standard on most laptops above $400. For storage size, 256 GB is workable if you store most files in the cloud, 512 GB is comfortable for most people, and 1 TB (1000 GB) is ideal if you keep a large photo or video library on the device.`,
+        content: `Look for SSD (Solid State Drive) in the storage specification. If the listing says HDD or Hard Drive, the computer will be a lot slower to start up and open programs. SSDs have come down in price and are now standard on most laptops above $400. For storage size, 256 GB is workable if you store most files in the cloud, 512 GB is comfortable for most people, and 1 TB (1000 GB) is ideal if you keep a large photo or video library on the device.`,
       },
       {
         title: `Look at battery life for portable devices`,
@@ -481,7 +481,7 @@ Next is resolution. Most TVs today are either 1080p (Full HD) or 4K (also called
 
 Panel type affects picture quality more than almost anything else. OLED panels produce perfect blacks (each pixel can turn completely off), spectacular contrast, and vivid colors. They are the best choice for dark-room watching but can be pricey. QLED is Samsung's branded name for an enhanced LED panel — very bright and colorful, great for rooms with lots of windows. Standard LED TVs are the most affordable option and perfectly good for general use.
 
-Refresh rate — 60Hz vs 120Hz — matters primarily if you watch fast-moving sports or play video games. For movies and regular TV shows, 60Hz is entirely sufficient.
+Refresh rate — 60Hz vs 120Hz — matters primarily if you watch fast-moving sports or play video games. For movies and regular TV shows, 60Hz is entirely enough.
 
 Smart TV operating systems vary. Roku TV is widely considered the most intuitive. Google TV (built into Sony and some other brands) has excellent app selection. Samsung's Tizen and LG's webOS are both solid. Fire TV Edition TVs integrate well with Amazon devices. Consider which streaming apps you use most and whether they are supported on the TV's platform.`,
     steps: [
@@ -496,7 +496,7 @@ Smart TV operating systems vary. Roku TV is widely considered the most intuitive
       },
       {
         title: `Decide on panel type based on your room`,
-        content: `OLED is the best picture quality available — perfect blacks, wide viewing angles, and stunning contrast — but it costs significantly more and is not recommended for very bright rooms where sunlight hits the screen directly. QLED (Samsung's term) and Mini-LED TVs are extremely bright and colorful, making them ideal for sunny living rooms. Standard LED TVs from reputable brands like TCL, Hisense, Sony, or LG are perfectly good for everyday viewing at a lower price. Avoid "OLED-like" or "QLED-style" marketing language — these are not the real technologies.`,
+        content: `OLED is the best picture quality available — perfect blacks, wide viewing angles, and stunning contrast — but it costs a lot more and is not recommended for very bright rooms where sunlight hits the screen directly. QLED (Samsung's term) and Mini-LED TVs are extremely bright and colorful, making them ideal for sunny living rooms. Standard LED TVs from reputable brands like TCL, Hisense, Sony, or LG are perfectly good for everyday viewing at a lower price. Avoid "OLED-like" or "QLED-style" marketing language — these are not the real technologies.`,
       },
       {
         title: `Check the smart TV operating system and app support`,
@@ -522,7 +522,7 @@ Smart TV operating systems vary. Roku TV is widely considered the most intuitive
 
 There are two main types of home printers: inkjet and laser. Inkjet printers use liquid ink cartridges. They are generally cheaper to buy upfront — you can find a basic inkjet for $50 to $100 — and they produce better quality color photos and graphics. The downside is that ink cartridges are expensive relative to how much they print, and if you do not print often, the ink can dry out inside the print head and cause clogs.
 
-Laser printers use powdered toner instead of liquid ink. Toner cartridges cost more upfront than inkjet cartridges but print many more pages per cartridge, making the cost per page much lower. Laser printers are ideal for people who print frequently, especially black-and-white text documents. They do not suffer from ink drying out. Color laser printers exist but are significantly more expensive than black-and-white laser models.
+Laser printers use powdered toner instead of liquid ink. Toner cartridges cost more upfront than inkjet cartridges but print many more pages per cartridge, making the cost per page much lower. Laser printers are ideal for people who print often, especially black-and-white text documents. They do not suffer from ink drying out. Color laser printers exist but are a lot more expensive than black-and-white laser models.
 
 The best match depends on your printing habits. If you print a few pages per month — boarding passes, recipes, occasional documents — an inkjet all-in-one with an ink subscription plan may be the most cost-effective choice. If you print regularly (20 or more pages per week) and mostly text documents, a laser printer will save you money over time despite the higher upfront cost.
 
@@ -536,7 +536,7 @@ Ink subscription services like HP Instant Ink and Epson ReadyPrint charge a mont
       },
       {
         title: `Decide between inkjet and laser`,
-        content: `Choose inkjet if you print occasional color photos, graphics, or mixed documents at a low to moderate volume. Choose a black-and-white laser printer if you print frequently and mostly text. The per-page cost for a laser printer printing black text is typically $0.01 to $0.02, compared to $0.05 to $0.20 for an inkjet. For a household printing 200 pages a month, that difference adds up to $100 or more per year.`,
+        content: `Choose inkjet if you print occasional color photos, graphics, or mixed documents at a low to moderate volume. Choose a black-and-white laser printer if you print often and mostly text. The per-page cost for a laser printer printing black text is typically $0.01 to $0.02, compared to $0.05 to $0.20 for an inkjet. For a household printing 200 pages a month, that difference adds up to $100 or more per year.`,
         tip: `Quick Tip: If you choose inkjet, buy a model that uses individual color cartridges (one for cyan, one for magenta, one for yellow) rather than a single tri-color cartridge. With a tri-color cartridge, you have to replace the whole thing when any one color runs out, even if the others are still full.`,
       },
       {
@@ -549,7 +549,7 @@ Ink subscription services like HP Instant Ink and Epson ReadyPrint charge a mont
       },
       {
         title: `Evaluate ink subscription plans`,
-        content: `HP Instant Ink and Epson ReadyPrint work by charging a flat monthly fee for a set number of pages — typically $2.99 for 10 pages per month up to $9.99 for 100 pages per month. If you regularly hit your page limit, these plans cost significantly less than buying cartridges individually. They also offer the convenience of automatic delivery before you run out. If you are a very light printer who might go months without printing, a subscription may not be worth it — unused pages often do not roll over.`,
+        content: `HP Instant Ink and Epson ReadyPrint work by charging a flat monthly fee for a set number of pages — typically $2.99 for 10 pages per month up to $9.99 for 100 pages per month. If you regularly hit your page limit, these plans cost a lot less than buying cartridges individually. They also offer the convenience of automatic delivery before you run out. If you are a very light printer who might go months without printing, a subscription may not be worth it — unused pages often do not roll over.`,
         warning: `Some HP and Epson printers will not work with third-party ink cartridges — they are designed to work only with the manufacturer's cartridges or ink subscriptions. Check the printer's compatibility policy before buying if you plan to use aftermarket ink.`,
       },
     ],
@@ -572,11 +572,11 @@ Wi-Fi has several generational standards. Wi-Fi 5 (also written as 802.11ac) was
 
 Single routers work well for smaller homes and apartments — typically up to 1,500 to 2,000 square feet. If you have a larger home, multiple floors, thick walls, or a detached garage you want covered, a mesh Wi-Fi system uses two or three small access points placed around your home that all share a single network name so your devices switch between them automatically. Brands like Eero, Google Nest, and TP-Link Deco make well-regarded mesh systems.
 
-If your ISP provides a router as part of your plan, it is often worth replacing it. ISP-provided equipment tends to be older, less capable, and updated less frequently than consumer routers. However, check with your ISP first — some plans require you to use their router to access certain features or to be eligible for tech support.`,
+If your ISP provides a router as part of your plan, it is often worth replacing it. ISP-provided equipment tends to be older, less capable, and updated less often than consumer routers. However, check with your ISP first — some plans require you to use their router to access certain features or to be eligible for tech support.`,
     steps: [
       {
         title: `Decide if your current router needs replacing`,
-        content: `Check when you got your current router. If it was included with your internet service several years ago, or if you have had it for more than five years, it is likely using an older Wi-Fi standard that cannot deliver the speeds your internet plan offers. Signs a router needs replacing include: Wi-Fi drops frequently, speeds are slow even near the router, certain rooms in your home have no signal, or the router runs very hot to the touch.`,
+        content: `Check when you got your current router. If it was included with your internet service several years ago, or if you have had it for more than five years, it is likely using an older Wi-Fi standard that cannot deliver the speeds your internet plan offers. Signs a router needs replacing include: Wi-Fi drops often, speeds are slow even near the router, certain rooms in your home have no signal, or the router runs very hot to the touch.`,
         tip: `Quick Tip: You can find the model of your router by looking at the label on the bottom. Search the model number online to find out what Wi-Fi standard it uses and when it was released.`,
       },
       {
@@ -589,7 +589,7 @@ If your ISP provides a router as part of your plan, it is often worth replacing 
       },
       {
         title: `Place your router in the right location`,
-        content: `A router placed in a corner, inside a cabinet, or behind a TV will deliver significantly weaker signal than one placed in an open, central location. For the best coverage, place the router on a shelf or table in a central part of your home, not in a back office or closet. Elevate it off the floor if possible — routers broadcast signal downward as well as outward. Keep it away from microwaves, cordless phones, and baby monitors, which can interfere with the 2.4 GHz Wi-Fi band.`,
+        content: `A router placed in a corner, inside a cabinet, or behind a TV will deliver a lot weaker signal than one placed in an open, central location. For the best coverage, place the router on a shelf or table in a central part of your home, not in a back office or closet. Elevate it off the floor if possible — routers broadcast signal downward as well as outward. Keep it away from microwaves, cordless phones, and baby monitors, which can interfere with the 2.4 GHz Wi-Fi band.`,
       },
       {
         title: `Set up your new router and connect your devices`,
@@ -616,7 +616,7 @@ This is different from your computer's storage, which works like a filing cabine
 
 How much RAM do you need? For basic everyday use — web browsing, email, video calls, and watching videos — 8 GB of RAM is the minimum you should consider. It handles these tasks without too much strain. If you regularly have many browser tabs open at once, use Microsoft Office or Google Workspace, or do light photo editing, 16 GB makes a noticeable difference. Creative professionals who edit video, work with large audio projects, or run multiple demanding programs simultaneously benefit from 32 GB or more.
 
-Here is a practical sign that your computer might not have enough RAM: the fan runs loudly, the computer slows down significantly when you have several things open, or you see a spinning wheel or hourglass frequently when switching between programs. These are symptoms of the computer running low on RAM and compensating by using much slower storage as temporary space.
+Here is a practical sign that your computer might not have enough RAM: the fan runs loudly, the computer slows down a lot when you have several things open, or you see a spinning wheel or hourglass often when switching between programs. These are symptoms of the computer running low on RAM and compensating by using much slower storage as temporary space.
 
 One important caveat: on most modern laptops, RAM is soldered directly to the motherboard and cannot be replaced or upgraded later. This is why it is worth buying enough RAM when you purchase a new laptop rather than planning to upgrade afterward.`,
     steps: [
@@ -631,7 +631,7 @@ One important caveat: on most modern laptops, RAM is soldered directly to the mo
       },
       {
         title: `Match RAM to your actual use`,
-        content: `For browsing, email, video calls, and streaming: 8 GB is sufficient. For heavy browsing (15+ tabs), office productivity software, or light photo editing: 16 GB is a worthwhile upgrade. For video editing, photo editing large files, running virtual machines, or working with very large spreadsheets: 32 GB or more. Be realistic about what you actually do — most people do not need more than 16 GB for everyday tasks.`,
+        content: `For browsing, email, video calls, and streaming: 8 GB is enough. For heavy browsing (15+ tabs), office productivity software, or light photo editing: 16 GB is a worthwhile upgrade. For video editing, photo editing large files, running virtual machines, or working with very large spreadsheets: 32 GB or more. Be realistic about what you actually do — most people do not need more than 16 GB for everyday tasks.`,
       },
       {
         title: `Understand that most laptop RAM cannot be upgraded`,
@@ -658,7 +658,7 @@ SSD stands for Solid State Drive. SSDs store data on flash memory chips — the 
 
 The benefits of SSDs go beyond speed alone. Because they have no moving parts, they are much more durable — dropping an SSD laptop is far less likely to damage the storage than dropping an HDD laptop. SSDs are also completely silent, while HDDs produce a faint clicking or spinning sound. And SSDs use less power, which means better battery life in laptops.
 
-The main historical disadvantage of SSDs was price: they cost more per gigabyte than HDDs. That gap has narrowed significantly. A 500 GB SSD now costs roughly $40 to $60, making them standard in virtually all new laptops and desktops above entry-level pricing.
+The main historical disadvantage of SSDs was price: they cost more per gigabyte than HDDs. That gap has narrowed a lot. A 500 GB SSD now costs roughly $40 to $60, making them standard in virtually all new laptops and desktops above entry-level pricing.
 
 Within SSDs, there is a further distinction. SATA SSDs connect using the same interface as older HDDs and are fast — a big improvement over any HDD. NVMe SSDs connect via a faster interface and are several times faster than SATA SSDs, though for everyday use (browsing, email, office work), you will rarely notice the difference. NVMe matters mainly for professionals working with large video files or databases.`,
     steps: [
@@ -737,7 +737,7 @@ The four most common culprits are: too many programs starting up automatically w
 
 The startup programs issue is extremely common. Every time you install a new app, it often adds itself to the list of programs that launch automatically when Windows or macOS starts. Over time, this list can grow to dozens of programs all loading at once when you turn on the computer, each using memory and processing power. Trimming this list is one of the fastest improvements you can make.
 
-Low storage space causes slowdowns because the operating system uses free space on your drive as temporary workspace. When the drive gets too full — generally below 10 to 15 percent free space — the computer runs out of room to work and slows significantly. On a 500 GB drive, that means keeping at least 50 to 75 GB free. Large culprits are usually the Downloads folder, large video files, old program installers, and the Recycle Bin (Windows) or Trash (Mac).
+Low storage space causes slowdowns because the operating system uses free space on your drive as temporary workspace. When the drive gets too full — generally below 10 to 15 percent free space — the computer runs out of room to work and slows a lot. On a 500 GB drive, that means keeping at least 50 to 75 GB free. Large culprits are usually the Downloads folder, large video files, old program installers, and the Recycle Bin (Windows) or Trash (Mac).
 
 Malware — malicious software that has been installed without your knowledge — can consume processor power and memory in the background while hiding from you. Running a trusted security scan is worth doing if your computer has become suddenly and inexplicably slow.
 
@@ -763,7 +763,7 @@ One more fix many people overlook: a true full shutdown and restart. Many people
       },
       {
         title: `Check if it is time for a hardware upgrade or new computer`,
-        content: `If your computer has 4 GB of RAM or less, runs on a traditional hard drive (HDD) instead of an SSD, or is running an operating system that is no longer receiving security updates (Windows 7 and 8 stopped receiving updates years ago, and Windows 10 support ended in October 2025), the hardware may genuinely be too old to run modern software efficiently. In these cases, no amount of software cleanup will make the machine feel fast again. If the computer is more than seven to eight years old, the cost of repairs or upgrades often exceeds the practical value — and a new machine with modern hardware will be significantly faster from day one.`,
+        content: `If your computer has 4 GB of RAM or less, runs on a traditional hard drive (HDD) instead of an SSD, or is running an operating system that is no longer receiving security updates (Windows 7 and 8 stopped receiving updates years ago, and Windows 10 support ended in October 2025), the hardware may genuinely be too old to run modern software efficiently. In these cases, no amount of software cleanup will make the machine feel fast again. If the computer is more than seven to eight years old, the cost of repairs or upgrades often exceeds the practical value — and a new machine with modern hardware will be a lot faster from day one.`,
       },
     ],
   },
@@ -826,7 +826,7 @@ Finally, if only one device is dropping Wi-Fi while others in your home are fine
 
 Working through a few basic steps can resolve most charging problems in minutes without any special tools or expertise.
 
-The charging cable is the most common culprit. Cables bend and flex constantly at the connector end, and the internal wires break over time even when the cable looks fine on the outside. Try a different cable — one you know works — before assuming the phone itself is the problem. If you are using a cheap cable that came with a third-party charger, replace it with a cable certified by Apple (for Lightning or USB-C) or one certified for Android. Poor-quality cables not only fail to charge but can occasionally damage the phone's charging port.
+The charging cable is the most common culprit. Cables bend and flex constantly at the connector end, and the internal wires break over time even when the cable looks fine on the outside. Try a different cable — one you know works — before assuming the phone itself is the problem. If you are using a cheap cable that came with a third-party charger, replace it with a cable certified by Apple (for Lightning or USB-C) or one certified for Android. Poor-quality cables not only fail to charge but can sometimes damage the phone's charging port.
 
 Lint and dust in the charging port is the second most common cause. Over time, pocket lint accumulates inside the charging port and prevents the cable connector from making solid contact with the phone's pins. Look inside the port with a flashlight — if you see lint packed in there, use a wooden toothpick very gently to dislodge and remove it. Do not use a metal object like a needle or paperclip, which could scratch the pins inside. Compressed air can also blow out loose debris.
 
@@ -852,7 +852,7 @@ If wireless charging works on your phone but wired does not, the charging port i
       },
       {
         title: `Check battery health on iPhone`,
-        content: `If your phone charges but loses power very quickly, or shows an incorrect battery percentage, the battery may be degraded. On an iPhone, go to Settings → Battery → Battery Health & Charging. If the maximum capacity is below 80 percent, the battery has degraded significantly and a replacement is worth considering. Apple offers battery replacements for iPhones at Apple Stores and authorized repair locations. On Android, battery health information varies by phone model — search your phone model name and "battery health" for instructions specific to your device.`,
+        content: `If your phone charges but loses power very quickly, or shows an incorrect battery percentage, the battery may be degraded. On an iPhone, go to Settings → Battery → Battery Health & Charging. If the maximum capacity is below 80 percent, the battery has degraded a lot and a replacement is worth considering. Apple offers battery replacements for iPhones at Apple Stores and authorized repair locations. On Android, battery health information varies by phone model — search your phone model name and "battery health" for instructions specific to your device.`,
       },
       {
         title: `Try wireless charging to isolate the port`,
@@ -874,9 +874,9 @@ If wireless charging works on your phone but wired does not, the charging port i
 
 The foundation of any reliable home office setup is your internet connection. For a single person working from home — primarily doing video calls, email, and document work — you need at least 25 Mbps download speed and 5 Mbps upload speed. If you share the connection with family members who also stream video or do remote work simultaneously, aim for 50 Mbps or more download speed. If your company uses a VPN (a secure connection that routes your internet traffic through the company's servers), the VPN creates overhead that uses more of your available bandwidth — a faster plan helps.
 
-Most people use Wi-Fi to connect their work laptop to the internet, which works well in most situations. However, if you frequently experience video calls cutting out or screen-sharing lag, consider using a wired Ethernet connection instead. An Ethernet cable plugged directly from your laptop to your router provides a much more stable and consistent connection than Wi-Fi, because it is not affected by interference, distance, or competing devices. A USB-to-Ethernet adapter ($15 to $25) works for laptops that do not have a built-in Ethernet port.
+Most people use Wi-Fi to connect their work laptop to the internet, which works well in most situations. However, if you often experience video calls cutting out or screen-sharing lag, consider using a wired Ethernet connection instead. An Ethernet cable plugged directly from your laptop to your router provides a much more stable and consistent connection than Wi-Fi, because it is not affected by interference, distance, or competing devices. A USB-to-Ethernet adapter ($15 to $25) works for laptops that do not have a built-in Ethernet port.
 
-Your workspace setup affects productivity and comfort significantly. A dedicated external monitor — even a basic 24-inch 1080p screen for $100 to $150 — gives you far more screen space than a laptop alone and reduces the neck strain from looking down at a laptop display for hours. Position the monitor so the top of the screen is at or slightly below eye level.
+Your workspace setup affects productivity and comfort a lot. A dedicated external monitor — even a basic 24-inch 1080p screen for $100 to $150 — gives you far more screen space than a laptop alone and reduces the neck strain from looking down at a laptop display for hours. Position the monitor so the top of the screen is at or slightly below eye level.
 
 For video calls, the most important factor is lighting. Natural light from a window in front of you (not behind you) makes a dramatic difference to how you look on camera. If you work in a room without good natural light, a basic ring light ($20 to $40) clipped to the top of your monitor works very well.
 

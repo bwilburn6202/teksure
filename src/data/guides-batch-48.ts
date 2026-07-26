@@ -89,7 +89,7 @@ Viewing your own posted Status and seeing who viewed it is also possible — tap
       },
       {
         title: `Control who sees your Status`,
-        content: `To manage your Status privacy, go to WhatsApp Settings (gear icon) > Privacy > Status. Choose "My Contacts," "My Contacts Except..." (to exclude specific people), or "Only Share With..." (to share with a limited group). Changes apply immediately to all future statuses.`,
+        content: `To manage your Status privacy, go to WhatsApp Settings (gear icon) > Privacy > Status. Choose "My Contacts," "My Contacts Except..." (to exclude specific people), or "Only Share With..." (to share with a limited group). Changes apply right away to all future statuses.`,
       },
     ],
   },
@@ -129,7 +129,7 @@ If you run a Facebook Page (for a small business or community group), going Live
       },
       {
         title: `Set your audience and go Live`,
-        content: `Before going live, type a description of what you're going to show (for example, "Backyard bird watching!"). Tap the audience selector to choose who can watch: "Friends," "Public," or a custom list. When you're ready, tap the blue "Go Live" button. Your camera turns on and the broadcast begins immediately.`,
+        content: `Before going live, type a description of what you're going to show (for example, "Backyard bird watching!"). Tap the audience selector to choose who can watch: "Friends," "Public," or a custom list. When you're ready, tap the blue "Go Live" button. Your camera turns on and the broadcast begins right away.`,
         warning: `Facebook Live is broadcast in real time. What you say and show is visible to your chosen audience the moment it happens. Be aware of your surroundings and what's visible in the background.`,
       },
       {
@@ -211,7 +211,7 @@ Some popular and genuinely useful extensions include:
 
 Extensions are installed from the Chrome Web Store, which is Google's official marketplace. Any extension in the store must meet Google's guidelines, so it's generally safe to install from there. That said, avoid installing extensions you've never heard of or ones that ask for more permissions than they need — only add what you'll actually use.
 
-Once installed, extensions appear as small icons to the right of your address bar. Some show up automatically; others need you to click the puzzle piece icon to see and pin them. You can remove any extension at any time, which immediately returns your browser to exactly how it was before.
+Once installed, extensions appear as small icons to the right of your address bar. Some show up automatically; others need you to click the puzzle piece icon to see and pin them. You can remove any extension at any time, which right away returns your browser to exactly how it was before.
 
 Extensions only work in Chrome on a computer — they don't carry over to Chrome on your phone or to other browsers like Safari or Firefox.`,
     steps: [
@@ -234,7 +234,7 @@ Extensions only work in Chrome on a computer — they don't carry over to Chrome
       },
       {
         title: `Remove an extension you no longer need`,
-        content: `Click the puzzle piece icon, find the extension you want to remove, and click the three dots next to its name. Choose "Remove from Chrome." The extension is uninstalled immediately and won't affect your browser going forward.`,
+        content: `Click the puzzle piece icon, find the extension you want to remove, and click the three dots next to its name. Choose "Remove from Chrome." The extension is uninstalled right away and won't affect your browser going forward.`,
         warning: `Only install extensions from the official Chrome Web Store, not from random websites. Unofficial sources can distribute harmful software.`,
       },
     ],
@@ -296,7 +296,7 @@ This feature works on both Windows and Mac computers. It's not available in Chro
     difficulty: `Intermediate`,
     body: `The App Privacy Report is a built-in feature on iPhone (available in iOS 17 and later) that keeps a record of how your apps have been using sensitive data and features over the past seven days. It shows you which apps have accessed your camera, microphone, location, contacts, photos, and more — and exactly how many times.
 
-Many apps request permissions for good reasons. A mapping app needs your location to give directions. A video calling app needs your microphone and camera for calls. But sometimes apps access things more frequently than you might expect — or access things that don't seem necessary for what the app does.
+Many apps request permissions for good reasons. A mapping app needs your location to give directions. A video calling app needs your microphone and camera for calls. But sometimes apps access things more often than you might expect — or access things that don't seem necessary for what the app does.
 
 The App Privacy Report helps you spot unusual activity. For example, if a flashlight app is accessing your location data, that's a red flag. Or if a game you played once has accessed your contacts repeatedly, you might want to revoke that permission.
 
@@ -304,7 +304,7 @@ Beyond showing what's being accessed, the report also lists what websites third-
 
 Turning on the App Privacy Report doesn't change anything about how apps work — it just starts keeping a log you can review. The information is stored privately on your iPhone and is not sent to Apple. You can turn it off at any time if you prefer not to track this data.
 
-Reviewing your App Privacy Report occasionally is a healthy privacy habit, especially for any apps you haven't used recently that you've left installed on your phone.`,
+Reviewing your App Privacy Report sometimes is a healthy privacy habit, especially for any apps you haven't used recently that you've left installed on your phone.`,
     steps: [
       {
         title: `Turn on App Privacy Report`,
@@ -325,7 +325,7 @@ Reviewing your App Privacy Report occasionally is a healthy privacy habit, espec
       },
       {
         title: `Delete apps you no longer trust or use`,
-        content: `If the report reveals an app with suspicious behavior and you don't actively use it, consider deleting it. Press and hold the app icon on your home screen until a menu appears, then tap "Remove App" > "Delete App." Deleting an app removes all its permissions immediately.`,
+        content: `If the report reveals an app with suspicious behavior and you don't actively use it, consider deleting it. Press and hold the app icon on your home screen until a menu appears, then tap "Remove App" > "Delete App." Deleting an app removes all its permissions right away.`,
         tip: `After deleting suspicious apps, turn on App Privacy Report for a few more days to confirm the data access stops.`,
       },
     ],
@@ -372,7 +372,7 @@ Despite its simple appearance, Paint handles standard tasks reliably and opens n
       {
         title: `Crop or resize the image`,
         content: `To crop: click "Select" (the dotted rectangle), drag a box over the area you want to keep, then click "Crop" in the toolbar. To resize: click "Resize" in the Image section of the toolbar, enter new dimensions (as a percentage or in pixels), and click OK.`,
-        tip: `To make an image smaller for emailing, resize it to 50% of its original size. This usually cuts the file size significantly.`,
+        tip: `To make an image smaller for emailing, resize it to 50% of its original size. This usually cuts the file size a lot.`,
       },
       {
         title: `Save your edited image`,
@@ -467,7 +467,7 @@ Stickies automatically save their content, so if you close and reopen the Sticki
       },
       {
         title: `Create a new sticky note`,
-        content: `Go to the menu bar at the top and click "File > New Note," or press Command + N. A new sticky note window appears on your screen. Click inside it and start typing immediately.`,
+        content: `Go to the menu bar at the top and click "File > New Note," or press Command + N. A new sticky note window appears on your screen. Click inside it and start typing right away.`,
       },
       {
         title: `Change the color of a sticky`,
@@ -714,7 +714,7 @@ Outlook is free to download and use. Setup is as straightforward as entering you
       },
       {
         title: `Navigate the Focused Inbox`,
-        content: `The main email screen shows two tabs at the top: "Focused" and "Other." Focused contains emails Outlook thinks are important — messages from people you frequently communicate with and emails that need action. "Other" contains newsletters, promotions, and other lower-priority messages. Check both tabs so you don't miss anything.`,
+        content: `The main email screen shows two tabs at the top: "Focused" and "Other." Focused contains emails Outlook thinks are important — messages from people you often communicate with and emails that need action. "Other" contains newsletters, promotions, and other lower-priority messages. Check both tabs so you don't miss anything.`,
       },
       {
         title: `View and manage your calendar`,
@@ -745,7 +745,7 @@ There are three main versions:
 - **Apple Pencil 2nd generation** — Compatible with iPad Pro and iPad Air (with USB-C). Attaches magnetically to the flat side of the iPad, which also charges it wirelessly.
 - **Apple Pencil USB-C** — A newer, more affordable option compatible with most recent iPads with a USB-C port.
 
-Pairing is straightforward — you either snap the Pencil to the iPad's side (2nd gen) or connect it briefly by plug (1st gen), and the iPad recognizes it immediately.
+Pairing is straightforward — you either snap the Pencil to the iPad's side (2nd gen) or connect it briefly by plug (1st gen), and the iPad recognizes it right away.
 
 Once paired, Apple Pencil works in Notes, Pages, Keynote, third-party drawing apps (like Procreate and Adobe Fresco), and everywhere else on the iPad where drawing or handwriting is useful. In Notes, you can write by hand in your natural handwriting and the iPad will even convert it to typed text if you ask.
 

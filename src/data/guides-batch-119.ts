@@ -252,9 +252,9 @@ Option C: Microsoft Quick Assist (Windows 10 and 11)
 If your parent has a Windows computer, Microsoft includes a free remote support tool called Quick Assist — already installed.
 
 1. Your parent presses the Windows key and types "Quick Assist," then opens it.
-2. They click "Get Assistance" and sign in with a Microsoft account if prompted.
+2. They click "Get Help" and sign in with a Microsoft account if prompted.
 3. A 6-digit code appears on their screen.
-4. You open Quick Assist on your Windows computer, click "Give Assistance," sign in, and enter the code.
+4. You open Quick Assist on your Windows computer, click "Give Help," sign in, and enter the code.
 5. You can now view or take control of their screen.
 6. When you're done, either of you clicks the "Leave" button to end the session.
 
@@ -329,7 +329,7 @@ Step C: Test the connection
 7. You type it in.
 8. A window appears on your computer showing their screen. You can now move their mouse and type on their keyboard, from across the country.
 9. Test it. Move a window. Open something. Close it. Let them see that you can do things.
-10. When done, click "Close Session" on your end. The control ends immediately.
+10. When done, click "Close Session" on your end. The control ends right away.
 
 Step D: Make it easy for them to find
 
@@ -759,7 +759,7 @@ For wire-transfer scams specifically, the best defenses are:
 
 The emotional piece:
 
-Scam calls are devastating for older adults who have been tricked. The shame often keeps them from telling anyone. Make a rule in your family: "If anyone ever tricks you, please tell me immediately. You will not be in trouble. Acting fast makes it recoverable — and waiting is what makes it worse."
+Scam calls are devastating for older adults who have been tricked. The shame often keeps them from telling anyone. Make a rule in your family: "If anyone ever tricks you, please tell me right away. You will not be in trouble. Acting fast makes it recoverable — and waiting is what makes it worse."
 
 The sooner a scam is reported, the better the chance of stopping the transaction, reversing a wire, or catching the thief. Shame is the scammer's greatest ally. Love is ours.`,
         tip: 'Add a $1,000-per-day spending limit to their debit card (most banks let you set this in their app or by calling in). Even if a scam gets their card, the damage is capped at one day\'s worth of limit. Same trick works on Zelle and Venmo transfer limits.',
@@ -989,7 +989,7 @@ The difference between "this is hard to learn" and "something is slipping." Most
 
 Trust your gut. You know your parent. If something feels off, it probably is. Gentle investigation is an act of love.`,
         tip: 'Keep a shared note (on your phone, not theirs) with dates and descriptions of concerning tech moments. "April 12 — forgot how to answer FaceTime. April 19 — called twice about same email. April 28 — gave credit card to scam caller." Over 6 months, patterns emerge. Take that note to their doctor.',
-        warning: 'Sudden, acute confusion — over hours or days, not months — is a medical emergency. It is often a UTI, stroke, or medication problem. Call their doctor or 911 the same day. Long, slow changes are something to monitor; fast, new changes are something to act on immediately.',
+        warning: 'Sudden, acute confusion — over hours or days, not months — is a medical emergency. It is often a UTI, stroke, or medication problem. Call their doctor or 911 the same day. Long, slow changes are something to monitor; fast, new changes are something to act on right away.',
       },
       {
         title: 'Step 13: Caregiver burnout — taking care of yourself too',

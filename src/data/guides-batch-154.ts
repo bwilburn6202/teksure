@@ -168,7 +168,7 @@ Apple's Notes app comes pre-installed on every iPhone. You cannot delete it. Her
 
 **Opening Notes**
 
-The Notes app icon is yellow with a white notepad. It is usually on your home screen. If you cannot find it, swipe down from the middle of any home screen to open the search bar and type "Notes" — it will appear immediately.
+The Notes app icon is yellow with a white notepad. It is usually on your home screen. If you cannot find it, swipe down from the middle of any home screen to open the search bar and type "Notes" — it will appear right away.
 
 **Creating your first note**
 
@@ -464,7 +464,7 @@ The IMEI is also printed on the original box the phone came in, if you still hav
 If your phone is stolen:
 
 1. **File a police report first.** Go to your local police department or file online at your city or county's non-emergency reporting portal. Ask for a copy of the report — you will need the report number.
-2. **Call your carrier immediately.** Tell them your phone was stolen and provide your IMEI number. Ask them to add the IMEI to the blocklist so the phone cannot be used on any network.
+2. **Call your carrier right away.** Tell them your phone was stolen and provide your IMEI number. Ask them to add the IMEI to the blocklist so the phone cannot be used on any network.
 3. **Suspend your service.** Ask the carrier to suspend your phone line so no calls or data can be billed to your account while the phone is missing.
 4. **Change your passwords.** If your phone was unlocked when stolen, the thief may have access to your email, banking apps, and other accounts. Change passwords for important accounts from another device as soon as possible.
 5. **Contact your insurance if you have phone insurance.** Many carrier plans and some credit cards include phone theft protection — check your documents or call your carrier.
@@ -502,8 +502,7 @@ If the check shows the phone is clean — not stolen, not blocked, not still und
         title: 'Report a stolen phone using your IMEI',
         content:
           'If your phone is stolen: (1) file a police report and get the report number, (2) call your carrier and give them your IMEI to have the device blocked on all US networks, (3) ask the carrier to suspend your service so no charges can be made, (4) change passwords for email, banking, and other important apps from another device.',
-        warning:
-          'Blocking the IMEI with your carrier stops the phone from working on any US network — but do this immediately after theft, before the thief has a chance to access your accounts.',
+        warning: 'Blocking the IMEI with your carrier stops the phone from working on any US network — but do this right away after theft, before the thief has a chance to access your accounts.',
       },
       {
         title: 'Check a used phone\'s IMEI before buying',

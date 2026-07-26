@@ -183,7 +183,7 @@ export const guidesBatch246: Guide[] = [
       },
       {
         title: "Add Commercial Shakes Only When Food Falls Short",
-        content: "When solid food is hard to manage, a commercial oral nutrition shake can bridge the gap. Ensure, Boost, Orgain, and Premier Protein all offer ready-to-drink shakes with 220 to 350 calories and 10 to 30 grams of protein per bottle. Chill them well and sip slowly with a straw. Use them between meals or with breakfast to boost intake, not as a replacement for solid food when solids are tolerated. For patients with diabetes, choose a low-sugar version such as Glucerna or the diabetes-friendly Ensure. Many cancer centers and Medicaid programs supply free or discounted shakes for patients during treatment. Ask the social worker.",
+        content: "When solid food is hard to manage, a commercial oral nutrition shake can bridge the gap. Make sure, Boost, Orgain, and Premier Protein all offer ready-to-drink shakes with 220 to 350 calories and 10 to 30 grams of protein per bottle. Chill them well and sip slowly with a straw. Use them between meals or with breakfast to boost intake, not as a replacement for solid food when solids are tolerated. For patients with diabetes, choose a low-sugar version such as Glucerna or the diabetes-friendly Make sure. Many cancer centers and Medicaid programs supply free or discounted shakes for patients during treatment. Ask the social worker.",
         tip: "Make a homemade shake by blending whole milk, a banana, peanut butter, ice, and a scoop of protein powder. Cheaper and often more appealing than commercial versions, with 400 calories and 25 grams of protein."
       }
     ]
@@ -264,7 +264,7 @@ export const guidesBatch246: Guide[] = [
       {
         title: "Lift Something Heavy Twice a Week",
         content: "Strength training is the second pillar of safe weight loss after 70. Walking and gardening help, but only resistance exercise sends the strong signal that tells the body to keep muscle as fat comes off. Two 20- to 30-minute strength sessions per week are enough. Use resistance bands, light dumbbells, weight machines at a senior gym or YMCA, or your own body weight for squats, wall push-ups, and chair stands. Six to eight exercises per session, ten to twelve repetitions per exercise, with a weight heavy enough that the last few repetitions feel hard, is the basic recipe. Medicare often covers a few sessions of physical therapy to learn safe form. The SilverSneakers program at many gyms is free with most Medicare Advantage plans.",
-        warning: "Stop immediately and call your doctor if you feel chest pain, severe shortness of breath, dizziness, or sudden joint pain during exercise. Adjust the plan rather than push through."
+        warning: "Stop right away and call your doctor if you feel chest pain, severe shortness of breath, dizziness, or sudden joint pain during exercise. Adjust the plan rather than push through."
       },
       {
         title: "Fill the Plate With Vegetables, Fruit, and Whole Grains",

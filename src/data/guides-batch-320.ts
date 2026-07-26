@@ -30,7 +30,7 @@ export const guidesBatch320: Guide[] = [
       {
         title: "Verify your identity",
         content: "You'll need a photo ID (driver's license or passport) and your Social Security number on hand. ID.me will ask you to take a photo of your ID and sometimes a selfie to confirm it's really you.",
-        tip: "If online verification doesn't work, you can also get an IP PIN by filing Form 15227 by mail or by making an appointment at a local IRS Taxpayer Assistance Center.",
+        tip: "If online verification doesn't work, you can also get an IP PIN by filing Form 15227 by mail or by making an appointment at a local IRS Taxpayer Help Center.",
       },
       {
         title: "Retrieve your PIN",
@@ -54,7 +54,7 @@ export const guidesBatch320: Guide[] = [
     publishedAt: "2026-07-11",
     lastVerifiedAt: "2026-07-11",
     difficulty: "Beginner",
-    body: "One of the most common scams aimed at computer users is a pop-up window that suddenly fills the screen with flashing warnings, sometimes accompanied by a loud alarm sound, claiming your computer is infected with viruses and instructing you to call a phone number immediately. These pop-ups are fake — no legitimate antivirus company, and certainly not Microsoft, Apple, or your internet provider, detects a virus and tells you to call a phone number to fix it.\n\nThe goal of the scam is to panic you into calling. If you call, a scammer posing as \"tech support\" will try to get remote access to your computer, then either charge you hundreds of dollars for fake repairs, install actual malware, or steal banking information while pretending to \"fix\" the problem. The pop-up itself, no matter how alarming it looks, cannot actually damage your computer — closing it safely is always the right first move.\n\nThese scam pop-ups typically come from a website you visited, not an actual infection, which is why closing the browser (not just the pop-up) usually makes the alarm disappear completely. Source: consumer.ftc.gov/articles/tech-support-scams.",
+    body: "One of the most common scams aimed at computer users is a pop-up window that suddenly fills the screen with flashing warnings, sometimes accompanied by a loud alarm sound, claiming your computer is infected with viruses and instructing you to call a phone number right away. These pop-ups are fake — no legitimate antivirus company, and certainly not Microsoft, Apple, or your internet provider, detects a virus and tells you to call a phone number to fix it.\n\nThe goal of the scam is to panic you into calling. If you call, a scammer posing as \"tech support\" will try to get remote access to your computer, then either charge you hundreds of dollars for fake repairs, install actual malware, or steal banking information while pretending to \"fix\" the problem. The pop-up itself, no matter how alarming it looks, cannot actually damage your computer — closing it safely is always the right first move.\n\nThese scam pop-ups typically come from a website you visited, not an actual infection, which is why closing the browser (not just the pop-up) usually makes the alarm disappear completely. Source: consumer.ftc.gov/articles/tech-support-scams.",
     steps: [
       {
         title: "Do not call any phone number shown on the pop-up",
@@ -76,7 +76,7 @@ export const guidesBatch320: Guide[] = [
       },
       {
         title: "Report it",
-        content: "If you did call the number and gave remote access, payment information, or a password, contact your bank immediately to watch for unusual charges, change any passwords you may have shared, and report the scam at reportfraud.ftc.gov.",
+        content: "If you did call the number and gave remote access, payment information, or a password, contact your bank right away to watch for unusual charges, change any passwords you may have shared, and report the scam at reportfraud.ftc.gov.",
       },
     ],
   },
@@ -194,7 +194,7 @@ export const guidesBatch320: Guide[] = [
       },
       {
         title: "Get free help if you want a second opinion",
-        content: "Every state has a free State Health Insurance Assistance Program (SHIP) with counselors who help compare plans at no cost and with no sales incentive. Search \"SHIP\" plus your state name, or call 1-800-MEDICARE to be connected.",
+        content: "Every state has a free State Health Insurance Help Program (SHIP) with counselors who help compare plans at no cost and with no sales incentive. Search \"SHIP\" plus your state name, or call 1-800-MEDICARE to be connected.",
       },
     ],
   },

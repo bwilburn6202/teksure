@@ -83,7 +83,7 @@ Circle Home Plus costs about $129 upfront for the hardware, plus a $9.99 per mon
       },
       {
         title: `Set content filters, time limits, and bedtime`,
-        content: `Inside each profile, you can tap "Filter" to block categories of websites, tap "Time Limits" to set daily usage caps for specific apps, and tap "Bedtime" to schedule when the internet turns off at night. Changes take effect immediately. You can adjust any setting at any time from the Circle app on your phone.`,
+        content: `Inside each profile, you can tap "Filter" to block categories of websites, tap "Time Limits" to set daily usage caps for specific apps, and tap "Bedtime" to schedule when the internet turns off at night. Changes take effect right away. You can adjust any setting at any time from the Circle app on your phone.`,
         tip: `Quick Tip: The "Pause" button on the home screen of the Circle app lets you cut off internet access for the whole house in one tap — handy during meals or family time.`,
       },
     ],
@@ -164,7 +164,7 @@ You can create a Kids Mode profile for each child in your household with a Disne
       },
       {
         title: `Test the PIN lock`,
-        content: `Try tapping the profile icon inside your child's Kids Mode profile and selecting "Switch Profile" or "Edit Profile." The app should immediately ask for your four-digit PIN before allowing any changes. If it does, the lock is working correctly. If not, go back to your account settings and verify that the Kids Profile option is still selected.`,
+        content: `Try tapping the profile icon inside your child's Kids Mode profile and selecting "Switch Profile" or "Edit Profile." The app should right away ask for your four-digit PIN before allowing any changes. If it does, the lock is working correctly. If not, go back to your account settings and verify that the Kids Profile option is still selected.`,
         warning: `If you share a tablet with your child, make sure you switch back to your own profile when you are done watching. Kids Mode only protects content within that specific profile.`,
       },
     ],
@@ -333,7 +333,7 @@ The most important safety step for parents is to set up a Microsoft Family accou
       },
       {
         title: `Talk with your child about online interaction`,
-        content: `Before your child plays Minecraft online with others, spend a few minutes discussing what information should never be shared — full name, school, location, age, or photos. Remind them that not everyone online is who they say they are, and that if someone makes them uncomfortable, they can leave the server or game immediately and tell you. Keeping communication open is one of the most effective safety measures available.`,
+        content: `Before your child plays Minecraft online with others, spend a few minutes discussing what information should never be shared — full name, school, location, age, or photos. Remind them that not everyone online is who they say they are, and that if someone makes them uncomfortable, they can leave the server or game right away and tell you. Keeping communication open is one of the most effective safety measures available.`,
         tip: `Quick Tip: Playing Minecraft with your child for even one session gives you a good picture of what they experience in the game and what questions they might have.`,
       },
     ],
@@ -414,7 +414,7 @@ The app is available on iPhone, iPad, Android phones and tablets, Amazon Fire ta
       },
       {
         title: `Browse and find books your child will love`,
-        content: `Tap on your child's profile to see recommended books based on their age and interests. Browse categories like "Adventure," "Science," "Humor," or "Animals" to find titles that match what they enjoy. Tap any book to start reading immediately. For audiobooks, look for the headphone icon on the book cover.`,
+        content: `Tap on your child's profile to see recommended books based on their age and interests. Browse categories like "Adventure," "Science," "Humor," or "Animals" to find titles that match what they enjoy. Tap any book to start reading right away. For audiobooks, look for the headphone icon on the book cover.`,
         tip: `Quick Tip: The "Read to Me" feature is excellent for younger children who cannot read independently yet. The narrator reads aloud while highlighting each word on the screen.`,
       },
       {
@@ -477,7 +477,7 @@ While Duolingo was originally designed for adult learners, it is widely used by 
 
 The most popular use cases for children are learning Spanish as a second language, practicing a heritage language spoken at home, or getting a head start on a language they will study in school. Duolingo's approach favors conversational vocabulary and phrases over grammar rules, which makes it practical and approachable for beginners of any age.
 
-Duolingo is free to use with ads. A Duolingo Super subscription at $6.99 per month removes ads, allows offline learning, and unlocks progress tests. For most children, the free version is fully sufficient. The app is available on iPhone, iPad, and Android, and through a web browser at duolingo.com.`,
+Duolingo is free to use with ads. A Duolingo Super subscription at $6.99 per month removes ads, allows offline learning, and unlocks progress tests. For most children, the free version is fully enough. The app is available on iPhone, iPad, and Android, and through a web browser at duolingo.com.`,
     steps: [
       {
         title: `Download Duolingo and create an account`,
@@ -520,7 +520,7 @@ Scratch requires a free account to save and share work, but children can start c
     steps: [
       {
         title: `Visit the Scratch website`,
-        content: `Go to scratch.mit.edu in a web browser on your computer, tablet, or Chromebook. You will see the Scratch home page with featured projects from the community. Click "Start Creating" to open the Scratch editor immediately without creating an account. This is a good way to try it out before signing up.`,
+        content: `Go to scratch.mit.edu in a web browser on your computer, tablet, or Chromebook. You will see the Scratch home page with featured projects from the community. Click "Start Creating" to open the Scratch editor right away without creating an account. This is a good way to try it out before signing up.`,
         tip: `Quick Tip: The Scratch editor works on tablets like iPad, but a keyboard and mouse make coding much easier. For the best experience, use a computer.`,
       },
       {
@@ -816,7 +816,7 @@ Setting up a Fire Kids tablet from scratch takes about 30 minutes. You will need
     difficulty: `Beginner`,
     body: `Osmo is a learning system for children ages 3 to 12 that combines physical game pieces with iPad or Amazon Fire tablet apps. The system uses a small reflective device called the Osmo Base, which props up the tablet and attaches a small mirror piece over the front-facing camera. This allows the tablet's camera to see what is happening on the table in front of it — drawing on paper, placing letter tiles, counting objects — and respond in real time on the screen.
 
-The result is a genuinely unique experience that bridges the gap between screen time and hands-on play. When a child draws a fire extinguisher on paper to stop a fire on the screen, or uses physical number tiles to solve a math problem, they are engaging their hands and minds in a way that purely screen-based apps cannot replicate. Research suggests this kind of multisensory play is especially beneficial for early learners.
+The result is a genuinely unique experience that bridges the gap between screen time and hands-on play. When a child draws a fire extinguisher on paper to stop a fire on the screen, or uses physical number tiles to solve a math problem, they are engaging their hands and minds in a way that purely screen-based apps cannot replicate. Research suggests this kind of multisensory play is especially helpful for early learners.
 
 Osmo sells starter kits organized by age and subject. The "Genius Starter Kit" for ages 6 to 10 includes five games covering math, spelling, drawing, and problem-solving. The "Little Genius Starter Kit" for ages 3 to 5 focuses on early literacy and hands-on shape exploration. Each kit includes the Osmo Base, the required game pieces, and codes to download the apps.
 

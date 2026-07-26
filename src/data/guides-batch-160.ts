@@ -88,7 +88,7 @@ Scroll down and tap "Google." (On some Samsung phones, this may be listed under 
 
 **Step 3 — Tap Backup**
 
-Tap "Backup." You will see an option called "Back up to Google Drive." Make sure this is turned on (the toggle should be blue or green). Tap "Back up now" to run a backup immediately.
+Tap "Backup." You will see an option called "Back up to Google Drive." Make sure this is turned on (the toggle should be blue or green). Tap "Back up now" to run a backup right away.
 
 **Step 4 — Verify your contacts are in Google**
 
@@ -505,7 +505,7 @@ What Informed Delivery does **not** show: the inside of envelopes, the contents 
 - **Track Medicare and insurance correspondence.** Enrollment letters, Summary of Benefits, and other Medicare documents are easy to miss. Informed Delivery tells you they are coming before they arrive.
 - **Know when a prescription arrives.** If a medication is mailed to your home, you will receive a package notification so you know to retrieve it promptly — especially important if the medication requires refrigeration.
 - **Spot missing mail.** If you receive a notification that a check or important letter was supposed to arrive today but it is not in your mailbox, you can contact USPS quickly rather than waiting and wondering.
-- **Confirm mail has not been stolen.** Mail theft is a real problem. If you see in your morning email that a check arrived but it is not in your mailbox, you can report it to USPS and your local post office immediately.
+- **Confirm mail has not been stolen.** Mail theft is a real problem. If you see in your morning email that a check arrived but it is not in your mailbox, you can report it to USPS and your local post office right away.
 
 ---
 
@@ -560,7 +560,7 @@ From the app's home screen, tap "Track" or "Packages." You can type in a trackin
 
 ---
 
-**Frequently asked questions**
+**Often asked questions**
 
 **"I signed up but I am not getting emails."**
 Check your email's spam folder — the first Informed Delivery email sometimes lands there. Add usps@email.informeddelivery.usps.com to your contacts so future emails go to your inbox.
@@ -572,7 +572,7 @@ Make sure you type your address exactly as it appears in USPS records. You can v
 Include your full unit number when you enter your address (for example, "123 Main St Apt 4B"). Each resident at a building can have their own separate Informed Delivery account.
 
 **"Someone else already signed up for my address."**
-If you try to sign up and are told the address already has an account, contact USPS at 1-800-275-8777. This situation can occur if a previous resident signed up, or it may indicate someone has fraudulently signed up using your address.
+If you try to sign up and are told the address already has an account, contact USPS at 1-800-275-8777. This situation can occur if a previous resident signed up, or it may show someone has fraudulently signed up using your address.
 
 ---
 

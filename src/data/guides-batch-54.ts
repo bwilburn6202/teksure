@@ -30,7 +30,7 @@ It is a good habit to check that your backup is actually working from time to ti
       },
       {
         title: `Android — Connect to Google Drive`,
-        content: `Under "Back up to Google Drive," tap the dropdown and choose how often you want backups to happen: Daily, Weekly, or Monthly. Then tap Google Account and select the Google account where the backup will be stored. Tap Back Up to run your first backup immediately.`,
+        content: `Under "Back up to Google Drive," tap the dropdown and choose how often you want backups to happen: Daily, Weekly, or Monthly. Then tap Google Account and select the Google account where the backup will be stored. Tap Back Up to run your first backup right away.`,
         tip: `Quick Tip: Choose "Back up over Wi-Fi only" to avoid using your mobile data plan.`,
       },
       {
@@ -555,7 +555,7 @@ If you have an older Android phone, Google Photos may already be managing your c
     difficulty: `Beginner`,
     body: `Your iPhone contacts are important — they contain the phone numbers and email addresses of everyone you know. If your phone is lost, stolen, or breaks, having a backup means you can get all of those contacts back on a new phone without starting from scratch.
 
-The safest and most automatic way to back up iPhone contacts is through iCloud. When iCloud Contacts sync is turned on, every contact you save is automatically copied to Apple's cloud servers. If you ever need to restore your phone or set up a new one, signing in to your Apple account will bring all your contacts back immediately.
+The safest and most automatic way to back up iPhone contacts is through iCloud. When iCloud Contacts sync is turned on, every contact you save is automatically copied to Apple's cloud servers. If you ever need to restore your phone or set up a new one, signing in to your Apple account will bring all your contacts back right away.
 
 iCloud gives every Apple account 5 GB of free storage. Contacts take up very little space — a few thousand contacts might only use a megabyte or two — so unless your iCloud is completely full, backing up contacts will not cause any storage issues.
 
@@ -698,7 +698,7 @@ With Photopea you can crop and resize photos, remove or change a background, adj
 
 Photopea is free, but it does show small advertisements at the side of the screen. These are not intrusive and you can ignore them. There is a paid option to remove ads, but it is entirely optional.
 
-One important thing to know: Photopea does not automatically save your work. When you are done editing, you need to export your file using the File > Export As menu. If you close the browser tab without exporting, your changes will be lost. It is a good idea to save frequently by exporting as you go.
+One important thing to know: Photopea does not automatically save your work. When you are done editing, you need to export your file using the File > Export As menu. If you close the browser tab without exporting, your changes will be lost. It is a good idea to save often by exporting as you go.
 
 Photopea works on Mac, Windows, Chromebook, and iPad. On a phone, the screen may be too small to work comfortably, so a computer or tablet is recommended.`,
     steps: [

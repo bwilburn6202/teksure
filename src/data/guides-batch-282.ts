@@ -89,11 +89,11 @@ You do not need a paid app. Apps like RoboKiller and Hiya have free tiers, but t
       },
       {
         title: 'Add yourself to the National Do Not Call Registry',
-        content: 'Visit donotcall.gov and enter your phone number. Legitimate telemarketers are required to stop calling within 31 days. This does not stop scammers — they ignore the law — but it cuts the volume from real telemarketers significantly. The registration is permanent and free.',
+        content: 'Visit donotcall.gov and enter your phone number. Legitimate telemarketers are required to stop calling within 31 days. This does not stop scammers — they ignore the law — but it cuts the volume from real telemarketers a lot. The registration is permanent and free.',
       },
       {
         title: 'Never call back or press buttons during a spam call',
-        content: 'If a spam call gets through and you answer, hang up immediately. Do not press buttons even if the message says "press 9 to be removed." Pressing anything confirms your number is active and triggers more calls. Hang up. Likewise, never call back a missed call from an unfamiliar number — many spam scams rely on call-back charges.',
+        content: 'If a spam call gets through and you answer, hang up right away. Do not press buttons even if the message says "press 9 to be removed." Pressing anything confirms your number is active and triggers more calls. Hang up. Likewise, never call back a missed call from an unfamiliar number — many spam scams rely on call-back charges.',
         warning: 'Some scams imitate familiar local area codes ("neighbor spoofing"). If you do not recognize the number, let it go to voicemail.',
       },
     ],

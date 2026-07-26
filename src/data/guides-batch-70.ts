@@ -9,7 +9,7 @@ export const guidesBatch70: Guide[] = [
 
 The current price is around $83 per month for the ad-supported plan. That includes 90+ live channels: local ABC, CBS, NBC, and Fox affiliates (in most markets), plus cable staples like ESPN, CNN, HGTV, Bravo, Food Network, and Disney Channel. The subscription also bundles Disney+ and ESPN+ at no extra cost, giving your whole household access to Disney movies and live sports on ESPN+.
 
-Every Hulu + Live TV account comes with 75 hours of cloud DVR storage so you can record live games, news programs, or TV shows to watch later. You can upgrade to unlimited DVR storage for an extra fee if you record frequently.
+Every Hulu + Live TV account comes with 75 hours of cloud DVR storage so you can record live games, news programs, or TV shows to watch later. You can upgrade to unlimited DVR storage for an extra fee if you record often.
 
 To get started, go to hulu.com and sign up for the Hulu + Live TV plan. Download the Hulu app on your device — it works on Roku, Amazon Fire TV, Apple TV, Samsung and LG smart TVs, Xbox, PlayStation, iPhone, iPad, and Android phones, or you can watch in any web browser.
 
@@ -40,7 +40,7 @@ You can cancel any time from your Account settings — no cancellation fees. Com
       },
       {
         title: `Explore the Live TV Tab`,
-        content: `Tap the Live TV tab at the top or bottom of the screen. You will see a live channel guide. Browse by scrolling up and down through channels, or left and right to see upcoming shows. Tap any live program to start watching immediately.`,
+        content: `Tap the Live TV tab at the top or bottom of the screen. You will see a live channel guide. Browse by scrolling up and down through channels, or left and right to see upcoming shows. Tap any live program to start watching right away.`,
       },
       {
         title: `Record Shows to Your DVR`,
@@ -181,7 +181,7 @@ Signing up does not require a credit card for the free trial — you only need a
 
 Cancel anytime from your account settings — no contracts, no fees.
 
-Philo is best for people who are home a lot, love binge-watching entertainment channels, and want to cut their cable bill significantly without losing their favorite lifestyle and reality shows.`,
+Philo is best for people who are home a lot, love binge-watching entertainment channels, and want to cut their cable bill a lot without losing their favorite lifestyle and reality shows.`,
     category: `entertainment`,
     tags: [`philo`, `streaming`, `cable replacement`, `budget`, `live tv`],
     thumbnailEmoji: ``,
@@ -251,7 +251,7 @@ Compared to Eero: Deco is generally cheaper for the same coverage area. Eero has
       },
       {
         title: `Connect the Main Deco Unit to Your Modem`,
-        content: `Use the Ethernet cable included in the box to connect one port on the Deco unit to a LAN port on your modem. Plug the Deco into a power outlet. Wait about 60 seconds for it to power on — the LED light will change to indicate it is ready.`,
+        content: `Use the Ethernet cable included in the box to connect one port on the Deco unit to a LAN port on your modem. Plug the Deco into a power outlet. Wait about 60 seconds for it to power on — the LED light will change to show it is ready.`,
         tip: `Place the main Deco unit as close to your modem as possible. A short cable run reduces interference and keeps the connection stable.`,
       },
       {
@@ -289,7 +289,7 @@ Advanced Data Protection is a newer setting that adds end-to-end encryption to e
 
 A Recovery Contact is someone you trust — a family member or close friend — who can help you get back into your account if you forget your password. Set one up at Settings > your name > Sign-In & Security > Account Recovery.
 
-To check if your Apple ID email address has appeared in a known data breach, visit haveibeenpwned.com and enter your email. If it shows up, change your Apple ID password immediately.`,
+To check if your Apple ID email address has appeared in a known data breach, visit haveibeenpwned.com and enter your email. If it shows up, change your Apple ID password right away.`,
     category: `safety-guides`,
     tags: [`icloud`, `apple`, `security`, `account protection`, `two-factor`],
     thumbnailEmoji: ``,
@@ -391,7 +391,7 @@ The third is a pop-up alert in your web browser. You are browsing a website and 
 
 The fourth is a fake App Store or iTunes refund email. It claims there is a charge you did not make and offers a link to dispute it. Again — look at the real sender address, not the display name.
 
-If you clicked a link or called a number: change your Apple ID password immediately at appleid.apple.com. Enable two-factor authentication if it is not already on. Check Settings > your name > Sign-In & Security for any unfamiliar devices. Report phishing emails by forwarding them to reportphishing@apple.com. If you shared credit card or bank information with a scammer, call your bank right away.`,
+If you clicked a link or called a number: change your Apple ID password right away at appleid.apple.com. Enable two-factor authentication if it is not already on. Check Settings > your name > Sign-In & Security for any unfamiliar devices. Report phishing emails by forwarding them to reportphishing@apple.com. If you shared credit card or bank information with a scammer, call your bank right away.`,
     category: `safety-guides`,
     tags: [`apple scam`, `impersonation`, `phishing`, `fraud`, `security`],
     thumbnailEmoji: ``,
@@ -414,11 +414,11 @@ If you clicked a link or called a number: change your Apple ID password immediat
       },
       {
         title: `Secure Your Account If You Already Interacted With a Scam`,
-        content: `If you clicked a link, entered your Apple ID password, or shared a verification code with someone claiming to be Apple: go to appleid.apple.com immediately, sign in, and change your password. Remove any unrecognized devices from your account under Settings > your name. Report the phishing email by forwarding it to reportphishing@apple.com.`,
+        content: `If you clicked a link, entered your Apple ID password, or shared a verification code with someone claiming to be Apple: go to appleid.apple.com right away, sign in, and change your password. Remove any unrecognized devices from your account under Settings > your name. Report the phishing email by forwarding it to reportphishing@apple.com.`,
       },
       {
         title: `Contact Your Bank If You Shared Payment Details`,
-        content: `If you gave a credit card number, bank account number, or made a payment to the scammer, call your bank or card issuer immediately. Explain that you were the victim of a fraud call and ask them to dispute any charges and issue a new card number.`,
+        content: `If you gave a credit card number, bank account number, or made a payment to the scammer, call your bank or card issuer right away. Explain that you were the victim of a fraud call and ask them to dispute any charges and issue a new card number.`,
       },
     ],
   },
@@ -436,7 +436,7 @@ Here is the key: Microsoft does not proactively monitor your computer for viruse
 
 What to do when you see the popup: press Alt + F4 on your keyboard to force the browser closed. If the keyboard shortcut does not work, press Ctrl + Alt + Delete, click Task Manager, find your browser in the list, and click End Task. If the screen is completely frozen and nothing responds, hold the power button on your computer for five to seven seconds until it shuts off.
 
-If you already gave a scammer remote access to your computer or made a payment: contact your bank immediately if you paid by any method, run a full scan with Windows Defender (built into Windows — search for "Windows Security" in the Start menu), change your important passwords (email, banking, Apple ID or Microsoft account), and report the scam to the FTC at reportfraud.ftc.gov.`,
+If you already gave a scammer remote access to your computer or made a payment: contact your bank right away if you paid by any method, run a full scan with Windows Defender (built into Windows — search for "Windows Security" in the Start menu), change your important passwords (email, banking, Apple ID or Microsoft account), and report the scam to the FTC at reportfraud.ftc.gov.`,
     category: `safety-guides`,
     tags: [`microsoft scam`, `tech support scam`, `fraud`, `pop-up scam`, `fake support`],
     thumbnailEmoji: ``,
@@ -464,7 +464,7 @@ If you already gave a scammer remote access to your computer or made a payment: 
       },
       {
         title: `Take Action If You Already Gave Access or Paid`,
-        content: `If you let someone remote into your computer or paid them: call your bank immediately to dispute any charges and get a new card number. Change all important passwords — especially email, banking, and your Microsoft account. Report the scam to the FTC at reportfraud.ftc.gov. Consider asking a trusted local tech professional to check the computer for any software the scammer may have installed.`,
+        content: `If you let someone remote into your computer or paid them: call your bank right away to dispute any charges and get a new card number. Change all important passwords — especially email, banking, and your Microsoft account. Report the scam to the FTC at reportfraud.ftc.gov. Consider asking a trusted local tech professional to check the computer for any software the scammer may have installed.`,
       },
     ],
   },
@@ -484,7 +484,7 @@ Here is the law: in the United States, it is illegal for any legitimate sweepsta
 
 Legitimate prizes work like this: if you genuinely win a large prize, the organization mails you a check or arranges direct deposit. You will receive an IRS Form 1099 to report the prize income on your tax return. Taxes are paid when you file — not upfront to a stranger.
 
-What to do if you receive one of these notices: do not pay anything and do not provide your bank or credit card information. If the contact came by email, block the sender. If by mail, write "REFUSED — RETURN TO SENDER" on the envelope and put it back in the mail. Report the scam to the FTC at reportfraud.ftc.gov. If you already paid money, contact your bank immediately and report to your local police.`,
+What to do if you receive one of these notices: do not pay anything and do not provide your bank or credit card information. If the contact came by email, block the sender. If by mail, write "REFUSED — RETURN TO SENDER" on the envelope and put it back in the mail. Report the scam to the FTC at reportfraud.ftc.gov. If you already paid money, contact your bank right away and report to your local police.`,
     category: `safety-guides`,
     tags: [`lottery scam`, `prize scam`, `fraud`, `scam awareness`, `phishing`],
     thumbnailEmoji: ``,
@@ -494,7 +494,7 @@ What to do if you receive one of these notices: do not pay anything and do not p
     steps: [
       {
         title: `Identify the Classic Warning Signs`,
-        content: `Ask yourself three questions: Did you enter this lottery or sweepstakes? Are they asking you to pay any fees before claiming your prize? Are they asking for payment by gift card, wire transfer, or cryptocurrency? If the answer is yes to any of these, it is a scam — stop all contact immediately.`,
+        content: `Ask yourself three questions: Did you enter this lottery or sweepstakes? Are they asking you to pay any fees before claiming your prize? Are they asking for payment by gift card, wire transfer, or cryptocurrency? If the answer is yes to any of these, it is a scam — stop all contact right away.`,
         warning: `No legitimate prize ever requires upfront payment of any kind. This is a firm rule in the United States — charging fees to claim prizes is illegal for real contests.`,
       },
       {
@@ -511,7 +511,7 @@ What to do if you receive one of these notices: do not pay anything and do not p
       },
       {
         title: `Contact Your Bank If You Already Paid`,
-        content: `If you sent money — by any method — call your bank or credit card company immediately. Explain that you were the victim of a prize scam and ask about disputing or reversing the transaction. Act quickly — the sooner you call, the better the chance of recovering your money.`,
+        content: `If you sent money — by any method — call your bank or credit card company right away. Explain that you were the victim of a prize scam and ask about disputing or reversing the transaction. Act quickly — the sooner you call, the better the chance of recovering your money.`,
       },
     ],
   },
@@ -523,7 +523,7 @@ What to do if you receive one of these notices: do not pay anything and do not p
 
 The good news is that a handful of consistent habits make a very big difference in staying safe.
 
-Start by protecting your personal information. Do not share your home address, workplace, or daily routine with someone you have not met in person and do not yet know well. Use the in-app messaging system rather than immediately sharing your personal phone number — most dating apps have built-in messaging for this reason, and it keeps your number private until you are comfortable sharing it.
+Start by protecting your personal information. Do not share your home address, workplace, or daily routine with someone you have not met in person and do not yet know well. Use the in-app messaging system rather than right away sharing your personal phone number — most dating apps have built-in messaging for this reason, and it keeps your number private until you are comfortable sharing it.
 
 Video calling before meeting someone in person is one of the smartest safety checks you can do. Scammers create fake profiles using stolen photos of attractive strangers. They almost always refuse or avoid video calls because they cannot fake their appearance in real time. If someone is always "too busy" to video call or has constant technical problems, treat that as a serious warning sign.
 
@@ -556,7 +556,7 @@ Report suspicious profiles to the dating app's safety team — every major platf
       },
       {
         title: `Recognize Romance Scammer Warning Signs`,
-        content: `Watch for these patterns: they claim to love you within days or weeks; they are always traveling or working overseas; they have repeated financial emergencies and eventually ask you for money; they avoid video calls consistently. If you see these patterns, end contact immediately — no matter how much time you have invested.`,
+        content: `Watch for these patterns: they claim to love you within days or weeks; they are always traveling or working overseas; they have repeated financial emergencies and eventually ask you for money; they avoid video calls consistently. If you see these patterns, end contact right away — no matter how much time you have invested.`,
         tip: `If you are unsure, show a trusted friend or family member the conversation history. A second opinion from someone not emotionally involved can help you see the situation more clearly.`,
       },
       {
@@ -604,11 +604,11 @@ Key warning signs across all crypto scams: guaranteed returns (no investment gua
       },
       {
         title: `Watch for the "Withdrawal Fee" Trap`,
-        content: `A clear sign you are in a scam: when you try to withdraw your funds, you are told to pay a fee first — taxes, insurance, a verification charge. These fees do not unlock your money. They are pure additional theft. Stop paying immediately and report the scam.`,
+        content: `A clear sign you are in a scam: when you try to withdraw your funds, you are told to pay a fee first — taxes, insurance, a verification charge. These fees do not unlock your money. They are pure additional theft. Stop paying right away and report the scam.`,
       },
       {
         title: `Report the Scam and Contact Your Bank`,
-        content: `Report crypto fraud to the FTC at reportfraud.ftc.gov and to the FBI's Internet Crime Complaint Center at ic3.gov. If you paid through a bank transfer or credit card, contact your bank immediately to report fraud. If you paid with actual cryptocurrency, recovery is very difficult — but reporting still matters to help stop the scammers.`,
+        content: `Report crypto fraud to the FTC at reportfraud.ftc.gov and to the FBI's Internet Crime Complaint Center at ic3.gov. If you paid through a bank transfer or credit card, contact your bank right away to report fraud. If you paid with actual cryptocurrency, recovery is very difficult — but reporting still matters to help stop the scammers.`,
       },
     ],
   },
@@ -618,7 +618,7 @@ Key warning signs across all crypto scams: guaranteed returns (no investment gua
     excerpt: `Medical alert systems let you call for help with a button press — some also detect falls automatically. Here's how the options compare.`,
     body: `A medical alert system is a device that lets you call for emergency help quickly — often when you cannot reach a phone. These systems are especially valuable for older adults who live alone, have had falls in the past, or have health conditions that could lead to a sudden emergency.
 
-The core of every medical alert system is a button connected to a 24/7 monitoring center staffed by trained operators. When you press the button, you are immediately connected to a live person who can assess the situation and dispatch emergency services — ambulance, fire, or police — to your location, even if you cannot speak clearly.
+The core of every medical alert system is a button connected to a 24/7 monitoring center staffed by trained operators. When you press the button, you are right away connected to a live person who can assess the situation and dispatch emergency services — ambulance, fire, or police — to your location, even if you cannot speak clearly.
 
 There are three main types to choose from.
 
@@ -649,7 +649,7 @@ Questions to ask before buying: Does it work in the shower? Is fall detection in
       {
         title: `Consider Fall Detection`,
         content: `Fall detection automatically calls for help when a hard fall is detected, without the person having to press a button. This is especially valuable for people who have had falls before or who live alone. Ask whether the system you are considering includes fall detection, and whether it adds to the monthly cost.`,
-        tip: `Fall detection uses motion sensors and accelerometers to detect the pattern of a fall. It is not perfect and may occasionally trigger accidentally, but the added protection for real falls is worth the occasional false alert.`,
+        tip: `Fall detection uses motion sensors and accelerometers to detect the pattern of a fall. It is not perfect and may sometimes trigger accidentally, but the added protection for real falls is worth the occasional false alert.`,
       },
       {
         title: `Confirm It Works in the Shower`,
@@ -845,7 +845,7 @@ If you lose your IP PIN before filing: log in to your IRS Online Account at IRS.
       },
       {
         title: `Request Your IP PIN`,
-        content: `After logging in, navigate to the IP PIN section of your account. Click to request your IP PIN. The IRS will assign you a six-digit number immediately. Write it down and store it securely — you will need it when you file your taxes.`,
+        content: `After logging in, navigate to the IP PIN section of your account. Click to request your IP PIN. The IRS will assign you a six-digit number right away. Write it down and store it securely — you will need it when you file your taxes.`,
         warning: `Your IP PIN is confidential. Do not share it with anyone except your authorized tax preparer. The IRS will never call or email you to ask for your IP PIN.`,
       },
       {
@@ -868,7 +868,7 @@ Building a retirement budget starts with understanding your income. List every s
 
 Next, list your expenses across the main categories. Housing covers your mortgage or rent, property taxes, homeowners or renters insurance, and regular maintenance. Healthcare deserves special attention — Medicare premiums (Part B is deducted from Social Security), supplemental or Medigap insurance, prescription drug costs, and out-of-pocket copays and deductibles. Estimates suggest healthcare costs grow at roughly twice the general inflation rate, so build in room for increases. Food, transportation (gas, insurance, vehicle maintenance), utilities, and personal spending round out the core categories.
 
-The 4% rule is a commonly referenced starting framework: if you withdraw approximately 4% of your retirement savings in year one and adjust for inflation each year after, your savings have a reasonable probability of lasting 30 years. This is a guideline, not a guarantee — adjust based on your specific situation and speak with a financial planner for personalized guidance.
+The 4% rule is a commonly referenced starting framework: if you withdraw about 4% of your retirement savings in year one and adjust for inflation each year after, your savings have a reasonable probability of lasting 30 years. This is a guideline, not a guarantee — adjust based on your specific situation and speak with a financial planner for personalized guidance.
 
 Free tools to help: the AARP Retirement Calculator at aarp.org helps estimate how long your savings will last. The Social Security Administration's Benefits Calculator at ssa.gov lets you check exactly what your benefit will be at different claiming ages.
 
@@ -891,7 +891,7 @@ Build a budget that includes occasional large but predictable expenses: car repl
       {
         title: `Identify and Categorize Your Expenses`,
         content: `Go through the last two to three months of bank and credit card statements. Group expenses into categories: Housing, Healthcare, Food, Transportation, Utilities, Entertainment, and Personal. This gives you an accurate picture of what you are actually spending — which is often different from what people estimate.`,
-        tip: `Healthcare is often the most underestimated category for retirees. Include Medicare premiums, prescription costs, dental, vision, and hearing care — these add up significantly.`,
+        tip: `Healthcare is often the most underestimated category for retirees. Include Medicare premiums, prescription costs, dental, vision, and hearing care — these add up a lot.`,
       },
       {
         title: `Choose a Budgeting Tool`,
@@ -913,11 +913,11 @@ Build a budget that includes occasional large but predictable expenses: car repl
     excerpt: `Too many accounts, old policies, and forgotten subscriptions create unnecessary stress — here's how to streamline your finances in later life.`,
     body: `Over decades of working, saving, and managing life's expenses, it is common to accumulate financial complexity: multiple bank accounts at different institutions, several old retirement accounts from past jobs, forgotten subscriptions, insurance policies you may not need, and important documents scattered in different places.
 
-This complexity creates real problems. It makes it harder to track your finances clearly. It creates more opportunities for missed payments or unauthorized charges to go unnoticed. And if something happens to you, it makes it significantly harder for family members to manage your affairs.
+This complexity creates real problems. It makes it harder to track your finances clearly. It creates more opportunities for missed payments or unauthorized charges to go unnoticed. And if something happens to you, it makes it a lot harder for family members to manage your affairs.
 
 Simplifying your finances is one of the most practical steps you can take for your own peace of mind and for the people who care about you.
 
-Start with bank accounts. For most people in retirement, two accounts are sufficient: one checking account for day-to-day spending and bill paying, and one savings account for your emergency fund and large planned expenses. If you have accounts at multiple banks that you opened over the years, close the ones you are not actively using. Consolidating to one bank or credit union makes monitoring much easier.
+Start with bank accounts. For most people in retirement, two accounts are enough: one checking account for day-to-day spending and bill paying, and one savings account for your emergency fund and large planned expenses. If you have accounts at multiple banks that you opened over the years, close the ones you are not actively using. Consolidating to one bank or credit union makes monitoring much easier.
 
 Next, consolidate retirement accounts. If you have 401(k) accounts at former employers, consider rolling them into a single IRA. This makes it far easier to manage required minimum distributions, track investment performance, and name beneficiaries. Contact the new IRA institution — Fidelity, Vanguard, or Schwab are all reputable options — and they will walk you through the rollover process.
 
@@ -969,7 +969,7 @@ Lotsa Helping Hands (lotsa.com) was built specifically to solve this problem. It
 
 Here is how it works. One person — usually the primary caregiver or a close family member — creates a free care community on Lotsa Helping Hands. They name the community after the person being helped and invite family, friends, neighbors, and anyone else who has offered to pitch in. The invitation goes out by email with a link to join.
 
-The coordinator then posts upcoming needs to the calendar: "Dinner needed Tuesday, March 15," "Ride to oncology appointment Thursday 9 AM, return expected by noon," "Grocery pickup needed this Saturday morning." Each posted task shows exactly what is needed and when. Helpers log in, see the open tasks, and sign up for the ones they can handle. The coordinator can immediately see who has claimed each task.
+The coordinator then posts upcoming needs to the calendar: "Dinner needed Tuesday, March 15," "Ride to oncology appointment Thursday 9 AM, return expected by noon," "Grocery pickup needed this Saturday morning." Each posted task shows exactly what is needed and when. Helpers log in, see the open tasks, and sign up for the ones they can handle. The coordinator can right away see who has claimed each task.
 
 The platform sends automatic reminders to helpers before their task — reducing no-shows without the coordinator having to follow up personally. If a helper cannot make it, they can post to the message board asking someone to swap.
 
@@ -993,7 +993,7 @@ For a narrower use case — coordinating meals specifically — MealTrain.com is
       },
       {
         title: `Invite Family and Friends`,
-        content: `On the community page, go to the Invite Members section. Enter the email addresses of everyone who has offered to help — family members, neighbors, friends from church or community groups. Each person will receive an email with a link to join the care community. They create a free account and can immediately see the calendar.`,
+        content: `On the community page, go to the Invite Members section. Enter the email addresses of everyone who has offered to help — family members, neighbors, friends from church or community groups. Each person will receive an email with a link to join the care community. They create a free account and can right away see the calendar.`,
         tip: `Send a personal text or message to each person alongside the Lotsa email invite, since automated emails sometimes end up in spam folders.`,
       },
       {

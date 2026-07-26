@@ -131,7 +131,7 @@ This is a completely free service — no credit card, no subscription, no string
       },
       {
         title: 'Verify Your Identity',
-        content: 'USPS will ask identity verification questions — questions about your address history and personal background that only you would know. Answer each question carefully. If you pass, you are enrolled immediately.',
+        content: 'USPS will ask identity verification questions — questions about your address history and personal background that only you would know. Answer each question carefully. If you pass, you are enrolled right away.',
         tip: 'If online verification does not work, USPS will mail you a physical code. Enter that code at USPS.com within 30 days to complete enrollment.',
       },
       {
@@ -184,7 +184,7 @@ This feature works the same way whether you are using Gmail on a computer, iPhon
       },
       {
         title: 'Cancel or Edit a Scheduled Email',
-        content: 'Open the Scheduled folder and tap the email. On the email preview, tap "Cancel send" to pull it back into drafts. Make your changes, then schedule it again or send it immediately.',
+        content: 'Open the Scheduled folder and tap the email. On the email preview, tap "Cancel send" to pull it back into drafts. Make your changes, then schedule it again or send it right away.',
         warning: 'If you miss the scheduled send time — for example if your phone is off — Gmail will send the email as soon as it can reach the internet.',
       },
     ],
@@ -275,7 +275,7 @@ Copilot is included for free with Windows 11 and works best with a Microsoft acc
       {
         title: 'Choose Between Chat Modes',
         content: 'At the top of the Copilot panel, look for conversation style options: "More Creative," "More Balanced," or "More Precise." For factual questions, choose "More Precise." For brainstorming or creative writing, choose "More Creative."',
-        warning: 'Copilot can occasionally give incorrect information — especially for medical, legal, or financial questions. Always verify important answers with an official source.',
+        warning: 'Copilot can sometimes give incorrect information — especially for medical, legal, or financial questions. Always verify important answers with an official source.',
       },
     ],
   },
@@ -291,7 +291,7 @@ Copilot is included for free with Windows 11 and works best with a Microsoft acc
     difficulty: 'Beginner',
     body: `ChatGPT is an AI assistant made by a company called OpenAI. You type a question or request in plain English, and it responds with a detailed, conversational answer. You do not need any technical knowledge to use it — if you can type a text message, you can use ChatGPT.
 
-The free version of ChatGPT is available at chat.openai.com. You create a free account with your email address and start chatting immediately. There is also a ChatGPT app for iPhone and Android.
+The free version of ChatGPT is available at chat.openai.com. You create a free account with your email address and start chatting right away. There is also a ChatGPT app for iPhone and Android.
 
 ChatGPT is genuinely useful for a wide range of everyday tasks that used to require a lot of research or asking someone for help. You can ask it to explain a confusing Medicare letter, write a complaint email to a company, give you a simple recipe with ingredients you already have, explain what a medical term means, or help you plan a trip.
 
@@ -344,7 +344,7 @@ Unlike Netflix or Hulu, Sling TV primarily streams live channels on a schedule �
 
 You can watch Sling TV on almost any device: a streaming stick (Roku, Fire TV Stick, Chromecast), a smart TV with the Sling app, an iPhone or Android phone, or a computer browser. All you need is a decent internet connection — Sling recommends at least 5 Mbps for HD streaming.
 
-Sling does not require a technician visit or equipment rental. You sign up online, pay with a credit card, and start watching within minutes. There is frequently a free trial offer available at sling.com.`,
+Sling does not require a technician visit or equipment rental. You sign up online, pay with a credit card, and start watching within minutes. There is often a free trial offer available at sling.com.`,
     steps: [
       {
         title: 'Sign Up for Sling TV',
@@ -389,7 +389,7 @@ Here is a common use case: you snap a photo of a restaurant menu and later you w
 
 Another popular use: photographing a business card. Tap the phone number in the photo and Live Text recognizes it as a phone number you can call directly. Tap an email address and it opens a new email automatically.
 
-Live Text also works for translating foreign language text. After selecting text from a photo, tap "Translate" in the pop-up menu and iOS translates the text immediately.
+Live Text also works for translating foreign language text. After selecting text from a photo, tap "Translate" in the pop-up menu and iOS translates the text right away.
 
 Live Text does not require an internet connection — the text recognition happens on your device. It is available in the Camera app, Photos app, Safari, and many third-party apps that use the iOS camera.`,
     steps: [
@@ -545,7 +545,7 @@ You can also move the entire taskbar (including the Start button) back to the le
       },
       {
         title: 'Move the Start Button to the Left Corner',
-        content: 'Right-click on an empty area of the taskbar and select "Taskbar settings." Scroll down to "Taskbar behaviors." Find "Taskbar alignment" and change the dropdown from "Center" to "Left." The Start button and all taskbar icons immediately shift to the left corner.',
+        content: 'Right-click on an empty area of the taskbar and select "Taskbar settings." Scroll down to "Taskbar behaviors." Find "Taskbar alignment" and change the dropdown from "Center" to "Left." The Start button and all taskbar icons right away shift to the left corner.',
       },
       {
         title: 'Turn Off Recommended Files (Optional)',
@@ -628,7 +628,7 @@ Many families buy an Apple Watch specifically for these features. A parent or gr
       {
         title: 'Enable Fall Detection on Apple Watch',
         content: 'On your iPhone, open the Watch app. Tap "Emergency SOS." Toggle on "Fall Detection." The watch now monitors your movements and will respond to hard falls.',
-        warning: `Fall Detection may activate during intense exercise like skiing or cycling. If you get a false alert, tap "I'm OK" immediately to cancel the emergency call.`,
+        warning: `Fall Detection may activate during intense exercise like skiing or cycling. If you get a false alert, tap "I'm OK" right away to cancel the emergency call.`,
       },
       {
         title: 'Test the Emergency SOS Button',
@@ -730,7 +730,7 @@ Siri works when your iPhone is connected to the internet (for complex questions 
       },
       {
         title: 'Set Timers and Reminders',
-        content: 'Say "Hey Siri, set a timer for 10 minutes" — a timer starts immediately. Say "Hey Siri, remind me to take my blood pressure medicine at 8 AM" — a reminder is set. Both work entirely without looking at your phone.',
+        content: 'Say "Hey Siri, set a timer for 10 minutes" — a timer starts right away. Say "Hey Siri, remind me to take my blood pressure medicine at 8 AM" — a reminder is set. Both work entirely without looking at your phone.',
       },
       {
         title: 'Ask Questions and Get Information',
@@ -828,7 +828,7 @@ Gmail filters let you automatically sort, label, or delete emails from specific 
       },
       {
         title: 'Check Your Spam Folder Monthly',
-        content: 'Click "Spam" in the left sidebar of Gmail. Scan through for any legitimate emails that ended up there by mistake — this happens occasionally. If you find a real email in spam, open it and click "Not spam" to move it back to your inbox and teach Gmail it is legitimate.',
+        content: 'Click "Spam" in the left sidebar of Gmail. Scan through for any legitimate emails that ended up there by mistake — this happens sometimes. If you find a real email in spam, open it and click "Not spam" to move it back to your inbox and teach Gmail it is legitimate.',
       },
     ],
   },
@@ -850,7 +850,7 @@ One of the most useful Outlook features for managing email volume is the "Focuse
 
 Email folders help keep your inbox manageable over time. Unlike just deleting emails, saving important messages to a named folder means you can search for them later. Good folder names to start with: Family, Medical, Financial, Home, Receipts.
 
-The "Recall This Message" feature is a lifesaver if you send an email to the wrong person or realize immediately after sending that you made a mistake. It works only if the recipient has not yet opened the email, and only within the same organization (Outlook to Outlook). For personal email, it may not always work, but it is worth trying in an emergency.`,
+The "Recall This Message" feature is a lifesaver if you send an email to the wrong person or realize right away after sending that you made a mistake. It works only if the recipient has not yet opened the email, and only within the same organization (Outlook to Outlook). For personal email, it may not always work, but it is worth trying in an emergency.`,
     steps: [
       {
         title: 'Enable Focused Inbox',
@@ -860,12 +860,12 @@ The "Recall This Message" feature is a lifesaver if you send an email to the wro
       {
         title: 'Create Email Folders',
         content: 'In the left sidebar of Outlook, right-click on "Inbox" and select "New Folder." Type a name (such as "Medical Records" or "Family"). Press Enter. To move an email to a folder, right-click the email → "Move" → select your folder. You can also drag and drop emails.',
-        tip: 'Add a "To Respond" folder for emails that need a reply but not immediately — move them there so they do not get lost in your inbox.',
+        tip: 'Add a "To Respond" folder for emails that need a reply but not right away — move them there so they do not get lost in your inbox.',
       },
       {
         title: 'Recall an Email You Sent by Mistake',
         content: 'In the left sidebar, click "Sent Items." Double-click the email you want to recall to open it in its own window. Click the three-dot menu or "Actions" in the Message tab. Select "Recall This Message." Choose "Delete unread copies" and click OK.',
-        warning: 'Recall only works if the recipient has not yet read the email. Once they open it, the recall fails. Act immediately — within a minute or two of sending.',
+        warning: 'Recall only works if the recipient has not yet read the email. Once they open it, the recall fails. Act right away — within a minute or two of sending.',
       },
       {
         title: 'Set Up an Out-of-Office Auto-Reply',

@@ -125,7 +125,7 @@ After completing your return, review every number carefully. Choose direct depos
 
 File early to get your refund sooner and reduce the risk of tax identity theft, where someone files a fraudulent return using your Social Security number before you do.`,
     steps: [
-      { title: 'Go to irs.gov/freefile', content: `Open your web browser and go to irs.gov/freefile. Do not go to a tax company's website directly — always start from the IRS site to ensure you get the truly free version.` },
+      { title: 'Go to irs.gov/freefile', content: `Open your web browser and go to irs.gov/freefile. Do not go to a tax company's website directly — always start from the IRS site to make sure you get the truly free version.` },
       { title: 'Choose your filing option', content: 'Select "Guided Tax Software" if your AGI is $84,000 or less. Select "Free File Fillable Forms" if your income is higher or you are comfortable with tax forms.' },
       { title: 'Gather your documents', content: `Have ready: your W-2 forms, any 1099 forms, Social Security numbers for you and dependents, bank routing and account numbers, and last year's AGI.` },
       { title: 'Complete the interview questions', content: 'The software asks about your filing status, income, deductions, and credits step by step. Answer each question and the software handles the math and form selection.' },
@@ -173,7 +173,7 @@ If you are going on vacation, Informed Delivery helps you monitor your mail from
     thumbnailEmoji: '',
     publishedAt: '2026-04-15',
     difficulty: 'Intermediate',
-    body: `Healthcare.gov is the official website for the Health Insurance Marketplace created under the Affordable Care Act. If you do not get health insurance through your employer, Medicare, or Medicaid, the Marketplace is where you shop for and enroll in a plan. Many people qualify for financial help (subsidies) that significantly lower the monthly cost.
+    body: `Healthcare.gov is the official website for the Health Insurance Marketplace created under the Affordable Care Act. If you do not get health insurance through your employer, Medicare, or Medicaid, the Marketplace is where you shop for and enroll in a plan. Many people qualify for financial help (subsidies) that a lot lower the monthly cost.
 
 Open Enrollment typically runs from November 1 through January 15 each year. You can enroll at other times if you have a qualifying life event such as losing coverage, getting married, having a baby, or moving.
 
@@ -183,7 +183,7 @@ After completing the application, you see a list of available plans organized in
 
 Compare plans carefully: monthly premium, deductible, copays, prescription coverage, and whether your doctors are in the network. Your coverage does not start until you pay your first premium.
 
-If you need help choosing a plan, healthcare.gov has free in-person assistance. Click "Find Local Help" to locate a trained navigator near you.`,
+If you need help choosing a plan, healthcare.gov has free in-person help. Click "Find Local Help" to locate a trained navigator near you.`,
     steps: [
       { title: 'Go to healthcare.gov', content: 'Open your web browser and go to healthcare.gov. Click "Get Coverage" or "Apply Now" to begin enrollment.' },
       { title: 'Create your Marketplace account', content: 'Click "Create Account" and enter your name, email address, and a strong password. Verify your email by clicking the confirmation link.' },
@@ -216,7 +216,7 @@ If you are already registered, most state portals have a "Check Registration Sta
 
 Registration deadlines vary by state — some require you to register 30 days before an election, while others allow same-day registration. Check your state's deadline on vote.gov.
 
-Even if you think you are registered, check before every major election. Voter rolls are occasionally purged, especially if you have not voted recently or if you moved. A two-minute check can save you a problem on Election Day.`,
+Even if you think you are registered, check before every major election. Voter rolls are sometimes purged, especially if you have not voted recently or if you moved. A two-minute check can save you a problem on Election Day.`,
     steps: [
       { title: 'Go to vote.gov', content: `Open your web browser and go to vote.gov. This is the official federal website that connects you to your state's voter registration system.` },
       { title: 'Select your state', content: `Choose your state from the dropdown menu. You will be directed to your state's official online voter registration portal.` },
@@ -268,9 +268,9 @@ Renew your passport at least 6 months before it expires. Many countries require 
     thumbnailEmoji: '',
     publishedAt: '2026-04-15',
     difficulty: 'Intermediate',
-    body: `SNAP (Supplemental Nutrition Assistance Program) helps millions of Americans afford groceries. Benefits are loaded monthly onto an EBT card that works like a debit card at grocery stores, farmers markets, and some online retailers like Amazon and Walmart.
+    body: `SNAP (Supplemental Nutrition Help Program) helps millions of Americans afford groceries. Benefits are loaded monthly onto an EBT card that works like a debit card at grocery stores, farmers markets, and some online retailers like Amazon and Walmart.
 
-Eligibility is based on household size and income. In 2026, a single person earning up to approximately $1,580 per month may qualify. A household of four can earn up to about $3,250 per month. Even if you are slightly over the limits, you may still qualify based on expenses like rent, utilities, and medical costs.
+Eligibility is based on household size and income. In 2026, a single person earning up to about $1,580 per month may qualify. A household of four can earn up to about $3,250 per month. Even if you are slightly over the limits, you may still qualify based on expenses like rent, utilities, and medical costs.
 
 SNAP is administered by your state, so the application varies. Go to fns.usda.gov/snap and click "SNAP State Directory" to find your online application portal. Many states allow you to apply entirely online.
 
@@ -328,18 +328,18 @@ For help navigating the website, call the VA's helpline at 1-800-827-1000 or use
     thumbnailEmoji: '',
     publishedAt: '2026-04-15',
     difficulty: 'Beginner',
-    body: `The FEMA app is a free mobile application from the Federal Emergency Management Agency that gives you real-time weather alerts, emergency notifications, and safety information for your area. It also helps you prepare for emergencies, find shelters during disasters, and apply for disaster assistance.
+    body: `The FEMA app is a free mobile application from the Federal Emergency Management Agency that gives you real-time weather alerts, emergency notifications, and safety information for your area. It also helps you prepare for emergencies, find shelters during disasters, and apply for disaster help.
 
 The app works on both iPhone and Android and does not require an account. Download it from the App Store or Google Play Store — search for "FEMA" and look for the app published by the Department of Homeland Security.
 
-When you first open the app, allow notifications and location access. Notifications deliver emergency alerts, and your location ensures you get area-specific information. You can set alerts for up to five locations, including your home, workplace, and family members' cities.
+When you first open the app, allow notifications and location access. Notifications deliver emergency alerts, and your location makes sure you get area-specific information. You can set alerts for up to five locations, including your home, workplace, and family members' cities.
 
 The app provides real-time alerts for severe weather, floods, earthquakes, hurricanes, and other emergencies. During a disaster, the shelter finder shows nearby open shelters on a map with addresses and available services. The preparedness section includes checklists for building an emergency kit, making a family communication plan, and preparing for specific types of disasters.
 
 Set up alerts for the locations where your family members live so you know about emergencies affecting your loved ones even if they forget to call.`,
     steps: [
       { title: 'Download the FEMA app', content: 'Open the App Store (iPhone) or Google Play Store (Android). Search for "FEMA" and download the official app published by the Department of Homeland Security.' },
-      { title: 'Allow notifications and location', content: 'When the app asks for permissions, tap "Allow" for both notifications and location access. This ensures you receive relevant emergency alerts for your area.' },
+      { title: 'Allow notifications and location', content: 'When the app asks for permissions, tap "Allow" for both notifications and location access. This makes sure you receive relevant emergency alerts for your area.' },
       { title: 'Set up alert locations', content: `In the Alerts section, add up to five locations — your home, workplace, and family members' cities.` },
       { title: 'Explore preparedness resources', content: 'Tap the "Prepare" tab for checklists on emergency supplies, family communication plans, and disaster-specific preparation.' },
       { title: 'Know how to find shelters', content: 'During a disaster, open the Shelters tab to see nearby open shelters on a map with addresses, directions, and services.' },
@@ -414,7 +414,7 @@ Many state DMV websites have a document checker tool — enter what documents yo
     thumbnailEmoji: '',
     publishedAt: '2026-04-15',
     difficulty: 'Intermediate',
-    body: `If you lost your job through no fault of your own (layoff, company closure, reduction in hours), you may be eligible for unemployment insurance. The program provides temporary financial assistance while you look for new work. It is run by each state, so application processes and benefit amounts vary.
+    body: `If you lost your job through no fault of your own (layoff, company closure, reduction in hours), you may be eligible for unemployment insurance. The program provides temporary financial help while you look for new work. It is run by each state, so application processes and benefit amounts vary.
 
 You may qualify if: you lost your job through no fault of your own, you worked for a certain period and earned a minimum amount (your state sets the requirements), and you are able and actively looking for work.
 
@@ -534,7 +534,7 @@ Important safety note: Zelle transfers are instant and cannot be reversed. Only 
     difficulty: 'Beginner',
     body: `Venmo is a mobile payment app owned by PayPal for sending and receiving money from friends and family. It is free for personal payments from your bank account or Venmo balance. Download Venmo from the App Store or Google Play Store, create an account, and link a bank account or debit card.
 
-Critical privacy setting: By default, Venmo makes your transactions visible to friends and sometimes the public. Change this immediately. Go to Settings, then Privacy, and change your default setting to "Private." This hides transactions from everyone except you and the recipient.
+Critical privacy setting: By default, Venmo makes your transactions visible to friends and sometimes the public. Change this right away. Go to Settings, then Privacy, and change your default setting to "Private." This hides transactions from everyone except you and the recipient.
 
 To send money, tap "Pay or Request," search for the person by username, phone, or email, enter the amount and a note, and tap "Pay." Use bank account or debit card to avoid fees (credit cards charge 3%).
 
@@ -595,7 +595,7 @@ There are two ways to set it up. Through the biller's website: log in to your el
 
 Good candidates for auto-pay: rent or mortgage, utilities, phone and internet, insurance, streaming subscriptions, and credit card minimum payments. Even with auto-pay, review your bills and statements each month for errors, price increases, or fraudulent charges.
 
-Be cautious with free trials requiring a credit card — companies often start charging when the trial ends. Set a calendar reminder to cancel before conversion. If using auto-pay with a bank account, ensure you always have enough to cover the payment. Insufficient funds can result in overdraft fees from your bank and returned-payment fees from the biller.`,
+Be cautious with free trials requiring a credit card — companies often start charging when the trial ends. Set a calendar reminder to cancel before conversion. If using auto-pay with a bank account, make sure you always have enough to cover the payment. Insufficient funds can result in overdraft fees from your bank and returned-payment fees from the biller.`,
     steps: [
       { title: 'Choose bills for auto-pay', content: 'Start with fixed-amount bills (insurance, subscriptions, phone). Then consider variable bills like utilities where you can auto-pay the full balance or minimum.' },
       { title: `Log in to the biller's website`, content: `Go to the company's website or app, sign in, and find "Payment Settings," "Auto-Pay," or "Automatic Payments."` },
@@ -649,7 +649,7 @@ If you receive a text claiming to be from your bank with a link to click — do 
 
 Create an account at paypal.com — click "Sign Up," choose "Personal Account," enter your info, and verify your email. Link a bank account in your PayPal Wallet — PayPal verifies it with two small deposits you confirm. Bank payments have no fees for personal transactions.
 
-At checkout online, look for the PayPal button. Click it, sign in, and confirm. PayPal's buyer protection means if an item does not arrive or is significantly different from described, PayPal investigates and may refund your money — protection for eligible purchases within 180 days.
+At checkout online, look for the PayPal button. Click it, sign in, and confirm. PayPal's buyer protection means if an item does not arrive or is a lot different from described, PayPal investigates and may refund your money — protection for eligible purchases within 180 days.
 
 Enable two-factor authentication in Settings → Security → 2-Step Verification. Never send money to strangers outside normal checkout. Never click links in emails claiming to be PayPal — always type paypal.com directly. Do not keep a large balance in PayPal; link a bank account and let PayPal pull when needed to minimize exposure if compromised.`,
     steps: [
@@ -731,7 +731,7 @@ Turn on push notifications in the app settings for instant alerts about deposits
 
 Check your account at least weekly — with your bank's app, this takes under two minutes. Watch for: charges from unfamiliar merchants (especially small amounts), duplicate charges, unauthorized recurring payments, and transactions in places you have not visited.
 
-If you find suspicious activity: contact your bank immediately by calling the number on the back of your card. They will freeze the card, issue a new one, investigate, and reverse confirmed fraud. Federal law limits your liability to $50 for credit cards and $50-$500 for debit cards depending on how quickly you report.
+If you find suspicious activity: contact your bank right away by calling the number on the back of your card. They will freeze the card, issue a new one, investigate, and reverse confirmed fraud. Federal law limits your liability to $50 for credit cards and $50-$500 for debit cards depending on how quickly you report.
 
 After reporting, change your online banking password and passwords for connected accounts. Monitor closely for the next few weeks as additional unauthorized charges may appear.
 
@@ -1082,7 +1082,7 @@ Opt out of human review by toggling off "Help Improve Alexa" and "Use of Message
 
 Every Echo has a microphone mute button (red, with a microphone icon). When muted, the device physically disconnects the microphone — a red light confirms it is muted. Use this during private conversations or when sleeping.
 
-Review Alexa skills permissions under More → Skills & Games → Your Skills. Tap any skill to manage its access to your location, address, or contacts. Check your privacy settings at least once a year as Amazon occasionally adds new data features.`,
+Review Alexa skills permissions under More → Skills & Games → Your Skills. Tap any skill to manage its access to your location, address, or contacts. Check your privacy settings at least once a year as Amazon sometimes adds new data features.`,
     steps: [
       { title: 'Open Alexa Privacy settings', content: 'Alexa app → More → Settings → Alexa Privacy. This is the hub for all privacy controls.' },
       { title: 'Delete voice history', content: 'Tap "Review Voice History." Delete individual recordings or all of them at once.' },
@@ -1138,7 +1138,7 @@ Download the camera's app, create an account, tap "Add Device," and select your 
 
 Configure motion detection zones in the app to focus on areas that matter (doorways, walkways) and exclude areas that cause false alerts (roads, trees). Check local recording laws — video is generally permitted on your property, but audio rules may differ.
 
-A visible camera also acts as a deterrent. For outdoor use, ensure the camera is weather-rated (IP65 or IP67).`,
+A visible camera also acts as a deterrent. For outdoor use, make sure the camera is weather-rated (IP65 or IP67).`,
     steps: [
       { title: 'Choose type and location', content: 'Decide indoor or outdoor, wired or battery. Choose a spot with a good vantage point and WiFi signal.' },
       { title: 'Download the app', content: `Get the camera brand's app, create an account, tap "Add Device," and select your model.` },
@@ -1249,7 +1249,7 @@ Great starter podcasts include NPR's "Up First" (daily news in 10 minutes), "Stu
 
 Download the Libby app from the App Store or Google Play Store. Open it and search for your library. You will need your library card number (found on the back of your card) and your library PIN (often the last four digits of your phone number — check with your library if you are unsure).
 
-Once signed in, browse your library's digital collection. Search for a specific title or browse by genre, bestsellers, or what is available right now. When you find something, tap "Borrow" to check it out immediately, or "Place Hold" if someone else has it checked out (you will be notified when it is available).
+Once signed in, browse your library's digital collection. Search for a specific title or browse by genre, bestsellers, or what is available right now. When you find something, tap "Borrow" to check it out right away, or "Place Hold" if someone else has it checked out (you will be notified when it is available).
 
 For audiobooks, tap "Open in Libby" to start listening right in the app. For ebooks, you can read in Libby or send to your Kindle. Libby remembers your place across devices — start on your phone and pick up on your tablet.
 
@@ -1916,7 +1916,7 @@ Google Fit is available on Android (download from Play Store if not pre-installe
 
 Both apps can connect to third-party health devices. If you have a fitness tracker, smart scale, blood pressure monitor, or sleep tracker, check if it connects to Apple Health or Google Fit. Go to the app's settings and look for "Connected Apps" or "Connected Devices."
 
-Set a daily step goal to stay motivated. Health organizations recommend 7,000-10,000 steps per day, but any increase from your current level is beneficial. The apps show your progress throughout the day.
+Set a daily step goal to stay motivated. Health organizations recommend 7,000-10,000 steps per day, but any increase from your current level is helpful. The apps show your progress throughout the day.
 
 Your health data is private and stored on your device. You control who can see it and which apps can access it. You can also share specific health data with family members or your doctor if you choose.`,
     steps: [
@@ -2166,7 +2166,7 @@ Set up a screen lock for security: choose PIN, pattern, or password, and set up 
 
 Once at the home screen, open the Google Play Store and download your essential apps: your bank's app, WhatsApp, social media, and anything else you use. Sign in to each with your existing accounts.
 
-Check for software updates: Settings → System → Software Update. Installing the latest update ensures you have the newest security patches and features.`,
+Check for software updates: Settings → System → Software Update. Installing the latest update makes sure you have the newest security patches and features.`,
     steps: [
       { title: 'Turn on and connect to WiFi', content: 'Hold the power button to turn on. Select your language and connect to your WiFi network.' },
       { title: 'Transfer data from old phone', content: 'Follow the setup wizard to transfer data from your old phone — wirelessly or with a cable. You can also transfer from iPhone.' },
@@ -2265,7 +2265,7 @@ Keep a record of every account you close, including confirmation numbers and dat
 
 If the deceased had a password manager or left a written list of accounts and passwords, this makes the process much more manageable. Consider this as motivation to create your own digital estate plan.`,
     steps: [
-      { title: 'Gather documentation', content: 'Obtain certified copies of the death certificate. Locate the will or trust to identify the executor. Gather any account information the deceased may have kept.' },
+      { title: 'Gather documentation', content: 'Get certified copies of the death certificate. Locate the will or trust to identify the executor. Gather any account information the deceased may have kept.' },
       { title: 'Address financial accounts first', content: 'Contact banks and credit card companies with the death certificate. Review statements for recurring charges and cancel subscriptions.' },
       { title: 'Request email access', content: `Contact the email provider's deceased account process. Google: Inactive Account Manager or data request. Apple: Digital Legacy program.` },
       { title: 'Handle social media', content: 'For each platform, search "[platform] deceased account" to find the request form. Choose to memorialize or delete.' },
@@ -2423,7 +2423,7 @@ Common line items: the base internet service fee (what you signed up for), equip
 
 Charges you may be able to remove: equipment rental fees — if you are paying $10-15/month to rent a modem or router, buying your own can save $120-180/year. Check your provider's list of compatible modems. WiFi service fees — some providers charge a separate fee for WiFi. Using your own router eliminates this. Service protection plans — these are basically insurance on the provider's equipment and often not worth the cost.
 
-If your promotional rate has expired and your bill increased significantly, call your provider and ask for a retention discount. Say that you are considering switching to another provider and ask what deals they can offer. Many providers will extend promotional pricing or offer a discount to keep you as a customer.
+If your promotional rate has expired and your bill increased a lot, call your provider and ask for a retention discount. Say that you are considering switching to another provider and ask what deals they can offer. Many providers will extend promotional pricing or offer a discount to keep you as a customer.
 
 Check your bill each month for changes. Providers sometimes add services or change pricing without clear notification. If you see a new charge, call and ask what it is and whether it can be removed.`,
     steps: [
@@ -2431,7 +2431,7 @@ Check your bill each month for changes. Providers sometimes add services or chan
       { title: 'Check for equipment rental', content: 'If you are renting a modem or router ($10-15/month), consider buying your own compatible model to save $120+/year.' },
       { title: 'Look for unnecessary add-ons', content: 'WiFi service fees, protection plans, and premium support charges can often be removed. Call and ask.' },
       { title: 'Check if your promo expired', content: 'If your bill jumped recently, your promotional rate may have ended. Call and ask for a retention discount.' },
-      { title: 'Monitor monthly for changes', content: 'Check your bill each month for new or increased charges. Call immediately if something unexpected appears.' },
+      { title: 'Monitor monthly for changes', content: 'Check your bill each month for new or increased charges. Call right away if something unexpected appears.' },
     ],
   },
 
@@ -2485,7 +2485,7 @@ Setup: connect the first mesh unit to your modem with an Ethernet cable (this re
 
 The app guides you through optimal placement, tests the connection between units, and lets you manage your network settings. Most mesh systems also include parental controls, guest network options, and device prioritization.
 
-For a 2-bedroom apartment, two units are usually sufficient. For a 3-4 bedroom house, three units cover most layouts. For larger or multi-story homes, consider adding a fourth unit.`,
+For a 2-bedroom apartment, two units are usually enough. For a 3-4 bedroom house, three units cover most layouts. For larger or multi-story homes, consider adding a fourth unit.`,
     steps: [
       { title: 'Choose a mesh system', content: 'Google Nest WiFi, Eero, TP-Link Deco, Orbi, or Velop. Get 2-3 units depending on your home size ($150-300).' },
       { title: 'Connect the main unit', content: 'Plug an Ethernet cable from your modem into the first mesh unit. This replaces your existing router.' },
@@ -2515,7 +2515,7 @@ Important: hotspot uses your cellular data. If you have a limited data plan, str
 
 Tips for conserving data while using hotspot: avoid streaming video (it uses the most data), turn off automatic app updates and cloud backups on connected devices, and close unnecessary browser tabs and apps.
 
-If you use hotspot frequently, consider an unlimited data plan that includes hotspot, or a separate mobile hotspot device (available from all major carriers). These devices often provide better speeds and battery life than using your phone.`,
+If you use hotspot often, consider an unlimited data plan that includes hotspot, or a separate mobile hotspot device (available from all major carriers). These devices often provide better speeds and battery life than using your phone.`,
     steps: [
       { title: 'Turn on Personal Hotspot', content: 'iPhone: Settings → Personal Hotspot → Allow Others to Join. Android: Settings → Network → Hotspot & Tethering → WiFi Hotspot → on.' },
       { title: 'Note the password', content: 'Your phone displays the hotspot password. You will enter this on the device you want to connect.' },
@@ -2661,10 +2661,10 @@ Common fixes for slow internet: restart your router (unplug it, wait 30 seconds,
 
 If speeds are consistently well below what you pay for, call your internet provider. They can run diagnostics from their end and may need to send a technician. If you are renting their modem/router, ask if it is outdated and needs replacement.
 
-Run speed tests at different times of day. Internet speeds often slow down during peak hours (evenings) when everyone in your neighborhood is online. If peak speeds are significantly lower, your provider's network may be congested in your area.`,
+Run speed tests at different times of day. Internet speeds often slow down during peak hours (evenings) when everyone in your neighborhood is online. If peak speeds are a lot lower, your provider's network may be congested in your area.`,
     steps: [
       { title: 'Run a speed test', content: 'Go to speedtest.net or fast.com on your phone or computer. Wait for the test to complete (less than a minute).' },
-      { title: 'Compare to your plan', content: 'Check what speed your internet plan includes. If you are getting significantly less, troubleshooting is needed.' },
+      { title: 'Compare to your plan', content: 'Check what speed your internet plan includes. If you are getting a lot less, troubleshooting is needed.' },
       { title: 'Restart your router', content: 'Unplug your router, wait 30 seconds, plug it back in. Wait 2-3 minutes for it to restart fully. This fixes many speed issues.' },
       { title: 'Reduce network load', content: 'Close unused apps and browser tabs. Check if other devices are streaming or downloading. These compete for bandwidth.' },
       { title: 'Contact your provider if needed', content: 'If speeds remain low after troubleshooting, call your ISP. They can run diagnostics and may need to replace equipment or fix a line issue.' },
@@ -2693,7 +2693,7 @@ Go to turbotax.com and click "Start for Free." Create an account or sign in. Tur
 
 Be alert for upselling throughout the process. TurboTax may suggest upgrading to a paid version. If your situation is covered by the free edition, you can decline. Look for "Continue with Free" or "No thanks" options.
 
-After completing your return, review every number. Choose direct deposit for the fastest refund (about 21 days), then e-file. If your income is below $84,000 and you want to ensure a truly free experience, consider using IRS Free File (irs.gov/freefile) instead, which guarantees no upselling.`,
+After completing your return, review every number. Choose direct deposit for the fastest refund (about 21 days), then e-file. If your income is below $84,000 and you want to make sure a truly free experience, consider using IRS Free File (irs.gov/freefile) instead, which guarantees no upselling.`,
     steps: [
       { title: 'Go to turbotax.com', content: 'Click "Start for Free" and create an account. The free edition covers W-2 income and basic returns.' },
       { title: 'Gather your documents', content: 'Have your W-2, any 1099 forms, Social Security number, and bank routing and account numbers ready.' },
@@ -2804,7 +2804,7 @@ You can also check whether you qualify for any property tax exemptions. Many sta
     thumbnailEmoji: '',
     publishedAt: '2026-04-15',
     difficulty: 'Beginner',
-    body: `The Social Security Administration offers a free retirement estimator tool that shows you approximately how much you will receive in monthly Social Security benefits based on your actual earnings record. This is one of the most useful planning tools available, and it takes less than five minutes to use.
+    body: `The Social Security Administration offers a free retirement estimator tool that shows you about how much you will receive in monthly Social Security benefits based on your actual earnings record. This is one of the most useful planning tools available, and it takes less than five minutes to use.
 
 The estimator uses your real work history — every job where Social Security taxes were withheld — to calculate your benefit amount. It shows you estimates at three key ages: 62 (the earliest you can start collecting), your full retirement age (66 or 67, depending on when you were born), and 70 (when your benefit maxes out).
 
@@ -2816,7 +2816,7 @@ Once signed in, the estimator pulls your complete earnings record and gives you 
 
 Keep in mind that these are estimates, not guarantees. Your actual benefit will depend on your earnings between now and when you retire. But the estimator gives you a solid ballpark figure for planning your retirement budget.
 
-If you have not created a my Social Security account yet, the estimator is a great reason to set one up. You can also view your full earnings history to make sure all your past jobs and wages are recorded correctly — errors happen, and fixing them now ensures you get the full benefit you have earned.`,
+If you have not created a my Social Security account yet, the estimator is a great reason to set one up. You can also view your full earnings history to make sure all your past jobs and wages are recorded correctly — errors happen, and fixing them now makes sure you get the full benefit you have earned.`,
     steps: [
       { title: 'Go to ssa.gov', content: 'Open your browser and go to ssa.gov. Look for "Estimate My Benefits" or "Retirement Estimator" on the homepage.' },
       { title: 'Choose quick or detailed estimate', content: 'The quick estimator does not require logging in — enter your date of birth, current earnings, and planned retirement age. For a detailed estimate, sign in to your my Social Security account.' },
@@ -3146,7 +3146,7 @@ A word of caution: QR codes can link to any website, including malicious ones. B
     difficulty: 'Beginner',
     body: `Software updates keep your phone secure, fix bugs, and sometimes add new features. Both Apple and Google release regular updates for their phones, and installing them is one of the most important things you can do to protect your device and your personal information.
 
-There are two types of updates: major updates (like going from iOS 18 to iOS 19, or Android 15 to Android 16) that come once a year and add big new features, and smaller updates (like iOS 18.4.1) that come more frequently and fix security issues and bugs. Both types are important.
+There are two types of updates: major updates (like going from iOS 18 to iOS 19, or Android 15 to Android 16) that come once a year and add big new features, and smaller updates (like iOS 18.4.1) that come more often and fix security issues and bugs. Both types are important.
 
 Before updating, make sure your phone is connected to WiFi (updates are large and can use a lot of mobile data), has at least 50 percent battery (or is plugged in), and has enough storage space (some updates need several gigabytes of free space).
 
@@ -3463,7 +3463,7 @@ Before purchasing, check the return policy. Most items sold or fulfilled by Amaz
       { title: 'Evaluate products carefully', content: 'Check the star rating and number of reviews. Read 3-star reviews for balanced opinions. Look at product photos from other buyers in the reviews section.' },
       { title: 'Check the seller', content: 'Look for "Sold by Amazon.com" or "Fulfilled by Amazon." For third-party sellers, click their name and check their feedback percentage (aim for 95 percent or higher).' },
       { title: 'Review the order before purchasing', content: 'Tap "Add to Cart" then "Proceed to Checkout." Verify your shipping address, payment method, delivery date, and total price including tax.' },
-      { title: 'Place your order and track delivery', content: 'Tap "Place your order." A confirmation email arrives immediately. Track your package in the Amazon app under "Your Orders."' },
+      { title: 'Place your order and track delivery', content: 'Tap "Place your order." A confirmation email arrives right away. Track your package in the Amazon app under "Your Orders."' },
     ],
   },
 
@@ -3489,7 +3489,7 @@ To send an email, tap the "Compose" button (a pencil icon or the word "Compose")
 
 To reply to an email, open the message and tap "Reply" at the bottom. Type your response and tap send. "Reply All" sends your reply to everyone who was included in the original email — use this carefully.
 
-Gmail automatically filters spam (junk email) into a separate folder. Check your Spam folder occasionally — sometimes legitimate emails end up there by mistake. If you find one, tap "Not spam" to move it to your inbox.
+Gmail automatically filters spam (junk email) into a separate folder. Check your Spam folder sometimes — sometimes legitimate emails end up there by mistake. If you find one, tap "Not spam" to move it to your inbox.
 
 You can organize emails by starring important ones (tap the star next to any email), archiving emails you have dealt with (swipe right to archive), or using labels to categorize them. The search bar at the top is powerful — you can search by sender, subject, date, or any word in the email body.`,
     steps: [
@@ -3729,7 +3729,7 @@ Before sending, make sure the receiving device has AirDrop turned on and set to 
 
 To send a file via AirDrop, find what you want to share. For a photo: open the Photos app, select the photo (or multiple photos), tap the share button (the square with an upward arrow). In the AirDrop section, you will see icons for nearby Apple devices. Tap the person or device you want to send to.
 
-The receiving device shows a notification asking to accept or decline. Once they tap "Accept," the file transfers immediately. Photos go to the Photos app, documents go to the Files app, links open in Safari, and contacts go to the Contacts app.
+The receiving device shows a notification asking to accept or decline. Once they tap "Accept," the file transfers right away. Photos go to the Photos app, documents go to the Files app, links open in Safari, and contacts go to the Contacts app.
 
 AirDrop works with almost anything you can share on your iPhone: photos, videos, websites, map locations, contacts, voice memos, app links, and documents. If you see a share button, you can likely use AirDrop.
 
@@ -3898,20 +3898,20 @@ Turn on two-factor authentication (2FA) wherever it is available. This adds a se
 
 These scams come in several forms. Phone calls: you receive a call from someone claiming to be from "Microsoft Windows Support" or "Apple Technical Services." They say they have detected a problem with your computer and offer to fix it. Real tech companies do not call you out of the blue about computer problems.
 
-Pop-up warnings: while browsing the internet, a scary full-screen message appears saying your computer is infected and to call a number immediately. The message may include flashing text, warning sounds, and an official-looking logo. These are fake — real virus warnings come from your installed antivirus software, not from websites.
+Pop-up warnings: while browsing the internet, a scary full-screen message appears saying your computer is infected and to call a number right away. The message may include flashing text, warning sounds, and an official-looking logo. These are fake — real virus warnings come from your installed antivirus software, not from websites.
 
 Here is how the scam usually works: the scammer convinces you there is a problem, then asks you to install remote access software so they can "fix" it. Once they have access, they may install actual malware, steal your files, or access your bank accounts. They then charge you $200 to $500 for the "repair."
 
 How to protect yourself: never give remote access to your computer to someone who contacted you first. Never call a phone number from a pop-up warning. Never pay for tech support you did not request. If you get a suspicious call, hang up. If you see a pop-up, close your browser (press Ctrl + W on Windows or Command + W on Mac, or force-quit the browser if needed).
 
-If you have already fallen for a tech support scam: change your passwords immediately (especially email, banking, and social media). Run a legitimate antivirus scan. Check your bank and credit card statements for unauthorized charges. Report the scam to the FTC at reportfraud.ftc.gov.`,
+If you have already fallen for a tech support scam: change your passwords right away (especially email, banking, and social media). Run a legitimate antivirus scan. Check your bank and credit card statements for unauthorized charges. Report the scam to the FTC at reportfraud.ftc.gov.`,
     steps: [
       { title: 'Know the warning signs', content: 'Unsolicited calls from "Microsoft" or "Apple," scary pop-up warnings with phone numbers, and emails about computer problems are almost always scams.' },
       { title: 'Never give remote access to unsolicited callers', content: 'If someone you did not contact asks to remotely connect to your computer, say no and hang up. Legitimate companies do not need remote access to detect problems.' },
       { title: 'Close scary pop-ups without calling', content: 'If a pop-up says "call this number" — do not call. Close the browser tab (Ctrl+W on Windows, Command+W on Mac). If the browser is frozen, force-quit it.' },
       { title: 'Do not pay for unsolicited tech support', content: 'If you did not ask for help, do not pay for it. Scammers pressure you to pay by gift card, wire transfer, or cryptocurrency — these are red flags.' },
       { title: 'Use official support channels', content: `If you think your computer has a real problem, go to the manufacturer's official website (apple.com/support, support.microsoft.com) or visit a reputable local repair shop.` },
-      { title: 'If you already fell for the scam', content: 'Change all passwords immediately. Run a real antivirus scan. Check bank statements for unauthorized charges. Report to the FTC at reportfraud.ftc.gov.' },
+      { title: 'If you already fell for the scam', content: 'Change all passwords right away. Run a real antivirus scan. Check bank statements for unauthorized charges. Report to the FTC at reportfraud.ftc.gov.' },
     ],
   },
 
@@ -3925,7 +3925,7 @@ If you have already fallen for a tech support scam: change your passwords immedi
     thumbnailEmoji: '',
     publishedAt: '2026-04-15',
     difficulty: 'Beginner',
-    body: `Social media accounts are often set to share more than you realize. Your posts, photos, friends list, location, and personal details may be visible to anyone on the internet — not only your friends and family. Taking a few minutes to adjust your privacy settings can significantly reduce what strangers can see.
+    body: `Social media accounts are often set to share more than you realize. Your posts, photos, friends list, location, and personal details may be visible to anyone on the internet — not only your friends and family. Taking a few minutes to adjust your privacy settings can a lot reduce what strangers can see.
 
 Facebook: Go to Settings and Privacy, then Settings, then Privacy. Under "Who can see your future posts?" change it from "Public" to "Friends." Under "Who can send you friend requests?" choose "Friends of friends." Under "Who can look you up by email/phone?" change to "Friends." Also go to your Profile, tap the three dots, then "View As" to see what your profile looks like to the public.
 
@@ -3972,7 +3972,7 @@ Watch out for fake review sites and social media ads. Scammers create convincing
 
 Keep records. Save confirmation emails, order numbers, and receipts. Take screenshots of the product listing and price. These are essential if you need to dispute a charge or return an item.
 
-Monitor your statements. After shopping online, check your credit card or bank statement within a few days to make sure only the correct charges appear. Report any unauthorized charges to your bank immediately.`,
+Monitor your statements. After shopping online, check your credit card or bank statement within a few days to make sure only the correct charges appear. Report any unauthorized charges to your bank right away.`,
     steps: [
       { title: 'Shop on trusted websites', content: 'Stick to well-known retailers and brand websites. If a site is unfamiliar, search for it online along with "reviews" or "scam" before purchasing.' },
       { title: 'Check for HTTPS and the padlock', content: 'Before entering payment info, verify the URL starts with "https://" and shows a padlock icon. No padlock means do not purchase.' },
@@ -4001,7 +4001,7 @@ How to recognize a delivery scam: the message creates urgency ("Your package wil
 
 What to do instead: if you get a suspicious delivery message, do not click the link. If you are expecting a package, go directly to the carrier's official website (usps.com, ups.com, fedex.com) and enter your tracking number there. You can also use the official app for each carrier to track packages.
 
-If you already clicked a scam link: do not enter any information. Close the browser. If you entered financial information, call your bank or credit card company immediately. If you entered login credentials, change those passwords right away.
+If you already clicked a scam link: do not enter any information. Close the browser. If you entered financial information, call your bank or credit card company right away. If you entered login credentials, change those passwords right away.
 
 Report delivery scams: forward scam texts to 7726 (SPAM). Report fake USPS messages at uspis.gov. Report phishing to the FTC at reportfraud.ftc.gov.`,
     steps: [
@@ -4040,10 +4040,10 @@ Step 6: Consider a remote erase. If you cannot recover your phone and you have a
 
 If you get a replacement phone, restore your data from your most recent backup (iCloud or Google account). All your apps, contacts, photos, and settings come back.`,
     steps: [
-      { title: 'Lock your phone remotely (do this first)', content: 'iPhone: icloud.com/find, select phone, then "Lost Mode." Android: google.com/android/find then "Secure device." This locks the phone immediately.' },
+      { title: 'Lock your phone remotely (do this first)', content: 'iPhone: icloud.com/find, select phone, then "Lost Mode." Android: google.com/android/find then "Secure device." This locks the phone right away.' },
       { title: 'Call your phone carrier', content: `Call Verizon, AT&T, T-Mobile, or your carrier to suspend your line and blacklist the phone's IMEI number.` },
       { title: 'Change your passwords', content: 'Starting with email, then banking, then social media — change passwords for all accounts you accessed on the stolen phone. Use a computer or another device.' },
-      { title: 'Check for unauthorized activity', content: 'Review your email sent folder, bank transactions, and social media for anything you did not do. Report unauthorized activity immediately.' },
+      { title: 'Check for unauthorized activity', content: 'Review your email sent folder, bank transactions, and social media for anything you did not do. Report unauthorized activity right away.' },
       { title: 'File a police report', content: `Report the theft to local police with the phone's make, model, serial number, and last known location. Keep a copy of the report for insurance claims.` },
       { title: 'Erase the phone remotely if needed', content: 'If recovery is unlikely and you have backups, erase the phone remotely: icloud.com/find then "Erase" (iPhone) or google.com/android/find then "Erase Device" (Android).' },
     ],
@@ -4271,7 +4271,7 @@ On iPhone: Go to Settings then Privacy and Security then Location Services. At t
 
 For most apps, "While Using the App" or "Never" is the right choice. The only apps that genuinely need "Always" are navigation apps you use for driving, family location-sharing apps, and fitness apps that track outdoor workouts.
 
-Also on iPhone: scroll down in Location Services and tap "System Services." Turn off "Significant Locations" to stop Apple from tracking the places you visit frequently. Turn off "Location-Based Apple Ads" to stop location-targeted advertising.
+Also on iPhone: scroll down in Location Services and tap "System Services." Turn off "Significant Locations" to stop Apple from tracking the places you visit often. Turn off "Location-Based Apple Ads" to stop location-targeted advertising.
 
 On Android: Go to Settings then Location. The master toggle at the top turns all location tracking on or off. For per-app control, tap "App location permissions" (or Settings then Apps, select an app, then Permissions then Location). For each app, choose: "Allow all the time," "Allow only while using the app," "Ask every time," or "Don't allow."
 
@@ -4440,11 +4440,11 @@ The most important section is "Virus & threat protection." Click on it to see wh
 
 For a more thorough check, click "Scan options" and select "Full scan." A full scan checks every file and program on your computer and can take an hour or more depending on how many files you have. Run a full scan if your computer is behaving strangely, if you recently downloaded something suspicious, or as a monthly maintenance step.
 
-Under "Virus & threat protection settings," click "Manage settings" to see your protection options. Make sure "Real-time protection" is turned on — this continuously monitors your computer and blocks threats as they appear. Also ensure "Cloud-delivered protection" and "Automatic sample submission" are turned on for the best detection rates.
+Under "Virus & threat protection settings," click "Manage settings" to see your protection options. Make sure "Real-time protection" is turned on — this continuously monitors your computer and blocks threats as they appear. Also make sure "Cloud-delivered protection" and "Automatic sample submission" are turned on for the best detection rates.
 
 The "Firewall & network protection" section controls your Windows Firewall, which monitors internet traffic and blocks unauthorized connections. Make sure the firewall is turned on for all network types (Domain, Private, and Public). Do not turn off the firewall unless specifically instructed to do so by a trusted tech support professional.
 
-Windows Defender updates its virus definitions automatically through Windows Update. You do not need to manually update it, but you can click "Check for updates" in the Virus & threat protection page to ensure you have the latest definitions.`,
+Windows Defender updates its virus definitions automatically through Windows Update. You do not need to manually update it, but you can click "Check for updates" in the Virus & threat protection page to make sure you have the latest definitions.`,
     steps: [
       { title: 'Open Windows Security', content: 'Click the Start button and type "Windows Security" in the search bar. Click the Windows Security app when it appears. The dashboard shows your overall protection status with green, yellow, or red indicators.' },
       { title: 'Run a Quick scan', content: 'Click "Virus & threat protection" and then click the "Quick scan" button. The scan checks common threat locations and takes about 5 to 10 minutes. Any detected threats will be shown with options to remove them.' },
@@ -4504,7 +4504,7 @@ To pin an app that is currently open and running, right-click its icon in the ta
 
 To pin an app from the Start menu, click the Start button and find the app in your list of programs. Right-click the app's name and select "Pin to taskbar." The app's icon will appear in the taskbar. You can do this for any app — your web browser, email, word processor, photo viewer, or anything else you use regularly.
 
-You can rearrange the order of pinned apps by clicking and dragging their icons left or right along the taskbar. Put your most frequently used apps on the left side where they are closest to the Start button and most visible.
+You can rearrange the order of pinned apps by clicking and dragging their icons left or right along the taskbar. Put your most often used apps on the left side where they are closest to the Start button and most visible.
 
 To remove a pinned app from the taskbar (without uninstalling it from your computer), right-click its icon in the taskbar and select "Unpin from taskbar." The icon will disappear from the taskbar, but the program remains installed on your computer and available in the Start menu.
 
@@ -4539,7 +4539,7 @@ You can rearrange pinned apps by clicking and dragging them to different positio
 
 To change how much space the Start menu gives to pinned apps versus recommendations, go to Settings then Personalization then Start. Here you can choose "More pins" to show more pinned apps, "More recommendations" to show more recent files, or "Default" for a balanced view. If you do not find the Recommended section useful, choose "More pins" to maximize your pinned app space.
 
-You can also control which folders appear next to the power button at the bottom of the Start menu. Go to Settings then Personalization then Start then Folders. Toggle on shortcuts for Settings, File Explorer, Documents, Downloads, and other locations you access frequently. These small icons appear at the bottom of the Start menu and give you one-click access to important folders.
+You can also control which folders appear next to the power button at the bottom of the Start menu. Go to Settings then Personalization then Start then Folders. Toggle on shortcuts for Settings, File Explorer, Documents, Downloads, and other locations you access often. These small icons appear at the bottom of the Start menu and give you one-click access to important folders.
 
 The Start menu also includes a search bar. If you cannot find an app, start typing its name in the search bar and it will appear in the results. This is often faster than scrolling through the All Apps list.`,
     steps: [
@@ -4547,7 +4547,7 @@ The Start menu also includes a search bar. If you cannot find an app, start typi
       { title: 'Unpin apps you do not use', content: 'In the Start menu, right-click any pinned app you do not need and select "Unpin from Start." This removes it from the pinned area but does not uninstall it from your computer.' },
       { title: 'Rearrange your pinned apps', content: 'Click and drag pinned app icons to rearrange them. Group related apps together — communication apps in one area, productivity tools in another — so they are organized logically.' },
       { title: 'Adjust the Start menu layout', content: 'Go to Settings then Personalization then Start. Choose "More pins" to see more app icons, "More recommendations" for recent files, or "Default" for a balanced view.' },
-      { title: 'Add folder shortcuts', content: 'Go to Settings then Personalization then Start then Folders. Toggle on shortcuts for Settings, File Explorer, Documents, Downloads, and other frequently used locations. These appear as small icons at the bottom of the Start menu.' },
+      { title: 'Add folder shortcuts', content: 'Go to Settings then Personalization then Start then Folders. Toggle on shortcuts for Settings, File Explorer, Documents, Downloads, and other often used locations. These appear as small icons at the bottom of the Start menu.' },
       { title: 'Use search to find anything', content: 'Click the Start button and start typing the name of any app, setting, or file. The search bar shows results instantly, making it the fastest way to find anything on your computer.' },
     ],
   },
@@ -4632,7 +4632,7 @@ Stay safe by only downloading apps from official developer websites. Avoid downl
     thumbnailEmoji: '',
     publishedAt: '2026-04-16',
     difficulty: 'Beginner',
-    body: `The Dock is the row of app icons that appears at the bottom (or side) of your Mac's screen. It gives you one-click access to your most-used apps and shows which apps are currently running (indicated by a small dot beneath the icon). Customizing your Dock so it contains only the apps you use regularly makes your Mac faster and more pleasant to work with.
+    body: `The Dock is the row of app icons that appears at the bottom (or side) of your Mac's screen. It gives you one-click access to your most-used apps and shows which apps are currently running (showed by a small dot beneath the icon). Customizing your Dock so it contains only the apps you use regularly makes your Mac faster and more pleasant to work with.
 
 To add an app to the Dock, open Finder, click "Applications" in the sidebar, find the app you want, and drag its icon down to the Dock. You can also add a currently running app by right-clicking its icon in the Dock and selecting "Options" then "Keep in Dock."
 
@@ -4648,7 +4648,7 @@ If you find the Dock distracting, turn on "Automatically hide and show the Dock.
     steps: [
       { title: 'Add an app to the Dock', content: 'Open Finder and click Applications. Find the app you want and drag its icon to the Dock at the bottom of your screen. You can also right-click a running app in the Dock and select Options then Keep in Dock.' },
       { title: 'Remove an app from the Dock', content: 'Click and drag the app icon out of the Dock toward the center of your screen. Hold it until "Remove" appears, then release. The app is not uninstalled — only the Dock shortcut is removed.' },
-      { title: 'Rearrange Dock icons', content: 'Click and drag any app icon left or right to change its position in the Dock. Place your most frequently used apps where they are most accessible to you.' },
+      { title: 'Rearrange Dock icons', content: 'Click and drag any app icon left or right to change its position in the Dock. Place your most often used apps where they are most accessible to you.' },
       { title: 'Change Dock size', content: 'Go to System Settings then Desktop & Dock. Use the "Size" slider to adjust icon size. Turn on "Magnification" if you want icons to enlarge when you hover over them.' },
       { title: 'Move the Dock position', content: 'In Desktop & Dock settings, find "Position on screen" and choose Bottom, Left, or Right. Placing the Dock on the side gives you more vertical space on your screen.' },
       { title: 'Auto-hide the Dock', content: 'In Desktop & Dock settings, toggle on "Automatically hide and show the Dock." The Dock will hide when not in use and reappear when you move your mouse to the screen edge.' },
@@ -4706,17 +4706,17 @@ The quickest way to force-quit an app is to press Command + Option + Esc on your
 
 You can also force-quit from the Apple menu. Click the Apple icon in the top-left corner of your screen and select "Force Quit." This opens the same Force Quit Applications window.
 
-A third method is to right-click (or Control-click) the app's icon in the Dock while holding down the Option key on your keyboard. The menu option will change from "Quit" to "Force Quit." Click "Force Quit" to close the app immediately.
+A third method is to right-click (or Control-click) the app's icon in the Dock while holding down the Option key on your keyboard. The menu option will change from "Quit" to "Force Quit." Click "Force Quit" to close the app right away.
 
 After force-quitting an app, wait a few seconds and then reopen it. In most cases, the app will work normally after being restarted. If the app was working on an unsaved document, you may lose recent changes — many apps (like Pages, Numbers, and TextEdit) have auto-save features that recover most of your work, but not all apps do.
 
-If an app freezes repeatedly, it may indicate a problem. Try updating the app to the latest version from the App Store or the developer's website. You can also try deleting the app and reinstalling it. If the problem persists, check the app's support website or forums for known issues.
+If an app freezes repeatedly, it may show a problem. Try updating the app to the latest version from the App Store or the developer's website. You can also try deleting the app and reinstalling it. If the problem persists, check the app's support website or forums for known issues.
 
 Force-quit should be a last resort — always try closing the app normally first (Command + Q). Give a slow app a minute or two before force-quitting, as it may be processing something that takes time. But if the rainbow wheel spins for more than a couple of minutes and the app is truly frozen, force-quit is the right move.`,
     steps: [
       { title: 'Use the keyboard shortcut', content: 'Press Command + Option + Esc on your keyboard. The Force Quit Applications window will open showing all running apps.' },
       { title: 'Select the unresponsive app', content: 'Find the frozen app in the list — it may say "Not Responding" next to its name. Click on it to select it.' },
-      { title: 'Click Force Quit', content: 'Click the "Force Quit" button at the bottom of the window. Confirm by clicking "Force Quit" again in the dialog that appears. The app will close immediately.' },
+      { title: 'Click Force Quit', content: 'Click the "Force Quit" button at the bottom of the window. Confirm by clicking "Force Quit" again in the dialog that appears. The app will close right away.' },
       { title: 'Alternative: Use the Apple menu', content: 'Click the Apple icon in the top-left corner of your screen and select "Force Quit" to open the same Force Quit Applications window.' },
       { title: 'Alternative: Use the Dock', content: `Hold down the Option key on your keyboard, then right-click (or Control-click) the frozen app's icon in the Dock. Select "Force Quit" from the menu that appears.` },
       { title: 'Reopen the app', content: 'Wait a few seconds after force-quitting, then reopen the app. It should work normally. If it freezes again, try updating or reinstalling the app.' },
@@ -4737,7 +4737,7 @@ Force-quit should be a last resort — always try closing the app normally first
 
 To use AirDrop, both devices need to have Wi-Fi and Bluetooth turned on (they do not need to be connected to the same Wi-Fi network — AirDrop creates its own direct connection). On your iPhone, open Control Center by swiping down from the top-right corner and make sure both Wi-Fi and Bluetooth icons are blue (turned on). On your Mac, click the Wi-Fi and Bluetooth icons in the menu bar to confirm they are on.
 
-To send a file from your iPhone to your Mac: Open the file you want to share (a photo, document, or web page). Tap the Share button (the square with an upward arrow). Look for AirDrop in the sharing options and tap it. Your Mac should appear as an available device — tap its icon. On your Mac, you will see a notification asking you to accept the file. Click "Accept" and the file will transfer immediately. Photos go to your Downloads folder by default.
+To send a file from your iPhone to your Mac: Open the file you want to share (a photo, document, or web page). Tap the Share button (the square with an upward arrow). Look for AirDrop in the sharing options and tap it. Your Mac should appear as an available device — tap its icon. On your Mac, you will see a notification asking you to accept the file. Click "Accept" and the file will transfer right away. Photos go to your Downloads folder by default.
 
 To send a file from your Mac to your iPhone: Find the file in Finder, right-click it, and select "Share" then "AirDrop." Your iPhone should appear as an available device in the AirDrop window. Click your iPhone's icon. On your iPhone, you will see a notification asking you to accept the file. Tap "Accept" and the file will open in the appropriate app.
 
@@ -5003,7 +5003,7 @@ Set a Screen Time passcode that is different from the child's login password. Th
     thumbnailEmoji: '',
     publishedAt: '2026-04-16',
     difficulty: 'Beginner' as any,
-    body: `Instacart lets you order groceries from local stores like Kroger, Costco, Aldi, and many others, with a personal shopper picking and delivering your order. It is a convenient service for anyone who has difficulty getting to the store, has a busy schedule, or prefers to shop from home. Delivery fees vary, and a membership can reduce costs if you order frequently.`,
+    body: `Instacart lets you order groceries from local stores like Kroger, Costco, Aldi, and many others, with a personal shopper picking and delivering your order. It is a convenient service for anyone who has difficulty getting to the store, has a busy schedule, or prefers to shop from home. Delivery fees vary, and a membership can reduce costs if you order often.`,
     steps: [
       { title: 'Download the Instacart app or go to instacart.com', content: 'Download the Instacart app from the App Store or Google Play, or visit instacart.com on your computer. Tap "Get started" and enter your zip code to see which stores deliver to your address.' },
       { title: 'Create an account', content: 'Enter your name, email address, and create a password. You will need to add a delivery address and a payment method (credit or debit card). Instacart also accepts EBT/SNAP benefits at participating stores.' },
@@ -5383,7 +5383,7 @@ Set a Screen Time passcode that is different from the child's login password. Th
       { title: 'Do not trust caller ID', content: `Scammers can fake (spoof) phone numbers to make it look like your real bank is calling. A call that shows your bank's name on caller ID does not mean the caller is actually from your bank.` },
       { title: 'Hang up and call your bank directly', content: `If you receive a call or text that worries you, hang up or ignore it. Call the number on the back of your debit card or on your bank's official website to check whether there is actually a problem with your account.` },
       { title: 'Recognize urgent language as a red flag', content: 'Scammers create panic by saying things like "Your account will be closed in 30 minutes" or "Unusual charges are being made right now." This urgency is designed to make you act without thinking. Take a breath and verify independently before doing anything.' },
-      { title: 'Report scam attempts', content: `If you receive a bank impersonation call, report it to the FTC at reportfraud.ftc.gov and to your bank's fraud line. If you shared information or sent money, contact your bank immediately — they may be able to stop or reverse a transfer.` },
+      { title: 'Report scam attempts', content: `If you receive a bank impersonation call, report it to the FTC at reportfraud.ftc.gov and to your bank's fraud line. If you shared information or sent money, contact your bank right away — they may be able to stop or reverse a transfer.` },
     ],
   },
 
@@ -5501,7 +5501,7 @@ Set a Screen Time passcode that is different from the child's login password. Th
     thumbnailEmoji: '',
     publishedAt: '2026-04-16',
     difficulty: 'Beginner' as any,
-    body: `Managing prescriptions online saves trips to the pharmacy, lets you set up automatic refills, and makes it easy to track your medications. Most major pharmacies — CVS, Walgreens, Rite Aid, and Walmart — have apps and websites where you can transfer prescriptions, request refills, and choose delivery or in-store pickup. Free discount tools like GoodRx can also significantly reduce your out-of-pocket costs.`,
+    body: `Managing prescriptions online saves trips to the pharmacy, lets you set up automatic refills, and makes it easy to track your medications. Most major pharmacies — CVS, Walgreens, Rite Aid, and Walmart — have apps and websites where you can transfer prescriptions, request refills, and choose delivery or in-store pickup. Free discount tools like GoodRx can also a lot reduce your out-of-pocket costs.`,
     steps: [
       { title: 'Create an account with your pharmacy', content: `Go to your pharmacy's website (cvs.com, walgreens.com, etc.) or download their app. Create an account with your name, date of birth, insurance information, and address. Your prescription history and insurance will be linked to your account.` },
       { title: 'Transfer or add a prescription', content: `To transfer a prescription from another pharmacy, enter the current pharmacy's name and your prescription number in the transfer section. To add a new prescription, your doctor can send it electronically to your chosen pharmacy, or you can bring in a paper prescription.` },

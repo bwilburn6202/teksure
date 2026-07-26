@@ -99,7 +99,7 @@ export const guidesBatch319: Guide[] = [
     publishedAt: "2026-07-08",
     lastVerifiedAt: "2026-07-08",
     difficulty: "Beginner",
-    body: "Zelle is a fast money-transfer service built into most major banking apps, including Chase, Bank of America, Wells Fargo, and hundreds of others. It moves money between bank accounts in minutes — which is exactly why scammers favor it. Unlike a credit card charge, a Zelle payment behaves like handing someone cash: once it's sent, the money is usually gone, and your bank has limited ability to get it back even if you report it right away.\n\nThe Consumer Financial Protection Bureau and FTC have both issued repeated warnings about Zelle-based scams in recent years, and the pattern is consistent: someone contacts you claiming to be your bank's fraud department, a family member in an emergency, an online seller, or a romantic interest, and creates urgency to send money through Zelle immediately. The single most important rule is this: Zelle is meant for paying people you already know and trust, like splitting a dinner bill with a friend or paying rent to a landlord you've met — not for paying strangers, online sellers you've never dealt with before, or anyone who contacts you first asking for money.\n\nIf you use Zelle regularly with family, keep using it — it is a legitimate and convenient tool. The goal of this guide is to help you pause and check before sending money in the specific situations scammers rely on.",
+    body: "Zelle is a fast money-transfer service built into most major banking apps, including Chase, Bank of America, Wells Fargo, and hundreds of others. It moves money between bank accounts in minutes — which is exactly why scammers favor it. Unlike a credit card charge, a Zelle payment behaves like handing someone cash: once it's sent, the money is usually gone, and your bank has limited ability to get it back even if you report it right away.\n\nThe Consumer Financial Protection Bureau and FTC have both issued repeated warnings about Zelle-based scams in recent years, and the pattern is consistent: someone contacts you claiming to be your bank's fraud department, a family member in an emergency, an online seller, or a romantic interest, and creates urgency to send money through Zelle right away. The single most important rule is this: Zelle is meant for paying people you already know and trust, like splitting a dinner bill with a friend or paying rent to a landlord you've met — not for paying strangers, online sellers you've never dealt with before, or anyone who contacts you first asking for money.\n\nIf you use Zelle regularly with family, keep using it — it is a legitimate and convenient tool. The goal of this guide is to help you pause and check before sending money in the specific situations scammers rely on.",
     steps: [
       {
         title: "Know the one rule that stops most Zelle scams",
@@ -234,7 +234,7 @@ export const guidesBatch319: Guide[] = [
       {
         title: "Never donate by gift card, wire transfer, or cryptocurrency",
         content: "No legitimate charity asks for donations in the form of gift cards, wire transfers, or cryptocurrency — these payment methods cannot be reversed or traced, which is exactly why scammers request them. A credit card or check to a verified charity is always safer and reversible if something is wrong.",
-        warning: "If someone pressures you to buy gift cards \"for the charity\" and read the codes over the phone, this is always a scam. Hang up immediately.",
+        warning: "If someone pressures you to buy gift cards \"for the charity\" and read the codes over the phone, this is always a scam. Hang up right away.",
       },
       {
         title: "Go directly to the charity's known website",
@@ -246,7 +246,7 @@ export const guidesBatch319: Guide[] = [
       },
       {
         title: "Report a suspected charity scam",
-        content: "If you believe you've encountered a fake charity, report it at reportfraud.ftc.gov and to your state's Attorney General office, which typically has a charity registration division. If you already gave money by gift card or wire, contact the sending company immediately to ask about reversal — success is not guaranteed, but time matters.",
+        content: "If you believe you've encountered a fake charity, report it at reportfraud.ftc.gov and to your state's Attorney General office, which typically has a charity registration division. If you already gave money by gift card or wire, contact the sending company right away to ask about reversal — success is not guaranteed, but time matters.",
       },
     ],
   },

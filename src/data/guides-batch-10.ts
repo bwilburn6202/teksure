@@ -437,7 +437,7 @@ Most U.S. public libraries have Libby. If there is a waitlist for a popular titl
     thumbnailEmoji: '',
     publishedAt: '2026-04-17',
     difficulty: 'Beginner',
-    body: `Hoopla is a free app available through many public libraries. Unlike Libby, there are no waitlists — you can borrow any title immediately, up to a monthly limit set by your library (often 5 to 10 items).
+    body: `Hoopla is a free app available through many public libraries. Unlike Libby, there are no waitlists — you can borrow any title right away, up to a monthly limit set by your library (often 5 to 10 items).
 
 It has more than just books: you can watch movies, TV shows, listen to music, and read comics.`,
     steps: [
@@ -573,7 +573,7 @@ Subscriptions cost around $80 a month. That covers the tablet, unlimited data, a
       { title: 'Turn it on and sign in', content: 'GrandPads arrive already set up. Press the power button on top. The tablet walks the user through a quick tutorial — how to tap a button and scroll a list.' },
       { title: 'Add family members', content: 'The Care Circle Leader opens the Companion App on their phone and invites other family members by email. Only Care Circle members can call, message, or share photos with the GrandPad.' },
       { title: 'Make a video call', content: 'On the GrandPad, tap Video Chat. All Care Circle members appear as big buttons with their photo. Tap any person to ring their phone or computer.' },
-      { title: 'Share photos from anywhere', content: 'In the Companion App, a family member taps "Share Photos" and picks any photos from their phone. The photos appear immediately on the GrandPad under "Photos." This is the most-loved feature for grandparents.' },
+      { title: 'Share photos from anywhere', content: 'In the Companion App, a family member taps "Share Photos" and picks any photos from their phone. The photos appear right away on the GrandPad under "Photos." This is the most-loved feature for grandparents.' },
     ],
   },
   {

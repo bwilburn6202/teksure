@@ -496,7 +496,7 @@ Warning signs are consistent. Real investment advisors do not message strangers 
 
 Another red flag is being asked to download a special app to "see your portfolio grow." These apps are fake — they show made-up numbers to convince you the investment is real. Once the scammers have your money, the app stops working or they block you.
 
-If you think you have been scammed or someone is trying, do not feel embarrassed — this happens to smart people every day. Report it to the FTC at ReportFraud.ftc.gov, to the FBI at IC3.gov, and to your state attorney general's office. If money was sent from your bank, call the bank's fraud line immediately — some transfers can be reversed if caught fast enough.`,
+If you think you have been scammed or someone is trying, do not feel embarrassed — this happens to smart people every day. Report it to the FTC at ReportFraud.ftc.gov, to the FBI at IC3.gov, and to your state attorney general's office. If money was sent from your bank, call the bank's fraud line right away — some transfers can be reversed if caught fast enough.`,
     steps: [
       {
         title: 'Be suspicious of unsolicited messages about money',
@@ -1048,7 +1048,7 @@ Siri can also read your text messages and emails out loud when you have a Blueto
       },
       {
         title: 'Make a hands-free call',
-        content: 'Say "Hey Siri, call Bob." If you have more than one Bob in contacts, Siri asks which. Say "Mobile" or "Home." The call starts immediately. Say "Hey Siri, hang up" at the end.',
+        content: 'Say "Hey Siri, call Bob." If you have more than one Bob in contacts, Siri asks which. Say "Mobile" or "Home." The call starts right away. Say "Hey Siri, hang up" at the end.',
       },
       {
         title: 'Send a text message',

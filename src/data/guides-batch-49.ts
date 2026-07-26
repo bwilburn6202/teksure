@@ -160,7 +160,7 @@ The recipient gets an email from Hallmark or American Greetings letting them kno
       },
       {
         title: `Choose when to send it`,
-        content: `You can send the card immediately or schedule it for a future date. Scheduling is great for birthdays — set it to arrive on the actual date so it feels timely. After choosing a date, review everything one more time and tap "Send eCard."`,
+        content: `You can send the card right away or schedule it for a future date. Scheduling is great for birthdays — set it to arrive on the actual date so it feels timely. After choosing a date, review everything one more time and tap "Send eCard."`,
         tip: `You can send a card to yourself first as a test to see exactly what the recipient will experience.`,
       },
     ],
@@ -385,7 +385,7 @@ One common use case: if you're having trouble with an app or website, take a scr
       },
       {
         title: `Save or share the annotated screenshot`,
-        content: `When you're done annotating, tap "Done" in the top left corner to save the screenshot to your Photos app. To share it directly, tap the Share icon (a box with an upward arrow) before tapping Done, and choose Messages, Mail, or any other app to send it immediately.`,
+        content: `When you're done annotating, tap "Done" in the top left corner to save the screenshot to your Photos app. To share it directly, tap the Share icon (a box with an upward arrow) before tapping Done, and choose Messages, Mail, or any other app to send it right away.`,
       },
     ],
   },
@@ -406,7 +406,7 @@ One common use case: if you're having trouble with an app or website, take a scr
 
 **Display Size** (also called Screen Size or Display Zoom on some phones) controls how large everything looks — including icons, buttons, images, and text together. Think of it like zooming in on the entire phone screen. Making the display size larger means everything gets bigger, but you'll see slightly less on screen at once.
 
-Most people find it helpful to increase both Font Size and Display Size by one or two steps. The changes take effect immediately and you can always go back and adjust again.
+Most people find it helpful to increase both Font Size and Display Size by one or two steps. The changes take effect right away and you can always go back and adjust again.
 
 **How to find these settings:**
 
@@ -464,7 +464,7 @@ To turn on Display Zoom, go to:
 
 You'll see two options: **Default** (the normal size) and **Larger Text** (the zoomed-in mode). Tap "Larger Text" and then tap "Set" in the top right corner. Your iPhone will restart briefly to apply the change.
 
-After the change, you'll immediately notice:
+After the change, you'll right away notice:
 - App icons are noticeably larger
 - Text in menus and apps is bigger
 - Buttons and controls are easier to tap accurately
@@ -580,7 +580,7 @@ Amazon has free customer service by phone, chat, and email. Go to amazon.com/hel
     body: `Sometimes an app on your Android phone gets stuck — it stops responding to taps, shows a spinning wheel forever, or keeps crashing. This can happen to any app: Facebook, Gmail, YouTube, a banking app, or even your phone dialer. When this happens, the fastest fix is to force stop the app.
 
 **What does Force Stop do?**
-Force Stop immediately shuts down the app completely, including any processes running in the background. It's like turning off a light switch — the app stops entirely. When you reopen the app afterward, it starts fresh. Your data in the app (like your saved messages or account info) is not deleted. Only the running process is ended.
+Force Stop right away shuts down the app completely, including any processes running in the background. It's like turning off a light switch — the app stops entirely. When you reopen the app afterward, it starts fresh. Your data in the app (like your saved messages or account info) is not deleted. Only the running process is ended.
 
 **When should you use Force Stop?**
 - The app is frozen and not responding to your taps
@@ -615,7 +615,7 @@ To force stop an app, you access the App Info screen either through Settings > A
       },
       {
         title: `Tap Force Stop`,
-        content: `On the App Info screen, tap the "Force Stop" button. A confirmation dialog will appear asking if you're sure — tap "Force Stop" again (or "OK") to confirm. The app will immediately shut down.`,
+        content: `On the App Info screen, tap the "Force Stop" button. A confirmation dialog will appear asking if you're sure — tap "Force Stop" again (or "OK") to confirm. The app will right away shut down.`,
         warning: `Force Stop is permanent until you reopen the app. If the app was playing music, navigating, or running a download, those processes will stop. This is expected behavior.`,
       },
       {
@@ -673,13 +673,13 @@ Some apps accumulate hundreds of megabytes of cache over months of use. Facebook
       },
       {
         title: `Tap Clear Cache`,
-        content: `Tap the "Clear Cache" button. On most phones, this happens immediately without a confirmation dialog — the cache size drops to 0 KB right away. That's normal and expected. You're only deleting temporary files.`,
+        content: `Tap the "Clear Cache" button. On most phones, this happens right away without a confirmation dialog — the cache size drops to 0 KB right away. That's normal and expected. You're only deleting temporary files.`,
         warning: `Do NOT tap "Clear Data" or "Clear Storage" unless you're prepared to log back into the app. Clear Data deletes your login and all locally saved preferences, while Clear Cache only removes temporary files.`,
       },
       {
         title: `Reopen the app and test`,
         content: `Press the back button or the home button to leave Settings. Find the app and open it normally. It may take a moment to load the first time since it needs to rebuild its cache. Check whether the slow behavior, crashes, or login issue has been resolved.`,
-        tip: `Clearing the cache of your web browser (Chrome, Samsung Internet, Firefox) can significantly speed up web browsing and fix pages that won't load properly.`,
+        tip: `Clearing the cache of your web browser (Chrome, Samsung Internet, Firefox) can a lot speed up web browsing and fix pages that won't load properly.`,
       },
     ],
   },
@@ -782,7 +782,7 @@ On that page, enter your Gmail address and click "Forgot password." Google will 
 - If asked what your previous password was, try to remember recent passwords you may have used
 
 **After recovery:**
-Once you're back in, immediately add a recovery phone number (Settings > Security) so this is easier next time. Also enable 2-step verification, which adds an extra layer of protection against others getting into your account.
+Once you're back in, right away add a recovery phone number (Settings > Security) so this is easier next time. Also enable 2-step verification, which adds an extra layer of protection against others getting into your account.
 
 **If self-recovery fails:** Google has a form at support.google.com/accounts/troubleshooter/2402620 where you can request additional help. Be prepared to answer detailed questions about your account history.`,
     steps: [
@@ -802,7 +802,7 @@ Once you're back in, immediately add a recovery phone number (Settings > Securit
       },
       {
         title: `Try another method if the first doesn't work`,
-        content: `If a verification method fails (you don't have access to that phone number or email anymore), tap "Try another way." Google will offer alternative questions — like asking for a previous password you remember, or asking approximately when you created the account. Answer as accurately as you can.`,
+        content: `If a verification method fails (you don't have access to that phone number or email anymore), tap "Try another way." Google will offer alternative questions — like asking for a previous password you remember, or asking about when you created the account. Answer as accurately as you can.`,
       },
       {
         title: `Create a new strong password`,
@@ -844,7 +844,7 @@ This page lets you find your account by entering your email address, phone numbe
 Facebook may ask you to verify your identity by answering questions about your account — like the names of friends or the approximate date you created your account. In some cases, Facebook may ask for a government-issued ID.
 
 **After you recover your account:**
-- Change your password immediately to something new and strong
+- Change your password right away to something new and strong
 - Review which devices are logged in (Settings > Security > Where You're Logged In) and remove any you don't recognize
 - Turn on two-factor authentication (Settings > Security > Two-Factor Authentication) to prevent this from happening again
 - Check your email address and phone number in settings to make sure they're still yours
@@ -920,7 +920,7 @@ Swipe down from the top of the screen to see all notifications and quick setting
       },
       {
         title: `Download apps from the Google Play Store`,
-        content: `Tap the Google Play Store icon on your home screen (colorful triangle icon). Tap the search bar at the top and type the name of the app you want. Tap the app in the results list, then tap "Install." Free apps install immediately; paid apps ask for payment confirmation. Once installed, the app appears on your home screen or in your app drawer.`,
+        content: `Tap the Google Play Store icon on your home screen (colorful triangle icon). Tap the search bar at the top and type the name of the app you want. Tap the app in the results list, then tap "Install." Free apps install right away; paid apps ask for payment confirmation. Once installed, the app appears on your home screen or in your app drawer.`,
       },
       {
         title: `Set up Parental Controls`,
@@ -1101,7 +1101,7 @@ The exact location varies by Android version and phone brand, but searching for 
 **iPhone users:** iPhone has the same feature called Medical ID, found in the Health app. Open Health, tap your profile picture in the top right, then tap "Medical ID." Fill in the same details. On the iPhone lock screen, first responders tap "Emergency" and then "Medical ID" to view it — no passcode needed.
 
 **Why this matters more than you might think:**
-In an emergency where you are unconscious or unable to speak, first responders follow specific protocols. Knowing your blood type helps them prepare for potential transfusions. Knowing your medications helps them avoid giving you drugs that could interact badly. Your emergency contacts ensure the right people are notified quickly. These few minutes of setup today can genuinely make a difference in an emergency.`,
+In an emergency where you are unconscious or unable to speak, first responders follow specific protocols. Knowing your blood type helps them prepare for potential transfusions. Knowing your medications helps them avoid giving you drugs that could interact badly. Your emergency contacts make sure the right people are notified quickly. These few minutes of setup today can genuinely make a difference in an emergency.`,
     steps: [
       {
         title: `Open Settings and find Emergency Information`,
@@ -1142,7 +1142,7 @@ In an emergency where you are unconscious or unable to speak, first responders f
     body: `Windows 11 has a Quick Settings panel — a small menu that pops up when you click in the bottom right corner of the taskbar — that lets you control common settings without digging through the full Settings app. It's one of the most useful shortcuts for everyday use.
 
 **How to open it:**
-Look at the bottom right corner of your screen (the taskbar). You'll see small icons showing your Wi-Fi connection status, speaker/volume icon, and battery level (on laptops). Click that cluster of icons — not the clock, but the icons immediately to the left of the clock. The Quick Settings panel will open as a floating panel.
+Look at the bottom right corner of your screen (the taskbar). You'll see small icons showing your Wi-Fi connection status, speaker/volume icon, and battery level (on laptops). Click that cluster of icons — not the clock, but the icons right away to the left of the clock. The Quick Settings panel will open as a floating panel.
 
 **What you can control from Quick Settings:**
 

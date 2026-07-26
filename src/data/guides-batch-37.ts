@@ -75,7 +75,7 @@ Depop works on iPhone, Android, and the web at depop.com.`,
       {
         title: 'Buy an item safely',
         content: `Tap "Buy" on any item you want. Pay using a credit card or PayPal. All transactions are processed through Depop's secure payment system — never pay sellers outside the app via Venmo or bank transfer, as you lose buyer protection.`,
-        warning: `Depop Buyer Protection covers you if an item doesn't arrive or significantly differs from the listing. This protection only applies to purchases made through the app — not to any side deals.`,
+        warning: `Depop Buyer Protection covers you if an item doesn't arrive or a lot differs from the listing. This protection only applies to purchases made through the app — not to any side deals.`,
       },
       {
         title: 'Sell an item',
@@ -195,7 +195,7 @@ The app is free. A paid subscription called AeroAPI unlocks additional features 
     difficulty: 'Beginner',
     body: `StubHub is one of the world's largest ticket resale marketplaces. When events sell out on official sites like Ticketmaster, people who bought tickets but can't attend resell them on StubHub. You can find tickets for concerts, NFL and NBA games, baseball, hockey, Broadway shows, comedy, and more.
 
-Prices on StubHub are set by the sellers — so popular events can be significantly higher than face value, while events with plenty of available tickets may be at or below face value. You can often find good seats at reasonable prices for events that haven't sold out.
+Prices on StubHub are set by the sellers — so popular events can be a lot higher than face value, while events with plenty of available tickets may be at or below face value. You can often find good seats at reasonable prices for events that haven't sold out.
 
 Every ticket purchased on StubHub comes with a FanProtect Guarantee: if an event is cancelled, you get a full refund. If tickets turn out to be invalid, StubHub will find replacement tickets or provide a refund.
 
@@ -219,12 +219,12 @@ StubHub charges a service fee on top of the ticket price — typically 10-15%. T
       },
       {
         title: 'Review and purchase',
-        content: `Tap on a listing to see the full price including all fees. StubHub shows the total price before you confirm. Enter your payment information (credit card or PayPal) and confirm the purchase. You'll receive a confirmation email immediately.`,
+        content: `Tap on a listing to see the full price including all fees. StubHub shows the total price before you confirm. Enter your payment information (credit card or PayPal) and confirm the purchase. You'll receive a confirmation email right away.`,
         warning: 'StubHub prices include service fees that can add 10-20% to the ticket price. Always check the "All-in Pricing" view (a toggle in the app) to see final prices from the start, without surprises at checkout.',
       },
       {
         title: 'Access your tickets',
-        content: 'Digital tickets appear in the "My Tickets" section of the StubHub app shortly after purchase — sometimes immediately, sometimes a day or two before the event (depending on the seller). Transfer the ticket to your Apple Wallet or Google Wallet for easy scanning at the venue.',
+        content: 'Digital tickets appear in the "My Tickets" section of the StubHub app shortly after purchase — sometimes right away, sometimes a day or two before the event (depending on the seller). Transfer the ticket to your Apple Wallet or Google Wallet for easy scanning at the venue.',
       },
     ],
   },
@@ -434,12 +434,12 @@ The App Library works automatically — you don't need to set anything up. All y
       },
       {
         title: 'Search for any app',
-        content: `At the top of the App Library, tap the Search bar. Type the name of any app. Matching apps appear immediately — tap one to open it. This works for every installed app, not just the ones on your home screen. It's often the fastest way to find a rarely-used app.`,
+        content: `At the top of the App Library, tap the Search bar. Type the name of any app. Matching apps appear right away — tap one to open it. This works for every installed app, not just the ones on your home screen. It's often the fastest way to find a rarely-used app.`,
       },
       {
         title: 'Hide an app from your home screen',
         content: 'Press and hold any app icon on your home screen until apps wiggle. Tap the "Remove App" option (the X or minus sign). In the menu that appears, choose "Move to App Library" instead of "Delete App." The app disappears from your home screen but remains fully installed and findable in the App Library.',
-        tip: 'This is great for apps you need but rarely use — like calculator apps, reference guides, or services you check only occasionally. Your home screen stays clean while nothing is lost.',
+        tip: 'This is great for apps you need but rarely use — like calculator apps, reference guides, or services you check only sometimes. Your home screen stays clean while nothing is lost.',
       },
       {
         title: 'Control what goes to App Library automatically',
@@ -520,7 +520,7 @@ The platform is used by both families seeking care and individuals looking to of
       {
         title: 'Create an account and post a job',
         content: `Go to care.com or download the Care.com app. Create a free account and choose "I need care." Describe what you're looking for — for example, "In-home companion for 3 hours/day on weekdays" or "Help with grocery shopping and light housekeeping." Enter your zip code. Posting a job is free.`,
-        tip: 'Be specific in your job description. Mention the specific tasks needed, any required experience (like experience with dementia or mobility assistance), and whether the role involves transportation.',
+        tip: 'Be specific in your job description. Mention the specific tasks needed, any required experience (like experience with dementia or mobility help), and whether the role involves transportation.',
       },
       {
         title: 'Browse caregiver profiles',
@@ -578,7 +578,7 @@ Wag is available in most US cities. If your area isn't covered, Rover (rover.com
       },
       {
         title: 'Book and prepare your home',
-        content: `Confirm the booking and complete payment in the app. You'll receive the walker's contact information. Before the first service, ensure you have an approved way to share access — most people use a lockbox with a spare key or a smart lock code rather than meeting in person every time.`,
+        content: `Confirm the booking and complete payment in the app. You'll receive the walker's contact information. Before the first service, make sure you have an approved way to share access — most people use a lockbox with a spare key or a smart lock code rather than meeting in person every time.`,
       },
       {
         title: 'Track the walk and review',
@@ -619,7 +619,7 @@ Other sites like Vitals.com, US News Doctor Finder, and your insurance company's
       },
       {
         title: `Review a doctor's profile`,
-        content: `Tap on any doctor to see their profile. Look for: board certifications (indicates specialty training), years in practice, hospital affiliations, education and residency, and patient ratings. A "Healthgrades Award for Excellence" or "Patient's Choice Award" indicates consistently high ratings over multiple years.`,
+        content: `Tap on any doctor to see their profile. Look for: board certifications (shows specialty training), years in practice, hospital affiliations, education and residency, and patient ratings. A "Healthgrades Award for Excellence" or "Patient's Choice Award" shows consistently high ratings over multiple years.`,
         warning: `A low number of reviews doesn't necessarily mean the doctor is bad — some excellent doctors don't have many online reviewers. Read the reviews that exist carefully rather than just looking at the overall star number.`,
       },
       {
@@ -665,7 +665,7 @@ If you have a non-Samsung Android phone, use Google's Find My Device at google.c
       },
       {
         title: 'Locate your phone on the map',
-        content: `The website shows your phone's last known location on a map. The green circle indicates the accuracy of the location. If the phone is actively connected to the internet, the location updates in real time. If offline, it shows the last location before it went offline.`,
+        content: `The website shows your phone's last known location on a map. The green circle shows the accuracy of the location. If the phone is actively connected to the internet, the location updates in real time. If offline, it shows the last location before it went offline.`,
       },
       {
         title: 'Ring the phone',
@@ -811,7 +811,7 @@ Location sharing uses a small amount of battery life and mobile data when active
       },
       {
         title: 'Stop sharing your location',
-        content: `To stop sharing with a specific person, go to Google Maps → Profile icon → Location Sharing. Tap the person's name and tap "Stop sharing." Your location immediately becomes invisible to them.`,
+        content: `To stop sharing with a specific person, go to Google Maps → Profile icon → Location Sharing. Tap the person's name and tap "Stop sharing." Your location right away becomes invisible to them.`,
         tip: 'To share location using Apple devices instead, use the "Share My Location" feature in the Find My app — iPhone and Android can share locations with each other through Google Maps.',
       },
     ],
@@ -833,7 +833,7 @@ Temu has grown rapidly in the United States and is now one of the most downloade
 
 The main considerations with Temu are shipping times (7-21 business days is common, though "guaranteed" delivery dates are offered), product quality (varies widely — some items are great, others are poor quality), and return logistics (returning items often requires shipping them internationally, though Temu does offer free returns for your first return per order).
 
-Temu's return and refund policy is actually quite generous for a discount retailer — they offer full refunds for orders that don't arrive on time, items that are significantly different from photos, and damaged products. Purchases are protected by Temu's "Purchase Protection Program."
+Temu's return and refund policy is actually quite generous for a discount retailer — they offer full refunds for orders that don't arrive on time, items that are a lot different from photos, and damaged products. Purchases are protected by Temu's "Purchase Protection Program."
 
 Privacy-conscious users should know that Temu collects extensive data through its app, as do most shopping apps. Using it on a dedicated shopping browser or limiting its access in your phone's privacy settings reduces data collection.`,
     steps: [
@@ -850,7 +850,7 @@ Privacy-conscious users should know that Temu collects extensive data through it
       {
         title: 'Read product details carefully',
         content: `Check the size chart carefully for clothing — sizing often runs smaller than US standards. Read the materials list. Look at the seller's other items and their overall rating. Check the estimated delivery date — longer shipping times are common. Note whether the item ships from a US warehouse (faster) or directly from overseas (slower).`,
-        warning: 'What you see in professional product photos may differ significantly from what arrives. Always read customer reviews and look at real customer photos before buying anything you need to look exactly right.',
+        warning: 'What you see in professional product photos may differ a lot from what arrives. Always read customer reviews and look at real customer photos before buying anything you need to look exactly right.',
       },
       {
         title: 'Place an order and track it',
@@ -859,7 +859,7 @@ Privacy-conscious users should know that Temu collects extensive data through it
       {
         title: 'Handle returns if needed',
         content: `If an item doesn't match the description, arrives damaged, or doesn't arrive at all, open the Temu app and go to My Orders → the specific order → Return/Refund. Follow the prompts. For most first-time returns per order, Temu provides a free return label. Refunds typically process within 5-14 business days.`,
-        tip: `Temu's "Purchase Protection" gives you 90 days to dispute an order. For items that are significantly wrong, Temu often approves a refund without requiring you to ship the item back.`,
+        tip: `Temu's "Purchase Protection" gives you 90 days to dispute an order. For items that are a lot wrong, Temu often approves a refund without requiring you to ship the item back.`,
       },
     ],
   },
@@ -882,7 +882,7 @@ PictureThis is especially useful for gardeners who receive a plant as a gift and
 
 PictureThis has a basic free version that lets you identify a limited number of plants per day. A premium subscription ($29.99/year or $5.99/month) provides unlimited identifications, a plant care calendar, disease diagnosis, and access to gardening experts.
 
-For most casual users, the free version is sufficient for occasional plant identification.`,
+For most casual users, the free version is enough for occasional plant identification.`,
     steps: [
       {
         title: 'Download PictureThis',

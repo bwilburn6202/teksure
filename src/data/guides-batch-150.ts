@@ -216,7 +216,7 @@ Anyone can benefit, but it is especially valuable for people who:
 - Are organ donors
 - Have a blood type that is rare or important to know before a transfusion
 
-Even if you are in good health, the emergency contact portion alone makes this worth setting up. If you are ever in an accident and cannot speak, paramedics can call your listed contact immediately.
+Even if you are in good health, the emergency contact portion alone makes this worth setting up. If you are ever in an accident and cannot speak, paramedics can call your listed contact right away.
 
 **What to include**
 
@@ -303,7 +303,7 @@ This guide teaches you how to close pop-ups safely, how to tell the dangerous on
 
 **The most important rule: never call a phone number in a pop-up**
 
-Some pop-ups are designed to look like urgent warnings from Microsoft, Apple, or your internet provider. They may say things like "Your computer is infected," "Your account has been suspended," or "Call 1-800-XXX-XXXX immediately." These are scams. They are called "tech support scams" and the FTC has documented thousands of them.
+Some pop-ups are designed to look like urgent warnings from Microsoft, Apple, or your internet provider. They may say things like "Your computer is infected," "Your account has been suspended," or "Call 1-800-XXX-XXXX right away." These are scams. They are called "tech support scams" and the FTC has documented thousands of them.
 
 No legitimate company sends you a pop-up telling you to call a phone number. Microsoft does not contact you through your browser. Apple does not call you via a web page. If you see a pop-up with a phone number, the correct response is to close your browser entirely — not to call. If you have any doubt whether the warning is real, call a family member or the company directly using a number from their official website.
 

@@ -188,7 +188,7 @@ export const guidesBatch293: Guide[] = [
       },
       {
         title: "Call the pantry before the first drop-off",
-        content: "Pantries appreciate a quick phone call before the first delivery, mostly so they know to have someone available at the door. The call also confirms current drop-off hours, since pantries occasionally adjust schedules around holidays or volunteer availability. Ask what kinds of produce the pantry can use, since some pantries serve communities with cooking traditions that prefer certain vegetables over others. A pantry that serves a Caribbean neighborhood may welcome okra and callaloo more than a pantry serving a Polish American neighborhood.",
+        content: "Pantries appreciate a quick phone call before the first delivery, mostly so they know to have someone available at the door. The call also confirms current drop-off hours, since pantries sometimes adjust schedules around holidays or volunteer availability. Ask what kinds of produce the pantry can use, since some pantries serve communities with cooking traditions that prefer certain vegetables over others. A pantry that serves a Caribbean neighborhood may welcome okra and callaloo more than a pantry serving a Polish American neighborhood.",
       },
       {
         title: "Harvest and prep produce so it lasts a few days",

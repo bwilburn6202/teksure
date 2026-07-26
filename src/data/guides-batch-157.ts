@@ -110,7 +110,7 @@ Both apps are protected by your phone's lock screen. Keep your phone locked with
 
 If you sent money to the wrong person or wrong amount:
 
-- **Zelle:** Contact your bank immediately. If the recipient has not yet enrolled in Zelle, you may be able to cancel the transfer. Once enrolled, cancellation is not guaranteed, but your bank can attempt to retrieve the funds.
+- **Zelle:** Contact your bank right away. If the recipient has not yet enrolled in Zelle, you may be able to cancel the transfer. Once enrolled, cancellation is not guaranteed, but your bank can attempt to retrieve the funds.
 - **Venmo:** You can request the money back by opening the transaction, tapping the three dots, and selecting "Request." This sends a polite payment request to the other person — they are not required to return it, but many people will if it was a genuine mistake.
 
 In both cases, acting quickly gives you the best chance of recovery. Save screenshots of any transaction you are disputing.
@@ -469,8 +469,7 @@ When you use voice dictation, a short audio clip of your speech is sent to Apple
         title: 'Practice with low-stakes messages to build confidence',
         content:
           'The best way to get comfortable with voice dictation is to use it for simple, short messages first — a quick "I\'ll call you in a bit" text to a family member, or a note to yourself. Once you feel confident, you can use it for longer emails or more detailed messages. Most people find that after a few days of practice, dictation becomes faster than typing.',
-        warning:
-          'Always review your message before tapping Send. Voice recognition occasionally mishears a word in a way that could change the meaning of your message — a quick read-over before sending prevents any awkward misunderstandings.',
+        warning: 'Always review your message before tapping Send. Voice recognition sometimes mishears a word in a way that could change the meaning of your message — a quick read-over before sending prevents any awkward misunderstandings.',
       },
     ],
   },

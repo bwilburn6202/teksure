@@ -144,7 +144,7 @@ export const guidesBatch299: Guide[] = [
       },
       {
         title: "Wait at least five minutes between different drops",
-        content: "When two or three drops are due at the same time, separate them by five minutes minimum. A second drop applied immediately washes out the first one. The order does not matter clinically, but a common routine is antibiotic first, wait five minutes, NSAID second, wait five minutes, steroid third. Set a kitchen timer or phone timer for the five-minute gap. Some surgeons recommend ten minutes between the steroid and NSAID for maximum absorption, especially in patients with diabetes.",
+        content: "When two or three drops are due at the same time, separate them by five minutes minimum. A second drop applied right away washes out the first one. The order does not matter clinically, but a common routine is antibiotic first, wait five minutes, NSAID second, wait five minutes, steroid third. Set a kitchen timer or phone timer for the five-minute gap. Some surgeons recommend ten minutes between the steroid and NSAID for maximum absorption, especially in patients with diabetes.",
       },
       {
         title: "Follow the taper schedule exactly",

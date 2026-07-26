@@ -79,7 +79,7 @@ export const guidesBatch249: Guide[] = [
       },
       {
         title: "Plan for Long-Term Care Even If You Hope to Avoid It",
-        content: "About 70 percent of Americans over 65 will need some long-term care during their lives, according to the U.S. Department of Health and Human Services. A married retiree often relies on a spouse for unpaid care during the first phase. A single retiree usually pays for help from the very first day. Nursing home care averages over 100,000 dollars per year in 2026. Home health aide visits at a few hours a day cost roughly 30,000 to 50,000 dollars per year. Plan for this in one of three ways: long-term care insurance bought in your 50s or early 60s, a dedicated savings bucket of 200,000 dollars or more, or a clear willingness to apply for Medicaid coverage if your assets are spent down. Talk with a State Health Insurance Assistance Program counselor at shiphelp.org for free guidance on the right mix.",
+        content: "About 70 percent of Americans over 65 will need some long-term care during their lives, according to the U.S. Department of Health and Human Services. A married retiree often relies on a spouse for unpaid care during the first phase. A single retiree usually pays for help from the very first day. Nursing home care averages over 100,000 dollars per year in 2026. Home health aide visits at a few hours a day cost roughly 30,000 to 50,000 dollars per year. Plan for this in one of three ways: long-term care insurance bought in your 50s or early 60s, a dedicated savings bucket of 200,000 dollars or more, or a clear willingness to apply for Medicaid coverage if your assets are spent down. Talk with a State Health Insurance Help Program counselor at shiphelp.org for free guidance on the right mix.",
         warning: "Long-term care insurance bought after age 70 is often very expensive or unavailable. If this is part of your plan, do not delay the conversation past your mid-60s."
       },
       {
@@ -245,7 +245,7 @@ export const guidesBatch249: Guide[] = [
       {
         title: "Start With Trusted Aging Organizations",
         content: "Begin your search at three reliable sources. AARP keeps a current Solo Agers section at aarp.org with a search tool that lists groups and webinars by region. The Solo Aging Hub at thesoloagingmovement.org maintains a directory of independent groups across the country. The Eldercare Locator at eldercare.acl.gov or 1-800-677-1116 can connect you with your local Area Agency on Aging, which often runs or knows of solo aging meetings. These three sources cover most of the country. Each entry usually lists the meeting time, location, contact person, and whether the group is in person, online, or both. Free to join is the norm, though some groups ask for a small donation.",
-        tip: "If you call the Eldercare Locator and the first person does not know of a solo aging group, ask for the Information and Assistance specialist. They have deeper local listings."
+        tip: "If you call the Eldercare Locator and the first person does not know of a solo aging group, ask for the Information and Help specialist. They have deeper local listings."
       },
       {
         title: "Check Local Senior Centers, Libraries, and Faith Communities",

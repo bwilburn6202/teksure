@@ -17,7 +17,7 @@ This is especially helpful if you work on documents often, store photos in Googl
 
 The program works on Windows 10, Windows 11, and macOS 12 or newer. You will need a Google account (Gmail counts) and about 500 MB of free space to install the app.
 
-There are two ways your files can appear on your computer. The first option, called "Stream files," keeps the files in the cloud and only downloads them when you open them — this saves space on your hard drive. The second option, called "Mirror files," keeps a full copy of everything on your computer so you can access files even when you are offline. Most people find streaming to be the better choice unless they travel frequently without internet access.
+There are two ways your files can appear on your computer. The first option, called "Stream files," keeps the files in the cloud and only downloads them when you open them — this saves space on your hard drive. The second option, called "Mirror files," keeps a full copy of everything on your computer so you can access files even when you are offline. Most people find streaming to be the better choice unless they travel often without internet access.
 
 After installation, the app runs quietly in the background and updates automatically. A small Google Drive icon in your system tray (Windows) or menu bar (Mac) shows the sync status at any time.`,
     steps: [
@@ -463,7 +463,7 @@ Google has photographed over 220 countries and territories using special cameras
 
 Street View is available on the Google Maps website on a computer and inside the Google Maps app on your phone. It is completely free to use and requires no account or sign-in.
 
-One thing to know: Street View is not a live feed. You are looking at photographs taken in the past, typically within the last few years. If a building has been demolished or a street has changed significantly, Street View may not reflect the current state.`,
+One thing to know: Street View is not a live feed. You are looking at photographs taken in the past, typically within the last few years. If a building has been demolished or a street has changed a lot, Street View may not reflect the current state.`,
     steps: [
       {
         title: `Open Google Maps`,

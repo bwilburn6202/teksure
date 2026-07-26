@@ -80,8 +80,7 @@ export const guidesBatch17: Guide[] = [
       },
       {
         title: 'Upgrade to Google One if you need more space',
-        content:
-          "If freeing up space doesn't solve the problem, Google One storage plans are reasonably priced: 100GB for $2.99/month, 200GB for $2.99/month, or 2TB for $9.99/month. Go to one.google.com → \"Get storage\" → choose a plan. You can cancel anytime. The upgraded storage works immediately across Gmail, Drive, and Photos. One Google One subscription can also be shared with up to 5 family members.",
+        content: "If freeing up space doesn't solve the problem, Google One storage plans are reasonably priced: 100GB for $2.99/month, 200GB for $2.99/month, or 2TB for $9.99/month. Go to one.google.com → \"Get storage\" → choose a plan. You can cancel anytime. The upgraded storage works right away across Gmail, Drive, and Photos. One Google One subscription can also be shared with up to 5 family members.",
         tip: "Quick Tip: 100GB is enough storage for most people for many years of emails and photos. The $2.99/month plan is the most common starting point.",
       },
     ],
@@ -108,15 +107,13 @@ export const guidesBatch17: Guide[] = [
       },
       {
         title: 'Change your password immediately after regaining access',
-        content:
-          "Once you are back in your account, change the password immediately to something strong and unique — at least 12 characters with a mix of letters, numbers, and symbols. Do not reuse passwords from other accounts. If the same password was used on other accounts (email, bank, other social media), change those passwords too — hackers often try compromised passwords on multiple sites. This practice is called \"credential stuffing.\"",
+        content: "Once you are back in your account, change the password right away to something strong and unique — at least 12 characters with a mix of letters, numbers, and symbols. Do not reuse passwords from other accounts. If the same password was used on other accounts (email, bank, other social media), change those passwords too — hackers often try compromised passwords on multiple sites. This practice is called \"credential stuffing.\"",
         warning:
           "If you use the same password on multiple sites and one site is breached, hackers will automatically try that password everywhere. Each account should have a unique password — this is the single biggest step you can take for online security.",
       },
       {
         title: 'Turn on two-factor authentication',
-        content:
-          "After recovering your account, turn on two-factor authentication (2FA) immediately. With 2FA, every new login requires a code from your phone in addition to your password. On Facebook: Settings → Password and Security → Two-Factor Authentication → turn on. On Instagram: Settings → Security → Two-Factor Authentication → turn on. Choose \"Authentication app\" (most secure) or \"Text message\" (convenient). This prevents hackers from accessing your account even if they have your password.",
+        content: "After recovering your account, turn on two-factor authentication (2FA) right away. With 2FA, every new login requires a code from your phone in addition to your password. On Facebook: Settings → Password and Security → Two-Factor Authentication → turn on. On Instagram: Settings → Security → Two-Factor Authentication → turn on. Choose \"Authentication app\" (most secure) or \"Text message\" (convenient). This prevents hackers from accessing your account even if they have your password.",
       },
       {
         title: 'Check and remove unfamiliar devices and apps',
@@ -218,12 +215,11 @@ export const guidesBatch17: Guide[] = [
     thumbnailEmoji: '5⃣',
     publishedAt: '2026-04-19',
     difficulty: 'Beginner',
-    body: `You have probably heard about 5G — it has been in phone ads and the news for several years. But what does it actually mean, and should you care? This guide cuts through the marketing language and explains 5G in straightforward terms.\n\nIn short: 5G is the fifth generation of cellular network technology. Every decade or so, the cellular industry upgrades to a new generation. We went from 3G (which allowed basic mobile internet) to 4G LTE (which enabled smartphone apps and streaming) and now to 5G (which is significantly faster and handles many more devices simultaneously).\n\nFor most everyday phone users, 5G means faster downloads and fewer slowdowns in crowded places. Whether 5G is available in your area, and whether your phone supports it, determines how much it affects you.`,
+    body: `You have probably heard about 5G — it has been in phone ads and the news for several years. But what does it actually mean, and should you care? This guide cuts through the marketing language and explains 5G in straightforward terms.\n\nIn short: 5G is the fifth generation of cellular network technology. Every decade or so, the cellular industry upgrades to a new generation. We went from 3G (which allowed basic mobile internet) to 4G LTE (which enabled smartphone apps and streaming) and now to 5G (which is a lot faster and handles many more devices simultaneously).\n\nFor most everyday phone users, 5G means faster downloads and fewer slowdowns in crowded places. Whether 5G is available in your area, and whether your phone supports it, determines how much it affects you.`,
     steps: [
       {
         title: 'Understand what 5G actually does differently',
-        content:
-          "5G is faster than 4G LTE — often 10-100 times faster in ideal conditions. What does that mean practically? Web pages load faster. Videos start playing immediately without buffering. Large file downloads (like app updates) finish in seconds instead of minutes. In crowded places like sports stadiums, concerts, or shopping centers, where thousands of people are using their phones simultaneously, 5G handles the load much better than 4G — which often slows to a crawl in crowds.",
+        content: "5G is faster than 4G LTE — often 10-100 times faster in ideal conditions. What does that mean practically? Web pages load faster. Videos start playing right away without buffering. Large file downloads (like app updates) finish in seconds instead of minutes. In crowded places like sports stadiums, concerts, or shopping centers, where thousands of people are using their phones simultaneously, 5G handles the load much better than 4G — which often slows to a crawl in crowds.",
         tip: 'Quick Tip: For most daily tasks — checking email, browsing Facebook, making calls, watching a video — the difference between 4G and 5G is barely noticeable on an individual basis. 5G matters most for heavy data users and crowded environments.',
       },
       {
@@ -280,7 +276,7 @@ export const guidesBatch17: Guide[] = [
         title: 'Perform the factory reset on Android',
         content:
           "On most Android phones: Settings → General Management or System → Reset → Factory Data Reset → \"Reset.\" Enter your PIN or password when prompted. Tap \"Delete All.\" The process takes a few minutes. On Samsung phones: Settings → General Management → Reset → Factory Data Reset. On Google Pixel: Settings → System → Reset options → Erase all data (factory reset). After the reset, the phone shows a welcome setup screen. Remove any memory card (if your phone has one) before handing the phone off.",
-        tip: "Quick Tip: After the factory reset, do not set up the phone on a new account — let the next user set it up fresh. This ensures no remnants of your accounts remain.",
+        tip: "Quick Tip: After the factory reset, do not set up the phone on a new account — let the next user set it up fresh. This makes sure no remnants of your accounts remain.",
       },
     ],
   },
@@ -317,8 +313,7 @@ export const guidesBatch17: Guide[] = [
       },
       {
         title: 'Inspect the phone when it arrives',
-        content:
-          "When your refurbished phone arrives: inspect the exterior for scratches or damage that doesn't match the described condition. Test the screen for dead pixels (look at a solid white or solid black background). Test the cameras, speakers, microphone, Wi-Fi, Bluetooth, and charging. Check the battery health: on iPhone, Settings → Battery → Battery Health — a good refurbished phone should be 85% or higher. Test all the buttons. If anything seems wrong, contact the seller immediately within the return window.",
+        content: "When your refurbished phone arrives: inspect the exterior for scratches or damage that doesn't match the described condition. Test the screen for dead pixels (look at a solid white or solid black background). Test the cameras, speakers, microphone, Wi-Fi, Bluetooth, and charging. Check the battery health: on iPhone, Settings → Battery → Battery Health — a good refurbished phone should be 85% or higher. Test all the buttons. If anything seems wrong, contact the seller right away within the return window.",
       },
     ],
   },
@@ -509,8 +504,7 @@ export const guidesBatch17: Guide[] = [
       },
       {
         title: 'Customize what shows and when',
-        content:
-          "Most frames let you control: the slideshow interval (how long each photo shows — 5 seconds to a few minutes), whether the frame dims or turns off overnight (save energy and screen life), orientation (portrait or landscape), photo shuffle order, and whether new photos appear immediately or in a specific playlist. Check the frame's app or web portal for these settings. Many frames also have a \"do not disturb\" schedule so they turn off at night.",
+        content: "Most frames let you control: the slideshow interval (how long each photo shows — 5 seconds to a few minutes), whether the frame dims or turns off overnight (save energy and screen life), orientation (portrait or landscape), photo shuffle order, and whether new photos appear right away or in a specific playlist. Check the frame's app or web portal for these settings. Many frames also have a \"do not disturb\" schedule so they turn off at night.",
       },
     ],
   },
@@ -564,7 +558,7 @@ export const guidesBatch17: Guide[] = [
     thumbnailEmoji: '',
     publishedAt: '2026-04-19',
     difficulty: 'Beginner',
-    body: `Wireless Emergency Alerts (WEA) are government-issued notifications sent directly to your phone during serious emergencies — things like tornado warnings, flash flood warnings, AMBER Alerts for missing children, and extreme threat presidential alerts. These alerts do not require you to sign up for anything — they are broadcast to all phones in the affected geographic area automatically.\n\nHowever, some alert categories can be turned off in your phone settings, and some people unknowingly disable them. This guide shows you how to confirm all important alerts are turned on, and how to add additional local weather alerts through dedicated apps.\n\nEmergency alerts can save lives — a few minutes of preparation now ensures you hear critical warnings when they matter most.`,
+    body: `Wireless Emergency Alerts (WEA) are government-issued notifications sent directly to your phone during serious emergencies — things like tornado warnings, flash flood warnings, AMBER Alerts for missing children, and extreme threat presidential alerts. These alerts do not require you to sign up for anything — they are broadcast to all phones in the affected geographic area automatically.\n\nHowever, some alert categories can be turned off in your phone settings, and some people unknowingly disable them. This guide shows you how to confirm all important alerts are turned on, and how to add additional local weather alerts through dedicated apps.\n\nEmergency alerts can save lives — a few minutes of preparation now makes sure you hear critical warnings when they matter most.`,
     steps: [
       {
         title: 'Check your Wireless Emergency Alerts settings on iPhone',
@@ -585,8 +579,7 @@ export const guidesBatch17: Guide[] = [
       },
       {
         title: 'Know what to do when an alert comes',
-        content:
-          "When an emergency alert arrives, your phone emits a loud, distinctive buzzing sound and vibration even if it is on silent. Read the alert immediately. Follow instructions specific to the type of alert: tornado warning — go to an interior room on the lowest floor away from windows; flash flood warning — move to higher ground, do not drive through flooded roads; AMBER alert — look for the described vehicle; extreme heat alert — stay indoors with air conditioning or go to a cooling center. FEMA's Ready.gov has detailed guidance for each emergency type.",
+        content: "When an emergency alert arrives, your phone emits a loud, distinctive buzzing sound and vibration even if it is on silent. Read the alert right away. Follow instructions specific to the type of alert: tornado warning — go to an interior room on the lowest floor away from windows; flash flood warning — move to higher ground, do not drive through flooded roads; AMBER alert — look for the described vehicle; extreme heat alert — stay indoors with air conditioning or go to a cooling center. FEMA's Ready.gov has detailed guidance for each emergency type.",
       },
     ],
   },
@@ -624,8 +617,7 @@ export const guidesBatch17: Guide[] = [
       },
       {
         title: 'Protect against scams with practical safeguards',
-        content:
-          "Scam calls and fraudulent pop-ups are the biggest threats. Practical protections: install a call-blocking app (Nomorobo is free for landlines, Robokiller or Hiya for cell phones), ensure their browser extensions are minimal and only from reputable sources, bookmark their most-used sites (bank, Medicare, email) and tell them to only visit those sites through bookmarks — not by typing the address or clicking email links. Create a family \"safe word\" that they can use if someone calls claiming to be a family member in trouble (a signal that it is a real call, not a scam).",
+        content: "Scam calls and fraudulent pop-ups are the biggest threats. Practical protections: install a call-blocking app (Nomorobo is free for landlines, Robokiller or Hiya for cell phones), make sure their browser extensions are minimal and only from reputable sources, bookmark their most-used sites (bank, Medicare, email) and tell them to only visit those sites through bookmarks — not by typing the address or clicking email links. Create a family \"safe word\" that they can use if someone calls claiming to be a family member in trouble (a signal that it is a real call, not a scam).",
       },
     ],
   },
@@ -689,8 +681,7 @@ export const guidesBatch17: Guide[] = [
       },
       {
         title: 'Keep the camera still for Night Mode photos',
-        content:
-          "Night Mode works by capturing multiple exposures over 1-5 seconds. If the camera moves significantly during that time, the resulting photo will be blurry. Hold your phone with both hands. Tuck your elbows against your body. Press the shutter button gently rather than jabbing it. For very long exposures (3+ seconds), prop your phone on a table, a bookshelf, or use a small tripod. Your phone will feel like it is taking a long time — that is normal.",
+        content: "Night Mode works by capturing multiple exposures over 1-5 seconds. If the camera moves a lot during that time, the resulting photo will be blurry. Hold your phone with both hands. Tuck your elbows against your body. Press the shutter button gently rather than jabbing it. For very long exposures (3+ seconds), prop your phone on a table, a bookshelf, or use a small tripod. Your phone will feel like it is taking a long time — that is normal.",
         tip: "Quick Tip: Night Mode is smart enough to compensate for minor hand shake, but a subject that moves (a person talking or a pet moving) will still be blurry even if your phone is steady. Ask subjects to hold still briefly.",
       },
       {
@@ -723,7 +714,7 @@ export const guidesBatch17: Guide[] = [
         title: 'Set up Find My for your AirPods (do this now)',
         content:
           "To use Find My for AirPods, the feature must be enabled. Go to Settings → [your name] → Find My → Find My iPhone → make sure \"Find My network\" is turned ON (this also covers AirPods). Your AirPods register with Find My when you first connect them to your iPhone. If Find My network was on when you paired them, they are already set up. No additional steps needed.",
-        tip: 'Quick Tip: Keep your AirPods connected to your Apple ID by keeping them in their case and near your iPhone occasionally. This refreshes their location in the Find My network.',
+        tip: 'Quick Tip: Keep your AirPods connected to your Apple ID by keeping them in their case and near your iPhone sometimes. This refreshes their location in the Find My network.',
       },
       {
         title: 'Find your AirPods in the Find My app',

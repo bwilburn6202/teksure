@@ -123,7 +123,7 @@ Zillow also lets you save homes to a favorites list, set up alerts when new home
       },
       {
         title: `Understand the Zestimate`,
-        content: `The Zestimate appears near the top of each home's page. It is Zillow's algorithmic estimate of the home's market value based on public records and nearby sale data. Think of it as a starting reference point rather than a definitive price. For homes with limited nearby sales data — rural areas, unusual floor plans, or recent renovations — the Zestimate can be significantly off in either direction. A licensed appraiser or real estate agent can give you a much more accurate valuation.`,
+        content: `The Zestimate appears near the top of each home's page. It is Zillow's algorithmic estimate of the home's market value based on public records and nearby sale data. Think of it as a starting reference point rather than a definitive price. For homes with limited nearby sales data — rural areas, unusual floor plans, or recent renovations — the Zestimate can be a lot off in either direction. A licensed appraiser or real estate agent can give you a much more accurate valuation.`,
       },
       {
         title: `Save Homes and Set Up Alerts`,
@@ -205,7 +205,7 @@ One thing to keep in mind: because Rocket Mortgage operates online, you will not
       },
       {
         title: `Connect Your Bank Accounts for Faster Verification`,
-        content: `Rocket Mortgage offers the option to connect your bank accounts electronically using Finicity (a financial data service). This lets the lender verify your income and assets without you uploading individual bank statements. Connecting your accounts is optional, but it significantly speeds up the verification step. If you prefer not to share account access, you can upload statement PDFs instead.`,
+        content: `Rocket Mortgage offers the option to connect your bank accounts electronically using Finicity (a financial data service). This lets the lender verify your income and assets without you uploading individual bank statements. Connecting your accounts is optional, but it a lot speeds up the verification step. If you prefer not to share account access, you can upload statement PDFs instead.`,
         warning: `Only connect accounts through Rocket Mortgage's official app or website. Avoid sharing your banking credentials in any other context, including phone calls from people claiming to be Rocket Mortgage staff.`,
       },
       {
@@ -237,7 +237,7 @@ Next, most buyers need to understand how much home they can actually afford. Mor
 
 After getting pre-approved for a mortgage — a letter from a lender saying they are willing to loan you up to a certain amount — you can search for homes using Zillow, Redfin, or Realtor.com. These sites let you filter by price, size, and neighborhood, and set alerts so you hear about new listings right away.
 
-Down payment assistance programs are often overlooked by first-time buyers. The Department of Housing and Urban Development (HUD) maintains a directory at hud.gov of state and local programs that offer grants or low-interest loans to help with down payments. Some programs are specifically for buyers in certain professions or income brackets. It is worth spending an hour on HUD's website to see what you might qualify for before assuming you need to save the full 20 percent yourself.`,
+Down payment help programs are often overlooked by first-time buyers. The Department of Housing and Urban Development (HUD) maintains a directory at hud.gov of state and local programs that offer grants or low-interest loans to help with down payments. Some programs are specifically for buyers in certain professions or income brackets. It is worth spending an hour on HUD's website to see what you might qualify for before assuming you need to save the full 20 percent yourself.`,
     steps: [
       {
         title: `Check and Understand Your Credit Score`,
@@ -250,7 +250,7 @@ Down payment assistance programs are often overlooked by first-time buyers. The 
       },
       {
         title: `Get Pre-Approved for a Mortgage`,
-        content: `Contact at least two or three lenders — including your bank, a credit union, and an online lender like Rocket Mortgage — to get pre-approval letters. A pre-approval tells sellers you are a serious buyer and have financing lined up. Each lender will do a credit check, but multiple mortgage inquiries within a 45-day window are typically counted as one inquiry on your credit report, so shopping around does not significantly hurt your score.`,
+        content: `Contact at least two or three lenders — including your bank, a credit union, and an online lender like Rocket Mortgage — to get pre-approval letters. A pre-approval tells sellers you are a serious buyer and have financing lined up. Each lender will do a credit check, but multiple mortgage inquiries within a 45-day window are typically counted as one inquiry on your credit report, so shopping around does not a lot hurt your score.`,
         warning: `Do not open new credit cards, take out car loans, or make large purchases on credit while your mortgage application is in process. New debt can change your approval status even after you have been pre-approved.`,
       },
       {
@@ -306,7 +306,7 @@ Reverse mortgages are not right for everyone. If you plan to leave your home to 
       },
       {
         title: `Know Your Ongoing Responsibilities`,
-        content: `Even after a reverse mortgage closes, you are still responsible for property taxes, homeowner's insurance premiums, and maintaining the home in good condition. Falling behind on any of these obligations can cause the lender to declare the loan due and payable immediately, which could result in foreclosure. Create a budget that accounts for these costs so there are no surprises down the road.`,
+        content: `Even after a reverse mortgage closes, you are still responsible for property taxes, homeowner's insurance premiums, and maintaining the home in good condition. Falling behind on any of these obligations can cause the lender to declare the loan due and payable right away, which could result in foreclosure. Create a budget that accounts for these costs so there are no surprises down the road.`,
         tip: `Quick Tip: AARP's website (aarp.org/money/credit-loans-debt/reverse_mortgage) has a thorough, plain-language guide to reverse mortgages that is updated regularly. It is a trustworthy free resource.`,
       },
     ],
@@ -352,7 +352,7 @@ Houzz is free to browse and use as an idea-gathering tool. Professionals pay to 
       {
         title: `Shop for Furniture and Home Decor`,
         content: `Many photos on Houzz have shoppable tags — small icons that appear when you tap a photo. Tap any tagged item to see its product details and price, then add it to your cart and purchase directly through Houzz. Houzz offers a wide range of furniture, lighting, rugs, and decor, often with free shipping on larger items.`,
-        tip: `Quick Tip: Houzz frequently runs sales on furniture and decor. Check the "Sales" section under the Shop tab before buying anything at full price.`,
+        tip: `Quick Tip: Houzz often runs sales on furniture and decor. Check the "Sales" section under the Shop tab before buying anything at full price.`,
       },
     ],
   },
@@ -461,7 +461,7 @@ To sell on Poshmark, you take photos of an item you want to get rid of, write a 
 
 Poshmark takes a flat fee of $2.95 for sales under $15, and 20 percent for sales of $15 or more. That fee structure means selling a $50 sweater nets you $40. Payouts can be sent to your bank account or to a Venmo or PayPal account, and there is no delay once the buyer accepts the item.
 
-Shopping on Poshmark is free, though buyers pay a flat $7.97 shipping fee on all orders, regardless of item size. That shipping cost is worth factoring in when you are comparing a Poshmark price to a sale at a regular retailer. Buyers have three days after delivery to accept an order or open a dispute if the item is significantly different from how it was described. After three days, the sale automatically completes.
+Shopping on Poshmark is free, though buyers pay a flat $7.97 shipping fee on all orders, regardless of item size. That shipping cost is worth factoring in when you are comparing a Poshmark price to a sale at a regular retailer. Buyers have three days after delivery to accept an order or open a dispute if the item is a lot different from how it was described. After three days, the sale automatically completes.
 
 For anyone with a closet full of clothes they no longer wear, Poshmark is a straightforward way to turn those items into cash without a garage sale. Brands sell well on the platform — designer items especially — but everyday brands like Gap, Levi's, and Nike sell steadily too.`,
     steps: [
@@ -471,7 +471,7 @@ For anyone with a closet full of clothes they no longer wear, Poshmark is a stra
       },
       {
         title: `List an Item for Sale`,
-        content: `Tap the camera icon at the bottom of the screen and take at least four to six photos of the item — front, back, close-up of any labels, and any areas with wear or imperfections. Write an honest description that includes the brand, size, color, and condition. Disclose any flaws clearly; undisclosed flaws are the main reason buyers open disputes. Set a price that leaves room for offers — buyers frequently send "offers" below your asking price.`,
+        content: `Tap the camera icon at the bottom of the screen and take at least four to six photos of the item — front, back, close-up of any labels, and any areas with wear or imperfections. Write an honest description that includes the brand, size, color, and condition. Disclose any flaws clearly; undisclosed flaws are the main reason buyers open disputes. Set a price that leaves room for offers — buyers often send "offers" below your asking price.`,
         tip: `Quick Tip: Natural daylight produces the clearest photos. Lay items flat on a clean white or neutral-colored surface, or hang them on a plain wall, for the most professional-looking listings.`,
       },
       {
@@ -504,7 +504,7 @@ For anyone with a closet full of clothes they no longer wear, Poshmark is a stra
 
 Depop works much like a social media app, with a feed that shows you new listings from sellers you follow and items matching your search history. Each seller has a profile page that looks similar to an Instagram profile — with photos, follower counts, and a grid of their current listings. This visual format makes it particularly good for browsing when you are not looking for something specific.
 
-Listing an item on Depop is quick. You take photos, write a description, set a price, and choose whether to offer free shipping or charge the buyer for it. When a sale is made, you ship the item and the buyer has a window to confirm receipt. Depop's buyer protection means that if an item is significantly different from its description, the buyer can open a dispute and receive a refund.
+Listing an item on Depop is quick. You take photos, write a description, set a price, and choose whether to offer free shipping or charge the buyer for it. When a sale is made, you ship the item and the buyer has a window to confirm receipt. Depop's buyer protection means that if an item is a lot different from its description, the buyer can open a dispute and receive a refund.
 
 One thing that makes Depop different from Poshmark or eBay is its emphasis on individual seller style. Successful Depop sellers often develop a distinct aesthetic and photograph their items in creative ways — on hangers against interesting backgrounds, or modeled — which attracts buyers who connect with that visual style. You do not need to be a photographer or stylist to sell, but putting care into your photos does make a difference.
 
@@ -517,7 +517,7 @@ Depop charges sellers a fee on each sale, plus payment processing fees. Buyers p
       {
         title: `Photograph Your Items`,
         content: `Good photos are essential on Depop. Use at least four images per listing: front, back, close-up of the label or print, and a photo showing any wear or imperfections. Good lighting is the most important factor — natural light near a window is better than most indoor lighting. Lay items flat on a clean surface or hang them on a plain background. If you can model the item yourself, that often increases buyer interest.`,
-        tip: `Quick Tip: Include a measuring tape in at least one photo, or list exact measurements in the description. Sizing varies significantly between brands and eras, especially for vintage pieces, so measurements help buyers decide whether an item will fit.`,
+        tip: `Quick Tip: Include a measuring tape in at least one photo, or list exact measurements in the description. Sizing varies a lot between brands and eras, especially for vintage pieces, so measurements help buyers decide whether an item will fit.`,
       },
       {
         title: `Write a Clear Listing Description`,
@@ -549,7 +549,7 @@ Depop charges sellers a fee on each sale, plus payment processing fees. Buyers p
 
 The platform is designed to make selling as quick as possible. You photograph an item, fill in a title and description, set a price, and your listing goes live in minutes. When a sale is made, Mercari generates a prepaid shipping label for you to print, which makes packing and dropping off at a carrier location the only remaining task.
 
-What makes Mercari stand out for sellers is the payout speed. Once a buyer confirms the item was received and rates the transaction, your earnings become available almost immediately. Mercari also has a feature called "Instant Pay" that can deposit funds to your bank account within minutes for a small fee, or you can transfer for free within a few business days.
+What makes Mercari stand out for sellers is the payout speed. Once a buyer confirms the item was received and rates the transaction, your earnings become available almost right away. Mercari also has a feature called "Instant Pay" that can deposit funds to your bank account within minutes for a small fee, or you can transfer for free within a few business days.
 
 Mercari charges sellers a 10 percent selling fee on each completed transaction, plus a payment processing fee. This is a simpler fee structure than some competing platforms. Buyers can also make offers below the asking price, and sellers can set their listings to "Smart Pricing," which automatically adjusts the price downward over time to encourage a sale.
 
@@ -570,7 +570,7 @@ The platform has protections for both buyers and sellers. Buyers can rate a tran
       },
       {
         title: `Ship the Item After a Sale`,
-        content: `When your item sells, you will receive a notification with a prepaid shipping label attached. Print the label, pack the item securely in a box or padded envelope, affix the label, and drop it at the carrier location indicated on the label (USPS, UPS, or FedEx depending on the label type). You must ship within three business days to maintain your seller rating. Enter the tracking number in the app once you have dropped it off.`,
+        content: `When your item sells, you will receive a notification with a prepaid shipping label attached. Print the label, pack the item securely in a box or padded envelope, affix the label, and drop it at the carrier location showed on the label (USPS, UPS, or FedEx depending on the label type). You must ship within three business days to maintain your seller rating. Enter the tracking number in the app once you have dropped it off.`,
         warning: `Never ship items purchased off-platform or after someone messages you asking to complete the sale outside of Mercari. These requests are almost always scams. Mercari's protections only apply to sales completed through the app.`,
       },
       {
@@ -592,7 +592,7 @@ The platform has protections for both buyers and sellers. Buyers can rate a tran
     difficulty: `Beginner`,
     body: `thredUP is one of the largest online resale platforms for women's and children's clothing. Unlike Poshmark or Mercari, where you personally photograph and list each item, thredUP handles the selling work for you. You request a free "Clean Out Kit" — a bag that thredUP mails to you — fill it with clothes you no longer wear, and send it back. thredUP's team inspects each item, photographs it, and lists it on the website. You receive a payout based on what sells.
 
-The tradeoff is that thredUP's payouts are significantly lower per item than what you might earn by listing items yourself on Poshmark or Mercari. thredUP takes a large percentage of each sale — in some cases keeping 80 to 90 percent — because they are doing the photography, listing, storage, and shipping work on your behalf. Common lower-value brands may be accepted but earn very little, while in-demand or high-end brands earn a larger share.
+The tradeoff is that thredUP's payouts are a lot lower per item than what you might earn by listing items yourself on Poshmark or Mercari. thredUP takes a large percentage of each sale — in some cases keeping 80 to 90 percent — because they are doing the photography, listing, storage, and shipping work on your behalf. Common lower-value brands may be accepted but earn very little, while in-demand or high-end brands earn a larger share.
 
 On the shopping side, thredUP is an excellent destination for finding quality clothing at much lower prices. Their selection includes clothing from name brands like J.Crew, Banana Republic, Lululemon, and Anthropologie, inspected and graded by condition. Items are searchable by brand, size, color, and condition, and most items are priced at 70 to 90 percent below their original retail price.
 
@@ -617,7 +617,7 @@ thredUP is a particularly good fit for anyone who wants to clean out a closet wi
       {
         title: `Try a Goody Box for Personalized Selections`,
         content: `Navigate to the Goody Box section and complete a style quiz about your size, preferred styles, and budget per item. thredUP will select and ship a box of items tailored to your preferences. When it arrives, try on each piece and keep what you love. Return the rest in the included bag within five days. You are charged a styling fee for the service (credited toward any items you keep), and you only pay for what you decide to keep.`,
-        tip: `Quick Tip: The Goody Box has a "maximum per item" price you can set — this helps ensure the box stays within a price range you are comfortable with before anything is charged.`,
+        tip: `Quick Tip: The Goody Box has a "maximum per item" price you can set — this helps make sure the box stays within a price range you are comfortable with before anything is charged.`,
       },
       {
         title: `Track Your Listings and Earnings`,
@@ -637,11 +637,11 @@ thredUP is a particularly good fit for anyone who wants to clean out a closet wi
     difficulty: `Intermediate`,
     body: `Whatnot is a live-stream marketplace where sellers host real-time auctions or fixed-price sales, and buyers watch and bid through their phones. The platform is especially popular for collectibles like trading cards (Pokémon, sports cards, Magic: The Gathering), vintage toys, comic books, sneakers, and clothing. However, the platform has expanded to include many categories.
 
-The live-stream format makes Whatnot very different from a traditional online marketplace. Instead of browsing static photos, you watch a seller open packs of cards, show the condition of a vintage toy from every angle, or demonstrate how a piece of clothing fits — all in real time. You can type comments in the chat, ask the seller questions, and place bids or buy-it-now purchases without leaving the stream.
+The live-stream format makes Whatnot very different from a traditional online marketplace. Instead of browsing static photos, you watch a seller open packs of cards, show the condition of a vintage toy from every angle, or show how a piece of clothing fits — all in real time. You can type comments in the chat, ask the seller questions, and place bids or buy-it-now purchases without leaving the stream.
 
-As a buyer, you browse upcoming and live streams from the app's home screen, organized by category. When you find a stream that interests you, you can watch without an account, but bidding or buying requires creating a free account and adding a payment method. Bids are placed by tapping the bid button during the auction, and the highest bid when the timer expires wins the item. You are charged immediately, and the seller ships the item within a few days.
+As a buyer, you browse upcoming and live streams from the app's home screen, organized by category. When you find a stream that interests you, you can watch without an account, but bidding or buying requires creating a free account and adding a payment method. Bids are placed by tapping the bid button during the auction, and the highest bid when the timer expires wins the item. You are charged right away, and the seller ships the item within a few days.
 
-Whatnot offers buyer protection — if an item arrives significantly different from how it was described on stream, you can open a dispute and receive a refund. Sellers are rated, and high-quality sellers with strong ratings typically attract larger audiences and higher bids.
+Whatnot offers buyer protection — if an item arrives a lot different from how it was described on stream, you can open a dispute and receive a refund. Sellers are rated, and high-quality sellers with strong ratings typically attract larger audiences and higher bids.
 
 To sell on Whatnot, you need to apply for seller access through the app. Once approved, you schedule live shows, set up your camera, and go live to your followers. Whatnot charges sellers a percentage of each sale and handles payments and shipping labels. For collectors who enjoy the social, community aspect of buying and selling, Whatnot offers an experience that no standard listing platform can replicate.`,
     steps: [
@@ -656,7 +656,7 @@ To sell on Whatnot, you need to apply for seller access through the app. Once ap
       },
       {
         title: `Place a Bid or Buy an Item`,
-        content: `When an item is up for auction, a bid button with a countdown timer appears on screen. Tap the button to place a bid at the current amount. You can also tap "Buy Now" if the seller has set a fixed price for an item. If you win an auction, Whatnot charges your payment method immediately. The seller is responsible for shipping the item within the timeframe listed on their profile.`,
+        content: `When an item is up for auction, a bid button with a countdown timer appears on screen. Tap the button to place a bid at the current amount. You can also tap "Buy Now" if the seller has set a fixed price for an item. If you win an auction, Whatnot charges your payment method right away. The seller is responsible for shipping the item within the timeframe listed on their profile.`,
         warning: `Bids on Whatnot are binding — once you place a bid and win, you are charged automatically. Do not bid more than you are prepared to pay. Backing out of a winning bid is against Whatnot's terms and can result in account suspension.`,
       },
       {
@@ -680,9 +680,9 @@ To sell on Whatnot, you need to apply for seller access through the app. Once ap
     thumbnailEmoji: ``,
     publishedAt: `2026-04-20`,
     difficulty: `Beginner`,
-    body: `Vinted is a European resale platform that has grown significantly in the United States. Its defining feature is that sellers pay zero fees to list or sell items. Instead, buyers pay a small service fee on each purchase, which covers the platform's costs. This means that when a seller lists a sweater for $30, they receive the full $30 — a different model from Poshmark (which charges sellers 20 percent) or Mercari (which charges 10 percent).
+    body: `Vinted is a European resale platform that has grown a lot in the United States. Its defining feature is that sellers pay zero fees to list or sell items. Instead, buyers pay a small service fee on each purchase, which covers the platform's costs. This means that when a seller lists a sweater for $30, they receive the full $30 — a different model from Poshmark (which charges sellers 20 percent) or Mercari (which charges 10 percent).
 
-For sellers, this is a meaningful advantage. You keep everything you earn, which makes Vinted particularly attractive for selling lower-priced items where fees on other platforms would eat significantly into your return.
+For sellers, this is a meaningful advantage. You keep everything you earn, which makes Vinted particularly attractive for selling lower-priced items where fees on other platforms would eat a lot into your return.
 
 Vinted covers clothing for all genders and ages, shoes, bags, accessories, and some home and beauty items. Like other resale apps, selling requires you to photograph your items, write descriptions, and set prices. Vinted provides suggested prices based on similar listings, which can be helpful if you are not sure where to start.
 
@@ -735,7 +735,7 @@ The subscription model works differently. For a monthly fee, you can have a cert
 
 Rent the Runway handles all cleaning, maintenance, and shipping. You do not need to worry about dry cleaning bills or damaged zippers — the company repairs and cleans all pieces between rentals. If something arrives damaged before your event, you are covered by their damage policy and can contact customer service for a replacement.
 
-One practical consideration: Rent the Runway includes backup size options with most rentals, allowing you to order an item in two different sizes to ensure one will fit. This removes the guesswork that comes with ordering clothing online.`,
+One practical consideration: Rent the Runway includes backup size options with most rentals, allowing you to order an item in two different sizes to make sure one will fit. This removes the guesswork that comes with ordering clothing online.`,
     steps: [
       {
         title: `Browse and Choose Between a One-Time Rental or Subscription`,
@@ -798,7 +798,7 @@ For anyone who buys clothing online and currently visits multiple websites befor
       {
         title: `Click Through to Buy at the Retailer's Website`,
         content: `Lyst does not handle purchases directly. When you tap "Buy" or "Visit Store," your phone or browser opens the retailer's website, where the product is already in your cart or pulled up on screen. Complete the purchase there using your payment method of choice. Any return or shipping policies will be the retailer's policies, not Lyst's.`,
-        warning: `Because Lyst pulls prices from many stores, occasionally a listed price may be slightly outdated or an item may be out of stock when you arrive at the retailer's website. Always confirm the final price before completing checkout.`,
+        warning: `Because Lyst pulls prices from many stores, sometimes a listed price may be slightly outdated or an item may be out of stock when you arrive at the retailer's website. Always confirm the final price before completing checkout.`,
       },
       {
         title: `Follow Brands and Save Items`,
@@ -865,7 +865,7 @@ For anyone who owns a luxury handbag they no longer use, Rebag is one of the mos
 
 The marketplace model on Chrono24 is similar to eBay — sellers list individual watches with photos, descriptions, and asking prices, and buyers make purchases or inquire directly. However, Chrono24 has put significant effort into building trust features that address the unique risks of buying expensive watches online, where counterfeits and misrepresented condition are genuine concerns.
 
-One of those trust features is Trusted Checkout. When you buy through Trusted Checkout, your payment is held in escrow by Chrono24 — meaning neither the buyer nor the seller has access to the funds until the transaction is complete. The watch ships to you, you inspect it, and if it matches the listing description, you confirm the transaction and the seller receives payment. If something is wrong, you can open a dispute before any money changes hands. This protection makes buying high-value watches significantly safer than a direct bank transfer.
+One of those trust features is Trusted Checkout. When you buy through Trusted Checkout, your payment is held in escrow by Chrono24 — meaning neither the buyer nor the seller has access to the funds until the transaction is complete. The watch ships to you, you inspect it, and if it matches the listing description, you confirm the transaction and the seller receives payment. If something is wrong, you can open a dispute before any money changes hands. This protection makes buying high-value watches a lot safer than a direct bank transfer.
 
 Chrono24 also has a certification program where their team physically inspects watches submitted to the program and issues a certificate attesting to authenticity and condition. Certified watches are labeled clearly in search results.
 

@@ -21,7 +21,7 @@ You can also send audio to multiple speakers at the same time. If you have a Hom
 
 One thing to know: AirPlay audio requires Wi-Fi, not just Bluetooth. If your Wi-Fi goes down or if you take your phone out of range of the network, the audio stream will stop. For short-distance listening where Wi-Fi is not available, regular Bluetooth headphones or speakers are a better choice.
 
-Setup is minimal — there is nothing to install. If you have a HomePod, it was set up with the Home app and is ready immediately. Third-party AirPlay speakers are plugged in and connected to your Wi-Fi during their initial setup.`,
+Setup is minimal — there is nothing to install. If you have a HomePod, it was set up with the Home app and is ready right away. Third-party AirPlay speakers are plugged in and connected to your Wi-Fi during their initial setup.`,
     steps: [
       {
         title: `Make sure everything is on the same Wi-Fi network`,
@@ -90,7 +90,7 @@ A fully charged set of Galaxy Buds typically lasts 5 to 7 hours on one charge, w
       },
       {
         title: `Customize your settings`,
-        content: `Inside Galaxy Wearable, tap on your buds' name to open settings. You can adjust the Equalizer (sound profile), change what Touch Controls do (like skipping tracks or activating your voice assistant), and toggle Active Noise Canceling on or off. Explore each section — changes take effect immediately on the buds.`,
+        content: `Inside Galaxy Wearable, tap on your buds' name to open settings. You can adjust the Equalizer (sound profile), change what Touch Controls do (like skipping tracks or activating your voice assistant), and toggle Active Noise Canceling on or off. Explore each section — changes take effect right away on the buds.`,
         warning: `Noise cancellation uses extra battery power. If you want maximum battery life, turn it off when you do not need it.`,
       },
     ],
@@ -294,7 +294,7 @@ Shortcuts you create can be run from your home screen, from Siri (say the shortc
       },
       {
         title: `Choose whether to run automatically or ask first`,
-        content: `At the end of setup, the app will ask whether to run the automation automatically or ask before running. Choose "Run Immediately" (formerly called "Don't Ask Before Running") to have it work without interrupting you. Tap Done to save. Your automation will now run on its own whenever the trigger condition is met.`,
+        content: `At the end of setup, the app will ask whether to run the automation automatically or ask before running. Choose "Run Right away" (formerly called "Don't Ask Before Running") to have it work without interrupting you. Tap Done to save. Your automation will now run on its own whenever the trigger condition is met.`,
       },
     ],
   },
@@ -314,7 +314,7 @@ Here is how it works: each family member installs the Life360 app on their phone
 
 Life360 also sends you automatic notifications — called Place Alerts — when a family member arrives at or leaves from a saved location like home, school, or a family member's house. You do not have to check the app constantly; it will alert you automatically.
 
-The free version of Life360 includes real-time location sharing, Place Alerts, and a two-day location history so you can see where someone was earlier in the day. A paid membership adds features like crash detection, roadside assistance, and stolen phone protection — but those are entirely optional.
+The free version of Life360 includes real-time location sharing, Place Alerts, and a two-day location history so you can see where someone was earlier in the day. A paid membership adds features like crash detection, roadside help, and stolen phone protection — but those are entirely optional.
 
 All family members must agree to be in the Circle and must install the app themselves. Life360 works on both iPhone and Android, so family members do not all need the same type of phone. Location sharing is completely transparent — everyone in the Circle can see everyone else, and you can see if location sharing is turned off by a member.`,
     steps: [
@@ -874,7 +874,7 @@ Night vision is included on all models and works automatically when the lighting
       {
         title: `Connect the camera to Wi-Fi`,
         content: `The app will ask which Wi-Fi network to connect the camera to. Select your home Wi-Fi network and enter the password. The camera will take about a minute to connect. You will hear a chime or see a status LED change color when connection is successful.`,
-        warning: `Place the camera close to your Wi-Fi router during initial setup to ensure a strong signal. After setup is complete, you can move it to its permanent location. If the signal is too weak, the camera may disconnect frequently.`,
+        warning: `Place the camera close to your Wi-Fi router during initial setup to make sure a strong signal. After setup is complete, you can move it to its permanent location. If the signal is too weak, the camera may disconnect often.`,
       },
       {
         title: `Name the camera and choose its location`,
@@ -975,7 +975,7 @@ Shared albums work across iPhones, iPads, and Macs. If a family member has an ol
       },
       {
         title: `Add photos to the shared album`,
-        content: `Open the shared album (it will appear under Shared Albums in the Albums tab). Tap the plus (+) button inside the album to add photos. Your photo library will open. Select the photos or videos you want to share and tap Add. They will appear in the shared album and everyone with access will see them immediately.`,
+        content: `Open the shared album (it will appear under Shared Albums in the Albums tab). Tap the plus (+) button inside the album to add photos. Your photo library will open. Select the photos or videos you want to share and tap Add. They will appear in the shared album and everyone with access will see them right away.`,
         tip: `Quick Tip: You can add photos to the shared album directly from your regular photo library. Select a photo, tap the Share button (square with arrow pointing up), and scroll down to find Add to Shared Album. Choose your family album from the list.`,
       },
       {

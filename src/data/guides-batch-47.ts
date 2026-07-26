@@ -170,7 +170,7 @@ The feature requires an iPhone 12 or newer running iOS 17 or later, and it works
       },
       {
         title: `Manually send a reaction from the effects button`,
-        content: `Tap your own video tile during the call to bring up the toolbar. Tap the star-like icon (Effects) and you'll see a grid of all available reactions. Tap any one to send it immediately.`,
+        content: `Tap your own video tile during the call to bring up the toolbar. Tap the star-like icon (Effects) and you'll see a grid of all available reactions. Tap any one to send it right away.`,
       },
       {
         title: `Turn off gesture detection if you don't want it`,
@@ -390,7 +390,7 @@ There are several shipping options to choose from:
 
 Before shipping, you'll need a box or padded envelope, packing material (bubble wrap or crumpled newspaper) to protect the contents, and the recipient's complete address including zip code. You can print a label at home if you have a printer, or pay at the post office counter.
 
-If you shop at websites like Amazon or eBay frequently, you'll find the process very familiar — it's the same basic idea, just in reverse. USPS is especially well-known for reliable rural delivery and competitive pricing on small packages.`,
+If you shop at websites like Amazon or eBay often, you'll find the process very familiar — it's the same basic idea, just in reverse. USPS is especially well-known for reliable rural delivery and competitive pricing on small packages.`,
     steps: [
       {
         title: `Pack and seal your box`,
@@ -780,7 +780,7 @@ The app works over your home Wi-Fi network, so your phone and TV need to be conn
 
 The Google TV app is separate from Google Home, though both are made by Google. The Google TV app is specifically designed for controlling your streaming device, while Google Home manages smart home devices. You want Google TV for this purpose.
 
-This is particularly helpful if you frequently misplace the physical remote, prefer typing on a keyboard, or want to quickly voice-search for something to watch.`,
+This is particularly helpful if you often misplace the physical remote, prefer typing on a keyboard, or want to quickly voice-search for something to watch.`,
     steps: [
       {
         title: `Download the Google TV app`,
@@ -843,7 +843,7 @@ On iPhone, selected text shows blue handles on both sides — drag those handles
       },
       {
         title: `Paste on iPhone`,
-        content: `Go to where you want to insert the text — a text message, an email, a search box, or a form field. Tap and hold inside the text area for a moment. When the menu appears, tap "Paste." The copied text appears immediately.`,
+        content: `Go to where you want to insert the text — a text message, an email, a search box, or a form field. Tap and hold inside the text area for a moment. When the menu appears, tap "Paste." The copied text appears right away.`,
         tip: `On iPhone, if you copy something and then take too long to paste it, the clipboard clears after you copy something new. You can only hold one thing at a time.`,
       },
       {

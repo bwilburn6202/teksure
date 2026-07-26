@@ -11,7 +11,7 @@ export const guidesBatch23: Guide[] = [
     thumbnailEmoji: '',
     publishedAt: '2026-04-19',
     difficulty: 'Beginner',
-    body: `Face ID is the facial recognition feature on iPhones that don't have a Home button (iPhone X and later). Instead of entering a passcode every time, you look at your phone — it recognizes your face instantly and unlocks. Face ID also approves App Store purchases, authenticates Apple Pay, and auto-fills passwords.\n\nFace ID is secure: Apple says the chance of a random person's face unlocking your iPhone is approximately 1 in 1,000,000 (compared to 1 in 50,000 for a fingerprint). It works in the dark, with glasses or sunglasses on, and adapts to changes in your appearance over time.\n\nSetup takes about two minutes and only needs to be done once. You can also add an "alternate appearance" (like a family member's face) if you want someone else to be able to unlock your phone.`,
+    body: `Face ID is the facial recognition feature on iPhones that don't have a Home button (iPhone X and later). Instead of entering a passcode every time, you look at your phone — it recognizes your face instantly and unlocks. Face ID also approves App Store purchases, authenticates Apple Pay, and auto-fills passwords.\n\nFace ID is secure: Apple says the chance of a random person's face unlocking your iPhone is about 1 in 1,000,000 (compared to 1 in 50,000 for a fingerprint). It works in the dark, with glasses or sunglasses on, and adapts to changes in your appearance over time.\n\nSetup takes about two minutes and only needs to be done once. You can also add an "alternate appearance" (like a family member's face) if you want someone else to be able to unlock your phone.`,
     steps: [
       {
         title: 'Open Face ID settings',
@@ -157,7 +157,7 @@ export const guidesBatch23: Guide[] = [
     thumbnailEmoji: '',
     publishedAt: '2026-04-19',
     difficulty: 'Beginner',
-    body: `Control Center is a panel that appears when you swipe down from the top-right corner of your iPhone screen. It gives you instant access to frequently used settings without navigating through menus: Wi-Fi on/off, Bluetooth, brightness, volume, flashlight, camera, Do Not Disturb, and more.\n\nWhat many people don't know is that Control Center is fully customizable. You can add controls you use often — like the screen recorder, text size, a magnifier, low power mode, or accessibility shortcuts — and remove controls you never use. This makes your Control Center exactly as useful as possible for you specifically.`,
+    body: `Control Center is a panel that appears when you swipe down from the top-right corner of your iPhone screen. It gives you instant access to often used settings without navigating through menus: Wi-Fi on/off, Bluetooth, brightness, volume, flashlight, camera, Do Not Disturb, and more.\n\nWhat many people don't know is that Control Center is fully customizable. You can add controls you use often — like the screen recorder, text size, a magnifier, low power mode, or accessibility shortcuts — and remove controls you never use. This makes your Control Center exactly as useful as possible for you specifically.`,
     steps: [
       {
         title: 'Open Control Center',
@@ -390,7 +390,7 @@ export const guidesBatch23: Guide[] = [
       {
         title: 'Enable fall detection',
         content: `Go to the Apple Watch app on your iPhone > Emergency SOS > turn on Fall Detection. If the watch detects a hard fall and you don't respond within 60 seconds, it automatically calls 911 and sends your location to your emergency contacts. This is one of the most important safety features, especially for people who live alone.`,
-        warning: 'Fall Detection can occasionally trigger during exercises like golf or tennis. During workouts, you can temporarily disable it in the workout settings if you prefer.',
+        warning: 'Fall Detection can sometimes trigger during exercises like golf or tennis. During workouts, you can temporarily disable it in the workout settings if you prefer.',
       },
       {
         title: 'Set medication reminders',
@@ -471,7 +471,7 @@ export const guidesBatch23: Guide[] = [
       {
         title: 'Review what apps have access to your email',
         content: 'Third-party apps sometimes request access to your email (a travel app that reads your confirmations, for example). Periodically review and revoke access for apps you no longer use. Gmail: Google Account > Security > Third-party apps with account access. Remove anything unfamiliar or apps you no longer use.',
-        warning: 'If you believe your email was hacked: immediately change your password, sign out all other sessions (Gmail: Security > Your devices > Sign out all other sessions), change passwords on your bank and other important sites, and notify your bank.',
+        warning: 'If you believe your email was hacked: right away change your password, sign out all other sessions (Gmail: Security > Your devices > Sign out all other sessions), change passwords on your bank and other important sites, and notify your bank.',
       },
     ],
   },
@@ -544,7 +544,7 @@ export const guidesBatch23: Guide[] = [
       },
       {
         title: 'Pin important notes to the top',
-        content: `Swipe right on any note in the list and tap "Pin." Pinned notes appear at the very top of the note list with a pin icon, so they're always easy to find. Pin your grocery list, today's to-do, or any note you access frequently.`,
+        content: `Swipe right on any note in the list and tap "Pin." Pinned notes appear at the very top of the note list with a pin icon, so they're always easy to find. Pin your grocery list, today's to-do, or any note you access often.`,
       },
     ],
   },
@@ -576,7 +576,7 @@ export const guidesBatch23: Guide[] = [
       },
       {
         title: 'Install any pending updates now',
-        content: 'On the Windows Update page, click "Check for updates." If updates are available, click "Download & install." Your computer may need to restart. Save any open work first. Updates usually take 5–30 minutes depending on how many there are. This is worth doing immediately if your computer is behind.',
+        content: 'On the Windows Update page, click "Check for updates." If updates are available, click "Download & install." Your computer may need to restart. Save any open work first. Updates usually take 5–30 minutes depending on how many there are. This is worth doing right away if your computer is behind.',
       },
       {
         title: 'Keep your other software updated too',
@@ -712,7 +712,7 @@ export const guidesBatch23: Guide[] = [
       },
       {
         title: 'Enable Reduce Loud Sounds for consistent audio',
-        content: 'Go to Settings > Video and Audio > Reduce Loud Sounds. Turn this on. Apple TV will automatically reduce sudden loud sounds (like action movie explosions or loud commercials) while keeping dialogue audible. This is one of the most useful settings for people who frequently have to reach for the remote during loud scenes.',
+        content: 'Go to Settings > Video and Audio > Reduce Loud Sounds. Turn this on. Apple TV will automatically reduce sudden loud sounds (like action movie explosions or loud commercials) while keeping dialogue audible. This is one of the most useful settings for people who often have to reach for the remote during loud scenes.',
       },
       {
         title: 'Use your iPhone as a remote',
@@ -748,7 +748,7 @@ export const guidesBatch23: Guide[] = [
       {
         title: 'View and manage your saved passwords',
         content: `Go to Settings > Passwords. Authenticate with Face ID or your passcode. You'll see a list of every username and password saved to your keychain, organized by website or app. Tap any entry to see the full password. You can edit incorrect entries or delete ones you no longer need.`,
-        tip: 'Quick Tip: Look for the yellow warning icon next to passwords — it indicates that password was found in a data breach or is reused on multiple sites. These should be changed to new, unique passwords.',
+        tip: 'Quick Tip: Look for the yellow warning icon next to passwords — it shows that password was found in a data breach or is reused on multiple sites. These should be changed to new, unique passwords.',
       },
       {
         title: 'Use AutoFill for automatic login',

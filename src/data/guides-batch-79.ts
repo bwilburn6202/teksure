@@ -41,7 +41,7 @@ Updating your inventory when you buy something new takes only a minute or two, a
       {
         title: `Export and save your inventory report`,
         content: `Once you have entered your most important items, tap the menu icon and look for "Reports" or "Export." Sortly can generate a PDF or spreadsheet listing everything you own along with photos and values. Email this report to yourself and consider saving a copy to a cloud service like Google Drive or iCloud. Keep a copy somewhere other than your home so you can access it if your home is damaged.`,
-        tip: `Share a copy with your insurance agent — some agents can attach it directly to your policy file, which speeds up any future claims significantly.`,
+        tip: `Share a copy with your insurance agent — some agents can attach it directly to your policy file, which speeds up any future claims a lot.`,
       },
       {
         title: `Keep your inventory current`,
@@ -67,7 +67,7 @@ Trust & Will guides you through a series of plain-English questions about your w
 
 A basic will through Trust & Will covers who gets your belongings, names an executor (the person who carries out your wishes), names guardians for any minor children, and includes a healthcare directive so your medical wishes are known. A living trust goes further — it allows your estate to avoid the court process called probate, which can be slow and expensive.
 
-The cost is typically between $69 and $199 depending on whether you choose a will or a trust package. This is significantly less than working with an attorney in person, though Trust & Will does recommend consulting an attorney if your situation is complicated — for example, if you own a business, have a blended family, or have assets in multiple states.
+The cost is typically between $69 and $199 depending on whether you choose a will or a trust package. This is a lot less than working with an attorney in person, though Trust & Will does recommend consulting an attorney if your situation is complicated — for example, if you own a business, have a blended family, or have assets in multiple states.
 
 Once your documents are complete, Trust & Will provides instructions for signing and witnessing them. This step is critical: a will that is not properly signed in front of witnesses is not legally valid. Trust & Will walks you through exactly what your state requires. Many states also recommend notarizing your will, and some require it for certain documents. Trust & Will is available at trustandwill.com.`,
     steps: [
@@ -198,7 +198,7 @@ Setting up your preferences takes just a few minutes and gives you peace of mind
     difficulty: `Beginner`,
     body: `When someone passes away or becomes seriously ill, one of the most practical challenges families face is accessing digital accounts — banking, email, Amazon, medical portals, streaming services, and dozens of others. Without the passwords, families can lose access to important records, automatic bill payments may go unnoticed, and irreplaceable photos stored in cloud accounts may be permanently lost.
 
-Creating a plan to pass on your digital account information is one of the most practical and caring things you can do. It does not require a lawyer or special software, though using a password manager makes the process significantly more organized and secure.
+Creating a plan to pass on your digital account information is one of the most practical and caring things you can do. It does not require a lawyer or special software, though using a password manager makes the process a lot more organized and secure.
 
 The key challenge is balancing security with accessibility. You do not want your passwords stored somewhere easy for strangers to find, but your trusted family member needs to be able to access them in an emergency. There are a few approaches that work well, and you can choose the one that fits your comfort level.
 
@@ -309,7 +309,7 @@ The Social Security Administration strongly encourages people to apply as soon a
       },
       {
         title: `Contact the Social Security Administration`,
-        content: `You cannot apply for survivor benefits online. Call the SSA directly at 1-800-772-1213 (TTY: 1-800-325-0778), Monday through Friday from 8 a.m. to 7 p.m. Eastern time. You can also visit your local SSA office in person. To find the nearest office, go to ssa.gov and use the "Find an Office" tool. Calling ahead to make an appointment will reduce your wait time significantly.`,
+        content: `You cannot apply for survivor benefits online. Call the SSA directly at 1-800-772-1213 (TTY: 1-800-325-0778), Monday through Friday from 8 a.m. to 7 p.m. Eastern time. You can also visit your local SSA office in person. To find the nearest office, go to ssa.gov and use the "Find an Office" tool. Calling ahead to make an appointment will reduce your wait time a lot.`,
         warning: `Apply as soon as possible. Survivor benefits generally cannot be paid retroactively for months before your application date. Delays in applying mean benefits you are entitled to may not be recovered.`,
       },
       {
@@ -323,7 +323,7 @@ The Social Security Administration strongly encourages people to apply as soon a
       },
       {
         title: `Keep the SSA updated on any life changes`,
-        content: `After your benefits begin, notify the SSA of any changes that may affect them. If you get remarried before age 60, your survivor benefits may stop. If you move, update your address. If your income changes significantly or you start working, notify the SSA. Keeping your information current prevents overpayments that the SSA would later ask you to pay back.`,
+        content: `After your benefits begin, notify the SSA of any changes that may affect them. If you get remarried before age 60, your survivor benefits may stop. If you move, update your address. If your income changes a lot or you start working, notify the SSA. Keeping your information current prevents overpayments that the SSA would later ask you to pay back.`,
       },
     ],
   },
@@ -361,7 +361,7 @@ AARP's Grief and Loss resource page at aarp.org/home-family/friends-family/grief
       },
       {
         title: `Consider online therapy if you need more support`,
-        content: `If grief is significantly affecting your sleep, appetite, ability to function, or your will to engage with daily life, speaking with a licensed therapist can help. BetterHelp (betterhelp.com) and Talkspace (talkspace.com) connect you with licensed therapists who work by text, phone, or video. You can filter by specialty to find someone who focuses on grief and bereavement. Many people find it easier to open up through text or phone than in a face-to-face setting.`,
+        content: `If grief is a lot affecting your sleep, appetite, ability to function, or your will to engage with daily life, speaking with a licensed therapist can help. BetterHelp (betterhelp.com) and Talkspace (talkspace.com) connect you with licensed therapists who work by text, phone, or video. You can filter by specialty to find someone who focuses on grief and bereavement. Many people find it easier to open up through text or phone than in a face-to-face setting.`,
         warning: `If you are experiencing thoughts of harming yourself, please call or text 988 to reach the Suicide and Crisis Lifeline. Help is available 24 hours a day, seven days a week.`,
       },
       {
@@ -397,7 +397,7 @@ For tracking address changes, the USPS website (usps.com) lets you submit an off
       {
         title: `Download a moving app and set your move date`,
         content: `Download MoveAdvisor from the App Store or Google Play — it is free. Open the app and enter your move date. The app will automatically create a timeline of tasks broken into weekly chunks, starting eight weeks before your move. This gives you a clear picture of what needs to happen and when, so nothing gets left to the last minute. If you prefer not to use an app, you can find a thorough printable moving checklist at moving.com/tips/the-ultimate-moving-checklist.`,
-        tip: `Eight weeks is the recommended minimum lead time. If you have less time, start working through the checklist immediately and focus on the highest-priority tasks first.`,
+        tip: `Eight weeks is the recommended minimum lead time. If you have less time, start working through the checklist right away and focus on the highest-priority tasks first.`,
       },
       {
         title: `Create a box inventory as you pack`,
@@ -439,7 +439,7 @@ PODS is available in most major metropolitan areas in the United States. In very
       {
         title: `Get a quote at pods.com`,
         content: `Open a web browser and go to pods.com. Click "Get a Quote" and enter your current address, your destination address, and your approximate move date. The website will show you available container sizes and estimated costs. You can complete this process without calling anyone or providing a phone number, which many people find more comfortable. Review the pricing carefully, including any fees for delivery, pickup, and storage.`,
-        tip: `PODS pricing can vary significantly depending on the time of year. Summer months (May through August) are the busiest and most expensive. If your timeline is flexible, fall and winter moves tend to cost less.`,
+        tip: `PODS pricing can vary a lot depending on the time of year. Summer months (May through August) are the busiest and most expensive. If your timeline is flexible, fall and winter moves tend to cost less.`,
       },
       {
         title: `Choose your container size and schedule delivery`,
@@ -738,7 +738,7 @@ To find prices before transferring a prescription, use Costco's Drug Information
     steps: [
       {
         title: `Look up drug prices on costco.com`,
-        content: `Open a web browser and go to costco.com/pharmacy. Look for the drug information or price search tool. Type the name of your medication — use the generic name if you know it — and enter the quantity you need. The site will show you the current Costco price for that drug. Compare this to your current copay or cash price at your existing pharmacy. For many generics, Costco's price is significantly lower.`,
+        content: `Open a web browser and go to costco.com/pharmacy. Look for the drug information or price search tool. Type the name of your medication — use the generic name if you know it — and enter the quantity you need. The site will show you the current Costco price for that drug. Compare this to your current copay or cash price at your existing pharmacy. For many generics, Costco's price is a lot lower.`,
         tip: `If you are unsure whether your medication has a generic version, ask your doctor or pharmacist. Generics are available for the vast majority of common chronic condition medications.`,
       },
       {
@@ -822,7 +822,7 @@ To use Cost Plus Drugs, your doctor needs to send a prescription electronically 
     steps: [
       {
         title: `Search for your medication on costplusdrugs.com`,
-        content: `Open a web browser and go to costplusdrugs.com. Use the search box to look up any medication you currently take. The site shows the exact price for that medication — the manufacturing cost, the 15% markup, and the dispensing fee are all listed separately. Compare this total to what you currently pay at your pharmacy. For many common generics, the Cost Plus price is significantly lower.`,
+        content: `Open a web browser and go to costplusdrugs.com. Use the search box to look up any medication you currently take. The site shows the exact price for that medication — the manufacturing cost, the 15% markup, and the dispensing fee are all listed separately. Compare this total to what you currently pay at your pharmacy. For many common generics, the Cost Plus price is a lot lower.`,
         tip: `Search for the generic name of your medication, not the brand name. For example, search for "atorvastatin" instead of "Lipitor." Generic names are on your prescription bottle, usually in smaller text.`,
       },
       {

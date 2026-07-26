@@ -70,7 +70,7 @@ Yousician is available on iPhone, iPad, Android, Windows, and Mac. You can learn
       {
         title: `Download Yousician and choose your instrument`,
         content: `Search for "Yousician" in the App Store, Google Play, or visit yousician.com to download the desktop version. When you open the app, it asks which instrument you want to learn. Choose from guitar, bass, ukulele, piano, or voice. You can always add a second instrument later from your profile settings. Create a free account with your email address or sign in with Google or Apple.`,
-        tip: `Quick Tip: If you play guitar and want to learn piano too, set up guitar as your main instrument first and work through a few lessons before adding piano. Switching instruments frequently in the beginning can slow your progress on both.`,
+        tip: `Quick Tip: If you play guitar and want to learn piano too, set up guitar as your main instrument first and work through a few lessons before adding piano. Switching instruments often in the beginning can slow your progress on both.`,
       },
       {
         title: `Allow microphone access and do the sound check`,
@@ -83,7 +83,7 @@ Yousician is available on iPhone, iPad, Android, Windows, and Mac. You can learn
       },
       {
         title: `Work through your first mission`,
-        content: `Your first mission introduces the most fundamental skill for your instrument — for guitar, this is usually fretting your first chord; for piano, it is finding Middle C and playing a short scale. The screen shows you exactly where to put your fingers using diagrams or animated hand positions. Play the exercise, and Yousician scores you immediately. You need to reach a minimum score (usually around 60%) to pass and unlock the next step.`,
+        content: `Your first mission introduces the most fundamental skill for your instrument — for guitar, this is usually fretting your first chord; for piano, it is finding Middle C and playing a short scale. The screen shows you exactly where to put your fingers using diagrams or animated hand positions. Play the exercise, and Yousician scores you right away. You need to reach a minimum score (usually around 60%) to pass and unlock the next step.`,
         tip: `Quick Tip: Replay each mission until you score above 80% before moving on. A higher score means you have truly learned the skill rather than barely passing.`,
       },
       {
@@ -119,7 +119,7 @@ A free trial gives you full access for a limited time. After that, a monthly or 
       },
       {
         title: `Watch the very first lesson: holding your guitar`,
-        content: `Your first lesson covers the physical basics — how to hold the guitar, how to sit with it, and how to hold a guitar pick. Watch the full video before trying anything yourself. The instructor demonstrates both seated and standing positions and shows you common mistakes to avoid, like hunching your shoulders or gripping the pick too tightly. These basics affect everything you learn afterward, so getting them right from the start matters.`,
+        content: `Your first lesson covers the physical basics — how to hold the guitar, how to sit with it, and how to hold a guitar pick. Watch the full video before trying anything yourself. The instructor shows both seated and standing positions and shows you common mistakes to avoid, like hunching your shoulders or gripping the pick too tightly. These basics affect everything you learn afterward, so getting them right from the start matters.`,
       },
       {
         title: `Learn your first chord`,
@@ -287,7 +287,7 @@ This makes it a great starting point for anyone who wants to share their voice �
 
 The app records audio using your phone's built-in microphone. A quiet room and speaking close to your phone produces audio that is clear enough for most podcast listeners. If you want better sound quality as your show grows, an inexpensive USB microphone can make a significant difference, but it is not required to get started.
 
-Spotify for Podcasters also includes a basic editor. You can trim the beginning and end of segments, rearrange sections, and add background music from a licensed library. More advanced editing — like removing mistakes from the middle of a recording — works better in a separate tool like Audacity, but many podcasters find the built-in editing sufficient for casual shows.
+Spotify for Podcasters also includes a basic editor. You can trim the beginning and end of segments, rearrange sections, and add background music from a licensed library. More advanced editing — like removing mistakes from the middle of a recording — works better in a separate tool like Audacity, but many podcasters find the built-in editing enough for casual shows.
 
 Your podcast gets its own RSS feed, which is a standard format that podcast apps use to find and deliver new episodes to listeners. This means your show works on any podcast app, not only Spotify. Get started at podcasters.spotify.com or download the app on iPhone or Android.`,
     steps: [
@@ -357,7 +357,7 @@ The free plan is a reasonable starting point to see whether podcasting is right 
       },
       {
         title: `Enable the Magic Mastering tool`,
-        content: `Buzzsprout's Magic Mastering feature (available on paid plans) automatically analyzes and improves the sound quality of your uploaded audio. It adjusts volume levels, reduces background noise, and ensures your audio meets the loudness standards used by streaming platforms. When uploading a new episode, toggle on the Magic Mastering option before publishing. Listen to the processed version using the built-in player to confirm the audio sounds better before your episode goes live.`,
+        content: `Buzzsprout's Magic Mastering feature (available on paid plans) automatically analyzes and improves the sound quality of your uploaded audio. It adjusts volume levels, reduces background noise, and makes sure your audio meets the loudness standards used by streaming platforms. When uploading a new episode, toggle on the Magic Mastering option before publishing. Listen to the processed version using the built-in player to confirm the audio sounds better before your episode goes live.`,
       },
     ],
   },
@@ -467,7 +467,7 @@ The app includes more than 10,000 brushes covering everything from pencils and p
 
 One feature that makes ibis Paint X stand out for learners is its screen recording and community sharing system. Many artists post time-lapse videos of their drawings within the app, and you can watch them to see exactly how a drawing was built — stroke by stroke. This is a valuable way to learn techniques by watching other artists rather than reading instructions.
 
-The free version of ibis Paint X is fully functional but includes ads and has a limited number of brushes available by default. Watching a short ad unlocks additional brushes temporarily. A paid "Prime" membership removes ads and unlocks all content permanently — but many users find the free version sufficient for regular use.
+The free version of ibis Paint X is fully functional but includes ads and has a limited number of brushes available by default. Watching a short ad unlocks additional brushes temporarily. A paid "Prime" membership removes ads and unlocks all content permanently — but many users find the free version enough for regular use.
 
 ibis Paint X is available at ibisinc.com, the App Store, and Google Play. The ibis Paint official YouTube channel also has tutorial videos in English covering common techniques.`,
     steps: [
@@ -576,7 +576,7 @@ Snapseed is free with no in-app purchases and is available in the App Store and 
       },
       {
         title: `Edit a RAW photo for maximum quality`,
-        content: `To open a RAW file, tap the plus (+) or the folder icon when starting a new edit and navigate to your Files or Camera app where RAW files (typically with extensions like .DNG, .ARW, or .CR2) are stored. Snapseed opens a special RAW development screen with sliders for White Balance (the color warmth of the light), Exposure, Shadows, Highlights, and Sharpening. These sliders pull from the full range of data captured by your camera's sensor, which gives you significantly more latitude to recover detail than editing a JPEG. Adjust White Balance first, then Exposure, before applying any creative adjustments.`,
+        content: `To open a RAW file, tap the plus (+) or the folder icon when starting a new edit and navigate to your Files or Camera app where RAW files (typically with extensions like .DNG, .ARW, or .CR2) are stored. Snapseed opens a special RAW development screen with sliders for White Balance (the color warmth of the light), Exposure, Shadows, Highlights, and Sharpening. These sliders pull from the full range of data captured by your camera's sensor, which gives you a lot more latitude to recover detail than editing a JPEG. Adjust White Balance first, then Exposure, before applying any creative adjustments.`,
       },
       {
         title: `View and revise your edit history`,
@@ -598,7 +598,7 @@ Snapseed is free with no in-app purchases and is available in the App Store and 
 
 The challenge with retouching apps is knowing when to stop. The same tools that can make a portrait look great at subtle settings will make it look artificial at high settings. This guide focuses on using Facetune's tools conservatively so that edits enhance the photo rather than transform it into something that does not look like the person in it.
 
-Facetune is available on iPhone and Android. A free version includes basic tools. A subscription called Facetune Pro unlocks advanced features including AI-powered adjustments, a background editor, and additional filters. The basic free tools are sufficient for the techniques described in this guide.
+Facetune is available on iPhone and Android. A free version includes basic tools. A subscription called Facetune Pro unlocks advanced features including AI-powered adjustments, a background editor, and additional filters. The basic free tools are enough for the techniques described in this guide.
 
 Facetune works best on high-resolution photos taken in good natural light. Photos taken in dim conditions or with high compression will show poor results from any retouching because the source image does not contain enough detail for the app to work with accurately.
 
@@ -620,8 +620,8 @@ Facetune's official support page and tutorial videos are available at lightricks
       },
       {
         title: `Fix uneven lighting with the Patch or Lighten tool`,
-        content: `If part of the face is in shadow compared to the rest — a common occurrence with indoor lighting — use the "Lighten" tool to gently increase brightness in the darker area. Brush slowly over the shadowed side of the face using low intensity. This technique is called dodging and is a standard darkroom technique photographers have used for decades. A small amount of lightening can balance an uneven portrait significantly. Combine with the "Darken" tool on over-bright areas if needed.`,
-        tip: `Quick Tip: Use the undo button frequently as you work. A useful habit is to make an edit, undo it, redo it, and compare the before and after version. If you cannot clearly see the difference, the edit was either invisible (too subtle) or unnecessary.`,
+        content: `If part of the face is in shadow compared to the rest — a common occurrence with indoor lighting — use the "Lighten" tool to gently increase brightness in the darker area. Brush slowly over the shadowed side of the face using low intensity. This technique is called dodging and is a standard darkroom technique photographers have used for decades. A small amount of lightening can balance an uneven portrait a lot. Combine with the "Darken" tool on over-bright areas if needed.`,
+        tip: `Quick Tip: Use the undo button often as you work. A useful habit is to make an edit, undo it, redo it, and compare the before and after version. If you cannot clearly see the difference, the edit was either invisible (too subtle) or unnecessary.`,
       },
       {
         title: `Save and share your edited portrait`,
@@ -731,7 +731,7 @@ PicsArt is free to use with ads. A PicsArt Gold subscription removes ads, unlock
 
 This kind of background removal used to require significant skill in Photoshop and could take many minutes even for experienced users. Remove.bg does it automatically, and for the vast majority of photos involving people, animals, and products against reasonably distinct backgrounds, the result is clean and accurate.
 
-The tool is available at remove.bg and also as an app for iPhone and Android. The web version is free and lets you download the result at reduced resolution. A paid plan is available for full-resolution downloads, which matters if you are using the photos professionally or printing them. For most personal uses — social media posts, birthday invitations, profile pictures, presentations — the free reduced resolution is sufficient.
+The tool is available at remove.bg and also as an app for iPhone and Android. The web version is free and lets you download the result at reduced resolution. A paid plan is available for full-resolution downloads, which matters if you are using the photos professionally or printing them. For most personal uses — social media posts, birthday invitations, profile pictures, presentations — the free reduced resolution is enough.
 
 After removing a background, Remove.bg gives you several options. You can download the image with a transparent background as a PNG file, replace the removed background with a solid color from a palette, or upload your own custom background image. This makes it a practical tool for creating consistent profile pictures, product images, and photo composites.
 
@@ -756,7 +756,7 @@ Remove.bg processes photos on their servers, so a photo you upload leaves your d
       },
       {
         title: `Use the mobile app for photos taken on your phone`,
-        content: `If you want to remove backgrounds from photos taken on your phone, download the Remove.bg app from the App Store or Google Play. Open the app and tap the plus (+) button to import a photo from your camera roll or take a new one. The removal process works the same as the website — fast, automatic, and accurate. You can also tap "Camera" to take a photo in real time and have the background removed immediately. Save the result to your phone's camera roll.`,
+        content: `If you want to remove backgrounds from photos taken on your phone, download the Remove.bg app from the App Store or Google Play. Open the app and tap the plus (+) button to import a photo from your camera roll or take a new one. The removal process works the same as the website — fast, automatic, and accurate. You can also tap "Camera" to take a photo in real time and have the background removed right away. Save the result to your phone's camera roll.`,
         tip: `Quick Tip: The Remove.bg app also works for photos where you are the subject. Take a selfie against any wall, use Remove.bg to remove the background, and place yourself against a professional or creative background — useful for video calls, LinkedIn profile photos, or creative projects.`,
       },
     ],

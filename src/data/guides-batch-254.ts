@@ -34,7 +34,7 @@ export const guidesBatch254: Guide[] = [
       {
         title: "Carry proof of coverage with you on the trip",
         content: "Print two copies of your travel insurance policy summary and the 24/7 emergency phone number. Put one copy in your suitcase and one in your day bag. Email a copy to a family member at home. Foreign hospitals often require proof of coverage before admitting you, and you do not want to be searching for paperwork during a real emergency.",
-        tip: "Quick Tip: Save the emergency assistance phone number in your phone with a clear name like INSURANCE EMERGENCY so a stranger can find it if you cannot.",
+        tip: "Quick Tip: Save the emergency help phone number in your phone with a clear name like INSURANCE EMERGENCY so a stranger can find it if you cannot.",
       },
     ],
   },
@@ -140,7 +140,7 @@ export const guidesBatch254: Guide[] = [
       },
       {
         title: "Save the 24/7 evacuation hotline before you leave",
-        content: "Every travel insurance policy includes a 24-hour emergency assistance phone number. Save it in your phone with a name like MEDEVAC HOTLINE. Give the number to your traveling companion and to a family member back home. In a real emergency, the FIRST call is to this hotline, BEFORE arranging hospital admission or accepting a flight — they coordinate everything, including paying the foreign hospital so you do not have to wire money.",
+        content: "Every travel insurance policy includes a 24-hour emergency help phone number. Save it in your phone with a name like MEDEVAC HOTLINE. Give the number to your traveling companion and to a family member back home. In a real emergency, the FIRST call is to this hotline, BEFORE arranging hospital admission or accepting a flight — they coordinate everything, including paying the foreign hospital so you do not have to wire money.",
         tip: "Quick Tip: Many policies require you to call the hotline within 24 hours of any hospital admission. Skipping this call can result in claim denial later.",
       },
     ],

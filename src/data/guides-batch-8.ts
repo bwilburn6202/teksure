@@ -631,7 +631,7 @@ Each email app has its own signature setting, but the idea is the same: type it 
     difficulty: 'Beginner',
     body: `Two monitors give you roughly twice the workspace. You can keep email open on one screen and a document on the other, or have a video call on one while taking notes on the other. Most people who try dual monitors never go back.
 
-You need a second monitor and a cable to connect it (HDMI, DisplayPort, or USB-C). Setup on both Windows and Mac is automatic — plug it in and the second screen works immediately.`,
+You need a second monitor and a cable to connect it (HDMI, DisplayPort, or USB-C). Setup on both Windows and Mac is automatic — plug it in and the second screen works right away.`,
     steps: [
       { title: `Check your computer's ports`, content: 'Look at the back or side of your computer for video ports: HDMI is a small trapezoid, DisplayPort is similar but with a notch, and USB-C is oval. Laptops often have HDMI or USB-C.' },
       { title: 'Buy the right cable', content: 'Buy a cable that matches both the computer and the monitor. If one has HDMI and the other has USB-C, buy an HDMI-to-USB-C cable or an adapter.' },

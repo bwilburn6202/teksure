@@ -102,7 +102,7 @@ export const guidesBatch210: Guide[] = [
       {
         title: "Set the Waiting Period",
         content: "The first setting is how long Google should wait before considering the account inactive. The choices are three, six, twelve, or eighteen months. The clock starts from the last time you signed in, opened Gmail, or used another Google service. Pick the period that fits your situation. Three months is good if you want quick action. Eighteen months is more cautious. Most people pick six months. Tap Next or Continue when you have made your choice.",
-        warning: "If you pick three months, do not forget to sign in occasionally if you want the account to stay active. A long vacation could trigger the timer."
+        warning: "If you pick three months, do not forget to sign in sometimes if you want the account to stay active. A long vacation could trigger the timer."
       },
       {
         title: "Add Your Recovery Phone and Email",

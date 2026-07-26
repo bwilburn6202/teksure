@@ -164,7 +164,7 @@ Call your carrier or check their website to activate the free version if it is n
 
 **Sign up for the Do Not Call Registry**
 
-The National Do Not Call Registry (donotcall.gov) is run by the FTC. When you register your number, it is illegal for most telemarketers to call you. It will not stop all robocalls — scammers ignore the list — but it cuts down on legal telemarketing calls significantly. Registration is free and only takes a minute. Go to donotcall.gov or call 1-888-382-1222 from the number you want to register.
+The National Do Not Call Registry (donotcall.gov) is run by the FTC. When you register your number, it is illegal for most telemarketers to call you. It will not stop all robocalls — scammers ignore the list — but it cuts down on legal telemarketing calls a lot. Registration is free and only takes a minute. Go to donotcall.gov or call 1-888-382-1222 from the number you want to register.
 
 **Report unwanted calls to the FTC**
 
@@ -180,8 +180,7 @@ Sources: FTC.gov (consumer.ftc.gov), CISA.gov, AARP Fraud Watch Network, Apple S
       },
       {
         title: 'Never press any buttons during a robocall',
-        content:
-          'If you accidentally answer a robocall and hear a recorded message, hang up immediately. Do not press 1, do not press 2, do not say "yes" or "no." Pressing any button or speaking confirms to the automated system that your number is active. Your number may then be sold to other scammers, resulting in even more calls.',
+        content: 'If you accidentally answer a robocall and hear a recorded message, hang up right away. Do not press 1, do not press 2, do not say "yes" or "no." Pressing any button or speaking confirms to the automated system that your number is active. Your number may then be sold to other scammers, resulting in even more calls.',
         warning:
           'Scammers sometimes use "yes" or "no" recordings from calls to impersonate you in voice-authorization fraud. If a call asks you to confirm your name or say "yes" to agree to something, hang up.',
       },
@@ -245,7 +244,7 @@ The first type is a **prepaid wireless plan**. This works like a regular phone p
 
 The second type is a **pay-as-you-go card**, sometimes called a minutes card or airtime card. These are physical cards sold in stores. You buy the card, scratch off a code on the back, and enter that code on your phone or on the carrier's website to add a block of minutes (and sometimes texts or data) to your account. Minutes may expire after 30, 60, or 90 days if you do not use them, depending on the plan. Tracfone is the most well-known carrier for this type of service.
 
-For most seniors who use their phone occasionally, a prepaid plan with a small monthly allowance is more convenient than managing minutes cards — but the cards are useful as a backup or gift, and some people prefer the direct control of only paying for what they add.
+For most seniors who use their phone sometimes, a prepaid plan with a small monthly allowance is more convenient than managing minutes cards — but the cards are useful as a backup or gift, and some people prefer the direct control of only paying for what they add.
 
 **Where to buy prepaid cards and plans**
 
@@ -423,8 +422,7 @@ Sources: Microsoft Support (support.microsoft.com), How-To Geek, GCFGlobal.`,
       },
       {
         title: 'Turn on High Contrast mode',
-        content:
-          'Press and hold the Left Alt key, the Left Shift key, and the Print Screen key all at the same time. (Print Screen is usually labeled "PrtScn" or "PrtSc" and is located in the upper-right area of the keyboard.) A small window will appear asking if you want to turn on High Contrast — click "Yes." The screen colors will change immediately to a high-contrast theme. To turn it off, press the same three keys again. You can also choose a specific contrast theme through Settings > Accessibility > Contrast Themes.',
+        content: 'Press and hold the Left Alt key, the Left Shift key, and the Print Screen key all at the same time. (Print Screen is usually labeled "PrtScn" or "PrtSc" and is located in the upper-right area of the keyboard.) A small window will appear asking if you want to turn on High Contrast — click "Yes." The screen colors will change right away to a high-contrast theme. To turn it off, press the same three keys again. You can also choose a specific contrast theme through Settings > Accessibility > Contrast Themes.',
         tip: 'If pressing three keys at once is difficult, you can enable Sticky Keys in the same Accessibility settings. Sticky Keys lets you press key combinations one key at a time instead of all at once.',
       },
       {

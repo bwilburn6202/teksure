@@ -96,7 +96,7 @@ The Files app is the blue folder icon on your home screen. If you do not see it,
       {
         title: `Scan a document with your phone camera`,
         content: `In the Files app, navigate to a folder where you want to save the scan. Tap the three dots (...) at the top right → "Scan Documents." Point your phone camera at a paper document — the app detects its edges automatically and captures it. Tap "Keep Scan" and then "Save" to create a PDF.`,
-        tip: `Quick Tip: Scanned documents saved in iCloud Drive are available on your Mac and iPad immediately — great for filing important papers digitally.`,
+        tip: `Quick Tip: Scanned documents saved in iCloud Drive are available on your Mac and iPad right away — great for filing important papers digitally.`,
       },
       {
         title: `Connect Google Drive or Dropbox`,
@@ -216,7 +216,7 @@ Requirements: iPad with iPadOS 13 or later (most iPads from 2014 onward), Mac ru
     difficulty: `Beginner`,
     body: `Apple devices that are signed into the same Apple ID can work together in smooth ways through a set of features called Continuity. Two of the most useful are Handoff and Universal Clipboard.
 
-**Handoff** lets you start a task on one device and immediately continue it on another. For example: start reading an email on your iPhone while walking to your desk, then pick up right where you left off on your Mac without having to find the same email. Or start writing a note on your Mac, then continue writing it on your iPhone while on the couch.
+**Handoff** lets you start a task on one device and right away continue it on another. For example: start reading an email on your iPhone while walking to your desk, then pick up right where you left off on your Mac without having to find the same email. Or start writing a note on your Mac, then continue writing it on your iPhone while on the couch.
 
 Apps that support Handoff: Mail, Messages, Safari, Notes, Maps, Calendar, Contacts, Reminders, FaceTime, and many third-party apps like Pages, Numbers, and Keynote.
 
@@ -275,7 +275,7 @@ Requirements: Mac with macOS Yosemite or later, iPhone with iOS 8 or later, both
     steps: [
       {
         title: `Open Messages on your Mac`,
-        content: `Click the green Messages icon in your Dock (the speech bubble icon). If you are already signed into your Apple ID on your Mac, your iMessage conversations should appear immediately. Scroll through conversations on the left panel.`,
+        content: `Click the green Messages icon in your Dock (the speech bubble icon). If you are already signed into your Apple ID on your Mac, your iMessage conversations should appear right away. Scroll through conversations on the left panel.`,
       },
       {
         title: `Sign in if prompted`,
@@ -312,7 +312,7 @@ Requirements: Mac with macOS Yosemite or later, iPhone with iOS 8 or later, both
 
 FaceTime on Mac has all the same features as on iPhone: video calls, audio-only calls, group calls with multiple people, and SharePlay for watching content together.
 
-The Mac's microphone and speakers (or headphones) handle the audio. The Mac's built-in camera handles video — though if you set up Continuity Camera (using your iPhone as the webcam), calls look significantly better.
+The Mac's microphone and speakers (or headphones) handle the audio. The Mac's built-in camera handles video — though if you set up Continuity Camera (using your iPhone as the webcam), calls look a lot better.
 
 You can call anyone with an Apple device or — since 2021 — generate a FaceTime link and invite Android or Windows users to join from their web browser.
 
@@ -393,7 +393,7 @@ Notes sync via iCloud, so anything you write on iPhone appears on your Mac and i
       },
       {
         title: `Use Quick Note on Mac`,
-        content: `On your Mac, move your cursor to the very bottom-right corner of the screen. A yellow Quick Note window appears. Click it to start typing a note immediately without opening the Notes app. The Quick Note syncs to your iPhone and is accessible in the Notes app under "Quick Notes."`,
+        content: `On your Mac, move your cursor to the very bottom-right corner of the screen. A yellow Quick Note window appears. Click it to start typing a note right away without opening the Notes app. The Quick Note syncs to your iPhone and is accessible in the Notes app under "Quick Notes."`,
       },
     ],
   },
@@ -408,15 +408,15 @@ Notes sync via iCloud, so anything you write on iPhone appears on your Mac and i
     thumbnailEmoji: ``,
     publishedAt: `2026-04-19`,
     difficulty: `Beginner`,
-    body: `BenefitsCheckUp is a free, confidential online tool from the National Council on Aging (NCOA) that helps older adults and people with limited income find government and nonprofit assistance programs they may qualify for.
+    body: `BenefitsCheckUp is a free, confidential online tool from the National Council on Aging (NCOA) that helps older adults and people with limited income find government and nonprofit help programs they may qualify for.
 
 Many people who are eligible for help — with utility bills, prescription costs, food, housing, and healthcare — never apply because they do not know the programs exist. BenefitsCheckUp screens you for over 2,000 federal, state, and local programs in one place.
 
 Programs it can find include:
-- **LIHEAP** (Low Income Home Energy Assistance Program) — help with heating and cooling bills
+- **LIHEAP** (Low Income Home Energy Help Program) — help with heating and cooling bills
 - **Extra Help / LIS** — reduces Medicare prescription drug costs
 - **Medicare Savings Programs** — help paying Medicare premiums
-- **SNAP** (food assistance)
+- **SNAP** (food help)
 - **CHIP and Medicaid** — health coverage
 - **Property tax relief** for seniors and people with disabilities
 - **Utility company discount programs** — many electric companies offer low-income rates
@@ -438,7 +438,7 @@ The website is benefitscheckup.org. It is free and takes about 10 minutes to com
       {
         title: `Review your results`,
         content: `After completing the questionnaire, you will see a list of programs you may qualify for — each with a brief description, estimated benefit amount or value, and eligibility notes. Programs are grouped by category: Health, Food, Energy, Housing, Employment, and Tax Relief.`,
-        tip: `Quick Tip: Even if you have applied for some programs before, check the full list — new programs are added regularly and state-level benefits change frequently.`,
+        tip: `Quick Tip: Even if you have applied for some programs before, check the full list — new programs are added regularly and state-level benefits change often.`,
       },
       {
         title: `Get details on each program`,
@@ -462,7 +462,7 @@ The website is benefitscheckup.org. It is free and takes about 10 minutes to com
     thumbnailEmoji: ``,
     publishedAt: `2026-04-19`,
     difficulty: `Beginner`,
-    body: `VITA (Volunteer Income Tax Assistance) is a free IRS program that provides tax preparation help to people who generally earn $67,000 or less, have disabilities, or have limited English. Trained IRS-certified volunteers prepare your federal and often state tax return at no charge.
+    body: `VITA (Volunteer Income Tax Help) is a free IRS program that provides tax preparation help to people who generally earn $67,000 or less, have disabilities, or have limited English. Trained IRS-certified volunteers prepare your federal and often state tax return at no charge.
 
 There is also a sister program called **TCE** (Tax Counseling for the Elderly), which specializes in tax issues unique to seniors — including retirement income, Social Security benefits, and Medicare deductions. TCE is offered by organizations like AARP and has no income limit requirement.
 
@@ -638,7 +638,7 @@ For most people, casting from a phone or using a laptop + HDMI cable are the sim
       {
         title: `Install Zoom on Amazon Fire TV`,
         content: `On your Fire TV: go to the Home screen → Find → Search → type "Zoom." Install the Zoom for Home app. Sign in with your Zoom account. For video, you need a separate USB-C or compatible camera connected to the Fire TV USB port (Logitech or Zoom Rooms camera). Without a camera, you can see others but they cannot see you.`,
-        tip: `Quick Tip: A Bluetooth speaker and camera can significantly improve audio quality for large-screen Zoom calls on Fire TV.`,
+        tip: `Quick Tip: A Bluetooth speaker and camera can a lot improve audio quality for large-screen Zoom calls on Fire TV.`,
       },
       {
         title: `Use a laptop connected via HDMI`,
@@ -741,7 +741,7 @@ Why check your report?
       },
       {
         title: `Understand what happens next`,
-        content: `Once you file a dispute: the card company may immediately issue a provisional (temporary) credit to your account for the disputed amount. They then investigate — contacting the merchant for their side of the story. The investigation typically takes 30–45 days. You will receive a letter or email with the outcome.`,
+        content: `Once you file a dispute: the card company may right away issue a provisional (temporary) credit to your account for the disputed amount. They then investigate — contacting the merchant for their side of the story. The investigation typically takes 30–45 days. You will receive a letter or email with the outcome.`,
       },
       {
         title: `Keep records of everything`,
@@ -839,7 +839,7 @@ The best time to download language packs is before you board your flight or leav
       },
       {
         title: `Translate text offline`,
-        content: `Open Google Translate. Tap the left language box and select a downloaded language (a download arrow icon confirms it is saved offline). Type or paste text. The translation appears below immediately — no internet needed.`,
+        content: `Open Google Translate. Tap the left language box and select a downloaded language (a download arrow icon confirms it is saved offline). Type or paste text. The translation appears below right away — no internet needed.`,
         tip: `If you see an error or "Internet connection required," it means you tried to use a language you have not downloaded. Go back to Offline languages and download the ones you need.`,
       },
       {

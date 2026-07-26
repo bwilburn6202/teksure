@@ -142,7 +142,7 @@ If this is your very first iPad, setup takes about 10 to 15 minutes. Apple's set
     difficulty: `Intermediate`,
     body: `You've probably noticed that after you search for something online or look at a product, ads for that item seem to follow you everywhere — on websites, in apps, and on social media. This is called targeted or personalized advertising, and it's powered by tracking systems that monitor your browsing behavior, your location, and your purchase history.
 
-You can't make all ads disappear, but you can significantly reduce how much tracking happens and stop companies from using your data to build a detailed profile about you. It takes about 15 to 20 minutes to go through these settings across your main devices and accounts, and the effect is noticeable.
+You can't make all ads disappear, but you can a lot reduce how much tracking happens and stop companies from using your data to build a detailed profile about you. It takes about 15 to 20 minutes to go through these settings across your main devices and accounts, and the effect is noticeable.
 
 There are four main places to adjust: your iPhone or Android's advertising settings, your Google account, your Facebook account, and your web browser. Each of these controls a different slice of the tracking ecosystem.
 
@@ -183,7 +183,7 @@ One important thing to understand: opting out of targeted ads doesn't mean you'l
     difficulty: `Beginner`,
     body: `Nobody reads privacy policies. They're often 10 to 30 pages of dense legal language, and companies know most users skip them entirely. But ignoring them completely can mean unknowingly agreeing to have your data sold, your location tracked around the clock, or your photos used for commercial purposes.
 
-You don't need to read every word. Instead, you can scan for five specific red flags that indicate a company is collecting more than it needs or using your data in ways you probably wouldn't agree to if someone explained it in plain English.
+You don't need to read every word. Instead, you can scan for five specific red flags that show a company is collecting more than it needs or using your data in ways you probably wouldn't agree to if someone explained it in plain English.
 
 Use your browser's Ctrl+F (Windows) or Cmd+F (Mac) search function to quickly find these phrases in a long policy. On your phone, look for a "Find on page" option in your browser menu. This turns a 30-minute read into a 3-minute scan.
 
@@ -210,7 +210,7 @@ Privacy policies are legally required disclosures, so companies must disclose wh
         content: `Search for "delete," "opt-out," or "right to erasure." A good policy explicitly tells you how to delete your account and your data: "Contact privacy@company.com to request deletion of your personal information." If the policy is silent on deletion rights, or only describes an opt-out from marketing emails (not from all data use), you have very little control over what happens to your information.`,
       },
     ],
-    tip: `Quick Tip — Before signing up for any new app or service, Google the company name plus "privacy" or "data breach." If they've had a major breach in the past, it usually comes up immediately. It takes 10 seconds and can save a lot of trouble.`,
+    tip: `Quick Tip — Before signing up for any new app or service, Google the company name plus "privacy" or "data breach." If they've had a major breach in the past, it usually comes up right away. It takes 10 seconds and can save a lot of trouble.`,
   },
   {
     slug: `device-end-of-life-guide`,
@@ -265,7 +265,7 @@ Android support varies by manufacturer. Google Pixel phones receive 5–7 years 
     thumbnailEmoji: ``,
     publishedAt: `2026-04-21`,
     difficulty: `Beginner`,
-    body: `Google releases updates for Chrome frequently — sometimes every few weeks. Most of these updates include security fixes that protect you from the latest browser vulnerabilities, phishing tricks, and malware techniques. Running an outdated version of Chrome means those protections aren't in place.
+    body: `Google releases updates for Chrome often — sometimes every few weeks. Most of these updates include security fixes that protect you from the latest browser vulnerabilities, phishing tricks, and malware techniques. Running an outdated version of Chrome means those protections aren't in place.
 
 The good news is that Chrome is designed to update itself automatically. If you leave Chrome open and running in the background, it usually updates on its own and you never have to think about it. But if you close Chrome completely every time you're done using it, automatic updates may not have had a chance to install. In that case, you need to update manually.
 
@@ -367,7 +367,7 @@ For anyone who uses reading glasses, has difficulty with small text, or uses the
       },
       {
         title: `Test the shortcut`,
-        content: `On newer iPhones (without a Home button): triple-click the side button (the narrow button on the right edge). On older iPhones with a Home button: triple-click the round Home button at the bottom. If you assigned one feature, it activates immediately. If you assigned multiple features, a menu pops up listing your choices — tap the one you want to use.`,
+        content: `On newer iPhones (without a Home button): triple-click the side button (the narrow button on the right edge). On older iPhones with a Home button: triple-click the round Home button at the bottom. If you assigned one feature, it activates right away. If you assigned multiple features, a menu pops up listing your choices — tap the one you want to use.`,
       },
       {
         title: `Use Magnifier to read small print`,
@@ -443,7 +443,7 @@ All of these settings can be protected with a Screen Time passcode that's differ
     steps: [
       {
         title: `Turn on Screen Time`,
-        content: `Go to Settings > Screen Time. Tap "Turn On Screen Time." Read the brief introduction and tap "This is My iPhone" (not "This is My Child's iPhone"). Screen Time immediately starts tracking which apps you use and for how long — you'll see a report after one day.`,
+        content: `Go to Settings > Screen Time. Tap "Turn On Screen Time." Read the brief introduction and tap "This is My iPhone" (not "This is My Child's iPhone"). Screen Time right away starts tracking which apps you use and for how long — you'll see a report after one day.`,
       },
       {
         title: `View your current app usage`,
@@ -459,7 +459,7 @@ All of these settings can be protected with a Screen Time passcode that's differ
       },
       {
         title: `Set a Screen Time passcode (optional)`,
-        content: `In Settings > Screen Time, scroll down and tap "Use Screen Time Passcode." Enter a 4-digit code (different from your iPhone passcode). With this set, you'll need to enter the passcode to override any limit or change Screen Time settings. This is optional but helps if you find yourself frequently overriding your own limits.`,
+        content: `In Settings > Screen Time, scroll down and tap "Use Screen Time Passcode." Enter a 4-digit code (different from your iPhone passcode). With this set, you'll need to enter the passcode to override any limit or change Screen Time settings. This is optional but helps if you find yourself often overriding your own limits.`,
       },
     ],
     tip: `Quick Tip — Start with just one app limit — the one you feel pulls you in most. Seeing the "Time Limit Reached" message once a day builds awareness. You don't need to limit everything at once.`,
@@ -505,7 +505,7 @@ Third, other people nearby can see your hotspot name (called the SSID) — but t
         content: `While the hotspot is active, keep an eye on data usage. On iPhone, go to Settings > Cellular > scroll down to see data used this period. On Android, go to Settings > Network > Data Usage. Avoid streaming video or downloading large files over the hotspot — those activities use data quickly. When you're done, turn the hotspot off in Settings to stop data usage and save battery.`,
       },
     ],
-    tip: `Quick Tip — If someone is connecting to your hotspot and you're unsure who it is, you can see connected devices in the hotspot settings and disconnect anyone you don't recognize. Change your hotspot password immediately if you think it's been shared with someone who shouldn't have it.`,
+    tip: `Quick Tip — If someone is connecting to your hotspot and you're unsure who it is, you can see connected devices in the hotspot settings and disconnect anyone you don't recognize. Change your hotspot password right away if you think it's been shared with someone who shouldn't have it.`,
   },
   {
     slug: `print-from-iphone-guide`,
@@ -683,7 +683,7 @@ HDMI cables are inexpensive. A quality cable for everyday use costs $5 to $15 at
     difficulty: `Beginner`,
     body: `If your Windows computer has been running slower than usual, showing unexpected pop-ups, redirecting you to strange websites, or behaving strangely, malware could be the cause. Malware is a general term for any software that's been installed without your knowledge and is doing something harmful — from collecting your passwords to sending spam to displaying ads you can't close.
 
-The good news: Windows comes with a full antivirus program called Microsoft Defender (previously Windows Defender) that's free, already installed, and updates automatically. For most everyday threats, Defender is entirely sufficient. You don't need to pay for a separate antivirus if you're running Windows 10 or 11.
+The good news: Windows comes with a full antivirus program called Microsoft Defender (previously Windows Defender) that's free, already installed, and updates automatically. For most everyday threats, Defender is entirely enough. You don't need to pay for a separate antivirus if you're running Windows 10 or 11.
 
 For a second opinion and to catch things Defender might miss, Malwarebytes Free is the most trusted free malware scanner. It's not a replacement for Defender — it's a complementary tool you can run periodically. The free version lets you scan and remove malware manually (it doesn't run in the background unless you pay for the premium version).
 
@@ -767,7 +767,7 @@ Once your account is set up, you'll be using it for years, so take a few extra m
     difficulty: `Beginner`,
     body: `It's normal for a smartphone to feel warm during heavy use — like a long video call, streaming video, or charging. But if your phone feels hot to the touch, shuts down with a temperature warning, or is uncomfortably warm even when you're not doing anything, something needs attention.
 
-Excessive heat is one of the most common causes of long-term battery damage. Lithium-ion batteries — the type used in virtually all smartphones — degrade faster when exposed to high temperatures. A phone that frequently overheats will have noticeably shorter battery life within a year.
+Excessive heat is one of the most common causes of long-term battery damage. Lithium-ion batteries — the type used in virtually all smartphones — degrade faster when exposed to high temperatures. A phone that often overheats will have noticeably shorter battery life within a year.
 
 There are five common causes of phone overheating: direct sunlight, using the phone while charging (especially gaming), a case that traps heat, too many apps running in the background, and, less commonly, a failing battery.
 
@@ -873,7 +873,7 @@ Setting up a Sleep schedule in the Focus system is particularly valuable. It aut
       },
       {
         title: `Allow repeated calls to ring through`,
-        content: `This is an important safety setting. Go to Settings > Focus, tap Do Not Disturb, tap "People," scroll down, and turn on "Allow Repeated Calls." With this on, if the same number calls twice within three minutes, the call will ring out loud even during Do Not Disturb. This ensures a genuine emergency reaches you even when you're in sleep mode.`,
+        content: `This is an important safety setting. Go to Settings > Focus, tap Do Not Disturb, tap "People," scroll down, and turn on "Allow Repeated Calls." With this on, if the same number calls twice within three minutes, the call will ring out loud even during Do Not Disturb. This makes sure a genuine emergency reaches you even when you're in sleep mode.`,
       },
       {
         title: `Set Do Not Disturb to turn on automatically while driving`,
@@ -896,9 +896,9 @@ Setting up a Sleep schedule in the Focus system is particularly valuable. It aut
 
 Google Lens is built into Android phones and comes with the Google app. On iPhone, it's available inside the Google app and Google Photos. You can access it from the Google Search bar, from Google Photos, from Google Assistant, and on some Android phones through the camera app directly.
 
-Common uses that people find immediately valuable: identifying a plant or flower in your garden, finding where a product is sold online (just point the camera at the product), translating a sign or menu from a foreign language, copying text from a physical piece of paper (like a receipt or business card) into your phone, solving a math problem by pointing the camera at the equation, and looking up information on a book by pointing at the cover.
+Common uses that people find right away valuable: identifying a plant or flower in your garden, finding where a product is sold online (just point the camera at the product), translating a sign or menu from a foreign language, copying text from a physical piece of paper (like a receipt or business card) into your phone, solving a math problem by pointing the camera at the equation, and looking up information on a book by pointing at the cover.
 
-For seniors, the plant identification and translation features are frequently the most used — especially travelers who encounter foreign-language menus or signs and people who want to identify garden plants without knowing the name.`,
+For seniors, the plant identification and translation features are often the most used — especially travelers who encounter foreign-language menus or signs and people who want to identify garden plants without knowing the name.`,
     steps: [
       {
         title: `Find Google Lens on your phone`,
@@ -935,7 +935,7 @@ For seniors, the plant identification and translation features are frequently th
     difficulty: `Beginner`,
     body: `Widgets are small boxes on your iPhone's Home Screen that show live information from your apps without you having to open anything. A weather widget shows today's forecast at a glance. A calendar widget shows your next appointment. A battery widget shows how much charge your iPhone and AirPods have. A Photos widget cycles through your favorite pictures.
 
-Widgets were significantly improved in iOS 14 and have gotten even better in iOS 16 and 17 — you can now place them freely on your Home Screen alongside apps, not just in a sidebar. In iOS 17, there are also Interactive Widgets that you can tap to perform actions directly (like checking off a reminder or playing/pausing music) without opening the app.
+Widgets were a lot improved in iOS 14 and have gotten even better in iOS 16 and 17 — you can now place them freely on your Home Screen alongside apps, not just in a sidebar. In iOS 17, there are also Interactive Widgets that you can tap to perform actions directly (like checking off a reminder or playing/pausing music) without opening the app.
 
 Adding widgets is done in a visual editing mode that Apple calls "jiggle mode" — when you hold down on the Home Screen, all the icons start shaking (jiggling). In this mode you can add, move, and delete widgets.
 

@@ -136,7 +136,7 @@ export const guidesBatch217: Guide[] = [
     steps: [
       {
         title: "Stop and Listen for the Warning Signs",
-        content: "When a caller says they are from Medicare, do not respond right away. Listen for these warning signs in their first few sentences. Did they ask you to verify your Medicare number or Social Security number? Did they say your Medicare card is being canceled, suspended, or upgraded? Did they offer a free knee brace, back brace, walker, scooter, COVID test, or genetic test? Did they say a new Medicare card is coming and they need to confirm your address or bank account? Did they use words like \"urgent,\" \"immediately,\" or \"today only\"? Any one of these is a strong scam signal. Two or more together, and you can hang up with full confidence.",
+        content: "When a caller says they are from Medicare, do not respond right away. Listen for these warning signs in their first few sentences. Did they ask you to verify your Medicare number or Social Security number? Did they say your Medicare card is being canceled, suspended, or upgraded? Did they offer a free knee brace, back brace, walker, scooter, COVID test, or genetic test? Did they say a new Medicare card is coming and they need to confirm your address or bank account? Did they use words like \"urgent,\" \"right away,\" or \"today only\"? Any one of these is a strong scam signal. Two or more together, and you can hang up with full confidence.",
         warning: "Even if the caller ID shows \"Medicare\" or a 1-800 number, the display can be faked. Scammers use software that puts any name or number on your caller ID screen."
       },
       {

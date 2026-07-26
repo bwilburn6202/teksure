@@ -29,7 +29,7 @@ There are actually three types of 5G:
 
 *Low-band 5G:* This is what most people have when their phone shows "5G." It uses the same type of radio waves as 4G, just optimized a bit better. Speed is similar to a good 4G connection — maybe 30–200 Mbps. Coverage is excellent — works in rural areas, indoors, and everywhere 4G worked. If your phone shows "5G" in a suburban or rural area, this is almost certainly what you have.
 
-*Mid-band 5G:* Significantly faster than 4G — often 200–900 Mbps in good conditions. Available in most mid-size and large cities. This is the 5G where you might actually notice a speed improvement for streaming or large downloads.
+*Mid-band 5G:* A lot faster than 4G — often 200–900 Mbps in good conditions. Available in most mid-size and large cities. This is the 5G where you might actually notice a speed improvement for streaming or large downloads.
 
 *Millimeter wave (mmWave) 5G:* Extremely fast (1+ Gbps in ideal conditions) but only works within a few hundred feet of a special antenna, cannot penetrate walls, and is only found in dense urban areas like downtown Manhattan or airports. Very few people encounter this in daily life.
 
@@ -391,7 +391,7 @@ A website selling popular products that was registered last week is suspicious. 
 
 **Check 7: Look for too-good-to-be-true prices**
 
-If a site is offering iPhones for $89, Nike shoes for $15, or concert tickets at 80% off face value — it is almost certainly a scam. Prices significantly below market value are bait.
+If a site is offering iPhones for $89, Nike shoes for $15, or concert tickets at 80% off face value — it is almost certainly a scam. Prices a lot below market value are bait.
 
 Real discounts are usually 10–40% off. If it seems impossibly cheap, it is.
 
@@ -407,7 +407,7 @@ Real discounts are usually 10–40% off. If it seems impossibly cheap, it is.
 Act quickly:
 1. Call your bank or credit card company and report potential fraud. Ask them to watch for unauthorized charges or issue a new card number.
 2. If you paid by gift card: report to the gift card company and the FTC — recovery is difficult but report it.
-3. If you paid by wire transfer: contact your bank immediately and also report to ic3.gov (FBI Internet Crime Complaint Center).
+3. If you paid by wire transfer: contact your bank right away and also report to ic3.gov (FBI Internet Crime Complaint Center).
 4. Check your credit report at annualcreditreport.com to watch for new accounts opened in your name.
 
 **Websites you can always trust (official sources)**

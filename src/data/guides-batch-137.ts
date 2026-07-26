@@ -323,7 +323,7 @@ Watch a walkthrough: search YouTube for "How to use Apple Pay 2026" — Apple Su
       {
         title: 'Why Apple Pay is safer than a physical card',
         content: 'When you tap your iPhone, the store does not get your real card number. Instead, your iPhone creates a one-time "token" — a fake card number that only works for that one transaction. If hackers later steal data from the store (this happens often), your real card number is not in the stolen data, so you do not need to cancel your card. You also do not type your PIN on a keypad that could have a hidden camera. And every purchase requires Face ID or your passcode, so a thief who steals your phone cannot use Apple Pay.',
-        warning: 'If you lose your phone, immediately go to icloud.com/find on another device or computer and click "Mark As Lost." This disables Apple Pay on the missing phone instantly.',
+        warning: 'If you lose your phone, right away go to icloud.com/find on another device or computer and click "Mark As Lost." This disables Apple Pay on the missing phone instantly.',
       },
     ],
   },
@@ -425,7 +425,7 @@ Watch a walkthrough: search YouTube for "block political texts iPhone 2026" — 
       },
       {
         title: 'Register on the FTC Do Not Call list (limited help)',
-        content: 'Go to donotcall.gov and register your cell phone number. This is free. It does NOT block political texts — but it DOES block telemarketing calls and texts from for-profit companies. After 31 days, illegal telemarketers can be reported and fined. Political campaigns are still exempt, but cutting out commercial spam reduces your overall spam volume significantly.',
+        content: 'Go to donotcall.gov and register your cell phone number. This is free. It does NOT block political texts — but it DOES block telemarketing calls and texts from for-profit companies. After 31 days, illegal telemarketers can be reported and fined. Political campaigns are still exempt, but cutting out commercial spam reduces your overall spam volume a lot.',
       },
       {
         title: 'Use a spam-blocking app for extra coverage',

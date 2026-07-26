@@ -581,7 +581,7 @@ Claude is a powerful tool for thinking through problems and handling writing tas
     steps: [
       {
         title: `Create a free account at claude.ai`,
-        content: `Go to claude.ai in any web browser, or download the Claude app on your phone. Click Sign Up and use your email or Google account. The free tier is available immediately after signing up.`,
+        content: `Go to claude.ai in any web browser, or download the Claude app on your phone. Click Sign Up and use your email or Google account. The free tier is available right away after signing up.`,
       },
       {
         title: `Start a conversation`,
@@ -620,7 +620,7 @@ After getting an initial answer, you can ask follow-up questions in the same thr
 
 The Focus feature lets you narrow where Perplexity searches. Options include All (general web), Academic (research papers), YouTube (finds relevant videos), Reddit (finds community discussions), and News (recent articles only). Selecting YouTube and searching "how to replace a bathroom faucet" is an excellent way to find tutorial videos quickly.
 
-Perplexity Pro (~$20 per month) uses more powerful AI models from OpenAI and Anthropic in the background and allows uploading files for analysis. The free tier is sufficient for everyday research needs.
+Perplexity Pro (~$20 per month) uses more powerful AI models from OpenAI and Anthropic in the background and allows uploading files for analysis. The free tier is enough for everyday research needs.
 
 Google is still better for finding local businesses, checking hours, shopping for specific products, or anything that requires a map. Perplexity is better when you have a genuine question that needs a synthesized answer rather than a list of links.`,
     category: `ai-guides`,
@@ -632,7 +632,7 @@ Google is still better for finding local businesses, checking hours, shopping fo
     steps: [
       {
         title: `Open Perplexity`,
-        content: `Go to perplexity.ai in any web browser, or download the Perplexity app from the App Store or Google Play. You can search immediately without creating an account.`,
+        content: `Go to perplexity.ai in any web browser, or download the Perplexity app from the App Store or Google Play. You can search right away without creating an account.`,
       },
       {
         title: `Ask a question in plain English`,
@@ -810,7 +810,7 @@ When you've saved the collage, share it by text message, email, or post it on so
 
 Creating an account on Snapfish is free, and storing your photos there is also free — Snapfish offers unlimited photo storage, which makes it a useful backup option as well as a place to order from.
 
-Standard photo prints are the most popular product. Sizes include 4x6 (the classic wallet-size), 5x7 (good for frames), 8x10 (portrait-style), and larger. Standard 4x6 prints typically cost around $0.09 to $0.19 each, depending on whether there's a promotion running. Snapfish runs sales frequently — sometimes 50% to 70% off — so it pays to check before ordering.
+Standard photo prints are the most popular product. Sizes include 4x6 (the classic wallet-size), 5x7 (good for frames), 8x10 (portrait-style), and larger. Standard 4x6 prints typically cost around $0.09 to $0.19 each, depending on whether there's a promotion running. Snapfish runs sales often — sometimes 50% to 70% off — so it pays to check before ordering.
 
 To order prints, upload photos from your phone or computer. In the mobile app, tap the + button to add photos directly from your camera roll. On the website, click Upload Photos and select files from your computer. Once uploaded, choose a product type — Prints, Photo Books, Gifts — and follow the customization steps.
 
@@ -849,7 +849,7 @@ Snapfish stores all the photos you upload, and you can re-order the same photos 
       },
       {
         title: `Check for promo codes and order`,
-        content: `Before checking out, search "Snapfish promo code" in a web browser — Snapfish frequently runs 50% to 70% off sales. Apply the code at checkout, then enter your shipping address and payment information.`,
+        content: `Before checking out, search "Snapfish promo code" in a web browser — Snapfish often runs 50% to 70% off sales. Apply the code at checkout, then enter your shipping address and payment information.`,
         tip: `Standard shipping takes 7 to 10 business days. If you need prints for an event, order at least two weeks ahead.`,
       },
     ],
@@ -872,7 +872,7 @@ Wireless Debugging is a newer feature that allows some of the same functionality
 
 Force GPU Rendering can make some apps smoother on older phones by routing all drawing tasks through the graphics chip.
 
-One clear warning: do not randomly change settings in Developer Options that you don't understand. Some settings reduce battery life significantly (like keeping the screen always on), others can cause specific apps to malfunction, and a few could expose your phone to security vulnerabilities. If something goes wrong, you can disable Developer Options entirely by going back to Settings > Developer Options and toggling it off at the top.`,
+One clear warning: do not randomly change settings in Developer Options that you don't understand. Some settings reduce battery life a lot (like keeping the screen always on), others can cause specific apps to malfunction, and a few could expose your phone to security vulnerabilities. If something goes wrong, you can disable Developer Options entirely by going back to Settings > Developer Options and toggling it off at the top.`,
     category: `phone-guides`,
     tags: [`android`, `developer options`, `hidden settings`, `performance`, `troubleshooting`],
     thumbnailEmoji: ``,
@@ -891,7 +891,7 @@ One clear warning: do not randomly change settings in Developer Options that you
       },
       {
         title: `Speed up animations`,
-        content: `Scroll down to find Window Animation Scale, Transition Animation Scale, and Animator Duration Scale. Tap each one and set it to 0.5x. Your phone's menus and transitions will immediately feel faster.`,
+        content: `Scroll down to find Window Animation Scale, Transition Animation Scale, and Animator Duration Scale. Tap each one and set it to 0.5x. Your phone's menus and transitions will right away feel faster.`,
         tip: `Setting the scale to "Animation off" removes animations entirely, which is even faster but some people find it disorienting.`,
       },
       {

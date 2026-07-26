@@ -172,7 +172,7 @@ OfferUp is one of the best options for selling things like couches, TVs, exercis
       },
       {
         title: 'Post an item',
-        content: 'Tap the "+ Post" button at the bottom of the screen. Take photos of your item (up to 10 photos). Enter a title, description, category, and condition. Set your price. Tap "Post" when ready. Your listing goes live immediately for buyers in your area.',
+        content: 'Tap the "+ Post" button at the bottom of the screen. Take photos of your item (up to 10 photos). Enter a title, description, category, and condition. Set your price. Tap "Post" when ready. Your listing goes live right away for buyers in your area.',
         tip: 'Include measurements for furniture and the model number for electronics. Buyers search for specific models.',
       },
       {
@@ -458,7 +458,7 @@ Citizen does not replace calling 911 in an emergency — it's an information too
       },
       {
         title: 'Set your alert radius',
-        content: `Go to Settings → Notifications and set your alert radius — the distance around your home address that will trigger alerts. A half-mile to 1-mile radius is good for staying informed about what's immediately nearby. You can set up to 3 different alert areas (home, work, a family member's address).`,
+        content: `Go to Settings → Notifications and set your alert radius — the distance around your home address that will trigger alerts. A half-mile to 1-mile radius is good for staying informed about what's right away nearby. You can set up to 3 different alert areas (home, work, a family member's address).`,
         tip: `You can add a second location — like a child's or parent's neighborhood — to receive alerts from areas you care about even when you're elsewhere.`,
       },
       {
@@ -590,7 +590,7 @@ Before Circle to Search existed, finding information about something you saw on 
       },
       {
         title: 'Enable Circle to Search',
-        content: `On Samsung: Go to Settings → Display → Navigation Bar → Circle to Search, and tap the toggle to turn it on. On Google Pixel: Go to Settings → System → Circle to Search and toggle it on. Once enabled, it's ready to use immediately.`,
+        content: `On Samsung: Go to Settings → Display → Navigation Bar → Circle to Search, and tap the toggle to turn it on. On Google Pixel: Go to Settings → System → Circle to Search and toggle it on. Once enabled, it's ready to use right away.`,
       },
       {
         title: 'Activate it',
@@ -779,7 +779,7 @@ To use your Personal Voice with Live Speech, you type on your phone screen and p
       },
       {
         title: 'Set up Live Speech',
-        content: `Once Personal Voice is ready, go to Settings → Accessibility → Live Speech and toggle it on. Select your Personal Voice from the voice list. You can also add frequently used phrases as shortcuts (like "Could you repeat that?" or "I'll need a moment to type").`,
+        content: `Once Personal Voice is ready, go to Settings → Accessibility → Live Speech and toggle it on. Select your Personal Voice from the voice list. You can also add often used phrases as shortcuts (like "Could you repeat that?" or "I'll need a moment to type").`,
       },
       {
         title: 'Use Live Speech to speak',
@@ -846,11 +846,11 @@ Deleting accounts takes some time, but it's one of the most effective privacy ac
     thumbnailEmoji: '',
     publishedAt: '2026-04-19',
     difficulty: 'Beginner',
-    body: `Quick Settings is the control panel that slides down when you swipe from the top of your Android phone's screen. It gives you quick access to settings you use frequently — like Wi-Fi, Bluetooth, airplane mode, flashlight, screen brightness, and more.
+    body: `Quick Settings is the control panel that slides down when you swipe from the top of your Android phone's screen. It gives you quick access to settings you use often — like Wi-Fi, Bluetooth, airplane mode, flashlight, screen brightness, and more.
 
-Most people only use the default Quick Settings tiles — but you can add, remove, and rearrange them to put the shortcuts you use most right at your fingertips. For example, if you frequently need the flashlight, you can move it to the very first tile so it's always one tap away.
+Most people only use the default Quick Settings tiles — but you can add, remove, and rearrange them to put the shortcuts you use most right at your fingertips. For example, if you often need the flashlight, you can move it to the very first tile so it's always one tap away.
 
-Quick Settings also lets you access certain features in a single tap instead of opening the full Settings app and navigating through multiple menus. This can save a lot of time for settings you toggle frequently, like mobile data, battery saver, or auto-rotate.
+Quick Settings also lets you access certain features in a single tap instead of opening the full Settings app and navigating through multiple menus. This can save a lot of time for settings you toggle often, like mobile data, battery saver, or auto-rotate.
 
 The Quick Settings panel looks slightly different depending on your Android phone's brand — Samsung Galaxy phones have their own look, and Pixel phones have a different style — but the customization process is similar across all of them.`,
     steps: [
@@ -873,7 +873,7 @@ The Quick Settings panel looks slightly different depending on your Android phon
       },
       {
         title: 'Save and use',
-        content: `When you're done, tap "Done" or tap the back arrow to exit edit mode. Your new Quick Settings layout is saved immediately. Swipe down to see your customized panel and test your new tiles.`,
+        content: `When you're done, tap "Done" or tap the back arrow to exit edit mode. Your new Quick Settings layout is saved right away. Swipe down to see your customized panel and test your new tiles.`,
         tip: `Quick Tip: add the "Flashlight" tile to your first position — it's one of the most-used Quick Settings and having it first saves time when you need it in the dark.`,
       },
     ],
@@ -913,7 +913,7 @@ Live Voicemail is turned on by default in iOS 17 and later — you likely alread
       },
       {
         title: 'Pick up if needed',
-        content: 'If you decide the call is worth taking while the voicemail is being recorded, tap the green "Pick Up" button at the top of the screen. The call connects immediately and the caller is brought into a live conversation. This lets you screen calls without fully missing them.',
+        content: 'If you decide the call is worth taking while the voicemail is being recorded, tap the green "Pick Up" button at the top of the screen. The call connects right away and the caller is brought into a live conversation. This lets you screen calls without fully missing them.',
         tip: 'This is especially useful for calls from unknown numbers — you can screen out robocalls while picking up calls from real people like doctors, repair companies, or delivery services.',
       },
       {

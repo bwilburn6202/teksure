@@ -15,7 +15,7 @@ export const guidesBatch131: Guide[] = [
     publishedAt: '2026-05-05',
     lastVerifiedAt: '2026-05-05',
     difficulty: 'Beginner',
-    body: `Filing taxes is free for most seniors if you know where to look. The AARP Foundation runs Tax-Aide, the largest free tax prep service in the United States, with 5,000 locations. The IRS funds Volunteer Income Tax Assistance (VITA) sites at libraries, senior centers, and community organizations. And major tax software companies offer free filing for simple returns through the IRS Free File program.
+    body: `Filing taxes is free for most seniors if you know where to look. The AARP Foundation runs Tax-Aide, the largest free tax prep service in the United States, with 5,000 locations. The IRS funds Volunteer Income Tax Help (VITA) sites at libraries, senior centers, and community organizations. And major tax software companies offer free filing for simple returns through the IRS Free File program.
 
 You do not need to be wealthy to qualify. Most of these programs serve everyone with under $79,000 in income (the IRS Free File limit), and AARP Tax-Aide has no income or age limit at all — though they prioritize taxpayers age 50 and older.
 
@@ -32,7 +32,7 @@ This guide walks through the three best options and how to choose between them.
       },
       {
         title: 'Use IRS VITA for community-based help',
-        content: 'Volunteer Income Tax Assistance (VITA) sites are run by community organizations with IRS funding. The income limit is around $64,000 (2026). VITA sites are often at libraries, churches, and community centers, and many have evening or weekend hours. Find one at irs.gov/vita or call 800-906-9887. Most VITA sites also have Spanish-speaking volunteers.',
+        content: 'Volunteer Income Tax Help (VITA) sites are run by community organizations with IRS funding. The income limit is around $64,000 (2026). VITA sites are often at libraries, churches, and community centers, and many have evening or weekend hours. Find one at irs.gov/vita or call 800-906-9887. Most VITA sites also have Spanish-speaking volunteers.',
       },
       {
         title: 'Try IRS Free File if you prefer to do it yourself',

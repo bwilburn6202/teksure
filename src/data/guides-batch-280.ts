@@ -93,7 +93,7 @@ This guide shows where to look on iPhone and Android, and what to do about lifet
       },
       {
         title: 'Watch for "free trial" auto-renewals',
-        content: 'Many apps offer a free trial that requires a credit card and auto-renews into a paid subscription unless you cancel before the trial ends. To prevent surprise charges, the moment you start a trial, immediately go to Subscriptions and tap Cancel. You keep access for the full trial period, but the auto-renewal is turned off.',
+        content: 'Many apps offer a free trial that requires a credit card and auto-renews into a paid subscription unless you cancel before the trial ends. To prevent surprise charges, the moment you start a trial, right away go to Subscriptions and tap Cancel. You keep access for the full trial period, but the auto-renewal is turned off.',
         warning: 'Some companies (notably gym apps and dating apps) make cancellation deliberately confusing inside the app itself. The Apple/Google subscription screens always work, regardless of what the app shows you.',
       },
       {

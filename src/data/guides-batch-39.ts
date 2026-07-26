@@ -93,7 +93,7 @@ export const guidesBatch39: Guide[] = [
       },
       {
         title: 'Compress a PDF on Mac using Preview',
-        content: `Mac users do not need any website. Open the PDF in Preview (double-click the file). Go to File → Export as PDF. In the "Quartz Filter" dropdown, select "Reduce File Size." Click "Save." The exported file will be significantly smaller. Note: this can reduce image quality inside the PDF, so use the original quality if sharing medical documents where image clarity matters.`,
+        content: `Mac users do not need any website. Open the PDF in Preview (double-click the file). Go to File → Export as PDF. In the "Quartz Filter" dropdown, select "Reduce File Size." Click "Save." The exported file will be a lot smaller. Note: this can reduce image quality inside the PDF, so use the original quality if sharing medical documents where image clarity matters.`,
       },
       {
         title: 'Compress a PDF on iPhone using Files',
@@ -148,7 +148,7 @@ export const guidesBatch39: Guide[] = [
     steps: [
       {
         title: 'The iPad (standard) — best for most people',
-        content: `The base iPad starts around $329 for the 11-inch model. It handles video calls, web browsing, email, streaming TV, reading, and most apps with no trouble at all. The screen is bright and large enough for comfortable use. Battery life lasts 10 hours of active use. For someone new to tablets or who uses one mainly for communication and media, this is the right choice. Spending more does not significantly improve the experience for these uses.`,
+        content: `The base iPad starts around $329 for the 11-inch model. It handles video calls, web browsing, email, streaming TV, reading, and most apps with no trouble at all. The screen is bright and large enough for comfortable use. Battery life lasts 10 hours of active use. For someone new to tablets or who uses one mainly for communication and media, this is the right choice. Spending more does not a lot improve the experience for these uses.`,
         tip: `Buy with at least 128 GB of storage. The base 64 GB fills up faster than expected once you add photos, apps, and offline videos for travel.`,
       },
       {
@@ -363,7 +363,7 @@ export const guidesBatch39: Guide[] = [
       },
       {
         title: 'Check how much space you recovered',
-        content: `After deleting duplicates and clearing the Recently Deleted album, check your storage. On iPhone: Settings → General → iPhone Storage — you will see how much space photos and videos now use. On Android: Settings → Storage. Also go to Photos → Albums → Recently Deleted and tap "Delete All" to free the space immediately (normally, deleted photos stay in this album for 30 days, counting against your storage the whole time).`,
+        content: `After deleting duplicates and clearing the Recently Deleted album, check your storage. On iPhone: Settings → General → iPhone Storage — you will see how much space photos and videos now use. On Android: Settings → Storage. Also go to Photos → Albums → Recently Deleted and tap "Delete All" to free the space right away (normally, deleted photos stay in this album for 30 days, counting against your storage the whole time).`,
       },
     ],
   },
@@ -382,7 +382,7 @@ export const guidesBatch39: Guide[] = [
     steps: [
       {
         title: 'See what is using your iCloud storage',
-        content: `Go to Settings → your name → iCloud → "Manage Account Storage" (or "Manage Storage"). You will see a breakdown of everything using your iCloud: Backups (usually the largest), Photos, Messages, and individual apps. Tap "Backups" to see backups from all your devices — if you have an old iPhone listed that you no longer own, delete that backup. Tap the old device → "Delete Backup" to reclaim that space immediately.`,
+        content: `Go to Settings → your name → iCloud → "Manage Account Storage" (or "Manage Storage"). You will see a breakdown of everything using your iCloud: Backups (usually the largest), Photos, Messages, and individual apps. Tap "Backups" to see backups from all your devices — if you have an old iPhone listed that you no longer own, delete that backup. Tap the old device → "Delete Backup" to reclaim that space right away.`,
       },
       {
         title: 'Delete old device backups',
@@ -424,7 +424,7 @@ export const guidesBatch39: Guide[] = [
       },
       {
         title: 'Watch messages sent to you',
-        content: `When someone sends you a Marco Polo, you get a notification. Open the app and tap the conversation with a blue dot (indicating unwatched messages). The video plays automatically. After it plays, you can record a reply immediately or come back to it later. You can also tap the screen while a video is playing to add a reaction (heart, laugh, clap), which the sender will see.`,
+        content: `When someone sends you a Marco Polo, you get a notification. Open the app and tap the conversation with a blue dot (indicating unwatched messages). The video plays automatically. After it plays, you can record a reply right away or come back to it later. You can also tap the screen while a video is playing to add a reaction (heart, laugh, clap), which the sender will see.`,
       },
       {
         title: 'Start a group conversation for family updates',
@@ -447,7 +447,7 @@ export const guidesBatch39: Guide[] = [
     steps: [
       {
         title: 'See if you qualify',
-        content: `In 2026, you may qualify for Extra Help if your monthly income is below approximately $1,903 (single) or $2,575 (married couple), and your savings and investments (excluding your home, one car, and personal belongings) are below about $17,220 (single) or $34,360 (couple). These limits change each year. The best way to get an exact determination is to apply — the application itself is free and there is no penalty for being denied. Medicare will check your income using Social Security and IRS records.`,
+        content: `In 2026, you may qualify for Extra Help if your monthly income is below about $1,903 (single) or $2,575 (married couple), and your savings and investments (excluding your home, one car, and personal belongings) are below about $17,220 (single) or $34,360 (couple). These limits change each year. The best way to get an exact determination is to apply — the application itself is free and there is no penalty for being denied. Medicare will check your income using Social Security and IRS records.`,
         tip: `Even if you think your income is slightly too high, apply anyway — the limits include deductions for certain expenses that may not be obvious, and some applicants are surprised to qualify.`,
       },
       {
@@ -456,11 +456,11 @@ export const guidesBatch39: Guide[] = [
       },
       {
         title: 'What Extra Help covers',
-        content: `If approved for Full Extra Help: you pay no monthly premium for a qualifying drug plan, no deductible, and only a small copay ($1–$11 for most drugs in 2026). If approved for Partial Extra Help: you pay reduced premiums and a smaller deductible and copay than you would without assistance. You will be automatically enrolled in a drug plan that qualifies for Extra Help if you are approved. You can switch plans during open enrollment if you prefer a different one.`,
+        content: `If approved for Full Extra Help: you pay no monthly premium for a qualifying drug plan, no deductible, and only a small copay ($1–$11 for most drugs in 2026). If approved for Partial Extra Help: you pay reduced premiums and a smaller deductible and copay than you would without help. You will be automatically enrolled in a drug plan that qualifies for Extra Help if you are approved. You can switch plans during open enrollment if you prefer a different one.`,
       },
       {
         title: 'Automatically qualify without applying',
-        content: `Some people are automatically eligible for Extra Help without applying: if you have Medicaid (the state health insurance for low-income people), you receive Supplemental Security Income (SSI), or you live in a Medicare Savings Program. If you fall into one of these categories, you are already receiving Extra Help or will be enrolled automatically when you enroll in Medicare Part D. If you are not sure, call your State Health Insurance Assistance Program (SHIP) — find your state's number at shiphelp.org — for free, unbiased advice.`,
+        content: `Some people are automatically eligible for Extra Help without applying: if you have Medicaid (the state health insurance for low-income people), you receive Supplemental Security Income (SSI), or you live in a Medicare Savings Program. If you fall into one of these categories, you are already receiving Extra Help or will be enrolled automatically when you enroll in Medicare Part D. If you are not sure, call your State Health Insurance Help Program (SHIP) — find your state's number at shiphelp.org — for free, unbiased advice.`,
       },
     ],
   },
@@ -479,7 +479,7 @@ export const guidesBatch39: Guide[] = [
     steps: [
       {
         title: 'Check if you qualify for Lifeline',
-        content: `You qualify for Lifeline if your household income is at or below 135% of the Federal Poverty Level, or if you (or someone in your household) participate in one of these programs: Medicaid, SNAP (food stamps), Supplemental Security Income (SSI), Federal Public Housing Assistance, or Veterans Pension and Survivors Benefits. You qualify automatically through any of these programs — you do not need to submit income documentation.`,
+        content: `You qualify for Lifeline if your household income is at or below 135% of the Federal Poverty Level, or if you (or someone in your household) participate in one of these programs: Medicaid, SNAP (food stamps), Supplemental Security Income (SSI), Federal Public Housing Help, or Veterans Pension and Survivors Benefits. You qualify automatically through any of these programs — you do not need to submit income documentation.`,
         tip: `Only one Lifeline discount is allowed per household — not per person. If someone in your home already receives Lifeline, you cannot apply for a second discount at the same address.`,
       },
       {
@@ -508,7 +508,7 @@ export const guidesBatch39: Guide[] = [
     thumbnailEmoji: '',
     publishedAt: '2026-04-19',
     difficulty: 'Beginner',
-    body: `SNAP (Supplemental Nutrition Assistance Program, formerly called food stamps) provides monthly food benefits on an EBT (Electronic Benefits Transfer) card. The card works like a debit card at most grocery stores, supermarkets, and some farmers markets. SNAP benefits are automatically reloaded onto the card each month on a schedule set by your state. Understanding how to check your balance and use your EBT card online can make managing your benefits much easier.`,
+    body: `SNAP (Supplemental Nutrition Help Program, formerly called food stamps) provides monthly food benefits on an EBT (Electronic Benefits Transfer) card. The card works like a debit card at most grocery stores, supermarkets, and some farmers markets. SNAP benefits are automatically reloaded onto the card each month on a schedule set by your state. Understanding how to check your balance and use your EBT card online can make managing your benefits much easier.`,
     steps: [
       {
         title: 'Use your EBT card at checkout',
@@ -525,7 +525,7 @@ export const guidesBatch39: Guide[] = [
       },
       {
         title: 'Report a lost or stolen EBT card immediately',
-        content: `If your EBT card is lost or stolen, call the number on your state's EBT customer service line immediately (available 24 hours). They will cancel the card and mail a replacement, usually within 3–5 business days. Your SNAP balance is protected — any unused benefits carry over to the new card. In most states, you can report a lost card and check your balance through your state's EBT website or the ConnectEBT app without needing to call.`,
+        content: `If your EBT card is lost or stolen, call the number on your state's EBT customer service line right away (available 24 hours). They will cancel the card and mail a replacement, usually within 3–5 business days. Your SNAP balance is protected — any unused benefits carry over to the new card. In most states, you can report a lost card and check your balance through your state's EBT website or the ConnectEBT app without needing to call.`,
       },
     ],
   },
@@ -581,7 +581,7 @@ export const guidesBatch39: Guide[] = [
       },
       {
         title: 'What is SSI (Supplemental Security Income)',
-        content: `SSI is a needs-based program funded by general tax revenue (not Social Security taxes). It provides monthly payments to people who are 65 or older, blind, or have a disability — AND have very limited income and resources. You do not need a work history to qualify for SSI. In 2026, the maximum federal SSI benefit is approximately $943/month for an individual and $1,415 for a couple. Many states add a state supplement on top of the federal amount. SSI recipients usually qualify for Medicaid automatically.`,
+        content: `SSI is a needs-based program funded by general tax revenue (not Social Security taxes). It provides monthly payments to people who are 65 or older, blind, or have a disability — AND have very limited income and resources. You do not need a work history to qualify for SSI. In 2026, the maximum federal SSI benefit is about $943/month for an individual and $1,415 for a couple. Many states add a state supplement on top of the federal amount. SSI recipients usually qualify for Medicaid automatically.`,
       },
       {
         title: 'Can you receive both SSI and SSDI at the same time',
@@ -604,7 +604,7 @@ export const guidesBatch39: Guide[] = [
     thumbnailEmoji: '',
     publishedAt: '2026-04-19',
     difficulty: 'Beginner',
-    body: `Google Drive is a free cloud storage service from Google that gives every Google account 15 GB of storage — enough for thousands of documents, PDFs, and photos. Files saved to Google Drive are automatically accessible from your phone, any computer, or a tablet by signing into your Google account. If your phone breaks or your computer dies, files in Google Drive are safe and retrievable immediately.`,
+    body: `Google Drive is a free cloud storage service from Google that gives every Google account 15 GB of storage — enough for thousands of documents, PDFs, and photos. Files saved to Google Drive are automatically accessible from your phone, any computer, or a tablet by signing into your Google account. If your phone breaks or your computer dies, files in Google Drive are safe and retrievable right away.`,
     steps: [
       {
         title: 'Access Google Drive on your phone',

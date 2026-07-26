@@ -33,7 +33,7 @@ Here is what happened: Windows has a security feature called BitLocker that encr
 
 The recovery key is the only way past this screen. Microsoft stores a copy of your recovery key in your Microsoft account automatically when BitLocker is first set up on most computers sold with Windows 11. You access it from any other device — your phone, a tablet, or another computer.
 
-One important warning: if anyone calls you offering to help fix this problem for a fee, hang up immediately. The real fix is completely free and takes two minutes. Scammers are actively targeting people who have been locked out by this update.
+One important warning: if anyone calls you offering to help fix this problem for a fee, hang up right away. The real fix is completely free and takes two minutes. Scammers are actively targeting people who have been locked out by this update.
 
 After you are back in, Microsoft has released a follow-up update that prevents this from happening again. Install it as soon as you are logged in.`,
     steps: [
@@ -100,7 +100,7 @@ If you check your Battery settings and notice one specific app is using a surpri
       },
       {
         title: 'Check your battery health',
-        content: 'Go to Settings → Battery → Battery Health & Charging. Look at the Maximum Capacity percentage. A brand-new battery starts at 100%. Below 80% means your battery has aged significantly and may no longer hold a full charge — this is when genuine battery life problems begin. Apple will replace the battery at the Apple Store or an authorized repair shop. The service takes about an hour and costs $89 for most iPhone models.',
+        content: 'Go to Settings → Battery → Battery Health & Charging. Look at the Maximum Capacity percentage. A brand-new battery starts at 100%. Below 80% means your battery has aged a lot and may no longer hold a full charge — this is when genuine battery life problems begin. Apple will replace the battery at the Apple Store or an authorized repair shop. The service takes about an hour and costs $89 for most iPhone models.',
         tip: 'Quick Tip: Apple\'s official battery service info is at support.apple.com/iphone/repair. You can also schedule an appointment at any Apple Store via the Apple Support app.',
       },
       {

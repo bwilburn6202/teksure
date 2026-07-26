@@ -47,7 +47,7 @@ The first ride is the most intimidating. After the first one, every subsequent r
       },
       {
         title: 'Save the support number in case of issues',
-        content: 'For any problem during a ride, tap the shield icon in the app for safety options including Emergency Assistance (which calls 911 with your live location). For non-emergency issues like being charged the wrong amount, go to Help in the app and tap "Report Issue." Both Uber and Lyft refund mistakes promptly when reported through the app.',
+        content: 'For any problem during a ride, tap the shield icon in the app for safety options including Emergency Help (which calls 911 with your live location). For non-emergency issues like being charged the wrong amount, go to Help in the app and tap "Report Issue." Both Uber and Lyft refund mistakes promptly when reported through the app.',
       },
     ],
   },

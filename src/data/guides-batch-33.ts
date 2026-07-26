@@ -105,7 +105,7 @@ export const guidesBatch33: Guide[] = [
       {
         title: 'Switch between clock styles',
         content: 'While in StandBy, swipe left or right to change the clock style. Options include a digital clock, an analog clock, a world clock, and a photo frame mode showing your recent photos.',
-        tip: 'The red Night Mode activates automatically in dark rooms. This is intentional and much easier on the eyes — it does not indicate an error.',
+        tip: 'The red Night Mode activates automatically in dark rooms. This is intentional and much easier on the eyes — it does not show an error.',
       },
     ],
   },
@@ -258,7 +258,7 @@ export const guidesBatch33: Guide[] = [
     slug: 'android-translate-guide',
     title: 'How to Translate Text and Speech on Android',
     excerpt: 'Android can translate text, speech, and even text in photos using Google Translate — with offline support for over 50 languages.',
-    body: `Android phones have several built-in translation tools powered by Google Translate. You can translate typed text, spoken words, or even text inside a photo — useful for menus, signs, and documents in a foreign language.\n\n**Google Translate app**: The main translation tool. Available in the Play Store and pre-installed on many Android phones. It supports translation between 130+ languages, voice translation, camera translation (point your phone at text to see an overlay translation), and Conversation mode where two people speak different languages.\n\n**Gboard (Google Keyboard) translation**: The default Android keyboard has a built-in translate button. While typing in any app, tap the translate icon in the keyboard to translate what you have typed or the text in the message box before sending.\n\n**Select to Translate**: On many Android phones, when you select (highlight) text in any app, a "Translate" option appears in the context menu. Tap it for an instant translation without opening a separate app.\n\n**Tap to Translate**: In Google Translate settings, enable "Tap to Translate." After copying any text anywhere on your phone, a small translate button appears. Tap it to translate the copied text immediately.\n\nGoogle Translate's camera feature is particularly useful for older adults dealing with foreign language mail, prescription instructions from another language, or restaurant menus when traveling.`,
+    body: `Android phones have several built-in translation tools powered by Google Translate. You can translate typed text, spoken words, or even text inside a photo — useful for menus, signs, and documents in a foreign language.\n\n**Google Translate app**: The main translation tool. Available in the Play Store and pre-installed on many Android phones. It supports translation between 130+ languages, voice translation, camera translation (point your phone at text to see an overlay translation), and Conversation mode where two people speak different languages.\n\n**Gboard (Google Keyboard) translation**: The default Android keyboard has a built-in translate button. While typing in any app, tap the translate icon in the keyboard to translate what you have typed or the text in the message box before sending.\n\n**Select to Translate**: On many Android phones, when you select (highlight) text in any app, a "Translate" option appears in the context menu. Tap it for an instant translation without opening a separate app.\n\n**Tap to Translate**: In Google Translate settings, enable "Tap to Translate." After copying any text anywhere on your phone, a small translate button appears. Tap it to translate the copied text right away.\n\nGoogle Translate's camera feature is particularly useful for older adults dealing with foreign language mail, prescription instructions from another language, or restaurant menus when traveling.`,
     category: 'essential-skills',
     tags: ['android', 'google translate', 'translation', 'language', 'travel'],
     readTime: '5 min',
@@ -281,7 +281,7 @@ export const guidesBatch33: Guide[] = [
       },
       {
         title: 'Enable Tap to Translate',
-        content: 'In Google Translate → Settings → Tap to Translate → turn it on. Now, whenever you copy text in any app, a translate button appears. Tap it to see the translation immediately.',
+        content: 'In Google Translate → Settings → Tap to Translate → turn it on. Now, whenever you copy text in any app, a translate button appears. Tap it to see the translation right away.',
       },
       {
         title: 'Download a language for offline use',
@@ -368,7 +368,7 @@ export const guidesBatch33: Guide[] = [
     slug: 'windows-11-widgets-guide',
     title: 'How to Use the Windows 11 Widgets Panel',
     excerpt: 'Windows 11 has a widgets panel that shows news, weather, sports scores, stock prices, and a calendar at a glance — accessible with one click.',
-    body: `Windows 11 includes a Widgets panel — a sidebar that shows live, at-a-glance information without opening any apps. You can access it by clicking the weather/news icon in the taskbar (usually showing the current temperature) or by pressing Windows key + W.\n\nThe default widgets include:\n- **Weather**: Current conditions and a five-day forecast\n- **News**: Top headlines personalized to your interests\n- **Calendar**: Your upcoming appointments and events\n- **Sports**: Scores and standings for your favorite teams\n- **Stocks/markets**: Price updates for stocks you follow\n- **Photos**: Your recent photos from OneDrive\n- **To Do**: Tasks from Microsoft To Do\n- **Traffic**: Current conditions on your commute route\n\nYou can add, remove, and rearrange widgets by clicking the pencil icon ("Edit widgets") at the top of the panel. Each widget can be resized — small, medium, or large — depending on how much detail you want to see.\n\nThe news feed at the bottom of the Widgets panel is personalized based on topics you follow. You can hide topics you are not interested in and add new ones.\n\nWidgets is designed to be glanceable — you open it briefly, see what you need, and close it. It does not replace any apps; it gives you quick access to information you check frequently without opening a browser or multiple apps.`,
+    body: `Windows 11 includes a Widgets panel — a sidebar that shows live, at-a-glance information without opening any apps. You can access it by clicking the weather/news icon in the taskbar (usually showing the current temperature) or by pressing Windows key + W.\n\nThe default widgets include:\n- **Weather**: Current conditions and a five-day forecast\n- **News**: Top headlines personalized to your interests\n- **Calendar**: Your upcoming appointments and events\n- **Sports**: Scores and standings for your favorite teams\n- **Stocks/markets**: Price updates for stocks you follow\n- **Photos**: Your recent photos from OneDrive\n- **To Do**: Tasks from Microsoft To Do\n- **Traffic**: Current conditions on your commute route\n\nYou can add, remove, and rearrange widgets by clicking the pencil icon ("Edit widgets") at the top of the panel. Each widget can be resized — small, medium, or large — depending on how much detail you want to see.\n\nThe news feed at the bottom of the Widgets panel is personalized based on topics you follow. You can hide topics you are not interested in and add new ones.\n\nWidgets is designed to be glanceable — you open it briefly, see what you need, and close it. It does not replace any apps; it gives you quick access to information you check often without opening a browser or multiple apps.`,
     category: 'windows-guides',
     tags: ['windows 11', 'widgets', 'news feed', 'weather', 'windows tips'],
     readTime: '4 min',
@@ -459,7 +459,7 @@ export const guidesBatch33: Guide[] = [
       {
         title: 'Choose a color theme (optional)',
         content: 'Pick a color theme for the new profile. This color-codes the browser window so you always know at a glance which profile is active.',
-        tip: 'Use a distinct color for each profile — blue for one person, green for another. You will immediately see which profile is active just by the browser color.',
+        tip: 'Use a distinct color for each profile — blue for one person, green for another. You will right away see which profile is active just by the browser color.',
       },
       {
         title: 'Sign in to Google (optional)',
@@ -523,7 +523,7 @@ export const guidesBatch33: Guide[] = [
     steps: [
       {
         title: 'Charge the Apple Watch before starting',
-        content: 'Place the Apple Watch on its magnetic charger for at least 30 minutes before setup. The watch needs sufficient battery to complete pairing.',
+        content: 'Place the Apple Watch on its magnetic charger for at least 30 minutes before setup. The watch needs enough battery to complete pairing.',
       },
       {
         title: 'Turn on the Apple Watch and bring it near your iPhone',

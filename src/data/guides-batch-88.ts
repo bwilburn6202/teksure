@@ -65,7 +65,7 @@ Running a manual virus scan every month or two is a good habit, even though Wind
 
 You should also check that Windows Defender has the latest "definitions" — these are updated lists of known threats. Keeping definitions current means Windows Defender knows about the newest viruses and can block them. Windows updates these automatically, but it is worth checking.
 
-For most people, Windows Defender is more than adequate protection. However, if you frequently download files from the internet, open attachments from unknown senders, or share your computer with others, you might consider adding a complementary tool like Malwarebytes (free version available) for an occasional extra scan.`,
+For most people, Windows Defender is more than adequate protection. However, if you often download files from the internet, open attachments from unknown senders, or share your computer with others, you might consider adding a complementary tool like Malwarebytes (free version available) for an occasional extra scan.`,
     steps: [
       {
         title: `Open Windows Security`,
@@ -133,7 +133,7 @@ Not every computer supports face recognition — you need a compatible camera. F
       },
       {
         title: `Test your new sign-in method`,
-        content: `Lock your computer by pressing the Windows key and the letter L at the same time. Then look at the camera or press your finger to the sensor. If setup was successful, Windows will sign you in immediately. If the sign-in fails, enter your PIN — then go back to Sign-in options to adjust or repeat the setup.`,
+        content: `Lock your computer by pressing the Windows key and the letter L at the same time. Then look at the camera or press your finger to the sensor. If setup was successful, Windows will sign you in right away. If the sign-in fails, enter your PIN — then go back to Sign-in options to adjust or repeat the setup.`,
       },
     ],
   },
@@ -218,7 +218,7 @@ Ideally, you should leave the external drive plugged into your computer all the 
       },
       {
         title: `Run your first backup manually`,
-        content: `After turning on File History, click "Back up now" to start your first backup immediately. The first backup takes longer than later ones because it copies all your files for the first time. After that, only new or changed files are copied each hour.`,
+        content: `After turning on File History, click "Back up now" to start your first backup right away. The first backup takes longer than later ones because it copies all your files for the first time. After that, only new or changed files are copied each hour.`,
       },
       {
         title: `Restore a file when you need it`,
@@ -344,7 +344,7 @@ Personalizing the taskbar takes only a few minutes and makes your daily computer
       },
       {
         title: `Move the Start button to the left`,
-        content: `Many Windows 10 users find the centered Start button in Windows 11 unfamiliar. To move it back to the left side: right-click an empty spot on the taskbar and choose "Taskbar settings." In the settings page, look for "Taskbar behaviors" and change "Taskbar alignment" from "Center" to "Left." The Start button and app icons will shift to the left immediately.`,
+        content: `Many Windows 10 users find the centered Start button in Windows 11 unfamiliar. To move it back to the left side: right-click an empty spot on the taskbar and choose "Taskbar settings." In the settings page, look for "Taskbar behaviors" and change "Taskbar alignment" from "Center" to "Left." The Start button and app icons will shift to the left right away.`,
       },
       {
         title: `Hide or customize Widgets`,
@@ -371,7 +371,7 @@ Personalizing the taskbar takes only a few minutes and makes your daily computer
     thumbnailEmoji: ``,
     publishedAt: `2026-04-20`,
     difficulty: `Beginner`,
-    body: `Snap Layouts is a feature in Windows 11 that helps you arrange multiple open windows on your screen at the same time. Instead of switching back and forth between programs, you can see your email on one side and a document on the other, or have a web browser in one corner and a video call in another. This is especially helpful if you have a large monitor or if you frequently reference one window while working in another.
+    body: `Snap Layouts is a feature in Windows 11 that helps you arrange multiple open windows on your screen at the same time. Instead of switching back and forth between programs, you can see your email on one side and a document on the other, or have a web browser in one corner and a video call in another. This is especially helpful if you have a large monitor or if you often reference one window while working in another.
 
 In older versions of Windows, you could snap windows by dragging them to the edges of the screen. Windows 11 improved this with a visual menu that appears when you hover your mouse over the maximize button — the square icon in the top-right corner of any window. This menu shows different layout options that you can choose with a single click.
 
@@ -418,7 +418,7 @@ Snap Layouts works best on screens 13 inches or larger. On very small laptop scr
     difficulty: `Beginner`,
     body: `Xbox Game Pass for PC (sometimes called PC Game Pass) is a subscription service from Microsoft that gives you access to a library of over 100 PC games for a monthly fee. Think of it like Netflix, but for video games — you pay a flat monthly price and can download and play any game in the library as long as your subscription is active. When you stop subscribing, those games are no longer accessible, but your progress and save files are usually kept if you resubscribe later.
 
-The service is particularly good value if you enjoy trying many different games rather than buying individual titles. Games in the library range from major releases — including all new games from Microsoft's own studios on their launch day — to smaller independent games. The library changes over time, with games being added and occasionally removed.
+The service is particularly good value if you enjoy trying many different games rather than buying individual titles. Games in the library range from major releases — including all new games from Microsoft's own studios on their launch day — to smaller independent games. The library changes over time, with games being added and sometimes removed.
 
 To use Game Pass on a PC, you need a Microsoft account (the same account you might use for Outlook email, OneDrive, or Windows itself) and the Xbox app installed on your computer. The Xbox app is available free from the Microsoft Store and acts as the launcher for all your Game Pass games. You can also find and manage your subscription through the Xbox website.
 
@@ -429,7 +429,7 @@ An internet connection is required to download games and to verify your active s
       {
         title: `Sign up for Game Pass`,
         content: `Go to xbox.com/en-US/xbox-game-pass in your web browser and click "Join Game Pass." You will need a Microsoft account — if you use Outlook, OneDrive, or Windows with a Microsoft sign-in, you already have one. Choose the PC Game Pass or Ultimate tier, enter your payment information, and confirm your subscription. First-time subscribers often receive a discounted first month.`,
-        tip: `Quick Tip: Check for a current trial offer before subscribing at full price. Microsoft frequently offers a discounted first month for new subscribers.`,
+        tip: `Quick Tip: Check for a current trial offer before subscribing at full price. Microsoft often offers a discounted first month for new subscribers.`,
       },
       {
         title: `Install the Xbox app on your PC`,
@@ -522,7 +522,7 @@ Accent colors are the highlighted colors Windows uses for buttons, links, and se
       },
       {
         title: `Choose or apply a theme`,
-        content: `In Personalization settings, click "Themes." You will see several built-in themes displayed as thumbnail images. Click any theme to apply it immediately — your wallpaper, colors, sounds, and cursor style all change at once. To browse more free themes, click "Browse themes" to open the Microsoft Store's theme section.`,
+        content: `In Personalization settings, click "Themes." You will see several built-in themes displayed as thumbnail images. Click any theme to apply it right away — your wallpaper, colors, sounds, and cursor style all change at once. To browse more free themes, click "Browse themes" to open the Microsoft Store's theme section.`,
         tip: `Quick Tip: Themes from the Microsoft Store are free and safe to download. They appear in your Themes list after installation, ready to apply with one click.`,
       },
       {
@@ -597,11 +597,11 @@ Running these cleanup tools will not delete your personal files, photos, or docu
     difficulty: `Intermediate`,
     body: `CHKDSK (pronounced "check disk") is a built-in Windows utility that scans your hard drive or solid-state drive for errors and, in most cases, repairs them automatically. Hard drives can develop problems over time — small corrupted sections, file system inconsistencies, or physical "bad sectors" where data cannot be reliably stored. Running CHKDSK helps catch and address these issues before they cause data loss or system crashes.
 
-You should consider running CHKDSK if your computer is freezing or crashing frequently, if programs take an unusually long time to open, if you hear unusual clicking or grinding sounds from your hard drive (a traditional spinning hard drive, not a solid-state drive), or if Windows reports file system errors. It is also a good idea to run it on an older PC as a routine check every year or two.
+You should consider running CHKDSK if your computer is freezing or crashing often, if programs take an unusually long time to open, if you hear unusual clicking or grinding sounds from your hard drive (a traditional spinning hard drive, not a solid-state drive), or if Windows reports file system errors. It is also a good idea to run it on an older PC as a routine check every year or two.
 
 CHKDSK can be run in read-only mode (it just scans and reports problems without fixing them) or in repair mode (it finds and fixes issues). For most situations, repair mode is what you want.
 
-If CHKDSK finds a bad sector — an area of the drive where data cannot be written reliably — it marks that area so Windows avoids using it in the future. While this helps prevent further data loss, it is a warning sign that your hard drive may be aging and could fail completely in the future. Back up your files immediately if CHKDSK reports bad sectors.
+If CHKDSK finds a bad sector — an area of the drive where data cannot be written reliably — it marks that area so Windows avoids using it in the future. While this helps prevent further data loss, it is a warning sign that your hard drive may be aging and could fail completely in the future. Back up your files right away if CHKDSK reports bad sectors.
 
 Running CHKDSK on your main C: drive while Windows is running requires a restart — the check runs before Windows fully loads. CHKDSK on secondary drives (like a USB drive or a second internal drive) can run without a restart.`,
     steps: [
@@ -625,7 +625,7 @@ Running CHKDSK on your main C: drive while Windows is running requires a restart
       },
       {
         title: `Act on what CHKDSK found`,
-        content: `If CHKDSK reported no errors — great. If it repaired errors, that is also a good outcome. If it found bad sectors or serious file system corruption that it could not fully repair, back up your important files immediately and consider replacing the drive soon. Microsoft's support site (support.microsoft.com) has guidance on evaluating CHKDSK results and next steps.`,
+        content: `If CHKDSK reported no errors — great. If it repaired errors, that is also a good outcome. If it found bad sectors or serious file system corruption that it could not fully repair, back up your important files right away and consider replacing the drive soon. Microsoft's support site (support.microsoft.com) has guidance on evaluating CHKDSK results and next steps.`,
         tip: `Quick Tip: If you see repeated hard drive errors over several months, this is a strong signal that the drive is failing. Do not wait to back up your files.`,
       },
     ],
@@ -689,7 +689,7 @@ One important safety note: never paste PowerShell commands from untrusted source
 
 You do not need to know dozens of commands to find the Command Prompt useful. A handful of simple commands solve the most common everyday PC problems, especially internet and network issues.
 
-The most frequently useful commands for everyday users are: ping (checks whether your computer can reach a website or server), ipconfig (shows your computer's network connection details), tracert (shows the path your internet connection takes to reach a website), and the netsh and ipconfig reset commands (which can fix internet connectivity problems by resetting your network settings).
+The most often useful commands for everyday users are: ping (checks whether your computer can reach a website or server), ipconfig (shows your computer's network connection details), tracert (shows the path your internet connection takes to reach a website), and the netsh and ipconfig reset commands (which can fix internet connectivity problems by resetting your network settings).
 
 These commands are safe to run and do not make permanent changes to your system. They are diagnostic tools — they gather information or perform small, reversible network resets that have been standard troubleshooting steps for decades.
 
@@ -744,7 +744,7 @@ Mac computers — including MacBooks, the Mac Mini, iMac, and Mac Pro — all su
     steps: [
       {
         title: `Open Mission Control`,
-        content: `Swipe upward with three fingers on your MacBook trackpad, or press the Mission Control key on your keyboard (the key showing three rectangles, usually near the top row). If you are using an external mouse, you can go to System Settings > Desktop & Dock > Mission Control and assign it to a mouse button. All your open windows immediately spread apart across the screen.`,
+        content: `Swipe upward with three fingers on your MacBook trackpad, or press the Mission Control key on your keyboard (the key showing three rectangles, usually near the top row). If you are using an external mouse, you can go to System Settings > Desktop & Dock > Mission Control and assign it to a mouse button. All your open windows right away spread apart across the screen.`,
         tip: `Quick Tip: You can also press Control + the Up Arrow key on any Mac keyboard to open Mission Control, which works whether you have a trackpad or not.`,
       },
       {
@@ -792,7 +792,7 @@ Spaces is managed through Mission Control. Creating, rearranging, and deleting S
       },
       {
         title: `Create a new Space`,
-        content: `While in Mission Control, click the plus (+) button in the top-right corner. A new empty Space appears in the top strip. You can create as many Spaces as you like — most people find two to four Spaces to be a comfortable number. Click on the new Space thumbnail to switch to it immediately.`,
+        content: `While in Mission Control, click the plus (+) button in the top-right corner. A new empty Space appears in the top strip. You can create as many Spaces as you like — most people find two to four Spaces to be a comfortable number. Click on the new Space thumbnail to switch to it right away.`,
         tip: `Quick Tip: Give your Spaces a purpose before filling them. For example: Space 1 for everyday tasks, Space 2 for work-related apps, Space 3 for media and entertainment. This makes your switch decisions automatic.`,
       },
       {
@@ -851,7 +851,7 @@ Using shortcuts has a small learning curve — your muscle memory needs to build
       },
       {
         title: `Lock your screen and manage power`,
-        content: `Command + Control + Q locks your Mac screen immediately — useful when stepping away from your computer in a public place or shared household. The screensaver or lock screen appears and a password is required to return. Control + Shift + Power (or the eject key on older Macs) puts the display to sleep without locking, which saves power while you step away briefly.`,
+        content: `Command + Control + Q locks your Mac screen right away — useful when stepping away from your computer in a public place or shared household. The screensaver or lock screen appears and a password is required to return. Control + Shift + Power (or the eject key on older Macs) puts the display to sleep without locking, which saves power while you step away briefly.`,
         warning: `Get in the habit of locking your screen whenever you leave your Mac unattended, especially in shared spaces. It takes one key combination and protects everything on your computer.`,
       },
     ],
@@ -874,7 +874,7 @@ Think of your Mac's memory like desk space. Each app you have open takes up some
 
 Common culprits for Mac slowdowns include web browsers with many tabs open (each tab uses memory), applications that have been running for days without being restarted, software that has developed a "memory leak" (a bug that causes it to gradually consume more and more memory), and background processes that might be running without you realizing it.
 
-Activity Monitor is available on all Macs and is always installed as part of macOS. It is located in the Applications > Utilities folder. Checking it occasionally is a good habit, especially when your Mac feels sluggish.`,
+Activity Monitor is available on all Macs and is always installed as part of macOS. It is located in the Applications > Utilities folder. Checking it sometimes is a good habit, especially when your Mac feels sluggish.`,
     steps: [
       {
         title: `Open Activity Monitor`,
@@ -894,7 +894,7 @@ Activity Monitor is available on all Macs and is always installed as part of mac
       {
         title: `Force quit a misbehaving process`,
         content: `If you see a process using extremely high CPU or memory and you do not recognize it, search for its name online to learn what it is before taking action. If it is a frozen or misbehaving app, click on it in the Activity Monitor list and then click the X button in the top-left corner of the Activity Monitor window. A dialog asks whether you want to "Quit" (graceful close) or "Force Quit" (immediate termination). Choose Force Quit only if the regular Quit does not work.`,
-        warning: `Force quitting an app closes it immediately without saving your work. Use Quit first. Only use Force Quit if the app is unresponsive and Quit has no effect.`,
+        warning: `Force quitting an app closes it right away without saving your work. Use Quit first. Only use Force Quit if the app is unresponsive and Quit has no effect.`,
       },
       {
         title: `Check the Energy tab for battery drain`,

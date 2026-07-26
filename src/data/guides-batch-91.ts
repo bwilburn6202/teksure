@@ -119,7 +119,7 @@ This guide covers setting up your first Arlo camera, choosing the best placement
       },
       {
         title: `Sync your camera to the hub`,
-        content: `Press the Sync button on the SmartHub and then the Sync button on the camera within 10 seconds of each other. The camera's LED light will flash to confirm it's connected. In the Arlo app, the camera will appear in your device list. Name it something descriptive — "Front Door," "Backyard Gate," or "Driveway" — so you immediately know which camera you're looking at when an alert comes in.`,
+        content: `Press the Sync button on the SmartHub and then the Sync button on the camera within 10 seconds of each other. The camera's LED light will flash to confirm it's connected. In the Arlo app, the camera will appear in your device list. Name it something descriptive — "Front Door," "Backyard Gate," or "Driveway" — so you right away know which camera you're looking at when an alert comes in.`,
       },
       {
         title: `Choose the best placement for coverage`,
@@ -251,7 +251,7 @@ This guide is written for someone who has never used Uber before. It covers crea
       },
       {
         title: `Request your first ride`,
-        content: `Open the Uber app. It will show a map centered on your current location with a search bar at the bottom. Tap "Where to?" and type your destination — a street address, a landmark, or a business name all work. The app will show you available ride types (UberX is the standard, affordable option) along with the price for each. Tap your chosen option and then tap "Request UberX" (or whichever type you selected). Uber immediately starts looking for a nearby driver.`,
+        content: `Open the Uber app. It will show a map centered on your current location with a search bar at the bottom. Tap "Where to?" and type your destination — a street address, a landmark, or a business name all work. The app will show you available ride types (UberX is the standard, affordable option) along with the price for each. Tap your chosen option and then tap "Request UberX" (or whichever type you selected). Uber right away starts looking for a nearby driver.`,
       },
       {
         title: `Wait for your driver`,
@@ -285,7 +285,7 @@ Lyft has a few features that make it popular, particularly with people who value
 
 Lyft offers several ride types depending on your needs. Lyft Standard is the everyday affordable option — usually a sedan or small SUV. Lyft XL fits up to 6 passengers and is good for groups or when you are carrying large items. Lyft Lux is a higher-end option with luxury vehicles. Lyft Assisted pairs you with a driver who has been trained in helping passengers with mobility needs.
 
-The Lyft Pass program is worth knowing about if you ride frequently — it lets employers, healthcare providers, and some senior programs offer discounted or prepaid rides to specific groups of people. If someone has set up a Lyft Pass for you, you will receive a code to enter in the app that automatically applies discounts.
+The Lyft Pass program is worth knowing about if you ride often — it lets employers, healthcare providers, and some senior programs offer discounted or prepaid rides to specific groups of people. If someone has set up a Lyft Pass for you, you will receive a code to enter in the app that automatically applies discounts.
 
 This guide covers creating your Lyft account, requesting a ride, the key safety features, and how to cancel a ride if you need to.`,
     steps: [
@@ -309,7 +309,7 @@ This guide covers creating your Lyft account, requesting a ride, the key safety 
       },
       {
         title: `Cancel a ride if needed`,
-        content: `If you need to cancel a ride, tap the "X" button on the ride status screen immediately — canceling within 2 minutes of the driver accepting is usually free. If you wait longer and the driver is already on the way, Lyft charges a small cancellation fee (typically $2 to $5) to compensate the driver for their time. Once the driver arrives, no cancellation fee applies if you decide not to get in — you are charged only if you cancel after a certain window has passed.`,
+        content: `If you need to cancel a ride, tap the "X" button on the ride status screen right away — canceling within 2 minutes of the driver accepting is usually free. If you wait longer and the driver is already on the way, Lyft charges a small cancellation fee (typically $2 to $5) to compensate the driver for their time. Once the driver arrives, no cancellation fee applies if you decide not to get in — you are charged only if you cancel after a certain window has passed.`,
       },
     ],
   },
@@ -352,7 +352,7 @@ GoGoGrandparent charges a service fee on top of the regular Uber or Lyft fare, t
       },
       {
         title: `Know when to call for help`,
-        content: `If anything goes wrong during a ride — you feel unsafe, the driver takes a wrong route, or you need assistance — pressing "0" on your phone at any time during a GoGoGrandparent interaction connects you to a live human operator. The operator can contact the driver, flag the ride for Uber or Lyft support, or help arrange alternative transportation. This is one of the key advantages of GoGoGrandparent over using the Uber or Lyft apps directly.`,
+        content: `If anything goes wrong during a ride — you feel unsafe, the driver takes a wrong route, or you need help — pressing "0" on your phone at any time during a GoGoGrandparent interaction connects you to a live human operator. The operator can contact the driver, flag the ride for Uber or Lyft support, or help arrange alternative transportation. This is one of the key advantages of GoGoGrandparent over using the Uber or Lyft apps directly.`,
         warning: `GoGoGrandparent adds a service fee to every ride. Before each ride, ask the operator for the estimated total cost including the GoGoGrandparent fee so there are no billing surprises.`,
       },
     ],
@@ -439,7 +439,7 @@ This guide explains Back Market's condition grades, how to browse for a good dea
       {
         title: `Know your warranty and return rights`,
         content: `Every Back Market purchase includes a 1-year warranty covering defects — meaning if the screen stops working, the battery fails, or a button breaks through normal use, Back Market will arrange a repair or replacement at no cost. The 30-day return window covers situations where you are unhappy with the purchase or the condition does not match the listing description. To initiate a return, log into your Back Market account and go to "My Orders," then "Get Help."`,
-        warning: `Back Market's warranty does not cover physical damage caused after purchase — for example, if you drop the device and crack the screen. Consider purchasing a protective case immediately after receiving your device.`,
+        warning: `Back Market's warranty does not cover physical damage caused after purchase — for example, if you drop the device and crack the screen. Consider purchasing a protective case right away after receiving your device.`,
       },
     ],
   },
@@ -453,7 +453,7 @@ This guide explains Back Market's condition grades, how to browse for a good dea
     thumbnailEmoji: ``,
     publishedAt: `2026-04-20`,
     difficulty: `Beginner`,
-    body: `Decluttr is a website and app that buys used electronics and media items directly from you — you do not have to find a buyer or negotiate a price. You scan an item's barcode or enter a device's model number, and Decluttr tells you immediately what they will pay. If you accept the price, you ship your items to them for free using a prepaid shipping label they provide. Once they receive and verify the items, they pay you the next business day by PayPal, direct bank deposit, or check.
+    body: `Decluttr is a website and app that buys used electronics and media items directly from you — you do not have to find a buyer or negotiate a price. You scan an item's barcode or enter a device's model number, and Decluttr tells you right away what they will pay. If you accept the price, you ship your items to them for free using a prepaid shipping label they provide. Once they receive and verify the items, they pay you the next business day by PayPal, direct bank deposit, or check.
 
 The types of items Decluttr accepts include smartphones, tablets, iPods, gaming consoles, video games, CDs, DVDs, Blu-rays, and Lego sets. They do not accept every item — very old phones, scratched discs that will not play, or items not in their catalog will be declined. But for many households clearing out a closet or drawer full of old tech and entertainment, Decluttr is one of the fastest ways to turn clutter into cash.
 
@@ -491,7 +491,7 @@ This guide walks through the entire Decluttr process from getting a quote to rec
     thumbnailEmoji: ``,
     publishedAt: `2026-04-20`,
     difficulty: `Intermediate`,
-    body: `StockX is an online marketplace for buying and selling high-demand physical goods — primarily sneakers, streetwear, trading cards, electronics, and collectibles. It operates differently from most resale marketplaces. Instead of browsing individual seller listings with photos and descriptions, StockX works more like a stock market: sellers list an "Ask" price (the minimum they will accept), buyers place a "Bid" (the maximum they will pay), and a sale happens automatically when a bid and ask price match. There is also a "Buy Now" option where you purchase at the current lowest ask price immediately.
+    body: `StockX is an online marketplace for buying and selling high-demand physical goods — primarily sneakers, streetwear, trading cards, electronics, and collectibles. It operates differently from most resale marketplaces. Instead of browsing individual seller listings with photos and descriptions, StockX works more like a stock market: sellers list an "Ask" price (the minimum they will accept), buyers place a "Bid" (the maximum they will pay), and a sale happens automatically when a bid and ask price match. There is also a "Buy Now" option where you purchase at the current lowest ask price right away.
 
 The biggest thing that sets StockX apart is authentication. Every item sold on StockX is physically shipped to a StockX verification center before going to the buyer. A trained authenticator checks the item for signs of counterfeit (fake) products — checking stitching, labels, sole patterns, box details, and other markers that distinguish genuine items from fakes. If something does not pass, the sale is cancelled and the seller is penalized. Only verified items ship to buyers.
 
@@ -510,7 +510,7 @@ StockX charges fees to both buyers and sellers. Buyers pay a "transaction fee" (
       },
       {
         title: `Buy a product at the current price`,
-        content: `To buy immediately, click "Buy Now" on any product page. You will see the item price, the buyer transaction fee (shown as a percentage), and the payment processing fee. Review the total and click "Confirm." StockX will contact a seller whose ask matches the price and arrange for them to ship the item to a StockX authentication center. The whole process from purchase to delivery typically takes 7 to 12 days — authentication adds time compared to direct shipping.`,
+        content: `To buy right away, click "Buy Now" on any product page. You will see the item price, the buyer transaction fee (shown as a percentage), and the payment processing fee. Review the total and click "Confirm." StockX will contact a seller whose ask matches the price and arrange for them to ship the item to a StockX authentication center. The whole process from purchase to delivery typically takes 7 to 12 days — authentication adds time compared to direct shipping.`,
       },
       {
         title: `List an item to sell`,
@@ -549,7 +549,7 @@ This guide explains who qualifies, where to purchase the pass, and how to use it
       },
       {
         title: `Purchase the pass in person at a federal site`,
-        content: `The most straightforward way to get the Senior Pass is to stop at the entrance station of any participating federal recreation site and ask for it. Common locations include national park entrance booths, US Forest Service ranger stations, and Bureau of Land Management offices. Bring your ID, pay the $80 one-time fee (or $20 for the annual version), and you leave with the physical pass in hand. This option has no shipping wait time and lets you use the pass immediately for that same visit.`,
+        content: `The most straightforward way to get the Senior Pass is to stop at the entrance station of any participating federal recreation site and ask for it. Common locations include national park entrance booths, US Forest Service ranger stations, and Bureau of Land Management offices. Bring your ID, pay the $80 one-time fee (or $20 for the annual version), and you leave with the physical pass in hand. This option has no shipping wait time and lets you use the pass right away for that same visit.`,
         tip: `Quick Tip: Not all small ranger stations sell the Senior Pass — call ahead before driving out of your way. The National Park Service maintains a list of issuing locations at store.usgs.gov.`,
       },
       {
@@ -594,7 +594,7 @@ This guide walks through creating an account, searching for campgrounds, reading
       },
       {
         title: `Read site descriptions carefully`,
-        content: `Each campground has multiple individual sites, and they vary significantly. The site description tells you the site type (tent only, RV with hookups, group site), maximum vehicle length allowed, whether the site has electrical hookups, whether water is available at the site or nearby, shade level, and whether it is ADA accessible for people with mobility needs. Click "View Details" on individual sites to see photos and read notes from previous campers in the reviews section.`,
+        content: `Each campground has multiple individual sites, and they vary a lot. The site description tells you the site type (tent only, RV with hookups, group site), maximum vehicle length allowed, whether the site has electrical hookups, whether water is available at the site or nearby, shade level, and whether it is ADA accessible for people with mobility needs. Click "View Details" on individual sites to see photos and read notes from previous campers in the reviews section.`,
       },
       {
         title: `Know the reservation window and book early`,
@@ -724,7 +724,7 @@ The Schlage Home app is where you manage access codes, view entry logs (a histor
       {
         title: `Connect the lock to the Schlage Home app and Wi-Fi`,
         content: `Download the "Schlage Home" app from the App Store or Google Play and create a free account. Open the app and tap "Add a Device." The app will display a QR code — hold it up to the camera on the exterior keypad of your lock (there is a small scanning port near the top). This pairs the lock to your account. Then follow the in-app steps to connect the lock to your home Wi-Fi network by selecting your network name and entering your Wi-Fi password.`,
-        tip: `Quick Tip: If the lock's Wi-Fi connection seems weak or unreliable, check whether your router is more than 30 feet away. A Wi-Fi range extender positioned between the router and the front door can strengthen the signal significantly.`,
+        tip: `Quick Tip: If the lock's Wi-Fi connection seems weak or unreliable, check whether your router is more than 30 feet away. A Wi-Fi range extender positioned between the router and the front door can strengthen the signal a lot.`,
       },
       {
         title: `Create access codes for family members`,
@@ -732,7 +732,7 @@ The Schlage Home app is where you manage access codes, view entry logs (a histor
       },
       {
         title: `Set auto-lock and schedules`,
-        content: `In the app's lock settings, find "Auto-Lock." Enable this feature and choose how many seconds after the door closes you want it to lock automatically — options typically range from 30 seconds to 4 minutes. This is helpful if you frequently forget to lock up when leaving in a hurry. You can also set schedules — for example, unlock automatically at 7:00 AM and lock again at 8:00 PM — though schedules are more commonly used by businesses than households.`,
+        content: `In the app's lock settings, find "Auto-Lock." Enable this feature and choose how many seconds after the door closes you want it to lock automatically — options typically range from 30 seconds to 4 minutes. This is helpful if you often forget to lock up when leaving in a hurry. You can also set schedules — for example, unlock automatically at 7:00 AM and lock again at 8:00 PM — though schedules are more commonly used by businesses than households.`,
       },
       {
         title: `Use Alexa or Google Assistant with the lock`,
@@ -861,7 +861,7 @@ This guide walks through setting up LED strip lights — the most popular Govee 
       },
       {
         title: `Attach the strip lights`,
-        content: `Starting at one end, peel the paper backing from the adhesive side of the strip in small sections — do not peel the entire length at once, as the adhesive will touch surfaces and itself before you position it. Press the strip firmly against the surface as you go, ensuring full contact along the length. For corners, Govee strips can be bent gently at a 90-degree angle — do not crease them sharply, as this can break the LED connections. The controller box at one end connects to the included power adapter.`,
+        content: `Starting at one end, peel the paper backing from the adhesive side of the strip in small sections — do not peel the entire length at once, as the adhesive will touch surfaces and itself before you position it. Press the strip firmly against the surface as you go, making sure full contact along the length. For corners, Govee strips can be bent gently at a 90-degree angle — do not crease them sharply, as this can break the LED connections. The controller box at one end connects to the included power adapter.`,
       },
       {
         title: `Download the Govee Home app and connect your lights`,

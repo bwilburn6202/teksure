@@ -154,7 +154,7 @@ Some of the most useful things Google Assistant can do: set alarms and timers, a
 
 You activate Google Assistant by saying "Hey Google" aloud, or by pressing and holding the home button on your phone. On Pixel phones, squeezing the sides of the phone also works.
 
-Google Assistant is especially valuable for managing small tasks while your hands are full. If you are cooking and remember you need milk, say "Hey Google, add milk to my shopping list" and it will be there waiting for you when you go to the store. If you need to leave for an appointment, say "Hey Google, navigate to 123 Main Street" and turn-by-turn directions start immediately.`,
+Google Assistant is especially valuable for managing small tasks while your hands are full. If you are cooking and remember you need milk, say "Hey Google, add milk to my shopping list" and it will be there waiting for you when you go to the store. If you need to leave for an appointment, say "Hey Google, navigate to 123 Main Street" and turn-by-turn directions start right away.`,
     steps: [
       {
         title: `Activate Google Assistant`,
@@ -334,7 +334,7 @@ Another option is Buoy Health (buoyhealth.com), which works similarly through a 
 
 It is important to understand what these tools are and are not. They are decision-support tools — meaning they help you think through a situation, not diagnose you. They can be wrong. They may miss something important. They are most valuable for helping you figure out whether something warrants a doctor visit, for preparing a list of symptoms to describe accurately to your doctor, and for understanding possible explanations for what you are feeling.
 
-These apps are not appropriate for emergencies. If you are experiencing chest pain, difficulty breathing, sudden severe headache, signs of stroke (face drooping, arm weakness, speech trouble), or any other potentially life-threatening situation, call 911 immediately.`,
+These apps are not appropriate for emergencies. If you are experiencing chest pain, difficulty breathing, sudden severe headache, signs of stroke (face drooping, arm weakness, speech trouble), or any other potentially life-threatening situation, call 911 right away.`,
     steps: [
       {
         title: `Go to Ada Health or Buoy Health`,
@@ -420,7 +420,7 @@ Once you add a Skill, you interact with it by speaking to Alexa. For example, af
     difficulty: `Beginner`,
     body: `Long articles, newsletter emails, government letters, and medical documents can feel overwhelming to read. Sometimes they are full of dense language, and you want to know the main point: what does this say, and what do I need to do?
 
-AI summarization is one of the most immediately useful things AI can do for everyday people. You copy the text of something long and paste it into an AI chat tool, ask it to summarize, and within seconds you get a short, plain-English version of the key points. No technical knowledge needed — if you can copy and paste, you can do this.
+AI summarization is one of the most right away useful things AI can do for everyday people. You copy the text of something long and paste it into an AI chat tool, ask it to summarize, and within seconds you get a short, plain-English version of the key points. No technical knowledge needed — if you can copy and paste, you can do this.
 
 The free tools that work best for summarizing are ChatGPT (chat.openai.com), Google Gemini (gemini.google.com), and Microsoft Copilot (copilot.microsoft.com). All three handle text summarization very well.
 
@@ -514,11 +514,11 @@ People listen to podcasts while doing other things: walking, driving, cooking, d
 
 The most powerful free audiobook resource you likely already have access to is your local public library. Through apps like Libby (from OverDrive) and hoopla, library cardholders can borrow audiobooks completely free — no late fees, no trips to the library, and no waiting in many cases. You need a free library card, which you can get in person at any public library.
 
-Libby (libbyapp.com) requires borrowing — popular books may have a waitlist, and you have the book for a set period (usually 21 days). hoopla (hoopladigital.com) has a smaller but still large collection and lets you borrow immediately with no waitlists — up to a certain number per month.
+Libby (libbyapp.com) requires borrowing — popular books may have a waitlist, and you have the book for a set period (usually 21 days). hoopla (hoopladigital.com) has a smaller but still large collection and lets you borrow right away with no waitlists — up to a certain number per month.
 
 LibriVox (librivox.org) offers thousands of free audiobooks of classic literature read by volunteers. Because these books are out of copyright (older works like Jane Austen, Mark Twain, Charles Dickens, and many more), they are permanently free to download and keep. The reading quality varies since they are volunteers, but many recordings are excellent.
 
-If you have an Amazon Echo, Prime membership, or Amazon account, Audible's free tier includes some titles, and Amazon First Reads occasionally offers free audiobooks as well. Additionally, Spotify includes some audiobooks in its free tier.`,
+If you have an Amazon Echo, Prime membership, or Amazon account, Audible's free tier includes some titles, and Amazon First Reads sometimes offers free audiobooks as well. Also, Spotify includes some audiobooks in its free tier.`,
     steps: [
       {
         title: `Get a free library card if you do not have one`,
@@ -531,7 +531,7 @@ If you have an Amazon Echo, Prime membership, or Amazon account, Audible's free 
       },
       {
         title: `Search for and borrow an audiobook in Libby`,
-        content: `Tap the Search icon and type the title or author you are looking for, or browse by category. When you find a book, tap on it and look for the Borrow button. If it says "Wait List," you can place a hold and be notified when it becomes available. Once borrowed, tap Listen to start immediately.`,
+        content: `Tap the Search icon and type the title or author you are looking for, or browse by category. When you find a book, tap on it and look for the Borrow button. If it says "Wait List," you can place a hold and be notified when it becomes available. Once borrowed, tap Listen to start right away.`,
         tip: `Quick Tip: Use the hoopla app (hoopladigital.com) for instant borrowing with no waitlists — good for when your first choice is checked out on Libby.`,
       },
       {
@@ -563,7 +563,7 @@ The Fire tablet's app store is called the Amazon Appstore. It has a good selecti
 
 The Fire tablet is particularly well suited for watching videos, reading books, video calling with family, browsing the web, and playing casual games. The screen size (7 inches on the basic model, 10 or 11 inches on larger models) makes it comfortable for reading and watching — easier on the eyes than a small phone screen.
 
-The battery typically lasts 8 to 12 hours of regular use, so charging it once a day or every other day is usually sufficient. It charges via a USB-C cable (on newer models) or micro-USB (on older models).`,
+The battery typically lasts 8 to 12 hours of regular use, so charging it once a day or every other day is usually enough. It charges via a USB-C cable (on newer models) or micro-USB (on older models).`,
     steps: [
       {
         title: `Charge the tablet before first use`,
@@ -581,7 +581,7 @@ The battery typically lasts 8 to 12 hours of regular use, so charging it once a 
       },
       {
         title: `Find and download apps from the Amazon Appstore`,
-        content: `From the home screen, tap the orange Amazon Appstore icon (it looks like a shopping bag). Use the search bar to find apps by name — for example, "Netflix," "YouTube," or "Facebook." Tap the app you want, then tap Get or the price. Free apps download immediately. The app will appear on your home screen.`,
+        content: `From the home screen, tap the orange Amazon Appstore icon (it looks like a shopping bag). Use the search bar to find apps by name — for example, "Netflix," "YouTube," or "Facebook." Tap the app you want, then tap Get or the price. Free apps download right away. The app will appear on your home screen.`,
         tip: `Quick Tip: Tap the Apps tab at the top of the home screen to see all your installed apps in one place, rather than searching the home screen for them.`,
       },
       {
@@ -781,7 +781,7 @@ The free AI tools that work well for travel planning are ChatGPT (chat.openai.co
     difficulty: `Intermediate`,
     body: `Looking for work can feel overwhelming, especially if you have been out of the workforce for a while, are changing careers, or feel uncertain about how to present yourself on paper. AI tools can help at every stage of the process — writing and improving your resume, drafting personalized cover letters, preparing for interview questions, and researching potential employers.
 
-The key thing to understand is that AI does not find jobs for you — it helps you present yourself well and prepare thoroughly. You still need to search for job listings on sites like Indeed, LinkedIn, or USAJOBS (for federal jobs), and you still need to do the interviews. But AI can significantly reduce the stress and time involved in the writing and preparation parts.
+The key thing to understand is that AI does not find jobs for you — it helps you present yourself well and prepare thoroughly. You still need to search for job listings on sites like Indeed, LinkedIn, or USAJOBS (for federal jobs), and you still need to do the interviews. But AI can a lot reduce the stress and time involved in the writing and preparation parts.
 
 For resume improvement, AI is particularly useful at taking a rough description of your work history and turning it into clear, well-organized bullet points that highlight your accomplishments. Many people struggle to write about their own experience in a professional way — AI makes this much easier. You describe what you did, and the AI helps you phrase it in a way that reads well to hiring managers.
 
@@ -850,7 +850,7 @@ Battery life on most Android tablets is 8 to 12 hours of regular use. The chargi
       },
       {
         title: `Download apps from the Google Play Store`,
-        content: `Find the Google Play Store app on the home screen (it has a colorful triangle icon). Tap it to open. Use the search bar to find apps by name — for example, "Zoom," "Netflix," or "Facebook Messenger." Tap the app, then tap Install. Free apps download immediately with no charge.`,
+        content: `Find the Google Play Store app on the home screen (it has a colorful triangle icon). Tap it to open. Use the search bar to find apps by name — for example, "Zoom," "Netflix," or "Facebook Messenger." Tap the app, then tap Install. Free apps download right away with no charge.`,
         warning: `Only download apps from the Google Play Store. Avoid downloading apps from websites or links sent in messages — these can sometimes contain harmful software.`,
       },
       {

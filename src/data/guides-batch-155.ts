@@ -188,7 +188,7 @@ This guide covers two methods: **Find My** for iPhone users, and **Google Maps l
 
 **Why location sharing is useful for seniors and their families**
 
-- If you fall or have a medical emergency away from home, your family can find you immediately rather than guessing your location.
+- If you fall or have a medical emergency away from home, your family can find you right away rather than guessing your location.
 - After a drive, your family can see you arrived home without you needing to call.
 - If you go for a walk and lose track of where you are, a family member can guide you back.
 - If your phone is lost or stolen, Find My can help you locate it on a map.
@@ -304,8 +304,7 @@ Location sharing uses your phone's GPS, which can use a small amount of extra ba
       },
       {
         title: 'Turn location sharing off when you want to',
-        content:
-          'Find My (iPhone): open the app → People tab → tap the family member\'s name → tap "Stop Sharing My Location." Google Maps (Android): open Google Maps → tap your profile photo → Location sharing → tap the person\'s name → tap Stop. Sharing ends immediately.',
+        content: 'Find My (iPhone): open the app → People tab → tap the family member\'s name → tap "Stop Sharing My Location." Google Maps (Android): open Google Maps → tap your profile photo → Location sharing → tap the person\'s name → tap Stop. Sharing ends right away.',
         tip: 'Turning off location sharing does not delete anything or notify the other person with an alert. They will stop seeing your location, but there is no dramatic notification.',
       },
     ],
@@ -334,7 +333,7 @@ Location sharing uses your phone's GPS, which can use a small amount of extra ba
     publishedAt: '2026-05-08',
     lastVerifiedAt: '2026-05-08',
     difficulty: 'Beginner',
-    body: `Your phone's flashlight is one of the most immediately useful features on the device. It uses the same powerful LED light that your camera uses for photos — which means it is genuinely bright, far brighter than most handheld flashlights. And because your phone is almost always with you, you will never be caught without a light source when you need one.
+    body: `Your phone's flashlight is one of the most right away useful features on the device. It uses the same powerful LED light that your camera uses for photos — which means it is genuinely bright, far brighter than most handheld flashlights. And because your phone is almost always with you, you will never be caught without a light source when you need one.
 
 Whether you are looking for your keys in a dark car, reading a restaurant menu in dim lighting, walking to your door at night, or dealing with a power outage, your phone flashlight turns on in a matter of seconds.
 
@@ -351,7 +350,7 @@ Control Center is a quick-access panel on your iPhone that holds shortcuts for c
 1. **Swipe down from the top-right corner** of your iPhone screen. This is the corner above the battery percentage indicator. A dark panel will appear — this is Control Center.
    - **If you have an older iPhone with a Home button** (iPhone 8 or earlier): instead, swipe up from the very bottom edge of the screen to open Control Center.
 2. **Find the flashlight icon** — it looks like a small flashlight or a torch. It is usually in the bottom-left area of the Control Center panel.
-3. **Tap it once.** The flashlight turns on immediately. Your phone's LED light on the back of the device will start glowing.
+3. **Tap it once.** The flashlight turns on right away. Your phone's LED light on the back of the device will start glowing.
 4. To **turn it off**, open Control Center again and tap the flashlight icon a second time. The icon will return to its unlit appearance and the light will go out.
 
 **Method 2: Ask Siri**
@@ -364,7 +363,7 @@ This is especially useful when your hands are occupied — holding groceries, cl
 
 **Method 3: Set up a shortcut with the side button (Triple-click)**
 
-If you find yourself using the flashlight frequently, you can set your iPhone to turn it on when you triple-click the side button (the power button on the right side of the phone). Here is how to set this up:
+If you find yourself using the flashlight often, you can set your iPhone to turn it on when you triple-click the side button (the power button on the right side of the phone). Here is how to set this up:
 
 1. Open **Settings**.
 2. Tap **Accessibility**.
@@ -423,7 +422,7 @@ Some Android phones — particularly Samsung — allow you to turn on the flashl
 
 The flashlight uses your phone's camera LED, which draws more battery power than most other phone features. In a normal short-term use — a minute or two to find your keys or read something — the impact on your battery is small. However, if you run the flashlight for an extended period (30 minutes or more), you will notice the battery draining more quickly. For long-term lighting needs, dim the brightness if you can, and plug your phone in to charge when you are done.
 
-**Quick Tip:** If you use an iPhone, add the flashlight button to your Control Center if it is not already there. Go to Settings → Control Center and make sure "Flashlight" is listed under "Included Controls." This ensures it appears every time you swipe down.`,
+**Quick Tip:** If you use an iPhone, add the flashlight button to your Control Center if it is not already there. Go to Settings → Control Center and make sure "Flashlight" is listed under "Included Controls." This makes sure it appears every time you swipe down.`,
     steps: [
       {
         title: 'iPhone: swipe down to open Control Center and tap the flashlight',
@@ -532,7 +531,7 @@ When you set up a phone lock, you usually have several choices. Here is what eac
    - **6-Digit Numeric Code:** the default six-number PIN
    - **Custom Numeric Code:** any length you choose (for example, eight digits)
    - **Custom Alphanumeric Code:** letters and numbers (functions like a traditional password)
-7. After confirming your new passcode, it is active immediately. The next time you turn off the screen and turn it back on, you will be asked to enter the code.
+7. After confirming your new passcode, it is active right away. The next time you turn off the screen and turn it back on, you will be asked to enter the code.
 
 **Setting up Face ID alongside your passcode:**
 If your iPhone supports Face ID, you can set it up so that looking at your phone unlocks it — without typing your code every time. The passcode remains as the backup for when Face ID does not work (for example, when wearing a mask, or when someone else tries to unlock your phone). To set up Face ID: go to Settings → Face ID & Passcode → Set Up Face ID and follow the on-screen instructions.
@@ -577,7 +576,7 @@ The process varies by phone brand. On most Android phones, after too many wrong 
 
 ---
 
-**Quick Tip:** After setting a PIN, go back to Settings and look for an option called "Require Passcode" or "Lock after" — set this to "Immediately." This means your phone locks as soon as the screen turns off, giving you the strongest protection. Some phones default to waiting 30 seconds or more before requiring the code.`,
+**Quick Tip:** After setting a PIN, go back to Settings and look for an option called "Require Passcode" or "Lock after" — set this to "Right away." This means your phone locks as soon as the screen turns off, giving you the strongest protection. Some phones default to waiting 30 seconds or more before requiring the code.`,
     steps: [
       {
         title: 'Understand why a lock screen PIN matters',
@@ -599,8 +598,7 @@ The process varies by phone brand. On most Android phones, after too many wrong 
       },
       {
         title: 'Set the phone to lock immediately when the screen turns off',
-        content:
-          'In Settings, look for an option called "Require Passcode," "Lock after," or "Screen lock timeout." Set it to "Immediately" — this means your phone locks as soon as the screen goes dark. If it is set to 30 seconds or longer, your phone is unprotected during that window.',
+        content: 'In Settings, look for an option called "Require Passcode," "Lock after," or "Screen lock timeout." Set it to "Right away" — this means your phone locks as soon as the screen goes dark. If it is set to 30 seconds or longer, your phone is unprotected during that window.',
       },
       {
         title: 'Write your PIN down and store it somewhere safe',

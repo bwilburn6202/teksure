@@ -36,7 +36,7 @@ Pandora works on Amazon Echo speakers (ask Alexa to play your Pandora station), 
       },
       {
         title: `Create your first station`,
-        content: `In the search bar at the top of the app, type the name of an artist, song, or genre you enjoy. For example, type "Frank Sinatra" or "country music" or "relaxing piano." Tap the result that matches best, then tap "Create Station." Pandora will start playing music immediately.`,
+        content: `In the search bar at the top of the app, type the name of an artist, song, or genre you enjoy. For example, type "Frank Sinatra" or "country music" or "relaxing piano." Tap the result that matches best, then tap "Create Station." Pandora will start playing music right away.`,
       },
       {
         title: `Train your station with thumbs up and thumbs down`,
@@ -71,9 +71,9 @@ If you have a SiriusXM Platinum subscription, you can pause live broadcasts and 
 
 SiriusXM also works through Amazon Echo speakers. Go to the Alexa app, tap Skills & Games, search for SiriusXM, enable the skill, and link your account. Then say "Alexa, play channel 22 on SiriusXM."
 
-If you cannot log in or your password is not working, visit siriusxm.com and use the "Forgot Password" link, or call SiriusXM customer service at 1-888-539-7474 for assistance.
+If you cannot log in or your password is not working, visit siriusxm.com and use the "Forgot Password" link, or call SiriusXM customer service at 1-888-539-7474 for help.
 
-New subscribers who do not have a vehicle subscription can sign up for a streaming-only plan. SiriusXM frequently offers promotional rates for new customers — check siriusxm.com for current trial offers.`,
+New subscribers who do not have a vehicle subscription can sign up for a streaming-only plan. SiriusXM often offers promotional rates for new customers — check siriusxm.com for current trial offers.`,
     category: `entertainment`,
     tags: [`siriusxm`, `radio`, `streaming`, `music`, `talk radio`],
     thumbnailEmoji: ``,
@@ -140,7 +140,7 @@ TuneIn also aggregates a large catalog of on-demand podcasts. You can find shows
       },
       {
         title: `Search for your local or favorite station`,
-        content: `Tap the search icon (magnifying glass) at the bottom or top of the screen. Type the station's call letters, city name, or a topic you enjoy — for example, "WNPR," "Houston news," or "classic rock." Tap any result in the list to start listening immediately.`,
+        content: `Tap the search icon (magnifying glass) at the bottom or top of the screen. Type the station's call letters, city name, or a topic you enjoy — for example, "WNPR," "Houston news," or "classic rock." Tap any result in the list to start listening right away.`,
         tip: `If you are not sure of your local station's call letters, search for your city name and browse the results.`,
       },
       {
@@ -215,13 +215,13 @@ Parental controls are available under Account Settings. You can restrict content
     slug: `goodrx-savings-guide`,
     title: `How to Save Money on Prescriptions with GoodRx`,
     excerpt: `GoodRx finds the lowest price for your prescription at nearby pharmacies — often cheaper than insurance copays.`,
-    body: `GoodRx is a free service that searches prescription drug prices at pharmacies near you and provides a coupon that can significantly reduce what you pay at the counter. It is not insurance — it is a discount program that works by negotiating group pricing with pharmacy chains. Using GoodRx is completely legal, and pharmacists deal with GoodRx coupons every day.
+    body: `GoodRx is a free service that searches prescription drug prices at pharmacies near you and provides a coupon that can a lot reduce what you pay at the counter. It is not insurance — it is a discount program that works by negotiating group pricing with pharmacy chains. Using GoodRx is completely legal, and pharmacists deal with GoodRx coupons every day.
 
 Many people are surprised to find that GoodRx prices are lower than their insurance copay, especially for common generic medications. For example, a 30-day supply of a common blood pressure medication that might cost $15 to $20 with insurance could cost $4 to $8 with a GoodRx coupon at certain pharmacies.
 
 To use GoodRx, go to goodrx.com in any browser or download the free GoodRx app from the App Store or Google Play. You do not need to create an account to search for prices, though creating a free account lets you save your medications and compare prices more quickly on future visits.
 
-Type the name of your medication in the search box. Include the dosage and quantity you need — for example, "lisinopril 10mg 30 tablets." GoodRx will show a list of nearby pharmacies and the price you would pay with the GoodRx coupon at each one. Prices vary significantly between pharmacies, so it pays to compare. Costco, Walmart, and Kroger pharmacies often offer some of the lowest prices.
+Type the name of your medication in the search box. Include the dosage and quantity you need — for example, "lisinopril 10mg 30 tablets." GoodRx will show a list of nearby pharmacies and the price you would pay with the GoodRx coupon at each one. Prices vary a lot between pharmacies, so it pays to compare. Costco, Walmart, and Kroger pharmacies often offer some of the lowest prices.
 
 When you find the best price, tap "Get Free Coupon." The coupon will appear on screen — you can show it on your phone screen or print it out. At the pharmacy, tell the pharmacist you have a GoodRx coupon before they ring up your prescription. They will enter the BIN, PCN, and Group numbers from the coupon into their system, and the discounted price will apply.
 
@@ -354,7 +354,7 @@ Not every doctor in your area will be listed on Zocdoc. The service includes onl
       },
       {
         title: `Create an account and confirm your booking`,
-        content: `After selecting a time, Zocdoc will ask you to create a free account or sign in. Enter your contact information, insurance details, and a brief description of why you are visiting. Review your booking details and tap "Book Appointment." A confirmation email will be sent immediately.`,
+        content: `After selecting a time, Zocdoc will ask you to create a free account or sign in. Enter your contact information, insurance details, and a brief description of why you are visiting. Review your booking details and tap "Book Appointment." A confirmation email will be sent right away.`,
       },
       {
         title: `Prepare for your appointment`,
@@ -374,7 +374,7 @@ After pairing, the app dashboard shows a summary of your day at a glance: steps 
 
 The sleep tracking section breaks your night into light sleep, deep sleep, REM sleep, and awake periods. Over time, you can spot patterns — such as consistently waking up during a certain hour — that might be worth discussing with your doctor.
 
-Heart rate data is particularly valuable. Garmin Connect graphs your resting heart rate over weeks and months. A gradually decreasing resting heart rate often indicates improving cardiovascular fitness. The app also records heart rate variability, which some people share with their healthcare provider.
+Heart rate data is particularly valuable. Garmin Connect graphs your resting heart rate over weeks and months. A gradually decreasing resting heart rate often shows improving cardiovascular fitness. The app also records heart rate variability, which some people share with their healthcare provider.
 
 You can set daily step goals, activity goals, and intensity minute targets through the app. Garmin will send reminders to your wrist to move if you have been sitting still for too long.
 
@@ -476,7 +476,7 @@ If you are experiencing a mental health crisis, do not use the secure messaging 
     slug: `tsa-precheck-enrollment`,
     title: `How to Sign Up for TSA PreCheck and Speed Through Security`,
     excerpt: `TSA PreCheck lets you skip long security lines — shoes and laptops stay in your bag. Here's how to apply.`,
-    body: `TSA PreCheck is a U.S. government trusted traveler program run by the Transportation Security Administration. Once you are approved, you get access to dedicated PreCheck lanes at over 200 airports across the country. In those lanes, you do not have to remove your shoes, your laptop, your liquids, your belt, or your light jacket. The lines are typically much shorter and move significantly faster than standard security.
+    body: `TSA PreCheck is a U.S. government trusted traveler program run by the Transportation Security Administration. Once you are approved, you get access to dedicated PreCheck lanes at over 200 airports across the country. In those lanes, you do not have to remove your shoes, your laptop, your liquids, your belt, or your light jacket. The lines are typically much shorter and move a lot faster than standard security.
 
 Membership costs $78 and is valid for five years. That works out to less than $16 per year — a worthwhile investment for anyone who flies more than a few times a year.
 
@@ -486,7 +486,7 @@ At your appointment, bring a valid government-issued photo ID (such as a U.S. pa
 
 When approved, the TSA mails you a Known Traveler Number (KTN). This is a unique number you add to your airline reservations. Every major airline has a field for your KTN in your profile or during booking. Once added, "TSA PRE" will print on your boarding pass, and you will be directed to the PreCheck lane at the airport.
 
-Global Entry is a related CBP program that costs $100 for five years and includes TSA PreCheck automatically. It adds the benefit of using automated kiosks when re-entering the U.S. from international travel, skipping the long customs and passport control lines. If you travel internationally even occasionally, Global Entry is the better value.
+Global Entry is a related CBP program that costs $100 for five years and includes TSA PreCheck automatically. It adds the benefit of using automated kiosks when re-entering the U.S. from international travel, skipping the long customs and passport control lines. If you travel internationally even sometimes, Global Entry is the better value.
 
 CLEAR is a separate, private service (not government-operated) that uses biometrics to verify your identity at the security lane entrance. CLEAR does not replace TSA PreCheck — you can use both together for the fastest airport experience.`,
     category: `government-civic`,
@@ -527,7 +527,7 @@ CLEAR is a separate, private service (not government-operated) that uses biometr
 
 The income limit for guided Free File preparation is $79,000 in adjusted gross income (AGI). This covers the large majority of American taxpayers. If your income exceeds $79,000, there is still a free option — Free File Fillable Forms — but those do not guide you through the process and are better suited for people comfortable with tax forms.
 
-To get started, go to irs.gov/freefile — type that address directly into your browser. Do not search for "free tax filing" in a search engine, because paid companies spend heavily on advertising to appear at the top of search results even though they are not actually free for most people. Going directly to irs.gov/freefile ensures you reach the legitimate government program.
+To get started, go to irs.gov/freefile — type that address directly into your browser. Do not search for "free tax filing" in a search engine, because paid companies spend heavily on advertising to appear at the top of search results even though they are not actually free for most people. Going directly to irs.gov/freefile makes sure you reach the legitimate government program.
 
 On the IRS Free File page, you will see a list of participating software partners with their eligibility requirements. Some have age restrictions or state filing limitations, so compare a few options to find the best fit. Common partners include TaxSlayer, FreeTaxUSA, and others. Click "Use Free Guided Tax Prep" to see which partners you qualify for.
 
@@ -578,13 +578,13 @@ IRS Direct File is an even simpler option now available in many states. It is bu
     slug: `healthcare-gov-enrollment`,
     title: `How to Shop for Health Insurance on HealthCare.gov`,
     excerpt: `HealthCare.gov is where you shop for ACA marketplace health plans — subsidies can lower your monthly cost significantly.`,
-    body: `HealthCare.gov is the federal government's marketplace for buying health insurance under the Affordable Care Act (ACA). If you do not have health coverage through an employer, Medicare, or Medicaid, the marketplace is where you shop for individual and family health plans. Most people who enroll qualify for financial help that significantly lowers their monthly premium.
+    body: `HealthCare.gov is the federal government's marketplace for buying health insurance under the Affordable Care Act (ACA). If you do not have health coverage through an employer, Medicare, or Medicaid, the marketplace is where you shop for individual and family health plans. Most people who enroll qualify for financial help that a lot lowers their monthly premium.
 
 The main enrollment period runs from November 1 through January 15 each year. Outside of that window, you can only enroll if you qualify for a Special Enrollment Period — which opens when you experience a major life change such as losing job-based coverage, getting married, having a baby, or moving to a new area.
 
 To start, go to healthcare.gov and click "Get Coverage." Create an account using your email address and a secure password, then verify your email. Once your account is set up, the application walks you through entering information about your household — names, dates of birth, and Social Security numbers for each person who needs coverage. You will also estimate your total household income for the upcoming year.
 
-The income information is important because it determines your eligibility for premium tax credits — subsidies that reduce your monthly cost. These credits are available to people earning between 100% and 400% of the federal poverty level, and in recent years temporary expansions have extended credits to higher income levels as well. Even if you earn a moderate income, it is worth completing the application to see what assistance you qualify for.
+The income information is important because it determines your eligibility for premium tax credits — subsidies that reduce your monthly cost. These credits are available to people earning between 100% and 400% of the federal poverty level, and in recent years temporary expansions have extended credits to higher income levels as well. Even if you earn a moderate income, it is worth completing the application to see what help you qualify for.
 
 After entering your household information, HealthCare.gov will show you all available plans in your area organized into four metal tiers: Bronze, Silver, Gold, and Platinum. Bronze plans have the lowest monthly premium but the highest deductible and out-of-pocket costs when you use care. Platinum plans have the highest premium but lowest out-of-pocket costs. Silver plans are often the best overall value, especially if you qualify for cost-sharing reductions (which are only available on Silver plans).
 
@@ -592,7 +592,7 @@ When comparing plans, look at the monthly premium (what you pay every month rega
 
 Once you choose a plan, complete your enrollment. Your coverage does not start until you pay your first premium directly to the insurance company — HealthCare.gov does not handle the payment. Watch for a bill or payment instructions from the insurance company, and pay it by the deadline shown.
 
-If you need help, free, unbiased assistance is available through trained navigators and certified application counselors. Find one at localhelp.healthcare.gov.`,
+If you need help, free, unbiased help is available through trained navigators and certified application counselors. Find one at localhelp.healthcare.gov.`,
     category: `government-civic`,
     tags: [`health insurance`, `ACA`, `HealthCare.gov`, `open enrollment`, `marketplace`],
     thumbnailEmoji: ``,
@@ -693,7 +693,7 @@ Before you do anything else, charge the tablet fully using the included USB cabl
 
 The first-time setup wizard walks you through the process step by step. First, choose your language and tap "Get Started." Then connect to your Wi-Fi network — tap your network's name in the list and enter your password.
 
-Next, sign in with your Amazon account. If you have an Amazon account (for shopping, Prime, or Kindle), use the same one here. Your Fire tablet is designed around Amazon services, so signing in with your account immediately gives you access to your Kindle books, your Prime Video library, and Amazon Music. If you do not have an Amazon account, you can create one during setup.
+Next, sign in with your Amazon account. If you have an Amazon account (for shopping, Prime, or Kindle), use the same one here. Your Fire tablet is designed around Amazon services, so signing in with your account right away gives you access to your Kindle books, your Prime Video library, and Amazon Music. If you do not have an Amazon account, you can create one during setup.
 
 After signing in, your tablet will download updates, which can take several minutes — especially on a new device. Let this complete before you start exploring.
 
@@ -841,7 +841,7 @@ If you prefer to call, FedEx customer service is available at 1-800-463-3339.`,
     slug: `freetaxusa-guide`,
     title: `How to File Your Taxes Free with FreeTaxUSA`,
     excerpt: `FreeTaxUSA lets anyone file a federal tax return for free — including itemized deductions and investment income.`,
-    body: `FreeTaxUSA is one of the best-kept secrets in personal finance. Unlike TurboTax or H&R Block Online — which are free only for simple returns and charge extra for common situations like investment income, itemized deductions, or self-employment — FreeTaxUSA offers completely free federal filing with no income limit and no restriction on tax forms. The only charge is approximately $14.99 to file a state return.
+    body: `FreeTaxUSA is one of the best-kept secrets in personal finance. Unlike TurboTax or H&R Block Online — which are free only for simple returns and charge extra for common situations like investment income, itemized deductions, or self-employment — FreeTaxUSA offers completely free federal filing with no income limit and no restriction on tax forms. The only charge is about $14.99 to file a state return.
 
 FreeTaxUSA is an IRS-authorized e-file provider, meaning the IRS officially accepts returns filed through their service. The company has been operating since 2001 and has filed tens of millions of returns.
 
@@ -880,7 +880,7 @@ Download and save a PDF copy of your completed return from FreeTaxUSA — keep i
       },
       {
         title: `Review your return and verify key information`,
-        content: `After completing all sections, FreeTaxUSA shows a summary page with your total income, deductions, and refund or balance due. Click through each section to confirm the numbers look correct. Double-check your Social Security number, direct deposit bank account number, and routing number. Errors in these fields can delay your refund significantly.`,
+        content: `After completing all sections, FreeTaxUSA shows a summary page with your total income, deductions, and refund or balance due. Click through each section to confirm the numbers look correct. Double-check your Social Security number, direct deposit bank account number, and routing number. Errors in these fields can delay your refund a lot.`,
       },
       {
         title: `E-file your federal return for free`,
@@ -904,11 +904,11 @@ The process works like this: the person needing help (we will call them the "rec
 
 You (the "helper") go to the same website — remotedesktop.google.com/support — and enter the access code in the "Give Support" section. Within seconds, you will see the receiver's entire screen on your computer. You can move their mouse, click things, type, open programs, and install software — exactly as if you were sitting at their keyboard.
 
-The receiver can see everything you are doing the entire time. Nothing happens without them watching it happen. At any time, they can click "Stop Sharing" to immediately end the session and take back control.
+The receiver can see everything you are doing the entire time. Nothing happens without them watching it happen. At any time, they can click "Stop Sharing" to right away end the session and take back control.
 
 This is a completely legitimate, official Google tool used by professional IT departments and families alike. The one-time codes expire quickly, which means someone cannot reconnect without the receiver generating a new code. This makes it safe for occasional use.
 
-For situations where you frequently help the same person — for example, you regularly help a parent — Chrome Remote Desktop also offers a "This device" section for setting up persistent remote access with a PIN. This allows you to connect to their computer whenever they are logged in, without them needing to generate a code each time. Only set this up with people you fully trust, and make sure the PIN is kept private.
+For situations where you often help the same person — for example, you regularly help a parent — Chrome Remote Desktop also offers a "This device" section for setting up persistent remote access with a PIN. This allows you to connect to their computer whenever they are logged in, without them needing to generate a code each time. Only set this up with people you fully trust, and make sure the PIN is kept private.
 
 A few important notes: both computers need to be on and awake (not in sleep mode) during the session. Both people need a working internet connection. The connection quality depends on both parties' internet speed. And Chrome Remote Desktop works on Windows, Mac, and Linux computers — not mobile phones or tablets.`,
     category: `essential-skills`,
@@ -938,7 +938,7 @@ A few important notes: both computers need to be on and awake (not in sleep mode
       },
       {
         title: `End the session`,
-        content: `When the problem is resolved, either person can end the session. The receiver can click "Stop Sharing" (a button visible on their screen) at any time to immediately disconnect. The helper can also close the connection from their side. After the session ends, the access code cannot be reused — a new one must be generated for any future session.`,
+        content: `When the problem is resolved, either person can end the session. The receiver can click "Stop Sharing" (a button visible on their screen) at any time to right away disconnect. The helper can also close the connection from their side. After the session ends, the access code cannot be reused — a new one must be generated for any future session.`,
       },
     ],
   },
@@ -991,7 +991,7 @@ Seeing AI works alongside VoiceOver, Apple's built-in screen reader. If VoiceOve
       },
       {
         title: `Identify products by barcode`,
-        content: `Swipe to the Products channel. Point the camera at the barcode on the back of a product — a can of soup, a medicine bottle, a cereal box. The app will beep and then announce the product name when it successfully scans the barcode. Move the camera slowly over the area where the barcode is printed if it does not scan immediately.`,
+        content: `Swipe to the Products channel. Point the camera at the barcode on the back of a product — a can of soup, a medicine bottle, a cereal box. The app will beep and then announce the product name when it successfully scans the barcode. Move the camera slowly over the area where the barcode is printed if it does not scan right away.`,
       },
       {
         title: `Describe a scene or identify currency`,
@@ -1051,7 +1051,7 @@ Google updates Lookout regularly. As of 2026, the app supports several languages
       },
       {
         title: `Read text with Text mode`,
-        content: `Tap "Text" on the main screen. Point your camera at any printed text — a sign, a label, a receipt, a piece of mail. When Lookout detects text, it reads it aloud immediately. Move the camera slowly to let it capture all visible text. The app says "text found" when it identifies something to read.`,
+        content: `Tap "Text" on the main screen. Point your camera at any printed text — a sign, a label, a receipt, a piece of mail. When Lookout detects text, it reads it aloud right away. Move the camera slowly to let it capture all visible text. The app says "text found" when it identifies something to read.`,
       },
       {
         title: `Read a full document`,

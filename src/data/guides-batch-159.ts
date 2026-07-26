@@ -36,7 +36,7 @@ Setting up alerts is free, takes about 10 minutes, and works on any smartphone o
 
 **Why alerts beat monthly statements**
 
-When you notice fraud on a monthly statement, you may be looking at charges that happened 2–4 weeks ago. Banks have time limits on disputing fraudulent charges — the sooner you report, the easier it is to recover your money. Federal law (the Electronic Fund Transfer Act) gives you stronger protection if you report an unauthorized debit card charge within two business days. After 60 days, your liability can increase significantly.
+When you notice fraud on a monthly statement, you may be looking at charges that happened 2–4 weeks ago. Banks have time limits on disputing fraudulent charges — the sooner you report, the easier it is to recover your money. Federal law (the Electronic Fund Transfer Act) gives you stronger protection if you report an unauthorized debit card charge within two business days. After 60 days, your liability can increase a lot.
 
 With real-time alerts turned on, you receive a text or email the moment a charge posts. If someone uses your card number at a store you have never visited, you will know within seconds — not weeks.
 
@@ -157,7 +157,7 @@ If you receive a text pretending to be from your bank that contains a link or as
 
 **After alerts are set up**
 
-Within a day or two, you should start receiving notifications for your normal transactions. This is a good thing — it means the alerts are working. Over time, you will learn which notifications are routine and which ones stand out as unexpected. If you ever see a charge you do not recognize, call your bank immediately using the number on the back of your card.`,
+Within a day or two, you should start receiving notifications for your normal transactions. This is a good thing — it means the alerts are working. Over time, you will learn which notifications are routine and which ones stand out as unexpected. If you ever see a charge you do not recognize, call your bank right away using the number on the back of your card.`,
     steps: [
       {
         title: 'Sign in to your bank account online or in the app',
@@ -184,8 +184,7 @@ Within a day or two, you should start receiving notifications for your normal tr
       },
       {
         title: 'Turn on security and new login alerts',
-        content:
-          'Find alerts for new device logins or password changes and turn them on. These are security alerts that notify you any time your account is accessed from an unrecognized device or location. If you receive one of these alerts when you are not logging in, contact your bank immediately — someone else may be trying to access your account.',
+        content: 'Find alerts for new device logins or password changes and turn them on. These are security alerts that notify you any time your account is accessed from an unrecognized device or location. If you receive one of these alerts when you are not logging in, contact your bank right away — someone else may be trying to access your account.',
         tip: 'Many banks turn security alerts on by default and do not let you turn them off — check that they are active and going to your current phone number.',
       },
       {
@@ -221,7 +220,7 @@ Within a day or two, you should start receiving notifications for your normal tr
     difficulty: 'Beginner',
     body: `A telehealth visit is a real doctor appointment that happens on your phone, tablet, or computer instead of in an exam room. You see and hear your doctor through a video call — the same way you might video chat with a family member — and your doctor can review your symptoms, answer questions, prescribe medications, and send referrals, all without you leaving home.
 
-Telehealth is not a lesser version of care. For many conditions, it is just as effective as an in-person visit and significantly more convenient — no driving, no waiting rooms, and no arranging transportation.
+Telehealth is not a lesser version of care. For many conditions, it is just as effective as an in-person visit and a lot more convenient — no driving, no waiting rooms, and no arranging transportation.
 
 ---
 
@@ -257,7 +256,7 @@ If you describe symptoms that need in-person evaluation, your telehealth provide
 
 **Medicare covers most telehealth visits**
 
-Since 2020, Medicare has significantly expanded telehealth coverage. As of 2026, Medicare covers telehealth visits for:
+Since 2020, Medicare has a lot expanded telehealth coverage. As of 2026, Medicare covers telehealth visits for:
 
 - Video visits with your primary care doctor or specialist when you are at home
 - Mental health services via video
@@ -632,7 +631,7 @@ In addition to backup, Google Photos makes sharing much simpler than texting ind
 
 **How much does it cost?**
 
-Google Photos is free for up to 15 GB of storage. This is enough for thousands of photos for most people. If you take a very large number of photos and videos over many years, you might eventually need more storage, which Google sells as a paid plan called Google One. But the free 15 GB is sufficient for most users.
+Google Photos is free for up to 15 GB of storage. This is enough for thousands of photos for most people. If you take a very large number of photos and videos over many years, you might eventually need more storage, which Google sells as a paid plan called Google One. But the free 15 GB is enough for most users.
 
 ---
 
@@ -765,8 +764,7 @@ They do not need to do anything other than tap the link or notification to see y
       },
       {
         title: 'Add more photos to an album at any time',
-        content:
-          'Open Google Photos and find a photo you want to add to an existing album. Tap and hold the photo to select it (a blue checkmark appears). Tap additional photos to select more. Tap the three-dot menu in the upper-right corner, then tap "Add to album," and choose the album. The photos are added immediately and all members of the shared album can see them.',
+        content: 'Open Google Photos and find a photo you want to add to an existing album. Tap and hold the photo to select it (a blue checkmark appears). Tap additional photos to select more. Tap the three-dot menu in the upper-right corner, then tap "Add to album," and choose the album. The photos are added right away and all members of the shared album can see them.',
       },
       {
         title: 'Set up automatic sharing with a trusted family member',

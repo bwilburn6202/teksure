@@ -572,7 +572,7 @@ You have two options when you run out of space: delete things you don't need, or
 - 200 GB: $2.99/month (good for most families)
 - 2 TB: $9.99/month (for large photo libraries)
 
-Choose a plan and tap "Buy." The charge goes to the payment method on your Apple ID. Your storage upgrades immediately.`,
+Choose a plan and tap "Buy." The charge goes to the payment method on your Apple ID. Your storage upgrades right away.`,
         tip: `The 50 GB plan for $0.99 a month is plenty for most single users. If you want to share storage with family members, the 200 GB plan can be shared with up to five family members through Apple's Family Sharing feature.`
       },
       {
@@ -593,7 +593,7 @@ Choose a plan and tap "Buy." The charge goes to the payment method on your Apple
     difficulty: `Beginner`,
     body: `WhatsApp voice messages are one of the most popular features in the app, and for good reason: they're faster than typing, more personal than text, and much easier to use if you have trouble with small keyboards. You record your message by holding down a button, and the other person can listen to it whenever they're ready.
 
-Voice messages in WhatsApp work like leaving a voicemail, but they go directly into your chat conversation as a playable audio clip. The person you're messaging can listen to it immediately or come back to it later. They can also speed it up or slow it down with a tap if they want.
+Voice messages in WhatsApp work like leaving a voicemail, but they go directly into your chat conversation as a playable audio clip. The person you're messaging can listen to it right away or come back to it later. They can also speed it up or slow it down with a tap if they want.
 
 Here's when voice messages are especially useful:
 - When your message is long and typing it out would take a while
@@ -811,7 +811,7 @@ The problem is that without some organization, Google Drive can become as clutte
       },
       {
         title: `Color-code your folders`,
-        content: `Right-click on any folder in Google Drive. Choose "Organize" and then "Change color." A palette of colors appears. Click the color you want for that folder. The folder icon will change to that color immediately. This works on the Google Drive website — the app doesn't show folder colors in the same way.`,
+        content: `Right-click on any folder in Google Drive. Choose "Organize" and then "Change color." A palette of colors appears. Click the color you want for that folder. The folder icon will change to that color right away. This works on the Google Drive website — the app doesn't show folder colors in the same way.`,
         tip: `A consistent color system helps a lot. For example: red for urgent/bills, green for health, blue for family, yellow for work. Stick to the same system and it becomes second nature.`
       },
       {

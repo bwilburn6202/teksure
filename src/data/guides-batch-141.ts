@@ -79,7 +79,7 @@ Your iPhone counts a step every time it detects the motion of walking. It is not
 
 To see your steps: Open Health → tap Browse → tap Activity → tap Steps. You will see today's count and a bar chart of recent days. Tap "Show All Data" to see individual daily totals going back as far as your phone has been tracking.
 
-A common goal is 7,000–10,000 steps per day, but any increase from your personal baseline is beneficial. The Health app can send you a weekly summary of your activity if you turn on notifications.
+A common goal is 7,000–10,000 steps per day, but any increase from your personal baseline is helpful. The Health app can send you a weekly summary of your activity if you turn on notifications.
 
 **Sleep tracking**
 
@@ -206,7 +206,7 @@ The password is usually 8–12 characters of random letters, numbers, and someti
 
 **Setting up a guest Wi-Fi network**
 
-If you frequently have visitors, consider setting up a separate guest Wi-Fi network. Most modern routers support this. A guest network gives visitors internet access without letting them see your other devices (your computer, printer, or smart home devices). Check your router's app or your internet provider's app — look for "Guest Network" or "Guest Wi-Fi" in the settings.
+If you often have visitors, consider setting up a separate guest Wi-Fi network. Most modern routers support this. A guest network gives visitors internet access without letting them see your other devices (your computer, printer, or smart home devices). Check your router's app or your internet provider's app — look for "Guest Network" or "Guest Wi-Fi" in the settings.
 
 **Sources:** Apple Support — Share Wi-Fi password on iPhone (support.apple.com); Google Android Help — Share your Wi-Fi connection (support.google.com)`,
     steps: [
@@ -285,7 +285,7 @@ Most phones show the same pattern: photos and videos are almost always the bigge
 
 *Apps* — Apps range widely in size. Streaming apps like Netflix can hold downloaded content that takes gigabytes. Social media apps like Facebook accumulate cached data (saved files the app stores to load faster) over time.
 
-*Messages* — If you text frequently with photos, videos, or voice messages, your message history grows silently. Years of messages with embedded media can use several gigabytes.
+*Messages* — If you text often with photos, videos, or voice messages, your message history grows silently. Years of messages with embedded media can use several gigabytes.
 
 *Music and podcasts* — Downloaded music and podcast episodes stay on your phone until you delete them.
 
@@ -435,7 +435,7 @@ Phishing emails create panic so you act without thinking. Common phrases to watc
 - "Your Medicare benefits are at risk"
 - "You have a package waiting — delivery attempt failed"
 - "Verify your information or your account will be closed"
-- "You owe back taxes — respond immediately to avoid legal action"
+- "You owe back taxes — respond right away to avoid legal action"
 
 Legitimate companies do not threaten to shut down your account in 24 hours over email. The IRS does not contact you by email at all — only by postal mail.
 
@@ -492,7 +492,7 @@ On a phone: Press and hold a link with your finger for one to two seconds. A sma
 
 **Common phishing examples seniors report**
 
-"Your Medicare information needs to be verified immediately." — Medicare does not contact you by email asking for personal information. If you receive this, do not respond.
+"Your Medicare information needs to be verified right away." — Medicare does not contact you by email asking for personal information. If you receive this, do not respond.
 
 "We were unable to deliver your package. Click here to reschedule." — Delivery companies (UPS, FedEx, USPS) do send legitimate delivery notices, but always double-check the sender address and go to the company's official website directly rather than clicking the email link.
 
@@ -512,9 +512,9 @@ Open the email → click the three dots at the top of the email → click "Repor
 
 Do not panic — clicking a link does not automatically mean your accounts are compromised, but act quickly:
 
-1. Do not enter any information on the page that opened. Close it immediately.
+1. Do not enter any information on the page that opened. Close it right away.
 2. Change your password for any account that was mentioned in the phishing email. Do this from the real website — type the address yourself or use a bookmark.
-3. If you entered a credit card number, call your bank immediately.
+3. If you entered a credit card number, call your bank right away.
 4. If you entered your Social Security number, go to IdentityTheft.gov (the FTC's official site) to file a report and get a personalized recovery plan.
 5. Run a security scan on your device if you opened an attachment.
 
@@ -548,8 +548,7 @@ Do not panic — clicking a link does not automatically mean your accounts are c
       },
       {
         title: 'Act quickly if you clicked a suspicious link or shared information',
-        content:
-          'Close the page immediately without entering any information. Change your password for the account mentioned in the email — go directly to the real website by typing the address yourself. If you shared credit card information, call your bank right away. If you shared your Social Security number, visit IdentityTheft.gov to start the recovery process. Call 1-877-FTC-HELP (1-877-382-4357) for free guidance.',
+        content: 'Close the page right away without entering any information. Change your password for the account mentioned in the email — go directly to the real website by typing the address yourself. If you shared credit card information, call your bank right away. If you shared your Social Security number, visit IdentityTheft.gov to start the recovery process. Call 1-877-FTC-HELP (1-877-382-4357) for free guidance.',
         warning:
           'Do not use any contact information from inside the suspicious email — phone numbers and websites listed there may be fake too. Look up the real company\'s phone number on their official website or on the back of your card.',
       },

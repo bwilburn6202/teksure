@@ -16,7 +16,7 @@ export const guidesBatch5: Guide[] = [
     publishedAt: '2026-04-14',
     body: `Losing your phone — or having it stolen — is stressful. But there are steps you can take right now to protect your personal information, lock your device remotely, and prevent anyone from accessing your accounts. Acting quickly makes a big difference.
 
-**The most important thing: you have a window of time.** Most phone thieves immediately try to access email, banking apps, and photos. The steps below will lock them out.
+**The most important thing: you have a window of time.** Most phone thieves right away try to access email, banking apps, and photos. The steps below will lock them out.
 
 **Step 1: Use another device to locate your phone.** If you have an iPhone, go to icloud.com/find on any computer or tablet and sign in with your Apple ID. If you have an Android, go to android.com/find and sign in with your Google account. You'll see a map showing where your phone is (if it's still on).
 
@@ -98,7 +98,7 @@ On any phone: Open Google Photos and find a photo you've already taken. Tap the 
     readTime: '5 min',
     videoUrl: 'https://www.youtube.com/embed/nzYKHHVRKKQ',
     publishedAt: '2026-04-14',
-    body: `Spam calls — robocalls, scam attempts, and unwanted sales calls — are one of the most frustrating parts of owning a phone. Americans receive billions of spam calls every year. The good news is that your iPhone has several built-in tools to significantly reduce them.
+    body: `Spam calls — robocalls, scam attempts, and unwanted sales calls — are one of the most frustrating parts of owning a phone. Americans receive billions of spam calls every year. The good news is that your iPhone has several built-in tools to a lot reduce them.
 
 **Option 1: Silence Unknown Callers (recommended)**
 
@@ -455,7 +455,7 @@ Here's how to do it step by step.
       { title: 'Click "Share Screen" in the toolbar', content: 'On a computer, look at the bottom of the Zoom window for the green "Share Screen" button (with an upward arrow icon). Click it.' },
       { title: 'Choose what to share', content: 'A menu appears. Click "Desktop" to show your entire screen, or click a specific app to show only that window. Then click the blue "Share" button.' },
       { title: `Confirm you're sharing`, content: `A green border will appear around your screen. You'll see a toolbar at the top saying "You are screen sharing." The other person can now see your screen.` },
-      { title: 'Stop sharing when done', content: 'Click the red "Stop Share" button that appears at the top of your screen. Your screen will become private again immediately.' },
+      { title: 'Stop sharing when done', content: 'Click the red "Stop Share" button that appears at the top of your screen. Your screen will become private again right away.' },
     ],
   },
   {
@@ -477,7 +477,7 @@ This is especially useful if you fall, feel unwell, or are in any situation wher
 
 Press and hold the Side button (the power button on the right) and either Volume button at the same time. After 2 seconds, a slider appears with emergency options. Slide the "Emergency SOS" slider to call 911.
 
-Alternatively: Press the Side button five times quickly. This immediately calls 911.
+Alternatively: Press the Side button five times quickly. This right away calls 911.
 
 **How to set up Emergency Contacts (so your family is notified):**
 
@@ -506,7 +506,7 @@ Emergency responders can see this information from your lock screen without need
 
 If you have an Apple Watch, it can detect if you fall and automatically call 911 if you don't respond within 60 seconds. Go to the Watch app on your iPhone → My Watch → Emergency SOS → turn on "Fall Detection."
 
-**Quick Tip:** Test the process so you're familiar with it. You can trigger Emergency SOS and immediately cancel — this won't call 911 as long as you cancel before the countdown ends.`,
+**Quick Tip:** Test the process so you're familiar with it. You can trigger Emergency SOS and right away cancel — this won't call 911 as long as you cancel before the countdown ends.`,
     steps: [
       { title: 'Know how to trigger Emergency SOS', content: 'On iPhone 8 or newer: press and hold the Side button + either Volume button until sliders appear, then slide "Emergency SOS." Or press the Side button 5 times quickly.' },
       { title: 'Add emergency contacts in the Health app', content: `Open the Health app → tap your profile → Medical ID → Edit → Emergency Contacts → tap + and add a family member. They'll be notified with your location when you call Emergency SOS.` },
@@ -682,7 +682,7 @@ Never open an attachment you weren't expecting, even if the email claims to be a
 **Quick Tip:** When in doubt, call the company directly using the phone number on the back of your card or on their official website — never the number in a suspicious email.`,
     steps: [
       { title: `Check the sender's actual email address`, content: `Tap or click the sender's name to reveal the full email address. Real companies use their own domain (@amazon.com, @apple.com, @bankname.com). Watch for extra words, hyphens, or wrong domains.` },
-      { title: 'Look for urgency and threats', content: 'Phrases like "suspended in 24 hours," "pay immediately," or "unauthorized access detected" are designed to rush you. Slow down — take a breath before clicking anything.' },
+      { title: 'Look for urgency and threats', content: 'Phrases like "suspended in 24 hours," "pay right away," or "unauthorized access detected" are designed to rush you. Slow down — take a breath before clicking anything.' },
       { title: 'Check for your name', content: 'Your real bank or service knows your name and uses it. "Dear Customer" or "Dear Account Holder" is a warning sign.' },
       { title: 'Hover over links before clicking', content: `On a computer, hover your mouse over any link to see the real URL at the bottom of the screen. On a phone, press and hold the link (don't tap) to see where it actually goes.` },
       { title: 'Never open unexpected attachments', content: `Don't open any attached file you weren't expecting — even PDFs or Word documents. If it claims to be an invoice or receipt, verify by going directly to the company's website.` },

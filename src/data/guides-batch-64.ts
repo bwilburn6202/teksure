@@ -131,7 +131,7 @@ Waze works best with a strong cellular signal since it downloads live traffic da
       },
       {
         title: `Save your home and work addresses`,
-        content: `Tap the search bar, then tap "Home" or "Work" to add those addresses. This makes it faster to start your most common trips. You can also save frequently visited places like a doctor's office or family member's home.`
+        content: `Tap the search bar, then tap "Home" or "Work" to add those addresses. This makes it faster to start your most common trips. You can also save often visited places like a doctor's office or family member's home.`
       },
       {
         title: `Start navigation`,
@@ -305,11 +305,11 @@ When your groceries arrive, the shopper leaves them at your door. You do not nee
     slug: `food-delivery-save-money-guide`,
     title: `How to Save Money When Ordering Food Delivery`,
     excerpt: `Delivery fees and service charges add up fast. These practical tips help you spend less every time you order.`,
-    body: `Ordering food through apps like DoorDash, Uber Eats, Grubhub, or Instacart is convenient, but the final price is often significantly higher than the menu price you see at first glance. Understanding the full cost breakdown and knowing a few practical strategies can save you a meaningful amount of money each month.
+    body: `Ordering food through apps like DoorDash, Uber Eats, Grubhub, or Instacart is convenient, but the final price is often a lot higher than the menu price you see at first glance. Understanding the full cost breakdown and knowing a few practical strategies can save you a meaningful amount of money each month.
 
 Here is how the fees typically break down on a single order: there is a delivery fee (usually $2–$5, but can be higher during busy periods), a service fee charged by the app (typically 10–15% of your subtotal), a possible small order fee if your order is under a minimum amount, and any tip you add for the driver (15–20% is standard). On a $25 meal, you might end up paying $40 or more after all fees and tip.
 
-Subscription memberships can help if you order frequently. DashPass (from DoorDash) costs about $9.99 per month and waives delivery fees on qualifying orders over $12. Uber One costs $9.99 per month and waives delivery fees on Uber Eats orders plus other perks. If you order more than two or three times per month, either membership typically pays for itself.
+Subscription memberships can help if you order often. DashPass (from DoorDash) costs about $9.99 per month and waives delivery fees on qualifying orders over $12. Uber One costs $9.99 per month and waives delivery fees on Uber Eats orders plus other perks. If you order more than two or three times per month, either membership typically pays for itself.
 
 One of the best ways to avoid fees entirely is to call the restaurant directly or order from their own website. Many restaurants — especially local and independently owned ones — offer online ordering without any third-party platform fees. You pick it up or they deliver it at a lower price.
 
@@ -340,7 +340,7 @@ Finally, pay attention to minimum order amounts. A small order fee is often char
       },
       {
         title: `Choose pickup instead of delivery`,
-        content: `On DoorDash, Uber Eats, and Grubhub, look for a "Pickup" option on the restaurant's page. When you select pickup, all delivery fees and service charges are reduced significantly or eliminated. You order ahead and arrive at the restaurant at the scheduled time.`,
+        content: `On DoorDash, Uber Eats, and Grubhub, look for a "Pickup" option on the restaurant's page. When you select pickup, all delivery fees and service charges are reduced a lot or eliminated. You order ahead and arrive at the restaurant at the scheduled time.`,
         tip: `Pickup orders are also usually ready faster than delivery — no waiting for a driver to be assigned and travel to you.`
       },
       {
@@ -408,7 +408,7 @@ One important note: iPhones with iOS 15.2 or later have an easier path. If the p
 
 The backup step is the most important part of this entire process. Before resetting, go to Settings and search for "Backup." On most Android phones, you will find a "Google One backup" or "Backup to Google account" option. Turn it on and tap "Back Up Now." This saves your contacts, photos (to Google Photos), and app data to your Google account. If you use a Samsung phone, Samsung Cloud is an additional backup option found in Settings under "Accounts and backup."
 
-After backing up, sign out of your Google account. Go to Settings, then "Accounts" or "Accounts and backup," tap on your Google account, and select "Remove account." This step ensures Activation Lock (called Factory Reset Protection on Android) is removed so the next owner can set up the phone normally.
+After backing up, sign out of your Google account. Go to Settings, then "Accounts" or "Accounts and backup," tap on your Google account, and select "Remove account." This step makes sure Activation Lock (called Factory Reset Protection on Android) is removed so the next owner can set up the phone normally.
 
 The location of the factory reset option varies by phone brand. On Samsung phones, go to Settings, tap "General Management," then "Reset," then "Factory data reset." On Google Pixel phones, go to Settings, tap "System," then "Reset options," then "Erase all data (factory reset)." On other Android brands, look for "Reset" under Settings or General Management. All paths lead to the same confirmation screen.
 
@@ -514,7 +514,7 @@ There are two ways to review permissions on Android. The first is per app: go to
 
 The second way gives you an overview of all apps that can access a specific resource. Go to Settings, tap Privacy, then "Permission Manager." From here, tap any category — like Location or Microphone — to see every app that has access to it. This bird's-eye view is particularly useful for spotting apps that have access to something they should not need.
 
-Android 14 and later added a Privacy Dashboard (in Settings under Privacy) that shows you a timeline of which apps accessed your camera, microphone, and location over the past 24 hours. If you see an unfamiliar app showing up frequently, that is a signal to review or revoke its permissions.
+Android 14 and later added a Privacy Dashboard (in Settings under Privacy) that shows you a timeline of which apps accessed your camera, microphone, and location over the past 24 hours. If you see an unfamiliar app showing up often, that is a signal to review or revoke its permissions.
 
 When reviewing location permissions, you will typically see three options: "Allow all the time," "Allow only while using the app," or "Don't allow." For most apps, "Allow only while using the app" is the right choice — it means the app can only check your location when you are actively using it, not when it is running in the background.
 
@@ -564,7 +564,7 @@ For the vast majority of apps, "Allow only while using the app" is the right set
 
 Google Maps keeps a separate record called Location History, which stores a timeline of everywhere you have traveled. You can turn this off or delete past history by opening Google Maps, tapping your profile picture, going to "Your data in Maps," and then "Location History." You can pause location history or delete specific time periods.
 
-For apps that have no reason to know your location — social media, shopping apps, news apps — set the permission to "Don't allow." They will still function for their core purpose. You will occasionally see a prompt asking to enable location for a feature, and you can decide in that moment whether it is worth it.
+For apps that have no reason to know your location — social media, shopping apps, news apps — set the permission to "Don't allow." They will still function for their core purpose. You will sometimes see a prompt asking to enable location for a feature, and you can decide in that moment whether it is worth it.
 
 Using "Approximate location" instead of "Precise location" is another option available in Android 14 and later. When you choose this, the app sees a general area rather than your exact address. This is useful for apps that need a rough sense of your city or region but do not need to know your exact street address.`,
     category: `safety-guides`,
@@ -635,7 +635,7 @@ What should you do if an update causes a problem? Most app developers release a 
       },
       {
         title: `What to do if an update causes a problem`,
-        content: `Occasionally an update changes something you relied on or introduces a new bug. Most developers release a fix within a few days. You can report the issue by going to the App Store or Play Store, finding the app, and scrolling to the ratings and reviews section — look for a "Report a problem" or "Send feedback" option.`
+        content: `Sometimes an update changes something you relied on or introduces a new bug. Most developers release a fix within a few days. You can report the issue by going to the App Store or Play Store, finding the app, and scrolling to the ratings and reviews section — look for a "Report a problem" or "Send feedback" option.`
       }
     ]
   },
@@ -742,7 +742,7 @@ Sharing access is straightforward. You can add family members to your myQ accoun
     slug: `smart-smoke-detector-guide`,
     title: `How Smart Smoke Detectors Work and How to Set One Up`,
     excerpt: `Smart smoke and carbon monoxide detectors send alerts to your phone — even when you're away from home.`,
-    body: `Traditional smoke detectors beep loudly when they detect smoke or carbon monoxide — but only if you are home to hear them. A smart smoke detector does everything a regular one does, plus it sends an alert to your phone no matter where you are. If a smoke alarm goes off while you are at the grocery store or visiting family, you will know immediately and can call for help.
+    body: `Traditional smoke detectors beep loudly when they detect smoke or carbon monoxide — but only if you are home to hear them. A smart smoke detector does everything a regular one does, plus it sends an alert to your phone no matter where you are. If a smoke alarm goes off while you are at the grocery store or visiting family, you will know right away and can call for help.
 
 Two of the most popular smart smoke detectors in the US are the Google Nest Protect and the First Alert Onelink Safe and Sound. Both connect to your home Wi-Fi and pair with a phone app. Both detect smoke and carbon monoxide. The Nest Protect is well regarded for its friendly voice announcements — instead of only beeping, it tells you "There is smoke in the hallway" so you know where to look.
 
@@ -825,7 +825,7 @@ If you have a third-party antivirus program installed — like Norton, McAfee, o
       },
       {
         title: `Run a Quick Scan`,
-        content: `Click "Virus & threat protection." The screen shows when the last scan ran. Click "Quick scan" to start scanning immediately. A quick scan typically takes 2 to 10 minutes and checks the most common locations where threats appear — your running processes, startup files, and common system folders.`
+        content: `Click "Virus & threat protection." The screen shows when the last scan ran. Click "Quick scan" to start scanning right away. A quick scan typically takes 2 to 10 minutes and checks the most common locations where threats appear — your running processes, startup files, and common system folders.`
       },
       {
         title: `Run a Full Scan for a thorough check`,

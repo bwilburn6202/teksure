@@ -67,7 +67,7 @@ This guide is written for Windows 10 and 11. The exact menus look slightly diffe
 
 AirPods 4 with active noise cancellation cost about $179. Older AirPods 3 are around $129. AirPods Pro 2 are $249. All three work the same with iPhones — the differences are mostly in noise cancelling and how they fit (in-ear vs. open-style).
 
-This guide covers the most useful AirPods features beyond music alone — pairing, switching devices, hearing assistance, and TV audio.
+This guide covers the most useful AirPods features beyond music alone — pairing, switching devices, hearing help, and TV audio.
 
 (Sources: Apple Support — AirPods, support.apple.com/airpods)`,
     steps: [

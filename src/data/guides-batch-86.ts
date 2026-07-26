@@ -17,7 +17,7 @@ For anyone who has ever lost a houseplant because they forgot to water it — or
 
 When you open Planta, you can search for your plant by name, upload a photo to identify it, or browse a library of more than 10,000 species. Once added, each plant gets its own profile showing its health history, upcoming tasks, and care tips specific to that species.
 
-The free version covers watering and light reminders for most common houseplants. The paid "Plus" subscription unlocks a plant doctor feature for diagnosing problems from a photo, expert advice, and more detailed care guides. Many users find the free version sufficient for everyday plant keeping.
+The free version covers watering and light reminders for most common houseplants. The paid "Plus" subscription unlocks a plant doctor feature for diagnosing problems from a photo, expert advice, and more detailed care guides. Many users find the free version enough for everyday plant keeping.
 
 Planta is available on iPhone (App Store) and Android (Google Play). The app from Strömming AB has been downloaded more than 10 million times and has strong reviews for accuracy and ease of use. You can learn more at getplanta.com.`,
     steps: [
@@ -161,7 +161,7 @@ As of 2026, eBird has recorded more than 1.5 billion bird observations from more
       },
       {
         title: `Submit a checklist from the field`,
-        content: `When you are outside and see birds, open the eBird app and tap "Start a Checklist." The app automatically captures your GPS location. Choose whether you are stationary (sitting in one spot) or traveling (walking a trail). As you spot birds, search for them by name and add them to the list along with how many you saw. When you are done, tap Submit. Your checklist is immediately added to the global database.`,
+        content: `When you are outside and see birds, open the eBird app and tap "Start a Checklist." The app automatically captures your GPS location. Choose whether you are stationary (sitting in one spot) or traveling (walking a trail). As you spot birds, search for them by name and add them to the list along with how many you saw. When you are done, tap Submit. Your checklist is right away added to the global database.`,
         warning: `Only count birds you genuinely identified. Guessing inflates the data and makes the science less reliable. If you are not sure, skip it or mark it as "unknown" — that is perfectly acceptable.`,
       },
       {
@@ -200,7 +200,7 @@ Sound ID works best outdoors in relatively quiet conditions, though it can still
       },
       {
         title: `Start a Sound ID session`,
-        content: `From the Merlin home screen, tap "Sound ID." The app asks for permission to use your microphone — tap "Allow." Hold your phone with the microphone pointed toward where you hear the birds. Merlin begins listening immediately. Species names appear on screen with a colored waveform showing the sound pattern. The display updates in real time as birds sing and stop.`,
+        content: `From the Merlin home screen, tap "Sound ID." The app asks for permission to use your microphone — tap "Allow." Hold your phone with the microphone pointed toward where you hear the birds. Merlin begins listening right away. Species names appear on screen with a colored waveform showing the sound pattern. The display updates in real time as birds sing and stop.`,
         tip: `Quick Tip: The microphone on most phones is near the bottom edge. Holding the phone upright with the bottom facing a tree gives the microphone the best angle to pick up bird sounds.`,
       },
       {
@@ -273,9 +273,9 @@ Stellarium is developed by a community of astronomers and software developers wh
     difficulty: `Beginner`,
     body: `Star Walk 2 is one of the most visually polished stargazing apps available. It uses your phone's camera in augmented reality mode — meaning it overlays digital labels directly on a live camera view of the actual sky in front of you. Stars, planets, constellations, satellites, and deep-sky objects all appear labeled in real time as you move your phone around.
 
-The app is developed by Vito Technology and has earned recognition for its beautiful design alongside its accuracy. It covers more than 200,000 stars, all the planets in our solar system, the International Space Station, and numerous satellites, comets, and asteroids.
+The app is developed by Vito Technology and has earned recognition for its beautiful design alongside its accuracy. It covers more than 200,000 stars, all the planets in our solar system, the International Space Station, and many satellites, comets, and asteroids.
 
-Star Walk 2 is free to download with some features available through a small in-app upgrade. The free version is more than sufficient for identifying objects and exploring the night sky. The app is available for iPhone and Android.
+Star Walk 2 is free to download with some features available through a small in-app upgrade. The free version is more than enough for identifying objects and exploring the night sky. The app is available for iPhone and Android.
 
 What makes Star Walk 2 different from a simple star chart is the augmented reality layer. Rather than holding a printed chart next to the sky and trying to match what you see, you look directly through your phone's camera and see labels sitting on top of the real stars. This makes identification dramatically faster and easier, especially for beginners who are not yet familiar with star patterns.
 
@@ -405,12 +405,12 @@ Unlike a general weather app that shows you a forecast, MyRadar shows you what i
     steps: [
       {
         title: `Download and open MyRadar`,
-        content: `Search for "MyRadar Weather Radar" in the App Store or Google Play. Download the free version — it is the one with the most reviews and the orange radar icon. Open the app and allow it to access your location. The radar map will immediately center on your area and display any current precipitation. If the sky is clear, the map will show your region with no colored overlay.`,
+        content: `Search for "MyRadar Weather Radar" in the App Store or Google Play. Download the free version — it is the one with the most reviews and the orange radar icon. Open the app and allow it to access your location. The radar map will right away center on your area and display any current precipitation. If the sky is clear, the map will show your region with no colored overlay.`,
         tip: `Quick Tip: Allow notifications when prompted. Severe weather alerts are the most important safety feature this app offers, and they only work if notifications are enabled.`,
       },
       {
         title: `Read the radar colors`,
-        content: `On radar maps, colors indicate precipitation intensity. Green means light rain or drizzle. Yellow and orange mean moderate to heavy rain. Red means very heavy rain or large hail. Purple typically indicates the heaviest precipitation or possible hail. Blue and teal shades indicate snow or mixed precipitation. When you see red or purple on the map heading toward your location, that is a sign of a significant storm.`,
+        content: `On radar maps, colors show precipitation intensity. Green means light rain or drizzle. Yellow and orange mean moderate to heavy rain. Red means very heavy rain or large hail. Purple typically shows the heaviest precipitation or possible hail. Blue and teal shades show snow or mixed precipitation. When you see red or purple on the map heading toward your location, that is a sign of a significant storm.`,
       },
       {
         title: `Animate the radar to see storm movement`,
@@ -420,7 +420,7 @@ Unlike a general weather app that shows you a forecast, MyRadar shows you what i
       {
         title: `Set up severe weather alerts`,
         content: `Tap the menu icon (three horizontal lines) and go to Settings, then Notifications. Enable alerts for your location. You can choose which types of warnings you want to receive — tornado warnings, severe thunderstorm warnings, flood warnings, and others. For maximum safety, enable all of them. MyRadar pulls these alerts directly from the National Weather Service, so they are the same official warnings broadcast on TV and radio.`,
-        warning: `Severe weather alerts are official warnings, not forecasts. If you receive a tornado warning, do not go outside to look at the sky. Move to the lowest floor of a sturdy building, away from windows, immediately.`,
+        warning: `Severe weather alerts are official warnings, not forecasts. If you receive a tornado warning, do not go outside to look at the sky. Move to the lowest floor of a sturdy building, away from windows, right away.`,
       },
     ],
   },
@@ -464,7 +464,7 @@ For the app layer, the best free options are the Red Cross Tornado App, the FEMA
       },
       {
         title: `Know your shelter location before a storm threatens`,
-        content: `The safest place during a tornado is the lowest floor of a sturdy building, in an interior room away from windows — a bathroom, closet, or hallway. Identify that location in your home now, before storm season, so you are not trying to figure it out under pressure. If you receive a tornado warning, move there immediately without stopping to watch out a window or take a video.`,
+        content: `The safest place during a tornado is the lowest floor of a sturdy building, in an interior room away from windows — a bathroom, closet, or hallway. Identify that location in your home now, before storm season, so you are not trying to figure it out under pressure. If you receive a tornado warning, move there right away without stopping to watch out a window or take a video.`,
         warning: `Do not wait for a tornado to be visible before seeking shelter. Many tornadoes are wrapped in rain and cannot be seen until they are very close. Rely on official warnings, not your eyes.`,
       },
     ],
@@ -568,7 +568,7 @@ Understanding your specific allergens matters. If you are allergic to tree polle
 
 The best hurricane preparedness apps are not storm-tracking tools you use only during an active hurricane — they are year-round resources for building your preparedness plan, knowing your evacuation zone, and receiving official alerts in real time. Start using them now, before storm season begins.
 
-The three most useful free tools for hurricane preparedness are the Red Cross Emergency app, the FEMA app, and the National Hurricane Center website at nhc.noaa.gov. Each serves a different purpose: the Red Cross app covers preparedness checklists and shelter locations; the FEMA app sends official emergency alerts and helps you apply for disaster assistance; and the National Hurricane Center provides the most accurate and authoritative storm tracking, forecasts, and maps directly from NOAA meteorologists.
+The three most useful free tools for hurricane preparedness are the Red Cross Emergency app, the FEMA app, and the National Hurricane Center website at nhc.noaa.gov. Each serves a different purpose: the Red Cross app covers preparedness checklists and shelter locations; the FEMA app sends official emergency alerts and helps you apply for disaster help; and the National Hurricane Center provides the most accurate and authoritative storm tracking, forecasts, and maps directly from NOAA meteorologists.
 
 Know your evacuation zone before a storm is named. Every county along the Gulf and Atlantic coasts has designated evacuation zones labeled A through E or similar. Zone A is closest to the coast and most vulnerable to storm surge — if you are in Zone A and a major hurricane is approaching, you should evacuate when authorities issue a Zone A evacuation order, not wait for a mandatory order for your zone.`,
     steps: [
@@ -579,7 +579,7 @@ Know your evacuation zone before a storm is named. Every county along the Gulf a
       },
       {
         title: `Download the FEMA app and set your locations`,
-        content: `Search for "FEMA" in your app store and download the free Federal Emergency Management Agency app. In the app, add your home location and any other places important to you (vacation property, family members' homes). FEMA will send you official National Weather Service watches and warnings for all those locations. The app also contains disaster preparedness guides and information on how to apply for FEMA disaster assistance after a storm.`,
+        content: `Search for "FEMA" in your app store and download the free Federal Emergency Management Agency app. In the app, add your home location and any other places important to you (vacation property, family members' homes). FEMA will send you official National Weather Service watches and warnings for all those locations. The app also contains disaster preparedness guides and information on how to apply for FEMA disaster help after a storm.`,
       },
       {
         title: `Bookmark the National Hurricane Center`,
@@ -588,12 +588,12 @@ Know your evacuation zone before a storm is named. Every county along the Gulf a
       },
       {
         title: `Find out your evacuation zone`,
-        content: `Every coastal county publishes evacuation zone maps. Search online for "[your county name] evacuation zones" to find your zone designation. Write it down and save it in your phone's notes app. When evacuation orders are issued, they are given by zone — "Zone A residents should evacuate immediately." Knowing your zone in advance means you will know immediately whether an order applies to you.`,
+        content: `Every coastal county publishes evacuation zone maps. Search online for "[your county name] evacuation zones" to find your zone designation. Write it down and save it in your phone's notes app. When evacuation orders are issued, they are given by zone — "Zone A residents should evacuate right away." Knowing your zone in advance means you will know right away whether an order applies to you.`,
         tip: `Quick Tip: Many counties also have official apps or text alert systems for local emergency notifications. Search "[your county] emergency alerts" to find and register for your local system — these are separate from the federal FEMA alerts and often include more specific local information.`,
       },
       {
         title: `Build and store your preparedness information digitally`,
-        content: `Use your phone's Notes app or a free cloud storage service like Google Drive to store copies of important documents: insurance policies, vehicle registrations, prescription medication lists, family contacts, and your home's photos for insurance purposes. If you evacuate quickly, you may not have time to gather physical documents. Having digital copies accessible from any device ensures you have what you need even if you leave without your files.`,
+        content: `Use your phone's Notes app or a free cloud storage service like Google Drive to store copies of important documents: insurance policies, vehicle registrations, prescription medication lists, family contacts, and your home's photos for insurance purposes. If you evacuate quickly, you may not have time to gather physical documents. Having digital copies accessible from any device makes sure you have what you need even if you leave without your files.`,
       },
     ],
   },
@@ -626,7 +626,7 @@ Smoke from wildfires is a serious health hazard even hundreds of miles from the 
       },
       {
         title: `Monitor evacuation zones on Zonehaven`,
-        content: `Many counties in the West and beyond use Zonehaven (zonehaven.com) to communicate evacuation zone status. Visit the site and search for your county. Each zone is color-coded: green means no active order, yellow means Watch (be ready to leave), red means Warning (prepare to leave now), and dark red means Order (leave immediately). Bookmark the page for your county so you can check it quickly when a fire is nearby.`,
+        content: `Many counties in the West and beyond use Zonehaven (zonehaven.com) to communicate evacuation zone status. Visit the site and search for your county. Each zone is color-coded: green means no active order, yellow means Watch (be ready to leave), red means Warning (prepare to leave now), and dark red means Order (leave right away). Bookmark the page for your county so you can check it quickly when a fire is nearby.`,
         warning: `Do not wait for a mandatory evacuation order to leave if you are in a high-risk area. A voluntary or advisory evacuation order means the situation is serious. Leaving early when roads are clear is far safer than leaving at the last minute in heavy traffic while a fire approaches.`,
       },
       {
@@ -654,9 +654,9 @@ Smoke from wildfires is a serious health hazard even hundreds of miles from the 
 
 The core of Fishbrain is the catch log. Every time you catch a fish, you can record the species, size, weight, the lure or bait you used, the weather conditions, and your location on a map. Over time, this personal log becomes a valuable record of what works, where, and when. You can look back at previous seasons and see that you consistently catch bass in a certain cove in early June, for example, or that a specific lure only works for you in overcast conditions.
 
-Beyond personal logging, Fishbrain shows you an activity feed of catches from other anglers near you. If someone caught a large walleye at a lake 10 miles from your house yesterday using a chartreuse jig in 12 feet of water, you can see that information (the spot is shown approximately, not precisely, unless the user chose to share the exact location). This community intelligence helps you find productive spots and understand current conditions.
+Beyond personal logging, Fishbrain shows you an activity feed of catches from other anglers near you. If someone caught a large walleye at a lake 10 miles from your house yesterday using a chartreuse jig in 12 feet of water, you can see that information (the spot is shown about, not precisely, unless the user chose to share the exact location). This community intelligence helps you find productive spots and understand current conditions.
 
-Fishbrain is free with optional premium features available through a subscription called Fishbrain Pro, which adds detailed fishing forecasts, premium maps, and full access to the catches database with precise spot locations. The free version is sufficient for most casual anglers.`,
+Fishbrain is free with optional premium features available through a subscription called Fishbrain Pro, which adds detailed fishing forecasts, premium maps, and full access to the catches database with precise spot locations. The free version is enough for most casual anglers.`,
     steps: [
       {
         title: `Download Fishbrain and create your account`,
@@ -707,7 +707,7 @@ Before you go on any hike — especially your first one — it is worth spending
       {
         title: `Search for trails near you`,
         content: `Tap "Explore" or the search bar and then tap "Near Me" to see trails within a few miles of your current location. You can filter results by difficulty (Easy, Moderate, Hard), distance, elevation gain, and features like dog-friendly, paved surfaces, or wheelchair accessible. For a first hike, filter for Easy difficulty and a loop trail of 2–3 miles. A loop returns you to the same trailhead rather than requiring you to backtrack.`,
-        tip: `Quick Tip: Sort trail results by "Most Popular" to see which nearby trails have the most visitor activity. Popular trails are easier to navigate because the path is well-worn, and you are more likely to encounter other hikers if you need assistance.`,
+        tip: `Quick Tip: Sort trail results by "Most Popular" to see which nearby trails have the most visitor activity. Popular trails are easier to navigate because the path is well-worn, and you are more likely to encounter other hikers if you need help.`,
       },
       {
         title: `Read the trail page before you go`,
@@ -782,7 +782,7 @@ One feature that sets Komoot apart is its offline navigation. Once you have down
 
 A topographic map (often called a "topo map") shows the physical shape of the land using contour lines — curved lines that connect points of equal elevation. The spacing between those lines tells you how steep the terrain is: closely spaced lines mean steep slopes, widely spaced lines mean gentle terrain. Being able to read these maps helps you understand what the landscape ahead looks like before you see it with your eyes.
 
-Gaia GPS is free to download with a basic tier that gives you access to National Forest and BLM public land maps. A premium subscription ($39.99 per year as of early 2026) unlocks USGS topographic maps, US Forest Service visitor maps, satellite imagery, and maps from several hundred map sources around the world. For serious backcountry use, the premium tier is worth the investment. The free tier is sufficient for general hiking on marked trails.
+Gaia GPS is free to download with a basic tier that gives you access to National Forest and BLM public land maps. A premium subscription ($39.99 per year as of early 2026) unlocks USGS topographic maps, US Forest Service visitor maps, satellite imagery, and maps from several hundred map sources around the world. For serious backcountry use, the premium tier is worth the investment. The free tier is enough for general hiking on marked trails.
 
 The app is developed by Outside Inc. and is available for iPhone and Android. It has been reviewed and recommended by sources including REI, Backpacker Magazine, and the Leave No Trace Center for Outdoor Ethics. Search and Rescue teams in several states have adopted it as a standard tool because of its accuracy and reliability.`,
     steps: [
@@ -802,7 +802,7 @@ The app is developed by Outside Inc. and is available for iPhone and Android. It
       },
       {
         title: `Navigate on the trail`,
-        content: `Once you are on the trail, open Gaia GPS and find your starting point on the map. Your blue dot shows your GPS-derived position in real time. Follow the map and check your progress against the planned route. Gaia shows your current coordinates, elevation, speed, and distance traveled. If you go off-trail, you can see immediately on the map how far you have deviated and which direction to go to return to your planned route.`,
+        content: `Once you are on the trail, open Gaia GPS and find your starting point on the map. Your blue dot shows your GPS-derived position in real time. Follow the map and check your progress against the planned route. Gaia shows your current coordinates, elevation, speed, and distance traveled. If you go off-trail, you can see right away on the map how far you have deviated and which direction to go to return to your planned route.`,
         tip: `Quick Tip: Reduce your screen brightness and enable battery saver mode on your phone during long hikes to preserve battery. A dead phone means no GPS. Bring a small portable battery pack (also called a power bank) on any hike where you expect to be out for more than a few hours.`,
       },
       {
@@ -827,7 +827,7 @@ Garmin Connect is free and is required to get the full value from any Garmin dev
 
 The app is available for iPhone and Android. It connects to your watch via Bluetooth (a short-range wireless connection that works within about 30 feet). Each time you bring your phone near your watch — such as when you arrive home — the watch syncs its latest data to the app automatically. You do not need to manually trigger a sync in most cases.
 
-Garmin Connect also serves as the hub for software updates. When Garmin releases a new firmware update (internal software) for your watch, it appears in the app and downloads automatically when connected to Wi-Fi. Keeping your watch's software current ensures you have the latest features and bug fixes.
+Garmin Connect also serves as the hub for software updates. When Garmin releases a new firmware update (internal software) for your watch, it appears in the app and downloads automatically when connected to Wi-Fi. Keeping your watch's software current makes sure you have the latest features and bug fixes.
 
 Beyond individual data, Garmin Connect includes a social feature called Garmin Connect Groups where you can join or create step challenges with friends and family — a popular way to stay motivated when you have people counting on you to show up.`,
     steps: [

@@ -140,7 +140,7 @@ export const guidesBatch295: Guide[] = [
       },
       {
         title: "Build a 5-meal weekly routine",
-        content: "Pick five simple meals and rotate them: Monday, microwave oatmeal and fruit for breakfast plus air-fried chicken thighs for dinner. Tuesday, microwave baked potato plus air-fried salmon. Wednesday, air-fried frozen pizza plus microwaved vegetables. Thursday, microwave soup with crackers. Friday, air-fried frozen fish sticks with microwaved peas. The repetition reduces decision fatigue, builds confidence with the appliances, and ensures the freezer and pantry stay stocked with the right ingredients.",
+        content: "Pick five simple meals and rotate them: Monday, microwave oatmeal and fruit for breakfast plus air-fried chicken thighs for dinner. Tuesday, microwave baked potato plus air-fried salmon. Wednesday, air-fried frozen pizza plus microwaved vegetables. Thursday, microwave soup with crackers. Friday, air-fried frozen fish sticks with microwaved peas. The repetition reduces decision fatigue, builds confidence with the appliances, and makes sure the freezer and pantry stay stocked with the right ingredients.",
         warning: "Important: Always check that meat reaches a safe internal temperature with an instant-read thermometer. Chicken 165 degrees, ground beef 160 degrees, salmon 145 degrees per USDA at foodsafety.gov. A 10 dollar ThermoWorks ThermoPop at thermoworks.com confirms doneness in 4 seconds.",
       },
       {

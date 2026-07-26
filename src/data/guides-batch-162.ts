@@ -245,7 +245,7 @@ Use your remote's arrow buttons to navigate to the gear icon while a show is pla
 1. Start playing a show or movie.
 2. Tap or click the screen to bring up the controls.
 3. Click or tap the speech bubble icon.
-4. Under **Subtitles**, select a language. Choose **English [CC]** if you want captions that also describe sound effects (recommended for hearing assistance).
+4. Under **Subtitles**, select a language. Choose **English [CC]** if you want captions that also describe sound effects (recommended for hearing help).
 
 ---
 
@@ -436,7 +436,7 @@ If you receive a message saying you have won a lottery, a gift card, a free vaca
 
 Do not panic — but act quickly.
 
-1. **If you entered a password:** Change that password immediately, on all accounts where you use the same password. If it was your email password, change it first.
+1. **If you entered a password:** Change that password right away, on all accounts where you use the same password. If it was your email password, change it first.
 2. **If you entered a credit or debit card number:** Call the number on the back of your card and report it as potentially compromised. Ask your bank to cancel the card and issue a new one.
 3. **If you entered your Social Security number:** Place a free credit freeze at all three credit bureaus — Equifax (1-800-685-1111), Experian (1-888-397-3742), and TransUnion (1-888-909-8872). A credit freeze prevents new accounts from being opened in your name.
 4. **Run a security scan** on your computer if you downloaded or opened any file from the message. Windows Defender (built into Windows) can do a free scan.`,
@@ -461,8 +461,7 @@ Do not panic — but act quickly.
       },
       {
         title: 'Watch for requests for personal information',
-        content:
-          'No legitimate company, government agency, or bank will ever ask for your full password, Social Security number, Medicare number, or credit card number in an email or text message. If a message asks for any of this, delete it immediately.',
+        content: 'No legitimate company, government agency, or bank will ever ask for your full password, Social Security number, Medicare number, or credit card number in an email or text message. If a message asks for any of this, delete it right away.',
         warning:
           'The IRS contacts taxpayers only by US mail — never by email, text, or social media. Medicare does not send emails asking you to confirm your card number.',
       },
@@ -478,8 +477,7 @@ Do not panic — but act quickly.
       },
       {
         title: 'If you accidentally clicked or entered information',
-        content:
-          'Change any compromised passwords immediately. If you entered a credit card number, call the number on the back of your card to report it. If you entered your Social Security number, place a free credit freeze at all three credit bureaus: Equifax (1-800-685-1111), Experian (1-888-397-3742), and TransUnion (1-888-909-8872).',
+        content: 'Change any compromised passwords right away. If you entered a credit card number, call the number on the back of your card to report it. If you entered your Social Security number, place a free credit freeze at all three credit bureaus: Equifax (1-800-685-1111), Experian (1-888-397-3742), and TransUnion (1-888-909-8872).',
         tip: 'A credit freeze is free and prevents criminals from opening new accounts in your name. It does not affect your existing accounts or credit score.',
       },
     ],
@@ -567,7 +565,7 @@ Before applying, it is worth looking at your estimated monthly benefit at differ
 
 **Step 3: Complete the online application**
 
-When you are ready to apply, the online application takes approximately 30 minutes. You can save your progress and return to finish it another day if needed.
+When you are ready to apply, the online application takes about 30 minutes. You can save your progress and return to finish it another day if needed.
 
 1. Go to **ssa.gov/apply** and click **Apply for Retirement Benefits**.
 2. Sign in with your my Social Security account when prompted.
@@ -593,8 +591,8 @@ Your first payment typically arrives the month after your benefits are scheduled
 
 - **Phone:** Call SSA at **1-800-772-1213** (Monday–Friday, 8 AM–7 PM). TTY for the hearing impaired: **1-800-325-0778**.
 - **In person:** Find your nearest SSA office at **ssa.gov/agency/contact**.
-- **Local assistance:** Your local Area Agency on Aging (eldercare.acl.gov or call 1-800-677-1116) can connect you with free counselors who help seniors with Social Security and Medicare questions.
-- **SHIP counselors:** The State Health Insurance Assistance Program (shiphelp.org) provides free, unbiased help with Medicare and related Social Security decisions from trained volunteers.`,
+- **Local help:** Your local Area Agency on Aging (eldercare.acl.gov or call 1-800-677-1116) can connect you with free counselors who help seniors with Social Security and Medicare questions.
+- **SHIP counselors:** The State Health Insurance Help Program (shiphelp.org) provides free, unbiased help with Medicare and related Social Security decisions from trained volunteers.`,
     steps: [
       {
         title: 'Decide when to apply',
@@ -611,7 +609,7 @@ Your first payment typically arrives the month after your benefits are scheduled
         title: 'Create a my Social Security account',
         content:
           'Go to ssa.gov/myaccount and click Create an Account. You will verify your identity using Login.gov or ID.me, which involves answering questions based on your financial history. Set up two-step verification with your phone number or email for security.',
-        tip: 'If you have trouble creating an account online, call SSA at 1-800-772-1213 for assistance.',
+        tip: 'If you have trouble creating an account online, call SSA at 1-800-772-1213 for help.',
         warning:
           'Make sure you are on the real SSA website: ssa.gov. The address bar should show a padlock icon and the URL should start with https://www.ssa.gov.',
       },

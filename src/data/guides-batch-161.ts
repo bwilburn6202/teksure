@@ -144,14 +144,13 @@ To get started: go to privacy.com, create a free account, link your bank account
       },
       {
         title: 'Cancel Amazon Prime through your Amazon account',
-        content:
-          'Go to amazon.com → Account & Lists → Prime Membership → Manage Membership → End Membership. Amazon gives you the option to end immediately or at the end of the billing period.',
+        content: 'Go to amazon.com → Account & Lists → Prime Membership → Manage Membership → End Membership. Amazon gives you the option to end right away or at the end of the billing period.',
       },
       {
         title: 'Cancel Apple subscriptions in Settings',
         content:
           'On your iPhone: Settings → tap your name → Subscriptions → tap the service → Cancel Subscription → Confirm. This works for any app or service you subscribed to through Apple.',
-        tip: 'Apple sends a confirmation email immediately. If you do not receive one within a few minutes, check your spam folder and make sure the cancellation went through.',
+        tip: 'Apple sends a confirmation email right away. If you do not receive one within a few minutes, check your spam folder and make sure the cancellation went through.',
       },
       {
         title: 'Use a virtual card for trials you are unsure about',
@@ -291,7 +290,7 @@ Even if a website passes some of the checks above, walk away if you see any of t
 
 If you completed a purchase and now have doubts, act right away:
 
-1. Call your credit or debit card company immediately — the number is on the back of the card. Tell them you may have made a purchase from a fraudulent website and ask about disputing the charge.
+1. Call your credit or debit card company right away — the number is on the back of the card. Tell them you may have made a purchase from a fraudulent website and ask about disputing the charge.
 2. Watch your bank statements closely for the next 30 days for any charges you did not make.
 3. If you used a debit card, consider asking your bank to issue a new card number.
 4. Report the site to the FTC at reportfraud.ftc.gov — this helps protect other people.`,

@@ -94,7 +94,7 @@ At around $140-$200, the Fire HD 10 is dramatically less expensive than an iPad.
       {
         title: 'Check for cellular vs. WiFi-only',
         content: 'Tablets come in WiFi-only and WiFi+Cellular versions. WiFi-only tablets need to be connected to your home internet (or a friend\'s WiFi) to go online. Cellular tablets have a SIM card and can use your phone carrier\'s data plan anywhere. WiFi-only is fine if you stay home most of the time — cellular adds $130-$200 to the price and a monthly data fee.',
-        tip: 'Quick Tip: Most seniors do fine with WiFi-only tablets since they use them primarily at home. If you travel frequently or want internet on the road, consider cellular.',
+        tip: 'Quick Tip: Most seniors do fine with WiFi-only tablets since they use them primarily at home. If you travel often or want internet on the road, consider cellular.',
       },
       {
         title: 'Buy a case and screen protector at the same time',
@@ -117,7 +117,7 @@ At around $140-$200, the Fire HD 10 is dramatically less expensive than an iPad.
     body: `A laptop is a full-sized portable computer. For most seniors who use a computer primarily to browse the web, check email, do video calls, manage photos, and handle basic documents, two categories stand out: Chromebooks and Windows laptops.
 
 **Chromebooks — Best for simplicity and price**
-A Chromebook is a laptop that runs Google's Chrome OS instead of Windows. It looks and feels like a regular laptop, but it is designed to run mostly through the internet browser (called Chrome). Because it does less locally and runs a simpler system, Chromebooks are fast, virus-resistant, rarely need updating, and cost significantly less — often $200-$400.
+A Chromebook is a laptop that runs Google's Chrome OS instead of Windows. It looks and feels like a regular laptop, but it is designed to run mostly through the internet browser (called Chrome). Because it does less locally and runs a simpler system, Chromebooks are fast, virus-resistant, rarely need updating, and cost a lot less — often $200-$400.
 
 Chromebooks are ideal if you: browse the web, use Gmail and Google Docs, do video calls on Google Meet or Zoom, stream YouTube or Netflix, and do not need to run specialized software like tax programs installed from a disc.
 
@@ -150,7 +150,7 @@ For seniors, Windows 11 is the current version. Look for: at least 8 GB of RAM (
       },
       {
         title: 'Ask about support and setup',
-        content: 'Best Buy\'s Geek Squad and Costco\'s Concierge services offer setup assistance. Many libraries also host free tech help sessions. Factor in where you will get help if something goes wrong when choosing where to buy.',
+        content: 'Best Buy\'s Geek Squad and Costco\'s Concierge services offer setup help. Many libraries also host free tech help sessions. Factor in where you will get help if something goes wrong when choosing where to buy.',
       },
     ],
   },
@@ -166,7 +166,7 @@ For seniors, Windows 11 is the current version. Look for: at least 8 GB of RAM (
     publishedAt: '2026-05-03',
     lastVerifiedAt: '2026-05-03',
     difficulty: 'Beginner',
-    body: `A medical alert system lets you press a button and immediately connect with an emergency monitoring center that can send help. They are most commonly used by people who live alone, have a history of falls, or have medical conditions that could require sudden assistance.
+    body: `A medical alert system lets you press a button and right away connect with an emergency monitoring center that can send help. They are most commonly used by people who live alone, have a history of falls, or have medical conditions that could require sudden help.
 
 Life Alert is the most well-known brand (famous for the "Help, I've fallen and I can't get up" advertising), but there are many competitors with more modern features, more flexibility, and lower prices.
 
@@ -185,7 +185,7 @@ The Apple Watch includes fall detection, crash detection, and an emergency SOS f
     steps: [
       {
         title: 'Decide between home-only and GPS-enabled',
-        content: 'Home-only systems use a base station in the home. They work within range of your home (typically 300-600 feet). GPS systems work anywhere you go — the device connects through cellular networks. If the user goes out frequently, GPS is worth the extra cost (usually $10-$20/month more).',
+        content: 'Home-only systems use a base station in the home. They work within range of your home (typically 300-600 feet). GPS systems work anywhere you go — the device connects through cellular networks. If the user goes out often, GPS is worth the extra cost (usually $10-$20/month more).',
       },
       {
         title: 'Look for fall detection',
@@ -245,11 +245,11 @@ The most important factors for seniors are: screen size (bigger is usually bette
       },
       {
         title: 'Look for "4K" resolution',
-        content: '4K (also called Ultra HD) refers to the sharpness of the picture. It shows significantly more detail than older 1080p TVs, which is especially noticeable on larger screens. Nearly all TVs sold today are 4K — if you see "1080p" on the box, that is an older or lower-quality model.',
+        content: '4K (also called Ultra HD) refers to the sharpness of the picture. It shows a lot more detail than older 1080p TVs, which is especially noticeable on larger screens. Nearly all TVs sold today are 4K — if you see "1080p" on the box, that is an older or lower-quality model.',
       },
       {
         title: 'Check the sound before settling on a TV',
-        content: 'Built-in TV speakers have gotten thinner as TVs have become thinner, and many sound tinny or quiet. Before finalizing your choice, ask the store to demonstrate the sound at a comfortable volume. If the sound is weak, budget $100-$200 for a simple soundbar — it sits under the TV and dramatically improves audio clarity.',
+        content: 'Built-in TV speakers have gotten thinner as TVs have become thinner, and many sound tinny or quiet. Before finalizing your choice, ask the store to show the sound at a comfortable volume. If the sound is weak, budget $100-$200 for a simple soundbar — it sits under the TV and dramatically improves audio clarity.',
         tip: 'Quick Tip: Clear dialogue is especially important for those with any hearing changes. Look for TVs with "Clear Voice" or speech enhancement modes in their audio settings.',
       },
       {
@@ -270,7 +270,7 @@ The most important factors for seniors are: screen size (bigger is usually bette
     publishedAt: '2026-05-03',
     lastVerifiedAt: '2026-05-03',
     difficulty: 'Intermediate',
-    body: `Your router is the device that takes the internet from your modem (the box your internet company provides) and wirelessly spreads it throughout your home. If your WiFi is slow in certain rooms or cuts out frequently, the router is often the cause.
+    body: `Your router is the device that takes the internet from your modem (the box your internet company provides) and wirelessly spreads it throughout your home. If your WiFi is slow in certain rooms or cuts out often, the router is often the cause.
 
 Most internet companies provide a combined modem-router unit. These work adequately but are often older models that may not give you the best signal throughout your home. Buying your own router (which connects to your modem or modem-router) typically improves speed and range.
 
@@ -301,7 +301,7 @@ You do not need to pay your internet company a monthly fee to "rent" their route
       },
       {
         title: 'Place your router centrally',
-        content: 'Regardless of which router you buy, placement matters. Position the router in the center of the area you want to cover, elevated off the floor (on a shelf, not behind the TV), away from walls, and not inside a cabinet. This alone can significantly improve coverage.',
+        content: 'Regardless of which router you buy, placement matters. Position the router in the center of the area you want to cover, elevated off the floor (on a shelf, not behind the TV), away from walls, and not inside a cabinet. This alone can a lot improve coverage.',
       },
       {
         title: 'Restart your router monthly',
@@ -329,7 +329,7 @@ You do not need to pay your internet company a monthly fee to "rent" their route
 
 **HP DeskJet Plus series with Instant Ink subscription (~$100-$130):** HP's Instant Ink program charges a flat monthly fee ($1-$6/month) and automatically ships you new cartridges when you are running low. For low-volume users printing 10-50 pages per month, this is one of the cheapest ongoing approaches.
 
-**Epson EcoTank ET-2400 (~$200):** Instead of cartridges, EcoTank printers use refillable ink tanks. You buy bottles of ink (around $8-$12 per color bottle) that last for years and thousands of pages. The upfront cost is higher, but the per-page cost is dramatically lower. This is the best choice for anyone who prints occasionally but wants to avoid the ink cartridge cost shock.
+**Epson EcoTank ET-2400 (~$200):** Instead of cartridges, EcoTank printers use refillable ink tanks. You buy bottles of ink (around $8-$12 per color bottle) that last for years and thousands of pages. The upfront cost is higher, but the per-page cost is dramatically lower. This is the best choice for anyone who prints sometimes but wants to avoid the ink cartridge cost shock.
 
 **Canon PIXMA TR4720 (~$80):** A reliable all-in-one (prints, copies, scans) at a modest price. Good for occasional use. Standard cartridge costs are mid-range.
 
@@ -387,7 +387,7 @@ Galaxy Watch 6 (~$270-$330) works best with Samsung Galaxy phones. It offers hea
     steps: [
       {
         title: 'Confirm which phone you have',
-        content: 'Apple Watch requires an iPhone. It will not pair with Android phones. Fitbit and Samsung Galaxy Watch work with both iPhone and Android. Start by checking what phone you have — this immediately narrows your options.',
+        content: 'Apple Watch requires an iPhone. It will not pair with Android phones. Fitbit and Samsung Galaxy Watch work with both iPhone and Android. Start by checking what phone you have — this right away narrows your options.',
       },
       {
         title: 'Prioritize fall detection if you live alone',
@@ -470,7 +470,7 @@ The Sony WH-1000XM5 or XM4 are considered the best overall noise-canceling headp
 
 **Fire HD 10 Plus (~$180):** Adds wireless charging and more RAM (memory). Only necessary if you plan to run many apps simultaneously.
 
-**Fire Max 11 (~$230):** Amazon's largest and highest-quality Fire tablet with an 11-inch screen and significantly sharper display. If you primarily read, watch videos, or video call, this is the premium Fire option worth considering.
+**Fire Max 11 (~$230):** Amazon's largest and highest-quality Fire tablet with an 11-inch screen and a lot sharper display. If you primarily read, watch videos, or video call, this is the premium Fire option worth considering.
 
 **Show Mode:** All Fire HD tablets can connect to a large TV via an optional HDMI adapter and use "Show Mode" — transforming into an Alexa display device. This is optional but a nice feature.
 
@@ -518,13 +518,13 @@ The Sony WH-1000XM5 or XM4 are considered the best overall noise-canceling headp
 The good news: multiple programs exist to reduce or eliminate the cost of home internet for qualifying seniors.
 
 **Lifeline Program (ongoing federal program):**
-Lifeline provides a $9.25/month discount on internet or phone service for qualifying low-income consumers. To qualify, you must participate in a federal assistance program (Medicaid, SNAP/food stamps, SSI, or others) or your income must be at or below 135% of the federal poverty guidelines. Apply at lifelinesupport.org.
+Lifeline provides a $9.25/month discount on internet or phone service for qualifying low-income consumers. To qualify, you must participate in a federal help program (Medicaid, SNAP/food stamps, SSI, or others) or your income must be at or below 135% of the federal poverty guidelines. Apply at lifelinesupport.org.
 
 **T-Mobile Connect:**
 T-Mobile offers a $25/month home internet plan in areas with strong T-Mobile coverage. No contract, no equipment rental fee. A wireless router is included. Coverage varies by location — check at home.t-mobile.com.
 
 **Comcast Internet Essentials:**
-Comcast offers Internet Essentials at around $9.95/month to households with at least one member who receives certain public assistance programs. Available in Comcast service areas. Apply at internetessentials.com.
+Comcast offers Internet Essentials at around $9.95/month to households with at least one member who receives certain public help programs. Available in Comcast service areas. Apply at internetessentials.com.
 
 **AT&T Access:**
 AT&T provides internet at $30/month (or $10/month with Lifeline) to qualifying low-income households in AT&T service areas. Check at att.com/internet/access.
@@ -536,7 +536,7 @@ Most public libraries offer free WiFi and many have computer terminals you can u
     steps: [
       {
         title: 'Check if you qualify for Lifeline',
-        content: 'Go to lifelinesupport.org and click "Check Eligibility." You qualify if you receive Medicaid, SNAP (food stamps), SSI (Supplemental Security Income), Federal Public Housing Assistance, or Veterans Pension. You can also qualify based on income. Have your benefit award letter or most recent tax return ready.',
+        content: 'Go to lifelinesupport.org and click "Check Eligibility." You qualify if you receive Medicaid, SNAP (food stamps), SSI (Supplemental Security Income), Federal Public Housing Help, or Veterans Pension. You can also qualify based on income. Have your benefit award letter or most recent tax return ready.',
       },
       {
         title: 'Apply for Lifeline',
@@ -553,7 +553,7 @@ Most public libraries offer free WiFi and many have computer terminals you can u
       },
       {
         title: 'Call your local Area Agency on Aging',
-        content: 'Your local Area Agency on Aging may know about state or local internet assistance programs not listed nationally. Find your local agency at eldercare.acl.gov or call 1-800-677-1116.',
+        content: 'Your local Area Agency on Aging may know about state or local internet help programs not listed nationally. Find your local agency at eldercare.acl.gov or call 1-800-677-1116.',
       },
     ],
   },
@@ -653,7 +653,7 @@ If you want a full paid security suite with extra features (VPN, parental contro
       },
       {
         title: 'Decide if paid antivirus makes sense',
-        content: 'If you use your computer primarily for email, banking, and browsing, Windows Defender plus safe habits (not clicking suspicious links) is genuinely sufficient. Paid antivirus adds extra layers but is not essential if you already practice basic online safety.',
+        content: 'If you use your computer primarily for email, banking, and browsing, Windows Defender plus safe habits (not clicking suspicious links) is genuinely enough. Paid antivirus adds extra layers but is not essential if you already practice basic online safety.',
       },
     ],
   },
@@ -674,7 +674,7 @@ If you want a full paid security suite with extra features (VPN, parental contro
 The rule of data backup is the "3-2-1 rule": keep 3 copies of important data, on 2 different types of storage, with 1 copy stored somewhere else (off-site, like the cloud or a relative's home). At minimum, having your files on your computer AND on an external drive is a major improvement over one copy.
 
 **How much storage do you need?**
-1 TB (one terabyte — one thousand gigabytes) stores approximately 250,000 to 500,000 photos, depending on their size. For most home users who have a lifetime of family photos, 1 TB is more than enough. If you shoot a lot of videos, 2 TB provides comfortable room.
+1 TB (one terabyte — one thousand gigabytes) stores about 250,000 to 500,000 photos, depending on their size. For most home users who have a lifetime of family photos, 1 TB is more than enough. If you shoot a lot of videos, 2 TB provides comfortable room.
 
 **Top picks:**
 
@@ -694,7 +694,7 @@ The rule of data backup is the "3-2-1 rule": keep 3 copies of important data, on
       },
       {
         title: 'Purchase the drive',
-        content: 'Seagate and Western Digital 2TB external drives are widely available at Walmart, Target, Costco, Best Buy, and Amazon for approximately $60-$70. Check the return policy before buying — reputable retailers allow 15-30 day returns on electronics.',
+        content: 'Seagate and Western Digital 2TB external drives are widely available at Walmart, Target, Costco, Best Buy, and Amazon for about $60-$70. Check the return policy before buying — reputable retailers allow 15-30 day returns on electronics.',
       },
       {
         title: 'Connect and do your first backup',
@@ -811,7 +811,7 @@ The Arlo Essential Outdoor 2K (~$100-$130 per camera) offers excellent video qua
       },
       {
         title: 'Choose a cloud subscription',
-        content: 'Ring\'s Basic plan ($4/month or $40/year) stores 60 days of event videos for a single camera. If you have multiple Ring cameras, the Ring Protect Plus plan ($10/month) covers all cameras at your address. Review what you actually need — the Basic plan is sufficient for most single-camera setups.',
+        content: 'Ring\'s Basic plan ($4/month or $40/year) stores 60 days of event videos for a single camera. If you have multiple Ring cameras, the Ring Protect Plus plan ($10/month) covers all cameras at your address. Review what you actually need — the Basic plan is enough for most single-camera setups.',
       },
     ],
   },
@@ -919,7 +919,7 @@ Similar to the Echo Show but uses Google Meet instead of Alexa Calling. A good c
       },
       {
         title: 'Position the device for clear video',
-        content: 'Place the device on a table or counter at eye level — not looking up at you from desk level. Light from a window or lamp should be in front of you (facing you), not behind you. This ensures your face is clearly lit during calls instead of appearing as a dark silhouette.',
+        content: 'Place the device on a table or counter at eye level — not looking up at you from desk level. Light from a window or lamp should be in front of you (facing you), not behind you. This makes sure your face is clearly lit during calls instead of appearing as a dark silhouette.',
       },
     ],
   },

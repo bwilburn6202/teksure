@@ -125,12 +125,12 @@ export const guidesBatch38: Guide[] = [
       },
       {
         title: 'What to do if your email was breached',
-        content: `If your email appears in a breach, change your password on that service immediately. If you used the same password on other websites, change those too — this is called "password reuse" and it is one of the most common ways accounts get taken over. Also turn on two-factor authentication (2FA) on any account where it is available — this adds a text message or app code as a second login step so even a stolen password is not enough for a criminal to get in.`,
+        content: `If your email appears in a breach, change your password on that service right away. If you used the same password on other websites, change those too — this is called "password reuse" and it is one of the most common ways accounts get taken over. Also turn on two-factor authentication (2FA) on any account where it is available — this adds a text message or app code as a second login step so even a stolen password is not enough for a criminal to get in.`,
         warning: `If the breach was recent (within the last year), also monitor your credit and bank accounts more carefully for the next few months for any unfamiliar activity.`,
       },
       {
         title: 'Set up breach notifications for the future',
-        content: `On haveibeenpwned.com, scroll down and look for "Stay informed." Enter your email address to sign up for free alerts — you will get an email notification if your address appears in any future breach. This means you hear about it immediately instead of finding out months or years later. The notification emails come from @haveibeenpwned.com, not from a scammer.`,
+        content: `On haveibeenpwned.com, scroll down and look for "Stay informed." Enter your email address to sign up for free alerts — you will get an email notification if your address appears in any future breach. This means you hear about it right away instead of finding out months or years later. The notification emails come from @haveibeenpwned.com, not from a scammer.`,
       },
     ],
   },
@@ -325,7 +325,7 @@ export const guidesBatch38: Guide[] = [
       },
       {
         title: 'Make sure you are using WPA3 or WPA2 security',
-        content: `In the WiFi settings of the router admin panel, look for "Security Type" or "Encryption." It should say WPA3 or WPA2 (not WEP or "Open"). WPA3 is the newest and most secure option — use it if available. WPA2 is the older standard and still acceptable. If it shows WEP or "None," change it to WPA2 immediately — those older settings are not secure enough to protect your network.`,
+        content: `In the WiFi settings of the router admin panel, look for "Security Type" or "Encryption." It should say WPA3 or WPA2 (not WEP or "Open"). WPA3 is the newest and most secure option — use it if available. WPA2 is the older standard and still acceptable. If it shows WEP or "None," change it to WPA2 right away — those older settings are not secure enough to protect your network.`,
         tip: `While in the router admin panel, also look for "Firmware Update" or "Router Update" and run any available updates. Router manufacturers release security patches, and most routers need to be updated manually.`,
       },
     ],
@@ -354,7 +354,7 @@ export const guidesBatch38: Guide[] = [
       },
       {
         title: `Transfer Android to Android using Google's setup`,
-        content: `Samsung phones have a "Smart Switch" app that handles transfers via cable or WiFi. For any Android phone, during initial setup you will be asked to sign in with your Google account — this automatically restores your backed-up data. Your contacts, calendar, and some app settings restore automatically. Apps reinstall from the Play Store. For photos, open Google Photos on the new phone, sign in, and your entire photo library will be accessible from the cloud immediately.`,
+        content: `Samsung phones have a "Smart Switch" app that handles transfers via cable or WiFi. For any Android phone, during initial setup you will be asked to sign in with your Google account — this automatically restores your backed-up data. Your contacts, calendar, and some app settings restore automatically. Apps reinstall from the Play Store. For photos, open Google Photos on the new phone, sign in, and your entire photo library will be accessible from the cloud right away.`,
       },
       {
         title: 'What does not transfer automatically (and what to do)',
@@ -552,7 +552,7 @@ Parents can use Screen Time to manage a child's phone remotely through Family Sh
       },
       {
         title: 'Set up Google apps on your new iPhone',
-        content: `Since you were using Android, you likely relied on Google apps. Download these from the App Store: Gmail (for email), Google Maps (for navigation), Google Photos (your photo backup), Google Drive (your files), and Google Chrome (if you prefer it over Safari). Sign into each with your Google account and your data will appear immediately. You do not have to choose between Google and Apple — most people use a mix of both on their iPhone.`,
+        content: `Since you were using Android, you likely relied on Google apps. Download these from the App Store: Gmail (for email), Google Maps (for navigation), Google Photos (your photo backup), Google Drive (your files), and Google Chrome (if you prefer it over Safari). Sign into each with your Google account and your data will appear right away. You do not have to choose between Google and Apple — most people use a mix of both on their iPhone.`,
       },
     ],
   },
@@ -603,7 +603,7 @@ Parents can use Screen Time to manage a child's phone remotely through Family Sh
     steps: [
       {
         title: 'Look at the hands and fingers first',
-        content: `AI image generators historically struggle with hands and fingers. Look for: extra fingers (six fingers on a hand), missing fingers, fingers that bend the wrong way, fingers that merge together or fade at the tips, or hands that look waxy or rubbery. While AI tools have improved significantly, close inspection of hands still reveals flaws in many AI images. Zoom in on any person's hands in a suspicious photo.`,
+        content: `AI image generators historically struggle with hands and fingers. Look for: extra fingers (six fingers on a hand), missing fingers, fingers that bend the wrong way, fingers that merge together or fade at the tips, or hands that look waxy or rubbery. While AI tools have improved a lot, close inspection of hands still reveals flaws in many AI images. Zoom in on any person's hands in a suspicious photo.`,
         tip: `Also look at teeth — AI often produces too many, oddly shaped, or glowing white teeth in portrait images.`,
       },
       {

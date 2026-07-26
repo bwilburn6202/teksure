@@ -131,7 +131,7 @@ export const guidesBatch12: Guide[] = [
     steps: [
       {
         title: 'Understand how the scam works',
-        content: `The scammer calls you and you hear what sounds like your son, daughter, or grandchild saying they're in an emergency — a car accident, an arrest, a hospital visit. They say "Don't call anyone else, they'll make it worse." Then a second voice (pretending to be a lawyer, bail bondsman, or police officer) comes on and explains how to send money immediately. The entire "emergency" is fake.`,
+        content: `The scammer calls you and you hear what sounds like your son, daughter, or grandchild saying they're in an emergency — a car accident, an arrest, a hospital visit. They say "Don't call anyone else, they'll make it worse." Then a second voice (pretending to be a lawyer, bail bondsman, or police officer) comes on and explains how to send money right away. The entire "emergency" is fake.`,
         warning: `The fake voice sounds incredibly realistic. AI voice-cloning software can copy someone's voice from just 3-10 seconds of audio, which anyone can find in a social media video or voicemail.`,
       },
       {
@@ -149,7 +149,7 @@ export const guidesBatch12: Guide[] = [
       },
       {
         title: 'Report the call to the FTC',
-        content: 'Whether or not you sent any money, report voice cloning scam calls at reportfraud.ftc.gov. Your report helps the Federal Trade Commission track these operations and warn other people. If you did send money, also contact your bank immediately — some wire transfers can be reversed if reported within 24 hours.',
+        content: 'Whether or not you sent any money, report voice cloning scam calls at reportfraud.ftc.gov. Your report helps the Federal Trade Commission track these operations and warn other people. If you did send money, also contact your bank right away — some wire transfers can be reversed if reported within 24 hours.',
         tip: 'The AARP Fraud Watch Network helpline at 1-877-908-3360 is free and has fraud specialists available to talk through what happened and advise on next steps.',
       },
     ],
@@ -266,12 +266,12 @@ export const guidesBatch12: Guide[] = [
     thumbnailEmoji: '',
     publishedAt: '2026-04-19',
     difficulty: 'Beginner',
-    body: "A very common scam involves a scary pop-up that suddenly appears while you're browsing the internet. The pop-up may say 'VIRUS DETECTED,' 'Your computer is infected,' or 'Microsoft Security Alert.' It often includes a phone number and tells you to call immediately. This is almost always a fake.",
+    body: "A very common scam involves a scary pop-up that suddenly appears while you're browsing the internet. The pop-up may say 'VIRUS DETECTED,' 'Your computer is infected,' or 'Microsoft Security Alert.' It often includes a phone number and tells you to call right away. This is almost always a fake.",
     steps: [
       {
         title: 'Recognize that this is a scam',
         content: 'Microsoft, Apple, and legitimate antivirus companies will never contact you through a browser pop-up and ask you to call a phone number. These fake alerts are designed to frighten you into calling scammers who will then ask for payment or request remote access to your computer. Do not call the number shown and do not give anyone remote access to your computer.',
-        warning: `If you call the number and someone asks to "remote in" to fix your computer, hang up immediately. This is the scammer's goal — once they have access, they can steal passwords, install malicious software, or charge you hundreds of dollars.`,
+        warning: `If you call the number and someone asks to "remote in" to fix your computer, hang up right away. This is the scammer's goal — once they have access, they can steal passwords, install malicious software, or charge you hundreds of dollars.`,
       },
       {
         title: 'Close the browser tab',
@@ -288,7 +288,7 @@ export const guidesBatch12: Guide[] = [
       },
       {
         title: 'Report the scam to the FTC',
-        content: 'Report fake tech support pop-ups at reportfraud.ftc.gov. If you did call the number and gave someone access to your computer, contact your bank immediately to monitor for unusual charges, change your important passwords from a different device, and run a full scan with Windows Security.',
+        content: 'Report fake tech support pop-ups at reportfraud.ftc.gov. If you did call the number and gave someone access to your computer, contact your bank right away to monitor for unusual charges, change your important passwords from a different device, and run a full scan with Windows Security.',
         tip: `AARP's Tech Support Scam hub at aarp.org/money/scams-fraud/tech-support-scams has more information and a helpline.`,
       },
     ],
@@ -317,7 +317,7 @@ export const guidesBatch12: Guide[] = [
       },
       {
         title: 'Find subscriptions you pay for directly',
-        content: `Not all subscriptions go through Apple or Google. Netflix, Hulu, Disney+, Amazon Prime, and many websites charge your credit or debit card directly. To find these, look at your bank or credit card statement from the past three months. Highlight any recurring charges under $25/month that you don't immediately recognize — those are often forgotten subscriptions.`,
+        content: `Not all subscriptions go through Apple or Google. Netflix, Hulu, Disney+, Amazon Prime, and many websites charge your credit or debit card directly. To find these, look at your bank or credit card statement from the past three months. Highlight any recurring charges under $25/month that you don't right away recognize — those are often forgotten subscriptions.`,
         tip: 'Your bank or credit card app may have a "recurring charges" section that lists these automatically. Look for a filter or search option for "subscriptions" in your banking app.',
       },
       {
@@ -670,7 +670,7 @@ export const guidesBatch12: Guide[] = [
       },
       {
         title: `Remove browser extensions you don't use`,
-        content: `Browser extensions run quietly in the background and can slow things down significantly. In Chrome, click the puzzle piece icon near the top right — this shows your installed extensions. Click the three-dot menu next to any extension you don't recognize or no longer use and click "Remove from Chrome." If you're not sure what an extension does, removing it is usually safe — you can always reinstall it later.`,
+        content: `Browser extensions run quietly in the background and can slow things down a lot. In Chrome, click the puzzle piece icon near the top right — this shows your installed extensions. Click the three-dot menu next to any extension you don't recognize or no longer use and click "Remove from Chrome." If you're not sure what an extension does, removing it is usually safe — you can always reinstall it later.`,
       },
     ],
   },

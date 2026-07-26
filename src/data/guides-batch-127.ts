@@ -17,7 +17,7 @@ export const guidesBatch127: Guide[] = [
     difficulty: 'Beginner',
     body: `Every major US bank — Chase, Bank of America, Wells Fargo, Citi, Capital One, US Bank, and most credit unions — offers a free Bill Pay service through their website and mobile app. You enter the name of the company you want to pay and the amount, and your bank handles the rest. Either they send a paper check on your behalf (free) or they send an electronic payment instantly.
 
-This is significantly safer than writing and mailing checks yourself. Your bank account number does not appear on the check the bank mails — only an internal account reference. And if a Bill Pay check is lost, the bank tracks it and reissues a replacement at no cost to you.
+This is a lot safer than writing and mailing checks yourself. Your bank account number does not appear on the check the bank mails — only an internal account reference. And if a Bill Pay check is lost, the bank tracks it and reissues a replacement at no cost to you.
 
 You can pay one-time bills (like an electrician or plumber) or set up recurring monthly payments (like rent, mortgage, utilities, or insurance). For recurring bills, the bank pays automatically each month on the date you choose, so you never miss a payment.
 

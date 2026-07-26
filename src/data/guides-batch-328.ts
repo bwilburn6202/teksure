@@ -44,7 +44,7 @@ This guide walks through ordering groceries with the Walmart app on a smartphone
       },
       {
         title: 'Pay with a saved card or EBT',
-        content: 'Tap "Add a payment method." Walmart Grocery accepts credit and debit cards, Walmart gift cards, and EBT (food assistance) cards for eligible items. Enter your card information once and the app saves it for future orders. Tap "Place Order" to confirm.',
+        content: 'Tap "Add a payment method." Walmart Grocery accepts credit and debit cards, Walmart gift cards, and EBT (food help) cards for eligible items. Enter your card information once and the app saves it for future orders. Tap "Place Order" to confirm.',
         warning: 'For EBT, only food items are covered — you cannot use EBT for the delivery fee or for non-food items. The app shows you which items in your cart are EBT-eligible during checkout.',
       },
       {
@@ -65,7 +65,7 @@ This guide walks through ordering groceries with the Walmart app on a smartphone
     publishedAt: '2026-07-25',
     lastVerifiedAt: '2026-07-25',
     difficulty: 'Beginner',
-    body: `Modern Bluetooth hearing aids — including most models from Phonak, Oticon, ReSound, Starkey, and Widex — pair directly to an iPhone. When paired, phone calls, music, FaceTime audio, and even iPhone notifications stream straight into your hearing aids without an extra accessory. The audio quality is significantly better than holding the phone to your ear, and there is no echo or feedback.
+    body: `Modern Bluetooth hearing aids — including most models from Phonak, Oticon, ReSound, Starkey, and Widex — pair directly to an iPhone. When paired, phone calls, music, FaceTime audio, and even iPhone notifications stream straight into your hearing aids without an extra accessory. The audio quality is a lot better than holding the phone to your ear, and there is no echo or feedback.
 
 This works only with hearing aids that are labeled "Made for iPhone" (sometimes shown as MFi). Most premium hearing aids sold since 2018 support it. Older or basic hearing aids may need a separate streaming accessory from the manufacturer.
 

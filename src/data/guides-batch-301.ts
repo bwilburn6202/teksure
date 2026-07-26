@@ -66,11 +66,11 @@ export const guidesBatch301: Guide[] = [
       },
       {
         title: "Stand in the back row for the first month",
-        content: "The back row gives a clear view of the rows ahead, which is the best way to learn the steps. The teacher will usually demonstrate the routine slowly without music, then walk through with music at half speed, then run the routine at normal speed. Mirror the dancer two rows ahead, not the dancer directly in front. The second-row dancer is most likely to be a regular who knows the routine.",
+        content: "The back row gives a clear view of the rows ahead, which is the best way to learn the steps. The teacher will usually show the routine slowly without music, then walk through with music at half speed, then run the routine at normal speed. Mirror the dancer two rows ahead, not the dancer directly in front. The second-row dancer is most likely to be a regular who knows the routine.",
       },
       {
         title: "Use Copperknob to practice at home",
-        content: "Open copperknob.co.uk in a web browser. Search for the dance name the teacher used in class, such as Tush Push or Country Walkin or Cha Cha Slide. Each routine has a printable step sheet and links to YouTube videos that demonstrate the dance slowly. Practicing the steps at home for 10 minutes a day cements the routine in muscle memory.",
+        content: "Open copperknob.co.uk in a web browser. Search for the dance name the teacher used in class, such as Tush Push or Country Walkin or Cha Cha Slide. Each routine has a printable step sheet and links to YouTube videos that show the dance slowly. Practicing the steps at home for 10 minutes a day cements the routine in muscle memory.",
         tip: "Quick Tip: Save the Copperknob page for the favorite routine to a Favorites or Bookmarks folder so it opens with one click next time.",
       },
       {
@@ -173,7 +173,7 @@ export const guidesBatch301: Guide[] = [
       },
       {
         title: "Find a tap class through atdf.org or the local performing arts center",
-        content: "Open atdf.org and look at the Find a Class section. Many cities have an Adult Tap or Seasoned Steppers class at a community dance studio or performing arts center. The class typically runs once a week for 8 to 12 weeks with a 60-minute session. Tap shoes are a one-time purchase. The teacher will demonstrate the basic eight-step sequence (shuffle, ball-change, flap, hop) in the first three sessions. By week six most seniors can hold a 16-count routine.",
+        content: "Open atdf.org and look at the Find a Class section. Many cities have an Adult Tap or Seasoned Steppers class at a community dance studio or performing arts center. The class typically runs once a week for 8 to 12 weeks with a 60-minute session. Tap shoes are a one-time purchase. The teacher will show the basic eight-step sequence (shuffle, ball-change, flap, hop) in the first three sessions. By week six most seniors can hold a 16-count routine.",
       },
       {
         title: "Try East Coast Swing at a ballroom studio first",

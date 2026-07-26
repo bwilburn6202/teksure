@@ -27,7 +27,7 @@ The good news: a single phrase will reveal the scam every time. This guide walks
     steps: [
       {
         title: 'Pause before reacting to the emotion',
-        content: 'When someone calls in tears claiming to be a family member, the natural reaction is to help immediately. Scammers count on this. Take a breath. Tell the caller "Wait one moment, please" — and put the phone down for ten seconds. A real grandchild in real trouble can wait ten seconds. A scammer often hangs up.',
+        content: 'When someone calls in tears claiming to be a family member, the natural reaction is to help right away. Scammers count on this. Take a breath. Tell the caller "Wait one moment, please" — and put the phone down for ten seconds. A real grandchild in real trouble can wait ten seconds. A scammer often hangs up.',
       },
       {
         title: 'Ask a question only your real grandchild could answer',
@@ -45,7 +45,7 @@ The good news: a single phrase will reveal the scam every time. This guide walks
       },
       {
         title: 'If you already sent money, act fast',
-        content: 'Wire transfers can sometimes be reversed if reported within hours — call your bank or wire service immediately. Gift card balances can occasionally be frozen if the codes have not been redeemed — call the card issuer (Apple, Google Play, Amazon, etc.) right away. Cryptocurrency transactions are usually unrecoverable, but reporting helps law enforcement track patterns. File a report at reportfraud.ftc.gov and at ic3.gov.',
+        content: 'Wire transfers can sometimes be reversed if reported within hours — call your bank or wire service right away. Gift card balances can sometimes be frozen if the codes have not been redeemed — call the card issuer (Apple, Google Play, Amazon, etc.) right away. Cryptocurrency transactions are usually unrecoverable, but reporting helps law enforcement track patterns. File a report at reportfraud.ftc.gov and at ic3.gov.',
       },
       {
         title: 'Share what you learned with friends',
@@ -65,7 +65,7 @@ The good news: a single phrase will reveal the scam every time. This guide walks
     publishedAt: '2026-05-05',
     lastVerifiedAt: '2026-05-05',
     difficulty: 'Beginner',
-    body: `Amazon Pharmacy is a fully licensed online pharmacy that delivers prescription medications to your door, often at prices significantly lower than CVS, Walgreens, or Walmart. It accepts most insurance plans (including Medicare Part D) and offers a separate discount program called RxPass for Prime members that includes many common generics for $5 per month total.
+    body: `Amazon Pharmacy is a fully licensed online pharmacy that delivers prescription medications to your door, often at prices a lot lower than CVS, Walgreens, or Walmart. It accepts most insurance plans (including Medicare Part D) and offers a separate discount program called RxPass for Prime members that includes many common generics for $5 per month total.
 
 Switching to Amazon Pharmacy does not mean giving up your current pharmacy — you can keep one prescription at Walgreens and have another at Amazon. There is no commitment. If a delivery does not arrive on time, Amazon's customer service handles it like any other Amazon order.
 

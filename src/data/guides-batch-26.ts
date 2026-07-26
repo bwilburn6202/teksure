@@ -130,7 +130,7 @@ For families spread across different states or countries, Discord can serve as a
       },
       {
         title: 'Join a Voice or Video Call',
-        content: 'Voice channels show a speaker icon (). Tap a voice channel to join — you immediately connect to a voice call with anyone else in that channel. Tap the camera icon to turn on your video. Tap the microphone icon to mute or unmute yourself.',
+        content: 'Voice channels show a speaker icon (). Tap a voice channel to join — you right away connect to a voice call with anyone else in that channel. Tap the camera icon to turn on your video. Tap the microphone icon to mute or unmute yourself.',
         tip: 'You do not need to be invited to join a voice channel — if someone is in the channel, you can tap it anytime to join the conversation. This makes it easy to drop in and chat.',
       },
       {
@@ -172,7 +172,7 @@ Reddit has communities specifically for seniors (r/seniors), technology help (r/
       },
       {
         title: 'Read a Thread',
-        content: 'Click any post title to open it. The original question or article is at the top. Scroll down to read the comments — the highest-voted comments appear first. Upvote counts (the orange numbers) indicate how many readers found a comment helpful.',
+        content: 'Click any post title to open it. The original question or article is at the top. Scroll down to read the comments — the highest-voted comments appear first. Upvote counts (the orange numbers) show how many readers found a comment helpful.',
       },
       {
         title: 'Create a Free Account to Ask Questions',
@@ -182,7 +182,7 @@ Reddit has communities specifically for seniors (r/seniors), technology help (r/
       {
         title: 'Ask a Question in a Subreddit',
         content: 'Navigate to a relevant subreddit (e.g., r/techsupport for tech help). Click "Create Post" or the pen icon. Choose a clear title for your question — be specific. Describe the problem in the body text. Include what device you have and what you have already tried. Click "Post."',
-        warning: 'Reddit allows anonymous posting, which means you may occasionally see rude or unhelpful comments. Most subreddits have moderators who remove rule-breaking content, but if a comment is unhelpful, scroll past it — focus on upvoted responses.',
+        warning: 'Reddit allows anonymous posting, which means you may sometimes see rude or unhelpful comments. Most subreddits have moderators who remove rule-breaking content, but if a comment is unhelpful, scroll past it — focus on upvoted responses.',
       },
     ],
   },
@@ -276,7 +276,7 @@ Editing dictated text works the same as editing any text — tap where you want 
       {
         title: 'Correct Mistakes',
         content: 'Voice dictation is accurate but not perfect. After dictating, review the text. Tap on any word to position your cursor there. Delete and retype any mistakes, or tap a word to see alternatives the dictation engine considered.',
-        tip: 'Speak in quieter environments for best accuracy. Background noise significantly reduces dictation accuracy.',
+        tip: 'Speak in quieter environments for best accuracy. Background noise a lot reduces dictation accuracy.',
       },
     ],
   },
@@ -345,7 +345,7 @@ Windows 11 voice typing works with automatic punctuation — you do not need to 
 
 Voice typing requires a working microphone. Most Windows laptops have a built-in microphone. Desktop computers may need a USB or plug-in microphone. The built-in laptop microphone is usually adequate for voice typing in a quiet room.
 
-For longer typing tasks — writing emails, composing letters, drafting documents — voice typing in Windows can be significantly faster than keyboard typing for many people. A spoken average of 130 words per minute dramatically outpaces most people's keyboard typing speed.
+For longer typing tasks — writing emails, composing letters, drafting documents — voice typing in Windows can be a lot faster than keyboard typing for many people. A spoken average of 130 words per minute dramatically outpaces most people's keyboard typing speed.
 
 Windows 11 also has a full voice access feature for people with mobility impairments — it allows voice control of the entire computer, not just typing. This guide covers the simpler voice typing feature for casual use.`,
     steps: [
@@ -484,7 +484,7 @@ Subscriptions paid through the App Store go on your Apple ID. This includes apps
 
 How much money can this save? Surveys suggest the average person has 4-6 forgotten app subscriptions, averaging $30-70 per month total. A 10-minute audit of your subscriptions can often reveal $10-30 per month in charges for apps you do not remember subscribing to.
 
-When you cancel an App Store subscription, you retain access until the end of the current billing period — you are not cut off immediately. You can also resubscribe at any time if you change your mind.
+When you cancel an App Store subscription, you retain access until the end of the current billing period — you are not cut off right away. You can also resubscribe at any time if you change your mind.
 
 This same subscription list is visible from a Mac's App Store or from account.apple.com in a browser — useful if you want to review subscriptions on a larger screen.`,
     steps: [
@@ -618,13 +618,13 @@ Presenting from Google Slides is straightforward: open the presentation in full-
 
 Creating a photo book sounds complicated, but Shutterfly has designed the process to be very approachable. You select a book format, upload your photos, and Shutterfly's design tool can automatically arrange photos into a beautifully laid-out book. You then review and customize the layout as much or as little as you want.
 
-Shutterfly photo books come in several sizes: 5x5, 8x8, 8x11, 11x14, and others. Price depends on size and page count — a standard 8x8 hardcover with 20 pages starts around $35-50, and frequently goes on sale. First-time buyers often get promotional pricing.
+Shutterfly photo books come in several sizes: 5x5, 8x8, 8x11, 11x14, and others. Price depends on size and page count — a standard 8x8 hardcover with 20 pages starts around $35-50, and often goes on sale. First-time buyers often get promotional pricing.
 
 The key tip for getting started: select more photos than you think you need. It is much easier to remove photos from a layout than to go back and add more later. For a 20-page book, start by uploading at least 40-60 photos, then pare down to the best ones.
 
 The Autofill feature places photos on pages automatically — a good starting point. After that, you can move photos between pages, add captions, change backgrounds, and adjust the layout of individual pages. Most people find the process takes 30-60 minutes for a 20-page book.
 
-Shutterfly books regularly go on sale — 40-50% off sales happen most weekends and holidays. Signing up for Shutterfly emails ensures you see the best deals.`,
+Shutterfly books regularly go on sale — 40-50% off sales happen most weekends and holidays. Signing up for Shutterfly emails makes sure you see the best deals.`,
     steps: [
       {
         title: 'Start a New Photo Book',
@@ -677,7 +677,7 @@ As of 2026, here are approximate monthly prices for ad-supported (cheaper) and a
 **Paramount+:** $5.99/month (with ads), $11.99 (no ads)
 **Sling TV (live):** $40/month and up
 
-Prices change frequently — always verify current pricing on each service's website.
+Prices change often — always verify current pricing on each service's website.
 
 The most common advice: maintain one to two subscription services at a time and rotate them seasonally. Watch through one service's catalog, cancel, subscribe to another for a few months, then rotate back. This costs $15-30/month total instead of $100+.`,
     steps: [
@@ -720,13 +720,13 @@ The most common advice: maintain one to two subscription services at a time and 
 
 If you signed up for Prime and no longer feel you are getting your money's worth, canceling is straightforward. However, it is worth understanding exactly what you lose — and whether downgrading instead of canceling entirely might make more sense.
 
-When you cancel Prime, you immediately lose access to Prime Video, Prime Music, Prime Reading, and the free 2-day shipping benefit. You can still shop on Amazon but shipping will take longer (or cost extra) for items that are not eligible for free standard shipping.
+When you cancel Prime, you right away lose access to Prime Video, Prime Music, Prime Reading, and the free 2-day shipping benefit. You can still shop on Amazon but shipping will take longer (or cost extra) for items that are not eligible for free standard shipping.
 
 If you cancel an annual Prime membership before the year is up, Amazon may issue a prorated refund for the unused months — but only if you have not used any Prime benefits since your last payment. If you have used free shipping or watched Prime Video, typically no refund is available.
 
 A middle option: if you only use Prime for shipping and do not watch Prime Video or use other services, consider whether you actually use Prime enough to justify the cost. People who order from Amazon fewer than 3-4 times per month may save money without Prime by paying individual shipping fees.
 
-Amazon also offers a discounted Prime membership for customers who receive government assistance (EBT/SNAP) — $6.99/month instead of $14.99.`,
+Amazon also offers a discounted Prime membership for customers who receive government help (EBT/SNAP) — $6.99/month instead of $14.99.`,
     steps: [
       {
         title: 'Go to Amazon Account Settings',
@@ -738,7 +738,7 @@ Amazon also offers a discounted Prime membership for customers who receive gover
       },
       {
         title: 'Choose End or Cancel Immediately',
-        content: 'Amazon presents two options: "End Membership" (access continues until the next billing date, no refund) or "Cancel Immediately" (access ends now, and a partial refund may be issued if you have not used Prime benefits recently). "End Membership" is usually the better choice.',
+        content: 'Amazon presents two options: "End Membership" (access continues until the next billing date, no refund) or "Cancel Right away" (access ends now, and a partial refund may be issued if you have not used Prime benefits recently). "End Membership" is usually the better choice.',
         tip: `If your annual renewal is coming up soon, set a calendar reminder to cancel a few days before it renews — this way you get the full year's benefit and avoid an unwanted charge.`,
       },
       {
@@ -768,7 +768,7 @@ Crash Detection uses a combination of sensors: the barometer, microphone, GPS, a
 
 For most users, Crash Detection works in the background automatically — no setup required beyond having an iPhone 14 or later with Emergency SOS and Medical ID configured. However, confirming your Medical ID and emergency contacts are accurate is important, since that information is shared with 911 when Crash Detection activates.
 
-False positives do occasionally occur: Crash Detection has activated for some people during intense roller coaster rides or skiing trips — the motion pattern resembles a crash. If an alert appears and you are fine, tap "I'm OK" within 10 seconds to cancel the call.
+False positives do sometimes occur: Crash Detection has activated for some people during intense roller coaster rides or skiing trips — the motion pattern resembles a crash. If an alert appears and you are fine, tap "I'm OK" within 10 seconds to cancel the call.
 
 Note that Crash Detection works even if your iPhone is in low-power mode or in a pocket or bag — you do not need to be actively using the phone. It runs passively in the background at all times on supported models.`,
     steps: [
@@ -783,17 +783,17 @@ Note that Crash Detection works even if your iPhone is in low-power mode or in a
       {
         title: 'Set Up Emergency Contacts',
         content: 'Go to the Health app on your iPhone → tap your profile photo → "Medical ID" → "Edit." Add at least one emergency contact. These contacts receive a text message with your location when Crash Detection (or Emergency SOS) activates.',
-        tip: 'Add a family member or close friend as your emergency contact — someone who would want to know immediately if you were in a crash.',
+        tip: 'Add a family member or close friend as your emergency contact — someone who would want to know right away if you were in a crash.',
       },
       {
         title: 'Know What to Expect After a Crash',
-        content: `If Crash Detection activates, your iPhone sounds an alarm and shows a countdown screen. It announces: "It looks like you've been in a crash." You can tap "I'm OK" to cancel, or tap "Emergency SOS" to call immediately. If no action is taken in 10 seconds, the phone calls 911 automatically.`,
+        content: `If Crash Detection activates, your iPhone sounds an alarm and shows a countdown screen. It announces: "It looks like you've been in a crash." You can tap "I'm OK" to cancel, or tap "Emergency SOS" to call right away. If no action is taken in 10 seconds, the phone calls 911 automatically.`,
         tip: `If you are fine and a false alarm occurs, tap "I'm OK" quickly. If you accidentally trigger the call to 911, stay on the line and explain it was a false alarm — dispatchers are accustomed to this.`,
       },
       {
         title: 'Review Medical ID Information',
         content: 'Since Crash Detection shares your Medical ID with 911, make sure it is accurate and complete: blood type, allergies, medications, and a note about any important medical conditions. First responders can view this even on a locked iPhone.',
-        warning: 'Crash Detection is designed for severe crashes, not minor fender benders. It activates when the sensor readings indicate a potentially life-threatening impact. Minor accidents may not trigger it.',
+        warning: 'Crash Detection is designed for severe crashes, not minor fender benders. It activates when the sensor readings show a potentially life-threatening impact. Minor accidents may not trigger it.',
       },
     ],
   },
@@ -877,7 +877,7 @@ Medigap does not cover prescription drugs (Part D), dental, vision, or hearing �
       },
       {
         title: 'Find and Compare Prices',
-        content: 'Use the official tool at medicare.gov → "Compare health plans" → "Medigap" to see available plans and approximate prices in your zip code. You can also call your State Health Insurance Assistance Program (SHIP) — a free, federally funded counseling service — at 1-877-839-2675.',
+        content: 'Use the official tool at medicare.gov → "Compare health plans" → "Medigap" to see available plans and approximate prices in your zip code. You can also call your State Health Insurance Help Program (SHIP) — a free, federally funded counseling service — at 1-877-839-2675.',
         tip: 'SHIP counselors give free, unbiased advice about Medicare plan options in your state. This is one of the most underused resources available to Medicare beneficiaries.',
       },
       {
@@ -922,7 +922,7 @@ Approximate current prices (2026): Consumer Cellular $20-35/month, Mint Mobile $
       },
       {
         title: 'Check Your Current Coverage Area',
-        content: `Go to each carrier's coverage map website. Enter your home address and places you frequently travel (relatives' cities, favorite vacation spots). Make sure the coverage is good everywhere you use your phone. Use Verizon's, AT&T's, and T-Mobile's maps at their official websites.`,
+        content: `Go to each carrier's coverage map website. Enter your home address and places you often travel (relatives' cities, favorite vacation spots). Make sure the coverage is good everywhere you use your phone. Use Verizon's, AT&T's, and T-Mobile's maps at their official websites.`,
       },
       {
         title: 'Compare MVNO Plans for Your Budget',
@@ -966,7 +966,7 @@ Customer service is available by phone (888-345-5509) Monday-Friday 8 AM - 9 PM 
       },
       {
         title: 'Choose a Plan',
-        content: 'Plans range from 500 MB ($20/month) to Unlimited ($55/month). Check your current monthly data usage first (Settings → Cellular on iPhone or Settings → Network → Data Usage on Android). If you use under 3 GB per month, the $25-30 plan tiers are usually sufficient.',
+        content: 'Plans range from 500 MB ($20/month) to Unlimited ($55/month). Check your current monthly data usage first (Settings → Cellular on iPhone or Settings → Network → Data Usage on Android). If you use under 3 GB per month, the $25-30 plan tiers are usually enough.',
         tip: 'Consumer Cellular automatically moves you up a tier if you exceed your data limit and back down next month — so starting with a smaller plan and adjusting is safe.',
       },
       {

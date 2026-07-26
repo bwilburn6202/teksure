@@ -97,8 +97,7 @@ Sources: Google Account Help (support.google.com/accounts), AARP Technology (aar
       },
       {
         title: 'Review and agree to Google\'s terms',
-        content:
-          'Google will show you its Privacy Policy and Terms of Service. These are the rules and agreements for using the service. Scroll through them, then click "I agree" to continue. Your account will be created immediately after.',
+        content: 'Google will show you its Privacy Policy and Terms of Service. These are the rules and agreements for using the service. Scroll through them, then click "I agree" to continue. Your account will be created right away after.',
         tip: 'Quick Tip: After your account is created, visit mail.google.com to check your new Gmail inbox. Bookmark that page in your browser for easy access next time.',
       },
     ],
@@ -172,8 +171,7 @@ Sources: Facebook Help Center (facebook.com/help), AARP Technology (aarp.org/hom
       },
       {
         title: 'Block someone',
-        content:
-          'On their profile page, look for three small dots (. . .) near the top right of the page. This is the "More options" menu. Tap or click those dots. Select "Block." Facebook will ask you to confirm — read the short explanation on screen, then click "Confirm." The block goes into effect immediately.',
+        content: 'On their profile page, look for three small dots (. . .) near the top right of the page. This is the "More options" menu. Tap or click those dots. Select "Block." Facebook will ask you to confirm — read the short explanation on screen, then click "Confirm." The block goes into effect right away.',
         warning:
           'Blocking is a significant step. The person will not be able to find you on Facebook at all. If you only want to limit what they see, use Restrict instead.',
       },
@@ -276,8 +274,7 @@ Sources: Microsoft Support (support.microsoft.com/en-us/word), GCFGlobal.org (gc
       },
       {
         title: 'Change the font size and make text bold',
-        content:
-          'To make text bigger, first select it — click at the beginning of the word or sentence, hold down the mouse button, and drag to highlight the text you want to change. The highlighted text will turn blue. Then look at the Home tab at the top of the screen. Find the number in the font size box (it usually shows 11 or 12). Click that box, type a larger number such as 16 or 18, and press Enter. Your text will grow immediately.\n\nTo make selected text bold, click the B button in the Home tab (or press Ctrl+B on your keyboard). Bold text stands out and is easier to read. Click the B again to turn bold off.',
+        content: 'To make text bigger, first select it — click at the beginning of the word or sentence, hold down the mouse button, and drag to highlight the text you want to change. The highlighted text will turn blue. Then look at the Home tab at the top of the screen. Find the number in the font size box (it usually shows 11 or 12). Click that box, type a larger number such as 16 or 18, and press Enter. Your text will grow right away.\n\nTo make selected text bold, click the B button in the Home tab (or press Ctrl+B on your keyboard). Bold text stands out and is easier to read. Click the B again to turn bold off.',
         tip: 'Quick Tip: For most letters and documents, a font size of 12 is standard. Many seniors prefer 14 or 16 for easier reading.',
       },
       {
@@ -334,7 +331,7 @@ The most common uses of deepfakes in scams include:
 
 - **Fake celebrity endorsements.** A video appears to show a famous person — a TV doctor, a news anchor, a business leader — recommending an investment, a supplement, or a product. The celebrity never said any of it. The goal is to make you trust the product and buy it, often at high prices or as part of a subscription that is hard to cancel.
 
-- **Fake family emergency videos.** Scammers can clone the voice of a family member using just a short audio sample taken from a social media video. They call or send a video message pretending to be your grandchild, child, or other relative — claiming to be in jail, in a hospital, or in an accident — and asking for money immediately. This is sometimes called a "grandparent scam."
+- **Fake family emergency videos.** Scammers can clone the voice of a family member using just a short audio sample taken from a social media video. They call or send a video message pretending to be your grandchild, child, or other relative — claiming to be in jail, in a hospital, or in an accident — and asking for money right away. This is sometimes called a "grandparent scam."
 
 - **Fake news clips.** Doctored videos make it look as if a politician, official, or journalist said something extreme or false. These spread on social media and are designed to anger you or change your beliefs.
 

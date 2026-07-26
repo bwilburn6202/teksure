@@ -260,7 +260,7 @@ There is no single right answer for everyone. The goal is to be aware of what yo
 
 **A note about Windows updates and privacy**
 
-Microsoft updates Windows 11 regularly, and occasionally a new update changes privacy defaults or introduces new features like Recall. It is a good habit to check Privacy & security settings once or twice a year, or any time you hear news about a major Windows update. The setting names stay roughly the same across updates.
+Microsoft updates Windows 11 regularly, and sometimes a new update changes privacy defaults or introduces new features like Recall. It is a good habit to check Privacy & security settings once or twice a year, or any time you hear news about a major Windows update. The setting names stay roughly the same across updates.
 
 Source: Microsoft Support — Recall and privacy in Windows 11 (support.microsoft.com). Video: Microsoft YouTube channel, search "Windows 11 privacy settings."`,
     steps: [
@@ -295,8 +295,7 @@ Source: Microsoft Support — Recall and privacy in Windows 11 (support.microsof
       },
       {
         title: 'Save your settings and check back after major updates',
-        content:
-          'Settings save automatically when you toggle them — there is no Save button to press. Close Settings when you are done. Make a note to revisit Privacy & security settings once or twice a year, or any time you hear about a significant Windows update. Microsoft occasionally adds new privacy-related options with major updates, and it is worth knowing about them.',
+        content: 'Settings save automatically when you toggle them — there is no Save button to press. Close Settings when you are done. Make a note to revisit Privacy & security settings once or twice a year, or any time you hear about a significant Windows update. Microsoft sometimes adds new privacy-related options with major updates, and it is worth knowing about them.',
       },
     ],
   },

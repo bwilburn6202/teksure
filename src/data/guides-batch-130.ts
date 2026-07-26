@@ -88,7 +88,7 @@ This guide explains how Emergency SOS works, how to set up your medical ID and e
       },
       {
         title: 'Practice safely without calling 911',
-        content: 'To practice, press and hold side button + volume up briefly — only until the SOS slider appears — then release the buttons immediately. The slider disappears and no call is placed. Do this a few times so the motion is muscle memory. You will not accidentally call 911 by releasing early — the call only goes through after the slider is dragged or after a several-second auto-call countdown.',
+        content: 'To practice, press and hold side button + volume up briefly — only until the SOS slider appears — then release the buttons right away. The slider disappears and no call is placed. Do this a few times so the motion is muscle memory. You will not accidentally call 911 by releasing early — the call only goes through after the slider is dragged or after a several-second auto-call countdown.',
       },
       {
         title: 'Turn on Crash Detection (if available)',

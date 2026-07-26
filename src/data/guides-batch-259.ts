@@ -101,7 +101,7 @@ export const guidesBatch259: Guide[] = [
       },
       {
         title: "Update the beneficiary on the new IRA the same day",
-        content: "When you open a Rollover IRA, the brokerage asks for a primary beneficiary and contingent beneficiary. Fill these in immediately. An IRA passes to beneficiaries outside of probate, which saves your family weeks or months of court delay. Most retirees name their spouse as primary and their children as contingent. If you change your mind later, the beneficiary form is updated online in 5 minutes.",
+        content: "When you open a Rollover IRA, the brokerage asks for a primary beneficiary and contingent beneficiary. Fill these in right away. An IRA passes to beneficiaries outside of probate, which saves your family weeks or months of court delay. Most retirees name their spouse as primary and their children as contingent. If you change your mind later, the beneficiary form is updated online in 5 minutes.",
       },
     ],
   },

@@ -43,10 +43,8 @@ export const guidesBatch16: Guide[] = [
       },
       {
         title: "Understand why you can't get your money out",
-        content:
-          "Pig-butchering platforms are designed to show growing account balances that feel real. When you try to withdraw, the platform claims you must pay taxes, fees, insurance, or a minimum balance before releasing funds. No matter how much you pay, another fee appears. Your 'friend' urges you to pay because your profits are waiting. In reality there are no profits — every dollar you send is gone immediately.",
-        warning:
-          "Legitimate investment platforms never require you to pay fees upfront before withdrawing your own money. That requirement is the hallmark of a scam — stop all payments immediately.",
+        content: "Pig-butchering platforms are designed to show growing account balances that feel real. When you try to withdraw, the platform claims you must pay taxes, fees, insurance, or a minimum balance before releasing funds. No matter how much you pay, another fee appears. Your 'friend' urges you to pay because your profits are waiting. In reality there are no profits — every dollar you send is gone right away.",
+        warning: "Legitimate investment platforms never require you to pay fees upfront before withdrawing your own money. That requirement is the hallmark of a scam — stop all payments right away.",
       },
       {
         title: 'Report it and do not send more money',
@@ -78,8 +76,7 @@ export const guidesBatch16: Guide[] = [
       },
       {
         title: 'Understand "Buy It Now" vs. auction listings',
-        content:
-          '"Buy It Now" listings let you purchase immediately at the listed price — these work like a normal online store. Auction listings let you place a bid, and the highest bidder at the end of the auction (usually 7 days) wins. For auctions, set a maximum bid amount and eBay will bid for you automatically up to that amount. You only pay what was needed to win, not necessarily your maximum.',
+        content: '"Buy It Now" listings let you purchase right away at the listed price — these work like a normal online store. Auction listings let you place a bid, and the highest bidder at the end of the auction (usually 7 days) wins. For auctions, set a maximum bid amount and eBay will bid for you automatically up to that amount. You only pay what was needed to win, not necessarily your maximum.',
         tip: "Quick Tip: If you're new to eBay, start with \"Buy It Now\" listings. Auctions can be exciting but it's possible to get caught up in the bidding and overpay for something.",
       },
       {
@@ -168,8 +165,7 @@ export const guidesBatch16: Guide[] = [
         title: 'Use the right charger for your device',
         content:
           "Always use the charger that came with your device, or a certified replacement from the device's manufacturer. Cheap third-party chargers — especially from unknown brands on discount sites — can lack proper voltage regulation and cause damage or, rarely, fires. Look for chargers that are UL listed or have a USB-IF certification mark. Reputable brands like Anker, Belkin, and Apple-certified accessories are safe choices.",
-        warning:
-          "Counterfeit chargers look identical to genuine ones but lack the safety components. If a charger gets unusually hot during use, produces a burning smell, or sparks when plugged in, stop using it immediately.",
+        warning: "Counterfeit chargers look identical to genuine ones but lack the safety components. If a charger gets unusually hot during use, produces a burning smell, or sparks when plugged in, stop using it right away.",
       },
       {
         title: 'Keep your phone in a safe place while charging',
@@ -185,8 +181,7 @@ export const guidesBatch16: Guide[] = [
       },
       {
         title: 'Check for recalls on chargers and batteries',
-        content:
-          "Occasionally, chargers and device batteries are recalled due to safety issues. The Consumer Product Safety Commission (CPSC) maintains a recall database at cpsc.gov/recalls. If you hear about a recall on the news or from a manufacturer, take it seriously — stop using the affected product and follow the recall instructions for a replacement. Also, if your phone battery has become swollen or puffed up (making the back of your phone bulge), stop using it and take it to a repair shop — a swollen battery is a fire risk.",
+        content: "Sometimes, chargers and device batteries are recalled due to safety issues. The Consumer Product Safety Commission (CPSC) maintains a recall database at cpsc.gov/recalls. If you hear about a recall on the news or from a manufacturer, take it seriously — stop using the affected product and follow the recall instructions for a replacement. Also, if your phone battery has become swollen or puffed up (making the back of your phone bulge), stop using it and take it to a repair shop — a swollen battery is a fire risk.",
       },
     ],
   },
@@ -330,8 +325,7 @@ export const guidesBatch16: Guide[] = [
     steps: [
       {
         title: 'Get the phone out of water immediately and turn it off',
-        content:
-          "Remove the phone from water as fast as possible. Hold it upright (screen up, charging port down) and shake it gently to dislodge water from the charging port, headphone jack, and speaker grills. If the phone is still on and responsive, turn it off immediately — press and hold the power button and select \"Power off.\" Keeping electronics powered with water inside causes short circuits. Do not plug it in to charge.",
+        content: "Remove the phone from water as fast as possible. Hold it upright (screen up, charging port down) and shake it gently to dislodge water from the charging port, headphone jack, and speaker grills. If the phone is still on and responsive, turn it off right away — press and hold the power button and select \"Power off.\" Keeping electronics powered with water inside causes short circuits. Do not plug it in to charge.",
         warning:
           "Do not press any buttons repeatedly, shake the phone hard, or use a hair dryer or heat gun on it. Heat and excess motion push water further into the device.",
       },
@@ -381,7 +375,7 @@ export const guidesBatch16: Guide[] = [
         title: 'Compare plans before you switch',
         content:
           `Common options worth comparing: T-Mobile Essentials 55+ (two lines, special senior pricing), AT&T Value Plus 55+, Consumer Cellular (AARP partner, no contracts, widely recommended for seniors), Mint Mobile (T-Mobile network, very low cost, pay monthly or upfront), Visible (Verizon network, $25-$30/month unlimited). For the best deals, search AARP Wireless Partners or compare plans on the AARP cell phone plan comparison tool. Check coverage in your area by entering your zip code on each carrier's website before switching.`,
-        tip: "Quick Tip: If you don't use much data (only check email, browse Facebook, and occasionally use maps), a 5GB or 10GB plan may be all you need and will cost significantly less than unlimited.",
+        tip: "Quick Tip: If you don't use much data (only check email, browse Facebook, and sometimes use maps), a 5GB or 10GB plan may be all you need and will cost a lot less than unlimited.",
       },
       {
         title: 'Do NOT cancel your old service before switching',
@@ -503,8 +497,7 @@ export const guidesBatch16: Guide[] = [
       },
       {
         title: 'Set up YouTube TV on your devices',
-        content:
-          "Sign up at tv.youtube.com using a Google account. Then download the YouTube TV app on your TV (most smart TVs, Roku, Fire TV, Apple TV, and Chromecast support it), phone, or tablet. Sign in with the same Google account. You can watch live TV immediately after sign-up. Use the guide (a channel listing like a traditional TV guide) to browse what is on right now, or search for specific shows.",
+        content: "Sign up at tv.youtube.com using a Google account. Then download the YouTube TV app on your TV (most smart TVs, Roku, Fire TV, Apple TV, and Chromecast support it), phone, or tablet. Sign in with the same Google account. You can watch live TV right away after sign-up. Use the guide (a channel listing like a traditional TV guide) to browse what is on right now, or search for specific shows.",
         tip: "Quick Tip: The YouTube TV app looks different from the regular YouTube app. Make sure you're opening YouTube TV specifically — it has a blue \"TV\" logo.",
       },
       {
@@ -548,8 +541,7 @@ export const guidesBatch16: Guide[] = [
       },
       {
         title: 'Understand what the other person sees',
-        content:
-          "When you share your location, the other person sees: a dot on a map showing where you are, updated in real time approximately every few minutes. They can see your battery percentage (so they know if your phone is about to die). They do NOT see your call history, messages, photos, or any other data — only your location. You can turn off location sharing at any time and the other person will see \"Location unavailable.\"",
+        content: "When you share your location, the other person sees: a dot on a map showing where you are, updated in real time about every few minutes. They can see your battery percentage (so they know if your phone is about to die). They do NOT see your call history, messages, photos, or any other data — only your location. You can turn off location sharing at any time and the other person will see \"Location unavailable.\"",
         tip: "Quick Tip: Some families use location sharing for practical reasons: coordinating meeting at a busy location, checking a family member arrived home after a drive in bad weather, or verifying a delivery person's arrival. It doesn't have to be about safety alone.",
       },
       {
@@ -709,7 +701,7 @@ export const guidesBatch16: Guide[] = [
     thumbnailEmoji: '',
     publishedAt: '2026-04-19',
     difficulty: 'Beginner',
-    body: `One of the most disturbing emerging scams uses artificial intelligence to clone a loved one's voice and make a fake emergency phone call. Using just a short clip of someone's voice — from a social media video, a YouTube video, or a voicemail — AI can generate a convincing imitation of that person speaking any words the scammer wants.\n\nThe typical scenario: you receive a call that sounds exactly like your grandchild, child, or close friend. They say they are in trouble — arrested, in a car accident, stranded abroad, in the hospital. They beg you not to tell anyone and to wire money immediately. The voice is convincing enough that many people send thousands of dollars before realizing the call was fake.\n\nThis is an evolution of the long-running "grandparent scam," now supercharged with AI voice technology. The FBI issued warnings in 2024 and 2025 about dramatic increases in these calls. Knowing what to do when you get one can save you from devastating financial loss.`,
+    body: `One of the most disturbing emerging scams uses artificial intelligence to clone a loved one's voice and make a fake emergency phone call. Using just a short clip of someone's voice — from a social media video, a YouTube video, or a voicemail — AI can generate a convincing imitation of that person speaking any words the scammer wants.\n\nThe typical scenario: you receive a call that sounds exactly like your grandchild, child, or close friend. They say they are in trouble — arrested, in a car accident, stranded abroad, in the hospital. They beg you not to tell anyone and to wire money right away. The voice is convincing enough that many people send thousands of dollars before realizing the call was fake.\n\nThis is an evolution of the long-running "grandparent scam," now supercharged with AI voice technology. The FBI issued warnings in 2024 and 2025 about dramatic increases in these calls. Knowing what to do when you get one can save you from devastating financial loss.`,
     steps: [
       {
         title: 'Recognize the warning signs during the call',
@@ -720,8 +712,7 @@ export const guidesBatch16: Guide[] = [
       },
       {
         title: 'Hang up and call the person back directly',
-        content:
-          "If you receive any call that sounds like a family member in distress asking for money or secrecy: hang up. Then immediately call that person on the number you have saved for them in your phone — not any number the caller provides. Text them, try another family member, or call the place they supposedly are (hospital, police station, embassy). In almost every case, you will quickly find out the person is safe and had no idea you were called.",
+        content: "If you receive any call that sounds like a family member in distress asking for money or secrecy: hang up. Then right away call that person on the number you have saved for them in your phone — not any number the caller provides. Text them, try another family member, or call the place they supposedly are (hospital, police station, embassy). In almost every case, you will quickly find out the person is safe and had no idea you were called.",
         tip: "Quick Tip: Set up a family code word with your close family members. If someone calls claiming to be in distress, ask for the code word. A real family member will know it. A scammer using AI won't.",
       },
       {
@@ -757,12 +748,11 @@ export const guidesBatch16: Guide[] = [
     thumbnailEmoji: '',
     publishedAt: '2026-04-19',
     difficulty: 'Beginner',
-    body: `Many older adults are paying $60-$100+ per month for a cell phone plan they may not fully use. If you spend most of your time at home on Wi-Fi, don't stream a lot of video on your phone, and primarily use your phone for calls, texts, and light internet browsing, you may be paying for a plan with far more data than you need.\n\nThere are several categories of savings to explore: senior-specific discounts from the major carriers, smaller "virtual" carriers (MVNOs) that use the same towers at a fraction of the cost, and government assistance programs for those who qualify. This guide covers all three.\n\nYou do not need a new phone to switch carriers — most unlocked phones work on any network, and many budget plans support all major phone brands.`,
+    body: `Many older adults are paying $60-$100+ per month for a cell phone plan they may not fully use. If you spend most of your time at home on Wi-Fi, don't stream a lot of video on your phone, and primarily use your phone for calls, texts, and light internet browsing, you may be paying for a plan with far more data than you need.\n\nThere are several categories of savings to explore: senior-specific discounts from the major carriers, smaller "virtual" carriers (MVNOs) that use the same towers at a fraction of the cost, and government help programs for those who qualify. This guide covers all three.\n\nYou do not need a new phone to switch carriers — most unlocked phones work on any network, and many budget plans support all major phone brands.`,
     steps: [
       {
         title: 'Check if you qualify for the Lifeline program',
-        content:
-          "The Lifeline program is a federal benefit that provides eligible low-income households with a monthly discount on phone or internet service — up to $9.25/month toward a phone plan, or more through enhanced state programs. You may qualify if you receive Medicaid, SNAP, SSI, Federal Public Housing Assistance, or Veterans Pension/Survivors Benefit. Apply at lifelinesupport.org or through participating carriers. Lifeline is administered by the FCC.",
+        content: "The Lifeline program is a federal benefit that provides eligible low-income households with a monthly discount on phone or internet service — up to $9.25/month toward a phone plan, or more through enhanced state programs. You may qualify if you receive Medicaid, SNAP, SSI, Federal Public Housing Help, or Veterans Pension/Survivors Benefit. Apply at lifelinesupport.org or through participating carriers. Lifeline is administered by the FCC.",
         tip: 'Quick Tip: Some states offer additional Lifeline benefits on top of the federal amount. Search your state name plus "Lifeline phone program" to find state-specific benefits.',
       },
       {
@@ -780,8 +770,7 @@ export const guidesBatch16: Guide[] = [
       },
       {
         title: 'Know how much data you actually use',
-        content:
-          "Before switching, check how much data you currently use. On iPhone: go to Settings → Cellular → scroll down to see data usage. On Android: go to Settings → Network & Internet → Data usage. If your monthly usage is consistently under 5GB, a 5GB or 10GB plan at $20-$35/month may be all you need. If you're paying for unlimited but using only 2GB, you're overpaying significantly. Unlimited plans make sense if you watch video, stream music, or use your phone as a hotspot frequently.",
+        content: "Before switching, check how much data you currently use. On iPhone: go to Settings → Cellular → scroll down to see data usage. On Android: go to Settings → Network & Internet → Data usage. If your monthly usage is consistently under 5GB, a 5GB or 10GB plan at $20-$35/month may be all you need. If you're paying for unlimited but using only 2GB, you're overpaying a lot. Unlimited plans make sense if you watch video, stream music, or use your phone as a hotspot often.",
       },
     ],
   },
@@ -803,7 +792,7 @@ export const guidesBatch16: Guide[] = [
         title: 'Open and navigate the Start menu',
         content:
           "Click the Start button (the Windows logo, now centered on the Taskbar) or press the Windows key on your keyboard. The Start menu opens with two sections: \"Pinned\" apps at the top (apps you've chosen to keep there for quick access) and \"Recommended\" at the bottom (recently opened files and apps that Windows suggests). Click any pinned app to open it. Click \"All apps\" in the upper-right corner of the Start menu to see a full alphabetical list of everything installed on your computer.",
-        tip: 'Quick Tip: To search for any program, file, or setting, start typing immediately after opening the Start menu. A search bar appears automatically and shows matching results.',
+        tip: 'Quick Tip: To search for any program, file, or setting, start typing right away after opening the Start menu. A search bar appears automatically and shows matching results.',
       },
       {
         title: 'Pin your most-used apps to the Start menu',
@@ -813,8 +802,7 @@ export const guidesBatch16: Guide[] = [
       },
       {
         title: 'Move the Start button back to the left',
-        content:
-          "If you prefer the traditional left-corner Start button: right-click any empty space on the Taskbar → \"Taskbar settings\" → scroll down to \"Taskbar behaviors\" → click to expand → find \"Taskbar alignment\" → change it from \"Center\" to \"Left.\" The Start button and all Taskbar icons immediately shift to the left side — just like Windows 10. You can change it back at any time.",
+        content: "If you prefer the traditional left-corner Start button: right-click any empty space on the Taskbar → \"Taskbar settings\" → scroll down to \"Taskbar behaviors\" → click to expand → find \"Taskbar alignment\" → change it from \"Center\" to \"Left.\" The Start button and all Taskbar icons right away shift to the left side — just like Windows 10. You can change it back at any time.",
       },
       {
         title: 'Use the right-click Start menu for power user options',

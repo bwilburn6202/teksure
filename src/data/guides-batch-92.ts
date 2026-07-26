@@ -88,7 +88,7 @@ This feature is available on Windows 11 version 22H2 and later. If you do not se
       },
       {
         title: `Start playing audio and read the captions`,
-        content: `Play a YouTube video, start a Zoom call, or open a podcast app. The caption bar will immediately start showing text as words are spoken. The text scrolls left to right and wraps to the next line as needed. Captions disappear when no audio is detected, and resume when audio starts again.`,
+        content: `Play a YouTube video, start a Zoom call, or open a podcast app. The caption bar will right away start showing text as words are spoken. The text scrolls left to right and wraps to the next line as needed. Captions disappear when no audio is detected, and resume when audio starts again.`,
       },
       {
         title: `Caption your own microphone`,
@@ -193,7 +193,7 @@ Assistive Access is not permanent — you can exit it at any time using the pass
       },
       {
         title: `Enter Assistive Access mode`,
-        content: `Tap "Enter Assistive Access" on the final setup screen. The iPhone will switch to the simplified interface immediately. The person using the phone will now see only the apps you selected, displayed in the large-button layout you chose. Everything else on the iPhone is hidden from view.`,
+        content: `Tap "Enter Assistive Access" on the final setup screen. The iPhone will switch to the simplified interface right away. The person using the phone will now see only the apps you selected, displayed in the large-button layout you chose. Everything else on the iPhone is hidden from view.`,
         tip: `Quick Tip: After entering Assistive Access, test it by using it yourself for a few minutes to make sure everything works the way you intended before handing the phone to the person who will use it.`,
       },
       {
@@ -348,7 +348,7 @@ Family Link works on Android phones and tablets, as well as Chromebooks when the
       },
       {
         title: `Remotely lock the device`,
-        content: `If you want to lock your child's phone immediately — for example, during dinner or after the screen time limit is used up — tap your child's name in Family Link, then tap "Lock device now." The phone will lock and your child will see a message saying the device has been locked by a parent. You can unlock it just as easily from the same screen when you are ready.`,
+        content: `If you want to lock your child's phone right away — for example, during dinner or after the screen time limit is used up — tap your child's name in Family Link, then tap "Lock device now." The phone will lock and your child will see a message saying the device has been locked by a parent. You can unlock it just as easily from the same screen when you are ready.`,
       },
     ],
   },
@@ -397,7 +397,7 @@ Amazon Kids+ includes thousands of books, popular apps like PBS Kids, Disney, an
       },
       {
         title: `Block in-app purchases and review content settings`,
-        content: `Go to Parental Controls and confirm that in-app purchasing is blocked for the child profile. While it is blocked by default, verifying this ensures no accidental charges. Also review the Content Filters section, where you can choose the age range of content shown — restricting to your child's actual age ensures they see appropriate material. You can add or remove specific apps from their profile at any time.`,
+        content: `Go to Parental Controls and confirm that in-app purchasing is blocked for the child profile. While it is blocked by default, verifying this makes sure no accidental charges. Also review the Content Filters section, where you can choose the age range of content shown — restricting to your child's actual age makes sure they see appropriate material. You can add or remove specific apps from their profile at any time.`,
         tip: `Quick Tip: Use the Amazon Parent Dashboard app on your own phone (available for iOS and Android) to manage everything remotely without picking up the kids' tablet.`,
       },
     ],
@@ -515,7 +515,7 @@ Grammarly has a free version that covers most common writing needs: catching spe
 
 The most common way students use Grammarly is through the browser extension, which works in Chrome, Firefox, Edge, and Safari. Once installed, Grammarly automatically appears whenever you type in a text box online — in Google Docs, email, Canvas, college application forms, discussion boards, and anywhere else you write on a webpage.
 
-Grammarly is not a replacement for careful reading and revision. It cannot tell you if your argument is logically correct, if your research supports your claims, or if your essay flows well from paragraph to paragraph. It also occasionally flags things that are actually fine — for example, sentence fragments used intentionally for emphasis. Use it as a helpful second pair of eyes, not as the final word.
+Grammarly is not a replacement for careful reading and revision. It cannot tell you if your argument is logically correct, if your research supports your claims, or if your essay flows well from paragraph to paragraph. It also sometimes flags things that are actually fine — for example, sentence fragments used intentionally for emphasis. Use it as a helpful second pair of eyes, not as the final word.
 
 Important for academic integrity: Grammarly's free grammar checking is generally considered acceptable at most schools, similar to using spell check. However, the AI Writing features in Grammarly Premium (which can generate or rewrite text) may violate your school's academic honesty policy. Always check with your teacher or professor if you are unsure.`,
     steps: [
@@ -540,7 +540,7 @@ Important for academic integrity: Grammarly's free grammar checking is generally
       {
         title: `Learn from your writing patterns`,
         content: `Grammarly keeps track of your most common writing mistakes over time. Log in to Grammarly.com and go to your account dashboard to see a weekly writing report showing your most frequent errors. This is more valuable than just fixing individual mistakes — understanding your patterns helps you avoid them in the first place. For example, if you consistently misuse commas, that is a skill worth focusing on.`,
-        warning: `Do not accept every suggestion Grammarly makes without reading it. Grammarly can occasionally misunderstand context — for example, suggesting changes to dialogue, poetry, or intentional informal writing. Always read the suggestion and decide for yourself whether it improves your writing.`,
+        warning: `Do not accept every suggestion Grammarly makes without reading it. Grammarly can sometimes misunderstand context — for example, suggesting changes to dialogue, poetry, or intentional informal writing. Always read the suggestion and decide for yourself whether it improves your writing.`,
       },
     ],
   },
@@ -564,7 +564,7 @@ One of Zotero's most useful features is its ability to read PDFs and detect the 
 
 Zotero also syncs your library across devices with a free account (up to 300 MB of file storage, with paid storage options for larger libraries). This means you can save sources on your laptop and access them later on a library computer.
 
-For long research papers or projects with dozens of sources, Zotero saves hours of formatting work and reduces citation errors significantly.`,
+For long research papers or projects with dozens of sources, Zotero saves hours of formatting work and reduces citation errors a lot.`,
     steps: [
       {
         title: `Download and install Zotero and the browser connector`,
@@ -592,7 +592,7 @@ For long research papers or projects with dozens of sources, Zotero saves hours 
       {
         title: `Generate your bibliography`,
         content: `When your paper is finished, place your cursor at the end of the document where the bibliography or works cited page should go. Click "Add/Edit Bibliography" in the Zotero toolbar. Zotero will insert a complete, properly formatted list of every source you cited in the document. If you add or remove citations later, the bibliography updates automatically. This eliminates the most common citation mistakes caused by manually formatting bibliographies.`,
-        tip: `Quick Tip: After generating your bibliography, always read through it once. Zotero is accurate most of the time, but occasionally a source will have incomplete information if the original webpage was missing certain details. It is faster to fix a few entries than to format an entire bibliography from scratch.`,
+        tip: `Quick Tip: After generating your bibliography, always read through it once. Zotero is accurate most of the time, but sometimes a source will have incomplete information if the original webpage was missing certain details. It is faster to fix a few entries than to format an entire bibliography from scratch.`,
       },
     ],
   },
@@ -629,12 +629,12 @@ If your school uses both Teams and another system like Canvas or Schoology, Team
       {
         title: `View and submit assignments`,
         content: `Click the "Assignments" tab at the top of your class. You will see a list of all assigned work, including due dates and whether each assignment is complete. Click any assignment to see the full instructions and any attached files. When you are ready to turn it in, attach your completed file or type your response in the text box (depending on how your teacher set it up), then click the "Turn in" button.`,
-        warning: `Clicking "Turn in" submits your work immediately. Make sure your file is fully complete and saved before turning it in. Some teachers do not allow resubmissions after the due date.`,
+        warning: `Clicking "Turn in" submits your work right away. Make sure your file is fully complete and saved before turning it in. Some teachers do not allow resubmissions after the due date.`,
       },
       {
         title: `Join a class video meeting`,
         content: `When your teacher starts a class video call, you will see a notification in Teams and a "Join" button in the class's Posts channel. Click Join to enter the meeting. Before entering, you will see a preview screen where you can turn your camera and microphone on or off. During the meeting, use the "Raise Hand" button (a hand icon in the meeting toolbar) to let the teacher know you want to speak without interrupting.`,
-        tip: `Quick Tip: If your internet connection is slow, turning off your camera (while keeping your microphone on) can significantly improve call quality for everyone in the meeting.`,
+        tip: `Quick Tip: If your internet connection is slow, turning off your camera (while keeping your microphone on) can a lot improve call quality for everyone in the meeting.`,
       },
       {
         title: `Check your grades and feedback`,
@@ -643,7 +643,7 @@ If your school uses both Teams and another system like Canvas or Schoology, Team
       {
         title: `Message your teacher or classmates`,
         content: `To send a private message to your teacher, click the chat icon (speech bubble) on the left sidebar in Teams, then click "New Chat" and type your teacher's name. Type your message and press Enter to send. For class-wide discussion questions, post in the General channel of your class so all classmates and the teacher can see and respond.`,
-        tip: `Quick Tip: When messaging a teacher, always include your full name, class name, and a clear description of your question. Teachers often teach many classes and may not immediately recognize your account name.`,
+        tip: `Quick Tip: When messaging a teacher, always include your full name, class name, and a clear description of your question. Teachers often teach many classes and may not right away recognize your account name.`,
       },
     ],
   },
@@ -684,7 +684,7 @@ Canvas also has a built-in inbox for messaging your instructor directly, a calen
       {
         title: `Submit an assignment`,
         content: `Click "Assignments" in the course sidebar to see all assigned work and their due dates. Click an assignment to see the full instructions. Look for the "Submit Assignment" button in the upper right area of the assignment page. Depending on the assignment type, you will either upload a file from your computer, type your response in a text box, or paste a URL. After submitting, you will see a confirmation message and a receipt with a timestamp.`,
-        warning: `Once you submit an assignment, some professors do not allow resubmissions. Read the assignment instructions carefully to see if resubmissions are allowed. If you submit the wrong file, message your professor immediately through the Canvas Inbox.`,
+        warning: `Once you submit an assignment, some professors do not allow resubmissions. Read the assignment instructions carefully to see if resubmissions are allowed. If you submit the wrong file, message your professor right away through the Canvas Inbox.`,
       },
       {
         title: `Check your grades and instructor feedback`,
@@ -740,7 +740,7 @@ Wolfram Alpha can also answer practical questions, not just academic ones. You c
       {
         title: `Convert units and calculate statistics`,
         content: `For unit conversions, type something like "45 miles per hour in meters per second" or "72 degrees Fahrenheit in Celsius." For statistics, type a list of numbers like "mean, median, standard deviation of 4, 7, 13, 16, 21" and Wolfram Alpha will calculate all the statistical values at once. These features are particularly useful for science labs and data-based assignments.`,
-        warning: `Wolfram Alpha occasionally interprets ambiguous input differently than you intended. If the answer does not look right, re-read how it interpreted your question (shown at the top of the results) and rephrase if needed. Adding more context — like "solve for x" or "graph in polar coordinates" — helps it understand what you are asking.`,
+        warning: `Wolfram Alpha sometimes interprets ambiguous input differently than you intended. If the answer does not look right, re-read how it interpreted your question (shown at the top of the results) and rephrase if needed. Adding more context — like "solve for x" or "graph in polar coordinates" — helps it understand what you are asking.`,
       },
     ],
   },
@@ -812,12 +812,12 @@ One common question: should you use Bixby or Google Assistant? Both are availabl
     steps: [
       {
         title: `Wake up Bixby`,
-        content: `Say "Hey Bixby" out loud, or press and hold the Side key (the button on the right side of your phone) for one to two seconds. Bixby will show a colored icon at the bottom of your screen and play a chime to indicate it is listening. Speak your command clearly and naturally — you do not need to use specific keywords.`,
+        content: `Say "Hey Bixby" out loud, or press and hold the Side key (the button on the right side of your phone) for one to two seconds. Bixby will show a colored icon at the bottom of your screen and play a chime to show it is listening. Speak your command clearly and naturally — you do not need to use specific keywords.`,
         tip: `Quick Tip: If "Hey Bixby" wake word is not working, go to Settings → Advanced Features → Bixby → Voice Wake-Up and make sure it is turned on. You may need to train Bixby to recognize your voice by reading a few sample phrases.`,
       },
       {
         title: `Try common voice commands`,
-        content: `Start with simple commands to get comfortable with Bixby. Try: "Hey Bixby, set an alarm for 7 AM tomorrow," "Hey Bixby, turn on Wi-Fi," "Hey Bixby, call Mom," "Hey Bixby, take a selfie," or "Hey Bixby, open Samsung Notes." Bixby will execute each of these immediately. For device settings, Bixby can toggle virtually any setting — try "Hey Bixby, turn on Do Not Disturb" or "Hey Bixby, increase brightness."`,
+        content: `Start with simple commands to get comfortable with Bixby. Try: "Hey Bixby, set an alarm for 7 AM tomorrow," "Hey Bixby, turn on Wi-Fi," "Hey Bixby, call Mom," "Hey Bixby, take a selfie," or "Hey Bixby, open Samsung Notes." Bixby will execute each of these right away. For device settings, Bixby can toggle virtually any setting — try "Hey Bixby, turn on Do Not Disturb" or "Hey Bixby, increase brightness."`,
       },
       {
         title: `Set up a Bixby Routine`,
@@ -867,7 +867,7 @@ To get the full experience, you should use a Samsung Galaxy phone with the Galax
       {
         title: `Customize your watch face`,
         content: `On the watch, press and hold the watch face to enter watch face editing mode. Swipe left and right to browse available watch faces. Tap one to apply it. For more options, open the Galaxy Wearable app on your phone and tap "Watch Faces" — you can browse hundreds of faces and download new ones from the Galaxy Store. Many watch faces show health stats like heart rate, steps, and battery level directly on the face.`,
-        tip: `Quick Tip: Choose a watch face that shows the information you care most about right at a glance — steps, heart rate, and next calendar event are popular choices that save you from navigating into apps frequently.`,
+        tip: `Quick Tip: Choose a watch face that shows the information you care most about right at a glance — steps, heart rate, and next calendar event are popular choices that save you from navigating into apps often.`,
       },
       {
         title: `Set up health tracking`,
@@ -968,21 +968,21 @@ These features have collectively saved Pixel users thousands of hours by filteri
       },
       {
         title: `Read the live transcript`,
-        content: `While Google Assistant handles the caller, a live transcript appears on your screen in real time showing exactly what the caller is saying. You can read along and decide immediately whether this is a call you want to take. The transcript is accurate enough for most spoken responses. You will see the caller's name if they say it, or you will see a robocall script if it is an automated scammer.`,
+        content: `While Google Assistant handles the caller, a live transcript appears on your screen in real time showing exactly what the caller is saying. You can read along and decide right away whether this is a call you want to take. The transcript is accurate enough for most spoken responses. You will see the caller's name if they say it, or you will see a robocall script if it is an automated scammer.`,
       },
       {
         title: `Accept, decline, or report`,
         content: `At the bottom of the Call Screen transcript, you have several buttons: "Accept" to join the call and speak to the person, "Decline" to hang up silently without the caller knowing you screened them, "Decline and report spam" to hang up and add the number to Google's spam database, and quick reply options like "I'll call you back" that play a spoken message to the caller. Tap whichever action fits the situation.`,
-        warning: `When you accept a screened call, you join mid-call and the caller will hear you immediately. Say hello right away — there is no additional hold period after you tap Accept.`,
+        warning: `When you accept a screened call, you join mid-call and the caller will hear you right away. Say hello right away — there is no additional hold period after you tap Accept.`,
       },
       {
         title: `Set up automatic screening for suspected spam`,
-        content: `You can configure Call Screen to automatically screen calls marked as "Spam Likely" without you having to tap anything. Open the Phone app, tap the three-dot menu in the upper right, and go to Settings → Spam and Call Screen → Call Screen. Turn on "Automatically screen calls from suspected spam numbers." These calls will be screened automatically, and you will get a notification showing the transcript only if the caller says something — robocalls that hang up immediately will be silently declined.`,
+        content: `You can configure Call Screen to automatically screen calls marked as "Spam Likely" without you having to tap anything. Open the Phone app, tap the three-dot menu in the upper right, and go to Settings → Spam and Call Screen → Call Screen. Turn on "Automatically screen calls from suspected spam numbers." These calls will be screened automatically, and you will get a notification showing the transcript only if the caller says something — robocalls that hang up right away will be silently declined.`,
         tip: `Quick Tip: You can also enable automatic screening for calls from numbers not in your contacts. This is a stronger filter that screens any number you have not saved, not just flagged spam numbers. It is useful if you get many unknown calls.`,
       },
       {
         title: `Use Hold For Me when you call a business`,
-        content: `When you call a customer service line and hear "Your wait time is approximately 20 minutes," tap the "Hold for Me" button that appears in the call screen on your Pixel. Your phone will listen to the hold music. You can put the phone down and do other things. When a human agent comes on the line, your phone vibrates and plays a chime, and you see "An agent may be available" on screen. Tap "I'm here" and the agent will hear you respond.`,
+        content: `When you call a customer service line and hear "Your wait time is about 20 minutes," tap the "Hold for Me" button that appears in the call screen on your Pixel. Your phone will listen to the hold music. You can put the phone down and do other things. When a human agent comes on the line, your phone vibrates and plays a chime, and you see "An agent may be available" on screen. Tap "I'm here" and the agent will hear you respond.`,
       },
       {
         title: `Review your Call Screen history`,

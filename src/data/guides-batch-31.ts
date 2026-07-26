@@ -205,7 +205,7 @@ export const guidesBatch31: Guide[] = [
       },
       {
         title: 'Turn off Background App Refresh for unused apps',
-        content: 'Go to Settings → General → Background App Refresh. Turn off the feature for apps like games, shopping apps, and social media you do not check frequently.',
+        content: 'Go to Settings → General → Background App Refresh. Turn off the feature for apps like games, shopping apps, and social media you do not check often.',
       },
       {
         title: 'Check which apps are draining battery',
@@ -369,7 +369,7 @@ export const guidesBatch31: Guide[] = [
     slug: 'uber-for-seniors',
     title: 'How to Use Uber Safely: A Guide for Older Adults',
     excerpt: 'Uber is a safe, reliable way to get a ride from your phone. Learn how to request a trip, verify your driver, and stay safe every time.',
-    body: `Uber is a service that connects you with nearby drivers through an app on your phone. You enter where you want to go, the app finds a driver, and they pick you up — usually within 5 to 15 minutes. You pay through the app, so there is no need to handle cash or a credit card.\n\nFor older adults who no longer drive or need transportation to appointments, Uber can be a genuinely helpful service. It is available in most US cities and suburbs, runs 24 hours a day, and costs much less than traditional taxi service.\n\nBefore getting in, always verify the driver: check that the car's make, model, and license plate match what the app shows you. You can also see the driver's photo and rating. The app shows you the driver's name — confirm it before getting in by asking "What's my name?" and waiting for them to say yours.\n\nIf you are not comfortable with the technology, a family member can set up the app on your phone and even send you rides remotely using Uber's request-for-others feature. They can watch your trip in real time and see when you arrive safely.\n\nUber also has UberAssist, a service option where drivers are trained to help passengers with mobility needs or those who need extra assistance.`,
+    body: `Uber is a service that connects you with nearby drivers through an app on your phone. You enter where you want to go, the app finds a driver, and they pick you up — usually within 5 to 15 minutes. You pay through the app, so there is no need to handle cash or a credit card.\n\nFor older adults who no longer drive or need transportation to appointments, Uber can be a genuinely helpful service. It is available in most US cities and suburbs, runs 24 hours a day, and costs much less than traditional taxi service.\n\nBefore getting in, always verify the driver: check that the car's make, model, and license plate match what the app shows you. You can also see the driver's photo and rating. The app shows you the driver's name — confirm it before getting in by asking "What's my name?" and waiting for them to say yours.\n\nIf you are not comfortable with the technology, a family member can set up the app on your phone and even send you rides remotely using Uber's request-for-others feature. They can watch your trip in real time and see when you arrive safely.\n\nUber also has UberAssist, a service option where drivers are trained to help passengers with mobility needs or those who need extra help.`,
     category: 'app-guides',
     tags: ['uber', 'rideshare', 'transportation', 'seniors', 'ride app'],
     readTime: '6 min',
@@ -410,7 +410,7 @@ export const guidesBatch31: Guide[] = [
     slug: 'aaa-app-guide',
     title: 'How to Use the AAA App for Roadside Assistance',
     excerpt: 'AAA members can request a tow truck, battery jump, or lockout service right from their phone — no phone call required.',
-    body: `AAA (American Automobile Association) is a membership organization best known for roadside assistance. If your car breaks down, has a flat tire, needs a battery jump, or you lock your keys inside, AAA sends help.\n\nThe AAA mobile app makes requesting help much faster and more accurate than calling. Instead of describing your location over the phone, the app uses your GPS to share your exact position with the tow truck driver. You can also see your driver's estimated arrival time and track them on a map.\n\nThe app also gives you access to your digital AAA membership card, travel discounts, gas station prices, and AAA's roadside network of approved repair shops.\n\nAAA memberships start around $60 to $80 per year and include a set number of roadside service calls. Classic membership typically covers four service calls per year. Higher tiers include longer towing distance and additional benefits.\n\nEven if you have a newer car with roadside assistance included, having AAA is useful as a backup — car manufacturer programs often expire or have coverage gaps. Many insurance policies also offer roadside assistance add-ons, but AAA is generally considered the fastest and most reliable network.\n\nFor older adults who drive, having the AAA app set up on your phone before you need it is strongly recommended. Searching for the app while stranded on the side of the road is stressful and avoidable.`,
+    body: `AAA (American Automobile Association) is a membership organization best known for roadside help. If your car breaks down, has a flat tire, needs a battery jump, or you lock your keys inside, AAA sends help.\n\nThe AAA mobile app makes requesting help much faster and more accurate than calling. Instead of describing your location over the phone, the app uses your GPS to share your exact position with the tow truck driver. You can also see your driver's estimated arrival time and track them on a map.\n\nThe app also gives you access to your digital AAA membership card, travel discounts, gas station prices, and AAA's roadside network of approved repair shops.\n\nAAA memberships start around $60 to $80 per year and include a set number of roadside service calls. Classic membership typically covers four service calls per year. Higher tiers include longer towing distance and additional benefits.\n\nEven if you have a newer car with roadside help included, having AAA is useful as a backup — car manufacturer programs often expire or have coverage gaps. Many insurance policies also offer roadside help add-ons, but AAA is generally considered the fastest and most reliable network.\n\nFor older adults who drive, having the AAA app set up on your phone before you need it is strongly recommended. Searching for the app while stranded on the side of the road is stressful and avoidable.`,
     category: 'app-guides',
     tags: ['aaa', 'roadside assistance', 'tow truck', 'car breakdown', 'membership'],
     readTime: '5 min',
@@ -420,7 +420,7 @@ export const guidesBatch31: Guide[] = [
     steps: [
       {
         title: 'Download the AAA app',
-        content: 'Search "AAA" in the App Store or Google Play. The official app is by "AAA — Roadside Assistance." Download and install it.',
+        content: 'Search "AAA" in the App Store or Google Play. The official app is by "AAA — Roadside Help." Download and install it.',
       },
       {
         title: 'Sign in with your AAA membership',
@@ -433,7 +433,7 @@ export const guidesBatch31: Guide[] = [
       },
       {
         title: 'Know how to request roadside help',
-        content: 'If you break down, open the app and tap "Roadside Assistance." The app reads your GPS location automatically. Select the type of help needed: tow, battery, flat tire, lockout, or out of fuel.',
+        content: 'If you break down, open the app and tap "Roadside Help." The app reads your GPS location automatically. Select the type of help needed: tow, battery, flat tire, lockout, or out of fuel.',
       },
       {
         title: 'Track your service vehicle',
@@ -447,7 +447,7 @@ export const guidesBatch31: Guide[] = [
     slug: 'senior-travel-discounts-guide',
     title: 'How to Find and Use Senior Travel Discounts',
     excerpt: 'Travelers age 55 and older can save significantly on flights, hotels, rental cars, and cruises — if you know where to look and when to book.',
-    body: `Senior travel discounts can save you hundreds of dollars on trips, but they are not always advertised prominently. You often need to ask for them or know where to look.\n\n**Airlines**: Many airlines offer senior fares, though they have become less common. Airlines like American, Delta, and United sometimes offer senior discounts on select domestic routes. It is worth calling the airline directly and asking about senior fares, since these are not always shown on booking websites. AARP Travel also partners with airlines and car rental companies for member discounts.\n\n**Hotels**: Most major chains offer senior discounts of 10% to 20% for AARP members. Marriott, Hilton, Best Western, and IHG all participate. Always ask at check-in or during booking whether a senior or AARP rate is available — it may be lower than the rate you found online.\n\n**Rental cars**: AARP members receive discounts at Avis, Budget, Hertz, and Enterprise. Book through the AARP Travel Center for guaranteed rates. If you are 65 or older, Enterprise and National also sometimes offer specific senior pricing.\n\n**Cruises**: Cruise lines frequently offer seniors age 55+ discounts of $100 to $500 off, especially during shoulder seasons (spring and fall). Booking through a travel agent who specializes in cruises can uncover better deals than booking directly.\n\n**National Parks**: Anyone 62 or older can purchase an America the Beautiful Senior Pass for $80 (lifetime) or $20 (annual), which gives free access to over 2,000 federal recreation areas including all national parks.`,
+    body: `Senior travel discounts can save you hundreds of dollars on trips, but they are not always advertised prominently. You often need to ask for them or know where to look.\n\n**Airlines**: Many airlines offer senior fares, though they have become less common. Airlines like American, Delta, and United sometimes offer senior discounts on select domestic routes. It is worth calling the airline directly and asking about senior fares, since these are not always shown on booking websites. AARP Travel also partners with airlines and car rental companies for member discounts.\n\n**Hotels**: Most major chains offer senior discounts of 10% to 20% for AARP members. Marriott, Hilton, Best Western, and IHG all participate. Always ask at check-in or during booking whether a senior or AARP rate is available — it may be lower than the rate you found online.\n\n**Rental cars**: AARP members receive discounts at Avis, Budget, Hertz, and Enterprise. Book through the AARP Travel Center for guaranteed rates. If you are 65 or older, Enterprise and National also sometimes offer specific senior pricing.\n\n**Cruises**: Cruise lines often offer seniors age 55+ discounts of $100 to $500 off, especially during shoulder seasons (spring and fall). Booking through a travel agent who specializes in cruises can uncover better deals than booking directly.\n\n**National Parks**: Anyone 62 or older can purchase an America the Beautiful Senior Pass for $80 (lifetime) or $20 (annual), which gives free access to over 2,000 federal recreation areas including all national parks.`,
     category: 'life-transitions',
     tags: ['senior discounts', 'travel', 'aarp', 'national parks', 'savings'],
     readTime: '6 min',
@@ -581,7 +581,7 @@ export const guidesBatch31: Guide[] = [
       },
       {
         title: 'Record transactions as you spend',
-        content: 'Every time you spend money, tap "Add Transaction," choose the envelope it comes from (e.g., Groceries), and enter the amount. The envelope balance decreases immediately.',
+        content: 'Every time you spend money, tap "Add Transaction," choose the envelope it comes from (e.g., Groceries), and enter the amount. The envelope balance decreases right away.',
       },
       {
         title: 'Check your envelopes before spending',
@@ -724,7 +724,7 @@ export const guidesBatch31: Guide[] = [
       },
       {
         title: 'Choose a background',
-        content: 'Zoom shows several built-in options including solid colors, office scenes, and nature photos. Click or tap one to apply it immediately.',
+        content: 'Zoom shows several built-in options including solid colors, office scenes, and nature photos. Click or tap one to apply it right away.',
       },
       {
         title: 'Upload your own photo (optional)',

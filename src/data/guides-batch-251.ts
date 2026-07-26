@@ -144,7 +144,7 @@ export const guidesBatch251: Guide[] = [
       },
       {
         title: "Confirm the impact on Social Security and other benefits",
-        content: "Federal law specifically exempts the Foster Grandparent stipend from being counted as income for SSI, SNAP, Medicaid, public housing, LIHEAP energy assistance, and similar means-tested programs. It also does not affect your Social Security retirement benefit. However, if a state-funded program has its own income rules, ask your sponsor for a copy of the official AmeriCorps Seniors stipend exemption letter (often called the IM-58 letter) to share with the agency. Most state offices recognize this immediately."
+        content: "Federal law specifically exempts the Foster Grandparent stipend from being counted as income for SSI, SNAP, Medicaid, public housing, LIHEAP energy help, and similar means-tested programs. It also does not affect your Social Security retirement benefit. However, if a state-funded program has its own income rules, ask your sponsor for a copy of the official AmeriCorps Seniors stipend exemption letter (often called the IM-58 letter) to share with the agency. Most state offices recognize this right away."
       },
       {
         title: "Keep the program income limit in mind for renewal",
@@ -222,7 +222,7 @@ export const guidesBatch251: Guide[] = [
       },
       {
         title: "Try a popular RSVP placement to get started",
-        content: "If you want to start with something low-commitment, ask about these common RSVP roles. AARP Tax-Aide: prepare free tax returns for older and lower-income community members from February through April (training provided). Meals on Wheels: deliver meals to homebound neighbors one or two days a week. Senior Medicare Patrol: help older adults spot Medicare fraud and review claims. SHIP counseling (State Health Insurance Assistance Program): help Medicare beneficiaries pick the right plan during open enrollment. Each role has structured training and a clear weekly time commitment."
+        content: "If you want to start with something low-commitment, ask about these common RSVP roles. AARP Tax-Aide: prepare free tax returns for older and lower-income community members from February through April (training provided). Meals on Wheels: deliver meals to homebound neighbors one or two days a week. Senior Medicare Patrol: help older adults spot Medicare fraud and review claims. SHIP counseling (State Health Insurance Help Program): help Medicare beneficiaries pick the right plan during open enrollment. Each role has structured training and a clear weekly time commitment."
       },
       {
         title: "Track your hours and stay engaged",

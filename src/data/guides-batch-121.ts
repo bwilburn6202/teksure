@@ -101,7 +101,7 @@ What FDIC does NOT cover: investment accounts (stocks, bonds, mutual funds), cry
       },
       {
         title: 'Understand what happens if a bank fails',
-        content: 'The FDIC steps in immediately. In most cases, another bank takes over and you can access your money the next business day as if nothing happened. In rare cases, the FDIC mails you a check within a few days for the full insured amount.',
+        content: 'The FDIC steps in right away. In most cases, another bank takes over and you can access your money the next business day as if nothing happened. In rare cases, the FDIC mails you a check within a few days for the full insured amount.',
       },
     ],
   },
@@ -245,7 +245,7 @@ Review your auto-pay transactions once a month. Just because it is automatic doe
       {
         title: 'Save a confirmation and verify the first payment',
         content: 'Write down the setup date, amount, and which account it pulls from. When the first scheduled payment arrives (check your bank statement), confirm it went through for the correct amount.',
-        warning: 'If you ever change bank accounts, update your auto-pay settings immediately at every billing company. Payments sent to a closed account can result in missed payments and late fees.',
+        warning: 'If you ever change bank accounts, update your auto-pay settings right away at every billing company. Payments sent to a closed account can result in missed payments and late fees.',
       },
       {
         title: 'Review auto-pay every 3 months',
@@ -336,7 +336,7 @@ When you need to apply for new credit (a car loan, a mortgage, a new credit card
       },
       {
         title: 'Freeze at TransUnion',
-        content: 'Go to transunion.com/credit-freeze. Click "Add a Freeze." Create a free TransUnion account. Follow the steps to freeze your report. TransUnion provides an online PIN immediately.',
+        content: 'Go to transunion.com/credit-freeze. Click "Add a Freeze." Create a free TransUnion account. Follow the steps to freeze your report. TransUnion provides an online PIN right away.',
       },
       {
         title: 'Confirm all three are frozen',
@@ -372,7 +372,7 @@ Here is what you will find on a typical statement:
 
 When reviewing your statement, you are looking for three things: transactions you do not recognize, amounts that are different from what you expected, and any fees you were not aware of.
 
-If you find a transaction you do not recognize, do not assume the worst immediately. Sometimes a familiar merchant shows up under a different name (a gas station might show as the parent company name). Search the amount and date in your memory first. If you still do not recognize it after 24 hours, contact your bank.
+If you find a transaction you do not recognize, do not assume the worst right away. Sometimes a familiar merchant shows up under a different name (a gas station might show as the parent company name). Search the amount and date in your memory first. If you still do not recognize it after 24 hours, contact your bank.
 
 (Source: FDIC, fdic.gov/resources/consumers/consumer-news)`,
     steps: [
@@ -469,7 +469,7 @@ Keep records of every communication with your bank: the date you called, the nam
 
 With alerts turned on, you get a text message within seconds any time: money is deposited into your account, a debit card purchase is made, your balance drops below a set amount, a large transaction occurs (over a dollar amount you choose), or a bill payment goes out.
 
-If you receive an alert for a transaction you didn't make, you know immediately — not a month later when your statement arrives. Quick reporting dramatically limits how much you could lose to fraud.
+If you receive an alert for a transaction you didn't make, you know right away — not a month later when your statement arrives. Quick reporting dramatically limits how much you could lose to fraud.
 
 Most major banks let you customize alerts in detail. You can choose to be notified by text, email, or push notification (a notification through the bank's app). You can set thresholds — for example, only alert me when a transaction is over $50, or alert me any time my balance drops below $200.
 
@@ -775,7 +775,7 @@ The full credit report (which is different from the score) shows every account y
       },
       {
         title: 'Review your credit report for errors',
-        content: 'Once you have your report, scan each section: personal information, accounts (credit cards, loans, mortgages), and negative marks (late payments, collections). Confirm that every account listed is one you recognize. If you see accounts you did not open, that may indicate identity theft.',
+        content: 'Once you have your report, scan each section: personal information, accounts (credit cards, loans, mortgages), and negative marks (late payments, collections). Confirm that every account listed is one you recognize. If you see accounts you did not open, that may show identity theft.',
         tip: 'Quick Tip: Common errors include payments incorrectly marked late, accounts that were paid off but still show a balance, and old negative items that should have expired (most negative items fall off after 7 years).',
       },
       {
@@ -798,7 +798,7 @@ The full credit report (which is different from the score) shows every account y
     difficulty: 'Beginner',
     body: `A savings account is a bank account designed for money you want to keep safe and earn interest on, rather than spending day to day. Unlike your checking account, a savings account typically has limits on how many withdrawals you can make per month, but it earns interest — meaning the bank pays you a small percentage of your balance each month for keeping money there.
 
-Online banks (banks that operate without physical branches) often offer significantly higher interest rates than traditional brick-and-mortar banks. While a traditional bank might pay 0.01% to 0.10% per year, high-yield savings accounts at online banks may pay 4% to 5% annually. On $10,000, that difference is between $10 and $500 per year in interest.
+Online banks (banks that operate without physical branches) often offer a lot higher interest rates than traditional brick-and-mortar banks. While a traditional bank might pay 0.01% to 0.10% per year, high-yield savings accounts at online banks may pay 4% to 5% annually. On $10,000, that difference is between $10 and $500 per year in interest.
 
 Some well-known and FDIC-insured online banks offering high-yield savings include: Ally Bank (ally.com), Marcus by Goldman Sachs (marcus.com), and Discover Bank (discover.com/online-banking/savings). All are legitimate, FDIC-insured institutions. Before opening at any online bank, verify the FDIC insurance at bankfind.fdic.gov.
 

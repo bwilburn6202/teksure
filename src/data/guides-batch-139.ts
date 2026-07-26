@@ -30,7 +30,7 @@ Questions to ask:
 
 If you got your phone "free" or on a payment plan, this is where you pay for it — usually $20–$45 per month for 24–36 months. Once the payment plan ends, this charge disappears.
 
-Check: How many months are left? Some carriers let you trade in early and restart a new plan. That is rarely financially beneficial — you are just extending how long you pay.
+Check: How many months are left? Some carriers let you trade in early and restart a new plan. That is rarely financially helpful — you are just extending how long you pay.
 
 **Section 3: Insurance / device protection**
 
@@ -56,7 +56,7 @@ Action: Go through every line in this section. For each one you do not recognize
 
 These are not optional — they are real government-mandated charges. They include:
 - Federal Universal Service Fund (funds phone service in rural areas and schools)
-- State and local taxes (varies significantly by state)
+- State and local taxes (varies a lot by state)
 - 911 fee (usually $0.50–$1.50 per month)
 - Regulatory cost recovery fees
 
@@ -77,7 +77,7 @@ These are legal but controversial. They are the carrier's way of advertising a l
 
 2. Check your employer or organization for group discounts. AARP, AAA, Costco members, teachers, nurses, and many other groups have negotiated corporate discount rates.
 
-3. Consider switching carriers. Consumer Cellular, Mint Mobile, and Visible (owned by Verizon) use the same towers as major carriers but at significantly lower prices. You bring your own phone and keep your number.
+3. Consider switching carriers. Consumer Cellular, Mint Mobile, and Visible (owned by Verizon) use the same towers as major carriers but at a lot lower prices. You bring your own phone and keep your number.
 
 4. Audit your data usage. On iPhone: Settings → Cellular → scroll down to see how much data each app used. On Android: Settings → Network → Data Usage. If you consistently use under 3 GB per month, a lower-data plan may cut $20–$40 off your bill.
 
@@ -271,7 +271,7 @@ If using an iPhone, you can also ask Siri on another Apple device: "Find my iPho
 
 **Step 3: Lock the phone remotely**
 
-If you cannot find it within a few minutes, lock it immediately.
+If you cannot find it within a few minutes, lock it right away.
 
 On iPhone (via icloud.com/find): Select your phone → click "Mark as Lost." This:
 - Locks the phone with a passcode
@@ -431,7 +431,7 @@ A larger 15.6-inch wall-mounted or standing smart display. Excellent as a kitche
 | Amazon Echo Show 8 | 8" | ~$150 | Amazon, Best Buy |
 | Amazon Echo Show 15 | 15.6" | ~$250 | Amazon |
 
-Prices drop significantly during Amazon Prime Day (July) and Black Friday (late November). If you are buying as a gift, those are the best times to purchase.`,
+Prices drop a lot during Amazon Prime Day (July) and Black Friday (late November). If you are buying as a gift, those are the best times to purchase.`,
     steps: [
       {
         title: 'Choose a frame based on where it will sit',

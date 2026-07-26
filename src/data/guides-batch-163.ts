@@ -292,7 +292,7 @@ Alternatively, in Settings → General → iPhone Storage, scroll down and tap *
 
 **Method 4: Delete old photos and empty the Recently Deleted album**
 
-When you delete a photo in the Photos app, it does not disappear immediately. It moves to an album called "Recently Deleted" and stays there for 30 days before being permanently removed. This means deleting photos does not free up space until you also empty that album.
+When you delete a photo in the Photos app, it does not disappear right away. It moves to an album called "Recently Deleted" and stays there for 30 days before being permanently removed. This means deleting photos does not free up space until you also empty that album.
 
 **To delete photos:**
 1. Open the **Photos** app.

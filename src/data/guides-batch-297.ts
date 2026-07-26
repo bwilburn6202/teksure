@@ -213,7 +213,7 @@ export const guidesBatch297: Guide[] = [
       },
       {
         title: "Bring a trusted family member or friend to every sale conversation",
-        content: "Never meet a buyer alone in the home, especially for high value items. Ask an adult child, neighbor, or close friend to sit through the conversation. The simple presence of a second person changes the dynamic and stops most pressure tactics. If the buyer asks to speak to the senior alone or expresses irritation at the presence of a witness, end the conversation immediately. That request is a clear red flag.",
+        content: "Never meet a buyer alone in the home, especially for high value items. Ask an adult child, neighbor, or close friend to sit through the conversation. The simple presence of a second person changes the dynamic and stops most pressure tactics. If the buyer asks to speak to the senior alone or expresses irritation at the presence of a witness, end the conversation right away. That request is a clear red flag.",
         warning: "Important: Some scammers ask to use the bathroom or get a glass of water to scout the home for additional items or to take a photo of a recent bank statement on the counter. Lock private rooms and clear visible papers before any buyer visit.",
       },
       {

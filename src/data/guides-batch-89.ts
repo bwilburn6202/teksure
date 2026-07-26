@@ -72,7 +72,7 @@ When you sign up, you fill out a short questionnaire about what you are looking 
 
 Talkspace also offers psychiatry services if you need medication evaluation or management — this is a separate service from therapy and involves a licensed psychiatrist rather than a therapist.
 
-This guide is for therapy only. If you are in crisis, please call or text 988 immediately.`,
+This guide is for therapy only. If you are in crisis, please call or text 988 right away.`,
     steps: [
       {
         title: `Create Your Account`,
@@ -304,7 +304,7 @@ The timer feature is particularly useful for focus sessions. You can set Noisli 
     steps: [
       {
         title: `Access Noisli on Your Device`,
-        content: `You can use Noisli immediately without downloading anything by going to noisli.com in your web browser. If you prefer an app, search "Noisli" in the App Store or Google Play and install it. Create a free account using your email address if you want to save your favorite sound mixes across devices.`,
+        content: `You can use Noisli right away without downloading anything by going to noisli.com in your web browser. If you prefer an app, search "Noisli" in the App Store or Google Play and install it. Create a free account using your email address if you want to save your favorite sound mixes across devices.`,
       },
       {
         title: `Pick Sounds for Your Goal`,
@@ -366,7 +366,7 @@ Petcube also offers an optional care subscription (around $5 to $10 per month pe
       {
         title: `Set Up Motion and Sound Alerts`,
         content: `Go to your camera settings in the app and look for "Notifications" or "Alerts." You can turn on alerts for motion detected by the camera or sounds above a certain level — such as your dog barking. When triggered, you will receive a push notification on your phone and can open the app to see what is happening. This feature works best with a Petcube Care subscription.`,
-        warning: `Motion alerts can fire frequently in a busy household. Start with sound alerts only if motion notifications end up being too many.`,
+        warning: `Motion alerts can fire often in a busy household. Start with sound alerts only if motion notifications end up being too many.`,
       },
     ],
   },
@@ -386,7 +386,7 @@ The Whistle tracker is a small, durable device about the size of a large button.
 
 Because Whistle uses cellular data to communicate location, it requires a monthly subscription. Plans start around $7 to $10 per month after an initial promotional period. You can choose month-to-month or prepay for a year at a discount. The tracker device itself costs around $80 to $130 depending on the model.
 
-One of the most useful features is the Safe Zone. You define a virtual boundary around your home (or any place your pet is allowed to be). If your pet leaves that area, you immediately get an alert on your phone. This can save precious time if a gate is accidentally left open.
+One of the most useful features is the Safe Zone. You define a virtual boundary around your home (or any place your pet is allowed to be). If your pet leaves that area, you right away get an alert on your phone. This can save precious time if a gate is accidentally left open.
 
 In addition to GPS tracking, some Whistle models also track your pet's daily activity — how many minutes they were active versus resting — and their sleep. This health data appears in the app alongside location history.`,
     steps: [
@@ -471,7 +471,7 @@ The app is free to download and use for the core features. A premium tier adds a
 
 Online vet visits are a good fit for a wide range of concerns: your dog is eating less than usual, your cat has been scratching more than normal, your pet has a new lump you want looked at, or you have questions about a medication or diet change. A Vetster vet can observe your pet through the camera, ask detailed questions, and give you a professional opinion.
 
-There are things an online vet cannot do, and it is important to understand these limits. They cannot perform a physical exam, take blood samples, run x-rays, give injections, or handle emergencies. If your pet has a broken bone, is having trouble breathing, has collapsed, or has ingested something toxic, go to an emergency veterinary clinic immediately — do not wait for a video appointment.
+There are things an online vet cannot do, and it is important to understand these limits. They cannot perform a physical exam, take blood samples, run x-rays, give injections, or handle emergencies. If your pet has a broken bone, is having trouble breathing, has collapsed, or has ingested something toxic, go to an emergency veterinary clinic right away — do not wait for a video appointment.
 
 Vetster visits are typically priced between $50 and $150 depending on the vet and the time of day. Some pet insurance policies cover telehealth visits, so check your policy. Vetster also shows you each vet's credentials, species experience, and patient reviews before you book, so you can pick someone with expertise in your type of pet.
 
@@ -483,7 +483,7 @@ Vetster is available on iPhone, Android, and the web at vetster.com.`,
       },
       {
         title: `Decide if Online Care is Right for This Situation`,
-        content: `Online vets are best for non-emergency concerns — behavioral questions, minor skin issues, dietary advice, medication questions, or general wellness concerns. If your pet is in obvious pain, not breathing normally, unable to walk, or has been injured, skip the app and go to an emergency animal hospital right away. When in doubt about severity, call your local vet clinic — most clinics will tell you over the phone whether something needs to be seen in person immediately.`,
+        content: `Online vets are best for non-emergency concerns — behavioral questions, minor skin issues, dietary advice, medication questions, or general wellness concerns. If your pet is in obvious pain, not breathing normally, unable to walk, or has been injured, skip the app and go to an emergency animal hospital right away. When in doubt about severity, call your local vet clinic — most clinics will tell you over the phone whether something needs to be seen in person right away.`,
         warning: `Vetster is not an emergency service. Do not use it for life-threatening situations.`,
       },
       {
@@ -560,7 +560,7 @@ Some of the most useful things you can do with the Tesla app include: checking y
 
 The app also works as a digital key for your phone. If you have your phone in your pocket and Bluetooth is on, many Tesla models will automatically unlock as you approach and lock as you walk away — no key fob required.
 
-In addition to day-to-day controls, the Tesla app shows you software update notifications. Tesla frequently releases over-the-air software updates that add features or improve performance. You can see when an update is available and schedule it to install overnight so your car is up to date when you wake up.
+In addition to day-to-day controls, the Tesla app shows you software update notifications. Tesla often releases over-the-air software updates that add features or improve performance. You can see when an update is available and schedule it to install overnight so your car is up to date when you wake up.
 
 The Tesla app is free and available for iPhone and Android. You need a Tesla account, which is set up when you take delivery of the car. Your phone must be linked to your specific vehicle using the app.`,
     steps: [
@@ -575,7 +575,7 @@ The Tesla app is free and available for iPhone and Android. You need a Tesla acc
       },
       {
         title: `Check Your Charge Level and Start Charging`,
-        content: `The main screen of the app shows your battery percentage and estimated miles of range. Tap the lightning bolt icon or the "Charging" section to see detailed charging information — including how many miles are added per hour at your current charging speed. If your car is plugged in at home and not actively charging, you can tap "Start charging" to begin a session immediately.`,
+        content: `The main screen of the app shows your battery percentage and estimated miles of range. Tap the lightning bolt icon or the "Charging" section to see detailed charging information — including how many miles are added per hour at your current charging speed. If your car is plugged in at home and not actively charging, you can tap "Start charging" to begin a session right away.`,
       },
       {
         title: `Pre-Condition the Cabin Temperature`,
@@ -628,7 +628,7 @@ You can pay at Electrify America stations in two ways: through the app linked to
       },
       {
         title: `Monitor Your Session and Understand Pricing`,
-        content: `During charging, the app shows your current charging speed in kilowatts, how long you have been charging, and how much the session is costing so far. Electrify America charges by the minute, and the per-minute rate varies by charger power level. A membership plan (around $4 per month) significantly lowers the per-minute rate and is worth it if you charge at Electrify America more than once a month.`,
+        content: `During charging, the app shows your current charging speed in kilowatts, how long you have been charging, and how much the session is costing so far. Electrify America charges by the minute, and the per-minute rate varies by charger power level. A membership plan (around $4 per month) a lot lowers the per-minute rate and is worth it if you charge at Electrify America more than once a month.`,
       },
       {
         title: `End the Session and Unplug`,
@@ -653,7 +653,7 @@ EVgo chargers are DC fast chargers, meaning they deliver power much more quickly
 
 One of EVgo's notable advantages is that their chargers are maintained by the company, and their network is known for higher reliability than some other public charging options. EVgo also offers a guarantee program on some chargers — if a charger is broken, you may receive credit toward a future session.
 
-EVgo offers two ways to pay. If you are a casual user, you can pay as you go without a membership, which means a higher per-minute rate. If you charge more frequently, their monthly membership plan reduces the per-minute rate significantly and usually pays for itself after just two or three sessions per month.
+EVgo offers two ways to pay. If you are a casual user, you can pay as you go without a membership, which means a higher per-minute rate. If you charge more often, their monthly membership plan reduces the per-minute rate a lot and usually pays for itself after just two or three sessions per month.
 
 EVgo works with most modern electric vehicles that use CCS plugs (the standard US fast-charge connector). CHAdeMO support is available at some locations for older Nissan vehicles. Tesla drivers need a CCS adapter from Tesla.`,
     steps: [
@@ -715,7 +715,7 @@ SpotHero is free to download. You pay for parking through the app and there are 
       },
       {
         title: `Compare Spots and Read the Details`,
-        content: `Tap any parking location on the map to see its full details: exact address, distance from your destination (in a walking time estimate), garage hours, height restrictions for tall vehicles, whether it is covered or outdoor, and reviews from other drivers. Compare two or three options before deciding — sometimes a spot one block farther away is significantly cheaper.`,
+        content: `Tap any parking location on the map to see its full details: exact address, distance from your destination (in a walking time estimate), garage hours, height restrictions for tall vehicles, whether it is covered or outdoor, and reviews from other drivers. Compare two or three options before deciding — sometimes a spot one block farther away is a lot cheaper.`,
       },
       {
         title: `Reserve Your Spot`,
@@ -876,7 +876,7 @@ Dosh is free to download and has no subscription fees. It is available for iPhon
 
 This creates a win-win situation. As a buyer on Raise, you can find gift cards for stores you shop regularly — think Target, Amazon, Best Buy, Starbucks, Gap, or Lowe's — at 3% to 25% below the amount printed on the card. The discount varies by store and how eager sellers are to unload their cards.
 
-Gift cards on Raise come in two forms. Electronic cards are delivered immediately to your email or Raise account — you get a card number and PIN you can type in at checkout online or show the cashier on your phone screen. Physical cards are mailed to you and take several days to arrive. Electronic cards are faster and more convenient for most purchases.
+Gift cards on Raise come in two forms. Electronic cards are delivered right away to your email or Raise account — you get a card number and PIN you can type in at checkout online or show the cashier on your phone screen. Physical cards are mailed to you and take several days to arrive. Electronic cards are faster and more convenient for most purchases.
 
 Raise verifies every card before listing it for sale, and they offer a money-back guarantee: if you buy a card and the balance is wrong or the card does not work, Raise will replace or refund it within a defined window (check current policy on their website). This protection makes buying from strangers much less risky.
 
@@ -888,7 +888,7 @@ Raise is available as a website (raise.com) and as an app for iPhone and Android
       },
       {
         title: `Search for a Store You Shop At`,
-        content: `In the search bar at the top of the Raise app or website, type the name of a store you frequently shop at — for example, "Amazon," "Target," or "Home Depot." Raise will show all currently available gift cards for that retailer, listed with their face value, the discounted price you will pay, and the savings percentage. Higher discount percentages mean greater savings.`,
+        content: `In the search bar at the top of the Raise app or website, type the name of a store you often shop at — for example, "Amazon," "Target," or "Home Depot." Raise will show all currently available gift cards for that retailer, listed with their face value, the discounted price you will pay, and the savings percentage. Higher discount percentages mean greater savings.`,
         tip: `Quick Tip: Check Raise before making a large planned purchase — buying a discounted gift card first can save you a meaningful amount on a purchase you were going to make anyway.`,
       },
       {

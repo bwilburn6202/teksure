@@ -32,7 +32,7 @@ export const guidesBatch53: Guide[] = [
       },
       {
         title: 'Restart your computer to apply the patch',
-        content: 'After the download finishes, you will see a button to "Restart now" or a prompt that your PC will restart at a scheduled time. Click "Restart now" to apply the fix immediately. The restart takes about 3–5 minutes and your files are not affected.',
+        content: 'After the download finishes, you will see a button to "Restart now" or a prompt that your PC will restart at a scheduled time. Click "Restart now" to apply the fix right away. The restart takes about 3–5 minutes and your files are not affected.',
       },
       {
         title: 'Test that the fix worked',
@@ -71,12 +71,12 @@ export const guidesBatch53: Guide[] = [
       },
       {
         title: 'Never pay a fee to withdraw your own money',
-        content: 'One of the most common tricks in investment scams is the "withdrawal fee." Your fake account shows a large profit, but when you try to take out the money, the platform says you owe taxes, a withdrawal fee, or a "compliance deposit" first. This is always a second theft. Legitimate investment platforms never require you to pay a fee before you can access your own money. If this happens, stop immediately and do not pay anything.',
+        content: 'One of the most common tricks in investment scams is the "withdrawal fee." Your fake account shows a large profit, but when you try to take out the money, the platform says you owe taxes, a withdrawal fee, or a "compliance deposit" first. This is always a second theft. Legitimate investment platforms never require you to pay a fee before you can access your own money. If this happens, stop right away and do not pay anything.',
       },
       {
         title: 'Report it and get help if you are targeted',
         content: 'If you think you have encountered an investment scam — or already lost money — report it to the FTC at ReportFraud.ftc.gov and to the SEC at sec.gov/tcr. You can also call the AARP Fraud Watch Network helpline free at 877-908-3360 (Monday–Friday, 8 AM–8 PM Eastern) — trained fraud specialists can walk you through next steps and help you understand your options for recovering money.',
-        tip: "The FBI's Internet Crime Complaint Center at ic3.gov also accepts reports of investment fraud. Filing a report creates a record and helps investigators track patterns — even if you cannot immediately recover your money.",
+        tip: "The FBI's Internet Crime Complaint Center at ic3.gov also accepts reports of investment fraud. Filing a report creates a record and helps investigators track patterns — even if you cannot right away recover your money.",
       },
     ],
   },
@@ -672,7 +672,7 @@ You don't need to be athletic to benefit from tracking. Even 20–30 minutes of 
       {
         title: `Pause and end the workout`,
         content: `To pause the workout, press both the Digital Crown and the side button at the same time. To end it, swipe right on the screen and tap "End," then swipe to confirm. The watch shows a summary screen with your totals: total time, calories, average heart rate, and distance. Tap "Done" to exit.`,
-        tip: `If you accidentally start a workout, you can end it immediately. Apple Watch will ask if you want to save it — tap "Discard" to remove it.`
+        tip: `If you accidentally start a workout, you can end it right away. Apple Watch will ask if you want to save it — tap "Discard" to remove it.`
       },
       {
         title: `Check your Activity rings`,
@@ -718,7 +718,7 @@ These three areas — movement reminders, sleep tracking, and app history — tu
       },
       {
         title: `Improve sleep tracking accuracy`,
-        content: `Wear your Fitbit snugly (but not tightly) on your non-dominant wrist when you sleep. The band should sit about one finger-width above your wrist bone. Loose wear can cause your Fitbit to misread your sleep or heart rate. In the Fitbit app, go to your device settings and make sure "Heart Rate" is set to "Auto" or "On" — heart rate data significantly improves sleep stage detection.`,
+        content: `Wear your Fitbit snugly (but not tightly) on your non-dominant wrist when you sleep. The band should sit about one finger-width above your wrist bone. Loose wear can cause your Fitbit to misread your sleep or heart rate. In the Fitbit app, go to your device settings and make sure "Heart Rate" is set to "Auto" or "On" — heart rate data a lot improves sleep stage detection.`,
         warning: `If your wrist feels uncomfortable during sleep, try the smaller or larger band size. Fitbit replacement bands are inexpensive and available online.`
       },
       {
@@ -802,7 +802,7 @@ Viewing your step data is helpful for building walking habits. Samsung Health sh
 
 The "Move Reminder" feature works like an hourly nudge. If you've been sitting for too long, the phone reminds you to get up and walk. This is especially helpful during days when you're watching TV or working at a desk.
 
-Samsung Health syncs automatically with Samsung Galaxy watches if you have one, giving you even more detailed data. But the phone alone is sufficient for basic step tracking.
+Samsung Health syncs automatically with Samsung Galaxy watches if you have one, giving you even more detailed data. But the phone alone is enough for basic step tracking.
 
 Samsung Health data stays on your phone and your Samsung account. You can optionally share specific data with your doctor or with apps like Google Fit if you choose.`,
     steps: [
@@ -1038,7 +1038,7 @@ If you're low on space, prioritize in this order: delete large video files and d
     thumbnailEmoji: ``,
     publishedAt: `2026-04-19`,
     difficulty: `Beginner`,
-    body: `When your iPhone shows "Storage Almost Full" warnings or says it can't take a new photo, it's time to look at what's using your storage. The good news is that iPhone has a built-in storage management screen that shows you exactly what's taking up space, sorted by size — so you know immediately where to focus.
+    body: `When your iPhone shows "Storage Almost Full" warnings or says it can't take a new photo, it's time to look at what's using your storage. The good news is that iPhone has a built-in storage management screen that shows you exactly what's taking up space, sorted by size — so you know right away where to focus.
 
 The storage breakdown is in Settings > General > iPhone Storage. Give it a moment to load, and you'll see a colored bar at the top showing how your total storage is divided (apps, photos, media, etc.), followed by a list of every installed app sorted from largest to smallest. You can tap any app to see how much space the app itself takes versus the data it's storing.
 
@@ -1058,7 +1058,7 @@ This guide works on any iPhone running iOS 17 or later — which covers virtuall
       },
       {
         title: `Look at the breakdown bar and recommendations`,
-        content: `The bar at the top shows how your total storage is divided by color: yellow for Photos, blue for Apps, purple for Media, and gray for other. Below the bar, iOS often shows "Recommendations" for freeing space — for example, "Auto Offload Unused Apps" or "Review Large Messages." Tap any recommendation to act on it immediately.`
+        content: `The bar at the top shows how your total storage is divided by color: yellow for Photos, blue for Apps, purple for Media, and gray for other. Below the bar, iOS often shows "Recommendations" for freeing space — for example, "Auto Offload Unused Apps" or "Review Large Messages." Tap any recommendation to act on it right away.`
       },
       {
         title: `Delete or offload large apps`,
@@ -1150,7 +1150,7 @@ The numbers refer to radio frequencies — 2.4 GHz and 5 GHz are both ways of tr
 
 The 2.4 GHz band travels farther and passes through walls and floors better. It's slower for data transfer, but that slower speed is still fast enough for most internet activities — browsing websites, checking email, video calls, and watching standard HD video. The 2.4 GHz band is best for devices that are far from your router or separated from it by multiple walls.
 
-The 5 GHz band is faster but has shorter range and more difficulty passing through walls. In the same room as your router, 5 GHz can be significantly faster — better for 4K video streaming, large file downloads, or online gaming. But move to another room or floor, and the signal weakens noticeably.
+The 5 GHz band is faster but has shorter range and more difficulty passing through walls. In the same room as your router, 5 GHz can be a lot faster — better for 4K video streaming, large file downloads, or online gaming. But move to another room or floor, and the signal weakens noticeably.
 
 As a general rule: use 5 GHz if you're close to your router and want maximum speed, use 2.4 GHz if you're far from the router or having trouble maintaining a connection.
 
@@ -1165,7 +1165,7 @@ Most modern routers have a feature called "band steering" that automatically con
       },
       {
         title: `Choose 5 GHz when speed matters and you're close to the router`,
-        content: `If your device is in the same room as your router or in the next room with one wall between you, connect to the 5 GHz network. It delivers significantly faster speeds for things like 4K streaming, video calls, and downloading large files. On your device, open WiFi settings, select the 5 GHz network (usually labeled with "5G" or "5GHz"), and enter your password.`
+        content: `If your device is in the same room as your router or in the next room with one wall between you, connect to the 5 GHz network. It delivers a lot faster speeds for things like 4K streaming, video calls, and downloading large files. On your device, open WiFi settings, select the 5 GHz network (usually labeled with "5G" or "5GHz"), and enter your password.`
       },
       {
         title: `Choose 2.4 GHz for devices that are far from the router`,

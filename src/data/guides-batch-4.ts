@@ -85,7 +85,7 @@ More and more major websites now offer passkeys: Google, Apple, Microsoft, PayPa
     thumbnailEmoji: '',
     publishedAt: '2026-04-08',
     difficulty: 'Beginner',
-    body: `One of the most alarming scams of 2026 is the AI voice cloning call. Here is how it works: a scammer uses artificial intelligence software to clone the voice of your grandchild, son, daughter, or another loved one. They only need a few seconds of that person's voice — which scammers often get from social media videos. Then they call you, and the voice on the other end sounds exactly like your family member, saying they are in trouble: arrested, in a car accident, sick abroad, or in danger. They beg you not to call anyone else and ask you to wire money or buy gift cards immediately.
+    body: `One of the most alarming scams of 2026 is the AI voice cloning call. Here is how it works: a scammer uses artificial intelligence software to clone the voice of your grandchild, son, daughter, or another loved one. They only need a few seconds of that person's voice — which scammers often get from social media videos. Then they call you, and the voice on the other end sounds exactly like your family member, saying they are in trouble: arrested, in a car accident, sick abroad, or in danger. They beg you not to call anyone else and ask you to wire money or buy gift cards right away.
 
 The FTC warns this scam has grown by over 300% in the past year, and the losses can be devastating — sometimes tens of thousands of dollars. The voice sounds genuinely real, even to careful people. Here is how to protect yourself: First, always hang up and call your family member directly on a number you already have saved. Do not call back the number that called you. Second, set up a family "safe word" — a secret word only your family knows. If the "emergency" is real, they can say the word to confirm it is really them. Third, never send gift cards, wire transfers, or cash to anyone who calls you saying a family member is in trouble.
 
@@ -202,7 +202,7 @@ Other things that drain battery quickly: Wi-Fi scanning when you are away from h
     thumbnailEmoji: '',
     publishedAt: '2026-04-08',
     difficulty: 'Beginner',
-    body: `In WhatsApp, messages show a gray check mark when sent, two gray check marks when delivered to the other person's phone, and two blue check marks when that person has read the message. Those blue check marks — sometimes called "blue ticks" — let the sender know you have seen their message. Some people find this creates pressure to reply immediately. Fortunately, WhatsApp lets you turn off read receipts so that your blue ticks are never shown.
+    body: `In WhatsApp, messages show a gray check mark when sent, two gray check marks when delivered to the other person's phone, and two blue check marks when that person has read the message. Those blue check marks — sometimes called "blue ticks" — let the sender know you have seen their message. Some people find this creates pressure to reply right away. Fortunately, WhatsApp lets you turn off read receipts so that your blue ticks are never shown.
 
 To turn off read receipts on an iPhone or Android: Open WhatsApp, tap the three dots in the top right corner (Android) or tap "Settings" at the bottom right (iPhone). Tap "Privacy." Find "Read Receipts" and tap the toggle to turn it off. Once this is off, your check marks will stay gray even after you have read a message, and others will not know when you have read theirs.
 
@@ -248,7 +248,7 @@ If you want to add more storage, Apple's iCloud+ plans are affordable: 50 GB cos
     thumbnailEmoji: '',
     publishedAt: '2026-04-08',
     difficulty: 'Beginner',
-    body: `Facebook Marketplace is a popular place to buy and sell used items locally, but the Better Business Bureau and FTC both report that scams on Marketplace have increased significantly. Whether you are selling a piece of furniture or trying to find a deal on a phone, knowing the warning signs can save you from losing money or having your personal information stolen.
+    body: `Facebook Marketplace is a popular place to buy and sell used items locally, but the Better Business Bureau and FTC both report that scams on Marketplace have increased a lot. Whether you are selling a piece of furniture or trying to find a deal on a phone, knowing the warning signs can save you from losing money or having your personal information stolen.
 
 If you are selling something, watch out for these red flags: A buyer offers to pay more than your asking price (this is a setup for a fake check or overpayment scam). A buyer says they cannot meet in person and asks you to ship the item. A buyer sends a payment through Zelle, Cash App, or Venmo before you ship — and then tries to "reverse" the payment and get the item for free. The safest way to sell on Marketplace is to meet the buyer in person, in a public place (many police stations offer a "Safe Exchange Zone" in their parking lot), and accept cash or payment through Facebook's own checkout system only.
 
@@ -299,7 +299,7 @@ Step 2: Add the printer to your Windows computer. Click the Start button, open S
 
 Start at accounts.google.com/signin/recovery on any web browser. Enter your Gmail address and click "Next." Click "Forgot password?" Google will offer you several ways to verify your identity: it may send a text message with a code to your phone number, send a link to a backup email address you set up previously, or ask you security questions. Choose whichever option you have access to. If you receive a code by text, enter it on the screen and you will be given the option to create a new password.
 
-If none of those options work — for example, if you no longer have access to your old recovery phone number — Google may ask you questions to verify your identity, such as when you created the account or the last password you remember. Answer as accurately as you can. If you still cannot get in, the last resort is Google's account recovery form, which you can find by searching "Google account recovery form" — this is a manual review process that can take a few days. After you regain access, immediately add a current phone number as a recovery option so this does not happen again.`,
+If none of those options work — for example, if you no longer have access to your old recovery phone number — Google may ask you questions to verify your identity, such as when you created the account or the last password you remember. Answer as accurately as you can. If you still cannot get in, the last resort is Google's account recovery form, which you can find by searching "Google account recovery form" — this is a manual review process that can take a few days. After you regain access, right away add a current phone number as a recovery option so this does not happen again.`,
     steps: [
       { title: 'Go to the Google recovery page', content: 'Open a web browser and go to accounts.google.com. Enter your Gmail address, click Next, then click "Forgot password?"' },
       { title: 'Verify your identity by text or email', content: 'Google will offer to send a code to your recovery phone number or recovery email. Choose whichever you have access to, enter the code, and create a new password.' },
@@ -487,7 +487,7 @@ Once Screen Time is on, you can also tap "Content & Privacy Restrictions" to tur
     thumbnailEmoji: '',
     publishedAt: '2026-04-14',
     difficulty: 'Beginner',
-    body: `The Federal Trade Commission issued a fresh warning on April 14, 2026: millions of Americans are receiving fake text messages claiming they owe money for an unpaid traffic ticket, a toll violation, or a moving violation — and that they must pay immediately or face serious penalties like license suspension. These texts look convincing. They may include a fake case number, legal-sounding language, and a link to what appears to be an official government website.
+    body: `The Federal Trade Commission issued a fresh warning on April 14, 2026: millions of Americans are receiving fake text messages claiming they owe money for an unpaid traffic ticket, a toll violation, or a moving violation — and that they must pay right away or face serious penalties like license suspension. These texts look convincing. They may include a fake case number, legal-sounding language, and a link to what appears to be an official government website.
 
 If you click the link, it takes you to a realistic-looking fake payment page. The moment you enter your credit card number, the scammers steal it. Some pages also install software on your phone that can steal passwords and banking information.
 
@@ -500,7 +500,7 @@ The scam is spreading rapidly in every state. Scammers are targeting people beca
       },
       {
         title: 'Do not click the link — delete the text',
-        content: 'The safest thing to do is delete the text immediately without clicking anything. If you are worried the fine might be real, you can verify it — but not through the link in the text. See the next step for how to check safely.',
+        content: 'The safest thing to do is delete the text right away without clicking anything. If you are worried the fine might be real, you can verify it — but not through the link in the text. See the next step for how to check safely.',
       },
       {
         title: 'Verify a real fine the safe way',
@@ -514,7 +514,7 @@ The scam is spreading rapidly in every state. Scammers are targeting people beca
       {
         title: 'Turn on spam text filtering',
         content: 'Your phone has built-in tools to catch more scam texts before they reach you. On iPhone: Settings → Messages → scroll down to "Filter Unknown Senders" and turn it on. On Android: open the Messages app → three dots → Settings → Spam protection → turn on "Enable spam protection." Your carrier also offers free spam filtering: AT&T ActiveArmor, T-Mobile Scam Shield, and Verizon Call Filter.',
-        tip: 'If you already clicked the link, contact your bank or credit card company immediately to report a potential compromise, and consider placing a fraud alert on your credit at AnnualCreditReport.com.',
+        tip: 'If you already clicked the link, contact your bank or credit card company right away to report a potential compromise, and consider placing a fraud alert on your credit at AnnualCreditReport.com.',
       },
     ],
   },
@@ -533,11 +533,11 @@ The scam is spreading rapidly in every state. Scammers are targeting people beca
     difficulty: 'Beginner',
     body: `Being scammed is one of the most distressing things that can happen — and it happens to millions of people every year, including smart, experienced adults. If you have recently realized you may have been scammed, the most important thing is to stay calm and take action quickly. Acting within the first 24 hours gives you the best chance of limiting the damage.
 
-Scams take many forms: a fake tech support call where you gave someone remote access to your computer, a phishing email where you entered your bank login, a gift card demand where you sent money, or a romance scammer who convinced you to wire funds. Each situation is a little different, but the core steps to protect yourself are the same. Go through this guide step by step — you do not need to do everything at once, but start with Step 1 immediately.`,
+Scams take many forms: a fake tech support call where you gave someone remote access to your computer, a phishing email where you entered your bank login, a gift card demand where you sent money, or a romance scammer who convinced you to wire funds. Each situation is a little different, but the core steps to protect yourself are the same. Go through this guide step by step — you do not need to do everything at once, but start with Step 1 right away.`,
     steps: [
       {
         title: 'Stop all contact with the scammer right now',
-        content: 'If you are still in contact with the scammer — on the phone, in email, or in a chat app — end all communication immediately. Block the phone number or email address. Do not respond to any further messages, even if they threaten you or claim to be from law enforcement. Real police and government agencies do not ask for payment via phone or email.',
+        content: 'If you are still in contact with the scammer — on the phone, in email, or in a chat app — end all communication right away. Block the phone number or email address. Do not respond to any further messages, even if they threaten you or claim to be from law enforcement. Real police and government agencies do not ask for payment via phone or email.',
         warning: 'Scammers often call back after you hang up, pretending to be from a different agency that can "help" you recover your money. This is a second scam. Do not answer calls from numbers you do not recognize.',
       },
       {
@@ -547,12 +547,12 @@ Scams take many forms: a fake tech support call where you gave someone remote ac
       },
       {
         title: 'Change your passwords on important accounts',
-        content: 'If you gave your password to anyone, or if you clicked a phishing link and logged in somewhere, change your passwords immediately for: your email account (this is the most important one), your bank and financial accounts, and any account you use the same password for. Use a different strong password for each account. A strong password is at least 12 characters long and includes uppercase letters, lowercase letters, numbers, and symbols.',
+        content: 'If you gave your password to anyone, or if you clicked a phishing link and logged in somewhere, change your passwords right away for: your email account (this is the most important one), your bank and financial accounts, and any account you use the same password for. Use a different strong password for each account. A strong password is at least 12 characters long and includes uppercase letters, lowercase letters, numbers, and symbols.',
         tip: 'If you need help managing multiple passwords, a free password manager like Bitwarden (bitwarden.com) stores all your passwords securely so you only need to remember one.',
       },
       {
         title: 'Remove remote access software if someone installed it',
-        content: 'If a scammer talked you into installing software so they could "fix your computer" — common programs include AnyDesk, TeamViewer, and UltraViewer — you need to remove it immediately. On Windows: click Start → Settings → Apps → search for the program name → click Uninstall. On Mac: open Finder → Applications → drag the program to the Trash → empty the Trash. After removing the software, run a full scan using Windows Defender (built into Windows) or Malwarebytes (free at malwarebytes.com). Change all your passwords after doing this.',
+        content: 'If a scammer talked you into installing software so they could "fix your computer" — common programs include AnyDesk, TeamViewer, and UltraViewer — you need to remove it right away. On Windows: click Start → Settings → Apps → search for the program name → click Uninstall. On Mac: open Finder → Applications → drag the program to the Trash → empty the Trash. After removing the software, run a full scan using Windows Defender (built into Windows) or Malwarebytes (free at malwarebytes.com). Change all your passwords after doing this.',
         warning: 'Even after removing remote access software, assume the scammer may have copied your files or saved your passwords. Change every important password as a precaution.',
       },
       {
@@ -654,7 +654,7 @@ The most common cause is a router that needs a restart. The second most common i
       },
       {
         title: 'Move closer to the router',
-        content: 'Wi-Fi signal gets weaker the farther you are from the router, and thick walls, floors, and appliances can block it significantly. Try using your device in the same room as the router and see if the drops stop. If they do, distance or obstacles are the problem. A Wi-Fi extender (available for $20–$50 at any electronics store) can help extend coverage to farther rooms.',
+        content: 'Wi-Fi signal gets weaker the farther you are from the router, and thick walls, floors, and appliances can block it a lot. Try using your device in the same room as the router and see if the drops stop. If they do, distance or obstacles are the problem. A Wi-Fi extender (available for $20–$50 at any electronics store) can help extend coverage to farther rooms.',
         tip: 'Microwaves, cordless phones, and baby monitors all use the same radio frequency as Wi-Fi and can cause interference when they are on. Try moving your router away from these devices.',
       },
       {

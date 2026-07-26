@@ -163,7 +163,7 @@ Important disclaimer: This guide is for informational purposes only. A medicatio
 
 These apps vary slightly from company to company, but they all include the same core features. You can see your current coverage, find doctors and hospitals that are in your plan's network, view the status of recent claims, see your deductible and out-of-pocket spending, and often access your digital insurance card.
 
-Knowing which doctors are "in-network" is especially important because visiting an out-of-network provider can cost you significantly more money, sometimes thousands of dollars more for a procedure. The provider search in your insurance app is updated more frequently than the paper directory you may have received in the mail, so it is a more reliable source.
+Knowing which doctors are "in-network" is especially important because visiting an out-of-network provider can cost you a lot more money, sometimes thousands of dollars more for a procedure. The provider search in your insurance app is updated more often than the paper directory you may have received in the mail, so it is a more reliable source.
 
 Checking your claims through the app is also useful. After a doctor visit, the insurance company processes a claim — a bill from your provider. The app shows you what was billed, what the insurance paid, and what you owe the provider. Reviewing claims helps you catch billing errors, which happen more often than most people realize.
 
@@ -185,7 +185,7 @@ Important disclaimer: This guide is for informational purposes only. Always veri
       {
         title: `Find an in-network doctor`,
         content: `Look for a section called "Find a Doctor," "Provider Search," or "Find Care." Enter your zip code and the type of provider you need — for example, "primary care physician" or "cardiologist." The app will show a list of providers in your plan's network near you, along with their address, phone number, and whether they are accepting new patients.`,
-        warning: `Always call the doctor's office to confirm they still accept your specific plan before scheduling. Networks change, and the app may not reflect updates immediately.`,
+        warning: `Always call the doctor's office to confirm they still accept your specific plan before scheduling. Networks change, and the app may not reflect updates right away.`,
       },
       {
         title: `View your claims and explanation of benefits`,
@@ -219,7 +219,7 @@ Similar services to Teladoc include MDLive, Amwell, Doctor on Demand, and Amazon
 
 Quick Tip: Telehealth works best in a quiet, well-lit room. Find a spot where you can speak privately and where your face is clearly visible in good light. Natural light from a window in front of you works well.
 
-Important disclaimer: This guide is for informational purposes only. Telehealth is not appropriate for all medical situations. If you are experiencing a medical emergency, chest pain, difficulty breathing, or signs of a stroke, call 911 immediately. Always consult with a qualified medical professional for diagnosis and treatment.`,
+Important disclaimer: This guide is for informational purposes only. Telehealth is not appropriate for all medical situations. If you are experiencing a medical emergency, chest pain, difficulty breathing, or signs of a stroke, call 911 right away. Always consult with a qualified medical professional for diagnosis and treatment.`,
     steps: [
       {
         title: `Check whether you already have Teladoc through your insurance`,
@@ -261,7 +261,7 @@ Common sleep stages you will see on apps include Light sleep (the stage from whi
 
 Popular sleep-tracking options include Fitbit (which has one of the most detailed sleep reports), Apple Watch with the Health app, Samsung Galaxy Watch, Oura Ring, and phone-only apps like Sleep Cycle or Google Fit.
 
-A "sleep score" is a number — usually out of 100 — that rates how well you slept based on total duration, time in each stage, and how restless you were. A score in the 70s or above is generally considered good. Scores in the 50s and 60s often indicate insufficient sleep or frequent waking.
+A "sleep score" is a number — usually out of 100 — that rates how well you slept based on total duration, time in each stage, and how restless you were. A score in the 70s or above is generally considered good. Scores in the 50s and 60s often show insufficient sleep or frequent waking.
 
 These trackers are not medical-grade devices and are not as accurate as a formal sleep study (called a polysomnography) done in a clinic. But they are good enough to reveal patterns — like consistently poor sleep on nights you eat late, or how much caffeine in the afternoon affects your nighttime rest.
 
@@ -319,7 +319,7 @@ Important disclaimer: This guide is for informational purposes only. No fall det
       {
         title: `Enable fall detection on Apple Watch`,
         content: `On your iPhone, open the Watch app. Tap My Watch at the bottom, then tap Emergency SOS. Toggle on Fall Detection. The feature is available on Apple Watch Series 4 and newer. Once enabled, wear the watch on your wrist — it only works when worn, not when sitting on a table.`,
-        tip: `Also go to My Watch > Emergency SOS > Add Emergency Contact to ensure the watch knows who to notify.`,
+        tip: `Also go to My Watch > Emergency SOS > Add Emergency Contact to make sure the watch knows who to notify.`,
       },
       {
         title: `Set up emergency contacts on your phone`,
@@ -545,7 +545,7 @@ Quick Tip: Start with five-ingredient recipes. Fewer ingredients mean fewer chan
     difficulty: `Beginner`,
     body: `A shared digital grocery list solves a very common problem: one person heads to the store only to realize the rest of the family added things to the list after they left — or forgot to add things at all. With a shared grocery list app, everyone in the household can add, remove, and check off items in real time from their own phones.
 
-When one person checks off "milk" at the store, it disappears from everyone else's list too. When someone at home realizes they need pasta, they add it and the person at the store sees it appear immediately.
+When one person checks off "milk" at the store, it disappears from everyone else's list too. When someone at home realizes they need pasta, they add it and the person at the store sees it appear right away.
 
 The most popular shared grocery list apps in the United States include OurGroceries, AnyList, and Google Keep (which has a list feature). Amazon shopping lists and Apple Reminders also support sharing. All of the basic versions are free.
 
@@ -642,19 +642,19 @@ BetterHelp and Talkspace are the two largest online therapy platforms in the Uni
 
 BetterHelp matches you with a therapist based on your preferences and needs. Subscription plans start around $65–$100 per week and include one live session (video or phone) plus unlimited text messaging with your therapist between sessions. You can change your therapist at any time for free.
 
-Talkspace works similarly but also offers psychiatric services, including the ability to speak with a prescriber who can write prescriptions for mental health medications — which BetterHelp does not offer. Talkspace also works with many employer Employee Assistance Programs (EAPs) and some insurance plans.
+Talkspace works similarly but also offers psychiatric services, including the ability to speak with a prescriber who can write prescriptions for mental health medications — which BetterHelp does not offer. Talkspace also works with many employer Employee Help Programs (EAPs) and some insurance plans.
 
 These services are best for people dealing with anxiety, depression, stress, relationship difficulties, grief, or life transitions. They are generally not appropriate for crisis situations, active suicidal thoughts, severe psychiatric conditions requiring intensive treatment, or substance use disorders requiring medical detox.
 
-Cost is a major consideration. These services are not inexpensive at full price, and insurance coverage for them is inconsistent. However, many employers include mental health benefits through Talkspace or through an EAP (Employee Assistance Program) that covers a set number of free therapy sessions per year. Check your benefits first.
+Cost is a major consideration. These services are not inexpensive at full price, and insurance coverage for them is inconsistent. However, many employers include mental health benefits through Talkspace or through an EAP (Employee Help Program) that covers a set number of free therapy sessions per year. Check your benefits first.
 
 Quick Tip: If cost is a barrier, search for "open path collective" — it is a nonprofit that offers affordable therapy sessions ($30–$80 per session) with licensed therapists for people who cannot afford standard rates.
 
-Important disclaimer: Online therapy platforms are not appropriate for mental health emergencies. If you are having thoughts of harming yourself or others, call or text 988 (the Suicide and Crisis Lifeline) immediately. Online therapy does not replace in-person psychiatric care for serious mental health conditions.`,
+Important disclaimer: Online therapy platforms are not appropriate for mental health emergencies. If you are having thoughts of harming yourself or others, call or text 988 (the Suicide and Crisis Lifeline) right away. Online therapy does not replace in-person psychiatric care for serious mental health conditions.`,
     steps: [
       {
         title: `Check your employer benefits or insurance first`,
-        content: `Before paying out of pocket, check whether your employer offers an Employee Assistance Program (EAP) — call your HR department or check your benefits portal. EAPs often include 5–10 free therapy sessions per year. Also check your health insurance's mental health benefits — some plans partially cover Talkspace.`,
+        content: `Before paying out of pocket, check whether your employer offers an Employee Help Program (EAP) — call your HR department or check your benefits portal. EAPs often include 5–10 free therapy sessions per year. Also check your health insurance's mental health benefits — some plans partially cover Talkspace.`,
       },
       {
         title: `Complete the intake questionnaire`,
@@ -745,7 +745,7 @@ Google Fit also integrates with other health apps — including MyFitnessPal, St
 
 Quick Tip: Google Fit's walking detection is automatic — as long as you carry your phone with you during the day, your steps and activity are recorded without you needing to start anything manually.
 
-Important disclaimer: This guide is for informational purposes only. Activity tracking apps are wellness tools and do not replace medical advice. Consult your doctor before significantly increasing your physical activity level, especially if you have a heart condition, joint problems, or other health concerns.`,
+Important disclaimer: This guide is for informational purposes only. Activity tracking apps are wellness tools and do not replace medical advice. Consult your doctor before a lot increasing your physical activity level, especially if you have a heart condition, joint problems, or other health concerns.`,
     steps: [
       {
         title: `Download and open Google Fit`,
@@ -809,11 +809,11 @@ Important disclaimer: This guide is for informational purposes only. Consumer he
       },
       {
         title: `Understand what your resting heart rate means`,
-        content: `A resting heart rate between 60–100 bpm is considered normal for most adults. Below 60 is common in people who exercise regularly and is usually fine. Above 100 bpm consistently (a condition called tachycardia) can indicate various issues and should be evaluated by a doctor. Write down your resting heart rate a few days in a row to get a personal baseline.`,
+        content: `A resting heart rate between 60–100 bpm is considered normal for most adults. Below 60 is common in people who exercise regularly and is usually fine. Above 100 bpm consistently (a condition called tachycardia) can show various issues and should be evaluated by a doctor. Write down your resting heart rate a few days in a row to get a personal baseline.`,
       },
       {
         title: `Track trends over time`,
-        content: `Both Apple Health and the Fitbit app show charts of your resting heart rate over time. An upward trend over weeks could indicate illness, increased stress, poor sleep, or dehydration. A downward trend usually means your fitness is improving. Bring a screenshot of your trend chart to your next doctor's appointment as a conversation starter.`,
+        content: `Both Apple Health and the Fitbit app show charts of your resting heart rate over time. An upward trend over weeks could show illness, increased stress, poor sleep, or dehydration. A downward trend usually means your fitness is improving. Bring a screenshot of your trend chart to your next doctor's appointment as a conversation starter.`,
         warning: `Do not attempt to diagnose heart conditions based on consumer heart rate readings. These devices are useful for general wellness tracking, not medical diagnosis.`,
       },
     ],
@@ -838,9 +838,9 @@ Apple Watch Series 6 and newer, Samsung Galaxy Watch 4 and newer, Fitbit Sense, 
 
 During COVID-19, blood oxygen monitoring became much more widely known because a drop in SpO2 is an early warning sign of respiratory complications. People with asthma, COPD, heart disease, or sleep apnea have particular reason to monitor this metric regularly.
 
-Quick Tip: For an accurate reading, sit still in a warm room. Cold hands and movement both reduce accuracy significantly. Take three readings two minutes apart and average them.
+Quick Tip: For an accurate reading, sit still in a warm room. Cold hands and movement both reduce accuracy a lot. Take three readings two minutes apart and average them.
 
-Important disclaimer: Smartwatch SpO2 readings are not medical-grade and should not be used for medical diagnosis or treatment decisions. A clinical pulse oximeter provides a more accurate reading. If you are experiencing difficulty breathing, chest pain, or persistent SpO2 readings below 92%, seek medical attention immediately. Do not rely solely on a consumer device for health decisions.`,
+Important disclaimer: Smartwatch SpO2 readings are not medical-grade and should not be used for medical diagnosis or treatment decisions. A clinical pulse oximeter provides a more accurate reading. If you are experiencing difficulty breathing, chest pain, or persistent SpO2 readings below 92%, seek medical attention right away. Do not rely solely on a consumer device for health decisions.`,
     steps: [
       {
         title: `Enable SpO2 monitoring on your device`,
@@ -858,11 +858,11 @@ Important disclaimer: Smartwatch SpO2 readings are not medical-grade and should 
       {
         title: `Know what the numbers mean`,
         content: `95–100%: Normal range for healthy adults. 92–94%: Borderline — worth monitoring closely and mentioning to your doctor if consistent. Below 92%: Concerning — contact your healthcare provider. Below 90%: Seek medical attention promptly. One low reading is not necessarily alarming — inconsistency in readings is common with consumer devices. A persistent pattern of low readings is more significant.`,
-        warning: `If you feel short of breath, your lips or fingertips look bluish or grayish, or you feel dizzy and your reading is below 90%, call 911 immediately. Do not wait.`,
+        warning: `If you feel short of breath, your lips or fingertips look bluish or grayish, or you feel dizzy and your reading is below 90%, call 911 right away. Do not wait.`,
       },
       {
         title: `Compare with a clinical pulse oximeter if concerned`,
-        content: `Finger-clip pulse oximeters approved by the FDA cost $20–$40 at pharmacies and are significantly more accurate than wrist-worn smartwatches. If your smartwatch is giving you consistently low readings and you want to verify, check with a clinical oximeter. If the clinical reading is also low (below 92%), contact your doctor.`,
+        content: `Finger-clip pulse oximeters approved by the FDA cost $20–$40 at pharmacies and are a lot more accurate than wrist-worn smartwatches. If your smartwatch is giving you consistently low readings and you want to verify, check with a clinical oximeter. If the clinical reading is also low (below 92%), contact your doctor.`,
       },
     ],
   },
@@ -898,7 +898,7 @@ Important disclaimer: This guide is for informational purposes only. Consult you
     steps: [
       {
         title: `Choose a walking app that matches your current fitness level`,
-        content: `If you are completely new to regular exercise or have been inactive for a while, start with Start Walking or Walk at Home — they are designed for very beginners. If you already walk occasionally and want more structure, try MapMyWalk. Download your chosen app from the App Store or Google Play. Most are free or have free tiers.`,
+        content: `If you are completely new to regular exercise or have been inactive for a while, start with Start Walking or Walk at Home — they are designed for very beginners. If you already walk sometimes and want more structure, try MapMyWalk. Download your chosen app from the App Store or Google Play. Most are free or have free tiers.`,
       },
       {
         title: `Complete the onboarding questionnaire`,
@@ -940,7 +940,7 @@ Urgent care clinics are appropriate when you need in-person care but it is not a
 
 The emergency room is for serious, potentially life-threatening situations: chest pain, difficulty breathing, stroke symptoms, severe bleeding, high fever with confusion, head injury, severe abdominal pain, and any situation where you feel something is very seriously wrong.
 
-Call 911 immediately for: suspected heart attack, stroke symptoms (sudden face drooping, arm weakness, speech difficulty), loss of consciousness, seizures, severe allergic reaction, or any situation where you need immediate help and cannot safely drive.
+Call 911 right away for: suspected heart attack, stroke symptoms (sudden face drooping, arm weakness, speech difficulty), loss of consciousness, seizures, severe allergic reaction, or any situation where you need immediate help and cannot safely drive.
 
 Quick Tip: Save your telehealth service's number or app login on your phone before you need it. Searching for it when you are sick and anxious takes time you may not want to spend.
 

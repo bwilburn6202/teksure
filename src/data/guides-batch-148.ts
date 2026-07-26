@@ -147,7 +147,7 @@ The App Store (on iPhones and iPads made by Apple) and the Google Play Store (on
 
 **Why you should only download apps from the official store**
 
-You may occasionally see a website or email that says "Download this app here" with a button linking somewhere other than the App Store or Play Store. Do not use those links. Apps downloaded from unofficial sources can contain harmful software (called malware) that steals passwords, reads your private messages, or causes your phone to run slowly. The official stores review every app before allowing it to be listed. They are not perfect, but they are far safer than downloading an app from a random website.
+You may sometimes see a website or email that says "Download this app here" with a button linking somewhere other than the App Store or Play Store. Do not use those links. Apps downloaded from unofficial sources can contain harmful software (called malware) that steals passwords, reads your private messages, or causes your phone to run slowly. The official stores review every app before allowing it to be listed. They are not perfect, but they are far safer than downloading an app from a random website.
 
 If someone sends you a link to download an app, go to the official store yourself and search for the app by name instead of clicking the link.
 
@@ -212,8 +212,7 @@ Source: Apple Support — App Store (support.apple.com/apps) and Google Support 
       },
       {
         title: 'Remove apps you no longer want',
-        content:
-          'Unused apps take up storage space and occasionally run in the background. To delete on iPhone: press and hold the app icon until a small menu appears, then tap "Remove App," then "Delete App." On Android: press and hold the app icon, then drag it to the "Uninstall" option that appears, or tap the X that appears over the icon. Deleting a free app is permanent but costs nothing — you can always reinstall it from the store later.',
+        content: 'Unused apps take up storage space and sometimes run in the background. To delete on iPhone: press and hold the app icon until a small menu appears, then tap "Remove App," then "Delete App." On Android: press and hold the app icon, then drag it to the "Uninstall" option that appears, or tap the X that appears over the icon. Deleting a free app is permanent but costs nothing — you can always reinstall it from the store later.',
       },
     ],
   },
@@ -333,8 +332,7 @@ Source: FTC.gov — CAN-SPAM Act (ftc.gov/tips-advice/business-center/guidance/c
       },
       {
         title: 'Check your spam folder occasionally — real emails land there too',
-        content:
-          'Email spam filters are not perfect. Occasionally a real email from your doctor, a government agency, or a family member ends up in the spam folder by mistake. Check your spam folder once a week, skim the sender names, and move any real messages back to your inbox. To move a message out of spam in Gmail: open the message and tap "Not spam" at the top.',
+        content: 'Email spam filters are not perfect. Sometimes a real email from your doctor, a government agency, or a family member ends up in the spam folder by mistake. Check your spam folder once a week, skim the sender names, and move any real messages back to your inbox. To move a message out of spam in Gmail: open the message and tap "Not spam" at the top.',
       },
     ],
   },
@@ -405,8 +403,7 @@ Source: Consumer Reports — TV Buying Guide (consumerreports.org) and Samsung S
       },
       {
         title: 'Plug in the power cord and turn on the TV',
-        content:
-          'Plug the power cord into the back of the TV and then into the wall. Press the power button on the remote — it is usually the button at the very top. The TV will show a startup screen and then begin the setup wizard. If the remote came with batteries already installed, it should work immediately. If not, open the battery compartment on the back of the remote and insert the AA or AAA batteries that came in the box, matching the + and - ends to the diagram inside.',
+        content: 'Plug the power cord into the back of the TV and then into the wall. Press the power button on the remote — it is usually the button at the very top. The TV will show a startup screen and then begin the setup wizard. If the remote came with batteries already installed, it should work right away. If not, open the battery compartment on the back of the remote and insert the AA or AAA batteries that came in the box, matching the + and - ends to the diagram inside.',
       },
       {
         title: 'Follow the on-screen setup wizard',

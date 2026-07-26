@@ -170,7 +170,7 @@ This is one of the most powerful inbox management features in Gmail and requires
       },
       {
         title: `Apply to Existing Emails (Optional)`,
-        content: `At the bottom of the action screen, check "Also apply filter to matching conversations." This applies the new rule to all emails already in your inbox that match the criteria — not just future ones. Great for immediately organizing a backlog of newsletters.`,
+        content: `At the bottom of the action screen, check "Also apply filter to matching conversations." This applies the new rule to all emails already in your inbox that match the criteria — not just future ones. Great for right away organizing a backlog of newsletters.`,
       },
       {
         title: `Save and Test the Filter`,
@@ -285,7 +285,7 @@ Night Mode works by keeping the shutter open slightly longer (long exposure) whi
 
 On Samsung phones, Night Mode is called "Night mode" and appears as a separate camera mode. On Pixel phones, Night Sight activates automatically in the dark or can be selected manually. Other Android phones may call it "Night mode," "Pro Night," or similar.
 
-Night Mode works best when both you and your subject are relatively still. The longer capture process — typically 2–5 seconds — means even small movements can introduce blur. Setting your phone against a surface or railing helps significantly.
+Night Mode works best when both you and your subject are relatively still. The longer capture process — typically 2–5 seconds — means even small movements can introduce blur. Setting your phone against a surface or railing helps a lot.
 
 For outdoor night scenes like city streets, restaurant lighting, or holiday lights, Night Mode produces dramatically better results than the standard auto mode.`,
     steps: [
@@ -471,7 +471,7 @@ For apps, Spotlight is faster than searching your home screen pages. Type the fi
       },
       {
         title: `Search for Apps`,
-        content: `Type the first few letters of any app name. The app appears in results immediately — even if you cannot remember which screen or folder it is on. Tap the app icon in the results to open it. This works for every app installed on your phone.`,
+        content: `Type the first few letters of any app name. The app appears in results right away — even if you cannot remember which screen or folder it is on. Tap the app icon in the results to open it. This works for every app installed on your phone.`,
       },
       {
         title: `Find People and Recent Conversations`,
@@ -591,7 +591,7 @@ The flashlight uses the camera flash LED, which runs warm during extended use. Y
     steps: [
       {
         title: `Turn On the Flashlight From the Lock Screen`,
-        content: `When your phone screen is dark (lock screen showing), look in the bottom-left corner. You will see a small flashlight icon. Press and hold it (Haptic Touch) — the flashlight turns on immediately. You do not need to unlock your phone.`,
+        content: `When your phone screen is dark (lock screen showing), look in the bottom-left corner. You will see a small flashlight icon. Press and hold it (Haptic Touch) — the flashlight turns on right away. You do not need to unlock your phone.`,
         tip: `Quick Tip: To turn off: press and hold the flashlight icon in the lock screen corner again, or swipe up to open Control Center and tap the flashlight button.`,
       },
       {
@@ -721,7 +721,7 @@ You can even scroll through multi-page PDFs or use arrow keys to browse through 
       },
       {
         title: `Press Space Bar to Preview`,
-        content: `With the file selected, press the Space bar on your keyboard. A preview window appears immediately, showing the file's contents. For a photo, you see the full image. For a PDF, you see the pages. For a video, it starts playing automatically.`,
+        content: `With the file selected, press the Space bar on your keyboard. A preview window appears right away, showing the file's contents. For a photo, you see the full image. For a PDF, you see the pages. For a video, it starts playing automatically.`,
       },
       {
         title: `Navigate Multi-Page Documents`,

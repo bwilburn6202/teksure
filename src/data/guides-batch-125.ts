@@ -87,7 +87,7 @@ Anyone who mails paper checks, receives paper statements, or leaves mail in an u
 
 **What to do if it happens to you**
 
-If you discover a fraudulent check was paid from your account, call your bank immediately. Banks are required to investigate check fraud claims under federal law. File a report with the US Postal Inspection Service at postalinspectors.uspis.gov, with your local police, and with the FTC at reportfraud.ftc.gov. Also consider placing a fraud alert on your credit report at annualcreditreport.com.
+If you discover a fraudulent check was paid from your account, call your bank right away. Banks are required to investigate check fraud claims under federal law. File a report with the US Postal Inspection Service at postalinspectors.uspis.gov, with your local police, and with the FTC at reportfraud.ftc.gov. Also consider placing a fraud alert on your credit report at annualcreditreport.com.
 
 (Sources: FTC Consumer Information, consumer.ftc.gov; US Postal Inspection Service, postalinspectors.uspis.gov; AARP Fraud Watch Network, aarp.org/money/scams-fraud)`,
     steps: [
@@ -103,7 +103,7 @@ If you discover a fraudulent check was paid from your account, call your bank im
       },
       {
         title: 'Sign up for USPS Informed Delivery',
-        content: 'Informed Delivery is a free service from the US Postal Service that emails you photos of your incoming mail each morning before it arrives. You can see exactly what should be in your mailbox that day. If mail is missing, you will know to call your local post office immediately. Sign up at informeddelivery.usps.com — you will need to create a free USPS account.',
+        content: 'Informed Delivery is a free service from the US Postal Service that emails you photos of your incoming mail each morning before it arrives. You can see exactly what should be in your mailbox that day. If mail is missing, you will know to call your local post office right away. Sign up at informeddelivery.usps.com — you will need to create a free USPS account.',
         tip: 'Quick Tip: Informed Delivery also shows you outgoing mail scanned at postal facilities. If you mailed a check and it disappears from tracking, that is a red flag worth investigating.',
       },
       {
@@ -113,11 +113,11 @@ If you discover a fraudulent check was paid from your account, call your bank im
       },
       {
         title: 'Check your bank statements frequently',
-        content: 'Review your checking account statement or online account at least once a week. Look for any check payments you do not recognize, especially for amounts larger than what you actually wrote. Most banks allow you to report fraudulent check transactions within 30 to 60 days, but the sooner you catch it, the easier it is to resolve. Call the number on the back of your debit card immediately if you spot anything suspicious.',
+        content: 'Review your checking account statement or online account at least once a week. Look for any check payments you do not recognize, especially for amounts larger than what you actually wrote. Most banks allow you to report fraudulent check transactions within 30 to 60 days, but the sooner you catch it, the easier it is to resolve. Call the number on the back of your debit card right away if you spot anything suspicious.',
       },
       {
         title: 'Consider a locking mailbox',
-        content: 'Locking mailboxes accept incoming mail through a slot but require a key to retrieve it. They are available at hardware stores for $50 to $150 and significantly reduce the risk of mail theft. If you are renting, ask your landlord — some apartment buildings can install cluster locking units. The US Postal Service also offers PO Boxes at your local post office starting around $5 to $25 per month for secure incoming mail.',
+        content: 'Locking mailboxes accept incoming mail through a slot but require a key to retrieve it. They are available at hardware stores for $50 to $150 and a lot reduce the risk of mail theft. If you are renting, ask your landlord — some apartment buildings can install cluster locking units. The US Postal Service also offers PO Boxes at your local post office starting around $5 to $25 per month for secure incoming mail.',
       },
     ],
   },
@@ -165,7 +165,7 @@ This feature is called Continuity Camera. Your iPhone or iPad does the camera wo
       },
       {
         title: 'Start or receive a call',
-        content: 'From the Apple TV FaceTime app, you can tap "New FaceTime" to call a contact (you will select from your iPhone\'s contacts). Or, when someone calls you on FaceTime, you will see the incoming call appear on your TV screen in addition to your iPhone. Answer it on either device — if you answer on the TV, the call immediately goes to the big screen.',
+        content: 'From the Apple TV FaceTime app, you can tap "New FaceTime" to call a contact (you will select from your iPhone\'s contacts). Or, when someone calls you on FaceTime, you will see the incoming call appear on your TV screen in addition to your iPhone. Answer it on either device — if you answer on the TV, the call right away goes to the big screen.',
       },
       {
         title: 'Position your iPhone for the best camera angle',
@@ -212,7 +212,7 @@ You do not need to be an AARP member to use the Fraud Watch Network at aarp.org/
       {
         title: 'Look for discounted phone plans',
         content: 'AARP has historically partnered with wireless carriers to offer members discounted phone plans. As of 2026, check aarp.org/benefits under "Phones and Wireless" for current partner offers. Consumer Cellular, in particular, has had a long partnership with AARP offering member discounts on monthly plans. Discounts typically range from 5% to 20% off regular plan pricing.',
-        tip: 'Quick Tip: If you are paying more than $40 per month for a phone plan and only make calls, send texts, and do light internet browsing, you may be significantly overpaying. AARP-partnered plans targeting seniors often offer lower-data plans at reduced prices.',
+        tip: 'Quick Tip: If you are paying more than $40 per month for a phone plan and only make calls, send texts, and do light internet browsing, you may be a lot overpaying. AARP-partnered plans targeting seniors often offer lower-data plans at reduced prices.',
       },
       {
         title: 'Use AARP\'s free cybersecurity tools',

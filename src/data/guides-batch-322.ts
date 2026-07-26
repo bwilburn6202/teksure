@@ -17,7 +17,7 @@ export const guidesBatch322: Guide[] = [
     publishedAt: "2026-07-19",
     lastVerifiedAt: "2026-07-19",
     difficulty: "Beginner",
-    body: "A fake tech support pop-up is a full-screen warning that suddenly appears while browsing the web, claiming your computer is infected with a virus and telling you to call a phone number immediately. These pop-ups often play a loud alarm sound, lock the screen so it looks like you can't close it, and use official-looking logos to appear legitimate. None of it is real. Apple, Microsoft, and Google never contact you through a browser pop-up, and they never ask you to call a phone number to fix your computer.\n\nThe goal of this scam is to get you on the phone with someone who will either charge you hundreds of dollars for fake 'repairs,' ask for remote access to your computer to steal information, or both. The pop-up itself cannot actually harm your computer — it's just a webpage designed to look scary and urgent so you react before thinking it through.\n\nThe safest response is to never call the number, never grant remote access to anyone who contacts you this way, and close the browser using the methods below rather than clicking anything inside the pop-up itself, since some fake 'close' buttons actually trigger a download. Source: consumer.ftc.gov/articles/tech-support-scams and support.apple.com/en-us/HT204174.",
+    body: "A fake tech support pop-up is a full-screen warning that suddenly appears while browsing the web, claiming your computer is infected with a virus and telling you to call a phone number right away. These pop-ups often play a loud alarm sound, lock the screen so it looks like you can't close it, and use official-looking logos to appear legitimate. None of it is real. Apple, Microsoft, and Google never contact you through a browser pop-up, and they never ask you to call a phone number to fix your computer.\n\nThe goal of this scam is to get you on the phone with someone who will either charge you hundreds of dollars for fake 'repairs,' ask for remote access to your computer to steal information, or both. The pop-up itself cannot actually harm your computer — it's just a webpage designed to look scary and urgent so you react before thinking it through.\n\nThe safest response is to never call the number, never grant remote access to anyone who contacts you this way, and close the browser using the methods below rather than clicking anything inside the pop-up itself, since some fake 'close' buttons actually trigger a download. Source: consumer.ftc.gov/articles/tech-support-scams and support.apple.com/en-us/HT204174.",
     steps: [
       {
         title: "Do not call the phone number on the screen",
@@ -77,7 +77,7 @@ export const guidesBatch322: Guide[] = [
       },
       {
         title: "Empty 'Recently Deleted' albums",
-        content: "Deleted photos sit in a 'Recently Deleted' album for 30 days before they're gone for good, still using up space. Open the Photos app, tap Albums, scroll to Recently Deleted, tap Select, then Delete All to clear them immediately.",
+        content: "Deleted photos sit in a 'Recently Deleted' album for 30 days before they're gone for good, still using up space. Open the Photos app, tap Albums, scroll to Recently Deleted, tap Select, then Delete All to clear them right away.",
       },
     ],
   },

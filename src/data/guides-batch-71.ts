@@ -17,7 +17,7 @@ The most common use is launching apps. Instead of hunting through the Dock or Ap
 
 Spotlight also searches your entire computer — files, folders, emails, contacts, calendar events, messages, notes, and even content inside documents. If you remember writing something in a PDF last year but can't find the file, type a phrase from it and Spotlight will surface it.
 
-One feature that surprises people: Spotlight works as a calculator. Type "127 * 4" and you'll see the answer immediately without opening a calculator app. It handles basic math, percentages, and even complex formulas.
+One feature that surprises people: Spotlight works as a calculator. Type "127 * 4" and you'll see the answer right away without opening a calculator app. It handles basic math, percentages, and even complex formulas.
 
 Unit and currency conversions work the same way. Type "10 miles in km" or "32 Fahrenheit in Celsius" and the conversion appears instantly. Type "100 USD in EUR" for a quick currency estimate (using current rates if you're connected to the internet).
 
@@ -31,7 +31,7 @@ Quick Tip: Press Command+Space and type a website name — Spotlight will offer 
     steps: [
       {
         title: `Open Spotlight`,
-        content: `Press Command+Space on your keyboard. A search bar appears in the center of your screen. Start typing immediately — results appear as you type.`,
+        content: `Press Command+Space on your keyboard. A search bar appears in the center of your screen. Start typing right away — results appear as you type.`,
         tip: `You can also click the magnifying glass icon in the top-right corner of your menu bar to open Spotlight.`,
       },
       {
@@ -70,7 +70,7 @@ Many Mac users don't know Hot Corners exist, but once you set them up, they beco
 
 Here's how to set them up. Open System Settings (the gear icon in your Dock or Apple menu), then go to Desktop & Dock. Scroll down to the bottom and click the "Hot Corners" button. A small window appears showing all four corners. Click the dropdown for any corner to pick an action.
 
-The available actions are: Mission Control (shows all open windows spread out), Application Windows (shows all windows for the current app), Desktop (hides all windows and shows your Desktop), Launchpad (the full-screen grid of all your apps), Screen Saver (starts the screen saver immediately), Display Sleep (turns off the screen but doesn't log you out), Lock Screen (locks your account), Notification Center (slides in the right-side panel), and Quick Note (opens a floating notepad).
+The available actions are: Mission Control (shows all open windows spread out), Application Windows (shows all windows for the current app), Desktop (hides all windows and shows your Desktop), Launchpad (the full-screen grid of all your apps), Screen Saver (starts the screen saver right away), Display Sleep (turns off the screen but doesn't log you out), Lock Screen (locks your account), Notification Center (slides in the right-side panel), and Quick Note (opens a floating notepad).
 
 A good starting setup for many people: top-left corner for Mission Control, bottom-left for the Desktop, bottom-right to Lock Screen, and top-right for Notification Center. But experiment — there's no wrong answer.
 
@@ -160,7 +160,7 @@ If a device isn't showing up, try toggling Bluetooth off and back on, move the d
     difficulty: `Beginner`,
     readTime: `4 min`,
     publishedAt: `2026-04-20`,
-    body: `If you're coming from an iPhone or iPad, Launchpad will feel immediately familiar. It's a full-screen display of all the apps installed on your Mac, arranged in a grid — exactly like the home screen on your iPhone. Many Mac users prefer it to digging through the Dock or opening the Applications folder.
+    body: `If you're coming from an iPhone or iPad, Launchpad will feel right away familiar. It's a full-screen display of all the apps installed on your Mac, arranged in a grid — exactly like the home screen on your iPhone. Many Mac users prefer it to digging through the Dock or opening the Applications folder.
 
 To open Launchpad, click its icon in the Dock — it looks like a silver rocket ship on a grid of colored squares. If it's not in your Dock, open Spotlight (Command+Space) and type "Launchpad." You can also open it by pinching with four fingers on a trackpad.
 
@@ -292,7 +292,7 @@ One thing to keep in mind: background blur and virtual backgrounds require your 
       },
       {
         title: `Turn off background effects`,
-        content: `Open the background panel again the same way you opened it. Click None at the top of the panel to return to showing your real background. The change takes effect immediately.`,
+        content: `Open the background panel again the same way you opened it. Click None at the top of the panel to return to showing your real background. The change takes effect right away.`,
       },
     ],
   },
@@ -360,19 +360,19 @@ For sound: use earbuds or headphones with a built-in microphone. This eliminates
 
 The difference comes down to image sensor quality, lens design, and how the camera handles low-light situations. A $60 external webcam handles dim rooms far better than a built-in laptop camera, and the image tends to be sharper and more natural looking.
 
-Here are the most popular options at different price points. At the budget end, the Logitech C270 (around $30) and C310 (around $40) are reliable choices for basic video calling — better than most built-in cameras and widely compatible. They connect via USB and work immediately without installing any software.
+Here are the most popular options at different price points. At the budget end, the Logitech C270 (around $30) and C310 (around $40) are reliable choices for basic video calling — better than most built-in cameras and widely compatible. They connect via USB and work right away without installing any software.
 
 For a mid-range upgrade, the Logitech C920 (around $80–100) is one of the most recommended webcams available. It shoots 1080p video, handles low light reasonably well, and has a built-in microphone that's decent for calls. The Logitech Brio 300 is a newer model in a similar range with a compact design.
 
 If you want the best image quality available for a home webcam, the Logitech Brio 4K (around $150–200) shoots true 4K video and has outstanding autofocus and light correction. The Elgato Facecam Pro is another high-end option popular with people who record videos for YouTube or streaming.
 
-Setting up any of these is the same: plug the USB cable into your computer. On Zoom, go to Settings > Video > Camera and select the new webcam from the dropdown. On Teams, go to Settings > Devices > Camera. The webcam takes over immediately.
+Setting up any of these is the same: plug the USB cable into your computer. On Zoom, go to Settings > Video > Camera and select the new webcam from the dropdown. On Teams, go to Settings > Devices > Camera. The webcam takes over right away.
 
-If you own an iPhone (model 11 or newer) running iOS 17 or later, and you have a Mac, you may not need to buy a webcam at all. Apple's Continuity Camera feature uses your iPhone as a webcam wirelessly. The iPhone camera is significantly better than any standalone webcam in the same price range.`,
+If you own an iPhone (model 11 or newer) running iOS 17 or later, and you have a Mac, you may not need to buy a webcam at all. Apple's Continuity Camera feature uses your iPhone as a webcam wirelessly. The iPhone camera is a lot better than any standalone webcam in the same price range.`,
     steps: [
       {
         title: `Decide whether you need an upgrade`,
-        content: `Take a test video call or record yourself in your meeting app's preview. If your image looks grainy, too dark, or blurry even in decent lighting, an external webcam will help. If you only take occasional calls, your built-in camera may be sufficient.`,
+        content: `Take a test video call or record yourself in your meeting app's preview. If your image looks grainy, too dark, or blurry even in decent lighting, an external webcam will help. If you only take occasional calls, your built-in camera may be enough.`,
       },
       {
         title: `Choose a webcam for your budget`,
@@ -381,11 +381,11 @@ If you own an iPhone (model 11 or newer) running iOS 17 or later, and you have a
       },
       {
         title: `Connect and position the webcam`,
-        content: `Plug the webcam's USB cable into your computer. No driver installation is needed for most Logitech webcams — they work immediately. Mount the webcam on top of your monitor so it's at eye level, facing you directly.`,
+        content: `Plug the webcam's USB cable into your computer. No driver installation is needed for most Logitech webcams — they work right away. Mount the webcam on top of your monitor so it's at eye level, facing you directly.`,
       },
       {
         title: `Select the webcam in your meeting app`,
-        content: `Open Zoom, Teams, or whichever app you use. Go to Settings (usually a gear icon), then find the Video or Camera section. Choose your new webcam from the dropdown list. The preview should update immediately to show the new camera's feed.`,
+        content: `Open Zoom, Teams, or whichever app you use. Go to Settings (usually a gear icon), then find the Video or Camera section. Choose your new webcam from the dropdown list. The preview should update right away to show the new camera's feed.`,
       },
       {
         title: `Add a privacy cover when not in use`,
@@ -419,7 +419,7 @@ Recommendations are written endorsements from former colleagues, managers, or cl
     steps: [
       {
         title: `Create your account and add a profile photo`,
-        content: `Go to linkedin.com and create a free account. Upload a clear, recent photo where your face is visible and well-lit. A plain or neutral background is ideal. Profiles with photos get significantly more views than those without.`,
+        content: `Go to linkedin.com and create a free account. Upload a clear, recent photo where your face is visible and well-lit. A plain or neutral background is ideal. Profiles with photos get a lot more views than those without.`,
         tip: `Your photo should look like you today, not ten years ago. If someone is meeting you in person after connecting on LinkedIn, they should recognize you from your photo.`,
       },
       {
@@ -557,7 +557,7 @@ The app is built around short videos, typically 15 seconds to a few minutes long
 
 You can browse TikTok without creating an account by going to tiktok.com in a browser, though the experience is better in the app. Download the TikTok app from the App Store (iPhone) or Google Play (Android) and create a free account using your email address or phone number.
 
-To shape your feed, actively interact with content you like: watch videos fully, use the Like button (heart icon), and tap Follow on creators whose content you want to see more of. For content you don't want, press and hold on the video and tap "Not interested" — the algorithm adjusts immediately.
+To shape your feed, actively interact with content you like: watch videos fully, use the Like button (heart icon), and tap Follow on creators whose content you want to see more of. For content you don't want, press and hold on the video and tap "Not interested" — the algorithm adjusts right away.
 
 Popular content for older adults includes: cooking and recipes, gardening tutorials, home organization tips, travel destinations, history and culture, health and wellness, humor and comedy, nature and wildlife, and grandparent-grandchild relationship content.
 
@@ -571,7 +571,7 @@ Privacy settings are worth configuring, especially if you prefer not to have you
       },
       {
         title: `Start watching and shaping your feed`,
-        content: `The first screen you see is your For You Page — videos curated for you. Swipe up to see the next video. Watch videos fully and tap the heart to like them. Swipe past quickly or tap "Not interested" for content you don't want. The feed improves significantly within the first 15–20 minutes of use.`,
+        content: `The first screen you see is your For You Page — videos curated for you. Swipe up to see the next video. Watch videos fully and tap the heart to like them. Swipe past quickly or tap "Not interested" for content you don't want. The feed improves a lot within the first 15–20 minutes of use.`,
         tip: `The algorithm is fast. If you like three or four cooking videos in a row, your feed will shift noticeably toward cooking content within the same session.`,
       },
       {
@@ -619,7 +619,7 @@ Managing your group notifications is worth doing early — active groups can gen
       },
       {
         title: `Join a group`,
-        content: `Tap "Join Group" on any group page. For Public groups, you're added immediately. For Private groups, you may need to answer a few brief questions about why you want to join. An admin reviews your request — approval usually takes anywhere from a few minutes to a couple of days.`,
+        content: `Tap "Join Group" on any group page. For Public groups, you're added right away. For Private groups, you may need to answer a few brief questions about why you want to join. An admin reviews your request — approval usually takes anywhere from a few minutes to a couple of days.`,
       },
       {
         title: `Read the group rules before posting`,
@@ -631,7 +631,7 @@ Managing your group notifications is worth doing early — active groups can gen
       },
       {
         title: `Manage group notifications`,
-        content: `Active groups can flood your notifications. Tap the bell icon near the top of the group page and change the setting from "All Posts" to "Highlights." This reduces notifications significantly while still alerting you to the most important activity. You can also mute a group entirely while staying joined.`,
+        content: `Active groups can flood your notifications. Tap the bell icon near the top of the group page and change the setting from "All Posts" to "Highlights." This reduces notifications a lot while still alerting you to the most important activity. You can also mute a group entirely while staying joined.`,
       },
     ],
   },
@@ -649,7 +649,7 @@ Managing your group notifications is worth doing early — active groups can gen
 
 Getting started is free. Download Instagram from the App Store (iPhone) or Google Play (Android), then create an account using your email address or phone number. You'll choose a username — something like your name or a variation of it works fine. Add a profile photo and a short bio (a sentence or two about yourself is plenty).
 
-Once your account is set up, the first thing to do is find people you know. Tap the magnifying glass icon to Search, and look up family members or friends by name. When you find someone, tap Follow to see their posts in your feed. For public accounts, you'll start seeing their posts immediately. For private accounts, they'll need to approve your follow request.
+Once your account is set up, the first thing to do is find people you know. Tap the magnifying glass icon to Search, and look up family members or friends by name. When you find someone, tap Follow to see their posts in your feed. For public accounts, you'll start seeing their posts right away. For private accounts, they'll need to approve your follow request.
 
 Your main feed shows photos and videos from everyone you follow. Scroll down to browse. Tap the heart icon to like a post. Tap the speech bubble icon to leave a comment. To share someone else's post to your own Stories, tap the paper airplane icon.
 
@@ -744,7 +744,7 @@ Privacy settings mirror Instagram — if your Instagram account is private, your
 
 To use WhatsApp Web, go to web.whatsapp.com in any web browser on your computer. You'll see a QR code on screen — a square barcode that your phone camera needs to scan.
 
-On your phone, open WhatsApp and tap the three-dot menu (Android) or the Settings icon (iPhone). Look for "Linked Devices" and tap it. Tap "Link a Device." Your phone's camera activates. Point it at the QR code on your computer screen until WhatsApp recognizes it. The connection happens in a few seconds, and your conversations appear on the computer screen immediately.
+On your phone, open WhatsApp and tap the three-dot menu (Android) or the Settings icon (iPhone). Look for "Linked Devices" and tap it. Tap "Link a Device." Your phone's camera activates. Point it at the QR code on your computer screen until WhatsApp recognizes it. The connection happens in a few seconds, and your conversations appear on the computer screen right away.
 
 From this point on, you can type messages using your computer keyboard, which is much faster and more comfortable than typing on a phone. You can also drag and drop files, documents, and photos from your computer directly into a chat to send them — excellent for sharing documents or photos stored on your Mac or PC.
 
@@ -757,7 +757,7 @@ You can link up to four devices to one WhatsApp account. This includes tablets a
       {
         title: `Open WhatsApp Web on your computer`,
         content: `On your computer, open any web browser and go to web.whatsapp.com. You'll see a large QR code in the center of the screen. Keep this page open while you complete the next step.`,
-        tip: `If you use WhatsApp frequently on your computer, download the free WhatsApp Desktop app from whatsapp.com/download for a better experience than the browser version.`,
+        tip: `If you use WhatsApp often on your computer, download the free WhatsApp Desktop app from whatsapp.com/download for a better experience than the browser version.`,
       },
       {
         title: `Scan the QR code from your phone`,
@@ -796,7 +796,7 @@ To get started, download the Telegram desktop app from telegram.org/desktop. Cho
 
 When you first open it, Telegram asks for your phone number. Enter the number associated with your Telegram account. A verification code is sent to you via the Telegram app on your phone (or via SMS if needed). Enter that code on the computer and you're logged in.
 
-All your existing conversations, channels, and groups appear immediately on the desktop app. The interface has your chats listed on the left and the active conversation on the right — similar to most messaging apps.
+All your existing conversations, channels, and groups appear right away on the desktop app. The interface has your chats listed on the left and the active conversation on the right — similar to most messaging apps.
 
 One of Telegram's most useful features is its file sharing capability. You can send files up to 2GB per file — far more than most other messaging apps. This makes it excellent for sharing large videos, photo albums, or document packages with family or colleagues.
 
@@ -850,7 +850,7 @@ One thing to know about message history: when you link a new device, only recent
 
 Using Signal on the desktop is largely the same experience as using it on your phone, but with the advantage of a full keyboard. The Note to Self conversation (a chat with yourself) is particularly useful — send yourself reminders, save links, or transfer files between your phone and computer by sending them to Note to Self and accessing them on the other device.
 
-Always keep Signal updated — signal.org releases security updates frequently, and running an outdated version reduces your protection.`,
+Always keep Signal updated — signal.org releases security updates often, and running an outdated version reduces your protection.`,
     steps: [
       {
         title: `Download Signal Desktop`,
@@ -871,7 +871,7 @@ Always keep Signal updated — signal.org releases security updates frequently, 
       },
       {
         title: `Keep Signal updated`,
-        content: `Signal releases updates frequently for security reasons. On Mac, open Signal and check the menu bar for update prompts, or go to signal.org/download to get the latest version. On Windows, Signal typically updates automatically. Running an outdated version can reduce your security.`,
+        content: `Signal releases updates often for security reasons. On Mac, open Signal and check the menu bar for update prompts, or go to signal.org/download to get the latest version. On Windows, Signal typically updates automatically. Running an outdated version can reduce your security.`,
         warning: `If your phone is off for an extended period, the desktop app will still work for a time, but some features may be limited. Keep your phone charged and connected to keep both devices in sync.`,
       },
     ],
@@ -894,7 +894,7 @@ To get started, go to discord.com and click Download for Free, or download the a
 
 To join a server, you typically need an invite link — a URL that starts with discord.gg/. Clicking the link while logged into Discord (or the app) brings up a prompt to join the server. You can also discover public servers at disboard.org, a directory of public Discord communities organized by category.
 
-Once you're inside a server, the layout has channels listed on the left side. Click any text channel to read the conversation and participate. For voice channels, clicking joins you immediately — you'll be able to hear and speak with others in the channel in real time. Click the channel name again or the disconnect button to leave a voice channel.
+Once you're inside a server, the layout has channels listed on the left side. Click any text channel to read the conversation and participate. For voice channels, clicking joins you right away — you'll be able to hear and speak with others in the channel in real time. Click the channel name again or the disconnect button to leave a voice channel.
 
 Notifications can be overwhelming in active servers. Right-click any server name and choose "Notification Settings" to reduce alerts. Setting a server to "Mentions Only" means you'll only get a notification when someone specifically tags your username — much quieter.
 
@@ -1061,7 +1061,7 @@ If you have an Apple Magic Keyboard with a trackpad, you can control the iPad en
       },
       {
         title: `Learn navigation shortcuts`,
-        content: `Practice these core shortcuts: Command+Space (open Spotlight to search or launch apps), Command+H (go to the Home Screen), Command+Tab (see recently used apps and switch between them). These three shortcuts alone significantly reduce how often you need to touch the screen.`,
+        content: `Practice these core shortcuts: Command+Space (open Spotlight to search or launch apps), Command+H (go to the Home Screen), Command+Tab (see recently used apps and switch between them). These three shortcuts alone a lot reduce how often you need to touch the screen.`,
       },
       {
         title: `Use text editing shortcuts`,
@@ -1089,7 +1089,7 @@ Before purchasing, it's important to check which Apple Pencil model works with y
 
 There are currently three Apple Pencil models. The first generation Apple Pencil charges by plugging a Lightning adapter into the bottom of certain iPads or by using a USB-C adapter on newer models. It supports pressure sensitivity and tilt detection for natural drawing. The second generation Apple Pencil attaches magnetically to the flat side of iPad Pro and iPad Air models, and charges wirelessly just by being clipped to the side. It pairs automatically on contact. The third generation Apple Pencil (USB-C) is designed for newer iPad models with USB-C ports and offers a more affordable entry point.
 
-Once connected, the Apple Pencil works immediately in the built-in Notes app. Open Notes, create a new note, and start writing or drawing — the iPad distinguishes between your finger (which scrolls and taps) and the Pencil (which draws and writes). This palm rejection means you can rest your hand naturally on the screen while writing without leaving ink marks.
+Once connected, the Apple Pencil works right away in the built-in Notes app. Open Notes, create a new note, and start writing or drawing — the iPad distinguishes between your finger (which scrolls and taps) and the Pencil (which draws and writes). This palm rejection means you can rest your hand naturally on the screen while writing without leaving ink marks.
 
 The Pencil detects pressure — press harder for a thicker, darker line, lighter for a fine line. It also detects angle, so tilting the Pencil to draw with the side creates broad shading strokes, like a real pencil.
 
@@ -1201,7 +1201,7 @@ For brightness: in a lit room, you typically want the ring light set to 50–70%
       },
       {
         title: `Position the ring light correctly`,
-        content: `Place the ring light directly in front of you at approximately eye level. The light should face you head-on, not from an angle. Your laptop or webcam should be positioned in the center of the ring or just behind it, so the camera is looking through the light — this produces the cleanest, most flattering result.`,
+        content: `Place the ring light directly in front of you at about eye level. The light should face you head-on, not from an angle. Your laptop or webcam should be positioned in the center of the ring or just behind it, so the camera is looking through the light — this produces the cleanest, most flattering result.`,
         warning: `A ring light positioned too high casts shadows under your eyes and chin. Too far to one side creates uneven lighting. Keep it directly in front of you, at eye level.`,
       },
       {
@@ -1290,7 +1290,7 @@ By default, the sidebar includes sections for Favorites (AirDrop, Recent, Applic
 
 Customizing it takes about two minutes and makes a noticeable difference in how efficiently you move around your files.
 
-Adding a folder to the sidebar is as straightforward as dragging it. Open Finder, navigate to the folder you want to add — maybe it's a project folder you're working on, your Photos library folder, or a frequently visited folder somewhere on your drive. Drag that folder into the Favorites section on the left sidebar and release when a blue line appears. The folder is now a permanent sidebar shortcut that appears in every Finder window.
+Adding a folder to the sidebar is as straightforward as dragging it. Open Finder, navigate to the folder you want to add — maybe it's a project folder you're working on, your Photos library folder, or a often visited folder somewhere on your drive. Drag that folder into the Favorites section on the left sidebar and release when a blue line appears. The folder is now a permanent sidebar shortcut that appears in every Finder window.
 
 You can also add a folder with a right-click: Control-click (or right-click) the folder and choose "Add to Sidebar" from the menu.
 

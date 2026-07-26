@@ -566,7 +566,7 @@ If you do not currently have a library card, many libraries now offer instant di
       { title: 'Download the Libby app', content: 'Search for "Libby, by OverDrive" in the App Store or Google Play Store. Install the free app. On Amazon Fire tablets, search in the Amazon Appstore.' },
       { title: 'Find your library', content: `Open Libby and tap "I'll search for a library." Type your city or the name of your library system (for example, "Chicago Public Library" or "Multnomah County Library"). Select your library from the results.` },
       { title: 'Sign in with your library card', content: 'Tap "Sign In With My Card" and enter your library card number (the long number on the back of your card) and your PIN. If you do not know your PIN, contact your library — it is often your birth year or a 4-digit number you set up.' },
-      { title: 'Browse and borrow a book', content: 'Tap "Library" to browse available titles. Search for a book by title or author, or browse categories. When you find a book you want, tap "Borrow" — if it is available, it goes to your loans immediately. If there is a wait list, tap "Place Hold" and Libby will notify you when it is your turn.' },
+      { title: 'Browse and borrow a book', content: 'Tap "Library" to browse available titles. Search for a book by title or author, or browse categories. When you find a book you want, tap "Borrow" — if it is available, it goes to your loans right away. If there is a wait list, tap "Place Hold" and Libby will notify you when it is your turn.' },
       { title: 'Read or listen to your book', content: 'Tap the "Shelf" button (the person icon) to see your borrowed books. Tap any book to open it. For audiobooks, tap the headphones icon to start listening. Tap the "Aa" icon while reading to change font size and background color.' },
     ],
   },
@@ -755,7 +755,7 @@ The most common reason home photo prints look dull or blurry is using regular co
       { title: 'Load the photo paper into the printer', content: `Check your printer's manual for which tray to use for photo paper and which side faces up — many inkjet printers print on the glossy side, but this varies. Load a small number of sheets at a time (3–5) rather than a full stack to avoid paper jams.` },
       { title: 'Open your photo on your computer', content: 'Find the photo you want to print in your Photos app, Windows Photos, or wherever you store images. Open it and press Ctrl+P (Windows) or Command+P (Mac) to open the print dialog.' },
       { title: 'Set the paper size and print quality', content: 'In the print dialog, select your printer from the dropdown. Look for a "Properties" or "More Settings" button to access paper settings. Set the paper size to match your photo paper (e.g., 4x6 inches) and set the quality to "Best" or "Photo" for the sharpest result.' },
-      { title: 'Print and let the ink dry', content: 'Click "Print" and wait for the page to come out. Do not touch the printed surface immediately — inkjet ink needs a minute or two to dry completely. If the colors look dull, check that you selected "Best" quality in the print settings and that you are using actual photo paper.' },
+      { title: 'Print and let the ink dry', content: 'Click "Print" and wait for the page to come out. Do not touch the printed surface right away — inkjet ink needs a minute or two to dry completely. If the colors look dull, check that you selected "Best" quality in the print settings and that you are using actual photo paper.' },
     ],
   },
 ];

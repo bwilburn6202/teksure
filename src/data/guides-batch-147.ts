@@ -46,7 +46,7 @@ That said, it is always a smart habit to back up your phone before any major upd
 
 **What to do if an update fails**
 
-Occasionally an update gets stuck or shows an error. If this happens: restart your phone by holding the power button and tapping Restart. Then try the update again. If it fails a second time, make sure you have enough free storage — go to Settings, then General, then iPhone Storage (iPhone) or Settings, then Storage (Android) to check. Updates need several gigabytes of free space to install. If storage is too low, delete a few old apps or photos you no longer need, then try again.
+Sometimes an update gets stuck or shows an error. If this happens: restart your phone by holding the power button and tapping Restart. Then try the update again. If it fails a second time, make sure you have enough free storage — go to Settings, then General, then iPhone Storage (iPhone) or Settings, then Storage (Android) to check. Updates need several gigabytes of free space to install. If storage is too low, delete a few old apps or photos you no longer need, then try again.
 
 If problems continue, the Apple Support website (support.apple.com) and Google Support (support.google.com) both have step-by-step troubleshooting for failed updates. You can also call Apple Support at 1-800-275-2273 or visit a carrier store for hands-on help.
 
@@ -196,7 +196,7 @@ If you add an event on your computer, it automatically appears on your phone wit
 **Common types of spam texts**
 
 - **Fake delivery notifications:** "Your package could not be delivered. Click here to reschedule." These impersonate UPS, FedEx, or the US Postal Service.
-- **IRS or Social Security alerts:** "Your Social Security number has been suspended. Call immediately." The government does not contact you by text for these matters.
+- **IRS or Social Security alerts:** "Your Social Security number has been suspended. Call right away." The government does not contact you by text for these matters.
 - **Prize scams:** "Congratulations! You won a $500 gift card. Claim now." There is no prize.
 - **Bank fraud alerts:** "Unusual activity on your account. Verify now." These impersonate your bank to steal login information.
 

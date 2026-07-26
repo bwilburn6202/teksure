@@ -27,7 +27,7 @@ Plan for the upgrade to take 30 to 60 minutes. Keep your PC plugged into power d
     steps: [
       {
         title: `Check compatibility with PC Health Check`,
-        content: `Go to microsoft.com and search for "PC Health Check." Download and run the free tool. It will tell you immediately whether your PC meets the requirements for Windows 11.`,
+        content: `Go to microsoft.com and search for "PC Health Check." Download and run the free tool. It will tell you right away whether your PC meets the requirements for Windows 11.`,
         tip: `If PC Health Check says your PC does not qualify because of TPM 2.0, search your PC manufacturer's website for instructions — sometimes TPM can be turned on in the BIOS settings.`,
       },
       {
@@ -56,7 +56,7 @@ First, check whether your Mac is compatible. Sonoma runs on the iMac from 2019 o
 
 To see which version of macOS you currently have, use that same "About This Mac" screen. If it shows anything older than macOS 14 Sonoma, you are eligible to update for free.
 
-Before updating, do a Time Machine backup. Connect an external hard drive, open Time Machine in System Settings, and run a backup. This ensures you can roll back if anything goes wrong.
+Before updating, do a Time Machine backup. Connect an external hard drive, open Time Machine in System Settings, and run a backup. This makes sure you can roll back if anything goes wrong.
 
 To install Sonoma, go to System Settings (formerly System Preferences), click General, then Software Update. If Sonoma is available for your Mac, it will appear there. Click "Update Now" and follow the prompts. The download is several gigabytes, so it may take 30 minutes to an hour depending on your internet connection, and installation adds another 20 to 30 minutes.
 
@@ -251,7 +251,7 @@ Yummly Premium (a paid subscription) adds video walkthroughs for recipes, which 
     steps: [
       {
         title: `Download Yummly and set up your taste profile`,
-        content: `Download Yummly from the App Store (iPhone) or Google Play (Android). Create a free account and complete the taste profile setup. Choose your preferred cuisines, flag ingredients you dislike, and select any dietary restrictions. This takes about two minutes and significantly improves the recipe suggestions you see.`,
+        content: `Download Yummly from the App Store (iPhone) or Google Play (Android). Create a free account and complete the taste profile setup. Choose your preferred cuisines, flag ingredients you dislike, and select any dietary restrictions. This takes about two minutes and a lot improves the recipe suggestions you see.`,
       },
       {
         title: `Browse recipes and save favorites`,
@@ -356,7 +356,7 @@ Compared to Yummly, Mealime is more structured — it is built specifically for 
     slug: `grocery-budget-tips`,
     title: `How to Use Apps to Stick to Your Grocery Budget`,
     excerpt: `Groceries are one of the biggest household expenses — these apps and strategies help you spend less without eating worse.`,
-    body: `Grocery prices have risen significantly over recent years, and for many households food is now one of the largest monthly expenses after housing. The good news is that a handful of apps and strategies can make a real dent in what you spend at the store, without forcing you to eat less or shop at inconvenient places.
+    body: `Grocery prices have risen a lot over recent years, and for many households food is now one of the largest monthly expenses after housing. The good news is that a handful of apps and strategies can make a real dent in what you spend at the store, without forcing you to eat less or shop at inconvenient places.
 
 Start with the store apps you already have access to. Kroger, Publix, Safeway, H-E-B, Albertsons, and most other major chains have free loyalty apps with digital coupons that you clip inside the app and that apply automatically at checkout. Open the app once a week, clip everything relevant, and the savings stack up without any effort at the register.
 
@@ -366,7 +366,7 @@ Ibotta is a cashback app for groceries. Before you shop, browse offers inside th
 
 Fetch Rewards is simpler — scan any grocery receipt and earn points regardless of what you bought. Points eventually convert to gift cards.
 
-Beyond apps, comparing unit prices (price per ounce or per pound) is one of the most effective budget strategies at any store. Store brands are almost always significantly cheaper than name brands, and in many cases the product is identical or comes from the same factory.
+Beyond apps, comparing unit prices (price per ounce or per pound) is one of the most effective budget strategies at any store. Store brands are almost always a lot cheaper than name brands, and in many cases the product is identical or comes from the same factory.
 
 Meal planning before you shop means you only buy what you will use, which directly cuts the amount of food that ends up thrown away.`,
     category: `financial-tech`,
@@ -454,7 +454,7 @@ Apple Intelligence is a set of AI features that require either an iPhone 15 Pro,
 
 The iPhone 16 Pro models have larger displays than their predecessors — 6.3 inches on the Pro and 6.9 inches on the Pro Max. Both Pro models also support USB 3 speeds through the USB-C port, meaning transferring photos and videos to a computer is dramatically faster.
 
-If you are upgrading from an iPhone 13 or older, you will notice major camera improvements, the new USB-C port, Dynamic Island (which replaced the notch), and significantly better Face ID performance in addition to everything above.`,
+If you are upgrading from an iPhone 13 or older, you will notice major camera improvements, the new USB-C port, Dynamic Island (which replaced the notch), and a lot better Face ID performance in addition to everything above.`,
     category: `phone-guides`,
     tags: [`iPhone 16`, `apple`, `new features`, `camera`, `apple intelligence`],
     thumbnailEmoji: ``,
@@ -656,7 +656,7 @@ Paprika syncs across all your devices through its own sync system, and works com
     slug: `nytimes-cooking-app`,
     title: `How to Use NYT Cooking for Recipes and Meal Ideas`,
     excerpt: `NYT Cooking offers professionally tested recipes from New York Times food editors — worth the subscription for cooking enthusiasts.`,
-    body: `NYT Cooking is the recipe platform from the New York Times, and it has a different character than community-focused apps like Allrecipes. Every recipe has been developed and tested by professional food editors and recipe developers — people whose job is to ensure a recipe works reliably before it gets published. If a NYT Cooking recipe says to roast a chicken at 425 degrees for 45 minutes, that instruction has been tested multiple times in multiple ovens.
+    body: `NYT Cooking is the recipe platform from the New York Times, and it has a different character than community-focused apps like Allrecipes. Every recipe has been developed and tested by professional food editors and recipe developers — people whose job is to make sure a recipe works reliably before it gets published. If a NYT Cooking recipe says to roast a chicken at 425 degrees for 45 minutes, that instruction has been tested multiple times in multiple ovens.
 
 The platform currently offers more than 25,000 recipes covering every cuisine, skill level, and occasion. Subscriptions run around $40 per year (often discounted, especially for existing NYT News subscribers). If you subscribe to the NYT News package, check your account settings — NYT Cooking access may already be included.
 
@@ -809,7 +809,7 @@ One important note about Google Maps offline: downloaded areas expire after 15 d
       {
         title: `Download an offline map in Google Maps`,
         content: `Open Google Maps. Search for the city or region you will be traveling to. When the place name panel appears at the bottom, tap it, then tap the three-dot menu (⋮) at the top right of that panel. Tap "Download offline map." Adjust the selection box to cover the area you need, then tap "Download." Wait for the download to complete before you travel.`,
-        tip: `Download offline maps while connected to Wi-Fi at home to avoid using mobile data and to ensure fast download speeds.`,
+        tip: `Download offline maps while connected to Wi-Fi at home to avoid using mobile data and to make sure fast download speeds.`,
       },
       {
         title: `Manage your offline maps`,

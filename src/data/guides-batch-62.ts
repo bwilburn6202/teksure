@@ -179,7 +179,7 @@ Quick Tip: Medicare.gov has a free Plan Finder tool that lets you compare all Me
       },
       {
         title: `Get help if you need it`,
-        content: `Every state has a free Medicare counseling program called SHIP (State Health Insurance Assistance Program). Trained counselors help you compare plans at no cost. Find your local SHIP at shiphelp.org or call 1-800-MEDICARE.`,
+        content: `Every state has a free Medicare counseling program called SHIP (State Health Insurance Help Program). Trained counselors help you compare plans at no cost. Find your local SHIP at shiphelp.org or call 1-800-MEDICARE.`,
       },
     ],
   },
@@ -211,7 +211,7 @@ A durable power of attorney is a document that gives someone you trust (your "ag
 
 **Healthcare power of attorney and living will**
 
-A healthcare power of attorney names someone to make medical decisions for you if you cannot. A living will (also called an advance directive) states your wishes about life-sustaining treatment. Together, these documents ensure your medical wishes are known and respected.
+A healthcare power of attorney names someone to make medical decisions for you if you cannot. A living will (also called an advance directive) states your wishes about life-sustaining treatment. Together, these documents make sure your medical wishes are known and respected.
 
 **Getting started**
 
@@ -535,7 +535,7 @@ Quick Tip: Always get your loved one's permission before installing any monitori
       },
       {
         title: `Connect with local support`,
-        content: `Technology supports but does not replace local help. Contact your local Area Agency on Aging (eldercare.acl.gov or call 1-800-677-1116) to find local services like meal delivery, in-home aides, and transportation assistance. Building a local care network reduces pressure on everyone.`,
+        content: `Technology supports but does not replace local help. Contact your local Area Agency on Aging (eldercare.acl.gov or call 1-800-677-1116) to find local services like meal delivery, in-home aides, and transportation help. Building a local care network reduces pressure on everyone.`,
       },
     ],
   },
@@ -705,11 +705,11 @@ Quick Tip: If you ever receive a phone call from someone claiming to be your ban
       },
       {
         title: `Set up account alerts`,
-        content: `Log into your bank's website or app and look for "Alerts" or "Notifications" in account settings. Enable text or email alerts for: any transaction over $50, logins from new devices, and any changes to your account information. These alerts tell you immediately if something unusual happens.`,
+        content: `Log into your bank's website or app and look for "Alerts" or "Notifications" in account settings. Enable text or email alerts for: any transaction over $50, logins from new devices, and any changes to your account information. These alerts tell you right away if something unusual happens.`,
       },
       {
         title: `Review your account weekly`,
-        content: `Make it a habit to log into your bank account once a week and scan recent transactions. If you see something you do not recognize, call your bank immediately using the number on the back of your debit card. Most banks have zero-liability policies for fraudulent charges reported quickly.`,
+        content: `Make it a habit to log into your bank account once a week and scan recent transactions. If you see something you do not recognize, call your bank right away using the number on the back of your debit card. Most banks have zero-liability policies for fraudulent charges reported quickly.`,
       },
     ],
   },
@@ -744,7 +744,7 @@ Once strong feelings develop, the requests begin: a medical emergency, a plane t
 
 **If you suspect a romance scam**
 
-Stop sending money immediately. Do not be embarrassed — these criminals are skilled manipulators. Report the account to the platform and to the FTC at reportfraud.ftc.gov. Call the AARP Fraud Watch Network helpline at 1-877-908-3360 for free counseling.
+Stop sending money right away. Do not be embarrassed — these criminals are skilled manipulators. Report the account to the platform and to the FTC at reportfraud.ftc.gov. Call the AARP Fraud Watch Network helpline at 1-877-908-3360 for free counseling.
 
 Quick Tip: If someone you have never met in person asks for money — in any form — treat it as a serious red flag regardless of how much you care about them.`,
     steps: [
@@ -764,7 +764,7 @@ Quick Tip: If someone you have never met in person asks for money — in any for
       },
       {
         title: `Report the account and the fraud`,
-        content: `If you believe you are dealing with a scammer, report their profile to the platform where you met them (Facebook, the dating app, etc.) and report the fraud to the FTC at reportfraud.ftc.gov. If you have sent money, contact your bank immediately to report the transaction.`,
+        content: `If you believe you are dealing with a scammer, report their profile to the platform where you met them (Facebook, the dating app, etc.) and report the fraud to the FTC at reportfraud.ftc.gov. If you have sent money, contact your bank right away to report the transaction.`,
       },
       {
         title: `Get emotional and practical support`,
@@ -786,7 +786,7 @@ Quick Tip: If someone you have never met in person asks for money — in any for
 
 Acting quickly on a few key items — especially unemployment benefits and health insurance — makes a significant difference.
 
-**File for unemployment benefits immediately**
+**File for unemployment benefits right away**
 
 Unemployment insurance is a state-run program that provides temporary income to workers who lose their jobs through no fault of their own (layoffs, company closures, etc.). Filing quickly matters because there is usually a waiting period of one to two weeks before benefits begin, and benefits are not retroactive to before your filing date.
 
@@ -796,7 +796,7 @@ File online through your state's unemployment agency website. Benefits typically
 
 When you leave a job, employer-sponsored health insurance ends — usually at the end of that month. COBRA (Consolidated Omnibus Budget Reconciliation Act) lets you continue your exact same employer coverage for up to 18 months, but you pay the full premium yourself (including the share your employer was paying), which is often expensive — $500–$800+ per month for a single person.
 
-You have 60 days from losing coverage to elect COBRA. Alternatives may be cheaper: marketplace plans at healthcare.gov, Medicaid (if your income has dropped significantly), or a spouse's employer plan.
+You have 60 days from losing coverage to elect COBRA. Alternatives may be cheaper: marketplace plans at healthcare.gov, Medicaid (if your income has dropped a lot), or a spouse's employer plan.
 
 **Create an emergency budget**
 
@@ -815,7 +815,7 @@ Quick Tip: Withdrawing money from a 401(k) or IRA before age 59½ typically trig
       },
       {
         title: `Decide on health insurance coverage quickly`,
-        content: `You have 60 days from your coverage end date to choose COBRA. At the same time, compare costs on healthcare.gov — a job loss is a "qualifying life event" that allows you to enroll in a marketplace plan outside of open enrollment. If your income has dropped significantly, you may qualify for Medicaid (free) or substantial subsidies on marketplace plans.`,
+        content: `You have 60 days from your coverage end date to choose COBRA. At the same time, compare costs on healthcare.gov — a job loss is a "qualifying life event" that allows you to enroll in a marketplace plan outside of open enrollment. If your income has dropped a lot, you may qualify for Medicaid (free) or substantial subsidies on marketplace plans.`,
         warning: `Do not go without health insurance if at all possible. An unexpected medical event without insurance can create catastrophic debt. Evaluate all options within the 60-day window.`,
       },
       {
@@ -828,7 +828,7 @@ Quick Tip: Withdrawing money from a 401(k) or IRA before age 59½ typically trig
       },
       {
         title: `Look for additional assistance programs`,
-        content: `Depending on your income, you may qualify for SNAP (food assistance), utility assistance through LIHEAP, or other federal and state programs. BenefitsCheckUp (benefitscheckup.org), run by the National Council on Aging, is a free tool that identifies benefits programs you may qualify for based on your income and situation.`,
+        content: `Depending on your income, you may qualify for SNAP (food help), utility help through LIHEAP, or other federal and state programs. BenefitsCheckUp (benefitscheckup.org), run by the National Council on Aging, is a free tool that identifies benefits programs you may qualify for based on your income and situation.`,
       },
     ],
   },
@@ -846,7 +846,7 @@ Quick Tip: Withdrawing money from a 401(k) or IRA before age 59½ typically trig
 
 **Larger federal standard deduction**
 
-If you are 65 or older, the IRS allows you a higher standard deduction than younger taxpayers. For the 2024 tax year, single filers over 65 get an additional $1,950 on top of the regular standard deduction. Married couples where both spouses are 65+ get an extra $3,100 total. This means you can often reduce your taxable income significantly without itemizing.
+If you are 65 or older, the IRS allows you a higher standard deduction than younger taxpayers. For the 2024 tax year, single filers over 65 get an additional $1,950 on top of the regular standard deduction. Married couples where both spouses are 65+ get an extra $3,100 total. This means you can often reduce your taxable income a lot without itemizing.
 
 **Social Security and retirement income may not be fully taxable**
 
@@ -862,7 +862,7 @@ A federal tax credit (IRS Schedule R) is available for people 65 and older with 
 
 **Free tax preparation help**
 
-AARP Tax-Aide volunteers prepare taxes for free at thousands of sites nationally. Find a location at aarp.org/money/taxes/aarp_taxaide. The IRS Volunteer Income Tax Assistance (VITA) program offers similar free help.
+AARP Tax-Aide volunteers prepare taxes for free at thousands of sites nationally. Find a location at aarp.org/money/taxes/aarp_taxaide. The IRS Volunteer Income Tax Help (VITA) program offers similar free help.
 
 Quick Tip: Your state's Department of Revenue or Department of Taxation website will list all senior property tax and income tax benefits available in your state.`,
     steps: [
@@ -886,7 +886,7 @@ Quick Tip: Your state's Department of Revenue or Department of Taxation website 
       },
       {
         title: `Use free tax help designed for seniors`,
-        content: `AARP Tax-Aide offers free tax preparation assistance from trained volunteers at thousands of sites. Find one at aarp.org/money/taxes/aarp_taxaide. The IRS VITA program (search "VITA near me" at irs.gov) provides similar free help, particularly for people with income under $67,000.`,
+        content: `AARP Tax-Aide offers free tax preparation help from trained volunteers at thousands of sites. Find one at aarp.org/money/taxes/aarp_taxaide. The IRS VITA program (search "VITA near me" at irs.gov) provides similar free help, particularly for people with income under $67,000.`,
       },
     ],
   },
@@ -999,7 +999,7 @@ Quick Tip: The most thoughtful thing you can do today is designate a Facebook Le
       },
       {
         title: `Include digital accounts in your estate plan`,
-        content: `Work with your estate attorney to include digital accounts in your will or trust, specifying your wishes for each. Keeping a secure list of your account logins with your estate documents ensures your executor or family can act quickly and avoid the lengthy verification processes platforms require.`,
+        content: `Work with your estate attorney to include digital accounts in your will or trust, specifying your wishes for each. Keeping a secure list of your account logins with your estate documents makes sure your executor or family can act quickly and avoid the lengthy verification processes platforms require.`,
       },
     ],
   },
@@ -1056,7 +1056,7 @@ Quick Tip: The BenefitsCheckUp tool at benefitscheckup.org (run by the National 
       },
       {
         title: `Use BenefitsCheckUp to find other programs`,
-        content: `Go to benefitscheckup.org and answer a short questionnaire about your age, income, state, and situation. The tool identifies federal and state benefit programs you may be eligible for — including prescription assistance, utility help, and transportation. It is free and does not collect personally identifiable information.`,
+        content: `Go to benefitscheckup.org and answer a short questionnaire about your age, income, state, and situation. The tool identifies federal and state benefit programs you may be eligible for — including prescription help, utility help, and transportation. It is free and does not collect personally identifiable information.`,
       },
     ],
   },
@@ -1076,7 +1076,7 @@ If you have worked for multiple employers over your career, there may be money s
 
 **The Pension Benefit Guaranty Corporation (PBGC)**
 
-The PBGC is a federal agency that insures private-sector pension plans. When companies go bankrupt or terminate their pension plans, the PBGC takes over and pays benefits to eligible workers. The PBGC maintains a searchable database of unclaimed pensions at pbgc.gov. You can search by your name to see if you are owed benefits.
+The PBGC is a federal agency that insures private-sector pension plans. When companies go bankrupt or end their pension plans, the PBGC takes over and pays benefits to eligible workers. The PBGC maintains a searchable database of unclaimed pensions at pbgc.gov. You can search by your name to see if you are owed benefits.
 
 **The Department of Labor's Abandoned Plan Database**
 
@@ -1174,7 +1174,7 @@ Quick Tip: Compare Medigap premiums in your area at medicare.gov/plan-compare. T
       {
         title: `Enroll and keep your Part D drug plan separate`,
         content: `Medigap does not include drug coverage. Once you choose a Medigap plan, also enroll in a standalone Medicare Part D prescription drug plan. You need both. Use the Plan Finder at medicare.gov to compare Part D plans based on your specific medications.`,
-        tip: `Call your State Health Insurance Assistance Program (SHIP) for free, unbiased help comparing Medigap options. Find your local SHIP at shiphelp.org.`,
+        tip: `Call your State Health Insurance Help Program (SHIP) for free, unbiased help comparing Medigap options. Find your local SHIP at shiphelp.org.`,
       },
     ],
   },

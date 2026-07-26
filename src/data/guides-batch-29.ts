@@ -15,13 +15,13 @@ export const guidesBatch29: Guide[] = [
 
 Unlike iPhones, which have a standardized "Battery Health" percentage in Settings, Android battery health information varies by phone brand. Samsung phones show battery health in the Samsung Members app or via a built-in diagnostic. Google Pixel phones show it in Settings. Some brands bury it in hidden service menus.
 
-For Samsung phones (the most common Android brand), the Samsung Members app — available free in the Galaxy Store or Google Play — includes a diagnostic tool that reports battery health as a percentage. 100% is new. Most phones remain above 95% for the first year, then gradually decline. Below 80%, you may notice significantly shorter battery life between charges.
+For Samsung phones (the most common Android brand), the Samsung Members app — available free in the Galaxy Store or Google Play — includes a diagnostic tool that reports battery health as a percentage. 100% is new. Most phones remain above 95% for the first year, then gradually decline. Below 80%, you may notice a lot shorter battery life between charges.
 
 For all Android phones, Google Play services also store battery health information accessible through some third-party apps like AccuBattery, which tracks charge cycles and estimates battery wear over time.
 
-Beyond checking health, there are practical steps to slow battery aging: avoid frequently letting the phone drain to 0%, keep it away from extreme heat (a hot car in summer causes significant battery damage), and avoid keeping it at 100% charge for extended periods. Charging to 80-85% and unplugging early is better for long-term battery health than charging to 100% overnight.
+Beyond checking health, there are practical steps to slow battery aging: avoid often letting the phone drain to 0%, keep it away from extreme heat (a hot car in summer causes significant battery damage), and avoid keeping it at 100% charge for extended periods. Charging to 80-85% and unplugging early is better for long-term battery health than charging to 100% overnight.
 
-When the battery degrades significantly, most Android phones can have the battery replaced. Manufacturer service centers, Best Buy Geek Squad, and local phone repair shops can typically do it for $30-80 depending on the phone model.`,
+When the battery degrades a lot, most Android phones can have the battery replaced. Manufacturer service centers, Best Buy Geek Squad, and local phone repair shops can typically do it for $30-80 depending on the phone model.`,
     steps: [
       {
         title: 'Check Battery Health on Samsung Galaxy',
@@ -65,7 +65,7 @@ The second most common cause is background apps. On both iPhone and Android, app
 
 A third cause is outdated software. Operating system updates often include performance improvements and bug fixes. If you've been postponing updates, an older version of iOS or Android may be running less efficiently than current versions.
 
-Other factors: a battery that's significantly degraded (phones automatically slow the processor to match reduced battery output), too many widgets and live wallpapers consuming resources, and apps that haven't been updated and run inefficiently on newer operating system versions.
+Other factors: a battery that's a lot degraded (phones automatically slow the processor to match reduced battery output), too many widgets and live wallpapers consuming resources, and apps that haven't been updated and run inefficiently on newer operating system versions.
 
 The good news: most phone slowdowns are caused by these fixable issues, not hardware failure. Working through these steps in order usually solves the problem. If none of these help and the phone is more than four years old, the hardware itself may be the limiting factor — which is a natural end-of-life signal rather than something broken.`,
     steps: [
@@ -105,13 +105,13 @@ The good news: most phone slowdowns are caused by these fixable issues, not hard
     difficulty: 'Beginner',
     body: `Starting with the iPhone 14 (released fall 2022), Apple added Emergency SOS via satellite — the ability to contact emergency services by text even when you have no cellular signal and no Wi-Fi. This works via direct satellite communication. It's a genuine safety feature for hikers, road trip travelers, boaters, and anyone who might find themselves in an emergency in an area without cell coverage.
 
-The feature is free for two years from the date you activate a new iPhone. After that, Apple has indicated there will be a subscription fee, though pricing details continue to evolve.
+The feature is free for two years from the date you activate a new iPhone. After that, Apple has showed there will be a subscription fee, though pricing details continue to evolve.
 
 Here's how it works: if you dial 911 or use Emergency SOS when your iPhone has no cell service, the phone checks for satellite connectivity. If satellites are available (which requires being outdoors or near an open window — satellites can't be reached through buildings), the phone walks you through positioning yourself toward the satellite for the strongest signal, then transmits your emergency message and GPS location to a relay center that contacts local emergency services on your behalf.
 
 Because satellite data transmission is slow, the feature is limited to emergencies — you can't send regular texts via satellite. The iPhone guides you through a questionnaire (Are you injured? Is someone else injured? What happened?) and relays your answers. Response times via satellite are longer than a standard 911 call — expect at least a few minutes for confirmation.
 
-Setup requires nothing — the feature is on by default on compatible iPhones. You need to have your iPhone set up and know how to trigger Emergency SOS. You can also use it to share your location with friends and family when out of cell range through the Roadside Assistance via Satellite feature.`,
+Setup requires nothing — the feature is on by default on compatible iPhones. You need to have your iPhone set up and know how to trigger Emergency SOS. You can also use it to share your location with friends and family when out of cell range through the Roadside Help via Satellite feature.`,
     steps: [
       {
         title: 'Check If Your iPhone Supports It',
@@ -200,7 +200,7 @@ In the Alexa app or at amazon.com/alexaprivacy, you can see a history of every v
 
 Privacy options include: not saving any recordings at all (Alexa processes them but doesn't store them), or keeping recordings but setting them to automatically delete after 3 months or 18 months instead of indefinitely.
 
-Occasionally, Amazon Echo devices record accidentally when a word sounds like "Alexa" — a TV announcement, a conversation, or background noise. These accidental recordings show up in your history. Reviewing the history occasionally helps you understand what your Echo is picking up and delete anything that was recorded unintentionally.
+Sometimes, Amazon Echo devices record accidentally when a word sounds like "Alexa" — a TV announcement, a conversation, or background noise. These accidental recordings show up in your history. Reviewing the history sometimes helps you understand what your Echo is picking up and delete anything that was recorded unintentionally.
 
 Some people choose to mute their Echo devices when they're having private conversations. The mute button (circle with line) on the top of Echo devices turns off the microphone and shows a red ring, meaning Alexa cannot hear anything until you press it again.`,
     steps: [
@@ -224,7 +224,7 @@ Some people choose to mute their Echo devices when they're having private conver
       },
       {
         title: 'Use the Mute Button for Sensitive Conversations',
-        content: 'On your Echo device, press the top button with a circle and line (the microphone mute button). A red ring lights up, confirming the microphone is off. Alexa cannot hear anything while muted. Press the same button again to unmute. This is the simplest way to ensure privacy during phone calls, medical discussions, or other conversations you want to keep private.',
+        content: 'On your Echo device, press the top button with a circle and line (the microphone mute button). A red ring lights up, confirming the microphone is off. Alexa cannot hear anything while muted. Press the same button again to unmute. This is the simplest way to make sure privacy during phone calls, medical discussions, or other conversations you want to keep private.',
         warning: `While muted, Alexa cannot hear your commands at all — you'll need to manually press the button to unmute before giving any commands.`,
       },
     ],
@@ -266,7 +266,7 @@ The FCC recommends calling 911 when possible and texting only when calling is no
       {
         title: 'What to Include in Your First Message',
         content: `Your first text must include your location and the type of emergency. Example: "1234 Oak Street Springfield, car crash, 2 injured, need ambulance." Include as much detail in that first message as possible — cross streets if you don't know the exact address, a landmark ("across from CVS on Main Street"), and what happened.`,
-        tip: 'Keep your first message under 160 characters to ensure it sends as a single text rather than a split multi-part message.',
+        tip: 'Keep your first message under 160 characters to make sure it sends as a single text rather than a split multi-part message.',
       },
       {
         title: 'Respond to Dispatcher Questions',
@@ -333,7 +333,7 @@ One limitation: ChatGPT's Voice Mode does not browse the internet in real time (
     difficulty: 'Beginner',
     body: `Planning meals for the week is one of the most practical everyday uses of AI. Give a tool like ChatGPT or Perplexity your dietary preferences, any restrictions (no gluten, low sodium, diabetic-friendly), how many people you're cooking for, and your budget — and it will create a full week of meal ideas with recipes and a grocery list.
 
-This saves the time and mental energy of deciding "what's for dinner?" every night, and helps ensure you buy groceries intentionally instead of randomly. People who meal plan consistently tend to waste less food, spend less at the grocery store, and eat more varied meals.
+This saves the time and mental energy of deciding "what's for dinner?" every night, and helps make sure you buy groceries intentionally instead of randomly. People who meal plan consistently tend to waste less food, spend less at the grocery store, and eat more varied meals.
 
 The key to getting useful results from AI is giving it specific constraints. "Give me a meal plan" produces generic suggestions. "Give me a 7-day meal plan for two people, $75 budget, low-sodium because of my husband's heart condition, we don't eat pork, and we have about 30 minutes for dinner most nights" produces something actually useful.
 
@@ -350,7 +350,7 @@ This works with ChatGPT, Perplexity, Claude (Anthropic), or any other AI assista
       },
       {
         title: 'Review and Adjust the Plan',
-        content: `Read through the suggested meal plan. If something doesn't appeal to you, say so: "Replace Wednesday dinner — I don't like salmon. Suggest something else with similar nutrition." AI adjusts immediately. Keep refining until the plan works for your week.`,
+        content: `Read through the suggested meal plan. If something doesn't appeal to you, say so: "Replace Wednesday dinner — I don't like salmon. Suggest something else with similar nutrition." AI adjusts right away. Keep refining until the plan works for your week.`,
       },
       {
         title: 'Request a Shopping List',
@@ -389,12 +389,12 @@ Match.com (the original online dating site) and Bumble also have significant num
 
 Safety is paramount: never send money to someone you've met online but haven't met in person, be cautious about sharing personal details early, tell a trusted person when you're meeting someone for the first time in person, and meet first dates in public places.
 
-Romance scams targeting older adults on dating apps have increased significantly — this is worth knowing about before diving in.`,
+Romance scams targeting older adults on dating apps have increased a lot — this is worth knowing about before diving in.`,
     steps: [
       {
         title: 'Choose an App and Create a Profile',
         content: 'For a senior-focused experience, start with Silver Singles (silversingles.com) or OurTime (ourtime.com). Download the app or use the website. Registration starts with basic information and a personality quiz (Silver Singles) or profile questions (OurTime). Add recent, clear photos — at least two or three. A genuine, warm profile description gets more interest than a minimal one.',
-        tip: 'Use a recent photo — within the last 1-2 years. Profile photos significantly affect whether you get responses. Natural lighting in an outdoor setting often looks best.',
+        tip: 'Use a recent photo — within the last 1-2 years. Profile photos a lot affect whether you get responses. Natural lighting in an outdoor setting often looks best.',
       },
       {
         title: 'Understand Free vs. Paid Features',
@@ -435,7 +435,7 @@ Stars also earn from purchases made in-store by showing your app barcode — you
 
 The app also gives access to Starbucks promotions: bonus Star opportunities, limited-time offers, and seasonal drink launches. Notifications alert you to current offers, though you can turn these off if you prefer.
 
-Starbucks frequently runs "Happy Hours" visible in the app — promotional times when drinks are discounted or bonus Stars are available. The app makes it easy to know when these are happening at your local store.`,
+Starbucks often runs "Happy Hours" visible in the app — promotional times when drinks are discounted or bonus Stars are available. The app makes it easy to know when these are happening at your local store.`,
     steps: [
       {
         title: 'Download and Create an Account',
@@ -779,7 +779,7 @@ If online notarization isn't available for your document, banks (particularly cr
       {
         title: 'Verify Your Identity',
         content: 'The RON platform will verify your identity. This typically involves: answering knowledge-based authentication questions (your address history, vehicle ownership, or loan history), uploading a photo of your government-issued ID, and taking a selfie or biometric verification. This process takes 5-10 minutes.',
-        warning: 'Identity verification questions may pull from public records and credit history. If you frequently use credit monitoring services that restrict inquiries, you may have trouble with the knowledge-based questions. In that case, use an in-person notary.',
+        warning: 'Identity verification questions may pull from public records and credit history. If you often use credit monitoring services that restrict inquiries, you may have trouble with the knowledge-based questions. In that case, use an in-person notary.',
       },
       {
         title: 'Connect With the Notary and Sign',
@@ -874,7 +874,7 @@ As an alternative, Google Maps has a similar location-sharing feature for Androi
       },
       {
         title: 'Stop Sharing or Remove Someone',
-        content: `In Find My → People tab, tap the person's name → scroll down → "Stop Sharing My Location." This immediately stops that person from seeing your location. They receive no notification that you've stopped. You can also tap "Remove" on the contact to remove them entirely from your People list.`,
+        content: `In Find My → People tab, tap the person's name → scroll down → "Stop Sharing My Location." This right away stops that person from seeing your location. They receive no notification that you've stopped. You can also tap "Remove" on the contact to remove them entirely from your People list.`,
         warning: `Location sharing should always be consensual. Don't attempt to share someone's location without their knowledge or use it to monitor someone who hasn't agreed to share.`,
       },
     ],
@@ -921,11 +921,11 @@ iCloud storage is separate from your iPhone's built-in storage and they're manag
       {
         title: 'Check Your iCloud Storage',
         content: `iCloud storage is separate. Check it at Settings → [your name] → iCloud → "Manage Account Storage." You'll see what's using your iCloud storage: Backups, Photos, Messages, iCloud Drive. The free plan is 5 GB — most people need more. Upgrading to 50 GB costs $0.99/month, 200 GB costs $2.99/month.`,
-        warning: 'If iCloud backup says "Off" or shows an old date, your phone is not being backed up. A full iCloud means no backup. Either free up iCloud space or upgrade to ensure your data is protected.',
+        warning: 'If iCloud backup says "Off" or shows an old date, your phone is not being backed up. A full iCloud means no backup. Either free up iCloud space or upgrade to make sure your data is protected.',
       },
       {
         title: 'Upgrade iCloud Storage (If Needed)',
-        content: 'Settings → [your name] → iCloud → Manage Account Storage → Upgrade to iCloud+. Choose 50 GB ($0.99/month), 200 GB ($2.99/month), or 2 TB ($9.99/month). The 50 GB plan is sufficient for most people with one iPhone. The 200 GB plan is useful if you also store photos from a Mac or iPad. Apple charges monthly to the credit card on file with your Apple ID.',
+        content: 'Settings → [your name] → iCloud → Manage Account Storage → Upgrade to iCloud+. Choose 50 GB ($0.99/month), 200 GB ($2.99/month), or 2 TB ($9.99/month). The 50 GB plan is enough for most people with one iPhone. The 200 GB plan is useful if you also store photos from a Mac or iPad. Apple charges monthly to the credit card on file with your Apple ID.',
       },
     ],
   },

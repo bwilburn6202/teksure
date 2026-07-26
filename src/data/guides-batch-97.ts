@@ -53,7 +53,7 @@ Installation itself takes about 30 to 45 minutes. You will turn off power at the
 
 The installation process is similar to a Nest. You turn off power at the breaker, label the wires on your old thermostat, mount ecobee's base plate, and connect each wire to a matching terminal. Ecobee includes a Power Extender Kit for homes without a C-wire — worth mentioning because not every brand does. Once mounted, ecobee walks you through Wi-Fi setup, HVAC settings, and pairing SmartSensors.
 
-The real payoff is placing the sensors thoughtfully. Put one in the bedroom you sleep in, one in the living room where you spend evenings, and keep one in a frequently used spot like the kitchen. Then build ecobee's comfort profiles — Home, Away, and Sleep — and assign which sensors matter during each. The Follow Me feature tells the system to prioritize whichever sensor has detected recent motion, so it chases comfort to wherever you actually are.
+The real payoff is placing the sensors thoughtfully. Put one in the bedroom you sleep in, one in the living room where you spend evenings, and keep one in a often used spot like the kitchen. Then build ecobee's comfort profiles — Home, Away, and Sleep — and assign which sensors matter during each. The Follow Me feature tells the system to prioritize whichever sensor has detected recent motion, so it chases comfort to wherever you actually are.
 
 Ecobee models also include a built-in Alexa speaker, intercom, and integration with utility rebate programs called eco+. Many power companies give $50 to $125 back for enrolling.`,
     steps: [
@@ -186,7 +186,7 @@ Here's a real money nudge: many home insurance companies (Travelers, State Farm,
       },
       {
         title: `Decide between point sensors and whole-home`,
-        content: `If you are a renter or want an inexpensive first step, buy point sensors only. If you own your home, travel frequently, or had a previous water claim, add a whole-home monitor too. Moen Flo and Phyn Plus include auto-shutoff valves; Flume is detection-only but does not require plumbing work.`,
+        content: `If you are a renter or want an inexpensive first step, buy point sensors only. If you own your home, travel often, or had a previous water claim, add a whole-home monitor too. Moen Flo and Phyn Plus include auto-shutoff valves; Flume is detection-only but does not require plumbing work.`,
       },
       {
         title: `Place and pair point sensors`,
@@ -219,7 +219,7 @@ Close Friends is designed for moments when a regular Story feels too public. Gra
 
 To post a Story to Close Friends only, you open the Story camera as usual and tap the green star icon at the bottom instead of Your Story. Stories posted this way appear with a green ring around your profile picture (only Close Friends members see the green ring) so recipients know this was a private share.
 
-The setup is fast. You can add or remove people from Close Friends at any time through Settings. Instagram also gives suggestions — people you message often or interact with frequently — but you can also manually search for anyone. Many people start with immediate family and 5 to 15 truly close friends, and adjust from there.`,
+The setup is fast. You can add or remove people from Close Friends at any time through Settings. Instagram also gives suggestions — people you message often or interact with often — but you can also manually search for anyone. Many people start with immediate family and 5 to 15 truly close friends, and adjust from there.`,
     steps: [
       {
         title: `Open the Close Friends list`,
@@ -302,7 +302,7 @@ You can still follow people on any other Mastodon server. If someone is @sarah@m
 
 Mastodon shows three timelines. Home is people you follow. Local is everyone on your server (a great way to discover). Federated is everyone your server has ever seen a post from — it's firehose-like and overwhelming to most new users, safe to ignore at first.
 
-The official Mastodon app is fine, but many people prefer third-party apps for iPhone like Ivory (from the Tweetbot makers) or Mona. Both polish the experience significantly.`,
+The official Mastodon app is fine, but many people prefer third-party apps for iPhone like Ivory (from the Tweetbot makers) or Mona. Both polish the experience a lot.`,
     steps: [
       {
         title: `Pick a server`,
@@ -615,7 +615,7 @@ A trusted VPN — NordVPN, Mullvad, Proton VPN are commonly recommended — encr
       },
       {
         title: `Turn off file sharing and printer sharing`,
-        content: `On Mac: System Settings → General → Sharing → turn off File Sharing, Screen Sharing, Printer Sharing. On Windows: Settings → Network → Public network profile → turn off Network Discovery and File Sharing. If you connected to public WiFi with a "Home" or "Private" profile by mistake, switch it to "Public" immediately.`,
+        content: `On Mac: System Settings → General → Sharing → turn off File Sharing, Screen Sharing, Printer Sharing. On Windows: Settings → Network → Public network profile → turn off Network Discovery and File Sharing. If you connected to public WiFi with a "Home" or "Private" profile by mistake, switch it to "Public" right away.`,
       },
     ],
     tip: `Quick Tip — Your phone's personal hotspot is the safest public internet option of all. Turn it on in Settings → Personal Hotspot (iPhone) or Settings → Connections → Mobile Hotspot (Android), then join that from your laptop. Now you're on your cellular connection, invisible to the cafe network.`,
@@ -734,7 +734,7 @@ Watch for data caps. Your home WiFi plan usually has no cap (or a very high one)
       },
       {
         title: `Know what your cellular plan's 5G cap is`,
-        content: `Check your carrier's app or the plan details in your account. Most unlimited plans have a "high-speed data" cap like 15GB, 50GB, or 100GB per month, after which speeds slow down significantly. This matters if you're considering using 5G as a primary home internet source.`,
+        content: `Check your carrier's app or the plan details in your account. Most unlimited plans have a "high-speed data" cap like 15GB, 50GB, or 100GB per month, after which speeds slow down a lot. This matters if you're considering using 5G as a primary home internet source.`,
       },
       {
         title: `Consider 5G home internet if your options are limited`,
@@ -801,7 +801,7 @@ The simple defense is to preview the URL before you follow it. When your phone s
 
 SMS 2FA is the weakest common form. A 6-digit code is texted to your phone, and you type it in. Better than nothing — but vulnerable to SIM swapping, an attack where a criminal tricks your phone carrier into transferring your number to their SIM card. Once they control your number, they receive your SMS codes. SIM swaps have drained bank accounts and crypto wallets worth millions. Use SMS 2FA only when it's the only option available.
 
-Authenticator app 2FA (Google Authenticator, Authy, Microsoft Authenticator, 1Password) is significantly stronger. The app on your phone generates a 6-digit code that changes every 30 seconds. The code is calculated locally — no one texts it to you, so SIM swaps don't help the attacker. An authenticator app is the right choice for almost every account that offers 2FA.
+Authenticator app 2FA (Google Authenticator, Authy, Microsoft Authenticator, 1Password) is a lot stronger. The app on your phone generates a 6-digit code that changes every 30 seconds. The code is calculated locally — no one texts it to you, so SIM swaps don't help the attacker. An authenticator app is the right choice for almost every account that offers 2FA.
 
 Push-based 2FA (Apple ID, Duo, Microsoft Authenticator) is similar in strength. When you log in, a notification pops up on your phone asking Approve or Deny. Tap Approve and you're logged in. Very convenient, and secure as long as you actually pay attention to what you're approving — if you get an approval prompt when you weren't trying to log in, tap Deny.
 
@@ -860,7 +860,7 @@ Keep every EOB for at least one year and match them against provider bills. Bill
       },
       {
         title: `Confirm the basics at the top`,
-        content: `Check your name, member ID, and date of service. Make sure the provider name matches who you actually saw. If any of these are wrong, call your insurance company immediately — a wrong member ID can mean someone else's claim was filed under your coverage, which is fraud.`,
+        content: `Check your name, member ID, and date of service. Make sure the provider name matches who you actually saw. If any of these are wrong, call your insurance company right away — a wrong member ID can mean someone else's claim was filed under your coverage, which is fraud.`,
       },
       {
         title: `Read the allowed amount vs. billed amount`,
@@ -897,11 +897,11 @@ Seniors are among the most common targets of bank fraud and identity theft, and 
 
 Every major US bank — Chase, Bank of America, Wells Fargo, Citibank, U.S. Bank, Capital One, and most credit unions — offers account alerts through their mobile app or website. The setup takes about five minutes and is done entirely in your account settings.
 
-The most useful alert to turn on first is the transaction alert with a low dollar threshold. Set it to $1 so you're notified of every single purchase. That way, if someone charges even a small test transaction (which fraudsters often do to verify a stolen card before making big purchases), you see it immediately.
+The most useful alert to turn on first is the transaction alert with a low dollar threshold. Set it to $1 so you're notified of every single purchase. That way, if someone charges even a small test transaction (which fraudsters often do to verify a stolen card before making big purchases), you see it right away.
 
 Low-balance alerts are also worth setting up. Pick an amount below which you'd want to know — say $200 — and the bank will warn you before you accidentally overdraft. Overdraft fees average $35 per incident at most banks.
 
-Login alerts are the third must-have. Any time someone logs into your online banking from a new browser or device, you get a text. If it wasn't you, you can change your password immediately before any damage is done.`,
+Login alerts are the third must-have. Any time someone logs into your online banking from a new browser or device, you get a text. If it wasn't you, you can change your password right away before any damage is done.`,
     steps: [
       {
         title: `Log in to your bank's website or mobile app`,
@@ -1013,7 +1013,7 @@ The same rule applies to phone numbers you see in pop-up messages, emails, or te
       },
       {
         title: `Recognize the signs that you've reached a fake number`,
-        content: `Real customer service agents will never: ask you to buy gift cards to pay a fee or resolve a problem; ask for remote access to your computer to "fix" an issue you didn't report; ask for your full Social Security number, credit card number, or bank PIN to verify your identity over the phone. If any of these happen, hang up immediately.`,
+        content: `Real customer service agents will never: ask you to buy gift cards to pay a fee or resolve a problem; ask for remote access to your computer to "fix" an issue you didn't report; ask for your full Social Security number, credit card number, or bank PIN to verify your identity over the phone. If any of these happen, hang up right away.`,
       },
       {
         title: `Report the fake number`,

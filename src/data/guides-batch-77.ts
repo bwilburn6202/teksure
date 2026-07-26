@@ -86,7 +86,7 @@ If you rent your home or apartment and do not already have renters insurance, Le
       },
       {
         title: `Review the quote and sign up`,
-        content: `Once you have chosen your coverage, Lemonade shows your monthly price. If you are happy with it, tap "Get Covered." You will create an account with your email, enter payment information, and your policy will be active immediately. Check your email for your policy documents.`,
+        content: `Once you have chosen your coverage, Lemonade shows your monthly price. If you are happy with it, tap "Get Covered." You will create an account with your email, enter payment information, and your policy will be active right away. Check your email for your policy documents.`,
       },
       {
         title: `Know how to file a claim if you need to`,
@@ -137,8 +137,8 @@ Whether you are a long-time Allstate customer or recently signed up, spending a 
       },
       {
         title: `Explore roadside assistance`,
-        content: `If your policy includes roadside assistance, the app has a dedicated button to request help. Tap "Roadside Assistance" and share your location. You can request a tow truck, a jump start, or help with a flat tire. The app shows you when help is on the way and tracks their arrival.`,
-        tip: `Quick Tip: Save the Allstate roadside assistance number (1-800-ALLSTATE) in your phone contacts so you can reach help even if the app is not loading.`,
+        content: `If your policy includes roadside help, the app has a dedicated button to request help. Tap "Roadside Help" and share your location. You can request a tow truck, a jump start, or help with a flat tire. The app shows you when help is on the way and tracks their arrival.`,
+        tip: `Quick Tip: Save the Allstate roadside help number (1-800-ALLSTATE) in your phone contacts so you can reach help even if the app is not loading.`,
       },
     ],
   },
@@ -175,16 +175,16 @@ If you are a GEICO customer and have not downloaded the app yet, it is worth tak
       },
       {
         title: `Pay your bill or set up autopay`,
-        content: `Tap "Billing" or "Make a Payment" from the main menu. You will see what you owe and when it is due. You can pay immediately with a bank account or credit card, or set up automatic payments. Autopay can be set for the full balance or a minimum payment each month.`,
+        content: `Tap "Billing" or "Make a Payment" from the main menu. You will see what you owe and when it is due. You can pay right away with a bank account or credit card, or set up automatic payments. Autopay can be set for the full balance or a minimum payment each month.`,
         warning: `Make sure your payment information is kept up to date in the app. A lapsed payment can cause your coverage to be suspended.`,
       },
       {
         title: `Add a driver or vehicle to your policy`,
-        content: `Tap "Policy Details" and then look for "Add Driver" or "Add Vehicle." You will fill in basic information — name, date of birth, and license number for a driver, or the VIN and mileage for a vehicle. Some changes take effect immediately, while others may require a follow-up from GEICO to finalize the rate adjustment.`,
+        content: `Tap "Policy Details" and then look for "Add Driver" or "Add Vehicle." You will fill in basic information — name, date of birth, and license number for a driver, or the VIN and mileage for a vehicle. Some changes take effect right away, while others may require a follow-up from GEICO to finalize the rate adjustment.`,
       },
       {
         title: `Request roadside assistance`,
-        content: `If you are stranded, tap "Roadside Assistance" from the app home screen. Confirm or adjust your location, then choose what kind of help you need — tow, jump start, fuel delivery, flat tire, or lockout. The app shows you when a technician is on the way and how long until they arrive.`,
+        content: `If you are stranded, tap "Roadside Help" from the app home screen. Confirm or adjust your location, then choose what kind of help you need — tow, jump start, fuel delivery, flat tire, or lockout. The app shows you when a technician is on the way and how long until they arrive.`,
         tip: `Quick Tip: If your phone battery is low after an accident, take screenshots of your ID card and the claim confirmation before the phone dies.`,
       },
     ],
@@ -314,7 +314,7 @@ You can compare Medicare Advantage plans available in your area using the offici
       {
         title: `Learn how Medicare Advantage is different`,
         content: `Medicare Advantage plans combine Part A and Part B coverage through a private insurer. Most plans also include Part D prescription drug coverage. Many offer extra benefits like dental checkups, eye exams, and hearing aids. However, you are usually limited to using doctors and hospitals in the plan's network, which may be smaller than the full Medicare network.`,
-        tip: `Quick Tip: If you travel frequently or split time between two states, check whether a plan covers out-of-area care before enrolling.`,
+        tip: `Quick Tip: If you travel often or split time between two states, check whether a plan covers out-of-area care before enrolling.`,
       },
       {
         title: `Use the Medicare Plan Finder to compare options`,
@@ -328,7 +328,7 @@ You can compare Medicare Advantage plans available in your area using the offici
       },
       {
         title: `Enroll during open enrollment`,
-        content: `The main Medicare open enrollment period runs from October 15 to December 7 each year. Changes take effect on January 1. You can enroll through the Medicare website, by calling 1-800-MEDICARE, or by contacting the plan directly. If you have questions or want help comparing plans, contact your local State Health Insurance Assistance Program (SHIP) — they offer free, unbiased counseling.`,
+        content: `The main Medicare open enrollment period runs from October 15 to December 7 each year. Changes take effect on January 1. You can enroll through the Medicare website, by calling 1-800-MEDICARE, or by contacting the plan directly. If you have questions or want help comparing plans, contact your local State Health Insurance Help Program (SHIP) — they offer free, unbiased counseling.`,
       },
     ],
   },
@@ -346,7 +346,7 @@ You can compare Medicare Advantage plans available in your area using the offici
 
 To be eligible, you generally must have a medical condition that has lasted or is expected to last at least 12 months (or result in death), and that prevents you from doing any substantial work. The Social Security Administration (SSA) uses a detailed process to evaluate claims, and approval can take several months. Many first applications are denied, but you have the right to appeal.
 
-Before you apply, gather important documents: your Social Security number, birth certificate, medical records and doctor contact information, a list of medications and conditions, your work history for the past 15 years, and tax information. Having these ready will speed up the process significantly.
+Before you apply, gather important documents: your Social Security number, birth certificate, medical records and doctor contact information, a list of medications and conditions, your work history for the past 15 years, and tax information. Having these ready will speed up the process a lot.
 
 You can apply three ways: online at ssa.gov, by phone at 1-800-772-1213, or in person at your local Social Security office. The online application is available around the clock and is the fastest way to submit.
 
@@ -509,7 +509,7 @@ Because COBRA is expensive, it is worth comparing it against alternatives: a Mar
       },
       {
         title: `Check whether you qualify for Medicaid`,
-        content: `If your income dropped significantly after losing your job, you may now qualify for Medicaid, which is free or very low cost. The same HealthCare.gov application checks both Marketplace plans and Medicaid eligibility at the same time. If you qualify, Medicaid coverage can begin quickly.`,
+        content: `If your income dropped a lot after losing your job, you may now qualify for Medicaid, which is free or very low cost. The same HealthCare.gov application checks both Marketplace plans and Medicaid eligibility at the same time. If you qualify, Medicaid coverage can begin quickly.`,
         tip: `Quick Tip: If you are not sure whether COBRA or a Marketplace plan is better for you, call 1-800-318-2596 to speak with a free Marketplace navigator.`,
       },
       {
@@ -556,7 +556,7 @@ When comparing plans, look at the monthly premium (what you pay every month whet
       },
       {
         title: `Compare plans side by side`,
-        content: `After entering your information, the Marketplace shows you plans available in your area. Use the comparison tool to look at monthly premiums, deductibles, and out-of-pocket maximums side by side. If you take regular medications, click "Drug Coverage" to confirm your prescriptions are covered by the plan you are considering. Look for plans with 4 or 5 stars, which indicates better member satisfaction.`,
+        content: `After entering your information, the Marketplace shows you plans available in your area. Use the comparison tool to look at monthly premiums, deductibles, and out-of-pocket maximums side by side. If you take regular medications, click "Drug Coverage" to confirm your prescriptions are covered by the plan you are considering. Look for plans with 4 or 5 stars, which shows better member satisfaction.`,
       },
       {
         title: `Enroll before the deadline and confirm your coverage`,
@@ -577,11 +577,11 @@ When comparing plans, look at the monthly premium (what you pay every month whet
     difficulty: `Beginner`,
     body: `Twitch is a live streaming platform where real people broadcast video of themselves doing things — playing video games, cooking meals, making music, painting, chatting with an audience, or teaching skills. It is owned by Amazon and is completely free to watch. As of 2026, it hosts millions of live streams every day across hundreds of categories.
 
-You do not need an account to watch Twitch. You can go to twitch.tv in any web browser on a computer, phone, or tablet and start watching immediately. An account only becomes necessary if you want to chat with the streamer and audience, follow channels to receive updates, or subscribe to support a creator.
+You do not need an account to watch Twitch. You can go to twitch.tv in any web browser on a computer, phone, or tablet and start watching right away. An account only becomes necessary if you want to chat with the streamer and audience, follow channels to receive updates, or subscribe to support a creator.
 
 Unlike recorded videos on YouTube, Twitch is live — what you are watching is happening right now. Streamers interact with their audience through a chat window that appears next to the video. Viewers type comments and questions, and the streamer responds out loud. This back-and-forth is a big part of what makes Twitch different from regular TV.
 
-The variety of content on Twitch has grown significantly. While gaming is the largest category, you can find channels for cooking ("Food & Drink"), music performances, fitness classes, nature and travel streams, talk shows, and a category called "Just Chatting" where streamers have conversations with their audience.
+The variety of content on Twitch has grown a lot. While gaming is the largest category, you can find channels for cooking ("Food & Drink"), music performances, fitness classes, nature and travel streams, talk shows, and a category called "Just Chatting" where streamers have conversations with their audience.
 
 You can watch Twitch on a phone, tablet, computer, smart TV, or Roku and Fire TV streaming devices. The Twitch app is free in every app store.
 
@@ -589,7 +589,7 @@ If you find a streamer you enjoy, you can follow them for free. When they go liv
     steps: [
       {
         title: `Go to Twitch in your browser or download the app`,
-        content: `On a computer, open your web browser and go to twitch.tv. On a phone or tablet, search for "Twitch" in your app store and install the free app. You do not need to create an account to start watching — you can browse immediately as a guest.`,
+        content: `On a computer, open your web browser and go to twitch.tv. On a phone or tablet, search for "Twitch" in your app store and install the free app. You do not need to create an account to start watching — you can browse right away as a guest.`,
         tip: `Quick Tip: Twitch also works on Roku, Amazon Fire TV, Apple TV, and most smart TVs through the app store built into your television.`,
       },
       {
@@ -674,7 +674,7 @@ Voice channels are especially popular for ongoing group connections. If you want
 
 There are over 100,000 active subreddits covering virtually every interest you can imagine: gardening, local news, cooking, retirement planning, health conditions, travel, technology help, sports, hobbies, and thousands more. Each subreddit has a name that starts with "r/" — for example, r/gardening, r/personalfinance, or r/AskTechnology.
 
-You do not need an account to read Reddit. You can go to reddit.com in any browser and start browsing immediately. An account is only needed if you want to post, comment, or vote on content.
+You do not need an account to read Reddit. You can go to reddit.com in any browser and start browsing right away. An account is only needed if you want to post, comment, or vote on content.
 
 Reddit works on a voting system. Members click an upward arrow (upvote) on posts they find helpful or interesting, and a downward arrow (downvote) on posts they find unhelpful. Posts with more upvotes rise to the top, so the most useful content tends to be the most visible.
 

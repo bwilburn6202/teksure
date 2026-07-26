@@ -101,15 +101,13 @@ Recovery is not guaranteed, but reporting quickly gives you the best chance. The
       },
       {
         title: 'Turn on transaction alerts',
-        content:
-          'In your bank app or Venmo, go to Settings > Notifications and turn on alerts for every transaction. This way, if any payment goes through without your knowledge, you will find out within seconds and can call your bank immediately.',
+        content: 'In your bank app or Venmo, go to Settings > Notifications and turn on alerts for every transaction. This way, if any payment goes through without your knowledge, you will find out within seconds and can call your bank right away.',
       },
       {
         title: 'Know what to do if you suspect a scam',
         content:
           'If you receive an unexpected "Zelle alert" by text or a call from someone claiming to be your bank\'s fraud department, hang up and call your bank directly using the number printed on the back of your debit card. Never send money at the instruction of someone who called you — your real bank will never ask you to do that.',
-        warning:
-          'If you have already sent money and believe it was a scam, call your bank\'s fraud line immediately. Then report it to the FTC at ReportFraud.ftc.gov.',
+        warning: 'If you have already sent money and believe it was a scam, call your bank\'s fraud line right away. Then report it to the FTC at ReportFraud.ftc.gov.',
       },
     ],
   },

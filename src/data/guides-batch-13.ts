@@ -313,7 +313,7 @@ export const guidesBatch13: Guide[] = [
     thumbnailEmoji: '',
     publishedAt: '2026-04-19',
     difficulty: 'Beginner',
-    body: "Government imposter scams are one of the most common types of fraud targeting older adults. Scammers call or email pretending to be from the Social Security Administration, IRS, Medicare, or other government agencies and threaten you with arrest, suspended benefits, or large fines unless you pay immediately. The calls and emails look and sound very convincing — but they are always fake.",
+    body: "Government imposter scams are one of the most common types of fraud targeting older adults. Scammers call or email pretending to be from the Social Security Administration, IRS, Medicare, or other government agencies and threaten you with arrest, suspended benefits, or large fines unless you pay right away. The calls and emails look and sound very convincing — but they are always fake.",
     steps: [
       {
         title: 'Know what real government agencies will never do',
@@ -322,7 +322,7 @@ export const guidesBatch13: Guide[] = [
       },
       {
         title: 'Recognize the specific scams',
-        content: 'Common government imposter scripts: "Your Social Security number has been suspended due to suspicious activity — press 1 to speak with an officer." "You owe back taxes and a warrant has been issued for your arrest — call immediately." "Your Medicare benefits have been suspended — we need to verify your card number." "Your SNAP/Medicaid benefits are at risk — confirm your information now." All of these are scams.',
+        content: 'Common government imposter scripts: "Your Social Security number has been suspended due to suspicious activity — press 1 to speak with an officer." "You owe back taxes and a warrant has been issued for your arrest — call right away." "Your Medicare benefits have been suspended — we need to verify your card number." "Your SNAP/Medicaid benefits are at risk — confirm your information now." All of these are scams.',
       },
       {
         title: 'What to do when you get a suspicious call',
@@ -363,7 +363,7 @@ export const guidesBatch13: Guide[] = [
       },
       {
         title: 'How to actually try to recover lost money',
-        content: `The only legitimate free resources for scam victims: if you paid by credit card, dispute the charge with your card issuer immediately (you have more protection than with debit cards). If you wired money within the last 24 hours, call your bank immediately — some wire transfers can be recalled. If you paid by gift card, call the gift card company's fraud line — some companies have small victim recovery funds. Report to the FTC at reportfraud.ftc.gov and to your state attorney general.`,
+        content: `The only legitimate free resources for scam victims: if you paid by credit card, dispute the charge with your card issuer right away (you have more protection than with debit cards). If you wired money within the last 24 hours, call your bank right away — some wire transfers can be recalled. If you paid by gift card, call the gift card company's fraud line — some companies have small victim recovery funds. Report to the FTC at reportfraud.ftc.gov and to your state attorney general.`,
         tip: 'A free, legitimate resource is the Identity Theft Resource Center at idtheftcenter.org or by phone at 888-400-5530. They help scam victims understand their options at no cost.',
       },
     ],
@@ -518,7 +518,7 @@ export const guidesBatch13: Guide[] = [
       },
       {
         title: 'Send money to someone you trust',
-        content: `In Zelle, tap "Send Money." Enter the recipient's email address or US mobile phone number. Type the amount you want to send. Add a memo if you want (like "Splitting dinner" or "Birthday gift"). Review the details carefully and tap "Send." The money leaves your account immediately and arrives in the recipient's account usually within minutes.`,
+        content: `In Zelle, tap "Send Money." Enter the recipient's email address or US mobile phone number. Type the amount you want to send. Add a memo if you want (like "Splitting dinner" or "Birthday gift"). Review the details carefully and tap "Send." The money leaves your account right away and arrives in the recipient's account usually within minutes.`,
         warning: 'Always double-check the email address or phone number before sending. Once you send money with Zelle, it cannot be reversed unless the recipient voluntarily returns it.',
       },
       {

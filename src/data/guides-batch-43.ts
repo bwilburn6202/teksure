@@ -156,7 +156,7 @@ The vacation responder is available in Gmail on your computer (gmail.com). The s
     thumbnailEmoji: ``,
     publishedAt: `2026-04-19`,
     difficulty: `Beginner`,
-    body: `When you delete an email in Gmail, it is not immediately gone forever. It moves to the Trash folder, where it stays for 30 days. During that time, you can recover it — move it back to your inbox or another folder.
+    body: `When you delete an email in Gmail, it is not right away gone forever. It moves to the Trash folder, where it stays for 30 days. During that time, you can recover it — move it back to your inbox or another folder.
 
 After 30 days, Gmail permanently deletes items in Trash. At that point, they cannot be recovered.
 
@@ -322,7 +322,7 @@ Contacts sync via iCloud by default. Go to Settings → your name → iCloud →
     steps: [
       {
         title: `Add a new contact from scratch`,
-        content: `Open the Contacts app (or open the Phone app → tap "Contacts" at the bottom). Tap the "+" icon at the top right. Enter the person's first name, last name, phone number, and email. Tap "Done" to save. The contact is immediately available for calls, texts, and FaceTime.`,
+        content: `Open the Contacts app (or open the Phone app → tap "Contacts" at the bottom). Tap the "+" icon at the top right. Enter the person's first name, last name, phone number, and email. Tap "Done" to save. The contact is right away available for calls, texts, and FaceTime.`,
         tip: `Tap "add field" at the bottom to add a birthday, physical address, relationship, company, or notes. Adding the birthday lets Calendar remind you each year.`,
       },
       {
@@ -373,7 +373,7 @@ iPhone comes with a large selection of built-in ringtones at no cost. You can al
     steps: [
       {
         title: `Change your ringtone`,
-        content: `Go to Settings → Sounds & Haptics → Ringtone. A list of built-in ringtones appears. Tap any name to preview it — it plays immediately. Scroll through the list to find one you like. The current ringtone has a checkmark. Tap a different ringtone to select it. Tap "Back" at the top — the change is saved automatically.`,
+        content: `Go to Settings → Sounds & Haptics → Ringtone. A list of built-in ringtones appears. Tap any name to preview it — it plays right away. Scroll through the list to find one you like. The current ringtone has a checkmark. Tap a different ringtone to select it. Tap "Back" at the top — the change is saved automatically.`,
         tip: `The "Classic" section at the bottom of the list has traditional phone ring sounds that are easy to hear clearly.`,
       },
       {
@@ -472,7 +472,7 @@ This is a simple setting change that takes about 30 seconds. You can change it b
       },
       {
         title: `Change the default browser`,
-        content: `Inside the browser's settings page in Settings, look for "Default Browser App." Tap it. A list of installed browsers appears. Tap your preferred browser to select it. A checkmark appears next to it. Tap the back arrow — the change takes effect immediately.`,
+        content: `Inside the browser's settings page in Settings, look for "Default Browser App." Tap it. A list of installed browsers appears. Tap your preferred browser to select it. A checkmark appears next to it. Tap the back arrow — the change takes effect right away.`,
       },
       {
         title: `Test that it worked`,
@@ -519,7 +519,7 @@ This is a simple setting change that takes about 30 seconds. You can change it b
       },
       {
         title: `Search within a specific website`,
-        content: `Type site: followed immediately by a website address, then your search term. Examples: site:ssa.gov benefits application finds information about benefits on the Social Security website. site:medicare.gov prescription drug coverage limits results to Medicare's official site.`,
+        content: `Type site: followed right away by a website address, then your search term. Examples: site:ssa.gov benefits application finds information about benefits on the Social Security website. site:medicare.gov prescription drug coverage limits results to Medicare's official site.`,
         tip: `Quick Tip: Use site:mayoclinic.org or site:webmd.com before a health question to get results only from trusted medical sources.`,
       },
       {
@@ -557,7 +557,7 @@ There are several ways to access your Downloads folder:
 
 **Option 2 — Files by Google app**: More organized and easier to navigate than the built-in app on some phones.
 
-**Option 3 — From the notification**: When something finishes downloading, a notification appears. Tapping it opens the file immediately. This is the fastest option, but the notification disappears once you dismiss it.
+**Option 3 — From the notification**: When something finishes downloading, a notification appears. Tapping it opens the file right away. This is the fastest option, but the notification disappears once you dismiss it.
 
 **Option 4 — From the browser**: In Chrome, tap the three dots (...) → "Downloads" to see everything you have downloaded from the web.
 
@@ -576,7 +576,7 @@ Note: If you download a file from an email attachment, it may save to a differen
       },
       {
         title: `Access photos you downloaded in the Gallery`,
-        content: `Downloaded photos automatically appear in your phone's Gallery or Photos app. Open the Gallery app → look for an album called "Downloads" or "Camera" (some phones save web downloads to camera roll). The download icon in the corner of a photo indicates it was downloaded from the web.`,
+        content: `Downloaded photos automatically appear in your phone's Gallery or Photos app. Open the Gallery app → look for an album called "Downloads" or "Camera" (some phones save web downloads to camera roll). The download icon in the corner of a photo shows it was downloaded from the web.`,
       },
       {
         title: `Find email attachments`,
@@ -608,7 +608,7 @@ Note: If you download a file from an email attachment, it may save to a differen
 
 **Alexa calling features:**
 - **Calling**: Make voice calls to Alexa contacts
-- **Drop In**: Instantly open a two-way communication line with a family member's Echo — like an intercom between rooms or between homes. The other person's Echo answers immediately (useful for checking on elderly parents)
+- **Drop In**: Instantly open a two-way communication line with a family member's Echo — like an intercom between rooms or between homes. The other person's Echo answers right away (useful for checking on elderly parents)
 - **Announcements**: Broadcast a message to all Echo devices in your home ("Dinner is ready")
 - **Messages**: Send voice messages to Alexa contacts that they can hear when they ask
 
@@ -627,7 +627,7 @@ Video calling works on Echo Show devices (Echo Show 5, 8, 10, 15, and the new Ec
       },
       {
         title: `Set up Drop In with a family member`,
-        content: `Drop In lets you instantly connect with another Echo without the other person having to answer. Both parties must enable Drop In permission for each other. In the Alexa app → Communicate → tap the person's name → "Contact Details" → enable "Allow Drop In." Once enabled, say "Alexa, drop in on [name]" and their Echo opens immediately.`,
+        content: `Drop In lets you instantly connect with another Echo without the other person having to answer. Both parties must enable Drop In permission for each other. In the Alexa app → Communicate → tap the person's name → "Contact Details" → enable "Allow Drop In." Once enabled, say "Alexa, drop in on [name]" and their Echo opens right away.`,
         warning: `Drop In is powerful — use it only with people who expect and want it. It is designed for close family use, like checking on a parent across town, not casual contacts.`,
       },
       {
@@ -727,7 +727,7 @@ Most major airlines support Apple Wallet boarding passes. The process is usually
       },
       {
         title: `Find the "Add to Apple Wallet" button`,
-        content: `After check-in, your boarding pass is displayed. Look for a button that says "Add to Apple Wallet" or shows the Wallet logo (a white icon with colored cards). This button may appear immediately after check-in or in the email confirmation you receive.`,
+        content: `After check-in, your boarding pass is displayed. Look for a button that says "Add to Apple Wallet" or shows the Wallet logo (a white icon with colored cards). This button may appear right away after check-in or in the email confirmation you receive.`,
         tip: `Quick Tip: If you do not see the button on the airline website, try opening the airline's dedicated app instead — Apple Wallet integration is often better there.`,
       },
       {
@@ -830,7 +830,7 @@ Blocking is reversible — you can unblock at any time.
       },
       {
         title: `Block from a recent call on Android`,
-        content: `Open the Phone app → tap "Recents." Find the number or caller. Tap and hold the entry, or tap the three dots (...) next to it → "Block" or "Block/Report Spam." Confirm. The number is immediately blocked.`,
+        content: `Open the Phone app → tap "Recents." Find the number or caller. Tap and hold the entry, or tap the three dots (...) next to it → "Block" or "Block/Report Spam." Confirm. The number is right away blocked.`,
       },
       {
         title: `Block from a text message on Android`,
@@ -839,7 +839,7 @@ Blocking is reversible — you can unblock at any time.
       },
       {
         title: `Unblock a number`,
-        content: `iPhone: Settings → Phone → Blocked Contacts → tap "Edit" → tap the red minus icon next to a number → "Unblock." Android: Open Phone app → three dots → Settings → Blocked Numbers → tap the X next to a number to unblock. The number can reach you again immediately.`,
+        content: `iPhone: Settings → Phone → Blocked Contacts → tap "Edit" → tap the red minus icon next to a number → "Unblock." Android: Open Phone app → three dots → Settings → Blocked Numbers → tap the X next to a number to unblock. The number can reach you again right away.`,
       },
     ],
   },
@@ -907,7 +907,7 @@ Filing a report takes about 5 minutes. No immediate personal action results from
     thumbnailEmoji: ``,
     publishedAt: `2026-04-19`,
     difficulty: `Beginner`,
-    body: `The Weather app on iPhone was significantly upgraded with iOS 17 and later, making it one of the most detailed and visually rich weather apps available — and it is completely free and built in.
+    body: `The Weather app on iPhone was a lot upgraded with iOS 17 and later, making it one of the most detailed and visually rich weather apps available — and it is completely free and built in.
 
 Most people only see the main temperature on the app. But scrolling down reveals much more useful information: hourly forecasts for the next 24 hours, 10-day outlook, air quality index (important for people with respiratory conditions), UV index, wind speed and direction, precipitation probability and intensity, sunrise and sunset times, and moon phases.
 
@@ -939,7 +939,7 @@ The app uses weather data from multiple sources including The Weather Channel an
       },
       {
         title: `Enable severe weather notifications`,
-        content: `Go to Settings → Notifications → Weather → ensure "Allow Notifications" is on. In the Weather app itself: tap the list icon (bottom right) → tap ··· at the top right → "Notifications." Turn on "Severe Weather" to receive government-issued alerts pushed directly to your phone. Government alerts (Tornado Warnings, Flash Floods) arrive on your phone even if your device is in Do Not Disturb mode.`,
+        content: `Go to Settings → Notifications → Weather → make sure "Allow Notifications" is on. In the Weather app itself: tap the list icon (bottom right) → tap ··· at the top right → "Notifications." Turn on "Severe Weather" to receive government-issued alerts pushed directly to your phone. Government alerts (Tornado Warnings, Flash Floods) arrive on your phone even if your device is in Do Not Disturb mode.`,
       },
     ],
   },

@@ -122,7 +122,7 @@ export const guidesBatch22: Guide[] = [
     thumbnailEmoji: '',
     publishedAt: '2026-04-19',
     difficulty: 'Beginner',
-    body: `Your Google account (the one tied to your Gmail) is used across most of what you do online — searching, watching YouTube, using Google Maps, using Android. By default, Google records a lot: your search history, location history, YouTube watch history, and more. This data is used to personalize ads and suggestions.\n\nThe good news: Google gives you control over all of this. You can review what's been recorded, delete specific items or your entire history, turn off future tracking, and lock down account security. This doesn't require anything technical — Google's privacy settings are designed to be accessible.\n\nThis guide walks through the key settings worth reviewing. Even making one or two changes can significantly reduce data collection.`,
+    body: `Your Google account (the one tied to your Gmail) is used across most of what you do online — searching, watching YouTube, using Google Maps, using Android. By default, Google records a lot: your search history, location history, YouTube watch history, and more. This data is used to personalize ads and suggestions.\n\nThe good news: Google gives you control over all of this. You can review what's been recorded, delete specific items or your entire history, turn off future tracking, and lock down account security. This doesn't require anything technical — Google's privacy settings are designed to be accessible.\n\nThis guide walks through the key settings worth reviewing. Even making one or two changes can a lot reduce data collection.`,
     steps: [
       {
         title: 'Open your Google Account settings',
@@ -144,7 +144,7 @@ export const guidesBatch22: Guide[] = [
       {
         title: 'Check account security',
         content: `Tap the "Security" tab. Review: what devices are signed into your Google account (remove any you don't recognize), whether 2-Step Verification is enabled (turn it on if not — it's your best defense against account theft), and what third-party apps have access to your Google data.`,
-        warning: `If you see devices signed in that you don't recognize, click "See unfamiliar activity" immediately and follow the steps to secure your account.`,
+        warning: `If you see devices signed in that you don't recognize, click "See unfamiliar activity" right away and follow the steps to secure your account.`,
       },
     ],
   },
@@ -196,7 +196,7 @@ export const guidesBatch22: Guide[] = [
     thumbnailEmoji: '',
     publishedAt: '2026-04-19',
     difficulty: 'Beginner',
-    body: `Fax machines still exist in many offices, hospitals, and government agencies — and occasionally you may need to send a document by fax even though almost no one has a fax machine at home anymore. The good news: you can send and receive faxes from your phone using a fax app, completely paperless.\n\nFax apps work by converting your document (a photo, a scanned document, or a PDF) to a fax transmission and delivering it to the receiving fax machine. The other person gets a printed fax just like normal. You never need a machine or a phone line.\n\nMost fax apps offer free pages for occasional use (typically 10–20 free fax pages), which is enough for most people who only need to send a fax once in a while — like when submitting a medical form or a legal document.`,
+    body: `Fax machines still exist in many offices, hospitals, and government agencies — and sometimes you may need to send a document by fax even though almost no one has a fax machine at home anymore. The good news: you can send and receive faxes from your phone using a fax app, completely paperless.\n\nFax apps work by converting your document (a photo, a scanned document, or a PDF) to a fax transmission and delivering it to the receiving fax machine. The other person gets a printed fax just like normal. You never need a machine or a phone line.\n\nMost fax apps offer free pages for occasional use (typically 10–20 free fax pages), which is enough for most people who only need to send a fax once in a while — like when submitting a medical form or a legal document.`,
     steps: [
       {
         title: 'Download a fax app',
@@ -232,7 +232,7 @@ export const guidesBatch22: Guide[] = [
     thumbnailEmoji: '‍',
     publishedAt: '2026-04-19',
     difficulty: 'Beginner',
-    body: `Telehealth appointments let you see a doctor by video call from home — no driving, no waiting room, no exposure to other sick patients. Many primary care visits, follow-up appointments, mental health sessions, and medication management visits can be done by telehealth. Most insurance plans including Medicare now cover many telehealth services.\n\nThe technology is usually straightforward — your doctor's office sends you a link before the appointment, you tap it, and the video call starts in your browser or their patient app. But a little preparation goes a long way toward making the appointment productive and ensuring your doctor can see and hear you clearly.\n\nThis guide covers what to prepare before the appointment and what to do when the call begins.`,
+    body: `Telehealth appointments let you see a doctor by video call from home — no driving, no waiting room, no exposure to other sick patients. Many primary care visits, follow-up appointments, mental health sessions, and medication management visits can be done by telehealth. Most insurance plans including Medicare now cover many telehealth services.\n\nThe technology is usually straightforward — your doctor's office sends you a link before the appointment, you tap it, and the video call starts in your browser or their patient app. But a little preparation goes a long way toward making the appointment productive and making sure your doctor can see and hear you clearly.\n\nThis guide covers what to prepare before the appointment and what to do when the call begins.`,
     steps: [
       {
         title: 'Prepare your symptoms and medications ahead of time',
@@ -241,7 +241,7 @@ export const guidesBatch22: Guide[] = [
       },
       {
         title: 'Test your device and internet 15 minutes before',
-        content: `Open the appointment link from your doctor's confirmation email or text before the visit starts. Most telehealth platforms have a "Test your connection" option — use it to confirm your camera and microphone work. Check that your device is charged or plugged in. Close other apps that use the internet (like streaming video) to ensure a smooth connection.`,
+        content: `Open the appointment link from your doctor's confirmation email or text before the visit starts. Most telehealth platforms have a "Test your connection" option — use it to confirm your camera and microphone work. Check that your device is charged or plugged in. Close other apps that use the internet (like streaming video) to make sure a smooth connection.`,
       },
       {
         title: 'Find a good spot for the call',
@@ -254,7 +254,7 @@ export const guidesBatch22: Guide[] = [
       {
         title: `Know what telehealth can and can't do`,
         content: `Telehealth is excellent for: minor illnesses, prescription refills, mental health visits, follow-up appointments, reviewing test results, and discussing symptoms that don't require physical examination. It's not suitable for: chest pain, difficulty breathing, severe abdominal pain, or anything requiring an in-person physical exam or test. If unsure, call your doctor's office and ask.`,
-        warning: `If you're experiencing a medical emergency — chest pain, trouble breathing, severe bleeding, loss of consciousness — call 911 immediately. Do not use a telehealth app for emergencies.`,
+        warning: `If you're experiencing a medical emergency — chest pain, trouble breathing, severe bleeding, loss of consciousness — call 911 right away. Do not use a telehealth app for emergencies.`,
       },
     ],
   },
@@ -305,7 +305,7 @@ export const guidesBatch22: Guide[] = [
     thumbnailEmoji: '',
     publishedAt: '2026-04-19',
     difficulty: 'Beginner',
-    body: `Fitness trackers and smartwatches have become popular among people of all ages — especially those managing health conditions, looking to increase activity, or wanting an emergency safety feature like fall detection. The two biggest names are Fitbit (now owned by Google) and Apple Watch.\n\nBoth will track your steps, heart rate, sleep quality, and exercise. But they differ significantly in price, battery life, smartphone compatibility, and what else they do beyond health tracking. Choosing the right one means understanding what you actually need — not just what's most popular.\n\nThis guide compares the two side by side so you can make a confident choice for your specific situation.`,
+    body: `Fitness trackers and smartwatches have become popular among people of all ages — especially those managing health conditions, looking to increase activity, or wanting an emergency safety feature like fall detection. The two biggest names are Fitbit (now owned by Google) and Apple Watch.\n\nBoth will track your steps, heart rate, sleep quality, and exercise. But they differ a lot in price, battery life, smartphone compatibility, and what else they do beyond health tracking. Choosing the right one means understanding what you actually need — not just what's most popular.\n\nThis guide compares the two side by side so you can make a confident choice for your specific situation.`,
     steps: [
       {
         title: 'Key differences at a glance',
@@ -500,7 +500,7 @@ export const guidesBatch22: Guide[] = [
       },
       {
         title: 'Create text shortcuts',
-        content: 'Text Replacement lets you type a short code that expands to a full phrase. Still in Settings > General > Keyboard, tap "Text Replacement," then the "+" button. Example: type "omw" in the Phrase field and "On my way!" as the shortcut. Now whenever you type "omw," iPhone replaces it automatically. Useful for email signatures, your address, or frequently-typed phrases.',
+        content: 'Text Replacement lets you type a short code that expands to a full phrase. Still in Settings > General > Keyboard, tap "Text Replacement," then the "+" button. Example: type "omw" in the Phrase field and "On my way!" as the shortcut. Now whenever you type "omw," iPhone replaces it automatically. Useful for email signatures, your address, or often-typed phrases.',
       },
       {
         title: 'Add a larger keyboard or one-handed mode',
@@ -523,7 +523,7 @@ export const guidesBatch22: Guide[] = [
     thumbnailEmoji: '',
     publishedAt: '2026-04-19',
     difficulty: 'Beginner',
-    body: `Modern flat TVs look great but often have poor sound — the speakers are thin and point away from you, making dialogue hard to hear, especially at lower volumes. A soundbar is a long, flat speaker that sits below your TV and delivers significantly richer, clearer audio. Dialogue becomes easier to understand, music sounds fuller, and the overall experience improves dramatically.\n\nSoundbars connect to your TV in one of three ways: HDMI ARC (best quality, one cable does audio and control), optical digital cable (also good), or Bluetooth (wireless, most flexible but slightly less reliable). This guide covers all three methods so you can use whichever port your TV has.`,
+    body: `Modern flat TVs look great but often have poor sound — the speakers are thin and point away from you, making dialogue hard to hear, especially at lower volumes. A soundbar is a long, flat speaker that sits below your TV and delivers a lot richer, clearer audio. Dialogue becomes easier to understand, music sounds fuller, and the overall experience improves dramatically.\n\nSoundbars connect to your TV in one of three ways: HDMI ARC (best quality, one cable does audio and control), optical digital cable (also good), or Bluetooth (wireless, most flexible but slightly less reliable). This guide covers all three methods so you can use whichever port your TV has.`,
     steps: [
       {
         title: `Identify your TV's audio output ports`,
@@ -540,7 +540,7 @@ export const guidesBatch22: Guide[] = [
       },
       {
         title: 'Connect via Bluetooth',
-        content: 'Put the soundbar in Bluetooth pairing mode (usually by holding the Bluetooth button until a light flashes). On your TV, go to Settings > Sound > Bluetooth Speaker List (or similar). Select your soundbar from the list. This is the most flexible option for furniture arrangements but may occasionally experience brief dropouts.',
+        content: 'Put the soundbar in Bluetooth pairing mode (usually by holding the Bluetooth button until a light flashes). On your TV, go to Settings > Sound > Bluetooth Speaker List (or similar). Select your soundbar from the list. This is the most flexible option for furniture arrangements but may sometimes experience brief dropouts.',
       },
       {
         title: 'Adjust soundbar settings for better dialogue',
@@ -559,12 +559,12 @@ export const guidesBatch22: Guide[] = [
     thumbnailEmoji: '',
     publishedAt: '2026-04-19',
     difficulty: 'Beginner',
-    body: `Your Medicare card shows your Medicare number (a unique 11-character combination of letters and numbers, different from your Social Security number since 2018) and indicates which parts of Medicare you're enrolled in. You'll need it when visiting doctors, hospitals, labs, or picking up prescriptions.\n\nIf you've lost your Medicare card, there's no need to worry — replacement is free and straightforward. Medicare doesn't charge for replacement cards. Be cautious of any company that offers to get you a new Medicare card for a fee — that's a scam.\n\nYou can request a replacement online at Medicare.gov, by calling 1-800-MEDICARE, or by contacting your local Social Security office.`,
+    body: `Your Medicare card shows your Medicare number (a unique 11-character combination of letters and numbers, different from your Social Security number since 2018) and shows which parts of Medicare you're enrolled in. You'll need it when visiting doctors, hospitals, labs, or picking up prescriptions.\n\nIf you've lost your Medicare card, there's no need to worry — replacement is free and straightforward. Medicare doesn't charge for replacement cards. Be cautious of any company that offers to get you a new Medicare card for a fee — that's a scam.\n\nYou can request a replacement online at Medicare.gov, by calling 1-800-MEDICARE, or by contacting your local Social Security office.`,
     steps: [
       {
         title: 'Request online at Medicare.gov (fastest)',
-        content: 'Go to medicare.gov and sign into (or create) your Medicare account. Once logged in, look for "My Account" and then "Personal Information" or a "Print/Ship New Card" option. You can print a temporary card immediately and request a permanent card to be mailed within 30 days. This is the fastest method.',
-        tip: 'Quick Tip: You can print a temporary card from medicare.gov immediately to use while you wait for your permanent card.',
+        content: 'Go to medicare.gov and sign into (or create) your Medicare account. Once logged in, look for "My Account" and then "Personal Information" or a "Print/Ship New Card" option. You can print a temporary card right away and request a permanent card to be mailed within 30 days. This is the fastest method.',
+        tip: 'Quick Tip: You can print a temporary card from medicare.gov right away to use while you wait for your permanent card.',
       },
       {
         title: 'Call 1-800-MEDICARE',
@@ -581,7 +581,7 @@ export const guidesBatch22: Guide[] = [
       {
         title: 'Protect your Medicare number',
         content: `Your Medicare number is as sensitive as your Social Security number. Only give it to your doctor, hospital, or other healthcare providers. Medicare will never call and ask for your Medicare number over the phone. If someone calls asking for your Medicare number, hang up — it's a scam.`,
-        warning: 'Medicare does not call asking for your Medicare card number, bank information, or Social Security number. Any such call is a scam — hang up immediately.',
+        warning: 'Medicare does not call asking for your Medicare card number, bank information, or Social Security number. Any such call is a scam — hang up right away.',
       },
     ],
   },
@@ -645,7 +645,7 @@ export const guidesBatch22: Guide[] = [
       },
       {
         title: 'Set up a Durable POA',
-        content: `A "Durable" power of attorney remains in effect even if you become incapacitated — that's what makes it essential. A non-durable POA terminates if you become incapacitated, making it nearly useless for the purpose most people need it for. Make sure any POA you sign is explicitly "Durable."`,
+        content: `A "Durable" power of attorney remains in effect even if you become incapacitated — that's what makes it essential. A non-durable POA ends if you become incapacitated, making it nearly useless for the purpose most people need it for. Make sure any POA you sign is explicitly "Durable."`,
         tip: 'Quick Tip: Every state has slightly different POA requirements. Using a state-specific form is important. Your state bar association website usually has free or low-cost forms.',
       },
       {
@@ -683,7 +683,7 @@ export const guidesBatch22: Guide[] = [
       },
       {
         title: 'Check for personalized offers',
-        content: `Most store apps also show "Personalized Deals" or "Just for U" offers — discounts on products you buy frequently. These are often deeper discounts than the general coupons. Check this section separately as these offers aren't always mixed with the main coupon list.`,
+        content: `Most store apps also show "Personalized Deals" or "Just for U" offers — discounts on products you buy often. These are often deeper discounts than the general coupons. Check this section separately as these offers aren't always mixed with the main coupon list.`,
       },
       {
         title: 'Use your loyalty card at checkout',

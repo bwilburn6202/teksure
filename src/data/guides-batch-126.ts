@@ -15,7 +15,7 @@ export const guidesBatch126: Guide[] = [
     publishedAt: '2026-05-05',
     lastVerifiedAt: '2026-05-05',
     difficulty: 'Beginner',
-    body: `If a pop-up appears on your computer claiming your device is infected with a virus, displaying a Microsoft or Apple logo, and asking you to call a phone number — close it immediately. Real Microsoft, Apple, and Google support never display pop-ups with phone numbers. These are scams designed to convince you to call a fake "support" line where someone will ask for remote access to your computer or payment for fake services.
+    body: `If a pop-up appears on your computer claiming your device is infected with a virus, displaying a Microsoft or Apple logo, and asking you to call a phone number — close it right away. Real Microsoft, Apple, and Google support never display pop-ups with phone numbers. These are scams designed to convince you to call a fake "support" line where someone will ask for remote access to your computer or payment for fake services.
 
 The pop-ups can look very convincing. Some make alarm sounds. Some say "Your computer has been locked." Some claim the FBI is involved. None of these are real. Closing the browser tab or window is the correct response in every case.
 

@@ -99,7 +99,7 @@ export const guidesBatch258: Guide[] = [
       },
       {
         title: "Get your EIN and open a business bank account",
-        content: "Go to irs.gov/ein and complete the online EIN application. You will receive your EIN immediately on the confirmation page — print it. Take that EIN plus your state filing paperwork (if an LLC) to a credit union or bank and open a free business checking account. Run every business dollar through this account. Mixing personal and business money is the biggest record-keeping mistake new senior entrepreneurs make, and the IRS will notice.",
+        content: "Go to irs.gov/ein and complete the online EIN application. You will receive your EIN right away on the confirmation page — print it. Take that EIN plus your state filing paperwork (if an LLC) to a credit union or bank and open a free business checking account. Run every business dollar through this account. Mixing personal and business money is the biggest record-keeping mistake new senior entrepreneurs make, and the IRS will notice.",
         warning: "Never pay a service that calls itself IRS-EIN-Help or similar to get your EIN. The IRS provides EINs free of charge. The lookalike services charge $100 to $300 for paperwork you can do in 5 minutes yourself.",
       },
     ],
@@ -190,7 +190,7 @@ export const guidesBatch258: Guide[] = [
       {
         title: "Get quotes from all your real options before deciding",
         content: "Go to healthcare.gov, enter your zip code and estimated income, and write down the cheapest silver plan premium. Then ask your former employer for the COBRA monthly cost. Then ask your spouse HR what adding you costs. Make a side-by-side comparison: monthly premium, deductible, out-of-pocket maximum, network of doctors. The decision is not always about price alone — keeping your oncologist or rheumatologist may be worth $200 a month extra.",
-        tip: "Quick Tip: Most states have a free SHIP counselor (State Health Insurance Assistance Program) who walks self-employed people through the gap years at no cost. Find yours at shiphelp.org.",
+        tip: "Quick Tip: Most states have a free SHIP counselor (State Health Insurance Help Program) who walks self-employed people through the gap years at no cost. Find yours at shiphelp.org.",
       },
       {
         title: "Time your enrollment to avoid coverage gaps",

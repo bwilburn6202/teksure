@@ -110,7 +110,7 @@ export const guidesBatch20: Guide[] = [
       },
       {
         title: 'Make sure iCloud sync is on',
-        content: 'Go to Settings > [your name] > iCloud > and make sure the toggle next to Calendar is green (on). This ensures your calendar appears on all your Apple devices automatically.',
+        content: 'Go to Settings > [your name] > iCloud > and make sure the toggle next to Calendar is green (on). This makes sure your calendar appears on all your Apple devices automatically.',
       },
     ],
   },
@@ -216,7 +216,7 @@ export const guidesBatch20: Guide[] = [
       },
       {
         title: 'Lock your phone remotely',
-        content: 'Click "Secure device" to lock your phone with your PIN, pattern, or password immediately. You can also display a custom message on the lock screen — like your email address — so an honest person who finds it can contact you.',
+        content: 'Click "Secure device" to lock your phone with your PIN, pattern, or password right away. You can also display a custom message on the lock screen — like your email address — so an honest person who finds it can contact you.',
       },
       {
         title: 'Erase your phone as a last resort',
@@ -413,7 +413,7 @@ export const guidesBatch20: Guide[] = [
       },
       {
         title: 'Review Guard Plus for additional features',
-        content: `Guard Plus ($4.99/month) adds features like an emergency helpline, the ability to play sounds that make your home seem occupied while you're away, and professional monitoring partnerships. The free version is sufficient for basic sound detection and most households.`,
+        content: `Guard Plus ($4.99/month) adds features like an emergency helpline, the ability to play sounds that make your home seem occupied while you're away, and professional monitoring partnerships. The free version is enough for basic sound detection and most households.`,
       },
     ],
   },
@@ -433,7 +433,7 @@ export const guidesBatch20: Guide[] = [
       {
         title: 'Clean the charging port gently',
         content: 'Lint, dust, and pocket debris collect in the small charging port at the bottom of your iPhone over time — and even a thin layer of lint can prevent a good connection. Shine a flashlight into the port. If you see anything inside, use a wooden toothpick (not metal) to very gently loosen and remove debris. Never use water or compressed air directly into the port.',
-        tip: 'Quick Tip: Lint in the charging port is the most common reason iPhones stop charging — and cleaning it out is free and often works immediately.',
+        tip: 'Quick Tip: Lint in the charging port is the most common reason iPhones stop charging — and cleaning it out is free and often works right away.',
       },
       {
         title: 'Try a different cable',
@@ -521,7 +521,7 @@ export const guidesBatch20: Guide[] = [
       },
       {
         title: 'Search for state-specific programs',
-        content: `Many states have their own broadband assistance programs. Go to your state government's website (search "[your state] affordable broadband program") or visit broadbandnow.com/low-income-internet for a state-by-state guide to available programs.`,
+        content: `Many states have their own broadband help programs. Go to your state government's website (search "[your state] affordable broadband program") or visit broadbandnow.com/low-income-internet for a state-by-state guide to available programs.`,
       },
       {
         title: 'Consider mobile hotspot plans as an alternative',
@@ -566,7 +566,7 @@ export const guidesBatch20: Guide[] = [
       {
         title: 'Silence all unknown callers at once',
         content: `If you're getting many unwanted calls from different numbers: On iPhone, go to Settings > Phone > Silence Unknown Callers and turn it on. Calls from numbers not in your contacts go straight to voicemail. On Android, open the Phone app > Settings (three dots) > Blocked numbers > turn on "Block calls from unidentified callers."`,
-        tip: 'Quick Tip: The "Silence Unknown Callers" feature is especially useful for seniors who frequently receive scam calls from new numbers. Legitimate callers will leave a voicemail.',
+        tip: 'Quick Tip: The "Silence Unknown Callers" feature is especially useful for seniors who often receive scam calls from new numbers. Legitimate callers will leave a voicemail.',
       },
     ],
   },
@@ -676,7 +676,7 @@ export const guidesBatch20: Guide[] = [
       },
       {
         title: 'Free up space by deleting unwanted photos',
-        content: `Open the Photos app, tap Albums, then "Recently Deleted." These are photos you've deleted but which are being held for 30 days. Tap "Delete All" to permanently remove them and immediately free up iCloud storage. Also scroll through your main library and delete any duplicates, blurry shots, or screenshots you no longer need.`,
+        content: `Open the Photos app, tap Albums, then "Recently Deleted." These are photos you've deleted but which are being held for 30 days. Tap "Delete All" to permanently remove them and right away free up iCloud storage. Also scroll through your main library and delete any duplicates, blurry shots, or screenshots you no longer need.`,
       },
     ],
   },

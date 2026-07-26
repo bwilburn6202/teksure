@@ -112,7 +112,7 @@ Vrbo is similar to Airbnb but focuses entirely on whole-property rentals — you
 
 Vrbo has over 2 million properties in 190 countries. Popular property types include beach houses, mountain cabins, lakefront homes, and city apartments.
 
-To book on Vrbo, you create a free account, search by destination and dates, and either send a booking request to the owner or (for "Instant Book" properties) book immediately like a hotel. Payments go through Vrbo, which holds funds until after check-in for buyer protection.
+To book on Vrbo, you create a free account, search by destination and dates, and either send a booking request to the owner or (for "Instant Book" properties) book right away like a hotel. Payments go through Vrbo, which holds funds until after check-in for buyer protection.
 
 The Vrbo app is free on iPhone and Android. You can also use vrbo.com on any computer.`,
     steps: [
@@ -123,7 +123,7 @@ The Vrbo app is free on iPhone and Android. You can also use vrbo.com on any com
       {
         title: `Filter results to find the right property`,
         content: `Use the filters to narrow your search: price range per night, property type (cabin, beach house, condo), number of bedrooms/bathrooms, pet-friendly, pool, hot tub, beachfront, etc. Sort results by "Relevance," "Price," or "Top Reviewed."`,
-        tip: `Quick Tip: Check the "Instant Book" filter to see only properties you can book immediately — no waiting for owner approval.`,
+        tip: `Quick Tip: Check the "Instant Book" filter to see only properties you can book right away — no waiting for owner approval.`,
       },
       {
         title: `Review a listing before booking`,
@@ -175,7 +175,7 @@ The app works on iPhone and Android. You can also pay at parkmobile.io on a comp
       },
       {
         title: `Start a parking session`,
-        content: `Open ParkMobile. Tap "Start Parking." Enter the zone number from the sign. Select your vehicle. Choose how much time you need (you can buy time in 15-minute or 1-hour increments depending on the zone). Tap "Start Parking." Your session begins immediately.`,
+        content: `Open ParkMobile. Tap "Start Parking." Enter the zone number from the sign. Select your vehicle. Choose how much time you need (you can buy time in 15-minute or 1-hour increments depending on the zone). Tap "Start Parking." Your session begins right away.`,
         tip: `Quick Tip: Tap the microphone icon and say the zone number instead of typing it.`,
       },
       {
@@ -416,7 +416,7 @@ Nearby Share requires both devices to have Bluetooth and Wi-Fi turned on.`,
       },
       {
         title: `Accept an incoming transfer`,
-        content: `When someone sends you a file, a notification appears at the bottom of your screen asking you to accept. Tap "Accept." The file transfers immediately and saves to your Downloads folder or Gallery.`,
+        content: `When someone sends you a file, a notification appears at the bottom of your screen asking you to accept. Tap "Accept." The file transfers right away and saves to your Downloads folder or Gallery.`,
       },
       {
         title: `Share other types of content`,
@@ -613,7 +613,7 @@ Getting a library card is free and takes about 5 minutes at any public library. 
       },
       {
         title: `Get or find your library card number`,
-        content: `Your library card number is on the back of your physical card, usually a long barcode number. If you do not have a card, visit your library with a photo ID and proof of address. Getting a card is free. Some library systems let you register online for a digital card number immediately.`,
+        content: `Your library card number is on the back of your physical card, usually a long barcode number. If you do not have a card, visit your library with a photo ID and proof of address. Getting a card is free. Some library systems let you register online for a digital card number right away.`,
         tip: `Quick Tip: Save your library card number in the Notes app on your phone so you always have it handy for logging in to digital services.`,
       },
       {
@@ -706,7 +706,7 @@ The "What's Covered" app is free on iPhone and Android, developed by the Centers
     steps: [
       {
         title: `Download the official app`,
-        content: `Search "What's Covered" in the App Store (iPhone) or Google Play (Android). The official app is published by "Centers for Medicare & Medicaid Services." It is free. Install it. No login or account required — you can search immediately without entering any personal information.`,
+        content: `Search "What's Covered" in the App Store (iPhone) or Google Play (Android). The official app is published by "Centers for Medicare & Medicaid Services." It is free. Install it. No login or account required — you can search right away without entering any personal information.`,
         tip: `Quick Tip: You can also access the same information at medicare.gov/coverage and searching there on any web browser.`,
       },
       {
@@ -766,7 +766,7 @@ The app is free on iPhone and Android from the official VA. It is one of the bes
       },
       {
         title: `Refill a prescription`,
-        content: `Tap "Health" → "Prescriptions." You will see a list of your current VA prescriptions. Tap any prescription and select "Refill Prescription" if it is eligible for refill. Confirm your mailing address. Your refill is submitted immediately. You can track the shipment status in the same screen.`,
+        content: `Tap "Health" → "Prescriptions." You will see a list of your current VA prescriptions. Tap any prescription and select "Refill Prescription" if it is eligible for refill. Confirm your mailing address. Your refill is submitted right away. You can track the shipment status in the same screen.`,
         tip: `The app only shows prescriptions filled through the VA pharmacy. Prescriptions you fill at an outside pharmacy are not shown here.`,
       },
       {

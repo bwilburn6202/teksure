@@ -70,7 +70,7 @@ To send money, open Zelle in your bank app, tap Send, and enter the recipient's 
 
 Transfer limits vary by bank. Most banks allow several hundred to a few thousand dollars per day, and a higher weekly limit. Check your bank's website or call customer service to find your exact limits.
 
-Here's an important warning: payments made through Zelle are almost impossible to reverse. Once you confirm a transfer, that money moves immediately. This makes Zelle very convenient — but also very attractive to scammers. Never use Zelle to pay someone you don't know personally. Never pay "customer support" callers who ask for Zelle payment. Legitimate businesses and government agencies will never ask for Zelle payments. If someone pressures you to pay quickly via Zelle, that's a scam.`,
+Here's an important warning: payments made through Zelle are almost impossible to reverse. Once you confirm a transfer, that money moves right away. This makes Zelle very convenient — but also very attractive to scammers. Never use Zelle to pay someone you don't know personally. Never pay "customer support" callers who ask for Zelle payment. Legitimate businesses and government agencies will never ask for Zelle payments. If someone pressures you to pay quickly via Zelle, that's a scam.`,
     steps: [
       {
         title: `Find Zelle in your bank app`,
@@ -119,7 +119,7 @@ Cash App also supports direct deposit. You can have your paycheck, government be
 
 Cash App also offers the ability to buy fractional shares of stocks and Bitcoin in small amounts. These investments carry real financial risk — the value can go up or down — and are separate from the payment features. You don't have to use them to use the rest of Cash App.
 
-As with any payment app, never send Cash App payments to strangers. Scammers frequently pose as Cash App representatives asking for your login info or promising free money. Cash App will never ask for your PIN or sign-in code.`,
+As with any payment app, never send Cash App payments to strangers. Scammers often pose as Cash App representatives asking for your login info or promising free money. Cash App will never ask for your PIN or sign-in code.`,
     steps: [
       {
         title: `Download Cash App and set up your account`,
@@ -263,7 +263,7 @@ For comparison: ExpressVPN is faster and simpler but more expensive. Proton VPN 
     steps: [
       {
         title: `Download and install NordVPN`,
-        content: `Go to nordvpn.com and create an account, or download the NordVPN app directly from the App Store or Google Play. Choose a subscription plan — annual plans are significantly cheaper than month-to-month. Install the app on your device.`,
+        content: `Go to nordvpn.com and create an account, or download the NordVPN app directly from the App Store or Google Play. Choose a subscription plan — annual plans are a lot cheaper than month-to-month. Install the app on your device.`,
       },
       {
         title: `Connect to a VPN server`,
@@ -499,7 +499,7 @@ You can also log exercise, which MyFitnessPal adds to your calorie allowance. If
 
 Setting a water intake goal helps many people stay hydrated throughout the day. MyFitnessPal has a simple water logging feature on the diary screen.
 
-The most important factor in accurate tracking is honesty and completeness. Logging everything — even the snacks, drinks, and cooking oils — gives you a true picture of your intake. Using a kitchen scale to weigh food, rather than estimating by volume, significantly improves accuracy.
+The most important factor in accurate tracking is honesty and completeness. Logging everything — even the snacks, drinks, and cooking oils — gives you a true picture of your intake. Using a kitchen scale to weigh food, rather than estimating by volume, a lot improves accuracy.
 
 Food tracking is a tool, not a rule. Many registered dietitians recommend using it for a few weeks to build awareness, rather than logging every meal forever. If you find tracking feels stressful or triggers unhealthy thoughts about food, stop and consult with a registered dietitian or your doctor.`,
     steps: [
@@ -523,7 +523,7 @@ Food tracking is a tool, not a rule. Many registered dietitians recommend using 
       {
         title: `Connect Apple Health or a fitness tracker`,
         content: `Go to More > Apps & Devices (or Settings > Connected Apps). Choose Apple Health, Google Fit, Fitbit, or Garmin depending on your device. Once connected, steps and calories burn sync automatically, so you don't have to log exercise manually.`,
-        tip: `If you want to lose weight, eating 500 fewer calories per day than your goal burns approximately one pound per week — a safe, steady rate. Going much lower than that is not recommended without medical supervision.`,
+        tip: `If you want to lose weight, eating 500 fewer calories per day than your goal burns about one pound per week — a safe, steady rate. Going much lower than that is not recommended without medical supervision.`,
       },
     ],
   },
@@ -685,7 +685,7 @@ On Mac, Apple Calendar also supports Natural Language input. Click the + button 
 
 Cozi is available on iPhone, Android, and web browsers. One parent creates a family account at cozi.com, and then invites other family members via email or text. Each person installs the Cozi app on their own phone and joins the family account. Everyone then sees the same shared calendar.
 
-Each family member gets their own color in the calendar, so at a glance you can see whose event is whose. Adding an event is straightforward: tap the + button, choose a date and time, select which family member the event is for (or choose "All" for family-wide events), and save. Everyone in the family sees it immediately on their own devices.
+Each family member gets their own color in the calendar, so at a glance you can see whose event is whose. Adding an event is straightforward: tap the + button, choose a date and time, select which family member the event is for (or choose "All" for family-wide events), and save. Everyone in the family sees it right away on their own devices.
 
 Cozi's shared shopping list is one of its most practical features. You can add items from anywhere, and when someone is at the store, they can see the list update in real time and check items off as they go. No more calling home to ask if you need bread. Each list item is visible to everyone, and you can create multiple lists — one for groceries, one for a home improvement project, one for holiday shopping.
 
@@ -707,7 +707,7 @@ For families who already use Google Calendar heavily, Cozi can sync with Google 
       },
       {
         title: `Add events to the shared calendar`,
-        content: `Tap the + button and choose Add Event. Enter the event title, date, time, and location. Select whose event it is from the family member list — each person has a color. All family members will see the event on their Cozi calendar immediately.`,
+        content: `Tap the + button and choose Add Event. Enter the event title, date, time, and location. Select whose event it is from the family member list — each person has a color. All family members will see the event on their Cozi calendar right away.`,
         tip: `Tap a family member's name in the calendar view to see only their events — useful when managing a child's busy activity schedule.`,
       },
       {
@@ -788,7 +788,7 @@ You can customize what your child can access. From the parent settings (protecte
 
 YouTube Kids includes a built-in timer. You can set a daily screen time limit for each child profile — once the time is up, the app shows a message that screen time is over. This is managed within the app and doesn't require any additional parental control software.
 
-Keep in mind that no automated filter is perfect. Occasionally, content that doesn't belong will get through — this is documented and YouTube works to remove flagged videos quickly. The best approach is to watch along with young children when possible and use the report button if you see something inappropriate.
+Keep in mind that no automated filter is perfect. Sometimes, content that doesn't belong will get through — this is documented and YouTube works to remove flagged videos quickly. The best approach is to watch along with young children when possible and use the report button if you see something inappropriate.
 
 As children get older and approach their teens, you might transition to YouTube with Supervised Experience settings, which allow you to control content maturity levels within the main YouTube app. This is a middle step between YouTube Kids and unrestricted YouTube access.`,
     steps: [

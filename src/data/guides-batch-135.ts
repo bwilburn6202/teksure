@@ -52,7 +52,7 @@ Watch how the scam sounds and what to do: search YouTube for "FTC AI voice scam 
       },
       {
         title: 'If you already sent money, act in the first 24 hours',
-        content: 'You may be able to recover some of it. Wire transfers (Western Union, MoneyGram): call them immediately and ask to cancel. Bank transfers: call your bank and ask for a recall. Gift cards: call the issuing store (Apple, Google Play, Target) and report the card numbers as fraud — sometimes they can freeze the balance. Cash App, Venmo, Zelle: report inside the app AND call your bank. The window is short — most options expire within 24-48 hours. File a police report so banks have something to work with.',
+        content: 'You may be able to recover some of it. Wire transfers (Western Union, MoneyGram): call them right away and ask to cancel. Bank transfers: call your bank and ask for a recall. Gift cards: call the issuing store (Apple, Google Play, Target) and report the card numbers as fraud — sometimes they can freeze the balance. Cash App, Venmo, Zelle: report inside the app AND call your bank. The window is short — most options expire within 24-48 hours. File a police report so banks have something to work with.',
         warning: 'Once cryptocurrency is sent, it is essentially gone. The FTC recovers less than 1 percent of crypto scam losses.',
       },
       {
@@ -388,7 +388,7 @@ Watch a plain-language summary: YouTube → "CFPB peer to peer payment app FDIC"
       },
       {
         title: 'Three rules to apply across all peer-to-peer apps',
-        content: 'Rule 1: Treat these apps as transfer pipes, not savings accounts. Move money in, move money out within a few days. Rule 2: Spread money across institutions. Do not keep more than $200–300 in any one peer-to-peer app even if it is insured. Rule 3: Set up direct transfers to a real bank. Every app has a free 1-3 day transfer to your linked bank account. Use it weekly. If you ever see unusual app behavior (login attempts, password reset emails you did not request), drain the balance immediately and freeze the card.',
+        content: 'Rule 1: Treat these apps as transfer pipes, not savings accounts. Move money in, move money out within a few days. Rule 2: Spread money across institutions. Do not keep more than $200–300 in any one peer-to-peer app even if it is insured. Rule 3: Set up direct transfers to a real bank. Every app has a free 1-3 day transfer to your linked bank account. Use it weekly. If you ever see unusual app behavior (login attempts, password reset emails you did not request), drain the balance right away and freeze the card.',
         tip: 'Quick Tip: A high-yield savings account at a real FDIC bank pays 4 percent+ interest in 2026 and protects your money. Money sitting in Venmo earns nothing AND is uninsured.',
       },
     ],
@@ -444,7 +444,7 @@ Watch a comparison: YouTube → "best live TV streaming for seniors 2026 Consume
       },
       {
         title: 'Watch out for the promo price trap',
-        content: 'YouTube TV and Hulu Live both occasionally run "$20 off your first 3 months" promos. The price reverts after the promo. Set a calendar reminder for the day the price goes back up so you are not surprised. Some services raise prices once a year too — typically in spring. Check your bill once a month for the first six months after switching to confirm the math still works.',
+        content: 'YouTube TV and Hulu Live both sometimes run "$20 off your first 3 months" promos. The price reverts after the promo. Set a calendar reminder for the day the price goes back up so you are not surprised. Some services raise prices once a year too — typically in spring. Check your bill once a month for the first six months after switching to confirm the math still works.',
       },
       {
         title: 'Total cost — a real example',

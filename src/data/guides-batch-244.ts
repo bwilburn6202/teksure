@@ -138,7 +138,7 @@ export const guidesBatch244: Guide[] = [
       },
       {
         title: "Stack Additional Kosher Senior Supports",
-        content: "Kosher Meals on Wheels covers one meal a day in most programs. Stack additional supports for a full week of nutrition. Many Federations and JFS offices run a free kosher food pantry that delivers shelf-stable groceries monthly. Some synagogues organize Shabbat meal packages every Friday for homebound members. SNAP, the federal Supplemental Nutrition Assistance Program, lets eligible seniors buy kosher groceries online from certain kosher supermarkets. The care coordinator at JFS can walk you through SNAP enrollment and help find a kosher SNAP-friendly store.",
+        content: "Kosher Meals on Wheels covers one meal a day in most programs. Stack additional supports for a full week of nutrition. Many Federations and JFS offices run a free kosher food pantry that delivers shelf-stable groceries monthly. Some synagogues organize Shabbat meal packages every Friday for homebound members. SNAP, the federal Supplemental Nutrition Help Program, lets eligible seniors buy kosher groceries online from certain kosher supermarkets. The care coordinator at JFS can walk you through SNAP enrollment and help find a kosher SNAP-friendly store.",
         tip: "Keep a brief weekly food log for the first month. Note which meals you liked and which you did not. Most agencies adjust menus when feedback comes in."
       }
     ]
@@ -208,7 +208,7 @@ export const guidesBatch244: Guide[] = [
       },
       {
         title: "Email or Call the Coordinator Before Your First Visit",
-        content: "Most groups appreciate a short note from a newcomer. Email or call the coordinator a week ahead. Share your name, your faith background in broad terms, and any practical needs such as hearing assistance, a wheelchair-accessible seat, dietary restrictions, or a preferred pronunciation of your name. The coordinator can pair you with a host who will sit beside you the first time, walk you through the program, and introduce you afterward. The note also gives you a head start on what to wear. Some groups meet at houses of worship that ask for head coverings, modest clothing, or removed shoes. Asking ahead avoids surprise.",
+        content: "Most groups appreciate a short note from a newcomer. Email or call the coordinator a week ahead. Share your name, your faith background in broad terms, and any practical needs such as hearing help, a wheelchair-accessible seat, dietary restrictions, or a preferred pronunciation of your name. The coordinator can pair you with a host who will sit beside you the first time, walk you through the program, and introduce you afterward. The note also gives you a head start on what to wear. Some groups meet at houses of worship that ask for head coverings, modest clothing, or removed shoes. Asking ahead avoids surprise.",
         tip: "Bring a printed name tag from home with your name written in large clear letters. Some hosts run out of name tags, and a readable tag helps everyone remember each other."
       },
       {

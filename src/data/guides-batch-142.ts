@@ -116,7 +116,7 @@ Your credit score — the number lenders use to decide whether to give you a loa
 
 ## What to Do if a Payment Is Missed
 
-If your bank reports that a payment failed (you will usually get an email or text alert), call the biller immediately and make a one-time payment by phone or on their website. Then call your bank to find out why the automatic payment did not go through — it is often a low balance issue. Ask the biller to waive any late fee since the error was not intentional. Most will do so once, especially if you have a good history with them.
+If your bank reports that a payment failed (you will usually get an email or text alert), call the biller right away and make a one-time payment by phone or on their website. Then call your bank to find out why the automatic payment did not go through — it is often a low balance issue. Ask the biller to waive any late fee since the error was not intentional. Most will do so once, especially if you have a good history with them.
 
 ## Official Sources
 
@@ -339,7 +339,7 @@ That is it. No extra steps needed when your backup is turned on.
       },
       {
         title: 'iPhone: Confirm backup is working',
-        content: 'Go back to Settings, tap your name, and tap iCloud again. Scroll down to iCloud Backup. You will see the date and time of the last backup. As long as your phone connects to WiFi occasionally and is plugged in, this happens automatically overnight.',
+        content: 'Go back to Settings, tap your name, and tap iCloud again. Scroll down to iCloud Backup. You will see the date and time of the last backup. As long as your phone connects to WiFi sometimes and is plugged in, this happens automatically overnight.',
       },
       {
         title: 'Android: Turn on Google Contacts sync',

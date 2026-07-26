@@ -72,7 +72,7 @@ The Echo Dot does not have a screen. If you want a device with a screen for vide
     steps: [
       {
         title: 'Plug In the Echo Dot',
-        content: 'Remove the Echo Dot from the box. Connect the power adapter to the device and plug it into a wall outlet. Wait 30-60 seconds — the orange ring indicates the device is in setup mode and ready to connect.',
+        content: 'Remove the Echo Dot from the box. Connect the power adapter to the device and plug it into a wall outlet. Wait 30-60 seconds — the orange ring shows the device is in setup mode and ready to connect.',
         tip: 'Place the Echo Dot somewhere central in the room for the best voice pickup. Keep it away from TVs and radios that might accidentally trigger Alexa.',
       },
       {
@@ -90,7 +90,7 @@ The Echo Dot does not have a screen. If you want a device with a screen for vide
       },
       {
         title: 'Say Your First Command',
-        content: `The orange ring turns blue and Alexa announces she is ready. Say "Alexa, what's the weather today?" or "Alexa, play relaxing music." Alexa responds immediately. You are set up.`,
+        content: `The orange ring turns blue and Alexa announces she is ready. Say "Alexa, what's the weather today?" or "Alexa, play relaxing music." Alexa responds right away. You are set up.`,
         tip: 'Say "Alexa, help" at any time to hear a list of things Alexa can do. Or ask "Alexa, what can you do?" for a longer overview.',
       },
     ],
@@ -154,7 +154,7 @@ Alexa also handles shopping lists. "Alexa, add milk to my shopping list" adds it
     difficulty: 'Beginner',
     body: `Shutterfly is an online photo printing service that lets you order prints, photo books, canvas prints, mugs, calendars, and other personalized products using photos from your phone. You select your photos, choose a product, pay online, and your order arrives by mail. No trips to a photo counter required.
 
-Standard 4x6 prints through Shutterfly cost around $0.29 each (prices vary by promotion — Shutterfly frequently offers discounts). Larger prints, canvases, and books cost more. First-time users often receive a promotional offer for free prints.
+Standard 4x6 prints through Shutterfly cost around $0.29 each (prices vary by promotion — Shutterfly often offers discounts). Larger prints, canvases, and books cost more. First-time users often receive a promotional offer for free prints.
 
 Shutterfly has a free app for iPhone and Android. You upload photos from your phone's camera roll to create your order. The app is well-designed and guides you through each step — choosing photos, arranging them, selecting paper type, and checking out.
 
@@ -200,7 +200,7 @@ Competitors to Shutterfly include Walgreens Photos (for same-day pickup at a loc
     difficulty: 'Beginner',
     body: `PayPal is an online payment service that acts as a middleman between your bank account or credit card and online stores. Instead of entering your credit card number on every website you shop at, you store your payment info securely with PayPal and pay using just your email address and password.
 
-This approach has a real security advantage: merchants never see your full card number. If a store's website is hacked, your actual card details are not exposed — only a PayPal transaction token. PayPal also has its own fraud protection: if you pay for something through PayPal and the item is not delivered or is significantly different from described, PayPal's Purchase Protection may cover you.
+This approach has a real security advantage: merchants never see your full card number. If a store's website is hacked, your actual card details are not exposed — only a PayPal transaction token. PayPal also has its own fraud protection: if you pay for something through PayPal and the item is not delivered or is a lot different from described, PayPal's Purchase Protection may cover you.
 
 PayPal is accepted at thousands of online retailers and many in-person stores as well. When you check out online, look for the PayPal button at the payment step. Clicking it opens a small PayPal window where you sign in — the purchase goes through without exposing any card data to the retailer.
 
@@ -287,7 +287,7 @@ The app requires creating a Medicare.gov account if you do not have one. Your Me
     thumbnailEmoji: '',
     publishedAt: '2026-04-19',
     difficulty: 'Beginner',
-    body: `Facebook Marketplace is a free classifieds section on Facebook where individuals and businesses sell new and used items locally. You can find furniture, appliances, cars, electronics, clothing, and much more — often at significantly lower prices than retail.
+    body: `Facebook Marketplace is a free classifieds section on Facebook where individuals and businesses sell new and used items locally. You can find furniture, appliances, cars, electronics, clothing, and much more — often at a lot lower prices than retail.
 
 Unlike Amazon or eBay, most Facebook Marketplace transactions are done locally: you contact the seller, agree on a price, meet in person to inspect and pay for the item, and take it home. There is no centralized payment system or buyer protection for most private seller transactions, which is why knowing how to shop safely is important.
 
@@ -346,7 +346,7 @@ Craigslist itself advises users to never wire funds to strangers, never give fin
       {
         title: 'Search Your Local Area',
         content: `Go to craigslist.org and your city's listing appears automatically based on your location. Or type your city name in the site search. Browse by category or use the search bar. Stick to listings in your area — deals from distant cities or other countries are almost always scams.`,
-        warning: 'If a seller says they are in the military overseas, traveling abroad, or stuck in another state and needs you to pay before meeting — stop immediately. These are classic scam setups.',
+        warning: 'If a seller says they are in the military overseas, traveling abroad, or stuck in another state and needs you to pay before meeting — stop right away. These are classic scam setups.',
       },
       {
         title: 'Contact the Seller',
@@ -359,7 +359,7 @@ Craigslist itself advises users to never wire funds to strangers, never give fin
       },
       {
         title: 'Recognize Red Flags',
-        content: 'Leave immediately if: the seller asks for payment before meeting, offers a price that seems too good to be true (it probably is), sends a check for more than the asking price, pressure you to decide immediately, or refuses to meet in person. Trust your instincts — if something feels wrong, it probably is.',
+        content: 'Leave right away if: the seller asks for payment before meeting, offers a price that seems too good to be true (it probably is), sends a check for more than the asking price, pressure you to decide right away, or refuses to meet in person. Trust your instincts — if something feels wrong, it probably is.',
       },
       {
         title: 'Pay Safely',
@@ -573,7 +573,7 @@ If the phone is truly lost outside your home, the map shows the last known locat
 
 The nuclear option — remote erase — permanently deletes everything on the phone. This is appropriate if you believe the phone is stolen and you have given up on recovering it. Note that once you erase remotely, Find My Device no longer works on that device.
 
-Setting up a screen lock PIN or fingerprint is essential for this to matter — without a lock screen, anyone who finds your phone can access everything immediately.`,
+Setting up a screen lock PIN or fingerprint is essential for this to matter — without a lock screen, anyone who finds your phone can access everything right away.`,
     steps: [
       {
         title: 'Verify Find My Device Is Enabled',
@@ -658,7 +658,7 @@ For people who take multiple prescriptions, the medication reminder feature can 
     thumbnailEmoji: '',
     publishedAt: '2026-04-19',
     difficulty: 'Beginner',
-    body: `Apple Music's Family plan lets up to 6 people stream unlimited music on their own Apple devices — each with their own personal library, recommendations, and playlists — all for one monthly price. As of 2026, the Family plan costs $16.99 per month, compared to $10.99 per month for an individual plan. If two or more people in your household want Apple Music, the Family plan saves money immediately.
+    body: `Apple Music's Family plan lets up to 6 people stream unlimited music on their own Apple devices — each with their own personal library, recommendations, and playlists — all for one monthly price. As of 2026, the Family plan costs $16.99 per month, compared to $10.99 per month for an individual plan. If two or more people in your household want Apple Music, the Family plan saves money right away.
 
 Family Sharing is Apple's system that connects family members' Apple IDs together for sharing subscriptions, app purchases, and storage plans. You need to set up Family Sharing before the Apple Music family plan becomes available.
 
@@ -666,7 +666,7 @@ The family organizer (the person who pays the subscription) sets up Family Shari
 
 Children under 13 who are added to Family Sharing get an Apple ID managed by parents, with parental controls for explicit music content.
 
-Invitations to join the family group are sent by email or iMessage. The invited person accepts the invitation on their own device and immediately gets access to Apple Music and any other shared subscriptions the family organizer has set up.
+Invitations to join the family group are sent by email or iMessage. The invited person accepts the invitation on their own device and right away gets access to Apple Music and any other shared subscriptions the family organizer has set up.
 
 This same Family Sharing setup can be used to share Apple TV+, iCloud+ storage plans, Apple Arcade, and Apple Fitness+ with the same group of people — making the family group quite valuable for households with multiple Apple device users.`,
     steps: [
@@ -724,7 +724,7 @@ Managing your Netflix account — checking which devices are logged in and remov
       {
         title: 'Check Which Devices Are on Your Account',
         content: 'Log in to Netflix on a computer (netflix.com). Go to your profile icon → "Account" → scroll to "Manage Access and Devices." You can see every device that has accessed your account recently. If you see devices you do not recognize, you can remove them.',
-        tip: 'If you see a location or device you do not recognize, change your Netflix password immediately — someone outside your household may be using your account without permission.',
+        tip: 'If you see a location or device you do not recognize, change your Netflix password right away — someone outside your household may be using your account without permission.',
       },
       {
         title: 'Verify or Update Your Primary Household Location',
@@ -737,7 +737,7 @@ Managing your Netflix account — checking which devices are logged in and remov
       {
         title: 'Help a Family Member Start Their Own Account',
         content: 'The most permanent solution for a family member outside your home is their own Netflix account. Go to netflix.com → "Start plan" → choose their preferred plan. Standard with ads at $7.99/month is the most affordable. They keep their own profile, viewing history, and recommendations.',
-        tip: 'Netflix occasionally offers one-month free trials for new subscribers — have the family member check for a current offer before signing up.',
+        tip: 'Netflix sometimes offers one-month free trials for new subscribers — have the family member check for a current offer before signing up.',
       },
     ],
   },
@@ -843,21 +843,21 @@ If you prefer using a dedicated app (like the Gmail app), you do not need to add
     thumbnailEmoji: '',
     publishedAt: '2026-04-19',
     difficulty: 'Beginner',
-    body: `The search function built into Windows is one of the most underused tools on the computer. Instead of clicking through folders trying to remember where you saved something, you can press a key combination and type a few letters — Windows finds the file, app, or setting immediately.
+    body: `The search function built into Windows is one of the most underused tools on the computer. Instead of clicking through folders trying to remember where you saved something, you can press a key combination and type a few letters — Windows finds the file, app, or setting right away.
 
 This guide covers three types of Windows search: finding and opening programs, finding files and documents, and finding settings buried deep in the Windows menus.
 
-The fastest way to open any program on your computer is to press the Windows key and start typing the name. You do not even need to click the Start button — the Windows key activates search immediately. Type "Chrome" and press Enter to open Chrome. Type "Calculator" to open the calculator. Type "Word" to open Microsoft Word. This works for every installed application.
+The fastest way to open any program on your computer is to press the Windows key and start typing the name. You do not even need to click the Start button — the Windows key activates search right away. Type "Chrome" and press Enter to open Chrome. Type "Calculator" to open the calculator. Type "Word" to open Microsoft Word. This works for every installed application.
 
 For finding files, the same search bar works — but you can also use the search box inside File Explorer. Open File Explorer (the yellow folder icon on your taskbar) and look at the search bar in the top right. Type any keyword from the file name, and File Explorer searches your entire computer.
 
 Windows Search also finds settings. Can't find where to change your screen brightness? Press Windows key, type "brightness," and Settings → Display brightness appears as the top result. This is faster than navigating through layers of menus.
 
-In Windows 11, Microsoft improved search significantly — it can now search inside document contents (not just file names), and it can find web results alongside local content if you have search set to include the web.`,
+In Windows 11, Microsoft improved search a lot — it can now search inside document contents (not just file names), and it can find web results alongside local content if you have search set to include the web.`,
     steps: [
       {
         title: 'Open Search with the Windows Key',
-        content: 'Press the Windows key on your keyboard (bottom row, between Ctrl and Alt, looks like a window logo). Start typing immediately. Results appear as you type — programs at the top, files below, web results at the bottom.',
+        content: 'Press the Windows key on your keyboard (bottom row, between Ctrl and Alt, looks like a window logo). Start typing right away. Results appear as you type — programs at the top, files below, web results at the bottom.',
         tip: 'You can also click the magnifying glass icon in the taskbar at the bottom of your screen to open search.',
       },
       {
@@ -943,11 +943,11 @@ Not every doctor's office or small practice supports this yet — it is most rel
 
 **Amazon Music Prime:** Included with an Amazon Prime subscription (which costs $14.99/month or $139/year as of 2026). Prime Music gives you access to over 100 million songs on demand, with no ads. You can create playlists, download songs for offline listening, and play any song you choose. If you have Amazon Prime, you already have this — many people do not realize Prime Music is included.
 
-**Amazon Music Unlimited:** An optional add-on ($10.99/month, or $8.99/month for Prime members). Unlimited adds higher quality audio (HD and Ultra HD), expanded content including exclusive releases, and a few million additional tracks not in the Prime catalog. For most casual listeners, Prime Music is sufficient and Unlimited is unnecessary.
+**Amazon Music Unlimited:** An optional add-on ($10.99/month, or $8.99/month for Prime members). Unlimited adds higher quality audio (HD and Ultra HD), expanded content including exclusive releases, and a few million additional tracks not in the Prime catalog. For most casual listeners, Prime Music is enough and Unlimited is unnecessary.
 
 For Echo and Alexa devices, Amazon Music integrates directly: "Alexa, play Frank Sinatra" works out of the box with any Amazon Music tier.
 
-The Amazon Music app is free on iPhone and Android. Sign in with your Amazon account and you immediately see which tier you have access to.`,
+The Amazon Music app is free on iPhone and Android. Sign in with your Amazon account and you right away see which tier you have access to.`,
     steps: [
       {
         title: 'Download the Amazon Music App',

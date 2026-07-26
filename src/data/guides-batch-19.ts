@@ -30,8 +30,7 @@ export const guidesBatch19: Guide[] = [
       },
       {
         title: 'Choose a wireless charging pad',
-        content:
-          "Wireless chargers are widely available and reasonably priced — basic charging pads start around $10-$20. For iPhones: any Qi-certified pad works, but an Apple MagSafe charger ($39) or a MagSafe-compatible pad charges iPhone 12 and later significantly faster (up to 15W versus 7.5W on standard Qi). For Android: most standard Qi pads charge at 5-10W; Samsung phones can charge at up to 15W on a Samsung Fast Wireless charger. Look for chargers that are UL-listed for safety.",
+        content: "Wireless chargers are widely available and reasonably priced — basic charging pads start around $10-$20. For iPhones: any Qi-certified pad works, but an Apple MagSafe charger ($39) or a MagSafe-compatible pad charges iPhone 12 and later a lot faster (up to 15W versus 7.5W on standard Qi). For Android: most standard Qi pads charge at 5-10W; Samsung phones can charge at up to 15W on a Samsung Fast Wireless charger. Look for chargers that are UL-listed for safety.",
         tip: 'Quick Tip: Reputable brands for wireless chargers include Anker, Belkin, Mophie, and Apple-certified accessories. Avoid very cheap unbranded chargers — wireless chargers without proper certifications can run hot.',
       },
       {
@@ -96,7 +95,7 @@ export const guidesBatch19: Guide[] = [
     thumbnailEmoji: '',
     publishedAt: '2026-04-19',
     difficulty: 'Beginner',
-    body: `You receive an email from Google, Facebook, your bank, or another service: "We noticed a new sign-in to your account" or "Suspicious activity detected." Your heart rate goes up. Is someone in your account? Should you panic?\n\nMost of the time, these alerts are triggered by routine activity that looks unusual — signing in on a new device, traveling to a different city, or using a different browser. But sometimes they indicate a real intrusion, and knowing how to tell the difference — and what to do in each case — can protect your accounts.\n\nThis guide walks through how to respond to login alerts from the most common services.`,
+    body: `You receive an email from Google, Facebook, your bank, or another service: "We noticed a new sign-in to your account" or "Suspicious activity detected." Your heart rate goes up. Is someone in your account? Should you panic?\n\nMost of the time, these alerts are triggered by routine activity that looks unusual — signing in on a new device, traveling to a different city, or using a different browser. But sometimes they show a real intrusion, and knowing how to tell the difference — and what to do in each case — can protect your accounts.\n\nThis guide walks through how to respond to login alerts from the most common services.`,
     steps: [
       {
         title: 'Read the alert carefully to identify what happened',
@@ -111,8 +110,7 @@ export const guidesBatch19: Guide[] = [
       },
       {
         title: 'If it was NOT you — act immediately',
-        content:
-          "If you see an unfamiliar login: change your password immediately (use a strong, unique password). Log out all other devices — in Google: myaccount.google.com → Security → Your devices → click each unfamiliar device → Remove. In Facebook: Settings → Password and Security → \"Where you're logged in\" → click the device → \"Log out.\" Turn on two-factor authentication right away if it is not already enabled. Contact the service's support if you cannot access your own account.",
+        content: "If you see an unfamiliar login: change your password right away (use a strong, unique password). Log out all other devices — in Google: myaccount.google.com → Security → Your devices → click each unfamiliar device → Remove. In Facebook: Settings → Password and Security → \"Where you're logged in\" → click the device → \"Log out.\" Turn on two-factor authentication right away if it is not already enabled. Contact the service's support if you cannot access your own account.",
         warning:
           "A genuine suspicious login alert from a legitimate company will never ask for your password or payment information. If an alert email asks for your password or a fee to \"restore\" your account, it is a phishing scam.",
       },
@@ -157,8 +155,7 @@ export const guidesBatch19: Guide[] = [
       },
       {
         title: 'Follow safe money transfer rules for every payment',
-        content:
-          "Safe payment app rules: Only send money to people you know in real life. Double-check the recipient's name and photo before confirming — one wrong letter in a username can send to the wrong person. Never send money to claim a prize, receive a gift, or resolve a legal threat. Treat these apps like cash — there is usually no way to reverse a payment. Enable transaction notifications so you are alerted of any payment activity immediately. Review your transaction history monthly for anything unfamiliar.",
+        content: "Safe payment app rules: Only send money to people you know in real life. Double-check the recipient's name and photo before confirming — one wrong letter in a username can send to the wrong person. Never send money to claim a prize, receive a gift, or resolve a legal threat. Treat these apps like cash — there is usually no way to reverse a payment. Enable transaction notifications so you are alerted of any payment activity right away. Review your transaction history monthly for anything unfamiliar.",
       },
     ],
   },
@@ -178,8 +175,7 @@ export const guidesBatch19: Guide[] = [
     steps: [
       {
         title: 'Increase the font size',
-        content:
-          "Go to Settings → Display → Font Size and Style (or \"Font Size\" on some phones). A preview shows how text will look. Drag the slider to the right to increase the font size. Most Android phones offer 4-5 size options from small to largest. Choose \"Large\" or \"Largest\" for maximum readability. The change applies immediately across the entire phone — you will see the difference in your settings menu right away.",
+        content: "Go to Settings → Display → Font Size and Style (or \"Font Size\" on some phones). A preview shows how text will look. Drag the slider to the right to increase the font size. Most Android phones offer 4-5 size options from small to largest. Choose \"Large\" or \"Largest\" for maximum readability. The change applies right away across the entire phone — you will see the difference in your settings menu right away.",
         tip: "Quick Tip: On Samsung Galaxy phones: Settings → Display → Font size and style → adjust the font size slider. On Google Pixel: Settings → Display → Font size.",
       },
       {
@@ -222,8 +218,7 @@ export const guidesBatch19: Guide[] = [
       },
       {
         title: `Use Google's Phone App Call Captions on Pixel`,
-        content:
-          "Google Pixel phones (3a and later) have a dedicated call captioning feature in the Phone app. Open the Phone app → tap the three-dot menu → Settings → Accessibility → \"Call captions.\" Turn it on. During any phone call, real-time captions of both sides of the conversation appear on screen. You can pause, resume, and review the transcript after the call. This is significantly more accurate than standard voice-to-text because it processes audio in real time.",
+        content: "Google Pixel phones (3a and later) have a dedicated call captioning feature in the Phone app. Open the Phone app → tap the three-dot menu → Settings → Accessibility → \"Call captions.\" Turn it on. During any phone call, real-time captions of both sides of the conversation appear on screen. You can pause, resume, and review the transcript after the call. This is a lot more accurate than standard voice-to-text because it processes audio in real time.",
       },
       {
         title: 'Enable Phone Call Captions on iPhone',
@@ -498,8 +493,7 @@ export const guidesBatch19: Guide[] = [
       },
       {
         title: 'Photograph discharge papers and after-visit summaries',
-        content:
-          "Doctors and nurses often hand you printouts with instructions, medication changes, and follow-up appointments. Instead of putting them in your purse or pocket where they get lost, photograph them immediately using your phone camera. Store them in a \"Medical\" folder in your photos, or scan them into the Notes app. After-visit summaries from patient portals (MyChart, etc.) are also available digitally — log into the portal and download or screenshot the summary.",
+        content: "Doctors and nurses often hand you printouts with instructions, medication changes, and follow-up appointments. Instead of putting them in your purse or pocket where they get lost, photograph them right away using your phone camera. Store them in a \"Medical\" folder in your photos, or scan them into the Notes app. After-visit summaries from patient portals (MyChart, etc.) are also available digitally — log into the portal and download or screenshot the summary.",
       },
       {
         title: 'Bring a trusted person and use them as a second set of ears',
@@ -559,7 +553,7 @@ export const guidesBatch19: Guide[] = [
     thumbnailEmoji: '',
     publishedAt: '2026-04-19',
     difficulty: 'Beginner',
-    body: `Many technology companies offer discounts for older adults — but most do not advertise them prominently because they want customers to pay full price. Knowing where to look and how to ask for discounts can save you $100-$400 per year on phone plans, streaming services, software, and tech support.\n\nDiscounts fall into several categories: AARP member discounts (for the $16/year AARP membership), age-based discounts available to anyone 55+ who asks, government assistance programs for low-income households, and nonprofit programs that provide free or reduced-cost technology access.`,
+    body: `Many technology companies offer discounts for older adults — but most do not advertise them prominently because they want customers to pay full price. Knowing where to look and how to ask for discounts can save you $100-$400 per year on phone plans, streaming services, software, and tech support.\n\nDiscounts fall into several categories: AARP member discounts (for the $16/year AARP membership), age-based discounts available to anyone 55+ who asks, government help programs for low-income households, and nonprofit programs that provide free or reduced-cost technology access.`,
     steps: [
       {
         title: 'Get an AARP membership for the widest discount access',
@@ -569,8 +563,7 @@ export const guidesBatch19: Guide[] = [
       },
       {
         title: 'Check streaming services for senior or AARP discounts',
-        content:
-          "Streaming discounts change frequently — always check the current offer. Known discounts to research: Paramount+ (AARP discount for members), Peacock Premium (AARP negotiated rate), SiriusXM radio (55+ listener pricing available via phone), The New York Times digital subscription (student and senior rates available — call 1-800-698-4637 and ask), and Washington Post digital (call and ask for a senior rate). Many discounts require calling customer service and specifically asking — they are not always visible on the website.",
+        content: "Streaming discounts change often — always check the current offer. Known discounts to research: Paramount+ (AARP discount for members), Peacock Premium (AARP negotiated rate), SiriusXM radio (55+ listener pricing available via phone), The New York Times digital subscription (student and senior rates available — call 1-800-698-4637 and ask), and Washington Post digital (call and ask for a senior rate). Many discounts require calling customer service and specifically asking — they are not always visible on the website.",
         tip: "Quick Tip: When calling any subscription service, say: \"I'm a senior over 55 — do you have any discounts or promotions available for me?\" You may be surprised how often the answer is yes.",
       },
       {
@@ -651,8 +644,7 @@ export const guidesBatch19: Guide[] = [
       },
       {
         title: `Share ETA with people who don't have iPhones`,
-        content:
-          "If the recipient uses Android or doesn't have iMessage: Apple Maps sends a regular SMS text with a link. They can tap the link to open a webpage showing your location on a map that updates approximately every 2-3 minutes. The experience is slightly less smooth than iMessage sharing, but still provides real-time tracking.",
+        content: "If the recipient uses Android or doesn't have iMessage: Apple Maps sends a regular SMS text with a link. They can tap the link to open a webpage showing your location on a map that updates about every 2-3 minutes. The experience is slightly less smooth than iMessage sharing, but still provides real-time tracking.",
       },
       {
         title: 'Add frequent contacts as Favorites for quick ETA sharing',
@@ -690,7 +682,7 @@ export const guidesBatch19: Guide[] = [
         title: 'Report identity theft to the FTC Identity Theft portal',
         content:
           "If your personal information was stolen (Social Security number, bank account, credit card, or medical records): go to IdentityTheft.gov — a dedicated FTC resource specifically for identity theft. The site creates a personalized recovery plan: which credit bureaus to contact, how to place a fraud alert, sample letters to send to creditors, steps to file a police report if needed. IdentityTheft.gov guides you through the entire recovery process step-by-step.",
-        tip: "Quick Tip: File a fraud alert with all three credit bureaus (Equifax, Experian, TransUnion) immediately after identity theft. You can do this at AnnualCreditReport.com or by calling each bureau directly. A fraud alert requires businesses to verify your identity before opening new accounts.",
+        tip: "Quick Tip: File a fraud alert with all three credit bureaus (Equifax, Experian, TransUnion) right away after identity theft. You can do this at AnnualCreditReport.com or by calling each bureau directly. A fraud alert requires businesses to verify your identity before opening new accounts.",
       },
       {
         title: 'Report other fraud types to the right agencies',
@@ -715,14 +707,12 @@ export const guidesBatch19: Guide[] = [
     steps: [
       {
         title: 'Enable Dark Mode in Windows 11',
-        content:
-          "Right-click on an empty area of the desktop → \"Personalize.\" Alternatively, click Start → Settings → Personalization. Click \"Colors.\" Under \"Choose your mode,\" click the dropdown and select \"Dark.\" Windows immediately switches to a dark color scheme — the taskbar, Start menu, File Explorer, Settings, and most built-in apps all switch to dark gray/black backgrounds. Third-party apps (like Chrome) may have their own dark mode settings.",
+        content: "Right-click on an empty area of the desktop → \"Personalize.\" Alternatively, click Start → Settings → Personalization. Click \"Colors.\" Under \"Choose your mode,\" click the dropdown and select \"Dark.\" Windows right away switches to a dark color scheme — the taskbar, Start menu, File Explorer, Settings, and most built-in apps all switch to dark gray/black backgrounds. Third-party apps (like Chrome) may have their own dark mode settings.",
         tip: 'Quick Tip: If you want the best of both worlds — dark menus but light app windows — choose "Custom" instead of "Dark" and select "Dark" for Windows mode and "Light" for the default app mode.',
       },
       {
         title: 'Enable Night Light in Windows 11',
-        content:
-          "Go to Settings → System → Display → Night Light. Click the toggle to turn it on immediately, or click \"Night Light settings\" to configure a schedule. \"Set hours\" lets you choose specific times (for example, 8 PM to 7 AM). \"Sunset to sunrise\" automatically adjusts based on your location's actual sunset time. The \"Strength\" slider controls how warm the colors shift — drag it right for more warmth or left for a subtler effect.",
+        content: "Go to Settings → System → Display → Night Light. Click the toggle to turn it on right away, or click \"Night Light settings\" to configure a schedule. \"Set hours\" lets you choose specific times (for example, 8 PM to 7 AM). \"Sunset to sunrise\" automatically adjusts based on your location's actual sunset time. The \"Strength\" slider controls how warm the colors shift — drag it right for more warmth or left for a subtler effect.",
         tip: "Quick Tip: Night Light takes several minutes to fully warm to its target color temperature — it shifts gradually rather than switching abruptly, which is less jarring.",
       },
       {
@@ -732,8 +722,7 @@ export const guidesBatch19: Guide[] = [
       },
       {
         title: `Try Microsoft's "High Contrast" mode for low vision`,
-        content:
-          "For significantly better visibility for people with vision challenges, Windows High Contrast mode uses a very limited color palette with maximum contrast. Go to Settings → Accessibility → Contrast themes. Choose from preset themes like High Contrast Black (white text on pure black background) or High Contrast White. These are more extreme than Dark Mode but can make text significantly easier to read for people with low vision. Press Left Alt + Left Shift + Print Screen to toggle High Contrast mode on and off quickly.",
+        content: "For a lot better visibility for people with vision challenges, Windows High Contrast mode uses a very limited color palette with maximum contrast. Go to Settings → Accessibility → Contrast themes. Choose from preset themes like High Contrast Black (white text on pure black background) or High Contrast White. These are more extreme than Dark Mode but can make text a lot easier to read for people with low vision. Press Left Alt + Left Shift + Print Screen to toggle High Contrast mode on and off quickly.",
       },
     ],
   },
@@ -749,7 +738,7 @@ export const guidesBatch19: Guide[] = [
     thumbnailEmoji: '',
     publishedAt: '2026-04-19',
     difficulty: 'Beginner',
-    body: `The Dock — the row of icons along the bottom of your Mac screen — is your quick-access toolbar for frequently used apps. By default, Apple fills the Dock with many apps you may never use while leaving out apps you use daily. Customizing the Dock takes just a few minutes and makes your Mac significantly easier to navigate.\n\nThis guide covers resizing the Dock, adding and removing apps, repositioning it, and enabling helpful Dock settings like auto-hide and Magnification.`,
+    body: `The Dock — the row of icons along the bottom of your Mac screen — is your quick-access toolbar for often used apps. By default, Apple fills the Dock with many apps you may never use while leaving out apps you use daily. Customizing the Dock takes just a few minutes and makes your Mac a lot easier to navigate.\n\nThis guide covers resizing the Dock, adding and removing apps, repositioning it, and enabling helpful Dock settings like auto-hide and Magnification.`,
     steps: [
       {
         title: 'Make the Dock icons larger (easier to see)',
@@ -846,8 +835,7 @@ export const guidesBatch19: Guide[] = [
       },
       {
         title: 'Use CarPlay for the safest phone integration',
-        content:
-          "If your car was made after approximately 2015, it may support Apple CarPlay — a system that shows a car-optimized version of your iPhone on your car's touchscreen. CarPlay is designed for driving: larger buttons, simplified interface, Siri integration, and support for Apple Maps, phone calls, messages, and music. Connect your iPhone via USB cable (or wirelessly on newer cars) and CarPlay activates automatically. Once connected, all Siri commands work through the car's speakers and buttons — never the phone screen.",
+        content: "If your car was made after about 2015, it may support Apple CarPlay — a system that shows a car-optimized version of your iPhone on your car's touchscreen. CarPlay is designed for driving: larger buttons, simplified interface, Siri integration, and support for Apple Maps, phone calls, messages, and music. Connect your iPhone via USB cable (or wirelessly on newer cars) and CarPlay activates automatically. Once connected, all Siri commands work through the car's speakers and buttons — never the phone screen.",
       },
     ],
   },

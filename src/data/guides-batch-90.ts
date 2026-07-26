@@ -271,11 +271,11 @@ Libby works on iPhone, Android, Kindle Fire tablets, and most web browsers. Your
       },
       {
         title: `Browse and search for books`,
-        content: `Once connected to your library, the main Libby screen shows featured titles and categories. Tap the search icon (magnifying glass) to search for a specific title or author. You can also browse by genre — tap "Browse" and then filter by Fiction, Mystery, Biography, Large Print, and many other categories. Look for the "Available Now" filter to see only books you can borrow immediately without waiting.`,
+        content: `Once connected to your library, the main Libby screen shows featured titles and categories. Tap the search icon (magnifying glass) to search for a specific title or author. You can also browse by genre — tap "Browse" and then filter by Fiction, Mystery, Biography, Large Print, and many other categories. Look for the "Available Now" filter to see only books you can borrow right away without waiting.`,
       },
       {
         title: `Borrow a book or place a hold`,
-        content: `Tap on any book cover to see details about it. If it is available, you will see a "Borrow" button — tap it to check the book out immediately. If it shows a waiting list, tap "Place a Hold" instead. Libby will tell you roughly how long the wait is. When your hold becomes available, Libby will send you a notification and you will have a few days to accept the loan before it moves to the next person on the list.`,
+        content: `Tap on any book cover to see details about it. If it is available, you will see a "Borrow" button — tap it to check the book out right away. If it shows a waiting list, tap "Place a Hold" instead. Libby will tell you roughly how long the wait is. When your hold becomes available, Libby will send you a notification and you will have a few days to accept the loan before it moves to the next person on the list.`,
         tip: `Quick Tip: You can place holds on multiple titles at once. That way, you will have a steady stream of books arriving throughout the month rather than waiting a long time after each one.`,
       },
       {
@@ -321,7 +321,7 @@ The Hoopla app is available on iPhone, Android, Kindle Fire, Roku, Apple TV, Chr
       },
       {
         title: `Borrow and start immediately`,
-        content: `Tap on any title you want and then tap the "Borrow" button. Hoopla will immediately start playing, streaming, or loading the content — no waiting required. A countdown at the top of your library account will show how many of your monthly borrows you have remaining. Movies and TV episodes are typically available for 72 hours after borrowing. Music and comics have longer loan periods.`,
+        content: `Tap on any title you want and then tap the "Borrow" button. Hoopla will right away start playing, streaming, or loading the content — no waiting required. A countdown at the top of your library account will show how many of your monthly borrows you have remaining. Movies and TV episodes are typically available for 72 hours after borrowing. Music and comics have longer loan periods.`,
       },
       {
         title: `Try a BingePass for full TV seasons`,
@@ -363,11 +363,11 @@ Libro.fm lets you gift audiobooks to others, which is a thoughtful option for bo
       },
       {
         title: `Choose a membership or pay per audiobook`,
-        content: `Libro.fm offers a monthly membership plan that gives you one audiobook credit per month for a flat fee. This is the most economical option if you listen to at least one audiobook a month. If you listen less frequently, you can buy individual audiobooks without a subscription at the standard price. Go to your account settings to set up or cancel a membership at any time — there are no long-term contracts.`,
+        content: `Libro.fm offers a monthly membership plan that gives you one audiobook credit per month for a flat fee. This is the most economical option if you listen to at least one audiobook a month. If you listen less often, you can buy individual audiobooks without a subscription at the standard price. Go to your account settings to set up or cancel a membership at any time — there are no long-term contracts.`,
       },
       {
         title: `Search for and purchase an audiobook`,
-        content: `Browse the Libro.fm website or app for a title you want. You can search by title, author, or genre. Tap "Buy" or "Redeem with Credit" depending on whether you have a monthly credit. The audiobook is immediately added to your library. Popular titles are usually available on the same release date as their print versions.`,
+        content: `Browse the Libro.fm website or app for a title you want. You can search by title, author, or genre. Tap "Buy" or "Redeem with Credit" depending on whether you have a monthly credit. The audiobook is right away added to your library. Popular titles are usually available on the same release date as their print versions.`,
       },
       {
         title: `Download the app and listen offline`,
@@ -517,8 +517,8 @@ Trulia also shows a Noise Score for listings, indicating whether the area has el
       },
       {
         title: `Save your search for email alerts`,
-        content: `After you set your filters for price, bedrooms, and area, click "Save Search" or tap the save option in the app. Trulia will email you when new listings appear that match your criteria. You can set how often you receive these alerts — immediately, daily, or weekly. This keeps you informed without needing to check the website every day during your home search.`,
-        tip: `Quick Tip: You can save multiple searches in Trulia — for example, one for each neighborhood you are considering. This lets you compare how frequently new listings appear in different areas.`,
+        content: `After you set your filters for price, bedrooms, and area, click "Save Search" or tap the save option in the app. Trulia will email you when new listings appear that match your criteria. You can set how often you receive these alerts — right away, daily, or weekly. This keeps you informed without needing to check the website every day during your home search.`,
+        tip: `Quick Tip: You can save multiple searches in Trulia — for example, one for each neighborhood you are considering. This lets you compare how often new listings appear in different areas.`,
       },
     ],
   },
@@ -558,7 +558,7 @@ Opendoor operates in dozens of major markets across the United States. It works 
       {
         title: `Understand the fees and compare your options`,
         content: `Before accepting, review the full breakdown of Opendoor's charges. The service fee is typically around 5% of the sale price. Any repairs Opendoor says are needed will be deducted from your offer — or you can make those repairs yourself before closing if you prefer. Add these costs together and compare the net amount you would receive to what a traditional listing might realistically bring you after agent commissions and the cost of staging, repairs, and carrying the home for several months.`,
-        warning: `Do not accept Opendoor's offer without comparing it to local market sales prices. In a strong seller's market, listing traditionally may result in significantly more money. Opendoor is not always the right choice — it is most valuable when speed and certainty matter more than maximizing the final price.`,
+        warning: `Do not accept Opendoor's offer without comparing it to local market sales prices. In a strong seller's market, listing traditionally may result in a lot more money. Opendoor is not always the right choice — it is most valuable when speed and certainty matter more than maximizing the final price.`,
       },
       {
         title: `Choose your closing date and complete the sale`,
@@ -924,7 +924,7 @@ The Fabric will feature is free for anyone, even if you do not purchase life ins
       },
       {
         title: `Complete the underwriting process`,
-        content: `After submitting your application, Fabric will either approve your policy immediately (called instant issue) or notify you that additional information is needed. For instant issue, you can activate your policy immediately and begin coverage the same day. If a medical exam is needed, Fabric arranges a free in-home exam — a technician comes to you to take basic measurements and a blood sample. Results are reviewed by the insurance underwriters, and you typically hear back within a few weeks.`,
+        content: `After submitting your application, Fabric will either approve your policy right away (called instant issue) or notify you that additional information is needed. For instant issue, you can activate your policy right away and begin coverage the same day. If a medical exam is needed, Fabric arranges a free in-home exam — a technician comes to you to take basic measurements and a blood sample. Results are reviewed by the insurance underwriters, and you typically hear back within a few weeks.`,
       },
       {
         title: `Create your free digital will`,

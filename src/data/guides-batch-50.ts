@@ -69,7 +69,7 @@ Always test your QR code after creating it. Use your phone camera to scan it and
     difficulty: `Beginner`,
     body: `If you have ever joined a video call and noticed that you looked dark, blurry, or washed out, you are not alone. Lighting and camera angle make a bigger difference than most people realize. The good news is that you can improve how you look on any video call — Zoom, FaceTime, Google Meet, or anything else — without spending much money at all.
 
-The single most important factor is where your light source is. Natural daylight from a window is excellent, but it has to be in front of you, not behind you. When a bright window is behind you, your camera adjusts for that brightness and your face appears as a dark silhouette. Moving so that the window is in front of you — or at least to your side — makes an enormous difference immediately.
+The single most important factor is where your light source is. Natural daylight from a window is excellent, but it has to be in front of you, not behind you. When a bright window is behind you, your camera adjusts for that brightness and your face appears as a dark silhouette. Moving so that the window is in front of you — or at least to your side — makes an enormous difference right away.
 
 Camera height matters too. Most laptop cameras sit below your eye level when the laptop rests on a desk. This creates an unflattering upward angle. Raising your laptop on a stack of books, a box, or a laptop stand so that the camera is roughly at eye level creates a much more natural and professional appearance.
 
@@ -96,7 +96,7 @@ A few minutes of setup before important calls can make you look more confident, 
       },
       {
         title: `Consider a ring light for evening calls`,
-        content: `If you frequently take calls in low light or at night, a USB ring light placed just behind your screen or around your camera provides even, consistent illumination. Basic models cost fifteen to twenty-five dollars at electronics retailers or online. Plug it into a USB port on your computer and adjust the brightness as needed.`,
+        content: `If you often take calls in low light or at night, a USB ring light placed just behind your screen or around your camera provides even, consistent illumination. Basic models cost fifteen to twenty-five dollars at electronics retailers or online. Plug it into a USB port on your computer and adjust the brightness as needed.`,
         tip: `You do not need an expensive ring light. A small, basic model is enough for everyday video calls.`,
       },
       {
@@ -164,7 +164,7 @@ After saving, always open the new contact record to check that the phone number 
 
 The app is especially useful when you need to keep digital copies of important papers — tax documents, insurance cards, medical records, receipts, or letters. Instead of keeping stacks of paper, you can scan them, save the PDFs, and find them later by searching on your phone or in your email.
 
-Microsoft Lens works in several modes depending on what you are scanning. Document mode is best for standard paper documents and letters — it trims to the edges of the paper automatically. Business card mode reads the card and can save the information as a contact. Whiteboard mode is designed for photographing handwritten notes on a whiteboard and cleans up the image significantly. Photo mode is for general pictures.
+Microsoft Lens works in several modes depending on what you are scanning. Document mode is best for standard paper documents and letters — it trims to the edges of the paper automatically. Business card mode reads the card and can save the information as a contact. Whiteboard mode is designed for photographing handwritten notes on a whiteboard and cleans up the image a lot. Photo mode is for general pictures.
 
 After scanning, you can save your scan in several formats. PDF is the most useful for documents you might share or print later. You can also save as a Word document, which allows editing the text. Or you can save as an image (JPEG) for simple storage.
 
@@ -227,7 +227,7 @@ Apple Watch also lets you manage faces through the Watch app on your iPhone, whi
       },
       {
         title: `Select a new face`,
-        content: `When you find a face you want to try, tap on it to select it. The watch immediately switches to that face. If you want to browse more faces, scroll all the way to the right to find a "New" option with a plus sign — tap it to see the full library of available faces and add new ones.`,
+        content: `When you find a face you want to try, tap on it to select it. The watch right away switches to that face. If you want to browse more faces, scroll all the way to the right to find a "New" option with a plus sign — tap it to see the full library of available faces and add new ones.`,
       },
       {
         title: `Edit the face to customize colors and complications`,
@@ -236,7 +236,7 @@ Apple Watch also lets you manage faces through the Watch app on your iPhone, whi
       {
         title: `Choose your complications`,
         content: `When a complication slot is selected (it will be highlighted), turn the Digital Crown (the knob on the side of the watch) or swipe to scroll through available complications. Options include Activity, Calendar, Compass, Heart Rate, Reminders, Stocks, Timer, Weather, and many others. Tap or turn the crown to select the one you want in that slot.`,
-        tip: `Start with complications you check frequently — weather and your next calendar event are popular choices for the top slots.`,
+        tip: `Start with complications you check often — weather and your next calendar event are popular choices for the top slots.`,
       },
       {
         title: `Save your changes`,
@@ -263,7 +263,7 @@ The sharing is not a copy that fills up the other person's storage. Your partner
 
 You choose how much to share. You can share your entire photo library, or you can limit sharing to photos of specific people (using Google Photos' face recognition) or photos taken after a certain date. For example, you might share only photos where your partner or a grandchild appears, rather than sharing your entire camera roll.
 
-Your partner receives an invitation by email and must accept it before sharing begins. Either person can end the partnership at any time in the app settings, which immediately stops the automatic sharing.
+Your partner receives an invitation by email and must accept it before sharing begins. Either person can end the partnership at any time in the app settings, which right away stops the automatic sharing.
 
 Both the sharer and the receiver need a Google account (free) and the Google Photos app installed. Google Photos is free and comes pre-installed on most Android phones; iPhone users can download it free from the App Store.
 
@@ -409,15 +409,15 @@ Reviewing your subscriptions every few months is good practice. You may find ite
     difficulty: `Beginner`,
     body: `All rechargeable batteries wear out over time. Your iPhone battery has a limited number of charge cycles, and each full charge cycle slowly reduces how much charge it can hold. A brand new iPhone battery is rated at 100% capacity. Most Apple support guidance suggests that battery health above 80% is considered normal — but once it drops below that, your phone may struggle to last through the day or may shut off unexpectedly at low charge levels.
 
-The good news is that how you charge and use your iPhone significantly affects how quickly the battery degrades. With a few habits, you can keep your battery healthy for a longer period.
+The good news is that how you charge and use your iPhone a lot affects how quickly the battery degrades. With a few habits, you can keep your battery healthy for a longer period.
 
 One of the most effective tools is built into iOS. Apple introduced a feature called Optimized Battery Charging in iOS 13, and it is turned on by default on most iPhones. This feature uses machine learning to learn your daily charging pattern. If it notices you typically charge overnight, it will charge your iPhone to about 80% quickly, then pause and wait until just before you wake up to finish charging to 100%. This prevents the battery from sitting at 100% charge for hours at a time — which is one of the main causes of battery degradation.
 
 Heat is the other major enemy of battery health. Leaving your iPhone in a hot car, direct sunlight, or using it heavily while charging all generate heat that accelerates battery aging. Try to avoid charging your phone on a bed or couch where it cannot dissipate heat.
 
-Letting your phone die completely (reaching 0%) on a regular basis is also hard on the battery. Keeping the charge somewhere between 20% and 80% as much as practical is better for long-term health, though fully charging occasionally is fine.
+Letting your phone die completely (reaching 0%) on a regular basis is also hard on the battery. Keeping the charge somewhere between 20% and 80% as much as practical is better for long-term health, though fully charging sometimes is fine.
 
-Several features on your iPhone consume battery faster than others. Keeping screen brightness very high, having many apps using background app refresh, leaving location services on for many apps, and having push email checking constantly are among the biggest drains. Reducing some of these in your settings can extend your daily battery life significantly.`,
+Several features on your iPhone consume battery faster than others. Keeping screen brightness very high, having many apps using background app refresh, leaving location services on for many apps, and having push email checking constantly are among the biggest drains. Reducing some of these in your settings can extend your daily battery life a lot.`,
     steps: [
       {
         title: `Check your current battery health`,
@@ -455,17 +455,17 @@ Several features on your iPhone consume battery faster than others. Keeping scre
     thumbnailEmoji: ``,
     publishedAt: `2026-04-19`,
     difficulty: `Beginner`,
-    body: `Android phones use lithium-ion batteries — the same technology found in iPhones, laptops, and electric cars. These batteries are very capable, but they do degrade over time. How quickly they degrade depends significantly on how you charge and use the phone.
+    body: `Android phones use lithium-ion batteries — the same technology found in iPhones, laptops, and electric cars. These batteries are very capable, but they do degrade over time. How quickly they degrade depends a lot on how you charge and use the phone.
 
 A common misconception is that you should let your phone battery drain completely to zero before charging. This was true for older types of batteries decades ago, but it is actually harmful to modern lithium-ion batteries. Deep discharges (going to 0%) put stress on the battery chemistry. Frequent full discharges accelerate aging.
 
-A better approach is to plug in your phone when the battery reaches around 20 to 25% and unplug or stop charging around 80 to 85% if possible. This range is sometimes called the "sweet spot" for lithium-ion batteries. Of course, in everyday life you cannot always hit those exact numbers, and occasionally charging to 100% is fine — the goal is avoiding deep discharges and long periods sitting at 100% as a regular habit.
+A better approach is to plug in your phone when the battery reaches around 20 to 25% and unplug or stop charging around 80 to 85% if possible. This range is sometimes called the "sweet spot" for lithium-ion batteries. Of course, in everyday life you cannot always hit those exact numbers, and sometimes charging to 100% is fine — the goal is avoiding deep discharges and long periods sitting at 100% as a regular habit.
 
 Many newer Android phones have built-in features to help with this. Samsung phones running recent versions of One UI have a "Protect Battery" setting (sometimes called "Charging limit") that stops charging at 85% automatically. Google Pixel phones have "Adaptive Charging" that slows the charging rate overnight similar to Apple's Optimized Battery Charging. Check your phone's battery settings to see what options are available.
 
-Heat is the most serious threat to battery health on any device. Using your phone heavily while charging (especially gaming or video calls) generates significant heat. Using fast chargers constantly when slow charging would be sufficient also generates more heat. Whenever practical, charging at a slower rate produces less heat and is gentler on the battery long-term.
+Heat is the most serious threat to battery health on any device. Using your phone heavily while charging (especially gaming or video calls) generates significant heat. Using fast chargers constantly when slow charging would be enough also generates more heat. Whenever practical, charging at a slower rate produces less heat and is gentler on the battery long-term.
 
-After two to three years of normal use, most Android phone batteries will hold noticeably less charge than when new. Most phone manufacturers and many third-party repair shops can replace the battery for a reasonable cost, which can make an older phone feel significantly newer.`,
+After two to three years of normal use, most Android phone batteries will hold noticeably less charge than when new. Most phone manufacturers and many third-party repair shops can replace the battery for a reasonable cost, which can make an older phone feel a lot newer.`,
     steps: [
       {
         title: `Check your battery health (Samsung and Pixel)`,
@@ -479,7 +479,7 @@ After two to three years of normal use, most Android phone batteries will hold n
       {
         title: `Avoid letting the battery reach 0%`,
         content: `Plug in your phone when the battery level drops to around 20%. Letting it regularly reach 0% puts extra stress on the battery cells. If you notice your phone dying unexpectedly at 10% or 15%, this can be a sign of battery wear — consider having it checked.`,
-        warning: `If your phone shuts down unexpectedly at a battery percentage above 0%, do not ignore this. It can indicate significant battery degradation or a software calibration issue. Contact your carrier or manufacturer for support.`,
+        warning: `If your phone shuts down unexpectedly at a battery percentage above 0%, do not ignore this. It can show significant battery degradation or a software calibration issue. Contact your carrier or manufacturer for support.`,
       },
       {
         title: `Keep the phone cool while charging`,
@@ -671,7 +671,7 @@ Samsung phones running One UI have similar features through the Samsung Phone ap
 
 In addition to these built-in tools, your carrier may offer additional spam blocking. T-Mobile's Scam Shield, AT&T's Call Protect, and Verizon's Call Filter all provide additional layers of call screening, some free and some with a paid upgrade tier.
 
-No system catches every spam call, but enabling these features significantly reduces the number that actually ring through and disrupt your day.`,
+No system catches every spam call, but enabling these features a lot reduces the number that actually ring through and disrupt your day.`,
     steps: [
       {
         title: `Open the Phone app`,
@@ -693,7 +693,7 @@ No system catches every spam call, but enabling these features significantly red
       {
         title: `Enable spam protection on Samsung phones`,
         content: `On Samsung phones, open the Samsung Phone app, tap the three-dot menu, tap Settings, and look for "Caller ID and spam protection." Turn it on. Samsung's system uses Hiya's database of known spam numbers and will label incoming calls as "Suspected spam" or "Spam risk" before you answer.`,
-        warning: `No spam detection system is perfect. Legitimate calls can occasionally be flagged as spam, and some spam calls may get through. Always check your voicemail if you suspect you may have missed an important call.`,
+        warning: `No spam detection system is perfect. Legitimate calls can sometimes be flagged as spam, and some spam calls may get through. Always check your voicemail if you suspect you may have missed an important call.`,
       },
     ],
   },
@@ -708,7 +708,7 @@ No system catches every spam call, but enabling these features significantly red
     thumbnailEmoji: ``,
     publishedAt: `2026-04-19`,
     difficulty: `Beginner`,
-    body: `Buying a refurbished or pre-owned phone is a sensible way to get a quality smartphone at a lower price. A refurbished phone is one that was returned, repaired, and inspected — often looking and working like new — but sold for significantly less than the original retail price. A pre-owned phone is one that was used and resold, which may or may not have been professionally inspected.
+    body: `Buying a refurbished or pre-owned phone is a sensible way to get a quality smartphone at a lower price. A refurbished phone is one that was returned, repaired, and inspected — often looking and working like new — but sold for a lot less than the original retail price. A pre-owned phone is one that was used and resold, which may or may not have been professionally inspected.
 
 The key to buying safely is knowing where to buy. The safest sources are manufacturers and major certified resellers.
 
@@ -871,7 +871,7 @@ Once enabled, every time you copy text, an image, or a file path, Windows saves 
 
 This is particularly useful for repetitive work. If you are filling out forms online and need to type the same address, phone number, or reference number multiple times, copy it once and then use Clipboard History to paste it repeatedly without having to retype it each time.
 
-Pinning is another valuable feature. If there is something you find yourself copying and pasting regularly — your mailing address, your email address, a frequently used phrase — you can pin it to the top of your Clipboard History so it is always available. Pinned items stay in the list even after you restart your computer, whereas unpinned items are cleared on restart.
+Pinning is another valuable feature. If there is something you find yourself copying and pasting regularly — your mailing address, your email address, a often used phrase — you can pin it to the top of your Clipboard History so it is always available. Pinned items stay in the list even after you restart your computer, whereas unpinned items are cleared on restart.
 
 Clipboard History can also sync across your Windows devices if you have a Microsoft account and turn on the sync option. If you copy something on your desktop computer, it becomes available to paste on your laptop as well — as long as both are signed in to the same Microsoft account.
 
@@ -898,7 +898,7 @@ Text from passwords or sensitive information should not be copied and left in Cl
       {
         title: `Clear individual items or all history`,
         content: `To remove a single item, hover over it in the Win+V panel, click the three-dot menu, and select "Delete." To clear all clipboard history at once, click "Clear all" at the top right of the panel. Pinned items are not cleared when you use "Clear all" — you must delete them individually.`,
-        warning: `If you copy a password or other sensitive information, delete it from Clipboard History immediately after use. Click Win+V, find the item, click its three-dot menu, and select "Delete."`,
+        warning: `If you copy a password or other sensitive information, delete it from Clipboard History right away after use. Click Win+V, find the item, click its three-dot menu, and select "Delete."`,
       },
       {
         title: `Turn on sync across devices (optional)`,
@@ -921,11 +921,11 @@ Text from passwords or sensitive information should not be copied and left in Cl
 
 The most powerful organizing features are labels and colors. Labels work like folders — you create a label called "Medical" or "Home Repairs" or "Gift Ideas" and then apply that label to relevant notes. When you click a label in the sidebar, you see all notes with that label at once. Colors let you visually group notes — all health-related notes in green, all urgent notes in red, for example.
 
-Pinning is useful for notes you refer to frequently. Pinned notes appear at the top of your Keep view, above all other notes. If you have a grocery list, a list of important phone numbers, or a note with your medication schedule, pinning keeps it immediately visible every time you open Keep without scrolling.
+Pinning is useful for notes you refer to often. Pinned notes appear at the top of your Keep view, above all other notes. If you have a grocery list, a list of important phone numbers, or a note with your medication schedule, pinning keeps it right away visible every time you open Keep without scrolling.
 
 Reminders are one of Keep's most underused features. You can set a reminder on any note and Google Keep will send you a notification at a specific time — or when you arrive at a specific location. A location-based reminder is particularly clever: if you have a note called "Buy milk and eggs," you can set a reminder to trigger when you are near your grocery store. The next time you drive by, your phone notifies you.
 
-Sharing notes is a straightforward way to collaborate. If you share a shopping list with a household member, both of you can add and check off items in real time. Changes appear for both people immediately. This is useful for shared grocery lists, home improvement to-do lists, or any ongoing list that two people manage together.
+Sharing notes is a straightforward way to collaborate. If you share a shopping list with a household member, both of you can add and check off items in real time. Changes appear for both people right away. This is useful for shared grocery lists, home improvement to-do lists, or any ongoing list that two people manage together.
 
 Archived notes do not clutter your main Keep view but remain searchable. When a note is no longer actively needed but you might want to refer to it later, archiving (tapping the archive box icon) moves it out of sight without deleting it.`,
     steps: [
@@ -940,7 +940,7 @@ Archived notes do not clutter your main Keep view but remain searchable. When a 
       },
       {
         title: `Pin important notes to the top`,
-        content: `Open a note you want to pin and tap the pin icon (looks like a thumbtack) at the top right of the note. Or tap and hold a note from the main view and look for the pin option. Pinned notes move to a "Pinned" section at the top of your Keep screen, above all other notes. Pin your most frequently referenced notes here.`,
+        content: `Open a note you want to pin and tap the pin icon (looks like a thumbtack) at the top right of the note. Or tap and hold a note from the main view and look for the pin option. Pinned notes move to a "Pinned" section at the top of your Keep screen, above all other notes. Pin your most often referenced notes here.`,
       },
       {
         title: `Set a time or location reminder`,
@@ -1006,7 +1006,7 @@ For regular commuters, saving your home and work addresses in Apple Maps makes g
       },
       {
         title: `View a transit line schedule`,
-        content: `To look up a specific transit line without getting directions, zoom in on the Apple Maps main view until you see colored transit lines on the map. Tap on a line to see its name and route. Tap "More Info" or the line details to see the full list of stops and the departure schedule from any stop. This is useful for planning a trip in advance or checking how frequently a bus or train runs.`,
+        content: `To look up a specific transit line without getting directions, zoom in on the Apple Maps main view until you see colored transit lines on the map. Tap on a line to see its name and route. Tap "More Info" or the line details to see the full list of stops and the departure schedule from any stop. This is useful for planning a trip in advance or checking how often a bus or train runs.`,
       },
     ],
   },

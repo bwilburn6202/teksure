@@ -285,7 +285,7 @@ export const guidesBatch21: Guide[] = [
       },
       {
         title: 'Browse and buy books',
-        content: 'Tap "Shop" at the bottom to open the Google Play Books store. Browse categories, bestseller lists, and new arrivals. Tap a book to see the description and price. Tap "Buy" to purchase — payment uses the card saved to your Google account. Books download immediately.',
+        content: 'Tap "Shop" at the bottom to open the Google Play Books store. Browse categories, bestseller lists, and new arrivals. Tap a book to see the description and price. Tap "Buy" to purchase — payment uses the card saved to your Google account. Books download right away.',
         tip: 'Quick Tip: Tap "Free sample" to read the first few pages of any book before deciding to buy.',
       },
       {
@@ -353,7 +353,7 @@ export const guidesBatch21: Guide[] = [
     steps: [
       {
         title: 'Download and open iHeartRadio',
-        content: 'Search "iHeartRadio" in the App Store or Google Play Store. Install the free app. You can start listening to live radio immediately without creating an account, though making an account (free) lets you save favorites.',
+        content: 'Search "iHeartRadio" in the App Store or Google Play Store. Install the free app. You can start listening to live radio right away without creating an account, though making an account (free) lets you save favorites.',
       },
       {
         title: 'Find a local or favorite radio station',
@@ -442,7 +442,7 @@ export const guidesBatch21: Guide[] = [
       },
       {
         title: 'Where to try or buy a Lively phone',
-        content: `Lively phones are sold at Best Buy stores (where you can handle them in person) and at greatcall.com or lively.com online. Best Buy staff can demonstrate both models and help you pick the right plan. There's a 30-day return policy if the phone isn't the right fit.`,
+        content: `Lively phones are sold at Best Buy stores (where you can handle them in person) and at greatcall.com or lively.com online. Best Buy staff can show both models and help you pick the right plan. There's a 30-day return policy if the phone isn't the right fit.`,
       },
     ],
   },
@@ -571,7 +571,7 @@ export const guidesBatch21: Guide[] = [
     thumbnailEmoji: '',
     publishedAt: '2026-04-19',
     difficulty: 'Beginner',
-    body: `Your iPhone freezes, the screen goes black and won't turn back on, or it's completely unresponsive — pressing buttons does nothing. This happens occasionally on all iPhones, and it doesn't mean your phone is broken. A force restart (also called a hard reset) clears whatever got stuck in the system and starts fresh. It takes less than 10 seconds and doesn't delete any of your data.\n\nThe button combination for a force restart varies by iPhone model — newer iPhones use a different sequence than older ones. This guide covers all models so you can find the right method for your iPhone quickly.`,
+    body: `Your iPhone freezes, the screen goes black and won't turn back on, or it's completely unresponsive — pressing buttons does nothing. This happens sometimes on all iPhones, and it doesn't mean your phone is broken. A force restart (also called a hard reset) clears whatever got stuck in the system and starts fresh. It takes less than 10 seconds and doesn't delete any of your data.\n\nThe button combination for a force restart varies by iPhone model — newer iPhones use a different sequence than older ones. This guide covers all models so you can find the right method for your iPhone quickly.`,
     steps: [
       {
         title: 'Identify your iPhone model',
@@ -615,7 +615,7 @@ export const guidesBatch21: Guide[] = [
       },
       {
         title: 'Understand what the percentage means',
-        content: `100%: Battery is new or nearly new.\n80–99%: Normal range — you may notice slightly reduced battery life compared to when new, but performance is still good.\nBelow 80%: Apple considers this "significantly degraded" — battery life is noticeably reduced and replacement is worth considering.\nBelow 70%: You're likely experiencing noticeably short battery life and should consider replacement soon.`,
+        content: `100%: Battery is new or nearly new.\n80–99%: Normal range — you may notice slightly reduced battery life compared to when new, but performance is still good.\nBelow 80%: Apple considers this "a lot degraded" — battery life is noticeably reduced and replacement is worth considering.\nBelow 70%: You're likely experiencing noticeably short battery life and should consider replacement soon.`,
         tip: `Quick Tip: Apple guarantees iPhone batteries will hold at least 80% capacity for 500 full charge cycles — that's roughly 1.5–2 years of normal use.`,
       },
       {
@@ -738,7 +738,7 @@ export const guidesBatch21: Guide[] = [
       {
         title: 'Hard reboot as a last resort',
         content: 'If nothing else works, press and hold the physical power button on your computer for 5–10 seconds until it turns off. Wait 30 seconds, then press it again to turn it back on. This is the equivalent of pulling the plug — you will lose any unsaved work, but it always breaks the freeze.',
-        warning: 'Hard power-off should be used only when nothing else works. Regularly shutting down this way (rather than through Windows) can eventually cause file system errors. If your computer freezes frequently, it may need maintenance — see a technician or run Windows Update to install pending patches.',
+        warning: 'Hard power-off should be used only when nothing else works. Regularly shutting down this way (rather than through Windows) can eventually cause file system errors. If your computer freezes often, it may need maintenance — see a technician or run Windows Update to install pending patches.',
       },
     ],
   },

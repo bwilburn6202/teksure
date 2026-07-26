@@ -91,7 +91,7 @@ export const guidesBatch14: Guide[] = [
     steps: [
       {
         title: 'Turn on dark mode on iPhone',
-        content: `Go to Settings → Display & Brightness. Under "Appearance," you'll see two options: Light and Dark. Tap "Dark" to turn on dark mode across your entire iPhone. All of Apple's built-in apps and most third-party apps will switch to dark mode immediately.`,
+        content: `Go to Settings → Display & Brightness. Under "Appearance," you'll see two options: Light and Dark. Tap "Dark" to turn on dark mode across your entire iPhone. All of Apple's built-in apps and most third-party apps will switch to dark mode right away.`,
         tip: 'Scroll down to "Automatic" and turn it on to have your iPhone automatically switch to dark mode at sunset and back to light mode at sunrise. This is a popular option that most people find easy on their eyes.',
       },
       {
@@ -100,7 +100,7 @@ export const guidesBatch14: Guide[] = [
       },
       {
         title: 'Turn on dark mode on Windows 11',
-        content: `Click the Start button → Settings (gear icon) → Personalization → Colors. Under "Choose your mode," click the dropdown and select "Dark." Windows switches to a dark theme for all built-in apps and the taskbar immediately. Note: some third-party apps have their own light/dark settings that you'll need to change within the app itself.`,
+        content: `Click the Start button → Settings (gear icon) → Personalization → Colors. Under "Choose your mode," click the dropdown and select "Dark." Windows switches to a dark theme for all built-in apps and the taskbar right away. Note: some third-party apps have their own light/dark settings that you'll need to change within the app itself.`,
       },
       {
         title: 'Turn on dark mode in specific apps',
@@ -368,7 +368,7 @@ export const guidesBatch14: Guide[] = [
       },
       {
         title: 'View and share your screenshot',
-        content: `Tap the thumbnail in the bottom left corner right after taking the screenshot to open the markup editor — you can add arrows or text to highlight something. Tap "Done" to save it, or tap the Share icon to immediately send it by text or email. If you don't tap the thumbnail, it disappears after a few seconds but is automatically saved to your Photos app in the "Recents" album.`,
+        content: `Tap the thumbnail in the bottom left corner right after taking the screenshot to open the markup editor — you can add arrows or text to highlight something. Tap "Done" to save it, or tap the Share icon to right away send it by text or email. If you don't tap the thumbnail, it disappears after a few seconds but is automatically saved to your Photos app in the "Recents" album.`,
       },
     ],
   },
@@ -430,7 +430,7 @@ export const guidesBatch14: Guide[] = [
       },
       {
         title: 'Save on prescriptions at Amazon Pharmacy',
-        content: 'Amazon Pharmacy offers significantly discounted prescription prices for Prime members. Go to pharmacy.amazon.com or tap "Prime Rx Benefits" in the Amazon app. You can transfer prescriptions from any pharmacy to Amazon Pharmacy and have them mailed to your home for free in 2 days or less. For same-day needs, Amazon also shows GoodRx-style discount coupons for local pharmacies.',
+        content: 'Amazon Pharmacy offers a lot discounted prescription prices for Prime members. Go to pharmacy.amazon.com or tap "Prime Rx Benefits" in the Amazon app. You can transfer prescriptions from any pharmacy to Amazon Pharmacy and have them mailed to your home for free in 2 days or less. For same-day needs, Amazon also shows GoodRx-style discount coupons for local pharmacies.',
       },
       {
         title: 'Read free books with Prime Reading',

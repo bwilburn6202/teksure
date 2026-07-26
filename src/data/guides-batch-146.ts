@@ -91,7 +91,7 @@ If you have an Apple Watch, it can also detect hard falls and offer to call emer
     difficulty: 'Beginner',
     body: `AARP (American Association of Retired Persons) is a nonprofit organization that advocates for Americans 50 and older. You do not have to be retired to join. Membership is open to anyone 50 or older, and family members of any age can join at a reduced rate.
 
-Membership costs approximately $16 per year (prices may change — check aarp.org for the current rate). For most members, that cost is recovered quickly through discounts on everyday expenses.
+Membership costs about $16 per year (prices may change — check aarp.org for the current rate). For most members, that cost is recovered quickly through discounts on everyday expenses.
 
 **What AARP membership actually gives you**
 
@@ -213,8 +213,7 @@ Sometimes the problem is not your internet plan — it is your router (the box t
       },
       {
         title: 'Decide whether paying for a higher speed is worth it',
-        content:
-          'If you live alone or with one other person and your main activities are browsing, email, video calls, and standard streaming, you probably do not need more than 100 Mbps. Paying for 500 Mbps or gigabit service will not make your web pages load noticeably faster for everyday use — those speeds are designed for households with many users and devices. However, if you frequently experience buffering, frozen video calls, or very slow file downloads, and your test shows speeds well below your plan, upgrading to a higher tier or switching providers may be worth the cost.',
+        content: 'If you live alone or with one other person and your main activities are browsing, email, video calls, and standard streaming, you probably do not need more than 100 Mbps. Paying for 500 Mbps or gigabit service will not make your web pages load noticeably faster for everyday use — those speeds are designed for households with many users and devices. However, if you often experience buffering, frozen video calls, or very slow file downloads, and your test shows speeds well below your plan, upgrading to a higher tier or switching providers may be worth the cost.',
         tip: 'Quick Tip: Many internet providers offer discounted plans for seniors or low-income households. Ask your provider specifically about "senior discounts" or "low-income programs." The federal Affordable Connectivity Program has ended, but some providers continue offering similar reduced-rate plans — call and ask.',
       },
       {
@@ -276,8 +275,7 @@ Most major hearing aid manufacturers have a companion app: ReSound Smart 3D, Oti
       },
       {
         title: 'Pair ASHA or Bluetooth hearing aids to Android',
-        content:
-          'On your Android phone, open Settings. Tap "Connected devices" (on some phones this is called "Bluetooth & device connection" or "Connections"). Tap "Pair new device" or "Bluetooth" and make sure Bluetooth is turned on. Your phone will scan for nearby devices. When your hearing aids appear in the list, tap their name to connect. For ASHA-compatible hearing aids on any current Android phone, the connection may be automatic after this initial pairing — the phone recognizes them as hearing aids and routes audio directly. On Samsung Galaxy phones, go to Settings → Connections → Bluetooth, toggle it on, and tap "Scan" if your hearing aids do not appear immediately.',
+        content: 'On your Android phone, open Settings. Tap "Connected devices" (on some phones this is called "Bluetooth & device connection" or "Connections"). Tap "Pair new device" or "Bluetooth" and make sure Bluetooth is turned on. Your phone will scan for nearby devices. When your hearing aids appear in the list, tap their name to connect. For ASHA-compatible hearing aids on any current Android phone, the connection may be automatic after this initial pairing — the phone recognizes them as hearing aids and routes audio directly. On Samsung Galaxy phones, go to Settings → Connections → Bluetooth, toggle it on, and tap "Scan" if your hearing aids do not appear right away.',
         warning: 'Some older Android phones may not fully support the ASHA standard. If you are having trouble, check your phone is running a current, updated version of Android by going to Settings → About phone → Android version.',
       },
       {

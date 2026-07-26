@@ -70,7 +70,7 @@ export const guidesBatch296: Guide[] = [
       },
       {
         title: "Module four: safety, infection control, and HIPAA",
-        content: "Volunteers learn basic hand hygiene, how to use the alcohol gel that hospices provide, what an N95 mask is for, and which patient conditions require gloves on every visit. Falls cause the most volunteer injuries, so trainers teach how to spot rugs, cords, and bed positions before sitting down. HIPAA training is short but firm. A volunteer does not share patient names, addresses, conditions, or family stories with anyone outside the hospice agency, including a spouse at home. Violating HIPAA is one of the few actions that ends a volunteer career immediately.",
+        content: "Volunteers learn basic hand hygiene, how to use the alcohol gel that hospices provide, what an N95 mask is for, and which patient conditions require gloves on every visit. Falls cause the most volunteer injuries, so trainers teach how to spot rugs, cords, and bed positions before sitting down. HIPAA training is short but firm. A volunteer does not share patient names, addresses, conditions, or family stories with anyone outside the hospice agency, including a spouse at home. Violating HIPAA is one of the few actions that ends a volunteer career right away.",
       },
       {
         title: "Module five: self-care and the first supervised visit",
@@ -102,7 +102,7 @@ export const guidesBatch296: Guide[] = [
       },
       {
         title: "Prepare a personal vigil kit",
-        content: "Most experienced vigil volunteers carry a small bag with a paperback book, a printed list of calm playlists on the volunteer phone, a small bottle of unscented lotion for hand massage if the patient appears comforted by touch, reading glasses, a sweater because hospital rooms run cold, and a refillable water bottle. Some carry a printed copy of a favorite poem or short essay to read aloud if the patient is alert and the family has indicated the patient enjoys that kind of company. Avoid strong perfumes, colognes, and loud jewelry.",
+        content: "Most experienced vigil volunteers carry a small bag with a paperback book, a printed list of calm playlists on the volunteer phone, a small bottle of unscented lotion for hand massage if the patient appears comforted by touch, reading glasses, a sweater because hospital rooms run cold, and a refillable water bottle. Some carry a printed copy of a favorite poem or short essay to read aloud if the patient is alert and the family has showed the patient enjoys that kind of company. Avoid strong perfumes, colognes, and loud jewelry.",
         tip: "Quick Tip: Many volunteers keep a printed copy of Psalm 23, a Walt Whitman poem, and a Mary Oliver passage in their kit. The patient or family can request any of them or none.",
       },
       {

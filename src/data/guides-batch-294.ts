@@ -74,7 +74,7 @@ export const guidesBatch294: Guide[] = [
       },
       {
         title: "Plan for vision, hearing, and reaction-time changes",
-        content: "Schedule an eye exam and a hearing test before buying. A diesel pusher has a quiet cabin, which helps drivers with hearing loss, while a gas Class C has more road noise. A Class A with backup cameras and side-view cameras at every mirror helps drivers with reduced neck range. Many newer rigs offer adaptive cruise control and lane-keep assist — these features are not vanity items at age 72, they are real safety tools. Ask the dealer to demonstrate them on the test drive.",
+        content: "Schedule an eye exam and a hearing test before buying. A diesel pusher has a quiet cabin, which helps drivers with hearing loss, while a gas Class C has more road noise. A Class A with backup cameras and side-view cameras at every mirror helps drivers with reduced neck range. Many newer rigs offer adaptive cruise control and lane-keep assist — these features are not vanity items at age 72, they are real safety tools. Ask the dealer to show them on the test drive.",
       },
     ],
   },
@@ -144,7 +144,7 @@ export const guidesBatch294: Guide[] = [
       },
       {
         title: "Set up Medicare for travel",
-        content: "Call Medicare at 1-800-633-4227 to confirm the address change. If on Original Medicare plus Medigap, the plan typically follows in every state. If considering Medicare Advantage, ask in plain language: does this plan allow out-of-network care across all 50 states with full benefits? If the answer is no, decline. Many full-timers pick a Medigap Plan G policy, which has predictable monthly cost and broad acceptance. State Health Insurance Assistance Programs (SHIP) offer free Medicare counseling by phone at shiphelp.org.",
+        content: "Call Medicare at 1-800-633-4227 to confirm the address change. If on Original Medicare plus Medigap, the plan typically follows in every state. If considering Medicare Advantage, ask in plain language: does this plan allow out-of-network care across all 50 states with full benefits? If the answer is no, decline. Many full-timers pick a Medigap Plan G policy, which has predictable monthly cost and broad acceptance. State Health Insurance Help Programs (SHIP) offer free Medicare counseling by phone at shiphelp.org.",
       },
       {
         title: "Vote and file taxes from the road",

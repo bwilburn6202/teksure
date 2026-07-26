@@ -230,7 +230,7 @@ export const guidesBatch266: Guide[] = [
       {
         title: "Recognize the feelings as a normal recovery curve",
         content: "Most scam victims go through a predictable pattern: shock in week one, anger and shame in weeks two through four, sadness and self-doubt in months two and three, and gradual recovery of confidence in months four through twelve. Sleep can be hard. Trust in strangers takes a hit. You may avoid the phone or the internet for a while. These are normal stages. They get better. If they do not get better after three months, talk to a doctor or counselor.",
-        warning: "If you have thoughts of harming yourself or feel that life is not worth living, call or text 988 immediately. The 988 Suicide and Crisis Lifeline is free, 24/7, and confidential.",
+        warning: "If you have thoughts of harming yourself or feel that life is not worth living, call or text 988 right away. The 988 Suicide and Crisis Lifeline is free, 24/7, and confidential.",
       },
       {
         title: "Find a local support group through AARP or a senior center",

@@ -521,7 +521,7 @@ Otra opción nueva es IRS Direct File, que es un sistema creado directamente por
 
 Para declarar tus impuestos, necesitarás: tu formulario W-2 de cada empleador (lo recibes en enero), cualquier formulario 1099 de ingresos adicionales, tu número de Seguro Social, y la información de tu cuenta bancaria si quieres recibir tu reembolso por depósito directo, que es la forma más rápida.
 
-Si prefieres ayuda en persona, el programa VITA (Volunteer Income Tax Assistance) ofrece preparación gratuita de impuestos en comunidades de todo el país. Los voluntarios hablan español y te ayudan a completar tu declaración. Busca un sitio VITA cerca de ti en irs.gov/vita.
+Si prefieres ayuda en persona, el programa VITA (Volunteer Income Tax Help) ofrece preparación gratuita de impuestos en comunidades de todo el país. Los voluntarios hablan español y te ayudan a completar tu declaración. Busca un sitio VITA cerca de ti en irs.gov/vita.
 
 La fecha límite para declarar impuestos federales es generalmente el 15 de abril de cada año. Si necesitas más tiempo, puedes solicitar una extensión gratis, pero recuerda que la extensión es para presentar, no para pagar — si debes impuestos, el pago sigue siendo el 15 de abril.`,
     steps: [

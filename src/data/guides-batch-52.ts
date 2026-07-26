@@ -355,7 +355,7 @@ There are two modes: **Screen Mirroring**, which shows everything on your Mac sc
       },
       {
         title: `Stop AirPlay`,
-        content: `When you're done, click Control Center in your Mac's menu bar, click "Screen Mirroring," and click your TV's name again to disconnect. Alternatively, you can click the AirPlay icon that appears in your menu bar while mirroring is active and select "Stop Mirroring." Your Mac screen will return to normal immediately.`
+        content: `When you're done, click Control Center in your Mac's menu bar, click "Screen Mirroring," and click your TV's name again to disconnect. Alternatively, you can click the AirPlay icon that appears in your menu bar while mirroring is active and select "Stop Mirroring." Your Mac screen will return to normal right away.`
       }
     ]
   },
@@ -761,7 +761,7 @@ If you've had your Fire Stick for a while, you may have noticed it getting a lit
       },
       {
         title: `Clear app cache to speed up your Fire Stick`,
-        content: `From the home screen, go to Settings (the gear icon). Tap "Applications," then "Manage Installed Applications." Choose an app that's been acting slow or you use frequently (like Netflix or YouTube). Tap "Clear Cache." This removes temporary files stored by the app without deleting your login or settings. Repeat for any app that seems sluggish.`,
+        content: `From the home screen, go to Settings (the gear icon). Tap "Applications," then "Manage Installed Applications." Choose an app that's been acting slow or you use often (like Netflix or YouTube). Tap "Clear Cache." This removes temporary files stored by the app without deleting your login or settings. Repeat for any app that seems sluggish.`,
         warning: `Clearing cache is safe. Clearing "Data" is different — it deletes your saved settings and login for that app. Only clear Data if the app is broken and won't work at all.`
       },
       {

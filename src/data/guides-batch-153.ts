@@ -38,7 +38,7 @@ Siri is particularly helpful if you find small text hard to read, if your hands 
 Here are 15 things you can ask Siri right now:
 
 1. **"Call Mom"** — Siri dials the contact from your phone book. If you have more than one number for that person, Siri will ask which one.
-2. **"Set a timer for 20 minutes"** — Siri starts a countdown immediately. Helpful when you are cooking or doing laundry.
+2. **"Set a timer for 20 minutes"** — Siri starts a countdown right away. Helpful when you are cooking or doing laundry.
 3. **"Text Sarah: I'll be there at 3"** — Siri writes and sends a text message for you. It will read the message back and ask you to confirm before sending.
 4. **"Get directions to Walgreens"** — Siri opens Apple Maps and shows you the nearest location with turn-by-turn directions.
 5. **"What's the weather tomorrow?"** — Siri gives you the forecast for your location.
@@ -230,7 +230,7 @@ This technology is called "contactless payment" or "tap to pay." Apple's version
 
 Paying with your phone is actually more secure than swiping a physical credit card. Here is why: when you add a card to Apple Pay or Google Pay, your actual card number is never stored on your phone and never sent to the store. Instead, the system creates a unique one-time code for each purchase. Even if someone were listening to the wireless signal, they would get a useless one-time code that cannot be reused. Your real card number stays private.
 
-Additionally, every payment requires you to unlock your phone using your face (Face ID), your fingerprint (Touch ID), or your PIN. A thief who steals your phone cannot make a payment without that unlock step.
+Also, every payment requires you to unlock your phone using your face (Face ID), your fingerprint (Touch ID), or your PIN. A thief who steals your phone cannot make a payment without that unlock step.
 
 **Where can you use it?**
 
@@ -284,7 +284,7 @@ Apple Pay is built into every iPhone — you do not need to download anything. Y
         title: 'Check your payment history and remove a card',
         content:
           'To see recent Apple Pay transactions: open the Wallet app, tap the card you used, and scroll down to see a list of recent purchases. To remove a card from Apple Pay: tap the card, tap the three dots (...) or the "i" icon, scroll down, and tap "Remove Card." To see Google Pay history: open the Google Wallet app and tap "Activity" at the bottom. To remove a card from Google Pay: tap the card, tap the three dots in the top-right corner, and tap "Remove payment method." Removing a card from your phone does not cancel the actual card — it only removes it from tap-to-pay. Your physical card still works normally.',
-        tip: 'If your phone is lost or stolen, you can immediately remove all cards from Apple Pay by going to iCloud.com → Find My → your device → Remove. For Google Pay, go to pay.google.com on any computer and remove cards from there. Your money is safe even before you do this, because nobody can use the phone to pay without your face, fingerprint, or PIN.',
+        tip: 'If your phone is lost or stolen, you can right away remove all cards from Apple Pay by going to iCloud.com → Find My → your device → Remove. For Google Pay, go to pay.google.com on any computer and remove cards from there. Your money is safe even before you do this, because nobody can use the phone to pay without your face, fingerprint, or PIN.',
       },
     ],
   },

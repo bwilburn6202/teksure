@@ -70,7 +70,7 @@ The biggest practical difference is the company ecosystem. If you buy an iPhone,
 
 Android phones come from many different manufacturers, which means more variety in size, style, and price. Android phones work very smoothly with Google services like Gmail, Google Photos, and Google Maps. If you use a lot of Google products already, an Android phone feels natural. Samsung, one of the largest Android makers, also offers its own features on top of Android.
 
-In terms of price, iPhones tend to cost more — the newest models start around $800 and can go much higher. However, older iPhone models (like the iPhone 14 or 15) can be bought new or refurbished for significantly less. Android phones have a much wider price range, from budget-friendly options around $200 all the way up to premium models over $1,000.
+In terms of price, iPhones tend to cost more — the newest models start around $800 and can go much higher. However, older iPhone models (like the iPhone 14 or 15) can be bought new or refurbished for a lot less. Android phones have a much wider price range, from budget-friendly options around $200 all the way up to premium models over $1,000.
 
 Both types of phones receive regular security updates that protect your personal information. Both have large selections of apps. Both are used successfully by millions of seniors every day. There is no wrong choice — it truly comes down to which one your family uses, your budget, and which feels more comfortable in your hand when you hold it.
 
@@ -129,7 +129,7 @@ You can check the estimated value of your phone before committing to anything. A
       {
         title: `Check trade-in estimates at multiple places`,
         content: `Visit Apple's trade-in page (apple.com/shop/trade-in), Samsung's trade-in page (samsung.com/us/trade-in), and your carrier's website. Enter your phone's model and answer questions about its condition. Compare the offers — they can vary by $50 to $200 or more for the same phone. Best Buy and Amazon also have trade-in estimators worth checking.`,
-        tip: `Carrier promotions sometimes offer dramatically higher trade-in values for a limited time — especially when a new phone model launches. If you are not in a rush, timing your trade-in around these promotions can significantly increase your credit.`,
+        tip: `Carrier promotions sometimes offer dramatically higher trade-in values for a limited time — especially when a new phone model launches. If you are not in a rush, timing your trade-in around these promotions can a lot increase your credit.`,
       },
       {
         title: `Sign out of your accounts on the old phone`,
@@ -187,7 +187,7 @@ If you find that you are regularly coming close to your data limit, there are a 
       },
       {
         title: `Reduce data usage if you are getting close to your limit`,
-        content: `Connect to Wi-Fi whenever you can — at home, at a family member's house, or at a trusted location. Turn off automatic video playback in Facebook and Instagram settings. In Netflix or other streaming apps, go to settings and choose a lower video quality for mobile data. These steps can cut your data usage significantly without changing much about how you use your phone.`,
+        content: `Connect to Wi-Fi whenever you can — at home, at a family member's house, or at a trusted location. Turn off automatic video playback in Facebook and Instagram settings. In Netflix or other streaming apps, go to settings and choose a lower video quality for mobile data. These steps can cut your data usage a lot without changing much about how you use your phone.`,
         warning: `Avoid using public Wi-Fi networks (like at a coffee shop or hotel) for banking or other sensitive activities. Those networks are not always secure. Use your cell data or a VPN for sensitive tasks when away from home.`,
       },
     ],
@@ -228,7 +228,7 @@ You can also look at what you are paying for that you may not need. Many plans i
       },
       {
         title: `Consider a prepaid plan if you use a limited amount of data`,
-        content: `If you primarily use your phone for calls and texts, and only occasionally browse the internet, a prepaid plan with 3 to 5 gigabytes of data may be all you need. Mint Mobile, Straight Talk, and TracFone offer plans starting around $15 to $25 per month. These use the major carrier networks and have reliable coverage in most areas.`,
+        content: `If you primarily use your phone for calls and texts, and only sometimes browse the internet, a prepaid plan with 3 to 5 gigabytes of data may be all you need. Mint Mobile, Straight Talk, and TracFone offer plans starting around $15 to $25 per month. These use the major carrier networks and have reliable coverage in most areas.`,
         warning: `Before switching carriers, check coverage in your specific area at the new carrier's website. Enter your home address and zip code to confirm signal strength. Coverage maps are not always perfectly accurate, so also ask friends or neighbors if they have experience with the carrier you are considering.`,
       },
       {
@@ -382,7 +382,7 @@ Before you leave, take a few minutes to make sure your important accounts are se
     thumbnailEmoji: ``,
     publishedAt: `2026-04-20`,
     difficulty: `Beginner`,
-    body: `Google Translate is a free app available for both iPhone and Android that can translate text between over 130 languages. For anyone who travels, lives in a multilingual community, or has family members who speak a different language, it is an incredibly practical tool that has improved significantly in recent years.
+    body: `Google Translate is a free app available for both iPhone and Android that can translate text between over 130 languages. For anyone who travels, lives in a multilingual community, or has family members who speak a different language, it is an incredibly practical tool that has improved a lot in recent years.
 
 The most impressive feature is the camera translation — you point your phone's camera at a sign, menu, label, or document, and the app translates the text in real time right on your screen. The foreign words seem to disappear and be replaced with the translation in your own language. This works particularly well for restaurant menus, street signs, and product labels when traveling. You do not even need to take a photo — the translation happens live as you hold your camera up.
 
@@ -398,7 +398,7 @@ The app is completely free to download and use. Google does not charge for trans
       },
       {
         title: `Translate typed text`,
-        content: `Open Google Translate. At the top, you will see two language boxes — the language you are translating from on the left, and the language you want to translate to on the right. Tap the left language box and choose the original language (or leave it on Detect Language and the app will figure it out). Tap the right box and choose your target language. Tap in the text box and type the words you want to translate. The translation appears immediately below.`,
+        content: `Open Google Translate. At the top, you will see two language boxes — the language you are translating from on the left, and the language you want to translate to on the right. Tap the left language box and choose the original language (or leave it on Detect Language and the app will figure it out). Tap the right box and choose your target language. Tap in the text box and type the words you want to translate. The translation appears right away below.`,
         tip: `Tap the speaker icon next to either language to hear the translation spoken aloud. This is helpful for learning pronunciation or for communicating with someone who speaks the other language.`,
       },
       {
@@ -413,7 +413,7 @@ The app is completely free to download and use. Google does not charge for trans
       {
         title: `Download languages for offline use`,
         content: `Open Google Translate and tap the three horizontal lines or your profile picture in the top corner, then tap Offline Languages. Select the language you want to download — for example, Spanish, French, or German. Tap the download icon next to it and wait for the download to complete. You can now use text and camera translation in that language without an internet connection.`,
-        tip: `Download offline language packs before any trip while you are connected to Wi-Fi at home. This ensures you have translation access even in places with limited cell service or when you want to avoid data charges abroad.`,
+        tip: `Download offline language packs before any trip while you are connected to Wi-Fi at home. This makes sure you have translation access even in places with limited cell service or when you want to avoid data charges abroad.`,
       },
     ],
   },
@@ -476,7 +476,7 @@ Ibotta is a legitimate company that has been operating since 2012 and has paid o
 
 Fetch Rewards is one of the most popular of these apps. It works with virtually any grocery store, gas station, or general merchandise store in the United States. You do not need to activate coupons ahead of time or remember specific deals. After shopping, you open Fetch Rewards, tap Snap Receipt, take a photo of your receipt, and submit it. The app scans for brand partners on your receipt and automatically credits your account with points for qualifying purchases.
 
-These points can be redeemed for gift cards to hundreds of retailers including Amazon, Target, Walmart, Starbucks, and many more. The conversion rate is approximately 1,000 points equal to $1 in gift card value. This means you are earning roughly one percent back on your purchases, with bonus earning on featured brand products that can be much higher. Some featured products earn five to fifteen times the base points.
+These points can be redeemed for gift cards to hundreds of retailers including Amazon, Target, Walmart, Starbucks, and many more. The conversion rate is about 1,000 points equal to $1 in gift card value. This means you are earning roughly one percent back on your purchases, with bonus earning on featured brand products that can be much higher. Some featured products earn five to fifteen times the base points.
 
 Grocery TV is another receipt-scanning app that works similarly. Checkout 51 is a third option that combines weekly offers with receipt scanning and pays out as cash rather than points. Many people use two or three of these apps simultaneously and scan the same receipt in each app to maximize their total savings.
 
@@ -540,7 +540,7 @@ Setting up these apps takes about five minutes each. Most require only an email 
       },
       {
         title: `Scan or enter your loyalty info at checkout`,
-        content: `When you reach the cashier or self-checkout, open the app and look for a Scan or My Barcode option. Show the barcode on your screen to the cashier scanner, or let the self-checkout machine scan it. Alternatively, many stores accept your phone number instead of a barcode — enter the phone number associated with your account. Your purchases are recorded and any applicable savings or points are applied immediately.`,
+        content: `When you reach the cashier or self-checkout, open the app and look for a Scan or My Barcode option. Show the barcode on your screen to the cashier scanner, or let the self-checkout machine scan it. Alternatively, many stores accept your phone number instead of a barcode — enter the phone number associated with your account. Your purchases are recorded and any applicable savings or points are applied right away.`,
       },
       {
         title: `Redeem your rewards`,
@@ -607,13 +607,13 @@ Setting up Honey takes about two minutes. You install the browser extension once
     difficulty: `Beginner`,
     body: `Identity theft happens when someone uses your personal information — your Social Security number, credit card number, bank account details, or other identifying information — without your permission, usually to steal money or open new accounts in your name. It affects millions of Americans every year and can take months or years to fully resolve. Understanding how it happens and what you can do to prevent it is one of the most valuable investments you can make in your personal security.
 
-Criminals obtain personal information through several common methods. Data breaches happen when hackers break into the computer systems of a company you do business with — a retailer, bank, health insurance company, or government agency — and steal large databases of customer information. This has happened to major companies including Target, Equifax, Yahoo, and many others. If your information was in one of those databases, it may now be circulating on illegal markets.
+Criminals get personal information through several common methods. Data breaches happen when hackers break into the computer systems of a company you do business with — a retailer, bank, health insurance company, or government agency — and steal large databases of customer information. This has happened to major companies including Target, Equifax, Yahoo, and many others. If your information was in one of those databases, it may now be circulating on illegal markets.
 
 Phishing is another common method — criminals send emails or text messages pretending to be your bank, the IRS, Social Security Administration, or another trusted organization. These messages try to trick you into entering your login credentials, Social Security number, or credit card information on a fake website. The message often creates urgency: "Your account will be closed unless you verify your information now."
 
 Physical theft still occurs too. Criminals steal mail from mailboxes (particularly new credit cards, bank statements, and tax documents), go through trash for discarded documents with personal information, and steal wallets and purses containing Social Security cards, credit cards, and ID.
 
-The encouraging news is that there are specific, practical steps that significantly reduce your risk. Freezing your credit reports, monitoring your accounts regularly, using strong unique passwords, and being skeptical of unsolicited messages are all proven protections. You do not need to be a technology expert to implement these — this guide walks you through each one.`,
+The encouraging news is that there are specific, practical steps that a lot reduce your risk. Freezing your credit reports, monitoring your accounts regularly, using strong unique passwords, and being skeptical of unsolicited messages are all proven protections. You do not need to be a technology expert to implement these — this guide walks you through each one.`,
     steps: [
       {
         title: `Freeze your credit reports at all three bureaus`,
@@ -622,8 +622,8 @@ The encouraging news is that there are specific, practical steps that significan
       },
       {
         title: `Monitor your bank and credit card accounts regularly`,
-        content: `Log in to your bank and credit card accounts at least once a week to review recent transactions. Look for any charges you do not recognize — even small ones. Criminals often test stolen card numbers with tiny purchases of $1 to $5 before making larger ones. Report any unauthorized charge to your bank immediately by calling the number on the back of your card. Most banks will reverse fraudulent charges and issue you a new card.`,
-        tip: `Set up transaction alerts on your bank and credit card accounts. Most banks offer free text or email alerts for every transaction, or for transactions over a certain amount. This way you know immediately if your card is used without your knowledge.`,
+        content: `Log in to your bank and credit card accounts at least once a week to review recent transactions. Look for any charges you do not recognize — even small ones. Criminals often test stolen card numbers with tiny purchases of $1 to $5 before making larger ones. Report any unauthorized charge to your bank right away by calling the number on the back of your card. Most banks will reverse fraudulent charges and issue you a new card.`,
+        tip: `Set up transaction alerts on your bank and credit card accounts. Most banks offer free text or email alerts for every transaction, or for transactions over a certain amount. This way you know right away if your card is used without your knowledge.`,
       },
       {
         title: `Use strong, unique passwords for financial accounts`,
@@ -677,7 +677,7 @@ Many services now also offer dark web monitoring as part of their security packa
       },
       {
         title: `Change passwords for any affected accounts`,
-        content: `If the breach involved a password, go to the website or service named in the breach and change your password immediately. Use a new password you have not used anywhere else — at least 12 characters with a mix of letters, numbers, and symbols. If you used the same password on other websites, change it on those as well. A password manager can help you generate and store new unique passwords.`,
+        content: `If the breach involved a password, go to the website or service named in the breach and change your password right away. Use a new password you have not used anywhere else — at least 12 characters with a mix of letters, numbers, and symbols. If you used the same password on other websites, change it on those as well. A password manager can help you generate and store new unique passwords.`,
         warning: `If the breached service was your email provider, changing your email password is urgent. Your email account is the key to resetting passwords on all your other accounts — if a criminal has access to your email, they can reset your bank password, social media accounts, and more.`,
       },
       {
@@ -713,7 +713,7 @@ You will receive a PIN or a confirmation number when you set up each freeze — 
       {
         title: `Freeze your credit at Equifax`,
         content: `Go to equifax.com/personal/credit-report-services/credit-freeze or call 1-800-685-1111. On the website, click Freeze Your Credit and create an account if you do not have one, or log in. Follow the prompts to request the freeze. You will be asked to verify your identity with personal information and answer security questions. Once complete, Equifax will confirm your freeze and provide a PIN or confirmation number.`,
-        tip: `Write down your Equifax PIN and confirmation number immediately and store them in a secure place at home — a fireproof safe, a locked drawer, or with your other important documents. You will need this PIN to lift the freeze in the future.`,
+        tip: `Write down your Equifax PIN and confirmation number right away and store them in a secure place at home — a fireproof safe, a locked drawer, or with your other important documents. You will need this PIN to lift the freeze in the future.`,
       },
       {
         title: `Freeze your credit at Experian`,
@@ -730,7 +730,7 @@ You will receive a PIN or a confirmation number when you set up each freeze — 
       },
       {
         title: `Know how to temporarily lift a freeze when needed`,
-        content: `If you apply for a new credit card, car loan, mortgage, or apartment, you will need to temporarily lift your freeze. Ask the lender which credit bureau they use (most lenders will tell you). Go to that bureau's website or call their freeze number, log in with your account, and select the option to temporarily lift the freeze. Choose a specific date range (usually a week is sufficient). After your application is processed, the freeze automatically reinstates, or you can manually refreeze.`,
+        content: `If you apply for a new credit card, car loan, mortgage, or apartment, you will need to temporarily lift your freeze. Ask the lender which credit bureau they use (most lenders will tell you). Go to that bureau's website or call their freeze number, log in with your account, and select the option to temporarily lift the freeze. Choose a specific date range (usually a week is enough). After your application is processed, the freeze automatically reinstates, or you can manually refreeze.`,
         tip: `Lifting a freeze at one bureau does not affect the freezes at the other two. You only need to lift the freeze at the specific bureau your lender uses, keeping the others fully protected the entire time.`,
       },
     ],
@@ -751,7 +751,7 @@ These emails have become increasingly sophisticated. They often include the comp
 
 The most important thing to understand is this: legitimate organizations will never send you an unsolicited email asking you to provide your password, full Social Security number, banking login credentials, or credit card number by clicking a link. If an email asks you to do any of these things, it is almost certainly a phishing attempt regardless of how official it looks.
 
-The sense of urgency is another major warning sign. Phishing emails almost always pressure you to act immediately: "Your account will be suspended in 24 hours," or "Immediate action required to avoid losing access to your account," or "Verify your information now to avoid a penalty." This urgency is designed to make you act without thinking. Real organizations give you time to respond to legitimate issues.
+The sense of urgency is another major warning sign. Phishing emails almost always pressure you to act right away: "Your account will be suspended in 24 hours," or "Immediate action required to avoid losing access to your account," or "Verify your information now to avoid a penalty." This urgency is designed to make you act without thinking. Real organizations give you time to respond to legitimate issues.
 
 The volume of phishing attempts has grown dramatically because the technology to send millions of convincing fake emails is now inexpensive and widely available. Nearly everyone with an email address receives phishing attempts regularly. Recognizing them is not about being especially tech-savvy — it is about knowing a handful of consistent red flags.`,
     steps: [
@@ -767,11 +767,11 @@ The volume of phishing attempts has grown dramatically because the technology to
       },
       {
         title: `Be alert to pressure and urgency`,
-        content: `Phishing emails almost always create artificial urgency to prevent you from thinking carefully. Phrases like "Your account will be closed," "Suspicious activity detected — act immediately," "Final warning," and "Claim your refund within 48 hours" are all hallmarks of phishing. Take a breath and ask yourself: if this were a real emergency, why would a company handle it only by email without also calling or sending a letter?`,
+        content: `Phishing emails almost always create artificial urgency to prevent you from thinking carefully. Phrases like "Your account will be closed," "Suspicious activity detected — act right away," "Final warning," and "Claim your refund within 48 hours" are all hallmarks of phishing. Take a breath and ask yourself: if this were a real emergency, why would a company handle it only by email without also calling or sending a letter?`,
       },
       {
         title: `Look at the greeting and overall quality`,
-        content: `Phishing emails frequently use generic greetings like "Dear Customer," "Dear User," or "Dear Account Holder" rather than your actual name. Real companies that email you usually know your name from your account and address you directly. Also look for unusual spelling errors, awkward grammar, or sentences that sound strange — while many phishing emails are now polished, some still contain errors that a professional company would not make.`,
+        content: `Phishing emails often use generic greetings like "Dear Customer," "Dear User," or "Dear Account Holder" rather than your actual name. Real companies that email you usually know your name from your account and address you directly. Also look for unusual spelling errors, awkward grammar, or sentences that sound strange — while many phishing emails are now polished, some still contain errors that a professional company would not make.`,
       },
       {
         title: `What to do when you receive a phishing email`,
@@ -780,7 +780,7 @@ The volume of phishing attempts has grown dramatically because the technology to
       },
       {
         title: `What to do if you already clicked a link or entered information`,
-        content: `If you clicked a link and entered your password, change that password immediately on the real website. If you entered financial information or your Social Security number, call your bank right away and report it. Place a fraud alert with the three credit bureaus (Equifax, Experian, TransUnion). Run a security scan on your computer if you downloaded any attachments. Report the incident to the FTC at reportfraud.ftc.gov.`,
+        content: `If you clicked a link and entered your password, change that password right away on the real website. If you entered financial information or your Social Security number, call your bank right away and report it. Place a fraud alert with the three credit bureaus (Equifax, Experian, TransUnion). Run a security scan on your computer if you downloaded any attachments. Report the incident to the FTC at reportfraud.ftc.gov.`,
         warning: `Act as quickly as possible if you provided sensitive information. The sooner you alert your bank and the credit bureaus, the better your chances of limiting any financial damage.`,
       },
     ],
@@ -795,9 +795,9 @@ The volume of phishing attempts has grown dramatically because the technology to
     thumbnailEmoji: ``,
     publishedAt: `2026-04-20`,
     difficulty: `Beginner`,
-    body: `If you have ever used a computer, you have probably heard that antivirus software is essential. But when it comes to smartphones, the picture is more nuanced — and depends significantly on whether you have an iPhone or an Android phone.
+    body: `If you have ever used a computer, you have probably heard that antivirus software is essential. But when it comes to smartphones, the picture is more nuanced — and depends a lot on whether you have an iPhone or an Android phone.
 
-iPhones have a security model that significantly limits what any app, including security apps, can do on the device. Apple controls exactly which apps are allowed in the App Store and reviews each one for malicious behavior. iPhone apps are isolated from each other in a way that prevents them from scanning other apps or accessing system files. For these reasons, traditional antivirus scanning as you know it from Windows computers is not possible on an iPhone. Security apps on the App Store for iPhone generally cannot scan for malware because iOS does not allow the deep system access required. What iPhone security apps can do is warn you about unsafe Wi-Fi networks, check if your passwords have appeared in data breaches, and provide a VPN. These can be useful features, but they are not "antivirus" in the traditional sense.
+iPhones have a security model that a lot limits what any app, including security apps, can do on the device. Apple controls exactly which apps are allowed in the App Store and reviews each one for malicious behavior. iPhone apps are isolated from each other in a way that prevents them from scanning other apps or accessing system files. For these reasons, traditional antivirus scanning as you know it from Windows computers is not possible on an iPhone. Security apps on the App Store for iPhone generally cannot scan for malware because iOS does not allow the deep system access required. What iPhone security apps can do is warn you about unsafe Wi-Fi networks, check if your passwords have appeared in data breaches, and provide a VPN. These can be useful features, but they are not "antivirus" in the traditional sense.
 
 Android phones have a more open operating system that gives apps more latitude. Google has built-in security called Google Play Protect that scans installed apps and warns you about suspicious ones. It runs automatically in the background on all Android phones with Google services. For most people using Android normally — installing apps only from the Google Play Store and not clicking suspicious links — Google Play Protect provides adequate protection without installing any additional app.
 
@@ -826,7 +826,7 @@ If you do want additional security on your Android phone, Malwarebytes is a well
       },
       {
         title: `Be cautious about apps that claim to offer security features they cannot deliver`,
-        content: `Some apps in both the App Store and Google Play Store make exaggerated claims about virus protection, speed boosting, or "deep cleaning" your phone. These features are often unnecessary or ineffective on mobile devices. Be skeptical of apps that ask for extensive permissions unrelated to their stated purpose, or that pressure you to upgrade to a paid subscription immediately after installation.`,
+        content: `Some apps in both the App Store and Google Play Store make exaggerated claims about virus protection, speed boosting, or "deep cleaning" your phone. These features are often unnecessary or ineffective on mobile devices. Be skeptical of apps that ask for extensive permissions unrelated to their stated purpose, or that pressure you to upgrade to a paid subscription right away after installation.`,
       },
     ],
   },
@@ -840,7 +840,7 @@ If you do want additional security on your Android phone, Malwarebytes is a well
     thumbnailEmoji: ``,
     publishedAt: `2026-04-20`,
     difficulty: `Beginner`,
-    body: `Using the same password on multiple websites is one of the most common and dangerous security mistakes people make. It feels practical — it is easier to remember one password than twenty. But when any one of those websites suffers a data breach and criminals obtain your email and password combination, they immediately try that same combination on dozens of other popular websites: your bank, your email, Amazon, PayPal, and others. This attack is called "credential stuffing" and it is responsible for millions of account takeovers every year.
+    body: `Using the same password on multiple websites is one of the most common and dangerous security mistakes people make. It feels practical — it is easier to remember one password than twenty. But when any one of those websites suffers a data breach and criminals get your email and password combination, they right away try that same combination on dozens of other popular websites: your bank, your email, Amazon, PayPal, and others. This attack is called "credential stuffing" and it is responsible for millions of account takeovers every year.
 
 Data breaches happen constantly. Websites you signed up for years ago — online stores, forums, social media platforms — may have been hacked and your login credentials exposed. The breach might have happened years ago without you ever finding out. Your email and password might already be circulating on criminal markets right now. If you reuse passwords, that single compromised password becomes a key that unlocks multiple accounts.
 
@@ -853,7 +853,7 @@ Password managers are not a new or experimental idea. They have been used by sec
       {
         title: `Choose a password manager`,
         content: `Bitwarden is a highly regarded free and open-source password manager available at bitwarden.com. It works on iPhone, Android, Windows, and Mac, and has a browser extension for computers. 1Password ($3/month) and Dashlane (has a free tier) are popular paid alternatives with additional features. iPhone users can also use Apple's built-in Passwords app (go to Settings, then Passwords) which is free and well-integrated with Safari.`,
-        tip: `If price is a concern when getting started, Bitwarden's free tier includes unlimited password storage and works across all your devices — more than sufficient for most people's needs.`,
+        tip: `If price is a concern when getting started, Bitwarden's free tier includes unlimited password storage and works across all your devices — more than enough for most people's needs.`,
       },
       {
         title: `Create your account and set up a strong master password`,

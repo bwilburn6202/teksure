@@ -85,7 +85,7 @@ At the top of any Finder window, click the "View" menu and choose "Sort By." You
 
 **Using the sidebar**
 
-The left side of Finder is your sidebar — a quick-access list of common locations like Desktop, Downloads, Documents, and any tags you use. You can drag frequently used folders into the sidebar for faster access.
+The left side of Finder is your sidebar — a quick-access list of common locations like Desktop, Downloads, Documents, and any tags you use. You can drag often used folders into the sidebar for faster access.
 
 Quick Tip: Press Command + F inside any Finder window to search all your files by name or keyword — much faster than opening folder after folder.`,
     steps: [
@@ -129,7 +129,7 @@ Windows has built-in support for ZIP files — you do not need to download WinZi
 
 **Why ZIP files are useful**
 
-When you send a ZIP file by email, the recipient gets everything in one attachment. The ZIP format also compresses the content, meaning the file size is often smaller than the sum of the individual files — sometimes significantly smaller for documents and images.
+When you send a ZIP file by email, the recipient gets everything in one attachment. The ZIP format also compresses the content, meaning the file size is often smaller than the sum of the individual files — sometimes a lot smaller for documents and images.
 
 **Creating a ZIP file**
 
@@ -404,7 +404,7 @@ Quick Tip: Stage Manager works best on a monitor that is 27 inches or larger. On
     steps: [
       {
         title: `Turn on Stage Manager`,
-        content: `Click the Control Center icon in the top-right corner of your Mac's menu bar (it looks like two sliders). You will see a "Stage Manager" button. Click it to turn it on. The button will turn blue to show it is active and your open apps will rearrange immediately.`,
+        content: `Click the Control Center icon in the top-right corner of your Mac's menu bar (it looks like two sliders). You will see a "Stage Manager" button. Click it to turn it on. The button will turn blue to show it is active and your open apps will rearrange right away.`,
         tip: `You can also turn it on in System Settings > Desktop & Dock > Stage Manager.`,
       },
       {
@@ -608,7 +608,7 @@ Quick Tip: Before leaving home, write down your home computer's name (found in S
 
 The good news is that iPhone gives you several ways to take back control.
 
-**Undoing a wrong autocorrect immediately**
+**Undoing a wrong autocorrect right away**
 
 When autocorrect changes a word and you want the original back, tap the corrected word. A small bubble will appear showing the word you actually typed — tap it to switch back. If you miss this window, you can also shake your iPhone gently to undo the last change.
 
@@ -694,7 +694,7 @@ Quick Tip: If Gboard keeps changing a specific word every time, long-press the w
       },
       {
         title: `Undo a wrong autocorrect`,
-        content: `When Gboard changes a word and you want the original back, look at the word suggestion bar above the keyboard — your original typed word often appears there. Tap it to switch back. You can also tap the Backspace key once immediately after an autocorrect to undo it and restore what you typed.`,
+        content: `When Gboard changes a word and you want the original back, look at the word suggestion bar above the keyboard — your original typed word often appears there. Tap it to switch back. You can also tap the Backspace key once right away after an autocorrect to undo it and restore what you typed.`,
         tip: `If Gboard keeps changing the same word even after you undo it, add the word to your personal dictionary (step 2) to permanently stop the correction.`,
       },
     ],
@@ -739,7 +739,7 @@ Quick Tip: Closing browser tabs you are not using is one of the quickest battery
       {
         title: `Switch to Battery Saver mode`,
         content: `Click the battery icon in the Windows taskbar (bottom-right corner of the screen). A slider appears. Move it toward the left (toward "Battery saver") to reduce background activity and extend battery life. You can also go to Settings > System > Power & battery and turn "Battery saver" on manually.`,
-        tip: `Battery saver dims the screen slightly and pauses some background syncing. You may notice email arrives a little less frequently, but most tasks work the same.`,
+        tip: `Battery saver dims the screen slightly and pauses some background syncing. You may notice email arrives a little less often, but most tasks work the same.`,
       },
       {
         title: `Find which apps are using the most battery`,
@@ -752,7 +752,7 @@ Quick Tip: Closing browser tabs you are not using is one of the quickest battery
       {
         title: `Close unused apps and browser tabs`,
         content: `Right-click the taskbar at the bottom and click "Task Manager." Look at the "CPU" and "Memory" columns. Any app using high CPU while you are not actively using it is draining your battery. Close it by right-clicking the app in Task Manager and choosing "End task." In your browser, close tabs you are not currently using.`,
-        warning: `Before ending a task in Task Manager, make sure you have saved any open work in that app. Ending a task closes the app immediately without saving.`,
+        warning: `Before ending a task in Task Manager, make sure you have saved any open work in that app. Ending a task closes the app right away without saving.`,
       },
     ],
   },
@@ -795,7 +795,7 @@ Quick Tip: On Samsung phones, the app drawer is accessed by swiping up on the ho
       },
       {
         title: `Find a specific app`,
-        content: `At the top of the app drawer, look for a search bar. Tap it and type the name of the app you are looking for. Results appear immediately as you type. Tap the app icon to open it.`,
+        content: `At the top of the app drawer, look for a search bar. Tap it and type the name of the app you are looking for. Results appear right away as you type. Tap the app icon to open it.`,
       },
       {
         title: `Add an app to your home screen`,
@@ -847,7 +847,7 @@ Quick Tip: Windows 11 automatically turns on Do Not Disturb when you are playing
       },
       {
         title: `Review missed notifications`,
-        content: `While Do Not Disturb is on, notifications are saved rather than shown immediately. To see what came in, click anywhere on the date and time in the bottom-right corner. The Notification Center opens showing all saved notifications. Click any notification to act on it.`,
+        content: `While Do Not Disturb is on, notifications are saved rather than shown right away. To see what came in, click anywhere on the date and time in the bottom-right corner. The Notification Center opens showing all saved notifications. Click any notification to act on it.`,
       },
       {
         title: `Set up automatic Do Not Disturb rules`,

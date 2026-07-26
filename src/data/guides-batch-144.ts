@@ -362,7 +362,7 @@ Your iPhone uses an app called "Messages" for texting. It has a green icon with 
 5. Tap the photo (or photos) you want to send. A blue checkmark will appear on each one you select.
 6. Tap the blue arrow button (send) to deliver the message.
 
-Alternatively, tap the camera icon next to the text box to take a new photo right now and send it immediately.
+Alternatively, tap the camera icon next to the text box to take a new photo right now and send it right away.
 
 **On Android:**
 

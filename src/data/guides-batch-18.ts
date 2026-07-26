@@ -23,8 +23,7 @@ export const guidesBatch18: Guide[] = [
     steps: [
       {
         title: 'Set up a virtual background in Zoom on your computer',
-        content:
-          "Open Zoom. Click your profile picture at the top right → \"Settings\" → click \"Backgrounds & Filters\" in the left menu. You will see a row of background options. Click \"Blur\" to blur your real background, or click one of the preset background images. To use your own photo: click the \"+\" button → \"Add Image\" → choose a photo from your computer. The background applies immediately in the preview. Close settings and start a meeting — your background is active.",
+        content: "Open Zoom. Click your profile picture at the top right → \"Settings\" → click \"Backgrounds & Filters\" in the left menu. You will see a row of background options. Click \"Blur\" to blur your real background, or click one of the preset background images. To use your own photo: click the \"+\" button → \"Add Image\" → choose a photo from your computer. The background applies right away in the preview. Close settings and start a meeting — your background is active.",
         tip: "Quick Tip: If your computer doesn't meet the minimum specs for virtual backgrounds without a green screen, Zoom will warn you. In that case, use background blur instead — it works on older hardware and still hides a messy room.",
       },
       {
@@ -40,8 +39,7 @@ export const guidesBatch18: Guide[] = [
       },
       {
         title: 'Fix problems with your virtual background',
-        content:
-          "If the background is flickering, green-screening improperly, or cutting off parts of your face: sit against a solid, evenly lit wall; ensure good lighting on your face (a window in front of you is ideal); wear clothing that contrasts with your background. If using a green screen cloth, make sure it is smooth with no wrinkles. If the option is grayed out, check that your graphics drivers are up to date or switch to background blur, which has lower hardware requirements.",
+        content: "If the background is flickering, green-screening improperly, or cutting off parts of your face: sit against a solid, evenly lit wall; make sure good lighting on your face (a window in front of you is ideal); wear clothing that contrasts with your background. If using a green screen cloth, make sure it is smooth with no wrinkles. If the option is grayed out, check that your graphics drivers are up to date or switch to background blur, which has lower hardware requirements.",
       },
     ],
   },
@@ -63,7 +61,7 @@ export const guidesBatch18: Guide[] = [
         title: 'Enable Undo Send in Gmail (and set the window longer)',
         content:
           "Gmail delays sending for up to 30 seconds — but you have to configure the length. Go to Gmail in your browser → click the gear icon → \"See all settings\" → under the \"General\" tab, find \"Undo Send\" and set the \"Send cancellation period\" to 30 seconds. Click \"Save Changes\" at the bottom. Now, every time you send an email, a \"Message sent\" banner appears at the bottom left of your screen with an \"Undo\" button. Click \"Undo\" within 30 seconds to retrieve the email.",
-        tip: "Quick Tip: Set the undo period to 30 seconds immediately — this is the maximum and gives you the most recovery time. The default is often 5 or 10 seconds, which is not enough time to catch mistakes.",
+        tip: "Quick Tip: Set the undo period to 30 seconds right away — this is the maximum and gives you the most recovery time. The default is often 5 or 10 seconds, which is not enough time to catch mistakes.",
       },
       {
         title: 'Undo Send in Gmail on your phone',
@@ -321,7 +319,7 @@ export const guidesBatch18: Guide[] = [
         title: 'Subscribe to Apple One',
         content:
           "On iPhone or iPad: go to Settings → your name → Subscriptions → \"Get Apple One.\" Alternatively, go to the App Store → tap your profile icon → \"Apple One.\" Choose the Individual, Family, or Premier plan. Your existing Apple subscriptions are automatically bundled — you will not pay twice for services you already have; those subscriptions end at their current billing date and roll into Apple One.",
-        tip: "Quick Tip: If you subscribe to Apple One Family, all family members in your Apple Family Sharing group get access immediately — they do not need to do anything extra to start using the services.",
+        tip: "Quick Tip: If you subscribe to Apple One Family, all family members in your Apple Family Sharing group get access right away — they do not need to do anything extra to start using the services.",
       },
       {
         title: 'Cancel services you are paying for separately',
@@ -380,12 +378,11 @@ export const guidesBatch18: Guide[] = [
     thumbnailEmoji: '',
     publishedAt: '2026-04-19',
     difficulty: 'Beginner',
-    body: `Taking a screenshot is only the first step. What makes screenshots truly useful is the ability to annotate them — circle what you want someone to look at, add a text label, draw an arrow pointing at something, or crop out personal information before sharing.\n\nBoth iPhone and Android have built-in annotation tools that open immediately after taking a screenshot. Once you learn these, you can take a screenshot of a confusing error message, circle the problem area, and send it to family or tech support in seconds.`,
+    body: `Taking a screenshot is only the first step. What makes screenshots truly useful is the ability to annotate them — circle what you want someone to look at, add a text label, draw an arrow pointing at something, or crop out personal information before sharing.\n\nBoth iPhone and Android have built-in annotation tools that open right away after taking a screenshot. Once you learn these, you can take a screenshot of a confusing error message, circle the problem area, and send it to family or tech support in seconds.`,
     steps: [
       {
         title: 'Annotate a screenshot on iPhone',
-        content:
-          "After taking a screenshot (press the side button + volume up simultaneously), a small thumbnail preview appears in the bottom left corner. Tap it immediately before it disappears (or open it from Photos later). The Markup editor opens. At the bottom: a pen for drawing, a highlighter, a pencil, an eraser, and a lasso for selecting. Tap the pen tool and draw directly on the screenshot. Tap the + button for additional tools: text, a signature, magnifier circle, or shapes (arrows, circles, rectangles).",
+        content: "After taking a screenshot (press the side button + volume up simultaneously), a small thumbnail preview appears in the bottom left corner. Tap it right away before it disappears (or open it from Photos later). The Markup editor opens. At the bottom: a pen for drawing, a highlighter, a pencil, an eraser, and a lasso for selecting. Tap the pen tool and draw directly on the screenshot. Tap the + button for additional tools: text, a signature, magnifier circle, or shapes (arrows, circles, rectangles).",
         tip: "Quick Tip: The arrow shape tool is one of the most useful — draw an arrow pointing to what you want to highlight. Tap the shapes icon → arrow icon → drag to place and resize.",
       },
       {
@@ -499,8 +496,7 @@ export const guidesBatch18: Guide[] = [
       },
       {
         title: 'Run a manual backup now',
-        content:
-          "To back up immediately rather than waiting for the scheduled automatic backup: go to Settings → Google → Backup → tap \"Back up now.\" The backup runs in the background and usually completes within a few minutes on a fast Wi-Fi connection. A timestamp at the bottom of the Backup screen shows when the last backup completed. Run a manual backup before factory resetting, upgrading, or handing off your phone.",
+        content: "To back up right away rather than waiting for the scheduled automatic backup: go to Settings → Google → Backup → tap \"Back up now.\" The backup runs in the background and usually completes within a few minutes on a fast Wi-Fi connection. A timestamp at the bottom of the Backup screen shows when the last backup completed. Run a manual backup before factory resetting, upgrading, or handing off your phone.",
       },
       {
         title: 'Restore a backup on a new or reset Android phone',
@@ -603,7 +599,7 @@ export const guidesBatch18: Guide[] = [
     thumbnailEmoji: '',
     publishedAt: '2026-04-19',
     difficulty: 'Beginner',
-    body: `Your Android home screen is the first thing you see when you unlock your phone. An organized home screen with your most-used apps in easy reach can make your phone significantly easier to use. Instead of hunting through pages of apps, you can access everything you need with one or two taps.\n\nAndroid home screens are highly customizable — you can rearrange apps, create folders, add widgets, change icon sizes, and even install alternative launchers for completely different layouts. This guide covers the basics for getting your home screen organized.`,
+    body: `Your Android home screen is the first thing you see when you unlock your phone. An organized home screen with your most-used apps in easy reach can make your phone a lot easier to use. Instead of hunting through pages of apps, you can access everything you need with one or two taps.\n\nAndroid home screens are highly customizable — you can rearrange apps, create folders, add widgets, change icon sizes, and even install alternative launchers for completely different layouts. This guide covers the basics for getting your home screen organized.`,
     steps: [
       {
         title: 'Move and rearrange app icons',
@@ -656,8 +652,7 @@ export const guidesBatch18: Guide[] = [
       },
       {
         title: 'Add apps on Samsung Smart TV',
-        content:
-          "Press the Smart Hub button on your Samsung remote (it looks like a house or a grid of squares). Navigate to the Apps section → click the Search icon at the top. Type the app name. Click the app in results → \"Install.\" Installed apps appear in your App Bar at the bottom of the screen. If you don't see a new app on the home bar immediately, go to Apps → \"Recently Added\" to find it.",
+        content: "Press the Smart Hub button on your Samsung remote (it looks like a house or a grid of squares). Navigate to the Apps section → click the Search icon at the top. Type the app name. Click the app in results → \"Install.\" Installed apps appear in your App Bar at the bottom of the screen. If you don't see a new app on the home bar right away, go to Apps → \"Recently Added\" to find it.",
         tip: "Quick Tip: Samsung Smart TVs are regularly updated with new apps. If an app you want isn't available in the Samsung App Store, it may only be available on Roku or Fire TV (which are streaming sticks you can plug into your TV as an alternative).",
       },
       {
@@ -689,8 +684,7 @@ export const guidesBatch18: Guide[] = [
       },
       {
         title: 'Start and stop a screen recording',
-        content:
-          "Open Control Center (swipe down from the top right). Tap the Screen Recording button — it looks like a filled circle inside a circle. A 3-second countdown appears, then recording begins. The status bar at the top of your screen turns red to indicate recording is active. Use your phone normally — everything you do is being recorded. To stop recording: tap the red indicator at the top of the screen → \"Stop.\" The recording is saved to your Photos app.",
+        content: "Open Control Center (swipe down from the top right). Tap the Screen Recording button — it looks like a filled circle inside a circle. A 3-second countdown appears, then recording begins. The status bar at the top of your screen turns red to show recording is active. Use your phone normally — everything you do is being recorded. To stop recording: tap the red indicator at the top of the screen → \"Stop.\" The recording is saved to your Photos app.",
       },
       {
         title: 'Record with audio (microphone)',

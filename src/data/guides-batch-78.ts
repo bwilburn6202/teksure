@@ -17,7 +17,7 @@ A powerline adapter kit comes with two units. One plugs into an electrical outle
 
 Powerline adapters work best when both units are on the same electrical circuit. In most homes this is not a problem, but if you have a very large house with separate circuit panels, you may see reduced performance. Avoid plugging them into power strips or surge protectors — they work best when plugged directly into a wall outlet.
 
-Modern powerline kits from brands like TP-Link (their AV1000 and AV2000 lines are popular) and NETGEAR typically cost between $35 and $80 at stores like Amazon, Walmart, or Best Buy. They are significantly faster and more reliable than WiFi range extenders, and far less expensive than having an electrician run new ethernet cables through your walls.
+Modern powerline kits from brands like TP-Link (their AV1000 and AV2000 lines are popular) and NETGEAR typically cost between $35 and $80 at stores like Amazon, Walmart, or Best Buy. They are a lot faster and more reliable than WiFi range extenders, and far less expensive than having an electrician run new ethernet cables through your walls.
 
 This is a great solution for seniors or anyone who wants a steady, wired connection for video calls, streaming TV, or working from home — without the headache of a complicated network setup.`,
     steps: [
@@ -117,11 +117,11 @@ A USB hub is one of the most practical accessories you can add to a laptop, and 
       },
       {
         title: `Choose a hub that fits your needs`,
-        content: `A basic 4-port USB 3.0 hub from Anker costs about $20 and works well for everyday use. If you frequently transfer photos from a camera, look for a hub with an SD card slot. If you want to connect a TV or monitor, look for one with an HDMI port. Read the product description carefully to confirm what ports it includes.`,
+        content: `A basic 4-port USB 3.0 hub from Anker costs about $20 and works well for everyday use. If you often transfer photos from a camera, look for a hub with an SD card slot. If you want to connect a TV or monitor, look for one with an HDMI port. Read the product description carefully to confirm what ports it includes.`,
       },
       {
         title: `Plug the hub into your laptop`,
-        content: `Connect the hub's cable into an open port on your laptop. No installation or software is required — within a few seconds, your computer will recognize the hub and all its ports will become available. A small light on the hub usually indicates it is powered and ready.`,
+        content: `Connect the hub's cable into an open port on your laptop. No installation or software is required — within a few seconds, your computer will recognize the hub and all its ports will become available. A small light on the hub usually shows it is powered and ready.`,
       },
       {
         title: `Plug your devices into the hub`,
@@ -229,7 +229,7 @@ These gestures work on all MacBook models, and most also work on Apple's externa
     difficulty: `Beginner`,
     body: `A trackball mouse is a pointing device where a ball is mounted on top or on the side of the mouse, and you move the cursor by rolling that ball with your thumb or fingers rather than moving the entire mouse across a desk. The body of the mouse stays completely still while you work, which means your wrist and arm do not need to make large sweeping movements.
 
-This design makes trackball mice an excellent choice for people who experience wrist pain, have arthritis, or have limited mobility in their hands or arms. Because you are only moving your thumb or fingertips — not your whole arm — the strain on joints is significantly reduced. Physical therapists and occupational therapists frequently recommend trackballs to people who experience pain from regular mouse use.
+This design makes trackball mice an excellent choice for people who experience wrist pain, have arthritis, or have limited mobility in their hands or arms. Because you are only moving your thumb or fingertips — not your whole arm — the strain on joints is a lot reduced. Physical therapists and occupational therapists often recommend trackballs to people who experience pain from regular mouse use.
 
 Trackballs also require much less desk space than a regular mouse. Since the device itself does not move, you do not need a large mousepad or clear area — you can set it down on a small corner of your desk and it will work perfectly.
 
@@ -276,13 +276,13 @@ Magnifier works in three different modes. Full screen mode enlarges the entire s
 
 For most people who want to make text easier to read, Full screen mode works best. You can set the zoom level anywhere from 100% (no zoom) all the way to 1600%. A zoom level of 150% to 200% makes most text noticeably larger without feeling overwhelming.
 
-Magnifier also includes a text-to-speech feature called "Read from here" — you can have it read aloud whatever is under your cursor, which is helpful for anyone who wants both visual and audio assistance.
+Magnifier also includes a text-to-speech feature called "Read from here" — you can have it read aloud whatever is under your cursor, which is helpful for anyone who wants both visual and audio help.
 
 The quickest way to turn Magnifier on or off is the keyboard shortcut Windows key + Plus sign (+) to turn it on, and Windows key + Escape to turn it off. You can also increase the zoom with Windows key + Plus and decrease it with Windows key + Minus. These shortcuts work instantly from anywhere on your computer without needing to open any menus.`,
     steps: [
       {
         title: `Turn on Magnifier with a keyboard shortcut`,
-        content: `Press and hold the Windows key (the key with the Windows logo flag on it, usually in the bottom-left area of your keyboard), then press the Plus sign (+) key. Magnifier will turn on immediately and zoom in on your screen. To turn it off at any time, press the Windows key + Escape.`,
+        content: `Press and hold the Windows key (the key with the Windows logo flag on it, usually in the bottom-left area of your keyboard), then press the Plus sign (+) key. Magnifier will turn on right away and zoom in on your screen. To turn it off at any time, press the Windows key + Escape.`,
         tip: `Quick Tip: You can also turn on Magnifier by going to the Start menu → Settings → Accessibility → Magnifier and switching it on there.`,
       },
       {
@@ -366,7 +366,7 @@ Note: The exact location of TalkBack settings may vary slightly depending on you
     steps: [
       {
         title: `Turn on TalkBack`,
-        content: `Open the Settings app on your Android phone (it looks like a gear icon). Scroll down and tap "Accessibility," then tap "TalkBack." Tap the toggle switch at the top to turn it on. A dialog will appear asking you to confirm — tap "Allow." TalkBack will start speaking immediately.`,
+        content: `Open the Settings app on your Android phone (it looks like a gear icon). Scroll down and tap "Accessibility," then tap "TalkBack." Tap the toggle switch at the top to turn it on. A dialog will appear asking you to confirm — tap "Allow." TalkBack will start speaking right away.`,
         tip: `Quick Tip: On many Android phones, you can turn TalkBack on or off quickly by pressing and holding both the Volume Up and Volume Down buttons at the same time for three seconds.`,
       },
       {
@@ -412,7 +412,7 @@ VoiceOver works on iPhones running iOS 17 or later, which covers almost every iP
     steps: [
       {
         title: `Turn on VoiceOver`,
-        content: `Open the Settings app (the gray gear icon). Tap "Accessibility," then tap "VoiceOver." Tap the toggle at the top to turn it on. A confirmation prompt appears — tap "Enable." VoiceOver will immediately begin speaking. From this point on, tap once to hear an item read aloud, then double-tap anywhere to activate it.`,
+        content: `Open the Settings app (the gray gear icon). Tap "Accessibility," then tap "VoiceOver." Tap the toggle at the top to turn it on. A confirmation prompt appears — tap "Enable." VoiceOver will right away begin speaking. From this point on, tap once to hear an item read aloud, then double-tap anywhere to activate it.`,
         warning: `Once VoiceOver is on, remember that all taps now select rather than activate. To press a button, tap it once to hear it announced, then double-tap anywhere on the screen to confirm. This is different from normal iPhone use and takes a short adjustment period.`,
       },
       {
@@ -457,7 +457,7 @@ To qualify and get a free captioned phone, contact your state's telephone equipm
       {
         title: `Apply for a free captioned phone through your state program`,
         content: `Many states provide captioned phones for free or at very low cost to residents with hearing loss. To find your state's program, visit the Hamilton CapTel website at hamiltonCapTel.com and click "Get a Phone." Alternatively, contact your state's public utilities commission or relay service. You fill out a short form to confirm your need and a phone can often be shipped directly to your home.`,
-        tip: `Quick Tip: AARP and your local Center for Independent Living can also help you navigate the process of getting a captioned phone through state assistance programs at no cost.`,
+        tip: `Quick Tip: AARP and your local Center for Independent Living can also help you navigate the process of getting a captioned phone through state help programs at no cost.`,
       },
       {
         title: `Set up the captioned desk phone`,
@@ -469,7 +469,7 @@ To qualify and get a free captioned phone, contact your state's telephone equipm
       },
       {
         title: `Make a test call to get comfortable`,
-        content: `Call a friend or family member and let them know you are testing your new captioned phone. Read the captions as the conversation goes on to get a feel for the timing. Captions typically appear within two to three seconds of the speaker finishing a sentence. The accuracy is very high for clear speech, though accents or background noise may occasionally cause minor errors.`,
+        content: `Call a friend or family member and let them know you are testing your new captioned phone. Read the captions as the conversation goes on to get a feel for the timing. Captions typically appear within two to three seconds of the speaker finishing a sentence. The accuracy is very high for clear speech, though accents or background noise may sometimes cause minor errors.`,
         warning: `Captioned phone service requires an internet connection for the captions to work. If your internet goes out, you can still make and receive calls, but the captions will not appear until the connection is restored.`,
       },
     ],
@@ -497,7 +497,7 @@ Note that High Contrast mode changes the appearance of Windows itself — the St
       {
         title: `Open High Contrast settings`,
         content: `Click the Start menu and open Settings (the gear icon). Click "Accessibility" in the left sidebar, then scroll down and click "Contrast themes." You will see four preset themes with names like "Aquatic," "Desert," "Dusk," and "Night sky," as well as the classic "High contrast" options.`,
-        tip: `Quick Tip: The quickest way to preview High Contrast is to press Left Alt + Left Shift + Print Screen on your keyboard. A dialog box will appear asking if you want to turn it on — click Yes to try it immediately.`,
+        tip: `Quick Tip: The quickest way to preview High Contrast is to press Left Alt + Left Shift + Print Screen on your keyboard. A dialog box will appear asking if you want to turn it on — click Yes to try it right away.`,
       },
       {
         title: `Choose a contrast theme`,
@@ -509,7 +509,7 @@ Note that High Contrast mode changes the appearance of Windows itself — the St
       },
       {
         title: `Turn High Contrast off when needed`,
-        content: `Press Left Alt + Left Shift + Print Screen again to toggle High Contrast off, or go back to Settings → Accessibility → Contrast themes and choose "None" from the dropdown. Your screen will return to its normal color scheme immediately.`,
+        content: `Press Left Alt + Left Shift + Print Screen again to toggle High Contrast off, or go back to Settings → Accessibility → Contrast themes and choose "None" from the dropdown. Your screen will return to its normal color scheme right away.`,
       },
     ],
   },
@@ -616,7 +616,7 @@ Using a blue light filter is one of the easiest, lowest-effort things you can do
       {
         title: `Turn on blue light filter on iPhone (Night Shift)`,
         content: `Go to Settings → Display & Brightness → Night Shift. Tap the toggle next to "Scheduled" and choose "Sunset to Sunrise" to have it turn on automatically each evening. You can also drag the "Color Temperature" slider toward "More Warm" for a stronger effect. Alternatively, open Control Center by swiping down from the top-right corner and long-press the Brightness slider to access Night Shift quickly.`,
-        tip: `Quick Tip: On iPhone, you can also ask Siri — say "Turn on Night Shift" and it will activate immediately.`,
+        tip: `Quick Tip: On iPhone, you can also ask Siri — say "Turn on Night Shift" and it will activate right away.`,
       },
       {
         title: `Turn on blue light filter on Android (Night Light)`,
@@ -703,7 +703,7 @@ Reader View works on most article-style webpages. It does not work on homepages,
       },
       {
         title: `Activate Reader View`,
-        content: `Click the reader icon in the address bar, or press F9 on your keyboard. The page will immediately transform — ads, sidebars, pop-ups, and decorative images disappear, leaving only the article text and relevant images in a clean white or sepia-toned layout. The address bar will show the same URL with "about:reader?url=" at the beginning, indicating Reader View is active.`,
+        content: `Click the reader icon in the address bar, or press F9 on your keyboard. The page will right away transform — ads, sidebars, pop-ups, and decorative images disappear, leaving only the article text and relevant images in a clean white or sepia-toned layout. The address bar will show the same URL with "about:reader?url=" at the beginning, indicating Reader View is active.`,
       },
       {
         title: `Customize the text size and appearance`,
@@ -811,7 +811,7 @@ uBlock Origin is open-source software, meaning its code is publicly available fo
 
 The extension works by comparing every piece of content a website tries to load against several large "block lists" — databases of known advertising servers, tracking companies, and sources of malicious content. These lists include EasyList (the most common ad block list), EasyPrivacy (blocking trackers), and lists of known malware sites. Updates to these lists happen automatically in the background.
 
-By default, uBlock Origin comes ready to use the moment you install it. You do not need to configure anything. It will immediately start blocking ads and trackers on websites you visit. For most users, the default settings provide an excellent balance of ad blocking and website compatibility.
+By default, uBlock Origin comes ready to use the moment you install it. You do not need to configure anything. It will right away start blocking ads and trackers on websites you visit. For most users, the default settings provide an excellent balance of ad blocking and website compatibility.
 
 For those who want more control, uBlock Origin has an advanced dashboard where you can add additional filter lists, create custom rules for specific websites, or see detailed statistics about what has been blocked. However, these advanced features are entirely optional — the default installation works well without any adjustments.
 
@@ -837,7 +837,7 @@ uBlock Origin is available for Chrome, Firefox, Microsoft Edge, and Opera.`,
       },
       {
         title: `Keep uBlock Origin updated`,
-        content: `Chrome and Firefox automatically update extensions in the background, so uBlock Origin stays current without any action on your part. However, you can manually update the filter lists (the databases of what to block) by opening the dashboard, clicking "Filter lists," and then clicking "Update now" at the top of the page. This ensures you have the most recent ad and malware blocking data.`,
+        content: `Chrome and Firefox automatically update extensions in the background, so uBlock Origin stays current without any action on your part. However, you can manually update the filter lists (the databases of what to block) by opening the dashboard, clicking "Filter lists," and then clicking "Update now" at the top of the page. This makes sure you have the most recent ad and malware blocking data.`,
       },
     ],
   },

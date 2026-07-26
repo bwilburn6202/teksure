@@ -108,7 +108,7 @@ Honey is available for Chrome, Firefox, Safari, Edge, and Opera on desktop compu
 
 The name sounds unusual but it's a well-known, reputable tool used by millions of shoppers. It's been tracking Amazon prices since 2008 and is completely free.
 
-Here's why this matters: Amazon frequently raises the price of a product before a major sale (like Prime Day or Black Friday) and then "discounts" it, making you think you're getting a deal when the price is actually the same or higher than it was before the "sale." CamelCamelCamel's price history graph reveals this pattern instantly.
+Here's why this matters: Amazon often raises the price of a product before a major sale (like Prime Day or Black Friday) and then "discounts" it, making you think you're getting a deal when the price is actually the same or higher than it was before the "sale." CamelCamelCamel's price history graph reveals this pattern instantly.
 
 When you look up a product, you see a chart showing the price over the past months or years. You can see the all-time low price, the average price, and recent price movements. Armed with this information, you can decide: is this currently near its low and worth buying now? Or has it been lower recently and might go lower again?
 
@@ -123,7 +123,7 @@ CamelCamelCamel also offers price drop alerts: tell it the price you want to pay
       },
       {
         title: 'Read the Price History Chart',
-        content: `The chart shows price over time. Look for: the current price (compared to the line on the chart), the lowest price ever (shown below the chart), and the average price. If the current price is near or below the historical average, it's a reasonable time to buy. If it's significantly above the historical average, wait.`,
+        content: `The chart shows price over time. Look for: the current price (compared to the line on the chart), the lowest price ever (shown below the chart), and the average price. If the current price is near or below the historical average, it's a reasonable time to buy. If it's a lot above the historical average, wait.`,
       },
       {
         title: 'Install The Camelizer Browser Extension',
@@ -150,11 +150,11 @@ CamelCamelCamel also offers price drop alerts: tell it the price you want to pay
     thumbnailEmoji: '',
     publishedAt: '2026-04-19',
     difficulty: 'Beginner',
-    body: `Gas prices vary significantly between stations in the same area — sometimes by $0.30-0.50 per gallon or more. GasBuddy is a free app that crowdsources gas prices from users and displays them on a map, so you can see which station has the cheapest fuel without driving around to check.
+    body: `Gas prices vary a lot between stations in the same area — sometimes by $0.30-0.50 per gallon or more. GasBuddy is a free app that crowdsources gas prices from users and displays them on a map, so you can see which station has the cheapest fuel without driving around to check.
 
 When you know gas prices before you go, you can plan your fill-up at the cheaper station. The app uses a combination of user-reported prices and data partnerships to keep prices current — many prices are updated within the past hour. Users who report prices earn small rewards (GasBuddy Points) which can be redeemed for fuel discounts.
 
-GasBuddy has been around since 2000 and is free on iPhone and Android. Over 150,000 gas stations across the US and Canada are listed. With 90 million users, prices are frequently reported and reasonably accurate.
+GasBuddy has been around since 2000 and is free on iPhone and Android. Over 150,000 gas stations across the US and Canada are listed. With 90 million users, prices are often reported and reasonably accurate.
 
 Beyond showing prices, GasBuddy also offers a GasBuddy Pay card — a free card that gives you $0.25/gallon off at any gas station when you link it to your bank account. This is separate from seeing prices and requires a separate sign-up. It's legitimate and uses ACH bank transfers like other debit cards.
 
@@ -164,7 +164,7 @@ Gas prices fluctuate with oil markets, local taxes, and station competition. Kee
     steps: [
       {
         title: 'Download GasBuddy',
-        content: `Search for "GasBuddy" in the App Store (iPhone) or Google Play (Android). Download the free app. Open it — GasBuddy immediately asks for your location to show nearby stations. Allow location access. You'll see a list of nearby stations with their current regular gas prices.`,
+        content: `Search for "GasBuddy" in the App Store (iPhone) or Google Play (Android). Download the free app. Open it — GasBuddy right away asks for your location to show nearby stations. Allow location access. You'll see a list of nearby stations with their current regular gas prices.`,
         tip: 'The app works without creating an account, but creating one lets you save your home area, track savings, and earn points for reporting prices.',
       },
       {
@@ -206,7 +206,7 @@ The key to smooth event entry: download the app before you leave home, locate yo
 
 If you prefer to have a physical backup: some events allow you to print a PDF version of your ticket. Look for a "Print tickets" option in the app or on the website. Note that many venues have eliminated print-at-home options entirely — always check the venue's specific policy when you purchase.
 
-For people who struggle with apps or low vision: inform the venue's accessibility services. Many venues have accommodations for attendees who need assistance accessing mobile tickets.`,
+For people who struggle with apps or low vision: inform the venue's accessibility services. Many venues have accommodations for attendees who need help accessing mobile tickets.`,
     steps: [
       {
         title: 'Download the Ticketmaster App',
@@ -302,7 +302,7 @@ Common uses for custom QR codes:
 
 The simplest QR code generators don't require creating an account — you enter the content (a URL, text, or contact info), click Generate, and download the image. That image can be printed, added to a Word document or flyer, or shared digitally.
 
-"Dynamic" QR codes (offered by some paid services) can be changed after printing — the code stays the same but the destination changes. Free "static" QR codes are permanent — the destination is baked into the code and can't be changed later. For most personal and small business uses, static codes are sufficient.`,
+"Dynamic" QR codes (offered by some paid services) can be changed after printing — the code stays the same but the destination changes. Free "static" QR codes are permanent — the destination is baked into the code and can't be changed later. For most personal and small business uses, static codes are enough.`,
     steps: [
       {
         title: 'Choose a Free QR Code Generator',
@@ -405,12 +405,12 @@ One thing to know: screen recording does capture notifications that appear durin
       },
       {
         title: 'Start Recording',
-        content: 'Tap "Start recording." A 3-second countdown begins. After the countdown, a red recording indicator appears (usually a timer in the status bar or a floating toolbar). Everything happening on your screen is now being recorded. Navigate through apps, demonstrate features, or do whatever you want to capture.',
+        content: 'Tap "Start recording." A 3-second countdown begins. After the countdown, a red recording indicator appears (usually a timer in the status bar or a floating toolbar). Everything happening on your screen is now being recorded. Navigate through apps, show features, or do whatever you want to capture.',
         tip: 'On Samsung phones, a floating toolbar appears during recording with options to pause, draw on the screen, or add your face from the front camera as a picture-in-picture overlay.',
       },
       {
         title: 'Stop the Recording',
-        content: 'To stop: tap the red timer/indicator in the status bar, or pull down the notification shade and tap "Stop recording." Some phones show a "Tap to stop recording" notification. The recording immediately saves to your Gallery or Photos app in a "Screen recordings" folder.',
+        content: 'To stop: tap the red timer/indicator in the status bar, or pull down the notification shade and tap "Stop recording." Some phones show a "Tap to stop recording" notification. The recording right away saves to your Gallery or Photos app in a "Screen recordings" folder.',
       },
       {
         title: 'Share the Recording',
@@ -439,7 +439,7 @@ There are two main ways to start a screen recording: the keyboard shortcut or Qu
 
 The Screenshot toolbar (Shift + Command + 5) gives you all screenshot and screen recording options in one place. This is the recommended method because it shows you all options visually before you start.
 
-The resulting video file appears on your Desktop by default. You can change where files are saved in the toolbar settings. A small thumbnail preview appears in the bottom-right corner after recording — click it to immediately trim or share the video, or wait and it disappears, saving to your chosen location.`,
+The resulting video file appears on your Desktop by default. You can change where files are saved in the toolbar settings. A small thumbnail preview appears in the bottom-right corner after recording — click it to right away trim or share the video, or wait and it disappears, saving to your chosen location.`,
     steps: [
       {
         title: 'Open the Screenshot Toolbar',
@@ -456,7 +456,7 @@ The resulting video file appears on your Desktop by default. You can change wher
       },
       {
         title: 'Start and Stop Recording',
-        content: `Click the "Record" button in the toolbar. Recording begins immediately (no countdown by default). A small recording indicator appears in the menu bar (top of screen). When you're done, click that menu bar icon to stop. Alternatively, press Command + Control + Esc to stop recording.`,
+        content: `Click the "Record" button in the toolbar. Recording begins right away (no countdown by default). A small recording indicator appears in the menu bar (top of screen). When you're done, click that menu bar icon to stop. Alternatively, press Command + Control + Esc to stop recording.`,
         tip: 'You can also stop recording by pressing Command + Shift + 5 again and clicking Stop, or by clicking the Stop button (square icon) that appears in the menu bar while recording.',
       },
       {
@@ -535,7 +535,7 @@ WhatsApp also has voice messages that work between any phone type (not just iPho
       },
       {
         title: 'Record a Voice Message',
-        content: `Tap the audio waveform icon (or microphone icon) to the right of the text input field. Press and hold it. You'll see a waveform visualization. Speak your message while holding. When you're done: slide up to listen before sending, or release to send immediately.`,
+        content: `Tap the audio waveform icon (or microphone icon) to the right of the text input field. Press and hold it. You'll see a waveform visualization. Speak your message while holding. When you're done: slide up to listen before sending, or release to send right away.`,
         tip: `If you don't see the audio icon, it may be hidden behind the text field when there's typed text. Clear any typed text and the icon should appear.`,
       },
       {
@@ -661,7 +661,7 @@ This level of home automation used to require expensive professional systems. Wi
     difficulty: 'Beginner',
     body: `Walmart+ is Walmart's paid membership program that competes directly with Amazon Prime. For $12.95/month or $98/year, members get free delivery on online orders, fuel discounts at Walmart and Murphy USA gas stations, access to Paramount+ streaming (included since 2023), free shipping with no minimum, mobile scan & go (scan and pay as you shop without waiting in a checkout line), prescription discounts, and early access to deals and product launches.
 
-Whether it's worth it depends on how you shop. If you order from Walmart.com frequently and spend more than $35 per order (the threshold for free grocery delivery), the shipping savings alone can pay for the membership within a few orders. The fuel discount ($0.10-$0.15 per gallon at many locations) adds up meaningfully for regular drivers.
+Whether it's worth it depends on how you shop. If you order from Walmart.com often and spend more than $35 per order (the threshold for free grocery delivery), the shipping savings alone can pay for the membership within a few orders. The fuel discount ($0.10-$0.15 per gallon at many locations) adds up meaningfully for regular drivers.
 
 Walmart offers a free 30-day trial, making it risk-free to test for a month.
 
@@ -673,7 +673,7 @@ The Walmart app is required for mobile Scan & Go (which lets you scan items as y
     steps: [
       {
         title: 'Start a Free 30-Day Trial',
-        content: `Go to walmart.com/plus or open the Walmart app → tap "Walmart+" in the menu. Tap "Start free 30-day trial." Create a Walmart.com account if you don't have one. Enter a payment method (required but not charged until the trial ends). Membership activates immediately.`,
+        content: `Go to walmart.com/plus or open the Walmart app → tap "Walmart+" in the menu. Tap "Start free 30-day trial." Create a Walmart.com account if you don't have one. Enter a payment method (required but not charged until the trial ends). Membership activates right away.`,
         tip: `Set a calendar reminder a day or two before the trial ends to decide whether to keep it. Cancel anytime in Account Settings if you don't want to continue.`,
       },
       {
@@ -773,7 +773,7 @@ A few benefits have their own apps: Prime Video has its own app (Prime Video), P
       },
       {
         title: 'Try Circle to Search',
-        content: `Press and hold the home button (or the bottom of the screen if using gesture navigation) while viewing any content on screen. The screen dims and a search bar appears. Draw a circle around, or highlight, any object, text, or image. Google immediately searches for it. Works on anything visible: a plant to identify, a logo, a word you don't recognize.`,
+        content: `Press and hold the home button (or the bottom of the screen if using gesture navigation) while viewing any content on screen. The screen dims and a search bar appears. Draw a circle around, or highlight, any object, text, or image. Google right away searches for it. Works on anything visible: a plant to identify, a logo, a word you don't recognize.`,
       },
       {
         title: 'Use Multi Window (Split Screen)',
@@ -809,7 +809,7 @@ Auto-hide is one of the most useful settings: when enabled, the Dock disappears 
 
 Magnification makes icons enlarge as you hover over them — a nice visual touch that also helps distinguish closely-spaced icons.
 
-Keeping the Dock uncluttered (10-15 icons) makes it more useful than trying to put every app there. If you need to open a less-frequently-used app, use Spotlight search (Command + Space) instead — it's faster than scrolling through a crowded Dock.`,
+Keeping the Dock uncluttered (10-15 icons) makes it more useful than trying to put every app there. If you need to open a less-often-used app, use Spotlight search (Command + Space) instead — it's faster than scrolling through a crowded Dock.`,
     steps: [
       {
         title: 'Add an App to the Dock',

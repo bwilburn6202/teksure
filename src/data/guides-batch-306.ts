@@ -213,7 +213,7 @@ export const guidesBatch306: Guide[] = [
       },
       {
         title: "Pursue a service dog through an accredited program",
-        content: "Service dogs trained by accredited programs are matched to the handler over 18 to 36 months and typically cost the handler nothing or a small program fee. Accredited programs include Canine Companions at canine.org, Guide Dogs for the Blind at guidedogs.com, Paws With A Cause at pawswithacause.org, and many regional Assistance Dogs International member programs at assistancedogsinternational.org. The waitlist is often 12 to 24 months. Avoid programs that promise a service dog in a few weeks for cash.",
+        content: "Service dogs trained by accredited programs are matched to the handler over 18 to 36 months and typically cost the handler nothing or a small program fee. Accredited programs include Canine Companions at canine.org, Guide Dogs for the Blind at guidedogs.com, Paws With A Cause at pawswithacause.org, and many regional Help Dogs International member programs at assistancedogsinternational.org. The waitlist is often 12 to 24 months. Avoid programs that promise a service dog in a few weeks for cash.",
         warning: "Important: A self-trained service dog is legal under the ADA but requires real, documented task training. Renting a vest from an online registry does not make a pet a service dog and creates legal risk if a business challenges the access claim.",
       },
       {

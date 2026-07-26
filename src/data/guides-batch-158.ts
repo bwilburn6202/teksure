@@ -453,7 +453,7 @@ This is one of the most useful features. The Claims section shows every medical 
 - The amount Medicare paid
 - What you may owe (your share, which is typically 20% of the approved amount after meeting your deductible)
 
-Review this list and look for any services you do not recognize. An unfamiliar charge from a provider you never visited could indicate billing fraud or a billing error.
+Review this list and look for any services you do not recognize. An unfamiliar charge from a provider you never visited could show billing fraud or a billing error.
 
 **Deductible Status**
 
@@ -480,7 +480,7 @@ Searching "accepts Medicare" before scheduling an appointment can prevent surpri
 
 If you see a claim in your account for a service you never received, a medical supply you never ordered, or a provider you never visited, report it.
 
-From your Medicare account, click **"Report fraud"** or call **1-800-HHS-TIPS (1-800-447-8477)**. You can also contact your State Health Insurance Assistance Program (SHIP) — a free, unbiased counseling service available in every state. To find your local SHIP, go to **shiphelp.org**.
+From your Medicare account, click **"Report fraud"** or call **1-800-HHS-TIPS (1-800-447-8477)**. You can also contact your State Health Insurance Help Program (SHIP) — a free, unbiased counseling service available in every state. To find your local SHIP, go to **shiphelp.org**.
 
 ---
 
@@ -660,7 +660,7 @@ Instacart shows digital coupons from the store inside the app. Before checking o
 
 For staple items you buy in bulk (rice, paper towels, olive oil), it is worth checking whether Instacart's price matches the in-store price. Some stores charge the same price; others have a small markup. If you see a big difference on a large purchase, it may make sense to buy that item in person.
 
-**Schedule your delivery instead of ordering immediately**
+**Schedule your delivery instead of ordering right away**
 
 Scheduled deliveries (choosing a window later today or tomorrow) often have lower delivery fees than "rush" or immediate delivery windows.
 

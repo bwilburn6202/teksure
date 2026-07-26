@@ -66,7 +66,7 @@ Mixbook is especially popular for wedding albums, baby's first-year books, vacat
 
 The website is usually the easiest place to start because the screen is larger and easier to work with. Once you sign up for a free account, you can save your project and come back to it later — your work is stored on Mixbook's website so you do not lose it if you close the browser.
 
-Pricing depends on what you order. A standard 20-page photo book starts around $25 to $30, and Mixbook frequently runs sales for 40 to 50 percent off. Greeting cards start around $2 to $3 each when ordered in small quantities. Wall calendars are popular around the holidays and usually run $25 to $40 depending on size.
+Pricing depends on what you order. A standard 20-page photo book starts around $25 to $30, and Mixbook often runs sales for 40 to 50 percent off. Greeting cards start around $2 to $3 each when ordered in small quantities. Wall calendars are popular around the holidays and usually run $25 to $40 depending on size.
 
 Mixbook ships anywhere in the United States, and most standard-quality orders arrive within one to two weeks. Rush shipping is available for an extra fee.`,
     steps: [
@@ -95,7 +95,7 @@ Mixbook ships anywhere in the United States, and most standard-quality orders ar
       {
         title: `Preview, adjust, and place your order`,
         content: `When you are happy with your design, click "Preview" to see a full-screen view of every page in order. If anything looks off, go back and adjust it. Then click "Buy" or "Order," choose your paper quality, enter your shipping address, and complete payment. Mixbook will send you an order confirmation email with a tracking number once your item ships.`,
-        tip: `Quick Tip: Before you pay, search online for "Mixbook discount code" — the company frequently offers promotional codes that can save you 40 percent or more.`,
+        tip: `Quick Tip: Before you pay, search online for "Mixbook discount code" — the company often offers promotional codes that can save you 40 percent or more.`,
       },
     ],
   },
@@ -122,7 +122,7 @@ Blue Apron ships to most areas in the continental United States. Delivery days v
       {
         title: `Visit BlueApron.com and choose a plan`,
         content: `Open your browser and go to blueapron.com. Click "Get Started" or "See Our Plans." You will be asked how many people you are cooking for and how many meals per week you want. The most common choice is two to four servings, two to four meals per week. The page shows you the cost per serving so you can compare options easily.`,
-        tip: `Quick Tip: Blue Apron frequently offers first-box discounts — sometimes 50 percent off your first order. These promotions often appear on the homepage or via an email after you sign up.`,
+        tip: `Quick Tip: Blue Apron often offers first-box discounts — sometimes 50 percent off your first order. These promotions often appear on the homepage or via an email after you sign up.`,
       },
       {
         title: `Create your account`,
@@ -189,7 +189,7 @@ Always use official government websites when requesting a ballot online. The cor
       {
         title: `Receive your ballot and follow the instructions exactly`,
         content: `Your ballot will arrive by mail in an envelope that also contains return instructions. Read every page of instructions carefully before marking anything. Use a pen (usually black or blue ink — the instructions will specify). Follow the instructions for signing the envelope — most states require a signature on the outside of a special return envelope for your ballot to count.`,
-        warning: `Do not let anyone else fill out your ballot for you or handle your ballot envelope unless they are your legal authorized assistant. Voter assistance rules vary by state — check your state's rules if you need help marking your ballot.`,
+        warning: `Do not let anyone else fill out your ballot for you or handle your ballot envelope unless they are your legal authorized assistant. Voter help rules vary by state — check your state's rules if you need help marking your ballot.`,
       },
       {
         title: `Return your ballot before the deadline`,
@@ -225,7 +225,7 @@ You can use Petfinder at petfinder.com on any computer, or download the free Pet
       {
         title: `Enter your location and choose a pet type`,
         content: `On the homepage, type your zip code into the location box. Then choose the type of animal you are looking for — dog, cat, rabbit, bird, or others. Click "Search" to see a list of available pets near you. By default, Petfinder searches within 25 miles of your location, but you can expand that distance in the filters if you want to see more results.`,
-        tip: `Quick Tip: If you live in a rural area, expanding the search radius to 50 or 100 miles will show significantly more adoptable pets.`,
+        tip: `Quick Tip: If you live in a rural area, expanding the search radius to 50 or 100 miles will show a lot more adoptable pets.`,
       },
       {
         title: `Use filters to narrow your search`,
@@ -258,7 +258,7 @@ When you sign up, Noom asks you a series of questions about your health history,
 
 Noom uses a food color system instead of strict rules. Foods are labeled green (low in calories relative to their volume — fruits, vegetables, whole grains), yellow (moderate — lean meats, dairy, beans), or red (high in calories — fried foods, sweets, processed snacks). The system is not about forbidding any food. The idea is to help you notice patterns and make more intentional choices over time.
 
-The app is available for iPhone and Android and costs around $60 to $70 per month, though Noom frequently offers promotional pricing for new users. Many people find the first few weeks free or deeply discounted as a trial. Noom does not require a gym membership or special foods — you eat what you normally have access to and work within a budget.
+The app is available for iPhone and Android and costs around $60 to $70 per month, though Noom often offers promotional pricing for new users. Many people find the first few weeks free or deeply discounted as a trial. Noom does not require a gym membership or special foods — you eat what you normally have access to and work within a budget.
 
 Noom is best suited for people who want behavioral support alongside calorie tracking, not just a food diary.`,
     steps: [
@@ -385,7 +385,7 @@ Tasty is a good starting point for anyone who wants to cook more at home but doe
     difficulty: `Intermediate`,
     body: `Google Fi Wireless is a phone plan run by Google. It is what is known as a "virtual" carrier — Google does not own its own cell towers but instead uses the networks of T-Mobile and US Cellular to provide coverage. By combining multiple networks and switching between them automatically, Google Fi aims to keep you connected even in areas where a single carrier might have weak signal.
 
-Google Fi offers two main types of plans. The "Simply Unlimited" and "Unlimited Plus" plans charge a flat monthly fee similar to traditional carriers. The older "Flexible" plan — which may still be available for existing customers — charges a base rate per month plus $10 for every gigabyte of data you actually use. If you use very little data in a month, the Flexible plan can end up being significantly cheaper than a flat-rate plan.
+Google Fi offers two main types of plans. The "Simply Unlimited" and "Unlimited Plus" plans charge a flat monthly fee similar to traditional carriers. The older "Flexible" plan — which may still be available for existing customers — charges a base rate per month plus $10 for every gigabyte of data you actually use. If you use very little data in a month, the Flexible plan can end up being a lot cheaper than a flat-rate plan.
 
 For a single person, current Simply Unlimited pricing starts around $65 per month for one line. Prices go down per line when you add more people to a group plan. Google Fi also includes international roaming in over 200 countries at no extra charge on most plans, which makes it attractive for travelers.
 
@@ -393,7 +393,7 @@ Google Fi works with most modern Android phones and iPhones. However, not all ph
 
 The plan is managed entirely through the Google Fi app or at fi.google.com. There are no retail stores, though customer support is available by phone and chat.
 
-Google Fi is worth considering for people who travel frequently, use modest amounts of data, or want a no-contract plan they can control easily online.`,
+Google Fi is worth considering for people who travel often, use modest amounts of data, or want a no-contract plan they can control easily online.`,
     steps: [
       {
         title: `Check if your phone is compatible`,
@@ -538,7 +538,7 @@ The Chase Mobile app is available in the App Store (iPhone) and Google Play Stor
       },
       {
         title: `Transfer money between your Chase accounts`,
-        content: `Tap "Pay & Transfer" from the bottom menu, then "Transfer." Choose the account you are transferring money from and the account you are transferring money to. Enter the amount and the date. Review the summary and tap "Transfer Now." Most transfers between Chase accounts post immediately or by the next business day.`,
+        content: `Tap "Pay & Transfer" from the bottom menu, then "Transfer." Choose the account you are transferring money from and the account you are transferring money to. Enter the amount and the date. Review the summary and tap "Transfer Now." Most transfers between Chase accounts post right away or by the next business day.`,
       },
       {
         title: `Deposit a check with your phone camera`,
@@ -590,7 +590,7 @@ Download the app by searching "Bank of America Mobile Banking" in the App Store 
       },
       {
         title: `Pay bills and transfer money`,
-        content: `Tap "Transfer & Pay" in the bottom navigation. From here you can transfer money between your own Bank of America accounts (available immediately or the next business day), set up payments to outside companies like your electric bill or a loan at another bank, or send money to someone using Zelle. For bill payments, search for the company by name, enter your account number with that company, and schedule a payment date.`,
+        content: `Tap "Transfer & Pay" in the bottom navigation. From here you can transfer money between your own Bank of America accounts (available right away or the next business day), set up payments to outside companies like your electric bill or a loan at another bank, or send money to someone using Zelle. For bill payments, search for the company by name, enter your account number with that company, and schedule a payment date.`,
         warning: `Schedule bill payments at least 2 to 3 business days before the due date to make sure the payment arrives on time. Payments to external companies can take one to three business days to process.`,
       },
     ],
@@ -627,7 +627,7 @@ To use the app, you need a Wells Fargo account. If you bank with Wells Fargo but
       {
         title: `Check balances and review your transactions`,
         content: `The home screen displays all your Wells Fargo accounts and their current balances. Tap any account to open its transaction history. Scroll through recent transactions, or use the search icon to look for a specific date, amount, or merchant. Tap any transaction to see the full details. If you notice an unfamiliar charge, do not ignore it — contact Wells Fargo customer service if you believe it is incorrect or unauthorized.`,
-        warning: `If you see a transaction you did not make, call the number on the back of your Wells Fargo debit or credit card immediately. Acting quickly limits your liability for unauthorized charges.`,
+        warning: `If you see a transaction you did not make, call the number on the back of your Wells Fargo debit or credit card right away. Acting quickly limits your liability for unauthorized charges.`,
       },
       {
         title: `Mobile deposit a check`,
@@ -878,7 +878,7 @@ The process of voting by mail involves several steps that must be done carefully
 
 Your state's official election website is the authoritative source for deadlines, requirements, and return instructions specific to your area. You can find your state's election website by going to vote.gov.
 
-Voting by mail is legal, secure, and widely used by millions of Americans in every election cycle. The US Postal Service and state election offices have established procedures to ensure mail-in ballots are handled safely.`,
+Voting by mail is legal, secure, and widely used by millions of Americans in every election cycle. The US Postal Service and state election offices have established procedures to make sure mail-in ballots are handled safely.`,
     steps: [
       {
         title: `Make sure you are registered to vote at your current address`,
@@ -897,7 +897,7 @@ Voting by mail is legal, secure, and widely used by millions of Americans in eve
       {
         title: `Mark your ballot carefully`,
         content: `Use a black or blue ballpoint pen unless the instructions specify otherwise. Fill in ovals or boxes completely — do not circle candidates, use check marks, or write notes on the ballot. Mark only the number of candidates allowed for each race (usually one). If you make a mistake, do not try to fix it yourself — contact your local election office to request a replacement ballot before the deadline.`,
-        warning: `Do not let another person fill out your ballot or pressure you to vote in a certain way. Voting is private and your own decision. Authorized voter assistance is available for people with disabilities — rules vary by state.`,
+        warning: `Do not let another person fill out your ballot or pressure you to vote in a certain way. Voting is private and your own decision. Authorized voter help is available for people with disabilities — rules vary by state.`,
       },
       {
         title: `Sign and seal the return envelope correctly`,
@@ -906,7 +906,7 @@ Voting by mail is legal, secure, and widely used by millions of Americans in eve
       {
         title: `Return your ballot early and track it`,
         content: `Mail your ballot back as early as possible — at least one week before Election Day to account for mail delays. You can also drop it off in person at an official drop box or your county election office. Check your state's website for drop box locations. After returning your ballot, use your state's ballot tracking tool (linked from vote.gov) to confirm it was received and accepted. Most states now offer email or text alerts for ballot status updates.`,
-        tip: `Quick Tip: If you are mailing close to the deadline, take your ballot to a post office and ask for it to be hand-processed rather than placing it in a collection box — this can help ensure it gets postmarked on time.`,
+        tip: `Quick Tip: If you are mailing close to the deadline, take your ballot to a post office and ask for it to be hand-processed rather than placing it in a collection box — this can help make sure it gets postmarked on time.`,
       },
     ],
   },

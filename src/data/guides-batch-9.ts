@@ -447,7 +447,7 @@ The appeal is free, and there are five levels. Most people win at the first or s
       { title: 'Ask your doctor for a support letter', content: `Call your doctor's office and ask them to write a short letter explaining why this service is medically necessary. Most offices will do this for you, and it is the single most important thing for winning.` },
       { title: 'Fill out the Redetermination form', content: 'Download Form CMS-20027 from medicare.gov or call 1-800-MEDICARE to request one by mail. Fill it in with your Medicare number, the denial details, and why you think it should be covered.' },
       { title: 'Mail the appeal and keep copies', content: 'Mail the form, the doctor letter, and a copy of the denial notice to the address on your denial. Send it by certified mail so you have proof it arrived. Keep a copy of everything for yourself.' },
-      { title: 'Wait for a decision', content: 'Medicare has 60 days to respond. If they still deny, the notice will tell you how to file the next level of appeal. Free help is available from your State Health Insurance Assistance Program (SHIP) — call 1-877-839-2675.' },
+      { title: 'Wait for a decision', content: 'Medicare has 60 days to respond. If they still deny, the notice will tell you how to file the next level of appeal. Free help is available from your State Health Insurance Help Program (SHIP) — call 1-877-839-2675.' },
     ],
   },
   {
@@ -724,7 +724,7 @@ There are no ads and no paywall. Workouts include video and voice-over instructi
     steps: [
       { title: 'Download Nike Training Club', content: 'Install the Nike Training Club app from the App Store or Play Store. Open it and sign up with your email — no payment info needed.' },
       { title: 'Pick a workout goal', content: 'On the home screen, tap "Find a Workout". Filter by goal (Strength, Yoga, Endurance, Mobility), time (10 min, 20 min, 45 min), and equipment (None, Light, Full Gym).' },
-      { title: 'Try your first workout', content: 'Pick a beginner 15-20 minute workout. Tap Start. The trainer will demonstrate each move with a video and a voice coach will count you through reps and breaks.' },
+      { title: 'Try your first workout', content: 'Pick a beginner 15-20 minute workout. Tap Start. The trainer will show each move with a video and a voice coach will count you through reps and breaks.' },
       { title: 'Follow a multi-week program', content: 'Tap the Programs tab. Pick a 4- to 8-week program like "Beginner Strength" or "Yoga for Stress Relief". The app schedules each workout and tells you which to do each day.' },
       { title: 'Cast to a TV for bigger screens', content: 'If you have an Apple TV, Chromecast, or Smart TV, tap the cast icon during a workout to play the video on your TV. The voice still comes from your phone so you can hear the trainer clearly.' },
     ],

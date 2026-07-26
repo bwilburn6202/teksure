@@ -66,7 +66,7 @@ export const guidesBatch310: Guide[] = [
       {
         title: "Try Senior Shape's 15-minute morning routine",
         content: "Search YouTube for Senior Shape morning chair yoga. The 15-minute morning routine is a popular starting point because the shorter length makes daily practice easier to commit to. Wendy Walter explains every movement twice, once while doing it and once while pointing to the body part being moved. The teaching style is patient and unhurried, which is the right tone for an older student practicing alone at home.",
-        warning: "Important: If a movement causes sharp pain, stop immediately. Soreness the next day is normal. Sharp pain during a movement is the body signaling a problem.",
+        warning: "Important: If a movement causes sharp pain, stop right away. Soreness the next day is normal. Sharp pain during a movement is the body signaling a problem.",
       },
       {
         title: "Sample Silver Yogis for slower, more detailed instruction",
@@ -181,7 +181,7 @@ export const guidesBatch310: Guide[] = [
       },
       {
         title: "Use the 4-7-8 breath before sleep",
-        content: "Dr. Andrew Weil developed the 4-7-8 breath as a tool for falling asleep. Inhale through the nose for a count of four. Hold the breath for a count of seven. Exhale through the mouth with a soft whoosh sound for a count of eight. Repeat four cycles. The technique works by deliberately slowing the breath and triggering the parasympathetic nervous system. Many older adults with insomnia find that four cycles of 4-7-8 breath while lying in bed reduces the time to fall asleep significantly. The technique can also be used during the day when feeling stressed.",
+        content: "Dr. Andrew Weil developed the 4-7-8 breath as a tool for falling asleep. Inhale through the nose for a count of four. Hold the breath for a count of seven. Exhale through the mouth with a soft whoosh sound for a count of eight. Repeat four cycles. The technique works by deliberately slowing the breath and triggering the parasympathetic nervous system. Many older adults with insomnia find that four cycles of 4-7-8 breath while lying in bed reduces the time to fall asleep a lot. The technique can also be used during the day when feeling stressed.",
       },
       {
         title: "Build a daily 10-minute breathwork habit",

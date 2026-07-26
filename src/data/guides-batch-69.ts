@@ -73,7 +73,7 @@ For the most accurate results, connect your computer directly to your router wit
 
 What counts as "good" internet varies by how many people and devices are using it. For one person streaming HD video, 25 Mbps download is enough. A family with multiple devices watching different things simultaneously needs 100 Mbps or more. Homes with 4K streaming, gaming, and video calls at the same time benefit from 500 Mbps or higher.
 
-If your speed test shows numbers significantly lower than what your internet plan promises, start by restarting your router. If that does not help, call your internet provider — they can sometimes push a fix remotely or schedule a technician visit.`,
+If your speed test shows numbers a lot lower than what your internet plan promises, start by restarting your router. If that does not help, call your internet provider — they can sometimes push a fix remotely or schedule a technician visit.`,
     category: `internet-connectivity`,
     tags: [`internet speed`, `speed test`, `wifi`, `broadband`, `troubleshooting`],
     thumbnailEmoji: ``,
@@ -116,7 +116,7 @@ The most effective way to lower your bill is to call your provider directly — 
 
 Before you call, look up what competitors charge in your area. BroadbandSearch.net and AllConnect.com both show available plans by zip code. Even if you have no intention of switching, knowing what Comcast, Cox, Spectrum, or AT&T charge in your area gives you real negotiating power in the conversation.
 
-Government programs also reduce costs for qualifying households. The Affordable Connectivity Program ended in 2024, but Comcast Internet Essentials offers $10/month internet for households that qualify (based on income or participation in programs like SNAP or Medicaid). AT&T Access, Cox Connect2Compete, and Spectrum Internet Assist are similar low-cost programs. Check benefits.gov for current federal broadband assistance.
+Government programs also reduce costs for qualifying households. The Affordable Connectivity Program ended in 2024, but Comcast Internet Essentials offers $10/month internet for households that qualify (based on income or participation in programs like SNAP or Medicaid). AT&T Access, Cox Connect2Compete, and Spectrum Internet Assist are similar low-cost programs. Check benefits.gov for current federal broadband help.
 
 One of the easiest wins is eliminating your monthly equipment rental fee. Most providers charge $10–15 per month to rent a modem or router. Buying a compatible modem costs $100–200 one time. At $12/month in rental fees, that purchase pays for itself in under 18 months — and then you save that $144 per year indefinitely. Check your provider's website for a list of compatible modems before buying.
 
@@ -139,7 +139,7 @@ Finally, look at what add-ons are bundled into your bill. TV packages, security 
       },
       {
         title: `Ask About Low-Income Programs`,
-        content: `If your household participates in SNAP, Medicaid, SSI, or free/reduced school lunch programs, you may qualify for discounted internet. Ask your provider about their low-income program, or search "[your provider] internet assistance program."`,
+        content: `If your household participates in SNAP, Medicaid, SSI, or free/reduced school lunch programs, you may qualify for discounted internet. Ask your provider about their low-income program, or search "[your provider] internet help program."`,
       },
       {
         title: `Stop Renting Equipment`,
@@ -211,7 +211,7 @@ Before you buy a second monitor, check what ports are available on your computer
 
 Once you have the monitor and cable, plug the cable into your computer and into the monitor, then power the monitor on. Windows 10 and 11 detect a new display automatically within a few seconds. If nothing appears, right-click on the desktop and choose "Display settings."
 
-In Display settings, you will see a diagram showing both monitors as rectangles labeled 1 and 2. Drag these rectangles to match how the physical monitors sit on your desk — for example, if monitor 2 is to the right of monitor 1 in real life, make sure the diagram shows the same arrangement. This ensures your mouse moves between screens in the right direction.
+In Display settings, you will see a diagram showing both monitors as rectangles labeled 1 and 2. Drag these rectangles to match how the physical monitors sit on your desk — for example, if monitor 2 is to the right of monitor 1 in real life, make sure the diagram shows the same arrangement. This makes sure your mouse moves between screens in the right direction.
 
 Under "Multiple displays," choose "Extend these displays" to use both monitors as one large workspace. If you choose "Duplicate," both screens show the same thing — which is useful when presenting to someone on a TV or projector, but not for everyday work.
 
@@ -323,7 +323,7 @@ Notification settings let you control which apps send alerts to your watch. This
       {
         title: `Turn On the Watch and Start Pairing`,
         content: `Hold the side button on the Galaxy Watch until it powers on. Follow the on-screen prompts to select language and region. On your phone, open Galaxy Wearable and tap "Start the Journey." The app will find the watch and begin pairing.`,
-        tip: `Keep your phone and watch close together (within a foot) during the pairing process to ensure a reliable Bluetooth connection.`,
+        tip: `Keep your phone and watch close together (within a foot) during the pairing process to make sure a reliable Bluetooth connection.`,
       },
       {
         title: `Sign In to Samsung Account`,
@@ -467,11 +467,11 @@ To care for your earbuds: clean the silicone ear tips weekly with a dry cloth, s
       {
         title: `Pair to Your Phone`,
         content: `For AirPods: open the case near your iPhone — a pairing prompt appears automatically. For most other earbuds: open the case, hold the pairing button on the case or earbuds until the light flashes, then go to your phone's Settings > Bluetooth and select the earbuds from the list.`,
-        tip: `If the earbuds do not appear in your Bluetooth list, make sure they are in pairing mode (usually indicated by a flashing white or blue light) and that no other device is currently connected to them.`,
+        tip: `If the earbuds do not appear in your Bluetooth list, make sure they are in pairing mode (usually showed by a flashing white or blue light) and that no other device is currently connected to them.`,
       },
       {
         title: `Find the Right Ear Tip Size`,
-        content: `Check the box — most earbuds include three sizes of silicone tips (small, medium, large). The medium size is installed by default. If the earbuds feel loose, slide off the tip and attach a larger one. A proper seal improves both sound quality and noise isolation significantly.`,
+        content: `Check the box — most earbuds include three sizes of silicone tips (small, medium, large). The medium size is installed by default. If the earbuds feel loose, slide off the tip and attach a larger one. A proper seal improves both sound quality and noise isolation a lot.`,
       },
       {
         title: `Learn the Controls`,
@@ -491,11 +491,11 @@ To care for your earbuds: clean the silicone ear tips weekly with a dry cloth, s
 
 The Windows key (the key with the Windows logo, between Ctrl and Alt on most keyboards) is the foundation of many useful shortcuts. Pressing it alone opens the Start menu. Pressing it with other keys triggers dozens of useful actions.
 
-For managing windows and the desktop: Win + D instantly minimizes all open windows to show your desktop — press it again to restore them. Win + E opens File Explorer directly. Win + L locks your computer immediately, which is good security practice whenever you step away from your desk. Alt + Tab shows thumbnails of all open apps and lets you switch between them by pressing Tab repeatedly while holding Alt.
+For managing windows and the desktop: Win + D instantly minimizes all open windows to show your desktop — press it again to restore them. Win + E opens File Explorer directly. Win + L locks your computer right away, which is good security practice whenever you step away from your desk. Alt + Tab shows thumbnails of all open apps and lets you switch between them by pressing Tab repeatedly while holding Alt.
 
 For working with text in any app: Ctrl + C copies selected text or a file. Ctrl + X cuts it. Ctrl + V pastes. Ctrl + Z undoes the last action (repeat to undo multiple steps). Ctrl + Y redoes something you undid. Ctrl + A selects everything in the current document or folder. The Home key moves your cursor to the start of a line; the End key moves it to the end. Ctrl + Home jumps to the very beginning of a document; Ctrl + End jumps to the very end.
 
-In any web browser: Ctrl + T opens a new tab. Ctrl + W closes the current tab. Ctrl + L puts the cursor in the address bar so you can type a new web address immediately. Ctrl + F opens a search box to find specific text on the page. F5 refreshes the page.
+In any web browser: Ctrl + T opens a new tab. Ctrl + W closes the current tab. Ctrl + L puts the cursor in the address bar so you can type a new web address right away. Ctrl + F opens a search box to find specific text on the page. F5 refreshes the page.
 
 For taking screenshots: Win + Shift + S opens the Snipping Tool, letting you drag to select exactly what you want to capture. The selection is copied to your clipboard and you can paste it into an email, Word document, or message. PrtSc (Print Screen) captures the entire screen to the clipboard.
 
@@ -544,7 +544,7 @@ In any web browser: Command + T opens a new tab. Command + W closes the current 
 
 For screenshots: Command + Shift + 3 captures the entire screen and saves it to your Desktop. Command + Shift + 4 turns the cursor into a crosshair — drag to select only the area you want. Command + Shift + 5 opens a screenshot toolbar with all options and the ability to record video of your screen.
 
-For system management: Command + Option + Esc opens the Force Quit window, useful when an app freezes. Command + Control + Q locks the screen immediately.`,
+For system management: Command + Option + Esc opens the Force Quit window, useful when an app freezes. Command + Control + Q locks the screen right away.`,
     category: `mac-guides`,
     tags: [`keyboard shortcuts`, `mac`, `productivity`, `keyboard`, `tips`],
     thumbnailEmoji: ``,
@@ -572,7 +572,7 @@ For system management: Command + Option + Esc opens the Force Quit window, usefu
       {
         title: `Force Quit a Frozen App`,
         content: `If an app stops responding, press Command + Option + Esc to open the Force Quit window. Select the frozen app (it may say "not responding" in red) and click Force Quit. This closes the app without restarting your Mac.`,
-        warning: `Force quitting an app closes it immediately without saving. Any unsaved work in that app will be lost. Use this only when an app is truly frozen and unresponsive.`,
+        warning: `Force quitting an app closes it right away without saving. Any unsaved work in that app will be lost. Use this only when an app is truly frozen and unresponsive.`,
       },
     ],
   },
@@ -586,7 +586,7 @@ It is especially helpful for people who find reading on a screen tiring, those w
 
 To try it for free, go to naturalreaders.com in your web browser. The free version lets you paste text and have it read aloud, choose from a selection of voices, and adjust reading speed from slow to fast. The highlighted text moves along with the voice so you can follow along visually if you want.
 
-If you use Google Chrome, the NaturalReader browser extension lets you highlight any text on a webpage, click the NaturalReader button that appears, and have that text read to you immediately — without needing to copy and paste anything.
+If you use Google Chrome, the NaturalReader browser extension lets you highlight any text on a webpage, click the NaturalReader button that appears, and have that text read to you right away — without needing to copy and paste anything.
 
 For documents, the free online version of NaturalReader accepts uploaded PDFs, Word documents, and text files. Click "Upload" on the website, choose your file, and it reads the text aloud.
 
@@ -609,7 +609,7 @@ Quick Tip: before paying for any text-to-speech app, check what is already built
       },
       {
         title: `Install the Browser Extension (Optional)`,
-        content: `If you use Google Chrome, go to the Chrome Web Store and search for "NaturalReader Text to Speech." Install the free extension. After installing, you can highlight any text on any webpage and click the NaturalReader button that appears to hear it read aloud immediately.`,
+        content: `If you use Google Chrome, go to the Chrome Web Store and search for "NaturalReader Text to Speech." Install the free extension. After installing, you can highlight any text on any webpage and click the NaturalReader button that appears to hear it read aloud right away.`,
       },
       {
         title: `Read a PDF or Document`,
@@ -674,7 +674,7 @@ Beyond Edge, Immersive Reader is built into Word Online, OneNote, Outlook on the
     slug: `typing-speed-guide`,
     title: `How to Improve Your Typing Speed with Free Practice Tools`,
     excerpt: `Even modest typing improvements pay off every day — these free websites help you practice the right technique and build speed gradually.`,
-    body: `Most people type the way they learned on their own — using two or three fingers, looking down at the keys frequently, and hunting for each letter. This approach works, but it is slow and tiring compared to touch typing, where your fingers rest on a set of home-row keys and reach to other keys without looking.
+    body: `Most people type the way they learned on their own — using two or three fingers, looking down at the keys often, and hunting for each letter. This approach works, but it is slow and tiring compared to touch typing, where your fingers rest on a set of home-row keys and reach to other keys without looking.
 
 Touch typing has a brief learning curve, but the investment pays off for years. Even reaching 40 words per minute (WPM) — a modest goal — makes a real difference in how quickly you can write an email, fill out a form, or type a text message on a full keyboard.
 
@@ -730,7 +730,7 @@ To get higher-quality voices, Windows lets you download additional natural-sound
 
 To highlight and hear specific text outside of a browser, you can also select any text in most Windows apps, right-click it, and look for a "Read Aloud" or "Speak" option in the menu — this appears in some apps but not all.
 
-For a third-party option, NaturalReader offers a free desktop app for Windows with more voice choices, though the Windows built-in tools are sufficient for most reading needs.`,
+For a third-party option, NaturalReader offers a free desktop app for Windows with more voice choices, though the Windows built-in tools are enough for most reading needs.`,
     category: `windows-guides`,
     tags: [`text to speech`, `windows`, `read aloud`, `accessibility`, `narrator`],
     thumbnailEmoji: ``,
@@ -774,7 +774,7 @@ After the main router is set up, place satellite units in rooms with weak signal
 
 The Orbi app shows a network map with all connected devices, lets you set access schedules for specific devices (useful for managing children's screen time), and runs speed tests to confirm coverage.
 
-For firmware updates, enabling automatic updates in the app ensures your Orbi stays current with security patches. This takes one toggle in the app settings.
+For firmware updates, enabling automatic updates in the app makes sure your Orbi stays current with security patches. This takes one toggle in the app settings.
 
 Comparing Orbi to other systems: Orbi generally offers stronger performance and range, especially in larger homes or homes with thick walls. Eero is simpler to set up and integrates with Amazon Alexa. TP-Link Deco offers the best price-to-performance value. Orbi Pro is a higher-end version designed for small businesses.`,
     category: `internet-connectivity`,
@@ -859,11 +859,11 @@ When shopping, check the return policy — fit is personal, and sizing ear tips 
     excerpt: `The right case and screen protector can save your phone from a cracked screen — here's how to pick the best option for your lifestyle.`,
     body: `A dropped phone without protection can cost $150–$400 to repair, depending on the model. The right case and screen protector together cost $20–60 and absorb most of the damage from everyday drops and scratches. Choosing the right combination depends on how you use your phone and how much bulk you are willing to accept.
 
-Phone cases come in several main types. Slim cases add minimal size to your phone — they protect against scratches and light drops but may not absorb the impact of a hard fall onto concrete. These suit careful users who do not like the feeling of a thick phone. Wallet cases replace your wallet by holding one or two cards and your ID in a flap attached to the back of the case. If you like leaving the house with your phone alone, this eliminates the need to carry a wallet. Rugged cases like the OtterBox Defender series add significant bulk but can survive falls that would shatter an unprotected phone. They are a good choice for outdoor workers, people who frequently drop things, or anyone with an expensive phone they cannot afford to repair. Clear cases show off the phone's original design while adding scratch and drop protection — popular for people who like their phone's color or finish.
+Phone cases come in several main types. Slim cases add minimal size to your phone — they protect against scratches and light drops but may not absorb the impact of a hard fall onto concrete. These suit careful users who do not like the feeling of a thick phone. Wallet cases replace your wallet by holding one or two cards and your ID in a flap attached to the back of the case. If you like leaving the house with your phone alone, this eliminates the need to carry a wallet. Rugged cases like the OtterBox Defender series add significant bulk but can survive falls that would shatter an unprotected phone. They are a good choice for outdoor workers, people who often drop things, or anyone with an expensive phone they cannot afford to repair. Clear cases show off the phone's original design while adding scratch and drop protection — popular for people who like their phone's color or finish.
 
 Key brands worth knowing: OtterBox (rugged and popular with reliable drop protection), Speck (slim but more protective than generic slim cases), CASETiFY (fashionable designs, decent protection), Totallee (ultra-thin, nearly invisible, protects from scratches more than drops), Peak Design (premium cases with a built-in magnet system for mounting the phone to car mounts and other accessories).
 
-For screen protectors, tempered glass is significantly better than plastic film. Glass protectors absorb impact energy that would otherwise crack the phone's screen. Look for one rated 9H hardness — this is the standard scratch-resistant rating for tempered glass. Full-glue versions adhere across the entire surface and tend to look cleaner than frame-adhesion versions that only stick at the edges.
+For screen protectors, tempered glass is a lot better than plastic film. Glass protectors absorb impact energy that would otherwise crack the phone's screen. Look for one rated 9H hardness — this is the standard scratch-resistant rating for tempered glass. Full-glue versions adhere across the entire surface and tend to look cleaner than frame-adhesion versions that only stick at the edges.
 
 One practical option: privacy screen protectors have a filter that makes the screen hard to see from the side. Anyone sitting next to you on a bus or plane sees a dark screen; you see it clearly from straight on. Useful if you regularly use your phone in public with sensitive information.
 
@@ -901,7 +901,7 @@ For iPhone 12 and later: look for cases with MagSafe compatibility if you want t
     slug: `device-insurance-guide`,
     title: `Is Phone Insurance Worth It? Your Options Explained`,
     excerpt: `Phone insurance and protection plans can save hundreds on repairs — here's how to compare the options and decide what's worth it.`,
-    body: `Phone insurance is one of those costs that feels unnecessary right up until the moment you need it. A cracked screen on a flagship iPhone or Samsung Galaxy can cost $200–$400 to repair out of pocket. Theft or loss makes the entire phone a total loss. Whether insurance is worth it depends on the value of your phone, your history of accidents, and which plan you choose — because the options vary significantly in quality and cost.
+    body: `Phone insurance is one of those costs that feels unnecessary right up until the moment you need it. A cracked screen on a flagship iPhone or Samsung Galaxy can cost $200–$400 to repair out of pocket. Theft or loss makes the entire phone a total loss. Whether insurance is worth it depends on the value of your phone, your history of accidents, and which plan you choose — because the options vary a lot in quality and cost.
 
 The most straightforward option for iPhone users is AppleCare+. You pay either monthly ($8–$14 depending on iPhone model) or a one-time upfront fee ($150–$250), and you get two accidental damage incidents per year. Each incident requires a deductible: $29 for a broken screen, $99 for other damage. AppleCare+ also includes Apple's 24/7 technical support by phone and covers battery replacement if the battery holds less than 80% of its original capacity. Adding theft and loss coverage costs a bit more but covers you if the phone is stolen or goes missing. Google Preferred Care for Pixel phones and Samsung Care+ work similarly for their respective devices.
 

@@ -123,7 +123,7 @@ export const guidesBatch197: Guide[] = [
       {
         title: "Wait for the check to fully clear before spending the money",
         content: "Even if your bank says the funds are available after 5 business days, the check may not be fully cleared. For any check from someone you do not know personally, wait at least 14 business days (about 3 weeks) before spending the money or sending any portion of it. Watch your account daily during that period. If the deposit reverses, the words \"Deposited Item Returned\" or \"Returned NSF\" will appear in your transaction list.",
-        warning: "If you have already sent money from a check that bounced, call your bank immediately. In some cases, fast action can stop a wire transfer or pending Zelle payment before it leaves your account.",
+        warning: "If you have already sent money from a check that bounced, call your bank right away. In some cases, fast action can stop a wire transfer or pending Zelle payment before it leaves your account.",
       },
       {
         title: "Watch for these specific scam stories",

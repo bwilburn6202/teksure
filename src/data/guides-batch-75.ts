@@ -42,7 +42,7 @@ Remember: the goal of week one is not speed. It's showing up. Walk as briskly as
       {
         title: `Follow the intervals and finish the session`,
         content: `Walk briskly during walking intervals and run at a comfortable, conversational pace during running intervals. When the cool-down walk is done, the app will mark the day complete and show you your stats. Tap "Save Workout" to record your progress.`,
-        warning: `If you feel sharp pain — not general tiredness — stop immediately. Muscle fatigue is normal. Joint or chest pain is a signal to rest and speak with your doctor before continuing.`,
+        warning: `If you feel sharp pain — not general tiredness — stop right away. Muscle fatigue is normal. Joint or chest pain is a signal to rest and speak with your doctor before continuing.`,
       },
       {
         title: `Repeat three days per week`,
@@ -129,7 +129,7 @@ ClassPass also includes a selection of on-demand video classes you can do at hom
       },
       {
         title: `Search for classes and book one`,
-        content: `Tap "Explore" or "Classes" and use the filters to find a class type you'd like to try. Tap any class listing to see the full description, instructor bio, studio reviews, and credit cost. Tap "Reserve" to book your spot — the credits are deducted from your monthly balance immediately.`,
+        content: `Tap "Explore" or "Classes" and use the filters to find a class type you'd like to try. Tap any class listing to see the full description, instructor bio, studio reviews, and credit cost. Tap "Reserve" to book your spot — the credits are deducted from your monthly balance right away.`,
       },
       {
         title: `Attend the class`,
@@ -184,7 +184,7 @@ The app also integrates with Apple Health and Google Fit, so your workouts autom
       },
       {
         title: `Open Fitbod for your next session`,
-        content: `Each time you return to the app, it generates a fresh workout based on your recovery status. Over several weeks, you'll notice the app increasing weights and suggesting new exercises as it detects you're getting stronger. Check the "Muscles" tab occasionally to see a visual map of which muscles you've been training most.`,
+        content: `Each time you return to the app, it generates a fresh workout based on your recovery status. Over several weeks, you'll notice the app increasing weights and suggesting new exercises as it detects you're getting stronger. Check the "Muscles" tab sometimes to see a visual map of which muscles you've been training most.`,
       },
     ],
   },
@@ -425,7 +425,7 @@ You can watch Kanopy in a web browser on any computer, through the Kanopy app on
 
 Crackle's library includes Hollywood films across multiple genres: action, comedy, drama, horror, and thriller. It also has some original programming and complete seasons of well-known TV series. The catalog isn't as large as Netflix or Amazon Prime, but it rotates regularly, so there's usually something worth watching.
 
-Crackle doesn't require you to create an account to watch, which makes it one of the lowest-friction free streaming options available. You can open the app or website and start watching immediately. Creating a free account does allow you to create a watchlist and resume watching where you left off, which is convenient if you're watching a long movie in multiple sessions.
+Crackle doesn't require you to create an account to watch, which makes it one of the lowest-friction free streaming options available. You can open the app or website and start watching right away. Creating a free account does allow you to create a watchlist and resume watching where you left off, which is convenient if you're watching a long movie in multiple sessions.
 
 The service is available at crackle.com in any web browser, through the Crackle app on iPhone and Android, and on smart TVs through apps available on Roku, Amazon Fire TV, Apple TV, and most major smart TV platforms.
 
@@ -510,7 +510,7 @@ When you submit a request on Thumbtack, you describe your project and your zip c
 
 One important thing to understand about Thumbtack: professionals pay to send you a quote, which creates an incentive for them to respond promptly and make a good impression. You don't pay anything to request quotes. You only pay the professional directly for the work they do once you've agreed on a price.
 
-Thumbtack shows you verified reviews from real customers who hired each professional. Look for pros with a large number of reviews (not just a handful) and a rating above 4.5 out of 5. The "Top Pro" badge indicates professionals who have consistently received high ratings over time.
+Thumbtack shows you verified reviews from real customers who hired each professional. Look for pros with a large number of reviews (not just a handful) and a rating above 4.5 out of 5. The "Top Pro" badge shows professionals who have consistently received high ratings over time.
 
 Thumbtack is available as a free app on iPhone and Android, and also works on any computer at thumbtack.com.`,
     steps: [
@@ -567,7 +567,7 @@ Booking is handled entirely through the app or website. Payment is processed sec
       {
         title: `Search for pet care providers near you`,
         content: `From the home screen, select the type of service you need (Dog Walking, Drop-In Visits, Boarding, etc.) and enter your zip code or home address. Rover will display a map and list view of available providers in your area along with their per-service rates and star ratings.`,
-        tip: `Quick Tip: Filter results by "Top Rated" to see only providers with the highest average review scores. These providers have demonstrated consistent, reliable care over many bookings.`,
+        tip: `Quick Tip: Filter results by "Top Rated" to see only providers with the highest average review scores. These providers have showed consistent, reliable care over many bookings.`,
       },
       {
         title: `Read profiles and reviews`,
@@ -608,7 +608,7 @@ The Dasher app is available for iPhone and Android and uses your phone's GPS for
       {
         title: `Sign up at the DoorDash Dasher website`,
         content: `On a computer or phone, go to dasher.doordash.com and click "Sign Up to Dash." Fill in your name, email, phone number, and zip code. You'll then be asked to submit your driver's license information and consent to a background check. The background check is conducted by Checkr and typically takes two to five business days.`,
-        tip: `Quick Tip: DoorDash occasionally runs sign-up promotions where new Dashers earn a guaranteed minimum amount for their first deliveries. Check the sign-up page for any current offers in your market before completing registration.`,
+        tip: `Quick Tip: DoorDash sometimes runs sign-up promotions where new Dashers earn a guaranteed minimum amount for their first deliveries. Check the sign-up page for any current offers in your market before completing registration.`,
       },
       {
         title: `Download the Dasher app`,
@@ -643,7 +643,7 @@ The Dasher app is available for iPhone and Android and uses your phone's GPS for
 
 Amazon Flex pays between $18 and $25 per hour depending on your market and the type of delivery block. The rate is fixed and displayed before you accept a block — there's no tipping mechanism, but the hourly rate is set at a level that's generally competitive with other gig delivery work.
 
-Work on Amazon Flex is organized into "blocks" — scheduled time slots typically two to four hours long. You browse available blocks in the Flex app (which updates frequently throughout the day) and claim the ones that fit your schedule. Blocks during peak times like the holiday season, evenings, and weekends are in higher demand and go quickly.
+Work on Amazon Flex is organized into "blocks" — scheduled time slots typically two to four hours long. You browse available blocks in the Flex app (which updates often throughout the day) and claim the ones that fit your schedule. Blocks during peak times like the holiday season, evenings, and weekends are in higher demand and go quickly.
 
 To qualify for Amazon Flex, you must be at least 21 years old, have a valid US driver's license, own or have regular access to a mid-size or larger vehicle (a sedan, SUV, minivan, or truck — small compact cars may not hold all packages in a block), pass a background check, and have a smartphone running a compatible version of iOS or Android.
 
@@ -754,7 +754,7 @@ Because the workout is short and requires no equipment, the biggest barrier to s
       },
       {
         title: `Complete all 12 exercises`,
-        content: `The full circuit takes approximately 7 to 8 minutes from start to finish. After the final exercise, take a few minutes to walk slowly and let your heart rate come down. Some apps prompt you through a brief cool-down stretch at the end — follow along if offered, as stretching after exercise helps with recovery.`,
+        content: `The full circuit takes about 7 to 8 minutes from start to finish. After the final exercise, take a few minutes to walk slowly and let your heart rate come down. Some apps prompt you through a brief cool-down stretch at the end — follow along if offered, as stretching after exercise helps with recovery.`,
       },
       {
         title: `Build a daily habit`,
@@ -780,11 +780,11 @@ Silver Sneakers GO is a free app specifically designed for older adults and is a
 
 FitOn is a free workout app with a large selection of low-impact classes including yoga, Pilates, stretching, and seated exercises. The instructors are encouraging and the classes are available at multiple difficulty levels. There's no required equipment for most classes.
 
-Yoga for Seniors (by Down Dog or similar apps) offers yoga classes specifically modified for beginners and older adults, including chair yoga that doesn't require getting up and down from the floor. Chair yoga is particularly beneficial for people with mobility limitations.
+Yoga for Seniors (by Down Dog or similar apps) offers yoga classes specifically modified for beginners and older adults, including chair yoga that doesn't require getting up and down from the floor. Chair yoga is particularly helpful for people with mobility limitations.
 
 The 5-0 Radio Plus and other walking apps for older adults help structure walking routines. Walking remains one of the most recommended exercises by doctors for older adults — it's low-impact, free, and extremely effective for cardiovascular health when done consistently.
 
-Apple Fitness+ (included with Apple Watch) has a dedicated library of yoga, strength, and HIIT classes, and many instructors offer "modifications" during each class that demonstrate lower-impact versions of every exercise. It costs $9.99 per month or is included with some Apple One bundle plans.
+Apple Fitness+ (included with Apple Watch) has a dedicated library of yoga, strength, and HIIT classes, and many instructors offer "modifications" during each class that show lower-impact versions of every exercise. It costs $9.99 per month or is included with some Apple One bundle plans.
 
 A few principles to keep in mind: any exercise is better than none, pain is a signal to stop (not push through), and progress should be gradual. Starting with 10 to 15 minutes of gentle movement three times per week is a perfectly valid starting point that produces real results over weeks and months.`,
     steps: [

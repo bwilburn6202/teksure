@@ -136,7 +136,7 @@ export const guidesBatch265: Guide[] = [
     steps: [
       {
         title: "Start with the pantry and let expiration dates do the work",
-        content: "The pantry is the kindest place to start because most decisions are made for you. Pull every item to the counter. Check the date on each can, box, and jar. Anything more than two years past date, recycle the container and toss the contents. Anything in date and unopened, set aside for a local food pantry. Anything in date and opened, decide based on smell and whether it is still being used. Most pantries shed half their volume in two hours, and the room feels lighter immediately.",
+        content: "The pantry is the kindest place to start because most decisions are made for you. Pull every item to the counter. Check the date on each can, box, and jar. Anything more than two years past date, recycle the container and toss the contents. Anything in date and unopened, set aside for a local food pantry. Anything in date and opened, decide based on smell and whether it is still being used. Most pantries shed half their volume in two hours, and the room feels lighter right away.",
         tip: "Quick Tip: Call the local food bank first to ask what they accept. Many take in-date pantry items, but a few do not, and you want the donation trip to count.",
       },
       {

@@ -109,7 +109,7 @@ The best way to learn Excel is to start with a simple project. A monthly budget 
     thumbnailEmoji: ``,
     publishedAt: `2026-04-20`,
     difficulty: `Beginner`,
-    body: `PowerPoint Online is Microsoft's free, browser-based presentation tool. You do not need to buy software or install anything. Visit office.com in any web browser, sign in with a free Microsoft account, and you can start building slideshows immediately. Your presentations save automatically to OneDrive, and you can run your slideshow directly from the browser.
+    body: `PowerPoint Online is Microsoft's free, browser-based presentation tool. You do not need to buy software or install anything. Visit office.com in any web browser, sign in with a free Microsoft account, and you can start building slideshows right away. Your presentations save automatically to OneDrive, and you can run your slideshow directly from the browser.
 
 A presentation — sometimes called a slideshow — is a series of screens (called slides) that you show one at a time. Each slide can hold text, images, charts, or other visuals. PowerPoint Online gives you everything you need to make a clean, professional presentation for a meeting, a family gathering, a church group, a school project, or any occasion where you want to share information visually.
 
@@ -255,11 +255,11 @@ You will need a Microsoft account to use Clipchamp. If you are signed into Windo
     thumbnailEmoji: ``,
     publishedAt: `2026-04-20`,
     difficulty: `Beginner`,
-    body: `The Snipping Tool is a free program built into Windows that lets you capture screenshots — pictures of what is on your screen — and record video of your screen. It has been part of Windows for many years, but Microsoft significantly upgraded it in Windows 11 with a new design, a delay timer, an annotation pen, and a screen recording feature.
+    body: `The Snipping Tool is a free program built into Windows that lets you capture screenshots — pictures of what is on your screen — and record video of your screen. It has been part of Windows for many years, but Microsoft a lot upgraded it in Windows 11 with a new design, a delay timer, an annotation pen, and a screen recording feature.
 
 Screenshots are useful in many everyday situations: saving a photo of a confirmation number, capturing an error message to show a tech support person, documenting steps in a process, saving a recipe from a website, or capturing a conversation you want to keep. Instead of trying to describe what you see on screen to someone, you can send them a picture of it.
 
-The quickest way to take a screenshot on Windows is to press Win+Shift+S on your keyboard. This opens a small toolbar at the top of your screen and dims the display to indicate it is ready to capture. You then draw a rectangle around whatever you want to capture and it copies to your clipboard — ready to paste into an email, Word document, or image editor.
+The quickest way to take a screenshot on Windows is to press Win+Shift+S on your keyboard. This opens a small toolbar at the top of your screen and dims the display to show it is ready to capture. You then draw a rectangle around whatever you want to capture and it copies to your clipboard — ready to paste into an email, Word document, or image editor.
 
 The screen recording feature (new in Windows 11) lets you record a video of your screen so you can show someone how to do something, or save a video from a website that does not let you download it. Recordings save as MP4 video files on your computer.
 
@@ -267,7 +267,7 @@ Snipping Tool also has an annotation feature that lets you draw on your screensh
     steps: [
       {
         title: `Open Snipping Tool`,
-        content: `Press the Win+Shift+S keyboard shortcut to immediately start a snip, or click the Start menu, type Snipping Tool, and press Enter to open the full app. Opening the full app gives you access to settings, delay timers, and the screen recording feature. The keyboard shortcut is the fastest way to take a quick screenshot on the fly.`,
+        content: `Press the Win+Shift+S keyboard shortcut to right away start a snip, or click the Start menu, type Snipping Tool, and press Enter to open the full app. Opening the full app gives you access to settings, delay timers, and the screen recording feature. The keyboard shortcut is the fastest way to take a quick screenshot on the fly.`,
         tip: `Pin Snipping Tool to your taskbar by right-clicking its icon and selecting Pin to taskbar — this makes taking screenshots much faster whenever you need one.`,
       },
       {
@@ -310,7 +310,7 @@ The star feature is AI image generation. You type a description of what you want
 
 Designer is built on DALL-E, the same AI image technology that powers Bing Image Creator. Microsoft has integrated it into Designer with an easy-to-use interface that also lets you add text, change backgrounds, resize for different platforms (Instagram, Facebook, greeting card, etc.), and make other adjustments without leaving the browser.
 
-The free tier gives you a certain number of "boosts" per month — these are credits used for faster AI generation. Once your boosts run out, generation becomes a bit slower but still works. For typical personal use, the free tier is more than sufficient.
+The free tier gives you a certain number of "boosts" per month — these are credits used for faster AI generation. Once your boosts run out, generation becomes a bit slower but still works. For typical personal use, the free tier is more than enough.
 
 Images you create in Designer are yours to use for personal purposes. Be aware that AI-generated images in Microsoft Designer are covered by Microsoft's content policy and should not be used for commercial purposes without reviewing their terms of service first.`,
     steps: [
@@ -335,7 +335,7 @@ Images you create in Designer are yours to use for personal purposes. Be aware t
       {
         title: `Download your creation`,
         content: `When your design is ready, click the Download button (usually in the top-right corner of the editor). Choose your preferred file format — PNG is best for images you will share online, JPG works for most uses, and PDF is ideal if you plan to print. The file will download to your computer's Downloads folder. You can then share it by email, post it to social media, or print it.`,
-        warning: `AI-generated images can occasionally contain errors — hands with wrong numbers of fingers, text that is misspelled or garbled, or distorted faces. Always look over the image carefully before sharing or printing it.`,
+        warning: `AI-generated images can sometimes contain errors — hands with wrong numbers of fingers, text that is misspelled or garbled, or distorted faces. Always look over the image carefully before sharing or printing it.`,
       },
     ],
   },
@@ -528,7 +528,7 @@ A protective case with a built-in stand is nearly essential — tablets without 
     thumbnailEmoji: ``,
     publishedAt: `2026-04-20`,
     difficulty: `Beginner`,
-    body: `A Chromebook is a laptop that runs Chrome OS, an operating system made by Google. Unlike Windows or Mac laptops, a Chromebook does most of its work through web browsers and web-based apps rather than traditional installed software. This makes Chromebooks fast to start up, generally very secure, and significantly cheaper than comparable Windows or Mac laptops — many good Chromebooks sell for $200-$400.
+    body: `A Chromebook is a laptop that runs Chrome OS, an operating system made by Google. Unlike Windows or Mac laptops, a Chromebook does most of its work through web browsers and web-based apps rather than traditional installed software. This makes Chromebooks fast to start up, generally very secure, and a lot cheaper than comparable Windows or Mac laptops — many good Chromebooks sell for $200-$400.
 
 For a large number of everyday users, a Chromebook covers everything they need: browsing websites, checking email, video calls through Google Meet or Zoom, streaming YouTube and Netflix, using Google Docs, Sheets, and Slides (Google's free alternatives to Word, Excel, and PowerPoint), and connecting with family on social media. All of these work perfectly in a Chrome browser, which is the Chromebook's home territory.
 
@@ -589,7 +589,7 @@ Neither platform is inherently better — they are genuinely different tools tha
       },
       {
         title: `Compare app quality and availability`,
-        content: `Both platforms have access to thousands of apps, including all the major ones — Netflix, YouTube, Zoom, Facebook, Gmail, Google Maps, and so on. However, iPadOS apps are generally better optimized for the larger tablet screen. Many Android apps that run on tablets are stretched-out phone apps that do not take advantage of the larger display. For casual use this matters less, but for apps you use frequently — a reading app, a news app, a drawing app — iPad versions tend to be more polished.`,
+        content: `Both platforms have access to thousands of apps, including all the major ones — Netflix, YouTube, Zoom, Facebook, Gmail, Google Maps, and so on. However, iPadOS apps are generally better optimized for the larger tablet screen. Many Android apps that run on tablets are stretched-out phone apps that do not take advantage of the larger display. For casual use this matters less, but for apps you use often — a reading app, a news app, a drawing app — iPad versions tend to be more polished.`,
       },
       {
         title: `Understand the price differences`,
@@ -620,9 +620,9 @@ Neither platform is inherently better — they are genuinely different tools tha
 
 The two biggest providers of 5G home internet in the US are T-Mobile Home Internet and Verizon 5G Home Internet. Both services have grown rapidly since 2021 and now cover a large portion of the country. T-Mobile is available in more locations, including many suburban and rural areas. Verizon's 5G Home Internet offers faster speeds in the cities and neighborhoods it covers.
 
-The biggest appeal of 5G home internet is its pricing and simplicity. Both T-Mobile and Verizon charge a flat monthly rate — typically $50-$60 per month — with no installation fee, no annual contract, and no hidden fees. Cable and fiber internet often comes with promotional rates that jump significantly after the first year, plus installation fees, equipment rental fees, and contracts. 5G home internet avoids all of that.
+The biggest appeal of 5G home internet is its pricing and simplicity. Both T-Mobile and Verizon charge a flat monthly rate — typically $50-$60 per month — with no installation fee, no annual contract, and no hidden fees. Cable and fiber internet often comes with promotional rates that jump a lot after the first year, plus installation fees, equipment rental fees, and contracts. 5G home internet avoids all of that.
 
-Speed-wise, most 5G home internet customers experience download speeds of 100-300 Mbps, which is sufficient for streaming 4K video on multiple TVs simultaneously, video calls, browsing, and general home use. However, speeds depend heavily on your distance from cell towers and local network congestion, and some customers experience slower or less consistent speeds than cable or fiber.
+Speed-wise, most 5G home internet customers experience download speeds of 100-300 Mbps, which is enough for streaming 4K video on multiple TVs simultaneously, video calls, browsing, and general home use. However, speeds depend heavily on your distance from cell towers and local network congestion, and some customers experience slower or less consistent speeds than cable or fiber.
 
 5G home internet works best for households that primarily stream video, browse the web, and do video calls. It may not be the best choice for households with multiple people gaming online simultaneously or uploading very large files regularly.`,
     steps: [
@@ -646,7 +646,7 @@ Speed-wise, most 5G home internet customers experience download speeds of 100-30
       },
       {
         title: `Test your speeds and decide if it works for you`,
-        content: `Use the free speedtest.net tool on your phone or computer to test your download and upload speeds after getting the gateway set up. For streaming HD and 4K video, you want at least 25 Mbps download. For video calls, 10 Mbps is sufficient. For general family use with multiple devices, 100+ Mbps download is comfortable. Test speeds at different times of day — especially evenings when network congestion is typically highest — to get a realistic picture of everyday performance.`,
+        content: `Use the free speedtest.net tool on your phone or computer to test your download and upload speeds after getting the gateway set up. For streaming HD and 4K video, you want at least 25 Mbps download. For video calls, 10 Mbps is enough. For general family use with multiple devices, 100+ Mbps download is comfortable. Test speeds at different times of day — especially evenings when network congestion is typically highest — to get a realistic picture of everyday performance.`,
       },
     ],
   },
@@ -710,13 +710,13 @@ T-Mobile Home Internet has been one of the fastest-growing internet services in 
 
 The pricing structure is straightforward and predictable. As of 2026, T-Mobile Home Internet costs $50 per month for customers who also have a qualifying T-Mobile phone plan, or $60 per month as a standalone service. There are no annual contracts, no equipment rental fees (the gateway is free to keep), no installation fees, and no data caps. The price does not change after a promotional period.
 
-Typical speeds for T-Mobile Home Internet are 100-300 Mbps download and 20-50 Mbps upload, though speeds vary significantly based on your local tower capacity and how close you are to a T-Mobile tower. Evening hours (7-10 PM) can be slower than mid-day because more people are using the network simultaneously.
+Typical speeds for T-Mobile Home Internet are 100-300 Mbps download and 20-50 Mbps upload, though speeds vary a lot based on your local tower capacity and how close you are to a T-Mobile tower. Evening hours (7-10 PM) can be slower than mid-day because more people are using the network simultaneously.
 
 T-Mobile offers a 15-day in-home trial, so you can set up the service, test the speeds in your home, and cancel with a full refund if it does not meet your needs. This trial period makes it worth trying even if you are uncertain about the speeds in your area.`,
     steps: [
       {
         title: `Check eligibility at your home address`,
-        content: `Go to home.t-mobile.com in your browser and enter your home address. The site will tell you immediately if T-Mobile Home Internet is available at your address and what speeds are typically delivered there. Not every address qualifies — coverage depends on T-Mobile's tower network in your area. If you are not eligible at your current address, you can check back in a few months as T-Mobile continues expanding coverage.`,
+        content: `Go to home.t-mobile.com in your browser and enter your home address. The site will tell you right away if T-Mobile Home Internet is available at your address and what speeds are typically delivered there. Not every address qualifies — coverage depends on T-Mobile's tower network in your area. If you are not eligible at your current address, you can check back in a few months as T-Mobile continues expanding coverage.`,
       },
       {
         title: `Order online or visit a T-Mobile store`,
@@ -726,7 +726,7 @@ T-Mobile offers a 15-day in-home trial, so you can set up the service, test the 
       {
         title: `Unbox the gateway and find a good placement spot`,
         content: `The T-Mobile gateway is a cylindrical white device about 8 inches tall. Unbox it and before plugging it in, download the T-Mobile Internet app (free on iPhone and Android). Open the app and go to the signal finder tool — it uses your gateway's location to show you which spots in your home have the strongest signal from the nearest T-Mobile tower. Generally, placing the gateway near an exterior wall or window facing the direction of the nearest tower gives the best results.`,
-        warning: `Placing the gateway in the center of your home, in a basement, or behind large metal objects significantly reduces the cellular signal strength and can result in much slower speeds. Signal placement is the most important factor in your experience with T-Mobile Home Internet.`,
+        warning: `Placing the gateway in the center of your home, in a basement, or behind large metal objects a lot reduces the cellular signal strength and can result in much slower speeds. Signal placement is the most important factor in your experience with T-Mobile Home Internet.`,
       },
       {
         title: `Plug in and activate the gateway`,
@@ -765,7 +765,7 @@ If fiber is available at your address, it is generally worth switching from cabl
       },
       {
         title: `Understand fiber speed tiers and pricing`,
-        content: `Fiber providers typically offer multiple speed tiers. Common options are 300 Mbps, 500 Mbps, 1 Gigabit (1,000 Mbps), and in some areas 2 Gigabit or 5 Gigabit. For most households, a 500 Mbps or 1 Gigabit plan is more than sufficient. Pricing varies by provider and location, but fiber is often competitively priced with cable — AT&T Fiber's 1 Gigabit plan runs around $80 per month with no annual contract in most markets. Google Fiber charges $70 per month for 1 Gigabit. Ask about contract requirements and whether the price changes after the first year.`,
+        content: `Fiber providers typically offer multiple speed tiers. Common options are 300 Mbps, 500 Mbps, 1 Gigabit (1,000 Mbps), and in some areas 2 Gigabit or 5 Gigabit. For most households, a 500 Mbps or 1 Gigabit plan is more than enough. Pricing varies by provider and location, but fiber is often competitively priced with cable — AT&T Fiber's 1 Gigabit plan runs around $80 per month with no annual contract in most markets. Google Fiber charges $70 per month for 1 Gigabit. Ask about contract requirements and whether the price changes after the first year.`,
         tip: `Most fiber providers do not charge equipment rental fees — a router is included with your service. This contrasts with cable providers who often charge $15/month just to rent a modem. Over two years, that is $360 in equipment fees you are avoiding.`,
       },
       {
@@ -837,7 +837,7 @@ Subscription-based gifts (like a streaming service) should generally not be give
     thumbnailEmoji: ``,
     publishedAt: `2026-04-20`,
     difficulty: `Beginner`,
-    body: `A refurbished laptop is a previously owned or returned laptop that has been inspected, repaired if necessary, cleaned, and resold — often at a significantly lower price than a new model. "Certified refurbished" is the most important label to look for: it means a manufacturer, authorized reseller, or recognized third party has gone through a formal testing and inspection process before reselling the device.
+    body: `A refurbished laptop is a previously owned or returned laptop that has been inspected, repaired if necessary, cleaned, and resold — often at a a lot lower price than a new model. "Certified refurbished" is the most important label to look for: it means a manufacturer, authorized reseller, or recognized third party has gone through a formal testing and inspection process before reselling the device.
 
 Certified refurbished laptops can offer substantial savings — typically 30 to 50 percent less than buying the same model new. For budget-conscious buyers or for purchases where top-of-the-line performance is not critical (a laptop for email, web browsing, and video calls, for example), buying certified refurbished is a smart way to stretch your budget.
 
@@ -860,7 +860,7 @@ When evaluating a specific refurbished laptop, four things matter most: the proc
       },
       {
         title: `Verify storage type and battery status`,
-        content: `Look for "SSD" (Solid State Drive) in the storage description, not "HDD" (Hard Disk Drive). SSD storage makes everything significantly faster — Windows starts up in seconds rather than minutes, apps open instantly, and the laptop feels responsive. An SSD is one of the most important factors in how fast and pleasant a laptop feels to use. For battery, check if the listing mentions battery health — some sellers note "battery holds X% of original capacity." Below 70% means the laptop will have notably shorter unplugged runtime. If battery information is not listed, ask the seller or choose a listing that includes that detail.`,
+        content: `Look for "SSD" (Solid State Drive) in the storage description, not "HDD" (Hard Disk Drive). SSD storage makes everything a lot faster — Windows starts up in seconds rather than minutes, apps open instantly, and the laptop feels responsive. An SSD is one of the most important factors in how fast and pleasant a laptop feels to use. For battery, check if the listing mentions battery health — some sellers note "battery holds X% of original capacity." Below 70% means the laptop will have notably shorter unplugged runtime. If battery information is not listed, ask the seller or choose a listing that includes that detail.`,
         warning: `A refurbished laptop with HDD storage will feel very slow compared to modern expectations, even if all other specs look adequate. An SSD is non-negotiable for a pleasant experience in 2026. This is the most important specification to check.`,
       },
       {
@@ -886,7 +886,7 @@ Windows runs on computers made by many different manufacturers: Dell, HP, Lenovo
 
 Macs are made exclusively by Apple. The most affordable Mac laptop is the MacBook Air (starting at around $999), and the most affordable Mac desktop is the Mac mini (starting at around $599 plus the cost of a monitor and keyboard). This means Macs have a higher entry price, though Apple Silicon (the M-series chips Apple uses since 2020) has made MacBooks exceptionally fast and battery-efficient, which partly justifies the premium.
 
-Security is a topic that comes up in every Windows vs Mac discussion. Macs have historically faced fewer malware attacks than Windows PCs, largely because Windows has a much larger share of the market — making it a more attractive target for malicious software authors. However, Macs are not immune to malware, and Windows 11 has significantly improved security compared to older versions. Neither platform should be used without some basic security awareness, including a strong password, keeping the operating system updated, and being careful about what you download.
+Security is a topic that comes up in every Windows vs Mac discussion. Macs have historically faced fewer malware attacks than Windows PCs, largely because Windows has a much larger share of the market — making it a more attractive target for malicious software authors. However, Macs are not immune to malware, and Windows 11 has a lot improved security compared to older versions. Neither platform should be used without some basic security awareness, including a strong password, keeping the operating system updated, and being careful about what you download.
 
 Switching from one platform to the other is easier than it used to be. Most of the software people use daily — web browsers, email, Microsoft Office, Google Docs, Zoom, streaming services — runs on both platforms. The main friction points are file compatibility and muscle memory (keyboard shortcuts are different, and the interface conventions differ in ways that can feel disorienting at first).`,
     steps: [

@@ -189,7 +189,7 @@ export const guidesBatch192: Guide[] = [
       },
       {
         title: "Track your stipend and mileage payments",
-        content: "If you are in a stipend program, the sponsor pays you twice a month by direct deposit. The stipend is not counted as income for Social Security, Medicaid, food stamps, or housing assistance — federal law protects it. Mileage reimbursement comes separately, usually monthly, at the federal volunteer rate.",
+        content: "If you are in a stipend program, the sponsor pays you twice a month by direct deposit. The stipend is not counted as income for Social Security, Medicaid, food stamps, or housing help — federal law protects it. Mileage reimbursement comes separately, usually monthly, at the federal volunteer rate.",
       },
     ],
   },

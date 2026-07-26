@@ -75,7 +75,7 @@ export const guidesBatch201: Guide[] = [
       {
         title: "Confirm Costs Before Your First Visit",
         content: "Before the first appointment, ask the office to confirm what you will owe. Original Medicare covers 80 percent after the deductible. A Medigap supplement may cover the rest. Medicare Advantage plans charge a copay (often 20 to 50 dollars per visit). Knowing the cost ahead of time prevents surprises.",
-        tip: "If costs feel too high, ask the office about sliding-scale fees or financial hardship assistance."
+        tip: "If costs feel too high, ask the office about sliding-scale fees or financial hardship help."
       }
     ]
   },

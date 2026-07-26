@@ -73,7 +73,7 @@ After the call, if you recorded it, Zoom saves the recording to your computer (f
     steps: [
       {
         title: `Schedule or Start a New Meeting`,
-        content: `Open the Zoom app on your computer or phone. Click "New Meeting" to start immediately, or click "Schedule" to set a future date and time. When you schedule, Zoom gives you a link and Meeting ID that you can copy and send to participants via email or text.`,
+        content: `Open the Zoom app on your computer or phone. Click "New Meeting" to start right away, or click "Schedule" to set a future date and time. When you schedule, Zoom gives you a link and Meeting ID that you can copy and send to participants via email or text.`,
         tip: `Quick Tip: Turn on "Waiting Room" in your meeting settings at zoom.us before hosting so it applies to all your future meetings automatically.`,
       },
       {
@@ -312,7 +312,7 @@ Clearing your search history on your phone's browser is different from clearing 
       },
       {
         title: `Delete a Single Search`,
-        content: `Find the search you want to remove. Click or tap the three-dot menu (⋮) next to it. Select "Delete." That specific search is removed from your history immediately.`,
+        content: `Find the search you want to remove. Click or tap the three-dot menu (⋮) next to it. Select "Delete." That specific search is removed from your history right away.`,
       },
       {
         title: `Delete All Search History`,
@@ -630,7 +630,7 @@ Captions are generated automatically by Zoom's speech-to-text engine. Accuracy i
       },
       {
         title: `Turn On Captions During a Meeting`,
-        content: `Join or start a Zoom meeting. Look at the toolbar at the bottom of the Zoom window. Find the "CC" button (Closed Captions) or "Live Transcript" button. Click it and choose "Show Subtitles" or "Enable Auto-Transcription." Captions appear at the bottom of your screen immediately.`,
+        content: `Join or start a Zoom meeting. Look at the toolbar at the bottom of the Zoom window. Find the "CC" button (Closed Captions) or "Live Transcript" button. Click it and choose "Show Subtitles" or "Enable Auto-Transcription." Captions appear at the bottom of your screen right away.`,
         tip: `Quick Tip: If you do not see the CC button, click the "More" button (…) in the toolbar — it may be hidden there. Or ask the meeting host to enable captions.`,
       },
       {
@@ -666,7 +666,7 @@ For most everyday uses, local recording works great. The recording saves as an M
 
 Only the meeting host and any participants granted recording permission can record a Zoom meeting. Participants receive a notification when recording starts so everyone knows the call is being saved. This is an important privacy consideration — always let participants know before you start recording.
 
-The recording starts immediately when you click Record and continues until you stop it or the meeting ends. For a 60-minute meeting, the file might be 200–400 MB depending on video quality.`,
+The recording starts right away when you click Record and continues until you stop it or the meeting ends. For a 60-minute meeting, the file might be 200–400 MB depending on video quality.`,
     steps: [
       {
         title: `Start a Meeting as the Host`,
@@ -857,7 +857,7 @@ Reading List is not a replacement for bookmarks — bookmarks are for pages you 
       },
       {
         title: `Add a Page to Reading List on iPhone or Android`,
-        content: `In the Chrome app on your phone, tap the three-dot menu (⋮) in the top right corner. Scroll down and tap "Reading List" or "Add to Reading List." The page is saved immediately. On iPhone, you may also see the option in the share sheet.`,
+        content: `In the Chrome app on your phone, tap the three-dot menu (⋮) in the top right corner. Scroll down and tap "Reading List" or "Add to Reading List." The page is saved right away. On iPhone, you may also see the option in the share sheet.`,
       },
       {
         title: `Access Your Reading List`,

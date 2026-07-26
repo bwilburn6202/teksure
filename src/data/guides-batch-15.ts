@@ -29,7 +29,7 @@ export const guidesBatch15: Guide[] = [
       },
       {
         title: 'Close a frozen or unresponsive program',
-        content: `If a program shows "(Not Responding)" next to its name in Task Manager, it's frozen. Click on that program's name once to highlight it. Click "End Task" at the bottom right (or top right in newer Windows versions). The program will close immediately. You may lose any unsaved work in that program — this is a last resort when the program won't close normally.`,
+        content: `If a program shows "(Not Responding)" next to its name in Task Manager, it's frozen. Click on that program's name once to highlight it. Click "End Task" at the bottom right (or top right in newer Windows versions). The program will close right away. You may lose any unsaved work in that program — this is a last resort when the program won't close normally.`,
       },
       {
         title: 'Prevent programs from starting automatically',
@@ -62,7 +62,7 @@ export const guidesBatch15: Guide[] = [
       },
       {
         title: 'Empty the Trash',
-        content: `When you delete files on a Mac, they go to the Trash but don't actually free up space until you empty it. Right-click the Trash icon in the Dock at the bottom of your screen and click "Empty Trash." Click "Empty Trash" to confirm. Depending on what's in your Trash, this might free up a significant amount of storage immediately.`,
+        content: `When you delete files on a Mac, they go to the Trash but don't actually free up space until you empty it. Right-click the Trash icon in the Dock at the bottom of your screen and click "Empty Trash." Click "Empty Trash" to confirm. Depending on what's in your Trash, this might free up a significant amount of storage right away.`,
       },
       {
         title: 'Delete large files you no longer need',
@@ -89,7 +89,7 @@ export const guidesBatch15: Guide[] = [
     steps: [
       {
         title: 'Open Spotlight',
-        content: 'Press the Command key (, the key with the Apple logo or a clover symbol) and the Spacebar at the same time. A search bar appears in the center of your screen. Start typing immediately — results appear as you type.',
+        content: 'Press the Command key (, the key with the Apple logo or a clover symbol) and the Spacebar at the same time. A search bar appears in the center of your screen. Start typing right away — results appear as you type.',
         tip: `You can also click the small magnifying glass icon () in the top right corner of your Mac's menu bar to open Spotlight.`,
       },
       {
@@ -98,7 +98,7 @@ export const guidesBatch15: Guide[] = [
       },
       {
         title: 'Do calculations and conversions',
-        content: 'Spotlight doubles as a calculator and unit converter. Type a math problem: "45 x 7" and see the answer immediately. Type a conversion: "72 fahrenheit in celsius" or "5 miles in kilometers" or "20 dollars in euros." The answer appears right in the search bar without opening any app.',
+        content: 'Spotlight doubles as a calculator and unit converter. Type a math problem: "45 x 7" and see the answer right away. Type a conversion: "72 fahrenheit in celsius" or "5 miles in kilometers" or "20 dollars in euros." The answer appears right in the search bar without opening any app.',
       },
       {
         title: 'Search for words within documents',
@@ -320,7 +320,7 @@ export const guidesBatch15: Guide[] = [
       },
       {
         title: 'Recover a photo',
-        content: 'Tap a photo to select it. Tap "Recover" at the bottom right of the screen. Tap "Recover Photo" to confirm. The photo moves back to your main photo library immediately and appears in the "Recents" album as well as its original location.',
+        content: 'Tap a photo to select it. Tap "Recover" at the bottom right of the screen. Tap "Recover Photo" to confirm. The photo moves back to your main photo library right away and appears in the "Recents" album as well as its original location.',
       },
       {
         title: 'Recover multiple photos at once',
@@ -377,20 +377,20 @@ export const guidesBatch15: Guide[] = [
     thumbnailEmoji: '',
     publishedAt: '2026-04-19',
     difficulty: 'Beginner',
-    body: "Many internet, phone, and technology programs offer significant discounts — or are completely free — for seniors, people on Medicare, or those with lower incomes. These programs exist to ensure everyone can afford internet access and communication. Here's a guide to the most important ones available in the US.",
+    body: "Many internet, phone, and technology programs offer significant discounts — or are completely free — for seniors, people on Medicare, or those with lower incomes. These programs exist to make sure everyone can afford internet access and communication. Here's a guide to the most important ones available in the US.",
     steps: [
       {
         title: 'FCC Lifeline Program — Free or discounted phone/internet service',
-        content: 'The Lifeline program provides up to $9.25/month discount on phone or internet service for qualifying households. You qualify if you receive Medicaid, SNAP (food stamps), SSI, Federal Public Housing Assistance, or Veterans Pension Benefits. To apply: go to lifelinesupport.org to find participating providers in your area and apply online. Call 1-800-234-9473 for help.',
-        tip: `The Emergency Connectivity Fund and other federal programs expanded broadband access significantly. If you've been denied before, recheck — eligibility rules and funding change.`,
+        content: 'The Lifeline program provides up to $9.25/month discount on phone or internet service for qualifying households. You qualify if you receive Medicaid, SNAP (food stamps), SSI, Federal Public Housing Help, or Veterans Pension Benefits. To apply: go to lifelinesupport.org to find participating providers in your area and apply online. Call 1-800-234-9473 for help.',
+        tip: `The Emergency Connectivity Fund and other federal programs expanded broadband access a lot. If you've been denied before, recheck — eligibility rules and funding change.`,
       },
       {
         title: 'Comcast Internet Essentials — Low-cost internet',
-        content: 'Comcast offers Internet Essentials to low-income households, including those with seniors receiving public assistance. The service provides home internet for $9.95/month (speeds up to 100 Mbps) plus the option to purchase a discounted computer. Apply at internetessentials.com or call 1-855-846-8376. Must live in a Comcast service area and not have had Comcast internet in the past 90 days.',
+        content: 'Comcast offers Internet Essentials to low-income households, including those with seniors receiving public help. The service provides home internet for $9.95/month (speeds up to 100 Mbps) plus the option to purchase a discounted computer. Apply at internetessentials.com or call 1-855-846-8376. Must live in a Comcast service area and not have had Comcast internet in the past 90 days.',
       },
       {
         title: 'AT&T Access and other carrier discount programs',
-        content: `AT&T offers AT&T Access for about $10/month for qualifying households (Medicaid, SNAP, SSI, federal housing assistance). Spectrum also offers $14.99/month internet for qualifying customers. T-Mobile and Verizon have low-income phone programs. Call your current phone or internet carrier and ask specifically: "Do you have a low-income or senior discount program I might qualify for?" Many people don't know to ask.`,
+        content: `AT&T offers AT&T Access for about $10/month for qualifying households (Medicaid, SNAP, SSI, federal housing help). Spectrum also offers $14.99/month internet for qualifying customers. T-Mobile and Verizon have low-income phone programs. Call your current phone or internet carrier and ask specifically: "Do you have a low-income or senior discount program I might qualify for?" Many people don't know to ask.`,
       },
       {
         title: 'Free tech training and help programs',
@@ -427,8 +427,8 @@ export const guidesBatch15: Guide[] = [
       },
       {
         title: 'Browse and borrow e-books',
-        content: `Tap "Search" at the bottom to look for a specific book by title or author. Tap "Browse" to explore popular books, recent releases, or categories. When you find a book you want, tap it, then tap "Borrow." If it's available, it downloads to your device immediately. If there's a waiting list (popular books may have holds), tap "Place a Hold" and you'll be notified when it's your turn.`,
-        tip: 'The "Available Now" filter (look for it in the search or browse filters) shows only books you can borrow immediately without waiting. Great for finding something to read right now.',
+        content: `Tap "Search" at the bottom to look for a specific book by title or author. Tap "Browse" to explore popular books, recent releases, or categories. When you find a book you want, tap it, then tap "Borrow." If it's available, it downloads to your device right away. If there's a waiting list (popular books may have holds), tap "Place a Hold" and you'll be notified when it's your turn.`,
+        tip: 'The "Available Now" filter (look for it in the search or browse filters) shows only books you can borrow right away without waiting. Great for finding something to read right now.',
       },
       {
         title: 'Read e-books and listen to audiobooks',

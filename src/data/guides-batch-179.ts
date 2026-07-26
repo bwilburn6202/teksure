@@ -98,7 +98,7 @@ export const guidesBatch179: Guide[] = [
       },
       {
         title: "Carry a medical card in your wallet",
-        content: "Keep a paper card behind your driver's license listing your conditions, medications, allergies, blood type, doctor, and emergency contacts. Paramedics are trained to check wallets immediately for ID."
+        content: "Keep a paper card behind your driver's license listing your conditions, medications, allergies, blood type, doctor, and emergency contacts. Paramedics are trained to check wallets right away for ID."
       },
       {
         title: "Sign up for the Vial of Life program",

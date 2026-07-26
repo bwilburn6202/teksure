@@ -269,7 +269,7 @@ export const guidesBatch243: Guide[] = [
       {
         title: "Connect With Health and Mental Health Services",
         content: "Resettlement agencies often partner with refugee health clinics and mental health programs for refugees and asylees. These services usually accept Medicaid, Medicare, or sliding-scale fees, and many use trained medical interpreters. Mental health counselors who specialize in war trauma, torture survivors, and family separation grief work at many agencies under the federal Survivors of Torture program. Ask whether your area has the program. Even seniors who feel they are managing well can benefit from a few sessions with a counselor who shares the cultural background of home.",
-        warning: "Refugee Medical Assistance often ends 12 months after arrival. After that, seniors transition to Medicaid or Medicare. The agency can help you apply before coverage ends."
+        warning: "Refugee Medical Help often ends 12 months after arrival. After that, seniors transition to Medicaid or Medicare. The agency can help you apply before coverage ends."
       },
       {
         title: "Build a Long-Term Relationship With the Agency",

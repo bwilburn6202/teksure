@@ -221,11 +221,11 @@ To be protected, you need to freeze your credit at all three bureaus — Experia
       },
       {
         title: `Freeze your Experian credit report`,
-        content: `Go to experian.com/freeze. Click "Add a security freeze". Create an account with your email, or log in if you have one. Answer identity verification questions. Save the PIN Experian provides — you need it to thaw the freeze later. The freeze takes effect immediately online.`,
+        content: `Go to experian.com/freeze. Click "Add a security freeze". Create an account with your email, or log in if you have one. Answer identity verification questions. Save the PIN Experian provides — you need it to thaw the freeze later. The freeze takes effect right away online.`,
       },
       {
         title: `Freeze your Equifax credit report`,
-        content: `Go to equifax.com/personal/credit-report-services. Click "Place or manage a freeze". Create a myEquifax account. Verify your identity with security questions. The freeze takes effect immediately. Save your Equifax login credentials securely.`,
+        content: `Go to equifax.com/personal/credit-report-services. Click "Place or manage a freeze". Create a myEquifax account. Verify your identity with security questions. The freeze takes effect right away. Save your Equifax login credentials securely.`,
       },
       {
         title: `Freeze your TransUnion credit report`,
@@ -324,7 +324,7 @@ Setting up contactless payments takes about five minutes. On iPhone, use the bui
       },
     ],
     tip: `Quick Tip: Set your most-used card as your default in Wallet settings. That way, tap-to-pay uses it automatically without you picking each time.`,
-    warning: `If your phone is lost or stolen, remotely lock it immediately using Find My iPhone (iPhone) or Find My Device (Android). The Wallet/Pay features stop working the moment the phone is locked remotely, even if it is offline.`,
+    warning: `If your phone is lost or stolen, remotely lock it right away using Find My iPhone (iPhone) or Find My Device (Android). The Wallet/Pay features stop working the moment the phone is locked remotely, even if it is offline.`,
   },
   {
     slug: `power-bank-buying-guide`,
@@ -575,7 +575,7 @@ What does NOT transfer automatically: WhatsApp chat history (though a newer spec
     difficulty: `Beginner`,
     body: `A brand-new computer out of the box is not quite ready to use — and the settings you pick in the first hour shape how secure, fast, and useful the machine will be for the next five years. Most people plug in, click through every setup prompt as fast as possible, and end up with privacy settings set to "share everything," no backups configured, and half the drive full of pre-installed bloatware apps they will never use.
 
-This checklist covers the setup steps in the order that actually matters. The single most important first step is to run all system updates immediately — Windows Update on a PC, or System Settings → General → Software Update on a Mac. A brand-new computer may have been sitting on a shelf for six months, and security patches released during that time need to be installed before you do anything else online. After updates, set a strong password for your user account, turn on disk encryption (BitLocker on Windows Pro, FileVault on Mac), and install a password manager. These three steps make your computer drastically more secure than 80% of machines in homes today.
+This checklist covers the setup steps in the order that actually matters. The single most important first step is to run all system updates right away — Windows Update on a PC, or System Settings → General → Software Update on a Mac. A brand-new computer may have been sitting on a shelf for six months, and security patches released during that time need to be installed before you do anything else online. After updates, set a strong password for your user account, turn on disk encryption (BitLocker on Windows Pro, FileVault on Mac), and install a password manager. These three steps make your computer drastically more secure than 80% of machines in homes today.
 
 Only after the security basics are handled should you sign in to cloud services (Google, iCloud, OneDrive), install your web browser of choice, transfer files from your old computer (see the dedicated file-transfer guide), set up backups (Windows File History or Mac Time Machine), and uninstall the factory bloatware on Windows (HP, Dell, and Lenovo PCs ship with dozens of unwanted apps). Plan to spend 2-3 hours total on a proper setup. It is worth the investment.`,
     steps: [
@@ -739,7 +739,7 @@ If the basics are fine, try force-closing the app completely and reopening it. I
     steps: [
       {
         title: `Pull down to force refresh`,
-        content: `On iOS Mail, Gmail, or Outlook app: pull down on the inbox list until you see a spinning wheel. On desktop Outlook: press F9 or click Send/Receive → Send/Receive All Folders. On webmail: just reload the page. This forces a sync attempt immediately — sometimes the app was just waiting for its next scheduled check.`,
+        content: `On iOS Mail, Gmail, or Outlook app: pull down on the inbox list until you see a spinning wheel. On desktop Outlook: press F9 or click Send/Receive → Send/Receive All Folders. On webmail: just reload the page. This forces a sync attempt right away — sometimes the app was just waiting for its next scheduled check.`,
       },
       {
         title: `Check if the provider is down`,
@@ -861,7 +861,7 @@ Naming files well makes them searchable and sortable. The best pattern: YYYY-MM-
       },
       {
         title: `Adopt the "One Touch Rule"`,
-        content: `When a file comes in (you scan a receipt, save a PDF, receive an email attachment), immediately do ONE of three things: (1) save it with a proper name to the right folder, (2) delete it if it is junk, or (3) put it in a single "Inbox" folder to process later (emptied weekly). Never save with the default name "Document1.pdf" and plan to rename later — you will not.`,
+        content: `When a file comes in (you scan a receipt, save a PDF, receive an email attachment), right away do ONE of three things: (1) save it with a proper name to the right folder, (2) delete it if it is junk, or (3) put it in a single "Inbox" folder to process later (emptied weekly). Never save with the default name "Document1.pdf" and plan to rename later — you will not.`,
       },
     ],
     tip: `Quick Tip: On Mac, you can apply colored tags to files (right-click → Tags). Use tags sparingly for things like "Tax-deductible" or "Reference" that cut across topics. Tags are Mac-specific and do not always transfer.`,
@@ -896,7 +896,7 @@ Both macOS and Windows have built-in tools to help. macOS Stacks groups desktop 
       },
       {
         title: `Use Stacks on macOS`,
-        content: `Right-click the desktop → Use Stacks (or View → Use Stacks). Files automatically group into stacks by type: Images, PDFs, Documents, Screenshots. Click a stack to expand it. This makes a messy desktop immediately usable — though the underlying clutter is still there. Combine Stacks with regular cleanup for best results.`,
+        content: `Right-click the desktop → Use Stacks (or View → Use Stacks). Files automatically group into stacks by type: Images, PDFs, Documents, Screenshots. Click a stack to expand it. This makes a messy desktop right away usable — though the underlying clutter is still there. Combine Stacks with regular cleanup for best results.`,
       },
       {
         title: `Use Sort By and folders on Windows`,
@@ -908,7 +908,7 @@ Both macOS and Windows have built-in tools to help. macOS Stacks groups desktop 
       },
       {
         title: `Decide what CAN live on the desktop`,
-        content: `Long-term desktop residents should be rare: maybe a shortcut to a current project folder, a frequently-used app shortcut, or one reference document you open daily. Everything else goes in Documents. Screenshots are the #1 desktop clutter source — consider changing the default save location (Mac: Command+Shift+5 → Options → Other Location).`,
+        content: `Long-term desktop residents should be rare: maybe a shortcut to a current project folder, a often-used app shortcut, or one reference document you open daily. Everything else goes in Documents. Screenshots are the #1 desktop clutter source — consider changing the default save location (Mac: Command+Shift+5 → Options → Other Location).`,
       },
       {
         title: `Create a "Junk Drawer" folder in Documents`,

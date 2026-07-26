@@ -37,7 +37,7 @@ export const guidesBatch302: Guide[] = [
       },
       {
         title: "Print the temporary card and store the permanent one",
-        content: "After passing, the system emails a temporary card immediately. Print two copies. Keep one in the wallet and one in the boat's glove box inside a waterproof zip bag. The permanent plastic card arrives by mail in 1 to 3 weeks. The card is a lifetime credential and never expires. A senior moving to a new state should keep the original card because NASBLA reciprocity recognizes any state-issued NASBLA-approved card. Sources include nasbla.org, boatus.org/boatered, and the state Fish and Wildlife agency page.",
+        content: "After passing, the system emails a temporary card right away. Print two copies. Keep one in the wallet and one in the boat's glove box inside a waterproof zip bag. The permanent plastic card arrives by mail in 1 to 3 weeks. The card is a lifetime credential and never expires. A senior moving to a new state should keep the original card because NASBLA reciprocity recognizes any state-issued NASBLA-approved card. Sources include nasbla.org, boatus.org/boatered, and the state Fish and Wildlife agency page.",
       },
     ],
   },
@@ -214,7 +214,7 @@ export const guidesBatch302: Guide[] = [
       },
       {
         title: "Apply broad-spectrum sunscreen on every exposed area",
-        content: "Apply broad-spectrum SPF 30 or higher sunscreen 15 minutes before leaving the dock. Cover the face, the ears, the lips, the back of the neck, the tops of the hands, and the tops of the feet if wearing sandals. Reapply every 2 hours and immediately after any swim or wash. Two ounces, roughly a shot glass, covers an adult body. A senior should pick a stick sunscreen for the face because the stick does not drip into the eyes when sweating. Banana Boat, Neutrogena, and CeraVe stick sunscreens are easy to find.",
+        content: "Apply broad-spectrum SPF 30 or higher sunscreen 15 minutes before leaving the dock. Cover the face, the ears, the lips, the back of the neck, the tops of the hands, and the tops of the feet if wearing sandals. Reapply every 2 hours and right away after any swim or wash. Two ounces, roughly a shot glass, covers an adult body. A senior should pick a stick sunscreen for the face because the stick does not drip into the eyes when sweating. Banana Boat, Neutrogena, and CeraVe stick sunscreens are easy to find.",
       },
       {
         title: "Add shade on the boat for the midday hours",
@@ -222,7 +222,7 @@ export const guidesBatch302: Guide[] = [
       },
       {
         title: "Watch for heat exhaustion and act at the first symptom",
-        content: "Symptoms of heat exhaustion include cool moist skin, a fast pulse, dizziness, nausea, headache, and muscle cramps in the legs. A senior who notices any of these symptoms should move to shade, sit down, drink 16 ounces of water mixed with electrolyte powder, pour cool water on the wrists and neck, and rest for 30 minutes. If the symptoms include hot dry skin, confusion, or a body temperature above 103 degrees Fahrenheit, the condition has escalated to heat stroke. Call 911 immediately and cool the person aggressively with water and ice while waiting. Sources include cdc.gov/extreme-heat, aad.org/sun-protection, skincancer.org, and boatus.org.",
+        content: "Symptoms of heat exhaustion include cool moist skin, a fast pulse, dizziness, nausea, headache, and muscle cramps in the legs. A senior who notices any of these symptoms should move to shade, sit down, drink 16 ounces of water mixed with electrolyte powder, pour cool water on the wrists and neck, and rest for 30 minutes. If the symptoms include hot dry skin, confusion, or a body temperature above 103 degrees Fahrenheit, the condition has escalated to heat stroke. Call 911 right away and cool the person aggressively with water and ice while waiting. Sources include cdc.gov/extreme-heat, aad.org/sun-protection, skincancer.org, and boatus.org.",
       },
     ],
   },

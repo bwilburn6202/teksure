@@ -252,7 +252,7 @@ export const guidesBatch233: Guide[] = [
       {
         title: "Use the Medicare Plan Finder Carefully",
         content: "Go to medicare.gov and click Find Plans. Sign in with your Medicare account, or create one with your Medicare number from your red, white, and blue card. The Plan Finder will ask for your ZIP code. Enter your domicile ZIP code, not your snowbird ZIP code, because Medicare Advantage plans are sold by region of residence. Then check the box that says I want a plan that covers me when I travel, which filters for national PPO options. Compare three to five plans side by side. Look at the monthly premium, the in-network deductible, the out-of-pocket maximum, the network coverage, the prescription drug formulary, and whether your specific medications are covered. Add your doctors at home and in Florida by name to confirm they are in the plan's network. Add your medications to confirm the formulary tier and cost.",
-        tip: "Save your comparison as a PDF using your browser's print function. Bring the PDF to any conversation with a family member or a State Health Insurance Assistance Program counselor."
+        tip: "Save your comparison as a PDF using your browser's print function. Bring the PDF to any conversation with a family member or a State Health Insurance Help Program counselor."
       },
       {
         title: "Use the Right Enrollment Window",

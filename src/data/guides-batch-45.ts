@@ -469,8 +469,8 @@ You can manage your trusted devices from any iPhone, iPad, Mac, or from appleid.
       },
       {
         title: `Remove an Old or Unrecognized Device`,
-        content: `Tap the device you want to remove. Scroll to the bottom and tap "Remove from Account." A confirmation dialog warns you that the device will no longer be trusted for two-factor authentication. Tap "Remove" to confirm. The device is unlinked from your Apple ID immediately.`,
-        warning: `If you see a device you do not recognize, remove it immediately. An unrecognized device could indicate someone else has access to your Apple ID — consider also changing your Apple ID password.`,
+        content: `Tap the device you want to remove. Scroll to the bottom and tap "Remove from Account." A confirmation dialog warns you that the device will no longer be trusted for two-factor authentication. Tap "Remove" to confirm. The device is unlinked from your Apple ID right away.`,
+        warning: `If you see a device you do not recognize, remove it right away. An unrecognized device could show someone else has access to your Apple ID — consider also changing your Apple ID password.`,
       },
       {
         title: `Remove Devices via Apple ID Website`,
@@ -497,7 +497,7 @@ Password Checkup is free and built into Chrome — no extension or subscription 
 
 Running a password checkup takes less than a minute and can reveal serious vulnerabilities you did not know about. It is one of the most useful and underused security tools available to everyday users.
 
-After running the checkup, Chrome gives you direct links to the affected websites so you can go change your password immediately. You do not need to search for the site or remember the URL.`,
+After running the checkup, Chrome gives you direct links to the affected websites so you can go change your password right away. You do not need to search for the site or remember the URL.`,
     steps: [
       {
         title: `Open Chrome's Password Manager`,
@@ -510,7 +510,7 @@ After running the checkup, Chrome gives you direct links to the affected website
       },
       {
         title: `Review the Results`,
-        content: `The checkup shows three categories: Compromised (found in a data breach — fix these immediately), Weak (easy to guess — update when you can), and Reused (used across multiple sites — create unique passwords for important accounts). The most urgent ones appear at the top.`,
+        content: `The checkup shows three categories: Compromised (found in a data breach — fix these right away), Weak (easy to guess — update when you can), and Reused (used across multiple sites — create unique passwords for important accounts). The most urgent ones appear at the top.`,
       },
       {
         title: `Fix Compromised Passwords First`,
@@ -550,7 +550,7 @@ Some carriers charge a small monthly fee for Visual Voicemail; others include it
       },
       {
         title: `Record Your Greeting`,
-        content: `When prompted by the voicemail system, choose to record a personal greeting. Press the appropriate number (usually 1 or 2 as instructed), wait for the tone, and speak clearly: "Hi, you've reached [your name]. Please leave your name, number, and message and I'll call you back as soon as I can." Press # or the key indicated to finish recording. Listen and re-record if needed.`,
+        content: `When prompted by the voicemail system, choose to record a personal greeting. Press the appropriate number (usually 1 or 2 as instructed), wait for the tone, and speak clearly: "Hi, you've reached [your name]. Please leave your name, number, and message and I'll call you back as soon as I can." Press # or the key showed to finish recording. Listen and re-record if needed.`,
       },
       {
         title: `Check Voicemail Using Visual Voicemail`,

@@ -61,7 +61,7 @@ Watch a walkthrough: search YouTube for "Medicare Plan Finder tutorial AARP" —
       },
       {
         title: 'Get free help if you get stuck',
-        content: 'Every state has a free Medicare counseling program called SHIP (State Health Insurance Assistance Program). SHIP counselors are trained, unbiased, and do not sell anything. Find your local SHIP by calling 1-877-839-2675 or going to shiphelp.org. AARP also has a free Medicare hotline at 1-877-227-1620 — they can walk you through the plan comparison over the phone if you prefer not to use the website. Both services are free for everyone, including non-AARP members.',
+        content: 'Every state has a free Medicare counseling program called SHIP (State Health Insurance Help Program). SHIP counselors are trained, unbiased, and do not sell anything. Find your local SHIP by calling 1-877-839-2675 or going to shiphelp.org. AARP also has a free Medicare hotline at 1-877-227-1620 — they can walk you through the plan comparison over the phone if you prefer not to use the website. Both services are free for everyone, including non-AARP members.',
         tip: 'Quick Tip: Avoid the unsolicited phone calls and TV commercials that say "Compare plans now!" Many of those go to insurance brokers paid commission for steering you to specific plans. SHIP and AARP have no financial stake.',
       },
     ],
@@ -202,7 +202,7 @@ Watch a walkthrough: search YouTube for "how to cancel Netflix Disney Plus Hulu 
       },
       {
         title: 'Netflix',
-        content: 'Open a web browser and go to netflix.com. Sign in. Click your profile picture (top right) → "Account." Scroll to "Membership & Billing." Click "Cancel Membership." Confirm. Netflix keeps your account active through the end of the current billing period — you do not lose access immediately. If you change your mind in the next 10 months, your viewing history and downloads come back automatically when you restart.',
+        content: 'Open a web browser and go to netflix.com. Sign in. Click your profile picture (top right) → "Account." Scroll to "Membership & Billing." Click "Cancel Membership." Confirm. Netflix keeps your account active through the end of the current billing period — you do not lose access right away. If you change your mind in the next 10 months, your viewing history and downloads come back automatically when you restart.',
       },
       {
         title: 'Disney+ / Hulu / ESPN+ (the Disney bundle)',
@@ -219,7 +219,7 @@ Watch a walkthrough: search YouTube for "how to cancel Netflix Disney Plus Hulu 
       },
       {
         title: 'Apple TV+',
-        content: 'On iPhone or iPad: Settings → tap your name → Subscriptions → "Apple TV+" → "Cancel Subscription." On a Mac: open the TV app → Account menu → View My Account → Settings → Subscriptions → Manage → Cancel. On a Windows PC or web browser: tv.apple.com → click your profile picture → Settings → Subscriptions → Cancel. Apple TV+ frequently offers a free month to lure you back — read carefully before accepting.',
+        content: 'On iPhone or iPad: Settings → tap your name → Subscriptions → "Apple TV+" → "Cancel Subscription." On a Mac: open the TV app → Account menu → View My Account → Settings → Subscriptions → Manage → Cancel. On a Windows PC or web browser: tv.apple.com → click your profile picture → Settings → Subscriptions → Cancel. Apple TV+ often offers a free month to lure you back — read carefully before accepting.',
       },
       {
         title: 'Peacock, Paramount+, Discovery+, AMC+, Britbox, Acorn',
@@ -227,7 +227,7 @@ Watch a walkthrough: search YouTube for "how to cancel Netflix Disney Plus Hulu 
       },
       {
         title: 'Replace a stolen card without losing access (the trick)',
-        content: 'If your card is replaced and you do not want any streaming service to renew, do nothing — they will all fail to charge and put your account in a paused state for 7-30 days. After that, they cancel automatically. This is the lazy person\'s mass cancellation. The only catch: you lose access immediately when each charge fails, not at the end of the billing month. Use this trick only if you genuinely want to cancel.',
+        content: 'If your card is replaced and you do not want any streaming service to renew, do nothing — they will all fail to charge and put your account in a paused state for 7-30 days. After that, they cancel automatically. This is the lazy person\'s mass cancellation. The only catch: you lose access right away when each charge fails, not at the end of the billing month. Use this trick only if you genuinely want to cancel.',
         tip: 'Quick Tip: A separate "subscription debit card" through Privacy.com (free for personal use) lets you create a virtual card just for subscriptions. Cancel a service by deleting the virtual card — no website hunting needed.',
       },
     ],
@@ -342,7 +342,7 @@ Watch a walkthrough: search YouTube for "TP-Link Kasa smart plug setup 2026" for
       },
       {
         title: 'Troubleshooting — when the plug stops responding',
-        content: 'Smart plugs occasionally drop off Wi-Fi (after a router reboot, or weak signal). Fixes in order: (1) Unplug the smart plug, wait 30 seconds, plug it back in. (2) Force-close the brand app and reopen it. (3) Open the app, find the plug, tap Settings → "Re-connect to Wi-Fi" or similar. (4) Last resort — hold the side button for 10 seconds to reset, then run setup again. If a plug keeps dropping off, the Wi-Fi signal in that part of the house may be weak — try moving the plug to a different outlet, or get a Wi-Fi extender.',
+        content: 'Smart plugs sometimes drop off Wi-Fi (after a router reboot, or weak signal). Fixes in order: (1) Unplug the smart plug, wait 30 seconds, plug it back in. (2) Force-close the brand app and reopen it. (3) Open the app, find the plug, tap Settings → "Re-connect to Wi-Fi" or similar. (4) Last resort — hold the side button for 10 seconds to reset, then run setup again. If a plug keeps dropping off, the Wi-Fi signal in that part of the house may be weak — try moving the plug to a different outlet, or get a Wi-Fi extender.',
       },
     ],
   },
@@ -370,7 +370,7 @@ Watch the recovery flow: search YouTube for "Google account recovery 2026" for c
       {
         title: 'Start at the official recovery page (not a Google search)',
         content: 'Open a web browser and type accounts.google.com/signin/recovery directly in the address bar. Do not Google "google account recovery" — the first results are sometimes scam sites that look identical. The real page starts by asking for your email address (the one you are recovering). Type it carefully. Click Next.',
-        warning: 'If a recovery site asks for your credit card, your Social Security number, or a fee — leave immediately. Google account recovery is 100% free and never asks for payment.',
+        warning: 'If a recovery site asks for your credit card, your Social Security number, or a fee — leave right away. Google account recovery is 100% free and never asks for payment.',
       },
       {
         title: 'Try your most recent password first',
@@ -393,7 +393,7 @@ Watch the recovery flow: search YouTube for "Google account recovery 2026" for c
       {
         title: 'When Google asks the hard questions — accuracy matters',
         content: 'If no recovery phone, email, or device works, Google asks identity questions: when did you create the account (year and month), what was your first password, give the email addresses of 3 people you message often, name two Google services you use (YouTube, Drive, Photos, etc.). Answer as accurately as you can — guesses lower your trust score. If you are not sure, "I do not know" is better than a wrong answer in some cases (Google\'s algorithm weights uncertainty differently than wrong confidence). Submit. Google reviews the answers automatically and replies within minutes to 48 hours.',
-        warning: 'After this step, do not submit again immediately if you fail. Each rapid retry lowers your trust score and may lock recovery for 24+ hours.',
+        warning: 'After this step, do not submit again right away if you fail. Each rapid retry lowers your trust score and may lock recovery for 24+ hours.',
       },
       {
         title: 'If Google says no — try from a familiar device and location',
@@ -401,7 +401,7 @@ Watch the recovery flow: search YouTube for "Google account recovery 2026" for c
       },
       {
         title: 'Set up recovery options the moment you are back in',
-        content: 'Once you are signed in, immediately go to myaccount.google.com → Security → "Ways we can verify it is you." Add: (1) Recovery phone — your cell number. (2) Recovery email — a spouse or family member email works as backup. (3) Two-step verification with an authenticator app (Google Authenticator, Authy). (4) At least 8 backup codes — print them and put them in your wallet or safe. This combination makes future recovery a 60-second job, not a multi-day ordeal.',
+        content: 'Once you are signed in, right away go to myaccount.google.com → Security → "Ways we can verify it is you." Add: (1) Recovery phone — your cell number. (2) Recovery email — a spouse or family member email works as backup. (3) Two-step verification with an authenticator app (Google Authenticator, Authy). (4) At least 8 backup codes — print them and put them in your wallet or safe. This combination makes future recovery a 60-second job, not a multi-day ordeal.',
         tip: 'Quick Tip: Add a passkey to your account at myaccount.google.com/signinoptions/passkeys. A passkey on your phone replaces the password entirely — Face ID or Touch ID alone is enough to sign in. Free, more secure, and harder to forget.',
       },
     ],
@@ -429,7 +429,7 @@ Watch a walkthrough: search YouTube for "Chrome settings for seniors 2026" for s
     steps: [
       {
         title: 'Set a larger default font size',
-        content: 'Open Chrome → click the three-dot menu in the top right → Settings → in the left sidebar, click "Appearance." Find the "Font size" dropdown. Default is "Medium." Change it to "Large" or "Very Large." Every website you visit immediately shows in bigger text. This is the single biggest improvement for daily web reading. If you want even more control, click "Customize fonts" right below — you can set separate sizes for body text, headings, and minimum allowed size (set the minimum to 16 or 18 to block tiny print everywhere).',
+        content: 'Open Chrome → click the three-dot menu in the top right → Settings → in the left sidebar, click "Appearance." Find the "Font size" dropdown. Default is "Medium." Change it to "Large" or "Very Large." Every website you visit right away shows in bigger text. This is the single biggest improvement for daily web reading. If you want even more control, click "Customize fonts" right below — you can set separate sizes for body text, headings, and minimum allowed size (set the minimum to 16 or 18 to block tiny print everywhere).',
         tip: 'Quick Tip: On Chrome for iPhone or Android, the same setting is at: tap the three-dot menu → Settings → Accessibility → Text scaling. Slide to 150% or higher.',
       },
       {
@@ -452,7 +452,7 @@ Watch a walkthrough: search YouTube for "Chrome settings for seniors 2026" for s
       },
       {
         title: 'Block pop-ups and intrusive ads',
-        content: 'Chrome blocks the worst pop-ups by default, but tighter is better. Settings → "Privacy and security" → "Site settings" → "Pop-ups and redirects" → make sure "Don\'t allow sites to send pop-ups" is selected. Then back up to "Site settings" → "Intrusive ads" → ensure "Block ads on sites that show intrusive or misleading ads" is on. These two together kill most fake "Your computer has 5 viruses" pop-up scams that target seniors.',
+        content: 'Chrome blocks the worst pop-ups by default, but tighter is better. Settings → "Privacy and security" → "Site settings" → "Pop-ups and redirects" → make sure "Don\'t allow sites to send pop-ups" is selected. Then back up to "Site settings" → "Intrusive ads" → make sure "Block ads on sites that show intrusive or misleading ads" is on. These two together kill most fake "Your computer has 5 viruses" pop-up scams that target seniors.',
       },
       {
         title: 'Set Google Safe Browsing to "Enhanced"',

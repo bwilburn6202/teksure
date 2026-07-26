@@ -43,7 +43,7 @@ A Windows PC and a Mac handle start-up in slightly different ways, but the troub
       },
       {
         title: 'Unplug all accessories and try again',
-        content: "Occasionally a USB device (a thumb drive, an older printer cable, an external hard drive) can interfere with startup. Unplug everything except the power cord and, for a desktop, the monitor. Then try the power button again. If the computer starts, plug your accessories back in one at a time to find which one was causing the problem.",
+        content: "Sometimes a USB device (a thumb drive, an older printer cable, an external hard drive) can interfere with startup. Unplug everything except the power cord and, for a desktop, the monitor. Then try the power button again. If the computer starts, plug your accessories back in one at a time to find which one was causing the problem.",
       },
       {
         title: 'Remove and reinsert the power cord from the computer',
@@ -194,7 +194,7 @@ This guide works for the major free email services — Gmail (Google), Yahoo Mai
       },
       {
         title: 'Check if the email service is having an outage',
-        content: "Occasionally Gmail, Yahoo, or Outlook experiences a temporary service disruption. Visit downdetector.com and search for 'Gmail,' 'Yahoo Mail,' or 'Outlook' to see if other people are reporting the same problem right now. If there is an outage, you need to wait — it usually resolves within a few hours.",
+        content: "Sometimes Gmail, Yahoo, or Outlook experiences a temporary service disruption. Visit downdetector.com and search for 'Gmail,' 'Yahoo Mail,' or 'Outlook' to see if other people are reporting the same problem right now. If there is an outage, you need to wait — it usually resolves within a few hours.",
       },
       {
         title: 'Update or reinstall the email app',
@@ -585,7 +585,7 @@ The fix is almost always to forget the old connection on both sides and pair fre
     difficulty: 'Beginner',
     body: `When a YouTube video keeps stopping to buffer — that spinning circle or progress bar — it usually means one thing: the internet connection is not fast enough to deliver the video at the quality level you have selected. The fix is usually to lower the video quality, move closer to your router, or reduce how many things are using the internet at the same time.
 
-YouTube automatically adjusts video quality based on your connection speed, but it doesn't always get it right. Manually setting a lower quality takes 30 seconds and usually solves the problem immediately.
+YouTube automatically adjusts video quality based on your connection speed, but it doesn't always get it right. Manually setting a lower quality takes 30 seconds and usually solves the problem right away.
 
 High-definition video (1080p or 4K) requires a much faster internet connection than standard-definition video (360p or 480p). If your internet connection is slow or inconsistent, lower-quality video plays much more smoothly than high-quality video that constantly pauses.`,
     steps: [
@@ -690,7 +690,7 @@ The most common causes are overheating, a failed Windows or macOS update that ne
       },
       {
         title: 'Note the error message if you see one',
-        content: "If a blue screen appears before the restart, try to write down the error code or stop code displayed (it looks like DRIVER_POWER_STATE_FAILURE or MEMORY_MANAGEMENT). Search that exact phrase on a computer or phone to find information specific to that error. This narrows the diagnosis significantly.",
+        content: "If a blue screen appears before the restart, try to write down the error code or stop code displayed (it looks like DRIVER_POWER_STATE_FAILURE or MEMORY_MANAGEMENT). Search that exact phrase on a computer or phone to find information specific to that error. This narrows the diagnosis a lot.",
       },
       {
         title: 'Disable automatic restart on errors (Windows)',
@@ -744,7 +744,7 @@ Touchscreens work by detecting tiny electrical changes when your finger touches 
       },
       {
         title: 'Check if a specific area is unresponsive',
-        content: "Open the Calculator app or any app with buttons spread across the screen and tap systematically across every part of the screen. If certain areas consistently don't respond (especially along the edges), this may indicate physical screen damage — either a crack that isn't fully visible or a loose internal connection.",
+        content: "Open the Calculator app or any app with buttons spread across the screen and tap systematically across every part of the screen. If certain areas consistently don't respond (especially along the edges), this may show physical screen damage — either a crack that isn't fully visible or a loose internal connection.",
       },
       {
         title: 'Update your software',
@@ -767,11 +767,11 @@ Touchscreens work by detecting tiny electrical changes when your finger touches 
 
 Modern phone batteries are designed to retain about 80% of their original capacity after 500 complete charge cycles. If you have had your phone for 2–3 years and charge it every day, you have likely gone through 500+ cycles, meaning the battery naturally holds less charge than it once did.
 
-Before assuming the battery is worn out, however, it is worth checking your settings. Many default settings — location services, background app refresh, screen brightness — are set high by default and can be turned down significantly without affecting how you use the phone.`,
+Before assuming the battery is worn out, however, it is worth checking your settings. Many default settings — location services, background app refresh, screen brightness — are set high by default and can be turned down a lot without affecting how you use the phone.`,
     steps: [
       {
         title: 'Check your battery health',
-        content: "On iPhone: go to Settings > Battery > Battery Health & Charging. If the Maximum Capacity is below 80%, the battery is significantly worn and replacement will make a noticeable difference. Battery replacement through Apple costs $99 and can make an older phone feel like new. On Android: some phones show battery health in Settings > Battery; others require a diagnostic app.",
+        content: "On iPhone: go to Settings > Battery > Battery Health & Charging. If the Maximum Capacity is below 80%, the battery is a lot worn and replacement will make a noticeable difference. Battery replacement through Apple costs $99 and can make an older phone feel like new. On Android: some phones show battery health in Settings > Battery; others require a diagnostic app.",
       },
       {
         title: 'Reduce screen brightness',

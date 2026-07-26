@@ -40,11 +40,11 @@ Watch a walkthrough: search YouTube for "Medicare wellness scam 2026" — AARP F
       {
         title: 'Hang up immediately — no need to be polite',
         content: 'Politeness gets exploited. Just hang up. If the caller calls back, do not answer. If they leave a voicemail, delete it. You owe a scammer no explanation. If they call from a number that looks local (the area code matches yours), that is called "spoofing" — the actual call could be from anywhere in the world. Local-looking numbers do not mean a local caller.',
-        tip: 'Quick Tip: Add the number to your phone\'s block list immediately. On iPhone: tap the (i) next to the call in your Recent Calls list, then Block this Caller. On Android: tap the three-dot menu in Recent Calls, then Block/Report spam.',
+        tip: 'Quick Tip: Add the number to your phone\'s block list right away. On iPhone: tap the (i) next to the call in your Recent Calls list, then Block this Caller. On Android: tap the three-dot menu in Recent Calls, then Block/Report spam.',
       },
       {
         title: 'If you already shared your Medicare number, act fast',
-        content: 'Call 1-800-MEDICARE (1-800-633-4227) right away and tell the operator your Medicare number may have been compromised. They will put a note on your file and watch for suspicious claims. Also log into MyMedicare.gov and review your "Claims" tab once a week for the next 90 days — if you see a service you did not receive, report it immediately by clicking "Report fraud" on that claim. Medicare will investigate at no cost to you.',
+        content: 'Call 1-800-MEDICARE (1-800-633-4227) right away and tell the operator your Medicare number may have been compromised. They will put a note on your file and watch for suspicious claims. Also log into MyMedicare.gov and review your "Claims" tab once a week for the next 90 days — if you see a service you did not receive, report it right away by clicking "Report fraud" on that claim. Medicare will investigate at no cost to you.',
         warning: 'Do NOT pay anyone who claims they can "get your stolen Medicare number back" or "remove your name from a fraud list." That is a second scam, often run by the same group.',
       },
       {
@@ -278,7 +278,7 @@ Watch a walkthrough: search YouTube for "Windows 11 Recall privacy guide 2026" �
       },
       {
         title: 'What to do if you suspect someone accessed Recall',
-        content: 'If you think someone got into your Windows account, do four things immediately: (1) Change your Windows password and reset Windows Hello. (2) Delete all Recall snapshots from Settings → Privacy & Security → Recall & Snapshots. (3) Check your bank, credit card, and email for any unfamiliar logins. (4) If sensitive info was in your snapshots, place a fraud alert with the credit bureaus (Experian, Equifax, TransUnion). Then ask yourself whether you want to keep Recall on going forward — for most people, the answer after a scare is no.',
+        content: 'If you think someone got into your Windows account, do four things right away: (1) Change your Windows password and reset Windows Hello. (2) Delete all Recall snapshots from Settings → Privacy & Security → Recall & Snapshots. (3) Check your bank, credit card, and email for any unfamiliar logins. (4) If sensitive info was in your snapshots, place a fraud alert with the credit bureaus (Experian, Equifax, TransUnion). Then ask yourself whether you want to keep Recall on going forward — for most people, the answer after a scare is no.',
       },
     ],
   },
@@ -380,7 +380,7 @@ Watch a walkthrough: search YouTube for "toll road scam text 2026" — AARP Frau
       },
       {
         title: 'If you already tapped the link and entered card info, act fast',
-        content: 'Within 30 minutes: (1) Call your credit card company\'s fraud line (the number is on the back of your card) and report the card stolen. They will cancel it and ship a new one. (2) Change your online banking password from a different device (not the phone that tapped the link). (3) If you entered your driver\'s license number, place a fraud alert with the three credit bureaus (Experian, Equifax, TransUnion) — it is free. (4) Watch your card statement for the next 90 days and dispute any unfamiliar charge immediately.',
+        content: 'Within 30 minutes: (1) Call your credit card company\'s fraud line (the number is on the back of your card) and report the card stolen. They will cancel it and ship a new one. (2) Change your online banking password from a different device (not the phone that tapped the link). (3) If you entered your driver\'s license number, place a fraud alert with the three credit bureaus (Experian, Equifax, TransUnion) — it is free. (4) Watch your card statement for the next 90 days and dispute any unfamiliar charge right away.',
         warning: 'Do NOT pay anyone who calls or texts you claiming they can "recover your stolen money" or "remove your name from the scam database." That is a follow-up scam, often by the same group.',
       },
       {

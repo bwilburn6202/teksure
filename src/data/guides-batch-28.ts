@@ -11,7 +11,7 @@ export const guidesBatch28: Guide[] = [
     thumbnailEmoji: '',
     publishedAt: '2026-04-19',
     difficulty: 'Beginner',
-    body: `iCloud Shared Photo Library is a feature built into iPhone and iPad that lets up to five family members share a single photo collection. When someone adds a photo to the shared library, everyone else in the group can see it immediately in their own Photos app — just like a photo they took themselves.
+    body: `iCloud Shared Photo Library is a feature built into iPhone and iPad that lets up to five family members share a single photo collection. When someone adds a photo to the shared library, everyone else in the group can see it right away in their own Photos app — just like a photo they took themselves.
 
 This is different from a shared album. With a shared album, photos stay on the original person's phone and others just view copies. With Shared Photo Library, photos actually live in the shared collection and count toward everyone's iCloud storage equally.
 
@@ -43,7 +43,7 @@ Each person still has their own Personal Library for private photos. You can swi
       },
       {
         title: 'Switch Between Libraries',
-        content: 'Open Photos. Tap the three-line icon in the top-left to see both Personal Library and Shared Library. Tap whichever you want to view or add to. The camera icon in the top-right of the Camera app also shows a small icon to indicate which library a photo will save to.',
+        content: 'Open Photos. Tap the three-line icon in the top-left to see both Personal Library and Shared Library. Tap whichever you want to view or add to. The camera icon in the top-right of the Camera app also shows a small icon to show which library a photo will save to.',
         tip: 'To move a photo from your Personal Library to Shared Library: open the photo, tap the three-dot menu (⋯), and tap "Move to Shared Library."',
       },
     ],
@@ -296,7 +296,7 @@ This makes it particularly useful for practical research questions: "What are th
 
 Perplexity is free at perplexity.ai and works in any web browser on a computer, tablet, or phone. There's also a free app. A paid "Pro" version offers more advanced features, but the free version handles most everyday research questions well.
 
-Unlike some AI tools that only know information up to a certain date, Perplexity searches the live internet and can answer questions about current events, today's prices, recent news, and anything that changes frequently.
+Unlike some AI tools that only know information up to a certain date, Perplexity searches the live internet and can answer questions about current events, today's prices, recent news, and anything that changes often.
 
 Each answer includes numbered citations in brackets, like [1] or [2]. Clicking those numbers shows you exactly which website the information came from, so you can go read the original source if you want more detail. This is what separates Perplexity from other AI chatbots — transparency about where the answers come from.`,
     steps: [
@@ -320,7 +320,7 @@ Each answer includes numbered citations in brackets, like [1] or [2]. Clicking t
       {
         title: 'Use the Focus Feature for Specific Searches',
         content: 'Before searching, you can click "Focus" to limit results to specific types of content: "Academic" searches scholarly papers, "YouTube" searches video content, "Reddit" searches community discussions, and "Social" searches social media posts. For health questions, "Academic" can surface medical research.',
-        warning: 'Perplexity provides helpful summaries, but for medical, legal, or financial decisions, always verify the information with a qualified professional. AI tools can occasionally misstate or oversimplify complex topics.',
+        warning: 'Perplexity provides helpful summaries, but for medical, legal, or financial decisions, always verify the information with a qualified professional. AI tools can sometimes misstate or oversimplify complex topics.',
       },
     ],
   },
@@ -336,7 +336,7 @@ Each answer includes numbered citations in brackets, like [1] or [2]. Clicking t
     difficulty: 'Beginner',
     body: `A new type of scam is hitting families hard: AI voice cloning. Scammers use free or low-cost AI tools to clone someone's voice from just a few seconds of audio — a video on social media, a voicemail, a YouTube clip — and then call family members using that cloned voice to ask for money.
 
-The call sounds exactly like your son, daughter, grandchild, or spouse. They say they're in trouble — arrested, in a car accident, stranded abroad, in the hospital — and they need money immediately. They beg you not to tell others because they're embarrassed. Then someone else gets on the phone claiming to be a lawyer, police officer, or bail bondsman who needs you to send gift cards or wire money.
+The call sounds exactly like your son, daughter, grandchild, or spouse. They say they're in trouble — arrested, in a car accident, stranded abroad, in the hospital — and they need money right away. They beg you not to tell others because they're embarrassed. Then someone else gets on the phone claiming to be a lawyer, police officer, or bail bondsman who needs you to send gift cards or wire money.
 
 This is called the "grandparent scam" or "virtual kidnapping" scam, but AI voice cloning has made it dramatically more convincing. The FTC and AARP have both issued warnings about this. Thousands of people have lost thousands of dollars to these calls.
 
@@ -353,7 +353,7 @@ You should also always hang up and call back on the family member's real number,
       },
       {
         title: 'Recognize the Red Flags',
-        content: `Be immediately suspicious of any call that: claims a family member is in sudden danger or legal trouble, demands money urgently via gift cards or wire transfer, asks you to keep the call secret from other family members, won't allow you to call back or verify with another person, or says there's "no time" for any confirmation.`,
+        content: `Be right away suspicious of any call that: claims a family member is in sudden danger or legal trouble, demands money urgently via gift cards or wire transfer, asks you to keep the call secret from other family members, won't allow you to call back or verify with another person, or says there's "no time" for any confirmation.`,
       },
       {
         title: 'Hang Up and Call Back',
@@ -366,7 +366,7 @@ You should also always hang up and call back on the family member's real number,
       },
       {
         title: 'Report the Scam',
-        content: 'If you receive a voice clone scam call, report it to the FTC at reportfraud.ftc.gov and to your local police non-emergency line. Reporting helps law enforcement track patterns and warn communities. If you sent money, report it immediately — some transfers can be reversed within hours.',
+        content: 'If you receive a voice clone scam call, report it to the FTC at reportfraud.ftc.gov and to your local police non-emergency line. Reporting helps law enforcement track patterns and warn communities. If you sent money, report it right away — some transfers can be reversed within hours.',
       },
     ],
   },
@@ -474,7 +474,7 @@ These features use AI that runs entirely on your phone — Apple doesn't upload 
     difficulty: 'Beginner',
     body: `Medicare.gov has a free plan finder tool that lets you compare prescription drug costs across all Medicare Part D plans available in your area. This tool can save you hundreds or thousands of dollars per year — but most people don't know it exists or how to use it.
 
-Part D is Medicare's prescription drug coverage. It's offered through private insurance companies that have contracted with Medicare. The plans vary significantly in what they cost and which drugs they cover. Two plans might charge very different amounts for the same medication.
+Part D is Medicare's prescription drug coverage. It's offered through private insurance companies that have contracted with Medicare. The plans vary a lot in what they cost and which drugs they cover. Two plans might charge very different amounts for the same medication.
 
 The Medicare Plan Finder at medicare.gov/plan-compare lets you enter your specific medications and find which Part D plan covers them at the lowest total cost for you. It factors in monthly premiums (what you pay every month regardless of use), deductibles (what you pay before coverage kicks in), and copays (what you pay per prescription).
 
@@ -526,7 +526,7 @@ Reading a retirement account balance can be confusing at first because the numbe
 
 The app also allows some account management: you can view and update beneficiaries, view statements and tax documents (including your 1099-R for distributions and 5498 for IRA contributions), change your contribution percentage if your employer allows it, and update contact information.
 
-For active management — changing what funds your money is in, initiating withdrawals, or setting up new contributions — you typically have more options through the full Vanguard website on a computer. But for day-to-day account monitoring, the app is convenient and sufficient.
+For active management — changing what funds your money is in, initiating withdrawals, or setting up new contributions — you typically have more options through the full Vanguard website on a computer. But for day-to-day account monitoring, the app is convenient and enough.
 
 Vanguard's app is separate from your employer's 401(k) portal if your employer uses a different record-keeper. Some employers use Vanguard as record-keeper; others use Fidelity, Empower, or another company. Make sure you know which company holds your specific account.`,
     steps: [

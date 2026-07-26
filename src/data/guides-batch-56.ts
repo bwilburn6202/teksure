@@ -250,7 +250,7 @@ When you place an order, you can track the delivery driver on a map in real time
 
 There are fees involved with food delivery apps. Grubhub typically charges a delivery fee (usually $1 to $6), a service fee based on your order total, and sometimes a small order fee if your subtotal is below a minimum. Prices can also be higher on delivery apps than ordering directly from the restaurant. It is a good idea to check the total before confirming your order.
 
-Grubhub has a membership program called Grubhub+ for around $9.99 per month that waives delivery fees on most orders. If you order delivery frequently, it can save money. Otherwise, you can use Grubhub without any membership.
+Grubhub has a membership program called Grubhub+ for around $9.99 per month that waives delivery fees on most orders. If you order delivery often, it can save money. Otherwise, you can use Grubhub without any membership.
 
 The app is available on iPhone and Android. You will need to create a free Grubhub account and add a payment method (credit card, debit card, or PayPal) before you can place your first order.`,
     steps: [
@@ -364,7 +364,7 @@ It is also worth checking the hotel's own website after you find a rate on a boo
       },
       {
         title: `Choose your rate and complete the booking`,
-        content: `Most hotels show more than one rate — a cheaper non-refundable rate and a pricier but flexible rate. If your plans are not certain, the flexible rate gives you the option to cancel. Once you choose, enter your name, email, and payment information (credit card). Review the total price including all taxes and fees before confirming. You will receive a booking confirmation email immediately.`,
+        content: `Most hotels show more than one rate — a cheaper non-refundable rate and a pricier but flexible rate. If your plans are not certain, the flexible rate gives you the option to cancel. Once you choose, enter your name, email, and payment information (credit card). Review the total price including all taxes and fees before confirming. You will receive a booking confirmation email right away.`,
         tip: `Take a screenshot of your confirmation number in case you need to reference it at check-in without cell service.`,
       },
     ],
@@ -520,7 +520,7 @@ Goodreads is owned by Amazon and works on iPhone, Android, and in any web browse
     difficulty: `Beginner`,
     body: `Your local library card gives you access to thousands of free e-books and audiobooks that you can borrow and read or listen to on your phone, tablet, or computer — no trips to the library required. The app that makes this possible is called Libby, and it was created by a company called OverDrive.
 
-Libby connects to your local library's digital collection. When you borrow a book through Libby, it appears on your device immediately and disappears automatically when the lending period ends (usually 14 to 21 days). There are no late fees, ever.
+Libby connects to your local library's digital collection. When you borrow a book through Libby, it appears on your device right away and disappears automatically when the lending period ends (usually 14 to 21 days). There are no late fees, ever.
 
 Because digital books are limited in how many people can borrow them at once, popular new releases sometimes have waiting lists. If a book is not available right now, you can tap "Place a Hold" and Libby will notify you when it is your turn. For books that are always available without a wait, look for books marked as "Always Available" — these are typically older titles and public domain classics.
 
@@ -545,7 +545,7 @@ Audiobooks in Libby are especially popular for people who want to "read" during 
       },
       {
         title: `Search for a book and borrow it`,
-        content: `Tap "Search" and type the title or author of a book you want. Tap the book cover to open its page. If it is available, tap "Borrow" to check it out immediately. The book will download to the app and you can start reading or listening right away. If there is a wait, tap "Place a Hold" and you will be notified when it becomes available.`,
+        content: `Tap "Search" and type the title or author of a book you want. Tap the book cover to open its page. If it is available, tap "Borrow" to check it out right away. The book will download to the app and you can start reading or listening right away. If there is a wait, tap "Place a Hold" and you will be notified when it becomes available.`,
         tip: `Tap the headphone icon to filter for audiobooks only, or tap the book icon to filter for e-books. This helps when you are in the mood for one format over the other.`,
       },
       {
@@ -691,7 +691,7 @@ You do not need a special bank or credit card to use a digital wallet. Most majo
       {
         title: `What to do if your phone is lost or stolen`,
         content: `Your digital wallet is protected by Face ID, Touch ID, or your passcode — no one can use it without those. But if your phone is lost, you can also temporarily suspend your Apple Pay or Google Pay remotely. For Apple Pay, use iCloud.com or another Apple device to put your iPhone in Lost Mode. For Google Pay, log in to your Google account on a computer and go to the Google Pay settings to suspend the cards.`,
-        tip: `Contact your bank right away if you believe your phone — and therefore your cards — may be compromised. Banks can freeze the card with a quick phone call.`,
+        tip: `Contact your bank right away if you believe your phone — and so your cards — may be compromised. Banks can freeze the card with a quick phone call.`,
       },
     ],
   },
@@ -785,7 +785,7 @@ These settings are found in Settings, then Accessibility on most Android phones.
       {
         title: `Try TalkBack if you want audio descriptions`,
         content: `In Accessibility settings, tap "TalkBack." Tap the toggle to turn it on. TalkBack will begin describing everything you touch before you tap it — meaning a single tap highlights and reads the item, and a double-tap activates it. This is a different way of using the phone, so it takes some getting used to. To turn it off, go back to Settings > Accessibility > TalkBack and double-tap the toggle.`,
-        warning: `TalkBack changes how your phone responds to taps significantly. Before turning it on, it helps to know that you will need to double-tap to open anything, and swipe with one finger to move between items on screen.`,
+        warning: `TalkBack changes how your phone responds to taps a lot. Before turning it on, it helps to know that you will need to double-tap to open anything, and swipe with one finger to move between items on screen.`,
       },
       {
         title: `Connect Bluetooth hearing aids`,

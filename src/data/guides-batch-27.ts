@@ -15,9 +15,9 @@ export const guidesBatch27: Guide[] = [
 
 "Prepaid" means you pay before you use the service, rather than after. You choose a plan, pay upfront, and get service for that period. If you want to continue, you pay again. There are no contracts or credit checks.
 
-Mint Mobile's plans include unlimited calls and texts, with data in set amounts: 5 GB, 15 GB, 20 GB, or unlimited. Prices are lowest when you prepay for 12 months. For example, the 15 GB plan costs approximately $20-25/month when paid annually versus $30-35 for three months.
+Mint Mobile's plans include unlimited calls and texts, with data in set amounts: 5 GB, 15 GB, 20 GB, or unlimited. Prices are lowest when you prepay for 12 months. For example, the 15 GB plan costs about $20-25/month when paid annually versus $30-35 for three months.
 
-Because Mint uses T-Mobile's network, coverage matches T-Mobile exactly. In most urban and suburban areas, coverage is excellent. In rural areas, T-Mobile's coverage has improved significantly but may not match Verizon in some locations. Check T-Mobile's coverage map for your area before switching.
+Because Mint uses T-Mobile's network, coverage matches T-Mobile exactly. In most urban and suburban areas, coverage is excellent. In rural areas, T-Mobile's coverage has improved a lot but may not match Verizon in some locations. Check T-Mobile's coverage map for your area before switching.
 
 Mint Mobile does not have physical stores. Activation, account management, and customer service are all handled through the Mint Mobile app or website. Customer support is available by phone during business hours and via chat.
 
@@ -25,12 +25,12 @@ Mint Mobile is owned by T-Mobile but operates as a separate brand with its own p
     steps: [
       {
         title: 'Check T-Mobile Coverage in Your Area',
-        content: `Go to t-mobile.com/coverage and enter your home address and places you frequently travel. Mint Mobile uses T-Mobile's exact network. If T-Mobile coverage is marked as "Excellent" or "Good" in your key areas, Mint will work well for you.`,
+        content: `Go to t-mobile.com/coverage and enter your home address and places you often travel. Mint Mobile uses T-Mobile's exact network. If T-Mobile coverage is marked as "Excellent" or "Good" in your key areas, Mint will work well for you.`,
       },
       {
         title: 'Choose a Plan',
         content: 'Go to mintmobile.com → "Plans." Check your current monthly data usage first (Settings → Cellular on iPhone or Settings → Network → Data Usage on Android). Choose a plan that matches your usage. Paying for 12 months upfront gives the best per-month rate.',
-        tip: 'Mint often runs promotional offers — new customers sometimes get the first 3 months at a significantly discounted rate. Check for current promos before buying.',
+        tip: 'Mint often runs promotional offers — new customers sometimes get the first 3 months at a a lot discounted rate. Check for current promos before buying.',
       },
       {
         title: 'Order a SIM Card or eSIM',
@@ -112,13 +112,13 @@ Popular mesh Wi-Fi systems in 2026: Amazon Eero (3-pack covers 5,000 sq ft, ~$13
 
 How mesh differs from a Wi-Fi extender: a standard range extender creates a separate, secondary network with its own network name. Devices must manually switch between networks. Mesh systems create one smooth network — the same password, same network name, and your device switches to the best node automatically without any manual action.
 
-Whether you need mesh Wi-Fi depends on your home: a small apartment or one-story house under 1,000 sq ft with a quality router probably does not need mesh. A two-story home, a home with brick or concrete walls, or a home with outdoor coverage needs often benefit significantly from mesh.
+Whether you need mesh Wi-Fi depends on your home: a small apartment or one-story house under 1,000 sq ft with a quality router probably does not need mesh. A two-story home, a home with brick or concrete walls, or a home with outdoor coverage needs often benefit a lot from mesh.
 
 Setup for most mesh systems is done entirely through a smartphone app — the app walks you through placing nodes and configuring the network.`,
     steps: [
       {
         title: 'Assess Whether You Need Mesh Wi-Fi',
-        content: 'Walk your home with your phone and check signal strength in every room and your backyard/garage. If you see more than one or two bars drop, or if video calls frequently freeze in certain rooms, mesh Wi-Fi would likely help. Small homes or apartments with a quality router may not need it.',
+        content: 'Walk your home with your phone and check signal strength in every room and your backyard/garage. If you see more than one or two bars drop, or if video calls often freeze in certain rooms, mesh Wi-Fi would likely help. Small homes or apartments with a quality router may not need it.',
       },
       {
         title: 'Choose a Mesh System',
@@ -203,7 +203,7 @@ Bitwarden is open-source software, meaning its code has been publicly reviewed b
 
 A password manager works like this: you create one strong master password to unlock your vault. Inside the vault, you store usernames and passwords for every website and app you use. When you visit a website, Bitwarden automatically fills in your credentials — you do not need to remember or type them.
 
-Bitwarden works as a browser extension (for Chrome, Edge, Firefox, Safari), a desktop app, and a mobile app for iPhone and Android. Your vault syncs across all devices — change a password on your phone and it updates on your computer immediately.
+Bitwarden works as a browser extension (for Chrome, Edge, Firefox, Safari), a desktop app, and a mobile app for iPhone and Android. Your vault syncs across all devices — change a password on your phone and it updates on your computer right away.
 
 Why use a password manager rather than just saving passwords in your browser (Chrome, Safari)? Browser-saved passwords are less secure — they can be accessed by anyone with access to your computer without a separate password. Bitwarden adds a master password layer and works across all browsers and apps, not just one browser.
 
@@ -230,7 +230,7 @@ The one thing to do first: create a strong master password that you will remembe
       {
         title: 'Let Bitwarden Fill In Passwords Automatically',
         content: 'When you visit a login page, click the Bitwarden browser extension icon — it shows matching logins for that site. Click the correct entry to auto-fill your username and password. On mobile, tap the key icon above the keyboard to trigger Bitwarden autofill.',
-        tip: `Use Bitwarden's password generator to create strong unique passwords for new accounts: in the extension, tap the "Generator" icon to create a random, strong password — then save it to Bitwarden immediately.`,
+        tip: `Use Bitwarden's password generator to create strong unique passwords for new accounts: in the extension, tap the "Generator" icon to create a random, strong password — then save it to Bitwarden right away.`,
       },
     ],
   },
@@ -275,7 +275,7 @@ Before diving into complex fixes, always try the simplest steps first: turn Blue
       {
         title: 'Check for Interference',
         content: 'Move to a different room or away from other wireless devices — microwave ovens, other Bluetooth devices, and crowded 2.4 GHz Wi-Fi networks can all interfere with Bluetooth. If the connection improves away from certain areas, interference is the likely cause.',
-        warning: 'Thick walls and floors reduce Bluetooth range significantly. If the connection works when devices are close together but fails across the room, distance and obstacles are the problem — a Bluetooth range extender or different placement may help.',
+        warning: 'Thick walls and floors reduce Bluetooth range a lot. If the connection works when devices are close together but fails across the room, distance and obstacles are the problem — a Bluetooth range extender or different placement may help.',
       },
     ],
   },
@@ -310,7 +310,7 @@ The most impactful fix for most households: physically move the router closer to
       },
       {
         title: 'Move the Router Closer or Use 5 GHz Wi-Fi',
-        content: 'If the streaming device is far from the router, move the router closer or add a Wi-Fi extender. Also check if your router broadcasts two networks: 2.4 GHz (longer range, slower) and 5 GHz (shorter range, faster). Connect the streaming device to the 5 GHz network for significantly better performance.',
+        content: 'If the streaming device is far from the router, move the router closer or add a Wi-Fi extender. Also check if your router broadcasts two networks: 2.4 GHz (longer range, slower) and 5 GHz (shorter range, faster). Connect the streaming device to the 5 GHz network for a lot better performance.',
         tip: 'Most routers label their networks something like "HomeNetwork" and "HomeNetwork_5G" — the 5G network is the faster one.',
       },
       {
@@ -320,7 +320,7 @@ The most impactful fix for most households: physically move the router closer to
       },
       {
         title: 'Lower the Streaming Quality',
-        content: `In the streaming app's settings, reduce video quality from 4K or "Auto" to 1080p (HD) or even 720p. Lower quality requires less bandwidth and buffers less. For Netflix: Settings (profile icon) → Playback Settings → choose a lower quality. This is a temporary measure but can immediately stop buffering.`,
+        content: `In the streaming app's settings, reduce video quality from 4K or "Auto" to 1080p (HD) or even 720p. Lower quality requires less bandwidth and buffers less. For Netflix: Settings (profile icon) → Playback Settings → choose a lower quality. This is a temporary measure but can right away stop buffering.`,
         warning: 'If the speed test shows your internet speed is below 5 Mbps even when connected directly, the issue may be with your internet plan itself — contact your ISP.',
       },
     ],
@@ -392,7 +392,7 @@ An important note: iMessage chats sync through iCloud Messages if enabled, which
     steps: [
       {
         title: 'Enable iCloud Backup',
-        content: 'Go to Settings → tap your name → iCloud → iCloud Backup → toggle "iCloud Backup" to on. Tap "Back Up Now" to immediately run a backup. After this, your iPhone backs up automatically every night when plugged in and connected to Wi-Fi.',
+        content: 'Go to Settings → tap your name → iCloud → iCloud Backup → toggle "iCloud Backup" to on. Tap "Back Up Now" to right away run a backup. After this, your iPhone backs up automatically every night when plugged in and connected to Wi-Fi.',
         tip: `Check the backup status: Settings → your name → iCloud → iCloud Backup → look for "Last Successful Backup" with today's date.`,
       },
       {
@@ -674,7 +674,7 @@ A common mistake: deleting apps to free up space, then reinstalling them — eac
       },
       {
         title: 'Enable iCloud Photos to Offload Photos',
-        content: 'Go to Settings → Photos → "iCloud Photos" → toggle on. Then select "Optimize iPhone Storage." Your photos and videos are kept in iCloud, and compressed previews stay on your phone. This often frees 5-20+ GB immediately.',
+        content: 'Go to Settings → Photos → "iCloud Photos" → toggle on. Then select "Optimize iPhone Storage." Your photos and videos are kept in iCloud, and compressed previews stay on your phone. This often frees 5-20+ GB right away.',
         warning: 'This requires available iCloud storage. The free tier is 5 GB — if your photos are large, you may need to upgrade to a paid iCloud plan ($0.99/month for 50 GB, $2.99/month for 200 GB).',
       },
       {
@@ -845,7 +845,7 @@ Your phone shows "Safe mode" in the bottom left corner of the screen when safe m
 
 Router placement is the single most impactful factor. Routers broadcast Wi-Fi in all directions from the router's location. Placing a router in a corner, inside a closet, behind a TV cabinet, or in a basement dramatically reduces coverage in other parts of the home. A router placed centrally and elevated (on a shelf or table) covers much more of the home.
 
-Physical obstacles reduce Wi-Fi signal significantly. The worst materials for Wi-Fi penetration: concrete, brick, and plaster walls; metal filing cabinets and appliances; and mirrors. Even placing a router behind a large fish tank or aquarium reduces signal. Glass and drywall have much less impact.
+Physical obstacles reduce Wi-Fi signal a lot. The worst materials for Wi-Fi penetration: concrete, brick, and plaster walls; metal filing cabinets and appliances; and mirrors. Even placing a router behind a large fish tank or aquarium reduces signal. Glass and drywall have much less impact.
 
 Interference from other devices is often overlooked. Baby monitors, microwave ovens, cordless phones, and neighbors' Wi-Fi networks all use the 2.4 GHz frequency band — the same as most Wi-Fi. Your router may be competing with these for airwaves. Switching to the 5 GHz band (if your router supports it) avoids most of this interference.
 

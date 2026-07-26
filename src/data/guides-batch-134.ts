@@ -125,7 +125,7 @@ You will not break anything by turning these off. Microsoft makes them opt-in or
     difficulty: 'Beginner',
     body: `Through April and May 2026, a wave of scam emails has been making the rounds with the subject line "Your Costco Membership Expires Tomorrow" or "Action Required: Costco Membership Renewal." The email looks convincing — it uses the Costco logo, the warehouse-blue colors, and a clear "Renew Now" button. The button takes you to a fake page that asks for your name, address, credit card, and Costco card number.
 
-If you fill it in, the scammers immediately try to charge your card and also sell the data on the dark web. AARP and the FTC have both flagged this as one of the top three retail phishing scams of 2026.
+If you fill it in, the scammers right away try to charge your card and also sell the data on the dark web. AARP and the FTC have both flagged this as one of the top three retail phishing scams of 2026.
 
 This guide shows the four signals to check on any email like this, what a real Costco renewal email looks like, and what to do if you already clicked.
 
@@ -191,7 +191,7 @@ The good news: real browsers do not show update popups on top of web pages. Once
       },
       {
         title: 'Spot the four tells of a fake update popup',
-        content: 'Fake updates almost always have all four of these signs: (1) The popup appeared while you were on a web page, not after opening the browser. (2) It uses urgent language — "critical," "immediately," "your data is at risk." (3) The browser logo looks slightly wrong — colors slightly off, wrong proportions, or it shows "Chrome 95" when the real Chrome is on version 135. (4) The button is labeled "Update Now" or "Install" and downloading the "update" produces a file with an extension like .exe, .dmg, .zip, .scr, or .msi. Real browser updates never download a file you need to run.',
+        content: 'Fake updates almost always have all four of these signs: (1) The popup appeared while you were on a web page, not after opening the browser. (2) It uses urgent language — "critical," "right away," "your data is at risk." (3) The browser logo looks slightly wrong — colors slightly off, wrong proportions, or it shows "Chrome 95" when the real Chrome is on version 135. (4) The button is labeled "Update Now" or "Install" and downloading the "update" produces a file with an extension like .exe, .dmg, .zip, .scr, or .msi. Real browser updates never download a file you need to run.',
       },
       {
         title: 'Update your real browser the right way',

@@ -31,7 +31,7 @@ Always talk to your doctor before making any changes to your diabetes medication
       {
         title: `Pair your sensor and read your numbers`,
         content: `After inserting your sensor according to the instructions in the box, open the app and tap "Pair Sensor." Hold your phone close to the sensor site until the pairing is complete. Once connected, your glucose number will appear on the home screen along with a trend arrow. A single arrow pointing right means stable; arrows pointing up or down show the direction your glucose is moving.`,
-        warning: `It takes about 30 minutes after pairing for the first reading to appear. Do not be concerned if you do not see a number immediately.`,
+        warning: `It takes about 30 minutes after pairing for the first reading to appear. Do not be concerned if you do not see a number right away.`,
       },
       {
         title: `Set your high and low alerts`,
@@ -87,7 +87,7 @@ KardiaMobile works with most iPhones and Android phones. The device itself costs
       {
         title: `Read your result`,
         content: `After 30 seconds the app will display your result. "Normal" means the recording looks like a healthy heart rhythm. "Possible AFib" means the app detected an irregular pattern and you should contact your doctor. "Unclassified" means the recording could not be analyzed automatically — this often happens if you moved during the recording, and you can try again.`,
-        warning: `KardiaMobile is not a replacement for emergency care. If you have chest pain, severe shortness of breath, or feel like you are having a heart attack, call 911 immediately rather than taking a recording.`,
+        warning: `KardiaMobile is not a replacement for emergency care. If you have chest pain, severe shortness of breath, or feel like you are having a heart attack, call 911 right away rather than taking a recording.`,
       },
       {
         title: `Share your recording with your doctor`,
@@ -213,7 +213,7 @@ You do not have to track every bite forever. Many people track for a few weeks t
       {
         title: `Set up your profile and daily targets`,
         content: `Open your chosen app and complete the setup questionnaire. You will enter your height, weight, age, activity level, and health goal — options typically include losing weight, maintaining weight, or gaining muscle. The app will calculate suggested daily targets for calories, protein, carbohydrates, and fat. These are starting estimates — your doctor or dietitian can help you adjust them.`,
-        warning: `Macro targets for medical conditions like diabetes or kidney disease are very different from general wellness targets. Always check with your doctor before significantly changing your diet.`,
+        warning: `Macro targets for medical conditions like diabetes or kidney disease are very different from general wellness targets. Always check with your doctor before a lot changing your diet.`,
       },
       {
         title: `Log your first meal using the search bar or barcode scanner`,
@@ -359,7 +359,7 @@ To use MDLive you need a smartphone, tablet, or computer with a camera and micro
       {
         title: `Join your video visit`,
         content: `When the doctor is ready, you will receive a notification in the app. Tap "Join Visit." Allow the app to access your camera and microphone when prompted. The doctor will greet you, review your health history, ask about your symptoms, and examine you visually. Most video visits last between 10 and 20 minutes.`,
-        warning: `Video telehealth is not for emergencies. If you have chest pain, trouble breathing, signs of a stroke, severe bleeding, or any other potentially life-threatening symptom, call 911 immediately.`,
+        warning: `Video telehealth is not for emergencies. If you have chest pain, trouble breathing, signs of a stroke, severe bleeding, or any other potentially life-threatening symptom, call 911 right away.`,
       },
       {
         title: `Get your prescription or follow-up instructions`,
@@ -379,7 +379,7 @@ To use MDLive you need a smartphone, tablet, or computer with a camera and micro
     difficulty: `Beginner`,
     body: `Amwell is a telehealth platform that connects patients with licensed healthcare providers for video visits. You can use Amwell for urgent but non-emergency conditions, primary care visits, mental health support, nutrition counseling, and even some specialist consultations — all from your phone, tablet, or computer without leaving home.
 
-What makes Amwell different from some other telehealth services is the ability to book scheduled appointments in advance. Many telehealth platforms only offer on-demand visits where you wait for the next available doctor. Amwell gives you both options: connect immediately if something comes up, or schedule a time that works for your routine — just like booking a regular doctor's appointment.
+What makes Amwell different from some other telehealth services is the ability to book scheduled appointments in advance. Many telehealth platforms only offer on-demand visits where you wait for the next available doctor. Amwell gives you both options: connect right away if something comes up, or schedule a time that works for your routine — just like booking a regular doctor's appointment.
 
 Amwell partners with many major health insurance plans, including Medicare Advantage plans. If you have a plan that covers telehealth, your Amwell visits may cost little or nothing out of pocket. For uninsured or out-of-network patients, Amwell posts flat fees upfront so you know the cost before you begin.
 
@@ -398,7 +398,7 @@ Amwell works well for conditions like cold and flu symptoms, sinus problems, ras
       },
       {
         title: `Choose on-demand or scheduled`,
-        content: `From the home screen, tap "See a Doctor" to connect immediately with the next available provider. If you prefer a specific time, tap "Schedule" and browse available appointment slots. Select the type of care you need — Urgent Care, Primary Care, Therapy, or another specialty — and choose a provider from the list, where you can read brief bios and ratings before selecting.`,
+        content: `From the home screen, tap "See a Doctor" to connect right away with the next available provider. If you prefer a specific time, tap "Schedule" and browse available appointment slots. Select the type of care you need — Urgent Care, Primary Care, Therapy, or another specialty — and choose a provider from the list, where you can read brief bios and ratings before selecting.`,
         tip: `If you have a preferred provider you have seen before on Amwell, you can search for them by name in the Schedule section to book with the same doctor.`,
       },
       {
@@ -453,7 +453,7 @@ If you have a primary care doctor but cannot get an appointment for weeks, Docto
       },
       {
         title: `Get your prescription or follow-up plan`,
-        content: `After the visit, prescriptions are sent immediately to your chosen pharmacy. The app stores your full visit history so you can review the doctor's notes at any time. If you want your regular doctor to receive a copy of the visit summary, tap "Share Visit" and enter your doctor's fax number or email address.`,
+        content: `After the visit, prescriptions are sent right away to your chosen pharmacy. The app stores your full visit history so you can review the doctor's notes at any time. If you want your regular doctor to receive a copy of the visit summary, tap "Share Visit" and enter your doctor's fax number or email address.`,
       },
     ],
   },
@@ -498,7 +498,7 @@ Prescriptions from Amazon Clinic can be filled at any pharmacy or through Amazon
       },
       {
         title: `Fill your prescription`,
-        content: `If a prescription is issued, you can choose to fill it at any local pharmacy by providing the pharmacy's information, or you can choose Amazon Pharmacy for home delivery. Amazon Pharmacy often offers significantly lower prices than traditional retail pharmacies, especially if you are not using insurance. Compare prices before choosing.`,
+        content: `If a prescription is issued, you can choose to fill it at any local pharmacy by providing the pharmacy's information, or you can choose Amazon Pharmacy for home delivery. Amazon Pharmacy often offers a lot lower prices than traditional retail pharmacies, especially if you are not using insurance. Compare prices before choosing.`,
       },
     ],
   },
@@ -563,13 +563,13 @@ Telehealth became widely available during the COVID-19 pandemic when in-person v
 
 Telehealth works best for non-emergency conditions that do not require a physical examination, lab work, or imaging. Common examples include cold and flu symptoms, sinus infections, ear pain, pink eye, urinary tract infections, rashes, mild back pain, prescription refills for stable chronic conditions, mental health counseling, and follow-up visits after hospital discharge.
 
-Telehealth is not appropriate when you need hands-on care — for example, if a doctor needs to listen to your lungs closely, look inside your ear with a special tool, draw blood, or perform any kind of procedure. It is also never appropriate for emergencies. Any time you have chest pain, difficulty breathing, sudden severe headache, signs of a stroke, or other potentially life-threatening symptoms, call 911 immediately.
+Telehealth is not appropriate when you need hands-on care — for example, if a doctor needs to listen to your lungs closely, look inside your ear with a special tool, draw blood, or perform any kind of procedure. It is also never appropriate for emergencies. Any time you have chest pain, difficulty breathing, sudden severe headache, signs of a stroke, or other potentially life-threatening symptoms, call 911 right away.
 
 Most telehealth services are straightforward to use. If you can make a video call on a phone or computer, you have everything you need to do a telehealth visit.`,
     steps: [
       {
         title: `Understand what you need for a telehealth visit`,
-        content: `You need a smartphone, tablet, or computer with a working camera and microphone. You also need an internet connection — Wi-Fi at home works fine, and a standard home broadband connection is more than adequate for video calls. You do not need any special equipment. The front-facing camera on most phones built in the last six or seven years is sufficient for a telehealth appointment.`,
+        content: `You need a smartphone, tablet, or computer with a working camera and microphone. You also need an internet connection — Wi-Fi at home works fine, and a standard home broadband connection is more than adequate for video calls. You do not need any special equipment. The front-facing camera on most phones built in the last six or seven years is enough for a telehealth appointment.`,
         tip: `If you are unsure whether your device's camera works, try making a short video call with a family member before your first telehealth appointment. This will confirm everything is working and help you feel more comfortable with the format.`,
       },
       {
@@ -588,7 +588,7 @@ Most telehealth services are straightforward to use. If you can make a video cal
       },
       {
         title: `Know when to go in person instead`,
-        content: `After your telehealth visit, the provider will either treat you, recommend in-person care, or advise you to seek emergency help. Go to an urgent care center or emergency room if your symptoms are getting significantly worse, if you have severe pain, if you cannot keep fluids down, or if the telehealth provider recommends it. Never delay seeking in-person or emergency care because of the cost or inconvenience — your health comes first.`,
+        content: `After your telehealth visit, the provider will either treat you, recommend in-person care, or advise you to seek emergency help. Go to an urgent care center or emergency room if your symptoms are getting a lot worse, if you have severe pain, if you cannot keep fluids down, or if the telehealth provider recommends it. Never delay seeking in-person or emergency care because of the cost or inconvenience — your health comes first.`,
         warning: `Call 911 for chest pain, signs of a stroke (face drooping, arm weakness, speech difficulty), difficulty breathing, uncontrolled bleeding, or any other emergency. Telehealth is not the right channel for life-threatening situations.`,
       },
     ],
@@ -603,9 +603,9 @@ Most telehealth services are straightforward to use. If you can make a video cal
     thumbnailEmoji: ``,
     publishedAt: `2026-04-20`,
     difficulty: `Beginner`,
-    body: `One of the most important health decisions you can make is knowing where to go when something is wrong. Going to the emergency room for a condition that could be treated at urgent care costs significantly more — often thousands of dollars more — and means much longer wait times. On the other hand, trying to treat an emergency at home or at urgent care can delay life-saving care.
+    body: `One of the most important health decisions you can make is knowing where to go when something is wrong. Going to the emergency room for a condition that could be treated at urgent care costs a lot more — often thousands of dollars more — and means much longer wait times. On the other hand, trying to treat an emergency at home or at urgent care can delay life-saving care.
 
-Emergency rooms are open 24 hours a day, 7 days a week and are equipped for true medical emergencies. They have CT scanners, X-ray machines, surgical suites, intensive care units, and specialists on call around the clock. Emergency rooms prioritize patients by severity, which means someone with a sprained ankle may wait several hours while someone having a heart attack is seen immediately. ER visits typically cost significantly more than urgent care, even with insurance.
+Emergency rooms are open 24 hours a day, 7 days a week and are equipped for true medical emergencies. They have CT scanners, X-ray machines, surgical suites, intensive care units, and specialists on call around the clock. Emergency rooms prioritize patients by severity, which means someone with a sprained ankle may wait several hours while someone having a heart attack is seen right away. ER visits typically cost a lot more than urgent care, even with insurance.
 
 Urgent care centers are walk-in clinics that can treat conditions that need attention today but are not life-threatening. They have X-ray machines and basic lab testing available. Wait times are typically shorter than an ER. Costs are much closer to a regular doctor's visit, and most insurance plans cover urgent care at the standard copay rate.
 
@@ -615,7 +615,7 @@ Telehealth can also fill an important gap — if you are not sure whether your s
     steps: [
       {
         title: `Recognize true emergency symptoms — call 911`,
-        content: `Go straight to calling 911 or asking someone to drive you to the ER — do not drive yourself — for any of these: chest pain or pressure, difficulty breathing or shortness of breath, signs of stroke (sudden face drooping, arm weakness, or slurred speech), severe allergic reaction, uncontrolled bleeding, loss of consciousness, head injury with confusion, sudden severe headache unlike any you have had before, or suspected poisoning. These situations require emergency care immediately.`,
+        content: `Go straight to calling 911 or asking someone to drive you to the ER — do not drive yourself — for any of these: chest pain or pressure, difficulty breathing or shortness of breath, signs of stroke (sudden face drooping, arm weakness, or slurred speech), severe allergic reaction, uncontrolled bleeding, loss of consciousness, head injury with confusion, sudden severe headache unlike any you have had before, or suspected poisoning. These situations require emergency care right away.`,
         warning: `Do not attempt to drive yourself to the ER in a true emergency. Call 911 so paramedics can begin treatment on the way to the hospital. Every minute matters for heart attacks, strokes, and severe allergic reactions.`,
       },
       {
@@ -671,7 +671,7 @@ Zocdoc is completely free for patients. Doctors pay to be listed. You can use Zo
       {
         title: `Book your appointment`,
         content: `Tap an available time slot that works for you. You will be asked to create a free Zocdoc account or log in if you already have one. Enter your name, date of birth, insurance details, and contact information. Review the appointment details and tap "Book Appointment." You will receive an immediate confirmation by email and text message.`,
-        warning: `Zocdoc shows real-time availability, but occasionally a slot may be taken between when you viewed it and when you complete booking. If you get an error, try the next available time slot.`,
+        warning: `Zocdoc shows real-time availability, but sometimes a slot may be taken between when you viewed it and when you complete booking. If you get an error, try the next available time slot.`,
       },
       {
         title: `Complete intake paperwork before you arrive`,
@@ -796,7 +796,7 @@ The most important step is to talk openly with your doctor about which screening
       {
         title: `Ask your doctor which screenings apply to you`,
         content: `At your next annual physical or preventive care visit, ask your doctor directly: "Which cancer screenings do I need, and when are each of them due?" Write down the answers in a notebook or the notes app on your phone. Screening recommendations are based on your age, sex, personal health history, and family history — there is no single list that applies to everyone. Your doctor is the best source for your specific situation.`,
-        tip: `If you have a close family member who had cancer, especially a parent or sibling, tell your doctor. Some cancers have genetic components that mean you should start screening earlier or more frequently than standard guidelines suggest.`,
+        tip: `If you have a close family member who had cancer, especially a parent or sibling, tell your doctor. Some cancers have genetic components that mean you should start screening earlier or more often than standard guidelines suggest.`,
       },
       {
         title: `Use your patient portal to see upcoming screening reminders`,
@@ -876,7 +876,7 @@ If your employer or insurance plan includes Sharecare, many of the premium featu
     difficulty: `Intermediate`,
     body: `Livongo, now part of Teladoc Health, is a connected diabetes management program that goes beyond a standard glucose meter. When you enroll in Livongo, you receive a cellular-enabled blood glucose meter that automatically uploads your readings to the cloud every time you test — no Bluetooth pairing, no manual entry. The readings appear instantly in the Livongo app on your phone and are reviewed by the program's health coaches and clinical team.
 
-One of the biggest barriers people with diabetes face is the cost of test strips. Livongo addresses this directly: enrolled members receive unlimited test strips and lancets shipped to their home at no additional charge. For people who test frequently or have limited income, this can represent significant savings and removes a common reason people test less often than their doctor recommends.
+One of the biggest barriers people with diabetes face is the cost of test strips. Livongo addresses this directly: enrolled members receive unlimited test strips and lancets shipped to their home at no additional charge. For people who test often or have limited income, this can represent significant savings and removes a common reason people test less often than their doctor recommends.
 
 The real heart of the Livongo program is the coaching and support. When your blood glucose reading is outside your personal target range, the meter itself displays a personalized message with a suggested action — for example, "Your number is low. Consider eating 15 grams of fast carbs and re-checking in 15 minutes." A team of certified diabetes educators can also reach out to you by phone if your readings show a concerning pattern.
 

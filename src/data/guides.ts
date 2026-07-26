@@ -225,7 +225,7 @@ const coreGuides: Guide[] = [
     steps: [
       { title: 'Open from the Start menu', content: 'Click the Windows icon (Start) in the taskbar. Browse or search for the app you want to open.' },
       { title: 'Open from the desktop', content: 'Double-click a desktop shortcut icon to launch that program directly.' },
-      { title: 'Open from the taskbar', content: 'Click any pinned app icon on the taskbar for quick access to frequently used programs.' },
+      { title: 'Open from the taskbar', content: 'Click any pinned app icon on the taskbar for quick access to often used programs.' },
       { title: 'Close a program', content: 'Click the X button in the top-right corner of the program window to close it.' },
       { title: 'Force close a frozen program', content: 'Press Ctrl+Alt+Delete → Task Manager → select the frozen program → End Task.' },
     ]
@@ -280,7 +280,7 @@ const coreGuides: Guide[] = [
     publishedAt: '2026-01-11',
     difficulty: 'Beginner',
     steps: [
-      { title: 'Save with Ctrl+S', content: 'In any application, press Ctrl+S to save your current file. Do this frequently while working!' },
+      { title: 'Save with Ctrl+S', content: 'In any application, press Ctrl+S to save your current file. Do this often while working!' },
       { title: 'Save As for a new copy', content: 'Press Ctrl+Shift+S or go to File → Save As to save with a different name, location, or format.' },
       { title: 'Choose a save location', content: 'Use the file browser to navigate to where you want to save — Desktop, Documents, or a specific folder.' },
       { title: 'Name your file clearly', content: 'Give files descriptive names like "Budget_March_2026" instead of "Untitled" so you can find them later.' },
@@ -948,7 +948,7 @@ const coreGuides: Guide[] = [
       { title: 'Scan for malware', content: 'Run a full scan with Windows Security → Virus & Threat Protection → Full Scan.' },
       { title: 'Disable visual effects', content: 'Search "Adjust appearance" → Choose "Adjust for best performance" for older PCs.' },
       { title: 'Consider hardware upgrades', content: 'An SSD upgrade or additional RAM can dramatically improve performance on older computers.' },
-      { title: 'Check for overheating', content: 'If your PC slows down over time, clean dust from vents and ensure fans are working properly.', tip: `For more tips, visit support.microsoft.com/en-us/windows/tips-to-improve-pc-performance-in-windows — Microsoft's official guide to speeding up a slow PC.` },
+      { title: 'Check for overheating', content: 'If your PC slows down over time, clean dust from vents and make sure fans are working properly.', tip: `For more tips, visit support.microsoft.com/en-us/windows/tips-to-improve-pc-performance-in-windows — Microsoft's official guide to speeding up a slow PC.` },
     ]
   },
   {
@@ -983,7 +983,7 @@ const coreGuides: Guide[] = [
     difficulty: 'Advanced',
     steps: [
       { title: 'Open Windows Security', content: 'Go to Settings → Privacy & Security → Windows Security → Firewall & Network Protection.' },
-      { title: 'Check firewall status', content: 'Ensure the firewall is On for all three network profiles: Domain, Private, and Public.' , warning: 'Never turn off the firewall unless a trusted technician specifically asks you to, and always turn it back on afterwards.' },
+      { title: 'Check firewall status', content: 'Make sure the firewall is On for all three network profiles: Domain, Private, and Public.' , warning: 'Never turn off the firewall unless a trusted technician specifically asks you to, and always turn it back on afterwards.' },
       { title: 'Allow an app through', content: 'Click "Allow an app through firewall" to add specific programs to the allowed list.' , tip: 'Only allow apps you recognize and trust through the firewall. If you are unsure about an app, search its name online first.' },
       { title: 'Create inbound/outbound rules', content: 'Open "Advanced settings" for Windows Defender Firewall with Advanced Security to create custom rules.' },
       { title: 'Restore default settings', content: `If you've misconfigured the firewall, click "Restore firewalls to default" to reset all rules.` },
@@ -1002,7 +1002,7 @@ const coreGuides: Guide[] = [
     difficulty: 'Advanced',
     steps: [
       { title: 'Enable Remote Desktop', content: 'Go to Settings → System → Remote Desktop → toggle it On. Note your PC name shown below.' },
-      { title: 'Configure network settings', content: 'Ensure both PCs are on the same network, or set up port forwarding on your router for external access.' },
+      { title: 'Configure network settings', content: 'Make sure both PCs are on the same network, or set up port forwarding on your router for external access.' },
       { title: 'Connect from another PC', content: 'On the other PC, search for "Remote Desktop Connection," enter the PC name or IP address, and click Connect.' },
       { title: 'Sign in', content: 'Enter your Windows username and password to access the remote PC.' },
       { title: 'Use the remote session', content: `You'll see the remote PC's desktop. The toolbar at the top lets you minimize, adjust settings, or disconnect.` },
@@ -1081,7 +1081,7 @@ const coreGuides: Guide[] = [
       { title: 'Run a virus scan', content: 'Click "Virus & Threat Protection" → Quick Scan for a fast check, or Scan Options → Full Scan for thorough scanning.', tip: 'Run a Quick Scan weekly and a Full Scan monthly for best protection.' },
       { title: 'Check protection status', content: 'The main dashboard shows green checkmarks if everything is protected. Yellow or red means action needed.' },
       { title: 'Spot fake virus alerts', content: 'Most scary virus pop-ups are fake scams. NEVER call any phone number shown in a pop-up. NEVER click buttons inside the pop-up.', warning: '80% of scary virus pop-ups are fake scams trying to trick you. NEVER call any phone number shown. NEVER click buttons inside the pop-up. Just close the browser tab.', tip: `Learn more about tech support scams at support.microsoft.com/en-us/windows/protect-yourself-from-tech-support-scams — Microsoft's official guide to spotting and avoiding these scams.` },
-      { title: 'Enable real-time protection', content: 'Ensure Real-time Protection, Cloud-delivered Protection, and Automatic Sample Submission are all on.' },
+      { title: 'Enable real-time protection', content: 'Make sure Real-time Protection, Cloud-delivered Protection, and Automatic Sample Submission are all on.' },
       { title: 'Review threat history', content: 'Click "Protection History" to see past threats and the actions Windows Security has taken.' },
     ]
   },
@@ -1271,7 +1271,7 @@ const coreGuides: Guide[] = [
     publishedAt: '2026-01-13',
     difficulty: 'Beginner',
     steps: [
-      { title: 'Open Spotlight', content: 'Press Cmd+Space to open Spotlight search. Start typing immediately.' },
+      { title: 'Open Spotlight', content: 'Press Cmd+Space to open Spotlight search. Start typing right away.' },
       { title: 'Search for files', content: 'Type a file name and Spotlight will find it anywhere on your Mac. Press Enter to open it.' },
       { title: 'Open apps quickly', content: 'Type the first few letters of an app name (like "saf" for Safari) and press Enter.' },
       { title: 'Do calculations', content: 'Type a math equation (like "145*3") and Spotlight will show the answer instantly.' },
@@ -1607,7 +1607,7 @@ const coreGuides: Guide[] = [
     steps: [
       { title: 'Use the keyboard shortcut', content: 'Press Cmd+Option+Esc to open the Force Quit Applications window.' },
       { title: 'Select the frozen app', content: 'In the Force Quit window, click the unresponsive app (it may say "Not Responding").' },
-      { title: 'Click Force Quit', content: 'Click "Force Quit" and confirm. The app will close immediately.' },
+      { title: 'Click Force Quit', content: 'Click "Force Quit" and confirm. The app will close right away.' },
       { title: 'Alternative method', content: 'Click the Apple menu → Force Quit. Or right-click the app in the Dock with Option held → Force Quit.' },
     ]
   },
@@ -1778,7 +1778,7 @@ const coreGuides: Guide[] = [
     steps: [
       { title: 'Open Apple ID settings', content: 'Go to System Settings → your name (Apple ID) → Sign-In & Security.' },
       { title: 'Enable Two-Factor Authentication', content: 'Click "Two-Factor Authentication" → Turn On. Follow the prompts.' , tip: 'Once enabled, two-factor authentication cannot be turned off for Apple IDs created with iOS 13.4 or later.' },
-      { title: 'Add a trusted phone number', content: 'Enter a phone number where you can receive verification codes via text or phone call.' , warning: 'Use a phone number you will have long-term. If you change your phone number, update it in Apple ID settings immediately.' },
+      { title: 'Add a trusted phone number', content: 'Enter a phone number where you can receive verification codes via text or phone call.' , warning: 'Use a phone number you will have long-term. If you change your phone number, update it in Apple ID settings right away.' },
       { title: 'Verify the setup', content: 'Apple will send a verification code to your phone. Enter it to complete setup.' },
       { title: 'Trust your devices', content: 'Your Mac and other Apple devices become trusted automatically. Verification codes appear on trusted devices.' },
     ]
@@ -1887,7 +1887,7 @@ const coreGuides: Guide[] = [
     difficulty: 'Beginner',
     steps: [
       { title: 'Choose your platform', content: 'FaceTime (Apple devices), Zoom (any device), Microsoft Teams (work), Google Meet (any device).' },
-      { title: 'Set up your camera and mic', content: `Ensure your camera is unblocked and microphone is working. Test them in the app's settings.` },
+      { title: 'Set up your camera and mic', content: `Make sure your camera is unblocked and microphone is working. Test them in the app's settings.` },
       { title: 'Start or join a call', content: 'To start: open the app and click "New Meeting." To join: click the meeting link or enter the meeting ID.' },
       { title: 'Use essential controls', content: 'Learn to mute/unmute (microphone icon), turn camera on/off (camera icon), and share your screen.' },
       { title: 'Optimize your setup', content: 'Use good lighting (face a window), position camera at eye level, and use headphones to reduce echo.', tip: `For FaceTime help on Apple devices, visit support.apple.com/en-us/facetime — Apple's official FaceTime support page with troubleshooting and setup guides.` },
@@ -2192,7 +2192,7 @@ const coreGuides: Guide[] = [
     difficulty: 'Intermediate',
     steps: [
       { title: 'Spotlight Search: Cmd+Space', content: 'The fastest way to open anything. Search for apps, files, calculations, and more.' },
-      { title: 'Force Quit: Cmd+Option+Esc', content: 'When an app freezes, this opens the Force Quit window to close it immediately.' },
+      { title: 'Force Quit: Cmd+Option+Esc', content: 'When an app freezes, this opens the Force Quit window to close it right away.' },
       { title: 'Screenshot: Cmd+Shift+3/4/5', content: '3 = full screen, 4 = selection, 5 = screenshot toolbar with screen recording.' },
       { title: 'Lock Screen: Ctrl+Cmd+Q', content: 'Instantly lock your Mac when stepping away.' },
       { title: 'Mission Control: Ctrl+Up Arrow', content: 'See all open windows at once. Perfect for finding buried apps.' },
@@ -2249,7 +2249,7 @@ const coreGuides: Guide[] = [
     publishedAt: '2026-01-23',
     difficulty: 'Beginner',
     steps: [
-      { title: 'Use Quick Access', content: 'Pin frequently used folders to Quick Access in File Explorer for instant access.' },
+      { title: 'Use Quick Access', content: 'Pin often used folders to Quick Access in File Explorer for instant access.' },
       { title: 'Clean up your Desktop', content: 'Move files off your Desktop into proper folders. A cluttered desktop can actually slow down your PC.' },
       { title: 'Use the Downloads cleanup', content: 'Sort your Downloads folder by date and delete old installers and temporary files regularly.' },
       { title: 'Create a consistent structure', content: 'Use a clear folder hierarchy: Documents → [Category] → [Year] → [Project]. Be consistent.' },
@@ -2325,12 +2325,12 @@ const coreGuides: Guide[] = [
     publishedAt: '2026-01-31',
     difficulty: 'Beginner',
     steps: [
-      { title: 'Tech support scams', content: 'Microsoft, Apple, and Google will NEVER call you about a virus. Hang up immediately.' , warning: 'Microsoft, Apple, and Google will NEVER call you about a virus on your computer. If someone calls claiming this, hang up immediately.' },
+      { title: 'Tech support scams', content: 'Microsoft, Apple, and Google will NEVER call you about a virus. Hang up right away.' , warning: 'Microsoft, Apple, and Google will NEVER call you about a virus on your computer. If someone calls claiming this, hang up right away.' },
       { title: 'Phishing emails and texts', content: `Don't click links in unexpected messages. Go to the company's website directly instead.` },
-      { title: 'Traffic violation text scams (April 2026 FTC Alert)', content: `A major new scam is spreading fast: fake text messages claiming you owe money for an unpaid traffic ticket, toll, or moving violation. Delete these immediately. Real government agencies never send payment links by text. If you think a fine might be real, look up your state's official DMV website yourself.`, tip: 'The FTC issued a fresh alert about this scam on April 14, 2026. Report these texts to the FTC at ReportFraud.ftc.gov and forward them to 7726 (SPAM).' },
+      { title: 'Traffic violation text scams (April 2026 FTC Alert)', content: `A major new scam is spreading fast: fake text messages claiming you owe money for an unpaid traffic ticket, toll, or moving violation. Delete these right away. Real government agencies never send payment links by text. If you think a fine might be real, look up your state's official DMV website yourself.`, tip: 'The FTC issued a fresh alert about this scam on April 14, 2026. Report these texts to the FTC at ReportFraud.ftc.gov and forward them to 7726 (SPAM).' },
       { title: 'Too-good-to-be-true offers', content: 'Free iPhones, lottery winnings, and unexpected refunds are almost always scams.' },
       { title: 'Social media scams', content: 'Be wary of friend requests from strangers, investment schemes, and "free gift" posts.' },
-      { title: `What to do if you've been scammed`, content: 'Change your passwords immediately, contact your bank, report to the FTC at reportfraud.ftc.gov.', tip: 'Report fraud at ReportFraud.ftc.gov and stay up to date on the latest scams at consumer.ftc.gov/scams. For tech support scam protection specifically, visit support.microsoft.com/en-us/windows/protect-yourself-from-tech-support-scams.' },
+      { title: `What to do if you've been scammed`, content: 'Change your passwords right away, contact your bank, report to the FTC at reportfraud.ftc.gov.', tip: 'Report fraud at ReportFraud.ftc.gov and stay up to date on the latest scams at consumer.ftc.gov/scams. For tech support scam protection specifically, visit support.microsoft.com/en-us/windows/protect-yourself-from-tech-support-scams.' },
     ]
   },
   {
@@ -3694,7 +3694,7 @@ const coreGuides: Guide[] = [
       { title: 'EU AI Act', content: `The world's first comprehensive AI law. Classifies AI systems by risk level: minimal, limited, high, and unacceptable. Bans social scoring and real-time facial recognition.` },
       { title: 'US approach', content: 'Executive orders on AI safety, voluntary commitments from tech companies, and sector-specific regulations. No comprehensive federal AI law yet.' },
       { title: `China's regulations`, content: 'Strict rules on generative AI: content must align with "core socialist values." Separate regulations for deepfakes, recommendations, and generative AI.' },
-      { title: 'Impact on businesses', content: 'Companies using AI must conduct risk assessments, ensure transparency, maintain human oversight, and document their AI systems — especially for high-risk applications.' },
+      { title: 'Impact on businesses', content: 'Companies using AI must conduct risk assessments, make sure transparency, maintain human oversight, and document their AI systems — especially for high-risk applications.' },
       { title: 'Staying compliant', content: 'Document your AI usage, implement human review for high-stakes decisions, maintain audit trails, and stay updated as regulations evolve rapidly.' },
     ]
   },
@@ -3809,9 +3809,9 @@ const coreGuides: Guide[] = [
     steps: [
       { title: 'Research assistance', content: 'Use Consensus, Semantic Scholar, or Elicit to find and summarize academic papers. These AI tools search peer-reviewed sources, not just the web.' },
       { title: 'Study tools', content: 'Generate flashcards with Anki + ChatGPT. Create practice exams. Ask AI to explain complex theories in simple terms or with analogies.' },
-      { title: 'Writing support (not cheating)', content: 'Use AI to brainstorm thesis ideas, create outlines, and improve grammar. Write your own drafts first, then use AI for editing assistance.' },
+      { title: 'Writing support (not cheating)', content: 'Use AI to brainstorm thesis ideas, create outlines, and improve grammar. Write your own drafts first, then use AI for editing help.' },
       { title: 'Citation help', content: 'Ask ChatGPT to format citations in APA, MLA, or Chicago style. Always verify the citations exist — AI sometimes creates fictional sources.' },
-      { title: 'Know the rules', content: 'Every university has different AI policies. Some allow AI assistance with disclosure, others prohibit it entirely. Check your syllabus and ask professors.' },
+      { title: 'Know the rules', content: 'Every university has different AI policies. Some allow AI help with disclosure, others prohibit it entirely. Check your syllabus and ask professors.' },
     ]
   },
   {
@@ -3883,7 +3883,7 @@ const coreGuides: Guide[] = [
     publishedAt: '2026-03-24',
     difficulty: 'Intermediate',
     steps: [
-      { title: 'Job description writing', content: 'AI generates inclusive, compelling job descriptions. Ask it to remove biased language and ensure the posting appeals to diverse candidates.' },
+      { title: 'Job description writing', content: 'AI generates inclusive, compelling job descriptions. Ask it to remove biased language and make sure the posting appeals to diverse candidates.' },
       { title: 'Resume screening', content: `AI tools like Greenhouse and Lever score resumes against job requirements. Review AI recommendations — don't auto-reject without human oversight.` },
       { title: 'Onboarding automation', content: 'Create personalized onboarding checklists, welcome emails, and training schedules using AI. New hires get consistent, thorough onboarding experiences.' },
       { title: 'Employee Q&A bot', content: 'Build an internal chatbot that answers common HR questions: PTO policies, benefits information, expense procedures — available 24/7.' },
@@ -3942,7 +3942,7 @@ const coreGuides: Guide[] = [
       { title: 'Perplexity AI', content: 'Perplexity answers questions with cited sources. It searches the web in real-time and provides a synthesized answer with links to verify each claim.' },
       { title: 'Google AI Overviews', content: 'Google now shows AI-generated summaries at the top of search results. These pull from multiple sources to answer your question directly.' },
       { title: 'Bing + Copilot', content: 'Microsoft integrates Copilot AI into Bing search. Ask complex questions and get conversational answers alongside traditional search results.' },
-      { title: 'When to use what', content: 'Quick facts → AI search. Deep research → Traditional Google with AI assistance. Latest news → Traditional search with date filters.' },
+      { title: 'When to use what', content: 'Quick facts → AI search. Deep research → Traditional Google with AI help. Latest news → Traditional search with date filters.' },
       { title: 'Verify AI search results', content: 'AI search can summarize incorrectly. Always click through to the cited sources for important information, especially medical, legal, or financial topics.' },
     ]
   },
@@ -4122,7 +4122,7 @@ const coreGuides: Guide[] = [
       },
       {
         title: `Check who's connected to your network`,
-        content: 'In your router admin panel, look for "Connected Devices", "DHCP Clients", or "Device List". You should recognize every device listed. If you see something unfamiliar, change your Wi-Fi password immediately.', tip: 'Run this check every few months. Most routers show the device name and type, making it easy to spot anything suspicious.'
+        content: 'In your router admin panel, look for "Connected Devices", "DHCP Clients", or "Device List". You should recognize every device listed. If you see something unfamiliar, change your Wi-Fi password right away.', tip: 'Run this check every few months. Most routers show the device name and type, making it easy to spot anything suspicious.'
       },
       {
         title: 'Keep your router firmware updated',
@@ -4193,7 +4193,7 @@ const coreGuides: Guide[] = [
       {
         title: 'Lock down your Facebook privacy settings',
         content: 'On Facebook: tap your profile photo → Settings → Privacy. Set "Who can see your future posts?" to Friends. Set "Who can send you friend requests?" to Friends of Friends. Set "Who can look you up using your email?" to Friends. These three changes alone dramatically reduce how much strangers can see about you.',
-        tip: 'Do this check every 6 months — Facebook occasionally resets privacy settings after updates.'
+        tip: 'Do this check every 6 months — Facebook sometimes resets privacy settings after updates.'
       },
       {
         title: 'Review your Instagram account settings',
@@ -4252,7 +4252,7 @@ const coreGuides: Guide[] = [
       },
       {
         title: 'Spot fake banking apps',
-        content: 'Signs of a fake banking app: it asks for your full card number and PIN on first setup (real apps never need your PIN); it has spelling mistakes or a slightly wrong bank name; it was found via a link rather than searching the official app store; reviews mention money going missing.', warning: `If you've accidentally installed a fake app and entered your details, call your bank immediately using the number on the back of your card.`
+        content: 'Signs of a fake banking app: it asks for your full card number and PIN on first setup (real apps never need your PIN); it has spelling mistakes or a slightly wrong bank name; it was found via a link rather than searching the official app store; reviews mention money going missing.', warning: `If you've accidentally installed a fake app and entered your details, call your bank right away using the number on the back of your card.`
       },
       {
         title: `Log out when you're done`,
@@ -4498,7 +4498,7 @@ const coreGuides: Guide[] = [
       },
       {
         title: 'Delete duplicates and blurry photos',
-        content: 'Go through your photos occasionally and delete: near-identical duplicates (usually keep the sharpest); blurry or accidentally taken shots; screenshots you no longer need. In Google Photos, the "Utilities" section has a "Free up space" tool that identifies items already backed up and safe to delete from your phone.', tip: 'Doing a quick tidy every 3 months is much less overwhelming than leaving it for years. Even deleting 100 bad photos at a time makes a difference.'
+        content: 'Go through your photos sometimes and delete: near-identical duplicates (usually keep the sharpest); blurry or accidentally taken shots; screenshots you no longer need. In Google Photos, the "Utilities" section has a "Free up space" tool that identifies items already backed up and safe to delete from your phone.', tip: 'Doing a quick tidy every 3 months is much less overwhelming than leaving it for years. Even deleting 100 bad photos at a time makes a difference.'
       },
       {
         title: 'Back up your photos to a second location',
@@ -4609,7 +4609,7 @@ const coreGuides: Guide[] = [
       },
       {
         title: 'Check your balance and transactions',
-        content: `Open the app and tap your current account to see your balance. Scroll down to see recent transactions. If you see anything you don't recognize, contact your bank immediately using the number on the back of your card — not a number from a suspicious email or text.`, tip: 'Check your balance weekly — catching problems early is key. Set up transaction notifications so your bank texts you for every purchase.'
+        content: `Open the app and tap your current account to see your balance. Scroll down to see recent transactions. If you see anything you don't recognize, contact your bank right away using the number on the back of your card — not a number from a suspicious email or text.`, tip: 'Check your balance weekly — catching problems early is key. Set up transaction notifications so your bank texts you for every purchase.'
       },
       {
         title: 'Pay a bill or transfer money',
@@ -4844,7 +4844,7 @@ const coreGuides: Guide[] = [
       },
       {
         title: 'Join the call',
-        content: `When it's time, click or tap the link you were sent — it usually opens in your web browser. You may be asked to allow access to your camera and microphone — tap "Allow." You'll often enter a virtual waiting room and the doctor will join when ready. If using an app like Livi or Babylon, open the app and tap "Join Consultation" when prompted.`, warning: `If the link doesn't work, try a different browser (Chrome works best). If you can't connect, call the surgery immediately — they can switch to a telephone call.`
+        content: `When it's time, click or tap the link you were sent — it usually opens in your web browser. You may be asked to allow access to your camera and microphone — tap "Allow." You'll often enter a virtual waiting room and the doctor will join when ready. If using an app like Livi or Babylon, open the app and tap "Join Consultation" when prompted.`, warning: `If the link doesn't work, try a different browser (Chrome works best). If you can't connect, call the surgery right away — they can switch to a telephone call.`
       },
       {
         title: 'During the call',
@@ -4893,7 +4893,7 @@ const coreGuides: Guide[] = [
       },
       {
         title: 'Deleting files and emptying the bin',
-        content: `To delete a file: select it and press the Delete key (Windows) or drag it to the Bin/Trash on Mac. Deleted files go to the Recycle Bin (Windows) or Bin (Mac) — they're not gone yet. To permanently delete and free up space: right-click the Recycle Bin/Bin icon on your desktop and choose "Empty Recycle Bin" or "Empty Bin." Do this every few months.`, warning: 'Once you empty the bin, files are permanently deleted and cannot be recovered (unless you have a backup). Double-check before emptying.', tip: 'Press Ctrl+Z (Windows) or Command+Z (Mac) immediately after an accidental delete to undo it — before you empty the bin.'
+        content: `To delete a file: select it and press the Delete key (Windows) or drag it to the Bin/Trash on Mac. Deleted files go to the Recycle Bin (Windows) or Bin (Mac) — they're not gone yet. To permanently delete and free up space: right-click the Recycle Bin/Bin icon on your desktop and choose "Empty Recycle Bin" or "Empty Bin." Do this every few months.`, warning: 'Once you empty the bin, files are permanently deleted and cannot be recovered (unless you have a backup). Double-check before emptying.', tip: 'Press Ctrl+Z (Windows) or Command+Z (Mac) right away after an accidental delete to undo it — before you empty the bin.'
       },
     ]
   },
@@ -5007,7 +5007,7 @@ const coreGuides: Guide[] = [
       },
       {
         title: 'Setting up Zoom',
-        content: 'Download Zoom from the App Store (iPhone/iPad), Play Store (Android), or zoom.us (computer). Open Zoom and tap "Sign Up Free" to create an account with your email. Once logged in, tap "New Meeting" to start a call immediately, or "Join" to enter a meeting code someone sent you. To invite family, tap "Participants" during a call → "Invite" → share a link via WhatsApp or email.',
+        content: 'Download Zoom from the App Store (iPhone/iPad), Play Store (Android), or zoom.us (computer). Open Zoom and tap "Sign Up Free" to create an account with your email. Once logged in, tap "New Meeting" to start a call right away, or "Join" to enter a meeting code someone sent you. To invite family, tap "Participants" during a call → "Invite" → share a link via WhatsApp or email.',
         tip: `Ask a family member to send you a Zoom invite link. Just tapping the link joins the call automatically — you don't need to know your own Zoom details.`, warning: 'Never share your Zoom personal meeting ID publicly — only share it with people you want to join.'
       },
       {
@@ -5086,7 +5086,7 @@ const coreGuides: Guide[] = [
     steps: [
       {
         title: 'Check for the padlock — always',
-        content: 'Before entering any personal details or payment information on a shopping website, look at the address bar at the top of your browser. You should see a padlock icon  and the address should start with "https://" (the "s" stands for secure). If you see a warning, a broken padlock, or "http://" without the "s", leave the site immediately — it is not safe to enter payment details.', tip: `The padlock doesn't guarantee a site is legitimate — it just means your data is encrypted. Always double-check the website name too.`, warning: 'Scam sites can have padlocks too. Always verify the exact website address — "amazon.co.uk" is real; "amazon-deals.co.uk" or "amazon.shop-secure.com" are fakes.'
+        content: 'Before entering any personal details or payment information on a shopping website, look at the address bar at the top of your browser. You should see a padlock icon  and the address should start with "https://" (the "s" stands for secure). If you see a warning, a broken padlock, or "http://" without the "s", leave the site right away — it is not safe to enter payment details.', tip: `The padlock doesn't guarantee a site is legitimate — it just means your data is encrypted. Always double-check the website name too.`, warning: 'Scam sites can have padlocks too. Always verify the exact website address — "amazon.co.uk" is real; "amazon-deals.co.uk" or "amazon.shop-secure.com" are fakes.'
       },
       {
         title: 'Stick to trusted retailers',
@@ -5098,7 +5098,7 @@ const coreGuides: Guide[] = [
       },
       {
         title: 'Safe payment methods',
-        content: `The safest payment method is a credit card — if something goes wrong (item not delivered, damaged, or wrong), your credit card company must refund you under Section 75 of the Consumer Credit Act for purchases over $100. Debit cards also offer Chargeback protection. PayPal is also very safe — you can raise a dispute through PayPal's Resolution Center. Avoid: bank transfers, gift cards, and cryptocurrency — these offer no consumer protection.`, tip: 'Even for small purchases, using a credit card (and paying it off immediately) gives you extra protection. A dedicated low-limit credit card just for online shopping is ideal.'
+        content: `The safest payment method is a credit card — if something goes wrong (item not delivered, damaged, or wrong), your credit card company must refund you under Section 75 of the Consumer Credit Act for purchases over $100. Debit cards also offer Chargeback protection. PayPal is also very safe — you can raise a dispute through PayPal's Resolution Center. Avoid: bank transfers, gift cards, and cryptocurrency — these offer no consumer protection.`, tip: 'Even for small purchases, using a credit card (and paying it off right away) gives you extra protection. A dedicated low-limit credit card just for online shopping is ideal.'
       },
       {
         title: 'Checking seller reviews on Amazon and eBay',
@@ -5107,7 +5107,7 @@ const coreGuides: Guide[] = [
       },
       {
         title: 'What to do if things go wrong',
-        content: `If your item doesn't arrive or isn't as described: first contact the seller directly and give them 5 working days to respond. If no resolution, open a dispute through the platform (Amazon A-to-Z Guarantee, eBay Money Back Guarantee, or PayPal Resolution Center). If paid by credit card, contact your card provider and request a chargeback. If paid by debit card, contact your bank within 120 days. If you've been scammed, report it to Action Fraud (actionfraud.police.uk) and your bank immediately.`, tip: `Keep all confirmation emails, screenshots of the listing, and communication with the seller — you'll need these for any dispute.`, warning: `Never pay extra money to "release" a parcel or "cover customs fees" for a package you weren't expecting — this is a common parcel delivery scam.`
+        content: `If your item doesn't arrive or isn't as described: first contact the seller directly and give them 5 working days to respond. If no resolution, open a dispute through the platform (Amazon A-to-Z Guarantee, eBay Money Back Guarantee, or PayPal Resolution Center). If paid by credit card, contact your card provider and request a chargeback. If paid by debit card, contact your bank within 120 days. If you've been scammed, report it to Action Fraud (actionfraud.police.uk) and your bank right away.`, tip: `Keep all confirmation emails, screenshots of the listing, and communication with the seller — you'll need these for any dispute.`, warning: `Never pay extra money to "release" a parcel or "cover customs fees" for a package you weren't expecting — this is a common parcel delivery scam.`
       },
     ]
   },
@@ -5345,7 +5345,7 @@ const coreGuides: Guide[] = [
     steps: [
       { title: 'Open Word and create a new document', content: 'Open Microsoft Word from your Start menu (Windows) or Applications folder (Mac). Click "Blank Document" to start fresh, or choose a template (letter, resume, flyer) for a pre-designed layout. The main area is your writing space. The toolbar at the top (called the "Ribbon") has all your formatting tools.' },
       { title: 'Type and format text', content: 'Click anywhere in the document and start typing. To format text: select it by clicking and dragging, then use the Home tab in the Ribbon. Bold (Ctrl+B), Italic (Ctrl+I), Underline (Ctrl+U). Change font size with the number dropdown. Change font style with the font name dropdown. Use the alignment buttons to center, left-align, or right-align text.' },
-      { title: 'Save your document', content: `Press Ctrl+S (Windows) or Cmd+S (Mac) to save. The first time, you'll choose a location (Desktop, Documents folder, or OneDrive) and a file name. After that, Ctrl+S saves instantly to the same location. Save frequently — every few minutes — to avoid losing work.`, warning: 'If your computer crashes or loses power before you save, any unsaved work is lost. Get in the habit of pressing Ctrl+S after every paragraph.' },
+      { title: 'Save your document', content: `Press Ctrl+S (Windows) or Cmd+S (Mac) to save. The first time, you'll choose a location (Desktop, Documents folder, or OneDrive) and a file name. After that, Ctrl+S saves instantly to the same location. Save often — every few minutes — to avoid losing work.`, warning: 'If your computer crashes or loses power before you save, any unsaved work is lost. Get in the habit of pressing Ctrl+S after every paragraph.' },
       { title: 'Insert images and tables', content: 'Go to the Insert tab in the Ribbon. Click "Pictures" to add a photo from your computer. Click "Table" and drag to select the number of rows and columns you need. Click "Page Break" to start a new page. You can also insert page numbers: Insert → Page Number → choose a position.' },
       { title: 'Print your document', content: 'Press Ctrl+P (Windows) or Cmd+P (Mac) to open Print Preview. Check that everything looks right — margins, page breaks, and formatting. Choose your printer from the dropdown. Set the number of copies. Click "Print." Tip: Use "Print Preview" to catch issues before wasting paper.', tip: 'To save as a PDF (for sharing by email), go to File → Save As → change the format dropdown to "PDF."' },
     ]
@@ -5439,7 +5439,7 @@ const coreGuides: Guide[] = [
       { title: 'Scan photos with your phone', content: 'Download "Google PhotoScan" (free) from your app store. Open the app and position your phone over the photo. The app guides you to capture the photo from multiple angles, which removes glare and produces a flat, professional-looking scan. It works much better than just taking a regular photo of a photo.' },
       { title: 'Use a flatbed scanner for best quality', content: `If you have a flatbed scanner (or know someone who does), place photos face-down on the glass. Scan at 300 DPI (dots per inch) for prints, or 600 DPI for small photos you'll want to enlarge. Save as JPEG for sharing or TIFF for maximum quality. Clean the scanner glass with a microfiber cloth before scanning.` },
       { title: 'Fix faded or damaged photos', content: 'Google Photos has a free "Enhance" button that automatically improves brightness, contrast, and color. For more serious restoration (torn photos, missing sections, severe fading), try apps like "Remini" (uses AI to sharpen faces) or "MyHeritage Photo Enhancer" (free for basic use). These AI tools can dramatically improve old, blurry photos.', tip: 'Remini and MyHeritage can also colorize black-and-white photos automatically — the results are often surprisingly good.' },
-      { title: 'Organize and back up your scans', content: `Create a folder called "Family Photos" in Google Photos, iCloud Photos, or your preferred cloud storage. Organize by decade or event. Add descriptions while you remember them — who's in the photo, when it was taken, and where. This information becomes invaluable for future generations. Cloud storage ensures your digital copies survive even if your computer fails.` },
+      { title: 'Organize and back up your scans', content: `Create a folder called "Family Photos" in Google Photos, iCloud Photos, or your preferred cloud storage. Organize by decade or event. Add descriptions while you remember them — who's in the photo, when it was taken, and where. This information becomes invaluable for future generations. Cloud storage makes sure your digital copies survive even if your computer fails.` },
       { title: 'Share with family', content: `Use Google Photos "Shared Albums" or Apple's "Shared Albums" to create a family photo collection that everyone can view and add to. Share the link with family members by email or text. They can view, download, and add their own scanned photos. It's a wonderful way to bring family memories together in one place.` },
     ]
   },
@@ -5519,7 +5519,7 @@ const coreGuides: Guide[] = [
     steps: [
       { title: 'Choose and charge your device', content: 'Popular options: Fitbit (simple, affordable, great battery), Apple Watch (most features, works with iPhone), Samsung Galaxy Watch (works with Android). Unbox your device and charge it fully before setup — this usually takes 1-2 hours. The charger is a magnetic cradle or cable that clips to the back of the device.' },
       { title: 'Download the companion app', content: 'Download the matching app on your phone: "Fitbit" app for Fitbit devices, "Watch" app (pre-installed) for Apple Watch, "Galaxy Wearable" for Samsung. Open the app, create an account (or sign in), and follow the pairing instructions. The app will search for your device via Bluetooth — keep it nearby during setup.' },
-      { title: 'Set your daily goals', content: 'The app will ask for your height, weight, and age to calculate accurate calorie burns. Set a daily step goal — 10,000 is the popular target, but 7,500 is also beneficial. You can also set goals for active minutes, water intake, and sleep hours. Start with achievable goals and increase them as you build habits.', tip: 'Starting with a lower step goal (like 5,000) and building up is better than setting 10,000 and getting discouraged.' },
+      { title: 'Set your daily goals', content: 'The app will ask for your height, weight, and age to calculate accurate calorie burns. Set a daily step goal — 10,000 is the popular target, but 7,500 is also helpful. You can also set goals for active minutes, water intake, and sleep hours. Start with achievable goals and increase them as you build habits.', tip: 'Starting with a lower step goal (like 5,000) and building up is better than setting 10,000 and getting discouraged.' },
       { title: 'Understanding your daily stats', content: `Your tracker measures: Steps (total walking/movement), Heart Rate (resting and active), Sleep (duration and quality stages), Calories burned, and Active Minutes (moderate to vigorous exercise). Check the app each morning to see last night's sleep data, and throughout the day to see your step progress. Most devices buzz when you hit your daily goal!` },
       { title: 'Track exercise and share with your doctor', content: `For workouts, start an exercise session on your device: select the exercise type (walk, swim, bike, yoga), and it'll track duration, heart rate, and calories more accurately. Many health apps can share data with your doctor's patient portal — ask your doctor if they accept Fitbit or Apple Health data. This gives them valuable insights between visits.` },
     ]
@@ -5619,7 +5619,7 @@ const coreGuides: Guide[] = [
       { title: 'Register on the Do Not Call list', content: `Go to donotcall.gov or call 1-888-382-1222 from the phone you want to register. It's free and your number stays on the list until you ask to remove it. Legitimate telemarketers must stop calling within 31 days. However, scammers ignore this list, so you'll need additional steps to stop those calls.` },
       { title: `Use your phone's built-in call screening`, content: `On iPhone: Settings → Phone → "Silence Unknown Callers" — this sends calls from numbers not in your contacts straight to voicemail. On Android (Pixel): Phone app → Settings → "Caller ID & spam" → turn on "Filter spam calls." Samsung: Phone app → Settings → "Caller ID and spam protection." These won't block real calls from your contacts.`, tip: `If you're expecting a call from an unknown number (like a doctor's office or delivery), temporarily turn off "Silence Unknown Callers" or check your voicemail promptly.` },
       { title: 'Install a call-blocking app', content: `Free apps like "Nomorobo" (free for landlines, $2/month for mobile), "Hiya," or "Truecaller" identify and block known spam numbers using a constantly updated database. Your carrier may also offer free blocking: T-Mobile has "Scam Shield," AT&T has "ActiveArmor," and Verizon has "Call Filter." Check your carrier's app store for their free version.` },
-      { title: 'Block specific numbers', content: `When a spam call gets through, block the number immediately. On iPhone: go to Recents → tap the (i) next to the number → "Block this Caller." On Android: go to Recents → tap the number → "Block/Report spam." Blocked numbers can't call, text, or FaceTime you. You can manage your blocked list in Settings → Phone → Blocked Contacts.` },
+      { title: 'Block specific numbers', content: `When a spam call gets through, block the number right away. On iPhone: go to Recents → tap the (i) next to the number → "Block this Caller." On Android: go to Recents → tap the number → "Block/Report spam." Blocked numbers can't call, text, or FaceTime you. You can manage your blocked list in Settings → Phone → Blocked Contacts.` },
       { title: 'Recognize and avoid phone scams', content: `Red flags: caller says you owe the IRS money (the IRS contacts you by mail first), caller asks for gift card payments (no real company does this), caller says you've won a prize but need to pay a fee, caller pressures you to act "right now." Hang up on suspicious calls — you can always call the company back using the number on their official website.`, warning: `Never give your Social Security number, bank details, or credit card number to someone who calls you. Real companies and government agencies don't ask for this by phone.`, tip: 'Report phone scams at ReportFraud.ftc.gov. The FTC tracks these calls and works to shut down scam operations. Learn more at consumer.ftc.gov/scams.' },
     ]
   },
@@ -5713,7 +5713,7 @@ const coreGuides: Guide[] = [
     steps: [
       { title: 'What is a digital vault?', content: 'A digital vault is a secure, encrypted online storage space specifically designed for important documents — not just any cloud storage. Unlike Google Drive or iCloud, digital vaults use bank-level encryption and let you organize documents by category (medical, legal, financial, insurance) and designate trusted contacts who can access them. Popular options: AARP Digital Vault (free for AARP members), Trustworthy ($12/month for families), and Everplans.' },
       { title: 'What to store in your vault', content: `Essential documents to digitize and store: driver's license and passport (front/back), Social Security card, birth/marriage certificates, health insurance cards, Medicare card, will and power of attorney, property deeds, car titles, bank and investment account details, life insurance policies, and vaccination records. Scan each document using your phone camera (use the Notes app scanner or Google Drive scanner).` },
-      { title: 'Set up trusted contacts', content: 'The key advantage of a digital vault over regular cloud storage is trusted contacts. You can designate family members, your attorney, or your financial advisor as trusted contacts who can access specific sections of your vault. Some vaults activate access only in an emergency or after you grant permission. This ensures your loved ones can find important documents when they need them.', tip: 'Have a conversation with your trusted contacts about where your vault is and how to access it. The vault is only helpful if people know it exists.' },
+      { title: 'Set up trusted contacts', content: 'The key advantage of a digital vault over regular cloud storage is trusted contacts. You can designate family members, your attorney, or your financial advisor as trusted contacts who can access specific sections of your vault. Some vaults activate access only in an emergency or after you grant permission. This makes sure your loved ones can find important documents when they need them.', tip: 'Have a conversation with your trusted contacts about where your vault is and how to access it. The vault is only helpful if people know it exists.' },
       { title: 'Keep it updated', content: 'Set a calendar reminder to review your vault every 6 months. Update expired documents (new insurance cards, renewed prescriptions), add new documents (new investments, updated will), and remove outdated ones. After major life events (moving, marriage, new grandchild), do a quick vault review to make sure everything is current.' },
     ]
   },
@@ -5771,7 +5771,7 @@ const coreGuides: Guide[] = [
       { title: 'Search for a place to stay', content: 'Enter your destination, check-in and check-out dates, and number of guests. Browse the results — each listing shows photos, price per night, star rating, and key features. Use filters to narrow results: price range, property type (entire home vs. private room), amenities (Wi-Fi, kitchen, parking, washer), and accessibility features. The map view helps you see locations.' },
       { title: 'Read reviews carefully', content: 'Scroll down on any listing to read guest reviews. Focus on: cleanliness scores, accuracy (does it match the photos?), check-in experience, and communication with the host. Look for patterns — if multiple reviews mention a noisy neighborhood or uncomfortable beds, take that seriously. Listings with "Superhost" badges mean the host has consistently high ratings.', tip: 'Look at the most recent reviews first — conditions can change over time. A place with great reviews from 2 years ago might not be the same today.' },
       { title: 'Book and pay', content: 'Tap "Reserve" on the listing you want. Review the price breakdown (nightly rate + cleaning fee + service fee + taxes). Some hosts offer weekly or monthly discounts for longer stays. Enter your payment information and tap "Confirm and Pay." You can message the host before or after booking with any questions about the space.', warning: `Always book through Airbnb's platform — never pay a host directly outside the app. Airbnb's payment protection only covers official bookings.` },
-      { title: 'During your stay', content: `The host will send check-in instructions (usually a day before) through the Airbnb app — this may include a door code, lockbox combination, or key pickup location. If anything is wrong (cleanliness issue, broken amenity, etc.), message the host immediately through the app. If the host can't resolve it, contact Airbnb support. After checkout, leave an honest review — it helps future guests.` },
+      { title: 'During your stay', content: `The host will send check-in instructions (usually a day before) through the Airbnb app — this may include a door code, lockbox combination, or key pickup location. If anything is wrong (cleanliness issue, broken amenity, etc.), message the host right away through the app. If the host can't resolve it, contact Airbnb support. After checkout, leave an honest review — it helps future guests.` },
     ]
   },
 
@@ -6152,7 +6152,7 @@ For stronger privacy, do three things. Turn on Airplane Mode to disable all radi
     publishedAt: '2026-03-31',
     difficulty: 'Beginner',
     steps: [
-      { title: 'Take a screenshot on iPhone with Face ID (iPhone X and newer)', content: 'Press the Side button (right edge) and the Volume Up button (left edge) at the same time, then quickly release both. You will see a white flash and hear a camera click. A small thumbnail appears in the bottom-left corner.', tip: 'Tap the thumbnail to edit or share the screenshot immediately, or swipe it away to save it to Photos automatically.' },
+      { title: 'Take a screenshot on iPhone with Face ID (iPhone X and newer)', content: 'Press the Side button (right edge) and the Volume Up button (left edge) at the same time, then quickly release both. You will see a white flash and hear a camera click. A small thumbnail appears in the bottom-left corner.', tip: 'Tap the thumbnail to edit or share the screenshot right away, or swipe it away to save it to Photos automatically.' },
       { title: 'Take a screenshot on iPhone with a Home button (iPhone 8 and older)', content: 'Press the Side button (or Top button) and the Home button at the same time, then quickly release. You will see the same white flash and a thumbnail will appear in the bottom-left corner.' },
       { title: 'Find your screenshots in Photos', content: 'All screenshots are saved to the Photos app automatically. Open Photos, tap Albums at the bottom, then scroll down to find the Screenshots album. All your captures are stored there.' },
       { title: 'Take a full-page screenshot', content: 'After taking a screenshot, tap the thumbnail before it disappears. At the top of the editing screen, tap "Full Page." This captures the entire webpage or document — great for long emails or articles you want to save.', tip: `Full Page screenshots only work in Safari (Apple's web browser), not in all apps.` },
@@ -6173,7 +6173,7 @@ For stronger privacy, do three things. Turn on Airplane Mode to disable all radi
     steps: [
       { title: 'Use the universal button shortcut', content: 'Press the Power button and the Volume Down button at the same time. Hold them together for about one second, then release. You will see the screen flash and a screenshot notification will appear at the top of your screen.', tip: 'This method works on almost all Android phones, including Samsung Galaxy, Google Pixel, Motorola, and OnePlus.' },
       { title: 'Use a palm swipe on Samsung Galaxy phones', content: 'Samsung Galaxy phones have a special swipe method. Go to Settings > Advanced Features > Motions and Gestures and turn on "Palm swipe to capture." Once enabled, swipe the edge of your open hand across the full screen from right to left to take a screenshot.' },
-      { title: 'Find your screenshot', content: 'Screenshots are saved to your Photos or Gallery app, usually in a Screenshots folder. You can also pull down from the top of your screen to see your notifications and tap the screenshot thumbnail to view it immediately.' },
+      { title: 'Find your screenshot', content: 'Screenshots are saved to your Photos or Gallery app, usually in a Screenshots folder. You can also pull down from the top of your screen to see your notifications and tap the screenshot thumbnail to view it right away.' },
       { title: 'Take a scrolling screenshot to capture a whole page', content: 'Right after taking a screenshot, look for a "Scroll capture" button at the bottom of the screen. Tap it to keep adding more of the page below — useful for capturing a long webpage or conversation. Not all Android phones offer this feature.', tip: 'For Google Pixel help, visit support.google.com/pixelphone. For Samsung Galaxy help, visit samsung.com/us/support.' },
     ],
   },
@@ -6190,7 +6190,7 @@ For stronger privacy, do three things. Turn on Airplane Mode to disable all radi
     difficulty: 'Beginner',
     steps: [
       { title: 'Open Settings and go to Display & Brightness', content: 'Open the Settings app (the grey gear icon). Scroll down and tap "Display & Brightness." Then tap "Text Size." You will see a slider at the bottom of the screen.' },
-      { title: 'Drag the slider to make text bigger', content: 'Drag the slider to the right to increase the text size. As you drag, the preview text above the slider will grow larger so you can see exactly what it will look like. When you are happy with the size, press the back arrow or close Settings — the change takes effect immediately.', tip: `Apple's guide to changing text size is at support.apple.com/en-us/111799 — it covers all accessibility display options.` },
+      { title: 'Drag the slider to make text bigger', content: 'Drag the slider to the right to increase the text size. As you drag, the preview text above the slider will grow larger so you can see exactly what it will look like. When you are happy with the size, press the back arrow or close Settings — the change takes effect right away.', tip: `Apple's guide to changing text size is at support.apple.com/en-us/111799 — it covers all accessibility display options.` },
       { title: 'Enable even larger text sizes', content: 'If the regular slider does not go big enough, go to Settings > Accessibility > Display & Text Size > Larger Text. Turn on "Larger Accessibility Sizes." This unlocks a much larger range — drag the new slider all the way to the right for maximum size.' },
       { title: 'Make text bold', content: 'Go to Settings > Display & Brightness and turn on "Bold Text." Bold text is much easier to read for many people, especially in dim lighting. This works alongside any text size you have chosen.' },
       { title: 'Zoom in on any part of the screen', content: 'For extra help reading specific things, turn on Zoom. Go to Settings > Accessibility > Zoom and turn it on. Then double-tap the screen with three fingers to zoom in on anything — a menu, a small label, or a phone number.', tip: 'You can also pinch and spread two fingers in Safari to zoom in on any webpage, even without turning on Zoom in Settings.' },
@@ -6209,7 +6209,7 @@ For stronger privacy, do three things. Turn on Airplane Mode to disable all radi
     difficulty: 'Beginner',
     steps: [
       { title: 'Open Settings and find Font Size', content: 'Open the Settings app. Depending on your phone brand: Samsung Galaxy — tap Display > Font Size and Style. Google Pixel — tap Accessibility > Text and Display > Font Size. Most other Android phones — tap Display > Font Size, or tap Accessibility > Font Size.', tip: 'If you cannot find the font size setting, open Settings and use the search bar at the top. Type "font" or "text size" and it will take you right there.' },
-      { title: 'Drag the slider to make text bigger', content: 'Once you find the Font Size slider, drag it to the right to increase the text. As you move the slider, a preview shows what text will look like at that size. Release the slider and the change applies immediately.' },
+      { title: 'Drag the slider to make text bigger', content: 'Once you find the Font Size slider, drag it to the right to increase the text. As you move the slider, a preview shows what text will look like at that size. Release the slider and the change applies right away.' },
       { title: 'Make everything bigger — icons and all', content: 'For Samsung: go to Settings > Display > Screen Zoom to make icons and images bigger too, not just text. For Pixel: go to Settings > Display > Display Size. Increasing the display size makes the entire screen easier to see.', tip: `Google's accessibility guide for Android is at support.google.com/accessibility/android/answer/6006986` },
       { title: 'Turn on Magnification to zoom in anywhere', content: 'Go to Settings > Accessibility > Magnification and turn it on. Once enabled, you can triple-tap anywhere on the screen to zoom in — great for reading a small menu, a price tag on a website, or a tiny phone number.', warning: 'Magnification stays on until you triple-tap again to zoom back out. If your screen suddenly seems zoomed in and stuck, triple-tap the screen with one finger to return to normal.' },
     ],
@@ -6250,7 +6250,7 @@ For stronger privacy, do three things. Turn on Airplane Mode to disable all radi
       { title: 'Use Files by Google to clean up automatically', content: 'Open the Files app (pre-installed on most Android phones) or download "Files by Google" free from the Play Store. Tap "Clean" at the bottom. The app will find junk files, duplicate photos, and large unused files and walk you through deleting them safely.', tip: `Google's guide to managing storage on Android is at support.google.com/android/answer/9355956` },
       { title: 'Back up photos and free up space with Google Photos', content: `Open Google Photos and make sure backup is turned on (tap your profile photo > Photos Settings > Backup). Once your photos are safely backed up to Google's servers, tap your profile photo > "Free up space on this device" — this removes local copies from your phone while keeping them safe in Google Photos.`, warning: 'Only free up space after you confirm your photos are fully backed up. Look for "Backup is on" and "X photos backed up" before tapping Free up space.' },
       { title: 'Clear app cache', content: 'Go to Settings > Apps. Tap any large app like Chrome, Facebook, or YouTube. Tap "Storage & Cache" and then "Clear Cache." This removes temporary files stored by that app. It does not delete your login information or personal data — just temporary junk.' },
-      { title: 'Delete files in your Downloads folder', content: 'Open the Files app and tap "Downloads." You will often find old documents, PDFs, or files you downloaded months ago and no longer need. Select them and delete. This folder is frequently full of forgotten downloads.' },
+      { title: 'Delete files in your Downloads folder', content: 'Open the Files app and tap "Downloads." You will often find old documents, PDFs, or files you downloaded months ago and no longer need. Select them and delete. This folder is often full of forgotten downloads.' },
     ],
   },
   {
@@ -6692,7 +6692,7 @@ For stronger privacy, do three things. Turn on Airplane Mode to disable all radi
       { title: 'Start a new email', content: 'Look for a button labelled "Compose" (Gmail) or "New message" (Outlook). It is usually in the top left. Click it. A blank email form will appear.' },
       { title: 'Fill in the To field', content: 'Click in the "To" box and type the email address of the person you are sending to. Email addresses look like name@example.com. Type it carefully.', warning: 'One wrong letter in the email address means your message will not be delivered. Double-check before sending.' },
       { title: 'Write a subject line', content: 'Click the "Subject" line and type a short description, like "Hello from Mary" or "Question about Wednesday." Always include a subject.', tip: 'Emails without a subject line often end up in the spam folder.' },
-      { title: 'Write and send your message', content: 'Click in the large blank area and type your message. When you are finished, click the "Send" button (usually blue, at the bottom). Your email is sent immediately.' },
+      { title: 'Write and send your message', content: 'Click in the large blank area and type your message. When you are finished, click the "Send" button (usually blue, at the bottom). Your email is sent right away.' },
     ]
   },
   {
@@ -7265,7 +7265,7 @@ For stronger privacy, do three things. Turn on Airplane Mode to disable all radi
       },
       {
         title: 'Right-click the app icon in the Dock',
-        content: 'Look at the row of app icons at the bottom of your screen (this is called the Dock). Hold down the Option key on your keyboard, then right-click (or tap with two fingers on a trackpad) on the icon of the frozen app. You will see "Force Quit" appear at the top of the menu. Click it to close the app immediately.'
+        content: 'Look at the row of app icons at the bottom of your screen (this is called the Dock). Hold down the Option key on your keyboard, then right-click (or tap with two fingers on a trackpad) on the icon of the frozen app. You will see "Force Quit" appear at the top of the menu. Click it to close the app right away.'
       },
       {
         title: 'Use Activity Monitor for stubborn apps',
@@ -7302,7 +7302,7 @@ For stronger privacy, do three things. Turn on Airplane Mode to disable all radi
       },
       {
         title: 'Open an app quickly',
-        content: 'Type the name of any app — for example, "Safari," "Photos," or "Pages" — and press Enter to open it immediately. This is much faster than looking through your Applications folder or scrolling through the Dock.'
+        content: 'Type the name of any app — for example, "Safari," "Photos," or "Pages" — and press Enter to open it right away. This is much faster than looking through your Applications folder or scrolling through the Dock.'
       },
       {
         title: 'Search for words inside a document',
@@ -7437,7 +7437,7 @@ For stronger privacy, do three things. Turn on Airplane Mode to disable all radi
       },
       {
         title: `What to do when you get a code you didn't ask for`,
-        content: 'If you receive a two-factor code on your phone but you did not try to log in anywhere, this is a warning sign. It could mean:\n\n- Someone knows your password and is trying to log in to your account.\n- You accidentally clicked a "forgot password" link earlier.\n\n**What to do:**\n1. Do not share the code with anyone — not even someone who says they are from your bank or Google.\n2. Log in to your account immediately (from a trusted device) and change your password.\n3. Check your account for any activity you do not recognize.\n4. If it is your bank, call the number on the back of your card straight away.\n\nA real company will never call you and ask for the code that was just sent to your phone.', warning: 'If someone calls you and says they need the code that was just sent to your phone, hang up immediately. This is always a scam. No legitimate company will ever ask for your 2FA code.'
+        content: 'If you receive a two-factor code on your phone but you did not try to log in anywhere, this is a warning sign. It could mean:\n\n- Someone knows your password and is trying to log in to your account.\n- You accidentally clicked a "forgot password" link earlier.\n\n**What to do:**\n1. Do not share the code with anyone — not even someone who says they are from your bank or Google.\n2. Log in to your account right away (from a trusted device) and change your password.\n3. Check your account for any activity you do not recognize.\n4. If it is your bank, call the number on the back of your card straight away.\n\nA real company will never call you and ask for the code that was just sent to your phone.', warning: 'If someone calls you and says they need the code that was just sent to your phone, hang up right away. This is always a scam. No legitimate company will ever ask for your 2FA code.'
       },
     ]
   },
@@ -7585,7 +7585,7 @@ For stronger privacy, do three things. Turn on Airplane Mode to disable all radi
       },
       {
         title: 'Call your bank right away',
-        content: 'If you shared any bank details, sent money, or gave out your credit or debit card number, call your bank immediately. Use the phone number on the back of your bank card — not a number the scammer gave you. Tell them you may have been the victim of fraud. Your bank can:\n\n- Freeze your card so no more money can be taken\n- Reverse recent transactions in some cases\n- Issue you a new card\n- Flag your account for monitoring\n\nThe sooner you call, the better your chances of getting your money back.', warning: 'If you sent money via gift cards, wire transfer, or cryptocurrency, it may be very difficult to get back. Contact your bank immediately — the sooner you act, the better your chances.'
+        content: 'If you shared any bank details, sent money, or gave out your credit or debit card number, call your bank right away. Use the phone number on the back of your bank card — not a number the scammer gave you. Tell them you may have been the victim of fraud. Your bank can:\n\n- Freeze your card so no more money can be taken\n- Reverse recent transactions in some cases\n- Issue you a new card\n- Flag your account for monitoring\n\nThe sooner you call, the better your chances of getting your money back.', warning: 'If you sent money via gift cards, wire transfer, or cryptocurrency, it may be very difficult to get back. Contact your bank right away — the sooner you act, the better your chances.'
       },
       {
         title: 'Change your passwords',
@@ -7641,7 +7641,7 @@ For stronger privacy, do three things. Turn on Airplane Mode to disable all radi
       },
       {
         title: 'Watch for urgency and threats',
-        content: 'Scammers want you to act fast — before you have time to think. Watch for messages like:\n\n- "Your account will be closed in 24 hours!"\n- "Urgent: unauthorized activity on your account"\n- "You must pay immediately or face arrest"\n- "Act now — this offer expires today!"\n\nReal companies do not threaten you via email or text. If something feels urgent and scary, that is a big red flag.', warning: 'The IRS, Social Security Administration, and Medicare will NEVER call you threatening arrest or demanding immediate payment. That is always a scam.'
+        content: 'Scammers want you to act fast — before you have time to think. Watch for messages like:\n\n- "Your account will be closed in 24 hours!"\n- "Urgent: unauthorized activity on your account"\n- "You must pay right away or face arrest"\n- "Act now — this offer expires today!"\n\nReal companies do not threaten you via email or text. If something feels urgent and scary, that is a big red flag.', warning: 'The IRS, Social Security Administration, and Medicare will NEVER call you threatening arrest or demanding immediate payment. That is always a scam.'
       },
       {
         title: 'Do not click links — check them first',
@@ -7857,7 +7857,7 @@ For stronger privacy, do three things. Turn on Airplane Mode to disable all radi
       { title: 'Download the MyChart app', content: 'Search "MyChart" in the App Store (iPhone) or Google Play (Android). Download the free app made by Epic. You can also use mychart.com in any web browser on a computer.' },
       { title: 'Create your account', content: 'Open MyChart and tap "Sign Up Now." You will need your activation code from your doctor office. If you do not have one, tap "Sign Up Online" and enter your name, date of birth, and zip code to find your provider.', tip: 'If you cannot find your activation code, call your doctor office and ask them to send you a MyChart invitation by email.' },
       { title: 'View test results', content: 'Tap "Test Results" on the home screen. You will see a list of recent lab work and imaging results. Tap any result to see the details. Results usually appear within 1-3 days of your test.' },
-      { title: 'Message your doctor', content: 'Tap "Messages" then "New Message." Choose your doctor from the list, type your question, and tap Send. Most doctors respond within 1-2 business days. This is great for non-urgent questions like medication refills or appointment follow-ups.', warning: 'MyChart messaging is not for emergencies. If you are having a medical emergency, call 911 immediately.' },
+      { title: 'Message your doctor', content: 'Tap "Messages" then "New Message." Choose your doctor from the list, type your question, and tap Send. Most doctors respond within 1-2 business days. This is great for non-urgent questions like medication refills or appointment follow-ups.', warning: 'MyChart messaging is not for emergencies. If you are having a medical emergency, call 911 right away.' },
       { title: 'Schedule an appointment', content: 'Tap "Appointments" then "Schedule an Appointment." Choose the type of visit (in-person or video), pick your doctor, and select a date and time. You will get a confirmation email after booking.' },
     ]
   },
@@ -8016,7 +8016,7 @@ For stronger privacy, do three things. Turn on Airplane Mode to disable all radi
       { title: 'How AI voice cloning works', content: 'Scammers can now create a realistic copy of someone voice using just a few seconds of audio from social media, voicemail, or phone calls. They use this fake voice to call you pretending to be a family member in trouble, asking for money urgently.' },
       { title: 'Red flags to watch for', content: 'Watch for: extreme urgency ("I need money NOW"), requests for unusual payment methods (gift cards, wire transfers, cryptocurrency), the caller asks you not to tell anyone else, background noise that sounds artificial, and the conversation feels slightly off or robotic.' },
       { title: 'Verify the caller', content: 'If you get an urgent call from a "family member": hang up and call them back on their real phone number (the one saved in your contacts, not the one that just called you). Ask a personal question only they would know. Use a family code word that you agree on in advance.', tip: 'Create a family code word today. Pick something simple and memorable that a scammer could never guess. Share it only with close family.' },
-      { title: 'What to do if you are targeted', content: 'Do not send money. Hang up and call your family member directly. Report the scam to the FTC at reportfraud.ftc.gov. If you already sent money, contact your bank immediately — some transfers can be reversed within hours.', warning: 'AI voice scams are the fastest-growing scam type in 2026. Even if a call sounds exactly like your grandchild or spouse, always verify by calling them back.' },
+      { title: 'What to do if you are targeted', content: 'Do not send money. Hang up and call your family member directly. Report the scam to the FTC at reportfraud.ftc.gov. If you already sent money, contact your bank right away — some transfers can be reversed within hours.', warning: 'AI voice scams are the fastest-growing scam type in 2026. Even if a call sounds exactly like your grandchild or spouse, always verify by calling them back.' },
     ]
   },
   {
@@ -8034,7 +8034,7 @@ For stronger privacy, do three things. Turn on Airplane Mode to disable all radi
       { title: 'What is a QR code scam', content: 'Scammers place fake QR codes over legitimate ones on parking meters, restaurant menus, flyers, and even in emails. When you scan the fake code, it takes you to a website that looks real but steals your login details or payment information.' },
       { title: 'How to scan safely', content: 'Before scanning: check if the QR code looks like a sticker placed over another code (a major red flag). After scanning: look at the URL your phone shows before tapping it. It should match the company you expect (for example, a restaurant QR should go to their website, not a random link).' },
       { title: 'When to avoid QR codes', content: 'Be cautious with QR codes: on random flyers or stickers in public places, in unexpected emails or text messages, on parking meters (use the official app or meter instead), and any QR code that asks you to enter payment details on an unfamiliar website.' },
-      { title: 'What to do if you scanned a bad code', content: 'If you entered information on a suspicious site after scanning a QR code: change your password immediately if you entered login details, contact your bank if you entered payment information, run a security scan on your phone, and report the scam to the FTC at reportfraud.ftc.gov.' },
+      { title: 'What to do if you scanned a bad code', content: 'If you entered information on a suspicious site after scanning a QR code: change your password right away if you entered login details, contact your bank if you entered payment information, run a security scan on your phone, and report the scam to the FTC at reportfraud.ftc.gov.' },
     ]
   },
     {
@@ -8089,7 +8089,7 @@ For stronger privacy, do three things. Turn on Airplane Mode to disable all radi
       { title: 'How romance scams work', content: 'A scammer creates a fake profile on a dating site, social media, or messaging app. They build a relationship over weeks or months, expressing strong feelings quickly. Eventually, they ask for money — usually for an emergency, travel to visit you, or a business opportunity. They always have a reason why they cannot meet in person or video call.' },
       { title: 'Warning signs', content: 'Red flags: the relationship moves unusually fast (saying "I love you" within days or weeks), they can never video call (camera is always "broken"), their photos look like professional model shots, they claim to be a US military member stationed overseas, they ask for money via gift cards, wire transfer, or cryptocurrency, and their story has inconsistencies.' },
       { title: 'Protect yourself', content: 'Never send money to someone you have not met in person. Do a reverse image search on their photos (go to images.google.com, click the camera icon, upload their photo) — if the same face appears under different names, it is a scam. Ask to video call early in the relationship. Trust your instincts if something feels off.' },
-      { title: 'If you think you are being scammed', content: 'Stop all contact immediately. Do not send any more money. Report the profile to the dating site or social media platform. File a report at reportfraud.ftc.gov. If you sent money, contact your bank — some transfers can be reversed. Talk to someone you trust — there is no shame in being targeted by a professional scammer.', warning: 'Romance scammers are professionals who manipulate emotions for a living. Being targeted does not mean you are foolish — it means someone deliberately exploited your kindness.' },
+      { title: 'If you think you are being scammed', content: 'Stop all contact right away. Do not send any more money. Report the profile to the dating site or social media platform. File a report at reportfraud.ftc.gov. If you sent money, contact your bank — some transfers can be reversed. Talk to someone you trust — there is no shame in being targeted by a professional scammer.', warning: 'Romance scammers are professionals who manipulate emotions for a living. Being targeted does not mean you are foolish — it means someone deliberately exploited your kindness.' },
     ]
   },
   // Social: "Microsoft will NEVER call you to say your computer has a virus. If someone does — hang up."
@@ -8471,7 +8471,7 @@ For stronger privacy, do three things. Turn on Airplane Mode to disable all radi
       },
       {
         title: 'Watch for warning signs and know what to do',
-        content: 'If a SIM swap happens, you may notice:\n\n- Your phone suddenly says "No Service" or "SOS Only"\n- You stop receiving calls and text messages\n- You get alerts about password changes you did not make\n\nIf you think you are a victim:\n\n1. **Call your phone company immediately** from a different phone — ask them to reverse the SIM change\n2. **Change your passwords** on all important accounts\n3. **Check your bank accounts** for unauthorized transactions\n4. **File a report** at IdentityTheft.gov\n5. **File a police report**', warning: 'If your phone suddenly shows "No Service" and you did not change anything, act immediately. Call your phone company from another phone.'
+        content: 'If a SIM swap happens, you may notice:\n\n- Your phone suddenly says "No Service" or "SOS Only"\n- You stop receiving calls and text messages\n- You get alerts about password changes you did not make\n\nIf you think you are a victim:\n\n1. **Call your phone company right away** from a different phone — ask them to reverse the SIM change\n2. **Change your passwords** on all important accounts\n3. **Check your bank accounts** for unauthorized transactions\n4. **File a report** at IdentityTheft.gov\n5. **File a police report**', warning: 'If your phone suddenly shows "No Service" and you did not change anything, act right away. Call your phone company from another phone.'
       },
     ]
   },
@@ -8605,7 +8605,7 @@ For stronger privacy, do three things. Turn on Airplane Mode to disable all radi
       },
       {
         title: 'Have ongoing conversations about online safety',
-        content: 'Technology alone cannot keep kids safe — open communication is the most important tool.\n\n1. **Talk early and often** — Start conversations at an age-appropriate level\n2. **Teach the rules:**\n   - Never share your full name, address, or school name online\n   - Never meet someone in person that you only know online\n   - If something makes you uncomfortable, tell a parent immediately\n3. **Be approachable** — Make sure your child knows they will not get in trouble for telling you about something scary they saw\n4. **Check in regularly** — Ask about their online activities\n5. **Know what they use** — Be aware of their apps, games, and social media\n\nThe goal is to prepare them to navigate the digital world safely on their own.'
+        content: 'Technology alone cannot keep kids safe — open communication is the most important tool.\n\n1. **Talk early and often** — Start conversations at an age-appropriate level\n2. **Teach the rules:**\n   - Never share your full name, address, or school name online\n   - Never meet someone in person that you only know online\n   - If something makes you uncomfortable, tell a parent right away\n3. **Be approachable** — Make sure your child knows they will not get in trouble for telling you about something scary they saw\n4. **Check in regularly** — Ask about their online activities\n5. **Know what they use** — Be aware of their apps, games, and social media\n\nThe goal is to prepare them to navigate the digital world safely on their own.'
       },
     ]
   },
@@ -8625,7 +8625,7 @@ For stronger privacy, do three things. Turn on Airplane Mode to disable all radi
     steps: [
       {
         title: 'Why you should verify before donating',
-        content: 'After natural disasters, holidays, and major news events, scammers set up fake charities to steal donations.\n\nFake charities may:\n- Have names very similar to well-known charities\n- Use emotional stories to pressure you into donating immediately\n- Contact you by phone, email, social media, or door-to-door\n- Ask for donations by gift card, wire transfer, or cryptocurrency'
+        content: 'After natural disasters, holidays, and major news events, scammers set up fake charities to steal donations.\n\nFake charities may:\n- Have names very similar to well-known charities\n- Use emotional stories to pressure you into donating right away\n- Contact you by phone, email, social media, or door-to-door\n- Ask for donations by gift card, wire transfer, or cryptocurrency'
       },
       {
         title: 'Use free tools to check a charity',
@@ -8661,7 +8661,7 @@ For stronger privacy, do three things. Turn on Airplane Mode to disable all radi
       },
       {
         title: 'Verify the notification is real',
-        content: `First, make sure the breach notification is legitimate and not a scam.\n\n1. **Do NOT click links in the email** — Scammers send fake breach notifications\n2. **Go directly to the company's website** and look for a breach announcement\n3. **Check the news** — Search for the company name plus "data breach"\n4. **Check HaveIBeenPwned.com** — Enter your email to see if it appeared in known breaches\n\nIf the breach is real, take the following steps immediately.`, tip: 'Bookmark HaveIBeenPwned.com and check it periodically. It is a free, trustworthy service that tracks known data breaches.'
+        content: `First, make sure the breach notification is legitimate and not a scam.\n\n1. **Do NOT click links in the email** — Scammers send fake breach notifications\n2. **Go directly to the company's website** and look for a breach announcement\n3. **Check the news** — Search for the company name plus "data breach"\n4. **Check HaveIBeenPwned.com** — Enter your email to see if it appeared in known breaches\n\nIf the breach is real, take the following steps right away.`, tip: 'Bookmark HaveIBeenPwned.com and check it periodically. It is a free, trustworthy service that tracks known data breaches.'
       },
       {
         title: 'Change your passwords immediately',
@@ -8669,7 +8669,7 @@ For stronger privacy, do three things. Turn on Airplane Mode to disable all radi
       },
       {
         title: 'Protect your financial information',
-        content: 'If the breach included financial data or your Social Security number:\n\n1. **Check your bank and credit card statements** for unrecognized charges\n2. **If your credit card was exposed** — Call your bank for a new card number\n3. **If your Social Security number was exposed:**\n   - Place a credit freeze at all three credit bureaus (Equifax, Experian, TransUnion) — this is free\n   - Set up free credit monitoring with Credit Karma or your bank\n   - Consider an IRS Identity Protection PIN at irs.gov\n4. **Accept free monitoring** — Many breached companies offer 1-2 years of free credit monitoring\n5. **File your taxes early** — If your SSN was exposed, file early to prevent fake returns\n\nAct quickly — the first 48 hours after a breach notification are the most critical.', warning: 'If the breach included your Social Security number, place a credit freeze immediately — it is free and prevents anyone from opening new accounts in your name.'
+        content: 'If the breach included financial data or your Social Security number:\n\n1. **Check your bank and credit card statements** for unrecognized charges\n2. **If your credit card was exposed** — Call your bank for a new card number\n3. **If your Social Security number was exposed:**\n   - Place a credit freeze at all three credit bureaus (Equifax, Experian, TransUnion) — this is free\n   - Set up free credit monitoring with Credit Karma or your bank\n   - Consider an IRS Identity Protection PIN at irs.gov\n4. **Accept free monitoring** — Many breached companies offer 1-2 years of free credit monitoring\n5. **File your taxes early** — If your SSN was exposed, file early to prevent fake returns\n\nAct quickly — the first 48 hours after a breach notification are the most critical.', warning: 'If the breach included your Social Security number, place a credit freeze right away — it is free and prevents anyone from opening new accounts in your name.'
       },
     ]
   },
@@ -8701,7 +8701,7 @@ For stronger privacy, do three things. Turn on Airplane Mode to disable all radi
       },
       {
         title: 'Customize notifications',
-        content: 'Slack can send a LOT of notifications. Here is how to manage them.\n\n1. **Channel-level:** Click the channel name > Notifications > choose: all messages, mentions only, or nothing\n2. **Do Not Disturb:** Click your profile picture > "Pause notifications"\n3. **Set a schedule:** Preferences > Notifications > "Notification schedule" — set quiet hours for evenings and weekends\n4. **Mute channels:** Right-click a channel > "Mute channel"\n\nGood approach: get notifications for DMs and mentions, but mute busy channels you only check occasionally.', tip: 'Use the "Remind me" feature — hover over any message and click "Remind me about this" for a reminder later.'
+        content: 'Slack can send a LOT of notifications. Here is how to manage them.\n\n1. **Channel-level:** Click the channel name > Notifications > choose: all messages, mentions only, or nothing\n2. **Do Not Disturb:** Click your profile picture > "Pause notifications"\n3. **Set a schedule:** Preferences > Notifications > "Notification schedule" — set quiet hours for evenings and weekends\n4. **Mute channels:** Right-click a channel > "Mute channel"\n\nGood approach: get notifications for DMs and mentions, but mute busy channels you only check sometimes.', tip: 'Use the "Remind me" feature — hover over any message and click "Remind me about this" for a reminder later.'
       },
       {
         title: 'Useful Slack features',
@@ -8765,7 +8765,7 @@ For stronger privacy, do three things. Turn on Airplane Mode to disable all radi
       },
       {
         title: 'Set up severe weather alerts',
-        content: 'Severe weather alerts can be life-saving. Make sure they are on.\n\n**On iPhone:**\n1. Settings > Notifications > find your weather app\n2. Make sure notifications are allowed\n3. In the Weather app, enable "Severe Weather" notifications\n\n**On Android:**\n1. Settings > Safety & Emergency > Wireless Emergency Alerts\n2. Make sure "Extreme threats" and "Severe threats" are on\n3. In your weather app, enable severe weather notifications\n\nThese warn you about tornadoes, flash floods, hurricanes, and extreme heat. They can sound even on Do Not Disturb mode.', warning: 'Never ignore a tornado warning or flash flood warning on your phone. Move to safety immediately.'
+        content: 'Severe weather alerts can be life-saving. Make sure they are on.\n\n**On iPhone:**\n1. Settings > Notifications > find your weather app\n2. Make sure notifications are allowed\n3. In the Weather app, enable "Severe Weather" notifications\n\n**On Android:**\n1. Settings > Safety & Emergency > Wireless Emergency Alerts\n2. Make sure "Extreme threats" and "Severe threats" are on\n3. In your weather app, enable severe weather notifications\n\nThese warn you about tornadoes, flash floods, hurricanes, and extreme heat. They can sound even on Do Not Disturb mode.', warning: 'Never ignore a tornado warning or flash flood warning on your phone. Move to safety right away.'
       },
       {
         title: 'How to read a weather radar map',
@@ -9120,7 +9120,7 @@ For stronger privacy, do three things. Turn on Airplane Mode to disable all radi
     { title: 'Consider an SSD upgrade', content: 'If your computer is more than 5 years old and has a traditional hard drive (not SSD), upgrading to a solid-state drive (SSD) is the single most impactful upgrade you can make. SSDs cost $30-60 for 500GB and make everything 5-10 times faster. A local computer shop can do the upgrade for you.', tip: 'If your computer is less than 3 years old and still slow after these steps, you may have too little RAM. 8GB is the minimum for comfortable use in 2026; 16GB is ideal.' },
   ] },
   { slug: 'organize-email-inbox', title: 'How to Get to Inbox Zero and Stay There', excerpt: 'A cluttered inbox causes stress. Here is a simple system to get it under control in 30 minutes.', category: 'tips-tricks', tags: ['email', 'inbox', 'organization', 'productivity', 'beginner'], readTime: '5 min', thumbnailEmoji: '📧', publishedAt: '2026-04-09', difficulty: 'Beginner', videoUrl: 'https://www.youtube.com/embed/QC2DAzTtR80', steps: [
-    { title: 'Unsubscribe from newsletters', content: 'Scroll through your inbox and find emails from companies or newsletters you never read. Open each one and look for the "Unsubscribe" link at the bottom. Click it and confirm. Do this for 15-20 newsletters and you will immediately notice fewer incoming emails.', tip: 'In Gmail, search for "unsubscribe" to find all newsletter emails at once. Select all and delete, then unsubscribe from the ones that keep coming.' },
+    { title: 'Unsubscribe from newsletters', content: 'Scroll through your inbox and find emails from companies or newsletters you never read. Open each one and look for the "Unsubscribe" link at the bottom. Click it and confirm. Do this for 15-20 newsletters and you will right away notice fewer incoming emails.', tip: 'In Gmail, search for "unsubscribe" to find all newsletter emails at once. Select all and delete, then unsubscribe from the ones that keep coming.' },
     { title: 'Create 4 folders (and only 4)', content: 'Keep it simple. Create these folders: "Action Required" (things you need to respond to or do), "Waiting For" (things you are waiting on others for), "Reference" (important info you might need later), "Archive" (everything else). Move every email in your inbox into one of these folders.' },
     { title: 'Process your inbox daily', content: 'Spend 5-10 minutes each morning going through new emails. For each one, make a quick decision: Reply now if it takes less than 2 minutes, Move to "Action Required" if it needs more time, Move to "Waiting For" if you need a response from someone, Archive or delete everything else.' },
     { title: 'Set up filters for recurring emails', content: 'Gmail: Click the three dots on an email > Filter messages like these > choose an action (skip inbox, apply label, delete). Outlook: Right-click > Rules > Create Rule. Filters automatically sort incoming emails so you do not have to.' },
@@ -9178,7 +9178,7 @@ For stronger privacy, do three things. Turn on Airplane Mode to disable all radi
   // ===== BATCH 6: Phone Guides (15 new) =====
   { slug: 'iphone-battery-tips', title: 'How to Make Your iPhone Battery Last All Day', excerpt: 'Simple settings changes that dramatically extend battery life.', category: 'phone-guides', tags: ['iphone', 'battery', 'settings'], readTime: '5 min', thumbnailEmoji: '🔋', publishedAt: '2026-04-02', difficulty: 'Beginner', videoUrl: 'https://www.youtube.com/embed/a3VG6CEkqo8', steps: [
     { title: 'Check battery usage', content: 'Go to Settings > Battery. See which apps use the most power.' },
-    { title: 'Turn on Low Power Mode', content: 'Settings > Battery > Low Power Mode. Reduces background activity significantly.' },
+    { title: 'Turn on Low Power Mode', content: 'Settings > Battery > Low Power Mode. Reduces background activity a lot.' },
     { title: 'Reduce brightness', content: 'Swipe down from top-right for Control Center. Drag brightness to 40-50%.' },
     { title: 'Disable unnecessary Location Services', content: 'Settings > Privacy > Location Services. Set apps to "While Using" instead of "Always."' },
   ] },
@@ -9213,7 +9213,7 @@ For stronger privacy, do three things. Turn on Airplane Mode to disable all radi
     { slug: 'phone-mobile-banking', title: 'How to Use Mobile Banking Safely', excerpt: 'Manage your bank account from your phone securely.', category: 'phone-guides', tags: ['phone', 'banking', 'security'], readTime: '6 min', thumbnailEmoji: '🏦', publishedAt: '2026-04-02', difficulty: 'Intermediate', steps: [
     { title: 'Download official app', content: 'Search your bank name in app store. Only download the verified official app.' },
     { title: 'Enable biometric login', content: 'Turn on Face ID, Touch ID, or fingerprint in app settings.' },
-    { title: 'Stay safe', content: 'Never use public Wi-Fi for banking. Enable transaction notifications. Report lost phone immediately.' },
+    { title: 'Stay safe', content: 'Never use public Wi-Fi for banking. Enable transaction notifications. Report lost phone right away.' },
   ] },
   { slug: 'phone-do-not-disturb', title: 'How to Use Do Not Disturb', excerpt: 'Silence notifications when you need quiet time.', category: 'phone-guides', tags: ['phone', 'do-not-disturb'], readTime: '4 min', thumbnailEmoji: '🌙', publishedAt: '2026-04-02', difficulty: 'Beginner', steps: [
     { title: 'iPhone', content: 'Open Control Center > tap the crescent moon icon.' },
@@ -9633,7 +9633,7 @@ For stronger privacy, do three things. Turn on Airplane Mode to disable all radi
   { slug: 'windows-advanced-shortcuts', title: 'Advanced Windows Keyboard Shortcuts', excerpt: 'Go beyond copy-paste with these power-user keyboard combinations from Microsoft.', category: 'windows-guides', tags: ['windows', 'keyboard', 'advanced', 'productivity'], readTime: '7 min', thumbnailEmoji: '⌨️', publishedAt: '2026-04-02', difficulty: 'Intermediate', steps: [
     { title: 'Virtual desktops', content: 'Windows+Ctrl+D creates a new virtual desktop. Windows+Ctrl+Left/Right Arrow switches between them. Windows+Ctrl+F4 closes the current desktop. Great for separating work and personal tasks.' },
     { title: 'Window management', content: 'Windows+D shows/hides the desktop. Alt+F4 closes the active window. Windows+Tab opens Task View showing all windows. Alt+Tab switches between open windows.' },
-    { title: 'Clipboard history', content: 'Windows+V opens Clipboard History — see everything you have copied recently, not just the last item. Pin frequently used items so they stay in the list.' },
+    { title: 'Clipboard history', content: 'Windows+V opens Clipboard History — see everything you have copied recently, not just the last item. Pin often used items so they stay in the list.' },
     { title: 'File Explorer power moves', content: 'Windows+E opens File Explorer. Ctrl+Shift+N creates a new folder. F2 renames the selected item. F5 refreshes. Alt+Up Arrow goes up one folder level.' },
     { title: 'Quick Link menu', content: 'Windows+X opens the Quick Link menu with shortcuts to Device Manager, Disk Management, Terminal, Task Manager, and other power tools.' },
     { title: 'Screenshot and recording', content: 'Windows+Shift+S opens the Snipping Tool for screenshots. Windows+G opens the Game Bar for screen recording (works for any app, not just games).' },
@@ -9661,11 +9661,11 @@ For stronger privacy, do three things. Turn on Airplane Mode to disable all radi
   // Source: CFPB — Fraud Protection (scraped)
   { slug: 'protect-yourself-from-fraud', title: 'How to Protect Yourself from Financial Fraud and Scams', excerpt: 'Essential steps to protect your money and identity from common scams.', category: 'safety-guides', tags: ['fraud', 'scams', 'identity-theft', 'finance'], readTime: '7 min', thumbnailEmoji: '🛡️', publishedAt: '2026-04-02', difficulty: 'Beginner', videoUrl: 'https://www.youtube.com/embed/CDhAOvsyw2s', steps: [
     { title: 'Know common scam types', content: 'Identity theft (someone steals your info), imposter scams (pretending to be your bank or the IRS), phishing (fake emails/texts), and wire transfer fraud. Being aware is your first defense.' },
-    { title: 'Watch for warning signs', content: 'Pressure to act immediately, requests for payment via gift cards or wire transfer, unsolicited contact asking for personal info, and deals that seem too good to be true.' },
+    { title: 'Watch for warning signs', content: 'Pressure to act right away, requests for payment via gift cards or wire transfer, unsolicited contact asking for personal info, and deals that seem too good to be true.' },
     { title: 'Protect your credit', content: 'You can place a free fraud alert or security freeze on your credit reports at the three bureaus (Equifax, Experian, TransUnion). This prevents criminals from opening accounts in your name.' },
     { title: 'Register for Do Not Call', content: 'Add your phone number to the National Do Not Call Registry at donotcall.gov or call 1-888-382-1222. This reduces telemarketer calls (though scammers ignore the list).' },
     { title: 'Monitor your accounts', content: `Check your bank and credit card statements regularly for charges you don't recognize. Set up transaction alerts so you get notified of every purchase.` },
-    { title: 'If you are a victim', content: 'Contact your bank immediately about unauthorized transactions. Report the scam at reportfraud.ftc.gov. Document everything. If your Social Security number was stolen, visit identitytheft.gov.' },
+    { title: 'If you are a victim', content: 'Contact your bank right away about unauthorized transactions. Report the scam at reportfraud.ftc.gov. Document everything. If your Social Security number was stolen, visit identitytheft.gov.' },
   ] },
   // Source: Apple iCloud Advanced Data Protection (scraped)
   { slug: 'icloud-advanced-data-protection', title: 'How to Turn On iCloud Advanced Data Protection', excerpt: 'Encrypt almost all your iCloud data so only you can access it — not even Apple.', category: 'mac-guides', tags: ['icloud', 'encryption', 'privacy', 'apple'], readTime: '6 min', thumbnailEmoji: '🔐', publishedAt: '2026-04-02', difficulty: 'Advanced', videoUrl: 'https://www.youtube.com/embed/Mzl4Wud_Bp0', steps: [
@@ -9682,7 +9682,7 @@ For stronger privacy, do three things. Turn on Airplane Mode to disable all radi
     { title: 'Open Task Manager', content: 'Press Ctrl+Shift+Escape. Or right-click the taskbar and select Task Manager. This shows everything running on your computer.' },
     { title: 'End a frozen program', content: 'In the Processes tab, find the unresponsive app. Click it, then click End Task. This force-closes the program without restarting your computer.' },
     { title: 'Find what is slowing you down', content: 'Click the CPU or Memory column headers to sort by usage. If one app is using 90% of CPU or memory, that is likely causing slowness.' },
-    { title: 'Manage startup apps', content: `Click the Startup Apps tab. Disable programs you don't need starting with your computer. This speeds up boot time significantly.` },
+    { title: 'Manage startup apps', content: `Click the Startup Apps tab. Disable programs you don't need starting with your computer. This speeds up boot time a lot.` },
     { title: 'Monitor performance', content: 'Click the Performance tab for real-time graphs of CPU, memory, disk, and network usage. Useful for diagnosing whether you need more RAM or a faster drive.' },
   ] },
     { slug: 'email-encryption-basics', title: 'What Is Email Encryption and Do You Need It', excerpt: 'Understand how email encryption protects your messages and when to use it.', category: 'safety-guides', tags: ['email', 'encryption', 'privacy', 'security'], readTime: '5 min', thumbnailEmoji: '🔐', publishedAt: '2026-04-02', difficulty: 'Intermediate', steps: [
@@ -9793,7 +9793,7 @@ For stronger privacy, do three things. Turn on Airplane Mode to disable all radi
     { title: 'Pay bills online', content: 'Look for "Bill Pay" in your banking app. Add a payee (like your electric company). Enter the amount and date. The bank sends payment electronically or by check — you never mail a check again.' },
     { title: 'Transfer money', content: 'Use the Transfer feature to move money between your accounts. For sending to other people, use Zelle (built into most banking apps) for free instant transfers.' },
     { title: 'Deposit checks from home', content: 'Use Mobile Deposit: open the banking app, tap Deposit, take photos of the front and back of your check. The money appears in your account within 1-2 business days.' },
-    { title: 'Stay secure', content: 'Enable two-factor authentication. Use biometric login (fingerprint/face). Never use public Wi-Fi for banking. Set up transaction alerts. Call your bank immediately if you see suspicious activity.' },
+    { title: 'Stay secure', content: 'Enable two-factor authentication. Use biometric login (fingerprint/face). Never use public Wi-Fi for banking. Set up transaction alerts. Call your bank right away if you see suspicious activity.' },
   ] },
   { slug: 'google-workspace-overview', title: 'Google Workspace: Free Tools Everyone Should Know', excerpt: 'Gmail, Drive, Docs, Sheets, Calendar, Photos — all free with a Google account.', category: 'app-guides', tags: ['google', 'workspace', 'productivity', 'free'], readTime: '7 min', thumbnailEmoji: '🔧', publishedAt: '2026-04-02', difficulty: 'Beginner', steps: [
     { title: 'One account, everything', content: 'A free Google account gives you Gmail (email), Drive (file storage), Docs (word processing), Sheets (spreadsheets), Calendar, Photos, Maps, YouTube, and more — all connected.' },
@@ -10182,7 +10182,7 @@ For stronger privacy, do three things. Turn on Airplane Mode to disable all radi
     { title: 'Get directions', content: 'Tap Directions (arrow icon) and enter your destination. Google Maps shows driving, walking, transit, and rideshare options with estimated travel times. Choose your preferred route.' },
     { title: 'Start navigation', content: 'Tap Start for turn-by-turn voice directions. Your phone tells you when and where to turn. Mount your phone on your dashboard for safe viewing while driving.' },
     { title: 'Save frequent places', content: 'Tap a location and select Save. Add it to Favorites, Want to Go, or a custom list. Saved places are easy to navigate to later — no typing needed.' },
-    { title: 'Offline maps', content: 'Download maps for areas you visit frequently or places with poor reception. Tap your profile picture > Offline Maps > Select Your Own Map. Great for travel or rural areas.' },
+    { title: 'Offline maps', content: 'Download maps for areas you visit often or places with poor reception. Tap your profile picture > Offline Maps > Select Your Own Map. Great for travel or rural areas.' },
     { title: 'Explore nearby', content: 'Tap the Explore tab to see restaurants, gas stations, grocery stores, and attractions near you. Filter by rating, price, and currently open. Read reviews from other visitors.' },
     { title: 'Share your location', content: 'Tap your profile picture > Location Sharing. Choose contacts and how long to share. They can see your real-time location on their Google Maps — helpful for meeting up or safety.' },
   ] },
@@ -10201,7 +10201,7 @@ For stronger privacy, do three things. Turn on Airplane Mode to disable all radi
     { title: 'What is Microsoft 365?', content: 'Microsoft 365 is a subscription that includes Word, Excel, PowerPoint, Outlook, and 1 TB of OneDrive cloud storage. It replaces buying Office software outright. Everything stays updated automatically.' },
     { title: 'Plans and pricing', content: 'Personal: $6.99/month for 1 person. Family: $9.99/month for up to 6 people. Both include full desktop apps, mobile apps, and 1 TB storage per person. Free alternatives exist (Google Docs, LibreOffice).' },
     { title: 'Install on your devices', content: 'Sign in at microsoft365.com and click Install. Install on up to 5 computers plus 5 phones/tablets. Works on Windows, Mac, iPhone, iPad, and Android.' },
-    { title: 'Microsoft Word', content: 'The gold standard word processor. Create documents, letters, resumes, and reports. Use templates for a professional starting point. Auto-save to OneDrive ensures you never lose work.' },
+    { title: 'Microsoft Word', content: 'The gold standard word processor. Create documents, letters, resumes, and reports. Use templates for a professional starting point. Auto-save to OneDrive makes sure you never lose work.' },
     { title: 'OneDrive cloud storage', content: '1 TB (1,000 GB) of cloud storage. Access files from any device. Share files and folders with others. Files sync automatically — edit on your phone, see changes on your computer.' },
     { title: 'Free alternatives', content: 'If cost is a concern: use Office online free at microsoft365.com (limited features). Google Docs/Sheets/Slides are completely free. LibreOffice is a free downloadable alternative.' },
     { title: 'Is it worth it?', content: 'If you need full Office apps and 1 TB storage: yes, especially the Family plan ($1.67/person/month). If you mainly do basic documents: free Google Docs or Office Online may be enough.' },
@@ -10259,7 +10259,7 @@ For stronger privacy, do three things. Turn on Airplane Mode to disable all radi
     { title: `Don't click links in emails`, content: `Instead of clicking an email link, open your browser and go to the company's website directly. Type the URL yourself or use a bookmark. This way you know you're on the real site.` },
     { title: 'Check for poor grammar', content: 'Many phishing emails have spelling mistakes, odd formatting, or unusual language. Legitimate companies proofread their communications. Errors are a red flag.' },
     { title: 'Common phishing scenarios', content: 'Package delivery problems (USPS/FedEx). Payment issues (PayPal/Venmo). Account verification (bank/email). Prize winning. Tax refund. Netflix/subscription problems. All designed to get you to click.' },
-    { title: 'What to do if you clicked', content: 'Change your password immediately on the affected account. Enable 2FA. Check your account for unauthorized activity. If you entered financial info, call your bank. Report to reportphishing@apwg.org.' },
+    { title: 'What to do if you clicked', content: 'Change your password right away on the affected account. Enable 2FA. Check your account for unauthorized activity. If you entered financial info, call your bank. Report to reportphishing@apwg.org.' },
   ] },
       { slug: 'safe-browsing-habits', title: 'Safe Browsing: How to Stay Safe on the Internet', excerpt: 'Protect yourself while browsing the web with these essential habits and tools.', category: 'safety-guides', tags: ['browsing', 'safety', 'internet', 'security', 'privacy'], readTime: '7 min', thumbnailEmoji: '🌐', publishedAt: '2026-04-02', difficulty: 'Beginner', steps: [
     { title: 'Keep your browser updated', content: `Chrome, Firefox, Safari, and Edge all update automatically. These updates fix security holes. Make sure auto-updates are enabled. Use a modern browser — don't use Internet Explorer.` },
@@ -10267,7 +10267,7 @@ For stronger privacy, do three things. Turn on Airplane Mode to disable all radi
     { title: 'Install an ad blocker', content: 'uBlock Origin (free, available for Chrome and Firefox) blocks ads and many malicious scripts. This prevents pop-ups, redirect scams, and malicious advertisements.' },
     { title: 'Be careful with downloads', content: 'Only download software from official websites or app stores. Downloading from random sites is the #1 way people get malware. When in doubt, Google "is [software name] safe?"' },
     { title: 'Check URLs before clicking', content: 'Hover over links to see where they actually go. Scam sites use similar URLs: amaz0n.com, paypal-secure.com, bankofamerica.account-verify.com. The real domain is just before the .com.' },
-    { title: 'Use bookmarks for important sites', content: 'Bookmark your bank, email, and frequently visited sites. Use bookmarks instead of searching — this avoids clicking on look-alike scam sites that appear in search results.' },
+    { title: 'Use bookmarks for important sites', content: 'Bookmark your bank, email, and often visited sites. Use bookmarks instead of searching — this avoids clicking on look-alike scam sites that appear in search results.' },
     { title: 'Clear your browsing data regularly', content: 'Settings > Privacy > Clear Browsing Data. Clear cookies, cached files, and browsing history monthly. This removes tracking data and frees up space.' },
   ] },
 
@@ -10358,7 +10358,7 @@ For stronger privacy, do three things. Turn on Airplane Mode to disable all radi
     { title: 'Travel insurance', content: 'Consider trip insurance for expensive trips ($300+). Your credit card may include travel protections. Check before buying separate insurance.' },
   ] },
   { slug: 'hotel-booking-tips', title: 'How to Book Hotels Online and Get the Best Price', excerpt: 'Compare rates, read reviews, and avoid overpaying for your next hotel stay.', category: 'how-to', tags: ['hotel', 'travel', 'booking', 'vacation', 'money-saving'], readTime: '6 min', thumbnailEmoji: '🏨', publishedAt: '2026-04-02', difficulty: 'Beginner', steps: [
-    { title: 'Compare prices', content: 'Use Google Hotels, Booking.com, Hotels.com, or Kayak to compare prices across many sites. Prices for the same room vary significantly between booking platforms.' },
+    { title: 'Compare prices', content: 'Use Google Hotels, Booking.com, Hotels.com, or Kayak to compare prices across many sites. Prices for the same room vary a lot between booking platforms.' },
     { title: `Check the hotel's direct site`, content: `After finding a good price on a comparison site, check the hotel's own website. Many hotels match or beat third-party prices and offer perks (free breakfast, late checkout) for booking direct.` },
     { title: 'Read reviews carefully', content: `Sort by "Most Recent" on TripAdvisor, Google, or Booking.com. Look for patterns: if multiple reviews mention the same issue (noise, cleanliness), it's real. Ignore single outlier complaints.` },
     { title: 'Loyalty programs', content: `If you travel regularly, join hotel loyalty programs (Marriott Bonvoy, Hilton Honors, IHG Rewards). They're free and earn points toward free nights, room upgrades, and late checkout.` },
@@ -10524,7 +10524,7 @@ For stronger privacy, do three things. Turn on Airplane Mode to disable all radi
   // ── Batch 29: Advanced Windows & Mac ────────────────────────────────────────
   { slug: 'windows-task-manager-guide-v2', title: 'How to Use Windows Task Manager', excerpt: `Diagnose performance problems, force-close frozen apps, and understand what's using your resources.`, category: 'windows-guides', tags: ['windows', 'task-manager', 'performance', 'troubleshooting'], readTime: '7 min', thumbnailEmoji: '📊', publishedAt: '2026-04-02', difficulty: 'Intermediate', videoUrl: 'https://www.youtube.com/embed/lMhOmJT7xbs', steps: [
     { title: 'Open Task Manager', content: 'Press Ctrl+Shift+Esc (quickest method). Or right-click the taskbar and select Task Manager. Or press Ctrl+Alt+Delete and choose Task Manager.' },
-    { title: 'Force-close a frozen program', content: 'In the Processes tab, find the frozen program (it may say "Not Responding"). Click it, then click End Task. This immediately closes the program. You may lose unsaved work in that program.' },
+    { title: 'Force-close a frozen program', content: 'In the Processes tab, find the frozen program (it may say "Not Responding"). Click it, then click End Task. This right away closes the program. You may lose unsaved work in that program.' },
     { title: `See what's using your CPU`, content: 'The Processes tab shows CPU, Memory, Disk, and Network usage for each program. Click the CPU column header to sort by highest usage. If something is using 90%+ CPU constantly, it might be a problem.' },
     { title: 'Check memory usage', content: 'Click the Memory column to sort. If total memory usage is consistently above 80%, you might need more RAM or should close some programs. Chrome with many tabs is often the biggest memory user.' },
     { title: 'Manage startup programs', content: `Click the Startup tab. Disable programs you don't need at startup — right-click > Disable. Fewer startup programs = faster boot time. Don't disable antivirus or essential drivers.` },
@@ -10730,7 +10730,7 @@ For stronger privacy, do three things. Turn on Airplane Mode to disable all radi
     { title: 'Test your connection', content: 'Visit speedtest.net. If you get a result, your internet works — the issue is specific to certain sites or apps. If the test fails, the problem is your internet connection.' },
     { title: 'DNS troubleshooting', content: `If websites don't load but speed test works: try changing DNS. Settings > Network > DNS: change to 8.8.8.8 (Google) or 1.1.1.1 (Cloudflare). This fixes many "site not found" errors.` },
     { title: 'Wi-Fi specific fixes', content: 'Forget the network and reconnect. Move closer to the router. Check for interference (microwaves, baby monitors, thick walls). Try the 5 GHz band instead of 2.4 GHz.' },
-    { title: 'When to call your ISP', content: `Your tested speed is much lower than what you're paying for. Connection drops frequently. Router lights show errors. You've restarted everything and tried all the above steps. They can check from their end.` },
+    { title: 'When to call your ISP', content: `Your tested speed is much lower than what you're paying for. Connection drops often. Router lights show errors. You've restarted everything and tried all the above steps. They can check from their end.` },
     { title: 'When to replace your router', content: `If your router is more than 5 years old. If problems persist after ISP confirms no issues on their end. If you can't get good speeds even close to the router. Modern Wi-Fi 6 routers are dramatically better.` },
   ] },
   { slug: 'windows-recovery-options', title: 'Windows Recovery Options Explained', excerpt: 'Fix serious Windows problems using Safe Mode, System Restore, Reset, and Recovery Drive.', category: 'windows-guides', tags: ['windows', 'recovery', 'safe-mode', 'system-restore', 'troubleshooting'], readTime: '8 min', thumbnailEmoji: '🔄', publishedAt: '2026-04-02', difficulty: 'Advanced', steps: [
@@ -10748,7 +10748,7 @@ For stronger privacy, do three things. Turn on Airplane Mode to disable all radi
     { title: 'Check Activity Monitor', content: `Applications > Utilities > Activity Monitor. Click the CPU tab and sort by % CPU to find resource-hungry processes. Click the Memory tab to see memory usage. Quit processes using 100%+ CPU that you don't recognize.` },
     { title: 'Free up storage', content: 'Apple menu > About This Mac > Storage > Manage. Use the recommendations: Store in iCloud, Optimize Storage, Empty Trash Automatically. Delete large files you no longer need. Macs slow dramatically when storage is nearly full.' },
     { title: 'Reset SMC (Intel Macs)', content: `If fans run loud, battery doesn't charge, or sleep/wake has issues: shut down, hold Ctrl+Option+Shift+Power for 10 seconds, release all keys, then turn on. (Apple Silicon Macs: restart.)` },
-    { title: 'Reset NVRAM/PRAM', content: 'If display, sound, or startup issues persist: shut down, press power, immediately hold Cmd+Option+P+R for 20 seconds. Release and let the Mac boot normally. (Apple Silicon: restart.)' },
+    { title: 'Reset NVRAM/PRAM', content: 'If display, sound, or startup issues persist: shut down, press power, right away hold Cmd+Option+P+R for 20 seconds. Release and let the Mac boot normally. (Apple Silicon: restart.)' },
     { title: 'Safe Mode', content: 'Intel: restart, hold Shift. Apple Silicon: shut down, hold power button, select your disk, hold Shift, click Continue in Safe Mode. Safe Mode clears caches and checks the disk.' },
     { title: 'Reinstall macOS', content: 'Last resort. Restart, hold Cmd+R (Intel) or hold Power button (Apple Silicon). Choose Reinstall macOS. This reinstalls the system without erasing your files. Takes 30-60 minutes.' },
   ] },
@@ -10757,7 +10757,7 @@ For stronger privacy, do three things. Turn on Airplane Mode to disable all radi
     { title: 'Built-in encryption', content: 'Gmail and Outlook encrypt emails in transit (between servers) automatically. This protects against interception but the email provider (Google/Microsoft) can technically read your messages.' },
     { title: 'End-to-end encrypted email', content: `ProtonMail (proton.me) offers end-to-end encryption — even ProtonMail can't read your emails. Free tier: 1 GB storage, 150 messages/day. Paid: $4.99/month for more features.` },
     { title: 'Encrypting in Gmail', content: 'Gmail offers "Confidential Mode" — not true encryption but adds protections: set expiration dates, require SMS verification, prevent forwarding/copying/downloading. Find it in the compose toolbar.' },
-    { title: 'When encryption matters most', content: 'Sending Social Security numbers, tax documents, medical records, financial information, or legal documents. For everyday email (plans with friends, newsletters), regular email security is sufficient.' },
+    { title: 'When encryption matters most', content: 'Sending Social Security numbers, tax documents, medical records, financial information, or legal documents. For everyday email (plans with friends, newsletters), regular email security is enough.' },
     { title: 'Simpler alternatives', content: 'Instead of encrypted email, share sensitive documents through password-protected cloud links (Google Drive, OneDrive). Or use encrypted messaging apps (Signal, WhatsApp) for sensitive conversations.' },
   ] },
   { slug: 'browser-extensions-guide-v2', title: 'Best Browser Extensions for Productivity and Safety', excerpt: 'Enhance your web browser with extensions that save time, block ads, and protect your privacy.', category: 'app-guides', tags: ['browser', 'extensions', 'chrome', 'firefox', 'productivity'], readTime: '7 min', thumbnailEmoji: '🧩', publishedAt: '2026-04-02', difficulty: 'Intermediate', steps: [
@@ -10795,7 +10795,7 @@ For stronger privacy, do three things. Turn on Airplane Mode to disable all radi
     { title: 'Install essential apps', content: `Phone and messaging (already installed). Emergency contacts on speed dial. Your family's preferred messaging app. Maps for navigation. Any school-required apps.` },
     { title: 'Set boundaries', content: 'Screen time limits (start with 1-2 hours daily). No phones during meals or homework. Charging station outside the bedroom at night. App installation requires parent approval.' },
     { title: 'Discuss digital citizenship', content: `Teach: be kind online. Don't share personal information. Never send photos you wouldn't want everyone to see. Tell a trusted adult about uncomfortable interactions. Your digital footprint is permanent.` },
-    { title: 'Review regularly', content: 'Check in weekly about their phone use. Review screen time reports together. Adjust restrictions as they mature. The goal is to gradually give more freedom as they demonstrate responsibility.' },
+    { title: 'Review regularly', content: 'Check in weekly about their phone use. Review screen time reports together. Adjust restrictions as they mature. The goal is to gradually give more freedom as they show responsibility.' },
   ] },
   { slug: 'senior-phone-setup', title: 'Setting Up a Phone for a Senior', excerpt: 'Make any smartphone easy to use for an older adult with larger text, simple layouts, and safety features.', category: 'phone-guides', tags: ['senior', 'phone', 'accessibility', 'setup', 'easy-mode'], readTime: '7 min', thumbnailEmoji: '📱', publishedAt: '2026-04-02', difficulty: 'Beginner', steps: [
     { title: 'Choose the right phone', content: 'iPhone: consistent, intuitive interface with excellent accessibility. iPhone SE is affordable. Samsung: offers Easy Mode. Jitterbug (Lively) phones are designed specifically for seniors with large buttons and simple menus.' },
@@ -10812,7 +10812,7 @@ For stronger privacy, do three things. Turn on Airplane Mode to disable all radi
     { title: 'PlayStation 5 ($499)', content: 'Best for: exclusive games (Spider-Man, God of War, Final Fantasy). Great for single-player story games. Excellent graphics. Includes a Blu-ray player. Large online community.' },
     { title: 'Xbox Series X ($499) / Series S ($299)', content: 'Best for: Game Pass ($16.99/month gives access to 500+ games). Best value if you play many different games. Plays all old Xbox games. Series S is a great budget option (digital only).' },
     { title: 'Nintendo Switch ($299) / OLED ($349)', content: 'Best for: families and casual gamers. Plays on TV and as a portable handheld. Mario, Zelda, Pokemon, and Animal Crossing. Most family-friendly game library. Great for kids.' },
-    { title: 'For casual gamers', content: `If you play occasionally or with family: Nintendo Switch is the best choice. Game Pass on Xbox is also excellent for trying many games. You don't need the most expensive option.` },
+    { title: 'For casual gamers', content: `If you play sometimes or with family: Nintendo Switch is the best choice. Game Pass on Xbox is also excellent for trying many games. You don't need the most expensive option.` },
     { title: 'For serious gamers', content: 'If you care about graphics and performance: PS5 or Xbox Series X. Choose based on exclusive games you want. Both offer excellent online multiplayer.' },
     { title: `Don't forget cloud gaming`, content: 'Xbox Cloud Gaming (included with Game Pass Ultimate) lets you play on phones, tablets, and laptops — no console needed. Great way to try gaming without a big hardware investment.' },
     { title: 'Accessories to budget for', content: 'Extra controller: $50-70. Online subscription: $5-15/month. Games: $20-70 each (or use Game Pass). A good gaming headset: $30-50. Total first-year cost can be $200-400 beyond the console.' },
@@ -10897,7 +10897,7 @@ For stronger privacy, do three things. Turn on Airplane Mode to disable all radi
     { title: 'ping — test connectivity', content: 'Type "ping google.com" to test if your internet works. If you get replies, your connection is fine. "Request timed out" means the connection failed. Great first step for troubleshooting.' },
     { title: 'systeminfo — computer details', content: 'Type "systeminfo" for details about your PC: Windows version, install date, total RAM, network adapters, and more. Useful when someone asks for your system specs.' },
     { title: 'sfc /scannow — repair system files', content: 'Run as admin. Type "sfc /scannow" to check and repair corrupted Windows system files. Takes 10-30 minutes. Fixes many random crashes and errors.' },
-    { title: 'shutdown — restart or shut down', content: '"shutdown /r /t 0" restarts immediately. "shutdown /s /t 0" shuts down immediately. "shutdown /r /t 3600" restarts in 1 hour (useful for updates). "shutdown /a" cancels a pending shutdown.' },
+    { title: 'shutdown — restart or shut down', content: '"shutdown /r /t 0" restarts right away. "shutdown /s /t 0" shuts down right away. "shutdown /r /t 3600" restarts in 1 hour (useful for updates). "shutdown /a" cancels a pending shutdown.' },
     { title: 'tasklist and taskkill', content: '"tasklist" shows all running processes (like Task Manager). "taskkill /im notepad.exe /f" force-closes Notepad. Replace the program name as needed. Useful when Task Manager itself is frozen.' },
   ] },
   { slug: 'windows-event-viewer', title: 'How to Use Windows Event Viewer', excerpt: 'Diagnose Windows errors and crashes by reading the event log.', category: 'windows-guides', tags: ['windows', 'event-viewer', 'troubleshooting', 'errors', 'advanced'], readTime: '6 min', thumbnailEmoji: '📋', publishedAt: '2026-04-02', difficulty: 'Advanced', steps: [
@@ -10972,7 +10972,7 @@ For stronger privacy, do three things. Turn on Airplane Mode to disable all radi
   ] },
   { slug: 'android-camera-tips', title: 'Android Camera Tips for Better Photos', excerpt: 'Get professional-looking photos from your Android phone with these practical tips.', category: 'phone-guides', tags: ['android', 'camera', 'photography', 'tips', 'photos'], readTime: '7 min', thumbnailEmoji: '📸', publishedAt: '2026-04-02', difficulty: 'Beginner', steps: [
     { title: 'Use the grid overlay', content: 'Camera Settings > Grid Lines (or Gridlines). Turn on the 3x3 grid. Place important elements along the lines or at intersections. This instantly improves photo composition.' },
-    { title: 'Tap to focus', content: 'Tap the screen where you want to focus. The camera adjusts focus and brightness for that area. On Samsung, tap and hold to lock focus. Important for ensuring your subject is sharp.' },
+    { title: 'Tap to focus', content: 'Tap the screen where you want to focus. The camera adjusts focus and brightness for that area. On Samsung, tap and hold to lock focus. Important for making sure your subject is sharp.' },
     { title: 'Portrait/Bokeh mode', content: 'Most modern Androids have a Portrait mode that blurs the background. Look for it in your camera modes. Stand 3-5 feet from your subject for the best effect.' },
     { title: 'Night mode', content: 'Google Pixel: Night Sight. Samsung: Night Mode. These modes take multiple exposures and combine them for bright, clear photos in the dark. Hold steady during the capture.' },
     { title: 'Pro mode for more control', content: 'Many Android cameras offer Pro or Manual mode. Adjust ISO (sensitivity), shutter speed, white balance, and focus manually. Start by adjusting just one setting at a time.' },
@@ -11032,7 +11032,7 @@ For stronger privacy, do three things. Turn on Airplane Mode to disable all radi
     { title: 'Common scams', content: 'Someone calls claiming to be from the IRS saying you owe taxes and face arrest. Or Social Security saying your number has been "suspended." Or Medicare saying your card needs renewal. These are all scams.' },
     { title: 'How real agencies contact you', content: `The IRS contacts you by mail first, never by phone threatening arrest. Social Security doesn't "suspend" numbers. Medicare never calls to sell you a plan. No government agency accepts gift cards as payment.` },
     { title: 'Red flags', content: 'Threatening arrest or legal action. Demanding immediate payment. Asking for gift cards, wire transfers, or cryptocurrency. Creating urgency ("pay now or be arrested today"). Spoofed caller ID showing a government number.' },
-    { title: 'What to do', content: `Hang up immediately. Don't press any buttons or provide information. If worried, call the real agency using the number on their official website (ssa.gov, irs.gov). Report scams to reportfraud.ftc.gov.` },
+    { title: 'What to do', content: `Hang up right away. Don't press any buttons or provide information. If worried, call the real agency using the number on their official website (ssa.gov, irs.gov). Report scams to reportfraud.ftc.gov.` },
     { title: 'Tell others', content: 'These scams disproportionately target seniors. Share this information with older family members and friends. The more people know the patterns, the less effective these scams become.' },
   ] },
   { slug: 'investment-scam-awareness', title: 'How to Recognize Investment and Cryptocurrency Scams', excerpt: 'Protect your savings from fraudulent investment schemes and cryptocurrency scams.', category: 'safety-guides', tags: ['scams', 'investment', 'cryptocurrency', 'fraud', 'finance'], readTime: '7 min', thumbnailEmoji: '💰', publishedAt: '2026-04-02', difficulty: 'Intermediate', steps: [
@@ -11041,7 +11041,7 @@ For stronger privacy, do three things. Turn on Airplane Mode to disable all radi
     { title: 'Cryptocurrency scams', content: 'Fake celebrity endorsements for new coins. "Pump and dump" schemes. Fake exchanges that steal your money. Romance scammers who "teach" you to invest in crypto on their fake platform.' },
     { title: 'Social media investment scams', content: 'Ads showing luxury lifestyles and "secret trading methods." Testimonials from fake accounts. Direct messages offering "exclusive opportunities." WhatsApp or Telegram investment groups with fake success stories.' },
     { title: 'How to verify legitimacy', content: 'Check FINRA BrokerCheck (brokercheck.finra.org) for registered brokers and firms. Search the SEC EDGAR database for registered investments. Look up any company at bbb.org. Google the company name + "scam" or "reviews."' },
-    { title: `What to do if you've been scammed`, content: 'Report to the FTC (reportfraud.ftc.gov), SEC (sec.gov/tcr), and your state attorney general. Contact your bank immediately. File a report at ic3.gov (FBI). Document everything — screenshots, emails, transaction records.' },
+    { title: `What to do if you've been scammed`, content: 'Report to the FTC (reportfraud.ftc.gov), SEC (sec.gov/tcr), and your state attorney general. Contact your bank right away. File a report at ic3.gov (FBI). Document everything — screenshots, emails, transaction records.' },
     { title: 'Safe investing basics', content: `Use regulated brokerages (Fidelity, Vanguard, Schwab). Diversify — never put all money in one investment. Index funds are the simplest, safest way to invest. If you don't understand it, don't invest in it.` },
   ] },
   { slug: 'child-online-safety', title: 'Keeping Children Safe Online', excerpt: 'Comprehensive guide to protecting kids from online dangers while allowing healthy digital exploration.', category: 'safety-guides', tags: ['children', 'safety', 'parenting', 'online-safety', 'education'], readTime: '8 min', thumbnailEmoji: '👶', publishedAt: '2026-04-02', difficulty: 'Intermediate', videoUrl: 'https://www.youtube.com/embed/Yh_T6pTrZLE', steps: [
@@ -11070,7 +11070,7 @@ For stronger privacy, do three things. Turn on Airplane Mode to disable all radi
     { title: 'Popular options', content: 'Budget: Wyze Cam v3 ($36). Mid-range: Ring Indoor/Outdoor ($60-100). Premium: Arlo Pro 5 ($200). Google Nest Cam ($100-180). All offer mobile apps, motion alerts, and night vision.' },
     { title: 'Wired vs wireless', content: 'Wireless (battery): easy install, no wires, needs charging every 2-6 months. Wired: permanent power, no battery worries, harder to install. Wi-Fi is needed for all cameras regardless.' },
     { title: 'Storage options', content: 'Cloud storage (monthly subscription): $3-13/month depending on brand and features. Local storage (SD card or NVR): one-time cost, no subscription. Some cameras offer both options.' },
-    { title: 'Installation tips', content: 'Mount cameras 8-10 feet high for best view. Point them at entries, driveways, and high-traffic areas. Avoid pointing directly at the sun. Ensure strong Wi-Fi signal where the camera is placed.' },
+    { title: 'Installation tips', content: 'Mount cameras 8-10 feet high for best view. Point them at entries, driveways, and high-traffic areas. Avoid pointing directly at the sun. Make sure strong Wi-Fi signal where the camera is placed.' },
     { title: 'Motion detection zones', content: 'In the camera app, draw zones to detect motion only in specific areas. This prevents constant alerts from cars on the street or trees moving in the wind. Focus on doorways and walkways.' },
     { title: 'Privacy and legal considerations', content: `Don't point cameras at neighbors' property. Check local laws about outdoor surveillance and recording. Some states require notifying visitors of recording. Don't place cameras in private areas (bathrooms, bedrooms).` },
   ] },
@@ -11143,7 +11143,7 @@ For stronger privacy, do three things. Turn on Airplane Mode to disable all radi
     { title: 'Restart weekly', content: `Restart your computer at least once a week. This clears memory, applies pending updates, and resolves many minor issues. Don't just close the lid — actually restart or shut down.` },
     { title: 'Clean up storage monthly', content: 'Windows: Settings > System > Storage > Temporary Files. Mac: About This Mac > Storage > Manage. Delete temporary files, empty the Trash/Recycle Bin, and remove programs you no longer use.' },
     { title: 'Run antivirus scans', content: `Windows Defender runs automatically (it's good enough for most people). Run a full scan monthly: Windows Security > Virus & Threat Protection > Scan Options > Full Scan. Mac: malware is less common but consider Malwarebytes (free).` },
-    { title: 'Back up your data', content: 'Set up automatic backup: Windows File History or OneDrive, Mac Time Machine. Check monthly that backups are actually running. Test by restoring a file occasionally.' },
+    { title: 'Back up your data', content: 'Set up automatic backup: Windows File History or OneDrive, Mac Time Machine. Check monthly that backups are actually running. Test by restoring a file sometimes.' },
     { title: 'Physical cleaning', content: 'Wipe the screen with a microfiber cloth (slightly damp, no chemicals). Use compressed air to clean keyboard and vents. Clean the mousepad and trackpad. A clean computer runs cooler and lasts longer.' },
     { title: 'Browser maintenance', content: `Clear cookies and cache quarterly. Remove extensions you don't use. Bookmark important sites. Update your browser (usually automatic). Review saved passwords and remove outdated ones.` },
   ] },
@@ -11152,7 +11152,7 @@ For stronger privacy, do three things. Turn on Airplane Mode to disable all radi
     { title: 'Wi-Fi 5 (802.11ac)', content: 'Still found in many homes. Maximum speed: 3.5 Gbps theoretical (much less in practice). Fine for basic browsing and streaming. If your router is Wi-Fi 5, consider upgrading.' },
     { title: 'Wi-Fi 6 (802.11ax)', content: 'The current standard. Faster speeds, better performance with many devices, improved range. Handles 50+ devices well. If buying a new router in 2026, Wi-Fi 6 is the minimum you should consider.' },
     { title: 'Wi-Fi 6E', content: 'Adds a third frequency band (6 GHz) with less interference and more speed. Best for homes with many devices and high bandwidth needs. Newer phones, laptops, and tablets support it.' },
-    { title: 'Wi-Fi 7', content: `The latest standard. Dramatically faster speeds and lower latency. Best for gaming, VR, and 8K video. Premium pricing for now. Most people don't need it yet — Wi-Fi 6 or 6E is sufficient.` },
+    { title: 'Wi-Fi 7', content: `The latest standard. Dramatically faster speeds and lower latency. Best for gaming, VR, and 8K video. Premium pricing for now. Most people don't need it yet — Wi-Fi 6 or 6E is enough.` },
     { title: 'What to buy', content: 'Budget: Wi-Fi 6 router ($50-80). Mid-range: Wi-Fi 6E mesh system ($200-300). Future-proof: Wi-Fi 7 router ($300+). For most homes in 2026, a Wi-Fi 6 mesh system hits the sweet spot.' },
   ] },
   { slug: 'printer-buying-guide', title: 'How to Choose the Right Printer', excerpt: 'Inkjet vs laser, single vs multifunction, and how to avoid expensive ink traps.', category: 'essential-skills', tags: ['printer', 'buying-guide', 'hardware', 'inkjet', 'laser'], readTime: '6 min', thumbnailEmoji: '🖨️', publishedAt: '2026-04-02', difficulty: 'Beginner', steps: [
@@ -11365,14 +11365,14 @@ For stronger privacy, do three things. Turn on Airplane Mode to disable all radi
   // ── Batch 49: More Essential Skills ─────────────────────────────────────────
   { slug: 'understanding-updates', title: 'Why Software Updates Matter (And How to Handle Them)', excerpt: 'Stop ignoring those update notifications — they protect your security and improve performance.', category: 'essential-skills', tags: ['updates', 'security', 'maintenance', 'software', 'patches'], readTime: '6 min', thumbnailEmoji: '🔄', publishedAt: '2026-04-02', difficulty: 'Beginner', videoUrl: 'https://www.youtube.com/embed/5lZxPW2U9NQ', steps: [
     { title: 'Why updates are critical', content: `Software updates fix security holes that hackers exploit. The WannaCry ransomware attack of 2017 only affected computers that hadn't installed a security update released months earlier. Updates literally prevent attacks.` },
-    { title: 'Types of updates', content: 'Security patches: fix vulnerabilities (install immediately). Feature updates: add new capabilities (install when convenient). Bug fixes: resolve crashes and errors. Driver updates: improve hardware compatibility.' },
+    { title: 'Types of updates', content: 'Security patches: fix vulnerabilities (install right away). Feature updates: add new capabilities (install when convenient). Bug fixes: resolve crashes and errors. Driver updates: improve hardware compatibility.' },
     { title: 'Enable automatic updates', content: 'Windows: Settings > Update & Security > Advanced Options > enable all auto-updates. Mac: System Settings > General > Software Update > Automatic Updates. Phone: enabled by default. Let updates install overnight.' },
     { title: 'Update your browser', content: `Your web browser is the most important software to keep updated — it's your primary interface with the internet. Chrome, Firefox, Safari, and Edge all update automatically. Restart your browser when prompted.` },
     { title: 'Update your apps', content: `iPhone: App Store > your profile > Update All. Android: Google Play > your profile > Manage Apps > Update All. Enable auto-updates so you don't have to remember.` },
     { title: 'When to restart', content: `Many updates require a restart to take effect. "Restart later" means the security fix isn't active yet. Restart when prompted — saving a few minutes isn't worth the risk.` },
   ] },
   { slug: 'ergonomic-workspace', title: 'How to Set Up an Ergonomic Workspace', excerpt: 'Prevent back pain, neck strain, and repetitive stress injuries with proper workspace setup.', category: 'essential-skills', tags: ['ergonomics', 'health', 'workspace', 'posture', 'productivity'], readTime: '7 min', thumbnailEmoji: '🪑', publishedAt: '2026-04-02', difficulty: 'Beginner', steps: [
-    { title: 'Chair height', content: `Adjust your chair so your feet are flat on the floor and thighs are parallel to the ground. Knees at approximately 90 degrees. If your chair doesn't adjust low enough, use a footrest.` },
+    { title: 'Chair height', content: `Adjust your chair so your feet are flat on the floor and thighs are parallel to the ground. Knees at about 90 degrees. If your chair doesn't adjust low enough, use a footrest.` },
     { title: 'Monitor position', content: `Top of the screen at or slightly below eye level. About arm's length away (20-26 inches). Tilt screen slightly back. If using a laptop, consider a laptop stand ($20-40) plus external keyboard.` },
     { title: 'Keyboard and mouse', content: 'Wrists should be straight, not bent up or down. Elbows at 90 degrees, close to your body. Consider a split keyboard or ergonomic mouse if you experience wrist pain.' },
     { title: 'Lighting', content: 'Position your screen perpendicular to windows to reduce glare. Use indirect lighting — avoid overhead lights directly above your screen. Adjust screen brightness to match ambient lighting.' },
@@ -12190,8 +12190,8 @@ For stronger privacy, do three things. Turn on Airplane Mode to disable all radi
       },
       {
         title: 'What to do if you already tapped a link',
-        content: 'If you tapped a scam link: do not enter any personal information. Close the browser immediately. If you entered a password, change it right away. If you entered a credit card number, call your bank and report it. Run a security scan on your phone.',
-        warning: 'Contact your bank immediately if you entered any payment information. Many banks can reverse unauthorized charges if you report them quickly.',
+        content: 'If you tapped a scam link: do not enter any personal information. Close the browser right away. If you entered a password, change it right away. If you entered a credit card number, call your bank and report it. Run a security scan on your phone.',
+        warning: 'Contact your bank right away if you entered any payment information. Many banks can reverse unauthorized charges if you report them quickly.',
       },
     ],
   },
@@ -12403,7 +12403,7 @@ For stronger privacy, do three things. Turn on Airplane Mode to disable all radi
       { title: 'Look up the business on the Better Business Bureau', content: 'Go to bbb.org and search for the company name. The BBB shows you the business address, how long they have been in business, customer complaints, and their rating (A+ through F). A new business with many complaints is a red flag. Real businesses have customer reviews going back years.' },
       { title: 'Search for customer reviews and complaints', content: 'Search the company name + "scam" or "reviews" on Google. If you see many complaints about people not receiving their orders or losing money, it is likely a scam. Read through reviews on Google Maps, Trustpilot, or the BBB website.' },
       { title: 'Check for HTTPS and a valid SSL certificate', content: 'Look at the web address at the top of your browser. It should start with "https://" (not just "http://"). The "s" means the website is secure and encrypted. You should also see a small lock icon next to the address. If there is no lock or the address starts with "http://", the site may not be safe.' },
-      { title: 'Red flags that indicate a fake website', content: 'Avoid websites if: they are very new (created recently), they have poor spelling and grammar, the design looks amateurish or copied from another site, they ask for payment by wire transfer or gift cards, they ask for unusual payment methods like cryptocurrency, prices are much lower than competitors, they pressure you to buy immediately, or they refuse to answer your questions.', warning: 'Never buy from a website that only accepts wire transfers, gift cards, or cryptocurrency. Legitimate businesses accept credit cards and PayPal. These payment methods give you protection if something goes wrong.' },
+      { title: 'Red flags that indicate a fake website', content: 'Avoid websites if: they are very new (created recently), they have poor spelling and grammar, the design looks amateurish or copied from another site, they ask for payment by wire transfer or gift cards, they ask for unusual payment methods like cryptocurrency, prices are much lower than competitors, they pressure you to buy right away, or they refuse to answer your questions.', warning: 'Never buy from a website that only accepts wire transfers, gift cards, or cryptocurrency. Legitimate businesses accept credit cards and PayPal. These payment methods give you protection if something goes wrong.' },
     ]
   },
   {
@@ -12419,10 +12419,10 @@ For stronger privacy, do three things. Turn on Airplane Mode to disable all radi
     steps: [
       { title: 'Understand what a data breach is', content: `A data breach happens when hackers steal information from a company's database. Millions of emails, passwords, names, and addresses get stolen and sold on the dark web. Even the biggest companies like Facebook, Yahoo, and Target have had breaches. The good news: you can check if your information is in a leaked database.` },
       { title: 'Check your email on Have I Been Pwned', content: 'Go to haveibeenpwned.com and type in your email address. Press Enter. This website will tell you if your email appears in any known data breach. If it says "Good news — no pwnage found," you are not in any known breaches. If it finds your email, it will show you which companies were breached.', tip: 'Have I Been Pwned is completely free and trusted by millions of people. It was created by security expert Troy Hunt and does not collect your personal information.' },
-      { title: 'Check if your passwords are compromised', content: `If your email appears in a breach, change your password for that service immediately. Go to the company's website (like Facebook, Gmail, etc.) and create a new password. Use a strong password: at least 12 characters with uppercase, lowercase, numbers, and symbols. If you used that same password on other accounts, change those too.` },
+      { title: 'Check if your passwords are compromised', content: `If your email appears in a breach, change your password for that service right away. Go to the company's website (like Facebook, Gmail, etc.) and create a new password. Use a strong password: at least 12 characters with uppercase, lowercase, numbers, and symbols. If you used that same password on other accounts, change those too.` },
       { title: 'Search for your username across the web', content: 'Some hackers sell leaked data with usernames instead of just emails. Search your username in Google to see if it appears on data dump websites or dark web forums. If you see your username on a suspicious site, assume your information has been leaked.' },
       { title: 'Check for your address and phone number', content: 'Visit haveibeenpwned.com again and scroll down to "Pastes." If your phone number or home address appears in leaked data, be careful — scammers might call or mail you offers. Do not give any information to unsolicited callers claiming to be from a company you know.' },
-      { title: 'What to do if your information was leaked', content: 'First, change your passwords on important accounts (email, banking, social media). Consider using a password manager like Bitwarden or 1Password to create and store strong, unique passwords. Second, watch your bank and credit card statements for fraud. You can freeze your credit for free with the three credit bureaus (Equifax, Experian, TransUnion) to prevent identity theft. Finally, check your credit report annually at annualcreditreport.com for any accounts opened in your name.', warning: 'If you see accounts opened in your name on your credit report, contact the company and the FTC immediately. Do not ignore it — identity theft can take years to fix.' },
+      { title: 'What to do if your information was leaked', content: 'First, change your passwords on important accounts (email, banking, social media). Consider using a password manager like Bitwarden or 1Password to create and store strong, unique passwords. Second, watch your bank and credit card statements for fraud. You can freeze your credit for free with the three credit bureaus (Equifax, Experian, TransUnion) to prevent identity theft. Finally, check your credit report annually at annualcreditreport.com for any accounts opened in your name.', warning: 'If you see accounts opened in your name on your credit report, contact the company and the FTC right away. Do not ignore it — identity theft can take years to fix.' },
     ]
   },
 ];

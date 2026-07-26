@@ -17,7 +17,7 @@ The service costs around $6.99 per month and offers a free trial so you can expl
 
 Acorn TV is owned by AMC Networks, which means the library is curated and well-maintained rather than stuffed with low-quality content. New episodes and series are added every week.
 
-Getting started is straightforward. You create a free account on the Acorn TV website, choose a subscription plan, and begin watching immediately. If you already have an Amazon Prime account, you can also add Acorn TV as an Amazon Prime Video channel, which makes billing and access even simpler.
+Getting started is straightforward. You create a free account on the Acorn TV website, choose a subscription plan, and begin watching right away. If you already have an Amazon Prime account, you can also add Acorn TV as an Amazon Prime Video channel, which makes billing and access even simpler.
 
 The library leans heavily toward British content but also includes Australian, New Zealand, and Irish productions. The search and browse tools are clean and easy to navigate. You can create a watchlist so you don't lose track of a series mid-season.
 
@@ -30,7 +30,7 @@ If you watch with a family member or partner, one account covers two simultaneou
       },
       {
         title: `Choose your subscription plan`,
-        content: `Acorn TV offers monthly and annual billing. The annual plan saves you money compared to paying month-to-month. Enter your payment information to complete the sign-up. Your free trial begins immediately and you will not be charged until the trial period ends.`,
+        content: `Acorn TV offers monthly and annual billing. The annual plan saves you money compared to paying month-to-month. Enter your payment information to complete the sign-up. Your free trial begins right away and you will not be charged until the trial period ends.`,
         warning: `Set a reminder on your phone or calendar for the end of the trial period if you want to cancel before being billed.`,
       },
       {
@@ -136,7 +136,7 @@ The browse experience is excellent — you can filter by topic, length, difficul
       {
         title: `Adjust video quality and subtitles`,
         content: `While watching, tap the screen to bring up playback controls. Look for the settings gear icon to adjust video quality (useful if your internet connection is slower) and to turn on or off subtitles. CuriosityStream offers subtitles in multiple languages for most titles.`,
-        tip: `Quick Tip: If a video buffers (pauses to load) frequently, lower the video quality setting to SD or 720p. This uses less internet data and plays more smoothly on slower connections.`,
+        tip: `Quick Tip: If a video buffers (pauses to load) often, lower the video quality setting to SD or 720p. This uses less internet data and plays more smoothly on slower connections.`,
       },
     ],
   },
@@ -164,7 +164,7 @@ One standout feature is Shudder TV, a free 24/7 streaming channel available insi
     steps: [
       {
         title: `Sign up at shudder.com`,
-        content: `Go to shudder.com in your browser and click "Start Free Trial." Enter your email and create a password. Choose a monthly or annual plan. Your trial begins immediately and you can explore the full library without any restrictions during the trial period.`,
+        content: `Go to shudder.com in your browser and click "Start Free Trial." Enter your email and create a password. Choose a monthly or annual plan. Your trial begins right away and you can explore the full library without any restrictions during the trial period.`,
         tip: `Quick Tip: If you have Amazon Prime, you can add Shudder as a Prime Video channel. Go to primevideo.com, search "Shudder," and subscribe there to keep everything in one app.`,
       },
       {
@@ -303,7 +303,7 @@ Setup is quick: you create an account, download the app to your device, and you'
     steps: [
       {
         title: `Sign up at frndlytv.com`,
-        content: `Open your browser and go to frndlytv.com. Click "Start Free Trial" and enter your email address and a password. Choose a plan — Basic, Classic, or Premium — based on whether you want DVR recording capability. Your trial begins immediately.`,
+        content: `Open your browser and go to frndlytv.com. Click "Start Free Trial" and enter your email address and a password. Choose a plan — Basic, Classic, or Premium — based on whether you want DVR recording capability. Your trial begins right away.`,
         tip: `Quick Tip: If you plan to record Hallmark movies or other shows to watch later, choose the Classic or Premium plan. The Basic plan only includes live TV without recording.`,
       },
       {
@@ -350,7 +350,7 @@ If you're unsure whether MasterClass is right for you, look for occasional promo
       {
         title: `Visit masterclass.com and choose a plan`,
         content: `Go to masterclass.com and click "Get Started." You'll see the Individual plan (one account) and the Duo/Family plan (two or more accounts). Choose the plan that fits your household. Enter your email, create a password, and provide payment information. An annual subscription is the standard billing model.`,
-        tip: `Quick Tip: MasterClass frequently offers promotional pricing — check the website for a discounted rate or gift subscription options, especially around holidays.`,
+        tip: `Quick Tip: MasterClass often offers promotional pricing — check the website for a discounted rate or gift subscription options, especially around holidays.`,
       },
       {
         title: `Browse the course catalog`,
@@ -367,7 +367,7 @@ If you're unsure whether MasterClass is right for you, look for occasional promo
       },
       {
         title: `Download and use the course workbook`,
-        content: `On the course page, look for a "Workbook" or "Course Materials" link. Download the PDF to your phone or computer. The workbook contains written notes from each lesson, reflection questions, and exercises. Working through the written materials alongside the videos deepens the learning experience significantly.`,
+        content: `On the course page, look for a "Workbook" or "Course Materials" link. Download the PDF to your phone or computer. The workbook contains written notes from each lesson, reflection questions, and exercises. Working through the written materials alongside the videos deepens the learning experience a lot.`,
       },
     ],
   },
@@ -385,7 +385,7 @@ If you're unsure whether MasterClass is right for you, look for occasional promo
 
 Classes on Skillshare typically run between 30 minutes and 2 hours and are broken into short video lessons. At the end of most classes, there is a class project where you apply what you learned and can share your work with other students for feedback. This hands-on approach is one of the things that sets Skillshare apart from watching tutorials.
 
-Skillshare operates on a subscription model: one flat monthly or annual fee gives you unlimited access to all classes. The annual plan is significantly cheaper per month than paying monthly. There is a free trial available, and some classes are available to non-subscribers for free.
+Skillshare operates on a subscription model: one flat monthly or annual fee gives you unlimited access to all classes. The annual plan is a lot cheaper per month than paying monthly. There is a free trial available, and some classes are available to non-subscribers for free.
 
 The catalog covers a wide range of topics: graphic design, illustration, watercolor painting, photography, video editing, writing, calligraphy, business, marketing, animation, music production, and more. There are beginner classes for people picking up a skill for the first time, and intermediate classes for those looking to deepen existing knowledge.
 
@@ -395,7 +395,7 @@ If you have a creative hobby you've wanted to develop — or a professional skil
     steps: [
       {
         title: `Create an account at skillshare.com`,
-        content: `Go to skillshare.com and click "Get Started" or "Try for Free." Enter your email address and create a password. You'll be prompted to enter payment information for the subscription. Choose between monthly ($32/month) or annual billing (approximately $14/month, billed once per year). A trial period is available.`,
+        content: `Go to skillshare.com and click "Get Started" or "Try for Free." Enter your email address and create a password. You'll be prompted to enter payment information for the subscription. Choose between monthly ($32/month) or annual billing (about $14/month, billed once per year). A trial period is available.`,
         tip: `Quick Tip: The annual plan costs about the same as two months of monthly billing. If you find a class or two you want to complete, the annual plan is much better value.`,
       },
       {
@@ -455,7 +455,7 @@ Udemy is available on iPhone, Android, and in any web browser. The mobile app al
       },
       {
         title: `Purchase and start your course`,
-        content: `When you find a course during a sale, click "Buy Now" and complete the checkout with a credit or debit card. The course is immediately added to your account. Go to "My Learning" in your account menu to find your purchased courses. Click the course to open it and begin with the first lesson.`,
+        content: `When you find a course during a sale, click "Buy Now" and complete the checkout with a credit or debit card. The course is right away added to your account. Go to "My Learning" in your account menu to find your purchased courses. Click the course to open it and begin with the first lesson.`,
       },
       {
         title: `Download the app for on-the-go learning`,
@@ -538,7 +538,7 @@ Many people who learned to code as adults mention Codecademy as the platform whe
       },
       {
         title: `Choose your first course`,
-        content: `For most beginners, the "Learn HTML" or "Learn Python 3" courses are excellent starting points. HTML is the foundation of all websites — it's approachable and rewarding to see your results immediately. Python is used in data science, automation, and general programming, and Codecademy's Python course is one of the most highly rated beginner courses online.`,
+        content: `For most beginners, the "Learn HTML" or "Learn Python 3" courses are excellent starting points. HTML is the foundation of all websites — it's approachable and rewarding to see your results right away. Python is used in data science, automation, and general programming, and Codecademy's Python course is one of the most highly rated beginner courses online.`,
         tip: `Quick Tip: You don't have to know what you want to do with coding to start. Pick any beginner course and try one lesson. You can always switch to a different path later — your progress in each course is saved separately.`,
       },
       {
@@ -547,7 +547,7 @@ Many people who learned to code as adults mention Codecademy as the platform whe
       },
       {
         title: `Use the hints if you get stuck`,
-        content: `Every exercise has a "Get Hint" button and often a "View Solution" option. Use hints freely — they're there to help you learn, not to indicate failure. Looking at a solution and understanding why it works is a completely valid way to progress through a lesson.`,
+        content: `Every exercise has a "Get Hint" button and often a "View Solution" option. Use hints freely — they're there to help you learn, not to show failure. Looking at a solution and understanding why it works is a completely valid way to progress through a lesson.`,
         warning: `Don't copy-paste solutions without reading them. If you skip understanding the lesson, the next one will be harder. Take an extra minute to read through each solution and make sure you understand what each line does.`,
       },
       {
@@ -628,7 +628,7 @@ This is worth bookmarking if you regularly use Microsoft products and want a rel
     steps: [
       {
         title: `Go to learn.microsoft.com`,
-        content: `Open any web browser and type learn.microsoft.com in the address bar. You'll land on Microsoft Learn's homepage. You can browse all content without creating an account. The search bar at the top lets you type a topic — for example, "Excel formulas" or "OneDrive beginner" — to find relevant modules immediately.`,
+        content: `Open any web browser and type learn.microsoft.com in the address bar. You'll land on Microsoft Learn's homepage. You can browse all content without creating an account. The search bar at the top lets you type a topic — for example, "Excel formulas" or "OneDrive beginner" — to find relevant modules right away.`,
       },
       {
         title: `Find the right learning path for your goals`,
@@ -688,7 +688,7 @@ Setting up a new site takes about 20 minutes from start to your first published 
       {
         title: `Write and publish your first post`,
         content: `Click "Posts" in the left-side menu, then "Add New Post." The block editor opens. Click the title area and type your post title. Below it, click the plus (+) icon to add content blocks — choose "Paragraph" for text, "Image" to upload a photo, or other options as needed. When you're done, click the blue "Publish" button in the top right corner to make your post live.`,
-        warning: `Published posts are immediately visible to anyone on the internet. If you're not ready to publish publicly, use the "Save Draft" option to save your work without making it public.`,
+        warning: `Published posts are right away visible to anyone on the internet. If you're not ready to publish publicly, use the "Save Draft" option to save your work without making it public.`,
       },
       {
         title: `Add pages for About and Contact information`,
@@ -925,7 +925,7 @@ Carrd sites are mobile-responsive by default, meaning they look good on phone sc
       },
       {
         title: `Create an account and publish your site`,
-        content: `When your site looks ready, click the "Publish" button in the top right corner. Carrd will prompt you to create a free account with your email and a password. After creating your account, you'll choose a free web address (yourname.carrd.co) and click Publish to make your site live. Your site is immediately accessible at that address.`,
+        content: `When your site looks ready, click the "Publish" button in the top right corner. Carrd will prompt you to create a free account with your email and a password. After creating your account, you'll choose a free web address (yourname.carrd.co) and click Publish to make your site live. Your site is right away accessible at that address.`,
         tip: `Quick Tip: You can update your Carrd site anytime by logging back in to carrd.co and clicking on your site in your dashboard. Changes publish instantly when you click the Publish button again. There is no review process or delay.`,
       },
     ],

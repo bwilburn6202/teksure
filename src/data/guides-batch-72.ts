@@ -11,7 +11,7 @@ export const guidesBatch72: Guide[] = [
     thumbnailEmoji: ``,
     difficulty: `Beginner`,
     publishedAt: `2026-04-20`,
-    body: `Your Android phone is full of things that matter — contacts built over years, text message threads, photos, app settings you took time to configure. If your phone is lost, stolen, broken, or eventually worn out, Google's built-in backup system can save most of it so your next phone feels like your old one almost immediately.
+    body: `Your Android phone is full of things that matter — contacts built over years, text message threads, photos, app settings you took time to configure. If your phone is lost, stolen, broken, or eventually worn out, Google's built-in backup system can save most of it so your next phone feels like your old one almost right away.
 
 Android backup covers several categories of data. Contacts are synced to your Google account continuously — not just during backups. Call history, SMS and MMS messages, device settings (like Wi-Fi passwords and display preferences), and app data (including app-specific settings and progress) are all included in the standard Google backup. Photos and videos are handled separately through Google Photos.
 
@@ -33,7 +33,7 @@ When you get a new Android phone, sign in to your Google account during setup an
       },
       {
         title: `Turn on Google backup`,
-        content: `Toggle on "Back up to Google Drive" or "Back up to Google One." You will see a list of what is included: apps, SMS, call history, device settings, and contacts. Tap "Back up now" to run a manual backup immediately.`,
+        content: `Toggle on "Back up to Google Drive" or "Back up to Google One." You will see a list of what is included: apps, SMS, call history, device settings, and contacts. Tap "Back up now" to run a manual backup right away.`,
         tip: `Check the "Last backup" date shown on this screen. If it shows more than a week ago, run a manual backup now.`,
       },
       {
@@ -59,7 +59,7 @@ When you get a new Android phone, sign in to your Google account during setup an
     publishedAt: `2026-04-20`,
     body: `Phones get lost, dropped in water, stolen, or eventually wear out. When that happens, the difference between losing years of photos and messages versus having them all back in an hour comes down to one thing: whether your iPhone was backed up. iCloud backup is Apple's answer to this — it runs automatically in the background and requires almost no effort once set up.
 
-iCloud backup stores a complete snapshot of your iPhone including app data, your home screen layout, device settings, iMessage and SMS message history (when iCloud Messages is off), contacts if iCloud Contacts is not separately enabled, call history, and photos and videos if iCloud Photos is not turned on separately. Each of these overlapping systems ensures your data is covered.
+iCloud backup stores a complete snapshot of your iPhone including app data, your home screen layout, device settings, iMessage and SMS message history (when iCloud Messages is off), contacts if iCloud Contacts is not separately enabled, call history, and photos and videos if iCloud Photos is not turned on separately. Each of these overlapping systems makes sure your data is covered.
 
 To turn on iCloud Backup, open the Settings app and tap your name at the top. Choose iCloud, then scroll down to iCloud Backup. Tap the toggle to turn it on. You will see the date and time of the last backup listed below the toggle.
 
@@ -87,7 +87,7 @@ When setting up a new iPhone, you choose "Restore from iCloud Backup" during the
       },
       {
         title: `Check your iCloud storage`,
-        content: `Go back to Settings > [Your Name] > iCloud > Manage Account Storage to see how much space you are using. If you are near your limit, your backups may stop working. Consider upgrading to 50GB for $1 per month to ensure reliable backups.`,
+        content: `Go back to Settings > [Your Name] > iCloud > Manage Account Storage to see how much space you are using. If you are near your limit, your backups may stop working. Consider upgrading to 50GB for $1 per month to make sure reliable backups.`,
       },
       {
         title: `Enable iCloud Photos separately`,
@@ -171,12 +171,12 @@ Compared to alternatives: IDrive backs up multiple devices on one account (good 
       },
       {
         title: `Let the initial backup run`,
-        content: `After installing, Backblaze begins backing up your files immediately. Look for the Backblaze icon in your system tray (Windows) or menu bar (Mac). Click it to see the backup progress. Leave your computer on and connected to the internet — the first backup may take days or weeks depending on how much data you have.`,
+        content: `After installing, Backblaze begins backing up your files right away. Look for the Backblaze icon in your system tray (Windows) or menu bar (Mac). Click it to see the backup progress. Leave your computer on and connected to the internet — the first backup may take days or weeks depending on how much data you have.`,
         tip: `You can continue using your computer normally while the backup runs. Backblaze throttles itself to avoid slowing down your internet connection during heavy use.`,
       },
       {
         title: `Restore a file from the website`,
-        content: `To recover a file, log in to backblaze.com and click "Restore Files." Browse your backed-up files or search by name. Select the files you want and click "Download." For a single file, it downloads immediately. For many files, Backblaze prepares a zip file you can download within a few minutes.`,
+        content: `To recover a file, log in to backblaze.com and click "Restore Files." Browse your backed-up files or search by name. Select the files you want and click "Download." For a single file, it downloads right away. For many files, Backblaze prepares a zip file you can download within a few minutes.`,
       },
       {
         title: `Set your backup preferences`,
@@ -550,7 +550,7 @@ Quick Tip: ask your grandchild to teach you their favorite app. Children love be
     thumbnailEmoji: ``,
     difficulty: `Beginner`,
     publishedAt: `2026-04-20`,
-    body: `Losing a spouse is one of the most difficult experiences in life. In the days and weeks that follow, there are many practical matters to address — and digital accounts and devices are among them. This guide walks through the technology-related tasks gently and in order of urgency, with the understanding that nothing on this list needs to happen immediately.
+    body: `Losing a spouse is one of the most difficult experiences in life. In the days and weeks that follow, there are many practical matters to address — and digital accounts and devices are among them. This guide walks through the technology-related tasks gently and in order of urgency, with the understanding that nothing on this list needs to happen right away.
 
 The most important first step is to focus on financial and bill-paying accounts before anything else. If your spouse managed any automatic bill payments — utilities, insurance, mortgage, subscriptions — you need to identify and either transfer or cancel them to avoid missed payments or unwanted charges. Look through recent bank or credit card statements for recurring charges. Note any accounts that were solely in your spouse's name that may need to be transferred or closed.
 
@@ -608,7 +608,7 @@ The problem with removing your own data is the scale of the work. There are hund
 
 DeleteMe automates this process. You provide your name, current and past addresses, and age. DeleteMe scans over 750 data broker sites for profiles matching your information, submits removal requests, and sends you a detailed report showing what was found and what was removed. The service continues monitoring and sending new removal requests every three months, because removed data has a habit of reappearing.
 
-The individual plan is approximately $129 per year, which works out to about $11 per month. A family plan covering two people runs approximately $229 per year. DeleteMe also offers a trial report — you can see what they find before committing.
+The individual plan is about $129 per year, which works out to about $11 per month. A family plan covering two people runs about $229 per year. DeleteMe also offers a trial report — you can see what they find before committing.
 
 What DeleteMe does not cover: it cannot remove information from news articles, court records, your own social media profiles, or government databases. Those require separate action and are often not removable. DeleteMe focuses on the commercial data broker ecosystem — which is where most of the consumer privacy risk lives.
 
@@ -692,7 +692,7 @@ What DuckDuckGo does not change: your internet provider can still see the websit
 
 Technology has transformed language learning from a classroom-only experience into something you can do on your phone for 15 minutes while having your morning coffee. The apps available today are engaging, affordable, and designed for adult learners.
 
-Duolingo is the most popular language learning app and it is free. It uses short, game-like lessons that make practice feel less like studying and more like a daily game. The app tracks your progress, sends friendly reminders, and covers over 40 languages. Duolingo is excellent for building vocabulary and basic grammar. The free version is sufficient for most learners — the paid version removes ads. One honest note: Duolingo is best for beginners and intermediate learners; advanced learners may want to supplement it with other resources.
+Duolingo is the most popular language learning app and it is free. It uses short, game-like lessons that make practice feel less like studying and more like a daily game. The app tracks your progress, sends friendly reminders, and covers over 40 languages. Duolingo is excellent for building vocabulary and basic grammar. The free version is enough for most learners — the paid version removes ads. One honest note: Duolingo is best for beginners and intermediate learners; advanced learners may want to supplement it with other resources.
 
 Babbel takes a more structured approach, with a focus on real-world conversation from the very beginning. Lessons are built around scenarios — ordering at a restaurant, asking for directions, making a doctor's appointment. Babbel costs around $15 per month or about $84 per year, and covers 14 languages. Many adult learners prefer Babbel's more organized curriculum.
 
@@ -715,7 +715,7 @@ Consistency matters far more than session length. Fifteen to twenty minutes ever
       },
       {
         title: `Supplement apps with TV and listening`,
-        content: `After a few weeks of app learning, add Spanish (or your chosen language) TV shows or movies to your routine. On Netflix, search for Spanish language shows and turn on English subtitles at first. The combination of hearing native speakers and seeing words in context accelerates learning significantly beyond any app alone.`,
+        content: `After a few weeks of app learning, add Spanish (or your chosen language) TV shows or movies to your routine. On Netflix, search for Spanish language shows and turn on English subtitles at first. The combination of hearing native speakers and seeing words in context accelerates learning a lot beyond any app alone.`,
       },
       {
         title: `Find a conversation partner`,
@@ -738,15 +738,15 @@ Consistency matters far more than session length. Fifteen to twenty minutes ever
 
 LifeLock is a paid service that monitors for signs of identity theft and alerts you when something suspicious appears. It watches for: new accounts opened in your name, unusual activity on your existing accounts, your Social Security number being used in applications, your information appearing on dark web markets (where stolen data is bought and sold), and address changes filed with the post office.
 
-What LifeLock does not do is prevent identity theft from happening. It monitors and alerts — you are notified when a threat is detected, and then LifeLock's support team helps you respond. Think of it as an early warning system and recovery assistance service, not a lock that stops thieves at the door.
+What LifeLock does not do is prevent identity theft from happening. It monitors and alerts — you are notified when a threat is detected, and then LifeLock's support team helps you respond. Think of it as an early warning system and recovery help service, not a lock that stops thieves at the door.
 
-LifeLock offers three tiers. Standard (approximately $12 per month) covers basic monitoring including SSN alerts, dark web monitoring, and credit monitoring through one bureau. Advantage (approximately $22 per month) adds bank account alerts, credit monitoring through all three bureaus, and higher reimbursement limits. Ultimate Plus (approximately $35 per month) is the most comprehensive, including credit score tracking, home title alerts, investment account activity monitoring, and a VPN.
+LifeLock offers three tiers. Standard (about $12 per month) covers basic monitoring including SSN alerts, dark web monitoring, and credit monitoring through one bureau. Advantage (about $22 per month) adds bank account alerts, credit monitoring through all three bureaus, and higher reimbursement limits. Ultimate Plus (about $35 per month) is the most comprehensive, including credit score tracking, home title alerts, investment account activity monitoring, and a VPN.
 
-The "$1 million protection" advertised by LifeLock is frequently misunderstood. This covers the fees LifeLock pays to lawyers and specialists on your behalf during recovery — it is not a cash payment to you directly. Coverage limits vary by plan and are subject to terms and conditions.
+The "$1 million protection" advertised by LifeLock is often misunderstood. This covers the fees LifeLock pays to lawyers and specialists on your behalf during recovery — it is not a cash payment to you directly. Coverage limits vary by plan and are subject to terms and conditions.
 
 For people who want similar protection without the cost, there are strong free alternatives. Credit Karma monitors your credit for free and alerts you to new accounts or changes. Placing a free credit freeze with Experian, Equifax, and TransUnion prevents anyone from opening new credit accounts in your name — this is arguably the single most effective protection available. Checking your free annual credit reports at AnnualCreditReport.com helps you spot unauthorized accounts.
 
-Whether LifeLock is worth the cost depends on your situation. If you have already experienced identity theft, want peace of mind without managing things yourself, or have a complex financial situation, LifeLock provides real value. If you are careful, check your statements regularly, and are willing to manage credit freezes yourself, free monitoring may be sufficient.`,
+Whether LifeLock is worth the cost depends on your situation. If you have already experienced identity theft, want peace of mind without managing things yourself, or have a complex financial situation, LifeLock provides real value. If you are careful, check your statements regularly, and are willing to manage credit freezes yourself, free monitoring may be enough.`,
     steps: [
       {
         title: `Place a free credit freeze first`,
@@ -754,12 +754,12 @@ Whether LifeLock is worth the cost depends on your situation. If you have alread
       },
       {
         title: `Set up free credit monitoring through Credit Karma`,
-        content: `Go to creditkarma.com and create a free account using your email. Credit Karma monitors your credit and emails you when new accounts are opened, when your score changes significantly, or when a hard inquiry is made. This covers many of the same alerts as paid services, at no cost.`,
+        content: `Go to creditkarma.com and create a free account using your email. Credit Karma monitors your credit and emails you when new accounts are opened, when your score changes a lot, or when a hard inquiry is made. This covers many of the same alerts as paid services, at no cost.`,
       },
       {
         title: `Evaluate whether LifeLock adds enough value for your situation`,
-        content: `If you have had identity theft before, have elderly parents who are often targeted by scammers, or want the recovery support team available without managing things yourself, LifeLock's paid plans provide real peace of mind. Visit lifelock.com to compare plans. The Standard plan (~$12/month) is sufficient for most individuals.`,
-        tip: `LifeLock frequently runs promotional pricing — often 40–50% off the first year. Search "LifeLock promo code" before signing up to check current offers.`,
+        content: `If you have had identity theft before, have elderly parents who are often targeted by scammers, or want the recovery support team available without managing things yourself, LifeLock's paid plans provide real peace of mind. Visit lifelock.com to compare plans. The Standard plan (~$12/month) is enough for most individuals.`,
+        tip: `LifeLock often runs promotional pricing — often 40–50% off the first year. Search "LifeLock promo code" before signing up to check current offers.`,
       },
       {
         title: `Check your free annual credit reports`,
@@ -824,7 +824,7 @@ For actual privacy from websites and your internet provider, the tools that make
     publishedAt: `2026-04-20`,
     body: `Smart home devices — cameras, doorbells, smart speakers, thermostats, smart locks, and even smart light bulbs — connect to the internet and can provide genuine convenience. But each connected device is also a potential entry point for attackers if not properly secured. There have been documented cases of strangers accessing home security cameras, of compromised devices being used to attack other equipment on the same network, and of smart locks with weak passwords being bypassed remotely.
 
-The good news is that the steps to secure smart home devices are not complicated. Most of them are one-time setup actions that significantly reduce your risk.
+The good news is that the steps to secure smart home devices are not complicated. Most of them are one-time setup actions that a lot reduce your risk.
 
 The single most important step is changing default passwords. Nearly every router, security camera, smart doorbell, and baby monitor comes with a factory default username and password — often something like "admin" and "password." These defaults are publicly documented and hackers use automated tools to scan the internet for devices still using them. The moment you set up any smart home device, change the password to something long and unique.
 
@@ -840,7 +840,7 @@ Once per year, open your router app and look at the connected device list. Remov
     steps: [
       {
         title: `Change default passwords on all devices`,
-        content: `Every router and smart home device comes with a factory default password. Change these immediately. For your router: open a browser, type your router's IP address (usually 192.168.1.1 or 192.168.0.1), log in with the default credentials found on the label on the router's back, and change the admin password to something long and unique. For cameras, doorbells, and other devices: change passwords in the device's app settings.`,
+        content: `Every router and smart home device comes with a factory default password. Change these right away. For your router: open a browser, type your router's IP address (usually 192.168.1.1 or 192.168.0.1), log in with the default credentials found on the label on the router's back, and change the admin password to something long and unique. For cameras, doorbells, and other devices: change passwords in the device's app settings.`,
         warning: `Using the factory default password is one of the riskiest things you can do with a smart home device. Automated scanners search the internet for devices with default credentials every day.`,
       },
       {

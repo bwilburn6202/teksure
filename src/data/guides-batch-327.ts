@@ -108,7 +108,7 @@ This guide walks through checking whether your laptop qualifies, making a USB in
       },
       {
         title: 'Boot the old laptop from the USB',
-        content: 'Plug the USB into the old laptop. Turn the laptop off. Turn it back on and immediately press the boot-menu key repeatedly — the key varies by brand: Dell = F12, HP = F9, Lenovo = F12, Toshiba = F12, Asus = Esc, Acer = F12. If none of those work, look up "boot menu key" and your laptop brand. When the boot menu appears, use the arrow keys to select the USB drive (may show up as "UEFI USB" or by the USB brand name). Press Enter.',
+        content: 'Plug the USB into the old laptop. Turn the laptop off. Turn it back on and right away press the boot-menu key repeatedly — the key varies by brand: Dell = F12, HP = F9, Lenovo = F12, Toshiba = F12, Asus = Esc, Acer = F12. If none of those work, look up "boot menu key" and your laptop brand. When the boot menu appears, use the arrow keys to select the USB drive (may show up as "UEFI USB" or by the USB brand name). Press Enter.',
         tip: 'Quick Tip: If the boot-menu key does not work, you may need to enter the BIOS (press Delete, F2, or F10 at startup) and change the boot order to try USB first. Google "how to boot from USB" + your laptop brand for step-by-step help.',
       },
       {
@@ -158,7 +158,7 @@ You do not need to call Comcast to cancel these — they can be canceled from th
       },
       {
         title: 'Cancel Peacock, Netflix, and other premium video add-ons',
-        content: 'The most common surprise charge is a premium streaming service (Peacock Premium, Paramount+, Showtime, Starz, Max) that started as a free trial. In the Add-ons or Premium Channels list, find the streaming service. Click it. Click "Remove," "Cancel," or "Manage subscription." Confirm the cancellation. The service continues through the end of the current billing month — you do not lose access immediately.',
+        content: 'The most common surprise charge is a premium streaming service (Peacock Premium, Paramount+, Showtime, Starz, Max) that started as a free trial. In the Add-ons or Premium Channels list, find the streaming service. Click it. Click "Remove," "Cancel," or "Manage subscription." Confirm the cancellation. The service continues through the end of the current billing month — you do not lose access right away.',
       },
       {
         title: 'Cancel xFi Complete if you rent an Xfinity router',
@@ -248,7 +248,7 @@ This guide walks through creating the group, inviting family members, sharing a 
       },
       {
         title: 'Leaving or removing someone from the family group',
-        content: 'A member can leave anytime: families.google.com > "Leave family." The family manager can remove someone: click their name > "Remove from family group." Note: once a family member is removed, they lose access to shared subscriptions immediately but keep any files they saved to their personal Drive. A person can only be in one family group at a time — if your daughter is in her husband\'s family group, she cannot also be in yours.',
+        content: 'A member can leave anytime: families.google.com > "Leave family." The family manager can remove someone: click their name > "Remove from family group." Note: once a family member is removed, they lose access to shared subscriptions right away but keep any files they saved to their personal Drive. A person can only be in one family group at a time — if your daughter is in her husband\'s family group, she cannot also be in yours.',
       },
     ],
   },
@@ -325,7 +325,7 @@ This guide walks through unboxing, mounting, connecting to WiFi, and the four no
     steps: [
       {
         title: 'Charge the battery before you install',
-        content: 'Unbox the doorbell. Plug it into the included USB-C cable and a wall charger (a phone charger works). Charge for 3 hours before installing — this ensures you have a full 6 months of runtime from the start. The LED on the front turns solid green when charging is complete.',
+        content: 'Unbox the doorbell. Plug it into the included USB-C cable and a wall charger (a phone charger works). Charge for 3 hours before installing — this makes sure you have a full 6 months of runtime from the start. The LED on the front turns solid green when charging is complete.',
       },
       {
         title: 'Install the Google Home app on your phone',
