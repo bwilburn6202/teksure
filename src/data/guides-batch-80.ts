@@ -512,11 +512,11 @@ Prescriptions from Amazon Clinic can be filled at any pharmacy or through Amazon
     thumbnailEmoji: ``,
     publishedAt: `2026-04-20`,
     difficulty: `Beginner`,
-    body: `One Medical is a membership-based primary care service, now owned by Amazon, that gives members access to same-day or next-day appointments at One Medical offices across major US cities, as well as 24/7 virtual visits from anywhere. It is designed for people who are frustrated by long waits to see a primary care doctor and want faster, more convenient access to ongoing care.
+    body: `One Medical is a membership-based primary care service, now owned by Amazon. Members get same-day or next-day appointments at One Medical offices in major US cities, plus 24/7 virtual visits from anywhere. It's built for people who are tired of long waits to see a primary care doctor and want faster, easier access to ongoing care.
 
-The annual membership fee is currently $199 per year for individuals, or included with certain Amazon Prime plans. With a membership, you pay your regular insurance copay for visits — or a flat fee if you do not have insurance — and in return, you get priority scheduling and virtual care access that most regular doctor's offices do not offer.
+The annual membership currently costs $199 per year for individuals, or it's included with certain Amazon Prime plans. With a membership, you pay your regular insurance copay for visits — or a flat fee if you don't have insurance. In return, you get priority scheduling and virtual care access that most regular doctor's offices don't offer.
 
-One Medical is not a replacement for emergency care or highly specialized medical care, but it works very well as your primary care home base. They handle annual physicals, chronic condition management (like blood pressure, diabetes, and thyroid conditions), mental health referrals, common illness treatment, and preventive care like vaccinations and cancer screenings.
+One Medical isn't a replacement for emergency care or highly specialized medical care. But it works well as your primary care home base. They handle annual physicals, chronic condition management (like blood pressure, diabetes, and thyroid conditions), mental health referrals, treatment for common illness, and preventive care like vaccinations and cancer screenings.
 
 The One Medical app is the hub for everything. You can message your care team, request a video visit, book in-person appointments, view lab results, renew prescriptions, and review your health records — all from your phone. Messages to the care team are typically answered within a few hours during business hours.
 
@@ -829,13 +829,13 @@ The most important step is to talk openly with your doctor about which screening
     thumbnailEmoji: ``,
     publishedAt: `2026-04-20`,
     difficulty: `Beginner`,
-    body: `Sharecare is a digital health platform that helps people take a more active role in managing their overall wellbeing. The app brings together health tracking, wellness programs, personalized content, and disease management resources in one place. Many employers and health insurance plans offer Sharecare as part of their wellness benefits, sometimes with incentives like gift cards or lower insurance premiums for completing health activities.
+    body: `Sharecare is a digital health platform that helps people take a more active role in managing their overall wellbeing. The app brings together health tracking, wellness programs, personalized content, and disease management resources in one place. Many employers and health insurance plans offer Sharecare as a wellness benefit, sometimes with incentives like gift cards or lower insurance premiums for completing health activities.
 
-One of Sharecare's most well-known features is its RealAge test — a scientifically validated questionnaire that estimates your biological age (how old your body actually is in terms of health) compared to your calendar age. The RealAge test looks at factors like your exercise habits, diet, sleep, stress levels, and medical history to give you a personalized health age. Many people are motivated by seeing how lifestyle changes can lower their RealAge over time.
+One of Sharecare's best-known features is its RealAge test. It's a scientifically validated questionnaire that estimates your biological age — how old your body actually is, health-wise — compared to your calendar age. It looks at things like your exercise habits, diet, sleep, stress levels, and medical history to give you a personalized health age. Many people find it motivating to see how lifestyle changes can lower their RealAge over time.
 
-The app also has a daily habit tracking section where you can log steps, water intake, sleep, meals, mindfulness, and other healthy behaviors. Sharecare connects with wearables like Fitbit, Apple Watch, and Garmin, so your activity data can flow in automatically without manual logging.
+The app also has a daily habit tracker where you can log steps, water intake, sleep, meals, mindfulness, and other healthy behaviors. Sharecare connects with wearables like Fitbit, Apple Watch, and Garmin, so your activity data flows in automatically — no manual logging needed.
 
-For people managing chronic conditions like diabetes, heart disease, or COPD, Sharecare offers dedicated programs with educational content, tracking tools, and coaching resources. These programs are particularly valuable for people who want guidance between doctor visits on managing their day-to-day health.
+If you're managing a chronic condition like diabetes, heart disease, or COPD, Sharecare offers dedicated programs with educational content, tracking tools, and coaching. These programs are especially helpful if you want guidance between doctor visits on managing your day-to-day health.
 
 If your employer or insurance plan includes Sharecare, many of the premium features are available to you at no additional cost. Check with your HR department or insurance provider to see if Sharecare is part of your benefits package before creating a personal account.`,
     steps: [

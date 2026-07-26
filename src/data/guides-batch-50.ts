@@ -409,7 +409,7 @@ Reviewing your subscriptions every few months is good practice. You may find ite
     difficulty: `Beginner`,
     body: `All rechargeable batteries wear out over time. Your iPhone battery has a limited number of charge cycles, and each full charge cycle slowly reduces how much charge it can hold. A brand new iPhone battery is rated at 100% capacity. Most Apple support guidance suggests that battery health above 80% is considered normal — but once it drops below that, your phone may struggle to last through the day or may shut off unexpectedly at low charge levels.
 
-The good news is that how you charge and use your iPhone a lot affects how quickly the battery degrades. With a few habits, you can keep your battery healthy for a longer period.
+The good news is that how you charge and use your iPhone greatly affects how quickly the battery degrades. With a few habits, you can keep your battery healthy for a longer period.
 
 One of the most effective tools is built into iOS. Apple introduced a feature called Optimized Battery Charging in iOS 13, and it is turned on by default on most iPhones. This feature uses machine learning to learn your daily charging pattern. If it notices you typically charge overnight, it will charge your iPhone to about 80% quickly, then pause and wait until just before you wake up to finish charging to 100%. This prevents the battery from sitting at 100% charge for hours at a time — which is one of the main causes of battery degradation.
 
@@ -671,7 +671,7 @@ Samsung phones running One UI have similar features through the Samsung Phone ap
 
 In addition to these built-in tools, your carrier may offer additional spam blocking. T-Mobile's Scam Shield, AT&T's Call Protect, and Verizon's Call Filter all provide additional layers of call screening, some free and some with a paid upgrade tier.
 
-No system catches every spam call, but enabling these features a lot reduces the number that actually ring through and disrupt your day.`,
+No system catches every spam call, but enabling these features greatly reduces the number that actually ring through and disrupt your day.`,
     steps: [
       {
         title: `Open the Phone app`,

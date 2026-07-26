@@ -430,7 +430,7 @@ export const guidesBatch14: Guide[] = [
       },
       {
         title: 'Save on prescriptions at Amazon Pharmacy',
-        content: 'Amazon Pharmacy offers a lot discounted prescription prices for Prime members. Go to pharmacy.amazon.com or tap "Prime Rx Benefits" in the Amazon app. You can transfer prescriptions from any pharmacy to Amazon Pharmacy and have them mailed to your home for free in 2 days or less. For same-day needs, Amazon also shows GoodRx-style discount coupons for local pharmacies.',
+        content: 'Amazon Pharmacy offers greatly discounted prescription prices for Prime members. Go to pharmacy.amazon.com or tap "Prime Rx Benefits" in the Amazon app. You can transfer prescriptions from any pharmacy to Amazon Pharmacy and have them mailed to your home for free in 2 days or less. For same-day needs, Amazon also shows GoodRx-style discount coupons for local pharmacies.',
       },
       {
         title: 'Read free books with Prime Reading',

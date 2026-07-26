@@ -718,7 +718,7 @@ These three areas — movement reminders, sleep tracking, and app history — tu
       },
       {
         title: `Improve sleep tracking accuracy`,
-        content: `Wear your Fitbit snugly (but not tightly) on your non-dominant wrist when you sleep. The band should sit about one finger-width above your wrist bone. Loose wear can cause your Fitbit to misread your sleep or heart rate. In the Fitbit app, go to your device settings and make sure "Heart Rate" is set to "Auto" or "On" — heart rate data a lot improves sleep stage detection.`,
+        content: `Wear your Fitbit snugly (but not tightly) on your non-dominant wrist when you sleep. The band should sit about one finger-width above your wrist bone. Loose wear can cause your Fitbit to misread your sleep or heart rate. In the Fitbit app, go to your device settings and make sure "Heart Rate" is set to "Auto" or "On" — heart rate data greatly improves sleep stage detection.`,
         warning: `If your wrist feels uncomfortable during sleep, try the smaller or larger band size. Fitbit replacement bands are inexpensive and available online.`
       },
       {

@@ -335,13 +335,13 @@ AARP Tax-Aide also offers a fully online option called "Tax-Aide Online" where y
     thumbnailEmoji: ``,
     publishedAt: `2026-04-20`,
     difficulty: `Intermediate`,
-    body: `A Roth IRA is a special type of retirement savings account that offers a major long-term benefit: the money you put in grows tax-free, and when you take it out in retirement, you pay no taxes on the growth. You contribute money you have already paid income tax on — so you do not get a tax break today — but all the future gains are yours to keep without owing the IRS anything when you withdraw.
+    body: `A Roth IRA is a special type of retirement savings account with a major long-term benefit: the money you put in grows tax-free, and when you take it out in retirement, you pay no taxes on the growth. You contribute money you've already paid income tax on, so you don't get a tax break today. But every future gain is yours to keep — you won't owe the IRS anything when you withdraw it.
 
-This is the opposite of a traditional IRA or a 401(k), where you get a tax deduction now but pay income taxes when you withdraw the money in retirement. The Roth approach is especially valuable if you expect to be in a higher tax bracket later in life, or if tax rates in general increase over time — which many financial professionals consider likely.
+That's the opposite of a traditional IRA or a 401(k), where you get a tax deduction now but pay income taxes when you withdraw the money in retirement. The Roth approach is especially valuable if you expect to be in a higher tax bracket later in life, or if tax rates in general go up over time — which many financial professionals consider likely.
 
-To contribute to a Roth IRA in 2026, you need to have earned income — money from a job, self-employment, or certain other sources. There are also income limits: single filers with income above about $161,000 and married couples filing jointly with income above about $240,000 phase out of Roth IRA eligibility entirely. If your income is below those thresholds, you can contribute up to $7,000 per year ($8,000 if you are 50 or older) in 2026.
+To contribute to a Roth IRA in 2026, you need earned income — money from a job, self-employment, or certain other sources. There are also income limits. Single filers earning above about $161,000, and married couples filing jointly above about $240,000, phase out of Roth IRA eligibility entirely. Below those thresholds, you can contribute up to $7,000 per year in 2026 ($8,000 if you're 50 or older).
 
-You can open a Roth IRA at most brokerages — including Fidelity, Schwab, and Vanguard — with no minimum balance required at many of them. After you open the account, you deposit money and then choose how to invest it. Common choices for long-term retirement savings include low-cost index funds that spread your money across hundreds of different stocks automatically.
+You can open a Roth IRA at most brokerages, including Fidelity, Schwab, and Vanguard, and many require no minimum balance. Once your account is open, you deposit money, then choose how to invest it. A common choice for long-term retirement savings is a low-cost index fund, which spreads your money across hundreds of different stocks automatically.
 
 One more benefit worth knowing: with a Roth IRA, you can withdraw your original contributions (not the earnings) at any time without taxes or penalties, making it somewhat more flexible than other retirement accounts if an unexpected need arises.`,
     steps: [

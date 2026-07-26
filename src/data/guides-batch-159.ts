@@ -256,7 +256,7 @@ If you describe symptoms that need in-person evaluation, your telehealth provide
 
 **Medicare covers most telehealth visits**
 
-Since 2020, Medicare has a lot expanded telehealth coverage. As of 2026, Medicare covers telehealth visits for:
+Since 2020, Medicare has greatly expanded telehealth coverage. As of 2026, Medicare covers telehealth visits for:
 
 - Video visits with your primary care doctor or specialist when you are at home
 - Mental health services via video

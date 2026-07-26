@@ -276,7 +276,7 @@ Editing dictated text works the same as editing any text — tap where you want 
       {
         title: 'Correct Mistakes',
         content: 'Voice dictation is accurate but not perfect. After dictating, review the text. Tap on any word to position your cursor there. Delete and retype any mistakes, or tap a word to see alternatives the dictation engine considered.',
-        tip: 'Speak in quieter environments for best accuracy. Background noise a lot reduces dictation accuracy.',
+        tip: 'Speak in quieter environments for best accuracy. Background noise greatly reduces dictation accuracy.',
       },
     ],
   },

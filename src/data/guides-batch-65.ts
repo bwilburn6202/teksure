@@ -578,7 +578,7 @@ IRS Direct File is an even simpler option now available in many states. It is bu
     slug: `healthcare-gov-enrollment`,
     title: `How to Shop for Health Insurance on HealthCare.gov`,
     excerpt: `HealthCare.gov is where you shop for ACA marketplace health plans — subsidies can lower your monthly cost significantly.`,
-    body: `HealthCare.gov is the federal government's marketplace for buying health insurance under the Affordable Care Act (ACA). If you do not have health coverage through an employer, Medicare, or Medicaid, the marketplace is where you shop for individual and family health plans. Most people who enroll qualify for financial help that a lot lowers their monthly premium.
+    body: `HealthCare.gov is the federal government's marketplace for buying health insurance under the Affordable Care Act (ACA). If you do not have health coverage through an employer, Medicare, or Medicaid, the marketplace is where you shop for individual and family health plans. Most people who enroll qualify for financial help that greatly lowers their monthly premium.
 
 The main enrollment period runs from November 1 through January 15 each year. Outside of that window, you can only enroll if you qualify for a Special Enrollment Period — which opens when you experience a major life change such as losing job-based coverage, getting married, having a baby, or moving to a new area.
 

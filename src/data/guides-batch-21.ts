@@ -615,7 +615,7 @@ export const guidesBatch21: Guide[] = [
       },
       {
         title: 'Understand what the percentage means',
-        content: `100%: Battery is new or nearly new.\n80–99%: Normal range — you may notice slightly reduced battery life compared to when new, but performance is still good.\nBelow 80%: Apple considers this "a lot degraded" — battery life is noticeably reduced and replacement is worth considering.\nBelow 70%: You're likely experiencing noticeably short battery life and should consider replacement soon.`,
+        content: `100%: Battery is new or nearly new.\n80–99%: Normal range — you may notice slightly reduced battery life compared to when new, but performance is still good.\nBelow 80%: Apple considers this greatly degraded — battery life is noticeably reduced and replacement is worth considering.\nBelow 70%: You're likely experiencing noticeably short battery life and should consider replacement soon.`,
         tip: `Quick Tip: Apple guarantees iPhone batteries will hold at least 80% capacity for 500 full charge cycles — that's roughly 1.5–2 years of normal use.`,
       },
       {

@@ -65,7 +65,7 @@ The second most common cause is background apps. On both iPhone and Android, app
 
 A third cause is outdated software. Operating system updates often include performance improvements and bug fixes. If you've been postponing updates, an older version of iOS or Android may be running less efficiently than current versions.
 
-Other factors: a battery that's a lot degraded (phones automatically slow the processor to match reduced battery output), too many widgets and live wallpapers consuming resources, and apps that haven't been updated and run inefficiently on newer operating system versions.
+Other factors: a battery that's degraded a lot (phones automatically slow the processor to match reduced battery output), too many widgets and live wallpapers consuming resources, and apps that haven't been updated and run inefficiently on newer operating system versions.
 
 The good news: most phone slowdowns are caused by these fixable issues, not hardware failure. Working through these steps in order usually solves the problem. If none of these help and the phone is more than four years old, the hardware itself may be the limiting factor — which is a natural end-of-life signal rather than something broken.`,
     steps: [

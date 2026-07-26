@@ -499,7 +499,7 @@ You can also log exercise, which MyFitnessPal adds to your calorie allowance. If
 
 Setting a water intake goal helps many people stay hydrated throughout the day. MyFitnessPal has a simple water logging feature on the diary screen.
 
-The most important factor in accurate tracking is honesty and completeness. Logging everything — even the snacks, drinks, and cooking oils — gives you a true picture of your intake. Using a kitchen scale to weigh food, rather than estimating by volume, a lot improves accuracy.
+The most important factor in accurate tracking is honesty and completeness. Logging everything — even the snacks, drinks, and cooking oils — gives you a true picture of your intake. Using a kitchen scale to weigh food, rather than estimating by volume, greatly improves accuracy.
 
 Food tracking is a tool, not a rule. Many registered dietitians recommend using it for a few weeks to build awareness, rather than logging every meal forever. If you find tracking feels stressful or triggers unhealthy thoughts about food, stop and consult with a registered dietitian or your doctor.`,
     steps: [

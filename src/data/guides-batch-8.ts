@@ -458,9 +458,9 @@ Setup is similar to other smart appliances: download the brand's app (SmartThing
     thumbnailEmoji: '',
     publishedAt: '2026-04-17',
     difficulty: 'Beginner',
-    body: `Smart dishwashers connect to Wi-Fi so you can track the cycle from your phone, get alerts when you need more rinse aid or salt, and download extra wash programs like Baby Bottles or Pots & Pans.
+    body: `Smart dishwashers connect to Wi-Fi. From your phone, you can track the cycle, get alerts when you need more rinse aid or salt, and download extra wash programs like Baby Bottles or Pots & Pans.
 
-Most brands use the same app as their washers and fridges — SmartThings for Samsung, Home Connect for Bosch, SmartHQ for GE — so if you already have one set up, adding the dishwasher takes only a few minutes.`,
+Most brands use the same app as their washers and fridges — SmartThings for Samsung, Home Connect for Bosch, SmartHQ for GE. If you already have one of these apps set up, adding the dishwasher takes only a few minutes.`,
     steps: [
       { title: `Open your appliance brand's app`, content: 'If you already use SmartThings, LG ThinQ, Home Connect, or SmartHQ for another appliance, open that app. Otherwise, install the one that matches your dishwasher brand.' },
       { title: 'Tap the plus icon to add a device', content: 'Pick Dishwasher from the device list. The app will explain how to put your specific model into pairing mode — usually by holding the Start or Wi-Fi button.' },

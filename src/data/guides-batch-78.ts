@@ -229,7 +229,7 @@ These gestures work on all MacBook models, and most also work on Apple's externa
     difficulty: `Beginner`,
     body: `A trackball mouse is a pointing device where a ball is mounted on top or on the side of the mouse, and you move the cursor by rolling that ball with your thumb or fingers rather than moving the entire mouse across a desk. The body of the mouse stays completely still while you work, which means your wrist and arm do not need to make large sweeping movements.
 
-This design makes trackball mice an excellent choice for people who experience wrist pain, have arthritis, or have limited mobility in their hands or arms. Because you are only moving your thumb or fingertips — not your whole arm — the strain on joints is a lot reduced. Physical therapists and occupational therapists often recommend trackballs to people who experience pain from regular mouse use.
+This design makes trackball mice an excellent choice for people who experience wrist pain, have arthritis, or have limited mobility in their hands or arms. Because you are only moving your thumb or fingertips — not your whole arm — there's a lot less strain on your joints. Physical therapists and occupational therapists often recommend trackballs to people who experience pain from regular mouse use.
 
 Trackballs also require much less desk space than a regular mouse. Since the device itself does not move, you do not need a large mousepad or clear area — you can set it down on a small corner of your desk and it will work perfectly.
 

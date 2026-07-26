@@ -255,7 +255,7 @@ You will need a Microsoft account to use Clipchamp. If you are signed into Windo
     thumbnailEmoji: ``,
     publishedAt: `2026-04-20`,
     difficulty: `Beginner`,
-    body: `The Snipping Tool is a free program built into Windows that lets you capture screenshots — pictures of what is on your screen — and record video of your screen. It has been part of Windows for many years, but Microsoft a lot upgraded it in Windows 11 with a new design, a delay timer, an annotation pen, and a screen recording feature.
+    body: `The Snipping Tool is a free program built into Windows that lets you capture screenshots — pictures of what is on your screen — and record video of your screen. It has been part of Windows for many years, but Microsoft greatly upgraded it in Windows 11 with a new design, a delay timer, an annotation pen, and a screen recording feature.
 
 Screenshots are useful in many everyday situations: saving a photo of a confirmation number, capturing an error message to show a tech support person, documenting steps in a process, saving a recipe from a website, or capturing a conversation you want to keep. Instead of trying to describe what you see on screen to someone, you can send them a picture of it.
 
@@ -726,7 +726,7 @@ T-Mobile offers a 15-day in-home trial, so you can set up the service, test the 
       {
         title: `Unbox the gateway and find a good placement spot`,
         content: `The T-Mobile gateway is a cylindrical white device about 8 inches tall. Unbox it and before plugging it in, download the T-Mobile Internet app (free on iPhone and Android). Open the app and go to the signal finder tool — it uses your gateway's location to show you which spots in your home have the strongest signal from the nearest T-Mobile tower. Generally, placing the gateway near an exterior wall or window facing the direction of the nearest tower gives the best results.`,
-        warning: `Placing the gateway in the center of your home, in a basement, or behind large metal objects a lot reduces the cellular signal strength and can result in much slower speeds. Signal placement is the most important factor in your experience with T-Mobile Home Internet.`,
+        warning: `Placing the gateway in the center of your home, in a basement, or behind large metal objects greatly reduces the cellular signal strength and can result in much slower speeds. Signal placement is the most important factor in your experience with T-Mobile Home Internet.`,
       },
       {
         title: `Plug in and activate the gateway`,
@@ -886,7 +886,7 @@ Windows runs on computers made by many different manufacturers: Dell, HP, Lenovo
 
 Macs are made exclusively by Apple. The most affordable Mac laptop is the MacBook Air (starting at around $999), and the most affordable Mac desktop is the Mac mini (starting at around $599 plus the cost of a monitor and keyboard). This means Macs have a higher entry price, though Apple Silicon (the M-series chips Apple uses since 2020) has made MacBooks exceptionally fast and battery-efficient, which partly justifies the premium.
 
-Security is a topic that comes up in every Windows vs Mac discussion. Macs have historically faced fewer malware attacks than Windows PCs, largely because Windows has a much larger share of the market — making it a more attractive target for malicious software authors. However, Macs are not immune to malware, and Windows 11 has a lot improved security compared to older versions. Neither platform should be used without some basic security awareness, including a strong password, keeping the operating system updated, and being careful about what you download.
+Security is a topic that comes up in every Windows vs Mac discussion. Macs have historically faced fewer malware attacks than Windows PCs, largely because Windows has a much larger share of the market — making it a more attractive target for malicious software authors. However, Macs are not immune to malware, and Windows 11 has greatly improved security compared to older versions. Neither platform should be used without some basic security awareness, including a strong password, keeping the operating system updated, and being careful about what you download.
 
 Switching from one platform to the other is easier than it used to be. Most of the software people use daily — web browsers, email, Microsoft Office, Google Docs, Zoom, streaming services — runs on both platforms. The main friction points are file compatibility and muscle memory (keyboard shortcuts are different, and the interface conventions differ in ways that can feel disorienting at first).`,
     steps: [

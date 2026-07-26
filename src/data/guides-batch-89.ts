@@ -628,7 +628,7 @@ You can pay at Electrify America stations in two ways: through the app linked to
       },
       {
         title: `Monitor Your Session and Understand Pricing`,
-        content: `During charging, the app shows your current charging speed in kilowatts, how long you have been charging, and how much the session is costing so far. Electrify America charges by the minute, and the per-minute rate varies by charger power level. A membership plan (around $4 per month) a lot lowers the per-minute rate and is worth it if you charge at Electrify America more than once a month.`,
+        content: `During charging, the app shows your current charging speed in kilowatts, how long you have been charging, and how much the session is costing so far. Electrify America charges by the minute, and the per-minute rate varies by charger power level. A membership plan (around $4 per month) lowers the per-minute rate a lot and is worth it if you charge at Electrify America more than once a month.`,
       },
       {
         title: `End the Session and Unplug`,

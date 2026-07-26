@@ -251,7 +251,7 @@ Yummly Premium (a paid subscription) adds video walkthroughs for recipes, which 
     steps: [
       {
         title: `Download Yummly and set up your taste profile`,
-        content: `Download Yummly from the App Store (iPhone) or Google Play (Android). Create a free account and complete the taste profile setup. Choose your preferred cuisines, flag ingredients you dislike, and select any dietary restrictions. This takes about two minutes and a lot improves the recipe suggestions you see.`,
+        content: `Download Yummly from the App Store (iPhone) or Google Play (Android). Create a free account and complete the taste profile setup. Choose your preferred cuisines, flag ingredients you dislike, and select any dietary restrictions. This takes about two minutes and greatly improves the recipe suggestions you see.`,
       },
       {
         title: `Browse recipes and save favorites`,

@@ -484,7 +484,7 @@ export const guidesBatch15: Guide[] = [
     thumbnailEmoji: '',
     publishedAt: '2026-04-19',
     difficulty: 'Beginner',
-    body: "Checking your retirement account balance and activity online is secure, free, and gives you current information without waiting for a paper statement. Whether you have a 401(k), an IRA, a pension, or Social Security, each has an online account or portal where you can check balances, review transactions, and make changes.",
+    body: "Checking your retirement account balance and activity online is secure and free, and it gives you current information without waiting on a paper statement. Whether you have a 401(k), an IRA, a pension, or Social Security, each one has an online account or portal where you can check balances, review transactions, and make changes.",
     steps: [
       {
         title: 'Find where your retirement account is held',
@@ -497,11 +497,11 @@ export const guidesBatch15: Guide[] = [
       },
       {
         title: 'Understand your account dashboard',
-        content: `After logging in, you'll see a dashboard with your account balance (current value of all your investments), recent activity (contributions, withdrawals, investment changes), and your investment holdings (a list of the funds you're invested in with their current values). The "Performance" or "Returns" section shows how much your account has grown over time.`,
+        content: `After logging in, you'll see a dashboard. It shows your account balance (the current value of all your investments), recent activity (contributions, withdrawals, investment changes), and your investment holdings — a list of the funds you're invested in, with their current values. The "Performance" or "Returns" section shows how much your account has grown over time.`,
       },
       {
         title: 'Set up alerts and paperless statements',
-        content: `Look for "Alerts" or "Notifications" in your account settings. Set up an email alert for: large account balance changes (unusual activity), successful or failed login attempts, and statement availability. Switching to paperless statements means you'll receive statements by email — log in to view them any time. This is also more secure than paper statements that could be taken from a mailbox.`,
+        content: `Look for "Alerts" or "Notifications" in your account settings. Set up an email alert for large account balance changes, successful or failed login attempts, and new statements. Switching to paperless statements means you'll get an email instead, and can log in to view them anytime. It's also more secure than paper statements, which could be taken from a mailbox.`,
         tip: 'Never share your retirement account login credentials with anyone over the phone or email, even if they claim to be from the financial firm. Real financial firms will never ask for your password.',
       },
     ],

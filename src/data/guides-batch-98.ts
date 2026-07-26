@@ -935,7 +935,7 @@ For seniors, the plant identification and translation features are often the mos
     difficulty: `Beginner`,
     body: `Widgets are small boxes on your iPhone's Home Screen that show live information from your apps without you having to open anything. A weather widget shows today's forecast at a glance. A calendar widget shows your next appointment. A battery widget shows how much charge your iPhone and AirPods have. A Photos widget cycles through your favorite pictures.
 
-Widgets were a lot improved in iOS 14 and have gotten even better in iOS 16 and 17 — you can now place them freely on your Home Screen alongside apps, not just in a sidebar. In iOS 17, there are also Interactive Widgets that you can tap to perform actions directly (like checking off a reminder or playing/pausing music) without opening the app.
+Widgets were greatly improved in iOS 14 and have gotten even better in iOS 16 and 17 — you can now place them freely on your Home Screen alongside apps, not just in a sidebar. In iOS 17, there are also Interactive Widgets that you can tap to perform actions directly (like checking off a reminder or playing/pausing music) without opening the app.
 
 Adding widgets is done in a visual editing mode that Apple calls "jiggle mode" — when you hold down on the Home Screen, all the icons start shaking (jiggling). In this mode you can add, move, and delete widgets.
 

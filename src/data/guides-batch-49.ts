@@ -679,7 +679,7 @@ Some apps accumulate hundreds of megabytes of cache over months of use. Facebook
       {
         title: `Reopen the app and test`,
         content: `Press the back button or the home button to leave Settings. Find the app and open it normally. It may take a moment to load the first time since it needs to rebuild its cache. Check whether the slow behavior, crashes, or login issue has been resolved.`,
-        tip: `Clearing the cache of your web browser (Chrome, Samsung Internet, Firefox) can a lot speed up web browsing and fix pages that won't load properly.`,
+        tip: `Clearing the cache of your web browser (Chrome, Samsung Internet, Firefox) can greatly speed up web browsing and fix pages that won't load properly.`,
       },
     ],
   },

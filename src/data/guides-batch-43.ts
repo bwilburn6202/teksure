@@ -907,9 +907,9 @@ Filing a report takes about 5 minutes. No immediate personal action results from
     thumbnailEmoji: ``,
     publishedAt: `2026-04-19`,
     difficulty: `Beginner`,
-    body: `The Weather app on iPhone was a lot upgraded with iOS 17 and later, making it one of the most detailed and visually rich weather apps available — and it is completely free and built in.
+    body: `The Weather app on iPhone got a big upgrade with iOS 17 and later. It's now one of the most detailed and visually rich weather apps around — and it's completely free and already on your phone.
 
-Most people only see the main temperature on the app. But scrolling down reveals much more useful information: hourly forecasts for the next 24 hours, 10-day outlook, air quality index (important for people with respiratory conditions), UV index, wind speed and direction, precipitation probability and intensity, sunrise and sunset times, and moon phases.
+Most people only see the main temperature. But scrolling down reveals a lot more: hourly forecasts for the next 24 hours, a 10-day outlook, the air quality index (important if you have a respiratory condition), UV index, wind speed and direction, chance and intensity of precipitation, sunrise and sunset times, and moon phases.
 
 **Weather alerts**: The app shows government-issued severe weather alerts (tornado warnings, flash flood watches, winter storm warnings, etc.) for your location. You get notifications directly on your phone when alerts are issued.
 

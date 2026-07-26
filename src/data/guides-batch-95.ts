@@ -214,17 +214,17 @@ This is not a problem with your Google account, and nothing is wrong with your G
     difficulty: 'Beginner',
     body: `Getting locked out of an email account is one of the most common tech problems people face — especially after a phone upgrade or a forgotten password. It's frightening because so many other services depend on your email. Bank notifications, medical apps, shopping accounts, and social media all use your email address to prove it's really you.
 
-The good news is that Google, Microsoft, and Apple all have account recovery processes specifically designed to get you back in even if you have forgotten your password and cannot access the two-factor verification method they normally send a code to.
+The good news: Google, Microsoft, and Apple all have account recovery processes built for exactly this. They can get you back in even if you've forgotten your password and can't access the two-factor code they normally send.
 
-The process works by verifying your identity through other means — backup email addresses, phone numbers, trusted devices, or security questions you set up when you first created the account. The more of these backup verification methods you have, the easier recovery will be.
+The process works by verifying your identity through other means — a backup email address, a phone number, a trusted device, or security questions you set up when you first created the account. The more of these you have set up, the easier recovery will be.
 
-If you cannot get back in through the standard recovery process, all three companies offer a manual identity verification option — often called an account recovery form — where a support team reviews your case and may restore access after verifying your identity in other ways. This process can take a few days.
+If the standard recovery process doesn't work, all three companies offer a manual identity verification option, often called an account recovery form. A support team reviews your case and may restore access after verifying your identity another way. This can take a few days.
 
-After you recover your account, the single most important thing you can do is add backup recovery methods so you are not in this situation again: a backup email address, a verified phone number, and saved recovery codes.`,
+Once you're back in, the most important thing you can do is add backup recovery methods so this doesn't happen again: a backup email address, a verified phone number, and saved recovery codes.`,
     steps: [
       {
         title: 'Recover a Google (Gmail) account',
-        content: 'On any device, go to accounts.google.com/signin/recovery. Enter the email address you are trying to recover. Google will ask you to verify your identity using methods you set up when you created your account — a backup email address, a phone number that can receive a text message, or a phone that is already signed in to your Google account. Follow the prompts for whichever method is available to you.',
+        content: 'On any device, go to accounts.google.com/signin/recovery. Enter the email address you are trying to recover. Google will ask you to verify your identity using methods you set up when you created your account — a backup email address, a phone number that can receive a text message, or a phone that is already signed in to your Google account. Follow the prompts for whichever method is available.',
         tip: 'Quick Tip: If none of the standard options work, Google offers an account recovery form at accounts.google.com/signin/v2/recoveryidentifier. You will be asked to confirm details about your account — the more accurately you can answer, the better your chances. Google\'s help page for account recovery is at support.google.com/accounts/answer/7682439.',
       },
       {
@@ -234,7 +234,7 @@ After you recover your account, the single most important thing you can do is ad
       },
       {
         title: 'Recover an Apple ID account',
-        content: 'Go to iforgot.apple.com. Enter your Apple ID (your email address) and click Continue. Apple will try to verify you using a trusted phone number or a trusted device that is already signed in to your Apple ID. If you have a trusted iPhone or iPad nearby, Apple can send a reset notification directly to that device. If you have none of these, Apple offers an account recovery process that may take several days and requires you to confirm personal information.',
+        content: 'Go to iforgot.apple.com. Enter your Apple ID (your email address) and click Continue. Apple will try to verify you using a trusted phone number or a trusted device that is already signed in to your Apple ID. If you have a trusted iPhone or iPad nearby, Apple can send a reset notification straight to that device. If you have none of these, Apple offers an account recovery process. It may take several days and will ask you to confirm personal information.',
       },
       {
         title: 'Use a trusted device you are already signed in to',

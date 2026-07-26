@@ -448,16 +448,16 @@ Parents can use Screen Time to manage a child's phone remotely through Family Sh
       },
       {
         title: 'Use Alexa+ for natural, multi-turn conversations',
-        content: `Unlike the original Alexa — which required short, specific commands — Alexa+ understands conversation. You can say "Alexa, I want to plan a birthday dinner for my husband next Saturday. He loves Italian food and we have a $100 budget." Alexa+ will ask follow-up questions, suggest options, and help you find a restaurant. You do not have to start over if you want to change something — you can say "Actually, make it Friday instead" and it understands the context.`,
+        content: `The original Alexa needed short, specific commands. Alexa+ understands conversation. You can say "Alexa, I want to plan a birthday dinner for my husband next Saturday. He loves Italian food and we have a $100 budget." Alexa+ will ask follow-up questions, suggest options, and help you find a restaurant. You don't have to start over if you want to change something. Say "Actually, make it Friday instead," and it understands what you mean.`,
       },
       {
         title: 'Ask Alexa+ to do things on your behalf',
-        content: `Alexa+ can take actions through connected services. Examples: "Alexa, order me a medium cheese pizza from the nearest Dominos." — "Alexa, call me an Uber to the airport in 20 minutes." — "Alexa, find me tickets to a show this weekend under $50." — "Alexa, buy more coffee on Amazon." These work when you have connected your accounts (Uber, DoorDash, etc.) in the Alexa app under Settings → Connected Services. Alexa will always confirm before completing a purchase.`,
+        content: `Alexa+ can take actions through connected services. A few examples: "Alexa, order me a medium cheese pizza from the nearest Dominos." "Alexa, call me an Uber to the airport in 20 minutes." "Alexa, find me tickets to a show this weekend under $50." "Alexa, buy more coffee on Amazon." These work once you connect your accounts (Uber, DoorDash, and so on) in the Alexa app under Settings → Connected Services. Alexa will always confirm with you before completing a purchase.`,
         tip: `Review the Alexa Privacy settings in the app to control how much of your conversation history Alexa stores. Go to the Alexa app → Settings → Alexa Privacy → Review Voice History to see and delete past recordings.`,
       },
       {
         title: 'Use Alexa+ for health and daily living help',
-        content: `Alexa+ can help with health questions more conversationally: "Alexa, what are the symptoms of low blood pressure?" or "Alexa, my doctor mentioned I should watch my sodium intake — what foods are high in sodium?" The AI draws on reliable health sources. For medication reminders, smart home routines, and calendar management, Alexa+ works the same as before but can set these up from a single conversation rather than requiring separate commands for each step.`,
+        content: `Alexa+ can also handle health questions conversationally: "Alexa, what are the symptoms of low blood pressure?" or "Alexa, my doctor mentioned I should watch my sodium intake — what foods are high in sodium?" The AI draws on reliable health sources. For medication reminders, smart home routines, and calendar management, Alexa+ works the same as before, but you can set these up in one conversation instead of giving a separate command for each step.`,
       },
     ],
   },

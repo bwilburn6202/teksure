@@ -75,7 +75,7 @@ Depop works on iPhone, Android, and the web at depop.com.`,
       {
         title: 'Buy an item safely',
         content: `Tap "Buy" on any item you want. Pay using a credit card or PayPal. All transactions are processed through Depop's secure payment system — never pay sellers outside the app via Venmo or bank transfer, as you lose buyer protection.`,
-        warning: `Depop Buyer Protection covers you if an item doesn't arrive or a lot differs from the listing. This protection only applies to purchases made through the app — not to any side deals.`,
+        warning: `Depop Buyer Protection covers you if an item doesn't arrive or differs a lot from the listing. This protection only applies to purchases made through the app — not to any side deals.`,
       },
       {
         title: 'Sell an item',
