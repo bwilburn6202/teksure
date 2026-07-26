@@ -9,7 +9,7 @@ import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from '@
 import { Badge } from '@/components/ui/badge';
 import {
   Shield, AlertTriangle, Users, Clock, CheckCircle, Wrench, AlertCircle,
-  RefreshCw, Phone, Mail, Monitor, ChevronDown, ChevronUp, Search,
+  RefreshCw, Phone, Mail, Monitor, ChevronDown, ChevronUp, Search, MapPin,
 } from 'lucide-react';
 import { toast } from 'sonner';
 import { supabase } from '@/integrations/supabase/client';
@@ -70,6 +70,11 @@ interface Booking {
   problem_description: string | null;
   status: string;
   created_at: string;
+  service_location: string | null;
+  street_address: string | null;
+  city: string | null;
+  state: string | null;
+  postal_code: string | null;
 }
 
 const BOOKING_STATUS_OPTIONS = ['pending', 'confirmed', 'completed', 'cancelled'] as const;
@@ -211,6 +216,28 @@ function BookingsTab() {
                             {b.email && <div className="flex items-center gap-2 text-muted-foreground"><Mail className="h-4 w-4" /><a href={`mailto:${b.email}`} className="hover:underline text-foreground">{b.email}</a></div>}
                             {b.phone && <div className="flex items-center gap-2 text-muted-foreground"><Phone className="h-4 w-4" /><a href={`tel:${b.phone}`} className="hover:underline text-foreground">{b.phone}</a></div>}
                             {b.device_type && <div className="flex items-center gap-2 text-muted-foreground"><Monitor className="h-4 w-4" /><span>{b.device_type}</span></div>}
+                            {/* Where the job happens. Bookings taken before this
+                                field existed have no value — say so plainly
+                                rather than implying it's a remote session. */}
+                            <div className="flex items-start gap-2 text-muted-foreground">
+                              <MapPin className="h-4 w-4 mt-0.5 shrink-0" />
+                              {b.service_location === 'onsite' ? (
+                                <a
+                                  href={`https://maps.google.com/?q=${encodeURIComponent(
+                                    [b.street_address, b.city, b.state, b.postal_code].filter(Boolean).join(', ')
+                                  )}`}
+                                  target="_blank"
+                                  rel="noopener noreferrer"
+                                  className="hover:underline text-foreground"
+                                >
+                                  {[b.street_address, b.city, b.state, b.postal_code].filter(Boolean).join(', ') || 'On-site (no address given)'}
+                                </a>
+                              ) : b.service_location === 'remote' ? (
+                                <span>Remote session</span>
+                              ) : (
+                                <span className="italic">Location not specified (booked before this was collected)</span>
+                              )}
+                            </div>
                             <p className="text-xs text-muted-foreground pt-1">Booked {timeAgo(b.created_at)} · Ref: {b.id.slice(0, 8).toUpperCase()}</p>
                           </div>
                           {b.problem_description && (

@@ -3,7 +3,7 @@ import { Link, useNavigate, useSearchParams } from 'react-router-dom';
 import {
   Phone, Mail, User, Monitor, MessageSquare, CheckCircle, ArrowRight, Loader2,
   Calendar, Clock, Wrench, CheckCircle2, Wifi, Shield, Printer, Smartphone,
-  HelpCircle, CreditCard, Lock, Zap, CalendarClock,
+  HelpCircle, CreditCard, Lock, Zap, CalendarClock, MapPin,
 } from 'lucide-react';
 import { generateBookingSlots } from '@/lib/bookingSlots';
 import { checkRateLimit } from '@/lib/rateLimit';
@@ -24,6 +24,7 @@ import {
   ADDITIONAL_HOUR_PRICE,
   DEPOSIT_AMOUNT,
   FREE_CANCELLATION_HOURS,
+  INCLUDED_TRAVEL_MILES,
   formatPrice,
   remainderAfterDeposit,
 } from '@/data/pricing';
@@ -98,6 +99,14 @@ const GetHelp = () => {
   const [scheduleSlot, setScheduleSlot] = useState<string | null>(null);
   const [paymentOption, setPaymentOption] = useState<'day' | 'deposit'>('day');
   const [bookingRef, setBookingRef] = useState('');
+
+  // Where the session happens. Until this existed, someone could book and pay a
+  // deposit for a home visit and we had no idea where to send a technician.
+  const [serviceLocation, setServiceLocation] = useState<'remote' | 'onsite'>('remote');
+  const [streetAddress, setStreetAddress] = useState('');
+  const [city, setCity] = useState('');
+  const [stateRegion, setStateRegion] = useState('');
+  const [postalCode, setPostalCode] = useState('');
 
   const availableDates = getAvailableDates();
   const selectedService = services.find((s) => s.id === serviceType);
@@ -181,6 +190,12 @@ const GetHelp = () => {
       problem_description: description.trim() || null,
       status: 'pending',
       payment_status: payStatus,
+      service_location: serviceLocation,
+      // Only meaningful for onsite visits — a remote session has no address.
+      street_address: serviceLocation === 'onsite' ? streetAddress.trim() || null : null,
+      city: serviceLocation === 'onsite' ? city.trim() || null : null,
+      state: serviceLocation === 'onsite' ? stateRegion.trim() || null : null,
+      postal_code: serviceLocation === 'onsite' ? postalCode.trim() || null : null,
     });
     if (dbError) throw dbError;
     return id;
@@ -190,6 +205,10 @@ const GetHelp = () => {
     setError('');
     if (!name.trim()) { setError('Please enter your name.'); return; }
     if (!email.trim() && !phone.trim()) { setError('Please enter an email or phone so we can reach you.'); return; }
+    if (serviceLocation === 'onsite' && (!streetAddress.trim() || !city.trim() || !postalCode.trim())) {
+      setError('Please add the address for your home visit so we know where to send a technician.');
+      return;
+    }
 
     setSubmitting(true);
     try {
@@ -226,6 +245,10 @@ const GetHelp = () => {
     setError('');
     if (!name.trim()) { setError('Please enter your name.'); return; }
     if (!email.trim() && !phone.trim()) { setError('Please enter an email or phone so we can reach you.'); return; }
+    if (serviceLocation === 'onsite' && (!streetAddress.trim() || !city.trim() || !postalCode.trim())) {
+      setError('Please add the address for your home visit so we know where to send a technician.');
+      return;
+    }
 
     setSubmitting(true);
     try {
@@ -610,6 +633,69 @@ const GetHelp = () => {
                     </div>
                   </div>
 
+                  {/* Where the session happens */}
+                  <div className="mb-6">
+                    <p className="text-sm font-medium mb-3">Where would you like help?</p>
+                    <div role="radiogroup" aria-label="Session location" className="space-y-3">
+                      <button
+                        role="radio"
+                        aria-checked={serviceLocation === 'remote'}
+                        onClick={() => setServiceLocation('remote')}
+                        className={`w-full flex items-start gap-3 p-4 rounded-xl border transition-colors text-left ${serviceLocation === 'remote' ? 'border-primary bg-primary/5' : 'border-border hover:border-primary/30'}`}
+                      >
+                        <div className={`w-5 h-5 rounded-full border-2 flex items-center justify-center mt-0.5 shrink-0 ${serviceLocation === 'remote' ? 'border-primary' : 'border-border'}`} aria-hidden="true">
+                          {serviceLocation === 'remote' && <div className="w-2.5 h-2.5 rounded-full bg-primary" />}
+                        </div>
+                        <div>
+                          <p className="font-semibold text-sm">Remotely, over the phone</p>
+                          <p className="text-xs text-muted-foreground mt-1">We call you and, if it helps, walk through your screen together. Works for most problems.</p>
+                        </div>
+                      </button>
+
+                      <button
+                        role="radio"
+                        aria-checked={serviceLocation === 'onsite'}
+                        onClick={() => setServiceLocation('onsite')}
+                        className={`w-full flex items-start gap-3 p-4 rounded-xl border transition-colors text-left ${serviceLocation === 'onsite' ? 'border-primary bg-primary/5' : 'border-border hover:border-primary/30'}`}
+                      >
+                        <div className={`w-5 h-5 rounded-full border-2 flex items-center justify-center mt-0.5 shrink-0 ${serviceLocation === 'onsite' ? 'border-primary' : 'border-border'}`} aria-hidden="true">
+                          {serviceLocation === 'onsite' && <div className="w-2.5 h-2.5 rounded-full bg-primary" />}
+                        </div>
+                        <div>
+                          <p className="font-semibold text-sm">At my home</p>
+                          <p className="text-xs text-muted-foreground mt-1">A technician comes to you. Same price. Travel within {INCLUDED_TRAVEL_MILES} miles is included.</p>
+                        </div>
+                      </button>
+                    </div>
+
+                    {serviceLocation === 'onsite' && (
+                      <div className="mt-4 space-y-3 rounded-xl border border-border bg-muted/30 p-4">
+                        <p className="text-xs text-muted-foreground">
+                          We need your address to send a technician. We'll confirm you're inside our service
+                          area before charging anything — if you're not, we'll tell you and cancel at no cost.
+                        </p>
+                        <div className="space-y-2">
+                          <Label htmlFor="street" className="text-sm font-medium">Street address</Label>
+                          <Input id="street" autoComplete="street-address" placeholder="123 Main St, Apt 4" value={streetAddress} onChange={(e) => setStreetAddress(e.target.value)} className="h-11 text-base rounded-xl border-border" />
+                        </div>
+                        <div className="grid grid-cols-2 gap-3">
+                          <div className="space-y-2">
+                            <Label htmlFor="city" className="text-sm font-medium">City</Label>
+                            <Input id="city" autoComplete="address-level2" value={city} onChange={(e) => setCity(e.target.value)} className="h-11 text-base rounded-xl border-border" />
+                          </div>
+                          <div className="space-y-2">
+                            <Label htmlFor="state" className="text-sm font-medium">State</Label>
+                            <Input id="state" autoComplete="address-level1" placeholder="TX" value={stateRegion} onChange={(e) => setStateRegion(e.target.value)} className="h-11 text-base rounded-xl border-border" />
+                          </div>
+                        </div>
+                        <div className="space-y-2">
+                          <Label htmlFor="zip" className="text-sm font-medium">ZIP code</Label>
+                          <Input id="zip" autoComplete="postal-code" inputMode="numeric" placeholder="75001" value={postalCode} onChange={(e) => setPostalCode(e.target.value)} className="h-11 text-base rounded-xl border-border" />
+                        </div>
+                      </div>
+                    )}
+                  </div>
+
                   {/* Pricing + payment option */}
                   <Card className="rounded-xl border border-border bg-card mb-6">
                     <CardContent className="p-4">
@@ -676,6 +762,7 @@ const GetHelp = () => {
                       <p className="flex items-center gap-2"><Wrench className="h-4 w-4 text-muted-foreground" /> <strong>{selectedService?.label}</strong></p>
                       <p className="flex items-center gap-2"><Calendar className="h-4 w-4 text-muted-foreground" /> <strong>{selectedDate?.dayName}, {selectedDate?.label}</strong></p>
                       <p className="flex items-center gap-2"><Clock className="h-4 w-4 text-muted-foreground" /> <strong>{selectedSlot?.label}</strong></p>
+                      <p className="flex items-center gap-2"><MapPin className="h-4 w-4 text-muted-foreground" /> <strong>{serviceLocation === 'onsite' ? `At your home${city.trim() ? ` — ${city.trim()}` : ''}` : 'Remotely, over the phone'}</strong></p>
                       <p className="flex items-center gap-2"><CreditCard className="h-4 w-4 text-muted-foreground" /> <strong>{paymentOption === 'deposit' ? `${formatPrice(DEPOSIT_AMOUNT)} now, ${formatPrice(remainderAfterDeposit())} on the day` : `${formatPrice(FIRST_HOUR_PRICE)} on the day`}</strong></p>
                       <p className="text-xs text-muted-foreground pt-1">
                         Based on a 1-hour job. Longer jobs add {formatPrice(ADDITIONAL_HOUR_PRICE)} per extra hour. If we can't fix it, you pay nothing.{' '}

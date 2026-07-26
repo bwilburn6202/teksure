@@ -194,6 +194,7 @@ export type Database = {
       }
       bookings: {
         Row: {
+          city: string | null
           created_at: string
           deposit_paid_at: string | null
           device_type: string | null
@@ -203,17 +204,22 @@ export type Database = {
           notes: string | null
           payment_status: string
           phone: string | null
+          postal_code: string | null
           preferred_date: string
           preferred_slot: string
           problem_description: string | null
+          service_location: string | null
           service_type: string
+          state: string | null
           status: string
+          street_address: string | null
           stripe_session_id: string | null
           tech_id: string | null
           updated_at: string
           user_id: string | null
         }
         Insert: {
+          city?: string | null
           created_at?: string
           deposit_paid_at?: string | null
           device_type?: string | null
@@ -223,17 +229,22 @@ export type Database = {
           notes?: string | null
           payment_status?: string
           phone?: string | null
+          postal_code?: string | null
           preferred_date: string
           preferred_slot: string
           problem_description?: string | null
+          service_location?: string | null
           service_type: string
+          state?: string | null
           status?: string
+          street_address?: string | null
           stripe_session_id?: string | null
           tech_id?: string | null
           updated_at?: string
           user_id?: string | null
         }
         Update: {
+          city?: string | null
           created_at?: string
           deposit_paid_at?: string | null
           device_type?: string | null
@@ -243,11 +254,15 @@ export type Database = {
           notes?: string | null
           payment_status?: string
           phone?: string | null
+          postal_code?: string | null
           preferred_date?: string
           preferred_slot?: string
           problem_description?: string | null
+          service_location?: string | null
           service_type?: string
+          state?: string | null
           status?: string
+          street_address?: string | null
           stripe_session_id?: string | null
           tech_id?: string | null
           updated_at?: string
