@@ -6050,7 +6050,15 @@ For stronger privacy, do three things. Turn on Airplane Mode to disable all radi
     thumbnailEmoji: '📱',
     publishedAt: '2026-03-30',
     difficulty: 'Beginner',
-    body: `To prevent app downloads on an Android device for someone with dementia: open the Google Play Store, tap the profile icon > Settings > Authentication > Require authentication for purchases, and set it to "For all purchases." To go further, enable Family Link (even for adults) which gives a caregiver full control over app approvals. Alternatively, go to Settings > Digital Wellbeing > App Timers or use a third-party app lock. You can also disable the Play Store entirely via Settings > Apps > Google Play Store > Disable, though this is harder to reverse.`,
+    body: `There are a few ways to stop app downloads on an Android phone for someone with dementia. Each one goes a little further than the last.
+
+Start with the Play Store itself. Open it, tap the profile icon, then Settings → Authentication → Require authentication for purchases. Set it to "For all purchases."
+
+To go further, turn on Family Link. It works for adults too, and it gives you full control over which apps get approved.
+
+You can also set limits under Settings → Digital Wellbeing → App Timers, or use a third-party app lock.
+
+The strongest option is to turn the Play Store off completely: Settings → Apps → Google Play Store → Disable. Be aware this one is harder to undo.`,
     steps: [
       {
         title: 'Require authentication for all Play Store purchases',

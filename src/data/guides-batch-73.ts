@@ -417,7 +417,9 @@ You can watch ESPN+ on your smartphone, tablet, computer, Apple TV, Roku, Amazon
     thumbnailEmoji: ``,
     publishedAt: `2026-04-20`,
     difficulty: `Beginner`,
-    body: `Discovery+ is a streaming service that brings together content from many of the most popular cable networks — all in one place, available over the internet without a cable subscription. If you enjoy shows from HGTV, Food Network, TLC, Investigation Discovery (true crime), Animal Planet, Magnolia Network, or the Discovery Channel itself, Discovery+ is the service that has all of those in one app.
+    body: `Discovery+ is a streaming service that brings together many of the most popular cable networks in one place. It works over the internet, so you do not need a cable subscription.
+
+If you enjoy shows from HGTV, Food Network, TLC, or Investigation Discovery for true crime, they are all here. So are Animal Planet, Magnolia Network, and the Discovery Channel itself — one app for all of them.
 
 The library is enormous: thousands of episodes of home renovation shows, cooking competitions, true crime stories, nature documentaries, travel programs, and reality series. Popular shows available on Discovery+ include House Hunters, Fixer Upper, Diners Drive-Ins and Dives, 90 Day Fiancé, Deadliest Catch, Dateline, and many more. Many series have dozens of seasons available to binge-watch at your own pace.
 

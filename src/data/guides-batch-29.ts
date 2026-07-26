@@ -196,11 +196,11 @@ Setting this up takes less than five minutes and could make a life-saving differ
 
 Many people don't realize these recordings exist, or that you can listen to them, delete them, and change how long Amazon keeps them.
 
-In the Alexa app or at amazon.com/alexaprivacy, you can see a history of every voice interaction with your Echo devices, listen to the actual recordings, delete individual recordings or all of them, and change how Amazon handles your voice data.
+You can review all of this in the Alexa app or at amazon.com/alexaprivacy. There you can see a history of every voice interaction with your Echo devices and listen to the actual recordings. You can delete them one at a time or all at once, and change how Amazon handles your voice data.
 
-Privacy options include: not saving any recordings at all (Alexa processes them but doesn't store them), or keeping recordings but setting them to automatically delete after 3 months or 18 months instead of indefinitely.
+You have two main privacy options. You can tell Amazon not to save recordings at all — Alexa still understands you, it just doesn't keep the audio. Or you can keep them but have them delete automatically after 3 months or 18 months, instead of being kept indefinitely.
 
-Sometimes, Amazon Echo devices record accidentally when a word sounds like "Alexa" — a TV announcement, a conversation, or background noise. These accidental recordings show up in your history. Reviewing the history sometimes helps you understand what your Echo is picking up and delete anything that was recorded unintentionally.
+Echo devices sometimes record by accident, when something sounds like "Alexa." That might be a TV announcement, a conversation, or background noise. Those accidental recordings show up in your history too. Looking through it helps you see what your Echo has been picking up, and delete anything you did not mean to record.
 
 Some people choose to mute their Echo devices when they're having private conversations. The mute button (circle with line) on the top of Echo devices turns off the microphone and shows a red ring, meaning Alexa cannot hear anything until you press it again.`,
     steps: [

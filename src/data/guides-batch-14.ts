@@ -552,7 +552,7 @@ export const guidesBatch14: Guide[] = [
     thumbnailEmoji: '',
     publishedAt: '2026-04-19',
     difficulty: 'Beginner',
-    body: "The Health app is built into every iPhone and automatically tracks steps, sleep, and heart rate (if you have an Apple Watch). It also lets you store your Medical ID — critical information like blood type, medications, and emergency contacts — that first responders can access from your locked phone.",
+    body: "The Health app is built into every iPhone. It automatically tracks your steps and sleep, and your heart rate too if you have an Apple Watch.\n\nIt also stores your Medical ID. That holds critical details like your blood type, medications, and emergency contacts. First responders can see it even while your phone is locked.",
     steps: [
       {
         title: 'Open the Health app and explore what it tracks',
