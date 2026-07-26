@@ -21,6 +21,7 @@ import {
   Filter,
   MapPin,
   X,
+  Info,
 } from 'lucide-react';
 
 // ── Types ────────────────────────────────────────────────────────────────────
@@ -263,8 +264,8 @@ export default function Stories() {
   return (
     <div className="min-h-screen bg-gradient-to-b from-amber-50/70 via-orange-50/40 to-amber-50/30 dark:from-background dark:via-background dark:to-background">
       <SEOHead
-        title="Real Stories from Real People"
-        description="Read how everyday people — seniors, caregivers, newcomers, veterans — have used TekSure to solve real tech problems in their lives."
+        title="Stories You Might Recognize — TekSure"
+        description="Illustrative examples of everyday tech situations seniors, caregivers, newcomers and veterans run into, and how they get resolved. Names and details are fictional."
         path="/stories"
       />
 
@@ -278,12 +279,34 @@ export default function Stories() {
             From our community
           </div>
           <h1 className="text-4xl md:text-6xl font-bold tracking-tight text-foreground mb-5">
-            Real Stories from Real People
+            Stories You Might Recognize
           </h1>
           <p className="text-xl md:text-2xl text-foreground/75 leading-relaxed">
-            See how TekSure has helped folks just like you.
+            Everyday situations, and how technology fits into them.
           </p>
         </header>
+
+        {/*
+          These people are written, not interviewed. Saying so plainly is not
+          optional: presenting invented testimonials as genuine is deceptive
+          advertising, and the FTC's Rule on Consumer Reviews and Testimonials
+          prohibits it outright. The page previously ran under the headline
+          "Real Stories from Real People" with no disclosure at all.
+
+          When there are real customers willing to be quoted, replace these
+          with their words and their consent on file — and then the honest
+          version of that headline can come back.
+        */}
+        <div className="max-w-3xl mx-auto mb-10">
+          <div className="rounded-2xl border border-border bg-muted/40 p-5 flex gap-3 items-start">
+            <Info className="w-5 h-5 text-muted-foreground flex-shrink-0 mt-0.5" aria-hidden="true" />
+            <p className="text-sm text-muted-foreground leading-relaxed">
+              These stories are illustrative examples based on common situations, not
+              actual customer testimonials. The names and details are made up. We don't
+              publish real customers' stories without their explicit permission.
+            </p>
+          </div>
+        </div>
 
         {/* ── Filter tags ───────────────────────────────────────────────── */}
         <section

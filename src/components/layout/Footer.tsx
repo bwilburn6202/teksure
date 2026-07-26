@@ -57,7 +57,7 @@ export function Footer() {
         { to: '/family-sharing', label: 'Family Tech Planner' },
         { to: '/caregiver-hub', label: 'Caregiver Resources' },
         { to: '/accessibility', label: 'Accessibility Hub' },
-        { to: '/stories', label: 'Real Stories' },
+        { to: '/stories', label: 'Stories' },
       ],
     },
     {

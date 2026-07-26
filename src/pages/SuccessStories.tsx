@@ -230,7 +230,7 @@ export default function SuccessStories() {
   return (
     <div className="min-h-screen bg-white dark:bg-slate-950">
       <SEOHead
-        title="TekSure Success Stories — Real People, Real Wins | TekSure"
+        title="TekSure Success Stories — Representative Examples | TekSure"
         description="Representative examples of how everyday people use TekSure to solve tech problems, avoid scams, and feel more confident with technology."
         path="/success-stories"
       />
@@ -256,11 +256,11 @@ export default function SuccessStories() {
             Representative examples
           </Badge>
           <h1 className="text-4xl md:text-6xl font-bold tracking-tight text-slate-900 dark:text-white mb-6 leading-tight">
-            Real Stories from Real People
+            Wins That Start Small
           </h1>
           <p className="text-xl text-slate-600 dark:text-slate-300 leading-relaxed">
-            Twelve scenarios that reflect the kinds of wins people have with TekSure every week.
-            Meet some neighbors who turned things around.
+            Twelve everyday scenarios showing what getting unstuck actually looks like.
+            The people are written rather than interviewed — the problems are the real ones.
           </p>
         </section>
 
