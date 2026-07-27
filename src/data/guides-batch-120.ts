@@ -7,7 +7,7 @@ export const guidesBatch120: Guide[] = [
   {
     slug: 'managing-your-social-security-online',
     title: 'Managing Your Social Security Online (my Social Security account)',
-    excerpt: "A patient, plain-English walkthrough of the my Social Security account at ssa.gov — how to create your account with Login.gov or ID.me, check your earnings history for errors, estimate your retirement benefits, apply online, change direct deposit, get a benefit verification letter, replace your Social Security card, update your address, set up tax withholding with the W-4V, avoid scams, and know when you actually must call or visit in person. This is real money — take your time.",
+    excerpt: "Set up your my Social Security account at ssa.gov: check your earnings, estimate benefits, change direct deposit, and avoid the common scams.",
     category: 'financial-tech',
     tags: ['social-security', 'ssa', 'my-social-security', 'retirement', 'benefits', 'login-gov', 'id-me', 'direct-deposit', 'earnings-record', 'w-4v', 'tax-withholding', 'benefit-verification-letter', 'replacement-card', 'address-change', 'scams', 'seniors', 'government', 'beginner'],
     readTime: '12 min',

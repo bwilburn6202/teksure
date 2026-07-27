@@ -389,6 +389,52 @@ function checkDuplicateTitles() {
 }
 
 /**
+ * Guide excerpts longer than the documented limit.
+ *
+ * CLAUDE.md specifies "excerpt: Max 160 characters — used in cards and meta
+ * tags". That limit is not stylistic: the excerpt becomes the page's meta
+ * description, and Google truncates those around 155-160 characters. Anything
+ * longer gets cut mid-sentence in search results, which is where most people
+ * meet these pages for the first time.
+ *
+ * A July 2026 audit found 364 guides over the limit, the worst at 493
+ * characters — three times the spec, and reading like a content brief rather
+ * than a description. Nothing was checking, so they accumulated.
+ */
+function checkExcerptLength() {
+  const dataDir = path.join(ROOT, 'src', 'data');
+  if (!fs.existsSync(dataDir)) {
+    return { name: 'excerpt-length', label: 'Overlong guide excerpts', ok: true, severity: 'info', summary: 'no data dir', details: '' };
+  }
+  const LIMIT = 160;
+  const over = [];
+  for (const file of fs.readdirSync(dataDir)) {
+    if (!file.startsWith('guides') || !file.endsWith('.ts')) continue;
+    const text = fs.readFileSync(path.join(dataDir, file), 'utf8');
+    // Pair each slug with the excerpt that follows it in the same object.
+    const re = /slug:\s*(['"`])([^'"`]+)\1[\s\S]{0,400}?excerpt:\s*(['"`])((?:\\.|(?!\3)[\s\S])*)\3/g;
+    let m;
+    while ((m = re.exec(text)) !== null) {
+      const len = m[4].length;
+      if (len > LIMIT) over.push({ slug: m[2], len });
+    }
+  }
+  over.sort((a, b) => b.len - a.len);
+  return {
+    name: 'excerpt-length',
+    label: 'Overlong guide excerpts',
+    ok: over.length === 0,
+    severity: over.length === 0 ? 'info' : 'warn',
+    summary:
+      over.length === 0
+        ? `All guide excerpts are within ${LIMIT} characters.`
+        : `${over.length} excerpt(s) exceed ${LIMIT} chars and will be truncated mid-sentence in search results.`,
+    details: over.slice(0, 12).map((o) => `- ${o.len} chars: ${o.slug}`).join('\n'),
+    metrics: { count: over.length, worst: over[0]?.len ?? 0 },
+  };
+}
+
+/**
  * Prices quoted in a page instead of imported from src/data/pricing.ts.
  *
  * On 2026-07-26 the site had three different prices live for the same service:
@@ -615,6 +661,7 @@ const ALL_CHECKS = [
   { name: 'source-links', fn: checkSourceLinks },
   { name: 'pricing-consistency', fn: checkPricingConsistency },
   { name: 'testimonial-honesty', fn: checkTestimonialHonesty },
+  { name: 'excerpt-length', fn: checkExcerptLength },
 ];
 
 // ── State + backlog ──────────────────────────────────────────────────────

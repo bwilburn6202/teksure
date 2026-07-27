@@ -7,7 +7,7 @@ export const guidesBatch119: Guide[] = [
   {
     slug: 'helping-parents-grandparents-from-far-away-caregivers-tech-kit',
     title: "Helping Parents and Grandparents from Far Away: A Caregiver's Tech Kit",
-    excerpt: "If you live far from an aging parent, you have probably become their unpaid IT department. This is the complete toolkit for doing the job gently and effectively — remote viewing tools (FaceTime Screen Share, Google Meet), remote control software (TeamViewer, Quick Assist), setting up trusted helper access, safe monitoring apps, scam alerts, password managers, backup systems, how to spot cognitive changes, and how to keep yourself from burning out. Written with the emotional labor in mind.",
+    excerpt: "Helping an aging parent with tech from far away: screen sharing, remote access, safe monitoring, scam alerts, and how not to burn out doing it.",
     category: 'essential-skills',
     tags: ['caregiving', 'long-distance', 'aging-parents', 'grandparents', 'remote-help', 'teamviewer', 'quick-assist', 'facetime', 'family-sharing', 'life360', 'find-my', 'aura', 'scam-protection', 'password-manager', 'icloud', 'elder-care', 'caregiver-burnout', 'beginner'],
     readTime: '15 min',

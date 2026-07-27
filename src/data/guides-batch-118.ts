@@ -7,7 +7,7 @@ export const guidesBatch118: Guide[] = [
   {
     slug: 'using-your-phone-with-low-vision-complete-setup',
     title: 'Using Your Phone with Low Vision: A Complete Setup',
-    excerpt: "A practical, empowering setup guide for the 30+ million American adults living with vision loss. Zoom, largest readable text, bold text, high contrast, Smart Invert, VoiceOver and TalkBack, Speak Screen, the Magnifier app with yellow-on-black filters, dictation, Siri and Google Assistant, accessible apps like Be My Eyes and Seeing AI, hardware recommendations, specialized devices, and free training from the National Federation of the Blind and the Hadley Institute.",
+    excerpt: "Set up your phone for low vision: bigger text, high contrast, Magnifier, VoiceOver and TalkBack, plus free training and apps that genuinely help.",
     category: 'phone-guides',
     tags: ['low-vision', 'blind', 'vision-loss', 'accessibility', 'iphone', 'android', 'voiceover', 'talkback', 'magnifier', 'smart-invert', 'high-contrast', 'speak-screen', 'be-my-eyes', 'seeing-ai', 'hadley', 'nfb', 'blindshell', 'dictation', 'siri', 'google-assistant', 'beginner'],
     readTime: '12 min',
