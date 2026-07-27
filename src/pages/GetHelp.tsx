@@ -225,6 +225,9 @@ const GetHelp = () => {
             date: selectedDate?.label,
             slot: selectedSlot?.label,
             bookingId,
+            // Drives the "what this costs" block in the email. This branch is
+            // the pay-on-the-day path, so nothing has been charged yet.
+            paymentOption: 'day',
           },
         });
         if (emailError) console.error('send-booking-confirmation invoke error:', emailError);

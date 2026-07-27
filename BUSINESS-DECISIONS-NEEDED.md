@@ -93,6 +93,43 @@ it honestly.
 
 ---
 
+## 3c. BUG — customers who pay the deposit get no confirmation email
+
+Found July 26. The two booking paths behave differently, and the paying one is
+the broken one:
+
+| Path | Booking saved | Confirmation email |
+|---|---|---|
+| Pay on the day (free) | yes | **yes** |
+| $15 deposit via Stripe | yes | **no** |
+
+`GetHelp.tsx` invokes `send-booking-confirmation` directly on the pay-on-day
+path. The deposit path redirects to Stripe instead, and `stripe-webhook` only
+updates `payment_status` — it never sends anything. So the customer who actually
+handed over money is the one left with no written record of their appointment.
+
+For this audience that is worse than it sounds. Someone who just entered card
+details on an unfamiliar site and then receives nothing has every reason to
+assume it failed — and to call, or to dispute the charge.
+
+**I did not fix this.** `CLAUDE.md` says not to touch the Stripe edge functions
+without explicit instruction, and that is the right rule for live payments.
+
+**The fix, for when you want it:** in `supabase/functions/stripe-webhook/index.ts`,
+inside the `checkout.session.completed` branch after the booking row updates
+successfully, read the booking back (the webhook already has service-role
+access) and invoke `send-booking-confirmation` with `paymentOption: 'deposit'`.
+Wrap it in try/catch and log failures rather than returning non-200 — a failed
+email must never make Stripe retry a payment that already succeeded.
+
+The email side is already done and waiting: `send-booking-confirmation` now
+accepts `paymentOption` and renders "Paid today: $15 / Due on the day: $34"
+when it is `'deposit'`.
+
+Say the word and it is a ten-minute change.
+
+---
+
 ## 4. The "no fix, no charge" promise needs an operational rule
 
 The site promises customers pay nothing if you can't fix their problem. That's a

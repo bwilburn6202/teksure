@@ -16,7 +16,27 @@ interface BookingDetails {
   date?: string;
   slot?: string;
   bookingId?: string;
+  /** 'deposit' if a Stripe deposit was taken, otherwise pay-on-the-day. */
+  paymentOption?: 'day' | 'deposit';
 }
+
+/**
+ * Pricing shown in the confirmation email.
+ *
+ * Edge functions run on Deno and cannot import from src/, so these cannot come
+ * from src/data/pricing.ts the way every page does. They are duplicated here
+ * deliberately — and that duplication is a liability, because three
+ * contradictory prices being live at once is exactly the bug this project just
+ * finished fixing.
+ *
+ * IF YOU CHANGE PRICING, CHANGE IT IN BOTH PLACES:
+ *   src/data/pricing.ts        (the website)
+ *   this file                  (the confirmation email)
+ */
+const FIRST_HOUR_PRICE = 49;
+const ADDITIONAL_HOUR_PRICE = 29;
+const DEPOSIT_AMOUNT = 15;
+const FREE_CANCELLATION_HOURS = 24;
 
 serve(async (req) => {
   if (req.method === 'OPTIONS') {
@@ -25,7 +45,9 @@ serve(async (req) => {
 
   try {
     const body: BookingDetails = await req.json();
-    const { name, email, service, date, slot, bookingId } = body;
+    const { name, email, service, date, slot, bookingId, paymentOption } = body;
+    const paidDeposit = paymentOption === 'deposit';
+    const dueOnDay = paidDeposit ? FIRST_HOUR_PRICE - DEPOSIT_AMOUNT : FIRST_HOUR_PRICE;
 
     if (!RESEND_API_KEY) {
       return new Response(JSON.stringify({ error: 'Email service not configured' }), {
@@ -50,7 +72,9 @@ serve(async (req) => {
 
             <h1 style="font-size: 22px; font-weight: 600; margin: 0 0 8px;">Hi ${firstName}, you're booked in! ✅</h1>
             <p style="color: #555; font-size: 16px; line-height: 1.6; margin: 0 0 24px;">
-              Your technician appointment is confirmed. We'll be in touch to confirm the exact time before your appointment.
+              Your appointment is confirmed. We'll call you at the time below — this is a
+              <strong>remote session over the phone</strong>, so nobody will come to your door.
+              You don't need to install anything beforehand.
             </p>
 
             <div style="background: #f0f4ff; border-radius: 12px; padding: 20px; margin-bottom: 24px;">
@@ -63,8 +87,35 @@ serve(async (req) => {
               </table>
             </div>
 
+            <!--
+              What this costs and how to cancel, in writing.
+
+              The customer has just committed to a paid appointment. Leaving them
+              without a written record of the price or the cancellation terms is
+              how disputes and chargebacks start, and it is the kind of thing an
+              older customer is quite reasonably anxious about after clicking a
+              button. Saying it plainly here costs nothing and prevents both.
+            -->
+            <div style="border: 1px solid #e5e5e5; border-radius: 12px; padding: 20px; margin-bottom: 24px;">
+              <p style="font-size: 13px; color: #888; margin: 0 0 12px; text-transform: uppercase; letter-spacing: 0.5px;">What this costs</p>
+              <table style="width: 100%; font-size: 15px; border-collapse: collapse;">
+                ${paidDeposit
+                  ? `<tr><td style="padding: 6px 0; color: #888; width: 140px;">Paid today</td><td style="font-weight: 500;">$${DEPOSIT_AMOUNT} deposit</td></tr>
+                     <tr><td style="padding: 6px 0; color: #888;">Due on the day</td><td style="font-weight: 500;">$${dueOnDay}</td></tr>`
+                  : `<tr><td style="padding: 6px 0; color: #888; width: 140px;">Paid today</td><td style="font-weight: 500;">Nothing</td></tr>
+                     <tr><td style="padding: 6px 0; color: #888;">Due on the day</td><td style="font-weight: 500;">$${dueOnDay}</td></tr>`}
+              </table>
+              <p style="font-size: 13px; color: #666; line-height: 1.6; margin: 12px 0 0;">
+                That covers the first hour, which is all most jobs need. Longer jobs are
+                $${ADDITIONAL_HOUR_PRICE} for each extra hour, and we always ask before starting one.
+                <strong>If we can't fix it, you pay nothing.</strong>
+              </p>
+            </div>
+
             <p style="font-size: 14px; color: #555; margin: 0 0 24px;">
-              If you need to reschedule or have any questions, just reply to this email and we'll sort it out.
+              Need to reschedule or cancel? Just reply to this email. Cancel ${FREE_CANCELLATION_HOURS}+ hours
+              before and any deposit is refunded in full — rescheduling is always free, even at short notice.
+              Full details at <a href="https://www.teksure.com/refund-policy" style="color: #2563eb;">teksure.com/refund-policy</a>.
             </p>
 
             <div style="text-align: center; margin-bottom: 32px;">
