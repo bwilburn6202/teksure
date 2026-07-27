@@ -121,7 +121,7 @@ If you check your Battery settings and notice one specific app is using a surpri
     difficulty: 'Beginner',
     body: `When your iPhone tells you there is not enough storage to install an update, it can feel like a catch-22. You need space to update. But you need to update to stay safe. The good news is you almost always have more space than you think. And there are several ways to free up enough room for any iOS update without permanently losing your photos or contacts.
 
-iOS updates typically need between 500MB and 2.5GB of free space to download and install. If your phone is nearly full, you may need to temporarily free up some room even though the update itself will not permanently increase your phone's storage use.
+iOS updates usually need between 500MB and 2.5GB of free space to download and install. If your phone is nearly full, you may need to temporarily free up some room even though the update itself will not permanently increase your phone's storage use.
 
 The single biggest space-saver for most people is photos and videos. If your photos are backed up to iCloud, Google Photos, or another cloud service, you can remove them from your phone without losing them. They will still be accessible through the Photos app (they will download from the cloud when you open them instead of being stored on your phone).
 

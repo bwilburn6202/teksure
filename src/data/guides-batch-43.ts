@@ -258,7 +258,7 @@ No account or subscription is needed — Markup is completely free and built int
     difficulty: `Beginner`,
     body: `Modern smartphone photos are high resolution and can be 4–12 MB each. Emailing multiple photos at once can quickly exceed email attachment limits (usually 25 MB for Gmail, 10 MB for some older services). Large images also take a long time to send and receive on slow connections.
 
-Compressing or resizing photos before sending makes them smaller — faster to send and easier for the recipient to receive. A compressed photo suitable for emailing is typically 200 KB to 1 MB, compared to 4–12 MB for the original.
+Compressing or resizing photos before sending makes them smaller — faster to send and easier for the recipient to receive. A compressed photo suitable for emailing is usually 200 KB to 1 MB, compared to 4–12 MB for the original.
 
 **The easiest method on iPhone**: When you share photos via email directly from the Photos app, iPhone offers size options — Small, Medium, Large, or Actual Size. Choose "Medium" or "Small" for most emails.
 

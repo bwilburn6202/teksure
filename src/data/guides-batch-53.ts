@@ -310,7 +310,7 @@ Freevee is a good option when you want to watch something without paying for a s
       },
       {
         title: `Press play and watch with ads`,
-        content: `Press the play button to start watching. Ads will appear at the beginning and at intervals during the content — typically every 15–25 minutes. The ads are usually 60–90 seconds long. You cannot skip them, but they're shorter than traditional TV commercial breaks. Your place is saved automatically if you pause or exit.`,
+        content: `Press the play button to start watching. Ads will appear at the beginning and at intervals during the content — usually every 15–25 minutes. The ads are usually 60–90 seconds long. You cannot skip them, but they're shorter than traditional TV commercial breaks. Your place is saved automatically if you pause or exit.`,
         warning: `If a video starts playing and asks for a credit card mid-stream, stop and check the content label again. Free Freevee content should never ask for payment to continue watching.`
       },
       {
@@ -697,7 +697,7 @@ You don't need to be athletic to benefit from tracking. Even 20–30 minutes of 
     difficulty: `Beginner`,
     body: `Fitbit devices are popular fitness trackers, but most people only use a fraction of what they can do. Beyond counting steps, your Fitbit can remind you to move every hour, track how long and how well you slept, and show you charts of your activity, heart rate, and sleep trends over weeks and months — all through the free Fitbit app on your phone.
 
-Hourly movement reminders are one of the most useful features for people who sit a lot during the day. Your Fitbit can buzz your wrist if you haven't taken at least 250 steps in a given hour — typically 10 minutes before the hour ends. Getting up for a short walk each hour has real health benefits, and the reminder takes the guesswork out of staying consistent.
+Hourly movement reminders are one of the most useful features for people who sit a lot during the day. Your Fitbit can buzz your wrist if you haven't taken at least 250 steps in a given hour — usually 10 minutes before the hour ends. Getting up for a short walk each hour has real health benefits, and the reminder takes the guesswork out of staying consistent.
 
 Sleep tracking is automatic — your Fitbit detects when you fall asleep and wake up, and estimates how much of that time was light, deep, or REM sleep. The accuracy improves if you wear your Fitbit during sleep with a comfortable, snug fit. The Fitbit app shows your sleep score each morning and tracks your sleep trends over time.
 

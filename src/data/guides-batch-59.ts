@@ -234,7 +234,7 @@ You can also look at what you are paying for that you may not need. Many plans i
       {
         title: `Remove add-ons you do not use`,
         content: `Call your carrier or log in to your account online and remove any add-ons you do not actively use. Common ones to check: device insurance (consider whether your phone's value warrants the monthly cost), international calling packages (remove if you do not call internationally), hotspot data (remove if you never use your phone as a hotspot), and streaming bundles (cancel if you are not actively using the included service).`,
-        tip: `Device insurance typically costs $12 to $17 per month, which adds up to $144 to $204 per year. If your phone is two or more years old, the insurance premium may exceed the phone's current value. Check whether your homeowner's or renter's insurance covers lost or damaged phones as an alternative.`,
+        tip: `Device insurance usually costs $12 to $17 per month, which adds up to $144 to $204 per year. If your phone is two or more years old, the insurance premium may exceed the phone's current value. Check whether your homeowner's or renter's insurance covers lost or damaged phones as an alternative.`,
       },
     ],
   },
@@ -252,7 +252,7 @@ You can also look at what you are paying for that you may not need. Many plans i
 
 When Wi-Fi Calling is turned on, your phone automatically uses your Wi-Fi connection to make and receive calls whenever your cell signal is weak. You dial and answer calls exactly the same way you always do — nothing changes about how you use the phone. The only difference is that your calls travel over your internet connection in the background. If you move out of Wi-Fi range, the call smoothly switches back to the cell network without dropping.
 
-Wi-Fi Calling is supported by all four major carriers in the United States — Verizon, AT&T, T-Mobile, and US Cellular — as well as most smaller carriers. It is available on iPhone and nearly all modern Android phones. The feature is typically free with no extra charge on your bill. You are using your existing home internet, and the calls count toward your regular plan's minutes (or are unlimited if your plan includes unlimited talk).
+Wi-Fi Calling is supported by all four major carriers in the United States — Verizon, AT&T, T-Mobile, and US Cellular — as well as most smaller carriers. It is available on iPhone and nearly all modern Android phones. The feature is usually free with no extra charge on your bill. You are using your existing home internet, and the calls count toward your regular plan's minutes (or are unlimited if your plan includes unlimited talk).
 
 One important benefit of Wi-Fi Calling is that it also works when you are traveling internationally. If you are in another country and have access to Wi-Fi at a hotel or a family member's home, you can call US numbers without paying international roaming rates — the call uses Wi-Fi and is treated as a regular domestic call. This can save you significant money compared to international calling plans.
 
@@ -431,7 +431,7 @@ The app is completely free to download and use. Google does not charge for trans
 
 The app has partnered with hundreds of grocery stores, pharmacies, and retailers including Walmart, Target, Kroger, Publix, CVS, Walgreens, Costco, and many more. There are also online shopping offers. You can shop through Ibotta's interface at Amazon, Walmart.com, and other retailers to earn cash back on purchases automatically.
 
-Cash back amounts vary but are real money — typically $0.25 to $2.00 per item, sometimes more for specific products. There are also often general offers like "earn $0.25 on any item" that apply to purchases regardless of brand. Over the course of a month of regular grocery shopping, many Ibotta users report earning $15 to $40 or more in cash back.
+Cash back amounts vary but are real money — usually $0.25 to $2.00 per item, sometimes more for specific products. There are also often general offers like "earn $0.25 on any item" that apply to purchases regardless of brand. Over the course of a month of regular grocery shopping, many Ibotta users report earning $15 to $40 or more in cash back.
 
 Getting started with Ibotta takes about ten minutes. You download the free app, create a free account, and link any store loyalty programs you already have (like a Kroger card or Walmart account). Many stores can verify your purchases automatically through your loyalty card, which means you do not even need to photograph your receipts — the cash back is applied automatically.
 
@@ -453,12 +453,12 @@ Ibotta is a legitimate company that has been operating since 2012 and has paid o
       },
       {
         title: `Upload your receipt or let loyalty linking do the work`,
-        content: `If your store is linked through your loyalty account, your cash back is often applied automatically within 24 to 48 hours of your purchase — no receipt needed. If your store is not linked, open Ibotta after shopping and tap Verify Purchases, then Upload Receipt. Take a clear, well-lit photo of your entire receipt and submit it. Ibotta typically processes receipts within a few minutes to a few hours.`,
+        content: `If your store is linked through your loyalty account, your cash back is often applied automatically within 24 to 48 hours of your purchase — no receipt needed. If your store is not linked, open Ibotta after shopping and tap Verify Purchases, then Upload Receipt. Take a clear, well-lit photo of your entire receipt and submit it. Ibotta usually processes receipts within a few minutes to a few hours.`,
         warning: `Keep your receipt until Ibotta confirms your cash back has been applied. If there is an issue with a submission, you will need the original receipt to resolve it.`,
       },
       {
         title: `Withdraw your cash back`,
-        content: `Once your Ibotta account balance reaches $20 (the minimum withdrawal amount), tap your balance in the app and choose Withdraw. You can transfer money to PayPal or Venmo, or redeem for gift cards to popular retailers. Gift card redemption sometimes starts at $10 with certain retailers. The transfer typically arrives in your account within one to three business days.`,
+        content: `Once your Ibotta account balance reaches $20 (the minimum withdrawal amount), tap your balance in the app and choose Withdraw. You can transfer money to PayPal or Venmo, or redeem for gift cards to popular retailers. Gift card redemption sometimes starts at $10 with certain retailers. The transfer usually arrives in your account within one to three business days.`,
       },
     ],
   },
@@ -544,7 +544,7 @@ Setting up these apps takes about five minutes each. Most require only an email 
       },
       {
         title: `Redeem your rewards`,
-        content: `Check the app regularly to see your accumulated points or earnings. When you have enough to redeem, look for a Redeem Rewards option at checkout or in the app. Starbucks lets you redeem Stars at the register. Target Circle Earnings can be applied to a future purchase at checkout. Grocery fuel rewards are typically redeemed at the chain's affiliated gas station by entering your phone number at the pump.`,
+        content: `Check the app regularly to see your accumulated points or earnings. When you have enough to redeem, look for a Redeem Rewards option at checkout or in the app. Starbucks lets you redeem Stars at the register. Target Circle Earnings can be applied to a future purchase at checkout. Grocery fuel rewards are usually redeemed at the chain's affiliated gas station by entering your phone number at the pump.`,
         warning: `Most loyalty rewards have expiration dates. Check your app periodically to make sure your points or earnings do not expire before you use them. Setting a monthly reminder to check your balance is a good habit.`,
       },
     ],

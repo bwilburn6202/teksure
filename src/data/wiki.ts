@@ -2074,7 +2074,7 @@ Missing a dose can be a real concern. Apps like **Medisafe**, **CareZone**, and 
 
 ## Telehealth Video Visits
 
-Telehealth lets you see a doctor or specialist by video call from home. This is helpful for follow-up visits, prescription renewals, and non-emergency questions. You typically need:
+Telehealth lets you see a doctor or specialist by video call from home. This is helpful for follow-up visits, prescription renewals, and non-emergency questions. You usually need:
 - A phone, tablet, or computer with a camera
 - A stable internet connection
 - The provider's telehealth app or a link they send you
@@ -2261,7 +2261,7 @@ Several factors contribute to latency:
 - **Physical distance**: Data traveling to a server across the country takes longer than data going to a nearby server.
 - **Network congestion**: Too many people using the same connection at once.
 - **Old equipment**: An outdated router or modem can introduce delays.
-- **Wi-Fi vs. wired**: A direct Ethernet cable connection typically has lower latency than Wi-Fi.
+- **Wi-Fi vs. wired**: A direct Ethernet cable connection usually has lower latency than Wi-Fi.
 
 ## Why It Matters
 
@@ -2331,7 +2331,7 @@ Many ISPs provide a combined modem-router unit (sometimes called a gateway), whi
 
 ## Do You Need Your Own Modem?
 
-Most ISPs rent you a modem for a monthly fee (typically $10-15 per month). Buying your own compatible modem can save you money over time. Check your ISP's website for a list of approved modem models before purchasing one.
+Most ISPs rent you a modem for a monthly fee (usually $10-15 per month). Buying your own compatible modem can save you money over time. Check your ISP's website for a list of approved modem models before purchasing one.
 
 ## Quick Tip
 
@@ -2463,7 +2463,7 @@ Think of it like someone changing the locks on your house and slipping a note un
 
 ## How Ransomware Spreads
 
-Ransomware typically arrives through:
+Ransomware usually arrives through:
 
 - **Phishing emails**: A message that tricks you into clicking a malicious link or opening an infected attachment.
 - **Fake software updates**: Pop-ups claiming you need to update your system that actually install ransomware.
@@ -2574,7 +2574,7 @@ For most people, the default firewall settings are fine. Here is what to keep in
 
 - **Windows**: Windows Defender Firewall is on by default. Do not turn it off.
 - **Mac**: You can turn on the firewall in System Settings > Network > Firewall.
-- **Router**: Your router's firewall is typically enabled by default.
+- **Router**: Your router's firewall is usually enabled by default.
 
 If an app asks you to allow it through the firewall, only say yes if you trust the app and you installed it yourself.
 
@@ -2953,7 +2953,7 @@ Most TVs have multiple HDMI ports on the back or side. Use your TV remote's "Inp
     seeAlso: ['nfc', 'wifi-networking', 'bluetooth-connections'],
     content: `## What Is Bluetooth?
 
-Bluetooth is a wireless technology that lets devices communicate with each other over short distances — typically within about 30 feet. It uses radio waves to create a direct connection between two devices without needing Wi-Fi or a cable.
+Bluetooth is a wireless technology that lets devices communicate with each other over short distances — usually within about 30 feet. It uses radio waves to create a direct connection between two devices without needing Wi-Fi or a cable.
 
 Think of Bluetooth as a short-range walkie-talkie for your devices. It lets them talk to each other directly.
 
@@ -3149,7 +3149,7 @@ Think of it like electricity. You do not need to own a power plant to use electr
     seeAlso: ['cloud-computing', 'api', 'app-store'],
     content: `## What Is SaaS?
 
-SaaS stands for Software as a Service. It is a way of using software through the internet — usually through a web browser — instead of buying and installing it on your computer. Instead of a one-time purchase, you typically pay a monthly or yearly subscription.
+SaaS stands for Software as a Service. It is a way of using software through the internet — usually through a web browser — instead of buying and installing it on your computer. Instead of a one-time purchase, you usually pay a monthly or yearly subscription.
 
 Think of it like renting versus buying. In the old days, you bought a box of software at the store for $200 and installed it from a CD. With SaaS, you pay $10 a month and access the software online, always getting the latest version without reinstalling anything.
 

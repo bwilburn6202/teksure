@@ -183,7 +183,7 @@ Watch a walkthrough: search YouTube for "Echo Show setup for elderly parents 202
     publishedAt: '2026-05-19',
     lastVerifiedAt: '2026-05-19',
     difficulty: 'Beginner',
-    body: `Every iPhone battery degrades over time — that is physics, not a defect. After about 500 full charge cycles (roughly 18 months for a heavy user, 3 years for a light user), a battery typically holds about 80% of the energy it did when new. To slow this down, Apple added two charging settings on iPhone 15 and later: "80% Limit" and "Adaptive Charging."
+    body: `Every iPhone battery degrades over time — that is physics, not a defect. After about 500 full charge cycles (roughly 18 months for a heavy user, 3 years for a light user), a battery usually holds about 80% of the energy it did when new. To slow this down, Apple added two charging settings on iPhone 15 and later: "80% Limit" and "Adaptive Charging."
 
 Both extend battery lifespan. But they have a downside: your phone will not be fully charged when you grab it in the morning. This guide explains what each setting does, when to use it, and how to switch between them depending on your day.
 

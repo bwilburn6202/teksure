@@ -67,7 +67,7 @@ Trust & Will guides you through a series of plain-English questions about your w
 
 A basic will through Trust & Will covers who gets your belongings, names an executor (the person who carries out your wishes), names guardians for any minor children, and includes a healthcare directive so your medical wishes are known. A living trust goes further. It allows your estate to avoid the court process called probate, which can be slow and expensive.
 
-The cost is typically between $69 and $199 depending on whether you choose a will or a trust package. This is a lot less than working with an attorney in person, though Trust & Will does recommend consulting an attorney if your situation is complicated — for example, if you own a business, have a blended family, or have assets in multiple states.
+The cost is usually between $69 and $199 depending on whether you choose a will or a trust package. This is a lot less than working with an attorney in person, though Trust & Will does recommend consulting an attorney if your situation is complicated — for example, if you own a business, have a blended family, or have assets in multiple states.
 
 Once your documents are complete, Trust & Will provides instructions for signing and witnessing them. This step is critical: a will that is not properly signed in front of witnesses is not legally valid. Trust & Will walks you through exactly what your state requires. Many states also recommend notarizing your will, and some require it for certain documents. Trust & Will is available at trustandwill.com.`,
     steps: [
@@ -252,9 +252,9 @@ Depending on your state, you may also be able to order directly through your sta
 
 You will need to provide some basic identifying information — your full name, date of birth, place of birth, and your parents' names for a birth certificate. For a marriage license, you will need the full names of both parties and the approximate date and location of the marriage. Identity verification is required since these are sensitive documents.
 
-Processing times vary. Expedited shipping is available for an additional fee, which can get you documents within a few business days. Standard processing typically takes one to three weeks depending on the state.
+Processing times vary. Expedited shipping is available for an additional fee, which can get you documents within a few business days. Standard processing usually takes one to three weeks depending on the state.
 
-Costs also vary by state, but certified copies typically run between $10 and $30 each. VitalChek charges a service fee on top of the state fee. If you need the document quickly for Social Security, Medicare, a passport application, or estate purposes, the cost is well worth the convenience.`,
+Costs also vary by state, but certified copies usually run between $10 and $30 each. VitalChek charges a service fee on top of the state fee. If you need the document quickly for Social Security, Medicare, a passport application, or estate purposes, the cost is well worth the convenience.`,
     steps: [
       {
         title: `Identify what you need and which state issued it`,
@@ -272,7 +272,7 @@ Costs also vary by state, but certified copies typically run between $10 and $30
       },
       {
         title: `Verify your identity`,
-        content: `Because vital records are sensitive documents, you must verify your identity before your order is processed. This is typically done by providing your Social Security number and answering a few security questions drawn from public records — similar to credit verification. VitalChek uses a secure, encrypted system for this step.`,
+        content: `Because vital records are sensitive documents, you must verify your identity before your order is processed. This is usually done by providing your Social Security number and answering a few security questions drawn from public records — similar to credit verification. VitalChek uses a secure, encrypted system for this step.`,
       },
       {
         title: `Choose delivery speed and pay`,
@@ -432,7 +432,7 @@ The biggest advantage of PODS is flexibility. You can load the container over se
 
 PODS containers come in three standard sizes: 7 feet long (good for a small apartment), 12 feet (good for a one-to-two bedroom home), and 16 feet (good for a larger home). All containers are weather-resistant and can be kept on your driveway during loading.
 
-Pricing varies based on container size, how far your belongings are being moved, and how long you need storage. A local move typically costs between $300 and $600 for the container delivery, transportation, and pickup. Long-distance moves cost more. You can get an instant quote at pods.com without giving your phone number, which is a convenient feature.
+Pricing varies based on container size, how far your belongings are being moved, and how long you need storage. A local move usually costs between $300 and $600 for the container delivery, transportation, and pickup. Long-distance moves cost more. You can get an instant quote at pods.com without giving your phone number, which is a convenient feature.
 
 PODS is available in most major metropolitan areas in the United States. In very rural areas, it may not be available. One thing to be aware of: some homeowners associations (HOAs) or local municipalities have rules about keeping containers in a driveway. Check your local rules before ordering.`,
     steps: [
@@ -578,7 +578,7 @@ MyChart is available at mychart.com and as a free app for iPhone and Android. Yo
       },
       {
         title: `Message your doctor through the portal`,
-        content: `To send a non-urgent message to your care team, tap "Messaging" or "Message Your Doctor." Choose the care team you want to contact — your primary care doctor, a specialist, or a nurse — and type your message. Describe your question or concern clearly and include relevant details. Responses typically arrive within one to three business days. This feature is intended for non-urgent questions. If you have a medical emergency, call 911.`,
+        content: `To send a non-urgent message to your care team, tap "Messaging" or "Message Your Doctor." Choose the care team you want to contact — your primary care doctor, a specialist, or a nurse — and type your message. Describe your question or concern clearly and include relevant details. Responses usually arrive within one to three business days. This feature is intended for non-urgent questions. If you have a medical emergency, call 911.`,
         tip: `Use the messaging feature to request prescription refills, ask about side effects you are experiencing, clarify discharge instructions, or ask about test results you have seen in the portal.`,
       },
       {
@@ -606,7 +606,7 @@ MyChart is available at mychart.com and as a free app for iPhone and Android. Yo
 
 The app is designed to be a one-stop place for managing your health. Kaiser members can avoid many phone calls by handling routine tasks directly in the app. You can request a prescription refill and choose to have it mailed to your home or ready for pickup at your nearest Kaiser pharmacy. You can schedule a routine appointment, see available times, and confirm it without speaking to anyone.
 
-Kaiser's "My Doctor Online" feature allows you to message your care team directly. For non-urgent medical questions, you can typically expect a response within one to three business days. Kaiser also offers telephone appointments and video visits for many types of care — especially useful if you have limited transportation or mobility.
+Kaiser's "My Doctor Online" feature allows you to message your care team directly. For non-urgent medical questions, you can usually expect a response within one to three business days. Kaiser also offers telephone appointments and video visits for many types of care — especially useful if you have limited transportation or mobility.
 
 Test results from lab work or imaging studies appear in the app, usually within days of the test. Kaiser encourages members to review their results in the app, and your care team will follow up with you if anything requires attention.
 
@@ -624,7 +624,7 @@ Setting up the app requires your Kaiser member ID number, which is printed on yo
       },
       {
         title: `Refill a prescription`,
-        content: `Tap "Pharmacy" or "Prescriptions" in the app menu. You will see a list of your current prescriptions on file at Kaiser. Tap the medication you need refilled and select "Request Refill." Choose whether you want to pick it up at your local Kaiser pharmacy or have it mailed to your home — Kaiser's mail-order pharmacy typically delivers a 90-day supply for chronic medications and is often less expensive than monthly pickup.`,
+        content: `Tap "Pharmacy" or "Prescriptions" in the app menu. You will see a list of your current prescriptions on file at Kaiser. Tap the medication you need refilled and select "Request Refill." Choose whether you want to pick it up at your local Kaiser pharmacy or have it mailed to your home — Kaiser's mail-order pharmacy usually delivers a 90-day supply for chronic medications and is often less expensive than monthly pickup.`,
         warning: `Refill requests usually take two to three business days to process, and mail delivery adds additional time. Request refills at least one week before you run out to avoid gaps in your medication.`,
       },
       {
@@ -650,7 +650,7 @@ The most valuable feature for most people is prescription management. Through th
 
 The CVS app also connects to your ExtraCare rewards account, which is CVS's free loyalty program. ExtraBucks — CVS's store rewards — appear in the app as digital coupons that are applied automatically at checkout when you use your ExtraCare card. You no longer need to carry a physical card or clip paper coupons.
 
-The app also allows you to order photo prints from your phone's camera roll. You select photos, choose the size and quantity, and pick them up in the store — typically within an hour. This is a popular feature for creating prints of digital photos or making a photo gift.
+The app also allows you to order photo prints from your phone's camera roll. You select photos, choose the size and quantity, and pick them up in the store — usually within an hour. This is a popular feature for creating prints of digital photos or making a photo gift.
 
 Setting up the app requires creating a CVS account or linking your existing ExtraCare number. The app is free on iPhone and Android. The CVS website at cvs.com offers the same prescription management features if you prefer a computer.`,
     steps: [
@@ -666,7 +666,7 @@ Setting up the app requires creating a CVS account or linking your existing Extr
       },
       {
         title: `Check and use your ExtraBucks rewards`,
-        content: `Tap the "Deals" or "ExtraCare" tab to see your current ExtraBucks balance and available digital coupons. Load coupons to your card by tapping "Load to Card." When you check out at CVS, scan the barcode in the app (or give your phone number) and your loaded coupons will be applied automatically. ExtraBucks typically expire, so check the app regularly so rewards do not go unused.`,
+        content: `Tap the "Deals" or "ExtraCare" tab to see your current ExtraBucks balance and available digital coupons. Load coupons to your card by tapping "Load to Card." When you check out at CVS, scan the barcode in the app (or give your phone number) and your loaded coupons will be applied automatically. ExtraBucks usually expire, so check the app regularly so rewards do not go unused.`,
         tip: `Turn on push notifications for the CVS app to get alerts when new ExtraBucks post to your account, usually after qualifying purchases.`,
       },
       {
@@ -774,7 +774,7 @@ One of the standout features of Amazon Pharmacy is its transparent pricing. When
 
 Amazon Prime members receive discounts of up to 80% on generic medications and up to 40% on brand-name drugs when paying cash (without insurance). For some common generics, this cash price can be lower than what you would pay using insurance — depending on your plan's copay structure.
 
-Prescriptions are typically filled and shipped within one to two days, with free two-day delivery for Prime members. Standard shipping is also available at no charge, with delivery in five to seven business days.
+Prescriptions are usually filled and shipped within one to two days, with free two-day delivery for Prime members. Standard shipping is also available at no charge, with delivery in five to seven business days.
 
 To get started, you need an Amazon account (free), and your doctor must send your prescription electronically to Amazon Pharmacy, or you can transfer an existing prescription from another pharmacy. Amazon Pharmacy accepts most major insurance plans, though you will need to enter your insurance information during setup. The service is available at pharmacy.amazon.com.`,
     steps: [

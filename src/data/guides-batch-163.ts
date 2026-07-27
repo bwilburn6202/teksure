@@ -426,7 +426,7 @@ These phrases describe nothing about the product — they could apply to any ite
 
 **3. Reviewers who are new accounts or reviewed only one product**
 
-Click on the name of a reviewer that catches your attention. Look at their profile. Real customers typically have a history of reviews across many different products and categories over months or years. If the reviewer joined the platform last month and this is their only review, that is suspicious. Even more concerning: if you see ten reviewers who all joined recently and all reviewed only this product, the reviews were likely purchased or manufactured.
+Click on the name of a reviewer that catches your attention. Look at their profile. Real customers usually have a history of reviews across many different products and categories over months or years. If the reviewer joined the platform last month and this is their only review, that is suspicious. Even more concerning: if you see ten reviewers who all joined recently and all reviewed only this product, the reviews were likely purchased or manufactured.
 
 **4. A sudden flood of reviews in a short time**
 
@@ -472,7 +472,7 @@ Consumer Reports is a nonprofit organization that buys products off store shelve
 
 **How-To Geek and Wirecutter**
 
-Both sites publish in-depth product reviews written by staff who have tested the products. They earn a commission if you buy through their links, which is a potential conflict of interest — but they typically disclose this and their editorial standards are well-regarded. Wirecutter is owned by The New York Times.
+Both sites publish in-depth product reviews written by staff who have tested the products. They earn a commission if you buy through their links, which is a potential conflict of interest — but they usually disclose this and their editorial standards are well-regarded. Wirecutter is owned by The New York Times.
 
 **Reddit product communities**
 
@@ -516,7 +516,7 @@ These steps take about five minutes and can save you from buying something that 
       },
       {
         title: 'Check the reviewer\'s profile and history',
-        content: 'Click on a reviewer\'s name to see their profile. Real customers typically have reviewed many different products over time. If a reviewer joined the site recently and this is their only review — or if several reviewers all have that same pattern on the same product — the reviews may have been purchased.',
+        content: 'Click on a reviewer\'s name to see their profile. Real customers usually have reviewed many different products over time. If a reviewer joined the site recently and this is their only review — or if several reviewers all have that same pattern on the same product — the reviews may have been purchased.',
         warning: 'Be especially cautious when multiple reviewers posted their reviews on the same day or the same week, all with similar language and no review history.',
       },
       {
@@ -702,7 +702,7 @@ When shopping on a website or in an app, you may see an "Apple Pay" or "Google P
       },
       {
         title: 'Pay with Google Pay at a store',
-        content: 'Make sure your phone screen is on. Hold the back of your phone near the contactless payment terminal — the NFC antenna is typically in the center-back of the phone. You will hear a sound or feel a vibration and see a confirmation on screen. On some phones and stores, you may be asked to confirm with your fingerprint.',
+        content: 'Make sure your phone screen is on. Hold the back of your phone near the contactless payment terminal — the NFC antenna is usually in the center-back of the phone. You will hear a sound or feel a vibration and see a confirmation on screen. On some phones and stores, you may be asked to confirm with your fingerprint.',
         tip: 'If payment does not go through, try adjusting the position of your phone on the terminal. Move it slightly up, down, or closer until the terminal recognizes it.',
       },
       {

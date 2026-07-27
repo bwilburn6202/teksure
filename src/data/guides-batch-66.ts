@@ -83,7 +83,7 @@ Here's an important warning: payments made through Zelle are almost impossible t
       },
       {
         title: `Send money to someone`,
-        content: `Tap Send and enter the recipient's mobile phone number or email address. Type the dollar amount and an optional note. Review everything carefully, then confirm. The money typically arrives in the recipient's account within minutes if their bank supports Zelle.`,
+        content: `Tap Send and enter the recipient's mobile phone number or email address. Type the dollar amount and an optional note. Review everything carefully, then confirm. The money usually arrives in the recipient's account within minutes if their bank supports Zelle.`,
         warning: `Zelle payments are nearly impossible to cancel once sent. Triple-check the phone number or email before confirming. A typo could send money to the wrong person.`,
       },
       {
@@ -111,7 +111,7 @@ Here's an important warning: payments made through Zelle are almost impossible t
 
 Getting started is straightforward. Download Cash App from the App Store or Google Play, create an account with your phone number or email, and choose a $Cashtag — a unique username like $JohnSmith — that others use to send you money. Pick a $Cashtag you'll remember, because you can only change it twice.
 
-To send money, tap the dollar sign icon on the home screen, type the amount, tap Pay, and enter a $Cashtag, phone number, or email address. To request money from someone, use the same screen but tap Request instead. Standard transfers to your linked bank account are free and arrive in 1–3 business days. Instant transfers cost a fee (typically 0.5%–1.75%).
+To send money, tap the dollar sign icon on the home screen, type the amount, tap Pay, and enter a $Cashtag, phone number, or email address. To request money from someone, use the same screen but tap Request instead. Standard transfers to your linked bank account are free and arrive in 1–3 business days. Instant transfers cost a fee (usually 0.5%–1.75%).
 
 One of Cash App's standout features is the Cash Card — a free Visa debit card linked to your Cash App balance. You can use it anywhere Visa is accepted, at ATMs, and in stores. The card comes with "Boosts," which are instant discounts at specific restaurants and stores like Chipotle, DoorDash, and Target. You activate Boosts in the app before you pay.
 
@@ -155,7 +155,7 @@ As with any payment app, never send Cash App payments to strangers. Scammers oft
     difficulty: `Beginner`,
     readTime: `5 min`,
     publishedAt: `2026-04-20`,
-    body: `Your credit score is a three-digit number — typically ranging from 300 to 850 — that lenders use to decide whether to approve you for loans, credit cards, or mortgages, and at what interest rate. Landlords sometimes check it when you apply to rent an apartment, and some employers request it too. The higher your score, the better your financial options.
+    body: `Your credit score is a three-digit number — usually ranging from 300 to 850 — that lenders use to decide whether to approve you for loans, credit cards, or mortgages, and at what interest rate. Landlords sometimes check it when you apply to rent an apartment, and some employers request it too. The higher your score, the better your financial options.
 
 Credit Karma is a free service that shows you your credit scores from two of the three major credit bureaus: TransUnion and Equifax. There's no trial period, no credit card required, and no catch — Credit Karma makes money by showing you offers for credit cards and loans, which you're never obligated to accept.
 
@@ -187,7 +187,7 @@ Checking your score regularly and understanding what drives it is one of the bes
       },
       {
         title: `Dispute errors if you find them`,
-        content: `If you spot an error, tap Dispute on Credit Karma to start the process with TransUnion or Equifax. You can also dispute directly on each bureau's website. Disputes typically take 30 days to investigate. Keep records of what you submitted.`,
+        content: `If you spot an error, tap Dispute on Credit Karma to start the process with TransUnion or Equifax. You can also dispute directly on each bureau's website. Disputes usually take 30 days to investigate. Keep records of what you submitted.`,
       },
     ],
   },
@@ -255,7 +255,7 @@ The most important time to use a VPN is on public Wi-Fi — at coffee shops, air
 
 At home on your own private, password-protected Wi-Fi, a VPN is less necessary for basic security. Your home network is already much more protected than public Wi-Fi. One reason people still use a VPN at home is to prevent their ISP from seeing what sites they visit — ISPs are legally allowed to collect and sell this data in the US.
 
-NordVPN is one of the most widely used VPNs. It works on Windows, Mac, iPhone, and Android. Download the NordVPN app from the official website at nordvpn.com or from your device's app store, create an account, and choose a subscription plan. Pricing is typically $3–5 per month when you pay for a year or two upfront, and around $12/month if you pay month-to-month.
+NordVPN is one of the most widely used VPNs. It works on Windows, Mac, iPhone, and Android. Download the NordVPN app from the official website at nordvpn.com or from your device's app store, create an account, and choose a subscription plan. Pricing is usually $3–5 per month when you pay for a year or two upfront, and around $12/month if you pay month-to-month.
 
 Once installed, tap Quick Connect to connect to the fastest available server — usually one near you. For streaming content from another country, choose a server in that country from the server list. NordVPN also has a Kill Switch feature: if the VPN connection drops, Kill Switch cuts off your internet entirely rather than letting your data leak unprotected. Turn this on in the app settings.
 
@@ -338,7 +338,7 @@ After deleting your activity, Google's personalized ads may feel less targeted f
     difficulty: `Intermediate`,
     readTime: `7 min`,
     publishedAt: `2026-04-20`,
-    body: `Data brokers are companies that collect information about you from public records, social media profiles, loyalty programs, and other sources — then compile it into detailed profiles and sell it to marketers, employers, landlords, private investigators, and anyone else willing to pay. Sites like Spokeo, Whitepages, BeenVerified, Intelius, PeopleFinder, and RadarOnline typically show your full name, current and past addresses, phone numbers, relatives' names, estimated age, and sometimes even financial information.
+    body: `Data brokers are companies that collect information about you from public records, social media profiles, loyalty programs, and other sources — then compile it into detailed profiles and sell it to marketers, employers, landlords, private investigators, and anyone else willing to pay. Sites like Spokeo, Whitepages, BeenVerified, Intelius, PeopleFinder, and RadarOnline usually show your full name, current and past addresses, phone numbers, relatives' names, estimated age, and sometimes even financial information.
 
 This matters because scammers, telemarketers, and robocallers use this data to target you. Stalkers can find your home address. Employers may find information you'd rather they didn't see. The more of your information that's out there, the more opportunities there are for it to be misused.
 
@@ -388,7 +388,7 @@ If you'd rather have someone else handle all of this for you, paid services like
     publishedAt: `2026-04-20`,
     body: `Calm is one of the most popular meditation and sleep apps in the US. It offers a wide collection of guided meditations, breathing exercises, sleep stories, calming music, and programs designed to help with stress, anxiety, focus, and better sleep. The app is available on iPhone and Android.
 
-You can explore Calm for free with limited content, but most features require a subscription — typically around $70 per year, with discounts sometimes available. A free trial period lets you explore before committing.
+You can explore Calm for free with limited content, but most features require a subscription — usually around $70 per year, with discounts sometimes available. A free trial period lets you explore before committing.
 
 When you open the app, you'll find several main sections. Meditations include sessions for beginners, stress relief, focus, sleep preparation, managing anxiety, and more. Sessions range from 3 to 30 minutes. If you're new to meditation, start with the "How to Meditate" series. It walks you through the basics step by step over seven days.
 
@@ -599,7 +599,7 @@ Turo differs from traditional rental companies in one important way: if you have
     steps: [
       {
         title: `Download Turo and upload your license`,
-        content: `Download the Turo app or go to turo.com. Create a free account. Tap your profile icon and look for Driving Verification or License. Upload a clear photo of the front and back of your valid driver's license. Approval typically takes a few minutes.`,
+        content: `Download the Turo app or go to turo.com. Create a free account. Tap your profile icon and look for Driving Verification or License. Upload a clear photo of the front and back of your valid driver's license. Approval usually takes a few minutes.`,
       },
       {
         title: `Search for available cars`,
@@ -738,7 +738,7 @@ With RCS active, your messages are encrypted end-to-end (meaning only you and th
 
 To check if RCS is active on your phone, open Google Messages, tap the three dots in the top right, go to Settings, and tap Chat Features. If it shows "Connected," RCS is active. If it says something like "Verify your phone number," follow the on-screen steps to enable it.
 
-RCS only works when both people use a compatible app. When you text someone who doesn't have RCS — like someone on an older phone, a feature phone, or someone using a basic texting app — Google Messages automatically falls back to SMS or MMS, so your messages still go through normally. You can tell the difference: RCS conversations typically say "Chat" instead of "SMS" near the send button.
+RCS only works when both people use a compatible app. When you text someone who doesn't have RCS — like someone on an older phone, a feature phone, or someone using a basic texting app — Google Messages automatically falls back to SMS or MMS, so your messages still go through normally. You can tell the difference: RCS conversations usually say "Chat" instead of "SMS" near the send button.
 
 Google Messages also works on your computer. Go to messages.google.com in any browser and scan the QR code with your phone. After linking, you can send and receive texts from your computer without picking up your phone — useful when you're at a desk.
 

@@ -339,7 +339,7 @@ export const guidesBatch23: Guide[] = [
     thumbnailEmoji: '',
     publishedAt: '2026-04-19',
     difficulty: 'Intermediate',
-    body: `An ecobee is one of the most popular smart thermostats alongside Nest. It replaces your existing thermostat and connects to your home Wi-Fi so you can control your heat and air conditioning from your phone — from anywhere — and set up smart schedules that automatically save energy when you're away or asleep.\n\necobee thermostats average 23% savings on heating and cooling costs according to the company. The payback period for the ~$200 device is typically 1–2 years for households that previously had manual or basic programmable thermostats.\n\nThis guide covers the setup process. Note: replacing a thermostat involves turning off power at your circuit breaker and handling low-voltage wiring. Many people do it themselves, but if you're uncomfortable with this, a handyman or HVAC technician can install it for $50–$100.`,
+    body: `An ecobee is one of the most popular smart thermostats alongside Nest. It replaces your existing thermostat and connects to your home Wi-Fi so you can control your heat and air conditioning from your phone — from anywhere — and set up smart schedules that automatically save energy when you're away or asleep.\n\necobee thermostats average 23% savings on heating and cooling costs according to the company. The payback period for the ~$200 device is usually 1–2 years for households that previously had manual or basic programmable thermostats.\n\nThis guide covers the setup process. Note: replacing a thermostat involves turning off power at your circuit breaker and handling low-voltage wiring. Many people do it themselves, but if you're uncomfortable with this, a handyman or HVAC technician can install it for $50–$100.`,
     steps: [
       {
         title: 'Check compatibility first',
@@ -572,7 +572,7 @@ export const guidesBatch23: Guide[] = [
       },
       {
         title: `Set Active Hours so updates don't interrupt you`,
-        content: `Click "Advanced options" > "Active hours." Set this to the hours you're typically using your computer (like 8am–10pm). Windows will only restart for updates outside these hours — late at night — so your computer won't restart in the middle of a video call or document you're working on.`,
+        content: `Click "Advanced options" > "Active hours." Set this to the hours you're usually using your computer (like 8am–10pm). Windows will only restart for updates outside these hours — late at night — so your computer won't restart in the middle of a video call or document you're working on.`,
       },
       {
         title: 'Install any pending updates now',

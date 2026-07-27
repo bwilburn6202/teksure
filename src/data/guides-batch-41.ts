@@ -587,7 +587,7 @@ This guide focuses on using the standard Lyft app to request a medical ride your
     thumbnailEmoji: ``,
     publishedAt: `2026-04-19`,
     difficulty: `Beginner`,
-    body: `A public library card is one of the best free resources most Americans never fully use. Beyond borrowing books, your card typically gets you free access to services that would cost hundreds of dollars per year if you paid for them directly.
+    body: `A public library card is one of the best free resources most Americans never fully use. Beyond borrowing books, your card usually gets you free access to services that would cost hundreds of dollars per year if you paid for them directly.
 
 Here are some of the most valuable digital benefits available with many library cards:
 
@@ -627,7 +627,7 @@ Getting a library card is free and takes about 5 minutes at any public library. 
       },
       {
         title: `Stream free movies on Kanopy`,
-        content: `Go to kanopy.com and click "Find your library." Search for your library system. Sign in with your library card. You have access to thousands of films — documentaries, classics, foreign films, and educational videos. Each card typically gets 5–10 "play credits" per month, which renews monthly.`,
+        content: `Go to kanopy.com and click "Find your library." Search for your library system. Sign in with your library card. You have access to thousands of films — documentaries, classics, foreign films, and educational videos. Each card usually gets 5–10 "play credits" per month, which renews monthly.`,
       },
     ],
   },
@@ -715,7 +715,7 @@ The "What's Covered" app is free on iPhone and Android, developed by the Centers
       },
       {
         title: `Read the coverage details`,
-        content: `The result page shows: Does Medicare cover this? (Yes / Yes, with conditions / No). How often. What you pay (typically 20% of the Medicare-approved amount after your deductible). Whether a doctor's order is required. Read the details carefully — "covered" sometimes means "covered under certain conditions" and the conditions are important.`,
+        content: `The result page shows: Does Medicare cover this? (Yes / Yes, with conditions / No). How often. What you pay (usually 20% of the Medicare-approved amount after your deductible). Whether a doctor's order is required. Read the details carefully — "covered" sometimes means "covered under certain conditions" and the conditions are important.`,
         warning: `"Covered" in the app refers to Original Medicare only. If you have a Medicare Advantage plan, your coverage rules may differ. Your Advantage plan might cover more — or have different rules. When in doubt, call the number on your plan card.`,
       },
       {
@@ -775,7 +775,7 @@ The app is free on iPhone and Android from the official VA. It is one of the bes
       },
       {
         title: `Message your care team`,
-        content: `Tap "Health" → "Messages." This is a secure messaging system to communicate with your VA care team — similar to email but encrypted and private. You can ask non-urgent questions, request prescription changes, report a symptom, or ask for a referral. Your care team typically responds within 1–3 business days.`,
+        content: `Tap "Health" → "Messages." This is a secure messaging system to communicate with your VA care team — similar to email but encrypted and private. You can ask non-urgent questions, request prescription changes, report a symptom, or ask for a referral. Your care team usually responds within 1–3 business days.`,
         warning: `Secure messaging is for non-urgent questions only. For urgent medical concerns, call your VA facility or 911. Do not use messaging for emergencies.`,
       },
     ],

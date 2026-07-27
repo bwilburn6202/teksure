@@ -543,7 +543,7 @@ iCloud is Apple's cloud storage service. When your iPhone is plugged in and conn
 
 Every Apple ID comes with 5 GB of free iCloud storage. That sounds like a lot, but photos and videos can fill it up quickly — a single video might be 100–200 megabytes. Once your storage is full, your iPhone stops backing up and you start getting warning messages.
 
-Here's a breakdown of what typically takes up iCloud space:
+Here's a breakdown of what usually takes up iCloud space:
 - Photos and videos (usually the biggest culprit)
 - iPhone and iPad backups
 - Messages with photos and videos

@@ -246,7 +246,7 @@ export const guidesBatch319: Guide[] = [
       },
       {
         title: "Report a suspected charity scam",
-        content: "If you believe you've encountered a fake charity, report it at reportfraud.ftc.gov and to your state's Attorney General office, which typically has a charity registration division. If you already gave money by gift card or wire, contact the sending company right away to ask about reversal — success is not guaranteed, but time matters.",
+        content: "If you believe you've encountered a fake charity, report it at reportfraud.ftc.gov and to your state's Attorney General office, which usually has a charity registration division. If you already gave money by gift card or wire, contact the sending company right away to ask about reversal — success is not guaranteed, but time matters.",
       },
     ],
   },

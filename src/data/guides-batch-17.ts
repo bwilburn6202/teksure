@@ -159,7 +159,7 @@ export const guidesBatch17: Guide[] = [
       {
         title: 'Track orders in the Amazon app or website',
         content: 'Open the Amazon app on your phone and tap the three-line menu () → "Returns & Orders." You see a list of recent orders with their current status. Tap any order for details. For orders being shipped, tap "Track package" to see the estimated delivery date, shipping carrier, tracking number, and current location in the shipping process. On the website (amazon.com), click "Returns & Orders" in the top right.',
-        tip: `Quick Tip: Orders typically go through stages: "Preparing for shipment" → "Shipped" → "Out for delivery" → "Delivered." If it says "Delivered" but you can't find the package, check around your front door, porch, mailbox, and with neighbors.`,
+        tip: `Quick Tip: Orders usually go through stages: "Preparing for shipment" → "Shipped" → "Out for delivery" → "Delivered." If it says "Delivered" but you can't find the package, check around your front door, porch, mailbox, and with neighbors.`,
       },
       {
         title: 'Set up delivery notifications',
@@ -172,7 +172,7 @@ export const guidesBatch17: Guide[] = [
       },
       {
         title: 'Report a missing or damaged package',
-        content: "If your order says \"Delivered\" but you don't see it: wait 24-48 hours (sometimes delivery scans are early). Then in the app: go to Returns & Orders → tap the order → \"Problem with order\" → \"Package shows delivered but I can't find it.\" Amazon will typically offer a refund or replacement. For damaged items: go to the order → \"Return or replace items\" and select \"Item arrived damaged.\" Amazon's return process is generally hassle-free.",
+        content: "If your order says \"Delivered\" but you don't see it: wait 24-48 hours (sometimes delivery scans are early). Then in the app: go to Returns & Orders → tap the order → \"Problem with order\" → \"Package shows delivered but I can't find it.\" Amazon will usually offer a refund or replacement. For damaged items: go to the order → \"Return or replace items\" and select \"Item arrived damaged.\" Amazon's return process is generally hassle-free.",
         warning: "\"Porch pirates\" — thieves who steal packages from front doors — have become more common. For valuable deliveries, consider shipping to an Amazon Hub Locker (a secure pickup box at nearby stores) or requesting a signature for delivery.",
       },
     ],
@@ -201,7 +201,7 @@ export const guidesBatch17: Guide[] = [
       },
       {
         title: 'Know which type of 5G you are getting',
-        content: "There are two main types of 5G: \"Sub-6 GHz\" 5G and \"mmWave\" 5G. Sub-6 GHz is the most common. It covers most US cities and suburban areas and is available from all major carriers. It is moderately faster than 4G. mmWave 5G is extremely fast but only covers a small area (roughly a city block) around a 5G antenna — typically found in dense urban areas, airports, and stadiums. If you see \"5G UW\" (Verizon), \"5G UC\" (T-Mobile), or \"5G+\" (AT&T) in your signal bar, you are on the faster version.",
+        content: "There are two main types of 5G: \"Sub-6 GHz\" 5G and \"mmWave\" 5G. Sub-6 GHz is the most common. It covers most US cities and suburban areas and is available from all major carriers. It is moderately faster than 4G. mmWave 5G is extremely fast but only covers a small area (roughly a city block) around a 5G antenna — usually found in dense urban areas, airports, and stadiums. If you see \"5G UW\" (Verizon), \"5G UC\" (T-Mobile), or \"5G+\" (AT&T) in your signal bar, you are on the faster version.",
       },
       {
         title: 'Decide whether to upgrade your phone for 5G',
@@ -259,7 +259,7 @@ export const guidesBatch17: Guide[] = [
     steps: [
       {
         title: 'Understand the difference between refurbishment grades',
-        content: 'Refurbished phones come in different grades: **Like New** — factory reset, professionally cleaned, no visible wear, works perfectly. **Excellent / Very Good** — minor cosmetic scratches barely visible, fully functional. **Good** — visible wear and scratches on the case but screen is typically scratch-free, fully functional. **Acceptable / Fair** — noticeable scratches or wear, may have minor screen marks, fully functional. For everyday use, "Excellent" or "Very Good" grade offers the best value — significant savings with near-perfect condition.',
+        content: 'Refurbished phones come in different grades: **Like New** — factory reset, professionally cleaned, no visible wear, works perfectly. **Excellent / Very Good** — minor cosmetic scratches barely visible, fully functional. **Good** — visible wear and scratches on the case but screen is usually scratch-free, fully functional. **Acceptable / Fair** — noticeable scratches or wear, may have minor screen marks, fully functional. For everyday use, "Excellent" or "Very Good" grade offers the best value — significant savings with near-perfect condition.',
         tip: "Quick Tip: Always check the condition description and photos carefully. Reputable sellers rate condition honestly — if a listing says \"Good\" expect visible signs of use.",
       },
       {
@@ -359,7 +359,7 @@ export const guidesBatch17: Guide[] = [
     steps: [
       {
         title: 'Download an offline map in Google Maps (recommended)',
-        content: "Open Google Maps on your phone. Search for a city or region you want to download. Tap the name of the city that appears in the panel at the bottom. Tap the three-dot menu (⋮) in the upper right of the panel → \"Download offline map.\" A box appears showing the area that will be downloaded — pinch or drag to adjust the area. Tap \"Download.\" The map saves to your phone (typically 100-400MB per city). Once downloaded, it appears in your profile → Offline maps.",
+        content: "Open Google Maps on your phone. Search for a city or region you want to download. Tap the name of the city that appears in the panel at the bottom. Tap the three-dot menu (⋮) in the upper right of the panel → \"Download offline map.\" A box appears showing the area that will be downloaded — pinch or drag to adjust the area. Tap \"Download.\" The map saves to your phone (usually 100-400MB per city). Once downloaded, it appears in your profile → Offline maps.",
         tip: "Quick Tip: Download offline maps at home over Wi-Fi before your trip — the map files can be large and will eat into your phone data if downloaded on a cellular connection.",
       },
       {

@@ -233,7 +233,7 @@ export const guidesBatch293: Guide[] = [
       },
       {
         title: "Volunteer for plant swap and seed exchange days",
-        content: "Most community gardens host one or two seed-and-plant swap events each year, typically in early April and again in late August. Volunteering at the swap, even as a check-in helper at the front table, is a low-pressure way to meet most of the active garden members in a single morning. The swap itself is a way to share extra seedlings with neighbors, take home a variety the gardener might not have tried, and learn what crops do well in the local microclimate.",
+        content: "Most community gardens host one or two seed-and-plant swap events each year, usually in early April and again in late August. Volunteering at the swap, even as a check-in helper at the front table, is a low-pressure way to meet most of the active garden members in a single morning. The swap itself is a way to share extra seedlings with neighbors, take home a variety the gardener might not have tried, and learn what crops do well in the local microclimate.",
       },
       {
         title: "Sign up as a Garden Mentor for a new gardener",

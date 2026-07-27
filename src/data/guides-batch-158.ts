@@ -434,7 +434,7 @@ This is one of the most useful features. The Claims section shows every medical 
 - The amount billed
 - The amount Medicare approved
 - The amount Medicare paid
-- What you may owe (your share, which is typically 20% of the approved amount after meeting your deductible)
+- What you may owe (your share, which is usually 20% of the approved amount after meeting your deductible)
 
 Review this list and look for any services you do not recognize. An unfamiliar charge from a provider you never visited could show billing fraud or a billing error.
 
@@ -568,7 +568,7 @@ Tap **"Use this address"** to confirm. Instacart will now show you all the store
 
 **Step 4 — Choose a store**
 
-You will see a list of grocery stores available near you. Familiar names typically include Kroger, Costco, Aldi, Publix, Safeway, CVS, Walgreens, and others depending on your region.
+You will see a list of grocery stores available near you. Familiar names usually include Kroger, Costco, Aldi, Publix, Safeway, CVS, Walgreens, and others depending on your region.
 
 Tap on the store you prefer to shop at. You will be taken to that store's section of Instacart, which shows the same departments and categories as the physical store (Produce, Dairy, Meat, Pantry, Frozen, etc.).
 
@@ -613,7 +613,7 @@ At checkout, review or enter:
 
 Before confirming, Instacart shows you a summary of all costs:
 - **Item total** — the cost of your groceries
-- **Delivery fee** — typically $3.99 to $9.99 depending on order size, store, and your membership status
+- **Delivery fee** — usually $3.99 to $9.99 depending on order size, store, and your membership status
 - **Service fee** — a percentage (usually 5%) that covers Instacart's operating costs
 - **Tip** — Instacart pre-fills a suggested tip. You can adjust it up or down. Shoppers rely on tips as a meaningful part of their pay. A tip of 5–10% is common for a standard order.
 
@@ -673,7 +673,7 @@ You can also rate your shopper after delivery. A rating helps good shoppers cont
       {
         title: 'Review the full cost, adjust your tip, and place the order',
         content: 'Before tapping "Place order," review the breakdown: item total, delivery fee, service fee, and tip. You can increase or decrease the tip — your shopper will see the amount after delivery. Tap "Place order" to confirm. You will receive a confirmation and can track your shopper live in the app.',
-        tip: 'After your first order, check whether Instacart+ membership would save you money. If you order groceries more than twice a month, the $9.99/month membership typically covers the delivery fees it waives.',
+        tip: 'After your first order, check whether Instacart+ membership would save you money. If you order groceries more than twice a month, the $9.99/month membership usually covers the delivery fees it waives.',
       },
     ],
   },

@@ -102,7 +102,7 @@ If your speed test shows numbers a lot lower than what your internet plan promis
         title: `Compare to Your Internet Plan`,
         content: `Find your internet bill or log in to your provider's account page to see what speed you are paying for. If your test results are more than 20–30% below your plan's advertised speed, that is worth investigating.`,
         tip: `Speeds during evening hours (7–10 PM) are often lower because more people in your neighborhood are online at the same time. Test at different times of day for a complete picture.`,
-        warning: `Advertised speeds are often the maximum possible under ideal conditions — real-world speeds are typically somewhat lower. A small gap between advertised and actual speed is normal.`,
+        warning: `Advertised speeds are often the maximum possible under ideal conditions — real-world speeds are usually somewhat lower. A small gap between advertised and actual speed is normal.`,
       },
     ],
   },
@@ -306,7 +306,7 @@ After setup, explore the main health features: step counting, continuous heart r
 
 Samsung Pay lets you make contactless payments from your wrist. You add a debit or credit card through the Samsung Wallet app on your phone, then hold the watch near a payment terminal at checkout.
 
-To extend battery life, the biggest drain is the always-on display. Turning it off in the watch Settings under Display typically extends battery from about 1.5 days to 2.5 days on a single charge.
+To extend battery life, the biggest drain is the always-on display. Turning it off in the watch Settings under Display usually extends battery from about 1.5 days to 2.5 days on a single charge.
 
 Notification settings let you control which apps send alerts to your watch. This is worth spending a few minutes on — getting every notification from every app on your wrist gets old quickly. Go to Galaxy Wearable app > Watch Settings > Notifications to customize this.`,
     category: `phone-guides`,
@@ -770,7 +770,7 @@ Setting up Orbi starts with connecting the main Orbi router to your modem. Your 
 
 Download the free Orbi app on your iPhone or Android phone from the App Store or Google Play Store. Open the app and tap "New Setup." The app guides you through connecting to the Orbi router, signing in or creating a Netgear account, and naming your Wi-Fi network and setting a password.
 
-After the main router is set up, place satellite units in rooms with weak signal — typically 20 to 40 feet apart from the main router or from each other works well. Plug each satellite into power and the app will detect and add it to your network automatically.
+After the main router is set up, place satellite units in rooms with weak signal — usually 20 to 40 feet apart from the main router or from each other works well. Plug each satellite into power and the app will detect and add it to your network automatically.
 
 The Orbi app shows a network map with all connected devices, lets you set access schedules for specific devices (useful for managing children's screen time), and runs speed tests to confirm coverage.
 

@@ -149,7 +149,7 @@ export const guidesBatch305: Guide[] = [
       },
       {
         title: "Set up a Google One Family plan to share storage",
-        content: "Google One is the cloud storage and AI subscription that backs up photos, files, and Drive. The Family plan covers up to six accounts on one bill. The family manager opens one.google.com, signs in, taps Buy More Storage, picks a Family plan size, and the storage automatically shares across the family. Each member retains a separate, private Drive. The shared storage pools the available space. A 2 TB Family plan typically costs 100 dollars per year and replaces two separate 100 GB plans at a lower total. Sources include families.google.com, support.google.com under Family Link, and one.google.com under Family plans.",
+        content: "Google One is the cloud storage and AI subscription that backs up photos, files, and Drive. The Family plan covers up to six accounts on one bill. The family manager opens one.google.com, signs in, taps Buy More Storage, picks a Family plan size, and the storage automatically shares across the family. Each member retains a separate, private Drive. The shared storage pools the available space. A 2 TB Family plan usually costs 100 dollars per year and replaces two separate 100 GB plans at a lower total. Sources include families.google.com, support.google.com under Family Link, and one.google.com under Family plans.",
       },
     ],
   },

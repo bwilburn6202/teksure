@@ -719,7 +719,7 @@ Why check your report?
 
 **Your protection:** For credit cards (not debit cards), you are generally not responsible for fraudulent charges once you report them. The $0 fraud liability policy most major cards offer means the bank absorbs the loss.
 
-**Time limits:** You typically have 60 days from when the charge appeared on your statement to dispute it. Do not wait — the sooner you dispute, the better.
+**Time limits:** You usually have 60 days from when the charge appeared on your statement to dispute it. Do not wait — the sooner you dispute, the better.
 
 **Debit cards**: Have less protection. You have 60 days to dispute, but if money was taken from your bank account, recovery can take longer. Always prefer credit cards for purchases that might need dispute protection.
 
@@ -741,7 +741,7 @@ Why check your report?
       },
       {
         title: `Understand what happens next`,
-        content: `Once you file a dispute: the card company may right away issue a provisional (temporary) credit to your account for the disputed amount. They then investigate — contacting the merchant for their side of the story. The investigation typically takes 30–45 days. You will receive a letter or email with the outcome.`,
+        content: `Once you file a dispute: the card company may right away issue a provisional (temporary) credit to your account for the disputed amount. They then investigate — contacting the merchant for their side of the story. The investigation usually takes 30–45 days. You will receive a letter or email with the outcome.`,
       },
       {
         title: `Keep records of everything`,
@@ -814,7 +814,7 @@ Google Translate is free on iPhone (App Store) and Android (Google Play). On And
 
 The offline feature works by downloading complete "language packs" to your phone in advance. Once downloaded, the language is available permanently on your device at no data cost.
 
-Each language pack is typically 35–70 MB — small enough to store several languages without taking up much phone storage. You can download as many languages as you want.
+Each language pack is usually 35–70 MB — small enough to store several languages without taking up much phone storage. You can download as many languages as you want.
 
 **What works offline:**
 - Text translation (type or paste text, see translation)

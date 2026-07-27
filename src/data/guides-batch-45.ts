@@ -537,7 +537,7 @@ After running the checkup, Chrome gives you direct links to the affected website
 
 Most Android phones support Visual Voicemail — a feature that shows your voicemail messages as a list on screen, like an email inbox. So you can tap any message to listen to it without calling in. Visual Voicemail is more convenient than the traditional method of dialing a number and using a dial pad.
 
-To set up voicemail for the first time, you typically call your voicemail system (by pressing and holding the 1 key on your dial pad) and follow the recorded instructions to create a PIN and record a personal greeting.
+To set up voicemail for the first time, you usually call your voicemail system (by pressing and holding the 1 key on your dial pad) and follow the recorded instructions to create a PIN and record a personal greeting.
 
 If your phone supports Visual Voicemail, it is usually already configured by your carrier. Open the Phone app and look for a Voicemail tab or icon.
 

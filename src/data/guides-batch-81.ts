@@ -13,7 +13,7 @@ export const guidesBatch81: Guide[] = [
     difficulty: `Beginner`,
     body: `The FordPass app turns your smartphone into a remote control for your Ford vehicle. Whether you want to warm up the car before a cold morning drive, check whether you locked the doors, or find where you parked in a busy lot, FordPass puts those controls right on your phone screen.
 
-FordPass works with most Ford vehicles from model year 2017 and newer that have Ford's connected vehicle technology (called FordPass Connect or SYNC Connect). Before you can use remote features, your vehicle needs to have an active connected services plan. New Ford vehicles typically come with a complimentary trial period — check your vehicle's owner materials or the Ford website for exact terms for your model year.
+FordPass works with most Ford vehicles from model year 2017 and newer that have Ford's connected vehicle technology (called FordPass Connect or SYNC Connect). Before you can use remote features, your vehicle needs to have an active connected services plan. New Ford vehicles usually come with a complimentary trial period — check your vehicle's owner materials or the Ford website for exact terms for your model year.
 
 Setting up the app takes about 10 minutes. You will create a FordPass account, enter your vehicle's VIN (Vehicle Identification Number — a 17-character code found on a sticker at the base of your windshield on the driver's side), and then link the app to your vehicle. Once linked, the app shows your vehicle's fuel or battery level, tire pressure, oil life, and door lock status at a glance.
 
@@ -256,7 +256,7 @@ For anyone who wants to explore beyond mainstream radio without paying for a sub
     thumbnailEmoji: ``,
     publishedAt: `2026-04-20`,
     difficulty: `Beginner`,
-    body: `Bandcamp is a music platform designed around one idea: artists keep more of the money. When you buy an album or song on Bandcamp, the artist typically receives 80 to 85 percent of the sale price. This is dramatically more than what artists earn from streaming services, where a million plays might pay less than a few thousand dollars. Buying on Bandcamp is one of the most direct ways to financially support a musician you love.
+    body: `Bandcamp is a music platform designed around one idea: artists keep more of the money. When you buy an album or song on Bandcamp, the artist usually receives 80 to 85 percent of the sale price. This is dramatically more than what artists earn from streaming services, where a million plays might pay less than a few thousand dollars. Buying on Bandcamp is one of the most direct ways to financially support a musician you love.
 
 The platform hosts music from hundreds of thousands of independent artists across virtually every genre imaginable — indie rock, jazz, electronic, folk, classical, hip-hop, world music, and everything in between. You can browse by genre, search for specific artists, or follow recommendations from Bandcamp's editorial team, who write about new releases in the Bandcamp Daily blog.
 
@@ -770,7 +770,7 @@ The name "Copilot" reflects Microsoft's approach: the AI is designed to work alo
 
 There are two versions of Copilot. The free version is available to anyone with a Microsoft account at copilot.microsoft.com or through the Windows 11 taskbar button. It works like an advanced chatbot. You type questions or requests and it responds with detailed answers. This version can browse the internet for current information (unlike some AI tools that have a knowledge cutoff), generate images through Microsoft Designer, and help with general writing tasks.
 
-The paid version, called Copilot for Microsoft 365, is a subscription (typically $30 per user per month, sold through business plans) that integrates Copilot deeply into Word, Excel, PowerPoint, Outlook, and Teams. With this version, you can open a document and ask Copilot to summarize it, rewrite a section in a different tone, or create a PowerPoint presentation from your written notes. Inside Outlook, it can summarize long email threads and draft replies.
+The paid version, called Copilot for Microsoft 365, is a subscription (usually $30 per user per month, sold through business plans) that integrates Copilot deeply into Word, Excel, PowerPoint, Outlook, and Teams. With this version, you can open a document and ask Copilot to summarize it, rewrite a section in a different tone, or create a PowerPoint presentation from your written notes. Inside Outlook, it can summarize long email threads and draft replies.
 
 For most home users, the free version available through copilot.microsoft.com or the Windows 11 taskbar is a powerful tool that costs nothing. It handles research, writing help, question answering, and image generation without any subscription.
 

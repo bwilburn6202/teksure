@@ -208,7 +208,7 @@ Outside of meetings, use Teams Chat to send quick messages to coworkers, share f
       },
       {
         title: `Sign in with your work or school account`,
-        content: `Open Teams and sign in using the email address and password your organization provided. This is typically a work email like yourname@yourcompany.com, not a personal Gmail. If you are unsure of your credentials, check with your IT department or the person who invited you to Teams.`,
+        content: `Open Teams and sign in using the email address and password your organization provided. This is usually a work email like yourname@yourcompany.com, not a personal Gmail. If you are unsure of your credentials, check with your IT department or the person who invited you to Teams.`,
         tip: `If Teams asks you to set up multi-factor authentication (a verification code sent to your phone), follow the prompts — this is a security feature your organization requires.`,
       },
       {
@@ -362,7 +362,7 @@ Start with the store apps you already have access to. Kroger, Publix, Safeway, H
 
 Flipp is an app that aggregates the weekly sale flyers from all grocery stores near you in one place. Instead of sorting through a stack of paper circulars or visiting multiple websites, you can search for an item and see which store has it on sale this week.
 
-Ibotta is a cashback app for groceries. Before you shop, browse offers inside the app and add the ones for products you plan to buy. After shopping, scan your receipt or link your store loyalty card, and Ibotta deposits cash into your account — typically $0.25 to $2 per item, which adds up over time. You can transfer the cash to PayPal or Venmo or use it as a gift card.
+Ibotta is a cashback app for groceries. Before you shop, browse offers inside the app and add the ones for products you plan to buy. After shopping, scan your receipt or link your store loyalty card, and Ibotta deposits cash into your account — usually $0.25 to $2 per item, which adds up over time. You can transfer the cash to PayPal or Venmo or use it as a gift card.
 
 Fetch Rewards is simpler — scan any grocery receipt and earn points regardless of what you bought. Points eventually convert to gift cards.
 
@@ -678,7 +678,7 @@ Without a subscription, you can preview recipe titles and photos, and access a l
     steps: [
       {
         title: `Start a subscription or check if you already have access`,
-        content: `Go to cooking.nytimes.com. If you already subscribe to New York Times News or another NYT bundle, log in and check whether Cooking is included in your plan — many bundles include it. If not, subscribe to NYT Cooking standalone for around $40/year. A 14-day free trial is typically available.`,
+        content: `Go to cooking.nytimes.com. If you already subscribe to New York Times News or another NYT bundle, log in and check whether Cooking is included in your plan — many bundles include it. If not, subscribe to NYT Cooking standalone for around $40/year. A 14-day free trial is usually available.`,
         tip: `NYT regularly offers discounted rates for new subscribers. If the standard price appears, look for a promotional offer or check third-party deal sites for current discount codes.`,
       },
       {
@@ -792,7 +792,7 @@ Google Maps makes offline downloads straightforward. Search for a city, region, 
 
 What works without internet: turn-by-turn directions, searching for addresses and businesses in the downloaded area, estimated travel time, and basic navigation. What does not work offline: real-time traffic updates, transit schedules and bus times, Street View, live search suggestions outside the saved area, and business reviews.
 
-Storage space is a consideration. A major city's metro area typically takes 200 to 500 megabytes. A large region like all of Southern California might take 1 to 2 gigabytes. You can manage your downloaded maps by going to Google Maps Settings > Offline maps.
+Storage space is a consideration. A major city's metro area usually takes 200 to 500 megabytes. A large region like all of Southern California might take 1 to 2 gigabytes. You can manage your downloaded maps by going to Google Maps Settings > Offline maps.
 
 Apple Maps added offline map downloads in iOS 17. Go to the Settings app, tap Maps, then tap Offline Maps, then "Download New Map." Search for the area you want and download it.
 

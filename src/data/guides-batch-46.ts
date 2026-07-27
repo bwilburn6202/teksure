@@ -285,7 +285,7 @@ Night Mode works by keeping the shutter open slightly longer (long exposure) whi
 
 On Samsung phones, Night Mode is called "Night mode" and appears as a separate camera mode. On Pixel phones, Night Sight activates automatically in the dark or can be selected manually. Other Android phones may call it "Night mode," "Pro Night," or similar.
 
-Night Mode works best when both you and your subject are relatively still. The longer capture process — typically 2–5 seconds — means even small movements can introduce blur. Setting your phone against a surface or railing helps a lot.
+Night Mode works best when both you and your subject are relatively still. The longer capture process — usually 2–5 seconds — means even small movements can introduce blur. Setting your phone against a surface or railing helps a lot.
 
 For outdoor night scenes like city streets, restaurant lighting, or holiday lights, Night Mode produces dramatically better results than the standard auto mode.`,
     steps: [
@@ -308,7 +308,7 @@ For outdoor night scenes like city streets, restaurant lighting, or holiday ligh
       },
       {
         title: `Take the Shot and Wait`,
-        content: `Tap the shutter button and hold the phone still. You will see a countdown timer as the camera captures. When it finishes, the photo appears — typically much brighter and clearer than what you see with the naked eye. Night Mode can make a dark alley look like dusk.`,
+        content: `Tap the shutter button and hold the phone still. You will see a countdown timer as the camera captures. When it finishes, the photo appears — usually much brighter and clearer than what you see with the naked eye. Night Mode can make a dark alley look like dusk.`,
         warning: `Night Mode does not freeze moving subjects well. Use it for still scenes, landscapes, and posed portraits. For a candle-lit birthday cake with people moving around, the standard camera with flash may give better results than Night Mode.`,
       },
     ],
@@ -327,7 +327,7 @@ For outdoor night scenes like city streets, restaurant lighting, or holiday ligh
 
 The self-timer delays the shutter. You tap the button and the camera counts down 3 or 10 seconds before taking the photo. This gives you time to set the phone down on a surface or tripod, walk into the frame, and be in the photo yourself. It is also useful for reducing camera shake: prop the phone up, set a 3-second timer, and let the vibration from tapping settle before the shot fires.
 
-Burst Mode takes a rapid series of photos — typically 10 per second — as long as you hold the shutter button. This is excellent for action shots (kids at play, sports, pets chasing toys) where a single tap might miss the exact moment. After shooting, you pick the best frame from the burst.
+Burst Mode takes a rapid series of photos — usually 10 per second — as long as you hold the shutter button. This is excellent for action shots (kids at play, sports, pets chasing toys) where a single tap might miss the exact moment. After shooting, you pick the best frame from the burst.
 
 On iPhone 11 and newer, you activate Burst Mode differently than older iPhones: press the Volume Up button while pointing in Photo mode, or slide the shutter button to the left. On older iPhones, holding the shutter button starts a burst.
 
@@ -751,7 +751,7 @@ You can even scroll through multi-page PDFs or use arrow keys to browse through 
     difficulty: `Beginner`,
     body: `iPhone batteries are designed to retain up to 80% of their original capacity after 500 complete charge cycles (roughly 1–2 years of normal use). After that, battery health declines. And you may notice your phone does not last as long through the day, shuts down unexpectedly, or charges slowly.
 
-The good news: a battery replacement is typically much cheaper than buying a new phone. And it can make an older iPhone feel like new again. Apple offers battery replacement at Apple Stores and Apple Authorized Service Providers for a set price depending on the model.
+The good news: a battery replacement is usually much cheaper than buying a new phone. And it can make an older iPhone feel like new again. Apple offers battery replacement at Apple Stores and Apple Authorized Service Providers for a set price depending on the model.
 
 Your iPhone tracks its own battery health as a percentage. A new battery is 100%. Apple recommends replacing the battery when it drops below 80% — below that level, performance throttling may kick in to prevent unexpected shutdowns.
 
@@ -770,7 +770,7 @@ After replacement, your iPhone charges faster, lasts longer, and unexpected shut
       },
       {
         title: `Check the Replacement Price`,
-        content: `Battery replacement prices at Apple: most iPhones cost $99 to replace the battery (as of 2026). If you have AppleCare+, battery replacement is free when capacity drops below 80%. Find current pricing at apple.com/support/iphone/repair — click "Get an estimate." Authorized repair shops typically charge $50–$80.`,
+        content: `Battery replacement prices at Apple: most iPhones cost $99 to replace the battery (as of 2026). If you have AppleCare+, battery replacement is free when capacity drops below 80%. Find current pricing at apple.com/support/iphone/repair — click "Get an estimate." Authorized repair shops usually charge $50–$80.`,
       },
       {
         title: `Schedule a Battery Replacement`,

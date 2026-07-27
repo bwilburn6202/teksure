@@ -102,7 +102,7 @@ The app is a project of the California Academy of Sciences and National Geograph
     difficulty: `Beginner`,
     body: `HelloFresh is a meal kit delivery service that sends you pre-measured ingredients and step-by-step recipe cards right to your front door. Instead of spending time planning meals, making shopping lists, and measuring out ingredients, you open the box, follow the card, and cook a fresh dinner. Most meals take between 30 and 45 minutes to prepare.
 
-This service is especially appealing if you find grocery shopping tiring, if you want to try new recipes without buying large quantities of ingredients, or if you live alone and struggle with buying produce that goes to waste. HelloFresh ships meals for two people, four people, or more. And you can choose how many nights per week you want to cook — typically two, three, four, or five nights.
+This service is especially appealing if you find grocery shopping tiring, if you want to try new recipes without buying large quantities of ingredients, or if you live alone and struggle with buying produce that goes to waste. HelloFresh ships meals for two people, four people, or more. And you can choose how many nights per week you want to cook — usually two, three, four, or five nights.
 
 When you sign up, you tell HelloFresh about your food preferences — whether you want vegetarian options, low-calorie meals, family-friendly recipes, or something else. Each week, HelloFresh shows you a menu and you select the meals you want. Your box arrives on a scheduled delivery day, packed in an insulated container with ice packs to keep everything fresh.
 
@@ -117,7 +117,7 @@ Ingredients arrive clearly labeled and portioned. The recipe cards use simple la
       },
       {
         title: `Set Your Food Preferences`,
-        content: `After choosing a plan size, you will be asked about dietary preferences. Options typically include meat and veggies, vegetarian, low-calorie, family-friendly, and more. Select what fits your household. These preferences shape the weekly menu suggestions you see, though you can always swap meals.`,
+        content: `After choosing a plan size, you will be asked about dietary preferences. Options usually include meat and veggies, vegetarian, low-calorie, family-friendly, and more. Select what fits your household. These preferences shape the weekly menu suggestions you see, though you can always swap meals.`,
       },
       {
         title: `Select Your First Week's Meals`,
@@ -175,7 +175,7 @@ StoryWorth lets you browse through a library of hundreds of question prompts and
       },
       {
         title: `Order the Finished Book`,
-        content: `After a year of weekly stories, StoryWorth notifies you that your book is ready to compile. You can review all the stories, add a dedication page, and customize the cover. Order one copy or several for different family members. The printed book typically arrives within a few weeks.`,
+        content: `After a year of weekly stories, StoryWorth notifies you that your book is ready to compile. You can review all the stories, add a dedication page, and customize the cover. Order one copy or several for different family members. The printed book usually arrives within a few weeks.`,
         tip: `You do not have to wait a full year to order. You can request a book at any time with however many stories have been collected so far.`,
       },
     ],
@@ -303,7 +303,7 @@ Once you have a charging station set up, build the habit of placing all your dev
       },
       {
         title: `Gather the Right Cables`,
-        content: `Make sure you have the correct cable for each device you plan to charge at this station. iPhones typically use a Lightning or USB-C cable depending on the model. Android phones and newer iPads commonly use USB-C. Older Kindles and some tablets use Micro-USB. Label your cables with small pieces of tape if they all look similar.`,
+        content: `Make sure you have the correct cable for each device you plan to charge at this station. iPhones usually use a Lightning or USB-C cable depending on the model. Android phones and newer iPads commonly use USB-C. Older Kindles and some tablets use Micro-USB. Label your cables with small pieces of tape if they all look similar.`,
       },
       {
         title: `Set Up the Station`,
@@ -481,7 +481,7 @@ Microsoft 365 Family requires a Microsoft account to set up and manage. If you h
       },
       {
         title: `Install the Apps on Your Computer`,
-        content: `Sign in at microsoft365.com with your Microsoft account. Click "Install apps" in the upper right corner and select "Microsoft 365 apps." The installer will download. Run it and follow the on-screen prompts. Installation typically takes 10 to 20 minutes depending on your internet speed.`,
+        content: `Sign in at microsoft365.com with your Microsoft account. Click "Install apps" in the upper right corner and select "Microsoft 365 apps." The installer will download. Run it and follow the on-screen prompts. Installation usually takes 10 to 20 minutes depending on your internet speed.`,
       },
       {
         title: `Invite Family Members to Share`,
@@ -518,7 +518,7 @@ The service is available at photos.walmart.com and also through the Walmart app.
 
 Photo gifts make wonderful presents that feel personal and thoughtful. A photo book filled with family vacation pictures, a canvas print of a grandchild's portrait, or a blanket featuring a beloved pet — these are gifts people treasure for years. The website makes the creation process step by step, guiding you through adding photos, adding captions if desired, and customizing the layout before you order.
 
-For same-day pickup, Walmart typically has your standard prints ready in about an hour at the store's photo kiosk area.`,
+For same-day pickup, Walmart usually has your standard prints ready in about an hour at the store's photo kiosk area.`,
     steps: [
       {
         title: `Go to Walmart Photo Center`,
@@ -765,7 +765,7 @@ Tubi is owned by Fox Corporation and is one of the most popular free streaming s
       },
       {
         title: `Watch and Manage Commercials`,
-        content: `When you start watching a show or movie on Tubi, commercials will appear periodically — typically every 15 to 20 minutes, similar to regular television. These commercials are how Tubi pays for the service. You cannot skip them, but they are generally short. Use this time to stretch, get a glass of water, or take a short break.`,
+        content: `When you start watching a show or movie on Tubi, commercials will appear periodically — usually every 15 to 20 minutes, similar to regular television. These commercials are how Tubi pays for the service. You cannot skip them, but they are generally short. Use this time to stretch, get a glass of water, or take a short break.`,
       },
       {
         title: `Add Titles to Your Watchlist`,
@@ -788,7 +788,7 @@ Tubi is owned by Fox Corporation and is one of the most popular free streaming s
 
 Starz original programming includes popular series like Outlander, Power (and its many spinoffs), The Great (a historical comedy-drama), and Becoming Elizabeth, among others. The movie library rotates regularly and includes content from Sony Pictures and Lionsgate. So you often find major theatrical releases available to stream a few months after they leave theaters.
 
-As of 2026, Starz costs around $9 to $10 per month. There is typically a promotional rate available for new subscribers — sometimes as low as $3 per month for the first few months. The service offers unlimited streaming on your devices, with the ability to download episodes to watch offline without an internet connection.
+As of 2026, Starz costs around $9 to $10 per month. There is usually a promotional rate available for new subscribers — sometimes as low as $3 per month for the first few months. The service offers unlimited streaming on your devices, with the ability to download episodes to watch offline without an internet connection.
 
 You can subscribe directly at starz.com, through the Apple App Store, through Google Play, through Amazon Prime Video as an add-on channel, or through a cable or satellite provider if you have one. Subscribing through Amazon Prime makes billing simple if you already manage streaming services there.
 
@@ -883,7 +883,7 @@ Scribd works on a "soft cap" model for some content — if you read an unusually
 
 The Scribd app is available for iPhone, iPad, Android phones, and Android tablets. You can also access Scribd on any computer through the website at scribd.com. Downloads for offline reading are available on the mobile app, which is convenient for travel.
 
-Scribd offers a free trial period for new members — typically 30 days — so you can explore the library and see if it fits your reading habits before the regular subscription rate applies. You can cancel any time during the trial without being charged.`,
+Scribd offers a free trial period for new members — usually 30 days — so you can explore the library and see if it fits your reading habits before the regular subscription rate applies. You can cancel any time during the trial without being charged.`,
     steps: [
       {
         title: `Start a Free Trial at Scribd.com`,

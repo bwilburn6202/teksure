@@ -60,7 +60,7 @@ export const guidesBatch16: Guide[] = [
     thumbnailEmoji: '',
     publishedAt: '2026-04-19',
     difficulty: 'Beginner',
-    body: `eBay is one of the largest online shopping sites in the world. And it has been around since 1995. It is used to buy and sell all kinds of items — from electronics and clothing to collectibles, books, and household goods. Many items on eBay are used or refurbished, which means you can find great deals on things that would cost much more in a store.\n\nBuyers can either bid on items in an auction format or choose "Buy It Now" to purchase at a fixed price. Sellers list their items with photos, a description, and a starting price. eBay acts as the marketplace, and payments go through eBay's payment system (formerly PayPal, now integrated directly).\n\neBay is generally safe for buyers because most purchases are covered by eBay's Money Back Guarantee — if an item doesn't arrive, arrives broken, or isn't as described, eBay will typically refund you. However, there are scams on every marketplace, so knowing what to watch for keeps you protected. This guide covers both buying and selling basics so you can use eBay with confidence.`,
+    body: `eBay is one of the largest online shopping sites in the world. And it has been around since 1995. It is used to buy and sell all kinds of items — from electronics and clothing to collectibles, books, and household goods. Many items on eBay are used or refurbished, which means you can find great deals on things that would cost much more in a store.\n\nBuyers can either bid on items in an auction format or choose "Buy It Now" to purchase at a fixed price. Sellers list their items with photos, a description, and a starting price. eBay acts as the marketplace, and payments go through eBay's payment system (formerly PayPal, now integrated directly).\n\neBay is generally safe for buyers because most purchases are covered by eBay's Money Back Guarantee — if an item doesn't arrive, arrives broken, or isn't as described, eBay will usually refund you. However, there are scams on every marketplace, so knowing what to watch for keeps you protected. This guide covers both buying and selling basics so you can use eBay with confidence.`,
     steps: [
       {
         title: 'Create an eBay account and understand seller ratings',
@@ -597,7 +597,7 @@ export const guidesBatch16: Guide[] = [
       },
       {
         title: 'Order prints and photo gifts directly from the app',
-        content: "Amazon Photos connects directly to Amazon's print services. You can order printed photos, photo books, canvases, and personalized gifts right from the app. Tap any photo → tap the shopping cart or print icon → choose a product type and size → add to your Amazon cart. Prints typically arrive in 5-7 days with Prime. This is a convenient way to turn digital photos into physical memories to display or give as gifts.",
+        content: "Amazon Photos connects directly to Amazon's print services. You can order printed photos, photo books, canvases, and personalized gifts right from the app. Tap any photo → tap the shopping cart or print icon → choose a product type and size → add to your Amazon cart. Prints usually arrive in 5-7 days with Prime. This is a convenient way to turn digital photos into physical memories to display or give as gifts.",
         tip: "Quick Tip: Amazon Photos is also available on Amazon Fire tablets and Fire TV. You can view your entire photo library as a screensaver or slideshow on your TV, which makes a lovely digital picture frame.",
       },
     ],
@@ -624,7 +624,7 @@ export const guidesBatch16: Guide[] = [
     steps: [
       {
         title: 'Recognize the warning signs during the call',
-        content: "Signs that a distress call may be an AI voice scam: unexpected urgency and panic with no time to think, a request to keep the call secret from other family members, a demand for money via wire transfer, gift cards, or cryptocurrency, a follow-up call from someone claiming to be a lawyer or police officer asking you to pay bail or fees. Real emergencies don't typically require secrecy or immediate cash payments through untraceable methods.",
+        content: "Signs that a distress call may be an AI voice scam: unexpected urgency and panic with no time to think, a request to keep the call secret from other family members, a demand for money via wire transfer, gift cards, or cryptocurrency, a follow-up call from someone claiming to be a lawyer or police officer asking you to pay bail or fees. Real emergencies don't usually require secrecy or immediate cash payments through untraceable methods.",
         warning: "The voice may sound completely convincing — even if it sounds exactly like your grandchild or family member, do not assume the call is real. AI voice cloning is advanced enough to fool close relatives.",
       },
       {

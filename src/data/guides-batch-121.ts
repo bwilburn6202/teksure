@@ -267,7 +267,7 @@ Review your auto-pay transactions once a month. Just because it is automatic doe
     difficulty: 'Beginner',
     body: `Transferring money between bank accounts online is one of the most useful features of online banking. Whether you want to move money from your checking to savings, send money to your own account at a different bank, or fund an investment account, this can be done in minutes from your computer or phone.
 
-There are two types of transfers. An internal transfer moves money between two accounts at the same bank — for example, from your checking to your savings at the same institution. This is instant or takes at most a few hours. An external transfer moves money between accounts at two different banks. This typically takes 1-3 business days and uses a system called ACH (Automated Clearing House), which is the standard electronic network banks use to move money in the US.
+There are two types of transfers. An internal transfer moves money between two accounts at the same bank — for example, from your checking to your savings at the same institution. This is instant or takes at most a few hours. An external transfer moves money between accounts at two different banks. This usually takes 1-3 business days and uses a system called ACH (Automated Clearing House), which is the standard electronic network banks use to move money in the US.
 
 To set up an external transfer, you need the routing number and account number of the destination account. The routing number identifies the bank (it is a 9-digit number). The account number identifies your specific account there.
 
@@ -589,7 +589,7 @@ The same rules apply to texts and emails. Your bank may send you a fraud text as
       },
       {
         title: 'Do not click links in suspicious texts',
-        content: 'Real bank fraud texts usually ask you to reply YES or NO to confirm or deny a transaction. They typically do not include a link asking you to log in. If a text contains a link and asks you to "verify your information," go to your bank\'s official app or website directly instead of clicking.',
+        content: 'Real bank fraud texts usually ask you to reply YES or NO to confirm or deny a transaction. They usually do not include a link asking you to log in. If a text contains a link and asks you to "verify your information," go to your bank\'s official app or website directly instead of clicking.',
       },
       {
         title: 'Report suspicious contacts to your bank',
@@ -613,7 +613,7 @@ The same rules apply to texts and emails. Your bank may send you a fraud text as
 
 The routing number (also called an ABA routing number or RTN) is a 9-digit number that identifies the specific bank. Every bank in the US has one or more routing numbers. Think of it like a ZIP code for your bank.
 
-Your account number is the number that identifies your personal account at that bank. Account numbers are typically 8-17 digits long and unique to you.
+Your account number is the number that identifies your personal account at that bank. Account numbers are usually 8-17 digits long and unique to you.
 
 The easiest place to find both numbers is on a personal check. The numbers printed across the bottom of a check, from left to right, are: the 9-digit routing number, your account number, and the check number. The routing number is always the first group of numbers and is surrounded by special symbols (⑆ or similar).
 
@@ -660,7 +660,7 @@ Setting up direct deposit requires two things: your bank's routing number (a 9-d
 
 Most employers handle direct deposit through a simple form — either a paper form from HR or an online form in the employee portal. The Social Security Administration (SSA) has its own process through their website or by phone.
 
-The IRS also offers direct deposit for tax refunds. When you file your taxes, you can enter your bank information for direct deposit instead of waiting 4-6 weeks for a paper check. Direct deposit tax refunds typically arrive within 21 days.
+The IRS also offers direct deposit for tax refunds. When you file your taxes, you can enter your bank information for direct deposit instead of waiting 4-6 weeks for a paper check. Direct deposit tax refunds usually arrive within 21 days.
 
 One important note: once direct deposit is set up, it usually takes one pay period (one paycheck cycle) to take effect. You may receive one last paper check while the banking system processes the change.
 
@@ -748,7 +748,7 @@ A better option banks don't always advertise: link your checking account to your
     publishedAt: '2026-05-03',
     lastVerifiedAt: '2026-05-03',
     difficulty: 'Beginner',
-    body: `Your credit score is a 3-digit number (typically ranging from 300 to 850) that lenders use to decide whether to approve you for a loan, credit card, or apartment rental, and at what interest rate. A higher number means lower risk in the lender's eyes. Scores above 700 are generally considered good. Above 750 is excellent.
+    body: `Your credit score is a 3-digit number (usually ranging from 300 to 850) that lenders use to decide whether to approve you for a loan, credit card, or apartment rental, and at what interest rate. A higher number means lower risk in the lender's eyes. Scores above 700 are generally considered good. Above 750 is excellent.
 
 Checking your own credit score does not hurt your score — this is called a "soft inquiry" and has no effect. Only hard inquiries (when a lender checks your credit because you applied for something) can temporarily lower your score by a small amount.
 
@@ -796,7 +796,7 @@ The full credit report (which is different from the score) shows every account y
     publishedAt: '2026-05-03',
     lastVerifiedAt: '2026-05-03',
     difficulty: 'Beginner',
-    body: `A savings account is a bank account designed for money you want to keep safe and earn interest on, rather than spending day to day. Unlike your checking account, a savings account typically has limits on how many withdrawals you can make per month. But it earns interest — meaning the bank pays you a small percentage of your balance each month for keeping money there.
+    body: `A savings account is a bank account designed for money you want to keep safe and earn interest on, rather than spending day to day. Unlike your checking account, a savings account usually has limits on how many withdrawals you can make per month. But it earns interest — meaning the bank pays you a small percentage of your balance each month for keeping money there.
 
 Online banks (banks that operate without physical branches) often offer a lot higher interest rates than traditional brick-and-mortar banks. While a traditional bank might pay 0.01% to 0.10% per year, high-yield savings accounts at online banks may pay 4% to 5% annually. On $10,000, that difference is between $10 and $500 per year in interest.
 
@@ -865,7 +865,7 @@ Grandparent scams, IRS impersonation scams, romance scams, and tech support scam
       },
       {
         title: 'Expect fees and confirm them before sending',
-        content: 'Your bank will show you the wire transfer fee before you confirm. Domestic wires typically cost $20-$35. Review the fee and the full transfer details. Once you click "Confirm" or "Send," the transfer cannot be reversed.',
+        content: 'Your bank will show you the wire transfer fee before you confirm. Domestic wires usually cost $20-$35. Review the fee and the full transfer details. Once you click "Confirm" or "Send," the transfer cannot be reversed.',
       },
       {
         title: 'Recognize when a wire request is a scam',
@@ -945,7 +945,7 @@ You can set up or change your direct deposit in three ways: online through your 
 
 To make the change, you will need your bank's routing number and your account number (found on a personal check or in your bank's app).
 
-Changes to your direct deposit information typically take 30-60 days to process. During that transition period, you may still receive a paper check while the SSA updates your records. Do not close your old bank account until the first deposit arrives in your new account.
+Changes to your direct deposit information usually take 30-60 days to process. During that transition period, you may still receive a paper check while the SSA updates your records. Do not close your old bank account until the first deposit arrives in your new account.
 
 Be cautious of anyone who contacts you claiming to be from Social Security and asking for your banking information. The real SSA will never call you unsolicited and ask for your bank account numbers. If you receive such a call, hang up and call the SSA directly at 1-800-772-1213.
 

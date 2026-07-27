@@ -175,7 +175,7 @@ Blink cameras are a great starting point for home monitoring because they are af
       },
       {
         title: `View live video and motion clips`,
-        content: `In the Blink app, tap on your camera's thumbnail to see a live view. Motion clips are recorded automatically when movement is detected and appear in the "Clip Roll" section of the app. Each clip is typically 5 to 60 seconds long, depending on how long motion is detected. Tap any clip to play it back. You can also adjust how long clips can be and set a "Retrigger Time" — the number of seconds the camera waits after one clip ends before it starts recording again.`,
+        content: `In the Blink app, tap on your camera's thumbnail to see a live view. Motion clips are recorded automatically when movement is detected and appear in the "Clip Roll" section of the app. Each clip is usually 5 to 60 seconds long, depending on how long motion is detected. Tap any clip to play it back. You can also adjust how long clips can be and set a "Retrigger Time" — the number of seconds the camera waits after one clip ends before it starts recording again.`,
         tip: `Quick Tip: Start with a Retrigger Time of 10 seconds. If you are getting too many short, repetitive clips, raise it to 30 seconds to reduce the number of recordings and save battery life.`,
       },
     ],
@@ -264,7 +264,7 @@ This guide is written for someone who has never used Uber before. It covers crea
       },
       {
         title: `Rate your driver and leave a tip`,
-        content: `After each ride, the app asks you to rate your driver from 1 to 5 stars. Be honest — driver ratings affect their standing on the platform. You can also leave a cash tip within the app, which goes directly to the driver. If anything went wrong — wrong route, rude behavior, lost item — tap "Help" in the app under your trip history and Uber's support team will respond, typically within a few hours.`,
+        content: `After each ride, the app asks you to rate your driver from 1 to 5 stars. Be honest — driver ratings affect their standing on the platform. You can also leave a cash tip within the app, which goes directly to the driver. If anything went wrong — wrong route, rude behavior, lost item — tap "Help" in the app under your trip history and Uber's support team will respond, usually within a few hours.`,
         tip: `Quick Tip: If you forget something in an Uber, go to the app, find your completed trip, and tap "I lost an item." Uber will connect you directly with your driver by phone so you can arrange to retrieve it.`,
       },
     ],
@@ -309,7 +309,7 @@ This guide covers creating your Lyft account, requesting a ride, the key safety 
       },
       {
         title: `Cancel a ride if needed`,
-        content: `If you need to cancel a ride, tap the "X" button on the ride status screen right away — canceling within 2 minutes of the driver accepting is usually free. If you wait longer and the driver is already on the way, Lyft charges a small cancellation fee (typically $2 to $5) to compensate the driver for their time. Once the driver arrives, no cancellation fee applies if you decide not to get in. You are charged only if you cancel after a certain window has passed.`,
+        content: `If you need to cancel a ride, tap the "X" button on the ride status screen right away — canceling within 2 minutes of the driver accepting is usually free. If you wait longer and the driver is already on the way, Lyft charges a small cancellation fee (usually $2 to $5) to compensate the driver for their time. Once the driver arrives, no cancellation fee applies if you decide not to get in. You are charged only if you cancel after a certain window has passed.`,
       },
     ],
   },
@@ -331,7 +331,7 @@ GoGoGrandparent's operators are trained to be patient and helpful. When you call
 
 Speaking of family — GoGoGrandparent has a companion app for family members. A son, daughter, or caregiver can install the GoGoGrandparent app and receive notifications every time you request a ride, see who your driver is, track the vehicle on a map, and confirm that you arrived safely. This gives peace of mind to everyone involved.
 
-GoGoGrandparent charges a service fee on top of the regular Uber or Lyft fare, typically $0.27 per minute of monitoring. There is also a monthly subscription option at around $27/month that removes per-minute fees. This guide explains how to get started and how a family member can set up the account on your behalf.`,
+GoGoGrandparent charges a service fee on top of the regular Uber or Lyft fare, usually $0.27 per minute of monitoring. There is also a monthly subscription option at around $27/month that removes per-minute fees. This guide explains how to get started and how a family member can set up the account on your behalf.`,
     steps: [
       {
         title: `Sign up for GoGoGrandparent`,
@@ -369,9 +369,9 @@ GoGoGrandparent charges a service fee on top of the regular Uber or Lyft fare, t
     difficulty: `Beginner`,
     body: `Swappa is an online marketplace specifically for buying and selling used technology — primarily smartphones, tablets, laptops, and gaming devices. Unlike general marketplaces such as Craigslist or Facebook Marketplace, Swappa verifies every listing before it goes live. Banned or reported stolen phones are blocked using their IMEI number (a unique identification code built into every phone, similar to a VIN on a car). Listings with cracked screens, water damage, or active payment plans are also rejected.
 
-Swappa is what's called peer-to-peer, meaning you buy directly from another person rather than from a store or corporation. This typically means lower prices than buying from a carrier store or a big-box retailer. Buyers pay through PayPal, which provides an additional layer of purchase protection.
+Swappa is what's called peer-to-peer, meaning you buy directly from another person rather than from a store or corporation. This usually means lower prices than buying from a carrier store or a big-box retailer. Buyers pay through PayPal, which provides an additional layer of purchase protection.
 
-If you are looking to sell your old phone, Swappa is one of the better options because you set your own price and generally receive more money than you would from a carrier trade-in program. Carrier trade-ins are convenient, but they typically give you store credit and offer 30–60% less than market value. On Swappa, you get cash (via PayPal) directly from the buyer.
+If you are looking to sell your old phone, Swappa is one of the better options because you set your own price and generally receive more money than you would from a carrier trade-in program. Carrier trade-ins are convenient, but they usually give you store credit and offer 30–60% less than market value. On Swappa, you get cash (via PayPal) directly from the buyer.
 
 The site is straightforward to use. You can browse without creating an account. But you will need to register (free) to buy or sell. This guide explains how condition grades work, how to list a phone for sale, and how payment and protection work for both buyers and sellers.`,
     steps: [
@@ -411,7 +411,7 @@ The site is straightforward to use. You can browse without creating an account. 
     difficulty: `Beginner`,
     body: `Back Market is an online store where you can buy smartphones, laptops, tablets, and other electronics that have been professionally refurbished. "Refurbished" means a used device was inspected, repaired, cleaned, and tested by a professional technician to make sure it works properly. This is different from buying a used phone on Craigslist, where there is no inspection or guarantee.
 
-On Back Market, every seller is a professional refurbishing company — not an individual person. These companies typically purchase devices returned to carriers or manufacturers, fix whatever is worn out or broken (screens, batteries, buttons), and resell them with a warranty. Back Market vets and rates each seller based on customer reviews and quality standards.
+On Back Market, every seller is a professional refurbishing company — not an individual person. These companies usually purchase devices returned to carriers or manufacturers, fix whatever is worn out or broken (screens, batteries, buttons), and resell them with a warranty. Back Market vets and rates each seller based on customer reviews and quality standards.
 
 The savings can be significant. A refurbished iPhone that originally sold for $999 new might be available on Back Market for $499 to $649, depending on the condition grade. You are getting the same phone with the same features — often with a new battery installed — for hundreds of dollars less.
 
@@ -430,7 +430,7 @@ This guide explains Back Market's condition grades, how to browse for a good dea
       },
       {
         title: `Review the listing details before buying`,
-        content: `Click on a listing to see the full product page. Look for the "What's included" section — most Back Market listings include the device itself and a generic charging cable. Original accessories like Apple EarPods or the original box are rarely included in refurbished purchases, which is partly why the price is lower. The listing also shows exactly which refurbisher is selling it, their return rate, and how long they typically take to ship.`,
+        content: `Click on a listing to see the full product page. Look for the "What's included" section — most Back Market listings include the device itself and a generic charging cable. Original accessories like Apple EarPods or the original box are rarely included in refurbished purchases, which is partly why the price is lower. The listing also shows exactly which refurbisher is selling it, their return rate, and how long they usually take to ship.`,
       },
       {
         title: `Place your order and track shipping`,
@@ -476,8 +476,8 @@ This guide walks through the entire Decluttr process from getting a quote to rec
       },
       {
         title: `Get paid after Decluttr receives your items`,
-        content: `Once Decluttr receives your package, their team inspects each item to confirm it matches what you described. This typically takes 1 to 2 business days after delivery. If everything checks out, they send payment the next business day via PayPal, direct deposit to your bank account, or a paper check. PayPal and direct deposit are the fastest options. If an item does not match the condition you described — for example, a disc that skips or a phone with a cracked screen you did not mention — Decluttr will offer a revised lower price, which you can accept or decline.`,
-        warning: `If you decline a revised offer, Decluttr will return the item to you — but they charge a return shipping fee, typically around $5 per item. Make sure you are honest about condition upfront to avoid this situation.`,
+        content: `Once Decluttr receives your package, their team inspects each item to confirm it matches what you described. This usually takes 1 to 2 business days after delivery. If everything checks out, they send payment the next business day via PayPal, direct deposit to your bank account, or a paper check. PayPal and direct deposit are the fastest options. If an item does not match the condition you described — for example, a disc that skips or a phone with a cracked screen you did not mention — Decluttr will offer a revised lower price, which you can accept or decline.`,
+        warning: `If you decline a revised offer, Decluttr will return the item to you — but they charge a return shipping fee, usually around $5 per item. Make sure you are honest about condition upfront to avoid this situation.`,
       },
     ],
   },
@@ -497,7 +497,7 @@ The biggest thing that sets StockX apart is authentication. Every item sold on S
 
 This system makes StockX popular for buying limited-edition sneakers, sports trading cards, and other collectibles where fake products are common. You are paying a premium for the assurance that you receive a genuine, verified product.
 
-StockX charges fees to both buyers and sellers. Buyers pay a "transaction fee" (typically around 3%) plus a "payment processing fee." Sellers pay a "transaction fee" starting at around 9% and potentially decreasing with more sales. These fees are shown before you confirm any purchase or listing. This guide explains how the bid/ask system works and what to expect when you buy or sell.`,
+StockX charges fees to both buyers and sellers. Buyers pay a "transaction fee" (usually around 3%) plus a "payment processing fee." Sellers pay a "transaction fee" starting at around 9% and potentially decreasing with more sales. These fees are shown before you confirm any purchase or listing. This guide explains how the bid/ask system works and what to expect when you buy or sell.`,
     steps: [
       {
         title: `Create a StockX account`,
@@ -510,7 +510,7 @@ StockX charges fees to both buyers and sellers. Buyers pay a "transaction fee" (
       },
       {
         title: `Buy a product at the current price`,
-        content: `To buy right away, click "Buy Now" on any product page. You will see the item price, the buyer transaction fee (shown as a percentage), and the payment processing fee. Review the total and click "Confirm." StockX will contact a seller whose ask matches the price and arrange for them to ship the item to a StockX authentication center. The whole process from purchase to delivery typically takes 7 to 12 days — authentication adds time compared to direct shipping.`,
+        content: `To buy right away, click "Buy Now" on any product page. You will see the item price, the buyer transaction fee (shown as a percentage), and the payment processing fee. Review the total and click "Confirm." StockX will contact a seller whose ask matches the price and arrange for them to ship the item to a StockX authentication center. The whole process from purchase to delivery usually takes 7 to 12 days — authentication adds time compared to direct shipping.`,
       },
       {
         title: `List an item to sell`,
@@ -554,7 +554,7 @@ This guide explains who qualifies, where to purchase the pass, and how to use it
       },
       {
         title: `Purchase the pass online`,
-        content: `You can also purchase the Senior Pass online at store.usgs.gov (the US Geological Survey online store, which handles this program). Add the Senior Pass to your cart, provide your name and shipping address, and pay by credit card. Processing and mailing typically takes 1 to 3 weeks. The online version requires you to upload or mail documentation proving your age and citizenship or permanent residency — follow the current instructions on the website as requirements can change.`,
+        content: `You can also purchase the Senior Pass online at store.usgs.gov (the US Geological Survey online store, which handles this program). Add the Senior Pass to your cart, provide your name and shipping address, and pay by credit card. Processing and mailing usually takes 1 to 3 weeks. The online version requires you to upload or mail documentation proving your age and citizenship or permanent residency — follow the current instructions on the website as requirements can change.`,
       },
       {
         title: `Use the pass at recreation sites`,
@@ -575,7 +575,7 @@ This guide explains who qualifies, where to purchase the pass, and how to use it
     difficulty: `Beginner`,
     body: `Recreation.gov is the official website operated by the US government for reserving campsites, cabins, day-use areas, and permits at federal recreation sites — including national parks, national forests, and Bureau of Land Management areas. If you want to camp at Yosemite Valley, the Grand Canyon's South Rim, or Acadia National Park, this is where those reservations are made. There is no other official way to book these sites.
 
-The site is free to browse. Creating an account is also free. You only pay when you complete a reservation. Most reservations require a non-refundable $6 to $10 booking fee per site per night, plus the actual campsite fee which varies by location (typically $20 to $40 per night).
+The site is free to browse. Creating an account is also free. You only pay when you complete a reservation. Most reservations require a non-refundable $6 to $10 booking fee per site per night, plus the actual campsite fee which varies by location (usually $20 to $40 per night).
 
 The most important thing to know about Recreation.gov is timing. Many popular campgrounds in national parks release their reservation windows exactly 6 months in advance, often at precisely 10:00 AM Eastern Time. For peak summer dates at the most popular parks, sites can sell out within minutes of opening. This means planning ahead is essential — not nice to have, but necessary for popular destinations.
 
@@ -603,7 +603,7 @@ This guide walks through creating an account, searching for campgrounds, reading
       },
       {
         title: `Complete the reservation and understand cancellations`,
-        content: `Select your arrival and departure dates, choose your specific site, and click "Reserve." Enter payment information — credit or debit card — and review the total, which includes the campsite fee plus the Recreation.gov booking fee. After payment, you receive a confirmation email with a reservation number. Print or save this number — some park entrance stations ask for it. To cancel, log into your account and find your reservation. Canceling at least 14 days before your arrival typically provides a partial refund. Canceling closer to the arrival date forfeits more of the fee.`,
+        content: `Select your arrival and departure dates, choose your specific site, and click "Reserve." Enter payment information — credit or debit card — and review the total, which includes the campsite fee plus the Recreation.gov booking fee. After payment, you receive a confirmation email with a reservation number. Print or save this number — some park entrance stations ask for it. To cancel, log into your account and find your reservation. Canceling at least 14 days before your arrival usually provides a partial refund. Canceling closer to the arrival date forfeits more of the fee.`,
       },
     ],
   },
@@ -631,7 +631,7 @@ The app is also a good resource for planning. Before you go, browse ranger-led p
       },
       {
         title: `Download a park for offline use`,
-        content: `Use the search bar to find the park you plan to visit — for example, "Grand Teton" or "Acadia." On the park's main page, look for a "Download" button (it may appear as a cloud icon with a downward arrow). Tap it to download the park's complete information package, including maps, trail data, and program listings. The download size is typically 50 to 200 megabytes, so do this while connected to Wi-Fi at home before your trip to avoid using your phone's cellular data.`,
+        content: `Use the search bar to find the park you plan to visit — for example, "Grand Teton" or "Acadia." On the park's main page, look for a "Download" button (it may appear as a cloud icon with a downward arrow). Tap it to download the park's complete information package, including maps, trail data, and program listings. The download size is usually 50 to 200 megabytes, so do this while connected to Wi-Fi at home before your trip to avoid using your phone's cellular data.`,
         tip: `Quick Tip: Download your park at least the night before you visit — do not rely on finding Wi-Fi at a park visitor center, as those networks can be slow and crowded.`,
       },
       {
@@ -684,7 +684,7 @@ The activity is completely free to start. There is a premium membership ($30/yea
       },
       {
         title: `Search for and open the cache`,
-        content: `When the app shows you are within 20 to 30 feet of the coordinates, put the phone away and start looking with your eyes. Caches are typically hidden but not buried — look under rocks, inside tree hollows, behind loose bark, at the base of fence posts, or under benches. Many beginners walk right past a cache because they are looking at their phone screen rather than the environment. Most caches blend into their surroundings — a grey container against a grey rock, or a magnetic key holder stuck to a metal surface.`,
+        content: `When the app shows you are within 20 to 30 feet of the coordinates, put the phone away and start looking with your eyes. Caches are usually hidden but not buried — look under rocks, inside tree hollows, behind loose bark, at the base of fence posts, or under benches. Many beginners walk right past a cache because they are looking at their phone screen rather than the environment. Most caches blend into their surroundings — a grey container against a grey rock, or a magnetic key holder stuck to a metal surface.`,
         warning: `Never move the cache from where you found it. Open it, sign the log, enjoy the moment, and return it to the exact same spot and position you found it in — the next person needs to find it too.`,
       },
       {
@@ -706,7 +706,7 @@ The activity is completely free to start. There is a premium membership ($30/yea
     difficulty: `Intermediate`,
     body: `The Schlage Encode is a smart deadbolt lock — the kind of lock that slides into the door frame to secure your door — with a built-in keypad and Wi-Fi connection. Unlike many smart locks that require a separate hub device, the Encode connects directly to your home Wi-Fi network. This means you can lock and unlock your door from your phone anywhere in the world, create and delete access codes for family members or guests, and receive notifications when the door is locked or unlocked.
 
-The lock runs on four AA batteries, which typically last 6 to 12 months depending on how often the lock is used. There is no wiring involved in the installation. The Schlage Encode replaces your existing deadbolt — if you currently have a keyed deadbolt lock on your door, the Encode takes its place. You will keep one key for emergency backup, but day-to-day you use the keypad and your phone.
+The lock runs on four AA batteries, which usually last 6 to 12 months depending on how often the lock is used. There is no wiring involved in the installation. The Schlage Encode replaces your existing deadbolt — if you currently have a keyed deadbolt lock on your door, the Encode takes its place. You will keep one key for emergency backup, but day-to-day you use the keypad and your phone.
 
 Installing the Schlage Encode requires a few basic household tasks: removing the existing deadbolt using a screwdriver, and fitting the new lock hardware onto the door. Schlage's instructions and online videos guide you through the process step by step. Most people complete the installation in 30 to 45 minutes. The lock fits most standard US door preparations — the industry term for the pre-drilled holes in your door — without any cutting or drilling.
 
@@ -732,7 +732,7 @@ The Schlage Home app is where you manage access codes, view entry logs (a histor
       },
       {
         title: `Set auto-lock and schedules`,
-        content: `In the app's lock settings, find "Auto-Lock." Enable this feature and choose how many seconds after the door closes you want it to lock automatically — options typically range from 30 seconds to 4 minutes. This is helpful if you often forget to lock up when leaving in a hurry. You can also set schedules — for example, unlock automatically at 7:00 AM and lock again at 8:00 PM — though schedules are more commonly used by businesses than households.`,
+        content: `In the app's lock settings, find "Auto-Lock." Enable this feature and choose how many seconds after the door closes you want it to lock automatically — options usually range from 30 seconds to 4 minutes. This is helpful if you often forget to lock up when leaving in a hurry. You can also set schedules — for example, unlock automatically at 7:00 AM and lock again at 8:00 PM — though schedules are more commonly used by businesses than households.`,
       },
       {
         title: `Use Alexa or Google Assistant with the lock`,
@@ -806,7 +806,7 @@ Installing a Caséta dimmer involves working with your home's electrical wiring 
     steps: [
       {
         title: `Turn off the circuit breaker before touching any wires`,
-        content: `Locate your home's electrical panel (often called the fuse box or breaker panel — it is a gray or black metal box, typically in a basement, garage, utility room, or hallway). Find the breaker labeled for the room or circuit where your switch is located and flip it to the OFF position. Go back to the switch and try it — the light should not turn on. Use a non-contact voltage tester (available at hardware stores for under $20) near the switch to double-check there is no electricity flowing before you remove any wires.`,
+        content: `Locate your home's electrical panel (often called the fuse box or breaker panel — it is a gray or black metal box, usually in a basement, garage, utility room, or hallway). Find the breaker labeled for the room or circuit where your switch is located and flip it to the OFF position. Go back to the switch and try it — the light should not turn on. Use a non-contact voltage tester (available at hardware stores for under $20) near the switch to double-check there is no electricity flowing before you remove any wires.`,
         warning: `Never work on a light switch with the power on. Electrical wiring carries 120 volts — enough to cause a serious injury. Always verify the power is off with a voltage tester before touching any wires.`,
       },
       {

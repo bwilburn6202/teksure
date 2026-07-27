@@ -40,7 +40,7 @@ Do you mostly browse the web, use Gmail, video chat on Zoom or Google Meet, and 
 
 Before you start, have two things nearby: the name of your Wi-Fi network and its password, and the email address and password for your Google account. If you do not have a Google account yet, you can create one for free during the setup process.
 
-The whole setup typically takes less than 15 minutes. After it is complete, spend a few minutes adjusting the screen brightness and text size so the display is comfortable for your eyes.`,
+The whole setup usually takes less than 15 minutes. After it is complete, spend a few minutes adjusting the screen brightness and text size so the display is comfortable for your eyes.`,
     steps: [
       { title: 'Turn on the Chromebook and choose language', content: 'Open the lid and press the power button if needed. The first screen asks for your language and keyboard layout. Select "English (United States)" and tap "Continue."' },
       { title: 'Connect to Wi-Fi', content: 'Select your home Wi-Fi network from the list. Type in your Wi-Fi password carefully — passwords are case-sensitive, meaning uppercase and lowercase letters matter.' },
@@ -107,7 +107,7 @@ Once your printer is set up once, it remembers the connection for future print j
     thumbnailEmoji: '',
     publishedAt: '2026-04-16',
     difficulty: 'Beginner',
-    body: `When you turn on a new iPad for the first time, Apple walks you through each setup step one screen at a time. The process is straightforward — you will choose your language, connect to Wi-Fi, and sign in (or create) an Apple ID, which is the account that lets you download apps and back up your data. The whole setup typically takes 15–25 minutes.
+    body: `When you turn on a new iPad for the first time, Apple walks you through each setup step one screen at a time. The process is straightforward — you will choose your language, connect to Wi-Fi, and sign in (or create) an Apple ID, which is the account that lets you download apps and back up your data. The whole setup usually takes 15–25 minutes.
 
 Before you start, have your Wi-Fi network name and password ready, and your Apple ID email and password if you already have one. If you have never had an Apple device, you will create a free Apple ID during setup. An Apple ID is just an email address and password that Apple uses to identify you. You can use any existing email address to create one.
 
@@ -345,7 +345,7 @@ You can find Inactive Account Manager in your Google account settings at myaccou
 
 To request either option, you need to submit a form on Facebook's Help Center. Facebook asks for the deceased person's name, their Facebook profile link, and proof of your relationship, such as a photograph of an obituary or death certificate. Facebook does not always require a death certificate for memorialization but does require one for account removal.
 
-The process typically takes a few days to a few weeks. You can also designate a "Legacy Contact" on your own Facebook account now — a trusted person who can manage your memorialized account someday.`,
+The process usually takes a few days to a few weeks. You can also designate a "Legacy Contact" on your own Facebook account now — a trusted person who can manage your memorialized account someday.`,
     steps: [
       { title: `Find the person's Facebook profile link`, content: `Go to facebook.com and search for the person's name. When you find their profile, copy the URL from your browser address bar. It will look something like facebook.com/personname or facebook.com/profile.php?id=123456.` },
       { title: 'Go to the Facebook Special Request form', content: 'Go to facebook.com/help and search for "memorialization request" or "deceased person." Click the link for the official form — Facebook has separate forms for memorialization and for removal/deletion.' },
@@ -420,7 +420,7 @@ The process for booking depends on your insurance and location, but in most case
     steps: [
       { title: 'Check your insurance benefits', content: 'Call the member services number on the back of your insurance card and ask: "Does my plan cover non-emergency medical transportation?" If you have Medicaid, the answer is almost certainly yes. Ask for the phone number or portal you use to schedule rides.' },
       { title: `Call or book online through your plan's transportation broker`, content: 'Medicaid transportation is often managed by a "transportation broker" company — such as ModivCare or Veyo — contracted by your state. Call their scheduling number or go to their website to request a ride, giving your appointment date, time, address, and pickup address.' },
-      { title: 'Book at least 2–3 business days ahead', content: 'NEMT services typically require advance notice — usually 2 to 3 business days minimum. Do not wait until the day before your appointment. Some plans allow next-day or same-day booking for urgent appointments.' },
+      { title: 'Book at least 2–3 business days ahead', content: 'NEMT services usually require advance notice — usually 2 to 3 business days minimum. Do not wait until the day before your appointment. Some plans allow next-day or same-day booking for urgent appointments.' },
       { title: 'Confirm the day before', content: `Call the transportation broker the day before your appointment to confirm the pickup time and address. Ask for the driver's name and what type of vehicle to expect. Write down the confirmation number.` },
       { title: `Ask your doctor's office for help if needed`, content: `If you are having trouble navigating the booking process, ask the social worker or care coordinator at your doctor's office for help. Many medical offices have staff who arrange transportation for patients regularly and can walk you through the process.` },
     ],

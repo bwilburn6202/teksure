@@ -109,7 +109,7 @@ AARP operates a free Fraud Watch helpline at 1-877-908-3360. You can call to rep
     steps: [
       {
         title: 'Join AARP online or by phone',
-        content: 'Go to aarp.org in your web browser. In the top right area of the page, look for a "Join AARP" or "Become a Member" button. Click it. You will see membership options — typically a one-year plan for around $16, or multi-year plans at a discount per year. Fill in your name, address, email, and payment information. After completing your purchase, you will receive a confirmation email and a welcome letter by mail with your membership card. Alternatively, call 1-888-OUR-AARP (1-888-687-2277) to join by phone if you prefer talking to a person.',
+        content: 'Go to aarp.org in your web browser. In the top right area of the page, look for a "Join AARP" or "Become a Member" button. Click it. You will see membership options — usually a one-year plan for around $16, or multi-year plans at a discount per year. Fill in your name, address, email, and payment information. After completing your purchase, you will receive a confirmation email and a welcome letter by mail with your membership card. Alternatively, call 1-888-OUR-AARP (1-888-687-2277) to join by phone if you prefer talking to a person.',
         tip: 'Quick Tip: Watch for AARP membership offers in the mail. They sometimes include a reduced first-year rate. If you already received a mailer, use the code inside rather than joining at the standard price.',
       },
       {
@@ -244,7 +244,7 @@ Most major hearing aid manufacturers have a companion app: ReSound Smart 3D, Oti
       {
         title: 'Prepare your hearing aids for pairing',
         content: 'Before pairing, put your hearing aids in their charging case or turn them off, then turn them back on (or remove them from the case). This puts them into pairing mode — most hearing aids are discoverable for a few minutes after being powered on. If your hearing aids have a pairing button, consult the manual for your specific model. Keep the hearing aids within two feet of your phone during the pairing process.',
-        tip: 'Quick Tip: If you have two hearing aids (one for each ear), both will typically pair at the same time as a pair. You do not usually have to pair each one separately.',
+        tip: 'Quick Tip: If you have two hearing aids (one for each ear), both will usually pair at the same time as a pair. You do not usually have to pair each one separately.',
       },
       {
         title: 'Pair Made for iPhone (MFi) hearing aids to iPhone',
@@ -268,7 +268,7 @@ Most major hearing aid manufacturers have a companion app: ReSound Smart 3D, Oti
       },
       {
         title: 'Fix common pairing problems',
-        content: 'If your hearing aids do not appear during pairing: make sure they are in pairing mode (power off and on again), keep them very close to your phone, and make sure no other phone or tablet is actively connected to them — hearing aids typically connect to one device at a time. If you have already paired them to another phone, disconnect them from that device first. If paired hearing aids stop working after a phone update: go back to the Hearing Devices (iPhone) or Bluetooth (Android) settings, select your hearing aids, choose "Forget this device," and pair them again from scratch. If audio cuts in and out: move your phone closer, check that no other Bluetooth device is competing for the connection, and make sure the hearing aid batteries are adequately charged.',
+        content: 'If your hearing aids do not appear during pairing: make sure they are in pairing mode (power off and on again), keep them very close to your phone, and make sure no other phone or tablet is actively connected to them — hearing aids usually connect to one device at a time. If you have already paired them to another phone, disconnect them from that device first. If paired hearing aids stop working after a phone update: go back to the Hearing Devices (iPhone) or Bluetooth (Android) settings, select your hearing aids, choose "Forget this device," and pair them again from scratch. If audio cuts in and out: move your phone closer, check that no other Bluetooth device is competing for the connection, and make sure the hearing aid batteries are adequately charged.',
         warning: 'Do not reset your hearing aids without guidance from your audiologist. Some hearing aids require professional software to restore custom settings after a factory reset.',
       },
     ],

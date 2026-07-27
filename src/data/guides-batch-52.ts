@@ -388,7 +388,7 @@ Neither browser is perfect. Many people use Firefox as their main browser for ev
     steps: [
       {
         title: `Download and install Firefox`,
-        content: `On your computer, open your current browser (Chrome, Edge, or Safari) and go to www.firefox.com. Click the large purple "Download Firefox" button. The download will start automatically. Once downloaded, open the file (it might be in your Downloads folder or appear at the bottom of your screen). Follow the installation instructions — typically you click "Next" or "Continue" a few times and then "Finish." Firefox will open automatically when installation is complete.`,
+        content: `On your computer, open your current browser (Chrome, Edge, or Safari) and go to www.firefox.com. Click the large purple "Download Firefox" button. The download will start automatically. Once downloaded, open the file (it might be in your Downloads folder or appear at the bottom of your screen). Follow the installation instructions — usually you click "Next" or "Continue" a few times and then "Finish." Firefox will open automatically when installation is complete.`,
         tip: `The download is free and safe directly from Mozilla's official website at firefox.com.`
       },
       {

@@ -282,7 +282,7 @@ One important habit: always "eject" the flash drive before pulling it out. This 
     difficulty: `Beginner`,
     body: `A USB flash drive (also called a thumb drive or memory stick) is a small portable storage device that lets you carry files with you or back them up away from your main computer. On a Mac, connecting a flash drive is quick — the drive appears right on your desktop so you can work with it like any folder.
 
-Newer Macs (made after 2016) typically use USB-C ports instead of the older, larger USB-A ports. If your flash drive has the rectangular USB-A connector and your Mac only has USB-C ports, you'll need a small USB-C to USB-A adapter, available for a few dollars at any electronics or office supply store.
+Newer Macs (made after 2016) usually use USB-C ports instead of the older, larger USB-A ports. If your flash drive has the rectangular USB-A connector and your Mac only has USB-C ports, you'll need a small USB-C to USB-A adapter, available for a few dollars at any electronics or office supply store.
 
 Once connected, the flash drive icon shows up on your Mac desktop and in the Finder sidebar. You can drag files onto it to save copies there, or drag files off it to move them to your Mac.
 
@@ -383,7 +383,7 @@ You'll need a free Apple ID to book online. If you don't have one, you can call 
     body: `The US Postal Service (USPS) is one of the most affordable ways to ship packages anywhere in the country. You can drop off a package at your local post office, schedule a free pickup from your front door, or print a pre-paid label online at home and drop it off at any USPS location.
 
 There are several shipping options to choose from:
-- **Priority Mail** is the most popular option. It typically delivers in 1–3 business days and includes free boxes you can pick up at the post office or order online at usps.com.
+- **Priority Mail** is the most popular option. It usually delivers in 1–3 business days and includes free boxes you can pick up at the post office or order online at usps.com.
 - **First-Class Package Service** is cheaper for small, lightweight items under 16 ounces.
 - **Priority Mail Express** is the fastest option with overnight or two-day delivery, but it's the most expensive.
 - **Ground Advantage** is a slower, less expensive option for heavier packages that aren't time-sensitive.
@@ -624,7 +624,7 @@ You can also lock a shared note if it contains sensitive information — but not
     difficulty: `Beginner`,
     body: `Modern Android phones have grown quite large, and reaching the top of the screen with just one thumb can be a stretch. One-handed mode solves this by shrinking the active screen area down to the lower portion of the display, so buttons and links are within comfortable reach when you're holding the phone with a single hand.
 
-This feature is available on most Android phones, though the way you activate it and where the setting lives varies by manufacturer. On Google Pixel phones, it's in Settings > System > One-Handed Mode. On Samsung Galaxy devices, it's found in Settings > Advanced Features > One-Handed Mode. Other Android brands typically have it under Accessibility or Display settings.
+This feature is available on most Android phones, though the way you activate it and where the setting lives varies by manufacturer. On Google Pixel phones, it's in Settings > System > One-Handed Mode. On Samsung Galaxy devices, it's found in Settings > Advanced Features > One-Handed Mode. Other Android brands usually have it under Accessibility or Display settings.
 
 Once enabled, you activate one-handed mode in real time by swiping down on the bottom edge of the screen (on many phones) or by double-tapping the home button area. The screen content shifts down to fill only the bottom half or two-thirds of the display. And you can move it to the left or right side depending on which hand you're using.
 
@@ -666,7 +666,7 @@ One-handed mode is especially helpful when you're carrying something in the othe
     thumbnailEmoji: ``,
     publishedAt: `2026-04-19`,
     difficulty: `Beginner`,
-    body: `A Windows PIN is a short numeric code — typically 4 to 8 digits — that you enter to sign into your computer instead of typing a long password. It's faster, and despite being shorter, it's actually more secure than a regular password in several important ways.
+    body: `A Windows PIN is a short numeric code — usually 4 to 8 digits — that you enter to sign into your computer instead of typing a long password. It's faster, and despite being shorter, it's actually more secure than a regular password in several important ways.
 
 Unlike a password, your PIN is stored only on your specific computer. It cannot be used to access your account from another device, which means that even if someone learns your PIN, they can't log into your account from their own computer. A stolen password, by contrast, works anywhere.
 

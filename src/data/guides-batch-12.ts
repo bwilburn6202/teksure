@@ -98,7 +98,7 @@ export const guidesBatch12: Guide[] = [
       },
       {
         title: 'See which apps are using the most battery',
-        content: `Stay in Settings → Battery and scroll down past the battery health section. You'll see a list of apps with percentages showing how much battery each one used in the last 24 hours. Apps that are high on the list but that you rarely use are prime targets for the next steps. Social media apps, streaming apps, and navigation apps typically use the most battery.`,
+        content: `Stay in Settings → Battery and scroll down past the battery health section. You'll see a list of apps with percentages showing how much battery each one used in the last 24 hours. Apps that are high on the list but that you rarely use are prime targets for the next steps. Social media apps, streaming apps, and navigation apps usually use the most battery.`,
       },
       {
         title: 'Turn off Background App Refresh',

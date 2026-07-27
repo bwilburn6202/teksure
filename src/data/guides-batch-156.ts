@@ -136,7 +136,7 @@ Each bureau has an online dispute process. Go to the bureau's website — **equi
       {
         title: 'Understand the credit score scale before you check',
         content: 'Credit scores in the US run from 300 to 850. Scores of 670–739 are considered Good, 740–799 are Very Good, and 800–850 are Exceptional. Scores below 580 are considered Poor. Knowing the scale helps you understand what your number means when you see it. Checking your own score is always free and will never lower your score — this is called a soft inquiry.',
-        tip: 'The three companies that track your credit are Equifax, Experian, and TransUnion. Your score at each may be slightly different — this is normal. Lenders typically use one or two of these when reviewing an application.',
+        tip: 'The three companies that track your credit are Equifax, Experian, and TransUnion. Your score at each may be slightly different — this is normal. Lenders usually use one or two of these when reviewing an application.',
       },
       {
         title: 'Get your free credit reports at AnnualCreditReport.com',
@@ -160,7 +160,7 @@ Each bureau has an online dispute process. Go to the bureau's website — **equi
       },
       {
         title: 'Take steps to improve a low score over time',
-        content: 'The most effective actions are: pay every bill on time every month (set up auto-pay if possible), pay down credit card balances starting with the card closest to its limit, avoid closing old accounts you are not actively using, and avoid applying for new credit unless you genuinely need it. Credit improvement is gradual — consistent on-time payments typically produce visible improvement within 6 to 12 months.',
+        content: 'The most effective actions are: pay every bill on time every month (set up auto-pay if possible), pay down credit card balances starting with the card closest to its limit, avoid closing old accounts you are not actively using, and avoid applying for new credit unless you genuinely need it. Credit improvement is gradual — consistent on-time payments usually produce visible improvement within 6 to 12 months.',
         tip: 'Set a calendar reminder to check your credit reports every three months. Catching a fraudulent account or error early is far easier than dealing with it years down the road.',
       },
     ],

@@ -104,7 +104,7 @@ export const guidesBatch18: Guide[] = [
       {
         title: 'Check that everything transferred correctly',
         content: "After restore: check your Photos app to confirm photos are visible. Open a few apps and verify your settings and history are there. Check Messages for your conversation history. Open Contacts to confirm they are present. Your payment methods (credit cards in Apple Pay) will need to be re-added for security reasons — go to Settings → Wallet & Apple Pay to re-enter them.",
-        warning: "Some apps store data on their own servers and don't include all data in iCloud backups. For example, banking apps typically require you to log in again. Health app data, most settings, and iCloud Photos should all be fully restored.",
+        warning: "Some apps store data on their own servers and don't include all data in iCloud backups. For example, banking apps usually require you to log in again. Health app data, most settings, and iCloud Photos should all be fully restored.",
       },
     ],
   },
@@ -163,7 +163,7 @@ export const guidesBatch18: Guide[] = [
     steps: [
       {
         title: 'Start an Apple Fitness+ subscription',
-        content: "On your iPhone, open the Fitness app → tap \"Fitness+\" → \"Try Fitness+ Free.\" You get a free trial (typically 1-3 months for new subscribers), then $9.99/month. Alternatively, Apple Fitness+ is included in Apple One, the bundle that combines Apple services (Music, TV+, Arcade, iCloud+, and Fitness+) at a combined price. To check if you already have Fitness+ through Apple One: Settings → your name → Subscriptions.",
+        content: "On your iPhone, open the Fitness app → tap \"Fitness+\" → \"Try Fitness+ Free.\" You get a free trial (usually 1-3 months for new subscribers), then $9.99/month. Alternatively, Apple Fitness+ is included in Apple One, the bundle that combines Apple services (Music, TV+, Arcade, iCloud+, and Fitness+) at a combined price. To check if you already have Fitness+ through Apple One: Settings → your name → Subscriptions.",
         tip: "Quick Tip: You do not need an Apple Watch to browse and watch Fitness+ videos. But you need one to see your real-time metrics on screen. Without a watch, you can still follow along. You just won't see your heart rate and calories overlaid on the video.",
       },
       {
@@ -237,7 +237,7 @@ export const guidesBatch18: Guide[] = [
     steps: [
       {
         title: 'Sign up for Paramount+',
-        content: "Go to paramountplus.com or download the Paramount+ app from the App Store or Google Play. Click \"Try It Free\" to start a trial (typically 7 days). Choose a plan: Essential ($5.99/month, includes ads and live CBS), Premium ($11.99/month, no ads, plus Showtime), or Paramount+ with Showtime ($11.99/month). Enter your email and create a password. Add a payment method. You can cancel before the trial ends and pay nothing.",
+        content: "Go to paramountplus.com or download the Paramount+ app from the App Store or Google Play. Click \"Try It Free\" to start a trial (usually 7 days). Choose a plan: Essential ($5.99/month, includes ads and live CBS), Premium ($11.99/month, no ads, plus Showtime), or Paramount+ with Showtime ($11.99/month). Enter your email and create a password. Add a payment method. You can cancel before the trial ends and pay nothing.",
         tip: "Quick Tip: Paramount+ is sometimes available as part of bundles. Walmart+ members get a free Paramount+ Essential subscription. Some cable providers also offer it at no added cost — check your current provider.",
       },
       {
@@ -247,7 +247,7 @@ export const guidesBatch18: Guide[] = [
       {
         title: 'Find sports and live TV',
         content: "Tap \"Live\" at the top of the app. You see your local CBS affiliate and any currently live sporting events. During NFL season, some games broadcast on CBS appear here. Major events like Super Bowl on CBS and March Madness games are available live. Regional availability varies — some local affiliates are available everywhere, while some sports may have blackout restrictions in certain areas.",
-        tip: "Quick Tip: Paramount+ typically allows you to watch live CBS programming from any device, including your phone and smart TV — useful for watching the news or a CBS show while traveling.",
+        tip: "Quick Tip: Paramount+ usually allows you to watch live CBS programming from any device, including your phone and smart TV — useful for watching the news or a CBS show while traveling.",
       },
       {
         title: 'Create profiles and set up on your TV',
@@ -350,7 +350,7 @@ export const guidesBatch18: Guide[] = [
       },
       {
         title: 'Crop and share the annotated screenshot',
-        content: "After marking up your screenshot, use the crop tool to trim any unnecessary parts (especially if the screenshot shows personal information you don't want to share). On iPhone: the crop tool is available in the Markup editor bottom bar. On Android: crop tools are typically available in the same editing interface. After cropping, tap Done or Save. Share directly from the markup editor or from your photo library — tap the share icon and choose Messages, email, or any other app.",
+        content: "After marking up your screenshot, use the crop tool to trim any unnecessary parts (especially if the screenshot shows personal information you don't want to share). On iPhone: the crop tool is available in the Markup editor bottom bar. On Android: crop tools are usually available in the same editing interface. After cropping, tap Done or Save. Share directly from the markup editor or from your photo library — tap the share icon and choose Messages, email, or any other app.",
       },
     ],
   },
@@ -394,7 +394,7 @@ export const guidesBatch18: Guide[] = [
     thumbnailEmoji: '',
     publishedAt: '2026-04-19',
     difficulty: 'Beginner',
-    body: `When you tap a web link in an email or message, it opens in a web browser. When you tap an email address, it opens in an email app. When you tap a phone number, it dials using the phone app. The app that handles these actions is called the "default" app.\n\nBy default, iPhones use Safari for web links and Apple Mail for email. Android phones typically use Chrome and Gmail. But if you prefer a different browser (like Chrome on iPhone or Firefox on Android) or a different email app, you can change the default so links automatically open in your preferred app.\n\nThis guide explains how to change default apps on both iPhone and Android.`,
+    body: `When you tap a web link in an email or message, it opens in a web browser. When you tap an email address, it opens in an email app. When you tap a phone number, it dials using the phone app. The app that handles these actions is called the "default" app.\n\nBy default, iPhones use Safari for web links and Apple Mail for email. Android phones usually use Chrome and Gmail. But if you prefer a different browser (like Chrome on iPhone or Firefox on Android) or a different email app, you can change the default so links automatically open in your preferred app.\n\nThis guide explains how to change default apps on both iPhone and Android.`,
     steps: [
       {
         title: 'Change the default web browser on iPhone',

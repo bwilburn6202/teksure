@@ -737,7 +737,7 @@ You see the Tasker's hourly rate and reviews before you book. Payments are handl
     difficulty: 'Beginner',
     body: `Thumbtack is a website and app that sends your project description to local pros who then send you quotes. It covers hundreds of home services — from roof repair to wedding photography.
 
-Unlike TaskRabbit (which is for quick gigs), Thumbtack is for bigger jobs that typically need a licensed contractor.`,
+Unlike TaskRabbit (which is for quick gigs), Thumbtack is for bigger jobs that usually need a licensed contractor.`,
     steps: [
       { title: 'Go to thumbtack.com or install the app', content: 'Use either the website or the free app. Create an account with your email and zip code so pros in your area see your request.' },
       { title: 'Describe your project', content: 'Pick a category (like "Plumbing" or "Roofing") and answer the follow-up questions. Details matter — "Leaky kitchen faucet" gets a better quote than "plumbing help."' },

@@ -526,7 +526,7 @@ Reading a retirement account balance can be confusing at first because the numbe
 
 The app also allows some account management: you can view and update beneficiaries, view statements and tax documents (including your 1099-R for distributions and 5498 for IRA contributions), change your contribution percentage if your employer allows it, and update contact information.
 
-For active management — changing what funds your money is in, initiating withdrawals, or setting up new contributions — you typically have more options through the full Vanguard website on a computer. But for day-to-day account monitoring, the app is convenient and enough.
+For active management — changing what funds your money is in, initiating withdrawals, or setting up new contributions — you usually have more options through the full Vanguard website on a computer. But for day-to-day account monitoring, the app is convenient and enough.
 
 Vanguard's app is separate from your employer's 401(k) portal if your employer uses a different record-keeper. Some employers use Vanguard as record-keeper. Others use Fidelity, Empower, or another company. Make sure you know which company holds your specific account.`,
     steps: [
@@ -795,7 +795,7 @@ Albums sync across all your devices — create one on your phone and it appears 
     difficulty: 'Beginner',
     body: `Windows 11 includes a productivity feature called Focus Sessions, built directly into the Clock app. It's designed to help you concentrate on a task by setting a dedicated work timer — during that time, it can silence notifications, mute your Microsoft Teams status, and integrate with Spotify to play focus music.
 
-Focus Sessions uses a technique called the Pomodoro Technique — working in focused intervals (typically 25 minutes) followed by short breaks (5 minutes). Research has shown that structured work intervals with regular breaks can improve concentration and reduce mental fatigue compared to trying to work for hours without stopping.
+Focus Sessions uses a technique called the Pomodoro Technique — working in focused intervals (usually 25 minutes) followed by short breaks (5 minutes). Research has shown that structured work intervals with regular breaks can improve concentration and reduce mental fatigue compared to trying to work for hours without stopping.
 
 You don't need to follow the Pomodoro method strictly. You can set any session length from 5 minutes to 4 hours. The idea is to decide on a specific task, set a timer, and commit to working on only that task until the timer ends. Interruptions are minimized because notifications are silenced.
 

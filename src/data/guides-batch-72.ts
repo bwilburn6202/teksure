@@ -288,7 +288,7 @@ To export Android contacts as a file: go to contacts.google.com, click the three
 
 Samsung phones have an additional layer: the Samsung Contacts app can back up to Samsung Cloud as well as Google. Having contacts in both places provides extra insurance.
 
-One important warning: do not store contacts on your SIM card. SIM cards have very limited storage — typically holding fewer than 250 contacts — and are not backed up by any cloud service. Always make sure your contacts are syncing to Google or iCloud instead of sitting on the SIM.`,
+One important warning: do not store contacts on your SIM card. SIM cards have very limited storage — usually holding fewer than 250 contacts — and are not backed up by any cloud service. Always make sure your contacts are syncing to Google or iCloud instead of sitting on the SIM.`,
     steps: [
       {
         title: `Enable iCloud Contacts on iPhone`,
@@ -616,7 +616,7 @@ Alternatives include Kanary and Privacy Bee, which offer similar services. For t
     steps: [
       {
         title: `Understand what DeleteMe does before signing up`,
-        content: `DeleteMe removes your personal information from commercial data broker sites — places that sell your name, address, and phone number to marketers and background check companies. It does not remove court records, news articles, or your own social media profiles. Visit joindeleteme.com to see a sample report of what data brokers typically have on people.`,
+        content: `DeleteMe removes your personal information from commercial data broker sites — places that sell your name, address, and phone number to marketers and background check companies. It does not remove court records, news articles, or your own social media profiles. Visit joindeleteme.com to see a sample report of what data brokers usually have on people.`,
       },
       {
         title: `Sign up and submit your information`,
@@ -719,7 +719,7 @@ Consistency matters far more than session length. Fifteen to twenty minutes ever
       },
       {
         title: `Find a conversation partner`,
-        content: `Once you have basic vocabulary (usually after 4–8 weeks of regular app practice), visit italki.com to find a community tutor. Community tutors are less formal than professional teachers and typically cost $5–$15 per hour. You can also search for language exchange partners — people who speak your target language and want to practice English — and both of you practice for free.`,
+        content: `Once you have basic vocabulary (usually after 4–8 weeks of regular app practice), visit italki.com to find a community tutor. Community tutors are less formal than professional teachers and usually cost $5–$15 per hour. You can also search for language exchange partners — people who speak your target language and want to practice English — and both of you practice for free.`,
         tip: `Do not wait until you feel "ready" to speak with someone. Speaking with a real person, even when it is difficult, is the fastest way to improve. Make mistakes freely — they are how you learn.`,
       },
     ],

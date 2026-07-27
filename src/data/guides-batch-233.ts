@@ -121,7 +121,7 @@ export const guidesBatch233: Guide[] = [
       },
       {
         title: "Handle Controlled Substance Prescriptions Separately",
-        content: "Schedule II controlled substances like Oxycodone, Hydrocodone, Adderall, Ritalin, Vyvanse, and most opioid pain medicines cannot be transferred for a refill. You need a fresh prescription from a doctor for each fill. Two paths work for snowbirds. The first is to ask your northern doctor to write a 90-day prescription dated for the start of your trip and mail or hand-carry it to a Florida pharmacy. The second is to find a Florida doctor who can evaluate you and write a new prescription. Florida doctors can write Schedule II prescriptions for any patient. But they typically want to see you in person first. Schedule III through V medicines like Tylenol with Codeine and most anxiety treatments can be transferred between states, but only one time per prescription.",
+        content: "Schedule II controlled substances like Oxycodone, Hydrocodone, Adderall, Ritalin, Vyvanse, and most opioid pain medicines cannot be transferred for a refill. You need a fresh prescription from a doctor for each fill. Two paths work for snowbirds. The first is to ask your northern doctor to write a 90-day prescription dated for the start of your trip and mail or hand-carry it to a Florida pharmacy. The second is to find a Florida doctor who can evaluate you and write a new prescription. Florida doctors can write Schedule II prescriptions for any patient. But they usually want to see you in person first. Schedule III through V medicines like Tylenol with Codeine and most anxiety treatments can be transferred between states, but only one time per prescription.",
         warning: "Never carry a controlled substance across state lines without the original prescription bottle showing your name and the prescribing doctor's name. Loose pills in a baggie are a federal offense."
       },
       {
@@ -212,7 +212,7 @@ export const guidesBatch233: Guide[] = [
       {
         title: "Sign the Contract and Read the Fine Print",
         content: "Once you pick a company, they will email a contract called an Order Confirmation or Transport Agreement. Read every page before signing. Confirm the pickup address, the delivery address, the pickup date window, the delivery date window, the total price, the deposit amount, the cancellation policy, and the cargo insurance coverage amount. The deposit is usually $150 to $300 and is paid by credit card. The balance is paid to the driver at delivery, often in cash or certified check. Sign electronically through the company's portal. Keep a copy on your phone and email a copy to a family member as a backup. Confirm the pickup window with a phone call to the broker the day before the truck arrives.",
-        warning: "Pickup and delivery windows are typically two to four days wide. If you need a guaranteed date, ask about expedited service, which costs extra but locks in a specific day."
+        warning: "Pickup and delivery windows are usually two to four days wide. If you need a guaranteed date, ask about expedited service, which costs extra but locks in a specific day."
       },
       {
         title: "Prepare the Car and Do a Pre-Shipment Inspection",
@@ -221,7 +221,7 @@ export const guidesBatch233: Guide[] = [
       },
       {
         title: "Track the Shipment and Receive the Car",
-        content: "Most brokers and carriers offer a tracking number or a phone number where you can check the truck's progress. Some have a real-time GPS portal. Trips from Michigan to Florida typically take five to ten days because the truck stops to pick up and drop off other cars along the route. Avoid scheduling tight commitments around the delivery date. The driver will call when they are a few hours from your Florida home. Have a parking space available where an 80-foot trailer can pull up and unload safely. Empty parking lots, residential cul-de-sacs, or a wide driveway all work. Inspect the car carefully at delivery, sign the final Bill of Lading, and pay the balance. Save every receipt for your tax records or for any future warranty claim.",
+        content: "Most brokers and carriers offer a tracking number or a phone number where you can check the truck's progress. Some have a real-time GPS portal. Trips from Michigan to Florida usually take five to ten days because the truck stops to pick up and drop off other cars along the route. Avoid scheduling tight commitments around the delivery date. The driver will call when they are a few hours from your Florida home. Have a parking space available where an 80-foot trailer can pull up and unload safely. Empty parking lots, residential cul-de-sacs, or a wide driveway all work. Inspect the car carefully at delivery, sign the final Bill of Lading, and pay the balance. Save every receipt for your tax records or for any future warranty claim.",
         warning: "If you find new damage at delivery, do not sign clean. Write the damage on the Bill of Lading before signing and take photos. A clean signature can void your insurance claim."
       }
     ]

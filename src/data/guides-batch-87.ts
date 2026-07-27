@@ -347,7 +347,7 @@ The free plan is a reasonable starting point to see whether podcasting is right 
       },
       {
         title: `Submit your podcast to Apple Podcasts and Spotify`,
-        content: `In your Buzzsprout dashboard, click "Directories" in the left sidebar. You will see a list of podcast directories with submission buttons next to each one. Click "Submit to Spotify" and follow the prompts — Buzzsprout generates a special link you paste into the Spotify submission form. Do the same for Apple Podcasts. Apple's review process typically takes one to five business days for new shows. Once approved, every future episode you publish automatically appears in both directories within a few hours.`,
+        content: `In your Buzzsprout dashboard, click "Directories" in the left sidebar. You will see a list of podcast directories with submission buttons next to each one. Click "Submit to Spotify" and follow the prompts — Buzzsprout generates a special link you paste into the Spotify submission form. Do the same for Apple Podcasts. Apple's review process usually takes one to five business days for new shows. Once approved, every future episode you publish automatically appears in both directories within a few hours.`,
         warning: `You only need to submit to each directory once. After that initial setup, Buzzsprout handles all future distribution automatically. Do not submit again for each new episode — that will create duplicate listings.`,
       },
       {
@@ -576,7 +576,7 @@ Snapseed is free with no in-app purchases and is available in the App Store and 
       },
       {
         title: `Edit a RAW photo for maximum quality`,
-        content: `To open a RAW file, tap the plus (+) or the folder icon when starting a new edit and navigate to your Files or Camera app where RAW files (typically with extensions like .DNG, .ARW, or .CR2) are stored. Snapseed opens a special RAW development screen with sliders for White Balance (the color warmth of the light), Exposure, Shadows, Highlights, and Sharpening. These sliders pull from the full range of data captured by your camera's sensor, which gives you a lot more latitude to recover detail than editing a JPEG. Adjust White Balance first, then Exposure, before applying any creative adjustments.`,
+        content: `To open a RAW file, tap the plus (+) or the folder icon when starting a new edit and navigate to your Files or Camera app where RAW files (usually with extensions like .DNG, .ARW, or .CR2) are stored. Snapseed opens a special RAW development screen with sliders for White Balance (the color warmth of the light), Exposure, Shadows, Highlights, and Sharpening. These sliders pull from the full range of data captured by your camera's sensor, which gives you a lot more latitude to recover detail than editing a JPEG. Adjust White Balance first, then Exposure, before applying any creative adjustments.`,
       },
       {
         title: `View and revise your edit history`,
@@ -752,7 +752,7 @@ Remove.bg processes photos on their servers, so a photo you upload leaves your d
       },
       {
         title: `Replace the background or download the image`,
-        content: `On the right side of the screen, click "Background." You can choose from preset solid colors (useful for professional headshots or product listings), access a library of background templates, or click "Upload Photo" to use your own background image. The subject from your original photo is placed in front of whatever background you choose. When you are happy with the result, click "Download" to save the image. The free version downloads at a reduced resolution — typically around 0.25 megapixels. For full resolution, a paid credit is required.`,
+        content: `On the right side of the screen, click "Background." You can choose from preset solid colors (useful for professional headshots or product listings), access a library of background templates, or click "Upload Photo" to use your own background image. The subject from your original photo is placed in front of whatever background you choose. When you are happy with the result, click "Download" to save the image. The free version downloads at a reduced resolution — usually around 0.25 megapixels. For full resolution, a paid credit is required.`,
       },
       {
         title: `Use the mobile app for photos taken on your phone`,

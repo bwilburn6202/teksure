@@ -80,7 +80,7 @@ For bigger projects, the app includes installation services you can schedule dir
       },
       {
         title: `Order Online for Delivery or Curbside Pickup`,
-        content: `Add items to your cart and tap the cart icon to begin checkout. You can choose between shipping to your home address or selecting "Curbside Pickup" to collect your order outside the store without going inside. Curbside pickup is typically ready the same day for in-stock items. Track your order status from the "Orders" section in your account.`,
+        content: `Add items to your cart and tap the cart icon to begin checkout. You can choose between shipping to your home address or selecting "Curbside Pickup" to collect your order outside the store without going inside. Curbside pickup is usually ready the same day for in-stock items. Track your order status from the "Orders" section in your account.`,
         tip: `Quick Tip: Lowe's often runs promotions for free delivery on large appliances — check the app's homepage banner before placing an appliance order.`,
       },
       {
@@ -146,7 +146,7 @@ Zillow also lets you save homes to a favorites list, set up alerts when new home
 
 The Redfin website and app pull listings directly from the MLS, which means the data tends to be updated very quickly — sometimes within minutes of a new listing going live. This speed matters in competitive markets where homes sell within hours of listing. You can set up instant alerts so your phone notifies you the moment a home matching your criteria appears.
 
-Browsing on Redfin works much like other home search sites: you search by location, set price and size filters, and browse photos and details on listing pages. What stands out is the transparency of information. Redfin shows how long a home has been on the market, how many times the listing price has changed, and a "Compete Score" that estimates how competitive offers typically are in a given neighborhood.
+Browsing on Redfin works much like other home search sites: you search by location, set price and size filters, and browse photos and details on listing pages. What stands out is the transparency of information. Redfin shows how long a home has been on the market, how many times the listing price has changed, and a "Compete Score" that estimates how competitive offers usually are in a given neighborhood.
 
 Booking a tour is built directly into the platform. You can request an in-person or video tour without having to call an agent first. A Redfin agent or partner agent will confirm the time and show you the home. If you are not ready to commit to a full tour, the app lets you do a self-guided tour at some properties. Redfin is a particularly good option for buyers who want to do their own research and engage with an agent on their own timeline.`,
     steps: [
@@ -210,7 +210,7 @@ One thing to keep in mind: because Rocket Mortgage operates online, you won't ha
       },
       {
         title: `Review Loan Options and Lock Your Rate`,
-        content: `After you complete the application, Rocket Mortgage will present loan options that match your financial profile. Each option shows the loan amount, interest rate, loan term (such as 15 or 30 years), and estimated monthly payment. When you find an option you want to proceed with, you can lock your interest rate so it does not change while your application is being processed — rate locks are typically good for 30 to 60 days.`,
+        content: `After you complete the application, Rocket Mortgage will present loan options that match your financial profile. Each option shows the loan amount, interest rate, loan term (such as 15 or 30 years), and estimated monthly payment. When you find an option you want to proceed with, you can lock your interest rate so it does not change while your application is being processed — rate locks are usually good for 30 to 60 days.`,
       },
       {
         title: `Track Your Application and Close`,
@@ -250,7 +250,7 @@ Down payment help programs are often overlooked by first-time buyers. The Depart
       },
       {
         title: `Get Pre-Approved for a Mortgage`,
-        content: `Contact at least two or three lenders — including your bank, a credit union, and an online lender like Rocket Mortgage — to get pre-approval letters. A pre-approval tells sellers you are a serious buyer and have financing lined up. Each lender will do a credit check, but multiple mortgage inquiries within a 45-day window are typically counted as one inquiry on your credit report, so shopping around does not a lot hurt your score.`,
+        content: `Contact at least two or three lenders — including your bank, a credit union, and an online lender like Rocket Mortgage — to get pre-approval letters. A pre-approval tells sellers you are a serious buyer and have financing lined up. Each lender will do a credit check, but multiple mortgage inquiries within a 45-day window are usually counted as one inquiry on your credit report, so shopping around does not a lot hurt your score.`,
         warning: `Do not open new credit cards, take out car loans, or make large purchases on credit while your mortgage application is in process. New debt can change your approval status even after you have been pre-approved.`,
       },
       {
@@ -260,7 +260,7 @@ Down payment help programs are often overlooked by first-time buyers. The Depart
       },
       {
         title: `Search for Homes and Work with a Buyer's Agent`,
-        content: `Use Zillow, Redfin, or Realtor.com to browse listings in your budget and preferred area. When you are ready to make offers, work with a licensed real estate buyer's agent. The buyer's agent is typically paid by the seller, so their services usually cost you nothing directly. Your agent will guide you through making offers, negotiating, scheduling inspections, and understanding the closing documents — all of which are complex enough that professional guidance is worth having.`,
+        content: `Use Zillow, Redfin, or Realtor.com to browse listings in your budget and preferred area. When you are ready to make offers, work with a licensed real estate buyer's agent. The buyer's agent is usually paid by the seller, so their services usually cost you nothing directly. Your agent will guide you through making offers, negotiating, scheduling inspections, and understanding the closing documents — all of which are complex enough that professional guidance is worth having.`,
       },
     ],
   },
@@ -282,7 +282,7 @@ The loan amount you can receive depends on three things: your age (older borrowe
 
 One important detail: you remain responsible for property taxes, homeowner's insurance, and home maintenance throughout the loan. If you fall behind on taxes or let the insurance lapse, the lender can call the loan due. This catches some borrowers off guard. So it is critical to make sure you can manage those ongoing costs.
 
-The loan becomes due when you permanently move out of the home, sell it, or pass away. At that point, you or your heirs repay the loan balance — typically by selling the home. If the home sells for more than the loan balance, your heirs keep the difference. If it sells for less, FHA insurance covers the shortfall and your heirs owe nothing beyond the home itself.
+The loan becomes due when you permanently move out of the home, sell it, or pass away. At that point, you or your heirs repay the loan balance — usually by selling the home. If the home sells for more than the loan balance, your heirs keep the difference. If it sells for less, FHA insurance covers the shortfall and your heirs owe nothing beyond the home itself.
 
 Reverse mortgages are not right for everyone. If you plan to leave your home to children or other heirs, a reverse mortgage will reduce what they inherit. If your goal is to stay in your home and access cash without monthly payments, it can be a reasonable tool — but only after speaking with an independent HUD-approved housing counselor, which is actually required before any HECM can close.`,
     steps: [
@@ -292,12 +292,12 @@ Reverse mortgages are not right for everyone. If you plan to leave your home to 
       },
       {
         title: `Speak With a HUD-Approved Housing Counselor First`,
-        content: `Federal law requires that you complete a counseling session with a HUD-approved housing counselor before you can apply for a HECM. The counselor is independent — they do not work for any lender — and they will explain the costs, risks, and alternatives in detail. To find a counselor, call 800-569-4287 or search the HUD website's counselor locator. Counseling sessions typically cost between $125 and $175 and can be done by phone.`,
+        content: `Federal law requires that you complete a counseling session with a HUD-approved housing counselor before you can apply for a HECM. The counselor is independent — they do not work for any lender — and they will explain the costs, risks, and alternatives in detail. To find a counselor, call 800-569-4287 or search the HUD website's counselor locator. Counseling sessions usually cost between $125 and $175 and can be done by phone.`,
         tip: `Quick Tip: Some nonprofit agencies offer free or reduced-fee counseling for lower-income seniors. Ask when you call to set up an appointment.`,
       },
       {
         title: `Understand the Costs Involved`,
-        content: `Reverse mortgages are not free money. They come with upfront costs including an origination fee (the lender's fee for setting up the loan), closing costs similar to a regular mortgage, and an upfront mortgage insurance premium paid to FHA. There are also ongoing monthly insurance premiums and interest that accrue over the life of the loan. These costs are typically rolled into the loan balance rather than paid out of pocket. But they reduce the net equity you or your heirs will receive.`,
+        content: `Reverse mortgages are not free money. They come with upfront costs including an origination fee (the lender's fee for setting up the loan), closing costs similar to a regular mortgage, and an upfront mortgage insurance premium paid to FHA. There are also ongoing monthly insurance premiums and interest that accrue over the life of the loan. These costs are usually rolled into the loan balance rather than paid out of pocket. But they reduce the net equity you or your heirs will receive.`,
         warning: `Beware of unsolicited reverse mortgage offers that arrive by mail, phone, or door-to-door. Legitimate lenders do not pressure seniors into quick decisions. The FTC and CFPB both warn that reverse mortgage scams specifically target seniors — never sign anything without independent legal or financial review.`,
       },
       {
@@ -431,12 +431,12 @@ Fundrise charges an annual management fee of around 0.85 percent, which is low c
       },
       {
         title: `Fund Your Account`,
-        content: `Link a US bank account by entering your routing and account numbers. Transfers typically take two to four business days to complete. You can start with as little as $10, though investing more makes the returns more meaningful in dollar terms — a 10 percent return on $10 is $1, while the same return on $1,000 is $100. Once your bank transfer is confirmed, your investment is active.`,
+        content: `Link a US bank account by entering your routing and account numbers. Transfers usually take two to four business days to complete. You can start with as little as $10, though investing more makes the returns more meaningful in dollar terms — a 10 percent return on $10 is $1, while the same return on $1,000 is $100. Once your bank transfer is confirmed, your investment is active.`,
         tip: `Quick Tip: Fundrise offers automatic investment plans where a set amount transfers from your bank account each month. This makes it straightforward to build your investment over time without having to remember to log in.`,
       },
       {
         title: `Track Your Investment and Dividends`,
-        content: `Log in to your Fundrise dashboard to see your current portfolio value, dividend earnings, and any appreciation in the underlying properties. Dividends are typically paid out quarterly. You can choose to receive them as a cash payout to your bank account or reinvest them automatically for compounding growth. Your dashboard also shows how the individual properties in your portfolio are performing.`,
+        content: `Log in to your Fundrise dashboard to see your current portfolio value, dividend earnings, and any appreciation in the underlying properties. Dividends are usually paid out quarterly. You can choose to receive them as a cash payout to your bank account or reinvest them automatically for compounding growth. Your dashboard also shows how the individual properties in your portfolio are performing.`,
       },
       {
         title: `Understand the Redemption Process Before You Need It`,
@@ -608,7 +608,7 @@ thredUP is a particularly good fit for anyone who wants to clean out a closet wi
       {
         title: `Understand the Payout Structure`,
         content: `After thredUP receives your bag, their team inspects each item individually. Items that are accepted get listed on the site. And you receive a portion of the sale price when each item sells. The percentage you receive depends on the brand, condition, and selling price — higher-value items earn you a larger percentage. You can choose to receive your earnings as cash (sent to PayPal or a check) or as thredUP shopping credit.`,
-        warning: `Payouts can take months because thredUP lists items at their own pace and only pays you when items actually sell. If you want faster returns, do-it-yourself platforms like Poshmark or Mercari will typically earn you more money per item.`,
+        warning: `Payouts can take months because thredUP lists items at their own pace and only pays you when items actually sell. If you want faster returns, do-it-yourself platforms like Poshmark or Mercari will usually earn you more money per item.`,
       },
       {
         title: `Shop for Clothing by Brand, Size, and Condition`,
@@ -641,7 +641,7 @@ The live-stream format makes Whatnot very different from a traditional online ma
 
 As a buyer, you browse upcoming and live streams from the app's home screen, organized by category. When you find a stream that interests you, you can watch without an account, but bidding or buying requires creating a free account and adding a payment method. Bids are placed by tapping the bid button during the auction, and the highest bid when the timer expires wins the item. You are charged right away, and the seller ships the item within a few days.
 
-Whatnot offers buyer protection — if an item arrives a lot different from how it was described on stream, you can open a dispute and receive a refund. Sellers are rated, and high-quality sellers with strong ratings typically attract larger audiences and higher bids.
+Whatnot offers buyer protection — if an item arrives a lot different from how it was described on stream, you can open a dispute and receive a refund. Sellers are rated, and high-quality sellers with strong ratings usually attract larger audiences and higher bids.
 
 To sell on Whatnot, you need to apply for seller access through the app. Once approved, you schedule live shows, set up your camera, and go live to your followers. Whatnot charges sellers a percentage of each sale and handles payments and shipping labels. For collectors who enjoy the social, community aspect of buying and selling, Whatnot offers an experience that no standard listing platform can replicate.`,
     steps: [
@@ -666,7 +666,7 @@ To sell on Whatnot, you need to apply for seller access through the app. Once ap
       {
         title: `Apply to Become a Seller`,
         content: `If you want to sell on Whatnot, navigate to your profile and look for the "Sell on Whatnot" option. The platform requires sellers to apply and go through an approval process to maintain quality standards. Once approved, you can schedule live shows, set up a camera, and broadcast your sales to the Whatnot community. Whatnot generates shipping labels for you, and funds from sales are transferred to your bank account after buyers confirm receipt.`,
-        tip: `Quick Tip: New sellers typically do better starting with smaller shows at consistent times each week to build an audience before scaling up. Regularity helps followers know when to tune in.`,
+        tip: `Quick Tip: New sellers usually do better starting with smaller shows at consistent times each week to build an audience before scaling up. Regularity helps followers know when to tune in.`,
       },
     ],
   },
@@ -712,7 +712,7 @@ If you have clothes to sell and want to keep the maximum amount from each sale, 
       },
       {
         title: `Receive Your Payment`,
-        content: `Vinted holds your earnings in your Vinted wallet until the buyer confirms the item arrived in the described condition, or until the confirmation window closes automatically (typically five days after delivery). Once released, transfer your balance to your bank account from the wallet section of your profile. Transfers to a linked bank account are free.`,
+        content: `Vinted holds your earnings in your Vinted wallet until the buyer confirms the item arrived in the described condition, or until the confirmation window closes automatically (usually five days after delivery). Once released, transfer your balance to your bank account from the wallet section of your profile. Transfers to a linked bank account are free.`,
         tip: `Quick Tip: Respond to buyer questions quickly. Vinted's algorithm shows responsive sellers more prominently in search results, which increases the chance of your items being seen and purchased.`,
       },
     ],
@@ -743,7 +743,7 @@ One practical consideration: Rent the Runway includes backup size options with m
       },
       {
         title: `Select Your Rental Dates and Size`,
-        content: `For a one-time rental, click on an item you like and select your rental period — typically four or eight days. Choose your size from the dropdown, and if available, add a backup size to your order at no extra cost. The backup size ships with your primary item so you have options when it arrives. Your rental fee covers the full period. You do not pay extra per day.`,
+        content: `For a one-time rental, click on an item you like and select your rental period — usually four or eight days. Choose your size from the dropdown, and if available, add a backup size to your order at no extra cost. The backup size ships with your primary item so you have options when it arrives. Your rental fee covers the full period. You do not pay extra per day.`,
         tip: `Quick Tip: Order your rental to arrive at least two days before your event. This gives you time to try it on and contact customer service if there is any issue with fit or condition before your event day.`,
       },
       {
@@ -843,7 +843,7 @@ For anyone who owns a luxury handbag they no longer use, Rebag is one of the mos
       {
         title: `Sell Your Bag Using the Clair Quote Tool`,
         content: `Navigate to the "Sell" section on rebag.com or in the app. Tap "Get a Quote" and select your bag's brand, model, size, and condition from the dropdown menus. Upload photos of the bag — exterior, interior, hardware, and any areas with wear. Clair generates an instant offer based on current market demand. If you accept, Rebag emails you a prepaid shipping label. Ship the bag, and once authenticated and received, you are paid by direct deposit, check, or store credit.`,
-        tip: `Quick Tip: Choosing Rebag store credit as your payout method typically earns you 5 to 10 percent more than a cash payment — worthwhile if you plan to purchase another bag from the platform.`,
+        tip: `Quick Tip: Choosing Rebag store credit as your payout method usually earns you 5 to 10 percent more than a cash payment — worthwhile if you plan to purchase another bag from the platform.`,
       },
       {
         title: `Visit a Physical Location for Immediate Payment`,

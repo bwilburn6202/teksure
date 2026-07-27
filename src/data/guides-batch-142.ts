@@ -199,7 +199,7 @@ If you have a Medicare Advantage plan (Part C — a plan from a private insurer 
 
 **What Medicare paid.** The portion Medicare sent directly to the provider. For most Part B services, Medicare pays 80 percent of the approved amount.
 
-**What you may owe.** The remaining portion — typically 20 percent of the approved amount for Part B — that Medicare expects you to pay. If you have a Medigap (supplemental insurance) plan, that plan often covers this 20 percent. Check your EOB against any supplemental insurance statements you receive.
+**What you may owe.** The remaining portion — usually 20 percent of the approved amount for Part B — that Medicare expects you to pay. If you have a Medigap (supplemental insurance) plan, that plan often covers this 20 percent. Check your EOB against any supplemental insurance statements you receive.
 
 **Denial reasons.** If a service was not covered, the EOB will show a reason code. Common reasons include the service not being medically necessary, a billing code error, or the provider not being enrolled in Medicare.
 

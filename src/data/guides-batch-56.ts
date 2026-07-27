@@ -248,7 +248,7 @@ Grubhub works with thousands of restaurants across the United States, including 
 
 When you place an order, you can track the delivery driver on a map in real time, similar to watching a rideshare car on its way to you. You will also get notifications when your food is picked up and when the driver is nearby.
 
-There are fees involved with food delivery apps. Grubhub typically charges a delivery fee (usually $1 to $6), a service fee based on your order total, and sometimes a small order fee if your subtotal is below a minimum. Prices can also be higher on delivery apps than ordering directly from the restaurant. It is a good idea to check the total before confirming your order.
+There are fees involved with food delivery apps. Grubhub usually charges a delivery fee (usually $1 to $6), a service fee based on your order total, and sometimes a small order fee if your subtotal is below a minimum. Prices can also be higher on delivery apps than ordering directly from the restaurant. It is a good idea to check the total before confirming your order.
 
 Grubhub has a membership program called Grubhub+ for around $9.99 per month that waives delivery fees on most orders. If you order delivery often, it can save money. Otherwise, you can use Grubhub without any membership.
 
@@ -290,7 +290,7 @@ The app is available on iPhone and Android. You will need to create a free Grubh
     difficulty: `Beginner`,
     body: `Most major airlines now have free apps that let you manage almost everything about your trip from your phone. You can check in for your flight, get a digital boarding pass, pick your seat, track your flight status, and receive gate change alerts — all without printing anything or standing in line.
 
-Check-in through the app typically opens 24 hours before your flight's departure time. You will get a notification from the app reminding you to check in. Once you check in, your boarding pass appears right in the app. You can screenshot it, add it to your phone's wallet (Apple Wallet or Google Wallet), or show the app directly at the gate.
+Check-in through the app usually opens 24 hours before your flight's departure time. You will get a notification from the app reminding you to check in. Once you check in, your boarding pass appears right in the app. You can screenshot it, add it to your phone's wallet (Apple Wallet or Google Wallet), or show the app directly at the gate.
 
 Major US airlines with well-designed apps include American Airlines, Delta Air Lines, United Airlines, Southwest Airlines, and Alaska Airlines. The process is similar across all of them.
 
@@ -522,7 +522,7 @@ Goodreads is owned by Amazon and works on iPhone, Android, and in any web browse
 
 Libby connects to your local library's digital collection. When you borrow a book through Libby, it appears on your device right away and disappears automatically when the lending period ends (usually 14 to 21 days). There are no late fees, ever.
 
-Because digital books are limited in how many people can borrow them at once, popular new releases sometimes have waiting lists. If a book is not available right now, you can tap "Place a Hold" and Libby will notify you when it is your turn. For books that are always available without a wait, look for books marked as "Always Available" — these are typically older titles and public domain classics.
+Because digital books are limited in how many people can borrow them at once, popular new releases sometimes have waiting lists. If a book is not available right now, you can tap "Place a Hold" and Libby will notify you when it is your turn. For books that are always available without a wait, look for books marked as "Always Available" — these are usually older titles and public domain classics.
 
 Libby works on iPhone, Android, iPad, and Kindle Fire tablets. You can also read on a computer at libbyapp.com. You can have multiple library cards from different library systems in Libby at the same time — which is useful if you have cards from more than one county or city.
 

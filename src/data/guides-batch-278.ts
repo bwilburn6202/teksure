@@ -34,7 +34,7 @@ export const guidesBatch278: Guide[] = [
       },
       {
         title: "Try a 5-ounce wine glass instead of a 12-ounce glass",
-        content: "Restaurant servers in the U.S. typically pour 5 to 6 ounces. At home, most wine glasses hold 12 to 16 ounces, which encourages a bigger pour. Switch to a smaller glass (a 6-ounce sherry or aperitif glass works well) for a month. The same one-glass habit now equals one standard drink instead of two. You change the math without changing the ritual."
+        content: "Restaurant servers in the U.S. usually pour 5 to 6 ounces. At home, most wine glasses hold 12 to 16 ounces, which encourages a bigger pour. Switch to a smaller glass (a 6-ounce sherry or aperitif glass works well) for a month. The same one-glass habit now equals one standard drink instead of two. You change the math without changing the ritual."
       },
       {
         title: "Talk to your doctor with no shame",

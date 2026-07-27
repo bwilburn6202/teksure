@@ -56,7 +56,7 @@ You will be asked for the recipient's email address or U.S. mobile phone number.
 Type in the dollar amount you want to send. Double-check this number carefully — you cannot cancel most Zelle transfers once the recipient is enrolled.
 
 **Step 5 — Review and send**
-Your bank will show you a confirmation screen with the recipient's name and the amount. Review it carefully, then tap "Send." The money typically arrives within minutes if the recipient is already enrolled in Zelle.
+Your bank will show you a confirmation screen with the recipient's name and the amount. Review it carefully, then tap "Send." The money usually arrives within minutes if the recipient is already enrolled in Zelle.
 
 Quick Tip: If your bank does not offer Zelle inside its app, you can download the standalone Zelle app at zellepay.com and connect it to your bank account or debit card.
 
@@ -80,7 +80,7 @@ Tap the blue "Pay or Request" button. Search for the person by their Venmo usern
 Venmo requires a short note describing the payment (for example, "Dinner last night" or "Birthday gift"). This note is visible to your friends by default — change your privacy settings to "Private" if you do not want others to see it. Tap "Pay" to send.
 
 **Step 6 — Cashing out your Venmo balance**
-If someone sends you money through Venmo, it stays in your Venmo balance until you transfer it to your bank. To do this, go to your Venmo profile, tap the dollar amount at the top, then tap "Transfer to Bank." Standard transfer is free and takes 1–3 business days. Instant transfer costs a small fee (typically 1.75% of the transfer, minimum $0.25, maximum $25).
+If someone sends you money through Venmo, it stays in your Venmo balance until you transfer it to your bank. To do this, go to your Venmo profile, tap the dollar amount at the top, then tap "Transfer to Bank." Standard transfer is free and takes 1–3 business days. Instant transfer costs a small fee (usually 1.75% of the transfer, minimum $0.25, maximum $25).
 
 ---
 

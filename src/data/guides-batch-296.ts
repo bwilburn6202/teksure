@@ -144,7 +144,7 @@ export const guidesBatch296: Guide[] = [
       },
       {
         title: "Handle a problem by calling the on-call nurse, not 911",
-        content: "If the patient suddenly seems in pain, has a change in breathing, falls, or has any other change, the volunteer pages the hospice on-call nurse. Hospice patients on a comfort care plan typically have a do-not-resuscitate order on file, and calling 911 can trigger a chain of events that contradicts the family wishes. The hospice nurse answers within minutes, gives guidance over the phone, and sends a visit if needed. The volunteer stays calm and stays in the room until the nurse responds or the caregiver returns.",
+        content: "If the patient suddenly seems in pain, has a change in breathing, falls, or has any other change, the volunteer pages the hospice on-call nurse. Hospice patients on a comfort care plan usually have a do-not-resuscitate order on file, and calling 911 can trigger a chain of events that contradicts the family wishes. The hospice nurse answers within minutes, gives guidance over the phone, and sends a visit if needed. The volunteer stays calm and stays in the room until the nurse responds or the caregiver returns.",
       },
       {
         title: "Write a short note and leave the home as found",
@@ -172,7 +172,7 @@ export const guidesBatch296: Guide[] = [
       },
       {
         title: "Send a written card at the one-month mark",
-        content: "Cards work better than emails for the older population that hospice typically serves. The volunteer sends a hand-addressed card within 30 days of the death, with a brief handwritten message such as I am thinking of you, please let me know if you would like to talk, and a return address with the hospice agency name. Many families save these cards in a small box. Some families call the volunteer back six months later because they kept the card on the kitchen counter. The card budget is paid by the hospice agency, and most agencies provide a small stipend or a stack of pre-printed cards for the volunteer to choose from.",
+        content: "Cards work better than emails for the older population that hospice usually serves. The volunteer sends a hand-addressed card within 30 days of the death, with a brief handwritten message such as I am thinking of you, please let me know if you would like to talk, and a return address with the hospice agency name. Many families save these cards in a small box. Some families call the volunteer back six months later because they kept the card on the kitchen counter. The card budget is paid by the hospice agency, and most agencies provide a small stipend or a stack of pre-printed cards for the volunteer to choose from.",
       },
       {
         title: "Make a 15 to 30 minute phone call at the three-month mark",

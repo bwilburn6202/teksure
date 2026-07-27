@@ -110,7 +110,7 @@ Using Windows Hello is actually more secure than a traditional password in many 
 
 A PIN is another option Windows Hello offers. Unlike a website password, a Windows Hello PIN only works on your specific device. Even if someone else knew your PIN, they could not use it on a different computer. This makes it more secure than a simple password for your computer sign-in.
 
-Not every computer supports face recognition. You need a compatible camera. Fingerprint recognition requires a fingerprint sensor. Most modern laptops (made in the last 3–4 years) have at least one of these features. Desktop computers typically need an external webcam with Windows Hello support or an external fingerprint reader.`,
+Not every computer supports face recognition. You need a compatible camera. Fingerprint recognition requires a fingerprint sensor. Most modern laptops (made in the last 3–4 years) have at least one of these features. Desktop computers usually need an external webcam with Windows Hello support or an external fingerprint reader.`,
     steps: [
       {
         title: `Open Sign-in Options in Settings`,
@@ -483,7 +483,7 @@ The Microsoft Store requires a Microsoft account to download most apps. If you a
       {
         title: `Download and install an app`,
         content: `Click on the app you want. The app's page shows screenshots, a description, ratings and reviews, and the system requirements. If the app is free, there is a "Get" or "Install" button. If it costs money, the button shows the price. Click the button, sign in with your Microsoft account if prompted, and the download starts automatically.`,
-        tip: `Quick Tip: Read the reviews and check the star rating before installing an app. A high-quality app from a real company typically has many reviews and a rating above 4 stars.`,
+        tip: `Quick Tip: Read the reviews and check the star rating before installing an app. A high-quality app from a real company usually has many reviews and a rating above 4 stars.`,
       },
       {
         title: `Find and open your installed app`,

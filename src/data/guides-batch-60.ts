@@ -471,7 +471,7 @@ Listening to podcasts is free. The vast majority of podcasts cost nothing — th
 
 Podcasts are stored and played through apps called podcast players. Some popular ones include Apple Podcasts (built into iPhones for free), Spotify (free with occasional ads), and Pocket Casts (a paid app many frequent listeners prefer). If you have an iPhone, Apple Podcasts is already installed and free. You do not need to download anything.
 
-Podcasts typically come in episodes, like chapters of a show. A new episode might come out once a week, daily, or sporadically. When you find a show you like, you can subscribe to it — which means new episodes automatically appear so you never miss one.
+Podcasts usually come in episodes, like chapters of a show. A new episode might come out once a week, daily, or sporadically. When you find a show you like, you can subscribe to it — which means new episodes automatically appear so you never miss one.
 
 People listen to podcasts while doing other things: walking, driving, cooking, doing housework, or relaxing in a chair. The audio comes through your phone's speaker or headphones. Many people find podcasts a great way to learn, stay entertained, and keep their mind engaged during otherwise quiet time.`,
     steps: [
@@ -563,7 +563,7 @@ The Fire tablet's app store is called the Amazon Appstore. It has a good selecti
 
 The Fire tablet is particularly well suited for watching videos, reading books, video calling with family, browsing the web, and playing casual games. The screen size (7 inches on the basic model, 10 or 11 inches on larger models) makes it comfortable for reading and watching — easier on the eyes than a small phone screen.
 
-The battery typically lasts 8 to 12 hours of regular use, so charging it once a day or every other day is usually enough. It charges via a USB-C cable (on newer models) or micro-USB (on older models).`,
+The battery usually lasts 8 to 12 hours of regular use, so charging it once a day or every other day is usually enough. It charges via a USB-C cable (on newer models) or micro-USB (on older models).`,
     steps: [
       {
         title: `Charge the tablet before first use`,
@@ -755,7 +755,7 @@ The free AI tools that work well for travel planning are ChatGPT (chat.openai.co
       },
       {
         title: `Request a packing list`,
-        content: `Type: "Can you give me a packing list for this trip? The weather in [destination] in [month] is typically [describe weather if you know it]." The AI will generate a comprehensive list organized by category — clothing, toiletries, documents, medications, electronics, and so on.`,
+        content: `Type: "Can you give me a packing list for this trip? The weather in [destination] in [month] is usually [describe weather if you know it]." The AI will generate a comprehensive list organized by category — clothing, toiletries, documents, medications, electronics, and so on.`,
         tip: `Quick Tip: Ask the AI to flag anything easy to forget that many travelers wish they had packed — like a power adapter for international trips, or comfortable walking shoes for city travel.`,
       },
       {
@@ -826,13 +826,13 @@ For interview preparation, AI can generate likely interview questions for any jo
     difficulty: `Beginner`,
     body: `Android tablets — like the Samsung Galaxy Tab series — are popular, affordable devices that are great for browsing the web, video calling family, watching TV shows, reading, and playing games. Samsung is the most well-known brand, but other brands like Lenovo and TCL make Android tablets as well. And they all work in a similar way.
 
-The larger screen of a tablet (typically 8 to 11 inches) makes everything easier to see and tap compared to a phone. Text is bigger, photos are more vibrant, and video calls feel more natural when you can see the person you are talking to at a larger size. Many people find tablets easier to use than phones for this reason.
+The larger screen of a tablet (usually 8 to 11 inches) makes everything easier to see and tap compared to a phone. Text is bigger, photos are more vibrant, and video calls feel more natural when you can see the person you are talking to at a larger size. Many people find tablets easier to use than phones for this reason.
 
 Setting up an Android tablet requires a Google account — which is the same as a Gmail email address. If you already have Gmail, you are set. If not, creating a free Google account takes about five minutes and gives you access to Gmail, the Google Play Store (where apps come from), Google Maps, YouTube, and many other free services all at once.
 
 Unlike Amazon Fire tablets (which use Amazon's app store), Android tablets use the Google Play Store, which has over three million apps — including all the major ones like Netflix, Facebook, Zoom, YouTube, and more. If an app exists for phones, it almost certainly works on an Android tablet too.
 
-Battery life on most Android tablets is 8 to 12 hours of regular use. The charging cable is typically USB-C on modern models. One helpful practice: charge it overnight so it is always ready during the day.`,
+Battery life on most Android tablets is 8 to 12 hours of regular use. The charging cable is usually USB-C on modern models. One helpful practice: charge it overnight so it is always ready during the day.`,
     steps: [
       {
         title: `Charge the tablet fully before starting setup`,

@@ -449,7 +449,7 @@ The good news is that you have several options for converting tapes to digital f
 
 The format you want is MP4. It is the most universally compatible video format for long-term storage and playback on phones, computers, smart TVs, and streaming devices. Avoid formats like AVI, MOV, or MPEG-2 for long-term storage unless you specifically need them for a particular use — MP4 is the safe, universal choice.
 
-The cost of digitizing varies widely. Professional mail-in services typically charge $15-$30 per tape. Retail services at Costco or Walgreens are similar. A local AV shop may be cheaper or more expensive depending on your area. DIY with your own equipment costs almost nothing if you already have a working VCR.`,
+The cost of digitizing varies widely. Professional mail-in services usually charge $15-$30 per tape. Retail services at Costco or Walgreens are similar. A local AV shop may be cheaper or more expensive depending on your area. DIY with your own equipment costs almost nothing if you already have a working VCR.`,
     steps: [
       {
         title: `Assess your tapes and understand what you have`,
@@ -458,7 +458,7 @@ The cost of digitizing varies widely. Professional mail-in services typically ch
       },
       {
         title: `Option 1 — Use a retail or mail-in service`,
-        content: `The most convenient option is to send your tapes to a professional service. Costco Photo Center and Walgreens offer in-store tape digitization at similar prices. Mail-in services like Legacybox (legacybox.com) and Southtree (southtree.com) provide prepaid boxes. You pack your tapes, mail them, and receive digital files on a USB drive or via download. Prices typically run $15-$30 per tape. This option requires no equipment and gives professional results. But you must trust a company with your originals and wait 2-6 weeks for results.`,
+        content: `The most convenient option is to send your tapes to a professional service. Costco Photo Center and Walgreens offer in-store tape digitization at similar prices. Mail-in services like Legacybox (legacybox.com) and Southtree (southtree.com) provide prepaid boxes. You pack your tapes, mail them, and receive digital files on a USB drive or via download. Prices usually run $15-$30 per tape. This option requires no equipment and gives professional results. But you must trust a company with your originals and wait 2-6 weeks for results.`,
         warning: `Make a written inventory of every tape you send to a mail-in service, including a description of the content on each one. Reputable services have good track records. But you want documentation if anything is damaged or lost.`,
       },
       {
@@ -492,7 +492,7 @@ The market for tablets ranges from around $50 to over $1,000, and the price diff
 
 Screen size is one of the most important factors for older adults. A 10-inch screen (measured diagonally) is the sweet spot for most people — large enough to read text comfortably, small enough to hold in one hand or prop on a lap. The iPad (10th generation) has a 10.9-inch screen. The Samsung Galaxy Tab A9+ has a 11-inch screen. Both are very comfortable for extended use.
 
-Long-term software support matters more than many buyers realize. When a tablet stops receiving software updates, it stops getting security fixes and eventually apps stop working on it. Apple supports iPads for 6-7 years after release. Samsung supports most Galaxy Tab models for 4-5 years. Amazon Fire tablets typically receive support for 3-4 years.
+Long-term software support matters more than many buyers realize. When a tablet stops receiving software updates, it stops getting security fixes and eventually apps stop working on it. Apple supports iPads for 6-7 years after release. Samsung supports most Galaxy Tab models for 4-5 years. Amazon Fire tablets usually receive support for 3-4 years.
 
 A protective case with a built-in stand is nearly essential — tablets without cases get dropped and broken, and being able to prop the tablet up on a table makes video calls and movie watching much more comfortable.`,
     steps: [
@@ -622,7 +622,7 @@ Neither platform is inherently better. They are genuinely different tools that s
 
 The two biggest providers of 5G home internet in the US are T-Mobile Home Internet and Verizon 5G Home Internet. Both services have grown rapidly since 2021 and now cover a large portion of the country. T-Mobile is available in more locations, including many suburban and rural areas. Verizon's 5G Home Internet offers faster speeds in the cities and neighborhoods it covers.
 
-The biggest appeal of 5G home internet is its pricing and simplicity. Both T-Mobile and Verizon charge a flat monthly rate — typically $50-$60 per month — with no installation fee, no annual contract, and no hidden fees. Cable and fiber internet often comes with promotional rates that jump a lot after the first year, plus installation fees, equipment rental fees, and contracts. 5G home internet avoids all of that.
+The biggest appeal of 5G home internet is its pricing and simplicity. Both T-Mobile and Verizon charge a flat monthly rate — usually $50-$60 per month — with no installation fee, no annual contract, and no hidden fees. Cable and fiber internet often comes with promotional rates that jump a lot after the first year, plus installation fees, equipment rental fees, and contracts. 5G home internet avoids all of that.
 
 Speed-wise, most 5G home internet customers experience download speeds of 100-300 Mbps, which is enough for streaming 4K video on multiple TVs simultaneously, video calls, browsing, and general home use. However, speeds depend heavily on your distance from cell towers and local network congestion, and some customers experience slower or less consistent speeds than cable or fiber.
 
@@ -630,7 +630,7 @@ Speed-wise, most 5G home internet customers experience download speeds of 100-30
     steps: [
       {
         title: `Check if 5G home internet is available at your address`,
-        content: `Start by checking eligibility at both provider websites. Go to home.t-mobile.com and enter your home address to see if T-Mobile Home Internet is available. Do the same at verizon.com/home/internet for Verizon. Both sites give an instant availability check. T-Mobile is typically available in more locations, especially in suburban and rural areas. Verizon's coverage tends to be stronger in dense urban areas.`,
+        content: `Start by checking eligibility at both provider websites. Go to home.t-mobile.com and enter your home address to see if T-Mobile Home Internet is available. Do the same at verizon.com/home/internet for Verizon. Both sites give an instant availability check. T-Mobile is usually available in more locations, especially in suburban and rural areas. Verizon's coverage tends to be stronger in dense urban areas.`,
       },
       {
         title: `Compare pricing and commitments`,
@@ -643,12 +643,12 @@ Speed-wise, most 5G home internet customers experience download speeds of 100-30
       },
       {
         title: `Find the best placement for the gateway`,
-        content: `The gateway receives its signal from nearby cell towers, so placement matters. Near an exterior wall or window — particularly one facing the direction of the nearest tower — typically gives the strongest signal. Both T-Mobile and Verizon have apps that show you a signal strength indicator so you can find the best spot in your home. A stronger cellular signal generally translates to faster, more consistent internet speeds. Avoid placing the gateway behind large metal objects or in a basement.`,
+        content: `The gateway receives its signal from nearby cell towers, so placement matters. Near an exterior wall or window — particularly one facing the direction of the nearest tower — usually gives the strongest signal. Both T-Mobile and Verizon have apps that show you a signal strength indicator so you can find the best spot in your home. A stronger cellular signal generally translates to faster, more consistent internet speeds. Avoid placing the gateway behind large metal objects or in a basement.`,
         warning: `If you live in a basement apartment, a thick-walled concrete building, or an area with poor cellular signal for your smartphone, 5G home internet may deliver unreliable speeds. Test it thoroughly during the trial period before canceling your existing internet service.`,
       },
       {
         title: `Test your speeds and decide if it works for you`,
-        content: `Use the free speedtest.net tool on your phone or computer to test your download and upload speeds after getting the gateway set up. For streaming HD and 4K video, you want at least 25 Mbps download. For video calls, 10 Mbps is enough. For general family use with multiple devices, 100+ Mbps download is comfortable. Test speeds at different times of day — especially evenings when network congestion is typically highest — to get a realistic picture of everyday performance.`,
+        content: `Use the free speedtest.net tool on your phone or computer to test your download and upload speeds after getting the gateway set up. For streaming HD and 4K video, you want at least 25 Mbps download. For video calls, 10 Mbps is enough. For general family use with multiple devices, 100+ Mbps download is comfortable. Test speeds at different times of day — especially evenings when network congestion is usually highest — to get a realistic picture of everyday performance.`,
       },
     ],
   },
@@ -668,13 +668,13 @@ Starlink is especially valuable for people in rural areas, remote properties, fa
 
 The Starlink kit includes a satellite dish (the company has nicknamed it "Dishy McFlatface" — an informal name that stuck), a WiFi router, a base for mounting, and cables. Setup requires no professional installation in most cases. You position the dish with a clear view of the sky and plug in the router.
 
-Typical Starlink download speeds range from 100 to 200 Mbps, with some users seeing faster speeds in less congested areas. Upload speeds are typically 10-20 Mbps. This is fast enough for streaming 4K video, video calls, browsing, working from home, and most household uses. Latency is typically 20-60 milliseconds — much better than old satellite internet, which often had 600+ millisecond latency that made video calls feel choppy.
+Typical Starlink download speeds range from 100 to 200 Mbps, with some users seeing faster speeds in less congested areas. Upload speeds are usually 10-20 Mbps. This is fast enough for streaming 4K video, video calls, browsing, working from home, and most household uses. Latency is usually 20-60 milliseconds — much better than old satellite internet, which often had 600+ millisecond latency that made video calls feel choppy.
 
 The cost of Starlink includes a one-time equipment fee (currently around $349 for the standard dish kit) and a monthly service fee starting at $120 per month. These prices are higher than cable or 5G home internet, but for homes with no other option, many customers find it well worth the cost.`,
     steps: [
       {
         title: `Check availability and order at Starlink.com`,
-        content: `Go to starlink.com in your browser and enter your home address to check if service is available at your location. In some areas Starlink has a waitlist. You can reserve your spot with a small refundable deposit. Once service is confirmed available, place your order. You will receive the dish kit by mail, typically within 1-2 weeks. The package contains the dish, a WiFi router, a power supply, and mounting hardware.`,
+        content: `Go to starlink.com in your browser and enter your home address to check if service is available at your location. In some areas Starlink has a waitlist. You can reserve your spot with a small refundable deposit. Once service is confirmed available, place your order. You will receive the dish kit by mail, usually within 1-2 weeks. The package contains the dish, a WiFi router, a power supply, and mounting hardware.`,
         tip: `Download the Starlink app (free on iPhone and Android) before your equipment arrives. It has a sky obstruction checker you can use to find the ideal spot for your dish before the hardware shows up.`,
       },
       {
@@ -706,7 +706,7 @@ The cost of Starlink includes a one-time equipment fee (currently around $349 fo
     thumbnailEmoji: ``,
     publishedAt: `2026-04-20`,
     difficulty: `Beginner`,
-    body: `T-Mobile Home Internet is a home broadband service that uses T-Mobile's 4G LTE and 5G cellular network — the same network that carries phone calls and mobile data — to deliver internet to your home. A cylindrical gateway device sits in your home, receives the cellular signal, and broadcasts a WiFi network that all your devices can connect to. No technician visit is required, no cable lines need to be run, and setup typically takes under 30 minutes.
+    body: `T-Mobile Home Internet is a home broadband service that uses T-Mobile's 4G LTE and 5G cellular network — the same network that carries phone calls and mobile data — to deliver internet to your home. A cylindrical gateway device sits in your home, receives the cellular signal, and broadcasts a WiFi network that all your devices can connect to. No technician visit is required, no cable lines need to be run, and setup usually takes under 30 minutes.
 
 T-Mobile Home Internet has been one of the fastest-growing internet services in the US since its wide launch in 2021. It is available in both urban and rural areas — T-Mobile has made a point of expanding rural coverage, making this service an option in many areas where cable and fiber do not reach.
 
@@ -718,11 +718,11 @@ T-Mobile offers a 15-day in-home trial. So you can set up the service, test the 
     steps: [
       {
         title: `Check eligibility at your home address`,
-        content: `Go to home.t-mobile.com in your browser and enter your home address. The site will tell you right away if T-Mobile Home Internet is available at your address and what speeds are typically delivered there. Not every address qualifies — coverage depends on T-Mobile's tower network in your area. If you are not eligible at your current address, you can check back in a few months as T-Mobile continues expanding coverage.`,
+        content: `Go to home.t-mobile.com in your browser and enter your home address. The site will tell you right away if T-Mobile Home Internet is available at your address and what speeds are usually delivered there. Not every address qualifies — coverage depends on T-Mobile's tower network in your area. If you are not eligible at your current address, you can check back in a few months as T-Mobile continues expanding coverage.`,
       },
       {
         title: `Order online or visit a T-Mobile store`,
-        content: `If your address qualifies, you can order directly on the website and have the gateway shipped to you, typically arriving in 2-5 days. You can also walk into any T-Mobile store and sign up in person — the store staff will walk you through the process and can answer questions. In-store signup also lets you take the gateway home the same day. No technician appointment is needed in either case.`,
+        content: `If your address qualifies, you can order directly on the website and have the gateway shipped to you, usually arriving in 2-5 days. You can also walk into any T-Mobile store and sign up in person — the store staff will walk you through the process and can answer questions. In-store signup also lets you take the gateway home the same day. No technician appointment is needed in either case.`,
         tip: `If you already have a T-Mobile phone plan, make sure to sign in to your T-Mobile account when ordering — the $50/month bundle rate requires an active phone plan to qualify.`,
       },
       {
@@ -732,7 +732,7 @@ T-Mobile offers a 15-day in-home trial. So you can set up the service, test the 
       },
       {
         title: `Plug in and activate the gateway`,
-        content: `Once you have found a good placement spot, plug the gateway into a wall power outlet. The T-Mobile app will guide you through the activation process step by step — this typically takes about 10-15 minutes. During setup, you will create your WiFi network name and password. The gateway will automatically connect to T-Mobile's network once activated.`,
+        content: `Once you have found a good placement spot, plug the gateway into a wall power outlet. The T-Mobile app will guide you through the activation process step by step — this usually takes about 10-15 minutes. During setup, you will create your WiFi network name and password. The gateway will automatically connect to T-Mobile's network once activated.`,
       },
       {
         title: `Connect your devices and test your speed`,
@@ -767,12 +767,12 @@ If fiber is available at your address, it is generally worth switching from cabl
       },
       {
         title: `Understand fiber speed tiers and pricing`,
-        content: `Fiber providers typically offer multiple speed tiers. Common options are 300 Mbps, 500 Mbps, 1 Gigabit (1,000 Mbps), and in some areas 2 Gigabit or 5 Gigabit. For most households, a 500 Mbps or 1 Gigabit plan is more than enough. Pricing varies by provider and location, but fiber is often competitively priced with cable — AT&T Fiber's 1 Gigabit plan runs around $80 per month with no annual contract in most markets. Google Fiber charges $70 per month for 1 Gigabit. Ask about contract requirements and whether the price changes after the first year.`,
+        content: `Fiber providers usually offer multiple speed tiers. Common options are 300 Mbps, 500 Mbps, 1 Gigabit (1,000 Mbps), and in some areas 2 Gigabit or 5 Gigabit. For most households, a 500 Mbps or 1 Gigabit plan is more than enough. Pricing varies by provider and location, but fiber is often competitively priced with cable — AT&T Fiber's 1 Gigabit plan runs around $80 per month with no annual contract in most markets. Google Fiber charges $70 per month for 1 Gigabit. Ask about contract requirements and whether the price changes after the first year.`,
         tip: `Most fiber providers do not charge equipment rental fees — a router is included with your service. This contrasts with cable providers who often charge $15/month just to rent a modem. Over two years, that is $360 in equipment fees you are avoiding.`,
       },
       {
         title: `Schedule installation`,
-        content: `Fiber installation requires a technician to visit your home. During the installation, the technician runs a thin fiber optic cable from the provider's infrastructure on the street (or on utility poles) to your home and into your house — this is called the "fiber drop." Inside your home, the fiber cable connects to a small device called an Optical Network Terminal (ONT), which then connects to a router that broadcasts your WiFi. Installation typically takes 2-4 hours and may require drilling a small hole through an exterior wall.`,
+        content: `Fiber installation requires a technician to visit your home. During the installation, the technician runs a thin fiber optic cable from the provider's infrastructure on the street (or on utility poles) to your home and into your house — this is called the "fiber drop." Inside your home, the fiber cable connects to a small device called an Optical Network Terminal (ONT), which then connects to a router that broadcasts your WiFi. Installation usually takes 2-4 hours and may require drilling a small hole through an exterior wall.`,
       },
       {
         title: `Compare fiber to your current internet service`,
@@ -780,7 +780,7 @@ If fiber is available at your address, it is generally worth switching from cabl
       },
       {
         title: `Understand the internet type comparison at a glance`,
-        content: `A quick comparison to help make the decision: Fiber offers the fastest speeds (up to multiple Gigabits), symmetric upload and download, highest reliability, and requires professional installation. Cable is widely available, typically 200-1,000 Mbps download but slow upload, and is reliable but can slow down during peak hours. DSL runs over phone lines, typically 10-100 Mbps, and is slower and less reliable than cable but available in many areas. 5G Home Internet uses cell towers, typically 100-300 Mbps, with no installation needed, but speeds can vary by location. Satellite (Starlink) is available anywhere with a sky view, typically 100-200 Mbps, and is ideal for rural areas with no other options.`,
+        content: `A quick comparison to help make the decision: Fiber offers the fastest speeds (up to multiple Gigabits), symmetric upload and download, highest reliability, and requires professional installation. Cable is widely available, usually 200-1,000 Mbps download but slow upload, and is reliable but can slow down during peak hours. DSL runs over phone lines, usually 10-100 Mbps, and is slower and less reliable than cable but available in many areas. 5G Home Internet uses cell towers, usually 100-300 Mbps, with no installation needed, but speeds can vary by location. Satellite (Starlink) is available anywhere with a sky view, usually 100-200 Mbps, and is ideal for rural areas with no other options.`,
         tip: `If you live in an area where fiber is available, it is worth calling your current cable provider to ask for a price match or loyalty discount before switching. They sometimes offer significant discounts to retain customers who are considering leaving.`,
       },
     ],
@@ -841,7 +841,7 @@ Subscription-based gifts (like a streaming service) should generally not be give
     difficulty: `Beginner`,
     body: `A refurbished laptop was previously owned or returned. It has been inspected, fixed if needed, cleaned, and resold — often for a lot less than a new model. Look for the label "Certified refurbished." It means a manufacturer, authorized reseller, or trusted third party tested and inspected the laptop before reselling it.
 
-Certified refurbished laptops can save you real money — typically 30 to 50 percent off the same model new. If you are on a budget, or you only need a laptop for email, web browsing, and video calls, buying certified refurbished is a smart choice.
+Certified refurbished laptops can save you real money — usually 30 to 50 percent off the same model new. If you are on a budget, or you only need a laptop for email, web browsing, and video calls, buying certified refurbished is a smart choice.
 
 The key distinction you need to understand is "certified refurbished" versus just "used" or "pre-owned." Certified refurbished has a defined process behind it. A random listing from a private seller on eBay labeled "used" has no such guarantee. Reputable sources for certified refurbished laptops include the manufacturer's own refurbished store — Dell, HP, Apple, and Lenovo all have one — and Amazon Renewed, Amazon's certified refurbished program. Back Market, a specialized refurbished electronics retailer, and Best Buy Open-Box, which are returned items inspected by Best Buy staff, are two more good options.
 

@@ -17,7 +17,7 @@ export const guidesBatch38: Guide[] = [
     steps: [
       {
         title: 'Charge and size the ring before first use',
-        content: `The Galaxy Ring comes in a charging case (similar to earbuds). Before wearing it, charge the case and ring fully using the included USB-C cable — this takes about 80 minutes. Samsung sells the ring in sizes 5 through 15. If you ordered online, Samsung typically ships a sizing kit first so you can find the right fit. Wear the ring on whichever finger feels comfortable — most people choose their index or middle finger on their non-dominant hand.`,
+        content: `The Galaxy Ring comes in a charging case (similar to earbuds). Before wearing it, charge the case and ring fully using the included USB-C cable — this takes about 80 minutes. Samsung sells the ring in sizes 5 through 15. If you ordered online, Samsung usually ships a sizing kit first so you can find the right fit. Wear the ring on whichever finger feels comfortable — most people choose their index or middle finger on their non-dominant hand.`,
         tip: `A properly fitted Galaxy Ring should feel snug but not tight. You should be able to slide it off with gentle effort. If it leaves a red mark or feels numb, try the next size up.`,
       },
       {
@@ -294,7 +294,7 @@ The ring pairs with a free app on iPhone or Android. Each morning it gives you t
       },
       {
         title: 'Recommended brands by budget',
-        content: `Budget ($200–$500): TCL and Hisense offer the best value — their Roku-powered TVs punch well above their price. A TCL 55-inch 4K Roku TV typically costs around $300. Mid-range ($500–$1,000): Samsung TU series and LG UQ series offer excellent pictures and reliable smart platforms. Premium ($1,000+): Sony Bravia and LG OLED TVs are for those who want reference-quality pictures and are especially good in dark rooms. Brands to approach with caution: unknown brands from online marketplaces with no customer service or warranty support in the US.`,
+        content: `Budget ($200–$500): TCL and Hisense offer the best value — their Roku-powered TVs punch well above their price. A TCL 55-inch 4K Roku TV usually costs around $300. Mid-range ($500–$1,000): Samsung TU series and LG UQ series offer excellent pictures and reliable smart platforms. Premium ($1,000+): Sony Bravia and LG OLED TVs are for those who want reference-quality pictures and are especially good in dark rooms. Brands to approach with caution: unknown brands from online marketplaces with no customer service or warranty support in the US.`,
         tip: `Best time to buy: Black Friday (November) and Super Bowl season (January–February) see the biggest discounts. You can often get last year's model at 30–40% off.`,
       },
     ],

@@ -176,7 +176,7 @@ export const guidesBatch32: Guide[] = [
       },
       {
         title: 'Choose a delivery window',
-        content: 'At checkout, select a delivery date and time window. Options typically range from same-day to next-day, in two-hour windows. Earlier time slots fill up first.',
+        content: 'At checkout, select a delivery date and time window. Options usually range from same-day to next-day, in two-hour windows. Earlier time slots fill up first.',
       },
       {
         title: 'Track and receive your delivery',
@@ -326,7 +326,7 @@ export const guidesBatch32: Guide[] = [
       },
       {
         title: 'Find Costco gas prices before filling up',
-        content: 'Tap the store finder icon and select your nearest Costco. The current gas price is shown on the warehouse detail page. Costco gas is typically $0.10 to $0.25 cheaper per gallon than nearby stations.',
+        content: 'Tap the store finder icon and select your nearest Costco. The current gas price is shown on the warehouse detail page. Costco gas is usually $0.10 to $0.25 cheaper per gallon than nearby stations.',
       },
     ],
   },
@@ -395,7 +395,7 @@ export const guidesBatch32: Guide[] = [
       {
         title: 'Check your ExtraBucks balance',
         content: 'Tap "Rewards" to see your current ExtraBucks balance. Rewards are printed on your receipt but are also visible in the app. Use them before the expiration date.',
-        warning: 'ExtraBucks expire — check the expiration date when you earn them. They typically expire 30 to 60 days after being issued.',
+        warning: 'ExtraBucks expire — check the expiration date when you earn them. They usually expire 30 to 60 days after being issued.',
       },
       {
         title: 'Use the app at checkout',
@@ -435,7 +435,7 @@ export const guidesBatch32: Guide[] = [
       },
       {
         title: 'Print photos from your phone',
-        content: 'Tap "Photo" → "Standard Prints." Select photos from your phone, choose print sizes, and select your local Walgreens store for pickup. Same-day pickup is typically available in one hour.',
+        content: 'Tap "Photo" → "Standard Prints." Select photos from your phone, choose print sizes, and select your local Walgreens store for pickup. Same-day pickup is usually available in one hour.',
       },
     ],
   },

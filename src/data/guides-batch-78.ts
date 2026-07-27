@@ -13,11 +13,11 @@ export const guidesBatch78: Guide[] = [
     difficulty: `Beginner`,
     body: `If your WiFi signal is weak in certain rooms — a basement, a back bedroom, or a home office far from your router — powerline adapters may be the fix you have been looking for. These small devices use the electrical wiring already inside your walls to carry your internet signal from one outlet to another. You do not need to run any new cables or hire a professional to install them.
 
-A powerline adapter kit comes with two units. One plugs into an electrical outlet near your router. And you connect it to the router with a short ethernet cable that typically comes in the box. The second unit plugs into any other outlet in your home. And you connect that one to your computer, smart TV, or streaming device. The two adapters communicate with each other through the electrical wiring in the walls, creating a stable, wired-speed connection anywhere in your house.
+A powerline adapter kit comes with two units. One plugs into an electrical outlet near your router. And you connect it to the router with a short ethernet cable that usually comes in the box. The second unit plugs into any other outlet in your home. And you connect that one to your computer, smart TV, or streaming device. The two adapters communicate with each other through the electrical wiring in the walls, creating a stable, wired-speed connection anywhere in your house.
 
 Powerline adapters work best when both units are on the same electrical circuit. In most homes this is not a problem, but if you have a very large house with separate circuit panels, you may see reduced performance. Avoid plugging them into power strips or surge protectors. They work best when plugged directly into a wall outlet.
 
-Modern powerline kits from brands like TP-Link (their AV1000 and AV2000 lines are popular) and NETGEAR typically cost between $35 and $80 at stores like Amazon, Walmart, or Best Buy. They are a lot faster and more reliable than WiFi range extenders, and far less expensive than having an electrician run new ethernet cables through your walls.
+Modern powerline kits from brands like TP-Link (their AV1000 and AV2000 lines are popular) and NETGEAR usually cost between $35 and $80 at stores like Amazon, Walmart, or Best Buy. They are a lot faster and more reliable than WiFi range extenders, and far less expensive than having an electrician run new ethernet cables through your walls.
 
 This is a great solution for seniors or anyone who wants a steady, wired connection for video calls, streaming TV, or working from home — without the headache of a complicated network setup.`,
     steps: [
@@ -42,7 +42,7 @@ This is a great solution for seniors or anyone who wants a steady, wired connect
       },
       {
         title: `Test your connection`,
-        content: `Open a browser on the connected device and visit a website or play a video to confirm internet is working. You can also run a free speed test at fast.com or speedtest.net. The speed through powerline adapters is typically much faster and more consistent than a weak WiFi signal.`,
+        content: `Open a browser on the connected device and visit a website or play a video to confirm internet is working. You can also run a free speed test at fast.com or speedtest.net. The speed through powerline adapters is usually much faster and more consistent than a weak WiFi signal.`,
       },
     ],
   },
@@ -60,7 +60,7 @@ This is a great solution for seniors or anyone who wants a steady, wired connect
 
 Ethernet cables look similar to phone cables but slightly wider. They have plastic clips on each end that snap firmly into the port. The most common type sold today is called "Cat 5e" or "Cat 6" — either works well for home internet. You can find them at any electronics or home improvement store. And they range in price from a few dollars to about $15 depending on the length.
 
-To set up a wired connection, you run the cable from one of the open ports on the back of your router to the ethernet port on your computer or other device. The router typically has four to six yellow or numbered ports labeled "LAN" — these are the ones you use for wired devices. Do not use the port labeled "WAN" or "Internet" — that one connects to your modem.
+To set up a wired connection, you run the cable from one of the open ports on the back of your router to the ethernet port on your computer or other device. The router usually has four to six yellow or numbered ports labeled "LAN" — these are the ones you use for wired devices. Do not use the port labeled "WAN" or "Internet" — that one connects to your modem.
 
 Once you plug in both ends of the cable, your computer or TV will usually recognize the connection automatically within a few seconds. On Windows, you will see a small network icon in the bottom-right corner change. On a Mac, a small dot will appear next to "Ethernet" in your Network settings.
 
@@ -144,7 +144,7 @@ A USB hub is one of the most practical accessories you can add to a laptop. And 
 
 The big advantage of a docking station is convenience. When you arrive at your desk, you plug in one cable (or in some cases, set the laptop on a pad) and everything is connected. When you leave, you unplug that one cable and your laptop is ready to take with you — no fumbling with five different cables every time.
 
-Docking stations come in two main types. Universal USB docks work with almost any laptop that has a USB port, including both Windows and Mac computers. They typically cost $60–$120 and handle standard tasks well. Thunderbolt docks are faster and more capable but require a Thunderbolt port on your laptop (common on newer MacBooks and some premium Windows laptops) — these run $150–$300.
+Docking stations come in two main types. Universal USB docks work with almost any laptop that has a USB port, including both Windows and Mac computers. They usually cost $60–$120 and handle standard tasks well. Thunderbolt docks are faster and more capable but require a Thunderbolt port on your laptop (common on newer MacBooks and some premium Windows laptops) — these run $150–$300.
 
 Popular brands include Anker, CalDigit, Dell, and Plugable. If you are buying for a Windows laptop, check the manufacturer's website — Dell, HP, and Lenovo all make docks designed specifically for their laptops that often work better than generic options.
 
@@ -356,7 +356,7 @@ For users who want even larger text without zooming the entire screen, you can a
 
 With TalkBack running, you interact with your phone differently than usual. Instead of tapping once to open an app, you tap once to hear what it is, then double-tap to open it. To scroll, you use two fingers instead of one. This new way of navigating takes a little practice. But it is logical and consistent once you learn the pattern.
 
-To turn on TalkBack, you typically go to Settings → Accessibility → TalkBack and toggle it on. On some phones you can activate it even faster with a shortcut: press and hold both volume buttons at the same time for three seconds. Google provides a built-in TalkBack tutorial that teaches you the gestures step by step. It is a great place to start.
+To turn on TalkBack, you usually go to Settings → Accessibility → TalkBack and toggle it on. On some phones you can activate it even faster with a shortcut: press and hold both volume buttons at the same time for three seconds. Google provides a built-in TalkBack tutorial that teaches you the gestures step by step. It is a great place to start.
 
 TalkBack also reads text messages out loud when they arrive, speaks the time when you unlock your phone, and reads web pages aloud. Combined with Google Assistant, it makes it possible to send messages, make phone calls, set reminders, and search the internet entirely by voice.
 
@@ -448,7 +448,7 @@ There are several ways to use captioned telephone service. A dedicated captioned
 
 Alternatively, a free app called InnoCaption and an app from Hamilton CapTel provide real-time captions on your smartphone during regular phone calls. These apps work on both iPhone and Android and are free to download.
 
-To qualify and get a free captioned phone, contact your state's telephone equipment distribution program or visit the Hamilton CapTel website (www.hamiltonCapTel.com) or Sorenson's CaptionCall website (captioncall.com). You will typically fill out a brief form confirming you have hearing loss. No formal documentation or medical certification is required by most programs.`,
+To qualify and get a free captioned phone, contact your state's telephone equipment distribution program or visit the Hamilton CapTel website (www.hamiltonCapTel.com) or Sorenson's CaptionCall website (captioncall.com). You will usually fill out a brief form confirming you have hearing loss. No formal documentation or medical certification is required by most programs.`,
     steps: [
       {
         title: `Decide which service fits your situation`,
@@ -469,7 +469,7 @@ To qualify and get a free captioned phone, contact your state's telephone equipm
       },
       {
         title: `Make a test call to get comfortable`,
-        content: `Call a friend or family member and let them know you are testing your new captioned phone. Read the captions as the conversation goes on to get a feel for the timing. Captions typically appear within two to three seconds of the speaker finishing a sentence. The accuracy is very high for clear speech, though accents or background noise may sometimes cause minor errors.`,
+        content: `Call a friend or family member and let them know you are testing your new captioned phone. Read the captions as the conversation goes on to get a feel for the timing. Captions usually appear within two to three seconds of the speaker finishing a sentence. The accuracy is very high for clear speech, though accents or background noise may sometimes cause minor errors.`,
         warning: `Captioned phone service requires an internet connection for the captions to work. If your internet goes out, you can still make and receive calls, but the captions will not appear until the connection is restored.`,
       },
     ],
@@ -484,7 +484,7 @@ To qualify and get a free captioned phone, contact your state's telephone equipm
     thumbnailEmoji: ``,
     publishedAt: `2026-04-20`,
     difficulty: `Beginner`,
-    body: `Windows High Contrast mode changes your screen's color scheme to use bold, highly contrasting colors — typically white text on a black background, or black text on a white background — making text and interface elements much easier to distinguish. This feature is built into Windows and costs nothing to use.
+    body: `Windows High Contrast mode changes your screen's color scheme to use bold, highly contrasting colors — usually white text on a black background, or black text on a white background — making text and interface elements much easier to distinguish. This feature is built into Windows and costs nothing to use.
 
 High Contrast is helpful for people who have low vision, experience eye strain or fatigue when looking at screens, work in bright environments where glare makes normal screens hard to read, or prefer a bolder, more readable display. Some people also find that High Contrast reduces headaches during long computer sessions.
 
@@ -607,7 +607,7 @@ Nothing about these changes is permanent. You can return to the original setting
 
 A blue light filter — sometimes called "Night mode," "Night Shift," or "Warm display" — shifts the colors on your screen toward warmer oranges and yellows in the evening. This reduces the amount of blue light reaching your eyes without making the screen harder to see. Many people find their eyes feel less tired and they fall asleep more quickly after using screens with blue light filters turned on.
 
-Every major phone and operating system has a built-in blue light filter that is free and already on your device. On iPhone, it is called Night Shift. On Android, it is typically called Night Light or Comfort View. On Windows, it is called Night Light. On Mac, it is called Night Shift. All of these can be set to turn on automatically at sunset and turn off at sunrise. So you never have to remember to switch them.
+Every major phone and operating system has a built-in blue light filter that is free and already on your device. On iPhone, it is called Night Shift. On Android, it is usually called Night Light or Comfort View. On Windows, it is called Night Light. On Mac, it is called Night Shift. All of these can be set to turn on automatically at sunset and turn off at sunrise. So you never have to remember to switch them.
 
 The strength of the filter is usually adjustable — a slight warming is subtle and barely noticeable, while maximum warmth gives the screen a strong orange tint. For most people, a moderate setting provides eye relief without making colors look too unnatural.
 

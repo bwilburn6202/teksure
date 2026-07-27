@@ -187,7 +187,7 @@ On Samsung phones specifically: Settings → Connections → Wi-Fi → tap the g
 
 If none of the above methods work, or if you are connecting a device that does not have a camera (like a smart TV or printer), you can find your Wi-Fi password on the router itself.
 
-Your router is the box that connects to your internet service. It may also be your modem, or they may be separate devices. Look for a label on the back or bottom. It typically shows:
+Your router is the box that connects to your internet service. It may also be your modem, or they may be separate devices. Look for a label on the back or bottom. It usually shows:
 
 - Network name (also called SSID or Wi-Fi name)
 - Password (also called Network Key, Wi-Fi Password, or WPA2 Key)

@@ -121,7 +121,7 @@ On Android (Google Maps is pre-installed on most Android phones):
 2. Tap your profile picture in the top right corner.
 3. Tap "Offline maps."
 4. Tap "Select your own map."
-5. A box appears on the map. Move and zoom the map so the box covers the area you want to download. The bigger the area, the more storage it takes — a city and surrounding area typically uses 500 MB to 2 GB.
+5. A box appears on the map. Move and zoom the map so the box covers the area you want to download. The bigger the area, the more storage it takes — a city and surrounding area usually uses 500 MB to 2 GB.
 6. Tap "Download." Wait for the download to complete (takes a few minutes on Wi-Fi).
 
 On iPhone (you need to download the Google Maps app from the App Store first):
@@ -369,7 +369,7 @@ New websites can be legitimate, but a scam site is often registered just days or
 2. Enter the website address.
 3. Look for the "Registered" date.
 
-A website selling popular products that was registered last week is suspicious. An established business typically has a domain registered for years.
+A website selling popular products that was registered last week is suspicious. An established business usually has a domain registered for years.
 
 **Check 7: Look for too-good-to-be-true prices**
 

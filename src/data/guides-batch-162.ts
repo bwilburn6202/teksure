@@ -557,7 +557,7 @@ When you are ready to apply, the online application takes about 30 minutes. You 
 
 Social Security will review your application and may contact you by mail if they need additional documents (your birth certificate, for example). Expect to receive a decision letter within 3 to 5 weeks for straightforward applications. If there are complications — such as a name change or questions about your work record — it may take longer.
 
-Your first payment typically arrives the month after your benefits are scheduled to start, on a specific Wednesday of the month based on your birth date:
+Your first payment usually arrives the month after your benefits are scheduled to start, on a specific Wednesday of the month based on your birth date:
 - Born on the 1st–10th: payment arrives the **second Wednesday** of each month.
 - Born on the 11th–20th: payment arrives the **third Wednesday** of each month.
 - Born on the 21st–31st: payment arrives the **fourth Wednesday** of each month.

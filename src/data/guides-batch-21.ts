@@ -65,7 +65,7 @@ export const guidesBatch21: Guide[] = [
       },
       {
         title: 'Read receipts and "Delivered" — what they mean',
-        content: `Under a blue (iMessage) bubble: "Delivered" means the message reached their device. "Read" means they opened the conversation (only shows if they have read receipts turned on for you). Under a green bubble: you typically don't see "Read" receipts — just "Sent."`,
+        content: `Under a blue (iMessage) bubble: "Delivered" means the message reached their device. "Read" means they opened the conversation (only shows if they have read receipts turned on for you). Under a green bubble: you usually don't see "Read" receipts — just "Sent."`,
       },
       {
         title: 'What happens when iPhone sends a text to Android',
@@ -514,11 +514,11 @@ export const guidesBatch21: Guide[] = [
       },
       {
         title: 'Check for service outages in your area',
-        content: `Go to your internet provider's website or app and look for a service status page or outage map. You can also search "[your provider] outage [your city]." If there's a known outage, you just have to wait — typically outages are resolved within a few hours.`,
+        content: `Go to your internet provider's website or app and look for a service status page or outage map. You can also search "[your provider] outage [your city]." If there's a known outage, you just have to wait — usually outages are resolved within a few hours.`,
       },
       {
         title: 'Call your provider if nothing helped',
-        content: `Call the customer service number on your bill and tell them: "My internet has been slow/dropping for [X days]. I've restarted my modem and router and the problem continues." Ask them to check the signal levels coming into your home, run a line test, and send a technician if needed. Technician visits for service issues are typically free.`,
+        content: `Call the customer service number on your bill and tell them: "My internet has been slow/dropping for [X days]. I've restarted my modem and router and the problem continues." Ask them to check the signal levels coming into your home, run a line test, and send a technician if needed. Technician visits for service issues are usually free.`,
         warning: `If a stranger calls you claiming to be from your internet provider and says your connection has an issue, hang up. It may be a scam. Only call the number on your bill or the provider's official website.`,
       },
     ],
@@ -534,7 +534,7 @@ export const guidesBatch21: Guide[] = [
     thumbnailEmoji: '',
     publishedAt: '2026-04-19',
     difficulty: 'Beginner',
-    body: `Having physical photos is something many people still value — for frames, albums, sending to relatives, or just holding a real print in your hands. The good news: printing photos from your phone is now very convenient. Walgreens, CVS, and Walmart all let you order prints directly from their apps or websites, pick them up at a nearby store in about an hour, or have them delivered to your home.\n\nStandard 4x6 prints typically cost 20–35 cents each at these stores, making them affordable for printing dozens of your favorites. You can also order canvas prints, photo books, greeting cards, mugs, magnets, and other photo gifts.\n\nThis guide uses Walgreens as the example since it has one of the simplest ordering processes, but the steps are similar for CVS Photo and Walmart Photo.`,
+    body: `Having physical photos is something many people still value — for frames, albums, sending to relatives, or just holding a real print in your hands. The good news: printing photos from your phone is now very convenient. Walgreens, CVS, and Walmart all let you order prints directly from their apps or websites, pick them up at a nearby store in about an hour, or have them delivered to your home.\n\nStandard 4x6 prints usually cost 20–35 cents each at these stores, making them affordable for printing dozens of your favorites. You can also order canvas prints, photo books, greeting cards, mugs, magnets, and other photo gifts.\n\nThis guide uses Walgreens as the example since it has one of the simplest ordering processes, but the steps are similar for CVS Photo and Walmart Photo.`,
     steps: [
       {
         title: 'Open the Walgreens app or website',
@@ -775,8 +775,8 @@ export const guidesBatch21: Guide[] = [
       },
       {
         title: 'Track your refund',
-        content: 'After dropping off the item, check your email for a drop-off confirmation. Refunds typically arrive within 3–5 business days to your original payment method (credit card, Amazon gift card balance, etc.). You can check the status under "Returns & Orders" in your Amazon account.',
-        warning: 'Return windows vary by item and seller. Items "Sold by Amazon" or "Fulfilled by Amazon" typically have the easiest returns. Items sold by third-party sellers may have different return policies — check the listing before you buy.',
+        content: 'After dropping off the item, check your email for a drop-off confirmation. Refunds usually arrive within 3–5 business days to your original payment method (credit card, Amazon gift card balance, etc.). You can check the status under "Returns & Orders" in your Amazon account.',
+        warning: 'Return windows vary by item and seller. Items "Sold by Amazon" or "Fulfilled by Amazon" usually have the easiest returns. Items sold by third-party sellers may have different return policies — check the listing before you buy.',
       },
     ],
   },

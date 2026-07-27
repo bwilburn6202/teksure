@@ -255,7 +255,7 @@ Since 2020, Medicare has greatly expanded telehealth coverage. As of 2026, Medic
 - Certain chronic condition management visits
 - Follow-up visits after a hospital stay
 
-You typically pay the same cost-sharing for a telehealth visit as you would for an in-person visit — usually 20% of the Medicare-approved amount after your Part B deductible is met. If you have a Medicare Advantage plan (Part C), your plan may cover telehealth differently — check your plan's Evidence of Coverage or call the number on your Medicare card.
+You usually pay the same cost-sharing for a telehealth visit as you would for an in-person visit — usually 20% of the Medicare-approved amount after your Part B deductible is met. If you have a Medicare Advantage plan (Part C), your plan may cover telehealth differently — check your plan's Evidence of Coverage or call the number on your Medicare card.
 
 For the most current Medicare telehealth coverage details, visit **medicare.gov** and search "telehealth."
 

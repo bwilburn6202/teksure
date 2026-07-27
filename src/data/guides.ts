@@ -1101,7 +1101,7 @@ const coreGuides: Guide[] = [
       { title: 'Use an external drive', content: 'Copy files from your old PC to an external hard drive, then plug it into the new PC and copy them over.' , tip: 'External hard drives with 1TB or more of storage cost under 50 dollars and are reusable for backups afterwards.' },
       { title: 'Use Windows Backup', content: 'On your old PC, use Settings → Accounts → Windows Backup to back up apps, settings, and files.' },
       { title: 'Transfer over your local network', content: 'Connect both PCs to the same network and use Nearby Sharing or a shared folder to transfer files.' },
-      { title: 'Reinstall applications', content: 'Apps typically need to be reinstalled. Download them from the Microsoft Store or original websites.' , warning: 'Write down the names of all applications you use on your old PC before you start. It is common to forget one until you need it.' },
+      { title: 'Reinstall applications', content: 'Apps usually need to be reinstalled. Download them from the Microsoft Store or original websites.' , warning: 'Write down the names of all applications you use on your old PC before you start. It is common to forget one until you need it.' },
     ]
   },
   {
@@ -5500,7 +5500,7 @@ const coreGuides: Guide[] = [
     steps: [
       { title: 'What is a patient portal?', content: `A patient portal is a secure website (or app) provided by your doctor's office or hospital. The most common one is MyChart, used by thousands of healthcare providers. It lets you view test results, message your doctor, request prescription refills, schedule appointments, and see your medical history — all without calling the office.` },
       { title: 'Create your account', content: `Ask your doctor's office for a patient portal activation code. Go to the portal website (usually linked from your doctor's website) or download the MyChart app. Enter your activation code, create a username and password, and set up security questions. Some portals let you verify your identity with your date of birth and last 4 digits of your SSN instead of an activation code.` },
-      { title: 'View your test results', content: `After a blood test or other lab work, results typically appear in your portal within 1-3 days. Go to "Test Results" or "Labs." Each result shows the test name, your result, and the normal range. Results outside the normal range are usually flagged. If you're unsure what a result means, use the portal's messaging feature to ask your doctor.`, tip: `Don't panic if you see a flagged result — many slightly out-of-range values are normal. Your doctor will reach out if anything needs attention.` },
+      { title: 'View your test results', content: `After a blood test or other lab work, results usually appear in your portal within 1-3 days. Go to "Test Results" or "Labs." Each result shows the test name, your result, and the normal range. Results outside the normal range are usually flagged. If you're unsure what a result means, use the portal's messaging feature to ask your doctor.`, tip: `Don't panic if you see a flagged result — many slightly out-of-range values are normal. Your doctor will reach out if anything needs attention.` },
       { title: 'Message your doctor', content: `Go to "Messages" and tap "New Message." Select your doctor from the dropdown. Type your question — it's like sending an email. Common uses: asking about symptoms, requesting prescription refills, following up after a visit, or asking about test results. Most doctors respond within 1-2 business days. For urgent issues, always call or go to urgent care.`, warning: `Never use the patient portal for emergencies. If you're having chest pain, difficulty breathing, or a medical emergency, call 911.` },
       { title: 'Schedule appointments and manage medications', content: `Tap "Appointments" to see upcoming visits or schedule new ones. Many portals let you choose available time slots directly. Under "Medications," you'll see all your current prescriptions. Tap "Request Refill" to ask your doctor to send a refill to your pharmacy — much easier than calling.` },
     ]
@@ -5807,7 +5807,7 @@ const coreGuides: Guide[] = [
       },
       {
         title: 'Use your credit card purchase protection if needed',
-        content: 'If Anker will not honor the warranty, check whether you paid with a credit card. Many credit cards offer purchase protection that covers defective products \u2014 typically for 90 to 120 days after purchase, and some extend the manufacturer warranty by a year. Call the number on the back of your credit card and ask about filing a purchase protection or extended warranty claim. They will walk you through the process.',
+        content: 'If Anker will not honor the warranty, check whether you paid with a credit card. Many credit cards offer purchase protection that covers defective products \u2014 usually for 90 to 120 days after purchase, and some extend the manufacturer warranty by a year. Call the number on the back of your credit card and ask about filing a purchase protection or extended warranty claim. They will walk you through the process.',
         tip: 'Visa, Mastercard, and American Express cards often include purchase protection at no extra cost. Check your card benefits online or call your card company to ask.'
       }
     ]
@@ -5869,7 +5869,7 @@ const coreGuides: Guide[] = [
       },
       {
         title: 'Add "verbatim" to your search',
-        content: 'At the end of any search, add the word verbatim (for example: "best plants for indoors verbatim"). This tells Google to search for your exact words and typically skips the AI Overview. You can also try adding -ai at the end of your search as an alternative.',
+        content: 'At the end of any search, add the word verbatim (for example: "best plants for indoors verbatim"). This tells Google to search for your exact words and usually skips the AI Overview. You can also try adding -ai at the end of your search as an alternative.',
       },
       {
         title: 'Try a different search engine',
@@ -8264,7 +8264,7 @@ The strongest option is to turn the Play Store off completely: Settings → Apps
       { title: 'What is cloud storage', content: 'Cloud storage means your files are saved on a computer in a secure data center (not just on your device). This means: you can access your files from any device, your files are safe even if your phone or computer breaks. And you can share files with others easily. Think of it like a safety deposit box at a bank — your stuff is there whenever you need it.' },
       { title: 'Which cloud service should you use', content: 'Use the one that matches your devices: iPhone/iPad/Mac users — iCloud (5GB free, built into every Apple device). Android/Chrome users — Google Drive (15GB free, connected to Gmail). Windows users — OneDrive (5GB free, built into Windows). You can use more than one, but keeping it simple with one service is easiest.' },
       { title: 'How to check your storage', content: 'iCloud: Settings, your name, iCloud, Manage Storage. Google Drive: drive.google.com, click the storage bar at the bottom-left. OneDrive: Open OneDrive app or go to onedrive.com, click Settings, then Storage.' },
-      { title: 'Free up space when you run out', content: 'Delete: old photos and videos (the biggest space hogs), email attachments you have already saved, old backups from devices you no longer own, and files in the trash (empty it to reclaim space). If you still need more, upgrade to a paid plan — typically $1-3/month for 50-200GB.' },
+      { title: 'Free up space when you run out', content: 'Delete: old photos and videos (the biggest space hogs), email attachments you have already saved, old backups from devices you no longer own, and files in the trash (empty it to reclaim space). If you still need more, upgrade to a paid plan — usually $1-3/month for 50-200GB.' },
       { title: 'Keep your cloud account secure', content: 'Use a strong, unique password for your cloud account. Turn on two-factor authentication (an extra code when you sign in). Never share your cloud login details with anyone. Review which apps have access to your cloud storage and remove any you do not recognize.' },
     ]
   },
@@ -8837,7 +8837,7 @@ The strongest option is to turn the Play Store off completely: Settings → Apps
       },
       {
         title: 'Choose a Tasker',
-        content: 'TaskRabbit shows profiles of available Taskers.\n\n1. **Look at ratings** — Choose someone with 4.5 stars or higher\n2. **Read reviews** — Look for comments about the specific type of work you need\n3. **Check hourly rates** — Handyman work is typically $40-$80/hour. Cleaning is typically $25-$50/hour.\n4. **Look at their bio** — Taskers describe their skills and experience\n5. **Check availability** — Make sure they are free when you need them\n6. **Tap "Select & Continue"** to book\n\nYou can message the Tasker before confirming to ask questions.', tip: 'For bigger jobs, message the Tasker first to confirm they have the right tools and experience.'
+        content: 'TaskRabbit shows profiles of available Taskers.\n\n1. **Look at ratings** — Choose someone with 4.5 stars or higher\n2. **Read reviews** — Look for comments about the specific type of work you need\n3. **Check hourly rates** — Handyman work is usually $40-$80/hour. Cleaning is usually $25-$50/hour.\n4. **Look at their bio** — Taskers describe their skills and experience\n5. **Check availability** — Make sure they are free when you need them\n6. **Tap "Select & Continue"** to book\n\nYou can message the Tasker before confirming to ask questions.', tip: 'For bigger jobs, message the Tasker first to confirm they have the right tools and experience.'
       },
       {
         title: 'During and after the task',
@@ -9139,7 +9139,7 @@ The strongest option is to turn the Play Store off completely: Settings → Apps
   // ═══════════════════════════════════════════════════════════════════════════
 
   { slug: 'understand-wifi-vs-data', title: 'WiFi vs Cellular Data: What Is the Difference?', excerpt: 'Two ways your phone connects to the internet — here is when to use each one.', category: 'essential-skills', tags: ['wifi', 'cellular', 'data', 'internet', 'beginner'], readTime: '3 min', thumbnailEmoji: '📶', publishedAt: '2026-04-09', difficulty: 'Beginner', videoUrl: 'https://www.youtube.com/embed/9p3he-A3RbU', steps: [
-    { title: 'What is WiFi', content: 'WiFi is a wireless internet connection from a router in your home, office, or public place. It has a limited range — about 100-150 feet. WiFi is typically faster and does not count against your phone plan data limit.' },
+    { title: 'What is WiFi', content: 'WiFi is a wireless internet connection from a router in your home, office, or public place. It has a limited range — about 100-150 feet. WiFi is usually faster and does not count against your phone plan data limit.' },
     { title: 'What is cellular data', content: 'Cellular data (4G/5G) connects your phone through cell towers. It works almost anywhere you have phone signal. Cellular data counts against your monthly data plan unless you have unlimited data.' },
     { title: 'When to use each', content: 'Use WiFi at home, work, or places with free WiFi. Use cellular data when on the go. Download large files and stream video on WiFi to avoid data charges.' },
     { title: 'How to check which you are using', content: 'Look at the top of your phone. A WiFi icon (curved lines) means WiFi. "4G," "5G," or "LTE" means cellular data. Your phone switches automatically when WiFi is unavailable.' },
@@ -11230,7 +11230,7 @@ The strongest option is to turn the Play Store off completely: Settings → Apps
     { title: 'When you need one', content: `Network printers (so computers always find them). Smart home hubs. Game consoles (for port forwarding). Home servers or NAS devices. Most phones and laptops don't need static IPs.` },
     { title: 'Method 1: Router reservation', content: `Log into your router. Find DHCP Reservation (or Address Reservation). Add the device's MAC address and assign an IP. The router always gives that device the same address. This is the preferred method.` },
     { title: 'Method 2: Device settings', content: `On the device itself: go to network settings, switch from DHCP/Automatic to Manual/Static. Enter an IP address outside your router's DHCP range, plus subnet mask (255.255.255.0), gateway, and DNS.` },
-    { title: 'Choosing an IP address', content: `Most home routers use 192.168.1.x or 192.168.0.x. DHCP typically assigns .100-.254. Use an address in the .2-.99 range for static devices to avoid conflicts. Never use .1 (that's your router).` },
+    { title: 'Choosing an IP address', content: `Most home routers use 192.168.1.x or 192.168.0.x. DHCP usually assigns .100-.254. Use an address in the .2-.99 range for static devices to avoid conflicts. Never use .1 (that's your router).` },
   ] },
   { slug: 'network-storage-nas', title: 'Home Network Storage (NAS) for Beginners', excerpt: 'Set up a personal cloud server at home for file storage, backups, and media streaming.', category: 'how-to', tags: ['nas', 'storage', 'networking', 'backup', 'home-server'], readTime: '7 min', thumbnailEmoji: '💾', publishedAt: '2026-04-02', difficulty: 'Advanced', steps: [
     { title: 'What is a NAS?', content: 'A NAS (Network Attached Storage) is like your own personal cloud server at home. It connects to your router and lets every device on your network access shared files, photos, and media.' },

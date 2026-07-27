@@ -428,9 +428,9 @@ The app remembers places you have searched for recently, making it faster to nav
 
 Mobile banking apps use encryption (a high-level form of scrambling) to protect your information while it travels between your phone and your bank's systems. They are generally considered safe to use, especially on your own personal phone on a secure home Wi-Fi connection.
 
-To use your bank's app, you need your online banking username and password. If you have never set up online banking, you will need to do that first — usually by visiting your bank's website and clicking "Enroll" or "Register." Your account number and a piece of personal identification are typically needed.
+To use your bank's app, you need your online banking username and password. If you have never set up online banking, you will need to do that first — usually by visiting your bank's website and clicking "Enroll" or "Register." Your account number and a piece of personal identification are usually needed.
 
-The mobile deposit feature — depositing a paper check by photographing it — has a daily limit that varies by bank, typically between $1,000 and $5,000. After depositing a check by photo, write "Mobile Deposit" and the date on the front of the check, and keep it for at least a few weeks in case any questions come up.
+The mobile deposit feature — depositing a paper check by photographing it — has a daily limit that varies by bank, usually between $1,000 and $5,000. After depositing a check by photo, write "Mobile Deposit" and the date on the front of the check, and keep it for at least a few weeks in case any questions come up.
 
 Never use a banking app on public Wi-Fi (like at a coffee shop or airport). If you need to check your balance when you are out, use your phone's cellular data connection instead.
 
@@ -456,7 +456,7 @@ If you receive a text or email claiming to be from your bank and asking you to c
       },
       {
         title: `Deposit a paper check by photo`,
-        content: `Find the "Deposit Check" or "Mobile Deposit" option in the app. Enter the check amount. Take a photo of the front of the check, then the back. Make sure the check is on a dark, flat surface, is fully visible, and is in focus. Confirm the deposit. The money typically appears in your account within 1–2 business days. Write "Mobile Deposit" and the date on the check and keep it for 30 days.`,
+        content: `Find the "Deposit Check" or "Mobile Deposit" option in the app. Enter the check amount. Take a photo of the front of the check, then the back. Make sure the check is on a dark, flat surface, is fully visible, and is in focus. Confirm the deposit. The money usually appears in your account within 1–2 business days. Write "Mobile Deposit" and the date on the check and keep it for 30 days.`,
       },
     ],
   },
@@ -474,7 +474,7 @@ If you receive a text or email claiming to be from your bank and asking you to c
 
 Most banks offer a free service called Bill Pay. You set up your billers (the companies you pay each month) once, then send payments whenever you want. You can also set up automatic payments so the bank pays a bill on the same date every month without you having to do anything.
 
-Bill Pay payments are sent from your checking account. The bank either sends an electronic payment directly to the company or mails a paper check on your behalf. You do not need to know which method is used. Payments typically arrive within 1–3 business days, so schedule payments a few days before the due date.
+Bill Pay payments are sent from your checking account. The bank either sends an electronic payment directly to the company or mails a paper check on your behalf. You do not need to know which method is used. Payments usually arrive within 1–3 business days, so schedule payments a few days before the due date.
 
 Setting up automatic payments for regular bills like your utilities, phone, or subscriptions removes the worry about forgetting a due date. Many people set up a small extra amount — for example, paying the minimum on a credit card automatically — and then pay larger amounts manually when they want to pay more.
 
@@ -543,12 +543,12 @@ VA.gov works on both computers and mobile phones. The website address is va.gov 
       },
       {
         title: `Refill prescriptions through My HealtheVet`,
-        content: `On your signed-in VA.gov page, click Health Care and then My HealtheVet. Look for Pharmacy or Prescription Refills. You will see a list of your current VA prescriptions. Check the box next to any prescription you need refilled and click Submit. Prescriptions are mailed to your address on file and typically arrive within 7–10 days.`,
+        content: `On your signed-in VA.gov page, click Health Care and then My HealtheVet. Look for Pharmacy or Prescription Refills. You will see a list of your current VA prescriptions. Check the box next to any prescription you need refilled and click Submit. Prescriptions are mailed to your address on file and usually arrive within 7–10 days.`,
         warning: `Prescription refills through the mail take time. Request refills when you have about a 2-week supply remaining so you do not run out before the refill arrives.`,
       },
       {
         title: `Send a secure message to your VA care team`,
-        content: `From My HealtheVet, click Secure Messaging or Send a Message. Choose your health care team from the dropdown, select a topic (like General, Medication, or Question), and type your message. Click Send. Your care team typically responds within 3 business days. This is a good option for non-urgent questions, prescription questions, or following up on test results.`,
+        content: `From My HealtheVet, click Secure Messaging or Send a Message. Choose your health care team from the dropdown, select a topic (like General, Medication, or Question), and type your message. Click Send. Your care team usually responds within 3 business days. This is a good option for non-urgent questions, prescription questions, or following up on test results.`,
         tip: `Secure messaging is not for emergencies. If you have a medical emergency, call 911 or go to the nearest emergency room. For urgent VA health questions, call the VA health care line at 1-877-222-8387.`,
       },
     ],
@@ -563,11 +563,11 @@ VA.gov works on both computers and mobile phones. The website address is va.gov 
     thumbnailEmoji: ``,
     publishedAt: `2026-04-19`,
     difficulty: `Intermediate`,
-    body: `A wire transfer is a way to send money directly from one bank account to another — either within the United States (domestic wire) or to another country (international wire). Wire transfers move money faster than most other methods. Domestic wires typically arrive the same business day if sent before the bank's cutoff time.
+    body: `A wire transfer is a way to send money directly from one bank account to another — either within the United States (domestic wire) or to another country (international wire). Wire transfers move money faster than most other methods. Domestic wires usually arrive the same business day if sent before the bank's cutoff time.
 
 Wire transfers are used for large transactions where speed and certainty matter: buying a home, paying a contractor, sending money to family in another country, or paying a large invoice. You need the recipient's bank name, routing number (a 9-digit number that identifies the bank), and their account number.
 
-Most banks allow you to send a wire transfer online through your bank's website or app, though some still require you to do it in person or by phone. Domestic wires typically cost $15–$35 per transfer. International wires cost more — often $35–$50.
+Most banks allow you to send a wire transfer online through your bank's website or app, though some still require you to do it in person or by phone. Domestic wires usually cost $15–$35 per transfer. International wires cost more — often $35–$50.
 
 Wire transfers are final. Once a wire transfer is sent and received, it cannot be reversed. This is why wire fraud is so serious — scammers use wire transfers because the money disappears right away and cannot be recalled.
 
@@ -595,7 +595,7 @@ Before sending any wire transfer, especially a large one, call the recipient dir
       },
       {
         title: `Track the transfer and follow up if needed`,
-        content: `Most domestic wires arrive the same business day if sent before the cutoff time (often 2–4 PM). International wires typically take 1–5 business days. Contact your bank with your confirmation number if the recipient does not receive the funds within the expected time.`,
+        content: `Most domestic wires arrive the same business day if sent before the cutoff time (often 2–4 PM). International wires usually take 1–5 business days. Contact your bank with your confirmation number if the recipient does not receive the funds within the expected time.`,
         warning: `Never wire money to someone you have only met online and have not met in person, even if you have been communicating for months. Romance scams, lottery scams, and fake investment opportunities often ask for wire transfers.`,
       },
     ],

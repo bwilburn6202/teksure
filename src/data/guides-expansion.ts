@@ -121,7 +121,7 @@ To get started, go to irs.gov/freefile. You will see two options. "Guided Tax So
 
 You will need: your W-2 forms from each employer, any 1099 forms, your Social Security number, bank routing and account numbers for direct deposit, and last year's AGI (found on line 11 of your previous return).
 
-After completing your return, review every number carefully. Choose direct deposit for your refund. It typically arrives within 21 days versus 6 to 8 weeks for a mailed check. E-file your return and save the confirmation.
+After completing your return, review every number carefully. Choose direct deposit for your refund. It usually arrives within 21 days versus 6 to 8 weeks for a mailed check. E-file your return and save the confirmation.
 
 File early to get your refund sooner and reduce the risk of tax identity theft, where someone files a fraudulent return using your Social Security number before you do.`,
     steps: [
@@ -175,7 +175,7 @@ If you are going on vacation, Informed Delivery helps you monitor your mail from
     difficulty: 'Intermediate',
     body: `Healthcare.gov is the official website for the Health Insurance Marketplace created under the Affordable Care Act. If you do not get health insurance through your employer, Medicare, or Medicaid, the Marketplace is where you shop for and enroll in a plan. Many people qualify for financial help (subsidies) that a lot lower the monthly cost.
 
-Open Enrollment typically runs from November 1 through January 15 each year. You can enroll at other times if you have a qualifying life event such as losing coverage, getting married, having a baby, or moving.
+Open Enrollment usually runs from November 1 through January 15 each year. You can enroll at other times if you have a qualifying life event such as losing coverage, getting married, having a baby, or moving.
 
 Go to healthcare.gov and click "Get Coverage." Create an account with your name, email, and password. The application asks about your household size, income, and current insurance status. Based on your income, the system tells you if you qualify for premium tax credits, cost-sharing reductions, Medicaid, or CHIP.
 
@@ -208,7 +208,7 @@ If you need help choosing a plan, healthcare.gov has free in-person help. Click 
 
 The official starting point is vote.gov, a federal website that directs you to your state's online registration system. Most states offer online registration. A few still require a paper form.
 
-To register, you typically need: your driver's license or state ID number, the last four digits of your Social Security number, your date of birth, and your current home address.
+To register, you usually need: your driver's license or state ID number, the last four digits of your Social Security number, your date of birth, and your current home address.
 
 Go to vote.gov and select your state. You will be directed to your state's official registration portal. Follow the on-screen instructions — the process usually takes 3 to 5 minutes.
 
@@ -237,7 +237,7 @@ Even if you think you are registered, check before every major election. Voter r
     thumbnailEmoji: '',
     publishedAt: '2026-04-15',
     difficulty: 'Intermediate',
-    body: `The U.S. Department of State now allows eligible Americans to renew their passports entirely online. This is faster than the paper form process and eliminates the need to mail your current passport. Processing times for online renewals are typically 4 to 6 weeks for routine processing.
+    body: `The U.S. Department of State now allows eligible Americans to renew their passports entirely online. This is faster than the paper form process and eliminates the need to mail your current passport. Processing times for online renewals are usually 4 to 6 weeks for routine processing.
 
 You are eligible if: your most recent passport was issued when you were 16 or older, was issued within the last 15 years, is not damaged. And you are not changing your name (or changed it less than a year ago with legal documentation).
 
@@ -422,7 +422,7 @@ To apply, file a claim through your state's unemployment website. Search "[your 
 
 You will need: your Social Security number, driver's license number, work history for the past 18 months (employer names, addresses, dates, and reason for separation), and bank routing and account numbers for direct deposit.
 
-After filing, your state reviews the claim and may contact your former employer. Approval typically takes 2 to 3 weeks. Most states require you to certify continued eligibility every week or two — confirming you are still looking for work and reporting any income.
+After filing, your state reviews the claim and may contact your former employer. Approval usually takes 2 to 3 weeks. Most states require you to certify continued eligibility every week or two — confirming you are still looking for work and reporting any income.
 
 File as soon as possible. Most states have a one-week unpaid waiting period, and delays in filing mean delays in payments.`,
     steps: [
@@ -448,7 +448,7 @@ File as soon as possible. Most states have a one-week unpaid waiting period, and
     difficulty: 'Beginner',
     body: `Recreation.gov is the official reservation system for campgrounds, cabins, and permits at national parks, forests, and federal recreation areas. If you want to camp at popular parks like Yellowstone or Yosemite, you will need to book through this website.
 
-Many popular campgrounds fill up months in advance. Reservations typically open on a rolling basis, often 6 months before the stay date. Create a free account at recreation.gov so you are ready when sites become available.
+Many popular campgrounds fill up months in advance. Reservations usually open on a rolling basis, often 6 months before the stay date. Create a free account at recreation.gov so you are ready when sites become available.
 
 Search for your destination using the search bar. Click a campground to see photos, descriptions, amenities, and availability calendar. Select dates, choose a site, add to cart, and pay with a credit or debit card.
 
@@ -483,7 +483,7 @@ Set a reminder for when reservations open. Most parks release sites at 10:00 AM 
 
 Look for "Deposit" or "Mobile Deposit" in the app. The first time, your bank may take a day or two to enable the feature. When ready, endorse the back of the check with your signature and write "For Mobile Deposit Only" below it — this is required by federal regulations.
 
-Tap "Deposit," enter the check amount, select your account, and photograph the front and back of the check. Place the check on a dark, flat surface under good lighting. Hold your phone steady directly above it. Review the images for clarity, then tap "Submit." Funds are typically available within 1 to 2 business days.
+Tap "Deposit," enter the check amount, select your account, and photograph the front and back of the check. Place the check on a dark, flat surface under good lighting. Hold your phone steady directly above it. Review the images for clarity, then tap "Submit." Funds are usually available within 1 to 2 business days.
 
 Keep the physical check for 30 days after depositing, then shred it. Never deposit the same check at an ATM or branch — double-depositing causes serious account problems.`,
     steps: [
@@ -994,7 +994,7 @@ Before buying, check compatibility with your HVAC system. Both Nest and Ecobee h
 
 Download the Nest or Ecobee app, create an account, and follow the setup wizard for WiFi connection, temperature preferences, and schedule creation. Set comfortable temperatures for home/awake, sleeping, and away. Enable Eco/Away mode to save energy when you leave.
 
-Both Nest and Ecobee typically pay for themselves in 1-2 years through energy savings — the EPA estimates about $180 per year with a properly programmed thermostat.`,
+Both Nest and Ecobee usually pay for themselves in 1-2 years through energy savings — the EPA estimates about $180 per year with a properly programmed thermostat.`,
     steps: [
       { title: 'Check compatibility', content: 'Visit nest.com/widget/compatibility or ecobee.com/compatibility. Enter your current wiring details.' },
       { title: 'Photograph and label wiring', content: 'Turn off HVAC at the breaker. Take a clear photo of current wires, then label each with the included stickers.' },
@@ -1821,7 +1821,7 @@ Option 3: If you do not want to leave entirely but the notifications are too muc
 
 To get started, ask your doctor's office for a portal activation code or enrollment instructions. Many offices hand these out at appointments or email them. Go to your provider's portal website (often mychart.yourprovider.org) or download the MyChart app. Create an account using the activation code, your personal information, and a password.
 
-Once logged in, the dashboard shows your upcoming appointments, recent messages, and new test results. Tap "Test Results" to view lab work — results often appear within 1-2 days of your test. Tap "Messages" to send a secure message to your doctor's team about non-emergency questions (they typically respond within 1-2 business days).
+Once logged in, the dashboard shows your upcoming appointments, recent messages, and new test results. Tap "Test Results" to view lab work — results often appear within 1-2 days of your test. Tap "Messages" to send a secure message to your doctor's team about non-emergency questions (they usually respond within 1-2 business days).
 
 To schedule or cancel an appointment, look for "Appointments" → "Schedule an Appointment." Some offices let you book directly. Others let you request a time and the office confirms.
 
@@ -1831,7 +1831,7 @@ Patient portals are secure — your health information is protected by federal l
     steps: [
       { title: 'Get your activation code', content: `Ask your doctor's office for a patient portal activation code. They may give it to you at your next visit or send it by email.` },
       { title: 'Create your account', content: 'Go to the portal website or download the MyChart app. Use the activation code to create an account with your email and a strong password.' },
-      { title: 'View test results', content: 'Tap "Test Results" to see lab work. Results typically appear within 1-2 days of your test.' },
+      { title: 'View test results', content: 'Tap "Test Results" to see lab work. Results usually appear within 1-2 days of your test.' },
       { title: 'Message your doctor', content: `Tap "Messages" to send secure, non-emergency questions to your doctor's team. Expect a reply within 1-2 business days.` },
       { title: 'Schedule appointments', content: 'Go to "Appointments" to schedule, reschedule, or cancel visits. Some offices allow direct booking. Others confirm your request.' },
       { title: 'Request prescription refills', content: 'Go to "Medications" → "Request Refill." Select the medication and pharmacy. Your doctor approves and sends it.' },
@@ -2253,7 +2253,7 @@ Before you leave, make sure they can: make a phone call, send and receive a text
     difficulty: 'Intermediate',
     body: `When a loved one passes away, their online accounts do not close automatically. Email, social media, banking, subscriptions, and other accounts remain active — and in some cases, they continue to charge fees. Handling these accounts is an important part of settling their affairs.
 
-Start with the most critical accounts first: financial accounts and recurring charges. Check their bank and credit card statements (online or paper) for recurring subscriptions. Cancel these to stop ongoing charges. Contact their bank to close or freeze accounts. You will typically need a death certificate and proof that you are the executor or next of kin.
+Start with the most critical accounts first: financial accounts and recurring charges. Check their bank and credit card statements (online or paper) for recurring subscriptions. Cancel these to stop ongoing charges. Contact their bank to close or freeze accounts. You will usually need a death certificate and proof that you are the executor or next of kin.
 
 For email accounts: gaining access to a deceased person's email is important because it is often the key to finding and closing their other accounts. Google (Gmail) has an "Inactive Account Manager" and a process for requesting access. Apple has a "Digital Legacy" program. In both cases, you need a death certificate and legal documentation.
 
@@ -2389,7 +2389,7 @@ Update your address on important accounts: bank, credit cards, insurance, voter 
     difficulty: 'Beginner',
     body: `Choosing an internet plan can be confusing with all the speed numbers, plan tiers, and promotional pricing. Here is what you actually need to know to make a good decision without overpaying.
 
-Internet speed is measured in Mbps (megabits per second). Here is what different speeds handle: 25 Mbps is enough for 1-2 people doing basic browsing and email. 50-100 Mbps handles a household of 2-4 people streaming video, browsing, and video calling. 200-300 Mbps supports a larger household with multiple people streaming 4K video simultaneously. 500+ Mbps is typically more than most households need unless you have many devices running simultaneously.
+Internet speed is measured in Mbps (megabits per second). Here is what different speeds handle: 25 Mbps is enough for 1-2 people doing basic browsing and email. 50-100 Mbps handles a household of 2-4 people streaming video, browsing, and video calling. 200-300 Mbps supports a larger household with multiple people streaming 4K video simultaneously. 500+ Mbps is usually more than most households need unless you have many devices running simultaneously.
 
 Types of internet connections: cable (widely available, speeds from 25-1,000 Mbps), fiber optic (fastest and most reliable, up to 5,000 Mbps, but not available everywhere), DSL (uses phone lines, slower, 5-100 Mbps), fixed wireless (rural areas, improving rapidly), and satellite (available anywhere, higher latency — noticeable delay).
 
@@ -2419,7 +2419,7 @@ Before signing up, ask: "What is the price after the promotional period?" "Is th
     difficulty: 'Beginner',
     body: `Internet bills can be confusing with multiple line items, fees, and charges that are not clearly explained. Understanding each part helps you spot unnecessary charges and potentially lower your bill.
 
-Common line items: the base internet service fee (what you signed up for), equipment rental (modem and/or router — typically $10-15/month each), WiFi charges (some providers charge extra for WiFi on top of internet), data overage fees (if you exceed your monthly data cap), taxes and regulatory fees, and installation or setup fees (one-time charges).
+Common line items: the base internet service fee (what you signed up for), equipment rental (modem and/or router — usually $10-15/month each), WiFi charges (some providers charge extra for WiFi on top of internet), data overage fees (if you exceed your monthly data cap), taxes and regulatory fees, and installation or setup fees (one-time charges).
 
 Charges you may be able to remove: equipment rental fees — if you are paying $10-15/month to rent a modem or router, buying your own can save $120-180/year. Check your provider's list of compatible modems. WiFi service fees — some providers charge a separate fee for WiFi. Using your own router eliminates this. Service protection plans — these are basically insurance on the provider's equipment and often not worth the cost.
 
@@ -3162,7 +3162,7 @@ If you are running low on storage and cannot install an update, delete old photo
       { title: 'Open update settings', content: 'iPhone: Settings then General then Software Update. Android: Settings then System then System Update (Samsung: Settings then Software Update).' },
       { title: 'Check for available updates', content: 'Your phone searches for updates. If one is available, you will see the version number and a description of what it includes.' },
       { title: 'Download and install', content: 'Tap "Download and Install." Enter your passcode if asked. The download may take several minutes. Your phone will restart during installation — this is normal.' },
-      { title: 'Wait for installation to complete', content: 'Do not try to use your phone during the restart. It may show a progress bar or Apple/Android logo. The process typically takes 10 to 30 minutes.' },
+      { title: 'Wait for installation to complete', content: 'Do not try to use your phone during the restart. It may show a progress bar or Apple/Android logo. The process usually takes 10 to 30 minutes.' },
       { title: 'Turn on automatic updates', content: 'iPhone: Settings then General then Software Update then Automatic Updates then turn on. Android: check System Update settings for an auto-update toggle.' },
     ],
   },
@@ -3659,7 +3659,7 @@ You can delete voicemails by swiping left on them or tapping "Delete." Deleted v
 
 The most common way to set up voicemail is through the Phone app. Open the Phone app (the phone icon on your home screen) and press and hold the number 1 on the keypad. This is the universal voicemail speed dial on most carriers. The first time you call, you will hear automated prompts walking you through setup.
 
-The setup process typically asks you to create a PIN (4 to 6 digits) and record a greeting. For the PIN, choose something you will remember. You need it to check voicemail from another phone. For the greeting, you can use the default (an automated voice says your number) or record a custom greeting.
+The setup process usually asks you to create a PIN (4 to 6 digits) and record a greeting. For the PIN, choose something you will remember. You need it to check voicemail from another phone. For the greeting, you can use the default (an automated voice says your number) or record a custom greeting.
 
 For a custom greeting, the system prompts you to record after a beep. Say something like: "Hi, you have reached [your name]. I am not available right now. Please leave your name, number, and a brief message. And I will get back to you." Press the pound key (#) or follow the prompts to save your recording.
 
@@ -4314,7 +4314,7 @@ You can also check your update history to see what has been installed recently. 
 
 If an update fails to install, try checking for updates again — sometimes a second attempt succeeds. If it keeps failing, note the update number (it starts with KB followed by numbers) and search for it on Microsoft's support website for specific troubleshooting steps.
 
-Windows is set to download updates automatically by default. However, it is good practice to manually check at least once a month to make sure nothing was missed, especially if you do not leave your computer on overnight when automatic updates typically run.`,
+Windows is set to download updates automatically by default. However, it is good practice to manually check at least once a month to make sure nothing was missed, especially if you do not leave your computer on overnight when automatic updates usually run.`,
     steps: [
       { title: 'Open Settings', content: 'Click the Start button (Windows icon) at the bottom of your screen, then click the gear icon to open Settings. You can also press the Windows key + I on your keyboard as a shortcut.' },
       { title: 'Go to Windows Update', content: 'In the Settings window, click "Windows Update" in the left sidebar. This page shows your current update status and when updates were last checked.' },
@@ -4601,7 +4601,7 @@ Keep your Time Machine drive connected whenever possible. If you use a desktop M
     difficulty: 'Intermediate',
     body: `The Mac App Store has thousands of apps, but many popular programs — like Google Chrome, Zoom, Microsoft Office, and others — need to be downloaded directly from their developer's website. macOS includes a security feature called Gatekeeper that protects you from installing malicious software. But you need to know how to work with it properly when installing legitimate apps from the internet.
 
-To install an app from outside the App Store, first go to the developer's official website using your web browser. For example, to install Google Chrome, go to google.com/chrome. Look for a download button and click it. The file will download to your Downloads folder and will typically be a .dmg file (disk image) or a .pkg file (installer package).
+To install an app from outside the App Store, first go to the developer's official website using your web browser. For example, to install Google Chrome, go to google.com/chrome. Look for a download button and click it. The file will download to your Downloads folder and will usually be a .dmg file (disk image) or a .pkg file (installer package).
 
 For .dmg files: Double-click the downloaded file to open it. A window will appear showing the app icon and usually an arrow pointing to the Applications folder. Drag the app icon to the Applications folder to install it. Then close the window and eject the disk image by right-clicking it on your desktop and selecting "Eject." The app is now in your Applications folder and ready to use.
 
@@ -5069,7 +5069,7 @@ Set a Screen Time passcode that is different from the child's login password. Th
       { title: 'Start the return online', content: 'Click "Return or Replace Items" next to the order. Select the item, choose a reason for the return, and choose your refund method (original payment or store credit). Follow the prompts to generate a return label.' },
       { title: 'Print or save the return label', content: 'Most returns come with a free prepaid shipping label. Print it if you have a printer, or look for the option to show a QR code — UPS, FedEx, and USPS locations can print the label for you when you bring the QR code.' },
       { title: 'Pack and ship the item', content: 'Pack the item securely in its original box if possible. Tape the return label on the outside of the box, covering any old labels. Drop it off at the carrier location specified on the label — UPS Store, FedEx Office, or USPS post office.' },
-      { title: 'Track your refund', content: 'Once the package is scanned, you can track the return in your account. Refunds typically appear within 3 to 10 business days after the retailer receives the item. Check your email for a confirmation when the refund is processed.' },
+      { title: 'Track your refund', content: 'Once the package is scanned, you can track the return in your account. Refunds usually appear within 3 to 10 business days after the retailer receives the item. Check your email for a confirmation when the refund is processed.' },
     ],
   },
 
@@ -5109,7 +5109,7 @@ Set a Screen Time passcode that is different from the child's login password. Th
       { title: 'Install the Honey browser extension', content: 'Go to joinhoney.com and click "Get Honey for free." It will install as a browser extension in Chrome, Firefox, Safari, or Edge. You will see the Honey logo appear in your browser toolbar.' },
       { title: 'Shop online as normal — Honey works automatically', content: 'When you get to the checkout page of any online store, the Honey button will pop up and offer to search for coupon codes. Click "Apply Coupons" and Honey will try available codes and keep the one that saves you the most.' },
       { title: 'Set up Rakuten for cashback', content: 'Go to rakuten.com and create a free account with your email. Install the Rakuten browser extension. When you visit a store that offers cashback, a Rakuten button will appear — click "Activate" to earn cashback on your purchase.' },
-      { title: 'Start shopping through Rakuten', content: 'You can also start shopping from the Rakuten website by clicking a store link there. This activates your cashback automatically. Cashback rates vary by store — typically 1% to 10% back on your purchase total.' },
+      { title: 'Start shopping through Rakuten', content: 'You can also start shopping from the Rakuten website by clicking a store link there. This activates your cashback automatically. Cashback rates vary by store — usually 1% to 10% back on your purchase total.' },
       { title: 'Collect your cashback payment', content: 'Rakuten sends your accumulated cashback as a check or PayPal payment every quarter (every three months) as long as your balance is at least $5.01. You can track your earnings in your Rakuten account dashboard.' },
     ],
   },
@@ -5259,7 +5259,7 @@ Set a Screen Time passcode that is different from the child's login password. Th
       { title: 'Sign in with your Apple ID', content: 'Open the app and sign in with your Apple ID (the email and password you use for the App Store). If you do not have an Apple ID, you can create one for free at appleid.apple.com.' },
       { title: 'Subscribe to Apple TV+ for original content', content: 'Tap "Apple TV+" in the app to see original shows and movies. Tap "Subscribe" to start a subscription. It costs around $10 per month and includes a free trial for new subscribers. Many Apple devices come with a complimentary trial period as well.' },
       { title: 'Browse and watch', content: 'The "Watch Now" tab shows recommendations and content from your connected streaming apps. The "Apple TV+" tab shows only Apple originals. Tap any title and select "Play" to start watching.' },
-      { title: 'Rent or buy movies', content: 'Tap the "Store" tab to browse movies available to rent or buy. Rental prices are typically around $4 to $6 and give you 30 days to start watching and 48 hours to finish once you press play. Purchased movies stay in your library permanently.' },
+      { title: 'Rent or buy movies', content: 'Tap the "Store" tab to browse movies available to rent or buy. Rental prices are usually around $4 to $6 and give you 30 days to start watching and 48 hours to finish once you press play. Purchased movies stay in your library permanently.' },
     ],
   },
 
@@ -5299,7 +5299,7 @@ Set a Screen Time passcode that is different from the child's login password. Th
       { title: 'Download content on Disney+', content: 'Open the Disney+ app and find a movie or episode. Tap the download icon below the title. Go to "Downloads" at the bottom of the screen to see your downloaded content and watch it offline.' },
       { title: 'Download content on Amazon Prime Video', content: 'Open the Prime Video app and find a title. Tap the download icon (arrow pointing down) on the episode or movie. Go to "My Stuff" then "Downloads" to access offline content.' },
       { title: 'Manage your storage', content: `Downloaded videos take up significant storage space on your device — a one-hour show can use 1 to 3 GB. Check your phone's storage regularly (Settings, then General, then Storage on iPhone). Delete watched downloads to free up space.` },
-      { title: 'Know the expiration rules', content: 'Downloaded content expires after a set period — typically 30 days from download, or 48 hours after you start watching. The app will warn you before expiration. You must be connected to the internet at least once every 30 days to keep downloads active.' },
+      { title: 'Know the expiration rules', content: 'Downloaded content expires after a set period — usually 30 days from download, or 48 hours after you start watching. The app will warn you before expiration. You must be connected to the internet at least once every 30 days to keep downloads active.' },
     ],
   },
 
@@ -5357,7 +5357,7 @@ Set a Screen Time passcode that is different from the child's login password. Th
     thumbnailEmoji: '',
     publishedAt: '2026-04-16',
     difficulty: 'Beginner' as any,
-    body: `Zelle lets you send money directly from your bank account to another person's bank account in minutes — for free. It is built into the apps of most major US banks including Bank of America, Chase, Wells Fargo, and hundreds of others. Because transfers go directly between bank accounts, the money typically arrives within minutes.`,
+    body: `Zelle lets you send money directly from your bank account to another person's bank account in minutes — for free. It is built into the apps of most major US banks including Bank of America, Chase, Wells Fargo, and hundreds of others. Because transfers go directly between bank accounts, the money usually arrives within minutes.`,
     steps: [
       { title: 'Find Zelle in your bank app', content: `Open your bank's mobile app and look for "Zelle" in the menu — usually under "Transfer Money," "Pay and Transfer," or "Send Money." If your bank supports Zelle, it will be listed there. You do not need to download a separate app.` },
       { title: 'Enroll your email or phone number', content: 'The first time you use Zelle, you will need to enroll by entering your email address or US mobile phone number and verifying it with a code. This is a one-time setup.' },

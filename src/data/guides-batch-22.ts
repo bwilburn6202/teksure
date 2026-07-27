@@ -11,7 +11,7 @@ export const guidesBatch22: Guide[] = [
     thumbnailEmoji: '',
     publishedAt: '2026-04-19',
     difficulty: 'Beginner',
-    body: `Facebook Marketplace is a free way to sell items to people in your local area through Facebook. You take a photo, write a description, set a price, and list it — often selling within a day or two for items priced fairly. It's used to sell furniture, appliances, clothing, tools, collectibles, sports equipment, and much more.\n\nBecause buyers are local, you typically meet in person to exchange cash for the item — no mailing or shipping involved. You communicate through Facebook Messenger to arrange a time and place to meet.\n\nThis guide walks you through creating a listing, communicating safely with buyers, and staying safe during meetups. Facebook Marketplace is generally safe when you follow basic precautions, and it's an excellent way to turn unused items into extra money.`,
+    body: `Facebook Marketplace is a free way to sell items to people in your local area through Facebook. You take a photo, write a description, set a price, and list it — often selling within a day or two for items priced fairly. It's used to sell furniture, appliances, clothing, tools, collectibles, sports equipment, and much more.\n\nBecause buyers are local, you usually meet in person to exchange cash for the item — no mailing or shipping involved. You communicate through Facebook Messenger to arrange a time and place to meet.\n\nThis guide walks you through creating a listing, communicating safely with buyers, and staying safe during meetups. Facebook Marketplace is generally safe when you follow basic precautions, and it's an excellent way to turn unused items into extra money.`,
     steps: [
       {
         title: 'Open Facebook Marketplace',
@@ -196,7 +196,7 @@ export const guidesBatch22: Guide[] = [
     thumbnailEmoji: '',
     publishedAt: '2026-04-19',
     difficulty: 'Beginner',
-    body: `Fax machines still exist in many offices, hospitals, and government agencies — and sometimes you may need to send a document by fax even though almost no one has a fax machine at home anymore. The good news: you can send and receive faxes from your phone using a fax app, completely paperless.\n\nFax apps work by converting your document (a photo, a scanned document, or a PDF) to a fax transmission and delivering it to the receiving fax machine. The other person gets a printed fax just like normal. You never need a machine or a phone line.\n\nMost fax apps offer free pages for occasional use (typically 10–20 free fax pages), which is enough for most people who only need to send a fax once in a while — like when submitting a medical form or a legal document.`,
+    body: `Fax machines still exist in many offices, hospitals, and government agencies — and sometimes you may need to send a document by fax even though almost no one has a fax machine at home anymore. The good news: you can send and receive faxes from your phone using a fax app, completely paperless.\n\nFax apps work by converting your document (a photo, a scanned document, or a PDF) to a fax transmission and delivering it to the receiving fax machine. The other person gets a printed fax just like normal. You never need a machine or a phone line.\n\nMost fax apps offer free pages for occasional use (usually 10–20 free fax pages), which is enough for most people who only need to send a fax once in a while — like when submitting a medical form or a legal document.`,
     steps: [
       {
         title: 'Download a fax app',
@@ -568,7 +568,7 @@ export const guidesBatch22: Guide[] = [
       },
       {
         title: 'Call 1-800-MEDICARE',
-        content: 'Call 1-800-633-4227 (1-800-MEDICARE). This is the official Medicare helpline, open 24/7. A representative can request a replacement card be mailed to your address on file. The new card typically arrives within 30 days.',
+        content: 'Call 1-800-633-4227 (1-800-MEDICARE). This is the official Medicare helpline, open 24/7. A representative can request a replacement card be mailed to your address on file. The new card usually arrives within 30 days.',
       },
       {
         title: 'Contact your local Social Security office',
@@ -618,7 +618,7 @@ export const guidesBatch22: Guide[] = [
       },
       {
         title: 'Update direct deposit or address',
-        content: 'Under your account settings or "My Profile," you can change your direct deposit bank account or update your mailing address. Changes typically take effect within 30 days. For direct deposit changes, Social Security will send a confirmation letter to your address on file.',
+        content: 'Under your account settings or "My Profile," you can change your direct deposit bank account or update your mailing address. Changes usually take effect within 30 days. For direct deposit changes, Social Security will send a confirmation letter to your address on file.',
       },
     ],
   },

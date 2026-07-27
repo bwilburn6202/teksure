@@ -127,7 +127,7 @@ Optional add-ons include sports packs for NBA League Pass, MLB.TV, and internati
 
 To watch four games at once side by side, use the MultiView feature on Apple TV and Roku — a popular feature during football Sundays.
 
-To get started, go to fubo.tv and sign up. Download the Fubo app on Roku, Fire TV, Apple TV, iPhone, Android, or smart TVs. A free trial is typically available for new subscribers. Compare to YouTube TV: YouTube TV has a cleaner interface and unlimited DVR, but FuboTV carries more sports channels, especially RSNs and international soccer.`,
+To get started, go to fubo.tv and sign up. Download the Fubo app on Roku, Fire TV, Apple TV, iPhone, Android, or smart TVs. A free trial is usually available for new subscribers. Compare to YouTube TV: YouTube TV has a cleaner interface and unlimited DVR, but FuboTV carries more sports channels, especially RSNs and international soccer.`,
     category: `entertainment`,
     tags: [`fubo tv`, `sports streaming`, `live tv`, `soccer`, `nfl`],
     thumbnailEmoji: ``,
@@ -219,7 +219,7 @@ Philo is best for people who are home a lot, love binge-watching entertainment c
     excerpt: `TP-Link Deco mesh Wi-Fi systems offer strong coverage at a lower price than competitors — here's how to get yours up and running.`,
     body: `TP-Link Deco is a family of mesh Wi-Fi systems that provide strong wireless coverage throughout your home by using multiple small units that work together as a team. Instead of one router struggling to reach every corner, Deco units spread coverage evenly so you get a reliable connection in the bedroom, the backyard, and everywhere in between.
 
-What makes Deco appealing is the price. Deco systems are typically less expensive than Eero (Amazon) or Netgear Orbi while delivering similar coverage. TP-Link offers a wide range — from the budget-friendly Deco M4 (good for smaller homes) to the premium Deco XE75 (handles very large homes and supports Wi-Fi 6E for faster speeds).
+What makes Deco appealing is the price. Deco systems are usually less expensive than Eero (Amazon) or Netgear Orbi while delivering similar coverage. TP-Link offers a wide range — from the budget-friendly Deco M4 (good for smaller homes) to the premium Deco XE75 (handles very large homes and supports Wi-Fi 6E for faster speeds).
 
 To get started, download the free Deco app on your iPhone or Android phone before you touch any hardware. Search for "TP-Link Deco" in the App Store or Google Play.
 
@@ -428,7 +428,7 @@ If you clicked a link or called a number: change your Apple ID password right aw
     excerpt: `A pop-up says your computer is infected and shows a "Microsoft" number to call — it's a scam. Here's how to recognize and escape it.`,
     body: `Fake Microsoft tech support scams are among the most common computer scams targeting older adults. The tactics are designed to create panic and confusion so you act before you think. Knowing what these scams look like and exactly what to do breaks their power entirely.
 
-Here is how the scam typically starts: you are browsing the web when suddenly your browser fills with a large alert box. It may say "Warning: Your computer has been blocked" or "Microsoft Security Alert: Your computer has been infected." A loud alarm may play from your speakers. A large phone number is displayed — often with the Windows or Microsoft logo to make it look official.
+Here is how the scam usually starts: you are browsing the web when suddenly your browser fills with a large alert box. It may say "Warning: Your computer has been blocked" or "Microsoft Security Alert: Your computer has been infected." A loud alarm may play from your speakers. A large phone number is displayed — often with the Windows or Microsoft logo to make it look official.
 
 If you call that number, a person answers and says they are from "Microsoft" or "Windows Technical Support." They speak confidently and use technical language. They will ask you to install a remote access program — commonly AnyDesk or TeamViewer — that lets them control your computer. Once they have access, they navigate to obscure parts of Windows (like Event Viewer, which always shows some warnings — that is normal) and claim to show you "dangerous viruses" and "hackers in your system." Then they demand payment — often $200 to $500 — via wire transfer, gift card codes, cryptocurrency, or a payment app. Some scammers also steal files or install actual malware while they have remote access.
 
@@ -622,7 +622,7 @@ The core of every medical alert system is a button connected to a 24/7 monitorin
 
 There are three main types to choose from.
 
-Home-based systems include a base unit plugged into a wall outlet in your home, connected via a landline or cellular signal. You wear a small button on a lanyard around your neck or on a wristband. These buttons typically work within 600 to 1,500 feet of the base unit, which covers most homes and yards. Home-based systems are the most affordable, often $20–30 per month.
+Home-based systems include a base unit plugged into a wall outlet in your home, connected via a landline or cellular signal. You wear a small button on a lanyard around your neck or on a wristband. These buttons usually work within 600 to 1,500 feet of the base unit, which covers most homes and yards. Home-based systems are the most affordable, often $20–30 per month.
 
 Mobile or GPS systems work anywhere, not just at home. A small device you carry or wear communicates over cellular networks and includes GPS so the monitoring center can pinpoint your location outdoors — at the grocery store, on a walk, or traveling. These run $30–45 per month.
 
@@ -862,7 +862,7 @@ If you lose your IP PIN before filing: log in to your IRS Online Account at IRS.
     slug: `retirement-budgeting`,
     title: `How to Create a Budget When You're Retired`,
     excerpt: `Budgeting in retirement is different from working years — here's how to build a plan that lasts, using modern tools.`,
-    body: `Retirement changes the fundamental structure of your finances. During your working years, budgeting was about making sure spending stayed below a paycheck that arrived regularly and typically grew over time. In retirement, income is often fixed — coming from Social Security, a pension, and withdrawals from savings — while expenses, especially healthcare, can grow faster than inflation.
+    body: `Retirement changes the fundamental structure of your finances. During your working years, budgeting was about making sure spending stayed below a paycheck that arrived regularly and usually grew over time. In retirement, income is often fixed — coming from Social Security, a pension, and withdrawals from savings — while expenses, especially healthcare, can grow faster than inflation.
 
 Building a retirement budget starts with understanding your income. List every source: monthly Social Security benefit, any pension payments, required minimum distributions from retirement accounts (which begin at age 73 under current rules), any part-time work income, or rental income. This is your fixed monthly base.
 

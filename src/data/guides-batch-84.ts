@@ -31,7 +31,7 @@ Setting up Bark takes about 20 to 30 minutes. You will create a parent account, 
       },
       {
         title: `Connect your child's social media and email accounts`,
-        content: `Inside the Bark parent dashboard, tap "Add Child" and then "Connect Accounts." Bark will show you a list of supported platforms. For each one — such as Instagram, Snapchat, Gmail, or YouTube — follow the on-screen steps to grant Bark read access. You will typically log in to the child's account once so Bark can connect.`,
+        content: `Inside the Bark parent dashboard, tap "Add Child" and then "Connect Accounts." Bark will show you a list of supported platforms. For each one — such as Instagram, Snapchat, Gmail, or YouTube — follow the on-screen steps to grant Bark read access. You will usually log in to the child's account once so Bark can connect.`,
         tip: `Quick Tip: You do not need to connect every account on day one. Start with the platforms your child uses most.`,
       },
       {
@@ -179,7 +179,7 @@ You can create a Kids Mode profile for each child in your household with a Disne
     thumbnailEmoji: ``,
     publishedAt: `2026-04-20`,
     difficulty: `Beginner`,
-    body: `Netflix Kids profiles are a free feature available on all Netflix subscription plans. When you create a Kids profile for a child, Netflix automatically sets the content to only show titles rated for children — typically G, PG, and TV-Y through TV-G content. Older, more mature titles are not visible in the Kids profile at all.
+    body: `Netflix Kids profiles are a free feature available on all Netflix subscription plans. When you create a Kids profile for a child, Netflix automatically sets the content to only show titles rated for children — usually G, PG, and TV-Y through TV-G content. Older, more mature titles are not visible in the Kids profile at all.
 
 Netflix also allows you to set a PIN on the Kids profile so your child cannot switch to a different profile or change settings without your permission. You can find this option in the account settings on the Netflix website. From a computer, you have the most control. You can set the PIN, adjust the maturity level of content, and choose specific shows you want to block even if they fall within the allowed rating range.
 
@@ -260,7 +260,7 @@ The subscription costs $4.99 per month for Prime members and $7.99 per month wit
     thumbnailEmoji: ``,
     publishedAt: `2026-04-20`,
     difficulty: `Beginner`,
-    body: `Roblox is one of the most popular online platforms for children and teenagers, with hundreds of millions of accounts worldwide. It is not a single game but rather a platform where users can play millions of different games created by other users, as well as create their own games. Children typically love Roblox for its creativity and social elements. They can play with friends, explore new experiences, and build their own worlds.
+    body: `Roblox is one of the most popular online platforms for children and teenagers, with hundreds of millions of accounts worldwide. It is not a single game but rather a platform where users can play millions of different games created by other users, as well as create their own games. Children usually love Roblox for its creativity and social elements. They can play with friends, explore new experiences, and build their own worlds.
 
 For parents, the social and open-ended nature of Roblox raises some valid concerns. Players can chat with each other in real time, make purchases using the in-game currency called Robux, and encounter games created by strangers that may include mature themes. Roblox has built-in safety tools that address most of these concerns. But they need to be actively turned on by parents.
 
@@ -315,7 +315,7 @@ The most important safety step for parents is to set up a Microsoft Family accou
     steps: [
       {
         title: `Understand which version of Minecraft your child plays`,
-        content: `There are two main versions: "Minecraft: Bedrock Edition" (available on mobile, Windows, Xbox, PlayStation, Nintendo Switch, and sold in most stores) and "Minecraft: Java Edition" (available only on Windows, Mac, and Linux, typically downloaded from minecraft.net). Bedrock Edition is more common for children and has better integration with Microsoft's parental controls.`,
+        content: `There are two main versions: "Minecraft: Bedrock Edition" (available on mobile, Windows, Xbox, PlayStation, Nintendo Switch, and sold in most stores) and "Minecraft: Java Edition" (available only on Windows, Mac, and Linux, usually downloaded from minecraft.net). Bedrock Edition is more common for children and has better integration with Microsoft's parental controls.`,
       },
       {
         title: `Set up a Microsoft account for your child`,
@@ -642,7 +642,7 @@ Tynker works on iPad, Android tablets, iPhone, Android phones, and web browsers 
 
 Beyond sharing purchases, Family Sharing is the foundation of Apple's parental controls. When a child's Apple ID is part of a family group, parents can review and approve any App Store purchases before they go through. They can also set Screen Time limits to manage how long a child uses their device, and restrict certain apps and content by rating. Parents can even see their child's location on a map — all from the parent's own iPhone.
 
-The family organizer — typically a parent — creates the family group and invites other members by email. Each family member needs their own Apple ID. For children under 13, parents create a child Apple ID directly from Family Sharing settings, which automatically puts appropriate restrictions in place.
+The family organizer — usually a parent — creates the family group and invites other members by email. Each family member needs their own Apple ID. For children under 13, parents create a child Apple ID directly from Family Sharing settings, which automatically puts appropriate restrictions in place.
 
 Family Sharing works across all Apple devices: iPhone, iPad, iPod touch, Mac, and Apple Watch. It is free to set up, though the subscriptions you share (like iCloud+) do cost money. The savings from combining subscriptions under one Family plan can be significant — especially if multiple family members were previously paying individually for Apple Music or iCloud storage.`,
     steps: [

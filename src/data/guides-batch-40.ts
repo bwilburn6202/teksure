@@ -298,7 +298,7 @@ Disney+ is home to Disney, Pixar, Marvel, Star Wars, and National Geographic con
 
 You need the Disney+ app on your iPhone, iPad, or Android device to use downloads. The feature is not available on a computer web browser. Almost all Disney+ content is available to download — a much higher percentage than some other streaming services.
 
-Downloaded content stays on your device for up to 30 days. Once you start watching a downloaded title, you typically have 48 hours to finish it before it expires. You can renew the download if you need more time.
+Downloaded content stays on your device for up to 30 days. Once you start watching a downloaded title, you usually have 48 hours to finish it before it expires. You can renew the download if you need more time.
 
 A Disney+ subscription ($7.99/month with ads or $13.99/month without ads) is required. All paid tiers include the download feature.`,
     steps: [
@@ -931,7 +931,7 @@ The good news: a handful of simple habits dramatically reduce your risk. Banks t
 4. Check your account at least once a week for unauthorized transactions
 5. Use a strong, unique password for your bank that you do not use anywhere else
 
-Banks typically reimburse fraud losses if you report them quickly — most require you to report within 60 days of the fraudulent transaction appearing on your statement. The sooner you spot and report it, the better.`,
+Banks usually reimburse fraud losses if you report them quickly — most require you to report within 60 days of the fraudulent transaction appearing on your statement. The sooner you spot and report it, the better.`,
     steps: [
       {
         title: `Enable two-factor authentication`,

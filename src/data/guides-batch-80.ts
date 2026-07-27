@@ -212,7 +212,7 @@ You do not have to track every bite forever. Many people track for a few weeks t
       },
       {
         title: `Set up your profile and daily targets`,
-        content: `Open your chosen app and complete the setup questionnaire. You will enter your height, weight, age, activity level, and health goal — options typically include losing weight, maintaining weight, or gaining muscle. The app will calculate suggested daily targets for calories, protein, carbohydrates, and fat. These are starting estimates — your doctor or dietitian can help you adjust them.`,
+        content: `Open your chosen app and complete the setup questionnaire. You will enter your height, weight, age, activity level, and health goal — options usually include losing weight, maintaining weight, or gaining muscle. The app will calculate suggested daily targets for calories, protein, carbohydrates, and fat. These are starting estimates — your doctor or dietitian can help you adjust them.`,
         warning: `Macro targets for medical conditions like diabetes or kidney disease are very different from general wellness targets. Always check with your doctor before a lot changing your diet.`,
       },
       {
@@ -288,7 +288,7 @@ The free version of Cronometer covers everything most people need. A paid upgrad
     difficulty: `Beginner`,
     body: `Carb Manager is a food tracking app built specifically for people following a low-carbohydrate or ketogenic diet. While most tracking apps show total carbohydrates, Carb Manager focuses on net carbs — total carbohydrates minus dietary fiber and sugar alcohols. Net carbs are what most low-carb and keto dieters care about because fiber and certain sugar alcohols do not raise blood sugar the way regular carbs do.
 
-A ketogenic diet typically limits net carbs to about 20 to 50 grams per day, depending on the individual. This very low carbohydrate intake causes the body to shift from burning glucose for fuel to burning fat — a state called ketosis. Many people find this approach helpful for weight loss, blood sugar management, or reducing inflammation. However, it is a significant change in eating habits and affects how medications work, so talking to your doctor before starting is important.
+A ketogenic diet usually limits net carbs to about 20 to 50 grams per day, depending on the individual. This very low carbohydrate intake causes the body to shift from burning glucose for fuel to burning fat — a state called ketosis. Many people find this approach helpful for weight loss, blood sugar management, or reducing inflammation. However, it is a significant change in eating habits and affects how medications work, so talking to your doctor before starting is important.
 
 Carb Manager has one of the largest databases of keto-friendly and low-carb food entries, including restaurant menu items and specialty low-carb products. When you log a food, the app prominently displays the net carb count in large text at the top of the screen rather than burying it.
 
@@ -353,7 +353,7 @@ To use MDLive you need a smartphone, tablet, or computer with a camera and micro
       },
       {
         title: `Request a visit`,
-        content: `Tap "See a Doctor Now" for an immediate video or phone visit, or tap "Schedule" to book a specific time. Choose the type of visit you need — General Medical, Dermatology, Mental Health, or another available specialty. Describe your symptoms briefly in the text field. You will then be connected to the next available doctor, which typically takes between 5 and 30 minutes.`,
+        content: `Tap "See a Doctor Now" for an immediate video or phone visit, or tap "Schedule" to book a specific time. Choose the type of visit you need — General Medical, Dermatology, Mental Health, or another available specialty. Describe your symptoms briefly in the text field. You will then be connected to the next available doctor, which usually takes between 5 and 30 minutes.`,
         tip: `If you have a photo of a rash, skin irritation, or wound, take a clear close-up photo before starting your visit. The doctor may ask you to upload or show it during the appointment.`,
       },
       {
@@ -473,7 +473,7 @@ The service works differently from most telehealth platforms. Instead of a live 
 
 Conditions Amazon Clinic commonly treats include urinary tract infections, cold sores, erectile dysfunction, and birth control. It also treats acid reflux, seasonal allergies, eyelash growth, hair loss, and several skin conditions. These are situations where a physical examination is usually not necessary and a prescription is often the standard treatment.
 
-Pricing is listed upfront before you start. Costs typically range from around $35 to $75 depending on the condition. If Amazon Clinic is unable to help with your situation, you are not charged.
+Pricing is listed upfront before you start. Costs usually range from around $35 to $75 depending on the condition. If Amazon Clinic is unable to help with your situation, you are not charged.
 
 Prescriptions from Amazon Clinic can be filled at any pharmacy or through Amazon Pharmacy, which often offers discounted prices. Amazon Clinic is not suitable for urgent or emergency situations or chronic disease management. It is also not a fit for any condition that genuinely requires an in-person examination.`,
     steps: [
@@ -518,7 +518,7 @@ The annual membership currently costs $199 per year for individuals, or it's inc
 
 One Medical isn't a replacement for emergency care or highly specialized medical care. But it works well as your primary care home base. They handle annual physicals, chronic condition management (like blood pressure, diabetes, and thyroid conditions), mental health referrals, treatment for common illness, and preventive care like vaccinations and cancer screenings.
 
-The One Medical app is the hub for everything. You can message your care team, request a video visit, book in-person appointments, view lab results, renew prescriptions, and review your health records — all from your phone. Messages to the care team are typically answered within a few hours during business hours.
+The One Medical app is the hub for everything. You can message your care team, request a video visit, book in-person appointments, view lab results, renew prescriptions, and review your health records — all from your phone. Messages to the care team are usually answered within a few hours during business hours.
 
 If you live near a One Medical office and want a primary care experience that combines the convenience of telehealth with the availability of same-day in-person visits, a One Medical membership can be a good value for ongoing healthcare needs.`,
     steps: [
@@ -533,12 +533,12 @@ If you live near a One Medical office and want a primary care experience that co
       },
       {
         title: `Book a same-day or next-day appointment`,
-        content: `Tap "Book a Visit" in the app and choose between an in-office visit or a video visit. For in-office visits, select a location near you. One Medical typically shows same-day appointment slots prominently at the top of the calendar. Choose your preferred provider if you have one, or select "Any available provider" for the fastest appointment time.`,
+        content: `Tap "Book a Visit" in the app and choose between an in-office visit or a video visit. For in-office visits, select a location near you. One Medical usually shows same-day appointment slots prominently at the top of the calendar. Choose your preferred provider if you have one, or select "Any available provider" for the fastest appointment time.`,
         tip: `For video visits, you can usually connect within minutes during business hours and sometimes at night or on weekends too. Book a video visit for conditions that do not require a physical exam.`,
       },
       {
         title: `Message your care team between visits`,
-        content: `One Medical's app has a built-in messaging feature that connects you directly to your care team. You can ask follow-up questions after a visit, request a prescription refill, get guidance on a minor concern, or ask for a referral to a specialist — all without scheduling an appointment. Responses typically arrive within a few hours on business days.`,
+        content: `One Medical's app has a built-in messaging feature that connects you directly to your care team. You can ask follow-up questions after a visit, request a prescription refill, get guidance on a minor concern, or ask for a referral to a specialist — all without scheduling an appointment. Responses usually arrive within a few hours on business days.`,
         warning: `For urgent symptoms that cannot wait for a message response, use the virtual visit option for faster care. For true emergencies, always call 911 or go to an emergency room.`,
       },
       {
@@ -605,9 +605,9 @@ Most telehealth services are straightforward to use. If you can make a video cal
     difficulty: `Beginner`,
     body: `One of the most important health decisions you can make is knowing where to go when something is wrong. Going to the emergency room for a condition that could be treated at urgent care costs a lot more — often thousands of dollars more — and means much longer wait times. On the other hand, trying to treat an emergency at home or at urgent care can delay life-saving care.
 
-Emergency rooms are open 24 hours a day, 7 days a week and are equipped for true medical emergencies. They have CT scanners, X-ray machines, surgical suites, intensive care units, and specialists on call around the clock. Emergency rooms prioritize patients by severity, which means someone with a sprained ankle may wait several hours while someone having a heart attack is seen right away. ER visits typically cost a lot more than urgent care, even with insurance.
+Emergency rooms are open 24 hours a day, 7 days a week and are equipped for true medical emergencies. They have CT scanners, X-ray machines, surgical suites, intensive care units, and specialists on call around the clock. Emergency rooms prioritize patients by severity, which means someone with a sprained ankle may wait several hours while someone having a heart attack is seen right away. ER visits usually cost a lot more than urgent care, even with insurance.
 
-Urgent care centers are walk-in clinics that can treat conditions that need attention today but are not life-threatening. They have X-ray machines and basic lab testing available. Wait times are typically shorter than an ER. Costs are much closer to a regular doctor's visit, and most insurance plans cover urgent care at the standard copay rate.
+Urgent care centers are walk-in clinics that can treat conditions that need attention today but are not life-threatening. They have X-ray machines and basic lab testing available. Wait times are usually shorter than an ER. Costs are much closer to a regular doctor's visit, and most insurance plans cover urgent care at the standard copay rate.
 
 Your smartphone can help you find both types of facilities quickly. Google Maps, Apple Maps, and dedicated apps like Solv let you search for "urgent care near me" or "emergency room near me" and see real-time wait time estimates before you go.
 
@@ -675,7 +675,7 @@ Zocdoc is completely free for patients. Doctors pay to be listed. You can use Zo
       },
       {
         title: `Complete intake paperwork before you arrive`,
-        content: `After booking, Zocdoc will send you a link to complete the doctor's intake forms digitally on your phone or computer before your appointment. This typically includes your health history, current medications, reason for the visit, and insurance information. Completing this in advance means less paperwork when you arrive and more time with the doctor.`,
+        content: `After booking, Zocdoc will send you a link to complete the doctor's intake forms digitally on your phone or computer before your appointment. This usually includes your health history, current medications, reason for the visit, and insurance information. Completing this in advance means less paperwork when you arrive and more time with the doctor.`,
       },
       {
         title: `Leave a review after your visit`,
@@ -884,7 +884,7 @@ The real heart of the Livongo program is the coaching and support. When your blo
 
 The Livongo app shows your glucose history in clear charts, identifies your time-in-range percentage, and tracks patterns around meals, exercise, and sleep. You can share a detailed report with your endocrinologist or primary care doctor before appointments.
 
-Livongo is typically offered as a free benefit through many employer health plans and some Medicare Advantage plans. The program has published research showing it leads to meaningful improvements in A1C levels (a long-term blood sugar measure) and reductions in emergency room visits among participants.`,
+Livongo is usually offered as a free benefit through many employer health plans and some Medicare Advantage plans. The program has published research showing it leads to meaningful improvements in A1C levels (a long-term blood sugar measure) and reductions in emergency room visits among participants.`,
     steps: [
       {
         title: `Check your eligibility and enroll`,
@@ -898,7 +898,7 @@ Livongo is typically offered as a free benefit through many employer health plan
       },
       {
         title: `Test your blood glucose and read the personalized message`,
-        content: `Test your blood glucose following your doctor's recommended schedule — typically before meals and before bed, though your doctor may recommend different times. After each reading, the Livongo meter displays a brief personalized message based on your result and your individual health targets. These messages are generated by the Livongo clinical algorithm and may suggest eating a specific amount of carbohydrates if low, contacting your doctor if high, or affirming that your reading looks good.`,
+        content: `Test your blood glucose following your doctor's recommended schedule — usually before meals and before bed, though your doctor may recommend different times. After each reading, the Livongo meter displays a brief personalized message based on your result and your individual health targets. These messages are generated by the Livongo clinical algorithm and may suggest eating a specific amount of carbohydrates if low, contacting your doctor if high, or affirming that your reading looks good.`,
         tip: `Write down any patterns you notice about when your readings tend to be high or low and bring these observations to your next doctor appointment. The Livongo app also charts these patterns automatically.`,
       },
       {

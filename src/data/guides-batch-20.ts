@@ -138,7 +138,7 @@ export const guidesBatch20: Guide[] = [
       },
       {
         title: 'Add a boarding pass or event ticket',
-        content: `Airlines and ticket sellers (like Ticketmaster) often email you a boarding pass or ticket with a button that says "Add to Apple Wallet." Tap that button and it'll be saved automatically. When you're at the airport or venue, open Wallet and the right pass typically appears on your screen based on your location.`,
+        content: `Airlines and ticket sellers (like Ticketmaster) often email you a boarding pass or ticket with a button that says "Add to Apple Wallet." Tap that button and it'll be saved automatically. When you're at the airport or venue, open Wallet and the right pass usually appears on your screen based on your location.`,
       },
       {
         title: 'Add a loyalty or rewards card',
@@ -801,7 +801,7 @@ export const guidesBatch20: Guide[] = [
     thumbnailEmoji: '',
     publishedAt: '2026-04-19',
     difficulty: 'Beginner',
-    body: `If it feels like your phone rings all day with calls from numbers you don't recognize — robocalls, scam calls, "your car warranty is expiring" calls — you're not imagining it. The FTC reports that older adults are disproportionately targeted by these calls. The good news: both iPhone and Android have built-in tools to dramatically reduce this problem.\n\nThe most powerful free option is "Silence Unknown Callers" on iPhone and its equivalent on Android. With this on, any call from a number that isn't already in your contacts, recent calls, or Siri suggestions goes straight to voicemail — no ringing, no interruption. Legitimate callers leave a voicemail; scammers typically don't.\n\nThis guide also covers the National Do Not Call Registry and free call-blocking apps. So you can stack multiple layers of protection.`,
+    body: `If it feels like your phone rings all day with calls from numbers you don't recognize — robocalls, scam calls, "your car warranty is expiring" calls — you're not imagining it. The FTC reports that older adults are disproportionately targeted by these calls. The good news: both iPhone and Android have built-in tools to dramatically reduce this problem.\n\nThe most powerful free option is "Silence Unknown Callers" on iPhone and its equivalent on Android. With this on, any call from a number that isn't already in your contacts, recent calls, or Siri suggestions goes straight to voicemail — no ringing, no interruption. Legitimate callers leave a voicemail; scammers usually don't.\n\nThis guide also covers the National Do Not Call Registry and free call-blocking apps. So you can stack multiple layers of protection.`,
     steps: [
       {
         title: 'Turn on Silence Unknown Callers (iPhone)',

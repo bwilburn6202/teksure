@@ -223,7 +223,7 @@ export const guidesBatch246: Guide[] = [
       },
       {
         title: "Schedule Follow-Up Visits to Cement the Habit",
-        content: "Nutrition change takes time. One visit gives you the plan. Follow-up visits help you stick with it. Schedule a follow-up two to four weeks after the first visit, and then every six to eight weeks for the first six months. Medicare typically covers two follow-up hours per year after the first year. During follow-ups, the dietitian reviews your new food diary, troubleshoots problems, adjusts the plan as needed, and tracks progress on weight, blood sugar, blood pressure, or other markers. Most patients see meaningful improvement within three to six months. Without follow-ups, the plan often slides back into old habits.",
+        content: "Nutrition change takes time. One visit gives you the plan. Follow-up visits help you stick with it. Schedule a follow-up two to four weeks after the first visit, and then every six to eight weeks for the first six months. Medicare usually covers two follow-up hours per year after the first year. During follow-ups, the dietitian reviews your new food diary, troubleshoots problems, adjusts the plan as needed, and tracks progress on weight, blood sugar, blood pressure, or other markers. Most patients see meaningful improvement within three to six months. Without follow-ups, the plan often slides back into old habits.",
         warning: "If insurance denies a follow-up claim, ask the dietitian's office to appeal. Denials based on coverage limits or coding errors are often reversed with one phone call."
       },
       {

@@ -162,7 +162,7 @@ Blue Apron ships to most areas in the continental United States. Delivery days v
 
 Most states now allow any registered voter to request an absentee ballot for any reason. A few states require you to provide a reason (such as illness, disability, or travel), but the majority of states have no-excuse absentee voting. Some states, like Oregon, Washington, and Colorado, automatically send a mail-in ballot to every registered voter without you needing to request one.
 
-The process for requesting a ballot varies by state, but the general steps are similar. You typically fill out a short application — either online, by mail, or in person at your local election office — and provide your name, address, date of birth, and a signature. Once your application is approved, your ballot arrives by mail, usually two to four weeks before Election Day.
+The process for requesting a ballot varies by state, but the general steps are similar. You usually fill out a short application — either online, by mail, or in person at your local election office — and provide your name, address, date of birth, and a signature. Once your application is approved, your ballot arrives by mail, usually two to four weeks before Election Day.
 
 It is important to submit your request early. Most states have a deadline to request an absentee ballot that falls one to two weeks before Election Day. If you miss that deadline, you will need to vote in person at your assigned polling place instead.
 
@@ -210,7 +210,7 @@ Always use official government websites when requesting a ballot online. The cor
     difficulty: `Beginner`,
     body: `Petfinder is the largest online database of adoptable pets in the United States. The website and app bring together listings from more than 11,000 animal shelters and rescue groups across the country. Instead of calling shelter after shelter, you can search Petfinder to see which pets are available near you, filter by species, breed, age, and size, and contact a shelter directly through the site.
 
-Petfinder is completely free to use. The shelters pay nothing to list their animals. And you pay nothing to search. Adoption fees charged by the individual shelters — which typically range from $25 to $150 depending on the organization — go directly to the shelter to cover the cost of veterinary care, vaccines, and spay or neuter surgery.
+Petfinder is completely free to use. The shelters pay nothing to list their animals. And you pay nothing to search. Adoption fees charged by the individual shelters — which usually range from $25 to $150 depending on the organization — go directly to the shelter to cover the cost of veterinary care, vaccines, and spay or neuter surgery.
 
 Each pet's listing on Petfinder includes photos, a description written by the shelter, information about the animal's age, sex, and size, and notes about the pet's personality and whether it gets along with children, other dogs, or other cats. Many listings also note whether the pet is already vaccinated, spayed or neutered, and microchipped.
 
@@ -282,7 +282,7 @@ Noom is best suited for people who want behavioral support alongside calorie tra
       },
       {
         title: `Connect with your goal specialist`,
-        content: `Within the first few days of signing up, your assigned goal specialist — a human Noom coach — will introduce themselves through the app's chat feature. You can message them with questions, share your progress, or ask for advice when you are stuck. Coaches are available during set hours and typically respond within one business day.`,
+        content: `Within the first few days of signing up, your assigned goal specialist — a human Noom coach — will introduce themselves through the app's chat feature. You can message them with questions, share your progress, or ask for advice when you are stuck. Coaches are available during set hours and usually respond within one business day.`,
       },
     ],
   },
@@ -475,7 +475,7 @@ One important thing to know: TracFone minutes and plans expire after a certain n
     difficulty: `Beginner`,
     body: `Asurion is the largest phone insurance provider in the United States. If you have phone insurance through Verizon, AT&T, T-Mobile, or another major carrier, there is a good chance Asurion is the company actually handling your claims. Many people discover they have Asurion insurance only when they need it. It is often added automatically when you buy a new phone from a carrier.
 
-Asurion covers a range of situations that can happen to a phone: cracked screens, water damage, hardware malfunctions, theft, and loss. Coverage details vary based on your specific plan, but most standard plans include all of these. There is typically a deductible (a fee you pay when filing a claim) that depends on your phone model — for newer, higher-end phones, deductibles can range from $29 to $299.
+Asurion covers a range of situations that can happen to a phone: cracked screens, water damage, hardware malfunctions, theft, and loss. Coverage details vary based on your specific plan, but most standard plans include all of these. There is usually a deductible (a fee you pay when filing a claim) that depends on your phone model — for newer, higher-end phones, deductibles can range from $29 to $299.
 
 When you file a claim, Asurion usually offers one of two options: repair your existing phone (often same-day or next-day at an Asurion repair location or through a mail-in service), or replace it with a refurbished device of the same model or a comparable one. Replacements are generally shipped overnight.
 
@@ -547,7 +547,7 @@ The Chase Mobile app is available in the App Store (iPhone) and Google Play Stor
       },
       {
         title: `Pay a bill or send money with Zelle`,
-        content: `Tap "Pay & Transfer" from the bottom menu. To pay a bill — such as your phone, utilities, or a credit card at another bank — tap "Pay Bills" and search for the company. Add the company and your account number, then schedule a payment. To send money to a person, tap "Send Money with Zelle," enter the recipient's phone number or email, and enter the amount. Zelle transfers between enrolled users are typically instant.`,
+        content: `Tap "Pay & Transfer" from the bottom menu. To pay a bill — such as your phone, utilities, or a credit card at another bank — tap "Pay Bills" and search for the company. Add the company and your account number, then schedule a payment. To send money to a person, tap "Send Money with Zelle," enter the recipient's phone number or email, and enter the amount. Zelle transfers between enrolled users are usually instant.`,
       },
     ],
   },
@@ -635,7 +635,7 @@ To use the app, you need a Wells Fargo account. If you bank with Wells Fargo but
       },
       {
         title: `Transfer money and pay bills`,
-        content: `Tap "Transfer & Pay" in the navigation menu. To move money between your own Wells Fargo accounts, select "Transfer Money," choose the accounts, enter the amount, and confirm. To pay a bill or an account at another bank, select "Pay Bills" and set up the payee by searching for their name. Enter your account number with that company, then schedule a payment. Payments to external accounts typically take one to three business days.`,
+        content: `Tap "Transfer & Pay" in the navigation menu. To move money between your own Wells Fargo accounts, select "Transfer Money," choose the accounts, enter the amount, and confirm. To pay a bill or an account at another bank, select "Pay Bills" and set up the payee by searching for their name. Enter your account number with that company, then schedule a payment. Payments to external accounts usually take one to three business days.`,
       },
     ],
   },
@@ -718,7 +718,7 @@ Visible is a good fit for people who want a straightforward unlimited plan witho
       },
       {
         title: `Transfer your phone number (optional)`,
-        content: `If you want to keep your current number, select "Transfer my number" during activation. You will need your old carrier account number and account PIN — both are available by logging in to your old carrier's account online or calling their customer service. The transfer typically takes one to four hours. Your old service is automatically canceled when the transfer completes.`,
+        content: `If you want to keep your current number, select "Transfer my number" during activation. You will need your old carrier account number and account PIN — both are available by logging in to your old carrier's account online or calling their customer service. The transfer usually takes one to four hours. Your old service is automatically canceled when the transfer completes.`,
         warning: `Do not cancel your old phone service manually before the number transfer completes. Canceling too early can cause you to lose your phone number permanently.`,
       },
       {
@@ -754,7 +754,7 @@ You manage Xfinity Mobile through the Xfinity app or at xfinity.com/mobile. Cust
       {
         title: `Check if your phone is compatible`,
         content: `Go to xfinity.com/mobile and click "Bring your own device." Enter your phone's IMEI number (found under Settings > About Phone, or by dialing *#06#). Xfinity will confirm whether your phone works on their network and which SIM type to order. Compatible phones must be unlocked and capable of working on Verizon's network.`,
-        tip: `Quick Tip: iPhones from the past several years and most Samsung, Google Pixel, and other major Android phones are typically compatible.`,
+        tip: `Quick Tip: iPhones from the past several years and most Samsung, Google Pixel, and other major Android phones are usually compatible.`,
       },
       {
         title: `Choose your plan and add a line`,
@@ -781,7 +781,7 @@ You manage Xfinity Mobile through the Xfinity app or at xfinity.com/mobile. Cust
     thumbnailEmoji: ``,
     publishedAt: `2026-04-20`,
     difficulty: `Beginner`,
-    body: `AT&T offers a discounted unlimited phone plan specifically for customers who are 55 years of age or older. The plan — sometimes marketed as "AT&T Unlimited 55+" or a similarly named senior discount plan — provides unlimited calling, texting, and data at a price lower than AT&T's standard unlimited plans. As of 2026, pricing for the senior plan is typically around $50 to $60 per month for two lines, which is a notable discount compared to standard two-line unlimited pricing.
+    body: `AT&T offers a discounted unlimited phone plan specifically for customers who are 55 years of age or older. The plan — sometimes marketed as "AT&T Unlimited 55+" or a similarly named senior discount plan — provides unlimited calling, texting, and data at a price lower than AT&T's standard unlimited plans. As of 2026, pricing for the senior plan is usually around $50 to $60 per month for two lines, which is a notable discount compared to standard two-line unlimited pricing.
 
 To qualify for the senior discount, at least one account holder must be 55 or older. AT&T may require you to show proof of age, which can usually be done with a driver's license or state ID. The plan requires you to set up AutoPay — automatic monthly billing — to receive the discounted rate. Without AutoPay, a small monthly fee is added.
 
@@ -806,7 +806,7 @@ Customer service is available at AT&T stores, by calling 1-800-331-0500, or onli
       },
       {
         title: `Set up AutoPay to get the discounted rate`,
-        content: `The lower senior plan price typically requires AutoPay — your monthly bill is automatically charged to a debit or credit card on file. During signup, you will be asked to set up AutoPay. Provide your debit card or checking account information, or a credit card. AT&T sends a bill notification by email each month before charging you. Without AutoPay, the plan costs a few dollars more per month.`,
+        content: `The lower senior plan price usually requires AutoPay — your monthly bill is automatically charged to a debit or credit card on file. During signup, you will be asked to set up AutoPay. Provide your debit card or checking account information, or a credit card. AT&T sends a bill notification by email each month before charging you. Without AutoPay, the plan costs a few dollars more per month.`,
         warning: `Review your first AT&T bill carefully. The first bill may be higher than expected because it often includes a partial first month charge plus the full second month in advance. Subsequent monthly bills should match the quoted price.`,
       },
       {
@@ -892,7 +892,7 @@ Voting by mail is legal, secure, and widely used by millions of Americans in eve
       },
       {
         title: `Receive your ballot and read every page of instructions`,
-        content: `Your ballot will arrive in the mail in a packet that typically includes a ballot card, a secrecy sleeve or inner envelope, a return envelope, and a page of instructions. Read the instructions completely before touching the ballot. Each state's process is slightly different — some require you to put your ballot inside a secrecy sleeve before placing it in the return envelope, while others use a simpler process.`,
+        content: `Your ballot will arrive in the mail in a packet that usually includes a ballot card, a secrecy sleeve or inner envelope, a return envelope, and a page of instructions. Read the instructions completely before touching the ballot. Each state's process is slightly different — some require you to put your ballot inside a secrecy sleeve before placing it in the return envelope, while others use a simpler process.`,
       },
       {
         title: `Mark your ballot carefully`,

@@ -219,7 +219,7 @@ The app is available on iPhone, Android, smart TVs, Roku, Amazon Fire Stick, App
       },
       {
         title: `Watch your bonus movies`,
-        content: `After linking your accounts, Movies Anywhere sometimes rewards new users with bonus movies — typically a few popular titles added to your library for free as a thank-you for connecting. Check the "My Movies" section after linking to see if any bonus films appeared.`,
+        content: `After linking your accounts, Movies Anywhere sometimes rewards new users with bonus movies — usually a few popular titles added to your library for free as a thank-you for connecting. Check the "My Movies" section after linking to see if any bonus films appeared.`,
       },
       {
         title: `Browse and watch your unified library`,
@@ -246,9 +246,9 @@ The app is available on iPhone, Android, smart TVs, Roku, Amazon Fire Stick, App
 
 You don't need a subscription or a credit card to access the free movies on Vudu. You only need a free account. This makes Vudu one of the best options for watching movies online without any ongoing cost.
 
-The free library includes comedies, dramas, action films, family movies, thrillers, and classic films from past decades. While the newest blockbuster releases typically require a rental or purchase, you'll find a wide variety of titles that are genuinely enjoyable. The library refreshes regularly.
+The free library includes comedies, dramas, action films, family movies, thrillers, and classic films from past decades. While the newest blockbuster releases usually require a rental or purchase, you'll find a wide variety of titles that are genuinely enjoyable. The library refreshes regularly.
 
-Vudu also offers a paid rental and purchase section if you want to watch a newer release. Rentals typically cost $3.99 to $5.99 and give you 30 days to start watching and 48 hours to finish once you begin. Purchases let you own a movie permanently in your digital library.
+Vudu also offers a paid rental and purchase section if you want to watch a newer release. Rentals usually cost $3.99 to $5.99 and give you 30 days to start watching and 48 hours to finish once you begin. Purchases let you own a movie permanently in your digital library.
 
 Vudu is available on smart TVs, Roku, Amazon Fire Stick, Apple TV, iPhone, Android, and in any web browser at vudu.com. There is no device-specific limitation — if you can browse the web, you can watch Vudu.
 
@@ -270,7 +270,7 @@ If you are also a Movies Anywhere user, you can link your Vudu account so that a
       },
       {
         title: `Start watching`,
-        content: `Tap on a movie to see its full description, rating, and cast. Click or tap the Play button to begin watching. You will see occasional short advertisement breaks during the film — typically two to four ads spread across a feature-length movie. These work the same as commercials on broadcast TV.`,
+        content: `Tap on a movie to see its full description, rating, and cast. Click or tap the Play button to begin watching. You will see occasional short advertisement breaks during the film — usually two to four ads spread across a feature-length movie. These work the same as commercials on broadcast TV.`,
       },
       {
         title: `Download the Vudu app for TV viewing`,
@@ -383,7 +383,7 @@ If you're unsure whether MasterClass is right for you, look for occasional promo
     difficulty: `Beginner`,
     body: `Skillshare is an online learning platform focused on creative and practical skills. Unlike more formal education platforms, Skillshare specializes in shorter, project-focused classes taught by working professionals — graphic designers, photographers, writers, illustrators, entrepreneurs, and more.
 
-Classes on Skillshare typically run between 30 minutes and 2 hours and are broken into short video lessons. At the end of most classes, there is a class project where you apply what you learned and can share your work with other students for feedback. This hands-on approach is one of the things that sets Skillshare apart from watching tutorials.
+Classes on Skillshare usually run between 30 minutes and 2 hours and are broken into short video lessons. At the end of most classes, there is a class project where you apply what you learned and can share your work with other students for feedback. This hands-on approach is one of the things that sets Skillshare apart from watching tutorials.
 
 Skillshare operates on a subscription model: one flat monthly or annual fee gives you unlimited access to all classes. The annual plan is a lot cheaper per month than paying monthly. There is a free trial available, and some classes are available to non-subscribers for free.
 
@@ -404,7 +404,7 @@ If you have a creative hobby you've wanted to develop — or a professional skil
       },
       {
         title: `Watch at your own pace`,
-        content: `There are no scheduled class times. You watch whenever you want. Tap the first lesson to begin. Video lessons are typically 3 to 15 minutes each. You can pause, rewind, and watch any lesson as many times as you need. Your progress is saved automatically so you can return to exactly where you left off.`,
+        content: `There are no scheduled class times. You watch whenever you want. Tap the first lesson to begin. Video lessons are usually 3 to 15 minutes each. You can pause, rewind, and watch any lesson as many times as you need. Your progress is saved automatically so you can return to exactly where you left off.`,
         tip: `Quick Tip: Many Skillshare lessons include downloadable project files, templates, or reference materials. Check the "Projects & Resources" tab on the class page to download anything the instructor provides.`,
       },
       {
@@ -476,7 +476,7 @@ Udemy is available on iPhone, Android, and in any web browser. The mobile app al
     difficulty: `Beginner`,
     body: `Wondrium is the streaming home of The Great Courses, a long-established educational video series that has been trusted by curious learners for decades. If you've ever picked up one of those DVD lecture sets from a library sale, Wondrium is the streaming version of that experience — and it goes far beyond what was available in the DVD era.
 
-The service offers thousands of video courses taught by university professors, award-winning teachers, and subject experts from institutions including Harvard, Yale, Oxford, and many others. Topics span history, science, philosophy, cooking, mathematics, literature, music, languages, health, and more. Each course typically includes 12 to 36 hour-long lectures with accompanying written materials.
+The service offers thousands of video courses taught by university professors, award-winning teachers, and subject experts from institutions including Harvard, Yale, Oxford, and many others. Topics span history, science, philosophy, cooking, mathematics, literature, music, languages, health, and more. Each course usually includes 12 to 36 hour-long lectures with accompanying written materials.
 
 Wondrium operates on a subscription model at around $14.99 per month, or less with an annual plan. A free trial is available. Unlike platforms aimed at building career skills, Wondrium is focused on intellectual curiosity and lifelong learning — the audience is people who love to learn for the joy of learning.
 
@@ -526,7 +526,7 @@ The free version of Codecademy includes a solid amount of content: you can compl
 
 The paid "Plus" or "Pro" subscription (around $15 to $20 per month) unlocks more advanced courses, quizzes, career paths, and certificate programs. It is worth trying the free content first to see whether you enjoy the learning format before subscribing.
 
-Codecademy's courses are organized as "paths" — a series of related courses grouped by career goal. A "Front-End Engineer" path takes you from knowing nothing about code to being able to build websites. A "Data Analyst" path teaches Python and SQL for working with data. Each path tells you how many hours it typically takes to complete.
+Codecademy's courses are organized as "paths" — a series of related courses grouped by career goal. A "Front-End Engineer" path takes you from knowing nothing about code to being able to build websites. A "Data Analyst" path teaches Python and SQL for working with data. Each path tells you how many hours it usually takes to complete.
 
 The platform is entirely browser-based, meaning you don't need to install anything on your computer. You can also access Codecademy from the iPhone or Android app, though the hands-on coding exercises work best on a computer with a full-size keyboard.
 
@@ -595,7 +595,7 @@ The IT Support Certificate is often recommended as a starting point because it t
       },
       {
         title: `Apply for financial aid if needed`,
-        content: `If your library doesn't offer free access and you cannot afford the monthly subscription, Coursera offers financial aid for many programs. On the course enrollment page, look for "Financial Aid Available." Click that link, fill out the short application, and Coursera will typically respond within 15 days with a decision. Approved applicants receive full access for free.`,
+        content: `If your library doesn't offer free access and you cannot afford the monthly subscription, Coursera offers financial aid for many programs. On the course enrollment page, look for "Financial Aid Available." Click that link, fill out the short application, and Coursera will usually respond within 15 days with a decision. Approved applicants receive full access for free.`,
       },
       {
         title: `Complete the course and earn your certificate`,
@@ -711,7 +711,7 @@ Setting up a new site takes about 20 minutes from start to your first published 
 
 Squarespace starts with high-quality design templates — every template has been professionally designed and optimized to look good on both desktop computers and mobile phones. You choose a template, then replace the placeholder text and images with your own content.
 
-Unlike free platforms, Squarespace requires a paid subscription — plans typically start around $16 per month (billed annually). However, the service includes your custom domain name, professional email tools, analytics, and built-in e-commerce features for selling products or taking appointments. The value is strong compared to what it would cost to hire someone to build a comparable website.
+Unlike free platforms, Squarespace requires a paid subscription — plans usually start around $16 per month (billed annually). However, the service includes your custom domain name, professional email tools, analytics, and built-in e-commerce features for selling products or taking appointments. The value is strong compared to what it would cost to hire someone to build a comparable website.
 
 A free trial is available (no credit card required) so you can build and test your site before paying anything. The trial lasts 14 days and includes full access to all features.
 
@@ -738,7 +738,7 @@ The editor works entirely in your web browser. You drag sections around, click t
       },
       {
         title: `Connect a domain and publish`,
-        content: `When you're ready to go live, you'll need to upgrade to a paid plan. Go to your Account menu and select Plans. After subscribing, Squarespace will prompt you to choose a custom domain name (like yourbusiness.com) — one year of a domain is typically included with paid plans. Once your domain is connected, click Publish to make your site live on the internet.`,
+        content: `When you're ready to go live, you'll need to upgrade to a paid plan. Go to your Account menu and select Plans. After subscribing, Squarespace will prompt you to choose a custom domain name (like yourbusiness.com) — one year of a domain is usually included with paid plans. Once your domain is connected, click Publish to make your site live on the internet.`,
         warning: `Your site is in trial mode until you upgrade to a paid plan. During the trial, visitors see a password prompt — your site is not publicly accessible. Make sure to subscribe before sharing your site address with others.`,
       },
     ],

@@ -553,7 +553,7 @@ One important note: Reddit is not a replacement for professional advice. Medical
     publishedAt: `2026-04-20`,
     body: `TikTok has a reputation as a platform for teenagers, but the reality is that people of all ages use it — and the content available is far broader than dance videos. Gardening tips, cooking tutorials, nature photography, history lessons, travel footage, medical advice from licensed professionals, humor, and news all thrive on TikTok. Many older adults discover the app reluctantly and end up genuinely enjoying it.
 
-The app is built around short videos, typically 15 seconds to a few minutes long. When you open TikTok, you see the "For You Page" — a continuously scrolling feed of videos the app thinks you'll enjoy. This feed is driven by an algorithm that learns quickly what you like. If you watch a cooking video all the way through and like it, TikTok starts showing you more cooking content. If you swipe past videos quickly, it learns those topics aren't for you.
+The app is built around short videos, usually 15 seconds to a few minutes long. When you open TikTok, you see the "For You Page" — a continuously scrolling feed of videos the app thinks you'll enjoy. This feed is driven by an algorithm that learns quickly what you like. If you watch a cooking video all the way through and like it, TikTok starts showing you more cooking content. If you swipe past videos quickly, it learns those topics aren't for you.
 
 You can browse TikTok without creating an account by going to tiktok.com in a browser, though the experience is better in the app. Download the TikTok app from the App Store (iPhone) or Google Play (Android) and create a free account using your email address or phone number.
 
@@ -871,7 +871,7 @@ Always keep Signal updated — signal.org releases security updates often, and r
       },
       {
         title: `Keep Signal updated`,
-        content: `Signal releases updates often for security reasons. On Mac, open Signal and check the menu bar for update prompts, or go to signal.org/download to get the latest version. On Windows, Signal typically updates automatically. Running an outdated version can reduce your security.`,
+        content: `Signal releases updates often for security reasons. On Mac, open Signal and check the menu bar for update prompts, or go to signal.org/download to get the latest version. On Windows, Signal usually updates automatically. Running an outdated version can reduce your security.`,
         warning: `If your phone is off for an extended period, the desktop app will still work for a time, but some features may be limited. Keep your phone charged and connected to keep both devices in sync.`,
       },
     ],
@@ -892,7 +892,7 @@ Discord is organized around "servers" — private communities each with their ow
 
 To get started, go to discord.com and click Download for Free, or download the app from the App Store or Google Play. Create a free account with a username, email address, and password.
 
-To join a server, you typically need an invite link — a URL that starts with discord.gg/. Clicking the link while logged into Discord (or the app) brings up a prompt to join the server. You can also discover public servers at disboard.org, a directory of public Discord communities organized by category.
+To join a server, you usually need an invite link — a URL that starts with discord.gg/. Clicking the link while logged into Discord (or the app) brings up a prompt to join the server. You can also discover public servers at disboard.org, a directory of public Discord communities organized by category.
 
 Once you're inside a server, the layout has channels listed on the left side. Click any text channel to read the conversation and participate. For voice channels, clicking joins you right away — you'll be able to hear and speak with others in the channel in real time. Click the channel name again or the disconnect button to leave a voice channel.
 
@@ -1184,7 +1184,7 @@ You may have noticed in professional-looking videos or video calls that the pers
 
 Ring lights come in several sizes. A 6-inch clip-on model costs around $15–25 and attaches directly to your laptop screen, positioning the light right around your camera. It's the smallest and most portable option, and for basic video calls it makes a genuine difference. The downside is that a small light source doesn't spread as evenly across your face.
 
-A 10-inch desktop ring light on a small adjustable stand is the most popular choice for home use, priced around $25–45. This size provides noticeably better coverage than a clip-on and typically includes three color temperature settings: warm white (3,000K, yellowish and cozy-looking), neutral daylight (5,500–6,000K, the most natural-looking), and cool white (7,000K, bright and slightly blue).
+A 10-inch desktop ring light on a small adjustable stand is the most popular choice for home use, priced around $25–45. This size provides noticeably better coverage than a clip-on and usually includes three color temperature settings: warm white (3,000K, yellowish and cozy-looking), neutral daylight (5,500–6,000K, the most natural-looking), and cool white (7,000K, bright and slightly blue).
 
 For color temperature, neutral daylight is the right choice for video calls and most recordings. It makes skin tones look natural rather than too warm or too clinical.
 
@@ -1192,7 +1192,7 @@ Most ring lights connect via USB — plug into your laptop, a USB power brick, o
 
 Position the ring light at eye level, directly in front of you. The camera (whether laptop camera or external webcam) sits in the center of the ring or just above it. If the light is too high or too far to one side, it creates shadows under your chin or on the side of your face.
 
-For brightness: in a lit room, you typically want the ring light set to 50–70% brightness. Full brightness can wash out your face and make you look flat.`,
+For brightness: in a lit room, you usually want the ring light set to 50–70% brightness. Full brightness can wash out your face and make you look flat.`,
     steps: [
       {
         title: `Choose the right ring light size`,

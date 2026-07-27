@@ -21,7 +21,7 @@ export const guidesBatch274: Guide[] = [
     steps: [
       {
         title: "Understand the scale of the problem before you start touring facilities",
-        content: "Two-thirds of LGBTQ+ seniors live alone, twice the rate of non-LGBTQ+ seniors. About 40 percent are estranged from their biological family. That means chosen family, partners, and friends often serve the caregiver role that adult children typically fill. Knowing the demographics helps you frame conversations with facility staff. When you ask about visiting policies, you are not asking about an unusual case. You are asking about a population the facility will increasingly serve.",
+        content: "Two-thirds of LGBTQ+ seniors live alone, twice the rate of non-LGBTQ+ seniors. About 40 percent are estranged from their biological family. That means chosen family, partners, and friends often serve the caregiver role that adult children usually fill. Knowing the demographics helps you frame conversations with facility staff. When you ask about visiting policies, you are not asking about an unusual case. You are asking about a population the facility will increasingly serve.",
         tip: "Quick Tip: Bring the SAGE fact sheet titled LGBT Older Adults: Facts at a Glance to facility tours. It is one page, comes from a respected national source, and saves you from explaining the basics yourself.",
       },
       {

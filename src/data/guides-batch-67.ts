@@ -674,7 +674,7 @@ If the device doesn't appear, the most common cause is that it's not actually in
 
 If the device was previously connected to a different phone or computer, it may still be trying to reconnect to that old device instead of finding yours. On the headphones or speaker, look for a way to clear the pairing memory (sometimes called "reset" or "forget all devices" — usually holding a button combination for 10 seconds) and start fresh.
 
-Bluetooth range is typically 30 to 60 feet in open space, but walls and interference from other wireless devices can reduce that. If the audio cuts out, move closer to your phone or computer.`,
+Bluetooth range is usually 30 to 60 feet in open space, but walls and interference from other wireless devices can reduce that. If the audio cuts out, move closer to your phone or computer.`,
     category: `essential-skills`,
     tags: [`bluetooth`, `headphones`, `speaker`, `wireless`, `pairing`],
     thumbnailEmoji: ``,
@@ -810,7 +810,7 @@ When you've saved the collage, share it by text message, email, or post it on so
 
 Creating an account on Snapfish is free, and storing your photos there is also free — Snapfish offers unlimited photo storage, which makes it a useful backup option as well as a place to order from.
 
-Standard photo prints are the most popular product. Sizes include 4x6 (the classic wallet-size), 5x7 (good for frames), 8x10 (portrait-style), and larger. Standard 4x6 prints typically cost around $0.09 to $0.19 each, depending on whether there's a promotion running. Snapfish runs sales often — sometimes 50% to 70% off — so it pays to check before ordering.
+Standard photo prints are the most popular product. Sizes include 4x6 (the classic wallet-size), 5x7 (good for frames), 8x10 (portrait-style), and larger. Standard 4x6 prints usually cost around $0.09 to $0.19 each, depending on whether there's a promotion running. Snapfish runs sales often — sometimes 50% to 70% off — so it pays to check before ordering.
 
 To order prints, upload photos from your phone or computer. In the mobile app, tap the + button to add photos directly from your camera roll. On the website, click Upload Photos and select files from your computer. Once uploaded, choose a product type — Prints, Photo Books, Gifts — and follow the customization steps.
 
@@ -820,7 +820,7 @@ Beyond prints and books, Snapfish makes mugs (popular gifts — upload a photo a
 
 For paper finish, glossy is the standard choice and looks vibrant. Matte has less glare and is better for photos with people, especially for framing.
 
-Shipping typically takes 7 to 10 business days for standard delivery, with faster options available for a higher fee. Some products can be shipped directly to the gift recipient with a personalized note.
+Shipping usually takes 7 to 10 business days for standard delivery, with faster options available for a higher fee. Some products can be shipped directly to the gift recipient with a personalized note.
 
 Snapfish stores all the photos you upload. And you can re-order the same photos or products at any time without re-uploading.`,
     category: `app-guides`,

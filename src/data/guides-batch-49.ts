@@ -79,7 +79,7 @@ You can order using the Walgreens app on your phone or by going to walgreens.com
 
 Before placing your first order, you'll need a free Walgreens account. You can create one when you check out — all you need is an email address. If you already have a Walgreens rewards card (myWalgreens), use the same account you registered for that.
 
-When picking up your order at the store, look for the Photo Center counter, usually near the pharmacy or the back of the store. Tell them your name and they'll retrieve your prints. Payment is typically made at pickup.
+When picking up your order at the store, look for the Photo Center counter, usually near the pharmacy or the back of the store. Tell them your name and they'll retrieve your prints. Payment is usually made at pickup.
 
 For printed photos to look their best, use photos taken with your phone's main camera in good lighting. Blurry photos or photos taken far away from the subject may look pixelated when printed at larger sizes. For 4x6 prints, almost any modern phone photo will look great.`,
     steps: [
@@ -734,7 +734,7 @@ If you use Chrome or Firefox on your iPhone instead of Safari, you'll clear the 
       },
       {
         title: `Scroll down and tap Safari`,
-        content: `In Settings, scroll down until you see "Safari". It has a compass icon and is typically listed alphabetically with other apps. Tap it to open Safari's settings.`,
+        content: `In Settings, scroll down until you see "Safari". It has a compass icon and is usually listed alphabetically with other apps. Tap it to open Safari's settings.`,
       },
       {
         title: `Tap Clear History and Website Data`,
@@ -862,7 +862,7 @@ Facebook also has a "Trusted Contacts" feature that lets you ask friends to help
       },
       {
         title: `Choose how to receive a recovery code`,
-        content: `Facebook will show you the options it has on file for your account — typically a partially hidden email address and/or phone number. Choose which one you'd like to use to receive a 6-digit recovery code. Tap "Continue." Then check your email or text messages for the code Facebook sends.`,
+        content: `Facebook will show you the options it has on file for your account — usually a partially hidden email address and/or phone number. Choose which one you'd like to use to receive a 6-digit recovery code. Tap "Continue." Then check your email or text messages for the code Facebook sends.`,
         warning: `The recovery code expires after about 15 minutes. If you don't receive it, check your spam or junk folder in email. If the number shown is no longer yours, tap "No longer have access to these?" to try other options.`,
       },
       {
@@ -961,7 +961,7 @@ The print ordering feature is built into the Google Photos app on both iPhone an
 - **Canvas prints** — Your photo printed on canvas and mounted on a frame, ready to hang.
 - **Photo magnets, mugs, and calendars** — Personalized photo products.
 
-All products are shipped to your home. Depending on the product, shipping typically takes 3–10 business days. Standard shipping is free on orders over a certain amount. Express shipping costs extra.
+All products are shipped to your home. Depending on the product, shipping usually takes 3–10 business days. Standard shipping is free on orders over a certain amount. Express shipping costs extra.
 
 **Payment:** You'll pay with the credit or debit card linked to your Google account (the same one used for Google Play purchases). If no card is on file, you'll be prompted to add one.
 

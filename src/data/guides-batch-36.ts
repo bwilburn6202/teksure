@@ -210,7 +210,7 @@ Smart locks also let you create access codes for specific people — like a hous
 
 Most smart locks fit onto your existing door hardware and don't require any electrical wiring. They run on standard batteries (usually 4 AA batteries), which last about 6-12 months depending on use. Most connect to your home Wi-Fi or Bluetooth and work with Amazon Alexa, Google Home, and Apple HomeKit.
 
-Installation typically takes about 20-30 minutes and requires only a screwdriver. You keep your existing keys in case the battery dies — most locks will still work with a physical key as backup.
+Installation usually takes about 20-30 minutes and requires only a screwdriver. You keep your existing keys in case the battery dies — most locks will still work with a physical key as backup.
 
 Smart locks are especially helpful for people who forget to lock the door, want to let in delivery people or caregivers, or have difficulty using a physical key due to arthritis or limited grip strength.`,
     steps: [
@@ -392,7 +392,7 @@ The app has parental controls, including content ratings you can filter by to av
     difficulty: 'Beginner',
     body: `Babbel is a language-learning app available on iPhone, Android, and the web. It offers courses in 14 languages including Spanish, French, German, Italian, Portuguese, Dutch, Polish, Swedish, Turkish, and more.
 
-Unlike Duolingo, which uses a game-based format, Babbel focuses on practical conversation skills you'll actually use — ordering food at a restaurant, asking for directions, talking with a doctor, or chatting with family. Lessons are taught by linguistics experts and typically take 10-15 minutes each, making them ideal for fitting into a daily routine.
+Unlike Duolingo, which uses a game-based format, Babbel focuses on practical conversation skills you'll actually use — ordering food at a restaurant, asking for directions, talking with a doctor, or chatting with family. Lessons are taught by linguistics experts and usually take 10-15 minutes each, making them ideal for fitting into a daily routine.
 
 Babbel teaches pronunciation by having you record yourself and comparing your speech to native speaker audio. It also uses spaced repetition — a proven technique that shows you vocabulary again right before you'd normally forget it.
 

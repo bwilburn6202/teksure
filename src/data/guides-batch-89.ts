@@ -17,7 +17,7 @@ BetterHelp is not a crisis service. If you are in immediate danger or having tho
 
 When you sign up, BetterHelp asks you a series of questions about what you are going through — things like stress, anxiety, relationship issues, or grief. Based on your answers, the platform matches you with a therapist who specializes in those areas. You can read your therapist's background, credentials, and experience before accepting the match.
 
-Once matched, you have a few ways to connect. The most common option is sending text messages through a private, secure chat. You can write to your therapist any time. And they typically respond within one to two business days. You can also schedule live sessions by video call, phone call, or live text chat.
+Once matched, you have a few ways to connect. The most common option is sending text messages through a private, secure chat. You can write to your therapist any time. And they usually respond within one to two business days. You can also schedule live sessions by video call, phone call, or live text chat.
 
 BetterHelp costs between $65 and $100 per week, billed monthly. This covers unlimited messaging and at least one live session per week. Financial aid is available if cost is a concern. There is a form during sign-up to apply. BetterHelp does not accept insurance directly, but some insurance plans may reimburse part of the cost. Check with your insurance company.
 
@@ -64,7 +64,7 @@ Your conversations on BetterHelp are private and protected by the same confident
     difficulty: `Beginner`,
     body: `Talkspace is an online therapy service that lets you work with a licensed therapist through your phone or computer. It is designed for people who want professional mental health support but may have a hard time fitting traditional in-office appointments into their schedule, or who live far from a therapist's office.
 
-Unlike in-person therapy where you see your therapist for a set hour each week, Talkspace allows ongoing messaging. You can send text, audio, or video messages to your therapist whenever something is on your mind, and your therapist will respond with recorded video or text replies — typically once or twice per day on weekdays.
+Unlike in-person therapy where you see your therapist for a set hour each week, Talkspace allows ongoing messaging. You can send text, audio, or video messages to your therapist whenever something is on your mind, and your therapist will respond with recorded video or text replies — usually once or twice per day on weekdays.
 
 One big difference between Talkspace and in-person therapy is cost and insurance. Talkspace accepts many major insurance plans, including some Medicaid plans depending on your state. This makes it much more affordable for people who have coverage. If you do not have insurance, self-pay plans start around $69 per week for messaging only, with higher-cost plans that include live video sessions.
 
@@ -93,7 +93,7 @@ This guide is for therapy only. If you are in crisis, please call or text 988 ri
       },
       {
         title: `Schedule a Live Video Session if Your Plan Includes It`,
-        content: `If you chose a plan with live sessions, tap the calendar icon inside your chat to see your therapist's available time slots. Book a time that works for you and add it to your phone's calendar. You will join the session directly through the Talkspace app — no separate software is needed. Video sessions typically last 30 to 45 minutes.`,
+        content: `If you chose a plan with live sessions, tap the calendar icon inside your chat to see your therapist's available time slots. Book a time that works for you and add it to your phone's calendar. You will join the session directly through the Talkspace app — no separate software is needed. Video sessions usually last 30 to 45 minutes.`,
       },
       {
         title: `Switch Therapists If Needed`,
@@ -130,7 +130,7 @@ Research on Woebot shows it can meaningfully reduce symptoms of anxiety and depr
       },
       {
         title: `Do Your First Daily Check-In`,
-        content: `After setup, Woebot will start a short conversation asking how you are feeling. You rate your current mood on a simple scale and then describe what is going on in your own words. Woebot responds by asking follow-up questions and may suggest a short exercise based on what you share. These check-ins typically take five to fifteen minutes.`,
+        content: `After setup, Woebot will start a short conversation asking how you are feeling. You rate your current mood on a simple scale and then describe what is going on in your own words. Woebot responds by asking follow-up questions and may suggest a short exercise based on what you share. These check-ins usually take five to fifteen minutes.`,
         tip: `Quick Tip: Try to check in with Woebot at the same time each day — many people find morning or evening works well — so it becomes a consistent habit.`,
       },
       {
@@ -409,7 +409,7 @@ In addition to GPS tracking, some Whistle models also track your pet's daily act
       },
       {
         title: `Track Your Pet on the Map`,
-        content: `Open the app at any time and tap your pet's name to see their current location on the map. The app shows a blue dot for their location and refreshes every few seconds when the tracker is actively moving. You can also tap "Track live" for a continuous location feed. Battery life on Whistle trackers is typically five to seven days on a charge.`,
+        content: `Open the app at any time and tap your pet's name to see their current location on the map. The app shows a blue dot for their location and refreshes every few seconds when the tracker is actively moving. You can also tap "Track live" for a continuous location feed. Battery life on Whistle trackers is usually five to seven days on a charge.`,
         warning: `Whistle requires cellular coverage to report location. In areas with no cell signal, the tracker cannot send location updates to the app.`,
       },
     ],
@@ -473,7 +473,7 @@ Online vet visits are a good fit for a wide range of concerns: your dog is eatin
 
 There are things an online vet cannot do. And it is important to understand these limits. They cannot perform a physical exam, take blood samples, run x-rays, give injections, or handle emergencies. If your pet has a broken bone, is having trouble breathing, has collapsed, or has ingested something toxic, go to an emergency veterinary clinic right away — do not wait for a video appointment.
 
-Vetster visits are typically priced between $50 and $150 depending on the vet and the time of day. Some pet insurance policies cover telehealth visits, so check your policy. Vetster also shows you each vet's credentials, species experience, and patient reviews before you book. So you can pick someone with expertise in your type of pet.
+Vetster visits are usually priced between $50 and $150 depending on the vet and the time of day. Some pet insurance policies cover telehealth visits, so check your policy. Vetster also shows you each vet's credentials, species experience, and patient reviews before you book. So you can pick someone with expertise in your type of pet.
 
 Vetster is available on iPhone, Android, and the web at vetster.com.`,
     steps: [
@@ -649,7 +649,7 @@ You can pay at Electrify America stations in two ways: through the app linked to
     difficulty: `Beginner`,
     body: `EVgo is one of the largest public fast-charging networks in the United States, with over 1,000 charging locations and more than 3,500 individual chargers across the country. You will find EVgo stations at grocery stores, shopping malls, and parking garages — many in urban and suburban areas where drivers live and work, not just on highways.
 
-EVgo chargers are DC fast chargers, meaning they deliver power much more quickly than the Level 2 chargers you might use at home. Depending on your vehicle and the charger's power level, you can typically add 50 to 100 miles of range during a 15 to 20 minute stop.
+EVgo chargers are DC fast chargers, meaning they deliver power much more quickly than the Level 2 chargers you might use at home. Depending on your vehicle and the charger's power level, you can usually add 50 to 100 miles of range during a 15 to 20 minute stop.
 
 One of EVgo's notable advantages is that their chargers are maintained by the company, and their network is known for higher reliability than some other public charging options. EVgo also offers a guarantee program on some chargers — if a charger is broken, you may receive credit toward a future session.
 
@@ -763,15 +763,15 @@ Swagbucks is available as a website (swagbucks.com) and as an app on iPhone and 
       },
       {
         title: `Take Surveys and Complete Offers`,
-        content: `Click the "Surveys" tab to see available surveys. Each survey lists an estimated time and SB reward. Surveys typically pay between 40 and 200 SB and take 5 to 20 minutes. You will not qualify for every survey — some have specific demographic requirements — but the app will tell you quickly if you are not a match so you can move on.`,
+        content: `Click the "Surveys" tab to see available surveys. Each survey lists an estimated time and SB reward. Surveys usually pay between 40 and 200 SB and take 5 to 20 minutes. You will not qualify for every survey — some have specific demographic requirements — but the app will tell you quickly if you are not a match so you can move on.`,
       },
       {
         title: `Complete Your Daily Goal for a Streak Bonus`,
-        content: `Swagbucks sets a small daily SB goal for you — typically between 10 and 50 SB depending on your activity level. Completing your daily goal earns extra SB through a streak system: the longer your consecutive daily streak, the bigger the streak bonus. Check the app each day and do at least one small activity to keep your streak going.`,
+        content: `Swagbucks sets a small daily SB goal for you — usually between 10 and 50 SB depending on your activity level. Completing your daily goal earns extra SB through a streak system: the longer your consecutive daily streak, the bigger the streak bonus. Check the app each day and do at least one small activity to keep your streak going.`,
       },
       {
         title: `Redeem Your SB for Gift Cards or PayPal Cash`,
-        content: `When you have at least 300 SB (the minimum for most gift cards), tap the "Redeem" tab. Browse available gift cards or choose PayPal cash. Select the reward you want, confirm the amount, and submit. Gift cards are typically delivered to your email within 10 business days, though many arrive within a day or two. PayPal cash takes a few days to process.`,
+        content: `When you have at least 300 SB (the minimum for most gift cards), tap the "Redeem" tab. Browse available gift cards or choose PayPal cash. Select the reward you want, confirm the amount, and submit. Gift cards are usually delivered to your email within 10 business days, though many arrive within a day or two. PayPal cash takes a few days to process.`,
       },
     ],
   },
@@ -854,11 +854,11 @@ Dosh is free to download and has no subscription fees. It is available for iPhon
       },
       {
         title: `Check Your Cashback Wallet`,
-        content: `After making a qualifying purchase, cashback typically appears in your Dosh wallet within three to five days after the transaction posts to your card. Open the app and tap "Wallet" to see your current balance and a list of recent cashback credits. Each entry shows the partner name, the amount spent, and the cashback earned.`,
+        content: `After making a qualifying purchase, cashback usually appears in your Dosh wallet within three to five days after the transaction posts to your card. Open the app and tap "Wallet" to see your current balance and a list of recent cashback credits. Each entry shows the partner name, the amount spent, and the cashback earned.`,
       },
       {
         title: `Cash Out to Your Bank, PayPal, or Venmo`,
-        content: `To withdraw your cashback, tap "Cash out" in the Wallet section. You need a minimum balance (usually $25) to transfer. Choose your preferred destination — bank account (via ACH transfer), PayPal, or Venmo — and confirm. Bank transfers typically take two to three business days to arrive. PayPal and Venmo transfers may be faster.`,
+        content: `To withdraw your cashback, tap "Cash out" in the Wallet section. You need a minimum balance (usually $25) to transfer. Choose your preferred destination — bank account (via ACH transfer), PayPal, or Venmo — and confirm. Bank transfers usually take two to three business days to arrive. PayPal and Venmo transfers may be faster.`,
       },
     ],
   },

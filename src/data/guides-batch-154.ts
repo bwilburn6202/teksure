@@ -432,7 +432,7 @@ Open the Settings app. Scroll to the bottom and tap "About phone" (on some Andro
 
 On many iPhones and Android phones, the IMEI is printed on the SIM card tray — the small removable slot on the edge of the phone that holds your SIM card. You may need a SIM ejector tool (or an unfolded paperclip) to slide the tray out. The number is engraved in very small print.
 
-The IMEI is also printed on the original box the phone came in, if you still have it — typically on a sticker on the back or side of the box alongside the model number and serial number.
+The IMEI is also printed on the original box the phone came in, if you still have it — usually on a sticker on the back or side of the box alongside the model number and serial number.
 
 ---
 

@@ -165,7 +165,7 @@ Personal Voice works together with Live Speech (also in Accessibility settings),
     difficulty: `Beginner`,
     body: `Assistive Access is an iPhone mode introduced in iOS 17 that transforms the look and feel of the iPhone into a much simpler, more manageable experience. Instead of the standard home screen with dozens of small icons and settings, Assistive Access shows large, easy-to-tap buttons for only the apps you choose. There are no complicated menus, no notifications cluttering the screen, and no confusing options.
 
-This feature was designed primarily for people with cognitive disabilities — including dementia, Down syndrome, or intellectual disabilities — as well as for older adults who find the standard iPhone overwhelming. A family member, caregiver, or trusted person typically sets it up and configures which apps are available and how the device looks.
+This feature was designed primarily for people with cognitive disabilities — including dementia, Down syndrome, or intellectual disabilities — as well as for older adults who find the standard iPhone overwhelming. A family member, caregiver, or trusted person usually sets it up and configures which apps are available and how the device looks.
 
 In Assistive Access mode, the iPhone works completely differently. There are two layout options: a grid of large app icons, or a row-based list layout where each app appears as a big labeled button. Both are much easier to navigate than the regular iPhone interface. Apps are also simplified — for example, the Messages app in Assistive Access shows only large contact photos and a simple camera keyboard for sending photos, rather than the full keyboard and all the options of standard Messages.
 
@@ -857,7 +857,7 @@ Galaxy Watches run Wear OS with Samsung's One UI Watch interface layered on top.
 
 For health tracking, the Galaxy Watch automatically detects many workouts without you needing to start them. It will notice you have been running or cycling and start tracking automatically. You can also start a workout manually from the watch by pressing the top button and selecting "Workout." Samsung Health, the companion app on your phone, stores all your health data and shows trends over time.
 
-The watch battery typically lasts 1 to 3 days depending on the model and how many features you use. GPS workout tracking drains the battery faster than regular use. Charging uses a wireless charging pad that comes in the box — set the watch on the pad with the screen facing up.
+The watch battery usually lasts 1 to 3 days depending on the model and how many features you use. GPS workout tracking drains the battery faster than regular use. Charging uses a wireless charging pad that comes in the box — set the watch on the pad with the screen facing up.
 
 To get the full experience, you should use a Samsung Galaxy phone with the Galaxy Wearable app. The watch will still work with non-Samsung Android phones, but some features are limited. It does not work with iPhones.`,
     steps: [

@@ -82,7 +82,7 @@ Full retirement age is the age at which you receive 100% of your earned Social S
 
 **Claiming at 62: more years, less money**
 
-You can start collecting Social Security as early as age 62. The downside: your monthly payment is permanently reduced. Claiming at 62 typically means receiving about 25–30% less per month than you would get at full retirement age. That reduction lasts for the rest of your life.
+You can start collecting Social Security as early as age 62. The downside: your monthly payment is permanently reduced. Claiming at 62 usually means receiving about 25–30% less per month than you would get at full retirement age. That reduction lasts for the rest of your life.
 
 **Waiting past full retirement age: delayed credits**
 
@@ -90,7 +90,7 @@ For every month you delay claiming past your full retirement age, your benefit g
 
 **The "break-even" calculation**
 
-If you claim early, you get more years of payments but each payment is smaller. If you wait, you get fewer years but larger payments. The age at which the total lifetime amount equals out is called the break-even point — typically around age 78–82. If you expect to live past that age, waiting usually pays off more over a lifetime.
+If you claim early, you get more years of payments but each payment is smaller. If you wait, you get fewer years but larger payments. The age at which the total lifetime amount equals out is called the break-even point — usually around age 78–82. If you expect to live past that age, waiting usually pays off more over a lifetime.
 
 **Other factors to consider**
 
@@ -106,7 +106,7 @@ Quick Tip: The Social Security Administration's free online tool at ssa.gov/bene
       },
       {
         title: `Get your personalized benefit estimates`,
-        content: `Log into ssa.gov and go to "my Social Security." Under the Benefits section you will see estimated monthly amounts for different claiming ages — typically 62, your FRA, and 70. These estimates are based on your actual earnings history.`,
+        content: `Log into ssa.gov and go to "my Social Security." Under the Benefits section you will see estimated monthly amounts for different claiming ages — usually 62, your FRA, and 70. These estimates are based on your actual earnings history.`,
         tip: `Print or screenshot the estimates so you have them for comparison when making your decision.`,
       },
       {
@@ -120,7 +120,7 @@ Quick Tip: The Social Security Administration's free online tool at ssa.gov/bene
       },
       {
         title: `Apply for benefits when you are ready`,
-        content: `Apply online at ssa.gov/benefits/retirement, by phone at 1-800-772-1213, or in person at your local Social Security office. Apply about three months before you want payments to begin. Payments typically arrive the month after your birthday month.`,
+        content: `Apply online at ssa.gov/benefits/retirement, by phone at 1-800-772-1213, or in person at your local Social Security office. Apply about three months before you want payments to begin. Payments usually arrive the month after your birthday month.`,
       },
     ],
   },
@@ -393,7 +393,7 @@ You do not have to do this alone. Senior move managers specialize in helping old
 
 **Estate sales and consignment**
 
-For larger collections of valuables, an estate sale company will organize, price, and run the sale for you (typically taking 25–35% of proceeds). This is often less stressful than selling items individually.
+For larger collections of valuables, an estate sale company will organize, price, and run the sale for you (usually taking 25–35% of proceeds). This is often less stressful than selling items individually.
 
 Quick Tip: Take photographs of sentimental items you cannot keep. A photo album of cherished objects is a way to preserve the memory without keeping the physical item.`,
     steps: [
@@ -439,7 +439,7 @@ Many people prefer to stay in their own home for as long as possible, often with
 
 **Independent Living Communities**
 
-Independent living (also called retirement communities or 55+ communities) is for seniors who do not need medical care but want community, convenience, and less home maintenance. Residents typically have their own apartment or cottage and share common areas, dining options, and social activities. Costs range widely — from affordable senior apartments subsidized by HUD to luxury resort-style communities.
+Independent living (also called retirement communities or 55+ communities) is for seniors who do not need medical care but want community, convenience, and less home maintenance. Residents usually have their own apartment or cottage and share common areas, dining options, and social activities. Costs range widely — from affordable senior apartments subsidized by HUD to luxury resort-style communities.
 
 **Assisted Living**
 
@@ -447,7 +447,7 @@ Assisted living is for people who need help with some daily activities — bathi
 
 **Memory Care**
 
-Memory care is a specialized form of assisted living designed for people with Alzheimer's disease or other forms of dementia. These communities have secure layouts, specialized programming, and staff trained specifically in dementia care. They typically cost more than standard assisted living.
+Memory care is a specialized form of assisted living designed for people with Alzheimer's disease or other forms of dementia. These communities have secure layouts, specialized programming, and staff trained specifically in dementia care. They usually cost more than standard assisted living.
 
 **Skilled Nursing Facilities (Nursing Homes)**
 
@@ -522,12 +522,12 @@ Quick Tip: Always get your loved one's permission before installing any monitori
       },
       {
         title: `Consider a medical alert device`,
-        content: `A medical alert device is a wearable button that connects to a 24/7 monitoring center. If your loved one falls or feels unwell, they press the button and help is dispatched. Reputable companies include Life Alert, Bay Alarm Medical, and Lively. Costs typically range from $25–$45 per month.`,
+        content: `A medical alert device is a wearable button that connects to a 24/7 monitoring center. If your loved one falls or feels unwell, they press the button and help is dispatched. Reputable companies include Life Alert, Bay Alarm Medical, and Lively. Costs usually range from $25–$45 per month.`,
         warning: `Devices only work if the person wears them. Have a conversation about why wearing it matters and address any concerns about it feeling stigmatizing or uncomfortable.`,
       },
       {
         title: `Set up an automated pill dispenser`,
-        content: `If managing multiple medications is a concern, look into an automated dispenser like Hero (herohealth.com) or Medminder. These devices load medications in advance, dispense them at the right time, and send you an alert if a dose is skipped. Monthly subscriptions typically cost $30–$60.`,
+        content: `If managing multiple medications is a concern, look into an automated dispenser like Hero (herohealth.com) or Medminder. These devices load medications in advance, dispense them at the right time, and send you an alert if a dose is skipped. Monthly subscriptions usually cost $30–$60.`,
       },
       {
         title: `Create a shared care document`,
@@ -629,7 +629,7 @@ Seniors 60 and older can also file for free through AARP Tax-Aide (aarp.org/mone
 
 Before starting, collect: your Social Security number and those of any dependents, all W-2 forms (from employers), 1099 forms (from banks, investment accounts, Social Security), last year's tax return (helps pre-fill some fields), and records of deductible expenses if you itemize.
 
-Quick Tip: E-filing with direct deposit is the fastest way to receive a refund — typically 10–21 days after the IRS accepts your return.`,
+Quick Tip: E-filing with direct deposit is the fastest way to receive a refund — usually 10–21 days after the IRS accepts your return.`,
     steps: [
       {
         title: `Gather your documents before starting`,
@@ -790,7 +790,7 @@ Acting quickly on a few key items — especially unemployment benefits and healt
 
 Unemployment insurance is a state-run program that provides temporary income to workers who lose their jobs through no fault of their own (layoffs, company closures, etc.). Filing quickly matters because there is usually a waiting period of one to two weeks before benefits begin, and benefits are not retroactive to before your filing date.
 
-File online through your state's unemployment agency website. Benefits typically replace 40–50% of your previous wages, up to a state maximum, and last up to 26 weeks in most states.
+File online through your state's unemployment agency website. Benefits usually replace 40–50% of your previous wages, up to a state maximum, and last up to 26 weeks in most states.
 
 **Understand COBRA for health insurance**
 
@@ -806,7 +806,7 @@ Look at your bank statements from the past three months and divide expenses into
 
 Many lenders — including mortgage servicers, credit card companies, and utility providers — offer hardship programs that temporarily reduce or pause payments. Call before you miss a payment, not after.
 
-Quick Tip: Withdrawing money from a 401(k) or IRA before age 59½ typically triggers taxes plus a 10% penalty. Exhaust other options first.`,
+Quick Tip: Withdrawing money from a 401(k) or IRA before age 59½ usually triggers taxes plus a 10% penalty. Exhaust other options first.`,
     steps: [
       {
         title: `File for unemployment benefits the same week you lose your job`,
@@ -874,7 +874,7 @@ Quick Tip: Your state's Department of Revenue or Department of Taxation website 
       {
         title: `Research your state and local property tax programs`,
         content: `Search online for "[your state] senior property tax exemption" or "[your county] senior homestead exemption." Your county tax assessor or treasurer's office will have the official application. Most programs require annual or periodic renewal and have income or age thresholds.`,
-        warning: `Property tax exemptions are not automatic — you must apply. Deadlines vary by county. Missing the application deadline typically means waiting another full year.`,
+        warning: `Property tax exemptions are not automatic — you must apply. Deadlines vary by county. Missing the application deadline usually means waiting another full year.`,
       },
       {
         title: `Check whether your Social Security income is taxable`,
@@ -990,7 +990,7 @@ Quick Tip: The most thoughtful thing you can do today is designate a Facebook Le
       },
       {
         title: `Request memorialization or removal for a deceased person`,
-        content: `For Facebook: go to facebook.com/help and search "memorialization request." You will fill out a form and may need to upload a death certificate or obituary. For Instagram: go to instagram.com/help, search "deceased," and follow the form. Processing typically takes several days to a few weeks.`,
+        content: `For Facebook: go to facebook.com/help and search "memorialization request." You will fill out a form and may need to upload a death certificate or obituary. For Instagram: go to instagram.com/help, search "deceased," and follow the form. Processing usually takes several days to a few weeks.`,
       },
       {
         title: `Handle email accounts`,

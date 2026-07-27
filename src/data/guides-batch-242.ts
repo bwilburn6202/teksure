@@ -172,7 +172,7 @@ export const guidesBatch242: Guide[] = [
       },
       {
         title: "Think Twice Before Naming Co-Executors",
-        content: "Some seniors name two or three children as co-executors to keep peace. The intention is good, but the result often slows everything down. Co-executors typically need to agree on every decision, sign every check together, and travel together to bank appointments. Disagreement between them can stall the estate for months. If you must name more than one, pick people who already work well together, live near each other, and have similar values around money and family. Otherwise, pick one main executor and name a strong backup. The estate moves faster.",
+        content: "Some seniors name two or three children as co-executors to keep peace. The intention is good, but the result often slows everything down. Co-executors usually need to agree on every decision, sign every check together, and travel together to bank appointments. Disagreement between them can stall the estate for months. If you must name more than one, pick people who already work well together, live near each other, and have similar values around money and family. Otherwise, pick one main executor and name a strong backup. The estate moves faster.",
         warning: "Adult siblings who do not get along outside the estate will not suddenly get along inside it. Picking three quarreling siblings as co-executors guarantees a court fight."
       },
       {

@@ -259,7 +259,7 @@ Find My works best between Apple devices. Google Maps location sharing works bet
 
 **A note on battery use**
 
-Location sharing uses your phone's GPS, which can use a small amount of extra battery over the course of a day. If you share your location indefinitely, you may notice your battery draining a little faster than usual. On an average modern smartphone, the difference is small — typically 5 to 10 percent more battery used per day.
+Location sharing uses your phone's GPS, which can use a small amount of extra battery over the course of a day. If you share your location indefinitely, you may notice your battery draining a little faster than usual. On an average modern smartphone, the difference is small — usually 5 to 10 percent more battery used per day.
 
 **Quick Tip:** You do not have to share your location all the time. Many families find it useful to share only when going out for errands or a drive, then turn it off at home. Find My and Google Maps both make it easy to turn sharing on and off in about 30 seconds.`,
     steps: [

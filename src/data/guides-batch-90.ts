@@ -306,7 +306,7 @@ Hoopla has a much broader content mix than most people expect. It includes movie
 
 One feature that sets Hoopla apart is BingePass. Certain TV show publishers offer BingePass options, which means you can use one borrow to unlock access to an entire season or a large collection of content from that publisher, rather than counting each episode as a separate borrow.
 
-Most libraries set a monthly borrow limit for Hoopla — typically around 10 borrows per month. This resets on the first of each month. Each movie, album, or book you access counts as one borrow. Downloads for offline viewing also count as a borrow and expire after the loan period.
+Most libraries set a monthly borrow limit for Hoopla — usually around 10 borrows per month. This resets on the first of each month. Each movie, album, or book you access counts as one borrow. Downloads for offline viewing also count as a borrow and expire after the loan period.
 
 The Hoopla app is available on iPhone, Android, Kindle Fire, Roku, Apple TV, Chromecast, and most smart TVs. So you can watch on your big screen at home.`,
     steps: [
@@ -321,7 +321,7 @@ The Hoopla app is available on iPhone, Android, Kindle Fire, Roku, Apple TV, Chr
       },
       {
         title: `Borrow and start immediately`,
-        content: `Tap on any title you want and then tap the "Borrow" button. Hoopla will right away start playing, streaming, or loading the content — no waiting required. A countdown at the top of your library account will show how many of your monthly borrows you have remaining. Movies and TV episodes are typically available for 72 hours after borrowing. Music and comics have longer loan periods.`,
+        content: `Tap on any title you want and then tap the "Borrow" button. Hoopla will right away start playing, streaming, or loading the content — no waiting required. A countdown at the top of your library account will show how many of your monthly borrows you have remaining. Movies and TV episodes are usually available for 72 hours after borrowing. Music and comics have longer loan periods.`,
       },
       {
         title: `Try a BingePass for full TV seasons`,
@@ -468,7 +468,7 @@ The mortgage calculator on each listing page helps you estimate monthly payments
       },
       {
         title: `Contact an agent through the app`,
-        content: `On any listing page, scroll to the bottom to find the contact form. You can send a message to the listing agent asking for more information or requesting a showing. You can also ask Realtor.com to connect you with a buyer's agent in the area — a buyer's agent represents you, not the seller, and their commission is typically paid by the seller. Using a buyer's agent is free to you and gives you professional guidance through the purchase process.`,
+        content: `On any listing page, scroll to the bottom to find the contact form. You can send a message to the listing agent asking for more information or requesting a showing. You can also ask Realtor.com to connect you with a buyer's agent in the area — a buyer's agent represents you, not the seller, and their commission is usually paid by the seller. Using a buyer's agent is free to you and gives you professional guidance through the purchase process.`,
       },
     ],
   },
@@ -536,7 +536,7 @@ Trulia also shows a Noise Score for listings, indicating whether the area has el
 
 The process starts online: you enter your home's address and answer some basic questions about the property, and Opendoor provides a preliminary cash offer — often within 24 hours. If you like the offer, Opendoor sends someone to assess the home in person. After that assessment, they confirm the final offer price. And you choose your own closing date.
 
-Opendoor charges a service fee (typically around 5% of the sale price, though this can vary) plus repair costs if the assessment finds items that need fixing. This is different from a traditional sale where you pay a real estate agent commission (usually 5–6% split between buyer and seller agents) and also handle any repairs or concessions yourself.
+Opendoor charges a service fee (usually around 5% of the sale price, though this can vary) plus repair costs if the assessment finds items that need fixing. This is different from a traditional sale where you pay a real estate agent commission (usually 5–6% split between buyer and seller agents) and also handle any repairs or concessions yourself.
 
 Whether Opendoor's offer is competitive depends heavily on your local market and the condition of your home. In some cases, Opendoor's offer may be slightly below what you could get on the open market — the trade-off is speed, certainty, and convenience. You avoid the stress of keeping your home show-ready for weeks or months. And you know exactly when the money will arrive.
 
@@ -557,12 +557,12 @@ Opendoor operates in dozens of major markets across the United States. It works 
       },
       {
         title: `Understand the fees and compare your options`,
-        content: `Before accepting, review the full breakdown of Opendoor's charges. The service fee is typically around 5% of the sale price. Any repairs Opendoor says are needed will be deducted from your offer — or you can make those repairs yourself before closing if you prefer. Add these costs together and compare the net amount you would receive to what a traditional listing might realistically bring you after agent commissions and the cost of staging, repairs, and carrying the home for several months.`,
+        content: `Before accepting, review the full breakdown of Opendoor's charges. The service fee is usually around 5% of the sale price. Any repairs Opendoor says are needed will be deducted from your offer — or you can make those repairs yourself before closing if you prefer. Add these costs together and compare the net amount you would receive to what a traditional listing might realistically bring you after agent commissions and the cost of staging, repairs, and carrying the home for several months.`,
         warning: `Do not accept Opendoor's offer without comparing it to local market sales prices. In a strong seller's market, listing traditionally may result in a lot more money. Opendoor is not always the right choice. It is most valuable when speed and certainty matter more than maximizing the final price.`,
       },
       {
         title: `Choose your closing date and complete the sale`,
-        content: `If you accept the final offer, you get to pick your own closing date — Opendoor allows flexibility of typically 14 to 60 days from acceptance. This is one of the biggest advantages: you can time the sale to coordinate with your move, the purchase of your next home, or other life events. On closing day, the transaction is handled like a standard real estate closing. And you receive the agreed payment minus fees and any repair deductions.`,
+        content: `If you accept the final offer, you get to pick your own closing date — Opendoor allows flexibility of usually 14 to 60 days from acceptance. This is one of the biggest advantages: you can time the sale to coordinate with your move, the purchase of your next home, or other life events. On closing day, the transaction is handled like a standard real estate closing. And you receive the agreed payment minus fees and any repair deductions.`,
       },
     ],
   },
@@ -602,7 +602,7 @@ HomeLight also offers a Simple Sale feature (separate from agent matching) where
       {
         title: `Interview the agents before committing`,
         content: `When speaking with each agent, ask them how many homes similar to yours they have sold recently in your area, how they communicate with clients (email, phone, text), what their marketing plan would be for your home, and what price they think your home could sell for and why. A good agent will answer these questions directly and provide specific examples. Be cautious of any agent who cannot give you concrete data to back up their claims.`,
-        warning: `Never sign an exclusive listing agreement with an agent until you have interviewed at least two or three options and feel confident in your choice. Listing agreements typically lock you in for 3–6 months.`,
+        warning: `Never sign an exclusive listing agreement with an agent until you have interviewed at least two or three options and feel confident in your choice. Listing agreements usually lock you in for 3–6 months.`,
       },
       {
         title: `Consider the Simple Sale option for a comparison`,
@@ -624,7 +624,7 @@ HomeLight also offers a Simple Sale feature (separate from agent matching) where
 
 The most popular feature is the built-in browser. Instead of copying and pasting recipes from websites into your notes app, Paprika has a built-in web browser. You navigate to any recipe website, tap "Save Recipe," and Paprika automatically extracts the ingredients, instructions, and photo from the page — no manual copying required.
 
-Paprika is a one-time purchase, not a monthly subscription. You pay once to download the app, and then it is yours to keep without ongoing charges. The price varies slightly by platform but is typically a few dollars. This is different from most cooking apps that charge monthly fees.
+Paprika is a one-time purchase, not a monthly subscription. You pay once to download the app, and then it is yours to keep without ongoing charges. The price varies slightly by platform but is usually a few dollars. This is different from most cooking apps that charge monthly fees.
 
 Once your recipes are in Paprika, you can plan your meals for the week by dragging recipes onto a weekly meal planning calendar. After planning, tap "Add to Grocery List" and Paprika automatically compiles all the ingredients from your planned meals into a single, organized shopping list — sorted by category (produce, dairy, meat, etc.) so you can move efficiently through the store.
 
@@ -693,7 +693,7 @@ Tasty also features a shopping list function: add any recipe's ingredients to yo
       },
       {
         title: `Watch the recipe video before you start cooking`,
-        content: `On any recipe page, tap the play button to watch the short video showing the dish being made from start to finish. Watching first gives you a visual overview of the techniques involved before you start. The videos are typically between one and three minutes long and show the key cooking steps in sequence. This is especially useful if you are trying a cooking technique you have not done before.`,
+        content: `On any recipe page, tap the play button to watch the short video showing the dish being made from start to finish. Watching first gives you a visual overview of the techniques involved before you start. The videos are usually between one and three minutes long and show the key cooking steps in sequence. This is especially useful if you are trying a cooking technique you have not done before.`,
       },
       {
         title: `Start guided cooking mode`,
@@ -728,7 +728,7 @@ Food Network Kitchen requires a subscription after the free trial period. The ap
     steps: [
       {
         title: `Download the app and start your free trial`,
-        content: `Search for "Food Network Kitchen" in the App Store (iPhone) or Google Play (Android) and install the app. Food Network Kitchen typically offers a free trial for new subscribers. Open the app and tap "Start Free Trial" to create an account with your email address and payment information. You will not be charged until the trial period ends. And you can cancel before then if you decide it is not for you.`,
+        content: `Search for "Food Network Kitchen" in the App Store (iPhone) or Google Play (Android) and install the app. Food Network Kitchen usually offers a free trial for new subscribers. Open the app and tap "Start Free Trial" to create an account with your email address and payment information. You will not be charged until the trial period ends. And you can cancel before then if you decide it is not for you.`,
         tip: `Quick Tip: Food Network Kitchen is also available through Amazon Prime Video channels and the Amazon Fire TV ecosystem, which may offer promotional pricing for Prime members.`,
       },
       {
@@ -814,7 +814,7 @@ Notarize.com is one of the leading platforms for online notarization. You create
 
 Not all states accept online notarization and not all document types qualify. Notarize.com's website will tell you upfront if your state and document type are supported before you start the process. As of 2026, most U.S. states accept remote online notarization for most document types. But there are still some exceptions — particularly for certain real estate transactions in some states.
 
-The cost for a notarization on Notarize.com is a flat fee per document, typically around $25 for the first notarial act with additional acts available for a smaller fee. This compares favorably to the time and inconvenience of an in-person appointment, especially for people who have difficulty traveling or who need documents notarized quickly.`,
+The cost for a notarization on Notarize.com is a flat fee per document, usually around $25 for the first notarial act with additional acts available for a smaller fee. This compares favorably to the time and inconvenience of an in-person appointment, especially for people who have difficulty traveling or who need documents notarized quickly.`,
     steps: [
       {
         title: `Create your Notarize account`,
@@ -832,7 +832,7 @@ The cost for a notarization on Notarize.com is a flat fee per document, typicall
       },
       {
         title: `Connect with a live notary via video call`,
-        content: `After identity verification, you will be connected to a live, commissioned notary via video call. The wait time is usually just a few minutes — notaries are available 24 hours a day, 7 days a week. The notary will appear on your screen and confirm your identity verbally. They will then watch you apply your electronic signature to the document in real time. The entire call typically takes 5 to 15 minutes depending on the complexity of the document.`,
+        content: `After identity verification, you will be connected to a live, commissioned notary via video call. The wait time is usually just a few minutes — notaries are available 24 hours a day, 7 days a week. The notary will appear on your screen and confirm your identity verbally. They will then watch you apply your electronic signature to the document in real time. The entire call usually takes 5 to 15 minutes depending on the complexity of the document.`,
       },
       {
         title: `Download your notarized document`,
@@ -871,7 +871,7 @@ Filing a claim on Lemonade is done through the app with an AI named Maya. You de
       },
       {
         title: `Select your Giveback charity`,
-        content: `During sign-up, Lemonade asks you to choose a nonprofit organization for the Giveback program. Browse the list of causes and select one that matters to you — options typically include animal welfare, environmental causes, education, and more. At the end of each policy year, if there is money left after paying claims, Lemonade donates a portion to your chosen cause on your behalf.`,
+        content: `During sign-up, Lemonade asks you to choose a nonprofit organization for the Giveback program. Browse the list of causes and select one that matters to you — options usually include animal welfare, environmental causes, education, and more. At the end of each policy year, if there is money left after paying claims, Lemonade donates a portion to your chosen cause on your behalf.`,
       },
       {
         title: `Review your policy and start coverage`,
@@ -898,9 +898,9 @@ Filing a claim on Lemonade is done through the app with an AI named Maya. You de
 
 Life insurance can feel complicated and intimidating, but Fabric was designed to make it approachable. The application process happens through the app and takes around 10 to 20 minutes. You answer health questions, choose your coverage amount and policy term length, and Fabric provides a quote. Many applicants are approved quickly without needing a medical exam, though some applicants based on age or health history will be asked to complete one.
 
-The type of insurance Fabric sells is called term life insurance. This means the policy covers you for a specific number of years — typically 10, 15, 20, or 30 years — and pays a benefit called the death benefit to your named beneficiaries if you pass away during that term. Term life is different from whole life insurance, which covers you permanently but costs much more per month. For most families with children at home, term life insurance is the practical and affordable choice.
+The type of insurance Fabric sells is called term life insurance. This means the policy covers you for a specific number of years — usually 10, 15, 20, or 30 years — and pays a benefit called the death benefit to your named beneficiaries if you pass away during that term. Term life is different from whole life insurance, which covers you permanently but costs much more per month. For most families with children at home, term life insurance is the practical and affordable choice.
 
-Coverage amounts on Fabric typically range from $100,000 to several million dollars. A common guideline is to carry coverage equal to 10 to 12 times your annual income, but the right amount depends on your debts, your family's expenses, and your financial situation.
+Coverage amounts on Fabric usually range from $100,000 to several million dollars. A common guideline is to carry coverage equal to 10 to 12 times your annual income, but the right amount depends on your debts, your family's expenses, and your financial situation.
 
 The Fabric will feature is free for anyone, even if you do not purchase life insurance. Creating a basic digital will in Fabric takes about 15 minutes and lets you name a guardian for minor children — one of the most important things a parent can do and something many people put off for years.`,
     steps: [
@@ -920,11 +920,11 @@ The Fabric will feature is free for anyone, even if you do not purchase life ins
       },
       {
         title: `Name your beneficiaries`,
-        content: `A beneficiary is the person who receives the insurance payout if you pass away. Tap the beneficiary section and add the names and relationship of the people you want to receive the benefit — typically a spouse or partner, and possibly children if they are adults. You can split the benefit among multiple people by percentage. Keep your beneficiary designations updated whenever major life changes happen, like a marriage, divorce, or the birth of a child.`,
+        content: `A beneficiary is the person who receives the insurance payout if you pass away. Tap the beneficiary section and add the names and relationship of the people you want to receive the benefit — usually a spouse or partner, and possibly children if they are adults. You can split the benefit among multiple people by percentage. Keep your beneficiary designations updated whenever major life changes happen, like a marriage, divorce, or the birth of a child.`,
       },
       {
         title: `Complete the underwriting process`,
-        content: `After submitting your application, Fabric will either approve your policy right away (called instant issue) or notify you that additional information is needed. For instant issue, you can activate your policy right away and begin coverage the same day. If a medical exam is needed, Fabric arranges a free in-home exam — a technician comes to you to take basic measurements and a blood sample. Results are reviewed by the insurance underwriters. And you typically hear back within a few weeks.`,
+        content: `After submitting your application, Fabric will either approve your policy right away (called instant issue) or notify you that additional information is needed. For instant issue, you can activate your policy right away and begin coverage the same day. If a medical exam is needed, Fabric arranges a free in-home exam — a technician comes to you to take basic measurements and a blood sample. Results are reviewed by the insurance underwriters. And you usually hear back within a few weeks.`,
       },
       {
         title: `Create your free digital will`,

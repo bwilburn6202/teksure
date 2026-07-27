@@ -131,7 +131,7 @@ Click on the name of a reviewer to see their review history. A real Amazon custo
 
 **Warning sign 4: All five-star reviews with no critical ones**
 
-Almost every product has at least some customers who were not satisfied. A product page with hundreds of reviews and every single one rated four or five stars is unusual. Real review distributions typically show some three-star and two-star reviews as well. If there are no critical reviews at all, the seller may have suppressed or removed negative feedback.
+Almost every product has at least some customers who were not satisfied. A product page with hundreds of reviews and every single one rated four or five stars is unusual. Real review distributions usually show some three-star and two-star reviews as well. If there are no critical reviews at all, the seller may have suppressed or removed negative feedback.
 
 **Warning sign 5: Poor grammar and overly enthusiastic language**
 

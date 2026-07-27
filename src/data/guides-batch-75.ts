@@ -32,7 +32,7 @@ Remember: the goal of week one is not speed. It's showing up. Walk as briskly as
       },
       {
         title: `Set up your profile and choose Week 1`,
-        content: `Enter your age and fitness goal when prompted. Select "Week 1, Day 1" to begin the program. The app will show you a preview of today's workout — typically a 5-minute warm-up walk, followed by alternating run/walk intervals, ending with a 5-minute cool-down walk.`,
+        content: `Enter your age and fitness goal when prompted. Select "Week 1, Day 1" to begin the program. The app will show you a preview of today's workout — usually a 5-minute warm-up walk, followed by alternating run/walk intervals, ending with a 5-minute cool-down walk.`,
       },
       {
         title: `Connect your headphones and start your workout`,
@@ -66,7 +66,7 @@ The Peloton app library has tens of thousands of classes taught by real instruct
 
 The app works on iPhone, Android, iPad, Apple TV, Amazon Fire TV, and Roku. On a phone or tablet, you can prop the screen up and follow along. On a TV, the screen is large enough to see the instructor clearly and follow every movement.
 
-Peloton offers a free trial period (typically 30 days) so you can explore everything before deciding whether to pay for a subscription. After the trial, the All-Access Membership — which is what you need for the full class library — runs around $24 per month. A lower-cost App Membership tier is also available at roughly $13 per month for a more limited selection.
+Peloton offers a free trial period (usually 30 days) so you can explore everything before deciding whether to pay for a subscription. After the trial, the All-Access Membership — which is what you need for the full class library — runs around $24 per month. A lower-cost App Membership tier is also available at roughly $13 per month for a more limited selection.
 
 You do not need a Peloton bike, treadmill, or any special equipment for most of the strength, yoga, and stretching classes. Some cycling classes work with any stationary bike, and some running classes are designed for outdoor use with your phone in your pocket.
 
@@ -124,7 +124,7 @@ ClassPass also includes a selection of on-demand video classes you can do at hom
       },
       {
         title: `Choose a membership plan`,
-        content: `ClassPass offers several monthly credit tiers. Start with the lowest credit package — you can always upgrade. The app will show you a free trial option (typically the first month at a reduced rate or free). You'll need a credit card to start.`,
+        content: `ClassPass offers several monthly credit tiers. Start with the lowest credit package — you can always upgrade. The app will show you a free trial option (usually the first month at a reduced rate or free). You'll need a credit card to start.`,
         tip: `Quick Tip: Look at how many credits a class you're interested in costs before picking your plan. Popular studios in prime time slots use more credits than smaller studios at off-peak hours.`,
       },
       {
@@ -304,7 +304,7 @@ Once connected and configured, you should be able to use your TV remote's volume
       },
       {
         title: `Find the HDMI ARC port on your soundbar`,
-        content: `Look at the ports on the back of your soundbar. The HDMI port supporting ARC will typically be labeled "HDMI ARC," "HDMI OUT (ARC)," or "HDMI (ARC/eARC)." Some soundbars have multiple HDMI ports — make sure you use the one specifically labeled ARC, not a regular input port.`,
+        content: `Look at the ports on the back of your soundbar. The HDMI port supporting ARC will usually be labeled "HDMI ARC," "HDMI OUT (ARC)," or "HDMI (ARC/eARC)." Some soundbars have multiple HDMI ports — make sure you use the one specifically labeled ARC, not a regular input port.`,
       },
       {
         title: `Connect the HDMI cable`,
@@ -333,9 +333,9 @@ Once connected and configured, you should be able to use your TV remote's volume
     difficulty: `Beginner`,
     body: `Before cable and streaming services, everyone watched TV with an antenna. The signal was free then, and it still is today. Over-the-air (OTA) broadcasts from your local ABC, CBS, NBC, PBS, Fox, and dozens of smaller channels transmit in full HD — often at a higher picture quality than the same channels delivered through cable, because cable companies compress the signal to save bandwidth.
 
-An indoor TV antenna is a small, flat device about the size of a sheet of paper that plugs directly into the antenna port on the back of your TV. No subscription, no monthly fee, and no account to set up. You pay once for the antenna (typically $20 to $50 at any electronics or big-box store) and then receive free broadcasts indefinitely.
+An indoor TV antenna is a small, flat device about the size of a sheet of paper that plugs directly into the antenna port on the back of your TV. No subscription, no monthly fee, and no account to set up. You pay once for the antenna (usually $20 to $50 at any electronics or big-box store) and then receive free broadcasts indefinitely.
 
-The channels you receive depend on your location. Cities typically get 20 to 50 channels including all the major networks plus Spanish-language networks, home shopping channels, news channels, and classic TV rerun channels. Rural areas farther from broadcast towers receive fewer channels, though a more powerful "amplified" antenna can extend your range.
+The channels you receive depend on your location. Cities usually get 20 to 50 channels including all the major networks plus Spanish-language networks, home shopping channels, news channels, and classic TV rerun channels. Rural areas farther from broadcast towers receive fewer channels, though a more powerful "amplified" antenna can extend your range.
 
 To check which channels you can expect to receive before buying, visit antennaweb.org and enter your address. The site shows a list of available channels and the signal strength you can expect at your location, which helps you choose the right antenna.
 
@@ -382,7 +382,7 @@ Kanopy is funded by public libraries, which pay a small fee each time a patron w
 
 To use Kanopy, all you need is a library card from a participating library. Most public libraries in the United States participate — over 4,000 library systems are part of the Kanopy network. If your library doesn't participate yet, you can often request that they join through your library's website or by speaking with a librarian.
 
-Each library sets a limit on how many films you can watch per month — typically around eight to ten "plays." Watching a short film uses one play. A full-length documentary or movie also uses one play. The counter resets each month, giving you a fresh allowance every month.
+Each library sets a limit on how many films you can watch per month — usually around eight to ten "plays." Watching a short film uses one play. A full-length documentary or movie also uses one play. The counter resets each month, giving you a fresh allowance every month.
 
 Kanopy also includes a separate section called "Kanopy Kids" with hundreds of children's films and educational series that do not count against your monthly play limit. Families with children get even more value from the service.
 
@@ -442,7 +442,7 @@ Crackle is a good complement to Tubi, Pluto TV, and YouTube's free movie section
       },
       {
         title: `Start watching`,
-        content: `Click or tap the play button on any title. Crackle will play a short pre-roll ad (typically 15 to 30 seconds) before the content begins. During the movie, short commercial breaks appear — similar to watching a movie on a regular TV channel. You cannot skip these ads. But they are generally shorter than traditional TV commercial breaks.`,
+        content: `Click or tap the play button on any title. Crackle will play a short pre-roll ad (usually 15 to 30 seconds) before the content begins. During the movie, short commercial breaks appear — similar to watching a movie on a regular TV channel. You cannot skip these ads. But they are generally shorter than traditional TV commercial breaks.`,
       },
       {
         title: `Create a free account for extra features`,
@@ -484,7 +484,7 @@ If you do have a YouTube account, watching free movies contributes to your YouTu
       {
         title: `Check that a movie is free before playing`,
         content: `Click on a movie poster to open its detail page. Look for a "Watch for Free" button — this confirms it's available at no cost. If you only see "Rent" or "Buy" options without a free option, this title requires payment. Go back and find a different selection with the free badge.`,
-        warning: `Never click "Rent" or "Buy" unless you intend to pay. Rentals typically cost $3 to $6 and are charged to the payment method linked to your Google account. A "Watch for Free" button will always be present on genuinely free titles.`,
+        warning: `Never click "Rent" or "Buy" unless you intend to pay. Rentals usually cost $3 to $6 and are charged to the payment method linked to your Google account. A "Watch for Free" button will always be present on genuinely free titles.`,
       },
       {
         title: `Watch the movie`,
@@ -520,7 +520,7 @@ Thumbtack is available as a free app on iPhone and Android, and also works on an
       },
       {
         title: `Enter your location and contact info`,
-        content: `Enter your zip code or allow the app to detect your location. Provide your name and email address so professionals can send you quotes. Thumbtack will notify you by email and app notification as quotes come in — responses typically arrive within a few hours.`,
+        content: `Enter your zip code or allow the app to detect your location. Provide your name and email address so professionals can send you quotes. Thumbtack will notify you by email and app notification as quotes come in — responses usually arrive within a few hours.`,
         tip: `Quick Tip: Include your preferred timeline in the project description (e.g., "I need this done within the next two weeks"). This helps pros self-select based on availability and avoids back-and-forth later.`,
       },
       {
@@ -601,13 +601,13 @@ The actual work is simple: you open the Dasher app and tap "Dash Now" to start a
 
 Pay varies by market and by how busy the area is. DoorDash uses a base pay structure plus 100% of tips go to the Dasher. During peak hours — lunch (11am–2pm) and dinner (5pm–9pm) on weekdays, and most of the weekend — delivery demand is higher and pay per hour tends to be better. During slow periods, it's common to wait longer between orders.
 
-Dashers are paid weekly via direct deposit, though a "Fast Pay" option allows you to cash out your current earnings to a debit card for a small fee. As an independent contractor, taxes are not withheld from your earnings — you're responsible for setting aside money for quarterly estimated taxes, typically around 25 to 30% of your net earnings.
+Dashers are paid weekly via direct deposit, though a "Fast Pay" option allows you to cash out your current earnings to a debit card for a small fee. As an independent contractor, taxes are not withheld from your earnings — you're responsible for setting aside money for quarterly estimated taxes, usually around 25 to 30% of your net earnings.
 
 The Dasher app is available for iPhone and Android and uses your phone's GPS for navigation. A phone mount for your car dashboard is a practical investment if you plan to dash regularly.`,
     steps: [
       {
         title: `Sign up at the DoorDash Dasher website`,
-        content: `On a computer or phone, go to dasher.doordash.com and click "Sign Up to Dash." Fill in your name, email, phone number, and zip code. You'll then be asked to submit your driver's license information and consent to a background check. The background check is conducted by Checkr and typically takes two to five business days.`,
+        content: `On a computer or phone, go to dasher.doordash.com and click "Sign Up to Dash." Fill in your name, email, phone number, and zip code. You'll then be asked to submit your driver's license information and consent to a background check. The background check is conducted by Checkr and usually takes two to five business days.`,
         tip: `Quick Tip: DoorDash sometimes runs sign-up promotions where new Dashers earn a guaranteed minimum amount for their first deliveries. Check the sign-up page for any current offers in your market before completing registration.`,
       },
       {
@@ -643,7 +643,7 @@ The Dasher app is available for iPhone and Android and uses your phone's GPS for
 
 Amazon Flex pays between $18 and $25 per hour depending on your market and the type of delivery block. The rate is fixed and displayed before you accept a block. There's no tipping mechanism, but the hourly rate is set at a level that's generally competitive with other gig delivery work.
 
-Work on Amazon Flex is organized into "blocks" — scheduled time slots typically two to four hours long. You browse available blocks in the Flex app (which updates often throughout the day) and claim the ones that fit your schedule. Blocks during peak times like the holiday season, evenings, and weekends are in higher demand and go quickly.
+Work on Amazon Flex is organized into "blocks" — scheduled time slots usually two to four hours long. You browse available blocks in the Flex app (which updates often throughout the day) and claim the ones that fit your schedule. Blocks during peak times like the holiday season, evenings, and weekends are in higher demand and go quickly.
 
 To qualify for Amazon Flex, you must be at least 21 years old, have a valid US driver's license, own or have regular access to a mid-size or larger vehicle (a sedan, SUV, minivan, or truck — small compact cars may not hold all packages in a block), pass a background check, and have a smartphone running a compatible version of iOS or Android.
 

@@ -333,7 +333,7 @@ Meeting safely in person is straightforward if you follow a few common-sense rul
     thumbnailEmoji: '',
     publishedAt: '2026-04-19',
     difficulty: 'Beginner',
-    body: `Craigslist is one of the oldest and largest online classifieds websites, operating in hundreds of cities across the US. People post listings for everything: furniture, jobs, apartments, cars, appliances, and services. Local Craigslist transactions are typically done in person, making them similar in many ways to Facebook Marketplace deals.
+    body: `Craigslist is one of the oldest and largest online classifieds websites, operating in hundreds of cities across the US. People post listings for everything: furniture, jobs, apartments, cars, appliances, and services. Local Craigslist transactions are usually done in person, making them similar in many ways to Facebook Marketplace deals.
 
 Craigslist has no user accounts, no buyer protection, no payment system, and no rating system for buyers or sellers. This simplicity is part of what makes it popular — anyone can post and anyone can respond without signing up — but it also means you are entirely on your own when it comes to assessing whether a deal is safe and legitimate.
 
@@ -426,7 +426,7 @@ Grocery chains like Walmart, Target, and Kroger offer free Wi-Fi in-store. Publi
 
 Classes are offered as live Zoom sessions, on-demand video recordings, and in-person at Senior Planet community centers in select cities. The online classes are available nationwide. You do not need to live near a Senior Planet location to participate.
 
-The teaching style is specifically adapted for seniors: patient, non-technical, and hands-on. Instructors understand that many participants are newer to technology and welcome basic questions without judgment. Classes are typically 45-60 minutes and are offered at various times throughout the week.
+The teaching style is specifically adapted for seniors: patient, non-technical, and hands-on. Instructors understand that many participants are newer to technology and welcome basic questions without judgment. Classes are usually 45-60 minutes and are offered at various times throughout the week.
 
 The technology helpline is one of Senior Planet's most valued offerings: a free phone service (888-713-3495, Monday-Friday 9 AM - 5 PM Eastern) where a real person answers your technology questions in plain English. You do not need to be enrolled in a class to call — the helpline is open to anyone 60 or older.
 
@@ -441,7 +441,7 @@ In-person Senior Planet Centers are located in New York City, Los Angeles, Denve
       },
       {
         title: 'Create a Free Senior Planet Account',
-        content: 'Click "Register" or "Sign up." Enter your email address, create a password, and complete your profile (name and zip code are typically required). Your age is used to verify you qualify for the 60+ program. Account creation is free.',
+        content: 'Click "Register" or "Sign up." Enter your email address, create a password, and complete your profile (name and zip code are usually required). Your age is used to verify you qualify for the 60+ program. Account creation is free.',
       },
       {
         title: 'Register for a Class',
@@ -909,7 +909,7 @@ Not every doctor's office or small practice supports this yet. It is most reliab
       {
         title: 'Connect Your Health System',
         content: `Tap your health organization from the search results. You are redirected to your hospital's patient portal sign-in page within the Health app (this is usually MyChart). Enter your patient portal username and password to authorize the connection.`,
-        tip: `If you do not have a patient portal account, create one first at your hospital's website or by calling the patient services line. You typically need your date of birth and medical record number to sign up.`,
+        tip: `If you do not have a patient portal account, create one first at your hospital's website or by calling the patient services line. You usually need your date of birth and medical record number to sign up.`,
       },
       {
         title: 'Review Your Medical Records',

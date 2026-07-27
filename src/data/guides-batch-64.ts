@@ -257,7 +257,7 @@ Once you find the flight you want, click "Select" and Google will redirect you t
     excerpt: `Shipt delivers groceries from Target and other stores straight to your door, usually within hours.`,
     body: `Shipt is a same-day grocery delivery service that shops at stores like Target, Meijer, H-E-B, and others on your behalf and delivers everything to your front door — often within one to two hours. It is a great option if driving to the store is difficult or if you want to save time. A personal shopper picks your items, bags them, and brings them to you.
 
-You can use Shipt two ways: with a membership or pay per order. The Shipt membership costs $99 per year (about $8.25 per month) and gives you free delivery on orders over $35. Without a membership, you pay a delivery fee on each order, which typically ranges from $7 to $10. If you shop for groceries regularly, the membership usually pays for itself within a few months.
+You can use Shipt two ways: with a membership or pay per order. The Shipt membership costs $99 per year (about $8.25 per month) and gives you free delivery on orders over $35. Without a membership, you pay a delivery fee on each order, which usually ranges from $7 to $10. If you shop for groceries regularly, the membership usually pays for itself within a few months.
 
 To get started, go to shipt.com on your computer or download the free Shipt app from the App Store or Google Play. Create a free account with your email address and enter your delivery address. You will be asked for a payment method — a debit or credit card works.
 
@@ -280,7 +280,7 @@ When your groceries arrive, the shopper leaves them at your door. You do not nee
       },
       {
         title: `Choose a membership or pay per order`,
-        content: `Shipt offers a $99/year membership with free delivery on orders over $35. If you prefer not to commit, you can pay a delivery fee per order (typically $7–$10). On the account setup screen, you will be given the option to start a free 4-week trial of the membership.`
+        content: `Shipt offers a $99/year membership with free delivery on orders over $35. If you prefer not to commit, you can pay a delivery fee per order (usually $7–$10). On the account setup screen, you will be given the option to start a free 4-week trial of the membership.`
       },
       {
         title: `Browse your store and add items to your cart`,
@@ -307,9 +307,9 @@ When your groceries arrive, the shopper leaves them at your door. You do not nee
     excerpt: `Delivery fees and service charges add up fast. These practical tips help you spend less every time you order.`,
     body: `Ordering food through apps like DoorDash, Uber Eats, Grubhub, or Instacart is convenient, but the final price is often a lot higher than the menu price you see at first glance. Understanding the full cost breakdown and knowing a few practical strategies can save you a meaningful amount of money each month.
 
-Here is how the fees typically break down on a single order: there is a delivery fee (usually $2–$5, but can be higher during busy periods), a service fee charged by the app (typically 10–15% of your subtotal), a possible small order fee if your order is under a minimum amount, and any tip you add for the driver (15–20% is standard). On a $25 meal, you might end up paying $40 or more after all fees and tip.
+Here is how the fees usually break down on a single order: there is a delivery fee (usually $2–$5, but can be higher during busy periods), a service fee charged by the app (usually 10–15% of your subtotal), a possible small order fee if your order is under a minimum amount, and any tip you add for the driver (15–20% is standard). On a $25 meal, you might end up paying $40 or more after all fees and tip.
 
-Subscription memberships can help if you order often. DashPass (from DoorDash) costs about $9.99 per month and waives delivery fees on qualifying orders over $12. Uber One costs $9.99 per month and waives delivery fees on Uber Eats orders plus other perks. If you order more than two or three times per month, either membership typically pays for itself.
+Subscription memberships can help if you order often. DashPass (from DoorDash) costs about $9.99 per month and waives delivery fees on qualifying orders over $12. Uber One costs $9.99 per month and waives delivery fees on Uber Eats orders plus other perks. If you order more than two or three times per month, either membership usually pays for itself.
 
 One of the best ways to avoid fees entirely is to call the restaurant directly or order from their own website. Many restaurants — especially local and independently owned ones — offer online ordering without any third-party platform fees. You pick it up or they deliver it at a lower price.
 
@@ -349,7 +349,7 @@ Finally, pay attention to minimum order amounts. A small order fee is often char
       },
       {
         title: `Meet the minimum order to avoid small order fees`,
-        content: `If your subtotal is below the restaurant's minimum (often $10–$15), the app charges a small order fee — typically $2–$4. Adding one more item to your order is almost always cheaper than paying that fee. Look for a side, a drink, or a small snack to get above the threshold.`,
+        content: `If your subtotal is below the restaurant's minimum (often $10–$15), the app charges a small order fee — usually $2–$4. Adding one more item to your order is almost always cheaper than paying that fee. Look for a side, a drink, or a small snack to get above the threshold.`,
         warning: `Surge or peak pricing can apply during busy meal times — lunch and dinner rushes. If the fees look unusually high, waiting 20–30 minutes can sometimes lower them.`
       }
     ]
@@ -392,7 +392,7 @@ One important note: iPhones with iOS 15.2 or later have an easier path. If the p
       },
       {
         title: `Confirm and wait for the erase to complete`,
-        content: `The phone will ask for your passcode, then show a confirmation screen. Tap "Erase iPhone" to confirm. The screen will go dark and show a progress bar. This process typically takes 5 to 15 minutes. Do not unplug or turn off the phone while it is erasing.`
+        content: `The phone will ask for your passcode, then show a confirmation screen. Tap "Erase iPhone" to confirm. The screen will go dark and show a progress bar. This process usually takes 5 to 15 minutes. Do not unplug or turn off the phone while it is erasing.`
       },
       {
         title: `Set up the phone or pass it on`,
@@ -443,7 +443,7 @@ If you are keeping the phone and resetting to fix a problem, sign in with your G
       },
       {
         title: `Wait for the reset to complete`,
-        content: `The phone will restart one or more times and show a progress screen. Do not turn off the phone during this process. It typically takes 10 to 20 minutes. When finished, you will see the welcome or language selection screen, the same one that appeared when the phone was brand new.`
+        content: `The phone will restart one or more times and show a progress screen. Do not turn off the phone during this process. It usually takes 10 to 20 minutes. When finished, you will see the welcome or language selection screen, the same one that appeared when the phone was brand new.`
       },
       {
         title: `Set up or hand off the phone`,
@@ -516,7 +516,7 @@ The second way gives you an overview of all apps that can access a specific reso
 
 Android 14 and later added a Privacy Dashboard (in Settings under Privacy) that shows you a timeline of which apps accessed your camera, microphone, and location over the past 24 hours. If you see an unfamiliar app showing up often, that is a signal to review or revoke its permissions.
 
-When reviewing location permissions, you will typically see three options: "Allow all the time," "Allow only while using the app," or "Don't allow." For most apps, "Allow only while using the app" is the right choice. It means the app can only check your location when you are actively using it, not when it is running in the background.
+When reviewing location permissions, you will usually see three options: "Allow all the time," "Allow only while using the app," or "Don't allow." For most apps, "Allow only while using the app" is the right choice. It means the app can only check your location when you are actively using it, not when it is running in the background.
 
 For apps that request camera or microphone access but have no obvious reason to need it — like a flashlight app, a simple game, or a text editor — you should deny that permission.`,
     category: `essential-skills`,
@@ -603,7 +603,7 @@ Using "Approximate location" instead of "Precise location" is another option ava
     excerpt: `Keeping apps updated protects your security and brings new features. Turn on auto-updates so it happens on its own.`,
     body: `App updates are released regularly by developers to fix security vulnerabilities, correct bugs, and add new features. Staying current with updates is one of the simplest and most effective things you can do to keep your phone secure and running properly. When apps are not updated, they may have known security holes that hackers can exploit — especially in apps you use for banking, email, or shopping.
 
-The good news is that both iPhone and Android allow you to turn on automatic updates, so apps update on their own — typically overnight while your phone is charging and connected to Wi-Fi. Once this is set up, you do not need to remember to update anything manually.
+The good news is that both iPhone and Android allow you to turn on automatic updates, so apps update on their own — usually overnight while your phone is charging and connected to Wi-Fi. Once this is set up, you do not need to remember to update anything manually.
 
 On iPhone, automatic app updates are controlled through the App Store settings. Go to Settings, scroll down and tap "App Store," and look for the "App Updates" toggle under the "Automatic Downloads" section. Turn this on. When new updates are available, they will download and install while your phone is connected to Wi-Fi and charging, without any action needed from you.
 
@@ -645,7 +645,7 @@ What should you do if an update causes a problem? Most app developers release a 
     excerpt: `A Roomba handles vacuuming on its own — once you set it up, you can start cleaning with a tap on your phone.`,
     body: `A Roomba is a robot vacuum that navigates your floors automatically, cleaning as it goes and returning to its charging base when the job is done. Once set up, you can start a cleaning cycle by tapping a button in an app on your phone, schedule cleanings for specific days and times, and even see a map of which areas the robot cleaned.
 
-Getting started begins with unboxing and placing the charging dock. The dock is a small base station that the Roomba returns to when it needs to recharge. Place it against a wall with a few feet of clear space on either side so the Roomba can find it easily. Plug the dock into a wall outlet. Set the Roomba on the dock and let it charge fully before the first run — this typically takes about two to three hours.
+Getting started begins with unboxing and placing the charging dock. The dock is a small base station that the Roomba returns to when it needs to recharge. Place it against a wall with a few feet of clear space on either side so the Roomba can find it easily. Plug the dock into a wall outlet. Set the Roomba on the dock and let it charge fully before the first run — this usually takes about two to three hours.
 
 While it charges, download the iRobot Home app from the App Store or Google Play Store. Create a free account and follow the in-app steps to add your Roomba. You will connect it to your home Wi-Fi network during this process — have your Wi-Fi password ready. The app will guide you through pressing the right buttons on the Roomba to complete pairing.
 
@@ -752,7 +752,7 @@ After mounting, download the corresponding app — the Nest app (or Google Home 
 
 The app will notify you on your phone whenever the detector sounds, identifies what it detected (smoke vs. carbon monoxide), and which room the alarm came from if you have multiple units. You can also silence a false alarm from the app — no more waving a towel at the ceiling.
 
-Smart detectors also handle maintenance reminders proactively. The app notifies you when the battery is getting low and when the sensor inside the unit should be replaced (typically after 10 years). Monthly self-tests run automatically, so you do not have to remember to push the test button.
+Smart detectors also handle maintenance reminders proactively. The app notifies you when the battery is getting low and when the sensor inside the unit should be replaced (usually after 10 years). Monthly self-tests run automatically, so you do not have to remember to push the test button.
 
 If you install multiple smart detectors, they can be interconnected — when one goes off, all of them sound simultaneously, which is important in larger homes.`,
     category: `smart-home`,
@@ -806,7 +806,7 @@ To run a scan, click "Virus & threat protection." This screen shows the date of 
 
 When Defender finds a threat, it moves the suspicious file to a quarantine area automatically. You can review quarantined items under "Protection History." For most users, the default action (quarantine) is the right choice, and Defender handles it without needing your involvement.
 
-If you have a third-party antivirus program installed — like Norton, McAfee, or Bitdefender — Windows will typically disable Defender automatically to avoid conflicts. You do not need both running at the same time.`,
+If you have a third-party antivirus program installed — like Norton, McAfee, or Bitdefender — Windows will usually disable Defender automatically to avoid conflicts. You do not need both running at the same time.`,
     category: `windows-guides`,
     tags: [`Windows Defender`, `virus scan`, `security`, `windows`, `antivirus`],
     thumbnailEmoji: ``,
@@ -825,7 +825,7 @@ If you have a third-party antivirus program installed — like Norton, McAfee, o
       },
       {
         title: `Run a Quick Scan`,
-        content: `Click "Virus & threat protection." The screen shows when the last scan ran. Click "Quick scan" to start scanning right away. A quick scan typically takes 2 to 10 minutes and checks the most common locations where threats appear — your running processes, startup files, and common system folders.`
+        content: `Click "Virus & threat protection." The screen shows when the last scan ran. Click "Quick scan" to start scanning right away. A quick scan usually takes 2 to 10 minutes and checks the most common locations where threats appear — your running processes, startup files, and common system folders.`
       },
       {
         title: `Run a Full Scan for a thorough check`,
@@ -852,7 +852,7 @@ There are two types of updates to manage on a Mac. The first is macOS itself —
 
 To check for macOS updates, click the Apple menu (the Apple icon in the top left corner of your screen), then click "System Settings" on macOS Ventura or later (or "System Preferences" on older versions). Click "General" in the left sidebar, then "Software Update." Your Mac will check for available updates and display them here. If an update is available, you will see a description and an "Update Now" or "Upgrade Now" button.
 
-Minor updates — like a security patch numbered 14.4.1 — are typically quick to install and are safe to apply right away. Major OS upgrades — like going from macOS Sonoma to macOS Sequoia — involve a larger download and more significant changes. Before a major upgrade, it is wise to back up your Mac using Time Machine.
+Minor updates — like a security patch numbered 14.4.1 — are usually quick to install and are safe to apply right away. Major OS upgrades — like going from macOS Sonoma to macOS Sequoia — involve a larger download and more significant changes. Before a major upgrade, it is wise to back up your Mac using Time Machine.
 
 Time Machine is Apple's built-in backup tool. Connect an external hard drive, open System Settings, click General, then Time Machine, and select your drive. Once set up, Time Machine automatically backs up your Mac hourly. This gives you a full restore point before any major update.
 
@@ -878,7 +878,7 @@ To enable automatic updates for both macOS and App Store apps, go to System Sett
       },
       {
         title: `Install available updates`,
-        content: `On the Software Update screen, click "Update Now" to install minor updates, or "Upgrade Now" for a full macOS version upgrade. Your Mac may need to restart to complete the installation. Updates typically take 20 to 45 minutes — your Mac will be unavailable during this time, so plan accordingly.`
+        content: `On the Software Update screen, click "Update Now" to install minor updates, or "Upgrade Now" for a full macOS version upgrade. Your Mac may need to restart to complete the installation. Updates usually take 20 to 45 minutes — your Mac will be unavailable during this time, so plan accordingly.`
       },
       {
         title: `Update your App Store apps`,

@@ -13,7 +13,7 @@ To get started, download the Pandora app from the App Store on iPhone or iPad, o
 
 As songs play, use the thumbs up button to tell Pandora you like a track. Use the thumbs down button if you want to skip it and never hear it again on that station. Over time, Pandora learns your preferences and the station gets better at matching your taste.
 
-On the free tier, you can skip a limited number of songs per hour — typically six. If you want unlimited skips and no ads, Pandora Plus costs around $4.99 per month. Pandora Premium, at roughly $9.99 per month, adds on-demand playback where you can pick specific songs like a traditional streaming service.
+On the free tier, you can skip a limited number of songs per hour — usually six. If you want unlimited skips and no ads, Pandora Plus costs around $4.99 per month. Pandora Premium, at roughly $9.99 per month, adds on-demand playback where you can pick specific songs like a traditional streaming service.
 
 You can create multiple stations — one for classic rock, one for country, one for relaxing instrumental music — and switch between them whenever you like. Pandora also has pre-built Genre Radio stations if you want to explore new music without naming a specific artist.
 
@@ -161,7 +161,7 @@ TuneIn also aggregates a large catalog of on-demand podcasts. You can find shows
     slug: `crunchyroll-anime-guide`,
     title: `How to Watch Anime on Crunchyroll`,
     excerpt: `Crunchyroll is the biggest anime streaming service — here's how to start watching, even if you're brand new to anime.`,
-    body: `Crunchyroll is the largest streaming service dedicated entirely to anime — Japanese animated series and films. It carries thousands of titles, from beloved classics like Dragon Ball Z, Naruto, and One Piece to the newest series airing in Japan right now. Crunchyroll typically releases new episodes within hours of their Japanese broadcast, which is why fans call this "simulcast."
+    body: `Crunchyroll is the largest streaming service dedicated entirely to anime — Japanese animated series and films. It carries thousands of titles, from beloved classics like Dragon Ball Z, Naruto, and One Piece to the newest series airing in Japan right now. Crunchyroll usually releases new episodes within hours of their Japanese broadcast, which is why fans call this "simulcast."
 
 If you have never watched anime before, do not let the large catalog overwhelm you. Crunchyroll's home screen highlights popular and highly rated series. And you can browse by genre — Action, Romance, Comedy, Fantasy, Slice of Life — to find something that matches your interests.
 
@@ -430,7 +430,7 @@ To get started, you need a verified account. The VA accepts sign-in through thre
 
 Once logged in, the main features include:
 
-Prescription Refills: You can request refills for most VA prescriptions online. Go to "Pharmacy," then "Refill Prescriptions," check the boxes next to medications you need, and submit. Refills are typically mailed to your home. You can track shipment status in the same section.
+Prescription Refills: You can request refills for most VA prescriptions online. Go to "Pharmacy," then "Refill Prescriptions," check the boxes next to medications you need, and submit. Refills are usually mailed to your home. You can track shipment status in the same section.
 
 Secure Messaging: Use this to send non-urgent messages to your VA care team — ask questions, request referrals, or follow up after an appointment. Expect a response within two to three business days. Secure messaging is not for emergencies.
 
@@ -476,13 +476,13 @@ If you are experiencing a mental health crisis, do not use the secure messaging 
     slug: `tsa-precheck-enrollment`,
     title: `How to Sign Up for TSA PreCheck and Speed Through Security`,
     excerpt: `TSA PreCheck lets you skip long security lines — shoes and laptops stay in your bag. Here's how to apply.`,
-    body: `TSA PreCheck is a U.S. government trusted traveler program run by the Transportation Security Administration. Once you are approved, you get access to dedicated PreCheck lanes at over 200 airports across the country. In those lanes, you do not have to remove your shoes, your laptop, your liquids, your belt, or your light jacket. The lines are typically much shorter and move a lot faster than standard security.
+    body: `TSA PreCheck is a U.S. government trusted traveler program run by the Transportation Security Administration. Once you are approved, you get access to dedicated PreCheck lanes at over 200 airports across the country. In those lanes, you do not have to remove your shoes, your laptop, your liquids, your belt, or your light jacket. The lines are usually much shorter and move a lot faster than standard security.
 
 Membership costs $78 and is valid for five years. That works out to less than $16 per year — a worthwhile investment for anyone who flies more than a few times a year.
 
 To apply, go to tsa.gov/precheck and click "Apply Now." The TSA partners with several enrollment providers, including IDEMIA and Telos. Both are authorized by the government. You will complete a short online application and then schedule an in-person appointment at an enrollment center near you — most airports, many UPS Stores, and AAA locations serve as enrollment centers.
 
-At your appointment, bring a valid government-issued photo ID (such as a U.S. passport or state driver's license) plus a proof of citizenship document (such as a birth certificate or U.S. passport). The appointment takes about 10 minutes. A staff member will take your fingerprints and review your documents. The background check typically takes three to five business days.
+At your appointment, bring a valid government-issued photo ID (such as a U.S. passport or state driver's license) plus a proof of citizenship document (such as a birth certificate or U.S. passport). The appointment takes about 10 minutes. A staff member will take your fingerprints and review your documents. The background check usually takes three to five business days.
 
 When approved, the TSA mails you a Known Traveler Number (KTN). This is a unique number you add to your airline reservations. Every major airline has a field for your KTN in your profile or during booking. Once added, "TSA PRE" will print on your boarding pass. And you will be directed to the PreCheck lane at the airport.
 
@@ -511,7 +511,7 @@ CLEAR is a separate, private service (not government-operated) that uses biometr
       },
       {
         title: `Wait for your Known Traveler Number (KTN)`,
-        content: `After your appointment, the background check typically takes three to five business days. You will receive an email or letter with your Known Traveler Number (KTN) — a 9-digit number. Keep this number somewhere safe. You will use it every time you book a flight.`,
+        content: `After your appointment, the background check usually takes three to five business days. You will receive an email or letter with your Known Traveler Number (KTN) — a 9-digit number. Keep this number somewhere safe. You will use it every time you book a flight.`,
       },
       {
         title: `Add your KTN to your airline accounts and bookings`,
@@ -535,7 +535,7 @@ Before you begin, gather your documents: all W-2 forms from employers, 1099 form
 
 The software walks you through the process step by step, asking you questions and filling in the appropriate forms based on your answers. When you are finished, you review everything and then e-file directly to the IRS — no printing, no mailing, no postage.
 
-If you are owed a refund, choosing Direct Deposit gets your money back faster — typically within 10 to 21 days. You will need your bank's routing number and your account number (found on the bottom of a check).
+If you are owed a refund, choosing Direct Deposit gets your money back faster — usually within 10 to 21 days. You will need your bank's routing number and your account number (found on the bottom of a check).
 
 After filing, track your refund at irs.gov/refunds using the "Where's My Refund?" tool.
 
@@ -566,7 +566,7 @@ IRS Direct File is an even simpler option now available in many states. It is bu
       },
       {
         title: `E-file and set up direct deposit`,
-        content: `After reviewing, click "Submit" or "E-File" to send your return electronically to the IRS. For faster refund delivery, choose Direct Deposit and enter your bank routing number (9 digits, found at the bottom left of a check) and your account number. The IRS typically issues refunds within 10 to 21 days of accepting an e-filed return.`,
+        content: `After reviewing, click "Submit" or "E-File" to send your return electronically to the IRS. For faster refund delivery, choose Direct Deposit and enter your bank routing number (9 digits, found at the bottom left of a check) and your account number. The IRS usually issues refunds within 10 to 21 days of accepting an e-filed return.`,
       },
       {
         title: `Track your refund`,
@@ -855,7 +855,7 @@ FreeTaxUSA lets you import W-2 data from many employers automatically, which sav
 
 Once you have completed all sections, the software shows a summary of your return with your refund amount or amount owed. Review every section carefully before submitting. Pay particular attention to your Social Security number, direct deposit account information, and your prior-year AGI (which the IRS uses to verify your identity on e-filed returns — it is on line 11 of last year's Form 1040).
 
-After e-filing, the IRS typically accepts the return within 24 to 48 hours. FreeTaxUSA sends an email confirming acceptance. From there, track your refund using the IRS "Where's My Refund?" tool at irs.gov/refunds.
+After e-filing, the IRS usually accepts the return within 24 to 48 hours. FreeTaxUSA sends an email confirming acceptance. From there, track your refund using the IRS "Where's My Refund?" tool at irs.gov/refunds.
 
 Download and save a PDF copy of your completed return from FreeTaxUSA — keep it with your financial records. The IRS recommends keeping tax returns for at least three years.`,
     category: `financial-tech`,

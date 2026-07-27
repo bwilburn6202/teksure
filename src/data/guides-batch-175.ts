@@ -79,7 +79,7 @@ export const guidesBatch175: Guide[] = [
     steps: [
       { title: "Decide it is the right time", content: "Strong reasons include a serious diagnosis, recommended surgery, a treatment with major side effects, or a gut feeling that something is not right. Trust that feeling." },
       { title: "Talk to your current doctor first", content: "Try saying, \"I appreciate your care. Before I decide, I would like a second opinion. Could you recommend someone or send my records?\" Most doctors respond kindly." },
-      { title: "Check your insurance coverage", content: "Call the number on the back of your insurance card. Ask, \"Is a second opinion covered for this condition?\" Medicare typically covers second opinions before surgery." },
+      { title: "Check your insurance coverage", content: "Call the number on the back of your insurance card. Ask, \"Is a second opinion covered for this condition?\" Medicare usually covers second opinions before surgery." },
       { title: "Pick a doctor outside your current practice", content: "Choose a specialist at a different hospital or system. Big centers like Mayo Clinic, Cleveland Clinic, and Johns Hopkins offer remote second opinions where you mail in records." },
       { title: "Gather your medical records", content: "Use MyChart or call your doctor's office to request recent test results, imaging, and visit notes. Bring a current medication list and a written symptom summary." },
       { title: "Compare the two opinions calmly", content: "If both doctors agree, move forward with confidence. If they differ, ask each one to explain the reasoning, then pick the path that fits your values and goals." }

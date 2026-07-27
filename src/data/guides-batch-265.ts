@@ -232,7 +232,7 @@ export const guidesBatch265: Guide[] = [
       {
         title: "Get the scope, cost, and timeline in writing before signing",
         content: "Before signing any contract, get a written scope of work. The scope should list every service the firm will provide: sorting sessions, hours per week, packing, hiring movers, estate sale arrangements, donation pickups, cleanout, new home unpacking, and so on. The cost should be either an hourly rate with an estimated total, or a flat project fee. The timeline should have a start date, milestones, and a target completion. Reputable firms write all of this down before they begin. Verbal agreements are a red flag.",
-        warning: "Watch for firms that ask for large upfront payments before any work is done. NASMM members typically bill weekly or biweekly as the work is completed, with a small deposit at most. Never pay more than 25 percent upfront.",
+        warning: "Watch for firms that ask for large upfront payments before any work is done. NASMM members usually bill weekly or biweekly as the work is completed, with a small deposit at most. Never pay more than 25 percent upfront.",
       },
       {
         title: "Make the older adult the boss of the project, not the bystander",

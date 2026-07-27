@@ -561,7 +561,7 @@ iCloud gives every Apple account 5 GB of free storage. Contacts take up very lit
 
 Once this setting is turned on, it runs in the background continuously. Any new contact you add on your iPhone will be automatically synced to iCloud within a few minutes. You do not have to do anything manually.
 
-If you have contacts stored in other accounts — like Gmail or Outlook — those are typically already syncing through those services. This guide focuses specifically on the iCloud contacts that live on your iPhone.`,
+If you have contacts stored in other accounts — like Gmail or Outlook — those are usually already syncing through those services. This guide focuses specifically on the iCloud contacts that live on your iPhone.`,
     steps: [
       {
         title: `Open Settings`,
@@ -601,7 +601,7 @@ If you have contacts stored in other accounts — like Gmail or Outlook — thos
 
 Audible is a subscription service that charges a monthly fee (around $15 per month as of 2026) and includes one credit per month to buy any audiobook. Your purchased audiobooks belong to you and stay in your library even if you cancel your subscription. Audible also includes Audible Plus, a catalog of audiobooks and podcasts available to stream at no extra cost with a membership.
 
-If you have never used Audible before, Amazon typically offers a free trial period (usually 30 days) that includes one or two free audiobook credits. You can use the free trial to get started without any upfront cost. And you can cancel before the trial ends if you decide it is not for you.
+If you have never used Audible before, Amazon usually offers a free trial period (usually 30 days) that includes one or two free audiobook credits. You can use the free trial to get started without any upfront cost. And you can cancel before the trial ends if you decide it is not for you.
 
 You can also access Audible through an existing Amazon account, which most people already have. The app is free to download from the App Store or Google Play. You only pay for the subscription and the books.
 

@@ -66,7 +66,7 @@ Why would you want an eSIM? Several practical reasons: switching carriers withou
 
 iPhone 14 models sold in the US are eSIM-only. They have no physical SIM card slot at all. If you have one of these models, you must use eSIM.
 
-Setting up an eSIM typically involves scanning a QR code your carrier provides, or using an app-based activation flow. The process takes about 5-10 minutes.
+Setting up an eSIM usually involves scanning a QR code your carrier provides, or using an app-based activation flow. The process takes about 5-10 minutes.
 
 One important caveat: not all phone plans support eSIM, and some carriers charge extra for eSIM activation. Check with your carrier before assuming eSIM is available for your plan.`,
     steps: [
@@ -246,7 +246,7 @@ The one thing to do first: create a strong master password that you will remembe
     difficulty: 'Beginner',
     body: `Bluetooth connection problems are one of the most common tech frustrations: a device pairs once and then refuses to reconnect, sound cuts in and out, or the device is just not showing up at all. Most Bluetooth issues are solved by one of a handful of standard fixes — the key is knowing which fix to try first.
 
-Bluetooth technology works over short distances (typically up to 30 feet) using radio waves. Interference from other wireless devices, physical obstacles, and software glitches can all disrupt Bluetooth connections. The solutions generally involve resetting the connection between devices, clearing software conflicts, or resolving interference.
+Bluetooth technology works over short distances (usually up to 30 feet) using radio waves. Interference from other wireless devices, physical obstacles, and software glitches can all disrupt Bluetooth connections. The solutions generally involve resetting the connection between devices, clearing software conflicts, or resolving interference.
 
 The "forget and re-pair" process is the most effective fix for persistent Bluetooth problems. This clears the old, potentially corrupted connection data between the two devices and creates a fresh pairing from scratch. It sounds drastic but is straightforward and usually works.
 
@@ -291,7 +291,7 @@ Before diving into complex fixes, always try the simplest steps first: turn Blue
     difficulty: 'Beginner',
     body: `Streaming video that constantly buffers — pauses to load — is almost always a symptom of insufficient internet speed reaching the streaming device. The fix usually involves improving your Wi-Fi connection, reducing the number of devices using the internet simultaneously, or lowering the streaming quality setting.
 
-Netflix recommends 5 Mbps for HD streaming and 25 Mbps for 4K Ultra HD. Hulu and Disney+ have similar requirements. If your internet plan has enough speed but you still buffer, the problem is typically Wi-Fi signal quality between your router and the streaming device.
+Netflix recommends 5 Mbps for HD streaming and 25 Mbps for 4K Ultra HD. Hulu and Disney+ have similar requirements. If your internet plan has enough speed but you still buffer, the problem is usually Wi-Fi signal quality between your router and the streaming device.
 
 Buffering is worse on devices far from the router, on smart TVs using 2.4 GHz Wi-Fi instead of 5 GHz, when many devices are downloading simultaneously, or when your internet speed is slower than expected (your ISP connection may be underperforming).
 
@@ -337,7 +337,7 @@ The most impactful fix for most households: physically move the router closer to
     difficulty: 'Beginner',
     body: `Your home router is essentially a small computer that manages all the internet traffic in your home. Like any computer, it benefits from occasional restarts. A restart clears temporary memory, resets connections to your ISP, and often resolves issues like slow speeds, devices unable to connect, and dropped internet connections.
 
-There is an important distinction: restarting is different from resetting. Restarting (also called rebooting) powers the router off and back on — your settings and password are preserved. Resetting wipes all settings and returns the router to factory defaults, which is something you typically want to avoid.
+There is an important distinction: restarting is different from resetting. Restarting (also called rebooting) powers the router off and back on — your settings and password are preserved. Resetting wipes all settings and returns the router to factory defaults, which is something you usually want to avoid.
 
 When should you restart your router? When internet seems slow across multiple devices; when specific devices cannot connect to Wi-Fi even though others can; after a power outage or surge; when the router's indicator lights look unusual (wrong colors, blinking rapidly); and as a general monthly maintenance practice.
 
@@ -365,7 +365,7 @@ After restarting, allow 2-3 minutes for all devices to reconnect. Some smart hom
       },
       {
         title: 'Set Up Monthly Scheduled Restarts',
-        content: `Many routers have a scheduled restart feature in their admin settings. Log into your router's admin panel (typically by going to 192.168.1.1 in a browser) and look for a scheduled reboot option. Setting a monthly overnight restart keeps your router running smoothly.`,
+        content: `Many routers have a scheduled restart feature in their admin settings. Log into your router's admin panel (usually by going to 192.168.1.1 in a browser) and look for a scheduled reboot option. Setting a monthly overnight restart keeps your router running smoothly.`,
         tip: 'A simple smart plug with a timer is another approach — schedule it to cut power to the router for 1 minute at 3 AM on the first day of each month, then restore power automatically.',
       },
     ],
@@ -568,7 +568,7 @@ Write your new passwords down and store them somewhere safe — in a drawer, not
 
 This separation is a useful security measure. Any device on your guest network is isolated from your main network. If a visitor's phone happens to have malware, it cannot spread to your home computers through the guest network. And practically, you can share the guest Wi-Fi password freely without worrying about unauthorized access to your devices.
 
-A guest network typically uses a different network name and password from your main network. For example, your main network might be "SmithFamily" and your guest network might be "SmithFamily_Guest" with a simpler, shareable password.
+A guest network usually uses a different network name and password from your main network. For example, your main network might be "SmithFamily" and your guest network might be "SmithFamily_Guest" with a simpler, shareable password.
 
 Most modern routers support guest networks. They are a feature in the router's admin settings. You enable the guest network, give it a name, and set a password. Some routers let you limit the guest network's speed or schedule it to be active only during certain hours.
 
@@ -655,7 +655,7 @@ The keyboard shortcuts are the fastest way to use virtual desktops once you lear
     thumbnailEmoji: '',
     publishedAt: '2026-04-19',
     difficulty: 'Beginner',
-    body: `The "iPhone Storage Is Almost Full" warning means your phone is running low on available storage space — typically less than 1 GB remaining. When iPhone storage is full or nearly full, apps may crash, the camera may refuse to take photos, and the phone can become slow.
+    body: `The "iPhone Storage Is Almost Full" warning means your phone is running low on available storage space — usually less than 1 GB remaining. When iPhone storage is full or nearly full, apps may crash, the camera may refuse to take photos, and the phone can become slow.
 
 The first step is always to see exactly what is using your storage. Go to Settings → General → iPhone Storage. This shows a bar graph of storage usage by category and a list of apps sorted by how much space they use. Photos and videos are almost always the biggest consumer of storage.
 
@@ -859,7 +859,7 @@ Before buying any new hardware, try repositioning your router and switching to 5
       {
         title: 'Switch to 5 GHz Wi-Fi',
         content: 'Most routers broadcast two networks: 2.4 GHz (longer range, more crowded) and 5 GHz (shorter range, much faster and less interference). For devices within 30-40 feet of the router, connect to the 5 GHz network for better speeds. The 5 GHz network usually has "5G" or "5GHz" in its name.',
-        tip: 'Use 2.4 GHz for devices far from the router and 5 GHz for devices nearby. Smart home devices (light bulbs, thermostats) typically only work on 2.4 GHz.',
+        tip: 'Use 2.4 GHz for devices far from the router and 5 GHz for devices nearby. Smart home devices (light bulbs, thermostats) usually only work on 2.4 GHz.',
       },
       {
         title: 'Change the Wi-Fi Channel',

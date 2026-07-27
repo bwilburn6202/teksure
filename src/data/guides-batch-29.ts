@@ -21,7 +21,7 @@ For all Android phones, Google Play services also store battery health informati
 
 Beyond checking health, there are practical steps to slow battery aging: avoid often letting the phone drain to 0%, keep it away from extreme heat (a hot car in summer causes significant battery damage), and avoid keeping it at 100% charge for extended periods. Charging to 80-85% and unplugging early is better for long-term battery health than charging to 100% overnight.
 
-When the battery degrades a lot, most Android phones can have the battery replaced. Manufacturer service centers, Best Buy Geek Squad, and local phone repair shops can typically do it for $30-80 depending on the phone model.`,
+When the battery degrades a lot, most Android phones can have the battery replaced. Manufacturer service centers, Best Buy Geek Squad, and local phone repair shops can usually do it for $30-80 depending on the phone model.`,
     steps: [
       {
         title: 'Check Battery Health on Samsung Galaxy',
@@ -124,7 +124,7 @@ Setup requires nothing — the feature is on by default on compatible iPhones. Y
       {
         title: 'Follow the On-Screen Satellite Positioning Guide',
         content: 'When satellite mode activates, your iPhone shows an on-screen guide with arrows directing you to move your phone (and yourself) to point toward the satellite. Go outdoors if possible — trees, buildings, and mountains reduce signal. Once the phone shows a strong satellite signal, it sends your emergency message.',
-        tip: 'The satellite positioning screen looks like a compass with a target. Hold your phone in landscape mode and slowly rotate until the arrow turns green and shows "Connected." This typically takes 15-30 seconds.',
+        tip: 'The satellite positioning screen looks like a compass with a target. Hold your phone in landscape mode and slowly rotate until the arrow turns green and shows "Connected." This usually takes 15-30 seconds.',
       },
       {
         title: 'Answer the Emergency Questionnaire',
@@ -398,7 +398,7 @@ Romance scams targeting older adults on dating apps have increased a lot — thi
       },
       {
         title: 'Understand Free vs. Paid Features',
-        content: 'Most senior dating apps let you create a profile and view matches for free, but charge for messaging. Monthly subscriptions run $15-40/month depending on the app and subscription length. Longer subscriptions (3 or 6 months) typically reduce the per-month cost. Many apps offer a free trial period — use it to evaluate the app before committing.',
+        content: 'Most senior dating apps let you create a profile and view matches for free, but charge for messaging. Monthly subscriptions run $15-40/month depending on the app and subscription length. Longer subscriptions (3 or 6 months) usually reduce the per-month cost. Many apps offer a free trial period — use it to evaluate the app before committing.',
       },
       {
         title: 'Be Selective and Thoughtful in Communication',
@@ -456,7 +456,7 @@ Starbucks often runs "Happy Hours" visible in the app — promotional times when
       },
       {
         title: 'Check for Offers and Happy Hour',
-        content: 'Tap the "Offers" tab (or the star icon) to see current bonus Star promotions, limited-time deals, and any Happy Hours. Happy Hours typically run for a few hours on specific days and offer buy-one-get-one deals or discounted beverages — these are only available to Rewards members and are announced through the app.',
+        content: 'Tap the "Offers" tab (or the star icon) to see current bonus Star promotions, limited-time deals, and any Happy Hours. Happy Hours usually run for a few hours on specific days and offer buy-one-get-one deals or discounted beverages — these are only available to Rewards members and are announced through the app.',
         tip: `Turn on app notifications to get Happy Hour alerts before they start — they're time-limited and sometimes only a few hours long.`,
       },
     ],
@@ -709,7 +709,7 @@ The right choice depends on how many medications are involved, how important car
 
 The concept is straightforward: after any grocery shopping trip (or purchase from gas stations, pet stores, hardware stores, or dozens of other qualifying store types), open Fetch and scan your receipt. Fetch reads the products, matches them to participating brands, and awards points.
 
-Most brand-name food and household products earn some points. Special "Featured Offers" earn more — typically 500-2,500 points for buying a specific product. Points for a single receipt average around 50-300 for typical shopping, plus extras from featured offers. 3,000 points = a $3 gift card, so regular shoppers might earn $10-15 in gift cards per month.
+Most brand-name food and household products earn some points. Special "Featured Offers" earn more — usually 500-2,500 points for buying a specific product. Points for a single receipt average around 50-300 for typical shopping, plus extras from featured offers. 3,000 points = a $3 gift card, so regular shoppers might earn $10-15 in gift cards per month.
 
 Unlike Ibotta (which requires selecting specific offers before you shop), Fetch works retroactively — just scan after shopping. The receipt can be from today or up to 14 days ago. You can scan receipts from multiple stores from the same day.
 
@@ -737,7 +737,7 @@ Fetch has over 17 million active users and has paid out over $1 billion in rewar
       },
       {
         title: 'Redeem Points for Gift Cards',
-        content: 'Tap the "Rewards" tab to browse available gift cards. Popular options include Amazon, Target, Walmart, Starbucks, and many restaurants. Tap a gift card, enter the amount, and tap "Redeem." The gift card code is delivered to your Fetch inbox within minutes. Minimum redemption is typically 3,000 points ($3 value).',
+        content: 'Tap the "Rewards" tab to browse available gift cards. Popular options include Amazon, Target, Walmart, Starbucks, and many restaurants. Tap a gift card, enter the amount, and tap "Redeem." The gift card code is delivered to your Fetch inbox within minutes. Minimum redemption is usually 3,000 points ($3 value).',
         warning: 'Points expire after 90 days of account inactivity (no receipt scans). Keep the habit of scanning after each shopping trip to keep your account active.',
       },
     ],
@@ -756,7 +756,7 @@ Fetch has over 17 million active users and has paid out over $1 billion in rewar
 
 Common documents that require notarization include powers of attorney, real estate deeds, affidavits, and financial documents. Vehicle title transfers, certain contracts, and some forms needed for foreign documents, called apostilles, also qualify. Not all document types qualify for online notarization in every state.
 
-The process works like this. You upload your document to an RON platform, and complete an identity verification — you'll be asked questions about your history based on public records, similar to credit checks. Then you connect via video call with a commissioned notary who witnesses your electronic signature, and you receive a digitally notarized document. The whole process typically takes 15-30 minutes.
+The process works like this. You upload your document to an RON platform, and complete an identity verification — you'll be asked questions about your history based on public records, similar to credit checks. Then you connect via video call with a commissioned notary who witnesses your electronic signature, and you receive a digitally notarized document. The whole process usually takes 15-30 minutes.
 
 Popular RON platforms include Notarize (now Proof), DocuSign Notary, and NotaryCam. Most charge $25-40 per notarization. Some banks and insurance companies now offer free RON services to their customers — worth checking before paying.
 
@@ -778,7 +778,7 @@ If online notarization isn't available for your document, banks (particularly cr
       },
       {
         title: 'Verify Your Identity',
-        content: 'The RON platform will verify your identity. This typically involves: answering knowledge-based authentication questions (your address history, vehicle ownership, or loan history), uploading a photo of your government-issued ID, and taking a selfie or biometric verification. This process takes 5-10 minutes.',
+        content: 'The RON platform will verify your identity. This usually involves: answering knowledge-based authentication questions (your address history, vehicle ownership, or loan history), uploading a photo of your government-issued ID, and taking a selfie or biometric verification. This process takes 5-10 minutes.',
         warning: 'Identity verification questions may pull from public records and credit history. If you often use credit monitoring services that restrict inquiries, you may have trouble with the knowledge-based questions. In that case, use an in-person notary.',
       },
       {
@@ -799,7 +799,7 @@ If online notarization isn't available for your document, banks (particularly cr
     difficulty: 'Beginner',
     body: `Ibotta is a free app that gives you cash back on groceries, household products, and other purchases. Unlike traditional coupons, Ibotta sends real money to your account — not store credit. When you accumulate $20, you can transfer it to PayPal, Venmo, or get a gift card.
 
-The difference between Ibotta and Fetch Rewards: Ibotta requires you to browse and claim specific offers before you shop, then verify by scanning your receipt or purchasing online. Fetch scans receipts retroactively without pre-selecting. Both have their uses — Ibotta typically offers larger rebates on specific items, while Fetch earns small amounts on almost everything.
+The difference between Ibotta and Fetch Rewards: Ibotta requires you to browse and claim specific offers before you shop, then verify by scanning your receipt or purchasing online. Fetch scans receipts retroactively without pre-selecting. Both have their uses — Ibotta usually offers larger rebates on specific items, while Fetch earns small amounts on almost everything.
 
 Ibotta has over 50 million users and has paid out over $1.8 billion in cash back. It's a well-established app, not a scam.
 
@@ -828,7 +828,7 @@ A typical family can save $20-50/month on groceries with consistent Ibotta use. 
       },
       {
         title: 'Cash Out When You Reach $20',
-        content: `When your Ibotta balance reaches $20, you can cash out. Tap "Redeem" → choose PayPal, Venmo, or a gift card. PayPal and Venmo transfer typically process within 24-48 hours. Gift cards are usually delivered by email within minutes. There's no fee to cash out.`,
+        content: `When your Ibotta balance reaches $20, you can cash out. Tap "Redeem" → choose PayPal, Venmo, or a gift card. PayPal and Venmo transfer usually process within 24-48 hours. Gift cards are usually delivered by email within minutes. There's no fee to cash out.`,
         warning: `Don't buy products just to earn the Ibotta rebate — only claim offers for things you were already planning to buy. Spending $5 on a product to earn a $0.75 rebate doesn't make financial sense.`,
       },
     ],

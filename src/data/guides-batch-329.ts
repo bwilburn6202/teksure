@@ -135,7 +135,7 @@ The caption text stays completely private and is not sent anywhere or saved by d
       },
       {
         title: 'Adjust caption size and appearance',
-        content: 'On both iPhone and Android, you can typically tap a small "Aa" or settings icon on the caption window itself to make the text larger, change the background color for better contrast, or switch to a bold font — helpful for anyone with low vision as well as hearing difficulty.',
+        content: 'On both iPhone and Android, you can usually tap a small "Aa" or settings icon on the caption window itself to make the text larger, change the background color for better contrast, or switch to a bold font — helpful for anyone with low vision as well as hearing difficulty.',
       },
     ],
   },

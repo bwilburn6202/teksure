@@ -19,7 +19,7 @@ The selling process is called a "Clean Out Kit." You order a free bag from Thred
 
 ThredUp takes a commission that varies based on the sale price. You earn a higher percentage on more expensive items. Items that don't sell can be returned to you for a small fee, or ThredUp will donate or recycle them.
 
-For buyers, ThredUp is free to use with no membership required. Shipping is typically $3-$6, and many items ship free with a minimum purchase. All items come with a 14-day return policy.`,
+For buyers, ThredUp is free to use with no membership required. Shipping is usually $3-$6, and many items ship free with a minimum purchase. All items come with a 14-day return policy.`,
     steps: [
       {
         title: 'Browse and buy clothing',
@@ -199,9 +199,9 @@ Prices on StubHub are set by the sellers — so popular events can be a lot high
 
 Every ticket purchased on StubHub comes with a FanProtect Guarantee: if an event is cancelled, you get a full refund. If tickets turn out to be invalid, StubHub will find replacement tickets or provide a refund.
 
-Most tickets are now delivered digitally. When you buy, you typically receive an e-ticket link or a barcode in the StubHub app — no physical mail required. You present your phone at the venue entrance.
+Most tickets are now delivered digitally. When you buy, you usually receive an e-ticket link or a barcode in the StubHub app — no physical mail required. You present your phone at the venue entrance.
 
-StubHub charges a service fee on top of the ticket price — typically 10-15%. This fee is shown before checkout so you can see the total price before committing to a purchase.`,
+StubHub charges a service fee on top of the ticket price — usually 10-15%. This fee is shown before checkout so you can see the total price before committing to a purchase.`,
     steps: [
       {
         title: 'Download the StubHub app',
@@ -245,7 +245,7 @@ Green Deal Score badges mean the price is below average — those seats are a re
 
 SeatGeek also shows a clean, color-coded seat map that displays pricing for every section at once. You can see at a glance which sections are affordable and which are expensive without tapping each listing individually.
 
-Like other ticket platforms, SeatGeek includes service fees. These are typically shown as "all-in" pricing so you see the final total upfront, which many users appreciate.
+Like other ticket platforms, SeatGeek includes service fees. These are usually shown as "all-in" pricing so you see the final total upfront, which many users appreciate.
 
 SeatGeek has its own exclusive deals and is the official ticketing partner for several sports teams and music festivals, which means some tickets are sold at face value with no markup.`,
     steps: [
@@ -528,7 +528,7 @@ The platform is used by both families seeking care and individuals looking to of
       },
       {
         title: 'Run a background check',
-        content: `For caregivers you're seriously considering, purchase a background check through Care.com. These typically cost $5-$10 per check. The background check verifies identity, checks national criminal databases, and may include sex offender registry and motor vehicle records. This step is highly recommended before inviting anyone into your home.`,
+        content: `For caregivers you're seriously considering, purchase a background check through Care.com. These usually cost $5-$10 per check. The background check verifies identity, checks national criminal databases, and may include sex offender registry and motor vehicle records. This step is highly recommended before inviting anyone into your home.`,
         warning: 'Never hire a caregiver for in-home work without running a background check first, regardless of how good their reviews are.',
       },
       {
@@ -559,7 +559,7 @@ Every Wag walker and sitter has passed a background check, completed training, a
 
 Wag is particularly useful for working pet owners who need their dog walked during the day, dog owners who travel and need someone reliable to care for their pet, and seniors who may have difficulty with extended walks but still want their dog exercised daily.
 
-Services are booked and paid through the Wag app. Prices vary by service type and location — a 30-minute walk is typically $20-$30, overnight boarding $35-$65/night, and drop-in visits $18-$25.
+Services are booked and paid through the Wag app. Prices vary by service type and location — a 30-minute walk is usually $20-$30, overnight boarding $35-$65/night, and drop-in visits $18-$25.
 
 Wag is available in most US cities. If your area isn't covered, Rover (rover.com) is a comparable alternative.`,
     steps: [
@@ -858,7 +858,7 @@ Privacy-conscious users should know that Temu collects extensive data through it
       },
       {
         title: 'Handle returns if needed',
-        content: `If an item doesn't match the description, arrives damaged, or doesn't arrive at all, open the Temu app and go to My Orders → the specific order → Return/Refund. Follow the prompts. For most first-time returns per order, Temu provides a free return label. Refunds typically process within 5-14 business days.`,
+        content: `If an item doesn't match the description, arrives damaged, or doesn't arrive at all, open the Temu app and go to My Orders → the specific order → Return/Refund. Follow the prompts. For most first-time returns per order, Temu provides a free return label. Refunds usually process within 5-14 business days.`,
         tip: `Temu's "Purchase Protection" gives you 90 days to dispute an order. For items that are a lot wrong, Temu often approves a refund without requiring you to ship the item back.`,
       },
     ],

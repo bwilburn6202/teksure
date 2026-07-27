@@ -411,7 +411,7 @@ Reviewing your subscriptions every few months is good practice. You may find ite
 
 The good news is that how you charge and use your iPhone greatly affects how quickly the battery degrades. With a few habits, you can keep your battery healthy for a longer period.
 
-One of the most effective tools is built into iOS. Apple introduced a feature called Optimized Battery Charging in iOS 13. And it is turned on by default on most iPhones. This feature uses machine learning to learn your daily charging pattern. If it notices you typically charge overnight, it will charge your iPhone to about 80% quickly, then pause and wait until just before you wake up to finish charging to 100%. This prevents the battery from sitting at 100% charge for hours at a time — which is one of the main causes of battery degradation.
+One of the most effective tools is built into iOS. Apple introduced a feature called Optimized Battery Charging in iOS 13. And it is turned on by default on most iPhones. This feature uses machine learning to learn your daily charging pattern. If it notices you usually charge overnight, it will charge your iPhone to about 80% quickly, then pause and wait until just before you wake up to finish charging to 100%. This prevents the battery from sitting at 100% charge for hours at a time — which is one of the main causes of battery degradation.
 
 Heat is the other major enemy of battery health. Leaving your iPhone in a hot car, direct sunlight, or using it heavily while charging all generate heat that accelerates battery aging. Try to avoid charging your phone on a bed or couch where it cannot dissipate heat.
 
@@ -488,7 +488,7 @@ After two to three years of normal use, most Android phone batteries will hold n
       {
         title: `Reduce background battery drain`,
         content: `Go to Settings > Battery > Battery Usage to see which apps are consuming the most power. Apps that you do not use often but that run in the background can be restricted. On Android, you can usually tap an app in the Battery Usage list and choose "Restrict" to stop it from running when you are not actively using it.`,
-        tip: `Location services, constant sync from email and social media apps, and high screen brightness are typically the biggest everyday battery drains. Reducing screen brightness even slightly has a noticeable impact on how long the battery lasts each day.`,
+        tip: `Location services, constant sync from email and social media apps, and high screen brightness are usually the biggest everyday battery drains. Reducing screen brightness even slightly has a noticeable impact on how long the battery lasts each day.`,
       },
     ],
   },
@@ -507,7 +507,7 @@ After two to three years of normal use, most Android phone batteries will hold n
 
 The PayPal app is available free on both iPhones and Android phones. Once you set it up with your bank account or a debit or credit card, you can send money to almost anyone instantly — as long as they also have a PayPal account. If they do not have one, PayPal will email them an invitation to claim the money by creating a free account.
 
-Sending money to friends and family is free when you use your PayPal balance or a linked bank account. If you use a credit card, PayPal typically charges a small fee (currently around 2.9% plus a fixed fee per transaction). Receiving money from a friend or family member is free. Business payments may have different fee structures.
+Sending money to friends and family is free when you use your PayPal balance or a linked bank account. If you use a credit card, PayPal usually charges a small fee (currently around 2.9% plus a fixed fee per transaction). Receiving money from a friend or family member is free. Business payments may have different fee structures.
 
 One important distinction in the PayPal app: when you send money, you choose between "Friends and Family" and "Goods and Services." Friends and Family transfers have no seller protection and no buyer protection. They are meant for splitting a dinner bill, paying back a friend, or similar personal transactions. Goods and Services transfers include PayPal's buyer protection, which is appropriate when paying an online seller you do not personally know. Using the wrong category can affect whether you can get a refund if something goes wrong.
 
@@ -780,7 +780,7 @@ Getting the most out of Focus Filters takes some initial setup time, but once co
       },
       {
         title: `Find Focus Filters`,
-        content: `Inside the Focus mode settings (for example, inside "Work"), scroll down until you see a section called "Focus Filters." Tap "Add Filter." You will see a list of apps that support Focus Filters on your phone — this typically includes Calendar, Mail, Messages, and Safari.`,
+        content: `Inside the Focus mode settings (for example, inside "Work"), scroll down until you see a section called "Focus Filters." Tap "Add Filter." You will see a list of apps that support Focus Filters on your phone — this usually includes Calendar, Mail, Messages, and Safari.`,
       },
       {
         title: `Set a Mail filter`,
@@ -825,7 +825,7 @@ If you are self-employed or want to create a work profile for personal organizat
 
 Once the work profile is active, you will see two versions of certain app icons — one for personal use and one for the work profile (usually marked with a small briefcase icon). Work apps only have access to work data, and personal apps only have access to personal data. The camera, contacts, and storage are all separate.
 
-A key benefit is the ability to pause the work profile. Swiping down your notification shade or going to Settings > Accounts typically shows a toggle to pause the work profile. When paused, all work apps and notifications go quiet — a very useful boundary for evenings and weekends.`,
+A key benefit is the ability to pause the work profile. Swiping down your notification shade or going to Settings > Accounts usually shows a toggle to pause the work profile. When paused, all work apps and notifications go quiet — a very useful boundary for evenings and weekends.`,
     steps: [
       {
         title: `Check if your employer is setting it up`,
@@ -834,7 +834,7 @@ A key benefit is the ability to pause the work profile. Swiping down your notifi
       },
       {
         title: `Enroll through your work's management app`,
-        content: `For employer-managed setups, you will typically download an app such as "Microsoft Intune Company Portal" from the Google Play Store, or use your company's specific enrollment app. Open it, sign in with your work account, and follow the prompts. The phone will guide you through creating the work profile, which takes a few minutes.`,
+        content: `For employer-managed setups, you will usually download an app such as "Microsoft Intune Company Portal" from the Google Play Store, or use your company's specific enrollment app. Open it, sign in with your work account, and follow the prompts. The phone will guide you through creating the work profile, which takes a few minutes.`,
       },
       {
         title: `Locate your work apps`,

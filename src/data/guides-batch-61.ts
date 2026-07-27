@@ -62,7 +62,7 @@ Important disclaimer: This guide is for informational purposes only. A home bloo
     difficulty: `Beginner`,
     body: `A continuous glucose monitor, or CGM, is a small medical device that tracks your blood sugar levels throughout the day and night — without you having to prick your finger every few hours. It is one of the most significant advances in diabetes management in recent years.
 
-How it works: A tiny sensor is applied to your skin (usually the back of the upper arm or the abdomen). The sensor has a very thin filament that rests beneath the skin and measures glucose in the fluid between your cells. It sends readings to a receiver device or directly to your smartphone, typically every one to five minutes.
+How it works: A tiny sensor is applied to your skin (usually the back of the upper arm or the abdomen). The sensor has a very thin filament that rests beneath the skin and measures glucose in the fluid between your cells. It sends readings to a receiver device or directly to your smartphone, usually every one to five minutes.
 
 The two most widely used CGMs in the United States are FreeStyle Libre (made by Abbott) and Dexcom (made by Dexcom Inc.). Both have smartphone apps that display your current glucose level, a trend arrow showing whether it is rising or falling, and a graph of the past several hours.
 
@@ -70,7 +70,7 @@ The trend arrow is especially important. A number of 140 mg/dL with a straight h
 
 CGMs require a prescription and are covered by Medicare Part B for people with diabetes who meet certain criteria. Many private insurance plans also cover them. Your doctor or endocrinologist sets up the prescription and trains you to apply the sensors correctly.
 
-The sensors typically last 10–14 days before you replace them. They are generally water-resistant but check your specific device's guidelines.
+The sensors usually last 10–14 days before you replace them. They are generally water-resistant but check your specific device's guidelines.
 
 Quick Tip: The Dexcom G7 and FreeStyle Libre 3 both send alerts to your phone if your glucose goes too high or too low — even while you are sleeping.
 
@@ -87,7 +87,7 @@ Important disclaimer: This guide is for informational purposes only. CGM devices
       },
       {
         title: `Apply the sensor to your skin`,
-        content: `Each sensor comes with a one-click applicator. Clean the skin site with an alcohol wipe and let it dry. Press the applicator firmly against your skin and click — the sensor attaches automatically. It stings briefly, if at all. Open the app and scan or pair the new sensor. It typically needs a one- to two-hour warm-up period.`,
+        content: `Each sensor comes with a one-click applicator. Clean the skin site with an alcohol wipe and let it dry. Press the applicator firmly against your skin and click — the sensor attaches automatically. It stings briefly, if at all. Open the app and scan or pair the new sensor. It usually needs a one- to two-hour warm-up period.`,
         warning: `Apply sensors only to the body sites approved for your specific device. Using unapproved sites can give inaccurate readings.`,
       },
       {
@@ -306,7 +306,7 @@ Important disclaimer: This guide is for informational purposes only. Sleep track
 
 There are three main categories of fall detection technology. First, smartwatches like the Apple Watch (Series 4 and newer) and certain Samsung Galaxy Watches have built-in fall detection powered by motion sensors and algorithms. If the watch detects a hard fall, it taps your wrist, sounds an alert, and displays a button to call emergency services. If you do not respond within about 60 seconds, it automatically calls 911 and sends your location to your emergency contacts.
 
-Second, dedicated medical alert devices are wearable pendants or wristbands designed specifically for emergency situations. Traditional systems like LifeAlert, Medical Guardian, Bay Alarm Medical, and MobileHelp connect to a 24/7 monitoring center when you press the button or when a fall is detected. Many newer models include GPS so they work away from home. Monthly fees typically range from $20 to $45.
+Second, dedicated medical alert devices are wearable pendants or wristbands designed specifically for emergency situations. Traditional systems like LifeAlert, Medical Guardian, Bay Alarm Medical, and MobileHelp connect to a 24/7 monitoring center when you press the button or when a fall is detected. Many newer models include GPS so they work away from home. Monthly fees usually range from $20 to $45.
 
 Third, smartphone apps like Samsara Safety and Fall Detection Alert apps use your phone's accelerometer to detect sudden drops. These are free or low-cost but require your phone to be with you at all times, which reduces their reliability compared to a wearable device.
 
@@ -600,7 +600,7 @@ Walmart+ is Walmart's membership program ($98 per year). It includes free delive
 
 Amazon Fresh is Amazon's grocery delivery service, available to Amazon Prime members. It delivers groceries from Amazon Fresh warehouses (which stock common grocery brands) as well as from Whole Foods Market. Delivery is available same-day or next-day in many cities. Prime membership costs $139 per year.
 
-Quick Tip: For your first order on any of these services, look for a first-order discount. All four typically offer $10–$20 off your first delivery.`,
+Quick Tip: For your first order on any of these services, look for a first-order discount. All four usually offer $10–$20 off your first delivery.`,
     steps: [
       {
         title: `Decide which service matches your usual grocery store`,
@@ -667,11 +667,11 @@ Important disclaimer: Online therapy platforms are not appropriate for mental he
       },
       {
         title: `Schedule your first session`,
-        content: `Once matched, tap Schedule a Session and choose a day and time from your therapist's available calendar. Sessions are typically 45–50 minutes. You will receive a reminder notification before the session. At the scheduled time, open the app and tap Join Session to connect.`,
+        content: `Once matched, tap Schedule a Session and choose a day and time from your therapist's available calendar. Sessions are usually 45–50 minutes. You will receive a reminder notification before the session. At the scheduled time, open the app and tap Join Session to connect.`,
       },
       {
         title: `Use messaging between sessions`,
-        content: `Both platforms allow you to message your therapist between live sessions. You can share thoughts, describe difficult moments as they happen, or ask follow-up questions. Therapists typically respond once or twice per day on weekdays. This ongoing communication is one of the main benefits of these platforms compared to traditional weekly office appointments.`,
+        content: `Both platforms allow you to message your therapist between live sessions. You can share thoughts, describe difficult moments as they happen, or ask follow-up questions. Therapists usually respond once or twice per day on weekdays. This ongoing communication is one of the main benefits of these platforms compared to traditional weekly office appointments.`,
       },
     ],
   },
@@ -796,7 +796,7 @@ Important disclaimer: This guide is for informational purposes only. Consumer he
     steps: [
       {
         title: `Measure with your phone camera (no extra equipment needed)`,
-        content: `Search for "heart rate" in the App Store or Google Play. Download a free app like Cardiogram or Heart Rate Monitor. Open the app and follow the instructions — typically you place the tip of your index finger gently over the camera lens on the back of your phone, covering both the lens and the flashlight. Hold very still and breathe normally. The app calculates your heart rate in about 30 seconds.`,
+        content: `Search for "heart rate" in the App Store or Google Play. Download a free app like Cardiogram or Heart Rate Monitor. Open the app and follow the instructions — usually you place the tip of your index finger gently over the camera lens on the back of your phone, covering both the lens and the flashlight. Hold very still and breathe normally. The app calculates your heart rate in about 30 seconds.`,
         tip: `Do not press down hard. A gentle, steady contact works better. Too much pressure reduces the blood flow signal the camera needs to detect.`,
       },
       {

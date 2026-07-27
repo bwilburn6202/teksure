@@ -355,7 +355,7 @@ When Narrator is running, it reads text wherever your mouse cursor or keyboard f
 
 **High Contrast mode — make text sharper and easier to read**
 
-High Contrast mode changes the colors on your screen to a high-contrast color scheme — typically white or bright yellow text on a black background. Many people with low vision find this much easier to read than standard light backgrounds with dark text.
+High Contrast mode changes the colors on your screen to a high-contrast color scheme — usually white or bright yellow text on a black background. Many people with low vision find this much easier to read than standard light backgrounds with dark text.
 
 To turn on High Contrast mode: press the Left Alt + Left Shift + Print Screen keys all at the same time. A dialog box will appear asking if you want to turn on High Contrast — click "Yes." To turn it off, press the same key combination again.
 

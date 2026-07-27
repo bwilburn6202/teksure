@@ -352,7 +352,7 @@ You can apply three ways: online at ssa.gov, by phone at 1-800-772-1213, or in p
 
 The application itself takes about one to two hours to complete. You do not have to finish it in one sitting — the online system saves your progress. Once submitted, the SSA sends your case to your state's Disability Determination Services office, where medical professionals and disability specialists review your records.
 
-Even if you are denied the first time, do not give up. About two-thirds of initial applications are denied, but many people win on appeal — especially with help from a disability attorney, who typically only charges a fee if you win.`,
+Even if you are denied the first time, do not give up. About two-thirds of initial applications are denied, but many people win on appeal — especially with help from a disability attorney, who usually only charges a fee if you win.`,
     steps: [
       {
         title: `Gather your documents before starting`,
@@ -391,7 +391,7 @@ Even if you are denied the first time, do not give up. About two-thirds of initi
     difficulty: `Beginner`,
     body: `The Children's Health Insurance Program — known as CHIP — is a federal and state program that provides health insurance to children in families who earn too much to qualify for Medicaid but cannot afford private insurance. It covers millions of children across the United States.
 
-CHIP typically covers routine doctor visits, immunizations, prescriptions, hospital care, dental care, vision care, and more. Depending on your state and income, you may pay little to nothing for your child's coverage. Some states charge a small monthly premium or a co-pay for certain services, but costs are kept low by design.
+CHIP usually covers routine doctor visits, immunizations, prescriptions, hospital care, dental care, vision care, and more. Depending on your state and income, you may pay little to nothing for your child's coverage. Some states charge a small monthly premium or a co-pay for certain services, but costs are kept low by design.
 
 Every state runs its own CHIP program and sets income guidelines. In most states, children are eligible if the family earns up to 200% of the federal poverty level, and many states cover up to 300%. Some states have expanded CHIP coverage even further.
 
@@ -532,7 +532,7 @@ Because COBRA is expensive, it is worth comparing it against alternatives: a Mar
 
 For most Americans, there are two types of open enrollment to know about: the federal Health Insurance Marketplace and employer-based health coverage.
 
-The Marketplace open enrollment period runs from November 1 to January 15 in most states (some state-run marketplaces have slightly different dates). Plans purchased by December 15 typically start on January 1. Plans purchased between December 16 and January 15 start on February 1. If you miss this window, you will have to wait until the next open enrollment period unless you qualify for a Special Enrollment Period.
+The Marketplace open enrollment period runs from November 1 to January 15 in most states (some state-run marketplaces have slightly different dates). Plans purchased by December 15 usually start on January 1. Plans purchased between December 16 and January 15 start on February 1. If you miss this window, you will have to wait until the next open enrollment period unless you qualify for a Special Enrollment Period.
 
 Employer open enrollment is set by your employer and usually happens in the fall — often in October or November — with coverage starting January 1. Check with your HR department for your specific dates.
 

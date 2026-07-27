@@ -80,7 +80,7 @@ export const guidesBatch39: Guide[] = [
     thumbnailEmoji: '',
     publishedAt: '2026-04-19',
     difficulty: 'Beginner',
-    body: `Email services like Gmail and Outlook typically limit attachments to 25 MB. Scanned documents, medical records, and multi-page PDFs often exceed this size. Compressing a PDF reduces its file size — often by 70–80% — without losing the text content. The result looks essentially the same on screen but is small enough to email. You can do this for free using a website, no software download required.`,
+    body: `Email services like Gmail and Outlook usually limit attachments to 25 MB. Scanned documents, medical records, and multi-page PDFs often exceed this size. Compressing a PDF reduces its file size — often by 70–80% — without losing the text content. The result looks essentially the same on screen but is small enough to email. You can do this for free using a website, no software download required.`,
     steps: [
       {
         title: 'Use Smallpdf.com to compress a PDF online',
@@ -190,7 +190,7 @@ export const guidesBatch39: Guide[] = [
       },
       {
         title: 'Recommended options by budget',
-        content: `Budget ($200–$400): Chromebook from Lenovo or HP — ideal for Google-centric users who browse, email, and video call. Mid-range Windows ($400–$700): HP Pavilion, Lenovo IdeaPad, or Dell Inspiron — reliable, capable, and widely supported. Premium Windows ($700–$1,200): Dell XPS 13, HP Spectre, Lenovo ThinkPad — better screens, build quality, and battery life. MacBook Air M-series ($1,099+): excellent for longevity (typically 6–8 years of useful life) and iPhone integration. For most seniors on a moderate budget, a mid-range Windows laptop from HP, Lenovo, or Dell covers everything they need.`,
+        content: `Budget ($200–$400): Chromebook from Lenovo or HP — ideal for Google-centric users who browse, email, and video call. Mid-range Windows ($400–$700): HP Pavilion, Lenovo IdeaPad, or Dell Inspiron — reliable, capable, and widely supported. Premium Windows ($700–$1,200): Dell XPS 13, HP Spectre, Lenovo ThinkPad — better screens, build quality, and battery life. MacBook Air M-series ($1,099+): excellent for longevity (usually 6–8 years of useful life) and iPhone integration. For most seniors on a moderate budget, a mid-range Windows laptop from HP, Lenovo, or Dell covers everything they need.`,
       },
       {
         title: 'Questions to ask before buying',
@@ -589,7 +589,7 @@ export const guidesBatch39: Guide[] = [
       },
       {
         title: 'How to apply for SSI or SSDI',
-        content: `Apply at any Social Security Administration office, by calling 1-800-772-1213, or online at ssa.gov/disability. The application asks about your medical conditions, work history, and income. SSDI applications typically include a review by a Disability Determination Services office in your state. Processing times average 3–6 months for an initial decision. If denied, you have the right to appeal — about 45% of initially denied claims are approved on appeal. The National Organization of Social Security Claimants' Representatives (nosscr.org) provides free attorney referrals for disability appeals.`,
+        content: `Apply at any Social Security Administration office, by calling 1-800-772-1213, or online at ssa.gov/disability. The application asks about your medical conditions, work history, and income. SSDI applications usually include a review by a Disability Determination Services office in your state. Processing times average 3–6 months for an initial decision. If denied, you have the right to appeal — about 45% of initially denied claims are approved on appeal. The National Organization of Social Security Claimants' Representatives (nosscr.org) provides free attorney referrals for disability appeals.`,
       },
     ],
   },

@@ -28,7 +28,7 @@ export const guidesBatch306: Guide[] = [
       },
       {
         title: "Ask the local shelter for a senior-to-senior fee waiver",
-        content: "Many city and county shelters run a senior-to-senior discount even when the program is not advertised online. Call the shelter and ask whether anyone age 60 or 65 and older receives a reduced adoption fee on a pet age seven or older. The shelter staff will usually say yes and ask for proof of age in the form of a drivers license or a Medicare card. The discount is typically full fee waiver or a fee of 25 dollars to cover the microchip registration.",
+        content: "Many city and county shelters run a senior-to-senior discount even when the program is not advertised online. Call the shelter and ask whether anyone age 60 or 65 and older receives a reduced adoption fee on a pet age seven or older. The shelter staff will usually say yes and ask for proof of age in the form of a drivers license or a Medicare card. The discount is usually full fee waiver or a fee of 25 dollars to cover the microchip registration.",
         warning: "Important: A reduced fee does not mean reduced screening. The shelter still runs a normal adoption interview, asks about housing and other pets, and may call a vet reference.",
       },
       {
@@ -135,7 +135,7 @@ export const guidesBatch306: Guide[] = [
       },
       {
         title: "Add a pet trust to the will or living trust",
-        content: "Contact the estate planning attorney who drafted the existing will. Ask for a pet trust provision under the state Uniform Trust Code or the state-specific statute. The provision should name the pet by name and microchip number, name the caregiver, name the trustee, set the funding amount, and authorize the trustee to disburse funds for vet care, food, grooming, and end-of-life expenses. The cost to add the provision is typically 200 to 500 dollars. The ASPCA and the American Bar Association both publish sample language at aspca.org and americanbar.org.",
+        content: "Contact the estate planning attorney who drafted the existing will. Ask for a pet trust provision under the state Uniform Trust Code or the state-specific statute. The provision should name the pet by name and microchip number, name the caregiver, name the trustee, set the funding amount, and authorize the trustee to disburse funds for vet care, food, grooming, and end-of-life expenses. The cost to add the provision is usually 200 to 500 dollars. The ASPCA and the American Bar Association both publish sample language at aspca.org and americanbar.org.",
         warning: "Important: A simple line in a will saying I leave my dog to my niece is not a pet trust. Without a funded trust, the niece has no legal access to dedicated pet care money, and the pet may end up in probate.",
       },
       {
@@ -213,7 +213,7 @@ export const guidesBatch306: Guide[] = [
       },
       {
         title: "Pursue a service dog through an accredited program",
-        content: "Service dogs trained by accredited programs are matched to the handler over 18 to 36 months and typically cost the handler nothing or a small program fee. Accredited programs include Canine Companions at canine.org, Guide Dogs for the Blind at guidedogs.com, Paws With A Cause at pawswithacause.org, and many regional Help Dogs International member programs at assistancedogsinternational.org. The waitlist is often 12 to 24 months. Avoid programs that promise a service dog in a few weeks for cash.",
+        content: "Service dogs trained by accredited programs are matched to the handler over 18 to 36 months and usually cost the handler nothing or a small program fee. Accredited programs include Canine Companions at canine.org, Guide Dogs for the Blind at guidedogs.com, Paws With A Cause at pawswithacause.org, and many regional Help Dogs International member programs at assistancedogsinternational.org. The waitlist is often 12 to 24 months. Avoid programs that promise a service dog in a few weeks for cash.",
         warning: "Important: A self-trained service dog is legal under the ADA but requires real, documented task training. Renting a vest from an online registry does not make a pet a service dog and creates legal risk if a business challenges the access claim.",
       },
       {

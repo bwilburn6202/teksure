@@ -795,7 +795,7 @@ Before assuming the battery is worn out, however, it is worth checking your sett
       },
       {
         title: 'Consider a battery replacement for older phones',
-        content: "If your phone is 3+ years old and your battery health is below 80%, a battery replacement is the most cost-effective solution before buying a new phone. Apple, Samsung, and most major manufacturers offer battery replacement services. Prices range from $50–$100. After replacement, the phone typically performs like it did when new.",
+        content: "If your phone is 3+ years old and your battery health is below 80%, a battery replacement is the most cost-effective solution before buying a new phone. Apple, Samsung, and most major manufacturers offer battery replacement services. Prices range from $50–$100. After replacement, the phone usually performs like it did when new.",
       },
     ],
   },

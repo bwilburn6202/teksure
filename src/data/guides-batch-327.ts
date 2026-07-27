@@ -188,7 +188,7 @@ You do not need to call Comcast to cancel these. They can be canceled from the X
       },
       {
         title: 'Keep your rate low at contract renewal',
-        content: 'Every 12 or 24 months, your promotional rate ends and your bill jumps $30-$70/month. When that happens, use the "loyalty department" trick: call 1-800-XFINITY (or use the chat), say "I would like to cancel my service." You are transferred to Retention. Ask what promotional rate they can offer to keep you. They typically match a new-customer rate for another 12 months. If they refuse, cancel — you can restart the next day as a "new" customer at the promo rate.',
+        content: 'Every 12 or 24 months, your promotional rate ends and your bill jumps $30-$70/month. When that happens, use the "loyalty department" trick: call 1-800-XFINITY (or use the chat), say "I would like to cancel my service." You are transferred to Retention. Ask what promotional rate they can offer to keep you. They usually match a new-customer rate for another 12 months. If they refuse, cancel — you can restart the next day as a "new" customer at the promo rate.',
       },
     ],
   },

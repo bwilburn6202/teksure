@@ -250,7 +250,7 @@ Android support varies by manufacturer. Google Pixel phones receive 5–7 years 
       },
       {
         title: `Plan your upgrade`,
-        content: `If you need to upgrade, you don't have to buy the newest model. A device from 2 to 3 years ago is often much less expensive and will be fully supported for years. For Windows PCs: check if your computer can upgrade to Windows 11 for free (Microsoft's PC Health Check app will tell you). Many Windows 10 computers can run Windows 11 at no cost — it's just an update. For phones: a phone from 2 to 3 years ago typically costs $200 to $400 and will receive updates for 4 to 6 more years.`,
+        content: `If you need to upgrade, you don't have to buy the newest model. A device from 2 to 3 years ago is often much less expensive and will be fully supported for years. For Windows PCs: check if your computer can upgrade to Windows 11 for free (Microsoft's PC Health Check app will tell you). Many Windows 10 computers can run Windows 11 at no cost — it's just an update. For phones: a phone from 2 to 3 years ago usually costs $200 to $400 and will receive updates for 4 to 6 more years.`,
       },
     ],
     tip: `Quick Tip — Set a calendar reminder once a year to check your device's support status. Companies announce end-of-support dates months in advance. So you have time to plan rather than scrambling at the last minute.`,
@@ -437,7 +437,7 @@ This isn't just for kids. Screen Time is increasingly used by adults who want to
 
 When you hit your daily limit on an app, the app dims and shows a message saying "Time Limit Reached." You can choose to allow one more minute, allow the full day, or put the phone down. The gentle friction is often enough to break the automatic habit of opening an app without thinking.
 
-Screen Time also includes a Downtime feature, which blocks all apps except ones you specifically allow during hours you set — typically overnight or during dinner. And Communication Limits let you restrict who can call or message during certain hours.
+Screen Time also includes a Downtime feature, which blocks all apps except ones you specifically allow during hours you set — usually overnight or during dinner. And Communication Limits let you restrict who can call or message during certain hours.
 
 All of these settings can be protected with a Screen Time passcode that's different from your main iPhone passcode. So you don't accidentally override your own limits in a weak moment.`,
     steps: [
@@ -562,7 +562,7 @@ If your printer doesn't support AirPrint, you may be able to use your printer ma
 
 Think of digital storage like containers. The smallest common container is a megabyte (MB). A slightly bigger container is a gigabyte (GB). A much larger container is a terabyte (TB). They nest: about 1,000 MB fits inside 1 GB, and about 1,000 GB fits inside 1 TB.
 
-A single photo from a modern smartphone is typically 3 to 8 MB. A music album is roughly 100 to 200 MB. A movie download in HD is about 2 to 6 GB. So when your phone has 128 GB of storage, it can hold roughly 15,000 to 40,000 photos — or a mix of apps, photos, videos, and music that adds up to 128 GB total.
+A single photo from a modern smartphone is usually 3 to 8 MB. A music album is roughly 100 to 200 MB. A movie download in HD is about 2 to 6 GB. So when your phone has 128 GB of storage, it can hold roughly 15,000 to 40,000 photos — or a mix of apps, photos, videos, and music that adds up to 128 GB total.
 
 Internet speed is measured in megabits per second (Mbps) or gigabits per second (Gbps). Bits are different from bytes. There are 8 bits in 1 byte. A 100 Mbps internet connection can download about 12 megabytes of data per second. This is fast enough for streaming video in high quality, video calls, and everyday browsing for most households.
 
@@ -703,7 +703,7 @@ Run these two scans back-to-back on a regular schedule — perhaps once a month 
       },
       {
         title: `Run a Malwarebytes scan`,
-        content: `After installation, open Malwarebytes. Click "Scan" on the main screen. The scan runs automatically, checking for malware, adware, spyware, potentially unwanted programs, and other threats. It typically takes 5 to 20 minutes. When it finishes, it shows a list of any threats found.`,
+        content: `After installation, open Malwarebytes. Click "Scan" on the main screen. The scan runs automatically, checking for malware, adware, spyware, potentially unwanted programs, and other threats. It usually takes 5 to 20 minutes. When it finishes, it shows a list of any threats found.`,
       },
       {
         title: `Remove any threats found`,

@@ -351,7 +351,7 @@ This is what your provider — the doctor, hospital, or lab — originally charg
 This is the amount Medicare has agreed is a reasonable payment for this service. Both Medicare and you base your shares on this number — not the billed amount.
 
 **3. Medicare paid**
-This is what Medicare actually sent to your provider. Under Original Medicare Part B, Medicare typically pays 80% of the Medicare-approved amount (after your deductible has been met).
+This is what Medicare actually sent to your provider. Under Original Medicare Part B, Medicare usually pays 80% of the Medicare-approved amount (after your deductible has been met).
 
 **4. You may be billed**
 This is your share — usually the remaining 20% of the Medicare-approved amount. You may also see your Part A or Part B deductible listed here if it applies to this claim. This is the amount your provider is allowed to charge you.
@@ -467,7 +467,7 @@ This guide walks you through how to sign up, what to expect, and why this servic
 
 **What Informed Delivery shows you**
 
-When you sign up for Informed Delivery, you receive a daily email (or app notification) every morning — typically between 7 AM and 9 AM — that includes:
+When you sign up for Informed Delivery, you receive a daily email (or app notification) every morning — usually between 7 AM and 9 AM — that includes:
 
 - **Grayscale photos of letter-sized mail and flat envelopes.** You can see the sender's name and address on each piece before it arrives. This lets you know whether something important is coming or if you can expect an ordinary day.
 - **Package delivery notifications with tracking.** Any packages scheduled for delivery that day are listed with their expected delivery window and a tracking link. You can click the link to see the full tracking history.
@@ -504,7 +504,7 @@ USPS requires identity verification to make sure that only the actual resident a
 USPS may verify your identity in one of two ways:
 
 - **Online verification:** USPS may ask you a few multiple-choice questions based on public records (for example, confirming a previous address or a vehicle you have owned). Answer the questions and click "Verify."
-- **Mail verification:** If online verification does not complete, USPS will mail a verification letter to your address with a code. When the letter arrives (typically 3–7 business days), go back to USPS.com, sign in, and enter the code. After you enter the code, your account is activated.
+- **Mail verification:** If online verification does not complete, USPS will mail a verification letter to your address with a code. When the letter arrives (usually 3–7 business days), go back to USPS.com, sign in, and enter the code. After you enter the code, your account is activated.
 
 **Step 4 — Set up your notification preferences**
 

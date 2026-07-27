@@ -72,7 +72,7 @@ One feature that stands out is Greg's "care journal." Every time you water, fert
       },
       {
         title: `Add plants to your collection`,
-        content: `Tap the plant icon to add your first plant. You can search by name, browse popular species, or snap a photo for identification. Greg will show you a profile for that plant including how much light it prefers, whether it is pet-safe, and how often it typically needs water. Confirm the details and the plant is added to your home screen dashboard.`,
+        content: `Tap the plant icon to add your first plant. You can search by name, browse popular species, or snap a photo for identification. Greg will show you a profile for that plant including how much light it prefers, whether it is pet-safe, and how often it usually needs water. Confirm the details and the plant is added to your home screen dashboard.`,
       },
       {
         title: `Answer Greg's questions about your home`,
@@ -410,7 +410,7 @@ Unlike a general weather app that shows you a forecast, MyRadar shows you what i
       },
       {
         title: `Read the radar colors`,
-        content: `On radar maps, colors show precipitation intensity. Green means light rain or drizzle. Yellow and orange mean moderate to heavy rain. Red means very heavy rain or large hail. Purple typically shows the heaviest precipitation or possible hail. Blue and teal shades show snow or mixed precipitation. When you see red or purple on the map heading toward your location, that is a sign of a significant storm.`,
+        content: `On radar maps, colors show precipitation intensity. Green means light rain or drizzle. Yellow and orange mean moderate to heavy rain. Red means very heavy rain or large hail. Purple usually shows the heaviest precipitation or possible hail. Blue and teal shades show snow or mixed precipitation. When you see red or purple on the map heading toward your location, that is a sign of a significant storm.`,
       },
       {
         title: `Animate the radar to see storm movement`,
@@ -523,7 +523,7 @@ The best free resources for checking AQI are AirNow.gov (the official EPA air qu
     difficulty: `Beginner`,
     body: `If you have seasonal allergies, you already know that some days are far worse than others. What you may not know is that pollen levels are actually measured and forecast daily — the same way weather is forecast — and that information is freely available on your smartphone. Knowing the pollen count for your specific area before you leave the house can help you decide when to take antihistamines, whether to keep windows closed, and whether to reschedule outdoor activities.
 
-Pollen counts are measured in grains per cubic meter of air. Different allergens are tracked separately: tree pollen is typically high in spring, grass pollen peaks in late spring and early summer, and weed pollen (including ragweed, one of the most common allergy triggers in the US) is highest in late summer and fall. Mold spores are also tracked and tend to spike after wet weather and during fall when leaves decompose.
+Pollen counts are measured in grains per cubic meter of air. Different allergens are tracked separately: tree pollen is usually high in spring, grass pollen peaks in late spring and early summer, and weed pollen (including ragweed, one of the most common allergy triggers in the US) is highest in late summer and fall. Mold spores are also tracked and tend to spike after wet weather and during fall when leaves decompose.
 
 The most widely used free apps for pollen tracking are Pollen.com, IQVIA's Pollen Allergy Tracker (formerly Pollen.com), the AAAAI (American Academy of Allergy, Asthma & Immunology) pollen count page at pollen.aaaai.org, and the WebMD Allergy app. Many weather apps including The Weather Channel and Weather Underground also include pollen data in their daily forecasts.
 
@@ -747,7 +747,7 @@ One feature that sets Komoot apart is its offline navigation. Once you have down
     steps: [
       {
         title: `Download Komoot and choose your first region`,
-        content: `Search for "Komoot" in the App Store or Google Play and install the free app. Create a free account with your email. When prompted to download a map, choose the region where you live or plan to ride and hike. You get one region for free. The map download includes detailed topographic data, trail information, and surface types for every route in that area. Download it over Wi-Fi — regional maps are typically 200–600MB.`,
+        content: `Search for "Komoot" in the App Store or Google Play and install the free app. Create a free account with your email. When prompted to download a map, choose the region where you live or plan to ride and hike. You get one region for free. The map download includes detailed topographic data, trail information, and surface types for every route in that area. Download it over Wi-Fi — regional maps are usually 200–600MB.`,
       },
       {
         title: `Plan a route using the route planner`,
@@ -840,7 +840,7 @@ Beyond individual data, Garmin Connect includes a social feature called Garmin C
       {
         title: `Pair your Garmin watch to the app`,
         content: `Make sure Bluetooth is turned on on your phone (go to Settings > Bluetooth and confirm it is toggled on). On your Garmin watch, navigate to Settings > Phone > Pair Phone. The exact menu path varies by watch model — consult your watch's setup card or the Garmin support page for your specific model. In Garmin Connect, tap the device icon or go to More > Garmin Devices > Add Device and follow the pairing instructions. The process takes about two minutes.`,
-        tip: `Quick Tip: If pairing fails, restart both your phone and your watch and try again. Make sure no other device is actively connected to the watch via Bluetooth — Garmin watches typically connect to one phone at a time.`,
+        tip: `Quick Tip: If pairing fails, restart both your phone and your watch and try again. Make sure no other device is actively connected to the watch via Bluetooth — Garmin watches usually connect to one phone at a time.`,
       },
       {
         title: `Explore your daily health stats`,

@@ -196,7 +196,7 @@ This guide covers the most valuable tech-related benefits available to AARP memb
 
 **Important note:** AARP's specific discount partnerships change periodically. Always verify current availability and pricing at aarp.org/benefits before relying on any specific discount. The categories below reflect what has been consistently available — specific partner names and amounts may vary.
 
-**AARP is free to try:** New members can typically get a free trial membership. If you are not already a member and want to check the current benefits before paying, visit aarp.org for current trial offers.
+**AARP is free to try:** New members can usually get a free trial membership. If you are not already a member and want to check the current benefits before paying, visit aarp.org for current trial offers.
 
 **AARP Fraud Watch Network (free to everyone)**
 
@@ -211,7 +211,7 @@ You do not need to be an AARP member to use the Fraud Watch Network at aarp.org/
       },
       {
         title: 'Look for discounted phone plans',
-        content: 'AARP has historically partnered with wireless carriers to offer members discounted phone plans. As of 2026, check aarp.org/benefits under "Phones and Wireless" for current partner offers. Consumer Cellular, in particular, has had a long partnership with AARP offering member discounts on monthly plans. Discounts typically range from 5% to 20% off regular plan pricing.',
+        content: 'AARP has historically partnered with wireless carriers to offer members discounted phone plans. As of 2026, check aarp.org/benefits under "Phones and Wireless" for current partner offers. Consumer Cellular, in particular, has had a long partnership with AARP offering member discounts on monthly plans. Discounts usually range from 5% to 20% off regular plan pricing.',
         tip: 'Quick Tip: If you are paying more than $40 per month for a phone plan and only make calls, send texts, and do light internet browsing, you may be a lot overpaying. AARP-partnered plans targeting seniors often offer lower-data plans at reduced prices.',
       },
       {

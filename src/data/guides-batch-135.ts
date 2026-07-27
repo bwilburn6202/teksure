@@ -272,7 +272,7 @@ See it in action: YouTube → "Gmail Manage Subscriptions 2026 tutorial" — Goo
       },
       {
         title: 'Block senders that ignore unsubscribes',
-        content: 'A small number of senders — typically scammy promotional ones — ignore unsubscribe requests and keep emailing. After about two weeks, if a sender you unsubscribed from is still hitting your inbox, open one of their emails. Click the three dots in the top right of the message and pick "Block [sender]." From then on, every email from that address goes to Trash automatically. This is your nuclear option.',
+        content: 'A small number of senders — usually scammy promotional ones — ignore unsubscribe requests and keep emailing. After about two weeks, if a sender you unsubscribed from is still hitting your inbox, open one of their emails. Click the three dots in the top right of the message and pick "Block [sender]." From then on, every email from that address goes to Trash automatically. This is your nuclear option.',
         tip: 'Quick Tip: For repeat scam senders, instead of Block, click "Report spam" — that helps Google\'s filters protect other users.',
       },
       {
@@ -444,7 +444,7 @@ Watch a comparison: YouTube → "best live TV streaming for seniors 2026 Consume
       },
       {
         title: 'Watch out for the promo price trap',
-        content: 'YouTube TV and Hulu Live both sometimes run "$20 off your first 3 months" promos. The price reverts after the promo. Set a calendar reminder for the day the price goes back up so you are not surprised. Some services raise prices once a year too — typically in spring. Check your bill once a month for the first six months after switching to confirm the math still works.',
+        content: 'YouTube TV and Hulu Live both sometimes run "$20 off your first 3 months" promos. The price reverts after the promo. Set a calendar reminder for the day the price goes back up so you are not surprised. Some services raise prices once a year too — usually in spring. Check your bill once a month for the first six months after switching to confirm the math still works.',
       },
       {
         title: 'Total cost — a real example',

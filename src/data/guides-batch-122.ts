@@ -185,7 +185,7 @@ The Apple Watch includes fall detection, crash detection, and an emergency SOS f
     steps: [
       {
         title: 'Decide between home-only and GPS-enabled',
-        content: 'Home-only systems use a base station in the home. They work within range of your home (typically 300-600 feet). GPS systems work anywhere you go — the device connects through cellular networks. If the user goes out often, GPS is worth the extra cost (usually $10-$20/month more).',
+        content: 'Home-only systems use a base station in the home. They work within range of your home (usually 300-600 feet). GPS systems work anywhere you go — the device connects through cellular networks. If the user goes out often, GPS is worth the extra cost (usually $10-$20/month more).',
       },
       {
         title: 'Look for fall detection',
@@ -193,7 +193,7 @@ The Apple Watch includes fall detection, crash detection, and an emergency SOS f
       },
       {
         title: 'Compare monthly costs and contract terms',
-        content: 'Monthly fees typically range from $20 to $50. Some companies require a 1-3 year contract with an early termination fee. Others are month-to-month. Life Alert is known for long contracts — alternatives like Bay Alarm Medical and Medical Guardian offer more flexibility.',
+        content: 'Monthly fees usually range from $20 to $50. Some companies require a 1-3 year contract with an early termination fee. Others are month-to-month. Life Alert is known for long contracts — alternatives like Bay Alarm Medical and Medical Guardian offer more flexibility.',
         warning: 'Read the cancellation policy carefully before signing anything. Some contracts charge a significant fee to cancel early.',
       },
       {
@@ -272,7 +272,7 @@ The most important factors for seniors are: screen size (bigger is usually bette
     difficulty: 'Intermediate',
     body: `Your router is the device that takes the internet from your modem (the box your internet company provides) and wirelessly spreads it throughout your home. If your WiFi is slow in certain rooms or cuts out often, the router is often the cause.
 
-Most internet companies provide a combined modem-router unit. These work adequately but are often older models that may not give you the best signal throughout your home. Buying your own router (which connects to your modem or modem-router) typically improves speed and range.
+Most internet companies provide a combined modem-router unit. These work adequately but are often older models that may not give you the best signal throughout your home. Buying your own router (which connects to your modem or modem-router) usually improves speed and range.
 
 **For a standard house under 2,000 square feet:**
 The TP-Link Archer AX55 or AX73 (WiFi 6 routers) cover a typical home well and cost $70-$130. Setup involves plugging it in and following a mobile app. They are reliable, well-reviewed, and require almost no maintenance.
@@ -282,7 +282,7 @@ A mesh WiFi system uses multiple small devices placed throughout your home to gi
 
 **What to look for:** WiFi 6 compatibility (faster and more stable), coverage area in square footage, number of devices supported simultaneously, and ease of setup (app-based setup is much easier than web-based setup).
 
-You do not need to pay your internet company a monthly fee to "rent" their router. Buying your own typically pays for itself in 12-18 months.
+You do not need to pay your internet company a monthly fee to "rent" their router. Buying your own usually pays for itself in 12-18 months.
 
 (Source: CNET, cnet.com/tech/services-and-software/best-wifi-router)`,
     steps: [
@@ -395,7 +395,7 @@ Galaxy Watch 6 (~$270-$330) works best with Samsung Galaxy phones. It offers hea
       },
       {
         title: 'Consider battery life for your lifestyle',
-        content: 'Apple Watch typically needs charging every night (like a phone). Fitbit lasts 4-6 days on a charge. If remembering to charge daily is a concern, Fitbit\'s longer battery life is an advantage. Some medical alert devices (separate from smartwatches) are designed to be charged once a week.',
+        content: 'Apple Watch usually needs charging every night (like a phone). Fitbit lasts 4-6 days on a charge. If remembering to charge daily is a concern, Fitbit\'s longer battery life is an advantage. Some medical alert devices (separate from smartwatches) are designed to be charged once a week.',
         tip: 'Quick Tip: Many people charge their Apple Watch on the nightstand while sleeping. It is usually at 100% by morning. And you wear it all day.',
       },
       {
@@ -513,7 +513,7 @@ The Sony WH-1000XM5 or XM4 are considered the best overall noise-canceling headp
     publishedAt: '2026-05-03',
     lastVerifiedAt: '2026-05-03',
     difficulty: 'Beginner',
-    body: `Internet access is essential for staying connected with family, managing health care, accessing government benefits, and handling banking. But the cost — typically $50-$100/month for cable internet — puts it out of reach for many seniors on fixed incomes.
+    body: `Internet access is essential for staying connected with family, managing health care, accessing government benefits, and handling banking. But the cost — usually $50-$100/month for cable internet — puts it out of reach for many seniors on fixed incomes.
 
 The good news: multiple programs exist to reduce or eliminate the cost of home internet for qualifying seniors.
 
@@ -788,7 +788,7 @@ The Blink Outdoor 4 camera (~$80 per camera) is battery-powered (no wiring requi
 
 The Arlo Essential Outdoor 2K (~$100-$130 per camera) offers excellent video quality and has a 3-month free cloud storage trial. Monthly subscription is $3-$5/camera after that.
 
-**Important considerations:** Cameras require WiFi. Video storage (saving recordings to the cloud) typically requires a monthly subscription of $3-$10/month. Check whether your camera's WiFi range will reach where you want to place it.
+**Important considerations:** Cameras require WiFi. Video storage (saving recordings to the cloud) usually requires a monthly subscription of $3-$10/month. Check whether your camera's WiFi range will reach where you want to place it.
 
 (Source: CNET, cnet.com/home/security/best-home-security-cameras)`,
     steps: [
@@ -803,7 +803,7 @@ The Arlo Essential Outdoor 2K (~$100-$130 per camera) offers excellent video qua
       {
         title: 'Install the Ring Video Doorbell',
         content: 'Ring Video Doorbell wired models replace your existing doorbell button. Wireless models can be placed anywhere (including mounting to the doorframe) and run on a rechargeable battery. Follow the Ring app setup instructions — the app walks you through every step with clear pictures. Ring ships a full installation kit including screwdriver.',
-        tip: 'Quick Tip: If drilling or wiring is involved, your local hardware store, Best Buy\'s Geek Squad, or a local handyman service can typically install a doorbell camera for $50-$100.',
+        tip: 'Quick Tip: If drilling or wiring is involved, your local hardware store, Best Buy\'s Geek Squad, or a local handyman service can usually install a doorbell camera for $50-$100.',
       },
       {
         title: 'Configure motion alerts',

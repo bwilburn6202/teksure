@@ -375,7 +375,7 @@ To set up:
    • iCloud Storage Sharing — share a 200GB or 2TB iCloud plan across the family for ~$10/month. Covers backups for everyone.
    • Location Sharing — know where your parent is in the Find My app (more on that in Step 7).
    • Screen Time — you can actually help configure their phone's parental-style controls remotely.
-   • Ask to Buy — not typically useful for parents, but available.
+   • Ask to Buy — not usually useful for parents, but available.
 
 Family Sharing is the foundation of remote iPhone caregiving. Set it up first.
 

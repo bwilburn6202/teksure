@@ -463,7 +463,7 @@ Google has photographed over 220 countries and territories using special cameras
 
 Street View is available on the Google Maps website on a computer and inside the Google Maps app on your phone. It is completely free to use and requires no account or sign-in.
 
-One thing to know: Street View is not a live feed. You are looking at photographs taken in the past, typically within the last few years. If a building has been demolished or a street has changed a lot, Street View may not reflect the current state.`,
+One thing to know: Street View is not a live feed. You are looking at photographs taken in the past, usually within the last few years. If a building has been demolished or a street has changed a lot, Street View may not reflect the current state.`,
     steps: [
       {
         title: `Open Google Maps`,
@@ -503,7 +503,7 @@ One thing to know: Street View is not a live feed. You are looking at photograph
 
 Selling on eBay is not complicated. But it does take a bit of time to do well. The most important factors in making a sale are a clear title, good photos, an accurate description, and a fair price. When buyers search eBay, your listing needs to stand out.
 
-eBay charges a small fee when your item sells — typically around 12 to 15 percent of the final sale price for most categories. There are usually no fees to list an item (eBay gives you a set number of free listings per month). You get paid via PayPal or direct bank transfer once the buyer pays.
+eBay charges a small fee when your item sells — usually around 12 to 15 percent of the final sale price for most categories. There are usually no fees to list an item (eBay gives you a set number of free listings per month). You get paid via PayPal or direct bank transfer once the buyer pays.
 
 One thing that makes eBay different from local selling apps like Facebook Marketplace is that buyers come from all over the country (or world). This means you need to package and ship your item after it sells. eBay provides discounted shipping labels through USPS, FedEx, and UPS, which you can print at home.
 

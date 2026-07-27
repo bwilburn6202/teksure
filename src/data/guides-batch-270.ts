@@ -203,7 +203,7 @@ export const guidesBatch270: Guide[] = [
       },
       {
         title: "Calculate the right number of batteries",
-        content: "Multiply your total expected travel time (gate to gate, including layovers and possible delays) by 1.5. For most domestic round trips, that is 12 to 14 hours of battery. Each POC battery typically gives 4 to 6 hours at pulse-dose setting 2. So you usually need three batteries fully charged at departure and a way to recharge during a long layover (many airports have charging stations near accessible gates). If your rental does not come with enough batteries, call back and add more — they ship free.",
+        content: "Multiply your total expected travel time (gate to gate, including layovers and possible delays) by 1.5. For most domestic round trips, that is 12 to 14 hours of battery. Each POC battery usually gives 4 to 6 hours at pulse-dose setting 2. So you usually need three batteries fully charged at departure and a way to recharge during a long layover (many airports have charging stations near accessible gates). If your rental does not come with enough batteries, call back and add more — they ship free.",
         tip: "Quick Tip: Bring a wall charger and an in-car charger in your carry-on. Power outlets in airports are not reliable, but most airline seats now have AC power.",
       },
       {

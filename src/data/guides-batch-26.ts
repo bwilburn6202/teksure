@@ -529,7 +529,7 @@ Like the iPhone subscription audit, reviewing your Google Play subscriptions is 
 
 Canceling a Google Play subscription is immediate and simple. You retain access to the subscription's features until the current billing period ends. And you are not charged again after cancellation.
 
-Keep in mind that subscriptions you signed up for directly through a company's website — Netflix, Spotify, Disney+ if you signed up on their site — are not managed in Google Play. Those must be canceled through each company's website. The Google Play subscriptions page only shows subscriptions you signed up for through the Google Play billing system (typically when you signed up inside an app on your Android phone).
+Keep in mind that subscriptions you signed up for directly through a company's website — Netflix, Spotify, Disney+ if you signed up on their site — are not managed in Google Play. Those must be canceled through each company's website. The Google Play subscriptions page only shows subscriptions you signed up for through the Google Play billing system (usually when you signed up inside an app on your Android phone).
 
 To see a complete picture of all your subscriptions, check both Google Play and your credit card or bank statement. Services like Rocket Money or Trim can help identify recurring charges from all sources.`,
     steps: [
@@ -722,7 +722,7 @@ If you signed up for Prime and no longer feel you are getting your money's worth
 
 When you cancel Prime, you right away lose access to Prime Video, Prime Music, Prime Reading, and the free 2-day shipping benefit. You can still shop on Amazon but shipping will take longer (or cost extra) for items that are not eligible for free standard shipping.
 
-If you cancel an annual Prime membership before the year is up, Amazon may issue a prorated refund for the unused months — but only if you have not used any Prime benefits since your last payment. If you have used free shipping or watched Prime Video, typically no refund is available.
+If you cancel an annual Prime membership before the year is up, Amazon may issue a prorated refund for the unused months — but only if you have not used any Prime benefits since your last payment. If you have used free shipping or watched Prime Video, usually no refund is available.
 
 A middle option: if you only use Prime for shipping and do not watch Prime Video or use other services, consider whether you actually use Prime enough to justify the cost. People who order from Amazon fewer than 3-4 times per month may save money without Prime by paying individual shipping fees.
 
@@ -858,7 +858,7 @@ Nexus and Pixel phones also have a crisis location sharing feature that sends yo
 
 Medigap is sold by private insurance companies but is highly regulated by the federal government. Plans are standardized and labeled with letters (Plan A, Plan B, Plan C, Plan D, Plan F, Plan G, Plan K, Plan L, Plan M, Plan N). All companies selling Plan G must offer the exact same Plan G benefits. You are only shopping for the best price, not for different coverage.
 
-Medigap is separate from Medicare Advantage. Medigap works alongside Original Medicare. You keep your Medicare card and use any doctor or hospital in the US that accepts Medicare. Medicare Advantage plans replace Original Medicare and typically limit you to a network of providers. These are fundamentally different approaches.
+Medigap is separate from Medicare Advantage. Medigap works alongside Original Medicare. You keep your Medicare card and use any doctor or hospital in the US that accepts Medicare. Medicare Advantage plans replace Original Medicare and usually limit you to a network of providers. These are fundamentally different approaches.
 
 **Plan G** is currently the most popular Medigap plan for new Medicare enrollees (since Plan F was discontinued for those who became eligible after 2020). Plan G covers: Part A deductible and coinsurance, Part B coinsurance (the 20% Medicare does not pay), skilled nursing facility coinsurance, and foreign travel emergencies. You only pay the Part B annual deductible yourself.
 
@@ -980,7 +980,7 @@ Customer service is available by phone (888-345-5509) Monday-Friday 8 AM - 9 PM 
       },
       {
         title: 'Transfer Your Phone Number',
-        content: `During signup, choose "Keep my current number." Provide your current carrier's account number and PIN/password (call your current carrier if you do not know these). Consumer Cellular handles the transfer. It typically takes 4-6 hours. Do not cancel your old plan until the transfer is confirmed complete.`,
+        content: `During signup, choose "Keep my current number." Provide your current carrier's account number and PIN/password (call your current carrier if you do not know these). Consumer Cellular handles the transfer. It usually takes 4-6 hours. Do not cancel your old plan until the transfer is confirmed complete.`,
         warning: 'Keep your old phone active and do not cancel service until Consumer Cellular confirms your number has been fully transferred. Canceling early can permanently lose your number.',
       },
     ],

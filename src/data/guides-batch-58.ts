@@ -68,7 +68,7 @@ After pairing, the Galaxy Wearable app (free on the Google Play Store) lets you 
 
 Galaxy Buds models vary slightly — Galaxy Buds2, Buds2 Pro, Buds3, and Buds3 Pro all have somewhat different features — but the setup process is the same for all of them. The Galaxy Wearable app will detect which model you have and show you the settings available for that specific model.
 
-A fully charged set of Galaxy Buds typically lasts 5 to 7 hours on one charge, with the case providing additional charges. The case charges via USB-C and some models support wireless charging.`,
+A fully charged set of Galaxy Buds usually lasts 5 to 7 hours on one charge, with the case providing additional charges. The case charges via USB-C and some models support wireless charging.`,
     steps: [
       {
         title: `Put the buds in pairing mode`,
@@ -744,7 +744,7 @@ Most smart plugs require a 2.4 GHz Wi-Fi network (not 5 GHz). If your router bro
     difficulty: `Intermediate`,
     body: `A smart thermostat replaces your existing wall thermostat and connects to your home's Wi-Fi. Once connected, you can adjust the temperature from your phone, set schedules, and let the thermostat learn your habits to save energy automatically.
 
-The two most popular smart thermostat brands are Google Nest and Ecobee. Both are available at Home Depot, Lowe's, Best Buy, and Amazon, and typically cost between $100 and $250.
+The two most popular smart thermostat brands are Google Nest and Ecobee. Both are available at Home Depot, Lowe's, Best Buy, and Amazon, and usually cost between $100 and $250.
 
 Here is what makes them "smart":
 
@@ -756,7 +756,7 @@ Learning (Nest specifically): The Nest Learning Thermostat watches your manual a
 
 Energy reports: Both Nest and Ecobee send you monthly reports showing how much energy you used and how the smart thermostat helped you save compared to a standard thermostat. The EPA estimates smart thermostats save 10 to 15 percent on heating and cooling bills.
 
-Important: Installing a smart thermostat involves connecting it to your home's heating and cooling system wires. If you are not comfortable with basic DIY tasks, a licensed HVAC technician or electrician can install it for you — typically for $50 to $150 in labor.`,
+Important: Installing a smart thermostat involves connecting it to your home's heating and cooling system wires. If you are not comfortable with basic DIY tasks, a licensed HVAC technician or electrician can install it for you — usually for $50 to $150 in labor.`,
     steps: [
       {
         title: `Check that your home is compatible`,
@@ -766,7 +766,7 @@ Important: Installing a smart thermostat involves connecting it to your home's h
       {
         title: `Install the thermostat (or hire someone)`,
         content: `Turn off power to your HVAC system at the circuit breaker before touching any wires. Remove your old thermostat from the wall — take a photo of the wires and which labels they connect to before disconnecting anything. Connect the same wires to the matching labels on the new smart thermostat's base plate. Attach the display and restore power. Both Nest and Ecobee include detailed installation guides and video walkthroughs on their websites.`,
-        warning: `Always turn off the power at the breaker before touching thermostat wires. Low-voltage wiring is not typically dangerous, but touching wires with power on can damage the new thermostat.`,
+        warning: `Always turn off the power at the breaker before touching thermostat wires. Low-voltage wiring is not usually dangerous, but touching wires with power on can damage the new thermostat.`,
       },
       {
         title: `Connect to Wi-Fi and create an account`,

@@ -585,7 +585,7 @@ export const guidesBatch14: Guide[] = [
     thumbnailEmoji: '',
     publishedAt: '2026-04-19',
     difficulty: 'Beginner',
-    body: "Your credit score is a number (typically 300-850) that lenders use to judge whether to give you a loan, credit card, or mortgage — and at what interest rate. Checking your own score does NOT hurt your credit. You have the right to view your full credit report from each of the three major credit bureaus once per year for free.",
+    body: "Your credit score is a number (usually 300-850) that lenders use to judge whether to give you a loan, credit card, or mortgage — and at what interest rate. Checking your own score does NOT hurt your credit. You have the right to view your full credit report from each of the three major credit bureaus once per year for free.",
     steps: [
       {
         title: 'Get your free credit report from AnnualCreditReport.com',

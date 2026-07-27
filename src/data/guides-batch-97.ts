@@ -174,7 +174,7 @@ Two versions exist: battery-powered (6-year AA lithium battery life) and wired (
     difficulty: `Beginner`,
     body: `Water damage is one of the single most expensive home insurance claims in the United States — the average claim runs well over $10,000, and many are far higher. The frustrating part is that almost all water damage is slow, meaning a cheap sensor could have caught the leak long before it ruined floors and drywall.
 
-Smart leak sensors come in two flavors. Point sensors are small pucks you set on the floor in specific risk spots — under the kitchen sink, next to the water heater, behind the washing machine, under the dishwasher, near toilets, and in the ice maker line's tray. They have a Wi-Fi chip and a battery that typically lasts 2 to 5 years. When water touches the two metal contacts on the bottom, the sensor sends you a phone alert and sounds a local beep. Point sensors cost roughly $20 to $40 each. Good brands include Samsung SmartThings, YoLink, Eve Water Guard, and Aqara.
+Smart leak sensors come in two flavors. Point sensors are small pucks you set on the floor in specific risk spots — under the kitchen sink, next to the water heater, behind the washing machine, under the dishwasher, near toilets, and in the ice maker line's tray. They have a Wi-Fi chip and a battery that usually lasts 2 to 5 years. When water touches the two metal contacts on the bottom, the sensor sends you a phone alert and sounds a local beep. Point sensors cost roughly $20 to $40 each. Good brands include Samsung SmartThings, YoLink, Eve Water Guard, and Aqara.
 
 Whole-home monitors are a step up. Brands like Moen Flo, Phyn Plus, and Flume attach to your main water line or water meter and measure water flow patterns. They can detect a slow leak behind a wall that point sensors would never see, alert you if someone leaves a tub running, and — in the case of Moen Flo and Phyn Plus — automatically shut off the water if they detect a major burst. These run $400 to $700 installed. But they can prevent catastrophic damage.
 
@@ -190,7 +190,7 @@ Here's a real money nudge: many home insurance companies (Travelers, State Farm,
       },
       {
         title: `Place and pair point sensors`,
-        content: `Lay each sensor flat on the floor in its spot, metal contacts down. Pair it through its brand's app — typically scan a QR code on the sensor and wait for it to appear. Give each one a clear name like "Under Kitchen Sink" so alerts tell you exactly where to run.`,
+        content: `Lay each sensor flat on the floor in its spot, metal contacts down. Pair it through its brand's app — usually scan a QR code on the sensor and wait for it to appear. Give each one a clear name like "Under Kitchen Sink" so alerts tell you exactly where to run.`,
       },
       {
         title: `Install a whole-home monitor if chosen`,
@@ -718,7 +718,7 @@ Once you've found an account, the site JustDeleteMe.xyz is your friend. It's a c
 
 WiFi is short-range wireless that comes from a router inside a building. Your home router, the one at a cafe, the one at a hotel. They all connect to the internet through a wired connection (fiber, cable, or DSL) and broadcast that connection over WiFi radio signals across maybe 100 feet indoors. The newest versions of WiFi — WiFi 6, WiFi 6E, and WiFi 7 — can deliver speeds of 1 Gbps or faster when the underlying wired connection supports it. Older routers (WiFi 4 or early WiFi 5) often cap at 100 to 300 Mbps regardless of your internet plan.
 
-5G is cellular, meaning it comes from cell towers operated by Verizon, T-Mobile, AT&T, and others, and reaches you through your phone's SIM card. 5G has two flavors: sub-6GHz 5G covers most of the country and typically delivers 100 to 400 Mbps. MmWave 5G is the super-fast flavor (1+ Gbps) but has a very short range (often just downtown blocks of major cities). Your phone chooses automatically.
+5G is cellular, meaning it comes from cell towers operated by Verizon, T-Mobile, AT&T, and others, and reaches you through your phone's SIM card. 5G has two flavors: sub-6GHz 5G covers most of the country and usually delivers 100 to 400 Mbps. MmWave 5G is the super-fast flavor (1+ Gbps) but has a very short range (often just downtown blocks of major cities). Your phone chooses automatically.
 
 When does 5G beat home WiFi? If your home router is old and your cellular service is strong, 5G may be faster. T-Mobile and Verizon sell 5G home internet (a cellular router that stays in your house) as a replacement for cable or fiber for $50 to $70 per month — often competitive in suburbs with weak cable service.
 
@@ -876,7 +876,7 @@ Keep every EOB for at least one year and match them against provider bills. Bill
       },
       {
         title: `File an appeal if something seems wrong`,
-        content: `If a covered service was denied or your share seems too high, you can appeal. Your EOB must list the appeals process. Gather supporting documents: the EOB, the provider's bill, and any notes from the visit. You typically have 180 days from the denial to file a first-level appeal. If denied again, you can request an external review by an independent organization.`,
+        content: `If a covered service was denied or your share seems too high, you can appeal. Your EOB must list the appeals process. Gather supporting documents: the EOB, the provider's bill, and any notes from the visit. You usually have 180 days from the denial to file a first-level appeal. If denied again, you can request an external review by an independent organization.`,
       },
     ],
     tip: `Quick Tip — Never pay a medical bill before you receive the matching EOB. The provider bill might show more than you actually owe. Match both documents to make sure the numbers agree.`,

@@ -37,7 +37,7 @@ export const guidesBatch19: Guide[] = [
       },
       {
         title: 'Understand charging speeds and overnight use',
-        content: "Wireless charging is typically 30-50% slower than a wired cable. For overnight charging, this does not matter — your phone will be fully charged by morning. For daytime desk charging, keep your phone on the pad when you set it down and it tops off continuously. Most modern phones are safe to leave on a wireless charger indefinitely — the charging stops automatically when the battery is full. Remove any hot phone from the pad if it becomes uncomfortable to touch.",
+        content: "Wireless charging is usually 30-50% slower than a wired cable. For overnight charging, this does not matter — your phone will be fully charged by morning. For daytime desk charging, keep your phone on the pad when you set it down and it tops off continuously. Most modern phones are safe to leave on a wireless charger indefinitely — the charging stops automatically when the battery is full. Remove any hot phone from the pad if it becomes uncomfortable to touch.",
       },
     ],
   },
