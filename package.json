@@ -10,7 +10,7 @@
     "prebuild": "npm run validate:slugs && node scripts/generate-tools-directory.mjs && node scripts/generate-redirects.mjs && node scripts/generate-sitemap.mjs && node scripts/generate-llms-txt.mjs",
     "build": "vite build && npm run prerender:safe && node scripts/write-build-info.mjs",
     "build:spa": "vite build",
-    "prerender": "vite build --ssr src/entry-server.tsx --outDir dist/server --logLevel warn && node --max-old-space-size=1536 scripts/prerender.mjs && node scripts/prerender-cleanup.mjs",
+    "prerender": "vite build --ssr src/entry-server.tsx --outDir dist/server --logLevel warn && node --max-old-space-size=2048 --expose-gc scripts/prerender.mjs --concurrency=2 && node scripts/prerender-cleanup.mjs",
     "prerender:safe": "npm run prerender || node -e \"console.error('\\n[build] PRERENDER FAILED — shipping the client-only SPA. Every URL will serve the same generic title until this is fixed. See the error above.\\n')\"",
     "prebuild:ssr": "npm run validate:slugs",
     "build:ssr": "npm run build:client && npm run build:server",

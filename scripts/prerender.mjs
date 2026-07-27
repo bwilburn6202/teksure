@@ -212,6 +212,11 @@ function writeReport({ partial }) {
           elapsedSeconds: Number(((Date.now() - started) / 1000).toFixed(1)),
           heapUsedMb: Math.round(process.memoryUsage().heapUsed / 1024 / 1024),
           rssMb: Math.round(process.memoryUsage().rss / 1024 / 1024),
+          // The gap between heapUsed and rss is what has been killing this.
+          externalMb: Math.round(process.memoryUsage().external / 1024 / 1024),
+          arrayBuffersMb: Math.round(process.memoryUsage().arrayBuffers / 1024 / 1024),
+          gcExposed: typeof global.gc === 'function',
+          concurrency: CONCURRENCY,
           sampleFailures: failures,
           sampleDegraded: degradedList,
         },
@@ -251,7 +256,28 @@ async function renderOne(route) {
   if (done % 250 === 0 || done === routes.length) {
     const secs = ((Date.now() - started) / 1000).toFixed(0);
     const rate = (done / Math.max(1, (Date.now() - started) / 1000)).toFixed(1);
-    console.log(`[prerender] ${done}/${routes.length} (${secs}s, ${rate}/s, ${failed} failed)`);
+    const mem = process.memoryUsage();
+    console.log(
+      `[prerender] ${done}/${routes.length} (${secs}s, ${rate}/s, ${failed} failed, ` +
+        `heap ${Math.round(mem.heapUsed / 1048576)}MB, rss ${Math.round(mem.rss / 1048576)}MB, ` +
+        `ext ${Math.round(mem.external / 1048576)}MB)`
+    );
+
+    /**
+     * Force a collection.
+     *
+     * Two runs died at the same point with heapUsed ~714MB against a 4GB and
+     * then a 1.5GB ceiling, while RSS sat above 4.3GB. Lowering the heap limit
+     * barely moved RSS, which rules the V8 heap out entirely — the memory is
+     * external, almost certainly the Buffers that writeFileSync allocates for
+     * each of thousands of rendered pages. Because heap pressure stays low, V8
+     * never feels a reason to run, so those buffers accumulate until the
+     * container kills the process.
+     *
+     * global.gc() is exposed by --expose-gc in the npm script. If the flag is
+     * missing this is simply skipped, so the script still runs standalone.
+     */
+    if (typeof global.gc === 'function') global.gc();
     // Checkpoint the report mid-run. If this process is killed — which is
     // what has been happening — the final write at the bottom never
     // executes, and the only evidence of how far it got dies with it.
