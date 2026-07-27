@@ -229,9 +229,44 @@ function writeReport({ partial }) {
   }
 }
 
+/**
+ * Longest a single page may take to render before we give up on it.
+ *
+ * Three consecutive runs stopped at exactly 4500 of 7100 with failed: 0. Memory
+ * pressure does not produce that kind of repeatability — it varies with content
+ * — but a route whose render never returns does. `await render(route)` has no
+ * timeout, so a promise that never settles parks that worker permanently. With
+ * a pool of workers, a handful of such routes silently drains the pool until
+ * nothing is left to make progress and the build is killed from outside.
+ *
+ * That also explains failed: 0. A hang throws nothing, so the catch below never
+ * runs and the route is never counted as a failure. It just disappears.
+ *
+ * 20 seconds is far beyond a healthy render here (the run averages ~30/second),
+ * so this only fires on something genuinely stuck — and when it does, the route
+ * lands in sampleFailures by name instead of taking the whole build down.
+ */
+const RENDER_TIMEOUT_MS = 20_000;
+
+function renderWithTimeout(route) {
+  // Deliberately NOT unref'd. An unref'd timer does not hold the event loop
+  // open, so if a hung route were the last item in the queue the process would
+  // exit before the rejection ever fired — reintroducing the silent-stall bug
+  // this is meant to fix. (Caught by a self-test before shipping.) Instead the
+  // timer is cleared on the happy path so it never delays a clean exit.
+  let timer;
+  const timeout = new Promise((_, reject) => {
+    timer = setTimeout(
+      () => reject(new Error(`render exceeded ${RENDER_TIMEOUT_MS}ms — likely hung`)),
+      RENDER_TIMEOUT_MS
+    );
+  });
+  return Promise.race([render(route), timeout]).finally(() => clearTimeout(timer));
+}
+
 async function renderOne(route) {
   try {
-    const { html: appHtml, head, errors } = await render(route);
+    const { html: appHtml, head, errors } = await renderWithTimeout(route);
 
     // A page that renders its shell but no <title> hit a recoverable error and
     // fell back — it would ship invisible to search. Surface it loudly.
