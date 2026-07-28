@@ -16,7 +16,7 @@ export const guidesBatch15: Guide[] = [
     thumbnailEmoji: '',
     publishedAt: '2026-04-19',
     difficulty: 'Beginner',
-    body: "When your Windows computer becomes slow, unresponsive, or a program stops responding, Task Manager is the tool that helps you understand why and fix it. Task Manager shows you every program currently running and how much of your computer's resources each one is using.",
+    body: "When your Windows computer gets slow, freezes, or a program stops responding, Task Manager is the tool that helps you understand why and fix it. It shows you every program currently running and how much of your computer's resources each one is using.",
     steps: [
       {
         title: 'Open Task Manager',

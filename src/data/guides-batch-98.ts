@@ -349,11 +349,11 @@ AARP also has a large library of free online videos showing exactly how common s
     thumbnailEmoji: ``,
     publishedAt: `2026-04-21`,
     difficulty: `Beginner`,
-    body: `Your iPhone has a hidden shortcut that can be one of the most useful features you've never heard of. Triple-clicking the side button (or the Home button on older models) can instantly turn on any accessibility feature you've set up — with no need to navigate through Settings. This is called the Accessibility Shortcut.
+    body: `Your iPhone has a hidden shortcut that might be one of the most useful features you have never heard of. Triple-click the side button (or the Home button on older models), and it instantly turns on any accessibility feature you have set up — no need to dig through Settings. This is called the Accessibility Shortcut.
 
-The most popular uses for seniors: turning on Zoom to enlarge whatever's on screen, activating the Magnifier camera to read small print, switching on High Contrast mode, or activating AssistiveTouch (which puts a floating on-screen button that can replace physical buttons). You can assign up to seven features to the shortcut, and if you assign more than one, triple-clicking shows a quick menu to choose which one to activate.
+The most popular uses for seniors: turning on Zoom to enlarge whatever is on screen, opening the Magnifier camera to read small print, switching on High Contrast mode, or turning on AssistiveTouch, which adds a floating on-screen button that can replace physical buttons. You can assign up to seven features to the shortcut. If you assign more than one, triple-clicking shows a quick menu so you can choose.
 
-Once set up, the shortcut works anywhere on your iPhone — in any app, on the home screen, or even on the lock screen. You can turn the feature off just as quickly by triple-clicking again.
+Once set up, the shortcut works anywhere on your iPhone — in any app, on the home screen, or even on the lock screen. Turn it off just as fast by triple-clicking again.
 
 For anyone who uses reading glasses, has difficulty with small text, or uses the iPhone in different lighting situations throughout the day, this shortcut can make a significant difference in daily usability.`,
     steps: [

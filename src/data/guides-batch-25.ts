@@ -287,11 +287,11 @@ The app requires creating a Medicare.gov account if you do not have one. Your Me
     thumbnailEmoji: '',
     publishedAt: '2026-04-19',
     difficulty: 'Beginner',
-    body: `Facebook Marketplace is a free classifieds section on Facebook where individuals and businesses sell new and used items locally. You can find furniture, appliances, cars, electronics, clothing, and much more — often at a lot lower prices than retail.
+    body: `Facebook Marketplace is a free classifieds section on Facebook where people and businesses sell new and used items locally. You can find furniture, appliances, cars, electronics, clothing, and much more — often for a lot less than retail.
 
-Unlike Amazon or eBay, most Facebook Marketplace transactions are done locally: you contact the seller, agree on a price, meet in person to inspect and pay for the item, and take it home. There is no centralized payment system or buyer protection for most private seller transactions, which is why knowing how to shop safely is important.
+Unlike Amazon or eBay, most Marketplace deals happen locally: you contact the seller, agree on a price, meet in person to check the item and pay, then take it home. There is no central payment system or buyer protection for most private-seller deals, which is why knowing how to shop safely matters.
 
-The most important safety rule: never pay for a Marketplace item without seeing it in person first. Scammers on Marketplace often post photos of items they do not actually have and ask you to pay via Venmo, Zelle, or Cash App before you meet. Once you send money this way, it cannot be reversed and you likely will not get the item.
+The most important safety rule: never pay for an item before seeing it in person. Scammers on Marketplace often post photos of items they do not actually have, then ask you to pay by Venmo, Zelle, or Cash App before you meet. Once you send money this way, it cannot be reversed, and you likely will not get the item.
 
 Buyer protection does exist if you pay using Facebook's built-in checkout feature and the seller has opted into it — but this is not available for all listings. For most private local transactions, no buyer protection exists, and any payment disputes are resolved directly between buyer and seller.
 

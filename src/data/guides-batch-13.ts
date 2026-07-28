@@ -166,7 +166,7 @@ export const guidesBatch13: Guide[] = [
     thumbnailEmoji: '',
     publishedAt: '2026-04-19',
     difficulty: 'Beginner',
-    body: "The Social Security Administration offers a free online account called my Social Security at ssa.gov/myaccount. Once you create your account, you can view your estimated future benefits and check your earnings history. You can also get a benefit verification letter and manage your direct deposit information — all without calling or visiting an SSA office.",
+    body: "The Social Security Administration offers a free online account called my Social Security, at ssa.gov/myaccount. Once you create your account, you can view your estimated future benefits and check your earnings history. You can also get a benefit verification letter and manage your direct deposit — all without calling or visiting an SSA office.",
     steps: [
       {
         title: 'Go to the official Social Security website',
@@ -204,7 +204,7 @@ export const guidesBatch13: Guide[] = [
     thumbnailEmoji: '',
     publishedAt: '2026-04-19',
     difficulty: 'Beginner',
-    body: "Investment scams have become the number-one way scammers steal money from older adults, according to the Federal Trade Commission. The scammers post on Facebook, Instagram, TikTok, and YouTube showing fake screenshots of huge profits and promise to teach you how to make money in cryptocurrency, stocks, or foreign currency trading. The investments are entirely fake.",
+    body: "Investment scams are the number-one way scammers steal money from older adults, according to the Federal Trade Commission. Scammers post on Facebook, Instagram, TikTok, and YouTube. They show fake screenshots of huge profits and promise to teach you how to make money in cryptocurrency, stocks, or foreign currency trading. The investments do not exist.",
     steps: [
       {
         title: 'Know the warning signs of investment scams',

@@ -177,7 +177,7 @@ export const guidesBatch39: Guide[] = [
     thumbnailEmoji: '',
     publishedAt: '2026-04-19',
     difficulty: 'Beginner',
-    body: `Buying a laptop can feel overwhelming when every product page is filled with numbers and abbreviations. The good news: for most everyday uses — web browsing, email, video calls, watching videos, and writing documents — any modern laptop from a reputable brand is more than capable. The decision mostly comes down to which type of computer fits how you already use technology.`,
+    body: `Buying a laptop can feel overwhelming when every product page is filled with numbers and abbreviations. The good news: for most everyday uses — web browsing, email, video calls, watching videos, and writing documents — any modern laptop from a reputable brand works just fine. The decision mostly comes down to which type of computer fits how you already use technology.`,
     steps: [
       {
         title: 'Choose between Windows, Mac, or Chromebook first',
@@ -604,7 +604,7 @@ export const guidesBatch39: Guide[] = [
     thumbnailEmoji: '',
     publishedAt: '2026-04-19',
     difficulty: 'Beginner',
-    body: `Google Drive is a free cloud storage service from Google that gives every Google account 15 GB of storage — enough for thousands of documents, PDFs, and photos. Files saved to Google Drive are automatically accessible from your phone, any computer, or a tablet by signing into your Google account. If your phone breaks or your computer dies, files in Google Drive are safe and retrievable right away.`,
+    body: `Google Drive is a free cloud storage service from Google. Every Google account gets 15 GB of storage — enough for thousands of documents, PDFs, and photos. Files saved to Google Drive show up automatically on your phone, any computer, or a tablet, just by signing into your Google account. If your phone breaks or your computer dies, files in Google Drive are still safe and ready to get back right away.`,
     steps: [
       {
         title: 'Access Google Drive on your phone',

@@ -518,11 +518,11 @@ Pharmacies matter too — the tool asks which pharmacy you use. The same plan mi
     thumbnailEmoji: '',
     publishedAt: '2026-04-19',
     difficulty: 'Beginner',
-    body: `Vanguard is one of the largest investment companies in the world, managing millions of Americans' retirement accounts — 401(k)s, IRAs, and other investment accounts. If your employer's retirement plan is through Vanguard, or if you have a personal IRA with them, their free mobile app lets you check your account anytime.
+    body: `Vanguard is one of the largest investment companies in the world. It manages millions of Americans' retirement accounts — 401(k)s, IRAs, and other investment accounts. If your employer's retirement plan is through Vanguard, or you have a personal IRA with them, their free mobile app lets you check your account anytime.
 
-The app shows your current account balance and how it has changed over time, your investment holdings (the funds your money is in), recent account activity, and performance charts. Most people use it primarily to check their balance and see how their investments are performing.
+The app shows your current balance and how it has changed over time, your investment holdings (the funds your money is in), recent activity, and performance charts. Most people use it mainly to check their balance and see how their investments are doing.
 
-Reading a retirement account balance can be confusing at first because the numbers are large and change daily with the stock market. A $237,500 balance today might show $234,000 tomorrow if the market dropped — that's normal and doesn't mean anything went wrong. Retirement accounts are long-term investments designed to grow over decades, not to be stable like a savings account.
+Reading a retirement account balance can be confusing at first, because the numbers are large and change daily with the stock market. A $237,500 balance today might show $234,000 tomorrow if the market dropped — that is normal and does not mean anything went wrong. Retirement accounts are long-term investments meant to grow over decades, not to stay steady like a savings account.
 
 The app also allows some account management: you can view and update beneficiaries, view statements and tax documents (including your 1099-R for distributions and 5498 for IRA contributions), change your contribution percentage if your employer allows it, and update contact information.
 

@@ -247,9 +247,9 @@ Check In requires iOS 17 or later on both your iPhone and the family member's iP
     publishedAt: '2026-07-26',
     lastVerifiedAt: '2026-07-26',
     difficulty: 'Beginner',
-    body: `Subscribe & Save is a free Amazon program that automatically re-orders and ships items you use regularly — on a schedule you set — at a discount, usually 5% off, or 15% off if you get five or more Subscribe & Save items delivered in the same month. There is no membership fee for the program itself, though Amazon Prime often provides free shipping on top of it.
+    body: `Subscribe & Save is a free Amazon program that automatically reorders and ships items you use regularly, on a schedule you set, at a discount — usually 5% off, or 15% off if you get five or more Subscribe & Save items in the same month. There is no membership fee for the program itself, though Amazon Prime often adds free shipping on top.
 
-This works best for things you buy the same way every time: vitamins, coffee, laundry detergent, pet food, paper towels, or printer ink. You are never charged more than you would pay buying it normally, and you can change the delivery schedule, skip a delivery, or cancel entirely at any time with no penalty or fee.
+This works best for things you buy the same way every time: vitamins, coffee, laundry detergent, pet food, paper towels, or printer ink. You are never charged more than the normal price, and you can change the delivery schedule, skip a delivery, or cancel anytime with no penalty or fee.
 
 This guide walks through setting up your first Subscribe & Save item and managing your subscriptions afterward.
 

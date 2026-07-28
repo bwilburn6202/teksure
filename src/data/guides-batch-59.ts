@@ -745,11 +745,11 @@ You will receive a PIN or a confirmation number when you set up each freeze — 
     thumbnailEmoji: ``,
     publishedAt: `2026-04-20`,
     difficulty: `Beginner`,
-    body: `Phishing emails are fraudulent messages designed to look like they come from a trusted source. That could be your bank, Amazon, the IRS, Social Security Administration, Medicare, PayPal, or another organization you regularly deal with. The goal is to trick you into clicking a link. Once there, you're asked to enter your password, Social Security number, credit card information, or other sensitive data on a fake website controlled by criminals.
+    body: `Phishing emails are fake messages made to look like they come from a trusted source — your bank, Amazon, the IRS, Social Security, Medicare, PayPal, or another company you deal with. The goal is to get you to click a link. Once there, you are asked to type your password, Social Security number, credit card number, or other private data into a fake website run by criminals.
 
-These emails have become increasingly sophisticated. They often include the company's real logo, use professional language, and closely mimic the formatting of legitimate messages from that organization. However, there are consistent warning signs that can help you identify them before you interact with them.
+These emails have gotten more convincing. They often use the company's real logo, professional language, and formatting that closely copies the real thing. Still, there are consistent warning signs that help you spot them before you interact.
 
-The most important thing to understand is this: legitimate organizations will never send you an unsolicited email asking you to provide your password, full Social Security number, banking login credentials, or credit card number by clicking a link. If an email asks you to do any of these things, it is almost certainly a phishing attempt, no matter how official it looks.
+Here is the most important thing to know: legitimate organizations never send an unexpected email asking for your password, full Social Security number, banking login, or credit card number by clicking a link. If an email asks for any of these, it is almost certainly phishing, no matter how official it looks.
 
 The sense of urgency is another major warning sign. Phishing emails almost always pressure you to act right away: "Your account will be suspended in 24 hours," or "Immediate action required to avoid losing access to your account," or "Verify your information now to avoid a penalty." This urgency is designed to make you act without thinking. Real organizations give you time to respond to legitimate issues.
 

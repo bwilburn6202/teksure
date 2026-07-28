@@ -328,11 +328,11 @@ For help navigating the website, call the VA's helpline at 1-800-827-1000 or use
     thumbnailEmoji: '',
     publishedAt: '2026-04-15',
     difficulty: 'Beginner',
-    body: `The FEMA app is a free mobile application from the Federal Emergency Management Agency that gives you real-time weather alerts, emergency notifications, and safety information for your area. It also helps you prepare for emergencies, find shelters during disasters, and apply for disaster help.
+    body: `The FEMA app is a free app from the Federal Emergency Management Agency. It gives you real-time weather alerts, emergency notifications, and safety information for your area. It also helps you prepare for emergencies, find shelters during disasters, and apply for disaster help.
 
-The app works on both iPhone and Android and does not require an account. Download it from the App Store or Google Play Store — search for "FEMA" and look for the app published by the Department of Homeland Security.
+The app works on iPhone and Android and does not need an account. Download it from the App Store or Google Play — search for "FEMA" and look for the app published by the Department of Homeland Security.
 
-When you first open the app, allow notifications and location access. Notifications deliver emergency alerts, and your location makes sure you get area-specific information. You can set alerts for up to five locations, including your home, workplace, and family members' cities.
+When you first open the app, allow notifications and location access. Notifications deliver emergency alerts, and your location makes sure the alerts match your area. You can set alerts for up to five locations, including your home, workplace, and family members' cities.
 
 The app provides real-time alerts for severe weather, floods, earthquakes, hurricanes, and other emergencies. During a disaster, the shelter finder shows nearby open shelters on a map with addresses and available services. The preparedness section includes checklists for building an emergency kit, making a family communication plan, and preparing for specific types of disasters.
 
@@ -5003,7 +5003,7 @@ Set a Screen Time passcode that is different from the child's login password. Th
     thumbnailEmoji: '',
     publishedAt: '2026-04-16',
     difficulty: 'Beginner' as any,
-    body: `Instacart lets you order groceries from local stores like Kroger, Costco, Aldi, and many others, with a personal shopper picking and delivering your order. It is a convenient service for anyone who has difficulty getting to the store, has a busy schedule, or prefers to shop from home. Delivery fees vary, and a membership can reduce costs if you order often.`,
+    body: `Instacart lets you order groceries from local stores like Kroger, Costco, Aldi, and many others. A personal shopper picks your order and delivers it to your door. It is a convenient service if you have trouble getting to the store, have a busy schedule, or just prefer to shop from home. Delivery fees vary, and a membership can lower costs if you order often.`,
     steps: [
       { title: 'Download the Instacart app or go to instacart.com', content: 'Download the Instacart app from the App Store or Google Play, or visit instacart.com on your computer. Tap "Get started" and enter your zip code to see which stores deliver to your address.' },
       { title: 'Create an account', content: 'Enter your name, email address, and create a password. You will need to add a delivery address and a payment method (credit or debit card). Instacart also accepts EBT/SNAP benefits at participating stores.' },

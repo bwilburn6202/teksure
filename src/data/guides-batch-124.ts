@@ -809,11 +809,11 @@ Before assuming the battery is worn out, however, it is worth checking your sett
     thumbnailEmoji: '🔒',
     publishedAt: '2026-05-03',
     difficulty: 'Beginner',
-    body: `Being locked out of an online account is frustrating, but almost every major service has a clear recovery process. The steps below will help you regain access to most accounts, whether the issue is a forgotten password, a changed password, or an account that was locked after too many wrong attempts.
+    body: `Being locked out of an online account is frustrating, but almost every major service has a clear way to recover it. The steps below help you get back into most accounts, whether the problem is a forgotten password, a changed password, or an account locked after too many wrong tries.
 
-Every legitimate website has a "Forgot password" or "Need help signing in" link on the login page. This is always the right first step — do not try to remember the password by repeatedly guessing, as most sites will temporarily lock your account after 5–10 failed attempts.
+Every legitimate website has a "Forgot password" or "Need help signing in" link on the login page. This is always the right first step. Do not try to guess the password again and again — most sites will temporarily lock your account after 5 to 10 failed attempts.
 
-The fastest and most reliable recovery method is usually a text message or email sent to the phone number or backup email you provided when you created the account. This is why keeping your recovery information current is so important.`,
+The fastest and most reliable way back in is usually a text or email sent to the phone number or backup email you gave when you created the account. That is why keeping your recovery information up to date matters so much.`,
     steps: [
       {
         title: "Find the 'Forgot password' link",

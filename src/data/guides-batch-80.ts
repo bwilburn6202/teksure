@@ -693,11 +693,11 @@ Zocdoc is completely free for patients. Doctors pay to be listed. You can use Zo
     thumbnailEmoji: ``,
     publishedAt: `2026-04-20`,
     difficulty: `Beginner`,
-    body: `WebMD is one of the most visited health information websites in the United States, and its app brings that same wealth of information to your smartphone. The WebMD app is best used as a starting point for learning about symptoms, conditions, and medications — not as a replacement for your doctor's professional judgment.
+    body: `WebMD is one of the most visited health information websites in the United States, and its app brings that same information to your phone. Use the WebMD app as a starting point for learning about symptoms, conditions, and medications — not as a replacement for your doctor's judgment.
 
-The Symptom Checker tool in the WebMD app lets you select your symptoms from a body diagram and answer a series of questions. It then provides a list of conditions that commonly match your symptoms along with a brief explanation of each. This can be very helpful before a doctor's appointment. It gives you vocabulary to describe your symptoms and helps you understand what questions the doctor might ask.
+The Symptom Checker lets you pick your symptoms from a body diagram and answer a few questions. It then shows a list of conditions that commonly match, with a brief explanation of each. This can help before a doctor's appointment: it gives you words to describe your symptoms and helps you guess what the doctor might ask.
 
-WebMD also has a Pill Identifier tool where you can enter the imprint code, shape, and color of an unidentified pill to find out what it is. This is particularly useful if you have mixed-up medications or find an unlabeled pill and need to identify it safely.
+WebMD also has a Pill Identifier tool. Enter the imprint code, shape, and color of an unknown pill to find out what it is. This is useful if you have mixed-up medications or find an unlabeled pill and need to identify it safely.
 
 The app includes a medication guide that explains how medications work, their common side effects, and what to avoid while taking them. You can search for a medication by name and read a plain-English explanation of its uses and precautions.
 
