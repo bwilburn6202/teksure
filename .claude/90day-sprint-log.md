@@ -956,3 +956,67 @@ The local mounted checkout's `.git` directory cannot `unlink()` its own lock fil
 2. Add 8–10 more guides toward the ~32/day pace needed to hit 4,500 by 2026-08-10. Candidate topics carried over from yesterday's list are still open (Apple Vision Pro, iOS 18 Mail Categories, USPS redelivery scam, grocery loyalty apps, fake Geek Squad renewal scam, Apple Cash spending caps, Wi-Fi 7 vs 6E, iCloud+ Private Relay).
 3. **Bailey:** hand over AdSense publisher ID or Amazon Associates tag — this is the only unmet target with zero measurable progress after 76 days.
 4. Monday (2026-07-27) is feature day — ship one new tool from the backlog.
+
+---
+
+## 2026-07-28 (Day 78)
+
+No run logged for 2026-07-27 (Day 77) — the dev-loop's own scheduled cycles (27–31) kept running and landed a `content: remove 428 placeholder videos that had nothing to do with their guides` commit and cycle 30/31 findings, but the creative 90-day-push task itself did not execute that day. Picking back up today.
+
+### Guides added — 6 new (batch 330)
+- fake-geek-squad-renewal-email-scam (Safety) — the fake Best Buy Geek Squad renewal-receipt phishing scam, currently one of IC3's most-reported
+- grocery-store-loyalty-apps-savings-guide (Buying Guides) — how Kroger/Safeway/Publix-style loyalty apps and digital coupon clipping work
+- apple-cash-family-spending-limits-for-kids (Financial Tech) — sending a grandchild money via Apple Cash Family with spending limits and purchase notifications, distinct from the existing basic Apple Cash setup guide
+- ios-mail-app-categories-explained (Communication) — the Primary/Transactions/Updates/Promotions tabs in iPhone Mail
+- turn-off-targeted-ads-facebook-instagram-google (Online Privacy) — where the ad-personalization settings live on Meta, Google, iOS, and Android
+- set-up-bill-pay-reminder-alerts (Financial Tech) — calendar + bank + biller reminder layering to avoid missed payments
+
+Topic selection this run required more due-diligence than usual: the two carried-over candidates from Day 76's list (Wi-Fi 7 vs 6E, iCloud+ Private Relay) turned out to already exist as `wifi-7-routers-do-you-need-one` and `icloud-private-relay-explained`. Several other obvious ideas (digital estate planning, Windows Recall, SSA my Social Security account, USPS Informed Delivery, AI voice-cloning scams, grandparent scams) are already covered multiple times over — this site has genuinely dense topic coverage at 4,000+ guides now, so future batches should expect to spend real time confirming a topic is actually new before writing it. Grepping for `slug: '...'` patterns directly (not just body-text keyword hits) was the reliable way to check.
+
+All 6 guides passed the brand-voice banned-word check on manual review (caught and fixed 4 uses of "just," which is banned) and all 6 excerpts were trimmed to ≤160 characters after the dev-loop's overlong-excerpt check flagged 3 of them as too long on first pass. `npm test` (104/104) and `tsc --noEmit` both clean before commit.
+
+### Freshness sweep
+- Re-verified (not just re-trusted) the same 4 recurring dev-loop stale-OS flags from guides-batch-327, -94, -42. Read each line directly: 327 and 94 are both about replacing/upgrading hardware that is genuinely old (ChromeOS Flex for old Windows 7/8 laptops; a "should I upgrade" checklist), and 42 states a minimum-version requirement ("iOS 16 and macOS Ventura or later") for a feature, not a claim that iOS 16 is current. All three remain contextually correct as written — left unchanged, consistent with the 2026-07-26 assessment.
+
+### Features shipped
+- None this run. Today (Tuesday 2026-07-28) is not the Monday feature-build day; Monday 2026-07-27 passed without the sprint task running (see note above), so no tool shipped that day either. Flagging as a carry-over: next Monday (2026-08-03) should ship one, and possibly two, tools to make up the gap given 13 days remain to the 90-day deadline.
+
+### Backlog items cleared / reviewed
+- Cycle 27–32 dev-loop findings reviewed: 0 duplicate slugs, 0 duplicate titles, 0 broken internal links, TypeScript clean, 4 stale-OS warnings (all reviewed, contextually valid, unchanged).
+- **Hardcoded price + undisclosed testimonial warnings (both down to 1 remaining site-wide) both trace to the same file, `src/pages/TechnicianProfile.tsx`.** Read the file directly rather than editing on the strength of the dev-loop warning alone: it is intentionally offline. The file has a large header comment explaining the invented technicians/reviews were pulled from production on 2026-07-26, the routes in `App.tsx` redirect to `/get-help`, and the file is deliberately kept flagged ("scripts/dev-loop.mjs has a testimonial-honesty check that will keep flagging this file until the invented data is gone. That is intentional."). No action needed — this is correctly quarantined, not an open issue.
+- **New this cycle: "Overlong guide excerpts" — 364 guides (up from 361 two days ago) have excerpts over 160 characters** that get truncated mid-sentence in search results. Not addressed at scale this run (out of scope for a single day), but fixed for all 6 of today's new guides so the count did not grow further from this batch. Worth a dedicated cleanup pass — likely a good candidate for a future Monday feature-day script (`scripts/` already has similar one-off fix scripts like `fix-its-easy.mjs` and `fix-minimizing-just.mjs` as a pattern to follow).
+
+### Git health
+Confirmed the local mounted checkout's `.git` still cannot unlink its own objects/lock files (same as prior runs). The previously-documented `/tmp/teksure-push` workaround also failed this run on first attempt — a **stale directory from a different sandbox session** (`/tmp/teksure-push`, owned by `nobody:nogroup`, uid mismatch with this session's user) blocked `rm -rf` and the fresh clone. Fix: use a **uniquely-named temp directory** (e.g. `/tmp/teksure-push-$(date +%s)`) instead of a fixed name, since `/tmp` can carry over stale, differently-owned directories between sandbox sessions. Also note: a fresh `git clone` of the bare GitHub URL has no stored credentials — the working push URL (with embedded token) has to be copied from the mounted repo's `git config --get remote.origin.url` / `.git/config` first, then set on the temp clone with `git remote set-url origin <url-with-token>` before `git push` will authenticate. Push succeeded: `d309e3e` is on `origin/main` as of this run.
+
+### Running totals vs 90-day targets
+| Metric | Target (2026-08-10) | Current | Status |
+|---|---|---|---|
+| Guides | 4,500 | **4,027** (+6 this run) | 89.5% — 13 days left, need ~36/day to hit target at this point, which is not realistic at the current pace |
+| Tools | 200+ | 285 | Exceeded |
+| TypeScript errors | 0 | 0 | OK |
+| Duplicate slugs | 0 | 0 | OK |
+| Broken internal links | 0 | 0 | OK |
+| Stale OS mentions | (dev-loop warn floor) | 4 (all reviewed, contextually valid) | Stable |
+| Overlong excerpts | (dev-loop warn floor) | 364 site-wide (0 from today's batch) | New tracked issue, growing slowly |
+| Traffic | 10,000/mo | Not measured this run | Still unconfirmed whether analytics is wired up |
+| Monetization | AdSense or 3 affiliate programs live | None | Blocked on Bailey — 78 days in, still zero |
+| TekSure Brain / Ollama | Hosted Ollama active | Edge functions deployed, unchanged | Blocked on Hetzner CX22 provisioning |
+| Git health (local mount) | Clean, pushed | Push path unblocked via `/tmp/teksure-push-<timestamp>` clone workaround; mount itself still corrupted | No longer a shipping blocker, just needs a unique temp dir each time |
+
+### Monetization status
+- AdSense: no update this run.
+- Affiliate: no update. Same standing blocker — still waiting on Bailey for a publisher ID or Amazon Associates tag.
+
+### Blockers
+- **The 4,500-guide target is very unlikely to be hit by 2026-08-10 at the current pace.** 13 days left, ~473 guides short, and the sustainable pace has been roughly 6/day, not the ~36/day now required. Worth flagging to Bailey directly: either the daily volume needs to increase substantially, or the target/deadline should be revisited.
+- **AdSense / affiliate programs remain zero.** 78 days in, no measurable monetization progress — still the single biggest gap against the 90-day targets with zero movement.
+- **Traffic measurement unresolved.** Cannot confirm whether analytics captures visits — need Bailey to point at GA4/Plausible or install one.
+- **Local mount `.git` is still corrupted.** Not blocking shipping (unique-tempdir workaround above), but should be reset properly by Bailey on the real Mac when convenient.
+
+### Next-day priorities (2026-07-29)
+1. Use a **uniquely-named** `/tmp/teksure-push-<timestamp>` directory for future commits, not the fixed `/tmp/teksure-push` name — stale directories from other sessions can block it.
+2. Add another 6–10 guides. Fresh, unverified-yet candidate topics: Amazon package theft/porch pirate protection tips (needs a duplicate check — several files reference "package theft" already, may already be covered), ChatGPT/Claude mobile app basics for seniors, setting up a Life360-style location check-in (also needs a dup check — `life360-app-guide` may already cover this), and Social Security COLA/benefit-change notices for 2027.
+3. **Bailey:** hand over AdSense publisher ID or Amazon Associates tag — still the only unmet target with zero progress.
+4. **Bailey:** the 4,500-guide-by-8/10 target needs a decision — increase volume sharply or adjust the target, given the math above.
+5. Next Monday (2026-08-03) is feature day — consider shipping two tools to make up for the missed 2026-07-27.
