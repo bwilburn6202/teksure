@@ -8,6 +8,52 @@ Newest cycles appear at the top.
 
 ---
 
+## Weekly review note -- 2026-07-28
+
+Measured first: dev-loop, senior-ux audit, and discoverability (prerendered
+title tags on `/guides/qr-codes` confirmed page-specific, sitemap at 7,102
+URLs, build-info fresh) were all healthy. The two outstanding `warn`s
+(hardcoded price + undisclosed testimonial on `TechnicianProfile.tsx`) are
+both from the page that was deliberately taken offline on 2026-07-26 and
+is not routed live -- nothing new broken in production.
+
+Picked readability, per this week's priority order, but found the
+"hardest guides" list was dominated by a measurement bug: all 49
+`guides-spanish.ts` entries scored grade 12-15 because Flesch-Kincaid's
+syllable counter is English-only (strips accented vowels, assumes English
+morphology). Manually read several -- they're plain, simple Spanish.
+Fixed `scripts/audit-senior-ux.mjs` to score and report Spanish guides
+separately instead of folding a meaningless number into the site average.
+Then simplified the 17 hardest genuinely-English guide intros (identity
+theft, government imposter scams, fake charities, AI image detection,
+Bluetooth x2, Emergency SOS, Medical ID, Android notifications, bill-pay
+reminders, power of attorney, retirement budgeting, senior discounts,
+fiber internet, iPhone Weather, Amazon Prime, Healthgrades), same facts
+throughout, per `improve-readability.md`.
+
+English-only, apples to apples: avg grade 8.36 -> 8.3, guides above grade
+8 58.9% -> 58.8%, guides above grade 10 556 -> 546. 104/104 tests pass.
+
+Skipped: the 361 overlong excerpts (real, but flagged as a "content job"
+in the 2026-07-26 commit that introduced the check -- rewriting summaries
+mechanically would produce truncated-feeling copy, same reasoning as not
+mechanically simplifying guide bodies). The 4 stale-OS mentions (unchanged
+across many cycles) were already reviewed on 2026-07-26 and judged
+contextually correct as written.
+
+Left uncommitted on purpose: `src/pages/tools/SeniorVoicemail.tsx` has an
+unrelated, unvetted in-progress edit (renames the exported component,
+rewrites the copy) sitting in the working tree with no accompanying log
+entry. Not part of this week's scope -- left alone rather than guessed at.
+
+Next run: continue the English readability pass (grade >9.5 list has
+roughly 830 guides remaining after this batch -- pull it fresh rather
+than reusing this list, since slugs shift as new guides ship), or pick
+up the 361 overlong excerpts as a deliberate content pass rather than
+folding it into a readability cycle.
+
+---
+
 ## Cycle 32 — 2026-07-28T14:30:23.586Z
 
 ### [ok] Site metrics snapshot
