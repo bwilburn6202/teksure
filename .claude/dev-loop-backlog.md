@@ -46,6 +46,21 @@ unrelated, unvetted in-progress edit (renames the exported component,
 rewrites the copy) sitting in the working tree with no accompanying log
 entry. Not part of this week's scope -- left alone rather than guessed at.
 
+## Weekly review note -- 2026-07-28 (continued, second batch)
+
+Continued the same readability pass rather than starting new work: pulled a
+fresh grade>10.5 list (346 English guides), picked 20 more by traffic
+relevance (scams, account/device troubleshooting, financial, medical/safety),
+simplified the same way -- body intro only, facts unchanged. 104/104 tests
+pass, TS parse clean. avg grade 8.3 (unchanged at this rounding), guides
+above grade 10: 546 -> 542. Committed and pushed separately from the first
+batch so each commit stays reviewable on its own.
+
+Still ~500+ English guides above grade 10 remain -- this is intentionally a
+multi-week job, not a one-sitting fix. Next run: pull the list fresh again
+(slugs shift as new guides ship) and keep going, or switch to the 361
+overlong excerpts if that becomes the higher-value item.
+
 Next run: continue the English readability pass (grade >9.5 list has
 roughly 830 guides remaining after this batch -- pull it fresh rather
 than reusing this list, since slugs shift as new guides ship), or pick
