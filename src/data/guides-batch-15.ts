@@ -377,7 +377,7 @@ export const guidesBatch15: Guide[] = [
     thumbnailEmoji: '',
     publishedAt: '2026-04-19',
     difficulty: 'Beginner',
-    body: "Many internet, phone, and technology programs offer significant discounts — or are completely free — for seniors, people on Medicare, or those with lower incomes. These programs exist to make sure everyone can afford internet access and communication. Here's a guide to the most important ones available in the US.",
+    body: "Many internet, phone, and technology programs offer big discounts — or are free — for seniors, people on Medicare, or those with lower incomes. These programs exist so everyone can afford internet and phone service. Here's a guide to the most important ones in the US.",
     steps: [
       {
         title: 'FCC Lifeline Program — Free or discounted phone/internet service',
@@ -517,7 +517,7 @@ export const guidesBatch15: Guide[] = [
     thumbnailEmoji: '',
     publishedAt: '2026-04-19',
     difficulty: 'Beginner',
-    body: "Apple TV is a small box (about the size of a hockey puck) that connects to your television and provides access to Apple TV+, Netflix, Hulu, Disney+, and hundreds of other streaming apps. It's the best option if you already use Apple devices and want smooth AirPlay integration.",
+    body: "Apple TV is a small box, about the size of a hockey puck, that connects to your television. It gives you access to Apple TV+, Netflix, Hulu, Disney+, and hundreds of other streaming apps. It's the best choice if you already use Apple devices and want smooth AirPlay integration.",
     steps: [
       {
         title: 'Connect Apple TV to your television',

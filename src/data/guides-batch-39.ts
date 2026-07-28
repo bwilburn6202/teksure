@@ -346,7 +346,7 @@ export const guidesBatch39: Guide[] = [
     thumbnailEmoji: '',
     publishedAt: '2026-04-19',
     difficulty: 'Beginner',
-    body: `Phones can accumulate thousands of duplicate photos over the years — when you back up and restore a phone, screenshots taken from shared images, or photos saved from messaging apps that already exist in your camera roll. These duplicates waste storage space and make your photo library harder to navigate. Both iPhone and Android have built-in tools to find and remove duplicates automatically.`,
+    body: `Phones can build up thousands of duplicate photos over the years. This happens when you back up and restore a phone, take screenshots of shared images, or save photos from messaging apps that already exist in your camera roll. These duplicates waste storage space and make your photo library harder to look through. Both iPhone and Android have built-in tools that find and remove duplicates for you.`,
     steps: [
       {
         title: `Use iPhone's built-in Duplicates finder`,

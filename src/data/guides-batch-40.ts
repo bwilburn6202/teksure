@@ -871,11 +871,11 @@ Stolen Device Protection is turned off by default. You have to enable it manuall
     thumbnailEmoji: ``,
     publishedAt: `2026-04-19`,
     difficulty: `Intermediate`,
-    body: `Finding out your email has been hacked is alarming — but it happens to millions of people every year and most can recover fully if they act quickly. The key is speed: the faster you regain control, the less damage the hacker can do.
+    body: `Finding out your email has been hacked is alarming, but it happens to millions of people every year, and most people recover fully if they act quickly. Speed matters: the faster you regain control, the less damage the hacker can do.
 
-Signs your email may have been hacked: you cannot log in (password was changed), friends received strange emails from you, there are sent messages you did not write, your account settings were changed, or you got a security alert about a login from an unknown location.
+Signs your email may have been hacked: you can't log in because the password was changed, friends got strange emails from you, there are sent messages you didn't write, your account settings changed, or you got a security alert about a login from an unknown location.
 
-The hacker's goal is usually one of three things: send spam from your account, access your other accounts (by using "Forgot Password" to reset them via email), or steal personal information they find in your inbox.
+The hacker's goal is usually one of three things: send spam from your account, get into your other accounts by using "Forgot Password" to reset them through email, or steal personal information sitting in your inbox.
 
 Your email is the master key to your digital life — most other accounts let you reset their passwords via email. This is why protecting your email is so critical.
 

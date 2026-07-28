@@ -681,11 +681,11 @@ HDMI cables are inexpensive. A quality cable for everyday use costs $5 to $15 at
     thumbnailEmoji: ``,
     publishedAt: `2026-04-21`,
     difficulty: `Beginner`,
-    body: `If your Windows computer has been running slower than usual, showing unexpected pop-ups, redirecting you to strange websites, or behaving strangely, malware could be the cause. Malware is a general term for any software that's been installed without your knowledge and is doing something harmful — from collecting your passwords to sending spam to displaying ads you can't close.
+    body: `If your Windows computer has been running slower than usual, showing pop-ups out of nowhere, sending you to strange websites, or acting up in other ways, malware could be the cause. Malware is a general term for any software installed without your knowledge that does something harmful, from stealing your passwords to sending spam to showing ads you can't close.
 
-The good news: Windows comes with a full antivirus program called Microsoft Defender (previously Windows Defender) that's free, already installed, and updates automatically. For most everyday threats, Defender is entirely enough. You don't need to pay for a separate antivirus if you're running Windows 10 or 11.
+The good news: Windows comes with a full antivirus program called Microsoft Defender (once called Windows Defender). It's free, already installed, and updates on its own. For most everyday threats, Defender is enough on its own. You don't need to pay for a separate antivirus if you're running Windows 10 or 11.
 
-For a second opinion and to catch things Defender might miss, Malwarebytes Free is the most trusted free malware scanner. It's not a replacement for Defender — it's a complementary tool you can run periodically. The free version lets you scan and remove malware manually (it doesn't run in the background unless you pay for the premium version).
+For a second opinion, and to catch things Defender might miss, Malwarebytes Free is the most trusted free malware scanner. It's not a replacement for Defender. It's a tool you can run now and then alongside it. The free version lets you scan for malware and remove it by hand. It won't run in the background unless you pay for the premium version.
 
 Run these two scans back-to-back on a regular schedule — perhaps once a month — and you'll catch the vast majority of problems before they cause damage.`,
     steps: [

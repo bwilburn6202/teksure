@@ -567,11 +567,11 @@ Many people who learned to code as adults mention Codecademy as the platform whe
     thumbnailEmoji: ``,
     publishedAt: `2026-04-20`,
     difficulty: `Beginner`,
-    body: `Google Career Certificates are online training programs created by Google and hosted on the Coursera platform. They are designed to prepare people for entry-level jobs, and none of them require a college degree. Fields covered include IT support, data analytics, project management, UX design, cybersecurity, and digital marketing.
+    body: `Google Career Certificates are online training programs made by Google and hosted on Coursera. They prepare people for entry-level jobs. None of them require a college degree. Fields covered include IT support, data analytics, project management, UX design, cybersecurity, and digital marketing.
 
-Each certificate program takes about three to six months to complete at a pace of about 10 hours per week. They are self-paced, meaning you set your own schedule and can go faster or slower depending on your life circumstances. When you finish, you receive a certificate issued by Google that you can add to your LinkedIn profile and resume.
+Each certificate takes about three to six months to finish at a pace of about 10 hours a week. They are self-paced. You set your own schedule and can go faster or slower depending on your life. When you finish, Google issues you a certificate you can add to your LinkedIn profile and resume.
 
-The programs were specifically built to fill skill gaps in the job market and to create pathways into good-paying careers for people who may not have had access to traditional education. Google partners with thousands of employers in the United States who recognize these certificates as legitimate credentials.
+Google built these programs to fill skill gaps in the job market and to open paths to good-paying careers for people who may not have had access to traditional education. Thousands of US employers recognize these certificates as real credentials.
 
 The cost on Coursera is around $49 per month, and most programs take three to six months — so the total investment is roughly $150 to $300. However, many public library systems in the United States offer free access to Coursera's career certificate programs through a library card. This is worth checking before paying anything.
 

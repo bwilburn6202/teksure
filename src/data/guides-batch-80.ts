@@ -738,11 +738,11 @@ WebMD also provides a library of articles written in collaboration with doctors 
     thumbnailEmoji: ``,
     publishedAt: `2026-04-20`,
     difficulty: `Beginner`,
-    body: `Mayo Clinic is widely regarded as one of the most trusted names in American medicine. Its website — mayoclinic.org — offers a free, comprehensive library of health information written by Mayo Clinic physicians and reviewed for accuracy on a regular basis. Unlike some health websites that are driven primarily by advertising or traffic, Mayo Clinic's website is funded by the nonprofit organization itself and prioritizes accuracy and completeness.
+    body: `Mayo Clinic is widely seen as one of the most trusted names in American medicine. Its website, mayoclinic.org, offers a free library of health information written by Mayo Clinic physicians and checked for accuracy on a regular basis. Unlike some health websites driven mainly by advertising or traffic, Mayo Clinic's website is funded by the nonprofit itself and puts accuracy and completeness first.
 
-The website covers thousands of diseases and conditions, symptoms, drugs and supplements, tests and procedures, and healthy lifestyle topics. Each article follows a consistent structure: what the condition is, its symptoms, when to see a doctor, causes, risk factors, complications, prevention, and treatment. This format lets you find exactly what you need without reading through unrelated content.
+The website covers thousands of diseases and conditions, symptoms, drugs and supplements, tests and procedures, and healthy lifestyle topics. Each article follows the same structure: what the condition is, its symptoms, when to see a doctor, causes, risk factors, complications, prevention, and treatment. This format helps you find exactly what you need without reading through unrelated content.
 
-Mayo Clinic's Symptom Checker is available on the website and lets you explore what might be causing a symptom, though it is designed as an educational starting point rather than a diagnostic tool.
+Mayo Clinic's Symptom Checker is on the website. It lets you explore what might be causing a symptom, though it's meant as an educational starting point, not a diagnosis tool.
 
 One feature that sets Mayo Clinic apart from general health search results is the absence of misleading advertisements disguised as health content. What you read on mayoclinic.org is there because Mayo Clinic's medical team decided it was important and accurate, not because someone paid for it to appear.
 
@@ -831,9 +831,9 @@ The most important step is to talk openly with your doctor about which screening
     difficulty: `Beginner`,
     body: `Sharecare is a health app that helps you take a more active role in your own wellbeing. It brings health tracking, wellness programs, personalized articles, and disease management resources together in one place.
 
-Many employers and health insurance plans offer Sharecare as a free benefit. Some even add incentives, like gift cards or a lower insurance premium, for finishing health activities.
+Many employers and health insurance plans offer Sharecare as a free benefit. Some even add rewards, like gift cards or a lower insurance premium, for finishing health activities.
 
-One of Sharecare's best-known features is its RealAge test. It's a scientifically validated questionnaire that estimates your biological age — how old your body actually is, health-wise — compared to your calendar age. It looks at things like your exercise habits, diet, sleep, stress levels, and medical history to give you a personalized health age. Many people find it motivating to see how lifestyle changes can lower their RealAge over time.
+One of Sharecare's best-known features is its RealAge test. This is a science-based questionnaire that estimates your biological age — how old your body actually is, health-wise — compared to your calendar age. It looks at things like your exercise habits, diet, sleep, stress levels, and medical history to give you a personal health age. Many people find it motivating to see how lifestyle changes can lower their RealAge over time.
 
 The app also has a daily habit tracker where you can log steps, water intake, sleep, meals, mindfulness, and other healthy behaviors. Sharecare connects with wearables like Fitbit, Apple Watch, and Garmin, so your activity data flows in automatically — no manual logging needed.
 

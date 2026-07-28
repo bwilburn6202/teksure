@@ -793,11 +793,11 @@ Albums sync across all your devices — create one on your phone and it appears 
     thumbnailEmoji: '',
     publishedAt: '2026-04-19',
     difficulty: 'Beginner',
-    body: `Windows 11 includes a productivity feature called Focus Sessions, built directly into the Clock app. It's designed to help you concentrate on a task by setting a dedicated work timer — during that time, it can silence notifications, mute your Microsoft Teams status, and integrate with Spotify to play focus music.
+    body: `Windows 11 has a productivity feature called Focus Sessions, built into the Clock app. It helps you concentrate on one task with a dedicated work timer. During that time, it can silence notifications, mute your Microsoft Teams status, and play focus music through Spotify.
 
-Focus Sessions uses a technique called the Pomodoro Technique — working in focused intervals (usually 25 minutes) followed by short breaks (5 minutes). Research has shown that structured work intervals with regular breaks can improve concentration and reduce mental fatigue compared to trying to work for hours without stopping.
+Focus Sessions uses the Pomodoro Technique. You work in focused intervals, usually 25 minutes, followed by short 5-minute breaks. Research shows that structured work intervals with regular breaks can improve concentration and reduce mental fatigue, compared to working for hours without stopping.
 
-You don't need to follow the Pomodoro method strictly. You can set any session length from 5 minutes to 4 hours. The idea is to decide on a specific task, set a timer, and commit to working on only that task until the timer ends. Interruptions are minimized because notifications are silenced.
+You don't have to follow the Pomodoro method exactly. You can set any session length from 5 minutes to 4 hours. Pick one task, set a timer, and work on only that task until the timer ends. Notifications stay silent, so interruptions are kept to a minimum.
 
 During a Focus Session, Windows can do several things automatically: turn on Do Not Disturb (silencing all notifications), set your Microsoft Teams or Skype status to "Focusing," and play a timer sound. After the session ends, a short break timer starts automatically if you've enabled it.
 

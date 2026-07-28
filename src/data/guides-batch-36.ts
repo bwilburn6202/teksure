@@ -437,11 +437,11 @@ If you're planning a trip to another country, have family members who speak anot
     thumbnailEmoji: '',
     publishedAt: '2026-04-19',
     difficulty: 'Beginner',
-    body: `Citizen is a free smartphone app that sends you real-time safety alerts about incidents happening near you — including fires, accidents, crime, missing persons, and other emergencies. It pulls information from 911 dispatch feeds and local news sources and delivers it as notifications to your phone.
+    body: `Citizen is a free smartphone app that sends real-time safety alerts about incidents near you. This includes fires, accidents, crime, missing persons, and other emergencies. It pulls information from 911 dispatch feeds and local news sources and sends it to your phone as notifications.
 
-The app shows a live map of your area with color-coded incident markers. You can tap on any incident to see details, watch live video from the scene (when available), and get updates as the situation develops. You can also view incidents in other cities — helpful if you're traveling or want to check on family members in another area.
+The app shows a live map of your area with color-coded incident markers. Tap any incident to see details, watch live video from the scene when it's available, and get updates as the situation develops. You can also view incidents in other cities. This helps if you're traveling or want to check on family in another area.
 
-Citizen is free to download and use. A paid subscription called Citizen+  adds features like personalized protective intelligence and a 24/7 safety team you can reach for help, but the free version provides the core alert functionality most people need.
+Citizen is free to download and use. A paid subscription called Citizen+ adds features like personalized protective intelligence and a 24/7 safety team you can reach for help. The free version covers the core alerts most people need.
 
 The app is available in most major US cities and expanding. It's particularly useful for knowing whether to avoid a specific road due to an accident, understanding why emergency vehicles are nearby, or being alerted to wildfires, weather events, or other emergencies in your area.
 

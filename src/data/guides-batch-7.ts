@@ -341,11 +341,11 @@ You can find Inactive Account Manager in your Google account settings at myaccou
     thumbnailEmoji: '',
     publishedAt: '2026-04-16',
     difficulty: 'Beginner',
-    body: `When someone passes away, their Facebook account does not disappear automatically. Facebook offers two options for family members: memorialization and removal. A memorialized account is transformed into a tribute page — the word "Remembering" appears before the person's name, the account cannot be logged into, and friends and family can still post memories on the timeline. A removed account is permanently deleted, including all photos and posts.
+    body: `When someone passes away, their Facebook account does not disappear on its own. Facebook offers two options for family members: memorialization and removal. A memorialized account becomes a tribute page. The word "Remembering" appears before the person's name. No one can log into the account, but friends and family can still post memories on the timeline. A removed account is deleted for good, including all photos and posts.
 
-To request either option, you need to submit a form on Facebook's Help Center. Facebook asks for the deceased person's name, their Facebook profile link, and proof of your relationship, such as a photograph of an obituary or death certificate. Facebook does not always require a death certificate for memorialization but does require one for account removal.
+To request either option, submit a form on Facebook's Help Center. Facebook asks for the deceased person's name, their Facebook profile link, and proof of your relationship. This can be a photo of an obituary or a death certificate. Facebook does not always require a death certificate for memorialization. It does require one for account removal.
 
-The process usually takes a few days to a few weeks. You can also designate a "Legacy Contact" on your own Facebook account now — a trusted person who can manage your memorialized account someday.`,
+The process usually takes a few days to a few weeks. You can also set up a "Legacy Contact" on your own Facebook account now. This is a trusted person who can manage your memorialized account someday.`,
     steps: [
       { title: `Find the person's Facebook profile link`, content: `Go to facebook.com and search for the person's name. When you find their profile, copy the URL from your browser address bar. It will look something like facebook.com/personname or facebook.com/profile.php?id=123456.` },
       { title: 'Go to the Facebook Special Request form', content: 'Go to facebook.com/help and search for "memorialization request" or "deceased person." Click the link for the official form — Facebook has separate forms for memorialization and for removal/deletion.' },

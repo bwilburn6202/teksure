@@ -634,7 +634,7 @@ Parents can use Screen Time to manage a child's phone remotely through Family Sh
     thumbnailEmoji: '',
     publishedAt: '2026-04-19',
     difficulty: 'Beginner',
-    body: `Many apps let you sign in using your Google or Apple account instead of creating a separate username and password. This is convenient, but over time you may have authorized dozens of apps and services to access your account — and some of them you may no longer use. Reviewing and removing access for apps you do not recognize or no longer use is a worthwhile security step that takes about five minutes.`,
+    body: `Many apps let you sign in with your Google or Apple account instead of creating a separate username and password. This is handy, but over time you may end up authorizing dozens of apps and services to access your account, including some you no longer use. Reviewing this list and removing apps you don't recognize or use anymore is a worthwhile security step. It takes about five minutes.`,
     steps: [
       {
         title: 'Review apps connected to your Google account',

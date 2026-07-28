@@ -583,11 +583,11 @@ The fix is almost always the same: forget the old connection on both devices, th
     thumbnailEmoji: '▶️',
     publishedAt: '2026-05-03',
     difficulty: 'Beginner',
-    body: `When a YouTube video keeps stopping to buffer — that spinning circle or progress bar — it usually means one thing: the internet connection is not fast enough to deliver the video at the quality level you have selected. The fix is usually to lower the video quality, move closer to your router, or reduce how many things are using the internet at the same time.
+    body: `When a YouTube video keeps stopping to buffer — that spinning circle or progress bar — it usually means one thing: your internet connection isn't fast enough to deliver the video at the quality you've selected. The fix is usually to lower the video quality, move closer to your router, or cut down on how many things are using the internet at once.
 
-YouTube automatically adjusts video quality based on your connection speed. But it doesn't always get it right. Manually setting a lower quality takes 30 seconds and usually solves the problem right away.
+YouTube adjusts video quality on its own based on your connection speed, but it doesn't always get it right. Setting a lower quality by hand takes 30 seconds and usually fixes the problem right away.
 
-High-definition video (1080p or 4K) requires a much faster internet connection than standard-definition video (360p or 480p). If your internet connection is slow or inconsistent, lower-quality video plays much more smoothly than high-quality video that constantly pauses.`,
+High-definition video (1080p or 4K) needs a much faster internet connection than standard-definition video (360p or 480p). If your connection is slow or inconsistent, lower-quality video plays much more smoothly than high-quality video that keeps pausing.`,
     steps: [
       {
         title: 'Lower the video quality',
@@ -763,11 +763,11 @@ Touchscreens work by detecting tiny electrical changes when your finger touches 
     thumbnailEmoji: '⚡',
     publishedAt: '2026-05-03',
     difficulty: 'Beginner',
-    body: `A phone battery that drains too quickly is one of the most common complaints among smartphone users. It usually comes down to a combination of settings that are using more power than necessary, apps running in the background, or a battery that has aged past its optimal performance.
+    body: `A phone battery that drains too fast is one of the most common complaints among smartphone users. It usually comes down to a mix of settings using more power than needed, apps running in the background, or a battery that has aged past its best performance.
 
-Modern phone batteries are designed to retain about 80% of their original capacity after 500 complete charge cycles. If you have had your phone for 2–3 years and charge it every day, you have likely gone through 500+ cycles, meaning the battery naturally holds less charge than it once did.
+Modern phone batteries are built to hold about 80% of their original capacity after 500 full charge cycles. If you've had your phone for 2–3 years and charge it every day, you've likely gone through 500 or more cycles. That means the battery naturally holds less charge than it once did.
 
-Before assuming the battery is worn out, however, it is worth checking your settings. Many default settings — location services, background app refresh, screen brightness — are set high by default and can be turned down a lot without affecting how you use the phone.`,
+Before you assume the battery is worn out, check your settings first. Many default settings — location services, background app refresh, screen brightness — are set high out of the box. You can turn them down a lot without changing how you use the phone.`,
     steps: [
       {
         title: 'Check your battery health',

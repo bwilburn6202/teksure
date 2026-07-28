@@ -469,11 +469,11 @@ In-person Senior Planet Centers are located in New York City, Los Angeles, Denve
     thumbnailEmoji: '',
     publishedAt: '2026-04-19',
     difficulty: 'Beginner',
-    body: `Google Assistant is a voice assistant built into almost every Android phone. Like Apple's Siri, it responds when you say "Hey Google" (or press and hold the Home button). You can ask it questions, send text messages, set reminders, make phone calls, navigate to addresses, play music, and control your phone settings — all without touching the screen.
+    body: `Google Assistant is a voice assistant built into almost every Android phone. Like Apple's Siri, it responds when you say "Hey Google," or press and hold the Home button. You can ask it questions, send text messages, set reminders, make calls, get directions, play music, and change phone settings — all without touching the screen.
 
-Google Assistant is one of the most capable voice assistants available. And it learns your preferences over time. The more you use it, the better it understands your contacts, your regular questions, and your preferences.
+Google Assistant is one of the most capable voice assistants available, and it learns your preferences over time. The more you use it, the better it understands your contacts, your regular questions, and what you like.
 
-For hands-free use, "Hey Google" wake word detection works even when your phone screen is off — useful when your phone is on the counter or in your pocket. This requires always-on microphone listening to be enabled, which is on by default on most Android phones.
+For hands-free use, the "Hey Google" wake word works even when your screen is off. That's useful when your phone is on the counter or in your pocket. This needs always-on microphone listening turned on, which is on by default on most Android phones.
 
 Google Assistant integrates deeply with Google's ecosystem: it can read your Gmail for flight information and reminders, surface appointments from Google Calendar, and give you personalized answers based on your location and habits.
 

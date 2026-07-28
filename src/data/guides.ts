@@ -5625,7 +5625,7 @@ const coreGuides: Guide[] = [
     thumbnailEmoji: '🔒',
     publishedAt: '2026-03-30',
     difficulty: 'Beginner',
-    body: `Free file converter websites can set hundreds of tracking cookies from dozens of advertising networks when you upload a single document. Your files may also be stored on their servers. Safer alternatives: use Microsoft Word or Google Docs to convert files (File > Save As or Download As), or use LibreOffice — a free, offline app that converts documents without uploading anything. If you must use a web converter, use a private/incognito window and clear cookies afterward.`,
+    body: `Free file converter websites can set hundreds of tracking cookies from dozens of ad networks the moment you upload one document. Your files may also end up stored on their servers. Safer options: use Microsoft Word or Google Docs to convert files (File > Save As or Download As), or use LibreOffice, a free offline app that converts documents without uploading anything. If you must use a web converter, use a private or incognito window and clear cookies afterward.`,
     steps: [
       {
         title: 'Use Google Docs to convert files for free',
