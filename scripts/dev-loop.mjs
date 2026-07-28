@@ -389,6 +389,50 @@ function checkDuplicateTitles() {
 }
 
 /**
+ * The same video embedded across many unrelated guides.
+ *
+ * In July 2026 one YouTube ID was embedded in 249 guides spanning seven
+ * categories — turning a PC on, health tech, social media. Placeholders that
+ * shipped as if they were per-guide walkthroughs. For readers who are being
+ * invited to follow along with a video, a video about something else is worse
+ * than none: they conclude they have misunderstood, not that the site is wrong.
+ * It also emits schema.org VideoObject claiming the page has a video of its
+ * subject.
+ *
+ * A handful of guides legitimately sharing one general video is fine, so this
+ * only fires above a threshold that no honest reuse would reach.
+ */
+function checkDuplicateVideos() {
+  const dataDir = path.join(ROOT, 'src', 'data');
+  if (!fs.existsSync(dataDir)) {
+    return { name: 'duplicate-videos', label: 'Reused placeholder videos', ok: true, severity: 'info', summary: 'no data dir', details: '' };
+  }
+  const LIMIT = 5;
+  const counts = new Map();
+  for (const file of fs.readdirSync(dataDir)) {
+    if (!file.startsWith('guides') || !file.endsWith('.ts')) continue;
+    const text = fs.readFileSync(path.join(dataDir, file), 'utf8');
+    for (const m of text.matchAll(/videoUrl:\s*['"`][^'"`]*?\/embed\/([A-Za-z0-9_-]+)/g)) {
+      counts.set(m[1], (counts.get(m[1]) || 0) + 1);
+    }
+  }
+  const over = [...counts.entries()].filter(([, n]) => n > LIMIT).sort((a, b) => b[1] - a[1]);
+  const affected = over.reduce((a, [, n]) => a + n, 0);
+  return {
+    name: 'duplicate-videos',
+    label: 'Reused placeholder videos',
+    ok: over.length === 0,
+    severity: over.length === 0 ? 'info' : 'warn',
+    summary:
+      over.length === 0
+        ? 'No video is reused across more than 5 guides.'
+        : `${over.length} video(s) reused across ${affected} guides — almost certainly placeholders, not real walkthroughs.`,
+    details: over.slice(0, 8).map(([id, n]) => `- ${n} guides share /embed/${id}`).join('\n'),
+    metrics: { offendingIds: over.length, affectedGuides: affected },
+  };
+}
+
+/**
  * Guide excerpts longer than the documented limit.
  *
  * CLAUDE.md specifies "excerpt: Max 160 characters — used in cards and meta
@@ -662,6 +706,7 @@ const ALL_CHECKS = [
   { name: 'pricing-consistency', fn: checkPricingConsistency },
   { name: 'testimonial-honesty', fn: checkTestimonialHonesty },
   { name: 'excerpt-length', fn: checkExcerptLength },
+  { name: 'duplicate-videos', fn: checkDuplicateVideos },
 ];
 
 // ── State + backlog ──────────────────────────────────────────────────────
