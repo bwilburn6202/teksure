@@ -108,13 +108,13 @@ One thing to watch for: some grocery apps show you "member pricing" that is not 
     publishedAt: '2026-07-28',
     lastVerifiedAt: '2026-07-28',
     difficulty: 'Intermediate',
-    body: `Apple Cash Family is a version of Apple's Apple Cash feature built specifically for children and teenagers who are part of a Family Sharing group. If you want to send a grandchild money for a birthday, allowance, or a specific purchase, Apple Cash Family lets you send it directly to their iPhone or Apple Watch, and it comes with controls a parent or organizer can turn on: spending limits, transaction notifications, and the ability to require approval before certain purchases go through.
+    body: `Apple Cash Family is a version of Apple Cash made for children and teens in a Family Sharing group. If you want to send a grandchild money for a birthday, allowance, or a purchase, Apple Cash Family sends it right to their iPhone or Apple Watch. It also comes with controls a parent can turn on: spending limits, transaction notifications, and approval required before certain purchases.
 
-This feature requires the grandchild to be part of an Apple Family Sharing group, which is typically set up by their parent. If you are the Family Sharing organizer yourself, or if a parent has added the grandchild's device to their own Family Sharing group and given you access, you can send money directly through the Messages app or the Wallet app, similar to sending regular Apple Cash to an adult.
+Your grandchild needs to already be part of an Apple Family Sharing group, usually set up by their parent. If you are the Family Sharing organizer, or a parent has given you access to the group, you can send money through the Messages app or the Wallet app — much like sending Apple Cash to an adult.
 
-The main advantage over handing over cash or a gift card is visibility. Every time the money is used, a notification can go to the parent (and sometimes the organizer), showing exactly where and how much was spent. This is especially helpful for younger grandchildren who are still learning how to manage money responsibly, since it turns each purchase into a small teaching moment rather than a mystery.
+The biggest advantage over cash or a gift card is visibility. Every time the money is used, a notification can go to the parent, showing exactly where and how much was spent. This helps younger grandchildren learn to manage money, since each purchase becomes a small teaching moment instead of a mystery.
 
-If a grandchild does not have their own Apple ID or is not part of a Family Sharing group, the parent will need to set that up first — this guide focuses on sending and limiting money once a Family Sharing group already exists, since setting up Family Sharing itself is a separate process usually handled by the parent.
+If a grandchild does not have their own Apple ID, or is not part of a Family Sharing group, a parent needs to set that up first. This guide covers sending and limiting money once a Family Sharing group already exists — setting up Family Sharing itself is a separate step, usually handled by the parent.
 
 (Sources: Apple Support — support.apple.com/guide/iphone/apple-cash-family; Apple Support — support.apple.com/en-us/HT201087)`,
     steps: [
@@ -154,13 +154,13 @@ If a grandchild does not have their own Apple ID or is not part of a Family Shar
     publishedAt: '2026-07-28',
     lastVerifiedAt: '2026-07-28',
     difficulty: 'Beginner',
-    body: `If your iPhone Mail app inbox recently started showing tabs across the top — things like "Primary," "Transactions," "Updates," and "Promotions" — this is Apple's Categories feature. It automatically sorts incoming email into groups based on what the message appears to be, similar to a feature Gmail has offered for years. The goal is to keep important personal messages easy to find while newsletters, receipts, and marketing emails wait in their own separate tabs instead of mixing in with everything else.
+    body: `If your iPhone Mail app inbox recently started showing tabs across the top — like "Primary," "Transactions," "Updates," and "Promotions" — this is Apple's Categories feature. It automatically sorts incoming email into groups based on what the message looks like, similar to a feature Gmail has had for years. The goal: keep personal messages easy to find, while newsletters, receipts, and marketing emails wait in their own tabs instead of mixing in with everything else.
 
-"Primary" is meant to hold personal email — messages from real people you know, along with anything the Mail app cannot confidently sort into another category. "Transactions" typically holds order confirmations, shipping notifications, and receipts. "Updates" holds account notifications, newsletters you subscribed to, and similar automated messages. "Promotions" holds marketing emails and sales announcements. The sorting happens automatically using the sender and content of each email, and it can be wrong sometimes, especially at first.
+"Primary" holds personal email — messages from people you know, plus anything the app cannot confidently sort elsewhere. "Transactions" holds order confirmations, shipping notices, and receipts. "Updates" holds account notifications, newsletters you subscribed to, and similar automated messages. "Promotions" holds marketing emails and sales announcements. The sorting happens automatically based on the sender and content, and it can get things wrong sometimes, especially at first.
 
-This feature can be turned off entirely if you prefer one simple inbox, or you can keep it on and check each tab when you have a moment, similar to checking separate folders. Many people find "Primary" alone is enough for daily use, and they check the other tabs less often, maybe once a week, to scan for anything important that got misfiled.
+You can turn this feature off if you prefer one simple inbox. Or keep it on and check each tab when you have a moment, like checking separate folders. Many people find "Primary" alone is enough for daily use, and check the other tabs less often — maybe once a week — to scan for anything important that got misfiled.
 
-If an email lands in the wrong category — for example, a message from a family member ends up in "Updates" — you can move it, and the Mail app will remember your correction for similar emails from that sender in the future.
+If an email lands in the wrong category — say, a message from family ends up in "Updates" — you can move it. The Mail app will remember your correction for similar emails from that sender next time.
 
 (Source: Apple Support — support.apple.com/guide/iphone/organize-email-in-lists-or-by-category)`,
     steps: [
@@ -245,13 +245,13 @@ Turning these off is free and reversible — you can turn personalized ads back 
     publishedAt: '2026-07-28',
     lastVerifiedAt: '2026-07-28',
     difficulty: 'Beginner',
-    body: `A missed bill payment usually is not a sign of carelessness — it is a sign that nothing reminded you at the right moment. Between electric, water, phone, internet, insurance, and credit card bills, most households juggle 8 to 12 different due dates every month, often spread across different companies with no single place listing them all. Setting up automatic reminders solves this permanently, and it takes about 15 minutes total to set up reminders for all your regular bills.
+    body: `A missed bill payment is usually not a sign of carelessness. It is a sign that nothing reminded you at the right moment. Most households juggle 8 to 12 different due dates a month — electric, water, phone, internet, insurance, credit cards — often with no single place listing them all. Setting up reminders solves this for good. It takes about 15 minutes to set up reminders for all your regular bills.
 
-There are three good, free approaches, and they work well combined rather than picking a single one. Your bank or credit card company can text or email you a few days before a payment is due. Your phone's built-in calendar app can hold a repeating reminder for each bill, tied to your account rather than the biller. And many billers themselves — utility companies, insurance companies, phone carriers — offer their own free reminder texts or emails if you turn the feature on in their app or website.
+There are three good, free ways to do it, and they work best combined. Your bank or credit card company can text or email you a few days before a payment is due. Your phone's calendar app can hold a repeating reminder for each bill. And many billers — utility companies, insurance companies, phone carriers — offer their own free reminder texts or emails if you turn the feature on.
 
-The calendar approach is the most reliable because it does not depend on any single company's system working correctly. If you set a repeating reminder in your phone's calendar for "Electric bill due — pay by the 15th" every month, that reminder will keep appearing whether or not the power company's own alert system has a glitch that particular month.
+The calendar approach is the most reliable, because it does not depend on any one company's system working. If you set a repeating reminder for "Electric bill due — pay by the 15th" every month, it will keep showing up even if the power company's own alerts have a glitch that month.
 
-Combining reminders with automatic payment for bills that never change in amount (like insurance or a phone plan) removes the most risk entirely, while keeping reminders (without automatic payment) for bills that vary in amount, like a credit card, so you can still review the amount before it is charged.
+For bills that never change in amount, like insurance or a phone plan, pair a reminder with automatic payment to remove the risk entirely. For bills that vary, like a credit card, keep the reminder but skip automatic payment — that way you can still check the amount before it is charged.
 
 (Sources: Consumer Financial Protection Bureau — consumerfinance.gov; individual bank and biller apps)`,
     steps: [

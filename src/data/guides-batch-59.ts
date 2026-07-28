@@ -605,15 +605,15 @@ Setting up Honey takes about two minutes. You install the browser extension once
     thumbnailEmoji: ``,
     publishedAt: `2026-04-20`,
     difficulty: `Beginner`,
-    body: `Identity theft happens when someone uses your personal information without your permission, usually to steal money or open new accounts in your name. This can include your Social Security number, credit card number, bank account details, or other identifying information. It affects millions of Americans every year and can take months or years to fully resolve. Understanding how it happens and what you can do to prevent it is one of the most valuable investments you can make in your personal security.
+    body: `Identity theft happens when someone uses your personal information without your permission. They use it to steal money or open new accounts in your name. This can include your Social Security number, credit card number, or bank details. It affects millions of Americans every year, and it can take months or years to fully fix. Learning how it happens — and how to stop it — is one of the best things you can do for your security.
 
-Criminals get personal information through several common methods. Data breaches happen when hackers break into the computer systems of a company you do business with, such as a retailer, bank, health insurance company, or government agency, and steal large databases of customer information. This has happened to major companies including Target, Equifax, Yahoo, and many others. If your information was in one of those databases, it may now be circulating on illegal markets.
+Criminals get your information in a few common ways. Data breaches are one: hackers break into a company's computer systems and steal customer records. This has happened to major companies including Target, Equifax, and Yahoo. If your information was in one of those breaches, it may now be for sale on illegal markets.
 
-Phishing is another common method — criminals send emails or text messages pretending to be your bank, the IRS, Social Security Administration, or another trusted organization. These messages try to trick you into entering your login credentials, Social Security number, or credit card information on a fake website. The message often creates urgency: "Your account will be closed unless you verify your information now."
+Phishing is another common method. Criminals send emails or texts pretending to be your bank, the IRS, Social Security, or another trusted organization. These messages try to trick you into typing your password, Social Security number, or credit card number into a fake website. They often push urgency: "Your account will be closed unless you verify your information now."
 
-Physical theft still occurs too. Criminals steal mail from mailboxes, particularly new credit cards, bank statements, and tax documents. They also go through trash for discarded documents with personal information, and steal wallets and purses containing Social Security cards, credit cards, and ID.
+Physical theft still happens too. Criminals steal mail from mailboxes — especially new credit cards, bank statements, and tax documents. They also dig through trash for discarded documents with personal information, and steal wallets and purses with Social Security cards, credit cards, and ID inside.
 
-The encouraging news is that there are specific, practical steps that greatly reduce your risk. Freezing your credit reports, monitoring your accounts regularly, using strong unique passwords, and being skeptical of unsolicited messages are all proven protections. You do not need to be a technology expert to implement these — this guide walks you through each one.`,
+The good news: a few specific, practical steps cut your risk a lot. Freeze your credit reports. Check your accounts often. Use strong, unique passwords. Be skeptical of messages you did not expect. You do not need to be a tech expert to do any of this — this guide walks you through each step.`,
     steps: [
       {
         title: `Freeze your credit reports at all three bureaus`,

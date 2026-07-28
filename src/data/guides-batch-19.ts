@@ -484,7 +484,7 @@ export const guidesBatch19: Guide[] = [
     thumbnailEmoji: '',
     publishedAt: '2026-04-19',
     difficulty: 'Beginner',
-    body: `Many technology companies offer discounts for older adults — but most do not advertise them prominently because they want customers to pay full price. Knowing where to look and how to ask for discounts can save you $100-$400 per year on phone plans, streaming services, software, and tech support.\n\nDiscounts fall into several categories: AARP member discounts (for the $16/year AARP membership), age-based discounts available to anyone 55+ who asks, government help programs for low-income households, and nonprofit programs that provide free or reduced-cost technology access.`,
+    body: `Many tech companies offer discounts for older adults. But most do not advertise them, because they would rather you pay full price. Knowing where to look — and how to ask — can save you $100 to $400 a year on phone plans, streaming services, software, and tech support.\n\nDiscounts fall into a few categories: AARP member discounts (with the $16-a-year AARP membership), age-based discounts open to anyone 55 or older who asks, government help programs for low-income households, and nonprofit programs offering free or low-cost technology access.`,
     steps: [
       {
         title: 'Get an AARP membership for the widest discount access',

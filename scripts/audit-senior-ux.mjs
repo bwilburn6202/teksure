@@ -124,12 +124,27 @@ function fleschKincaid(text) {
 const DATA = join(SRC, 'data');
 const grades = [];
 const hardGuides = [];
+// Flesch–Kincaid's syllable heuristic is English-specific (it counts vowel
+// clusters using an a-e-i-o-u-y alphabet and assumes English morphology for
+// its "silent e" trimming). Spanish words average more syllables per word
+// than English ones, and accented vowels (á é í ó ú ñ ü) get stripped by the
+// [^a-z] cleanup in syllables() before counting even starts. Both effects
+// push Spanish text to absurd grade levels regardless of how simple it
+// actually reads — every guide in guides-spanish.ts scored grade 12-15 here,
+// which manually reading several of them confirmed is not real: they are
+// short, plain sentences a beginner reads fine. Scoring them with an
+// English-only formula and averaging the (meaningless) result into the
+// site-wide numbers actively misleads whoever reads this report, so they are
+// scored and reported separately instead of being silently included above.
+let esGuidesScored = 0;
+let esGradeSum = 0;
 for (const file of readdirSync(DATA)) {
   if (!file.startsWith('guides') || !file.endsWith('.ts')) continue;
   const text = readFileSync(join(DATA, file), 'utf8');
   const re = /slug:\s*(['"`])([^'"`]+)\1[\s\S]{0,3000}?body:\s*([`'"])((?:\\.|(?!\3)[\s\S])*)\3/g;
   let m;
   while ((m = re.exec(text)) !== null) {
+    const slug = m[2];
     // Line breaks (esp. bullet list items) don't carry sentence punctuation,
     // which used to make the FK formula treat a whole bulleted list as one
     // giant run-on sentence and report absurd grades (30+) for guides that
@@ -145,8 +160,13 @@ for (const file of readdirSync(DATA)) {
       .replace(/\s+/g, ' ');
     const g = fleschKincaid(body);
     if (g === null) continue;
+    if (slug.startsWith('es-')) {
+      esGuidesScored += 1;
+      esGradeSum += g;
+      continue;
+    }
     grades.push(g);
-    if (g > 10) hardGuides.push({ slug: m[2], grade: Number(g.toFixed(1)) });
+    if (g > 10) hardGuides.push({ slug, grade: Number(g.toFixed(1)) });
   }
 }
 
@@ -161,6 +181,11 @@ const report = {
   readingGradeAverage: Number(avgGrade.toFixed(1)),
   guidesAboveGrade8Pct: Number(pctOverTarget.toFixed(1)),
   guidesAboveGrade10: hardGuides.length,
+  guidesScoredSpanishExcluded: esGuidesScored,
+  spanishNote:
+    esGuidesScored > 0
+      ? `${esGuidesScored} Spanish-language guide(s) excluded from English readability scoring (formula does not apply to Spanish text).`
+      : '',
   filesUsingTinyText: tinyText.length,
   tinyTextInstances: tinyText.reduce((n, x) => n + x.count, 0),
   filesWithSmallTapTargets: smallTargets.length,
@@ -176,6 +201,7 @@ if (JSON_OUT) {
 console.log('\n── TekSure senior-UX audit ─────────────────────────────');
 console.log(`Files scanned                 ${report.filesScanned}`);
 console.log(`Guides scored for readability ${report.guidesScored}`);
+if (report.spanishNote) console.log(`  (${report.spanishNote})`);
 console.log('');
 console.log(`Average reading grade         ${report.readingGradeAverage}   (target: <= 8)`);
 console.log(`Guides above grade 8          ${report.guidesAboveGrade8Pct}%`);

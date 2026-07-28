@@ -706,13 +706,13 @@ The Walmart app is required for mobile Scan & Go (which lets you scan items as y
     thumbnailEmoji: '',
     publishedAt: '2026-04-19',
     difficulty: 'Beginner',
-    body: `Amazon Prime costs $139 per year ($14.99/month), and most members use it primarily for free two-day shipping. But the membership includes a long list of other benefits that many Prime members don't know about — some worth significant money on their own.
+    body: `Amazon Prime costs $139 a year, or $14.99 a month. Most members use it mainly for free two-day shipping. But the membership includes many other benefits that many Prime members do not know about — some worth real money on their own.
 
-Here's what's included: Prime Video (streaming movies and TV shows comparable in breadth to Netflix, including Amazon Original series), Prime Music (streaming music with a catalog of 100 million songs), Prime Reading (free access to rotating selection of Kindle books and magazines), Amazon Photos (unlimited photo storage and 5GB video storage, separate from iCloud or Google Photos), Prime Gaming (free games and in-game content each month), Amazon Fresh delivery (free grocery delivery in some areas), prescription discounts through Amazon Pharmacy, and Whole Foods discounts (extra 10% off sale items).
+Here is what is included: Prime Video (movies and shows about as broad as Netflix, plus Amazon Original series), Prime Music (100 million songs to stream), Prime Reading (free access to a rotating selection of Kindle books and magazines), Amazon Photos (unlimited photo storage and 5GB of video storage, separate from iCloud or Google Photos), Prime Gaming (free games and in-game content each month), Amazon Fresh delivery (free grocery delivery in some areas), prescription discounts through Amazon Pharmacy, and Whole Foods discounts (an extra 10% off sale items).
 
-Many of these can replace other paid services. If you're paying separately for music streaming, Amazon Prime Music is included. If you store photos elsewhere for a fee, Amazon Photos includes unlimited photo backup. Prime Reading reduces the need to purchase Kindle books.
+Many of these can replace other paid services you already have. If you pay separately for music streaming, Prime Music is already included. If you pay to store photos elsewhere, Amazon Photos gives you unlimited backup. Prime Reading cuts down on buying Kindle books.
 
-Amazon Family members can be added to most benefits: household sharing lets two adults and four children share most Prime benefits. This makes the per-person cost much more reasonable for families.
+Amazon Family lets you share most Prime benefits: two adults and four children can share one membership. That makes the cost per person much lower for families.
 
 A few benefits have their own apps: Prime Video has its own app (Prime Video), Prime Music and Amazon Music share the Amazon Music app, Amazon Photos has its own app. You access most of them through the respective apps on your phone or smart TV, not through the main Amazon Shopping app.`,
     steps: [

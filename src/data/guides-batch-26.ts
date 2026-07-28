@@ -807,13 +807,13 @@ Note that Crash Detection works even if your iPhone is in low-power mode or in a
     thumbnailEmoji: '🆘',
     publishedAt: '2026-04-19',
     difficulty: 'Beginner',
-    body: `Android phones have a built-in Emergency SOS feature that lets you call 911 quickly by pressing the power button multiple times — useful in situations where you cannot safely type or navigate a menu. When activated, it calls emergency services, shares your GPS location, and can send an alert to your emergency contacts.
+    body: `Android phones have a built-in Emergency SOS feature. Press the power button several times fast, and it calls 911 for you. This helps when you cannot safely type or find a menu. Once it turns on, it calls emergency services, shares your GPS location, and can alert your emergency contacts.
 
-The exact setup varies slightly by Android brand (Samsung, Pixel, Motorola), but all recent Android phones running Android 14 or later have Emergency SOS built into the Settings.
+The setup steps vary a little by brand — Samsung, Pixel, or Motorola. But every recent Android phone running Android 14 or later has Emergency SOS built into Settings.
 
-By default on most Android phones, pressing the power button five times rapidly activates Emergency SOS. On some phones, pressing and holding the side button works. A countdown occurs before the call is placed, giving you a chance to cancel if it was accidental.
+On most Android phones, pressing the power button five times fast turns on Emergency SOS. On some phones, you press and hold the side button instead. A countdown runs before the call goes out, so you can cancel it if it was an accident.
 
-Emergency contacts are set up separately — these are the people who receive your location and an alert message when Emergency SOS activates. These contacts do not need to have any special app installed. They receive an SMS text message with your location link.
+You set up emergency contacts separately. These are the people who get your location and an alert when Emergency SOS turns on. They do not need any special app — they get a text message with a link to your location.
 
 Google's Personal Safety app (built into Pixel phones and available on Google Play for other Android phones) extends these features: it adds crisis contact sharing, location sharing for solo activities, and integration with Pixel's crash detection. For the best Android safety features, this app is worth installing if it is not already on your phone.
 

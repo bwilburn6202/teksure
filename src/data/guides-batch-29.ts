@@ -147,13 +147,13 @@ Setup requires nothing — the feature is on by default on compatible iPhones. Y
     thumbnailEmoji: '',
     publishedAt: '2026-04-19',
     difficulty: 'Beginner',
-    body: `A Medical ID is critical health information stored on your phone that emergency responders can access without unlocking it. If you're unconscious, injured, or unable to speak, first responders look for a Medical ID to learn about your medical conditions, allergies, medications, blood type, and emergency contacts.
+    body: `A Medical ID stores key health information on your phone. Emergency responders can see it without unlocking your phone. If you are unconscious, hurt, or unable to speak, first responders check for a Medical ID. It tells them your conditions, allergies, medications, blood type, and who to contact.
 
-On iPhone, this feature is built into the Health app and well-known. On Android, it's handled differently by each brand, but every major Android phone has a way to store emergency medical information accessible from the lock screen.
+On iPhone, this feature lives in the Health app and is well known. On Android, each brand handles it a little differently. But every major Android phone has a way to store this information on the lock screen.
 
-For Samsung Galaxy phones, Medical Information is in the Samsung Health app and can also be set up in Settings. For Google Pixel phones, it's in the Emergency Information section of Settings. For other Android phones, look in Settings under "Safety & emergency" or "Emergency information."
+On Samsung Galaxy phones, look in the Samsung Health app or in Settings. On Google Pixel phones, look under Emergency Information in Settings. On other Android phones, look in Settings under "Safety & emergency" or "Emergency information."
 
-All Android phones running Android 4.0 or newer have the ability to store emergency contact information visible from the lock screen. The exact path to find it varies, but it's always there.
+Every Android phone running Android 4.0 or newer can store emergency contact information on the lock screen. The exact path changes by phone, but the feature is always there.
 
 The information you should include: blood type, any serious medical conditions (diabetes, heart disease, epilepsy, etc.), major allergies (especially drug allergies — this is critical for emergency treatment), current medications (especially blood thinners, insulin, or medications with emergency significance), and at least two emergency contacts with their relationship to you.
 
@@ -609,13 +609,13 @@ Going through your notification settings once a month and pruning apps you've gi
     thumbnailEmoji: '',
     publishedAt: '2026-04-19',
     difficulty: 'Beginner',
-    body: `Android notifications can quickly get overwhelming. News apps, social media, email, games, and dozens of other apps all compete for your attention every hour. The fix isn't to put up with the noise — it's to spend a few minutes setting up your phone so it only alerts you for things that actually matter.
+    body: `Android notifications can quickly pile up. News apps, social media, email, games, and dozens of other apps all compete for your attention every hour. The fix is not to put up with the noise. It is to spend a few minutes setting up your phone so it only alerts you to things that matter.
 
-Android's notification system is one of the most customizable around. You can turn off notifications from one part of an app while keeping others (for example, muting promotions but keeping alerts for direct messages). You can also set priority levels and schedule Do Not Disturb to go silent at certain hours.
+Android lets you customize notifications more than most phones. You can turn off notifications from one part of an app while keeping others on — for example, muting promotions but keeping alerts for direct messages. You can also set priority levels and schedule Do Not Disturb for certain hours.
 
-Android also has a "Notification history" feature. It shows notifications you missed or dismissed by accident — handy when you know you got a message but can't find it.
+Android also has a "Notification history" feature. It shows notifications you missed or dismissed by accident. This is handy when you know a message came in but cannot find it.
 
-The biggest improvement for most people: go through the apps that send the most notifications and turn them off, or switch them to silent. The exact steps vary a bit by brand (Samsung, Google Pixel, and so on), but the core system works the same way on every Android phone.
+The biggest fix for most people: go through the apps that send you the most notifications, and turn them off or switch them to silent. The exact steps vary a bit by brand — Samsung, Google Pixel, and so on — but the core system works the same way on every Android phone.
 
 Samsung phones have an additional "Advanced notifications" section with extra options for notification reminders (periodic reminders about unchecked notifications), adaptive alerts (which learn your patterns), and pop-up style notifications.
 

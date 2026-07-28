@@ -598,13 +598,13 @@ Wag is available in most US cities. If your area isn't covered, Rover (rover.com
     thumbnailEmoji: '',
     publishedAt: '2026-04-19',
     difficulty: 'Beginner',
-    body: `Healthgrades is one of the most widely used tools for finding and researching doctors in the United States. The website and app let you search for doctors by specialty, location, and insurance accepted, then view their credentials, hospital affiliations, patient ratings, and malpractice or disciplinary history.
+    body: `Healthgrades is one of the most widely used tools for finding and researching doctors in the United States. The website and app let you search for doctors by specialty, location, and accepted insurance. Then you can see their credentials, hospital ties, patient ratings, and any malpractice or disciplinary history.
 
-Healthgrades has information on more than 3 million healthcare providers across the country. For many doctors, you can read patient reviews and ratings, see which hospitals they're affiliated with, check their board certifications, and view their education and training history.
+Healthgrades has information on more than 3 million healthcare providers across the country. For many doctors, you can read patient reviews and ratings, see which hospitals they work with, check their board certifications, and view their education and training.
 
-One of Healthgrades' most useful features is the ability to book appointments online directly through the platform. For participating practices, you can see available appointment times and book without calling — including for same-day and next-day openings.
+One of the most useful features is booking appointments online, right through the platform. For participating practices, you can see open times and book without calling — including same-day and next-day openings.
 
-Healthgrades is completely free to use. There's no registration required to search for doctors, though creating a free account lets you save doctors you're considering and receive appointment reminders.
+Healthgrades is completely free to use. You do not need to register to search for doctors. But creating a free account lets you save doctors you are considering and get appointment reminders.
 
 Other sites like Vitals.com, US News Doctor Finder, and your insurance company's provider directory offer similar information — it's worth checking multiple sources when researching a new doctor.`,
     steps: [

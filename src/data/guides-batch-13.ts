@@ -313,7 +313,7 @@ export const guidesBatch13: Guide[] = [
     thumbnailEmoji: '',
     publishedAt: '2026-04-19',
     difficulty: 'Beginner',
-    body: "Government imposter scams are one of the most common types of fraud targeting older adults. Scammers call or email pretending to be from the Social Security Administration, IRS, Medicare, or other government agencies and threaten you with arrest, suspended benefits, or large fines unless you pay right away. The calls and emails look and sound very convincing — but they are always fake.",
+    body: "Government imposter scams are one of the most common types of fraud aimed at older adults. Scammers call or email pretending to be from the Social Security Administration, the IRS, Medicare, or another government agency. They threaten you with arrest, suspended benefits, or big fines unless you pay right away. The calls and emails can look and sound very convincing. But they are always fake.",
     steps: [
       {
         title: 'Know what real government agencies will never do',

@@ -601,7 +601,7 @@ Parents can use Screen Time to manage a child's phone remotely through Family Sh
     thumbnailEmoji: '',
     publishedAt: '2026-04-19',
     difficulty: 'Beginner',
-    body: `AI image generators like Midjourney, DALL-E, and Stable Diffusion can create photorealistic images of people, places, and events that never happened. These images are used in scams (fake profiles on dating and social apps), political disinformation, and click-bait news. Knowing the tell-tale signs of AI-generated images — and knowing which tools can help identify them — is a practical media literacy skill for 2026.`,
+    body: `AI image generators like Midjourney, DALL-E, and Stable Diffusion can create realistic images of people, places, and events that never happened. Scammers use these images for fake dating and social media profiles. Others use them to spread false political claims or clickbait news. Knowing the signs of an AI-generated image — and which tools can help spot one — is a useful skill in 2026.`,
     steps: [
       {
         title: 'Look at the hands and fingers first',

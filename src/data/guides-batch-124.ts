@@ -540,11 +540,11 @@ Before calling anyone or buying a new printer, work through the steps below. Pla
     thumbnailEmoji: '🎧',
     publishedAt: '2026-05-03',
     difficulty: 'Beginner',
-    body: `Bluetooth technology is convenient when it works and deeply frustrating when it doesn't. Most Bluetooth connection problems come from one of three sources: the device isn't in pairing mode, a previous pairing record is causing a conflict, or Bluetooth is turned off on one of the two devices.
+    body: `Bluetooth is convenient when it works and frustrating when it doesn't. Most connection problems come from one of three things: the device is not in pairing mode, an old pairing record is causing a conflict, or Bluetooth is turned off on one of the two devices.
 
-Bluetooth connections work by one device "advertising" its availability and another device "seeing" it and connecting. If the first device is not actively advertising — which usually requires putting it into pairing mode specifically — the second device won't find it no matter how long you look.
+Here is how it works: one device "advertises" that it is available, and the other device "sees" it and connects. If the first device is not advertising — which usually means it needs to be put into pairing mode — the second device will not find it, no matter how long you look.
 
-The fix is almost always to forget the old connection on both sides and pair fresh.`,
+The fix is almost always the same: forget the old connection on both devices, then pair again from scratch.`,
     steps: [
       {
         title: 'Make sure Bluetooth is on on both devices',

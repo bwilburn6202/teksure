@@ -900,13 +900,13 @@ Quick Tip: Your state's Department of Revenue or Department of Taxation website 
     thumbnailEmoji: ``,
     publishedAt: `2026-04-20`,
     difficulty: `Beginner`,
-    body: `A traditional power of attorney document gives someone legal authority to manage your financial and legal affairs. But in today's world, most of those affairs live online — bank accounts, investment accounts, Social Security accounts, email, bill payment services, and more.
+    body: `A power of attorney document gives someone legal authority to manage your money and legal affairs. But today, most of those affairs live online — bank accounts, investments, Social Security, email, and bill payment services.
 
-The problem: a power of attorney document alone may not be enough to access online accounts. Many financial institutions have specific requirements for digital access, and some platforms have no clear policy at all. This is a gap that most people do not realize exists until a crisis is already underway.
+Here is the problem: a power of attorney document alone may not be enough to get into your online accounts. Many financial companies have their own rules for digital access, and some have no clear policy at all. Most people do not realize this gap exists until a crisis is already happening.
 
 **Why this matters**
 
-If you become incapacitated — whether from illness, injury, or cognitive decline — your agent needs to be able to pay your bills online and access your bank and investment accounts. They also need to respond to important emails and manage subscriptions and automatic payments. Without advance preparation, even a legitimate agent with a valid power of attorney may face weeks of delays navigating financial institutions' bureaucracies.
+If you become unable to manage your own affairs — from illness, injury, or cognitive decline — your agent needs to pay your bills online and reach your bank and investment accounts. They also need to answer important emails and manage subscriptions and automatic payments. Without some planning ahead of time, even an agent with a valid power of attorney can face weeks of delay dealing with financial companies.
 
 **What to prepare**
 
