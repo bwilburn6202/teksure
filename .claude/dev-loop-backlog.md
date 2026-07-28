@@ -103,6 +103,66 @@ Roughly 400+ English guides above grade 10 remain. Next run: pull the
 list fresh again and keep going, or switch to the 361 overlong excerpts
 if that becomes the higher-value item.
 
+## Weekly review note -- 2026-07-28 (continued, fourth batch)
+
+Continued again per "Continue Working please." Before picking new guides,
+ran the audit script's underlying regex directly (not its --json output,
+which truncates hardGuides to the top 50) to get the real, complete list
+of all guides still above grade 10. Cross-checking that full list against
+every slug touched in batches 1-3 turned up a real bug in this pass's own
+method: batches 1-3 read a fixed line-count window (usually ~18-30 lines)
+starting at each guide's `slug:` line, and simplified whatever body text
+fell inside that window. On any guide whose body ran longer than the
+window, the tail paragraphs were never read or touched -- but
+Flesch-Kincaid scores the *entire* body field, so those guides kept
+scoring above grade 10 even though they'd supposedly been "done." 31 of
+the ~57 previously-touched guides were still in the above-10 list for
+exactly this reason.
+
+Rather than start fresh guides, this batch went back and finished the
+worst 20 of those 31 -- reading the complete body field (grep for the
+closing backtick, not a fixed line count) and simplifying whatever
+remained. 10 of the 20 now score at or below grade 10:
+recover-hacked-email-account, book-medical-transportation-online,
+apple-watch-health-seniors, amazon-subscribe-and-save-guide,
+google-assistant-phone-tips, how-to-use-my-social-security-account,
+windows-vs-mac-guide, iphone-crash-detection, amwell-telehealth-guide,
+fidelity-app-guide. The other 10 dropped meaningfully but are still
+marginally above 10 (laptop-buying-guide-seniors,
+power-of-attorney-digital, samsung-internet-tips-guide,
+use-fema-app-emergency-alerts, sharecare-guide,
+facebook-marketplace-buy-safely, onenote-beginners-guide,
+vanguard-app-guide, avoid-roaming-guide, iphone-weather-app-guide) --
+further cuts started trading away real content (account numbers, dollar
+figures, feature names), so left as improved-but-not-fully-under-10
+rather than mechanically forcing the number down, per this project's own
+"don't rewrite for a number" rule.
+
+104/104 tests pass, TS parse clean on all 18 touched files.
+guidesAboveGrade10 (full list, not the 50-cap): 533 -> 523.
+
+11 more previously-touched guides remain above grade 10 for the same
+truncated-window reason: phishing-email-tips, android-notification-settings,
+iphone-weather-app-guide, amazon-prime-benefits-guide, webmd-app-guide,
+ios-mail-app-categories-explained, how-to-use-task-manager-windows,
+iphone-accessibility-shortcut, windows-11-focus-sessions,
+google-career-certificates, mayoclinic-guide, 5g-home-internet-guide
+(iphone-weather-app-guide is listed above as "dropped but not fixed" --
+it's in both counts). youtube-videos-buffering-fix is separately confirmed
+complete (full body already simplified, stays at 11.8 on vocabulary alone).
+
+Hit the same `.git` unlink restriction again (index.lock, HEAD.lock all
+failed `rm -f` with "Operation not permitted"); quarantined with `mv`
+before each retry, per the documented workaround.
+
+Still uncommitted, untouched: `src/pages/tools/SeniorVoicemail.tsx` --
+same unrelated, unvetted edit flagged in the last three notes.
+
+Next run: finish the 11 remaining truncated-window guides listed above
+first (fastest path to real grade-10 crossings), then go back to pulling
+fresh candidates from the full (non-truncated) hardGuides list -- roughly
+390+ English guides above grade 10 remain in total.
+
 ---
 
 ## Cycle 32 — 2026-07-28T14:30:23.586Z
@@ -7910,82 +7970,6 @@ No TypeScript errors.
 
 ### [ok] Aged guides
 0 of 3933 guides published before 2024-12-14.
-
-### Suggested next actions
-- **Stale OS version mentions** — 67 mention(s) of older OS versions in guides.
-
----
-
-## Cycle 156 — 2026-06-14T05:03:08.127Z
-
-### [ok] Site metrics snapshot
-3632 guides, 3154 routes, 285 tools.
-
-### [ok] Duplicate guide slugs
-No duplicate slugs.
-
-### [ok] Internal link audit
-0 broken targets, 2602 orphaned routes (of 3116 routes).
-
-### [ok] TypeScript compile
-No TypeScript errors.
-
-### [warn] Stale OS version mentions
-67 mention(s) of older OS versions in guides.
-
-```
-- src/data/guides-batch-103.ts:31 — iOS 10–16 (`iOS 11`)
-- src/data/guides-batch-15.ts:283 — iOS 10–16 (`iOS 14`)
-- src/data/guides-batch-154.ts:326 — iOS 10–16 (`iOS 16`)
-- src/data/guides-batch-157.ts:589 — macOS pre-Ventura (`macOS Monterey`)
-- src/data/guides-batch-163.ts:63 — iOS 10–16 (`iOS 12`)
-- src/data/guides-batch-18.ts:77 — iOS 10–16 (`iOS 16`)
-- src/data/guides-batch-203.ts:94 — iOS 10–16 (`iOS 13`)
-- src/data/guides-batch-209.ts:95 — iOS 10–16 (`iOS 13`)
-- src/data/guides-batch-21.ts:610 — iOS 10–16 (`iOS 11`)
-- src/data/guides-batch-210.ts:55 — iOS 10–16 (`iOS 15`)
-```
-
-### [ok] Aged guides
-0 of 3933 guides published before 2024-12-14.
-
-### Suggested next actions
-- **Stale OS version mentions** — 67 mention(s) of older OS versions in guides.
-
----
-
-## Cycle 155 — 2026-06-13T19:50:21.805Z
-
-### [ok] Site metrics snapshot
-3632 guides, 3154 routes, 285 tools.
-
-### [ok] Duplicate guide slugs
-No duplicate slugs.
-
-### [ok] Internal link audit
-0 broken targets, 2602 orphaned routes (of 3116 routes).
-
-### [ok] TypeScript compile
-No TypeScript errors.
-
-### [warn] Stale OS version mentions
-67 mention(s) of older OS versions in guides.
-
-```
-- src/data/guides-batch-103.ts:31 — iOS 10–16 (`iOS 11`)
-- src/data/guides-batch-15.ts:283 — iOS 10–16 (`iOS 14`)
-- src/data/guides-batch-154.ts:326 — iOS 10–16 (`iOS 16`)
-- src/data/guides-batch-157.ts:589 — macOS pre-Ventura (`macOS Monterey`)
-- src/data/guides-batch-163.ts:63 — iOS 10–16 (`iOS 12`)
-- src/data/guides-batch-18.ts:77 — iOS 10–16 (`iOS 16`)
-- src/data/guides-batch-203.ts:94 — iOS 10–16 (`iOS 13`)
-- src/data/guides-batch-209.ts:95 — iOS 10–16 (`iOS 13`)
-- src/data/guides-batch-21.ts:610 — iOS 10–16 (`iOS 11`)
-- src/data/guides-batch-210.ts:55 — iOS 10–16 (`iOS 15`)
-```
-
-### [ok] Aged guides
-0 of 3933 guides published before 2024-12-13.
 
 ### Suggested next actions
 - **Stale OS version mentions** — 67 mention(s) of older OS versions in guides.
