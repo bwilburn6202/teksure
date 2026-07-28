@@ -427,15 +427,15 @@ When you leave a job, your 401(k) money stays yours. You can leave it in your fo
     thumbnailEmoji: ``,
     publishedAt: `2026-04-20`,
     difficulty: `Beginner`,
-    body: `Fidelity Investments is one of the largest financial services companies in the United States. It manages trillions of dollars in retirement accounts, brokerage accounts, and mutual funds. Their mobile app brings all of that to your phone, giving you a clear view of your accounts and letting you move money, place trades, and manage your retirement savings from anywhere.
+    body: `Fidelity Investments is one of the largest financial services companies in the United States. It manages trillions of dollars in retirement accounts, brokerage accounts, and mutual funds. Their mobile app brings all of that to your phone. You get a clear view of your accounts and can move money, place trades, and manage your retirement savings from anywhere.
 
-The app is free and works on both iPhone and Android. There are no commissions on stock and ETF trades placed through the app, and Fidelity has no account minimums for brokerage and IRA accounts. If your employer's 401(k) is with Fidelity, you can access it through the same app and account — one convenient place for all your financial accounts.
+The app is free and works on both iPhone and Android. There are no commissions on stock and ETF trades placed through the app, and Fidelity has no account minimums for brokerage and IRA accounts. If your employer's 401(k) is with Fidelity, you can access it through the same app and account, one convenient place for all your financial accounts.
 
-The home screen shows a summary of your balances across all your Fidelity accounts — brokerage, IRA, 401(k), and any cash management accounts. Tap any account to see its holdings, performance over time, and recent activity. The app uses charts and plain-language descriptions to explain what is happening with your money.
+The home screen shows a summary of your balances across all your Fidelity accounts: brokerage, IRA, 401(k), and any cash management accounts. Tap any account to see its holdings, performance over time, and recent activity. The app uses charts and plain-language descriptions to explain what's happening with your money.
 
-For people who want to invest in individual stocks or funds, the app includes a research section with company profiles, analyst ratings, and historical price charts. You can place a buy or sell order in a few taps. For people who prefer a simpler approach, the app makes it straightforward to contribute to a target-date fund or set up recurring investments.
+For people who want to invest in individual stocks or funds, the app has a research section with company profiles, analyst ratings, and historical price charts. You can place a buy or sell order in a few taps. For a simpler approach, the app lets you contribute to a target-date fund or set up recurring investments without much extra work.
 
-The Fidelity app also includes a feature called "Full View" that allows you to link external financial accounts — accounts at other banks or brokerages — so you can see your complete financial picture in one place.`,
+The Fidelity app also has a feature called "Full View" that lets you link external financial accounts, like accounts at other banks or brokerages, so you can see your complete financial picture in one place.`,
     steps: [
       {
         title: `Download the App and Sign In`,

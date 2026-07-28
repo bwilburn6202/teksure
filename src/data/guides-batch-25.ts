@@ -287,15 +287,15 @@ The app requires creating a Medicare.gov account if you do not have one. Your Me
     thumbnailEmoji: '',
     publishedAt: '2026-04-19',
     difficulty: 'Beginner',
-    body: `Facebook Marketplace is a free classifieds section on Facebook where people and businesses sell new and used items locally. You can find furniture, appliances, cars, electronics, clothing, and much more — often for a lot less than retail.
+    body: `Facebook Marketplace is a free classifieds section on Facebook where people and businesses sell new and used items locally. You can find furniture, appliances, cars, electronics, clothing, and much more, often for a lot less than retail.
 
-Unlike Amazon or eBay, most Marketplace deals happen locally: you contact the seller, agree on a price, meet in person to check the item and pay, then take it home. There is no central payment system or buyer protection for most private-seller deals, which is why knowing how to shop safely matters.
+Unlike Amazon or eBay, most Marketplace deals happen locally. You contact the seller, agree on a price, meet in person to check the item and pay, then take it home. There's no central payment system or buyer protection for most private-seller deals, which is why knowing how to shop safely matters.
 
-The most important safety rule: never pay for an item before seeing it in person. Scammers on Marketplace often post photos of items they do not actually have, then ask you to pay by Venmo, Zelle, or Cash App before you meet. Once you send money this way, it cannot be reversed, and you likely will not get the item.
+The most important safety rule: never pay for an item before seeing it in person. Scammers on Marketplace often post photos of items they don't actually have, then ask you to pay by Venmo, Zelle, or Cash App before you meet. Once you send money this way, it can't be reversed, and you likely won't get the item.
 
-Buyer protection does exist if you pay using Facebook's built-in checkout feature and the seller has opted into it — but this is not available for all listings. For most private local transactions, no buyer protection exists, and any payment disputes are resolved directly between buyer and seller.
+Buyer protection does exist if you pay using Facebook's built-in checkout feature and the seller has opted into it, but this isn't available for all listings. For most private local transactions, no buyer protection exists, and any payment disputes are resolved directly between buyer and seller.
 
-Meeting safely in person is straightforward if you follow a few common-sense rules. Bring a friend when possible, meet in public places, and inspect the item thoroughly before handing over any cash or payment.`,
+Meeting safely in person is simple if you follow a few common-sense rules. Bring a friend when you can, meet in public places, and check the item carefully before handing over any cash or payment.`,
     steps: [
       {
         title: 'Browse Marketplace and Find an Item',
@@ -475,11 +475,11 @@ Google Assistant is one of the most capable voice assistants available, and it l
 
 For hands-free use, the "Hey Google" wake word works even when your screen is off. That's useful when your phone is on the counter or in your pocket. This needs always-on microphone listening turned on, which is on by default on most Android phones.
 
-Google Assistant integrates deeply with Google's ecosystem: it can read your Gmail for flight information and reminders, surface appointments from Google Calendar, and give you personalized answers based on your location and habits.
+Google Assistant works closely with Google's other apps. It can read your Gmail for flight information and reminders, show appointments from Google Calendar, and give you answers based on your location and habits.
 
-Some of the most useful everyday commands for older adults: checking medication reminders, setting timers while cooking, answering trivia questions for family gatherings, getting turn-by-turn directions, calling family members hands-free while driving, and controlling smart home devices.
+Some of the most useful everyday commands for older adults: checking medication reminders, setting timers while cooking, answering trivia questions at family gatherings, getting turn-by-turn directions, calling family hands-free while driving, and controlling smart home devices.
 
-"Hey Google" works on phones, Nest speakers, Android TVs, and Wear OS smartwatches — the same voice commands work across all these devices if they are signed in to the same Google account.`,
+"Hey Google" works on phones, Nest speakers, Android TVs, and Wear OS smartwatches. The same voice commands work across all these devices if they're signed in to the same Google account.`,
     steps: [
       {
         title: 'Set Up "Hey Google" Wake Word',

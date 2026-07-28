@@ -381,9 +381,9 @@ OneNote is free with a Microsoft account, which you likely already have if you u
 
 OneNote is flexible because you can click or tap anywhere on a page and start writing there. Most note apps only let you type from top to bottom. In OneNote, you can have text in one corner, a photo in the middle, and a checklist on the right side of the same page.
 
-OneNote is excellent for meeting or conversation notes (taking notes during a doctor's appointment), recipe collections, travel planning, shopping lists, project planning, and keeping track of important information like account numbers (stored securely).
+OneNote works well for meeting or conversation notes (like notes from a doctor's appointment), recipe collections, travel planning, shopping lists, project planning, and keeping track of important information such as account numbers, stored securely.
 
-If you have Microsoft 365 (formerly Office 365), OneNote integrates with Word, Excel, and Outlook, making it even more powerful for managing work and personal tasks.`,
+If you have Microsoft 365 (formerly Office 365), OneNote works with Word, Excel, and Outlook, making it even more useful for managing work and personal tasks.`,
     steps: [
       {
         title: 'Download OneNote and sign in',

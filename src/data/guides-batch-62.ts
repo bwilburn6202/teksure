@@ -900,23 +900,23 @@ Quick Tip: Your state's Department of Revenue or Department of Taxation website 
     thumbnailEmoji: ``,
     publishedAt: `2026-04-20`,
     difficulty: `Beginner`,
-    body: `A power of attorney document gives someone legal authority to manage your money and legal affairs. But today, most of those affairs live online — bank accounts, investments, Social Security, email, and bill payment services.
+    body: `A power of attorney document gives someone legal authority to manage your money and legal affairs. But today, most of those affairs live online: bank accounts, investments, Social Security, email, and bill payment services.
 
-Here is the problem: a power of attorney document alone may not be enough to get into your online accounts. Many financial companies have their own rules for digital access, and some have no clear policy at all. Most people do not realize this gap exists until a crisis is already happening.
+Here's the problem: a power of attorney document alone may not get your agent into your online accounts. Many financial companies have their own rules for digital access, and some have no clear policy at all. Most people don't realize this gap exists until a crisis hits.
 
 **Why this matters**
 
-If you become unable to manage your own affairs — from illness, injury, or cognitive decline — your agent needs to pay your bills online and reach your bank and investment accounts. They also need to answer important emails and manage subscriptions and automatic payments. Without some planning ahead of time, even an agent with a valid power of attorney can face weeks of delay dealing with financial companies.
+If you become unable to manage your own affairs, from illness, injury, or cognitive decline, your agent needs to pay your bills online and reach your bank and investment accounts. They also need to answer important emails and manage subscriptions and automatic payments. Without some planning ahead of time, even an agent with a valid power of attorney can face weeks of delay dealing with financial companies.
 
 **What to prepare**
 
-The most practical step is creating a "digital access document" — a secure, written record of your account access. It should include your email addresses and passwords, your online banking and investment logins, any automatic bill payments and their accounts, and the PIN or passcode for your phone and computer. This document should be stored securely, not on your computer, and shared only with your agent.
+The most practical step is creating a "digital access document," a secure, written record of your account access. It should list your email addresses and passwords, your online banking and investment logins, any automatic bill payments and their accounts, and the PIN or passcode for your phone and computer. Store this document securely, not on your computer, and share it only with your agent.
 
-Password managers like Bitwarden, LastPass, and 1Password allow you to designate an emergency contact who can request access under specific conditions — this is a secure alternative to writing down passwords.
+Password managers like Bitwarden, LastPass, and 1Password let you name an emergency contact who can request access under specific conditions. This is a secure alternative to writing down passwords.
 
 **Legal recognition**
 
-The Revised Uniform Fiduciary Access to Digital Assets Act (RUFADAA) has been adopted by most states. It allows your fiduciary (agent, executor, or trustee) to access digital assets with proper legal authority. Your power of attorney document should explicitly state that digital asset access is authorized.
+Most states have adopted the Revised Uniform Fiduciary Access to Digital Assets Act (RUFADAA). It lets your fiduciary (agent, executor, or trustee) access digital assets with proper legal authority. Your power of attorney document should clearly state that digital asset access is allowed.
 
 Quick Tip: Talk to your estate planning attorney about adding specific digital asset language to your power of attorney document.`,
     steps: [

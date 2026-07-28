@@ -412,11 +412,11 @@ To get started, you will need the free Lyft app, an account with your name and p
     thumbnailEmoji: '',
     publishedAt: '2026-04-16',
     difficulty: 'Beginner',
-    body: `Non-Emergency Medical Transportation (NEMT) provides rides to and from medical appointments for people who have trouble arranging their own transportation. If you have Medicaid, you may be entitled to free NEMT rides to covered medical appointments — a benefit millions of eligible people do not know about or use. Some Medicare Advantage plans also cover transportation.
+    body: `Non-Emergency Medical Transportation, or NEMT, provides rides to and from medical appointments for people who have trouble arranging their own ride. If you have Medicaid, you may qualify for free NEMT rides to covered medical appointments. Millions of eligible people don't know about this benefit or don't use it. Some Medicare Advantage plans cover transportation too.
 
-Beyond insurance benefits, several services now offer medical-specific rides. Lyft and Uber both have healthcare programs (Lyft Healthcare and Uber Health) that hospitals, clinics, and care coordinators can use to arrange rides for you. Services like Veyo and ModivCare focus on NEMT and work directly with insurance companies.
+Beyond insurance, several services now offer medical-specific rides. Lyft and Uber both have healthcare programs (Lyft Healthcare and Uber Health) that hospitals, clinics, and care coordinators can use to arrange rides for you. Services like Veyo and ModivCare focus on NEMT and work directly with insurance companies.
 
-Booking depends on your insurance and location, but in most cases you call a number or use an app to request a ride at least 24 to 48 hours ahead.`,
+Booking depends on your insurance and location. In most cases, you call a number or use an app to request a ride at least 24 to 48 hours ahead.`,
     steps: [
       { title: 'Check your insurance benefits', content: 'Call the member services number on the back of your insurance card and ask: "Does my plan cover non-emergency medical transportation?" If you have Medicaid, the answer is almost certainly yes. Ask for the phone number or portal you use to schedule rides.' },
       { title: `Call or book online through your plan's transportation broker`, content: 'Medicaid transportation is often managed by a "transportation broker" company — such as ModivCare or Veyo — contracted by your state. Call their scheduling number or go to their website to request a ride, giving your appointment date, time, address, and pickup address.' },

@@ -639,23 +639,23 @@ Once you get your bookmarks organized, you'll find that the websites you need ar
     thumbnailEmoji: ``,
     publishedAt: `2026-04-19`,
     difficulty: `Beginner`,
-    body: `Samsung Internet is the default web browser on Samsung Galaxy phones and tablets. Many people switch to Google Chrome, but Samsung Internet has some genuinely useful features worth keeping — especially for Galaxy users who want tight security ties to their device.
+    body: `Samsung Internet is the default web browser on Samsung Galaxy phones and tablets. Many people switch to Google Chrome, but Samsung Internet has some genuinely useful features worth keeping, especially for Galaxy users who want tight security tied to their device.
 
-Here is what makes Samsung Internet stand out:
+Here's what makes Samsung Internet stand out:
 
-**Secret Mode** — Like Incognito in Chrome, Secret Mode does not save your browsing history, cookies, or form data. Samsung Internet can also lock Secret Mode with your fingerprint or Samsung account PIN, a layer of security Chrome does not have.
+**Secret Mode** — Like Incognito in Chrome, Secret Mode doesn't save your browsing history, cookies, or form data. Samsung Internet can also lock Secret Mode with your fingerprint or Samsung account PIN, a layer of security Chrome doesn't have.
 
-**Built-in ad and tracking blocker** — Samsung Internet has a content blockers feature that works with free extensions from the Galaxy Store to block ads and tracking scripts — faster than installing a separate app.
+**Built-in ad and tracking blocker** — Samsung Internet has a content blockers feature. It works with free extensions from the Galaxy Store to block ads and tracking scripts, faster than installing a separate app.
 
-**Biometric password fill** — Samsung Internet integrates with Samsung Pass, letting you log into websites with just your fingerprint, instead of typing passwords.
+**Biometric password fill** — Samsung Internet works with Samsung Pass, so you can log into websites with just your fingerprint instead of typing passwords.
 
-**Desktop mode** — Request the desktop version of any site (useful for sites that don't work well on mobile) with a single tap.
+**Desktop mode** — Get the desktop version of any site, useful for sites that don't work well on mobile, with a single tap.
 
-**Tab management** — You can view all your open tabs in a grid, close many at once, and organize tabs into groups.
+**Tab management** — View all your open tabs in a grid, close many at once, and organize tabs into groups.
 
-**Reader Mode** — Strips away ads and clutter from articles so you can read the text cleanly, with adjustable font sizes and background colors.
+**Reader Mode** — Strips ads and clutter from articles so you can read the text cleanly, with adjustable font sizes and background colors.
 
-Samsung Internet is updated regularly through the Galaxy Store and has consistently high privacy ratings.`,
+Samsung Internet updates regularly through the Galaxy Store and has consistently high privacy ratings.`,
     steps: [
       {
         title: `Find Samsung Internet on your Galaxy phone`,

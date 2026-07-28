@@ -877,11 +877,11 @@ Signs your email may have been hacked: you can't log in because the password was
 
 The hacker's goal is usually one of three things: send spam from your account, get into your other accounts by using "Forgot Password" to reset them through email, or steal personal information sitting in your inbox.
 
-Your email is the master key to your digital life — most other accounts let you reset their passwords via email. This is why protecting your email is so critical.
+Your email is the master key to your digital life. Most other accounts let you reset their passwords through email. That's why protecting your email matters so much.
 
-After you recover access, do a thorough damage check: look at which accounts might have received "password reset" emails while the hacker had access, and change those passwords too.
+After you get back in, do a full damage check. Look at which accounts might have gotten a "password reset" email while the hacker had access, and change those passwords too.
 
-The steps below cover Gmail and Outlook/Hotmail, which together cover the majority of email users.`,
+The steps below cover Gmail and Outlook/Hotmail, which together cover most email users.`,
     steps: [
       {
         title: `Try to regain access immediately`,

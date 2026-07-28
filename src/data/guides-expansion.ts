@@ -330,13 +330,13 @@ For help navigating the website, call the VA's helpline at 1-800-827-1000 or use
     difficulty: 'Beginner',
     body: `The FEMA app is a free app from the Federal Emergency Management Agency. It gives you real-time weather alerts, emergency notifications, and safety information for your area. It also helps you prepare for emergencies, find shelters during disasters, and apply for disaster help.
 
-The app works on iPhone and Android and does not need an account. Download it from the App Store or Google Play — search for "FEMA" and look for the app published by the Department of Homeland Security.
+The app works on iPhone and Android and doesn't need an account. Download it from the App Store or Google Play. Search for "FEMA" and look for the app published by the Department of Homeland Security.
 
 When you first open the app, allow notifications and location access. Notifications deliver emergency alerts, and your location makes sure the alerts match your area. You can set alerts for up to five locations, including your home, workplace, and family members' cities.
 
-The app provides real-time alerts for severe weather, floods, earthquakes, hurricanes, and other emergencies. During a disaster, the shelter finder shows nearby open shelters on a map with addresses and available services. The preparedness section includes checklists for building an emergency kit, making a family communication plan, and preparing for specific types of disasters.
+The app sends real-time alerts for severe weather, floods, earthquakes, hurricanes, and other emergencies. During a disaster, the shelter finder shows nearby open shelters on a map with addresses and services offered. The preparedness section has checklists for building an emergency kit, making a family communication plan, and getting ready for specific types of disasters.
 
-Set up alerts for the locations where your family members live so you know about emergencies affecting your loved ones even if they forget to call.`,
+Set up alerts for the places where your family members live, so you know about emergencies affecting your loved ones even if they forget to call.`,
     steps: [
       { title: 'Download the FEMA app', content: 'Open the App Store (iPhone) or Google Play Store (Android). Search for "FEMA" and download the official app published by the Department of Homeland Security.' },
       { title: 'Allow notifications and location', content: 'When the app asks for permissions, tap "Allow" for both notifications and location access. This makes sure you receive relevant emergency alerts for your area.' },

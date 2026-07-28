@@ -762,15 +762,15 @@ Amazon also offers a discounted Prime membership for customers who receive gover
     thumbnailEmoji: '',
     publishedAt: '2026-04-19',
     difficulty: 'Beginner',
-    body: `Crash Detection is a safety feature on iPhone 14 and later (all models). If your iPhone senses you have been in a severe car crash, it sounds an alarm and shows an emergency SOS screen. If you do not respond within 10 seconds, it automatically calls 911, shares your GPS location with emergency services, and sends your location to your emergency contacts.
+    body: `Crash Detection is a safety feature on iPhone 14 and later (all models). If your iPhone senses you've been in a severe car crash, it sounds an alarm and shows an emergency SOS screen. If you don't respond within 10 seconds, it calls 911 on its own, shares your GPS location with emergency services, and sends your location to your emergency contacts.
 
 Crash Detection uses several sensors together: the barometer, microphone, GPS, and the accelerometer, which measures sudden changes in speed and direction. The system is trained to recognize the motion and sound of a real car crash, not ordinary bumps or hard braking.
 
-For most people, Crash Detection works automatically in the background — no setup needed beyond having an iPhone 14 or later with Emergency SOS and Medical ID turned on. Still, it is worth confirming your Medical ID and emergency contacts are accurate, since that information gets shared with 911 when Crash Detection kicks in.
+For most people, Crash Detection works on its own in the background. No setup is needed beyond having an iPhone 14 or later with Emergency SOS and Medical ID turned on. Still, it's worth checking that your Medical ID and emergency contacts are accurate, since that information gets shared with 911 when Crash Detection kicks in.
 
-False positives do sometimes occur: Crash Detection has activated for some people during intense roller coaster rides or skiing trips — the motion pattern resembles a crash. If an alert appears and you are fine, tap "I'm OK" within 10 seconds to cancel the call.
+False alarms do happen sometimes. Crash Detection has gone off for some people during intense roller coaster rides or skiing trips, because the motion looks like a crash. If an alert appears and you're fine, tap "I'm OK" within 10 seconds to cancel the call.
 
-Note that Crash Detection works even if your iPhone is in low-power mode or in a pocket or bag. You do not need to be actively using the phone. It runs passively in the background at all times on supported models.`,
+Crash Detection works even if your iPhone is in low-power mode or in a pocket or bag. You don't need to be using the phone. It runs quietly in the background at all times on supported models.`,
     steps: [
       {
         title: 'Check If Your iPhone Supports Crash Detection',

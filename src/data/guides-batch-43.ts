@@ -907,17 +907,17 @@ Filing a report takes about 5 minutes. No immediate personal action results from
     thumbnailEmoji: ``,
     publishedAt: `2026-04-19`,
     difficulty: `Beginner`,
-    body: `The Weather app on iPhone got a big upgrade with iOS 17 and later. It is now one of the most detailed weather apps around — and it is free and already on your phone.
+    body: `The Weather app on iPhone got a big upgrade with iOS 17 and later. It's now one of the most detailed weather apps around, and it's free and already on your phone.
 
-Most people only see the main temperature. But scroll down and you will find much more: hourly forecasts for the next 24 hours, a 10-day outlook, the air quality index (useful if you have a breathing condition), UV index, wind speed and direction, chance and strength of rain or snow, sunrise and sunset times, and moon phases.
+Most people only see the main temperature. But scroll down and you'll find much more: hourly forecasts for the next 24 hours, a 10-day outlook, the air quality index (useful if you have a breathing condition), UV index, wind speed and direction, chance and strength of rain or snow, sunrise and sunset times, and moon phases.
 
-**Weather alerts**: The app shows government severe weather alerts for your area — tornado warnings, flash flood watches, winter storm warnings, and more. You get a notification on your phone when one is issued.
+**Weather alerts**: The app shows government severe weather alerts for your area, like tornado warnings, flash flood watches, and winter storm warnings. You get a notification on your phone when one is issued.
 
-**Weather maps**: Swipe down to the bottom of the app to see a precipitation map. It animates to show where rain and snow are moving — useful for planning outdoor plans.
+**Weather maps**: Swipe to the bottom of the app to see a precipitation map. It animates to show where rain and snow are moving, useful for planning outdoor plans.
 
-**Multiple locations**: You can add multiple cities to monitor — useful for checking weather at a destination before travel, or seeing weather where family members live.
+**Multiple locations**: You can add multiple cities to watch, useful for checking weather at a destination before you travel, or seeing weather where family members live.
 
-The app uses weather data from multiple sources including The Weather Channel and government meteorological agencies, providing detailed and generally accurate forecasts.`,
+The app pulls weather data from several sources, including The Weather Channel and government weather agencies, giving you detailed and generally accurate forecasts.`,
     steps: [
       {
         title: `Open the Weather app and understand the main view`,

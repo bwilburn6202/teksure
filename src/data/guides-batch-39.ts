@@ -177,7 +177,7 @@ export const guidesBatch39: Guide[] = [
     thumbnailEmoji: '',
     publishedAt: '2026-04-19',
     difficulty: 'Beginner',
-    body: `Buying a laptop can feel overwhelming when every product page is filled with numbers and abbreviations. The good news: for most everyday uses — web browsing, email, video calls, watching videos, and writing documents — any modern laptop from a reputable brand works just fine. The decision mostly comes down to which type of computer fits how you already use technology.`,
+    body: `Buying a laptop can feel overwhelming when every product page is full of numbers and abbreviations. Here's the good news: for most everyday uses, like web browsing, email, video calls, watching videos, and writing documents, any modern laptop from a well-known brand works fine. The real decision comes down to which type of computer fits how you already use technology.`,
     steps: [
       {
         title: 'Choose between Windows, Mac, or Chromebook first',

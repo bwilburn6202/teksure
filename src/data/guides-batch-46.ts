@@ -363,15 +363,15 @@ Both features work in standard Photo mode — no need to switch to a special mod
     thumbnailEmoji: ``,
     publishedAt: `2026-04-19`,
     difficulty: `Beginner`,
-    body: `Apple Watch is one of the most capable personal health monitors you can get without a prescription. It continuously tracks your heart rate, counts your steps and movement, checks blood oxygen levels (on newer models), warns you about irregular heart rhythms, detects falls, and tracks sleep — all from your wrist.
+    body: `Apple Watch is one of the most capable personal health monitors you can get without a prescription. It tracks your heart rate, counts your steps and movement, checks blood oxygen on newer models, warns you about irregular heart rhythms, detects falls, and tracks sleep, all from your wrist.
 
-For seniors, the most valuable features are Fall Detection (calls 911 automatically if you fall and do not respond), the ECG app (gives you a heart rhythm reading to show your doctor), irregular rhythm notifications (warns you about atrial fibrillation, or AFib), and Emergency SOS (hold the side button to call for help from anywhere).
+For seniors, the most valuable features are Fall Detection (it calls 911 on its own if you fall and don't respond), the ECG app (gives you a heart rhythm reading to show your doctor), irregular rhythm notifications (warns you about atrial fibrillation, or AFib), and Emergency SOS (hold the side button to call for help from anywhere).
 
 To use Apple Watch, you need an iPhone (iPhone XS or later for the newest Watch models). The Watch pairs with your phone wirelessly and keeps all your health data in the iPhone Health app, where you can see trends over days, weeks, and months.
 
-You do not have to use every feature. Many seniors start with just step counting and fall detection, then explore other features as they become comfortable. Apple Watch Series 4 and newer have the best health tracking features — if you are buying for a parent or senior, look for at least a Series 6.
+You don't have to use every feature. Many seniors start with just step counting and fall detection, then try other features once they're comfortable. Apple Watch Series 4 and newer have the best health tracking. If you're buying one for a parent or senior, look for at least a Series 6.
 
-The Watch charges every night on a small magnetic charger — most people charge it while sleeping (it takes about 1–2 hours to reach full charge).`,
+The Watch charges every night on a small magnetic charger. Most people charge it while sleeping. It takes about 1 to 2 hours to reach a full charge.`,
     steps: [
       {
         title: `Set Up Fall Detection`,
