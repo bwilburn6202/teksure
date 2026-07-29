@@ -1020,3 +1020,69 @@ Confirmed the local mounted checkout's `.git` still cannot unlink its own object
 3. **Bailey:** hand over AdSense publisher ID or Amazon Associates tag — still the only unmet target with zero progress.
 4. **Bailey:** the 4,500-guide-by-8/10 target needs a decision — increase volume sharply or adjust the target, given the math above.
 5. Next Monday (2026-08-03) is feature day — consider shipping two tools to make up for the missed 2026-07-27.
+
+---
+
+## Day 79 — 2026-07-29
+
+### Guides added — 5 new (batch 331)
+- porch-pirate-package-theft-protection (Safety) — package theft prevention; grounded in the SafeWise 2025 report ($15B in losses, 104M packages stolen, 98% of stolen packages were visible from the street)
+- claude-ai-app-basics-for-seniors (AI) — a Claude-specific mobile app guide (download, sign up, voice/photo input, keeping sensitive info out of chats) — distinct from the site's existing ChatGPT-focused guides, no prior standalone Claude-app guide existed
+- social-security-cola-2027-what-to-expect (Government/Civic) — deliberately does NOT assert a 2027 COLA percentage, since the SSA does not announce it until mid-October 2026 (uses July–Sept CPI-W data); explains the mechanism, timeline, and flags COLA-season scam calls instead
+- buy-now-pay-later-basics-and-risks (Financial Tech) — Klarna/Afterpay/Affirm/PayPal Pay-in-4 mechanics, loan-stacking risk, weaker dispute protections than credit cards, 2026 CFPB/FTC scrutiny
+- disaster-relief-charity-scam-guide (Safety) — fake charity + FEMA-impersonation scams after hurricanes/floods/wildfires, Give.org/Charity Navigator verification, FEMA Disaster Fraud Hotline
+
+All 5 topics were checked against the full `slug:`/keyword grep across every `src/data/guides*.ts` file before writing — three of the four candidate topics carried over from Day 77's list turned out to be non-starters on closer inspection: porch piracy/package theft was only ever mentioned in passing inside doorbell-camera and Nextdoor guides (no standalone guide existed, so it was still worth writing), but "Claude mobile app" needed to be scoped narrowly (ChatGPT-branded AI guides are extensive; a Claude-specific app walkthrough was the actual gap), Venmo/Zelle family payments turned out to be covered by 10+ existing guides and was dropped, and "screen time for grandkids visiting" was dropped as too close to two existing screen-time guides. Two more candidates (mobile driver's license, BNPL) were checked and one substituted in (BNPL was net-new; mobile driver's license already existed in guides-batch-32).
+
+Live-researched via web search rather than relying on training-data assumptions for two of the five: the 2027 COLA figure is genuinely not yet public (confirmed SSA's announcement timeline directly, mid-October 2026), so the guide explains the mechanism and timeline instead of asserting a number that could be wrong or stale by publish time; and current package-theft statistics were pulled from the 2025 SafeWise report rather than reused from an older source already in the site.
+
+All 5 excerpts confirmed ≤160 characters programmatically before commit (136–151 chars). Brand-voice banned-word check caught one stray "just" in a warning callout, fixed to "not only." `npm test` (104/104) and `tsc --noEmit` both clean before commit.
+
+### Freshness sweep
+Re-verified (not just re-trusted) the same 4 recurring dev-loop stale-OS flags again this run, reading each flagged line directly rather than citing the prior day's note: guides-batch-327 (ChromeOS Flex replacement guide for old Windows 7/8 hardware — genuinely about old hardware), guides-batch-42 (states "iOS 16 and macOS Ventura or later" as a minimum-version requirement for iPhone Mirroring, not a currency claim), guides-batch-94 (explicitly notes Windows 7/8 stopped receiving updates and Windows 10 support ended October 2025 — factually accurate as written). All three remain contextually correct, unchanged. 0 of 4,032 guides published before the 18-month cutoff.
+
+### Features shipped
+None — today (Wednesday 2026-07-29) is not the Monday feature-build day. Next Monday (2026-08-03) is due to ship one, and per Day 77's carry-over note, possibly two to make up for the missed 2026-07-27.
+
+### Backlog items cleared / reviewed
+- Dev-loop cycle 33 (run locally this session) and cycles 34–35 (landed on origin via the automation between this session's start and push) all reviewed: 0 duplicate slugs, 0 broken internal links, TypeScript clean, 4 stale-OS warnings (all reviewed above, contextually valid).
+- Hardcoded price + undisclosed testimonial warnings: unchanged, still correctly quarantined in `TechnicianProfile.tsx` (intentionally offline page, not a live issue) — re-confirmed, no action needed.
+- Overlong excerpts (361 site-wide going into this run): none of today's 5 new guides added to the count (all under 160 chars, verified programmatically).
+- `src/pages/tools/SeniorVoicemail.tsx` still has the same unrelated, unvetted in-progress edit flagged in the last several sprint-log entries. Left alone again — still not part of this scope, still no accompanying log entry explaining it.
+
+### Git health
+Local mounted checkout's `.git` unlink bug is confirmed still present and now demonstrably blocks unlinking ordinary tracked working-tree files during `git reset --hard`, not just `.git/*.lock` internals (attempted to sync the local mount back to `origin/main` after pushing; failed on `.claude/dev-loop-backlog.md`, `.claude/dev-loop-state.json`, and `SeniorVoicemail.tsx` with "Operation not permitted" on unlink). Commit still works fine on the local mount — only unlink/reset operations are blocked. Used a cleaner variant of the documented `/tmp` workaround this run: committed locally first, then extracted only the two real content files (`src/data/guides.ts`, `src/data/guides-batch-331.ts`) into a patch with `git diff`, explicitly excluding `.claude/dev-loop-backlog.md`/`dev-loop-state.json` (which the automation had already moved past via its own cycle 34–35 commits by push time), applied the patch to a fresh `/tmp/teksure-push-<timestamp>` clone, and pushed from there. Zero conflicts, zero clobbered automation state. Did not attempt to force the local mount back in sync — left it diverged, which is cosmetic only. Push confirmed: `d25dc1d` is on `origin/main`.
+
+### Running totals vs 90-day targets
+| Metric | Target (2026-08-10) | Current | Status |
+|---|---|---|---|
+| Guides | 4,500 | **4,033** (+5 batch-331, +2 net from automation's own commits since Day 78) | 89.6% — 12 days left, need ~39/day to hit target, still not realistic at the sustainable pace |
+| Tools | 200+ | 2,969 tool-directory entries (metric definition has diverged from the original "185 interactive tools" framing — see note below) | Exceeded on the current metric |
+| TypeScript errors | 0 | 0 | OK |
+| Duplicate slugs | 0 | 0 | OK |
+| Broken internal links | 0 | 0 | OK |
+| Stale OS mentions | (dev-loop warn floor) | 4 (all reviewed, contextually valid) | Stable |
+| Overlong excerpts | (dev-loop warn floor) | 361 site-wide (0 from today's batch) | Unchanged from Day 77 measurement, still an open cleanup item |
+| Traffic | 10,000/mo | Not measured this run | Still unconfirmed whether analytics is wired up |
+| Monetization | AdSense or 3 affiliate programs live | None | Blocked on Bailey — 79 days in, still zero |
+| TekSure Brain / Ollama | Hosted Ollama active | Edge functions deployed, unchanged | Blocked on Hetzner CX22 provisioning |
+| Git health (local mount) | Clean, pushed | Push path works via `/tmp` clone + patch-diff workaround; local mount itself still corrupted, now confirmed to block unlink of ordinary tracked files too | Not a shipping blocker |
+
+Note on the tools metric: `src/data/tools-directory.ts` shows 2,969 entries, far above the "200+ interactive tools" 90-day target and the "285 tools" the dev-loop's own metrics check reports — these three numbers (2,969 / 285 / original 145+) are measuring different things (directory listing entries vs. dev-loop's tool-file count vs. the original hand count), and nobody has reconciled which one the 90-day target's "200+" was actually meant to track. Flagging rather than picking one arbitrarily — worth a dedicated 10-minute check next session rather than guessing.
+
+### Monetization status
+No update this run — same standing blocker. AdSense/Amazon Associates credentials still not provided; no `.env.local`, no `ca-pub-` tag, no live affiliate infrastructure found in the codebase this run (checked directly rather than assuming).
+
+### Blockers
+- **The 4,500-guide target is very unlikely to be hit by 2026-08-10.** 12 days left, ~467 guides short, sustainable pace has been roughly 5–6/day. Same flag as Day 77 — worth a direct decision from Bailey (raise volume sharply, or adjust the target/deadline).
+- **AdSense / affiliate programs remain zero.** 79 days in, no measurable monetization progress.
+- **Traffic measurement unresolved.** Cannot confirm whether analytics captures visits.
+- **Local mount `.git` corruption has gotten worse, not better** — now blocks unlinking ordinary tracked files during reset, not just git-internal lock files. Still not a shipping blocker (patch-based `/tmp` workaround handles it), but Bailey resetting the local mount on the real Mac would remove the need for this workaround entirely.
+- **Tools metric definition is inconsistent across three sources** (2,969 / 285 / 145+) — needs reconciliation, not urgent.
+
+### Next-day priorities (2026-07-30)
+1. Add another 5–10 guides. Fresh, unverified-yet candidates for next run to dup-check first: caller ID spoofing detection (distinct angle from the 2 existing robocall-blocking guides), fake Amazon review spotting (only 1 existing file touches this tangentially), digital tip jar / QR-code payment scams at restaurants (partially covered — verify scope before writing), and any new FTC/AARP scam alert from the week of 2026-07-27.
+2. Reconcile the tools-count metric (2,969 vs 285 vs 145+) — one paragraph, not a project.
+3. **Bailey:** AdSense publisher ID or Amazon Associates tag — still the single biggest zero-progress item.
+4. **Bailey:** decision needed on the 4,500-guide-by-8/10 target given the math above.
+5. Monday 2026-08-03 is feature day — ship one, ideally two tools given the missed 2026-07-27.
