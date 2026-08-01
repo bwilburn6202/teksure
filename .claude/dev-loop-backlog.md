@@ -8,6 +8,99 @@ Newest cycles appear at the top.
 
 ---
 
+## Cycle 49 — 2026-08-01T19:23:29.677Z
+
+### [ok] Site metrics snapshot
+3731 guides, 3156 routes, 285 tools.
+
+### [ok] Duplicate guide slugs
+No duplicate slugs.
+
+### [ok] Internal link audit
+0 broken targets, 6 orphaned routes (of 3119 routes).
+
+### [ok] TypeScript compile
+No TypeScript errors.
+
+### [warn] Stale OS version mentions
+4 mention(s) of older OS versions in guides.
+
+```
+- src/data/guides-batch-327.ts:77 — Windows 7 (`Windows 7`)
+- src/data/guides-batch-327.ts:77 — Windows 8 (`Windows 8`)
+- src/data/guides-batch-42.ts:128 — iOS 10–16 (`iOS 16`)
+- src/data/guides-batch-94.ts:766 — Windows 7 (`Windows 7`)
+```
+
+### [ok] Aged guides
+0 of 4032 guides published before 2025-02-01.
+
+### [ok] Duplicate guide titles
+No duplicate guide titles.
+
+### [warn] Readability & senior UX
+avg reading grade 8.3 (target <= 8), 58.8% of guides above grade 8, 0 images missing alt.
+
+```
+- grade 10.2: use-silvur-retirement-planning
+- grade 10.4: how-to-block-spam-text-messages
+- grade 10: how-to-back-up-iphone-to-icloud
+- grade 10.1: set-up-bank-text-alerts
+- grade 10.1: close-old-bank-account-safely
+- grade 10.8: best-antivirus-windows-seniors
+- grade 10.6: forgot-email-password-recovery
+- grade 11.8: youtube-videos-buffering-fix
+- grade 11.5: computer-keeps-restarting-fix
+- grade 10.5: set-up-amazon-prime-delivery-prescriptions
+```
+
+### [ok] External source link health
+67 source URLs checked, 0 confirmed broken (404/410), 1 unreachable (often bot-blocking).
+
+### [warn] Hardcoded prices outside pricing.ts
+1 hardcoded price(s) on customer-facing pages — these are how the three-way price drift started.
+
+```
+- TechnicianProfile.tsx: hardcoded $49 (file does not import pricing.ts at all)
+```
+
+### [warn] Undisclosed invented testimonials
+1 page(s) present invented reviews as real. This is an FTC issue, not a style one — fix before anything else in this report.
+
+```
+- src/pages/TechnicianProfile.tsx — hardcoded reviews with ratings and no disclosure
+```
+
+### [warn] Overlong guide excerpts
+361 excerpt(s) exceed 160 chars and will be truncated mid-sentence in search results.
+
+```
+- 402 chars: new-to-america-essential-tech-for-your-new-life
+- 359 chars: hidden-accessibility-features-your-phone-already-has
+- 356 chars: internet-options-when-you-live-in-the-country
+- 326 chars: digital-estate-planning-accounts-after-death
+- 312 chars: everyday-ai-when-and-how-to-use-ai-assistants
+- 305 chars: veterans-tech-guide-va-benefits-myhealthevet-online-resources
+- 287 chars: after-a-loss-gentle-guide-to-spouse-digital-life
+- 279 chars: how-to-spot-fake-reviews-online
+- 269 chars: telehealth-appointments-see-your-doctor-from-home
+- 247 chars: understanding-your-phone-bill
+- 240 chars: find-and-cancel-forgotten-subscriptions
+- 232 chars: online-banking-made-safe-and-simple
+```
+
+### [ok] Reused placeholder videos
+No video is reused across more than 5 guides.
+
+### Suggested next actions
+- **Stale OS version mentions** — 4 mention(s) of older OS versions in guides.
+- **Readability & senior UX** — avg reading grade 8.3 (target <= 8), 58.8% of guides above grade 8, 0 images missing alt.
+- **Hardcoded prices outside pricing.ts** — 1 hardcoded price(s) on customer-facing pages — these are how the three-way price drift started.
+- **Undisclosed invented testimonials** — 1 page(s) present invented reviews as real. This is an FTC issue, not a style one — fix before anything else in this report.
+- **Overlong guide excerpts** — 361 excerpt(s) exceed 160 chars and will be truncated mid-sentence in search results.
+
+---
+
 ## Cycle 48 — 2026-08-01T13:47:46.791Z
 
 ### [ok] Site metrics snapshot
@@ -7826,124 +7919,6 @@ No TypeScript errors.
 0 of 3933 guides published before 2024-12-25.
 
 ### Suggested next actions
-- **Stale OS version mentions** — 67 mention(s) of older OS versions in guides.
-
----
-
-## Cycle 199 — 2026-06-25T09:39:20.465Z
-
-### [ok] Site metrics snapshot
-3632 guides, 3154 routes, 285 tools.
-
-### [ok] Duplicate guide slugs
-No duplicate slugs.
-
-### [ok] Internal link audit
-0 broken targets, 2602 orphaned routes (of 3116 routes).
-
-### [ok] TypeScript compile
-No TypeScript errors.
-
-### [warn] Stale OS version mentions
-67 mention(s) of older OS versions in guides.
-
-```
-- src/data/guides-batch-103.ts:31 — iOS 10–16 (`iOS 11`)
-- src/data/guides-batch-15.ts:283 — iOS 10–16 (`iOS 14`)
-- src/data/guides-batch-154.ts:326 — iOS 10–16 (`iOS 16`)
-- src/data/guides-batch-157.ts:589 — macOS pre-Ventura (`macOS Monterey`)
-- src/data/guides-batch-163.ts:63 — iOS 10–16 (`iOS 12`)
-- src/data/guides-batch-18.ts:77 — iOS 10–16 (`iOS 16`)
-- src/data/guides-batch-203.ts:94 — iOS 10–16 (`iOS 13`)
-- src/data/guides-batch-209.ts:95 — iOS 10–16 (`iOS 13`)
-- src/data/guides-batch-21.ts:610 — iOS 10–16 (`iOS 11`)
-- src/data/guides-batch-210.ts:55 — iOS 10–16 (`iOS 15`)
-```
-
-### [ok] Aged guides
-0 of 3933 guides published before 2024-12-25.
-
-### Suggested next actions
-- **Stale OS version mentions** — 67 mention(s) of older OS versions in guides.
-
----
-
-## Cycle 198 — 2026-06-25T04:20:23.852Z
-
-### [ok] Site metrics snapshot
-3632 guides, 3154 routes, 285 tools.
-
-### [ok] Duplicate guide slugs
-No duplicate slugs.
-
-### [ok] Internal link audit
-0 broken targets, 2602 orphaned routes (of 3116 routes).
-
-### [ok] TypeScript compile
-No TypeScript errors.
-
-### [warn] Stale OS version mentions
-67 mention(s) of older OS versions in guides.
-
-```
-- src/data/guides-batch-103.ts:31 — iOS 10–16 (`iOS 11`)
-- src/data/guides-batch-15.ts:283 — iOS 10–16 (`iOS 14`)
-- src/data/guides-batch-154.ts:326 — iOS 10–16 (`iOS 16`)
-- src/data/guides-batch-157.ts:589 — macOS pre-Ventura (`macOS Monterey`)
-- src/data/guides-batch-163.ts:63 — iOS 10–16 (`iOS 12`)
-- src/data/guides-batch-18.ts:77 — iOS 10–16 (`iOS 16`)
-- src/data/guides-batch-203.ts:94 — iOS 10–16 (`iOS 13`)
-- src/data/guides-batch-209.ts:95 — iOS 10–16 (`iOS 13`)
-- src/data/guides-batch-21.ts:610 — iOS 10–16 (`iOS 11`)
-- src/data/guides-batch-210.ts:55 — iOS 10–16 (`iOS 15`)
-```
-
-### [ok] Aged guides
-0 of 3933 guides published before 2024-12-25.
-
-### Suggested next actions
-- **Stale OS version mentions** — 67 mention(s) of older OS versions in guides.
-
----
-
-## Cycle 197 — 2026-06-24T20:01:51.758Z
-
-### [ok] Site metrics snapshot
-3632 guides, 3154 routes, 285 tools.
-
-### [ok] Duplicate guide slugs
-No duplicate slugs.
-
-### [ok] Internal link audit
-0 broken targets, 2602 orphaned routes (of 3116 routes).
-
-### [ok] TypeScript compile
-No TypeScript errors.
-
-### [warn] Stale OS version mentions
-67 mention(s) of older OS versions in guides.
-
-```
-- src/data/guides-batch-103.ts:31 — iOS 10–16 (`iOS 11`)
-- src/data/guides-batch-15.ts:283 — iOS 10–16 (`iOS 14`)
-- src/data/guides-batch-154.ts:326 — iOS 10–16 (`iOS 16`)
-- src/data/guides-batch-157.ts:589 — macOS pre-Ventura (`macOS Monterey`)
-- src/data/guides-batch-163.ts:63 — iOS 10–16 (`iOS 12`)
-- src/data/guides-batch-18.ts:77 — iOS 10–16 (`iOS 16`)
-- src/data/guides-batch-203.ts:94 — iOS 10–16 (`iOS 13`)
-- src/data/guides-batch-209.ts:95 — iOS 10–16 (`iOS 13`)
-- src/data/guides-batch-21.ts:610 — iOS 10–16 (`iOS 11`)
-- src/data/guides-batch-210.ts:55 — iOS 10–16 (`iOS 15`)
-```
-
-### [ok] Aged guides
-0 of 3933 guides published before 2024-12-24.
-
-### Suggested next actions
-- **Stale OS version mentions** — 67 mention(s) of older OS versions in guides.
-
----
-
-## Cycle 196 — 2026-06-24T14:51:1
+- **Stale OS version mentions** — 67 mention(s) of older OS versions i
 
 _(older cycles trimmed)_
