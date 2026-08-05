@@ -129,11 +129,11 @@ export const guidesBatch13: Guide[] = [
     thumbnailEmoji: '',
     publishedAt: '2026-04-19',
     difficulty: 'Beginner',
-    body: "Apple Maps is the free navigation app built into every iPhone. It gives you turn-by-turn directions whether you're driving, walking, or taking public transportation — and it speaks the directions out loud through your phone's speaker so you can keep your eyes on the road.",
+    body: "Apple Maps is the free navigation app built into every iPhone. It gives you turn-by-turn directions for driving, walking, or public transportation. It also reads the directions out loud through your phone's speaker. That way you can keep your eyes on the road.",
     steps: [
       {
         title: 'Open Maps and search for your destination',
-        content: 'Open the Maps app (it has an icon that looks like a road map with a red pin). Tap the search bar at the top and type where you want to go. You can type a full address, a business name, or even a general place like "nearest pharmacy" or "Italian restaurants nearby." Maps will show matching options — tap the correct one to see its location on the map.',
+        content: 'Open the Maps app. Its icon looks like a road map with a red pin. Tap the search bar at the top. Type where you want to go. You can enter a full address, a business name, or a general phrase like "nearest pharmacy" or "Italian restaurants nearby." Maps shows a list of matches. Tap the right one to see it on the map.',
       },
       {
         title: 'Get directions and start navigation',
@@ -477,11 +477,11 @@ export const guidesBatch13: Guide[] = [
     thumbnailEmoji: '',
     publishedAt: '2026-04-19',
     difficulty: 'Beginner',
-    body: "Connecting your iPhone to your TV lets you show photos and videos on a big screen — great for sharing vacation pictures with family, watching movies, or doing a FaceTime video call so everyone can see. There are three main ways to do this depending on what equipment you have.",
+    body: "You can show your iPhone photos and videos on your TV screen. It is a nice way to share vacation pictures with family, watch a movie, or take a FaceTime call so everyone in the room can see. There are three ways to do it. Which one you use depends on the equipment you already own.",
     steps: [
       {
         title: 'Use AirPlay with an Apple TV or AirPlay-compatible smart TV (wireless)',
-        content: 'This is the most convenient method if you have an Apple TV or a smart TV made after 2019 that supports AirPlay 2 (most Samsung, LG, Sony, and Vizio TVs do). Make sure your iPhone and TV are connected to the same WiFi network. On your iPhone, swipe down from the top right corner to open Control Center. Tap "Screen Mirroring" (the icon with two overlapping rectangles). Your TV should appear in the list — tap it. Your iPhone screen will appear on your TV.',
+        content: 'This is the easiest way if you have an Apple TV, or a smart TV made after 2019 that supports AirPlay 2. Most Samsung, LG, Sony, and Vizio TVs do. First, check that your iPhone and your TV are on the same WiFi network. On the iPhone, swipe down from the top right corner. That opens Control Center. Tap "Screen Mirroring" — the icon with two overlapping rectangles. Your TV should show up in the list. Tap its name. Your iPhone screen then appears on the TV.',
         tip: 'To stop mirroring, open Control Center again, tap Screen Mirroring, and tap "Stop Mirroring."',
       },
       {
@@ -572,7 +572,7 @@ export const guidesBatch13: Guide[] = [
     thumbnailEmoji: '',
     publishedAt: '2026-04-19',
     difficulty: 'Beginner',
-    body: "FaceTime on an iPad works the same way as on an iPhone, with one advantage: the bigger screen makes it easier to see the person you're talking to. iPads are especially popular for FaceTime because they're easy to prop up on a table, leaving your hands free during the call.",
+    body: "FaceTime on an iPad works the same way it does on an iPhone. The one advantage is the bigger screen. It makes the person you are talking to much easier to see. Many people prefer an iPad for video calls. You can prop it up on a table, so your hands stay free.",
     steps: [
       {
         title: 'Find and open FaceTime on your iPad',
@@ -585,7 +585,7 @@ export const guidesBatch13: Guide[] = [
       },
       {
         title: 'Prop up your iPad for hands-free calling',
-        content: 'One of the best things about using an iPad for FaceTime is being able to set it on a stand or prop it against something so your hands are free. The smart cover or keyboard case that came with your iPad often doubles as a stand. You can also purchase a simple iPad stand for $10-$20 at most electronics stores. Position it so the front camera is at roughly eye level for the most natural-looking conversation.',
+        content: 'Set the iPad on a stand, or prop it against something. That way your hands stay free during the call. The smart cover or keyboard case that came with your iPad often folds into a stand. A simple iPad stand also costs about $10 to $20 at most electronics stores. Place it so the front camera sits at about eye level. That angle looks the most natural to the person on the other end.',
       },
       {
         title: 'Use FaceTime with a group',
