@@ -8,6 +8,72 @@ Newest cycles appear at the top.
 
 ---
 
+## Weekly review note -- 2026-08-05 (weekly-improvement cycle)
+
+Ran the standard weekly-site-review sequence. Measurements first: `dev-loop.mjs
+--once --dry-run` showed 3736 guides, 3156 routes, 0 broken links, TS clean,
+guidesAboveGrade10: 520, avg reading grade 8.3. Discoverability check passed —
+`curl .../guides/qr-codes` returns the guide's own `<title>`, not the generic
+site title, so prerendering is intact.
+
+One warning needed a look before anything else: `testimonial-honesty` flagged
+`src/pages/TechnicianProfile.tsx` again, as it has every cycle since 2026-07-26.
+Verified this is not live: `curl -sIL https://www.teksure.com/technicians` and
+`/technicians/tech-james-r` both 308 to `/get-help`. The file's own header
+comment explains it is intentionally kept, unrouted, with invented data, so the
+check keeps firing until someone replaces the fake technicians with real ones
+(no real technician data exists yet, so that is out of scope for now). No
+action taken here -- noting it so the next run doesn't re-investigate from
+scratch.
+
+With nothing broken and discovery confirmed healthy, went with the standing
+priority: readability. Pulled the actual (grade-sorted, not file-order) top 25
+hardest guides via a temporary local edit to `audit-senior-ux.mjs`'s `top()`
+default (12 -> 25, reverted after, confirmed no diff). Picked 13 of those,
+weighted toward high-traffic categories per the brief (scams, passwords,
+finance/Social Security, common device/app guides) over niche ones:
+social-security-cola-2027-what-to-expect, buy-now-pay-later-basics-and-risks,
+disaster-relief-charity-scam-guide, claude-ai-app-basics-for-seniors,
+back-to-school-tech-shopping-scams-grandparents,
+password-manager-basics-for-beginners, youtube-videos-buffering-fix,
+tidal-hifi-streaming, echo-show-8-guide, fedex-delivery-manager-guide,
+how-to-apply-va-presumptive-conditions, livongo-diabetes-guide,
+wise-money-transfer, ticktick-app-guide. Split long sentences, cut
+throat-clearing, no facts/sources/numbers/warnings changed.
+
+Result: guidesAboveGrade10 520 -> 509. Average grade held at 8.3 (rounds the
+same at one decimal; the guides touched were mostly just above the grade-10
+cutoff, not the grade-13+ outliers). 104/104 tests pass, tsc clean.
+
+Could not run a full `npm run build` in this session's sandbox -- `vite build`
+OOM'd during chunk rendering with only 3.8GB RAM available, even after
+clearing `dist/` and raising `--max-old-space-size`. This reproduced with and
+without the prerender step, so it is a sandbox memory ceiling, not a
+regression from this change (content-only edits to existing guide `body`/
+`steps` string fields, no new deps, no schema changes). tsc + full test suite
+did pass. Next run with more memory headroom should confirm `npm run build`
+directly rather than trusting this substitute.
+
+Also skipped: did not deep-edit the VA presumptive-conditions guide's steps
+(only simplified its body) -- the step content is dense with exact service
+dates/locations/exposure categories that carry legal weight for a benefits
+claim, and rewriting five paragraphs of that under time pressure risked
+subtly changing a date or place name. Left it correct-but-dense rather than
+risk it. Flagging for a future pass with more room to cross-check facts
+line by line before touching it. Also, the same 380+ish English guides above
+grade 10 remain beyond this batch and the prior five sessions' batches --
+next run: pull a fresh top-25 (grade-sorted) again and keep going.
+
+Regenerated `sitemap.xml` and `llms.txt` via the prebuild scripts during this
+session (ran as a side effect of the build attempt) and committed them, since
+they were stale relative to guide count and had a stale `lastmod` date; this
+was not the primary goal of the session but is a harmless, correct byproduct.
+
+Still uncommitted, untouched: `src/pages/tools/SeniorVoicemail.tsx` -- same
+unrelated, unvetted edit flagged in every note so far.
+
+---
+
 ## Weekly review note -- 2026-08-04 (continued, fifth batch)
 
 Continued the readability pass per "continue." Before starting, found local
