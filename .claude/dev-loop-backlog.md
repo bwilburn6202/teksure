@@ -8,6 +8,87 @@ Newest cycles appear at the top.
 
 ---
 
+## Weekly review note -- 2026-08-05 (deep improvement cycle)
+
+Second pass this session, run as a deliberately deeper sweep. Cleared three of
+the five standing warnings outright; dev-loop now reports only readability and
+the residual excerpt count.
+
+**Discoverability re-verified first.** /guides/qr-codes still returns its own
+title. Prerendering intact.
+
+**Excerpts (361 -> 283).** This was the item skipped last cycle and it is
+really a tier-2 discovery problem, not cosmetics: the excerpt becomes the meta
+description, so an overlong one gets cut mid-sentence exactly where most people
+first meet the page. Distribution mattered -- 345 of 361 were only slightly
+over (161-200), but 16 were catastrophic, topping out at 402 chars and reading
+like content briefs. Rewrote the 16 worst plus the entire 178+ band, 78 total,
+by hand. Deliberately did NOT mechanically truncate: that produces precisely
+the mid-sentence cut being fixed. Worst case is now 177; nothing exceeds 200.
+The remaining 283 sit at 161-177 and lose a word or two at most -- low value,
+fine to leave.
+
+**stale-os (4 -> 0), by fixing the check, not the content.** All four findings
+were false positives -- "Windows 7 and 8 stopped receiving updates years ago"
+is a true sentence in a guide about old machines, and "iOS 16 and macOS Ventura
+or later" is a minimum-requirement line where "or later" distributes. Per the
+brief's "do not fix a warning by loosening the check", the guides were left
+alone and the suppression got more precise: obsolescence context, distributive
+"or later" bounded by sentence break, and upgrade-path framing. Verified with a
+synthetic file that neutral stale mentions still flag.
+
+  Found but NOT fixed: a pre-existing rule suppresses any match preceded by the
+  word "on", so "On Android 12 the menu looks different" is silently missed.
+  That is a genuine hole. Left it alone to keep the change scoped -- widening it
+  risks re-flagging the legitimate "on iOS 16 or later" phrasing, and deserves
+  its own careful pass.
+
+**testimonial-honesty and pricing-consistency (1 -> 0 each).** Both traced to
+the same dead file, TechnicianProfile.tsx, unrouted since 2026-07-26 (confirmed
+live: both routes 308 to /get-help). Deleted the four invented technicians and
+eleven fabricated reviews, and pointed the hardcoded $49 at pricing.ts. The
+reason to actually clear these rather than keep noting them: the check reported
+"1 page" every single cycle, so a genuine new instance elsewhere would have
+moved it 1 -> 2 and gone unnoticed. A permanently-failing check is a broken
+check, and this one is FTC-severity. Layout kept per the file header's intent;
+TECHNICIANS is now empty with an empty-state card.
+
+**Readability (509 -> 499).** 15 guides, weighted to scams/Medicare/health-safety.
+Notably included senior-firearm-suicide-prevention-988-wait-time, deferred as
+too sensitive before. Handled it as crisis content: every number (988, press 1,
+838255, veteranscrisisline.net), statistic, and resource name preserved
+verbatim, sentence structure only. Also fixed a missing apostrophe there.
+
+**The test suite earned its keep.** My first readability draft introduced two
+banned words ("just", "simply") in live-text-iphone-copy-photo and
+needymeds-guide; npm test caught both before commit. Worth remembering that
+simplifying prose actively pulls toward the banned minimizing vocabulary.
+
+**Verification:** tsc clean, 104/104 tests, dev-loop green except the two noted.
+`npm run build` again OOM'd in the sandbox (3.8GB ceiling, killed during chunk
+rendering at several memory settings, with and without minify). Same as last
+cycle, and content-only string edits cannot cause it -- but it does mean two
+consecutive cycles have shipped without a local full-build check. Next run on a
+bigger machine should confirm the build directly.
+
+**Concurrency note.** The 90-day sprint process was again editing this same
+working tree mid-session (Landing.tsx, Footer.tsx, MobileBottomNav.tsx,
+SiteIndex.tsx, Tools.tsx, plus a new untracked src/data/site-stats.ts). Staged
+only my own paths, verified file-by-file that every committed guide diff touched
+excerpt/body lines only. Important: Landing.tsx now imports the still-untracked
+src/data/site-stats.ts, so committing that file without it would break the
+build -- left for whichever process owns it.
+
+Also left untracked and untouched: SeniorVoicemail.tsx (flagged every cycle),
+AUDIT-normal-user-2026-08-04.md, and several dist.stale-*/ and *.old-* files
+that this mount will not let anything unlink.
+
+Next run: pull a fresh grade-sorted top-25 and keep going on readability
+(~480 English guides still above grade 10); optionally finish the last 283
+excerpts; and consider the "on" gap in the stale-os check.
+
+---
+
 ## Weekly review note -- 2026-08-05 (weekly-improvement cycle)
 
 Ran the standard weekly-site-review sequence. Measurements first: `dev-loop.mjs
