@@ -680,7 +680,7 @@ export const guidesBatch14: Guide[] = [
     publishedAt: '2026-04-19',
     lastVerifiedAt: '2026-05-15',
     difficulty: 'Beginner',
-    body: "The Magnifier app on iPhone uses your phone's camera to magnify text and objects — just like a digital magnifying glass. It's extremely useful for reading tiny restaurant menus, medicine bottle labels, prescription instructions, or any small print. It also has a brightness slider and the option to freeze the image so you can read it more comfortably.",
+    body: "The Magnifier app on iPhone uses your camera to magnify text and objects, like a digital magnifying glass. It helps with tiny restaurant menus, medicine bottle labels, prescription instructions, and any other small print. It also has a brightness slider, and you can freeze the image to read it more comfortably.",
     steps: [
       {
         title: 'Find and open the Magnifier app',

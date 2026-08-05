@@ -7,7 +7,7 @@ export const guidesBatch109: Guide[] = [
   {
     slug: 'emergency-contacts-medical-info-phone-setup',
     title: 'Setting Up Emergency Contacts and Medical Info on Your Phone',
-    excerpt: 'Set up Medical ID, Emergency SOS, and ICE contacts on iPhone or Android so first responders can help you faster — even when your phone is locked. Step-by-step instructions for everyone in your life, not just the tech-savvy.',
+    excerpt: 'Set up Medical ID, Emergency SOS, and ICE contacts on iPhone or Android so first responders can help faster — even when your phone is locked.',
     category: 'safety-guides',
     tags: ['emergency', 'medical ID', 'emergency contacts', 'ICE', 'Emergency SOS', '911', 'safety', 'iPhone', 'Android', 'health app', 'first responders', 'fall detection', 'Apple Watch', 'location sharing', 'Find My', 'beginner', 'seniors'],
     readTime: '8 min',

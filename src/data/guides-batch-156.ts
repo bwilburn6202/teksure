@@ -343,7 +343,7 @@ WhatsApp is owned by Meta/Facebook. Like any app, it collects some data about ho
   {
     slug: 'how-to-organize-apps-into-folders-on-your-phone-2026',
     title: 'How to Organize Your Phone Apps into Folders',
-    excerpt: 'Group your apps into labeled folders on your home screen — like "Banking," "Health," or "Family" — so you can find what you need in seconds without scrolling through dozens of icons.',
+    excerpt: 'Group apps into labeled folders like Banking, Health, or Family so you can find what you need in seconds instead of scrolling through icons.',
     category: 'phone-guides',
     tags: [
       'phone organization',
@@ -510,7 +510,7 @@ You cannot delete a folder directly. You delete it by removing all the apps from
   {
     slug: 'how-to-set-up-do-not-disturb-on-your-phone-2026',
     title: 'How to Set Up Do Not Disturb to Silence Your Phone at Night',
-    excerpt: 'Do Not Disturb silences calls, texts, and notifications while keeping your phone on and reachable for emergencies. Set it to turn on automatically every night so you are never woken by alerts.',
+    excerpt: 'Do Not Disturb silences calls and notifications while keeping your phone reachable for emergencies. Set it to turn on automatically every night.',
     category: 'phone-guides',
     tags: [
       'Do Not Disturb',

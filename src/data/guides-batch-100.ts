@@ -7,7 +7,7 @@ export const guidesBatch100: Guide[] = [
   {
     slug: 'streaming-tv-made-simple-netflix-hulu',
     title: 'Streaming TV Made Simple: Netflix, Hulu, and More',
-    excerpt: "A beginner-friendly guide to streaming TV — what it is, which services to try, how to set up a device like Roku, and how to keep costs low. Cut the cable and watch what you love on your schedule.",
+    excerpt: "A beginner's guide to streaming TV — which services to try, how to set up a device like Roku, and how to keep costs low after cutting cable.",
     category: 'entertainment',
     tags: ['streaming', 'Netflix', 'Hulu', 'Disney+', 'Amazon Prime', 'YouTube TV', 'Peacock', 'Roku', 'Fire Stick', 'Apple TV', 'cord cutting', 'smart TV', 'beginner', 'entertainment'],
     readTime: '12 min',

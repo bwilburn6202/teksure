@@ -4,7 +4,7 @@ export const guidesBatch41: Guide[] = [
   {
     slug: `youtube-music-guide`,
     title: `How to Use YouTube Music — Free and Premium`,
-    excerpt: `YouTube Music lets you stream millions of songs for free (with ads) or pay for an ad-free experience with offline downloads. Here is how to get started on your phone or computer.`,
+    excerpt: `YouTube Music streams millions of songs free with ads, or ad-free with offline downloads if you pay. How to start on your phone or computer.`,
     category: `entertainment`,
     tags: [`youtube music`, `streaming music`, `free music`, `google`, `playlists`, `offline`],
     readTime: `5 min`,
@@ -286,7 +286,7 @@ The Sam's Club app is free on iPhone and Android.`,
   {
     slug: `kroger-app-digital-coupons-guide`,
     title: `How to Use the Kroger App for Digital Coupons and Fuel Points`,
-    excerpt: `The Kroger app gives you digital coupons, weekly ad deals, pharmacy management, and fuel points — all through your phone. This guide shows you how to save money on every grocery trip.`,
+    excerpt: `The Kroger app gives you digital coupons, weekly ad deals, pharmacy management, and fuel points — all from your phone. How to save on every trip.`,
     category: `app-guides`,
     tags: [`kroger`, `digital coupons`, `fuel points`, `grocery`, `savings`, `pharmacy`],
     readTime: `5 min`,
@@ -528,7 +528,7 @@ You need an Amazon account to use Subscribe & Save. Prime membership is not requ
   {
     slug: `lyft-medical-transportation-guide`,
     title: `How to Use Lyft for Medical Appointments When You Cannot Drive`,
-    excerpt: `Lyft offers rides to medical appointments that may be covered by Medicare Advantage, Medicaid, or your insurance. Here is how to request a medical ride and what programs are available.`,
+    excerpt: `Lyft offers rides to medical appointments that may be covered by Medicare Advantage or Medicaid. How to request one and what programs exist.`,
     category: `health-tech`,
     tags: [`lyft`, `medical transportation`, `NEMT`, `medicare advantage`, `medicaid`, `ride to doctor`],
     readTime: `6 min`,
@@ -635,7 +635,7 @@ Getting a library card is free and takes about 5 minutes at any public library. 
   {
     slug: `auto-bill-pay-setup-guide`,
     title: `How to Set Up Automatic Bill Payments to Never Miss a Due Date`,
-    excerpt: `Automatic bill pay lets your bank pay recurring bills — utilities, credit cards, phone bills — on the due date every month without you doing anything. Here is how to set it up safely.`,
+    excerpt: `Automatic bill pay lets your bank pay utilities, credit cards, and phone bills on the due date every month. How to set it up safely.`,
     category: `financial-tech`,
     tags: [`bill pay`, `automatic payment`, `autopay`, `banking`, `utilities`, `credit card`, `never miss payment`],
     readTime: `6 min`,
@@ -838,7 +838,7 @@ Most people leave the default settings and record. But knowing the options helps
   {
     slug: `facetime-shareplay-watch-together`,
     title: `How to Watch Movies and TV Together Over FaceTime Using SharePlay`,
-    excerpt: `SharePlay lets you and a friend or family member watch the same movie or show at the exact same time on a FaceTime call. You each watch on your own device but everything syncs up.`,
+    excerpt: `SharePlay lets you and a family member watch the same movie at the same time on a FaceTime call. You each watch on your own device, fully synced.`,
     category: `communication`,
     tags: [`facetime`, `shareplay`, `watch together`, `remote viewing`, `apple tv plus`, `disney plus`, `family`],
     readTime: `5 min`,
@@ -889,7 +889,7 @@ SharePlay requires iPhone, iPad, or Mac. The person starting SharePlay needs iOS
   {
     slug: `video-message-send-guide`,
     title: `How to Send a Video Message — Text, Email, and Social`,
-    excerpt: `Sending a video message is a personal way to stay in touch. This guide covers how to record and send videos via text, email, WhatsApp, and other apps without the file being too large.`,
+    excerpt: `How to record and send video messages by text, email, WhatsApp, and other apps — including what to do when the file is too large to send.`,
     category: `communication`,
     tags: [`video message`, `send video`, `text video`, `email video`, `whatsapp video`, `share memories`],
     readTime: `5 min`,

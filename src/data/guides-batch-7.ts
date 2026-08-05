@@ -153,7 +153,7 @@ Plan for 15–20 minutes to complete the full setup. After you finish, check the
     thumbnailEmoji: '',
     publishedAt: '2026-04-16',
     difficulty: 'Beginner',
-    body: `Tablets are excellent for reading books because you can make the text as large as you need, adjust the background brightness, and carry thousands of books in one lightweight device. The two most popular reading apps are Amazon Kindle (works on iPad and Android tablets) and Apple Books (iPad only). Both apps let you buy books, and many public libraries offer free ebook borrowing through an app called Libby.
+    body: `Tablets are excellent for reading. You can make the text as large as you need, adjust the screen brightness, and carry thousands of books in one light device. The two most popular reading apps are Amazon Kindle, which works on iPad and Android tablets, and Apple Books, which is iPad only. Both let you buy books. Many public libraries also lend ebooks for free through an app called Libby.
 
 You do not need to buy a separate Kindle device to read Kindle books — the free Kindle app on your existing tablet works the same way. Inside the app, you can change the font size, font style, background color (white, sepia/tan, or black), and line spacing to make reading as comfortable as possible.
 

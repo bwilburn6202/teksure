@@ -597,7 +597,7 @@ Quick Tip: Before leaving home, write down your home computer's name (found in S
   {
     slug: `autocorrect-guide-iphone`,
     title: `iPhone Autocorrect: Fix Overzealous Corrections and Add Custom Words`,
-    excerpt: `iPhone autocorrect helps with spelling but can be frustrating when it changes words you want. Learn how to add custom words, undo wrong corrections, and adjust autocorrect settings.`,
+    excerpt: `iPhone autocorrect helps with spelling but can change words you wanted. How to add custom words, undo wrong corrections, and adjust the settings.`,
     category: `phone-guides`,
     tags: [`iPhone`, `autocorrect`, `keyboard`, `iOS`, `custom words`, `Text Replacement`, `settings`],
     readTime: `6 min`,

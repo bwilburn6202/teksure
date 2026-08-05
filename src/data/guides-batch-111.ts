@@ -7,7 +7,7 @@ export const guidesBatch111: Guide[] = [
   {
     slug: 'digital-estate-planning-accounts-after-death',
     title: "Digital Estate Planning: What Happens to Your Accounts When You're Gone",
-    excerpt: 'Your photos, email, social media, bank accounts, and crypto do not just disappear when you die. They sit locked, often forever. A simple plain-English guide to Apple Legacy Contact, Google Inactive Account Manager, Facebook memorialization, password inheritance, and the digital asset inventory your family will actually need.',
+    excerpt: 'Your photos, email, and accounts do not disappear when you die. How to set up Apple Legacy Contact, Google Inactive Account Manager, and more.',
     category: 'safety-guides',
     tags: ['digital estate planning', 'legacy contact', 'Apple Legacy Contact', 'Google Inactive Account Manager', 'Facebook memorialization', 'password manager', 'inheritance', 'will', 'transfer on death', 'TOD', 'estate planning', 'digital assets', 'cryptocurrency', 'seniors', 'family', 'end of life planning', 'beginner'],
     readTime: '15 min',

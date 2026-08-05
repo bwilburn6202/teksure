@@ -237,7 +237,7 @@ The feature is built into WhatsApp and requires no separate download. If you hav
   {
     slug: `netflix-offline-downloads-guide`,
     title: `How to Download Netflix Shows to Watch Without Wi-Fi`,
-    excerpt: `Netflix lets you download movies and TV episodes to your phone or tablet so you can watch them without an internet connection — great for travel, road trips, or spotty service areas.`,
+    excerpt: `Netflix lets you download movies and shows to your phone or tablet to watch without internet — good for travel, road trips, or spotty service.`,
     category: `entertainment`,
     tags: [`netflix`, `offline`, `download`, `travel`, `no wifi`, `streaming`],
     readTime: `5 min`,
@@ -421,7 +421,7 @@ Many people find that writing down where they plan to spend money — before spe
   {
     slug: `noise-canceling-headphones-guide`,
     title: `How Noise-Canceling Headphones Work and Which to Buy`,
-    excerpt: `Noise-canceling headphones block out background noise so you can hear music, podcasts, or phone calls clearly. This guide explains how they work and what to look for when buying.`,
+    excerpt: `Noise-canceling headphones block background noise so music, podcasts, and calls come through clearly. How they work and what to look for.`,
     category: `essential-skills`,
     tags: [`noise canceling`, `headphones`, `AirPods Pro`, `Sony`, `Bose`, `hearing`, `audio`],
     readTime: `6 min`,
@@ -470,7 +470,7 @@ Most noise-canceling headphones also include a "Transparency Mode" — this inte
   {
     slug: `iphone-text-size-display-settings`,
     title: `How to Make Text Bigger on Your iPhone`,
-    excerpt: `If text on your iPhone is hard to read, you can make it larger — and even bolder — in a few taps. This guide shows you how to adjust text size, display zoom, and accessibility settings.`,
+    excerpt: `If text on your iPhone is hard to read, you can make it larger and bolder in a few taps. How to adjust text size, display zoom, and accessibility.`,
     category: `phone-guides`,
     tags: [`iphone`, `text size`, `accessibility`, `larger text`, `display`, `vision`, `seniors`],
     readTime: `4 min`,
@@ -568,7 +568,7 @@ Here are the most useful things that changed:
   {
     slug: `android-15-new-features-guide`,
     title: `What Is New in Android 15 — Key Features Explained`,
-    excerpt: `Android 15 brought several helpful improvements to Android phones in 2024, including better theft protection, private spaces, and satellite messaging. Here is what matters for everyday users.`,
+    excerpt: `Android 15 brought better theft protection, private spaces, and satellite messaging to Android phones. Here is what matters for everyday users.`,
     category: `phone-guides`,
     tags: [`android 15`, `android`, `update`, `new features`, `google`, `theft protection`],
     readTime: `6 min`,
@@ -670,7 +670,7 @@ One important thing to know: photos in the Locked Folder are NOT backed up to th
   {
     slug: `sell-old-tech-safely-guide`,
     title: `How to Safely Sell Your Old Phone, Tablet, or Laptop`,
-    excerpt: `Before you sell or trade in an old device, you need to wipe it properly to protect your personal data. This guide walks you through the steps for iPhone, Android, and Windows computers.`,
+    excerpt: `Before you sell or trade in an old device, wipe it properly to protect your data. Step-by-step for iPhone, Android, and Windows computers.`,
     category: `essential-skills`,
     tags: [`sell phone`, `trade in`, `factory reset`, `data wipe`, `old device`, `privacy`, `ebay`, `facebook marketplace`],
     readTime: `7 min`,
@@ -716,7 +716,7 @@ Always back up your data before erasing. Remove SIM cards and SD cards. Charge t
   {
     slug: `phone-as-tv-remote-guide`,
     title: `How to Use Your Phone as a TV Remote`,
-    excerpt: `Most Smart TVs and streaming devices can be controlled from your phone — no need to hunt for a lost remote. This guide shows you how to set it up for Samsung, LG, Roku, and Fire TV.`,
+    excerpt: `Most smart TVs and streaming devices can be controlled from your phone — no hunting for a lost remote. Setup for Samsung, LG, Roku, and Fire TV.`,
     category: `smart-home`,
     tags: [`tv remote`, `smart tv`, `samsung`, `LG`, `roku`, `fire tv`, `phone remote`, `universal remote`],
     readTime: `5 min`,
@@ -766,7 +766,7 @@ These apps give you a virtual remote on your phone screen. Many also let you use
   {
     slug: `samsung-galaxy-ai-features-guide`,
     title: `How to Use Samsung Galaxy AI Features on Your Phone`,
-    excerpt: `Samsung Galaxy AI (Galaxy AI) adds AI-powered tools to newer Galaxy phones — including Circle to Search, Live Translate, Chat Assist, and photo editing. Here is what each feature does.`,
+    excerpt: `Samsung Galaxy AI adds tools to newer Galaxy phones — Circle to Search, Live Translate, Chat Assist, and photo editing. What each one does.`,
     category: `ai-guides`,
     tags: [`samsung`, `galaxy ai`, `circle to search`, `live translate`, `chat assist`, `AI`, `galaxy s24`, `galaxy s25`],
     readTime: `6 min`,

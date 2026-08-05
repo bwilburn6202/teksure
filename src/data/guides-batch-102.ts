@@ -7,7 +7,7 @@ export const guidesBatch102: Guide[] = [
   {
     slug: 'cloud-storage-explained-photos-files-safe',
     title: 'Cloud Storage Explained: Your Photos and Files, Safe and Sound',
-    excerpt: "A beginner-friendly guide to cloud storage — what it is, why it matters, how to set it up on your phone or computer, and how to share photos and files with family. Keep your memories safe without any tech stress.",
+    excerpt: "What cloud storage is, how to set it up on your phone or computer, and how to share photos and files with family — without the tech stress.",
     category: 'essential-skills',
     tags: ['cloud storage', 'Google Drive', 'Google Photos', 'iCloud', 'Dropbox', 'OneDrive', 'backup', 'photos', 'file sharing', 'beginner', 'storage', 'privacy'],
     readTime: '10 min',

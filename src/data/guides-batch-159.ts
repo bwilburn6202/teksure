@@ -191,7 +191,7 @@ Within a day or two, you should start receiving notifications for your normal tr
   {
     slug: 'how-to-use-telehealth-for-a-doctor-visit-from-home-2026',
     title: 'How to Have a Doctor Visit by Video Call from Home (Telehealth)',
-    excerpt: 'See a real doctor from your phone, tablet, or computer without driving to an office. This guide explains how telehealth works, what Medicare covers, and how to prepare for your first video visit.',
+    excerpt: 'See a real doctor from your phone, tablet, or computer. How telehealth works, what Medicare covers, and how to prepare for your first video visit.',
     category: 'health-tech',
     tags: [
       'telehealth',

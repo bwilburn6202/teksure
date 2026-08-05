@@ -7,7 +7,7 @@ export const guidesBatch108: Guide[] = [
   {
     slug: 'how-to-spot-fake-reviews-online',
     title: 'How to Spot Fake Reviews Online',
-    excerpt: "Learn the red flags of fake positive and negative reviews, how to check a reviewer's profile, why an odd star distribution is suspicious, and which free tools (Fakespot, ReviewMeta) can do the work for you. A 10-minute guide that can save you from wasting money on junk products.",
+    excerpt: "The red flags of fake reviews, how to check a reviewer's profile, why odd star ratings are suspicious, and free tools that spot them for you.",
     category: 'safety-guides',
     tags: ['fake reviews', 'online shopping', 'Amazon', 'reviews', 'scams', 'consumer protection', 'Fakespot', 'ReviewMeta', 'verified purchase', 'beginner', 'safety'],
     readTime: '10 min',

@@ -7,7 +7,7 @@ export const guidesBatch113: Guide[] = [
   {
     slug: 'veterans-tech-guide-va-benefits-myhealthevet-online-resources',
     title: "Veteran's Tech Guide: VA Benefits, MyHealtheVet, and Online Resources",
-    excerpt: 'A plain-English guide for veterans (and the families helping them) on using VA.gov, MyHealtheVet, VA Video Connect telehealth, checking and filing claims, downloading your DD-214, free VA mental health apps, avoiding VA scams, and getting human help when you need it. Written for real people, not IT pros.',
+    excerpt: 'A plain-English guide for veterans using VA.gov and MyHealtheVet — filing claims, VA telehealth, downloading your DD-214, and avoiding VA scams.',
     category: 'health-tech',
     tags: ['veterans', 'VA', 'VA.gov', 'MyHealtheVet', 'disability claims', 'GI Bill', 'telehealth', 'DD-214', 'PTSD Coach', 'VA scams', 'Login.gov', 'ID.me', 'VSO', 'DAV', 'beginner', 'senior friendly'],
     readTime: '15 min',

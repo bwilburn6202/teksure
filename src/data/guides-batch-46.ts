@@ -356,7 +356,7 @@ Both features work in standard Photo mode — no need to switch to a special mod
   {
     slug: `apple-watch-health-seniors`,
     title: `Using Apple Watch for Health Tracking: A Guide for Seniors`,
-    excerpt: `Apple Watch can track your heart rate, count your steps, detect falls, monitor sleep, and alert you to irregular heart rhythms. Here is what each feature does and how to get started.`,
+    excerpt: `Apple Watch can track heart rate, count steps, detect falls, monitor sleep, and flag irregular rhythms. What each feature does and how to start.`,
     category: `health-tech`,
     tags: [`apple watch`, `health`, `seniors`, `heart rate`, `fall detection`, `steps`, `ecg`],
     readTime: `7 min`,
@@ -404,7 +404,7 @@ The Watch charges every night on a small magnetic charger. Most people charge it
   {
     slug: `google-maps-saved-places-guide`,
     title: `How to Save Your Favorite Places in Google Maps`,
-    excerpt: `Google Maps lets you star restaurants, stores, doctors' offices, and any other location so you can find them instantly without searching again. Learn how to save and organize your favorite places.`,
+    excerpt: `Google Maps lets you star restaurants, stores, and doctors' offices so you can find them again instantly. How to save and organize your places.`,
     category: `tips-tricks`,
     tags: [`google maps`, `saved places`, `favorites`, `starred places`, `navigation`, `tips`],
     readTime: `4 min`,
@@ -447,7 +447,7 @@ Starred places are the simplest — a star symbol marks the location on the map 
   {
     slug: `iphone-spotlight-search-guide`,
     title: `How to Use Spotlight Search on iPhone to Find Anything Fast`,
-    excerpt: `Spotlight is iPhone's built-in search tool — swipe down from the home screen and type anything. Find apps, contacts, emails, photos, and web results without opening a single app.`,
+    excerpt: `Spotlight is iPhone's built-in search. Swipe down from the home screen and type to find apps, contacts, emails, photos, and web results at once.`,
     category: `tips-tricks`,
     tags: [`iphone`, `spotlight`, `search`, `find`, `quick search`, `siri suggestions`],
     readTime: `4 min`,
@@ -574,7 +574,7 @@ Smart Lock does not replace a strong lock screen — it works alongside it. You 
   {
     slug: `iphone-flashlight-guide`,
     title: `How to Use the iPhone Flashlight and Make It Brighter`,
-    excerpt: `Your iPhone's flashlight is more powerful than most people realize. You can turn it on instantly from the lock screen and adjust the brightness. Here is everything you need to know.`,
+    excerpt: `Your iPhone's flashlight is more capable than most people realize. Turn it on instantly from the lock screen, and adjust the brightness level.`,
     category: `tips-tricks`,
     tags: [`iphone`, `flashlight`, `torch`, `control center`, `brightness`, `tips`],
     readTime: `3 min`,

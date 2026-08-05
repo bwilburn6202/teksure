@@ -163,7 +163,7 @@ Personal Voice works together with Live Speech (also in Accessibility settings),
     thumbnailEmoji: ``,
     publishedAt: `2026-04-20`,
     difficulty: `Beginner`,
-    body: `Assistive Access is an iPhone mode introduced in iOS 17 that transforms the look and feel of the iPhone into a much simpler, more manageable experience. Instead of the standard home screen with dozens of small icons and settings, Assistive Access shows large, easy-to-tap buttons for only the apps you choose. There are no complicated menus, no notifications cluttering the screen, and no confusing options.
+    body: `Assistive Access is an iPhone mode introduced in iOS 17. It turns the iPhone into something much simpler to use. Instead of the standard home screen, with dozens of small icons and settings, Assistive Access shows large, easy-to-tap buttons for only the apps you choose. There are no complicated menus, no notifications cluttering the screen, and no confusing options.
 
 This feature was designed primarily for people with cognitive disabilities — including dementia, Down syndrome, or intellectual disabilities — as well as for older adults who find the standard iPhone overwhelming. A family member, caregiver, or trusted person usually sets it up and configures which apps are available and how the device looks.
 
@@ -355,7 +355,7 @@ Family Link works on Android phones and tablets, as well as Chromebooks when the
   {
     slug: `kindle-fire-kids-setup`,
     title: `Set Up a Kindle Fire Kids Tablet for Your Child`,
-    excerpt: `The Amazon Kindle Fire Kids tablet comes with built-in parental controls, a child-safe content subscription, and a two-year worry-free guarantee. Here is how to set it up properly.`,
+    excerpt: `The Kindle Fire Kids tablet includes parental controls, a child-safe content subscription, and a two-year worry-free guarantee. How to set it up.`,
     category: `essential-skills`,
     tags: [`Kindle Fire Kids`, `Amazon`, `tablet`, `kids`, `parental controls`],
     readTime: `6 min`,
@@ -656,7 +656,7 @@ If your school uses both Teams and another system like Canvas or Schoology, Team
   {
     slug: `canvas-lms-student-guide`,
     title: `Navigate Your School's Canvas Learning System as a Student`,
-    excerpt: `Canvas is used by thousands of colleges and schools to post assignments, grades, and course materials. This guide walks you through the most important features you will use every day.`,
+    excerpt: `Canvas is used by thousands of colleges to post assignments, grades, and course materials. A walkthrough of the features you will use every day.`,
     category: `essential-skills`,
     tags: [`Canvas`, `LMS`, `school`, `assignments`, `grades`],
     readTime: `6 min`,
@@ -753,7 +753,7 @@ Wolfram Alpha can also answer practical questions, not just academic ones. You c
   {
     slug: `samsung-circle-to-search`,
     title: `How to Use Circle to Search on Samsung Galaxy Phones`,
-    excerpt: `Circle to Search lets you draw a circle around anything on your Samsung Galaxy phone screen — a plant, a product, or text — and instantly search for it without leaving the app you are in.`,
+    excerpt: `Circle to Search lets you draw a circle around anything on your Galaxy screen — a plant, a product, text — and search it without leaving the app.`,
     category: `phone-guides`,
     tags: [`Circle to Search`, `Samsung`, `Google`, `search`, `Android`],
     readTime: `4 min`,
@@ -948,7 +948,7 @@ These features are built into Pixel phones and require no extra apps or subscrip
   {
     slug: `pixel-call-screen-guide`,
     title: `How to Use Google Pixel's Call Screen to Block Spam Calls`,
-    excerpt: `Call Screen on Google Pixel lets Google's AI answer unknown calls for you, show you a live transcript of what the caller says, and help you decide whether to pick up — without saying a word.`,
+    excerpt: `Call Screen on Google Pixel lets Google answer unknown calls for you and show a live transcript, so you can decide whether to pick up.`,
     category: `phone-guides`,
     tags: [`Call Screen`, `Pixel`, `spam calls`, `Google`, `Android`],
     readTime: `5 min`,

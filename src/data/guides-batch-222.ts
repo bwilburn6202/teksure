@@ -53,7 +53,7 @@ export const guidesBatch222: Guide[] = [
   {
     slug: "how-to-claim-survivor-benefits",
     title: "How to Claim Social Security Survivor Benefits as a Widow or Widower",
-    excerpt: "Plain-English guide to applying for Social Security survivor benefits after losing a spouse, with eligibility rules, paperwork, and when to apply for the highest monthly payment.",
+    excerpt: "A plain-English guide to applying for Social Security survivor benefits after losing a spouse — eligibility, paperwork, and when to apply.",
     category: "government-civic",
     tags: ["survivor benefits", "social security", "widow", "widower", "spouse death", "retirement"],
     readTime: "10 min",
@@ -143,7 +143,7 @@ export const guidesBatch222: Guide[] = [
   {
     slug: "how-to-manage-joint-email-after-spouse-passes",
     title: "How to Manage a Joint Email Account After a Spouse Passes Away",
-    excerpt: "Plain-English compassionate guide to handling a shared Gmail, Yahoo, or AOL email account after losing a spouse — preserving messages, paying bills, and closing or transferring the account.",
+    excerpt: "A compassionate guide to handling a shared Gmail, Yahoo, or AOL account after losing a spouse — preserving messages, paying bills, and closing it.",
     category: "communication",
     tags: ["email", "gmail", "joint account", "widow", "widower", "memorial", "digital legacy"],
     readTime: "8 min",

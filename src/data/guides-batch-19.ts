@@ -675,7 +675,7 @@ export const guidesBatch19: Guide[] = [
   {
     slug: 'password-sharing-family-guide',
     title: 'How to Safely Share Passwords With Family Members',
-    excerpt: "Sometimes you need to share a Netflix password or a Wi-Fi password with family. Here's how to do it safely — without writing passwords on sticky notes or saying them over the phone.",
+    excerpt: "Sometimes you need to share a Netflix or Wi-Fi password with family. How to do it safely — without sticky notes or reading it over the phone.",
     category: 'safety-guides',
     tags: ['password sharing', 'family passwords', 'icloud keychain', 'password manager', 'share wifi password'],
     readTime: '4 min',

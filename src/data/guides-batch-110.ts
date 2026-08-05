@@ -7,7 +7,7 @@ export const guidesBatch110: Guide[] = [
   {
     slug: 'everyday-ai-when-and-how-to-use-ai-assistants',
     title: 'Everyday AI: When and How to Use AI Assistants',
-    excerpt: "A practical, plain-English guide to using AI assistants like ChatGPT, Claude, and Gemini for everyday tasks — drafting emails, translating menus, explaining jargon, planning meals and trips, summarizing articles, brainstorming ideas, and more. Includes privacy tips and a clear list of things AI is NOT good for.",
+    excerpt: "How to use AI assistants like ChatGPT, Claude, and Gemini for everyday tasks — plus privacy tips and a clear list of things AI is not good for.",
     category: 'ai-guides',
     tags: ['AI', 'ChatGPT', 'Claude', 'Gemini', 'AI assistant', 'everyday AI', 'beginner', 'translation', 'email', 'recipes', 'travel', 'jargon', 'privacy', 'senior friendly'],
     readTime: '10 min',

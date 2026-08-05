@@ -7,7 +7,7 @@ export const guidesBatch105: Guide[] = [
   {
     slug: 'telehealth-appointments-see-your-doctor-from-home',
     title: 'Telehealth Appointments: See Your Doctor from Home',
-    excerpt: "A plain-English guide to telehealth — what it is, when to use it, how to schedule and prepare, what to expect during the visit, and how to troubleshoot common tech problems. Covers Medicare coverage, popular platforms like Teladoc and MDLive, and patient portal visits.",
+    excerpt: "What telehealth is, how to schedule and prepare for a visit, and what Medicare covers — plus fixes for the tech problems that come up most.",
     category: 'health-tech',
     tags: ['telehealth', 'telemedicine', 'video visit', 'doctor', 'patient portal', 'Teladoc', 'MDLive', 'Amwell', 'Medicare', 'health', 'beginner', 'video call', 'prescriptions'],
     readTime: '10 min',

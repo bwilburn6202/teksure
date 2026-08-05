@@ -7,7 +7,7 @@ export const guidesBatch115: Guide[] = [
   {
     slug: 'new-to-america-essential-tech-for-your-new-life',
     title: 'New to America? Essential Tech for Your New Life',
-    excerpt: 'A warm, plain-English guide for the 43 million foreign-born residents of the United States — prepaid phone plans without a credit check, translation apps, banking without an SSN, sending money home, finding work, learning English online, staying connected with family abroad, government websites, and how to avoid scams that target newcomers. Written for real people in the middle of a big life change.',
+    excerpt: 'Prepaid phones without a credit check, banking without an SSN, sending money home, translation apps, and avoiding scams that target newcomers.',
     category: 'essential-skills',
     tags: ['immigrants', 'newcomers', 'new to America', 'foreign-born', 'prepaid phone', 'Mint Mobile', 'Visible', 'Cricket', 'Lifeline', 'Google Translate', 'Microsoft Translator', 'ITIN', 'banking', 'Majority', 'Welcome Tech', 'remittances', 'Wise', 'Remitly', 'Xoom', 'WorldRemit', 'WhatsApp', 'Telegram', 'WeChat', 'Line', 'KakaoTalk', 'Duolingo', 'BBC Learning English', 'USCIS', 'benefits.gov', 'DMV', 'scams', 'notario fraud', 'beginner'],
     readTime: '15 min',

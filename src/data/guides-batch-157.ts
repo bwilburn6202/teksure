@@ -456,7 +456,7 @@ When you use voice dictation, a short audio clip of your speech is sent to Apple
   {
     slug: 'how-to-share-wifi-password-without-typing-2026',
     title: 'How to Share Your Home Wi-Fi Password Without Typing It',
-    excerpt: 'Share your home Wi-Fi password with guests in seconds — no typing needed. Works between iPhones, via QR code, and on Android. Includes how to find your password when you need it.',
+    excerpt: 'Share your home Wi-Fi password with guests in seconds, no typing. Works between iPhones, by QR code, and on Android — plus how to find yours.',
     category: 'tips-tricks',
     tags: [
       'Wi-Fi password',

@@ -145,7 +145,7 @@ Always turn off the hotspot when you no longer need it. Leaving it on drains you
   {
     slug: 'how-to-turn-on-closed-captions-on-netflix-hulu-and-youtube-2026',
     title: 'How to Turn On Closed Captions on Netflix, Hulu, and YouTube',
-    excerpt: 'Closed captions display spoken words as text on screen. Here is how to turn them on for Netflix, Hulu, YouTube, Disney+, and Amazon Prime Video — and how to make the text larger.',
+    excerpt: 'How to turn on closed captions for Netflix, Hulu, YouTube, Disney+, and Amazon Prime Video — and how to make the on-screen text larger.',
     category: 'entertainment',
     tags: [
       'closed captions',
@@ -464,7 +464,7 @@ Do not panic — but act quickly.
   {
     slug: 'how-to-apply-for-social-security-benefits-online-2026',
     title: 'How to Apply for Social Security Benefits Online',
-    excerpt: 'You can apply for Social Security retirement benefits at ssa.gov without visiting an office. This guide walks through creating an account, checking your estimated payment, and completing the application.',
+    excerpt: 'Apply for Social Security retirement benefits at ssa.gov without visiting an office — creating an account, checking your estimate, and applying.',
     category: 'government-civic',
     tags: [
       'Social Security',

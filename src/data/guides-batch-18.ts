@@ -493,7 +493,7 @@ export const guidesBatch18: Guide[] = [
     thumbnailEmoji: '',
     publishedAt: '2026-04-19',
     difficulty: 'Beginner',
-    body: `Live Text is an iPhone feature (available on iPhone XS and later, running iOS 17 or later) that can recognize and interact with text in photos and through your camera. This means you can point your camera at a business card, a restaurant menu, a sign, a receipt, or a whiteboard and tap to copy the text, call a phone number, open a website, or translate text — all without typing a single character.\n\nLive Text is also incredibly useful for accessibility — if you receive a photo with a phone number or address in it, you no longer need to manually type it; you tap it. This guide explains how to use it in the Camera app, Photos app, and other places.`,
+    body: `Live Text is an iPhone feature that recognizes text in photos and through your camera. It works on iPhone XS and later, running iOS 17 or later. Point your camera at a business card, restaurant menu, sign, receipt, or whiteboard. Then tap to copy the text, call a phone number, open a website, or translate it — without typing a character.\n\nLive Text also helps a great deal with accessibility. If someone sends you a photo with a phone number or address in it, you no longer have to type it out. You tap it instead. This guide explains how to use Live Text in the Camera app, the Photos app, and elsewhere.`,
     steps: [
       {
         title: 'Enable Live Text (if not already on)',
@@ -585,7 +585,7 @@ export const guidesBatch18: Guide[] = [
   {
     slug: 'screen-recorder-iphone-guide',
     title: 'How to Record Your iPhone Screen (Screen Recording)',
-    excerpt: "iPhone has a built-in screen recorder that captures everything happening on your display — perfect for showing someone else a tech problem or saving a video that doesn't have a download option.",
+    excerpt: "iPhone has a built-in screen recorder that captures everything on your display — good for showing someone a tech problem or saving a video.",
     category: 'tips-tricks',
     tags: ['screen recording', 'iphone', 'record screen', 'screen capture', 'ios'],
     readTime: '4 min',

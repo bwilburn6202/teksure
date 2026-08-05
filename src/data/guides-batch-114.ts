@@ -7,7 +7,7 @@ export const guidesBatch114: Guide[] = [
   {
     slug: 'internet-options-when-you-live-in-the-country',
     title: 'Internet Options When You Live in the Country',
-    excerpt: "A straightforward, no-nonsense guide to getting real internet service when you live in a rural area. Covers DSL, fixed wireless, satellite (Starlink, HughesNet, Viasat), cellular home internet (T-Mobile, Verizon, AT&T), phone hotspots, combining services for reliability, subsidy programs, and realistic expectations for streaming, video calls, and gaming.",
+    excerpt: "Real internet options for rural homes — DSL, fixed wireless, satellite (Starlink, HughesNet), and cellular home internet, with honest speeds.",
     category: 'internet-connectivity',
     tags: ['rural internet', 'Starlink', 'satellite internet', 'fixed wireless', 'T-Mobile Home Internet', 'Verizon 5G Home', 'AT&T Internet Air', 'DSL', 'HughesNet', 'Viasat', 'cellular home internet', 'broadband', 'WISP', 'hotspot', 'rural broadband', 'beginner'],
     readTime: '15 min',

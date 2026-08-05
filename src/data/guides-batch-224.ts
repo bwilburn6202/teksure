@@ -54,7 +54,7 @@ export const guidesBatch224: Guide[] = [
   {
     slug: "how-to-apply-kinship-care-benefits",
     title: "How to Apply for Kinship Care Benefits",
-    excerpt: "Plain-English walkthrough for grandparents and other relative caregivers to apply for the financial help, food assistance, and medical coverage available for a child in your care.",
+    excerpt: "A walkthrough for grandparents and relative caregivers applying for the financial help, food assistance, and medical coverage for a child in care.",
     category: "government-civic",
     tags: ["kinship care", "grandparents", "benefits", "tanf", "snap", "medicaid", "seniors"],
     readTime: "10 min",

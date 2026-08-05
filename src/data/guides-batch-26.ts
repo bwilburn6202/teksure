@@ -607,7 +607,7 @@ Presenting from Google Slides is straightforward: open the presentation in full-
   {
     slug: 'shutterfly-photo-book-guide',
     title: 'How to Create a Custom Photo Book with Shutterfly',
-    excerpt: 'Shutterfly photo books make meaningful gifts — hardcover, softcover, or layflat. Upload your best photos and Shutterfly prints and ships a professional-quality book to your door.',
+    excerpt: 'Shutterfly photo books make meaningful gifts — hardcover, softcover, or layflat. Upload your photos and a professional-quality book ships to you.',
     category: 'app-guides',
     tags: ['Shutterfly', 'photo book', 'gift', 'photos', 'printing'],
     readTime: '6 min',

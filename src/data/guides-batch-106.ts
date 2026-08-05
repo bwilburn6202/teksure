@@ -7,7 +7,7 @@ export const guidesBatch106: Guide[] = [
   {
     slug: 'find-and-cancel-forgotten-subscriptions',
     title: 'How to Find and Cancel Subscriptions You Forgot About',
-    excerpt: "A step-by-step guide to tracking down every subscription draining your wallet — from streaming services to forgotten free trials — and cancelling the ones you don't want. Includes iPhone, Android, and direct-from-company cancellation steps.",
+    excerpt: "How to find every subscription draining your wallet — streaming services, forgotten free trials — and cancel them on iPhone, Android, or direct.",
     category: 'financial-tech',
     tags: ['subscriptions', 'money', 'budgeting', 'canceling subscriptions', 'free trials', 'streaming', 'recurring charges', 'iPhone', 'Android', 'Rocket Money', 'Truebill', 'beginner', 'savings', 'financial'],
     readTime: '10 min',

@@ -887,7 +887,7 @@ Filing a claim on Lemonade is done through the app with an AI named Maya. You de
   {
     slug: `fabric-life-insurance-app`,
     title: `Protect Your Family with Fabric Life Insurance`,
-    excerpt: `Fabric offers affordable term life insurance and a free digital will through one app — designed specifically for parents who want to protect their families without a complicated process.`,
+    excerpt: `Fabric offers affordable term life insurance and a free digital will in one app — built for parents who want protection without a complex process.`,
     category: `financial-tech`,
     tags: [`life insurance`, `Fabric`, `term life`, `family protection`, `insurance`],
     readTime: `7 min`,

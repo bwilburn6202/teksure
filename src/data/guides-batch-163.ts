@@ -381,7 +381,7 @@ After completing the steps above, go back to Settings → General → iPhone Sto
   {
     slug: 'how-to-spot-fake-online-reviews-before-buying-2026',
     title: 'How to Spot Fake Online Reviews Before You Buy',
-    excerpt: 'Fake reviews can trick you into buying products that do not work as described. Learn the warning signs, the free tools that grade review quality, and where to find trustworthy opinions.',
+    excerpt: 'Fake reviews trick you into buying products that do not work. The warning signs, free tools that grade review quality, and where to find real ones.',
     category: 'buying-guides',
     tags: [
       'fake reviews',

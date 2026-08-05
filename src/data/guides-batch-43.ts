@@ -149,7 +149,7 @@ The vacation responder is available in Gmail on your computer (gmail.com). The s
   {
     slug: `recover-deleted-gmail-emails`,
     title: `How to Recover Deleted Emails in Gmail`,
-    excerpt: `Deleted Gmail emails go to the Trash where they stay for 30 days before being permanently removed. Here is how to find and recover them — and what to do if they are gone for good.`,
+    excerpt: `Deleted Gmail messages sit in Trash for 30 days before they are removed for good. How to find and recover them — and what to do if they are gone.`,
     category: `essential-skills`,
     tags: [`gmail`, `deleted email`, `trash`, `recover email`, `email recovery`],
     readTime: `4 min`,
@@ -644,7 +644,7 @@ Video calling works on Echo Show devices (Echo Show 5, 8, 10, 15, and the new Ec
   {
     slug: `smart-speaker-music-guide`,
     title: `How to Play Music on Your Smart Speaker (Alexa or Google Home)`,
-    excerpt: `Your smart speaker can play almost any song, artist, playlist, genre, or radio station — if you know how to ask. Here is how to get the most from your Alexa or Google Nest speaker.`,
+    excerpt: `Your smart speaker can play almost any song, artist, playlist, or station — if you know how to ask. Getting the most from Alexa or Google Nest.`,
     category: `smart-home`,
     tags: [`alexa music`, `google home music`, `smart speaker`, `voice commands`, `play music`, `Amazon Music`, `Spotify`],
     readTime: `5 min`,

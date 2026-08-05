@@ -266,7 +266,7 @@ Apple Pay is built into every iPhone. You do not need to download anything. You 
   {
     slug: 'how-to-use-google-maps-step-by-step-2026',
     title: 'How to Use Google Maps for Directions (Step-by-Step)',
-    excerpt: 'Google Maps gives you spoken turn-by-turn directions right from your phone. This guide walks through everything — searching, navigating, muting, and what to do when you miss a turn.',
+    excerpt: 'Google Maps gives spoken turn-by-turn directions from your phone. Searching, navigating, muting, and what to do when you miss a turn.',
     category: 'essential-skills',
     tags: [
       'google maps',

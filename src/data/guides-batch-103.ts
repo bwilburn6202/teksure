@@ -7,7 +7,7 @@ export const guidesBatch103: Guide[] = [
   {
     slug: `qr-codes-scanning-guide`,
     title: "How to Use QR Codes (They're Everywhere Now)",
-    excerpt: "QR codes are those square black-and-white patterns you see everywhere — restaurants, stores, parking meters, TV ads. Here's how to scan them safely with your phone, what happens when you do, and how to make your own.",
+    excerpt: "QR codes are those square patterns on menus, parking meters, and ads. How to scan them safely with your phone — and how to make your own.",
     category: 'essential-skills',
     tags: ['QR code', 'scanning', 'iPhone', 'Android', 'safety', 'payments', 'beginner'],
     readTime: '8 min',

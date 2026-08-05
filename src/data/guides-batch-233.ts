@@ -229,7 +229,7 @@ export const guidesBatch233: Guide[] = [
   {
     slug: "how-to-switch-medicare-advantage-state-change",
     title: "How to Switch Medicare Advantage When You Change State",
-    excerpt: "Plain-English guide for snowbird seniors on choosing a Medicare Advantage plan that travels with you between northern and southern homes, or switching to one that works in both states.",
+    excerpt: "A guide for snowbird seniors on choosing a Medicare Advantage plan that travels between northern and southern homes, or works in both states.",
     category: "health-tech",
     tags: ["medicare", "medicare advantage", "snowbirds", "seniors", "florida", "health insurance", "moving"],
     readTime: "10 min",

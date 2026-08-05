@@ -203,7 +203,7 @@ You do not need to call Comcast to cancel these. They can be canceled from the X
     publishedAt: '2026-07-25',
     lastVerifiedAt: '2026-07-25',
     difficulty: 'Beginner',
-    body: `A Google Family Group is a free feature that lets up to 6 people (yourself plus 5 others) share a single subscription: Google One cloud storage, YouTube Premium, YouTube Music, or the paid Google Nest features. It also unlocks two features you cannot get any other way: shared photo albums that update automatically when any family member adds a photo, and shared reminders and calendars across the family.
+    body: `A Google Family Group is a free feature that lets up to 6 people — you plus 5 others — share one subscription. That can be Google One cloud storage, YouTube Premium, YouTube Music, or the paid Google Nest features. It also unlocks two things you cannot get any other way: shared photo albums that update automatically whenever a family member adds a photo, and shared reminders and calendars.
 
 For seniors, the biggest wins are: (1) your adult child can share their 2 TB Google One plan with you at no extra cost so you have plenty of storage for photos and email, (2) you can share a "Grandkids" photo album that grows without anyone having to send you photos manually, and (3) you can share a family calendar so everyone sees the same doctor appointments and holidays.
 

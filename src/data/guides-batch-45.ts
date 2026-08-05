@@ -136,7 +136,7 @@ Managing sharing is straightforward — you can see everyone who has access to a
   {
     slug: `iphone-measure-app-guide`,
     title: `How to Use the iPhone Measure App to Measure Objects With Your Camera`,
-    excerpt: `Your iPhone has a built-in measuring tape — the Measure app uses the camera to measure real-world objects. Great for furniture shopping, home projects, or checking if something fits.`,
+    excerpt: `Your iPhone has a built-in measuring tape. The Measure app uses the camera to measure real objects — good for furniture shopping and home projects.`,
     category: `tips-tricks`,
     tags: [`iphone`, `measure app`, `ar`, `measurements`, `ruler`, `how-to`],
     readTime: `4 min`,
@@ -265,7 +265,7 @@ Haptic Touch replaced the older "3D Touch" (pressure-sensitive tap) on iPhone XR
   {
     slug: `amazon-prime-video-tips`,
     title: `Getting the Most Out of Amazon Prime Video`,
-    excerpt: `Amazon Prime Video is included with Prime, but most people only scratch the surface. Learn how to download shows for offline viewing, use X-Ray, find hidden channels, and set up profiles.`,
+    excerpt: `Prime Video is included with Prime, but most people scratch the surface. Download shows for offline viewing, use X-Ray, and set up profiles.`,
     category: `entertainment`,
     tags: [`amazon prime video`, `streaming`, `prime`, `watch offline`, `x-ray`, `tips`],
     readTime: `6 min`,
@@ -312,7 +312,7 @@ Multiple profiles let each family member have their own watchlist and viewing hi
   {
     slug: `youtube-playlist-guide`,
     title: `How to Create and Manage YouTube Playlists`,
-    excerpt: `YouTube playlists let you save and organize videos into collections — like a music mix, a series of cooking tutorials, or favorite comedy clips. Here is how to create and manage them.`,
+    excerpt: `YouTube playlists let you save videos into collections — a music mix, cooking tutorials, or favorite clips. How to create and manage them.`,
     category: `entertainment`,
     tags: [`youtube`, `playlist`, `organize`, `save videos`, `collections`],
     readTime: `4 min`,

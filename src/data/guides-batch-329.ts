@@ -8,7 +8,7 @@ export const guidesBatch329: Guide[] = [
   {
     slug: 'toll-road-text-scam-warning',
     title: 'The Toll Road Text Scam: How to Spot and Avoid It',
-    excerpt: 'Fake texts claiming you owe money on a toll road (E-ZPass, SunPass, FasTrak) are one of the most common scams in the country right now. Here is how to tell a real toll notice from a fake one.',
+    excerpt: 'Fake texts claiming you owe a toll (E-ZPass, SunPass, FasTrak) are among the most common scams right now. How to tell a real notice from a fake.',
     category: 'safety-guides',
     tags: ['scam', 'toll', 'text message', 'phishing', 'e-zpass', 'fraud'],
     readTime: '5 min',

@@ -7,7 +7,7 @@ export const guidesBatch101: Guide[] = [
   {
     slug: 'two-factor-authentication-extra-lock',
     title: 'Two-Factor Authentication: The Extra Lock on Your Digital Door',
-    excerpt: 'Two-factor authentication adds a second layer of protection to your accounts — like needing two keys instead of one. Learn what it is, why it matters, and how to set it up step by step.',
+    excerpt: 'Two-factor authentication adds a second layer to your accounts, like needing two keys instead of one. What it is, why it matters, how to set it up.',
     category: 'safety-guides',
     tags: ['two-factor authentication', '2FA', 'security', 'account protection', 'Google Authenticator', 'verification codes', 'backup codes', 'beginners', 'safety'],
     readTime: '12 min',

@@ -7,7 +7,7 @@ export const guidesBatch107: Guide[] = [
   {
     slug: 'understanding-your-phone-bill',
     title: 'Understanding Your Phone Bill: What All Those Charges Mean',
-    excerpt: "Decode every confusing line on your phone bill — plan charges, data, device payments, taxes, and those mysterious 'administrative fees.' Learn which charges are required, which are negotiable, and exactly how to lower your bill by $20-$50 a month.",
+    excerpt: "Decode every line on your phone bill — data, device payments, taxes, and 'administrative fees' — and learn how to lower it by $20-$50 a month.",
     category: 'financial-tech',
     tags: ['phone bill', 'cell phone', 'wireless', 'carrier', 'fees', 'taxes', 'data', 'saving money', 'budget', 'Verizon', 'AT&T', 'T-Mobile', 'MVNO', 'beginner', 'financial'],
     readTime: '12 min',

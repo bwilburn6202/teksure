@@ -401,7 +401,7 @@ Notes sync via iCloud, so anything you write on iPhone appears on your Mac and i
   {
     slug: `benefitscheckup-guide`,
     title: `How to Find Government Benefits You Qualify For Using BenefitsCheckUp`,
-    excerpt: `BenefitsCheckUp.org is a free tool from the National Council on Aging that screens seniors for government assistance programs — utilities, prescriptions, food, housing, and more.`,
+    excerpt: `BenefitsCheckUp.org is a free National Council on Aging tool that screens seniors for assistance programs — utilities, prescriptions, food, housing.`,
     category: `government-civic`,
     tags: [`BenefitsCheckUp`, `government benefits`, `assistance programs`, `NCOA`, `seniors`, `low income`, `utilities`],
     readTime: `5 min`,
@@ -557,7 +557,7 @@ The Health Mate app is free and shows all your readings in easy-to-read charts a
   {
     slug: `dexcom-libre-cgm-phone-guide`,
     title: `How to View Your CGM Readings on Your Phone`,
-    excerpt: `Continuous glucose monitors like Dexcom and Abbott FreeStyle Libre send real-time blood sugar readings directly to your iPhone or Android phone. Here is how to set up the companion apps.`,
+    excerpt: `Continuous glucose monitors like Dexcom and FreeStyle Libre send real-time blood sugar readings to your phone. How to set up the companion apps.`,
     category: `health-tech`,
     tags: [`dexcom`, `freestyle libre`, `CGM`, `continuous glucose monitor`, `diabetes`, `blood sugar`, `phone app`],
     readTime: `5 min`,
@@ -754,7 +754,7 @@ Why check your report?
   {
     slug: `google-translate-camera-guide`,
     title: `How to Use Google Translate's Camera to Read Signs and Menus`,
-    excerpt: `Google Translate's camera mode can translate text in real time — point your phone at a sign, menu, or document in another language and see the translation overlaid on screen instantly.`,
+    excerpt: `Google Translate's camera mode translates in real time — point your phone at a sign, menu, or document and see the translation right on screen.`,
     category: `app-guides`,
     tags: [`google translate`, `camera translation`, `instant translate`, `foreign language`, `travel`, `menus`],
     readTime: `4 min`,
@@ -856,7 +856,7 @@ The best time to download language packs is before you board your flight or leav
   {
     slug: `forgot-iphone-passcode-guide`,
     title: `What to Do If You Forgot Your iPhone Passcode`,
-    excerpt: `If you forget your iPhone passcode and get locked out, you have options to regain access — but most involve erasing the device. Here is what to try first and what to do if you must erase.`,
+    excerpt: `Locked out of your iPhone? You have options, but most involve erasing the device. What to try first, and what to do if you must erase it.`,
     category: `phone-guides`,
     tags: [`forgot passcode`, `iphone locked`, `recovery mode`, `erase iphone`, `passcode reset`],
     readTime: `6 min`,
@@ -959,7 +959,7 @@ Files by Google is completely free and available in the Google Play Store. On ma
   {
     slug: `google-maps-transit-guide`,
     title: `How to Use Google Maps for Bus, Subway, and Train Directions`,
-    excerpt: `Google Maps gives step-by-step transit directions using buses, subways, trains, and light rail — including departure times, how many stops to ride, and walking directions at each end.`,
+    excerpt: `Google Maps gives step-by-step transit directions for buses, subways, and trains — departure times, how many stops to ride, and walking at each end.`,
     category: `app-guides`,
     tags: [`google maps`, `transit`, `bus directions`, `subway`, `public transport`, `navigation`, `commute`],
     readTime: `5 min`,

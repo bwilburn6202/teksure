@@ -54,7 +54,7 @@ Keep also lets you share notes with another person. Great for collaborative shop
   {
     slug: `zoom-host-meeting-guide`,
     title: `How to Host a Zoom Meeting: Waiting Rooms, Muting, and Invites`,
-    excerpt: `Hosting a Zoom meeting is different from just joining one. Learn how to start a meeting, let people in from the waiting room, mute noisy participants, and keep things running smoothly.`,
+    excerpt: `Hosting a Zoom meeting differs from joining one. How to start a meeting, admit people from the waiting room, mute participants, and stay on track.`,
     category: `communication`,
     tags: [`zoom`, `video call`, `host`, `waiting room`, `meeting`, `remote`],
     readTime: `7 min`,
@@ -651,7 +651,7 @@ Captions are generated automatically by Zoom's speech-to-text engine. Accuracy i
   {
     slug: `zoom-record-meeting-guide`,
     title: `How to Record a Zoom Meeting to Watch Later`,
-    excerpt: `Zoom can record your meetings so you can rewatch them, share them, or share them with someone who missed the call. Learn how to record, where recordings are saved, and how to share them.`,
+    excerpt: `Zoom can record your meetings so you can rewatch them or send them to someone who missed the call. How to record, where files go, and how to share.`,
     category: `communication`,
     tags: [`zoom`, `record`, `meeting`, `video`, `replay`, `save`],
     readTime: `5 min`,
@@ -785,7 +785,7 @@ When buying a replacement cable, check which port your phone has before ordering
   {
     slug: `facebook-marketplace-sell-guide`,
     title: `How to Sell Items on Facebook Marketplace Safely`,
-    excerpt: `Facebook Marketplace lets you sell furniture, electronics, clothes, and more to people in your area — for free. Here is how to list an item, communicate with buyers, and stay safe.`,
+    excerpt: `Facebook Marketplace lets you sell furniture, electronics, and clothes locally for free. How to list an item, talk to buyers, and stay safe.`,
     category: `financial-tech`,
     tags: [`facebook marketplace`, `sell`, `local selling`, `used items`, `safety`, `listing`],
     readTime: `6 min`,

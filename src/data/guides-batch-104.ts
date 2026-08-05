@@ -7,7 +7,7 @@ export const guidesBatch104: Guide[] = [
   {
     slug: 'online-banking-made-safe-and-simple',
     title: 'Online Banking Made Safe and Simple',
-    excerpt: "A beginner-friendly guide to online banking — why it's worth it, how to set it up safely, and how to check balances, pay bills, deposit checks, and transfer money from home. Includes essential security tips to protect your accounts.",
+    excerpt: "How to set up online banking safely, then check balances, pay bills, deposit checks, and transfer money from home. Includes key security tips.",
     category: 'safety-guides',
     tags: ['online banking', 'banking', 'bill pay', 'mobile deposit', 'money transfer', 'security', '2FA', 'fraud', 'beginner', 'safety', 'passwords', 'financial'],
     readTime: '12 min',

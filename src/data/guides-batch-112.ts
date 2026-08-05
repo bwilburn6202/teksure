@@ -7,7 +7,7 @@ export const guidesBatch112: Guide[] = [
   {
     slug: 'after-a-loss-gentle-guide-to-spouse-digital-life',
     title: "After a Loss: A Gentle Guide to Your Spouse's Digital Life",
-    excerpt: "A warm, patient, step-by-step guide for widows and widowers facing the digital side of losing a spouse — phones, email, banking, social media, subscriptions, photos, and identity protection. Written with grief in mind, with the reminder that there is no rush and no right way to do this.",
+    excerpt: "A gentle, step-by-step guide for widows and widowers facing a spouse's phone, email, banking, and accounts. There is no rush and no right way.",
     category: 'safety-guides',
     tags: ['grief', 'loss', 'widow', 'widower', 'spouse', 'estate', 'digital estate', 'death certificate', 'account recovery', 'memorial', 'identity theft', 'beginner', 'senior friendly', 'life transitions'],
     readTime: '20 min',

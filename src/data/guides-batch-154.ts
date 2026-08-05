@@ -257,7 +257,7 @@ Tap the paint palette icon inside a note to give it a color — useful for group
   {
     slug: 'how-to-unsubscribe-from-junk-email-2026',
     title: 'How to Unsubscribe from Unwanted Marketing Emails',
-    excerpt: 'A crowded inbox slows you down. Learn safe ways to unsubscribe from marketing emails — and which "unsubscribe" links to avoid so you do not accidentally confirm your address to scammers.',
+    excerpt: 'Safe ways to unsubscribe from marketing emails — and which \'unsubscribe\' links to avoid so you do not confirm your address to scammers.',
     category: 'communication',
     tags: [
       'unsubscribe',
@@ -375,7 +375,7 @@ The best way to keep your inbox manageable is to be selective about giving out y
   {
     slug: 'what-is-an-imei-number-and-why-it-matters-2026',
     title: 'What Is an IMEI Number — and Why It Matters for Your Phone',
-    excerpt: 'Your phone has a unique 15-digit IMEI number — like a VIN for a car. Learn how to find yours, why it matters if your phone is stolen, and how to check one before buying a used phone.',
+    excerpt: 'Your phone has a unique 15-digit IMEI number, like a VIN for a car. How to find yours, why it matters if stolen, and how to check a used phone.',
     category: 'phone-guides',
     tags: [
       'IMEI',

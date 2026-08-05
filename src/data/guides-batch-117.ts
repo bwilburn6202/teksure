@@ -7,7 +7,7 @@ export const guidesBatch117: Guide[] = [
   {
     slug: 'hidden-accessibility-features-your-phone-already-has',
     title: 'Hidden Accessibility Features Your Phone Already Has',
-    excerpt: "A plain-English tour of the free, built-in accessibility features hiding in your iPhone or Android settings — bigger text, voice commands, read-aloud, a magnifier, live captions, hearing aid connectivity, color filters, dictation, Action Button / Back Tap shortcuts, and Emergency SOS. All already installed, all free, and most people have no idea they exist.",
+    excerpt: "Free features hiding in your iPhone or Android settings — bigger text, voice commands, read-aloud, a magnifier, live captions, and much more.",
     category: 'phone-guides',
     tags: ['accessibility', 'iphone', 'android', 'seniors', 'vision', 'hearing', 'voice-commands', 'siri', 'google-assistant', 'voiceover', 'talkback', 'magnifier', 'live-captions', 'hearing-aids', 'color-filters', 'dictation', 'emergency-sos', 'beginner'],
     readTime: '12 min',

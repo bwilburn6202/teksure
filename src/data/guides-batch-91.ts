@@ -402,7 +402,7 @@ The site is straightforward to use. You can browse without creating an account. 
   {
     slug: `back-market-refurb-guide`,
     title: `Buy Certified Refurbished Electronics Safely with Back Market`,
-    excerpt: `Back Market sells professionally refurbished phones and laptops at significant discounts. Learn what "certified refurbished" means, how grades work, and what the warranty covers.`,
+    excerpt: `Back Market sells professionally refurbished phones and laptops at a discount. What certified refurbished means, how grades work, and warranties.`,
     category: `financial-tech`,
     tags: [`Back Market`, `refurbished`, `certified refurbished`, `used electronics`, `save money`],
     readTime: `6 min`,
@@ -787,7 +787,7 @@ This guide covers the full setup from screwing in the bulb to setting a daily sc
   {
     slug: `lutron-caseta-guide`,
     title: `Upgrade Your Light Switches with Lutron Caséta Smart Dimmers`,
-    excerpt: `Lutron Caséta smart dimmers work with any bulb type and include a wireless Pico remote. Learn how to replace a switch, set up the Smart Bridge, and integrate with HomeKit and Alexa.`,
+    excerpt: `Lutron Caseta smart dimmers work with any bulb type and include a Pico remote. How to replace a switch, set up the Smart Bridge, and add HomeKit.`,
     category: `smart-home`,
     tags: [`Lutron Caséta`, `smart dimmer`, `light switch`, `smart home`, `Pico remote`],
     readTime: `9 min`,

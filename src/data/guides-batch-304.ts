@@ -81,7 +81,7 @@ export const guidesBatch304: Guide[] = [
   {
     slug: "senior-free-tax-prep-irs-free-file",
     title: "IRS Free File: Free Brand-Name Software for Incomes Under 79,000 Dollars",
-    excerpt: "IRS Free File partners with major tax software companies to offer free federal returns for most seniors. The program is online, self-service, and covers most senior tax situations.",
+    excerpt: "IRS Free File partners with major tax software companies to offer free federal returns for most seniors. Online, self-service, and widely eligible.",
     category: "tips-tricks",
     tags: ["irs-free-file", "online-tax-filing", "free-tax-software", "senior-finance", "diy-taxes"],
     readTime: "8 min",
@@ -192,7 +192,7 @@ export const guidesBatch304: Guide[] = [
   {
     slug: "senior-free-tax-prep-senior-only-tax-issues",
     title: "Tax Issues Unique to Seniors: RMDs, QCDs, Social Security Tiers, IRMAA, and Loss Carryforward",
-    excerpt: "Retirement years bring tax twists most working filers never see, including RMDs, QCDs from an IRA, Social Security taxability tiers, IRMAA Medicare surcharges, and capital loss carryforward.",
+    excerpt: "Retirement brings tax twists working filers never see — RMDs, QCDs from an IRA, Social Security taxability tiers, and IRMAA Medicare surcharges.",
     category: "tips-tricks",
     tags: ["senior-tax-issues", "rmd", "qcd", "social-security-taxability", "irmaa", "senior-finance"],
     readTime: "10 min",
