@@ -305,11 +305,11 @@ The forced restart process is different depending on your phone model. The steps
     thumbnailEmoji: '🔑',
     publishedAt: '2026-05-03',
     difficulty: 'Beginner',
-    body: `Forgetting an email password is one of the most common tech problems, and the major email providers have built fairly straightforward recovery processes to handle it. The key is that you must have access to at least one recovery option — a phone number, a backup email address, or answers to security questions — that you set up when the account was created.
+    body: `Forgetting an email password is one of the most common tech problems there is. Every major email provider has a built-in way to get back in. There is one catch. You need access to at least one recovery option you set up when the account was created. That means a phone number, a backup email address, or the answers to your security questions.
 
 If you never set up any recovery options, recovery becomes much harder. That is one reason this guide encourages you to check your recovery options even if you are not currently locked out.
 
-The process for all major email providers follows the same general path: click "Forgot password," prove you own the account using your recovery phone or email, and create a new password. The steps below cover Gmail (Google), Yahoo Mail, and Outlook (Microsoft) specifically.
+The path is the same at every major provider. Click "Forgot password." Prove the account is yours using your recovery phone or email. Then create a new password. The steps below cover Gmail, Yahoo Mail, and Outlook one at a time.
 
 **Before you start:** Have your phone handy. Most password recovery methods send a text message or call to your phone number.`,
     steps: [

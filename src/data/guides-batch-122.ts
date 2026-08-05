@@ -621,15 +621,15 @@ LastPass was a popular recommendation for years, but suffered significant data b
     publishedAt: '2026-05-03',
     lastVerifiedAt: '2026-05-03',
     difficulty: 'Beginner',
-    body: `Antivirus software detects and removes malicious programs (viruses, malware, spyware) that can harm your computer, steal your information, or take over your system.
+    body: `Antivirus software finds and removes harmful programs. These are the viruses, malware, and spyware that can damage your computer, steal your information, or take control of it.
 
-The good news for Windows users: Windows 10 and 11 include a free, built-in antivirus program called Windows Defender (also called Microsoft Defender Antivirus). Independent security testing organizations consistently rate Windows Defender as effective against the vast majority of threats. For most home users, Windows Defender running alongside safe browsing habits provides solid protection.
+There is good news for Windows users. Windows 10 and 11 come with a free antivirus program already built in. It is called Windows Defender, or Microsoft Defender Antivirus. Independent testing labs rate it as effective against the large majority of threats. For most people at home, Windows Defender plus careful browsing habits is enough protection.
 
 **Windows Defender (built-in, free):**
 If you have Windows 10 or 11 and have not installed separate antivirus software, Windows Defender is already protecting you right now. Make sure it is on: go to Settings → Windows Security → Virus & Threat Protection. It should say "No action needed."
 
 **Malwarebytes (free and premium):**
-Malwarebytes is excellent at finding malware that Windows Defender misses. The free version lets you run manual scans when you are concerned. The premium version ($40/year) adds real-time protection. Running a monthly free scan is a reasonable approach even if you use Windows Defender.
+Malwarebytes is good at finding harmful software that Windows Defender misses. The free version lets you run a scan whenever you are worried. The paid version, about $40 a year, watches your computer all the time. Running the free scan once a month is a sensible habit, even if you already use Windows Defender.
 
 **Bitdefender Total Security (~$40/year) — Best paid antivirus:**
 If you want a full paid security suite with extra features (VPN, parental controls, password manager), Bitdefender Total Security consistently earns top marks from independent testers. It is lightweight (does not slow your computer) and protects multiple devices.

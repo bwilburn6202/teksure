@@ -371,7 +371,7 @@ export const guidesBatch12: Guide[] = [
     thumbnailEmoji: '',
     publishedAt: '2026-04-19',
     difficulty: 'Beginner',
-    body: "Spam text messages — fake package delivery alerts, prize scam texts, and pretend bank alerts — are a daily annoyance for millions of people. Both iPhone and Android have built-in tools to filter and block them automatically, and they're free to use.",
+    body: "Spam texts are a daily nuisance for millions of people. They pretend to be package delivery alerts, prize notices, or warnings from your bank. Both iPhone and Android have tools built in that filter and block them for you. Both are free.",
     steps: [
       {
         title: 'Turn on spam filtering on iPhone',
