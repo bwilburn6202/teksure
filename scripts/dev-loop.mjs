@@ -243,6 +243,31 @@ function checkStaleOsVersions() {
         // Skip versioned point releases ("macOS Monterey 12.1") and dated facts ("iOS 16, which came out in late 2022")
         if (/^\s*[0-9]+\./.test(after)) continue;
         if (/^\s*(\)|,? which came out|,? released| \(released| \(20[0-9]{2}\))/i.test(after)) continue;
+
+        // The three suppressions below were added 2026-08-05. Every one of the
+        // four then-outstanding findings was a *correct* mention that this
+        // check was wrong to flag; the content needed no edit. Rather than
+        // rewrite accurate guides to silence a warning, the check got more
+        // precise. Each rule is deliberately narrow — see the comment on each.
+        const afterWide = content.slice(m.index + m[0].length, m.index + m[0].length + 140);
+
+        // 1. The guide is *about* the OS being obsolete. Flagging "Windows 7
+        //    stopped receiving updates years ago" as stale content inverts the
+        //    meaning: naming the dead OS is the whole point of the sentence.
+        if (/\b(stopped|no longer|ceased|ended|ends|end of|reached end of life|unsupported|obsolete|out of support|stop feeling usable|too old|last received)\b/i.test(afterWide)) continue;
+
+        // 2. Distributive minimum-requirement across a compound subject:
+        //    "iOS 16 and macOS Ventura or later" means both are floors. The
+        //    existing `after` rule only caught the qualifier when it sat
+        //    immediately next to the version. Require that no sentence break
+        //    intervenes, so this cannot swallow a later unrelated clause.
+        const toQualifier = afterWide.match(/^([^.!?]*?)\bor (?:later|newer|higher|above)\b/i);
+        if (toQualifier) continue;
+
+        // 3. Upgrade-path framing: "upgrading from Windows 7", "if you are
+        //    still on Windows 8". The old version is named as the thing being
+        //    left behind, which is exactly what a current guide should say.
+        if (/\b(upgrad\w*|migrat\w*|mov\w*|switch\w*|coming|still (on|running)|replace\w*)\s+(from|off|away from|on)?\s*\(?\s*$/i.test(before)) continue;
         const line = content.substring(0, m.index).split('\n').length;
         findings.push({ file: path.relative(ROOT, file), line, label, match: m[0] });
         if (findings.length >= 100) break;
