@@ -9,7 +9,7 @@ export const guidesBatch332: Guide[] = [
   {
     slug: 'ai-voice-cloning-grandparent-scam',
     title: 'The New "Grandparent Scam": How AI Voice Cloning Fools Families',
-    excerpt: 'Scammers now clone a real family member\'s voice from just a few seconds of audio. Here is how the scam works and how to protect yourself.',
+    excerpt: 'Scammers now clone a real family member\'s voice from a few seconds of audio. Here is how the scam works and how to protect yourself.',
     category: 'safety-guides',
     tags: ['ai scam', 'voice cloning', 'grandparent scam', 'imposter scam', 'deepfake', 'fraud'],
     readTime: '6 min',
@@ -65,7 +65,7 @@ The single most reliable defense does not depend on spotting a fake voice — ev
 
 Many people wait until October to think about this at all, then feel rushed trying to compare plans in the seven-and-a-half-week window. A little preparation in August and September makes the fall period much less stressful, and it matters more than it might seem: Medicare plans can change their costs, covered drugs, and provider networks every single year, even if you take no action. A drug that was covered at a low cost this year could move to a more expensive tier next year, and a doctor's office that was in-network could drop out of your plan's network — both without you doing anything.
 
-If you are happy with your current plan and it is not changing in ways that affect you, you do not have to do anything during Open Enrollment — your coverage will simply continue. But it is worth checking the details every year rather than assuming nothing changed.
+If you are happy with your current plan and it is not changing in ways that affect you, you do not have to do anything during Open Enrollment — your coverage will continue as is. But it is worth checking the details every year rather than assuming nothing changed.
 
 (Sources: Medicare.gov — medicare.gov/health-drug-plans/open-enrollment; Centers for Medicare & Medicaid Services — cms.gov)`,
     steps: [
@@ -107,7 +107,7 @@ If you are happy with your current plan and it is not changing in ways that affe
     difficulty: 'Beginner',
     body: `If your iPhone updated to iOS 26 and suddenly looks different — buttons appear more see-through, menus have a glassy, layered look, and some icons shifted position — that is expected. Apple calls this new look "Liquid Glass," and it is the biggest visual redesign of the iPhone's software since iOS 7 was released back in 2013. The buttons, sliders, and navigation bars now appear translucent and can shift slightly depending on what is behind them, similar to looking through frosted glass.
 
-This is a visual change, not a change to what your iPhone can do. Every app and setting you used before is still there — some icons and menu items simply moved to new locations or look different, which can be disorienting at first, especially if you have used the same layout for years.
+This is a visual change, not a change to what your iPhone can do. Every app and setting you used before is still there — some icons and menu items moved to new locations or look different, which can be disorienting at first, especially if you have used the same layout for years.
 
 If the new see-through look is hard to read or feels too busy, Apple included an accessibility option to reduce the transparency effect, making buttons and text solid and easier to read. This does not undo the redesign, but it removes the part most people find hardest to see clearly.
 
@@ -150,7 +150,7 @@ Apple has continued releasing smaller updates through the iOS 26.x series (iOS 2
     publishedAt: '2026-08-04',
     lastVerifiedAt: '2026-08-04',
     difficulty: 'Beginner',
-    body: `A password manager is a program that creates, stores, and automatically fills in passwords for your online accounts, so you only need to remember one strong "master" password to unlock it. It solves a real problem: using the same simple password everywhere is convenient, but if just one of those sites is ever hacked, criminals try that same password on your email, bank, and other accounts — a technique called "credential stuffing" that succeeds far more often than people expect.
+    body: `A password manager is a program that creates, stores, and automatically fills in passwords for your online accounts, so you only need to remember one strong "master" password to unlock it. It solves a real problem: using the same simple password everywhere is convenient, but if one of those sites is ever hacked, criminals try that same password on your email, bank, and other accounts — a technique called "credential stuffing" that succeeds far more often than people expect.
 
 A password manager instead creates a long, random, unique password for every single account, so a breach at one company cannot be used to break into your others. It also fills those passwords in automatically on websites and apps, which is often faster than typing them yourself and avoids the temptation to write passwords on paper or reuse the same one out of frustration.
 

@@ -1085,4 +1085,63 @@ No update this run — same standing blocker. AdSense/Amazon Associates credenti
 2. Reconcile the tools-count metric (2,969 vs 285 vs 145+) — one paragraph, not a project.
 3. **Bailey:** AdSense publisher ID or Amazon Associates tag — still the single biggest zero-progress item.
 4. **Bailey:** decision needed on the 4,500-guide-by-8/10 target given the math above.
+
+---
+
+## 2026-08-04 (Day 85 — Tuesday) — 6-day logging gap since Day 79 (2026-07-29)
+
+No sprint-log entries found between 2026-07-29 and today; dev-loop automation kept running on its own (cycles 34→62 landed on `origin/main` in that window via CI), but no creative-task run appended a log entry. Ran the standard daily loop from scratch this session.
+
+### Guides added — 5 new (batch 332)
+- ai-voice-cloning-grandparent-scam (Safety) — AI voice-clone "grandparent scam," verify-by-callback defense, FTC imposter-scam stats
+- medicare-2027-open-enrollment-prep-guide (Government/Civic) — Oct 15–Dec 7, 2026 AEP prep, timed to land before the window opens
+- ios-26-liquid-glass-design-what-changed (Phone) — Apple's Liquid Glass redesign, Reduce Transparency/Increase Contrast accessibility fixes
+- password-manager-basics-for-beginners (Online Privacy) — built-in iPhone/Android password managers, no paid app required
+- back-to-school-tech-shopping-scams-grandparents (Safety) — fake electronics storefronts, seasonal timing for August
+
+All 5: plain English, no banned vocabulary, official sources (FTC/AARP/Medicare.gov/Apple Support), `lastVerifiedAt` 2026-08-04, PascalCase difficulty, 5-step structure with tip/warning callouts, excerpts verified programmatically at 138–143 chars (none truncate). Web-searched current facts before writing (Medicare AEP dates, FTC voice-clone complaint volume, iOS 26.6 status) rather than relying on training-data assumptions, given the topics are all time-sensitive.
+
+### Guides refreshed
+None needed. Re-checked the same 4 recurring dev-loop stale-OS flags (guides-batch-327, -42, -94) — same conclusion as every prior review: all three are contextually correct historical/requirement references, not stale claims. 0 of 4,032 pre-existing guides older than the 18-month cutoff per dev-loop cycle 62.
+
+### Features shipped
+None — today is Tuesday, not the Monday feature-build day.
+
+### Monetization
+Checked directly (not assumed): no AdSense tag, no `.env.local` credential, no live affiliate link infrastructure found anywhere in `src/`. Same zero-progress blocker as every prior entry.
+
+### Repo housekeeping (unplanned, ~30 min)
+Found and fixed a real bug while investigating git status: two case-variant files were both tracked in git — `src/pages/tools/SeniorVoiceMail.tsx` (capital M, actually imported by `App.tsx`) and `src/pages/tools/SeniorVoicemail.tsx` (lowercase m, orphaned, never imported, but still receiving stray uncommitted edits across multiple sessions). Removed the orphaned lowercase-m file from the git index. This is exactly the kind of case-only duplicate that works silently on the Mac's case-insensitive filesystem but is a landmine on case-sensitive Linux CI. **Follow-up still needed:** the lowercase file itself still exists on disk (couldn't be unlinked this session — see Git health below) and keeps regenerating stray uncommitted diffs; someone with real filesystem access should delete it outright.
+
+### Git health
+Local main had diverged from `origin/main` by 32 unpushed `chore(dev-loop)` CI commits (cycles 31–62) at the start of this session, plus one unpushed local commit from Day 79. Unlike prior sessions, no `/tmp`-clone workaround was needed this time — a `git update-index --force-remove` + several `mv .git/index.lock .git/index.lock.stale-<ts>` (the documented workaround for this mount's unlink restriction) got the local repo current with `origin/main` at cycle 62, and the new commit applied cleanly on top and pushed directly. Confirmed on GitHub: `c628f1f` is `origin/main` HEAD. Left `SeniorVoicemail.tsx`'s stray diff and several `.old-<timestamp>` backup files (auto-created by the mount when it can't unlink) uncommitted and untouched — cosmetic, not blocking.
+
+### Backlog items cleared / reviewed
+- Dev-loop cycles 34–62 (28 cycles landed via CI during the gap) all reviewed via the latest cycle 62 snapshot: 0 duplicate slugs, 0 broken internal link targets, TypeScript clean, 4 stale-OS warnings (reviewed above, still contextually valid), 1 hardcoded price + 1 undisclosed-testimonial warning (both still correctly quarantined in the intentionally-offline `TechnicianProfile.tsx`, re-confirmed via its own in-file warning comment), 361 overlong excerpts (unchanged, none of today's 5 additions contribute to that count).
+
+### Running totals vs 90-day targets
+| Metric | Target (2026-08-10) | Current | Status |
+|---|---|---|---|
+| Guides | 4,500 | **4,037** (validate-slugs.mjs: 4,037 unique slugs across 326 files) | 89.7% — **6 days left, ~463 short, needs ~77/day. Not reachable at any sustainable pace.** |
+| Tools | 200+ | 285 (dev-loop's own count; see Day 79 note on the 3-way metric-definition mismatch, still unreconciled) | Ambiguous but likely met on at least one definition |
+| TypeScript errors | 0 | 0 | OK |
+| Duplicate slugs | 0 | 0 | OK |
+| Broken internal links | 0 | 0 (6 orphaned routes, unchanged) | OK |
+| Stale OS mentions | dev-loop warn floor | 4 (all reviewed, contextually valid, unchanged for months) | Stable |
+| Traffic | 10,000/mo | Not measured this run | Still unconfirmed whether analytics is wired up |
+| Monetization | AdSense or 3 affiliate programs live | None | Blocked on Bailey — 85 days in, still zero |
+| TekSure Brain / Ollama | Hosted Ollama active | Unchanged | Blocked on Hetzner CX22 provisioning |
+| Git health | Clean, pushed | Pushed directly, no workaround-clone needed this run | OK |
+
+### Blockers
+- **4,500-guide target will not be hit by 2026-08-10.** 6 days left, ~463 guides short. This has been flagged every session since at least Day 77 with no response — recommend treating it as decided (target missed) rather than continuing to flag it, unless Bailey wants a final push at a much higher daily volume.
+- **AdSense / affiliate programs remain zero, 85 days in.** This is now the single most actionable blocker for the "long-term wealth" goal and it requires a human step (creating accounts, providing credentials) that no amount of autonomous content work substitutes for.
+- **Traffic measurement unresolved** — same as every prior entry.
+- **Orphaned `SeniorVoicemail.tsx` (lowercase) file** — needs deletion from the real filesystem, not just the git index; flagged above.
+
+### Next-day priorities (2026-08-05)
+1. Continue at 5–10 guides/day; dup-check against today's 4,037-slug baseline first.
+2. **Bailey:** decide whether to explicitly close out the 4,500-guide target as missed, or authorize a much higher-volume push for the final 6 days.
+3. **Bailey:** AdSense publisher ID or Amazon Associates tag — unchanged ask, now the clearest lever left for the monetization target.
+4. Delete the orphaned `src/pages/tools/SeniorVoicemail.tsx` file directly on the Mac (sandbox couldn't unlink it this session).
 5. Monday 2026-08-03 is feature day — ship one, ideally two tools given the missed 2026-07-27.
