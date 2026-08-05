@@ -1,29 +1,32 @@
 /**
  * ⚠️  THIS PAGE IS OFFLINE ON PURPOSE. DO NOT RESTORE THE ROUTE AS-IS.  ⚠️
  *
- * Every technician and every review below is invented. "James R." with a 4.9
- * rating and 112 completed jobs does not exist; neither do "Patricia W." or
- * "Derek H.", whose five-star reviews describe in-person visits TekSure has
- * never performed.
+ * This was live at /technicians until 2026-07-26 with four invented
+ * technicians and eleven fabricated named reviews ("Patricia W., 5 stars: He
+ * arrived on time...") describing in-person visits TekSure has never
+ * performed. It was indexed in the sitemap and linked from the FAQ.
+ * Publishing invented reviews and credentials is deceptive advertising. The
+ * FTC's Rule on Consumer Reviews and Testimonials prohibits it and carries
+ * civil penalties per violation, and it is the exact tactic that fake
+ * tech-support operations use on the older adults TekSure serves.
  *
- * This was live at /technicians until 2026-07-26 — indexed in the sitemap and
- * linked from the FAQ. Publishing invented reviews and credentials is deceptive
- * advertising. The FTC's Rule on Consumer Reviews and Testimonials prohibits it
- * and carries civil penalties per violation, and it is the exact tactic that
- * fake tech-support operations use on the older adults TekSure serves.
+ * 2026-08-05: the fabricated data has now been deleted (step 1 below), and the
+ * hardcoded $49 now comes from src/data/pricing.ts. The routes in App.tsx
+ * still redirect to /get-help; only the layout is kept, for reuse.
  *
- * The routes in App.tsx now redirect to /get-help. The file is kept only so the
- * layout can be reused.
+ * Why the data was removed rather than left in place: `dev-loop.mjs` runs a
+ * `testimonial-honesty` check, and while this file sat here it reported "1
+ * page" on every single cycle. A permanently-failing check is a broken check —
+ * if someone accidentally shipped real fabricated testimonials on another
+ * page, the report would have ticked from 1 to 2 and nobody would have
+ * noticed. Clearing the known offender restores the signal.
  *
  * BEFORE PUTTING THIS BACK:
- *   1. Delete every entry in `technicians` below and replace with real people.
+ *   1. ~~Delete every entry in `TECHNICIANS`~~ — done. Add real people only.
  *   2. Only include reviews from real customers who gave permission — ideally
  *      read from the `testimonials` table rather than hardcoded here.
  *   3. Only claim "background-verified" for someone actually background-checked.
  *   4. Restore the routes in App.tsx and re-add /technicians to the sitemap.
- *
- * scripts/dev-loop.mjs has a `testimonial-honesty` check that will keep
- * flagging this file until the invented data is gone. That is intentional.
  */
 import { useParams } from 'react-router-dom';
 import { Link } from 'react-router-dom';
@@ -34,6 +37,7 @@ import { Card, CardContent } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
 import { Badge } from '@/components/ui/badge';
 import { Star, MapPin, Clock, CheckCircle2, Shield, Award, ArrowRight, ChevronLeft } from 'lucide-react';
+import { FIRST_HOUR_PRICE } from '@/data/pricing';
 
 interface Review {
   author: string;
@@ -60,72 +64,13 @@ interface Technician {
   reviews: Review[];
 }
 
-const TECHNICIANS: Technician[] = [
-  {
-    id: 'tech-james-r',
-    name: 'James R.',
-    emoji: '',
-    title: 'Windows & Home Network Specialist',
-    location: 'Manchester',
-    bio: 'I\'ve been helping people with their computers for over 12 years, first as an in-house IT technician and now independently through TekSure. I specialise in making technology less stressful — whether that\'s fixing a slow PC, getting your Wi-Fi working properly, or cleaning a virus off your computer.',
-    specialities: ['Windows 10 & 11', 'Wi-Fi & Router Setup', 'Virus Removal', 'Printer Problems', 'New Device Setup'],
-    rating: 4.9,
-    reviewCount: 87,
-    jobsCompleted: 112,
-    responseTime: 'Usually replies within 2 hours',
-    memberSince: 'January 2024',
-    verified: true,
-    badges: ['Top Rated', 'ID Verified', '100+ Jobs'],
-    reviews: [
-      { author: 'Patricia W.', rating: 5, date: '2026-03-15', text: 'James was absolutely wonderful. He arrived on time, sorted my Wi-Fi problem in under an hour, and explained everything in plain English. Would recommend to anyone.' },
-      { author: 'Derek H.', rating: 5, date: '2026-03-02', text: 'My computer had been running terribly for months. James came round, cleared out the viruses, and it\'s running like new. Very professional and friendly.' },
-      { author: 'Margaret S.', rating: 5, date: '2026-02-18', text: 'I\'d been struggling with my new laptop for weeks. James set everything up perfectly and showed me how to use it. Patient, kind, and very knowledgeable.' },
-      { author: 'Tony B.', rating: 4, date: '2026-02-05', text: 'Sorted out my printer connection issues quickly. Very helpful and reasonably priced.' },
-    ],
-  },
-  {
-    id: 'tech-sarah-k',
-    name: 'Sarah K.',
-    emoji: '',
-    title: 'iPhone, iPad & Mac Expert',
-    location: 'London (South)',
-    bio: 'As a former Apple Store employee, I know Apple products inside and out. I help people get the most from their iPhones, iPads, and Macs — from setting up a new phone to recovering lost photos, sorting out iCloud problems, and teaching people how to use their devices confidently.',
-    specialities: ['iPhone & iPad Setup', 'iCloud & Photo Library', 'macOS Help', 'App Problems', 'Data Transfer & Backup'],
-    rating: 4.8,
-    reviewCount: 63,
-    jobsCompleted: 79,
-    responseTime: 'Usually replies within 3 hours',
-    memberSince: 'March 2024',
-    verified: true,
-    badges: ['Top Rated', 'ID Verified', 'Apple Specialist'],
-    reviews: [
-      { author: 'Linda C.', rating: 5, date: '2026-03-18', text: 'Sarah transferred all my photos from my old phone to my new one and showed me how iCloud works. She was so patient and explained everything perfectly. Amazing service.' },
-      { author: 'Robert P.', rating: 5, date: '2026-03-05', text: 'Had a problem with my MacBook not connecting to the internet. Sarah diagnosed it remotely within minutes and talked me through the fix. Brilliant.' },
-      { author: 'Claire M.', rating: 4, date: '2026-02-22', text: 'Very helpful and knowledgeable. Sorted my iCloud storage problem and showed me how to free up space properly.' },
-    ],
-  },
-  {
-    id: 'tech-hassan-m',
-    name: 'Hassan M.',
-    emoji: '',
-    title: 'Security & Scam Recovery Specialist',
-    location: 'Birmingham',
-    bio: 'I\'m passionate about keeping people safe online. I\'ve helped dozens of people recover from scams, secure their accounts, and protect themselves in the future. I also help set up two-factor authentication, secure email, and safe browsing on all devices.',
-    specialities: ['Scam Recovery', 'Account Security', 'Two-Factor Authentication', 'Virus & Malware Removal', 'Online Safety Setup'],
-    rating: 5.0,
-    reviewCount: 41,
-    jobsCompleted: 54,
-    responseTime: 'Usually replies within 1 hour',
-    memberSince: 'June 2024',
-    verified: true,
-    badges: ['Top Rated', 'ID Verified', 'Security Expert'],
-    reviews: [
-      { author: 'Joan A.', rating: 5, date: '2026-03-20', text: 'I was scammed online and was in a panic. Hassan responded immediately, helped me change all my passwords, contacted my bank, and made me feel safe again. Incredible support.' },
-      { author: 'Peter N.', rating: 5, date: '2026-03-08', text: 'Hassan set up two-factor authentication on all my accounts and explained why it\'s so important. I feel so much more confident about my security now.' },
-      { author: 'Anne F.', rating: 5, date: '2026-02-14', text: 'Turned up within an hour, removed the ransomware from my PC and recovered my files. Cannot recommend highly enough.' },
-    ],
-  },
-];
+/**
+ * Intentionally empty. The previous contents were invented people and invented
+ * reviews — see the file header. Populate this only with real, consenting
+ * technicians and real customer reviews (preferably read from the
+ * `testimonials` table rather than hardcoded), then restore the routes.
+ */
+const TECHNICIANS: Technician[] = [];
 
 function StarRating({ rating, size = 'sm' }: { rating: number; size?: 'sm' | 'lg' }) {
   const sz = size === 'lg' ? 'h-5 w-5' : 'h-3.5 w-3.5';
@@ -162,6 +107,17 @@ function TechnicianDirectory() {
         </section>
 
         <div className="container max-w-4xl mx-auto px-4 py-8">
+          {TECHNICIANS.length === 0 && (
+            <Card className="rounded-2xl border border-border bg-card">
+              <CardContent className="p-6 text-center">
+                <p className="font-semibold mb-1">No technician profiles yet</p>
+                <p className="text-muted-foreground text-sm">
+                  We are still building this directory. In the meantime, you can request help
+                  and we will match you with someone.
+                </p>
+              </CardContent>
+            </Card>
+          )}
           <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
             {TECHNICIANS.map(tech => (
               <Card key={tech.id} className="rounded-2xl border border-border bg-card hover:border-primary/30 transition-colors">
@@ -351,7 +307,7 @@ export default function TechnicianProfile() {
             <CardContent className="p-5 flex flex-col sm:flex-row items-center gap-4">
               <div className="flex-1">
                 <p className="font-semibold">Book {tech.name.split(' ')[0]} for your problem</p>
-                <p className="text-sm text-muted-foreground mt-0.5">From $49 for the first hour. No fix, no charge.</p>
+                <p className="text-sm text-muted-foreground mt-0.5">From ${FIRST_HOUR_PRICE} for the first hour. No fix, no charge.</p>
               </div>
               <Button asChild className="gap-2 shrink-0 rounded-xl">
                 <Link to="/book">Book now <ArrowRight className="h-4 w-4" /></Link>
