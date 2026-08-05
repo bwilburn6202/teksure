@@ -693,15 +693,15 @@ Zocdoc is completely free for patients. Doctors pay to be listed. You can use Zo
     thumbnailEmoji: ``,
     publishedAt: `2026-04-20`,
     difficulty: `Beginner`,
-    body: `WebMD is one of the most visited health information websites in the United States, and its app brings that same information to your phone. Use the WebMD app as a starting point for learning about symptoms, conditions, and medications — not as a replacement for your doctor's judgment.
+    body: `WebMD is one of the most visited health information websites in the United States, and its app brings that same information to your phone. Use the WebMD app as a starting point for learning about symptoms, conditions, and medications, not as a replacement for your doctor's judgment.
 
-The Symptom Checker lets you pick your symptoms from a body diagram and answer a few questions. It then shows a list of conditions that commonly match, with a brief explanation of each. This can help before a doctor's appointment: it gives you words to describe your symptoms and helps you guess what the doctor might ask.
+The Symptom Checker lets you pick your symptoms from a body diagram and answer a few questions. It then shows a list of conditions that commonly match, with a brief explanation of each. This can help before a doctor's appointment. It gives you words to describe your symptoms and helps you guess what the doctor might ask.
 
-WebMD also has a Pill Identifier tool. Enter the imprint code, shape, and color of an unknown pill to find out what it is. This is useful if you have mixed-up medications or find an unlabeled pill and need to identify it safely.
+WebMD also has a Pill Identifier tool. Enter the imprint code, shape, and color of an unknown pill to find out what it is. This helps if you have mixed-up medications or find an unlabeled pill and need to identify it safely.
 
-The app includes a medication guide that explains how medications work, their common side effects, and what to avoid while taking them. You can search for a medication by name and read a plain-English explanation of its uses and precautions.
+The app has a medication guide that explains how medications work, their common side effects, and what to avoid while taking them. You can search for a medication by name and read a plain-English explanation of its uses and precautions.
 
-WebMD also provides a library of articles written in collaboration with doctors on topics ranging from common illnesses and chronic conditions to nutrition, fitness, and mental health. The content is reviewed by medical professionals and is generally reliable as a starting point for research, though you should always discuss any health concerns with your own doctor before making decisions.`,
+WebMD also has a library of articles written with doctors on topics from common illnesses and chronic conditions to nutrition, fitness, and mental health. Medical professionals review the content, and it's generally reliable as a starting point for research. Still, always talk to your own doctor before making health decisions.`,
     steps: [
       {
         title: `Download the WebMD app`,
@@ -738,11 +738,11 @@ WebMD also provides a library of articles written in collaboration with doctors 
     thumbnailEmoji: ``,
     publishedAt: `2026-04-20`,
     difficulty: `Beginner`,
-    body: `Mayo Clinic is widely seen as one of the most trusted names in American medicine. Its website, mayoclinic.org, offers a free library of health information written by Mayo Clinic physicians and checked for accuracy on a regular basis. Unlike some health websites driven mainly by advertising or traffic, Mayo Clinic's website is funded by the nonprofit itself and puts accuracy and completeness first.
+    body: `Mayo Clinic is widely seen as one of the most trusted names in American medicine. Its website, mayoclinic.org, offers a free library of health information written by Mayo Clinic physicians. The content is checked for accuracy on a regular basis. Unlike some health websites driven mainly by advertising or traffic, Mayo Clinic's website is funded by the nonprofit itself and puts accuracy and completeness first.
 
 The website covers thousands of diseases and conditions, symptoms, drugs and supplements, tests and procedures, and healthy lifestyle topics. Each article follows the same structure: what the condition is, its symptoms, when to see a doctor, causes, risk factors, complications, prevention, and treatment. This format helps you find exactly what you need without reading through unrelated content.
 
-Mayo Clinic's Symptom Checker is on the website. It lets you explore what might be causing a symptom, though it's meant as an educational starting point, not a diagnosis tool.
+Mayo Clinic's Symptom Checker is on the website. It lets you explore what might be causing a symptom. It's meant as an educational starting point, not a diagnosis tool.
 
 One feature that sets Mayo Clinic apart from general health search results is the absence of misleading advertisements disguised as health content. What you read on mayoclinic.org is there because Mayo Clinic's medical team decided it was important and accurate, not because someone paid for it to appear.
 

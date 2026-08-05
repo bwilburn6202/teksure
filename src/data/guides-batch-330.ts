@@ -154,13 +154,13 @@ If a grandchild does not have their own Apple ID, or is not part of a Family Sha
     publishedAt: '2026-07-28',
     lastVerifiedAt: '2026-07-28',
     difficulty: 'Beginner',
-    body: `If your iPhone Mail app inbox recently started showing tabs across the top — like "Primary," "Transactions," "Updates," and "Promotions" — this is Apple's Categories feature. It automatically sorts incoming email into groups based on what the message looks like, similar to a feature Gmail has had for years. The goal: keep personal messages easy to find, while newsletters, receipts, and marketing emails wait in their own tabs instead of mixing in with everything else.
+    body: `If your iPhone Mail app inbox recently started showing tabs across the top, like "Primary," "Transactions," "Updates," and "Promotions," this is Apple's Categories feature. It automatically sorts incoming email into groups based on what the message looks like, similar to a feature Gmail has had for years. The goal: keep personal messages easy to find, while newsletters, receipts, and marketing emails wait in their own tabs instead of mixing in with everything else.
 
-"Primary" holds personal email — messages from people you know, plus anything the app cannot confidently sort elsewhere. "Transactions" holds order confirmations, shipping notices, and receipts. "Updates" holds account notifications, newsletters you subscribed to, and similar automated messages. "Promotions" holds marketing emails and sales announcements. The sorting happens automatically based on the sender and content, and it can get things wrong sometimes, especially at first.
+"Primary" holds personal email: messages from people you know, plus anything the app can't confidently sort elsewhere. "Transactions" holds order confirmations, shipping notices, and receipts. "Updates" holds account notifications, newsletters you subscribed to, and similar automated messages. "Promotions" holds marketing emails and sales announcements. The sorting happens automatically based on the sender and content, and it can get things wrong sometimes, especially at first.
 
-You can turn this feature off if you prefer one simple inbox. Or keep it on and check each tab when you have a moment, like checking separate folders. Many people find "Primary" alone is enough for daily use, and check the other tabs less often — maybe once a week — to scan for anything important that got misfiled.
+You can turn this feature off if you prefer one simple inbox. Or keep it on and check each tab when you have a moment, like checking separate folders. Many people find "Primary" alone is enough for daily use, and check the other tabs less often, maybe once a week, to scan for anything important that got misfiled.
 
-If an email lands in the wrong category — say, a message from family ends up in "Updates" — you can move it. The Mail app will remember your correction for similar emails from that sender next time.
+If an email lands in the wrong category, say a message from family ends up in "Updates," you can move it. The Mail app will remember your correction for similar emails from that sender next time.
 
 (Source: Apple Support — support.apple.com/guide/iphone/organize-email-in-lists-or-by-category)`,
     steps: [

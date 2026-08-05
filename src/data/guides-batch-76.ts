@@ -569,9 +569,9 @@ Many people who learned to code as adults mention Codecademy as the platform whe
     difficulty: `Beginner`,
     body: `Google Career Certificates are online training programs made by Google and hosted on Coursera. They prepare people for entry-level jobs. None of them require a college degree. Fields covered include IT support, data analytics, project management, UX design, cybersecurity, and digital marketing.
 
-Each certificate takes about three to six months to finish at a pace of about 10 hours a week. They are self-paced. You set your own schedule and can go faster or slower depending on your life. When you finish, Google issues you a certificate you can add to your LinkedIn profile and resume.
+Each certificate takes about three to six months to finish at a pace of about 10 hours a week. They are self-paced. You set your own schedule and can go faster or slower depending on your life. When you finish, Google issues you a certificate. You can add it to your LinkedIn profile and resume.
 
-Google built these programs to fill skill gaps in the job market and to open paths to good-paying careers for people who may not have had access to traditional education. Thousands of US employers recognize these certificates as real credentials.
+Google built these programs to fill skill gaps in the job market. The goal is to open paths to good-paying careers for people who may not have had access to traditional education. Thousands of US employers recognize these certificates as real credentials.
 
 The cost on Coursera is around $49 per month, and most programs take three to six months — so the total investment is roughly $150 to $300. However, many public library systems in the United States offer free access to Coursera's career certificate programs through a library card. This is worth checking before paying anything.
 

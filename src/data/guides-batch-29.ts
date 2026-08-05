@@ -609,15 +609,15 @@ Going through your notification settings once a month and pruning apps you've gi
     thumbnailEmoji: '',
     publishedAt: '2026-04-19',
     difficulty: 'Beginner',
-    body: `Android notifications can quickly pile up. News apps, social media, email, games, and dozens of other apps all compete for your attention every hour. The fix is not to put up with the noise. It is to spend a few minutes setting up your phone so it only alerts you to things that matter.
+    body: `Android notifications can pile up fast. News apps, social media, email, games, and dozens of other apps all compete for your attention every hour. The fix isn't to put up with the noise. It's to spend a few minutes setting up your phone so it only alerts you to things that matter.
 
-Android lets you customize notifications more than most phones. You can turn off notifications from one part of an app while keeping others on — for example, muting promotions but keeping alerts for direct messages. You can also set priority levels and schedule Do Not Disturb for certain hours.
+Android lets you customize notifications more than most phones. You can turn off notifications from one part of an app while keeping others on. For example, mute promotions but keep alerts for direct messages. You can also set priority levels and schedule Do Not Disturb for certain hours.
 
-Android also has a "Notification history" feature. It shows notifications you missed or dismissed by accident. This is handy when you know a message came in but cannot find it.
+Android also has a "Notification history" feature. It shows notifications you missed or dismissed by accident. This is handy when you know a message came in but can't find it.
 
-The biggest fix for most people: go through the apps that send you the most notifications, and turn them off or switch them to silent. The exact steps vary a bit by brand — Samsung, Google Pixel, and so on — but the core system works the same way on every Android phone.
+The biggest fix for most people: go through the apps that send you the most notifications, and turn them off or switch them to silent. The exact steps vary a bit by brand, like Samsung or Google Pixel, but the core system works the same way on every Android phone.
 
-Samsung phones have an additional "Advanced notifications" section with extra options for notification reminders (periodic reminders about unchecked notifications), adaptive alerts (which learn your patterns), and pop-up style notifications.
+Samsung phones have an extra "Advanced notifications" section with more options: notification reminders (periodic nudges about unchecked notifications), adaptive alerts (which learn your patterns), and pop-up style notifications.
 
 Do Not Disturb on Android is more granular than many users realize: you can allow calls from starred contacts, allow repeat callers (if someone calls twice within 15 minutes, it gets through), allow alarms, and specify exceptions for particular apps to break through DND.`,
     steps: [

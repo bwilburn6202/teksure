@@ -706,15 +706,15 @@ The Walmart app is required for mobile Scan & Go (which lets you scan items as y
     thumbnailEmoji: '',
     publishedAt: '2026-04-19',
     difficulty: 'Beginner',
-    body: `Amazon Prime costs $139 a year, or $14.99 a month. Most members use it mainly for free two-day shipping. But the membership includes many other benefits that many Prime members do not know about — some worth real money on their own.
+    body: `Amazon Prime costs $139 a year, or $14.99 a month. Most members use it mainly for free two-day shipping. But the membership includes many other benefits that many Prime members don't know about, some worth real money on their own.
 
-Here is what is included: Prime Video (movies and shows about as broad as Netflix, plus Amazon Original series), Prime Music (100 million songs to stream), Prime Reading (free access to a rotating selection of Kindle books and magazines), Amazon Photos (unlimited photo storage and 5GB of video storage, separate from iCloud or Google Photos), Prime Gaming (free games and in-game content each month), Amazon Fresh delivery (free grocery delivery in some areas), prescription discounts through Amazon Pharmacy, and Whole Foods discounts (an extra 10% off sale items).
+Here's what's included: Prime Video (movies and shows about as broad as Netflix, plus Amazon Original series), Prime Music (100 million songs to stream), Prime Reading (free access to a rotating selection of Kindle books and magazines), Amazon Photos (unlimited photo storage and 5GB of video storage, separate from iCloud or Google Photos), Prime Gaming (free games and in-game content each month), Amazon Fresh delivery (free grocery delivery in some areas), prescription discounts through Amazon Pharmacy, and Whole Foods discounts (an extra 10% off sale items).
 
 Many of these can replace other paid services you already have. If you pay separately for music streaming, Prime Music is already included. If you pay to store photos elsewhere, Amazon Photos gives you unlimited backup. Prime Reading cuts down on buying Kindle books.
 
-Amazon Family lets you share most Prime benefits: two adults and four children can share one membership. That makes the cost per person much lower for families.
+Amazon Family lets you share most Prime benefits. Two adults and four children can share one membership. That makes the cost per person much lower for families.
 
-A few benefits have their own apps: Prime Video has its own app (Prime Video), Prime Music and Amazon Music share the Amazon Music app, Amazon Photos has its own app. You access most of them through the respective apps on your phone or smart TV, not through the main Amazon Shopping app.`,
+A few benefits have their own apps: Prime Video has its own app, Prime Music and Amazon Music share the Amazon Music app, and Amazon Photos has its own app. You access most of them through their own apps on your phone or smart TV, not through the main Amazon Shopping app.`,
     steps: [
       {
         title: 'Access Prime Video',

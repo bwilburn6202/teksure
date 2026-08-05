@@ -745,15 +745,15 @@ You will receive a PIN or a confirmation number when you set up each freeze — 
     thumbnailEmoji: ``,
     publishedAt: `2026-04-20`,
     difficulty: `Beginner`,
-    body: `Phishing emails are fake messages made to look like they come from a trusted source — your bank, Amazon, the IRS, Social Security, Medicare, PayPal, or another company you deal with. The goal is to get you to click a link. Once there, you are asked to type your password, Social Security number, credit card number, or other private data into a fake website run by criminals.
+    body: `Phishing emails are fake messages made to look like they come from a trusted source: your bank, Amazon, the IRS, Social Security, Medicare, PayPal, or another company you deal with. The goal is to get you to click a link. Once there, you're asked to type your password, Social Security number, credit card number, or other private data into a fake website run by criminals.
 
 These emails have gotten more convincing. They often use the company's real logo, professional language, and formatting that closely copies the real thing. Still, there are consistent warning signs that help you spot them before you interact.
 
-Here is the most important thing to know: legitimate organizations never send an unexpected email asking for your password, full Social Security number, banking login, or credit card number by clicking a link. If an email asks for any of these, it is almost certainly phishing, no matter how official it looks.
+Here's the most important thing to know: legitimate organizations never send an unexpected email asking for your password, full Social Security number, banking login, or credit card number by clicking a link. If an email asks for any of these, it's almost certainly phishing, no matter how official it looks.
 
-The sense of urgency is another major warning sign. Phishing emails almost always pressure you to act right away: "Your account will be suspended in 24 hours," or "Immediate action required to avoid losing access to your account," or "Verify your information now to avoid a penalty." This urgency is designed to make you act without thinking. Real organizations give you time to respond to legitimate issues.
+A sense of urgency is another major warning sign. Phishing emails almost always pressure you to act right away: "Your account will be suspended in 24 hours," or "Immediate action required to avoid losing access to your account," or "Verify your information now to avoid a penalty." This urgency is meant to make you act without thinking. Real organizations give you time to respond to real issues.
 
-The volume of phishing attempts has grown dramatically because the technology to send millions of convincing fake emails is now inexpensive and widely available. Nearly everyone with an email address receives phishing attempts regularly. Recognizing them is not about being especially tech-savvy. It is about knowing a handful of consistent red flags.`,
+Phishing has grown a lot because the technology to send millions of convincing fake emails is now cheap and easy to get. Nearly everyone with an email address gets phishing attempts regularly. Spotting them isn't about being especially tech-savvy. It's about knowing a handful of consistent red flags.`,
     steps: [
       {
         title: `Check the sender's email address carefully`,
