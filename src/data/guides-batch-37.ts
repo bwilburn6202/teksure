@@ -827,15 +827,15 @@ Location sharing uses a small amount of battery life and mobile data when active
     thumbnailEmoji: '',
     publishedAt: '2026-04-19',
     difficulty: 'Beginner',
-    body: `Temu is an online marketplace that sells a huge variety of products — clothing, accessories, home goods, electronics, tools, toys, and more — at very low prices. Prices are often 50-90% lower than what you'd find at US retail stores because most items ship directly from manufacturers in China.
+    body: `Temu is an online marketplace selling a huge range of products at very low prices — clothing, accessories, home goods, electronics, tools, and toys. Prices often run 50-90% below US retail, because most items ship directly from manufacturers in China.
 
-Temu has grown rapidly in the United States and is now one of the most downloaded shopping apps. While many people find good deals there, it's important to go in with realistic expectations and understand the trade-offs.
+Temu has grown fast in the United States and is now one of the most downloaded shopping apps. Many people do find good deals there. It helps to go in with realistic expectations about the trade-offs.
 
-The main considerations with Temu are shipping times (7-21 business days is common, though "guaranteed" delivery dates are offered), product quality (varies widely — some items are great, others are poor quality), and return logistics (returning items often requires shipping them internationally, though Temu does offer free returns for your first return per order).
+There are three things to weigh. Shipping is slow: 7-21 business days is common, though Temu does offer "guaranteed" delivery dates. Quality varies widely — some items are great, others are poor. And returns can be awkward, since they often mean shipping an item internationally. Temu does give you one free return per order.
 
-Temu's return and refund policy is actually quite generous for a discount retailer. They offer full refunds for orders that don't arrive on time, items that are a lot different from photos, and damaged products. Purchases are protected by Temu's "Purchase Protection Program."
+The refund policy is generous for a discount retailer. Temu offers full refunds for orders that arrive late, items that differ a lot from the photos, and damaged products. Purchases are covered by its "Purchase Protection Program."
 
-Privacy-conscious users should know that Temu collects extensive data through its app, as do most shopping apps. Using it on a dedicated shopping browser or limiting its access in your phone's privacy settings reduces data collection.`,
+One privacy note: Temu collects a large amount of data through its app, as most shopping apps do. You can reduce that by using it in a browser instead, or by limiting the app's access in your phone's privacy settings.`,
     steps: [
       {
         title: 'Download the app or use the website',

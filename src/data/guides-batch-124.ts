@@ -674,9 +674,9 @@ The good news is that most "No Service" situations are temporary and resolve on 
     thumbnailEmoji: '🔄',
     publishedAt: '2026-05-03',
     difficulty: 'Intermediate',
-    body: `When a computer restarts itself without warning — especially if it does it more than once — it is responding to a serious error that it could not recover from any other way. This is called a crash, and on Windows it is sometimes accompanied by a blue screen with an error message (commonly called a 'blue screen of death' or BSOD).
+    body: `When a computer restarts itself without warning, it is responding to a serious error it could not recover from any other way. This is called a crash. It matters more if it happens more than once. On Windows, a crash sometimes shows a blue screen with an error message, often called a 'blue screen of death' or BSOD.
 
-The most common causes are overheating, a failed Windows or macOS update that needs to finish, bad memory (RAM), or a driver that has become corrupted. Working through these in order will identify the problem in most cases.
+The most common causes are overheating, a failed Windows or macOS update that needs to finish, bad memory (RAM), or a corrupted driver. Working through these in order finds the problem in most cases.
 
 **Note:** Random restarts that happen only during demanding tasks (gaming, video editing) almost always point to overheating. Random restarts that happen even when the computer is idle are more likely a software or hardware issue.`,
     steps: [

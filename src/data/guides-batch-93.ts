@@ -351,7 +351,9 @@ Images you create in Designer are yours to use for personal purposes. Be aware t
     thumbnailEmoji: ``,
     publishedAt: `2026-04-20`,
     difficulty: `Beginner`,
-    body: `Printed photographs are not permanent. Over time, they fade, yellow, and deteriorate — especially older prints from the 1960s, 70s, and 80s. Many families discover this the hard way when they pull out an old album and find that once-vivid colors have washed out or that entire photos have stuck together. Digitizing your photos — converting them into image files stored on a computer or in the cloud — protects these irreplaceable memories from physical deterioration, fire, floods, and the general wear of time.
+    body: `Printed photographs do not last forever. Over time they fade, yellow, and break down. Prints from the 1960s, 70s, and 80s are especially fragile. Many families find this out the hard way: they open an old album and discover the colors have washed out, or that photos have stuck together.
+
+Digitizing your photos means turning them into image files stored on a computer or in the cloud. It protects irreplaceable memories from fading, fire, floods, and ordinary wear.
 
 Once photos are digitized, you can share them with family members across the country by email, store backup copies in multiple locations so no single disaster can destroy them all, print new copies on demand, create photo books, and organize them in ways that would be impossible with physical albums.
 

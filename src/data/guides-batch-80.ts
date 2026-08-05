@@ -105,11 +105,11 @@ KardiaMobile works with most iPhones and Android phones. The device itself costs
     thumbnailEmoji: ``,
     publishedAt: `2026-04-20`,
     difficulty: `Beginner`,
-    body: `Keeping track of your blood pressure at home is one of the most recommended steps for people managing hypertension or heart conditions. A single reading at the doctor's office does not always tell the whole story because many people feel anxious at appointments, which can temporarily raise their numbers — a well-known pattern sometimes called "white coat hypertension." Tracking readings at home over days and weeks gives your doctor a much more accurate picture.
+    body: `Tracking your blood pressure at home is one of the most recommended steps for anyone managing hypertension or a heart condition. A single reading at the doctor's office does not always tell the whole story. Many people feel anxious at appointments, which temporarily raises their numbers. Doctors call this "white coat hypertension." Readings taken at home over days and weeks give your doctor a far more accurate picture.
 
-Omron makes some of the most widely used home blood pressure monitors, and many of their newer models connect wirelessly to the free Omron Connect app on your smartphone. When you take a reading with the cuff, the measurement automatically transfers to the app via Bluetooth, where it is stored, timestamped, and organized into clear, color-coded charts.
+Omron makes some of the most widely used home blood pressure monitors. Many of their newer models connect wirelessly to the free Omron Connect app on your phone. When you take a reading with the cuff, the measurement transfers to the app over Bluetooth on its own. The app stores it, timestamps it, and organizes it into color-coded charts.
 
-The app shows your readings grouped by morning and evening so you can spot patterns — for example, whether your pressure tends to be higher at certain times of day. It also calculates your average reading for the past week or month, which is often more useful to your doctor than any single measurement.
+The app groups your readings by morning and evening so you can spot patterns — for example, whether your pressure runs higher at certain times of day. It also calculates your average for the past week or month. That average is often more useful to your doctor than any single measurement.
 
 You can share your data by exporting a PDF or CSV file from the app and sending it by email. The app also connects with Apple Health and Google Health so your blood pressure history appears alongside your other health data in one place.
 

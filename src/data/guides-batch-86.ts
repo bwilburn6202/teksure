@@ -607,7 +607,9 @@ Know your evacuation zone before a storm is named. Every county along the Gulf a
     thumbnailEmoji: ``,
     publishedAt: `2026-04-20`,
     difficulty: `Beginner`,
-    body: `Wildfires have become more frequent and more severe across much of the United States, particularly in the West. But fire risk exists across the country — grassland fires in the Plains, forest fires in the South, and brush fires in the Mid-Atlantic are all real threats depending on conditions. Knowing where fires are burning, whether your community is under an evacuation order, and how smoke is affecting air quality are all critical pieces of information that are freely available online.
+    body: `Wildfires have grown more frequent and more severe across much of the United States, especially in the West. But fire risk exists everywhere. Grassland fires in the Plains, forest fires in the South, and brush fires in the Mid-Atlantic are all real threats, depending on conditions.
+
+Three pieces of information matter most: where fires are burning, whether your community is under an evacuation order, and how smoke is affecting your air quality. All three are free to look up online.
 
 The most important thing to understand about wildfire preparedness is that evacuation orders can come with very little warning. A fire that is miles away in the morning can reach a neighborhood in hours under the right wind conditions. Having reliable apps in place before fire season begins means you will receive warnings in time to leave safely rather than being caught unprepared.
 

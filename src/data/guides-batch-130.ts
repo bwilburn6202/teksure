@@ -64,11 +64,11 @@ This guide covers saving a place, organizing places into lists, sharing a list, 
     publishedAt: '2026-05-05',
     lastVerifiedAt: '2026-05-05',
     difficulty: 'Beginner',
-    body: `Every iPhone sold since 2017 has Emergency SOS — a built-in safety feature that can call 911, share your location, and notify emergency contacts you have set up, all without you needing to dial. It works in two ways: a button shortcut you press, and an automatic crash and fall detection that triggers when sensors detect an impact.
+    body: `Every iPhone sold since 2017 has Emergency SOS. It is a built-in safety feature that can call 911, share your location, and alert emergency contacts you set up — all without you dialing anything. It works in two ways. There is a button shortcut you press yourself, and there is automatic crash and fall detection that triggers when the sensors detect an impact.
 
-If you have an iPhone 14 or newer, Emergency SOS also works via satellite when you have no cellular signal — useful in remote areas or during cellular outages.
+If you have an iPhone 14 or newer, Emergency SOS also works by satellite when you have no cell signal. That helps in remote areas and during cellular outages.
 
-This guide explains how Emergency SOS works, how to set up your medical ID and emergency contacts, and how to test the feature without accidentally calling 911 (a common worry for new users).
+This guide explains how Emergency SOS works, how to set up your Medical ID and emergency contacts, and how to test it without accidentally calling 911 — a common worry for new users.
 
 (Sources: Apple Support — Emergency SOS, support.apple.com/HT208076; American Red Cross emergency preparedness, redcross.org)`,
     steps: [
