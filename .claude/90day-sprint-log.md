@@ -1157,3 +1157,59 @@ Bailey's call, given the blocker flagged above: **the 4,500-guide-by-2026-08-10 
 Remaining live 90-day targets, unaffected by this decision: 200+ tools (met on at least one of the three inconsistent counting methods — still needs a single reconciled number), 10,000 organic visitors/month (still unmeasured — analytics wiring unconfirmed), Hosted Ollama activation (still blocked on Hetzner CX22 provisioning, not a content-team task).
 
 Header line above updated to reflect this.
+
+---
+
+## 2026-08-05 — Day 86
+
+**Dev-loop:** cycle 63 run at start (clean), cycle 64 after the content work. Green on every check except the two standing warnings: readability and overlong excerpts. Nothing was broken at the start of the session, so no repair work was needed before adding content.
+
+### Guides added (6) — batch 333
+Topic selection was driven by current FTC consumer alerts rather than the backlog, since the backlog's remaining items are the two warnings above and both were already worked hard last cycle. Checked all six against the 4,037-slug baseline before writing; no near-duplicates.
+
+- `va-benefits-impersonation-scam` — from the FTC's late-July 2026 alert about VA impersonators. Anchored on the two facts that resolve nearly every one of these calls: VA claims are free to file, and charging a percentage of back pay violates accreditation rules.
+- `courier-pickup-and-gold-bar-scam` — the FTC data spotlight showing 4x growth in $10,000+ losses among older adults. Deliberately written around the one instruction that stops it ("no one legitimate asks you to move money to keep it safe") rather than a list of red flags, because victims of this scam usually *do* spot red flags and get talked past them.
+- `spot-sponsored-search-results` — the mechanism behind the July 2026 treatment-clinic alert, generalized. The point isn't only "look for the Sponsored label" but "stop using search to find a phone number you already have on your card."
+- `unpaid-toll-text-scam` — high-volume gap; there was no toll-scam guide at all despite it being one of the most-received scam texts in the country.
+- `windows-10-end-of-support-what-to-do` — real gap (0 matching slugs). Support ended 2025-10-14, so this is now an "it already happened" guide, not a countdown. Framed as three honest options including "replace the machine," and gives the scam angle explicit weight since the deadline is actively used as a pressure tactic.
+- `medicare-card-replacement-scam` — pairs with the existing Open Enrollment guide; covers the year-round "new card" call and the free-brace/free-test-kit variants.
+
+All six carry an official `sourceUrl` (FTC, Medicare.gov, Microsoft Support), a YouTube channel reference, and plain-language steps.
+
+**One brand-voice catch worth recording:** the test suite failed on `medicare-card-replacement-scam` for the word "just" — inside a *quoted line of scammer dialogue* ("we just need your number to bill it"). The check does not distinguish quoted speech from site voice, and arguably should not: the rewrite ("we only need your number") reads the same. Noting it because this is the second consecutive session where the banned-word check caught something a human reader would have passed over, and both times the fix was trivial. The check is earning its keep.
+
+### Guides refreshed (6) — readability pass
+Took the top of `audit-senior-ux.mjs`'s hard-guides list and rewrote for sentence length only — no facts, numbers, menu paths, or prices changed:
+`facetime-on-ipad`, `connect-iphone-to-tv`, `how-to-use-apple-maps` (all grade 10.9–11.4), `best-antivirus-windows-seniors`, `forgot-email-password-recovery`, `how-to-block-spam-text-messages`.
+
+Movement was small: 58.7% → 58.6% above grade 8, average unchanged at 8.3. That is the honest result and it is worth being clear about why. With ~4,000 guides, a 6-guide pass cannot move a corpus average; the metric only responds to either a scripted pass or a sustained habit of writing shorter sentences in new content. **Recommendation for future runs: stop treating the readability warning as a daily 5-guide chore.** Either accept 8.3 as the working level (it is not a bad number for this audience) or plan one dedicated bulk pass. Doing six a day produces the appearance of progress at roughly 0.1 percentage points per session.
+
+### Verification
+tsc clean, 104/104 tests, validate-slugs 4,043 unique across 327 files, dev-loop green except the two known warnings. `npm run build` again not attempted locally — the sandbox has OOM'd on it for three consecutive cycles now. Changes this session are string content plus one new data file that is imported and spread, so build risk is low, but this is the third session shipping without a local full build and it should be confirmed on a bigger machine.
+
+### Git — worked around, but the local tree is now diverged
+`.git/index.lock` and `HEAD.lock` both blocked commits and both needed the documented `mv` workaround (this filesystem still refuses `unlink` on them). Then the push was rejected: another process had pushed cycle-63 findings to `main` meanwhile, and `git rebase --autostash` failed outright ("Cannot autostash") because of an unstaged `src/pages/tools/SeniorVoicemail.tsx` modification that this session did not make and could not check out or stash — same unlink limitation.
+
+Resolved by the CLAUDE.md fallback: fresh shallow clone in /tmp, copy the six changed files in, commit, push. Landed as `06e661a`. Note that `git clone` from the *local* repo as a remote failed with "possible repository corruption / bad pack header" — cloning from GitHub worked fine, so the corruption is local-only and copying files across is the reliable path, not fetching.
+
+**Consequence to be aware of next run:** the working tree at `/Users/baileywilburn/Documents/Claude/Projects/TekSure` now has two local commits (`c03bcf7`, `1ef1986`) whose content is already on `main` via `06e661a`, and it is behind `origin/main`. Next session should reset the local branch to `origin/main` before doing anything, rather than trying to merge — the local commits carry nothing that is not already pushed.
+
+### Running totals vs 90-day targets
+| Metric | Target (2026-08-10) | Current | Status |
+|---|---|---|---|
+| Guides | 4,500 | 4,043 | Target closed out as missed on 2026-08-04 (Bailey's decision) — recorded for continuity only |
+| Tools | 200+ | 285 (dev-loop count) | Met on at least one definition; the 3-way count mismatch is still unreconciled |
+| TypeScript / slugs / links | clean | 0 / 0 / 0 | OK |
+| Readability | avg grade ≤8 | 8.3, 58.6% above grade 8 | See recommendation above |
+| Excerpts >160 chars | — | 283 (all 161–177) | Low value, leave |
+| Traffic | 10,000/mo | Not measured | Analytics wiring still unconfirmed |
+| Monetization | AdSense or 3 affiliates | None | Unchanged, waiting on credentials |
+| Ollama | Hosted active | Unchanged | Blocked on Hetzner CX22 |
+| Git health | Clean, pushed | Pushed via /tmp clone workaround; local tree diverged | Needs a reset next run |
+
+### Blockers / next-day priorities
+1. **Reset local branch to `origin/main`** before any other work — see git note above.
+2. Confirm `npm run build` on a machine with more than ~3.8GB available; three cycles have now shipped without a local build check.
+3. Decide the readability question rather than re-litigating it daily: accept 8.3, or schedule one bulk pass.
+4. Two unresolved filesystem items, both needing Bailey on the real Mac: the orphaned lowercase `src/pages/tools/SeniorVoicemail.tsx`, and the ~100 accumulated `*.timestamp-*.mjs` / `*.stale*` / `dist.stale*` files that the sandbox cannot unlink.
+5. Monetization credentials remain the single highest-value human step left in the sprint.
