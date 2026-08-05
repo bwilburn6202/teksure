@@ -54,7 +54,7 @@ export function Footer() {
     {
       title: 'For Families',
       links: [
-        { to: '/family-sharing', label: 'Family Tech Planner' },
+        { to: '/family-sharing', label: 'Family Sharing' },
         { to: '/caregiver-hub', label: 'Caregiver Resources' },
         { to: '/accessibility', label: 'Accessibility Hub' },
         { to: '/stories', label: 'Stories' },

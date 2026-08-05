@@ -3,6 +3,7 @@ import { Link, useNavigate } from 'react-router-dom';
 import { ArrowUp } from 'lucide-react';
 import { Navbar } from '@/components/layout/Navbar';
 import { SEOHead } from '@/components/SEOHead';
+import { GUIDE_COUNT_LABEL } from '@/data/site-stats';
 
 /**
  * Homepage — fixed centered hero on the global mesh wallpaper.
@@ -150,7 +151,7 @@ export default function Landing() {
 
           {/* Trust line */}
           <p className="text-sm sm:text-[15px] text-muted-foreground text-center">
-            <span className="font-bold text-foreground">2,500+</span>
+            <span className="font-bold text-foreground">{GUIDE_COUNT_LABEL}</span>
             <span className="ml-1.5">free guides</span>
             <span className="mx-2 opacity-50" aria-hidden="true">·</span>
             Real humans

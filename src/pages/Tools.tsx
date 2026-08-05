@@ -23,6 +23,7 @@ import { Badge } from '@/components/ui/badge';
 import { Input } from '@/components/ui/input';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent } from '@/components/ui/card';
+import { TOOL_COUNT_LABEL } from '@/data/site-stats';
 
 /* ── Types ─────────────────────────────────────────────── */
 export type ToolCategory =
@@ -4075,7 +4076,7 @@ export default function Tools() {
     <>
       <SEOHead
         title="Free Tech Tools & Utilities | TekSure"
-        description="150+ free tech tools for everyday people — scam simulator, password leak checker, bill negotiator, WiFi troubleshooter, accessibility finder, and more."
+        description={`${TOOL_COUNT_LABEL} free tech tools for everyday people — scam simulator, password leak checker, bill negotiator, WiFi troubleshooter, accessibility finder, and more.`}
         path="/tools"
         jsonLd={{
           '@context': 'https://schema.org',
