@@ -1,14 +1,14 @@
 {
   "version": "1.0",
-  "cycleCount": 62,
-  "lastRun": "2026-08-05T03:26:56.214Z",
+  "cycleCount": 63,
+  "lastRun": "2026-08-05T08:48:33.403Z",
   "lastFindings": {
     "metrics": {
       "ok": true,
       "severity": "info",
-      "summary": "3731 guides, 3156 routes, 285 tools.",
+      "summary": "3736 guides, 3156 routes, 285 tools.",
       "metrics": {
-        "guides": 3731,
+        "guides": 3736,
         "routes": 3156,
         "lazyImports": 3098,
         "tools": 285
@@ -23,10 +23,10 @@
     "links": {
       "ok": true,
       "severity": "info",
-      "summary": "0 broken targets, 6 orphaned routes (of 3119 routes).",
+      "summary": "0 broken targets, 9 orphaned routes (of 3119 routes).",
       "metrics": {
         "brokenTargets": 0,
-        "orphanedRoutes": 6,
+        "orphanedRoutes": 9,
         "definedRoutes": 3119
       }
     },
@@ -37,19 +37,19 @@
       "metrics": null
     },
     "stale-os": {
-      "ok": false,
-      "severity": "warn",
-      "summary": "4 mention(s) of older OS versions in guides.",
+      "ok": true,
+      "severity": "info",
+      "summary": "No stale OS version mentions found.",
       "metrics": {
-        "count": 4
+        "count": 0
       }
     },
     "old-guides": {
       "ok": true,
       "severity": "info",
-      "summary": "0 of 4032 guides published before 2025-02-05.",
+      "summary": "0 of 4037 guides published before 2025-02-05.",
       "metrics": {
-        "total": 4032,
+        "total": 4037,
         "aged": 0,
         "cutoff": "2025-02-05"
       }
@@ -65,13 +65,13 @@
     "senior-ux": {
       "ok": false,
       "severity": "warn",
-      "summary": "avg reading grade 8.3 (target <= 8), 58.8% of guides above grade 8, 0 images missing alt.",
+      "summary": "avg reading grade 8.3 (target <= 8), 58.7% of guides above grade 8, 0 images missing alt.",
       "metrics": {
         "filesScanned": 3192,
-        "guidesScored": 3260,
+        "guidesScored": 3265,
         "readingGradeAverage": 8.3,
-        "guidesAboveGrade8Pct": 58.8,
-        "guidesAboveGrade10": 527,
+        "guidesAboveGrade8Pct": 58.7,
+        "guidesAboveGrade10": 499,
         "guidesScoredSpanishExcluded": 49,
         "spanishNote": "49 Spanish-language guide(s) excluded from English readability scoring (formula does not apply to Spanish text).",
         "filesUsingTinyText": 531,
@@ -84,36 +84,36 @@
     "source-links": {
       "ok": true,
       "severity": "info",
-      "summary": "67 source URLs checked, 0 confirmed broken (404/410), 1 unreachable (often bot-blocking).",
+      "summary": "67 source URLs checked, 0 confirmed broken (404/410), 2 unreachable (often bot-blocking).",
       "metrics": {
         "urlsChecked": 67,
         "broken": 0,
-        "unreachable": 1
+        "unreachable": 2
       }
     },
     "pricing-consistency": {
-      "ok": false,
-      "severity": "warn",
-      "summary": "1 hardcoded price(s) on customer-facing pages — these are how the three-way price drift started.",
+      "ok": true,
+      "severity": "info",
+      "summary": "All service prices come from src/data/pricing.ts.",
       "metrics": {
-        "count": 1
+        "count": 0
       }
     },
     "testimonial-honesty": {
-      "ok": false,
-      "severity": "warn",
-      "summary": "1 page(s) present invented reviews as real. This is an FTC issue, not a style one — fix before anything else in this report.",
+      "ok": true,
+      "severity": "info",
+      "summary": "No hardcoded reviews without a disclosure.",
       "metrics": {
-        "count": 1
+        "count": 0
       }
     },
     "excerpt-length": {
       "ok": false,
       "severity": "warn",
-      "summary": "361 excerpt(s) exceed 160 chars and will be truncated mid-sentence in search results.",
+      "summary": "283 excerpt(s) exceed 160 chars and will be truncated mid-sentence in search results.",
       "metrics": {
-        "count": 361,
-        "worst": 402
+        "count": 283,
+        "worst": 177
       }
     },
     "duplicate-videos": {
@@ -127,63 +127,6 @@
     }
   },
   "history": [
-    {
-      "cycle": 13,
-      "at": "2026-07-08T12:19:03.046Z",
-      "findings": {
-        "metrics": {
-          "ok": true,
-          "severity": "info",
-          "summary": "3668 guides, 3014 routes, 285 tools.",
-          "metrics": {
-            "guides": 3668,
-            "routes": 3014,
-            "lazyImports": 2955,
-            "tools": 285
-          }
-        },
-        "slugs": {
-          "ok": true,
-          "severity": "info",
-          "summary": "No duplicate slugs.",
-          "metrics": null
-        },
-        "links": {
-          "ok": true,
-          "severity": "info",
-          "summary": "0 broken targets, 2602 orphaned routes (of 2976 routes).",
-          "metrics": {
-            "brokenTargets": 0,
-            "orphanedRoutes": 2602,
-            "definedRoutes": 2976
-          }
-        },
-        "typescript": {
-          "ok": true,
-          "severity": "info",
-          "summary": "No TypeScript errors.",
-          "metrics": null
-        },
-        "stale-os": {
-          "ok": false,
-          "severity": "warn",
-          "summary": "50 mention(s) of older OS versions in guides.",
-          "metrics": {
-            "count": 50
-          }
-        },
-        "old-guides": {
-          "ok": true,
-          "severity": "info",
-          "summary": "0 of 3969 guides published before 2025-01-08.",
-          "metrics": {
-            "total": 3969,
-            "aged": 0,
-            "cutoff": "2025-01-08"
-          }
-        }
-      }
-    },
     {
       "cycle": 14,
       "at": "2026-07-10T22:44:13.739Z",
@@ -5611,6 +5554,134 @@
           "metrics": {
             "count": 361,
             "worst": 402
+          }
+        },
+        "duplicate-videos": {
+          "ok": true,
+          "severity": "info",
+          "summary": "No video is reused across more than 5 guides.",
+          "metrics": {
+            "offendingIds": 0,
+            "affectedGuides": 0
+          }
+        }
+      }
+    },
+    {
+      "cycle": 63,
+      "at": "2026-08-05T08:48:33.403Z",
+      "findings": {
+        "metrics": {
+          "ok": true,
+          "severity": "info",
+          "summary": "3736 guides, 3156 routes, 285 tools.",
+          "metrics": {
+            "guides": 3736,
+            "routes": 3156,
+            "lazyImports": 3098,
+            "tools": 285
+          }
+        },
+        "slugs": {
+          "ok": true,
+          "severity": "info",
+          "summary": "No duplicate slugs.",
+          "metrics": null
+        },
+        "links": {
+          "ok": true,
+          "severity": "info",
+          "summary": "0 broken targets, 9 orphaned routes (of 3119 routes).",
+          "metrics": {
+            "brokenTargets": 0,
+            "orphanedRoutes": 9,
+            "definedRoutes": 3119
+          }
+        },
+        "typescript": {
+          "ok": true,
+          "severity": "info",
+          "summary": "No TypeScript errors.",
+          "metrics": null
+        },
+        "stale-os": {
+          "ok": true,
+          "severity": "info",
+          "summary": "No stale OS version mentions found.",
+          "metrics": {
+            "count": 0
+          }
+        },
+        "old-guides": {
+          "ok": true,
+          "severity": "info",
+          "summary": "0 of 4037 guides published before 2025-02-05.",
+          "metrics": {
+            "total": 4037,
+            "aged": 0,
+            "cutoff": "2025-02-05"
+          }
+        },
+        "duplicate-titles": {
+          "ok": true,
+          "severity": "info",
+          "summary": "No duplicate guide titles.",
+          "metrics": {
+            "count": 0
+          }
+        },
+        "senior-ux": {
+          "ok": false,
+          "severity": "warn",
+          "summary": "avg reading grade 8.3 (target <= 8), 58.7% of guides above grade 8, 0 images missing alt.",
+          "metrics": {
+            "filesScanned": 3192,
+            "guidesScored": 3265,
+            "readingGradeAverage": 8.3,
+            "guidesAboveGrade8Pct": 58.7,
+            "guidesAboveGrade10": 499,
+            "guidesScoredSpanishExcluded": 49,
+            "spanishNote": "49 Spanish-language guide(s) excluded from English readability scoring (formula does not apply to Spanish text).",
+            "filesUsingTinyText": 531,
+            "tinyTextInstances": 3050,
+            "filesWithSmallTapTargets": 2,
+            "imagesMissingAlt": 0,
+            "filesWithDivOnClick": 6
+          }
+        },
+        "source-links": {
+          "ok": true,
+          "severity": "info",
+          "summary": "67 source URLs checked, 0 confirmed broken (404/410), 2 unreachable (often bot-blocking).",
+          "metrics": {
+            "urlsChecked": 67,
+            "broken": 0,
+            "unreachable": 2
+          }
+        },
+        "pricing-consistency": {
+          "ok": true,
+          "severity": "info",
+          "summary": "All service prices come from src/data/pricing.ts.",
+          "metrics": {
+            "count": 0
+          }
+        },
+        "testimonial-honesty": {
+          "ok": true,
+          "severity": "info",
+          "summary": "No hardcoded reviews without a disclosure.",
+          "metrics": {
+            "count": 0
+          }
+        },
+        "excerpt-length": {
+          "ok": false,
+          "severity": "warn",
+          "summary": "283 excerpt(s) exceed 160 chars and will be truncated mid-sentence in search results.",
+          "metrics": {
+            "count": 283,
+            "worst": 177
           }
         },
         "duplicate-videos": {
