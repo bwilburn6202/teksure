@@ -8,6 +8,156 @@ Newest cycles appear at the top.
 
 ---
 
+## Cycle 64 — 2026-08-05T11:38:10.152Z
+
+### [ok] Site metrics snapshot
+3742 guides, 3156 routes, 285 tools.
+
+### [ok] Duplicate guide slugs
+No duplicate slugs.
+
+### [ok] Internal link audit
+0 broken targets, 9 orphaned routes (of 3119 routes).
+
+### [ok] TypeScript compile
+No TypeScript errors.
+
+### [ok] Stale OS version mentions
+No stale OS version mentions found.
+
+### [ok] Aged guides
+0 of 4043 guides published before 2025-02-05.
+
+### [ok] Duplicate guide titles
+No duplicate guide titles.
+
+### [warn] Readability & senior UX
+avg reading grade 8.3 (target <= 8), 58.6% of guides above grade 8, 0 images missing alt.
+
+```
+- grade 10.2: use-silvur-retirement-planning
+- grade 10: how-to-back-up-iphone-to-icloud
+- grade 10.1: set-up-bank-text-alerts
+- grade 10.1: close-old-bank-account-safely
+- grade 10.3: youtube-videos-buffering-fix
+- grade 10.5: set-up-amazon-prime-delivery-prescriptions
+- grade 10: how-to-use-siri-iphone
+- grade 10.2: walgreens-app-prescription-refill-step-by-step-2026
+- grade 10.2: how-to-screenshot-windows-11
+- grade 10.7: how-to-use-notes-app-iphone
+```
+
+### [ok] External source link health
+71 source URLs checked, 0 confirmed broken (404/410), 1 unreachable (often bot-blocking).
+
+### [ok] Hardcoded prices outside pricing.ts
+All service prices come from src/data/pricing.ts.
+
+### [ok] Undisclosed invented testimonials
+No hardcoded reviews without a disclosure.
+
+### [warn] Overlong guide excerpts
+283 excerpt(s) exceed 160 chars and will be truncated mid-sentence in search results.
+
+```
+- 177 chars: how-to-free-up-storage-space-on-your-iphone-2026
+- 177 chars: google-wallet-setup
+- 177 chars: telehealth-appointment-tips
+- 177 chars: how-to-handle-solo-travel-recent-widow
+- 177 chars: recover-hacked-email-account
+- 177 chars: alexa-calling-messaging-guide
+- 177 chars: safari-reader-mode-guide
+- 177 chars: android-auto-brightness-guide
+- 176 chars: transfer-contacts-new-phone
+- 176 chars: how-to-get-hisa-grant-home-modifications
+- 176 chars: mobile-digital-id-guide
+- 176 chars: turn-on-live-captions-phone-calls
+```
+
+### [ok] Reused placeholder videos
+No video is reused across more than 5 guides.
+
+### Suggested next actions
+- **Readability & senior UX** — avg reading grade 8.3 (target <= 8), 58.6% of guides above grade 8, 0 images missing alt.
+- **Overlong guide excerpts** — 283 excerpt(s) exceed 160 chars and will be truncated mid-sentence in search results.
+
+---
+
+## Cycle 63 — 2026-08-05T11:32:54.017Z
+
+### [ok] Site metrics snapshot
+3736 guides, 3156 routes, 285 tools.
+
+### [ok] Duplicate guide slugs
+No duplicate slugs.
+
+### [ok] Internal link audit
+0 broken targets, 9 orphaned routes (of 3119 routes).
+
+### [ok] TypeScript compile
+No TypeScript errors.
+
+### [ok] Stale OS version mentions
+No stale OS version mentions found.
+
+### [ok] Aged guides
+0 of 4037 guides published before 2025-02-05.
+
+### [ok] Duplicate guide titles
+No duplicate guide titles.
+
+### [warn] Readability & senior UX
+avg reading grade 8.3 (target <= 8), 58.7% of guides above grade 8, 0 images missing alt.
+
+```
+- grade 10.2: use-silvur-retirement-planning
+- grade 10.4: how-to-block-spam-text-messages
+- grade 10: how-to-back-up-iphone-to-icloud
+- grade 10.1: set-up-bank-text-alerts
+- grade 10.1: close-old-bank-account-safely
+- grade 10.8: best-antivirus-windows-seniors
+- grade 10.6: forgot-email-password-recovery
+- grade 10.3: youtube-videos-buffering-fix
+- grade 10.5: set-up-amazon-prime-delivery-prescriptions
+- grade 10.9: how-to-use-apple-maps
+```
+
+### [ok] External source link health
+67 source URLs checked, 0 confirmed broken (404/410), 1 unreachable (often bot-blocking).
+
+### [ok] Hardcoded prices outside pricing.ts
+All service prices come from src/data/pricing.ts.
+
+### [ok] Undisclosed invented testimonials
+No hardcoded reviews without a disclosure.
+
+### [warn] Overlong guide excerpts
+283 excerpt(s) exceed 160 chars and will be truncated mid-sentence in search results.
+
+```
+- 177 chars: how-to-free-up-storage-space-on-your-iphone-2026
+- 177 chars: google-wallet-setup
+- 177 chars: telehealth-appointment-tips
+- 177 chars: how-to-handle-solo-travel-recent-widow
+- 177 chars: recover-hacked-email-account
+- 177 chars: alexa-calling-messaging-guide
+- 177 chars: safari-reader-mode-guide
+- 177 chars: android-auto-brightness-guide
+- 176 chars: transfer-contacts-new-phone
+- 176 chars: how-to-get-hisa-grant-home-modifications
+- 176 chars: mobile-digital-id-guide
+- 176 chars: turn-on-live-captions-phone-calls
+```
+
+### [ok] Reused placeholder videos
+No video is reused across more than 5 guides.
+
+### Suggested next actions
+- **Readability & senior UX** — avg reading grade 8.3 (target <= 8), 58.7% of guides above grade 8, 0 images missing alt.
+- **Overlong guide excerpts** — 283 excerpt(s) exceed 160 chars and will be truncated mid-sentence in search results.
+
+---
+
 ## Weekly review note -- 2026-08-05 (deep improvement cycle)
 
 Second pass this session, run as a deliberately deeper sweep. Cleared three of
@@ -7295,176 +7445,6 @@ No TypeScript errors.
 67 mention(s) of older OS versions in guides.
 
 ```
-- src/data/guides-batch-103.ts:31 — iOS 10–16 (`iOS 11`)
-- src/data/guides-batch-15.ts:283 — iOS 10–16 (`iOS 14`)
-- src/data/guides-batch-154.ts:326 — iOS 10–16 (`iOS 16`)
-- src/data/guides-batch-157.ts:589 — macOS pre-Ventura (`macOS Monterey`)
-- src/data/guides-batch-163.ts:63 — iOS 10–16 (`iOS 12`)
-- src/data/guides-batch-18.ts:77 — iOS 10–16 (`iOS 16`)
-- src/data/guides-batch-203.ts:94 — iOS 10–16 (`iOS 13`)
-- src/data/guides-batch-209.ts:95 — iOS 10–16 (`iOS 13`)
-- src/data/guides-batch-21.ts:610 — iOS 10–16 (`iOS 11`)
-- src/data/guides-batch-210.ts:55 — iOS 10–16 (`iOS 15`)
-```
-
-### [ok] Aged guides
-0 of 3933 guides published before 2025-01-08.
-
-### Suggested next actions
-- **Stale OS version mentions** — 67 mention(s) of older OS versions in guides.
-
----
-
-## Cycle 252 — 2026-07-08T14:35:49.674Z
-
-### [ok] Site metrics snapshot
-3632 guides, 3154 routes, 285 tools.
-
-### [ok] Duplicate guide slugs
-No duplicate slugs.
-
-### [ok] Internal link audit
-0 broken targets, 2602 orphaned routes (of 3116 routes).
-
-### [ok] TypeScript compile
-No TypeScript errors.
-
-### [warn] Stale OS version mentions
-67 mention(s) of older OS versions in guides.
-
-```
-- src/data/guides-batch-103.ts:31 — iOS 10–16 (`iOS 11`)
-- src/data/guides-batch-15.ts:283 — iOS 10–16 (`iOS 14`)
-- src/data/guides-batch-154.ts:326 — iOS 10–16 (`iOS 16`)
-- src/data/guides-batch-157.ts:589 — macOS pre-Ventura (`macOS Monterey`)
-- src/data/guides-batch-163.ts:63 — iOS 10–16 (`iOS 12`)
-- src/data/guides-batch-18.ts:77 — iOS 10–16 (`iOS 16`)
-- src/data/guides-batch-203.ts:94 — iOS 10–16 (`iOS 13`)
-- src/data/guides-batch-209.ts:95 — iOS 10–16 (`iOS 13`)
-- src/data/guides-batch-21.ts:610 — iOS 10–16 (`iOS 11`)
-- src/data/guides-batch-210.ts:55 — iOS 10–16 (`iOS 15`)
-```
-
-### [ok] Aged guides
-0 of 3933 guides published before 2025-01-08.
-
-### Suggested next actions
-- **Stale OS version mentions** — 67 mention(s) of older OS versions in guides.
-
----
-
-## Cycle 251 — 2026-07-08T08:41:56.916Z
-
-### [ok] Site metrics snapshot
-3632 guides, 3154 routes, 285 tools.
-
-### [ok] Duplicate guide slugs
-No duplicate slugs.
-
-### [ok] Internal link audit
-0 broken targets, 2602 orphaned routes (of 3116 routes).
-
-### [ok] TypeScript compile
-No TypeScript errors.
-
-### [warn] Stale OS version mentions
-67 mention(s) of older OS versions in guides.
-
-```
-- src/data/guides-batch-103.ts:31 — iOS 10–16 (`iOS 11`)
-- src/data/guides-batch-15.ts:283 — iOS 10–16 (`iOS 14`)
-- src/data/guides-batch-154.ts:326 — iOS 10–16 (`iOS 16`)
-- src/data/guides-batch-157.ts:589 — macOS pre-Ventura (`macOS Monterey`)
-- src/data/guides-batch-163.ts:63 — iOS 10–16 (`iOS 12`)
-- src/data/guides-batch-18.ts:77 — iOS 10–16 (`iOS 16`)
-- src/data/guides-batch-203.ts:94 — iOS 10–16 (`iOS 13`)
-- src/data/guides-batch-209.ts:95 — iOS 10–16 (`iOS 13`)
-- src/data/guides-batch-21.ts:610 — iOS 10–16 (`iOS 11`)
-- src/data/guides-batch-210.ts:55 — iOS 10–16 (`iOS 15`)
-```
-
-### [ok] Aged guides
-0 of 3933 guides published before 2025-01-08.
-
-### Suggested next actions
-- **Stale OS version mentions** — 67 mention(s) of older OS versions in guides.
-
----
-
-## Cycle 250 — 2026-07-08T03:38:21.267Z
-
-### [ok] Site metrics snapshot
-3632 guides, 3154 routes, 285 tools.
-
-### [ok] Duplicate guide slugs
-No duplicate slugs.
-
-### [ok] Internal link audit
-0 broken targets, 2602 orphaned routes (of 3116 routes).
-
-### [ok] TypeScript compile
-No TypeScript errors.
-
-### [warn] Stale OS version mentions
-67 mention(s) of older OS versions in guides.
-
-```
-- src/data/guides-batch-103.ts:31 — iOS 10–16 (`iOS 11`)
-- src/data/guides-batch-15.ts:283 — iOS 10–16 (`iOS 14`)
-- src/data/guides-batch-154.ts:326 — iOS 10–16 (`iOS 16`)
-- src/data/guides-batch-157.ts:589 — macOS pre-Ventura (`macOS Monterey`)
-- src/data/guides-batch-163.ts:63 — iOS 10–16 (`iOS 12`)
-- src/data/guides-batch-18.ts:77 — iOS 10–16 (`iOS 16`)
-- src/data/guides-batch-203.ts:94 — iOS 10–16 (`iOS 13`)
-- src/data/guides-batch-209.ts:95 — iOS 10–16 (`iOS 13`)
-- src/data/guides-batch-21.ts:610 — iOS 10–16 (`iOS 11`)
-- src/data/guides-batch-210.ts:55 — iOS 10–16 (`iOS 15`)
-```
-
-### [ok] Aged guides
-0 of 3933 guides published before 2025-01-08.
-
-### Suggested next actions
-- **Stale OS version mentions** — 67 mention(s) of older OS versions in guides.
-
----
-
-## Cycle 249 — 2026-07-07T20:09:19.261Z
-
-### [ok] Site metrics snapshot
-3632 guides, 3154 routes, 285 tools.
-
-### [ok] Duplicate guide slugs
-No duplicate slugs.
-
-### [ok] Internal link audit
-0 broken targets, 2602 orphaned routes (of 3116 routes).
-
-### [ok] TypeScript compile
-No TypeScript errors.
-
-### [warn] Stale OS version mentions
-67 mention(s) of older OS versions in guides.
-
-```
-- src/data/guides-batch-103.ts:31 — iOS 10–16 (`iOS 11`)
-- src/data/guides-batch-15.ts:283 — iOS 10–16 (`iOS 14`)
-- src/data/guides-batch-154.ts:326 — iOS 10–16 (`iOS 16`)
-- src/data/guides-batch-157.ts:589 — macOS pre-Ventura (`macOS Monterey`)
-- src/data/guides-batch-163.ts:63 — iOS 10–16 (`iOS 12`)
-- src/data/guides-batch-18.ts:77 — iOS 10–16 (`iOS 16`)
-- src/data/guides-batch-203.ts:94 — iOS 10–16 (`iOS 13`)
-- src/data/guides-batch-209.ts:95 — iOS 10–16 (`iOS 13`)
-- src/data/guides-batch-21.ts:610 — iOS 10–16 (`iOS 11`)
-- src/data/guides-batch-210.ts:55 — iOS 10–16 (`iOS 15`)
-```
-
-### [ok] Aged guides
-0 of 3933 guides published before 2025-01-07.
-
-### Suggested next actions
-- **Stale OS version mentions** — 67 mention(s) of older OS versions in guides.
-
----
+- src/data
 
 _(older cycles trimmed)_
