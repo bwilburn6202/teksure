@@ -506,15 +506,15 @@ The app works offline once you have loaded rate data. This means you can convert
     thumbnailEmoji: ``,
     publishedAt: `2026-04-20`,
     difficulty: `Beginner`,
-    body: `Wise (formerly known as TransferWise) is an international money transfer service that converts and sends money using the mid-market exchange rate — the same rate you see on Google or XE Currency — and charges a small, transparent fee that is usually much lower than what banks charge for international wire transfers.
+    body: `Wise (formerly known as TransferWise) is an international money transfer service. It converts and sends money using the mid-market exchange rate — the same rate you see on Google or XE Currency — and charges a small, clear fee. That fee is usually much lower than what banks charge for international wire transfers.
 
-Traditional bank wire transfers often involve two layers of charges: the bank's transfer fee and a hidden margin added to the exchange rate. If your bank advertises "no wire transfer fee," they are usually making money through the exchange rate markup instead. Wise shows you exactly what fee you are paying and what rate you are getting before you confirm the transfer.
+Traditional bank wire transfers often involve two layers of charges: the bank's transfer fee, and a hidden margin added to the exchange rate. If your bank advertises "no wire transfer fee," it is usually making money through the exchange rate markup instead. Wise shows you exactly what fee you are paying and what rate you are getting, before you confirm the transfer.
 
-For example, if you want to send $1,000 to a family member in Mexico, Wise might charge a fee of $5 to $10 and apply the real exchange rate. A bank doing the same transfer might charge $45 and apply an exchange rate that is 2 to 3 percent worse — costing you a lot more in total.
+For example, say you want to send $1,000 to a family member in Mexico. Wise might charge a fee of $5 to $10 and apply the real exchange rate. A bank doing the same transfer might charge $45, and apply an exchange rate that is 2 to 3 percent worse — costing you a lot more overall.
 
-Wise transfers usually take one to two business days to arrive, though many transfers to major currencies happen within hours. The recipient does not need a Wise account — the money is deposited directly into their regular bank account.
+Wise transfers usually take one to two business days to arrive, though many transfers in major currencies happen within hours. The recipient does not need a Wise account. The money goes directly into their regular bank account.
 
-Wise also offers a multi-currency account and a Wise debit card that lets you hold money in multiple currencies and spend abroad without foreign transaction fees. This is popular with frequent international travelers and people who work with clients in other countries.`,
+Wise also offers a multi-currency account and a Wise debit card. These let you hold money in multiple currencies and spend abroad without foreign transaction fees — popular with frequent international travelers and people who work with clients in other countries.`,
     steps: [
       {
         title: `Create a Wise account`,

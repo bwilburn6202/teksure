@@ -583,16 +583,16 @@ The fix is almost always the same: forget the old connection on both devices, th
     thumbnailEmoji: '▶️',
     publishedAt: '2026-05-03',
     difficulty: 'Beginner',
-    body: `When a YouTube video keeps stopping to buffer — that spinning circle or progress bar — it usually means one thing: your internet connection isn't fast enough to deliver the video at the quality you've selected. The fix is usually to lower the video quality, move closer to your router, or cut down on how many things are using the internet at once.
+    body: `When a YouTube video keeps stopping to buffer — that spinning circle or progress bar — it usually means one thing. Your internet connection is not fast enough to deliver the video at the quality you picked. The fix is usually to lower the video quality, move closer to your router, or cut down on how many things are using the internet at once.
 
-YouTube adjusts video quality on its own based on your connection speed, but it doesn't always get it right. Setting a lower quality by hand takes 30 seconds and usually fixes the problem right away.
+YouTube adjusts video quality on its own based on your connection speed, but it does not always get it right. Setting a lower quality by hand takes 30 seconds and usually fixes the problem right away.
 
-High-definition video (1080p or 4K) needs a much faster internet connection than standard-definition video (360p or 480p). If your connection is slow or inconsistent, lower-quality video plays much more smoothly than high-quality video that keeps pausing.`,
+High-definition video (1080p or 4K) needs a much faster internet connection than standard-definition video (360p or 480p). If your connection is slow or uneven, lower-quality video plays more smoothly than high-quality video that keeps pausing.`,
     steps: [
       {
         title: 'Lower the video quality',
-        content: "While a video is playing, click or tap the gear icon (Settings) in the bottom corner of the video player. Select 'Quality.' Choose a lower option — 480p or 360p instead of 1080p or 720p. The video will look slightly less sharp but will play without buffering.",
-        tip: "For most TV-watching, 480p looks perfectly fine on a phone or tablet screen. The difference only becomes obvious on a large monitor or TV.",
+        content: "While a video is playing, click or tap the gear icon (Settings) in the bottom corner of the video player. Select 'Quality.' Choose a lower option, like 480p or 360p, instead of 1080p or 720p. The video will look slightly less sharp but will play without buffering.",
+        tip: "For most TV-watching, 480p looks fine on a phone or tablet screen. The difference only becomes obvious on a large monitor or TV.",
       },
       {
         title: 'Move closer to your router',

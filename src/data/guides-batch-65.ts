@@ -791,19 +791,19 @@ If a package is marked as delivered but you cannot find it, check around your pr
     slug: `fedex-delivery-manager-guide`,
     title: `How to Control FedEx Deliveries with Delivery Manager`,
     excerpt: `FedEx Delivery Manager lets you reschedule, redirect, or hold your packages — so deliveries fit your schedule.`,
-    body: `FedEx Delivery Manager is a free service from FedEx that gives you advance notice of incoming packages and lets you customize how and when they are delivered. Instead of returning home to find a "sorry we missed you" door tag or worrying about packages sitting on your porch all day, Delivery Manager puts you in control.
+    body: `FedEx Delivery Manager is a free service from FedEx. It gives you advance notice of incoming packages and lets you choose how and when they are delivered. Instead of coming home to a "sorry we missed you" door tag, or worrying about packages sitting on your porch all day, Delivery Manager puts you in control.
 
-To get started, create a free account at fedex.com. Click "Sign In / Register" at the top of the page and select "Create Account." Enter your name, email address, and a password. Once your account is created, go to "Manage Deliveries" and add your home address. This is how FedEx links incoming packages to your account.
+To get started, create a free account at fedex.com. Click "Sign In / Register" at the top of the page and select "Create Account." Enter your name, email address, and a password. Once your account is set up, go to "Manage Deliveries" and add your home address. This is how FedEx links incoming packages to your account.
 
-Once your address is registered, FedEx will notify you by email, text, or the FedEx app whenever a package is shipped to your address — even packages from shippers who have not told you that they used FedEx. This advance notice appears one to three days before delivery and includes an estimated delivery day and time window.
+Once your address is registered, FedEx will notify you by email, text, or the FedEx app whenever a package ships to your address — even packages from shippers who never told you they used FedEx. This notice arrives one to three days before delivery, with an estimated delivery day and time window.
 
-The FedEx app, available free on iPhone and Android, makes managing deliveries easier. After downloading and signing in, the home screen shows all your upcoming deliveries at a glance. Tap any package for details and options.
+The free FedEx app, for iPhone and Android, makes managing deliveries easier. After downloading and signing in, the home screen shows all your upcoming deliveries at a glance. Tap any package for details and options.
 
-Options available through Delivery Manager include: holding a package at a FedEx location (such as a FedEx Office store or Walgreens) for you to pick up at your convenience; rescheduling the delivery to a future date; redirecting to a neighbor or alternate address; leaving specific delivery instructions for the driver; requesting that the driver leave the package in a specific location (like a garage or back porch); and placing a vacation hold if you will be away.
+Delivery Manager lets you: hold a package at a FedEx location (such as a FedEx Office store or Walgreens) for pickup at your convenience; reschedule delivery to a future date; redirect it to a neighbor or another address; leave delivery instructions for the driver; ask the driver to leave the package in a specific spot, like a garage or back porch; or place a vacation hold while you are away.
 
-Signing for a package remotely is available for some shipments — if the shipper allows it, you can authorize delivery without being present through Delivery Manager.
+For some shipments, you can sign for a package remotely — if the shipper allows it, Delivery Manager lets you authorize delivery without being home.
 
-Some limitations apply: if the shipper has specifically required an in-person signature (such as for high-value items or medical supplies), Delivery Manager cannot override that requirement. Also, Delivery Manager cannot change the recipient name or make changes on the day the package is already loaded on a delivery truck in many cases.
+A few limits apply. If the shipper requires an in-person signature — for example, for high-value items or medical supplies — Delivery Manager cannot override that. It also usually cannot change the recipient name, or make changes once a package is already loaded on a delivery truck.
 
 If you prefer to call, FedEx customer service is available at 1-800-463-3339.`,
     category: `how-to`,

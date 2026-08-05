@@ -63,36 +63,36 @@ Report any theft to your local police non-emergency line and to the retailer —
     publishedAt: '2026-07-29',
     lastVerifiedAt: '2026-07-29',
     difficulty: 'Beginner',
-    body: `Claude is an AI assistant made by a company called Anthropic. Like ChatGPT, it is a program you can ask questions, and it answers in plain conversational text — but it has its own free app for iPhone and Android with a few features worth knowing about if you are trying it for the first time.
+    body: `Claude is an AI assistant made by a company called Anthropic. It works like ChatGPT: you ask it a question, and it answers in plain, everyday text. Claude has its own free app for iPhone and Android, with a few features worth knowing.
 
-The app is free to download and use, with a paid "Pro" tier for people who want higher usage limits. You do not need the paid version to try it out. Once installed, you can type a question, use your voice to ask instead of typing, take a photo of something and ask Claude to describe or explain it, or upload a document (like a PDF of a bill or a letter) and ask Claude to summarize it in plain language.
+The app is free to download and use. There is also a paid "Pro" plan for people who want higher usage limits, but you do not need it to try Claude. Once the app is installed, you can type a question, use your voice instead of typing, take a photo and ask Claude to describe or explain it, or upload a document — like a PDF of a bill or a letter — and ask Claude to explain it in plain language.
 
-Because Claude is a general-purpose AI assistant, it is well suited to tasks like drafting an email, explaining a confusing letter from your insurance company, planning a trip itinerary, or answering a question you would otherwise search for online. It cannot browse the live internet by default for every answer and it can occasionally get facts wrong, so treat it as a helpful starting point rather than a final source — especially for anything medical, legal, or financial.
+Claude is good at everyday tasks. It can draft an email, explain a confusing insurance letter, plan a trip, or answer a question you would otherwise search for online. It cannot browse the live internet for every answer, and it can sometimes get facts wrong. Treat its answers as a helpful starting point, not a final word — especially for anything medical, legal, or financial.
 
-As with any AI chat app, avoid typing sensitive information like your Social Security number, full bank account numbers, or passwords into a conversation. Claude does not need that information to help you, and keeping it out of the chat protects your privacy.
+As with any AI chat app, keep sensitive information out of the conversation. Never type your Social Security number, full bank account numbers, or passwords. Claude does not need that information to help you, and leaving it out protects your privacy.
 
 (Source: Anthropic — claude.ai/download; Apple App Store and Google Play listings, verified July 2026)`,
     steps: [
       {
         title: 'Download the app',
-        content: 'On an iPhone, open the App Store and search "Claude by Anthropic." On an Android phone, open the Google Play Store and search the same. Tap "Get" or "Install." The app is free.',
+        content: 'On an iPhone, open the App Store and search "Claude by Anthropic." On an Android phone, open the Google Play Store and search the same name. Tap "Get" or "Install." The app is free.',
       },
       {
         title: 'Create a free account',
-        content: 'Open the app and tap "Sign Up." You can create an account using an email address or a Google account. You will be asked to verify your email with a short code sent to your inbox.',
+        content: 'Open the app and tap "Sign Up." You can sign up with an email address or a Google account. You will get a short code by email — type it in to verify your account.',
       },
       {
         title: 'Ask your first question',
-        content: 'Tap the text box at the bottom of the screen and type a question, such as "Explain what a high-deductible health plan is" or "Write a birthday message for my granddaughter." Tap the arrow button to send it, and Claude will reply in a few seconds.',
+        content: 'Tap the text box at the bottom of the screen and type a question, such as "Explain what a high-deductible health plan is" or "Write a birthday message for my granddaughter." Tap the arrow button to send it. Claude replies in a few seconds.',
       },
       {
         title: 'Try voice input or a photo',
-        content: 'Tap the microphone icon to speak your question instead of typing. To ask about something you can see, tap the camera or attachment icon, take or choose a photo, and ask a question about it — for example, a photo of a prescription label with "What is this medication typically used for?"',
-        tip: 'Quick Tip: You can also upload a PDF or photo of a confusing letter or bill and ask "Can you explain this in plain language?"',
+        content: 'Tap the microphone icon to speak your question instead of typing. To ask about something you can see, tap the camera or attachment icon and take or choose a photo. Then ask a question about it — for example, a photo of a prescription label with "What is this medication usually used for?"',
+        tip: 'Quick Tip: You can also upload a PDF or photo of a confusing letter or bill and ask, "Can you explain this in plain language?"',
       },
       {
         title: 'Keep sensitive information out of the chat',
-        content: 'Never type your full Social Security number, bank account or card numbers, or passwords into any AI chat app, including Claude. Ask questions in general terms instead — for example, describe a situation rather than pasting an account number.',
+        content: 'Never type your full Social Security number, bank or card numbers, or passwords into any AI chat app, including Claude. Describe your situation in general terms instead of pasting an actual account number.',
         warning: 'Treat any medical, legal, or financial answer as a starting point, not a final answer. Confirm important decisions with your doctor, a lawyer, or your bank.',
       },
     ],
@@ -109,35 +109,35 @@ As with any AI chat app, avoid typing sensitive information like your Social Sec
     publishedAt: '2026-07-29',
     lastVerifiedAt: '2026-07-29',
     difficulty: 'Beginner',
-    body: `Every year, Social Security benefits can go up slightly to help keep pace with rising prices. This annual increase is called a COLA, short for Cost-of-Living Adjustment. It is not a fixed amount that Congress votes on — it is calculated automatically using a government inflation measure called the CPI-W (Consumer Price Index for Urban Wage Earners and Clerical Workers).
+    body: `Every year, Social Security benefits can go up a little to help keep pace with rising prices. This yearly increase is called a COLA, short for Cost-of-Living Adjustment. It is not an amount Congress votes on. It is calculated automatically, using a government inflation measure called the CPI-W (Consumer Price Index for Urban Wage Earners and Clerical Workers).
 
-The Social Security Administration calculates the COLA by comparing average CPI-W prices from July, August, and September of the current year to the same three months the year before. For the 2027 COLA, that means the Social Security Administration will use July–September 2026 data, and the official number will be announced in mid-October 2026 — usually alongside a Bureau of Labor Statistics inflation report.
+The Social Security Administration compares average CPI-W prices from July, August, and September of the current year to those same three months the year before. For the 2027 COLA, that means using July–September 2026 data. The official number will be announced in mid-October 2026, usually alongside a Bureau of Labor Statistics inflation report.
 
-As of mid-2026, no official 2027 COLA figure has been announced. Independent retirement-benefit analysts who track this closely have published early estimates in the high-3% range, but these are only projections based on partial-year data — not a confirmed number, and the actual figure will not be final until the October announcement. Treat any number you see in the news before then as an estimate, not a guarantee.
+As of mid-2026, no official 2027 COLA figure exists yet. Some retirement-benefit analysts have published early estimates in the high-3% range. But these are only guesses based on partial-year data — not a confirmed number. The real figure will not be final until the October announcement. Treat any number you see in the news before then as a guess, not a fact.
 
-Once the COLA is official in October, the Social Security Administration mails (and posts online, in your my Social Security account) a personalized benefit-amount letter in early December, and the new, higher payment amount begins with checks paid in January 2027.
+Once the COLA becomes official in October, the Social Security Administration mails a personalized benefit-amount letter in early December. It also posts this letter online in your my Social Security account. Your new, higher payment begins with checks paid in January 2027.
 
 (Sources: Social Security Administration — ssa.gov/cola; Bureau of Labor Statistics CPI-W data — bls.gov)`,
     steps: [
       {
         title: 'Understand it is automatic — there is nothing to apply for',
-        content: 'The COLA applies automatically to everyone already receiving Social Security or SSI benefits. You do not need to call, apply, or do anything to receive it — it is added to your existing monthly payment without any action on your part.',
+        content: 'The COLA applies automatically to everyone already getting Social Security or SSI benefits. You do not need to call or apply. It is added to your existing monthly payment without any action from you.',
       },
       {
         title: 'Set up (or check) your my Social Security account',
-        content: 'Go to ssa.gov/myaccount on a computer or phone browser and sign in, or create a free account if you do not have one. This is where the Social Security Administration posts your personalized COLA notice in December, often before the mailed letter arrives.',
+        content: 'Go to ssa.gov/myaccount on a computer or phone browser and sign in, or create a free account if you do not have one. This is where the Social Security Administration posts your personal COLA notice in December, often before the mailed letter arrives.',
       },
       {
         title: 'Watch for the official announcement in mid-October',
-        content: 'The confirmed 2027 COLA percentage will be announced by the Social Security Administration in mid-October 2026. Look for the announcement directly on ssa.gov rather than relying on early news estimates, which can change.',
+        content: 'The Social Security Administration will announce the confirmed 2027 COLA percentage in mid-October 2026. Check ssa.gov directly for the announcement, rather than trusting early news estimates — those can change.',
       },
       {
         title: 'Expect your new amount in December, effective January',
-        content: 'Your personalized notice showing your new 2027 monthly benefit amount typically arrives (by mail and in your online account) in early December 2026. The increased payment amount itself begins with the check or deposit paid in January 2027.',
+        content: 'Your personal notice, showing your new 2027 monthly benefit amount, usually arrives by mail and in your online account in early December 2026. Your higher payment itself starts with the check or deposit paid in January 2027.',
       },
       {
         title: 'Be alert for COLA-related scam calls',
-        content: 'Every fall, scammers place calls claiming they can help you "get your COLA increase early" or need your bank information to "process" the raise. The Social Security Administration never calls asking for payment or your full bank account number to apply a COLA — the increase happens automatically.',
+        content: 'Every fall, scammers call claiming they can help you "get your COLA increase early," or that they need your bank information to "process" the raise. The Social Security Administration never calls asking for payment or your full bank account number to apply a COLA. The increase happens automatically, with no action needed from you.',
         warning: 'Hang up on any call asking for personal or banking information to "release" your Social Security increase, and report it to the SSA Office of the Inspector General at oig.ssa.gov.',
       },
     ],
@@ -154,23 +154,23 @@ Once the COLA is official in October, the Social Security Administration mails (
     publishedAt: '2026-07-29',
     lastVerifiedAt: '2026-07-29',
     difficulty: 'Beginner',
-    body: `Buy Now, Pay Later (BNPL) is a payment option offered at checkout on many online and in-store purchases, through services like Klarna, Afterpay, Affirm, and PayPal's "Pay in 4." Instead of paying the full price at once, you split it into several smaller payments — commonly four payments every two weeks, or a longer monthly plan for bigger purchases.
+    body: `Buy Now, Pay Later (BNPL) is a payment option offered at checkout on many online and in-store purchases. Services like Klarna, Afterpay, Affirm, and PayPal's "Pay in 4" offer it. Instead of paying the full price at once, you split it into smaller payments — commonly four payments every two weeks, or a longer monthly plan for bigger purchases.
 
-The appeal is real: many BNPL plans charge no interest if payments are made on time, and approval is usually instant with only a soft credit check, or none at all. That is different from a traditional credit card application.
+The appeal is real. Many BNPL plans charge no interest if you pay on time, and approval is usually instant with only a soft credit check, or none at all. That is different from a traditional credit card application.
 
-The risk shows up in two places. First, because each individual payment looks small, it is easy to open several BNPL plans across different retailers and lose track of the total amount owed and when each payment is due — a pattern regulators call "loan stacking." A March 2025 Bankrate survey found that about 49% of BNPL users had experienced at least one problem with the payment method, most often a missed payment or a fee they did not expect. Second, BNPL purchases do not always carry the same dispute and refund protections as a credit card — if an item arrives damaged or never arrives, getting your money back can take longer and involve more steps than a simple credit card chargeback.
+The risk shows up in two places. First, because each payment looks small, it is easy to open several BNPL plans across different stores and lose track of the total you owe and when each payment is due. Regulators call this pattern "loan stacking." A March 2025 Bankrate survey found that about 49% of BNPL users had at least one problem with the payment method, most often a missed payment or a surprise fee. Second, BNPL purchases do not always carry the same protections as a credit card. If an item arrives damaged or never arrives, getting your money back can take longer and involve more steps than a simple credit card chargeback.
 
-Regulators including the Consumer Financial Protection Bureau and Federal Trade Commission have increased scrutiny of BNPL providers' fee disclosures and dispute processes in 2026, which is a sign the risks are being taken seriously — but the rules still vary by provider, so read the terms before you commit.
+Regulators including the Consumer Financial Protection Bureau and Federal Trade Commission have increased scrutiny of BNPL providers' fee disclosures and dispute processes in 2026. That is a sign the risks are being taken seriously. But the rules still vary by provider, so read the terms before you commit.
 
 (Sources: Consumer Financial Protection Bureau — consumerfinance.gov; Federal Trade Commission — ftc.gov; Bankrate 2025 BNPL survey)`,
     steps: [
       {
         title: 'Understand the typical plan structure',
-        content: 'Most BNPL "Pay in 4" plans split a purchase into 4 equal payments, one due at checkout and the other three every two weeks after. Larger purchases (furniture, electronics) sometimes offer longer monthly plans instead, which may include interest — read the terms shown before you confirm.',
+        content: 'Most BNPL "Pay in 4" plans split a purchase into 4 equal payments. One is due at checkout, and the other three come every two weeks after. Larger purchases, like furniture or electronics, sometimes offer longer monthly plans instead, which may include interest. Read the terms shown before you confirm.',
       },
       {
         title: 'Keep every BNPL plan in one place',
-        content: 'If you use more than one BNPL app, write down or track each purchase, the total owed, and the due dates in one place — a notebook, spreadsheet, or your phone\'s notes app. This prevents the most common problem: forgetting a smaller payment because it is spread across several different apps.',
+        content: 'If you use more than one BNPL app, track each purchase, the total owed, and the due dates in one place — a notebook, spreadsheet, or your phone\'s notes app. This prevents the most common problem: forgetting a payment because it is spread across several apps.',
       },
       {
         title: 'Turn on payment reminders',
@@ -178,13 +178,13 @@ Regulators including the Consumer Financial Protection Bureau and Federal Trade 
       },
       {
         title: 'Check the return and dispute policy before you buy',
-        content: 'Before using BNPL for a purchase, check the retailer\'s return policy and the BNPL provider\'s dispute process for a damaged or missing item. Protections vary by provider and are sometimes weaker than a credit card\'s built-in dispute rights.',
-        tip: 'Quick Tip: For a purchase you are unsure about, paying with a credit card that offers purchase protection may give you a faster, more familiar path to a refund than a BNPL plan.',
+        content: 'Before using BNPL for a purchase, check the retailer\'s return policy and the BNPL provider\'s dispute process for a damaged or missing item. Protections vary by provider, and are sometimes weaker than a credit card\'s built-in dispute rights.',
+        tip: 'Quick Tip: For a purchase you are unsure about, a credit card with purchase protection may give you a faster, more familiar path to a refund than a BNPL plan.',
       },
       {
         title: 'Treat it as a loan, not free money',
-        content: 'A BNPL plan is a short-term loan, even when it is interest-free. Only use it for a purchase you could otherwise afford in full — that way, a missed payment date because of a bank holiday or forgotten reminder does not turn into a fee or a hit to your credit.',
-        warning: 'Some BNPL providers now report payment history to credit bureaus. A missed payment can affect your credit score, not only cost you a late fee.',
+        content: 'A BNPL plan is a short-term loan, even when it charges no interest. Only use it for a purchase you could otherwise afford in full. That way, a missed payment — say, because of a bank holiday or a forgotten reminder — does not turn into a fee or a hit to your credit.',
+        warning: 'Some BNPL providers now report your payment history to credit bureaus. A missed payment can affect your credit score, not just cost you a late fee.',
       },
     ],
   },
@@ -200,32 +200,32 @@ Regulators including the Consumer Financial Protection Bureau and Federal Trade 
     publishedAt: '2026-07-29',
     lastVerifiedAt: '2026-07-29',
     difficulty: 'Beginner',
-    body: `After a hurricane, flood, wildfire, or other disaster makes the news, two kinds of scams reliably follow within days: fake charities asking for donations, and callers pretending to be FEMA (the Federal Emergency Management Agency) asking for money or personal information from people in the affected area.
+    body: `After a hurricane, flood, wildfire, or other disaster makes the news, two kinds of scams reliably follow within days. First, fake charities ask for donations. Second, callers pretend to be FEMA (the Federal Emergency Management Agency) and ask for money or personal information from people in the affected area.
 
-Fake charities often register web addresses that include the disaster's location or name, paired with words like "help," "relief," or "fund," and push donation requests through texts, emails, and social media posts. They are designed to look urgent and legitimate at a glance, which is exactly why a quick pause before donating matters.
+Fake charities often register web addresses that include the disaster's location or name, paired with words like "help," "relief," or "fund." They push donation requests through texts, emails, and social media posts. These are designed to look urgent and legitimate at a glance — which is exactly why a quick pause before donating matters.
 
-FEMA scams work differently. A caller claims to represent FEMA and either asks for a fee to "process" a disaster assistance application, or asks the survivor to confirm banking information to "release" a grant. According to FEMA's own consumer guidance, this is a reliable red flag by itself: FEMA never charges a fee for disaster assistance applications, inspections, or grants, and never asks a survivor to confirm full banking details over an unsolicited call. Wearing a FEMA-style shirt or jacket is not proof of identity either — scammers have used both.
+FEMA scams work differently. A caller claims to represent FEMA. They either ask for a fee to "process" a disaster assistance application, or ask the survivor to confirm banking information to "release" a grant. FEMA's own consumer guidance says this is a reliable red flag by itself: FEMA never charges a fee for disaster assistance applications, inspections, or grants. FEMA also never asks a survivor to confirm full banking details over an unsolicited call. Wearing a FEMA-style shirt or jacket is not proof of identity either — scammers have used both.
 
-The safest approach to either scam is the same: verify independently before you give any money or information. Look up the charity or agency yourself rather than trusting a link or phone number a stranger provided.
+The safest approach to either scam is the same: verify independently before you give any money or information. Look up the charity or agency yourself, rather than trusting a link or phone number a stranger gave you.
 
 (Sources: FEMA.gov press releases on post-disaster fraud; Federal Communications Commission consumer guides — fcc.gov; AARP Fraud Watch Network — aarp.org)`,
     steps: [
       {
         title: 'Never give through a link in a text, email, or social post',
-        content: 'If you want to donate after a disaster, close the message and go directly to a charity\'s official website by typing the address yourself, or search for the charity by name. Do not tap a "Donate Now" link sent to you directly — it may lead to a fake, lookalike donation page.',
+        content: 'If you want to donate after a disaster, close the message. Go directly to a charity\'s official website by typing the address yourself, or search for the charity by name. Do not tap a "Donate Now" link sent to you directly — it may lead to a fake, lookalike donation page.',
       },
       {
         title: 'Verify the charity before giving',
-        content: 'Check the charity\'s standing at Give.org (BBB Wise Giving Alliance), Charity Navigator, or CharityWatch before donating. These sites show how much of a donation actually reaches the cause versus overhead, and flag charities with a poor track record or no verifiable history.',
+        content: 'Check the charity\'s standing at Give.org (BBB Wise Giving Alliance), Charity Navigator, or CharityWatch before donating. These sites show how much of a donation actually reaches the cause, versus overhead. They also flag charities with a poor track record or no verifiable history.',
       },
       {
         title: 'Know that FEMA never asks for money or full bank details by phone',
-        content: 'FEMA does not charge for disaster assistance applications, home inspections, or grants, and will not call asking you to confirm your full bank account number. If a caller claiming to be FEMA asks for either, hang up — it is a scam.',
+        content: 'FEMA does not charge for disaster assistance applications, home inspections, or grants. FEMA will not call and ask you to confirm your full bank account number. If a caller claiming to be FEMA asks for either, hang up — it is a scam.',
         warning: 'A uniform, badge, or FEMA-branded clothing is not proof of identity. Ask for a name and badge number, then hang up and call FEMA directly at 1-800-621-3362 to verify before giving any information.',
       },
       {
         title: 'Apply for real FEMA assistance the safe way',
-        content: 'If you were affected by a disaster and want to apply for federal assistance, go directly to DisasterAssistance.gov or call 1-800-621-3362 yourself, rather than responding to an unsolicited call, text, or email offering to help you apply.',
+        content: 'If a disaster affected you and you want to apply for federal assistance, go directly to DisasterAssistance.gov or call 1-800-621-3362 yourself. Do not respond to an unsolicited call, text, or email offering to help you apply.',
       },
       {
         title: 'Report suspected scams',

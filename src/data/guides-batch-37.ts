@@ -284,15 +284,15 @@ SeatGeek has its own exclusive deals and is the official ticketing partner for s
     thumbnailEmoji: '',
     publishedAt: '2026-04-19',
     difficulty: 'Beginner',
-    body: `TickTick is a task management and habit tracker app available on iPhone, Android, Mac, Windows, and as a web app. It's one of the most highly rated to-do apps available, praised for being both capable and approachable for everyday users.
+    body: `TickTick is a task management and habit tracker app. It works on iPhone, Android, Mac, Windows, and as a web app. It is one of the most highly rated to-do apps around, praised for being both capable and easy to use.
 
-With TickTick, you can create shopping lists, set reminders for appointments, manage household tasks, track habits you want to build (like drinking water daily or taking a walk), and organize your day with a simple calendar view.
+With TickTick, you can create shopping lists, set reminders for appointments, manage household tasks, and track habits you want to build, like drinking water daily or taking a walk. You can also organize your day with a simple calendar view.
 
-The app syncs across all your devices — add something on your phone and it appears on your computer instantly. This makes it useful for keeping shared lists with family members (a shared grocery list, for instance) as long as everyone has TickTick installed.
+The app syncs across all your devices. Add something on your phone, and it appears on your computer instantly. This makes it useful for keeping shared lists with family members — a shared grocery list, for instance — as long as everyone has TickTick installed.
 
-TickTick has a generous free version that covers everything most people need: unlimited tasks, reminders, calendar view, and habit tracking. A paid subscription ($27.99/year) adds features like more calendar integrations and a Pomodoro timer, but the free version is excellent.
+TickTick's free version covers everything most people need: unlimited tasks, reminders, calendar view, and habit tracking. A paid subscription ($27.99/year) adds features like more calendar integrations and a Pomodoro timer, but the free version works well on its own.
 
-Many people find TickTick replaces a combination of sticky notes, paper lists, phone reminders, and calendar apps by bringing everything into one organized place.`,
+Many people find TickTick replaces a mix of sticky notes, paper lists, phone reminders, and calendar apps, by bringing everything into one organized place.`,
     steps: [
       {
         title: 'Download and create your account',

@@ -150,11 +150,11 @@ Apple has continued releasing smaller updates through the iOS 26.x series (iOS 2
     publishedAt: '2026-08-04',
     lastVerifiedAt: '2026-08-04',
     difficulty: 'Beginner',
-    body: `A password manager is a program that creates, stores, and automatically fills in passwords for your online accounts, so you only need to remember one strong "master" password to unlock it. It solves a real problem: using the same simple password everywhere is convenient, but if one of those sites is ever hacked, criminals try that same password on your email, bank, and other accounts — a technique called "credential stuffing" that succeeds far more often than people expect.
+    body: `A password manager is a program that creates, stores, and automatically fills in passwords for your online accounts. You only need to remember one strong "master" password to unlock it. It solves a real problem: using the same simple password everywhere is convenient, but if one of those sites is ever hacked, criminals try that same password on your email, bank, and other accounts. This is called "credential stuffing," and it works far more often than people expect.
 
-A password manager instead creates a long, random, unique password for every single account, so a breach at one company cannot be used to break into your others. It also fills those passwords in automatically on websites and apps, which is often faster than typing them yourself and avoids the temptation to write passwords on paper or reuse the same one out of frustration.
+A password manager instead creates a long, random, unique password for every single account. That way, a breach at one company cannot be used to break into your others. It also fills those passwords in automatically on websites and apps — often faster than typing them yourself, and it removes the temptation to write passwords on paper or reuse the same one out of frustration.
 
-You likely already have a free password manager built into your phone or browser. iPhones have "Passwords" built into Settings, using iCloud Keychain to sync across your Apple devices. Android phones and Chrome have Google Password Manager built in. Both are free, reasonably secure, and a significant improvement over reusing passwords — no extra app required to get started. Dedicated apps like 1Password or Bitwarden offer more features, such as easier use across different device brands, for a low monthly fee (or free, in Bitwarden's case, for individual use).
+You likely already have a free password manager built into your phone or browser. iPhones have "Passwords" built into Settings, using iCloud Keychain to sync across your Apple devices. Android phones and Chrome have Google Password Manager built in. Both are free, reasonably secure, and a big improvement over reusing passwords — no extra app needed to get started. Dedicated apps like 1Password or Bitwarden offer more features, such as easier use across different device brands, for a low monthly fee (or free, in Bitwarden's case, for individual use).
 
 (Sources: FTC consumer guidance on passwords — consumer.ftc.gov; Cybersecurity and Infrastructure Security Agency — cisa.gov)`,
     steps: [
@@ -164,20 +164,20 @@ You likely already have a free password manager built into your phone or browser
       },
       {
         title: 'Turn on autofill',
-        content: 'On iPhone: Settings → Passwords → Password Options → turn on "AutoFill Passwords." On Android: within Google Password Manager settings, turn on "Auto Sign-in." This lets your phone fill in saved passwords automatically when you log into an app or website.',
+        content: 'On iPhone: Settings → Passwords → Password Options → turn on "AutoFill Passwords." On Android: in Google Password Manager settings, turn on "Auto Sign-in." This lets your phone fill in saved passwords automatically when you log into an app or website.',
       },
       {
         title: 'Let it generate strong passwords for new accounts',
-        content: 'When creating a new account or changing a password, look for a suggested strong password offered by your phone or browser (often shown automatically in the password field) and use it instead of typing your own. Your phone remembers it for you.',
-        tip: 'Quick Tip: Start with your email and banking passwords first — these protect the most important accounts if something else gets breached.',
+        content: 'When you create a new account or change a password, look for a suggested strong password from your phone or browser. It is often shown automatically in the password field. Use it instead of typing your own — your phone remembers it for you.',
+        tip: 'Quick Tip: Start with your email and banking passwords first. These protect your most important accounts if something else gets breached.',
       },
       {
         title: 'Set a strong master password or use your fingerprint/face',
-        content: 'Most password managers unlock using your phone\'s existing Face ID, fingerprint, or passcode, rather than a separate password to remember. Make sure your phone\'s screen lock itself is enabled, since it protects the password manager too.',
+        content: 'Most password managers unlock using your phone\'s existing Face ID, fingerprint, or passcode, instead of a separate password to remember. Make sure your phone\'s screen lock is turned on, since it protects the password manager too.',
       },
       {
         title: 'Turn on two-factor authentication where offered',
-        content: 'For your most important accounts (email, banking, Medicare, Social Security), turn on two-factor authentication (2FA) in addition to a strong password — this requires a code sent to your phone in addition to the password, so a stolen password alone cannot get someone in.',
+        content: 'For your most important accounts — email, banking, Medicare, Social Security — turn on two-factor authentication (2FA) in addition to a strong password. This sends a code to your phone, so a stolen password alone cannot get someone in.',
         warning: 'Never share a two-factor code with anyone who calls or texts asking for it, even if they claim to be your bank or a tech support agent. A legitimate company never needs you to read that code aloud.',
       },
     ],
@@ -194,35 +194,35 @@ You likely already have a free password manager built into your phone or browser
     publishedAt: '2026-08-04',
     lastVerifiedAt: '2026-08-04',
     difficulty: 'Beginner',
-    body: `Every August, many grandparents help pay for a grandchild's back-to-school laptop, tablet, or headphones — and scammers know it. Fake online stores advertising steep discounts on popular electronics brands spike every year during back-to-school season, often appearing in social media ads or search results promising a well-known laptop or tablet at 50–70% off the normal price.
+    body: `Every August, many grandparents help pay for a grandchild's back-to-school laptop, tablet, or headphones — and scammers know it. Fake online stores advertising steep discounts on popular electronics spike every year during back-to-school season. They often appear in social media ads or search results, promising a well-known laptop or tablet at 50–70% off the normal price.
 
-These fake stores are built to look legitimate, sometimes copying a real retailer's photos and layout almost exactly. The warning signs are usually the same: a price dramatically lower than anywhere else, a website that only accepts payment by wire transfer, gift card, or cryptocurrency instead of a credit card, a very new website address, and no way to reach customer service by phone. Shoppers who pay never receive the item, or receive a cheap counterfeit instead of what was advertised.
+These fake stores are built to look real, sometimes copying a real retailer's photos and layout almost exactly. The warning signs are usually the same: a price far lower than anywhere else, a site that only accepts payment by wire transfer, gift card, or cryptocurrency instead of a credit card, a very new website address, and no way to reach customer service by phone. Shoppers who pay never receive the item, or get a cheap fake instead of what was advertised.
 
-The safest path is to shop directly through retailers you already know and trust — buying directly from Apple, Best Buy, Amazon, Walmart, Target, or a manufacturer's own website removes most of the risk, even if it means paying a slightly higher price than an unfamiliar "deal" site.
+The safest path is to shop directly through retailers you already know and trust. Buying directly from Apple, Best Buy, Amazon, Walmart, Target, or a manufacturer's own website removes most of the risk, even if it means paying a bit more than an unfamiliar "deal" site.
 
 (Sources: Federal Trade Commission consumer alerts — consumer.ftc.gov; Better Business Bureau seasonal scam tracker — bbb.org)`,
     steps: [
       {
         title: 'Shop directly with retailers you already know',
-        content: 'Type the address of a familiar retailer (Apple.com, BestBuy.com, Amazon.com, Walmart.com, Target.com) directly into your browser rather than clicking a link from an ad or a search result. This avoids fake lookalike sites entirely.',
+        content: 'Type the address of a familiar retailer — Apple.com, BestBuy.com, Amazon.com, Walmart.com, Target.com — directly into your browser, rather than clicking a link from an ad or a search result. This avoids fake lookalike sites entirely.',
       },
       {
         title: 'Treat a huge discount as a warning sign, not a bonus',
-        content: 'If a laptop, iPad, or gaming console is priced dramatically below what it costs everywhere else, that is the clearest sign of a scam site — legitimate retailers do not sell popular electronics at 50–70% off during back-to-school season.',
+        content: 'If a laptop, iPad, or gaming console is priced far below what it costs everywhere else, that is the clearest sign of a scam site. Real retailers do not sell popular electronics at 50–70% off during back-to-school season.',
       },
       {
         title: 'Always pay by credit card, never wire transfer or gift card',
-        content: 'A credit card gives you dispute rights if an item never arrives or is not as described. If a website insists on payment only by wire transfer, gift card, or cryptocurrency, do not buy — this is one of the most reliable scam signals there is.',
+        content: 'A credit card gives you dispute rights if an item never arrives or is not as described. If a website insists on payment only by wire transfer, gift card, or cryptocurrency, do not buy. This is one of the most reliable scam signals there is.',
         warning: 'No legitimate retailer requires payment by gift card or cryptocurrency for a normal purchase. If a site insists on it, close the page.',
       },
       {
         title: 'Check for real contact information before buying from an unfamiliar site',
-        content: 'Look for a working customer service phone number and a physical business address on the website. If you can only find a contact form or the phone number does not work, treat that as a red flag.',
-        tip: 'Quick Tip: Search the store\'s name along with the word "scam" or "reviews" before buying — problems with a fake store are usually reported quickly by other shoppers.',
+        content: 'Look for a working customer service phone number and a physical business address on the website. If you can only find a contact form, or the phone number does not work, treat that as a red flag.',
+        tip: 'Quick Tip: Search the store\'s name along with the word "scam" or "reviews" before buying. Problems with a fake store are usually reported quickly by other shoppers.',
       },
       {
         title: 'If you already paid a suspicious site',
-        content: 'Contact your credit card company immediately to dispute the charge, and report the site to the FTC at reportfraud.ftc.gov and to the Better Business Bureau at bbb.org/scamtracker. Acting quickly improves the chance of getting your money back.',
+        content: 'Contact your credit card company right away to dispute the charge. Report the site to the FTC at reportfraud.ftc.gov and to the Better Business Bureau at bbb.org/scamtracker. Acting quickly improves your chance of getting your money back.',
       },
     ],
   },
