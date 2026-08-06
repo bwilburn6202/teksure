@@ -1301,3 +1301,37 @@ Orphaned routes: **9 → 6**. The remaining six are `/admin/knowledge-base`, `/l
 **Build, third attempt today:** `npx vite build --minify false` also died, this time as a V8 heap OOM (exit 134) rather than an OS kill. Worth recording as a diagnostic: **minification is not the cause.** The client build itself cannot fit in this sandbox's 3.9 GB regardless of flags. This needs a machine with ≥8 GB once; no amount of flag-tuning here will substitute.
 
 Verification for this run: tsc clean, 104/104 tests, link audit 0 broken / 6 orphans.
+
+### Third run, 2026-08-06 — cadence ownership, a11y fixes, and two wrong checks
+
+Landed as `dfd580ae`, `cbbf2bff`, `f4eb10db`.
+
+**Cadence pages now have an owner.** The tasks CLAUDE.md names (`weekly-tip-scam-alert`, `monthly-feature-build`) do not exist as scheduled tasks — the live TekSure tasks are `teksure-90day-push` (daily) and `teksure-weekly-improvement` (Tuesdays). CLAUDE.md's task table is aspirational and should be corrected. Wired it into what actually runs instead:
+- New `.claude/prompts/refresh-cadence-pages.md` — how to refresh both pages, which sources count, demote-and-fix-the-tense on the old entry, and the rule that a month which shipped nothing gets left out rather than filled in.
+- `weekly-site-review.md` — cadence staleness added as priority 3, above readability, with the check in the measure-first block. Also corrected the stale "~78% above grade 8" figure to ~59% in the prompt, the README, and the task prompt; it had been quoted from July.
+- `teksure-weekly-improvement` prompt updated to check both pages every run and refresh What's New on the first run of a month.
+- `teksure-90day-push` prompt rewritten: the sprint window closed, so it no longer chases the missed 4,500 guide target, no longer does the daily 5-guide readability chore, and now records the build OOM and the git fallback so future runs stop rediscovering them.
+
+**Two senior-UX checks were reporting false positives, and I fixed the checks, not the pages.** CLAUDE.md's own rule is not to fix a warning by loosening a check — so, specifically:
+- *"Files with onClick on a div: 7"* — every one was benign: handlers that only `stopPropagation` (shielding content from a parent's click-away), `aria-hidden` decorative backdrops, and overlays whose files already handle Escape. `ScreenshotLightbox` was flagged despite having a document-level Escape listener and a 44px labelled close button. The check now exempts those three patterns, with the reasoning in a comment. Genuine count: **1**.
+- *"Files w/ sub-44px tap targets: 2"* — both were `<Search className="h-8 w-8" aria-hidden="true" />` placeholder glyphs. The check had been looking 200 characters *backwards* for the word "button" and matching unrelated text. It now requires the size class to be on the interactive element itself. Genuine count: **1**, and it was real.
+
+These were not loosened thresholds; they were wrong predicates. Checks that cry wolf teach people to ignore the audit, which is worse than not having it.
+
+**Real fixes that fell out of it:**
+- Footer's Facebook and YouTube links were 36px, under the 44px minimum, on a site built for unsteady hands. Now 44px. (This was the one true tap-target finding.)
+- `TekBrain` had `onClick` on the `role="log"` chat transcript to dismiss the device picker — that advertises a live region as clickable to assistive tech while giving keyboard users nothing. Replaced with a proper outside-`pointerdown` listener; Escape was already handled on the trigger and the listbox.
+- Raised 28 instances of 12px metadata text to 14px on `/guides/*` and the guide index — category, difficulty, read time, tags, prev/next, related-guide excerpts. Skipped instances inside fixed-size badges and counters, where a bump overflows the container instead of helping. Scoped deliberately to the two highest-traffic reading surfaces; the other ~500 files (3,022 instances) are mostly tool pages with dense layouts and need a per-page eye, not a blanket replace.
+
+Audit now: **0 div-onClick, 0 sub-44px tap targets, 0 missing alt.** Readability unchanged at 8.3 / 58.5% — untouched on purpose.
+
+**Declined: the scripted readability bulk pass.** I dry-ran the three existing splitters. They do raise the score, and they also produce prose like "It works for adults too. And it gives you full control…" out of a 15-word sentence that was never hard to read. CLAUDE.md says not to rewrite content to hit a readability number, and a blanket run would be exactly that. If the number matters more than those sentences, that is a call for Bailey to make explicitly, not something to slip in under "fix anything you can."
+
+**Repo hygiene:** stopped tracking five `vite.config.ts.timestamp-*.mjs` files and `tsc_check_local.json` (already in `.gitignore`, but ignore rules do not apply to tracked files), and extended `.gitignore` to cover the `*.stale-*` / `*.old-*` / `dist.stale*` renames this mount forces on us. The files still sit in the working tree because this filesystem will not unlink them — only Bailey can delete them on the Mac — but they will no longer follow the repo around.
+
+### Still needs a human
+1. **Monetization credentials** — unchanged, and now the only sprint target with no path forward from here.
+2. **One `npm run build` on ≥8GB.** Three attempts today: OS-killed at 3200MB heap, and V8 heap OOM with minification off. Diagnostic value: it is not minification, it is the client build itself.
+3. **The readability decision** — accept 8.3, or authorize a bulk pass knowing what it does to prose.
+4. **Whether the daily task should keep running** now that the 90-day window has closed. Its prompt has been rewritten to be honest either way, but the question is Bailey's.
+5. Mac-only cleanup: the diverged local branch pointer, orphaned `src/pages/tools/SeniorVoicemail.tsx`, and the ~100 unlinkable junk files.
