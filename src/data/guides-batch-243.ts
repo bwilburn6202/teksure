@@ -101,7 +101,7 @@ export const guidesBatch243: Guide[] = [
   {
     slug: "how-to-find-esl-class-seniors-library",
     title: "How to Find an ESL Class for Seniors at the Library",
-    excerpt: "A practical, plain-language guide to finding free English as a Second Language classes for older adults at your public library, plus what to expect at your first class.",
+    excerpt: "A practical, plain-language guide to finding free English as a Second Language classes for older adults at your public library.",
     category: "tips-tricks",
     tags: ["esl", "english classes", "seniors", "library", "language learning", "immigration"],
     readTime: "8 min",

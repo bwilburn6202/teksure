@@ -44,7 +44,7 @@ export const guidesBatch304: Guide[] = [
   {
     slug: "senior-free-tax-prep-irs-vita",
     title: "IRS VITA: Free Tax Help for Low to Moderate Income Seniors",
-    excerpt: "VITA volunteers prepare federal and state returns for taxpayers earning roughly under 64,000 dollars per year. The service is free, in person, and IRS-certified.",
+    excerpt: "VITA volunteers prepare federal and state returns for taxpayers earning roughly under 64,000 dollars per year.",
     category: "tips-tricks",
     tags: ["irs-vita", "free-tax-prep", "low-income-tax-help", "senior-finance", "tax-credits"],
     readTime: "8 min",
@@ -118,7 +118,7 @@ export const guidesBatch304: Guide[] = [
   {
     slug: "senior-free-tax-prep-state-free-file",
     title: "State Free-File Programs: Free State Returns That Often Get Overlooked",
-    excerpt: "Most states with an income tax offer free state e-file to residents who already e-file federal. The state programs are separate from IRS Free File and are easy to miss.",
+    excerpt: "Most states with an income tax offer free state e-file to residents who already e-file federal.",
     category: "tips-tricks",
     tags: ["state-tax-free-file", "free-tax-prep", "senior-finance", "tax-savings", "state-returns"],
     readTime: "8 min",

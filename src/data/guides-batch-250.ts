@@ -94,7 +94,7 @@ export const guidesBatch250: Guide[] = [
   {
     slug: "how-to-get-hisa-grant-home-modifications",
     title: "How to Get an HISA Grant for Home Modifications",
-    excerpt: "Plain-English steps for disabled senior veterans applying for a Home Improvements and Structural Alterations grant from the VA for ramps, bathrooms, and accessibility upgrades.",
+    excerpt: "Plain-English steps for disabled senior veterans applying for a Home Improvements and Structural Alterations grant from the VA for ramps, bathrooms.",
     category: "government-civic",
     tags: ["veterans", "va", "hisa", "home-modifications", "accessibility", "seniors"],
     readTime: "10 min",

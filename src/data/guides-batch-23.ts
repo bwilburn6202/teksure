@@ -186,7 +186,7 @@ export const guidesBatch23: Guide[] = [
   {
     slug: 'video-doorbell-tips-guide',
     title: 'Getting More from Your Video Doorbell: Ring and Nest Tips',
-    excerpt: 'Your Ring or Nest video doorbell can do more than just ring. Here are tips for better alerts, cleaner video, protecting your privacy, and reducing false notifications.',
+    excerpt: 'Your Ring or Nest video doorbell can do more than just ring. Here are tips for better alerts, cleaner video, protecting your privacy.',
     category: 'smart-home',
     tags: ['ring doorbell', 'nest doorbell', 'video doorbell', 'smart doorbell', 'home security tips'],
     readTime: '5 min',
@@ -369,7 +369,7 @@ export const guidesBatch23: Guide[] = [
   {
     slug: 'apple-watch-daily-tips',
     title: 'Apple Watch Tips for Everyday Use',
-    excerpt: 'These everyday Apple Watch features — quick replies, watch faces, fall detection, medication reminders, and more — make a big difference in how useful your watch is.',
+    excerpt: 'These everyday Apple Watch features — quick replies, watch faces, fall detection, medication reminders, and more.',
     category: 'tips-tricks',
     tags: ['apple watch', 'tips', 'watchOS', 'health', 'notifications', 'productivity'],
     readTime: '5 min',
@@ -552,7 +552,7 @@ export const guidesBatch23: Guide[] = [
   {
     slug: 'windows-auto-update-guide',
     title: 'How to Make Sure Windows Updates Automatically',
-    excerpt: `Windows security updates protect your computer from viruses and hackers. Here's how to turn on automatic updates so you're always protected without thinking about it.`,
+    excerpt: 'Windows security updates protect your computer from viruses and hackers. Here is how to turn on automatic updates so you stay protected.',
     category: 'windows-guides',
     tags: ['windows update', 'automatic updates', 'security patches', 'windows 11', 'windows 10'],
     readTime: '4 min',
@@ -732,7 +732,7 @@ export const guidesBatch23: Guide[] = [
   {
     slug: 'icloud-keychain-guide',
     title: 'How to Use iCloud Keychain to Manage Your Passwords on iPhone',
-    excerpt: `iCloud Keychain is Apple's built-in password manager. It remembers your passwords, fills them in automatically, generates strong new ones, and alerts you to reused passwords.`,
+    excerpt: `iCloud Keychain is Apple's built-in password manager. It remembers your passwords, fills them in automatically, generates strong new ones.`,
     category: 'safety-guides',
     tags: ['icloud keychain', 'passwords', 'password manager', 'iphone', 'safari', 'autofill'],
     readTime: '5 min',

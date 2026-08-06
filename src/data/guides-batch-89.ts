@@ -640,7 +640,7 @@ You can pay at Electrify America stations in two ways: through the app linked to
   {
     slug: `evgo-charging-network-guide`,
     title: `Using EVgo to Charge Your Electric Vehicle`,
-    excerpt: `EVgo has thousands of fast-charging stations across the US. This guide explains how to find a station, start a session, and choose the right plan for your needs.`,
+    excerpt: `EVgo has thousands of fast-charging stations across the US. This guide explains how to find a station, start a session.`,
     category: `essential-skills`,
     tags: [`EV charging`, `EVgo`, `electric car`, `charging station`, `fast charge`],
     readTime: `7 min`,
@@ -778,7 +778,7 @@ Swagbucks is available as a website (swagbucks.com) and as an app on iPhone and 
   {
     slug: `flipp-grocery-flyer-app`,
     title: `Save on Groceries with the Flipp App`,
-    excerpt: `Flipp shows you weekly store sales from dozens of grocery chains in one place. Browse deals, clip digital coupons, and build a shopping list around what is on sale.`,
+    excerpt: `Flipp shows you weekly store sales from dozens of grocery chains in one place. Browse deals, clip digital coupons.`,
     category: `financial-tech`,
     tags: [`grocery savings`, `coupons`, `Flipp`, `weekly ads`, `deals`],
     readTime: `5 min`,

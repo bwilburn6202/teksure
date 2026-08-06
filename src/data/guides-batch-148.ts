@@ -115,7 +115,7 @@ Source: Apple Support — Camera tips (support.apple.com) and Google Support —
   {
     slug: 'what-is-an-app-store-and-how-to-use-it-2026',
     title: 'What Is an App Store and How Do You Use It?',
-    excerpt: 'The App Store (iPhone) and Play Store (Android) are the official, safe places to download apps. Learn how to find, read reviews, install, and update apps with confidence.',
+    excerpt: 'The App Store (iPhone) and Play Store (Android) are the official, safe places to download apps.',
     category: 'essential-skills',
     tags: [
       'app store',

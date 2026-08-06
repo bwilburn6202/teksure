@@ -145,7 +145,7 @@ ClassPass also includes a selection of on-demand video classes you can do at hom
   {
     slug: `fitbod-workout-app`,
     title: `How to Use Fitbod for Personalized Gym and Home Workouts`,
-    excerpt: `Fitbod creates a personalized workout plan based on your goals, equipment, and fitness level — and updates it after every session so your muscles keep progressing.`,
+    excerpt: `Fitbod creates a personalized workout plan based on your goals, equipment, and fitness level.`,
     category: `health-tech`,
     tags: [`fitbod`, `workout`, `gym`, `strength training`, `fitness app`, `personalized`],
     readTime: `6 min`,

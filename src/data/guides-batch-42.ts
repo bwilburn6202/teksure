@@ -55,7 +55,7 @@ Files stored in iCloud Drive sync automatically across devices — any change yo
   {
     slug: `iphone-files-app-guide`,
     title: `How to Use the Files App on iPhone and iPad`,
-    excerpt: `The Files app on iPhone and iPad is your digital filing cabinet. It lets you find, open, move, and organize documents from iCloud, your device, and other apps in one place.`,
+    excerpt: `The Files app on iPhone and iPad is your digital filing cabinet. It lets you find, open, move, and organize documents from iCloud, your device.`,
     category: `phone-guides`,
     tags: [`files app`, `iphone`, `ipad`, `documents`, `icloud drive`, `file management`],
     readTime: `5 min`,
@@ -108,7 +108,7 @@ The Files app is the blue folder icon on your home screen. If you do not see it,
   {
     slug: `continuity-camera-iphone-mac-webcam`,
     title: `How to Use Your iPhone as a Webcam for Your Mac`,
-    excerpt: `Continuity Camera lets your Mac automatically use your iPhone as a high-quality webcam — no cables or extra software needed. Here is how to set it up for video calls.`,
+    excerpt: `Continuity Camera lets your Mac automatically use your iPhone as a high-quality webcam — no cables or extra software needed.`,
     category: `mac-guides`,
     tags: [`continuity camera`, `iphone webcam`, `mac`, `video calls`, `FaceTime`, `Zoom`, `Desk View`],
     readTime: `4 min`,
@@ -155,7 +155,7 @@ Requirements: iPhone XR or later, Mac with Apple Silicon (M1/M2) or Intel Mac fr
   {
     slug: `ipad-sidecar-second-screen`,
     title: `How to Use Your iPad as a Second Screen for Your Mac`,
-    excerpt: `Sidecar turns your iPad into an extra display for your Mac — giving you more screen space for work. You can extend your desktop or mirror it, with or without a cable.`,
+    excerpt: `Sidecar turns your iPad into an extra display for your Mac — giving you more screen space for work.`,
     category: `mac-guides`,
     tags: [`sidecar`, `ipad`, `mac`, `second screen`, `extend display`, `productivity`],
     readTime: `4 min`,
@@ -346,7 +346,7 @@ To use FaceTime on Mac, you need to be signed into your Apple ID. Your FaceTime 
   {
     slug: `notes-app-tips-iphone-mac`,
     title: `How to Get the Most Out of the Notes App on iPhone and Mac`,
-    excerpt: `Apple's Notes app is more powerful than most people realize. Learn how to use it for checklists, locked notes, shared notes, document scanning, and syncing across devices.`,
+    excerpt: `Apple's Notes app is more powerful than most people realize. Learn how to use it for checklists, locked notes, shared notes, document scanning.`,
     category: `tips-tricks`,
     tags: [`notes app`, `iphone notes`, `mac notes`, `checklists`, `icloud notes`, `shared notes`],
     readTime: `5 min`,
@@ -455,7 +455,7 @@ The website is benefitscheckup.org. It is free and takes about 10 minutes to com
   {
     slug: `vita-free-tax-prep-guide`,
     title: `How to Get Free Tax Help Through VITA`,
-    excerpt: `The IRS's VITA program offers free federal tax preparation by trained volunteers for people who earn under $67,000 a year. Here is how to find a site and what to bring.`,
+    excerpt: `The IRS's VITA program offers free federal tax preparation by trained volunteers for people who earn under $67,000 a year.`,
     category: `financial-tech`,
     tags: [`VITA`, `free tax prep`, `IRS`, `tax return`, `seniors`, `tax help`, `TCE`],
     readTime: `5 min`,
@@ -506,7 +506,7 @@ Sites operate February through mid-April. Some operate year-round for amended re
   {
     slug: `withings-health-devices-guide`,
     title: `How to Use Withings Smart Health Devices`,
-    excerpt: `Withings makes connected scales, blood pressure monitors, and sleep trackers that send readings directly to your phone. This guide covers setup and reading your health data.`,
+    excerpt: `Withings makes connected scales, blood pressure monitors, and sleep trackers that send readings directly to your phone.`,
     category: `health-tech`,
     tags: [`withings`, `smart scale`, `blood pressure monitor`, `sleep tracker`, `health app`, `connected health`],
     readTime: `5 min`,
@@ -603,7 +603,7 @@ Having readings on your phone means you see your glucose without reaching for a 
   {
     slug: `zoom-on-smart-tv-guide`,
     title: `How to Join a Zoom Call on Your Smart TV`,
-    excerpt: `You can join Zoom video calls from your Smart TV for a larger screen experience. This guide covers TV apps, casting from phone, and the best setup for clear calls.`,
+    excerpt: `You can join Zoom video calls from your Smart TV for a larger screen experience.`,
     category: `communication`,
     tags: [`zoom`, `smart tv`, `video call`, `large screen`, `casting`, `amazon fire tv`, `roku`],
     readTime: `5 min`,
@@ -650,7 +650,7 @@ For most people, casting from a phone or using a laptop + HDMI cable are the sim
   {
     slug: `read-credit-report-guide`,
     title: `How to Get Your Free Credit Report and What to Look For`,
-    excerpt: `You are entitled to a free credit report from each of the three major bureaus every year. This guide shows you how to get yours at AnnualCreditReport.com and what to check.`,
+    excerpt: `You are entitled to a free credit report from each of the three major bureaus every year.`,
     category: `financial-tech`,
     tags: [`credit report`, `credit score`, `AnnualCreditReport`, `Equifax`, `Experian`, `TransUnion`, `free credit`],
     readTime: `6 min`,
@@ -701,7 +701,7 @@ Why check your report?
   {
     slug: `dispute-credit-card-charge`,
     title: `How to Dispute a Charge on Your Credit Card`,
-    excerpt: `If you see a charge on your credit card statement you did not authorize or that is incorrect, you have the right to dispute it. This guide explains how and what to expect.`,
+    excerpt: `If you see a charge on your credit card statement you did not authorize or that is incorrect, you have the right to dispute it.`,
     category: `financial-tech`,
     tags: [`dispute charge`, `credit card`, `chargeback`, `unauthorized charge`, `fraud`, `billing error`],
     readTime: `5 min`,
@@ -803,7 +803,7 @@ Google Translate is free on iPhone (App Store) and Android (Google Play). On And
   {
     slug: `google-translate-offline-guide`,
     title: `How to Use Google Translate Without an Internet Connection`,
-    excerpt: `Google Translate works offline — but you have to download language packs first. Here is how to download languages and translate text, speech, and photos with no Wi-Fi.`,
+    excerpt: `Google Translate works offline — but you have to download language packs first. Here is how to download languages and translate text, speech.`,
     category: `app-guides`,
     tags: [`google translate`, `offline translation`, `travel`, `no wifi`, `language pack`, `download`],
     readTime: `4 min`,
@@ -908,7 +908,7 @@ The key question is: do you have a backup? If yes, recovery is straightforward. 
   {
     slug: `files-by-google-app-guide`,
     title: `How to Use Files by Google to Free Up Storage on Android`,
-    excerpt: `Files by Google is a free app that finds and removes duplicate files, large media, offline maps, and junk — reclaiming storage space on your Android phone in a few taps.`,
+    excerpt: `Files by Google is a free app that finds and removes duplicate files, large media, offline maps, and junk.`,
     category: `phone-guides`,
     tags: [`files by google`, `android storage`, `free up space`, `delete junk`, `duplicate files`, `phone storage`],
     readTime: `4 min`,

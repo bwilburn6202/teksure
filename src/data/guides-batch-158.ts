@@ -504,7 +504,7 @@ Medicare will never call you to ask for your Medicare number, Social Security nu
   {
     slug: 'how-to-use-instacart-for-grocery-delivery-2026',
     title: 'How to Order Groceries Delivered to Your Door with Instacart',
-    excerpt: 'Use Instacart to have groceries from Kroger, Costco, Publix, Aldi, and hundreds of other stores delivered the same day. A step-by-step guide for first-time users.',
+    excerpt: 'Use Instacart to have groceries from Kroger, Costco, Publix, Aldi, and hundreds of other stores delivered the same day.',
     category: 'app-guides',
     tags: [
       'Instacart',

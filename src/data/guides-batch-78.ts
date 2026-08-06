@@ -220,7 +220,7 @@ These gestures work on all MacBook models, and most also work on Apple's externa
   {
     slug: `trackball-guide`,
     title: `Trackball Mice: A Great Option for People With Wrist Pain or Limited Desk Space`,
-    excerpt: `A trackball mouse lets you move the cursor by rolling a ball with your thumb or fingers, keeping your hand and wrist still — ideal for arthritis or tight spaces.`,
+    excerpt: `A trackball mouse lets you move the cursor by rolling a ball with your thumb or fingers, keeping your hand and wrist still.`,
     category: `essential-skills`,
     tags: [`trackball`, `mouse`, `ergonomics`, `wrist pain`, `arthritis`, `accessibility`, `computer accessories`],
     readTime: `5 min`,
@@ -263,7 +263,7 @@ Learning to use a trackball takes a few days of adjustment — most people feel 
   {
     slug: `windows-magnifier-accessibility`,
     title: `Windows Magnifier: Zoom Into Any Part of Your Screen to See It Better`,
-    excerpt: `Windows Magnifier is a free built-in tool that enlarges any part of your screen. No special software needed — it is already on your computer and easy to turn on.`,
+    excerpt: `Windows Magnifier is a free built-in tool that enlarges any part of your screen.`,
     category: `windows-guides`,
     tags: [`windows`, `magnifier`, `accessibility`, `low vision`, `zoom`, `screen reader`, `seniors`],
     readTime: `5 min`,
@@ -306,7 +306,7 @@ The quickest way to turn Magnifier on or off is the keyboard shortcut Windows ke
   {
     slug: `mac-zoom-accessibility`,
     title: `Mac Zoom: How to Make Everything on Your Screen Much Larger`,
-    excerpt: `Mac has a built-in Zoom feature that enlarges everything on screen. Turn it on in Accessibility settings and use simple keyboard shortcuts to zoom in and out anytime.`,
+    excerpt: 'Mac has a built-in Zoom feature that enlarges everything on screen. Turn it on in Accessibility settings and use keyboard shortcuts anytime.',
     category: `mac-guides`,
     tags: [`mac`, `zoom`, `accessibility`, `low vision`, `magnify`, `screen`, `seniors`],
     readTime: `4 min`,
@@ -477,7 +477,7 @@ To qualify and get a free captioned phone, contact your state's telephone equipm
   {
     slug: `windows-high-contrast-mode`,
     title: `Windows High Contrast Mode: Make Text and Icons Stand Out if Vision Is Strained`,
-    excerpt: `Windows High Contrast mode uses bold colors with strong contrast to make text and buttons easier to see — helpful for low vision, eye strain, or bright environments.`,
+    excerpt: `Windows High Contrast mode uses bold colors with strong contrast to make text and buttons easier to see — helpful for low vision, eye strain.`,
     category: `windows-guides`,
     tags: [`windows`, `high contrast`, `accessibility`, `low vision`, `eye strain`, `display`, `seniors`],
     readTime: `4 min`,
@@ -516,7 +516,7 @@ Note that High Contrast mode changes the appearance of Windows itself — the St
   {
     slug: `iphone-increase-font`,
     title: `How to Make Text Bigger on Your iPhone: Font Size and Display Zoom`,
-    excerpt: `Your iPhone has two separate ways to make text bigger: Text Size for apps and Display Zoom for everything including icons and buttons. Both are free and easy to change.`,
+    excerpt: `Your iPhone has two separate ways to make text bigger: Text Size for apps and Display Zoom for everything including icons and buttons.`,
     category: `phone-guides`,
     tags: [`iphone`, `font size`, `text size`, `accessibility`, `display zoom`, `readability`, `seniors`],
     readTime: `4 min`,
@@ -640,7 +640,7 @@ Using a blue light filter is one of the easiest, lowest-effort things you can do
   {
     slug: `edge-read-aloud-guide`,
     title: `Microsoft Edge Read Aloud: Have Any Webpage or PDF Read to You Out Loud`,
-    excerpt: `Microsoft Edge has a built-in Read Aloud feature that reads any webpage or PDF out loud in a natural-sounding voice — free and already installed on your Windows computer.`,
+    excerpt: `Microsoft Edge has a built-in Read Aloud feature that reads any webpage or PDF out loud in a natural-sounding voice.`,
     category: `windows-guides`,
     tags: [`microsoft edge`, `read aloud`, `text to speech`, `accessibility`, `pdf`, `browser`, `windows`],
     readTime: `4 min`,
@@ -679,7 +679,7 @@ Read Aloud is especially useful for people who want to multitask. You can listen
   {
     slug: `firefox-reader-view`,
     title: `Firefox Reader View: Strip Away Clutter for Distraction-Free Reading`,
-    excerpt: `Firefox Reader View removes ads, pop-ups, and visual clutter from any webpage, leaving just the text and images in a clean, adjustable format that is easy to read.`,
+    excerpt: `Firefox Reader View removes ads, pop-ups, and visual clutter from any webpage, leaving just the text and images in a clean.`,
     category: `safety-guides`,
     tags: [`firefox`, `reader view`, `reading mode`, `browser`, `accessibility`, `distraction-free`, `ad removal`],
     readTime: `4 min`,
@@ -718,7 +718,7 @@ Reader View works on most article-style webpages. It does not work on homepages,
   {
     slug: `chrome-extensions-safety`,
     title: `Chrome Browser Extensions: How to Install Them Safely and What to Avoid`,
-    excerpt: `Chrome extensions add useful features to your browser — but some are risky. Learn what extensions are, how to install them safely, and warning signs to watch for.`,
+    excerpt: `Chrome extensions add useful features to your browser — but some are risky. Learn what extensions are, how to install them safely.`,
     category: `safety-guides`,
     tags: [`chrome`, `extensions`, `browser`, `safety`, `privacy`, `security`, `scams`],
     readTime: `5 min`,
@@ -758,7 +758,7 @@ It is also good practice to periodically review which extensions you have instal
   {
     slug: `adblock-setup-guide`,
     title: `Ad Blockers Explained: What They Do and How to Set One Up for Free`,
-    excerpt: `Ad blockers are browser extensions that stop most online ads from showing up — making pages load faster, reducing distractions, and blocking some malicious ad scripts.`,
+    excerpt: `Ad blockers are browser extensions that stop most online ads from showing up — making pages load faster, reducing distractions.`,
     category: `safety-guides`,
     tags: [`ad blocker`, `browser`, `ads`, `privacy`, `security`, `extensions`, `chrome`, `firefox`],
     readTime: `5 min`,
@@ -798,7 +798,7 @@ Some websites detect ad blockers and ask you to disable the blocker before readi
   {
     slug: `ublock-origin-guide`,
     title: `uBlock Origin: The Most Trusted Free Ad Blocker — Install and Configure It`,
-    excerpt: `uBlock Origin is a free, open-source ad blocker that stops ads, trackers, and malicious scripts. It is lightweight, highly effective, and recommended by security experts.`,
+    excerpt: `uBlock Origin is a free, open-source ad blocker that stops ads, trackers, and malicious scripts.`,
     category: `safety-guides`,
     tags: [`ublock origin`, `ad blocker`, `privacy`, `browser security`, `chrome`, `firefox`, `extensions`],
     readTime: `5 min`,

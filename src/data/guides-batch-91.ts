@@ -316,7 +316,7 @@ This guide covers creating your Lyft account, requesting a ride, the key safety 
   {
     slug: `gogograndparent-guide`,
     title: `How GoGoGrandparent Lets Seniors Use Uber Without a Smartphone`,
-    excerpt: `GoGoGrandparent lets you call a real phone number to book a rideshare — no smartphone needed. Learn how to sign up, request a ride, and set up family monitoring.`,
+    excerpt: `GoGoGrandparent lets you call a real phone number to book a rideshare — no smartphone needed.`,
     category: `essential-skills`,
     tags: [`GoGoGrandparent`, `senior transportation`, `rideshare`, `phone call`, `no smartphone`],
     readTime: `7 min`,
@@ -484,7 +484,7 @@ This guide walks through the entire Decluttr process from getting a quote to rec
   {
     slug: `stockx-buy-sell-guide`,
     title: `How StockX Works for Buying and Selling Sneakers and Collectibles`,
-    excerpt: `StockX is a marketplace for sneakers, streetwear, trading cards, and electronics where every item is authenticated before delivery. Learn how bidding and buying now works.`,
+    excerpt: `StockX is a marketplace for sneakers, streetwear, trading cards, and electronics where every item is authenticated before delivery.`,
     category: `financial-tech`,
     tags: [`StockX`, `sneakers`, `collectibles`, `resale`, `authentication`],
     readTime: `7 min`,
@@ -566,7 +566,7 @@ This guide explains who qualifies, where to purchase the pass, and how to use it
   {
     slug: `recreation-gov-camping-guide`,
     title: `Reserve a Campsite at a National Park with Recreation.gov`,
-    excerpt: `Recreation.gov is the official US federal campsite booking site. Learn how to search campgrounds, read site descriptions, and secure your reservation before spots fill up.`,
+    excerpt: `Recreation.gov is the official US federal campsite booking site. Learn how to search campgrounds, read site descriptions.`,
     category: `government-civic`,
     tags: [`Recreation.gov`, `camping`, `national parks`, `campsite reservation`, `outdoors`],
     readTime: `7 min`,
@@ -743,7 +743,7 @@ The Schlage Home app is where you manage access codes, view entry logs (a histor
   {
     slug: `tp-link-kasa-smart-bulbs`,
     title: `Set Up TP-Link Kasa Smart Light Bulbs Without a Hub`,
-    excerpt: `Kasa smart bulbs connect directly to your Wi-Fi — no extra device needed. Learn how to add bulbs to the Kasa app, set schedules, and control them with Alexa or Google Home.`,
+    excerpt: `Kasa smart bulbs connect directly to your Wi-Fi — no extra device needed. Learn how to add bulbs to the Kasa app, set schedules.`,
     category: `smart-home`,
     tags: [`Kasa`, `TP-Link`, `smart bulbs`, `no hub`, `voice control`],
     readTime: `6 min`,
@@ -835,7 +835,7 @@ Installing a Caséta dimmer involves working with your home's electrical wiring 
   {
     slug: `govee-smart-lights-guide`,
     title: `Set Up Govee LED Strip Lights and Smart Bulbs for Your Home`,
-    excerpt: `Govee makes affordable color LED strips and smart bulbs you control from your phone. Learn how to attach strips, connect to the app, set up music sync, and use voice control.`,
+    excerpt: `Govee makes affordable color LED strips and smart bulbs you control from your phone.`,
     category: `smart-home`,
     tags: [`Govee`, `LED strip lights`, `smart lights`, `color lights`, `ambient lighting`],
     readTime: `6 min`,

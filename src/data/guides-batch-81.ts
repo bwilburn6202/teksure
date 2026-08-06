@@ -437,7 +437,7 @@ AirPods Pro pair with any iPhone, iPad, Mac, or Apple Watch signed in to the sam
   {
     slug: `sony-wh1000-guide`,
     title: `Sony WH-1000XM5 Headphones: Setup, Pairing, and Noise Canceling Explained`,
-    excerpt: `The Sony WH-1000XM5 are among the best noise-canceling headphones available. Learn how to pair them, adjust noise cancellation, and get the most from the Sony app.`,
+    excerpt: `The Sony WH-1000XM5 are among the best noise-canceling headphones available. Learn how to pair them, adjust noise cancellation.`,
     category: `phone-guides`,
     tags: [`Sony WH-1000XM5`, `noise canceling headphones`, `Sony`, `Bluetooth`, `audio`],
     readTime: `6 min`,

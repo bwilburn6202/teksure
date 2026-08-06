@@ -4,7 +4,7 @@ export const guidesBatch40: Guide[] = [
   {
     slug: `bluesky-social-network-guide`,
     title: `How to Get Started on Bluesky`,
-    excerpt: `Bluesky is a newer social network that works a lot like the old Twitter. This guide walks you through signing up, finding people to follow, and posting your first update.`,
+    excerpt: `Bluesky is a newer social network that works a lot like the old Twitter. This guide walks you through signing up, finding people to follow.`,
     category: `social-media`,
     tags: [`bluesky`, `social media`, `twitter alternative`, `decentralized`],
     readTime: `6 min`,
@@ -144,7 +144,7 @@ One popular feature: Peacock often streams live local NBC content, which is grea
   {
     slug: `nyt-games-wordle-connections-guide`,
     title: `How to Play Wordle, Connections, and Other NYT Games`,
-    excerpt: `The New York Times Games app has some of the most popular puzzles on the internet — Wordle, Connections, Strands, and more. Here is how to find them and play every day.`,
+    excerpt: `The New York Times Games app has some of the most popular puzzles on the internet — Wordle, Connections, Strands, and more.`,
     category: `app-guides`,
     tags: [`wordle`, `connections`, `nyt games`, `puzzles`, `strands`, `new york times`],
     readTime: `5 min`,
@@ -192,7 +192,7 @@ Many people play these games as part of their morning routine, and sharing score
   {
     slug: `whatsapp-channels-guide`,
     title: `How to Use WhatsApp Channels to Follow News and Updates`,
-    excerpt: `WhatsApp Channels let you follow your favorite news sources, organizations, and public figures the same way you follow accounts on social media — but right inside WhatsApp.`,
+    excerpt: `WhatsApp Channels let you follow your favorite news sources, organizations, and public figures the same way you follow accounts on social media.`,
     category: `communication`,
     tags: [`whatsapp`, `channels`, `news`, `updates`, `follow`],
     readTime: `5 min`,
@@ -285,7 +285,7 @@ You need a Standard or Premium Netflix plan to use downloads. The Standard with 
   {
     slug: `disney-plus-offline-downloads-guide`,
     title: `How to Download Disney+ Movies and Shows for Offline Viewing`,
-    excerpt: `Disney+ lets you save movies and episodes directly to your phone or tablet so you can watch them on the go — no Wi-Fi needed. Here is how to download and manage your content.`,
+    excerpt: `Disney+ lets you save movies and episodes directly to your phone or tablet so you can watch them on the go — no Wi-Fi needed.`,
     category: `entertainment`,
     tags: [`disney plus`, `offline`, `download`, `travel`, `no wifi`, `streaming`, `marvel`, `star wars`],
     readTime: `5 min`,
@@ -330,7 +330,7 @@ A Disney+ subscription ($7.99/month with ads or $13.99/month without ads) is req
   {
     slug: `spotify-offline-listening-guide`,
     title: `How to Listen to Spotify Without an Internet Connection`,
-    excerpt: `Spotify Premium lets you download playlists, albums, and podcasts to your phone so you can listen offline — perfect for commutes, travel, or areas with poor signal.`,
+    excerpt: `Spotify Premium lets you download playlists, albums, and podcasts to your phone so you can listen offline — perfect for commutes, travel.`,
     category: `entertainment`,
     tags: [`spotify`, `offline`, `download`, `music`, `playlists`, `premium`, `no wifi`],
     readTime: `5 min`,
@@ -518,7 +518,7 @@ These settings apply across your entire iPhone — not just one app. Once you se
   {
     slug: `ios-18-new-features-guide`,
     title: `What Is New in iOS 18 — Key Features for Everyday iPhone Users`,
-    excerpt: `iOS 18 brought major changes to iPhone including customizable home screens, improved Control Center, RCS messaging, and more. Here is what is actually useful in plain English.`,
+    excerpt: `iOS 18 brought major changes to iPhone including customizable home screens, improved Control Center, RCS messaging, and more.`,
     category: `phone-guides`,
     tags: [`ios 18`, `iphone`, `update`, `new features`, `apple`, `home screen`, `control center`],
     readTime: `6 min`,
@@ -821,7 +821,7 @@ Galaxy AI features are available in Settings → Advanced Features → Samsung D
   {
     slug: `iphone-stolen-device-protection`,
     title: `How to Turn On iPhone Stolen Device Protection`,
-    excerpt: `Stolen Device Protection is an iPhone security feature that prevents thieves from changing your Apple ID or turning off Find My iPhone — even if they know your passcode.`,
+    excerpt: `Stolen Device Protection is an iPhone security feature that prevents thieves from changing your Apple ID or turning off Find My iPhone.`,
     category: `safety-guides`,
     tags: [`iphone`, `stolen device protection`, `security`, `theft`, `apple id`, `find my`],
     readTime: `5 min`,
@@ -864,7 +864,7 @@ Stolen Device Protection is turned off by default. You have to enable it manuall
   {
     slug: `recover-hacked-email-account`,
     title: `What to Do If Your Email Account Was Hacked`,
-    excerpt: `If someone gets into your email account without permission, act fast. This step-by-step guide walks you through regaining access, securing your account, and checking for damage.`,
+    excerpt: `If someone gets into your email account without permission, act fast. This step-by-step guide walks you through regaining access, securing your account.`,
     category: `safety-guides`,
     tags: [`hacked email`, `account recovery`, `gmail`, `outlook`, `security`, `password`, `two-factor`],
     readTime: `7 min`,
@@ -913,7 +913,7 @@ The steps below cover Gmail and Outlook/Hotmail, which together cover most email
   {
     slug: `online-banking-safety-tips`,
     title: `How to Keep Your Bank Account Safe Online`,
-    excerpt: `Online banking is convenient, but it also attracts criminals. These practical tips help you bank securely on your phone or computer without giving up convenience.`,
+    excerpt: 'Online banking is convenient, and it also attracts criminals. These practical tips help you bank securely on your phone or computer.',
     category: `financial-tech`,
     tags: [`online banking`, `bank security`, `phishing`, `two-factor`, `mobile banking`, `fraud`, `safety`],
     readTime: `6 min`,

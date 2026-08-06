@@ -791,7 +791,7 @@ None of these apps have access to your calls, voicemails, or messages. They only
   {
     slug: `capcut-guide`,
     title: `CapCut for Beginners: Trimming Clips, Adding Captions, and Making Short Videos`,
-    excerpt: `CapCut is a free video editing app for your phone. This beginner guide walks you through importing clips, trimming, adding text captions, and exporting your finished video.`,
+    excerpt: `CapCut is a free video editing app for your phone. This beginner guide walks you through importing clips, trimming, adding text captions.`,
     category: `app-guides`,
     tags: [`capcut`, `video editing`, `phone`, `iphone`, `android`, `captions`, `video creator`, `beginner`],
     readTime: `7 min`,

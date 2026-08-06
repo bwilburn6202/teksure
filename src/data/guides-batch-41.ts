@@ -49,7 +49,7 @@ If you have a Google or Gmail account, you already have a YouTube Music account 
   {
     slug: `tripadvisor-app-guide`,
     title: `How to Use TripAdvisor to Find Great Restaurants and Hotels`,
-    excerpt: `TripAdvisor is the world's largest travel review site. This guide shows you how to read reviews, compare hotels, find restaurants nearby, and book with confidence.`,
+    excerpt: `TripAdvisor is the world's largest travel review site. This guide shows you how to read reviews, compare hotels, find restaurants nearby.`,
     category: `app-guides`,
     tags: [`tripadvisor`, `travel`, `hotel reviews`, `restaurant reviews`, `booking`, `travel planning`],
     readTime: `5 min`,
@@ -97,7 +97,7 @@ The free app works on iPhone and Android. The website at tripadvisor.com works o
   {
     slug: `vrbo-vacation-rental-guide`,
     title: `How to Book a Vacation Rental on Vrbo`,
-    excerpt: `Vrbo (formerly Vacation Rentals by Owner) lets you rent entire houses, cabins, beach cottages, and condos for trips. Here is how to search, compare, and book on Vrbo.`,
+    excerpt: `Vrbo (formerly Vacation Rentals by Owner) lets you rent entire houses, cabins, beach cottages, and condos for trips.`,
     category: `app-guides`,
     tags: [`vrbo`, `vacation rental`, `travel`, `booking`, `house rental`, `airbnb alternative`],
     readTime: `6 min`,
@@ -240,7 +240,7 @@ The app is free on iPhone and Android. You can also book at amtrak.com on any co
   {
     slug: `sams-club-app-guide`,
     title: `How to Use the Sam's Club App to Skip the Checkout Line`,
-    excerpt: `The Sam's Club app has a "Scan & Go" feature that lets you scan items as you shop and pay from your phone — completely skipping the checkout line. Here is how to set it up.`,
+    excerpt: `The Sam's Club app has a "Scan & Go" feature that lets you scan items as you shop and pay from your phone — completely skipping the checkout line.`,
     category: `app-guides`,
     tags: [`sams club`, `scan and go`, `warehouse club`, `membership`, `shopping app`],
     readTime: `5 min`,
@@ -332,7 +332,7 @@ The app works for Kroger and its family of stores, including Fry's, Ralphs, King
   {
     slug: `ipad-stage-manager-guide`,
     title: `How to Use Stage Manager on iPad for Multitasking`,
-    excerpt: `Stage Manager is a multitasking feature on newer iPads that lets you work with multiple apps in resizable windows on screen at the same time — like a computer desktop.`,
+    excerpt: `Stage Manager is a multitasking feature on newer iPads that lets you work with multiple apps in resizable windows on screen at the same time.`,
     category: `tips-tricks`,
     tags: [`ipad`, `stage manager`, `multitasking`, `iPadOS`, `productivity`, `split screen`],
     readTime: `5 min`,
@@ -382,7 +382,7 @@ You can use Stage Manager with or without a keyboard and trackpad. But it is mos
   {
     slug: `android-nearby-share-guide`,
     title: `How to Use Nearby Share to Send Files Between Android Devices`,
-    excerpt: `Nearby Share is Android's built-in feature for wirelessly sharing photos, files, links, and apps with people nearby — similar to Apple's AirDrop but for Android.`,
+    excerpt: `Nearby Share is Android's built-in feature for wirelessly sharing photos, files, links, and apps with people nearby.`,
     category: `phone-guides`,
     tags: [`nearby share`, `android`, `file sharing`, `wireless transfer`, `quick share`, `samsung`],
     readTime: `4 min`,
@@ -481,7 +481,7 @@ Requirements: iPhone with iOS 11.3 or later (iOS 17 or later recommended for the
   {
     slug: `amazon-subscribe-save-guide`,
     title: `How to Use Amazon Subscribe & Save to Automate Household Shopping`,
-    excerpt: `Amazon Subscribe & Save automatically ships everyday items — detergent, paper towels, vitamins, pet food — on a schedule you choose, and gives you a discount for doing it.`,
+    excerpt: `Amazon Subscribe & Save automatically ships everyday items — detergent, paper towels, vitamins, pet food — on a schedule you choose.`,
     category: `app-guides`,
     tags: [`amazon`, `subscribe and save`, `auto delivery`, `household items`, `discount`, `recurring orders`],
     readTime: `5 min`,
@@ -580,7 +580,7 @@ This guide focuses on using the standard Lyft app to request a medical ride your
   {
     slug: `library-free-digital-perks-guide`,
     title: `Free Digital Perks Your Library Card Gets You`,
-    excerpt: `Your public library card is worth far more than books. It gives you free access to the New York Times, magazines, LinkedIn Learning, digital tools, and more — all at no cost.`,
+    excerpt: `Your public library card is worth far more than books. It gives you free access to the New York Times, magazines, LinkedIn Learning, digital tools, and more.`,
     category: `essential-skills`,
     tags: [`library card`, `free access`, `new york times`, `linkedin learning`, `magazines`, `digital perks`],
     readTime: `6 min`,
@@ -684,7 +684,7 @@ Setting up autopay often gets you a small discount — many utility companies an
   {
     slug: `medicare-whats-covered-app`,
     title: `How to Use the Medicare "What's Covered" App`,
-    excerpt: `The official Medicare "What's Covered" app lets you quickly look up whether a medical service, test, or item is covered by Original Medicare — straight from Medicare.gov.`,
+    excerpt: `The official Medicare "What's Covered" app lets you quickly look up whether a medical service, test, or item is covered by Original Medicare.`,
     category: `health-tech`,
     tags: [`medicare`, `what's covered`, `official app`, `medicare benefits`, `coverage lookup`, `medicare.gov`],
     readTime: `4 min`,
@@ -784,7 +784,7 @@ The app is free on iPhone and Android from the official VA. It is one of the bes
   {
     slug: `record-video-iphone-guide`,
     title: `How to Record Videos on Your iPhone`,
-    excerpt: `Recording videos on iPhone is straightforward but has settings worth knowing about — like switching to slow motion, changing video quality, and where your videos are saved.`,
+    excerpt: `Recording videos on iPhone is straightforward but has settings worth knowing about — like switching to slow motion, changing video quality.`,
     category: `phone-guides`,
     tags: [`iphone`, `video recording`, `camera`, `slow motion`, `4k video`, `memories`],
     readTime: `5 min`,

@@ -195,7 +195,7 @@ Once you are satisfied, you can safely erase your old phone. On iPhone: Settings
   {
     slug: 'how-to-free-up-storage-space-on-your-iphone-2026',
     title: 'How to Free Up Storage Space on Your iPhone',
-    excerpt: 'Getting the "iPhone Storage Full" message? Here are six proven ways to free up space — from deleting unused apps to turning on iCloud Photos — without losing anything important.',
+    excerpt: 'Getting the "iPhone Storage Full" message? Here are six proven ways to free up space — from deleting unused apps to turning on iCloud Photos.',
     category: 'phone-guides',
     tags: [
       'iPhone storage full',

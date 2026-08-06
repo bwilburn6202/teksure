@@ -215,7 +215,7 @@ export const guidesBatch275: Guide[] = [
   {
     slug: "senior-chronic-pain-pain-pumps-nerve-blocks-interventional-procedures",
     title: "Pain Pumps, Nerve Blocks, and Other Interventional Options: Who They Help",
-    excerpt: "When pills and PT have not been enough, interventional pain procedures can target the source. What the four main options do, who qualifies, and what Medicare pays.",
+    excerpt: "When pills and PT have not been enough, interventional pain procedures can target the source.",
     category: "health-tech",
     tags: ["interventional-pain", "nerve-block", "pain-pump", "epidural", "radiofrequency-ablation", "senior-pain"],
     readTime: "12 min",

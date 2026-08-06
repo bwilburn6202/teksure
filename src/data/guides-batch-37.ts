@@ -820,7 +820,7 @@ Location sharing uses a small amount of battery life and mobile data when active
   {
     slug: 'temu-shopping-guide',
     title: 'What to Know Before Shopping on Temu',
-    excerpt: 'Temu offers extremely low prices on a wide variety of products. But there are important things to understand about quality, shipping times, and privacy before you buy.',
+    excerpt: 'Temu offers extremely low prices on a wide variety of products. But there are important things to understand about quality, shipping times.',
     category: 'essential-skills',
     tags: ['temu', 'online shopping', 'shopping tips', 'budget shopping', 'discount shopping', 'consumer safety'],
     readTime: '6 min',

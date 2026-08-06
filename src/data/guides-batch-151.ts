@@ -198,7 +198,7 @@ Sources: FTC.gov (consumer.ftc.gov), CISA.gov, AARP Fraud Watch Network, Apple S
   {
     slug: 'how-to-buy-and-use-a-prepaid-phone-card-2026',
     title: 'How to Buy and Use a Prepaid Phone Card',
-    excerpt: 'Prepaid phone plans and minutes cards give you phone service without a long-term contract. Learn where to buy them, how they work, and whether they are right for you.',
+    excerpt: 'Prepaid phone plans and minutes cards give you phone service without a long-term contract.',
     category: 'phone-guides',
     tags: [
       'prepaid phone',

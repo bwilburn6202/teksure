@@ -145,7 +145,7 @@ export const guidesBatch18: Guide[] = [
   {
     slug: 'apple-fitness-plus-guide',
     title: "What Is Apple Fitness+ and How Do You Use It?",
-    excerpt: 'Apple Fitness+ is a workout streaming service built for Apple Watch — with classes for all fitness levels, including seniors. Here is what you get and how to start.',
+    excerpt: 'Apple Fitness+ is a workout streaming service built for Apple Watch — with classes for all fitness levels, including seniors.',
     category: 'health-tech',
     tags: [
       'apple fitness plus',
@@ -259,7 +259,7 @@ export const guidesBatch18: Guide[] = [
   {
     slug: 'apple-one-subscription-guide',
     title: 'What Is Apple One and Is It Worth It?',
-    excerpt: "Apple One bundles Apple Music, Apple TV+, Apple Arcade, iCloud+, and more into one monthly subscription. Here's what's included and how to decide if it saves you money.",
+    excerpt: "Apple One bundles Apple Music, Apple TV+, Apple Arcade, iCloud+, and more into one monthly subscription.",
     category: 'app-guides',
     tags: ['apple one', 'apple subscriptions', 'apple music', 'apple tv', 'icloud', 'bundle'],
     readTime: '4 min',
@@ -325,7 +325,7 @@ export const guidesBatch18: Guide[] = [
   {
     slug: 'annotate-screenshot-guide',
     title: 'How to Annotate and Mark Up a Screenshot on Your Phone',
-    excerpt: 'After taking a screenshot, you can draw on it, add text, highlight areas, and crop it before sharing — a useful skill for asking for tech help or sharing information.',
+    excerpt: 'After taking a screenshot, you can draw on it, add text, highlight areas, and crop it before sharing.',
     category: 'tips-tricks',
     tags: ['screenshot', 'annotate', 'markup', 'draw on photo', 'iphone', 'android'],
     readTime: '4 min',
@@ -651,7 +651,7 @@ export const guidesBatch18: Guide[] = [
   {
     slug: 'mac-split-view-multitasking',
     title: 'How to Use Split View on Mac to Work With Two Apps Side by Side',
-    excerpt: "Mac Split View lets you fill your entire screen with two apps side by side — great for comparing documents, following instructions while you work, or multitasking.",
+    excerpt: "Mac Split View lets you fill your entire screen with two apps side by side — great for comparing documents, following instructions while you work.",
     category: 'mac-guides',
     tags: ['mac split view', 'multitasking', 'side by side', 'macos', 'full screen', 'productivity'],
     readTime: '4 min',

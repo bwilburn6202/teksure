@@ -49,7 +49,7 @@ export const guidesBatch233: Guide[] = [
   {
     slug: "how-to-keep-state-residency-requirements-straight",
     title: "How to Keep Two States Residency Requirements Straight",
-    excerpt: "Plain-English guide for snowbird seniors on tracking days, filing the right paperwork, and avoiding tax problems when you live part of the year in two different states.",
+    excerpt: 'Plain-English guide for snowbirds on tracking days, filing the right paperwork, and avoiding tax problems when you live in two states.',
     category: "government-civic",
     tags: ["residency", "snowbirds", "taxes", "seniors", "domicile", "florida", "state taxes"],
     readTime: "10 min",
@@ -184,7 +184,7 @@ export const guidesBatch233: Guide[] = [
   {
     slug: "how-to-find-seasonal-car-shipping",
     title: "How to Find Seasonal Car Shipping Companies",
-    excerpt: "Plain-English guide for snowbird seniors on choosing, booking, and inspecting a car shipping service to move a vehicle between northern and southern homes each year.",
+    excerpt: 'Plain-English guide for snowbirds on choosing, booking, and inspecting a car shipping service to move a vehicle between two homes each year.',
     category: "travel",
     tags: ["car shipping", "snowbirds", "auto transport", "seniors", "travel", "florida", "winter"],
     readTime: "9 min",

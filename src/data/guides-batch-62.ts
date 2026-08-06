@@ -1063,7 +1063,7 @@ Quick Tip: The BenefitsCheckUp tool at benefitscheckup.org (run by the National 
   {
     slug: `find-lost-pension-guide`,
     title: `How to Search for a Lost Pension or Unclaimed Retirement Benefits`,
-    excerpt: `Step-by-step instructions for tracking down a lost pension from a former employer, including the government tools designed to help you recover what you are owed.`,
+    excerpt: 'Step-by-step instructions for tracking down a lost pension from a former employer, including the government tools built to help you recover it.',
     category: `financial-tech`,
     tags: [`lost pension`, `unclaimed retirement`, `PBGC`, `pension search`, `retirement benefits`, `former employer`],
     readTime: `6 min`,

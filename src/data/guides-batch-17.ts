@@ -45,7 +45,7 @@ export const guidesBatch17: Guide[] = [
   {
     slug: 'google-one-storage-guide',
     title: 'How to Use Google One to Manage Your Storage',
-    excerpt: "Google gives every account 15GB of free storage shared across Gmail, Google Drive, and Google Photos. Here's how to check what's using it and get more space if needed.",
+    excerpt: "Google gives every account 15GB of free storage shared across Gmail, Google Drive, and Google Photos.",
     category: 'app-guides',
     tags: ['google one', 'google storage', 'gmail storage', 'google drive', 'google photos'],
     readTime: '4 min',
@@ -381,7 +381,7 @@ export const guidesBatch17: Guide[] = [
   {
     slug: 'iphone-camera-modes-guide',
     title: 'How to Use the Different Camera Modes on Your iPhone',
-    excerpt: "Your iPhone camera can do much more than take basic photos. Here's how to use Portrait mode, Panorama, Time-lapse, and other powerful modes you may not know about.",
+    excerpt: "Your iPhone camera can do much more than take basic photos. Here's how to use Portrait mode, Panorama, Time-lapse.",
     category: 'phone-guides',
     tags: ['iphone camera', 'portrait mode', 'panorama', 'camera modes', 'photography', 'iphone tips'],
     readTime: '5 min',
@@ -514,7 +514,7 @@ export const guidesBatch17: Guide[] = [
   {
     slug: 'caregiver-monitor-parent-tech',
     title: "How to Help an Aging Parent Stay Safe Online From Afar",
-    excerpt: "If you're a long-distance caregiver, there are practical tools and strategies to help protect an older parent from online scams, technical problems, and accidental data loss.",
+    excerpt: "If you're a long-distance caregiver, there are practical tools and strategies to help protect an older parent from online scams, technical problems.",
     category: 'life-transitions',
     tags: ['caregiver', 'aging parent', 'remote help', 'family tech', 'senior safety', 'long distance'],
     readTime: '6 min',
@@ -547,7 +547,7 @@ export const guidesBatch17: Guide[] = [
   {
     slug: 'smart-home-routines-setup',
     title: 'How to Set Up Smart Home Routines (Alexa and Google Home)',
-    excerpt: 'Smart home routines let your devices do things automatically — like turning lights on at sunset or playing music when you say "good morning." Here is how to set them up.',
+    excerpt: 'Smart home routines let your devices act on their own, such as turning lights on at sunset. Here is how to set them up.',
     category: 'smart-home',
     tags: ['smart home', 'routines', 'alexa routines', 'google home', 'automation', 'echo'],
     readTime: '5 min',
@@ -680,7 +680,7 @@ export const guidesBatch17: Guide[] = [
   {
     slug: 'facebook-memories-download-guide',
     title: 'How to Download Your Facebook Photos and Data Before Leaving',
-    excerpt: 'Facebook lets you download a copy of everything — your photos, messages, posts, and profile data. Here is how to save it before deleting your account or switching platforms.',
+    excerpt: 'Facebook lets you download a copy of everything — your photos, messages, posts, and profile data.',
     category: 'social-media',
     tags: ['facebook', 'download data', 'save photos', 'data export', 'account backup', 'deactivate'],
     readTime: '4 min',

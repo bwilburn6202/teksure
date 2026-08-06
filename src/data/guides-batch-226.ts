@@ -55,7 +55,7 @@ export const guidesBatch226: Guide[] = [
   {
     slug: "how-to-handle-medicare-living-abroad",
     title: "How to Handle Medicare When You Live Abroad",
-    excerpt: "Clear, plain-English guide for retirees on what Medicare does and does not cover overseas, plus how to handle premiums, late penalties, and travel medical insurance.",
+    excerpt: "Clear, plain-English guide for retirees on what Medicare does and does not cover overseas, plus how to handle premiums, late penalties.",
     category: "health-tech",
     tags: ["medicare", "expat", "retirement", "overseas", "health insurance", "seniors", "snowbird"],
     readTime: "10 min",
@@ -105,7 +105,7 @@ export const guidesBatch226: Guide[] = [
   {
     slug: "how-to-get-international-drivers-permit-aaa",
     title: "How to Get an International Driver's Permit at AAA",
-    excerpt: "Plain-English walkthrough for seniors on getting an International Driving Permit through AAA in person or by mail, with photos, fees, and the countries that require it.",
+    excerpt: "Plain-English walkthrough for seniors on getting an International Driving Permit through AAA in person or by mail, with photos, fees.",
     category: "travel",
     tags: ["aaa", "international drivers permit", "travel", "driving", "seniors", "expat", "snowbird"],
     readTime: "7 min",
@@ -250,7 +250,7 @@ export const guidesBatch226: Guide[] = [
   {
     slug: "how-to-file-us-taxes-as-expat",
     title: "How to File United States Taxes as an Expat",
-    excerpt: "Plain-English guide for retirees living abroad on filing United States taxes, claiming the foreign income exclusion, reporting foreign bank accounts, and finding help.",
+    excerpt: "Plain-English guide for retirees living abroad on filing United States taxes, claiming the foreign income exclusion, reporting foreign bank accounts.",
     category: "financial-tech",
     tags: ["taxes", "expat", "irs", "retirement", "overseas", "seniors", "fbar", "filing"],
     readTime: "10 min",

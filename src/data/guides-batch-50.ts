@@ -248,7 +248,7 @@ Apple Watch also lets you manage faces through the Watch app on your iPhone, whi
   {
     slug: `google-photos-partner-share`,
     title: `How to Use Google Photos Partner Sharing`,
-    excerpt: `Google Photos Partner Sharing lets you automatically share every photo you take with one trusted person — perfect for sharing with a spouse or close family member.`,
+    excerpt: `Google Photos Partner Sharing lets you automatically share every photo you take with one trusted person.`,
     category: `app-guides`,
     tags: [`google photos`, `partner sharing`, `photo sharing`, `family`, `android`, `iphone`],
     readTime: `5 min`,
@@ -353,7 +353,7 @@ One important note: the other adult you add must actually live in the same house
   {
     slug: `manage-amazon-subscriptions`,
     title: `How to View and Cancel Amazon Subscriptions`,
-    excerpt: `Learn how to find, pause, or cancel Amazon Subscribe and Save orders and other recurring Amazon subscriptions so you can control what you are paying for each month.`,
+    excerpt: 'Learn how to find, pause, or cancel Amazon Subscribe and Save orders and other recurring Amazon charges so you control what you pay each month.',
     category: `financial-tech`,
     tags: [`amazon`, `subscriptions`, `subscribe and save`, `cancel subscription`, `recurring orders`],
     readTime: `5 min`,
@@ -400,7 +400,7 @@ Reviewing your subscriptions every few months is good practice. You may find ite
   {
     slug: `optimize-iphone-battery-guide`,
     title: `How to Keep Your iPhone Battery Healthy`,
-    excerpt: `Tips to protect your iPhone battery so it holds a charge longer over time — including Optimized Battery Charging, good habits, and what actually drains it fastest.`,
+    excerpt: `Tips to protect your iPhone battery so it holds a charge longer over time — including Optimized Battery Charging, good habits.`,
     category: `phone-guides`,
     tags: [`iphone`, `battery health`, `battery life`, `charging`, `optimized charging`, `ios`],
     readTime: `6 min`,
@@ -598,7 +598,7 @@ Google Pay is best for personal payments between people you know. For buying thi
   {
     slug: `add-transit-card-wallet-guide`,
     title: `How to Add a Transit Card to Apple Wallet or Google Wallet`,
-    excerpt: `Pay for buses and subways with your phone by adding a transit card to Apple Wallet or Google Wallet — tap your phone at the reader and go, no physical card needed.`,
+    excerpt: `Pay for buses and subways with your phone by adding a transit card to Apple Wallet or Google Wallet — tap your phone at the reader and go.`,
     category: `essential-skills`,
     tags: [`transit card`, `apple wallet`, `google wallet`, `public transit`, `subway`, `bus`, `contactless payment`],
     readTime: `6 min`,
@@ -752,7 +752,7 @@ A good refurbished phone from a reputable source can provide years of reliable u
   {
     slug: `iphone-focus-filter-guide`,
     title: `How to Use iPhone Focus Filters`,
-    excerpt: `iPhone Focus Filters let you show different apps and home screen layouts depending on your Focus mode — Work, Personal, or Sleep — so you see only what you need.`,
+    excerpt: `iPhone Focus Filters let you show different apps and home screen layouts depending on your Focus mode — Work, Personal, or Sleep.`,
     category: `phone-guides`,
     tags: [`iphone`, `focus mode`, `focus filters`, `home screen`, `ios`, `do not disturb`, `work life balance`],
     readTime: `6 min`,

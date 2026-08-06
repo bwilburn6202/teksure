@@ -790,7 +790,7 @@ The app costs $14.99 per month or $99.99 per year. A free trial is available. Un
   {
     slug: `simplifi-budget-guide`,
     title: `How to Use Simplifi by Quicken for Clean, Modern Budgeting`,
-    excerpt: `Simplifi by Quicken connects your accounts, tracks spending, and shows personalized spending plans — a modern budgeting app without the complexity of the full Quicken software.`,
+    excerpt: `Simplifi by Quicken connects your accounts, tracks spending, and shows personalized spending plans.`,
     category: `financial-tech`,
     tags: [`simplifi`, `quicken`, `budgeting`, `spending tracker`, `personal finance`, `accounts`],
     readTime: `6 min`,

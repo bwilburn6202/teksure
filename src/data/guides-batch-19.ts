@@ -177,7 +177,7 @@ export const guidesBatch19: Guide[] = [
   {
     slug: 'phone-captions-for-calls',
     title: 'How to Get Live Captions During Phone Calls',
-    excerpt: "Live captions display spoken words as on-screen text during phone calls and videos — helpful for hearing loss, noisy environments, or following along more accurately.",
+    excerpt: "Live captions display spoken words as on-screen text during phone calls and videos — helpful for hearing loss, noisy environments.",
     category: 'essential-skills',
     tags: ['live captions', 'hearing loss', 'captioning', 'android captions', 'iphone captions', 'accessibility'],
     readTime: '5 min',
@@ -210,7 +210,7 @@ export const guidesBatch19: Guide[] = [
   {
     slug: 'read-pdf-on-phone-guide',
     title: 'How to Open, Read, and Save PDF Files on Your Phone',
-    excerpt: 'PDFs are commonly used for medical forms, bank statements, instruction manuals, and more. Here is how to open, read, zoom in on, and save PDFs on iPhone and Android.',
+    excerpt: 'PDFs are commonly used for medical forms, bank statements, instruction manuals, and more.',
     category: 'essential-skills',
     tags: ['pdf', 'read pdf', 'open pdf', 'files app', 'adobe acrobat', 'iphone', 'android'],
     readTime: '4 min',
@@ -276,7 +276,7 @@ export const guidesBatch19: Guide[] = [
   {
     slug: 'home-inventory-documentation',
     title: 'How to Create a Digital Home Inventory for Insurance',
-    excerpt: 'A home inventory documents your belongings — valuable for insurance claims after theft, fire, or disaster. Here is how to create one using your phone in under an hour.',
+    excerpt: 'A home inventory documents your belongings — valuable for insurance claims after theft, fire, or disaster.',
     category: 'life-transitions',
     tags: ['home inventory', 'insurance', 'valuables', 'document belongings', 'disaster preparedness'],
     readTime: '5 min',
@@ -410,7 +410,7 @@ export const guidesBatch19: Guide[] = [
   {
     slug: 'note-taking-apps-doctor-visit',
     title: 'How to Take Notes at Doctor Appointments Using Your Phone',
-    excerpt: "Medical appointments happen fast and it's hard to remember everything. Here's how to use your phone to record key information, questions, and instructions during visits.",
+    excerpt: "Medical appointments happen fast and it's hard to remember everything. Here's how to use your phone to record key information, questions.",
     category: 'health-tech',
     tags: ['doctor visit', 'medical notes', 'appointment prep', 'health notes', 'phone notes', 'voice recording'],
     readTime: '4 min',
@@ -543,7 +543,7 @@ export const guidesBatch19: Guide[] = [
   {
     slug: 'apple-maps-share-eta-guide',
     title: 'How to Share Your ETA With Family Using Apple Maps',
-    excerpt: "Apple Maps lets you share your estimated arrival time with anyone while you're navigating. They can track your progress in real time so they know when to expect you.",
+    excerpt: "Apple Maps lets you share your estimated arrival time with anyone while you're navigating.",
     category: 'app-guides',
     tags: ['apple maps', 'share eta', 'navigation', 'arrival time', 'iphone', 'family safety'],
     readTime: '4 min',
@@ -576,7 +576,7 @@ export const guidesBatch19: Guide[] = [
   {
     slug: 'report-scam-to-ftc-fbi',
     title: 'How to Report a Scam to the FTC and FBI',
-    excerpt: 'Reporting scams helps authorities track and stop scammers. Here is exactly where to report different types of fraud — phone scams, internet fraud, identity theft, and more.',
+    excerpt: 'Reporting scams helps authorities track and stop scammers. Here is exactly where to report different types of fraud — phone scams, internet fraud.',
     category: 'safety-guides',
     tags: ['report scam', 'FTC', 'FBI IC3', 'fraud report', 'identity theft report', 'scam hotline'],
     readTime: '4 min',
@@ -642,7 +642,7 @@ export const guidesBatch19: Guide[] = [
   {
     slug: 'mac-dock-customize-guide',
     title: 'How to Customize the Mac Dock for Easier Access',
-    excerpt: 'The Mac Dock is the row of icons at the bottom of the screen. You can resize it, add your favorite apps, remove ones you never use, and position it on any side of the screen.',
+    excerpt: 'The Mac Dock is the row of icons at the bottom of the screen. You can resize it, add your favorite apps, remove ones you never use.',
     category: 'mac-guides',
     tags: ['mac dock', 'customize mac', 'dock size', 'dock position', 'macos', 'mac basics'],
     readTime: '4 min',

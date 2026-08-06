@@ -8,7 +8,7 @@ export const guidesBatch155: Guide[] = [
   {
     slug: 'how-to-mirror-your-phone-to-your-tv-2026',
     title: 'How to Show Your Phone Screen on Your TV',
-    excerpt: 'Watch YouTube videos, share family photos, or video chat on the big screen. Three methods: AirPlay for iPhone, Google Cast for Android, and an HDMI cable for any phone.',
+    excerpt: 'Watch YouTube videos, share family photos, or video chat on the big screen. Three methods: AirPlay for iPhone, Google Cast for Android.',
     category: 'entertainment',
     tags: [
       'screen mirroring',
@@ -442,7 +442,7 @@ The flashlight uses your phone's camera LED, which draws more battery power than
   {
     slug: 'how-to-set-a-pin-or-password-on-your-phone-2026',
     title: 'How to Set a PIN or Password to Lock Your Phone',
-    excerpt: 'A phone lock screen is your first line of defense if your phone is ever lost or stolen. Learn how to set a PIN or password on iPhone and Android — and why it matters.',
+    excerpt: 'A phone lock screen is your first line of defense if your phone is ever lost or stolen.',
     category: 'safety-guides',
     tags: [
       'phone PIN',

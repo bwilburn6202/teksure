@@ -355,7 +355,7 @@ export const guidesBatch16: Guide[] = [
   {
     slug: 'read-phone-bill-guide',
     title: 'How to Read and Understand Your Cell Phone Bill',
-    excerpt: 'Cell phone bills are full of confusing charges and fees. Learn what each section means so you can catch billing errors and avoid paying for services you never wanted.',
+    excerpt: 'Cell phone bills are full of confusing charges. Learn what each section means so you can catch billing errors and drop services you never wanted.',
     category: 'essential-skills',
     tags: ['phone bill', 'cell phone charges', 'billing', 'fees', 'understanding bill'],
     readTime: '5 min',

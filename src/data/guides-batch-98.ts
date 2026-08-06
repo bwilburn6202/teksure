@@ -88,7 +88,7 @@ This setup works well for families keeping track of doctor appointments, grandch
   {
     slug: `new-ipad-setup-guide`,
     title: `How to Set Up a New iPad for the First Time`,
-    excerpt: `Walk through every step of setting up a brand-new iPad — from turning it on to connecting Wi-Fi, signing in with Apple ID, and adjusting settings for easier use.`,
+    excerpt: `Walk through every step of setting up a brand-new iPad — from turning it on to connecting Wi-Fi, signing in with Apple ID.`,
     category: `essential-skills`,
     tags: [`iPad`, `Apple`, `setup`, `beginners`, `new device`],
     readTime: `10 min`,
@@ -215,7 +215,7 @@ Privacy policies are legally required disclosures, so companies must disclose wh
   {
     slug: `device-end-of-life-guide`,
     title: `What "End of Support" Means for Your Phone or Computer`,
-    excerpt: `When Apple, Microsoft, or Google stops supporting your device, it doesn't break — but it does become a security risk. Here's what to do when your device reaches end of life.`,
+    excerpt: `When Apple, Microsoft, or Google stops supporting your device, it doesn't break — but it does become a security risk.`,
     category: `essential-skills`,
     tags: [`end of life`, `security updates`, `Windows 10`, `iOS`, `Android`, `device upgrade`],
     readTime: `7 min`,
@@ -258,7 +258,7 @@ Android support varies by manufacturer. Google Pixel phones receive 5–7 years 
   {
     slug: `update-chrome-browser`,
     title: `How to Update Google Chrome to the Latest Version`,
-    excerpt: `Keeping Chrome up to date is one of the simplest ways to stay safe online. Here's how to check your version, update in 30 seconds, and turn on automatic updates.`,
+    excerpt: `Keeping Chrome up to date is one of the simplest ways to stay safe online. Here's how to check your version, update in 30 seconds.`,
     category: `essential-skills`,
     tags: [`Google Chrome`, `browser update`, `security`, `software update`, `how-to`],
     readTime: `5 min`,
@@ -299,7 +299,7 @@ The update process takes less than 30 seconds and you don't lose anything — yo
   {
     slug: `aarp-fraud-watch-network`,
     title: `How to Use the AARP Fraud Watch Network`,
-    excerpt: `AARP's free Fraud Watch Network gives you real-time scam alerts, a helpline to call if you've been targeted, and tools to protect yourself and your family — at no cost.`,
+    excerpt: `AARP's free Fraud Watch Network gives you real-time scam alerts, a helpline to call if you've been targeted, and tools to protect yourself and your family.`,
     category: `safety-guides`,
     tags: [`AARP`, `scam alerts`, `fraud prevention`, `seniors`, `free resources`],
     readTime: `6 min`,
@@ -342,7 +342,7 @@ AARP also has a large library of free online videos showing exactly how common s
   {
     slug: `iphone-accessibility-shortcut`,
     title: `How to Use the iPhone Accessibility Shortcut`,
-    excerpt: `Triple-click the side or Home button on your iPhone to instantly turn on zoom, larger text, magnifier, or other helpful features — without digging through Settings every time.`,
+    excerpt: `Triple-click the side or Home button on your iPhone to instantly turn on zoom, larger text, magnifier, or other helpful features.`,
     category: `health-tech`,
     tags: [`iPhone`, `accessibility`, `shortcut`, `zoom`, `magnifier`, `seniors`],
     readTime: `5 min`,
@@ -510,7 +510,7 @@ Third, other people nearby can see your hotspot name (called the SSID) — but t
   {
     slug: `print-from-iphone-guide`,
     title: `How to Print from Your iPhone Without a Cable`,
-    excerpt: `Print photos, documents, web pages, and emails directly from your iPhone using AirPrint — no cables required, just a compatible Wi-Fi printer and the same Wi-Fi network.`,
+    excerpt: `Print photos, documents, web pages, and emails directly from your iPhone using AirPrint — no cables required.`,
     category: `essential-skills`,
     tags: [`printing`, `AirPrint`, `iPhone`, `wireless print`, `how-to`],
     readTime: `6 min`,
@@ -551,7 +551,7 @@ If your printer doesn't support AirPrint, you may be able to use your printer ma
   {
     slug: `understand-mb-gb-tb`,
     title: `What Do MB, GB, and TB Mean? Storage Explained Plainly`,
-    excerpt: `MB, GB, and TB are units of digital storage. Understanding them helps you know how many photos fit on your phone, how fast your internet is, and when to free up space.`,
+    excerpt: `MB, GB, and TB are units of digital storage. Understanding them helps you know how many photos fit on your phone, how fast your internet is.`,
     category: `essential-skills`,
     tags: [`storage`, `MB`, `GB`, `TB`, `digital literacy`, `tech basics`],
     readTime: `5 min`,
@@ -594,7 +594,7 @@ Cloud storage services like iCloud, Google Photos, and Google Drive use GB to de
   {
     slug: `find-wifi-password-on-router`,
     title: `How to Find Your Wi-Fi Password Without Calling Anyone`,
-    excerpt: `Find your home Wi-Fi password on the router label, in your iPhone settings, through Windows, or via a browser — without needing your internet provider's phone number.`,
+    excerpt: `Find your home Wi-Fi password on the router label, in your iPhone settings, through Windows, or via a browser.`,
     category: `essential-skills`,
     tags: [`Wi-Fi password`, `router`, `network`, `how-to`, `troubleshooting`],
     readTime: `5 min`,
@@ -635,7 +635,7 @@ If none of those options work. You can reset the router to factory settings, whi
   {
     slug: `hdmi-cable-explained`,
     title: `What Is an HDMI Cable and When Do You Need One`,
-    excerpt: `HDMI cables carry both video and audio in one wire — used for TVs, monitors, projectors, and streaming devices. Here's what they do and how to choose the right one.`,
+    excerpt: `HDMI cables carry both video and audio in one wire — used for TVs, monitors, projectors, and streaming devices.`,
     category: `essential-skills`,
     tags: [`HDMI`, `cables`, `TV`, `monitor`, `tech basics`, `setup`],
     readTime: `5 min`,
@@ -674,7 +674,7 @@ HDMI cables are inexpensive. A quality cable for everyday use costs $5 to $15 at
   {
     slug: `check-windows-malware`,
     title: `How to Check Your Windows Computer for Malware (Free)`,
-    excerpt: `Run a free malware scan on your Windows PC using tools you already have — Microsoft Defender and Malwarebytes Free — to check if anything harmful is hiding on your computer.`,
+    excerpt: `Run a free malware scan on your Windows PC using tools you already have — Microsoft Defender and Malwarebytes Free.`,
     category: `safety-guides`,
     tags: [`malware`, `virus scan`, `Windows Defender`, `Malwarebytes`, `security`, `Windows`],
     readTime: `7 min`,
@@ -715,7 +715,7 @@ Run these two scans back-to-back on a regular schedule — perhaps once a month 
   {
     slug: `create-gmail-account`,
     title: `How to Create a Gmail Account`,
-    excerpt: `Set up a free Gmail account in about 5 minutes — you'll get an email address, access to Google Drive, Google Photos, YouTube, and Google Meet, all with one login.`,
+    excerpt: `Set up a free Gmail account in about 5 minutes — you'll get an email address, access to Google Drive, Google Photos, YouTube, and Google Meet.`,
     category: `essential-skills`,
     tags: [`Gmail`, `Google account`, `email`, `how-to`, `beginners`],
     readTime: `7 min`,
@@ -758,7 +758,7 @@ Once your account is set up, you'll be using it for years, so take a few extra m
   {
     slug: `phone-overheating-fixes`,
     title: `What to Do When Your Phone Gets Too Hot`,
-    excerpt: `A warm phone during charging or heavy use is normal — but a very hot phone can damage the battery or shut down. Here's what causes overheating and how to cool it down.`,
+    excerpt: `A warm phone during charging or heavy use is normal — but a very hot phone can damage the battery or shut down.`,
     category: `phone-guides`,
     tags: [`overheating`, `battery`, `iPhone`, `Android`, `phone care`, `troubleshooting`],
     readTime: `6 min`,
@@ -842,7 +842,7 @@ If your printer is connected wirelessly over Wi-Fi, connection problems are espe
   {
     slug: `do-not-disturb-iphone`,
     title: `How to Use Do Not Disturb on Your iPhone`,
-    excerpt: `Silence calls, texts, and notifications automatically during sleep, meetings, or focused time — without turning your phone off or missing important emergency calls.`,
+    excerpt: `Silence calls, texts, and notifications automatically during sleep, meetings, or focused time.`,
     category: `phone-guides`,
     tags: [`Do Not Disturb`, `Focus`, `iPhone`, `notifications`, `sleep`, `silence`],
     readTime: `6 min`,
@@ -885,7 +885,7 @@ Setting up a Sleep schedule in the Focus system is particularly valuable. It aut
   {
     slug: `use-google-lens`,
     title: `How to Use Google Lens to Identify Things Around You`,
-    excerpt: `Point your camera at anything — a plant, a product label, foreign text, or a restaurant dish — and Google Lens tells you what it is, translates it, or finds it for purchase.`,
+    excerpt: `Point your camera at anything — a plant, a product label, foreign text, or a restaurant dish — and Google Lens tells you what it is, translates it.`,
     category: `app-guides`,
     tags: [`Google Lens`, `camera`, `identify`, `translate`, `Android`, `iPhone`],
     readTime: `6 min`,
@@ -967,7 +967,7 @@ For seniors and anyone who wants key information visible at a glance, widgets ar
   {
     slug: `secure-home-network-basics`,
     title: `How to Make Your Home Wi-Fi Network More Secure`,
-    excerpt: `Five practical steps to keep your home network safe — including changing the default router password, turning on WPA3 encryption, and disabling remote management.`,
+    excerpt: `Five practical steps to keep your home network safe — including changing the default router password, turning on WPA3 encryption.`,
     category: `safety-guides`,
     tags: [`Wi-Fi security`, `router`, `home network`, `password`, `encryption`, `WPA3`],
     readTime: `8 min`,

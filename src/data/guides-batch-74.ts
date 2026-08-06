@@ -466,7 +466,7 @@ One important thing to know: TracFone minutes and plans expire after a certain n
   {
     slug: `asurion-phone-insurance`,
     title: `Asurion Phone Insurance: How to File a Claim and What Is Covered`,
-    excerpt: `Asurion is the most common phone insurance provider in the US. Learn what it covers, how to file a claim, and what to expect from the repair or replacement process.`,
+    excerpt: `Asurion is the most common phone insurance provider in the US. Learn what it covers, how to file a claim.`,
     category: `phone-guides`,
     tags: [`asurion`, `phone insurance`, `cracked screen`, `lost phone`, `claim`, `repair`, `replacement`],
     readTime: `6 min`,
@@ -510,7 +510,7 @@ Claims can be filed online at asurion.com, through the MyAsurion app, or by call
   {
     slug: `chase-mobile-banking`,
     title: `Chase Mobile App: Check Balances, Pay Bills, and Deposit Checks`,
-    excerpt: `The Chase Mobile app lets you manage your Chase bank accounts from your phone — check balances, transfer money, pay bills, and deposit checks without visiting a branch.`,
+    excerpt: `The Chase Mobile app lets you manage your Chase bank accounts from your phone — check balances, transfer money, pay bills.`,
     category: `financial-tech`,
     tags: [`chase`, `mobile banking`, `bank app`, `deposit check`, `pay bills`, `transfer money`],
     readTime: `6 min`,
@@ -730,7 +730,7 @@ Visible is a good fit for people who want a straightforward unlimited plan witho
   {
     slug: `xfinity-mobile-guide`,
     title: `Xfinity Mobile: How It Works for Xfinity Internet Customers`,
-    excerpt: `Xfinity Mobile is a phone plan exclusively for Xfinity internet customers that offers competitive pricing by combining Verizon's network with Xfinity's Wi-Fi hotspots.`,
+    excerpt: 'Xfinity Mobile is a phone plan for Xfinity internet customers that combines Verizon\'s network with Xfinity Wi-Fi hotspots to lower the price.',
     category: `phone-guides`,
     tags: [`xfinity mobile`, `comcast`, `phone plan`, `wireless`, `internet bundle`, `verizon network`],
     readTime: `6 min`,
@@ -818,7 +818,7 @@ Customer service is available at AT&T stores, by calling 1-800-331-0500, or onli
   {
     slug: `voter-registration-online`,
     title: `How to Register to Vote Online and Check Your Registration Status`,
-    excerpt: `Most US states offer online voter registration through official government websites. Here is how to register and verify your information is current before an election.`,
+    excerpt: `Most US states offer online voter registration through official government websites.`,
     category: `government-civic`,
     tags: [`voter registration`, `voting`, `elections`, `civic`, `register to vote`, `government`],
     readTime: `5 min`,

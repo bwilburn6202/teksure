@@ -649,7 +649,7 @@ Many families buy an Apple Watch specifically for these features. A parent or gr
   {
     slug: 'android-digital-wellbeing',
     title: 'How to Use Android Digital Wellbeing to Manage Screen Time',
-    excerpt: `Android's built-in Digital Wellbeing tools show exactly how much time you spend on each app and let you set limits to help you use your phone more intentionally.`,
+    excerpt: 'Android\'s Digital Wellbeing tools show how much time you spend in each app and let you set limits so you use your phone more intentionally.',
     category: 'phone-guides',
     tags: ['Android', 'Digital Wellbeing', 'screen time', 'app limits', 'health'],
     readTime: '5 min',
@@ -835,7 +835,7 @@ Gmail filters let you automatically sort, label, or delete emails from specific 
   {
     slug: 'outlook-tips-seniors',
     title: 'Microsoft Outlook Tips for Everyday Email Users',
-    excerpt: `Outlook is the email app in Microsoft 365 and Windows. Learn how to organize your inbox, recall a sent email, create folders, and set an auto-reply when you're away.`,
+    excerpt: `Outlook is the email app in Microsoft 365 and Windows. Learn how to organize your inbox, recall a sent email, create folders.`,
     category: 'communication',
     tags: ['Outlook', 'Microsoft', 'email', 'tips', 'inbox'],
     readTime: '6 min',
@@ -881,7 +881,7 @@ The "Recall This Message" feature is a lifesaver if you send an email to the wro
   {
     slug: 'transfer-contacts-new-phone',
     title: 'How to Transfer Your Contacts When Getting a New Phone',
-    excerpt: `Getting a new phone? Here's how to move all your contacts from your old phone to your new one — whether you're switching from iPhone to Android or staying on the same platform.`,
+    excerpt: `Getting a new phone? Here's how to move all your contacts from your old phone to your new one.`,
     category: 'phone-guides',
     tags: ['contacts', 'transfer', 'new phone', 'iPhone', 'Android'],
     readTime: '5 min',
@@ -971,7 +971,7 @@ Once an app is installed, it stays on your TV unless you remove it. You do not n
   {
     slug: 'ipad-for-seniors-guide',
     title: 'Getting Started with iPad: A Guide for New Users',
-    excerpt: `The iPad is one of the most user-friendly devices ever made. If you're new to iPad, this guide covers everything you need to know to get started with confidence.`,
+    excerpt: 'The iPad is one of the most approachable devices ever made. If you are new to it, this guide covers what you need to get started with confidence.',
     category: 'essential-skills',
     tags: ['iPad', 'Apple', 'beginner', 'tablet', 'seniors'],
     readTime: '8 min',

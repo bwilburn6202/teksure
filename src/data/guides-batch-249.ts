@@ -232,7 +232,7 @@ export const guidesBatch249: Guide[] = [
   {
     slug: "how-to-find-solo-aging-support-group",
     title: "How to Find a Solo Aging Support Group",
-    excerpt: "Where to look for in-person and online groups built for single seniors who are figuring out later life on their own, and how to tell a good group from a bad one.",
+    excerpt: "Where to look for in-person and online groups built for single seniors who are figuring out later life on their own.",
     category: "tips-tricks",
     tags: ["solo aging", "single seniors", "support group", "community", "social connection", "mental health"],
     readTime: "8 min",

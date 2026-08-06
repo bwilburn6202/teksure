@@ -84,7 +84,7 @@ export const guidesBatch257: Guide[] = [
   {
     slug: "first-6-months-widowed-life-insurance-claim-process",
     title: "Filing a Life Insurance Claim After Your Spouse Dies",
-    excerpt: "A life insurance payout is one of the largest checks a widow or widower will ever receive. Here is how to file the claim, what documents to gather, and how taxes work.",
+    excerpt: "A life insurance payout is one of the largest checks a widow or widower will ever receive.",
     category: "tips-tricks",
     tags: ["widowed", "life-insurance", "claim", "seniors", "estate"],
     readTime: "8 min",
@@ -122,7 +122,7 @@ export const guidesBatch257: Guide[] = [
   {
     slug: "widow-first-months-changing-joint-accounts-to-single",
     title: "Moving Utilities, Banks, and Deeds From Joint to Your Name Only",
-    excerpt: "After a spouse dies, joint accounts and bills have to be changed over. Here is the practical sequence widows and widowers can follow without getting overwhelmed.",
+    excerpt: 'After a spouse dies, joint accounts and bills have to be changed over. Here is a practical order to follow without getting overwhelmed.',
     category: "tips-tricks",
     tags: ["widowed", "joint-accounts", "deed", "utilities", "seniors", "estate"],
     readTime: "9 min",

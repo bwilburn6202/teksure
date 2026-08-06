@@ -42,7 +42,7 @@ export const guidesBatch22: Guide[] = [
   {
     slug: 'airplay-iphone-to-tv',
     title: 'How to Show Your iPhone Screen on Your TV with AirPlay',
-    excerpt: 'AirPlay lets you wirelessly display your iPhone screen on an Apple TV or AirPlay-compatible TV — great for sharing photos, videos, or video calls on a big screen.',
+    excerpt: 'AirPlay lets you wirelessly display your iPhone screen on an Apple TV or AirPlay-compatible TV — great for sharing photos, videos.',
     category: 'tips-tricks',
     tags: ['airplay', 'iphone', 'apple tv', 'screen mirror', 'cast iphone', 'big screen'],
     readTime: '5 min',
@@ -152,7 +152,7 @@ export const guidesBatch22: Guide[] = [
   {
     slug: 'apple-id-manage-guide',
     title: 'How to Manage Your Apple ID: Password, Payment, and Privacy',
-    excerpt: `Your Apple ID is the key to your iPhone, iCloud, and all Apple services. Here's how to update your password, manage payment methods, and review what's connected.`,
+    excerpt: `Your Apple ID is the key to your iPhone, iCloud, and all Apple services. Here's how to update your password, manage payment methods.`,
     category: 'phone-guides',
     tags: ['apple id', 'icloud', 'apple account', 'password', 'payment method', 'iphone'],
     readTime: '5 min',
@@ -225,7 +225,7 @@ export const guidesBatch22: Guide[] = [
   {
     slug: 'telehealth-appointment-tips',
     title: 'How to Prepare for a Telehealth Video Appointment',
-    excerpt: 'Telehealth appointments happen by video call on your phone or computer. A few minutes of preparation makes sure the visit goes smoothly and your doctor can help you effectively.',
+    excerpt: 'Telehealth appointments happen by video call on your phone or computer. A few minutes of preparation makes the visit go smoothly.',
     category: 'health-tech',
     tags: ['telehealth', 'video doctor visit', 'online doctor', 'telemedicine', 'prepare'],
     readTime: '5 min',
@@ -626,7 +626,7 @@ export const guidesBatch22: Guide[] = [
   {
     slug: 'power-of-attorney-basics',
     title: 'What Is Power of Attorney and Why Every Adult Should Have One',
-    excerpt: `A power of attorney lets a trusted person make decisions on your behalf if you become unable to — for finances, medical decisions, or both. Here's what you need to know.`,
+    excerpt: `A power of attorney lets a trusted person make decisions on your behalf if you become unable to — for finances, medical decisions, or both.`,
     category: 'life-transitions',
     tags: ['power of attorney', 'legal documents', 'estate planning', 'advance directive', 'financial planning'],
     readTime: '6 min',
@@ -699,7 +699,7 @@ export const guidesBatch22: Guide[] = [
   {
     slug: 'medicare-basics-explained',
     title: 'Medicare Basics: What Parts A, B, C, and D Mean',
-    excerpt: `Medicare has four parts that cover different types of care. Here's a plain-English explanation of Parts A, B, C, and D so you know what's covered and what's not.`,
+    excerpt: `Medicare has four parts that cover different types of care. Here's a plain-English explanation of Parts A, B, C.`,
     category: 'government-civic',
     tags: ['medicare', 'medicare parts', 'medicare basics', 'part A', 'part B', 'part D'],
     readTime: '6 min',

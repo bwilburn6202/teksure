@@ -513,7 +513,7 @@ If you are the kind of person who finds documentaries interesting but wishes the
   {
     slug: `codecademy-beginners`,
     title: `How to Learn to Code on Codecademy: A Beginner's Guide`,
-    excerpt: `Codecademy offers free interactive coding lessons for complete beginners. This guide explains how to get started, what to learn first, and what is free versus paid.`,
+    excerpt: `Codecademy offers free interactive coding lessons for complete beginners. This guide explains how to get started, what to learn first.`,
     category: `app-guides`,
     tags: [`codecademy`, `coding`, `programming`, `learn to code`, `beginners`, `free`],
     readTime: `6 min`,
@@ -560,7 +560,7 @@ Many people who learned to code as adults mention Codecademy as the platform whe
   {
     slug: `google-career-certificates`,
     title: `How to Get a Google Career Certificate for Free (or Low Cost)`,
-    excerpt: `Google Career Certificates offer job-ready training in IT support, data analytics, UX design, and more. Many are free through public libraries or subsidized programs.`,
+    excerpt: `Google Career Certificates offer job-ready training in IT support, data analytics, UX design, and more.`,
     category: `app-guides`,
     tags: [`google career certificates`, `job training`, `IT support`, `data analytics`, `coursera`, `free education`],
     readTime: `6 min`,

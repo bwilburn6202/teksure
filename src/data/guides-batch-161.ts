@@ -162,7 +162,7 @@ To get started: go to privacy.com, create a free account, link your bank account
   {
     slug: 'how-to-check-if-a-website-is-safe-before-buying-2026',
     title: 'How to Check If a Website Is Safe Before You Buy',
-    excerpt: 'Five things to look for — the HTTPS padlock, the correct domain name, real contact info, customer reviews, and Google Safe Browsing — before entering your card number.',
+    excerpt: 'Five things to look for — the HTTPS padlock, the correct domain name, real contact info, customer reviews, and Google Safe Browsing.',
     category: 'safety-guides',
     tags: [
       'website safety',

@@ -169,7 +169,7 @@ Each bureau has an online dispute process. Go to the bureau's website — **equi
   {
     slug: 'how-to-use-whatsapp-for-the-first-time-2026',
     title: 'How to Use WhatsApp for the First Time',
-    excerpt: 'WhatsApp lets you send free text messages and make free voice or video calls to family anywhere in the world using your home Wi-Fi. No extra charges on your phone bill.',
+    excerpt: 'WhatsApp lets you send free text messages and make free voice or video calls to family anywhere in the world using your home Wi-Fi.',
     category: 'communication',
     tags: [
       'WhatsApp',

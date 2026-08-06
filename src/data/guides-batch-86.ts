@@ -264,7 +264,7 @@ Stellarium is developed by a community of astronomers and software developers wh
   {
     slug: `star-walk-app`,
     title: `Star Walk 2: Interactive Sky Map That Identifies Stars, Planets, and Constellations`,
-    excerpt: `Star Walk 2 is an augmented reality sky map app — point your phone at the sky and see star names, constellation art, and planet information overlaid in real time.`,
+    excerpt: `Star Walk 2 is an augmented reality sky map app — point your phone at the sky and see star names, constellation art.`,
     category: `app-guides`,
     tags: [`star walk`, `stargazing`, `sky map`, `astronomy`, `augmented reality`],
     readTime: `5 min`,
@@ -514,7 +514,7 @@ The best free resources for checking AQI are AirNow.gov (the official EPA air qu
   {
     slug: `pollen-app-guide`,
     title: `Allergy and Pollen Apps: Track Daily Counts and Know When to Take Medication`,
-    excerpt: `Pollen tracking apps show daily allergen counts by type so you can plan outdoor activities, time medication properly, and manage allergy symptoms more effectively.`,
+    excerpt: `Pollen tracking apps show daily allergen counts by type so you can plan outdoor activities, time medication properly.`,
     category: `health-tech`,
     tags: [`pollen tracker`, `allergy app`, `pollen count`, `seasonal allergies`, `allergy forecast`],
     readTime: `6 min`,
@@ -775,7 +775,7 @@ One feature that sets Komoot apart is its offline navigation. Once you have down
   {
     slug: `gaia-gps-guide`,
     title: `Gaia GPS: Download Topographic Maps for Hiking or Camping Without Cell Service`,
-    excerpt: `Gaia GPS lets you download detailed topographic maps to your phone before a trip so you can navigate backcountry trails and campsites with no cell service needed.`,
+    excerpt: 'Gaia GPS downloads detailed topographic maps to your phone before a trip so you can navigate trails and campsites with no cell service.',
     category: `app-guides`,
     tags: [`gaia gps`, `topographic map`, `offline maps`, `backcountry`, `hiking navigation`],
     readTime: `7 min`,

@@ -709,7 +709,7 @@ Setting up a PIN is especially helpful if you find yourself typing a long passwo
   {
     slug: `iphone-usb-c-port-guide`,
     title: `What You Can Do With the USB-C Port on iPhone 15 and 16`,
-    excerpt: `iPhone 15 and later replaced the Lightning port with USB-C. Learn what this new port can do — from faster charging to connecting accessories you probably already own.`,
+    excerpt: `iPhone 15 and later replaced the Lightning port with USB-C. Learn what this new port can do.`,
     category: `phone-guides`,
     tags: [`iphone`, `usb-c`, `iphone 15`, `iphone 16`, `charging`, `accessories`],
     readTime: `5 min`,

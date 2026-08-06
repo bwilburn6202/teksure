@@ -627,7 +627,7 @@ Parents can use Screen Time to manage a child's phone remotely through Family Sh
   {
     slug: 'review-connected-apps-google-apple',
     title: 'How to See Which Apps Have Access to Your Google or Apple Account',
-    excerpt: `When you sign in to apps with "Sign in with Google" or "Sign in with Apple," those apps get access to your account — here's how to review and remove that access.`,
+    excerpt: `When you sign in to apps with "Sign in with Google" or "Sign in with Apple," those apps get access to your account.`,
     category: 'safety-guides',
     tags: ['connected apps', 'account security', 'google account', 'apple ID', 'third-party apps', 'privacy'],
     readTime: '5 min',

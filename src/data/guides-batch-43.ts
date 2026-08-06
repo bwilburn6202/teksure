@@ -4,7 +4,7 @@ export const guidesBatch43: Guide[] = [
   {
     slug: `iphone-reminders-app-guide`,
     title: `How to Use the Reminders App on iPhone`,
-    excerpt: `The Reminders app on iPhone is a built-in to-do list and task manager. Learn how to create reminders, set due dates, add locations, and organize lists for work and daily life.`,
+    excerpt: `The Reminders app on iPhone is a built-in to-do list and task manager. Learn how to create reminders, set due dates, add locations.`,
     category: `phone-guides`,
     tags: [`reminders`, `iphone`, `to-do list`, `tasks`, `apple`, `productivity`, `organization`],
     readTime: `5 min`,
@@ -52,7 +52,7 @@ Reminders syncs via iCloud, so items added on your iPhone appear on your Mac and
   {
     slug: `microsoft-todo-app-guide`,
     title: `How to Use Microsoft To Do to Manage Your Tasks`,
-    excerpt: `Microsoft To Do is a free task management app that works on iPhone, Android, and Windows. Learn how to set up lists, add tasks, set reminders, and share lists with others.`,
+    excerpt: `Microsoft To Do is a free task management app that works on iPhone, Android, and Windows.`,
     category: `app-guides`,
     tags: [`microsoft to do`, `task manager`, `to-do list`, `productivity`, `reminders`, `windows`],
     readTime: `5 min`,
@@ -296,7 +296,7 @@ Compressing or resizing photos before sending makes them smaller — faster to s
   {
     slug: `add-contact-iphone-guide`,
     title: `How to Add and Manage Contacts on Your iPhone`,
-    excerpt: `Adding contacts, editing their information, and organizing them properly makes calling, texting, and FaceTiming much easier. Here is how to manage contacts on iPhone.`,
+    excerpt: `Adding contacts, editing their information, and organizing them properly makes calling, texting, and FaceTiming much easier.`,
     category: `phone-guides`,
     tags: [`contacts`, `iphone`, `add contact`, `phone book`, `address book`, `icloud contacts`],
     readTime: `4 min`,
@@ -348,7 +348,7 @@ Contacts sync via iCloud by default. Go to Settings → your name → iCloud →
   {
     slug: `set-iphone-ringtone-guide`,
     title: `How to Change Your Ringtone and Alert Sounds on iPhone`,
-    excerpt: `Choosing a ringtone you recognize makes it easier to know when your phone is ringing. This guide shows how to change ringtones, text tones, and other alert sounds on iPhone.`,
+    excerpt: `Choosing a ringtone you recognize makes it easier to know when your phone is ringing.`,
     category: `phone-guides`,
     tags: [`ringtone`, `iphone sounds`, `notification sound`, `alert tone`, `customize phone`, `accessibility`],
     readTime: `4 min`,
@@ -400,7 +400,7 @@ iPhone comes with a large selection of built-in ringtones at no cost. You can al
   {
     slug: `set-iphone-wallpaper`,
     title: `How to Change Your iPhone Wallpaper`,
-    excerpt: `Personalizing your iPhone wallpaper with a photo of family, a favorite landscape, or a simple color makes the phone feel more like yours. Here is how to set and customize it.`,
+    excerpt: `Personalizing your iPhone wallpaper with a photo of family, a favorite landscape, or a simple color makes the phone feel more like yours.`,
     category: `phone-guides`,
     tags: [`wallpaper`, `iphone`, `lock screen`, `home screen`, `personalize`, `photo background`],
     readTime: `4 min`,
@@ -485,7 +485,7 @@ This is a simple setting change that takes about 30 seconds. You can change it b
   {
     slug: `google-search-tips-guide`,
     title: `How to Search Google More Effectively`,
-    excerpt: `Most people only use a fraction of what Google can do. These practical search tips help you find exactly what you are looking for — faster and with less frustration.`,
+    excerpt: `Most people only use a fraction of what Google can do. These practical search tips help you find exactly what you are looking for.`,
     category: `essential-skills`,
     tags: [`google search`, `search tips`, `Google`, `search operators`, `find information`, `internet search`],
     readTime: `5 min`,
@@ -540,7 +540,7 @@ This is a simple setting change that takes about 30 seconds. You can change it b
   {
     slug: `find-downloads-android-guide`,
     title: `How to Find Files You Downloaded on Your Android Phone`,
-    excerpt: `When you download something on your Android phone — a PDF, a photo, a document — it goes to the Downloads folder. Here is how to find it and open what you downloaded.`,
+    excerpt: `When you download something on your Android phone — a PDF, a photo, a document — it goes to the Downloads folder.`,
     category: `phone-guides`,
     tags: [`android`, `downloads folder`, `find files`, `downloaded files`, `file manager`, `documents`],
     readTime: `4 min`,
@@ -593,7 +593,7 @@ Note: If you download a file from an email attachment, it may save to a differen
   {
     slug: `alexa-calling-messaging-guide`,
     title: `How to Call and Message People Using Amazon Alexa`,
-    excerpt: `Amazon Echo devices can make hands-free calls to other Alexa users, drop in on family members, and send voice messages — perfect for staying in touch without picking up a phone.`,
+    excerpt: `Amazon Echo devices can make hands-free calls to other Alexa users, drop in on family members, and send voice messages.`,
     category: `smart-home`,
     tags: [`alexa`, `alexa calling`, `amazon echo`, `drop in`, `voice call`, `hands free`, `family calls`],
     readTime: `5 min`,
@@ -798,7 +798,7 @@ The goal is not to eliminate all notifications. It is to keep the ones that are 
   {
     slug: `block-phone-number-iphone-android`,
     title: `How to Block a Phone Number on iPhone or Android`,
-    excerpt: `Blocking a number stops calls, texts, and FaceTime from that person. They can no longer reach you. Here is how to block numbers on iPhone and Android in a few taps.`,
+    excerpt: `Blocking a number stops calls, texts, and FaceTime from that person. They can no longer reach you.`,
     category: `safety-guides`,
     tags: [`block number`, `iphone`, `android`, `block calls`, `block texts`, `unwanted calls`, `harassment`],
     readTime: `4 min`,
@@ -900,7 +900,7 @@ Filing a report takes about 5 minutes. No immediate personal action results from
   {
     slug: `iphone-weather-app-guide`,
     title: `How to Use the Weather App on iPhone Effectively`,
-    excerpt: `iPhone's built-in Weather app gives forecasts, air quality, wind conditions, precipitation maps, and severe weather alerts. Here is how to get the most out of it.`,
+    excerpt: `iPhone's built-in Weather app gives forecasts, air quality, wind conditions, precipitation maps, and severe weather alerts.`,
     category: `phone-guides`,
     tags: [`weather app`, `iphone`, `weather forecast`, `rain alert`, `severe weather`, `air quality`],
     readTime: `4 min`,

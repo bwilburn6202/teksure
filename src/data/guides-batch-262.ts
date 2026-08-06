@@ -108,7 +108,7 @@ export const guidesBatch262: Guide[] = [
   {
     slug: "vietnamese-american-senior-mental-health-stigma-counseling",
     title: "Vietnamese Seniors and Mental Health Stigma: Finding Culturally-Aware, Vietnamese-Speaking Counselors",
-    excerpt: "Mental health stigma runs deep in many Vietnamese-American families. Here is how to find Vietnamese-speaking counselors and what trauma-informed care looks like.",
+    excerpt: 'Mental health stigma runs deep in many Vietnamese-American families. Here is how to find Vietnamese-speaking counselors and what to expect.',
     category: "tips-tricks",
     tags: ["vietnamese", "mental-health", "seniors", "trauma", "counseling"],
     readTime: "10 min",
@@ -141,7 +141,7 @@ export const guidesBatch262: Guide[] = [
   {
     slug: "vietnamese-senior-diabetic-cooking-pho-com-tam-hot-pot",
     title: "Diabetic-Friendly Vietnamese Cooking for Seniors: Pho, Com Tam, Sweet Rice, and Hot Pot Adjustments",
-    excerpt: "Vietnamese food can fit a diabetic plate. Here is how to adjust pho, com tam, sweet rice, and hot pot for better blood sugar without giving up the flavors of home.",
+    excerpt: 'Vietnamese food can fit a diabetic plate. Here is how to adjust pho, com tam, sweet rice, and hot pot for better blood sugar.',
     category: "tips-tricks",
     tags: ["vietnamese", "diabetes", "seniors", "cooking", "nutrition"],
     readTime: "9 min",

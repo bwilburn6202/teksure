@@ -746,7 +746,7 @@ T-Mobile offers a 15-day in-home trial. So you can set up the service, test the 
   {
     slug: `fiber-internet-guide`,
     title: `What Is Fiber Internet and How to Get It`,
-    excerpt: `Fiber optic internet is the fastest and most reliable home internet available. Here's how it works, who offers it, and how to find out if it's available where you live.`,
+    excerpt: `Fiber optic internet is the fastest and most reliable home internet available. Here's how it works, who offers it.`,
     category: `internet-connectivity`,
     tags: [`fiber internet`, `fiber optic`, `high speed`, `AT&T Fiber`, `Google Fiber`],
     readTime: `7 min`,
@@ -834,7 +834,7 @@ Subscription-based gifts (like a streaming service) should generally not be give
   {
     slug: `refurbished-laptop-guide`,
     title: `How to Buy a Refurbished Laptop Safely and Save Money`,
-    excerpt: `Certified refurbished laptops can save you 30–50% off new prices. Here's how to find a trustworthy seller, what to check before buying, and what to do when it arrives.`,
+    excerpt: `Certified refurbished laptops can save you 30–50% off new prices. Here's how to find a trustworthy seller, what to check before buying.`,
     category: `essential-skills`,
     tags: [`refurbished laptop`, `used laptop`, `save money`, `buying guide`, `certified refurbished`],
     readTime: `7 min`,

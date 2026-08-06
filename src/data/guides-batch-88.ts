@@ -859,7 +859,7 @@ Using shortcuts has a small learning curve — your muscle memory needs to build
   {
     slug: `mac-activity-monitor-guide`,
     title: `Mac Activity Monitor: Find What's Using Your Memory and CPU and Fix Slowdowns`,
-    excerpt: `Activity Monitor shows you what is running on your Mac and how much power each app uses. Learn how to spot and stop programs that are slowing your computer down.`,
+    excerpt: `Activity Monitor shows you what is running on your Mac and how much power each app uses.`,
     category: `mac-guides`,
     tags: [`activity monitor`, `mac performance`, `CPU usage`, `memory usage`, `mac troubleshooting`],
     readTime: `6 min`,

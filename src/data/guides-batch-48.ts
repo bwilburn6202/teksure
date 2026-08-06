@@ -192,7 +192,7 @@ Snapchat also has a safety feature called Snapmap (visible to your friends by de
   {
     slug: `chrome-extensions-guide`,
     title: `How to Add and Use Chrome Extensions`,
-    excerpt: `Chrome extensions add features to your browser — like a password manager, ad blocker, or coupon finder. Here's how to find and install ones that are actually useful.`,
+    excerpt: `Chrome extensions add features to your browser — like a password manager, ad blocker, or coupon finder.`,
     category: `tips-tricks`,
     tags: [`chrome`, `extensions`, `browser`, `add-ons`, `productivity`, `coupon`],
     readTime: `5 min`,

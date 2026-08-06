@@ -41,7 +41,7 @@ export const guidesBatch258: Guide[] = [
   {
     slug: "senior-encore-freelancing-first-time-at-60-upwork-fiverr",
     title: "Freelancing for the First Time at 60+: Upwork, Fiverr, and Finding Real Work",
-    excerpt: "Freelancing pays older Americans for skills they already have. Here is how to set up a profile, find clients, and send a first invoice without getting overwhelmed.",
+    excerpt: "Freelancing pays older Americans for skills they already have. Here is how to set up a profile, find clients.",
     category: "tips-tricks",
     tags: ["freelancing", "upwork", "fiverr", "seniors", "self-employment"],
     readTime: "8 min",
@@ -107,7 +107,7 @@ export const guidesBatch258: Guide[] = [
   {
     slug: "senior-encore-self-employment-social-security-earnings-limit",
     title: "Self-Employment and Social Security: How Earnings Affect Benefits Before and After FRA",
-    excerpt: "Keep working, keep your benefits. Here is the plain-English rulebook on how Social Security treats earnings from a job or business if you are collecting benefits.",
+    excerpt: 'Keep working, keep your benefits. Here is the plain-English rulebook on how Social Security treats earnings while you collect benefits.',
     category: "tips-tricks",
     tags: ["social-security", "self-employment", "earnings-limit", "seniors", "retirement"],
     readTime: "8 min",

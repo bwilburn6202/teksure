@@ -161,7 +161,7 @@ export const guidesBatch268: Guide[] = [
   {
     slug: "senior-memoir-hard-chapters-divorce-military-grief-privacy",
     title: "Writing the Hard Chapters: Divorce, Military Service, Grief, and What to Share or Keep Private",
-    excerpt: "Most lives include chapters that are hard to share. Here is how memoir writers handle divorce, war, addiction, and loss, with rules for protecting people still living.",
+    excerpt: "Most lives include chapters that are hard to share. Here is how memoir writers handle divorce, war, addiction, and loss.",
     category: "tips-tricks",
     tags: ["memoir", "hard-topics", "divorce", "military", "grief", "privacy", "seniors"],
     readTime: "10 min",

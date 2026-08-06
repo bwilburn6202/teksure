@@ -320,7 +320,7 @@ Quick Tip: You can right-click any open app in Task View and choose "Move to" to
   {
     slug: `windows-snap-windows-guide`,
     title: `Windows Snap Layouts: Work on Two Apps Side by Side`,
-    excerpt: `Windows Snap lets you place two or more apps next to each other on the same screen so you can work on them at the same time without constantly switching back and forth.`,
+    excerpt: 'Windows Snap places two or more apps side by side on one screen so you can work on them together without switching back and forth.',
     category: `windows-guides`,
     tags: [`Windows`, `Snap layouts`, `multitasking`, `split screen`, `Windows 11`, `productivity`],
     readTime: `5 min`,
@@ -375,7 +375,7 @@ Quick Tip: Snap works on most Windows 10 and 11 PCs. If you are on a small lapto
   {
     slug: `mac-stage-manager-guide`,
     title: `Mac Stage Manager: Keep Your Open Apps Tidy While You Work`,
-    excerpt: `Stage Manager is a macOS feature that organizes open apps into a sidebar so your main window stays focused and you can switch between tasks without losing track of anything.`,
+    excerpt: 'Stage Manager organizes your open Mac apps into a sidebar so your main window stays focused and switching between tasks is easier.',
     category: `mac-guides`,
     tags: [`Mac`, `Stage Manager`, `macOS`, `multitasking`, `organization`, `Ventura`, `Sonoma`],
     readTime: `6 min`,
@@ -815,7 +815,7 @@ Quick Tip: On Samsung phones, the app drawer is accessed by swiping up on the ho
   {
     slug: `windows-do-not-disturb`,
     title: `Windows Focus Assist and Do Not Disturb: Silence Notifications`,
-    excerpt: `Windows Focus Assist (called Do Not Disturb in Windows 11) lets you mute pop-up notifications so you can concentrate on your work or sleep without interruptions.`,
+    excerpt: 'Windows Do Not Disturb, called Focus Assist in Windows 10, mutes pop-up notifications so you can concentrate or sleep without interruptions.',
     category: `windows-guides`,
     tags: [`Windows`, `Focus Assist`, `Do Not Disturb`, `notifications`, `Windows 11`, `productivity`],
     readTime: `5 min`,
@@ -863,7 +863,7 @@ Quick Tip: Windows 11 automatically turns on Do Not Disturb when you are playing
   {
     slug: `mac-focus-mode-guide`,
     title: `Mac Focus Modes: Block Distracting Notifications During Work or Sleep`,
-    excerpt: `Mac Focus modes let you create a Work or Personal focus that blocks certain notifications automatically at set times, so your concentration or sleep is protected.`,
+    excerpt: `Mac Focus modes let you create a Work or Personal focus that blocks certain notifications automatically at set times.`,
     category: `mac-guides`,
     tags: [`Mac`, `Focus mode`, `Do Not Disturb`, `notifications`, `macOS`, `productivity`, `Ventura`],
     readTime: `6 min`,
@@ -974,7 +974,7 @@ Quick Tip: Most modern routers — especially those from Xfinity, Spectrum, AT&T
   {
     slug: `wifi-extender-guide`,
     title: `Wi-Fi Range Extenders: When to Use One, Where to Place It, and How to Set It Up`,
-    excerpt: `A Wi-Fi range extender boosts your wireless signal into rooms where the connection is weak or drops out. Here is when they help, how to position one, and how to get it running.`,
+    excerpt: `A Wi-Fi range extender boosts your wireless signal into rooms where the connection is weak or drops out.`,
     category: `internet-connectivity`,
     tags: [`Wi-Fi`, `range extender`, `wireless`, `router`, `signal`, `home network`, `setup`],
     readTime: `7 min`,
@@ -1029,7 +1029,7 @@ Quick Tip: TP-Link, Netgear, and Belkin all make reliable extenders in the $30�
   {
     slug: `wifi-analyzer-guide`,
     title: `Wi-Fi Analyzer Apps: Find the Strongest Spot and the Best Channel`,
-    excerpt: `A Wi-Fi analyzer app shows you signal strength throughout your home and which Wi-Fi channels are congested — helping you place your router and extender in the best spots.`,
+    excerpt: `A Wi-Fi analyzer app shows you signal strength throughout your home and which Wi-Fi channels are congested.`,
     category: `internet-connectivity`,
     tags: [`Wi-Fi`, `Wi-Fi analyzer`, `channel`, `signal strength`, `network`, `router`, `troubleshooting`],
     readTime: `6 min`,

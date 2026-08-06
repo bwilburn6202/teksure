@@ -48,7 +48,7 @@ Note that conference calls using the Phone app are not encrypted like FaceTime c
   {
     slug: `android-conference-call-guide`,
     title: `How to Make a Conference Call on Android`,
-    excerpt: `Android phones can merge two calls into one three-way conversation. Learn how to add a second caller, merge the calls, and manage a conference call on any Android device.`,
+    excerpt: `Android phones can merge two calls into one three-way conversation. Learn how to add a second caller, merge the calls.`,
     category: `phone-guides`,
     tags: [`android`, `conference call`, `merge calls`, `three-way call`, `phone`],
     readTime: `4 min`,
@@ -91,7 +91,7 @@ Samsung phones have a slightly different interface where the merge option may ap
   {
     slug: `google-forms-beginners-guide`,
     title: `How to Create a Survey or RSVP Form Using Google Forms`,
-    excerpt: `Google Forms is a free tool for creating surveys, RSVPs, sign-up sheets, and questionnaires. Anyone with a link can fill it out — no Google account required for respondents.`,
+    excerpt: `Google Forms is a free tool for creating surveys, RSVPs, sign-up sheets, and questionnaires.`,
     category: `essential-skills`,
     tags: [`google forms`, `survey`, `rsvp`, `form`, `free`, `questionnaire`, `beginners`],
     readTime: `6 min`,
@@ -182,7 +182,7 @@ This is one of the most powerful inbox management features in Gmail and requires
   {
     slug: `google-pixel-phone-tips`,
     title: `10 Google Pixel Phone Features You Should Be Using`,
-    excerpt: `Pixel phones have unique features you will not find on other Android phones: Call Screen, Magic Eraser, Real Tone, Now Playing, and more. Here is how to use them.`,
+    excerpt: `Pixel phones have unique features you will not find on other Android phones: Call Screen, Magic Eraser, Real Tone, Now Playing, and more.`,
     category: `phone-guides`,
     tags: [`google pixel`, `android`, `pixel tips`, `call screen`, `magic eraser`, `features`],
     readTime: `6 min`,
@@ -229,7 +229,7 @@ These are just a few of the features that make Pixel phones uniquely useful.`,
   {
     slug: `iphone-portrait-mode-guide`,
     title: `How to Use iPhone Portrait Mode for Beautiful Blurry-Background Photos`,
-    excerpt: `Portrait Mode blurs the background of photos to make your subject stand out — the look of professional photography on your iPhone. Here is how to use it and adjust the blur.`,
+    excerpt: `Portrait Mode blurs the background of photos to make your subject stand out — the look of professional photography on your iPhone.`,
     category: `tips-tricks`,
     tags: [`iphone`, `portrait mode`, `camera`, `photo`, `blur`, `bokeh`, `photography`],
     readTime: `5 min`,
@@ -316,7 +316,7 @@ For outdoor night scenes like city streets, restaurant lighting, or holiday ligh
   {
     slug: `iphone-camera-timer-burst-guide`,
     title: `How to Use the iPhone Camera Timer and Burst Mode`,
-    excerpt: `The iPhone camera's self-timer lets you be in your own photos, and Burst Mode takes dozens of shots per second to capture the perfect moment. Learn how to use both.`,
+    excerpt: `The iPhone camera's self-timer lets you be in your own photos, and Burst Mode takes dozens of shots per second to capture the perfect moment.`,
     category: `tips-tricks`,
     tags: [`iphone`, `camera`, `timer`, `burst mode`, `self-timer`, `action shots`],
     readTime: `4 min`,
@@ -490,7 +490,7 @@ For apps, Spotlight is faster than searching your home screen pages. Type the fi
   {
     slug: `windows-storage-sense-guide`,
     title: `How to Use Windows Storage Sense to Automatically Free Up Disk Space`,
-    excerpt: `Storage Sense is a Windows feature that automatically deletes temporary files, empties the Recycle Bin, and clears old downloads to keep your PC from filling up.`,
+    excerpt: `Storage Sense is a Windows feature that automatically deletes temporary files, empties the Recycle Bin.`,
     category: `windows-guides`,
     tags: [`windows`, `storage sense`, `disk space`, `free up space`, `pc maintenance`, `storage`],
     readTime: `4 min`,
@@ -534,7 +534,7 @@ On computers with a small solid-state drive (128GB or 256GB), Storage Sense can 
   {
     slug: `google-smart-lock-android`,
     title: `How to Use Google Smart Lock to Stay Signed In Safely`,
-    excerpt: `Google Smart Lock keeps your Android phone unlocked in trusted places — like at home — and can remember passwords for apps and websites so you sign in automatically.`,
+    excerpt: 'Google Smart Lock keeps your Android phone unlocked in trusted places such as home, and remembers passwords so you sign in automatically.',
     category: `tips-tricks`,
     tags: [`android`, `smart lock`, `trusted places`, `google`, `convenience`, `security`],
     readTime: `4 min`,
@@ -611,7 +611,7 @@ The flashlight uses the camera flash LED, which runs warm during extended use. Y
   {
     slug: `schedule-text-message-iphone`,
     title: `How to Schedule a Text Message to Send Later on iPhone`,
-    excerpt: `Want to send a birthday text at midnight, a morning check-in without waking yourself up, or a reminder without forgetting? Learn how to schedule texts on iPhone.`,
+    excerpt: `Want to send a birthday text at midnight, a morning check-in without waking yourself up, or a reminder without forgetting?`,
     category: `tips-tricks`,
     tags: [`iphone`, `text message`, `schedule`, `imessage`, `send later`, `ios 18`],
     readTime: `4 min`,
@@ -654,7 +654,7 @@ You can also edit or cancel a scheduled message before it sends — great if pla
   {
     slug: `iphone-volume-settings-guide`,
     title: `Understanding iPhone Volume Controls: Ringtone, Media, and Alarm`,
-    excerpt: `iPhone has separate volume settings for ringtones, media (music and video), and alarms — and they do not all adjust with the same buttons. Here is how to control each one.`,
+    excerpt: `iPhone has separate volume settings for ringtones, media (music and video), and alarms — and they do not all adjust with the same buttons.`,
     category: `phone-guides`,
     tags: [`iphone`, `volume`, `ringtone`, `alarm`, `media`, `sound settings`],
     readTime: `4 min`,
@@ -698,7 +698,7 @@ Alarm volume is separate and set through the Clock app, not through the side but
   {
     slug: `mac-quicklook-guide`,
     title: `How to Preview Files on Mac Without Opening Them (Quick Look)`,
-    excerpt: `Mac's Quick Look feature lets you preview photos, PDFs, videos, and documents instantly by pressing the Space bar — without opening any app. Here is how it works.`,
+    excerpt: `Mac's Quick Look feature lets you preview photos, PDFs, videos, and documents instantly by pressing the Space bar — without opening any app.`,
     category: `mac-guides`,
     tags: [`mac`, `quick look`, `preview`, `finder`, `files`, `keyboard shortcut`],
     readTime: `3 min`,
@@ -786,7 +786,7 @@ After replacement, your iPhone charges faster, lasts longer, and unexpected shut
   {
     slug: `android-auto-brightness-guide`,
     title: `How to Manage Screen Brightness on Android (Auto and Manual)`,
-    excerpt: `Android can adjust your screen brightness automatically based on light conditions — saving battery and protecting your eyes. Learn how to control it and when to adjust manually.`,
+    excerpt: `Android can adjust your screen brightness automatically based on light conditions — saving battery and protecting your eyes.`,
     category: `phone-guides`,
     tags: [`android`, `brightness`, `adaptive brightness`, `screen`, `battery`, `eyes`],
     readTime: `3 min`,

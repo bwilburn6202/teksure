@@ -155,7 +155,7 @@ export const guidesBatch20: Guide[] = [
   {
     slug: 'google-wallet-setup',
     title: 'How to Set Up and Use Google Wallet on Android',
-    excerpt: 'Google Wallet lets you store debit cards, credit cards, loyalty cards, and passes on your Android phone so you can pay and check in without digging through your purse or wallet.',
+    excerpt: 'Google Wallet stores debit cards, credit cards, loyalty cards, and passes on your Android phone so you can pay without digging through your wallet.',
     category: 'financial-tech',
     tags: ['google wallet', 'android', 'tap to pay', 'digital wallet', 'NFC'],
     readTime: '5 min',
@@ -648,7 +648,7 @@ export const guidesBatch20: Guide[] = [
   {
     slug: 'icloud-photos-explained',
     title: 'How iCloud Photos Works and How to Manage Your Storage',
-    excerpt: `iCloud Photos keeps all your iPhone photos backed up and synced across your Apple devices — but it can fill up your iCloud storage. Here's how it works and how to manage it.`,
+    excerpt: `iCloud Photos keeps all your iPhone photos backed up and synced across your Apple devices — but it can fill up your iCloud storage.`,
     category: 'phone-guides',
     tags: ['icloud photos', 'iphone', 'photo backup', 'icloud storage', 'apple'],
     readTime: '6 min',

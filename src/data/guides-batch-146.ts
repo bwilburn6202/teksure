@@ -7,7 +7,7 @@ export const guidesBatch146: Guide[] = [
   {
     slug: 'how-to-set-up-emergency-sos-iphone-android-2026',
     title: 'How to Set Up Emergency SOS on iPhone and Android',
-    excerpt: 'Emergency SOS lets your phone call 911 and alert your contacts automatically. Learn how to set it up on iPhone and Android — especially important if you live alone.',
+    excerpt: 'Emergency SOS lets your phone call 911 and alert your contacts automatically. Learn how to set it up on iPhone and Android.',
     category: 'safety-guides',
     tags: ['emergency sos', 'medical id', 'emergency contacts', '911', 'iphone safety', 'android safety', 'seniors living alone'],
     readTime: '7 min',
@@ -73,7 +73,7 @@ If you have an Apple Watch, it can also detect hard falls and offer to call emer
   {
     slug: 'how-to-use-aarp-website-and-app-2026',
     title: 'How to Get the Most from Your AARP Membership',
-    excerpt: 'AARP membership costs about $16 a year and unlocks discounts, free tax help, fraud alerts, and much more. Here is a plain-language walkthrough of the website and app.',
+    excerpt: 'AARP membership costs about $16 a year and unlocks discounts, free tax help, fraud alerts, and much more.',
     category: 'government-civic',
     tags: ['aarp', 'aarp membership', 'senior discounts', 'aarp tax aide', 'fraud watch', 'aarp app', 'aarp now'],
     readTime: '8 min',
@@ -209,7 +209,7 @@ Sometimes the problem is not your internet plan. It is your router (the box that
   {
     slug: 'how-to-pair-bluetooth-hearing-aids-iphone-android-2026',
     title: 'How to Pair Bluetooth Hearing Aids to Your iPhone or Android Phone',
-    excerpt: 'Stream phone calls and music directly to your Bluetooth hearing aids. This guide walks you through pairing on iPhone and Android, adjusting volume, and fixing common problems.',
+    excerpt: 'Stream phone calls and music directly to your Bluetooth hearing aids. This guide walks you through pairing on iPhone and Android, adjusting volume.',
     category: 'health-tech',
     tags: ['hearing aids', 'bluetooth hearing aids', 'made for iphone', 'mfi hearing aids', 'asha', 'accessibility', 'hearing loss', 'audiologist'],
     readTime: '8 min',

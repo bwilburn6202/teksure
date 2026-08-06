@@ -462,7 +462,7 @@ In-person Senior Planet Centers are located in New York City, Los Angeles, Denve
   {
     slug: 'google-assistant-phone-tips',
     title: 'How to Use Google Assistant on Android for Hands-Free Help',
-    excerpt: 'Google Assistant is built into most Android phones. Say "Hey Google" to ask questions, send texts, make calls, set reminders, and control your phone — all by voice.',
+    excerpt: 'Google Assistant is built into most Android phones. Say "Hey Google" to ask questions, send texts, make calls, set reminders, and control your phone.',
     category: 'phone-guides',
     tags: ['Google Assistant', 'Android', 'voice commands', 'hands-free', 'tips'],
     readTime: '5 min',

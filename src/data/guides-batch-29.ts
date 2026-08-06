@@ -50,7 +50,7 @@ When the battery degrades a lot, most Android phones can have the battery replac
   {
     slug: 'slow-phone-fix-guide',
     title: 'Why Is My Phone So Slow? How to Speed It Up',
-    excerpt: `A slow phone is usually caused by a few fixable things — storage that's nearly full, too many background apps, or an outdated operating system. Here's how to fix each one.`,
+    excerpt: `A slow phone is usually caused by a few fixable things — storage that's nearly full, too many background apps, or an outdated operating system.`,
     category: 'essential-skills',
     tags: ['slow phone', 'phone performance', 'speed up phone', 'iPhone', 'Android'],
     readTime: '6 min',

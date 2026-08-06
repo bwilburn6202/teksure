@@ -54,7 +54,7 @@ export const guidesBatch229: Guide[] = [
   {
     slug: "how-to-get-free-phone-lifeline",
     title: "How to Get a Free Phone Through Lifeline",
-    excerpt: "Plain-English guide for low-income seniors and adults with disabilities on applying for the federal Lifeline program, which pays for monthly phone or internet service.",
+    excerpt: "Plain-English guide for low-income seniors and adults with disabilities on applying for the federal Lifeline program.",
     category: "government-civic",
     tags: ["lifeline", "free phone", "low income", "disability", "seniors", "fcc", "phone service"],
     readTime: "8 min",
@@ -154,7 +154,7 @@ export const guidesBatch229: Guide[] = [
   {
     slug: "how-to-set-up-live-captions-android",
     title: "How to Set Up Live Captions on Android",
-    excerpt: "Plain-English Android guide for seniors with hearing loss on turning on Live Caption, choosing which sounds get captioned, and reading captions during calls and videos.",
+    excerpt: "Plain-English Android guide for seniors with hearing loss on turning on Live Caption, choosing which sounds get captioned.",
     category: "phone-guides",
     tags: ["live caption", "android", "hearing loss", "accessibility", "deaf", "captions", "seniors"],
     readTime: "8 min",
@@ -204,7 +204,7 @@ export const guidesBatch229: Guide[] = [
   {
     slug: "how-to-apply-temporary-disability-placard",
     title: "How to Apply for a Temporary Disability Placard",
-    excerpt: "Plain-English guide for seniors recovering from surgery or injury on getting a temporary disability parking permit, with doctor forms, DMV steps, and renewal tips.",
+    excerpt: "Plain-English guide for seniors recovering from surgery or injury on getting a temporary disability parking permit, with doctor forms, DMV steps.",
     category: "government-civic",
     tags: ["disability placard", "temporary", "parking", "dmv", "seniors", "mobility", "recovery"],
     readTime: "8 min",

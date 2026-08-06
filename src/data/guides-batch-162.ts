@@ -304,7 +304,7 @@ These settings apply to any app on your iPhone that supports Apple's caption sys
   {
     slug: 'how-to-spot-a-phishing-email-or-text-2026',
     title: 'How to Spot a Phishing Email or Text Message',
-    excerpt: 'Phishing messages look like they come from banks, Medicare, or the IRS — but they are fakes designed to steal your information. Learn the 7 warning signs to look for.',
+    excerpt: 'Phishing messages look like they come from banks, Medicare, or the IRS — but they are fakes designed to steal your information.',
     category: 'safety-guides',
     tags: [
       'phishing',

@@ -109,7 +109,7 @@ Before buying a new phone or going to the repair shop, spend 10 minutes on the s
   {
     slug: 'wifi-unstable-connection-fix-2026',
     title: 'WiFi Keeps Dropping — How to Fix an Unstable Connection',
-    excerpt: "Your internet works fine one minute and disappears the next. This guide explains why WiFi drops and gives you step-by-step fixes to make your connection more stable.",
+    excerpt: 'Your internet works one minute and disappears the next. This guide explains why Wi-Fi drops and gives step-by-step fixes for a steadier connection.',
     category: 'troubleshooting',
     tags: ['wifi', 'internet', 'router', 'connection', 'network'],
     readTime: '7 min',
@@ -159,7 +159,7 @@ This guide covers fixes in order from most likely to least likely. Work through 
   {
     slug: 'cant-send-email-fix',
     title: "Can't Send or Receive Email — What to Do",
-    excerpt: "Email that suddenly stops working is usually caused by one of a handful of fixable problems. This guide covers the most common ones for Gmail, Yahoo, and Outlook users.",
+    excerpt: "Email that suddenly stops working is usually caused by one of a handful of fixable problems.",
     category: 'troubleshooting',
     tags: ['email', 'gmail', 'outlook', 'yahoo', 'troubleshooting'],
     readTime: '6 min',
@@ -298,7 +298,7 @@ The forced restart process is different depending on your phone model. The steps
   {
     slug: 'forgot-email-password-recovery',
     title: 'Forgot Your Email Password — Step-by-Step Recovery',
-    excerpt: "Locked out of your email account? This guide walks you through recovering access to Gmail, Yahoo, and Outlook accounts, even if you've forgotten your password completely.",
+    excerpt: "Locked out of your email account? This guide walks you through recovering access to Gmail, Yahoo, and Outlook accounts.",
     category: 'troubleshooting',
     tags: ['password', 'email', 'account recovery', 'gmail', 'outlook'],
     readTime: '7 min',

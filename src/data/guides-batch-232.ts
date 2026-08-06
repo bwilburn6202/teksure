@@ -139,7 +139,7 @@ export const guidesBatch232: Guide[] = [
   {
     slug: "how-to-remove-ex-spouse-from-accounts",
     title: "How to Remove an Ex-Spouse From Your Accounts",
-    excerpt: "Comprehensive plain-English guide for older adults on removing an ex-spouse from bank accounts, credit cards, insurance, deeds, and digital accounts after a divorce.",
+    excerpt: "Comprehensive plain-English guide for older adults on removing an ex-spouse from bank accounts, credit cards, insurance, deeds.",
     category: "financial-tech",
     tags: ["divorce", "bank accounts", "credit cards", "beneficiary", "seniors", "gray divorce", "financial"],
     readTime: "11 min",

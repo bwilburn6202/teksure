@@ -8,7 +8,7 @@ export const guidesBatch159: Guide[] = [
   {
     slug: 'how-to-set-up-bank-text-alerts-for-fraud-protection-2026',
     title: 'How to Set Up Bank Text and Email Alerts to Catch Fraud Fast',
-    excerpt: 'Turn on transaction alerts from your bank so you are notified within minutes of every purchase, ATM withdrawal, or suspicious login — before fraud goes unnoticed.',
+    excerpt: 'Turn on transaction alerts from your bank so you are notified within minutes of every purchase, ATM withdrawal, or suspicious login.',
     category: 'online-banking',
     tags: [
       'bank alerts',

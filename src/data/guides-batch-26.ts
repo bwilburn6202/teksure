@@ -142,7 +142,7 @@ For families spread across different states or countries, Discord can serve as a
   {
     slug: 'reddit-basics-guide',
     title: 'What Is Reddit and How to Find Helpful Communities',
-    excerpt: `Reddit is one of the largest websites in the world — a collection of thousands of communities where people share advice, news, and discussions. Here's how to use it.`,
+    excerpt: `Reddit is one of the largest websites in the world — a collection of thousands of communities where people share advice, news, and discussions.`,
     category: 'essential-skills',
     tags: ['Reddit', 'community', 'forums', 'information', 'tips'],
     readTime: '5 min',
@@ -469,7 +469,7 @@ YouTube does not currently offer an official "disable all Shorts" option in the 
   {
     slug: 'manage-subscriptions-iphone',
     title: 'How to Review and Cancel App Subscriptions on iPhone',
-    excerpt: `Subscription charges can add up. Your iPhone keeps a master list of every app subscription you're paying for. Here's how to find them and cancel any you don't need.`,
+    excerpt: `Subscription charges can add up. Your iPhone keeps a master list of every app subscription you're paying for.`,
     category: 'phone-guides',
     tags: ['iPhone', 'subscriptions', 'cancel', 'App Store', 'money saving'],
     readTime: '4 min',
@@ -755,7 +755,7 @@ Amazon also offers a discounted Prime membership for customers who receive gover
   {
     slug: 'iphone-crash-detection',
     title: 'How iPhone Crash Detection Works and How to Set It Up',
-    excerpt: `iPhone 14 and later can detect a car crash and automatically call 911 if you are unresponsive. Here's what it does, how to confirm it's on, and how to avoid false alerts.`,
+    excerpt: `iPhone 14 and later can detect a car crash and automatically call 911 if you are unresponsive.`,
     category: 'safety-guides',
     tags: ['iPhone', 'crash detection', 'emergency SOS', 'safety', 'iPhone 14'],
     readTime: '4 min',

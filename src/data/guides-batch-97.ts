@@ -124,7 +124,7 @@ The Amazon Key for Garage integration is notable. It allows Amazon drivers to op
   {
     slug: `nest-protect-smoke-detector`,
     title: `Installing Nest Protect Smoke and CO Detector`,
-    excerpt: `Install Google's Nest Protect so you get voice pre-alerts before the siren screams and phone notifications if smoke or carbon monoxide is detected while you're away.`,
+    excerpt: 'Install Google\'s Nest Protect for spoken warnings before the siren sounds and phone alerts if smoke or carbon monoxide is found while you are out.',
     category: `smart-home`,
     tags: [`Nest Protect`, `smoke detector`, `CO detector`, `Google Nest`],
     readTime: `8 min`,
@@ -982,7 +982,7 @@ Once you've done your physical search, it's time to contact the carrier and the 
   {
     slug: `fake-customer-service-numbers`,
     title: `How to Spot Fake Customer Service Numbers Online`,
-    excerpt: `Scammers pay to put fake phone numbers at the top of search results. Learn how to find the real customer service number for any company — and avoid a costly mistake.`,
+    excerpt: `Scammers pay to put fake phone numbers at the top of search results. Learn how to find the real customer service number for any company.`,
     category: `safety-guides`,
     tags: [`scams`, `customer service`, `phone scams`, `online safety`, `fraud`],
     readTime: `6 min`,

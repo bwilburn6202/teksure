@@ -364,7 +364,7 @@ The free plan is a reasonable starting point to see whether podcasting is right 
   {
     slug: `procreate-beginners`,
     title: `Procreate for iPad: Start Drawing and Painting Digitally — A Beginner's Guide`,
-    excerpt: `Procreate is a powerful drawing and painting app for iPad that feels like real art tools, with layers, brushes, and a canvas that responds to Apple Pencil pressure.`,
+    excerpt: `Procreate is a powerful drawing and painting app for iPad that feels like real art tools, with layers, brushes.`,
     category: `app-guides`,
     tags: [`procreate`, `digital art`, `ipad drawing`, `apple pencil`, `illustration`],
     readTime: `8 min`,
@@ -454,7 +454,7 @@ The app is available at sketchbook.com and through the App Store, Google Play, a
   {
     slug: `ibis-paint-guide`,
     title: `ibis Paint X: Popular Illustration App for Digital Art on Your iPhone or Android`,
-    excerpt: `ibis Paint X offers professional drawing tools, thousands of brushes, and a large tutorial community — free on iPhone and Android with optional in-app purchases.`,
+    excerpt: `ibis Paint X offers professional drawing tools, thousands of brushes, and a large tutorial community.`,
     category: `app-guides`,
     tags: [`ibis paint`, `ibis paint x`, `digital art`, `illustration app`, `drawing app`],
     readTime: `7 min`,
@@ -808,7 +808,7 @@ Start at canva.com/video-editor or use the search bar inside your Canva account 
   {
     slug: `luma-fusion-guide`,
     title: `LumaFusion: Professional-Grade Video Editing on Your iPad`,
-    excerpt: `LumaFusion gives iPad users a full multi-track video editor with color grading, audio mixing, and keyframe animation — used by journalists and filmmakers worldwide.`,
+    excerpt: `LumaFusion gives iPad users a full multi-track video editor with color grading, audio mixing, and keyframe animation.`,
     category: `app-guides`,
     tags: [`lumafusion`, `ipad video editing`, `video editor`, `mobile filmmaking`, `professional video`],
     readTime: `8 min`,

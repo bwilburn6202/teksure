@@ -440,7 +440,7 @@ Click on any claim to see the full details: provider name, date of service, what
   {
     slug: 'how-to-sign-up-for-usps-informed-delivery-2026',
     title: 'How to Sign Up for USPS Informed Delivery',
-    excerpt: 'Get a free daily email showing photos of your incoming mail before it arrives — so you always know when a check, prescription, or important document is on the way.',
+    excerpt: 'Get a free daily email showing photos of your incoming mail before it arrives — so you always know when a check, prescription.',
     category: 'how-to',
     tags: [
       'USPS Informed Delivery',

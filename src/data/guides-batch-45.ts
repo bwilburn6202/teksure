@@ -4,7 +4,7 @@ export const guidesBatch45: Guide[] = [
   {
     slug: `erase-iphone-before-selling`,
     title: `How to Erase Your iPhone Before Selling or Giving It Away`,
-    excerpt: `Before you hand off your old iPhone, wipe it completely so the new owner cannot access your photos, passwords, or accounts. This guide walks you through every step.`,
+    excerpt: `Before you hand off your old iPhone, wipe it completely so the new owner cannot access your photos, passwords, or accounts.`,
     category: `phone-guides`,
     tags: [`iphone`, `erase`, `sell phone`, `factory reset`, `privacy`, `apple id`],
     readTime: `5 min`,
@@ -48,7 +48,7 @@ This process takes about 10–15 minutes total. The actual erase can take anywhe
   {
     slug: `erase-android-before-selling`,
     title: `How to Factory Reset an Android Phone Before Selling`,
-    excerpt: `A factory reset erases your personal data from an Android phone before you sell it or pass it on. Here is how to back up your data first and then wipe the device safely.`,
+    excerpt: `A factory reset erases your personal data from an Android phone before you sell it or pass it on.`,
     category: `phone-guides`,
     tags: [`android`, `factory reset`, `erase`, `sell phone`, `privacy`, `google account`],
     readTime: `5 min`,
@@ -179,7 +179,7 @@ For best results, hold the phone steadily and use Measure in good lighting. The 
   {
     slug: `microsoft-edge-pdf-viewer`,
     title: `How to Open and Read PDF Files Using Microsoft Edge`,
-    excerpt: `Windows includes Microsoft Edge, which opens PDF files for free — no Acrobat needed. You can read, zoom in, highlight, and add notes without installing any extra software.`,
+    excerpt: `Windows includes Microsoft Edge, which opens PDF files for free — no Acrobat needed.`,
     category: `windows-guides`,
     tags: [`pdf`, `microsoft edge`, `windows`, `read pdf`, `free`, `documents`],
     readTime: `4 min`,
@@ -222,7 +222,7 @@ PDFs saved to your computer open directly in Edge — no internet connection nee
   {
     slug: `iphone-haptic-touch-guide`,
     title: `iPhone Long-Press Shortcuts: How to Use Haptic Touch`,
-    excerpt: `Press and hold on apps, text, links, and photos on your iPhone to reveal hidden shortcuts and options — a feature called Haptic Touch that saves you time every day.`,
+    excerpt: `Press and hold on apps, text, links, and photos on your iPhone to reveal hidden shortcuts and options.`,
     category: `tips-tricks`,
     tags: [`iphone`, `haptic touch`, `long press`, `shortcuts`, `gestures`, `ios`],
     readTime: `4 min`,
@@ -355,7 +355,7 @@ You can add videos to a playlist from anywhere — the YouTube search results, a
   {
     slug: `youtube-watch-later-guide`,
     title: `How to Use YouTube's Watch Later List`,
-    excerpt: `YouTube's Watch Later feature saves videos to a private list you can come back to whenever you have time. Here is how to add videos and watch your list across devices.`,
+    excerpt: `YouTube's Watch Later feature saves videos to a private list you can come back to whenever you have time.`,
     category: `entertainment`,
     tags: [`youtube`, `watch later`, `save video`, `queue`, `library`],
     readTime: `3 min`,
@@ -398,7 +398,7 @@ You can add any video to Watch Later — whether you found it in search results,
   {
     slug: `youtube-offline-premium-downloads`,
     title: `How to Download YouTube Videos for Offline Viewing`,
-    excerpt: `YouTube Premium lets you download videos and playlists to watch without an internet connection — great for airplane trips, commutes, or anywhere with spotty Wi-Fi.`,
+    excerpt: `YouTube Premium lets you download videos and playlists to watch without an internet connection — great for airplane trips, commutes.`,
     category: `entertainment`,
     tags: [`youtube`, `offline`, `download`, `youtube premium`, `no internet`, `travel`],
     readTime: `4 min`,
@@ -442,7 +442,7 @@ For Premium subscribers, downloads work on up to 3 devices at once. Your downloa
   {
     slug: `apple-id-trusted-devices-guide`,
     title: `How to Manage Trusted Devices on Your Apple ID`,
-    excerpt: `Your Apple ID tracks which devices are linked to your account. Learn how to see all connected devices, sign out of ones you no longer use, and remove old phones and computers.`,
+    excerpt: `Your Apple ID tracks which devices are linked to your account. Learn how to see all connected devices, sign out of ones you no longer use.`,
     category: `safety-guides`,
     tags: [`apple id`, `trusted devices`, `security`, `iphone`, `icloud`, `account`],
     readTime: `4 min`,
@@ -614,7 +614,7 @@ Offline maps expire after 30 days if you have not updated them. Apple Maps autom
   {
     slug: `iphone-low-power-mode-guide`,
     title: `How iPhone Low Power Mode Works and When to Use It`,
-    excerpt: `Low Power Mode stretches your iPhone's remaining battery life when you are running low. Here is exactly what it turns off, what it keeps working, and how to turn it on.`,
+    excerpt: `Low Power Mode stretches your iPhone's remaining battery life when you are running low.`,
     category: `phone-guides`,
     tags: [`iphone`, `battery`, `low power mode`, `battery life`, `ios`, `tips`],
     readTime: `4 min`,
@@ -658,7 +658,7 @@ Low Power Mode turns off automatically once you charge your phone back to 80% or
   {
     slug: `android-battery-saver-guide`,
     title: `How to Use Battery Saver Mode on Android to Extend Battery Life`,
-    excerpt: `Android's Battery Saver mode reduces background activity when you are running low on battery. Learn how to turn it on, what it affects, and how to schedule it automatically.`,
+    excerpt: `Android's Battery Saver mode reduces background activity when you are running low on battery.`,
     category: `phone-guides`,
     tags: [`android`, `battery saver`, `battery life`, `power saving`, `tips`],
     readTime: `4 min`,
@@ -702,7 +702,7 @@ Different Android phone brands call this feature slightly different things. Sams
   {
     slug: `safari-reader-mode-guide`,
     title: `How to Use Safari Reader Mode for Easier Web Browsing`,
-    excerpt: `Safari's Reader Mode strips away ads, pop-ups, and distractions from any article, leaving just the text and images. Great for news, recipes, or anything with a cluttered design.`,
+    excerpt: `Safari's Reader Mode strips away ads, pop-ups, and distractions from any article, leaving just the text and images.`,
     category: `tips-tricks`,
     tags: [`safari`, `reader mode`, `iphone`, `ipad`, `mac`, `accessibility`, `reading`],
     readTime: `4 min`,
@@ -833,7 +833,7 @@ If you always want captions on, set them at the TV level — that way they apply
   {
     slug: `iphone-emergency-bypass-contact`,
     title: `How to Set a Contact to Ring Through Do Not Disturb on iPhone`,
-    excerpt: `Emergency Bypass lets calls and texts from specific people ring even when Do Not Disturb is on. Set it up for family members so they can always reach you in a real emergency.`,
+    excerpt: `Emergency Bypass lets calls and texts from specific people ring even when Do Not Disturb is on.`,
     category: `phone-guides`,
     tags: [`iphone`, `do not disturb`, `emergency bypass`, `contacts`, `notifications`, `focus`],
     readTime: `4 min`,

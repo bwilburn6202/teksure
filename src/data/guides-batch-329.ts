@@ -53,7 +53,7 @@ The safest response is to never tap the link. Real toll agencies do not send pay
   {
     slug: 'set-up-medication-reminders-iphone-android-2026',
     title: 'How to Set Up Medication Reminders on Your iPhone or Android',
-    excerpt: 'Forgetting a dose or accidentally doubling up is one of the most common medication mistakes. Your phone can remind you every time, for free, without any extra app.',
+    excerpt: 'Forgetting a dose or accidentally doubling up is one of the most common medication mistakes.',
     category: 'health-tech',
     tags: ['medication', 'reminders', 'health', 'alarms', 'seniors', 'iphone', 'android'],
     readTime: '6 min',
@@ -100,7 +100,7 @@ This guide covers the iPhone Medication feature first, then the Android alarm me
   {
     slug: 'turn-on-live-captions-phone-calls',
     title: 'How to Turn On Live Captions for Phone Calls (iPhone and Android)',
-    excerpt: 'Live Captions show a real-time text transcript of what the other person is saying during a phone call, right on your screen. Great for noisy environments or hearing difficulty.',
+    excerpt: 'Live Captions show a real-time text transcript of what the other person is saying during a phone call, right on your screen.',
     category: 'health-tech',
     tags: ['live captions', 'accessibility', 'hearing', 'phone calls', 'iphone', 'android'],
     readTime: '5 min',
@@ -143,7 +143,7 @@ The caption text stays completely private and is not sent anywhere or saved by d
   {
     slug: 'freeze-credit-all-three-bureaus',
     title: 'How to Freeze Your Credit at All Three Bureaus to Prevent Identity Theft',
-    excerpt: 'A credit freeze is a free, powerful way to stop scammers from opening new accounts in your name. Here is how to freeze your credit at Equifax, Experian, and TransUnion.',
+    excerpt: 'A credit freeze is a free, powerful way to stop scammers from opening new accounts in your name.',
     category: 'financial-tech',
     tags: ['credit freeze', 'identity theft', 'fraud', 'equifax', 'experian', 'transunion'],
     readTime: '8 min',

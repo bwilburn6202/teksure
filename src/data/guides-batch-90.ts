@@ -613,7 +613,7 @@ HomeLight also offers a Simple Sale feature (separate from agent matching) where
   {
     slug: `paprika-recipe-manager`,
     title: `Organize All Your Recipes in One Place with Paprika`,
-    excerpt: `Paprika is a recipe manager app that saves recipes from any website, builds your weekly meal plan, and automatically creates your grocery list — all in one place.`,
+    excerpt: `Paprika is a recipe manager app that saves recipes from any website, builds your weekly meal plan, and automatically creates your grocery list.`,
     category: `app-guides`,
     tags: [`Paprika`, `recipe app`, `meal planning`, `cooking`, `grocery list`],
     readTime: `6 min`,
@@ -663,7 +663,7 @@ Paprika syncs your recipe library across all your devices using Paprika's own sy
   {
     slug: `tasty-cooking-app-guide`,
     title: `Cook Step-by-Step with the Tasty App`,
-    excerpt: `The Tasty app from BuzzFeed offers thousands of video recipes and a guided cooking mode that walks you through each step with built-in timers — no more losing your place.`,
+    excerpt: `The Tasty app from BuzzFeed offers thousands of video recipes and a guided cooking mode that walks you through each step with built-in timers.`,
     category: `app-guides`,
     tags: [`Tasty`, `cooking`, `recipes`, `BuzzFeed`, `video recipes`],
     readTime: `6 min`,

@@ -382,7 +382,7 @@ Even if you are denied the first time, do not give up. About two-thirds of initi
   {
     slug: `chip-program-explained`,
     title: `CHIP: Free or Low-Cost Health Insurance for Children Who Need It`,
-    excerpt: `The Children's Health Insurance Program provides low-cost or free coverage for kids in families who earn too much for Medicaid but cannot afford private insurance.`,
+    excerpt: 'The Children\'s Health Insurance Program covers kids in families who earn too much for Medicaid but cannot afford private insurance.',
     category: `government-civic`,
     tags: [`chip`, `children's health insurance`, `medicaid`, `kids insurance`, `healthcare`],
     readTime: `6 min`,

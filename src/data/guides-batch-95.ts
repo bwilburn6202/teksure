@@ -20,7 +20,7 @@ export const guidesBatch95: Guide[] = [
   {
     slug: 'fix-windows-11-bitlocker-recovery-screen-2026',
     title: 'Windows 11 Update Showed a BitLocker Recovery Screen — Here Is the Free Fix',
-    excerpt: 'If Microsoft\'s April 2026 update locked your PC with a blue BitLocker screen asking for a 48-digit key, the key is stored free in your Microsoft account. Here\'s how.',
+    excerpt: 'If Microsoft\'s April 2026 update locked your PC with a blue BitLocker screen asking for a 48-digit key, the key is stored free in your Microsoft account.',
     category: 'windows-guides',
     tags: ['windows 11', 'bitlocker', 'recovery key', 'locked out', 'update', 'KB5083769'],
     readTime: '6 min',
@@ -65,7 +65,7 @@ After you are back in, Microsoft has released a follow-up update that prevents t
   {
     slug: 'fix-iphone-battery-drain-after-update',
     title: 'iPhone Battery Draining Fast After an Update? Here Is How to Fix It',
-    excerpt: 'It\'s normal for an iPhone to use extra battery for 24–48 hours after a big iOS update while it catches up on background tasks. Here\'s what to do if it doesn\'t improve.',
+    excerpt: 'It\'s normal for an iPhone to use extra battery for 24–48 hours after a big iOS update while it catches up on background tasks.',
     category: 'phone-guides',
     tags: ['iphone', 'battery', 'ios update', 'battery drain', 'fix', 'slow phone'],
     readTime: '6 min',
@@ -205,7 +205,7 @@ This is not a problem with your Google account, and nothing is wrong with your G
   {
     slug: 'locked-out-google-microsoft-account-recovery',
     title: 'Locked Out of Your Google or Microsoft Account? Here Is How to Get Back In',
-    excerpt: 'A forgotten password or failed two-factor sign-in can lock you out of your email and apps. These steps walk you through account recovery for Google, Microsoft, and Apple.',
+    excerpt: 'A forgotten password or failed two-factor sign-in can lock you out of your email and apps.',
     category: 'troubleshooting',
     tags: ['account recovery', 'forgot password', 'locked out', 'google account', 'microsoft account', 'apple id', 'two-factor'],
     readTime: '8 min',

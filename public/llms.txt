@@ -4,7 +4,7 @@
 
 ## About this site
 
-- 3,751 step-by-step guides and 2,969 interactive tools, all free and without a paywall.
+- 3,763 step-by-step guides and 2,969 interactive tools, all free and without a paywall.
 - Audience: non-technical adults, especially people aged 60+, and caregivers.
 - US-focused: prices in USD, US carriers, US government services (Medicare, Social Security, IRS).
 - Editorial rule: plain English, no jargon without an explanation, no "it's easy".
@@ -72,7 +72,7 @@ each guide is self-contained and includes the exact menu paths for the device.
 - [How to Substitute Ingredients When You Run Out](https://www.teksure.com/guides/how-to-substitute-ingredients-recipe)
 - …and 499 more in this topic — see https://www.teksure.com/sitemap.xml
 
-### app guides (407)
+### app guides (408)
 
 - [How to Use Google Flights to Find Cheap Tickets](https://www.teksure.com/guides/use-google-flights)
 - [How to Book Travel on Expedia](https://www.teksure.com/guides/use-expedia-bookings)
@@ -114,7 +114,7 @@ each guide is self-contained and includes the exact menu paths for the device.
 - [How to Use Amazon Photos to Back Up and Store Your Pictures](https://www.teksure.com/guides/amazon-photos-backup)
 - [How to Use Google Calendar to Track Appointments and Set Reminders](https://www.teksure.com/guides/how-to-use-google-calendar-for-appointments-and-reminders-2026)
 - [How to Use Google One to Manage Your Storage](https://www.teksure.com/guides/google-one-storage-guide)
-- …and 367 more in this topic — see https://www.teksure.com/sitemap.xml
+- …and 368 more in this topic — see https://www.teksure.com/sitemap.xml
 
 ### Phones (iPhone and Android) (350)
 
@@ -160,7 +160,7 @@ each guide is self-contained and includes the exact menu paths for the device.
 - [How to Use the Different Camera Modes on Your iPhone](https://www.teksure.com/guides/iphone-camera-modes-guide)
 - …and 310 more in this topic — see https://www.teksure.com/sitemap.xml
 
-### Health technology and accessibility (338)
+### Health technology and accessibility (339)
 
 - [How to Submit a Health Insurance Claim](https://www.teksure.com/guides/submit-health-insurance-claim)
 - [How to Use Papa for Senior Companionship](https://www.teksure.com/guides/use-papa-companionship-app)
@@ -202,9 +202,9 @@ each guide is self-contained and includes the exact menu paths for the device.
 - [How to Send a Text Health Update to Family](https://www.teksure.com/guides/how-to-text-health-update-to-family)
 - [How to Keep a Caregiver Log for an Aging Parent](https://www.teksure.com/guides/how-to-keep-caregiver-log-aging-parent)
 - [How to Use the Apple Watch ECG and Heart Rate Features](https://www.teksure.com/guides/apple-watch-ecg-heart-health)
-- …and 298 more in this topic — see https://www.teksure.com/sitemap.xml
+- …and 299 more in this topic — see https://www.teksure.com/sitemap.xml
 
-### Essential everyday skills (302)
+### Essential everyday skills (303)
 
 - [Cloud Storage Explained: Your Photos and Files, Safe and Sound](https://www.teksure.com/guides/cloud-storage-explained-photos-files-safe)
 - [How to Use QR Codes (They're Everywhere Now)](https://www.teksure.com/guides/qr-codes-scanning-guide)
@@ -246,9 +246,9 @@ each guide is self-contained and includes the exact menu paths for the device.
 - [How to Get Live Captions During Phone Calls](https://www.teksure.com/guides/phone-captions-for-calls)
 - [How to Open, Read, and Save PDF Files on Your Phone](https://www.teksure.com/guides/read-pdf-on-phone-guide)
 - [How to Use Apple Calendar on iPhone, iPad, and Mac](https://www.teksure.com/guides/apple-calendar-beginners)
-- …and 262 more in this topic — see https://www.teksure.com/sitemap.xml
+- …and 263 more in this topic — see https://www.teksure.com/sitemap.xml
 
-### Staying safe online (scams, phishing, privacy) (291)
+### Staying safe online (scams, phishing, privacy) (295)
 
 - [Two-Factor Authentication: The Extra Lock on Your Digital Door](https://www.teksure.com/guides/two-factor-authentication-extra-lock)
 - [Online Banking Made Safe and Simple](https://www.teksure.com/guides/online-banking-made-safe-and-simple)
@@ -290,7 +290,7 @@ each guide is self-contained and includes the exact menu paths for the device.
 - [Pig-Butchering Scams: How Fake Friends Steal Your Savings](https://www.teksure.com/guides/pig-butchering-investment-scam)
 - [How to Share Your Location With Family Members](https://www.teksure.com/guides/family-location-sharing)
 - [How Scammers Use AI to Clone Voices on Phone Calls](https://www.teksure.com/guides/ai-voice-call-scam-prevention)
-- …and 251 more in this topic — see https://www.teksure.com/sitemap.xml
+- …and 255 more in this topic — see https://www.teksure.com/sitemap.xml
 
 ### Money, banking and bills (186)
 
@@ -336,7 +336,7 @@ each guide is self-contained and includes the exact menu paths for the device.
 - [How to Deposit a Check Using Your Phone (Mobile Deposit)](https://www.teksure.com/guides/how-to-deposit-check-with-phone)
 - …and 146 more in this topic — see https://www.teksure.com/sitemap.xml
 
-### Windows computers (170)
+### Windows computers (173)
 
 - [Windows 11 Update Locked Me Out — How to Get Back In](https://www.teksure.com/guides/windows-11-bitlocker-lockout-fix)
 - [How to Add a Printer to Your Windows 11 Computer](https://www.teksure.com/guides/how-to-add-printer-windows-11)
@@ -373,12 +373,12 @@ each guide is self-contained and includes the exact menu paths for the device.
 - [How to Use the Windows Backup App to Move to a New PC](https://www.teksure.com/guides/windows-11-backup-app-new-pc)
 - [How to Find and Remove Duplicate Photos on Windows 11](https://www.teksure.com/guides/remove-duplicate-photos-windows-11)
 - [ChromeOS Flex — Turn an Old Windows Laptop Into a Fast New Chromebook](https://www.teksure.com/guides/chromeos-flex-revive-old-windows-laptop)
+- [Windows 10 Support Has Ended: What It Means and What to Do Now](https://www.teksure.com/guides/windows-10-end-of-support-what-to-do)
+- [Type by Speaking on Windows 11 With Voice Typing](https://www.teksure.com/guides/windows-11-voice-typing-dictation)
+- [Make Windows Easier on Your Eyes With Color Filters and Contrast](https://www.teksure.com/guides/windows-color-filters-easier-reading)
 - [10 Windows 11 Tips That Make Your Computer Easier to Use](https://www.teksure.com/guides/windows-11-tips-for-seniors)
 - [How to Use the Windows 11 Start Menu (If You Are Used to Windows 10)](https://www.teksure.com/guides/how-to-use-windows-11-start-menu)
-- [How to Use the Windows Photos App to View and Organize Pictures](https://www.teksure.com/guides/windows-photos-app-guide)
-- [How to Open and Read PDF Files Using Microsoft Edge](https://www.teksure.com/guides/microsoft-edge-pdf-viewer)
-- [How to Use Windows Storage Sense to Automatically Free Up Disk Space](https://www.teksure.com/guides/windows-storage-sense-guide)
-- …and 130 more in this topic — see https://www.teksure.com/sitemap.xml
+- …and 133 more in this topic — see https://www.teksure.com/sitemap.xml
 
 ### how to (167)
 
@@ -468,7 +468,7 @@ each guide is self-contained and includes the exact menu paths for the device.
 - [How to Transcribe Meetings Automatically with Otter.ai](https://www.teksure.com/guides/otter-ai-transcription-guide)
 - …and 93 more in this topic — see https://www.teksure.com/sitemap.xml
 
-### Government and civic services (129)
+### Government and civic services (131)
 
 - [How to Get Your IRS Tax Transcript Online](https://www.teksure.com/guides/irs-transcript-online)
 - [How to Set Up and Use Your Medicare Online Account](https://www.teksure.com/guides/understand-medicare-online-account)
@@ -510,7 +510,7 @@ each guide is self-contained and includes the exact menu paths for the device.
 - [How to Apply for the Native American Housing Block Grant](https://www.teksure.com/guides/how-to-apply-native-american-housing-grant)
 - [How to Update Social Security After a Divorce](https://www.teksure.com/guides/how-to-update-social-security-after-divorce)
 - [How to Claim Social Security Based on an Ex-Spouse's Record](https://www.teksure.com/guides/how-to-claim-social-security-ex-spouse)
-- …and 89 more in this topic — see https://www.teksure.com/sitemap.xml
+- …and 91 more in this topic — see https://www.teksure.com/sitemap.xml
 
 ### TV, music and entertainment (119)
 

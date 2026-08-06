@@ -149,7 +149,7 @@ Once an account is added, you will see all your email inboxes either combined in
   {
     slug: `facebook-birthday-guide`,
     title: `How to Use Facebook to See and Wish Friends Happy Birthday`,
-    excerpt: `Facebook shows you upcoming birthdays so you never miss a friend's special day. Learn how to find the birthday list, post a greeting, and manage your own birthday privacy.`,
+    excerpt: `Facebook shows you upcoming birthdays so you never miss a friend's special day. Learn how to find the birthday list, post a greeting.`,
     category: `social-media`,
     tags: [`facebook`, `birthday`, `friends`, `notifications`, `social`],
     readTime: `4 min`,
@@ -241,7 +241,7 @@ Photos can edit videos too: trim a clip to cut out the beginning or end, add slo
   {
     slug: `create-google-account-guide`,
     title: `How to Create a Google Account From Scratch`,
-    excerpt: `A Google account gives you access to Gmail, Google Drive, Google Photos, YouTube, and more — all for free. This guide walks you through creating your account step by step.`,
+    excerpt: `A Google account gives you access to Gmail, Google Drive, Google Photos, YouTube, and more — all for free.`,
     category: `essential-skills`,
     tags: [`google account`, `gmail`, `create account`, `signup`, `beginners`],
     readTime: `5 min`,
@@ -333,7 +333,7 @@ Clearing your search history on your phone's browser is different from clearing 
   {
     slug: `ipad-imessage-setup-guide`,
     title: `How to Set Up Texting on Your iPad With iMessage`,
-    excerpt: `Your iPad can send and receive text messages to other Apple users through iMessage — and even regular SMS texts if your iPhone is nearby. Here is how to set it up.`,
+    excerpt: `Your iPad can send and receive text messages to other Apple users through iMessage — and even regular SMS texts if your iPhone is nearby.`,
     category: `phone-guides`,
     tags: [`ipad`, `imessage`, `texting`, `sms`, `apple`, `iphone`],
     readTime: `5 min`,
@@ -377,7 +377,7 @@ Setting up iMessage on iPad takes about two minutes and just requires your Apple
   {
     slug: `android-gesture-navigation-guide`,
     title: `How to Use Gesture Navigation on Android (Swipe Instead of Buttons)`,
-    excerpt: `Android phones can be controlled with swipe gestures instead of the traditional three-button navigation bar. Learn what the gestures are and how to switch between modes.`,
+    excerpt: `Android phones can be controlled with swipe gestures instead of the traditional three-button navigation bar.`,
     category: `phone-guides`,
     tags: [`android`, `gestures`, `navigation`, `swipe`, `home button`, `back`],
     readTime: `5 min`,
@@ -513,7 +513,7 @@ All Gmail search operators work the same whether you are on a computer, phone, o
   {
     slug: `airtag-setup-beginners`,
     title: `How to Set Up an Apple AirTag to Track Your Keys or Wallet`,
-    excerpt: `Apple AirTag is a small disc you attach to your keys, bag, or wallet. Your iPhone can then show you exactly where it is — on a map or with sound. Here is how to get started.`,
+    excerpt: `Apple AirTag is a small disc you attach to your keys, bag, or wallet. Your iPhone can then show you exactly where it is — on a map or with sound.`,
     category: `phone-guides`,
     tags: [`apple airtag`, `tracking`, `find my`, `lost keys`, `iphone`, `bluetooth`],
     readTime: `5 min`,
@@ -560,7 +560,7 @@ You can attach an AirTag with a keyring holder, a loop, or a case — various ac
   {
     slug: `samsung-dex-beginners`,
     title: `What Is Samsung DeX and How to Use It`,
-    excerpt: `Samsung DeX turns your Galaxy phone into a desktop computer. Connect it to a monitor and you get a full keyboard-and-mouse setup — great for getting work done on a big screen.`,
+    excerpt: `Samsung DeX turns your Galaxy phone into a desktop computer. Connect it to a monitor and you get a full keyboard-and-mouse setup.`,
     category: `phone-guides`,
     tags: [`samsung`, `dex`, `galaxy`, `desktop mode`, `monitor`, `productivity`],
     readTime: `6 min`,
@@ -607,7 +607,7 @@ While in DeX mode, your phone screen acts as a touchpad. You swipe on the phone 
   {
     slug: `zoom-captions-guide`,
     title: `How to Turn On Live Captions in Zoom for Easier Listening`,
-    excerpt: `Zoom can display live captions during calls — showing what each person says as on-screen text. Great for anyone who is hard of hearing or just prefers to read along.`,
+    excerpt: `Zoom can display live captions during calls — showing what each person says as on-screen text.`,
     category: `communication`,
     tags: [`zoom`, `captions`, `accessibility`, `hearing`, `transcription`, `subtitles`],
     readTime: `4 min`,
@@ -739,7 +739,7 @@ The feature also works alongside Battery Saver mode (which you turn on manually 
   {
     slug: `phone-charger-types-guide`,
     title: `Phone Charger Types Explained: USB-C, Lightning, and Wireless`,
-    excerpt: `Confused by all the different charger plugs? This guide explains USB-C, Lightning, Micro-USB, and wireless charging in plain English so you know exactly which cable to buy.`,
+    excerpt: `Confused by all the different charger plugs? This guide explains USB-C, Lightning, Micro-USB.`,
     category: `essential-skills`,
     tags: [`charger`, `usb-c`, `lightning`, `wireless charging`, `cable`, `phone accessories`],
     readTime: `5 min`,
@@ -877,7 +877,7 @@ Reading List is not a replacement for bookmarks — bookmarks are for pages you 
   {
     slug: `iphone-serial-number-guide`,
     title: `How to Find Your iPhone's Serial Number`,
-    excerpt: `Your iPhone's serial number is needed for warranty claims, repairs, trade-ins, and confirming you have the right coverage. Here are four ways to find it in under a minute.`,
+    excerpt: `Your iPhone's serial number is needed for warranty claims, repairs, trade-ins, and confirming you have the right coverage.`,
     category: `phone-guides`,
     tags: [`iphone`, `serial number`, `warranty`, `apple`, `imei`, `trade-in`],
     readTime: `3 min`,

@@ -105,7 +105,7 @@ This feature is available on Windows 11 version 22H2 and later. If you do not se
   {
     slug: `personal-voice-ios-guide`,
     title: `Create a Personal Voice Clone on iPhone (iOS 17+)`,
-    excerpt: `Personal Voice lets you record 150 phrases on your iPhone to create a synthesized voice that sounds like you — designed for people at risk of losing their ability to speak.`,
+    excerpt: `Personal Voice lets you record 150 phrases on your iPhone to create a synthesized voice that sounds like you.`,
     category: `phone-guides`,
     tags: [`Personal Voice`, `iOS 17`, `accessibility`, `ALS`, `voice loss`, `Live Speech`],
     readTime: `7 min`,
@@ -205,7 +205,7 @@ Assistive Access is not permanent. You can exit it at any time using the passcod
   {
     slug: `sound-recognition-iphone`,
     title: `Use iPhone Sound Recognition to Alert You to Important Sounds`,
-    excerpt: `Sound Recognition listens in the background on your iPhone and sends you a notification when it detects sounds like a smoke alarm, doorbell, baby crying, or dog barking.`,
+    excerpt: `Sound Recognition listens in the background on your iPhone and sends you a notification when it detects sounds like a smoke alarm, doorbell, baby crying.`,
     category: `phone-guides`,
     tags: [`Sound Recognition`, `accessibility`, `deaf`, `hearing loss`, `iPhone alerts`],
     readTime: `5 min`,
@@ -253,7 +253,7 @@ Sound Recognition requires an iPhone with iOS 17 or later. It works alongside he
   {
     slug: `switch-access-android-guide`,
     title: `How Android Switch Access Helps People with Motor Disabilities`,
-    excerpt: `Switch Access lets you control your Android phone using one or two external switch buttons instead of touch — ideal for people with limited hand movement, tremor, or paralysis.`,
+    excerpt: `Switch Access lets you control your Android phone using one or two external switch buttons instead of touch — ideal for people with limited hand movement.`,
     category: `phone-guides`,
     tags: [`Switch Access`, `motor disability`, `accessibility`, `Android`, `assistive technology`],
     readTime: `7 min`,
@@ -303,7 +303,7 @@ Android also supports Switch Access through Google's Accessibility Suite app, wh
   {
     slug: `google-family-link-guide`,
     title: `Monitor and Manage Your Child's Android Phone with Google Family Link`,
-    excerpt: `Google Family Link lets parents approve app downloads, set daily screen time limits, see their child's location, and remotely lock an Android phone — all from their own phone.`,
+    excerpt: `Google Family Link lets parents approve app downloads, set daily screen time limits, see their child's location, and remotely lock an Android phone.`,
     category: `phone-guides`,
     tags: [`Family Link`, `parental controls`, `Android`, `kids`, `screen time`],
     readTime: `6 min`,
@@ -407,7 +407,7 @@ Amazon Kids+ includes thousands of books, popular apps like PBS Kids, Disney, an
   {
     slug: `ipad-guided-access-kids`,
     title: `Lock Your iPad to One App for Kids Using Guided Access`,
-    excerpt: `Guided Access locks the iPad to a single app so kids cannot accidentally leave it, change settings, or access other content — perfect for games, learning apps, and video calls.`,
+    excerpt: `Guided Access locks the iPad to a single app so kids cannot accidentally leave it, change settings, or access other content — perfect for games, learning apps.`,
     category: `phone-guides`,
     tags: [`Guided Access`, `iPad`, `kids`, `parental controls`, `single app mode`],
     readTime: `5 min`,
@@ -504,7 +504,7 @@ Screen Time works on every currently supported version of macOS (including Sonom
   {
     slug: `grammarly-student-guide`,
     title: `How Students Can Use Grammarly to Write Better`,
-    excerpt: `Grammarly checks your spelling, grammar, punctuation, and writing clarity in real time — right inside Google Docs, your browser, or any text box on your computer.`,
+    excerpt: `Grammarly checks your spelling, grammar, punctuation, and writing clarity in real time — right inside Google Docs, your browser.`,
     category: `essential-skills`,
     tags: [`Grammarly`, `writing`, `students`, `grammar`, `college`],
     readTime: `5 min`,
@@ -551,7 +551,7 @@ Important for academic integrity: Grammarly's free grammar checking is generally
   {
     slug: `zotero-research-citation`,
     title: `Manage Research Sources and Citations Automatically with Zotero`,
-    excerpt: `Zotero is a free tool that saves your research sources with one click and generates bibliographies in APA, MLA, or Chicago format automatically in Word or Google Docs.`,
+    excerpt: `Zotero is a free tool that saves your research sources with one click and generates bibliographies in APA, MLA.`,
     category: `essential-skills`,
     tags: [`Zotero`, `citations`, `research`, `bibliography`, `college`],
     readTime: `7 min`,
@@ -605,7 +605,7 @@ For long research papers or projects with dozens of sources, Zotero saves hours 
   {
     slug: `microsoft-teams-edu-guide`,
     title: `How Students Use Microsoft Teams for School`,
-    excerpt: `Microsoft Teams for Education is where many students find their class materials, submit assignments, join video lessons, and message their teachers — all in one place.`,
+    excerpt: `Microsoft Teams for Education is where many students find their class materials, submit assignments, join video lessons, and message their teachers.`,
     category: `essential-skills`,
     tags: [`Microsoft Teams`, `school`, `education`, `classes`, `assignments`],
     readTime: `6 min`,
@@ -706,7 +706,7 @@ Canvas also has a built-in inbox for messaging your instructor directly, a calen
   {
     slug: `wolfram-alpha-student-guide`,
     title: `Use Wolfram Alpha to Solve Math Problems Step by Step`,
-    excerpt: `Wolfram Alpha is a free computational engine that can solve math equations, graph functions, convert units, balance chemistry equations, and show step-by-step solutions.`,
+    excerpt: `Wolfram Alpha is a free computational engine that can solve math equations, graph functions, convert units, balance chemistry equations.`,
     category: `essential-skills`,
     tags: [`Wolfram Alpha`, `math`, `science`, `students`, `calculator`],
     readTime: `5 min`,
@@ -797,7 +797,7 @@ Circle to Search is different from Google Lens, although it uses similar technol
   {
     slug: `samsung-bixby-guide`,
     title: `What Bixby Can Do on Your Samsung Phone`,
-    excerpt: `Bixby is Samsung's built-in AI assistant that can set alarms, control your phone settings, identify objects with the camera, and run automated Routines — all with your voice.`,
+    excerpt: `Bixby is Samsung's built-in AI assistant that can set alarms, control your phone settings, identify objects with the camera, and run automated Routines.`,
     category: `phone-guides`,
     tags: [`Bixby`, `Samsung`, `voice assistant`, `AI`, `Galaxy`],
     readTime: `5 min`,
@@ -844,7 +844,7 @@ One common question: should you use Bixby or Google Assistant? Both are availabl
   {
     slug: `samsung-galaxy-watch-guide`,
     title: `Get Started with Your Samsung Galaxy Watch`,
-    excerpt: `Your Samsung Galaxy Watch tracks steps, heart rate, sleep, and workouts while showing your phone notifications — here is how to set it up and get the most out of it.`,
+    excerpt: `Your Samsung Galaxy Watch tracks steps, heart rate, sleep, and workouts while showing your phone notifications.`,
     category: `health-tech`,
     tags: [`Samsung Galaxy Watch`, `smartwatch`, `health tracking`, `Galaxy`, `Wear OS`],
     readTime: `6 min`,
@@ -894,7 +894,7 @@ To get the full experience, you should use a Samsung Galaxy phone with the Galax
   {
     slug: `google-pixel-tips-guide`,
     title: `Hidden Features on Google Pixel Phones You Should Know`,
-    excerpt: `Google Pixel phones have unique features built into Android that you will not find on other phones — including Call Screen, Magic Eraser, Now Playing, and Hold For Me.`,
+    excerpt: `Google Pixel phones have unique features built into Android that you will not find on other phones — including Call Screen, Magic Eraser, Now Playing.`,
     category: `phone-guides`,
     tags: [`Google Pixel`, `Android`, `tips`, `features`, `exclusive`],
     readTime: `6 min`,

@@ -8,7 +8,7 @@ export const guidesBatch222: Guide[] = [
   {
     slug: "how-to-notify-social-security-spouse-death",
     title: "How to Notify Social Security of a Spouse's Death",
-    excerpt: "Compassionate, step-by-step plain-English guide to reporting a spouse's passing to Social Security, with the calls to make, papers to gather, and pitfalls to avoid in 2026.",
+    excerpt: "Compassionate, step-by-step plain-English guide to reporting a spouse's passing to Social Security, with the calls to make, papers to gather.",
     category: "government-civic",
     tags: ["social security", "widow", "widower", "death notification", "estate", "seniors"],
     readTime: "8 min",
@@ -98,7 +98,7 @@ export const guidesBatch222: Guide[] = [
   {
     slug: "how-to-change-beneficiaries-after-losing-spouse",
     title: "How to Change Beneficiaries on Accounts After Losing Your Spouse",
-    excerpt: "Compassionate plain-English guide to updating named beneficiaries on bank accounts, retirement plans, life insurance, and investment accounts after a spouse passes away.",
+    excerpt: "Compassionate plain-English guide to updating named beneficiaries on bank accounts, retirement plans, life insurance.",
     category: "financial-tech",
     tags: ["beneficiary", "estate planning", "widow", "widower", "spouse death", "financial accounts"],
     readTime: "9 min",
@@ -188,7 +188,7 @@ export const guidesBatch222: Guide[] = [
   {
     slug: "how-to-find-grief-support-group",
     title: "How to Find a Grief Support Group Near You",
-    excerpt: "Compassionate plain-English guide to finding in-person and online grief support groups after a major loss, with free resources, scam warnings, and tips on what to expect.",
+    excerpt: "Compassionate plain-English guide to finding in-person and online grief support groups after a major loss, with free resources, scam warnings.",
     category: "health-tech",
     tags: ["grief", "support group", "widow", "widower", "mental health", "bereavement"],
     readTime: "9 min",
@@ -233,7 +233,7 @@ export const guidesBatch222: Guide[] = [
   {
     slug: "how-to-handle-solo-travel-recent-widow",
     title: "How to Handle Solo Travel as a Recent Widow or Widower",
-    excerpt: "Compassionate plain-English guide to planning your first trip alone after losing a spouse, with safety tips, group tour options, and practical advice for traveling solo in 2026.",
+    excerpt: "Compassionate plain-English guide to planning your first trip alone after losing a spouse, with safety tips, group tour options.",
     category: "tips-tricks",
     tags: ["solo travel", "widow", "widower", "travel safety", "group tours", "seniors"],
     readTime: "10 min",

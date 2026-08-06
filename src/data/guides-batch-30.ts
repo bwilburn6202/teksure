@@ -97,7 +97,7 @@ Honey is available for Chrome, Firefox, Safari, Edge, and Opera on desktop compu
   {
     slug: 'camelcamelcamel-guide',
     title: 'How to Track Amazon Price History With CamelCamelCamel',
-    excerpt: 'Before buying anything on Amazon, check its price history. It may have been much cheaper recently and could drop again. CamelCamelCamel shows you this in seconds.',
+    excerpt: 'Before buying anything on Amazon, check its price history. It may have been much cheaper recently and could drop again.',
     category: 'financial-tech',
     tags: ['CamelCamelCamel', 'Amazon', 'price tracking', 'price history', 'deals'],
     readTime: '4 min',
@@ -189,7 +189,7 @@ Gas prices fluctuate with oil markets, local taxes, and station competition. Kee
   {
     slug: 'ticketmaster-mobile-guide',
     title: 'How to Get and Use Mobile Event Tickets on Your Phone',
-    excerpt: `Most concerts and sports events now use digital mobile tickets instead of paper — here's how to access your Ticketmaster tickets on your phone and get in at the gate.`,
+    excerpt: 'Most concerts and sports events now use digital tickets. Here is how to open your Ticketmaster tickets on your phone and get in at the gate.',
     category: 'app-guides',
     tags: ['Ticketmaster', 'mobile tickets', 'events', 'concerts', 'QR code'],
     readTime: '4 min',
@@ -556,7 +556,7 @@ WhatsApp also has voice messages that work between any phone type (not just iPho
   {
     slug: 'google-home-routines-guide',
     title: 'How to Set Up Google Home Routines',
-    excerpt: 'Google Home Routines let you trigger multiple smart home actions with a single command — like "Good morning" turning on lights, starting coffee, and reading the news.',
+    excerpt: 'Google Home Routines let you trigger multiple smart home actions with a single command — like "Good morning" turning on lights, starting coffee.',
     category: 'smart-home',
     tags: ['Google Home', 'routines', 'smart home', 'automation', 'Google Assistant'],
     readTime: '5 min',

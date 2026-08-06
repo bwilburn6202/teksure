@@ -196,7 +196,7 @@ export const guidesBatch21: Guide[] = [
   {
     slug: 'amazon-music-guide',
     title: 'How to Listen to Music with Amazon Music',
-    excerpt: 'Amazon Music lets you stream millions of songs on your phone, Alexa speaker, or Fire TV. If you have Amazon Prime, you already have free access to a huge music library.',
+    excerpt: 'Amazon Music lets you stream millions of songs on your phone, Alexa speaker, or Fire TV.',
     category: 'entertainment',
     tags: ['amazon music', 'music streaming', 'amazon prime', 'alexa', 'music app'],
     readTime: '5 min',
@@ -233,7 +233,7 @@ export const guidesBatch21: Guide[] = [
   {
     slug: 'apple-books-guide',
     title: 'How to Read Books on iPhone and iPad with Apple Books',
-    excerpt: 'Apple Books is a free reading app on every iPhone and iPad. You can buy bestsellers, download thousands of free classics, and adjust text size for comfortable reading.',
+    excerpt: 'Apple Books is a free reading app on every iPhone and iPad. You can buy bestsellers, download thousands of free classics.',
     category: 'essential-skills',
     tags: ['apple books', 'ibooks', 'ebooks', 'iphone reading', 'ipad reading', 'digital books'],
     readTime: '5 min',
@@ -270,7 +270,7 @@ export const guidesBatch21: Guide[] = [
   {
     slug: 'google-play-books-guide',
     title: 'How to Read Books on Android with Google Play Books',
-    excerpt: 'Google Play Books is a free reading app for Android phones and tablets. Buy books from Google, find free classics, and read with adjustable text size and night mode.',
+    excerpt: 'Google Play Books is a free reading app for Android phones and tablets. Buy books from Google, find free classics.',
     category: 'essential-skills',
     tags: ['google play books', 'ebooks', 'android reading', 'digital books', 'reading app'],
     readTime: '5 min',
@@ -378,7 +378,7 @@ export const guidesBatch21: Guide[] = [
   {
     slug: 'android-vision-display-settings',
     title: 'How to Make Text and Screens Easier to See on Android',
-    excerpt: 'Android phones have several built-in settings that make text larger, screens brighter and higher contrast, and displays easier to read for people with vision challenges.',
+    excerpt: 'Android phones have several built-in settings that make text larger, screens brighter and higher contrast.',
     category: 'essential-skills',
     tags: ['android', 'accessibility', 'large text', 'vision', 'font size', 'display settings'],
     readTime: '5 min',
@@ -414,7 +414,7 @@ export const guidesBatch21: Guide[] = [
   {
     slug: 'jitterbug-lively-phone-guide',
     title: 'What Is a Jitterbug (Lively) Phone and Is It Right for You',
-    excerpt: `Jitterbug phones — now called Lively — are designed specifically for seniors with large buttons, simple menus, and an emergency response button. Here's what you need to know.`,
+    excerpt: `Jitterbug phones — now called Lively — are designed specifically for seniors with large buttons, simple menus, and an emergency response button.`,
     category: 'phone-guides',
     tags: ['jitterbug', 'lively phone', 'senior phone', 'large button phone', 'simple phone'],
     readTime: '5 min',
@@ -747,7 +747,7 @@ export const guidesBatch21: Guide[] = [
   {
     slug: 'amazon-returns-guide',
     title: 'How to Return Something You Bought on Amazon',
-    excerpt: `Amazon has one of the easiest return processes in retail. Here's how to start a return on your phone or computer and drop it off — often with no box or label needed.`,
+    excerpt: `Amazon has one of the easiest return processes in retail. Here's how to start a return on your phone or computer and drop it off.`,
     category: 'tips-tricks',
     tags: ['amazon returns', 'return amazon order', 'amazon refund', 'online shopping', 'amazon'],
     readTime: '5 min',

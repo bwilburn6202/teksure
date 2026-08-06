@@ -99,7 +99,7 @@ Sources: Google Account Help (support.google.com/accounts), AARP Technology (aar
   {
     slug: 'how-to-block-someone-on-facebook-2026',
     title: 'How to Block, Unfriend, or Restrict Someone on Facebook',
-    excerpt: 'Learn the difference between unfriending, blocking, and restricting on Facebook — and how to do each one — so you can control who sees your posts and contacts you.',
+    excerpt: 'Learn the difference between unfriending, blocking, and restricting on Facebook — and how to do each one.',
     category: 'social-media',
     tags: [
       'facebook',

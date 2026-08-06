@@ -190,7 +190,7 @@ For true privacy from your ISP and the websites you visit, you need a VPN (Virtu
   {
     slug: `google-activity-controls`,
     title: `How to Control What Google Knows About You`,
-    excerpt: `Google collects data about your searches, location, YouTube history, and more by default. Here's how to review, limit, and delete that data from your Google account.`,
+    excerpt: `Google collects data about your searches, location, YouTube history, and more by default.`,
     category: `online-privacy`,
     tags: [`Google privacy`, `My Activity`, `data control`, `delete history`, `Google account`],
     readTime: `6 min`,
@@ -238,7 +238,7 @@ Finally, if you ever want to download everything Google knows about you, use the
   {
     slug: `online-banking-setup-guide`,
     title: `How to Set Up Online Banking for the First Time`,
-    excerpt: `Setting up online banking lets you check your balance, pay bills, and transfer money from home. This guide walks you through enrollment, passwords, and staying safe.`,
+    excerpt: `Setting up online banking lets you check your balance, pay bills, and transfer money from home.`,
     category: `online-banking`,
     tags: [`online banking`, `bank account`, `internet banking`, `setup`, `beginners`],
     readTime: `7 min`,
@@ -284,7 +284,7 @@ What can you do with online banking? Check your balance anytime. Review every tr
   {
     slug: `mobile-check-deposit-guide`,
     title: `How to Deposit a Check with Your Phone Using Mobile Check Deposit`,
-    excerpt: `Mobile check deposit lets you add a check to your bank account by taking a photo with your phone. Learn how to do it correctly so it goes through without issues.`,
+    excerpt: `Mobile check deposit lets you add a check to your bank account by taking a photo with your phone.`,
     category: `online-banking`,
     tags: [`mobile deposit`, `check deposit`, `bank app`, `remote deposit`, `check`],
     readTime: `5 min`,
@@ -421,7 +421,7 @@ You can make one-time payments for any amount, or set up recurring automatic pay
   {
     slug: `how-to-read-tech-specs`,
     title: `How to Read Tech Specs Before Buying a Device`,
-    excerpt: `Tech spec sheets are full of numbers and jargon. This guide explains the five specs that actually matter for everyday use so you can make a confident buying decision.`,
+    excerpt: 'Tech spec sheets are full of numbers and jargon. This guide explains the five specs that matter for everyday use so you can buy with confidence.',
     category: `buying-guides`,
     tags: [`tech specs`, `buying guide`, `specifications`, `RAM`, `storage`, `beginners`],
     readTime: `7 min`,
@@ -466,7 +466,7 @@ The fifth is battery life. For a laptop you plan to take anywhere, look for at l
   {
     slug: `tv-buying-guide-beginners`,
     title: `TV Buying Guide — What to Know Before You Buy`,
-    excerpt: `Shopping for a new TV is confusing with all the acronyms and numbers. This guide explains what actually matters — size, panel type, resolution, and smart TV features.`,
+    excerpt: `Shopping for a new TV is confusing with all the acronyms and numbers. This guide explains what actually matters — size, panel type, resolution.`,
     category: `buying-guides`,
     tags: [`TV`, `buying guide`, `4K`, `OLED`, `smart TV`, `beginners`],
     readTime: `8 min`,
@@ -511,7 +511,7 @@ Smart TV operating systems vary. Roku TV is widely considered the most intuitive
   {
     slug: `printer-buying-guide-home`,
     title: `How to Choose the Right Printer for Your Home`,
-    excerpt: `Inkjet or laser? All-in-one or basic? Ink subscriptions worth it? This guide explains what home printers actually cost to own and which type fits your printing needs.`,
+    excerpt: 'Inkjet or laser? All-in-one or basic? This guide explains what home printers cost to own and which type fits the printing you actually do.',
     category: `buying-guides`,
     tags: [`printer`, `buying guide`, `inkjet`, `laser`, `home printer`],
     readTime: `6 min`,
@@ -557,7 +557,7 @@ Ink subscription services like HP Instant Ink and Epson ReadyPrint charge a mont
   {
     slug: `router-buying-guide`,
     title: `How to Choose a Better Wi-Fi Router for Your Home`,
-    excerpt: `Your router has a bigger impact on your home internet experience than your plan speed. Learn when to upgrade, what specs matter, and whether a mesh system is right for you.`,
+    excerpt: `Your router has a bigger impact on your home internet experience than your plan speed.`,
     category: `buying-guides`,
     tags: [`router`, `buying guide`, `Wi-Fi`, `mesh`, `home network`],
     readTime: `7 min`,
@@ -643,7 +643,7 @@ One important caveat: on most modern laptops, RAM is soldered directly to the mo
   {
     slug: `ssd-vs-hdd-explained`,
     title: `SSD vs HDD — What's the Difference and Why It Matters`,
-    excerpt: `SSDs make computers dramatically faster than traditional hard drives. This guide explains the difference in plain English and helps you decide which type you need.`,
+    excerpt: 'SSDs make computers far faster than traditional hard drives. This guide explains the difference in plain English and which type you need.',
     category: `tech-explained`,
     tags: [`SSD`, `HDD`, `storage`, `hard drive`, `tech explained`],
     readTime: `5 min`,
@@ -684,7 +684,7 @@ Within SSDs, there is a further distinction. SATA SSDs connect using the same in
   {
     slug: `resolution-explained-guide`,
     title: `Screen Resolution Explained — HD, 4K, Retina, and What It All Means`,
-    excerpt: `HD, 4K, 1080p, Retina — screen resolution terms are everywhere but rarely explained. This plain-English guide tells you what resolution means and when it actually matters.`,
+    excerpt: `HD, 4K, 1080p, Retina — screen resolution terms are everywhere but rarely explained.`,
     category: `tech-explained`,
     tags: [`resolution`, `4K`, `1080p`, `HD`, `pixels`, `tech explained`],
     readTime: `5 min`,
@@ -724,7 +724,7 @@ Whether you can actually see the difference between resolutions depends on two t
   {
     slug: `fix-slow-computer-guide`,
     title: `Why Is My Computer So Slow? Common Causes and Fixes`,
-    excerpt: `A slow computer is frustrating, but most cases have a straightforward cause. This guide walks through the most common reasons and practical fixes you can try today.`,
+    excerpt: 'A slow computer is frustrating, but most cases have a plain cause. This guide walks through the common reasons and the fixes you can try today.',
     category: `troubleshooting`,
     tags: [`slow computer`, `fix`, `speed up`, `troubleshooting`, `performance`],
     readTime: `7 min`,
@@ -770,7 +770,7 @@ One more fix many people overlook: a true full shutdown and restart. Many people
   {
     slug: `wifi-keeps-dropping-fix`,
     title: `Why Does My Wi-Fi Keep Dropping? How to Fix It`,
-    excerpt: `Frequent Wi-Fi drops are one of the most common tech complaints. This guide walks through the most likely causes and the steps to fix them — starting with the easiest ones.`,
+    excerpt: `Frequent Wi-Fi drops are one of the most common tech complaints. This guide walks through the most likely causes and the steps to fix them.`,
     category: `troubleshooting`,
     tags: [`Wi-Fi dropping`, `internet fix`, `troubleshooting`, `network`, `connection`],
     readTime: `6 min`,
@@ -815,7 +815,7 @@ Finally, if only one device is dropping Wi-Fi while others in your home are fine
   {
     slug: `phone-wont-charge-fix`,
     title: `My Phone Won't Charge — Common Fixes to Try`,
-    excerpt: `A phone that won't charge is stressful, but the cause is usually minor. Work through these simple steps before assuming the phone or battery needs to be replaced.`,
+    excerpt: 'A phone that will not charge is stressful, but the cause is usually minor. Work through these steps before replacing the phone or battery.',
     category: `troubleshooting`,
     tags: [`phone charging`, `fix`, `troubleshooting`, `battery`, `charging cable`],
     readTime: `5 min`,
@@ -863,7 +863,7 @@ If wireless charging works on your phone but wired does not, the charging port i
   {
     slug: `home-office-tech-setup`,
     title: `How to Set Up a Reliable Tech Setup for Working from Home`,
-    excerpt: `Working from home successfully starts with the right tech foundation. This guide covers everything from internet speed to lighting for video calls, in plain practical terms.`,
+    excerpt: `Working from home successfully starts with the right tech foundation. This guide covers everything from internet speed to lighting for video calls.`,
     category: `work-from-home`,
     tags: [`work from home`, `home office`, `remote work`, `tech setup`, `productivity`],
     readTime: `7 min`,

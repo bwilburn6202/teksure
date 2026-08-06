@@ -417,7 +417,7 @@ ChatGPT can make mistakes — sometimes confidently. Always verify important inf
   {
     slug: 'how-to-share-screen-zoom',
     title: 'How to Share Your Screen on a Zoom Video Call',
-    excerpt: 'Screen sharing on Zoom lets you show someone else exactly what\'s on your computer — great for getting tech help, showing photos, or following along on a document together.',
+    excerpt: 'Screen sharing on Zoom lets you show someone else exactly what\'s on your computer — great for getting tech help, showing photos.',
     category: 'essential-skills',
     tags: ['zoom', 'screen sharing', 'video call', 'remote help', 'work from home'],
     thumbnailEmoji: '',

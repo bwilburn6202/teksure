@@ -92,7 +92,7 @@ Source: Apple Support — Organize apps in folders on iPhone (support.apple.com)
   {
     slug: 'how-to-spot-fake-product-reviews-online-2026',
     title: 'How to Spot Fake Product Reviews Online',
-    excerpt: 'Fake reviews on Amazon, Google, and Facebook Marketplace can lead you toward scam products. Learn the warning signs and free tools that help you shop with confidence.',
+    excerpt: 'Fake reviews on Amazon, Google, and Facebook Marketplace can lead you toward scam products.',
     category: 'safety-guides',
     tags: [
       'fake reviews',
@@ -280,7 +280,7 @@ Source: Microsoft Support — Recall and privacy in Windows 11 (support.microsof
   {
     slug: 'how-to-use-find-my-iphone-or-android-device-2026',
     title: 'How to Find a Lost iPhone or Android Phone',
-    excerpt: 'Lost your phone? Find My (iPhone) and Find My Device (Android) can show you where it is, make it ring, and lock or erase it remotely — but only if set up in advance.',
+    excerpt: 'Lost your phone? Find My (iPhone) and Find My Device (Android) can show you where it is, make it ring, and lock or erase it remotely.',
     category: 'troubleshooting',
     tags: [
       'find my iphone',

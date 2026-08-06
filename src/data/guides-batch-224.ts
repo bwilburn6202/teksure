@@ -254,7 +254,7 @@ export const guidesBatch224: Guide[] = [
   {
     slug: "how-to-legally-become-grandchild-guardian",
     title: "How to Legally Become a Grandchild's Guardian",
-    excerpt: "Plain-English overview of the legal options for grandparents who want formal authority over a grandchild in their care, from caregiver affidavits to full adoption.",
+    excerpt: "Plain-English overview of the legal options for grandparents who want formal authority over a grandchild in their care.",
     category: "government-civic",
     tags: ["guardianship", "grandparents", "kinship care", "legal", "custody", "adoption", "seniors"],
     readTime: "11 min",

@@ -11,7 +11,7 @@ export const guidesBatch247: Guide[] = [
   {
     slug: "how-to-know-need-referral-for-pt",
     title: "How to Know If You Need a Referral for Physical Therapy",
-    excerpt: "A plain-language guide to figuring out whether your insurance, your state, or your specific situation requires a doctor referral before you can see a physical therapist.",
+    excerpt: 'A plain-language guide to whether your insurance, your state, or your situation requires a doctor referral before seeing a physical therapist.',
     category: "health-tech",
     tags: ["physical therapy", "referral", "medicare", "seniors", "healthcare", "pt"],
     readTime: "8 min",
@@ -101,7 +101,7 @@ export const guidesBatch247: Guide[] = [
   {
     slug: "how-to-keep-up-pt-exercises-at-home",
     title: "How to Keep Up With PT Exercises at Home",
-    excerpt: "A senior-friendly guide to sticking with home physical therapy exercises so the gains made in the clinic carry over into everyday life and last for the long term.",
+    excerpt: 'A senior-friendly guide to sticking with home physical therapy exercises so the gains you made in the clinic carry into everyday life.',
     category: "health-tech",
     tags: ["physical therapy", "home exercises", "seniors", "rehab", "consistency", "habits"],
     readTime: "8 min",
