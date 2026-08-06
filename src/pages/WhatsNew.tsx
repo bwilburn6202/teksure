@@ -86,33 +86,94 @@ const FEATURED_THIS_MONTH: {
   cta?: string;
 }[] = [
   {
-    title: 'TekBrain now talks back',
+    title: 'Every page now has its own title and description',
     description:
-      "Our friendly AI assistant added voice mode — tap the mic and ask. Great if typing is hard or you'd rather chat like you would with a friend.",
-    icon: Mic,
-    href: '/tekbrain',
-    cta: 'Try TekBrain',
+      'Search engines used to see one generic page for the whole site, so most guides were nearly impossible to find. Every guide and tool page is now built as its own page with its own summary.',
+    icon: Rocket,
+    href: '/guides',
+    cta: 'Browse the guides',
   },
   {
-    title: '22 brand-new interactive tools',
+    title: '12 new guides in August',
     description:
-      'Scam Simulator, Medicare Plan Chooser, Bill Negotiator, Phone First Aid, and more — tiny apps that solve real problems in a few taps.',
-    icon: Wrench,
-    href: '/tools',
-    cta: 'Browse all tools',
-  },
-  {
-    title: '21 new guides for real-life tech',
-    description:
-      'From password managers to telehealth, AI voice-cloning scams to digital estate planning — written in plain English, no jargon ever.',
+      'Current scam alerts from the FTC, what to check in your Medicare Annual Notice of Change, borrowing free library audiobooks with Libby, setting up a Medical ID on your phone, and more.',
     icon: BookOpen,
     href: '/guides',
-    cta: 'Read the guides',
+    cta: 'Read the new guides',
+  },
+  {
+    title: 'Shorter sentences, clearer summaries',
+    description:
+      'We rewrote hundreds of guide summaries that were being cut off mid-sentence in search results, and simplified the guides that read hardest. Same facts, plainer wording.',
+    icon: Sparkles,
+    href: '/guides',
+    cta: 'See for yourself',
   },
 ];
 
 // ── Monthly releases (newest first) ──────────────────────────────────────────
 const RELEASES: MonthlyRelease[] = [
+  {
+    id: 'aug-2026',
+    label: 'August 2026',
+    summary: '12 new guides, plus a cleanup of summaries and claims across the site.',
+    groups: {
+      guide: [
+        { title: 'Youville: a free FTC game for grandkids', description: "The FTC's new tool teaches children 8 to 12 how to make good choices online. Written for grandparents to play along." },
+        { title: 'Your Medicare Annual Notice of Change', description: 'Plans mail the 2027 notice by September 30. Here are the five items worth reading before Open Enrollment opens October 15.' },
+        { title: 'Free library eBooks and audiobooks with Libby', description: 'Your library card already covers this. No charge, no subscription, and nothing is ever overdue.' },
+        { title: 'Type by speaking on Windows', description: 'Press two keys and Windows types what you say. Written for sore hands and slow typing.' },
+        { title: 'Set up a Medical ID on your phone', description: 'Conditions, medicines, and emergency contacts that paramedics can read while your phone stays locked.' },
+        { title: 'Easier reading with color filters and contrast', description: 'Windows settings for color blindness, glare, and tired eyes.' },
+        { title: 'Fake VA benefits calls', description: 'Filing a claim is always free. Here is how to tell a real Veterans Affairs contact from a scam.' },
+        { title: 'When Windows 10 support ended', description: 'What end of support actually means for a computer you still use, and what your options cost.' },
+        { title: 'Replacing a lost Medicare card', description: 'How to order a replacement for free, and why nobody legitimate calls to offer you a new one.' },
+      ],
+      improvement: [
+        { title: 'Guide summaries no longer get cut off', description: 'We shortened 283 summaries that search engines were truncating mid-sentence, so you can see what a guide covers before you click.' },
+      ],
+      fix: [
+        { title: 'Removed placeholder technician profiles', description: 'Some technician pages showed example names and a price that did not match our real pricing. They are gone.' },
+        { title: 'Simplified 28 hard-to-read guides', description: 'Long sentences split into shorter ones. No facts, steps, or prices changed.' },
+      ],
+    },
+  },
+  {
+    id: 'jul-2026',
+    label: 'July 2026',
+    summary: 'The month we made the site findable — and fixed pages that were quietly failing.',
+    groups: {
+      improvement: [
+        { title: 'Every page is built as a real page', description: 'Each guide and tool now ships with its own title, summary, and description instead of one generic entry for the whole site. This is why search results improved.' },
+        { title: 'Bigger tap targets and full keyboard access', description: 'Buttons and cards are now large enough to hit reliably, and every interactive card works from the keyboard alone.' },
+        { title: 'Corrected 18 dead source links', description: 'Guides that pointed at pages Apple, Microsoft, or an agency had moved now point to the current ones.' },
+      ],
+      fix: [
+        { title: 'About 2,400 guides had stopped loading', description: 'A hosting setting was turning guide addresses into errors for real visitors. Fixed, and now checked automatically every few hours.' },
+        { title: 'The /pricing page came back', description: 'A leftover redirect was sending it away even though the page existed.' },
+      ],
+      guide: [
+        { title: '30-plus new guides', description: 'Unpaid toll text scams, Geek Squad renewal scams, credit freezes, live captions, medication reminders, grocery loyalty apps, digital estate planning, Wi-Fi 7, and more.' },
+      ],
+    },
+  },
+  {
+    id: 'may-2026',
+    label: 'May 2026',
+    summary: 'A long run of everyday how-to guides for phones and streaming.',
+    groups: {
+      guide: [
+        { title: 'Name any song you hear with Shazam', description: 'Already built into the iPhone. No app to buy.' },
+        { title: 'Translate a menu or label with your camera', description: 'Point your phone at the words and read them in English.' },
+        { title: 'Take your first Uber or Lyft ride', description: 'What the screens look like, what it costs, and how to be sure the right car pulled up.' },
+        { title: 'Print from your phone with no computer', description: 'Works with most printers made in the last several years.' },
+        { title: 'Block and silence spam calls', description: 'The settings that actually reduce the number of calls, on both iPhone and Android.' },
+        { title: 'Set up an Amazon Echo for the first time', description: 'Plug it in, connect it, and learn the handful of commands worth knowing.' },
+        { title: 'Senior cell phone plans compared', description: 'What the carriers charge, and which discounts you have to ask for by name.' },
+        { title: 'Walgreens, Instacart, and Walmart pickup walkthroughs', description: 'Prescription refills and grocery orders, screen by screen.' },
+      ],
+    },
+  },
   {
     id: 'apr-2026',
     label: 'April 2026',

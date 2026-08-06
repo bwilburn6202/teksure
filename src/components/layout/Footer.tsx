@@ -44,11 +44,13 @@ export function Footer() {
     {
       title: 'Quick Help',
       links: [
+        { to: '/start', label: 'Start Here' },
         { to: '/tekbrain', label: 'Ask TekBrain' },
         { to: '/scam-defense', label: 'Scam Help' },
         { to: '/get-help', label: 'Book Help' },
         { to: '/tools', label: 'Find a Tool' },
         { to: '/glossary', label: 'Tech Glossary A–Z' },
+        { to: '/tech-problem-of-week', label: "This Week's Tech Problem" },
       ],
     },
     {
@@ -66,6 +68,7 @@ export function Footer() {
         { to: '/about', label: 'About TekSure' },
         { to: '/technicians', label: 'Book a Technician' },
         { to: '/volunteer', label: 'Volunteer' },
+        { to: '/whats-new', label: "What's New" },
         { to: 'mailto:hello@teksure.com', label: 'hello@teksure.com', external: true },
       ],
     },

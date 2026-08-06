@@ -35,24 +35,40 @@ interface TechProblem {
 }
 
 const CURRENT_PROBLEM: TechProblem = {
-  weekRange: 'April 14–20, 2026',
-  dateISO: '2026-04-14',
-  title: 'Widespread Facebook Password Reset Scam Emails',
+  weekRange: 'August 3–9, 2026',
+  dateISO: '2026-08-03',
+  title: 'Scammers Are Calling People Who Were Already Scammed',
   emoji: '',
   description:
-    'Scammers are blasting out fake "Facebook has detected suspicious activity on your account" emails. The emails look official — Facebook logo, professional formatting — but the reset link leads to a fake login page that steals your password. Reports have spiked this week across the US.',
+    'The FTC warned on August 3 about a second wave aimed at people who have already lost money. Scammers buy lists of earlier victims, then call or email offering to recover the money, the prize, or the merchandise that never arrived. To sound official they claim to be from a government agency, a consumer group, or a law firm. Some name the FTC itself.',
   howToCheck:
-    'Never click password reset links from email. Instead, open facebook.com (or the Facebook app) directly and check your notifications and security settings. If there was a real problem with your account, Facebook will tell you there.',
+    'Ask yourself one question: did I contact them, or did they contact me? A real government agency does not phone you to offer a refund, and never asks for a fee to release one. If a caller wants a "retainer fee," a "processing fee," or an "administrative charge" before you see any money, the call is the scam.',
   whatToDo:
-    'If you already clicked the link and entered your password, change it immediately at facebook.com > Settings > Security and Login. Turn on two-factor authentication while you are there. Report the email to the FTC at ReportFraud.ftc.gov.',
+    'Do not pay and do not share bank or card details. Hang up. Report it at ReportFraud.ftc.gov, which is free and is the actual FTC. If you already paid, call your bank or card company right away and ask about reversing the payment. Tell one person you trust — these calls work partly because embarrassment keeps people quiet.',
   source: {
-    label: 'FTC Consumer Alerts',
+    label: 'FTC Consumer Alerts — August 3, 2026',
     url: 'https://consumer.ftc.gov/consumer-alerts',
   },
   isCurrent: true,
 };
 
 const PAST_PROBLEMS: TechProblem[] = [
+  {
+    weekRange: 'April 14–20, 2026',
+    dateISO: '2026-04-14',
+    title: 'Widespread Facebook Password Reset Scam Emails',
+    emoji: '',
+    description:
+      'Scammers are blasting out fake "Facebook has detected suspicious activity on your account" emails. The emails look official — Facebook logo, professional formatting — but the reset link leads to a fake login page that steals your password. Reports spiked across the US in mid-April.',
+    howToCheck:
+      'Never click password reset links from email. Instead, open facebook.com (or the Facebook app) directly and check your notifications and security settings. If there was a real problem with your account, Facebook will tell you there.',
+    whatToDo:
+      'If you already clicked the link and entered your password, change it immediately at facebook.com > Settings > Security and Login. Turn on two-factor authentication while you are there. Report the email to the FTC at ReportFraud.ftc.gov.',
+    source: {
+      label: 'FTC Consumer Alerts',
+      url: 'https://consumer.ftc.gov/consumer-alerts',
+    },
+  },
   {
     weekRange: 'April 7–13, 2026',
     dateISO: '2026-04-07',
