@@ -102,6 +102,22 @@ export function TekBot() {
   const openButtonRef = useRef<HTMLButtonElement>(null);
   const enrichedRef = useRef<string>('');
   const devicePickerTriggerRef = useRef<HTMLButtonElement>(null);
+  const devicePickerRef = useRef<HTMLDivElement>(null);
+
+  // Close the device picker when the user clicks anywhere outside it. This used to
+  // be an onClick on the chat transcript, which made a role="log" live region look
+  // clickable to assistive tech while giving keyboard users nothing. Escape is
+  // handled on the trigger button and on the listbox itself.
+  useEffect(() => {
+    if (!showDevicePicker) return;
+    const onPointerDown = (e: PointerEvent) => {
+      if (!devicePickerRef.current?.contains(e.target as Node)) {
+        setShowDevicePicker(false);
+      }
+    };
+    document.addEventListener('pointerdown', onPointerDown);
+    return () => document.removeEventListener('pointerdown', onPointerDown);
+  }, [showDevicePicker]);
 
   /* ── Agent Memory ─────────────────────────────────────────── */
   const memory = useAgentMemory();
@@ -440,7 +456,7 @@ export function TekBot() {
                 )}
 
                 {/* Device picker */}
-                <div className="relative">
+                <div className="relative" ref={devicePickerRef}>
                   <button
                     ref={devicePickerTriggerRef}
                     onClick={() => setShowDevicePicker(v => !v)}
@@ -526,7 +542,6 @@ export function TekBot() {
               aria-label="Chat messages"
               className="flex-1 overflow-y-auto p-4 space-y-3"
               style={{ backgroundColor: 'hsl(210 25% 97%)' }}
-              onClick={() => setShowDevicePicker(false)}
             >
               {messages.map((msg, i) => (
                 <div key={i} className={`flex flex-col ${msg.role === 'user' ? 'items-end' : 'items-start'}`}>

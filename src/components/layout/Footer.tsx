@@ -270,7 +270,7 @@ export function Footer() {
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="Follow TekSure on Facebook"
-                className="inline-flex items-center justify-center h-9 w-9 rounded-full text-foreground/65 hover:text-primary hover:bg-white dark:hover:bg-background transition-colors"
+                className="inline-flex items-center justify-center h-11 w-11 rounded-full text-foreground/65 hover:text-primary hover:bg-white dark:hover:bg-background transition-colors"
               >
                 <Facebook className="h-5 w-5" aria-hidden="true" />
               </a>
@@ -279,7 +279,7 @@ export function Footer() {
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="Subscribe to TekSure on YouTube"
-                className="inline-flex items-center justify-center h-9 w-9 rounded-full text-foreground/65 hover:text-primary hover:bg-white dark:hover:bg-background transition-colors"
+                className="inline-flex items-center justify-center h-11 w-11 rounded-full text-foreground/65 hover:text-primary hover:bg-white dark:hover:bg-background transition-colors"
               >
                 <Youtube className="h-5 w-5" aria-hidden="true" />
               </a>

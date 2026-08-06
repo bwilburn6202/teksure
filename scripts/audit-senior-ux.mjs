@@ -57,9 +57,19 @@ for (const f of files) {
   const xs = (text.match(/\btext-xs\b/g) || []).length;
   if (xs > 0) tinyText.push({ file: rel, count: xs });
 
-  const small = (text.match(/className="[^"]*\b(h-8|h-9)\b[^"]*"/g) || []).filter((m) =>
-    /\b(button|Button)\b/i.test(text.slice(Math.max(0, text.indexOf(m) - 200), text.indexOf(m)))
-  ).length;
+  // Tap targets under 44px. The size class has to be on the interactive element
+  // itself — an earlier version looked 200 characters backwards for the word
+  // "button", which flagged decorative aria-hidden icons that merely sat near one.
+  // Both files it reported on 2026-08-06 were `<Search className="h-8 w-8" />`
+  // placeholder glyphs, not controls.
+  let small = 0;
+  for (const tag of text.match(/<(?:button|a|Button)\b[^>]{0,600}?>/gs) || []) {
+    if (/aria-hidden=\{?["']?true/.test(tag)) continue;
+    if (/\b(?:h-8|h-9|min-h-8|min-h-9)\b/.test(tag)) small++;
+  }
+  for (const tag of text.match(/<[A-Za-z][^>]{0,600}?role=["']button["'][^>]{0,600}?>/gs) || []) {
+    if (/\b(?:h-8|h-9|min-h-8|min-h-9)\b/.test(tag)) small++;
+  }
   if (small > 0) smallTargets.push({ file: rel, count: small });
 
   for (const img of text.match(/<img\b[^>]*>/g) || []) {
@@ -90,8 +100,31 @@ for (const f of files) {
     }
     const tag = end === -1 ? '' : text.slice(idx, end + 1);
     if (tag && /\sonClick=/.test(tag)) {
+      // A div with onClick is only a keyboard problem when the click is the ONLY
+      // way to trigger something. Three patterns are not problems, and counting
+      // them made this number meaningless — on 2026-08-06 all 7 flagged files
+      // turned out to be one of these, including a lightbox that already handles
+      // Escape and ships a 44px labelled close button.
+      //
+      //   1. The handler only calls stopPropagation, i.e. it shields content from
+      //      a parent's click-away. It triggers nothing, so there is nothing to
+      //      reach by keyboard.
+      //   2. The element is aria-hidden, i.e. a decorative backdrop. Assistive
+      //      tech never sees it; the real control is elsewhere.
+      //   3. It is a click-away dismissal on an overlay in a file that also
+      //      handles the Escape key. Escape IS the keyboard equivalent of
+      //      clicking the backdrop.
+      const shieldOnly = /onClick=\{\s*(?:\(?\s*e\s*\)?|event)\s*=>\s*e(?:vent)?\.stopPropagation\(\)\s*\}/.test(tag);
+      const decorative = /aria-hidden=\{?["']?true/.test(tag);
+      const fileHandlesEscape = /['"`]Escape['"`]/.test(text);
+      const isOverlay = /role=["']dialog["']/.test(tag) || /\bfixed\b[^"']*\binset-0\b/.test(tag) || /position:\s*['"]fixed['"]/.test(tag);
+      const dismissable = fileHandlesEscape && isOverlay;
+
       const accessible =
-        /\brole=/.test(tag) && (/\btabIndex=/.test(tag) || /\bonKeyDown=/.test(tag));
+        (/\brole=/.test(tag) && (/\btabIndex=/.test(tag) || /\bonKeyDown=/.test(tag))) ||
+        shieldOnly ||
+        decorative ||
+        dismissable;
       if (!accessible) {
         divClicks.push({
           file: rel,
