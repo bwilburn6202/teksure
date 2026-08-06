@@ -1213,3 +1213,67 @@ Resolved by the CLAUDE.md fallback: fresh shallow clone in /tmp, copy the six ch
 3. Decide the readability question rather than re-litigating it daily: accept 8.3, or schedule one bulk pass.
 4. Two unresolved filesystem items, both needing Bailey on the real Mac: the orphaned lowercase `src/pages/tools/SeniorVoicemail.tsx`, and the ~100 accumulated `*.timestamp-*.mjs` / `*.stale*` / `dist.stale*` files that the sandbox cannot unlink.
 5. Monetization credentials remain the single highest-value human step left in the sprint.
+
+---
+
+## 2026-08-06 — Day 87 of 90
+
+### What this session actually changed
+Two things, both verifiable: the last remaining dev-loop content warning is now nearly closed, and six new guides shipped. Landed as `4897e9f` on `main`.
+
+### Overlong excerpts: 283 → 0
+This warning had been open for at least four cycles and the last session's note called it "low value, leave." That call was wrong, and worth correcting for the record: `excerpt` is the `<meta name="description">` on every guide page, so 283 guides were shipping descriptions that search engines cut off mid-sentence — at the exact moment a stranger decides whether to click. It is a discoverability defect, not a style nit, and the 90-day traffic target is the thing it was costing.
+
+Fixed in two passes:
+
+1. **New script `scripts/fix-long-excerpts.mjs`** (244 of 283). It trims to the last complete sentence that fits inside 160 characters; failing that, to a clause boundary closed with a period; failing that, it refuses to touch the excerpt. That third rule is the important one — an earlier draft cut at word boundaries and produced things like "make your connection more." Nothing is rewritten, only trailing clauses dropped, so it is safe to re-run unattended and should be added to the pre-commit habit for new batches.
+2. **39 hand-rewrites.** The remainder were single sentences of 161–177 characters with no internal cut point, so a script could only mangle them. Each was shortened by hand with no change to facts, product names, or numbers.
+
+Dev-loop now reports **0 excerpts over 160** (was 283, worst 177).
+
+### Guides added (6) — batch 334
+File `src/data/guides-batch-334.ts`, imported and spread in `guides.ts`:
+
+- `teach-grandkids-online-choices-youville` — the FTC's Youville tool for ages 8–12, announced 2026-08-05. Framed for grandparents, which is the version of this that does not exist elsewhere.
+- `medicare-annual-notice-of-change-what-to-check` — plans must mail the 2027 ANOC by 2026-09-30, and Open Enrollment is 2026-10-15 → 2026-12-07. Timed to land before the envelopes do.
+- `borrow-library-ebooks-audiobooks-libby` — Libby. Genuinely free, and a gap in a 4,000-guide corpus.
+- `windows-11-voice-typing-dictation` — Win+H. Written for stiff hands rather than for productivity.
+- `set-up-medical-id-phone-emergency` — iPhone Health app and Android Safety & emergency, including the caution about what *not* to put in a lock-screen-readable field.
+- `windows-color-filters-easier-reading` — color filters, contrast themes, text size.
+
+All six carry an official `sourceUrl` (FTC, Medicare.gov, Microsoft Support, Apple Support, Libby help), a YouTube channel reference, and step-level plain-language detail. Topic selection was checked against the full 4,043-slug list first — four candidate topics (utility scams, data-breach checks, recovery scams, Medicare open enrollment prep) were dropped as already covered, which is now the normal outcome at this corpus size.
+
+### Readability warning — deferred on purpose
+Last session recommended stopping the daily 5-guide readability chore. Followed that. Average is 8.3, 58.5% above grade 8, and it moves ~0.1pp per hand-pass. It needs one scripted bulk pass or an accepted number, not more sessions of theater. Flagging it as a decision for Bailey, not a task.
+
+### Verification
+`tsc --noEmit` clean · 104/104 tests · validate-slugs 4,049 unique across 328 files · dev-loop dry run green except the readability warning.
+
+**`npm run build` OOM'd again (exit 137, killed at "rendering chunks").** Fourth consecutive session. The sandbox has 3.9 GB total and `--max-old-space-size=3200` did not save it. The prebuild half completed and its outputs are committed (sitemap 7,130 URLs, llms.txt). This is now the longest-standing unverified thing in the sprint and it needs a machine with ≥8 GB, once.
+
+### Git
+Pushed cleanly from a fresh `/tmp` clone, then copied all 88 changed files back into `/Users/baileywilburn/Documents/Claude/Projects/TekSure` (88 of 88 succeeded). Two notes for whoever runs next:
+
+- **`git reset --hard` is impossible on this mount.** It failed on `unable to unlink old <tracked file>` for ordinary tracked files, not only lock files. The documented `mv` workaround clears `index.lock`/`HEAD.lock` but does not help here. So last session's "reset local to origin/main first" instruction cannot be carried out from the sandbox — the /tmp-clone-plus-copy pattern is the only working path and should be treated as the standard procedure, not a fallback.
+- The local tree's *content* now matches `origin/main`, but its branch pointer is still on the two stale commits (`c03bcf7`, `1ef1986`). Only Bailey on the real Mac can straighten the pointer.
+- Push needed the token from the local repo's `remote.origin.url`; a bare `git push` from /tmp fails with "could not read Username."
+
+### Running totals vs 90-day targets (4 days left)
+| Metric | Target (2026-08-10) | Current | Status |
+|---|---|---|---|
+| Guides | 4,500 | 4,049 | Closed out as missed 2026-08-04 (Bailey's call); +6 today |
+| Tools | 200+ | 285 | Met |
+| Excerpts >160 chars | — | **0** (was 283) | Closed today |
+| TypeScript / slugs / links | clean | 0 / 0 / 0 | OK |
+| Readability | avg ≤8 | 8.3, 58.5% above | Open decision, not a task |
+| Traffic | 10,000/mo | Not measured | Analytics still unwired |
+| Monetization | AdSense or 3 affiliates | None | Blocked on credentials |
+| Ollama | Hosted active | Not active | Blocked on Hetzner CX22 |
+| Local build verified | yes | No — 4 sessions | Needs a bigger machine |
+
+### Blockers / next-day priorities
+1. **Monetization credentials.** Unchanged for weeks and still the highest-value human step left in the sprint. Nothing in the pipeline can substitute for it.
+2. **One full `npm run build` on real hardware.** Four sessions of unverified builds is the largest silent risk to the live site.
+3. **Decide the readability question** — accept 8.3 or authorize a scripted bulk pass.
+4. Wire up analytics, or the traffic target stays unmeasurable rather than unmet.
+5. Housekeeping only Bailey can do on the Mac: the diverged local branch pointer, the orphaned lowercase `src/pages/tools/SeniorVoicemail.tsx`, and ~100 `*.timestamp-*.mjs` / `*.stale*` / `dist.stale*` files the sandbox cannot unlink.
