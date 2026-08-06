@@ -1277,3 +1277,27 @@ Pushed cleanly from a fresh `/tmp` clone, then copied all 88 changed files back 
 3. **Decide the readability question** — accept 8.3 or authorize a scripted bulk pass.
 4. Wire up analytics, or the traffic target stays unmeasurable rather than unmet.
 5. Housekeeping only Bailey can do on the Mac: the diverged local branch pointer, the orphaned lowercase `src/pages/tools/SeniorVoicemail.tsx`, and ~100 `*.timestamp-*.mjs` / `*.stale*` / `dist.stale*` files the sandbox cannot unlink.
+
+### Second run, same day (2026-08-06) — stale public pages and orphaned routes
+
+Landed as `256f0f4f`.
+
+**Found while looking at the 9 orphaned routes.** Three of them were not admin plumbing — they were finished, SEO'd, user-facing pages with zero inbound links anywhere on the site: `/start`, `/whats-new`, and `/tech-problem-of-week`. My first instinct was to link them from the footer and move on. That would have been a mistake, because two of the three were badly out of date:
+
+- `/tech-problem-of-week` promises "Updated weekly." Its newest entry was **2026-04-14** — nearly four months old, and its current-week slot was still showing an April Facebook phishing wave as if it were happening now.
+- `/whats-new` had "This Month" featured content from April 2026, and its release history stopped at April.
+
+Linking those from the footer would have taken two pages nobody saw and put them where everybody sees them, which is worse than leaving them orphaned. So the order was: fix, then link.
+
+**What changed:**
+1. `/tech-problem-of-week` — new current entry for August 3–9, 2026, on the FTC's August 3 warning about scammers targeting people who *already* lost money to a scam (fake refund and recovery offers, some impersonating the FTC itself). The April entry was demoted into the past list and its "reports have spiked this week" line corrected to past tense.
+2. `/whats-new` — "This Month" rewritten around what actually shipped recently (per-page prerendering, August's 12 guides, the excerpt and readability work), plus three new monthly release sections for August, July, and May 2026 written from the real git history. **June was deliberately left out** rather than filled in — that was the dormancy gap, nothing shipped, and inventing entries would make the page a liability instead of a record.
+3. Footer — added Start Here, This Week's Tech Problem, and What's New.
+
+Orphaned routes: **9 → 6**. The remaining six are `/admin/knowledge-base`, `/llm-knowledge-base`, `/memory`, `/opportunity-dashboard`, and the two Stripe payment callbacks — internal by design, which matches the floor CLAUDE.md describes.
+
+**Standing risk this surfaced:** `/tech-problem-of-week` will be stale again in a week and `/whats-new` in a month. Neither is on any scheduled task. Either the weekly content task should own the first and the monthly task the second, or both pages should drop the promise of a cadence. Right now the site is making a commitment nothing keeps. Recommend wiring them into `weekly-tip-scam-alert` and `monthly-feature-build` — that is a small edit to two task files and it prevents this from recurring.
+
+**Build, third attempt today:** `npx vite build --minify false` also died, this time as a V8 heap OOM (exit 134) rather than an OS kill. Worth recording as a diagnostic: **minification is not the cause.** The client build itself cannot fit in this sandbox's 3.9 GB regardless of flags. This needs a machine with ≥8 GB once; no amount of flag-tuning here will substitute.
+
+Verification for this run: tsc clean, 104/104 tests, link audit 0 broken / 6 orphans.
