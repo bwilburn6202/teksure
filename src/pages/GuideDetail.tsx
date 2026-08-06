@@ -232,7 +232,7 @@ const StepScreenshot = ({
         {annotations && annotations.length > 0 && (
           <div className="bg-muted/50 border-t border-border px-4 py-2 flex flex-wrap gap-3">
             {annotations.filter(a => a.label && a.type !== 'highlight').map((a, i) => (
-              <span key={i} className="flex items-center gap-1.5 text-xs text-muted-foreground">
+              <span key={i} className="flex items-center gap-1.5 text-sm text-muted-foreground">
                 {a.type === 'callout' && (
                   <span className="inline-flex items-center justify-center w-5 h-5 rounded-full bg-red-500 text-white text-[11px] font-bold shrink-0">
                     {a.label}
@@ -285,7 +285,7 @@ const CompletionBanner = ({ guideTitle, slug }: { guideTitle: string; slug: stri
         <p className="text-sm text-muted-foreground">You've finished reading: <strong>{guideTitle}</strong></p>
       </div>
       <MasteryPicker slug={slug} />
-      <p className="text-xs text-muted-foreground mt-4 text-center">
+      <p className="text-sm text-muted-foreground mt-4 text-center">
         Need more help? <Link to="/book" className="text-primary hover:underline font-medium">Book a TekSure tech <span aria-hidden="true">→</span></Link>
       </p>
     </div>
@@ -474,7 +474,7 @@ const GuideDetail = () => {
       {guide.steps && guide.steps.length > 1 && (
         <div className="sticky top-14 z-40 bg-background/95 backdrop-blur border-b border-border no-print">
           <div className="container max-w-4xl py-2 flex items-center gap-3">
-            <span className="text-xs font-medium text-muted-foreground whitespace-nowrap">
+            <span className="text-sm font-medium text-muted-foreground whitespace-nowrap">
               Step {activeStep + 1} of {guide.steps.length}
             </span>
             <Progress value={((activeStep + 1) / guide.steps.length) * 100} className="h-2 flex-1" />
@@ -568,31 +568,31 @@ const GuideDetail = () => {
           {/* At a Glance — quick facts card */}
           <Card className="mb-6 border-primary/20 bg-gradient-to-br from-primary/5 to-transparent">
             <CardContent className="py-5 px-5">
-              <p className="text-xs uppercase tracking-wider font-semibold text-primary mb-3">At a Glance</p>
+              <p className="text-sm uppercase tracking-wider font-semibold text-primary mb-3">At a Glance</p>
               <div className="grid grid-cols-2 sm:grid-cols-4 gap-4 text-sm">
                 <div>
-                  <div className="text-xs text-muted-foreground mb-0.5">Category</div>
+                  <div className="text-sm text-muted-foreground mb-0.5">Category</div>
                   <div className="font-medium">{categoryLabels[guide.category]}</div>
                 </div>
                 <div>
-                  <div className="text-xs text-muted-foreground mb-0.5">Difficulty</div>
+                  <div className="text-sm text-muted-foreground mb-0.5">Difficulty</div>
                   <div className="font-medium">{guide.difficulty ?? 'Beginner'}</div>
                 </div>
                 <div>
-                  <div className="text-xs text-muted-foreground mb-0.5">Read Time</div>
+                  <div className="text-sm text-muted-foreground mb-0.5">Read Time</div>
                   <div className="font-medium">{estimatedReadTime}</div>
                 </div>
                 <div>
-                  <div className="text-xs text-muted-foreground mb-0.5">Steps</div>
+                  <div className="text-sm text-muted-foreground mb-0.5">Steps</div>
                   <div className="font-medium">{guide.steps?.length ?? 0}</div>
                 </div>
               </div>
               {guide.tags && guide.tags.length > 0 && (
                 <div className="mt-4 pt-4 border-t border-border/50">
-                  <div className="text-xs text-muted-foreground mb-2">Topics covered</div>
+                  <div className="text-sm text-muted-foreground mb-2">Topics covered</div>
                   <div className="flex flex-wrap gap-1.5">
                     {guide.tags.slice(0, 8).map((tag) => (
-                      <Badge key={tag} variant="outline" className="text-xs font-normal">
+                      <Badge key={tag} variant="outline" className="text-sm font-normal">
                         {tag}
                       </Badge>
                     ))}
@@ -653,7 +653,7 @@ const GuideDetail = () => {
                               return Icon ? <Icon className="h-[18px] w-[18px] text-primary/70 shrink-0" /> : null;
                             })()}
                             <h3 className="font-bold text-lg">{step.title}</h3>
-                            <span className="text-xs text-muted-foreground ml-auto shrink-0">{calcStepTime(step)}</span>
+                            <span className="text-sm text-muted-foreground ml-auto shrink-0">{calcStepTime(step)}</span>
                           </div>
                           <div className="text-base text-foreground leading-relaxed">
                             <StepContent text={step.content} />
@@ -744,7 +744,7 @@ const GuideDetail = () => {
           <div className="flex flex-wrap items-center gap-2 mb-8">
             <Tag className="h-4 w-4 text-muted-foreground" />
             {guide.tags.map(tag => (
-              <Badge key={tag} variant="outline" className="text-xs">{tag}</Badge>
+              <Badge key={tag} variant="outline" className="text-sm">{tag}</Badge>
             ))}
           </div>
 
@@ -762,14 +762,14 @@ const GuideDetail = () => {
                     href={r.url}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-background border border-border text-xs font-medium text-muted-foreground hover:text-primary hover:border-primary/30 transition-colors"
+                    className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-background border border-border text-sm font-medium text-muted-foreground hover:text-primary hover:border-primary/30 transition-colors"
                   >
                     {r.label}
                     <ExternalLink className="h-3 w-3 opacity-50" />
                   </a>
                 ))}
               </div>
-              <p className="text-xs text-muted-foreground mt-3">
+              <p className="text-sm text-muted-foreground mt-3">
                 Sources used to create and verify this guide. <a href="/sources" className="text-primary hover:underline">View all sources →</a>
               </p>
             </div>
@@ -781,7 +781,7 @@ const GuideDetail = () => {
               <Link to={`/guides/${prevGuide.slug}`} className="group">
                 <Card className="h-full hover:shadow-md transition-shadow">
                   <CardContent className="py-4">
-                    <p className="text-xs text-muted-foreground mb-1">← Previous</p>
+                    <p className="text-sm text-muted-foreground mb-1">← Previous</p>
                     <p className="text-sm font-medium group-hover:text-primary transition-colors line-clamp-2">{prevGuide.title}</p>
                   </CardContent>
                 </Card>
@@ -791,7 +791,7 @@ const GuideDetail = () => {
               <Link to={`/guides/${nextGuide.slug}`} className="group text-right">
                 <Card className="h-full hover:shadow-md transition-shadow">
                   <CardContent className="py-4">
-                    <p className="text-xs text-muted-foreground mb-1">Next →</p>
+                    <p className="text-sm text-muted-foreground mb-1">Next →</p>
                     <p className="text-sm font-medium group-hover:text-primary transition-colors line-clamp-2">{nextGuide.title}</p>
                   </CardContent>
                 </Card>
@@ -833,7 +833,7 @@ const GuideDetail = () => {
                         className="text-sm text-primary hover:underline inline-flex items-center gap-1.5"
                       >
                         {r.title}
-                        <span className="text-xs text-muted-foreground">— {r.source}</span>
+                        <span className="text-sm text-muted-foreground">— {r.source}</span>
                         <ExternalLink className="h-3 w-3 opacity-50" />
                       </a>
                     </li>
@@ -854,8 +854,8 @@ const GuideDetail = () => {
                       <CardContent className="pt-5">
                         <img src={getGuideThumbnailSmall(g)} alt="" className="w-10 h-10 rounded-lg object-cover mb-2" loading="lazy" />
                         <p className="text-sm font-medium group-hover:text-primary transition-colors line-clamp-2">{g.title}</p>
-                        <p className="text-xs text-muted-foreground mt-1 line-clamp-2">{g.excerpt}</p>
-                        <p className="text-xs text-muted-foreground mt-1">{calcReadTime(g)}</p>
+                        <p className="text-sm text-muted-foreground mt-1 line-clamp-2">{g.excerpt}</p>
+                        <p className="text-sm text-muted-foreground mt-1">{calcReadTime(g)}</p>
                       </CardContent>
                     </Card>
                   </Link>

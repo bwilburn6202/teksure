@@ -102,7 +102,7 @@ const GuideCard = ({ guide, completed }: { guide: typeof guides[0]; completed?: 
           </div>
         )}
         {guide.difficulty && (
-          <span className={`absolute top-2 left-2 text-xs font-semibold px-2 py-0.5 rounded-full ${
+          <span className={`absolute top-2 left-2 text-sm font-semibold px-2 py-0.5 rounded-full ${
             guide.difficulty === 'Beginner' ? 'bg-green-100 text-green-700 dark:bg-green-900/80 dark:text-green-300' :
             guide.difficulty === 'Intermediate' ? 'bg-amber-100 text-amber-700 dark:bg-amber-900/80 dark:text-amber-300' :
             'bg-red-100 text-red-700 dark:bg-red-900/80 dark:text-red-300'
@@ -113,15 +113,15 @@ const GuideCard = ({ guide, completed }: { guide: typeof guides[0]; completed?: 
       </div>
       <div className="p-4">
         <div className="flex items-center gap-2 mb-2 flex-wrap">
-          <Badge variant="secondary" className="text-xs font-medium">
+          <Badge variant="secondary" className="text-sm font-medium">
             {categoryLabels[guide.category]}
           </Badge>
           {guide.verifiedHelpful && (
-            <Badge variant="outline" className="text-xs border-green-500/50 text-green-600 dark:text-green-400 gap-1">
+            <Badge variant="outline" className="text-sm border-green-500/50 text-green-600 dark:text-green-400 gap-1">
               <CheckCircle2 className="h-2.5 w-2.5" /> Verified Helpful
             </Badge>
           )}
-          <span className="flex items-center gap-1 text-xs text-muted-foreground">
+          <span className="flex items-center gap-1 text-sm text-muted-foreground">
             <Clock className="h-2.5 w-2.5" /> {guide.readTime}
           </span>
         </div>
@@ -153,16 +153,16 @@ const GuideListItem = ({ guide, completed }: { guide: typeof guides[0]; complete
       <div className="flex-1 min-w-0">
         <p className="text-sm font-medium group-hover:text-primary transition-colors truncate">{guide.title}</p>
       </div>
-      <Badge variant="secondary" className="text-xs font-medium shrink-0 hidden sm:inline-flex">
+      <Badge variant="secondary" className="text-sm font-medium shrink-0 hidden sm:inline-flex">
         {categoryLabels[guide.category]}
       </Badge>
-      <span aria-label={guide.difficulty ? `Difficulty: ${guide.difficulty}` : undefined} className={`text-xs font-medium shrink-0 hidden md:inline ${
+      <span aria-label={guide.difficulty ? `Difficulty: ${guide.difficulty}` : undefined} className={`text-sm font-medium shrink-0 hidden md:inline ${
         guide.difficulty === 'Beginner' ? 'text-green-600' :
         guide.difficulty === 'Intermediate' ? 'text-amber-600' : 'text-red-500'
       }`}>
         <span aria-hidden="true">{guide.difficulty === 'Beginner' ? '●' : guide.difficulty === 'Intermediate' ? '●●' : '●●●'}</span>
       </span>
-      <span className="text-xs text-muted-foreground shrink-0 w-12 text-right">{guide.readTime}</span>
+      <span className="text-sm text-muted-foreground shrink-0 w-12 text-right">{guide.readTime}</span>
       {completed && <CheckCircle2 className="h-3.5 w-3.5 text-green-500 shrink-0" />}
     </div>
   </Link>
@@ -217,7 +217,7 @@ function GuidesEmptyState({
             <button
               key={term}
               onClick={() => onSearch(term)}
-              className="rounded-full border border-border bg-muted px-3 py-1 text-xs font-medium hover:bg-primary/10 hover:border-primary/30 transition-colors"
+              className="rounded-full border border-border bg-muted px-3 py-1 text-sm font-medium hover:bg-primary/10 hover:border-primary/30 transition-colors"
             >
               {term}
             </button>
@@ -344,7 +344,7 @@ function FeaturedCard({ slot }: { slot: FeaturedSlot }) {
           <slot.Icon className="h-8 w-8 md:h-10 md:w-10 text-primary" />
         </span>
         <div className="flex-1 min-w-0">
-          <p className="text-xs font-bold uppercase tracking-wider text-foreground/60 mb-1">
+          <p className="text-sm font-bold uppercase tracking-wider text-foreground/60 mb-1">
             Featured
           </p>
           <h3 className="font-bold text-xl md:text-2xl leading-tight mb-2 group-hover:text-primary transition-colors">
