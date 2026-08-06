@@ -15,6 +15,7 @@ node scripts/dev-loop.mjs --once --dry-run     # health, links, duplicates, read
 node scripts/audit-senior-ux.mjs               # reading level, type size, a11y
 head -60 .claude/dev-loop-backlog.md           # what previous cycles found
 git log --oneline -15                          # what changed recently
+grep -m1 "dateISO" src/pages/TechProblemOfWeek.tsx  # is the weekly page actually weekly?
 ```
 
 Then check what the outside world sees — the site is useless if it cannot be found:
@@ -35,10 +36,15 @@ Rank candidate work by how many real people it helps:
 1. **Anything broken in production** — a crashing page, a dead link, a failed deploy.
 2. **Anything blocking discovery** — missing/duplicate titles, prerender regressions,
    sitemap staleness, robots mistakes. Content nobody can find has zero value.
-3. **Readability of existing guides** — currently ~78% sit above grade 8. Improving an
-   existing guide that already gets traffic beats adding a 4,001st guide.
-4. **Gaps in coverage** the audience actually searches for (`seo-opportunity-scan.md`).
-5. **New features** — only when the four above are clean.
+3. **Pages that promise a cadence and are not keeping it.** `/tech-problem-of-week`
+   says "Updated weekly" and `/whats-new` shows "This Month"; both are linked from the
+   footer, so a stale entry is a visible broken promise rather than a private one. See
+   `refresh-cadence-pages.md`. Cheap to fix, and credibility is hard to earn back.
+4. **Readability of existing guides** — currently ~59% sit above grade 8 (down from
+   ~78% in July). Improving an existing guide that already gets traffic beats adding a
+   4,001st guide.
+5. **Gaps in coverage** the audience actually searches for (`seo-opportunity-scan.md`).
+6. **New features** — only when the five above are clean.
 
 Write down the choice and the reason before starting. If the honest answer is
 "nothing is broken and coverage is good", improving readability is always available.
@@ -52,7 +58,7 @@ change reviewable: one coherent theme per commit.
 
 Re-run the same measurements and state the delta plainly:
 
-> Reading grade 9.5 → 9.2; guides above grade 8: 78.1% → 74.4%; 104/104 tests pass.
+> Reading grade 8.4 → 8.3; guides above grade 8: 58.6% → 58.5%; 104/104 tests pass.
 
 Then:
 

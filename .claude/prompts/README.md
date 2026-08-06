@@ -23,6 +23,7 @@ Or point a scheduled task at one (see `.claude/scheduled/`).
 | `write-new-guide.md` | Adding content. Enforces schema, voice, sourcing, and internal linking. |
 | `seo-opportunity-scan.md` | Deciding what to write next based on real search demand. |
 | `ux-cohesion-review.md` | A page or flow feels inconsistent or hard for the audience. |
+| `refresh-cadence-pages.md` | Weekly. `/tech-problem-of-week` and `/whats-new` advertise a schedule and go stale on their own. |
 | `fix-from-dev-loop.md` | The dev-loop backlog has warnings nobody has acted on. |
 
 ## Ground rules that apply to all of them

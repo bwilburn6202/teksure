@@ -56,4 +56,13 @@ tsc_check_local.json
 # FUSE mount temp files / vitest timestamps
 .fuse_hidden*
 vitest.config.ts.timestamp-*
+
+# Sandbox leftovers: this mount cannot unlink some files, so sessions rename them
+# out of the way instead (see CLAUDE.md). Keep them out of the index.
+*.stale-*
+*.stale2-*
+*.stale3-*
+*.old-[0-9]*
+dist.stale*
+.git/*.lock.*
 scripts/revert-require-swap.mjs
