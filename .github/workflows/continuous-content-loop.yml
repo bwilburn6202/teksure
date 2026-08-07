@@ -5,8 +5,11 @@ name: TekSure continuous-content-loop
 # a draft pull request rather than going straight to main.
 
 on:
-  schedule:
-    - cron: '17 * * * *'
+  # DISABLED 2026-08-06 — ran hourly (24 content cycles/day) against the
+  # quality-over-count policy set on 2026-08-04. Manual runs still work via
+  # workflow_dispatch. Re-enable only on an explicit decision to resume volume.
+  # schedule:
+  #   - cron: '17 * * * *'
   workflow_dispatch:
     inputs:
       action:

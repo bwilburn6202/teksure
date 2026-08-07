@@ -7,8 +7,11 @@ name: TekSure creative-loop
 # Manually triggerable from the Actions tab via "Run workflow."
 
 on:
-  schedule:
-    - cron: '23 14 * * *'
+  # DISABLED 2026-08-06 — auto-generated guides daily and pushed straight to
+  # main. Superseded by gap-driven content in teksure-loop. Manual runs still
+  # work via workflow_dispatch.
+  # schedule:
+  #   - cron: '23 14 * * *'
   workflow_dispatch:
     inputs:
       cycles:
