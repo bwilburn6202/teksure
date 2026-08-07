@@ -8,6 +8,61 @@ Newest cycles appear at the top.
 
 ---
 
+
+## Cycle 70 — 2026-08-07 (scheduled maintenance run, Cowork sandbox)
+
+### [alarm] The local mount was 18 commits behind origin/main
+The whole cycle initially ran against a stale working copy: it reported 3748 guides / 4037 sitemap
+guide URLs and a "missing 12 guides" sitemap bug that **does not exist on origin/main** (remote is
+correct at 4049 guides / 7130 URLs). Cycles 65-69, the text-xs fix, the cadence-page footer links and
+the site-stats derivation had all already shipped from another machine.
+
+Nothing was pushed — there was nothing to push. The redundant local commit was discarded and the
+mount was resynced to `origin/main` (47ee715).
+
+**Any future run must `git fetch && git status` against origin BEFORE measuring.** Measuring a stale
+mount produces confident, wrong findings.
+
+### [note] The mount's git index cannot be written
+`.git/index.lock` and `.git/HEAD.lock` cannot be unlinked (mount refuses `unlink` — the documented
+`mv`-aside workaround only half-works here). `git reset --hard` and `git checkout -f` both exit 0
+while silently failing to update the index. The branch ref was moved with `git update-ref` and the
+divergent files were restored by copying them out of a fresh clone.
+
+Consequence: **the index is stale and shows phantom staged additions**
+(`LAUNCH-PLAN-2-WEEKS-2026-08-06.md`, `scripts/generate-site-stats.mjs`, `tsc_check_local.json`,
+`zz-staletest-REMOVE.ts.bak`, a pile of `vite.config.ts.timestamp-*.mjs`). Do NOT run `git add -A` on
+this mount — it will commit that junk. Stage explicit paths only.
+
+`scripts/generate-site-stats.mjs` in particular is a superseded local-only approach; origin/main
+derives `GUIDE_COUNT`/`TOOL_COUNT` from `guides.length` at runtime and does not reference the script.
+
+### [ok] Health against origin/main content
+4049 guides, 4049 unique slugs, 285 tools, sitemap 7130 URLs (4049 guides). 104/104 tests pass.
+0 broken internal link targets. 6 orphaned routes — all intentional (`/admin/knowledge-base`,
+`/llm-knowledge-base`, `/memory`, `/opportunity-dashboard`, `/payment/cancel`, `/payment/success`);
+not a discovery problem, no change made.
+
+### [ok] Cadence pages current — no action
+TechProblemOfWeek `dateISO: '2026-08-03'` (3 days old, inside the window); WhatsNew top entry
+`aug-2026`. Refreshing either would have meant inventing a scam or a release.
+
+### [skipped] Readability — still Bailey's decision
+avg grade 8.3, 58.5% above grade 8, 493 guides above grade 10. No hand pass (0.1pp of theatre) and no
+blind splitter run (improves the metric, degrades prose). **Decide: fund a reviewed scripted bulk
+pass, or accept 8.3 and stop surfacing it as a warning every cycle.**
+
+### Not verified this cycle
+- `npm run build` — not run. Needs >=8GB.
+- `npx tsc --noEmit -p tsconfig.app.json` — **OOM'd and core-dumped** in the sandbox. The dev-loop's
+  plain `npx tsc --noEmit` pass ran clean on the (stale) tree, so TypeScript is believed healthy, but
+  the project-config compile against current origin/main was not verified.
+
+### Blockers (unchanged)
+Analytics wiring unverified · AdSense/affiliate credentials · Hetzner CX22 for hosted Ollama ·
+one full build on a >=8GB machine · the readability decision.
+
+---
 ## Cycle 64 — 2026-08-05T11:38:10.152Z
 
 ### [ok] Site metrics snapshot
@@ -1563,81 +1618,3 @@ No video is reused across more than 5 guides.
 - **Overlong guide excerpts** — 361 excerpt(s) exceed 160 chars and will be truncated mid-sentence in search results.
 
 ---
-
-## Cycle 49 — 2026-08-01T19:23:29.677Z
-
-### [ok] Site metrics snapshot
-3731 guides, 3156 routes, 285 tools.
-
-### [ok] Duplicate guide slugs
-No duplicate slugs.
-
-### [ok] Internal link audit
-0 broken targets, 6 orphaned routes (of 3119 routes).
-
-### [ok] TypeScript compile
-No TypeScript errors.
-
-### [warn] Stale OS version mentions
-4 mention(s) of older OS versions in guides.
-
-```
-- src/data/guides-batch-327.ts:77 — Windows 7 (`Windows 7`)
-- src/data/guides-batch-327.ts:77 — Windows 8 (`Windows 8`)
-- src/data/guides-batch-42.ts:128 — iOS 10–16 (`iOS 16`)
-- src/data/guides-batch-94.ts:766 — Windows 7 (`Windows 7`)
-```
-
-### [ok] Aged guides
-0 of 4032 guides published before 2025-02-01.
-
-### [ok] Duplicate guide titles
-No duplicate guide titles.
-
-### [warn] Readability & senior UX
-avg reading grade 8.3 (target <= 8), 58.8% of guides above grade 8, 0 images missing alt.
-
-```
-- grade 10.2: use-silvur-retirement-planning
-- grade 10.4: how-to-block-spam-text-messages
-- grade 10: how-to-back-up-iphone-to-icloud
-- grade 10.1: set-up-bank-text-alerts
-- grade 10.1: close-old-bank-account-safely
-- grade 10.8: best-antivirus-windows-seniors
-- grade 10.6: forgot-email-password-recovery
-- grade 11.8: youtube-videos-buffering-fix
-- grade 11.5: computer-keeps-restarting-fix
-- grade 10.5: set-up-amazon-prime-delivery-prescriptions
-```
-
-### [ok] External source link health
-67 source URLs checked, 0 confirmed broken (404/410), 1 unreachable (often bot-blocking).
-
-### [warn] Hardcoded prices outside pricing.ts
-1 hardcoded price(s) on customer-facing pages — these are how the three-way price drift started.
-
-```
-- TechnicianProfile.tsx: hardcoded $49 (file does not import pricing.ts at all)
-```
-
-### [warn] Undisclosed invented testimonials
-1 page(s) present invented reviews as real. This is an FTC issue, not a style one — fix before anything else in this report.
-
-```
-- src/pages/TechnicianProfile.tsx — hardcoded reviews with ratings and no disclosure
-```
-
-### [warn] Overlong guide excerpts
-361 excerpt(s) exceed 160 chars and will be truncated mid-sentence in search results.
-
-```
-- 402 chars: new-to-america-essential-tech-for-your-new-life
-- 359 chars: hidden-accessibility-features-your-phone-already-has
-- 356 chars: internet-options-when-you-live-in-the-country
-- 326 chars: digital-estate-planning-accounts-after-death
-- 312 chars: everyday-ai-when-and-how-to-use-ai-assistants
-- 305 chars: veterans-tech-guide-va-benefits-myhealthevet-online-resources
-- 287 chars: after-a-loss-gentle-guide-to-spouse-digital-life
-- 279 ch
-
-_(older cycles trimmed %Y-%m-%d)_

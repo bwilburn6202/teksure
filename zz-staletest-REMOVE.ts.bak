@@ -1,0 +1,10 @@
+
+import type { Guide } from './guides';
+export const guidesStaleTest: Guide[] = [
+  {
+    slug: 'stale-test-guide',
+    title: 'Test',
+    excerpt: 'Test excerpt under the limit.',
+    body: `To change this setting, open Settings on your iOS 15 iPhone and tap General. Windows 7 users should click the Start menu. On Android 12 the menu looks slightly different.`,
+  },
+];
