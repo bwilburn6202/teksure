@@ -35,24 +35,40 @@ interface TechProblem {
 }
 
 const CURRENT_PROBLEM: TechProblem = {
-  weekRange: 'August 3–9, 2026',
-  dateISO: '2026-08-03',
-  title: 'Scammers Are Calling People Who Were Already Scammed',
+  weekRange: 'August 10\u201316, 2026',
+  dateISO: '2026-08-10',
+  title: 'Nobody Is Checking the Ads in Your Facebook Feed',
   emoji: '',
   description:
-    'The FTC warned on August 3 about a second wave aimed at people who have already lost money. Scammers buy lists of earlier victims, then call or email offering to recover the money, the prize, or the merchandise that never arrived. To sound official they claim to be from a government agency, a consumer group, or a law firm. Some name the FTC itself.',
+    'On August 10 the FTC reminded shoppers that social media platforms do not always vet the ads they show you, or the companies behind them. An ad for a designer bag at half price sits in your feed looking exactly like a post from a friend, which is what makes it work. Some of these sellers ship a counterfeit. Some ship nothing at all. Some exist only to collect your card number.',
   howToCheck:
-    'Ask yourself one question: did I contact them, or did they contact me? A real government agency does not phone you to offer a refund, and never asks for a fee to release one. If a caller wants a "retainer fee," a "processing fee," or an "administrative charge" before you see any money, the call is the scam.',
+    'Before you buy, search the store name plus the word "scam" or "review" in a separate browser tab. A real store has a street address, a working phone number, and reviews that are older than a few weeks. Look at how you are asked to pay: a request for Zelle, Cash App, a wire, or a gift card is a refusal to be traceable, and no legitimate retailer needs that.',
   whatToDo:
-    'Do not pay and do not share bank or card details. Hang up. Report it at ReportFraud.ftc.gov, which is free and is the actual FTC. If you already paid, call your bank or card company right away and ask about reversing the payment. Tell one person you trust — these calls work partly because embarrassment keeps people quiet.',
+    'Pay by credit card, which gives you the right to dispute the charge. If you have already paid another way, contact your bank or the payment app today and ask to reverse it. Report the ad to the platform, and report the seller at ReportFraud.ftc.gov. If the goods never arrive, the FTC Mail, Internet, or Telephone Order Rule entitles you to a refund.',
   source: {
-    label: 'FTC Consumer Alerts — August 3, 2026',
-    url: 'https://consumer.ftc.gov/consumer-alerts',
+    label: 'FTC Consumer Alert \u2014 August 10, 2026',
+    url: 'https://consumer.ftc.gov/consumer-alerts/2026/08/are-ads-social-media-vetted-or-checked-scams-heres-what-know',
   },
   isCurrent: true,
 };
 
 const PAST_PROBLEMS: TechProblem[] = [
+  {
+    weekRange: 'August 3–9, 2026',
+    dateISO: '2026-08-03',
+    title: 'Scammers Are Calling People Who Were Already Scammed',
+    emoji: '',
+    description:
+      'The FTC warned on August 3 about a second wave aimed at people who have already lost money. Scammers buy lists of earlier victims, then call or email offering to recover the money, the prize, or the merchandise that never arrived. To sound official they claim to be from a government agency, a consumer group, or a law firm. Some name the FTC itself.',
+    howToCheck:
+      'Ask yourself one question: did I contact them, or did they contact me? A real government agency does not phone you to offer a refund, and never asks for a fee to release one. If a caller wants a "retainer fee," a "processing fee," or an "administrative charge" before you see any money, the call is the scam.',
+    whatToDo:
+      'Do not pay and do not share bank or card details. Hang up. Report it at ReportFraud.ftc.gov, which is free and is the actual FTC. If you already paid, call your bank or card company right away and ask about reversing the payment. Tell one person you trust — these calls work partly because embarrassment keeps people quiet.',
+    source: {
+      label: 'FTC Consumer Alert — August 3, 2026',
+      url: 'https://consumer.ftc.gov/consumer-alerts/2026/08/have-you-lost-money-scam-watch-scammers-who-say-they-can-help',
+    },
+  },
   {
     weekRange: 'April 14–20, 2026',
     dateISO: '2026-04-14',
