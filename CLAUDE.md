@@ -52,7 +52,9 @@ Tech support and digital literacy for non-technical users and seniors (60+). Fre
 - **Every new batch file must be imported AND spread** in `guides.ts`, or its guides silently do not exist.
 
 **Generated files — never hand-edit**
-`public/sitemap.xml` · `src/data/tools-directory.ts` · `vercel.json` (except redirect deletions above). All produced in `prebuild`. Do NOT add a second sitemap generator to `vite.config.ts` — one used to overwrite the good sitemap with guides only.
+`public/sitemap.xml` · `src/data/tools-directory.ts` · `src/data/site-stats.ts` · `vercel.json` (except redirect deletions above). All produced in `prebuild`. Do NOT add a second sitemap generator to `vite.config.ts` — one used to overwrite the good sitemap with guides only.
+
+`site-stats.ts` must stay **codegen, not a runtime import**. It feeds the guide/tool counts in Landing, Tools and SiteIndex copy. It previously did `import { guides } from './guides'` to read `guides.length`, which pulled all 328 batch files (~20 MB of source) into the homepage chunk to render one number. Never reintroduce that import — count at build time instead.
 
 **Git on this mount**
 `rm -f` fails on `.git/*.lock` files ("Operation not permitted") but `mv` works:

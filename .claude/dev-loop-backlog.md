@@ -8,6 +8,76 @@ Newest cycles appear at the top.
 
 ---
 
+## Weekly review — 2026-08-11
+
+Discoverability: **healthy.** Prerendering is intact — `/guides/qr-codes` serves its own title
+("How to Scan QR Codes (and Spot Fake Ones) …"), full OG/Twitter metadata present.
+`build-info.json`: commit `3d83ffe`, 4656 prerendered pages, 7130 sitemap URLs, live sitemap
+`<loc>` count 7130 — agrees. Cadence pages current (`dateISO: 2026-08-10`, What's New `aug-2026`).
+No live redirect/route regressions found; `vercel.json` regenerated identically (20 redirects).
+
+### [fixed] The check command in the weekly task prompt produces a false alarm
+`curl … | grep -oE "<title>[^<]*</title>"` returns **empty on a healthy site**. react-helmet emits
+`<title data-rh="true">`, so the literal `<title>` never matches. Both the homepage and the guide
+page "failed" this check while being completely fine. Anyone following the prompt literally would
+conclude prerendering had regressed — the one thing the prompt says outranks all other work — and
+burn the session chasing it. Use `grep -oE "<title[^>]*>[^<]*</title>"`. Not changed in the
+scheduled-task file itself (outside the repo); **needs updating there.**
+
+### [fixed] Homepage pulled the entire 20 MB guide corpus to render one number
+`src/data/site-stats.ts` did `import { guides } from './guides'` for `guides.length`.
+`guides.ts` re-exports 328 batch files (~20 MB of source), and `Landing.tsx` imports
+`GUIDE_COUNT_LABEL` from it — so rendering "4,000+" on `/` dragged in every guide on the site.
+For an audience of seniors on slow connections this is the worst possible page to do it on.
+
+A generator that avoids this (`scripts/generate-site-stats.mjs`) had already been written in an
+earlier session, complete with a header comment explaining precisely this hazard — but it was
+never wired into `prebuild` and never committed, so it sat untracked while the runtime import
+stayed live. Now wired in (after `generate-tools-directory`, before `generate-redirects`) and
+`site-stats.ts` is codegen with **zero imports**.
+
+It had also inherited the **same line-anchor bug** cycle 86b fixed in `dev-loop.mjs` —
+`/^\s+slug:/gm` misses the ~301 single-line-literal guides. Ported the `(?:^|[{,\s])` fix, so it
+emits 4049, matching `validate-slugs` and `generate-sitemap`. Counts are unchanged in user-facing
+copy: guides "4,000+", tools "2,900+" (2969, identical to the old `toolsDirectory.length`).
+This is a pure performance fix — no copy change.
+
+### [fixed] Two files differing only in case — invisible on macOS, fatal to tsc on Linux
+`SeniorVoiceMail.tsx` and `SeniorVoicemail.tsx` both tracked (both created by cycle 83).
+Only the capital-M one is imported/routed (`/tools/senior-voicemail`); the other was orphaned.
+macOS is case-insensitive so the working tree can only hold one — which is *also* what produced
+the phantom "uncommitted modification" to `SeniorVoiceMail.tsx` that has been confusing recent
+sessions on the mount. On the case-sensitive Linux clone `tsc` fails hard with TS1261.
+Deleted the orphan; `tsc --noEmit` now exits 0.
+
+Production was never broken by this: `npm run build` is vite/esbuild, which does not typecheck,
+and Linux resolves the real file. But "TypeScript clean" in CLAUDE.md was only true on macOS.
+
+### Verification
+- `npx tsc --noEmit -p tsconfig.app.json` → **exit 0** (was TS1261 before the orphan deletion)
+- `npm test` → **104/104 pass**
+- `npm run build` → prebuild chain **clean**, then vite **OOM-killed (exit 137)** at "rendering
+  chunks" after transforming 6440 modules. Sandbox has 3.9 GB; documented as needing ~8 GB.
+  **The build was not verified end-to-end here — it must be watched on Vercel.**
+- Bundle win not measured for the same reason. The mechanism is certain (site-stats.ts now has no
+  imports), the exact byte saving is not.
+
+### Skipped, deliberately
+- **Sitemap churn.** Regenerating rewrote `lastmod` on all 7130 URLs to today with no content
+  change. Not committed — it regenerates during every deploy anyway, and a 14k-line date-only diff
+  buries real changes. Worth a look later: stamping *every* URL as modified today, including guides
+  untouched for months, is a freshness claim search engines can discount.
+- **Readability** (~58.5% above grade 8). Untouched — still needs the scripted bulk pass or an
+  explicit decision to accept, per CLAUDE.md.
+
+### Next
+1. Confirm the Vercel deploy went green and `build-info.json` moves to this commit.
+2. Fix the `<title>` grep in the `teksure-weekly-improvement` scheduled task prompt.
+3. Consider having `dev-loop` flag case-only filename collisions — cycle 83 created this pair
+   automatically and nothing caught it for eight cycles.
+
+---
+
 ## Cycle 86b — 2026-08-11 (second maintenance run, same day)
 
 Two runs of `teksure-90day-push` fired against the same day. The earlier one refreshed
