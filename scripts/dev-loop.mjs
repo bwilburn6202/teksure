@@ -351,7 +351,14 @@ function checkSiteMetrics() {
     for (const f of fs.readdirSync(dataDir)) {
       if (!f.startsWith('guides') || !f.endsWith('.ts')) continue;
       const content = fs.readFileSync(path.join(dataDir, f), 'utf8');
-      guideCount += (content.match(/^\s*slug:\s*['"`]/gm) ?? []).length;
+      // Do NOT anchor this to the start of a line. Roughly 300 guides are written
+      // as single-line object literals (`{ slug: '...', title: '...' }`), so
+      // /^\s*slug:/gm silently skipped them and this snapshot reported 3748
+      // guides while validate-slugs and the aged-guides check both said 4049.
+      // A wrong headline number is worse than no number: cycle 70 spent a full
+      // session chasing a "missing 300 guides" sitemap bug that never existed.
+      // The leading [{,\s] keeps `canonicalSlug:` and similar keys out.
+      guideCount += (content.match(/(?:^|[{,\s])slug:\s*['"`]/gm) ?? []).length;
     }
   }
   return {

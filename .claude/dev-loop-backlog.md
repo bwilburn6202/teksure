@@ -8,6 +8,88 @@ Newest cycles appear at the top.
 
 ---
 
+## Cycle 86b — 2026-08-11 (second maintenance run, same day)
+
+Two runs of `teksure-90day-push` fired against the same day. The earlier one refreshed
+/tech-problem-of-week and wrote the Cycle 86 entry above. This run found that work already on
+origin/main and **did not duplicate it** — the page was left exactly as the earlier run wrote it.
+Cadence rechecked and confirmed current: `dateISO: 2026-08-10`, inside the 7-day window;
+What's New top entry `aug-2026`, current month covered.
+
+### [fixed] The metrics undercount from the note above — root cause was not the glob
+Cycle 86 logged the 3748-vs-4049 contradiction as "likely missing some batch files in its glob,
+cosmetic, worth one fix in a future cycle." The glob is fine — it reads all 328 `guides*.ts` files.
+The bug was the **line anchor** in the counting regex:
+
+```js
+/^\s*slug:\s*['"`]/gm     // before — requires slug: to be first on its line
+/(?:^|[{,\s])slug:\s*['"`]/gm   // after
+```
+
+About 301 guides are written as single-line object literals (`{ slug: '...', title: '...' }`), so
+`slug:` is not the first token on its line and those guides were never counted. The leading
+`[{,\s]` keeps `canonicalSlug:` (16 occurrences) out. Now agrees with every independent count:
+
+| Source | Count |
+|---|---|
+| `checkSiteMetrics` before | 3748 |
+| `checkSiteMetrics` after | **4049** |
+| `validate-slugs.mjs` | 4049 |
+| `publishedAt:` count (aged-guides check) | 4049 |
+| `generate-sitemap.mjs` | 4049 |
+
+Not purely cosmetic, which is why it was worth doing now rather than "a future cycle": Cycle 70
+spent a full session chasing a phantom missing-guides sitemap bug that was an artifact of this
+number, and Cycle 86 had to spend words explaining it again. A headline metric that disagrees with
+itself in the same report trains the reader to distrust the whole report.
+
+### [note] tsc does not have to be recorded as unverified in this sandbox
+It OOMs at the default heap, but passes clean with a raised cap:
+
+```bash
+NODE_OPTIONS="--max-old-space-size=3300" npx tsc --noEmit -p tsconfig.app.json
+```
+
+Same for `npm test`. Use this instead of logging TypeScript as unverified.
+
+### [note] `npm run build` — two distinct failures, and the first one is a red herring
+1. `EPERM: operation not permitted, unlink 'dist/_headers'` — vite's `emptyOutDir` cannot delete the
+   existing `dist/` **on the Cowork mount**, same limitation as `.git/*.lock`. It aborts before any
+   compilation and looks like a build error. Clear it with `mv dist dist.stale-$(date +%s)`.
+2. After that, `vite build` transformed all 6440 modules and was then **killed at `rendering chunks`**
+   even at `--max-old-space-size=3300`. Kernel OOM, ~2.8GB free of 3.9GB.
+
+**The build did not pass and prerendering was never exercised.** Still needs one run on a machine
+with >=8GB.
+
+### [note] Two more count mismatches, left alone deliberately
+- `generate-llms-txt.mjs` reports **3763 guides** writing `public/llms.txt` against a true 4049. May
+  be intentional (canonicalised duplicates plus the 49 Spanish guides), may be the same class of bug.
+- `generate-tools-directory.mjs` writes **2969 tools** while the metrics snapshot says **285**. Almost
+  certainly different things — generated directory vs. curated `Tools.tsx` — but nothing says so, and
+  two numbers 10x apart both labelled "tools" will mislead someone eventually.
+
+### [skipped] Readability — no change, and this is now the 18th consecutive cycle asking
+Grade 8.3, 58.5% above grade 8, 493 guides above grade 10. Identical to cycles 70–86. It is the only
+`[warn]` in the report, so it is currently teaching every reader to skim past the warnings section.
+**Decide: fund a reviewed scripted bulk pass, or accept 8.3 and remove it from the warning list.**
+
+### Verification
+- `NODE_OPTIONS=--max-old-space-size=3300 npx tsc --noEmit -p tsconfig.app.json` — clean
+- `npm test` — 104/104 pass
+- `node scripts/validate-slugs.mjs` — 4049 slugs, 4049 unique
+- `node scripts/fix-long-excerpts.mjs` — 0 excerpts over 160 chars
+- `node scripts/dev-loop.mjs --once --dry-run` — no hard failures; metrics now 4049
+- `npm run build` — **FAILED (OOM). Not verified.**
+
+### Standing recommendation, now from two independent runs
+Stop treating the Cowork mount as a working copy. It is chronically behind origin, it refuses
+`unlink` on `.git/*.lock`, on `dist/*`, and on ordinary files, and `git checkout --` silently fails
+on it. Clone fresh per run and push from the clone. Overwriting a file in place with
+`git show HEAD:path > path` works where `git checkout -- path` does not.
+
+---
+
 ## Cycle 86 — 2026-08-11 (scheduled maintenance run, Cowork sandbox)
 
 ### [alarm] The Cowork mount was 16 commits behind origin/main again
