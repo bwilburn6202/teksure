@@ -70,8 +70,37 @@ and Linux resolves the real file. But "TypeScript clean" in CLAUDE.md was only t
 - **Readability** (~58.5% above grade 8). Untouched — still needs the scripted bulk pass or an
   explicit decision to accept, per CLAUDE.md.
 
+### [OPEN — needs a human] Production deploys have been stalled for ~7 hours
+`build-info.json` still reports commit `3d83ffe` built **2026-08-10T19:22Z**. Four commits pushed
+since then have not deployed:
+
+| commit | pushed (UTC) | deployed |
+|---|---|---|
+| `406155f` cycle 85 findings | 08-11 02:22 | no |
+| `631b2e1` TPOW / FTC refresh | 08-11 05:19 | no |
+| `2fb8849` dev-loop single-line slug fix | 08-11 05:26 | no |
+| `c83ecb8` this session's fix | 08-11 06:18 | no |
+
+Polled for ~10 minutes after pushing; no movement. **The site itself is healthy** — homepage and
+guide pages return 200, prerendered titles intact — it is simply serving the Aug 10 build. So this
+is invisible to users right now, but nothing shipped in the last four commits is live, including
+the FTC Tech-Problem-of-the-Week refresh, which means a cadence page that *looks* current in the
+repo is stale in production.
+
+Ruled out from outside:
+- `vercel.json` — valid JSON, no unknown top-level keys, `git.deploymentEnabled.main: true`,
+  20 redirects, sane build/install commands. This is the usual cause and it is **not** the cause.
+- `scripts/prerender.mjs` — still ends with `process.exit(0)` (line 396). The documented
+  "deploy succeeds while the site serves the previous build" hang is **not** the cause either.
+
+Cannot go further without the Vercel dashboard — no Vercel MCP/token available in this session.
+**Bailey: check the Vercel deployments tab for a failed or queued build.** Best remaining guesses
+are a build-container OOM (the same wall this sandbox hits — vite was OOM-killed here at "rendering
+chunks" after 6440 modules) or a disconnected/expired Git integration.
+
 ### Next
-1. Confirm the Vercel deploy went green and `build-info.json` moves to this commit.
+1. **Unblock the deploy** (above) — nothing else this week matters until commits reach production.
+2. Confirm `build-info.json` moves to `c83ecb8` once deploys resume.
 2. Fix the `<title>` grep in the `teksure-weekly-improvement` scheduled task prompt.
 3. Consider having `dev-loop` flag case-only filename collisions — cycle 83 created this pair
    automatically and nothing caught it for eight cycles.
