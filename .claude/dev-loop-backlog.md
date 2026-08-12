@@ -59,7 +59,23 @@ orphaned new page would never have been noticed. At 0, the next one shows up imm
 `/tech-problem-of-week` is serving the August 10–16 FTC social-media-ads alert on www right now.
 What's New top entry `aug-2026`, current month covered. Neither needed a refresh this run.
 
-### [note] Live build lags origin by 3 commits, and that is fine
+### [ALARM] Vercel has not deployed since 2026-08-11 13:43Z — check this first next run
+Upgraded from a note to an alarm during this run. `build-info.json` still reports cycle 87 /
+`07c7e395f1d6` / `builtAt 2026-08-11T13:43Z` **eight minutes after this cycle's push landed on
+origin/main**, and origin had already been 3 commits ahead since 07:46Z that morning. Cycles 88–90
+were docs-only so a skipped build was explicable, but this cycle changed `src/` and
+`public/sitemap.xml`, so a deploy should have fired.
+
+Two candidates, in order of likelihood: auto-deploy on push is disabled or disconnected for the
+repo, or builds are firing and failing (a failed Vercel build keeps serving the previous deploy
+silently — the same failure mode the `process.exit(0)` invariant in CLAUDE.md exists to prevent).
+**This needs the Vercel dashboard, which this run has no access to.** Until it is resolved every
+change committed here is invisible to users, including the sitemap fix below.
+
+Re-check first thing: `curl -s https://www.teksure.com/build-info.json`. If it still says cycle 87,
+stop and raise it rather than committing more work into a pipe that is not flowing.
+
+### [note] Live build lag, original observation
 `build-info.json` reports cycle 87 built 2026-08-11 13:43Z. Cycles 88–90 touched only
 `.claude/dev-loop-backlog.md` and `.claude/dev-loop-state.json` — no `src/` change, so no
 user-facing drift. Worth re-checking after this cycle, which *does* touch `src/` and the sitemap.
