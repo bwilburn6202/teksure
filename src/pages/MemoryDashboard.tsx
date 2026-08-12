@@ -159,6 +159,7 @@ export default function MemoryDashboard() {
       <SEOHead
         title="TekBot Memory — TekSure"
         description="View and manage what TekBot remembers about you. Your privacy is in your hands."
+        noindex
       />
       <Navbar />
       <main id="main-content" className="min-h-screen bg-background">

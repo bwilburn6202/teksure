@@ -8,6 +8,80 @@ Newest cycles appear at the top.
 
 ---
 
+## Cycle 91 — 2026-08-12 (second run, same day as cycle 90)
+
+### [alarming] The Cowork mount was 4 commits stale and its working tree held phantom duplicate work
+This run opened on local HEAD `c6e4ce3` while `origin/main` was at `2a42680` (cycle 90, pushed
+07:46 UTC the same morning). The working tree also carried five modified files — a
+/tech-problem-of-week refresh, the dev-loop guide-count regex fix, and a half-finished
+`SeniorVoiceMail.tsx` → `SeniorVoicemail.tsx` rename — **all of which already existed on
+origin/main in some form**. Nothing was lost; the local copies were stale duplicates.
+
+This is the same failure mode cycle 86b hit and it will recur. **Resync the mount to origin/main
+before doing anything else.** `git reset --hard` does not work here: this mount refuses `unlink`
+on *any* tracked file, not just `.git/*.lock` as CLAUDE.md currently claims. What works:
+
+```bash
+git reset --soft origin/main                 # move the branch pointer, no file ops
+git show origin/main:<path> > <path>         # rewrite in place, never unlinks
+git add -A -- <paths>
+```
+
+Two untracked files (`zz-staletest-REMOVE.ts.bak`, `.claude/new-cycle-entry.md`) cannot be deleted
+on this mount at all. Ignore them.
+
+### [fixed] Three orphaned, unlinked pages were being submitted to Google
+The "6 orphaned routes" line has appeared in every cycle report for months and was never opened.
+Opened it. All six are unlinked on purpose, but three of them were **also in the sitemap**:
+
+| Route | In sitemap before | What it is |
+|---|---|---|
+| `/memory` | yes | Per-user TekBot memory dashboard — renders empty for a crawler |
+| `/opportunity-dashboard` | yes | Business-model ROI charts — off-topic for a senior tech-help site |
+| `/llm-knowledge-base` | yes | Published for AI answer engines — **kept**, this one is intentional |
+| `/admin/knowledge-base` | no | robots-disallowed |
+| `/payment/success`, `/payment/cancel` | no | Stripe redirect targets |
+
+Unlinked + submitted + thin + off-topic is the exact profile of a page that dilutes topical
+relevance. Changes:
+- `scripts/generate-sitemap.mjs` — `EXCLUDE` now covers `memory` and `opportunity-dashboard`.
+  Sitemap 7130 → **7128** URLs.
+- `MemoryDashboard.tsx` / `OpportunityDashboard.tsx` — added `noindex` to `<SEOHead>`, so the
+  pages stay reachable for anyone who has the URL but do not compete in search.
+- `scripts/link-audit.mjs` — added an `INTENTIONAL_ORPHANS` allowlist for all six.
+  Orphan count 6 → **0**.
+
+That last one is the point of the change, and it is the same lesson as the guide-count regex in
+cycle 86b: a metric with a permanent non-zero floor stops being read. At 6-forever, a genuinely
+orphaned new page would never have been noticed. At 0, the next one shows up immediately.
+
+### [ok] Cadence, verified live not just in the repo
+`/tech-problem-of-week` is serving the August 10–16 FTC social-media-ads alert on www right now.
+What's New top entry `aug-2026`, current month covered. Neither needed a refresh this run.
+
+### [note] Live build lags origin by 3 commits, and that is fine
+`build-info.json` reports cycle 87 built 2026-08-11 13:43Z. Cycles 88–90 touched only
+`.claude/dev-loop-backlog.md` and `.claude/dev-loop-state.json` — no `src/` change, so no
+user-facing drift. Worth re-checking after this cycle, which *does* touch `src/` and the sitemap.
+
+### [skipped] Readability, deliberately
+Still grade 8.3, 58.5% above grade 8, unchanged. Per the standing instruction: no daily hand-pass.
+This needs either a scripted bulk pass or an explicit decision from Bailey to accept 8.3. It is
+now the oldest open item in this file.
+
+### Verification
+- `npx tsc --noEmit -p tsconfig.app.json` — clean (needs `NODE_OPTIONS=--max-old-space-size=3300`)
+- `npm test` — 104/104
+- `node scripts/validate-slugs.mjs` — 4049 slugs, 4049 unique
+- `npm run build` — **not run.** Known to OOM on this mount (~3.9GB, needs ~8GB); it dies at
+  `rendering chunks`. Not claiming it passed.
+
+### Blockers for Bailey (unchanged)
+Monetization credentials · one full `npm run build` on a ≥8GB machine · the readability decision ·
+analytics verification · the Hetzner CX22 for hosted Ollama.
+
+---
+
 ## Cycle 90 — 2026-08-12T07:46:45.599Z
 
 ### [ok] Site metrics snapshot
@@ -1618,367 +1692,5 @@ No video is reused across more than 5 guides.
 
 ---
 
-## Cycle 63 — 2026-08-05T11:32:54.017Z
 
-### [ok] Site metrics snapshot
-3736 guides, 3156 routes, 285 tools.
-
-### [ok] Duplicate guide slugs
-No duplicate slugs.
-
-### [ok] Internal link audit
-0 broken targets, 9 orphaned routes (of 3119 routes).
-
-### [ok] TypeScript compile
-No TypeScript errors.
-
-### [ok] Stale OS version mentions
-No stale OS version mentions found.
-
-### [ok] Aged guides
-0 of 4037 guides published before 2025-02-05.
-
-### [ok] Duplicate guide titles
-No duplicate guide titles.
-
-### [warn] Readability & senior UX
-avg reading grade 8.3 (target <= 8), 58.7% of guides above grade 8, 0 images missing alt.
-
-```
-- grade 10.2: use-silvur-retirement-planning
-- grade 10.4: how-to-block-spam-text-messages
-- grade 10: how-to-back-up-iphone-to-icloud
-- grade 10.1: set-up-bank-text-alerts
-- grade 10.1: close-old-bank-account-safely
-- grade 10.8: best-antivirus-windows-seniors
-- grade 10.6: forgot-email-password-recovery
-- grade 10.3: youtube-videos-buffering-fix
-- grade 10.5: set-up-amazon-prime-delivery-prescriptions
-- grade 10.9: how-to-use-apple-maps
-```
-
-### [ok] External source link health
-67 source URLs checked, 0 confirmed broken (404/410), 1 unreachable (often bot-blocking).
-
-### [ok] Hardcoded prices outside pricing.ts
-All service prices come from src/data/pricing.ts.
-
-### [ok] Undisclosed invented testimonials
-No hardcoded reviews without a disclosure.
-
-### [warn] Overlong guide excerpts
-283 excerpt(s) exceed 160 chars and will be truncated mid-sentence in search results.
-
-```
-- 177 chars: how-to-free-up-storage-space-on-your-iphone-2026
-- 177 chars: google-wallet-setup
-- 177 chars: telehealth-appointment-tips
-- 177 chars: how-to-handle-solo-travel-recent-widow
-- 177 chars: recover-hacked-email-account
-- 177 chars: alexa-calling-messaging-guide
-- 177 chars: safari-reader-mode-guide
-- 177 chars: android-auto-brightness-guide
-- 176 chars: transfer-contacts-new-phone
-- 176 chars: how-to-get-hisa-grant-home-modifications
-- 176 chars: mobile-digital-id-guide
-- 176 chars: turn-on-live-captions-phone-calls
-```
-
-### [ok] Reused placeholder videos
-No video is reused across more than 5 guides.
-
-### Suggested next actions
-- **Readability & senior UX** — avg reading grade 8.3 (target <= 8), 58.7% of guides above grade 8, 0 images missing alt.
-- **Overlong guide excerpts** — 283 excerpt(s) exceed 160 chars and will be truncated mid-sentence in search results.
-
----
-
-## Weekly review note -- 2026-08-05 (deep improvement cycle)
-
-Second pass this session, run as a deliberately deeper sweep. Cleared three of
-the five standing warnings outright; dev-loop now reports only readability and
-the residual excerpt count.
-
-**Discoverability re-verified first.** /guides/qr-codes still returns its own
-title. Prerendering intact.
-
-**Excerpts (361 -> 283).** This was the item skipped last cycle and it is
-really a tier-2 discovery problem, not cosmetics: the excerpt becomes the meta
-description, so an overlong one gets cut mid-sentence exactly where most people
-first meet the page. Distribution mattered -- 345 of 361 were only slightly
-over (161-200), but 16 were catastrophic, topping out at 402 chars and reading
-like content briefs. Rewrote the 16 worst plus the entire 178+ band, 78 total,
-by hand. Deliberately did NOT mechanically truncate: that produces precisely
-the mid-sentence cut being fixed. Worst case is now 177; nothing exceeds 200.
-The remaining 283 sit at 161-177 and lose a word or two at most -- low value,
-fine to leave.
-
-**stale-os (4 -> 0), by fixing the check, not the content.** All four findings
-were false positives -- "Windows 7 and 8 stopped receiving updates years ago"
-is a true sentence in a guide about old machines, and "iOS 16 and macOS Ventura
-or later" is a minimum-requirement line where "or later" distributes. Per the
-brief's "do not fix a warning by loosening the check", the guides were left
-alone and the suppression got more precise: obsolescence context, distributive
-"or later" bounded by sentence break, and upgrade-path framing. Verified with a
-synthetic file that neutral stale mentions still flag.
-
-  Found but NOT fixed: a pre-existing rule suppresses any match preceded by the
-  word "on", so "On Android 12 the menu looks different" is silently missed.
-  That is a genuine hole. Left it alone to keep the change scoped -- widening it
-  risks re-flagging the legitimate "on iOS 16 or later" phrasing, and deserves
-  its own careful pass.
-
-**testimonial-honesty and pricing-consistency (1 -> 0 each).** Both traced to
-the same dead file, TechnicianProfile.tsx, unrouted since 2026-07-26 (confirmed
-live: both routes 308 to /get-help). Deleted the four invented technicians and
-eleven fabricated reviews, and pointed the hardcoded $49 at pricing.ts. The
-reason to actually clear these rather than keep noting them: the check reported
-"1 page" every single cycle, so a genuine new instance elsewhere would have
-moved it 1 -> 2 and gone unnoticed. A permanently-failing check is a broken
-check, and this one is FTC-severity. Layout kept per the file header's intent;
-TECHNICIANS is now empty with an empty-state card.
-
-**Readability (509 -> 499).** 15 guides, weighted to scams/Medicare/health-safety.
-Notably included senior-firearm-suicide-prevention-988-wait-time, deferred as
-too sensitive before. Handled it as crisis content: every number (988, press 1,
-838255, veteranscrisisline.net), statistic, and resource name preserved
-verbatim, sentence structure only. Also fixed a missing apostrophe there.
-
-**The test suite earned its keep.** My first readability draft introduced two
-banned words ("just", "simply") in live-text-iphone-copy-photo and
-needymeds-guide; npm test caught both before commit. Worth remembering that
-simplifying prose actively pulls toward the banned minimizing vocabulary.
-
-**Verification:** tsc clean, 104/104 tests, dev-loop green except the two noted.
-`npm run build` again OOM'd in the sandbox (3.8GB ceiling, killed during chunk
-rendering at several memory settings, with and without minify). Same as last
-cycle, and content-only string edits cannot cause it -- but it does mean two
-consecutive cycles have shipped without a local full-build check. Next run on a
-bigger machine should confirm the build directly.
-
-**Concurrency note.** The 90-day sprint process was again editing this same
-working tree mid-session (Landing.tsx, Footer.tsx, MobileBottomNav.tsx,
-SiteIndex.tsx, Tools.tsx, plus a new untracked src/data/site-stats.ts). Staged
-only my own paths, verified file-by-file that every committed guide diff touched
-excerpt/body lines only. Important: Landing.tsx now imports the still-untracked
-src/data/site-stats.ts, so committing that file without it would break the
-build -- left for whichever process owns it.
-
-Also left untracked and untouched: SeniorVoicemail.tsx (flagged every cycle),
-AUDIT-normal-user-2026-08-04.md, and several dist.stale-*/ and *.old-* files
-that this mount will not let anything unlink.
-
-Next run: pull a fresh grade-sorted top-25 and keep going on readability
-(~480 English guides still above grade 10); optionally finish the last 283
-excerpts; and consider the "on" gap in the stale-os check.
-
----
-
-## Weekly review note -- 2026-08-05 (weekly-improvement cycle)
-
-Ran the standard weekly-site-review sequence. Measurements first: `dev-loop.mjs
---once --dry-run` showed 3736 guides, 3156 routes, 0 broken links, TS clean,
-guidesAboveGrade10: 520, avg reading grade 8.3. Discoverability check passed —
-`curl .../guides/qr-codes` returns the guide's own `<title>`, not the generic
-site title, so prerendering is intact.
-
-One warning needed a look before anything else: `testimonial-honesty` flagged
-`src/pages/TechnicianProfile.tsx` again, as it has every cycle since 2026-07-26.
-Verified this is not live: `curl -sIL https://www.teksure.com/technicians` and
-`/technicians/tech-james-r` both 308 to `/get-help`. The file's own header
-comment explains it is intentionally kept, unrouted, with invented data, so the
-check keeps firing until someone replaces the fake technicians with real ones
-(no real technician data exists yet, so that is out of scope for now). No
-action taken here -- noting it so the next run doesn't re-investigate from
-scratch.
-
-With nothing broken and discovery confirmed healthy, went with the standing
-priority: readability. Pulled the actual (grade-sorted, not file-order) top 25
-hardest guides via a temporary local edit to `audit-senior-ux.mjs`'s `top()`
-default (12 -> 25, reverted after, confirmed no diff). Picked 13 of those,
-weighted toward high-traffic categories per the brief (scams, passwords,
-finance/Social Security, common device/app guides) over niche ones:
-social-security-cola-2027-what-to-expect, buy-now-pay-later-basics-and-risks,
-disaster-relief-charity-scam-guide, claude-ai-app-basics-for-seniors,
-back-to-school-tech-shopping-scams-grandparents,
-password-manager-basics-for-beginners, youtube-videos-buffering-fix,
-tidal-hifi-streaming, echo-show-8-guide, fedex-delivery-manager-guide,
-how-to-apply-va-presumptive-conditions, livongo-diabetes-guide,
-wise-money-transfer, ticktick-app-guide. Split long sentences, cut
-throat-clearing, no facts/sources/numbers/warnings changed.
-
-Result: guidesAboveGrade10 520 -> 509. Average grade held at 8.3 (rounds the
-same at one decimal; the guides touched were mostly just above the grade-10
-cutoff, not the grade-13+ outliers). 104/104 tests pass, tsc clean.
-
-Could not run a full `npm run build` in this session's sandbox -- `vite build`
-OOM'd during chunk rendering with only 3.8GB RAM available, even after
-clearing `dist/` and raising `--max-old-space-size`. This reproduced with and
-without the prerender step, so it is a sandbox memory ceiling, not a
-regression from this change (content-only edits to existing guide `body`/
-`steps` string fields, no new deps, no schema changes). tsc + full test suite
-did pass. Next run with more memory headroom should confirm `npm run build`
-directly rather than trusting this substitute.
-
-Also skipped: did not deep-edit the VA presumptive-conditions guide's steps
-(only simplified its body) -- the step content is dense with exact service
-dates/locations/exposure categories that carry legal weight for a benefits
-claim, and rewriting five paragraphs of that under time pressure risked
-subtly changing a date or place name. Left it correct-but-dense rather than
-risk it. Flagging for a future pass with more room to cross-check facts
-line by line before touching it. Also, the same 380+ish English guides above
-grade 10 remain beyond this batch and the prior five sessions' batches --
-next run: pull a fresh top-25 (grade-sorted) again and keep going.
-
-Regenerated `sitemap.xml` and `llms.txt` via the prebuild scripts during this
-session (ran as a side effect of the build attempt) and committed them, since
-they were stale relative to guide count and had a stale `lastmod` date; this
-was not the primary goal of the session but is a harmless, correct byproduct.
-
-Still uncommitted, untouched: `src/pages/tools/SeniorVoicemail.tsx` -- same
-unrelated, unvetted edit flagged in every note so far.
-
----
-
-## Weekly review note -- 2026-08-04 (continued, fifth batch)
-
-Continued the readability pass per "continue." Before starting, found local
-HEAD had diverged from origin (a stray local-only commit whose real guide
-content turned out byte-identical to what origin already had via a
-separate commit -- only auto-generated backlog/state.json differed, and
-those are already 30+ cycles stale). Resolved with `git reset --mixed
-origin/main` rather than `--hard`, since this session's filesystem hit a
-new variant of the documented unlink restriction: `reset --hard` failed
-to unlink *nearly the entire tracked tree* (4000+ files), not just the
-usual `.git/*.lock`/`tmp_obj` files. `--mixed` only moves HEAD + index
-(no working-tree file replacement), so it succeeded; individual files were
-then synced from origin only as needed.
-
-Finished the 11 previously-touched guides still above grade 10 for the
-truncated-window reason flagged in the last note (reading the full body
-field this time, not a fixed line window): phishing-email-tips,
-android-notification-settings, iphone-weather-app-guide,
-amazon-prime-benefits-guide, webmd-app-guide, how-to-use-task-manager-windows,
-iphone-accessibility-shortcut, windows-11-focus-sessions,
-google-career-certificates, mayoclinic-guide, 5g-home-internet-guide, plus
-ios-mail-app-categories-explained (tightened but stayed at 10.4 -- its
-length comes from quoted category names and proper nouns, not sentence
-complexity, so left as-is per the "don't force the number" rule). 11 of 12
-crossed below grade 10. guidesAboveGrade10: 527 -> 520 (baseline shifted
-from the last note's 523 because new content landed from a separate,
-concurrently-running process in this same repo -- see below).
-
-Notable: a second automated process (the 90-day sprint task) was actively
-committing new guides -- batch-332 -- to this same working tree during
-this session. Rather than colliding, it detected this session's
-uncommitted readability edits and folded them into its own commits with
-an explicit note in the commit message ("carries forward uncommitted
-readability tweaks..."). Both this batch's 11 guide files and a small
-drive-by fix (batch-332 used the banned word "simply" twice, failing the
-brand-voice test; fixed both instances) ended up pushed via commits
-c628f1f and 628de5d rather than a commit from this session. Content and
-test results were verified independently before and after either way --
-104/104 tests pass, TS parse clean, no regressions.
-
-Still uncommitted, untouched: `src/pages/tools/SeniorVoicemail.tsx` --
-same unrelated, unvetted edit flagged in every note so far.
-
-11 more English guides above grade 10 remain from the original
-truncated-window batch(es); beyond those, roughly 380+ English guides
-above grade 10 remain in total. Next run: pull the full (non-50-capped)
-hardGuides list fresh and continue.
-
----
-
-## Cycle 62 — 2026-08-05T03:26:56.214Z
-
-### [ok] Site metrics snapshot
-3731 guides, 3156 routes, 285 tools.
-
-### [ok] Duplicate guide slugs
-No duplicate slugs.
-
-### [ok] Internal link audit
-0 broken targets, 6 orphaned routes (of 3119 routes).
-
-### [ok] TypeScript compile
-No TypeScript errors.
-
-### [warn] Stale OS version mentions
-4 mention(s) of older OS versions in guides.
-
-```
-- src/data/guides-batch-327.ts:77 — Windows 7 (`Windows 7`)
-- src/data/guides-batch-327.ts:77 — Windows 8 (`Windows 8`)
-- src/data/guides-batch-42.ts:128 — iOS 10–16 (`iOS 16`)
-- src/data/guides-batch-94.ts:766 — Windows 7 (`Windows 7`)
-```
-
-### [ok] Aged guides
-0 of 4032 guides published before 2025-02-05.
-
-### [ok] Duplicate guide titles
-No duplicate guide titles.
-
-### [warn] Readability & senior UX
-avg reading grade 8.3 (target <= 8), 58.8% of guides above grade 8, 0 images missing alt.
-
-```
-- grade 10.2: use-silvur-retirement-planning
-- grade 10.4: how-to-block-spam-text-messages
-- grade 10: how-to-back-up-iphone-to-icloud
-- grade 10.1: set-up-bank-text-alerts
-- grade 10.1: close-old-bank-account-safely
-- grade 10.8: best-antivirus-windows-seniors
-- grade 10.6: forgot-email-password-recovery
-- grade 11.8: youtube-videos-buffering-fix
-- grade 11.5: computer-keeps-restarting-fix
-- grade 10.5: set-up-amazon-prime-delivery-prescriptions
-```
-
-### [ok] External source link health
-67 source URLs checked, 0 confirmed broken (404/410), 1 unreachable (often bot-blocking).
-
-### [warn] Hardcoded prices outside pricing.ts
-1 hardcoded price(s) on customer-facing pages — these are how the three-way price drift started.
-
-```
-- TechnicianProfile.tsx: hardcoded $49 (file does not import pricing.ts at all)
-```
-
-### [warn] Undisclosed invented testimonials
-1 page(s) present invented reviews as real. This is an FTC issue, not a style one — fix before anything else in this report.
-
-```
-- src/pages/TechnicianProfile.tsx — hardcoded reviews with ratings and no disclosure
-```
-
-### [warn] Overlong guide excerpts
-361 excerpt(s) exceed 160 chars and will be truncated mid-sentence in search results.
-
-```
-- 402 chars: new-to-america-essential-tech-for-your-new-life
-- 359 chars: hidden-accessibility-features-your-phone-already-has
-- 356 chars: internet-options-when-you-live-in-the-country
-- 326 chars: digital-estate-planning-accounts-after-death
-- 312 chars: everyday-ai-when-and-how-to-use-ai-assistants
-- 305 chars: veterans-tech-guide-va-benefits-myhealthevet-online-resources
-- 287 chars: after-a-loss-gentle-guide-to-spouse-digital-life
-- 279 chars: how-to-spot-fake-reviews-online
-- 269 chars: telehealth-appointments-see-your-doctor-from-home
-- 247 chars: understanding-your-phone-bill
-- 240 chars: find-and-cancel-forgotten-subscriptions
-- 232 chars: online-banking-made-safe-and-simple
-```
-
-### [ok] Reused placeholder videos
-No video is reused across more than 5 guides.
-
-### Suggested next actions
-- **Stale OS version mentions** — 4 mention(s) of older OS versions in guides.
-- **Readability & senior UX** — avg reading grade 8.3 (target <= 8), 58.8% of guides above grade 8, 0 images missing alt.
-- **Hardcoded prices outside pricing.ts** — 1 hardcoded price(s) on customer-facing pages — these are how the three-way price drift started.
-- **Undisclosed invented testimonials** — 1 page(s) present invented reviews as real. This is an FTC issue, not a style one — fix before anything else in this report.
-- **Overlong guide excerpts** — 361 excerpt(s) exceed 160 chars and will be truncated mid-sentence in search results.
-
----
+<!-- older cycles trimmed 2026-08-12 to keep this file under 64KB -->

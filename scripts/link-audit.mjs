@@ -147,11 +147,24 @@ for (const path of files) {
 // A route is "orphaned" if no link targets it. Dynamic routes (with `:`
 // or `*`) are skipped because they're matched by template literals we
 // can't statically resolve.
+// Routes that are unlinked on purpose. Without this list the orphan count sits
+// at a permanent non-zero floor, every cycle re-reports the same six routes,
+// and a genuinely orphaned new page is invisible in the noise.
+const INTENTIONAL_ORPHANS = new Set([
+  "/admin/knowledge-base",   // admin-only, robots-disallowed
+  "/llm-knowledge-base",     // published for AI answer engines, not for humans
+  "/memory",                 // per-user TekBot memory dashboard
+  "/opportunity-dashboard",  // internal business-model comparison
+  "/payment/cancel",         // Stripe redirect target
+  "/payment/success",        // Stripe redirect target
+]);
+
 const orphans = [];
 for (const route of definedRoutes) {
   if (route.includes(":") || route.includes("*")) continue;
   // Skip the root and known programmatic-only routes
   if (route === "*" || route === "/") continue;
+  if (INTENTIONAL_ORPHANS.has(route)) continue;
   // Skip redirect aliases — they're not real destinations
   if (redirectRoutes.has(route)) continue;
   // Direct hit?

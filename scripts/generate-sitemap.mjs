@@ -24,7 +24,13 @@ const _d = new Date();
 const TODAY = `${_d.getFullYear()}-${String(_d.getMonth() + 1).padStart(2, '0')}-${String(_d.getDate()).padStart(2, '0')}`;
 
 // Paths never included (auth-only, payments, API — mirrors robots.txt)
-const EXCLUDE = /^\/(admin|customer|tech|profile|my-requests|my-path|favorites|setup|payment|api)(\/|$)/;
+// `/memory` is a per-user TekBot memory dashboard — it renders empty for a
+// crawler. `/opportunity-dashboard` is an internal business-model comparison
+// chart, off-topic for a senior tech-help site. Both were unlinked from
+// anywhere on the site yet submitted in the sitemap, which is the definition
+// of an orphaned thin page. Excluded 2026-08-12.
+const EXCLUDE =
+  /^\/(admin|customer|tech|profile|my-requests|my-path|favorites|setup|payment|api|memory|opportunity-dashboard)(\/|$)/;
 
 // ── Static pages with explicit priorities ─────────────────────
 const STATIC_PAGES = [

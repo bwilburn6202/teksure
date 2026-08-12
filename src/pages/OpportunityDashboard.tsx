@@ -138,7 +138,7 @@ export default function OpportunityDashboard() {
 
   return (
     <div className="min-h-screen bg-background text-foreground">
-      <SEOHead title="Business Opportunity Dashboard — TekSure" description="Compare 16 business models across revenue, startup cost, margins, and break-even timelines." path="/opportunity-dashboard" />
+      <SEOHead title="Business Opportunity Dashboard — TekSure" description="Compare 16 business models across revenue, startup cost, margins, and break-even timelines." path="/opportunity-dashboard" noindex />
       <Navbar />
       <main id="main-content" className="container py-8 space-y-8">
         {/* Header */}
