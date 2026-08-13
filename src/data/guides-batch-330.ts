@@ -47,7 +47,7 @@ The email itself often has real Best Buy logos and formatting copied from an act
       },
       {
         title: 'If you already called and gave access, act fast',
-        content: 'If you installed anything the caller asked for, or gave them remote access to your computer, disconnect from the internet, restart your computer, and run a full antivirus scan. If you shared bank information, call your bank immediately using the number on your card (not one the scammer gave you) and ask them to watch your account and consider freezing it.',
+        content: 'If you installed anything the caller asked for, or gave them remote access to your computer, disconnect from the internet, restart your computer, and run a full antivirus scan. If you shared bank information, call your bank right away using the number on your card (not one the scammer gave you) and ask them to watch your account and consider freezing it.',
       },
     ],
   },

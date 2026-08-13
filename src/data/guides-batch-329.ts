@@ -32,7 +32,7 @@ The safest response is to never tap the link. Real toll agencies do not send pay
       },
       {
         title: 'Check the sender and wording for red flags',
-        content: 'Scam texts often come from random phone numbers or email-style addresses rather than a company short code. Watch for urgent language like "final notice," "pay immediately," or "avoid legal action" — real toll agencies use calmer, more routine language and give you weeks to pay, not hours.',
+        content: 'Scam texts often come from random phone numbers or email-style addresses rather than a company short code. Watch for urgent language like "final notice," "pay right away," or "avoid legal action" — real toll agencies use calmer, more routine language and give you weeks to pay, not hours.',
         warning: 'Real toll agencies never ask for your Social Security number, driver\'s license number, or bank login over text. If a text asks for any of these, it is a scam.',
       },
       {
@@ -45,7 +45,7 @@ The safest response is to never tap the link. Real toll agencies do not send pay
       },
       {
         title: 'Delete the text',
-        content: 'Once you have reported it, delete the message. If you accidentally tapped the link and entered card information, call your bank or card issuer immediately to cancel the card and watch your statements closely for unauthorized charges.',
+        content: 'Once you have reported it, delete the message. If you accidentally tapped the link and entered card information, call your bank or card issuer right away to cancel the card and watch your statements closely for unauthorized charges.',
       },
     ],
   },
@@ -184,7 +184,7 @@ This guide walks through freezing your credit at all three bureaus, which takes 
       },
       {
         title: 'Also consider freezing your minor grandchildren\'s credit if you are a guardian',
-        content: 'Children\'s Social Security numbers are frequently stolen for identity theft precisely because nobody checks a child\'s credit report for years. Parents and legal guardians can freeze a minor\'s credit at all three bureaus using a similar process, which requires extra documentation like a birth certificate.',
+        content: 'Children\'s Social Security numbers are often stolen for identity theft precisely because nobody checks a child\'s credit report for years. Parents and legal guardians can freeze a minor\'s credit at all three bureaus using a similar process, which requires extra documentation like a birth certificate.',
       },
     ],
   },

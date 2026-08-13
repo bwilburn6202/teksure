@@ -19,7 +19,7 @@ export const guidesBatch332: Guide[] = [
     difficulty: 'Beginner',
     body: `The "grandparent scam" is not new — a caller pretends to be a grandchild in trouble and begs for money to be sent right away. What is new is how convincing it has become. Scammers now use AI voice-cloning tools that need only a few seconds of a person's real voice — often pulled from a public social media video, a voicemail greeting, or a video call — to generate a fake recording that sounds remarkably like them, including tone of voice and manner of speaking.
 
-The call typically follows a script: a panicked-sounding "grandchild" says they have been in a car accident, arrested, or are stuck in another country, and a second person — playing a lawyer, bail bondsman, or police officer — gets on the line to explain that money is needed immediately, usually through gift cards, a wire transfer, cryptocurrency, or cash handed to a courier. The Federal Trade Commission reports that imposter scams like this are now the most reported type of fraud complaint, with family-emergency scams averaging around $11,000 in losses per victim, frequently in a single call.
+The call typically follows a script: a panicked-sounding "grandchild" says they have been in a car accident, arrested, or are stuck in another country, and a second person — playing a lawyer, bail bondsman, or police officer — gets on the line to explain that money is needed right away, usually through gift cards, a wire transfer, cryptocurrency, or cash handed to a courier. The Federal Trade Commission reports that imposter scams like this are now the most reported type of fraud complaint, with family-emergency scams averaging around $11,000 in losses per victim, often in a single call.
 
 The single most reliable defense does not depend on spotting a fake voice — even a very convincing one. It is verification through a second channel. Hang up, and call the family member back directly using the phone number you already have saved for them, not a number the caller gives you. If you cannot reach them, call another family member to check. A real emergency will withstand a few minutes of you confirming it; a scam depends on you not taking that time.
 
@@ -45,7 +45,7 @@ The single most reliable defense does not depend on spotting a fake voice — ev
       },
       {
         title: 'Report the call',
-        content: 'Report the scam attempt to the FTC at reportfraud.ftc.gov, and to your local police non-emergency line. If money was sent, contact the gift card company, wire service, or bank immediately — some have limited windows to reverse a transfer.',
+        content: 'Report the scam attempt to the FTC at reportfraud.ftc.gov, and to your local police non-emergency line. If money was sent, contact the gift card company, wire service, or bank right away — some have limited windows to reverse a transfer.',
       },
     ],
   },
