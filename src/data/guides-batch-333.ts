@@ -177,7 +177,7 @@ The stronger habit, though, is to stop relying on search for this task at all. F
 
 These texts go out by the million to numbers chosen at random, and enough recipients have driven a toll road recently that a share of them assume it is genuine. The small dollar amount is deliberate: it is low enough that paying feels easier than checking.
 
-The payment page is the point of the scam. It captures your card number, and often your name, address, and phone number as well. Some versions also ask for a bank login. The few dollars are not the goal; the card details and personal information are, and they are frequently resold or used for larger charges weeks later.
+The payment page is the point of the scam. It captures your card number, and often your name, address, and phone number as well. Some versions also ask for a bank login. The few dollars are not the goal; the card details and personal information are, and they are often resold or used for larger charges weeks later.
 
 Real toll authorities do send notices, but they use the mail and your own online account. None of them chase a first-time toll balance by text message with a payment link. So the check is simple and costs nothing: ignore the link entirely and look up your balance the way you normally would — through the toll agency's own website or app, typed in yourself.
 

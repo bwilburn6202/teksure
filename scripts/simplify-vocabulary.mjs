@@ -40,7 +40,12 @@ const DRY = process.argv.includes('--dry-run');
 const DICTIONARY = {
   approximately: 'about',
   additionally: 'also',
-  assistance: 'help',
+  // "assistance" was REMOVED in cycle 94. It is load-bearing in proper nouns
+  // this site cites constantly: "State Health Insurance Assistance Program,
+  // or SHIP" became "State Health Insurance Help Program, or SHIP" — an
+  // acronym that no longer matches its own expansion — and FEMA's "disaster
+  // assistance" (also DisasterAssistance.gov) became "disaster help," which
+  // is not what the reader will see on the government site.
   immediately: 'right away',
   numerous: 'many',
   obtain: 'get',
@@ -57,10 +62,19 @@ const DICTIONARY = {
   furthermore: 'also',
   regarding: 'about',
   sufficient: 'enough',
-  require: 'need',
-  requires: 'needs',
-  requiring: 'needing',
-  required: 'needed',
+  // "require" was REMOVED from this dictionary in cycle 94 after a live run
+  // showed three separate failure modes across 4,049 guides:
+  //   1. It rewrote literal UI labels. iOS's long-press menu really does say
+  //      "Require Face ID"; the swap produced "Don't Need Face ID," which is
+  //      an instruction the reader cannot follow because no such button
+  //      exists. Same for "Require Touch ID."
+  //   2. "lets you require Face ID" became "lets you need Face ID" — the two
+  //      verbs do not share a causative frame.
+  //   3. "they just require authentication" became "they just need
+  //      authentication," which trips the banned minimizing-phrase check in
+  //      brand-voice.test.ts. Eight guides failed the suite.
+  // A word-boundary regex cannot tell prose from a quoted button name, so the
+  // safe choice is to leave the word alone.
   significantly: 'a lot',
   frequently: 'often',
   occasionally: 'sometimes',
@@ -93,22 +107,40 @@ const DICTIONARY = {
   ensuring: 'making sure',
 };
 
+// Some verbs take a gerund complement their plain-English replacement does
+// not share ("requires answering" is correct, "needs answering" reads as
+// passive). Any dictionary entry listed here is skipped when the very next
+// word ends in -ing. Currently empty — `require` was dropped from the
+// dictionary outright — but the guard is kept for future entries.
+const SKIP_BEFORE_GERUND = new Set();
+
 function applyDictionary(text) {
   let changed = 0;
   let out = text;
   for (const [word, replacement] of Object.entries(DICTIONARY)) {
-    const re = new RegExp(`\\b${word}\\b`, 'g'); // case-sensitive: body text is normal prose
+    const guard = SKIP_BEFORE_GERUND.has(word) ? '(?!\\s+\\w+ing\\b)' : '';
+    const re = new RegExp(`\\b${word}\\b${guard}`, 'g'); // case-sensitive: body text is normal prose
     out = out.replace(re, () => {
       changed++;
       return replacement;
     });
-    // Also handle a capitalized, sentence-initial form.
+    // Also handle a capitalized, sentence-initial form — but ONLY at a real
+    // sentence start. A capitalized word mid-sentence is almost always part
+    // of a proper noun or a quoted UI label ("State Health Insurance
+    // Assistance Program", the iOS button "Require Face ID"), and rewriting
+    // one word of a name produces text the reader cannot match against what
+    // is actually on their screen. So the match must be preceded by the
+    // start of the string, a sentence-ending punctuation mark, a newline, a
+    // bullet, or an opening quote/bracket.
     const cap = word[0].toUpperCase() + word.slice(1);
     const capReplacement = replacement[0].toUpperCase() + replacement.slice(1);
-    const reCap = new RegExp(`\\b${cap}\\b`, 'g');
-    out = out.replace(reCap, () => {
+    const reCap = new RegExp(
+      `(^|[.!?:]\\s|\\\\n|[\\n]|[-•*]\\s|[("'“])(${cap})\\b${guard}`,
+      'g',
+    );
+    out = out.replace(reCap, (_m, prefix) => {
       changed++;
-      return capReplacement;
+      return `${prefix}${capReplacement}`;
     });
   }
   return { out, changed };
