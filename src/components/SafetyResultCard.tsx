@@ -38,7 +38,7 @@ export function SafetyResultCard({ query, result }: SafetyResultCardProps) {
               <div className="flex flex-wrap items-center gap-2 mb-1">
                 <h2 className="font-bold text-lg">{style.label}</h2>
                 {result.cached && (
-                  <span className="text-[10px] px-2 py-0.5 rounded-full bg-background/60 border border-border text-muted-foreground uppercase tracking-wider">
+                  <span className="text-xs px-2 py-0.5 rounded-full bg-background/60 border border-border text-muted-foreground uppercase tracking-wider">
                     cached
                   </span>
                 )}
@@ -66,7 +66,7 @@ export function SafetyResultCard({ query, result }: SafetyResultCardProps) {
                     <SubIcon className={`h-4 w-4 ${sub.iconClass} shrink-0 mt-0.5`} aria-hidden="true" />
                     <div className="flex-1 min-w-0">
                       <p className="text-sm text-foreground/90 leading-snug">{r.detail}</p>
-                      <p className="text-[11px] text-muted-foreground mt-0.5">
+                      <p className="text-sm text-muted-foreground mt-0.5">
                         Source: <span className="font-mono">{r.source}</span>
                       </p>
                     </div>

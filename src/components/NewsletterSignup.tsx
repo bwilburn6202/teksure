@@ -109,7 +109,7 @@ export function NewsletterSignup({ variant = 'default', className = '' }: Newsle
           )}
         </>
         {error && <p className="text-xs text-destructive mt-1">{error}</p>}
-        {!submitted && <p className="text-[11px] text-muted-foreground mt-2">No spam. Unsubscribe any time.</p>}
+        {!submitted && <p className="text-sm text-muted-foreground mt-2">No spam. Unsubscribe any time.</p>}
       </div>
     );
   }
@@ -154,7 +154,7 @@ export function NewsletterSignup({ variant = 'default', className = '' }: Newsle
                 </Button>
               </form>
               {error && <p className="text-xs text-destructive mt-2">{error}</p>}
-              <p className="text-[11px] text-muted-foreground mt-3">
+              <p className="text-sm text-muted-foreground mt-3">
                 We respect your inbox. No spam, ever. Read our{' '}
                 <a href="/privacy" className="underline hover:text-foreground transition-colors">privacy policy</a>.
               </p>

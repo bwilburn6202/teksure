@@ -96,7 +96,7 @@ const categoryEmoji: Record<string, string> = {
 function ComplexityBadge({ level }: { level: Complexity }) {
   const cfg = complexityConfig[level];
   return (
-    <span className={`inline-flex items-center px-1.5 py-0.5 rounded text-[10px] font-medium border shrink-0 ${cfg.color}`}>
+    <span className={`inline-flex items-center px-1.5 py-0.5 rounded text-xs font-medium border shrink-0 ${cfg.color}`}>
       {cfg.label}
     </span>
   );
@@ -191,17 +191,17 @@ function TreeNode({
               </span>
               {complexity && <ComplexityBadge level={complexity} />}
               {node.pricing && node.pricing !== 'free' && (
-                <Badge variant="outline" className="text-[10px] px-1.5 py-0 shrink-0">
+                <Badge variant="outline" className="text-xs px-1.5 py-0 shrink-0">
                   {node.pricing}
                 </Badge>
               )}
               {node.localInstall && (
-                <Badge variant="outline" className="text-[10px] px-1.5 py-0 shrink-0">
+                <Badge variant="outline" className="text-xs px-1.5 py-0 shrink-0">
                   install required
                 </Badge>
               )}
               {node.registration && (
-                <Badge variant="outline" className="text-[10px] px-1.5 py-0 shrink-0">
+                <Badge variant="outline" className="text-xs px-1.5 py-0 shrink-0">
                   account needed
                 </Badge>
               )}

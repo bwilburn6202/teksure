@@ -203,7 +203,7 @@ export default function BackupVerification() {
                     <label className="flex items-start gap-3 cursor-pointer">
                       <Checkbox checked={isDone} onCheckedChange={() => toggle(`${device}-${i}`)} className="mt-1" />
                       <div className="flex-1">
-                        <p className="text-[10px] uppercase tracking-wider text-muted-foreground font-semibold mb-1">{sectionLabels[i]}</p>
+                        <p className="text-xs uppercase tracking-wider text-muted-foreground font-semibold mb-1">{sectionLabels[i]}</p>
                         <p className={`font-medium text-sm ${isDone ? 'line-through text-muted-foreground' : ''}`}>{i + 1}. {s.title}</p>
                         <p className="text-xs text-muted-foreground mt-1">{s.detail}</p>
                       </div>

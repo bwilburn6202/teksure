@@ -233,7 +233,7 @@ export default function ForumIndex() {
                                 <MessageSquare className="h-4 w-4 text-muted-foreground" />
                                 {thread.reply_count}
                               </span>
-                              <span className="text-[10px] text-muted-foreground">replies</span>
+                              <span className="text-xs text-muted-foreground">replies</span>
                             </div>
                             <ChevronRight className="h-4 w-4 text-muted-foreground group-hover:text-primary transition-colors" />
                           </div>

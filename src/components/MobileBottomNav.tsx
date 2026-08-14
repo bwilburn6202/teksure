@@ -43,7 +43,7 @@ export function MobileBottomNav() {
               <NavLink
                 to={item.to}
                 className={({ isActive }) =>
-                  'flex min-h-[56px] flex-col items-center justify-center gap-0.5 px-1 py-1.5 text-[11px] font-medium transition-colors ' +
+                  'flex min-h-[56px] flex-col items-center justify-center gap-0.5 px-1 py-1.5 text-xs font-medium transition-colors ' +
                   (isActive
                     ? 'text-primary'
                     : 'text-muted-foreground hover:text-foreground')

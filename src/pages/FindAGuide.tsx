@@ -275,13 +275,13 @@ const FindAGuide = () => {
                             <div className="font-medium text-base mb-0.5 truncate">{g.title}</div>
                             <div className="text-sm text-muted-foreground line-clamp-2">{g.excerpt}</div>
                             <div className="flex items-center gap-2 mt-2 flex-wrap">
-                              <Badge variant="secondary" className="text-[10px]">
+                              <Badge variant="secondary" className="text-xs">
                                 {categoryLabels[g.category] ?? g.category}
                               </Badge>
                               {g.difficulty && (
-                                <Badge variant="outline" className="text-[10px]">{g.difficulty}</Badge>
+                                <Badge variant="outline" className="text-xs">{g.difficulty}</Badge>
                               )}
-                              <span className="text-[11px] text-muted-foreground">{g.readTime}</span>
+                              <span className="text-xs text-muted-foreground">{g.readTime}</span>
                             </div>
                           </div>
                         </div>

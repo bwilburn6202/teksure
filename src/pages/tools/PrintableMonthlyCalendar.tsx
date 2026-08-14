@@ -100,7 +100,7 @@ export default function PrintableMonthlyCalendar() {
                     <div className="font-bold text-gray-700">{d}</div>
                     <div className="space-y-0.5 mt-1">
                       {notesForDay(d).map(n => (
-                        <div key={n.id} className="bg-yellow-100 rounded px-1 py-0.5 text-[10px] flex items-start justify-between gap-1">
+                        <div key={n.id} className="bg-yellow-100 rounded px-1 py-0.5 text-xs flex items-start justify-between gap-1">
                           <span>{n.text}</span>
                           <button onClick={() => remove(n.id)} className="text-red-400 hover:text-red-600 print:hidden">
                             <Trash2 className="h-3 w-3" />

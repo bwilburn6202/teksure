@@ -782,7 +782,7 @@ function ChecklistThumb({
             Checklist
           </div>
           <span
-            className="text-[10px] uppercase tracking-wider font-bold px-2 py-0.5 rounded-full text-white"
+            className="text-xs uppercase tracking-wider font-bold px-2 py-0.5 rounded-full text-white"
             style={{ backgroundColor: checklist.accent }}
           >
             {totalSteps} steps
