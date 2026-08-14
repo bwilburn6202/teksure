@@ -460,7 +460,7 @@ const SiteIndex = () => {
                       {s.title}
                       <Badge
                         variant="outline"
-                        className="ml-1 px-1.5 h-5 text-[11px] rounded-full bg-background/60"
+                        className="ml-1 px-1.5 h-5 text-xs rounded-full bg-background/60"
                       >
                         {s.entries.length}
                       </Badge>

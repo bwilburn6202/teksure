@@ -1204,7 +1204,7 @@ const Glossary = () => {
               id="glossary-search-help"
               className="mt-2 text-xs text-muted-foreground"
             >
-              Press <kbd className="px-1.5 py-0.5 rounded border border-border bg-muted text-[10px] font-mono">Enter</kbd> to jump to the first match.
+              Press <kbd className="px-1.5 py-0.5 rounded border border-border bg-muted text-xs font-mono">Enter</kbd> to jump to the first match.
             </p>
           </div>
 

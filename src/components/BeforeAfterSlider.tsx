@@ -75,7 +75,7 @@ export function BeforeAfterSlider({
         </div>
         <div className="flex-1 mx-3 h-6 rounded-md bg-background/80 border border-border flex items-center justify-center gap-1.5 px-3">
           <ArrowLeftRight className="h-3 w-3 text-muted-foreground" />
-          <span className="text-[10px] text-muted-foreground">Drag to compare</span>
+          <span className="text-xs text-muted-foreground">Drag to compare</span>
         </div>
       </div>
 
@@ -128,7 +128,7 @@ export function BeforeAfterSlider({
           className="absolute top-2 left-2 z-10 pointer-events-none"
           style={{ opacity: split > 15 ? 1 : 0, transition: 'opacity 0.2s' }}
         >
-          <span className="text-[10px] font-bold uppercase tracking-wide text-white bg-black/40 rounded px-1.5 py-0.5">
+          <span className="text-xs font-bold uppercase tracking-wide text-white bg-black/40 rounded px-1.5 py-0.5">
             {beforeLabel}
           </span>
         </div>
@@ -136,7 +136,7 @@ export function BeforeAfterSlider({
           className="absolute top-2 right-2 z-10 pointer-events-none"
           style={{ opacity: split < 85 ? 1 : 0, transition: 'opacity 0.2s' }}
         >
-          <span className="text-[10px] font-bold uppercase tracking-wide text-white bg-secondary/80 rounded px-1.5 py-0.5">
+          <span className="text-xs font-bold uppercase tracking-wide text-white bg-secondary/80 rounded px-1.5 py-0.5">
             {afterLabel}
           </span>
         </div>

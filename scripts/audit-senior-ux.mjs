@@ -37,10 +37,35 @@ function walk(dir, out = []) {
 
 const files = walk(join(SRC, 'pages')).concat(walk(join(SRC, 'components')));
 
+// ── 0. What does `text-xs` actually render at on THIS site? ──────
+// Tailwind's stock text-xs is 12px, but tailwind.config.ts overrides the
+// bottom of the type scale (see the "Type scale floor" comment there) because
+// the audience is mostly over 60. This script used to assume the stock 12px
+// and reported 3,000+ instances of "tiny text" that do not exist — noise that
+// several dev-loop cycles spent effort rediscovering and deferring. Read the
+// real value instead of assuming it.
+const TINY_FLOOR_PX = 14; // below this is a squint at arm's length
+
+function configuredFontSizePx(token) {
+  try {
+    const cfg = readFileSync(join(ROOT, 'tailwind.config.ts'), 'utf8');
+    const block = cfg.match(/fontSize:\s*\{([\s\S]*?)\n\s{6}\}/);
+    if (!block) return null;
+    const line = block[1].match(new RegExp(`\\b${token}:\\s*\\[?\\s*'([0-9.]+)(rem|px)'`));
+    if (!line) return null;
+    const n = parseFloat(line[1]);
+    return line[2] === 'rem' ? n * 16 : n;
+  } catch {
+    return null;
+  }
+}
+
+const XS_PX = configuredFontSizePx('xs') ?? 12; // fall back to Tailwind's default
+const XS_IS_TINY = XS_PX < TINY_FLOOR_PX;
+
 // ── 1. Type that is too small for the audience ───────────────────
-// text-xs is 12px. For a 70-year-old that is a squint at arm's length.
-// We allow it in deliberately secondary chrome (badges, captions) but flag
-// heavy use inside page bodies.
+// Counted only when the class actually resolves below the floor. Arbitrary
+// values like text-[11px] are always checked, since they bypass the config.
 const tinyText = [];
 // ── 2. Tap targets below the 44px WCAG minimum ───────────────────
 // h-8 = 32px, h-9 = 36px. Fine for a mouse, poor for an unsteady finger.
@@ -54,7 +79,14 @@ for (const f of files) {
   const text = readFileSync(f, 'utf8');
   const rel = relative(ROOT, f);
 
-  const xs = (text.match(/\btext-xs\b/g) || []).length;
+  let xs = XS_IS_TINY ? (text.match(/\btext-xs\b/g) || []).length : 0;
+
+  // Arbitrary values sidestep the config floor entirely: text-[11px], text-[0.7rem].
+  for (const m of text.matchAll(/\btext-\[([0-9.]+)(px|rem)\]/g)) {
+    const px = m[2] === 'rem' ? parseFloat(m[1]) * 16 : parseFloat(m[1]);
+    if (px < TINY_FLOOR_PX) xs += 1;
+  }
+
   if (xs > 0) tinyText.push({ file: rel, count: xs });
 
   // Tap targets under 44px. The size class has to be on the interactive element
@@ -240,7 +272,8 @@ console.log(`Average reading grade         ${report.readingGradeAverage}   (targ
 console.log(`Guides above grade 8          ${report.guidesAboveGrade8Pct}%`);
 console.log(`Guides above grade 10         ${report.guidesAboveGrade10}`);
 console.log('');
-console.log(`Files using text-xs (12px)    ${report.filesUsingTinyText}  (${report.tinyTextInstances} instances)`);
+console.log(`Type scale floor (text-xs)    ${XS_PX}px${XS_IS_TINY ? '  ⚠ below the 14px floor' : '  (config raises it; not counted as tiny)'}`);
+console.log(`Files below the ${TINY_FLOOR_PX}px floor    ${report.filesUsingTinyText}  (${report.tinyTextInstances} instances)`);
 console.log(`Files w/ sub-44px tap targets ${report.filesWithSmallTapTargets}`);
 console.log(`Images missing alt text       ${report.imagesMissingAlt}`);
 console.log(`Files with onClick on a div   ${report.filesWithDivOnClick}  (keyboard/screen-reader risk)`);
@@ -265,7 +298,7 @@ if (VERBOSE) {
     console.log('');
   }
   if (tinyText.length) {
-    console.log('Heaviest text-xs users:');
+    console.log(`Heaviest users of type below ${TINY_FLOOR_PX}px:`);
     for (const t of top([...tinyText].sort((a, b) => b.count - a.count)))
       console.log(`   ${t.count}x  ${t.file}`);
   }

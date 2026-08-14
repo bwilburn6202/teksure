@@ -426,7 +426,7 @@ export function Navbar({ noSpacer = false }: { noSpacer?: boolean } = {}) {
               </Link>
 
               {/* Browse list */}
-              <p className="text-[11px] font-bold uppercase tracking-widest text-[#6B6B6B] dark:text-white/60 px-2 mb-2">
+              <p className="text-xs font-bold uppercase tracking-widest text-[#6B6B6B] dark:text-white/60 px-2 mb-2">
                 Browse
               </p>
               <div className="flex flex-col gap-0.5 mb-5">
@@ -449,7 +449,7 @@ export function Navbar({ noSpacer = false }: { noSpacer?: boolean } = {}) {
               </div>
 
               {/* Display row — light/dark + font size only */}
-              <p className="text-[11px] font-bold uppercase tracking-widest text-[#6B6B6B] dark:text-white/60 px-2 mb-2">
+              <p className="text-xs font-bold uppercase tracking-widest text-[#6B6B6B] dark:text-white/60 px-2 mb-2">
                 Display
               </p>
               <div

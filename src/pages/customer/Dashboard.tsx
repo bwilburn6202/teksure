@@ -224,7 +224,7 @@ const Dashboard = () => {
                   </div>
                   <p className="text-2xl font-bold">{value}</p>
                   <p className="text-xs font-medium text-foreground/80 mt-0.5">{label}</p>
-                  <p className="text-[11px] text-muted-foreground mt-0.5">{sub}</p>
+                  <p className="text-sm text-muted-foreground mt-0.5">{sub}</p>
                 </CardContent>
               </Card>
             </div>
@@ -334,7 +334,7 @@ const Dashboard = () => {
                         </div>
                         <div className="flex flex-col items-end gap-1 shrink-0">
                           <StatusBadge status={booking.status} />
-                          <span className="text-[10px] text-muted-foreground">
+                          <span className="text-xs text-muted-foreground">
                             {new Date(booking.created_at).toLocaleDateString('en-US', { day: 'numeric', month: 'short' })}
                           </span>
                         </div>
