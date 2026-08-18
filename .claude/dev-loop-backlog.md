@@ -8,6 +8,53 @@ Newest cycles appear at the top.
 
 ---
 
+## Cycle 96 — 2026-08-17 (Cowork run)
+
+### [fixed] Tech Problem of the Week was 7 days old — refreshed with a real, verified alert
+`/tech-problem-of-week` was still showing the August 10 social-media-ads entry in its current-week
+slot. The page advertises "updated weekly" and is footer-linked, so the staleness was public.
+
+New current entry: **"The Top Search Result for Paying Your Bill May Not Be Your Biller"**
+(`weekRange: 'August 17–23, 2026'`, `dateISO: '2026-08-17'`). Sourced from the FTC consumer alert
+published August 17, 2026, *Searching Online: Bill Pay Impersonators*, which describes paid search
+ads that impersonate a biller's official payment page, and cites the FTC's $21M settlement with
+Doxo over claims it posed as an official payment channel for Labcorp, AT&T, and state toll
+authorities. Alert page fetched and read directly — nothing written from memory.
+
+The August 10 entry was moved into `PAST_PROBLEMS` (via a named `PREVIOUS_WEEK_PROBLEM` const so
+the file stays readable) with `isCurrent` dropped. Its copy was already written in past tense, so
+no tense repair was needed.
+
+### Cadence pages — What's New current, no action
+`/whats-new` newest entry is `aug-2026`, which covers the current month. Not the first run of a new
+month, so no release block added.
+
+### [ok] Measurement clean
+4,049 guides · 3,156 routes · 285 tools · 0 duplicate slugs/titles · 0 broken internal links ·
+0 orphaned routes · 0 stale OS mentions · 0 aged guides · 0 overlong excerpts · 75 source URLs
+with 0 confirmed broken (1 unreachable, bot-blocking) · 0 sub-44px tap targets · 0 missing alt ·
+0 onClick-on-div · 7 files / 13 instances below the 14px type floor (the considered exceptions
+documented in cycle 95).
+`tsc` clean · **104/104 tests** · `validate-slugs` 4,049/4,049 unique.
+
+### `npm run build` FAILED — out of memory, not a code problem
+`npm run build` aborted with a V8 OOM (exit 134). The sandbox reports 3,906MB total / ~3,627MB
+available; the build needs roughly 8GB. `npx tsc --noEmit` also aborted at default heap and only
+completed with `--max-old-space-size=3600`. **The build was not verified on this run.** The change
+is a data-literal edit inside one page component with no new imports, so the risk is low, but that
+is a judgment call, not a passing build.
+
+### Readability — unchanged at 8.3 / 58.5% above grade 8, deliberately not touched
+No daily hand-pass. Cycle 94 established vocabulary substitution is exhausted and the splitter
+scripts degrade prose. Still awaiting Bailey's decision: scripted bulk pass, or accept 8.3 and stop
+reporting it as a warning.
+
+### Blockers unchanged (raise, don't work around)
+Monetization credentials (AdSense/affiliate) · one full `npm run build` on a machine with ≥8GB ·
+the readability decision · analytics verification · the Hetzner CX22 for hosted Ollama.
+
+---
+
 ## Cycle 95 — 2026-08-13 (Cowork run)
 
 ### [fixed] The audit was reporting 3,022 instances of tiny text that do not exist
@@ -1211,240 +1258,4 @@ No video is reused across more than 5 guides.
 
 ---
 
-## Cycle 81 — 2026-08-10T02:29:14.661Z
-
-### [ok] Site metrics snapshot
-3748 guides, 3156 routes, 285 tools.
-
-### [ok] Duplicate guide slugs
-No duplicate slugs.
-
-### [ok] Internal link audit
-0 broken targets, 6 orphaned routes (of 3119 routes).
-
-### [ok] TypeScript compile
-No TypeScript errors.
-
-### [ok] Stale OS version mentions
-No stale OS version mentions found.
-
-### [ok] Aged guides
-0 of 4049 guides published before 2025-02-10.
-
-### [ok] Duplicate guide titles
-No duplicate guide titles.
-
-### [warn] Readability & senior UX
-avg reading grade 8.3 (target <= 8), 58.5% of guides above grade 8, 0 images missing alt.
-
-```
-- grade 10.2: use-silvur-retirement-planning
-- grade 10: how-to-back-up-iphone-to-icloud
-- grade 10.1: set-up-bank-text-alerts
-- grade 10.1: close-old-bank-account-safely
-- grade 10.3: youtube-videos-buffering-fix
-- grade 10.5: set-up-amazon-prime-delivery-prescriptions
-- grade 10: how-to-use-siri-iphone
-- grade 10.2: walgreens-app-prescription-refill-step-by-step-2026
-- grade 10.2: how-to-screenshot-windows-11
-- grade 10.7: how-to-use-notes-app-iphone
-```
-
-### [ok] External source link health
-75 source URLs checked, 0 confirmed broken (404/410), 1 unreachable (often bot-blocking).
-
-### [ok] Hardcoded prices outside pricing.ts
-All service prices come from src/data/pricing.ts.
-
-### [ok] Undisclosed invented testimonials
-No hardcoded reviews without a disclosure.
-
-### [ok] Overlong guide excerpts
-All guide excerpts are within 160 characters.
-
-### [ok] Reused placeholder videos
-No video is reused across more than 5 guides.
-
-### Suggested next actions
-- **Readability & senior UX** — avg reading grade 8.3 (target <= 8), 58.5% of guides above grade 8, 0 images missing alt.
-
----
-
-## Cycle 80 — 2026-08-09T18:55:51.572Z
-
-### [ok] Site metrics snapshot
-3748 guides, 3156 routes, 285 tools.
-
-### [ok] Duplicate guide slugs
-No duplicate slugs.
-
-### [ok] Internal link audit
-0 broken targets, 6 orphaned routes (of 3119 routes).
-
-### [ok] TypeScript compile
-No TypeScript errors.
-
-### [ok] Stale OS version mentions
-No stale OS version mentions found.
-
-### [ok] Aged guides
-0 of 4049 guides published before 2025-02-09.
-
-### [ok] Duplicate guide titles
-No duplicate guide titles.
-
-### [warn] Readability & senior UX
-avg reading grade 8.3 (target <= 8), 58.5% of guides above grade 8, 0 images missing alt.
-
-```
-- grade 10.2: use-silvur-retirement-planning
-- grade 10: how-to-back-up-iphone-to-icloud
-- grade 10.1: set-up-bank-text-alerts
-- grade 10.1: close-old-bank-account-safely
-- grade 10.3: youtube-videos-buffering-fix
-- grade 10.5: set-up-amazon-prime-delivery-prescriptions
-- grade 10: how-to-use-siri-iphone
-- grade 10.2: walgreens-app-prescription-refill-step-by-step-2026
-- grade 10.2: how-to-screenshot-windows-11
-- grade 10.7: how-to-use-notes-app-iphone
-```
-
-### [ok] External source link health
-75 source URLs checked, 0 confirmed broken (404/410), 1 unreachable (often bot-blocking).
-
-### [ok] Hardcoded prices outside pricing.ts
-All service prices come from src/data/pricing.ts.
-
-### [ok] Undisclosed invented testimonials
-No hardcoded reviews without a disclosure.
-
-### [ok] Overlong guide excerpts
-All guide excerpts are within 160 characters.
-
-### [ok] Reused placeholder videos
-No video is reused across more than 5 guides.
-
-### Suggested next actions
-- **Readability & senior UX** — avg reading grade 8.3 (target <= 8), 58.5% of guides above grade 8, 0 images missing alt.
-
----
-
-## Cycle 79 — 2026-08-09T13:11:17.972Z
-
-### [ok] Site metrics snapshot
-3748 guides, 3156 routes, 285 tools.
-
-### [ok] Duplicate guide slugs
-No duplicate slugs.
-
-### [ok] Internal link audit
-0 broken targets, 6 orphaned routes (of 3119 routes).
-
-### [ok] TypeScript compile
-No TypeScript errors.
-
-### [ok] Stale OS version mentions
-No stale OS version mentions found.
-
-### [ok] Aged guides
-0 of 4049 guides published before 2025-02-09.
-
-### [ok] Duplicate guide titles
-No duplicate guide titles.
-
-### [warn] Readability & senior UX
-avg reading grade 8.3 (target <= 8), 58.5% of guides above grade 8, 0 images missing alt.
-
-```
-- grade 10.2: use-silvur-retirement-planning
-- grade 10: how-to-back-up-iphone-to-icloud
-- grade 10.1: set-up-bank-text-alerts
-- grade 10.1: close-old-bank-account-safely
-- grade 10.3: youtube-videos-buffering-fix
-- grade 10.5: set-up-amazon-prime-delivery-prescriptions
-- grade 10: how-to-use-siri-iphone
-- grade 10.2: walgreens-app-prescription-refill-step-by-step-2026
-- grade 10.2: how-to-screenshot-windows-11
-- grade 10.7: how-to-use-notes-app-iphone
-```
-
-### [ok] External source link health
-75 source URLs checked, 0 confirmed broken (404/410), 1 unreachable (often bot-blocking).
-
-### [ok] Hardcoded prices outside pricing.ts
-All service prices come from src/data/pricing.ts.
-
-### [ok] Undisclosed invented testimonials
-No hardcoded reviews without a disclosure.
-
-### [ok] Overlong guide excerpts
-All guide excerpts are within 160 characters.
-
-### [ok] Reused placeholder videos
-No video is reused across more than 5 guides.
-
-### Suggested next actions
-- **Readability & senior UX** — avg reading grade 8.3 (target <= 8), 58.5% of guides above grade 8, 0 images missing alt.
-
----
-
-## Cycle 78 — 2026-08-09T07:11:00.293Z
-
-### [ok] Site metrics snapshot
-3748 guides, 3156 routes, 285 tools.
-
-### [ok] Duplicate guide slugs
-No duplicate slugs.
-
-### [ok] Internal link audit
-0 broken targets, 6 orphaned routes (of 3119 routes).
-
-### [ok] TypeScript compile
-No TypeScript errors.
-
-### [ok] Stale OS version mentions
-No stale OS version mentions found.
-
-### [ok] Aged guides
-0 of 4049 guides published before 2025-02-09.
-
-### [ok] Duplicate guide titles
-No duplicate guide titles.
-
-### [warn] Readability & senior UX
-avg reading grade 8.3 (target <= 8), 58.5% of guides above grade 8, 0 images missing alt.
-
-```
-- grade 10.2: use-silvur-retirement-planning
-- grade 10: how-to-back-up-iphone-to-icloud
-- grade 10.1: set-up-bank-text-alerts
-- grade 10.1: close-old-bank-account-safely
-- grade 10.3: youtube-videos-buffering-fix
-- grade 10.5: set-up-amazon-prime-delivery-prescriptions
-- grade 10: how-to-use-siri-iphone
-- grade 10.2: walgreens-app-prescription-refill-step-by-step-2026
-- grade 10.2: how-to-screenshot-windows-11
-- grade 10.7: how-to-use-notes-app-iphone
-```
-
-### [ok] External source link health
-75 source URLs checked, 0 confirmed broken (404/410), 1 unreachable (often bot-blocking).
-
-### [ok] Hardcoded prices outside pricing.ts
-All service prices come from src/data/pricing.ts.
-
-### [ok] Undisclosed invented testimonials
-No hardcoded reviews without a disclosure.
-
-### [ok] Overlong guide excerpts
-All guide excerpts are within 160 characters.
-
-### [ok] Reused placeholder videos
-No video is reused across more than 5 guides.
-
-### Suggested next actions
-- **Readability & senior UX** — avg reading grade 8.3 (target <= 8), 58.5% of guides above grade 8, 0 images missing alt.
-
----
-
-<!-- cycles 75-77 trimmed to keep this file under 64KB -->
+_(Older cycles trimmed to keep this file under 64KB; git history has the rest.)_

@@ -35,6 +35,24 @@ interface TechProblem {
 }
 
 const CURRENT_PROBLEM: TechProblem = {
+  weekRange: 'August 17\u201323, 2026',
+  dateISO: '2026-08-17',
+  title: 'The Top Search Result for Paying Your Bill May Not Be Your Biller',
+  emoji: '',
+  description:
+    'On August 17 the FTC explained how bill-payment impersonators use paid search ads. You search for your lab, your phone company, or your state toll authority, and the first result looks like the company you wanted. It is an ad for a middleman with no relationship to that company. The FTC settled with one such firm, Doxo, for $21 million in August 2026, saying it presented itself as an official payment channel for companies including Labcorp and AT&T and added fees people did not expect.',
+  howToCheck:
+    'Look at the top of the results page for the small word "Sponsored" or "Ad" above the link. That marks a paid placement, not the best match. Scroll past those results to the plain listings underneath. Better still, read the web address on your paper bill or the back of your card and type it into the browser address bar yourself.',
+  whatToDo:
+    'Pay through the company\u2019s own site or its phone number from your bill. If you already paid through a site you found in an ad and were charged a fee you did not agree to, call your card company and dispute that fee, then contact the biller to confirm the payment reached them. Report the site at ReportFraud.ftc.gov.',
+  source: {
+    label: 'FTC Consumer Alert \u2014 August 17, 2026',
+    url: 'https://consumer.ftc.gov/consumer-alerts/2026/08/searching-online-bill-pay-impersonators',
+  },
+  isCurrent: true,
+};
+
+const PREVIOUS_WEEK_PROBLEM: TechProblem = {
   weekRange: 'August 10\u201316, 2026',
   dateISO: '2026-08-10',
   title: 'Nobody Is Checking the Ads in Your Facebook Feed',
@@ -49,10 +67,10 @@ const CURRENT_PROBLEM: TechProblem = {
     label: 'FTC Consumer Alert \u2014 August 10, 2026',
     url: 'https://consumer.ftc.gov/consumer-alerts/2026/08/are-ads-social-media-vetted-or-checked-scams-heres-what-know',
   },
-  isCurrent: true,
 };
 
 const PAST_PROBLEMS: TechProblem[] = [
+  PREVIOUS_WEEK_PROBLEM,
   {
     weekRange: 'August 3–9, 2026',
     dateISO: '2026-08-03',
