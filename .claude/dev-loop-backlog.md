@@ -8,6 +8,53 @@ Newest cycles appear at the top.
 
 ---
 
+## Cycle 114 — 2026-08-17 (Cowork run)
+
+### [fixed] Tech Problem of the Week was 7 days old — refreshed with a real, verified alert
+`/tech-problem-of-week` was still showing the August 10 social-media-ads entry in its current-week
+slot. The page advertises "updated weekly" and is footer-linked, so the staleness was public.
+
+New current entry: **"The Top Search Result for Paying Your Bill May Not Be Your Biller"**
+(`weekRange: 'August 17–23, 2026'`, `dateISO: '2026-08-17'`). Sourced from the FTC consumer alert
+published August 17, 2026, *Searching Online: Bill Pay Impersonators*, which describes paid search
+ads that impersonate a biller's official payment page, and cites the FTC's $21M settlement with
+Doxo over claims it posed as an official payment channel for Labcorp, AT&T, and state toll
+authorities. Alert page fetched and read directly — nothing written from memory.
+
+The August 10 entry was moved into `PAST_PROBLEMS` (via a named `PREVIOUS_WEEK_PROBLEM` const so
+the file stays readable) with `isCurrent` dropped. Its copy was already written in past tense, so
+no tense repair was needed.
+
+### Cadence pages — What's New current, no action
+`/whats-new` newest entry is `aug-2026`, which covers the current month. Not the first run of a new
+month, so no release block added.
+
+### [ok] Measurement clean
+4,049 guides · 3,156 routes · 285 tools · 0 duplicate slugs/titles · 0 broken internal links ·
+0 orphaned routes · 0 stale OS mentions · 0 aged guides · 0 overlong excerpts · 75 source URLs
+with 0 confirmed broken (1 unreachable, bot-blocking) · 0 sub-44px tap targets · 0 missing alt ·
+0 onClick-on-div · 7 files / 13 instances below the 14px type floor (the considered exceptions
+documented in cycle 95).
+`tsc` clean · **104/104 tests** · `validate-slugs` 4,049/4,049 unique.
+
+### `npm run build` FAILED — out of memory, not a code problem
+`npm run build` aborted with a V8 OOM (exit 134). The sandbox reports 3,906MB total / ~3,627MB
+available; the build needs roughly 8GB. `npx tsc --noEmit` also aborted at default heap and only
+completed with `--max-old-space-size=3600`. **The build was not verified on this run.** The change
+is a data-literal edit inside one page component with no new imports, so the risk is low, but that
+is a judgment call, not a passing build.
+
+### Readability — unchanged at 8.3 / 58.5% above grade 8, deliberately not touched
+No daily hand-pass. Cycle 94 established vocabulary substitution is exhausted and the splitter
+scripts degrade prose. Still awaiting Bailey's decision: scripted bulk pass, or accept 8.3 and stop
+reporting it as a warning.
+
+### Blockers unchanged (raise, don't work around)
+Monetization credentials (AdSense/affiliate) · one full `npm run build` on a machine with ≥8GB ·
+the readability decision · analytics verification · the Hetzner CX22 for hosted Ollama.
+
+---
+
 ## Cycle 113 — 2026-08-18T01:46:59.898Z
 
 ### [ok] Site metrics snapshot
