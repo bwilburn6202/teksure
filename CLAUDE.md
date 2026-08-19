@@ -25,6 +25,7 @@ Tech support and digital literacy for non-technical users and seniors (60+). Fre
 
 **Build pipeline**
 - `npm run build` = `vite build` → `prerender:safe` → `write-build-info`. **Never remove the prerender step.** Without it every URL serves the same generic title and the site is invisible to Bing, social crawlers, and AI answer engines. `build:spa` exists if you need a fast client-only build.
+- **Prerendering is sharded and must stay that way.** `scripts/prerender-sharded.mjs` runs `prerender.mjs` in slices of 1,000 routes, one child process each. A single process grows RSS past the container ceiling and is killed at ~4,500 of 7,128 routes with `failed: 0` — the memory is external to the V8 heap, so neither `--max-old-space-size` nor `global.gc()` touches it. Do not collapse this back into one process. The driver exits non-zero on a short run; check `https://www.teksure.com/prerender-report.json` — `status` must be `complete` and `written` must equal `routesAttempted`.
 - `scripts/prerender.mjs` must end with `process.exit(0)`. The SSR bundle holds the event loop open; without it the build hangs and Vercel times out while continuing to serve the previous deploy.
 - `vercel.json` must contain **only schema-valid keys**. An unknown property (a `"comment"` key, once) rejects the entire deployment. Put explanations in the generator scripts.
 - `vercel.json` is read at the edge from the **committed** file, before the build runs. Regenerating it in `prebuild` does not affect the deploy in progress — commit the regenerated file.

@@ -47,6 +47,16 @@ const flag = (name, fallback) => {
   return hit ? hit.split('=')[1] : fallback;
 };
 const LIMIT = Number(flag('limit', '0')) || 0;
+/**
+ * Skip the first N routes of the (deterministically sorted) route list.
+ *
+ * This exists so one run can be split across several short-lived child
+ * processes — see scripts/prerender-sharded.mjs. A single long-lived process
+ * grows its RSS to the container ceiling and is killed around route 4,500 with
+ * `failed: 0`, because the memory is external to the V8 heap and GC cannot
+ * reclaim it. A fresh process per slice starts from a clean RSS every time.
+ */
+const OFFSET = Number(flag('offset', '0')) || 0;
 const ONLY = flag('only', '');
 const CONCURRENCY = Number(flag('concurrency', '4')) || 4;
 
@@ -114,6 +124,9 @@ function collectRoutes() {
 
   // Shortest paths first so the important hub pages land even if a run is cut short.
   list.sort((a, b) => a.length - b.length || a.localeCompare(b));
+  // Slice AFTER the sort, so offset/limit address stable positions and the
+  // shards together cover the list exactly once with no gaps or overlaps.
+  if (OFFSET) list = list.slice(OFFSET);
   return LIMIT ? list.slice(0, LIMIT) : list;
 }
 
@@ -172,10 +185,19 @@ function outPathFor(route) {
 }
 
 // ── Run ──────────────────────────────────────────────────────────
+
+// The shard driver needs the total route count before it can plan slices.
+// Answer and exit *before* importing the SSR bundle — that import is what
+// costs seconds and hundreds of MB.
+if (args.includes('--print-route-count')) {
+  console.log(collectRoutes().length);
+  process.exit(0);
+}
+
 const { render } = await import(pathToFileURL(SERVER_ENTRY).href);
 
 const routes = collectRoutes();
-console.log(`[prerender] ${routes.length} routes, concurrency ${CONCURRENCY}`);
+console.log(`[prerender] ${routes.length} routes (offset ${OFFSET}), concurrency ${CONCURRENCY}`);
 
 let done = 0;
 let failed = 0;
@@ -204,6 +226,8 @@ function writeReport({ partial }) {
         {
           status: partial ? 'in-progress-or-killed' : 'complete',
           generatedAt: new Date().toISOString(),
+          offset: OFFSET,
+          limit: LIMIT || null,
           routesAttempted: routes.length,
           completed: done,
           written: done - failed,

@@ -8,6 +8,107 @@ Newest cycles appear at the top.
 
 ---
 
+## Cycle 118 — 2026-08-19 (Cowork run)
+
+### [fixed] 2,628 of 7,128 URLs — 37% of the site — were shipping to crawlers as an empty SPA shell
+
+`https://www.teksure.com/prerender-report.json` on the live build:
+
+```
+status: "in-progress-or-killed"   completed: 4500 / 7128   failed: 0
+heapUsed: 200MB   rss: 3898MB   elapsed: 120s   concurrency: 2
+```
+
+Prerendering stops at almost exactly 4,500 routes every run and has for at least
+three builds. `failed: 0` and `status: in-progress-or-killed` together mean the
+process is being killed from outside, not erroring — and because `prerender:safe`
+wraps it in `|| <log a warning>`, the non-zero exit was swallowed and the build
+shipped anyway. Nothing downstream failed, so nothing surfaced it.
+
+**Root cause: RSS, not heap.** heapUsed sat at 200MB against a 2,048MB cap while
+RSS reached 3,898MB — the container ceiling. That is why the two prior attempts
+did not help: capping `--max-old-space-size` and calling `global.gc()` both act on
+the V8 heap, and the heap was never the problem. The memory is external to it, so
+GC has no claim on it and it only ever grows. The 20s render timeout added earlier
+did not help either, for the same reason — nothing was hanging.
+
+**The cost.** The ~2,628 routes past the cutoff served the generic shell: one
+identical `<title>`, no description, no body text. Google executes JS, but Bing,
+DuckDuckGo, the social preview crawlers and GPTBot/ClaudeBot/PerplexityBot largely
+do not. Those URLs were effectively invisible. The cutoff is positional — routes
+are sorted shortest-first, so hub pages survived and the deep guide long tail,
+which is the entire product, did not.
+
+**Fix: `scripts/prerender-sharded.mjs`.** Render in slices of 1,000 routes, one
+child process each. The OS reclaims RSS when a child exits, so every slice starts
+from a clean baseline. No extra build-machine memory required — same total work,
+just not accumulated in one address space. `prerender.mjs` gained an `--offset`
+flag (sliced after the sort, so shards tile the list exactly once) and a
+`--print-route-count` mode that answers before importing the SSR bundle.
+`package.json`'s `prerender` script now calls the driver. The driver merges the
+per-shard reports and **exits non-zero on a short run** — the silent-partial-build
+failure mode is now loud.
+
+**Verified end-to-end at full scale in this sandbox** (~3.9GB, the same box that
+could not finish the old single-process run):
+
+| | before | after |
+|---|---|---|
+| routes written | 4,500 / 7,128 | **7,128 / 7,128** |
+| failed | 0 | 0 |
+| rendered without a title | 0 | 0 |
+| peak RSS | 3,898 MB | **655 MB** |
+| elapsed | 120s (then killed) | 76s |
+| report status | `in-progress-or-killed` | `complete` |
+
+Spot-checked `/guides/zotero-research-citation` — a page deep in the tail that
+never previously had static HTML — and it now carries its own `<title>`, meta
+description, canonical, and full body text.
+
+Recorded the invariant in `CLAUDE.md` so this is not collapsed back into one
+process later.
+
+### Cadence pages — both current, no action
+`/tech-problem-of-week` is on `dateISO: '2026-08-17'`, `weekRange: 'August 17-23,
+2026'` — one day old and covering today. Refreshing a weekly page daily is churn,
+so it was left alone. `/whats-new` newest entry is `aug-2026`, the current month;
+not the first run of a new month, so no release block added.
+
+### [ok] Measurement clean
+4,049 guides · 3,156 routes · 285 tools · 0 duplicate slugs/titles · 0 broken
+internal links · 0 orphaned routes · 0 stale OS mentions · 0 aged guides · 0
+overlong excerpts · 75 source URLs with 0 confirmed broken (1 unreachable,
+bot-blocking) · 0 sub-44px tap targets · 0 missing alt · 0 onClick-on-div ·
+7 files / 13 instances below the 14px type floor (documented exceptions, cycle 95).
+`tsc` clean · **104/104 tests** · `validate-slugs` 4,049/4,049 unique.
+
+### `npm run build` still not run end-to-end — client build OOMs
+The changed step — SSR bundle build plus the full 7,128-route prerender — ran
+clean here. The **client** `vite build` that precedes it still OOMs in this
+sandbox, so the complete `npm run build` chain was **not** executed on this run.
+Do not read the table above as a passing full build.
+
+### Local repo was 28 commits behind and the mount refused `git reset`
+The working copy at `~/Documents/Claude/Projects/TekSure` was 28 commits behind
+`origin/main` with 3 local commits already present upstream under different SHAs
+(the GitHub loop had committed the same work). `git reset --hard origin/main`
+failed with `unable to unlink old 'public/sitemap.xml': Operation not permitted`,
+and `mv` did not work around it this time either — the restriction now covers
+`public/` as well as `.git/*.lock`. Used the CLAUDE.md fallback: fresh clone in
+`/tmp`, work there, push. **The local mount is still 28 commits behind and has
+stale `.git/HEAD.lock` and `.git/index.lock` files** — worth a manual re-clone.
+
+### Readability — unchanged at 8.3 / 58.5% above grade 8, deliberately not touched
+No hand-pass. Cycle 94 established that vocabulary substitution is exhausted and
+the splitter scripts degrade prose. Still awaiting Bailey's decision.
+
+### Blockers unchanged (raise, don't work around)
+Monetization credentials (AdSense/affiliate) · one full `npm run build` on a
+machine with >=8GB · the readability decision · analytics verification · the
+Hetzner CX22 for hosted Ollama.
+
+---
+
 ## Cycle 117 — 2026-08-19T01:49:16.186Z
 
 ### [ok] Site metrics snapshot
@@ -1594,100 +1695,3 @@ No video is reused across more than 5 guides.
 - **Readability & senior UX** — avg reading grade 8.3 (target <= 8), 58.5% of guides above grade 8, 0 images missing alt.
 
 ---
-
-## Cycle 94 — 2026-08-13 (Cowork run)
-
-### [fixed] `simplify-vocabulary.mjs` was one run away from corrupting ~2,000 guide fields
-This was the "scripted bulk pass" the readability item has been asking for. It was run for real,
-and the output had to be reverted three times before it was safe. The script is billed in its own
-header as doing "the safe subset of that work automatically" — it was not safe.
-
-A full run reported **1,991 swaps across 279 files**. Inspection of the diff found:
-
-| Bad swap | What it produced | Why it matters |
-|---|---|---|
-| `require` → `need` | iOS's long-press menu item `"Require Face ID"` → `"Need Face ID"`; `"Don't Require Face ID"` → `"Don't Need Face ID"` | The reader is told to tap a button that does not exist on their phone. Instruction is unfollowable. |
-| `require` → `need` | `"lets you require Face ID"` → `"lets you need Face ID"` | The two verbs don't share a causative frame. Broken grammar. |
-| `require` → `need` | `"they just require authentication"` → `"they just need authentication"` | Trips the banned minimizing-phrase check. **8 guides failed `npm test`.** |
-| `require` → `need` | `"requires answering screening questions"` → `"needs answering..."` | English reads `needs -ing` as passive. |
-| `assistance` → `help` | `"State Health Insurance Assistance Program, or SHIP"` → `"...Help Program, or SHIP"` | An acronym that no longer matches its own expansion. |
-| `assistance` → `help` | FEMA `"disaster assistance"` → `"disaster help"` | Stops matching DisasterAssistance.gov, which the same guides link to. |
-
-`require` alone accounted for ~1,977 of the 1,991 swaps.
-
-**Fixes committed (`5c87825`):**
-1. `require`/`requires`/`required` and `assistance` dropped from the dictionary, each with an
-   in-file comment explaining the failure so nobody re-adds them.
-2. The capitalized variant now only matches at a **real sentence start** (start of string, after
-   `.!?:`, after a newline or `\n` escape, after a bullet, or after an opening quote/bracket).
-   Previously it matched any capitalized occurrence, which is how quoted UI labels and proper
-   nouns got rewritten. This guard is general and protects every future dictionary entry.
-3. A `SKIP_BEFORE_GERUND` guard was added for verbs whose replacement doesn't take a gerund
-   complement. Currently empty — kept for future entries.
-
-After the fix, the identical run yields **9 swaps, all `frequently` → `often`**, all verified safe.
-Those 9 are included in the commit.
-
-### [decision needed] Readability: the vocabulary lever is exhausted — 8.3 is what we have
-Before: grade 8.3, 58.5% above grade 8, 493 above grade 10.
-After the safe pass: grade **8.3**, **58.5%**, **493**. No measurable movement.
-
-That is the finding, not a failure. The dictionary was already fully applied in earlier cycles;
-the 1,991 "available" swaps were the two unsafe words re-offering themselves every run. With those
-removed there are 9 swaps left in the entire 4,049-guide corpus. **Vocabulary substitution cannot
-move this number again.**
-
-What remains is sentence length, and the three splitter scripts are documented as degrading prose
-while improving the metric. So the honest options are exactly two:
-- **Accept 8.3.** It is a reasonable grade for step-by-step technical instructions, and the audit
-  already reports 0 missing alt text and 0 sub-44px tap targets — the parts of senior UX that
-  actually block a reader are clean.
-- **Fund an LLM rewrite pass** over the 493 guides above grade 10, one guide at a time with
-  verification, which is the only approach that shortens sentences without wrecking meaning.
-
-Recommend accepting 8.3 and closing the item, the same way the guide-count target was closed on
-2026-08-04. It has been the top "suggested next action" for 4+ consecutive cycles and each cycle
-spends effort rediscovering that there is no cheap lever. **Raising with Bailey.**
-
-### [ok] Everything else green
-Cycle 93 (02:40Z, GitHub) reported all checks passing: 4,049 guides · 3,156 routes · 285 tools ·
-0 duplicate slugs · 0 broken internal links · 0 orphaned routes · 0 stale OS mentions · 0 aged
-guides · 0 overlong excerpts · 75 source URLs checked with 0 confirmed broken. Re-verified here:
-`tsc` clean, **104/104 tests pass**, `validate-slugs` 4,049/4,049 unique.
-
-### Cadence pages — both current, no action
-- `/tech-problem-of-week` → `dateISO: '2026-08-10'`, 3 days old, inside the 7-day window.
-- `/whats-new` → newest entry `aug-2026`, covers the current month.
-
-Deliberately not refreshed. Both are within their advertised cadence and there is no real new
-FTC/CISA alert to add today. Never invent one to move a date.
-
-### Skipped, with reasons
-- **`npm run build`** — not run. Sandbox has ~3GB available and the build needs ~8GB. `tsc` itself
-  core-dumped at default heap here and only completed under
-  `NODE_OPTIONS=--max-old-space-size=3400`. **The build was not verified.** Changes are confined to
-  one script and 9 words of prose in 5 guide files, so deploy risk is low, but this is stated
-  plainly rather than implied to have passed.
-- **New guides** — none. No verified gap found, and at 4,049 slugs a near-duplicate costs more
-  than it earns.
-- **`text-xs` (530 files, 3,022 instances)** — real senior-UX debt and the largest remaining item
-  in the audit, but it is a design decision about global type scale, not a mechanical fix. Left for
-  a cycle that can take it whole.
-
-### Blockers for Bailey (unchanged)
-Monetization credentials (AdSense/affiliate) · one full `npm run build` on a machine with ≥8GB ·
-**the readability decision, now with data — recommend accepting 8.3** · analytics verification ·
-the Hetzner CX22 for hosted Ollama.
-
----
-
-
----
-
-## Older cycles (93 and earlier) — trimmed 2026-08-18
-
-Cycles 1–93 were removed to keep this file under the 64KB budget stated in `CLAUDE.md`.
-The file is read at the start of every dev-loop and Cowork run, so unbounded growth
-costs context on every cycle for no benefit. Nothing actionable was lost — every
-trimmed entry was an `[ok]` measurement snapshot or a fix already shipped and visible
-in `git log`. Full history: `git log -p -- .claude/dev-loop-backlog.md`.
