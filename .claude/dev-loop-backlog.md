@@ -8,6 +8,70 @@ Newest cycles appear at the top.
 
 ---
 
+## Cycle 124 — 2026-08-20T18:55:12.351Z
+
+### [ok] Site metrics snapshot
+4049 guides, 3156 routes, 285 tools.
+
+### [ok] Duplicate guide slugs
+No duplicate slugs.
+
+### [ok] Internal link audit
+0 broken targets, 0 orphaned routes (of 3119 routes).
+
+### [ok] TypeScript compile
+No TypeScript errors.
+
+### [ok] Stale OS version mentions
+No stale OS version mentions found.
+
+### [ok] Aged guides
+0 of 4049 guides published before 2025-02-20.
+
+### [ok] Duplicate guide titles
+No duplicate guide titles.
+
+### [warn] Readability & senior UX
+avg reading grade 8.3 (target <= 8), 58.5% of guides above grade 8, 0 images missing alt.
+
+```
+- grade 10.2: use-silvur-retirement-planning
+- grade 10: how-to-back-up-iphone-to-icloud
+- grade 10.1: set-up-bank-text-alerts
+- grade 10.1: close-old-bank-account-safely
+- grade 10.3: youtube-videos-buffering-fix
+- grade 10.5: set-up-amazon-prime-delivery-prescriptions
+- grade 10: how-to-use-siri-iphone
+- grade 10.2: walgreens-app-prescription-refill-step-by-step-2026
+- grade 10.2: how-to-screenshot-windows-11
+- grade 10.7: how-to-use-notes-app-iphone
+```
+
+### [warn] External source link health
+75 source URLs checked, 1 confirmed broken (404/410), 1 unreachable (often bot-blocking).
+
+```
+- 404 https://support.microsoft.com/en-us/windows/retrace-your-steps-with-recall-aa03f8a0-a78b-4b3e-b0a1-2eb8ac48701c — used by turn-off-windows-recall-privacy-feature
+```
+
+### [ok] Hardcoded prices outside pricing.ts
+All service prices come from src/data/pricing.ts.
+
+### [ok] Undisclosed invented testimonials
+No hardcoded reviews without a disclosure.
+
+### [ok] Overlong guide excerpts
+All guide excerpts are within 160 characters.
+
+### [ok] Reused placeholder videos
+No video is reused across more than 5 guides.
+
+### Suggested next actions
+- **Readability & senior UX** — avg reading grade 8.3 (target <= 8), 58.5% of guides above grade 8, 0 images missing alt.
+- **External source link health** — 75 source URLs checked, 1 confirmed broken (404/410), 1 unreachable (often bot-blocking).
+
+---
+
 ## Cycle 122 — 2026-08-20T07:01:58.377Z
 
 _No change through cycle 123 (2026-08-20T13:07:12.781Z) — 2 consecutive identical cycles._
@@ -1752,84 +1816,6 @@ No video is reused across more than 5 guides.
 
 ### Suggested next actions
 - **Readability & senior UX** — avg reading grade 8.3 (target <= 8), 58.5% of guides above grade 8, 0 images missing alt.
-
----
-
-## Cycle 98 — 2026-08-13 (Cowork run)
-
-### [fixed] The audit was reporting 3,022 instances of tiny text that do not exist
-`audit-senior-ux.mjs` counted every `text-xs` occurrence and labelled it "12px" — Tailwind's stock
-value. But `tailwind.config.ts` has overridden the bottom of the type scale for months (the "Type
-scale floor" block: xs 12→14px, sm 14→15px, base 16→17px). The audit never read the config, so it
-kept reporting **530 files / 3,022 instances** of debt that had already been fixed.
-
-That phantom number was the largest remaining item in the audit and had been deferred across
-several cycles as "a design decision about global type scale, not a mechanical fix." It was
-neither — it was a measurement bug.
-
-**Fix:** the script now parses the `fontSize` block out of `tailwind.config.ts`, resolves `xs` to
-real px, and counts it against a 14px floor only if it actually falls below. It also now scans
-arbitrary values (`text-[10px]`, `text-[0.7rem]`), which bypass the config entirely and were never
-checked before. It falls back to Tailwind's 12px default if the config can't be parsed, so the
-check still works if the override is ever dropped.
-
-Before: `Files using text-xs (12px)    530  (3022 instances)`
-After:  `Type scale floor (text-xs)    14px` · `Files below the 14px floor    20  (38 instances)`
-
-### [fixed] 25 of the 38 genuinely-too-small instances, reader-facing only
-The 38 real sub-14px instances were triaged by hand rather than bulk-replaced. Bumped to `text-xs`
-(14px) or `text-sm` (15px): newsletter fine print, mobile bottom-nav labels, nav section headers,
-before/after slider captions, safety-result descriptions, forum "replies", guide-finder badges and
-read times, glossary keyboard hint, customer dashboard subtitles, OSINT badges, backup section
-labels, calendar note text, checklist pills.
-
-**Deliberately left alone (13 instances, 7 files):** the 6px/8px text inside PracticeMode's
-simulated phone screen (decorative — it is a picture of a small screen, not text anyone reads), the
-10px print labels in CaregiverPlannerPack, `admin/ContentPipeline` (internal, not senior-facing),
-`doc-browser/MessageItem`, and three counters sitting inside fixed w-4/w-5 circles where a bump
-breaks the layout. Each is a considered exception, not an oversight.
-
-After: **20 files / 38 instances → 7 files / 13 instances.**
-
-### Cadence pages — both current, no action
-- `/tech-problem-of-week` → `dateISO: '2026-08-10'`, 3 days old, inside the 7-day window.
-- `/whats-new` → newest entry `aug-2026`, covers the current month.
-
-No real new FTC/CISA alert to add. Not refreshed for the sake of moving a date.
-
-### [ok] Everything else green
-4,049 guides · 3,156 routes · 285 tools · 0 duplicate slugs/titles · 0 broken internal links ·
-0 orphaned routes · 0 stale OS mentions · 0 aged guides · 0 overlong excerpts · 75 source URLs with
-0 confirmed broken · 0 sub-44px tap targets · 0 missing alt text · 0 onClick-on-div.
-`tsc` clean · **104/104 tests** · `validate-slugs` 4,049/4,049 unique.
-
-### Readability — unchanged at 8.3, still awaiting Bailey's decision
-Cycle 94 established that vocabulary substitution is exhausted (9 safe swaps left corpus-wide). No
-further effort spent here this cycle, by design. The recommendation stands: **accept 8.3**, or fund
-an LLM rewrite over the 493 guides above grade 10. This is now the 5th consecutive cycle it has
-been the top suggested action.
-
-### Skipped, with reasons
-- **`npm run build` — NOT VERIFIED.** Two failure modes, neither caused by these changes:
-  1. `vite build` cannot empty `dist/` — this mount refuses `unlink` on the existing build output
-     (`EPERM ... unlink dist/_headers`), the same restriction that hits `.git/*.lock`. `mv` does not
-     work around it here either, because the individual files inside `dist/` also refuse unlink.
-  2. Building to a clean `/tmp` outDir instead, vite transformed all **6,440 modules successfully**
-     and was then **OOM-killed during chunk rendering** (sandbox has 3.9GB; the build needs ~8GB).
-
-  So compilation is known good and bundling is unverified. The changes are 25 CSS class strings and
-  one audit script, so deploy risk is low — but the build did not pass here and is not being implied
-  to have passed.
-- **New guides** — none. No verified gap at 4,049 slugs.
-- **CRLF near-miss, worth remembering:** three of the edited files (`OsintFramework`, `FindAGuide`,
-  `BeforeAfterSlider`) are CRLF in the repo, and a scripted edit pass rewrote them as LF, producing
-  466/309/158-line whole-file diffs for 1–2 real changes each. Caught and restored before commit.
-  Any future scripted edit on this repo must preserve line endings per file.
-
-### Blockers for Bailey (unchanged)
-Monetization credentials (AdSense/affiliate) · one full `npm run build` on a machine with ≥8GB ·
-**the readability decision — recommend accepting 8.3** · analytics verification · the Hetzner CX22
-for hosted Ollama.
 
 ---
 
