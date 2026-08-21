@@ -74,6 +74,46 @@ The next Vercel deploy will exercise it. Two things to check once it lands, in o
 2. `curl -s https://www.teksure.com/guides/how-to-back-up-iphone-to-icloud | grep -n 'title\|</head>'`
    — the title's line number must now be *below* the `</head>` line.
 
+### [fixed] ~285 tool pages were canonicalising themselves to the homepage
+
+Found by checking the head fix on production, which is the only reason it turned up. Every page
+under `/tools/:slug` was serving:
+
+```
+<link rel="canonical" href="https://www.teksure.com/"/>
+```
+
+That tells Google each tool page is a duplicate of the homepage and should not be indexed on its own.
+`/guides/*` and the static pages (`/tools`, `/glossary`, `/scam-defense`, `/how-it-works`) were all
+correct — the tool detail pages were not.
+
+Cause: `SEOHead` declared `path?: string` with a default of `'/'`. Pages that pass `path` were fine;
+pages that forgot it silently claimed the homepage. A scan of `src/pages` finds 2,692 `SEOHead`
+usages with neither `path` nor `canonical` against 441 with one — almost all of the former in
+`src/pages/tools/`.
+
+**This interacts badly with the head fix above, which is why it was worth doing in the same run.**
+While canonicals were being emitted in the body, crawlers ignored them and the wrong value was inert.
+Putting them back in the head makes them authoritative. Shipping the head fix on its own would have
+taken 285 previously-ignored bad canonicals and made them count — actively worse than the bug it
+fixed. The two changes belong together.
+
+Fixed centrally in `src/components/SEOHead.tsx` rather than by editing hundreds of call sites:
+`path` now defaults to the current route via `useLocation()` instead of to `'/'`. SEOHead always
+renders inside a Router — `StaticRouter` during prerender, `BrowserRouter` in the app, `MemoryRouter`
+in tests — so the hook is safe in all three. Trailing slashes are normalised off (root excepted) to
+match `trailingSlash: false` in vercel.json. Explicitly-passed `path` and `canonical` still win, so
+no existing correct page changes.
+
+tsc clean, 104/104 tests still pass. Same caveat as above: `npm run build` could not run here, so
+this is verified by construction and by the test suite, not by inspecting a built page. Check after
+deploy:
+
+```
+curl -s https://www.teksure.com/tools/siri-commands-cheat-sheet | grep -o 'rel="canonical" href="[^"]*"'
+```
+should now be the tool's own URL, and `/` should still canonicalise to `https://www.teksure.com/`.
+
 ### Readability — not touched, and deliberately so
 Still avg grade 8.3, 58.5% above grade 8, unchanged for many cycles. Per the run brief this does not
 get another 5-guide hand pass: that moves ~0.1pp and is the appearance of progress. The two scripted
@@ -1680,65 +1720,6 @@ No video is reused across more than 5 guides.
 ---
 
 ## Cycle 102 — 2026-08-15T06:54:10.191Z
-
-### [ok] Site metrics snapshot
-4049 guides, 3156 routes, 285 tools.
-
-### [ok] Duplicate guide slugs
-No duplicate slugs.
-
-### [ok] Internal link audit
-0 broken targets, 0 orphaned routes (of 3119 routes).
-
-### [ok] TypeScript compile
-No TypeScript errors.
-
-### [ok] Stale OS version mentions
-No stale OS version mentions found.
-
-### [ok] Aged guides
-0 of 4049 guides published before 2025-02-15.
-
-### [ok] Duplicate guide titles
-No duplicate guide titles.
-
-### [warn] Readability & senior UX
-avg reading grade 8.3 (target <= 8), 58.5% of guides above grade 8, 0 images missing alt.
-
-```
-- grade 10.2: use-silvur-retirement-planning
-- grade 10: how-to-back-up-iphone-to-icloud
-- grade 10.1: set-up-bank-text-alerts
-- grade 10.1: close-old-bank-account-safely
-- grade 10.3: youtube-videos-buffering-fix
-- grade 10.5: set-up-amazon-prime-delivery-prescriptions
-- grade 10: how-to-use-siri-iphone
-- grade 10.2: walgreens-app-prescription-refill-step-by-step-2026
-- grade 10.2: how-to-screenshot-windows-11
-- grade 10.7: how-to-use-notes-app-iphone
-```
-
-### [ok] External source link health
-75 source URLs checked, 0 confirmed broken (404/410), 1 unreachable (often bot-blocking).
-
-### [ok] Hardcoded prices outside pricing.ts
-All service prices come from src/data/pricing.ts.
-
-### [ok] Undisclosed invented testimonials
-No hardcoded reviews without a disclosure.
-
-### [ok] Overlong guide excerpts
-All guide excerpts are within 160 characters.
-
-### [ok] Reused placeholder videos
-No video is reused across more than 5 guides.
-
-### Suggested next actions
-- **Readability & senior UX** — avg reading grade 8.3 (target <= 8), 58.5% of guides above grade 8, 0 images missing alt.
-
----
-
-## Cycle 101 — 2026-08-15T01:46:07.291Z
 
 ### [ok] Site metrics snapshot
 4049 guides, 3156 routes, 285 tools.

@@ -1,8 +1,14 @@
 import { Helmet } from 'react-helmet-async';
+import { useLocation } from 'react-router-dom';
 
 export interface SEOHeadProps {
   title: string;
   description: string;
+  /**
+   * Path this page canonicalises to, e.g. `/guides/reset-your-password`.
+   * Optional: when omitted the current route is used. Set it only to point
+   * somewhere other than the URL being rendered.
+   */
   path?: string;
   type?: string;
   ogImage?: string;
@@ -28,8 +34,24 @@ const DEFAULT_OG_IMAGE_ALT =
 const OG_IMAGE_WIDTH = 1200;
 const OG_IMAGE_HEIGHT = 630;
 
-export function SEOHead({ title, description, path = '/', type = 'website', ogImage, ogImageAlt, publishedTime, modifiedTime, canonical, jsonLd, noindex }: SEOHeadProps) {
-  const url = `${BASE_URL}${path}`;
+export function SEOHead({ title, description, path, type = 'website', ogImage, ogImageAlt, publishedTime, modifiedTime, canonical, jsonLd, noindex }: SEOHeadProps) {
+  // `path` used to default to '/', so any page that forgot the prop declared
+  // the homepage as its canonical — telling search engines it was a duplicate
+  // of '/'. That was true of every tool detail page under /tools/:slug (~285
+  // of them) plus a handful elsewhere. It went unnoticed for a long time
+  // because the prerenderer was emitting the canonical link *outside* <head>,
+  // where crawlers ignore it (fixed 2026-08-20). The moment that was
+  // corrected, those wrong canonicals became authoritative — so the default
+  // has to be the page's own URL, not the homepage.
+  //
+  // Derive it from the router instead of a literal. SEOHead always renders
+  // inside a Router: StaticRouter during prerender (src/entry-server.tsx),
+  // BrowserRouter in the app, MemoryRouter in tests.
+  const { pathname } = useLocation();
+  // vercel.json sets trailingSlash: false, so '/guides/' and '/guides' must not
+  // produce two different canonicals. Root stays '/'.
+  const resolvedPath = (path ?? pathname).replace(/(.)\/+$/, '$1');
+  const url = `${BASE_URL}${resolvedPath}`;
   const image = ogImage ?? DEFAULT_OG_IMAGE;
   const imageAlt = ogImageAlt ?? DEFAULT_OG_IMAGE_ALT;
   const fullTitle = title.includes('TekSure') ? title : `${title} — TekSure`;
