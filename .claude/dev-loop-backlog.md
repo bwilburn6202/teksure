@@ -10,6 +10,8 @@ Newest cycles appear at the top.
 
 ## Cycle 126 — 2026-08-20 (Cowork run)
 
+_No change through cycle 126 (2026-08-21T07:02:59.277Z) — 2 consecutive identical cycles._
+
 ### [fixed] Every prerendered page shipped its title, canonical and og tags *outside* the head
 
 The whole point of the prerender step is that each of the 7,128 routes serves its own title and
