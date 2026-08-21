@@ -176,6 +176,22 @@ function buildHtml(head, appHtml) {
     throw new Error('shell template is missing the <!--ssr-outlet--> placeholder');
   }
   html = html.replace('<!--ssr-outlet-->', appHtml);
+
+  // Guard: the injected tags are only worth anything inside <head>. The
+  // <!--ssr-head--> placeholder lived in <body> (just after #root) until
+  // 2026-08-20, so every page shipped its title, canonical and og:* tags
+  // after the head element. Nothing caught it: the degraded check greps the
+  // rendered head fragment for <title>, which was present -- just injected
+  // into the wrong half of the document. Assert on position, not presence.
+  const headClose = html.indexOf('</head>');
+  const titleAt = html.search(/<title[\s>]/i);
+  if (titleAt === -1 || headClose === -1 || titleAt > headClose) {
+    throw new Error(
+      'injected <title> did not land inside <head> -- is the <!--ssr-head--> ' +
+        'placeholder still inside the head element in index.html?'
+    );
+  }
+
   return html;
 }
 

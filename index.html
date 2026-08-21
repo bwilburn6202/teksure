@@ -159,11 +159,26 @@
       ]
     }
     </script>
+
+    <!--
+      Prerender injects this route's real title, description, canonical and
+      og/twitter tags here (scripts/prerender.mjs, buildHtml). This placeholder
+      MUST stay inside the head element. It sat in the body just after #root
+      until 2026-08-20, which put every prerendered page's title, canonical and
+      og tags after the head closed, where social and AI crawlers are not
+      obliged to read them. The prerender report still said
+      renderedWithoutTitle: 0 because that check only looked for a title tag
+      anywhere in the document, not for one inside the head.
+
+      Do not write literal tag markup in this comment: buildHtml strips the
+      shell's existing title/meta by regex over the whole file, and a
+      tag-shaped string in a comment is indistinguishable from a real tag.
+    -->
+    <!--ssr-head-->
   </head>
 
   <body>
     <div id="root"><!--ssr-outlet--></div>
-    <!--ssr-head-->
     <script type="module" src="/src/main.tsx"></script>
     <script>
       if ('serviceWorker' in navigator) {
