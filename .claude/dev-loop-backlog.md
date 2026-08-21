@@ -10,7 +10,7 @@ Newest cycles appear at the top.
 
 ## Cycle 126 — 2026-08-20 (Cowork run)
 
-_No change through cycle 127 (2026-08-21T13:05:43.129Z) — 3 consecutive identical cycles._
+_No change through cycle 128 (2026-08-21T18:51:46.275Z) — 4 consecutive identical cycles._
 
 ### [fixed] Every prerendered page shipped its title, canonical and og tags *outside* the head
 
