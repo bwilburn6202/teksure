@@ -86,7 +86,7 @@ export default function MessageItem({ message }: { message: ChatMessage }) {
                     : "UNKNOWN";
                   const ok = meta.urlRetrievalStatus === "URL_RETRIEVAL_STATUS_SUCCESS";
                   return (
-                    <li key={idx} className="text-[11px] text-muted-foreground">
+                    <li key={idx} className="text-xs text-muted-foreground">
                       <a
                         href={meta.retrievedUrl}
                         target="_blank"
@@ -96,7 +96,7 @@ export default function MessageItem({ message }: { message: ChatMessage }) {
                         {meta.retrievedUrl}
                       </a>
                       <span
-                        className={`ml-1.5 px-1 py-0.5 rounded text-[9px] ${
+                        className={`ml-1.5 px-1 py-0.5 rounded text-xs ${
                           ok
                             ? "bg-emerald-100 dark:bg-emerald-900/40 text-emerald-700 dark:text-emerald-400"
                             : "bg-muted text-muted-foreground"
