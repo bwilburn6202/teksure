@@ -9,7 +9,9 @@ There is no point chasing keywords if the site cannot be crawled. Check, in orde
 
 ```bash
 # 1. Per-page titles reach crawlers (prerendering alive?)
-curl -s https://www.teksure.com/guides/qr-codes | grep -oE "<title>[^<]*</title>"
+# (react-helmet emits <title data-rh="true"> — a bare <title> pattern matches
+# nothing on a HEALTHY page. Keep the [^>]* or you will chase a phantom regression.)
+curl -s https://www.teksure.com/guides/qr-codes | grep -oE "<title[^>]*>[^<]*</title>"
 
 # 2. Sitemap is current and complete
 curl -s https://www.teksure.com/sitemap.xml | grep -c "<loc>"
