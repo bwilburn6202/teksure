@@ -10,6 +10,8 @@ Newest cycles appear at the top.
 
 ## Cycle 143 — 2026-08-25 (Cowork weekly run)
 
+_No change through cycle 142 (2026-08-25T07:03:55.346Z) — 2 consecutive identical cycles._
+
 ### [fixed] The discoverability check itself was broken — false-alarm generator
 `.claude/prompts/weekly-site-review.md` and `.claude/prompts/seo-opportunity-scan.md` both told the
 run to verify prerendering with:
