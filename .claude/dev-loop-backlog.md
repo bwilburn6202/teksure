@@ -8,6 +8,66 @@ Newest cycles appear at the top.
 
 ---
 
+## Cycle 141b — 2026-08-24 (Cowork run, hand-written)
+
+### [fixed] Tech Problem of the Week was stale — refreshed
+The current entry covered **August 17–23**. Today is **August 24**, so the page was already showing
+last week's window while advertising "updated weekly" in its own copy, and it is footer-linked, so
+that was publicly visible. Note the GitHub dev-loop does not catch this: it is read-only and its
+cycles 137–141 all reported green while the page sat stale.
+
+New current entry: **August 24–30, brushing scams**, from the FTC consumer alert published
+2026-08-20 (`/consumer-alerts/2026/08/unexpected-package-you-got-could-be-brushing-scam`). Real
+alert, verified by fetching the page — not written from memory. The QR-code detail in `howToCheck`
+and the "you may keep unordered goods" point in `whatToDo` both come straight from the FTC text.
+
+Rotation done per `refresh-cadence-pages.md`: bill-pay impersonators (Aug 17) demoted to
+`PREVIOUS_WEEK_PROBLEM` with `isCurrent` dropped, social-media ads (Aug 10) pushed into
+`PAST_PROBLEMS`. Exactly one `isCurrent: true` remains. Demoted copy was already past tense — no
+tense fix needed.
+
+### [ok] What's New — current, not touched
+Newest release is `aug-2026`, which covers the current month, and this is not the first run of a
+new month. June 2026 is still absent on purpose.
+
+### [ok] Measurement clean, discovery healthy
+4,049 guides · 3,156 routes · 285 tools · 0 duplicate slugs · 0 broken internal targets ·
+0 orphaned routes · 0 stale OS mentions · 0 aged guides · 75 source URLs checked, 0 confirmed
+broken. Live `prerender-report.json`: `status: complete`, 7,128/7,128 written, `failed: 0`,
+8 shards in 199s. Sharding is doing its job.
+
+### [accepted, not worked] Readability holds at grade 8.3 / 58.5% above grade 8
+Unchanged. Deliberately did not do a hand pass — CLAUDE.md is explicit that it moves the number
+~0.1pp and is the appearance of progress. This needs either a scripted bulk pass or Bailey's
+explicit acceptance of 8.3. **Still awaiting that decision.** Hardest guides remain long-tail
+directory pages (grade 12.6 `vietnamese-american-senior-community-centers-bpsos-care`,
+12.2 `how-to-find-refugee-resettlement-agency`) where the vocabulary is inherently formal.
+
+### [skipped] 13 sub-14px type instances across 7 files
+Real but minor, and below stale-cadence in the priority order. Left for a run where the cadence
+pages are already current. No sub-44px tap targets, no missing alt text, no `onClick` on a `div`.
+
+### [not fixed] The working mount is stale again and still cannot self-repair
+`~/Documents/Claude/Projects/TekSure` was **51 commits behind** `origin/main` and 3 "ahead" — all
+three of those already upstream under different SHAs, so nothing was at risk. This is the same
+failure cycle 122 recorded, recurring: `git reset --hard` and `rm` both fail on this mount with
+`Operation not permitted`, and `mv` does not help for tracked files. Worked from a fresh clone in
+`/tmp` again. **The mount will keep drifting until someone runs `git pull` from a normal shell**;
+every session that measures there is measuring stale code.
+
+### [blocker] `npm run build` OOMs in sandbox — build NOT verified
+`vite build` was killed at "rendering chunks" even with `--max-old-space-size=3400`. Available RAM
+is ~3.9GB against the ~8GB this needs. `npx tsc --noEmit` also OOMs at default heap and only passes
+when given 3400MB. **The production build was not run to completion this cycle.** Verified instead:
+tsc clean, 104/104 tests pass, `validate-slugs` clean at 4,049 unique. Vercel builds with more
+memory, so a deploy failure would show up there.
+
+### Open blockers, unchanged
+Monetization credentials (AdSense/affiliate) · one full `npm run build` on a ≥8GB machine ·
+the readability decision · analytics wiring verification · the Hetzner CX22 for hosted Ollama.
+
+---
+
 ## Cycle 141 — 2026-08-25T01:47:43.809Z
 
 ### [ok] Site metrics snapshot
@@ -1609,181 +1669,3 @@ No video is reused across more than 5 guides.
 
 ---
 
-## Cycle 108 — 2026-08-16T18:42:24.083Z
-
-### [ok] Site metrics snapshot
-4049 guides, 3156 routes, 285 tools.
-
-### [ok] Duplicate guide slugs
-No duplicate slugs.
-
-### [ok] Internal link audit
-0 broken targets, 0 orphaned routes (of 3119 routes).
-
-### [ok] TypeScript compile
-No TypeScript errors.
-
-### [ok] Stale OS version mentions
-No stale OS version mentions found.
-
-### [ok] Aged guides
-0 of 4049 guides published before 2025-02-16.
-
-### [ok] Duplicate guide titles
-No duplicate guide titles.
-
-### [warn] Readability & senior UX
-avg reading grade 8.3 (target <= 8), 58.5% of guides above grade 8, 0 images missing alt.
-
-```
-- grade 10.2: use-silvur-retirement-planning
-- grade 10: how-to-back-up-iphone-to-icloud
-- grade 10.1: set-up-bank-text-alerts
-- grade 10.1: close-old-bank-account-safely
-- grade 10.3: youtube-videos-buffering-fix
-- grade 10.5: set-up-amazon-prime-delivery-prescriptions
-- grade 10: how-to-use-siri-iphone
-- grade 10.2: walgreens-app-prescription-refill-step-by-step-2026
-- grade 10.2: how-to-screenshot-windows-11
-- grade 10.7: how-to-use-notes-app-iphone
-```
-
-### [ok] External source link health
-75 source URLs checked, 0 confirmed broken (404/410), 1 unreachable (often bot-blocking).
-
-### [ok] Hardcoded prices outside pricing.ts
-All service prices come from src/data/pricing.ts.
-
-### [ok] Undisclosed invented testimonials
-No hardcoded reviews without a disclosure.
-
-### [ok] Overlong guide excerpts
-All guide excerpts are within 160 characters.
-
-### [ok] Reused placeholder videos
-No video is reused across more than 5 guides.
-
-### Suggested next actions
-- **Readability & senior UX** — avg reading grade 8.3 (target <= 8), 58.5% of guides above grade 8, 0 images missing alt.
-
----
-
-## Cycle 107 — 2026-08-16T12:56:49.714Z
-
-### [ok] Site metrics snapshot
-4049 guides, 3156 routes, 285 tools.
-
-### [ok] Duplicate guide slugs
-No duplicate slugs.
-
-### [ok] Internal link audit
-0 broken targets, 0 orphaned routes (of 3119 routes).
-
-### [ok] TypeScript compile
-No TypeScript errors.
-
-### [ok] Stale OS version mentions
-No stale OS version mentions found.
-
-### [ok] Aged guides
-0 of 4049 guides published before 2025-02-16.
-
-### [ok] Duplicate guide titles
-No duplicate guide titles.
-
-### [warn] Readability & senior UX
-avg reading grade 8.3 (target <= 8), 58.5% of guides above grade 8, 0 images missing alt.
-
-```
-- grade 10.2: use-silvur-retirement-planning
-- grade 10: how-to-back-up-iphone-to-icloud
-- grade 10.1: set-up-bank-text-alerts
-- grade 10.1: close-old-bank-account-safely
-- grade 10.3: youtube-videos-buffering-fix
-- grade 10.5: set-up-amazon-prime-delivery-prescriptions
-- grade 10: how-to-use-siri-iphone
-- grade 10.2: walgreens-app-prescription-refill-step-by-step-2026
-- grade 10.2: how-to-screenshot-windows-11
-- grade 10.7: how-to-use-notes-app-iphone
-```
-
-### [ok] External source link health
-75 source URLs checked, 0 confirmed broken (404/410), 1 unreachable (often bot-blocking).
-
-### [ok] Hardcoded prices outside pricing.ts
-All service prices come from src/data/pricing.ts.
-
-### [ok] Undisclosed invented testimonials
-No hardcoded reviews without a disclosure.
-
-### [ok] Overlong guide excerpts
-All guide excerpts are within 160 characters.
-
-### [ok] Reused placeholder videos
-No video is reused across more than 5 guides.
-
-### Suggested next actions
-- **Readability & senior UX** — avg reading grade 8.3 (target <= 8), 58.5% of guides above grade 8, 0 images missing alt.
-
----
-
-## Cycle 106 — 2026-08-16T06:55:29.053Z
-
-### [ok] Site metrics snapshot
-4049 guides, 3156 routes, 285 tools.
-
-### [ok] Duplicate guide slugs
-No duplicate slugs.
-
-### [ok] Internal link audit
-0 broken targets, 0 orphaned routes (of 3119 routes).
-
-### [ok] TypeScript compile
-No TypeScript errors.
-
-### [ok] Stale OS version mentions
-No stale OS version mentions found.
-
-### [ok] Aged guides
-0 of 4049 guides published before 2025-02-16.
-
-### [ok] Duplicate guide titles
-No duplicate guide titles.
-
-### [warn] Readability & senior UX
-avg reading grade 8.3 (target <= 8), 58.5% of guides above grade 8, 0 images missing alt.
-
-```
-- grade 10.2: use-silvur-retirement-planning
-- grade 10: how-to-back-up-iphone-to-icloud
-- grade 10.1: set-up-bank-text-alerts
-- grade 10.1: close-old-bank-account-safely
-- grade 10.3: youtube-videos-buffering-fix
-- grade 10.5: set-up-amazon-prime-delivery-prescriptions
-- grade 10: how-to-use-siri-iphone
-- grade 10.2: walgreens-app-prescription-refill-step-by-step-2026
-- grade 10.2: how-to-screenshot-windows-11
-- grade 10.7: how-to-use-notes-app-iphone
-```
-
-### [ok] External source link health
-75 source URLs checked, 0 confirmed broken (404/410), 1 unreachable (often bot-blocking).
-
-### [ok] Hardcoded prices outside pricing.ts
-All service prices come from src/data/pricing.ts.
-
-### [ok] Undisclosed invented testimonials
-No hardcoded reviews without a disclosure.
-
-### [ok] Overlong guide excerpts
-All guide excerpts are within 160 characters.
-
-### [ok] Reused placeholder videos
-No video is reused across more than 5 guides.
-
-### Suggested next actions
-- **Readability & senior UX** — avg reading grade 8.3 (target <= 8), 58.5% of guides above grade 8, 0 images missing alt.
-
----
-
-_(older cycles trimmed)_

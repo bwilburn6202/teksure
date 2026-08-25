@@ -35,6 +35,24 @@ interface TechProblem {
 }
 
 const CURRENT_PROBLEM: TechProblem = {
+  weekRange: 'August 24\u201330, 2026',
+  dateISO: '2026-08-24',
+  title: 'A Package You Never Ordered Is Not a Gift',
+  emoji: '',
+  description:
+    'On August 20 the FTC warned about brushing scams. A parcel arrives with your name and address on it and something cheap inside \u2014 baby wipes, toothpaste, a packet of seeds. Nobody sent it as a favor. A seller needed a delivery record in your name so it could post a fake review under that name and lift its own ratings. The FTC also says the package can be a sign that someone already has your personal details, or is working to get them.',
+  howToCheck:
+    'Look inside for a note with a QR code. The note may offer to tell you who sent the gift, or to start a return. Do not scan it. The FTC says those codes can lead to a page built to capture your card number, your username, or your password. Then sign in to the account you shop with most and read the order history yourself. If a stranger placed that order, it will not be there.',
+  whatToDo:
+    'Change the password on every shopping account you hold, in case one of them was opened by someone else. Tell the marketplace \u2014 Amazon or whichever site the parcel appears to come from \u2014 so it can look into the seller. Pull your free credit reports at AnnualCreditReport.com and read them for accounts you did not open. By law you may keep an item you did not order and you owe nothing for it, though the FTC suggests caution about using something when you do not know who sent it. Report it at ReportFraud.ftc.gov.',
+  source: {
+    label: 'FTC Consumer Alert \u2014 August 20, 2026',
+    url: 'https://consumer.ftc.gov/consumer-alerts/2026/08/unexpected-package-you-got-could-be-brushing-scam',
+  },
+  isCurrent: true,
+};
+
+const PREVIOUS_WEEK_PROBLEM: TechProblem = {
   weekRange: 'August 17\u201323, 2026',
   dateISO: '2026-08-17',
   title: 'The Top Search Result for Paying Your Bill May Not Be Your Biller',
@@ -49,28 +67,26 @@ const CURRENT_PROBLEM: TechProblem = {
     label: 'FTC Consumer Alert \u2014 August 17, 2026',
     url: 'https://consumer.ftc.gov/consumer-alerts/2026/08/searching-online-bill-pay-impersonators',
   },
-  isCurrent: true,
-};
-
-const PREVIOUS_WEEK_PROBLEM: TechProblem = {
-  weekRange: 'August 10\u201316, 2026',
-  dateISO: '2026-08-10',
-  title: 'Nobody Is Checking the Ads in Your Facebook Feed',
-  emoji: '',
-  description:
-    'On August 10 the FTC reminded shoppers that social media platforms do not always vet the ads they show you, or the companies behind them. An ad for a designer bag at half price sits in your feed looking exactly like a post from a friend, which is what makes it work. Some of these sellers ship a counterfeit. Some ship nothing at all. Some exist only to collect your card number.',
-  howToCheck:
-    'Before you buy, search the store name plus the word "scam" or "review" in a separate browser tab. A real store has a street address, a working phone number, and reviews that are older than a few weeks. Look at how you are asked to pay: a request for Zelle, Cash App, a wire, or a gift card is a refusal to be traceable, and no legitimate retailer needs that.',
-  whatToDo:
-    'Pay by credit card, which gives you the right to dispute the charge. If you have already paid another way, contact your bank or the payment app today and ask to reverse it. Report the ad to the platform, and report the seller at ReportFraud.ftc.gov. If the goods never arrive, the FTC Mail, Internet, or Telephone Order Rule entitles you to a refund.',
-  source: {
-    label: 'FTC Consumer Alert \u2014 August 10, 2026',
-    url: 'https://consumer.ftc.gov/consumer-alerts/2026/08/are-ads-social-media-vetted-or-checked-scams-heres-what-know',
-  },
 };
 
 const PAST_PROBLEMS: TechProblem[] = [
   PREVIOUS_WEEK_PROBLEM,
+  {
+    weekRange: 'August 10\u201316, 2026',
+    dateISO: '2026-08-10',
+    title: 'Nobody Is Checking the Ads in Your Facebook Feed',
+    emoji: '',
+    description:
+      'On August 10 the FTC reminded shoppers that social media platforms do not always vet the ads they show you, or the companies behind them. An ad for a designer bag at half price sits in your feed looking exactly like a post from a friend, which is what makes it work. Some of these sellers ship a counterfeit. Some ship nothing at all. Some exist only to collect your card number.',
+    howToCheck:
+      'Before you buy, search the store name plus the word "scam" or "review" in a separate browser tab. A real store has a street address, a working phone number, and reviews that are older than a few weeks. Look at how you are asked to pay: a request for Zelle, Cash App, a wire, or a gift card is a refusal to be traceable, and no legitimate retailer needs that.',
+    whatToDo:
+      'Pay by credit card, which gives you the right to dispute the charge. If you have already paid another way, contact your bank or the payment app today and ask to reverse it. Report the ad to the platform, and report the seller at ReportFraud.ftc.gov. If the goods never arrive, the FTC Mail, Internet, or Telephone Order Rule entitles you to a refund.',
+    source: {
+      label: 'FTC Consumer Alert \u2014 August 10, 2026',
+      url: 'https://consumer.ftc.gov/consumer-alerts/2026/08/are-ads-social-media-vetted-or-checked-scams-heres-what-know',
+    },
+  },
   {
     weekRange: 'August 3–9, 2026',
     dateISO: '2026-08-03',
