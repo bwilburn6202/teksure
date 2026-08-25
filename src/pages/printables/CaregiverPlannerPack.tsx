@@ -1878,7 +1878,7 @@ export default function CaregiverPlannerPack() {
             padding: 2px 4px;
           }
           .cp-print-label {
-            font-size: 10px;
+            font-size: 12px;
             text-transform: uppercase;
             letter-spacing: 0.04em;
             color: #555;
@@ -2024,7 +2024,7 @@ type ShowFn = (v: string) => string;
 function Field({ label, value }: { label: string; value: string }) {
   return (
     <div className="mb-2">
-      <div className="cp-print-label text-[10px] uppercase tracking-wide text-neutral-500">
+      <div className="cp-print-label text-xs uppercase tracking-wide text-neutral-600">
         {label}
       </div>
       <div className="cp-print-field border-b border-neutral-700 min-h-[1.4rem] pb-0.5 text-sm">
@@ -2365,7 +2365,7 @@ function PrintablePage8({ data, show }: { data: PlannerData; show: ShowFn }) {
 function FieldBlock({ label, value }: { label: string; value: string }) {
   return (
     <div className="border border-neutral-400 rounded p-2 min-h-16">
-      <div className="cp-print-label text-[10px] uppercase tracking-wide text-neutral-500 mb-1">
+      <div className="cp-print-label text-xs uppercase tracking-wide text-neutral-600 mb-1">
         {label}
       </div>
       <div className="whitespace-pre-wrap text-sm">{value || '\u00A0'}</div>
