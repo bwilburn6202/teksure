@@ -10,6 +10,8 @@ Newest cycles appear at the top.
 
 ## Cycle 146 — 2026-08-26 (Cowork run, hand-written)
 
+_No change through cycle 146 (2026-08-26T07:04:19.901Z) — 2 consecutive identical cycles._
+
 ### [fixed] The sitemap advertised 7,128 pages as modified on every single deploy
 Cycle 145 spotted this and left it as "worth a decision later". Taking it now, because it sits in
 the *blocking discovery* band and outranks readability in the priority order.
