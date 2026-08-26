@@ -8,6 +8,82 @@ Newest cycles appear at the top.
 
 ---
 
+## Cycle 146 — 2026-08-26 (Cowork run, hand-written)
+
+### [fixed] The sitemap advertised 7,128 pages as modified on every single deploy
+Cycle 145 spotted this and left it as "worth a decision later". Taking it now, because it sits in
+the *blocking discovery* band and outranks readability in the priority order.
+
+`generate-sitemap.mjs` stamped a single `TODAY` into every `<lastmod>`. Since `prebuild` runs it on
+each deploy, every URL claimed to have changed that day. Do that daily and the field stops carrying
+information: a guide that really was rewritten gets no more crawler attention than one untouched
+since February. The signal was worth nothing.
+
+Now each URL is paired with a hash of the source behind it, kept in the committed
+`scripts/sitemap-lastmod.json`. Unchanged hash carries the recorded date forward; only new or
+genuinely changed URLs get today's date. Guide URLs hash the batch file that defines the slug;
+route URLs hash the page component resolved from the `App.tsx` import.
+
+**Hash-based on purpose, not git-based.** `git log -1 <file>` looks like the obvious source of
+truth, but Vercel builds from a shallow clone where it returns the deploy commit for *every* file —
+which would restamp everything and reintroduce the exact bug being fixed.
+
+First run seeds the manifest from the sitemap already committed, so introducing this did not itself
+restamp anything: **7,128 carried forward, 0 refreshed, `public/sitemap.xml` byte-identical**
+(`git diff` empty). Change detection verified by touching `guides-batch-10.ts`: exactly **39** URLs
+refreshed, the other 7,089 held. Reverted and reseeded afterwards.
+
+Coverage: 7,126 of 7,128 URLs resolved to a content hash. `/safety` and `/book` did not resolve to a
+page file; they hold their recorded date, which is the safe direction — a URL never silently
+refreshes because its source could not be found.
+
+One operational note, written into the script header: the manifest is rewritten by every build but
+only the *committed* copy is read at deploy time, so it must be committed alongside content changes.
+Until it is, a changed guide re-stamps today's date each deploy — churn limited to the URLs that
+actually changed, so it is safe, just noisy.
+
+### [ok] Cadence pages both current — not touched
+Tech Problem of the Week is `2026-08-24` (Aug 24–30, brushing scams), today is Aug 26, inside the
+window, exactly one `isCurrent: true`. What's New newest is `aug-2026`, the current month, and this
+is not the first run of a new month. June 2026 still absent on purpose.
+
+### [ok] Production healthy
+`build-info.json`: commit `13454cf`, built 2026-08-26T02:01:30Z. `prerender-report.json`:
+`status: complete`, 7,128/7,128 written, `failed: 0`, `renderedWithoutTitle: 0`, 8 shards in 257s.
+Sharding holding. Dev-loop cycle 145: 4,049 guides · 3,156 routes · 285 tools · 0 duplicate slugs ·
+0 duplicate titles · 0 broken internal targets · 0 orphaned routes · 0 stale OS mentions · 0 aged
+guides · 0 overlong excerpts · 0 images missing alt · 75 source URLs checked, 0 confirmed broken.
+
+### [verified] tsc clean · 104/104 tests · 4,049/4,049 unique slugs
+`tsc --noEmit` passes, again only with `--max-old-space-size=3400`; the default heap OOMs here.
+
+### [blocker] `npm run build` OOM'd — it did NOT pass
+Died in `vite build` with a V8 heap abort. Sandbox has 3.9GB; the build needs ~8GB. This cycle's
+only change is a build-time script, and it was executed directly and verified to emit a
+byte-identical sitemap — the strongest evidence available without a full build. But the build was
+not exercised end to end and I am not implying otherwise. **Still needs one run on a ≥8GB machine.**
+
+### [accepted, not worked] Readability holds at grade 8.3 / 58.5% above grade 8
+Unchanged and deliberately not hand-passed. This has now carried unresolved across cycles 141b, 145
+and 146. **It is not going to move without a decision from Bailey** — either fund a scripted bulk
+pass, or state plainly that 8.3 is accepted and stop reporting it as an open item every run.
+Continuing to list it as "open" while nobody is allowed to work on it is noise.
+
+### [not fixed] The working mount is still 64 commits behind origin and cannot self-repair
+Same as cycle 145. `~/Documents/Claude/Projects/TekSure` was 64 behind / 3 ahead with 8 modified
+files; the three local commits already exist upstream under different SHAs, so nothing is lost, but
+a run that trusted that tree would measure a stale snapshot and report it as current. `git reset
+--hard` cannot fix it — this mount refuses `unlink` on tracked files, not just `.git/*.lock`. Also
+confirmed again: `rm -rf` fails on stale `/tmp` clones from earlier sessions, so clone under a
+fresh timestamped directory name. All work this cycle was done in a fresh clone and pushed from
+there.
+
+### [skipped] 4 remaining sub-14px type instances
+Avatar initials, two numeric step badges in fixed-size circles, one admin-only page. Decorative or
+non-public. Not chased.
+
+---
+
 ## Cycle 145 — 2026-08-26T01:54:01.884Z
 
 ### [ok] Site metrics snapshot
@@ -1339,105 +1415,3 @@ No video is reused across more than 5 guides.
 - **Readability & senior UX** — avg reading grade 8.3 (target <= 8), 58.5% of guides above grade 8, 0 images missing alt.
 
 ---
-
-## Cycle 118 — 2026-08-19 (Cowork run)
-
-### [fixed] 2,628 of 7,128 URLs — 37% of the site — were shipping to crawlers as an empty SPA shell
-
-`https://www.teksure.com/prerender-report.json` on the live build:
-
-```
-status: "in-progress-or-killed"   completed: 4500 / 7128   failed: 0
-heapUsed: 200MB   rss: 3898MB   elapsed: 120s   concurrency: 2
-```
-
-Prerendering stops at almost exactly 4,500 routes every run and has for at least
-three builds. `failed: 0` and `status: in-progress-or-killed` together mean the
-process is being killed from outside, not erroring — and because `prerender:safe`
-wraps it in `|| <log a warning>`, the non-zero exit was swallowed and the build
-shipped anyway. Nothing downstream failed, so nothing surfaced it.
-
-**Root cause: RSS, not heap.** heapUsed sat at 200MB against a 2,048MB cap while
-RSS reached 3,898MB — the container ceiling. That is why the two prior attempts
-did not help: capping `--max-old-space-size` and calling `global.gc()` both act on
-the V8 heap, and the heap was never the problem. The memory is external to it, so
-GC has no claim on it and it only ever grows. The 20s render timeout added earlier
-did not help either, for the same reason — nothing was hanging.
-
-**The cost.** The ~2,628 routes past the cutoff served the generic shell: one
-identical `<title>`, no description, no body text. Google executes JS, but Bing,
-DuckDuckGo, the social preview crawlers and GPTBot/ClaudeBot/PerplexityBot largely
-do not. Those URLs were effectively invisible. The cutoff is positional — routes
-are sorted shortest-first, so hub pages survived and the deep guide long tail,
-which is the entire product, did not.
-
-**Fix: `scripts/prerender-sharded.mjs`.** Render in slices of 1,000 routes, one
-child process each. The OS reclaims RSS when a child exits, so every slice starts
-from a clean baseline. No extra build-machine memory required — same total work,
-just not accumulated in one address space. `prerender.mjs` gained an `--offset`
-flag (sliced after the sort, so shards tile the list exactly once) and a
-`--print-route-count` mode that answers before importing the SSR bundle.
-`package.json`'s `prerender` script now calls the driver. The driver merges the
-per-shard reports and **exits non-zero on a short run** — the silent-partial-build
-failure mode is now loud.
-
-**Verified end-to-end at full scale in this sandbox** (~3.9GB, the same box that
-could not finish the old single-process run):
-
-| | before | after |
-|---|---|---|
-| routes written | 4,500 / 7,128 | **7,128 / 7,128** |
-| failed | 0 | 0 |
-| rendered without a title | 0 | 0 |
-| peak RSS | 3,898 MB | **655 MB** |
-| elapsed | 120s (then killed) | 76s |
-| report status | `in-progress-or-killed` | `complete` |
-
-Spot-checked `/guides/zotero-research-citation` — a page deep in the tail that
-never previously had static HTML — and it now carries its own `<title>`, meta
-description, canonical, and full body text.
-
-Recorded the invariant in `CLAUDE.md` so this is not collapsed back into one
-process later.
-
-### Cadence pages — both current, no action
-`/tech-problem-of-week` is on `dateISO: '2026-08-17'`, `weekRange: 'August 17-23,
-2026'` — one day old and covering today. Refreshing a weekly page daily is churn,
-so it was left alone. `/whats-new` newest entry is `aug-2026`, the current month;
-not the first run of a new month, so no release block added.
-
-### [ok] Measurement clean
-4,049 guides · 3,156 routes · 285 tools · 0 duplicate slugs/titles · 0 broken
-internal links · 0 orphaned routes · 0 stale OS mentions · 0 aged guides · 0
-overlong excerpts · 75 source URLs with 0 confirmed broken (1 unreachable,
-bot-blocking) · 0 sub-44px tap targets · 0 missing alt · 0 onClick-on-div ·
-7 files / 13 instances below the 14px type floor (documented exceptions, cycle 95).
-`tsc` clean · **104/104 tests** · `validate-slugs` 4,049/4,049 unique.
-
-### `npm run build` still not run end-to-end — client build OOMs
-The changed step — SSR bundle build plus the full 7,128-route prerender — ran
-clean here. The **client** `vite build` that precedes it still OOMs in this
-sandbox, so the complete `npm run build` chain was **not** executed on this run.
-Do not read the table above as a passing full build.
-
-### Local repo was 28 commits behind and the mount refused `git reset`
-The working copy at `~/Documents/Claude/Projects/TekSure` was 28 commits behind
-`origin/main` with 3 local commits already present upstream under different SHAs
-(the GitHub loop had committed the same work). `git reset --hard origin/main`
-failed with `unable to unlink old 'public/sitemap.xml': Operation not permitted`,
-and `mv` did not work around it this time either — the restriction now covers
-`public/` as well as `.git/*.lock`. Used the CLAUDE.md fallback: fresh clone in
-`/tmp`, work there, push. **The local mount is still 28 commits behind and has
-stale `.git/HEAD.lock` and `.git/index.lock` files** — worth a manual re-clone.
-
-### Readability — unchanged at 8.3 / 58.5% above grade 8, deliberately not touched
-No hand-pass. Cycle 94 established that vocabulary substitution is exhausted and
-the splitter scripts degrade prose. Still awaiting Bailey's decision.
-
-### Blockers unchanged (raise, don't work around)
-Monetization credentials (AdSense/affiliate) · one full `npm run build` on a
-machine with >=8GB · the readability decision · analytics verification · the
-Hetzner CX22 for hosted Ollama.
-
----
-
