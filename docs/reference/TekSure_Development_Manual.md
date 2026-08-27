@@ -157,7 +157,7 @@ The app will be available at `http://localhost:5173` (or the port shown in your 
 Create a `.env.local` file in the project root with:
 
 ```env
-VITE_SUPABASE_URL=https://zrgtoefkqafndhxhbuag.supabase.co
+VITE_SUPABASE_URL=https://vrhxitxzqtbphzsbdqih.supabase.co
 VITE_SUPABASE_ANON_KEY=[your-anon-key-here]
 # Additional keys as needed for integrations
 ```
@@ -346,7 +346,7 @@ git push
 ### Backend & Database
 
 - **Supabase** — PostgreSQL database, Auth, Edge Functions
-  - Project ref: `zrgtoefkqafndhxhbuag`
+  - Project ref: `vrhxitxzqtbphzsbdqih`
   - Supabase client: `src/integrations/supabase/client.ts`
   - Auth: `supabase.auth` (handles login/signup)
   - Database: Use `.from("table_name")` for queries
@@ -591,7 +591,7 @@ Currently deployed:
 To deploy a new function:
 ```bash
 # CLI (if Supabase CLI is installed)
-npx supabase functions deploy my-function --project-ref zrgtoefkqafndhxhbuag
+npx supabase functions deploy my-function --project-ref vrhxitxzqtbphzsbdqih
 
 # Or manually in Supabase Dashboard → Edge Functions
 ```
@@ -666,7 +666,7 @@ git push
 
 **If you deployed an Edge Function:**
 ```bash
-npx supabase functions deploy function-name --project-ref zrgtoefkqafndhxhbuag
+npx supabase functions deploy function-name --project-ref vrhxitxzqtbphzsbdqih
 ```
 
 ---

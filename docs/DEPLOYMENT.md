@@ -26,7 +26,7 @@
 ### Environment Variables (Vercel Dashboard)
 
 ```
-VITE_SUPABASE_URL=https://zrgtoefkqafndhxhbuag.supabase.co
+VITE_SUPABASE_URL=https://vrhxitxzqtbphzsbdqih.supabase.co
 VITE_SUPABASE_ANON_KEY=<your-anon-key>
 VITE_STRIPE_PUBLIC_KEY=pk_live_<your-key>
 VITE_GA4_ID=G-<your-id>
@@ -39,7 +39,7 @@ Auto-deploys on every push to `main`.
 ## Supabase
 
 ```bash
-supabase link --project-ref zrgtoefkqafndhxhbuag
+supabase link --project-ref vrhxitxzqtbphzsbdqih
 supabase db push                        # Apply migrations
 supabase functions deploy               # Deploy all Edge Functions
 supabase secrets set STRIPE_SECRET_KEY=sk_live_...

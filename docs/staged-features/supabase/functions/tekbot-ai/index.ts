@@ -8,7 +8,7 @@
  *   ANTHROPIC_API_KEY   — your Anthropic API key (sk-ant-...)
  *
  * Deploy:
- *   npx supabase functions deploy tekbot-ai --project-ref zrgtoefkqafndhxhbuag
+ *   npx supabase functions deploy tekbot-ai --project-ref vrhxitxzqtbphzsbdqih
  */
 
 import { serve } from "https://deno.land/std@0.168.0/http/server.ts";

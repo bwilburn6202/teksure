@@ -52,7 +52,7 @@
   - `/review/:bookingId` → WriteReview
 - [ ] Deploy the `link-tech-to-user` Edge Function:
   ```bash
-  npx supabase functions deploy link-tech-to-user --project-ref zrgtoefkqafndhxhbuag
+  npx supabase functions deploy link-tech-to-user --project-ref vrhxitxzqtbphzsbdqih
   ```
 
 ### Previously pending (Mar 25, Session 5) — run after all previous migrations
@@ -66,11 +66,11 @@
 - [ ] Optionally swap `<img>` tags for `<LazyImage>` in guide/homepage components
 - [ ] Deploy TekBot AI Edge Function:
   ```bash
-  npx supabase functions deploy tekbot-ai --project-ref zrgtoefkqafndhxhbuag
+  npx supabase functions deploy tekbot-ai --project-ref vrhxitxzqtbphzsbdqih
   ```
 - [ ] Deploy tech approval email Edge Function:
   ```bash
-  npx supabase functions deploy send-tech-approval --project-ref zrgtoefkqafndhxhbuag
+  npx supabase functions deploy send-tech-approval --project-ref vrhxitxzqtbphzsbdqih
   ```
 - [ ] Add `ANTHROPIC_API_KEY` secret in Supabase Dashboard → Edge Functions → Secrets
 

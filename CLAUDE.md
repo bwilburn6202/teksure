@@ -8,8 +8,8 @@
 Tech support and digital literacy for non-technical users and seniors (60+). Free, no paywalls on educational content.
 
 - **Stack:** React 18 · TypeScript · Tailwind · shadcn/ui · Supabase · React Query · React Router · Vite
-- **Supabase ref:** `vrhxitxzqtbphzsbdqih` ⚠️ *VERIFY THIS BEFORE FIRST USE — a second ref (`zrgtoefkqafndhxhbuag`) appeared in stale Cowork instructions. Confirm in the Supabase dashboard, then delete this warning.*
-- **Repo:** github.com/bwilburn6202/teksure · **Live:** https://www.teksure.com (canonical host is `www`; apex 301s)
+- **Supabase ref:** `vrhxitxzqtbphzsbdqih` — verified 2026-08-27 against `supabase/config.toml`, `supabase/.temp/project-ref`, and the `dns-prefetch` host in the live HTML. The old ref `zrgtoefkqafndhxhbuag` was wrong and has been purged from `docs/`, where it sat inside copy-pasteable `functions deploy --project-ref` commands. If it reappears anywhere, it is stale — do not deploy against it.
+- **Repo:** github.com/bwilburn6202/teksure · **Live:** https://www.teksure.com (canonical host is `www`; apex currently **307s**, not 301 — see blockers)
 - **Local:** `~/Documents/Claude/Projects/TekSure` · dev on :5173
 
 ## Current state (2026-08-06)
@@ -17,7 +17,7 @@ Tech support and digital literacy for non-technical users and seniors (60+). Fre
 
 **Guide count target: retired.** Closed as MISSED at 4,049 by decision on 2026-08-04. 4,000 mediocre pages rank worse than 400 excellent ones. Do not add guides to move a number.
 
-**Open blockers (raise, don't work around):** analytics wiring unverified · monetization needs AdSense/affiliate credentials · hosted Ollama needs the Hetzner CX22 · `npm run build` OOMs in sandbox (needs ≥8GB) · readability sits at grade 8.3 with ~58.5% above grade 8 and needs one scripted bulk pass or an explicit decision to accept it.
+**Open blockers (raise, don't work around):** analytics wiring unverified · monetization needs AdSense/affiliate credentials · hosted Ollama needs the Hetzner CX22 · `npm run build` OOMs in sandbox (needs ≥8GB) · readability sits at grade 8.3 with ~58.5% above grade 8 and needs one scripted bulk pass or an explicit decision to accept it · **apex `teksure.com` redirects to `www` with a 307 (temporary), not a 308/301** — path is preserved so users are fine, but a 307 does not consolidate link equity onto the canonical host. This is a Vercel *domain* setting, not `vercel.json`, so it cannot be fixed from the repo: Vercel dashboard → Project → Settings → Domains → `teksure.com` → set the redirect to permanent.
 
 ---
 

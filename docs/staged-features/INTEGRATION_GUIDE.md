@@ -108,7 +108,7 @@ Copy all `supabase/` files the same way.
 
 ### Step 2: Run ALL database migrations (in order)
 
-1. Go to Supabase Dashboard -> SQL Editor (https://supabase.com/dashboard/project/zrgtoefkqafndhxhbuag/sql)
+1. Go to Supabase Dashboard -> SQL Editor (https://supabase.com/dashboard/project/vrhxitxzqtbphzsbdqih/sql)
 2. Run each migration file in order (by date number):
    - 20260324120000_forum_enhancements.sql
    - 20260324130000_stripe_payments.sql
@@ -211,13 +211,13 @@ Deploy the Edge Functions:
 
 ```bash
 cd ~/Documents/Claude/Projects/TekSure
-npx supabase functions deploy create-stripe-checkout --project-ref zrgtoefkqafndhxhbuag
-npx supabase functions deploy stripe-webhook --project-ref zrgtoefkqafndhxhbuag
+npx supabase functions deploy create-stripe-checkout --project-ref vrhxitxzqtbphzsbdqih
+npx supabase functions deploy stripe-webhook --project-ref vrhxitxzqtbphzsbdqih
 ```
 
 Configure Stripe Webhook:
 1. Stripe Dashboard -> Developers -> Webhooks -> Add endpoint
-2. URL: https://zrgtoefkqafndhxhbuag.supabase.co/functions/v1/stripe-webhook
+2. URL: https://vrhxitxzqtbphzsbdqih.supabase.co/functions/v1/stripe-webhook
 3. Events: checkout.session.completed, checkout.session.expired, payment_intent.payment_failed
 4. Copy signing secret -> add as STRIPE_WEBHOOK_SECRET in Supabase
 
@@ -316,7 +316,7 @@ This adds:
 
 ```bash
 cd ~/Documents/Claude/Projects/TekSure
-npx supabase functions deploy tekbot-ai --project-ref zrgtoefkqafndhxhbuag
+npx supabase functions deploy tekbot-ai --project-ref vrhxitxzqtbphzsbdqih
 ```
 
 ### Step 13: Add ANTHROPIC_API_KEY secret
@@ -427,7 +427,7 @@ In `src/pages/admin/AdminDashboard.tsx` (or Console.tsx), add a link/card to `/a
 
 ```bash
 cd ~/Documents/Claude/Projects/TekSure
-npx supabase functions deploy send-tech-approval --project-ref zrgtoefkqafndhxhbuag
+npx supabase functions deploy send-tech-approval --project-ref vrhxitxzqtbphzsbdqih
 ```
 
 This function sends a branded HTML welcome email to newly approved technicians.
@@ -551,7 +551,7 @@ Then add both components between the popular guides section and the quick-links 
 
 ```bash
 cd ~/Documents/Claude/Projects/TekSure
-npx supabase functions deploy fetch-tech-trends --project-ref zrgtoefkqafndhxhbuag
+npx supabase functions deploy fetch-tech-trends --project-ref vrhxitxzqtbphzsbdqih
 ```
 
 No new secrets are needed — this function uses only free public APIs (Reddit JSON + HN Algolia) and Supabase's built-in service role key.
@@ -673,7 +673,7 @@ Add these routes inside your `<Routes>` block:
 
 ```bash
 cd ~/Documents/Claude/Projects/TekSure
-npx supabase functions deploy link-tech-to-user --project-ref zrgtoefkqafndhxhbuag
+npx supabase functions deploy link-tech-to-user --project-ref vrhxitxzqtbphzsbdqih
 ```
 
 This function lets admin link an approved technician's profile to their auth account by email.
@@ -858,7 +858,7 @@ Add this route inside your `<Routes>` block:
 
 ```bash
 cd ~/Documents/Claude/Projects/TekSure
-npx supabase functions deploy send-cancellation-email --project-ref zrgtoefkqafndhxhbuag
+npx supabase functions deploy send-cancellation-email --project-ref vrhxitxzqtbphzsbdqih
 ```
 
 No new secrets needed — uses `RESEND_API_KEY` and `PUBLIC_SITE_URL` (already set from earlier steps).

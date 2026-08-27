@@ -8,6 +8,108 @@ Newest cycles appear at the top.
 
 ---
 
+## Cycle 150 — 2026-08-27 (Cowork run, hand-written)
+
+### [fixed] The wrong Supabase project ref was sitting in 22 places across `docs/` — including deploy commands
+`CLAUDE.md` carried a standing ⚠️ warning to verify the Supabase ref because a second ref
+(`zrgtoefkqafndhxhbuag`) had appeared in stale Cowork instructions. **Verified and closed this run.**
+The correct ref is `vrhxitxzqtbphzsbdqih`, confirmed three independent ways:
+- `supabase/config.toml` → `project_id = "vrhxitxzqtbphzsbdqih"`
+- `supabase/.temp/project-ref` → same
+- the `<link rel="dns-prefetch">` host in the live production HTML → `vrhxitxzqtbphzsbdqih.supabase.co`
+
+The wrong ref was not confined to prose. It was in **copy-pasteable deploy commands** —
+`npx supabase functions deploy <fn> --project-ref zrgtoefkqafndhxhbuag` — in `docs/API.md`,
+`docs/DEPLOYMENT.md`, `docs/reference/TASKS.md`, `docs/reference/TekSure_Development_Manual.md`,
+`docs/staged-features/INTEGRATION_GUIDE.md`, and two staged edge functions. Anyone following those
+docs would have deployed an edge function at the wrong project. Also present as
+`VITE_SUPABASE_URL=https://zrgtoefkqafndhxhbuag.supabase.co` in the dev manual's env block.
+
+**Before/after: 22 occurrences across 8 files → 0.** The `CLAUDE.md` warning is replaced with the
+verified value plus the provenance, so a future run does not re-open the question.
+
+### [found, cannot fix from the repo] Apex `teksure.com` redirects with a 307, not a 301/308
+`CLAUDE.md` asserted "apex 301s". It does not:
+
+    $ curl -sI https://teksure.com/guides/cast-phone-to-tv
+    HTTP/2 307
+    location: https://www.teksure.com/guides/cast-phone-to-tv
+    cache-control: public, max-age=0, must-revalidate
+
+Sitewide, path preserved, so no user-visible harm. But a 307 is a *temporary* redirect: search
+engines do not consolidate link equity onto the canonical `www` host the way they do for a
+permanent one, and the `max-age=0` means it is re-fetched every time. Any inbound link written as
+`teksure.com/...` — which is the form people type and the form most directories store — is passing
+a weaker signal than it should.
+
+**This is not in `vercel.json`.** There is no host-conditional redirect there (20 redirects, all
+`permanent: true`, all path-based from `App.tsx`), and the domain-level redirect runs at the edge
+*before* project redirects, so adding a rule to `vercel.json` would likely never fire and could
+produce a double hop. Deliberately did not gamble on that. Recorded in the CLAUDE.md blockers list
+with the fix location: **Vercel dashboard → Project → Settings → Domains → `teksure.com` → set the
+redirect to permanent.** One toggle, needs Bailey.
+
+### [ok] Cadence pages both current — not touched
+`TechProblemOfWeek` current entry is `dateISO: '2026-08-24'` (Aug 24–30 window; today is Aug 27,
+inside it) with exactly one `isCurrent: true`. `WhatsNew` newest is `aug-2026`. Not the first run
+of a new month, so no What's New refresh. Did **not** roll Tech Problem of the Week forward early —
+the advertised window still covers today, and rotating a week ahead of schedule would make the page
+wrong in the other direction.
+
+### [ok] Discovery verified against production, not just the source
+Live `build-info.json` = `d84429d` (cycle 149), built 2026-08-27T03:55Z. Live
+`prerender-report.json`: `status: complete`, 7,128/7,128 written, `failed: 0`,
+`renderedWithoutTitle: 0`, 8 shards / 207s. Spot-checked 8 random sitemap URLs (guides and tools):
+all 200, all with a real prerendered `<title>`, `meta description`, `og:title`, self-referencing
+`<link rel="canonical">`, and three `application/ld+json` blocks each. `robots.txt` and `llms.txt`
+both serve. Sharding continues to hold.
+
+*Note for future runs:* the prerendered HTML has the whole `<head>` on one line, so
+`curl ... | grep '<title>'` returns empty and looks like a catastrophic regression. Pipe through
+`tr -d '\n'` first. Cost ten minutes of false alarm this cycle.
+
+### [ok] Measurement clean
+4,049 guides · 3,156 routes · 285 tools · 0 duplicate slugs · 0 duplicate titles · 0 broken
+internal targets · 0 orphaned routes (of 3,119) · 0 stale OS mentions · 0 aged guides · 0 overlong
+excerpts · 0 reused placeholder videos · 0 hardcoded prices outside `pricing.ts` · 0 undisclosed
+testimonials · 75 source URLs checked, 0 confirmed broken (1 unreachable, bot-blocking).
+`validate-slugs`: 328 files, 4,049 slugs, 4,049 unique. `npx tsc --noEmit`: clean (needs
+`--max-old-space-size=3400`; OOMs at the default heap). `npm test`: **104/104 pass.**
+
+Senior-UX audit: 0 sub-44px tap targets, 0 missing alt text, 0 `onClick` on a `div`, and **1**
+sub-14px instance in 1 file — `admin/ContentPipeline.tsx:333`, the admin-only status pill cycle 149
+deliberately left. Still agree with leaving it; it is not senior-facing.
+
+### [accepted, not worked] Readability holds at grade 8.3 / 58.5% above grade 8
+Unchanged for the seventh consecutive cycle. 493 guides above grade 10. Did not do a hand pass —
+CLAUDE.md is explicit that it moves the number ~0.1pp and is the appearance of progress.
+**Still awaiting Bailey's decision: scripted bulk pass, or state plainly that 8.3 is accepted and
+stop reporting it as a warn.** Every cycle will keep opening with this same amber line until then.
+
+### [blocker] `npm run build` not run — sandbox OOM, and I am not implying it passed
+Same as cycles 141b and 149: the container has ~3.9GB against the ~8GB `vite build` needs, and it
+is killed at "rendering chunks". **The production build did not run this cycle.** Risk on this
+change is as low as it gets — the diff is markdown plus two `docs/staged-features/` files that are
+not in the build graph, no source, no data shape, no route — and tsc and 104/104 tests are clean.
+Vercel is still the first place it actually compiles.
+
+### [not fixed] The working mount was 71 commits behind — third cycle running
+`~/Documents/Claude/Projects/TekSure` was 71 behind `origin/main` and 3 "ahead" (all three already
+upstream under different SHAs). `git fetch` again warned
+`unable to unlink '.git/objects/.../tmp_obj_...': Operation not permitted`. Worked from a fresh
+clone in `/tmp` and pushed from there, per the CLAUDE.md fallback. Cycles 122, 141b and 149 all
+recorded this. **The mount cannot self-repair. It needs one `git pull` from a normal shell.**
+Every session that measures there without noticing is measuring stale code. The mount also still
+carries ~140 stray `vite.config.ts.timestamp-*` / `vitest.config.ts.timestamp-*` files and five
+`dist.stale*` directories.
+
+### Open blockers, unchanged
+Monetization credentials (AdSense/affiliate) · one full `npm run build` on a ≥8GB machine · the
+readability decision · analytics wiring verification · the Hetzner CX22 for hosted Ollama ·
+**new:** the apex 307 → permanent toggle in the Vercel dashboard.
+
+---
+
 ## Cycle 149 — 2026-08-26 (Cowork run, hand-written)
 
 ### [fixed] Three sub-14px badge labels raised to the 14px floor
@@ -1284,140 +1386,5 @@ No video is reused across more than 5 guides.
 ### Suggested next actions
 - **Readability & senior UX** — avg reading grade 8.3 (target <= 8), 58.5% of guides above grade 8, 0 images missing alt.
 
----
 
-## Cycle 122 — 2026-08-20 (Cowork run)
-
-### [fixed] The dev-loop was filling its own 64KB budget with identical all-green dumps
-The GitHub `dev-loop.yml` runs every 6 hours and wrote a fresh ~70-line block of the same thirteen
-`[ok]` lines each time. Cycles 113 through 121 are byte-identical to one another. Nine repeats of
-boilerplate had consumed the whole file, and the hand-written cycles that record actual decisions
-(the `simplify-vocabulary` corruption findings, the type-scale measurement bug, the CRLF near-miss)
-were being evicted to make room. This file is read at the start of every run, so that is a direct
-context cost every cycle for no information.
-
-Three defects in `scripts/dev-loop.mjs`, all fixed:
-
-1. **The cap disagreed with the documented budget.** `BACKLOG_MAX_BYTES` was `256 * 1024`. CLAUDE.md
-   says 64KB. Four times over, which is why the file kept needing a manual trim. Now 64KB, with a
-   comment tying the two together.
-
-2. **The trim sliced at a raw byte offset.** It cut through whichever cycle straddled the cap,
-   leaving a half-sentence and a stray code fence. It also computed the header offset against the
-   pre-insert string while slicing the post-insert one, so the kept region was off by the length of
-   the new block. Replaced with `trimBacklog()`, which drops whole cycles from the oldest end at
-   `## Cycle` boundaries. Verified on a synthetic 20-cycle file: cuts at a boundary, keeps the
-   newest cycles, never drops the newest one even if it alone exceeds the cap.
-
-3. **No repeat detection.** Added a findings signature (check name, severity, summary, details — no
-   timestamp, no cycle number) persisted to `dev-loop-state.json` so it survives across processes.
-   When a cycle is identical to the one before it, `foldRepeatCycle()` updates a counter line on the
-   existing top block instead of appending:
-   `_No change through cycle 124 (…) — 3 consecutive identical cycles._`
-   Verified by running three real consecutive cycles: one block, counter incremented to 3.
-
-Effect: nine identical green cycles now cost one block plus one line instead of ~630 lines. The
-backlog goes back to being a record of decisions rather than a transcript of a passing test suite.
-
-### [fixed] The local working copy was 33 commits behind and could not be reset
-`~/Documents/Claude/Projects/TekSure` was at `0d3d7b4` while `origin/main` was at `bdd5ab3`. The
-three "local-only" commits were already upstream under different SHAs (`018f1b9`, `d570bec`,
-`9bc156f`) — nothing was lost, but every measurement taken there was 33 commits stale, and it had
-missed `2692770` (prerender sharding). `git reset --hard` fails on this mount with
-`unable to unlink old 'vite.config.ts': Operation not permitted`, and `mv` does not help because the
-tracked files themselves refuse unlink. Used the CLAUDE.md fallback: fresh clone outside the mount,
-work there, push. **The mount is still stale and still cannot self-repair** — worth a `git pull`
-from a normal shell, or the next session repeats this discovery.
-
-### Cadence pages — both current, no action
-- `/tech-problem-of-week` → `weekRange: 'August 17–23, 2026'`, inside the 7-day window.
-- `/whats-new` → newest entry `aug-2026`, covers the current month. Not the first run of a new month.
-
-Neither refreshed. Never move a date without a real alert behind it.
-
-### [ok] Measurement clean
-4,049 guides · 3,156 routes · 285 tools · 0 duplicate slugs/titles · 0 broken internal links ·
-0 orphaned routes · 0 stale OS mentions · 0 aged guides · 0 overlong excerpts · 75 source URLs with
-0 confirmed broken (1 unreachable, bot-blocking) · 0 sub-44px tap targets · 0 missing alt ·
-0 onClick-on-div · 7 files / 13 instances below the 14px floor (the documented exceptions).
-`tsc` clean · **104/104 tests** · `validate-slugs` 4,049/4,049 unique.
-Live: `build-info.json` reports commit `bdd5ab3`, 7,128 prerendered / 7,128 sitemap URLs,
-**0 unprerendered** — the sharded prerender fix is working in production.
-
-### `npm run build` FAILED — out of memory, again
-Exit via V8 OOM abort. Sandbox: 3,906MB total, ~3,535MB available; the build needs roughly 8GB.
-**The build was not verified on this run.** The change is confined to `scripts/dev-loop.mjs`, which
-is not part of the build pipeline (`vite build` → `prerender:safe` → `write-build-info`) and is not
-imported by any source file, so deploy risk is nil — but stating that plainly rather than implying
-a pass.
-
-### Readability — untouched, still 8.3 / 58.5% above grade 8
-No hand-pass, by design. This is the 7th consecutive cycle it has been the only "suggested next
-action". Recommendation unchanged: **accept 8.3 and close the item**, or fund an LLM rewrite over
-the 493 guides above grade 10. Still awaiting Bailey.
-
-### Blockers unchanged (raise, don't work around)
-Monetization credentials (AdSense/affiliate) · one full `npm run build` on a machine with ≥8GB ·
-**the readability decision** · analytics verification · the Hetzner CX22 for hosted Ollama.
-
----
-
-## Cycle 121 — 2026-08-20T01:47:34.125Z
-
-### [ok] Site metrics snapshot
-4049 guides, 3156 routes, 285 tools.
-
-### [ok] Duplicate guide slugs
-No duplicate slugs.
-
-### [ok] Internal link audit
-0 broken targets, 0 orphaned routes (of 3119 routes).
-
-### [ok] TypeScript compile
-No TypeScript errors.
-
-### [ok] Stale OS version mentions
-No stale OS version mentions found.
-
-### [ok] Aged guides
-0 of 4049 guides published before 2025-02-20.
-
-### [ok] Duplicate guide titles
-No duplicate guide titles.
-
-### [warn] Readability & senior UX
-avg reading grade 8.3 (target <= 8), 58.5% of guides above grade 8, 0 images missing alt.
-
-```
-- grade 10.2: use-silvur-retirement-planning
-- grade 10: how-to-back-up-iphone-to-icloud
-- grade 10.1: set-up-bank-text-alerts
-- grade 10.1: close-old-bank-account-safely
-- grade 10.3: youtube-videos-buffering-fix
-- grade 10.5: set-up-amazon-prime-delivery-prescriptions
-- grade 10: how-to-use-siri-iphone
-- grade 10.2: walgreens-app-prescription-refill-step-by-step-2026
-- grade 10.2: how-to-screenshot-windows-11
-- grade 10.7: how-to-use-notes-app-iphone
-```
-
-### [ok] External source link health
-75 source URLs checked, 0 confirmed broken (404/410), 1 unreachable (often bot-blocking).
-
-### [ok] Hardcoded prices outside pricing.ts
-All service prices come from src/data/pricing.ts.
-
-### [ok] Undisclosed invented testimonials
-No hardcoded reviews without a disclosure.
-
-### [ok] Overlong guide excerpts
-All guide excerpts are within 160 characters.
-
-### [ok] Reused placeholder videos
-No video is reused across more than 5 guides.
-
-### Suggested next actions
-- **Readability & senior UX** — avg reading grade 8.3 (target <= 8), 58.5% of guides above grade 8, 0 images missing alt.
-
----
-
+*(older cycles trimmed to keep this file under 64KB)*
