@@ -280,14 +280,14 @@ export default function Learn() {
                             key={g.slug}
                             className="text-xs text-muted-foreground flex items-start gap-2"
                           >
-                            <span className="w-4 h-4 rounded-full bg-background border border-border flex items-center justify-center text-[10px] font-semibold shrink-0 mt-0.5">
+                            <span className="w-6 h-6 rounded-full bg-background border border-border flex items-center justify-center text-xs font-semibold shrink-0 mt-0.5">
                               {i + 1}
                             </span>
                             <span className="leading-snug">{g.title}</span>
                           </li>
                         ))}
                         {course.guides.length > 4 && (
-                          <li className="text-xs text-muted-foreground/80 pl-6">
+                          <li className="text-xs text-muted-foreground/80 pl-8">
                             + {course.guides.length - 4} more lesson
                             {course.guides.length - 4 === 1 ? '' : 's'}
                           </li>

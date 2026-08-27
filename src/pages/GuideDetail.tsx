@@ -234,7 +234,7 @@ const StepScreenshot = ({
             {annotations.filter(a => a.label && a.type !== 'highlight').map((a, i) => (
               <span key={i} className="flex items-center gap-1.5 text-sm text-muted-foreground">
                 {a.type === 'callout' && (
-                  <span className="inline-flex items-center justify-center w-5 h-5 rounded-full bg-red-500 text-white text-[11px] font-bold shrink-0">
+                  <span className="inline-flex items-center justify-center w-6 h-6 rounded-full bg-red-500 text-white text-sm font-bold shrink-0">
                     {a.label}
                   </span>
                 )}
