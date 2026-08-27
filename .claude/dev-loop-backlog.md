@@ -10,6 +10,8 @@ Newest cycles appear at the top.
 
 ## Cycle 149 — 2026-08-27T09:34:03.680Z
 
+_No change through cycle 150 (2026-08-27T22:12:45.596Z) — 2 consecutive identical cycles._
+
 ### [ok] Site metrics snapshot
 4049 guides, 3156 routes, 285 tools.
 
